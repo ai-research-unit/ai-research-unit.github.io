@@ -19,7 +19,7 @@ The forward direction is exact and general. Every solution of a linear wave equa
 The reverse direction is conditional and its output is nonlinear. It is defined on barotropic irrotational inviscid flows that carry the quantum term, and on that class its output is
 
 $$
-i \frac{h}{2\pi}\,\partial_{t'}\psi=-\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi\psi+V(\rho_{\mathrm{num}})\psi ,
+i \frac{h}{2\pi}\,\partial_{t'}\psi=-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi\psi+V(\rho_{\mathrm{num}})\psi ,
 \qquad
 \frac{\mathrm{d}V}{\mathrm{d}\rho_{\mathrm{num}}}=\frac{1}{\rho_{\mathrm{num}}}\frac{\mathrm{d}p_{\mathrm{th}}}{\mathrm{d}\rho_{\mathrm{num}}} ,
 $$

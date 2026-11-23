@@ -418,9 +418,9 @@ $$
 2\pi\nu_m r'_t=\frac{mc^{2}}{h}\,t,
 $$
 
-so that the field's own phase advances at $\frac{2\pi mc^{2}}{h}$ and the norm's angle at $\frac{2\pi 2mc^{2}}{h}$. The angle is a number of radians and not an energy; $\frac{h}{2\pi}$ is what makes it so, and the same $\frac{h}{2\pi}$ makes $\sigma$ dimensionless.
+so that the field's own phase advances at $2\pi\,c\,\nu_m$ and the norm's angle at $\frac{2\pi 2mc^{2}}{h}$. The angle is a number of radians and not an energy; $\frac{h}{2\pi}$ is what makes it so, and the same $\frac{h}{2\pi}$ makes $\sigma$ dimensionless.
 
-**The factor of two is the whole of zitterbewegung.** The trembling of a state of this kind is a bilinear effect: the density and the current oscillate, and every bilinear is built from the norm, whose angle is twice the field's. The field's phase advances at the rest rate $\frac{2\pi mc^{2}}{h}$, so its square advances at $\frac{2\pi 2mc^{2}}{h}$, and that is the trembling frequency; the doubling is one line of algebra, $\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$, and not a property of the flow. The numbers are the standard ones: $1.55269\times10^{21}\ \mathrm{rad\,s^{-1}}$ for the rest frequency and $193.1\ \mathrm{fm}$ for half of one radian of the mass phase.
+**The factor of two is the whole of zitterbewegung.** The trembling of a state of this kind is a bilinear effect: the density and the current oscillate, and every bilinear is built from the norm, whose angle is twice the field's. The field's phase advances at the rest rate $2\pi\,c\,\nu_m$, so its square advances at $\frac{2\pi 2mc^{2}}{h}$, and that is the trembling frequency; the doubling is one line of algebra, $\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$, and not a property of the flow. The numbers are the standard ones: $1.55269\times10^{21}\ \mathrm{rad\,s^{-1}}$ for the rest frequency and $193.1\ \mathrm{fm}$ for half of one radian of the mass phase.
 
 What the polar form adds is the location. The frame is untouched by the trembling: a single branch has a constant boost and a constant rotor, and the oscillation appears only when two branches are superposed. A reader who expects the frame to rotate at the trembling frequency will not find it rotating there.
 

@@ -129,7 +129,7 @@ so the current is $\varrho^{2}(\vec\nabla_\Phi S-q\vec A)/m=\varrho^{2}\vec\pi/m
 $$
 \partial_{t'}S+\frac{|\vec\nabla_\Phi S-q\vec A|^{2}}{2m}-ϙ\omicron_{\mathrm{pot}}+Q=0,
 \qquad
-Q=-\frac{h^{2}}{8\pi^{2}m}\frac{\Delta_\Phi \varrho}{\varrho},
+Q=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Delta_\Phi \varrho}{\varrho},
 $$
 
 the quantum Hamilton–Jacobi equation of the coupled field. The three changes from the free equation are the kinetic momentum in the kinetic term, the potential energy, and nothing else. **The quantum potential is unchanged**, and the reason is the article's first finding read on the scale: $Q$ is built from $\varrho$ and its ordinary Laplacian, and the connection cannot enter the scale gradient because it is central imaginary.

@@ -253,7 +253,7 @@ $$
 with the quantum potential
 
 $$
-Q=-\frac{h^{2}}{8\pi^{2}m}\frac{\Delta_\Phi \varrho}{\varrho}.
+Q=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Delta_\Phi \varrho}{\varrho}.
 $$
 
 The first is a Hamilton–Jacobi equation with one extra term, and the second is a continuity equation for the density $\rho_{\mathrm{num}}=\varrho^{2}$. Together they are the standard Madelung fluid: the first is the guidance equation of the de Broglie–Bohm reading, with $Q$ the term that separates it from classical Hamilton–Jacobi, and the second is the conservation of the density along the guidance flow. Takabayasi read the same pair as a hydrodynamical formulation and Bohm as a trajectory theory; the polar word is the biquaternionic reading of it.

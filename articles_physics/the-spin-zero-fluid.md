@@ -63,7 +63,7 @@ Write the momentum as the algebra writes it, $\tilde P_{\Phi}=\tilde\nabla_\Phi 
 $$
 \frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}},
 \qquad
-Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho}.
+Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi \varrho}{\varrho}.
 $$
 
 The only thing the amplitude does is shift the mass shell, and it shifts it by a curvature. $Q_{\mathrm{qnt}}$ is the d'Alembertian of the amplitude divided by the amplitude. It is not a function of the density's value: by the parent article's identity it is $\tfrac12\Box_\Phi\ln\rho_{\mathrm{num}}+\tfrac14(\partial\ln\rho_{\mathrm{num}})^{2}$, so two fields with the same density at an event and different density gradients have different $Q_{\mathrm{qnt}}$ there. That single fact decides the last section of this article.
@@ -154,7 +154,7 @@ The scalar fluid is irrotational in the covariant sense, always, off the nodes. 
 
 **A fluid has an equation of state when its pressure is a function of its density at the same event.** The scalar fluid has no such function, and the reason is the curvature in $Q_{\mathrm{qnt}}$.
 
-The objection is that the quantum term looks like a pressure. In the non-relativistic fluid the term $-\vec\nabla_\Phi Q$ is conventionally called the quantum pressure, and the name suggests a $p(\rho_{\mathrm{num}})$. The name is a misnomer twice over. First, $Q_{\mathrm{qnt}}$ depends on the density's first and second derivatives and not on its value, so a barotropic pressure would have to be a differential operator rather than a function: $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}[\tfrac12\Box_\Phi\ln\rho_{\mathrm{num}}+\tfrac14(\partial\ln\rho_{\mathrm{num}})^{2}]$. Second, the force is the gradient of an energy and not the gradient of a pressure over a density: $-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$ is not $-\rho_{\mathrm{num}}^{-1}\vec\nabla_\Phi p$ for any function $p$ of the density's value.
+The objection is that the quantum term looks like a pressure. In the non-relativistic fluid the term $-\vec\nabla_\Phi Q$ is conventionally called the quantum pressure, and the name suggests a $p(\rho_{\mathrm{num}})$. The name is a misnomer twice over. First, $Q_{\mathrm{qnt}}$ depends on the density's first and second derivatives and not on its value, so a barotropic pressure would have to be a differential operator rather than a function: $Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}[\tfrac12\Box_\Phi\ln\rho_{\mathrm{num}}+\tfrac14(\partial\ln\rho_{\mathrm{num}})^{2}]$. Second, the force is the gradient of an energy and not the gradient of a pressure over a density: $-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$ is not $-\rho_{\mathrm{num}}^{-1}\vec\nabla_\Phi p$ for any function $p$ of the density's value.
 
 The class the fluid belongs to has a name, and naming it is the honest statement. A fluid whose stress depends on the gradients of its density rather than on the density alone is a Korteweg fluid, and a Korteweg fluid has no equation of state in the algebraic sense and a perfectly definite stress. This fluid is of that class, and the parent article's identity is what shows it: its pressure is a function of $\rho_{\mathrm{num}}$ and of the first two derivatives of $\rho_{\mathrm{num}}$, and of nothing else.
 
@@ -259,7 +259,7 @@ The transport equation cannot tell the sheets apart. It is linear in $\partial S
 
 ### The non-relativistic limit
 
-With the rest energy removed the pair becomes the Madelung system. The action carries $mc^{2}t$, the amplitude equation becomes the quantum Hamilton–Jacobi equation with the WKB potential $Q_{\mathrm{qnt}}\to-\frac{h^{2}}{8\pi^{2}m}\frac{\vec\nabla_\Phi^{2}\varrho}{\varrho}$, and the transport equation becomes the continuity equation of the Schrödinger fluid. The factor $1/\gamma$ of the acceleration law goes to one. The parent article carries the derivation and this article does not repeat it.
+With the rest energy removed the pair becomes the Madelung system. The action carries $mc^{2}t$, the amplitude equation becomes the quantum Hamilton–Jacobi equation with the WKB potential $Q_{\mathrm{qnt}}\to-\frac{hc}{8\pi^{2}\nu_m}\frac{\vec\nabla_\Phi^{2}\varrho}{\varrho}$, and the transport equation becomes the continuity equation of the Schrödinger fluid. The factor $1/\gamma$ of the acceleration law goes to one. The parent article carries the derivation and this article does not repeat it.
 
 A fluid reading that did not reproduce the Madelung pair in the non-relativistic limit would be a different fluid. It does, term by term, and that is the warrant for calling the relativistic object a fluid at all.
 

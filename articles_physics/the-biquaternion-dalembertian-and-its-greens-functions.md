@@ -450,7 +450,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | $G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta(r'_t + R)$ | Advanced kernel; $\Box_\Phi G_{\mathrm{adv}} = -\delta$ |
 | $\mathcal{G}_{\mathrm{PJ}} = G_{\mathrm{ret}} - G_{\mathrm{adv}}$ | Pauli–Jordan commutator function; $\Box_\Phi\mathcal{G}_{\mathrm{PJ}} = 0$ |
 | $G_F = \frac{1}{4\pi^2}\frac{1}{\rho^2 - i\epsilon}$ | Causal (Feynman) kernel; Wick-rotates to $G_{\mathrm{inv}}$ |
-| $G^{(1/(2\pi\nu_m))}_{\mathrm{inv}} = \frac{\nu_m}{2\pi\rho}\mathrm{Ki}_{1}(2\pi\rho\,\nu_m)$ | Massive invariant kernel; the label $1/\nu_m$ names the massive case, whose coefficient is $\nu_m=\frac{h}{2\pi mc}$ |
+| $G^{(1/(2\pi\nu_m))}_{\mathrm{inv}} = \frac{\nu_m}{2\pi\rho}\mathrm{Ki}_{1}(2\pi\rho\,\nu_m)$ | Massive invariant kernel; the label $1/\nu_m$ names the massive case, whose coefficient is $1/(2\pi\nu_m)=\frac{h}{2\pi mc}$ |
 | $\tilde{G}_{\Phi,\tilde\nabla_\Phi} = (\tilde\nabla_\Phi)^{\natural}G_{\Box,\Phi} \in \mathbb{B}_{\Phi}$ | First-order kernel; $\tilde\nabla_\Phi\tilde{G}_{\Phi,\tilde\nabla_\Phi} = -\delta$ |
 | $\tilde\nabla_\Phi + \kappa$, $\kappa \in \mathbb{C}$ | The shifted gradient, written out; the glyph is never extended |
 | $(\tilde\nabla_\Phi+\kappa)((\tilde\nabla_\Phi)^{\natural}+\kappa) = \Box_\Phi - 2i\kappa\,e_t\partial/\partial r'_t + \kappa^2$ | Square of the shifted gradient; symbol $(\omega/c - \kappa)^2 - \|\vec\nu_\Phi\|^2$ |

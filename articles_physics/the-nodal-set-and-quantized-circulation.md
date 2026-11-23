@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The scalar flow is irrotational everywhere except on the set where the field vanishes, and around that set the circulation is an integer multiple of $h/m$. Both halves of the sentence are exact. The first is the closure of the velocity one-form, which [The Spin-Zero Fluid](the-spin-zero-fluid.html) proves: the velocity is the gradient of the
+The scalar flow is irrotational everywhere except on the set where the field vanishes, and around that set the circulation is an integer multiple of $c/\nu_m$. Both halves of the sentence are exact. The first is the closure of the velocity one-form, which [The Spin-Zero Fluid](the-spin-zero-fluid.html) proves: the velocity is the gradient of the
 action, so its curl vanishes wherever the action exists. The second is Stokes' theorem applied around a loop that links a nodal line, where the action does not exist and the closed-loop integral is fixed by the winding of the phase. The two statements are not in tension: the curl vanishes on the complement of the node, and the loop that detects the node does not lie in that complement's simply connected part.
 
 This article closes open question 2 of [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), which asks whether the winding of the action around a nodal line carries a topological charge, and whether that charge is an object of the algebra rather than of the phase. The answers are yes and yes, in the precise sense given below.
@@ -70,18 +70,18 @@ $$
 
 The integer is the degree of the map from the link, a circle, into the phase circle, which is also a circle. It is a homotopy invariant: it cannot change under a continuous deformation of the field that never vanishes on the link, and it cannot change under a continuous deformation of the link that never crosses the nodal curve.
 
-**The circulation is the winding times $h/m$.** The circulation of the velocity around the loop is
+**The circulation is the winding times $c/\nu_m$.** The circulation of the velocity around the loop is
 
 $$
 \kappa=\oint\tilde V_{\Phi}\cdot d\vec l=\frac{1}{m}\oint\nabla S_{\tilde\Xi}\cdot d\vec l
-=\frac{h}{2\pi m}\oint\nabla\theta_{\mathrm{phs}}\cdot d\vec l
-=\frac{h\,n}{m},
+=\frac{c}{2\pi\nu_m}\oint\nabla\theta_{\mathrm{phs}}\cdot d\vec l
+=\frac{c\,n}{\nu_m},
 $$
 
 where the third equality uses $\vec\nabla_\Phi S_{\tilde\Xi}=\frac{h}{2\pi}\nabla\theta_{\mathrm{phs}}$ and the fourth the winding. In the corpus's units the quantum of circulation is
 
 $$
-\kappa_{1}=\frac{h}{m}=\frac{2\pi c}{2\pi\nu_m},
+\kappa_{1}=\frac{c}{\nu_m},
 $$
 
 the second form using $\nu_m=\frac{mc}{h}$. The result is exact, it does not depend on the shape or the radius of the loop, and it does not depend on the amplitude profile: only the map's degree enters.
@@ -130,7 +130,7 @@ The product is regular at the node and vanishes there. This is not a coincidence
 The quantum potential diverges at the node while the quantum energy stays finite and negative. The quantum potential is fixed by the corpus's sign convention,
 
 $$
-Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
+Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
 $$
 
 and for the linear core, with no dependence on the axial coordinate, the box is the transverse Laplacian,
@@ -141,14 +141,14 @@ $$
 \qquad
 \frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}=\frac{1}{r^{2}},
 \qquad
-Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{1}{r^{2}} .
+Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{1}{r^{2}} .
 $$
 
 The potential diverges as $-1/r^{2}$ at the node. The quantum energy density does not: it is the density times the potential, and in the form of [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) it is
 
 $$
 w_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}
-=-\frac{h^{2}}{8\pi^{2}m}\left(A^{2}r^{2}\right)\frac{1}{r^{2}}
+=-\frac{hc}{8\pi^{2}\nu_m}\left(A^{2}r^{2}\right)\frac{1}{r^{2}}
 =-\frac{h^{2}A^{2}}{8\pi^{2}m},
 $$
 
@@ -252,7 +252,7 @@ This is why the node is a property of the algebra and not of a probability densi
 
 Established. The closure of the scalar velocity one-form on the complement of the nodal set, which is the vanishing of the curl of a gradient. The codimension of the nodal set, two real conditions on the coordinates. The circulation $h n/m$ around a link of the nodal curve, exact and independent of the loop and of the amplitude profile, with the numerical check tabled above. The identification of the winding with the degree of the field's map into the central unit circle, hence with an element of $\pi_{1}$ of that circle. The identification of the nodal set with the field's arrival on the zero-divisor set, and of the failure of the polar form there with the failure of invertibility.
 
-Interpretation. That the circulation quantum $h/m$ should be read as a superfluid's quantum of circulation. The formula is the same and the algebra is the same, but the corpus's scalar field is not a superfluid: a superfluid's condensate is a macroscopic occupation and the field here is a single-particle amplitude. What transfers is the kinematics — the closure, the node, the integer — and the thermodynamic reading is [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html), which supplies the condensate and the normal part as separate components.
+Interpretation. That the circulation quantum $c/\nu_m$ should be read as a superfluid's quantum of circulation. The formula is the same and the algebra is the same, but the corpus's scalar field is not a superfluid: a superfluid's condensate is a macroscopic occupation and the field here is a single-particle amplitude. What transfers is the kinematics — the closure, the node, the integer — and the thermodynamic reading is [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html), which supplies the condensate and the normal part as separate components.
 
 **Not claimed.** No claim is made that the corpus's field *is* a superfluid order parameter, that a vortex solution exists for any particular mass, or that the quantisation is observable. The claim is the conditional one: *if* the field has a nodal line with winding $n$, *then* the circulation around it is $h n/m$. The conditional is exact and the antecedent is a dynamical question.
 
@@ -285,7 +285,7 @@ What remains open is dynamical: existence, stability and interaction of nodal so
 | $\omega_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath}$ | Vorticity 2-form |
 | $\tilde J_{\Phi}$ | Number current |
 | $\kappa=\oint\tilde V_\Phi\cdot d\vec l$ | Circulation |
-| $\kappa_1=h/m=2\pi c/\nu_m$ | Quantum of circulation |
+| $\kappa_1=c/\nu_m$ | Quantum of circulation |
 | $n$ | Winding number, an integer; the letter is booked here for the winding and is not the Matsubara index |
 | $r$ | Distance from the nodal axis |
 | $\omicron_{\mathrm{ang}}$ | Angle about the axis |
@@ -293,7 +293,7 @@ What remains open is dynamical: existence, stability and interaction of nodal so
 | $A$ | Slope of the linear core, $f=Ar$ |
 | $\nu_t$ | Temporal wave number of the ansatz, $E=\frac{h}{2\pi} c 2\pi\nu_t$ |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
-| $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}$ | Quantum potential |
+| $Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}$ | Quantum potential |
 | $w_{\mathrm{qnt}}$ | Quantum energy density |
 | $\Box_\Phi$ | D'Alembertian of the material sector |
 | $\delta_{\imath\jmath}$ | The one metric, all coefficients $+1$; indices stay low |
@@ -303,7 +303,7 @@ What remains open is dynamical: existence, stability and interaction of nodal so
 ## Further Reading
 
 - L. Onsager, "Statistical hydrodynamics," *Il Nuovo Cimento Supplemento* **6** (1949) 279–287, for the quantisation of circulation.
-- R. P. Feynman, "Application of quantum mechanics to liquid helium," in *Progress in Low Temperature Physics*, vol. 1 (North-Holland, 1955), for the Onsager–Feynman quantum $h/m$ and the vortex line.
+- R. P. Feynman, "Application of quantum mechanics to liquid helium," in *Progress in Low Temperature Physics*, vol. 1 (North-Holland, 1955), for the Onsager–Feynman quantum $c/\nu_m$ and the vortex line.
 - P. G. Saffman, *Vortex Dynamics* (Cambridge University Press, 1992), for the circulation of a potential flow around a singular line and the topological reading of the vortex core.
 - T. Takabayasi, "Relativistic hydrodynamics of the Dirac matter," *Progress of Theoretical Physics Supplement* **4** (1957) 2–80, for the flow variables, the transport equation and the treatment of the nodal locus.
 - Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), for the nodal set of the de Broglie–Bohm flow and the topological charge carried by its winding.

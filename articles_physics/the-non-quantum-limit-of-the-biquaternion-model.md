@@ -10,7 +10,7 @@ On the solutions, yes. A state written as an amplitude and a phase carries one d
 
 What that removes is a partition, not a wave. *The Quantum–Classical Divide in the Biquaternion Framework* places the divide in a count: two projective measurements make a case quantum, one makes it classical, and wave phenomena are not the criterion. A superposition of two rays is one excitation across two modes, so two partitions. A single ray is one partition carrying the excitation with no second to sort, which is the corpus's classical class, Subset III. The limit removes the second partition, and that is the sense in which it is non-quantum. Classical optics performs the same passage, so the mathematics alone does not settle it and the count does.
 
-On the algebra, no. The algebra carries no $\frac{h}{2\pi}$. It carries $\nu_m$, which is $\frac{2\pi m\,c}{h}$. A limit on $\frac{h}{2\pi}$ at fixed mass is a limit on $1/\nu_m$, which deepens the mass term instead of removing it.
+On the algebra, no. The algebra carries no $\frac{h}{2\pi}$. It carries $\nu_m$, which is $2\pi\nu_m$. A limit on $\frac{h}{2\pi}$ at fixed mass is a limit on $1/\nu_m$, which deepens the mass term instead of removing it.
 
 The conventions are those of the companions: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, wave-number biquaternion $\tilde\Upsilon_{\Phi}=i\nu_t^{\prime}e_{t}+\vec\nu_{\Phi}$, where $\nu_t^{\prime}=\frac{E}{h\,c}$, $\vec\nu_{\Phi}=\frac{\vec p}{h}$ and $-\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=\nu_m^{2}$, the three numbers of *The Three Wavenumbers of a Particle*. Throughout, $\nu_m=\frac{m\,c}{h}$, and $L$ is supplied by the problem.
 
@@ -157,7 +157,7 @@ Four sectors, and the free Proca field is the one that refuses. The limit needs 
 Start from the Schrödinger equation. In the corpus's biquaternionic form it is $i\,\frac{h}{2\pi}\,c\partial_{h_t'}\tilde\Xi=\tilde H_\Psi\tilde\Xi$, which with $h_t'=c\,t$ reads $i \frac{h}{2\pi}\,\partial_t\psi=H\psi$. Take the scalar case $H=\frac{\vec p^{\,2}}{2m}+V$, so that
 
 $$
-i \frac{h}{2\pi}\,\partial_t\psi=-\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi\psi+V\psi .
+i \frac{h}{2\pi}\,\partial_t\psi=-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi\psi+V\psi .
 $$
 
 Substitute the amplitude and the phase, $\tilde{Ξ}=Ae^{i\theta_{\mathrm{phs}}}\xi$ with $A>0$ and $S_{\tilde\Xi}$ real. Two real equations follow, and neither is an approximation:

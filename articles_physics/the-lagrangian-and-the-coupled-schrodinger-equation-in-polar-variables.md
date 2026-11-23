@@ -42,7 +42,7 @@ The substitution. The element-form companion's action is Article 3's,
 
 $$
 S=\int dt'\,d^{3}x\;\mathrm{Sc}\Big[\frac{i h}{4\pi}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)
--\frac{h^{2}}{8\pi^{2}m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
+-\frac{hc}{8\pi^{2}\nu_m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
 +ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi\Big],
 $$
 
@@ -96,7 +96,7 @@ The word collapses. With $\theta_{\mathrm{rpd}}=0$ and a rotor that is a sign, t
 
 $$
 S=\int dt'\,d^{3}x\Big[-\frac{h}{2\pi}\,\varrho^{2}\,\dot\theta_{\mathrm{pha}}
--\frac{h^{2}}{8\pi^{2}m}\Big(|\vec\nabla_\Phi \varrho|^{2}+\varrho^{2}\Big|\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Big|^{2}\Big)
+-\frac{hc}{8\pi^{2}\nu_m}\Big(|\vec\nabla_\Phi \varrho|^{2}+\varrho^{2}\Big|\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Big|^{2}\Big)
 -\varrho^{2}V_{\mathrm{op}}+ϙ\omicron_{\mathrm{pot}}\,\varrho^{2}\Big],
 $$
 
@@ -105,8 +105,8 @@ which is the free article's Madelung action with the two covariant replacements:
 The three coupling pieces. Expanding the middle term separates the coupling into three parts,
 
 $$
--\frac{h^{2}}{8\pi^{2}m}\varrho^{2}\Big|\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Big|^{2}
-=-\frac{h^{2}}{8\pi^{2}m}\varrho^{2}|\vec\nabla_\Phi\theta_{\mathrm{pha}}|^{2}
+-\frac{hc}{8\pi^{2}\nu_m}\varrho^{2}\Big|\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Big|^{2}
+=-\frac{hc}{8\pi^{2}\nu_m}\varrho^{2}|\vec\nabla_\Phi\theta_{\mathrm{pha}}|^{2}
 -\frac{h ϙ}{2\pi m}\varrho^{2}\,\vec A\cdot\nabla\theta_{\mathrm{pha}}
 -\frac{ϙ^{2}}{2m}\varrho^{2}A^{2},
 $$
@@ -127,7 +127,7 @@ The current as the action's derivative. The vector potential's conjugate is the 
 
 $$
 -\frac{\partial L}{\partial\vec A}
-=\frac{h^{2}}{8\pi^{2}m}\varrho^{2}\cdot 2\Big(\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Big)\frac{2\pi ϙ}{h}
+=\frac{hc}{8\pi^{2}\nu_m}\varrho^{2}\cdot 2\Big(\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Big)\frac{2\pi ϙ}{h}
 =ϙ\,\frac{\varrho^{2}\big(h\nabla\theta_{\mathrm{pha}}-q\vec A\big)}{2\pi m}
 =ϙ\,\vec j,
 $$
@@ -308,7 +308,7 @@ The kinetic term is untouched, because the connection is central and carries no 
 In the operator setting, for the central field, the action is the Madelung action with the kinetic momentum and the potential energy,
 
 $$
-S=\int dt'\,d^{3}x\Big[-\frac{h}{2\pi} \varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{h^{2}}{8\pi^{2}m}\Big(|\vec\nabla_\Phi \varrho|^{2}+\varrho^{2}\big|\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\big|^{2}\Big)-\varrho^{2}V_{\mathrm{op}}+ϙ\omicron_{\mathrm{pot}} \varrho^{2}\Big],
+S=\int dt'\,d^{3}x\Big[-\frac{h}{2\pi} \varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{hc}{8\pi^{2}\nu_m}\Big(|\vec\nabla_\Phi \varrho|^{2}+\varrho^{2}\big|\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\big|^{2}\Big)-\varrho^{2}V_{\mathrm{op}}+ϙ\omicron_{\mathrm{pot}} \varrho^{2}\Big],
 $$
 
 its equations are the covariant Madelung pair, and its $\vec A$-derivative is the charge current, $-\partial L/\partial\vec A=ϙ\vec j$. The three coupling pieces are the free kinetic term, the paramagnetic term and the positive diamagnetic term.

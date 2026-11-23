@@ -91,7 +91,7 @@ It is not the quantum part's container either. A reader might expect $p_{\mathrm
 With
 
 $$
-Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
+Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
 \qquad
 p_{\mathrm{qnt}}=\rho_{\mathrm{num}}\,Q_{\mathrm{qnt}},
 $$
@@ -100,8 +100,8 @@ and with $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$, the product is an iden
 
 $$
 p_{\mathrm{qnt}}
-=-\frac{h^{2}}{16\pi^{2}m}\,\Box_\Phi\rho_{\mathrm{num}}
-+\frac{h^{2}}{32\pi^{2}m}\,\frac{\partial_\eta\rho_{\mathrm{num}}\,\partial_\eta\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}} .
+=-\frac{hc}{16\pi^{2}\nu_m}\,\Box_\Phi\rho_{\mathrm{num}}
++\frac{hc}{32\pi^{2}\nu_m}\,\frac{\partial_\eta\rho_{\mathrm{num}}\,\partial_\eta\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}} .
 $$
 
 Write $\rho_{\mathrm{num}}=u^{2}$ with $u=\lVert\tilde\Xi\rVert$. Then $\Box_\Phi\rho_{\mathrm{num}}=2u\,\Box_\Phi u+2\,\partial_\eta u\,\partial_\eta u$, so $u\,\Box_\Phi u=\tfrac12\Box_\Phi\rho_{\mathrm{num}}-\partial_\eta u\,\partial_\eta u$, and with $\partial_\eta u=\partial_\eta\rho_{\mathrm{num}}/(2u)$ the second term is $(\partial_\eta\rho_{\mathrm{num}})^{2}/(4\rho_{\mathrm{num}})$. Multiplying $-\tfrac{h^{2}}{8\pi^{2}m}u\,\Box_\Phi u$ out gives $-\tfrac{h^{2}}{16\pi^{2}m}\Box_\Phi\rho_{\mathrm{num}}+\tfrac{h^{2}}{32\pi^{2}m}(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$, the factor of two between the two terms coming from the $2$ in $\rho_{\mathrm{num}}=u^{2}$ and not from $Q_{\mathrm{qnt}}$. Substituting into $Q_{\mathrm{qnt}}$ and multiplying by $\rho_{\mathrm{num}}$ gives the display. The minus sign of $Q_{\mathrm{qnt}}$ is inherited and not touched: the first term of the identity carries it, and a reader who writes the first term with a plus has the wrong sign for the quantum potential.
@@ -113,12 +113,12 @@ The first is the definition and it is the one that connects to the mass shell th
 **The quantum pressure is second order in gradients, and the dimensionless measure of its size is the ratio of the field's own length to the density's length scale.** Let $L$ be the length over which $\rho_{\mathrm{num}}$ varies, so that $\Box_\Phi\rho_{\mathrm{num}}\sim\rho_{\mathrm{num}}/L^{2}$ and $(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}\sim\rho_{\mathrm{num}}/L^{2}$. Then
 
 $$
-p_{\mathrm{qnt}}\sim\frac{h^{2}}{(2\pi)^{2} m}\frac{\rho_{\mathrm{num}}}{L^{2}},
+p_{\mathrm{qnt}}\sim\frac{hc}{(2\pi)^{2}\nu_m}\frac{\rho_{\mathrm{num}}}{L^{2}},
 \qquad
 \frac{p_{\mathrm{qnt}}}{w_{\mathrm{fl}}}\sim\frac{h^{2}}{(2\pi)^{2} m^{2}c^{2}L^{2}}=\frac{1}{4\pi^{2}\nu_m^{2}L^{2}},
 $$
 
-where the second step uses $w_{\mathrm{fl}}\sim\rho_{\mathrm{num}}mc^{2}$ for a fluid at rest and $\frac{h}{2\pi mc}$ for the field's own length. The ratio is the square of the field's length $1/\nu_m$ to the density's length — the corpus's only dimensionless small parameter in this sector — and it is the expansion parameter of every gradient correction in the category.
+where the second step uses $w_{\mathrm{fl}}\sim\rho_{\mathrm{num}}mc^{2}$ for a fluid at rest and $\frac{1}{2\pi\nu_m}$ for the field's own length. The ratio is the square of the field's length $1/\nu_m$ to the density's length — the corpus's only dimensionless small parameter in this sector — and it is the expansion parameter of every gradient correction in the category.
 
 With $\rho_{\mathrm{num}}=\rho_{0}\exp(-r^{2}/(2\sigma^{2}))$ in one dimension,
 
@@ -144,7 +144,7 @@ The table is the statement that the framework's corrections are large only when 
 The quantum pressure is not positive definite, and this is a real feature rather than a defect of the formula. At the centre of a Gaussian the Laplacian of the density is negative and the gradient term is zero, so $p_{\mathrm{qnt}}>0$; in the tail the Laplacian changes sign, and the gradient term does not fall fast enough to keep the product positive. The crossover is at $r^{2}=2\sigma^{2}$ in one dimension and at $r^{2}=6\sigma^{2}$ in three, and both are found from the second form by substitution. In one dimension $\rho_{\mathrm{num}}=\rho_{0}e^{-r^{2}/(2\sigma^{2})}$ gives $\partial_{r}^{2}\rho_{\mathrm{num}}=\rho_{\mathrm{num}}\left(-1/\sigma^{2}+r^{2}/\sigma^{4}\right)$ and $(\partial_{r}\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}=\rho_{\mathrm{num}}\,r^{2}/\sigma^{4}$, so
 
 $$
-p_{\mathrm{qnt}}=\rho_{0}e^{-r^{2}/(2\sigma^{2})}\,\frac{h^{2}}{(2\pi)^{2} m}\left(\frac{1}{4\sigma^{2}}-\frac{r^{2}}{8\sigma^{4}}\right),
+p_{\mathrm{qnt}}=\rho_{0}e^{-r^{2}/(2\sigma^{2})}\,\frac{hc}{(2\pi)^{2}\nu_m}\left(\frac{1}{4\sigma^{2}}-\frac{r^{2}}{8\sigma^{4}}\right),
 $$
 
 which vanishes at $r^{2}=2\sigma^{2}$ and is negative beyond it; in three dimensions the first bracket is $3/(4\sigma^{2})$ and the crossover moves to $r^{2}=6\sigma^{2}$. The numerically found crossing in one dimension is $r=1.414\,214\,\sigma$, which is $\sqrt2\,\sigma$ to six digits.
@@ -244,7 +244,7 @@ The named caution is that $p_{\mathrm{qnt}}$ is the scalar part of the quantum s
 | $p_{\mathrm{th}}$ | Thermal pressure, a function of $(\rho_{\mathrm{num}},\beta)$ |
 | $p_{\mathrm{qnt}}$ | Quantum pressure, a functional of the density field |
 | $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ | Proper density |
-| $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
+| $Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
 | $u=\lVert\tilde\Xi\rVert$ | Amplitude |
 | $w_{\mathrm{fl}}$ | Energy density |
 | $s_{\mathrm{ent}}$ | Entropy density |

@@ -241,7 +241,7 @@ The second moment of the Wigner element about the flow momentum is the phase-spa
 $$
 \mathrm{Var}(p)=\frac{h^{2}}{16\pi^{2}\sigma^{2}},
 \qquad
-Q_{\mathrm{qnt}}(r_0)=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}\bigg|_{r_0}
+Q_{\mathrm{qnt}}(r_0)=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}\bigg|_{r_0}
 =\frac{h^{2}}{16\pi^{2}m\sigma^{2}},
 $$
 
@@ -352,7 +352,7 @@ The classical limit is the fluid: $\tilde W_\Xi\to\rho_{\mathrm{num}}\delta^{3}(
 | $a$, $b$ | Quadratures, $\lVert\tilde\Xi\rVert\cos(\frac{2\pi S_{\tilde\Xi}}{h})$ and $\lVert\tilde\Xi\rVert\sin(\frac{2\pi S_{\tilde\Xi}}{h})$ |
 | $u$ | A fixed unit element |
 | $\tilde U_{\mathrm{rot}}$ | Rotor of the polar form |
-| $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
+| $Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
 | $\sigma$ | Position width of a Gaussian packet |
 | $\mathrm{Var}(p)$ | Second moment of the Wigner distribution about the flow momentum, along one direction |
 | $\mathrm{Var}_{\mathrm{tr}}(p)$ | Its trace over the three directions, the three-dimensional reading |

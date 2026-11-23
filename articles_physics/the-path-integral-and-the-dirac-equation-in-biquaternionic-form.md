@@ -489,7 +489,7 @@ In the biquaternion framework, a single odd variable is not an element of the al
 | $\tilde{P}_{\Phi} = ip_0e_t+\vec p$ | Four-momentum element, $\langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = N$ |
 | $N = -p_0^{2}+p_1^{2}+p_2^{2}+p_3^{2}$ | Mass-shell scalar of the momentum, with $p_0 = E/c$ |
 | $i\tilde{P}_{\Phi}$, $i\tilde{P}_{\Phi}^{\natural}$ | Symbols of $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ on a plane wave |
-| $1/(2\pi\nu_m)$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $\nu_m=\frac{mc}{h}$ is the mass parameter |
+| $1/(2\pi\nu_m)$ | The mass length, $\frac{1}{2\pi\nu_m}$; its reciprocal $\nu_m=\frac{mc}{h}$ is the mass parameter |
 | $\tilde{Ξ}$, $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The field and its two parts, one per letter of the pair |
 | $\mathcal S_L$, $\mathcal S_R$ | Dirac propagator and its two components, the two lines with a source |
 | $\mathcal{G}_F(x-x_2)$ | Scalar (Klein–Gordon) Feynman propagator, $\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\mathcal{G}_F = i\delta^{(4)}$ |

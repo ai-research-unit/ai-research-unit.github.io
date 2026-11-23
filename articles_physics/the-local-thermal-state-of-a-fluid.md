@@ -191,8 +191,8 @@ With
 
 $$
 p_{\mathrm{qnt}}=\rho_{\mathrm{num}}\,Q_{\mathrm{qnt}}
-=-\frac{h^{2}}{16\pi^{2}m}\Box_\Phi\rho_{\mathrm{num}}
-+\frac{h^{2}}{32\pi^{2}m}\frac{\partial_\eta\rho_{\mathrm{num}}\,\partial_\eta\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}},
+=-\frac{hc}{16\pi^{2}\nu_m}\Box_\Phi\rho_{\mathrm{num}}
++\frac{hc}{32\pi^{2}\nu_m}\frac{\partial_\eta\rho_{\mathrm{num}}\,\partial_\eta\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}},
 $$
 
 with $Q_{\mathrm{qnt}}$ the quantum potential and its minus sign, the pressure at an event depends on the second derivative of the density at that event. A second derivative is a property of the neighbourhood, so $p_{\mathrm{qnt}}$ is not a function of the local data in the sense of requirement 1; it is a functional of the density field's germ at the event.
@@ -247,7 +247,7 @@ The quantum part violates determinacy at second order: $p_{\mathrm{qnt}}=\rho_{\
 | $p_{\mathrm{th}}$ | Thermal pressure |
 | $p_{\mathrm{qnt}}$ | Quantum part of the pressure |
 | $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$ | Effective pressure |
-| $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
+| $Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
 | $w_{\mathrm{fl}}$ | Energy density |
 | $s_{\mathrm{ent}}$ | Entropy density |
 | $n_{\mathrm{num}}$ | Number density |

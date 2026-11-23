@@ -23,7 +23,7 @@ The conventions are restated here so that every sign below is checkable from thi
 The free action's two slots are the two places the connection can go, and it goes to both. With $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ and $\vec\pi=\vec\nabla_\Phi S-q\vec A$,
 
 $$
-\boxed{\;\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}+\frac{\vec\pi^{2}}{2m}\Bigr)-\frac{h^{2}}{8\pi^{2}m}(\vec\nabla_\Phi \varrho)^{2}\;}
+\boxed{\;\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}+\frac{\vec\pi^{2}}{2m}\Bigr)-\frac{hc}{8\pi^{2}\nu_m}(\vec\nabla_\Phi \varrho)^{2}\;}
 $$
 
 The first bracket is one object and not two. The combination $\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}$ is the time slot of the covariant derivative of the phase, and the corpus names it $\mathcal E=-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}+ϙ\omicron_{\mathrm{pot}}$, the kinetic energy. The spatial slot is $\vec\pi$, the kinetic momentum. **Both are gauge invariant and neither is separately meaningful**: a shift of the phase moves both, and a shift of the potential moves both back.
@@ -144,7 +144,7 @@ The boundary term at the nodes. The action is stated on $\varrho>0$. Whether the
 
 ## Summary
 
-The action. $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}+\vec\pi^{2}/2m)-\frac{h^{2}}{8\pi^{2}m}(\vec\nabla_\Phi \varrho)^{2}$, with $\vec\pi=\vec\nabla_\Phi S-q\vec A$.
+The action. $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}+\vec\pi^{2}/2m)-\frac{hc}{8\pi^{2}\nu_m}(\vec\nabla_\Phi \varrho)^{2}$, with $\vec\pi=\vec\nabla_\Phi S-q\vec A$.
 
 The variations. The phase gives continuity with $\vec j=\rho_{\mathrm{num}}\vec v$; the amplitude gives $\mathcal E=\vec\pi^{2}/2m+Q$; the gradient of the second is $\mathrm{D}\vec\pi/\mathrm{D}t=-ϙ(\vec E+\vec v\times\vec B)-\vec\nabla_\Phi Q$, which is the standard Lorentz force for $q=-ϙ$.
 
@@ -168,7 +168,7 @@ Gauge invariance. Exact in the density, term by term, with no boundary term. The
 | $\mathcal E=-\partial_{t'}S+ϙ\omicron_{\mathrm{pot}}$ | Kinetic energy; gauge invariant |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | Density; gauge invariant |
 | $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; untouched by the coupling |
-| $\mathcal E_{\mathrm{grad}}=\frac{h^{2}}{8\pi^{2}m}\int(\vec\nabla_\Phi \varrho)^{2}$ | Gradient energy; untouched by the coupling |
+| $\mathcal E_{\mathrm{grad}}=\frac{hc}{8\pi^{2}\nu_m}\int(\vec\nabla_\Phi \varrho)^{2}$ | Gradient energy; untouched by the coupling |
 | $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Field strengths; gauge invariant |
 | $\phi_{\mathrm{clb}},\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}}$ | Clebsch potentials; here $\phi_{\mathrm{clb}}=S/m$, $\alpha_{\mathrm{clb}}=ϙ/m$, $\beta_{\mathrm{clb}}$ the potential's |
 | $\mathcal L_{\mathrm{fl}}$ | The Lagrangian density in the fluid variables |

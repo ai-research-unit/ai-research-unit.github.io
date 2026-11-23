@@ -150,8 +150,8 @@ S[\tilde{Ξ}] = \int\mathcal{L}\,d^4r ,
 $$
 the form fixed by the companion *Noether's Theorem in Biquaternionic Form* and the companion *The Klein–Gordon Equation in Biquaternionic Form*. Expanding the scalar parts,
 $$
-\mathcal{L} = -\,(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi) - \sum_\eta(\partial/\partial R_\eta\,\xi^*)(\partial/\partial R_\eta\,\xi) - (\frac{2\pi mc}{h})^{2}\,\xi^*\xi ,
-\qquad \frac{h}{2\pi mc} ,
+\mathcal{L} = -\,(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi) - \sum_\eta(\partial/\partial R_\eta\,\xi^*)(\partial/\partial R_\eta\,\xi) - (2\pi\nu_m)^{2}\,\xi^*\xi ,
+\qquad \frac{1}{2\pi\nu_m} ,
 $$
 which is the standard relativistic scalar Lagrangian with the time-like kinetic term carrying the sign the $i r'_t$ convention gives it. Its Euler–Lagrange equation is
 $$
@@ -159,7 +159,7 @@ $$
 \left(\Box_\Phi - (2\pi\nu_m)^{2}\right)\tilde{Ξ} = 0 ,
 \qquad \Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2\;},
 $$
-the biquaternionic Klein–Gordon equation. The variation was performed on the discrete Lagrangian in $1+1$ dimensions and compared with $\int(\Box_\Phi\xi - (2\pi\nu_m)^{2}\xi)\eta$ for a smooth test function $\eta$: the two agree to a few per cent, the residual being the discretisation of the boundary ring. Here $\frac{h}{2\pi mc}$ is the mass length.
+the biquaternionic Klein–Gordon equation. The variation was performed on the discrete Lagrangian in $1+1$ dimensions and compared with $\int(\Box_\Phi\xi - (2\pi\nu_m)^{2}\xi)\eta$ for a smooth test function $\eta$: the two agree to a few per cent, the residual being the discretisation of the boundary ring. Here $\frac{1}{2\pi\nu_m}$ is the mass length.
 
 ### The general biquaternion field
 
@@ -308,8 +308,8 @@ whose four-velocity obeys $\langle\tilde{V}_{\Phi}\rangle_{\natural} = \langle\t
 
 The field action is
 $$
-S = \int\left\{-\,\mathrm{Sc}\!\left[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde\nabla_\Phi\tilde{Ξ}\bigr)\right] - (\frac{2\pi mc}{h})^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]\right\}d^4r ,
-\qquad \frac{h}{2\pi mc} ,
+S = \int\left\{-\,\mathrm{Sc}\!\left[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde\nabla_\Phi\tilde{Ξ}\bigr)\right] - (2\pi\nu_m)^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]\right\}d^4r ,
+\qquad \frac{1}{2\pi\nu_m} ,
 $$
 whose Euler–Lagrange equation is $(\Box_\Phi - (2\pi\nu_m)^{2})\tilde{Ξ} = 0$ with $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$; the variation was checked against $\int(\Box_\Phi\xi - (2\pi\nu_m)^{2}\xi)\eta$ on a discrete grid. The Maxwell Lagrangian is the biquaternion norm of the field-strength biquaternion, $\mathcal{L}_{\mathrm{Maxwell}} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$, whose one complex invariant carries both classical invariants, and the first-order Dirac and Maxwell actions are functionals of $(\tilde\nabla_\Phi)^{\natural}$ whose Euler–Lagrange operators are the first-order kernels of the operator article.
 
@@ -330,7 +330,7 @@ The symmetries of the action are the central phase, giving the material-sector c
 | $m\,du_{\imath}/d\tau = ϙ\sum_{\jmath} F_{\imath\jmath}v_{\jmath}$ | Lorentz force; component form, standard |
 | $\mathcal{L} = -\mathrm{Sc}[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})] - (2\pi\nu_m)^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | Scalar field Lagrangian |
 | $T_{\imath\rho\jmath\sigma} = \sigma_{\imath}\sigma_\rho\,\mathrm{Sc}(e_{\imath} e_\rho e_{\jmath} e_\sigma)$ | Kinetic tensor of a general element ($\sigma_0=+1$, $\sigma_\eta=-1$); $64$ of $256$ entries nonzero, not $\delta_{\imath\jmath}\delta_{\rho\sigma}$ |
-| $(\Box_\Phi - (2\pi\nu_m)^{2})\tilde{Ξ} = 0$, $\frac{h}{2\pi mc}$ | Klein–Gordon equation from the variation |
+| $(\Box_\Phi - (2\pi\nu_m)^{2})\tilde{Ξ} = 0$, $\frac{1}{2\pi\nu_m}$ | Klein–Gordon equation from the variation |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $\mathcal{L}_{\mathrm{Maxwell}} = -\frac14\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$ | Maxwell Lagrangian as a norm |
 | $\tilde{J}_{\Phi} = i[\tilde{Ξ}^{*}(\tilde\nabla_\Phi\tilde{Ξ}) - (\tilde\nabla_\Phi\tilde{Ξ}^{*})\tilde{Ξ}]$ | Conserved material-sector current |

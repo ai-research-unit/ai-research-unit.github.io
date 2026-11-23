@@ -24,7 +24,7 @@ The conventions are restated here so that every sign below is checkable from thi
 The parent's action for the central field in the operator setting.
 
 $$
-S_{\mathrm{central}}=\int \mathrm{d}t'\,\mathrm{d}^{3}x\;\Bigl[-\frac{h}{2\pi}\,\varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{h^{2}}{8\pi^{2}m}\bigl(\lvert\vec\nabla_\Phi \varrho\rvert^{2}+\varrho^{2}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}\bigr)-\varrho^{2}V_{\mathrm{op}}\Bigr],
+S_{\mathrm{central}}=\int \mathrm{d}t'\,\mathrm{d}^{3}x\;\Bigl[-\frac{h}{2\pi}\,\varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{hc}{8\pi^{2}\nu_m}\bigl(\lvert\vec\nabla_\Phi \varrho\rvert^{2}+\varrho^{2}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}\bigr)-\varrho^{2}V_{\mathrm{op}}\Bigr],
 $$
 
 with $\dot\theta_{\mathrm{pha}}=\partial_{t'}\theta_{\mathrm{pha}}$ and $V_{\mathrm{op}}$ a function of position. Four terms, and the parent's display is reproduced without change.
@@ -34,8 +34,8 @@ Every term is one of the word's factors squared, multiplied by zero, one or two 
 | term | what it carries | order in $\epsilon$ |
 |---|---|---|
 | $-\frac{h}{2\pi}\,\varrho^{2}\dot\theta_{\mathrm{pha}}$ | scale squared, one time derivative of the phase | $0$ |
-| $-\frac{h^{2}}{8\pi^{2}m}\varrho^{2}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}$ | scale squared, two spatial derivatives of the phase | $0$ |
-| $-\frac{h^{2}}{8\pi^{2}m}\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ | two spatial derivatives of the scale | $2$ |
+| $-\frac{hc}{8\pi^{2}\nu_m}\varrho^{2}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}$ | scale squared, two spatial derivatives of the phase | $0$ |
+| $-\frac{hc}{8\pi^{2}\nu_m}\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ | two spatial derivatives of the scale | $2$ |
 | $-\varrho^{2}V_{\mathrm{op}}$ | scale squared, no derivative | $0$ |
 
 Only one term is of order two, and it is the only one carrying a derivative of the scale. The parameter counts derivatives of the scale, one power each, and no other term of the parent's action has one. There is no term of order one and no term of order three: the action has two orders and a gap between them.
@@ -55,7 +55,7 @@ What reality does not buy. Reality does not make the truncated energy positive. 
 That is the whole of the limit in this route:
 
 $$
-S_{\mathrm{cl}}=\int \mathrm{d}t'\,\mathrm{d}^{3}x\;\Bigl[-\frac{h}{2\pi}\,\varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{h^{2}}{8\pi^{2}m}\varrho^{2}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}-\varrho^{2}V_{\mathrm{op}}\Bigr].
+S_{\mathrm{cl}}=\int \mathrm{d}t'\,\mathrm{d}^{3}x\;\Bigl[-\frac{h}{2\pi}\,\varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{hc}{8\pi^{2}\nu_m}\varrho^{2}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}-\varrho^{2}V_{\mathrm{op}}\Bigr].
 $$
 
 $S_{\mathrm{cl}}$ is the classical action: its variations are the equations of a fluid with no pressure, and the two equations it produces are the two orders the companion's pair produces by truncating an equation.
@@ -94,21 +94,21 @@ One block is deleted and four are kept, so the truncated theory is the eikonal p
 With $\partial L_{\mathrm{cl}}/\partial(\partial_{\imath} \varrho)=0$ because no term of $L_{\mathrm{cl}}$ carries a derivative of $\varrho$, the Euler–Lagrange equation is algebraic:
 
 $$
--2\varrho\Bigl(\frac{h}{2\pi}\,\dot\theta_{\mathrm{pha}}+\frac{h^{2}}{8\pi^{2}m}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}+V_{\mathrm{op}}\Bigr)=0 ,
+-2\varrho\Bigl(\frac{h}{2\pi}\,\dot\theta_{\mathrm{pha}}+\frac{hc}{8\pi^{2}\nu_m}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}+V_{\mathrm{op}}\Bigr)=0 ,
 $$
 
 that is, away from the node $\varrho=0$,
 
 $$
-\boxed{\ \frac{h}{2\pi}\,\dot\theta_{\mathrm{pha}}+\frac{h^{2}}{8\pi^{2}m}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}+V_{\mathrm{op}}=0\ }
+\boxed{\ \frac{h}{2\pi}\,\dot\theta_{\mathrm{pha}}+\frac{hc}{8\pi^{2}\nu_m}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}+V_{\mathrm{op}}=0\ }
 $$
 
 This is the Hamilton–Jacobi equation with $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, and it is the same equation the companion calls order zero.
 
-Keeping the deleted term, $\partial L/\partial(\partial_{i}\varrho)=-\frac{h^{2}}{(2\pi)^{2} m}\partial_{i}\varrho$, so the Euler–Lagrange equation gains a divergence and reads
+Keeping the deleted term, $\partial L/\partial(\partial_{i}\varrho)=-\frac{hc}{(2\pi)^{2}\nu_m}\partial_{i}\varrho$, so the Euler–Lagrange equation gains a divergence and reads
 
 $$
--2\varrho\Bigl(\frac{h}{2\pi}\dot\theta_{\mathrm{pha}}+\frac{h^{2}}{8\pi^{2}m}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}+V_{\mathrm{op}}\Bigr)+\frac{h^{2}}{(2\pi)^{2} m}\Delta_\Phi \varrho=0 ,
+-2\varrho\Bigl(\frac{h}{2\pi}\dot\theta_{\mathrm{pha}}+\frac{hc}{8\pi^{2}\nu_m}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}+V_{\mathrm{op}}\Bigr)+\frac{hc}{(2\pi)^{2}\nu_m}\Delta_\Phi \varrho=0 ,
 $$
 
 which is the parent's quantum-potential equation with $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$. The two equations differ by exactly the deleted term and by nothing else.
@@ -137,7 +137,7 @@ What it is not. It is not a gauge condition, since the invariance here is global
 The phase's variation, on the truncated action.
 
 $$
-\frac{h}{2\pi}\,\partial_{t'}\varrho^{2}+\frac{h^{2}}{(2\pi)^{2} m}\vec\nabla_\Phi\cdot\bigl(\varrho^{2}\vec\nabla_\Phi\theta_{\mathrm{pha}}\bigr)=0 ,
+\frac{h}{2\pi}\,\partial_{t'}\varrho^{2}+\frac{hc}{(2\pi)^{2}\nu_m}\vec\nabla_\Phi\cdot\bigl(\varrho^{2}\vec\nabla_\Phi\theta_{\mathrm{pha}}\bigr)=0 ,
 $$
 
 that is, with $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$,
@@ -152,7 +152,7 @@ the transport equation, a conservation law for the density $\varrho^{2}$ carried
 
 Varying the scale returns the constraint, which is the deleted order's equation; varying the phase returns the conservation law, which no order touches. In the equation route the same two statements are a real line and an imaginary line of one complex equation. The variational route makes the pairing a consequence of which variable appears in the deleted term, and that is the whole of its gain.
 
-A fluid of density $\varrho^{2}$ and velocity $\vec\nabla_\Phi S/m$, irrotational because the velocity is a gradient, with no pressure and with a body force $-\vec\nabla_\Phi V_{\mathrm{op}}$. Its two equations are the two the limit produces, and the deleted term is exactly the pressure: $-\frac{h^{2}}{8\pi^{2}m}\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ is the internal energy of a fluid whose pressure potential is the quantum potential, since $\frac{h^{2}}{8\pi^{2}m}\lvert\vec\nabla_\Phi\ln \varrho\rvert^{2}$ differentiated gives the quantum force.
+A fluid of density $\varrho^{2}$ and velocity $\vec\nabla_\Phi S/m$, irrotational because the velocity is a gradient, with no pressure and with a body force $-\vec\nabla_\Phi V_{\mathrm{op}}$. Its two equations are the two the limit produces, and the deleted term is exactly the pressure: $-\frac{hc}{8\pi^{2}\nu_m}\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ is the internal energy of a fluid whose pressure potential is the quantum potential, since $\frac{hc}{8\pi^{2}\nu_m}\lvert\vec\nabla_\Phi\ln \varrho\rvert^{2}$ differentiated gives the quantum force.
 
 A constant shift $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+\theta_{0}$ leaves the truncated action invariant, because only the derivative appears. A shift depending on position does not, because the kinetic term is not invariant under it; the action is not gauge invariant and the free Schrödinger equation is not either. The truncation therefore preserves exactly the symmetry the parent's action has, and no symmetry is broken or gained by the deletion.
 ## The Noether Currents: Density, Charge and Energy
@@ -212,12 +212,12 @@ The parent's action was varied with respect to $\varrho$ and $\theta_{\mathrm{ph
 
 | variation | full action | truncated action |
 |---|---|---|
-| with respect to $\varrho$ | eikonal with $+\frac{h^{2}}{(2\pi)^{2} m}\Delta_\Phi \varrho$ | eikonal alone |
+| with respect to $\varrho$ | eikonal with $+\frac{hc}{(2\pi)^{2}\nu_m}\Delta_\Phi \varrho$ | eikonal alone |
 | with respect to $\theta_{\mathrm{pha}}$ | $\partial_{t'}\varrho^{2}+\vec\nabla_\Phi\cdot(\varrho^{2}\vec\nabla_\Phi S/m)=0$ | the same, identically |
 
 The phase's Euler–Lagrange equation was computed twice and compared symbolically; the two expressions are equal as written and no rearrangement is needed, because the deleted term contains no $\theta_{\mathrm{pha}}$.
 
-Keeping the term, the $\varrho$-equation is $-2\varrho(\frac{h}{2\pi}\dot\theta_{\mathrm{pha}}+\frac{h^{2}}{8\pi^{2}m}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}+V_{\mathrm{op}})+\frac{h^{2}}{(2\pi)^{2} m}\Delta_\Phi \varrho=0$, which divided by $-2\varrho$ is the companion's real line with $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$. Deleting the term removes the divergence and leaves the bracket. The two differ by $Q$ and by nothing else.
+Keeping the term, the $\varrho$-equation is $-2\varrho(\frac{h}{2\pi}\dot\theta_{\mathrm{pha}}+\frac{hc}{8\pi^{2}\nu_m}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}+V_{\mathrm{op}})+\frac{hc}{(2\pi)^{2}\nu_m}\Delta_\Phi \varrho=0$, which divided by $-2\varrho$ is the companion's real line with $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$. Deleting the term removes the divergence and leaves the bracket. The two differ by $Q$ and by nothing else.
 
 Each of the four terms was inspected for the number of spatial derivatives it carries on the scale and on the phase; the counts are $0,0,2,0$ and no term was found with an intermediate count.
 

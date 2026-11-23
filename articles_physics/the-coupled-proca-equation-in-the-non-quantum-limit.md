@@ -110,7 +110,7 @@ Because the equation is read in the field's own frame, the three laws are the fr
 The deleted content. The amplitude's curvature and the frame's curvature, both quadratic in the order-one brackets:
 
 $$
-Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho}
+Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi \varrho}{\varrho}
 \quad\text{and}\quad
 \text{the frame's curvature terms}.
 $$

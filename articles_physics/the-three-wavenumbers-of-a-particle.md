@@ -131,7 +131,7 @@ The check of the equality. Two routes must agree, and they do. Divide the norm o
 $$
 \frac{\langle\tilde P_{\Phi}\rangle_{\natural}}{h^{2}}
 =\frac{-m^{2}c^{2}}{h^{2}}
-=-\left(\frac{m\,c}{h}\right)^{2}
+=-\left(\nu_m\right)^{2}
 =-\nu_m^{2},
 $$
 
@@ -330,7 +330,7 @@ The parameter's square is the squared wave number of the state, and by the box i
 
 **It is the wave number of the rest frame.** Set $p=0$. Then $\nu_{\Phi}=0$, $\nu_t^{\prime}=\nu_m$, and the triangle collapses onto the mass side. Every interpretation of $\nu_m$ is therefore an interpretation in the rest frame, and the number travels with the particle unchanged, which is why it can be quoted as a property of the species.
 
-It is a wave number and not a radius. It is the wave number of the field in its own rest frame, not the extent of the field in space. A particle whose mass wave number corresponds to $386\ \mathrm{fm}$ may have no measured size at all, and the two statements are compatible because a wave number is a rate of phase and a radius is a distribution of charge. §*It Is Not the Size of the Particle* collects the numbers that make the difference unmistakable.
+It is a wave number and not a radius. It is the wave number of the field in its own rest frame, not the extent of the field in space. A particle whose $1/(2\pi\nu_m)$ is $386\ \mathrm{fm}$ may have no measured size at all, and the two statements are compatible because a wave number is a rate of phase and a radius is a distribution of charge. §*It Is Not the Size of the Particle* collects the numbers that make the difference unmistakable.
 
 It is the wave number at which the one-particle description ends. A probe must carry a wave number larger than $\nu_m$ to resolve the particle's own scale, and a probe of that wave number carries the rest energy, so it makes pairs instead of resolving. The next subsection derives that statement, and it is the reading that carries the rest.
 
@@ -341,16 +341,16 @@ The number itself says four things at once. It is the wave number of the field i
 One radian of the rest-frame phase. The field at rest oscillates as $e^{-2\pi i c\nu_m t}$, and the distance light covers in the time $t$ is $L=ct$, so the phase as a function of that distance is $-2\pi\nu_mL$. It turns by one radian over
 
 $$
-\frac{1}{2\pi\nu_m}=\frac{h}{2\pi m\,c}=\frac{\lambda_m}{2\pi} ,
+\frac{1}{2\pi\nu_m}=\frac{h}{2\pi m\,c},
 $$
 
-where $\lambda_m=1/\nu_m=h/(mc)$ is the Compton wavelength and the quotient is one radian of the same phase: $386.159\ \mathrm{fm}$ for the electron. That distance is what the mass wave number means when it is read as a length, and every statement of this section is that distance in other words.
+which is $386.159\ \mathrm{fm}$ for the electron. The full turn is $2\pi$ times as long, $\lambda_m=1/\nu_m=h/(mc)=2.426\ \mathrm{pm}$, and only the full turn is called the Compton wavelength. Every statement of this section is the first of those numbers read another way.
 
-**The wavelength is the full turn, and only the full turn carries the name.** The field returns to the same phase after $1/\nu_m=\lambda_m$, which is $2.426\ \mathrm{pm}$ for the electron and is the Compton wavelength. The length $1/(2\pi\nu_m)=\lambda_m/(2\pi)$ is one radian of that same phase, and it is the form that enters the exponents because an exponent counts radians. The two are kept apart by writing the quotient, and no shorter length is given a letter of its own; the rule is in *Physics Units and Common Elements Conventions*, §*No reduced length, no reduced constant*.
+**One radian is the form the exponents use.** The phase of a plane wave is written as an angle, and an angle counts radians, so the length that enters every exponent is the turn divided by $2\pi$. No shorter length is given a letter of its own: the rule is in *Physics Units and Common Elements Conventions*, §*No reduced length, no reduced constant*.
 
 It is the shortest distance at which the particle is still one particle. The derivation of §*The Cost of Localization* is the statement: a region of size $1/(2\pi\nu_m)$ has a wave number spread $\nu_m$, an energy spread $m\,c^{2}=mc^{2}$, and the energy to make a second particle of the same mass. Below that distance the state that would be described is not a one-particle state, so $1/(2\pi\nu_m)$ is the resolution limit of the description and not the radius of an object.
 
-It is the order of length at which relativistic effects cannot be ignored. A particle localized to $1/(2\pi\nu_m)$ has, by the uncertainty relation, a momentum spread of order $h\,\nu_m=mc$, so its kinetic energy is of order its rest energy and the non-relativistic description fails there. The distance is therefore the boundary of the Schrödinger theory: far above $1/(2\pi\nu_m)$ the non-relativistic equation is accurate, at $1/(2\pi\nu_m)$ it must give way to the Dirac or Klein–Gordon equation, and below it pair creation ends the one-particle description. That is the reading of the criterion $\nu_{\Phi}\ll \nu_m$ of §*The Non-Relativistic Criterion*, and it is the sense in which $1/(2\pi\nu_m)$ is quoted as the length at which a particle becomes relativistic: $386\ \mathrm{fm}$ for the electron, $0.21\ \mathrm{fm}$ for the proton, $2.3\times10^{-5}\ \mathrm{fm}$ for the top quark.
+It is the order of length at which relativistic effects cannot be ignored. A particle localized to $1/(2\pi\nu_m)$ has, by the uncertainty relation, a momentum spread of order $h\,\nu_m=mc$, so its kinetic energy is of order its rest energy and the non-relativistic description fails there. The distance is therefore the boundary of the Schrödinger theory: far above $1/(2\pi\nu_m)$ the non-relativistic equation is accurate, at $1/(2\pi\nu_m)$ it must give way to the Dirac or Klein–Gordon equation, and below it pair creation ends the one-particle description. That is the reading of the criterion $\nu_{\Phi}\ll \nu_m$ of §*The Non-Relativistic Criterion*, and it is the sense in which $1/(2\pi\nu_m)$ is quoted as the length at which a particle becomes relativistic: $386\ \mathrm{fm}$ for the electron, $0.21\ \mathrm{fm}$ for the proton, $1.1\times10^{-3}\ \mathrm{fm}$ for the top quark.
 
 It is the range of the force the particle carries. The Yukawa potential is $e^{-2\pi\nu_m r}/r$, so the distance $1/(2\pi\nu_m)$ is where the exponential has fallen by $1/e$, and beyond it the force is gone. A force carried by a massless particle has $\nu_m=0$ and no range at all, which is the same statement as the divergence of $1/(2\pi\nu_m)$.
 
@@ -360,9 +360,9 @@ It is the distance a mass term measures. The coefficient $\nu_m$ in $\Box_\Phi-4
 
 ### The Cost of Localization
 
-Confine the particle and the wave numbers rise. A region of size $L$ admits a momentum spread of order $\frac{h}{2\pi L}$, that is a wave number spread of order $1/L$, and a momentum $p$ costs an energy $pc$ at least. The two together give an energy spread of order $\frac{h\,c}{2\pi L}$, so the energy grows as the region shrinks and the wave number grows as the region shrinks.
+Confine the particle and the wave numbers rise. A region of size $L$ admits a momentum spread of order $\frac{h}{2\pi L}$, that is a wave number spread of order $\frac{1}{2\pi L}$, and a momentum $p$ costs an energy $pc$ at least. The two together give an energy spread of order $\frac{h\,c}{2\pi L}$, so the energy grows as the region shrinks and the wave number grows as the region shrinks.
 
-At $L=1/(2\pi\nu_m)$ the spread is the rest energy. Put $L=1/(2\pi\nu_m)=\frac{h}{2\pi mc}$:
+At $L=\frac{1}{2\pi\nu_m}$ the spread is the rest energy:
 
 $$
 \delta \nu_{\Phi} \sim  \nu_m,
@@ -415,7 +415,7 @@ The trembling point moves at the speed of light, at the only speed a massless pi
 
 ### The Range of a Force
 
-**A virtual particle cannot travel farther than the inverse of its mass wave number.** Exchange a particle of mass $m$ between two sources. The exchanged quantum is off shell by at least $mc^2$, so it can live for a time of order $\frac{h}{2\pi m\,c^{2}}$, and the distance it covers in that time is $\frac{h}{2\pi mc}=1/(2\pi\nu_m)$. The potential that results falls as
+**A virtual particle cannot travel farther than the inverse of its mass wave number.** Exchange a particle of mass $m$ between two sources. The exchanged quantum is off shell by at least $mc^2$, so it can live for a time of order $\frac{h}{2\pi m\,c^{2}}$, and the distance it covers in that time is $\frac{1}{2\pi\nu_m}=1/(2\pi\nu_m)$. The potential that results falls as
 
 $$
 V(r) \propto \dfrac{e^{-2\pi\nu_m r}}{r},
@@ -536,15 +536,15 @@ A change of momentum is a change of the winding. Multiply the momentum by two an
 One radian of the spatial phase. The distance over which the phase of the state turns by one radian is
 
 $$
-\frac{1}{2\pi\nu_{\Phi}}=\frac{h}{2\pi p_{\Phi}}=\frac{\lambda_{\Phi}}{2\pi} ,
+\frac{1}{2\pi\nu_{\Phi}}=\frac{h}{2\pi p_{\Phi}} ,
 $$
 
-where $\lambda_{\Phi}=1/\nu_{\Phi}=h/p_{\Phi}$ is the de Broglie wavelength; the quotient is one radian of the spatial phase, and it is the distance this section is about. It is not a property of the species but of the preparation: for the electron in the hydrogen ground state it is the Bohr radius, $52.9\ \mathrm{pm}$; for a $100\ \mathrm{eV}$ electron it is $19.5\ \mathrm{pm}$; for a thermal neutron it is $16.0\ \mathrm{pm}$.
+the full turn being $2\pi$ times as long, $\lambda_{\Phi}=1/\nu_{\Phi}=h/p_{\Phi}$, the de Broglie wavelength. The quotient is one radian of the spatial phase, and it is the distance this section is about. It is not a property of the species but of the preparation: for the electron in the hydrogen ground state it is the Bohr radius, $52.9\ \mathrm{pm}$; for a $100\ \mathrm{eV}$ electron it is $19.5\ \mathrm{pm}$; for a thermal neutron it is $16.0\ \mathrm{pm}$.
 
 It is the unit of every interference spacing. The fringe spacing of two slits is
 
 $$
-\delta y = \frac{D}{d\,\nu_{\Phi}} = \frac{D}{d\,\nu_{\Phi}},
+\delta y = \frac{D}{d\,\nu_{\Phi}} ,
 $$
 
 so the spacing of the fringes is the distance per radian, magnified by the geometry of the apparatus, $2\pi D/d$. A measurement of a fringe spacing is a measurement of the distance per radian, and it is the only direct measurement of $1/(2\pi\nu_{\Phi})$ in the series.
@@ -557,13 +557,13 @@ It is the coherence length of an ensemble. A thermal ensemble has its wave numbe
 
 ### Interference and Diffraction
 
-Fringes are spaced by the inverse momentum wave number. Two slits a distance $d$ apart, a screen a distance $D$ away, a particle of momentum wave number $\nu_{\Phi}$. The path difference for a point at height $y$ is $yd/D$, so the phase difference is $\nu_{\Phi}yd/D$, and neighbouring maxima are separated by
+Fringes are spaced by the inverse momentum wave number. Two slits a distance $d$ apart, a screen a distance $D$ away, a particle of momentum wave number $\nu_{\Phi}$. The path difference for a point at height $y$ is $yd/D$, so the phase difference is $2\pi\nu_{\Phi}yd/D$, and neighbouring maxima are separated by
 
 $$
 \delta y = \dfrac{D}{d\,\nu_{\Phi}},
 $$
 
-which is the ordinary formula $\lambda D/d$ with $\lambda=1/\nu_{\Phi}$. The angular wave number enters the phase and the ordinary wavelength enters the ruler on the screen.
+which is the ordinary formula $\lambda D/d$ with $\lambda=1/\nu_{\Phi}$. The wave number enters the phase with its $2\pi$ in front, and the wavelength enters the ruler on the screen.
 
 A number. Electrons of $100\ \mathrm{eV}$ have $\nu_{\Phi}=8.154\times10^{9}\ \mathrm{m^{-1}}$, so with $d=1\ \mu\mathrm{m}$ and $D=1\ \mathrm{m}$ the fringes are $0.12\ \mathrm{mm}$ apart and plainly visible. The same electrons through a crystal, whose planes are $0.2\ \mathrm{nm}$ apart, give diffraction angles of order $1/(2d\,\nu_{\Phi})=0.3\ \mathrm{rad}$: the crystal is the grating that matches the wave number.
 
@@ -682,10 +682,10 @@ The clock of any process. A reaction whose energy changes by $\delta E$ has a ph
 One radian of the temporal phase, measured in light travel. Since $\nu_t^{\prime}=\omega/(2\pi c)$, the phase of a plane wave read along the path of a light ray is $-2\pi\nu_t^{\prime} L$ with $L=ct$, so the phase turns by one radian over
 
 $$
-\frac{1}{2\pi\nu_t^{\prime}}=\frac{h\,c}{2\pi E}=\frac{\lambda_{t}}{2\pi} ,
+\frac{1}{2\pi\nu_t^{\prime}}=\frac{h\,c}{2\pi E} ,
 $$
 
-with $\lambda_{t}=1/\nu_t^{\prime}=h\,c/E$ the wavelength of the temporal phase and the quotient one radian of it.
+the full turn being $2\pi$ times as long, $\lambda_{t}=1/\nu_t^{\prime}=h\,c/E$, the wavelength of the temporal phase.
 
 The distance is the one the energy becomes when a duration is converted into a length, and the conversion is the speed of light and nothing else. For an electron of $1\ \mathrm{MeV}$ it is $197\ \mathrm{fm}$; at rest it equals the mass distance, because the energy is the rest energy.
 
@@ -839,7 +839,7 @@ with $f$ the rest-frame clock of §*The Rest-Frame Clock*. On the envelope $\chi
 $$
 i\,\frac{\partial\chi}{\partial r'_t}=-\frac{1}{4\pi\nu_m}\,\Delta_\Phi\,\chi
 \qquad\longrightarrow\qquad
-i \frac{h}{2\pi}\,\frac{\partial\chi}{\partial t}=-\frac{h^{2}}{8\pi^{2}m}\,\Delta_\Phi\,\chi ,
+i \frac{h}{2\pi}\,\frac{\partial\chi}{\partial t}=-\frac{hc}{8\pi^{2}\nu_m}\,\Delta_\Phi\,\chi ,
 $$
 
 the last step multiplying by $\frac{h}{2\pi} c$ with $r'_t=c\,t$ and $\frac{h\,c}{8\pi^{2}\nu_m}=\frac{h^{2}}{8\pi^{2}m}$. This is the free Schrödinger equation, and it is the limit of the three wave numbers: $\nu_m$ is the constant, $\nu_{\Phi}$ the variable, and the box has been turned into an operator by dropping one term.

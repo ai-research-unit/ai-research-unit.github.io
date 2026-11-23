@@ -6,7 +6,7 @@ At the rung above, the velocity is on a shell, and the action makes the shell an
 
 Three results.
 
-*First, the action has two terms and both are energies per proper volume.* A dust term, $-\frac{m\rho_{\mathrm{num}}}{2}[\sum_{\imath} V_{\imath} V_{\imath}+c^{2}]$, which is the mass shell multiplied by a density, and a gradient energy, $-\frac{h^{2}}{8\pi^{2}m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}$, which is the quantum term. The first term's bracket vanishes on shell, so the action's dust part measures the departure from the shell; the second term does not vanish anywhere.
+*First, the action has two terms and both are energies per proper volume.* A dust term, $-\frac{m\rho_{\mathrm{num}}}{2}[\sum_{\imath} V_{\imath} V_{\imath}+c^{2}]$, which is the mass shell multiplied by a density, and a gradient energy, $-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}$, which is the quantum term. The first term's bracket vanishes on shell, so the action's dust part measures the departure from the shell; the second term does not vanish anywhere.
 
 *Second, the two variations give continuity and the shell, and the acceleration law is the shell's gradient.* Two real fields, $\varrho$ and $S_{\tilde\Xi}$, two equations, and no constraint. That is the count the block's article asserts and this article derives: the third equation is the second's gradient, and it is not independent.
 
@@ -29,7 +29,7 @@ $$
 with $\rho_{\mathrm{fr}}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\varrho^{2}$ the scalar part of the frame density, the frame's rapidity being trivial at this rung, so the frame density and $\rho_{\mathrm{num}}$ are the same number. The two squares are separate because the bracket's real and imaginary parts are of different types and do not mix under the scalar part. Substituting $\rho_{\mathrm{fr}}=\rho_{\mathrm{num}}$ and multiplying by $\frac{h^{2}}{4\pi^{2}}/2m$ to put the terms in the fluid's units,
 
 $$
-\boxed{\;\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}\Bigl[\sum_{\imath} V_{\Phi,\imath}V_{\Phi,\imath}+c^{2}\Bigr]-\frac{h^{2}}{8\pi^{2}m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}\;}
+\boxed{\;\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}\Bigl[\sum_{\imath} V_{\Phi,\imath}V_{\Phi,\imath}+c^{2}\Bigr]-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}\;}
 $$
 
 with $V_{\Phi,\imath}=\partial_{\imath} S_{\tilde\Xi}/m=\partial_{\imath}\theta_{\mathrm{pha}}/\nu_m$.
@@ -55,7 +55,7 @@ which is $\partial_{\imath} J_{\Phi,\imath}=0$ with $\tilde J_\Phi=\rho_{\mathrm
 Varying the amplitude gives the mass shell, and the shell contains the quantum potential through the d'Alembertian. The gradient term varies as
 
 $$
-\delta\int-\frac{h^{2}}{8\pi^{2}m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}=+\frac{h^{2}}{(2\pi)^{2} m}\int\Box_\Phi \varrho\,\delta \varrho,
+\delta\int-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}=+\frac{hc}{(2\pi)^{2}\nu_m}\int\Box_\Phi \varrho\,\delta \varrho,
 $$
 
 and $\delta \varrho=\delta\rho_{\mathrm{num}}/(2\varrho)$, so the contribution per unit $\delta\rho_{\mathrm{num}}$ is $\frac{h^{2}\Box_\Phi \varrho}{8\pi^{2}m\varrho}=-Q_{\mathrm{qnt}}$. The dust term contributes $-\frac{m}{2}[\sum_{\imath} V_{\imath} V_{\imath}+c^{2}]$. Hence
@@ -96,7 +96,7 @@ Three consequences, and the block states each of them in another language.
 
 *The functional has no ground state, and that is not a defect of the fluid reading.* A field theory with an indefinite quadratic form has no lowest configuration, which is why the relativistic object of this block is a field and not a fluid with a rest state. The action says this before any quantization, and the second category's Fock space is where the two signs become particles and antiparticles.
 
-At the rung below the form is definite and the difference is the whole of the difference between the two rungs. The Schrödinger fluid's gradient energy is $\frac{h^{2}}{8\pi^{2}m}\int(\vec\nabla_\Phi \varrho)^{2}$, a sum of squares, and its quantum potential is a Laplacian's. One operator, one sign, one sheet.
+At the rung below the form is definite and the difference is the whole of the difference between the two rungs. The Schrödinger fluid's gradient energy is $\frac{hc}{8\pi^{2}\nu_m}\int(\vec\nabla_\Phi \varrho)^{2}$, a sum of squares, and its quantum potential is a Laplacian's. One operator, one sign, one sheet.
 
 ## The Constraints the Action Imposes: There Is No Subsidiary Condition
 
@@ -166,7 +166,7 @@ The nodal set in four dimensions. The chart fails at $\varrho=0$, and at this ru
 
 ## Summary
 
-The action. $\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}[\sum_{\imath} V_{\Phi,\imath}V_{\Phi,\imath}+c^{2}]-\frac{h^{2}}{8\pi^{2}m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}$, a dust term and a gradient energy, both per proper volume.
+The action. $\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}[\sum_{\imath} V_{\Phi,\imath}V_{\Phi,\imath}+c^{2}]-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}$, a dust term and a gradient energy, both per proper volume.
 
 The variations. The phase gives $\partial_{\imath}(\rho_{\mathrm{num}}V_{\Phi,\imath})=0$; the amplitude gives $\sum_{\imath} V_{\imath} V_{\imath}=-c^{2}-2Q_{\mathrm{qnt}}/m$; the gradient of the second is $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$.
 
@@ -188,7 +188,7 @@ The stress. The translation current, dust plus gradient; the block's three-by-th
 | $\tilde V_\Phi=\tilde P_\Phi/m$ | Four-velocity; on shell $\sum_{\imath} V_{\imath} V_{\imath}=-c^{2}-2Q_{\mathrm{qnt}}/m$ |
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | Quantum potential; indefinite |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r'_{t}}^{2}$ | Central d'Alembertian; $r'_t=ct$ |
-| $\mathcal E_{\mathrm{grad}}=-\frac{h^{2}}{8\pi^{2}m}\int\sum_{\imath}(\partial_{\imath} \varrho)^{2}$ | Gradient energy; indefinite |
+| $\mathcal E_{\mathrm{grad}}=-\frac{hc}{8\pi^{2}\nu_m}\int\sum_{\imath}(\partial_{\imath} \varrho)^{2}$ | Gradient energy; indefinite |
 | $T_{\imath\jmath}$ | Canonical stress; $T_{00}=\rho_{\mathrm{chg}}mc^{2}$ on shell |
 | $\gamma=E/(mc^{2})$ | Signed Lorentz factor; the Jacobian between the two densities |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |

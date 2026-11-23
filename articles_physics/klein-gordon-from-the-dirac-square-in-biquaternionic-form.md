@@ -425,7 +425,7 @@ The converse holds exactly for the free pair. Read the first member as a definit
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ | Biquaternion norm |
 | $\tilde P_{\Phi} = h\,\tilde\Upsilon_{\Phi} = h\left(i\frac{\omega}{2\pi c}\,e_t + \vec\nu_\Phi\right)$ | Four-wavevector, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ |
 | $\tilde R_\Phi = i r'_t\,e_t + \vec r$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position; with $\tilde\Upsilon_{\Phi}=\tilde P_{\Phi}/h$ the phase is $\theta_{\mathrm{pwp}}=2\pi\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_\Phi^{\natural})=2\pi\vec\nu_\Phi\cdot\vec r-\omega r'_t/c$, that is $\frac{2\pi}{h}\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ |
-| $1/(2\pi\nu_m)$ | The length of one radian of the operator pair's mass phase, $\frac{h}{2\pi mc}$ |
+| $1/(2\pi\nu_m)$ | The length of one radian of the operator pair's mass phase, $\frac{1}{2\pi\nu_m}$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$ | The one-sided pair; linear, with the mass the same scalar in each half |
 | $\tilde{Ξ}_{L} =\frac{1}{2\pi\nu_m}\tilde\nabla_\Phi\tilde{Ξ}_{R}$ | The second half as the gradient of the first; the pair's equivalent form, exact whenever $(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde{Ξ}_{R} = 0$ |
 | $\langle\tilde{Ξ}\rangle_{*} = \sum_{\imath}\lvert\tilde{Ξ}_{\imath}\rvert^2$ | Hermitian norm of a field, positive definite; the Dirac density of the pair |

@@ -107,7 +107,7 @@ The spatial sign. The spatial slot has $+\frac{2\pi iϙ A_\eta}{h}$ inside $D_\e
 The curvature. Differentiating the operator setting's symbol twice,
 
 $$
-\frac{\partial^{2}\sigma_{\mathrm{gco}}}{\partial k_\eta^{2}}=-\frac{h^{2}}{(2\pi)^{2} m}
+\frac{\partial^{2}\sigma_{\mathrm{gco}}}{\partial k_\eta^{2}}=-\frac{hc}{(2\pi)^{2}\nu_m}
 \qquad
 \text{for each }\eta ,
 $$

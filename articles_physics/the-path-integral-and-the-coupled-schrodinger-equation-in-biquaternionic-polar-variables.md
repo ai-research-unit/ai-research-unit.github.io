@@ -39,7 +39,7 @@ $$
 gives the chart's exponent
 
 $$
-\boxed{\;S=\int dt'\,d^{3}x\;\Bigl[-\frac{h}{2\pi}\,\varrho^{2}\kappa_t-\frac{h^{2}}{8\pi^{2}m}\Bigl((\vec\nabla_\Phi \varrho)^{2}+\varrho^{2}|\vec\kappa|^{2}\Bigr)-h_t\,\varrho^{2}\Bigr],\;}
+\boxed{\;S=\int dt'\,d^{3}x\;\Bigl[-\frac{h}{2\pi}\,\varrho^{2}\kappa_t-\frac{hc}{8\pi^{2}\nu_m}\Bigl((\vec\nabla_\Phi \varrho)^{2}+\varrho^{2}|\vec\kappa|^{2}\Bigr)-h_t\,\varrho^{2}\Bigr],\;}
 $$
 
 in the constant setting, and the same with $V(\vec x)$ in place of $h_t$ in the operator setting. **The connection sits inside the two rates and nowhere else**: it does not multiply $\varrho$, it does not meet $\vec\nabla_\Phi \varrho$, and it does not appear in a separate term. The two identities were checked on analytic fields at four points, the temporal one to a relative $1.4\times10^{-16}$ and the spatial one to $2.1\times10^{-16}$.
@@ -53,8 +53,8 @@ The rates are the chart's entire vocabulary for the connection. There are two of
 Written out, the exponent is the free exponent plus three terms. In the constant setting,
 
 $$
-S=\int dt'\,d^{3}x\;\Bigl[-\frac{h}{2\pi} \varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{h^{2}}{8\pi^{2}m}\bigl((\vec\nabla_\Phi \varrho)^{2}+\varrho^{2}(\vec\nabla_\Phi\theta_{\mathrm{pha}})^{2}\bigr)-h_t \varrho^{2}
-+ϙ\omicron_{\mathrm{pot}}\,\varrho^{2}-\frac{h}{2\pi m}ϙ\,\varrho^{2}\vec A\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{ϙ^{2}}{2m}\varrho^{2}|\vec A|^{2}\Bigr].
+S=\int dt'\,d^{3}x\;\Bigl[-\frac{h}{2\pi} \varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{hc}{8\pi^{2}\nu_m}\bigl((\vec\nabla_\Phi \varrho)^{2}+\varrho^{2}(\vec\nabla_\Phi\theta_{\mathrm{pha}})^{2}\bigr)-h_t \varrho^{2}
++ϙ\omicron_{\mathrm{pot}}\,\varrho^{2}-\frac{c}{2\pi\nu_m}ϙ\,\varrho^{2}\vec A\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{ϙ^{2}}{2m}\varrho^{2}|\vec A|^{2}\Bigr].
 $$
 
 The three interaction terms have the shapes $\omicron_{\mathrm{pot}} \varrho^{2}$, $\varrho^{2}\vec A\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}$ and $\varrho^{2}|\vec A|^{2}$, and no other shape appears.
@@ -85,9 +85,9 @@ The element companion's dispersion is therefore the chart's dispersion. $E+ϙ\om
 
 ## The Vector Potential Is a Translation
 
-**A constant $\vec A$ translates the phase's gradient, and the translation changes the bracket by its square.** This is the same operation as the scalar potential's shift, read in the spatial slots, and the difference between the two is the sign the bracket carries: the temporal rate enters the exponent multiplied by $-\frac{h}{2\pi} n$ and the spatial one by $-\frac{h^{2}}{8\pi^{2}m}n$.
+**A constant $\vec A$ translates the phase's gradient, and the translation changes the bracket by its square.** This is the same operation as the scalar potential's shift, read in the spatial slots, and the difference between the two is the sign the bracket carries: the temporal rate enters the exponent multiplied by $-\frac{h}{2\pi} n$ and the spatial one by $-\frac{hc}{8\pi^{2}\nu_m}n$.
 
-The linear term is a total derivative under a gauge transformation and the quadratic term is the remainder. Writing $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda$ and $\vec A\to\vec A+\vec\nabla_\Phi\Lambda$, the linear term changes by $-\frac{h}{2\pi m}ϙ\,\varrho^{2}\vec A\cdot\vec\nabla_\Phi\Lambda$ plus a term in $\vec\nabla_\Phi\Lambda\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}$, and the sum of the changes is a total derivative once the continuity of the density is used. The quadratic term's change supplies the piece that makes the total derivative exact, which is the same cancellation the element companion records between the kinetic and the potential terms.
+The linear term is a total derivative under a gauge transformation and the quadratic term is the remainder. Writing $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda$ and $\vec A\to\vec A+\vec\nabla_\Phi\Lambda$, the linear term changes by $-\frac{c}{2\pi\nu_m}ϙ\,\varrho^{2}\vec A\cdot\vec\nabla_\Phi\Lambda$ plus a term in $\vec\nabla_\Phi\Lambda\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}$, and the sum of the changes is a total derivative once the continuity of the density is used. The quadratic term's change supplies the piece that makes the total derivative exact, which is the same cancellation the element companion records between the kinetic and the potential terms.
 
 The chart's invariance is exact and needs no link. The transformation shifts one of the two chart coordinates by a function of the point, the measure is $dn\,d\theta_{\mathrm{pha}}$ up to a constant, and a shift of a coordinate has unit Jacobian. The invariance therefore holds at any step size and for a finite transformation, and there is no linearised link to fail and no exponential link to succeed: those are the Klein–Gordon companion's questions, and they arise there because its field has two independent slots whose covariance is a statement about each.
 
@@ -143,7 +143,7 @@ Does not add a value. The kernel is the element companion's, the dispersion is t
 
 ## Summary
 
-The coupled integral in the chart is the free integral with the two phase rates replaced by the mechanical ones, $\kappa_t=\dot\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}\omicron_{\mathrm{pot}}$ and $\vec\kappa=\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A$, and with the potential untouched. The exponent is $-\frac{h}{2\pi} \varrho^{2}\kappa_t-\frac{h^{2}}{8\pi^{2}m}((\vec\nabla_\Phi \varrho)^{2}+\varrho^{2}|\vec\kappa|^{2})-h_t \varrho^{2}$, verified as an identity against the element form to a relative $10^{-16}$ in both halves, and its three interaction terms have the shapes $\omicron_{\mathrm{pot}} \varrho^{2}$, $\varrho^{2}\vec A\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}$ and $\varrho^{2}|\vec A|^{2}$ and no other.
+The coupled integral in the chart is the free integral with the two phase rates replaced by the mechanical ones, $\kappa_t=\dot\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}\omicron_{\mathrm{pot}}$ and $\vec\kappa=\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A$, and with the potential untouched. The exponent is $-\frac{h}{2\pi} \varrho^{2}\kappa_t-\frac{hc}{8\pi^{2}\nu_m}((\vec\nabla_\Phi \varrho)^{2}+\varrho^{2}|\vec\kappa|^{2})-h_t \varrho^{2}$, verified as an identity against the element form to a relative $10^{-16}$ in both halves, and its three interaction terms have the shapes $\omicron_{\mathrm{pot}} \varrho^{2}$, $\varrho^{2}\vec A\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}$ and $\varrho^{2}|\vec A|^{2}$ and no other.
 
 The scalar potential enters linearly, so the chart's dispersion is the element companion's shift $h_t\mapsto h_t-ϙ\omicron_{\mathrm{pot}}$ exactly; the Klein–Gordon chart's temporal bracket is a square, which is why that pair has a fork and this one does not. The vector potential enters as a translation of the phase's gradient, its linear term is the total derivative and its quadratic term the remainder of the gauge invariance, and the invariance itself is exact at every step because the measure is flat in the density and the angle and the transformation shifts one of them.
 
@@ -155,7 +155,7 @@ The kernel in a constant background has the free scale and an angle that carries
 | --- | --- |
 | $\kappa_t=\dot\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}\omicron_{\mathrm{pot}}$ | Mechanical temporal rate |
 | $\vec\kappa=\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A$ | Mechanical spatial rate |
-| $-\frac{h}{2\pi} \varrho^{2}\kappa_t-\frac{h^{2}}{8\pi^{2}m}((\vec\nabla_\Phi \varrho)^{2}+\varrho^{2}|\vec\kappa|^{2})$ | The chart's exponent |
+| $-\frac{h}{2\pi} \varrho^{2}\kappa_t-\frac{hc}{8\pi^{2}\nu_m}((\vec\nabla_\Phi \varrho)^{2}+\varrho^{2}|\vec\kappa|^{2})$ | The chart's exponent |
 | $\omicron_{\mathrm{pot}} \varrho^{2}$ | The scalar potential's term; linear |
 | $\varrho^{2}\vec A\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}$ | The vector potential's linear term |
 | $\varrho^{2}|\vec A|^{2}$ | The vector potential's quadratic term |

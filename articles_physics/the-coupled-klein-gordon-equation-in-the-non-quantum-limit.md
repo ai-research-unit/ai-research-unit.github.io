@@ -60,7 +60,7 @@ The mass shell in mechanical variables.
 $$
 \frac{\mathcal E^{2}}{c^{2}}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}},
 \qquad
-Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho},
+Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi \varrho}{\varrho},
 \qquad
 \mathcal E=E-q\omicron_{\mathrm{pot}} .
 $$
@@ -169,8 +169,8 @@ the same statement as the non-relativistic companion's, and here it is the relat
 The discarded term.
 
 $$
-Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho}
-=-\frac{h^{2}}{8\pi^{2}m}\left[\frac{1}{2}\Box_\Phi\ln\rho_{\mathrm{num}}+\frac{1}{4}\left(\partial\ln\rho_{\mathrm{num}}\right)^{2}\right],
+Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi \varrho}{\varrho}
+=-\frac{hc}{8\pi^{2}\nu_m}\left[\frac{1}{2}\Box_\Phi\ln\rho_{\mathrm{num}}+\frac{1}{4}\left(\partial\ln\rho_{\mathrm{num}}\right)^{2}\right],
 $$
 
 the free article's two forms, with the d'Alembertian and with the density alone.

@@ -71,7 +71,7 @@ $$
 and the current is the antisymmetric bilinear carrying one gradient,
 
 $$
-\vec J=\frac{h}{4\pi \,i\,m}\,2\,\mathrm{Sc}\!\left(\tilde\Xi^{\dagger}\vec\nabla_\Phi\tilde\Xi-\left(\vec\nabla_\Phi\tilde\Xi\right)^{\dagger}\tilde\Xi\right).
+\vec J=\frac{c}{4\pi i\nu_m}\,2\,\mathrm{Sc}\!\left(\tilde\Xi^{\dagger}\vec\nabla_\Phi\tilde\Xi-\left(\vec\nabla_\Phi\tilde\Xi\right)^{\dagger}\tilde\Xi\right).
 $$
 
 The pair satisfies
@@ -181,7 +181,7 @@ $$
 which with $r'_t=c\,t$ and $\frac{h}{2\pi}=m\,c/(2\pi\nu_m)$ reads $i \frac{h}{2\pi}\,\partial_{t}\psi=H\psi$. For the scalar case with a constant potential,
 
 $$
-i \frac{h}{2\pi}\,\partial_{t}\psi=-\frac{h^{2}}{8\pi^{2}m}\vec\nabla_\Phi^{2}\psi+V\psi
+i \frac{h}{2\pi}\,\partial_{t}\psi=-\frac{hc}{8\pi^{2}\nu_m}\vec\nabla_\Phi^{2}\psi+V\psi
 \quad\longmapsto\quad
  hf_{\mathrm{frq}}=\frac{h^{2}\,\nu_{\Phi}^{2}}{2m}+V .
 $$
@@ -363,7 +363,7 @@ The checks, in one place. Each residual below verifies one claim, and the claim 
 | $ \omega $ | angular frequency, the transform variable conjugate to $t$ |
 | $ \vec\nu_{\Phi} $ | momentum wave number, $\frac{\vec p}{h}$ |
 | $ \nu_{\Phi} $ | its modulus |
-| $ \nu_m $ | mass wave number, $\frac{m\,c}{h}$ |
+| $ \nu_m $ | mass wave number, $\nu_m$ |
 | $ \tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural} $ | the quaternion norm of the wave number, $ -\nu_t^{\prime\,2}+\nu_{\Phi}^{2} $, and $ -\nu_m^{2} $ on shell; the symbol of the d'Alembertian |
 | $ \rho $ | density of the element form |
 | $ \vec J $ | current of the element form, one gradient, in $\mathbb{B}_{\Phi}$ |

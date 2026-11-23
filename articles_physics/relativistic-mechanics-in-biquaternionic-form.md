@@ -234,7 +234,7 @@ the first of which is identical in form to the source-free biquaternion Maxwell 
 | Klein–Gordon | $(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}- (2\pi\nu_m)^{2})\tilde{Ξ} = 0$ | — |
 | Dirac | $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$ | — |
 
-Here $\frac{h}{2\pi mc}$ is the mass length.
+Here $\frac{1}{2\pi\nu_m}$ is the mass length.
 
 ## Structural Observations
 

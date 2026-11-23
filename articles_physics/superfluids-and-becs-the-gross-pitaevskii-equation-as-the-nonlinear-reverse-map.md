@@ -25,7 +25,7 @@ $$
 with $\rho_{\mathrm{num}}$ the number density of condensed particles and $\vec v$ the velocity of the condensate's flow. The Gross–Pitaevskii equation is
 
 $$
-i \frac{h}{2\pi}\,\partial_{t'}\psi=-\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi\psi+g\lvert\psi\rvert^{2}\psi ,
+i \frac{h}{2\pi}\,\partial_{t'}\psi=-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi\psi+g\lvert\psi\rvert^{2}\psi ,
 $$
 
 with $g$ the contact coupling, positive for a repulsive interaction and negative for an attractive one.
@@ -80,7 +80,7 @@ The soliton is the fluid at its most nonlinear and its most rigid. Its density i
 
 ## The Linear Limit
 
-With $g=0$ the Gross–Pitaevskii equation is $i \frac{h}{2\pi}\partial_{t'}\psi=-\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi\psi$, the free equation of the trilogy. In the fluid's variables the pressure vanishes, so the limit is the pressureless member of the reverse map's family, and its only force is the quantum potential.
+With $g=0$ the Gross–Pitaevskii equation is $i \frac{h}{2\pi}\partial_{t'}\psi=-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi\psi$, the free equation of the trilogy. In the fluid's variables the pressure vanishes, so the limit is the pressureless member of the reverse map's family, and its only force is the quantum potential.
 
 **So the linear equation is the non-interacting limit and not the fundamental law.** The order parameter is the same object in both cases; what changes is whether the interaction is present. A condensate with $g=0$ is a gas of non-interacting bosons, which is the case in which the condensate is a single-particle state and the fluid has nothing to carry but the quantum potential.
 
@@ -92,7 +92,7 @@ In the one condensed-matter system where a Schrödinger-like equation is fundame
 
 The condensate fraction, the healing length around a defect, the Thomas–Fermi radius and the soliton's width are all measured, and each is a measurement of the order parameter's parameters. None of them is a measurement of a pressure in a fluid that was known beforehand.
 
-Superfluid helium is described by a normal component and a superfluid component, with the superfluid component's flow irrotational and its circulation quantised in units of $h/m$. The description is derived from the condensate's order parameter, and [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html) is the block's account of the two-fluid construction. The circulation's unit is the same $h/m$ that the field's nodal set gives, and the agreement is an agreement of formulas with two different objects behind them.
+Superfluid helium is described by a normal component and a superfluid component, with the superfluid component's flow irrotational and its circulation quantised in units of $c/\nu_m$. The description is derived from the condensate's order parameter, and [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html) is the block's account of the two-fluid construction. The circulation's unit is the same $c/\nu_m$ that the field's nodal set gives, and the agreement is an agreement of formulas with two different objects behind them.
 
 ## The Caveat
 
@@ -120,7 +120,7 @@ The uniform state fixes the chemical potential $\mu_{\mathrm{chm}}=g\rho_0$, the
 
 The linear Schrödinger equation is the $g=0$ limit, and the fluid's pressure vanishes in the same limit. So in the one case where a Schrödinger-like equation is fundamental the equation is the nonlinear one.
 
-The direction is the order parameter to the fluid. The historical two-fluid model of helium is the same direction, and its quantum of circulation is the $h/m$ that the block's nodal set also gives.
+The direction is the order parameter to the fluid. The historical two-fluid model of helium is the same direction, and its quantum of circulation is the $c/\nu_m$ that the block's nodal set also gives.
 
 The block's denial stands: the sharing is of formulas, not of objects, and the healing length is the formula where the two part company.
 
@@ -153,4 +153,4 @@ The block's denial stands: the sharing is of formulas, not of objects, and the h
 - Christopher J. Pethick and Henrik Smith, *Bose–Einstein Condensation in Dilute Gases* (Cambridge University Press, 2002), ch. 6 and 7, for the Gross–Pitaevskii equation and its exact solutions.
 - Lev D. Landau and Evgeny M. Lifshitz, *Fluid Mechanics*, 2nd ed. (Pergamon, 1987), §141, for the two-fluid model of superfluid helium and the criterion for superfluidity.
 - The companion articles: [The Equation of State and the Barotropic Condition](the-equation-of-state-and-the-barotropic-condition.html), [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html), [The Fluid–Wave Correspondence: Which Constant Each Field Carries](the-fluid-wave-correspondence-which-constant-each-field-carries.html), [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html).
-- [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), for the same $h/m$ in the field, and [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html), for the denial this article restates.
+- [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), for the same $c/\nu_m$ in the field, and [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html), for the denial this article restates.

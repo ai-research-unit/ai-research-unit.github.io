@@ -33,7 +33,7 @@ with the mechanical momentum $\vec\pi$ and the potential energy $-ϙ\omicron_{\m
 The action is the coupled variational companion's. In the operator setting,
 
 $$
-S=\int dt'\,d^{3}x\;\mathrm{Sc}\Bigl[\frac{i h}{4\pi}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\frac{h^{2}}{8\pi^{2}m}\sum_\eta\bigl(D_\eta\tilde\Xi\bigr)^{*}\bigl(D_\eta\tilde\Xi\bigr)+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi\Bigr],
+S=\int dt'\,d^{3}x\;\mathrm{Sc}\Bigl[\frac{i h}{4\pi}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\frac{hc}{8\pi^{2}\nu_m}\sum_\eta\bigl(D_\eta\tilde\Xi\bigr)^{*}\bigl(D_\eta\tilde\Xi\bigr)+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi\Bigr],
 $$
 
 and the integral is $\int\mathcal{D}\tilde\Xi\,\mathcal{D}\tilde\Xi^{*}\exp(\frac{2\pi iS}{h})$ with the free measure. The kinetic term is the free one and that is the metric's doing: the temporal connection is absorbed in $D_t$ and the kinetic term uses $\partial_{t'}$, so the antisymmetrisation that makes it Hermitian is untouched by the coupling.
@@ -49,9 +49,9 @@ so the coupled gradient term is positive for the same reason as the free one: th
 The three-term split is the coupling's whole content in the exponent. Written out,
 
 $$
--\frac{h^{2}}{8\pi^{2}m}\sum_\eta\bigl(D_\eta\tilde\Xi\bigr)^{*}\bigl(D_\eta\tilde\Xi\bigr)
-=-\frac{h^{2}}{8\pi^{2}m}\sum_\eta(\partial_\eta\tilde\Xi)^{*}(\partial_\eta\tilde\Xi)
--\frac{h}{2\pi m}\sum_\eta ϙA_\eta\,\mathrm{Sc}\bigl(\tilde\Xi^{*}i\partial_\eta\tilde\Xi\bigr)
+-\frac{hc}{8\pi^{2}\nu_m}\sum_\eta\bigl(D_\eta\tilde\Xi\bigr)^{*}\bigl(D_\eta\tilde\Xi\bigr)
+=-\frac{hc}{8\pi^{2}\nu_m}\sum_\eta(\partial_\eta\tilde\Xi)^{*}(\partial_\eta\tilde\Xi)
+-\frac{c}{2\pi\nu_m}\sum_\eta ϙA_\eta\,\mathrm{Sc}\bigl(\tilde\Xi^{*}i\partial_\eta\tilde\Xi\bigr)
 -\frac{ϙ^{2}}{2m}|\vec A|^{2}\,\tilde\Xi^{*}\tilde\Xi .
 $$
 

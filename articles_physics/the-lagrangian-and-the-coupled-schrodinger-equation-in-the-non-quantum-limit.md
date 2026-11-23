@@ -5,7 +5,7 @@ Write the parent's coupled polar action, delete the one term carrying a spatial 
 
 The parent supplies the action and its split into three coupling pieces. [The Lagrangian and the Coupled Schrödinger Equation in Polar Variables](the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html) writes the coupled Lagrangian, shows that the connection enters the kinetic term through one covariant replacement, and separates that term into the free, paramagnetic and diamagnetic pieces. Its Euler–Lagrange equations are the covariant pair. This article orders the terms and deletes one.
 
-The deletion is the free one and it is the only one. The term deleted here is the same term deleted in the free variational companion, $-\frac{h^{2}}{8\pi^{2}m}\lvert\vec\nabla_\Phi \varrho\rvert^{2}$, and the connection does not touch it: it carries no $\theta_{\mathrm{pha}}$ and no $\vec A$. One term, the same term, in both families.
+The deletion is the free one and it is the only one. The term deleted here is the same term deleted in the free variational companion, $-\frac{hc}{8\pi^{2}\nu_m}\lvert\vec\nabla_\Phi \varrho\rvert^{2}$, and the connection does not touch it: it carries no $\theta_{\mathrm{pha}}$ and no $\vec A$. One term, the same term, in both families.
 
 The article's central clarification is about the coupling, and it is a warning. The parent's split into free, paramagnetic and diamagnetic pieces invites a second expansion, in powers of $q$. That expansion is not this limit and it is not compatible with it. All three pieces carry the same order in $\epsilon$, because the parameter counts derivatives of the scale and none of the three has one. The coupling is not small in this limit; it is leading, and a reader who treats $q\vec A$ as a perturbation is computing a different approximation of a different equation.
 
@@ -25,7 +25,7 @@ The parent's action for the central field in the operator setting.
 
 $$
 S_{\mathrm{cpl}}=\int \mathrm{d}t'\,\mathrm{d}^{3}x\;\Bigl[-\frac{h}{2\pi}\,\varrho^{2}\dot\theta_{\mathrm{pha}}
--\frac{h^{2}}{8\pi^{2}m}\Bigl(\lvert\vec\nabla_\Phi \varrho\rvert^{2}+\varrho^{2}\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Bigr\rvert^{2}\Bigr)
+-\frac{hc}{8\pi^{2}\nu_m}\Bigl(\lvert\vec\nabla_\Phi \varrho\rvert^{2}+\varrho^{2}\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Bigr\rvert^{2}\Bigr)
 -\varrho^{2}V_{\mathrm{op}}+ϙ\omicron_{\mathrm{pot}}\,\varrho^{2}\Bigr],
 $$
 
@@ -36,13 +36,13 @@ Every term in the article's letters, with its order.
 | term | what it carries | order in $\epsilon$ |
 |---|---|---|
 | $-\frac{h}{2\pi}\,\varrho^{2}\dot\theta_{\mathrm{pha}}$ | scale squared, one time derivative of the phase | $0$ |
-| $-\frac{h^{2}}{8\pi^{2}m}\varrho^{2}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}$ | scale squared, two spatial derivatives of the phase | $0$ |
+| $-\frac{hc}{8\pi^{2}\nu_m}\varrho^{2}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}$ | scale squared, two spatial derivatives of the phase | $0$ |
 | $-\frac{h q}{2\pi m}\varrho^{2}\,\vec A\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}$ | scale squared, one spatial derivative of the phase and the potential | $0$ |
 | $-\frac{q^{2}}{2m}\varrho^{2}\lvert\vec A\rvert^{2}$ | scale squared, the potential only | $0$ |
-| $-\frac{h^{2}}{8\pi^{2}m}\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ | two spatial derivatives of the scale | $2$ |
+| $-\frac{hc}{8\pi^{2}\nu_m}\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ | two spatial derivatives of the scale | $2$ |
 | $-\varrho^{2}V_{\mathrm{op}}-q\omicron_{\mathrm{pot}}\,\varrho^{2}$ | scale squared, no derivative | $0$ |
 
-The three middle rows are the parent's one term, split. The parent separates $-\frac{h^{2}}{8\pi^{2}m}\varrho^{2}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\rvert^{2}$ into the free kinetic term, the paramagnetic term linear in $\vec A$, and the diamagnetic term quadratic in $\vec A$, and gives the sign of the third as the reason the energy is bounded below: the quadratic term is positive for every $\vec A$.
+The three middle rows are the parent's one term, split. The parent separates $-\frac{hc}{8\pi^{2}\nu_m}\varrho^{2}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\rvert^{2}$ into the free kinetic term, the paramagnetic term linear in $\vec A$, and the diamagnetic term quadratic in $\vec A$, and gives the sign of the third as the reason the energy is bounded below: the quadratic term is positive for every $\vec A$.
 
 **All three carry order zero, and that is the article's sharpest statement about the coupling.** The parameter counts spatial derivatives of the scale. None of the three pieces has one. The paramagnetic term is linear in the phase's gradient and linear in the potential, and it is leading, which is the variational face of the companion's rule that the criterion is written on the mechanical momentum: $\vec\pi$ contains $\vec A$, so a piece of $\lvert\vec\pi\rvert^{2}$ that is linear in $\vec A$ is part of the leading term and not a correction to it.
 
@@ -52,7 +52,7 @@ Delete the only order-two term. That is the whole of the limit:
 
 $$
 S_{\mathrm{cl}}=\int \mathrm{d}t'\,\mathrm{d}^{3}x\;\Bigl[-\frac{h}{2\pi}\,\varrho^{2}\dot\theta_{\mathrm{pha}}
--\frac{h^{2}}{8\pi^{2}m}\varrho^{2}\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Bigr\rvert^{2}
+-\frac{hc}{8\pi^{2}\nu_m}\varrho^{2}\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Bigr\rvert^{2}
 -\varrho^{2}V_{\mathrm{op}}+ϙ\omicron_{\mathrm{pot}}\,\varrho^{2}\Bigr].
 $$
 
@@ -90,7 +90,7 @@ Why this list is short. The family deletes one block and keeps four, so the trun
 The scale's variation of the truncated action. No term of $S_{\mathrm{cl}}$ carries a derivative of $\varrho$, so the Euler–Lagrange equation is algebraic:
 
 $$
--2\varrho\Bigl(\frac{h}{2\pi}\,\dot\theta_{\mathrm{pha}}+\frac{h^{2}}{8\pi^{2}m}\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Bigr\rvert^{2}+V_{\mathrm{op}}-ϙ\omicron_{\mathrm{pot}}\Bigr)=0 ,
+-2\varrho\Bigl(\frac{h}{2\pi}\,\dot\theta_{\mathrm{pha}}+\frac{hc}{8\pi^{2}\nu_m}\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Bigr\rvert^{2}+V_{\mathrm{op}}-ϙ\omicron_{\mathrm{pot}}\Bigr)=0 ,
 $$
 
 that is, away from the node $\varrho=0$,
@@ -101,10 +101,10 @@ $$
 
 with $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ and $ϙ=-q$. **This is the covariant Hamilton–Jacobi equation**, and it is the companion's order zero.
 
-With the term kept, the same variation carries the quantum potential. Then $\partial L/\partial(\partial_{i}\varrho)=-\frac{h^{2}}{(2\pi)^{2} m}\partial_{i}\varrho$ and the equation gains a divergence:
+With the term kept, the same variation carries the quantum potential. Then $\partial L/\partial(\partial_{i}\varrho)=-\frac{hc}{(2\pi)^{2}\nu_m}\partial_{i}\varrho$ and the equation gains a divergence:
 
 $$
--2\varrho\Bigl(\frac{h}{2\pi}\dot\theta_{\mathrm{pha}}+\frac{h^{2}}{8\pi^{2}m}\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Bigr\rvert^{2}+V_{\mathrm{op}}-ϙ\omicron_{\mathrm{pot}}\Bigr)+\frac{h^{2}}{(2\pi)^{2} m}\Delta_\Phi \varrho=0 ,
+-2\varrho\Bigl(\frac{h}{2\pi}\dot\theta_{\mathrm{pha}}+\frac{hc}{8\pi^{2}\nu_m}\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Bigr\rvert^{2}+V_{\mathrm{op}}-ϙ\omicron_{\mathrm{pot}}\Bigr)+\frac{hc}{(2\pi)^{2}\nu_m}\Delta_\Phi \varrho=0 ,
 $$
 
 which divided by $-2\varrho$ is the parent's Hamilton–Jacobi equation with $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$. The two differ by exactly the deleted term and by nothing else, and the potential's coefficient is the same in both.
@@ -140,7 +140,7 @@ The limit and the gauge transformation commute. The deletion is the removal of a
 The phase's variation of the truncated action.
 
 $$
-\frac{h}{2\pi}\,\partial_{t'}\varrho^{2}+\frac{h}{2\pi m}\vec\nabla_\Phi\cdot\Bigl(\varrho^{2}\bigl(\vec\nabla_\Phi S-q\vec A\bigr)\Bigr)=0 ,
+\frac{h}{2\pi}\,\partial_{t'}\varrho^{2}+\frac{c}{2\pi\nu_m}\vec\nabla_\Phi\cdot\Bigl(\varrho^{2}\bigl(\vec\nabla_\Phi S-q\vec A\bigr)\Bigr)=0 ,
 $$
 
 that is
@@ -210,7 +210,7 @@ Both Euler–Lagrange systems were computed, with the term and without it.
 
 | variation | full action | truncated action |
 |---|---|---|
-| with respect to $\varrho$ | covariant eikonal with $+\frac{h^{2}}{(2\pi)^{2} m}\Delta_\Phi \varrho$ | covariant eikonal alone |
+| with respect to $\varrho$ | covariant eikonal with $+\frac{hc}{(2\pi)^{2}\nu_m}\Delta_\Phi \varrho$ | covariant eikonal alone |
 | with respect to $\theta_{\mathrm{pha}}$ | $\partial_{t'}\varrho^{2}+\vec\nabla_\Phi\cdot(\varrho^{2}\vec\pi/m)=0$ | the same, identically |
 
 The second row was compared symbolically and is equal as written. The deleted term carries neither $\theta_{\mathrm{pha}}$ nor $\vec A$, so the two derivatives of the Lagrangian with respect to the phase are the same expression, and no rearrangement is needed to see it.

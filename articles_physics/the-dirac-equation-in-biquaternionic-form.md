@@ -755,7 +755,7 @@ The biquaternion framework provides a compact and unified language for the Maxwe
 | $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position biquaternion |
 | $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$ | Four-velocity biquaternion |
 | $\tilde{P}_{\Phi} =m\,\tilde{V}_{\Phi}$ | Four-momentum biquaternion, since $m\,c=mc$; the shell is $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m^{2}\,c^{2}$ |
-| $\nu_m=\frac{mc}{h}$ | The mass wave number of the field, the one wave number of the article; $\mathsf{L}^{-1}$, the coefficient of the mass term, and $\nu_m^{2}$ the coefficient of the Klein–Gordon mass term. Its inverse $\lambda_m=1/\nu_m$ is the Compton wavelength; one radian of it is the quotient $1/(2\pi\nu_m)=\frac{h}{2\pi mc}$. Defined in *The Three Wavenumbers of a Particle* |
+| $\nu_m=\frac{mc}{h}$ | The mass wave number of the field, the one wave number of the article; $\mathsf{L}^{-1}$, the coefficient of the mass term, and $\nu_m^{2}$ the coefficient of the Klein–Gordon mass term. Its inverse $\lambda_m=1/\nu_m$ is the Compton wavelength; one radian of it is the quotient $1/(2\pi\nu_m)=\frac{h}{2\pi m\,c}$. Defined in *The Three Wavenumbers of a Particle* |
 | $\tilde\nabla_\Phi$ | Biquaternionic gradient (Dirac operator), the first-order element of *Operator and Calculus Conventions* |
 | $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | d'Alembertian, central scalar |

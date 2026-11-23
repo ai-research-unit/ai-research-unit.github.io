@@ -324,7 +324,7 @@ What is not derived. Gauge invariance, the value of a mass, the mechanism of the
 | $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}$ | the central quaternion norm, $-\nu_t^{\prime\,2}+\nu_{\Phi}^{2}$, equal to $-\nu_m^{2}$ on shell |
 | $\nu_t^{\prime}$ | the energy wave number, $\frac{E}{h\,c}=\omega/(2\pi c)$ |
 | $\nu_{\Phi}$ | the modulus of the momentum wave number, $\frac{\lvert\vec p\rvert}{h}$ |
-| $\nu_m$ | the mass wave number, $\frac{m\,c}{h}$ |
+| $\nu_m$ | the mass wave number, $\nu_m$ |
 | $\vec u_\Phi$ | the unit propagation direction, $\vec\nu_{\Phi}/\nu_{\Phi}$ |
 | $\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2}$ | a right-handed orthonormal pair transverse to $\vec u_\Phi$ |
 | $\varepsilon_{\mathrm{fop},\pm}$ | the circular directions $(\varepsilon_{\mathrm{fop},1}\pm i\varepsilon_{\mathrm{fop},2})/\sqrt 2$ |

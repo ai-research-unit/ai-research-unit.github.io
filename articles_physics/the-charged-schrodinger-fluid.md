@@ -137,7 +137,7 @@ $$
 
 with $n$ the winding of the phase. The derivation is one line: $\vec v=(\vec\nabla_\Phi S-q\vec A)/m$, the phase is single valued on the field so its gradient integrates to $h n$, and the potential integrates to the flux. With $\varkappa$ the negative of the electric charge this is $(h n-q\Phi_{B})/m$, the standard statement that a magnetic flux shifts every circulation quantum.
 
-So the flux shifts the circulation and does not quantise it. The kinetic circulation is a multiple of $h/m$ exactly when $\varkappa\Phi_{B}$ is one too — in particular where $\vec B$ vanishes on a spanning surface — and otherwise it takes the flux's value and is not a multiple of anything. The canonical circulation, being $\vec\nabla_\Phi S$'s, is a multiple always.
+So the flux shifts the circulation and does not quantise it. The kinetic circulation is a multiple of $c/\nu_m$ exactly when $\varkappa\Phi_{B}$ is one too — in particular where $\vec B$ vanishes on a spanning surface — and otherwise it takes the flux's value and is not a multiple of anything. The canonical circulation, being $\vec\nabla_\Phi S$'s, is a multiple always.
 
 What the loop statement needs is only one phase, single valued on the loop. It does not need the connection to be weak, the flow to be slow, or the region to be free of the field's effects; and it does not need a condensate. The single-particle fluid's circulation is quantised for the same reason a superfluid's is, and the reason is the single-valuedness of one phase, not the presence of a macroscopic occupation.
 
@@ -145,7 +145,7 @@ The Aharonov–Bohm statement and the fluxoid are the same identity read twice. 
 
 ## What the Coupling Does Not Change
 
-**Density, quantum potential and stress are untouched, and the reason is one type.** $\rho_{\mathrm{num}}=\varrho^{2}$ is the scale's; $Q$ is the scale's Laplacian; $\sigma^{Q}_{ij}=\frac{h^{2}}{16\pi^{2}m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ is the scale's second derivatives. The connection is central imaginary, joins the phase bracket, and cannot reach the scale. So the stress identity of the free article holds verbatim, with the same tensor and the same force:
+**Density, quantum potential and stress are untouched, and the reason is one type.** $\rho_{\mathrm{num}}=\varrho^{2}$ is the scale's; $Q$ is the scale's Laplacian; $\sigma^{Q}_{ij}=\frac{hc}{16\pi^{2}\nu_m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ is the scale's second derivatives. The connection is central imaginary, joins the phase bracket, and cannot reach the scale. So the stress identity of the free article holds verbatim, with the same tensor and the same force:
 
 $$
 \partial_{j}\sigma^{Q}_{ij}=-\rho_{\mathrm{num}}\,\partial_{i}Q,
@@ -197,7 +197,7 @@ The vorticity is the field: $\vec\omega=\varkappa\vec B/m$, exactly and at every
 
 The rank is two, and the electric field never enters the vorticity. The charged spin-zero fluid's rank four when $\vec E\cdot\vec B\ne0$ has no non-relativistic image, because a boost mixes the two halves of the field and there is no boost here.
 
-The kinetic circulation is $(h n+\varkappa\Phi_{B})/m$ around a loop that links a node, and the canonical circulation is $h n/m$ unconditionally; the kinetic one is a multiple of $h/m$ only where the flux is. The flux term is the same statement as the Aharonov–Bohm phase.
+The kinetic circulation is $(h n+\varkappa\Phi_{B})/m$ around a loop that links a node, and the canonical circulation is $h n/m$ unconditionally; the kinetic one is a multiple of $c/\nu_m$ only where the flux is. The flux term is the same statement as the Aharonov–Bohm phase.
 
 The density is a norm with one sign, so the charge density $\varkappa\rho_{\mathrm{num}}$ has one sign too, and there is no second sheet.
 
@@ -218,7 +218,7 @@ The stress identity, the absence of an equation of state and the non-dissipativi
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | Density; gauge invariant |
 | $\vec j=\rho_{\mathrm{num}}\vec v$ | Current; the charge current is $\varkappa\vec j$ |
 | $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; unchanged by the coupling |
-| $\sigma^{Q}_{ij}=\frac{h^{2}}{16\pi^{2}m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | Quantum stress; unchanged by the coupling |
+| $\sigma^{Q}_{ij}=\frac{hc}{16\pi^{2}\nu_m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | Quantum stress; unchanged by the coupling |
 | $\vec\omega=\vec\nabla_\Phi\times\vec v$ | Vorticity; $\varkappa\vec B/m$ |
 | $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Field strengths |
 | $\Phi_{B}=\oint\vec A\cdot\mathrm{d}\vec l$ | Magnetic flux through a spanning surface |

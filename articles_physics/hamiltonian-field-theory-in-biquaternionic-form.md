@@ -214,7 +214,7 @@ The formalism is the instantaneous one. The covariant formalism treats the four 
 |---|---|
 | $\tilde{Ξ}=\xi\,e_t$ | The central scalar field, $\xi:\mathbb{R}^{1,3}\to\mathbb{C}$, $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$ |
 | $\mathcal{L}=|\partial\xi/\partial r'_t|^2-|\vec\nabla_\Phi\xi|^2-4\pi^{2}\nu_m^{2}|\xi|^2$ | The Lagrangian density, the sign fixed by *Noether's Theorem in Biquaternionic Form* |
-| $1/(2\pi\nu_m)$ | The length of one radian of the mass phase, $\frac{h}{2\pi mc}$, the range of the force; its reciprocal $2\pi\nu_m=\frac{2\pi mc}{h}$ is the angular mass wave number, the mass parameter of the Klein–Gordon equation |
+| $1/(2\pi\nu_m)$ | The length of one radian of the mass phase, $\frac{1}{2\pi\nu_m}$, the range of the force; its reciprocal $2\pi\nu_m=\frac{2\pi mc}{h}$ is the angular mass wave number, the mass parameter of the Klein–Gordon equation |
 | $\pi=\partial\mathcal{L}/\partial\left(\partial\xi/\partial r'_t\right)=\left(\partial\xi/\partial r'_t\right)^{\,*}$ | The conjugate momentum field, and $\pi^\dagger=\partial\xi/\partial r'_t$ its conjugate |
 | $\tilde\Pi_{\mathrm{id}}=\pi\,e_t\in\mathbb{B}_{C}$ | The conjugate momentum field as a central biquaternion |
 | $\mathcal{H}=\pi\partial\xi/\partial r'_t+\pi^\dagger\left(\partial\xi/\partial r'_t\right)^{\,*}-\mathcal{L}$ | The Hamiltonian density; it is $|\partial\xi/\partial r'_t|^2+|\vec\nabla_\Phi\xi|^2+4\pi^{2}\nu_m^{2}|\xi|^2$ and equals the energy density $T_{00}$ |

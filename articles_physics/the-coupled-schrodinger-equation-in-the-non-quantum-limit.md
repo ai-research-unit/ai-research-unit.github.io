@@ -161,7 +161,7 @@ A ray-level statement that survives a limit unchanged is rare, and this one carr
 **The deleted term is the same function as in the free case.**
 
 $$
-Q=-\frac{h^{2}}{8\pi^{2}m}\frac{\Delta_\Phi \varrho}{\varrho},
+Q=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Delta_\Phi \varrho}{\varrho},
 $$
 
 with the ordinary Laplacian and no potential in it. The coupling does not enter, and the reason is one sentence long: the covariant derivative acts on the phase, the quantum potential is built from the scale, and the scale is inert under the gauge group.

@@ -318,7 +318,7 @@ The improved stress tensor has trace $\sum_{\imath} T_{\imath\imath} = 8\pi^{2}\
 | $\Box_\Phi[\Omega^{\mathcal{W}_{\mathrm{dim}}}\xi\circ I] = \Omega^{\mathcal{W}_{\mathrm{dim}}+2}(\Box_\Phi\xi)\circ I$ | Conformal covariance of the box operator at $\mathcal{W}_{\mathrm{dim}}=1$ |
 | $\Box_\Phi[1/\langle\tilde{Q}\rangle_{\natural}] = 0$ | Harmonicity of the inversion image of the constant |
 | $G_{\mathrm{inv}} = 1/(4\pi^2\langle\tilde{Q}\rangle_{\natural})$ | Massless kernel = conformal two-point function of weight one |
-| $1/(2\pi\nu_m)$ | The mass length, $\frac{h}{2\pi mc}$; the single scale, and its presence breaks the conformal symmetry |
+| $1/(2\pi\nu_m)$ | The mass length, $\frac{1}{2\pi\nu_m}$; the single scale, and its presence breaks the conformal symmetry |
 | $\langle\tilde P_{\Phi}\rangle_{\natural} = -4\pi^{2}\nu_m^{2}$ / $0$ | Massive / massless on-shell symbol; zero divisor in the massless case |
 | $T_{\imath\jmath} = \mathsf{T}_{\imath\jmath} + \zeta(\delta_{\imath\jmath}\Box_\Phi - \partial^2/\partial R_{\imath}\partial R_{\jmath})\xi^2$ | Improved stress tensor; $\zeta = -\frac13$ in the framework normalisation, $\frac16$ in the standard one |
 | $\sum_{\imath} T_{\imath\imath} = 8\pi^{2}\nu_m^{2}\xi^2$ | Trace on shell (framework normalisation); proportional to the mass term |

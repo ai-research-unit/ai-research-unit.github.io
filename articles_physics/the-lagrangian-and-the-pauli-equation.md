@@ -14,7 +14,7 @@ Two symbols are specific to the limit. The rest phase is $\exp(-ik_m r'_t)$, and
 The result, then the two computations that give it.
 
 $$
-S_{\mathrm{Pauli}}=\int\mathrm{d}^{4}r\;\Bigl\{\mathrm{Sc}\bigl[\tilde\chi^{*}\bigl(i \frac{h}{2\pi}\,\partial_{r'_t}-qA_t\bigr)\tilde\chi\bigr]-\frac{h^{2}}{8\pi^{2}m}\mathrm{Sc}\bigl[(\tilde\nabla_\Phi^{\mathrm{mech}}\tilde\chi)^{*}\tilde\nabla_\Phi^{\mathrm{mech}}\tilde\chi\bigr]+\frac{q}{m}\,\vec S\cdot\vec B\Bigr\},
+S_{\mathrm{Pauli}}=\int\mathrm{d}^{4}r\;\Bigl\{\mathrm{Sc}\bigl[\tilde\chi^{*}\bigl(i \frac{h}{2\pi}\,\partial_{r'_t}-qA_t\bigr)\tilde\chi\bigr]-\frac{hc}{8\pi^{2}\nu_m}\mathrm{Sc}\bigl[(\tilde\nabla_\Phi^{\mathrm{mech}}\tilde\chi)^{*}\tilde\nabla_\Phi^{\mathrm{mech}}\tilde\chi\bigr]+\frac{q}{m}\,\vec S\cdot\vec B\Bigr\},
 $$
 
 with $\tilde\nabla_\Phi^{\mathrm{mech}}=\tilde\nabla_\Phi-\frac{2\pi iq}{h}\vec A$ the mechanical gradient restricted to the spatial part, and $\vec S=\frac{h}{4\pi}\vec n_{\mathrm{rot}}$.
@@ -55,7 +55,7 @@ Why the truncation is stated rather than hidden. Because a reader can check the 
 Two variations, and neither is new. Varying $\tilde\chi^{*}$ gives the Pauli equation: the Schrödinger equation with the spin term added,
 
 $$
-i \frac{h}{2\pi}\,\partial_{r'_t}\tilde\chi=\Bigl[-\frac{h^{2}}{8\pi^{2}m}\bigl(\tilde\nabla_\Phi^{\mathrm{mech}}\bigr)^{2}+qA_t-\frac{q}{m}\vec S\cdot\vec B\Bigr]\tilde\chi ,
+i \frac{h}{2\pi}\,\partial_{r'_t}\tilde\chi=\Bigl[-\frac{hc}{8\pi^{2}\nu_m}\bigl(\tilde\nabla_\Phi^{\mathrm{mech}}\bigr)^{2}+qA_t-\frac{q}{m}\vec S\cdot\vec B\Bigr]\tilde\chi ,
 $$
 
 and varying $\tilde\chi$ gives its conjugate. The two are the parent's equations, with the last term the limit's addition.
@@ -114,7 +114,7 @@ What it does not reach. The next order. Fine structure, the Darwin term and the 
 The Pauli action is the Dirac action in the rest frame, expanded to first order in $1/m$ with the small component eliminated. It is the Schrödinger action plus $\frac{q}{m}\vec S\cdot\vec B$, with $\vec S=\frac{h}{4\pi}\vec n_{\mathrm{rot}}$, and the coefficient is fixed at $g=2$ because the spin and mass currents come from the same kinetic term. The current is the Schrödinger one, the spin precesses without a current of its own, and the error is the dropped second time derivative, of order $1/m$.
 
 $$
-S_{\mathrm{Pauli}}=\int\mathrm{d}^{4}r\;\Bigl\{\mathrm{Sc}\bigl[\tilde\chi^{*}(i \frac{h}{2\pi}\partial_{r'_t}-qA_t)\tilde\chi\bigr]-\frac{h^{2}}{8\pi^{2}m}\mathrm{Sc}\bigl[(\tilde\nabla_\Phi^{\mathrm{mech}}\tilde\chi)^{*}\tilde\nabla_\Phi^{\mathrm{mech}}\tilde\chi\bigr]+\frac{q}{m}\vec S\cdot\vec B\Bigr\}.
+S_{\mathrm{Pauli}}=\int\mathrm{d}^{4}r\;\Bigl\{\mathrm{Sc}\bigl[\tilde\chi^{*}(i \frac{h}{2\pi}\partial_{r'_t}-qA_t)\tilde\chi\bigr]-\frac{hc}{8\pi^{2}\nu_m}\mathrm{Sc}\bigl[(\tilde\nabla_\Phi^{\mathrm{mech}}\tilde\chi)^{*}\tilde\nabla_\Phi^{\mathrm{mech}}\tilde\chi\bigr]+\frac{q}{m}\vec S\cdot\vec B\Bigr\}.
 $$
 ## Summary of Notation
 | Symbol | Meaning |

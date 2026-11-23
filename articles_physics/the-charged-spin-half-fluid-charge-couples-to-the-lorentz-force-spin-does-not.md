@@ -241,7 +241,7 @@ Twelve statements, each one line, and each with its reason. This is what the cha
 5. The rapidity and the axis are observables. $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, and no gauge transformation changes either.
 6. The vorticity is the frame's gradient. Its proper part is rank two for every solution, and it is not $ϙF/m$ for any field.
 7. The vorticity is closed and not exact. Closedness is the Maurer–Cartan flatness of $\Gamma$; exactness fails wherever the holonomy is non-trivial; there is still no transport law.
-8. The loop invariant is a Lorentz transformation times a phase. Nothing about it is quantised, and the scalar's $h/m$ is the central factor of the transformation.
+8. The loop invariant is a Lorentz transformation times a phase. Nothing about it is quantised, and the scalar's $c/\nu_m$ is the central factor of the transformation.
 9. The Gordon split survives. The convection part is the chart's current; the bound magnetisation current has no explicit dependence on the connection.
 10. The spin direction is gauge invariant and coupling-blind. $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$; the chart shows no rotor torque, and the Larmor precession is second order, through the frame.
 11. The coupling adds a force and not a torque. $\sum_{\jmath}\partial_{\jmath} T_{\imath\jmath}=-ϙ\sum_{\jmath} F_{\imath\jmath}J_{\jmath}+$ the free article's spin term, and the second is unchanged.

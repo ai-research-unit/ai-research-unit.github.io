@@ -508,7 +508,7 @@ The massless limit is an exact reduction and not an approximation. At $\nu_m=0$ 
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Four-potential biquaternion in $\mathbb{B}_{\Phi}$ |
 | $\tilde{F} = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ | Field-strength biquaternion, pure vector |
 | $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ | Gauge scalar; the Proca equation forces $S=0$ (Lorenz condition) |
-| $1/(2\pi\nu_m)$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal, up to the factor $2\pi$, is the mass wave number, $\nu_m=\frac{m\,c}{h}$, and the squared coefficient is $\nu_m^{2}=\frac{m^{2}c^{2}}{h^{2}}$ |
+| $1/(2\pi\nu_m)$ | The mass length, $\frac{1}{2\pi\nu_m}$; its reciprocal, up to the factor $2\pi$, is the mass wave number, $\nu_m=\frac{m\,c}{h}$, and the squared coefficient is $\nu_m^{2}=\frac{m^{2}c^{2}}{h^{2}}$ |
 | $\tilde P_{\Phi} = h\left(i\frac{\omega}{2\pi c}\,e_t + \vec\nu_\Phi\right)$ | Four-wavevector biquaternion, $h\tilde\Upsilon_{\Phi}$ |
 | $\omega^2 = 4\pi^{2}c^{2}\left(\vec\nu_\Phi^{2} + \nu_m^{2}\right)$ | Massive dispersion relation |
 | $\vec a$, $A_t$ | Spatial amplitude (three real components) and time component fixed by Lorenz |

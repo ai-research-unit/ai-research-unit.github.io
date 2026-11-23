@@ -449,7 +449,7 @@ The algebra's contribution is the identification of the singular loci with the b
 | $\tilde{P}_{\Phi,E}=ik_{\mathrm{eu},0}e_t+\vec p\in\mathbb{B}_{\Phi}$ | Euclidean material element; $\langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*}=\vec p_E^2$ |
 | $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\eta \vec e_\eta\partial/\partial R_\eta$ | Biquaternionic gradient |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
-| $1/(2\pi\nu_m)$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $2\pi\nu_m=\frac{2\pi mc}{h}$ is the angular mass wave number |
+| $1/(2\pi\nu_m)$ | The mass length, $\frac{1}{2\pi\nu_m}$; its reciprocal $2\pi\nu_m=\frac{2\pi mc}{h}$ is the angular mass wave number |
 | $\Omega_{\vec p}=\sqrt{\vec p^2/\frac{h^{2}}{4\pi^{2}}+4\pi^{2}\nu_m^{2}}$ | On-shell frequency, an inverse length |
 | $G(\omega,\vec p)=(\vec p^2/\frac{h^{2}}{4\pi^{2}}+4\pi^{2}\nu_m^{2}-\omega^2/c^{2})^{-1}$ | Momentum-space kernel, $(\Box_\Phi-4\pi^{2}\nu_m^{2})G=-\delta^{(4)}$ |
 | $G_R,G_A$ | Retarded and advanced Green's functions |

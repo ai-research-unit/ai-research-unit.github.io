@@ -282,7 +282,7 @@ The count is the level set plus the weight, and that is where the two arms meet.
 | $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}$ | its norm, $-\nu_t^{\prime\,2}+\nu_{\Phi}^{2}$, and $-\nu_m^{2}$ on shell |
 | $\nu_t^{\prime}$ | the energy wave number, $\frac{E}{h\,c}$ |
 | $\vec\nu_{\Phi}$, $\nu_{\Phi}$ | the momentum wave number and its modulus |
-| $\nu_m$ | the mass wave number, $\frac{m\,c}{h}$ |
+| $\nu_m$ | the mass wave number, $\nu_m$ |
 | $\kappa$ | a value of the energy wave number; a constant, not a variable |
 | $\sigma_{\mathcal{P}}$ | the second-order symbol, $\nu_t^{\prime\,2}-\nu_{\Phi}^{2}-\nu_m^{2}$ |
 | $\sigma_{\mathrm{s}}$ | the affine symbol, $\nu_{\mathrm{s}}-\nu_{\Phi}^{2}/(2\nu_m)$ |

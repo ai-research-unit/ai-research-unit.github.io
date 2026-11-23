@@ -91,7 +91,7 @@ $$
 
 which is the polar equation companion's amplitude equation with the mechanical bracket in place of the free one. Read through $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ it is $(\partial_{r'_t}S_{\tilde\Xi}-ϛa'_t)^{2}-\lvert\nabla S_{\tilde\Xi}+ϛ\vec A\rvert^{2}=m^{2}c^{2}-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/\varrho$, the mass shell with the mechanical momentum and the quantum potential.
 
-The quantum potential is untouched. It is $-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi \varrho/\varrho$, a functional of the scale alone, and the connection does not appear in it because the connection does not appear in the amplitude's terms. This is the chart's sharpest statement about the coupling: the coupling changes the relation between the phase's rate and the momentum, and it changes nothing about the curvature of the density.
+The quantum potential is untouched. It is $-\frac{hc}{8\pi^{2}\nu_m}\Box_\Phi \varrho/\varrho$, a functional of the scale alone, and the connection does not appear in it because the connection does not appear in the amplitude's terms. This is the chart's sharpest statement about the coupling: the coupling changes the relation between the phase's rate and the momentum, and it changes nothing about the curvature of the density.
 
 Stationarity in the angle gives the mechanical transport equation. Varying $\theta_{\mathrm{pha}}$ gives $\sum_{\imath}\partial_{\imath}\bigl(\varrho^{2}\kappa_{\mathrm{kin},\imath}\bigr)=0$, which is the divergence of the density times the mechanical four-velocity. The free article's saddle is the same equation with the free rate, so the coupling's whole effect on the constraint is to replace the phase's gradient by the mechanical one.
 
@@ -170,7 +170,7 @@ The chart carries the action's reading of the covariant square and cannot carry 
 | $\frac{(2\pi)^{2} ϛ^{2}\varrho^{2}}{h^{2}}\bigl((a'_t)^{2}-\lvert\vec A\rvert^{2}\bigr)$ | The quadratic term in the material slots; the relative sign is the metric's |
 | $\kappa^{\mathrm{kin}}\!\cdot\kappa^{\mathrm{kin}}=4\pi^{2}\nu_m^{2}-\Box_\Phi \varrho/\varrho$ | The amplitude equation; the scale's saddle |
 | $\sum_{\imath}\partial_{\imath}\bigl(\varrho^{2}\kappa_{\mathrm{kin},\imath}\bigr)=0$ | The mechanical transport equation; the angle's saddle |
-| $-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi \varrho/\varrho$ | The quantum potential; independent of the connection |
+| $-\frac{hc}{8\pi^{2}\nu_m}\Box_\Phi \varrho/\varrho$ | The quantum potential; independent of the connection |
 | $\sum_{\imath}(\partial_{\imath}-\bar c_{\imath})(\partial_{\imath}+c_{\imath})$ | The action's paired operator; the chart's object |
 | $\sum_{\imath}(\partial_{\imath}+c_{\imath})^{2}$ | The equation's squared operator; needs a cross term the chart lacks |
 | $2\Sigma c$ | The squared operator's symbol's imaginary part where $\bar c\ne-c$ |

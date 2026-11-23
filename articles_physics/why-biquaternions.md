@@ -263,7 +263,7 @@ The frozen-frame sector is therefore the scalar sector: freeze the frame and the
 Where the field vanishes the story changes, and the algebra states the change exactly. On the nodal set the polar word fails, and around a nodal line the circulation is quantised:
 
 $$
-\oint\vec v\cdot d\vec l=\frac{h}{m}n,
+\oint\vec v\cdot d\vec l=\frac{c}{\nu_m}n,
 $$
 
 with $n$ the degree of the phase map, independent of the loop's shape ([The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html)). The charge is an object of the algebra because it is the winding of the field into the central unit circle, and the phase is only a coordinate on that circle.

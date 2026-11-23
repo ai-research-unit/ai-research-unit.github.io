@@ -176,7 +176,7 @@ $$
 
 $$
 j_\eta=\frac{h}{4\pi mi}\,\mathrm{Sc}\Big(\tilde\Xi^{*}D_\eta\tilde\Xi-\big(D_\eta\tilde\Xi\big)^{*}\tilde\Xi\Big)
-=\frac{h}{2\pi m}\,\mathrm{Im}\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big),
+=\frac{c}{2\pi\nu_m}\,\mathrm{Im}\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big),
 $$
 
 and the temporal component is the density,

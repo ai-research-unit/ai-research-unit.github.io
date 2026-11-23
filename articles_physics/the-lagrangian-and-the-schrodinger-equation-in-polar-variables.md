@@ -217,7 +217,7 @@ with $V=h_t$ for a constant central Hamiltonian.
 **The operator setting, stated and not re-derived.** For $\tilde H_\Psi=\hat H\,e_t$ with $\hat H=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi/2m+V_{\mathrm{op}}(\vec x)$, the same substitution in the field-theoretic action gives
 
 $$
-S_{\mathrm{central}}=\int \mathrm{d}t'\,\mathrm{d}^{3}x\;\Bigl[-\frac{h}{2\pi}\,\varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{h^{2}}{8\pi^{2}m}\bigl(|\vec\nabla_\Phi \varrho|^{2}+\varrho^{2}|\vec\nabla_\Phi\theta_{\mathrm{pha}}|^{2}\bigr)-\varrho^{2}V_{\mathrm{op}}\Bigr],
+S_{\mathrm{central}}=\int \mathrm{d}t'\,\mathrm{d}^{3}x\;\Bigl[-\frac{h}{2\pi}\,\varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{hc}{8\pi^{2}\nu_m}\bigl(|\vec\nabla_\Phi \varrho|^{2}+\varrho^{2}|\vec\nabla_\Phi\theta_{\mathrm{pha}}|^{2}\bigr)-\varrho^{2}V_{\mathrm{op}}\Bigr],
 $$
 
 whose Euler–Lagrange equations are the continuity equation for $\varrho^{2}$ and the Hamilton–Jacobi equation with the quantum potential $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$. The subscript matters: $V_{\mathrm{op}}(\vec x)$ is the scalar potential of the operator, a function of position, while $V=h_t\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}(\vec h_\Psi\cdot\vec u_{\mathrm b})$ is the polar potential read from the word. They coincide only when the operator's potential is the constant $h_t$. This is the standard Madelung variational principle, in the literature since 1927 and read hydrodynamically by Takabayasi and by Bohm; the article cites it and claims nothing new. The reader should note that the two gradient terms are both present: the one in $|\vec\nabla_\Phi \varrho|^{2}$ is the quantum potential's source, and it is not optional.

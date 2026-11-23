@@ -233,7 +233,7 @@ $$
 H_0=\frac{\langle\tilde p\rangle_{\natural}h/(mc) c}{4\pi  \frac{h}{2\pi}}=\frac{\tilde p\,\tilde p^{\natural}h/(mc) c}{4\pi  \frac{h}{2\pi}}=\frac{h/(mc) c}{4\pi  \frac{h}{2\pi}}\sum_{\imath\in\{t,x,y,z\}}p_{\imath}^2 ,
 $$
 
-Here $\frac{h}{2\pi mc}$ is the mass length.
+Here $\frac{1}{2\pi\nu_m}$ is the mass length.
 
 the free Hamiltonian, which reduces to the kinetic term $\vec p^2\frac{h}{2\pi (mc) c}/(2\frac{h}{2\pi})$ for a pure-vector momentum, $p_t=0$. The structural statement is the mirror of the one for $L_0$: **the free Hamiltonian is the biquaternion norm of the momentum, divided by $2m$.** The biquaternion norm thus appears at both ends of the Legendre transform, once on velocity and once on momentum, because the Legendre transform of a quadratic form is again a quadratic form, with the mass inverted.
 

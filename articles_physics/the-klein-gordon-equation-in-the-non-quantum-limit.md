@@ -126,13 +126,13 @@ The fluid reading, and where it stops. Density $\rho_{\mathrm{num}}$, four-veloc
 The discarded term.
 
 $$
-Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho},
+Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi \varrho}{\varrho},
 $$
 
 and the parent's second form of it, which is the sharper one:
 
 $$
-Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\left[\frac{1}{2}\Box_\Phi\ln\rho_{\mathrm{num}}+\frac{1}{4}\left(\partial\ln\rho_{\mathrm{num}}\right)^{2}\right].
+Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\left[\frac{1}{2}\Box_\Phi\ln\rho_{\mathrm{num}}+\frac{1}{4}\left(\partial\ln\rho_{\mathrm{num}}\right)^{2}\right].
 $$
 
 The second form says the quantum potential is a functional of the density alone. It is the curvature of the density on a logarithmic scale, so it is large where the density varies rapidly in proportion, and it is defined without reference to the phase, hence at a node as well.

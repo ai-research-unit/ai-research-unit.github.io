@@ -339,7 +339,7 @@ The condition on the source is homogeneous in either variable, and the symbol is
 | $\mathcal{S}$ | the operator with symbol $\sigma_{\mathrm{s}}$; first order in $r'_t$, second in space |
 | $\nu_{\mathrm{s}}$ | the energy above rest, $\nu_t^{\prime}-\nu_m=(E-mc^{2})\frac{1}{h\,c}$ |
 | $\sigma_{\mathrm{s}}$ | the Schrödinger symbol, $\nu_{\mathrm{s}}-\nu_{\Phi}^{2}/(2\nu_m)$; affine |
-| $\nu_m$ | the mass wave number, $\frac{m\,c}{h}$; the gap between the two sheets at zero momentum |
+| $\nu_m$ | the mass wave number, $\nu_m$; the gap between the two sheets at zero momentum |
 | $\nu_t^{\prime}$ | the energy wave number, $\frac{E}{h\,c}$ |
 | $\nu_{\Phi}$ | the modulus of the momentum wave number, $\frac{\lvert\vec p\rvert}{h}$ |
 | $\vec\beta_b$ | the boost velocity in units of $c$; its square enters the boost law with the coefficient $\frac{1}{2}\nu_m$ |

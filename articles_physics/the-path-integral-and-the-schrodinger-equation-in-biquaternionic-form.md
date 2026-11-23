@@ -19,7 +19,7 @@ Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}
 The action is the variational companion's, cited and not re-derived. In the operator setting it is
 
 $$
-S[\tilde\Xi,\tilde\Xi^{*}]=\int dt'\,d^{3}x\;\mathrm{Sc}\Bigl[\frac{i h}{4\pi}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\frac{h^{2}}{8\pi^{2}m}\sum_\eta(\partial_\eta\tilde\Xi)^{*}(\partial_\eta\tilde\Xi)-V(\vec x)\,\tilde\Xi^{*}\tilde\Xi\Bigr],
+S[\tilde\Xi,\tilde\Xi^{*}]=\int dt'\,d^{3}x\;\mathrm{Sc}\Bigl[\frac{i h}{4\pi}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\frac{hc}{8\pi^{2}\nu_m}\sum_\eta(\partial_\eta\tilde\Xi)^{*}(\partial_\eta\tilde\Xi)-V(\vec x)\,\tilde\Xi^{*}\tilde\Xi\Bigr],
 $$
 
 and in the constant setting the two spatial terms collapse into $-\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi$ with $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$. The antisymmetrised kinetic term is the point: $\partial_{t'}$ alone would give a complex density, and the half-difference of the two orderings is what makes the term Hermitian. That is the variational companion's first check, and it is what the exponent below inherits.
@@ -48,7 +48,7 @@ S=\int dt'\,d^{3}x\;\tilde\Xi^{*}A\tilde\Xi,
 A=i \frac{h}{2\pi}\,\partial_{t'}-\hat H,
 $$
 
-with $\hat H=-\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi+V$ central. The operator $A$ is first order in the time derivative and second order in the space derivatives, and it is self-adjoint for the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ because the kinetic term was antisymmetrised. This is a first-order quadratic form, and the name for its integral is the first-order or Feynman-type integral, not the Gaussian.
+with $\hat H=-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi+V$ central. The operator $A$ is first order in the time derivative and second order in the space derivatives, and it is self-adjoint for the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ because the kinetic term was antisymmetrised. This is a first-order quadratic form, and the name for its integral is the first-order or Feynman-type integral, not the Gaussian.
 
 Its value is the inverse operator, and that is the exact statement. Completing the square in the field at fixed source gives the saddle $\tilde\Xi_{\mathrm{cl}}=-GJ$ and
 
@@ -108,7 +108,7 @@ $$
 
 a central phase times a real rotor. The kernel is then $K\,\tilde Q$ with $K$ the central scalar kernel: the rotor is position-independent and rides along, and the position integral is untouched. Centrality of the kernel is therefore exactly centrality of the Hamiltonian, no more and no less, and for the Dirac field neither holds.
 
-The free kernel, exactly. For $\hat H=-\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi$ the kernel is the free propagator,
+The free kernel, exactly. For $\hat H=-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi$ the kernel is the free propagator,
 
 $$
 \boxed{\;K_0(\vec r,r'_t)=\Bigl(\frac{2\pi\nu_m}{2\pi i\,r'_t}\Bigr)^{3/2}\exp\Bigl(\frac{i\,2\pi\nu_m|\vec r|^{2}}{2\,r'_t}\Bigr),\qquad \vec r=\vec r_f-\vec r_i,\;}
@@ -116,7 +116,7 @@ $$
 
 with the one-dimensional case the square root of the same expression with one power of the prefactor. Its composition law is exact, and a Euclidean quadrature of the composition of two factors on a $400001$-point grid reproduces the single factor to a relative $2.3\times10^{-12}$. The Maslov phases are the phases of the square root of the central $i$: the prefactor is $(2\pi i\,r'_t)^{-3/2}$ and the root is taken in the centre, where $i$ has two branches and the choice of branch is the choice of the kernel's overall phase.
 
-The oscillator kernel, exactly. For $\hat H=-\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi+\frac{m\omega^{2}}{2}|\vec r|^{2}$ the kernel is
+The oscillator kernel, exactly. For $\hat H=-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi+\frac{m\omega^{2}}{2}|\vec r|^{2}$ the kernel is
 
 $$
 K_{\mathrm{osc}}=\Bigl(\frac{m\omega}{2\pi i \frac{h}{2\pi}\sin(\omega r'_t/c)}\Bigr)^{3/2}\exp\Bigl[\frac{im\omega}{2\frac{h}{2\pi}\sin(\omega r'_t/c)}\bigl((|\vec r_f|^{2}+|\vec r_i|^{2})\cos(\omega r'_t/c)-2\vec r_f\cdot\vec r_i\bigr)\Bigr],

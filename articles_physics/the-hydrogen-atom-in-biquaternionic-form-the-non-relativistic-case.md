@@ -69,8 +69,8 @@ Adding the two terms,
 
 $$
 \boxed{\;H = T+\tilde{Ξ}
-= \left[-\frac{h^{2}}{8\pi^{2}\,m}\Delta_\Phi-\frac{\kappa}{r}\right]e_t
-= h_t\,e_t, \qquad h_t = -\frac{h^{2}}{8\pi^{2}\,m}\Delta_\Phi-\frac{\kappa}{r}\;}.
+= \left[-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi-\frac{\kappa}{r}\right]e_t
+= h_t\,e_t, \qquad h_t = -\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi-\frac{\kappa}{r}\;}.
 $$
 
 The Hamiltonian is Hermitian and lies in $\mathbb{B}_{\Psi}$, and its vector part is zero: $\vec h_\Psi=0$ in the general form $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$. It is therefore **central**, commuting with every element of $\mathbb{B}$, and in particular with the spin operators and with $i$.
@@ -79,7 +79,7 @@ The generator of the Schrödinger equation is
 
 $$
 -\frac{2\pi i}{h}H
-= i\left(\frac{h}{4\pi \,m}\Delta_\Phi+\frac{2\pi \kappa}{h\,r}\right)e_t \in  \mathbb{B}_{\Phi} ,
+= i\left(\frac{c}{4\pi\nu_m}\Delta_\Phi+\frac{2\pi \kappa}{h\,r}\right)e_t \in  \mathbb{B}_{\Phi} ,
 $$
 
 and it lies along the time-like direction $ie_t$ of the material sector, as the companion article on the Schrödinger equation requires of a time-translation generator. Both the observable and the generator are scalar multiples of $e_t$. The framework's sector split is thus realised here in its simplest possible form: the entire Hamiltonian content of the non-relativistic Coulomb problem sits in the scalar slot, and the vector slots are empty.
@@ -162,7 +162,7 @@ $$
 the angular factor is an eigenfunction of $L^2$ with eigenvalue $\frac{h^{2}}{4\pi^{2}}\,l\,(l+1)$, and the equation reduces to the radial equation for $u_{nl}=rR_{nl}$:
 
 $$
--\frac{h^{2}}{8\pi^{2}\,m}\frac{d^2u}{dr^2} + \left[\frac{h^{2}\,l\,(l+1)}{8\pi^{2}\,m\,r^{2}}-\frac{\kappa}{r}\right]u = E\,u .
+-\frac{hc}{8\pi^{2}\nu_m}\frac{d^2u}{dr^2} + \left[\frac{h^{2}\,l\,(l+1)}{8\pi^{2}\,m\,r^{2}}-\frac{\kappa}{r}\right]u = E\,u .
 $$
 
 This is the standard radial Coulomb equation. The framework's contribution at this step is the identification of the coupling: the whole of the angular problem enters the radial equation through the single eigenvalue $\frac{h^{2}}{4\pi^{2}}\,l\,(l+1)$ of $L^2$, which is exactly the statement the angular-momentum article makes about the operators "that a position-space treatment of the hydrogen atom requires". The spin factor does not enter the radial equation at all, because $H$ is central; it multiplies the solution.
@@ -226,7 +226,7 @@ Under the isomorphism $\mathsf{M}_2$ the transcription is transparent. The field
 
 | Standard object | Biquaternion object | Slot |
 |---|---|---|
-| Hamiltonian $-\frac{h^{2}}{8\pi^{2}\,m}\Delta_\Phi-\frac{\kappa}{r}$ | $H = \bigl[-\frac{h^{2}}{8\pi^{2}\,m}\Delta_\Phi-\frac{\kappa}{r}\bigr]e_t\in\mathbb{B}_{\Psi}$ | scalar |
+| Hamiltonian $-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi-\frac{\kappa}{r}$ | $H = \bigl[-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi-\frac{\kappa}{r}\bigr]e_t\in\mathbb{B}_{\Psi}$ | scalar |
 | Kinetic term $p^2 c/(2\,m\,c)$ | $-\frac{1}{2\,m}\tilde p^{\,2}=\frac{1}{2\,m}\tilde p\tilde p^{\natural}$ | scalar |
 | $L_{\mathrm{orb},\eta}$ | $L_{\mathrm{orb},\eta} e_t$ | scalar |
 | Spin $S_\eta=\frac{h}{4\pi}\sigma_\eta$ | $\tilde S_{\Psi,\eta}=\frac{h}{4\pi}i\vec e_\eta$ | vector |
@@ -292,9 +292,9 @@ at the next order. The Darwin term, the relativistic kinetic correction and the 
 The non-relativistic hydrogen atom in biquaternionic form is the Coulomb problem for a spinor field. The momentum $\tilde p=-i\,\frac{h}{2\pi}\vec\nabla_\Phi$ is Hermitian in $\mathbb{B}_{\Psi}$; its quaternion square is minus the Euclidean square, $\tilde p^{\,2}=-p^{\,2}e_t=\frac{h^{2}}{4\pi^{2}}\Delta_\Phi e_t$, so the kinetic energy is $-\tilde p^{\,2}/(2m)=\tilde p\tilde p^{\natural}/(2m)=p^{\,2}/(2m)e_t$. Adding the central scalar potential $-\kappa/r$ gives
 
 $$
-H = \left[-\frac{h^{2}}{8\pi^{2}\,m}\Delta_\Phi-\frac{\kappa}{r}\right]e_t = h_t\,e_t \in  \mathbb{B}_{\Psi},
+H = \left[-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi-\frac{\kappa}{r}\right]e_t = h_t\,e_t \in  \mathbb{B}_{\Psi},
 \qquad
--\frac{2\pi i}{h}H = i\left(\frac{h}{4\pi \,m}\Delta_\Phi+\frac{2\pi \kappa}{h\,r}\right)e_t \in  \mathbb{B}_{\Phi} .
+-\frac{2\pi i}{h}H = i\left(\frac{c}{4\pi\nu_m}\Delta_\Phi+\frac{2\pi \kappa}{h\,r}\right)e_t \in  \mathbb{B}_{\Phi} .
 $$
 
 The Hamiltonian is central, so the spin is a spectator, the total-angular-momentum coupling is not needed, and the spinor equation reduces componentwise to the standard scalar Schrödinger equation. Separation in the framework's operators, with orbital operators in the scalar slot and spin operators in the vector slots, gives the standard radial equation with the angular coupling $\frac{h^{2}}{4\pi^{2}}\,l\,(l+1)$, the standard spectrum
@@ -322,7 +322,7 @@ The framework's contribution is therefore structural, not spectral. It identifie
 | $\tilde p=-i\,\frac{h}{2\pi}\vec\nabla_\Phi=\sum_\eta  \vec e_\eta p_\eta$, $p_\eta=-i\,\frac{h}{2\pi}\partial/\partial R_\eta$ | Momentum, Hermitian, in $\mathbb{B}_{\Psi}$ |
 | $\tilde p^{\,2}=-p^{\,2}e_t$, $\tilde p\tilde p^{\natural}=p^{\,2}e_t$ | Quaternion square and biquaternion norm of the momentum |
 | $T=-\tilde p^{\,2}/(2m)$ | Kinetic energy |
-| $H=h_t\,e_t$, $h_t=-\frac{h^{2}}{8\pi^{2}\,m}\Delta_\Phi-\frac{\kappa}{r}$ | Coulomb Hamiltonian, central, in $\mathbb{B}_{\Psi}$ |
+| $H=h_t\,e_t$, $h_t=-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi-\frac{\kappa}{r}$ | Coulomb Hamiltonian, central, in $\mathbb{B}_{\Psi}$ |
 | $-\frac{2\pi i\,H}{h\,\in\,\mathbb{B}}_{\Phi}$ | Time-translation generator, $H$ read through $i$ |
 | $\kappa=Ze^2/(4\pi\epsilon_0)$ | Coulomb coupling |
 | $a_0=\frac{h^{2}}{(2\pi)^{2} m\,\kappa}$ | Bohr radius |

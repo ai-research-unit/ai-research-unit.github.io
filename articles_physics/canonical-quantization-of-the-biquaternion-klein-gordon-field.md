@@ -79,14 +79,14 @@ $$
 \qquad
 \tilde\Upsilon_{\Phi}^{\natural}=i\,\nu_t^{\prime}\,e_t-\vec\nu_\Phi,
 \qquad
-\nu_t^{\prime}=\frac{\omega}{c},
+2\pi\nu_t^{\prime}=\frac{\omega}{c},
 \qquad
 \langle\tilde\Upsilon_{\Phi}\rangle_{\natural}
-=\frac{(2\pi)^{2} \tilde P_{\Phi}\tilde P_{\Phi}^{\natural}}{h^{2}}
+=\frac{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}}{h^{2}}
 =-\nu_t^{\prime\,2}+\nu_{\Phi}^{2}=-\nu_m^{2} .
 $$
 
-Here $\nu_{\Phi}=|\vec\nu_\Phi|=\frac{p}{h}$ is the momentum wave number, and the norm is a central **scalar** of $\mathbb{B}_{C}$, not a multiple of $e_t$: the two factors are $-4\pi^{2}\nu_t^{\prime\,2}e_t=-4\pi^{2}\nu_t^{\prime\,2}e_t$ and $\vec\nu_\Phi\vec\nu_\Phi^{\natural}=\nu_{\Phi}^{2}e_t$, so the temporal square enters with a minus and the spatial with a plus, and the three wave numbers close the mass shell. $\frac{h}{2\pi}$ is real and central, so the division touches no coefficient's sector: $\tilde\Upsilon_{\Phi}$ is anti-Hermitian like $\tilde P_{\Phi}$, stays in $\mathbb{B}_{\Phi}$, and carries the dimension $\mathrm{L}^{-1}$. The plane-wave phase is the scalar part $\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_\Phi^{\natural})=-\nu_t^{\prime}\,r'_t+\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, which is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})\frac{2\pi}{h}$: the division by $\frac{h}{2\pi}$ is the whole of the wave number, so the phase carries no separate $\frac{h}{2\pi}$ once $\tilde\Upsilon_{\Phi}$ is named. Substituting $\tilde{Ξ}=\xi_0\exp(-i\theta_{\mathrm{pwp}})e_t$ into $\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\tilde{Ξ}=0$ gives $\nu_t^{\prime\,2}-\nu_{\Phi}^{2}=\nu_m^{2}$, which is the mass-shell condition $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$ already contained in the norm.
+Here $\nu_{\Phi}=|\vec\nu_\Phi|=\frac{p}{h}$ is the momentum wave number, and the norm is a central **scalar** of $\mathbb{B}_{C}$, not a multiple of $e_t$: the two factors are $-\nu_t^{\prime\,2}e_t$ and $\vec\nu_\Phi\vec\nu_\Phi^{\natural}=\nu_{\Phi}^{2}e_t$, so the temporal square enters with a minus and the spatial with a plus, and the three wave numbers close the mass shell. $h$ is real and central, so the division touches no coefficient's sector: $\tilde\Upsilon_{\Phi}$ is anti-Hermitian like $\tilde P_{\Phi}$, stays in $\mathbb{B}_{\Phi}$, and carries the dimension $\mathrm{L}^{-1}$. The plane-wave phase is $2\pi$ times the scalar part, $2\pi\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_\Phi^{\natural})=-2\pi\nu_t^{\prime}\,r'_t+2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, which is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})\frac{2\pi}{h}$: the division by $h$ is the whole of the wave number, so the phase carries no separate $h$ once $\tilde\Upsilon_{\Phi}$ is named. Substituting $\tilde{Ξ}=\xi_0\exp(-i\theta_{\mathrm{pwp}})e_t$ into $\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\tilde{Ξ}=0$ gives $\nu_t^{\prime\,2}-\nu_{\Phi}^{2}=\nu_m^{2}$, which is the mass-shell condition $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$ already contained in the norm.
 
 ## Equal-Time Commutation Relations
 
@@ -295,7 +295,7 @@ The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian |
 | $\tilde{Ξ}=\xi\,e_t$, $\xi=(\xi_1+i\xi_2)/\sqrt2$ | Scalar field, valued in the centre; real components |
 | $\mathcal{L}=-\,\mathrm{Sc}[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})]-4\pi^{2}\nu_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | Scalar Lagrangian density |
-| $1/(2\pi\nu_m)$ | The mass length, $\frac{h}{2\pi mc}$ |
+| $1/(2\pi\nu_m)$ | The mass length, $\frac{1}{2\pi\nu_m}$ |
 | $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$, $\pi^\dagger=\partial\xi/\partial r'_t$ | Conjugate momenta; Legendre transform regular |
 | $\tilde\Upsilon_{\Phi}=i\,\nu_t^{\prime}e_t+\vec\nu_\Phi=\frac{\tilde P_{\Phi}}{h}$, $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=-\nu_t^{\prime\,2}+\nu_{\Phi}^{2}=-\nu_m^{2}$ | Material four-wavevector and its norm, the mass shell |
 | $\exp(\pm i\theta_{\mathrm{pwp}})$, $\delta\tilde R_{\Phi}$ | Central plane-wave phase; the separation element of the commutator |

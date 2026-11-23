@@ -8,7 +8,7 @@
 
 $$
 S=\int dt'\,d^{3}x\;\mathrm{Sc}\Big[\frac{i h}{4\pi}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)
--\frac{h^{2}}{8\pi^{2}m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
+-\frac{hc}{8\pi^{2}\nu_m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
 +ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi\Big],
 $$
 
@@ -55,8 +55,8 @@ a sum of four moduli. This is the one place where the coupling changes the actio
 **The two writings of the kinetic term.** The action's gradient term can be written as a modulus or as an operator sandwich,
 
 $$
--\frac{h^{2}}{8\pi^{2}m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
-=\frac{h^{2}}{8\pi^{2}m}\sum_\eta\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta^{2}\tilde\Xi\big)+\partial_\eta\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big),
+-\frac{hc}{8\pi^{2}\nu_m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
+=\frac{hc}{8\pi^{2}\nu_m}\sum_\eta\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta^{2}\tilde\Xi\big)+\partial_\eta\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big),
 $$
 
 because $D_\eta^{\dagger}=-D_\eta$. The two differ by a total divergence, so they give the same variation and the same equation, and the article uses the modulus form because it is manifestly positive and the operator form because it makes the variation one line.
@@ -76,7 +76,7 @@ and it is conserved because $\tilde H^{\mathrm{gco}}_\Psi$ commutes with itself:
 **The operator setting.** The energy density is
 
 $$
-e=\frac{h^{2}}{8\pi^{2}m}\sum_\eta\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)-ϙ\omicron_{\mathrm{pot}}\,n,
+e=\frac{hc}{8\pi^{2}\nu_m}\sum_\eta\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)-ϙ\omicron_{\mathrm{pot}}\,n,
 $$
 
 which is the free article's density with the covariant gradient and the potential energy. Its spatial integral is the expectation of $\hat H^{\mathrm{gco}}$ on solutions, up to a boundary term, and **it is conserved for a time-independent connection**: the potential's contribution to the time derivative is exactly the work the field does against the potential, and the two cancel in the integral.
@@ -91,7 +91,7 @@ which is the free article's density with the covariant gradient and the potentia
 
 $$
 \frac{\delta S}{\delta\tilde\Xi^{*}}
-=i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi+\frac{h^{2}}{8\pi^{2}m}\sum_\eta D_\eta^{2}\tilde\Xi+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi
+=i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi+\frac{hc}{8\pi^{2}\nu_m}\sum_\eta D_\eta^{2}\tilde\Xi+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi
 =\;i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi-\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi} D_\eta\big)^{2}\tilde\Xi+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi .
 $$
 
@@ -177,7 +177,7 @@ and the temporal component is the density $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)
 
 $$
 -\frac{\partial L}{\partial A_\eta}
-=\frac{h^{2}}{8\pi^{2}m}\cdot 2\,\mathrm{Re}\sum_{\imath}\frac{2\pi iϙ}{h}\,\overline{\big(D_\eta\tilde\Xi\big)_{\imath}}\,\tilde\Xi_{\imath}
+=\frac{hc}{8\pi^{2}\nu_m}\cdot 2\,\mathrm{Re}\sum_{\imath}\frac{2\pi iϙ}{h}\,\overline{\big(D_\eta\tilde\Xi\big)_{\imath}}\,\tilde\Xi_{\imath}
 =-\frac{h ϙ}{2\pi m}\,\mathrm{Im}\,\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}\tilde\Xi\big)
 =ϙ\,j_\eta,
 $$
@@ -206,7 +206,7 @@ The coupled action is
 
 $$
 S=\int dt'\,d^{3}x\;\mathrm{Sc}\Big[\frac{i h}{4\pi}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)
--\frac{h^{2}}{8\pi^{2}m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
+-\frac{hc}{8\pi^{2}\nu_m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
 +ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi\Big],
 $$
 

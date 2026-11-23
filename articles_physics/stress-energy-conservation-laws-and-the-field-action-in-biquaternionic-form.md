@@ -28,7 +28,7 @@ $$
 \Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2 .
 $$
 
-The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_{\imath} Q_{\imath}^2$ — the unit metric $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and on the real material slice it is the interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i q'_t$. The scalar mass enters as the length $\frac{h}{2\pi mc}$, so that the scalar equation is $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}_{\Phi}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The reduction formula is $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Here $\frac{h}{2\pi mc}$ is the mass length.
+The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_{\imath} Q_{\imath}^2$ — the unit metric $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and on the real material slice it is the interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i q'_t$. The scalar mass enters as the length $\frac{1}{2\pi\nu_m}$, so that the scalar equation is $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}_{\Phi}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The reduction formula is $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Here $\frac{1}{2\pi\nu_m}$ is the mass length.
 
 **A sign warning.** As in the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor*, the mixed component $\mathsf{T}_{00}$ carries a sign in the $i r'_t$ convention: for the electromagnetic field $\mathsf{T}_{00}=-W$, while the physical energy density is $T_{tt}=W$. This article keeps the same convention for the scalar field and states it at each tensor, so that the two fields can be compared without a sign discrepancy.
 
@@ -56,9 +56,9 @@ and the statement that a continuous transformation of the field leaves $S$ uncha
 Let $\tilde{Ξ}$ be a biquaternion-valued field and take the Lagrangian density
 
 $$
-\boxed{\ \mathcal{L}_\xi = -\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\tilde{Ξ}\,\partial/\partial R_{\imath}\,\tilde{Ξ}^{\natural} - \tfrac12(\frac{2\pi mc}{h})^{2}\,\tilde{Ξ}\tilde{Ξ}^{\natural}\ } ,
+\boxed{\ \mathcal{L}_\xi = -\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\tilde{Ξ}\,\partial/\partial R_{\imath}\,\tilde{Ξ}^{\natural} - \tfrac12(2\pi\nu_m)^{2}\,\tilde{Ξ}\tilde{Ξ}^{\natural}\ } ,
 \qquad
-\frac{h}{2\pi mc} .
+\frac{1}{2\pi\nu_m} .
 $$
 
 Because $\Box_\Phi$ is central and scalar, the field decomposes into its four components and the Euler–Lagrange equation is componentwise the scalar equation. For a real scalar component $\xi$ the variation gives
@@ -343,9 +343,9 @@ The conventions of the construction are those of the following companion article
 The action of a field theory yields both its equations of motion and, by Noether's theorem, its conserved stress–energy. In biquaternion form the scalar action
 
 $$
-\mathcal{L}_\xi = -\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\tilde{Ξ}\,\partial/\partial R_{\imath}\,\tilde{Ξ}^{\natural}-\tfrac12(\frac{2\pi mc}{h})^{2}\tilde{Ξ}\tilde{Ξ}^{\natural},
+\mathcal{L}_\xi = -\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\tilde{Ξ}\,\partial/\partial R_{\imath}\,\tilde{Ξ}^{\natural}-\tfrac12(2\pi\nu_m)^{2}\tilde{Ξ}\tilde{Ξ}^{\natural},
 \qquad
-\frac{h}{2\pi mc},
+\frac{1}{2\pi\nu_m},
 $$
 
 has the Euler–Lagrange equation $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=0$, and the electromagnetic action
@@ -392,7 +392,7 @@ symmetric, traceless, and conserved source-free — all verified by direct compu
 | $\delta_{\imath\jmath}=(1,1,1,1)$ | Unit metric; the same in $\mathbb{B}$ and on the two sectors |
 | $S=\int\mathcal{L}\,d^4r$ | Action; $\mathcal{L}$ the Lagrangian density |
 | $\mathcal{L}_\xi=-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\tilde{Ξ}\,\partial/\partial R_{\imath}\,\tilde{Ξ}^{\natural}-\tfrac12(2\pi\nu_m)^{2}\tilde{Ξ}\tilde{Ξ}^{\natural}$ | Scalar Lagrangian |
-| $\frac{h}{2\pi mc}$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $\nu_m$ is the scalar mass parameter |
+| $\frac{1}{2\pi\nu_m}$ | The mass length, $\frac{1}{2\pi\nu_m}$; its reciprocal $\nu_m$ is the scalar mass parameter |
 | $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=0$ | Biquaternionic Klein–Gordon equation |
 | $F_{\imath\jmath}=\partial/\partial R_{\imath} A_{\jmath}-\partial/\partial R_{\jmath} A_{\imath}$; $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field strength |
 | $S_{\mathrm{em}}=-\frac14\int \sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}d^4r$ | Electromagnetic action |

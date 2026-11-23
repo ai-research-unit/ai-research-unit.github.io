@@ -141,7 +141,7 @@ $$
 \boxed{\;\kappa\le \nu_m,\qquad\text{with equality exactly at }\nu_t^{\prime}=0\;}
 $$
 
-and the decay length of the asymptotic tail $1/(2\pi\kappa)$ cannot be shorter than $1/(2\pi\nu_m)=\frac{h}{2\pi mc}$. **The tail of a bound state of this equation cannot fall off faster than one radian of the mass phase, and the bound is saturated at zero frequency.** The statement is about the tail and not about the support: a wavefunction has structure inside the well that may be narrower than that, and only its exponential fall-off is bounded. For the electron that length is $3.8616\times10^{-13}\ \mathrm{m}$.
+and the decay length of the asymptotic tail $1/(2\pi\kappa)$ cannot be shorter than $1/(2\pi\nu_m)$. **The tail of a bound state of this equation cannot fall off faster than one radian of the mass phase, and the bound is saturated at zero frequency.** The statement is about the tail and not about the support: a wavefunction has structure inside the well that may be narrower than that, and only its exponential fall-off is bounded. For the electron that length is $3.8616\times10^{-13}\ \mathrm{m}$.
 
 This is the strongest statement the position makes, and it is not a statement about a potential. No well, however deep, can push a bound position off the circle, and no well can push it past $\kappa=\nu_m$ without the frequency ceasing to be real. A would-be state that needs $\kappa>\nu_m$ does not become a tighter bound state; it leaves the real-frequency slice altogether and lands in the third row of the table, where nothing is stationary. The ceiling is therefore a statement about the equation, not about the well.
 
@@ -334,7 +334,7 @@ The partition is a partition of the centre. The symbol is central, so its zero i
 | $\nu_t^{\prime}$ | the energy wave number, $\frac{E}{h\,c}$; the frequency of a mode |
 | $\nu_{\Phi}^{2}$ | the quadratic invariant $\vec\nu_\Phi\cdot\vec\nu_\Phi$, complex bilinear and not a modulus squared |
 | $\nu_{\mathrm{s}}$ | the energy above rest, $\nu_t^{\prime}-\nu_m=(E-mc^{2})\frac{1}{h\,c}$ |
-| $\nu_m$ | the mass wave number, $\frac{m\,c}{h}$; the radius of the circle, and the ceiling on $\kappa$ |
+| $\nu_m$ | the mass wave number, $\nu_m$; the radius of the circle, and the ceiling on $\kappa$ |
 | $\vec\kappa$ | the decay vector, $\vec\nu_\Phi=i\vec\kappa$, with $\kappa=\sqrt{-\nu_{\Phi}^{2}}>0$ in the bound position |
 | $\eta$ | the well strength, $\frac{2\pi a\sqrt{2mV_0}}{h}$; dimensionless, and the count of bound zeros is $\lfloor\eta/\pi\rfloor+1$ |
 | $D(\nu_{\Phi})$ | the determinant of the outgoing matching condition; its zeros are the poles of $S$ |

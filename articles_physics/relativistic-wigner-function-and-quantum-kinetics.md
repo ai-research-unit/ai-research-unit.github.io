@@ -127,7 +127,7 @@ The Wigner element is defined off the mass shell, and the physical states popula
 $$
 \frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2m\,Q_{\mathrm{qnt}},
 \qquad
-Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
+Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
 $$
 
 so the width of the shell is set by $Q_{\mathrm{qnt}}$, which is itself of order $\frac{h^{2}}{4\pi^{2}}$.
@@ -205,7 +205,7 @@ whose position and momentum variances are $\sigma^{2}=\frac{h}{2\pi 2m\omega}$ a
 $$
 \frac{p_\eta}{m}\frac{\partial W_0}{\partial r_\eta}
 -\frac{\partial V}{\partial r_\eta}\frac{\partial W_0}{\partial p_\eta}
-=W_0\left(-\frac{p_\eta}{m}\frac{2\pi m\omega}{h}r_\eta\cdot 2
+=W_0\left(-\frac{p_\eta}{m}\frac{2\pi\omega\nu_m}{c}r_\eta\cdot 2
 +m\omega^{2}r_\eta\frac{2}{m\omega \frac{h}{2\pi}}p_\eta\right)=0,
 $$
 
@@ -321,7 +321,7 @@ Relativistically the drift is a contraction with the flow element and the shell 
 | $\Lambda$ | The bidifferential operator of the Moyal bracket |
 | $H$ | Hamiltonian symbol, $\lvert\vec p\rvert^{2}/(2m)+V$ |
 | $V$ | Potential; $V'''$ its third derivative |
-| $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
+| $Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
 | $\omega$ | Oscillator frequency |
 | $\sigma^{2}$, $\sigma_{p}^{2}$ | Position and momentum variances of a Gaussian |
 | $W_0$ | Wigner element of the oscillator ground state |

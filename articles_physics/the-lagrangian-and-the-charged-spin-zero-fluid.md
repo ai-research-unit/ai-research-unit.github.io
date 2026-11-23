@@ -21,7 +21,7 @@ The conventions are restated here so that every sign below is checkable from thi
 One substitution, in the four-derivative of the phase, and the action is the free one written in the new variable.
 
 $$
-\boxed{\;\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}\Bigl[\sum_{\imath} V_{\Phi,\imath}V_{\Phi,\imath}+c^{2}\Bigr]-\frac{h^{2}}{8\pi^{2}m}\sum_{\imath}(\partial_{\imath} \varrho)^{2},
+\boxed{\;\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}\Bigl[\sum_{\imath} V_{\Phi,\imath}V_{\Phi,\imath}+c^{2}\Bigr]-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath}(\partial_{\imath} \varrho)^{2},
 \qquad
 V_{\Phi,\imath}=\frac{\partial_{\imath} S_{\tilde\Xi}-q A_{\imath}}{m}\;}
 $$
@@ -98,7 +98,7 @@ A rotational fluid written in Eulerian variables needs the pair $(\alpha_{\mathr
 
 Three objects are exactly the free ones.
 
-*The gradient energy.* $-\frac{h^{2}}{8\pi^{2}m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}$, unchanged, because it carries the amplitude and the connection reaches the phase.
+*The gradient energy.* $-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}$, unchanged, because it carries the amplitude and the connection reaches the phase.
 
 *The quantum potential and the quantum stress.* $Q_{\mathrm{qnt}}$ and $\sigma^{Q}_{ij}$ are functions of $\varrho$ and its derivatives, and the block's identity $\partial_j\sigma^{Q}_{j\eta}=-\rho_{\mathrm{num}}\partial_\eta Q_{\mathrm{qnt}}$ is unchanged with it.
 
@@ -144,7 +144,7 @@ The chart fails at $\varrho=0$, and here the failure is on a surface that also c
 
 ## Summary
 
-The action. $\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}[\sum_{\imath} V_{\Phi,\imath}V_{\Phi,\imath}+c^{2}]-\frac{h^{2}}{8\pi^{2}m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}$, with $V_{\imath}=(\partial_{\imath} S-q A_{\imath})/m$: the free action in a new variable.
+The action. $\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}[\sum_{\imath} V_{\Phi,\imath}V_{\Phi,\imath}+c^{2}]-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}$, with $V_{\imath}=(\partial_{\imath} S-q A_{\imath})/m$: the free action in a new variable.
 
 The variations. The phase gives $\partial_{\imath}(\rho_{\mathrm{num}}V_{\Phi,\imath})=0$; the amplitude gives the free shell verbatim; the gradient of the second is $\mathrm{d}\vec p^{\mathrm{mech}}/\mathrm{d}t=-ϙ(\vec E+\vec v\times\vec B)-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$.
 
@@ -167,7 +167,7 @@ What the charge changes. One variable. The gradient energy, the quantum potentia
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | Proper density; gauge invariant |
 | $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ | Charge density; the current's temporal component over $c$ |
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | Quantum potential; coupling-blind |
-| $\mathcal E_{\mathrm{grad}}=-\frac{h^{2}}{8\pi^{2}m}\int\sum_{\imath}(\partial_{\imath} \varrho)^{2}$ | Gradient energy; coupling-blind |
+| $\mathcal E_{\mathrm{grad}}=-\frac{hc}{8\pi^{2}\nu_m}\int\sum_{\imath}(\partial_{\imath} \varrho)^{2}$ | Gradient energy; coupling-blind |
 | $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$ | Field strength; $m\omega=ϙ F$ |
 | $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Field strengths |
 | $\gamma=E/(mc^{2})$ | Signed Lorentz factor |

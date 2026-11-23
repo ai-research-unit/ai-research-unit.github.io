@@ -15,7 +15,7 @@ Position in the block. This is the Fourier companion of [The Spin-Zero Fluid](th
 The free companion's: $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, $\rho_{\mathrm{num}}=\varrho^{2}$, $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime 2}$ on the material sector, and
 
 $$
-Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho},
+Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi \varrho}{\varrho},
 \qquad
 \tilde V_{\Phi}=\frac{\tilde P_{\Phi}}{m},
 \qquad

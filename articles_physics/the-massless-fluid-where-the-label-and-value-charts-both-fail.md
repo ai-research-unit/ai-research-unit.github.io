@@ -22,7 +22,7 @@ $$
 N(\tilde\Upsilon_\Phi)=-\nu_t'^{2}+\lvert\vec\nu_\Phi\rvert^{2}\in\mathbb{R},
 $$
 
-the mass shell being $N(\tilde\Upsilon_\Phi)=-\nu_m^{2}$, that is $\nu_t'^{2}=\lvert\vec\nu_\Phi\rvert^{2}+\nu_m^{2}$ [Four-Vectors and the Interval](four-vectors-and-the-interval.html). $\nu_m$ is the mass in wave-number units, the block's $\frac{2\pi mc}{h}$. The **label cone** is $N(\tilde\Upsilon_\Phi)=0$, that is $\nu_t'=\lvert\vec\nu_\Phi\rvert$.
+the mass shell being $N(\tilde\Upsilon_\Phi)=-\nu_m^{2}$, that is $\nu_t'^{2}=\lvert\vec\nu_\Phi\rvert^{2}+\nu_m^{2}$ [Four-Vectors and the Interval](four-vectors-and-the-interval.html). $\nu_m$ is the mass in wave-number units, the block's $2\pi\nu_m$. The **label cone** is $N(\tilde\Upsilon_\Phi)=0$, that is $\nu_t'=\lvert\vec\nu_\Phi\rvert$.
 
 The two symbols. The scalar rung's operator $\Box_\Phi-4\pi^{2}\nu_m^{2}$ has the scalar symbol
 
@@ -115,7 +115,7 @@ The speed rises from below and the rise is a square root. At fixed energy, $\lve
 Family two holds the field fixed and varies the mass, and the mass appears in exactly one place: as $1/m$ in the quantum potential. Since $\Box_\Phi\varrho/\varrho$ is a functional of the shape alone,
 
 $$
-Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi\varrho}{\varrho}\ \propto\ \frac{1}{m},
+Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi\varrho}{\varrho}\ \propto\ \frac{1}{m},
 \qquad
 p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}\ \propto\ \frac{1}{m},
 $$
@@ -365,7 +365,7 @@ The label chart's failure is a projection and not a divergence. Its least-square
 | $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, $\sum_{\imath} Q_{\imath}^{2}$, complex, multiplicative |
 | $\langle\tilde Q\rangle_{*}$ | the Euclidean size, $\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ |
 | $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | the label, with imaginary time coefficient |
-| $\nu_m$ | the mass in wave-number units, the block's $\frac{2\pi mc}{h}$ |
+| $\nu_m$ | the mass in wave-number units, the block's $2\pi\nu_m$ |
 | $N(\tilde\Upsilon_\Phi)=-\nu_t'^{2}+\lvert\vec\nu_\Phi\rvert^{2}$ | the label's norm (plain $N$); the mass shell is $-\nu_m^{2}$ |
 | $\mathcal N(\tilde\Upsilon_\Phi)$ | the scalar symbol (script $\mathcal N$), $\nu_t'^{2}-\lvert\vec\nu_\Phi\rvert^{2}-\nu_m^{2}$, equal to $-N-\nu_m^{2}$ |
 | $\Sigma(\tilde\Upsilon_\Phi)$ | the algebra-valued symbol of the first-order rung |

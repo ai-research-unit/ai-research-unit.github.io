@@ -288,7 +288,7 @@ H_{\mathrm{NR}} = -\,\mu\sum_\eta B_\eta\,i\vec e_\eta - d\sum_\eta E_\eta\,i\ve
 $$
 
 $$
-\mu = \frac{e h}{4\pi m}\big(1+F_2(0)\big),\qquad d = \frac{e h}{4\pi m}F_3(0),
+\mu = \frac{e\,c}{4\pi\nu_m}\big(1+F_2(0)\big),\qquad d = \frac{e\,c}{4\pi\nu_m}F_3(0),
 $$
 
 so that the two coefficients are the form factors at zero momentum transfer, multiplied by the same dimensionful factor and distinguished by the chirality basis operator. The magnetic moment is the Hermitian member of the pair; the EDM is the anti-Hermitian member; and the two are Hodge duals of each other. This is the standard form-factor decomposition, and it is the reason the EDM is called the "dual" of the anomalous magnetic moment.

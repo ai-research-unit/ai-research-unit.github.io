@@ -103,7 +103,7 @@ With $\omega_{1}=0.9$, $\omega_{2}=1.3$, unit amplitudes and five sample times, 
 
 Zitterbewegung is the case $\omega_{2}=-\omega_{1}$. Then the density beats at $2\omega_{1}$ and the norm's argument is constant: a superposition of a branch and its conjugate is a standing beat at twice the branch's rate, which is the frequency the standard theory calls $\frac{2\pi 2mc^{2}}{h}$ at rest. The factor of two is not put in by hand. It is the doubling of the phase in the quaternionic norm, and it is the same doubling that forces the phase's range to be a half turn.
 
-The scalar fluid sees the density and the phase, and the spin-half fluid sees neither. For the scalar field the word collapses to a scale, a phase and a sign, so the bilinears of this article reduce to two: the norm and the current, and the current is the gradient of the action. There the doubling has a kinematic meaning, since the circulation of $\tilde P_{\Phi}/m$ around a node is an integer multiple of $h/m$ and the density is blind to the sign of the action. [The Spin-Zero Fluid](the-spin-zero-fluid.html) works that case and the contrast is its point.
+The scalar fluid sees the density and the phase, and the spin-half fluid sees neither. For the scalar field the word collapses to a scale, a phase and a sign, so the bilinears of this article reduce to two: the norm and the current, and the current is the gradient of the action. There the doubling has a kinematic meaning, since the circulation of $\tilde P_{\Phi}/m$ around a node is an integer multiple of $c/\nu_m$ and the density is blind to the sign of the action. [The Spin-Zero Fluid](the-spin-zero-fluid.html) works that case and the contrast is its point.
 
 ## The Two Brackets and the Four
 

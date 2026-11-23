@@ -7,7 +7,7 @@ One-dimensional scattering is the simplest problem in which a quantum system mee
 The biquaternion content is again a consequence of centrality. For an external potential $V(x)$ the Hamiltonian is
 
 $$
-H = \left[-\frac{h^{2}}{8\pi^{2}\,m}\partial^2/\partial R_x^2 + V(r_x)\right]e_t \in  \mathbb{B}_{C},
+H = \left[-\frac{hc}{8\pi^{2}\nu_m}\partial^2/\partial R_x^2 + V(r_x)\right]e_t \in  \mathbb{B}_{C},
 $$
 
 Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
@@ -27,13 +27,13 @@ For a particle of mass $m$ in a real potential $V(x)$, the stationary equation i
 $$
 H\,\tilde{Ξ} = E\,\tilde{Ξ},
 \qquad
-H = \left[-\frac{h^{2}}{8\pi^{2}\,m}\frac{d^2}{dx^2} + V(r_x)\right]e_t = h_t(r_x)\,e_t,
+H = \left[-\frac{hc}{8\pi^{2}\nu_m}\frac{d^2}{dx^2} + V(r_x)\right]e_t = h_t(r_x)\,e_t,
 $$
 
 with $\tilde{Ξ}$ a field taking values in the state module $\mathbb{B}\tilde\Pi_{\mathrm{id}}$. Since $H$ is central, the equation is componentwise the scalar equation
 
 $$
--\frac{h^{2}}{8\pi^{2}\,m}\frac{d^2\xi_{\mathrm{scl}}}{dx^2}(x) + V(x)\xi_{\mathrm{scl}}(x) = E\,\xi_{\mathrm{scl}}(x)
+-\frac{hc}{8\pi^{2}\nu_m}\frac{d^2\xi_{\mathrm{scl}}}{dx^2}(x) + V(x)\xi_{\mathrm{scl}}(x) = E\,\xi_{\mathrm{scl}}(x)
 $$
 
 for the scalar envelope $\xi_{\mathrm{scl}}$, and every solution has the form $\tilde{Ξ} = \xi_{\mathrm{scl}}\,\xi$ with $\xi$ a constant module element, or more generally a finite sum of such terms. The potential does not mix the components; the module factor is a fixed vector in $\mathbb{C}^2$ throughout.
@@ -57,13 +57,13 @@ A potential that is piecewise constant is therefore solved by matching the coeff
 The one-dimensional current is the reduction of the general current of the free-particle article. For a stationary state it is
 
 $$
-J =\frac{h}{4\pi \,i\,m}\,2\,\mathrm{Sc}\!\left(\tilde{Ξ}^{\dagger} \frac{d\tilde{Ξ}}{dx} - \left(\frac{d\tilde{Ξ}}{dx}\right)^\dagger \tilde{Ξ}\right),
+J =\frac{c}{4\pi i\nu_m}\,2\,\mathrm{Sc}\!\left(\tilde{Ξ}^{\dagger} \frac{d\tilde{Ξ}}{dx} - \left(\frac{d\tilde{Ξ}}{dx}\right)^\dagger \tilde{Ξ}\right),
 $$
 
 For a factorised field $\tilde{Ξ} = \xi_{\mathrm{scl}}\,\xi$ with $2\,\mathrm{Sc}(\xi^\dagger\xi)=1$ this reduces to the familiar scalar expression
 
 $$
-J =\frac{h}{4\pi \,i\,m}\left({\xi_{\mathrm{scl}}}^*\frac{d\xi_{\mathrm{scl}}}{dx} - \left(\frac{d\xi_{\mathrm{scl}}}{dx}\right)^*\xi_{\mathrm{scl}}\right)
+J =\frac{c}{4\pi i\nu_m}\left({\xi_{\mathrm{scl}}}^*\frac{d\xi_{\mathrm{scl}}}{dx} - \left(\frac{d\xi_{\mathrm{scl}}}{dx}\right)^*\xi_{\mathrm{scl}}\right)
 = c/\nu_m\,\mathrm{Im}\!\left({\xi_{\mathrm{scl}}}^*\frac{d\xi_{\mathrm{scl}}}{dx}\right).
 $$
 
@@ -160,7 +160,7 @@ Unitarity of $S$ is thus the algebraic form of flux conservation. In the framewo
 
 ### The step
 
-Let $V(x) = 0$ for $x<0$ and $V(x) = V_0$ for $x>0$, with $E>V_0$. The wave vectors are $\nu_{\Phi,1} = \frac{\sqrt{2mE}}{h}$ and $\nu_{\Phi,2} = \frac{\sqrt{2m(E-V_0)}}{h}$. Continuity of $\xi_{\mathrm{scl}}$ and $\partial\xi_{\mathrm{scl}}/\partial r_x$ at the origin, with the ansatz $\xi_{\mathrm{scl}} = \exp(ik_1x)+r\exp(-ik_1x)$ on the left and $\xi_{\mathrm{scl}} = t\exp(ik_2x)$ on the right, gives
+Let $V(x) = 0$ for $x<0$ and $V(x) = V_0$ for $x>0$, with $E>V_0$. The wave vectors are $\nu_{\Phi,1} = \sqrt{2\,\nu_m\,\nu_t^{\prime}}$ and $\nu_{\Phi,2} = \frac{\sqrt{2m(E-V_0)}}{h}$. Continuity of $\xi_{\mathrm{scl}}$ and $\partial\xi_{\mathrm{scl}}/\partial r_x$ at the origin, with the ansatz $\xi_{\mathrm{scl}} = \exp(ik_1x)+r\exp(-ik_1x)$ on the left and $\xi_{\mathrm{scl}} = t\exp(ik_2x)$ on the right, gives
 
 $$
 1 + r = t,
@@ -402,7 +402,7 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 **What the biquaternion notation provides.**
 
 - **Centrality of the potential coupling, made manifest.** The potential multiplies $e_t$, so the Hamiltonian is central and the $S$-matrix factorises as $S\otimes I_2$. The absence of spin-flip and spin-dependent amplitudes is read off the algebra rather than assumed from rotational invariance.
-- **A flux from the plain form.** The one-dimensional current is $\frac{h}{4\pi \,i\,m}2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\frac{d\tilde{Ξ}}{dx} - \left(\frac{d\tilde{Ξ}}{dx}\right)^\dagger\tilde{Ξ})$, the reduction of the general current, and flux conservation is the unitarity $S^{*} S = I_2$. Density and current carry the two sectors of the algebra, as everywhere in the subcategory.
+- **A flux from the plain form.** The one-dimensional current is $\frac{c}{4\pi i\nu_m}2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\frac{d\tilde{Ξ}}{dx} - \left(\frac{d\tilde{Ξ}}{dx}\right)^\dagger\tilde{Ξ})$, the reduction of the general current, and flux conservation is the unitarity $S^{*} S = I_2$. Density and current carry the two sectors of the algebra, as everywhere in the subcategory.
 - **One notion of unit resolved.** The $S$-matrix is $*$-unitary, $\tilde{\mathcal S}_{\Psi}\tilde{\mathcal S}_{\Psi}^{*} = e_t$, and is not invertible-norm rotor $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$. The same distinction appears for the free evolution operator and the path-integral phase; scattering is the third place where it must be kept apart.
 - **A clean statement of what a scalar potential can do.** The potential can shape the envelope without touching the module; the framework exhibits the module as a spectator of every problem with a central Hamiltonian.
 
@@ -425,9 +425,9 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 
 ## Summary
 
-The one-dimensional biquaternion Schrödinger equation with a real potential is $(-\frac{h^{2}}{8\pi^{2}\,m}\partial^2/\partial R_x^2 + V(r_x))e_t\,\tilde{Ξ} = E\tilde{Ξ}$. The Hamiltonian is central, so the equation reduces to a scalar equation for the envelope, $\tilde{Ξ} = \xi_{\mathrm{scl}}\xi$ with $\xi$ a constant module element, and no potential treated here acts on the module.
+The one-dimensional biquaternion Schrödinger equation with a real potential is $(-\frac{hc}{8\pi^{2}\nu_m}\partial^2/\partial R_x^2 + V(r_x))e_t\,\tilde{Ξ} = E\tilde{Ξ}$. The Hamiltonian is central, so the equation reduces to a scalar equation for the envelope, $\tilde{Ξ} = \xi_{\mathrm{scl}}\xi$ with $\xi$ a constant module element, and no potential treated here acts on the module.
 
-The current is $J =\frac{h}{4\pi \,i\,m}2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\frac{d\tilde{Ξ}}{dx} - \left(\frac{d\tilde{Ξ}}{dx}\right)^\dagger\tilde{Ξ})$, which for a superposition $A\exp(ikx)+B\exp(-ikx)$ reduces to $J = c\,\nu_{\Phi}/\nu_m(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.
+The current is $J =\frac{c}{4\pi i\nu_m}2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\frac{d\tilde{Ξ}}{dx} - \left(\frac{d\tilde{Ξ}}{dx}\right)^\dagger\tilde{Ξ})$, which for a superposition $A\exp(ikx)+B\exp(-ikx)$ reduces to $J = c\,\nu_{\Phi}/\nu_m(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.
 
 The step gives $T = 4\nu_{\Phi,1}\nu_{\Phi,2}/(\nu_{\Phi,1}+\nu_{\Phi,2})^2$ with the flux factor $\nu_{\Phi,2}/\nu_{\Phi,1}$; the rectangular barrier gives $T = [1+V_0^2\sinh^2(2\pi\nu_{\Phi,\mathrm{ev}} a)/4E(V_0-E)]^{-1}$ below the barrier, with the thick-barrier limit $\frac{16E(V_0-E)}{V_0^2}\exp(-4\pi\nu_{\Phi,\mathrm{ev}} a)$, and the oscillatory Ramsauer–Townsend form above it; the delta potential gives $t = (1+i\beta)^{-1}$, $T = (1+\beta^2)^{-1}$ with $\beta =\frac{2\pi m\,\lambda}{h^{2}\,\nu_{\Phi}}$, and a single bound state at $E_b = -\frac{m\,\lambda^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}$ for the attractive case; the square well gives resonant transparency at $2\pi\nu_{\Phi,2}a = n\pi$. The exact barrier and step formulas were checked against independent transfer-matrix matching to a relative error below $2\times10^{-14}$, with $R+T=1$ to $10^{-12}$, the thick-barrier ratio $0.999989$, and the $E\to V_0$ limit reproduced, all on a stationary superposition of an incoming and a reflected wave and in explicit complex arithmetic.
 
@@ -443,11 +443,11 @@ The biquaternion content is that the potential couples only to the scalar slot, 
 | $\mathbb{B}_{C}$ | Centre; the Hamiltonian multiplies $e_t$ |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong \mathbb{C}^2$ | State module |
-| $H = [-\frac{h^{2}}{8\pi^{2}\,m}\partial^2/\partial R_x^2 + V(r_x)]e_t$ | Central Hamiltonian |
+| $H = [-\frac{hc}{8\pi^{2}\nu_m}\partial^2/\partial R_x^2 + V(r_x)]e_t$ | Central Hamiltonian |
 | $\tilde{Ξ} = \xi_{\mathrm{scl}}\,\xi$ | Factorised stationary state |
 | $\nu_{\Phi,j} = \frac{\sqrt{2m(E-V_j)}}{h}$ | Wave vector in region $j$; imaginary when $E<V_j$ |
 | $\nu_{\Phi,\mathrm{ev},j} = \frac{\sqrt{2m(V_j-E)}}{h}$ | Decay constant in a forbidden region |
-| $J =\frac{h}{4\pi \,i\,m}2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\frac{d\tilde{Ξ}}{dx} - \left(\frac{d\tilde{Ξ}}{dx}\right)^\dagger\tilde{Ξ})$ | One-dimensional current |
+| $J =\frac{c}{4\pi i\nu_m}2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\frac{d\tilde{Ξ}}{dx} - \left(\frac{d\tilde{Ξ}}{dx}\right)^\dagger\tilde{Ξ})$ | One-dimensional current |
 | $J = c\,\nu_{\Phi}/\nu_m(|A|^2-|B|^2)$ | Current for a two-exponential superposition |
 | $\rho = 2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ}) = |\xi_{\mathrm{scl}}|^2$ | Density |
 | $S = \begin{pmatrix} t & r_2 \ r & t_2\end{pmatrix}$ | Scattering matrix; $*$-unitary, $S^{*} S = I_2$ |

@@ -17,8 +17,8 @@ What the article does not do. It adds no solution and no equation. The transform
 The algebra and the word are the polar article's: $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ and $\varepsilon=\pm1$. The density is $\rho_{\mathrm{num}}=\varrho^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, the action is $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, the velocity is $\vec v=\vec\nabla_\Phi S/m$, and the quantum potential is
 
 $$
-Q=-\frac{h^{2}}{8\pi^{2}m}\frac{\Delta_\Phi \varrho}{\varrho}
-=-\frac{h^{2}}{16\pi^{2}m}\Bigl(\Delta_\Phi\ln\rho_{\mathrm{num}}+\tfrac12\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}\Bigr).
+Q=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Delta_\Phi \varrho}{\varrho}
+=-\frac{hc}{16\pi^{2}\nu_m}\Bigl(\Delta_\Phi\ln\rho_{\mathrm{num}}+\tfrac12\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}\Bigr).
 $$
 
 The transform is the transform of [The Derivative, the Field and the Transform](the-derivative-the-field-and-the-transform.html), with the symbol rule of [The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html):
@@ -124,15 +124,15 @@ A degree-zero object is a ratio, and a ratio of two transforms is not the transf
 The quantised circulation is therefore inter-mode as well. From [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html),
 
 $$
-\oint\vec v\cdot\mathrm{d}\vec l=\frac{h\,n}{m}
+\oint\vec v\cdot\mathrm{d}\vec l=\frac{c\,n}{\nu_m}
 $$
 
-around a loop that links a nodal line of winding $n$. A mode has no such loop, so the quantum of circulation is invisible to every single mode. **The quantum $h/m$ is a statement about a pair of modes and not about a wave.**
+around a loop that links a nodal line of winding $n$. A mode has no such loop, so the quantum of circulation is invisible to every single mode. **The quantum $c/\nu_m$ is a statement about a pair of modes and not about a wave.**
 
 The vorticity does not follow the same rule, and the difference is worth stating. The velocity is $\frac{h}{2\pi}\nabla\theta/m$, so
 
 $$
-\vec\nabla_\Phi\times\vec v=\frac{h}{2\pi m}\vec\nabla_\Phi\times\nabla\theta=0
+\vec\nabla_\Phi\times\vec v=\frac{c}{2\pi\nu_m}\vec\nabla_\Phi\times\nabla\theta=0
 $$
 
 wherever the phase is twice differentiable — at a mode and at every superposition alike. The vorticity vanishes identically at every order of superposition, and what a superposition supplies is not a vorticity but a place where the phase is not a function, that is a node. The fluid is irrotational everywhere the flow is defined, and the rotation it does carry is a circulation around a hole in its domain. That is the precise sense in which this rung's rotation is topological and not local, and it contrasts with the spinor rung, where the vorticity is a local quantity read off a frame.
@@ -190,7 +190,7 @@ The momentum of a mode lives in the phase bracket and the quantum data live in t
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | The density; constant at a mode |
 | $\vec v=\vec\nabla_\Phi S/m=h\,\vec\nu_{\Phi}/m$ | The velocity; constant at a mode |
 | $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | The quantum potential; zero at a mode |
-| $\sigma^{Q}_{ij}=\frac{h^{2}}{16\pi^{2}m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | The quantum stress; zero at a mode |
+| $\sigma^{Q}_{ij}=\frac{hc}{16\pi^{2}\nu_m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | The quantum stress; zero at a mode |
 | $2\sqrt{\rho_1\rho_2}\cos(\theta_1-\theta_2)$ | The interference term of a superposition |
 | $\eta$, $\Delta k$ | The second amplitude relative to the first, and the separation of the two labels; the mean curvature they add is $\tfrac12\eta^{2}(\Delta k)^{2}$ |
 | $\varepsilon=\pm1$ | The branch; the datum the transform does not read |

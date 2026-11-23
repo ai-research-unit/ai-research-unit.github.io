@@ -268,7 +268,7 @@ Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass lengt
 Subtracting the rest energy,
 
 $$
-\boxed{\;i\,\frac{h}{2\pi}\frac{\partial\tilde{Ξ}_{\mathrm{evn}}}{\partial  r'_t}=\left[\frac{(p-q\vec A)^{2}}{2\,m}+qΞ-\frac{h\,q}{4\pi \,m}\,\boldsymbol\sigma\cdot\vec B\right]\tilde{Ξ}_{\mathrm{evn}}\;}
+\boxed{\;i\,\frac{h}{2\pi}\frac{\partial\tilde{Ξ}_{\mathrm{evn}}}{\partial  r'_t}=\left[\frac{(p-q\vec A)^{2}}{2\,m}+qΞ-\frac{q\,c}{4\pi\nu_m}\,\boldsymbol\sigma\cdot\vec B\right]\tilde{Ξ}_{\mathrm{evn}}\;}
 $$
 
 which is the Pauli equation exactly as the parent reports it. The coefficient $1/2m$ is the whole content of the $g=2$ result of Problem 2: it is produced by the $2mc^2$ in the denominator of the small-component elimination, not put in by hand.
@@ -320,13 +320,13 @@ $$
 on the large part, which is the parent's result, with $\frac{h}{2\pi}$ restored. The coefficient carries no power of $c$: the two factors of $c$ in the elimination cancel, since $\tilde{Ξ}_{\mathrm{odd}}=O\tilde{Ξ}_{\mathrm{evn}}/(2mc^2)$ is multiplied by $O$ in the first equation. The identification $\vec S=\frac{h}{4\pi}\boldsymbol\sigma$ gives the spin term
 
 $$
--\frac{h\,q}{4\pi \,m}\,\boldsymbol\sigma\cdot\vec B=-\frac{q}{m}\,\vec S\cdot\vec B=-\vec\mu\cdot\vec B .
+-\frac{q\,c}{4\pi\nu_m}\,\boldsymbol\sigma\cdot\vec B=-\frac{q}{m}\,\vec S\cdot\vec B=-\vec\mu\cdot\vec B .
 $$
 
 *Step 4: the gyromagnetic factor.* Writing the coupling as $-\vec\mu\cdot\vec B$ identifies
 
 $$
-\vec\mu=\frac{h\,q}{4\pi \,m}\boldsymbol\sigma=\frac{q}{m}\,\vec S,\qquad  \vec S=\frac{h}{4\pi}\boldsymbol\sigma .
+\vec\mu=\frac{q\,c}{4\pi\nu_m}\boldsymbol\sigma=\frac{q}{m}\,\vec S,\qquad  \vec S=\frac{h}{4\pi}\boldsymbol\sigma .
 $$
 
 The general parametrization of a magnetic dipole is $\vec\mu=g\dfrac{q}{2m}\vec S$, so that
@@ -348,7 +348,7 @@ Here $1/(2\pi\nu_{m_e})=\frac{h}{2\pi m_ec}$ is the electron mass length.
 *Step 5: the biquaternion form.* Under the isomorphism $\mathsf M_2(\vec e_\eta)=-i\sigma_\eta$ the spin components are the elements $\tilde S_{\Psi,\eta}=\frac{h}{4\pi}i\vec e_\eta$, and a magnetic field written as the pure real quaternion $\vec B=\sum_\eta B_\eta\vec e_\eta$ maps the spin term to
 
 $$
--\frac{h\,q}{4\pi \,m}\boldsymbol\sigma\cdot\vec B\ \longleftrightarrow\ -\frac{h\,q}{4\pi \,m}\,i\vec B\ \in\ \mathbb{B}_{\Psi} ,
+-\frac{q\,c}{4\pi\nu_m}\boldsymbol\sigma\cdot\vec B\ \longleftrightarrow\ -\frac{q\,c}{4\pi\nu_m}\,i\vec B\ \in\ \mathbb{B}_{\Psi} ,
 $$
 
 the Hermitian element of the informational sector, exactly as the parent states: $(i\vec B)^{*}=i\vec B$, because $(\vec e_\eta)^{*}=-\vec e_\eta$ and the coefficient is imaginary. The kinetic and electrostatic terms are the scalar multiples $(\vec\pi^2 c/(2\,m\,c))e_t$ and $qΞ e_t$ of $\mathbb{B}_{\Psi}$.
@@ -430,7 +430,7 @@ The transformation cancels $O_1$; its even terms are of higher order and are dro
 
 $$
 \boxed{\;
-H=\frac{\vec \pi^{2}}{2\,m}+qΞ-\frac{h\,q}{4\pi \,m}\boldsymbol\sigma\cdot\vec B
+H=\frac{\vec \pi^{2}}{2\,m}+qΞ-\frac{q\,c}{4\pi\nu_m}\boldsymbol\sigma\cdot\vec B
 -\frac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}
 +\frac{1}{8\,4\pi^{2}\nu_m^{2}}\vec\nabla_\Phi^2 V
 -\frac{h\,q}{8\pi \,m^{2}\,c^{2}}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)
@@ -467,7 +467,7 @@ with the exact Dirac shift $\delta E_{\rm exact}=-\dfrac{m(\mathfrak{Z}\alpha)^4
 
 - $\vec\pi^2 c/(2\,m\,c)$: $\pi_i^\dagger=\pi_i$, hence $\sum_i\pi_i^2$ is Hermitian;
 - $qΞ$: multiplication by the real function $qΞ$, Hermitian;
-- $-\frac{h\,q}{4\pi \,m}\boldsymbol\sigma\cdot\vec B$: $\sigma_\eta$ and the real field $B_\eta$ are Hermitian;
+- $-\frac{q\,c}{4\pi\nu_m}\boldsymbol\sigma\cdot\vec B$: $\sigma_\eta$ and the real field $B_\eta$ are Hermitian;
 - $-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$: minus a real multiple of the square of the Hermitian $(\boldsymbol\sigma\cdot\vec\pi)^2$;
 - $\frac{1}{8\,4\pi^{2}\nu_m^{2}}\vec\nabla_\Phi^2 V$: multiplication by a real function;
 - $-\frac{h\,q}{8\pi \,m^{2}\,c^{2}}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$: this is the one term whose Hermiticity is not automatic. Using $[\pi_i,E_j]=-i\,\frac{h}{2\pi}\partial/\partial r_i\,E_j$,
@@ -484,7 +484,7 @@ so the term is Hermitian if and only if $\vec\nabla_\Phi\times\vec E=0$, its fai
 |+-|+-|+-|
 | $\vec\pi^2 c/(2\,m\,c)$ | $(\vec\pi^2 c/(2\,m\,c))\,e_t$ | $\mathbb{B}_{\Psi}$ |
 | $qΞ$ | $(qΞ)\,e_t$ | $\mathbb{B}_{\Psi}$ |
-| $-\frac{h\,q}{4\pi \,m}\boldsymbol\sigma\cdot\vec B$ | $-\frac{h\,q}{4\pi \,m}\,i\vec B$ | $\mathbb{B}_{\Psi}$ |
+| $-\frac{q\,c}{4\pi\nu_m}\boldsymbol\sigma\cdot\vec B$ | $-\frac{q\,c}{4\pi\nu_m}\,i\vec B$ | $\mathbb{B}_{\Psi}$ |
 | $-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$ | $-\dfrac{1}{8m^3c^2}\bigl(\vec\pi^2-i\,\frac{h}{2\pi}\,q\,\vec B\bigr)^2$ | $\mathbb{B}_{\Psi}$ |
 | $\frac{1}{8\,4\pi^{2}\nu_m^{2}}\vec\nabla_\Phi^2 V$ | $\frac{1}{8\,4\pi^{2}\nu_m^{2}}(\vec\nabla_\Phi^2V)\,e_t$ | $\mathbb{B}_{\Psi}$ |
 | $-\frac{h\,q}{8\pi \,m^{2}\,c^{2}}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$ | $-\frac{h\,q}{8\pi \,m^{2}\,c^{2}}\,i(\vec E\times\vec\pi)$ | $\mathbb{B}_{\Psi}$ |
@@ -524,7 +524,7 @@ No other right multiplication and no other differential operator occurs in the r
 |+-|+-|+-|+-|
 | $\vec\pi^2 c/(2\,m\,c)$ | $1/m$ | $(\mathrm{kg\,m\,s^{-1}})^2$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 | $qΞ$ | $\mathrm C$ | $\mathrm{kg\,m^2\,s^{-3}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
-| $-\frac{h\,q}{4\pi \,m}\boldsymbol\sigma\cdot\vec B$ | $\mathrm C\,\mathrm{kg\,m^2\,s^{-1}\,kg^{-1}}$ | $\mathrm{kg\,s^{-2}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
+| $-\frac{q\,c}{4\pi\nu_m}\boldsymbol\sigma\cdot\vec B$ | $\mathrm C\,\mathrm{kg\,m^2\,s^{-1}\,kg^{-1}}$ | $\mathrm{kg\,s^{-2}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 | $-\frac{q}{8\,4\pi^{2}\nu_m^{2}}\vec\nabla_\Phi\cdot\vec E$ | $\mathrm C\,\mathrm{kg^2m^4s^{-2}}\,\mathrm{kg^{-2}m^{-2}s^{2}}$ | $\mathrm{kg\,s^{-3}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 | $-\frac{h\,q}{8\pi \,m^{2}\,c^{2}}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$ | $\mathrm C\,\mathrm{kg\,m^2s^{-1}}\,\mathrm{kg^{-2}m^{-2}s^{2}}$ | $\mathrm{kg^2m^2s^{-4}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 | $-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$ | $\mathrm{kg^{-3}m^{-2}s^{2}}$ | $\mathrm{kg^4m^4s^{-4}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |

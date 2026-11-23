@@ -301,7 +301,7 @@ and its two equations are the transport equation and the amplitude equation of t
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection; $a'_t,\vec A$ real |
 | $ϙ$ | The coupling |
 | $\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t$, $\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A$ | The mechanical four-momentum |
-| $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi \varrho/\varrho$ | The quantum potential; unchanged |
+| $Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\Box_\Phi \varrho/\varrho$ | The quantum potential; unchanged |
 | $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A)$ | The mechanical current; $\vec\nabla_\Phi\times=\rho_{\mathrm{chg}}\vec B$ |
 | $h n+ϙ\Phi_B$ | The mechanical circulation |
 | $\nu_m=\frac{mc}{h}$ | The mass wave number |

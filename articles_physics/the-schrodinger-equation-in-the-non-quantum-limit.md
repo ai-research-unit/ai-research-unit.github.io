@@ -158,7 +158,7 @@ The parent's word has $\varrho>0$ by construction, as the square root of the qua
 **The discarded term is the quantum potential.**
 
 $$
-Q=-\frac{h^{2}}{8\pi^{2}m}\frac{\Delta_\Phi \varrho}{\varrho},
+Q=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Delta_\Phi \varrho}{\varrho},
 $$
 
 the parent's own expression, and it is the third term of the real line and the only term the limit deletes.
@@ -211,7 +211,7 @@ What the polar chart does not add, and the list is short. It does not supply a u
 
 ## Verification
 
-The parent's pair was checked against the equation. With $\tilde\Xi=\varrho\exp(\frac{2\pi iS}{h})$, a real $\varrho>0$, a real $S$ and a real potential $V$, the residual of $i \frac{h}{2\pi}\partial_{t'}\tilde\Xi+\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi\tilde\Xi-V\tilde\Xi$ after division by the exponential is $-\varrho$ times the parent's real line and $\frac{h}{4\pi m\varrho}$ times its imaginary line, identically. Evaluated in thirty-digit arithmetic at three points of a random smooth field, the largest residual was $4\times10^{-17}$.
+The parent's pair was checked against the equation. With $\tilde\Xi=\varrho\exp(\frac{2\pi iS}{h})$, a real $\varrho>0$, a real $S$ and a real potential $V$, the residual of $i \frac{h}{2\pi}\partial_{t'}\tilde\Xi+\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi\tilde\Xi-V\tilde\Xi$ after division by the exponential is $-\varrho$ times the parent's real line and $\frac{h}{4\pi m\varrho}$ times its imaginary line, identically. Evaluated in thirty-digit arithmetic at three points of a random smooth field, the largest residual was $4\times10^{-17}$.
 
 The orders were checked by substitution. Each of the three terms of the real line was replaced by its stated power of $\epsilon$ and the collection reproduced the three orders, with no term of intermediate order appearing: the real line has exactly three orders and the imaginary line has none.
 

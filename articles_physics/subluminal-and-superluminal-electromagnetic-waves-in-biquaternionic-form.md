@@ -37,7 +37,7 @@ $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},\qquad  (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
 $$
 
-two first-order equations in two chiral halves, and the spinorial part below is read in that form. Here $\frac{h}{2\pi mc}$ is the mass length.
+two first-order equations in two chiral halves, and the spinorial part below is read in that form. Here $\frac{1}{2\pi\nu_m}$ is the mass length.
 
 **The source's letter.** The source writes its calculus with one letter for a first-order operator of its own, one generator per coordinate. That operator is not one of the corpus's conventions, and this article neither uses it nor displays it. The free-field content of the source is carried here by $\tilde\nabla_\Phi$; the massive content by the chiral pair. Where the source's own equation is translated, the translation is stated once, and no basis operator appears.
 

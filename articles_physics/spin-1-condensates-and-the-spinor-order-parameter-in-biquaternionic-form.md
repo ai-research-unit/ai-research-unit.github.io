@@ -51,7 +51,7 @@ that is, under $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$; t
 For a dilute gas in a uniform field the mean-field energy density of the condensate is, in the standard treatment,
 
 $$
-\boxed{\;\mathcal{E}=\frac{h^{2}}{8\pi^{2}\,m}\lvert\vec\nabla_\Phi\tilde{Ξ}\rvert^2+Vn+\frac{c_0}{2}n^2+\frac{c_2}{2}n^2\,\lvert\langle\vec F\rangle\rvert^2
+\boxed{\;\mathcal{E}=\frac{hc}{8\pi^{2}\nu_m}\lvert\vec\nabla_\Phi\tilde{Ξ}\rvert^2+Vn+\frac{c_0}{2}n^2+\frac{c_2}{2}n^2\,\lvert\langle\vec F\rangle\rvert^2
 +p\,\langle  F_z\rangle+q\,\langle  F_z^2\rangle\;},
 $$
 

@@ -231,7 +231,7 @@ $$
 \qquad
 \rho =\frac{i}{4\pi\nu_m}\left(\tilde\Xi^{*}\partial/\partial r'_t\tilde\Xi - \tilde\Xi\,\partial/\partial r'_t\tilde\Xi^{*}\right),
 \qquad
-\vec j = -\frac{i\,h}{4\pi \,m}\left(\tilde\Xi^{*}\vec\nabla_\Phi\tilde\Xi - \tilde\Xi\,\vec\nabla_\Phi\tilde\Xi^{*}\right).
+\vec j = -\frac{i\,c}{4\pi\nu_m}\left(\tilde\Xi^{*}\vec\nabla_\Phi\tilde\Xi - \tilde\Xi\,\vec\nabla_\Phi\tilde\Xi^{*}\right).
 $$
 
 The current lies in the material sector, its imaginary scalar component being $ic\rho$ and its vector component $\vec j$, exactly as the four-current of relativistic mechanics does. Conservation takes the framework form
@@ -293,7 +293,7 @@ The field has a lowest frequency, and it is the rest frequency. Write $\nu_m = \
 $$
 f = \exp\left(-i\theta_{\mathrm{rst}}\right) = \exp\left(-i\theta_{\mathrm{pwt}}\right),
 \qquad
-\omega_m = \frac{2\pi mc^{2}}{h} = 2\pi c\,\nu_m .
+\omega_m = 2\pi\,c\,\nu_m = 2\pi c\,\nu_m .
 $$
 
 At $\vec\nu_\Phi = 0$ the dispersion relation $\nu_t^{\prime\,2} = \nu_{\Phi}^{2}+\nu_m^{2}$ gives $\nu_t^{\prime} = \pm \nu_m$, and $\lvert \nu_t^{\prime}\rvert\ge \nu_m$ on every branch. So $f$ is the zero-momentum solution and the bottom of the frequency spectrum: no solution oscillates more slowly, and every positive-frequency solution carries this factor.
@@ -373,7 +373,7 @@ The two sides were compared on the case of §*Plane Waves and the Dispersion Rel
 
 **Why the order is one.** The relation is first order in $r'_t$ because its symbol is the truncated $\Omega$ and $\Omega$ is linear in the excess. The Klein–Gordon equation is second order because its symbol is $\nu_t^{\prime\,2}$, which the split writes as $(\nu_m+\Omega)^{2}$ and which contains $\Omega^{2}$. Dropping the $\Omega^{2}$ term of the dispersion relation and lowering the order of the equation are one operation: the order of the equation is the degree of its symbol in the excess.
 
-**In the material time.** The same equation reads $i\,\frac{h}{2\pi}\,c\,\frac{\partial\chi}{\partial r'_t} = \tilde H_\Psi\,\chi$, with $\tilde H_\Psi = -\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi\in\mathbb{B}_{\Psi}$. The observable is informational and the central $i$ that carries it into the material sector sits in the coefficient. That is the parent article's structure, reached here from the Klein–Gordon spectrum rather than assumed.
+**In the material time.** The same equation reads $i\,\frac{h}{2\pi}\,c\,\frac{\partial\chi}{\partial r'_t} = \tilde H_\Psi\,\chi$, with $\tilde H_\Psi = -\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi\in\mathbb{B}_{\Psi}$. The observable is informational and the central $i$ that carries it into the material sector sits in the coefficient. That is the parent article's structure, reached here from the Klein–Gordon spectrum rather than assumed.
 
 **What is left out.** The negative branch has $\Omega\approx-2\nu_m$, so no ratio in it is small and the expansion does not apply; that branch is reached by factoring $\exp(+i\theta_{\mathrm{rst}})$ instead, and antiparticles are not treated here. And the field is a scalar, so the limit lands on the scalar Schrödinger equation, the spin-$0$ case of the parent article's spinor equation, whose module and flows are untouched. The scalar sector is consistent with the parent, not identical to it.
 
@@ -382,7 +382,7 @@ The two sides were compared on the case of §*Plane Waves and the Dispersion Rel
 $$
 \boxed{\;
 i \frac{h}{2\pi}\,\frac{\partial\chi}{\partial t'}
-= -\frac{h^{2}}{8\pi^{2}m}\,\Delta_\Phi\chi\;}
+= -\frac{hc}{8\pi^{2}\nu_m}\,\Delta_\Phi\chi\;}
 $$
 
 ## What the Form Adds and What It Relabels
@@ -435,7 +435,7 @@ with the value in the centre, $\tilde\Xi=\xi\,e_t$. Because $\Box_\Phi$ is centr
 
 Being second order in time, the equation has two frequency branches and requires both $\tilde\Xi$ and $\tilde\Xi^{*}$. Its dispersion relation is $\omega^2 = 4\pi^{2}c^{2}\left(\nu_{\Phi}^{2} + \nu_m^{2}\right)$, that is $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$, which is the mass-shell condition $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}/\frac{h^{2}}{4\pi^{2}}= -m^{2}c^{2}/\frac{h^{2}}{4\pi^{2}}$ read on the wave number, and the phase of a plane wave is the scalar part $\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\nu_t^{\prime} r'_t$. Both branches solve the one equation, and neither can be removed by choosing $\vec\nu_\Phi$ or $m$. The conserved current $\tilde{J}_{\Phi} = ic\rho e_t + \vec j$ lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})=0$, but its scalar component $\rho$ has the sign of the frequency and is not positive definite; together with the absence of a one-particle interpretation, this is the two-fold defect the equation has always had, and the biquaternion notation neither removes nor disguises it.
 
-The central structural question has a negative answer. The second-order structure does **not** fit the $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$ split naturally. Since $\Box_\Phi$ is central, the split decouples the equation into two sectors hosting two copies of the same real solution space, exchanged by multiplication by $i$; the $\mathbb{B}_{\Phi}$ part of a solution is the $i$-image of an $\mathbb{B}_{\Psi}$ solution, so the pairing is the real/imaginary-part split of a complex field, not a conjugate pair. The conjugate pair is complex conjugation, which preserves both sectors, and the doubling the equation actually needs is the spinor-module doubling of the first-order square root $\tilde\nabla_\Phi$, whose mass term is the linear coupling of the two chiralities. That doubling is representation-theoretic, not the real fixed-point decomposition. The non-relativistic limit is the general one of *The Three Wavenumbers of a Particle*, applied to this field, and it needs one preliminary step: the rest-mass phase $f = \exp(-i\theta_{\mathrm{rst}})$, which is itself the zero-momentum solution, is divided out, and the mass term then cancels exactly. The limit is then the leading term of an expansion of $\nu_t' = \sqrt{\nu_{\Phi}^{2}+\nu_m^{2}} = \nu_m+\Omega$, with $\Omega = \nu_{\Phi}^{2}/2\nu_m$, so that $\frac{h}{2\pi} c\,\Omega = p^{2}/2m$; the term dropped is $p^{4}/(8m^{3}c^{2})$, and the ratio of dropped to kept is $\nu_{\Phi}^{2}/(4\nu_m^{2}) = v^{2}/4c^{2}$. What remains is the parent article's free Schrödinger equation, $i \frac{h}{2\pi}\,\frac{\partial\chi}{\partial t'} = -\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi\chi$, with the same central scalar imaginary $i$; the two articles use one complex structure and no competing unit, and no second-order remnant is left behind.
+The central structural question has a negative answer. The second-order structure does **not** fit the $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$ split naturally. Since $\Box_\Phi$ is central, the split decouples the equation into two sectors hosting two copies of the same real solution space, exchanged by multiplication by $i$; the $\mathbb{B}_{\Phi}$ part of a solution is the $i$-image of an $\mathbb{B}_{\Psi}$ solution, so the pairing is the real/imaginary-part split of a complex field, not a conjugate pair. The conjugate pair is complex conjugation, which preserves both sectors, and the doubling the equation actually needs is the spinor-module doubling of the first-order square root $\tilde\nabla_\Phi$, whose mass term is the linear coupling of the two chiralities. That doubling is representation-theoretic, not the real fixed-point decomposition. The non-relativistic limit is the general one of *The Three Wavenumbers of a Particle*, applied to this field, and it needs one preliminary step: the rest-mass phase $f = \exp(-i\theta_{\mathrm{rst}})$, which is itself the zero-momentum solution, is divided out, and the mass term then cancels exactly. The limit is then the leading term of an expansion of $\nu_t' = \sqrt{\nu_{\Phi}^{2}+\nu_m^{2}} = \nu_m+\Omega$, with $\Omega = \nu_{\Phi}^{2}/2\nu_m$, so that $\frac{h}{2\pi} c\,\Omega = p^{2}/2m$; the term dropped is $p^{4}/(8m^{3}c^{2})$, and the ratio of dropped to kept is $\nu_{\Phi}^{2}/(4\nu_m^{2}) = v^{2}/4c^{2}$. What remains is the parent article's free Schrödinger equation, $i \frac{h}{2\pi}\,\frac{\partial\chi}{\partial t'} = -\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi\chi$, with the same central scalar imaginary $i$; the two articles use one complex structure and no competing unit, and no second-order remnant is left behind.
 
 One exception to the obstruction is imported from the literature and kept separate from the framework's own operator. For a *vector* structural coefficient $\vec F$ the second-order operator $\Box_A + (\vec F,\vec F) + 2i(\vec F,\vec\nabla_\Phi)$ does factor into two first-order operators, and its fundamental solution is a weighted $\delta$-layer on the light cone rather than a Bessel-type kernel. The factorisation is paid for by the directional term: the mass $(\vec F,\vec F)$ and $2i(\vec F,\vec\nabla_\Phi)$ arrive together and cannot be separated, so the result is not a square root of the framework's massive scalar operator. It is a structural fact about the compensated operator, recorded here because it is the sharpest known contrast with the scalar obstruction.
 
@@ -462,7 +462,7 @@ One exception to the obstruction is imported from the literature and kept separa
 | $\tilde{J}_{\Phi} = ic\rho\,e_t + \vec j$ | Conserved four-current |
 | $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$ | Conservation law |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the scalar pairing |
-| $1/(2\pi\nu_m)$ | The mass length, $\frac{h}{2\pi mc}$; the coefficient $\nu_m=\frac{m\,c}{h}$ is its reciprocal |
+| $1/(2\pi\nu_m)$ | The mass length, $\frac{1}{2\pi\nu_m}$; the coefficient $\nu_m=\frac{m\,c}{h}$ is its reciprocal |
 | $f = \exp(-i\theta_{\mathrm{rst}})$, $r'_t = c\,t'$ | Rest-mass phase; the zero-momentum solution, $\Box_\Phi f = 4\pi^{2}\nu_m^{2}f$, $\lvert f\rvert=1$, $f^{*}=f^{-1}$ |
 | $\omega_m = \frac{2\pi mc^{2}}{h}= 2\pi c\,\nu_m$ | Rest-energy frequency of the field |
 | $\chi = e^{i\theta_{\mathrm{rst}}}\tilde\Xi$, $r'_t=c\,t'$ | Field with the rest-mass phase divided out; the envelope |

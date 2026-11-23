@@ -14,10 +14,10 @@ Four results are established.
 $$
 S=\int\left[-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi\,\partial/\partial R_{\imath}\,\xi-\tfrac12(2\pi\nu_m)^{2}\xi^2+g\rho\,\xi\right]d^4r
 $$
-has the Euler–Lagrange equation $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, where $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=0$, with dispersion $\omega^2=c^2\,4\pi^{2}\nu_{\Phi}^{2}+c^2(2\pi\nu_m)^{2}$ and range $\frac{h}{2\pi mc}$. Here $\frac{h}{2\pi mc}$ is the mass length.
-- **The static central solution.** A point source of strength $Ϙ$ gives the Yukawa field $\tilde{Ξ}=gQ\,\exp(-r/\frac{h}{2\pi mc})/(4\pi r)\,e_t$, whose massless limit is the $1/r$ potential $gQ/(4\pi r)$.
+has the Euler–Lagrange equation $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, where $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=0$, with dispersion $\omega^2=c^2\,4\pi^{2}\nu_{\Phi}^{2}+c^2(2\pi\nu_m)^{2}$ and range $\frac{1}{2\pi\nu_m}$. Here $\frac{1}{2\pi\nu_m}$ is the mass length.
+- **The static central solution.** A point source of strength $Ϙ$ gives the Yukawa field $\tilde{Ξ}=gQ\,\exp(-r/\frac{1}{2\pi\nu_m})/(4\pi r)\,e_t$, whose massless limit is the $1/r$ potential $gQ/(4\pi r)$.
 - **The field energy.** The static field's energy is positive and diverges at a point source, $E_{\text{field}}=2\pi A^2/a$ outside a sphere of radius $a$ in the massless case, with $A=gQ/(4\pi)$; the divergence is the classical self-energy of the point-source idealization.
-- **The reduction to the central-force problem.** A test source of coupling $g_{\mathrm t}$ has interaction energy $E(r)=-\kappa \exp(-r/\frac{h}{2\pi mc})/r$ with $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)>0$, a central potential of the type solved in the sibling article; in the massless limit $E=-\kappa/r$ and the orbit is exactly the precessing conic of that article.
+- **The reduction to the central-force problem.** A test source of coupling $g_{\mathrm t}$ has interaction energy $E(r)=-\kappa \exp(-r/\frac{1}{2\pi\nu_m})/r$ with $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)>0$, a central potential of the type solved in the sibling article; in the massless limit $E=-\kappa/r$ and the orbit is exactly the precessing conic of that article.
 
 The article closes by identifying why a central scalar field carries no intrinsic magnetism, and by separating what the algebra supplies from what it imports.
 
@@ -118,7 +118,7 @@ $$
 \omega^2=c^2\,4\pi^{2}\nu_{\Phi}^{2}+c^2(2\pi\nu_m)^{2}=c^2\,4\pi^{2}\nu_{\Phi}^{2}+c^2(2\pi\nu_m)^{2} .
 $$
 
-The wave speed is frequency-dependent and exceeds $c$ for every finite $\frac{h}{2\pi mc}$, $\omega/\nu_{\Phi}=c\sqrt{1+(\nu_m)^{2}/\nu_{\Phi}^{2}}>c$: the field is dispersive, and the phase velocity is not the signal velocity. The front velocity is $c$, since the second-order hyperbolic equation has the same characteristic cone as the wave equation; the cone is the framework's zero-divisor cone, the subject of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*. The classical statement is that a disturbance cannot be signalled faster than $c$, whatever the phase velocity.
+The wave speed is frequency-dependent and exceeds $c$ for every finite $\frac{1}{2\pi\nu_m}$, $\omega/\nu_{\Phi}=c\sqrt{1+(\nu_m)^{2}/\nu_{\Phi}^{2}}>c$: the field is dispersive, and the phase velocity is not the signal velocity. The front velocity is $c$, since the second-order hyperbolic equation has the same characteristic cone as the wave equation; the cone is the framework's zero-divisor cone, the subject of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*. The classical statement is that a disturbance cannot be signalled faster than $c$, whatever the phase velocity.
 
 ### The Range of the Field
 
@@ -132,10 +132,10 @@ The operator $\Delta_\Phi-(\nu_m)^{2}$ is the inverse of a screened Poisson oper
 
 $$
 G_{\imath}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{\exp(-r/h/(mc))}{8\pi \pi r}, \qquad
-\left(\Delta_\Phi-(\frac{2\pi mc}{h})^{2}\right)G_{\imath}=-\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
+\left(\Delta_\Phi-(2\pi\nu_m)^{2}\right)G_{\imath}=-\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
 $$
 
-with $r=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$. The scale $\frac{h}{2\pi mc}$ is the **range** of the field: beyond a few $\frac{h}{2\pi mc}$ the field is exponentially suppressed, while in the massless case $\frac{2\pi mc}{h}=0$ the decay is only $1/r$ and the range is infinite. This is the classical reason a massive scalar exchange produces a short-range force and a massless one a long-range force, and it is why the inverse-square law is singled out by the massless central scalar.
+with $r=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$. The scale $\frac{1}{2\pi\nu_m}$ is the **range** of the field: beyond a few $\frac{1}{2\pi\nu_m}$ the field is exponentially suppressed, while in the massless case $2\pi\nu_m=0$ the decay is only $1/r$ and the range is infinite. This is the classical reason a massive scalar exchange produces a short-range force and a massless one a long-range force, and it is why the inverse-square law is singled out by the massless central scalar.
 
 ## The Static Central Solution
 
@@ -239,8 +239,8 @@ a real vector parallel to the position, pointing inward because $\frac{d\xi}{dr}
 
 The reduction is exact, and it hands the problem to the two sibling articles.
 
-- **Massless central scalar.** For $\frac{2\pi mc}{h}=0$ the potential is $E=-\kappa/r$ and the relativistic orbit is exactly the precessing conic of the companion article *The Relativistic Central Force Problem in Biquaternionic Form*: $r=p/[1+e\cos\omega(\theta-\theta_0)]$ with $\omega^2=1-\kappa^2/(c^2L^2)$, bound orbits requiring $L>\kappa/c$. The non-relativistic limit is the Kepler and Coulomb orbit of the companion articles *Central Forces and the Classical Kepler Problem in Biquaternionic Form* and *The Classical Coulomb Problem and Its Hidden SO(4) Symmetry in Biquaternionic Form*.
-- **Massive central scalar.** For $\nu_m>0$ the potential is the Yukawa potential $E=-\kappa \exp(-r/\frac{h}{2\pi mc})/r$ and the force is $F=-\kappa \exp(-r/\frac{h}{2\pi mc})(r/\frac{h}{2\pi mc}+1)/r^2$. The relativistic Binet equation of the sibling article applies with this force, but the equation is nonlinear and the orbit is not a conic; the precessing-conic solution is special to the massless case. The field-theoretic statement is that a massive scalar exchange produces a short-range central force whose orbits are not closed, and the massless exchange produces the inverse-square force whose relativistic orbits are the exact precessing conics.
+- **Massless central scalar.** For $2\pi\nu_m=0$ the potential is $E=-\kappa/r$ and the relativistic orbit is exactly the precessing conic of the companion article *The Relativistic Central Force Problem in Biquaternionic Form*: $r=p/[1+e\cos\omega(\theta-\theta_0)]$ with $\omega^2=1-\kappa^2/(c^2L^2)$, bound orbits requiring $L>\kappa/c$. The non-relativistic limit is the Kepler and Coulomb orbit of the companion articles *Central Forces and the Classical Kepler Problem in Biquaternionic Form* and *The Classical Coulomb Problem and Its Hidden SO(4) Symmetry in Biquaternionic Form*.
+- **Massive central scalar.** For $\nu_m>0$ the potential is the Yukawa potential $E=-\kappa \exp(-r/\frac{1}{2\pi\nu_m})/r$ and the force is $F=-\kappa \exp(-r/\frac{1}{2\pi\nu_m})(r/\frac{1}{2\pi\nu_m}+1)/r^2$. The relativistic Binet equation of the sibling article applies with this force, but the equation is nonlinear and the orbit is not a conic; the precessing-conic solution is special to the massless case. The field-theoretic statement is that a massive scalar exchange produces a short-range central force whose orbits are not closed, and the massless exchange produces the inverse-square force whose relativistic orbits are the exact precessing conics.
 
 The reduction also identifies the coupling's meaning: $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)$ is a product of the field coupling, the test coupling and the source strength. The framework does not fix these numbers, exactly as the central-force article does not fix $\kappa$; what the framework fixes is the **form** of the force once the field is the central scalar.
 
@@ -304,7 +304,7 @@ The three statements are the field-theoretic form of the spin-zero condition: a 
 
 ### What the Algebra Does Not Contain
 
-**The numbers.** The couplings $g$, $g_{\mathrm t}$, the source strength $Ϙ$ and the mass length $\frac{h}{2\pi mc}$ are not fixed by the algebra. It fixes the form of the potential once they are given, and the inverse-square law follows from the massless case, but it does not select the massless case.
+**The numbers.** The couplings $g$, $g_{\mathrm t}$, the source strength $Ϙ$ and the mass length $\frac{1}{2\pi\nu_m}$ are not fixed by the algebra. It fixes the form of the potential once they are given, and the inverse-square law follows from the massless case, but it does not select the massless case.
 
 **The source's dynamics.** The source density is prescribed. A dynamical source, with its own equation of motion and its back-reaction on the field, is a coupled system that the present article does not treat; the framework's field–matter coupling is developed in the articles on the Lorentz force and on the external-field problem, and for the scalar field it is simpler and remains to be written out.
 
@@ -312,7 +312,7 @@ The three statements are the field-theoretic form of the spin-zero condition: a 
 
 ## Open Questions
 
-1. **The value of the couplings and the mass.** The framework fixes the form of the central potential and leaves $g$, $g_{\mathrm t}$, $Ϙ$ and $\frac{h}{2\pi mc}$ free. Is there any algebraic constraint on their ratios, in the way that the barrier condition $L>\kappa/c$ constrains the angular momentum? Not known.
+1. **The value of the couplings and the mass.** The framework fixes the form of the central potential and leaves $g$, $g_{\mathrm t}$, $Ϙ$ and $\frac{1}{2\pi\nu_m}$ free. Is there any algebraic constraint on their ratios, in the way that the barrier condition $L>\kappa/c$ constrains the angular momentum? Not known.
 
 2. **Self-interaction in the centre.** Because the centre is closed under multiplication, a potential $V(\tilde{Ξ})$ polynomial in a central field is well defined and stays in the centre. Whether the framework's scalar sector should be linear or self-interacting — and how a self-interacting central scalar relates to the Higgs sector treated elsewhere in the corpus — is open.
 
@@ -324,7 +324,7 @@ The three statements are the field-theoretic form of the spin-zero condition: a 
 
 6. **Coupling to the informational sector.** The field occupies the centre and therefore one scalar direction of each sector. Whether the scalar direction of $\mathbb{B}_{\Psi}$ couples to the informational structures of the framework, and how a scalar source would appear to an informational observer, is the central open question shared with the foundational article *The Informational Sector: States, Observables and Probability*.
 
-7. **Curved spacetime and the range.** The Yukawa range $\frac{h}{2\pi mc}$ and the $1/r$ tail are computed on flat spacetime. Whether the framework's local complex structure modifies the range in a medium, as it modifies the speed of light, is not addressed.
+7. **Curved spacetime and the range.** The Yukawa range $\frac{1}{2\pi\nu_m}$ and the $1/r$ tail are computed on flat spacetime. Whether the framework's local complex structure modifies the range in a medium, as it modifies the speed of light, is not addressed.
 
 ## Summary
 
@@ -337,11 +337,11 @@ $$
 a single complex scalar component. Because it is central it commutes with the biquaternionic gradient and with every rotation, so it is a Lorentz scalar and a rotational scalar, and its classical action
 
 $$
-S=\int\left[-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi\,\partial/\partial R_{\imath}\,\xi-\tfrac12(\frac{2\pi mc}{h})^{2}\xi^2+g\rho\,\xi\right]d^4r,
-\qquad \frac{h}{2\pi mc},
+S=\int\left[-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi\,\partial/\partial R_{\imath}\,\xi-\tfrac12(2\pi\nu_m)^{2}\xi^2+g\rho\,\xi\right]d^4r,
+\qquad \frac{1}{2\pi\nu_m},
 $$
 
-has the field equation $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, with $\Box_\Phi$ central and scalar. The free field is dispersive with $\omega^2=c^2\,4\pi^{2}\nu_{\Phi}^{2}+c^2(2\pi\nu_m)^{2}$ and has range $\frac{h}{2\pi mc}$.
+has the field equation $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, with $\Box_\Phi$ central and scalar. The free field is dispersive with $\omega^2=c^2\,4\pi^{2}\nu_{\Phi}^{2}+c^2(2\pi\nu_m)^{2}$ and has range $\frac{1}{2\pi\nu_m}$.
 
 A static point source of strength $Ϙ$ produces the Yukawa field
 
@@ -374,17 +374,17 @@ The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\
 | $\tilde{Ξ}=\xi e_t$ | Central scalar field; $\xi$ a complex scalar function |
 | $\xi_1,\xi_2$ | Real and imaginary parts of $\xi$ |
 | $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Gradient, conjugate gradient, d'Alembertian (central, scalar) |
-| $\frac{h}{2\pi mc}$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $\nu_m$ is the inverse range, and classically only $\frac{h}{2\pi mc}$ matters |
+| $\frac{1}{2\pi\nu_m}$ | The mass length, $\frac{1}{2\pi\nu_m}$; its reciprocal $\nu_m$ is the inverse range, and classically only $\frac{1}{2\pi\nu_m}$ matters |
 | $\mathcal{L}=-\tfrac12\sum_{\imath}\partial/\partial R_{\imath}\,\xi\,\partial/\partial R_{\imath}\,\xi-\tfrac12(2\pi\nu_m)^{2}\xi^2+g\rho\xi$ | Real scalar Lagrangian |
 | $(\Box_\Phi-(2\pi\nu_m)^{2})\tilde{Ξ}=-g\rho e_t$ | Field equation with source |
 | $\omega^2=c^2\,4\pi^{2}\nu_{\Phi}^{2}+c^2(2\pi\nu_m)^{2}$ | Dispersion relation of the free field |
-| $G_{\frac{h}{2\pi mc}}=\exp(-r/\frac{h}{2\pi mc})/(4\pi r)$ | Screened Green's function; $(\Delta_\Phi-(2\pi\nu_m)^{2})G_{\imath}=-\delta^{(3)}$ |
+| $G_{\frac{1}{2\pi\nu_m}}=\exp(-r/\frac{1}{2\pi\nu_m})/(4\pi r)$ | Screened Green's function; $(\Delta_\Phi-(2\pi\nu_m)^{2})G_{\imath}=-\delta^{(3)}$ |
 | $Ϙ,\rho,g,g_{\mathrm t}$ | Source strength, source density, field coupling, test coupling |
-| $\tilde{Ξ}=gQ\exp(-r/\frac{h}{2\pi mc})/(4\pi r)\,e_t$ | Yukawa field of a point source; $gQ/(4\pi r)\,e_t$ for $\frac{2\pi mc}{h}=0$ |
+| $\tilde{Ξ}=gQ\exp(-r/\frac{1}{2\pi\nu_m})/(4\pi r)\,e_t$ | Yukawa field of a point source; $gQ/(4\pi r)\,e_t$ for $2\pi\nu_m=0$ |
 | $\vec\beta$, $R$, $r'_{\mathrm{ret},t}$ | Source velocity over $c$, retarded distance, retarded time |
 | $T_{tt}=\tfrac12\left(\partial\xi/\partial r'_t\right)^{2}/c^2+\tfrac12(\vec\nabla_\Phi\xi)^2+\tfrac12(2\pi\nu_m)^{2}\xi^2$ | Energy density, positive |
 | $A=gQ/(4\pi)$; $E_{\text{field}}=2\pi A^2/a$ | Field amplitude; massless field energy outside radius $a$ |
-| $E(r)=-\kappa \exp(-r/\frac{h}{2\pi mc})/r$, $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)$ | Central interaction energy; $\kappa>0$ attractive |
+| $E(r)=-\kappa \exp(-r/\frac{1}{2\pi\nu_m})/r$, $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)$ | Central interaction energy; $\kappa>0$ attractive |
 | $\vec F=-\vec\nabla_\Phi E=g_{\mathrm h_t}\,\vec\nabla_\Phi\xi=g_{\mathrm h_t}\,(d\xi/dr)\,\vec u_r$ | Central force on the test source (inward) |
 | $\tilde J_{\Phi}=\tfrac{i}{2}(\xi^*\tilde\nabla_\Phi\xi-\xi\tilde\nabla_\Phi\xi^*)$ | Conserved current of the central phase; $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}=0$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

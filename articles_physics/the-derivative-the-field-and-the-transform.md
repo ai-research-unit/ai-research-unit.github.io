@@ -157,7 +157,7 @@ two first-order equations in two components, each coupling one chiral half to th
 
 **The reading.** The root is the propagation. A second-order wave equation says that a disturbance propagates at a speed fixed by the symbol; a first-order root says the same thing as a transport, with the two chiralities transported independently and the shift coupling them. The two halves are the two minimal left ideals $S_{\pm}$, and the coupling constant is the shift, so the algebra states in one place why a massless field has two decoupled chiral halves and a massive one has two coupled halves. The corpus's Dirac equation has exactly this structure, and its mass term is the one place where the field is multiplied on the right rather than on the left: the derivative acts on one side, the mass on the other, and the algebra's two-sidedness is what makes a mass term possible at all.
 
-**What the reading does not say.** It does not identify $c$ with a mass, and it does not supply the constant that relates the shift to an energy. The root's parameter is a parameter of an operator; the identification with $\frac{2\pi mc}{h}$ is an input of the corpus and is recorded as imported, not derived.
+**What the reading does not say.** It does not identify $c$ with a mass, and it does not supply the constant that relates the shift to an energy. The root's parameter is a parameter of an operator; the identification with $2\pi\nu_m$ is an input of the corpus and is recorded as imported, not derived.
 
 ## The Regular Field
 

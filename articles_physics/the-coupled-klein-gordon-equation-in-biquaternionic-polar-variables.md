@@ -164,10 +164,10 @@ with $\rho_{\mathrm{num}}=\varrho^{2}$ and $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{
 $$
 \frac{\bigl(E+ϙ c\,a'_t\bigr)^{2}}{c^{2}}-\bigl\lvert\vec p-q\vec A\bigr\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}},
 \qquad
-Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho},
+Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi \varrho}{\varrho},
 $$
 
-so the sum $E+ϙca'_t$ is the mechanical energy and $\vec p-q\vec A$ the mechanical momentum, and the mass shell is shifted by the quantum potential exactly as in the free article. The quantum potential is unchanged because it is $-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi \varrho/\varrho$ and $\varrho$ is not touched by the coupling; in the logarithmic form of the free article it is a functional of $\rho_{\mathrm{num}}$ alone, and the density is the density.
+so the sum $E+ϙca'_t$ is the mechanical energy and $\vec p-q\vec A$ the mechanical momentum, and the mass shell is shifted by the quantum potential exactly as in the free article. The quantum potential is unchanged because it is $-\frac{hc}{8\pi^{2}\nu_m}\Box_\Phi \varrho/\varrho$ and $\varrho$ is not touched by the coupling; in the logarithmic form of the free article it is a functional of $\rho_{\mathrm{num}}$ alone, and the density is the density.
 
 **The second equation is the continuity of the mechanical current.** Dividing by $m$ and reading the two factors as the density and the current, it is
 
@@ -291,7 +291,7 @@ The quantum potential and the density are unchanged; the momentum is not, the cu
 | $\frac{h}{2\pi} cP_t=E+ϙca'_t$, $\frac{h}{2\pi}\vec P=\vec p-q\vec A$ | The mechanical four-momentum |
 | $\kappa^{\mathrm{kin}}_{\imath}=\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_{\imath}$ | The covariant bracket's coefficient; $\kappa^{\mathrm{kin}}_t=-iP_t$ |
 | $E=-\frac{h}{2\pi} c\,\partial_{r'_t}\theta_{\mathrm{pha}}$, $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ | The free four-momentum |
-| $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho}$ | The quantum potential; unchanged by the coupling |
+| $Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi \varrho}{\varrho}$ | The quantum potential; unchanged by the coupling |
 | $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\vec p-q\vec A)$ | The mechanical current |
 | $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Lambda}{h}$ | The gauge phase translation |
 | $\tilde F$ | The field strength; one type in the algebra, four brackets in the chart |
