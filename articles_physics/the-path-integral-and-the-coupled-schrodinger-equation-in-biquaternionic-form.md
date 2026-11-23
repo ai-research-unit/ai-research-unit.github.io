@@ -21,7 +21,7 @@ Conventions. The algebra, the sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$
 $$
 D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}},
 \qquad
-D_\imath=\partial_\imath+\frac{2\pi iϙ}{h}A_\imath,
+D_{\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath},
 \qquad
 \vec\pi=-i \frac{h}{2\pi}\vec\nabla_\Phi-q\vec A,
 $$
@@ -33,7 +33,7 @@ with the mechanical momentum $\vec\pi$ and the potential energy $-ϙ\omicron_{\m
 The action is the coupled variational companion's. In the operator setting,
 
 $$
-S=\int dt'\,d^{3}x\;\mathrm{Sc}\Bigl[\frac{i h}{4\pi}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}}\bigl(D_\imath\tilde\Xi\bigr)^{*}\bigl(D_\imath\tilde\Xi\bigr)+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi\Bigr],
+S=\int dt'\,d^{3}x\;\mathrm{Sc}\Bigl[\frac{i h}{4\pi}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}}\bigl(D_{\imath}\tilde\Xi\bigr)^{*}\bigl(D_{\imath}\tilde\Xi\bigr)+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi\Bigr],
 $$
 
 and the integral is $\int\mathcal{D}\tilde\Xi\,\mathcal{D}\tilde\Xi^{*}\exp(\frac{2\pi iS}{h})$ with the free measure. The kinetic term is the free one and that is the metric's doing: the temporal connection is absorbed in $D_t$ and the kinetic term uses $\partial_{t'}$, so the antisymmetrisation that makes it Hermitian is untouched by the coupling.
@@ -41,7 +41,7 @@ and the integral is $\int\mathcal{D}\tilde\Xi\,\mathcal{D}\tilde\Xi^{*}\exp(\fra
 **The gradient term is a sum of moduli and stays a sum of moduli.** For each $\digamma_{\mathrm{tst}}$,
 
 $$
-\mathrm{Sc}\bigl((D_\imath\tilde\Xi)^{*}(D_\imath\tilde\Xi)\bigr)=\sum_{\imath=0}^{3}\bigl|(D_\imath\tilde\Xi)_{\imath}\bigr|^{2}\ \ge 0,
+\mathrm{Sc}\bigl((D_{\imath}\tilde\Xi)^{*}(D_{\imath}\tilde\Xi)\bigr)=\sum_{\imath=0}^{3}\bigl|(D_{\imath}\tilde\Xi)_{\imath}\bigr|^{2}\ \ge 0,
 $$
 
 so the coupled gradient term is positive for the same reason as the free one: the added term is anti-Hermitian and the modulus of an element is unchanged by adding to it an anti-Hermitian multiple of itself. **The consequence is the diamagnetic inequality in its variational form**: the action's kinetic part is bounded below by zero, and the energy is bounded below whenever $ϙ\omicron_{\mathrm{pot}}$ is. The integral inherits the bound, and the Fresnel convergence factor has to fight the potential and not the gradient.
@@ -49,9 +49,9 @@ so the coupled gradient term is positive for the same reason as the free one: th
 The three-term split is the coupling's whole content in the exponent. Written out,
 
 $$
--\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}}\bigl(D_\imath\tilde\Xi\bigr)^{*}\bigl(D_\imath\tilde\Xi\bigr)
-=-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}}(\partial_\imath\tilde\Xi)^{*}(\partial_\imath\tilde\Xi)
--\frac{c}{2\pi\nu_m}\sum_{\imath\in\{x,y,z\}} ϙA_\imath\,\mathrm{Sc}\bigl(\tilde\Xi^{*}i\partial_\imath\tilde\Xi\bigr)
+-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}}\bigl(D_{\imath}\tilde\Xi\bigr)^{*}\bigl(D_{\imath}\tilde\Xi\bigr)
+=-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}}(\partial_{\imath}\tilde\Xi)^{*}(\partial_{\imath}\tilde\Xi)
+-\frac{c}{2\pi\nu_m}\sum_{\imath\in\{x,y,z\}} ϙA_{\imath}\,\mathrm{Sc}\bigl(\tilde\Xi^{*}i\partial_{\imath}\tilde\Xi\bigr)
 -\frac{ϙ^{2}}{2m}|\vec A|^{2}\,\tilde\Xi^{*}\tilde\Xi .
 $$
 
@@ -79,7 +79,7 @@ $$
 \vec A\mapsto\vec A+\vec\nabla_\Phi\Gamma,
 $$
 
-which is the standard transformation with the sign convention of $D_t$ and $D_\imath$ above.
+which is the standard transformation with the sign convention of $D_t$ and $D_{\imath}$ above.
 
 The measure is invariant because the Jacobian is one. At each point the transformation multiplies the two real coordinates of the central field by a rotation matrix of unit determinant, so $\mathcal{D}\tilde\Xi\,\mathcal{D}\tilde\Xi^{*}$ is unchanged. This is the sharpest difference from a lattice formulation: the phase is a modulus-one number at every point, so a finite transformation costs an invertible element Jacobian and nothing else.
 
@@ -166,7 +166,7 @@ The gauge transformation is a central phase at each point, its Jacobian is one, 
 | $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ | The connection |
 | $ϙ$ | The coupling constant; minus the older electric charge |
 | $D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}}$ | Covariant temporal derivative |
-| $D_\imath=\partial_\imath+\frac{2\pi iϙ}{h}A_\imath$ | Covariant spatial derivative |
+| $D_{\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | Covariant spatial derivative |
 | $\vec\pi=-i \frac{h}{2\pi}\vec\nabla_\Phi-q\vec A$ | Mechanical momentum |
 | $A_{\mathrm{gco}}=i \frac{h}{2\pi} D_t-\frac{1}{2m}(-i \frac{h}{2\pi}\vec D)^{2}$ | The first-order operator of the integral |
 | $\det(A_{\mathrm{gco}})^{-1}$ | The coupled determinant; power unchanged |

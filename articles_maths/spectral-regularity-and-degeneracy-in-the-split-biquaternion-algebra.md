@@ -2,14 +2,14 @@
 
 ## Introduction
 
-The split-biquaternion algebra $\mathbb{B}_{\mathrm{spl}}=\mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{H}\oplus\mathbb{H}$ is a product of two copies of the quaternion division algebra. Its spectrum is therefore not a single quaternionic spectrum but the union of two of them: the spectrum of $\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}_-\tilde\Pi_{\mathrm{id},2}$ is the union of the spectra of the halves $Q_+$ and $Q_-$. This article proves the formula and separates the two spectral cases: **regular**, with simple roots, and **degenerate**, with a repeated root.
+The split-biquaternion algebra $\mathbb{B}_{\mathrm{spl}}=\mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{H}\oplus\mathbb{H}$ is a product of two copies of the quaternion division algebra. Its spectrum is therefore not a single quaternionic spectrum but the union of two of them: the spectrum of $\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}{}_-\tilde\Pi_{\mathrm{id},2}$ is the union of the spectra of the halves $Q_+$ and $Q_-$. This article proves the formula and separates the two spectral cases: **regular**, with simple roots, and **degenerate**, with a repeated root.
 
 The main results are these. The reduced characteristic polynomial is $p_{\tilde Q}=p_+p_-$, with $p_\pm(\lambda)=(\lambda-t_\pm)^2+|\vec q_\pm|^2$. A repeated root occurs exactly when one half is scalar or the half-spectra meet. Every element is semisimple, because each half lies in the division algebra $\mathbb{H}$; there is no defect. The contrast with the biquaternion algebra is sharp: there a complex isotropic vector exists and the spectral cone is defective off the scalar line; here the vector parts are real, their squared norms are sums of squares, and the product of two division algebras removes the defect.
 
 **Conventions.** The split complex unit is $j$, with $j^2=1$, and it is central. The idempotents are $\tilde\Pi_{\mathrm{id},1,2}=\tfrac12(1\pm j)$. An element is written
 
 $$
-\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}_-\tilde\Pi_{\mathrm{id},2},\qquad Q_\pm\in\mathbb{H},
+\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}{}_-\tilde\Pi_{\mathrm{id},2},\qquad Q_\pm\in\mathbb{H},
 $$
 
 with
@@ -49,7 +49,7 @@ each value occurring with multiplicity two. If $\vec q=0$, then $\sigma(Q)=\{t\}
 
 **Definition (the spectrum).** The **spectrum** of $\tilde Q$ is the spectrum of the real operator $L_{\tilde Q}$ on $\mathbb{B}_{\mathrm{spl}}$, complexified.
 
-**Theorem (the union formula).** For $\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}_-\tilde\Pi_{\mathrm{id},2}$,
+**Theorem (the union formula).** For $\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}{}_-\tilde\Pi_{\mathrm{id},2}$,
 
 $$
 \sigma(\tilde Q)
@@ -60,7 +60,7 @@ $$
 
 Each value contributed by a half occurs twice in the characteristic polynomial of $L_{\tilde Q}$; when a half is scalar, its two values coincide and its contribution has multiplicity four.
 
-*Proof.* The idempotents $\tilde\Pi_{\mathrm{id},1,2}$ are central, so for $X=X_+\tilde\Pi_{\mathrm{id},1+X}_-\tilde\Pi_{\mathrm{id},2}$ one has
+*Proof.* The idempotents $\tilde\Pi_{\mathrm{id},1,2}$ are central, so for $X=X_+\tilde\Pi_{\mathrm{id},1+X}{}_-\tilde\Pi_{\mathrm{id},2}$ one has
 
 $$
 \tilde QX=(Q_+X_+)\tilde\Pi_{\mathrm{id},1+}(Q_-X_-)\tilde\Pi_{\mathrm{id},2}.
@@ -207,7 +207,7 @@ Every element is semisimple, because each half lies in $\mathbb{H}$ and a direct
 |---|---|
 | $\mathbb{B}_{\mathrm{spl}}=\mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{H}\oplus\mathbb{H}$ | Split-biquaternion algebra |
 | $\tilde\Pi_{\mathrm{id},1,2}=\tfrac12(1\pm j)$ | Central idempotents |
-| $\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}_-\tilde\Pi_{\mathrm{id},2}$ | Idempotent decomposition into two quaternion halves |
+| $\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}{}_-\tilde\Pi_{\mathrm{id},2}$ | Idempotent decomposition into two quaternion halves |
 | $Q_\pm=t_\pm+\vec q_\pm$ | A half, with real scalar part and real vector part |
 | $\lvert Q_\pm\rvert^2=t_\pm^2+\lvert\vec q_\pm\rvert^2$ | Quaternion norm of a half |
 | $\langle\tilde Q\rangle_{\natural}=\lvert Q_+\rvert^2\tilde\Pi_{\mathrm{id},1+}\lvert Q_-\rvert^2\tilde\Pi_{\mathrm{id},2}$ | Split-biquaternion norm |

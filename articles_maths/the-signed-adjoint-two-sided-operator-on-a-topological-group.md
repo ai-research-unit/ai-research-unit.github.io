@@ -52,7 +52,7 @@ $$
 **Theorem (the inverse and the criterion).** The inverse of the signed two-sided operator is $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{-1} = \Sigma^{\alpha}_{\sigma(a),\,\sigma(b)}$, and the identity criterion for signed two-sided operators is
 
 $$
-\boxed{\;\Sigma^{\alpha}_{c,d} = \Sigma^{\alpha}_{c',d'} \iff c'^{-1}c \in Z(G) \ \text{and}\ c'^{-1}c = d'd^{-1}\;} .
+\boxed{\;\Sigma^{\alpha}_{c,d} = \Sigma^{\alpha}_{c',d'} \iff c'{}^{-1}c \in Z(G) \ \text{and}\ c'{}^{-1}c = d'd^{-1}\;} .
 $$
 
 Consequently $\Sigma^{\alpha}_{a,b}$ is unitary if and only if
@@ -61,7 +61,7 @@ $$
 a^{-1}\alpha(a) \in Z(G) \qquad\text{and}\qquad \alpha(b)\,b^{-1} = \alpha(a)^{-1}a .
 $$
 
-**Proof.** Inverse: $\Sigma^\alpha_{a,b} = L_aR_bA$ has inverse $A^{-1}R_{b^{-1}}L_{a^{-1}} = A R_{b^{-1}}L_{a^{-1}}$, and applying it to $u$ gives $\alpha(a^{-1}ub^{-1}) = \alpha(a)^{-1}\alpha(u)\alpha(b)^{-1} = \sigma(a)\alpha(u)\sigma(b) = \Sigma^\alpha_{\sigma(a),\sigma(b)}(u)$. Identity criterion: $\Sigma^\alpha_{c,d} = \Sigma^\alpha_{c',d'}$ exactly when $c'^{-1}c\,\alpha(u) = \alpha(u)\,d'd^{-1}$ for all $u$, and since $\alpha$ is onto this says $c'^{-1}c$ is central and equal to $d'd^{-1}$. Unitarity: $\Sigma^\alpha_{a,b}{}^\dagger\Sigma^\alpha_{a,b} = \Sigma^\alpha_{a^{-1},b^{-1}}\Sigma^\alpha_{a,b} = \Sigma_{a^{-1}\alpha(a),\,\alpha(b)b^{-1}}$ by the composition law, and this is the identity exactly when $c = a^{-1}\alpha(a)$ is central and $c = d^{-1}$ with $d = \alpha(b)b^{-1}$, which is the stated condition; the second half of the unitarity is the mirror computation $\Sigma^\alpha_{a,b}\Sigma^\alpha_{a^{-1},b^{-1}} = \Sigma_{a\alpha(a)^{-1},\,\alpha(b)^{-1}b}$.
+**Proof.** Inverse: $\Sigma^\alpha_{a,b} = L_aR_bA$ has inverse $A^{-1}R_{b^{-1}}L_{a^{-1}} = A R_{b^{-1}}L_{a^{-1}}$, and applying it to $u$ gives $\alpha(a^{-1}ub^{-1}) = \alpha(a)^{-1}\alpha(u)\alpha(b)^{-1} = \sigma(a)\alpha(u)\sigma(b) = \Sigma^\alpha_{\sigma(a),\sigma(b)}(u)$. Identity criterion: $\Sigma^\alpha_{c,d} = \Sigma^\alpha_{c',d'}$ exactly when $c'{}^{-1}c\,\alpha(u) = \alpha(u)\,d'd^{-1}$ for all $u$, and since $\alpha$ is onto this says $c'{}^{-1}c$ is central and equal to $d'd^{-1}$. Unitarity: $\Sigma^\alpha_{a,b}{}^\dagger\Sigma^\alpha_{a,b} = \Sigma^\alpha_{a^{-1},b^{-1}}\Sigma^\alpha_{a,b} = \Sigma_{a^{-1}\alpha(a),\,\alpha(b)b^{-1}}$ by the composition law, and this is the identity exactly when $c = a^{-1}\alpha(a)$ is central and $c = d^{-1}$ with $d = \alpha(b)b^{-1}$, which is the stated condition; the second half of the unitarity is the mirror computation $\Sigma^\alpha_{a,b}\Sigma^\alpha_{a^{-1},b^{-1}} = \Sigma_{a\alpha(a)^{-1},\,\alpha(b)^{-1}b}$.
 
 **Corollary (the fixed subgroup gives unitary two-sided operators).** If $a, b \in G^\alpha$, the fixed subgroup of the grade involution, then $\Sigma^{\alpha}_{a,b}$ is unitary; the unitary signed two-sided operators with both parameters in $G^\alpha$ form a subgroup of the group of form-preserving operators, and it is the image of $G^\alpha\times G^\alpha$ under the two-sided map.
 
@@ -101,7 +101,7 @@ With respect to the signed form of the category, the signed two-sided operator $
 | $\Sigma^{\alpha}_{a,b}(u) = a\alpha(u)b = L_aR_bAu$ | the signed two-sided operator on the group algebra |
 | $(\Sigma^{\alpha}_{a,b})^\dagger = \Sigma^{\alpha}_{a^{-1},b^{-1}}$ | the explicit form of the adjoint |
 | $(\Sigma^{\alpha}_{a,b})^{-1} = \Sigma^{\alpha}_{\sigma(a),\sigma(b)}$ | the inverse |
-| $\Sigma^\alpha_{c,d} = \Sigma^\alpha_{c',d'} \iff c'^{-1}c\in Z(G),\ c'^{-1}c = d'd^{-1}$ | the identity criterion |
+| $\Sigma^\alpha_{c,d} = \Sigma^\alpha_{c',d'} \iff c'{}^{-1}c\in Z(G),\ c'{}^{-1}c = d'd^{-1}$ | the identity criterion |
 | $a^{-1}\alpha(a)\in Z(G)$, $\alpha(b)b^{-1} = \alpha(a)^{-1}a$ | the unitarity condition |
 | $a, b \in G^\alpha \implies$ unitary | the fixed subgroup gives unitary two-sided operators |
 | $\rho_a = \Sigma^{\alpha}_{a,a^{-1}}$ | the signed conjugation |

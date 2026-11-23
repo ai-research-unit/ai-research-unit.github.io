@@ -18,7 +18,7 @@ $$
 
 **Proposition.** For $\mathfrak{k}=\operatorname{Skew}_4$ and $\mathfrak{p}=\operatorname{Sym}_4$ all three inclusions hold.
 
-**Proof.** Let $K,K'$ be antisymmetric and $S,S'$ symmetric. Then $(KK'-K'K)^{\mathsf T}=K'^{\mathsf T}K^{\mathsf T}-K^{\mathsf T}K'^{\mathsf T}=K'K-KK'$, so the commutator of two antisymmetric matrices is antisymmetric. Next, $(KS-SK)^{\mathsf T}=S^{\mathsf T}K^{\mathsf T}-K^{\mathsf T}S^{\mathsf T}=-SK+KS$, so the commutator of an antisymmetric and a symmetric matrix is symmetric. Finally $(SS'-S'S)^{\mathsf T}=S'S-SS'$, so the commutator of two symmetric matrices is antisymmetric.
+**Proof.** Let $K,K'$ be antisymmetric and $S,S'$ symmetric. Then $(KK'-K'K)^{\mathsf T}=K'{}^{\mathsf T}K^{\mathsf T}-K^{\mathsf T}K'{}^{\mathsf T}=K'K-KK'$, so the commutator of two antisymmetric matrices is antisymmetric. Next, $(KS-SK)^{\mathsf T}=S^{\mathsf T}K^{\mathsf T}-K^{\mathsf T}S^{\mathsf T}=-SK+KS$, so the commutator of an antisymmetric and a symmetric matrix is symmetric. Finally $(SS'-S'S)^{\mathsf T}=S'S-SS'$, so the commutator of two symmetric matrices is antisymmetric.
 
 **Corollary.** $\mathfrak{so}(4)=\operatorname{Skew}_4$ is a Lie subalgebra of dimension $6$, $\operatorname{Sym}_4$ is a $\mathfrak{so}(4)$-module of dimension $10$, and the bracket of two symmetric matrices lands in $\mathfrak{so}(4)$.
 

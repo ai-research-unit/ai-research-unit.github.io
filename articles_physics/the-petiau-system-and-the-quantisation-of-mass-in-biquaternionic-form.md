@@ -4,6 +4,8 @@
 
 The masses of the elementary particles are the one part of the Standard Model that the theory does not explain. The renormalisable Lagrangian carries a Yukawa coupling for every charged fermion, and each of those couplings is a free parameter fixed only by measurement; the theory is consistent for any values, and no principle internal to it selects the ones nature uses. The same is true of the gauge-boson masses, which follow from one scalar parameter of the potential. Mass is an input, not an output.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 The biquaternion framework does not by itself derive a single mass value — an algebra with no scale cannot. But it carries a specific line of work in which the mass parameter is treated as a **field** and the field equations for the mass are **closed on themselves**. That line runs from Lanczos's 1929 reformulation of Dirac's equation, through Einstein and Mayer's 1933 promotion of the mass to a biquaternion, to Petiau's 1965 closed nonlinear system. The present article states that line, verifies the parts that are pure algebra, and keeps the parts that are speculation labelled as such.
 
 The position is stated at the outset, and the article defends it section by section.
@@ -163,15 +165,15 @@ $$
 
 where $\alpha$ is the fine-structure constant, $M_e$ the electron mass, and $N=0,1,2,\dots$ a new quantum number counting the leptons of the chain $e,\mu,\tau,\dots$. The increment from one lepton to the next is a quantised self-energy of magnitude $\tfrac{3}{2}\alpha^{-1}M_e c^2 N^4$, proportional to the **fourth power** of the quantum number — the same fourth power that the Petiau Hamiltonian carries. Read against the data, the formula gives the following.
 
-| $N$ | lepton | Barut's formula $(\mathrm{MeV}/c^2)$ | measured $(\mathrm{MeV}/c^2)$ |
+| $N$ | lepton | Barut's formula $(\mathrm{kg})$ | measured $(\mathrm{kg})$ |
 |---|---|---|---|
-| 0 | $e$ | $0.511$ | $0.511$ |
-| 1 | $\mu$ | $105.55$ | $105.66$ |
-| 2 | $\tau$ | $1786.1$ | $1784.1$ |
-| 3 | — | $10294$ | — |
-| 4 | — | $37184$ | — |
+| 0 | $e$ | $9.109\times10^{-31}$ | $9.109\times10^{-31}$ |
+| 1 | $\mu$ | $1.882\times10^{-28}$ | $1.884\times10^{-28}$ |
+| 2 | $\tau$ | $3.184\times10^{-27}$ | $3.180\times10^{-27}$ |
+| 3 | — | $1.835\times10^{-26}$ | — |
+| 4 | — | $6.629\times10^{-26}$ | — |
 
-The agreement for $\mu$ and $\tau$ is at the level of a few parts in $10^3$, which for a one-parameter formula is striking. The formula predicts a fourth charged lepton at about $10.3\ \mathrm{GeV}/c^2$ and a fifth near $37\ \mathrm{GeV}/c^2$, neither of which exists in the observed spectrum — the electron, muon and tau exhaust the charged leptons, and a fourth is excluded by the $Z$-boson width. **The formula is a fit to the three known leptons and does not extrapolate to a correct fourth.**
+The agreement for $\mu$ and $\tau$ is at the level of a few parts in $10^3$, which for a one-parameter formula is striking. The formula predicts a fourth charged lepton at about $1.836\times10^{-26}\ \mathrm{kg}$ and a fifth near $6.596\times10^{-26}\ \mathrm{kg}$, neither of which exists in the observed spectrum — the electron, muon and tau exhaust the charged leptons, and a fourth is excluded by the $Z$-boson width. **The formula is a fit to the three known leptons and does not extrapolate to a correct fourth.**
 
 ### The Quark Extension and the Moduli Ratio
 
@@ -215,7 +217,7 @@ The article's accounting, collected.
 
 4. **The moduli assignment.** The assignment of the harmonic and equianharmonic moduli to leptons and quarks is a choice. Whether the closed system selects the exceptional moduli — rather than admitting them among many — would be the test, and it is not made.
 
-5. **The fourth lepton.** Barut's formula predicts a charged lepton near $10.3\ \mathrm{GeV}/c^2$, excluded by the $Z$ width. Any interpretation of the formula as a framework prediction has to explain the absence, and the source does not; the article records the formula as a fit with a wrong extrapolation.
+5. **The fourth lepton.** Barut's formula predicts a charged lepton near $1.836\times10^{-26}\ \mathrm{kg}$, excluded by the $Z$ width. Any interpretation of the formula as a framework prediction has to explain the absence, and the source does not; the article records the formula as a fit with a wrong extrapolation.
 
 ## Summary
 
@@ -228,7 +230,7 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$, $\dim_{\mathbb{R}}=8$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ cyclic |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ cyclic |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian, $\partial^2/\partial R_t^2+\Delta_\Phi$ (series convention) |

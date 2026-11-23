@@ -30,7 +30,7 @@ $$
 H_{a,c}^{-1}(Q_{\blacktriangle},Q_{\blacktriangledown})=\left(Q_{\blacktriangledown},\ \frac{Q_{\blacktriangledown}^2+c-Q_{\blacktriangle}}{a}\right).
 $$
 
-*Proof.* If $(Q'_{\blacktriangle},Q'_{\blacktriangledown})=H(Q_{\blacktriangle},Q_{\blacktriangledown})$, then $Q'_{\blacktriangledown}=Q_{\blacktriangle}$ and $Q'_{\blacktriangle}=Q_{\blacktriangle}^2+c-aQ_{\blacktriangledown}$, so $Q_{\blacktriangledown}=(Q'^2_{\blacktriangle}+c-Q'_{\blacktriangledown})/a$. The two maps are polynomial and inverse to each other.
+*Proof.* If $(Q'_{\blacktriangle},Q'_{\blacktriangledown})=H(Q_{\blacktriangle},Q_{\blacktriangledown})$, then $Q'_{\blacktriangledown}=Q_{\blacktriangle}$ and $Q'_{\blacktriangle}=Q_{\blacktriangle}^2+c-aQ_{\blacktriangledown}$, so $Q_{\blacktriangledown}=(Q'{}^2_{\blacktriangle}+c-Q'_{\blacktriangledown})/a$. The two maps are polynomial and inverse to each other.
 
 **Proposition (the degree).** The map $H_{a,c}$ has degree $2$, and its inverse has degree $2$. The composition $H_{a,c}^n$ has degree $2^n$.
 

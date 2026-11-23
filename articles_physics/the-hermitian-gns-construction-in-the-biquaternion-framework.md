@@ -103,9 +103,9 @@ $$
 $$
 It is convenient to compute the Gram matrix of the basis $\{e_t,\vec e_x,\vec e_y,\vec e_z\}$,
 $$
-G_{j\imath} = 2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\, e_j^{*} \vec e_\imath\big),
+G_{j\imath} = 2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\, e_j^{*} \vec e_{\imath}\big),
 $$
-with $e_j,\vec e_\imath$ ranging over the basis; its rank is $\dim_{\mathbb{C}}\mathcal{H}_{\tilde{Ϛ}_{\Psi}}$.
+with $e_j,\vec e_{\imath}$ ranging over the basis; its rank is $\dim_{\mathbb{C}}\mathcal{H}_{\tilde{Ϛ}_{\Psi}}$.
 
 **The vacuum state.** Take $\tilde{Ϛ}_{\Psi} = \tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z)$, the state of the previous article. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$ are its two associated idempotents. Then for any $\tilde Q_3$, using $\tilde{Ϛ}_{\Psi} = \tilde{Ϛ}_{\Psi}^2$,
 $$
@@ -139,7 +139,7 @@ $$
 $$
 so the dimension is $2$ for the pure boundary ($\mathrm{rank}\,\tilde{Ϛ}_{\Psi}=1$) and $4$ throughout the interior of the Bloch ball ($\mathrm{rank}\,\tilde{Ϛ}_{\Psi}=2$). The GNS space jumps in dimension exactly on crossing from the interior to the pure boundary.
 
-**Numerical check.** Working with explicit $2\times2$ complex matrices and computing the rank of the Gram matrix $G_{j\imath}=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,e_j^{*}\vec e_\imath)$ by row reduction: the vacuum state $\tilde{Ϛ}_{\Psi}=\tilde\Pi_{\mathrm{id},+}$ gives rank $2$; the trace state $\tilde{Ϛ}_{\Psi}=\tfrac12 e_t$ gives rank $4$; and mixed states with eigenvalue pairs $(0.9,0.1)$ and $(0.6,0.4)$ give rank $4$ in both cases, confirming that the dimension is governed by the rank of $\tilde{Ϛ}_{\Psi}$ and not by how mixed the state is.
+**Numerical check.** Working with explicit $2\times2$ complex matrices and computing the rank of the Gram matrix $G_{j\imath}=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,e_j^{*}\vec e_{\imath})$ by row reduction: the vacuum state $\tilde{Ϛ}_{\Psi}=\tilde\Pi_{\mathrm{id},+}$ gives rank $2$; the trace state $\tilde{Ϛ}_{\Psi}=\tfrac12 e_t$ gives rank $4$; and mixed states with eigenvalue pairs $(0.9,0.1)$ and $(0.6,0.4)$ give rank $4$ in both cases, confirming that the dimension is governed by the rank of $\tilde{Ϛ}_{\Psi}$ and not by how mixed the state is.
 
 Three structural consequences follow, and they are the content of the construction for this framework.
 
@@ -155,7 +155,7 @@ $$
 $$
 so the reconstructed vacuum vector is annihilated by the ladder operator, as it must be. The element $\vec\Pi_{\mathrm{nil},x}$ is *not zero in $\mathbb{B}$*; it is a nonzero element whose class is the zero vector of $\mathcal{H}_{\tilde{Ϛ}_{\Psi}}$. The distinction is exactly the quotient by the radical, and it is why the GNS construction, not the algebra alone, is the right language for "the vacuum is annihilated".
 
-The check that $\omega(\tilde Q_3)=\langle\Omega|\pi(\tilde Q_3)|\Omega\rangle$ is the cyclic-vector property, $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde Q_3)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\, e_t^{*} \tilde Q_3 e_t)$; it holds identically because $e_t$ is the unit and the inner product places $\tilde{Ϛ}_{\Psi}$ at the left. Numerically, the two sides agree to machine precision on each of the nine elements $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ and $\vec\Pi_{\mathrm{nil},x}$ of the chosen spanning set. The values themselves separate cleanly by Hermiticity: on the observables the state returns real numbers, $\omega_{\tilde\Pi_{\mathrm{id},+}}(e_t)=1$ and $\omega_{\tilde\Pi_{\mathrm{id},+}}(i\vec e_\imath)=r_\imath$ with $\vec s_{\Psi}=(0,0,1)$, so the vacuum is unpolarized in the $\vec e_x$ and $\vec e_y$ directions and fully polarized along $\vec e_z$; on the anti-Hermitian directions it returns the purely imaginary numbers $\omega_{\tilde\Pi_{\mathrm{id},+}}(\vec e_z)=-i$ and $\omega_{\tilde\Pi_{\mathrm{id},+}}(ie_t)=i$, together with $\omega_{\tilde\Pi_{\mathrm{id},+}}(\vec e_x)=\omega_{\tilde\Pi_{\mathrm{id},+}}(\vec e_y)=\omega_{\tilde\Pi_{\mathrm{id},+}}(\vec\Pi_{\mathrm{nil},x})=0$. The polarization $\omega_{\tilde\Pi_{\mathrm{id},+}}(i\vec e_\imath)=r_\imath$ is the Bloch vector of the state, $\vec s_{\Psi}=\vec u$, and it is the same information the deterministic statement $\tilde{Ϛ}_{\Psi}\tilde{Ϛ}_{\Psi}=\tilde{Ϛ}_{\Psi}$ carries.
+The check that $\omega(\tilde Q_3)=\langle\Omega|\pi(\tilde Q_3)|\Omega\rangle$ is the cyclic-vector property, $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde Q_3)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\, e_t^{*} \tilde Q_3 e_t)$; it holds identically because $e_t$ is the unit and the inner product places $\tilde{Ϛ}_{\Psi}$ at the left. Numerically, the two sides agree to machine precision on each of the nine elements $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ and $\vec\Pi_{\mathrm{nil},x}$ of the chosen spanning set. The values themselves separate cleanly by Hermiticity: on the observables the state returns real numbers, $\omega_{\tilde\Pi_{\mathrm{id},+}}(e_t)=1$ and $\omega_{\tilde\Pi_{\mathrm{id},+}}(i\vec e_{\imath})=r_{\imath}$ with $\vec s_{\Psi}=(0,0,1)$, so the vacuum is unpolarized in the $\vec e_x$ and $\vec e_y$ directions and fully polarized along $\vec e_z$; on the anti-Hermitian directions it returns the purely imaginary numbers $\omega_{\tilde\Pi_{\mathrm{id},+}}(\vec e_z)=-i$ and $\omega_{\tilde\Pi_{\mathrm{id},+}}(ie_t)=i$, together with $\omega_{\tilde\Pi_{\mathrm{id},+}}(\vec e_x)=\omega_{\tilde\Pi_{\mathrm{id},+}}(\vec e_y)=\omega_{\tilde\Pi_{\mathrm{id},+}}(\vec\Pi_{\mathrm{nil},x})=0$. The polarization $\omega_{\tilde\Pi_{\mathrm{id},+}}(i\vec e_{\imath})=r_{\imath}$ is the Bloch vector of the state, $\vec s_{\Psi}=\vec u$, and it is the same information the deterministic statement $\tilde{Ϛ}_{\Psi}\tilde{Ϛ}_{\Psi}=\tilde{Ϛ}_{\Psi}$ carries.
 
 ## The Modular Structure in Hermitian Form
 
@@ -256,7 +256,7 @@ Every state of this article has been written down as a density matrix. For a tra
 **The classical statement.** Let $G$ be a locally compact abelian group with dual group $G^{\vee}$ and characters $\xi$. A continuous function $\xi_{\mathrm{scl}} : G \to \mathbb{C}$ is **positive definite** when
 
 $$
-\sum_{\imath,l} \bar c_\imath c_l \, \xi_{\mathrm{scl}}(g_\imath - g_l) \ge 0
+\sum_{\imath,l} \bar c_{\imath} c_l \, \xi_{\mathrm{scl}}(g_{\imath} - g_l) \ge 0
 $$
 
 for every finite set of points and coefficients, and **normalised** when $\xi_{\mathrm{scl}}(0)=1$. The theorem of Bochner states that a continuous, normalised, positive-definite $\xi_{\mathrm{scl}}$ is the Fourier transform of a unique probability measure on the dual group:
@@ -324,7 +324,7 @@ The Hermitian GNS construction supplies the bridge from the vacuum state of *The
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Scalar imaginary, central |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material and informational sectors |
 | $\omega(\tilde Q_3)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde Q_3)$ | State: Hermitian pairing with a density matrix |

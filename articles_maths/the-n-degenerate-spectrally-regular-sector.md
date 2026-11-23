@@ -196,7 +196,7 @@ each of complex dimension two. A **spinor of the first Peirce copy** is an eleme
 
 Write a general element in the eigenbasis as
 $$
-\tilde Q_2=Q_{2,11}e_++Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}e_-,
+\tilde Q_2=Q_{2,11}e_++Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}e_-,
 \qquad Q_{2,ij}\in\mathbb{C}.
 $$
 A spinor of the first Peirce copy is
@@ -211,7 +211,7 @@ $$
 $$
 A spinor of the second Peirce copy is
 $$
-\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}e_-,
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}e_-,
 $$
 with coordinates $(Q_{2,12},Q_{2,22})$ in the basis $(\vec\Pi_{\mathrm{nil},-},e_-)$. Since $\vec\Pi_{\mathrm{nil},-}\in\mathbb{B}_{+-}$ and $e_-\in\mathbb{B}_{--}$,
 $$
@@ -286,11 +286,11 @@ $$
 E_{12}=\frac{\vec e_x+i\vec e_y}{2},
 $$
 
-which satisfy $\tilde\Pi_{\mathrm{id},\pm}^2=\tilde\Pi_{\mathrm{id},\pm}$, $E_{12}^2=0$, and $\tilde\Pi_{\mathrm{id},+E}_{12}=E_{12}=E_{12}\tilde\Pi_{\mathrm{id},-}$, $\tilde\Pi_{\mathrm{id},-E}_{12}=0=E_{12}\tilde\Pi_{\mathrm{id},+}$. Then:
+which satisfy $\tilde\Pi_{\mathrm{id},\pm}^2=\tilde\Pi_{\mathrm{id},\pm}$, $E_{12}^2=0$, and $\tilde\Pi_{\mathrm{id},+E}{}_{12}=E_{12}=E_{12}\tilde\Pi_{\mathrm{id},-}$, $\tilde\Pi_{\mathrm{id},-E}{}_{12}=0=E_{12}\tilde\Pi_{\mathrm{id},+}$. Then:
 
 - $\tilde\Pi_{\mathrm{id},+}^2=\tilde\Pi_{\mathrm{id},+}\in\Sigma_{01}$: the product stays in the sector.
 - $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$: the product is the origin.
-- with $\tilde\Pi_{\mathrm{id}}'=\tilde\Pi_{\mathrm{id},-+bE}_{12}$ for $b\neq0$, the element $\tilde\Pi_{\mathrm{id}}'$ is a non-trivial idempotent, hence lies in $\Sigma_{01}$, and
+- with $\tilde\Pi_{\mathrm{id}}'=\tilde\Pi_{\mathrm{id},-+bE}{}_{12}$ for $b\neq0$, the element $\tilde\Pi_{\mathrm{id}}'$ is a non-trivial idempotent, hence lies in $\Sigma_{01}$, and
 
 $$
 \tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id}}'=bE_{12}=\frac{b}{2}(\vec e_x+i\vec e_y)

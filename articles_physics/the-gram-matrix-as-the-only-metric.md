@@ -18,7 +18,7 @@ The claim of the article is that the equation is a statement about **quadratic s
 
 **Third, the converse holds: every Lorentzian metric is locally of this form.** So the framework excludes no spacetime. That is not a strength of the construction but the measure of its emptiness, and the article states it in those words.
 
-The conventions are inherited from the companion articles and none is redefined. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_\imath^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, the real-quaternion subspace is $\mathbb{B}_{H}$, and the biquaternion norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$, where ${}^{\natural}$ keeps the scalar and negates the three vector coefficients. The material sector is $\mathbb{B}_{\Phi}=\{i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z : r'_t,r_\imath\in\mathbb{R}\}$, with four-vector coordinates $(r'_t,r_x,r_y,r_z)$, and $SU(2)$ is $\{\tilde U : \tilde U\tilde U^{\natural}=e_t\}\cong SL(2,\mathbb{C})$, acting on $\mathbb{B}_{\Phi}$ by rotor conjugation $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^{+}(1,3)$ and kernel $\{\pm e_t\}$.
+The conventions are inherited from the companion articles and none is redefined. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_{\imath}^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, the real-quaternion subspace is $\mathbb{B}_{H}$, and the biquaternion norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$, where ${}^{\natural}$ keeps the scalar and negates the three vector coefficients. The material sector is $\mathbb{B}_{\Phi}=\{i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z : r'_t,r_{\imath}\in\mathbb{R}\}$, with four-vector coordinates $(r'_t,r_x,r_y,r_z)$, and $SU(2)$ is $\{\tilde U : \tilde U\tilde U^{\natural}=e_t\}\cong SL(2,\mathbb{C})$, acting on $\mathbb{B}_{\Phi}$ by rotor conjugation $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^{+}(1,3)$ and kernel $\{\pm e_t\}$.
 
 Two index conventions are used throughout. Every index is low, in this article as in the rest of the series: the metric is the unit metric on the four $Q_{\imath}$, a metric that is the identity raises nothing, and a contraction is written as an explicit sum. And the one minus of the interval is never inserted by hand. It is the square of the $i$ in $Q_t=i q'_t$, made once, on the time slot.
 
@@ -112,7 +112,7 @@ because $(iq'_t)^{2}=-{q'_{t}}^{2}$. The interval's one minus is the square of t
 In the frame language the same statement appears as the rigid frame
 
 $$
-\tilde E_{\Phi,0}=i e_t,\qquad \tilde E_{\Phi,k}=\vec e_\imath ,
+\tilde E_{\Phi,0}=i e_t,\qquad \tilde E_{\Phi,k}=\vec e_{\imath} ,
 $$
 
 whose Gram matrix is $\mathrm{diag}(-1,+1,+1,+1)$ in the coordinates $(r'_t,r_x,r_y,r_z)$ and $\delta_{\imath\jmath}$ in the coordinates $Q_{\imath}$. Both displays describe one object read in two coordinate systems, and the transition between them is the substitution $Q_t=i q'_t$ applied to the time slot alone.

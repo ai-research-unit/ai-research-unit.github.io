@@ -140,7 +140,7 @@ The two strata are therefore two boundary values of one family. The same diverge
 
 The spectral wall is the reverse. The modulus is continuous in $N$ away from zero, the Cartan factors are continuous functions of the unit factor, so the word converges to the word of the limit point. The root $\vec Z=-i\vec Q/B$ diverges, because $\vec Q\to\vec Q_0\neq0$ while $B\to0$, so the idempotents $(e_t\pm\vec Z)/2$ are unbounded and no spectral idempotent has a finite limit. The polar decomposition crosses the wall; the spectral decomposition does not.
 
-The exception is the scalar line. At $\tilde Q_0=Q_0e_t$ the root is $0/0$ and its limit depends on the path: the family $Q_\imath=1+\epsilon_\imath\vec e_x$ has $\vec Z_\imath=-i\vec e_x$ for every $k$, so the idempotents converge to nonzero idempotents of the ambient algebra although the limit is scalar. The divergence of the eigenbasis is therefore a statement about the Jordan part of the wall and not about the whole of it.
+The exception is the scalar line. At $\tilde Q_0=Q_0e_t$ the root is $0/0$ and its limit depends on the path: the family $Q_{\imath}=1+\epsilon_{\imath}\vec e_x$ has $\vec Z_{\imath}=-i\vec e_x$ for every $k$, so the idempotents converge to nonzero idempotents of the ambient algebra although the limit is scalar. The divergence of the eigenbasis is therefore a statement about the Jordan part of the wall and not about the whole of it.
 
 ## The Regular Case: The Two-Mode Flow
 

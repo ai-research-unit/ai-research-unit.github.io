@@ -20,16 +20,16 @@ with $P'$ positive definite Hermitian and $U'$ $*$-unitary:
 
 $$
 P'=(AA^*)^{1/2},\qquad
-U'=P'^{-1}A.
+U'=P'{}^{-1}A.
 $$
 
-**Proof.** The matrix $AA^*$ is positive definite, so $P'=(AA^*)^{1/2}$ is positive definite and invertible. Set $U'=P'^{-1}A$. Then
+**Proof.** The matrix $AA^*$ is positive definite, so $P'=(AA^*)^{1/2}$ is positive definite and invertible. Set $U'=P'{}^{-1}A$. Then
 
 $$
-U'^*U'=A^*P'^{-2}A=A^*(AA^*)^{-1}A=I,
+U'{}^*U'=A^*P'{}^{-2}A=A^*(AA^*)^{-1}A=I,
 $$
 
-so $U'$ is $*$-unitary. The decomposition is unique: $P'^2=AA^*$ forces $P'=(AA^*)^{1/2}$, and then $U'=P'^{-1}A$.
+so $U'$ is $*$-unitary. The decomposition is unique: $P'{}^2=AA^*$ forces $P'=(AA^*)^{1/2}$, and then $U'=P'{}^{-1}A$.
 
 **The right polar decomposition.** The same $A$ has the right polar decomposition
 
@@ -66,7 +66,7 @@ $$
 and
 
 $$
-U'=P'^{-1}A=(UPU^*)^{-1}UP=UP^{-1}U^*UP=U.
+U'=P'{}^{-1}A=(UPU^*)^{-1}UP=UP^{-1}U^*UP=U.
 $$
 
 **The two factors.** The left polar is the **positive-$*$-unitary** order $P'U'$; the right polar is the **$*$-unitary-positive** order $UP$. Both are canonical once the side is chosen.
@@ -234,7 +234,7 @@ with $H$ unique and $K$ unique modulo the choice of Hermitian logarithm. The lef
 
 ## Summary
 
-Every invertible $A\in M_4(\mathbb{C})$ has a unique left polar decomposition $A=P'U'$ with $P'=(AA^*)^{1/2}$ positive definite and $U'=P'^{-1}A$ $*$-unitary. Writing $P'=e^H$ and $U'=e^{iK}$ gives the polar decomposition
+Every invertible $A\in M_4(\mathbb{C})$ has a unique left polar decomposition $A=P'U'$ with $P'=(AA^*)^{1/2}$ positive definite and $U'=P'{}^{-1}A$ $*$-unitary. Writing $P'=e^H$ and $U'=e^{iK}$ gives the polar decomposition
 
 $$
 A=e^He^{iK},
@@ -243,7 +243,7 @@ $$
 with $H$ Hermitian unique and $K$ Hermitian with eigenvalues determined modulo $2\pi\mathbb{Z}$. The right polar decomposition is $A=UP=e^{iK'}e^{H'}$, with $U'=U$, $P'=UPU^*$, $H'=U^*HU$, $K'=K$. The two orderings coincide exactly when $A$ is normal, equivalently when $[H,K]=0$; then $A$ is unitarily diagonalisable with eigenvalues $e^{\lambda_k+i\theta_k}$. The decomposition is the left Cartan decomposition $GL_4=\exp(\operatorname{Herm}_4)U(4)$, the other global form being $GL_4=U(4)\exp(\operatorname{Herm}_4)$; both are diffeomorphisms $P_+\times U(4)\to GL_4$ and $U(4)\times P_+\to GL_4$. The polar decomposition exists exactly on $GL_4$; it degenerates at the singular set, where the Hermitian logarithm diverges. The chiral mass block uses the singular value decomposition $M=U_L\Sigma U_R^*$, not the full algebra's polar decomposition.
 
 $$
-\boxed{\ A=e^He^{iK}=P'U',\quad P'=(AA^*)^{1/2},\quad U'=P'^{-1}A,\quad H=H^*,\quad K=K^*,\quad [H,K]=0\iff A\text{ normal}. }
+\boxed{\ A=e^He^{iK}=P'U',\quad P'=(AA^*)^{1/2},\quad U'=P'{}^{-1}A,\quad H=H^*,\quad K=K^*,\quad [H,K]=0\iff A\text{ normal}. }
 $$
 
 | Object | Formula |
@@ -261,7 +261,7 @@ $$
 | Symbol | Meaning |
 |---|---|
 | $P'=(AA^*)^{1/2}$ | the left positive factor |
-| $U'=P'^{-1}A$ | the left $*$-unitary factor |
+| $U'=P'{}^{-1}A$ | the left $*$-unitary factor |
 | $P=(A^*A)^{1/2}$ | the right positive factor |
 | $U=AP^{-1}$ | the right $*$-unitary factor |
 | $H=\log P'$ | the Hermitian exponent of the positive factor |

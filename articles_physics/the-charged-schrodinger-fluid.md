@@ -24,12 +24,12 @@ The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\
 $$
 \tilde\Xi^{-1}D_{t'}\tilde\Xi=\partial_{t'}\ln \varrho+i\Bigl(\partial_{t'}\theta_{\mathrm{pha}}-\frac{2\pi \varkappa}{h}\omicron_{\mathrm{pot}}\Bigr),
 \qquad
-\tilde\Xi^{-1}D_\imath\tilde\Xi=\partial_\imath\ln \varrho+i\Bigl(\partial_\imath\theta_{\mathrm{pha}}+\frac{2\pi \varkappa}{h}A_\imath\Bigr).
+\tilde\Xi^{-1}D_{\imath}\tilde\Xi=\partial_{\imath}\ln \varrho+i\Bigl(\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi \varkappa}{h}A_{\imath}\Bigr).
 $$
 
-The addition is a central imaginary number, so it has one place to go. The logarithmic derivative splits into a real scalar, a central imaginary, a Hermitian element and a real vector; $-\frac{2\pi i\varkappa}{h}\omicron_{\mathrm{pot}}$ and $+\frac{2\pi i\varkappa}{h}A_\imath$ are central imaginary, so they join the second part and no other. On a central field there is no third and no fourth part to receive anything; on a general field there is, and they still receive nothing, because the addition's type does not depend on the field.
+The addition is a central imaginary number, so it has one place to go. The logarithmic derivative splits into a real scalar, a central imaginary, a Hermitian element and a real vector; $-\frac{2\pi i\varkappa}{h}\omicron_{\mathrm{pot}}$ and $+\frac{2\pi i\varkappa}{h}A_{\imath}$ are central imaginary, so they join the second part and no other. On a central field there is no third and no fourth part to receive anything; on a general field there is, and they still receive nothing, because the addition's type does not depend on the field.
 
-Three quantities are therefore invariant before any calculation. The scale is: $\partial_\imath\ln \varrho$ is untouched. The density is, because it is a function of the scale. The quantum potential is, because it is built from $\varrho$ and its ordinary Laplacian, and the gradient the connection could shift is the phase's and not the scale's. The statement is exact and it is the article's sharpest one: *the field cannot make a quantum fluid denser or its quantum pressure stronger; it can only turn the phase.*
+Three quantities are therefore invariant before any calculation. The scale is: $\partial_{\imath}\ln \varrho$ is untouched. The density is, because it is a function of the scale. The quantum potential is, because it is built from $\varrho$ and its ordinary Laplacian, and the gradient the connection could shift is the phase's and not the scale's. The statement is exact and it is the article's sharpest one: *the field cannot make a quantum fluid denser or its quantum pressure stronger; it can only turn the phase.*
 
 The two gauge-invariant combinations are the kinetic momentum and the kinetic energy.
 

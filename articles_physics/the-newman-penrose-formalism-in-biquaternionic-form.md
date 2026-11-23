@@ -18,7 +18,7 @@ Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit 
 
 The article closes by separating what the framework contains from what remains unbuilt. The separation is sharp: the null structure of the tetrad is native, and the curvature that the tetrad is used to describe is not.
 
-The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_\imath^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, the real-quaternion subspace is $\mathbb{B}_{H}$, and the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural}$. The material sector is $\mathbb{B}_{\Phi} = \{i r'_t e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z : r'_t, r_\imath \in \mathbb{R}\}$, with four-vector coordinates $(r'_t,r_x,r_y,r_z)$, and the bilinear (polar) form on it is
+The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_{\imath}^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, the real-quaternion subspace is $\mathbb{B}_{H}$, and the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural}$. The material sector is $\mathbb{B}_{\Phi} = \{i r'_t e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z : r'_t, r_{\imath} \in \mathbb{R}\}$, with four-vector coordinates $(r'_t,r_x,r_y,r_z)$, and the bilinear (polar) form on it is
 
 $$
 \langle \tilde Q_1, \tilde Q_2\rangle_{\natural} \;=\; \mathrm{Sc}\big(\tilde Q_1\tilde Q_2^{\natural}\big) \;=\; -c^2r'_{1t}r'_{2t} + r_{1x}r_{2x} + r_{1y}r_{2y} + r_{1z}r_{2z} ,
@@ -28,7 +28,7 @@ of inertia $(3,1)$ in the read list's counting — three positive directions and
 
 $$
 \mathsf{M}_2 : \mathbb{B} \longrightarrow M_2(\mathbb{C}), \qquad
-\mathsf{M}_2(e_t) = I_2, \quad \mathsf{M}_2(\vec e_\imath) = -i\sigma_\imath, \quad \mathsf{M}_2(i) = iI_2,
+\mathsf{M}_2(e_t) = I_2, \quad \mathsf{M}_2(\vec e_{\imath}) = -i\sigma_{\imath}, \quad \mathsf{M}_2(i) = iI_2,
 $$
 
 so that $\langle\tilde Q\rangle_{\natural} = \det\mathsf{M}_2(\tilde Q)$, Hermitian conjugation corresponds to the conjugate transpose, and $\mathbb{B}_{\Phi}$ corresponds to the anti-Hermitian matrices. The spinor module is $S = \mathbb{C}^2$, the unique simple module of $\mathbb{B}$, on which the algebra acts by left multiplication; the Weyl spinor modules are $S = (\tfrac12,0)$ and its conjugate $\bar S = (0,\tfrac12)$. $SU(2)$ is $\{\tilde U : \tilde U\tilde U^{\natural} = e_t\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{B}_{\Phi}$ by rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_t\}$. The trace of the matrix image in the informational sector is $\operatorname{tr}\bigl(\mathsf{M}_2(\tilde{H}_{\Psi,1})\mathsf{M}_2(\tilde{H}_{\Psi,2})\bigr) = 2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
@@ -249,10 +249,10 @@ $$
 o = \begin{pmatrix}1\\0\end{pmatrix}, \qquad o' = \begin{pmatrix}0\\1\end{pmatrix} \in S,
 $$
 
-the matrix units factorize as $E_{11} = o\,o^\dagger$, $E_{22} = o'\,o'^\dagger$, $E_{12} = o\,o'^\dagger$, $E_{21} = o'\,o^\dagger$. Hence
+the matrix units factorize as $E_{11} = o\,o^\dagger$, $E_{22} = o'\,o'{}^\dagger$, $E_{12} = o\,o'{}^\dagger$, $E_{21} = o'\,o^\dagger$. Hence
 
 $$
-l = \sqrt2\,i\,o\,o^\dagger, \quad n = \sqrt2\,i\,o'\,o'^\dagger, \quad m = \sqrt2\,i\,o\,o'^\dagger, \quad \bar m = \sqrt2\,i\,o'\,o^\dagger .
+l = \sqrt2\,i\,o\,o^\dagger, \quad n = \sqrt2\,i\,o'\,o'{}^\dagger, \quad m = \sqrt2\,i\,o\,o'{}^\dagger, \quad \bar m = \sqrt2\,i\,o'\,o^\dagger .
 \tag{8}
 $$
 
@@ -431,7 +431,7 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | biquaternion norm; $\langle\tilde Q\rangle_{\natural}=\det\mathsf{M}_2(\tilde Q)$ |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | scalar part and trace |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | the general quaternionic bilinear form on $\mathbb{B}_{\Phi}$, the interval, of inertia $(3,1)$ |
-| $Ξ$ | matrix realization $\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_\imath)=-i\sigma_\imath$ |
+| $Ξ$ | matrix realization $\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$ |
 | $S$, $\bar S$ | spinor module and its conjugate, $S\cong\mathbb{C}^2$ |
 | $\mathrm{sym}^4 S$ | self-dual Weyl spinors, complex dimension $5$ |
 | $o,o'$ | normalized spinor dyad, $\varepsilon(o,o')=1$ |

@@ -125,7 +125,7 @@ On a pair whose product $A\bar B$ is invertible the criterion is exactly the rea
 When the associator does not vanish it is a specific element. Since $\bar C-C=-2c'j$,
 
 $$
-[A,B,C]=-2c'\,(A\bar B)\,j, \qquad N([A,B,C])=-4c'^2\,N(A)\,N(B) .
+[A,B,C]=-2c'\,(A\bar B)\,j, \qquad N([A,B,C])=-4c'{}^2\,N(A)\,N(B) .
 $$
 
 **Proof.** The first formula is the substitution of $\bar C-C$; the second is the multiplicativity of the norm, $N(j)=-1$ and $N(\bar B)=N(B)$.
@@ -152,7 +152,7 @@ Over $\mathbb{C}$ the same formulas hold with $i^2=-1$: the ternary product is $
 
 The ternary product $\{A,B,C\}=A\bar BC$ is componentwise in the idempotent coordinates, with the middle index crossed, $\{A,B,C\}_\pm=A_\pm B_\mp C_\pm$; it is symmetric in its outer slots, Hermitian-symmetric, contracts to the sesquilinear product in the third slot and to the plain product in the middle one, and its diagonal is $\{A,A,A\}=N(A)A$. It satisfies the Jordan triple identity, so $\mathbb{C}_{\mathrm{spl}}$ is an algebraic $J^{*}$-algebra over its involutive ring, and it is not a $JB^{*}$-algebra because the form is indefinite.
 
-The associator is $[A,B,C]=A\bar B(\bar C-C)$, a defect of the third slot alone; it vanishes exactly when the third slot is real or when $A\bar B=0$, and its value is $-2c'(A\bar B)j$ of norm $-4c'^2N(A)N(B)$, a spacelike element on a pair of invertibles. It is confined to the sesquilinear shape, the plain product being associative. Over $\mathbb{C}$ the formulas are the same and the two components of the split case coincide into one; here the four products collapse to two and the associator collapses to the single factor $\bar C-C$.
+The associator is $[A,B,C]=A\bar B(\bar C-C)$, a defect of the third slot alone; it vanishes exactly when the third slot is real or when $A\bar B=0$, and its value is $-2c'(A\bar B)j$ of norm $-4c'{}^2N(A)N(B)$, a spacelike element on a pair of invertibles. It is confined to the sesquilinear shape, the plain product being associative. Over $\mathbb{C}$ the formulas are the same and the two components of the split case coincide into one; here the four products collapse to two and the associator collapses to the single factor $\bar C-C$.
 
 ## Summary of Notation
 
@@ -163,7 +163,7 @@ The associator is $[A,B,C]=A\bar B(\bar C-C)$, a defect of the third slot alone;
 | $\{A,A,A\}=N(A)A$ | The diagonal, the norm times the element |
 | $[A,B,C]=A\bar B(\bar C-C)$ | The associator of the sesquilinear product |
 | $-2c'(A\bar B)j$ | The value of the associator when it does not vanish |
-| $-4c'^2N(A)N(B)$ | The split norm of the associator |
+| $-4c'{}^2N(A)N(B)$ | The split norm of the associator |
 | $\bar C-C=-2c'j$ | The anti-fixed part of the third slot, the source of the defect |
 | $J^{*}$ | The algebraic structure the ternary product defines |
 

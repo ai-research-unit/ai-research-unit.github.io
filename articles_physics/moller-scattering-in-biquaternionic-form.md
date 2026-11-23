@@ -4,6 +4,8 @@
 
 **Møller scattering** is electron–electron scattering, $e^-e^-\to e^-e^-$, in quantum electrodynamics. Christian Møller derived it in 1932, in the same paper that treated the passage of fast electrons through matter. It is the paradigmatic two-electron process: the electron repulsion inside the helium atom is its non-relativistic face, and electron–electron colliders were built around it. At the tree level it receives two contributions, the **$t$-channel** and **$u$-channel** diagrams in which the two electrons exchange a photon. The two diagrams differ by the exchange of the two final electrons and therefore enter with a relative **minus sign**, the Pauli exchange sign of identical fermions. By **crossing symmetry** the Møller amplitude and the Bhabha amplitude, $e^+e^-\to e^+e^-$, are the same amplitude read with different particle labels; the companion article *Bhabha Scattering in Biquaternionic Form* uses that correspondence.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 This article treats Møller scattering in the biquaternion framework. The framework's contribution is structural. Its minimal-coupling and quantization articles supply the ingredients — a $\mathrm{U}(1)$ coupling localised in the centre, a quantized Maxwell field, a Fock space with creation and annihilation operators, and a propagator — and the Møller amplitude is then a product of **two material-sector currents** contracted by the photon propagator. The **relative minus sign** between the two diagrams is the antisymmetry of fermion exchange, which the framework's canonical quantization already carries as the identity $(a_{\mathrm{fop}}^{\dagger})^2=0$ on the mode algebra. And **crossing symmetry** is the framework's charge conjugation on the doubled module, read backwards. What the framework does not do is evaluate loops: the corpus's scattering content is tree-level, and the present article stays there.
 
 **Every vertex below is one action, written out.** A vertex acts on an element $Q$ of $\mathbb{B}$ by $Q\mapsto aQb$, with $a$ and $b$ elements of the algebra, and each action is printed in full where it enters. The five actions the amplitude uses are written out in §*Kinematics*; the closing section writes the same five in the older display, for comparison only, and nothing in the body depends on it. Throughout, $i$ is the central imaginary of $\mathbb{B}$, so every $i$ in an action is that one central unit and no separate imaginary of a display enters.
@@ -20,15 +22,15 @@ Let the incoming electrons carry four-momenta $p_1,p_2$ and the outgoing electro
 
 $$
 Ξ_t:\ Q\mapsto iQ\vec e_x,\qquad
-Ξ_\imath:\ Q\mapsto i\vec e_\imath Q\vec e_y\quad(k=1,2,3),
+Ξ_{\imath}:\ Q\mapsto i\vec e_{\imath} Q\vec e_y\quad(k=1,2,3),
 $$
 
-with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$. Each insertion carries exactly one factor of the central $i$ and one or two vector units, so its square is read from the unit squares and the unit products of *Algebra and Element Conventions*: $Ξ^{2}_t$ is the identity, $Ξ^{2}_\imath$ is minus the identity, and $Ξ_{\imath}Ξ_{\jmath}+Ξ_{\jmath}Ξ_{\imath}$ is $2\varepsilon_{\imath}\delta_{\imath\jmath}$ times the identity, with $\varepsilon=(1,-1,-1,-1)$. Those three derived forms are what every identity below uses. The time insertion multiplies on the right alone, while the three spatial insertions multiply on both sides. The fifth action, the **chirality action**, is the right multiplication $Q\mapsto-iQ\vec e_z$; it also multiplies on the right alone and anticommutes with the four insertions.
+with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$. Each insertion carries exactly one factor of the central $i$ and one or two vector units, so its square is read from the unit squares and the unit products of *Algebra and Element Conventions*: $Ξ^{2}_t$ is the identity, $Ξ^{2}_{\imath}$ is minus the identity, and $Ξ_{\imath}Ξ_{\jmath}+Ξ_{\jmath}Ξ_{\imath}$ is $2\varepsilon_{\imath}\delta_{\imath\jmath}$ times the identity, with $\varepsilon=(1,-1,-1,-1)$. Those three derived forms are what every identity below uses. The time insertion multiplies on the right alone, while the three spatial insertions multiply on both sides. The fifth action, the **chirality action**, is the right multiplication $Q\mapsto-iQ\vec e_z$; it also multiplies on the right alone and anticommutes with the four insertions.
 
 **The momentum insertion.** The insertion of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is the action
 
 $$
-P(p):\ Q\mapsto p_0\,iQ\vec e_x-\sum_{\imath\in\{x,y,z\}} p_\imath\,i\vec e_\imath Q\vec e_y ,
+P(p):\ Q\mapsto p_0\,iQ\vec e_x-\sum_{\imath\in\{x,y,z\}} p_{\imath}\,i\vec e_{\imath} Q\vec e_y ,
 $$
 
 which is the four-momentum contracted with the insertions of the preceding paragraph. Its square is $(p_0^2-\vec p^2)$ times the identity, and the mass-shell condition is $p_0^2-\vec p^{\,2}=m^{2}c^{2}$.
@@ -111,11 +113,11 @@ $$
 with $Ξ_{\imath}$ the insertion of the Lorentz index $\mu$ and $\bar{\tilde{Ξ}}$ the Dirac adjoint, the product of the star of the element with the fixed element $i\vec e_x$, the one factor of the adjoint that lies outside $\mathbb{B}$. The product $\bar{\tilde{Ξ}}\,Ξ_{\imath}\tilde{Ξ}$ is an element of $\mathbb{B}$ and its scalar part is a single complex number, so every $J_{\imath}$ is a single complex number and the brackets below are ordinary complex products. With this notation the $t$-channel and $u$-channel brackets are
 
 $$
-\mathcal M_t=\frac{e^2}{t}\Bigl[J_t(p_3,p_1)J_t(p_4,p_2)-\sum_{\imath\in\{x,y,z\}} J_\imath(p_3,p_1)J_\imath(p_4,p_2)\Bigr],
+\mathcal M_t=\frac{e^2}{t}\Bigl[J_t(p_3,p_1)J_t(p_4,p_2)-\sum_{\imath\in\{x,y,z\}} J_{\imath}(p_3,p_1)J_{\imath}(p_4,p_2)\Bigr],
 $$
 
 $$
-\mathcal M_u=\frac{e^2}{u}\Bigl[J_t(p_3,p_2)J_t(p_4,p_1)-\sum_{\imath\in\{x,y,z\}} J_\imath(p_3,p_2)J_\imath(p_4,p_1)\Bigr].
+\mathcal M_u=\frac{e^2}{u}\Bigl[J_t(p_3,p_2)J_t(p_4,p_1)-\sum_{\imath\in\{x,y,z\}} J_{\imath}(p_3,p_2)J_{\imath}(p_4,p_1)\Bigr].
 $$
 
 The two brackets differ by the exchange of the two electron lines: $\mathcal M_u$ is obtained from $\mathcal M_t$ by swapping the initial momenta, $p_1\leftrightarrow p_2$, or equivalently the final momenta, $p_3\leftrightarrow p_4$. Because the two electrons are identical, the exchange costs a minus sign, and the total amplitude is
@@ -139,7 +141,7 @@ $$
 the sum of the two rank-one products being the action
 
 $$
-D(p):\ Q\mapsto p_0\,iQ\vec e_x-\sum_{\imath\in\{x,y,z\}} p_\imath\,i\vec e_\imath Q\vec e_y+m\,Q ,
+D(p):\ Q\mapsto p_0\,iQ\vec e_x-\sum_{\imath\in\{x,y,z\}} p_{\imath}\,i\vec e_{\imath} Q\vec e_y+m\,Q ,
 $$
 
 that is, the momentum insertion $P(p)$ plus the scalar $m$. The mass term is a scalar multiple of the unit and therefore acts on the right and on the left alike. This identity is what turns a sum over the spins of a product of two vertex currents into a trace of the corresponding composite, and it is the only place where the two external elements enter the squared amplitude.
@@ -151,7 +153,7 @@ $$
 =4\,\mathrm{Sc}\bigl(a_1a_2\cdots a_n\bigr)\,\mathrm{Sc}\bigl(b_n\cdots b_2b_1\bigr),
 $$
 
-the left string read in the order of the factors and the right string in reverse, and the trace is additive over sums of actions. With $Ξ^{t}=Ξ_t$ and $Ξ^k=-Ξ_\imath$, the three trace combinations are
+the left string read in the order of the factors and the right string in reverse, and the trace is additive over sums of actions. With $Ξ^{t}=Ξ_t$ and $Ξ^k=-Ξ_{\imath}$, the three trace combinations are
 
 $$
 L_t:=\operatorname{tr}\bigl[Ξ_{\imath} D(p_1)Ξ_{\jmath} D(p_3)\bigr]\,
@@ -262,9 +264,9 @@ A_{\mathrm{PV}} = -\,m_eE_{\mathrm{beam}}\,\frac{G_{\mathrm F}}{\sqrt2\,\pi\alph
 \frac{2y(1-y)}{1+y^4+(1-y)^4}\,Q_{W,e},
 $$
 
-and the two forms agree by $4\sin^2\theta/(3+\cos^2\theta)^2=2y(1-y)/(1+y^4+(1-y)^4)$. With the definition adopted here, $A_{\mathrm{PV}}$ is negative for $Q_{W,e}>0$; MOLLER quotes the same number with the opposite convention $(\sigma_R-\sigma_L)/(\sigma_R+\sigma_L)$ and the opposite overall sign. The asymmetry is of order $10^{-7}$, a hundred parts per billion, because $m_eE_{\mathrm{beam}}\sim10^{-2}$ GeV$^2$ and $G_{\mathrm F}/(\sqrt2\pi\alpha)\sim4\times10^{-4}$ GeV$^{-2}$.
+and the two forms agree by $4\sin^2\theta/(3+\cos^2\theta)^2=2y(1-y)/(1+y^4+(1-y)^4)$. With the definition adopted here, $A_{\mathrm{PV}}$ is negative for $Q_{W,e}>0$; MOLLER quotes the same number with the opposite convention $(\sigma_R-\sigma_L)/(\sigma_R+\sigma_L)$ and the opposite overall sign. The asymmetry is of order $10^{-7}$, a hundred parts per billion, because $m_eE_{\mathrm{beam}}\sim10^{-2}$ kg J and $G_{\mathrm F}/(\sqrt2\pi\alpha)\sim1.6\times10^{16}$ J$^{-2}$.
 
-It was measured at SLAC (E158), which finds $A_{\mathrm{PV}}=-131\pm14\pm10$ parts per billion and determines $\sin^2\theta_{\mathrm W}$; the approved MOLLER experiment at Jefferson Laboratory is designed for $E_{\mathrm{beam}}=11$ GeV, where the same formula gives $A_{\mathrm{PV}}\approx-4\times10^{-8}$, forty parts per billion. The first discussion is due to Zel'dovich (1959). It is the cleanest experimental reason Møller scattering is still studied, and it is the physical content of the framework's statement that the photon coupling is parity-symmetric while a left-handed coupling is not.
+It was measured at SLAC (E158), which finds $A_{\mathrm{PV}}=-131\pm14\pm10$ parts per billion and determines $\sin^2\theta_{\mathrm W}$; the approved MOLLER experiment at Jefferson Laboratory is designed for $E_{\mathrm{beam}}=1.8\times10^{-9}$ J, where the same formula gives $A_{\mathrm{PV}}\approx-4\times10^{-8}$, forty parts per billion. The first discussion is due to Zel'dovich (1959). It is the cleanest experimental reason Møller scattering is still studied, and it is the physical content of the framework's statement that the photon coupling is parity-symmetric while a left-handed coupling is not.
 
 ## The Biquaternion Reading
 
@@ -338,7 +340,7 @@ The dictionary $M\mapsto c(M)$ is complex-linear; over $\mathbb{R}$ the products
 
 $$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
-(\gamma_\imath)^2=-I_4,\qquad
+(\gamma_{\imath})^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_{\imath},\gamma_5\}=0,
 $$
@@ -392,10 +394,10 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 | $s,t,u$ | Mandelstam variables; $s+t+u=4m^2$ |
 | $E_{\mathrm{CM}}=2E$ | Centre-of-momentum energy |
 | $\theta$ | Centre-of-mass scattering angle |
-| $Ξ_t:\ Q\mapsto iQ\vec e_x$, $Ξ_\imath:\ Q\mapsto i\vec e_\imath Q\vec e_y$ | The four insertions: the time insertion and the three spatial ones |
-| $Ξ^{t}=Ξ_t$, $Ξ^k=-Ξ_\imath$ | Raised insertions |
+| $Ξ_t:\ Q\mapsto iQ\vec e_x$, $Ξ_{\imath}:\ Q\mapsto i\vec e_{\imath} Q\vec e_y$ | The four insertions: the time insertion and the three spatial ones |
+| $Ξ^{t}=Ξ_t$, $Ξ^k=-Ξ_{\imath}$ | Raised insertions |
 | $Q\mapsto-iQ\vec e_z$ | Chirality action |
-| $P(p):\ Q\mapsto p_0iQ\vec e_x-\sum_{\imath\in\{x,y,z\}} p_\imathi\vec e_\imath Q\vec e_y$ | Momentum insertion; its square is $p_0^2-\vec p^2$ times the identity |
+| $P(p):\ Q\mapsto p_0iQ\vec e_x-\sum_{\imath\in\{x,y,z\}} p_{\imath} i\vec e_{\imath} Q\vec e_y$ | Momentum insertion; its square is $p_0^2-\vec p^2$ times the identity |
 | $D(p)=P(p)+m$ | Spin-sum action of the momentum shell |
 | $\tilde{Ξ}^{(r)}(p)$, $\bar{\tilde{Ξ}}=\tilde{Ξ}^*i\vec e_x$ | Positive-frequency element and its Dirac adjoint |
 | $\tilde{Ξ}_{L},\tilde{Ξ}_{R}$ | The two values of the chirality: $L$ the minus one, $R$ the plus one |

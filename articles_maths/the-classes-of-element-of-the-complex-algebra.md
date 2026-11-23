@@ -34,7 +34,7 @@ The article is a consolidation, not a translation. On $\mathbb{C}$ the classes a
 
 **Theorem.** In either product the only element of $\mathbb{C}$ with $\Pi_{\mathrm{nil}}^{2}=0$ is $0$.
 
-**Proof.** For the plain product, $\Pi_{\mathrm{nil}}^{2}=0=\Pi_{\mathrm{nil}}\cdot\Pi_{\mathrm{nil}}$ forces $\Pi_{\mathrm{nil}}=0$ by the absence of zero divisors. For the sesquilinear product, $\Pi_{\mathrm{nil}}\bar\Pi_{\mathrm{nil}}=(u^{2}+u'^{2})$, where $\Pi_{\mathrm{nil}}=u+iu'$, and a sum of two real squares vanishes only at $u=u'=0$.
+**Proof.** For the plain product, $\Pi_{\mathrm{nil}}^{2}=0=\Pi_{\mathrm{nil}}\cdot\Pi_{\mathrm{nil}}$ forces $\Pi_{\mathrm{nil}}=0$ by the absence of zero divisors. For the sesquilinear product, $\Pi_{\mathrm{nil}}\bar\Pi_{\mathrm{nil}}=(u^{2}+u'{}^{2})$, where $\Pi_{\mathrm{nil}}=u+iu'$, and a sum of two real squares vanishes only at $u=u'=0$.
 
 **Remark.** The second computation is also the reason the sesquilinear square of an element is a non-negative real, the value $\langle\Pi_{\mathrm{nil}}\rangle_{*}$ of the definite algebraic norm; the square-zero set of the sesquilinear product is the origin alone.
 
@@ -44,11 +44,11 @@ The article is a consolidation, not a translation. On $\mathbb{C}$ the classes a
 
 **Theorem.** In the plain product the roots are as follows: of $-1$ exactly the two elements $i$ and $-i$; of $+1$ exactly the two elements $1$ and $-1$; of $0$ the element $0$ alone.
 
-**Proof.** The equation $Z^{2}=W$ with $Z=z+iz'$ reads $z^{2}-z'^{2}=W$ and $2zz'=0$ for real $W$; thus $z=0$ or $z'=0$. For $W=-1$ the case $z=0$ gives $-z'^{2}=-1$, so $z'=\pm1$ and $Z=\pm i$, while the case $z'=0$ gives $z^{2}=-1$, with no real solution. For $W=+1$ the case $z'=0$ gives $z=\pm1$ and $Z=\pm1$, while the case $z=0$ gives $-z'^{2}=1$, with no real solution. For $W=0$ both cases give $Z=0$. In a field a quadratic equation has at most two roots, so the lists are complete.
+**Proof.** The equation $Z^{2}=W$ with $Z=z+iz'$ reads $z^{2}-z'{}^{2}=W$ and $2zz'=0$ for real $W$; thus $z=0$ or $z'=0$. For $W=-1$ the case $z=0$ gives $-z'{}^{2}=-1$, so $z'=\pm1$ and $Z=\pm i$, while the case $z'=0$ gives $z^{2}=-1$, with no real solution. For $W=+1$ the case $z'=0$ gives $z=\pm1$ and $Z=\pm1$, while the case $z=0$ gives $-z'{}^{2}=1$, with no real solution. For $W=0$ both cases give $Z=0$. In a field a quadratic equation has at most two roots, so the lists are complete.
 
 **Remark (general value).** For a general $W=a+ia'\neq0$ the same equation has exactly two solutions, opposite to each other, written $Z=\pm Z_{0}$ with $Z_{0}^{2}=W$. For $W$ away from the closed negative real axis the root is
 
-$$ \boxed{\;Z_{0}=\sqrt{\tfrac{r+a}{2}}+i\,\frac{a'}{2\sqrt{(r+a)/2}}, \qquad r=|W|=\sqrt{a^{2}+a'^{2}}\;},
+$$ \boxed{\;Z_{0}=\sqrt{\tfrac{r+a}{2}}+i\,\frac{a'}{2\sqrt{(r+a)/2}}, \qquad r=|W|=\sqrt{a^{2}+a'{}^{2}}\;},
 $$
 
 with real part $\sqrt{(r+a)/2}$ and imaginary part a real multiple of $a'$; on the negative real axis the formula degenerates and the root is the purely imaginary $Z_{0}=i\sqrt{|W|}$. The two roots are real exactly for the real $W>0$ and purely imaginary exactly for the real $W<0$; at every other value of $W$ both parts are non-zero. For $W=0$ the two roots coalesce into the single root $0$, so the criterion for two distinct roots is $W\neq0$. The existence of a root for every $W$ is the algebraic closure of $\mathbb{C}$, owned by *Complex Algebra*.

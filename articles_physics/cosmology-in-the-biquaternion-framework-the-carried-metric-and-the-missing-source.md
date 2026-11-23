@@ -30,7 +30,7 @@ with a function and a parameter: the **scale factor** $a(r'_t)$, which carries t
 
 $$\boxed{\;H^2 \equiv \left(\frac{da/dt'}{a}\right)^2 = \frac{8\pi G}{3}\rho - \frac{kc^2}{a^2} + \frac{\Lambda c^2}{3},
 \qquad
-\frac{d^2a/dt'^2}{a} = -\frac{4\pi G}{3}\left(\rho + 3p\right) + \frac{\Lambda c^2}{3}\;},$$
+\frac{d^2a/dt'{}^2}{a} = -\frac{4\pi G}{3}\left(\rho + 3p\right) + \frac{\Lambda c^2}{3}\;},$$
 
 where $\rho$ and $p$ are the energy density and pressure of the cosmic source. These are the Einstein equations on a homogeneous and isotropic ansatz; they inherit whatever status the Einstein equations have in the framework, no more and no less. Two of the three functions $a$, $\rho$, $p$ are fixed by them, and the system is **closed by an equation of state**, usually $p = w\rho$, together with the conservation law $\sum_{\imath}\nabla_{\imath} T_{\imath\jmath} = 0$. The source is the perfect-fluid stress–energy tensor
 
@@ -233,11 +233,11 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 | Symbol | Meaning | Introduced or inherited |
 |---|---|---|
 | $\mathbb{B}$ | $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the biquaternion algebra | inherited |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$ | quaternion basis, $\vec e_\imath^2 = -e_t$ | inherited |
-| $i$ | scalar imaginary, commuting with every $\vec e_\imath$ | inherited |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | quaternion basis, $\vec e_{\imath}^2 = -e_t$ | inherited |
+| $i$ | scalar imaginary, commuting with every $\vec e_{\imath}$ | inherited |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | informational and material sectors, $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | inherited |
 | $\mathbb{B}_{C}$, $\mathbb{B}_{H}$ | centre $\mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$; real-quaternion subspace | inherited |
-| $\varepsilon_{\imath}$ | material basis $\varepsilon_0 = ie_t$, $\varepsilon_\imath = \vec e_\imath$ | inherited |
+| $\varepsilon_{\imath}$ | material basis $\varepsilon_0 = ie_t$, $\varepsilon_{\imath} = \vec e_{\imath}$ | inherited |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$, $\langle\varepsilon_{\imath},\varepsilon_{\jmath}\rangle_{\natural} = -\varepsilon_{\imath}\delta_{\imath\jmath}$, the material tuple $(-1,+1,+1,+1)$ | inherited |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi$ | biquaternionic gradient, its conjugate, and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | inherited |
 | $\tilde{E}_{\Phi,\imath} \in \mathbb{B}_{\Phi}$, $g_{\imath\jmath} = \langle\tilde{E}_{\Phi,\imath},\tilde{E}_{\Phi,\jmath}\rangle_{\natural}$ | frame field and the metric it carries | inherited |

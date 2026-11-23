@@ -305,7 +305,7 @@ so the line is closed under multiplication and inversion, and it is a subgroup o
 Every complete pair of idempotents gives a two-term writing with equal coefficients.
 
 $$
-\tilde Q=Q_t\tilde\Pi_{\mathrm{id},1+Q}_t\tilde\Pi_{\mathrm{id},2},\qquad
+\tilde Q=Q_t\tilde\Pi_{\mathrm{id},1+Q}{}_t\tilde\Pi_{\mathrm{id},2},\qquad
 \tilde\Pi_{\mathrm{id},1+}\tilde\Pi_{\mathrm{id},2}=e_t,\qquad
 \tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2}=0,
 $$
@@ -788,7 +788,7 @@ $$
 B^{2}(\tilde Q+\varepsilon\tilde X)=2\varepsilon\,\tilde X\cdot\vec\Pi_{\mathrm{nil}}+\varepsilon^{2}B^{2}(\tilde X),
 $$
 
-where $\tilde X\cdot\vec\Pi_{\mathrm{nil}}=\sum_{\imath\in\{x,y,z\}}X_\imath\Pi_{\mathrm{nil},k}$ is the bilinear form. So the splitting is the square root of a linear function of the parameter, and it is linear only for a perturbation with $\tilde X\cdot\vec\Pi_{\mathrm{nil}}=0$, that is one tangent to the isotropic cone. Computed on $\tilde Q=1.3e_t+\vec e_x+i\vec e_y$: the generic perturbation $\varepsilon\vec e_x$ gave splittings $2.836\times10^{-1}$, $2.828\times10^{-2}$, $2.828\times10^{-3}$ at $\varepsilon=10^{-2},10^{-4},10^{-6}$, against the predicted $2\sqrt{2\varepsilon+\varepsilon^{2}}$; the tangential perturbation $\varepsilon\vec e_z$ gave $2.000\times10^{-2}$, $2.000\times10^{-4}$, $2.000\times10^{-6}$, against $2\varepsilon$.
+where $\tilde X\cdot\vec\Pi_{\mathrm{nil}}=\sum_{\imath\in\{x,y,z\}}X_{\imath}\Pi_{\mathrm{nil},k}$ is the bilinear form. So the splitting is the square root of a linear function of the parameter, and it is linear only for a perturbation with $\tilde X\cdot\vec\Pi_{\mathrm{nil}}=0$, that is one tangent to the isotropic cone. Computed on $\tilde Q=1.3e_t+\vec e_x+i\vec e_y$: the generic perturbation $\varepsilon\vec e_x$ gave splittings $2.836\times10^{-1}$, $2.828\times10^{-2}$, $2.828\times10^{-3}$ at $\varepsilon=10^{-2},10^{-4},10^{-6}$, against the predicted $2\sqrt{2\varepsilon+\varepsilon^{2}}$; the tangential perturbation $\varepsilon\vec e_z$ gave $2.000\times10^{-2}$, $2.000\times10^{-4}$, $2.000\times10^{-6}$, against $2\varepsilon$.
 
 The reading is that the exceptional point is a property of the spectrum and not of the size of anything. The square-root law is a consequence of the eigenvalue map being a square root of $B^{2}$, and it is the same statement as the loss of the eigenbasis. A quantity that responds to the square root of a perturbation is responding to a defect.
 

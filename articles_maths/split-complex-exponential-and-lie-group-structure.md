@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article develops the Lie theory of the split-complex algebra $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[x]/(x^2-1)$. The algebra article defined $\mathbb{C}_{\mathrm{spl}}$ with basis $1$, $j$, $j^2 = +1$; the norm article identified the units ${\mathbb{C}_{\mathrm{spl}}}^\times$ with the elements of nonzero norm $\langle Q\rangle_{*} = q^2-q'^2$; and the idempotent article supplied the decomposition $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\oplus\mathbb{R}$. Here these are assembled into the standard theory of ${\mathbb{C}_{\mathrm{spl}}}^\times$ as a Lie group, of $\mathbb{C}_{\mathrm{spl}}$ as its abelian Lie algebra, and of the exponential map. It is the two-dimensional counterpart of the Lie theory of the higher members of the family, and every statement is a special case of the elementary Lie theory of $\mathbb{R}^\times$ and its square.
+This article develops the Lie theory of the split-complex algebra $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[x]/(x^2-1)$. The algebra article defined $\mathbb{C}_{\mathrm{spl}}$ with basis $1$, $j$, $j^2 = +1$; the norm article identified the units ${\mathbb{C}_{\mathrm{spl}}}^\times$ with the elements of nonzero norm $\langle Q\rangle_{*} = q^2-q'{}^2$; and the idempotent article supplied the decomposition $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\oplus\mathbb{R}$. Here these are assembled into the standard theory of ${\mathbb{C}_{\mathrm{spl}}}^\times$ as a Lie group, of $\mathbb{C}_{\mathrm{spl}}$ as its abelian Lie algebra, and of the exponential map. It is the two-dimensional counterpart of the Lie theory of the higher members of the family, and every statement is a special case of the elementary Lie theory of $\mathbb{R}^\times$ and its square.
 
 The one point that governs everything below is that $\mathbb{C}_{\mathrm{spl}}$ is **commutative**. Its commutator bracket vanishes, so it is an abelian Lie algebra; the exponential of a sum is the product of the exponentials; and the exponential map is a local diffeomorphism everywhere but is injective, unlike the matrix case. The price is a small group of invertibles: ${\mathbb{C}_{\mathrm{spl}}}^\times$ has **four components** rather than being connected, and the exponential reaches only the identity component. The article states this geometry exactly.
 
@@ -100,10 +100,10 @@ $$
 whose inverse is
 
 $$
-\exp^{-1}(q + jq') = \tfrac12 \ln(q^2 - q'^2) + \operatorname{artanh}\!\Bigl(\frac{q'}{q}\Bigr) j, \qquad q > \lvert q'\rvert .
+\exp^{-1}(q + jq') = \tfrac12 \ln(q^2 - q'{}^2) + \operatorname{artanh}\!\Bigl(\frac{q'}{q}\Bigr) j, \qquad q > \lvert q'\rvert .
 $$
 
-**Proof.** On the identity component $q > \lvert q'\rvert$ one has $q^2 - q'^2 > 0$ and $\lvert q'/q\rvert < 1$, so the stated inverse is defined and smooth. Composing the two maps in either order returns the argument, using $\cosh^2 q' - \sinh^2 q' = 1$ and the addition formulas for $\cosh$ and $\sinh$; hence both are bijections and, being smooth with smooth inverse, diffeomorphisms.
+**Proof.** On the identity component $q > \lvert q'\rvert$ one has $q^2 - q'{}^2 > 0$ and $\lvert q'/q\rvert < 1$, so the stated inverse is defined and smooth. Composing the two maps in either order returns the argument, using $\cosh^2 q' - \sinh^2 q' = 1$ and the addition formulas for $\cosh$ and $\sinh$; hence both are bijections and, being smooth with smooth inverse, diffeomorphisms.
 
 **Corollary (the exponential is injective, and not surjective).** If $\exp(Q) = 1$ then $\exp(Q_+) = \exp(Q_-) = 1$, and since the real exponential is injective this gives $Q_+ = Q_- = 0$, so $Q = 0$: the kernel of $\exp$ is trivial. The image is the identity component only, so $\exp$ is not surjective onto ${\mathbb{C}_{\mathrm{spl}}}^\times$ and misses the three components of negative $Q_+$ or negative $Q_-$.
 
@@ -157,7 +157,7 @@ $$
 
 with two connected components ${\mathbb{C}_{\mathrm{spl}}}_0^{(1)} = \{\exp(jt)\}$ and $-{\mathbb{C}_{\mathrm{spl}}}_0^{(1)} = \{-\exp(jt)\}$. The hyperbolic subgroup ${\mathbb{C}_{\mathrm{spl}}}_0^{(1)} \cong (\mathbb{R}, +)$ is a **non-compact** one-parameter group, and $\pi_0({\mathbb{C}_{\mathrm{spl}}}^{(1)}) = \mathbb{Z}/2$, $\pi_1({\mathbb{C}_{\mathrm{spl}}}^{(1)}) = 0$.
 
-**Proof.** $\langle Q\rangle_{*} = 1$ is the hyperbola $q^2 - q'^2 = 1$ with the two branches $q = \pm\sqrt{1+q'^2} > 0$ or $< 0$; the branch $q>0$ is parametrised bijectively by $q' = \sinh t$, $q = \cosh t$, and equals $\{\exp(jt)\}$ by the closed form of the exponential. The branch $q<0$ is its negative. The parametrisation $t\mapsto \exp(jt)$ is a group isomorphism onto the first branch because $\exp(jt)\exp(js) = \exp(j(t+s))$, and $\mathbb{R}$ is non-compact and contractible.
+**Proof.** $\langle Q\rangle_{*} = 1$ is the hyperbola $q^2 - q'{}^2 = 1$ with the two branches $q = \pm\sqrt{1+q'{}^2} > 0$ or $< 0$; the branch $q>0$ is parametrised bijectively by $q' = \sinh t$, $q = \cosh t$, and equals $\{\exp(jt)\}$ by the closed form of the exponential. The branch $q<0$ is its negative. The parametrisation $t\mapsto \exp(jt)$ is a group isomorphism onto the first branch because $\exp(jt)\exp(js) = \exp(j(t+s))$, and $\mathbb{R}$ is non-compact and contractible.
 
 **Corollary (the decomposition of the group of invertibles).** Combining the component count with the hyperbolic subgroup,
 
@@ -206,7 +206,7 @@ The group of invertibles is ${\mathbb{C}_{\mathrm{spl}}}^\times\cong\mathbb{R}^\
 | $\mathbb{C}_{\mathrm{spl}}$ | Split complex algebra, abelian Lie algebra of dimension $2$ |
 | $Q = q + jq'$ | General split complex number |
 | $[Q,B] = QB - BQ$ | Commutator; identically zero |
-| $\langle Q\rangle_{*} = q^2 - q'^2$ | Norm |
+| $\langle Q\rangle_{*} = q^2 - q'{}^2$ | Norm |
 | $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents, basis of the abelian decomposition |
 | $Q_\pm = q\pm q'$ | Idempotent coordinates |
 | $\exp(Q)$ | Exponential; $= \exp(Q_+)\Pi_+ + \exp(Q_-)\Pi_-$ |

@@ -4,6 +4,8 @@
 
 The standing of this article. Everything below is standard theory, written in the corpus's coordinates and notation. It is standard input, not a framework result. Colour is the sharpest boundary in this corpus: by [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), any compact gauge algebra inside $\mathbb{B}$ has real dimension at most four and every $\mathbb{B}$-module has even complex dimension, so neither $SU(3)$ nor a colour triplet is available in the algebra. The strong sector is therefore transcribed, and the article says so before it prints the Lagrangian. What it adds to a textbook display is three things: the Feynman rules derived from this particular Lagrangian rather than quoted, with the sign of every vertex fixed by the same $g_s$; the colour arithmetic computed and checked; and one table that separates what is imported from what, if anything, the algebra contributes.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 The claim. Quantum chromodynamics is one Lagrangian with four pieces and four vertices.
 
 $$
@@ -51,7 +53,7 @@ Four measurements, one conclusion. Each of the four sees $N_c$ in a different wa
 | Measurement | Dependence on $N_c$ | What is seen |
 |---|---|---|
 | $R=\sigma(e^+e^-\to\text{hadrons})/\sigma(e^+e^-\to\mu^+\mu^-)$ | $N_c\sum_fQ_f^2$ | $11/3$ above the bottom threshold, against $3.9$ measured |
-| $\Gamma(\pi^0\to\gamma\gamma)$ | $N_c^2$ | $7.8$ eV, against $7.6$ eV predicted for $N_c=3$ |
+| $\Gamma(\pi^0\to\gamma\gamma)$ | $N_c^2$ | $1.2\times10^{-18}\ \mathrm{J}$, against $1.2\times10^{-18}\ \mathrm{J}$ predicted for $N_c=3$ |
 | $\Gamma(Z\to\text{hadrons})/\Gamma(Z\to\ell^+\ell^-)$ | $N_c$ | $20.77$, the factor three times the coupling ratio |
 | Existence of $\mathcal{B}^{++}$ and $\Omega^-$ | rank of the antisymmetric invariant | three quarks in a totally antisymmetric colour state |
 
@@ -61,7 +63,7 @@ $$
 R=N_c\sum_fQ_f^2 ,
 $$
 
-so that $R=2$ below the charm threshold, $10/3$ below the bottom, $11/3$ below the top and $5$ above it. The measured values follow this staircase, with a residual excess of order $\alpha_s/\pi$: at $34$ GeV the parton-model $11/3=3.67$ becomes $3.8$ once the first-order correction is included, against $3.9$ measured.
+so that $R=2$ below the charm threshold, $10/3$ below the bottom, $11/3$ below the top and $5$ above it. The measured values follow this staircase, with a residual excess of order $\alpha_s/\pi$: at $5.4\times10^{-9}\ \mathrm{J}$ the parton-model $11/3=3.67$ becomes $3.8$ once the first-order correction is included, against $3.9$ measured.
 
 Counting versus structure. The first three measurements count colour states, and each would move if the count were four: $R$ would be $4\sum_fQ_f^2$ and the $Z$ hadronic width larger by a third, and both are excluded. The fourth measurement does something different. A baryon is a colour singlet, and the only invariant tensor available to build one from $N_c$ triplets is the totally antisymmetric $\epsilon$ of rank $N_c$. The $\mathcal{B}^{++}$ is $uuu$ with $J=3/2$ and zero orbital angular momentum, so its spin–flavour wavefunction is totally symmetric, and Fermi statistics forces its colour wavefunction to be totally antisymmetric. A totally antisymmetric three-index invariant exists only for $N_c=3$. The particle's existence is therefore the statement that the antisymmetriser has exactly three slots.
 

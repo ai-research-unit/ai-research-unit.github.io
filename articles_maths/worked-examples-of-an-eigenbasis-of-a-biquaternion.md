@@ -24,7 +24,7 @@ $$
 \tilde Q\tilde\Pi_{\mathrm{id},-}=\lambda_-\tilde\Pi_{\mathrm{id},-}.
 $$
 
-The eight cases cover five spectrally regular elements with $B\neq0$, two spectrally degenerate elements with $B=0$ and $\vec Q\neq0$, and the scalar $e_t$. In the tables, *distinct* names the spectrally regular regime, and *Jordan* and *scalar* name the two spectrally degenerate regimes. In the eigenbasis a general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with the matrix $\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}$; its two columns are the two spinors.
+The eight cases cover five spectrally regular elements with $B\neq0$, two spectrally degenerate elements with $B=0$ and $\vec Q\neq0$, and the scalar $e_t$. In the tables, *distinct* names the spectrally regular regime, and *Jordan* and *scalar* name the two spectrally degenerate regimes. In the eigenbasis a general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with the matrix $\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}$; its two columns are the two spinors.
 
 | Regime | Case | Spectral reading |
 |---|---|---|
@@ -318,7 +318,7 @@ The spaces $S_\pm$ are the spinor spaces, the Peirce carriers and here the minim
 A spinor of the first Peirce copy is an element of $S_+$,
 
 $$
-\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+},
+\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,21}\vec\Pi_{\mathrm{nil},+},
 \qquad
 Q_{2,11},Q_{2,21}\in\mathbb{C},
 $$
@@ -332,7 +332,7 @@ $$
 A spinor of the second Peirce copy is an element of $S_-$,
 
 $$
-\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-},
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-},
 \qquad
 Q_{2,12},Q_{2,22}\in\mathbb{C},
 $$
@@ -362,7 +362,7 @@ $$
 gives the eigenbasis model $\mathsf M_2^Q$. For a general element
 
 $$
-\tilde Q_2=a_{11}\tilde\Pi_{\mathrm{id},++a}_{12}\vec\Pi_{\mathrm{nil},-+a}_{21}\vec\Pi_{\mathrm{nil},++a}_{22}\tilde\Pi_{\mathrm{id},-},
+\tilde Q_2=a_{11}\tilde\Pi_{\mathrm{id},++a}{}_{12}\vec\Pi_{\mathrm{nil},-+a}{}_{21}\vec\Pi_{\mathrm{nil},++a}{}_{22}\tilde\Pi_{\mathrm{id},-},
 $$
 
 the matrix is
@@ -594,15 +594,15 @@ $$
 \mathsf M_2^Q(\tilde Q)=\operatorname{diag}(i,-i).
 $$
 
-**Spinors.** A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
+**Spinors.** A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
 $$
 \mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}
 $$
 in the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$. Its two columns are the two spinors:
 $$
-\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
+\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
@@ -725,15 +725,15 @@ $$
 \operatorname{diag}\left(\frac{1+i}{\sqrt2},\frac{1-i}{\sqrt2}\right).
 $$
 
-**Spinors.** A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
+**Spinors.** A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
 $$
 \mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}
 $$
 in the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$. Its two columns are the two spinors:
 $$
-\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
+\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
@@ -862,15 +862,15 @@ $$
 \mathsf M_2^Q(\tilde Q)=\operatorname{diag}(\sqrt2-1,\sqrt2+1).
 $$
 
-**Spinors.** A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
+**Spinors.** A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
 $$
 \mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}
 $$
 in the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$. Its two columns are the two spinors:
 $$
-\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
+\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
@@ -999,15 +999,15 @@ $$
 \mathsf M_2^Q(\tilde Q)=\operatorname{diag}\bigl(a(1+i),b(1-i)\bigr).
 $$
 
-**Spinors.** A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
+**Spinors.** A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
 $$
 \mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}
 $$
 in the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$. Its two columns are the two spinors:
 $$
-\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
+\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
@@ -1291,15 +1291,15 @@ $$
 \mathsf M_2^Q(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-).
 $$
 
-**Spinors.** A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
+**Spinors.** A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
 $$
 \mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}
 $$
 in the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$. Its two columns are the two spinors:
 $$
-\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
+\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$

@@ -16,7 +16,7 @@ The treatment is purely mathematical. No physics is invoked; "null cone" names t
 The **Euclidean norm** of an element is the positive square root of the real part of its split-biquaternion norm,
 
 $$
-\|\tilde{Q}\| = \left(\sum_\mu (q_\mu^2 + q'^2_\mu)\right)^{1/2} = \left(\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural}\right)^{1/2} ,
+\|\tilde{Q}\| = \left(\sum_\mu (q_\mu^2 + q'{}^2_\mu)\right)^{1/2} = \left(\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural}\right)^{1/2} ,
 $$
 
 and it is a genuine norm: it is positive definite because the real part of $\langle\cdot\rangle_{\natural}$ is a sum of squares. The algebra is thus a Euclidean space of dimension $8$, and all the polar and homotopy statements below use this norm.
@@ -33,10 +33,10 @@ The unit sphere of the Euclidean norm is **not** the norm-one group: the norm-on
 
 ## The Null Cone
 
-**Definition.** The **null cone** of the algebra is the zero set of the Hermitian form of scalar part $g(\tilde{Q}) = \sum_\mu (q_\mu^2 - q'^2_\mu)$:
+**Definition.** The **null cone** of the algebra is the zero set of the Hermitian form of scalar part $g(\tilde{Q}) = \sum_\mu (q_\mu^2 - q'{}^2_\mu)$:
 
 $$
-C = \left\{ \tilde{Q} \in \mathbb{B}_{\mathrm{spl}} : g(\tilde{Q}) = 0 \right\} , \qquad g(\tilde{Q}) = 0 \iff \sum_\mu q_\mu^2 = \sum_\mu q'^2_\mu .
+C = \left\{ \tilde{Q} \in \mathbb{B}_{\mathrm{spl}} : g(\tilde{Q}) = 0 \right\} , \qquad g(\tilde{Q}) = 0 \iff \sum_\mu q_\mu^2 = \sum_\mu q'{}^2_\mu .
 $$
 
 **Proposition.** The null cone $C$ is a closed cone of dimension $7$ through the origin, connected when the origin is removed, and the split-biquaternion norm $\langle\cdot\rangle_{\natural}$ vanishes on no point of $C$ except the origin.
@@ -106,7 +106,7 @@ The algebra is $\mathbb{R}^8$, hence contractible, and its punctured form is hom
 | $\mathbb{B}_{\mathrm{spl}} \cong \mathbb{R}^8$ | The algebra as a topological space |
 | $\|\tilde{Q}\| = (\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural})^{1/2}$ | Euclidean norm |
 | $S_{\mathbb{E}} = \{\|\tilde{Q}\| = 1\} \cong S^7$ | Euclidean unit sphere |
-| $g(\tilde{Q}) = \langle\tilde Q\rangle_{*} = \sum_\mu(q_\mu^2 - q'^2_\mu)$ | Hermitian norm, the diagonal of the Hermitian form, inertia $(4,4)$ |
+| $g(\tilde{Q}) = \langle\tilde Q\rangle_{*} = \sum_\mu(q_\mu^2 - q'{}^2_\mu)$ | Hermitian norm, the diagonal of the Hermitian form, inertia $(4,4)$ |
 | $C = \{g = 0\}$ | Null cone, dimension $7$ |
 | $L = C\cap S_{\mathbb{E}} \cong S^3\times S^3$ | Link of the null cone |
 | $Z_\pm = \{\tilde{Q}_\pm = 0\}$ | The two four-dimensional zero divisor subspaces |

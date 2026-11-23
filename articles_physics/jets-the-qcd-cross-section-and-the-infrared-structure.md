@@ -4,6 +4,8 @@
 
 The standing of this article. Everything below is standard theory, written in the corpus's coordinates and notation. It is standard input, not a framework result. Colour is the sharpest boundary in this corpus: by [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), no compact gauge algebra inside $\mathbb{B}$ has real dimension above four and no $\mathbb{B}$-module has odd complex dimension, so neither $SU(3)$ nor a triplet is available. The strong sector is transcribed, and this article is the one where the transcription has to confront the fact that its own perturbation series is divergent term by term.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 Why this article is different from its neighbours. The previous three computed quantities that were finite. This one computes quantities whose individual terms are infinite. Every real-emission diagram at order $\alpha_s$ diverges when a gluon is soft or collinear, and every virtual diagram diverges at the same points; only their sum is finite. The article's subject is that cancellation, why it is guaranteed, what it costs, and what happens when it does not happen.
 
 The claim. Four statements carry the article.
@@ -11,7 +13,7 @@ The claim. Four statements carry the article.
 - The total cross section is computable and blind. $R=3\sum_fQ_f^2(1+\alpha_s/\pi+\dots)$ is the cleanest QCD prediction and the bluntest coupling determination, because the correction is only four per cent.
 - A jet is a definition, and the definition is part of the prediction. Change the resolution and you change the number; a prediction without a stated algorithm is not a prediction.
 - The divergences cancel because the measurement is inclusive. Bloch–Nordsieck for the soft ones, Kinoshita–Lee–Nauenberg for the collinear ones, and the physical statement behind both is that a hard process is unobservable in isolation: it is always accompanied by an indeterminate number of soft quanta.
-- What survives the cancellation is a logarithm, and the logarithms must be summed. The leading double log is $\frac{2\alpha_sC_F}{\pi}\ln^2$, it is $0.84$ at a $5$ GeV resolution and passes unity at about $3$ GeV, which is where the cutoffs sit, and the sum of all orders is an exponential — the Sudakov form factor — which is the parton shower.
+- What survives the cancellation is a logarithm, and the logarithms must be summed. The leading double log is $\frac{2\alpha_sC_F}{\pi}\ln^2$, it is $0.84$ at a $8.0\times10^{-10}\ \mathrm{J}$ resolution and passes unity at about $4.8\times10^{-10}\ \mathrm{J}$, which is where the cutoffs sit, and the sum of all orders is an exponential — the Sudakov form factor — which is the parton shower.
 
 The order. $R$, then jets and why their definition matters, then the three-jet rate, then the two divergences, then their cancellation, then the splitting functions with their sum rules computed, then the double logarithm, then the Sudakov exponent, then the shower, then hadronisation, then the definition of an infrared-safe observable, then the ledger.
 
@@ -40,11 +42,11 @@ The corrections, evaluated. With $\alpha_s$ run from $\alpha_s(M_Z)=0.1179$ by [
 
 | $\sqrt s$ | $N_f$ | $\alpha_s$ | $R_0$ | $R$ at order $\alpha_s$ | $R$ at order $\alpha_s^2$ |
 |---|---|---|---|---|---|
-| $34$ GeV | $4$ | $0.1374$ | $3.333$ | $3.479$ | $3.486$ |
-| $34$ GeV | $5$ | $0.1374$ | $3.667$ | $3.827$ | $3.835$ |
+| $5.4\times10^{-9}\ \mathrm{J}$ | $4$ | $0.1374$ | $3.333$ | $3.479$ | $3.486$ |
+| $5.4\times10^{-9}\ \mathrm{J}$ | $5$ | $0.1374$ | $3.667$ | $3.827$ | $3.835$ |
 | $M_Z$ | $5$ | $0.1179$ | $3.667$ | $3.804$ | $3.810$ |
 
-The measured value on the $b$-inclusive plateau below the $Z$ is about $3.9$, and the third row's $3.81$ is within two and a half per cent of it, against a number that also carries electroweak and radiative corrections of that size. The two $34$ GeV rows are not two measurements: the coupling is not re-run between them, only the flavour content of the sum changes, and that is what isolates the threshold step. The agreement is good; it is not a precision test, and the next paragraph says why.
+The measured value on the $b$-inclusive plateau below the $Z$ is about $3.9$, and the third row's $3.81$ is within two and a half per cent of it, against a number that also carries electroweak and radiative corrections of that size. The two $5.4\times10^{-9}\ \mathrm{J}$ rows are not two measurements: the coupling is not re-run between them, only the flavour content of the sum changes, and that is what isolates the threshold step. The agreement is good; it is not a precision test, and the next paragraph says why.
 
 Why $R$ is a blunt instrument. The correction is $\alpha_s/\pi\approx0.04$. A two per cent measurement of $R$ is therefore a two per cent measurement of a four per cent effect, and in coupling units
 
@@ -178,7 +180,7 @@ $$
 
 where the factor two counts the two fermions of the dipole. This is the mean number of emissions above the resolution, and it is the exponent of the no-emission probability.
 
-The number, and why it matters. At $Q=M_Z$ with $\alpha_s=0.118$ and $Q_0=5$ GeV, $\ln(91.19/5)=2.903$ and
+The number, and why it matters. At $Q=M_Z$ with $\alpha_s=0.118$ and $Q_0=8.0\times10^{-10}\ \mathrm{J}$, $\ln(91.19/5)=2.903$ and
 
 $$
 W=\frac{2\times0.1179\times\frac43}{\pi}\times2.904^2=0.844 .
@@ -202,22 +204,22 @@ The numbers.
 
 | $Q_0$ | $\ln(Q/Q_0)$ | $W$ | $\mathcal{P}_{\mathrm{jet}}$ | $\langle n\rangle=-\ln\mathcal{P}_{\mathrm{jet}}$ | $1-\mathcal{P}_{\mathrm{jet}}$ |
 |---|---|---|---|---|---|
-| $3$ GeV | $3.414$ | $1.167$ | $0.311$ | $1.167$ | $0.689$ |
-| $5$ GeV | $2.904$ | $0.844$ | $0.430$ | $0.844$ | $0.570$ |
-| $10$ GeV | $2.210$ | $0.489$ | $0.613$ | $0.489$ | $0.387$ |
-| $20$ GeV | $1.517$ | $0.230$ | $0.794$ | $0.230$ | $0.206$ |
-| $40$ GeV | $0.824$ | $0.068$ | $0.934$ | $0.068$ | $0.066$ |
+| $4.8\times10^{-10}\ \mathrm{J}$ | $3.414$ | $1.167$ | $0.311$ | $1.167$ | $0.689$ |
+| $8.0\times10^{-10}\ \mathrm{J}$ | $2.904$ | $0.844$ | $0.430$ | $0.844$ | $0.570$ |
+| $1.6\times10^{-9}\ \mathrm{J}$ | $2.210$ | $0.489$ | $0.613$ | $0.489$ | $0.387$ |
+| $3.2\times10^{-9}\ \mathrm{J}$ | $1.517$ | $0.230$ | $0.794$ | $0.230$ | $0.206$ |
+| $6.4\times10^{-9}\ \mathrm{J}$ | $0.824$ | $0.068$ | $0.934$ | $0.068$ | $0.066$ |
 
-What the table says. At a resolution of $5$ GeV, only $43$ per cent of $Z$ events are two-jet; at $20$ GeV, $79$ per cent are. Both numbers are of the order of what is seen, and neither is a prediction of the measured two-jet fraction, because the leading-log exponent is only the first term of the exponent. The table's real content is the trend: the two-jet fraction is not a constant of nature but a function of the resolution, falling as the resolution tightens, and the fall is the exponential of a squared logarithm.
+What the table says. At a resolution of $8.0\times10^{-10}\ \mathrm{J}$, only $43$ per cent of $Z$ events are two-jet; at $3.2\times10^{-9}\ \mathrm{J}$, $79$ per cent are. Both numbers are of the order of what is seen, and neither is a prediction of the measured two-jet fraction, because the leading-log exponent is only the first term of the exponent. The table's real content is the trend: the two-jet fraction is not a constant of nature but a function of the resolution, falling as the resolution tightens, and the fall is the exponential of a squared logarithm.
 
-The improvement that matters. Replacing one of the two logs by $\ln(Q/\Lambda_{\mathrm{eff}})$, which is what the modified leading-log approximation does, changes the exponent from $0.844$ to $1.779$ at $Q_0=5$ GeV, and the no-emission probability from $0.43$ to $0.17$. The scale here is $\Lambda_{\mathrm{eff}}=0.2$ GeV, $\ln(Q/\Lambda_{\mathrm{eff}})=6.122$, and it is not $\Lambda_5$ of the running article, which is $87$ MeV: the MLLA logarithm absorbs a constant, so its argument carries an effective scale larger than any of the $\Lambda_{N_f}$. That factor of two is the size of the leading correction to the leading logarithm, and it is why a shower that used only the double log would put the two-jet fraction at $0.43$ where the improved exponent gives $0.17$ — a factor of two and a half, from one power of the logarithm. The article states the improved numbers rather than hiding the gap:
+The improvement that matters. Replacing one of the two logs by $\ln(Q/\Lambda_{\mathrm{eff}})$, which is what the modified leading-log approximation does, changes the exponent from $0.844$ to $1.779$ at $Q_0=8.0\times10^{-10}\ \mathrm{J}$, and the no-emission probability from $0.43$ to $0.17$. The scale here is $\Lambda_{\mathrm{eff}}=3.2\times10^{-11}\ \mathrm{J}$, $\ln(Q/\Lambda_{\mathrm{eff}})=6.122$, and it is not $\Lambda_5$ of the running article, which is $1.39\times10^{-11}$ J: the MLLA logarithm absorbs a constant, so its argument carries an effective scale larger than any of the $\Lambda_{N_f}$. That factor of two is the size of the leading correction to the leading logarithm, and it is why a shower that used only the double log would put the two-jet fraction at $0.43$ where the improved exponent gives $0.17$ — a factor of two and a half, from one power of the logarithm. The article states the improved numbers rather than hiding the gap:
 
 | $Q_0$ | $W$ (double log) | $W$ (one log improved) | $\mathcal{P}_{\mathrm{jet}}$ (double log) | $\mathcal{P}_{\mathrm{jet}}$ (improved) |
 |---|---|---|---|---|
-| $3$ GeV | $1.167$ | $2.092$ | $0.311$ | $0.123$ |
-| $5$ GeV | $0.844$ | $1.779$ | $0.430$ | $0.169$ |
-| $10$ GeV | $0.489$ | $1.354$ | $0.613$ | $0.258$ |
-| $20$ GeV | $0.230$ | $0.930$ | $0.794$ | $0.395$ |
+| $4.8\times10^{-10}\ \mathrm{J}$ | $1.167$ | $2.092$ | $0.311$ | $0.123$ |
+| $8.0\times10^{-10}\ \mathrm{J}$ | $0.844$ | $1.779$ | $0.430$ | $0.169$ |
+| $1.6\times10^{-9}\ \mathrm{J}$ | $0.489$ | $1.354$ | $0.613$ | $0.258$ |
+| $3.2\times10^{-9}\ \mathrm{J}$ | $0.230$ | $0.930$ | $0.794$ | $0.395$ |
 
 ## The Parton Shower
 
@@ -237,21 +239,21 @@ Why the ordering variable is not optional. A shower must order its emissions in 
 
 ## Hadronisation and the Size of the Correction
 
-The non-perturbative part. Below a cutoff of order $1$ GeV the coupling is of order one, the shower stops, and a model converts partons into hadrons: string fragmentation, cluster fragmentation, or a combination. The model has parameters that are fitted, and its output is a set of hadrons whose momenta are then clustered into jets by the same algorithm as the data.
+The non-perturbative part. Below a cutoff of order $1.6\times10^{-10}\ \mathrm{J}$ the coupling is of order one, the shower stops, and a model converts partons into hadrons: string fragmentation, cluster fragmentation, or a combination. The model has parameters that are fitted, and its output is a set of hadrons whose momenta are then clustered into jets by the same algorithm as the data.
 
-The size, in the observable that matters. For event shapes the hadronisation correction is approximately $0.5$ GeV divided by the hard scale, so
+The size, in the observable that matters. For event shapes the hadronisation correction is approximately $8.0\times10^{-11}\ \mathrm{J}$ divided by the hard scale, so
 
 $$
-\langle1-T\rangle_{\text{had}}\approx\frac{0.5\ \mathrm{GeV}}{Q} :
+\langle1-T\rangle_{\text{had}}\approx\frac{8.0\times10^{-11}\ \mathrm{J}}{Q} :
 \qquad
-0.036\text{ at }14\ \mathrm{GeV},\quad
-0.015\text{ at }34\ \mathrm{GeV},\quad
+0.036\text{ at }2.2\times10^{-9}\ \mathrm{J},\quad
+0.015\text{ at }5.4\times10^{-9}\ \mathrm{J},\quad
 0.0055\text{ at }M_Z .
 $$
 
-At $M_Z$ the perturbative value is about $0.05$, so the hadronisation correction is roughly ten per cent. At $14$ GeV the perturbative value is not $0.05$ but about $0.07$: the coupling there is $0.167$ against $0.118$, and an event shape scales roughly with $\alpha_s$, so the correction is about half the perturbative value rather than seventy per cent of a fixed one. Holding both numbers fixed while moving the energy would be the wrong comparison, and half is still large enough to matter — which is why low-energy event-shape fits to $\alpha_s$ are unreliable and why the precision determinations are done at the $Z$.
+At $M_Z$ the perturbative value is about $0.05$, so the hadronisation correction is roughly ten per cent. At $2.2\times10^{-9}\ \mathrm{J}$ the perturbative value is not $0.05$ but about $0.07$: the coupling there is $0.167$ against $0.118$, and an event shape scales roughly with $\alpha_s$, so the correction is about half the perturbative value rather than seventy per cent of a fixed one. Holding both numbers fixed while moving the energy would be the wrong comparison, and half is still large enough to matter — which is why low-energy event-shape fits to $\alpha_s$ are unreliable and why the precision determinations are done at the $Z$.
 
-Why the $1/Q$ scaling is not an accident. The hadronisation correction scales as a power because it is a non-perturbative mass scale divided by the hard scale — the same dimensional argument that makes a form factor fall as $1/Q^2$. So the correction vanishes in the limit, which is the statement that QCD's predictions become exact at short distances; and it vanishes slowly, as the first power, which is why a ten per cent correction survives at $91$ GeV.
+Why the $1/Q$ scaling is not an accident. The hadronisation correction scales as a power because it is a non-perturbative mass scale divided by the hard scale — the same dimensional argument that makes a form factor fall as $1/Q^2$. So the correction vanishes in the limit, which is the statement that QCD's predictions become exact at short distances; and it vanishes slowly, as the first power, which is why a ten per cent correction survives at $1.5\times10^{-8}\ \mathrm{J}$.
 
 The honest accounting, and the LEP number. Fits to LEP event shapes with resummation and hadronisation corrections give $\alpha_s(M_Z)$ around $0.12$, consistent with the $Z$ lineshape value and with the $0.119$ of [the Gross–Llewellyn Smith analysis](the-parton-model-and-deep-inelastic-scattering.html). The consistency of three methods with different systematics — a lineshape ratio, a first moment, and a shape distribution with a fitted non-perturbative correction — is the real evidence that $\alpha_s$ is a parameter of QCD rather than of one analysis.
 
@@ -315,7 +317,7 @@ Two divergences exist, soft ($dE/E$) and collinear ($d\theta/\theta$), and they 
 
 The splitting functions satisfy sum rules that were computed here: $\int P_{qq}=0$ exactly (quark number), $\int zP_{qq}=-\tfrac{16}{9}$, $\int zP_{gq}=+\tfrac{16}{9}$, $\int P_{qg}=\tfrac13$, and $\int z[P_{qq}+P_{gq}]=0$ exactly — energy conservation on the quark line, which no one imposed, with the grid residual at $1.4\times10^{-14}$.
 
-The double logarithm $\frac{2\alpha_sC_F}{\pi}\ln^2(Q/Q_0)$ is $0.84$ at $M_Z$ with $Q_0=5$ GeV, and its exponential is the Sudakov form factor: the two-jet fraction falls from $0.93$ at a $40$ GeV resolution to $0.43$ at $5$ GeV. Improving one logarithm to $\ln(Q/\Lambda_{\mathrm{eff}})$ moves the exponent from $0.84$ to $1.78$ — a factor of two in the exponent, which is the size of the leading correction. The parton shower is that exponent plus a random number generator, ordered in angle so that the coherence is right, cut off at a scale where a fitted hadronisation model takes over; the hadronisation correction to an event shape is $0.5$ GeV$/Q$, ten per cent at $M_Z$ and about half at $14$ GeV, where the perturbative value itself has grown.
+The double logarithm $\frac{2\alpha_sC_F}{\pi}\ln^2(Q/Q_0)$ is $0.84$ at $M_Z$ with $Q_0=8.0\times10^{-10}\ \mathrm{J}$, and its exponential is the Sudakov form factor: the two-jet fraction falls from $0.93$ at a $6.4\times10^{-9}\ \mathrm{J}$ resolution to $0.43$ at $8.0\times10^{-10}\ \mathrm{J}$. Improving one logarithm to $\ln(Q/\Lambda_{\mathrm{eff}})$ moves the exponent from $0.84$ to $1.78$ — a factor of two in the exponent, which is the size of the leading correction. The parton shower is that exponent plus a random number generator, ordered in angle so that the coherence is right, cut off at a scale where a fitted hadronisation model takes over; the hadronisation correction to an event shape is $8.0\times10^{-11}\ \mathrm{J}$$/Q$, ten per cent at $M_Z$ and about half at $2.2\times10^{-9}\ \mathrm{J}$, where the perturbative value itself has grown.
 
 An infrared-safe observable is one whose value does not change under a soft emission or a collinear splitting, and the safe ones are exactly those the asymptotic algebra can see.
 
@@ -340,7 +342,7 @@ The framework supplies the null direction and the form of the interference, and 
 | $W$ | $\frac{2\alpha_sC_F}{\pi}\ln^2(Q/Q_0)$, the double-log exponent |
 | $\mathcal{R}_{\mathrm{ev}}(Q,Q_0)$ | Sudakov form factor, $e^{-W}$ |
 | $Q_0$ | Resolution or cutoff scale |
-| $\Lambda_{\mathrm{eff}}$ | Effective scale of the MLLA logarithm, $0.2$ GeV; not $\Lambda_{N_f}$ |
+| $\Lambda_{\mathrm{eff}}$ | Effective scale of the MLLA logarithm, $3.2\times10^{-11}\ \mathrm{J}$; not $\Lambda_{N_f}$ |
 | $C_F=4/3$ | Quadratic Casimir of the triplet; the quark's colour charge |
 | $N_c=3$ | Number of colours |
 | $N_f$ | Number of flavours kinematically open at the scale |

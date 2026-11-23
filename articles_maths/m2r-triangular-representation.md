@@ -369,8 +369,8 @@ but the transpose is neither: it is the model of the *other* convention, $\rho_{
 **No conformality.** The consequence is that the members of the image are not similarities. Indeed
 
 $$
-\mathsf{M}_2(Q)^{\mathsf T}\mathsf{M}_2(Q)=\begin{pmatrix}q^{2}&qq'\\ qq'&q^{2}+q'^{2}\end{pmatrix}
-=q^{2}I_2+\begin{pmatrix}0&qq'\\ qq'&q'^{2}\end{pmatrix},
+\mathsf{M}_2(Q)^{\mathsf T}\mathsf{M}_2(Q)=\begin{pmatrix}q^{2}&qq'\\ qq'&q^{2}+q'{}^{2}\end{pmatrix}
+=q^{2}I_2+\begin{pmatrix}0&qq'\\ qq'&q'{}^{2}\end{pmatrix},
 $$
 
 so the matrix is conformal exactly when $q'=0$, and then it is scalar. The only normal matrices in the image are the scalars. The complex and split categories were conformal everywhere; the dual category is conformal on a line, and elsewhere the member is a shear with unequal singular values. For example $\mathsf{M}_2(1+2\varepsilon)=\begin{pmatrix}1&2\\0&1\end{pmatrix}$ has singular values $\sqrt2+1$ and $\sqrt2-1$, of product $1$, the determinant: the shear stretches one direction and compresses another, and it is not a rotation followed by a scale.
@@ -399,7 +399,7 @@ the lower triangular Toeplitz subalgebra. So the ambient carries two copies of t
 **The Frobenius form is the only nondegenerate one.** On the image it is
 
 $$
-\langle\mathsf{M}_2(Q)\rangle_*=2q^{2}+q'^{2},
+\langle\mathsf{M}_2(Q)\rangle_*=2q^{2}+q'{}^{2},
 $$
 
 positive definite over $\mathbb{R}$, of Gram matrix $\operatorname{diag}(2,1)$, and on the whole ambient it is the standard inner product $\operatorname{tr}(A^{\mathsf T}B)$. It separates the infinitesimal direction, and it is not multiplicative, so it is a metric and not a norm of the algebra. The category therefore has once more the pattern of the block, one multiplicative degenerate form and one nondegenerate metric, with the roles exchanged: in the complex category the multiplicative form was the definite one and the metric the indefinite one.

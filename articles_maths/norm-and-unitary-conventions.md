@@ -26,8 +26,8 @@ The order is: the norm reading of the four letters, the qualified regular and de
 
 | bracket | form | algebraic norm | realified inertia | role |
 |---|---|---|---|---|
-| $\langle Q_1,Q_2\rangle=Q_1Q_2$ | plain, also quaternionic | $\langle Q\rangle=Q^2\in\mathbb{C}$, $\operatorname{Re}\langle Q\rangle=q^2-q'^2$ | $(1,1)$ | anisotropic; real part indefinite |
-| $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | Hermitian, also Krein | $\langle Q\rangle_{*}=Q\bar Q=q^2+q'^2$ | $(2,0)$ | definite; multiplicative; topology |
+| $\langle Q_1,Q_2\rangle=Q_1Q_2$ | plain, also quaternionic | $\langle Q\rangle=Q^2\in\mathbb{C}$, $\operatorname{Re}\langle Q\rangle=q^2-q'{}^2$ | $(1,1)$ | anisotropic; real part indefinite |
+| $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | Hermitian, also Krein | $\langle Q\rangle_{*}=Q\bar Q=q^2+q'{}^2$ | $(2,0)$ | definite; multiplicative; topology |
 
 In $\mathbb{C}$ the star bracket is definite and multiplicative at once. The plain norm is complex and anisotropic, $\langle Q\rangle=0$ only at $Q=0$; its real part is indefinite. The quaternion sign being the identity, the quaternionic bracket is the plain one and the Krein bracket the Hermitian one.
 
@@ -35,17 +35,17 @@ In $\mathbb{C}$ the star bracket is definite and multiplicative at once. The pla
 
 | bracket | form | algebraic norm | realified inertia | role |
 |---|---|---|---|---|
-| $\langle Q_1,Q_2\rangle=Q_1Q_2$ | plain, also quaternionic | $\langle Q\rangle=Q^2\in\mathbb{C}_{\mathrm{spl}}$, $\operatorname{Re}\langle Q\rangle=q^2+q'^2$ | $(2,0)$ | definite; topology; not multiplicative |
-| $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | Hermitian, also Krein | $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$ | $(1,1)$ | multiplicative; invertibility; null cone |
+| $\langle Q_1,Q_2\rangle=Q_1Q_2$ | plain, also quaternionic | $\langle Q\rangle=Q^2\in\mathbb{C}_{\mathrm{spl}}$, $\operatorname{Re}\langle Q\rangle=q^2+q'{}^2$ | $(2,0)$ | definite; topology; not multiplicative |
+| $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | Hermitian, also Krein | $\langle Q\rangle_{*}=Q\bar Q=q^2-q'{}^2$ | $(1,1)$ | multiplicative; invertibility; null cone |
 
-The two brackets exchange their inertias with the sign of the square of the coefficient unit: $i^2=-1$ makes the real part of the plain norm indefinite and the star norm definite, while $j^2=+1$ does the reverse. Definite and multiplicative are split across the two brackets, and no single bracket is both, since $(1+j)(1-j)=0$ with $1\pm j\neq0$. The topological norm is therefore $\sqrt{\operatorname{Re}\langle Q\rangle}$, with no modulus sign, and the scale of the polar factor is $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, which is multiplicative on the invertibles and is not a norm. Over the dual numbers $\mathbb{C}_{\mathrm{dln}}$ the square of the coefficient unit vanishes and both brackets realify to the rank-one form $q^2$; the algebraic norm is degenerate, and the topology is the Euclidean form $q^2+q'^2$ of the coefficient plane, which is not one of the brackets.
+The two brackets exchange their inertias with the sign of the square of the coefficient unit: $i^2=-1$ makes the real part of the plain norm indefinite and the star norm definite, while $j^2=+1$ does the reverse. Definite and multiplicative are split across the two brackets, and no single bracket is both, since $(1+j)(1-j)=0$ with $1\pm j\neq0$. The topological norm is therefore $\sqrt{\operatorname{Re}\langle Q\rangle}$, with no modulus sign, and the scale of the polar factor is $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, which is multiplicative on the invertibles and is not a norm. Over the dual numbers $\mathbb{C}_{\mathrm{dln}}$ the square of the coefficient unit vanishes and both brackets realify to the rank-one form $q^2$; the algebraic norm is degenerate, and the topology is the Euclidean form $q^2+q'{}^2$ of the coefficient plane, which is not one of the brackets.
 
 **The modulus of an element is a square root of its algebraic norm**: $\sqrt{\langle Q\rangle_{*}}$ over $\mathbb{C}$ and $\mathbb{C}_{\mathrm{dln}}$, and $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ over the indefinite $\mathbb{C}_{\mathrm{spl}}$; the modulus is defined through the algebraic norm.
 
 **Bars around a complex element are the ordinary complex modulus.** For $Q=q+iq'$,
 
 $$
-\lvert Q\rvert=\sqrt{Q\bar Q}=\sqrt{q^2+q'^2},
+\lvert Q\rvert=\sqrt{Q\bar Q}=\sqrt{q^2+q'{}^2},
 $$
 
 a real and non-negative number. The bars are the modulus and not a bracket of the layer: the algebraic norms keep their bracket, $\langle Q\rangle=Q^2$ and $\langle Q\rangle_{*}=Q\bar Q$. The same bars apply to a complex coefficient of a biquaternion, $\lvert Q_\mu\rvert=\sqrt{q_\mu^2+{q'_\mu}^2}$; over $\mathbb{C}$ the square of the modulus is the Hermitian norm, $\lvert Q\rvert^2=\langle Q\rangle_{*}$.
@@ -112,7 +112,7 @@ A unit element carries its own glyph, the **$u$** in the two cases, beside the r
 |---|---|---|---|---|
 | $\mathbb{R}$ | — | $\langle q\rangle=q^{2}$ | $q=\pm1$ | $\{\pm1\}=O(1)$ |
 | $\mathbb{C}$ | $U$ | $\lvert Q\rvert=(Q\bar Q)^{1/2}$, the modulus | $\lvert Q\rvert=1$ | $\mathrm{U}(1)=S^{1}$ |
-| $\mathbb{C}_{\mathrm{spl}}$, split-complex | $U$ | $Q\bar Q=q^{2}-q'^{2}$, the split norm | $Q\bar Q=1$ | the unit hyperbola, two branches |
+| $\mathbb{C}_{\mathrm{spl}}$, split-complex | $U$ | $Q\bar Q=q^{2}-q'{}^{2}$, the split norm | $Q\bar Q=1$ | the unit hyperbola, two branches |
 | $\mathbb{C}_{\mathrm{dln}}$, dual | $U$ | $\langle Q\rangle=q^{2}$ | $q=\pm1$, $q'$ free | the two lines $\pm1+\mathrm{M}$; the identity component is the shear group |
 | $\mathbb{B}_{\mathrm{red}}$, reduced biquaternion | $U$ | $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | $\langle\breve Q\rangle_{\mathrm{ts}}=1$ | the reduced-norm quadric |
 | $\mathbb{H}$, quaternion | $\tilde u$ | $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$ | $\langle\tilde q\rangle_{\natural}=1$ | $Sp(1)=S^{3}=\mathrm{SU}(2)$ |

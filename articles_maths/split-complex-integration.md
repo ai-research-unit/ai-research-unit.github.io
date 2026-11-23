@@ -3,13 +3,13 @@
 
 ## Introduction
 
-This article develops integration for functions of one split complex variable. It follows *Split-Complex Analysis*, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows *Split-Complex Algebra* for the ring $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_\pm = \tfrac12(1 \pm j)$, the conjugation $\bar Q$, and the norm $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.
+This article develops integration for functions of one split complex variable. It follows *Split-Complex Analysis*, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows *Split-Complex Algebra* for the ring $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_\pm = \tfrac12(1 \pm j)$, the conjugation $\bar Q$, and the norm $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'{}^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.
 
 The base ring throughout is $\mathbb{C}_{\mathrm{spl}}$. It is a commutative ring with identity, of characteristic zero, in which $2$ is invertible; it is not an integral domain, because $1 + j$ and $1 - j$ are non-zero and their product is zero. This single algebraic fact governs the whole theory, and it divides the classical Cauchy theory into a half that survives and a half that does not. The **vanishing** statement — the integral of a split complex differentiable function over a closed contour is zero — survives, and it in fact holds on every domain, not merely on the simply connected ones. The **representation** statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the zero-divisor cone. The kernel $1/(\omega - Q)$ of the formula is defined only where $\omega - Q$ is invertible, and the set where it is not is not the point $Q$ but the two lines through $Q$; no contour that surrounds $Q$ avoids them.
 
 No physics is invoked. Split complex differentiability and the idempotent decomposition are used as they were set up in *Split-Complex Analysis*, and the operator notation $\partial/\partial Q, \partial/\partial\bar Q$ is the one fixed there. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$ and the dual numbers, is the subject of *Hypercomplex Integration*.
 
-Notation: $Q = q + jq'$ with $q, q' \in \mathbb{R}$, $\bar Q = q - jq'$, and $\|Q\| = \sqrt{q^2 + q'^2}$. The idempotent coordinates are
+Notation: $Q = q + jq'$ with $q, q' \in \mathbb{R}$, $\bar Q = q - jq'$, and $\|Q\| = \sqrt{q^2 + q'{}^2}$. The idempotent coordinates are
 
 $$
 Q_+ = q + q', \qquad Q_- = q - q', \qquad Q = Q_+ \Pi_+ + Q_- \Pi_-,
@@ -92,10 +92,10 @@ $$
 **Proof.** The Euclidean norm on $\mathbb{C}_{\mathrm{spl}}$ is a genuine norm but is not submultiplicative. The best constant is $\sqrt2$: writing $Q = q + jq'$, $B = b + jb'$, one has
 
 $$
-\|QB\|^2 = (qb + q'b')^2 + (qb' + q'b)^2 = (q^2 + q'^2)(b^2 + b'^2) + 4qq'bb',
+\|QB\|^2 = (qb + q'b')^2 + (qb' + q'b)^2 = (q^2 + q'{}^2)(b^2 + b'{}^2) + 4qq'bb',
 $$
 
-and $4qq'bb' \leq 4\lvert qq'\rvert \lvert bb'\rvert \leq (q^2 + q'^2)(b^2 + b'^2)$ by the arithmetic–geometric mean inequality applied to each pair, so $\|QB\|^2 \leq 2\|Q\|^2\|B\|^2$. Equality holds if and only if $\lvert q\rvert = \lvert q'\rvert$, $\lvert b\rvert = \lvert b'\rvert$ and $qq'bb' > 0$, that is, if and only if $Q$ and $B$ are non-zero elements of the same one of the two null lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$; the bound is therefore attained and $\sqrt2$ cannot be lowered. Hence $\|f(\gamma(t))\gamma'(t)\| \leq \sqrt2\,m\,\|\gamma'(t)\|$, and integrating gives the estimate.
+and $4qq'bb' \leq 4\lvert qq'\rvert \lvert bb'\rvert \leq (q^2 + q'{}^2)(b^2 + b'{}^2)$ by the arithmetic–geometric mean inequality applied to each pair, so $\|QB\|^2 \leq 2\|Q\|^2\|B\|^2$. Equality holds if and only if $\lvert q\rvert = \lvert q'\rvert$, $\lvert b\rvert = \lvert b'\rvert$ and $qq'bb' > 0$, that is, if and only if $Q$ and $B$ are non-zero elements of the same one of the two null lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$; the bound is therefore attained and $\sqrt2$ cannot be lowered. Hence $\|f(\gamma(t))\gamma'(t)\| \leq \sqrt2\,m\,\|\gamma'(t)\|$, and integrating gives the estimate.
 
 **Remark.** The factor $\sqrt2$ is a feature of the multiplicativity failure of the Euclidean norm and has no analogue in $\mathbb{C}$, where the modulus is multiplicative. It is the first sign that the Euclidean metric and the ring multiplication are not aligned; the alignment that does hold is the multiplicativity of $\langle\cdot\rangle_{*}$, used below.
 
@@ -144,10 +144,10 @@ and the conjugate is computed the same way with $j$ replaced by $-j$, which inte
 **Proposition (the d'Alembertian).** For the conjugate operator $\bar D = 2\,\partial/\partial Q = \partial/\partial q + j\,\partial/\partial q'$,
 
 $$
-\bar D D = D \bar D = \Box_\Phi := \partial^2/\partial q^2 - \partial^2/\partial q'^2 = 4\,\partial^2/\partial Q_+\partial Q_-.
+\bar D D = D \bar D = \Box_\Phi := \partial^2/\partial q^2 - \partial^2/\partial q'{}^2 = 4\,\partial^2/\partial Q_+\partial Q_-.
 $$
 
-**Proof.** Expanding, $\bar D D = (\partial/\partial q + j\partial/\partial q')(\partial/\partial q - j\partial/\partial q') = \partial^2/\partial q^2 - j^2 \partial^2/\partial q'^2 = \partial^2/\partial q^2 - \partial^2/\partial q'^2$, the mixed terms cancelling; the same expansion gives $D\bar D$. In the idempotent coordinates $\partial^2/\partial Q_+\partial Q_- = \tfrac14(\partial^2/\partial q^2 - \partial^2/\partial q'^2)$.
+**Proof.** Expanding, $\bar D D = (\partial/\partial q + j\partial/\partial q')(\partial/\partial q - j\partial/\partial q') = \partial^2/\partial q^2 - j^2 \partial^2/\partial q'{}^2 = \partial^2/\partial q^2 - \partial^2/\partial q'{}^2$, the mixed terms cancelling; the same expansion gives $D\bar D$. In the idempotent coordinates $\partial^2/\partial Q_+\partial Q_- = \tfrac14(\partial^2/\partial q^2 - \partial^2/\partial q'{}^2)$.
 
 So the split Cauchy–Riemann operator factors the wave operator, not the Laplacian. It is therefore not elliptic: the principal symbol of $D$ is $\zeta_1 - j\,\zeta_2$, whose norm is $\zeta_1^2 - \zeta_2^2$, so it is invertible off the two lines $\zeta_1 = \pm\zeta_2$ and a zero divisor on them; those lines are exactly the set on which the symbol of $\Box_\Phi = 4\partial^2/\partial Q_+\partial Q_-$ vanishes. This is the analytic face of the algebra's zero divisors, and the next sections show that it is the same set.
 
@@ -428,7 +428,7 @@ whose square $D\bar D = \bar D D$ is a Laplacian and whose fundamental solution 
 
 **Proposition.** There is no element $B \in \mathbb{C}_{\mathrm{spl}}$ with $B^2 = -1$. Hence the split complex system cannot be presented as an elliptic hypercomplex system in the sense of the general theory, and no choice of generators $B_k$ satisfies the general hypotheses.
 
-**Proof.** Write $B = b + jb'$. Then $B^2 = (b^2 + b'^2) + 2bb'\,j$. The equation $B^2 = -1$ requires $bb' = 0$ and $b^2 + b'^2 = -1$, impossible for real $b, b'$ since $b^2 + b'^2 \geq 0$.
+**Proof.** Write $B = b + jb'$. Then $B^2 = (b^2 + b'{}^2) + 2bb'\,j$. The equation $B^2 = -1$ requires $bb' = 0$ and $b^2 + b'{}^2 = -1$, impossible for real $b, b'$ since $b^2 + b'{}^2 \geq 0$.
 
 The consequences are those of the preceding sections. The general Cauchy–Goursat theorem applies to the split system, because $\mathbb{C}_{\mathrm{spl}}$ is commutative, but it carries no information there, since the vanishing half of the theory is soft. The general residue theory and Cauchy integral formula, by contrast, have no split complex analogue, because their proofs use the point singularity of the fundamental solution. The mechanism of the failure is the constant in the characteristic equation: for $\mathbb{C}$ the characteristic set of $D$ is the single point $0$, for $\mathbb{C}_{\mathrm{spl}}$ it is the null cone, and the cone is the zero-divisor set. The split complex theory is thus the boundary case of the general theory at which ellipticity is lost and with it the representation half of the Cauchy theory, while the vanishing half survives in a form too weak to carry the rest.
 
@@ -449,9 +449,9 @@ The **obstruction to the Cauchy theorem** is the zero divisor. The element $\ome
 | $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$ | Split complex numbers |
 | $Q = q + jq'$ | General split complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$ |
 | $\bar Q = q - jq'$ | Split complex conjugate |
-| $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$ | Norm, inertia $(1,1)$ |
+| $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'{}^2$ | Norm, inertia $(1,1)$ |
 | $\{\langle Q\rangle_{*} = 0\}$ | Null cone, the zero-divisor set |
-| $\|Q\| = \sqrt{q^2 + q'^2}$ | Euclidean modulus |
+| $\|Q\| = \sqrt{q^2 + q'{}^2}$ | Euclidean modulus |
 | $\Pi_+ = \tfrac12(1+j), \ \Pi_- = \tfrac12(1-j)$ | Idempotents, $\Pi_\pm^2 = \Pi_\pm$, $\Pi_+\Pi_- = 0$ |
 | $Q = Q_+\Pi_+ + Q_-\Pi_-$, $Q_+ = q+q'$, $Q_- = q-q'$ | Idempotent decomposition and coordinates |
 | $\gamma : [a,b] \to \mathbb{C}_{\mathrm{spl}}$ | Piecewise $C^1$ path |
@@ -464,7 +464,7 @@ The **obstruction to the Cauchy theorem** is the zero divisor. The element $\ome
 | $\partial/\partial Q_\pm$ | Null-coordinate derivatives |
 | $D = \partial/\partial q - j\partial/\partial q'$ | Split Cauchy–Riemann operator, $D = 2\partial/\partial\bar Q$ |
 | $\bar D = \partial/\partial q + j\partial/\partial q'$ | Conjugate operator |
-| $\Box_\Phi = \partial^2/\partial q^2 - \partial^2/\partial q'^2 = 4\partial^2/\partial Q_+\partial Q_-$ | d'Alembertian |
+| $\Box_\Phi = \partial^2/\partial q^2 - \partial^2/\partial q'{}^2 = 4\partial^2/\partial Q_+\partial Q_-$ | d'Alembertian |
 | $\|\Delta_\Phi\|$ | Mesh of a partition of $[a,b]$, for the Riemann sums |
 | $\omega(\|\Delta_\Phi\|)$ | Modulus of continuity of $\gamma'$ on a partition of mesh $\|\Delta_\Phi\|$ |
 | $H$ | Heaviside function, $H(t) = 1$ for $t > 0$ and $0$ for $t < 0$ |

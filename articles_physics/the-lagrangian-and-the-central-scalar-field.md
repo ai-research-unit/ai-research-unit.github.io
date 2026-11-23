@@ -34,7 +34,7 @@ What is not new. The action is the standard real scalar action. What the corpus 
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\imath^{2}=-e_t$; the material sector is $\mathbb{B}_\Phi$; the centre is the span of $e_t$ and $ie_t$, so a central element commutes with everything.
+The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the material sector is $\mathbb{B}_\Phi$; the centre is the span of $e_t$ and $ie_t$, so a central element commutes with everything.
 
 The field. $\xi$ is a real function of the coordinates and $\tilde\Xi=\xi e_t$ is the element it defines; a general biquaternion-valued field has four components, and the central case is the one in which all four obey the same equation.
 

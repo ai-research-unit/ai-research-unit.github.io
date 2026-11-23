@@ -14,7 +14,7 @@ The treatment is mathematically honest: every claim is either proved or stated a
 The **norm** of a complex number $Q$ is
 
 $$
-\langle Q\rangle_{*} = Q\bar{Q} = (q+i q')(q-i q') = q^2 + q'^2 \in \mathbb{R}.
+\langle Q\rangle_{*} = Q\bar{Q} = (q+i q')(q-i q') = q^2 + q'{}^2 \in \mathbb{R}.
 $$
 
 **Basic properties.**
@@ -50,7 +50,7 @@ The multiplicativity is used below to prove the invertibility criterion in one l
 The name "norm" is not a misnomer here. The **modulus** is the square root of the norm,
 
 $$
-\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'^2} \geq 0.
+\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'{}^2} \geq 0.
 $$
 
 Then $\sqrt{\langle\cdot\rangle_{*}}$ satisfies the axioms of a norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$:
@@ -67,7 +67,7 @@ The value is real, the vanishing locus is the origin alone, and the scaling axio
 Writing $Q = q + i q'$ with $q, q' \in \mathbb{R}$, the norm is the sum of two squares,
 
 $$
-\langle Q\rangle_{*} = q^2 + q'^2,
+\langle Q\rangle_{*} = q^2 + q'{}^2,
 $$
 
 a positive-definite quadratic form on the coordinate space $\mathbb{R}^2$ of inertia $(2,0)$. The two coordinates contribute with the same sign, and the norm is real throughout.
@@ -79,7 +79,7 @@ a positive-definite quadratic form on the coordinate space $\mathbb{R}^2$ of ine
 The **Hermitian form** of a complex number $Q$ is
 
 $$
-Q \bar{Q} = q^2 + q'^2 .
+Q \bar{Q} = q^2 + q'{}^2 .
 $$
 
 It is a real number, non-negative, and vanishes if and only if $Q = 0$. Because $\mathbb{C}$ is commutative and the bar is its only nontrivial involution, the Hermitian form coincides with the norm. There are not two distinct objects here.
@@ -89,7 +89,7 @@ It is a real number, non-negative, and vanishes if and only if $Q = 0$. Because 
 The **Euclidean norm** of a complex number is the square root of the Hermitian form,
 
 $$
-\|Q\| = \sqrt{Q\bar{Q}} = \sqrt{q^2 + q'^2} = \sqrt{\langle Q\rangle_{*}} .
+\|Q\| = \sqrt{Q\bar{Q}} = \sqrt{q^2 + q'{}^2} = \sqrt{\langle Q\rangle_{*}} .
 $$
 
 It is a genuine norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$: positive-definite, subadditive, and homogeneous of degree one. It **is** multiplicative with respect to the complex product, because $\sqrt{\langle Q_1Q_2\rangle_{*}} = \sqrt{\langle Q_1\rangle_{*}}\sqrt{\langle Q_2\rangle_{*}}$.
@@ -98,8 +98,8 @@ It is a genuine norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$: p
 
 The two forms are related as follows.
 
-- The **norm** $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ is real, positive-definite and multiplicative, and it vanishes only at the origin. It controls the multiplicative structure: invertibility, the group of invertibles, and the polar scale.
-- The **Hermitian form** $Q\bar{Q} = q^2+q'^2$ is the same expression. It controls the topological structure: the Euclidean norm, the topology of $\mathbb{C}$ as $\mathbb{R}^2$, and completeness.
+- The **norm** $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'{}^2$ is real, positive-definite and multiplicative, and it vanishes only at the origin. It controls the multiplicative structure: invertibility, the group of invertibles, and the polar scale.
+- The **Hermitian form** $Q\bar{Q} = q^2+q'{}^2$ is the same expression. It controls the topological structure: the Euclidean norm, the topology of $\mathbb{C}$ as $\mathbb{R}^2$, and completeness.
 
 That the two coincide is a degeneracy of the commutative two-dimensional case. The information collapses into one real positive-definite form. This is the same degeneracy that makes $\mathbb{C}$ the trivial example in the theory of composition algebras.
 
@@ -115,7 +115,7 @@ $$
 \langle Q_1,Q_2\rangle_{*}=\operatorname{Sc}(Q_1Q_2^{*})=\operatorname{Re}(\bar Q_1Q_2)=q_1q_2+q'_1q'_2,
 $$
 
-and at equal arguments it gives the norm, $\langle Q_1\rangle_{*} = \bar Q_1Q_1 = q_1^2+q'^2_1$: the Hermitian product is the complex two-variable object of which the form is the real part and the norm the diagonal.
+and at equal arguments it gives the norm, $\langle Q_1\rangle_{*} = \bar Q_1Q_1 = q_1^2+q'{}^2_1$: the Hermitian product is the complex two-variable object of which the form is the real part and the norm the diagonal.
 
 ## Invertibility
 
@@ -137,7 +137,7 @@ In a general algebra the notions of left inverse, right inverse and two-sided in
 
 **Theorem.** A complex number $Q$ is invertible if and only if $Q \neq 0$, equivalently if and only if $\langle Q\rangle_{*} \neq 0$.
 
-**Proof.** If $Q_1 \neq 0$ then $\langle Q_1\rangle_{*} = q_1^2+q'^2_1 > 0$, and the element
+**Proof.** If $Q_1 \neq 0$ then $\langle Q_1\rangle_{*} = q_1^2+q'{}^2_1 > 0$, and the element
 
 $$
 Q_2 = \frac{\bar{Q}_1}{\langle Q_1\rangle_{*}}
@@ -157,7 +157,7 @@ The criterion $\langle Q\rangle_{*} \neq 0$ is equivalent to the elementary stat
 
 For $Q \neq 0$ the inverse is
 
-$$ \boxed{\;Q^{-1} = \frac{\bar{Q}}{\langle Q\rangle_{*}} = \frac{q - i q'}{q^2+q'^2} = \frac{q}{q^2+q'^2} - \frac{q'}{q^2+q'^2} i \;}.
+$$ \boxed{\;Q^{-1} = \frac{\bar{Q}}{\langle Q\rangle_{*}} = \frac{q - i q'}{q^2+q'{}^2} = \frac{q}{q^2+q'{}^2} - \frac{q'}{q^2+q'{}^2} i \;}.
 $$
 
 **Proof.** The verification is the computation in the first part of the proof of the criterion.
@@ -178,7 +178,7 @@ $$
 (Q_1Q_2)^{-1} = Q_2^{-1}Q_1^{-1} = (0.2+0.4i)(0.12-0.16i) = 0.088 + 0.016 i, \qquad (Q_1Q_2)^{-1} = \frac{\overline{Q_1Q_2}}{\langle Q_1Q_2\rangle_{*}} = \frac{11+2i}{125} = 0.088 + 0.016 i .
 $$
 
-The only element of vanishing norm is $0$, since $q^2+q'^2 = 0$ forces $q = q' = 0$, so there is no nonzero non-invertible and no zero divisor.
+The only element of vanishing norm is $0$, since $q^2+q'{}^2 = 0$ forces $q = q' = 0$, so there is no nonzero non-invertible and no zero divisor.
 
 ## The Group of Invertibles
 
@@ -236,7 +236,7 @@ An element of a finite-dimensional real algebra is of one of three kinds: An inv
 
 **Theorem (the classification of $\mathbb{C}$).** The zero-divisor class is empty, so every nonzero complex number is invertible and the classification has only two non-empty classes.
 
-**Proof.** $\langle Q\rangle_{*} = q^2+q'^2 = 0$ forces $q = q' = 0$ because squares of reals are non-negative, so the only element of vanishing norm is $0$.
+**Proof.** $\langle Q\rangle_{*} = q^2+q'{}^2 = 0$ forces $q = q' = 0$ because squares of reals are non-negative, so the only element of vanishing norm is $0$.
 
 ### The Algebra Is a Division Algebra
 
@@ -255,7 +255,7 @@ The real subspace $\mathbb{R}_{\mathbb{C}} = \{q : q \in \mathbb{R}\}$ is a fiel
 For a nonzero element $i q'$, $q' \neq 0$, of the imaginary subspace $i\mathbb{R}_{\mathbb{C}}$,
 
 $$
-(i q')^{-1} = \frac{-i q'}{q'^2} = -\frac{1}{q'} i = -\frac{1}{q'} i \in i\mathbb{R}_{\mathbb{C}},
+(i q')^{-1} = \frac{-i q'}{q'{}^2} = -\frac{1}{q'} i = -\frac{1}{q'} i \in i\mathbb{R}_{\mathbb{C}},
 $$
 
 so the inverse is again a real multiple of $i$. Hence $i\mathbb{R}_{\mathbb{C}} \setminus \{0\} \subset \mathbb{C}^\times$, and the imaginary subspace is also inversion-stable.
@@ -274,7 +274,7 @@ Equivalently, $\mathbb{C}^\times = (\mathbb{R}_{\mathbb{C}} \setminus \{0\}) \cu
 The algebra splits as $\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}}$ into the fixed and anti-fixed subspaces of conjugation, and on each piece the norm is definite:
 
 $$
-\langle q\rangle_{*} = q^2 \geq 0 \;\; (q \in \mathbb{R}_{\mathbb{C}}), \qquad \langle i q'\rangle_{*} = q'^2 \geq 0 \;\; (q' \in \mathbb{R}_{\mathbb{C}}),
+\langle q\rangle_{*} = q^2 \geq 0 \;\; (q \in \mathbb{R}_{\mathbb{C}}), \qquad \langle i q'\rangle_{*} = q'{}^2 \geq 0 \;\; (q' \in \mathbb{R}_{\mathbb{C}}),
 $$
 
 each vanishing only at the origin. The two pieces therefore carry the **same** sign of the norm, $(+,+)$ on the two-dimensional real coordinate space, and multiplying by the imaginary unit preserves it:
@@ -287,12 +287,12 @@ This is the degeneracy of the Hermitian decomposition of the definite field. No 
 
 ## The Base Case of the Norm Series
 
-The norm series of the corpus records, for each algebra of the family, whether its norm is real, complex or split-complex valued, whether it is definite or indefinite, and what its vanishing locus is. In $\mathbb{C}$ the norm is the real positive-definite quadratic form $\langle Q\rangle_{*} = q^2+q'^2$, the sum of two squares, and its vanishing locus is the single point $\{0\}$:
+The norm series of the corpus records, for each algebra of the family, whether its norm is real, complex or split-complex valued, whether it is definite or indefinite, and what its vanishing locus is. In $\mathbb{C}$ the norm is the real positive-definite quadratic form $\langle Q\rangle_{*} = q^2+q'{}^2$, the sum of two squares, and its vanishing locus is the single point $\{0\}$:
 
 | algebra | norm | value field | definite? | vanishing locus |
 |---|---|---|---|---|
 | $\mathbb{R}$ | $a^2$ | $\mathbb{R}$ | yes | $\{0\}$ |
-| $\mathbb{C}$ | $q^2+q'^2$ | $\mathbb{R}$ | yes | $\{0\}$ |
+| $\mathbb{C}$ | $q^2+q'{}^2$ | $\mathbb{R}$ | yes | $\{0\}$ |
 | $\mathbb{H}$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $\mathbb{R}$ | yes | $\{0\}$ |
 | $\mathbb{B}_{\mathrm{spl}}$ | $\sum_\mu Q_\mu^2$ | $\mathbb{C}_{\mathrm{spl}}$ | no | the elements whose norm is a zero divisor of $\mathbb{C}_{\mathrm{spl}}$ |
 
@@ -300,7 +300,7 @@ The complex case is the second rung of the definite column: it adds the second s
 
 ## Summary
 
-The norm of a complex number is $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$, real, positive-definite and multiplicative, $\langle Q_1Q_2\rangle_{*} = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$; it vanishes only at the origin. The Hermitian form is the same expression, so the norm and the Hermitian form coincide, and the Euclidean norm $\|Q\| = \sqrt{\langle Q\rangle_{*}}$ is a genuine norm that is multiplicative. This is the degeneracy of the commutative two-dimensional case.
+The norm of a complex number is $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'{}^2$, real, positive-definite and multiplicative, $\langle Q_1Q_2\rangle_{*} = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$; it vanishes only at the origin. The Hermitian form is the same expression, so the norm and the Hermitian form coincide, and the Euclidean norm $\|Q\| = \sqrt{\langle Q\rangle_{*}}$ is a genuine norm that is multiplicative. This is the degeneracy of the commutative two-dimensional case.
 
 A complex number is invertible if and only if it is nonzero, equivalently if and only if its norm is nonzero, and the inverse is $Q^{-1} = \bar{Q}/\langle Q\rangle_{*}$. On the worked pair $Q_1 = 3+4i$, $Q_2 = 1-2i$ the criterion gives $\langle Q_1\rangle_{*} = 25$, $\langle Q_2\rangle_{*} = 5$ and $\langle Q_1Q_2\rangle_{*} = 125$, with inverses $Q_1^{-1} = (3-4i)/25$ and $Q_2^{-1} = (1+2i)/5$. The zero-divisor class is empty, so $\mathbb{C}$ is a division algebra by the Frobenius theorem, and every nonzero element of each of the two distinguished subspaces is invertible.
 
@@ -313,7 +313,7 @@ The group of invertibles is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, abel
 | $\mathbb{C}$ | the complex algebra, basis $1$, $i$, $i^2 = -1$ |
 | $Q = q + i q'$ | a complex number, $q$ its real part, $q'$ its imaginary part |
 | $\bar{Q} = q - i q'$ | complex conjugation, the nontrivial involution |
-| $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ | the norm, real, positive definite, multiplicative |
+| $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'{}^2$ | the norm, real, positive definite, multiplicative |
 | $\|Q\| = \sqrt{\langle Q\rangle_{*}}$ | the Euclidean norm and the modulus |
 | $\bar{Q}_1Q_2$ | the Hermitian product, whose real part is $\langle Q_1,Q_2\rangle_{*}$ and whose diagonal is $\langle Q_1\rangle_{*}$ |
 | $Q_1 = 3+4i$, $Q_2 = 1-2i$ | the worked pair of the category |

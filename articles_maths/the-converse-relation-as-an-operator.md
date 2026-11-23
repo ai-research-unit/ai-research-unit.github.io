@@ -8,8 +8,7 @@ of its pairs, and the passage $R \mapsto R^{-1}$ is a map on the class of relati
 studies that map as an **operator**: it computes how the converse behaves under the composition of
 relations, under the inclusion order, and under iteration, and it uses the two-element group that
 the operator generates — the identity and the converse — to decompose the relations into the
-**symmetric** ones and the **pairs of mutually converse relations**, with the **symmetrisation** $R
-\mapsto R \cup R^{-1}$ as the canonical map onto the symmetric part.
+**symmetric** ones and the **pairs of mutually converse relations**, with the **symmetrisation** $R \mapsto R \cup R^{-1}$ as the canonical map onto the symmetric part.
 
 The article presupposes *Sets, Functions and Relations*, where relations, the converse, the
 composite $S \circ R$ and the identity relation $\Delta_X$ are defined, and *Order Theory and
@@ -48,17 +47,13 @@ $$
 1. $c(c(R)) = R$.
 2. $R \subseteq S$ if and only if $c(R) \subseteq c(S)$.
 3. $c(\emptyset) = \emptyset$ and $c(X \times X) = X \times X$, and $c(\Delta_X) = \Delta_X$.
-4. $c(R \cup S) = c(R) \cup c(S)$, $c(R \cap S) = c(R) \cap c(S)$, and $c(\overline{R}) =
-   \overline{c(R)}$, where $\overline{R} = (X \times X) \setminus R$.
+4. $c(R \cup S) = c(R) \cup c(S)$, $c(R \cap S) = c(R) \cap c(S)$, and $c(\overline{R}) = \overline{c(R)}$, where $\overline{R} = (X \times X) \setminus R$.
 
-**Proof.** (1) $c(c(R)) = (R^{-1})^{-1} = \{(z,y) : (y,z) \in R^{-1}\} = \{(z,y) : (z,y) \in R\} =
-R$. (2) If $R \subseteq S$ and $(y,x) \in R^{-1}$ then $(x,y) \in R \subseteq S$, so $(y,x) \in
-S^{-1}$; the converse implication is (1) applied to $S \subseteq R$. (3) Immediate, since $\emptyset$,
+**Proof.** (1) $c(c(R)) = (R^{-1})^{-1} = \{(z,y) : (y,z) \in R^{-1}\} = \{(z,y) : (z,y) \in R\} = R$. (2) If $R \subseteq S$ and $(y,x) \in R^{-1}$ then $(x,y) \in R \subseteq S$, so $(y,x) \in S^{-1}$; the converse implication is (1) applied to $S \subseteq R$. (3) Immediate, since $\emptyset$,
 $X \times X$ and $\Delta_X$ are each their own converse. (4) The first two are the elementwise
 reading of the definition: $(y,x) \in (R \cup S)^{-1}$ exactly when $(x,y) \in R \cup S$, that is,
 when $(y,x)$ lies in $R^{-1} \cup S^{-1}$, and the same with "and" for the intersection. For the
-complement, $(y,x) \in c(\overline R)$ exactly when $(x,y) \notin R$, that is, when $(y,x) \notin
-c(R)$, that is, when $(y,x) \in \overline{c(R)}$.
+complement, $(y,x) \in c(\overline R)$ exactly when $(x,y) \notin R$, that is, when $(y,x) \notin c(R)$, that is, when $(y,x) \in \overline{c(R)}$.
 
 ### The Two-Element Group
 
@@ -86,9 +81,7 @@ $(y,x) \in R^{-1}$. The operator $c$ is the identity exactly on the symmetric re
 $\operatorname{SymRel}(X)$ is the **fixed-point set** of the operator, and the orbits of the
 complementary relations pair off the non-symmetric ones.
 
-**Example.** On $X = \{1,2,3\}$ the relation $R = \{(1,2),(2,3)\}$ has converse $R^{-1} =
-\{(2,1),(3,2)\}$, and $R \neq R^{-1}$; the orbit is $\{R, R^{-1}\}$. The relation $S =
-\{(1,2),(2,1)\}$ satisfies $S = S^{-1}$ and is symmetric, so its orbit is the singleton $\{S\}$.
+**Example.** On $X = \{1,2,3\}$ the relation $R = \{(1,2),(2,3)\}$ has converse $R^{-1} = \{(2,1),(3,2)\}$, and $R \neq R^{-1}$; the orbit is $\{R, R^{-1}\}$. The relation $S = \{(1,2),(2,1)\}$ satisfies $S = S^{-1}$ and is symmetric, so its orbit is the singleton $\{S\}$.
 
 **Example.** The order relation $\leq$ on a partially ordered set is reflexive and antisymmetric,
 and its converse is the opposite order $\geq$; the pair $\{\leq, \geq\}$ is the standard orbit of
@@ -111,9 +104,7 @@ $$
 \boxed{\;(S \circ R)^{-1} = R^{-1} \circ S^{-1}\;}.
 $$
 
-**Proof.** Let $(z,x) \in (S \circ R)^{-1}$. Then $(x,z) \in S \circ R$, so there is $y$ with $(x,y)
-\in R$ and $(y,z) \in S$. Then $(y,x) \in R^{-1}$ and $(z,y) \in S^{-1}$, so $(z,x) \in R^{-1}
-\circ S^{-1}$. Each step is reversible, which gives the reverse inclusion.
+**Proof.** Let $(z,x) \in (S \circ R)^{-1}$. Then $(x,z) \in S \circ R$, so there is $y$ with $(x,y) \in R$ and $(y,z) \in S$. Then $(y,x) \in R^{-1}$ and $(z,y) \in S^{-1}$, so $(z,x) \in R^{-1} \circ S^{-1}$. Each step is reversible, which gives the reverse inclusion.
 
 Thus $c$ is an **anti-automorphism** of the monoid $(\operatorname{Rel}(X), \circ, \Delta_X)$: it
 reverses the order of the factors. The identity relation is fixed by $c$, by property (3), so $c$ is
@@ -124,28 +115,23 @@ example. The categorical name for the same datum is a dagger, and the general th
 of this kind on the morphisms of a category is developed in *Involutive Categories and the Dagger
 Functor*, in the `*` group of this category; it is not used here.
 
-**Proposition (composites on one side).** For every $R \in \operatorname{Rel}(X)$ the relations $R
-\circ R^{-1}$ and $R^{-1} \circ R$ are symmetric.
+**Proposition (composites on one side).** For every $R \in \operatorname{Rel}(X)$ the relations $R \circ R^{-1}$ and $R^{-1} \circ R$ are symmetric.
 
-**Proof.** By the anti-automorphism property and property (1), $(R \circ R^{-1})^{-1} = (R^{-1})^{-1}
-\circ R^{-1} = R \circ R^{-1}$, and dually for $R^{-1} \circ R$.
+**Proof.** By the anti-automorphism property and property (1), $(R \circ R^{-1})^{-1} = (R^{-1})^{-1} \circ R^{-1} = R \circ R^{-1}$, and dually for $R^{-1} \circ R$.
 
-**Remark.** The two composites are the relations of sharing a preimage and of sharing an image: $(x,
-z) \in R \circ R^{-1}$ exactly when there is a $y$ with $(y,x) \in R$ and $(y,z) \in R$, so that $x$
+**Remark.** The two composites are the relations of sharing a preimage and of sharing an image: $(x, z) \in R \circ R^{-1}$ exactly when there is a $y$ with $(y,x) \in R$ and $(y,z) \in R$, so that $x$
 and $z$ have a common preimage under $R$, while $(x,z) \in R^{-1} \circ R$ exactly when there is a
 $y$ with $(x,y) \in R$ and $(z,y) \in R$, so that $x$ and $z$ have a common image. They are
 therefore the two natural symmetric relations attached to $R$.
 
 ### Powers and the Closures
 
-For $n \geq 1$ let $R^n = R \circ R \circ \cdots \circ R$ be the $n$-fold composite, and put $R^0 =
-\Delta_X$.
+For $n \geq 1$ let $R^n = R \circ R \circ \cdots \circ R$ be the $n$-fold composite, and put $R^0 = \Delta_X$.
 
 **Proposition.** For all $n \geq 0$, $(R^n)^{-1} = (R^{-1})^n$.
 
 **Proof.** Induction on $n$: the case $n = 0$ is $c(\Delta_X) = \Delta_X$, and the induction step is
-$(R^{n+1})^{-1} = (R^n \circ R)^{-1} = R^{-1} \circ (R^n)^{-1} = R^{-1} \circ (R^{-1})^n =
-(R^{-1})^{n+1}$.
+$(R^{n+1})^{-1} = (R^n \circ R)^{-1} = R^{-1} \circ (R^n)^{-1} = R^{-1} \circ (R^{-1})^n = (R^{-1})^{n+1}$.
 
 Because $c$ preserves arbitrary unions, by the family case of property (4), it commutes with every
 closure built from unions of powers.
@@ -155,8 +141,7 @@ closure built from unions of powers.
 
 **Proposition.** $(R^{+})^{-1} = (R^{-1})^{+}$ and $(R^{*})^{-1} = (R^{-1})^{*}$.
 
-**Proof.** By the family case of property (4), $c(\bigcup_n R^n) = \bigcup_n c(R^n) = \bigcup_n
-(R^{-1})^n$, and the same with the union starting at $n = 0$.
+**Proof.** By the family case of property (4), $c(\bigcup_n R^n) = \bigcup_n c(R^n) = \bigcup_n (R^{-1})^n$, and the same with the union starting at $n = 0$.
 
 So the operator $c$ commutes with the transitive closure, and a relation is contained in its converse
 exactly when it is symmetric: $R \subseteq R^{-1}$ implies $R^{-1} \subseteq R$ by applying $c$, so
@@ -197,9 +182,7 @@ axioms are inherited from $\operatorname{Rel}(X)$, and closure under arbitrary u
 directly. So $\operatorname{SymRel}(X)$ is a **sublattice** in the strong sense: it is closed under
 the operations and under the constants, and it is complete.
 
-The symmetric relations are not closed under composition. If $R$ and $S$ are symmetric then $(S
-\circ R)^{-1} = R^{-1} \circ S^{-1} = R \circ S$, so $S \circ R$ is symmetric exactly when $S \circ
-R = R \circ S$, that is, when the two relations commute. A relation that is symmetric and transitive
+The symmetric relations are not closed under composition. If $R$ and $S$ are symmetric then $(S \circ R)^{-1} = R^{-1} \circ S^{-1} = R \circ S$, so $S \circ R$ is symmetric exactly when $S \circ R = R \circ S$, that is, when the two relations commute. A relation that is symmetric and transitive
 is an equivalence relation on the set of elements it relates to something; the symmetric relations
 that are also transitive are therefore the equivalence relations on the subsets of $X$.
 
@@ -218,19 +201,15 @@ $$
 R^{\mathrm{s}} = R \cup R^{-1}.
 $$
 
-The relation $R^{\mathrm{s}}$ is symmetric, because $(R \cup R^{-1})^{-1} = R^{-1} \cup R =
-R^{\mathrm{s}}$.
+The relation $R^{\mathrm{s}}$ is symmetric, because $(R \cup R^{-1})^{-1} = R^{-1} \cup R = R^{\mathrm{s}}$.
 
-**Proposition.** The symmetrisation operator $(-)^{\mathrm{s}} : \operatorname{Rel}(X) \to
-\operatorname{SymRel}(X)$ is monotone, extensive ($R \subseteq R^{\mathrm{s}}$) and idempotent, and
+**Proposition.** The symmetrisation operator $(-)^{\mathrm{s}} : \operatorname{Rel}(X) \to \operatorname{SymRel}(X)$ is monotone, extensive ($R \subseteq R^{\mathrm{s}}$) and idempotent, and
 it is the least symmetric relation containing $R$; it preserves arbitrary unions.
 
 **Proof.** Monotonicity and extensiveness are immediate from the definition. Idempotence:
 $(R^{\mathrm{s}})^{\mathrm{s}} = R^{\mathrm{s}}$, because $R^{\mathrm{s}}$ is already symmetric.
-If $T$ is symmetric and $R \subseteq T$ then $R^{-1} \subseteq T^{-1} = T$, so $R^{\mathrm{s}}
-\subseteq T$; hence $R^{\mathrm{s}}$ is the least symmetric relation containing $R$. Finally
-$(\bigcup_i R_i)^{\mathrm{s}} = \bigcup_i R_i \cup \bigcup_i R_i^{-1} = \bigcup_i (R_i \cup
-R_i^{-1})$, so the operator commutes with unions.
+If $T$ is symmetric and $R \subseteq T$ then $R^{-1} \subseteq T^{-1} = T$, so $R^{\mathrm{s}} \subseteq T$; hence $R^{\mathrm{s}}$ is the least symmetric relation containing $R$. Finally
+$(\bigcup_i R_i)^{\mathrm{s}} = \bigcup_i R_i \cup \bigcup_i R_i^{-1} = \bigcup_i (R_i \cup R_i^{-1})$, so the operator commutes with unions.
 
 A monotone, extensive, idempotent operator is a **closure operator**, in the sense of *Order Theory
 and Lattices*, and the symmetrisation is one: its closed elements are exactly the symmetric
@@ -241,8 +220,7 @@ symmetrisation is its first example on the lattice of relations.
 
 **Remark.** The symmetrisation is not the only closure operator attached to $c$. The
 **reflexive–transitive–symmetric closure**, which is the transitive closure of $R^{\mathrm{s}}$ and
-is written $R_{\mathrm{eq}}$, is the smallest equivalence relation containing $R$; the operator $R
-\mapsto R_{\mathrm{eq}}$ is again monotone, extensive and idempotent, and it is the one used to
+is written $R_{\mathrm{eq}}$, is the smallest equivalence relation containing $R$; the operator $R \mapsto R_{\mathrm{eq}}$ is again monotone, extensive and idempotent, and it is the one used to
 generate the equivalence relation of a partition in *Sets, Functions and Relations*. It is the
 composite of the symmetrisation with the transitive closure, and it commutes with $c$ by the results
 above.
@@ -266,8 +244,7 @@ and the **asymmetric part** of $R$ is $R^{\mathrm{a}} = R \setminus R^{-1}$.
 3. $R = R^{\mathrm{i}} \cup R^{\mathrm{a}}$, and the two parts are disjoint.
 
 **Proof.** (1) $R^{\mathrm{i}}$ is symmetric by the formula $(R \cap R^{-1})^{-1} = R^{-1} \cap R$.
-If $T$ is symmetric and $T \subseteq R$ then $T = T^{-1} \subseteq R^{-1}$, so $T \subseteq
-R^{\mathrm{i}}$. (2) $(R \setminus R^{-1}) \cap (R^{-1} \setminus R) = \emptyset$, since an element
+If $T$ is symmetric and $T \subseteq R$ then $T = T^{-1} \subseteq R^{-1}$, so $T \subseteq R^{\mathrm{i}}$. (2) $(R \setminus R^{-1}) \cap (R^{-1} \setminus R) = \emptyset$, since an element
 of the left side would lie both in $R^{-1}$ and outside it. (3) Every pair $(x,y) \in R$ either has
 $(y,x) \in R$, in which case it lies in $R \cap R^{-1}$, or has $(y,x) \notin R$, in which case
 $(y,x) \notin R^{-1}$ and it lies in $R \setminus R^{-1}$; and the two sets are disjoint because
@@ -279,8 +256,7 @@ operator of the form $\mathrm{id} \wedge \theta$ below $c$. The passage from a r
 symmetric interior is the part of the pair that the operator $c$ cannot move, and the asymmetric
 part is the part on which $c$ acts without fixed points.
 
-**Example.** Let $X = \{1,2,3\}$ and $R = \{(1,2),(2,1),(2,3)\}$. Then $R^{-1} =
-\{(2,1),(1,2),(3,2)\}$ and
+**Example.** Let $X = \{1,2,3\}$ and $R = \{(1,2),(2,1),(2,3)\}$. Then $R^{-1} = \{(2,1),(1,2),(3,2)\}$ and
 
 $$
 R^{\mathrm{i}} = \{(1,2),(2,1)\}, \qquad R^{\mathrm{a}} = \{(2,3)\}, \qquad R^{\mathrm{s}} =
@@ -294,8 +270,7 @@ pair $\{R, R^{-1}\}$, with $R^{-1} = R^{\mathrm{i}} \cup (R^{\mathrm{a}})^{-1}$.
 
 The converse operator $c(R) = R^{-1}$ is an involution of the set of relations on a set, an order
 automorphism for inclusion, and a lattice automorphism of the power-set algebra of $X \times X$; it
-is an anti-automorphism of the monoid of relations under composition, $(S \circ R)^{-1} = R^{-1}
-\circ S^{-1}$, and it fixes the identity relation. The operators $\mathrm{id}$ and $c$ form a
+is an anti-automorphism of the monoid of relations under composition, $(S \circ R)^{-1} = R^{-1} \circ S^{-1}$, and it fixes the identity relation. The operators $\mathrm{id}$ and $c$ form a
 two-element group whose orbits are the singletons of the symmetric relations and the pairs
 $\{R,R^{-1}\}$ of mutually converse relations.
 

@@ -22,7 +22,7 @@ both of complex dimension two, and they are **inequivalent**: no change of basis
 
 ### The Two Actions
 
-On the first, the generators act by left multiplication in the corpus's matrix model, $\vec e_\imath\mapsto-i\sigma_\imath$ for the rotations and $i\vec e_\imath\mapsto\sigma_\imath$ for the boosts, as *The Spinor Representation of the Lorentz Group in Biquaternionic Form* fixes them; multiplied by $\tfrac{i}{2}$ the same two read $\tfrac12\sigma_\imath$ and $\tfrac{i}{2}\sigma_\imath$, the normalisation in which the rotation generator is Hermitian and the boost generator carries the $i$. On the second the sign of the boost part is reversed relative to the rotation part. So the two spinors differ by the sign of the boost, which is the statement that they are conjugate representations and not equivalent ones.
+On the first, the generators act by left multiplication in the corpus's matrix model, $\vec e_{\imath}\mapsto-i\sigma_{\imath}$ for the rotations and $i\vec e_{\imath}\mapsto\sigma_{\imath}$ for the boosts, as *The Spinor Representation of the Lorentz Group in Biquaternionic Form* fixes them; multiplied by $\tfrac{i}{2}$ the same two read $\tfrac12\sigma_{\imath}$ and $\tfrac{i}{2}\sigma_{\imath}$, the normalisation in which the rotation generator is Hermitian and the boost generator carries the $i$. On the second the sign of the boost part is reversed relative to the rotation part. So the two spinors differ by the sign of the boost, which is the statement that they are conjugate representations and not equivalent ones.
 
 In the algebra, the first is the defining module $V_{1/2}=\mathbb{C}^{2}$ and the second is its conjugate $\overline{V_{1/2}}$. The algebra acts on the first by left multiplication, and the second is reached by complex conjugation. The corpus reserves the bar for complex conjugation and the star for the Hermitian conjugation built from it, and the exchange of the two chiralities on the module is what the corpus calls charge conjugation there; this article keeps the names apart and writes "complex conjugation" when it means the bar.
 
@@ -63,7 +63,7 @@ In the chiral basis the matrices are built from the two off-diagonal blocks,
 $$
 \gamma_{0}=\begin{pmatrix}0&1\\1&0\end{pmatrix},
 \qquad
-\gamma_\imath=\begin{pmatrix}0&\sigma_\imath\\-\sigma_\imath&0\end{pmatrix},
+\gamma_{\imath}=\begin{pmatrix}0&\sigma_{\imath}\\-\sigma_{\imath}&0\end{pmatrix},
 $$
 
 with the $2\times2$ blocks acting on the two spinors. The chiral basis is the one in which the grading is diagonal, and it is the basis adapted to the pair.

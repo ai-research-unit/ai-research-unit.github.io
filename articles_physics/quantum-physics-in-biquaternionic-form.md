@@ -81,7 +81,7 @@ where $\vec u = u_x \vec e_x + u_y \vec e_y + u_z \vec e_z$ is a unit pure real 
 
 The **parametrization** is by the unit sphere $S^2 \subset \mathbb{R}^3$: the direction $\vec u$ determines the idempotent $\tilde\Pi_{\mathrm{id},1}(\vec u)$ uniquely, and the complementary idempotent $\tilde\Pi_{\mathrm{id},2}(\vec u) = \tilde\Pi_{\mathrm{id},1}(-\vec u)$ corresponds to the opposite direction.
 
-**Identification with standard states.** Under the series isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ fixed by $\vec e_\imath\mapsto-i\sigma_\imath$ (*Algebra and Element Conventions*), the idempotent $\tilde\Pi_{\mathrm{id},1}(\vec u)$ maps to the standard pure state $|\vec u+\rangle\langle\vec u+|$, the spin-up state along direction $\vec u$. The map is computed in one line: $\mathsf{M}_2(\vec u)=-i\,\vec u\cdot\vec\sigma$, so $i\,\mathsf{M}_2(\vec u)=\vec u\cdot\vec\sigma$ and
+**Identification with standard states.** Under the series isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ fixed by $\vec e_{\imath}\mapsto-i\sigma_{\imath}$ (*Algebra and Element Conventions*), the idempotent $\tilde\Pi_{\mathrm{id},1}(\vec u)$ maps to the standard pure state $|\vec u+\rangle\langle\vec u+|$, the spin-up state along direction $\vec u$. The map is computed in one line: $\mathsf{M}_2(\vec u)=-i\,\vec u\cdot\vec\sigma$, so $i\,\mathsf{M}_2(\vec u)=\vec u\cdot\vec\sigma$ and
 
 $$
 \mathsf{M}_2\bigl(\tilde\Pi_{\mathrm{id},1}(\vec u)\bigr)=\tfrac{1}{2}\left(I+\vec u\cdot\vec\sigma\right)
@@ -478,7 +478,7 @@ $$
 all coefficients real: the quantum half has the real scalar slot, the relativistic half the imaginary one. That single sign is what makes the two norms different, the same quaternionic norm being positive definite on $\mathbb{B}_{\Psi}$ and indefinite on $\mathbb{B}_{\Phi}$,
 
 $$
-\tilde Q_\Phi\tilde Q_\Phi^{\natural} = -q_t'^2 + q_x^2 + q_y^2 + q_z^2,
+\tilde Q_\Phi\tilde Q_\Phi^{\natural} = -q_t'{}^2 + q_x^2 + q_y^2 + q_z^2,
 $$
 
 three directions positive and the temporal one negative, because the time coefficient carries the central imaginary and its square is negative. The zero set is the light cone, and the maps that preserve the interval are the Lorentz transformations. A state needs the positive definite form, and a four-vector needs the indefinite one; the two halves give one each.

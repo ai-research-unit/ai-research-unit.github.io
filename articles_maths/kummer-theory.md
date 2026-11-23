@@ -141,10 +141,10 @@ and the inclusion $\Delta \subseteq \Delta_L$ is therefore an equality.
 **Corollary (Galois group and subgroup lattice).** With notation as in the theorem, the Galois group of $K(\Delta^{1/n})/K$ is the character group of $\Delta/(K^\times)^n$; the subgroups $\Delta'$ with $(K^\times)^n \subseteq \Delta' \subseteq \Delta$ correspond bijectively to the intermediate fields of $K(\Delta^{1/n})/K$, and
 
 $$
-\Delta' \longleftrightarrow K\bigl(\Delta'^{1/n}\bigr), \qquad \Delta' \longleftrightarrow \operatorname{gal}\bigl(L/K(\Delta'^{1/n})\bigr)^{\perp},
+\Delta' \longleftrightarrow K\bigl(\Delta'{}^{1/n}\bigr), \qquad \Delta' \longleftrightarrow \operatorname{gal}\bigl(L/K(\Delta'{}^{1/n})\bigr)^{\perp},
 $$
 
-in the sense that the annihilator of $\Delta'/(K^\times)^n$ under the pairing is $\operatorname{gal}(L/K(\Delta'^{1/n}))$. The correspondence reverses inclusions.
+in the sense that the annihilator of $\Delta'/(K^\times)^n$ under the pairing is $\operatorname{gal}(L/K(\Delta'{}^{1/n}))$. The correspondence reverses inclusions.
 
 **Corollary (translation of the Galois correspondence).** Under the Kummer pairing, for subgroups $\Delta_1 \subseteq \Delta_2 \subseteq K^\times$ containing $(K^\times)^n$ of finite index,
 

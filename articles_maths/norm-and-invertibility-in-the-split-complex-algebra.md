@@ -7,18 +7,18 @@ This article studies the algebraic norm that the general plain bilinear product,
 A norm is relative to a product, and the algebraic norm of a product is the diagonal of its general plain bilinear form, the definition of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*: for the plain product the form is $\langle Q_2,Q_1\rangle=Q_2Q_1$ and its diagonal is
 
 $$
-\langle Q\rangle=Q^{2}=(q^{2}+q'^{2})+2qq'j,
+\langle Q\rangle=Q^{2}=(q^{2}+q'{}^{2})+2qq'j,
 $$
 
-the first of the two algebraic norms of the space and not the second, $\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'^{2}$. The article defines it, records its value, its Gram matrix, its anisotropy and its vanishing set, and proves that it is **multiplicative** as an element of the ring and **not a real norm**. That is the whole of the algebraic norm of the plain product.
+the first of the two algebraic norms of the space and not the second, $\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'{}^{2}$. The article defines it, records its value, its Gram matrix, its anisotropy and its vanishing set, and proves that it is **multiplicative** as an element of the ring and **not a real norm**. That is the whole of the algebraic norm of the plain product.
 
 The invertibility is where the article records an **absence**. The plain product is associative and unital, so its invertible elements and its group of invertibles are defined; but the algebraic norm of the product does **not** decide them. The element $1+j$ is a zero divisor and satisfies $\langle 1+j\rangle=2(1+j)\neq0$: the non-vanishing of the algebraic norm is not sufficient for invertibility. The converse failure cannot occur, because $\langle Q\rangle=0$ forces $Q=0$ over the reals; the norm is anisotropic and sees only the origin. The article states that absence rather than a criterion. The criterion of the plain product is furnished by the other algebraic norm, $\langle Q\rangle_{*}=Q\bar Q$, which is not the algebraic norm of the plain product and is studied in *Norm and Invertibility in the General Split-Complex Algebra*; the zero divisors are *Zero Divisors of the Split-Complex Algebra*.
 
-**The results.** The plain product carries one algebraic norm, the diagonal of its general plain bilinear form, $\langle Q\rangle=Q^{2}=(q^{2}+q'^{2})+2qq'j$, $\mathbb{C}_{\mathrm{spl}}$-valued, anisotropic, of realified Gram matrix $\operatorname{diag}(1,1)$ in the basis $1,j$. It is **multiplicative**, $\langle QB\rangle=\langle Q\rangle\langle B\rangle$, by associativity of the ring. It is **not a real norm**: its value is not real in general, it defines no order and no modulus, and its vanishing set is the single point $\{0\}$. It does **not** decide invertibility: $\langle Q\rangle\neq0$ does not force $Q$ to be an invertible element, the witness being the zero divisor $1+j$. Each section below states its result first and then proves it.
+**The results.** The plain product carries one algebraic norm, the diagonal of its general plain bilinear form, $\langle Q\rangle=Q^{2}=(q^{2}+q'{}^{2})+2qq'j$, $\mathbb{C}_{\mathrm{spl}}$-valued, anisotropic, of realified Gram matrix $\operatorname{diag}(1,1)$ in the basis $1,j$. It is **multiplicative**, $\langle QB\rangle=\langle Q\rangle\langle B\rangle$, by associativity of the ring. It is **not a real norm**: its value is not real in general, it defines no order and no modulus, and its vanishing set is the single point $\{0\}$. It does **not** decide invertibility: $\langle Q\rangle\neq0$ does not force $Q$ to be an invertible element, the witness being the zero divisor $1+j$. Each section below states its result first and then proves it.
 
 ## The Algebraic Norm of the Plain Product
 
-**The general plain bilinear product carries exactly one algebraic norm, the diagonal of its general plain bilinear form, $\langle Q\rangle=Q^{2}=(q^{2}+q'^{2})+2qq'j$; it is $\mathbb{C}_{\mathrm{spl}}$-valued and anisotropic, of realified Gram matrix $\operatorname{diag}(1,1)$, and its vanishing set is the origin.**
+**The general plain bilinear product carries exactly one algebraic norm, the diagonal of its general plain bilinear form, $\langle Q\rangle=Q^{2}=(q^{2}+q'{}^{2})+2qq'j$; it is $\mathbb{C}_{\mathrm{spl}}$-valued and anisotropic, of realified Gram matrix $\operatorname{diag}(1,1)$, and its vanishing set is the origin.**
 
 ### Definition
 
@@ -37,7 +37,7 @@ $$
 the general plain bilinear form of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*. The form is symmetric, because the algebra is commutative. In coordinates,
 
 $$
-\langle Q\rangle=(q+jq')^{2}=q^{2}+q'^{2}+2qq'j,
+\langle Q\rangle=(q+jq')^{2}=q^{2}+q'{}^{2}+2qq'j,
 $$
 
 so the algebraic norm takes its value in the whole algebra $\mathbb{C}_{\mathrm{spl}}$ and not in the base field.
@@ -84,14 +84,14 @@ The multiplicativity is the multiplicativity of the square in any commutative as
 
 ## The Algebraic Norm Is Not a Real Norm
 
-**The algebraic norm is $\mathbb{C}_{\mathrm{spl}}$-valued, not real; its real part is the Euclidean form $q^{2}+q'^{2}$, positive definite, and its imaginary part is $2qq'$. It is therefore not a norm of the real vector space, although it is multiplicative.**
+**The algebraic norm is $\mathbb{C}_{\mathrm{spl}}$-valued, not real; its real part is the Euclidean form $q^{2}+q'{}^{2}$, positive definite, and its imaginary part is $2qq'$. It is therefore not a norm of the real vector space, although it is multiplicative.**
 
 ### The Real and the Imaginary Parts
 
 Write $Q^{2}=B_{0}+jB_{1}$ with
 
 $$
-B_{0}=q^{2}+q'^{2},\qquad B_{1}=2qq'.
+B_{0}=q^{2}+q'{}^{2},\qquad B_{1}=2qq'.
 $$
 
 The real part $B_{0}$ is the **Euclidean quadratic form** of the plane, positive definite, of Gram matrix $\operatorname{diag}(1,1)$; the imaginary part $B_{1}$ is the hyperbolic cross term. The real part is not multiplicative: for $Q=B=1+j$ one has $B_{0}(Q)=B_{0}(B)=2$, while $QB=2+2j$ and $B_{0}(QB)=8$, not $4$. The full algebraic norm is multiplicative because it keeps both parts and multiplies in the ring; the real part alone does not.
@@ -104,9 +104,9 @@ $$
 \boxed{\;Q^{2}=0\iff Q=0\;}.
 $$
 
-**Proof.** $Q^{2}=0$ gives $q^{2}+q'^{2}=0$ and $2qq'=0$. The first equation forces $q=q'=0$ over $\mathbb{R}$, since both squares are non-negative and their sum is zero.
+**Proof.** $Q^{2}=0$ gives $q^{2}+q'{}^{2}=0$ and $2qq'=0$. The first equation forces $q=q'=0$ over $\mathbb{R}$, since both squares are non-negative and their sum is zero.
 
-So the algebraic norm is **anisotropic**. This is the sharp difference from the second algebraic norm $\langle Q\rangle_{*}=q^{2}-q'^{2}$, which vanishes on the two null lines and therefore on every zero divisor. The plain algebraic norm sees the zero-divisor set as a set of nonzero values and cannot separate it from the invertibles.
+So the algebraic norm is **anisotropic**. This is the sharp difference from the second algebraic norm $\langle Q\rangle_{*}=q^{2}-q'{}^{2}$, which vanishes on the two null lines and therefore on every zero divisor. The plain algebraic norm sees the zero-divisor set as a set of nonzero values and cannot separate it from the invertibles.
 
 ### The Shell of the Algebraic Norm
 
@@ -116,7 +116,7 @@ $$
 \{Q:\langle Q\rangle=\lambda\}.
 $$
 
-For $\lambda=0$ it is $\{0\}$. For $\lambda=1$ it is the four-element set $\{\pm1,\pm j\}$, the roots of $+1$ of *Square Roots of One and the Idempotents of the Split-Complex Algebra*. For $\lambda=-1$ it is empty, because the real part $q^{2}+q'^{2}$ is non-negative. The shell is not a level set of a real norm: for a real central value it is a finite set, of four points when $\lambda>0$, one point when $\lambda=0$, and empty when $\lambda<0$.
+For $\lambda=0$ it is $\{0\}$. For $\lambda=1$ it is the four-element set $\{\pm1,\pm j\}$, the roots of $+1$ of *Square Roots of One and the Idempotents of the Split-Complex Algebra*. For $\lambda=-1$ it is empty, because the real part $q^{2}+q'{}^{2}$ is non-negative. The shell is not a level set of a real norm: for a real central value it is a finite set, of four points when $\lambda>0$, one point when $\lambda=0$, and empty when $\lambda<0$.
 
 ## The Algebraic Norm Does Not Decide Invertibility
 
@@ -165,12 +165,12 @@ The group is described by the other algebraic norm: an element is invertible exa
 The general plain bilinear product $Q_2Q_1$ carries one algebraic norm, the diagonal of its general plain bilinear form,
 
 $$
-\langle Q\rangle=Q^{2}=(q^{2}+q'^{2})+2qq'j,
+\langle Q\rangle=Q^{2}=(q^{2}+q'{}^{2})+2qq'j,
 $$
 
 $\mathbb{C}_{\mathrm{spl}}$-valued, anisotropic, of realified Gram matrix $\operatorname{diag}(1,1)$ and vanishing set the origin. It is multiplicative, $\langle QB\rangle=\langle Q\rangle\langle B\rangle$, by associativity of the ring, and invariant under the conjugation, $\langle\bar Q\rangle=\overline{\langle Q\rangle}$.
 
-It is **not a real norm**: its value is not real in general, its real part is the Euclidean form $q^{2}+q'^{2}$ and its imaginary part is $2qq'$, and it defines no order and no modulus. It does **not** decide invertibility: the zero divisor $1+j$ has $\langle 1+j\rangle=2+2j\neq0$, so non-vanishing is not sufficient; the implication $\langle Q\rangle=0\Rightarrow Q=0$ holds, but it only says that the origin is not invertible. The plain product is associative and unital, with unit $1$ and a genuine abelian group of invertibles; the criterion is carried by the other algebraic norm $\langle Q\rangle_{*}=Q\bar Q$, which is not the algebraic norm of the plain product.
+It is **not a real norm**: its value is not real in general, its real part is the Euclidean form $q^{2}+q'{}^{2}$ and its imaginary part is $2qq'$, and it defines no order and no modulus. It does **not** decide invertibility: the zero divisor $1+j$ has $\langle 1+j\rangle=2+2j\neq0$, so non-vanishing is not sufficient; the implication $\langle Q\rangle=0\Rightarrow Q=0$ holds, but it only says that the origin is not invertible. The plain product is associative and unital, with unit $1$ and a genuine abelian group of invertibles; the criterion is carried by the other algebraic norm $\langle Q\rangle_{*}=Q\bar Q$, which is not the algebraic norm of the plain product.
 
 ## Summary of Notation
 
@@ -179,7 +179,7 @@ It is **not a real norm**: its value is not real in general, its real part is th
 | $Q_2,Q_1$ | the two elements of a product, first and second slot |
 | $Q_2Q_1$ | the general plain bilinear product, the multiplication of the split-complex algebra |
 | $\langle Q_2,Q_1\rangle=Q_2Q_1$ | the general plain bilinear form, the form of the product |
-| $\langle Q\rangle=\langle Q,Q\rangle=Q^{2}=(q^{2}+q'^{2})+2qq'j$ | the algebraic norm of the plain product, the first of the two algebraic norms |
+| $\langle Q\rangle=\langle Q,Q\rangle=Q^{2}=(q^{2}+q'{}^{2})+2qq'j$ | the algebraic norm of the plain product, the first of the two algebraic norms |
 | $\operatorname{diag}(1,1)$ | the realified Gram matrix of $\langle\cdot\rangle$ in the basis $1,j$ |
 | $\{Q:\langle Q\rangle=0\}=\{0\}$ | the vanishing set of the algebraic norm; not the zero-divisor set |
 | $1$ | the two-sided unit of the plain product |

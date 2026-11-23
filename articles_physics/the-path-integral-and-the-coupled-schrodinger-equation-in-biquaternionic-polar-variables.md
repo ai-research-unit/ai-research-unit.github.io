@@ -9,7 +9,7 @@ The finding is one sentence long: the connection shifts the two rates of the cha
 $$
 \kappa_t=\dot\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}\omicron_{\mathrm{pot}},
 \qquad
-\kappa_\imath=\partial_\imath\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_\imath,
+\kappa_{\imath}=\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_{\imath},
 $$
 
 the coupled exponent is the free exponent with $\dot\theta_{\mathrm{pha}}\to\kappa_t$ and $\vec\nabla_\Phi\theta_{\mathrm{pha}}\to\vec\kappa$, and the potential $h_t$ untouched. That is the whole of the coupling in the chart, and it is the chart's form of the element companion's two shifts.
@@ -24,7 +24,7 @@ Three consequences follow, and the first is the article's structural result.
 
 The article does not produce a second integral, does not evaluate the coupled kernel beyond the constant background, does not decide the Landau spectrum, and does not treat a non-central connection. It reads one integral in another coordinate system and says what the coordinate system shows.
 
-Conventions. The chart, the collapse on a central field, the density $n=\varrho^{2}$ and the measure are the free polar companion's. The connection is $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ with $D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}}$ and $D_\imath=\partial_\imath+\frac{2\pi iϙ}{h}A_\imath$. The mechanical momentum is $\vec\pi=-i \frac{h}{2\pi}\vec\nabla_\Phi-q\vec A$ and the potential energy is $-ϙ\omicron_{\mathrm{pot}}$.
+Conventions. The chart, the collapse on a central field, the density $n=\varrho^{2}$ and the measure are the free polar companion's. The connection is $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ with $D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}}$ and $D_{\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$. The mechanical momentum is $\vec\pi=-i \frac{h}{2\pi}\vec\nabla_\Phi-q\vec A$ and the potential energy is $-ϙ\omicron_{\mathrm{pot}}$.
 
 ## The Exponent, and Where the Connection Sits
 
@@ -33,7 +33,7 @@ One substitution and two identities. Putting $\tilde\Xi=\varrho\,e^{i\theta_{\ma
 $$
 \mathrm{Sc}\bigl(i \frac{h}{2\pi}\,\tilde\Xi^{*}D_t\tilde\Xi\bigr)=-\frac{h}{2\pi}\,\varrho^{2}\kappa_t,
 \qquad
-\mathrm{Sc}\bigl((D_\imath\tilde\Xi)^{*}(D_\imath\tilde\Xi)\bigr)=(\partial_\imath \varrho)^{2}+\varrho^{2}\kappa_\imath^{2},
+\mathrm{Sc}\bigl((D_{\imath}\tilde\Xi)^{*}(D_{\imath}\tilde\Xi)\bigr)=(\partial_{\imath} \varrho)^{2}+\varrho^{2}\kappa_{\imath}^{2},
 $$
 
 gives the chart's exponent
@@ -77,7 +77,7 @@ $$
 
 which is the element companion's $h_t\mapsto h_t-ϙ\omicron_{\mathrm{pot}}$ read as a rate. The chart has no term in $\omicron_{\mathrm{pot}}^{2}$ because the temporal bracket is first order: a bracket that is linear in the rate cannot produce a square of the shift.
 
-The agreement is exact and it is the article's structural result. The element form's shift is linear, the chart's is linear, and the two agree at every value of the coupling. In the Klein–Gordon pair the same comparison fails: the chart's temporal bracket is a square with the metric's relative sign, so a constant scalar potential contributes $+\frac{(2\pi)^{2} ϛ^{2}}{h^{2}}a_t'^{2}\varrho^{2}$ and no linear shift, while the element form's shift is linear. **That is the fork, and the fork is the second-order temporal bracket.** The Schrödinger chart's bracket is not a square, so the fork's mechanism is absent, and the Schrödinger pair is free of the question.
+The agreement is exact and it is the article's structural result. The element form's shift is linear, the chart's is linear, and the two agree at every value of the coupling. In the Klein–Gordon pair the same comparison fails: the chart's temporal bracket is a square with the metric's relative sign, so a constant scalar potential contributes $+\frac{(2\pi)^{2} ϛ^{2}}{h^{2}}a_t'{}^{2}\varrho^{2}$ and no linear shift, while the element form's shift is linear. **That is the fork, and the fork is the second-order temporal bracket.** The Schrödinger chart's bracket is not a square, so the fork's mechanism is absent, and the Schrödinger pair is free of the question.
 
 The reason is one line and it is worth stating twice. In the Klein–Gordon chart the exponent is a sum of squares, one per slot, and the temporal square is where a scalar potential lands; in the Schrödinger chart the exponent is linear in the temporal rate, so it is the rate that receives the shift. The order in time decides the shape of the interaction term, and it decides it before the algebra says anything.
 

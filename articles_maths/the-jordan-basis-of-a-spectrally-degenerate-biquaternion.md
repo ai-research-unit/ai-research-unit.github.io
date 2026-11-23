@@ -453,7 +453,7 @@ $$
 **Theorem (expansion).** Every $\tilde X\in\mathbb{B}$ has a unique expansion
 
 $$
-\tilde X=X_{11}\tilde\Pi_{\mathrm{id},++X}_{12}\vec\Pi_{\mathrm{nil},-+X}_{21}\vec\Pi_{\mathrm{nil},++X}_{22}\tilde\Pi_{\mathrm{id},-},
+\tilde X=X_{11}\tilde\Pi_{\mathrm{id},++X}{}_{12}\vec\Pi_{\mathrm{nil},-+X}{}_{21}\vec\Pi_{\mathrm{nil},++X}{}_{22}\tilde\Pi_{\mathrm{id},-},
 $$
 
 and the map $\tilde X\mapsto\mathsf M_2^{\tilde Q}(\tilde X)$ is an algebra isomorphism onto $M_2(\mathbb{C})$.
@@ -677,7 +677,7 @@ $$
 \mathcal{P}=(\tilde\Pi_{\mathrm{id},+},\ \vec\Pi_{\mathrm{nil},-},\ \vec\Pi_{\mathrm{nil},+},\ \tilde\Pi_{\mathrm{id},-})
 $$
 
-are a basis of $\mathbb{B}$, unique up to the reciprocal rescaling $(\mu,\mu^{-1})$ of the two mixed generators. For $\tilde Q_2\in\mathbb{B}$, let $\mathsf M_{\tilde\Pi_{\mathrm{id}}}(\tilde Q_2)=(p_{ij})$ be its Peirce matrix in this basis, so that $\tilde Q_2=p_{11}\tilde\Pi_{\mathrm{id},++p}_{12}\vec\Pi_{\mathrm{nil},-+p}_{21}\vec\Pi_{\mathrm{nil},++p}_{22}\tilde\Pi_{\mathrm{id},-}$. For the standard pair $\mathsf M_{\tilde\Pi_{\mathrm{id}}}$ is the model $\mathsf M_2$ of §*The Peirce Coordinates and the Matrix Model*.
+are a basis of $\mathbb{B}$, unique up to the reciprocal rescaling $(\mu,\mu^{-1})$ of the two mixed generators. For $\tilde Q_2\in\mathbb{B}$, let $\mathsf M_{\tilde\Pi_{\mathrm{id}}}(\tilde Q_2)=(p_{ij})$ be its Peirce matrix in this basis, so that $\tilde Q_2=p_{11}\tilde\Pi_{\mathrm{id},++p}{}_{12}\vec\Pi_{\mathrm{nil},-+p}{}_{21}\vec\Pi_{\mathrm{nil},++p}{}_{22}\tilde\Pi_{\mathrm{id},-}$. For the standard pair $\mathsf M_{\tilde\Pi_{\mathrm{id}}}$ is the model $\mathsf M_2$ of §*The Peirce Coordinates and the Matrix Model*.
 
 Both sector articles use a basis of this shape. They differ only in the pair, and the pair is visible in the matrix of the element. Write $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and put $B^2=Q_x^2+Q_y^2+Q_z^2$. Write $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ for the two minimal left ideals, and split the four basis vectors into the couples $\mathcal{C}_+=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ and $\mathcal{C}_-=(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$.
 

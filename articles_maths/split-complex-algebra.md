@@ -154,7 +154,7 @@ $$
 Q = j q', \qquad q' \in \mathbb{R}.
 $$
 
-This is the **split imaginary subspace** $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, a real vector space of dimension $1$. It is not a subalgebra: $(j q')^2 = q'^2 \in \mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, which is not in $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ unless $q' = 0$. The form it carries is treated in *Norm and Invertibility in the General Split-Complex Algebra*.
+This is the **split imaginary subspace** $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, a real vector space of dimension $1$. It is not a subalgebra: $(j q')^2 = q'{}^2 \in \mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, which is not in $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ unless $q' = 0$. The form it carries is treated in *Norm and Invertibility in the General Split-Complex Algebra*.
 
 There is only one non-trivial fixed-point set and one non-trivial anti-fixed-point set, because there is only one non-trivial involution. The involution lattice of $\mathbb{C}_{\mathrm{spl}}$ is the single edge $\{0\}\subset\mathbb{Z}/2$ drawn on the two lines.
 

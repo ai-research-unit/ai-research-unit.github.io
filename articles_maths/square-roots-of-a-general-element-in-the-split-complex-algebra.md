@@ -58,10 +58,10 @@ There is no coupling between the two coordinates, and each equation is the ordin
 **Remark (the scalar form).** In the basis $1,j$ the same equations read
 
 $$
-x^{2}+x'^{2}=q,\qquad 2xx'=q',
+x^{2}+x'{}^{2}=q,\qquad 2xx'=q',
 $$
 
-because $Ζ^{2}=(x^{2}+x'^{2})+2xx'j$. Adding and subtracting gives the two idempotent equations, and solving them directly reproduces the classification; the idempotent form is the shorter route.
+because $Ζ^{2}=(x^{2}+x'{}^{2})+2xx'j$. Adding and subtracting gives the two idempotent equations, and solving them directly reproduces the classification; the idempotent form is the shorter route.
 
 ## The Roots with Positive Coordinates
 
@@ -206,7 +206,7 @@ $$
 =\frac{3\sqrt2}{2}+\frac{\sqrt2}{2}j .
 $$
 
-Squaring, $x^{2}+x'^{2}=\tfrac{18}{4}+\tfrac{2}{4}=5$ and $2xx'=2\cdot\tfrac{3\sqrt2}{2}\cdot\tfrac{\sqrt2}{2}=3$, so $Ζ^{2}=5+3j$. The other three roots are obtained by changing the signs of the two coordinates.
+Squaring, $x^{2}+x'{}^{2}=\tfrac{18}{4}+\tfrac{2}{4}=5$ and $2xx'=2\cdot\tfrac{3\sqrt2}{2}\cdot\tfrac{\sqrt2}{2}=3$, so $Ζ^{2}=5+3j$. The other three roots are obtained by changing the signs of the two coordinates.
 
 **Example ($Q=1+j$).** Here $Q_{+}=2$ and $Q_{-}=0$, so there are two roots,
 
@@ -216,7 +216,7 @@ $$
 
 Squaring, $\sqrt2\,\Pi_{+}$ has square $2\Pi_{+}=1+j$. The roots lie on the null line $\mathbb{R}\Pi_{+}$ and are zero divisors, as the radicand is.
 
-**Example ($Q=j$).** Here $Q_{+}=1$ and $Q_{-}=-1$, one negative, so there is no root. In scalar coordinates the equations would be $x^{2}+x'^{2}=0$ and $2xx'=1$; the first forces $x=x'=0$, and the second then fails.
+**Example ($Q=j$).** Here $Q_{+}=1$ and $Q_{-}=-1$, one negative, so there is no root. In scalar coordinates the equations would be $x^{2}+x'{}^{2}=0$ and $2xx'=1$; the first forces $x=x'=0$, and the second then fails.
 
 **Example ($Q=0$).** The only root is $0$.
 

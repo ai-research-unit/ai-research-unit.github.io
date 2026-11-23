@@ -4,6 +4,8 @@
 
 The standing of this article. The mixing matrix itself, its parameterisation and its numbers are standard physics, transcribed. What the corpus contributes is the placement: the matrix is an operator on the generation label, and [the CKM article](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html) already built that operator. This article uses the same construction for the leptons and then reports what the numbers do, which is not the same as what the quark numbers do.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 Why leptons are not the quarks again. The two mixing matrices are the same kind of object and their values have almost nothing in common. The quark angles are small, $13^\circ$, $2.4^\circ$, $0.2^\circ$, and their phase is not small — it is about $66^\circ$ — yet the asymmetry it produces is one part in $10^{5}$ of the mixing, because the asymmetry is the three small angles multiplied together. The lepton angles are large, $33^\circ$, $49^\circ$, $8.6^\circ$, and the CP asymmetry is $850$ times larger. An article that presented the PMNS matrix as "the CKM matrix for leptons" would be describing the formalism and missing the phenomenon: the lepton sector mixes *maximally* where the quark sector mixes *hardly at all*, and nothing in the framework explains why.
 
 The claim, in four parts.
@@ -106,8 +108,8 @@ Each row and each column has unit norm to the accuracy of three printed digits, 
 
 | Quantity | Value | What it sets |
 |---|---|---|
-| $\delta m^2_{21}$ | $7.42\times10^{-5}\ \mathrm{eV}^2$ | The solar oscillation length |
-| $\lvert\delta m^2_{31}\rvert$ | $2.51\times10^{-3}\ \mathrm{eV}^2$ | The atmospheric oscillation length |
+| $\delta m^2_{21}$ | $2.358\times10^{-76}\ \mathrm{kg^2}$ | The solar oscillation length |
+| $\lvert\delta m^2_{31}\rvert$ | $7.978\times10^{-75}\ \mathrm{kg^2}$ | The atmospheric oscillation length |
 | Ratio | $33.8$ | Why two very different lengths appear |
 
 The ratio is $33.8$, so the two oscillation lengths differ by a factor of thirty-four and can be separated experimentally. This is the reason a three-neutrino fit is possible at all: were the two differences comparable, no single experiment could separate the two oscillation lengths, and every fit would be degenerate.
@@ -126,21 +128,21 @@ The $\sin^2$ term is CP-conserving, the $\sin$ term is not, and the coefficient 
 The oscillation length, and its size. The phase is
 
 $$
-\frac{\delta m^2L}{4E}=1.267\,\frac{\delta m^2[\mathrm{eV}^2]\,L[\mathrm{km}]}{E[\mathrm{GeV}]} ,
+\frac{\delta m^{2}c^{3}}{4\hbar}\,\frac{L}{E}=6.388\times10^{58}\,\frac{\delta m^{2}[\mathrm{kg}^{2}]\,L[\mathrm{m}]}{E[\mathrm{J}]} ,
 $$
 
 and the numbers explain the whole experimental programme:
 
-| Experiment | $L$ | $E$ | $\delta m^2$ | Phase $\delta m^2L/4E$ | Oscillation length |
+| Experiment | $L$ | $E$ | $\delta m^2$ | Phase $\delta m^{2}c^{3}L/(4\hbar E)$ | Oscillation length |
 |---|---|---|---|---|---|
-| T2K | $295$ km | $0.6$ GeV | $2.51\times10^{-3}$ | $1.56$ rad $=89.6^\circ$ | $593$ km |
-| NOvA | $810$ km | $2$ GeV | $2.51\times10^{-3}$ | $1.29$ rad $=73.8^\circ$ | $1976$ km |
-| KamLAND | $180$ km | $3$ MeV | $7.42\times10^{-5}$ | $5.64$ rad | $100$ km |
-| Solar | $1.5\times10^{8}$ km | $5$ MeV | $7.42\times10^{-5}$ | $2.8\times10^{6}$ rad | $167$ km |
+| T2K | $2.95\times10^{5}$ m | $9.613\times10^{-11}$ J | $7.978\times10^{-75}$ | $1.56$ rad $=89.6^\circ$ | $5.93\times10^{5}$ m |
+| NOvA | $8.10\times10^{5}$ m | $3.204\times10^{-10}$ J | $7.978\times10^{-75}$ | $1.29$ rad $=73.8^\circ$ | $1.976\times10^{6}$ m |
+| KamLAND | $1.80\times10^{5}$ m | $4.807\times10^{-13}$ J | $2.358\times10^{-76}$ | $5.64$ rad | $1.00\times10^{5}$ m |
+| Solar | $1.5\times10^{11}$ m | $8.011\times10^{-13}$ J | $2.358\times10^{-76}$ | $2.8\times10^{6}$ rad | $1.67\times10^{5}$ m |
 
-The last column is one full cycle of the $\sin^2$, $L_{\mathrm{osc}}=\pi E/(1.267\,\delta m^2)=2.48\,E[\mathrm{GeV}]/\delta m^2[\mathrm{eV}^2]$ km, at which the phase advances by $\pi$. Two of its entries are worth reading against the baseline beside them: T2K's $295$ km is half an oscillation length, so its phase is $\pi/2$ and its $\sin^2$ is at the first maximum; KamLAND's $180$ km is $1.8$ oscillation lengths, phase $1.79\pi$, so the reactor experiment sits on the falling side of its second maximum.
+The last column is one full cycle of the $\sin^2$, $L_{\mathrm{osc}}=\pi E/(6.388\times10^{58}\,\delta m^{2})=4.918\times10^{-59}\,E[\mathrm{J}]/\delta m^{2}[\mathrm{kg}^{2}]$ m, at which the phase advances by $\pi$. Two of its entries are worth reading against the baseline beside them: T2K's $2.95\times10^{5}$ m is half an oscillation length, so its phase is $\pi/2$ and its $\sin^2$ is at the first maximum; KamLAND's $1.80\times10^{5}$ m is $1.8$ oscillation lengths, phase $1.79\pi$, so the reactor experiment sits on the falling side of its second maximum.
 
-T2K's phase is $89.6^\circ$. That is not a coincidence: the beamline and the off-axis energy were chosen so that the flux peaks at the first oscillation maximum, where the $\sin^2$ is one and the rate is most sensitive to the parameters. The design of a long-baseline experiment is the choice of $L/E$ such that the phase is $\pi/2$ for the $\delta m^2$ of interest, which is $L=L_{\mathrm{osc}}/2$ — and the T2K numbers sit there to half a per cent, $295$ against $593/2=296.5$. NOvA, at $810$ km and $2$ GeV, sits at $0.41$ of an oscillation length and $73.8^\circ$ — short of the maximum, which is what lets its flux cover both the rise toward the first peak and the fall beyond it, and that shape is what separates the octant and the phase.
+T2K's phase is $89.6^\circ$. That is not a coincidence: the beamline and the off-axis energy were chosen so that the flux peaks at the first oscillation maximum, where the $\sin^2$ is one and the rate is most sensitive to the parameters. The design of a long-baseline experiment is the choice of $L/E$ such that the phase is $\pi/2$ for the $\delta m^2$ of interest, which is $L=L_{\mathrm{osc}}/2$ — and the T2K numbers sit there to half a per cent, $2.95\times10^{5}$ against $5.93\times10^{5}/2=2.965\times10^{5}$. NOvA, at $8.10\times10^{5}$ m and $3.204\times10^{-10}$ J, sits at $0.41$ of an oscillation length and $73.8^\circ$ — short of the maximum, which is what lets its flux cover both the rise toward the first peak and the fall beyond it, and that shape is what separates the octant and the phase.
 
 Why the solar case is different. Its phase is $2.8\times10^{6}$ radians, so the oscillation is averaged out entirely and the survival probability is the average, which depends on $\theta_{12}$ alone. That averaging is what makes the solar measurement a measurement of one angle rather than of a phase. And the matter effect — coherent forward scattering off electrons, which the electron flavour feels and the others do not — makes the high-energy survival tend to the *other* composition:
 
@@ -223,8 +225,8 @@ The two orderings, with their numbers. Taking the lightest mass at zero, which i
 
 | Ordering | $m_1$ | $m_2$ | $m_3$ | $\sum m$ | $m_{\beta\beta}$ range |
 |---|---|---|---|---|---|
-| Normal | $0$ | $8.6$ meV | $50.1$ meV | $59$ meV | $1.4$–$3.7$ meV |
-| Inverted | $50.1$ meV | $50.8$ meV | $0$ | $101$ meV | $19$–$49$ meV |
+| Normal | $0$ | $1.53\times10^{-38}$ kg | $8.93\times10^{-38}$ kg | $1.05\times10^{-37}$ kg | $2.5\times10^{-39}$–$6.6\times10^{-39}$ kg |
+| Inverted | $8.93\times10^{-38}$ kg | $9.06\times10^{-38}$ kg | $0$ | $1.80\times10^{-37}$ kg | $3.4\times10^{-38}$–$8.7\times10^{-38}$ kg |
 
 The masses follow from the differences alone once the lightest is fixed, which is why the table has no third independent quantity in it.
 
@@ -232,9 +234,9 @@ The three frontiers, and what each measures.
 
 | Probe | Quantity | Current bound | Reaches |
 |---|---|---|---|
-| Cosmology | $\sum m_i$ | $<0.12$ eV | The ordering, if $\sum m<0.1$ eV |
-| Tritium $\beta$ decay (KATRIN) | $m_\beta=\sqrt{\sum\lvert U_{ei}\rvert^2m_i^2}$ | $<0.8$ eV | The absolute scale, if degenerate |
-| Neutrinoless $\beta\beta$ | $m_{\beta\beta}=\lvert\sum U_{ei}^2m_i\rvert$ | $<0.03$–$0.16$ eV (isotope dependent) | **Majorana nature**, and the ordering |
+| Cosmology | $\sum m_i$ | $<2.14\times10^{-37}$ kg | The ordering, if $\sum m<1.78\times10^{-37}$ kg |
+| Tritium $\beta$ decay (KATRIN) | $m_\beta=\sqrt{\sum\lvert U_{ei}\rvert^2m_i^2}$ | $<1.43\times10^{-36}$ kg | The absolute scale, if degenerate |
+| Neutrinoless $\beta\beta$ | $m_{\beta\beta}=\lvert\sum U_{ei}^2m_i\rvert$ | $<5.3\times10^{-38}$–$2.85\times10^{-37}$ kg (isotope dependent) | **Majorana nature**, and the ordering |
 
 Why the ordering matters to the corpus. It is the difference between two theories' predictions for a number the framework does not contain. Neither ordering is preferred by any principle in the algebra, and the weak current preference for the normal ordering ($\delta\chi^2\approx2.7$) is a fit result and not a discovery. The article states the preference and states its weakness, because a $2.7$ is not evidence.
 
@@ -254,7 +256,7 @@ $$
 
 with the squares. The squares do not cancel the column phases; they add them, so the rate depends on $\theta_{\mathrm{mjr},21}$ and $\theta_{\mathrm{mjr},31}$ through interference between the three terms.
 
-Why the range matters more than the value. For the normal ordering the three terms nearly cancel whatever the phases do, and $\lvert m_{\beta\beta}\rvert$ lies between $1.4$ and $3.7$ meV — an order of magnitude below any planned experiment. For the inverted ordering the first two terms add coherently and the range is $19$–$49$ meV, within reach. So a positive signal at $20$ meV would say two things at once: the neutrino is Majorana, and the ordering is inverted. A null result at $20$ meV would say the ordering is normal or the neutrino is Dirac, and would not distinguish those.
+Why the range matters more than the value. For the normal ordering the three terms nearly cancel whatever the phases do, and $\lvert m_{\beta\beta}\rvert$ lies between $2.5\times10^{-39}$ and $6.6\times10^{-39}$ kg — an order of magnitude below any planned experiment. For the inverted ordering the first two terms add coherently and the range is $3.4\times10^{-38}$–$8.7\times10^{-38}$ kg, within reach. So a positive signal at $3.6\times10^{-38}$ kg would say two things at once: the neutrino is Majorana, and the ordering is inverted. A null result at $3.6\times10^{-38}$ kg would say the ordering is normal or the neutrino is Dirac, and would not distinguish those.
 
 **The one thing this article will not do.** It will not claim the phases are measured. They are constrained only through $\lvert m_{\beta\beta}\rvert$, which is a single number depending on both, so even a measurement of the rate would not determine two phases. The count of six parameters is exact; the measurement of four of them is good; the measurement of the last two is not yet.
 
@@ -326,7 +328,7 @@ CP violation is $850$ times stronger here than in the quark sector, in the Jarls
 
 Two of the historical patterns are dead: bimaximal and tribimaximal both predicted $\theta_{13}=0$, and the 2012 measurement of $\sin^2\theta_{13}=0.022$ falsified them, with $\theta_{12}$ surviving only as approximately tribimaximal. The third anticipated the measurement: trimaximal mixing generates $\theta_{13}=\sin^{-1}(\sin\theta_C/\sqrt2)=9.2^\circ$ from the charged-lepton rotation, within a degree of the value found.
 
-The mass ordering is unresolved, and the lightest-mass-zero table gives sums of $59$ and $101$ meV against a cosmological bound of $120$ meV. The Majorana phases are invisible in oscillation exactly, not to a tolerance, and visible only in $\lvert m_{\beta\beta}\rvert$, whose normal-ordering range of $1.4$–$3.7$ meV is out of reach while the inverted range of $19$–$49$ meV is not, so a signal would say Majorana and inverted at once.
+The mass ordering is unresolved, and the lightest-mass-zero table gives sums of $59$ and $1.80\times10^{-37}$ kg against a cosmological bound of $2.14\times10^{-37}$ kg. The Majorana phases are invisible in oscillation exactly, not to a tolerance, and visible only in $\lvert m_{\beta\beta}\rvert$, whose normal-ordering range of $2.5\times10^{-39}$–$6.6\times10^{-39}$ kg is out of reach while the inverted range of $3.4\times10^{-38}$–$8.7\times10^{-38}$ kg is not, so a signal would say Majorana and inverted at once.
 
 The framework supplies the arena and transcribes the rest: no mechanism for the values, no explanation for the factor $850$, no ordering, no Majorana scale, no leptogenesis.
 
@@ -343,8 +345,8 @@ The framework supplies the arena and transcribes the rest: no mechanism for the 
 | $\theta_{\mathrm{mjr},21}$, $\theta_{\mathrm{mjr},31}$ | Majorana phases, in the half-angle convention |
 | $s_{ij}$, $c_{ij}$ | $\sin\theta_{ij}$, $\cos\theta_{ij}$ |
 | $J$ | Jarlskog invariant, $-0.0262$ at the fit phase |
-| $\delta m^2_{21}$ | $7.42\times10^{-5}$ eV$^2$ |
-| $\delta m^2_{31}$ | $2.51\times10^{-3}$ eV$^2$, magnitude |
+| $\delta m^2_{21}$ | $2.358\times10^{-76}$ kg$^2$ |
+| $\delta m^2_{31}$ | $7.978\times10^{-75}$ kg$^2$, magnitude |
 | $L$, $E$ | Baseline and energy |
 | $L_{\mathrm{osc}}$ | One full cycle of the $\sin^2$, $\pi E/(1.267\delta m^2)$ |
 | $\delta m^2_{32}$ | $\delta m^2_{31}-\delta m^2_{21}$, the third argument of the CP asymmetry |

@@ -3,8 +3,7 @@
 
 ## Introduction
 
-On the subsets of a set $X$ two structures meet: the **symmetric difference** $A \triangle B =
-(A \setminus B) \cup (B \setminus A)$, which makes $\mathcal{P}(X)$ an abelian group of exponent two,
+On the subsets of a set $X$ two structures meet: the **symmetric difference** $A \triangle B = (A \setminus B) \cup (B \setminus A)$, which makes $\mathcal{P}(X)$ an abelian group of exponent two,
 and the **complement** $A \mapsto X \setminus A$, an order-reversing involution that is a translation of
 that group. With the
 intersection as a second, multiplicative operation the three together make $\mathcal{P}(X)$ a
@@ -78,8 +77,7 @@ $$
 $$
 
 **Proof.** The first identity is the complement of the second rewriting of the symmetric difference
-above; the second holds because $A \triangle (A \cap B) = A \setminus B$; the third is $X \triangle A =
-X \setminus A$, since $A \subseteq X$.
+above; the second holds because $A \triangle (A \cap B) = A \setminus B$; the third is $X \triangle A = X \setminus A$, since $A \subseteq X$.
 
 ## The Complement as the Involution
 
@@ -98,9 +96,7 @@ by $X$.
 
 **Proof.** $X \triangle A = X \setminus A$ because $A \subseteq X$, which is the definition of the
 complement; translating twice by the same element of a group of exponent two is the identity; and the
-computation of the group law is $X \triangle A \triangle B = \neg A \triangle B$ on one side and $(A
-\triangle X) \triangle (B \triangle X) = A \triangle B$ on the other, using $X \triangle X =
-\emptyset$. An affine map of an abelian group is a translation composed with a homomorphism, and here
+computation of the group law is $X \triangle A \triangle B = \neg A \triangle B$ on one side and $(A \triangle X) \triangle (B \triangle X) = A \triangle B$ on the other, using $X \triangle X = \emptyset$. An affine map of an abelian group is a translation composed with a homomorphism, and here
 the homomorphism is the identity because $-A = A$.
 
 The complement is therefore the **involution** of the order, an order-reversing map of order two, and
@@ -113,11 +109,8 @@ own inverse. The complement is not an involution of the multiplicative structure
 $\neg(A \cap B) = \neg A \cup \neg B$, which differs from $\neg A \cap \neg B = \neg(A \cup B)$ whenever
 $A \cup B \neq X$.
 
-**Proof.** $A = \neg A$ would give $A = X \setminus A$, hence $A \subseteq X \setminus A$ and $A \cap A
-= \emptyset$, so $A = \emptyset$ and then $X = \emptyset$. The additive involution is the identity
-because $A \triangle A = \emptyset$ means $-A = A$. For the last statement, if $A \cup B \neq X$ pick $x
-\notin A \cup B$; then $x \in \neg A \cap \neg B = \neg(A \cup B)$ but $x \notin \neg A \cup \neg B =
-\neg(A \cap B)$.
+**Proof.** $A = \neg A$ would give $A = X \setminus A$, hence $A \subseteq X \setminus A$ and $A \cap A = \emptyset$, so $A = \emptyset$ and then $X = \emptyset$. The additive involution is the identity
+because $A \triangle A = \emptyset$ means $-A = A$. For the last statement, if $A \cup B \neq X$ pick $x \notin A \cup B$; then $x \in \neg A \cap \neg B = \neg(A \cup B)$ but $x \notin \neg A \cup \neg B = \neg(A \cap B)$.
 
 **Corollary.** The complement is an anti-automorphism of the intersection and the union, and it is a
 translation, not an automorphism, of the symmetric difference; it converts the ring multiplication
@@ -154,8 +147,7 @@ part is trivial.
 
 The symmetric difference makes the power set an abelian group of exponent two, and with the intersection
 it makes a Boolean ring whose zero is $\emptyset$ and whose identity is $X$; the dictionary
-$A \cup B = A \triangle B \triangle (A \cap B)$, $A \setminus B = A \triangle (A \cap B)$ and $\neg A =
-X \triangle A$ identifies the ring with the Boolean algebra on the same power set.
+$A \cup B = A \triangle B \triangle (A \cap B)$, $A \setminus B = A \triangle (A \cap B)$ and $\neg A = X \triangle A$ identifies the ring with the Boolean algebra on the same power set.
 
 The complement is the involution of the order, the translation by $X$ in the group of exponent two; it
 is an anti-automorphism of the intersection and the union and a translation, not an automorphism, of

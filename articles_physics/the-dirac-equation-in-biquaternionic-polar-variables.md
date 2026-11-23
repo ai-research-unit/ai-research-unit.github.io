@@ -4,6 +4,8 @@
 
 This article writes the biquaternionic Dirac equation in the polar variables. The word keeps all four factors: the boost and the rotor are both non-trivial, and the equation does not close to two equations. The logarithmic derivative separates into four coupled brackets — scale, phase, boost connection, rotor connection — which the equation constrains and does not close. Those four brackets are the spin-half-fluid equations — continuity, guidance, velocity transport, spin transport — and they are the biquaternionic form of the spin-half fluid of Takabayasi and Holland, not the two-equation Madelung fluid of the scalar case. What the word settles exactly is the plane-wave case: the momentum is the phase gradient, $\tilde\Upsilon_{\Phi}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$; the velocity is the boost, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$; the mass term is the four-vector factor, $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$; and the mass shell is the frame's unitarity, $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_m^{2}$. The current is $\rho_{\mathrm{num}}\tilde V_{\Phi}$ and the spin is $\rho_{\mathrm{num}}(\frac{h}{2\pi 2})i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$: the current reads the scale and the boost, the spin reads the scale and the rotor, and neither reads the phase. The general solution in free space is the Fourier superposition of plane-wave modes, and the word re-reads each mode. What the word fails on is the $N$-degenerate set, which is strictly larger than the nodal set. The sign $\varepsilon=\mathrm{Sc}\,\tilde\Xi/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ is computed from the two angles and not chosen, and it equals $\pm1$ exactly on the spectrally degenerate sector $\Sigma_{10}$, where the rigidity constraint $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\varepsilon$ ties them.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 The Dirac equation of this corpus is one element of $\mathbb{B}$ acting on another by left multiplication. *The Dirac Equation in Biquaternionic Form* writes it as the chiral pair
 
 $$
@@ -214,11 +216,11 @@ Note what the first bracket is not. The scale enters the derivative only through
 
 ### The Phase Gradient Is the Four-Momentum
 
-The second bracket is the momentum, and the algebra states it without a rule. Since $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\imath=\partial/\partial r_\imath$ on the material sector,
+The second bracket is the momentum, and the algebra states it without a rule. Since $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_{\imath}=\partial/\partial r_{\imath}$ on the material sector,
 
 $$
 \tilde\nabla_\Phi\theta_{\mathrm{pha}}
-=e_t\frac{\partial\theta_{\mathrm{pha}}}{\partial R_t}+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\imath}
+=e_t\frac{\partial\theta_{\mathrm{pha}}}{\partial R_t}+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial\theta_{\mathrm{pha}}}{\partial R_{\imath}}
 =-i\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_t}e_t+\vec\nabla_\Phi\theta_{\mathrm{pha}}
 =i\frac{E}{h c}e_t+\frac{\vec p}{h}
 =\tilde\Upsilon_{\Phi},
@@ -420,7 +422,7 @@ $$
 
 so that the field's own phase advances at $2\pi\,c\,\nu_m$ and the norm's angle at $\frac{2\pi 2mc^{2}}{h}$. The angle is a number of radians and not an energy; $\frac{h}{2\pi}$ is what makes it so, and the same $\frac{h}{2\pi}$ makes $\sigma$ dimensionless.
 
-**The factor of two is the whole of zitterbewegung.** The trembling of a state of this kind is a bilinear effect: the density and the current oscillate, and every bilinear is built from the norm, whose angle is twice the field's. The field's phase advances at the rest rate $2\pi\,c\,\nu_m$, so its square advances at $\frac{2\pi 2mc^{2}}{h}$, and that is the trembling frequency; the doubling is one line of algebra, $\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$, and not a property of the flow. The numbers are the standard ones: $1.55269\times10^{21}\ \mathrm{rad\,s^{-1}}$ for the rest frequency and $193.1\ \mathrm{fm}$ for half of one radian of the mass phase.
+**The factor of two is the whole of zitterbewegung.** The trembling of a state of this kind is a bilinear effect: the density and the current oscillate, and every bilinear is built from the norm, whose angle is twice the field's. The field's phase advances at the rest rate $2\pi\,c\,\nu_m$, so its square advances at $\frac{2\pi 2mc^{2}}{h}$, and that is the trembling frequency; the doubling is one line of algebra, $\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$, and not a property of the flow. The numbers are the standard ones: $1.55269\times10^{21}\ \mathrm{rad\,s^{-1}}$ for the rest frequency and $1.931\times10^{-13}\ \mathrm{m}$ for half of one radian of the mass phase.
 
 What the polar form adds is the location. The frame is untouched by the trembling: a single branch has a constant boost and a constant rotor, and the oscillation appears only when two branches are superposed. A reader who expects the frame to rotate at the trembling frequency will not find it rotating there.
 

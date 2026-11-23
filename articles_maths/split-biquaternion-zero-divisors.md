@@ -144,7 +144,7 @@ The analogy is exact:
 | | $\mathbb{C}_{\mathrm{spl}}$ | $\mathbb{B}_{\mathrm{spl}}$ |
 |---|---|---|
 | Dimension | 2 | 8 |
-| Norm | $r^2 - s^2$ | $\sum_\mu (q_\mu^2 + q'^2_\mu) + 2j \sum_\mu q_\mu q'_\mu$ |
+| Norm | $r^2 - s^2$ | $\sum_\mu (q_\mu^2 + q'{}^2_\mu) + 2j \sum_\mu q_\mu q'_\mu$ |
 | Zero divisor set | Union of two lines | Union of two four-dimensional subspaces |
 | Each component | Real line | Real four-dimensional space |
 | Intersection | $\{0\}$ | $\{0\}$ |
@@ -161,7 +161,7 @@ The zero divisor structure of $\mathbb{B}_{\mathrm{spl}}$ is fundamentally diffe
 In $\mathbb{B}$, the zero divisors are the elements with $Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = 0$ in $\mathbb{C}$. This is a complex equation, equivalent to two real equations:
 
 $$
-q_t^2 + q_x^2 + q_y^2 + q_z^2 = q'^2_0 + q'^2_1 + q'^2_2 + q'^2_3,
+q_t^2 + q_x^2 + q_y^2 + q_z^2 = q'{}^2_0 + q'{}^2_1 + q'{}^2_2 + q'{}^2_3,
 $$
 
 $$

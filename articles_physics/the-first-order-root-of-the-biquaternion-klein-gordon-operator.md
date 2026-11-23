@@ -30,7 +30,7 @@ There are two senses of "first-order root", and the article separates them. A **
 
 Three results:
 
-- **The root is a pair, not an operator.** The product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is $\Box_\Phi$, and each factor alone is not a root: on the material sector the square of the gradient is $\Box_\Phi-2\Delta_\Phi-\frac{2i}{c}\sum_{\imath\in\{x,y,z\}}\vec e_\imath\partial^2/\partial r'_t\,\partial q_\imath$. No first-order operator with constant coefficients in the algebra has a scalar square, because a scalar square needs four elements that anticommute pairwise with squares $+1,-1,-1,-1$, and the algebra contains no such quadruple.
+- **The root is a pair, not an operator.** The product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is $\Box_\Phi$, and each factor alone is not a root: on the material sector the square of the gradient is $\Box_\Phi-2\Delta_\Phi-\frac{2i}{c}\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\partial^2/\partial r'_t\,\partial q_{\imath}$. No first-order operator with constant coefficients in the algebra has a scalar square, because a scalar square needs four elements that anticommute pairwise with squares $+1,-1,-1,-1$, and the algebra contains no such quadruple.
 - **The free equation is first order in one field.** $\tilde\nabla_\Phi\tilde{Ξ}=0$ implies $\Box_\Phi\tilde{Ξ}=0$, and at a null momentum it selects a two-dimensional subspace of the four-dimensional solution space of the second-order equation.
 - **The mass needs the two parts.** A scalar mass commutes with the gradient, so it cannot be the zero-order term of a first-order factor. It is the coupling of the two members of the pair, and eliminating one member returns $\Box_\Phi\tilde{Ξ}=4\pi^{2}\nu_m^{2}\tilde{Ξ}$.
 
@@ -38,7 +38,7 @@ The four components are the four coefficients of a biquaternion. The count of si
 
 ## The Equation
 
-$\Box_\Phi$ is the biquaternion d'Alembertian of the series, one operator in both coordinate frames, and the article uses it without restating it (*Operator and Calculus Conventions*). It is read here in the Lorentz coordinates $x_0=r'_{t}$ and $r_\imath$, related to the algebra coordinates by $Q_t=i q'_t$ and $Q_\imath=q_\imath$. Derived from that relation, its Lorentz form is
+$\Box_\Phi$ is the biquaternion d'Alembertian of the series, one operator in both coordinate frames, and the article uses it without restating it (*Operator and Calculus Conventions*). It is read here in the Lorentz coordinates $x_0=r'_{t}$ and $r_{\imath}$, related to the algebra coordinates by $Q_t=i q'_t$ and $Q_{\imath}=q_{\imath}$. Derived from that relation, its Lorentz form is
 
 $$
 \Box_\Phi=-\frac{\partial^2}{\partial {r'_t}^2}+\Delta_\Phi ,
@@ -55,16 +55,16 @@ Throughout, $c$ is the speed of light in the medium and $\frac{h}{2\pi}$ the act
 The first-order operator of the series is the gradient, and it is not a root. The reason is visible in its square. Because the partial derivatives commute,
 
 $$
-\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial^2}{\partial R_t\,\partial R_\imath},
+\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial^2}{\partial R_t\,\partial R_{\imath}},
 $$
 
 and on the material sector, where $\partial/\partial R_t=-i\,\partial/\partial r'_t$, the same operator is
 
 $$
-\tilde\nabla_\Phi^2=\Box_\Phi-2\Delta_\Phi-2i\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial^2}{\partial r'_t\,\partial q_\imath}.
+\tilde\nabla_\Phi^2=\Box_\Phi-2\Delta_\Phi-2i\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial^2}{\partial r'_t\,\partial q_{\imath}}.
 $$
 
-The mixed term is the whole difference. The three spatial units anticommute in pairs and square to $-e_t$, so the spatial part of the square is scalar. The time unit does not join them: $e_t$ is the identity of the algebra, so it commutes with every spatial unit, and the two orders of $\partial^2/\partial R_t\partial R_\imath$ add instead of cancelling. The time coefficient of the gradient is the identity, and nothing anticommutes with the identity.
+The mixed term is the whole difference. The three spatial units anticommute in pairs and square to $-e_t$, so the spatial part of the square is scalar. The time unit does not join them: $e_t$ is the identity of the algebra, so it commutes with every spatial unit, and the two orders of $\partial^2/\partial R_t\partial R_{\imath}$ add instead of cancelling. The time coefficient of the gradient is the identity, and nothing anticommutes with the identity.
 
 The product with the conjugate is scalar. Read on the units, the two operators differ only by the sign of the three spatial terms, and the product is central because $\varepsilon_{\imath} e_{\imath}^2=\varepsilon_{\imath}^2e_t=e_t$ for every $\mu$:
 
@@ -74,10 +74,10 @@ $$
 
 ### The symbol and the mass shell
 
-On a plane wave $e^{i\theta_{\mathrm{pwp}}}$ with the plane-wave angle $\theta_{\mathrm{pwp}}=2\pi\nu_t^{\prime}x_0-2\pi\vec\nu_\Phi\cdot\vec r$ real because every factor is real, every derivative is a multiple of the wave. The substitution is $\partial/\partial R_t\mapsto \nu_t^{\prime}$ and $\partial/\partial R_\imath\mapsto-i \nu_{\Phik}$, so the gradient becomes one fixed element of the algebra,
+On a plane wave $e^{i\theta_{\mathrm{pwp}}}$ with the plane-wave angle $\theta_{\mathrm{pwp}}=2\pi\nu_t^{\prime}x_0-2\pi\vec\nu_\Phi\cdot\vec r$ real because every factor is real, every derivative is a multiple of the wave. The substitution is $\partial/\partial R_t\mapsto \nu_t^{\prime}$ and $\partial/\partial R_{\imath}\mapsto-i \nu_{\Phi k}$, so the gradient becomes one fixed element of the algebra,
 
 $$
--2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi=2\pi\nu_t^{\prime}-i\sum_{\imath\in\{x,y,z\}}\vec e_\imath 2\pi\nu_{\Phik},
+-2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi=2\pi\nu_t^{\prime}-i\sum_{\imath\in\{x,y,z\}}\vec e_{\imath} 2\pi\nu_{\Phi k},
 \qquad
 (-2\pi i\tilde\Upsilon_{\Phi})^{\natural}(-2\pi i\tilde\Upsilon_{\Phi})=-\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=4\pi^{2}\nu_t^{\prime\,2}-\lvert2\pi\vec\nu_\Phi\rvert^2 ,
 $$
@@ -195,7 +195,7 @@ The factorisation is not available on one field, and the reason is the same vect
 $$
 \left((\tilde\nabla_\Phi)^{\natural}-2\pi\nu_m\right)\left(\tilde\nabla_\Phi+2\pi\nu_m\right)
 =\Box_\Phi+2\pi\nu_m\left((\tilde\nabla_\Phi)^{\natural}-\tilde\nabla_\Phi\right)-4\pi^{2}\nu_m^{2}
-=\Box_\Phi-4\pi\nu_m\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial}{\partial R_\imath}-4\pi^{2}\nu_m^{2} ,
+=\Box_\Phi-4\pi\nu_m\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial}{\partial R_{\imath}}-4\pi^{2}\nu_m^{2} ,
 $$
 
 which is not scalar. The two cross terms do not cancel, because they are different operators. Only the pair removes them, by substituting one member into the other.

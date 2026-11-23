@@ -52,21 +52,21 @@ $$
 \mathrm{ad}_{\tilde S_{\Psi,k}}(ie_l)=[\tilde S_{\Psi,k},ie_l]=i\,\frac{h}{2\pi}\,\epsilon_{k l\,n_{\mathrm{idx}}}\,ie_{m},
 $$
 
-so that $\tilde S_{\Psi,\mathrm{adj},k}=\mathrm{ad}_{\tilde S_{\Psi,k}}$ is an angular momentum in the three-dimensional representation. In the matrix realisation, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_\imath)=-i\sigma_\imath$, this is a triple of $3\times3$ matrices acting on $W$ and satisfying
+so that $\tilde S_{\Psi,\mathrm{adj},k}=\mathrm{ad}_{\tilde S_{\Psi,k}}$ is an angular momentum in the three-dimensional representation. In the matrix realisation, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, this is a triple of $3\times3$ matrices acting on $W$ and satisfying
 
 $$
-[F_i,F_j]=i\,\frac{h}{2\pi}\,\epsilon_{\imath\jmath\ell}\,F_\imath,\qquad  F_1^2+F_2^2+F_3^2=2\,\frac{h^{2}}{4\pi^{2}}\,I_{3},
+[F_i,F_j]=i\,\frac{h}{2\pi}\,\epsilon_{\imath\jmath\ell}\,F_{\imath},\qquad  F_1^2+F_2^2+F_3^2=2\,\frac{h^{2}}{4\pi^{2}}\,I_{3},
 $$
 
-with eigenvalues of each $F_\imath$ equal to $\frac{h}{2\pi}$ times $\{+1,0,-1\}$.
+with eigenvalues of each $F_{\imath}$ equal to $\frac{h}{2\pi}$ times $\{+1,0,-1\}$.
 
 A second and equivalent construction uses two fundamental factors,
 
 $$
-\tilde F_\imath=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}=\frac{h}{4\pi}\left(i\vec e_\imath\otimes e_t+e_t\otimes i\vec e_\imath\right),
+\tilde F_{\imath}=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}=\frac{h}{4\pi}\left(i\vec e_{\imath}\otimes e_t+e_t\otimes i\vec e_{\imath}\right),
 $$
 
-which is the total spin operator of the two-spin problem. On the three-dimensional symmetric subspace — the range of $\tilde\Pi_{\mathrm{id,sym}}=\tfrac14(3e_t\otimes e_t-\sum_{\imath\in\{x,y,z\}}\vec e_\imath\otimes \vec e_\imath)$ — it acts irreducibly as the spin-$1$ operators above, and on the one-dimensional antisymmetric subspace it acts as zero. The two constructions agree; the first exhibits the spin-$1$ operators as the algebra's own inner derivations, the second as a composite of two fundamental systems.
+which is the total spin operator of the two-spin problem. On the three-dimensional symmetric subspace — the range of $\tilde\Pi_{\mathrm{id,sym}}=\tfrac14(3e_t\otimes e_t-\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\otimes \vec e_{\imath})$ — it acts irreducibly as the spin-$1$ operators above, and on the one-dimensional antisymmetric subspace it acts as zero. The two constructions agree; the first exhibits the spin-$1$ operators as the algebra's own inner derivations, the second as a composite of two fundamental systems.
 
 ### The sector where the states live
 
@@ -76,7 +76,7 @@ $$
 \tilde{Ϛ}_{\Psi}\ge0,\qquad \mathrm{Tr}_{2Q}(\tilde{Ϛ}_{\Psi})=1,\qquad \tilde\Pi_{\mathrm{id,asym}}\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{id,asym}}=0 ,
 $$
 
-where $\mathrm{Tr}_{2Q}$ is the trace on $\mathbb{B}\otimes\mathbb{B}$ and $\tilde\Pi_{\mathrm{id,asym}}=\tfrac14(e_t\otimes e_t+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\otimes \vec e_\imath)$ is the singlet idempotent. The last condition says that the support of $\tilde{Ϛ}_{\Psi}$ lies in the symmetric subspace; the spin-$1$ state space is therefore **the face of the two-qubit state space orthogonal to the antisymmetric idempotent**. This is the precise sense in which spin-$1$ states are two-qubit states with no singlet component.
+where $\mathrm{Tr}_{2Q}$ is the trace on $\mathbb{B}\otimes\mathbb{B}$ and $\tilde\Pi_{\mathrm{id,asym}}=\tfrac14(e_t\otimes e_t+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\otimes \vec e_{\imath})$ is the singlet idempotent. The last condition says that the support of $\tilde{Ϛ}_{\Psi}$ lies in the symmetric subspace; the spin-$1$ state space is therefore **the face of the two-qubit state space orthogonal to the antisymmetric idempotent**. This is the precise sense in which spin-$1$ states are two-qubit states with no singlet component.
 
 For the geometry it is convenient to work in the three-dimensional matrix realisation that $\mathsf{M}_2\otimes\mathsf{M}_2$ provides on the symmetric sector. There the states are the $3\times3$ Hermitian, positive, unit-trace matrices. The framework's Born rule reduces on the sector to $\mathrm{tr}(\rho P)$ for the projector $P$ of a pure state, and observables are the Hermitian $3\times3$ matrices obtained from the symmetric elements of $\mathbb{B}\otimes\mathbb{B}$.
 
@@ -96,7 +96,7 @@ which is the realisation used from here on; their matrix elements follow from th
 
 ### Bloch coordinates and the two invariants
 
-A Hermitian unit-trace $3\times3$ matrix can be written in the Gell-Mann basis $\digamma_{\mathrm{gmn}}_1,\dots,\digamma_{\mathrm{gmn}}_8$ (traceless, Hermitian, $\mathrm{Tr}(\digamma_{\mathrm{gmn},a}\digamma_{\mathrm{gmn},b})=2\delta_{ab}$) as
+A Hermitian unit-trace $3\times3$ matrix can be written in the Gell-Mann basis $\digamma_{\mathrm{gmn}}{}_1,\dots,\digamma_{\mathrm{gmn}}{}_8$ (traceless, Hermitian, $\mathrm{Tr}(\digamma_{\mathrm{gmn},a}\digamma_{\mathrm{gmn},b})=2\delta_{ab}$) as
 
 $$
 \rho=\tfrac{1}{3}I_3+\frac{1}{\sqrt3}\,b_a\digamma_{\mathrm{gmn},a},\qquad \vec b=(b_1,\dots,b_8)\in\mathbb{R}^8 ,
@@ -136,7 +136,7 @@ $$
 
 *Proof.* Positivity is equivalent to the non-negativity of all three eigenvalues. If $|\vec b|\le1$ then $\mathrm{Tr}(\rho^2)\le1$. Suppose an eigenvalue $\eta_1<0$; then $\det\rho\ge0$ forces $\eta_2\eta_3\le0$, and since $\eta_1\le\eta_2\le\eta_3$ and $\eta_1<0$ the only possibility is $\eta_2\le0$, whence $\eta_3=1-\eta_1-\eta_2\ge1$ and $\mathrm{Tr}(\rho^2)\ge\eta_3^2>1$, contradicting $|\vec b|\le1$. Thus $\det\rho\ge0$ together with $|\vec b|\le1$ forces $\eta_1\ge0$. The converse is immediate.
 
-The state space is therefore the intersection of the eight-dimensional unit ball with the region $\det\rho\ge0$, whose boundary is the cubic hypersurface $\det\rho=0$. A numerical scan confirms the structure: along the $\digamma_{\mathrm{gmn}}_8$ axis the boundary is at $|\vec b|=\tfrac12$ exactly, and the states with $|\vec b|>1$ are excluded everywhere.
+The state space is therefore the intersection of the eight-dimensional unit ball with the region $\det\rho\ge0$, whose boundary is the cubic hypersurface $\det\rho=0$. A numerical scan confirms the structure: along the $\digamma_{\mathrm{gmn}}{}_8$ axis the boundary is at $|\vec b|=\tfrac12$ exactly, and the states with $|\vec b|>1$ are excluded everywhere.
 
 The cubic is not cosmetic. For the qubit the invariant was a quadratic form, $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\eta_{+}\eta_{-}$, and positivity was the single inequality of a Lorentzian cone. For the qutrit the determinant is a cubic and positivity is the conjunction of a quadratic and a cubic inequality; no single quadratic form has the state space as its positivity region. This is the precise sense in which the cone picture does not generalise.
 
@@ -145,9 +145,9 @@ The cubic is not cosmetic. For the qubit the invariant was a quadratic form, $\l
 The eight Bloch directions are not aligned with the physical spin directions. The spin operators are the combinations
 
 $$
-F_1=\tfrac{1}{\sqrt2}\left(\digamma_{\mathrm{gmn}}_1+\digamma_{\mathrm{gmn}}_6\right),\qquad
-F_2=\tfrac{1}{\sqrt2}\left(\digamma_{\mathrm{gmn}}_2+\digamma_{\mathrm{gmn}}_7\right),\qquad
-F_3=\tfrac{1}{2}\digamma_{\mathrm{gmn}}_3+\tfrac{\sqrt3}{2}\digamma_{\mathrm{gmn}}_8 ,
+F_1=\tfrac{1}{\sqrt2}\left(\digamma_{\mathrm{gmn}}{}_1+\digamma_{\mathrm{gmn}}{}_6\right),\qquad
+F_2=\tfrac{1}{\sqrt2}\left(\digamma_{\mathrm{gmn}}{}_2+\digamma_{\mathrm{gmn}}{}_7\right),\qquad
+F_3=\tfrac{1}{2}\digamma_{\mathrm{gmn}}{}_3+\tfrac{\sqrt3}{2}\digamma_{\mathrm{gmn}}{}_8 ,
 $$
 
 so that the spin vector $\vec s=\langle\vec F\rangle_{*}$ involves the Bloch components
@@ -179,17 +179,17 @@ $$
 \quad\text{whenever } |\vec b|\le\tfrac12 ,
 $$
 
-so every such $\rho$ is positive, and it is a state. Sharpness: for the direction $\vec u=\digamma_{\mathrm{gmn}}_8$ the traceless part has the spectrum $\tfrac{t}{3}(1,1,-2)$, so
+so every such $\rho$ is positive, and it is a state. Sharpness: for the direction $\vec u=\digamma_{\mathrm{gmn}}{}_8$ the traceless part has the spectrum $\tfrac{t}{3}(1,1,-2)$, so
 
 $$
-\rho=\tfrac{1}{3}I+\tfrac{t}{\sqrt3}\digamma_{\mathrm{gmn}}_8
+\rho=\tfrac{1}{3}I+\tfrac{t}{\sqrt3}\digamma_{\mathrm{gmn}}{}_8
 \quad\Longrightarrow\quad
 \operatorname{spec}\rho=\left\{\tfrac{1}{3}+\tfrac{t}{3},\ \tfrac{1}{3}+\tfrac{t}{3},\ \tfrac{1}{3}-\tfrac{2t}{3}\right\},
 $$
 
-whose least eigenvalue vanishes at $t=\tfrac12$ and is negative for $t>\tfrac12$. The direction $\digamma_{\mathrm{gmn}}_8$ therefore reaches the boundary at radius exactly $\tfrac12$, and no ball of larger radius is contained in the state space.
+whose least eigenvalue vanishes at $t=\tfrac12$ and is negative for $t>\tfrac12$. The direction $\digamma_{\mathrm{gmn}}{}_8$ therefore reaches the boundary at radius exactly $\tfrac12$, and no ball of larger radius is contained in the state space.
 
-The radius $r=\tfrac12$ is the standard value for a three-level system. In the normalisation in which the pure states have $|\vec b|=1$, the inscribed ball and the pure-state sphere stand in the ratio $\tfrac12$, which is the quantitative statement that the qutrit state space is far from a ball; in the standard normalisation the corresponding radii are $1/\sqrt3$ and $2/\sqrt3$, again in the ratio $\tfrac12$. A numerical search over two thousand random directions in the Bloch space found no boundary closer than $\tfrac12$, consistent with the proposition; the direction that attains it is the $\digamma_{\mathrm{gmn}}_8$ direction, whose traceless part has the most eccentric spectrum.
+The radius $r=\tfrac12$ is the standard value for a three-level system. In the normalisation in which the pure states have $|\vec b|=1$, the inscribed ball and the pure-state sphere stand in the ratio $\tfrac12$, which is the quantitative statement that the qutrit state space is far from a ball; in the standard normalisation the corresponding radii are $1/\sqrt3$ and $2/\sqrt3$, again in the ratio $\tfrac12$. A numerical search over two thousand random directions in the Bloch space found no boundary closer than $\tfrac12$, consistent with the proposition; the direction that attains it is the $\digamma_{\mathrm{gmn}}{}_8$ direction, whose traceless part has the most eccentric spectrum.
 
 The **generalized Bloch ball** of the spin-$1$ state space is this inscribed ball of radius $\tfrac12$. It is the correct analogue of the qubit Bloch ball in the only sense that can be maintained: every state on it is a state, it is the largest such ball, and its centre is the maximally mixed state $\tfrac13 I_3$. It is not the state space, and it is not the image of any cone slice.
 
@@ -274,12 +274,12 @@ The generalized Bloch ball for spin $1$ is the largest ball of states inside the
 
 The article established the following.
 
-- **Spin-one operators.** The adjoint action on the vector part $\mathbb{B}_V$, $\mathrm{ad}_{\tilde S_{\Psi,k}}(ie_l)=i\,\frac{h}{2\pi}\,\epsilon_{k l\,n_{\mathrm{idx}}}\,ie_{m}$, and the symmetric combination $\tilde F_\imath=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}$ of two fundamental factors give the same spin-$1$ operators, with $[F_i,F_j]=i\,\frac{h}{2\pi}\,\epsilon_{\imath\jmath\ell}\,F_\imath$ and $\sum_{\imath\in\{x,y,z\}} F_\imath^2=2\,\frac{h^{2}}{4\pi^{2}}\,I_{3}$.
+- **Spin-one operators.** The adjoint action on the vector part $\mathbb{B}_V$, $\mathrm{ad}_{\tilde S_{\Psi,k}}(ie_l)=i\,\frac{h}{2\pi}\,\epsilon_{k l\,n_{\mathrm{idx}}}\,ie_{m}$, and the symmetric combination $\tilde F_{\imath}=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}$ of two fundamental factors give the same spin-$1$ operators, with $[F_i,F_j]=i\,\frac{h}{2\pi}\,\epsilon_{\imath\jmath\ell}\,F_{\imath}$ and $\sum_{\imath\in\{x,y,z\}} F_{\imath}^2=2\,\frac{h^{2}}{4\pi^{2}}\,I_{3}$.
 - **The state space.** Spin-$1$ states are the positive unit-trace elements of the symmetric sector; in the two-qubit language they are the states whose support lies in the symmetric subspace, $\tilde\Pi_{\mathrm{id,asym}}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id,asym}}=0$, that is, the face of the two-qubit state space orthogonal to the antisymmetric idempotent.
 - **Bloch coordinates.** $\rho=\tfrac13 I_3+\tfrac{1}{\sqrt3}b_a\digamma_{\mathrm{gmn},a}$ with a real eight-vector $\vec b$ normalised so that the pure states have $|\vec b|=1$; the spectrum is determined by $\mathrm{Tr}(\rho^2)=\tfrac13(1+2|\vec b|^2)$ and $\det\rho$ through the characteristic cubic.
 - **The positivity condition.** $\rho$ is a state if and only if $|\vec b|\le1$ and $\det\rho\ge0$; the unit ball is necessary, the cubic inequality is what cuts it down, and positivity is no longer a single quadratic condition.
-- **The spin directions.** $F_1=\tfrac{1}{\sqrt2}(\digamma_{\mathrm{gmn}}_1+\digamma_{\mathrm{gmn}}_6)$, $F_2=\tfrac{1}{\sqrt2}(\digamma_{\mathrm{gmn}}_2+\digamma_{\mathrm{gmn}}_7)$, $F_3=\tfrac12\digamma_{\mathrm{gmn}}_3+\tfrac{\sqrt3}{2}\digamma_{\mathrm{gmn}}_8$, so the spin vector mixes Bloch coordinates: $s_1=\sqrt{2/3}(b_1+b_6)$, $s_2=\sqrt{2/3}(b_2+b_7)$, $s_3=\tfrac{1}{\sqrt3}b_3+b_8$.
-- **The inscribed ball.** Every Hermitian unit-trace $\rho$ with $|\vec b|\le\tfrac12$ is a state, and $\tfrac12$ is sharp, attained along $\digamma_{\mathrm{gmn}}_8$; the proof uses $\mu_{\max}\le\sqrt{\tfrac23\mathrm{Tr}(T^2)}=\tfrac23|\vec b|$ for the traceless part, so that the eigenvalues of $\rho$ are bounded below by $\tfrac13-\tfrac23|\vec b|\ge0$ on the ball.
+- **The spin directions.** $F_1=\tfrac{1}{\sqrt2}(\digamma_{\mathrm{gmn}}{}_1+\digamma_{\mathrm{gmn}}{}_6)$, $F_2=\tfrac{1}{\sqrt2}(\digamma_{\mathrm{gmn}}{}_2+\digamma_{\mathrm{gmn}}{}_7)$, $F_3=\tfrac12\digamma_{\mathrm{gmn}}{}_3+\tfrac{\sqrt3}{2}\digamma_{\mathrm{gmn}}{}_8$, so the spin vector mixes Bloch coordinates: $s_1=\sqrt{2/3}(b_1+b_6)$, $s_2=\sqrt{2/3}(b_2+b_7)$, $s_3=\tfrac{1}{\sqrt3}b_3+b_8$.
+- **The inscribed ball.** Every Hermitian unit-trace $\rho$ with $|\vec b|\le\tfrac12$ is a state, and $\tfrac12$ is sharp, attained along $\digamma_{\mathrm{gmn}}{}_8$; the proof uses $\mu_{\max}\le\sqrt{\tfrac23\mathrm{Tr}(T^2)}=\tfrac23|\vec b|$ for the traceless part, so that the eigenvalues of $\rho$ are bounded below by $\tfrac13-\tfrac23|\vec b|\ge0$ on the ball.
 - **Pure and coherent states.** The pure states have $|\vec b|=1$ and $\det\rho=0$ and form $\mathbb{CP}^2$, of real dimension $4$; the coherent states have a closed form $\rho_{\mathrm{coh}}(\vec u)=\tfrac12(M^2+M)$ with $M=\vec u\cdot\vec F$, satisfy $\langle\vec F\rangle=\vec u$, form an $S^2$, and are the symmetrised products of two fundamental idempotents.
 - **Two three-balls.** The generalized Bloch ball (radius $\tfrac12$, in the eight-dimensional Bloch space) is a set of states; the polarization ball $|\langle\vec F\rangle|\le1$ is its shadow and is not the state space. They coincide only for the qubit.
 - **What is lost.** The qubit picture as a cone slice is not available for spin $1$; the state space is not a ball and positivity is not a quadratic condition. The reason is that a three-level system is not a module of $\mathbb{B}$ but a sector of a tensor square.
@@ -293,7 +293,7 @@ The article established the following.
 | $\langle\tilde H_\Psi\rangle_{\natural}=h_t^2-\lvert\vec h_\Psi\rvert^2$ | Biquaternion norm, inertia $(1,3)$ |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ | Qubit state, Bloch ball $\lvert\vec s_{\Psi}\rvert\le1$ |
 | $\tilde\Pi_{\mathrm{id,sym}},\tilde\Pi_{\mathrm{id,asym}}$ | Triplet and singlet idempotents of $\mathbb{B}\otimes\mathbb{B}$ |
-| $F_\imath$ | Spin-$1$ operators, $[F_i,F_j]=i\,\frac{h}{2\pi}\,\epsilon_{\imath\jmath\ell}\,F_\imath$ |
+| $F_{\imath}$ | Spin-$1$ operators, $[F_i,F_j]=i\,\frac{h}{2\pi}\,\epsilon_{\imath\jmath\ell}\,F_{\imath}$ |
 | $\mathrm{ad}_{\tilde S_{\Psi,k}}$ | Adjoint action on the traceless part $W$ |
 | $\digamma_{\mathrm{gmn},a}$, $a=1,\dots,8$ | Gell-Mann basis, $\mathrm{Tr}(\digamma_{\mathrm{gmn},a}\digamma_{\mathrm{gmn},b})=2\delta_{ab}$ |
 | $\rho=\tfrac13I+\tfrac{1}{\sqrt3}b_a\digamma_{\mathrm{gmn},a}$ | Qutrit state, generalized Bloch vector $\vec b$ |

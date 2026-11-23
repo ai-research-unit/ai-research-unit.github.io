@@ -167,8 +167,8 @@ The last two rows are the ones worth stating: the parabolic case is the one in w
 
 | class | generator |
 |---|---|
-| elliptic | a rotation generator $J_\imath$, real coefficients in the exponent |
-| hyperbolic | a boost generator $K_\imath$, imaginary coefficients in the exponent |
+| elliptic | a rotation generator $J_{\imath}$, real coefficients in the exponent |
+| hyperbolic | a boost generator $K_{\imath}$, imaginary coefficients in the exponent |
 | parabolic | a **null** linear combination, $\tilde X$ scalar-free and nilpotent |
 | loxodromic | a sum of a rotation and a boost generator about the same axis |
 

@@ -264,8 +264,7 @@ $\mathcal F(k*f)=\mathcal F k\,\mathcal F f$, so the multiplier of $T_k$ is $\ma
 $m\in L^\infty$, the operator $T_m=\mathcal F^{-1}(m\,\mathcal F f)$ is bounded on $L^2$ with norm
 $\lVert m\rVert_\infty$, and the convolution operators are exactly the bounded operators that commute with
 all translations. On $L^{n}$ the profile gives boundedness by Young's inequality,
-$\lVert k*f\rVert_r\leq\lVert k\rVert_p\lVert f\rVert_q$, in particular $\lVert T_k\rVert_{L^{n}}\to L^{n}\leq
-\lVert k\rVert_1$; multipliers beyond those of $L^1$ profiles — the Hilbert and Riesz transforms among them
+$\lVert k*f\rVert_r\leq\lVert k\rVert_p\lVert f\rVert_q$, in particular $\lVert T_k\rVert_{L^{n}}\to L^{n}\leq \lVert k\rVert_1$; multipliers beyond those of $L^1$ profiles — the Hilbert and Riesz transforms among them
 — are covered by the Mihlin–Hörmander theorem, which gives $L^{n}$ boundedness for a symbol with the
 standard differentiability and size, and fails at the endpoints. Finally, no nonzero convolution operator
 on $L^2(\mathbb R^n)$ is compact, compactness being the property of the kernels that are not translation

@@ -216,7 +216,7 @@ The quaternionic norm is $\langle\tilde Q\rangle_{\natural}$ on the whole algebr
 
 **Proposition.** On the material sector, $\tilde Q\in\mathbb{B}_{\Phi}$ is null, $\langle\tilde Q\rangle_{\natural}=0$, if and only if $-i\tilde Q$ lies on the boundary of $C$ or on the boundary of $-C$.
 
-*Proof.* Write $\tilde Q=iq'_te_t+\vec q$ with $q'_t$ and $\vec q$ real, and put $\tilde X=-i\tilde Q=q'_te_t-i\vec q$, which is Hermitian. Then $\langle\tilde Q\rangle_{\natural}=-q'^{2}_{t}+\lvert\vec q\rvert^{2}$ and $\tilde X$ has scalar part $q'_t$ and vector part $-\vec q$, so the vanishing is $\lvert q'_t\rvert=\lvert\vec q\rvert$, which is the boundary condition. Verified on one hundred null elements and on one hundred boundary elements, with no failure in either direction.
+*Proof.* Write $\tilde Q=iq'_te_t+\vec q$ with $q'_t$ and $\vec q$ real, and put $\tilde X=-i\tilde Q=q'_te_t-i\vec q$, which is Hermitian. Then $\langle\tilde Q\rangle_{\natural}=-q'{}^{2}_{t}+\lvert\vec q\rvert^{2}$ and $\tilde X$ has scalar part $q'_t$ and vector part $-\vec q$, so the vanishing is $\lvert q'_t\rvert=\lvert\vec q\rvert$, which is the boundary condition. Verified on one hundred null elements and on one hundred boundary elements, with no failure in either direction.
 
 **The statement in one line.** The light cone is
 $$

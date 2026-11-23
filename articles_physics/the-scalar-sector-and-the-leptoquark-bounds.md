@@ -267,7 +267,7 @@ The measured limit $\tau>2.4\times10^{34}$ yr then requires $M_\Sigma\gtrsim10^{
 $$
 \langle H\rangle=\begin{pmatrix}\kappa&0\\0&\kappa'\end{pmatrix},
 \qquad
-v^2=\kappa^2+\kappa'^2\ \text{(up to convention)} .
+v^2=\kappa^2+\kappa'{}^2\ \text{(up to convention)} .
 $$
 
 Two vevs in one field is one too many for the electroweak sector: the Standard Model's single doublet has one, and the ratio $\kappa'/\kappa$ is a new parameter.

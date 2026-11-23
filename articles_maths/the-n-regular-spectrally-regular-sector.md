@@ -495,23 +495,23 @@ R_{\tilde Q}(\tilde\Pi_{\mathrm{id},-})=\lambda_-\tilde\Pi_{\mathrm{id},-},
 $$
 with the values $\lambda_+,\lambda_-,\lambda_+,\lambda_-$. The left and right actions do not coincide: $R_{\tilde Q}$ and $L_{\tilde Q}$ agree on an element exactly when the element is central, that is, on $\mathbb{C}e_t$.
 
-**A general element.** For $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-}$ the left action on the basis is
+**A general element.** For $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}$ the left action on the basis is
 $$
-L_{\tilde Q_2}(\tilde\Pi_{\mathrm{id},+})=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+},\qquad
-L_{\tilde Q_2}(\vec\Pi_{\mathrm{nil},-})=Q_{2,11}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\tilde\Pi_{\mathrm{id},-},
+L_{\tilde Q_2}(\tilde\Pi_{\mathrm{id},+})=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,21}\vec\Pi_{\mathrm{nil},+},\qquad
+L_{\tilde Q_2}(\vec\Pi_{\mathrm{nil},-})=Q_{2,11}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\tilde\Pi_{\mathrm{id},-},
 $$
 $$
-L_{\tilde Q_2}(\vec\Pi_{\mathrm{nil},+})=Q_{2,12}\tilde\Pi_{\mathrm{id},++Q}_{2,22}\vec\Pi_{\mathrm{nil},+},\qquad
-L_{\tilde Q_2}(\tilde\Pi_{\mathrm{id},-})=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-},
+L_{\tilde Q_2}(\vec\Pi_{\mathrm{nil},+})=Q_{2,12}\tilde\Pi_{\mathrm{id},++Q}{}_{2,22}\vec\Pi_{\mathrm{nil},+},\qquad
+L_{\tilde Q_2}(\tilde\Pi_{\mathrm{id},-})=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-},
 $$
 and the right action is
 $$
-R_{\tilde Q_2}(\tilde\Pi_{\mathrm{id},+})=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-},\qquad
-R_{\tilde Q_2}(\vec\Pi_{\mathrm{nil},-})=Q_{2,21}\tilde\Pi_{\mathrm{id},++Q}_{2,22}\vec\Pi_{\mathrm{nil},-},
+R_{\tilde Q_2}(\tilde\Pi_{\mathrm{id},+})=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,12}\vec\Pi_{\mathrm{nil},-},\qquad
+R_{\tilde Q_2}(\vec\Pi_{\mathrm{nil},-})=Q_{2,21}\tilde\Pi_{\mathrm{id},++Q}{}_{2,22}\vec\Pi_{\mathrm{nil},-},
 $$
 $$
-R_{\tilde Q_2}(\vec\Pi_{\mathrm{nil},+})=Q_{2,11}\vec\Pi_{\mathrm{nil},++Q}_{2,12}\tilde\Pi_{\mathrm{id},-},\qquad
-R_{\tilde Q_2}(\tilde\Pi_{\mathrm{id},-})=Q_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-}.
+R_{\tilde Q_2}(\vec\Pi_{\mathrm{nil},+})=Q_{2,11}\vec\Pi_{\mathrm{nil},++Q}{}_{2,12}\tilde\Pi_{\mathrm{id},-},\qquad
+R_{\tilde Q_2}(\tilde\Pi_{\mathrm{id},-})=Q_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}.
 $$
 The two actions are diagonal exactly on the diagonal subalgebra $\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-}$, of which $\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$ is the member with the prescribed eigenvalues. This is the precise sense in which the Peirce coordinates of $\tilde Q_2=\tilde Q$ are the eigenvalues: $Q_{2,12}=Q_{2,21}=0$ is the condition that both actions be diagonal, and $\tilde Q$ is the member with $Q_{2,11}=\lambda_+$ and $Q_{2,22}=\lambda_-$.
 
@@ -538,7 +538,7 @@ and the left action of the four on the basis is read from the table. In particul
 
 **A general pure element.** Off the axis the coordinates of $\vec e_x,\vec e_y,\vec e_z$ depend on $\vec Q$. For any pure $\vec X$,
 $$
-\vec X=i\,\frac{\vec X\cdot\vec Q}{B}\,(\tilde\Pi_{\mathrm{id},+-}\tilde\Pi_{\mathrm{id},-})+X_{12}\vec\Pi_{\mathrm{nil},-+X}_{21}\vec\Pi_{\mathrm{nil},+},
+\vec X=i\,\frac{\vec X\cdot\vec Q}{B}\,(\tilde\Pi_{\mathrm{id},+-}\tilde\Pi_{\mathrm{id},-})+X_{12}\vec\Pi_{\mathrm{nil},-+X}{}_{21}\vec\Pi_{\mathrm{nil},+},
 \qquad
 X_{12}\tilde\Pi_{\mathrm{id},-}=\vec\Pi_{\mathrm{nil},+}\vec X\tilde\Pi_{\mathrm{id},-},
 \qquad
@@ -637,7 +637,7 @@ They are nevertheless distinct subspaces of $\mathbb{B}$, and the direct sum is 
 
 In the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ of $S_+$, a spinor of the first Peirce copy is
 $$
-\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+},\qquad Q_{2,11},Q_{2,21}\in\mathbb{C},
+\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,21}\vec\Pi_{\mathrm{nil},+},\qquad Q_{2,11},Q_{2,21}\in\mathbb{C},
 $$
 with the coordinate pair $(Q_{2,11},Q_{2,21})$, the first column of the matrix model of §*Matrices and the Column Correspondence*. Under left multiplication by $\tilde Q$,
 $$
@@ -649,7 +649,7 @@ $$
 $$
 A spinor of the second Peirce copy is an element of $S_-$,
 $$
-\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-},\qquad Q_{2,12},Q_{2,22}\in\mathbb{C}.
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-},\qquad Q_{2,12},Q_{2,22}\in\mathbb{C}.
 $$
 The order of the coefficients follows the eigenbasis $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ of $S_-$, in which the eigenvalues are $(\lambda_+,\lambda_-)$, so the coordinate pair is $(Q_{2,12},Q_{2,22})$, the second column of the matrix model of §*Matrices and the Column Correspondence*, and
 $$
@@ -665,8 +665,8 @@ The two spinor spaces and their coordinates are collected in the table.
 
 | Spinor space | Eigenbasis | Spinor | Coordinates |
 |---|---|---|---|
-| $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ | $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ | $Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+}$ | $(Q_{2,11},Q_{2,21})$, column $1$ |
-| $S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}$ | $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ | $Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-}$ | $(Q_{2,12},Q_{2,22})$, column $2$ |
+| $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ | $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ | $Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,21}\vec\Pi_{\mathrm{nil},+}$ | $(Q_{2,11},Q_{2,21})$, column $1$ |
+| $S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}$ | $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ | $Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}$ | $(Q_{2,12},Q_{2,22})$, column $2$ |
 
 **A general element is a pair of spinors.** Every $\tilde Q_2\in\mathbb{B}$ splits as
 $$
@@ -695,7 +695,7 @@ $$
 $$
 where $E_{ij}$ is the matrix unit with $1$ in row $i$ and column $j$. Then every $\tilde Q_2\in\mathbb{B}$ has the unique expansion
 $$
-\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-},
+\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-},
 \qquad Q_{2,ij}\in\mathbb{C},
 $$
 and is represented by
@@ -806,7 +806,7 @@ S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}=\mathbb{C}\vec\Pi_{\mathrm{nil},-}\oplus
 $$
 and every $\tilde Q_2\in\mathbb{B}$ has the unique expansion
 $$
-\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-},
+\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-},
 \qquad Q_{2,ij}\in\mathbb{C},
 $$
 with $\tilde Q_2=\tilde Q$ having $Q_{2,11}=\lambda_+$, $Q_{2,22}=\lambda_-$ and $Q_{2,12}=Q_{2,21}=0$.
@@ -827,7 +827,7 @@ The $\lambda_+$-eigenspace of $L_{\tilde Q}$ is the right ideal $\tilde\Pi_{\mat
 **Spinors.**
 A spinor of the first Peirce copy is an element of $S_+$,
 $$
-\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+},
+\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,21}\vec\Pi_{\mathrm{nil},+},
 \qquad (Q_{2,11},Q_{2,21})\in\mathbb{C}^2,
 $$
 and under left multiplication
@@ -838,7 +838,7 @@ $$
 $$
 A spinor of the second Peirce copy is an element of $S_-$,
 $$
-\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-},
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-},
 \qquad (Q_{2,12},Q_{2,22})\in\mathbb{C}^2,
 $$
 and under left multiplication

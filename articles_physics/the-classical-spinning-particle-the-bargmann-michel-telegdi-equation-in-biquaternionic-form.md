@@ -11,7 +11,7 @@ The equation has exactly two terms, and their coefficients are not free. A covar
 $$
 \frac{dS_{\imath}}{d\tau}=\frac{ϙ}{m}\Big[\alpha\,\sum_{\jmath} F_{\imath\jmath}S_{\jmath}+\beta\,v_{\imath}\,B\Big],
 \qquad
-B=\sum_{k,\jmath}S_\imath F_{k\jmath}v_{\jmath} ,
+B=\sum_{k,\jmath}S_{\imath} F_{k\jmath}v_{\jmath} ,
 $$
 
 contains the only two four-vectors that can be formed linearly from the field strength $F$, the spin $S$ and the four-velocity $v$ subject to $\langle\tilde{S}_{\Psi},\tilde{V}_{\Phi}\rangle=0$. The requirement that the orthogonality $\langle\tilde{S}_{\Psi},\tilde{V}_{\Phi}\rangle=0$ be preserved by the evolution forces $\alpha+\beta c^{2}=1$, i.e. $\beta=(1-\alpha)/c^{2}$; and the requirement that in the instantaneous rest frame the equation reduce to the gyromagnetic torque fixes $\alpha=g/2$. Hence
@@ -21,7 +21,7 @@ $$
 =\frac{ϙ}{m}\left[\frac{g}{2}\,\sum_{\jmath} F_{\imath\jmath}S_{\jmath}
 -\left(\frac{g}{2}-1\right)\frac{1}{c^{2}}\,v_{\imath}\,B\right],
 \qquad
-B=\sum_{k,\jmath}S_\imath F_{k\jmath}v_{\jmath}.
+B=\sum_{k,\jmath}S_{\imath} F_{k\jmath}v_{\jmath}.
 $$
 
 This is the BMT equation in the conventions of this series, in which the four-velocity has $\langle\tilde{V}_{\Phi}\rangle_\natural=-\gamma^{2}c^{2}+\gamma^{2}\vec v^{2}=-c^{2}$, the minus on the time term being the square of the $i$ in $i r'_t$. In the biquaternion algebra it becomes
@@ -53,7 +53,7 @@ $$
 The field-strength biquaternion is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, with $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$, as fixed once and for all in Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field-strength biquaternion, the Hodge dual and the field invariants. The electromagnetic field tensor has components
 
 $$
-F_{tk}=\frac{E_\imath}{c},
+F_{tk}=\frac{E_{\imath}}{c},
 \qquad
 F_{j\imath}=\epsilon_{j\imath l}B_l
 \qquad\text{(real components)},
@@ -130,10 +130,10 @@ $$
 because $F$ is antisymmetric. Of the scalars that can be formed, two are relevant: $\langle\tilde{S}_{\Psi},\tilde{V}_{\Phi}\rangle=0$, and
 
 $$
-B:=\sum_{k,\jmath}S_\imath F_{k\jmath}v_{\jmath}=-\sum_{k,\jmath}v_\imath F_{k\jmath}S_{\jmath} ,
+B:=\sum_{k,\jmath}S_{\imath} F_{k\jmath}v_{\jmath}=-\sum_{k,\jmath}v_{\imath} F_{k\jmath}S_{\jmath} ,
 $$
 
-the **invariant spin–field–velocity scalar**. A term proportional to $S_{\imath}$ itself is excluded because it would change the invariant $\langle\tilde{S}_{\Psi}\rangle_\natural$, which is fixed; a term proportional to $\big(F\cdot v\big)_{\imath}$ times $\sum_\imath S_\imath v_\imath$ vanishes by orthogonality; and the remaining contractions either reduce to $v_{\imath} B$ or vanish by the antisymmetry of $F$. Hence the most general covariant right-hand side linear in $F$ and $S$ that preserves the spin magnitude is
+the **invariant spin–field–velocity scalar**. A term proportional to $S_{\imath}$ itself is excluded because it would change the invariant $\langle\tilde{S}_{\Psi}\rangle_\natural$, which is fixed; a term proportional to $\big(F\cdot v\big)_{\imath}$ times $\sum_{\imath} S_{\imath} v_{\imath}$ vanishes by orthogonality; and the remaining contractions either reduce to $v_{\imath} B$ or vanish by the antisymmetry of $F$. Hence the most general covariant right-hand side linear in $F$ and $S$ that preserves the spin magnitude is
 
 $$
 \frac{dS_{\imath}}{d\tau}=\frac{ϙ}{m}\Big[\alpha\,\big(F\cdot S\big)_{\imath}+\beta\,v_{\imath} B\Big],
@@ -178,12 +178,12 @@ $$
 
 The orthogonality of the spin and the four-velocity is thus preserved **identically**, for every field, by a one-parameter family of covariant equations; the second coefficient is not independent.
 
-**The rest-frame torque fixes the remaining coefficient.** In the instantaneous rest frame $v_{\imath}=(c,\mathbf{0})$, so $v_\imath=0$ and $\tilde{S}_{\Psi}=(0,\vec s)$; the second term of the ansatz vanishes there, and the field tensor has $F_{kt}=-E_\imath/c$ and $F_{\imath j}=\epsilon_{\imath jl}B_l$. The spatial equation is therefore
+**The rest-frame torque fixes the remaining coefficient.** In the instantaneous rest frame $v_{\imath}=(c,\mathbf{0})$, so $v_{\imath}=0$ and $\tilde{S}_{\Psi}=(0,\vec s)$; the second term of the ansatz vanishes there, and the field tensor has $F_{kt}=-E_{\imath}/c$ and $F_{\imath j}=\epsilon_{\imath jl}B_l$. The spatial equation is therefore
 
 $$
-\frac{ds_\imath}{d\tau}
+\frac{ds_{\imath}}{d\tau}
 =\frac{ϙ}{m}\,\alpha\,\Big(F_{kt}S_0+F_{\imath j}S_j\Big)
-=\frac{ϙ}{m}\,\alpha\,\big(\vec s\times\vec B\big)_\imath ,
+=\frac{ϙ}{m}\,\alpha\,\big(\vec s\times\vec B\big)_{\imath} ,
 $$
 
 because $S_0=0$ removes the electric contribution. Matching the gyromagnetic torque in the rest frame, $d\vec s/d\tau=\gamma_g\,\vec s\times\vec B=(gq/2m)\,\vec s\times\vec B$, gives
@@ -197,7 +197,7 @@ $$
 
 Collecting the two results gives the BMT equation. The derivation shows the division of labour between the two inputs: **the algebra does not choose $g$**, which is a dynamical property of the particle; it chooses the *structure*, i.e. it exhibits the two-term family and the constraint $\alpha+\beta c^{2}=1$, and the rest-frame torque then selects the member labelled by $g$.
 
-Two comments on the content of the equation. First, the invariant $B=\sum_{k,\jmath}S_\imath F_{k\jmath}v_{\jmath}$ vanishes when the spin, the field and the velocity are suitably aligned; it is used again, in slightly different form, in the Lorentz-force article. Second, in the absence of a field the equation reduces to $dS_{\imath}/d\tau=0$: the spin is parallel-transported in flat spacetime, so free spinning particles carry their rest-frame orientation unchanged, and the whole of the precession is field-driven.
+Two comments on the content of the equation. First, the invariant $B=\sum_{k,\jmath}S_{\imath} F_{k\jmath}v_{\jmath}$ vanishes when the spin, the field and the velocity are suitably aligned; it is used again, in slightly different form, in the Lorentz-force article. Second, in the absence of a field the equation reduces to $dS_{\imath}/d\tau=0$: the spin is parallel-transported in flat spacetime, so free spinning particles carry their rest-frame orientation unchanged, and the whole of the precession is field-driven.
 
 ## The Biquaternion Form
 
@@ -211,7 +211,7 @@ $$
 
 the anti-Hermitian projection of the product of the material element $\tilde{V}_{\Phi}$ with the field-strength biquaternion $\tilde{F}$, rescaled by $-\sqrt{\mu}$. That $\mathrm{F}(\tilde{V}_{\Phi})$ lies in the material sector is immediate, since the projection is onto $\mathbb{B}_{\Phi}$ by construction; that its four-vector components are the contraction $\sum_{\jmath} F_{\imath\jmath}V_{\jmath}$ is the content of the field-normalization lemma.
 
-**Lemma (field normalization).** With $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, $\vec B=\mu\vec H$, and the real-component field tensor $F_{tk}=E_\imath/c$, $F_{j\imath}=\epsilon_{j\imath l}B_l$, one has
+**Lemma (field normalization).** With $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, $\vec B=\mu\vec H$, and the real-component field tensor $F_{tk}=E_{\imath}/c$, $F_{j\imath}=\epsilon_{j\imath l}B_l$, one has
 
 $$
 \mathrm{F}(\tilde{V}_{\Phi})=-\sqrt{\mu}\,P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right)
@@ -220,14 +220,14 @@ $$
 W_{\imath}=\sum_{\jmath} F_{\imath\jmath}V_{\jmath} .
 $$
 
-The instruction $-\sqrt{\mu}$ is exactly the one that cancels the normalizations of the field strength: the electric half of $\tilde{F}$ is weighted by $\sqrt{\epsilon}$ and the magnetic half by $\sqrt{\mu}$, and the projection combines them with the weights of the two self-dual halves. The lemma is verified by recomputation: forming the $2\times2$ complex matrices $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_\imath$, $\mathsf{M}_2(i)=iI_2$, building $\tilde{V}_{\Phi}$ and $\tilde{F}$ from random real four-vectors and fields, projecting, and comparing with the component contraction gives agreement to machine precision, with the residual below $10^{-15}$ at $\epsilon_r=\mu_r=1$; repeating at $\epsilon_r=2,\mu_r=3$ and at $\epsilon_r=0.7,\mu_r=1.3$ confirms the factor $\sqrt{\mu}$ at general medium parameters. The algebraic identity behind it is that the product $\tilde{V}_{\Phi}\tilde{F}$ decomposes into the two self-dual halves of the field, and the anti-Hermitian projection selects the combination that carries the components of $\sum_{\jmath} F_{\imath\jmath}V_{\jmath}$; the companion article *The Field-Strength Biquaternion and Its Invariants*, for the decomposition into self-dual halves, contains the same algebra.
+The instruction $-\sqrt{\mu}$ is exactly the one that cancels the normalizations of the field strength: the electric half of $\tilde{F}$ is weighted by $\sqrt{\epsilon}$ and the magnetic half by $\sqrt{\mu}$, and the projection combines them with the weights of the two self-dual halves. The lemma is verified by recomputation: forming the $2\times2$ complex matrices $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, $\mathsf{M}_2(i)=iI_2$, building $\tilde{V}_{\Phi}$ and $\tilde{F}$ from random real four-vectors and fields, projecting, and comparing with the component contraction gives agreement to machine precision, with the residual below $10^{-15}$ at $\epsilon_r=\mu_r=1$; repeating at $\epsilon_r=2,\mu_r=3$ and at $\epsilon_r=0.7,\mu_r=1.3$ confirms the factor $\sqrt{\mu}$ at general medium parameters. The algebraic identity behind it is that the product $\tilde{V}_{\Phi}\tilde{F}$ decomposes into the two self-dual halves of the field, and the anti-Hermitian projection selects the combination that carries the components of $\sum_{\jmath} F_{\imath\jmath}V_{\jmath}$; the companion article *The Field-Strength Biquaternion and Its Invariants*, for the decomposition into self-dual halves, contains the same algebra.
 
 The second structure is the **invariant pairing**
 
 $$
 \big\langle\tilde{S}_{\Psi},\mathrm{F}(\tilde{V}_{\Phi})\big\rangle
 =\mathrm{Sc}\!\left(\tilde{S}_{\Psi}\,\mathrm{F}(\tilde{V}_{\Phi})^{\natural}\right)
-=\sum_{k,\jmath}S_\imath F_{k\jmath}v_{\jmath}=B ,
+=\sum_{k,\jmath}S_{\imath} F_{k\jmath}v_{\jmath}=B ,
 $$
 
 so that the scalar $B$ of the component equation is simply the material pairing of the spin with the field action on the four-velocity. That the pairing evaluates to $B$ is the defining property of the field action read through the pairing: $\mathrm{F}(\tilde{V}_{\Phi})$ is the four-vector $\sum_{\jmath} F_{\imath\jmath}v_{\jmath}$, and the pairing of two material four-vectors is their Minkowski inner product.
@@ -254,7 +254,7 @@ $$
 =\left(\frac{\vec E\cdot\vec s}{c},\ \vec s\times\vec B\right),
 $$
 
-because $F_{tk}S_\imath=(E_\imath/c)s_\imath$ and $F_{j\imath}S_\imath=(\vec s\times\vec B)_j$. The invariant scalar at rest is $B=\vec E\cdot\vec s$, since $B=\sum_{k,\jmath}S_\imath F_{k\jmath}v_{\jmath}=S_\imathF_{kt}v_0=\vec E\cdot\vec s$ with $v_0=-c$ and $F_{kt}=-E_\imath/c$. Substituting the two into the equation and separating the sectors gives the spatial torque
+because $F_{tk}S_{\imath}=(E_{\imath}/c)s_{\imath}$ and $F_{j\imath}S_{\imath}=(\vec s\times\vec B)_j$. The invariant scalar at rest is $B=\vec E\cdot\vec s$, since $B=\sum_{k,\jmath}S_{\imath} F_{k\jmath}v_{\jmath}=S_{\imath} F_{kt}v_0=\vec E\cdot\vec s$ with $v_0=-c$ and $F_{kt}=-E_{\imath}/c$. Substituting the two into the equation and separating the sectors gives the spatial torque
 
 $$
 \boxed{\ \frac{d\vec s}{d\tau}=\frac{ϙ}{m}\,\frac{g}{2}\,\vec s\times\vec B
@@ -292,7 +292,7 @@ $$
 The map $\tilde{Q}\mapsto (ϙ/m)F_{\imath\jmath}Q_{\jmath}$ is linear, so the transport is the same for every four-vector and the space of solutions is preserved as a whole. In the special case of a purely magnetic field, $F_{tk}=0$, the time components of both $v$ and $S$ are constant and the spatial parts satisfy
 
 $$
-\frac{dX_\imath}{d\tau}=\frac{ϙ}{m}\big(\vec X\times\vec B\big)_\imath ,
+\frac{dX_{\imath}}{d\tau}=\frac{ϙ}{m}\big(\vec X\times\vec B\big)_{\imath} ,
 $$
 
 where $\vec X$ is the spatial part of the four-vector in question. Thus $S_{\rm vec}$ and $\gamma\vec v$ precess about $\vec B$ at the same proper-time rate, of magnitude $|ϙ||\vec B|/m$, and a spin whose spatial part is initially parallel to the velocity remains parallel: **the spin follows the velocity**. This is the classical statement that there is **no anomalous precession** at $g=2$: the spin's laboratory precession exactly follows the momentum's, and the kinematic (Thomas) rotation of the rest frame is already contained in the common transport. The $g=2$ identity was verified by recomputation on random fields and velocities: the spatial right-hand sides of the two equations for $S_{\rm vec}$ and $\gamma\vec v$ agree identically, so a spin initially parallel to the velocity remains parallel.
@@ -384,7 +384,7 @@ $$
 =\frac{ϙ}{m}\left[\frac{g}{2}\,\sum_{\jmath} F_{\imath\jmath}S_{\jmath}
 -\left(\frac{g}{2}-1\right)\frac{1}{c^{2}}\,v_{\imath}\,B\right],
 \qquad
-B=\sum_{k,\jmath}S_\imath F_{k\jmath}v_{\jmath}\;},
+B=\sum_{k,\jmath}S_{\imath} F_{k\jmath}v_{\jmath}\;},
 $$
 
 in the conventions of this series with $\langle\tilde{V}_{\Phi}\rangle_\natural=-c^{2}$. The equation is assembled from the only two covariant four-vectors linear in $F$ and $S$, namely $\sum_{\jmath} F_{\imath\jmath}S_{\jmath}$ and $v_{\imath} B$; the orthogonality of the spin and the four-velocity forces $\alpha+\beta c^{2}=1$, and the rest-frame gyromagnetic torque fixes $\alpha=g/2$. In the biquaternion algebra the same equation is
@@ -426,7 +426,7 @@ is the subject of the companion article of this subcategory. The equation's two-
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=\epsilon_{\imath\jmathk}\vec e_\imath$ $(\imath\neq\jmath)$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=\epsilon_{\imath\jmath k}\vec e_{\imath}$ $(\imath\neq\jmath)$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
@@ -442,10 +442,10 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $g$, $\gamma_g=gq/2m$, $\vec\mu=\gamma_g\vec s$ | Gyromagnetic factor, ratio, magnetic moment |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
-| $F_{tk}=E_\imath/c$, $F_{j\imath}=\epsilon_{j\imath l}B_l$ | Field tensor components (real time; $i r'_t$: $F_{tk}=iE_\imath/c$) |
+| $F_{tk}=E_{\imath}/c$, $F_{j\imath}=\epsilon_{j\imath l}B_l$ | Field tensor components (real time; $i r'_t$: $F_{tk}=iE_{\imath}/c$) |
 | $\mathrm{F}(\tilde{V}_{\Phi})=-\sqrt{\mu}P_{\mathbb{B}_{\Phi}}(\tilde{V}_{\Phi}\tilde{F})$ | Field action, components $\sum_{\jmath} F_{\imath\jmath}V_{\jmath}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})=-Q_{1,0}Q_{2,0}+\vec Q_1\cdot\vec Q_2$ | Invariant pairing on $\mathbb{B}_{\Phi}$ |
-| $B=\sum_{k,\jmath}S_\imath F_{k\jmath}v_{\jmath}=\langle\tilde{S}_{\Psi},\mathrm{F}(\tilde{V}_{\Phi})\rangle$ | Spin–field–velocity invariant |
+| $B=\sum_{k,\jmath}S_{\imath} F_{k\jmath}v_{\jmath}=\langle\tilde{S}_{\Psi},\mathrm{F}(\tilde{V}_{\Phi})\rangle$ | Spin–field–velocity invariant |
 | $\vec\omega_T=\frac{\gamma^2}{c^2(\gamma+1)}\vec a\times\vec v$ | Thomas precession angular velocity |
 
 ## Further Reading

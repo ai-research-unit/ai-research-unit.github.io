@@ -70,7 +70,7 @@ and the cone is the union of the two hyperplanes $Q_{+}=0$ and $Q_{-}=0$; the qu
 
 **Remark (the complex cone against the real cone).** The equation $\langle \breve Q\rangle_{\mathrm{ts}}=0$ is a **complex** equation: writing $\langle \breve Q\rangle_{\mathrm{ts}}=\mathrm{Re}N+i\,\mathrm{Im}N$ with
 $$
-\mathrm{Re}N=q_{\blacktriangle}^{2}-q'^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}+q'^{2}_{\blacktriangledown},\qquad \mathrm{Im}N=2(q_{\blacktriangle}q'_{\blacktriangle}-q_{\blacktriangledown}q'_{\blacktriangledown}),
+\mathrm{Re}N=q_{\blacktriangle}^{2}-q'{}^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}+q'{}^{2}_{\blacktriangledown},\qquad \mathrm{Im}N=2(q_{\blacktriangle}q'_{\blacktriangle}-q_{\blacktriangledown}q'_{\blacktriangledown}),
 $$
 the null cone is the set where **both** vanish, the union of the two complex lines above. The real quadric of the single real equation $\mathrm{Re}N=0$ is a larger cone, of real dimension three, and it is **not** the zero-divisor set. The zero divisors are the complex null cone, and the distinction is the one the corpus keeps between a complex form and its real part.
 
@@ -146,7 +146,7 @@ and it is connected, the punctured complex planes being connected.
 | $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$ | the reduced norm, factoring into two linear forms |
 | $\mathbb{C}^{\times}\Pi_+$, $\mathbb{C}^{\times}\Pi_-$ | the two punctured idempotent lines |
 | $Q_{+}=0$, $Q_{-}=0$ | the two hyperplanes of the cone |
-| $\mathrm{Re}N=q_{\blacktriangle}^{2}-q'^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}+q'^{2}_{\blacktriangledown}$, $\mathrm{Im}N=2(q_{\blacktriangle}q'_{\blacktriangle}-q_{\blacktriangledown}q'_{\blacktriangledown})$ | the real and imaginary parts of the reduced norm |
+| $\mathrm{Re}N=q_{\blacktriangle}^{2}-q'{}^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}+q'{}^{2}_{\blacktriangledown}$, $\mathrm{Im}N=2(q_{\blacktriangle}q'_{\blacktriangle}-q_{\blacktriangledown}q'_{\blacktriangledown})$ | the real and imaginary parts of the reduced norm |
 | $\mathbb{C}\Pi_+$, $\mathbb{C}\Pi_-$ | the two maximal ideals |
 | $(Q_{+}\Pi_+)(Q_{-}\Pi_-)=0$ | the mutual annihilation of the two lines |
 | ${\mathbb{B}_{\mathrm{red}}}^{\times}=\{\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}$ | the complement of the cone, the group of invertibles |

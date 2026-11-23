@@ -204,7 +204,7 @@ so the orthogonal factor lies in $SO(2)$ when $\tilde q$ is timelike and in the 
 
 *Existence.* For such $\tilde q$, the element $\Sigma = \tilde q\tilde q_{\tau}$ is symmetric positive definite, so it has a unique symmetric positive definite square root $P$, whose determinant is $|\langle\tilde q\rangle_{\natural}| > 0$. Setting $\varrho = \sqrt{\det P}$, $b = P/\varrho$ and $\tilde u_{\mathrm r} = P^{-1}\tilde q$ gives $\varrho>0$, $\det b = 1$ with $b$ symmetric positive definite, and $\tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1$, while $rb\tilde u_{\mathrm r} = \varrho(P/\varrho)(P^{-1}\tilde q) = \tilde q$.
 
-*Uniqueness.* Suppose $\tilde q = rb\tilde u_{\mathrm r} = r'b'\tilde u_{\mathrm r}'$ with both triples admissible. Then $\tilde q\tilde q_{\tau} = \varrho^2 b^2 = r'^2 b'^2$. The element $\varrho^2b^2$ is symmetric positive definite, and its symmetric positive definite square root is unique, so $rb = r'b'$. Taking norms gives $\varrho^2 = r'^2$, whence $\varrho = r'$ because both are positive, then $b = b'$, then $\tilde u_{\mathrm r} = \tilde u_{\mathrm r}'$.
+*Uniqueness.* Suppose $\tilde q = rb\tilde u_{\mathrm r} = r'b'\tilde u_{\mathrm r}'$ with both triples admissible. Then $\tilde q\tilde q_{\tau} = \varrho^2 b^2 = r'{}^2 b'{}^2$. The element $\varrho^2b^2$ is symmetric positive definite, and its symmetric positive definite square root is unique, so $rb = r'b'$. Taking norms gives $\varrho^2 = r'{}^2$, whence $\varrho = r'$ because both are positive, then $b = b'$, then $\tilde u_{\mathrm r} = \tilde u_{\mathrm r}'$.
 
 The uniqueness is without sign ambiguity, as in the quaternion case, and for the same reason: the modulus is required to be positive, and that requirement pins down the square root.
 

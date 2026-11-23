@@ -44,7 +44,7 @@ Their sum and product are
 $$
 \lambda_++\lambda_-=2q,
 \qquad
-\lambda_+\lambda_-=q^2-q'^2=\langle Q\rangle_{*}.
+\lambda_+\lambda_-=q^2-q'{}^2=\langle Q\rangle_{*}.
 $$
 
 The eigenvalues are distinct exactly when $q'\neq0$, because
@@ -56,10 +56,10 @@ $$
 The characteristic polynomial is
 
 $$
-p_Q(X)=X^2-2qX+(q^2-q'^2)=(X-\lambda_+)(X-\lambda_-),
+p_Q(X)=X^2-2qX+(q^2-q'{}^2)=(X-\lambda_+)(X-\lambda_-),
 $$
 
-with discriminant $4q'^2$. The element is invertible exactly when $\lambda_+\lambda_-\neq0$.
+with discriminant $4q'{}^2$. The element is invertible exactly when $\lambda_+\lambda_-\neq0$.
 
 ### The Eigenprojections
 
@@ -159,7 +159,7 @@ $$
 M_Q=\begin{pmatrix}q&q'\\q'&q\end{pmatrix},
 $$
 
-with trace $2q$ and determinant $q^2-q'^2=\lambda_+\lambda_-$. The change to the eigenbasis has columns the coordinate vectors of $\Pi_+$ and $\Pi_-$:
+with trace $2q$ and determinant $q^2-q'{}^2=\lambda_+\lambda_-$. The change to the eigenbasis has columns the coordinate vectors of $\Pi_+$ and $\Pi_-$:
 
 $$
 C=\begin{pmatrix}\tfrac12&\tfrac12\\\tfrac12&-\tfrac12\end{pmatrix},
@@ -201,7 +201,7 @@ The spectral behaviour is fixed by the pair $(q,q')$.
 |---|---|---|---|
 | Distinct | $q'\neq0$ | $\lambda_+\neq\lambda_-$ | $(\Pi_+,\Pi_-)$, unique up to two scales |
 | Scalar | $q'=0$ | $\lambda_+=\lambda_-=q$ | every basis; $(\Pi_+,\Pi_-)$ is a choice |
-| Zero divisor | $q'\neq0$, $q^2-q'^2=0$ | $\{2q,0\}$ | $(\Pi_+,\Pi_-)$ still exists |
+| Zero divisor | $q'\neq0$, $q^2-q'{}^2=0$ | $\{2q,0\}$ | $(\Pi_+,\Pi_-)$ still exists |
 
 The scalar regime is the only one in which the eigenbasis fails to be determined by $Q$. The zero-divisor regime is distinct: the two eigenvalues are different, the eigenbasis exists, but one eigenvalue is zero, so $Q$ is not invertible. Case 8 is this regime.
 
@@ -814,7 +814,7 @@ and in particular $Q^2=2Q=2+2j$. There is no inverse. The two spinor spaces read
 | $S_\pm=\mathbb{R}\Pi_\pm$ | the two spinor spaces |
 | $M_Q$ | the matrix of multiplication by $Q$ in the basis $(1,j)$ |
 | $C$ | the change to the eigenbasis |
-| $\langle Q\rangle_{*}=q^2-q'^2$ | the split-complex norm |
+| $\langle Q\rangle_{*}=q^2-q'{}^2$ | the split-complex norm |
 
 ## Further Reading
 

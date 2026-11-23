@@ -98,13 +98,13 @@ The centre is the set of elements whose vector components vanish; the quaternion
 
 $$
 \boxed{\;
-\langle\tilde{Q}\rangle_{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = \left(\sum_{\mu} (q_\mu^2 + q'^2_\mu)\right) + 2j\left(\sum_\mu q_\mu q'_\mu\right)
+\langle\tilde{Q}\rangle_{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = \left(\sum_{\mu} (q_\mu^2 + q'{}^2_\mu)\right) + 2j\left(\sum_\mu q_\mu q'_\mu\right)
 \;},
 $$
 
 with real part the square of the Euclidean norm and split-imaginary part twice the inner product of the real and split-imaginary coordinate vectors.
 
-**Proof.** Expand each $Q_\mu^2 = (q_\mu + j q'_\mu)^2 = q_\mu^2 + q'^2_\mu + 2j q_\mu q'_\mu$ and sum over $\mu$.
+**Proof.** Expand each $Q_\mu^2 = (q_\mu + j q'_\mu)^2 = q_\mu^2 + q'{}^2_\mu + 2j q_\mu q'_\mu$ and sum over $\mu$.
 
 The real part of the split-biquaternion norm is **positive definite**: it vanishes only when all eight coordinates vanish, that is only for $\tilde{Q} = 0$. The split-biquaternion norm is therefore **anisotropic** as a quadratic map to $\mathbb{C}_{\mathrm{spl}}$ — there is no nonzero element of norm zero — even though the algebra has many zero divisors, whose split-biquaternion norms are nonzero zero divisors of $\mathbb{C}_{\mathrm{spl}}$.
 
@@ -113,9 +113,9 @@ The real part of the split-biquaternion norm is **positive definite**: it vanish
 On the two real parts of the coefficient space the split-biquaternion norm is a genuine positive definite quadratic form:
 
 - on the **real part** $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, where $q'_\mu = 0$, it is $N = \sum_\mu q_\mu^2$;
-- on the **split-imaginary part** $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, where $q_\mu = 0$, it is $N = \sum_\mu q'^2_\mu$.
+- on the **split-imaginary part** $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, where $q_\mu = 0$, it is $N = \sum_\mu q'{}^2_\mu$.
 
-Both are positive definite; the indefinite form of the algebra is the Hermitian norm $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ of inertia $(4,4)$, as in *Split-Biquaternion Norm and Invertibility*.
+Both are positive definite; the indefinite form of the algebra is the Hermitian norm $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'{}^2_\mu)$ of inertia $(4,4)$, as in *Split-Biquaternion Norm and Invertibility*.
 
 ### The Invertibility Criterion in Coordinates
 
@@ -133,7 +133,7 @@ The criterion shows directly that the **zero divisors** are the elements whose s
 
 ## Summary
 
-The four-vector representation reads a split biquaternion as a column $(Q_t,Q_x,Q_y,Q_z)$ of four split complex coefficients, with the dual row given by quaternion conjugation and the eight real coordinates $(q_\mu,q'_\mu)$ splitting into a real and a split-imaginary part. The product is the quaternion product in components, with the coefficients multiplying in the commutative algebra $\mathbb{C}_{\mathrm{spl}}$, and the basis table is the quaternion table. The four conjugations act by the sign patterns $Q_t \mapsto \pm Q_t$ or $\pm \bar{Q_t}$, negating the vector components for quaternion conjugation, conjugating all coefficients for split complex conjugation, and combining the two for Hermitian and anti-Hermitian conjugation. The four distinguished subspaces are given by coefficient conditions: vanishing vector coefficients for the centre, real coefficients for the quaternion subspace, real scalar and split-imaginary vector components for $\mathbb{B}_{\Psi}$, and the reverse for $\mathbb{B}_{\Phi}$. The split-biquaternion norm is $N = \sum_\mu Q_\mu^2$, with positive definite real part $\sum_\mu(q_\mu^2+q'^2_\mu)$ and split-imaginary part $2\sum_\mu q_\mu q'_\mu$, and it is anisotropic: it vanishes only at the origin, so the zero divisors are exactly the elements whose split-biquaternion norm is a nonzero zero divisor of $\mathbb{C}_{\mathrm{spl}}$, described in coordinates by $\sum_\mu(q_\mu \pm q'_\mu)^2 = 0$ in one idempotent component. The construction is the split complex analogue of the biquaternion four-vector representation, with $\mathbb{C}_{\mathrm{spl}}$ in place of $\mathbb{C}$ and the complexified quadratic form replaced by the split complex norm.
+The four-vector representation reads a split biquaternion as a column $(Q_t,Q_x,Q_y,Q_z)$ of four split complex coefficients, with the dual row given by quaternion conjugation and the eight real coordinates $(q_\mu,q'_\mu)$ splitting into a real and a split-imaginary part. The product is the quaternion product in components, with the coefficients multiplying in the commutative algebra $\mathbb{C}_{\mathrm{spl}}$, and the basis table is the quaternion table. The four conjugations act by the sign patterns $Q_t \mapsto \pm Q_t$ or $\pm \bar{Q_t}$, negating the vector components for quaternion conjugation, conjugating all coefficients for split complex conjugation, and combining the two for Hermitian and anti-Hermitian conjugation. The four distinguished subspaces are given by coefficient conditions: vanishing vector coefficients for the centre, real coefficients for the quaternion subspace, real scalar and split-imaginary vector components for $\mathbb{B}_{\Psi}$, and the reverse for $\mathbb{B}_{\Phi}$. The split-biquaternion norm is $N = \sum_\mu Q_\mu^2$, with positive definite real part $\sum_\mu(q_\mu^2+q'{}^2_\mu)$ and split-imaginary part $2\sum_\mu q_\mu q'_\mu$, and it is anisotropic: it vanishes only at the origin, so the zero divisors are exactly the elements whose split-biquaternion norm is a nonzero zero divisor of $\mathbb{C}_{\mathrm{spl}}$, described in coordinates by $\sum_\mu(q_\mu \pm q'_\mu)^2 = 0$ in one idempotent component. The construction is the split complex analogue of the biquaternion four-vector representation, with $\mathbb{C}_{\mathrm{spl}}$ in place of $\mathbb{C}$ and the complexified quadratic form replaced by the split complex norm.
 
 ## Summary of Notation
 
@@ -148,7 +148,7 @@ The four-vector representation reads a split biquaternion as a column $(Q_t,Q_x,
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations on the column |
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}, \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}, \mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Distinguished subspaces as coefficient conditions |
 | $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ | Split-Biquaternion norm, anisotropic |
-| $\langle\tilde Q\rangle_{*} = \sum_\mu(q_\mu^2 - q'^2_\mu)$ | Hermitian norm, inertia $(4,4)$ |
+| $\langle\tilde Q\rangle_{*} = \sum_\mu(q_\mu^2 - q'{}^2_\mu)$ | Hermitian norm, inertia $(4,4)$ |
 | $Z_\pm$ | The two four-dimensional zero divisor subspaces |
 
 ## Further Reading

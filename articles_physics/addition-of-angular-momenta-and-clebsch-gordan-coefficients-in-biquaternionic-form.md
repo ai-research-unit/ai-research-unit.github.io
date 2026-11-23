@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *Angular Momentum and Spin in Biquaternionic Form* established the angular-momentum algebra inside the biquaternion framework: the commutation relations $[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}]=i\,\frac{h}{2\pi}\,\epsilon_{\imath\jmath\ell}\,\tilde{S}_{\Psi,\mathrm{tot},k}$, the Casimir $\tilde S_{\Psi,\mathrm{tot}}^2$, the ladder operators, the spin-$\tfrac12$ realisation $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_\imath$ in $\mathbb{B}_{\Psi}$, and the observation that two spin-$\tfrac12$ degrees of freedom combine in the tensor-product algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$. That article treated the addition of angular momenta in the case it needed for the hydrogen atom — one spin-$\tfrac12$ coupled to an orbital angular momentum — and recorded the coupling of two algebraic spin factors as a remark.
+The companion article *Angular Momentum and Spin in Biquaternionic Form* established the angular-momentum algebra inside the biquaternion framework: the commutation relations $[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}]=i\,\frac{h}{2\pi}\,\epsilon_{\imath\jmath\ell}\,\tilde{S}_{\Psi,\mathrm{tot},k}$, the Casimir $\tilde S_{\Psi,\mathrm{tot}}^2$, the ladder operators, the spin-$\tfrac12$ realisation $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_{\imath}$ in $\mathbb{B}_{\Psi}$, and the observation that two spin-$\tfrac12$ degrees of freedom combine in the tensor-product algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$. That article treated the addition of angular momenta in the case it needed for the hydrogen atom — one spin-$\tfrac12$ coupled to an orbital angular momentum — and recorded the coupling of two algebraic spin factors as a remark.
 
 This article develops that remark into the general machinery. Its subject is the **addition of angular momenta and the Clebsch–Gordan coefficients** as they appear inside the biquaternion framework: the coupled operators, the coupled basis, the decomposition of a tensor product of rotation multiplets, and the explicit coefficients for the two cases the framework itself supports, $\tfrac12\otimes\tfrac12$ and $1\otimes1$.
 
@@ -57,10 +57,10 @@ $$
 For the fundamental case $s_{\mathrm{tot}}=\tfrac12$ the algebra supplies the operators as algebra elements,
 
 $$
-\tilde S_{\Psi,k}=\frac{h}{4\pi}\,i\vec e_\imath\in\mathbb{B}_{\Psi},
+\tilde S_{\Psi,k}=\frac{h}{4\pi}\,i\vec e_{\imath}\in\mathbb{B}_{\Psi},
 $$
 
-with $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=i\,\frac{h}{2\pi}\,\epsilon_{\imath\jmath\ell}\,\tilde{S}_{\Psi,k}$ following from the quaternion product rule $\vec e_{\imath} \vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\sum_\imath\epsilon_{\imath\jmathk}\vec e_\imath$ together with $i^2=-1$. The ladder combinations are
+with $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=i\,\frac{h}{2\pi}\,\epsilon_{\imath\jmath\ell}\,\tilde{S}_{\Psi,k}$ following from the quaternion product rule $\vec e_{\imath} \vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\sum_{\imath}\epsilon_{\imath\jmath k}\vec e_{\imath}$ together with $i^2=-1$. The ladder combinations are
 
 $$
 \tilde S_{\Psi,\pm}=\tilde S_{\Psi,1}\pm  i\tilde S_{\Psi,2}=\frac{h}{4\pi}\left(i\vec e_x\mp  \vec e_y\right),
@@ -78,7 +78,7 @@ $$
 \tilde S_{\Psi}^2=\frac{3\,h^{2}}{16\pi^{2}}e_t ,
 $$
 
-the value $\frac{h^{2}}{4\pi^{2}}\,s\,(s+1)$ with $s=\tfrac12$. The spin eigenstates are the idempotents $\tilde\Pi_{\mathrm{id}}(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, on which $\sum_{\imath\in\{x,y,z\}} \vec u_\imath\tilde S_{\Psi,k}$ has the eigenvalues $\pm\frac{h}{4\pi}$. Under the isomorphism $\mathsf{M}_2$ of the companion articles, $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\imath)=-i\sigma_\imath$, and $\tilde S_{\Psi,k}$ maps to $\frac{h}{4\pi}\sigma_\imath$.
+the value $\frac{h^{2}}{4\pi^{2}}\,s\,(s+1)$ with $s=\tfrac12$. The spin eigenstates are the idempotents $\tilde\Pi_{\mathrm{id}}(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, on which $\sum_{\imath\in\{x,y,z\}} \vec u_{\imath}\tilde S_{\Psi,k}$ has the eigenvalues $\pm\frac{h}{4\pi}$. Under the isomorphism $\mathsf{M}_2$ of the companion articles, $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, and $\tilde S_{\Psi,k}$ maps to $\frac{h}{4\pi}\sigma_{\imath}$.
 
 The material point for what follows is that the fundamental module of $\mathbb{B}$ is two-dimensional, so the operators above are the only spin operators the algebra carries internally. Composite angular momenta require more than one factor of the algebra.
 
@@ -122,7 +122,7 @@ The coupled states $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle_{*}$ are by defi
 For the spin factors the two-factor space is the algebra $\mathbb{B}\otimes\mathbb{B}$ itself. Its trace is the product of the factor traces,
 
 $$
-\mathrm{Tr}\bigl(\mathsf M_2(x)\otimes\mathsf M_2(y)\bigr)=\mathrm{Tr}_\mathbb{B}\mathsf M_2(x)\,\mathrm{Tr}_\mathbb{B}\mathsf M_2(y),\qquad \mathrm{Tr}_\mathbb{B}\mathsf M_2(e_t)=2,\quad \mathrm{Tr}_\mathbb{B}\mathsf M_2(\vec e_\imath)=0 ,
+\mathrm{Tr}\bigl(\mathsf M_2(x)\otimes\mathsf M_2(y)\bigr)=\mathrm{Tr}_\mathbb{B}\mathsf M_2(x)\,\mathrm{Tr}_\mathbb{B}\mathsf M_2(y),\qquad \mathrm{Tr}_\mathbb{B}\mathsf M_2(e_t)=2,\quad \mathrm{Tr}_\mathbb{B}\mathsf M_2(\vec e_{\imath})=0 ,
 $$
 
 so that $\mathrm{Tr}\bigl(\mathsf M_2(e_t)\otimes\mathsf M_2(e_t)\bigr)=4$. A product state is represented by the idempotent
@@ -231,8 +231,8 @@ which is the relation $\tilde S_{\Psi,-}|1,1\rangle=\frac{h}{2\pi}\sqrt{(1+1)(1-
 The two coupled subspaces are the symmetric and antisymmetric parts of the tensor square. In the algebra $\mathbb{B}\otimes\mathbb{B}$ they are the ranges of the two idempotents
 
 $$
-\boxed{\;\tilde\Pi_{\mathrm{id,sym}}=\tfrac{1}{4}\left(3\,e_t\otimes e_t-\sum_{\imath\in\{x,y,z\}}\vec e_\imath\otimes \vec e_\imath\right),\qquad
-\tilde\Pi_{\mathrm{id,asym}}=\tfrac{1}{4}\left(e_t\otimes e_t+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\otimes \vec e_\imath\right)\;}.
+\boxed{\;\tilde\Pi_{\mathrm{id,sym}}=\tfrac{1}{4}\left(3\,e_t\otimes e_t-\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\otimes \vec e_{\imath}\right),\qquad
+\tilde\Pi_{\mathrm{id,asym}}=\tfrac{1}{4}\left(e_t\otimes e_t+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\otimes \vec e_{\imath}\right)\;}.
 $$
 
 Both are Hermitian; both are idempotent; they are orthogonal and sum to the identity,
@@ -247,10 +247,10 @@ $$
 4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id,sym}})=3,\qquad 4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id,asym}})=1 .
 $$
 
-The antisymmetric idempotent is the singlet idempotent of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, written there as $\tilde\Pi_{\mathrm{id,singlet}}=\tfrac14(e_t\otimes e_t+\sum_{\imath\in\{x,y,z\}} \vec e_\imath\otimes \vec e_\imath)$; the symmetric idempotent is its complement, of rank three. The two are the spectral projectors of the **exchange operator**
+The antisymmetric idempotent is the singlet idempotent of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, written there as $\tilde\Pi_{\mathrm{id,singlet}}=\tfrac14(e_t\otimes e_t+\sum_{\imath\in\{x,y,z\}} \vec e_{\imath}\otimes \vec e_{\imath})$; the symmetric idempotent is its complement, of rank three. The two are the spectral projectors of the **exchange operator**
 
 $$
-F=\tfrac{1}{2}\left(e_t\otimes e_t-\sum_{\imath\in\{x,y,z\}}\vec e_\imath\otimes \vec e_\imath\right),
+F=\tfrac{1}{2}\left(e_t\otimes e_t-\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\otimes \vec e_{\imath}\right),
 $$
 
 which satisfies $F^2=e_t\otimes e_t$ and $F^{*}=F$, and which exchanges the two factors on the product idempotents. Indeed
@@ -260,18 +260,18 @@ $$
 \tilde\Pi_{\mathrm{id,asym}}=\tfrac{1}{2}\left(e_t\otimes e_t-F\right),
 $$
 
-so the coupled idempotents of the fundamental coupling are the $\pm1$ spectral projectors of the exchange operator. Under $\mathsf{M}_2\otimes\mathsf{M}_2$ the exchange operator maps to the standard swap, $F\mapsto\tfrac12(I\otimes I+\sum_{\imath\in\{x,y,z\}}\sigma_\imath\otimes\sigma_\imath)$, whose action on a product basis vector is $|a\rangle|b\rangle\mapsto|b\rangle|a\rangle$.
+so the coupled idempotents of the fundamental coupling are the $\pm1$ spectral projectors of the exchange operator. Under $\mathsf{M}_2\otimes\mathsf{M}_2$ the exchange operator maps to the standard swap, $F\mapsto\tfrac12(I\otimes I+\sum_{\imath\in\{x,y,z\}}\sigma_{\imath}\otimes\sigma_{\imath})$, whose action on a product basis vector is $|a\rangle|b\rangle\mapsto|b\rangle|a\rangle$.
 
 ### The Casimir and the coupling term
 
-The coupling term of the total Casimir can be evaluated in closed form. With $\tilde S_{\Psi,k}^{(1)}\tilde S_{\Psi,k}^{(2)}=\frac{h^{2}}{16\pi^{2}}(i\vec e_\imath)\otimes(i\vec e_\imath)=-\frac{h^{2}}{16\pi^{2}}\,\vec e_\imath\otimes \vec e_\imath$ and no sum over $k$ on the right,
+The coupling term of the total Casimir can be evaluated in closed form. With $\tilde S_{\Psi,k}^{(1)}\tilde S_{\Psi,k}^{(2)}=\frac{h^{2}}{16\pi^{2}}(i\vec e_{\imath})\otimes(i\vec e_{\imath})=-\frac{h^{2}}{16\pi^{2}}\,\vec e_{\imath}\otimes \vec e_{\imath}$ and no sum over $k$ on the right,
 
 $$
-\sum_{\imath\in\{x,y,z\}}\tilde S_{\Psi,k}^{(1)}\tilde S_{\Psi,k}^{(2)}=-\frac{h^{2}}{16\pi^{2}}\sum_{\imath\in\{x,y,z\}}\vec e_\imath\otimes \vec e_\imath
+\sum_{\imath\in\{x,y,z\}}\tilde S_{\Psi,k}^{(1)}\tilde S_{\Psi,k}^{(2)}=-\frac{h^{2}}{16\pi^{2}}\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\otimes \vec e_{\imath}
 =\frac{h^{2}}{8\pi^{2}}F-\frac{h^{2}}{16\pi^{2}}\,e_t\otimes e_t ,
 $$
 
-using $\sum_{\imath\in\{x,y,z\}} \vec e_\imath\otimes \vec e_\imath=e_t\otimes e_t-2F$. The coupling term is therefore a **linear combination of the identity and the exchange operator**, which is the algebraic reason that the exchange operator commutes with the total angular momentum:
+using $\sum_{\imath\in\{x,y,z\}} \vec e_{\imath}\otimes \vec e_{\imath}=e_t\otimes e_t-2F$. The coupling term is therefore a **linear combination of the identity and the exchange operator**, which is the algebraic reason that the exchange operator commutes with the total angular momentum:
 
 $$
 [\tilde S_{\Psi,k},F]=0,\qquad k=1,2,3 .
@@ -403,7 +403,7 @@ Two consistency checks are worth recording. First, the recursion relations repro
 
 It is worth stating the accounting explicitly, because the two-spin case is where the framework's reach and its limit are both visible.
 
-**Algebraic.** The two-factor arena $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ and its trace; the total operators $\tilde S_{\Psi,1,k}+\tilde S_{\Psi,2,k}$ and the total Casimir; the coupled idempotents $\tilde\Pi_{\mathrm{id,sym}}$ and $\tilde\Pi_{\mathrm{id,asym}}$ as elements of the algebra; the exchange operator $F$ and its relation to the coupling term; the identity of the coupled idempotents with the spectral projectors of $\tilde S_{\Psi}^2$; the spin-$\tfrac12$ factor with its operators $\tilde S_{\Psi,k}\in\mathbb{B}_{\Psi}$ and the nilpotency $\tilde S_{\Psi,\pm}^2=0$. All of these are statements about elements of $\mathbb{B}$ and $\mathbb{B}\otimes\mathbb{B}$ and are consequences of the quaternion product rule, $\vec e_\imath^2=-e_t$ and $i^2=-1$.
+**Algebraic.** The two-factor arena $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ and its trace; the total operators $\tilde S_{\Psi,1,k}+\tilde S_{\Psi,2,k}$ and the total Casimir; the coupled idempotents $\tilde\Pi_{\mathrm{id,sym}}$ and $\tilde\Pi_{\mathrm{id,asym}}$ as elements of the algebra; the exchange operator $F$ and its relation to the coupling term; the identity of the coupled idempotents with the spectral projectors of $\tilde S_{\Psi}^2$; the spin-$\tfrac12$ factor with its operators $\tilde S_{\Psi,k}\in\mathbb{B}_{\Psi}$ and the nilpotency $\tilde S_{\Psi,\pm}^2=0$. All of these are statements about elements of $\mathbb{B}$ and $\mathbb{B}\otimes\mathbb{B}$ and are consequences of the quaternion product rule, $\vec e_{\imath}^2=-e_t$ and $i^2=-1$.
 
 **Imported.** The Clebsch–Gordan coefficients themselves, including their numerical values, their orthogonality and completeness, the recursion relations, the closed Wigner formula, and the Condon–Shortley phase convention. These belong to the representation theory of the rotation group. The framework changes nothing about them; it supplies the objects on which they act.
 
@@ -428,8 +428,8 @@ The article established the following.
 - **Coupling of two systems.** With $\tilde S_{\Psi,1,k}=\tilde S_{\Psi,k}\otimes e_t$ and $\tilde S_{\Psi,2,k}=e_t\otimes\tilde S_{\Psi,k}$, the cross-commutators vanish, the total operator $\tilde S_{\Psi,\mathrm{tot},k}=\tilde S_{\Psi,1,k}+\tilde S_{\Psi,2,k}$ satisfies the angular-momentum algebra, and the total Casimir is $\tilde S_{\Psi,\mathrm{tot}}^2=\tilde S_{\Psi,1}^2+\tilde S_{\Psi,2}^2+2\sum_{\imath\in\{x,y,z\}}\tilde S_{\Psi,1,k}\tilde S_{\Psi,2,k}$.
 - **Clebsch–Gordan series.** $V_{s_1}\otimes V_{s_2}\cong\bigoplus_{s_{\mathrm{tot}}=|s_1-s_2|}^{s_1+s_2}V_{s_{\mathrm{tot}}}$, with $(2s_1+1)(2s_2+1)=\sum_{s_{\mathrm{tot}}}(2s_{\mathrm{tot}}+1)$; in particular $\tfrac12\otimes\tfrac12=1\oplus0$ and $1\otimes1=2\oplus1\oplus0$.
 - **The fundamental coupling.** The coupled idempotents are the symmetric and antisymmetric idempotents of the tensor square,
-  $$\tilde\Pi_{\mathrm{id,sym}}=\tfrac14\left(3e_t\otimes e_t-\sum_{\imath\in\{x,y,z\}} \vec e_\imath\otimes \vec e_\imath\right),\qquad \tilde\Pi_{\mathrm{id,asym}}=\tfrac14\left(e_t\otimes e_t+\sum_{\imath\in\{x,y,z\}} \vec e_\imath\otimes \vec e_\imath\right),$$
-  of traces $3$ and $1$; they are the $\pm1$ spectral projectors of the exchange operator $F=\tfrac12(e_t\otimes e_t-\sum_{\imath\in\{x,y,z\}} \vec e_\imath\otimes \vec e_\imath)$, and the total Casimir is $\tilde S_{\Psi}^2=\frac{h^{2}}{4\pi^{2}}\,(e_t\otimes e_t+F)=2\,\frac{h^{2}}{4\pi^{2}}\,\tilde\Pi_{\mathrm{id,sym}}$.
+  $$\tilde\Pi_{\mathrm{id,sym}}=\tfrac14\left(3e_t\otimes e_t-\sum_{\imath\in\{x,y,z\}} \vec e_{\imath}\otimes \vec e_{\imath}\right),\qquad \tilde\Pi_{\mathrm{id,asym}}=\tfrac14\left(e_t\otimes e_t+\sum_{\imath\in\{x,y,z\}} \vec e_{\imath}\otimes \vec e_{\imath}\right),$$
+  of traces $3$ and $1$; they are the $\pm1$ spectral projectors of the exchange operator $F=\tfrac12(e_t\otimes e_t-\sum_{\imath\in\{x,y,z\}} \vec e_{\imath}\otimes \vec e_{\imath})$, and the total Casimir is $\tilde S_{\Psi}^2=\frac{h^{2}}{4\pi^{2}}\,(e_t\otimes e_t+F)=2\,\frac{h^{2}}{4\pi^{2}}\,\tilde\Pi_{\mathrm{id,sym}}$.
 - **The coupling term.** $\sum_{\imath\in\{x,y,z\}}\tilde S_{\Psi,k}^{(1)}\tilde S_{\Psi,k}^{(2)}=\frac{h^{2}}{8\pi^{2}}F-\frac{h^{2}}{16\pi^{2}}e_t\otimes e_t$, whence $[F,\tilde S_{\Psi,k}]=0$: the exchange operator is central in the coupled rotation algebra, which is why it is simultaneously diagonal with the coupled Casimir.
 - **The transformation.** The Clebsch–Gordan transformation is the $*$-unitary element $U$ of $\mathbb{B}\otimes\mathbb{B}$ that diagonalises $\tilde S_{\Psi}^2$ and $\tilde S_{\Psi,3}$; it is not a product of one-factor unitaries, since it maps product states to entangled states.
 - **The triplet coupling.** For $1\otimes1$ the coupled states carry $s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)=6,2,0$; the quintet is totally symmetric, the singlet totally antisymmetric, and the triplet antisymmetric in the two vector factors.
@@ -441,13 +441,13 @@ The article established the following.
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$, cyclic products |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, cyclic products |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (observables, states) |
 | $\tilde S_{\Psi,\mathrm{tot},k}$ | Angular-momentum operators, $[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}]=i\,\frac{h}{2\pi}\,\epsilon_{\imath\jmath\ell}\,\tilde{S}_{\Psi,\mathrm{tot},k}$ |
 | $\tilde S_{\Psi,\mathrm{tot},\pm}=\tilde S_{\Psi,\mathrm{tot},1}\pm i\tilde S_{\Psi,\mathrm{tot},2}$ | Ladder operators |
 | $\tilde S_{\Psi,\mathrm{tot}}^2=\sum_{\imath\in\{x,y,z\}}\tilde S_{\Psi,\mathrm{tot},k}^2$ | Casimir |
-| $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_\imath$ | Spin-$\tfrac12$ operators in $\mathbb{B}_{\Psi}$ |
+| $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_{\imath}$ | Spin-$\tfrac12$ operators in $\mathbb{B}_{\Psi}$ |
 | $\tilde S_{\Psi,\pm}=\frac{h}{4\pi}(i\vec e_x\mp \vec e_y)$ | Spin ladder operators, $\tilde S_{\Psi,\pm}^2=0$ |
 | $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ | Two-factor algebra |
 | $\tilde S_{\Psi,1,k}=\tilde S_{\Psi,k}\otimes e_t,\ \tilde S_{\Psi,2,k}=e_t\otimes\tilde S_{\Psi,k}$ | Factor operators |
@@ -455,7 +455,7 @@ The article established the following.
 | $V_{s_{\mathrm{tot}}}$ | Rotation multiplet of spin $s_{\mathrm{tot}}$, highest weight $2s_{\mathrm{tot}}$, $\dim_{\mathbb{C}}V_{s_{\mathrm{tot}}}=2s_{\mathrm{tot}}+1$ |
 | $\langle s_1,s_{1z};s_2,s_{2z}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ | Clebsch–Gordan coefficient (Condon–Shortley phase) |
 | $\tilde\Pi_{\mathrm{id,sym}},\tilde\Pi_{\mathrm{id,asym}}$ | Coupled idempotents for $\tfrac12\otimes\tfrac12$ |
-| $F=\tfrac12(e_t\otimes e_t-\sum_{\imath\in\{x,y,z\}} \vec e_\imath\otimes \vec e_\imath)$ | Exchange operator, $F^2=e_t\otimes e_t$ |
+| $F=\tfrac12(e_t\otimes e_t-\sum_{\imath\in\{x,y,z\}} \vec e_{\imath}\otimes \vec e_{\imath})$ | Exchange operator, $F^2=e_t\otimes e_t$ |
 | $U$ | Clebsch–Gordan transformation matrix |
 
 ## Further Reading

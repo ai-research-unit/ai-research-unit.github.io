@@ -5,7 +5,7 @@
 
 This article presents the **two-component realization** of the complex algebra: a complex number read off as its pair of real coordinates. It is the smallest realization in the family. The word *representation* is used here in the sense of a concrete realization of the algebra by computable objects and not in the technical sense of an algebra acting on a vector space: the two-component reading supplies the coordinate space, the column and the row, the component form of the product with its rotation matrix on the unit circle, the conjugation in coordinates, the two distinguished subspaces and the norm; the operator so obtained is developed in *Complex Regular Element Representation*.
 
-The conventions are those of *Complex Algebra*: basis $1$, $i$ with $i^2 = -1$, a general element $Q = q + i q'$ with $q,q' \in \mathbb{R}$, involution $\bar Q = q - i q'$, norm $\langle Q\rangle_{*} = q^2+q'^2$. This article has two real coordinates and no complex coefficient field; the economy is the whole content of the two-dimensional case.
+The conventions are those of *Complex Algebra*: basis $1$, $i$ with $i^2 = -1$, a general element $Q = q + i q'$ with $q,q' \in \mathbb{R}$, involution $\bar Q = q - i q'$, norm $\langle Q\rangle_{*} = q^2+q'{}^2$. This article has two real coordinates and no complex coefficient field; the economy is the whole content of the two-dimensional case.
 
 ## The Coefficient Space
 
@@ -141,14 +141,14 @@ The two conditions partition the two real coordinates, so the decomposition $\ma
 **Definition.** The **norm** of a complex number is
 
 $$
-\langle Q\rangle_{*} = Q\bar Q = (Q_0)^2 + (Q_1)^2 = q^2 + q'^2 \in \mathbb{R}.
+\langle Q\rangle_{*} = Q\bar Q = (Q_0)^2 + (Q_1)^2 = q^2 + q'{}^2 \in \mathbb{R}.
 $$
 
 In two-component form the norm has **both signs positive**.
 
 **Proposition.** For every $Q$, $Q\bar Q = (Q_0)^2 + (Q_1)^2$.
 
-**Proof.** $(q+i q')(q-i q') = q^2 - (i q')^2 = q^2 + q'^2$.
+**Proof.** $(q+i q')(q-i q') = q^2 - (i q')^2 = q^2 + q'{}^2$.
 
 The norm is a positive-definite quadratic form on the coefficient space $\mathbb{R}^2$, of inertia $(2,0)$. There is no indefinite form on the coefficient space here, and no restriction can produce one, because there is no central scalar imaginary separate from the algebra.
 
@@ -163,7 +163,7 @@ $$
 and on the imaginary subspace, $Q = (0,q')$, it restricts to
 
 $$
-\langle Q\rangle_{*} = q'^2.
+\langle Q\rangle_{*} = q'{}^2.
 $$
 
 Both restrictions are **positive definite**, of inertia $(1,0)$, and the form is $(+,+)$ on the coordinate space. The two signs coincide and the two inertias agree: the opposite-sign pattern of an indefinite algebra does not occur, and the definiteness of the form is why the complex algebra has no zero divisors and no null cone.
@@ -172,10 +172,10 @@ Both restrictions are **positive definite**, of inertia $(1,0)$, and the form is
 
 **Theorem.** A complex number $Q = (q,q')$ is invertible if and only if $(q,q') \neq (0,0)$, equivalently if and only if $\langle Q\rangle_{*} \neq 0$, and then
 
-$$ \boxed{\;Q^{-1} = \frac{\bar Q}{\langle Q\rangle_{*}}, \qquad (Q^{-1})_\mu = \left( \frac{Q_0}{\langle Q\rangle_{*}}, \, -\frac{Q_1}{\langle Q\rangle_{*}} \right), \qquad \langle Q\rangle_{*} = q^2+q'^2 \;}.
+$$ \boxed{\;Q^{-1} = \frac{\bar Q}{\langle Q\rangle_{*}}, \qquad (Q^{-1})_\mu = \left( \frac{Q_0}{\langle Q\rangle_{*}}, \, -\frac{Q_1}{\langle Q\rangle_{*}} \right), \qquad \langle Q\rangle_{*} = q^2+q'{}^2 \;}.
 $$
 
-**Proof.** The criterion and the formula are those of *Complex Norm and Invertibility*; in coordinates the inverse of the pair $(q,q')$ is $(q,-q')/(q^2+q'^2)$.
+**Proof.** The criterion and the formula are those of *Complex Norm and Invertibility*; in coordinates the inverse of the pair $(q,q')$ is $(q,-q')/(q^2+q'{}^2)$.
 
 **Example.** For $Q = (3,4)$ the norm is $\langle Q\rangle_{*} = 9+16 = 25$, so $Q$ is invertible and $Q^{-1} = (3,-4)/25 = (0.12, -0.16)$. The product check $(3,4)(0.12,-0.16) = (0.36+0.64, -0.48+0.48) = (1,0) = 1$ is exact.
 
@@ -185,7 +185,7 @@ The two-component realization reads a complex number $Q = q+i q'$ as its pair of
 
 The product in components is $(q q_1-q' q'_1, q q'_1+q' q_1)$, the multiplication table of the basis being symmetric about the diagonal, and there is no antisymmetric term: its absence is the commutativity of the field. On the unit circle the component product is the rotation matrix $R_\theta = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$, and a general element has $\mathsf{M}_2(Q) = rR_\theta$, the scale times the rotation. The conjugation acts by $(q,q') \mapsto (q,-q')$, a reflection of the plane; its fixed subspace is the real axis $Q_1 = 0$ and its anti-fixed subspace the imaginary axis $Q_0 = 0$, each of real dimension one.
 
-The norm is $\langle Q\rangle_{*} = (Q_0)^2 + (Q_1)^2$, with both signs positive. Its restrictions to the two subspaces are $q^2$ and $q'^2$, both positive definite, so the form is definite. The invertibility criterion is $(q,q') \neq (0,0)$, and the inverse in coordinates is $(q,-q')/(q^2+q'^2)$.
+The norm is $\langle Q\rangle_{*} = (Q_0)^2 + (Q_1)^2$, with both signs positive. Its restrictions to the two subspaces are $q^2$ and $q'{}^2$, both positive definite, so the form is definite. The invertibility criterion is $(q,q') \neq (0,0)$, and the inverse in coordinates is $(q,-q')/(q^2+q'{}^2)$.
 
 ## Summary of Notation
 
@@ -201,7 +201,7 @@ The norm is $\langle Q\rangle_{*} = (Q_0)^2 + (Q_1)^2$, with both signs positive
 | $R_\theta = \mathsf{M}_2(u)$ | the rotation matrix of an invertible element $u = \cos\theta + i\sin\theta$ |
 | $\bar Q \leftrightarrow (q,-q')$ | conjugation in coordinates |
 | $\mathbb{R}_{\mathbb{C}}, i\mathbb{R}_{\mathbb{C}}$ | real axis $Q_1=0$ and imaginary axis $Q_0=0$ |
-| $\langle Q\rangle_{*} = (Q_0)^2+(Q_1)^2 = q^2+q'^2$ | the norm, inertia $(2,0)$ |
+| $\langle Q\rangle_{*} = (Q_0)^2+(Q_1)^2 = q^2+q'{}^2$ | the norm, inertia $(2,0)$ |
 | $Q^{-1} = (q,-q')/\langle Q\rangle_{*}$ | the inverse in coordinates |
 
 ## Further Reading

@@ -98,7 +98,7 @@ $$
 \frac{h\,c}{\lambda_m}=\frac{m\,c^{2}}{2\pi}=0.159\,m\,c^{2},
 $$
 
-one radian's worth and not the whole rest energy. The spread reaches $m\,c^{2}$ at $\Delta x=\lambda_m/(2\pi)$, one radian of the turn, and it reaches the pair threshold $2m\,c^{2}$ at $\Delta x=\lambda_m/(4\pi)$, half a radian. So the turn $\lambda_m=h/(m\,c)$ is the length at which the spread is a sixth of the rest energy, and the length at which the particle stops being one particle is $\lambda_m/(2\pi)$, which the corpus writes as the quotient it is and never as a length of its own. This is why the electron's $2.426\ \mathrm{pm}$ and its radian $386.16\ \mathrm{fm}$ are quoted side by side with their definitions: the two differ by $2\pi$, and only the second is a threshold.
+one radian's worth and not the whole rest energy. The spread reaches $m\,c^{2}$ at $\Delta x=\lambda_m/(2\pi)$, one radian of the turn, and it reaches the pair threshold $2m\,c^{2}$ at $\Delta x=\lambda_m/(4\pi)$, half a radian. So the turn $\lambda_m=h/(m\,c)$ is the length at which the spread is a sixth of the rest energy, and the length at which the particle stops being one particle is $\lambda_m/(2\pi)$, which the corpus writes as the quotient it is and never as a length of its own. This is why the electron's $2.426\times10^{-12}\ \mathrm{m}$ and its radian $3.8616\times10^{-13}\ \mathrm{m}$ are quoted side by side with their definitions: the two differ by $2\pi$, and only the second is a threshold.
 
 ## The Fraction
 
@@ -153,7 +153,7 @@ so the coupling and the fraction differ by $\sqrt2$ and by nothing else.
 |---|---|---|---|---|
 | a fermion | $n_i$ | $y_i/\sqrt2$ | $y_t/\sqrt2=0.7014$ | $0.70136$ |
 | $W$ | $n_W$ | $g/2$ | $0.3259$ | $0.32644$ |
-| $Z$ | $n_Z$ | $\sqrt{g^{2}+g'^{2}}/2$ | $0.3715$ | $0.37035$ |
+| $Z$ | $n_Z$ | $\sqrt{g^{2}+g'{}^{2}}/2$ | $0.3715$ | $0.37035$ |
 | Higgs boson | $n_H$ | $\sqrt{2\digamma_{\mathrm{qtc}}}$ | $0.5081$ | $0.50869$ |
 | proton | $n_p$ | none | — | $0.0038107$ |
 
@@ -223,7 +223,7 @@ Each is an arithmetic recomputation from the numbers above.
 9. **The electron's length fraction.** The reciprocal of $2.0754\times10^{-6}$ is $4.8184\times10^{5}$; times $\lambda_{\mathrm{vev}}$ it is $2.4263\times10^{-12}\ \mathrm{m}$.
 10. **The top's coupling.** $n_t=0.70136$, so $y_t=\sqrt2\times0.70136=0.991\,87$, a number below one, as a perturbative vertex must be.
 11. **Koide is unchanged.** In fractions the ratio is $0.666\,660\,5$; in MeV it is $0.666\,660\,5$. The anchor cancels, which is the statement that the relation is a statement about numbers.
-12. **The fraction is the coupling in three sectors, up to the running.** With the couplings at $M_Z$, $g/2=0.3259$ against $n_W=0.32644$, a gap of $0.13\%$; $\sqrt{g^{2}+g'^{2}}/2=0.3715$ against $n_Z=0.37035$, a gap of $0.32\%$; $\sqrt{2\digamma_{\mathrm{qtc}}}=\sqrt{0.2582}=0.5081$ against $n_H=0.50869$, a gap of $0.11\%$. With $g$ at $M_W$, $g/2=0.6529/2=0.32644$ and the $W$ row is exact, because the relation defines $g$ there. A gap of a part in a thousand across two scales is what a running coupling looks like, and it is not a defect of the identity.
+12. **The fraction is the coupling in three sectors, up to the running.** With the couplings at $M_Z$, $g/2=0.3259$ against $n_W=0.32644$, a gap of $0.13\%$; $\sqrt{g^{2}+g'{}^{2}}/2=0.3715$ against $n_Z=0.37035$, a gap of $0.32\%$; $\sqrt{2\digamma_{\mathrm{qtc}}}=\sqrt{0.2582}=0.5081$ against $n_H=0.50869$, a gap of $0.11\%$. With $g$ at $M_W$, $g/2=0.6529/2=0.32644$ and the $W$ row is exact, because the relation defines $g$ there. A gap of a part in a thousand across two scales is what a running coupling looks like, and it is not a defect of the identity.
 13. **The two tables are one table.** Every entry of §*The Fraction* multiplied by its anchor returns the value quoted in §*The Three Conversions* and in the corpus, in opposite directions; checks 8 and 9 are two instances, and the article quotes the same numbers twice on purpose.
 
 ## Summary

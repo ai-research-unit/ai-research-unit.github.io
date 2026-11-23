@@ -39,7 +39,7 @@ Every numerical value displayed below was recomputed in double precision.
 For a complex number $Q$ the norm is
 
 $$
-\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2,
+\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'{}^2,
 $$
 
 which is positive off the origin. The modulus is $\varrho = \sqrt{\langle Q\rangle_{*}}$, a positive real with no sign choice, and the unit factor is
@@ -330,7 +330,7 @@ In the matrix picture the decomposition is $M_Q = \varrho(I-sJ)(I+sJ)^{-1}$, the
 |---|---|
 | $\mathbb{C}$ | the complex algebra, basis $1$, $i$, $i^2 = -1$ |
 | $Q$ | a complex number outside the closed negative real axis |
-| $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ | the norm, positive definite |
+| $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'{}^2$ | the norm, positive definite |
 | $\varrho = \sqrt{\langle Q\rangle_{*}}$ | the modulus, a positive real |
 | $u$ | the unit factor, $\langle u\rangle_{*} = 1$ |
 | $s$ | the real chart parameter of the unit factor |

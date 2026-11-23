@@ -75,7 +75,7 @@ This article lists the special functions the corpus introduces. A special functi
 |---|---|---|
 | the incomplete elliptic integrals $F$, $E$, $\Pi$ | the integral forms, and the addition theorems of the elliptic theory | *Real Special Functions*; *Complex Special Functions* |
 | the Jacobi elliptic functions $\operatorname{sn}$, $\operatorname{cn}$, $\operatorname{dn}$ | the addition theorems and the double periodicity in the lattice | *Elliptic Functions and Integrals* (planned) |
-| the Weierstrass function $\wp$ | $\wp'^2 = 4\wp^3 - g_2\wp - g_3$; the associated elliptic curve | *Elliptic Functions and Integrals* (planned) |
+| the Weierstrass function $\wp$ | $\wp'{}^2 = 4\wp^3 - g_2\wp - g_3$; the associated elliptic curve | *Elliptic Functions and Integrals* (planned) |
 | the elliptic modular function $j$ | the modular invariance $j(\gamma\tau) = j(\tau)$ and the $j$-invariant of the curve | *Elliptic Functions and Integrals* (planned) |
 
 ## Boundary Cases

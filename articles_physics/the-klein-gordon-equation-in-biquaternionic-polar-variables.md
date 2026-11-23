@@ -57,7 +57,7 @@ Substituting this word into $\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\Xi_t=0$ an
 
 The sections follow that order: the field and its word, the equation in polar variables, the momentum and the current, the non-relativistic limit, the general field, and what the word does and does not add.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces. The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial R_\imath$, and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {\varrho^{\prime}_t}^2$, with $\partial^{2}/\partial R_t^{2}=-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector, so that on that sector $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ in one length unit. The four-position is $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-wavevector is $\tilde\Upsilon_{\Phi}=\frac{\tilde P_{\Phi}}{h}$, and the mass wave number is $\nu_m=\frac{mc}{h}$. The amplitude–phase decomposition and the quantum potential are those of *The Non-Quantum Limit of the Free Schrödinger Equation*, and the phase gradient as the four-momentum is that of *Relativistic Mechanics from the Dirac Wave*. Every symbol is defined where it first appears, and §*Summary of Notation* collects the letters with their domains.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces. The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial R_{\imath}$, and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {\varrho^{\prime}_t}^2$, with $\partial^{2}/\partial R_t^{2}=-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector, so that on that sector $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ in one length unit. The four-position is $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-wavevector is $\tilde\Upsilon_{\Phi}=\frac{\tilde P_{\Phi}}{h}$, and the mass wave number is $\nu_m=\frac{mc}{h}$. The amplitude–phase decomposition and the quantum potential are those of *The Non-Quantum Limit of the Free Schrödinger Equation*, and the phase gradient as the four-momentum is that of *Relativistic Mechanics from the Dirac Wave*. Every symbol is defined where it first appears, and §*Summary of Notation* collects the letters with their domains.
 
 ## The Field and Its Word
 
@@ -178,11 +178,11 @@ For a plane wave the equation is satisfied identically, since the amplitude is c
 
 ### The phase gradient is the four-momentum
 
-The biquaternionic gradient of the action is the four-momentum. Since $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\imath=\partial/\partial r_\imath$ on the material sector,
+The biquaternionic gradient of the action is the four-momentum. Since $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_{\imath}=\partial/\partial r_{\imath}$ on the material sector,
 
 $$
 \tilde\nabla_\Phi S_{\tilde\Xi}
-=e_t\,\frac{\partial S_{\tilde\Xi}}{\partial R_t}+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\frac{\partial S_{\tilde\Xi}}{\partial R_\imath}
+=e_t\,\frac{\partial S_{\tilde\Xi}}{\partial R_t}+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\frac{\partial S_{\tilde\Xi}}{\partial R_{\imath}}
 =-i\frac{\partial S_{\tilde\Xi}}{\partial r'_t}e_t+\vec\nabla_\Phi S_{\tilde\Xi}
 =i\frac{E}{c}e_t+\vec p
 =\tilde P_{\Phi}.
@@ -396,18 +396,18 @@ so a general polarization enters the density through one positive number and not
 
 ### The charge density adds up, and the spatial current has two readings
 
-One sum is exact, and the answer is not the obvious one. With $\tilde\Xi^{*}=\Xi_t^{*}e_t-\Xi_x^{*}\vec e_x-\Xi_y^{*}\vec e_y-\Xi_z^{*}\vec e_z$ and $\vec e_\imath\vec e_\imath=-e_t$, the two sign changes cancel in the scalar part, and
+One sum is exact, and the answer is not the obvious one. With $\tilde\Xi^{*}=\Xi_t^{*}e_t-\Xi_x^{*}\vec e_x-\Xi_y^{*}\vec e_y-\Xi_z^{*}\vec e_z$ and $\vec e_{\imath}\vec e_{\imath}=-e_t$, the two sign changes cancel in the scalar part, and
 
 $$
 \mathrm{Sc}\!\left(\tilde\Xi^{*}\frac{\partial\tilde\Xi}{\partial r'_t}-\tilde\Xi\,\frac{\partial\tilde\Xi^{*}}{\partial r'_t}\right)
 =\sum_{\imath}\left(\Xi_{\imath}^{*}\frac{\partial\Xi_{\imath}}{\partial r'_t}-\Xi_{\imath}\frac{\partial\Xi_{\imath}^{*}}{\partial r'_t}\right).
 $$
 
-So the companion's charge density, extended to a general field, is the sum of the four component densities with the same sign for all four: a vector coefficient contributes to $\rho_{\mathrm{chg}}$ exactly as a scalar one does. The natural guess is the opposite, that a spatial coefficient enters with a minus, and it is wrong. The reason is algebraic: the Hermitian conjugate flips the sign of the three vector coefficients, and $\vec e_\imath^{2}=-e_t$ flips it back.
+So the companion's charge density, extended to a general field, is the sum of the four component densities with the same sign for all four: a vector coefficient contributes to $\rho_{\mathrm{chg}}$ exactly as a scalar one does. The natural guess is the opposite, that a spatial coefficient enters with a minus, and it is wrong. The reason is algebraic: the Hermitian conjugate flips the sign of the three vector coefficients, and $\vec e_{\imath}^{2}=-e_t$ flips it back.
 
 The extension is a reading and not a quotation. The companion defines the current for $\tilde\Xi=\Xi_t e_t\in\mathbb{B}_{C}$ and for nothing else, so the display above is the same bilinear read on a larger domain. What it shows is that the additivity of the temporal slot belongs to the bilinear and not to the central restriction, and the mechanism of §*The two defects, and one mechanism* therefore survives without the centre: the sign of the charge is the sign of the energy for each coefficient separately. Two coefficients on opposite branches carry opposite charge, so a field with $\Xi_t$ on the positive branch and $\Xi_x$ on the negative one has a density that can vanish identically without either coefficient vanishing. The vanishing of the density is then not the vanishing of the field, and it is not even a nodal condition.
 
-**The spatial current adds up the same way.** With $\vec e_\imath^{*}=-\vec e_\imath$ and $\vec e_\imath^{2}=-e_t$, every diagonal term $\Xi_{\imath}^{*}\partial_\imath\Xi_{\imath}\,\vec e_{\imath}^{*}\vec e_{\imath}$ lands in the scalar slot with a plus, whatever $\mu$ is, and every off-diagonal term $\vec e_{\imath}^{*}\vec e_{\jmath}$ with ${\imath}\neq\jmath$ is a spatial unit and contributes nothing there. Direction by direction, the companion's $\vec j$ is therefore additive as well,
+**The spatial current adds up the same way.** With $\vec e_{\imath}^{*}=-\vec e_{\imath}$ and $\vec e_{\imath}^{2}=-e_t$, every diagonal term $\Xi_{\imath}^{*}\partial_{\imath}\Xi_{\imath}\,\vec e_{\imath}^{*}\vec e_{\imath}$ lands in the scalar slot with a plus, whatever $\mu$ is, and every off-diagonal term $\vec e_{\imath}^{*}\vec e_{\jmath}$ with ${\imath}\neq\jmath$ is a spatial unit and contributes nothing there. Direction by direction, the companion's $\vec j$ is therefore additive as well,
 
 $$
 \vec j=\sum_{\imath}\frac{\rho_{\imath}}{m}\vec\nabla_\Phi S_{\imath},
@@ -425,7 +425,7 @@ $$
 +\Bigl[\bar\Xi_t\frac{\partial\Xi_x}{\partial r_x}-\bar\Xi_x\frac{\partial\Xi_t}{\partial r_x}\Bigr]\vec e_x .
 $$
 
-The scalar slot is the additive piece. The $\vec e_x$ slot is $2i\,\mathrm{Im}(\bar\Xi_t\,\partial_{r_x}\Xi_x)$, an interference term between the two coefficients: it vanishes when they share a phase, and it contains no term of the form $\lvert\Xi_{\imath}\rvert^{2}\partial_\imath S_{\imath}$. The vector slot measures interference and not flow.
+The scalar slot is the additive piece. The $\vec e_x$ slot is $2i\,\mathrm{Im}(\bar\Xi_t\,\partial_{r_x}\Xi_x)$, an interference term between the two coefficients: it vanishes when they share a phase, and it contains no term of the form $\lvert\Xi_{\imath}\rvert^{2}\partial_{\imath} S_{\imath}$. The vector slot measures interference and not flow.
 
 **Which reading is the current is not decided here.** The companion's $\vec j$ is the scalar-slot coefficient of the product taken one direction at a time, which is what "for a complex scalar field" licenses and what its plane-wave value requires. The additive reading is the one that extends, and the vector-slot reading is the one that the sector membership of $\tilde J_{\Phi}$ demands; on a central field the two coincide in the temporal slot and the vector slots are empty either way. The algebra does not pick between them and the wave equation does not either, since it constrains the coefficients separately and imposes no relation that would make one reading the conserved one. §*Open Questions* records the choice as open.
 
@@ -497,9 +497,9 @@ The algebra's polar word degenerates on a central field: the scale is the amplit
 | $i$ | Central scalar imaginary, $i^{2}=-e_t$ |
 | $\mathbb{B}_{C}$ | Centre, $\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$; the scalar's home |
 | $\mathbb{B}_{\Phi},\ \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
-| $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial R_\imath$ | Biquaternionic gradient |
+| $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial R_{\imath}$ | Biquaternionic gradient |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ | d'Alembertian on the material sector |
-| $r'_t=c\,t'$ | Material time, a length in the same unit as $r_\imath$ |
+| $r'_t=c\,t'$ | Material time, a length in the same unit as $r_{\imath}$ |
 | $R_t=h_t+i r'_t$ | Complex time; $h_t$ informational, $r'_t$ material |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position |
 | $\tilde\Xi=\Xi_t e_t+\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z$ | The biquaternion Klein–Gordon field, four complex coefficients |

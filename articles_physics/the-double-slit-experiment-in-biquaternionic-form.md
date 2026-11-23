@@ -4,6 +4,8 @@
 
 The double-slit experiment is the minimal experiment in which a quantum amplitude is the **sum of two alternatives**. A particle reaches a screen point by either slit, the two routes contribute two amplitudes, and the intensity at the screen is the squared modulus of their sum. The cross term is the interference pattern; closing one slit removes it. Everything that is strange and everything that is ordinary about quantum amplitudes is visible in this one arrangement.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 This article asks what the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ says about the double slit, and what it does not. The read list has already settled the three objects the question depends on. *The Path Integral in Biquaternionic Form* identifies the symbol $i$ of the phase $\exp(i\theta_{\mathrm{act}})$ with the **central scalar imaginary**, places the exponent $\frac{2\pi i\,S}{h}$ in the material sector $\mathbb{B}_{\Phi}$, and records that only *relative* phases of paths are observable. *The Schrödinger Equation in Biquaternionic Form* identifies the wave function not with an element of $\mathbb{B}_{\Psi}$ but with a **spinor in a Peirce carrier**, a minimal left ideal here, $\mathbb{B}\tilde\Pi_{\mathrm{id}} \cong \mathbb{C}^2$, and shows that the same central $i$ is the complex structure of that module. *Quantum Physics in Biquaternionic Form* supplies the states, observables, Born rule, and measurement rule for the corresponding qubit. Two further articles of the series carry the geometry the double slit turns out to use: *The Bloch Ball as the Normalised Slice of the Future Light Cone* identifies the state space with a slice of the biquaternion-norm cone, and *Decoherence as Idempotent Projection* describes the destruction of coherence as an algebraic channel. This article assembles these into the canonical interference experiment.
 
 Throughout this article $\theta_{\mathrm{act}}:=\frac{2\pi \mathrm{Re}\,S}{h}$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\frac{2\pi \mathrm{Im}\,S}{h}$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
@@ -65,7 +67,7 @@ $$
 I(x) = 4a^2\cos^2\!\Big(\frac{\delta(x)}{2}\Big) = 2a^2\bigl(1 + \cos\delta(x)\bigr).
 $$
 
-Maxima occur where $d\sin\theta = m\lambda$ and nodes where $d\sin\theta = (m + \tfrac12)\lambda$, with $m \in \mathbb{Z}$; the fringe spacing on the screen is $\lambda D/d$. For $\lambda = 600\,\mathrm{nm}$, $d = 0.1\,\mathrm{mm}$, $D = 1\,\mathrm{m}$, the spacing is $6\,\mathrm{mm}$ and the first node sits at $3\,\mathrm{mm}$.
+Maxima occur where $d\sin\theta = m\lambda$ and nodes where $d\sin\theta = (m + \tfrac12)\lambda$, with $m \in \mathbb{Z}$; the fringe spacing on the screen is $\lambda D/d$. For $\lambda = 6.00\times10^{-7}\,\mathrm{m}$, $d = 1\times10^{-4}\,\mathrm{m}$, $D = 1\,\mathrm{m}$, the spacing is $6\times10^{-3}\,\mathrm{m}$ and the first node sits at $3\times10^{-3}\,\mathrm{m}$.
 
 Two remarks keep this section honest.
 
@@ -191,7 +193,7 @@ $$
 \exp(\frac{2\pi \vec u\,S}{h}) = \cos\!\Big(\frac{2\pi S}{h}\Big)e_t + \sin\!\Big(\frac{2\pi S}{h}\Big)\vec{u},
 $$
 
-which is $*$-unitary, $(\exp(\frac{2\pi \vec u\,S}{h}))(\exp(\frac{2\pi \vec u\,S}{h}))^\dagger = e_t$, and whose exponent $\frac{2\pi \vec u\,S}{h}$ also lies in $\mathbb{B}_{\Phi}$. Under the isomorphism $\vec e_\imath \mapsto -i\sigma_\imath$ with $\vec{u} = \vec e_z$ it maps to
+which is $*$-unitary, $(\exp(\frac{2\pi \vec u\,S}{h}))(\exp(\frac{2\pi \vec u\,S}{h}))^\dagger = e_t$, and whose exponent $\frac{2\pi \vec u\,S}{h}$ also lies in $\mathbb{B}_{\Phi}$. Under the isomorphism $\vec e_{\imath} \mapsto -i\sigma_{\imath}$ with $\vec{u} = \vec e_z$ it maps to
 
 $$
 \exp(\frac{2\pi \vec e_{z}\,S}{h}) \;\longmapsto\; \operatorname{diag}\!\bigl(\exp(-i\theta_{\mathrm{act}}),\, \exp(+i\theta_{\mathrm{act}})\bigr),
@@ -205,7 +207,7 @@ $$
 2\,\mathrm{Sc}\!\bigl((\tilde Q_{\mathrm{amp}}s)^\dagger(\tilde Q_{\mathrm{amp}}s)\bigr) = 2\,\mathrm{Sc}\bigl(s^\dagger \tilde Q_{\mathrm{amp}}^{\natural}\tilde Q_{\mathrm{amp}}s\bigr) = \langle\tilde Q_{\mathrm{amp}}\rangle_{\natural}\,2\,\mathrm{Sc}(s^\dagger s) = \bigl(a_1^2 + a_2^2 + 2a_1a_2\cos\delta\bigr),
 $$
 
-because $\tilde Q_{\mathrm{amp}}^{\natural}\tilde Q_{\mathrm{amp}} = \langle\tilde Q_{\mathrm{amp}}\rangle_{\natural}e_t$ is central and $\langle\tilde Q_{\mathrm{amp}}\rangle_{\natural} = \langle\tilde Q_{\mathrm{amp}},\tilde Q_{\mathrm{amp}}\rangle_{\natural} = \bigl(\sum_\imath a_\imath\cos\theta_{\mathrm{pha},k}\bigr)^2 + \bigl(\sum_\imath a_\imath\sin\theta_{\mathrm{pha},k}\bigr)^2 = |a_1 \exp(i\theta_{\mathrm{pha},1}) + a_2 \exp(i\theta_{\mathrm{pha},2})|^2$. This is *exactly* the central-phase intensity. The identity was checked numerically on random amplitudes and random spinors: the central and non-central intensities agreed to about $4\times10^{-14}$, the level of floating-point round-off.
+because $\tilde Q_{\mathrm{amp}}^{\natural}\tilde Q_{\mathrm{amp}} = \langle\tilde Q_{\mathrm{amp}}\rangle_{\natural}e_t$ is central and $\langle\tilde Q_{\mathrm{amp}}\rangle_{\natural} = \langle\tilde Q_{\mathrm{amp}},\tilde Q_{\mathrm{amp}}\rangle_{\natural} = \bigl(\sum_{\imath} a_{\imath}\cos\theta_{\mathrm{pha},k}\bigr)^2 + \bigl(\sum_{\imath} a_{\imath}\sin\theta_{\mathrm{pha},k}\bigr)^2 = |a_1 \exp(i\theta_{\mathrm{pha},1}) + a_2 \exp(i\theta_{\mathrm{pha},2})|^2$. This is *exactly* the central-phase intensity. The identity was checked numerically on random amplitudes and random spinors: the central and non-central intensities agreed to about $4\times10^{-14}$, the level of floating-point round-off.
 
 So the *spin-summed* two-slit intensity, for a common spin state, is **root-independent**; the double slit, read as an intensity pattern without spin analysis, does not by itself witness the centrality of the phase. What the non-central choice changes is not this number but the *type* of the amplitude and the *action* of the phase:
 
@@ -310,7 +312,7 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Scalar imaginary, central, $i^2 = -e_t$ |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre; home of the path phase |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |

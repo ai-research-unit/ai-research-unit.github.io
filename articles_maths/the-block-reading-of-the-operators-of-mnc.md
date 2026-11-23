@@ -14,7 +14,7 @@ of dimensions $k^2,k(n-k),(n-k)k,(n-k)^2$; a one-sided operator preserves the co
 
 **Boundaries.** The Peirce decomposition of the algebra is *The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$*; the chirality split is *Operator Chirality on $M_n(\mathbb{C})$*; the four sectors of the biquaternion algebra are *The Operators on the Four Sectors of $M_n(\mathbb{C})$*.
 
-**Conventions.** $E$ is a projection of rank $k$, $F=\mathrm I-E$, and a matrix $X$ is written as the block matrix $\begin{pmatrix}X_{11}&X_{12}\X_{21}&X_{22}\end{pmatrix}$ with $X_{11}=EXE$, $X_{12}=EXF$, $X_{21}=FXE$, $X_{22}=FXF$.
+**Conventions.** $E$ is a projection of rank $k$, $F=\mathrm I-E$, and a matrix $X$ is written as the block matrix $\begin{pmatrix}X_{11}&X_{12}\\X_{21}&X_{22}\end{pmatrix}$ with $X_{11}=EXE$, $X_{12}=EXF$, $X_{21}=FXE$, $X_{22}=FXF$.
 
 ## The Four Corners
 
@@ -36,9 +36,9 @@ So the corners are the Peirce spaces of the two-idempotent decomposition, and th
 
 *Proof.* $A(EXF)=AXF$, which ends on the right with $F$; a general $A$ sends $EXF$ into $M_nF=C_{12}+C_{22}$. $\square$
 
-**In blocks.** With $A=\begin{pmatrix}A_{11}&A_{12}\A_{21}&A_{22}\end{pmatrix}$,
+**In blocks.** With $A=\begin{pmatrix}A_{11}&A_{12}\\A_{21}&A_{22}\end{pmatrix}$,
 $$
-L_A\begin{pmatrix}X_{11}&X_{12}\X_{21}&X_{22}\end{pmatrix}
+L_A\begin{pmatrix}X_{11}&X_{12}\\X_{21}&X_{22}\end{pmatrix}
 =\begin{pmatrix}A_{11}X_{11}+A_{12}X_{21}&A_{11}X_{12}+A_{12}X_{22}\\ A_{21}X_{11}+A_{22}X_{21}&A_{21}X_{12}+A_{22}X_{22}\end{pmatrix}.
 $$
 The right index of $X$ is untouched; the left index is mixed.

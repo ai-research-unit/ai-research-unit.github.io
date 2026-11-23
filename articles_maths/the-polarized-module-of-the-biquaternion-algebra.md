@@ -157,8 +157,8 @@ Therefore left multiplication by $\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil}
 **The action on coordinates.** Under the basis change of *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*,
 
 $$
-\vec\Pi_{\mathrm{nil}}'_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
-\vec\Pi_{\mathrm{nil}}'_{-+}=t\vec\Pi_{\mathrm{nil},-+},\qquad t\in\mathbb{C}^{\times},
+\vec\Pi_{\mathrm{nil}}'{}_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
+\vec\Pi_{\mathrm{nil}}'{}_{-+}=t\vec\Pi_{\mathrm{nil},-+},\qquad t\in\mathbb{C}^{\times},
 $$
 
 the coordinates transform by

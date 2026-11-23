@@ -17,7 +17,7 @@ The product is *The Two Products of the Split-Complex Space*; the roots are *Squ
 On the coordinates $Q=q+jq'$ the map is
 
 $$
-\sigma(q,q')=\bigl(q^2+q'^2,\ 2qq'\bigr) ,
+\sigma(q,q')=\bigl(q^2+q'{}^2,\ 2qq'\bigr) ,
 $$
 
 a polynomial map of $\mathbb{R}^2$ into itself, of degree two in each coordinate.
@@ -88,10 +88,10 @@ in the basis $1,j$: a multiplication in the split-complex algebra, with equal di
 **Proposition.** The Jacobian determinant is
 
 $$
-J_\sigma(Q)=\det\bigl(2Q\cdot\bigr)=4(q^2-q'^2)=4N(Q) .
+J_\sigma(Q)=\det\bigl(2Q\cdot\bigr)=4(q^2-q'{}^2)=4N(Q) .
 $$
 
-**Proof.** The determinant of the displayed matrix is $4q^2-4q'^2$. It is also the product of the two eigenvalues $2Q_+$ and $2Q_-$ of the multiplication, that is $4Q_+Q_-=4N(Q)$.
+**Proof.** The determinant of the displayed matrix is $4q^2-4q'{}^2$. It is also the product of the two eigenvalues $2Q_+$ and $2Q_-$ of the multiplication, that is $4Q_+Q_-=4N(Q)$.
 
 The Jacobian is the split norm up to the factor four, so it is positive inside the double cone, negative outside it, and zero exactly on the pair of null lines.
 
@@ -176,7 +176,7 @@ The complex image is the whole plane, so it has no outside; the split image is a
 
 ## Summary
 
-The square map of the split-complex space has the image the forward cone $q\ge\lvert q'\rvert$, and it is not onto: $-1$ is not a square, and no element outside the cone is. Its differential at $Q$ is the multiplication by $2Q$, of Jacobian determinant $4(q^2-q'^2)=4N(Q)$, so the critical set is the pair of null lines and the map is a local diffeomorphism everywhere else.
+The square map of the split-complex space has the image the forward cone $q\ge\lvert q'\rvert$, and it is not onto: $-1$ is not a square, and no element outside the cone is. Its differential at $Q$ is the multiplication by $2Q$, of Jacobian determinant $4(q^2-q'{}^2)=4N(Q)$, so the critical set is the pair of null lines and the map is a local diffeomorphism everywhere else.
 
 The fibres have four points on the interior of the cone, two on its boundary minus the origin, one at the origin and none outside; the four preimages of an interior value fall into the two sheets $N(\Xi)>0$ and $N(\Xi)<0$, each mapped two-to-one onto the interior, and the two sheets meet on the null lines, which are the branch locus. The four branches are the four roots, global on the interior because that region is simply connected.
 
@@ -187,11 +187,11 @@ Over $\mathbb{C}$ the square is onto and its only critical point is the origin; 
 | Symbol | Meaning |
 |---|---|
 | $\sigma(Q)=Q^2$ | The square map |
-| $\sigma(q,q')=(q^2+q'^2,2qq')$ | The square map on the coordinates |
+| $\sigma(q,q')=(q^2+q'{}^2,2qq')$ | The square map on the coordinates |
 | $\sigma(Q)_\pm=Q_\pm^2$ | The square map in idempotent coordinates |
 | $\mathcal{C}_+=\{q\ge\lvert q'\rvert\}$ | The forward cone, the image |
 | $D\sigma(Q)=2Q\cdot$ | The differential, the multiplication by $2Q$ |
-| $J_\sigma(Q)=4(q^2-q'^2)=4N(Q)$ | The Jacobian determinant |
+| $J_\sigma(Q)=4(q^2-q'{}^2)=4N(Q)$ | The Jacobian determinant |
 | $\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$ | The critical set and the branch locus of the image |
 | $\Xi_{\epsilon_+\epsilon_-}$ | The four inverse branches |
 

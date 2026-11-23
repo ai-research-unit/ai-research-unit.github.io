@@ -43,7 +43,7 @@ $$
 
 **Proposition (the carrying elements).** Two elements $a,a'$ carry the same reflection if and only if $a'=az$ for some $z\in Z(G)$; the reflections are therefore the cosets $aZ(G)$ of those elements for which $a\alpha(a)$ is central, and the reflection attached to $a$ depends only on this coset.
 
-**Proof.** $\rho_a=\rho_{a'}$ if and only if $a\alpha(x)a^{-1}=a'\alpha(x)a'^{-1}$ for every $x$, that is $(a'^{-1}a)\alpha(x)=\alpha(x)(a'^{-1}a)$ for every $x$; since $\alpha$ is surjective this says $a'^{-1}a$ commutes with every element of $G$, so $a'^{-1}a\in Z(G)$.
+**Proof.** $\rho_a=\rho_{a'}$ if and only if $a\alpha(x)a^{-1}=a'\alpha(x)a'{}^{-1}$ for every $x$, that is $(a'{}^{-1}a)\alpha(x)=\alpha(x)(a'{}^{-1}a)$ for every $x$; since $\alpha$ is surjective this says $a'{}^{-1}a$ commutes with every element of $G$, so $a'{}^{-1}a\in Z(G)$.
 
 **Proposition (the elements inverted by the grade involution).** Let $I(\alpha)=\{a\in G : \alpha(a)=a^{-1}\}$ be the inverted set of $\alpha$, equivalently the fixed set $G^{\sigma}$ of the associated involution $\sigma=\iota\alpha$. Then $I(\alpha)$ is a subgroup of $G$, and for every $a\in I(\alpha)$ one has $a\alpha(a)=e$, so the signed conjugation $\rho_a$ is automatically an involution and its square is $\mathrm{id}$.
 

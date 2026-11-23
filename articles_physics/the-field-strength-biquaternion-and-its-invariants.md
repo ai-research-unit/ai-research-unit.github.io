@@ -14,7 +14,7 @@ Two features make the field strength worth treating separately. First, $\tilde{F
 
 This article is the declared foundation for three later articles on electromagnetism in media, on the Lorentz force, and on radiation from accelerated charges. It therefore fixes the field-strength notation once and for all. The **canonical objects** are: the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$; the electric and magnetic fields $\vec E$ and $\vec H$, together with the magnetic induction $\vec B = \mu\vec H$; the medium speed of light $c = 1/\sqrt{\epsilon\mu}$; the Riemann–Silberstein vector $\vec N = \vec E + ic\vec B$; the two invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$; and the energy density $W$ and Poynting vector $\vec S$. Nothing in this list is new notation; the first three come unchanged from the Maxwell article, and the rest are assembled from them.
 
-The conventions are those of the read-list articles throughout: the algebra, the units, the conjugations and the product form are those of *Algebra and Element Conventions*, *Physics Units and Common Elements Conventions* and *Product and Form Conventions*; the gradient, the d'Alembertian and the derivative marks are those of *Operator and Calculus Conventions*; and none of them is restated here. The three-dimensional complex **vector part** of $\mathbb{B}$ is denoted by its components $\vec F=\sum_{\imath\in\{x,y,z\}} F_\imath \vec e_\imath$. The symbol $c$ always denotes the **speed of light in the medium**, $c=1/\sqrt{\epsilon\mu}$; in vacuum it reduces to $c_0=1/\sqrt{\epsilon_0\mu_0}$.
+The conventions are those of the read-list articles throughout: the algebra, the units, the conjugations and the product form are those of *Algebra and Element Conventions*, *Physics Units and Common Elements Conventions* and *Product and Form Conventions*; the gradient, the d'Alembertian and the derivative marks are those of *Operator and Calculus Conventions*; and none of them is restated here. The three-dimensional complex **vector part** of $\mathbb{B}$ is denoted by its components $\vec F=\sum_{\imath\in\{x,y,z\}} F_{\imath} \vec e_{\imath}$. The symbol $c$ always denotes the **speed of light in the medium**, $c=1/\sqrt{\epsilon\mu}$; in vacuum it reduces to $c_0=1/\sqrt{\epsilon_0\mu_0}$.
 
 ## The Field-Strength Biquaternion
 
@@ -22,9 +22,9 @@ The definition is the one of the Maxwell article, repeated here because everythi
 
 $$
 \tilde{F} = \vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H
-= \sum_{\imath\in\{x,y,z\}} F_\imath\, \vec e_\imath,
+= \sum_{\imath\in\{x,y,z\}} F_{\imath}\, \vec e_{\imath},
 \qquad
-F_\imath = i\sqrt{\epsilon}\,E_\imath - \sqrt{\mu}\,H_\imath .
+F_{\imath} = i\sqrt{\epsilon}\,E_{\imath} - \sqrt{\mu}\,H_{\imath} .
 $$
 
 Its scalar part vanishes identically,
@@ -33,7 +33,7 @@ $$
 \mathrm{Sc}(\tilde{F}) = 0,
 $$
 
-so $\tilde{F}$ is a **pure-vector** biquaternion. Its three complex components $F_\imath$ each combine an electric and a magnetic piece: the electric contribution $i\sqrt{\epsilon}\,E_\imath$ is **purely imaginary** and the magnetic contribution $-\sqrt{\mu}\,H_\imath$ is **real**. The factor of $i$ on the electric part is the same factor that appears in the complex time coordinate $i r'_t$. In the $i r'_t$ convention the time direction is the imaginary direction, and the electric field carries the time index of the field tensor, so it is the electric part that acquires the factor $i$ while the magnetic part remains real. This is the algebraic reason for the asymmetric appearance of $\tilde{F}$.
+so $\tilde{F}$ is a **pure-vector** biquaternion. Its three complex components $F_{\imath}$ each combine an electric and a magnetic piece: the electric contribution $i\sqrt{\epsilon}\,E_{\imath}$ is **purely imaginary** and the magnetic contribution $-\sqrt{\mu}\,H_{\imath}$ is **real**. The factor of $i$ on the electric part is the same factor that appears in the complex time coordinate $i r'_t$. In the $i r'_t$ convention the time direction is the imaginary direction, and the electric field carries the time index of the field tensor, so it is the electric part that acquires the factor $i$ while the magnetic part remains real. This is the algebraic reason for the asymmetric appearance of $\tilde{F}$.
 
 The normalization factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural ones for a medium. Each term has the dimension of the square root of an energy density, since $\epsilon E^2$ and $\mu H^2$ are both energy densities; consequently $\tilde{F}$ has dimension $\sqrt{\text{energy density}}$, and the biquaternion norm calculated below has the dimension of an energy density. With the constitutive relation $\vec B = \mu\vec H$ the magnetic term may also be written $\sqrt{\mu}\,\vec H = \vec B/\sqrt{\mu}$, so the field strength can equally be regarded as the pair $(\sqrt{\epsilon}\,\vec E, \vec B/\sqrt{\mu})$.
 
@@ -50,12 +50,12 @@ In tensor language the same object is the antisymmetric rank-two tensor
 $$
 F_{\imath\jmath} = \frac{\partial A_{\jmath}}{\partial R_{\imath}} - \frac{\partial A_{\imath}}{\partial R_{\jmath}},
 \qquad
-F_{0k} = \frac{iE_\imath}{c},
+F_{0k} = \frac{iE_{\imath}}{c},
 \qquad
 F_{j\imath} = \epsilon_{j\imath l}B_l .
 $$
 
-It has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_\imath$ of the pure-vector biquaternion. The six components are the six planes of the next section, each a product of two units: the three $F_{0k}$ sit on the planes that contain the time direction and the three $F_{j\imath}$ on the purely spatial planes. The identification is exact, with one constant: $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=\sqrt{\mu}\,\tilde{F}$ identically. Indeed, $\partial/\partial R_t=-i\,\partial/\partial r'_t$ with $A_0=+i\,a'_t$ and $a'_t=\xi/c$, and with $\vec E=-\vec\nabla_\Phi\xi-c\,\partial\vec A/\partial r'_t$ because $r'_t$ is a length, give $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=\frac{i}{c}\vec E-\vec B$, and $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$. The component formulas above and the combination $F_\imath = i\sqrt{\epsilon}E_\imath - \sqrt{\mu}H_\imath$ are then the same statement read component by component.
+It has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_{\imath}$ of the pure-vector biquaternion. The six components are the six planes of the next section, each a product of two units: the three $F_{0k}$ sit on the planes that contain the time direction and the three $F_{j\imath}$ on the purely spatial planes. The identification is exact, with one constant: $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=\sqrt{\mu}\,\tilde{F}$ identically. Indeed, $\partial/\partial R_t=-i\,\partial/\partial r'_t$ with $A_0=+i\,a'_t$ and $a'_t=\xi/c$, and with $\vec E=-\vec\nabla_\Phi\xi-c\,\partial\vec A/\partial r'_t$ because $r'_t$ is a length, give $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=\frac{i}{c}\vec E-\vec B$, and $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$. The component formulas above and the combination $F_{\imath} = i\sqrt{\epsilon}E_{\imath} - \sqrt{\mu}H_{\imath}$ are then the same statement read component by component.
 
 ## The Place of the Field Strength in the Algebra
 
@@ -107,15 +107,15 @@ $$
 
 The scalar subspace $\mathbb{B}_{C}$ receives no contribution, which is again $\mathrm{Sc}(\tilde{F}) = 0$. The decomposition used is $\mathbb{B} = \mathbb{B}_{H} \oplus \mathbb{B}_{iH}$. Thus the field strength uses the vector parts of $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$, and the electric and magnetic halves of $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, and it touches $\mathbb{B}_{C}$ not at all.
 
-**The biparavector interpretation: the field as two families of planes.** The two halves just separated are not merely subspaces; each is a **family of planes**. The separation of the field into an electric and a magnetic part is the separation of the biparavector into a timelike and a spacelike part. In the paravector presentation of the algebra (*Paravectors and the Geometry of Spacetime*), a **biparavector** is the product of two orthogonal paravectors and represents a plane in spacetime. With the paravector directions $i\vec e_\imath$ there are six independent planes,
+**The biparavector interpretation: the field as two families of planes.** The two halves just separated are not merely subspaces; each is a **family of planes**. The separation of the field into an electric and a magnetic part is the separation of the biparavector into a timelike and a spacelike part. In the paravector presentation of the algebra (*Paravectors and the Geometry of Spacetime*), a **biparavector** is the product of two orthogonal paravectors and represents a plane in spacetime. With the paravector directions $i\vec e_{\imath}$ there are six independent planes,
 
 $$
-\{e_t\,i\vec e_\imath\}_{\imath=x,y,z}=\{i\vec e_x,i\vec e_y,i\vec e_z\},
+\{e_t\,i\vec e_{\imath}\}_{\imath=x,y,z}=\{i\vec e_x,i\vec e_y,i\vec e_z\},
 \qquad
-\{(i\vec e_j)(i\vec e_\imath)\}_{(j,\imath)=(r_y,r_x),(r_z,r_y),(r_x,r_z)}=\{\vec e_z,\vec e_x,\vec e_y\},
+\{(i\vec e_j)(i\vec e_{\imath})\}_{(j,\imath)=(r_y,r_x),(r_z,r_y),(r_x,r_z)}=\{\vec e_z,\vec e_x,\vec e_y\},
 $$
 
-using $(i\vec e_j)(i\vec e_\imath)=-\vec e_j\vec e_\imath$ and $i^2=-1$. The first three, the planes containing the time direction, have the form $e_t\,i\vec e_\imath = i\vec e_\imath$ and are the pure **imaginary** vectors, that is the real span of $\{i\vec e_\imath\} = \mathbb{B}_{V}\cap\mathbb{B}_{\Psi}$. The last three, the purely spatial planes, have the form $(i\vec e_j)(i\vec e_\imath)$ and are the pure **real** vectors, that is the real span of $\{\vec e_\imath\} = \mathbb{B}_{V}\cap\mathbb{B}_{\Phi}$.
+using $(i\vec e_j)(i\vec e_{\imath})=-\vec e_j\vec e_{\imath}$ and $i^2=-1$. The first three, the planes containing the time direction, have the form $e_t\,i\vec e_{\imath} = i\vec e_{\imath}$ and are the pure **imaginary** vectors, that is the real span of $\{i\vec e_{\imath}\} = \mathbb{B}_{V}\cap\mathbb{B}_{\Psi}$. The last three, the purely spatial planes, have the form $(i\vec e_j)(i\vec e_{\imath})$ and are the pure **real** vectors, that is the real span of $\{\vec e_{\imath}\} = \mathbb{B}_{V}\cap\mathbb{B}_{\Phi}$.
 
 Comparing with the decomposition above, the electric and magnetic halves of the field are exactly the two families of planes:
 
@@ -146,13 +146,13 @@ The central element $\tilde{Q}\tilde{Q}^{\natural}$ equals $\langle\tilde{Q}\ran
 $$
 \tilde{F}\,\tilde{F}^{\natural} = \langle\tilde{F}\rangle_{\natural} e_t,
 \qquad
-\langle\tilde{F}\rangle_{\natural} = \vec F\cdot\vec F = \sum_{\imath\in\{x,y,z\}} F_\imath^2,
+\langle\tilde{F}\rangle_{\natural} = \vec F\cdot\vec F = \sum_{\imath\in\{x,y,z\}} F_{\imath}^2,
 $$
 
-because $\vec F\times\vec F = 0$, which removes the cross term. One is left with the **quaternionic norm**, a complex scalar. Substituting $F_\imath = i\sqrt{\epsilon}E_\imath - \sqrt{\mu}H_\imath$ and expanding, with $(i\sqrt{\epsilon})^2=-\epsilon$ from $i^2=-1$,
+because $\vec F\times\vec F = 0$, which removes the cross term. One is left with the **quaternionic norm**, a complex scalar. Substituting $F_{\imath} = i\sqrt{\epsilon}E_{\imath} - \sqrt{\mu}H_{\imath}$ and expanding, with $(i\sqrt{\epsilon})^2=-\epsilon$ from $i^2=-1$,
 
 $$
-\boxed{\;\langle\tilde{F}\rangle_{\natural} = \sum_{\imath\in\{x,y,z\}}\left(i\sqrt{\epsilon}E_\imath - \sqrt{\mu}H_\imath\right)^2
+\boxed{\;\langle\tilde{F}\rangle_{\natural} = \sum_{\imath\in\{x,y,z\}}\left(i\sqrt{\epsilon}E_{\imath} - \sqrt{\mu}H_{\imath}\right)^2
 = -\epsilon\,\vec E^2 + \mu\,\vec H^2 - 2i\sqrt{\epsilon\mu}\,\vec E\cdot\vec H\;}.
 $$
 
@@ -347,7 +347,7 @@ $$
 
 with $\star(F \pm i\star F) = \mp i\,(F \pm i\star F)$. The $\vec N$ part ($\star F = -iF$) is the **self-dual** half and the $\vec N^*$ part ($\star F = +iF$) the **anti-self-dual** half; the two halves are the two helicities of the radiation field. For a real field the two parts are complex conjugates of one another, so $\vec N^*$ adds no new data: $\vec N$ alone already carries the six real field components of $(\vec E,\vec B)$. On the complexified field space they are instead independent, and each carries one of the two three-dimensional complex representations of the Lorentz group, one at each value read by the test of an element, $L$ and $R$. The biquaternion proof uses the antisymmetric-tensor action of the Lorentz group, not the four-vector rotor conjugation.
 
-*Convention.* The dual is defined here by its action on $(\vec E,\vec B)$, with $\star^2=-1$. This is the real-time convention, and it is the $\theta_{\mathrm{dua}}=\pi/2$ case of the duality rotation below, $\star\vec N=-i\vec N$. With this definition the **self-dual** half is $F+i\star F$ ($\star$-eigenvalue $-i$) and the **anti-self-dual** half is $F-i\star F$ ($\star$-eigenvalue $+i$). Reversing the orientation density, $\epsilon_{\imath\jmath\rho\sigma}\mapsto-\epsilon_{\imath\jmath\rho\sigma}$, exchanges the two names and changes nothing else. The component-wise dual read off from the $i r'_t$ tensor, $(\star_{i r'_t}F)_{0k}=B_\imath$, is $-i\star$ and has $\star_{i r'_t}^2=+1$; it is the same decomposition, with the two parts appearing as the eigenfields $F\pm\star_{i r'_t}F$ of eigenvalue $\pm1$ instead of the eigenfields $F\pm i\star F$ of eigenvalue $\mp i$.
+*Convention.* The dual is defined here by its action on $(\vec E,\vec B)$, with $\star^2=-1$. This is the real-time convention, and it is the $\theta_{\mathrm{dua}}=\pi/2$ case of the duality rotation below, $\star\vec N=-i\vec N$. With this definition the **self-dual** half is $F+i\star F$ ($\star$-eigenvalue $-i$) and the **anti-self-dual** half is $F-i\star F$ ($\star$-eigenvalue $+i$). Reversing the orientation density, $\epsilon_{\imath\jmath\rho\sigma}\mapsto-\epsilon_{\imath\jmath\rho\sigma}$, exchanges the two names and changes nothing else. The component-wise dual read off from the $i r'_t$ tensor, $(\star_{i r'_t}F)_{0k}=B_{\imath}$, is $-i\star$ and has $\star_{i r'_t}^2=+1$; it is the same decomposition, with the two parts appearing as the eigenfields $F\pm\star_{i r'_t}F$ of eigenvalue $\pm1$ instead of the eigenfields $F\pm i\star F$ of eigenvalue $\mp i$.
 
 ## Duality Rotation
 
@@ -539,7 +539,7 @@ The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\m
 The biquaternion norm of the field strength is the complex scalar
 
 $$
-\boxed{\;\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \mathrm{Sc}\bigl(\tilde{F}\tilde{F}^{\natural}\bigr) = \sum_{\imath\in\{x,y,z\}} F_\imath^2
+\boxed{\;\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \mathrm{Sc}\bigl(\tilde{F}\tilde{F}^{\natural}\bigr) = \sum_{\imath\in\{x,y,z\}} F_{\imath}^2
 = -\epsilon\left(I_1 + 2ic\,I_2\right)\;},
 \qquad
 I_1 = \vec E^2 - c^2\vec B^2,
@@ -562,7 +562,7 @@ Finally, the invariants classify the field into null, electric, magnetic, and ge
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{C}$ | Complex (scalar) subspace |
 | $\mathbb{B}_{V}$ | Complex three-dimensional vector part |
@@ -575,7 +575,7 @@ Finally, the invariants classify the field into null, electric, magnetic, and ge
 | $\epsilon, \mu$ | Permittivity and permeability of the medium |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
-| $\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \mathrm{Sc}(\tilde{F}\tilde{F}^{\natural}) = \sum_{\imath\in\{x,y,z\}} F_\imath^2$ | Biquaternion norm (complex scalar) |
+| $\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \mathrm{Sc}(\tilde{F}\tilde{F}^{\natural}) = \sum_{\imath\in\{x,y,z\}} F_{\imath}^2$ | Biquaternion norm (complex scalar) |
 | $I_1 = \vec E^2 - c^2\vec B^2$ | First Lorentz invariant (scalar) |
 | $I_2 = \vec E\cdot\vec B$ | Second Lorentz invariant (pseudoscalar) |
 | $\vec N = \vec E + ic\vec B$ | Riemann–Silberstein vector, $\tilde{F} = i\sqrt{\epsilon}\,\vec N$ |

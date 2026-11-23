@@ -143,7 +143,7 @@ $$
 | $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\varrho^{2}$ | Density, real and non-negative |
 | $\varpi_{\mathrm{cpl}}$ | Quartic coupling, real, dimension of a squared wave number per density |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
-| $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ | d'Alembertian on the material sector |
+| $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'{}^{2}_{t}$ | d'Alembertian on the material sector |
 | $j_{\imath}$ | Phase current, the free bilinear |
 | $T_{00}$ | Energy density |
 | $S,\ \mathcal{L}$ | Action and Lagrangian density |

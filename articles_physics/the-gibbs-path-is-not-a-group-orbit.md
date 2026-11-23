@@ -136,7 +136,7 @@ The prohibition is not an accident of this algebra. It follows from the same lin
 
 The simplest channel that changes a radius is the mixture with the identity, and it has an exact biquaternion form. For $\digamma_{\mathrm{mix}}\in[0,1]$,
 $$
-\mathcal E_\imath(\tilde Q)=(1-\digamma_{\mathrm{mix}})\tilde Q+\digamma_{\mathrm{mix}}\,\mathrm{Sc}(\tilde Q)\,e_t ,
+\mathcal E_{\imath}(\tilde Q)=(1-\digamma_{\mathrm{mix}})\tilde Q+\digamma_{\mathrm{mix}}\,\mathrm{Sc}(\tilde Q)\,e_t ,
 $$
 which on the slice reads $\vec s\mapsto(1-\digamma_{\mathrm{mix}})\vec s$. It is affine by construction, it preserves $2\,\mathrm{Sc}$, and it fixes the centre.
 
@@ -241,7 +241,7 @@ The channel that changes the temperature is a mixture with the identity, and its
 | $r=\tanh(\beta\lvert\vec h_\Psi\rvert)$ | the radius, the modulus of the state vector |
 | $N=\tfrac14(1-r^{2})$ | the linear entropy |
 | $\mathrm{Rp}_{\tilde U}$ | the congruence followed by normalisation |
-| $\mathcal E_\imath$ | the mixture with the identity, $\vec s\mapsto(1-\digamma_{\mathrm{mix}})\vec s$ |
+| $\mathcal E_{\imath}$ | the mixture with the identity, $\vec s\mapsto(1-\digamma_{\mathrm{mix}})\vec s$ |
 | $\gamma$ | the rate of the semigroup generator |
 | $P=\tfrac12(1+r^{2})$ | the purity |
 | $d_{K}$, $d_{B}$ | the Klein and Bures distances |

@@ -64,7 +64,7 @@ $$
 a' = a\,c, \qquad b' = c^{-1} b .
 $$
 
-**Proof.** If $L_{a}R_{b} = L_{a'}R_{b'}$, then evaluating at $y = 1$ gives $a'b' = ab$, so $a^{-1}a' = b\,b'^{-1} =: c$. For every $y$,
+**Proof.** If $L_{a}R_{b} = L_{a'}R_{b'}$, then evaluating at $y = 1$ gives $a'b' = ab$, so $a^{-1}a' = b\,b'{}^{-1} =: c$. For every $y$,
 
 $$
 a\,c\,y\,b' = a'\,y\,b' = a\,y\,b = a\,y\,b'\,c ,

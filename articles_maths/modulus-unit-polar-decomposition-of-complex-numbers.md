@@ -25,7 +25,7 @@ Every numerical value displayed below was recomputed in double precision.
 The norm of a complex number is
 
 $$
-\langle Q\rangle_{*} = Q\bar{Q} = q^2 + q'^2, \qquad Q = q + iq'.
+\langle Q\rangle_{*} = Q\bar{Q} = q^2 + q'{}^2, \qquad Q = q + iq'.
 $$
 
 It is a sum of two squares, so $\langle Q\rangle_{*} > 0$ for every $Q \neq 0$ and $\langle Q\rangle_{*} = 0$ only at $Q = 0$. The **modulus** is
@@ -123,7 +123,7 @@ Complex conjugation fixes the real axis and negates the imaginary axis. An eleme
 
 The modulus lies on the positive real axis. The unit circle meets the real axis at $\pm1$ and the imaginary axis at $\pm i$.
 
-**There is no second continuous factor.** Suppose $\nu^2 = 1$. Writing $\nu = q+iq'$ gives $q^2-q'^2 = 1$ and $2qq' = 0$. If $q = 0$ then $-q'^2 = 1$, impossible; if $q' = 0$ then $q^2 = 1$, so $\nu = \pm1$. The only elements of the circle with square $+1$ are therefore $\pm1$, the two real points. A continuous factor of square $+1$ would be a connected subgroup of $\mathrm{U}(1)$ all of whose elements have square $+1$; such a subgroup lies in $\{\pm1\}$ and, being connected, is $\{1\}$. So there is no such factor. Similarly $\nu^2 = 0$ gives $q^2 = q'^2$ and $qq' = 0$, hence $\nu = 0$, so there is no nilpotent direction either. The dimension count is decisive as well: the circle is one-dimensional, so a product of two continuous factors has one factor of dimension zero, and a connected group of dimension zero is a point. The discrete sign $\pm1$ is carried by the unit factor, not by a separate factor: a negative real number has $\varrho > 0$ and $u = -1$.
+**There is no second continuous factor.** Suppose $\nu^2 = 1$. Writing $\nu = q+iq'$ gives $q^2-q'{}^2 = 1$ and $2qq' = 0$. If $q = 0$ then $-q'{}^2 = 1$, impossible; if $q' = 0$ then $q^2 = 1$, so $\nu = \pm1$. The only elements of the circle with square $+1$ are therefore $\pm1$, the two real points. A continuous factor of square $+1$ would be a connected subgroup of $\mathrm{U}(1)$ all of whose elements have square $+1$; such a subgroup lies in $\{\pm1\}$ and, being connected, is $\{1\}$. So there is no such factor. Similarly $\nu^2 = 0$ gives $q^2 = q'{}^2$ and $qq' = 0$, hence $\nu = 0$, so there is no nilpotent direction either. The dimension count is decisive as well: the circle is one-dimensional, so a product of two continuous factors has one factor of dimension zero, and a connected group of dimension zero is a point. The discrete sign $\pm1$ is carried by the unit factor, not by a separate factor: a negative real number has $\varrho > 0$ and $u = -1$.
 
 **The circle is both compact factor and rotation factor.** The algebra $\mathbb{C}$ is a field, hence commutative, so every element is central. A central factor and a rotation factor cannot be separated in a commutative algebra: the same circle plays both roles. Multiplication by an invertible element is a rotation of the plane, and $\mathrm{U}(1)$ is the group of those rotations; it is also the compact factor of the polar decomposition. The coincidence is a consequence of commutativity alone.
 
@@ -140,7 +140,7 @@ $$
 The determinant and the trace are
 
 $$
-\det M_Q = q^2+q'^2 = \langle Q\rangle_{*}, \qquad \operatorname{tr}M_Q = 2q,
+\det M_Q = q^2+q'{}^2 = \langle Q\rangle_{*}, \qquad \operatorname{tr}M_Q = 2q,
 $$
 
 so the norm is the determinant and the modulus is the square root of the determinant, $\varrho = \sqrt{\det M_Q}$.
@@ -210,8 +210,8 @@ The modulus–unit decomposition exists in every algebra of the family, with the
 | algebra | element | norm | modulus | unit set | topology of the unit set |
 |---|---|---|---|---|---|
 | $\mathbb{R}$ | $q$ | $q^2$ | $\lvert q\rvert$ | $\{\pm1\}$ | two points |
-| $\mathbb{C}$ | $Q = q+iq'$ | $q^2+q'^2$, definite | $\sqrt{\langle Q\rangle_{*}}$ | $\mathrm{U}(1)$ | circle, compact and connected |
-| $\mathbb{C}_{\mathrm{spl}}$ | $Q = q+jq'$ | $q^2-q'^2$, indefinite | $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $\langle Q\rangle_{*} \neq 0$ | $\{\langle Q\rangle_{*} = \pm1\}$ | four components, non-compact |
+| $\mathbb{C}$ | $Q = q+iq'$ | $q^2+q'{}^2$, definite | $\sqrt{\langle Q\rangle_{*}}$ | $\mathrm{U}(1)$ | circle, compact and connected |
+| $\mathbb{C}_{\mathrm{spl}}$ | $Q = q+jq'$ | $q^2-q'{}^2$, indefinite | $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $\langle Q\rangle_{*} \neq 0$ | $\{\langle Q\rangle_{*} = \pm1\}$ | four components, non-compact |
 | $\mathbb{H}$ | $\tilde q$ | sum of four squares, definite | $\sqrt{N}$ | $S^3$ | sphere, compact and connected |
 
 The complex column is the only one of the four in which the norm is definite and the unit set is a circle. The split-complex column has an indefinite norm, so its modulus uses an absolute value, its unit set has four components, and the decomposition is restricted to the complement of the null cone; the quaternion column is definite, but its unit set is a three-dimensional sphere rather than a circle.
@@ -231,7 +231,7 @@ In the matrix picture the decomposition is the polar decomposition $M_Q = rM_u$ 
 | $\mathbb{C}$ | the complex algebra, basis $1$, $i$, $i^2 = -1$ |
 | $Q = q+iq'$ | a complex number, $q$ its real part, $q'$ its imaginary part |
 | $\bar{Q} = q-iq'$ | the complex conjugate |
-| $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ | the norm, positive definite |
+| $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'{}^2$ | the norm, positive definite |
 | $\varrho = \sqrt{\langle Q\rangle_{*}}$ | the modulus, a positive real |
 | $u = Q/\varrho$ | the unit factor, $\langle u\rangle_{*} = 1$ |
 | $u$ | an invertible element, $\langle u\rangle_{*} = 1$, with real coordinates $\operatorname{Re}u$ and $\operatorname{Im}u$ |

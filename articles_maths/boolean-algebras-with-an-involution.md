@@ -7,8 +7,7 @@ Two different involutions act on the elements of a Boolean algebra. The **comple
 order-reversing involution, of order two, that exchanges the meet and the join; it is the canonical
 involution of the structure, and it is an anti-automorphism, not an automorphism. An **involution** of
 a Boolean algebra, in the sense of this article, is on the contrary an order-preserving map $\sigma$ of
-order two that preserves the Boolean operations, that is, a Boolean automorphism with $\sigma^2 =
-\mathrm{id}$. A **Boolean algebra with an involution** is a Boolean algebra $B$ together with such a
+order two that preserves the Boolean operations, that is, a Boolean automorphism with $\sigma^2 = \mathrm{id}$. A **Boolean algebra with an involution** is a Boolean algebra $B$ together with such a
 $\sigma$; its **fixed part** $B^{\sigma}$, the elements with $\sigma x = x$, is a Boolean subalgebra,
 and the pair $(B, \sigma)$ has a representation by a power set with an involution induced by an
 involutive permutation of the underlying set. This article separates the two involutions, treats the
@@ -30,8 +29,7 @@ the Boolean operations as connectives is *Logic and Proof*, in Part 0, and is na
 
 ## The Complement as an Involution
 
-**Definition.** Let $B$ be a Boolean algebra. The **complement** is the map $\neg : B \to B$ with $x
-\wedge \neg x = 0$ and $x \vee \neg x = 1$; it is the orthocomplement of *Orthocomplemented Lattices and
+**Definition.** Let $B$ be a Boolean algebra. The **complement** is the map $\neg : B \to B$ with $x \wedge \neg x = 0$ and $x \vee \neg x = 1$; it is the orthocomplement of *Orthocomplemented Lattices and
 the Involution*, the unique complement of each element.
 
 **Theorem.** The complement is an order-reversing involution and satisfies the De Morgan laws and the
@@ -55,8 +53,7 @@ So the complement is the order-reversing involution of the structure, and it is 
 An **involution of a Boolean algebra** in the sense used below is a second, order-preserving map; the
 two commute, since an automorphism of a Boolean algebra preserves the complement.
 
-**Proposition.** If $B$ is a Boolean algebra with an involution $\sigma$, then $\sigma \circ \neg =
-\neg \circ \sigma$, and $\sigma$ is determined by its restriction to the atoms in the finite case.
+**Proposition.** If $B$ is a Boolean algebra with an involution $\sigma$, then $\sigma \circ \neg = \neg \circ \sigma$, and $\sigma$ is determined by its restriction to the atoms in the finite case.
 
 **Proof.** An automorphism of a Boolean algebra preserves the complement, which is defined by the two
 Boolean identities, so $\sigma(\neg x) = \neg \sigma(x)$; for the finite case, every element is the
@@ -64,9 +61,7 @@ join of the atoms below it and an automorphism permutes the atoms.
 
 ## Involutive Boolean Algebras and their Homomorphisms
 
-**Definition.** An **involution** of a Boolean algebra $B$ is a map $\sigma : B \to B$ with $\sigma^2 =
-\mathrm{id}$, $\sigma(x \wedge y) = \sigma x \wedge \sigma y$, $\sigma(x \vee y) = \sigma x \vee \sigma
-y$, $\sigma 0 = 0$ and $\sigma 1 = 1$. A **Boolean algebra with an involution** is a pair $(B, \sigma)$
+**Definition.** An **involution** of a Boolean algebra $B$ is a map $\sigma : B \to B$ with $\sigma^2 = \mathrm{id}$, $\sigma(x \wedge y) = \sigma x \wedge \sigma y$, $\sigma(x \vee y) = \sigma x \vee \sigma y$, $\sigma 0 = 0$ and $\sigma 1 = 1$. A **Boolean algebra with an involution** is a pair $(B, \sigma)$
 with $\sigma$ an involution.
 
 **Proposition.** An involution of a Boolean algebra is a Boolean automorphism of order two; conversely
@@ -88,20 +83,17 @@ category; the forgetful functor is injective on hom-sets but its image omits the
 not commute with the involutions, so it is not full.
 
 **Example (the power set).** Let $X$ be a set and let $s : X \to X$ be an **involution of the set**,
-$s^2 = \mathrm{id}_X$. The map $\sigma_s$ on the power set $\mathcal{P}(X)$ defined by $\sigma_s(A) =
-s(A)$ is an involution of the Boolean algebra $\mathcal{P}(X)$; it is the involution induced by $s$.
+$s^2 = \mathrm{id}_X$. The map $\sigma_s$ on the power set $\mathcal{P}(X)$ defined by $\sigma_s(A) = s(A)$ is an involution of the Boolean algebra $\mathcal{P}(X)$; it is the involution induced by $s$.
 Every involution of a finite power set is of this form, with $s$ the restriction of $\sigma$ to the
 atoms, that is, the singletons.
 
 ## The Fixed Part
 
-**Definition.** The **fixed part** of an involutive Boolean algebra $(B, \sigma)$ is $B^{\sigma} = \{x
-\in B : \sigma x = x\}$.
+**Definition.** The **fixed part** of an involutive Boolean algebra $(B, \sigma)$ is $B^{\sigma} = \{x \in B : \sigma x = x\}$.
 
 **Theorem.** The fixed part is a Boolean subalgebra of $B$ containing $0$ and $1$. Its atoms, when
 $B$ is finite, are the **orbits** of $\sigma$ on the atoms of $B$; in particular every orbit of atoms a
-singleton $\{a\}$ with $\sigma a = a$ contributes one atom, and every two-element orbit $\{a, \sigma
-a\}$ contributes the element $a \vee \sigma a$, which is fixed and is an atom of the fixed part.
+singleton $\{a\}$ with $\sigma a = a$ contributes one atom, and every two-element orbit $\{a, \sigma a\}$ contributes the element $a \vee \sigma a$, which is fixed and is an atom of the fixed part.
 
 **Proof.** Fixed elements are closed under the Boolean operations because $\sigma$ preserves them, and
 $0, 1$ are fixed. An element of $B$ is the join of the atoms below it, and it is fixed if and only if

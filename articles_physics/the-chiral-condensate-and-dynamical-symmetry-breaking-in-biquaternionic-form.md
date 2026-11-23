@@ -4,6 +4,8 @@
 
 A **chiral condensate** is a nonzero vacuum expectation value of a fermion bilinear, $\langle\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}\rangle\neq0$, in a theory whose Lagrangian contains no such term. It is the order parameter of a symmetry that the Lagrangian respects and the vacuum does not: the fermion field is massless as written, the vacuum pairs its two chiralities, and the fermion propagates with a mass it was never given. The mechanism is **dynamical symmetry breaking**, and it is why the pion is light: the pion is the Goldstone boson of a symmetry that the Lagrangian has and the vacuum does not.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 In the biquaternion framework the fermion is the Dirac field of the companion articles and its mass is the **linear, chirality-off-diagonal pair**
 
 $$
@@ -29,7 +31,7 @@ $$
 G_{\imath}:\ Q\ \longmapsto\ i\,e_{\imath}\,Q\,\vec e_{\mathrm{spt}(\imath)} ,
 $$
 
-with $e_t=1$ the unit of the algebra, $e_\imath=\vec e_\imath$, $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$; the **chirality** is the frame's fifth basis operator, the operator
+with $e_t=1$ the unit of the algebra, $e_{\imath}=\vec e_{\imath}$, $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$; the **chirality** is the frame's fifth basis operator, the operator
 
 $$
 \xi:\ Q\ \longmapsto\ -i\,Q\,\vec e_z .
@@ -46,7 +48,7 @@ $$
 
 with $\varepsilon=(1,-1,-1,-1)$, the products read as actions and $\mathrm{id}$ the identity action. There is no root, no idempotent and no split behind these five maps: each is a product by units, and nothing else is introduced to hold it.
 
-**The side, which is what chirality is.** A basis operator is the operator $L_aR_b$, acting $Q\mapsto aQb$, and it has two slots: the left one, where $a$ multiplies, and the right one, where $b$ multiplies. An operator multiplies on the left, on the right, or on both, and that is the whole of the corpus's notion of operator chirality ([Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html)): a property of the operator, not a sign carried by an element. The five maps above are read on that scale and they are not alike. The time generator is $G_t=iR_{\vec e_x}$, a **pure right multiplier**, because $L_{e_t}$ is the identity and a basis operator with the left slot empty is a right multiplication. The three spatial generators occupy **both slots**, $G_\imath=iL_{\vec e_k}R_{\vec e_y}$. The chirality is a **pure right multiplier** too,
+**The side, which is what chirality is.** A basis operator is the operator $L_aR_b$, acting $Q\mapsto aQb$, and it has two slots: the left one, where $a$ multiplies, and the right one, where $b$ multiplies. An operator multiplies on the left, on the right, or on both, and that is the whole of the corpus's notion of operator chirality ([Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html)): a property of the operator, not a sign carried by an element. The five maps above are read on that scale and they are not alike. The time generator is $G_t=iR_{\vec e_x}$, a **pure right multiplier**, because $L_{e_t}$ is the identity and a basis operator with the left slot empty is a right multiplication. The three spatial generators occupy **both slots**, $G_{\imath}=iL_{\vec e_k}R_{\vec e_y}$. The chirality is a **pure right multiplier** too,
 
 $$
 \xi=-iR_{\vec e_z},\qquad \xi Q=-i\,Q\,\vec e_z ,
@@ -113,7 +115,7 @@ The framework results used here are those of the companion articles:
 
 ## The Pair, the Two-Sided Equation and the Chirality
 
-**The gradient equation.** The gradient is $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\partial/\partial R_\imath$, and its quaternion conjugate squares with it to the scalar d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$. The chiral pair
+**The gradient equation.** The gradient is $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\partial/\partial R_{\imath}$, and its quaternion conjugate squares with it to the scalar d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$. The chiral pair
 
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},\qquad
@@ -128,10 +130,10 @@ $$
 \mathcal{D}\tilde{Ξ}=-\sum_{\imath} e_{\imath}\,\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}\,\vec e_{\mathrm{spt}(\imath)} ,
 \qquad
 \mathcal{D}^{2}=-\sum_{\imath}\varepsilon_{\imath}\frac{\partial^{2}}{\partial x_{\imath}^{2}}
-=-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\sum_{\imath\in\{x,y,z\}}\frac{\partial^{2}}{\partial x_\imath^{2}}=\Box_\Phi ,
+=-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\sum_{\imath\in\{x,y,z\}}\frac{\partial^{2}}{\partial x_{\imath}^{2}}=\Box_\Phi ,
 $$
 
-a sum of four products — one element, one derivative of the field, one unit — and the square is the d'Alembertian: the first equality is the anticommutator $\{G_{\imath},G_\rho\}=2\varepsilon_{\imath}\delta_{\imath\rho}$ with the derivatives commuting with the constant multipliers, the last is the definition $\Box_\Phi=\partial^2/\partial R_{\imath}\partial R_{\imath}$ read on the $i r'_t$ slice, where $Q_\imath=q_\imath$ and $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_t}^2$, so that $\Box_\Phi=-\partial^2/\partial {r'_t}^2+\sum_{\imath\in\{x,y,z\}}\partial^2/\partial x_\imath^2$; the minus in front of the sum is the one of that convention, and it is taken once, here. The equation is $(\mathcal{D}-\nu_m)\tilde{Ξ}=0$. It is one equation and not four, and because $\xi$ anticommutes with every generator it splits by value into two members, $\mathcal{D}\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $\mathcal{D}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, which are the two lines of the pair read on the module: the derivative carries each value into the other and the mass carries it back. Every bilinear and every rotation below is an object of this equation.
+a sum of four products — one element, one derivative of the field, one unit — and the square is the d'Alembertian: the first equality is the anticommutator $\{G_{\imath},G_\rho\}=2\varepsilon_{\imath}\delta_{\imath\rho}$ with the derivatives commuting with the constant multipliers, the last is the definition $\Box_\Phi=\partial^2/\partial R_{\imath}\partial R_{\imath}$ read on the $i r'_t$ slice, where $Q_{\imath}=q_{\imath}$ and $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_t}^2$, so that $\Box_\Phi=-\partial^2/\partial {r'_t}^2+\sum_{\imath\in\{x,y,z\}}\partial^2/\partial x_{\imath}^2$; the minus in front of the sum is the one of that convention, and it is taken once, here. The equation is $(\mathcal{D}-\nu_m)\tilde{Ξ}=0$. It is one equation and not four, and because $\xi$ anticommutes with every generator it splits by value into two members, $\mathcal{D}\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $\mathcal{D}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, which are the two lines of the pair read on the module: the derivative carries each value into the other and the mass carries it back. Every bilinear and every rotation below is an object of this equation.
 
 **Chirality, and why it belongs to the two-sided equation.** On the algebra the statement is the side and nothing else: $\xi$ is a pure right multiplier and the gradient is a pure left multiplier, so they commute, and each member of the pair acts inside one value. The two-sided writing is where the derivative occupies **both** slots, and there the same operator anticommutes with it:
 
@@ -223,7 +225,7 @@ $$
 
 which vanishes exactly when $m=0$. The mass is the only explicit breaking, and the identity is exact at the classical level. The quantum correction to it — the axial anomaly, which adds a term even at $m=0$ — belongs to the companion articles; the *spontaneous* breaking that a condensate produces is a separate phenomenon from that anomaly.
 
-**Why the sum carries no metric factor.** The metric is already spent inside the generators, since $G_0^{2}=+\mathrm{id}$ and $G_\imath^{2}=-\mathrm{id}$ differ in sign exactly as the entries of $g$ do. Hence $j_{5k}$ is the contravariant spatial component and $\sum_{\imath}\partial j_{5\imath}/\partial x_{\imath}=\partial j_5^0/\partial r'_t+\vec\nabla_\Phi\cdot\vec j_5$ is the divergence; an extra $\varepsilon$ would apply the metric a second time.
+**Why the sum carries no metric factor.** The metric is already spent inside the generators, since $G_0^{2}=+\mathrm{id}$ and $G_{\imath}^{2}=-\mathrm{id}$ differ in sign exactly as the entries of $g$ do. Hence $j_{5k}$ is the contravariant spatial component and $\sum_{\imath}\partial j_{5\imath}/\partial x_{\imath}=\partial j_5^0/\partial r'_t+\vec\nabla_\Phi\cdot\vec j_5$ is the divergence; an extra $\varepsilon$ would apply the metric a second time.
 
 **The companion's notation.** There the identity reads $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,5})=2im\,\tilde{Ξ}^{\natural}\xi\tilde{Ξ}$, the time slot of $\tilde J_{\Phi,5}$ carrying the factor $ic$ that the $i r'_t$ coordinate requires. The two notations name the same operator, and the same glyph: $\xi$ is the corpus's chirality operator, the frame's fifth basis operator, a pure right multiplier, and it takes the value $-1$ on $\tilde{Ξ}_{L}$ and $+1$ on $\tilde{Ξ}_{R}$ in either notation.
 
@@ -333,17 +335,17 @@ $$
 \approx -\frac{N_c\,m\,\Lambda^2}{2\pi^2} ,
 $$
 
-where the second form is the leading term for $m\ll\Lambda$. At the values used below the leading form overestimates by about $30\%$, so the table quotes the exact integral. The numbers were recomputed directly from the integral, in units of GeV, for $N_c=3$ and $\Lambda=0.65$:
+where the second form is the leading term for $m\ll\Lambda$. At the values used below the leading form overestimates by about $30\%$, so the table quotes the exact integral. The numbers were recomputed directly from the integral, in units of the cutoff, for $N_c=3$ and $\Lambda=1.16\times10^{-27}$ kg:
 
 | quantity | value (recomputed) |
 |---|---|
-| $I_1(0)=\Lambda^2/(4\pi^2)$ | $1.070\times10^{-2}\ \mathrm{GeV}^2$ |
-| $G_c=\pi^2/(N_c\Lambda^2)$ | $7.79\ \mathrm{GeV}^{-2}$ |
-| $I_1(m)$ at $m=0.3$ | $8.33\times10^{-3}\ \mathrm{GeV}^2$ |
-| $1/(4N_cI_1(m))$ | $10.00\ \mathrm{GeV}^{-2}$ |
-| $\langle\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}\rangle$ at $m=0.3$ | $-1.50\times10^{-2}\ \mathrm{GeV}^3 = -(247\ \mathrm{MeV})^3$ |
+| $I_1(0)=\Lambda^2/(4\pi^2)$ | $2.75\times10^{-22}\ \mathrm{J^2}$ |
+| $G_c=\pi^2/(N_c\Lambda^2)$ | $3.04\times10^{19}\ \mathrm{J^{-2}}$ |
+| $I_1(m)$ at $m=0.3$ | $2.14\times10^{-22}\ \mathrm{J^2}$ |
+| $1/(4N_cI_1(m))$ | $3.90\times10^{19}\ \mathrm{J^{-2}}$ |
+| $\langle\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}\rangle$ at $m=0.3$ | $-6.17\times10^{-31}\ \mathrm{J^3} = -(8.54\times10^{-83}\ \mathrm{kg})^3$ |
 
-The fourth row is the coupling that makes $m=0.3$ a solution of the gap equation: it is $28\%$ above $G_c$, so a modest overshoot of the critical coupling sustains a constituent mass of that size. The last row is the point of the table: a constituent mass of order $300$ MeV with a cutoff of order $650$ MeV produces a condensate of order $-(250\ \mathrm{MeV})^3$, which is the accepted size of the quark condensate. The colour multiplicity $N_c=3$ is part of the transcribed model and not of the framework, which has no colour group; it enters here because it is what fixes the size in nature. Nothing in the computation is the framework's; it is the standard NJL mean field, reproduced to fix the size of the object the framework is naming.
+The fourth row is the coupling that makes $m=0.3$ a solution of the gap equation: it is $28\%$ above $G_c$, so a modest overshoot of the critical coupling sustains a constituent mass of that size. The last row is the point of the table: a constituent mass of order $5.35\times10^{-28}$ kg with a cutoff of order $1.16\times10^{-27}$ kg produces a condensate of order $-(4.46\times10^{-28}\ \mathrm{kg})^3$, which is the accepted size of the quark condensate. The colour multiplicity $N_c=3$ is part of the transcribed model and not of the framework, which has no colour group; it enters here because it is what fixes the size in nature. Nothing in the computation is the framework's; it is the standard NJL mean field, reproduced to fix the size of the object the framework is naming.
 
 **Which symmetry is broken, and where.** The nonzero condensate breaks $\mathrm{U}(1)_A$ for one flavour and $SU(N_f)_A$ for $N_f$ flavours, down to the vector subgroup $SU(N_f)_V$. The vector symmetry — the one the framework's central phase generates, and the one the linear chiral pair preserves — is *not* broken. This is the exact pattern the biquaternion mass term produces: the mass conserves the central phase and breaks the axial one, and the condensate does the same spontaneously.
 
@@ -423,7 +425,7 @@ which is $3$ for $N_f=2$ (the pions) and $8$ for $N_f=3$ (the octet). The Goldst
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\imath^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_{\imath}^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -466,7 +468,7 @@ so multiplying a generator or the chirality basis operator by $i$ trades it for 
 **The identities the article cites.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
-(\gamma_\imath)^2=-I_4,\qquad
+(\gamma_{\imath})^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_{\imath},\gamma_5\}=0,
 $$
@@ -497,7 +499,7 @@ $$
 
 and it is the order parameter of the axial symmetry that the framework's **linear chiral mass pair** $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ breaks. The two writings are kept apart throughout: the pair is the one-sided statement in the algebra, and the two-sided equation $(\mathcal{D}-\nu_m)\tilde{Ξ}=0$ with $\mathcal{D}\tilde{Ξ}=-\sum_{\imath} e_{\imath}(\partial_{\imath}\tilde{Ξ})\vec e_{\mathrm{spt}(\imath)}$ is the writing in which the bilinears are read. Chirality is a **side** and not a sign carried by an element: $\xi=-iR_{\vec e_z}$ is the frame's fifth basis operator and multiplies on the right, the gradient multiplies on the left, and the mass is the one term of the equation with both slots and therefore no side. The massless two-sided equation carries both the vector and the axial phase, $\tilde{Ξ}\mapsto\exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$ and $\tilde{Ξ}\mapsto\exp(i\theta_{\mathrm{axr}}\xi)\tilde{Ξ}=\tilde{Ξ}\exp(\theta_{\mathrm{axr}}\vec e_z)$; the mass term preserves the central one and breaks the axial one, with $\sum_{\imath}\partial j_{5\imath}/\partial x_{\imath}=2m\,\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}(\tilde{Ξ}\vec e_z)$. A nonzero condensate reproduces exactly this breaking, spontaneously, and its value is the coefficient of the same linear chiral pair: $m=-2G\langle\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}\rangle$. The order parameter sits on the real central line, and it is not the antilinear pairing built on the algebra's real structure $\flat$.
 
-The standard mean-field account was verified. With $N_c$ colours and cutoff $\Lambda$ the gap equation is $1=4N_cG\,I_1(m)$, the critical coupling is $G_c=\pi^2/(N_c\Lambda^2)$, and for $N_c=3$, $\Lambda=0.65$ GeV, and a constituent mass $m=0.3$ GeV the condensate is $-(247\ \mathrm{MeV})^3$ — the accepted order of magnitude. The Goldstone count is $N_f^2-1$, giving three pions for $N_f=2$ and eight modes for $N_f=3$, the ninth would-be mode being the $\digamma_{\mathrm{mes}}'$, which the anomaly keeps heavy; the spin-$0$ effective description of those modes belongs to another subcategory and is not developed here.
+The standard mean-field account was verified. With $N_c$ colours and cutoff $\Lambda$ the gap equation is $1=4N_cG\,I_1(m)$, the critical coupling is $G_c=\pi^2/(N_c\Lambda^2)$, and for $N_c=3$, $\Lambda=1.16\times10^{-27}$ kg, and a constituent mass $m=5.35\times10^{-28}$ kg the condensate is $-(4.40\times10^{-28}\ \mathrm{kg})^3$ — the accepted order of magnitude. The Goldstone count is $N_f^2-1$, giving three pions for $N_f=2$ and eight modes for $N_f=3$, the ninth would-be mode being the $\digamma_{\mathrm{mes}}'$, which the anomaly keeps heavy; the spin-$0$ effective description of those modes belongs to another subcategory and is not developed here.
 
 The framework supplies the carrier, the symmetry pattern and the sector placement. It supplies no dynamics: a QCD-like condensate cannot be derived in it, and the scale is empirical input.
 
@@ -511,13 +513,13 @@ The framework supplies the carrier, the symmetry pattern and the sector placemen
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the condensate itself sits on $\mathbb{R}e_t$ |
 | $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_{\imath}\vec e_{\imath}\partial/\partial R_{\imath}$ | Biquaternionic gradient |
-| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention; $Q_\imath=q_\imath$ |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention; $Q_{\imath}=q_{\imath}$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ | Gradient equation: the linear chiral pair, one-sided |
 | $(\mathcal{D}-\nu_m)\tilde{Ξ}=0$, $\mathcal{D}\tilde{Ξ}=-\sum_{\imath} e_{\imath}(\partial_{\imath}\tilde{Ξ})\vec e_{\mathrm{spt}(\imath)}$ | Two-sided equation; $\mathcal{D}^2=\Box_\Phi$ |
 | $G_{\imath}:\ Q\mapsto i e_{\imath} Q\vec e_{\mathrm{spt}(\imath)}$, $\mathrm{spt}(t)=x$, $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$ | Generator actions; $\{G_{\imath},G_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}\,\mathrm{id}$ |
 | $\xi:\ Q\mapsto-iQ\vec e_z=-iR_{\vec e_z}$, the frame's fifth basis operator | Chirality operator: a **pure right multiplier**, so it commutes with every left multiplication and $\{\xi,G_{\imath}\}=0$; $\xi^2=1$, $\xi\,\mathcal{D}\,\xi^{-1}=-\mathcal{D}$ |
 | $i\xi:\ Q\mapsto Q\vec e_z$ | The collapse of the imaginary unit: $\xi$ is the fifth basis operator itself, and $i\xi$ is a plain right multiplication |
-| $G_t=iR_{\vec e_x}$, $G_\imath=iL_{\vec e_k}R_{\vec e_y}$ | The slots of the generators: the time one has **no left slot**, the three spatial ones carry **both slots** |
+| $G_t=iR_{\vec e_x}$, $G_{\imath}=iL_{\vec e_k}R_{\vec e_y}$ | The slots of the generators: the time one has **no left slot**, the three spatial ones carry **both slots** |
 | $m$ | Central scalar: the one term of the equation with **both slots**, hence no side, and therefore the only term that pairs the two values |
 | $U(\theta_{\mathrm{axr}})=\exp(i\theta_{\mathrm{axr}}\xi)$ | The axial rotation, a pure right multiplication; $U(\theta_{\mathrm{axr}})(\mathcal{D}-2\pi\nu_m)U(\theta_{\mathrm{axr}})^{-1}=\exp(2i\theta_{\mathrm{axr}}\xi)\mathcal{D}-2\pi\nu_m$ |
 | $iG_{\imath}:\ Q\mapsto-e_{\imath} Q\vec e_{\mathrm{spt}(\imath)}$ | The same collapse on a generator |

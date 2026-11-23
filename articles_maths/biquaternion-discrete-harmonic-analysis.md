@@ -122,7 +122,7 @@ Three consequences are read off at once. **The kernel is a pair of conjugate uni
 
 The classification is quoted, because it belongs to the root theory and not to harmonic analysis.
 
-**Theorem (the roots of one; quoted).** In the plain product the roots of $+1$ are the central pair $\pm e_t$ and the pure elements $\vec{Ζ}$ with $(\vec{Ζ},\vec{Ζ})=-1$, a family of real dimension four. Writing $\vec{Ζ}=\vec p+i\vec p'$ over two real vectors, the pure roots are the pairs with $\vec p^{2}-\vec p'^{2}=-1$ and $\vec p\cdot\vec p'=0$, and they contain the purely imaginary unit vectors $i\vec u$ over the real unit vectors $\vec u$. The source is *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Value One in the Four General Products* and §*The Two Families of the Plain Reduction*.
+**Theorem (the roots of one; quoted).** In the plain product the roots of $+1$ are the central pair $\pm e_t$ and the pure elements $\vec{Ζ}$ with $(\vec{Ζ},\vec{Ζ})=-1$, a family of real dimension four. Writing $\vec{Ζ}=\vec p+i\vec p'$ over two real vectors, the pure roots are the pairs with $\vec p^{2}-\vec p'{}^{2}=-1$ and $\vec p\cdot\vec p'=0$, and they contain the purely imaginary unit vectors $i\vec u$ over the real unit vectors $\vec u$. The source is *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Value One in the Four General Products* and §*The Two Families of the Plain Reduction*.
 
 **Corollary (a root is central or pure).** A root of $1$ has either a vanishing vector part, and is then $\pm e_t$, or a vanishing scalar part; no root has both parts non-zero.
 
@@ -136,7 +136,7 @@ The two families are disjoint and exhaustive, so a statement that holds for ever
 
 **Proposition (the Hermitian roots).** The Hermitian roots of $1$ are the central pair $\pm e_t$ and the purely imaginary unit vectors $\pm i\vec u$ over the real unit vectors $\vec u$.
 
-*Proof.* A pure root has $\vec{Ζ}=\vec p+i\vec p'$ and $\tilde{Ζ}^{*}=\bar{\tilde{Ζ}}^{\natural}=-\bar{\tilde{Ζ}}=-\vec p+i\vec p'$, so the Hermitian condition is $\vec p=0$; the root condition $\vec p^{2}-\vec p'^{2}=-1$ then gives $\lvert\vec p'\rvert=1$. The central roots are fixed by the star.
+*Proof.* A pure root has $\vec{Ζ}=\vec p+i\vec p'$ and $\tilde{Ζ}^{*}=\bar{\tilde{Ζ}}^{\natural}=-\bar{\tilde{Ζ}}=-\vec p+i\vec p'$, so the Hermitian condition is $\vec p=0$; the root condition $\vec p^{2}-\vec p'{}^{2}=-1$ then gives $\lvert\vec p'\rvert=1$. The central roots are fixed by the star.
 
 For these roots the pair is a pair of Hermitian idempotents, $\tilde\Pi_{\mathrm{id},\pm}^{*}=\tilde\Pi_{\mathrm{id},\pm}$, that is, a pair of pure states, and the kernel is unitary for the Hermitian form, by §*Definition and the Closed Form* read with the star.
 

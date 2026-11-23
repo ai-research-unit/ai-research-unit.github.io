@@ -4,6 +4,8 @@
 
 This article records an external programme, that of Waldyr Alves Rodrigues Jr. and Jayme Vaz Jr. as presented in *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum* (arXiv:hep-th/9607231, 1996). It works in the **bundle of differential forms** over Minkowski spacetime and studies the single equation
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 $$
 \tilde\nabla_\Phi\tilde F = 0
 $$
@@ -77,7 +79,7 @@ $$
 with $f$ a constant element and $k$ the propagation vector. The gradient acts on the phase through the symbol
 
 $$
--2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi,\qquad 2\pi\vec\nu_\Phi=\sum_{\imath\in\{x,y,z\}}\vec e_\imath 2\pi\nu_{\Phik} ,
+-2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi,\qquad 2\pi\vec\nu_\Phi=\sum_{\imath\in\{x,y,z\}}\vec e_{\imath} 2\pi\nu_{\Phi k} ,
 $$
 
 so the equation is $-2\pi i\tilde\Upsilon_{\Phi}f=0$. Applying $2\pi i\tilde\Upsilon_{\Phi}^{\natural}$ on the left gives $2\pi i\tilde\Upsilon_{\Phi}^{\natural}\cdot(-2\pi i\tilde\Upsilon_{\Phi})f=-\tilde\Upsilon_{\Phi}^{\natural}\tilde\Upsilon_{\Phi}f=(4\pi^{2}\nu_t^{\prime\,2}-|2\pi\vec\nu_\Phi|^2)f=0$, and the propagation vector is **null**,
@@ -116,7 +118,7 @@ $$
 
 with $\vec W(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ a fixed vector field, given explicitly in the source in terms of $\alpha=\Omega r\cos\Omega r-\sin\Omega r$ and $\theta_{\mathrm{dua}}=3\alpha+\Omega^2r^2\sin\Omega r$, with the angular dependence of the lowest spherical harmonics.
 
-Three of its properties are the point of the construction. First, the invariant $I_1=\vec E_0^2-c^2\vec B_0^2$ and the pseudo-invariant $I_2=\vec E_0\cdot\vec B_0$ of *The Field-Strength Biquaternion and Its Invariants* are **not zero**. Here $\vec E_0^2$ is the sum of squared components, as in that article: the source's $\vec E$ and $\vec B$ are three-vectors whose units square to $+1$, as in the vector calculus, not spatial units $\vec e_\imath$, which square to $-1$. Both fields are parallel to $\vec W$ and a quarter period apart, so in the source's Gaussian units
+Three of its properties are the point of the construction. First, the invariant $I_1=\vec E_0^2-c^2\vec B_0^2$ and the pseudo-invariant $I_2=\vec E_0\cdot\vec B_0$ of *The Field-Strength Biquaternion and Its Invariants* are **not zero**. Here $\vec E_0^2$ is the sum of squared components, as in that article: the source's $\vec E$ and $\vec B$ are three-vectors whose units square to $+1$, as in the vector calculus, not spatial units $\vec e_{\imath}$, which square to $-1$. Both fields are parallel to $\vec W$ and a quarter period apart, so in the source's Gaussian units
 
 $$
 I_2=-\tfrac12|\vec W|^2\sin 2\Omega r'_t,\qquad I_1=-|\vec W|^2\cos 2\Omega r'_t,
@@ -383,10 +385,10 @@ $$
 with $q_{\mathrm{m}}$ the magnetic charge. The $3$ carries the normalisation, and the source does not display the step: it fixes $F=-k\,(\frac{e}{2\pi\nu_m})\,\tilde{Ξ}\vec e_z\tilde{Ξ}^{\natural}$ with $k=2\pi/3$ and states only that (6.5) follows "as in section 4". The natural reading is the Gaussian $4\pi/c$ on the current, with the $\tfrac12$ of the spinorial Maxwell equation, against $k$: $4\pi/(2k)=3$. That reconstruction is not printed, so the coefficient stands or falls with (6.5) as it appears. What $k$ does **not** do is fix the dimensions — $[F]=QL^{-2}$ and $[\frac{e}{2\pi\nu_m}]=QL$ already force $[\tilde{Ξ}]=L^{-3/2}$ — so its value is chosen for the spectrum. The equation is a Dirac–Hestenes equation exactly when $N=0$, that is at $\theta_{\mathrm{dua}}=\pi/2$ and $\theta_{\mathrm{dua}}=3\pi/2$ — the two angles of the family that the source assigns to the muon and the antimuon. Then $M=m+3mq_{\mathrm{m}}/e$, and the Dirac quantisation condition for a monopole, $\frac{2\pi eq_{\mathrm{m}}}{h\,c}=n/2$, gives $q_{\mathrm{m}}=en/2\alpha$ with $\alpha=\frac{2\pi e^{2}}{h\,c}$ the fine-structure constant, so
 
 $$
-M=m\left(1+\frac{3n}{2\alpha}\right),\qquad n=1:\quad M=206.55\,m_e=105.5\ \mathrm{MeV},
+M=m\left(1+\frac{3n}{2\alpha}\right),\qquad n=1:\quad M=206.55\,m_e=1.881\times10^{-28}\ \mathrm{kg},
 $$
 
-against the measured $105.66$ MeV.
+against the measured $1.8836\times10^{-28}\ \mathrm{kg}$.
 
 The status of the numbers is the point. Nothing in the algebra fixes $n=1$; the source takes it, and the muon mass follows. The **tau** needs a further hypothesis, which the source states as such: that it is an excited state of the muon carrying $16=2^4$ further units of magnetic charge — the hypothesis $n=p^4$ at $p=2$. The units add to the muon's one, so the total is $17$ and not $16$,
 
@@ -394,7 +396,7 @@ $$
 M_\tau=m+\frac{3}{2\alpha}m\left(1+16\right)=m\left(1+17\cdot\frac{3}{2\alpha}\right)=3495\,m_e,
 $$
 
-which is $1786$ MeV at $m_ec^2=0.511$ MeV — the source prints $1785$ — against the measured $1777$. The distinction matters arithmetically: $16$ units alone give $3290\,m_e=1681$ MeV, which is not the tau.
+which is $3.184\times10^{-27}\ \mathrm{kg}$ at $m_ec^2=9.11\times10^{-31}\ \mathrm{kg}$ — the source prints $1785$ — against the measured $1777$. The distinction matters arithmetically: $16$ units alone give $3290\,m_e=2.997\times10^{-27}\ \mathrm{kg}$, which is not the tau.
 
 Beyond the tau the pattern is a proposal, not a derivation, and its arithmetic does not close. The source states the spectrum as
 
@@ -402,7 +404,7 @@ $$
 M_p=m+\frac{3}{2\alpha}m\sum_{l=0}^{p}4^l
 $$
 
-and reads off $M_0=m$, $M_1=m_\mu$, $M_2=m_\tau$, $M_3=20090\,m_e=10291$ MeV. The formula gives none of those numbers. What reproduces the tau is the **last term alone**, $1+4^p$ at $p=2$, which is the $1+16$ of the tau paragraph above; $1+4^p$ and the sum coincide only at $p=1$:
+and reads off $M_0=m$, $M_1=m_\mu$, $M_2=m_\tau$, $M_3=20090\,m_e=1.8345\times10^{-26}\ \mathrm{kg}$. The formula gives none of those numbers. What reproduces the tau is the **last term alone**, $1+4^p$ at $p=2$, which is the $1+16$ of the tau paragraph above; $1+4^p$ and the sum coincide only at $p=1$:
 
 | $p$ | printed | $\sum_{l=0}^{p}4^l$ | from the sum | $1+4^p$ | from the last term |
 |+-|+-|+-|+-|+-|+-|
@@ -411,9 +413,9 @@ and reads off $M_0=m$, $M_1=m_\mu$, $M_2=m_\tau$, $M_3=20090\,m_e=10291$ MeV. Th
 | 2 | $3495\,m_e$ | $21$ | $4318\,m_e$ | $17$ | $3495\,m_e$ |
 | 3 | $20090\,m_e$ | $85$ | $17473\,m_e$ | $65$ | $13362\,m_e$ |
 
-Neither column matches the print. The **sum** shifts the whole sequence by one: it gives the muon where the print gives the electron, so $M_0\ne m$ and every later entry is one step ahead. The **last term** is right at the tau and wrong everywhere else, offering $412\,m_e=211$ MeV and $1029\,m_e=526$ MeV as leptons at $p=0$ and $p=1$, and $13362\,m_e=6828$ MeV at $p=3$. The muon's own number comes from the **separate** formula $M=m(1+3n/2\alpha)$ at $n=1$, and the tau's from the last term at $p=2$; no single reading of (6.24) gives both.
+Neither column matches the print. The **sum** shifts the whole sequence by one: it gives the muon where the print gives the electron, so $M_0\ne m$ and every later entry is one step ahead. The **last term** is right at the tau and wrong everywhere else, offering $412\,m_e=3.76\times10^{-28}\ \mathrm{kg}$ and $1029\,m_e=9.38\times10^{-28}\ \mathrm{kg}$ as leptons at $p=0$ and $p=1$, and $13362\,m_e=1.217\times10^{-26}\ \mathrm{kg}$ at $p=3$. The muon's own number comes from the **separate** formula $M=m(1+3n/2\alpha)$ at $n=1$, and the tau's from the last term at $p=2$; no single reading of (6.24) gives both.
 
-Two entries of the table are unreadable rather than wrong, and the table carries the corrected values. The scan shows the tau coefficient as $3845\,m_e$, where $1+17\cdot\frac{3}{2\alpha}=3495\,m_e$; the $1785$ MeV printed beside it belongs to $3495\,m_e$, while $3845\,m_e$ is $1965$ MeV, so a digit has slipped between the two numbers and $3495$ is the intended coefficient. The $M_3$ entry, $20090\,m_e$, is $10266$ MeV at $m_ec^2=0.511$ MeV, not the $10291$ MeV printed beside it — the two entries would need different electron rest energies to agree with their own MeV figures. What the table above rests on is the **formula** rather than the digits, and the formula does not reproduce the sequence it is said to give. The hypothesis itself is called ad hoc in the paper.
+Two entries of the table are unreadable rather than wrong, and the table carries the corrected values. The scan shows the tau coefficient as $3845\,m_e$, where $1+17\cdot\frac{3}{2\alpha}=3495\,m_e$; the $3.182\times10^{-27}\ \mathrm{kg}$ printed beside it belongs to $3495\,m_e$, while $3845\,m_e$ is $3.503\times10^{-27}\ \mathrm{kg}$, so a digit has slipped between the two numbers and $3495$ is the intended coefficient. The $M_3$ entry, $20090\,m_e$, is $1.8301\times10^{-26}\ \mathrm{kg}$ at $m_ec^2=9.11\times10^{-31}\ \mathrm{kg}$, not the $1.8345\times10^{-26}\ \mathrm{kg}$ printed beside it — the two entries would need different electron rest energies to agree with their own kilogram figures. What the table above rests on is the **formula** rather than the digits, and the formula does not reproduce the sequence it is said to give. The hypothesis itself is called ad hoc in the paper.
 
 ## Maxwell and the Massless Dirac Equation
 

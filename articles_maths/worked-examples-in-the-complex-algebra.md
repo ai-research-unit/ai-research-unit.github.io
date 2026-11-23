@@ -11,7 +11,7 @@ $$
 Q_1 = 3 + 4i, \qquad Q_2 = 1 - 2i,
 $$
 
-chosen because their arithmetic is exact and their norms are small squares and small integers: $\langle Q_1\rangle_{*} = 25$ and $\langle Q_2\rangle_{*} = 5$, so that the inverse and the Galois action both display rational data. Where a statement needs a degenerate example, the element $0$ and the real and imaginary points of the previous articles are used. The conventions are those of *Complex Algebra*: basis $1$, $i$, $i^2 = -1$, involution $\bar{Q} = q - i q'$, norm $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$.
+chosen because their arithmetic is exact and their norms are small squares and small integers: $\langle Q_1\rangle_{*} = 25$ and $\langle Q_2\rangle_{*} = 5$, so that the inverse and the Galois action both display rational data. Where a statement needs a degenerate example, the element $0$ and the real and imaginary points of the previous articles are used. The conventions are those of *Complex Algebra*: basis $1$, $i$, $i^2 = -1$, involution $\bar{Q} = q - i q'$, norm $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'{}^2$.
 
 Every numerical value below is recomputed exactly; where a trigonometric value is not rational it is given to the stated number of decimals and the exact replacement is indicated.
 
@@ -190,7 +190,7 @@ The eigencomponents of conjugation are $Q_{1,+} = 3 \in \mathbb{R}_{\mathbb{C}}$
 | $\sigma = \bar{\cdot}$ | the nontrivial $\mathbb{R}$-automorphism, the Galois action |
 | $Q_{1,\pm} = \tfrac12(Q_1 \pm \bar{Q}_1)$ | the eigencomponents of conjugation |
 | $\mathbb{R}_{\mathbb{C}}, i\mathbb{R}_{\mathbb{C}}$ | the real and imaginary subspaces |
-| $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ | the norm |
+| $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'{}^2$ | the norm |
 | $\mathsf{M}_2(Q) = qI + q'J$ | the Cayley matrix of multiplication by $Q$, the $2\times2$ matrix model |
 
 ## Further Reading

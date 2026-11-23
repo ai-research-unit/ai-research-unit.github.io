@@ -74,12 +74,12 @@ so the anti-self-adjoint part is closed under the commutator and is a **Lie alge
 **Theorem (the circle product).** The **circle product** (the anticommutator) $H\bullet H' = \tfrac12(HH'+H'H)$ of two self-adjoint operators is self-adjoint,
 
 $$
-H^{\ast} = H,\ H'^{\ast} = H' \ \Longrightarrow \ (H\bullet H')^{\ast} = H\bullet H' ,
+H^{\ast} = H,\ H'{}^{\ast} = H' \ \Longrightarrow \ (H\bullet H')^{\ast} = H\bullet H' ,
 $$
 
 and it is commutative and satisfies the Jordan identity, so the self-adjoint part is a **Jordan algebra**. This was checked: $H\bullet H'$ landed in $\mathrm{Herm}$ for generic self-adjoint $H,H'$.
 
-**Proof.** $(HH'+H'H)^{\ast} = H'^{\ast}H^{\ast}+H^{\ast}H'^{\ast} = H'H+HH'$, the same operator.
+**Proof.** $(HH'+H'H)^{\ast} = H'{}^{\ast}H^{\ast}+H^{\ast}H'{}^{\ast} = H'H+HH'$, the same operator.
 
 **Remark (the two halves of the Cartan decomposition).** The splitting $\mathrm{End}_A(S) = \mathrm{Herm}\oplus\mathrm{Skew}$ is the algebraic Cartan decomposition of the $\ast$-algebra: the anti-Hermitian part is the Lie algebra of the group of form-preserving operators, the self-adjoint part is closed under the circle product and is a Jordan algebra, and the commutator couples the two halves with the signs of a graded Lie algebra. The positive part of the self-adjoint half is the Hermitian cone of *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*. The geometric reading — the self-adjoint half as the tangent space of a symmetric space, the group as its motion group — is made in Part IV, where a tangent space is available.
 

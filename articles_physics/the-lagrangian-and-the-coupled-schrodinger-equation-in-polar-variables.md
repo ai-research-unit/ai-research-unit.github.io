@@ -42,7 +42,7 @@ The substitution. The element-form companion's action is Article 3's,
 
 $$
 S=\int dt'\,d^{3}x\;\mathrm{Sc}\Big[\frac{i h}{4\pi}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)
--\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}}\big(D_\imath\tilde\Xi\big)^{*}\big(D_\imath\tilde\Xi\big)
+-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}}\big(D_{\imath}\tilde\Xi\big)^{*}\big(D_{\imath}\tilde\Xi\big)
 +ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi\Big],
 $$
 

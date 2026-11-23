@@ -89,10 +89,10 @@ There is no coupling between the two coordinates: the root problem splits into t
 **Remark (the scalar form).** In the basis $1,j$ the same equations read
 
 $$
-x^{2}+x'^{2}=1,\qquad 2xx'=0,
+x^{2}+x'{}^{2}=1,\qquad 2xx'=0,
 $$
 
-because $Ζ^{2}=(x^{2}+x'^{2})+2xx'j$. The second equation forces $x=0$ or $x'=0$; the first then gives $x=\pm1$ with $x'=0$, or $x=0$ with $x'=\pm1$. The four solutions are $\pm1$ and $\pm j$.
+because $Ζ^{2}=(x^{2}+x'{}^{2})+2xx'j$. The second equation forces $x=0$ or $x'=0$; the first then gives $x=\pm1$ with $x'=0$, or $x=0$ with $x'=\pm1$. The four solutions are $\pm1$ and $\pm j$.
 
 ### The Trivial Roots
 
@@ -155,7 +155,7 @@ The verification is the whole computation: the split sign $j^{2}=+1$ is what mak
 
 **Proposition (the roots of $-1$).** The equation $Ζ^{2}=-1$ has **no solution** in $\mathbb{C}_{\mathrm{spl}}$.
 
-**Proof.** In the idempotent coordinates the equation is $Ζ_{+}^{2}=-1$ and $Ζ_{-}^{2}=-1$, impossible over $\mathbb{R}$; in the scalar coordinates it is $x^{2}+x'^{2}=-1$ and $2xx'=0$, and the first equation is impossible because the left side is non-negative.
+**Proof.** In the idempotent coordinates the equation is $Ζ_{+}^{2}=-1$ and $Ζ_{-}^{2}=-1$, impossible over $\mathbb{R}$; in the scalar coordinates it is $x^{2}+x'{}^{2}=-1$ and $2xx'=0$, and the first equation is impossible because the left side is non-negative.
 
 The result is collected in the table.
 
@@ -185,7 +185,7 @@ $$
 
 so the real roots are timelike units and the imaginary roots are spacelike units.
 
-**Proof.** $\langle q+jq'\rangle_{*}=q^{2}-q'^{2}$; at $\pm1$ the pair is $(\pm1,0)$ and at $\pm j$ it is $(0,\pm1)$.
+**Proof.** $\langle q+jq'\rangle_{*}=q^{2}-q'{}^{2}$; at $\pm1$ the pair is $(\pm1,0)$ and at $\pm j$ it is $(0,\pm1)$.
 
 The status of the roots is collected in the table.
 
@@ -331,16 +331,16 @@ $$
 **Proof.** Write $Q=q+jq'$ and impose $Q^{2}=Q$. Since
 
 $$
-Q^{2}=(q^{2}+q'^{2})+2qq'j,
+Q^{2}=(q^{2}+q'{}^{2})+2qq'j,
 $$
 
 the equation is equivalent to
 
 $$
-q^{2}+q'^{2}=q,\qquad 2qq'=q'.
+q^{2}+q'{}^{2}=q,\qquad 2qq'=q'.
 $$
 
-The second factors as $q'(2q-1)=0$. If $q'=0$ the first gives $q^{2}=q$, hence $q=0$ or $q=1$: the idempotents $0$ and $1$. If $q'\neq0$ then $q=\tfrac12$, and the first gives $\tfrac14+q'^{2}=\tfrac12$, hence $q'^{2}=\tfrac14$ and $q'=\pm\tfrac12$: the idempotents $\Pi_{+}$ and $\Pi_{-}$. There are no others.
+The second factors as $q'(2q-1)=0$. If $q'=0$ the first gives $q^{2}=q$, hence $q=0$ or $q=1$: the idempotents $0$ and $1$. If $q'\neq0$ then $q=\tfrac12$, and the first gives $\tfrac14+q'{}^{2}=\tfrac12$, hence $q'{}^{2}=\tfrac14$ and $q'=\pm\tfrac12$: the idempotents $\Pi_{+}$ and $\Pi_{-}$. There are no others.
 
 ### The Correspondence with the Roots of One
 

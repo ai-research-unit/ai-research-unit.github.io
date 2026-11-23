@@ -97,7 +97,7 @@ separately, and it does so for every $\tilde U$, invertible or not. The adjoint 
 
 ### The Indefinite Form
 
-Take $\tilde Q\in\mathbb{B}_\Psi$ and write it as the image of a real four-vector, $\tilde Q=q_t+\sum_{\imath\in\{x,y,z\}} iq_\imath\vec e_\imath$, with $q_t$ and the $q_\imath$ real. Then
+Take $\tilde Q\in\mathbb{B}_\Psi$ and write it as the image of a real four-vector, $\tilde Q=q_t+\sum_{\imath\in\{x,y,z\}} iq_{\imath}\vec e_{\imath}$, with $q_t$ and the $q_{\imath}$ real. Then
 
 $$
 \det\mathsf{M}_2(\tilde U\tilde Q\tilde U^{*})=\det\mathsf{M}_2(\tilde U)\det\mathsf{M}_2(\tilde Q)\overline{\det\mathsf{M}_2(\tilde U)}

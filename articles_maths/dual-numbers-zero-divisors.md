@@ -100,7 +100,7 @@ Q \in \mathcal{Z} \implies Q^2 = 0
 \;}.
 $$
 
-**Proof.** If $Q = \varepsilon q'$ then $Q^2 = q'^2 \varepsilon^2 = 0$.
+**Proof.** If $Q = \varepsilon q'$ then $Q^2 = q'{}^2 \varepsilon^2 = 0$.
 
 So the zero divisors do not merely have a nonzero annihilator; each one is annihilated by itself. This is the *nilpotent direction*: the maximal ideal is a square-zero ideal, and its nonzero elements are the zero divisors.
 

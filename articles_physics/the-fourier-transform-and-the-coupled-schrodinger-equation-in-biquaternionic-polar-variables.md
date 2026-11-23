@@ -18,7 +18,7 @@ The companion articles. *The Fourier Transform and the Coupled Schrödinger Equa
 
 The chart, its word and its norms are those of *The Schrödinger Equation in Biquaternionic Polar Variables*. The covariant logarithmic derivative, the two invariants and the gauge direction are those of *The Coupled Schrödinger Equation in Biquaternionic Polar Variables*. The symbol's translation identity and its sign are those of *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form*.
 
-The covariant slots. $D_t=\partial_{t'}-\frac{2\pi iϙ\omicron_{\mathrm{pot}}}{h}$ and $D_\imath=\partial_\imath+\frac{2\pi iϙ A_\imath}{h}$, with $\omicron_{\mathrm{pot}}$ and $\vec A$ real. The two signs differ, and the difference is the metric $i$ of the material-time derivative.
+The covariant slots. $D_t=\partial_{t'}-\frac{2\pi iϙ\omicron_{\mathrm{pot}}}{h}$ and $D_{\imath}=\partial_{\imath}+\frac{2\pi iϙ A_{\imath}}{h}$, with $\omicron_{\mathrm{pot}}$ and $\vec A$ real. The two signs differ, and the difference is the metric $i$ of the material-time derivative.
 
 The two invariants. With $\theta=\theta_{\mathrm{pha}}$,
 
@@ -28,7 +28,7 @@ $$
 \mathcal E=-\frac{h}{2\pi}\,\partial_{t'}\theta_{\mathrm{pha}}+ϙ\omicron_{\mathrm{pot}} .
 $$
 
-The substitution. $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+2\pi i\vec\nu_\Phi\cdot\vec r)$, so the covariant slots become the numbers $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $h\,\nu_{\Phi,k}+ϙ A_\imath$.
+The substitution. $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+2\pi i\vec\nu_\Phi\cdot\vec r)$, so the covariant slots become the numbers $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $h\,\nu_{\Phi,k}+ϙ A_{\imath}$.
 
 ## The Transform's Kernel in the Coupled Chart
 
@@ -74,7 +74,7 @@ The bracket is a number at each time. $\partial_{t'}\theta_{\mathrm{pha}}$ is a 
 
 The exact case is the constant bracket. For a plane wave the bracket is constant, the symbol exists, and the equation reduces to the algebraic relation $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}=\lvert h\,\vec\nu_{\Phi}-q\vec A\rvert^{2}/(2m)$. Nothing is approximated, and the reduction is exact because the coefficient is constant.
 
-**The varying case has no symbol.** An invertible element whose phase is $\theta=\omega_0t'+\tfrac12\alpha t'^{2}$ has a bracket $\omega_0+\alpha t'$ that varies, and its transform is not supported at one frequency. On a grid of sixty-four points the effective number of modes $1/\sum_jp_j^{2}$ was $1.00$ for an integer tone, $5.64$ at $\alpha=1$ and $26.20$ at $\alpha=4$. The spread grows with the chirp and the symbol does not exist for any of them.
+**The varying case has no symbol.** An invertible element whose phase is $\theta=\omega_0t'+\tfrac12\alpha t'{}^{2}$ has a bracket $\omega_0+\alpha t'$ that varies, and its transform is not supported at one frequency. On a grid of sixty-four points the effective number of modes $1/\sum_jp_j^{2}$ was $1.00$ for an integer tone, $5.64$ at $\alpha=1$ and $26.20$ at $\alpha=4$. The spread grows with the chirp and the symbol does not exist for any of them.
 
 So the model's domain is the constant bracket. That is the chart's way of stating the licence of the companion article: constant coefficients. The licence is on the bracket and not on the coefficients of the equation, and the two coincide for a plane wave.
 
@@ -177,7 +177,7 @@ The invariants $\vec\pi$ and $\mathcal E$ are gauge invariant and field dependen
 | $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge factor; central, hence commuting with the kernel |
 | $e^{-i\theta_{\mathrm{pwp}}}$ | The transform's kernel; central, one coordinate |
 | $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ | The covariant frequency; the invariant $\mathcal E$ on a mode |
-| $h\,\nu_{\Phi,k}+ϙ A_\imath$ | The mechanical momentum; the invariant $\vec\pi$ on a mode |
+| $h\,\nu_{\Phi,k}+ϙ A_{\imath}$ | The mechanical momentum; the invariant $\vec\pi$ on a mode |
 | $h_t-ϙ\omicron_{\mathrm{pot}}\pm\lvert\vec h_\Psi-q\vec A\rvert$ | The eigenvalue pair; the translation and the gap |
 | $1.232882$, $1.503329$ | The gap free and with $ϙ\vec A=(0.35,0.25,0)$ |
 | $1.00$, $5.64$, $26.20$ | Effective mode counts of a chirped unit at rates $0$, $1$, $4$ |

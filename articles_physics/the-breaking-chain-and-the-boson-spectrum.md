@@ -4,6 +4,8 @@
 
 **The layer.** The chain is a statement about a group breaking on a formal copy of the carrier, and the spectrum is a property of the resulting broken phase. Its Layer-A content is arithmetic at one step only: the six generators that leave at $M_{C}$ are the directions that move the canonical line, and that is why they carry no rank.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 **The question.** In what order does $G_{4LR}$ break, at what scales, by which vacuum directions, and what becomes of each of the twenty-one gauge bosons on the way down?
 
 **The answer.**
@@ -25,7 +27,7 @@ with the chain $21\to15\to12\to9$ in dimensions and $5\to5\to4\to3$ in rank, dri
 
 **Not established.** The three scales are not predicted. The minimal matter content does not run correctly: it fails, and the size and sign of the failure are in the coupling article. $M_{R}$ and $M_{C}$ are equal in the minimal case; splitting them needs a second field.
 
-**Two meanings of "neutral".** Two counts are in play in this model and they are not the same. This article's three neutral states are gauge fields — $W^3_L$, $W^3_R$ and $B$, the fields that mix before the photon separates out. The scalar sector's two neutral states are real scalars, the $125$ GeV candidate and its heavier partner. Three gauge, two scalar, and neither count constrains the other; adding $3+2$ adds gauge bosons to scalars.
+**Two meanings of "neutral".** Two counts are in play in this model and they are not the same. This article's three neutral states are gauge fields — $W^3_L$, $W^3_R$ and $B$, the fields that mix before the photon separates out. The scalar sector's two neutral states are real scalars, the $2.0\times10^{-8}$ J candidate and its heavier partner. Three gauge, two scalar, and neither count constrains the other; adding $3+2$ adds gauge bosons to scalars.
 
 ## The Flag, Which Is the Chain
 
@@ -235,7 +237,7 @@ The heavy eigenvalue at $v\to0$ is $0.625\,g^2v_R^2=\tfrac58g^2v_R^2$, and the $
 
 **What stays.** The photon's composition is a mixture with coefficients proportional to the couplings; the coefficients are carried symbolically, and the article never substitutes a value for them. The mixing is group theory, and the value of the mixing is the coupling article's business.
 
-**The failure.** The equal-coupling condition implies two numbers at once, $\sin^2\theta_W=\tfrac38$ and $g_4=g_L$, and they are met four decades apart — $10^{13}$ GeV and $10^{17}$ GeV — so no single threshold satisfies both. That is the failure; *The Twenty-One, Classified* of the coupling article gives the arithmetic, and it is neither weakened here nor repeated.
+**The failure.** The equal-coupling condition implies two numbers at once, $\sin^2\theta_W=\tfrac38$ and $g_4=g_L$, and they are met four decades apart — $1.6\times10^{-3}$ J and $1.6\times10^{1}$ J — so no single threshold satisfies both. That is the failure; *The Twenty-One, Classified* of the coupling article gives the arithmetic, and it is neither weakened here nor repeated.
 
 ## What Is Robust and What Is Not
 

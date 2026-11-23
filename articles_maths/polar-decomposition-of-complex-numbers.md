@@ -29,7 +29,7 @@ The symbols are those of *Complex Algebra*, *Complex Norm and Invertibility* and
 Let $Q=q+iq'\neq0$. The **modulus** and the **principal angle** are
 
 $$
-\varrho=\sqrt{\langle Q\rangle_{*}}=\sqrt{q^2+q'^2}>0, \qquad
+\varrho=\sqrt{\langle Q\rangle_{*}}=\sqrt{q^2+q'{}^2}>0, \qquad
 \theta=\operatorname{Arg}Q=\operatorname{atan2}(q',q)\in(-\pi,\pi].
 $$
 
@@ -107,7 +107,7 @@ The data of the principal decomposition are collected in one table.
 | datum | formula |
 |---|---|
 | element | $Q=q+iq'\neq0$ |
-| modulus | $\varrho=\sqrt{q^2+q'^2}$ |
+| modulus | $\varrho=\sqrt{q^2+q'{}^2}$ |
 | angle | $\theta=\operatorname{atan2}(q',q)\in(-\pi,\pi]$ |
 | exponent | $Q_{\log}=\operatorname{Log}Q=\ln \varrho+i\theta$ |
 | scale | $\exp(\ln \varrho)=\varrho$ |
@@ -146,14 +146,14 @@ $$
 In coordinates,
 
 $$
-Q_{\log}=\tfrac12\ln(q^2+q'^2)+i\bigl(\operatorname{atan2}(q',q)+2\pi k\bigr).
+Q_{\log}=\tfrac12\ln(q^2+q'{}^2)+i\bigl(\operatorname{atan2}(q',q)+2\pi k\bigr).
 $$
 
 The two coordinates have different roles.
 
 | coordinate | formula | role |
 |---|---|---|
-| $q_{\log}=\operatorname{Re}Q_{\log}$ | $\tfrac12\ln(q^2+q'^2)$ | logarithmic scale, unique |
+| $q_{\log}=\operatorname{Re}Q_{\log}$ | $\tfrac12\ln(q^2+q'{}^2)$ | logarithmic scale, unique |
 | $q'_{\log}=\operatorname{Im}Q_{\log}$ | $\operatorname{atan2}(q',q)+2\pi k$ | angle, one value for each $k$ |
 
 The real part is unique; it is $\ln \varrho$. The imaginary part is one number for each integer $k$, and the numbers differ by $2\pi$. Hence every $Q\neq0$ has a logarithm, and no logarithm is unique. The ambiguity is exactly the kernel $2\pi i\mathbb{Z}$ of the exponential.
@@ -418,7 +418,7 @@ Every nonzero complex number has exactly one polar decomposition with the princi
 
 $$
 Q=\exp(\ln \varrho)\exp(i\theta), \qquad
-\varrho=\sqrt{\langle Q\rangle_{*}}=\sqrt{q^2+q'^2}>0, \qquad
+\varrho=\sqrt{\langle Q\rangle_{*}}=\sqrt{q^2+q'{}^2}>0, \qquad
 \theta=\operatorname{Arg}Q=\operatorname{atan2}(q',q)\in(-\pi,\pi],
 $$
 
@@ -435,7 +435,7 @@ The exponential form is the third of the three polar decompositions of $\mathbb{
 | symbol | meaning |
 |---|---|
 | $Q=q+iq'$ | a complex number, $q$ the real part, $q'$ the imaginary part |
-| $\langle Q\rangle_{*}=Q\bar Q=q^2+q'^2$ | the norm, positive definite |
+| $\langle Q\rangle_{*}=Q\bar Q=q^2+q'{}^2$ | the norm, positive definite |
 | $\varrho=\sqrt{\langle Q\rangle_{*}}$ | the modulus, a positive real |
 | $\ln \varrho$ | the logarithmic scale |
 | $\theta$ | the angle, defined modulo $2\pi$; $\operatorname{Arg}Q=\operatorname{atan2}(q',q)\in(-\pi,\pi]$ is the principal representative |

@@ -14,7 +14,7 @@ The article is organised as follows. The next section fixes what is being counte
 
 ## What Is Being Counted
 
-The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\imath^2 = -e_t$, $\vec e_x\vec e_y = -\vec e_y\vec e_x = \vec e_z$, and central scalar imaginary $i$. A general element is
+The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_{\imath}^2 = -e_t$, $\vec e_x\vec e_y = -\vec e_y\vec e_x = \vec e_z$, and central scalar imaginary $i$. A general element is
 
 $$
 \tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z, \qquad Q_{\imath} = q_{\imath} + iq'_{\imath} \in \mathbb{C},
@@ -132,7 +132,7 @@ $$
 M = \sum_{\imath\in\{t,x,y,z\}} \mathsf{M}_2(e_{\imath})\otimes Q_{\imath}, \qquad \mathsf{M}_2(e_t) = I_2,
 $$
 
-where $\mathsf{M}_2$ is the isomorphism of *The Element and Operator Representations* and $\otimes$ is the Kronecker product, taken with $\mathsf{M}_2$ first: the indices of $\mathsf{M}_2$ are the block indices of the image and the array indices run inside the blocks. With $\mathsf{M}_2(\vec e_\imath) = -i\sigma_\imath$ in the corpus convention the image is $I_2\otimes Q_t$ plus the three Pauli–Kronecker terms multiplied by $-i$, and the four quadrants of a square image, of size $n\times n$, are the blocks $A$ and $B$ below. The order of the two factors is a convention, the two orders being exchanged by a permutation of indices; the source assembles it in the same order, and the corpus's array-level statement of the correspondence is in *The Realification and the Effect of the Change of Scalars*.
+where $\mathsf{M}_2$ is the isomorphism of *The Element and Operator Representations* and $\otimes$ is the Kronecker product, taken with $\mathsf{M}_2$ first: the indices of $\mathsf{M}_2$ are the block indices of the image and the array indices run inside the blocks. With $\mathsf{M}_2(\vec e_{\imath}) = -i\sigma_{\imath}$ in the corpus convention the image is $I_2\otimes Q_t$ plus the three Pauli–Kronecker terms multiplied by $-i$, and the four quadrants of a square image, of size $n\times n$, are the blocks $A$ and $B$ below. The order of the two factors is a convention, the two orders being exchanged by a permutation of indices; the source assembles it in the same order, and the corpus's array-level statement of the correspondence is in *The Realification and the Effect of the Change of Scalars*.
 
 Three properties of this image are used constantly, and each is exact:
 
@@ -242,7 +242,7 @@ The split the arithmetic respects is $\mathbb{B} = \mathbb{B}_{H}\oplus \mathbb{
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $Q_{\imath}=q_{\imath}+iq'_{\imath}$ | Complex coefficients; the eight real parameters are $q_{\imath},q'_{\imath}$ |
 | $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$ | Real-quaternion and antiquaternion halves, the complex-conjugation split |
@@ -255,7 +255,7 @@ The split the arithmetic respects is $\mathbb{B} = \mathbb{B}_{H}\oplus \mathbb{
 | $24$ | the multiplication count of one general biquaternion product, corner–Hadamard with Gauss |
 | $8$ | the count on either half, $\mathbb{B}_{H}$ or $\mathbb{B}_{iH}$ |
 | $\tilde{Q}\in\mathbb{B}^{n\times m}$ | A matrix-valued biquaternion; four coefficient matrices of size $n\times m$ |
-| $M=I_n\otimes\mathsf{M}_2(Q_t)+\sum_{\imath\in\{x,y,z\}}\mathsf{M}_2(\vec e_\imath)\otimes Q_\imath$ | The complex image, size $2n\times2m$ |
+| $M=I_n\otimes\mathsf{M}_2(Q_t)+\sum_{\imath\in\{x,y,z\}}\mathsf{M}_2(\vec e_{\imath})\otimes Q_{\imath}$ | The complex image, size $2n\times2m$ |
 | $M^+=\begin{pmatrix}A&B\\-B^{*}&A^{*}\end{pmatrix}$ | Image block of a real-quaternion array |
 | $M^-=\begin{pmatrix}G&H\\H^{*}&-G^{*}\end{pmatrix}$ | Image block of an antiquaternion array |
 | $U_\alpha=\frac{1}{\sqrt2}\begin{pmatrix}I&I\alpha I&-\alpha I\end{pmatrix}$ | Hadamard-type $*$-unitary, $|\alpha|=1$, $M$ block anti-diagonal |

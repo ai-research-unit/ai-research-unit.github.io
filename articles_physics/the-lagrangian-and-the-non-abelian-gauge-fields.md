@@ -34,7 +34,7 @@ What is not new. The Yang–Mills action is standard, and its derivation is a pa
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\imath^{2}=-e_t$; the material sector is $\mathbb{B}_\Phi$; the $\mathrm{SU}(2)$ factor is spanned by the anti-Hermitian generators $T_a$, $a=1,2,3$.
+The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the material sector is $\mathbb{B}_\Phi$; the $\mathrm{SU}(2)$ factor is spanned by the anti-Hermitian generators $T_a$, $a=1,2,3$.
 
 The two traces. $\mathrm{Tr}$ is the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$; $\mathrm{Sc}$ is the coefficient of $e_t$ in the element; and $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is the corpus's informational reduction, which is not used in this article's action and is the subject of the reality section.
 
@@ -129,7 +129,7 @@ which is the parent's equation. The covariant derivative in it is the same objec
 
 Why the equation is not gauge invariant and the action is. $F_{\imath\jmath}$ transforms homogeneously, so $D_{\imath} F_{\imath\jmath}$ does too, and the equation is covariant; the action is invariant because the trace is cyclic. The difference between covariance and invariance is the difference between the field strength's transformation and the trace's, and both are needed: the action must be invariant to be a number, and the equation must be covariant to be consistent.
 
-**The Bianchi identity, and why it is not the equation.** $D_\imath F_{\imath\jmath}+D_{\imath} F_{\jmathk}+D_{\jmath} F_{k\imath}=0$ holds identically for any $A_{\imath}$, because the curvature is a commutator. It is not the equation of motion; it is the integrability condition, and the two are related as the Jacobi identity is related to the structure constants. The equation is the statement that the theory is on shell; the identity is the statement that the curvature exists.
+**The Bianchi identity, and why it is not the equation.** $D_{\imath} F_{\imath\jmath}+D_{\imath} F_{\jmath k}+D_{\jmath} F_{k\imath}=0$ holds identically for any $A_{\imath}$, because the curvature is a commutator. It is not the equation of motion; it is the integrability condition, and the two are related as the Jacobi identity is related to the structure constants. The equation is the statement that the theory is on shell; the identity is the statement that the curvature exists.
 
 ## The Constraints the Action Imposes: Gauss's Law and Two Polarizations
 
@@ -171,7 +171,7 @@ Why the current carries the field. The current is bilinear in the gauge field an
 
 Why the conservation is covariant and not ordinary. $\partial_{\imath} j_{a,\imath}=0$ fails; $D_{\imath} j_{a,\imath}=0$ holds. The ordinary divergence differs from the covariant one by a term proportional to the connection, and that term is the statement that the current is not gauge invariant by itself.
 
-Energy–momentum. Translation invariance gives $T_{\imath\jmath}=\mathrm{Tr}(F_{\imathk}F_{\jmathk})-\tfrac14g_{\imath\jmath}\mathrm{Tr}(F^2)$-type expression, symmetric and traceless at the classical level. The tracelessness is the classical scale invariance, and its quantum violation is the beta function.
+Energy–momentum. Translation invariance gives $T_{\imath\jmath}=\mathrm{Tr}(F_{\imath k}F_{\jmath k})-\tfrac14g_{\imath\jmath}\mathrm{Tr}(F^2)$-type expression, symmetric and traceless at the classical level. The tracelessness is the classical scale invariance, and its quantum violation is the beta function.
 
 **What there is not.** No topological current in the classical action — the $\theta$ term is a separate total derivative — and no central phase.
 

@@ -4,6 +4,8 @@
 
 The non-relativistic limit of *The Non-Relativistic Limit of Relativistic Mechanics in Biquaternionic Form* truncates one element by a ratio of its own coefficients. The element is $\tilde V_{\Phi}=\gamma\left(ic\,e_{t}+\vec v\right)$ and the ratio is $\beta=\lvert\vec v\rvert/c$. The parameter, the error and the smallness are all internal to the element.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 Can a second limit of the same kind remove the quantum? The answer has two halves.
 
 On the solutions, yes. A state written as an amplitude and a phase carries one dimensionless number, $\epsilon=1/(2\pi\nu_{\Phi}L)$, where $L$ is the length over which the amplitude varies. When it is small the phase obeys the Hamilton–Jacobi equation alone and the amplitude obeys the transport equation. The state has become a ray.
@@ -43,7 +45,7 @@ The collapse is the rest frame, $\beta\to0$ at fixed $\nu_{\Phi}$. That is a mem
 
 Every internal ratio is already one number. The three wave numbers form a right triangle with legs $\nu_{\Phi}$ and $\nu_m$ and hypotenuse $\nu_t^{\prime}$. A right triangle has one shape parameter, so $\frac{2\pi\nu_{\Phi}}{2\pi\nu_m}=\gamma\beta$, $\frac{2\pi\nu_t^{\prime}}{2\pi\nu_m}=\gamma$ and $\frac{2\pi\nu_{\Phi}}{2\pi\nu_t^{\prime}}=\beta$ are functions of $\beta$ alone. *The Three Wavenumbers of a Particle* says the same: the single parameter of the whole section is $\nu_{\Phi}/\nu_m$. No internal ratio can carry a second limit, because the triangle has no second shape.
 
-| candidate | electron, $\beta=0.01$, $L=1\ \mathrm{nm}$ | verdict |
+| candidate | electron, $\beta=0.01$, $L=1\times10^{-9}\ \mathrm{m}$ | verdict |
 |---|---|---|
 | $\beta=\lvert\vec v\rvert/c$ | $10^{-2}$ | the other limit |
 | $\epsilon=1/(2\pi\nu_{\Phi}L)$ | $3.86\times10^{-2}$ | the non-quantum limit |
@@ -52,7 +54,7 @@ Every internal ratio is already one number. The three wave numbers form a right 
 
 The last row is not independent: $\frac{\Omega}{2\pi\nu_m}=\gamma-1=\frac{\beta^{2}}{2}$. Two parameters remain, one internal and one external.
 
-The third row is not a limit. A small $1/(\nu_mL)$ says the region is large against the mass length, the validity of the one-particle description: a precondition of quantum mechanics, not its removal. *The Non-Quantum Limit of the Free Klein–Gordon Equation* derives the same verdict from the mass shell's sensitivity and states the nesting: $\delta=\epsilon\lvert\vec p\rvert/(mc)<\epsilon$, so the limit implies the window and the window does not imply the limit. The two criteria differ by $\frac{2\pi\nu_m}{2\pi\nu_{\Phi}}=\frac{1}{\gamma\beta}=99.995$, so a reader who took $1/\nu_m$ as the classicality length would put the boundary at $386\ \mathrm{fm}$ where it lies at $38.6\ \mathrm{pm}$.
+The third row is not a limit. A small $1/(\nu_mL)$ says the region is large against the mass length, the validity of the one-particle description: a precondition of quantum mechanics, not its removal. *The Non-Quantum Limit of the Free Klein–Gordon Equation* derives the same verdict from the mass shell's sensitivity and states the nesting: $\delta=\epsilon\lvert\vec p\rvert/(mc)<\epsilon$, so the limit implies the window and the window does not imply the limit. The two criteria differ by $\frac{2\pi\nu_m}{2\pi\nu_{\Phi}}=\frac{1}{\gamma\beta}=99.995$, so a reader who took $1/\nu_m$ as the classicality length would put the boundary at $3.86\times10^{-13}\ \mathrm{m}$ where it lies at $3.86\times10^{-11}\ \mathrm{m}$.
 
 The mass is not the quantum either. Setting $\nu_m=0$ gives $\nu_t^{\prime}=\nu_{\Phi}$, the photon: linear dispersion, exact interference, no particle scale, and more wave-like than the massive case. A plane wave is semiclassical already, so the limit acts only where $A$ varies.
 
@@ -232,12 +234,12 @@ and the difference is the interference term. Read against the count, that is the
 
 ## Case Checked
 
-The electron at $\beta=0.01$. The mass wave number is $2\pi\nu_m=2.589605\times10^{12}\ \mathrm{m^{-1}}$, so $\frac{1}{2\pi\nu_m}=386.159\ \mathrm{fm}$ and $\lambda_m=2.426\ \mathrm{pm}$; the momentum wave number is $2\pi\nu_{\Phi}=2.589735\times10^{10}\ \mathrm{m^{-1}}$.
+The electron at $\beta=0.01$. The mass wave number is $2\pi\nu_m=2.589605\times10^{12}\ \mathrm{m^{-1}}$, so $\frac{1}{2\pi\nu_m}=3.86159\times10^{-13}\ \mathrm{m}$ and $\lambda_m=2.426\times10^{-12}\ \mathrm{m}$; the momentum wave number is $2\pi\nu_{\Phi}=2.589735\times10^{10}\ \mathrm{m^{-1}}$.
 
 | $L$ | $\epsilon$ | $1/(\nu_mL)$ | the limit |
 |---|---|---|---|
-| $1\ \mathrm{pm}$ | $38.61$ | $0.386$ | fails |
-| $1\ \mathrm{nm}$ | $3.861\times10^{-2}$ | $3.862\times10^{-4}$ | holds to $7.5\times10^{-4}$ |
+| $1\times10^{-12}\ \mathrm{m}$ | $38.61$ | $0.386$ | fails |
+| $1\times10^{-9}\ \mathrm{m}$ | $3.861\times10^{-2}$ | $3.862\times10^{-4}$ | holds to $7.5\times10^{-4}$ |
 | $1\ \mathrm{\mu m}$ | $3.861\times10^{-5}$ | $3.862\times10^{-7}$ | holds to $7.5\times10^{-10}$ |
 
 The checks. The Gaussian ratio agrees with a fourth-order difference of $\frac{1}{\nu_{\Phi}^{2}}\lvert\frac{\Delta_\Phi A}{A}\rvert$ at one hundred values of $x/\sigma$ to $1.4\times10^{-6}$, the sign change included. The tables follow from $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$.

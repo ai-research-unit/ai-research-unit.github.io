@@ -138,7 +138,7 @@ The two formulas together say that $m$ and $G$ determine one another when $2$ is
 **Proof.** The coordinates transform by $x = Px'$, so
 
 $$
-x^{T} G x = (Px')^{T} G (Px') = x'^{T} (P^{T} G P)\, x',
+x^{T} G x = (Px')^{T} G (Px') = x'{}^{T} (P^{T} G P)\, x',
 $$
 
 and a quadratic form is determined by its matrix when $2$ is invertible.

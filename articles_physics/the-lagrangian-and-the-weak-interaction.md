@@ -4,6 +4,8 @@
 
 This article writes the charged-current weak interaction as an extremum of an action, and shows that eliminating the $W$ from that action produces the four-fermion contact with the coefficient $G_F$ fixed. It is the action-first companion of *The Weak Interaction in Biquaternionic Form*, which states the currents and the rates; this article asks what functional produces the $V-A$ vertex, and why the contact approximation is as good as it is.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 Its place in the sector. The action here is the charged-current term of the sector's functional, [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html), with the $W$ already massive and the neutral sector dropped. The elimination below is exact only in that truncated setting, and the article says where.
 
 The equation. The parent's equation is the $W$'s own equation with the charged current as source,
@@ -40,11 +42,11 @@ What is not new. The charged current, its $V-A$ form and every rate in the paren
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\imath^{2}=-e_t$; the fermions are elements $\tilde\Xi\in\mathbb{B}$ and the bilinear pairing is $\bar{\tilde\Xi}=\tilde\Xi^{\dagger}iC_0$.
+The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the fermions are elements $\tilde\Xi\in\mathbb{B}$ and the bilinear pairing is $\bar{\tilde\Xi}=\tilde\Xi^{\dagger}iC_0$.
 
 The current. $J^{+}_{\imath}=\bar{\tilde\Xi}_{\mathrm u}iR_{\vec e_z}\gamma_{\imath}(1-\gamma_5)\tilde\Xi_{\mathrm d}$, with $\mathrm u$ the upper and $\mathrm d$ the lower member of a doublet; $J^{-}_{\imath}=(J^{+}_{\imath})^{\dagger}$. The right multiplication by $\vec e_z$ is the corpus's chirality insertion, and the factor $(1-\gamma_5)$ is its component form.
 
-The $W$. $W^{\pm}_{\imath}$ are complex vector fields with mass $M_W=80.377$ GeV; the curvature is $W^{+}_{\imath\jmath}=\partial_{\imath} W^{+}_{\jmath}-\partial_{\jmath} W^{+}_{\imath}$. The coupling is $g$, and the Fermi constant is $G_F=1.1663787\times10^{-5}$ GeV$^{-2}$.
+The $W$. $W^{\pm}_{\imath}$ are complex vector fields with mass $M_W=1.2878\times10^{-8}\ \mathrm{J}$; the curvature is $W^{+}_{\imath\jmath}=\partial_{\imath} W^{+}_{\jmath}-\partial_{\jmath} W^{+}_{\imath}$. The coupling is $g$, and the Fermi constant is $G_F=4.544\times10^{14}$ J$^{-2}$.
 
 The sign convention. The mass term enters with a plus sign after the corpus's sign rule and the curvature term with $-\tfrac12$; the interaction term carries the minus of the coupling. Every sign below follows from that choice.
 
@@ -114,9 +116,9 @@ $$
 \frac{G_F}{\sqrt2}=\frac{g^2}{8M_W^2}\;}
 $$
 
-with the second term of the expansion suppressed by $k^2/M_W^2$. At a momentum transfer of $100$ MeV the ratio is $1.55\times10^{-6}$, so the contact is accurate to a part per million for nuclear beta decay, and this is why the $W$ is never seen as a propagating degree of freedom in that setting.
+with the second term of the expansion suppressed by $k^2/M_W^2$. At a momentum transfer of $1.60\times10^{-11}\ \mathrm{J}$ the ratio is $1.55\times10^{-6}$, so the contact is accurate to a part per million for nuclear beta decay, and this is why the $W$ is never seen as a propagating degree of freedom in that setting.
 
-The coefficient, counted from the action and not remembered. The interaction carries $\frac{g}{2\sqrt2}$; squaring it gives $\frac{g^2}{8}$, and the eliminated mass supplies $M_W^{-2}$, so the contact is $-\frac{g^2}{8M_W^2}J^{+}J^{-}$ and the coefficient is $\frac{G_F}{\sqrt2}$ with no further factor. A reader who meets $\frac{4G_F}{\sqrt2}$ in a textbook is reading a current written $\bar\psi\gamma_{\imath} P_L\psi$: the projector $P_L$ halves the current, so the product of two such currents is four times smaller and the coefficient four times larger. With the full $(1-\gamma_5)$ current used here, the $\frac{4G_F}{\sqrt2}$ form would be wrong by that factor and the muon rate too large by sixteen. The rate computed from the coefficient above, $\Gamma=G_F^2m_\mu^5/(192\pi^3)=3.009\times10^{-19}$ GeV, is $\tau_{\imath}=2.187\times10^{-6}$ s against the measured $2.197\times10^{-6}$ s — $0.44\%$ short, which is the size of the radiative correction the tree-level formula omits — and that agreement is the check on the coefficient.
+The coefficient, counted from the action and not remembered. The interaction carries $\frac{g}{2\sqrt2}$; squaring it gives $\frac{g^2}{8}$, and the eliminated mass supplies $M_W^{-2}$, so the contact is $-\frac{g^2}{8M_W^2}J^{+}J^{-}$ and the coefficient is $\frac{G_F}{\sqrt2}$ with no further factor. A reader who meets $\frac{4G_F}{\sqrt2}$ in a textbook is reading a current written $\bar\psi\gamma_{\imath} P_L\psi$: the projector $P_L$ halves the current, so the product of two such currents is four times smaller and the coefficient four times larger. With the full $(1-\gamma_5)$ current used here, the $\frac{4G_F}{\sqrt2}$ form would be wrong by that factor and the muon rate too large by sixteen. The rate computed from the coefficient above, $\Gamma=G_F^2m_\mu^5/(192\pi^3)=4.82\times10^{-29}$ J, is $\tau_{\imath}=2.187\times10^{-6}$ s against the measured $2.197\times10^{-6}$ s — $0.44\%$ short, which is the size of the radiative correction the tree-level formula omits — and that agreement is the check on the coefficient.
 
 ## The Constraints the Action Imposes: The Contact Is a Limit with a Scale
 
@@ -186,7 +188,7 @@ The three findings. The contact is an exact Gaussian elimination followed by a m
 | $J^{+}_{\imath}=\bar{\tilde\Xi}_{\mathrm u}\gamma_{\imath}(1-\gamma_5)\tilde\Xi_{\mathrm d}$ | charged current |
 | $W^{\pm}_{\imath}$ | charged vector fields, mass $M_W$ |
 | $g$ | weak coupling |
-| $G_F$ | Fermi constant, $1.1663787\times10^{-5}$ GeV$^{-2}$ |
+| $G_F$ | Fermi constant, $1.86874\times10^{-15}\ \mathrm{J}$$^{-2}$ |
 | $G(k)$ | massive-vector propagator $1/(M_W^2-k^2)$ |
 
 ## Further Reading

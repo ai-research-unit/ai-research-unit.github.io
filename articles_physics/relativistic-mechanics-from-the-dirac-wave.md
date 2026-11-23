@@ -4,6 +4,8 @@
 
 The biquaternionic Dirac equation is first order and its solutions are waves. At short wavelength a wave stops being one in the sense that matters, and what remains is a particle with a momentum and a mass. This article carries that out: the relativistic Hamilton–Jacobi equation at leading order, the Lorentz force one step later.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 The claim, stated narrowly. The mass shell is the leading term of a short-wavelength expansion of the Dirac wave. It is not predicted by the algebra nor created by the limit: $\nu_m=\frac{m\,c}{h}$ is already there. What the limit supplies is the reading of the phase gradient as the mechanical momentum, and with it the flow.
 
 The parameter is the companion's. With $\tilde\Xi=A\exp\!\left(i\theta_{\mathrm{phs}}\right)\xi$, the spinor phase $\theta_{\mathrm{phs}}=\frac{2\pi S_{\tilde\Xi}}{h}$ real because the action of the field is real, the small quantity is $\epsilon=1/(2\pi\nu_{\Phi}L)=\frac{h}{2\pi pL}$, $L$ the length over which $A$ varies. The criterion and the error operator are established in *The Non-Quantum Limit of the Biquaternion Model* and are used here, not restated.
@@ -113,7 +115,7 @@ $$
 \vec B=\vec\nabla_\Phi\times\vec A\;}
 $$
 
-with $d/dt=\partial_{t}+\vec v\cdot\nabla$ along the flow. The identity $(\vec v\times\vec B)_{i}=\epsilon_{\imath\jmath\ell}v_{j}B_\imath=v_{j}\partial_{i}A_{j}-v_{j}\partial_{j}A_{i}$ turns the last term into the cross product. The magnetic part is the curl of the potential, and both parts come out of a gradient of a scalar equation.
+with $d/dt=\partial_{t}+\vec v\cdot\nabla$ along the flow. The identity $(\vec v\times\vec B)_{i}=\epsilon_{\imath\jmath\ell}v_{j}B_{\imath}=v_{j}\partial_{i}A_{j}-v_{j}\partial_{j}A_{i}$ turns the last term into the cross product. The magnetic part is the curl of the potential, and both parts come out of a gradient of a scalar equation.
 
 What this is, precisely. Minimal coupling supplies the charge and the potentials; the limit supplies the force. Nothing else enters, not the spin and not $m$ beyond the flow.
 
@@ -129,7 +131,7 @@ which is $\sum_{\imath}\partial_{\imath}(A^{2}\partial_{\imath} S_{\tilde\Xi})=0
 
 Why the spin cannot appear at order zero. The leading multiplier is a single biquaternion and the eikonal is its norm, $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}$. A norm is central, so it commutes with $\xi$ and cannot act on it. **The spin is an order-one effect by construction, not by neglect.**
 
-Where the spin sits, in the corpus's own terms. *From the Spin to the Carriers and the Closures* defines $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_\imath$, Hermitian in $\mathbb{B}_{\Psi}$, with $\mathsf{M}_2(\tilde S_{\Psi,k})=\frac{h}{4\pi}\sigma_\imath$. Three consequences follow, and all three hold here. $\frac{h}{2\pi}$ is not sent to zero in this limit, only $\epsilon$, so $\frac{h}{4\pi}$ survives and the passage removes no spin. The leading eikonal being central, it commutes with every $\tilde S_{\Psi,k}$, which is why the force above carried none. And at order one the operator is the failure of the two orderings to commute, whose tangent form is the field strength contracted with $\sigma_{\imath\jmath}$; its space–space part is $\sum_{\imath\in\{x,y,z\}}\tilde S_{\Psi,k}B_\imath$, so the expected term is $-\frac{ϙ}{m}\sum_{\imath\in\{x,y,z\}}\tilde S_{\Psi,k}B_\imath$, which is $g=2$ as *The Classical Origin of $g=2$ in Biquaternionic Form* has it. This article locates that term rather than deriving it; *The Classical Spinning Particle* names it as open question four, and its $d\tilde P_{\Phi}/d\tau=ϙ\,\mathrm{F}(\tilde V_{\Phi})$ of *The Lorentz Force in Biquaternion Form* is the covariant form of the result above.
+Where the spin sits, in the corpus's own terms. *From the Spin to the Carriers and the Closures* defines $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_{\imath}$, Hermitian in $\mathbb{B}_{\Psi}$, with $\mathsf{M}_2(\tilde S_{\Psi,k})=\frac{h}{4\pi}\sigma_{\imath}$. Three consequences follow, and all three hold here. $\frac{h}{2\pi}$ is not sent to zero in this limit, only $\epsilon$, so $\frac{h}{4\pi}$ survives and the passage removes no spin. The leading eikonal being central, it commutes with every $\tilde S_{\Psi,k}$, which is why the force above carried none. And at order one the operator is the failure of the two orderings to commute, whose tangent form is the field strength contracted with $\sigma_{\imath\jmath}$; its space–space part is $\sum_{\imath\in\{x,y,z\}}\tilde S_{\Psi,k}B_{\imath}$, so the expected term is $-\frac{ϙ}{m}\sum_{\imath\in\{x,y,z\}}\tilde S_{\Psi,k}B_{\imath}$, which is $g=2$ as *The Classical Origin of $g=2$ in Biquaternionic Form* has it. This article locates that term rather than deriving it; *The Classical Spinning Particle* names it as open question four, and its $d\tilde P_{\Phi}/d\tau=ϙ\,\mathrm{F}(\tilde V_{\Phi})$ of *The Lorentz Force in Biquaternion Form* is the covariant form of the result above.
 
 ## Where the Two Limits Meet
 
@@ -143,7 +145,7 @@ The other order is the companion's. Subtracting the rest phase first gives the n
 
 ## Case Checked
 
-The electron at $\beta=0.01$. $2\pi\nu_m=2.589605\times10^{12}\ \mathrm{m^{-1}}$, $\frac{1}{2\pi\nu_m}=386.159\ \mathrm{fm}$ (the wavelength is $\lambda_m=2.426\ \mathrm{pm}$), $mc^{2}=511.00\ \mathrm{keV}$, and $\gamma=1.0000500$, $\gamma-1=5.0004\times10^{-5}$.
+The electron at $\beta=0.01$. $2\pi\nu_m=2.589605\times10^{12}\ \mathrm{m^{-1}}$, $\frac{1}{2\pi\nu_m}=3.86159\times10^{-13}\ \mathrm{m}$ (the wavelength is $\lambda_m=2.426\times10^{-12}\ \mathrm{m}$), $mc^{2}=8.1871\times10^{-14}\ \mathrm{J}$, and $\gamma=1.0000500$, $\gamma-1=5.0004\times10^{-5}$.
 
 | quantity | relativistic | Newtonian | ratio, Newtonian to relativistic |
 |---|---|---|---|

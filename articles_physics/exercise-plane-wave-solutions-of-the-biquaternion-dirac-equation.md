@@ -4,6 +4,9 @@
 
 This is a worked exercise on the biquaternion Dirac equation, written in the biquaternion algebra and on its elements. The field is one biquaternion, the derivative is the corpus gradient $\tilde\nabla_\Phi$, and every result below is a statement about elements and their products. The parent article, *The Biquaternion Dirac Equation — Solutions and the Non-Relativistic Limit*, supplies the equation, the field, the two frequency branches and the mass shell. The present exercise re-derives the parent's results in the algebra and supplies what the parent leaves implicit: the solutions written as elements, the normalisation in the biquaternion pairing, the spin sums as products of elements, the massless limit, the change of the reading of the two parts, and the helicity pieces with their determinant.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
+
 **One operator, two members.** The gradient is the one first-order operator of the equation, and the mass couples two members,
 
 $$
@@ -43,10 +46,10 @@ On the material sector $Q_t=i q'_t$ the time derivative is $\partial/\partial R_
 **The square of the gradient is not scalar.** The product $\tilde\nabla_\Phi\tilde\nabla_\Phi$ is
 
 $$
-\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial^2}{\partial R_t\partial R_\imath},
+\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial^2}{\partial R_t\partial R_{\imath}},
 $$
 
-because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ the coefficient of $\partial^2/\partial R_t\partial R_\imath$ is $e_te_\imath-\vec e_\imath e_t=0$, and the coefficient of $\partial^2/\partial R_{\imath}^2$ is $\varepsilon_{\imath} e_{\imath}^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box_\Phi$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.
+because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ the coefficient of $\partial^2/\partial R_t\partial R_{\imath}$ is $e_te_{\imath}-\vec e_{\imath} e_t=0$, and the coefficient of $\partial^2/\partial R_{\imath}^2$ is $\varepsilon_{\imath} e_{\imath}^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box_\Phi$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.
 
 **The wave element.** A plane wave is $\tilde{Ξ}=\tilde{Ξ}_{0}\exp(i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=2\pi\vec\nu_\Phi\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t/c$, its polarisation $\tilde{Ξ}_{0}$ an element that does not depend on the coordinates. The phase is central, so it commutes with the polarisation, and the gradient differentiates it to left multiplication by
 
@@ -263,13 +266,13 @@ So the labels are locked to the members: **the field annihilated by $\tilde\nabl
 **The position-space reading.** On the material sector the free member reads
 
 $$
--i\,e_t\frac{\partial\tilde{Ξ}}{\partial r'_t}+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial\tilde{Ξ}}{\partial R_\imath}=0 .
+-i\,e_t\frac{\partial\tilde{Ξ}}{\partial r'_t}+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial\tilde{Ξ}}{\partial R_{\imath}}=0 .
 $$
 
 The same line is read for $\partial\tilde{Ξ}/\partial r'_t$:
 
 $$
-\frac{\partial\tilde{Ξ}}{\partial r'_t}=-i\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial\tilde{Ξ}}{\partial R_\imath},
+\frac{\partial\tilde{Ξ}}{\partial r'_t}=-i\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial\tilde{Ξ}}{\partial R_{\imath}},
 $$
 
 one equation on the element, whose two solutions are the two locked states above. The magnitude $\lvert\vec p\rvert$, which the energy carries at $m=0$, is part of the right-hand side and cannot be dropped.
@@ -335,7 +338,7 @@ $$
 
 Equivalently, with $E=hf_{\mathrm{frq}}$ and $\vec p=h\,\vec\nu_\Phi$, the norm is quadratic, so $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=\langle\tilde P_{\Phi}\rangle_{\natural}/\frac{h^{2}}{4\pi^{2}}=-4\pi^{2}\nu_m^{2}$. The mass shell is not a new postulate: it is the statement that the four-wavevector is a timelike element of $\mathbb{B}_{\Phi}$ with the same quaternionic norm as the four-momentum. Here $\nu_m=\frac{mc}{h}$ and $\nu_{\Phi}=\frac{p}{h}$ are the mass and momentum wave numbers.
 
-The two roots $\omega=\pm\sqrt{c^{2}\,4\pi^{2}\nu_{\Phi}^{2}+c^2\,4\pi^{2}\nu_m^{2}}$ are the two frequency branches, and they are the two families $\tilde w$ and $\tilde v$ constructed above; the two helicity values within each branch give the four-dimensional complex solution space. As a numerical check, for an electron ($mc^2=0.510998950\ \mathrm{MeV}$) at $\lvert\vec p\rvert=1\ \mathrm{MeV}/c$, the dispersion gives $E=1.122996\ \mathrm{MeV}$ and $E^2-\vec p^2c^2=0.261120\ \mathrm{MeV}^2=(mc^2)^2$; the wave biquaternion has $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-\nu_m^{2}$ to the digits shown.
+The two roots $\omega=\pm\sqrt{c^{2}\,4\pi^{2}\nu_{\Phi}^{2}+c^2\,4\pi^{2}\nu_m^{2}}$ are the two frequency branches, and they are the two families $\tilde w$ and $\tilde v$ constructed above; the two helicity values within each branch give the four-dimensional complex solution space. As a numerical check, for an electron ($mc^2=8.1871\times10^{-14}\ \mathrm{J}$) at $\lvert\vec p\rvert=5.3443\times10^{-22}\ \mathrm{kg\,m\,s^{-1}}$, the dispersion gives $E=1.7992\times10^{-13}\ \mathrm{J}$ and $E^2-\vec p^2c^2=6.7029\times10^{-27}\ \mathrm{J^2}=(mc^2)^2$; the wave biquaternion has $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-\nu_m^{2}$ to the digits shown.
 
 ## Problem 7: The helicity pieces and the piece determinant
 
@@ -402,7 +405,7 @@ Two objects are needed by the exercise and are not given in the parent: the nega
 | Symbol | Meaning |
 |+-|+-|
 | $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\tilde\nabla_\Phi$ | The biquaternionic gradient, $\sum_{\imath} e_{\imath}\,\partial/\partial R_{\imath}$, four components |
 | $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate, $\sum_{\imath}\varepsilon_{\imath} e_{\imath}\,\partial/\partial R_{\imath}$ |

@@ -61,13 +61,13 @@ $$
 
 is a surjective group homomorphism with kernel $\{1,-1\}$, and each element of the target has exactly two preimages, $u$ and $-u$. It is therefore a two-to-one cover of the circle by itself.
 
-*Proof.* For $u,v\in \mathrm{U}(1)$ the identity $\sigma(uv)=(uv)^{2}=u^{2}v^{2}=\sigma(u)\sigma(v)$ holds by associativity and commutativity, and $H(u^{2})=H(u)^{2}=1$ by multiplicativity, so $\sigma$ is a homomorphism into $\mathrm{U}(1)$. Its kernel solves $u^{2}=1$; a field has at most two roots of $X^{2}-1$, and $\pm1$ are two, so the kernel is $\{1,-1\}$. For the surjectivity let $Q_1=q_1+iq'_1$ lie on the circle, $q_1^{2}+q'^{2}_1=1$. If $q_1\neq-1$ the element
+*Proof.* For $u,v\in \mathrm{U}(1)$ the identity $\sigma(uv)=(uv)^{2}=u^{2}v^{2}=\sigma(u)\sigma(v)$ holds by associativity and commutativity, and $H(u^{2})=H(u)^{2}=1$ by multiplicativity, so $\sigma$ is a homomorphism into $\mathrm{U}(1)$. Its kernel solves $u^{2}=1$; a field has at most two roots of $X^{2}-1$, and $\pm1$ are two, so the kernel is $\{1,-1\}$. For the surjectivity let $Q_1=q_1+iq'_1$ lie on the circle, $q_1^{2}+q'{}^{2}_1=1$. If $q_1\neq-1$ the element
 
 $$
 z=\sqrt{\frac{1+q_1}{2}}+i\,\frac{q'_1}{\sqrt{2(1+q_1)}}
 $$
 
-satisfies $z^{2}=Q_1$ and $H(z)=1$, as expanding the square and using $q_1^{2}+q'^{2}_1=1$ shows; if $q_1=-1$ then $Q_1=-1$ and $z=i$ is a square root on the circle. Every element of the circle is therefore a square, and its two preimages are $z$ and $-z$.
+satisfies $z^{2}=Q_1$ and $H(z)=1$, as expanding the square and using $q_1^{2}+q'{}^{2}_1=1$ shows; if $q_1=-1$ then $Q_1=-1$ and $z=i$ is a square root on the circle. Every element of the circle is therefore a square, and its two preimages are $z$ and $-z$.
 
 **Theorem (it is the spin structure of the definite space).** Under the identification of $\mathrm{U}(1)$ with the group $\mathrm{SO}(2)$ of maps preserving the form, by the multiplication action (*Rotations and Reflections in the Complex Plane*), the square map is the two-to-one cover $\mathrm{Spin}(2)\to \mathrm{SO}(2)$: the versor whose square names a rotation carries half the parameter of that rotation, and the two versors $u$ and $-u$ name the same one. Read on $\mathbb{C}$ as a complex space it is the spin structure of the one-dimensional definite space, and read on $\mathbb{C}$ as the real plane it is the spin structure of that plane.
 

@@ -480,7 +480,7 @@ $$
 every element has one expansion
 
 $$
-\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-},
+\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-},
 $$
 
 and the matrix $\mathsf M_2^{Q}(\tilde Q_2)=(Q_{2,ij})$ has the two ideals as its two columns. The element itself has

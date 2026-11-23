@@ -11,7 +11,7 @@ $$
 Q = q + \varepsilon q', \qquad q, q' \in \mathbb{R},
 $$
 
-with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, norm $\langle Q\rangle = Q\bar Q = q^2$, Euclidean norm $\|Q\| = \sqrt{q^2 + q'^2}$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, and group of invertibles $(\mathbb{C}_{\mathrm{dln}})^\times = \{q \neq 0\}$. To keep the two notions apart, the norm is written $\langle\cdot\rangle$ and the Euclidean form $\|\cdot\|$; they are distinct, and the whole topology is carried by the second.
+with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, norm $\langle Q\rangle = Q\bar Q = q^2$, Euclidean norm $\|Q\| = \sqrt{q^2 + q'{}^2}$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, and group of invertibles $(\mathbb{C}_{\mathrm{dln}})^\times = \{q \neq 0\}$. To keep the two notions apart, the norm is written $\langle\cdot\rangle$ and the Euclidean form $\|\cdot\|$; they are distinct, and the whole topology is carried by the second.
 
 ## The Dual Plane as a Topological Space
 
@@ -31,14 +31,14 @@ is a linear isometry of $(\mathbb{C}_{\mathrm{dln}}, \|\cdot\|)$ onto $\mathbb{R
 
 ### The Distinction Between the Two Forms
 
-The norm $\langle Q\rangle = q^2$ and the Euclidean form $q^2 + q'^2$ induce different geometries on the same space. The Euclidean form gives the distance and hence the topology; the norm is the multiplicative form and has no metric content. Although $\langle\cdot\rangle$ is continuous, its vanishing does not control the Euclidean size: a sequence with $\langle Q_n\rangle \to 0$ need not have $Q_n \to 0$, because $Q_n$ may move along the null line $\mathrm{M}$.
+The norm $\langle Q\rangle = q^2$ and the Euclidean form $q^2 + q'{}^2$ induce different geometries on the same space. The Euclidean form gives the distance and hence the topology; the norm is the multiplicative form and has no metric content. Although $\langle\cdot\rangle$ is continuous, its vanishing does not control the Euclidean size: a sequence with $\langle Q_n\rangle \to 0$ need not have $Q_n \to 0$, because $Q_n$ may move along the null line $\mathrm{M}$.
 
 ### The Euclidean Unit Sphere
 
 **Definition.** The **Euclidean unit sphere** is
 
 $$
-S^1_E = \{Q \in \mathbb{C}_{\mathrm{dln}} : \|Q\| = 1\} = \{(q,q') : q^2 + q'^2 = 1\} \cong S^1.
+S^1_E = \{Q \in \mathbb{C}_{\mathrm{dln}} : \|Q\| = 1\} = \{(q,q') : q^2 + q'{}^2 = 1\} \cong S^1.
 $$
 
 It is a closed, compact, connected one-manifold.
@@ -179,7 +179,7 @@ The dual-number algebra $\mathbb{C}_{\mathrm{dln}}$, with its Euclidean topology
 | $Q = q + \varepsilon q'$ | General dual number |
 | $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ | Real and infinitesimal parts |
 | $\langle Q\rangle = q^2$ | Norm |
-| $\|Q\| = \sqrt{q^2 + q'^2}$ | Euclidean norm, giving the topology |
+| $\|Q\| = \sqrt{q^2 + q'{}^2}$ | Euclidean norm, giving the topology |
 | $S^1_E = \{\|Q\| = 1\}$ | Euclidean unit sphere $\cong S^1$ |
 | $H = \{\langle Q\rangle = 1\}$ | Norm-one set, lines $q = \pm 1$, $\simeq S^0$ |
 | $\mathrm{M} = (\varepsilon) = \{q = 0\}$ | Maximal ideal, null line, $\cong \mathbb{R}$ |

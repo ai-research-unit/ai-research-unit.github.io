@@ -25,7 +25,7 @@ $$
 \qquad
 2\pi\nu_t'=\frac{\omega}{c},
 \qquad
-k^{2}=4\pi^{2}\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}.
+k^{2}=4\pi^{2}\nu_t'{}^{2}-4\pi^{2}\nu_{\Phi}^{2}.
 $$
 
 The word and its parameters are the parent's:
@@ -195,7 +195,7 @@ What the transform does with the piecewiseness is relocate it. A Fourier mode is
 | Symbol | Meaning |
 | --- | --- |
 | $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | The four-wave number; $2\pi\nu_t'=\omega/c$ |
-| $k^{2}=4\pi^{2}\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}$ | The interval in wave numbers |
+| $k^{2}=4\pi^{2}\nu_t'{}^{2}-4\pi^{2}\nu_{\Phi}^{2}$ | The interval in wave numbers |
 | $\nu_m=\frac{mc}{h}$ | The mass wave number |
 | $\tilde A_\Phi=\varepsilon i \varrho\tilde U$, $\varrho\tilde U\hat u$ | The word on the timelike and spacelike branches |
 | $\varrho,\ \varepsilon,\ \theta_{\mathrm{rpd}},\ \hat u_{\mathrm b},\ \hat u$ | Scale, branch label, rapidity, boost axis, spacelike direction |

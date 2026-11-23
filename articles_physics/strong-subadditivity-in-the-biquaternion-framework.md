@@ -244,12 +244,12 @@ The table is the article's quantitative content. The GHZ deficit is one full bit
 
 The equality case is completely characterized, and the characterization is worth stating because the framework's Markov examples are its instances.
 
-> **Theorem (Hayden–Jozsa–Petz–Winter).** Strong subadditivity is saturated for $\rho_{ABC}$ if and only if the Hilbert space of $B$ decomposes as $\mathcal H_B=\bigoplus_\imath\mathcal H_{b_k^L}\otimes\mathcal H_{b_k^R}$ in such a way that
+> **Theorem (Hayden–Jozsa–Petz–Winter).** Strong subadditivity is saturated for $\rho_{ABC}$ if and only if the Hilbert space of $B$ decomposes as $\mathcal H_B=\bigoplus_{\imath}\mathcal H_{b_k^L}\otimes\mathcal H_{b_k^R}$ in such a way that
 > $$
-> \rho_{ABC}=\bigoplus_\imath p_\imath\ \rho_{A b_k^L}\otimes\rho_{b_k^R C},
-> \qquad p_\imath\ge0,\quad \sum_\imath p_\imath=1 .
+> \rho_{ABC}=\bigoplus_{\imath} p_{\imath}\ \rho_{A b_k^L}\otimes\rho_{b_k^R C},
+> \qquad p_{\imath}\ge0,\quad \sum_{\imath} p_{\imath}=1 .
 > $$
-> The state is then a **quantum Markov chain**: $B$ is a "bridge" whose left part $b_\imath^L$ carries the correlation to $A$ and whose right part $b_\imath^R$ carries it to $C$, with no correlation between $A$ and $C$ conditional on $B$.
+> The state is then a **quantum Markov chain**: $B$ is a "bridge" whose left part $b_{\imath}^L$ carries the correlation to $A$ and whose right part $b_{\imath}^R$ carries it to $C$, with no correlation between $A$ and $C$ conditional on $B$.
 
 The Markov state of the previous section is the special case in which the decomposition of $\mathcal H_B$ is trivial and $\rho_{ABC}=\rho_{AB}\otimes\rho_C$ with $C$ attached as a record. The information-theoretic interpretation is that strong subadditivity measures the failure of the chain condition: the deficit $S(\rho_{AB})+S(\rho_{BC})-S(\rho_{ABC})-S(\rho_B)$ is the "conditional mutual information" $I(A:C|B)$, which is the amount of correlation between $A$ and $C$ that survives conditioning on $B$ and is therefore the obstruction to the Markov property. That the conditional mutual information is non-negative **is** strong subadditivity, and it is the quantity the framework's entropies compute.
 
@@ -300,7 +300,7 @@ The tensor power is not a subalgebra of $\mathbb{B}$, whose complex dimension is
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar part of a product; $\mathrm{Sc}(e_t)=1$ |
@@ -313,7 +313,7 @@ The tensor power is not a subalgebra of $\mathbb{B}$, whose complex dimension is
 | $I(A:C|B)$ | Conditional mutual information; the deficit |
 | $Q_{ABC}$ | Reference operator, $8\,\mathrm{Sc}\,\tilde Q_{ABC}\le1$; its element reading is $\tilde Q_{ABC}=\exp(\log\tilde Q_{\mathrm{AB}}+\log\tilde Q_{\mathrm{BC}}-\log\tilde Q_{\mathrm B})$ on the lifts $\tilde Q_{\mathrm{AB}}=\rho_{AB}\otimes I_C$, $\tilde Q_{\mathrm{BC}}=I_A\otimes\rho_{BC}$ and $\tilde Q_{\mathrm B}=I_A\otimes\rho_B\otimes I_C$ |
 | $\Lambda$ | Completely positive trace-preserving map (e.g. $\mathrm{Tr}_C$) |
-| $\rho_{ABC}=\bigoplus_\imath p_\imath\,\rho_{Ab_k^L}\otimes\rho_{b_k^R C}$ | Quantum Markov chain (equality case) |
+| $\rho_{ABC}=\bigoplus_{\imath} p_{\imath}\,\rho_{Ab_k^L}\otimes\rho_{b_k^R C}$ | Quantum Markov chain (equality case) |
 
 ## Further Reading
 

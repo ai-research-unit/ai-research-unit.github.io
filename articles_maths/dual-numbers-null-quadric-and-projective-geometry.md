@@ -31,7 +31,7 @@ the maximal ideal. Its punctured part is the zero-divisor set $\mathcal{Z} = \ma
 
 ### Comparison with a Non-Degenerate Cone
 
-For a non-degenerate binary quadratic form $q^2 - \sigma q'^2$ with $\sigma \neq 0$ the isotropic set is a union of two distinct lines through the origin, the two null directions; for the positive-definite form $q^2 + q'^2$ it is a single point, the origin. The degenerate dual form is the intermediate case: the two null directions of the split-complex form have coalesced into a single line, and because the form is a perfect square, the coalescence is a genuine doubling rather than a loss. The real dimension of the isotropic set is one, whereas for the split-complex form it is also one (a union of two lines is one-dimensional), but the two cases differ in multiplicity: the dual line is met with multiplicity two by every transverse line, the split-complex pair with multiplicity one each.
+For a non-degenerate binary quadratic form $q^2 - \sigma q'{}^2$ with $\sigma \neq 0$ the isotropic set is a union of two distinct lines through the origin, the two null directions; for the positive-definite form $q^2 + q'{}^2$ it is a single point, the origin. The degenerate dual form is the intermediate case: the two null directions of the split-complex form have coalesced into a single line, and because the form is a perfect square, the coalescence is a genuine doubling rather than a loss. The real dimension of the isotropic set is one, whereas for the split-complex form it is also one (a union of two lines is one-dimensional), but the two cases differ in multiplicity: the dual line is met with multiplicity two by every transverse line, the split-complex pair with multiplicity one each.
 
 ## The Projective Line
 

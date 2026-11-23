@@ -26,7 +26,7 @@ $$
 \tilde\Upsilon_\Phi=2\pi i\nu_t'e_t+2\pi\vec\nu_\Phi .
 $$
 
-$c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ gives $c_t=-\frac{2\pi ϙa_t'}{h}$ real and $c_\imath=i\frac{2\pi ϙ}{h}A_\imath$ imaginary; the free slot symbols are $\sigma_t=-2\pi\nu_t'$ real and $\sigma_\imath=i\kappa_\imath$ imaginary; and the mechanical four-momentum is $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$, whose temporal slot is $E+ϙc\,a_t'$ and whose spatial slots are $\vec p-q\vec A$.
+$c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ gives $c_t=-\frac{2\pi ϙa_t'}{h}$ real and $c_{\imath}=i\frac{2\pi ϙ}{h}A_{\imath}$ imaginary; the free slot symbols are $\sigma_t=-2\pi\nu_t'$ real and $\sigma_{\imath}=i\kappa_{\imath}$ imaginary; and the mechanical four-momentum is $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$, whose temporal slot is $E+ϙc\,a_t'$ and whose spatial slots are $\vec p-q\vec A$.
 
 The transform does not carry a material-sector field to an informational-sector one. A symbol exists only at constant coefficients. **And a Legendre transform is not a Fourier transform**: the polar variational parent's four momenta are conjugates to the field's own parameters at each event, so they are not wave numbers, and nothing below reads them as one. This is the only place the third denial is stated.
 
@@ -75,7 +75,7 @@ $\oint(\vec p-q\vec A)\cdot\mathrm{d}\vec l=h n+ϙ\Phi_B$ is the curl's integral
 
 The parent's substitution is $\partial_{r_t'}S_{\tilde\Xi}\mapsto\partial_{r_t'}S_{\tilde\Xi}-ϙa_t'$ and $\vec\nabla_\Phi S_{\tilde\Xi}\mapsto\nabla S_{\tilde\Xi}-q\vec A$, so the variable the transform pairs with the coordinate is $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ and not $\tilde\Upsilon_\Phi$. A chart whose variable already contains the potential has diagonalised the potential away, and what it diagonalises is the reading whose shell is free in that variable.
 
-The shell $(2\pi\nu_t'-c_t)^{2}=\lvert\vec\kappa\rvert^{2}+4\pi^{2}\nu_m^{2}$ becomes $2\pi\nu_t'^{\mathrm{mech}\,2}=\lvert\vec\kappa^{\mathrm{mech}}\rvert^{2}+4\pi^{2}\nu_m^{2}$ with $2\pi\nu_t'^{\mathrm{mech}}=2\pi\nu_t'-c_t$ and $\vec\kappa^{\mathrm{mech}}=\vec\kappa+\vec a$. Measured at $2\pi\nu_t'=2.770584$, the mechanical value is $3.080584$ and the residual is $0.0$. **The chart's free-looking dispersion is the squared reading's, exactly.**
+The shell $(2\pi\nu_t'-c_t)^{2}=\lvert\vec\kappa\rvert^{2}+4\pi^{2}\nu_m^{2}$ becomes $2\pi\nu_t'{}^{\mathrm{mech}\,2}=\lvert\vec\kappa^{\mathrm{mech}}\rvert^{2}+4\pi^{2}\nu_m^{2}$ with $2\pi\nu_t'{}^{\mathrm{mech}}=2\pi\nu_t'-c_t$ and $\vec\kappa^{\mathrm{mech}}=\vec\kappa+\vec a$. Measured at $2\pi\nu_t'=2.770584$, the mechanical value is $3.080584$ and the residual is $0.0$. **The chart's free-looking dispersion is the squared reading's, exactly.**
 
 The paired reading keeps a residual linear in the mechanical frequency. At the same point its residual is $-1.909962$, and that number is $2c_t$ times $3.080584$: a term linear in the frequency rather than a constant. So the chart's variable does not merely prefer one reading; it puts the squared reading in free form and leaves the paired reading with a term that grows with the energy, which is the shape a chart can report.
 
@@ -127,10 +127,10 @@ What the chart is silent on, it is silent on for one reason: its functionals are
 | $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi$ | The covariant bracket: one additive central term |
 | $S_{\mathrm{p}}$ | The chart's kinetic functional, a modulus squared |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}\tilde\Xi$ | The operator $S_{\mathrm{p}}$ produces: the squared reading |
-| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The per-slot coefficient; $c_t$ real, $c_\imath$ imaginary |
+| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The per-slot coefficient; $c_t$ real, $c_{\imath}$ imaginary |
 | $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$ | The mechanical four-momentum; the chart's variable |
 | $\vec\nabla_\Phi\times(\vec p-q\vec A)=ϙ\vec B$ | The vorticity: the field strength the chart shows |
-| $2\pi\nu_t'^{\mathrm{mech}}=2\pi\nu_t'-c_t$ | The mechanical frequency; the squared shell is free in it |
+| $2\pi\nu_t'{}^{\mathrm{mech}}=2\pi\nu_t'-c_t$ | The mechanical frequency; the squared shell is free in it |
 | $2c_t(c_t-\nu_t')$ | The cross term the chart cannot carry |
 
 ## Further Reading

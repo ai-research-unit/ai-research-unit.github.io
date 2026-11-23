@@ -9,7 +9,7 @@ The complex case is the model case of hypercomplex integration. Because $\mathbb
 
 No physics is invoked. The complex numbers are the coefficient field, the plane $\mathbb{C}$ is the domain of the functions, and the independent variable is a complex number.
 
-For notation, complex numbers are written $Q = q + i q'$ with $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$, and modulus $\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2+q'^2}$, following *Complex Analysis*. The Cauchy–Riemann operator is $\partial/\partial\bar Q = \tfrac12(\partial/\partial q + i \partial/\partial q')$, and a function is holomorphic exactly when $\partial/\partial\bar Q f = 0$. The exponential $\exp(i\theta) = \cos\theta + i\sin\theta$ and the real trigonometric functions are used where an angle is parametrised and are taken. The circle of radius $r$ about $Q_0$ is written $C(Q_0, r)$ and is always positively oriented unless the opposite is stated.
+For notation, complex numbers are written $Q = q + i q'$ with $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$, and modulus $\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2+q'{}^2}$, following *Complex Analysis*. The Cauchy–Riemann operator is $\partial/\partial\bar Q = \tfrac12(\partial/\partial q + i \partial/\partial q')$, and a function is holomorphic exactly when $\partial/\partial\bar Q f = 0$. The exponential $\exp(i\theta) = \cos\theta + i\sin\theta$ and the real trigonometric functions are used where an angle is parametrised and are taken. The circle of radius $r$ about $Q_0$ is written $C(Q_0, r)$ and is always positively oriented unless the opposite is stated.
 
 ## The Complex Integral
 
@@ -542,7 +542,7 @@ The **residue theorem**, $\frac{1}{2\pi i} \oint_\gamma f \, dQ = \sum_k \operat
 |---|---|
 | $\mathbb{C}$ | Complex plane |
 | $Q = q + i q'$ | General complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$ |
-| $\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'^2}$ | Modulus |
+| $\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'{}^2}$ | Modulus |
 | $B(Q_0, r)$ | Open disk of radius $r$ about $Q_0$ |
 | $C(Q_0, r)$ | Positively oriented circle of radius $r$ about $Q_0$ |
 | $\gamma : [a, b] \to \mathbb{C}$ | Path; piecewise $C^1$ unless stated |

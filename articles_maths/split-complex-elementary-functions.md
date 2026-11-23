@@ -10,7 +10,7 @@ The spectral data are those of *Eigenvalue Decomposition and Eigenbasis of a Spl
 
 Every numerical value displayed below was recomputed in double precision.
 
-**Notation.** A split-complex number is written $Q=q+jq'$ with $q,q'\in\mathbb{R}$ and $j^{2}=1$. The conjugate is $\bar Q=q-jq'$ and the norm is $\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'^{2}$.
+**Notation.** A split-complex number is written $Q=q+jq'$ with $q,q'\in\mathbb{R}$ and $j^{2}=1$. The conjugate is $\bar Q=q-jq'$ and the norm is $\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'{}^{2}$.
 
 ## The Spectral Setting
 
@@ -26,7 +26,7 @@ The spectral data are those of *Eigenvalue Decomposition and Eigenbasis of a Spl
 | Eigenvalue decomposition | $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ |
 | Characteristic polynomial | $p_Q(X)=(X-\lambda_+)(X-\lambda_-)$ |
 | Distinctness | $\lambda_+\neq\lambda_-$ exactly when $q'\neq0$ |
-| Norm | $\langle Q\rangle_{*}=q^2-q'^2=\lambda_+\lambda_-$ |
+| Norm | $\langle Q\rangle_{*}=q^2-q'{}^2=\lambda_+\lambda_-$ |
 | Unit criterion | $Q$ is invertible exactly when $\lambda_+\lambda_-\neq0$ |
 | Polynomial calculus | $f(Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-$ for every polynomial $f$ |
 | Lattice | trivial, $\ker\exp=\{0\}$: the exponential is injective |
@@ -35,7 +35,7 @@ The idempotent coordinates and the eigenvalues are the same two numbers; this ar
 
 ### The Regimes
 
-The algebra has two spectral regimes, read from the discriminant $4q'^2$ of the characteristic polynomial; the distinct regime splits into the invertibles and the zero divisors. The table gives what each regime changes for the functions below; the spectral data of each regime are those of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*, §*Degenerate Regimes*.
+The algebra has two spectral regimes, read from the discriminant $4q'{}^2$ of the characteristic polynomial; the distinct regime splits into the invertibles and the zero divisors. The table gives what each regime changes for the functions below; the spectral data of each regime are those of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*, §*Degenerate Regimes*.
 
 | Regime | Condition | Consequence for the functions |
 |---|---|---|
@@ -128,7 +128,7 @@ The exponential is therefore an isomorphism from $(\mathbb{C}_{\mathrm{spl}},+)$
 | Injective | yes, with kernel $\{0\}$ |
 | Periods | none |
 
-The norm row uses the split-complex norm $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$.
+The norm row uses the split-complex norm $\langle Q\rangle_{*}=Q\bar Q=q^2-q'{}^2$.
 
 ## The Logarithm
 
@@ -175,7 +175,7 @@ and §*The Scalar Part* gives $q_{\log}$. The logarithm is
 
 $$
 \boxed{\; \log Q=\tfrac12\ln(\lambda_+\lambda_-)+\tfrac12 j\ln\frac{\lambda_+}{\lambda_-}
-=\frac{1}{2}\ln(q^2-q'^2)+\frac{j}{2}\ln\left(\frac{q+q'}{q-q'}\right) \;},
+=\frac{1}{2}\ln(q^2-q'{}^2)+\frac{j}{2}\ln\left(\frac{q+q'}{q-q'}\right) \;},
 $$
 
 and in the idempotent basis it is the single line
@@ -190,7 +190,7 @@ The two coordinates are collected in one table.
 
 | Component | Name | Value |
 |---|---|---|
-| $q_{\log}$ | logarithmic scale | $\tfrac12\ln(\lambda_+\lambda_-)=\tfrac12\ln(q^2-q'^2)$ |
+| $q_{\log}$ | logarithmic scale | $\tfrac12\ln(\lambda_+\lambda_-)=\tfrac12\ln(q^2-q'{}^2)$ |
 | $q'_{\log}$ | hyperbolic angle | $\tfrac12\ln\dfrac{\lambda_+}{\lambda_-}=\operatorname{artanh}\dfrac{q'}{q}=\tfrac12\ln\dfrac{q+q'}{q-q'}$ |
 
 **Example.** Take $Q=5+3j$. Then $\langle Q\rangle_{*}=25-9=16$ and $q_{\log}=\tfrac12\ln16=\ln4=1.3862944$. The ratio is $q'/q=3/5=0.6$, so $q'_{\log}=\operatorname{artanh}0.6=\tfrac12\ln\frac{1.6}{0.4}=\ln 2=0.6931472$. The logarithm is $Q_{\log}=1.3862944+0.6931472\,j$, and $4(\cosh\ln2+j\sinh\ln2)=4(1.25+0.75j)=5+3j$.
@@ -534,7 +534,7 @@ Every elementary function of a split-complex variable is a pair of ordinary real
 | Function | Value | Domain |
 |---|---|---|
 | $\exp Q$ | $\exp q(\cosh q'+j\sinh q')$ | all $\mathbb{C}_{\mathrm{spl}}$ |
-| $\log Q$ | $\tfrac12\ln(q^2-q'^2)+\tfrac12 j\ln\dfrac{q+q'}{q-q'}$ | $q>\lvert q'\rvert$ |
+| $\log Q$ | $\tfrac12\ln(q^2-q'{}^2)+\tfrac12 j\ln\dfrac{q+q'}{q-q'}$ | $q>\lvert q'\rvert$ |
 | $Q^P$ | $\exp(P\log Q)$ | $q>\lvert q'\rvert$ |
 | $\sin Q$ | $\sin q\cos q'+j\cos q\sin q'$ | all $\mathbb{C}_{\mathrm{spl}}$ |
 | $\cos Q$ | $\cos q\cos q'-j\sin q\sin q'$ | all $\mathbb{C}_{\mathrm{spl}}$ |
@@ -577,7 +577,7 @@ The table compares the elementary functions across the three algebras; in the bi
 | $Q=q+jq'$ | General split-complex number, $q=\operatorname{Re}Q$, $q'=\operatorname{Im}Q$ |
 | $\lambda_\pm=q\pm q'=Q_\pm$ | Eigenvalues, equal to the idempotent coordinates |
 | $\Pi_\pm=\tfrac12(1\pm j)$ | Eigenprojections, the standard idempotents |
-| $\langle Q\rangle_{*}=q^2-q'^2=\lambda_+\lambda_-$ | Norm |
+| $\langle Q\rangle_{*}=q^2-q'{}^2=\lambda_+\lambda_-$ | Norm |
 | $\exp(Q), \log Q$ | Split-complex exponential, logarithm |
 | $Q_{\log}=q_{\log}+jq'_{\log}$ | A logarithm of $Q$, with $q_{\log}=\tfrac12\ln(\lambda_+\lambda_-)$ and $q'_{\log}=\tfrac12\ln(\lambda_+/\lambda_-)$ |
 | $Q^P=\exp(P\log Q)$, $P\in\mathbb{R}$ | Split-complex power |

@@ -22,7 +22,7 @@ where $i^2 = -1$. The real number $q$ is the **real part**, and $q'$ is the **im
 The **modulus** of $Q$ is
 
 $$
-\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'^2},
+\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'{}^2},
 $$
 
 and the **distance** between two complex numbers $Q$ and $Q_1$ is
@@ -504,7 +504,7 @@ where $\operatorname{ord}(f, Q_k)$ is the order of the zero and $\operatorname{o
 
 ## Summary
 
-Complex analysis is the study of complex-valued functions of a complex variable that possess a derivative in the complex sense. The plane carries the modulus $\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'^2}$, and with it the distance, the convergent sequences, the continuous functions and the open sets on which the subject is built.
+Complex analysis is the study of complex-valued functions of a complex variable that possess a derivative in the complex sense. The plane carries the modulus $\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'{}^2}$, and with it the distance, the convergent sequences, the continuous functions and the open sets on which the subject is built.
 
 The derivative $\frac{df}{dQ}(Q_0) = \lim_{h \to 0} (f(Q_0 + h) - f(Q_0))/h$ is the central object, and the article records how much stronger it is than its real analogue: a function that has it at every point of an open set is holomorphic, holomorphy is equivalent to the Cauchy–Riemann equations, and it forces the function to be analytic. Where the derivative is nonzero the map is conformal, preserving the angles between curves.
 
@@ -517,7 +517,7 @@ Integration along paths defines the contour integral, and the theorems the deriv
 | $\mathbb{C}$ | Complex plane |
 | $Q = q + i q'$ | General complex number |
 | $\bar{Q} = q - i q'$ | Complex conjugate |
-| $\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'^2}$ | Modulus |
+| $\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'{}^2}$ | Modulus |
 | $d(Q, Q_1) = \sqrt{\langle Q - Q_1\rangle_{*}}$ | Distance |
 | $B(Q_0, r)$ | Open disk of radius $r$ |
 | $\Omega, F, K$ | Open, closed, compact sets |

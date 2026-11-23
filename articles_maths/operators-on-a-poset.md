@@ -38,8 +38,7 @@ used.
 
 ### The Monoid of Monotone Maps
 
-Let $P$ and $Q$ be posets. A map $f : P \to Q$ is **monotone** if $x \leq y$ implies $f(x) \leq
-f(y)$ for all $x, y \in P$. When $P = Q$ the monotone maps are the **endomorphisms** of the order, and
+Let $P$ and $Q$ be posets. A map $f : P \to Q$ is **monotone** if $x \leq y$ implies $f(x) \leq f(y)$ for all $x, y \in P$. When $P = Q$ the monotone maps are the **endomorphisms** of the order, and
 the set of them is written $\operatorname{End}(P)$.
 
 **Theorem.** For a poset $P$ the set $\operatorname{End}(P)$ is a monoid under composition, with
@@ -51,8 +50,7 @@ then $g(f(x)) \leq g(f(y))$, so $\operatorname{End}(P)$ is closed under composit
 functions is associative and $\mathrm{id}_P$ is monotone, so it is a monoid; and every element of it is
 a map $P \to P$.
 
-**Proposition (constants and identity).** For every $k \in P$ the constant map $\kappa_k : x \mapsto
-k$ is monotone, so $\operatorname{End}(P)$ contains all $\lvert P \rvert$ constants; every constant is
+**Proposition (constants and identity).** For every $k \in P$ the constant map $\kappa_k : x \mapsto k$ is monotone, so $\operatorname{End}(P)$ contains all $\lvert P \rvert$ constants; every constant is
 idempotent, and $\kappa_k$ is invertible in the monoid only when $P$ has one element. The identity is
 monotone, and it is the only monotone map that is also a two-sided identity for composition.
 
@@ -148,16 +146,12 @@ this category. Here only its place in the parity monoid is recorded.
 
 ### Reduction to the Opposite Poset
 
-Let $P_{\mathrm{opp}}$ denote $P$ with the opposite order, in which $x \leq_{\mathrm{opp}} y$ means $y
-\leq x$.
+Let $P_{\mathrm{opp}}$ denote $P$ with the opposite order, in which $x \leq_{\mathrm{opp}} y$ means $y \leq x$.
 
-**Proposition.** A map $f : P \to Q$ is antitone if and only if it is monotone as a map $P \to
-Q_{\mathrm{opp}}$, equivalently as a map $P_{\mathrm{opp}} \to Q$. Hence the antitone maps are the
-monotone maps of the opposite order, and an antitone bijection $P \to P$ is an order isomorphism $P
-\to P_{\mathrm{opp}}$, that is, an isomorphism of $P$ with its opposite poset.
+**Proposition.** A map $f : P \to Q$ is antitone if and only if it is monotone as a map $P \to Q_{\mathrm{opp}}$, equivalently as a map $P_{\mathrm{opp}} \to Q$. Hence the antitone maps are the
+monotone maps of the opposite order, and an antitone bijection $P \to P$ is an order isomorphism $P \to P_{\mathrm{opp}}$, that is, an isomorphism of $P$ with its opposite poset.
 
-**Proof.** The condition $x \leq y \Rightarrow f(y) \leq f(x)$ is exactly $x \leq y \Rightarrow
-f(x) \leq_{\mathrm{opp}} f(y)$. The statements about bijections are the definition of an isomorphism of
+**Proof.** The condition $x \leq y \Rightarrow f(y) \leq f(x)$ is exactly $x \leq y \Rightarrow f(x) \leq_{\mathrm{opp}} f(y)$. The statements about bijections are the definition of an isomorphism of
 posets.
 
 So nothing new is needed for the antitone maps beyond the duality principle of *Order Theory and
@@ -187,8 +181,7 @@ $g$ is injective exactly when $g f = \mathrm{id}_P$, and surjective exactly when
 
 **Proof.** These are the elementary properties of a Galois connection established in *Order Theory and
 Lattices*: monotonicity of the right adjoint, the two unit and counit inequalities, the triangle
-identities, and the closure and interior properties. For injectivity, $f(p) = f(p')$ gives $p = g(f(p))
-= g(f(p')) = p'$ when $gf = \mathrm{id}_P$, and conversely $gf = \mathrm{id}_P$ follows from
+identities, and the closure and interior properties. For injectivity, $f(p) = f(p')$ gives $p = g(f(p)) = g(f(p')) = p'$ when $gf = \mathrm{id}_P$, and conversely $gf = \mathrm{id}_P$ follows from
 injectivity because $p \leq g(f(p))$ and $f(p) = f(g(f(p)))$ gives $g(f(p)) = p$; surjectivity is dual.
 
 **Theorem.** Let $P$ be a complete lattice. A monotone map $f : P \to Q$ is residuated if and only if
@@ -202,8 +195,7 @@ $$
 **Proof.** If $f$ is residuated then it preserves joins, by *Order Theory and Lattices*. Conversely, if
 $f$ preserves all joins, define $g(q) = \bigvee\{p : f(p) \leq q\}$, which exists because $P$ is
 complete. Then $f(p) \leq q$ implies $p \leq g(q)$ by definition of the join; and $p \leq g(q)$ gives
-$f(p) \leq f(g(q)) = \bigvee\{f(p') : f(p') \leq q\} \leq q$, using the preservation of joins. So $f
-\dashv g$.
+$f(p) \leq f(g(q)) = \bigvee\{f(p') : f(p') \leq q\} \leq q$, using the preservation of joins. So $f \dashv g$.
 
 **Corollary.** On a complete lattice, the residuated maps into a poset are exactly the join-preserving
 maps, and the residual is the greatest $p$ with $f(p) \leq q$. The composite of two residuated maps is
@@ -211,8 +203,7 @@ residuated, with residual the composite of the residuals in the reverse order; a
 residuated, with itself as residual. Hence the residuated maps $P \to P$ form a submonoid of
 $\operatorname{End}(P)$.
 
-**Proof.** The characterisation of the residual and the composition law $(f_2 f_1)^{\sharp} = f_1^{\sharp}
-f_2^{\sharp}$ are the composition of adjunctions for posets, in *Order Theory and Lattices*, restated in
+**Proof.** The characterisation of the residual and the composition law $(f_2 f_1)^{\sharp} = f_1^{\sharp} f_2^{\sharp}$ are the composition of adjunctions for posets, in *Order Theory and Lattices*, restated in
 the language of residuals.
 
 ### The Galois Connection as a Pair of Residuated Maps
@@ -225,8 +216,7 @@ elements of $g f$ are the image of $g$, the open elements of $f g$ the image of 
 content of *Closure Operators and the Consequence Operator*, in this group, and is not repeated.
 
 **Example.** The relation-induced Galois connection of *Order Theory and Lattices* is the standard
-source of residuated pairs: a relation $R \subseteq X \times Y$ gives the antitone maps $A \mapsto
-A^{\uparrow}$ and $B \mapsto B^{\downarrow}$, and the induced maps $A \mapsto A^{\uparrow\downarrow}$
+source of residuated pairs: a relation $R \subseteq X \times Y$ gives the antitone maps $A \mapsto A^{\uparrow}$ and $B \mapsto B^{\downarrow}$, and the induced maps $A \mapsto A^{\uparrow\downarrow}$
 and $B \mapsto B^{\downarrow\uparrow}$ are closure operators. In the language of this article the two
 maps are the residuals of each other for the opposite orders, and the polarities are the residuated
 pairs between $\mathcal{P}(X)_{\mathrm{opp}}$ and $\mathcal{P}(Y)_{\mathrm{opp}}$.
@@ -234,8 +224,7 @@ pairs between $\mathcal{P}(X)_{\mathrm{opp}}$ and $\mathcal{P}(Y)_{\mathrm{opp}}
 ### The Residuated Maps of a Power Set
 
 **Theorem.** Let $X$ and $Y$ be sets. A map $f : \mathcal{P}(X) \to \mathcal{P}(Y)$ is residuated if
-and only if it preserves arbitrary unions, and then there is a unique relation $R \subseteq X \times
-Y$ with
+and only if it preserves arbitrary unions, and then there is a unique relation $R \subseteq X \times Y$ with
 
 $$
 \boxed{\;f(A) = R[A] = \{y \in Y : (x,y) \in R \text{ for some } x \in A\}, \qquad
@@ -249,10 +238,8 @@ points all of whose $R$-relatives lie in $B$.
 **Proof.** A map out of a complete lattice is residuated exactly when it preserves joins, and the join
 in $\mathcal{P}(X)$ is the union, so $f(A) = f(\bigcup_{x \in A}\{x\}) = \bigcup_{x \in A} f(\{x\})$.
 Put $R = \{(x,y) : y \in f(\{x\})\}$; the relation is determined by $f$ and determines it, and the
-displayed formula for $f$ follows. By the theorem on residuals, $g(B) = \bigcup\{A : f(A) \subseteq
-B\}$. Now $f(A) \subseteq B$ holds if and only if $f(\{x\}) \subseteq B$ for every $x \in A$, that is,
-$R[\{x\}] \subseteq B$ for every $x \in A$. It follows that the union $\bigcup\{A : f(A) \subseteq
-B\}$ is the set of $x$ with $R[\{x\}] \subseteq B$, which is the displayed set of points all of whose
+displayed formula for $f$ follows. By the theorem on residuals, $g(B) = \bigcup\{A : f(A) \subseteq B\}$. Now $f(A) \subseteq B$ holds if and only if $f(\{x\}) \subseteq B$ for every $x \in A$, that is,
+$R[\{x\}] \subseteq B$ for every $x \in A$. It follows that the union $\bigcup\{A : f(A) \subseteq B\}$ is the set of $x$ with $R[\{x\}] \subseteq B$, which is the displayed set of points all of whose
 $R$-relatives lie in $B$.
 
 **Corollary.** The direct image of a relation and its residual are the two maps of a Galois connection

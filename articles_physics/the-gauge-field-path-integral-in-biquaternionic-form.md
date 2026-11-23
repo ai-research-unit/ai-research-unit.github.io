@@ -53,10 +53,10 @@ The measure is a product over the four material components. Because the material
 $$
 \mathcal{D}\tilde{A}_{\Phi} = \mathcal{D}A_0\;\mathcal{D}\vec A,
 \qquad
-\tilde{A}_{\Phi} = iA_0e_t+\sum_{\imath\in\{x,y,z\}}A_\imath\vec e_\imath ,
+\tilde{A}_{\Phi} = iA_0e_t+\sum_{\imath\in\{x,y,z\}}A_{\imath}\vec e_{\imath} ,
 $$
 
-with $A_0$ and $A_\imath$ the real component fields, the coefficients being $Q_t=i q'_t$ and $Q_\imath=q_\imath$. The gradient part of the gauge transformation is $\tilde\nabla_\Phi\Gamma=e_t\partial/\partial R_t\,\Gamma+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial R_\imath\,\Gamma$, so the orbit direction is spanned by the four derivatives of the single gauge function $\Gamma$; this is why the orbit is one-dimensional at each spacetime point and why a single gauge-fixing condition suffices.
+with $A_0$ and $A_{\imath}$ the real component fields, the coefficients being $Q_t=i q'_t$ and $Q_{\imath}=q_{\imath}$. The gradient part of the gauge transformation is $\tilde\nabla_\Phi\Gamma=e_t\partial/\partial R_t\,\Gamma+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial R_{\imath}\,\Gamma$, so the orbit direction is spanned by the four derivatives of the single gauge function $\Gamma$; this is why the orbit is one-dimensional at each spacetime point and why a single gauge-fixing condition suffices.
 
 ## Gauge Fixing: The Faddeev–Popov Construction
 

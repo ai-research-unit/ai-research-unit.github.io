@@ -12,7 +12,7 @@ That construction is announced as a **metric**, and the word invites a specific 
 
 This article takes up that separate question. The result is short and sharp: **in a static medium the framework's local metric is exactly the optical metric**, to machine precision and with no extra assumption, and the two independent boundaries — motion and anisotropy — show exactly where the framework's single scalar $c$ runs out. A third boundary is more interesting than either: when $\epsilon\mu$ changes sign the interval changes its sign pattern, from one minus on the time to none, and that change is the Wick rotation of the local structure.
 
-Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\imath^2=-e_t$, and central $i$. The material sector is $\mathbb{B}_{\Phi}$ with $\tilde R_\Phi=i r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and norm $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}=\sum_{\imath} Q_{\imath}^2$. The framework's local metric is the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$ on the four $Q_{\imath}$, and its interval is $(i\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2=-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$, whose one minus is the square of the $i$ in $Q_t=i q'_t$. Read in seconds, with $r'_t=c\,t'$, it is $-c^2\,d{t'}^2+dr_x^2+dr_y^2+dr_z^2$. The medium speed is $c=1/\sqrt{\epsilon\mu}$, the vacuum speed $c_0=1/\sqrt{\epsilon_0\mu_0}$, and the refractive index $n=c_0/c$.
+Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^2=-e_t$, and central $i$. The material sector is $\mathbb{B}_{\Phi}$ with $\tilde R_\Phi=i r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and norm $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}=\sum_{\imath} Q_{\imath}^2$. The framework's local metric is the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$ on the four $Q_{\imath}$, and its interval is $(i\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2=-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$, whose one minus is the square of the $i$ in $Q_t=i q'_t$. Read in seconds, with $r'_t=c\,t'$, it is $-c^2\,d{t'}^2+dr_x^2+dr_y^2+dr_z^2$. The medium speed is $c=1/\sqrt{\epsilon\mu}$, the vacuum speed $c_0=1/\sqrt{\epsilon_0\mu_0}$, and the refractive index $n=c_0/c$.
 
 ## The Optical Metric of a Medium
 
@@ -84,7 +84,7 @@ The conversion of the local complex structure is $c^2=1/(\epsilon\mu)$, and its 
 
 | Regime | $\epsilon\mu$ | $c^2$ | the interval $-c^2\,d{t'}^2+dr_x^2+dr_y^2+dr_z^2$ | Inertia |
 |---|---|---|---|---|
-| Transparent dielectric | $>0$ | $>0$ | one minus on $t'^2$; spatial part positive | $(3,1)$ |
+| Transparent dielectric | $>0$ | $>0$ | one minus on $t'{}^2$; spatial part positive | $(3,1)$ |
 | Plasma or metal below cutoff | $<0$ | $<0$ | no minus, all four terms positive | $(4,0)$ |
 
 In an ideal plasma with $\epsilon(\omega)=\epsilon_0(1-\omega_p^2/\omega^2)$ the permittivity is negative below the plasma frequency, and at $\omega=\omega_p/\sqrt2$ one has $\epsilon_r=-1$ exactly. There $c^2<0$, the index $n=1/c$ is imaginary, the wave is evanescent, and the interval has **inertia** $(4,0)$: there is no real null cone, which is the geometric statement that no propagating wave exists below cutoff.
@@ -120,7 +120,7 @@ The interpretation adds no prediction and no gravity. It is a repackaging of Gor
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi}$ | Material sector, $\tilde R_\Phi=i r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_{\imath} Q_{\imath}^2$ | Biquaternion norm; null cone $N=0$ |

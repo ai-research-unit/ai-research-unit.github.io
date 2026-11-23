@@ -6,6 +6,9 @@ The corpus splits the biquaternion algebra into two real four-dimensional subspa
 
 The algebra attaches two numbers to an element, the scalar part and the quaternionic norm, and the two sectors read them in opposite roles. On $\mathbb{B}_{\Phi}$ the scalar part carries the energy and the norm is the mass; on $\mathbb{B}_{\Psi}$ the scalar part carries the normalisation and the norm is the information. Conjugation by a $*$-unitary element fixes both numbers of whatever it acts on, and that one algebraic fact is the warrant of every conservation law below: energy and mass on the material side, normalisation and information on the informational side. The split is a duality of two readings of two operations, not a sum of two contributions to one number.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
+
 It is not an exchange, because nothing passes from one sector to the other. It is not a decomposition either, because energy is not the sum of a mass term and an information term. Nor is it a dynamics: the article fixes what the two sectors conserve, and the one place where a probability falls is a reduced description, treated in its own section and attributed to no element of either sector.
 
 The article takes the scalar part and the two norms from [Norm and Pairing Conventions](norm-and-pairing-conventions.html), the factorisation of the four-momentum from [The N Norm: Mass, Angle and the Cone](the-n-norm-mass-angle-and-the-cone.html), and the entropy from [Von Neumann Entropy and the Biquaternion Norm](von-neumann-entropy-and-the-biquaternion-norm.html). It follows [The Temporal Dimension: Why the Temporal Unit Is the Identity](the-temporal-dimension-why-the-temporal-unit-is-the-identity.html), whose two results it uses throughout. First, the doubled scalar part is twice the temporal coefficient, so the conserved number of each sector is the coefficient of the scalar direction. Second, a boost is a unit element and not a $*$-unitary one, so a boost moves that number and fixes the norm. The identities are algebra or corpus results, and they are checked below on a hundred random elements. The identification of the two sectors with a material and an informational sector of the world is the corpus's **hypothesis**, and the candidate constant $h_0$ is a **proposal** that the article examines and does not adopt.
@@ -22,14 +25,14 @@ $$
 \tilde Q=Q_t\,e_t+Q_x\,\vec e_x+Q_y\,\vec e_y+Q_z\,\vec e_z,\qquad Q_{\imath}\in\mathbb{C},
 $$
 
-with $e_t=1$ and $\vec e_\imath^2=-e_t$. The algebra attaches two numbers to it. The **scalar part** is $Q_t$, and twice it is the sum of the two eigenvalues. The **quaternionic norm** is the product with the quaternion conjugate $\tilde Q^\natural=Q_t e_t-\vec Q$:
+with $e_t=1$ and $\vec e_{\imath}^2=-e_t$. The algebra attaches two numbers to it. The **scalar part** is $Q_t$, and twice it is the sum of the two eigenvalues. The **quaternionic norm** is the product with the quaternion conjugate $\tilde Q^\natural=Q_t e_t-\vec Q$:
 
 $$
 2\,\mathrm{Sc}\,\tilde Q=2Q_t,\qquad
 \langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
 $$
 
-In the $2\times2$ image, under $e_t\mapsto I_2$ and $\vec e_\imath\mapsto -i\sigma_\imath$, twice the scalar part is the matrix trace of the image and the quaternionic norm is its determinant:
+In the $2\times2$ image, under $e_t\mapsto I_2$ and $\vec e_{\imath}\mapsto -i\sigma_{\imath}$, twice the scalar part is the matrix trace of the image and the quaternionic norm is its determinant:
 
 $$
 \operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t,\qquad \det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_\natural .
@@ -261,7 +264,7 @@ checked to $8.7\times10^{-16}$. The forward branch grows or decays at rate $2(R_
 
 One level up, the question is about maps rather than elements. *The Exponential, the Logarithm and the Generator* records that an irreversible completely positive map is a sum of at least two conjugations, so it is not a single element and has no algebraic generator. When such a map has a generator, the generator is a superoperator on states, not an element of $\mathbb{B}$. A falling probability has no address in the algebra at all. The question "is $\mathbb{B}_{\Phi}$ lossy?" accordingly has no yes-or-no answer, because the predicate does not apply to elements.
 
-The spectral vocabulary has a boundary of its own, drawn the same way: by asking what a statement is about. *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum* treats a non-normal element by changing the pairing: left and right eigenvectors, and the Petermann factor $\kappa=\frac12(1+\lVert\rho\rVert^{2})$, which is the norm deficit again, $\kappa-1=\frac12(\lVert\rho\rVert^{2}-1)$, checked spectrally to $3.6\times10^{-15}$. *Exceptional Points and the Nilpotent Regime* treats the degeneracy on the isotropic cone. Both are statements about the spectrum of one element, and neither says that a probability falls. The cone itself is out of reach of both sectors. A real vector part gives $B^2=\sum_{\imath\in\{x,y,z\}} Q_\imath^2\ge0$, vanishing only at $\vec Q=0$, and a Hermitian element gives $B^2=-\sum_{\imath\in\{x,y,z\}} q_\imath^2\le0$, vanishing only at $\vec q=0$. The degeneracy available to either sector is therefore diabolic, and an exceptional point needs a vector part that is neither real nor purely imaginary. That is a third kind of element, and the corpus keeps it where it belongs, in the spectral articles.
+The spectral vocabulary has a boundary of its own, drawn the same way: by asking what a statement is about. *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum* treats a non-normal element by changing the pairing: left and right eigenvectors, and the Petermann factor $\kappa=\frac12(1+\lVert\rho\rVert^{2})$, which is the norm deficit again, $\kappa-1=\frac12(\lVert\rho\rVert^{2}-1)$, checked spectrally to $3.6\times10^{-15}$. *Exceptional Points and the Nilpotent Regime* treats the degeneracy on the isotropic cone. Both are statements about the spectrum of one element, and neither says that a probability falls. The cone itself is out of reach of both sectors. A real vector part gives $B^2=\sum_{\imath\in\{x,y,z\}} Q_{\imath}^2\ge0$, vanishing only at $\vec Q=0$, and a Hermitian element gives $B^2=-\sum_{\imath\in\{x,y,z\}} q_{\imath}^2\le0$, vanishing only at $\vec q=0$. The degeneracy available to either sector is therefore diabolic, and an exceptional point needs a vector part that is neither real nor purely imaginary. That is a third kind of element, and the corpus keeps it where it belongs, in the spectral articles.
 
 **Where a falling $P$ comes from: a channel that was eliminated.** The mechanism is in *The Unstable State and the Complex Energy Pole*. Split the module into the slot under study and the rest, and integrate the rest out. The Green's function of the watched slot becomes
 
@@ -613,15 +616,15 @@ The rest of this section sets the two ledgers side by side. It gives each one a 
 
 ### The Material Ledger: The Doubled Scalar Part Is a Frame Label
 
-**One particle, two frames.** A muon has $mc^2=105.66$ MeV. At rest its energy is $105.66$ MeV and its rapidity is zero. At $E=10$ GeV its rapidity is $\theta_{\mathrm{rpd}}=5.24$, because $\cosh\theta_{\mathrm{rpd}}=94.6$, and its momentum is $10.0\ \mathrm{GeV}/c$. The doubled scalar part grows by the factor $94.6$. The norm is the same number in both frames.
+**One particle, two frames.** A muon has $mc^2=1.6929\times10^{-11}\ \mathrm{J}$. At rest its energy is $1.6929\times10^{-11}\ \mathrm{J}$ and its rapidity is zero. At $E=1.6022\times10^{-9}\ \mathrm{J}$ its rapidity is $\theta_{\mathrm{rpd}}=5.24$, because $\cosh\theta_{\mathrm{rpd}}=94.6$, and its momentum is $5.344\times10^{-18}\ \mathrm{kg\,m\,s^{-1}}$. The doubled scalar part grows by the factor $94.6$. The norm is the same number in both frames.
 
 The eigenvalues show the mechanism. They are $imc\,e^{+\theta_{\mathrm{rpd}}}$ and $imc\,e^{-\theta_{\mathrm{rpd}}}$, and they move apart by the same factor in opposite directions. Their product is fixed by construction, and their sum is not. The doubled scalar part is the sum and the norm is the product, so one number moves and the other cannot. This is the whole ledger in one line of algebra.
 
-**Two particles, one energy.** An electron and a proton at $E=1$ GeV have the same doubled scalar part, $2i(1\ \mathrm{GeV})/c$. Their norms are $-0.261\ \mathrm{MeV}^2$ and $-8.80\times10^{5}\ \mathrm{MeV}^2$, a ratio of $3.4\times10^{6}$. That number does not tell the two particles apart. The norm does.
+**Two particles, one energy.** An electron and a proton at $E=1.6022\times10^{-10}\ \mathrm{J}$ have the same doubled scalar part, $2i(1.6022\times10^{-10}\ \mathrm{J})/c$. Their norms are $-6.700\times10^{-27}\ \mathrm{J^2}$ and $-2.259\times10^{-20}\ \mathrm{J^2}$, a ratio of $3.4\times10^{6}$. That number does not tell the two particles apart. The norm does.
 
 So the doubled scalar part is not the material identity of the object. It records how much energy the frame assigns, and it is blind to which particle carries it. The mass is the number that survives the change of frame, and it is the number that names the particle.
 
-**One particle, every energy.** A photon has zero norm at every energy. At $1$ eV and at $1$ TeV its doubled scalar parts differ by $10^{12}$, and its norm is zero in both cases. The invariant can sit on the boundary of the cone, where it separates nothing at all.
+**One particle, every energy.** A photon has zero norm at every energy. At $1.6022\times10^{-19}\ \mathrm{J}$ and at $1.6022\times10^{-7}\ \mathrm{J}$ its doubled scalar parts differ by $10^{12}$, and its norm is zero in both cases. The invariant can sit on the boundary of the cone, where it separates nothing at all.
 
 On the null cone the separation is total. The doubled scalar part carries the whole description of the photon and the norm carries none of it. This is why a mass measurement cannot determine a momentum, and why the material ledger needs both numbers even though only one of them is invariant.
 
@@ -669,12 +672,12 @@ The last row has no partner in the informational sector, because states do not a
 
 | object | $2\,\mathrm{Sc}$ | $\langle\cdot\rangle_\natural$ | $S$ |
 | --- | --- | --- | --- |
-| muon at rest | $2i(105.66\ \mathrm{MeV})/c$ | $-1.116\times10^{4}\ \mathrm{MeV}^2$ | — |
-| the same muon at $10$ GeV | $2i(10\ \mathrm{GeV})/c$, $94.6$ times larger | unchanged | — |
-| photon at $1$ eV | $2i(1\ \mathrm{eV})/c$ | $0$ | — |
-| photon at $1$ TeV | $2i(1\ \mathrm{TeV})/c$, $10^{12}$ times larger | $0$ | — |
-| electron at $1$ GeV | $2i(1\ \mathrm{GeV})/c$ | $-0.261\ \mathrm{MeV}^2$ | — |
-| proton at $1$ GeV | $2i(1\ \mathrm{GeV})/c$, the same | $-8.80\times10^{5}\ \mathrm{MeV}^2$ | — |
+| muon at rest | $2i(1.6929\times10^{-11}\ \mathrm{J})/c$ | $-2.865\times10^{-22}\ \mathrm{J^2}$ | — |
+| the same muon at $1.6022\times10^{-9}\ \mathrm{J}$ | $2i(1.6022\times10^{-9}\ \mathrm{J})/c$, $94.6$ times larger | unchanged | — |
+| photon at $1.6022\times10^{-19}\ \mathrm{J}$ | $2i(1.6022\times10^{-19}\ \mathrm{J})/c$ | $0$ | — |
+| photon at $1.6022\times10^{-7}\ \mathrm{J}$ | $2i(1.6022\times10^{-7}\ \mathrm{J})/c$, $10^{12}$ times larger | $0$ | — |
+| electron at $1.6022\times10^{-10}\ \mathrm{J}$ | $2i(1.6022\times10^{-10}\ \mathrm{J})/c$ | $-6.700\times10^{-27}\ \mathrm{J^2}$ | — |
+| proton at $1.6022\times10^{-10}\ \mathrm{J}$ | $2i(1.6022\times10^{-10}\ \mathrm{J})/c$, the same | $-2.259\times10^{-20}\ \mathrm{J^2}$ | — |
 | pure qubit | $1$ | $0$ | $0$ |
 | qubit at $\lvert\vec s_{\Psi}\rvert=\tfrac12$ | $1$ | $0.1875$ | $0.811$ |
 | maximally mixed qubit | $1$ | $0.25$ | $1$ |
@@ -771,9 +774,9 @@ What would fix $h_0$ is a derivation of $\frac{h}{2\pi}$ from the algebra. The c
 | an anti-Hermitian element generates a $*$-unitary flow | established | $\exp(-r'_t\tilde Q)\exp(r'_t\tilde Q)=e_t$; checked |
 | no element of either sector has a decay rate in the corpus convention, which carries the $-i$ | established | $\operatorname{Re}Q_t=0$ on $\mathbb{B}_{\Phi}$; the $-i$ moves $Q_t$ to the frequency slot on $\mathbb{B}_{\Psi}$; both norms identically $1$, checked to $10^{-14}$ |
 | the norm of the exponential is fixed by three numbers | established | the law of *Relations between the Biquaternion Exponential and the Fourier Kernel*; checked to $1.4\times10^{-15}$ |
-| the two sectors meet the discriminant locus only diabolically | corpus result | $B^2=\sum_{\imath\in\{x,y,z\}} Q_\imath^2\ge0$ for a real vector part, $-\sum_{\imath\in\{x,y,z\}} q_\imath^2\le0$ for a Hermitian element; 100 draws, $\operatorname{Im}B^2=0$ |
+| the two sectors meet the discriminant locus only diabolically | corpus result | $B^2=\sum_{\imath\in\{x,y,z\}} Q_{\imath}^2\ge0$ for a real vector part, $-\sum_{\imath\in\{x,y,z\}} q_{\imath}^2\le0$ for a Hermitian element; 100 draws, $\operatorname{Im}B^2=0$ |
 | a survival probability can fall while the total is conserved | established | band model, 2000 levels: $P_0$ falls $1\to0.135$, total norm $1.000000000$; checked |
-| the survival probability leaves one quadratically | corpus result | $P=1-\frac{(2\pi)^{2} \delta^{2}\,\tilde{H}_{\Psi}^{2}\,{r'_{t}}^{2}}{h^{2}}+O(r'^4_t)$; band model $(1-P)/r_t^{\prime 2}=0.800$ vs $g^2N=0.8$ |
+| the survival probability leaves one quadratically | corpus result | $P=1-\frac{(2\pi)^{2} \delta^{2}\,\tilde{H}_{\Psi}^{2}\,{r'_{t}}^{2}}{h^{2}}+O(r'{}^4_t)$; band model $(1-P)/r_t^{\prime 2}=0.800$ vs $g^2N=0.8$ |
 | the exponential is an intermediate-time fit, not the law | corpus result | quadratic start, power-law tail; deficit ratio $6287$ at $r'_t=10^{-4}$ |
 | the width is the imaginary part of the central self-energy | corpus result | *The Unstable State and the Complex Energy Pole* |
 | in the effective description the damping is the Hermitian part of $G$ | established | $G=-i\tilde H_{\Psi,\mathrm{eff}}=-\frac12\tilde\Gamma-i\tilde H_\Psi$; checked |
@@ -812,7 +815,7 @@ The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\
 - Conservation is not invariance. The doubled scalar part is fixed by the $*$-unitary flow and moved by a boost, so energy is conserved and frame-dependent; the norm is fixed by both, so mass is conserved and frame-independent.
 - The duality is the thesis: the norm is fixed and the doubled scalar part free on the material side, that number fixed and the norm free on the informational side.
 - The two freedoms are of different kinds. On $\mathbb{B}_{\Phi}$ the free number is a frame label, and the Lorentz group moves it. On $\mathbb{B}_{\Psi}$ the reversible group fixes both numbers, and the norm moves only under a loss of information.
-- The doubled scalar part identifies nothing on either side. An electron and a proton at $1$ GeV share it, and so do a pure and a maximally mixed state. The norm is the identifying number of both ledgers.
+- The doubled scalar part identifies nothing on either side. An electron and a proton at $1.6022\times10^{-10}\ \mathrm{J}$ share it, and so do a pure and a maximally mixed state. The norm is the identifying number of both ledgers.
 - The two sectors are separated by the sign of the discriminant: non-positive for the four-momentum, non-negative for the state.
 - There is no $h_0$ in the corpus. The algebra supplies $c$ and the bit, and imports $\frac{h}{2\pi}$ and $k_B$. The two exchange rates the corpus does have are $c^2$ (mechanics) and $k_BT$ (thermodynamics).
 - The slogan "energy equals mass plus information" is exact as a duality of readings, and false as an additive decomposition. The exact additive split is rest energy plus kinetic energy, $E=mc^2+T$.

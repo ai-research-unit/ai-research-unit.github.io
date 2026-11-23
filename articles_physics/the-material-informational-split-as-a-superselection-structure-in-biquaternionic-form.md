@@ -14,7 +14,7 @@ The distinction matters for the relativistic quantum information that this subca
 
 The article proceeds as follows. The standard algebraic notion of a superselection structure is recalled, in the form in which it will be tested. Then the two sectors are described as the eigenspaces of an involution, and the algebra's own operations are examined: which of them preserve the sectors and which mix them. Then the factor property is derived and its consequence stated: there is no central-projection superselection structure. Then the structure that does survive is isolated — the real-structure grading, its invariance under the conjugation action, and the unobservability of the relative phase. Then the same split is read on the Lie algebra, where it becomes the Cartan decomposition of $\mathrm{SL}(2,\mathbb{C})$ and acquires the sharpest algebraic content available. The **physical interpretation** and the framing of the subcategory close the article.
 
-The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\imath^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, central scalar imaginary $i$ with $i^2 = -1$, reduced value $2\,\mathrm{Sc}(\tilde{Q})$, Hermitian conjugation $\tilde{Q}^{*}$, quaternion conjugate $\tilde{Q}^{\natural}$, and the real structure $\flat = -{}^{*}$ with fixed space $\mathbb{B}_{\Phi}$. The matrix model is $\mathbb{B}\cong M_2(\mathbb{C})$ with $e_t\mapsto I_2$, $\vec e_\imath\mapsto -i\sigma_\imath$ and $i\mapsto iI_2$.
+The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_{\imath}^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, central scalar imaginary $i$ with $i^2 = -1$, reduced value $2\,\mathrm{Sc}(\tilde{Q})$, Hermitian conjugation $\tilde{Q}^{*}$, quaternion conjugate $\tilde{Q}^{\natural}$, and the real structure $\flat = -{}^{*}$ with fixed space $\mathbb{B}_{\Phi}$. The matrix model is $\mathbb{B}\cong M_2(\mathbb{C})$ with $e_t\mapsto I_2$, $\vec e_{\imath}\mapsto -i\sigma_{\imath}$ and $i\mapsto iI_2$.
 
 The companion articles supply the pieces:
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the four-vector content, the interval, and the anti-Hermitian sector.
@@ -115,7 +115,7 @@ The sectors are a grading of the vector space and not a splitting of the algebra
 
 The standard route asks for central projections, so the centre must be computed.
 
-**The centre.** An element $\tilde Q_4 = Q_{4t}e_t + Q_{4x}\vec e_x + Q_{4y}\vec e_y + Q_{4z}\vec e_z$ is central if and only if $[\tilde Q_4, \vec e_\imath] = 0$ for $k=1,2,3$. Using $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmathk}\vec e_\imath$ for ${\imath},\jmath\in\{1,2,3\}$, the bracket with $\vec e_x$ gives
+**The centre.** An element $\tilde Q_4 = Q_{4t}e_t + Q_{4x}\vec e_x + Q_{4y}\vec e_y + Q_{4z}\vec e_z$ is central if and only if $[\tilde Q_4, \vec e_{\imath}] = 0$ for $k=1,2,3$. Using $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmath k}\vec e_{\imath}$ for ${\imath},\jmath\in\{1,2,3\}$, the bracket with $\vec e_x$ gives
 $$
 [\tilde Q_4, \vec e_x] = 2Q_{4z}\vec e_y - 2Q_{4y}\vec e_z ,
 $$
@@ -230,7 +230,7 @@ $$
 $$
 with $\mathbb{B}_{\Psi}^{0}$ Hermitian (scalar-free) and $\mathbb{B}_{\Phi}^{0}$ anti-Hermitian (scalar-free).
 
-**The brackets.** With $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmathk}\vec e_\imath$ for ${\imath},\jmath\in\{1,2,3\}$ and ${\imath}\neq\jmath$, the commutators close on the two summands as
+**The brackets.** With $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmath k}\vec e_{\imath}$ for ${\imath},\jmath\in\{1,2,3\}$ and ${\imath}\neq\jmath$, the commutators close on the two summands as
 $$
 \boxed{\;[\mathbb{B}_{\Phi}^{0}, \mathbb{B}_{\Phi}^{0}]\subseteq\mathbb{B}_{\Phi}^{0}, \qquad
 [\mathbb{B}_{\Phi}^{0}, \mathbb{B}_{\Psi}^{0}]\subseteq\mathbb{B}_{\Psi}^{0}, \qquad
@@ -238,9 +238,9 @@ $$
 $$
 Explicitly, the rotation generators and the boost generators satisfy
 $$
-[\vec e_{\imath}, \vec e_{\jmath}] = 2\epsilon_{\imath\jmathk}\,\vec e_\imath, \qquad
-[i\vec e_{\imath}, i\vec e_{\jmath}] = -2\epsilon_{\imath\jmathk}\,\vec e_\imath, \qquad
-[\vec e_{\imath}, i\vec e_{\jmath}] = 2\epsilon_{\imath\jmathk}\,i\vec e_\imath .
+[\vec e_{\imath}, \vec e_{\jmath}] = 2\epsilon_{\imath\jmath k}\,\vec e_{\imath}, \qquad
+[i\vec e_{\imath}, i\vec e_{\jmath}] = -2\epsilon_{\imath\jmath k}\,\vec e_{\imath}, \qquad
+[\vec e_{\imath}, i\vec e_{\jmath}] = 2\epsilon_{\imath\jmath k}\,i\vec e_{\imath} .
 $$
 The first line says that the **material** traceless sector is closed under commutation: it is the compact subalgebra $\mathrm{SU}(2)$ of rotations. The second says that the **informational** traceless sector is a symmetric complement: the bracket of two boosts is a rotation, and the bracket of a rotation with a boost is a boost. The split is therefore a $\mathbb{Z}_2$ grading of the Lorentz Lie algebra,
 $$
@@ -288,7 +288,7 @@ with the material part the compact $\mathrm{SU}(2)$ of rotations and the informa
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
 | ${}^{*}$ | Hermitian conjugation, antilinear involution |
 | $\flat = -{}^{*}$ | Real structure; fixed space $\mathbb{B}_{\Phi}$ |

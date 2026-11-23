@@ -104,7 +104,7 @@ The two mixed units are nilpotent, and each pair multiplies to one of the idempo
 
 **The coordinates.** An element written in the frame is
 $$
-\tilde Q=P_+\tilde\Pi_{\mathrm{id},++X}_+\vec\Pi_{\mathrm{nil},++X}_-\vec\Pi_{\mathrm{nil},-+P}_-\tilde\Pi_{\mathrm{id},-},
+\tilde Q=P_+\tilde\Pi_{\mathrm{id},++X}{}_+\vec\Pi_{\mathrm{nil},++X}{}_-\vec\Pi_{\mathrm{nil},-+P}{}_-\tilde\Pi_{\mathrm{id},-},
 \qquad P_\pm,X_\pm\in\mathbb{C}.
 $$
 The four Peirce coordinates are the entries of the $2\times2$ image,
@@ -677,11 +677,11 @@ one complex equation in three complex unknowns: a two-parameter family, of real 
 
 **Every frame with two idempotents is a root frame.** Suppose a frame contains two orthogonal idempotents summing to $e_t$. Their difference is
 $$
-\vec{Ζ}=2\tilde\Pi_{\mathrm{id},+-e}_t,
+\vec{Ζ}=2\tilde\Pi_{\mathrm{id},+-e}{}_t,
 $$
 whose scalar part is $2\cdot\tfrac12-1=0$, so it is a vector, and
 $$
-\vec{Ζ}^2=4\tilde\Pi_{\mathrm{id},+-4}\tilde\Pi_{\mathrm{id},++e}_t=e_t,
+\vec{Ζ}^2=4\tilde\Pi_{\mathrm{id},+-4}\tilde\Pi_{\mathrm{id},++e}{}_t=e_t,
 $$
 so it is a root. Hence such a frame is a Peirce frame of some root, and no frame outside this family carries the idempotents of the element. The choice of the frame is the choice of a root, and there is nothing else to choose.
 

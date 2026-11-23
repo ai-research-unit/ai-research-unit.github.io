@@ -655,11 +655,11 @@ $$
 Since $\vec\Pi_{\mathrm{nil}}^2=0$, one has $\vec A\cdot\vec B=0$ and $\lVert\vec A\rVert=\lVert\vec B\rVert=a$. In terms of the coordinates, write $Q_t=q_t+iq'_t$ and $Q_j=q_j+iq'_j$ for $j=x,y,z$, with the eight coefficients real, and put $\vec q=(q_x,q_y,q_z)$ and $\vec q'=(q'_x,q'_y,q'_z)$. Then
 
 $$
-\vec A=\frac{q_t\,\vec q+q'_t\,\vec q'}{q_t^2+q_t'^2},\qquad
-\vec B=\frac{q_t\,\vec q'-q'_t\,\vec q}{q_t^2+q_t'^2},
+\vec A=\frac{q_t\,\vec q+q'_t\,\vec q'}{q_t^2+q_t'{}^2},\qquad
+\vec B=\frac{q_t\,\vec q'-q'_t\,\vec q}{q_t^2+q_t'{}^2},
 $$
 
-since $Q_t^{-1}=(q_t-iq'_t)/(q_t^2+q_t'^2)$ and $\vec\Pi_{\mathrm{nil}}=\vec Q\,Q_t^{-1}$.
+since $Q_t^{-1}=(q_t-iq'_t)/(q_t^2+q_t'{}^2)$ and $\vec\Pi_{\mathrm{nil}}=\vec Q\,Q_t^{-1}$.
 
 **Theorem (the word and its seven data).** On the Jordan part $a>0$, every $\tilde Q$ of the sector is
 

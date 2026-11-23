@@ -56,12 +56,12 @@ $$
 =\varrho^{2}\Bigl\lvert\partial_{\imath}\ln \varrho+i\,\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi i\,ϙ}{h}A_{\imath}\Bigr\rvert^{2},
 $$
 
-and the temporal and spatial slots read differently because $A_t=ia'_t$ is imaginary and $A_\imath$ is real:
+and the temporal and spatial slots read differently because $A_t=ia'_t$ is imaginary and $A_{\imath}$ is real:
 
 $$
 \varrho^{2}\Bigl\lvert\partial_{r'_t}\ln \varrho-\frac{2\pi ϙ}{h}a'_t+i\,\partial_{r'_t}\theta_{\mathrm{pha}}\Bigr\rvert^{2}
 \quad\text{and}\quad
-\varrho^{2}\Bigl\lvert\partial_\imath\ln \varrho+i\Bigl(\partial_\imath\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_\imath\Bigr)\Bigr\rvert^{2}.
+\varrho^{2}\Bigl\lvert\partial_{\imath}\ln \varrho+i\Bigl(\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_{\imath}\Bigr)\Bigr\rvert^{2}.
 $$
 
 In the temporal slot the connection sits with the scale; in the spatial slots it sits with the phase. The two moduli are the same function of the *mechanical* four-momentum, and §*The Action in Polar Variables: The Central Field* writes the action in that form.
@@ -95,11 +95,11 @@ $$
 
 with the metric unchanged. The metric is unchanged because the metric is a property of the *free* bracket's coefficients in the parameter basis, and the connection's term is not a parameter derivative; it is an additive constant in the bracket, and its contribution to the action is the two terms of §*The Action in Polar Variables*. So the frame density, the $\cosh$ and $\sinh$ structure, the amplitude–rapidity block's unit determinant and the two cross terms are all the free article's.
 
-Which parameter equations are affected. Varying the eight parameters gives eight equations: the scale's, the phase's, the rapidity's, the boost axis's two, the rotor's angle, and the rotor axis's two. The connection enters through the phase's temporal derivative and the scale's spatial derivatives, so the equations that contain those derivatives are shifted and the rest are shifted only through the potential term $-\frac{(2\pi)^{2} ϙ^{2}\varrho^{2}}{h^{2}}(a_{t}'^{2}-\lvert\vec A\rvert^{2})$, which is a function of the coordinates and of $\varrho$ alone and therefore adds $\partial/\partial p$ of a known function to the right side of each.
+Which parameter equations are affected. Varying the eight parameters gives eight equations: the scale's, the phase's, the rapidity's, the boost axis's two, the rotor's angle, and the rotor axis's two. The connection enters through the phase's temporal derivative and the scale's spatial derivatives, so the equations that contain those derivatives are shifted and the rest are shifted only through the potential term $-\frac{(2\pi)^{2} ϙ^{2}\varrho^{2}}{h^{2}}(a_{t}'{}^{2}-\lvert\vec A\rvert^{2})$, which is a function of the coordinates and of $\varrho$ alone and therefore adds $\partial/\partial p$ of a known function to the right side of each.
 
 No constraint and no multiplier. The free polar article's argument is that the eight parameters are coordinates on the invertibles, that the word is a bijection with a smooth inverse, and that the Euler–Lagrange equations in the parameters are the Jacobian image of the element equation — hence exact, hence no constraint, hence no multiplier. The coupling does not touch the argument: the word is the same word, the bijection is the same bijection, and the Jacobian is the same Jacobian, because the connection enters the *action* and not the *parameterisation*. So the coupled polar variational principle is exactly as closed as the free one, and the closedness is a property of the chart and not of the dynamics.
 
-The Legendre transform. The kinetic matrix in the eight velocities is the free one plus the connection's contribution, and the connection's contribution to the velocities' dependence is a shift: the $\partial_{r'_t}\theta_{\mathrm{pha}}$ terms become $\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}a'_t$ and the $\partial_\imath\theta_{\mathrm{pha}}$ terms $\partial_\imath\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_\imath$. A shift of a velocity does not change the matrix of second derivatives, so the free article's invertibility and its "regular Legendre transform" statement survive verbatim. The only new second-derivative structure is the $\rho_{\mathrm{chg}}^{2}A^{2}$ term, which has no velocity and contributes to the potential alone.
+The Legendre transform. The kinetic matrix in the eight velocities is the free one plus the connection's contribution, and the connection's contribution to the velocities' dependence is a shift: the $\partial_{r'_t}\theta_{\mathrm{pha}}$ terms become $\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}a'_t$ and the $\partial_{\imath}\theta_{\mathrm{pha}}$ terms $\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_{\imath}$. A shift of a velocity does not change the matrix of second derivatives, so the free article's invertibility and its "regular Legendre transform" statement survive verbatim. The only new second-derivative structure is the $\rho_{\mathrm{chg}}^{2}A^{2}$ term, which has no velocity and contributes to the potential alone.
 
 The pairing. Inherited, and the connection is what the pairing now sees. The parent pairs with $\mathrm{Sc}(\cdot^{*}\cdot)$ and writes the matter kinetic term through the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi$. The chart rewrites $\tilde\Xi$ as a scale and a phase and the connection as its four components, and both are real variables. The density stays real, and the reason is the one the element article gives: the scalar part of a product of conjugates is real, and the covariant derivative is a sum of an ordinary derivative and a multiplication, each of which preserves that identity.
 

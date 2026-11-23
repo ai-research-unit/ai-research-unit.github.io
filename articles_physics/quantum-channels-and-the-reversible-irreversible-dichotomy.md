@@ -14,7 +14,7 @@ The relation to the two subspaces is the conceptual thread. States live in $\mat
 
 Two cautionary notes, in the spirit of the companion articles. First, the mathematics is **standard quantum information theory** transcribed into biquaternion notation; no result below depends on the physical hypothesis that $\mathbb{B}_{\Psi}$ is a distinct sector of the world. Second, the reformulation **reframes** the dichotomy without resolving the conceptual problems that attend it in standard quantum physics — the position taken in *Entangled Subsystems in the Biquaternion Framework*, that the framework changes the language and not the physics, applies here too.
 
-The conventions are those of the companion articles: the quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\imath^2 = -e_t$; the central scalar imaginary $i$; the fixed-point subspaces $\mathbb{B}_{C}$ (the complex subspace, the centre), $\mathbb{B}_{H}$ (the real-quaternion subspace), $\mathbb{B}_{\Psi}$ (Hermitian), and $\mathbb{B}_{\Phi}$ (anti-Hermitian); a general element $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_{\imath} \in \mathbb{C}$; and the scalar part $\mathrm{Sc}(\tilde{Q})$, which every statement below uses directly.
+The conventions are those of the companion articles: the quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_{\imath}^2 = -e_t$; the central scalar imaginary $i$; the fixed-point subspaces $\mathbb{B}_{C}$ (the complex subspace, the centre), $\mathbb{B}_{H}$ (the real-quaternion subspace), $\mathbb{B}_{\Psi}$ (Hermitian), and $\mathbb{B}_{\Phi}$ (anti-Hermitian); a general element $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_{\imath} \in \mathbb{C}$; and the scalar part $\mathrm{Sc}(\tilde{Q})$, which every statement below uses directly.
 
 ## The State Space and the Plain Form
 
@@ -171,7 +171,7 @@ for an isometry $\tilde{V}_{\Phi}$ into the system tensor an environment, with $
 
 Geometrically, a qubit channel is an affine map of the Bloch ball into itself, $\vec s_{\Psi} \mapsto M\vec s_{\Psi} + \vec t$. The $*$-unitary channels are the rotations $M \in SO(3)$, $\vec t = 0$. Two canonical types are distinguished by whether the origin is fixed:
 
-- **Unital channels** have $\vec t = 0$ and fix the maximally mixed state, contracting the ball toward the centre. The **depolarizing channel** $\mathcal{E}_p(\tilde{Ϛ}_{\Psi}) = (1-p)\tilde{Ϛ}_{\Psi} + p\,e_t/2$, with Bloch map $\vec s_{\Psi} \mapsto (1-p)\vec s_{\Psi}$, is completely positive and trace preserving for $0 \leq p \leq 1$; in the biquaternion algebra it has Kraus operators $\{\sqrt{1-\tfrac{3p}{4}}\,e_t,\ \sqrt{\tfrac{p}{4}}\,i\vec e_x,\ \sqrt{\tfrac{p}{4}}\,i\vec e_y,\ \sqrt{\tfrac{p}{4}}\,i\vec e_z\}$, whose normalization uses $(i\vec e_\imath)^{*}(i\vec e_\imath) = e_t$.
+- **Unital channels** have $\vec t = 0$ and fix the maximally mixed state, contracting the ball toward the centre. The **depolarizing channel** $\mathcal{E}_p(\tilde{Ϛ}_{\Psi}) = (1-p)\tilde{Ϛ}_{\Psi} + p\,e_t/2$, with Bloch map $\vec s_{\Psi} \mapsto (1-p)\vec s_{\Psi}$, is completely positive and trace preserving for $0 \leq p \leq 1$; in the biquaternion algebra it has Kraus operators $\{\sqrt{1-\tfrac{3p}{4}}\,e_t,\ \sqrt{\tfrac{p}{4}}\,i\vec e_x,\ \sqrt{\tfrac{p}{4}}\,i\vec e_y,\ \sqrt{\tfrac{p}{4}}\,i\vec e_z\}$, whose normalization uses $(i\vec e_{\imath})^{*}(i\vec e_{\imath}) = e_t$.
 - **Non-unital channels** have $\vec t \neq 0$ and move the maximally mixed state off centre. The **amplitude-damping channel** is the standard example, acting on the Bloch vector as $(s_x, s_y, s_z) \mapsto (\sqrt{1-\gamma}\,s_x,\ \sqrt{1-\gamma}\,s_y,\ \gamma + (1-\gamma)s_z)$, $0 \leq \gamma \leq 1$, contractive for $\gamma > 0$ and the identity only at $\gamma = 0$.
 
 Dephasing, treated next, is unital: it contracts the ball toward an *axis* rather than its centre.
@@ -321,7 +321,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators of reversible evolution) |
 | $\mathbb{B}_{C}$ | Complex subspace (centre); trace part of a Hamiltonian |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace (rotation rotors) |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ | State of the informational sector |
 | $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ | Observable / Hamiltonian |

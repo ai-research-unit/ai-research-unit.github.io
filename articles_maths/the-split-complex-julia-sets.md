@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The split-complex quadratic family $f_c(z) = z^2+c$ of *The Split-Complex Quadratic Family* is a map of the plane that is, in the idempotent coordinates $\varphi(z) = (z_+,z_-)$, the pair of one-dimensional maps $g_+(u) = u^2+c_+$ and $g_-(v) = v^2+c_-$. This article defines the Fatou and the Julia sets of such a map and proves the structure that the product decomposition forces: the Fatou set is the product $F_c = \varphi^{-1}(F_+ \times F_-)$ of the real Fatou sets, and the Julia set is the union of the two products $J_c = \varphi^{-1}\bigl((J_+ \times \mathbb{R}) \cup (\mathbb{R} \times J_-)\bigr)$ of the real Julia sets, one for each idempotent coordinate. The filled Julia set is the compact product $K_c = \varphi^{-1}(K_+ \times K_-)$ of the real filled Julia sets. The two forms of the norm, $\langle z\rangle_{*} = a^2-a'^2 = z_+z_-$, and their level sets — the hyperbolas that replace the circles of the complex case — are described, together with the degeneration of the polar decomposition on the null cone and the splitting of the Newton method.
+The split-complex quadratic family $f_c(z) = z^2+c$ of *The Split-Complex Quadratic Family* is a map of the plane that is, in the idempotent coordinates $\varphi(z) = (z_+,z_-)$, the pair of one-dimensional maps $g_+(u) = u^2+c_+$ and $g_-(v) = v^2+c_-$. This article defines the Fatou and the Julia sets of such a map and proves the structure that the product decomposition forces: the Fatou set is the product $F_c = \varphi^{-1}(F_+ \times F_-)$ of the real Fatou sets, and the Julia set is the union of the two products $J_c = \varphi^{-1}\bigl((J_+ \times \mathbb{R}) \cup (\mathbb{R} \times J_-)\bigr)$ of the real Julia sets, one for each idempotent coordinate. The filled Julia set is the compact product $K_c = \varphi^{-1}(K_+ \times K_-)$ of the real filled Julia sets. The two forms of the norm, $\langle z\rangle_{*} = a^2-a'{}^2 = z_+z_-$, and their level sets — the hyperbolas that replace the circles of the complex case — are described, together with the degeneration of the polar decomposition on the null cone and the splitting of the Newton method.
 
 The point of the article is honesty about what is transferred and what is new. The definition of the Fatou and Julia sets, the completeness of the invariant sets and the coding are transferred from the one-dimensional theory, applied to the two real maps; the genuinely new phenomenon is that the Julia set of the plane map is a **union of two products** and is in general unbounded, whereas the Julia set of a polynomial in $\mathbb{C}$ is compact. The complex case that the comparison uses is *The Julia Sets of a Complex Polynomial* and *The Mandelbrot Set and the Quadratic Family*; the algebra, the idempotents and the null cone are those of *Split-Complex Algebra*, *Square Roots of One and the Idempotents of the Split-Complex Algebra* and *Split-Complex Null Quadric and Projective Geometry*; the hyperbolic geometry of the sets is the subject of *The Hyperbolic Geometry of the Split-Complex Julia Sets*; and the general theory of the real dynamics is cited to the real quadratic family. No physics is invoked.
 
@@ -99,7 +99,7 @@ the union of two closed strips of width four crossing at forty-five degrees; it 
 **Theorem (the two forms).** The norm of $\mathbb{C}_{\mathrm{spl}}$ has the two equivalent forms
 
 $$
-\langle z\rangle_{*} = a^2 - a'^2 = z_+ z_- ,
+\langle z\rangle_{*} = a^2 - a'{}^2 = z_+ z_- ,
 $$
 
 indefinite of inertia $(1,1)$; its zero set is the **null cone** $\mathcal{N} = \mathbb{R}\Pi_+ \cup \mathbb{R}\Pi_-$, the two null lines $z_+ = 0$ and $z_- = 0$, whose nonzero elements are the zero divisors.
@@ -130,7 +130,7 @@ where $p_\pm(x) = \sum_k a_{k\pm} x^k$ is the real polynomial obtained from the 
 
 The Fatou set of a split-complex quadratic map $f_c(z) = z^2+c$ is the locus of equicontinuity of the iterates, and the Julia set is its complement. In the idempotent coordinates $\varphi(z) = (z_+,z_-)$ the map is the pair of real quadratic maps $u \mapsto u^2+c_+$, $v \mapsto v^2+c_-$, and the two sets factor: $F_c = \varphi^{-1}(F_+ \times F_-)$ is a product, while $J_c = \varphi^{-1}((J_+ \times \mathbb{R}) \cup (\mathbb{R} \times J_-))$ is the union of two products and is unbounded in general. The filled Julia set is the compact product $K_c = \varphi^{-1}(K_+ \times K_-)$ of the real filled Julia sets, and the two sets never coincide: $J_c$ contains $\partial K_c$ and is unbounded, so it is never equal to the compact $\partial K_c$. For $c = 0$ the Julia set is the four lines $a \pm a' = \pm 1$, containing the four sides of the square; for $c = -2$ it is the union of two crossing strips while the filled Julia set is their intersection.
 
-The norm is indefinite, with the two forms $\langle z\rangle_{*} = a^2-a'^2 = z_+z_-$; its level sets are the hyperbolas and the two null lines, replacing the circles of the complex case, and its vanishing locus is the null cone of the zero divisors, on which the polar decomposition is undefined. The two sets are nevertheless defined everywhere, in the idempotent coordinates, and the Newton map of a split-complex polynomial splits in the same way. The general one-dimensional theory is cited to the real quadratic family; the geometry of the sets with the hyperbolic rotations is the subject of *The Hyperbolic Geometry of the Split-Complex Julia Sets*, and the complex case that the comparison uses is *The Julia Sets of a Complex Polynomial*.
+The norm is indefinite, with the two forms $\langle z\rangle_{*} = a^2-a'{}^2 = z_+z_-$; its level sets are the hyperbolas and the two null lines, replacing the circles of the complex case, and its vanishing locus is the null cone of the zero divisors, on which the polar decomposition is undefined. The two sets are nevertheless defined everywhere, in the idempotent coordinates, and the Newton map of a split-complex polynomial splits in the same way. The general one-dimensional theory is cited to the real quadratic family; the geometry of the sets with the hyperbolic rotations is the subject of *The Hyperbolic Geometry of the Split-Complex Julia Sets*, and the complex case that the comparison uses is *The Julia Sets of a Complex Polynomial*.
 
 ## Summary of Notation
 
@@ -142,7 +142,7 @@ The norm is indefinite, with the two forms $\langle z\rangle_{*} = a^2-a'^2 = z_
 | $F_c$, $J_c$ | Fatou set, Julia set of $f_c$ |
 | $F_\pm$, $J_\pm$ | Fatou and Julia sets of the real maps |
 | $K_c = \varphi^{-1}(K_+\times K_-)$ | Filled Julia set, the compact product |
-| $\langle z\rangle_{*} = a^2-a'^2 = z_+z_-$ | Norm, indefinite |
+| $\langle z\rangle_{*} = a^2-a'{}^2 = z_+z_-$ | Norm, indefinite |
 | $\mathcal{N} = \mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$ | Null cone, the two null lines |
 | $N_p$ | Newton map, splitting as $N_{p_\pm}$ |
 

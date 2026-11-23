@@ -67,7 +67,7 @@ the sign giving the $\mathbb{Z}/2$ and the exponent of each prime giving a copy 
 
 **Theorem.** The relation so defined is a total order on $\mathbb{Q}$ making it an ordered field, and it is the only ordering of $\mathbb{Q}$.
 
-**Proof.** Well-definedness: if $\tfrac{r}{s} = \tfrac{r'}{s'}$ then $rs' = r's$ and $rs$ has the same sign as $r's'$, since $rs\,s'^2 = s^2r's'$ and $s'^2, s^2 > 0$. The order axioms reduce to the corresponding facts in $\mathbb{Z}$, and multiplication by a positive rational preserves positivity by the sign rules. Uniqueness: in any ordering of a field, $1 > 0$ by the basic rules of *Ordered Fields*, hence $n \cdot 1 > 0$ for $n \geq 1$ and $n \cdot 1 < 0$ for $n \leq -1$; so the sign of every integer is forced, and then the sign of every ratio is forced, giving the positive cone displayed.
+**Proof.** Well-definedness: if $\tfrac{r}{s} = \tfrac{r'}{s'}$ then $rs' = r's$ and $rs$ has the same sign as $r's'$, since $rs\,s'{}^2 = s^2r's'$ and $s'{}^2, s^2 > 0$. The order axioms reduce to the corresponding facts in $\mathbb{Z}$, and multiplication by a positive rational preserves positivity by the sign rules. Uniqueness: in any ordering of a field, $1 > 0$ by the basic rules of *Ordered Fields*, hence $n \cdot 1 > 0$ for $n \geq 1$ and $n \cdot 1 < 0$ for $n \leq -1$; so the sign of every integer is forced, and then the sign of every ratio is forced, giving the positive cone displayed.
 
 **Corollary.** $\mathbb{Q}$ is an Archimedean ordered field and the smallest one: it embeds as an ordered subfield in every ordered field. Its automorphism group is trivial, $\operatorname{Aut}(\mathbb{Q}) = 1$, and the only order-preserving automorphism of $\mathbb{Q}$ is the identity.
 

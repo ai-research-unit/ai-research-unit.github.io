@@ -4,6 +4,8 @@
 
 This is standard physics, and one of the two places where the model is widely agreed to be incomplete from the inside. Nothing here is a framework result. The framework's contribution is stated in one section and consists of a *reason for silence*, which is worth having only because it is exact.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 The Higgs mass is the only dimensionful parameter in the model that is not protected by a symmetry, so every heavy particle that couples to the Higgs shifts its mass by an amount proportional to the heavy particle's mass squared, and the measured value requires those shifts to cancel against the bare parameter to one part in $3.0\times10^{32}$ if the cutoff is the Planck scale.
 
 Three claims are refused at the outset.
@@ -12,13 +14,13 @@ Three claims are refused at the outset.
 - The framework has no solution. It does not, and section *What the Algebra Says* gives the exact reason.
 - Naturalness is not a theorem. It is a heuristic with one success and at least one conspicuous failure, and section *Naturalness Is Not a Theorem* states both.
 
-**Units.** A mass in this article is a fraction of the vacuum value, $n_i=m_i/m_{\mathrm{vev}}$ with $E_{\mathrm{vev}}=246.22$ GeV. A cutoff, a compositeness scale and a running scale stay in electronvolts: those are energies, and the electronvolt is their unit.
+**Units.** A mass in this article is a fraction of the vacuum value, $n_i=m_i/m_{\mathrm{vev}}$ with $E_{\mathrm{vev}}=3.9449\times10^{-8}\ \mathrm{J}$. A cutoff, a compositeness scale and a running scale stay in joules: those are energies, and the joule is their unit.
 
 Four claims are then established, each with a number.
 
 - The sensitivity is real and it is quadratic. The one-loop shift is $\delta m_H^2=\frac{\Lambda^2}{16\pi^2}(2.49)$, the coefficient being the sum of a gauge part $0.239$, a top part $1.476$ and a quartic part $0.774$. The top dominates, as it does everywhere in the scalar sector.
-- The tuning is $\Lambda^2$-scaled and the stable window is narrow. $\Lambda=1$ TeV costs nothing; $\Lambda=10$ TeV costs a factor $10^2$; $\Lambda=M_{\mathrm{Pl}}$ costs $10^{32}$. Radiative stability requires new physics within about $8$ Higgs masses, that is around $1$ TeV.
-- Three standard responses exist, and each has a measured cost. Supersymmetry needs stops below about $1$ TeV to keep the tuning under $10\%$, and the LHC has not found them. Compositeness needs $f\lesssim1$ TeV for the same, and has not been found either. The landscape needs no new physics and cannot be tested by the same means.
+- The tuning is $\Lambda^2$-scaled and the stable window is narrow. $\Lambda=1.6\times10^{-7}\ \mathrm{J}$ costs nothing; $\Lambda=1.6\times10^{-6}\ \mathrm{J}$ costs a factor $10^2$; $\Lambda=M_{\mathrm{Pl}}$ costs $10^{32}$. Radiative stability requires new physics within about $8$ Higgs masses, that is around $1.6\times10^{-7}\ \mathrm{J}$.
+- Three standard responses exist, and each has a measured cost. Supersymmetry needs stops below about $1.6\times10^{-7}\ \mathrm{J}$ to keep the tuning under $10\%$, and the LHC has not found them. Compositeness needs $f\lesssim1.6\times10^{-7}\ \mathrm{J}$ for the same, and has not been found either. The landscape needs no new physics and cannot be tested by the same means.
 - The framework's answer is that it has no cutoff, and therefore no quadratic sensitivity, and therefore nothing to say. That is not a solution; it is a statement that the problem is imported whole. But it comes with one structural observation that is worth the section: a dimensionless algebra cannot generate a dimensionful parameter by itself, which is exactly the statement [the hadron article](hadron-structure-from-qcd-the-bound-state-problem.html) made about $\Lambda_{\mathrm{QCD}}$ — and there, the mechanism exists and is non-perturbative, while here it does not exist at all.
 
 ## The Quadratic Sensitivity
@@ -68,10 +70,10 @@ The cutoff reappears in one place. If gravity is included, the Planck scale is a
 With the total coefficient $2.489$,
 
 $$
-\delta m_H^2=\frac{2.489}{16\pi^2}\left(1.22\times10^{19}\right)^2=2.35\times10^{36}\ \mathrm{GeV}^2 ,
+\delta m_H^2=\frac{2.489}{16\pi^2}\left(1.22\times10^{19}\right)^2=6.03\times10^{16}\ \mathrm{J^{2}} ,
 $$
 
-against $m_H^2/2=7.82\times10^{3}\ \mathrm{GeV}^2$. The ratio is $3.0\times10^{32}$.
+against $m_H^2/2=2.01\times10^{-16}\ \mathrm{J^{2}}$. The ratio is $3.0\times10^{32}$.
 
 ## The Fine Tuning, Stated Exactly
 
@@ -85,17 +87,17 @@ $$
 
 The tuning scales with $\Lambda^2$.
 
-| $\Lambda$ | $\Lambda^2$ (GeV$^2$) | $\delta m_H^2$ (GeV$^2$) | $\delta m_H^2/m_H^2$ | $1/\mathcal{T}_{\mathrm{tune}}$ |
+| $\Lambda$ | $\Lambda^2$ (J$^2$) | $\delta m_H^2$ (J$^2$) | $\delta m_H^2/m_H^2$ | $1/\mathcal{T}_{\mathrm{tune}}$ |
 |---|---|---|---|---|
-| $1$ TeV | $1.0\times10^{6}$ | $1.58\times10^{4}$ | $1.01$ | $0.99$ |
-| $2$ TeV | $4.0\times10^{6}$ | $6.30\times10^{4}$ | $4.03$ | $0.25$ |
-| $5$ TeV | $2.5\times10^{7}$ | $3.94\times10^{5}$ | $25.2$ | $0.040$ |
-| $10$ TeV | $1.0\times10^{8}$ | $1.58\times10^{6}$ | $101$ | $9.9\times10^{-3}$ |
-| $10^{5}$ GeV | $1.0\times10^{10}$ | $1.58\times10^{8}$ | $1.01\times10^{4}$ | $9.9\times10^{-5}$ |
-| $10^{11}$ GeV | $1.0\times10^{22}$ | $1.58\times10^{20}$ | $1.01\times10^{16}$ | $9.9\times10^{-17}$ |
-| $M_{\mathrm{Pl}}$ | $1.49\times10^{38}$ | $2.35\times10^{36}$ | $1.50\times10^{32}$ | $6.7\times10^{-33}$ |
+| $1.6\times10^{-7}$ J | $2.57\times10^{-14}$ | $4.06\times10^{-16}$ | $1.01$ | $0.99$ |
+| $3.2\times10^{-7}$ J | $1.03\times10^{-13}$ | $1.62\times10^{-15}$ | $4.03$ | $0.25$ |
+| $8.0\times10^{-7}$ J | $6.42\times10^{-13}$ | $1.01\times10^{-14}$ | $25.2$ | $0.040$ |
+| $1.6\times10^{-6}$ J | $2.57\times10^{-12}$ | $4.06\times10^{-14}$ | $101$ | $9.9\times10^{-3}$ |
+| $1.6\times10^{-5}$ J | $2.57\times10^{-10}$ | $4.06\times10^{-12}$ | $1.01\times10^{4}$ | $9.9\times10^{-5}$ |
+| $1.6\times10^{1}$ J | $2.57\times10^{2}$ | $4.06\times10^{0}$ | $1.01\times10^{16}$ | $9.9\times10^{-17}$ |
+| $M_{\mathrm{Pl}}$ | $3.83\times10^{18}$ | $6.03\times10^{16}$ | $1.50\times10^{32}$ | $6.7\times10^{-33}$ |
 
-The first row is the statement that new physics at $1$ TeV costs nothing: the shift is the same size as the mass. The fourth row is the statement that new physics at $10$ TeV costs one part in a hundred. The seventh is one part in $3\times10^{32}$.
+The first row is the statement that new physics at $1.6\times10^{-7}\ \mathrm{J}$ costs nothing: the shift is the same size as the mass. The fourth row is the statement that new physics at $1.6\times10^{-6}\ \mathrm{J}$ costs one part in a hundred. The seventh is one part in $3\times10^{32}$.
 
 The tuning is not a probability. A small $\mathcal{T}_{\mathrm{tune}}$ does not mean the value is unlikely; it means that a small change in the input produces a large change in the output, and that a theory which produces $m_H$ from a cancellation is one whose parameters must be tuned. The distinction matters for the landscape discussion below, where the same number is read as a selection effect.
 
@@ -108,21 +110,21 @@ At what $\Lambda$ does the shift equal the mass itself?
 $$
 \frac{2.489}{16\pi^2}\Lambda^2=m_H^2
 \quad\Longrightarrow\quad
-\Lambda=\sqrt{\frac{16\pi^2}{2.489}}\,m_H=8.0\,m_H=996\ \mathrm{GeV}=4.05\,v .
+\Lambda=\sqrt{\frac{16\pi^2}{2.489}}\,m_H=8.0\,m_H=1.60\times10^{-7}\ \mathrm{J}=4.05\,v .
 $$
 
 The window is narrow.
 
 | Criterion | $\Lambda$ | Physical statement |
 |---|---|---|
-| $\delta m_H^2=m_H^2/10$ | $315$ GeV | Uncomfortably close to $m_H$ |
-| $\delta m_H^2=m_H^2$ | $996$ GeV | The stability edge |
-| $\delta m_H^2=10\,m_H^2$ | $3.15$ TeV | One part in ten tuning |
-| $\delta m_H^2=100\,m_H^2$ | $9.96$ TeV | One part in a hundred |
+| $\delta m_H^2=m_H^2/10$ | $5.05\times10^{-8}\ \mathrm{J}$ | Uncomfortably close to $m_H$ |
+| $\delta m_H^2=m_H^2$ | $1.60\times10^{-7}\ \mathrm{J}$ | The stability edge |
+| $\delta m_H^2=10\,m_H^2$ | $5.05\times10^{-7}\ \mathrm{J}$ | One part in ten tuning |
+| $\delta m_H^2=100\,m_H^2$ | $1.60\times10^{-6}\ \mathrm{J}$ | One part in a hundred |
 
 So the statement is: new physics should be within a factor of four of the weak scale, and a $10\%$ tuning allows at most a factor of thirteen.
 
-The window is above the reach of LEP (which excluded new physics below $100$ GeV by the $Z$ width) and below a few TeV (which the LHC reaches). The LHC found the Higgs and found nothing else. The natural window is now closed, in the sense that no new state couples to the Higgs above about $1$–$2$ TeV, and that is the precise form of the hierarchy problem as it stands in 2026.
+The window is above the reach of LEP (which excluded new physics below $1.60\times10^{-8}\ \mathrm{J}$ by the $Z$ width) and below a few $10^{-6}$ J (which the LHC reaches). The LHC found the Higgs and found nothing else. The natural window is now closed, in the sense that no new state couples to the Higgs above about $1$–$3.2\times10^{-7}\ \mathrm{J}$, and that is the precise form of the hierarchy problem as it stands in 2026.
 
 Something could still be there. States with small couplings to the Higgs — a hidden sector, a heavy singlet, a state whose coupling is suppressed by a symmetry — shift the mass less than the estimate and are not excluded. This is a real loophole and it is why the problem is stated as a tension rather than a refutation.
 
@@ -156,15 +158,15 @@ so the shift vanishes exactly when supersymmetry is unbroken. Breaking it at sca
 
 The numbers are these, and there are two problems.
 
-| $n_{\tilde t}$ | $\delta m_H^2$ (GeV$^2$) | $\mathcal{T}_{\mathrm{tune}}$ | $1/\mathcal{T}_{\mathrm{tune}}$ |
+| $n_{\tilde t}$ | $\delta m_H^2$ (J$^2$) | $\mathcal{T}_{\mathrm{tune}}$ | $1/\mathcal{T}_{\mathrm{tune}}$ |
 |---|---|---|---|
-| $2.031$ | $1.40\times10^{4}$ | $0.89$ | $1.12$ |
-| $3.046$ | $2.72\times10^{4}$ | $1.74$ | $0.58$ |
-| $4.061$ | $4.30\times10^{4}$ | $2.75$ | $0.36$ |
-| $8.123$ | $1.20\times10^{5}$ | $7.69$ | $0.13$ |
-| $20.31$ | $3.24\times10^{5}$ | $20.7$ | $0.048$ |
+| $2.031$ | $3.59\times10^{-16}$ | $0.89$ | $1.12$ |
+| $3.046$ | $6.98\times10^{-16}$ | $1.74$ | $0.58$ |
+| $4.061$ | $1.10\times10^{-15}$ | $2.75$ | $0.36$ |
+| $8.123$ | $3.08\times10^{-15}$ | $7.69$ | $0.13$ |
+| $20.31$ | $8.32\times10^{-15}$ | $20.7$ | $0.048$ |
 
-So a stop below $1$ TeV keeps the tuning under $30\%$, and a stop at $5$ TeV costs a factor of twenty. The LHC's stop searches reach about $1.2$–$1.3$ TeV in favourable topologies and have found nothing, so the natural region is excluded for the simplest models.
+So a stop below $1.6\times10^{-7}\ \mathrm{J}$ keeps the tuning under $30\%$, and a stop at $8.0\times10^{-7}\ \mathrm{J}$ costs a factor of twenty. The LHC's stop searches reach about $1.2$–$2.1\times10^{-7}\ \mathrm{J}$ in favourable topologies and have found nothing, so the natural region is excluded for the simplest models.
 
 The second problem is independent. In the minimal supersymmetric Standard Model the quartic is fixed by the gauge couplings,
 
@@ -194,12 +196,12 @@ The tuning follows from $f/v$.
 
 | $f$ | $v/f$ | $\mathcal{T}_{\mathrm{tune}}=(f/v)^2$ | $1/\mathcal{T}_{\mathrm{tune}}$ |
 |---|---|---|---|
-| $500$ GeV | $0.492$ | $4.1$ | $0.24$ |
-| $800$ GeV | $0.308$ | $10.6$ | $0.095$ |
-| $1$ TeV | $0.246$ | $16.5$ | $0.061$ |
-| $3$ TeV | $0.082$ | $148$ | $0.007$ |
+| $8.01\times10^{-8}\ \mathrm{J}$ | $0.492$ | $4.1$ | $0.24$ |
+| $1.28\times10^{-7}\ \mathrm{J}$ | $0.308$ | $10.6$ | $0.095$ |
+| $1.6\times10^{-7}\ \mathrm{J}$ | $0.246$ | $16.5$ | $0.061$ |
+| $4.8\times10^{-7}\ \mathrm{J}$ | $0.082$ | $148$ | $0.007$ |
 
-So $f$ must be within a factor of two of the weak scale for a $10\%$ tuning, and the LHC's exclusion of vector-like quarks and of $W'$-like resonances below about $1.5$–$2$ TeV pushes $f$ up. The same tension as supersymmetry: the natural region is the excluded region.
+So $f$ must be within a factor of two of the weak scale for a $10\%$ tuning, and the LHC's exclusion of vector-like quarks and of $W'$-like resonances below about $1.5$–$3.2\times10^{-7}\ \mathrm{J}$ pushes $f$ up. The same tension as supersymmetry: the natural region is the excluded region.
 
 The connection to this corpus is exact. Compositeness is the mechanism [the hadron article](hadron-structure-from-qcd-the-bound-state-problem.html) described for the proton: a mass generated by strong dynamics, non-perturbatively, with no dimensionful parameter in the Lagrangian. The difference is that the QCD case has a known dynamics and the electroweak case does not. The framework hosts the QCD mechanism in principle and does not host a second strong sector, which is the subject of the next section.
 
@@ -250,7 +252,7 @@ The framework says nothing about the tuning, and the reason it says nothing is e
 The statement has three parts.
 
 - There is no measure. [The gauge-group ceiling article](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) and [the lattice article](lattice-gauge-theory-and-the-biquaternion-path-integral.html) record between them that the path integral over $\mathbb{B}$-valued fields is a formal object, that the fermionic measure is not an algebraic operation, and that a cutoff is imposed from outside. So the framework's loop integrals are not defined and the quadratic term cannot be computed in it.
-- There is no second strong sector. Compositeness requires a new confining dynamics at $f\sim1$ TeV. The framework has exactly one strong sector available — the imported $SU(3)$ — and no second one. [The ceiling](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) is the reason: no compact gauge algebra of dimension above four, so no second confining group.
+- There is no second strong sector. Compositeness requires a new confining dynamics at $f\sim1.6\times10^{-7}\ \mathrm{J}$. The framework has exactly one strong sector available — the imported $SU(3)$ — and no second one. [The ceiling](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) is the reason: no compact gauge algebra of dimension above four, so no second confining group.
 - There is no vacuum selection. A landscape requires a space of vacua with a measure. The algebra has one vacuum, the identity of the field algebra, and no family of them.
 
 One structural observation is not silence. A dimensionless algebra cannot generate a dimensionful parameter by itself. [The hadron article](hadron-structure-from-qcd-the-bound-state-problem.html) established this and then established the resolution: QCD generates $\Lambda_{\mathrm{QCD}}$ non-perturbatively, by dimensional transmutation, with an essential singularity at $\alpha_s=0$. The electroweak sector has the same logical gap and no such mechanism. The Higgs mass is a *parameter*, not an anomaly's matrix element, and no conformal anomaly generates it.
@@ -259,8 +261,8 @@ The contrast is the article's one real contribution:
 
 | Sector | Dimensionful quantity | Origin | Framework's role |
 |---|---|---|---|
-| QCD | $\Lambda_{\mathrm{QCD}}=195$ MeV | Dimensional transmutation, non-perturbative | Hosts the mechanism; cannot compute it |
-| Electroweak | $v=246$ GeV | A parameter of a potential, tuned | Hosts the potential; has no mechanism |
+| QCD | $\Lambda_{\mathrm{QCD}}=3.12\times10^{-11}\ \mathrm{J}$ | Dimensional transmutation, non-perturbative | Hosts the mechanism; cannot compute it |
+| Electroweak | $v=3.94\times10^{-8}\ \mathrm{J}$ | A parameter of a potential, tuned | Hosts the potential; has no mechanism |
 
 The two look like the same problem and are not. QCD's scale *is* generated and the generation is understood in principle. The electroweak scale is *not* generated, and the tuning is the statement that the model provides no generation. That is a sharper statement of the hierarchy problem than "the scalar mass is quadratically divergent", and the framework's structure is what makes it visible.
 
@@ -295,15 +297,15 @@ Five candidates have been weighed.
 
 | Mechanism | Predicts | Status |
 |---|---|---|
-| Supersymmetry | Superpartners below $\sim1$ TeV | Not found; natural region excluded for minimal models |
-| Compositeness | Resonances at $f\lesssim1$ TeV | Not found; $f$ pushed above $1.5$–$2$ TeV |
+| Supersymmetry | Superpartners below $\sim1.6\times10^{-7}\ \mathrm{J}$ | Not found; natural region excluded for minimal models |
+| Compositeness | Resonances at $f\lesssim1.6\times10^{-7}\ \mathrm{J}$ | Not found; $f$ pushed above $1.5$–$3.2\times10^{-7}\ \mathrm{J}$ |
 | Extra dimensions | Kaluza–Klein states | Not found |
 | Landscape | Nothing | Untestable at colliders |
 | Veltman | $n_t=0.5808$ | Refuted, $n_t=0.7014$ |
 
 The corpus would accept a statement that makes $m_H/v$ a function of quantities already in the nineteen, at the second grade, with a measured consequence. No such statement exists, in the framework or outside it. The question is open, and it is neither to the framework's credit nor to its discredit.
 
-Two things would change the picture. A new state coupled to the Higgs below a few TeV would reopen the natural window. A demonstration that the landscape measure exists and is calculable would close the question in the other direction. Neither is in hand.
+Two things would change the picture. A new state coupled to the Higgs below a few $10^{-6}$ J would reopen the natural window. A demonstration that the landscape measure exists and is calculable would close the question in the other direction. Neither is in hand.
 
 ## What the Framework Supplies
 
@@ -318,9 +320,9 @@ The table gives each item and its provenance.
 | $\delta m_H^2=\frac{c}{16\pi^2}\Lambda^2$ | Imported one-loop result |
 | The coefficients $0.239$, $1.476$, $0.774$, sum $2.489$ | Computed here |
 | The divergence-against-sensitivity distinction | This article's argument; the dim-reg statement imported |
-| $\delta m_H^2=2.35\times10^{36}$ GeV$^2$ at $M_{\mathrm{Pl}}$ | Computed here |
+| $\delta m_H^2=6.03\times10^{16}$ J$^2$ at $M_{\mathrm{Pl}}$ | Computed here |
 | The tuning table, $10^{32}$ at $M_{\mathrm{Pl}}$ | Computed here |
-| $\Lambda_{\mathrm{stable}}=996$ GeV $=8.0\,m_H$ | Computed here |
+| $\Lambda_{\mathrm{stable}}=1.60\times10^{-7}\ \mathrm{J}$ $=8.0\,m_H$ | Computed here |
 | Chiral and gauge protection of fermion and vector masses | Imported |
 | The MSSM bound $n_h\le n_Z$ | Imported; the number $0.3704$ quoted |
 | The stop-tuning table | Computed here |
@@ -335,13 +337,13 @@ The table gives each item and its provenance.
 
 The Higgs mass is the only dimensionful parameter with no symmetry to protect it. Every heavy state coupled to the Higgs shifts it by $\frac{c}{16\pi^2}\Lambda^2$, with coefficients $0.239$ from gauge bosons, $1.476$ from the top and $0.774$ from the quartic, summing to $2.489$.
 
-The divergence is a convention — dimensional regularisation gives no quadratic term at all — but the sensitivity is not. It is a statement about heavy states, and it produces the tuning: $\Lambda=1$ TeV costs nothing, $10$ TeV costs one part in a hundred, $M_{\mathrm{Pl}}$ costs one part in $3.0\times10^{32}$.
+The divergence is a convention — dimensional regularisation gives no quadratic term at all — but the sensitivity is not. It is a statement about heavy states, and it produces the tuning: $\Lambda=1.6\times10^{-7}\ \mathrm{J}$ costs nothing, $1.6\times10^{-6}\ \mathrm{J}$ costs one part in a hundred, $M_{\mathrm{Pl}}$ costs one part in $3.0\times10^{32}$.
 
-Radiative stability requires new physics within $8.0$ Higgs masses, that is $996$ GeV or $4.05\,v$, and the LHC's null results have closed that window for states with Standard-Model-like couplings.
+Radiative stability requires new physics within $8.0$ Higgs masses, that is $1.60\times10^{-7}\ \mathrm{J}$ or $4.05\,v$, and the LHC's null results have closed that window for states with Standard-Model-like couplings.
 
 Fermion and gauge masses are protected because a symmetry forbids the mass term and hence its correction. The scalar has no such symmetry, and that is the whole content of the problem.
 
-Three responses: supersymmetry needs stops below $1$ TeV for $30\%$ tuning, and its tree-level bound $n_h\le0.3704$ pulls the other way; compositeness needs $f\lesssim1$ TeV, and its tuning is $(f/v)^2=16.5$ at $f=1$ TeV; the landscape needs no new physics and makes no collider prediction. A fourth, the Veltman condition, is arithmetically refuted: it requires $m_t=143$ GeV against a measured $172.7$.
+Three responses: supersymmetry needs stops below $1.6\times10^{-7}\ \mathrm{J}$ for $30\%$ tuning, and its tree-level bound $n_h\le0.3704$ pulls the other way; compositeness needs $f\lesssim1.6\times10^{-7}\ \mathrm{J}$, and its tuning is $(f/v)^2=16.5$ at $f=1.6\times10^{-7}\ \mathrm{J}$; the landscape needs no new physics and makes no collider prediction. A fourth, the Veltman condition, is arithmetically refuted: it requires $m_t=2.29\times10^{-8}\ \mathrm{J}$ against a measured $172.7$.
 
 The framework has no cutoff — no measure — so the quadratic term cannot be computed in it, and it has no second confining sector and no family of vacua. Its one contribution is the contrast between the two scales: $\Lambda_{\mathrm{QCD}}$ is generated non-perturbatively and $v$ is not, and the tuning is the statement that the electroweak sector has no counterpart of the mechanism the strong sector does have.
 
@@ -357,11 +359,11 @@ Naturalness is a heuristic with one success (GIM) and one failure (weak-scale su
 | $\mathcal{T}_{\mathrm{tune}}$ | Tuning, $\lvert\delta m_H^2\rvert/m_H^2$ |
 | $\varpi_{\mathrm{cpl}}$ | Higgs quartic, $0.1291$ |
 | $y_t$ | Top Yukawa, $0.7014$ |
-| $v$ | Higgs expectation value, $246.22$ GeV |
+| $v$ | Higgs expectation value, $3.9449\times10^{-8}\ \mathrm{J}$ |
 | $f$ | Compositeness scale |
 | $M_{\mathrm{SUSY}}$, $m_{\tilde t}$ | Supersymmetry breaking scale, stop mass |
-| $M_{\mathrm{Pl}}$ | Planck scale, $1.22\times10^{19}$ GeV |
-| $\Lambda_{\mathrm{QCD}}$ | Strong-interaction scale, $\approx195$ MeV |
+| $M_{\mathrm{Pl}}$ | Planck scale, $1.95\times10^{9}\ \mathrm{J}$ |
+| $\Lambda_{\mathrm{QCD}}$ | Strong-interaction scale, $\approx3.12\times10^{-11}\ \mathrm{J}$ |
 
 ## Further Reading
 

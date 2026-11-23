@@ -27,12 +27,12 @@ $$
 \qquad
 \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\longmapsto-\langle\tilde\Upsilon_\Phi\rangle_\natural,
 \qquad
-\langle\tilde\Upsilon_\Phi\rangle_\natural=-2\pi\nu_t'^{2}+4\pi^{2}\nu_{\Phi}^{2},
+\langle\tilde\Upsilon_\Phi\rangle_\natural=-2\pi\nu_t'{}^{2}+4\pi^{2}\nu_{\Phi}^{2},
 \qquad
 \langle\tilde P_\Phi\rangle_\natural=N.
 $$
 
-The phase convention is fixed here and used throughout. A positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=\omega r_t'-2\pi\vec\nu_\Phi\cdot\vec r$, so $\partial/\partial r_t'\mapsto-i\omega$ and $\partial/\partial r_\imath\mapsto i\nu_{\Phi,k}$. The sign of $\vec\zeta$ in every factorization display below is the sign this convention gives it; the opposite convention reverses it and changes no structural statement.
+The phase convention is fixed here and used throughout. A positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=\omega r_t'-2\pi\vec\nu_\Phi\cdot\vec r$, so $\partial/\partial r_t'\mapsto-i\omega$ and $\partial/\partial r_{\imath}\mapsto i\nu_{\Phi,k}$. The sign of $\vec\zeta$ in every factorization display below is the sign this convention gives it; the opposite convention reverses it and changes no structural statement.
 
 **The coefficient is a constant complex vector.** $\vec F$ is a constant element of the vector subspace of $\mathbb{B}$ with complex components, carrying no scalar part. It is the parent's object and it is kept in the parent's notation, including the split $\vec F=-E-iH$ for real vectors $E$ and $H$.
 
@@ -41,7 +41,7 @@ The phase convention is fixed here and used throughout. A positive-frequency pla
 Finding 1. The symbol of $\Box_\Phi-4\pi^{2}\nu_m^{2}$ is
 
 $$
--\langle\tilde\Upsilon_\Phi\rangle_\natural-4\pi^{2}\nu_m^{2}=2\pi\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}-4\pi^{2}\nu_m^{2},
+-\langle\tilde\Upsilon_\Phi\rangle_\natural-4\pi^{2}\nu_m^{2}=2\pi\nu_t'{}^{2}-4\pi^{2}\nu_{\Phi}^{2}-4\pi^{2}\nu_m^{2},
 $$
 
 a scalar quadratic form of rank four whose zero set is the two-sheeted mass hyperboloid.
@@ -85,7 +85,7 @@ The second price is the one the rank argument adds, and it is the article's stru
 
 So the two statements are one statement. "The Klein–Gordon operator does not factor into first-order scalar operators" and "a vector coefficient whose norm supplies the mass does factor" are not in tension: the first forbids central factors, the second supplies non-central ones, and the rank of the quadric decides between them. The word "scalar" in the parent's sentence is doing all the work, and the article has now said why.
 
-The compensation is visible in the symbol. In the factored case the symbol is a perfect square in the shifted variable: $(\vec\zeta-\vec F)^{2}-\omega^{2}$, the difference of two squares whose spatial part is the square of one linear form. In the unfactored case the symbol is $\nu_t'^{2}-\nu_{\Phi}^{2}-\nu_m^{2}$, which is also a difference of squares, $\nu_t'^{2}-(\nu_{\Phi}^{2}+\nu_m^{2})$, but the second square is a sum of four terms and not one. The obstruction is the plus sign inside the second square, and that is the entire content of the rank count.
+The compensation is visible in the symbol. In the factored case the symbol is a perfect square in the shifted variable: $(\vec\zeta-\vec F)^{2}-\omega^{2}$, the difference of two squares whose spatial part is the square of one linear form. In the unfactored case the symbol is $\nu_t'{}^{2}-\nu_{\Phi}^{2}-\nu_m^{2}$, which is also a difference of squares, $\nu_t'{}^{2}-(\nu_{\Phi}^{2}+\nu_m^{2})$, but the second square is a sum of four terms and not one. The obstruction is the plus sign inside the second square, and that is the entire content of the rank count.
 
 ## The Zero Set of the Factored Symbol
 
@@ -139,7 +139,7 @@ One question is left open, and it is whether the rank argument generalizes to hi
 
 ## Summary
 
-The Klein–Gordon operator's symbol is $\nu_t'^{2}-\nu_{\Phi}^{2}-\nu_m^{2}$, a scalar quadratic form of rank four whose zero set is the two-sheeted mass hyperboloid. A product of two linear forms has rank at most two, so the form is not a product of two linear forms, so no pair of first-order operators with central symbols composes to the Klein–Gordon operator. That is the parent's anticommutation obstruction read on the quadric, and the parent's proof is cited rather than repeated.
+The Klein–Gordon operator's symbol is $\nu_t'{}^{2}-\nu_{\Phi}^{2}-\nu_m^{2}$, a scalar quadratic form of rank four whose zero set is the two-sheeted mass hyperboloid. A product of two linear forms has rank at most two, so the form is not a product of two linear forms, so no pair of first-order operators with central symbols composes to the Klein–Gordon operator. That is the parent's anticommutation obstruction read on the quadric, and the parent's proof is cited rather than repeated.
 
 A constant complex vector coefficient does factor, and the product of the two first-order symbols is scalar: $(\vec\zeta-\vec F,\vec\zeta-\vec F)-\omega^{2}$, verified to $8.9\times10^{-16}$ over three hundred draws. The price is the parent's: the mass $(\vec F,\vec F)$ and the directional term $2i(\vec F,\vec\nabla_\Phi)$ come from one coefficient. **The price the rank argument adds is that the factors cannot be central**, because a central factor would be the scalar square root the parent forbids; the word "scalar" in the parent's sentence is what carries the whole obstruction.
 

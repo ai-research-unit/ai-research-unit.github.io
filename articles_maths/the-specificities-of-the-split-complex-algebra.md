@@ -134,7 +134,7 @@ $$
 the matrix of multiplication by $Q = q+jq'$ in the basis $\{1,j\}$: the first column is the coordinates of $Q \cdot 1 = Q$ and the second those of $Q \cdot j = q'+jq$. These are the matrices of **hyperbolic type**, symmetric with equal diagonal entries, and their determinant and trace are
 
 $$
-\det\mathsf{M}_2(Q) = q^2 - q'^2 = \langle Q\rangle_{*}, \qquad \operatorname{tr}\mathsf{M}_2(Q) = 2q ,
+\det\mathsf{M}_2(Q) = q^2 - q'{}^2 = \langle Q\rangle_{*}, \qquad \operatorname{tr}\mathsf{M}_2(Q) = 2q ,
 $$
 
 the determinant and the trace of the regular element, the determinant being the norm $\langle Q\rangle_{*}$ of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*.
@@ -157,7 +157,7 @@ The split-complex algebra $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[x]/(x^2-1)$ is
 
 Four properties single it out. It is **reduced**: it has no nonzero nilpotent, and $0$ is its only square-zero element. It is **not a field**: its nonzero non-invertibles are its zero divisors, the null cone $\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$. It has exactly **two nontrivial idempotents** $\Pi_\pm$, central, orthogonal and complete, which a field cannot have. And it is **semisimple and not simple**: its only two-sided ideals are $\{0\}$, the two lines $\mathbb{R}\Pi_\pm$ and $\mathbb{C}_{\mathrm{spl}}$, and its radical vanishes.
 
-The consequences for the classes of element are that the positively defined classes grow and the negatively defined ones do not: the zero divisors are present and the idempotents are non-trivial because of the splitting, while the nilpotents and the square-zero elements of the plain product remain the single element $0$, and the roots of $+1$ gain the non-scalar pair $\pm j$ while the roots of $-1$ vanish. The regular representation degenerates to the commutative subalgebra $\left\{\begin{pmatrix}q&q'\\q'&q\end{pmatrix}\right\}$ of $M_2(\mathbb{R})$, isomorphic to the diagonal subalgebra, with determinant $q^2-q'^2$ and trace $2q$: a commutative algebra equal to its own commutant, and the $4\times4$ model adds nothing. Against the complex field, a field and simple with no idempotent but the trivial ones, the split-complex algebra is the product-of-fields case, the minimal one in which the zero divisors and the non-trivial idempotents of the family appear.
+The consequences for the classes of element are that the positively defined classes grow and the negatively defined ones do not: the zero divisors are present and the idempotents are non-trivial because of the splitting, while the nilpotents and the square-zero elements of the plain product remain the single element $0$, and the roots of $+1$ gain the non-scalar pair $\pm j$ while the roots of $-1$ vanish. The regular representation degenerates to the commutative subalgebra $\left\{\begin{pmatrix}q&q'\\q'&q\end{pmatrix}\right\}$ of $M_2(\mathbb{R})$, isomorphic to the diagonal subalgebra, with determinant $q^2-q'{}^2$ and trace $2q$: a commutative algebra equal to its own commutant, and the $4\times4$ model adds nothing. Against the complex field, a field and simple with no idempotent but the trivial ones, the split-complex algebra is the product-of-fields case, the minimal one in which the zero divisors and the non-trivial idempotents of the family appear.
 
 ## Summary of Notation
 

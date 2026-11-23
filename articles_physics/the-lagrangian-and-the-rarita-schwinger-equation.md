@@ -34,7 +34,7 @@ What the action must contain for the parent's results to follow.
 
 *Third, the massless invariance.* The parent records the gauge freedom $\tilde\Xi_{\imath}\mapsto\tilde\Xi_{\imath}+\partial_{\imath}\epsilon$ at $\nu_m=0$. An action for the massless field must be invariant under it, which requires the field's trace to be absent from the action or removed by the first multiplier.
 
-**What is missing, precisely.** One object: an element or a pair of elements of $\mathbb{B}$ that contracts the vector index with the field's chiral structure and is not simply the frame. The frame gives $\vec e_\imath$, which contracts a vector index with a direction; the trace constraint needs a contraction that mixes the two chiralities of the vector index itself, and this family has not exhibited one.
+**What is missing, precisely.** One object: an element or a pair of elements of $\mathbb{B}$ that contracts the vector index with the field's chiral structure and is not simply the frame. The frame gives $\vec e_{\imath}$, which contracts a vector index with a direction; the trace constraint needs a contraction that mixes the two chiralities of the vector index itself, and this family has not exhibited one.
 
 ## The Variation That Cannot Be Performed Here
 
@@ -48,7 +48,7 @@ Why the check is not optional. The spin-$\tfrac32$ equation has the well-known p
 
 ## The Constraints the Action Imposes: The Constraints the Action Would Impose
 
-**Two constraints, and they are the parent's.** The trace constraint $\tilde\Xi_0+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\tilde\Xi_\imath\vec e_z=0$ and the divergence constraint $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}\tilde\Xi_{\imath}=0$ are the parent's statements. This section records what they do to the count, because the action's job is to produce them.
+**Two constraints, and they are the parent's.** The trace constraint $\tilde\Xi_0+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\tilde\Xi_{\imath}\vec e_z=0$ and the divergence constraint $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}\tilde\Xi_{\imath}=0$ are the parent's statements. This section records what they do to the count, because the action's job is to produce them.
 
 The count, in one line. Four vector components, each with two chiralities: eight complex data. The trace constraint removes two, the divergence constraint removes two, and the pair of first-order equations removes half of the rest; the rest frame leaves four complex parameters, the quartet the parent exhibits. An action that produced only the pair would leave the quartet's neighbours in place, and the count would be four higher.
 
@@ -95,7 +95,7 @@ $$
 \qquad
 (\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{\imath,L}=2\pi\nu_m\tilde\Xi_{\imath,R},
 \qquad
-\tilde\Xi_0+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\tilde\Xi_\imath\vec e_z=0 .
+\tilde\Xi_0+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\tilde\Xi_{\imath}\vec e_z=0 .
 $$
 
 ## Summary of Notation

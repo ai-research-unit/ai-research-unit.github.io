@@ -10,13 +10,13 @@ The findings are stated in advance.
 
 1. The congruence does not preserve the slice. The scalar part of the image is $\cosh\theta+s_{\parallel}\sinh\theta$, verified to $1.3\times10^{-13}$ on four hundred draws; at $\lvert\vec v\rvert=0.799$ and $\lvert\vec s\rvert=0.640$ it is $1.646306301$. A state is a section, and the group moves points off it.
 2. $N$ of the element is invariant. $\lvert N(\tilde U\tilde Q\tilde U^{*})-N(\tilde Q)\rvert\le4.1\times10^{-15}$ on five hundred pairs, and $1.4\times10^{-14}$ along a whole one-parameter path. This is the exact analogue of the invariance of $m^{2}$ and it is the only invariant of the pair.
-3. The read impurity is $N'=N/t'^{2}$. Verified to $2.5\times10^{-16}$ on five hundred pairs, with no hypothesis on the state and none on the boost.
+3. The read impurity is $N'=N/t'{}^{2}$. Verified to $2.5\times10^{-16}$ on five hundred pairs, with no hypothesis on the state and none on the boost.
 4. Along the axis it is a sech squared of the shifted rapidity. $N'=\tfrac14\operatorname{sech}^{2}(\Theta-\theta)$, to $1.4\times10^{-15}$ over twenty-eight pairs spanning two decades of $\beta$.
 5. It has a maximum, and the maximum is the centre. $N'\le\tfrac14$ for every state and every boost, with equality exactly when the image is the maximally mixed state, that is, when $\theta=\Theta$. The largest value found over four thousand random pairs is $0.249819912871$.
-6. It runs because the state runs. The signed coordinate obeys the Möbius law $z'=(z+t)/(1+zt)$ exactly, so the rapidity subtracts and the impurity follows by arithmetic; off the axis $r'$ obeys no addition law, while $N'=N/t'^{2}$ still holds to $2.5\times10^{-16}$.
+6. It runs because the state runs. The signed coordinate obeys the Möbius law $z'=(z+t)/(1+zt)$ exactly, so the rapidity subtracts and the impurity follows by arithmetic; off the axis $r'$ obeys no addition law, while $N'=N/t'{}^{2}$ still holds to $2.5\times10^{-16}$.
 7. No boost purifies the object and every strong boost purifies the reading. $N$ is unchanged while $N'\to0$ as $\theta\to\infty$; the two statements are consistent because they are about different points of the cone.
 
-The notation is that of the companions. The element is $\tilde Q=t\,e_t/2+i\vec s/2$ with $t=2\,\mathrm{Sc}\,\tilde Q$; a state is an element with $t=1$, written $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $\lvert\vec s_\Psi\rvert\le1$. The quaternionic norm is $N(\tilde Q)=\tfrac14\bigl(t^{2}-\lvert\vec s\rvert^{2}\bigr)$, which on the slice is the impurity $N=\tfrac14(1-\lvert\vec s\rvert^{2})$; the read impurity is $N'=N(\tilde Q)/t'^{2}$, which equals $\tfrac14(1-\lvert\vec s'\rvert^{2})$ for the projected vector. The congruence is $\mathrm{Cg}_{\tilde U}:\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$; $\tilde U_{\vec v}$ is the boost rotor of rapidity $\theta=\operatorname{artanh}\lvert\vec v\rvert$; $s_{\parallel}=\vec s\cdot\vec u$ is the component along the boost axis. The thermal rapidity is $\Theta=\beta\lvert\vec h_\Psi\rvert$, and the sample value of the Hamiltonian magnitude is $\lvert\vec h_\Psi\rvert=1.7$.
+The notation is that of the companions. The element is $\tilde Q=t\,e_t/2+i\vec s/2$ with $t=2\,\mathrm{Sc}\,\tilde Q$; a state is an element with $t=1$, written $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $\lvert\vec s_\Psi\rvert\le1$. The quaternionic norm is $N(\tilde Q)=\tfrac14\bigl(t^{2}-\lvert\vec s\rvert^{2}\bigr)$, which on the slice is the impurity $N=\tfrac14(1-\lvert\vec s\rvert^{2})$; the read impurity is $N'=N(\tilde Q)/t'{}^{2}$, which equals $\tfrac14(1-\lvert\vec s'\rvert^{2})$ for the projected vector. The congruence is $\mathrm{Cg}_{\tilde U}:\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$; $\tilde U_{\vec v}$ is the boost rotor of rapidity $\theta=\operatorname{artanh}\lvert\vec v\rvert$; $s_{\parallel}=\vec s\cdot\vec u$ is the component along the boost axis. The thermal rapidity is $\Theta=\beta\lvert\vec h_\Psi\rvert$, and the sample value of the Hamiltonian magnitude is $\lvert\vec h_\Psi\rvert=1.7$.
 
 One convention fixes the signs. The boost is taken along $+\vec u$, the Gibbs state as in the companion is at $-\tanh\Theta\,\vec u$, so $s_{\parallel}=-\tanh\Theta$ and the rapidity law reads $\Theta'=\Theta-\theta$. Along the axis the read impurity is therefore $\tfrac14\operatorname{sech}^{2}(\Theta-\theta)$, which is symmetric under $\theta\mapsto2\Theta-\theta$ and peaks at $\theta=\Theta$.
 
@@ -68,9 +68,9 @@ It does not make the read impurity a monotone. The invariant is constant along t
 
 The read impurity is the invariant divided by the square of the scalar part. For every state and every boost,
 $$
-N'=\frac{N}{t'^{2}}=\frac{N}{\bigl(\cosh\theta+s_{\parallel}\sinh\theta\bigr)^{2}},
+N'=\frac{N}{t'{}^{2}}=\frac{N}{\bigl(\cosh\theta+s_{\parallel}\sinh\theta\bigr)^{2}},
 $$
-verified to $2.5\times10^{-16}$ on five hundred random pairs. The identity is one line: $N'=\tfrac14(1-\lvert\vec s_\Sigma\rvert^{2}/t'^{2})=\bigl(t'^{2}-\lvert\vec s_\Sigma\rvert^{2}\bigr)/(4t'^{2})=N/t'^{2}$, and it needs no hypothesis beyond $t'>0$.
+verified to $2.5\times10^{-16}$ on five hundred random pairs. The identity is one line: $N'=\tfrac14(1-\lvert\vec s_\Sigma\rvert^{2}/t'{}^{2})=\bigl(t'{}^{2}-\lvert\vec s_\Sigma\rvert^{2}\bigr)/(4t'{}^{2})=N/t'{}^{2}$, and it needs no hypothesis beyond $t'>0$.
 
 The formula separates the object from the frame. $N$ is the numerator, and it is invariant. $t'$ is the denominator, and it is the frame. A boost changes only the denominator, so the read impurity is the invariant measured in units of the observer's scalar part. That is the precise sense in which the impurity is renormalised, and the word is not a metaphor: the object's number is divided by a frame-dependent factor.
 
@@ -94,7 +94,7 @@ $N'$ cannot exceed $\tfrac14$, and it reaches $\tfrac14$ at one rapidity. Since 
 
 The maximum has a reading, and it is the striking one. The impurity an observer reports is largest when the observer's frame is the one in which the state has infinite temperature. A frame that is neither the state's rest frame nor far from it reports less; the two extremes report nothing at all, since $N'\to0$ at both ends. **The most mixed thing a boosted observer can be shown is the state's own infinite-temperature frame**, and no boost shows more.
 
-The bound holds off the axis, where no closed form does. Over four thousand random (state, boost) pairs the largest read impurity is $0.249819912871$, and the algebraic test $(1-\lvert\vec s\rvert^{2})-t'^{2}\le0$ holds as an identity, which is $N'\le\tfrac14$ rearranged. Off the axis the maximum is approached but not attained, because the boost would have to be exactly the one that lands the state on the centre, and that boost exists only for the axis.
+The bound holds off the axis, where no closed form does. Over four thousand random (state, boost) pairs the largest read impurity is $0.249819912871$, and the algebraic test $(1-\lvert\vec s\rvert^{2})-t'{}^{2}\le0$ holds as an identity, which is $N'\le\tfrac14$ rearranged. Off the axis the maximum is approached but not attained, because the boost would have to be exactly the one that lands the state on the centre, and that boost exists only for the axis.
 
 ### The table
 
@@ -132,7 +132,7 @@ So the impurity runs by velocity addition because the state runs by velocity add
 
 A tilted boost does not leave the family, and then $\lvert\vec s'\rvert$ obeys nothing simple. With $\beta=0.6$ and $\theta=0.9$ tilted by $30^\circ$, $60^\circ$ and $90^\circ$, the read radii are $0.522830462$, $0.788626159$ and $0.895363542$, against the axial prediction $0.119427299$; the departure is the same order as the tilt. The reason is the one the Wigner companion gives: non-collinear boosts do not commute and their composition carries a rotation, so there is no one-parameter family to have a law on.
 
-The formula survives where the law does not. At the same three tilts $N'=N/t'^{2}$ holds to $2.5\times10^{-16}$ and the values are $0.181662077$, $0.094517195$ and $0.049581032$. **The renormalisation is general; the addition law is a property of the abelian case.** A reader who remembers only the addition law has remembered the special case.
+The formula survives where the law does not. At the same three tilts $N'=N/t'{}^{2}$ holds to $2.5\times10^{-16}$ and the values are $0.181662077$, $0.094517195$ and $0.049581032$. **The renormalisation is general; the addition law is a property of the abelian case.** A reader who remembers only the addition law has remembered the special case.
 
 ## Objections
 
@@ -146,21 +146,21 @@ A third objection is that the infinite-boost limit makes every state pure, which
 
 It does not claim that a laboratory observer performs this reading. A boost of rapidity $2.5$ corresponds to $\lvert\vec v\rvert=0.9866$, and the limit $\theta\to\infty$ is unphysical. The article's subject is the algebraic structure of the reading, and every statement is exact for every $\theta$.
 
-It does not resolve the moving-frame temperature. The companion computes $T/\gamma$ from the period of the thermal element; this article computes $N/t'^{2}$ from the projection. Both are exact; they are readings of different objects, and the article does not identify them.
+It does not resolve the moving-frame temperature. The companion computes $T/\gamma$ from the period of the thermal element; this article computes $N/t'{}^{2}$ from the projection. Both are exact; they are readings of different objects, and the article does not identify them.
 
 It does not claim that $N'$ is a Shannon entropy. It is the linear impurity of the read state, which is a monotone function of the Rényi-2 entropy and not of the von Neumann one. The statements are about $N'$ and hold for $N'$.
 
-It does not extend the closed form off the axis. $\tfrac14\operatorname{sech}^{2}(\Theta-\theta)$ requires the boost to be along the state's axis; off the axis the formula $N/t'^{2}$ stands and the closed form does not.
+It does not extend the closed form off the axis. $\tfrac14\operatorname{sech}^{2}(\Theta-\theta)$ requires the boost to be along the state's axis; off the axis the formula $N/t'{}^{2}$ stands and the closed form does not.
 
 ## Summary
 
 The congruence does not preserve the slice, so the image of a state is not a state. The scalar part of the image is $\cosh\theta+s_{\parallel}\sinh\theta$, verified to $1.3\times10^{-13}$; it equals one only exceptionally. The reading is the projection onto $t=1$, and **it is a projection and not an action**.
 
-$N$ of the element is the invariant and $N'=N/t'^{2}$ is the reading. The first is unchanged to $4.1\times10^{-15}$ on five hundred pairs and is the exact mirror of the invariance of $m^{2}$; the second is exact to $2.5\times10^{-16}$ and is the invariant in units of the observer's scalar part.
+$N$ of the element is the invariant and $N'=N/t'{}^{2}$ is the reading. The first is unchanged to $4.1\times10^{-15}$ on five hundred pairs and is the exact mirror of the invariance of $m^{2}$; the second is exact to $2.5\times10^{-16}$ and is the invariant in units of the observer's scalar part.
 
 Along the axis the reading is $\tfrac14\operatorname{sech}^{2}(\Theta-\theta)$, to $1.4\times10^{-15}$ over twenty-eight pairs, maximised at $\theta=\Theta$ where it is $\tfrac14$ exactly. The most mixed state a boosted observer can be shown is the state's own infinite-temperature frame; both extremes give zero.
 
-It runs by velocity addition because the state does. The signed coordinate obeys $z'=(z+t)/(1+zt)$ exactly; off the axis no addition law holds and the formula $N'=N/t'^{2}$ holds anyway.
+It runs by velocity addition because the state does. The signed coordinate obeys $z'=(z+t)/(1+zt)$ exactly; off the axis no addition law holds and the formula $N'=N/t'{}^{2}$ holds anyway.
 
 **No boost purifies the object, and every strong boost purifies the reading.** $N$ is constant while $N'\simeq4Ne^{-2\theta}/(1+s_{\parallel})^{2}$ falls; the two statements are about a point of the cone and its projection, and neither contradicts the other.
 
@@ -171,7 +171,7 @@ It runs by velocity addition because the state does. The signed coordinate obeys
 | $\tilde Q=\tfrac12\bigl(t\,e_t+i\vec s\bigr)$ | an element of the cone; a state has $t=1$ |
 | $t'=2\,\mathrm{Sc}\bigl(\tilde U\tilde Q\tilde U^{*}\bigr)$ | the scalar part of the image |
 | $N=\tfrac14\bigl(t^{2}-\lvert\vec s\rvert^{2}\bigr)$ | the quaternionic norm; on the slice, the impurity $\tfrac14(1-\lvert\vec s\rvert^{2})$ |
-| $N'=N/t'^{2}$ | the read impurity |
+| $N'=N/t'{}^{2}$ | the read impurity |
 | $\vec s'$ | the projected vector, $\vec s_\Sigma/t'$ |
 | $s_{\parallel}=\vec s\cdot\vec u$ | the component along the boost axis |
 | $\theta$ | the boost rapidity; $\Theta=\beta\lvert\vec h_\Psi\rvert$ the thermal rapidity |

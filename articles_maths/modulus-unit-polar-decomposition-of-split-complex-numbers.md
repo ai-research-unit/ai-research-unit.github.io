@@ -23,7 +23,7 @@ The conventions and the symbols are those of *Split-Complex Algebra*, *Norm and 
 Let $Q = q + j q'$ with $q, q' \in \mathbb{R}$. The **norm** is
 
 $$
-\langle Q\rangle_{*} = Q\bar{Q} = (q+jq')(q-jq') = q^2 - q'^2 .
+\langle Q\rangle_{*} = Q\bar{Q} = (q+jq')(q-jq') = q^2 - q'{}^2 .
 $$
 
 It is a quadratic form of inertia $(1,1)$, multiplicative under multiplication of the algebra,
@@ -45,7 +45,7 @@ The **null cone** is the pair of lines $q = \pm q'$, equivalently $\mathbb{R}\Pi
 On the invertible set $\langle Q\rangle_{*}\neq0$ the **modulus** is
 
 $$
-\varrho = \sqrt{\lvert \langle Q\rangle_{*}\rvert} = \sqrt{\lvert q^2-q'^2\rvert} > 0 .
+\varrho = \sqrt{\lvert \langle Q\rangle_{*}\rvert} = \sqrt{\lvert q^2-q'{}^2\rvert} > 0 .
 $$
 
 It is a positive square root of a non-negative real, with no sign or branch choice. It is multiplicative, because the norm is,
@@ -76,7 +76,7 @@ $$
 {\mathbb{C}_{\mathrm{spl}}}^{(\pm1)} = \{\,u \in \mathbb{C}_{\mathrm{spl}} : \lvert \langle u\rangle_{*}\rvert = 1\,\} = \{\langle u\rangle_{*} = 1\} \sqcup \{\langle u\rangle_{*} = -1\},
 $$
 
-the union of the two hyperbolas $q^2-q'^2 = 1$ and $q'^2-q^2 = 1$. Each hyperbola has two branches, so the unit set has four connected components. With the hyperbolic angle $\theta \in \mathbb{R}$,
+the union of the two hyperbolas $q^2-q'{}^2 = 1$ and $q'{}^2-q^2 = 1$. Each hyperbola has two branches, so the unit set has four connected components. With the hyperbolic angle $\theta \in \mathbb{R}$,
 
 $$
 \langle u\rangle_{*} = +1: \quad u = \pm\exp(\theta j) = \pm\bigl(\cosh\theta + j\sinh\theta\bigr),
@@ -164,14 +164,14 @@ is continuous, fixes every point of ${\mathbb{C}_{\mathrm{spl}}}^{(\pm1)}$ at ev
 
 ### The Hermitian and Anti-Hermitian Directions
 
-Conjugation fixes the real axis and negates the split-imaginary axis. An element $\nu$ is **Hermitian** if $\bar\nu = \nu$ and **anti-Hermitian** if $\bar\nu = -\nu$. The Hermitian elements are the real axis $\mathbb{R}$, and the anti-Hermitian elements are $j\mathbb{R}$. On the real axis the norm is $q^2$, positive definite; on the split-imaginary axis it is $-q'^2$, negative definite. Every nonzero element of either axis is invertible. The modulus lies on the positive real axis. The unit set meets the real axis at $\pm1$, where $N=1$, and the split-imaginary axis at $\pm j$, where $N=-1$. Thus $j$ is a unit direction of negative norm.
+Conjugation fixes the real axis and negates the split-imaginary axis. An element $\nu$ is **Hermitian** if $\bar\nu = \nu$ and **anti-Hermitian** if $\bar\nu = -\nu$. The Hermitian elements are the real axis $\mathbb{R}$, and the anti-Hermitian elements are $j\mathbb{R}$. On the real axis the norm is $q^2$, positive definite; on the split-imaginary axis it is $-q'{}^2$, negative definite. Every nonzero element of either axis is invertible. The modulus lies on the positive real axis. The unit set meets the real axis at $\pm1$, where $N=1$, and the split-imaginary axis at $\pm j$, where $N=-1$. Thus $j$ is a unit direction of negative norm.
 
 ### The Roots of Plus One, Zero and Minus One
 
 Let $\nu = q + jq'$ and solve $\nu^2 = c$ for $c\in\{-1,0,+1\}$. Since
 
 $$
-\nu^2 = (q^2+q'^2) + 2qq'\,j,
+\nu^2 = (q^2+q'{}^2) + 2qq'\,j,
 $$
 
 the imaginary part vanishes when $qq' = 0$. The solutions are listed in the following table.
@@ -208,7 +208,7 @@ $$
 The matrix $K$ is a reflection, and $K^2 = I$ is the matrix form of $j^2 = +1$. The determinant and the trace are
 
 $$
-\det M_Q = q^2-q'^2 = \langle Q\rangle_{*}, \qquad \operatorname{tr}M_Q = 2q,
+\det M_Q = q^2-q'{}^2 = \langle Q\rangle_{*}, \qquad \operatorname{tr}M_Q = 2q,
 $$
 
 so the norm is the determinant and the modulus is the square root of the absolute determinant, $\varrho = \sqrt{\lvert\det M_Q\rvert}$.
@@ -319,8 +319,8 @@ The modulus–unit decomposition exists in every algebra of the family, with the
 | algebra | element | norm | modulus | unit set | topology of the unit set |
 |---|---|---|---|---|---|
 | $\mathbb{R}$ | $q$ | $q^2$ | $\lvert q\rvert$ | $\{\pm1\}$ | two points |
-| $\mathbb{C}$ | $Q = q+iq'$ | $q^2+q'^2$, definite | $\sqrt{N}$ | $\mathrm{U}(1)$ | circle, compact and connected |
-| $\mathbb{C}_{\mathrm{spl}}$ | $Q = q+jq'$ | $q^2-q'^2$, indefinite | $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $\langle Q\rangle_{*}\neq0$ | $\{\langle Q\rangle_{*}=\pm1\}$ | four branches, non-compact |
+| $\mathbb{C}$ | $Q = q+iq'$ | $q^2+q'{}^2$, definite | $\sqrt{N}$ | $\mathrm{U}(1)$ | circle, compact and connected |
+| $\mathbb{C}_{\mathrm{spl}}$ | $Q = q+jq'$ | $q^2-q'{}^2$, indefinite | $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $\langle Q\rangle_{*}\neq0$ | $\{\langle Q\rangle_{*}=\pm1\}$ | four branches, non-compact |
 | $\mathbb{H}$ | $\tilde q$ | sum of four squares, definite | $\sqrt{N}$ | $S^3$ | sphere, compact and connected |
 
 The split column is the only one in which the norm is indefinite and the unit set has four components. The complex and quaternion columns are definite and their unit sets are compact and connected, a circle and a three-sphere. The split column has a non-empty null cone, a non-compact unit set, and a maximal compact subgroup of four points.
@@ -346,7 +346,7 @@ Both axes are definite: the real axis has positive norm, the split-imaginary axi
 | $\mathbb{C}_{\mathrm{spl}}$ | the split-complex algebra, basis $1$, $j$, $j^2=+1$ |
 | $Q = q+jq'$ | a split-complex number, $q$ and $q'$ real |
 | $\bar Q = q-jq'$ | the split-complex conjugate |
-| $\langle Q\rangle_{*} = Q\bar Q = q^2-q'^2$ | the norm, indefinite of inertia $(1,1)$ |
+| $\langle Q\rangle_{*} = Q\bar Q = q^2-q'{}^2$ | the norm, indefinite of inertia $(1,1)$ |
 | $\Pi_\pm = \tfrac12(1\pm j)$ | the idempotents, $Q = Q_+\Pi_++Q_-\Pi_-$ |
 | $Q_\pm = q\pm q'$ | the idempotent coordinates |
 | $\varrho = \sqrt{\lvert \langle Q\rangle_{*}\rvert} = \sqrt{\lvert Q_+Q_-\rvert}$ | the modulus, a positive real |

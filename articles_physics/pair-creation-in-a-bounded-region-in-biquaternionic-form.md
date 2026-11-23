@@ -14,7 +14,7 @@ Three statements organise the article.
 
 The article derives the matching, the threshold and the two tables of numbers. It does not derive the second-quantized statements: the pair number, the Bogoliubov mixing and the vacuum persistence amplitude are those of *Scalar Pair Creation in Biquaternionic Form*, the operator content of the sea is that of *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form*, and the mode count of a cavity is that of *The Vacuum State and the Casimir Effect in Biquaternionic Form*. What the framework supplies is the location of the threshold on the mass shell, and the criterion that separates a confining model which can create pairs from one which cannot.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\imath^2=-e_t$ and central scalar imaginary $i$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace, the material sector, on which $Q_t=i q'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$; the gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial R_\imath$; the Dirac equation is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ with $\nu_m=\frac{mc}{h}$; and the minimal coupling replaces $\tilde\nabla_\Phi$ by $D=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$. No array and no column is written below.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^2=-e_t$ and central scalar imaginary $i$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace, the material sector, on which $Q_t=i q'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$; the gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial R_{\imath}$; the Dirac equation is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ with $\nu_m=\frac{mc}{h}$; and the minimal coupling replaces $\tilde\nabla_\Phi$ by $D=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$. No array and no column is written below.
 
 ## The Well and the Gap
 
@@ -239,7 +239,7 @@ $$
 Multiplying the two shifts, as the companion article on the oscillator does, the cross terms reduce to a central commutator and a spin–orbit term, and the confining term that survives in the identity is a positive addition, $+m^{2}\omega^{2}r^{2}$:
 
 $$
-\mathcal Q_{+}\mathcal Q_{-}=\vec p^{\,2}+m^{2}\omega^{2}\vec r^{\,2}-3\,\frac{h}{2\pi}\,m\,\omega-2m\omega\sum_{\imath\in\{x,y,z\}} L_{\mathrm{orb},k}\,i\vec e_\imath ,
+\mathcal Q_{+}\mathcal Q_{-}=\vec p^{\,2}+m^{2}\omega^{2}\vec r^{\,2}-3\,\frac{h}{2\pi}\,m\,\omega-2m\omega\sum_{\imath\in\{x,y,z\}} L_{\mathrm{orb},k}\,i\vec e_{\imath} ,
 \qquad
 E^{2}=m^{2}c^{4}+c^{2}\,\mathcal Q_{+}\mathcal Q_{-}.
 $$
@@ -305,9 +305,9 @@ In a step the created pair leaves as a current and no level holds the imbalance.
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1$, $\vec e_x,\vec e_y,\vec e_z$ | Quaternion units, $\vec e_\imath^{2}=-e_t$ |
+| $e_t=1$, $\vec e_x,\vec e_y,\vec e_z$ | Quaternion units, $\vec e_{\imath}^{2}=-e_t$ |
 | $\mathbb{B}_{\Phi}$ | Material sector, with $Q_t=i q'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$ |
-| $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial R_\imath$ | Biquaternionic gradient |
+| $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial R_{\imath}$ | Biquaternionic gradient |
 | $\tilde{Ξ}_{1}$, $\tilde{Ξ}_{2}$ | The two components of the reduced spinor |
 | $V_0$, $L$, $a=L/2$ | Well depth, width, and half-width |
 | $ϙ\xi(r_x)=-V_0$ inside the well | Electrostatic potential energy |

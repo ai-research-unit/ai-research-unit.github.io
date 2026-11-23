@@ -4,6 +4,8 @@
 
 This article writes the nonlinear sigma model as an extremum of an action in the algebra, and reads what the action's structure gives. It is the action-first companion of *The Nonlinear Sigma Model in Biquaternionic Form*, which states the target geometry and the power counting as facts about a known model; this article asks the prior question, what functional has the sigma-model equation as its stationary condition, and what the algebra contributes to the answer.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 The equation. The parent's equation is
 
 $$
@@ -38,7 +40,7 @@ What is not new. The model, its target, its current and its power counting are s
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_\imath^{2}=-e_t$ for $k=x,y,z$, and central scalar imaginary $i$. The material sector is $\mathbb{B}_\Phi$; the group-valued field takes values in the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}=\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$.
+The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_{\imath}^{2}=-e_t$ for $k=x,y,z$, and central scalar imaginary $i$. The material sector is $\mathbb{B}_\Phi$; the group-valued field takes values in the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}=\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$.
 
 The two products used. $\mathrm{Sc}(X)$ is the coefficient of $e_t$ in $X$; $\langle X\rangle_\natural=\mathrm{Sc}(X X^{\natural})$ is the Minkowski square of $X$. The spatial sum $\sum_{\imath}$ runs over $t,x,y,z$ with the corpus's sign rule $\sum_{\imath} X_{\imath} X_{\imath}=X_t^{2}-\sum_j X_j^{2}$.
 
@@ -53,7 +55,7 @@ The field. The sigma-model field is the chiral field of the pion,
 $$
 \tilde U=\exp\!\left(\frac{\vec\pi}{f}\right),
 \qquad
-\vec\pi=\sum_{\imath\in\{x,y,z\}} \pi_\imath\vec e_\imath ,
+\vec\pi=\sum_{\imath\in\{x,y,z\}} \pi_{\imath}\vec e_{\imath} ,
 \qquad
 \vec\pi^{\natural}=-\vec\pi ,
 $$
@@ -63,10 +65,10 @@ which is a unit real quaternion because $\vec\pi$ is anti-Hermitian and the expo
 $$
 \tilde U=\cos\frac{|\pi|}{f}\,e_t+\frac{\sin(|\pi|/f)}{|\pi|}\,\vec\pi ,
 \qquad
-|\pi|=\sqrt{\sum_{\imath\in\{x,y,z\}}\pi_\imath\pi_\imath},
+|\pi|=\sqrt{\sum_{\imath\in\{x,y,z\}}\pi_{\imath}\pi_{\imath}},
 $$
 
-the second form showing that the three $\pi_\imath$ are coordinates on the group and not linear fields.
+the second form showing that the three $\pi_{\imath}$ are coordinates on the group and not linear fields.
 
 The current. The Maurer–Cartan form is
 
@@ -93,7 +95,7 @@ with $\bar j_{\imath}=-j_{\imath}$ because $j_{\imath}$ is anti-Hermitian, so th
 $$
 j_{\imath}=\frac{1}{f}\frac{\partial \vec\pi}{\partial R_{\imath}}+O(\pi^2),
 \qquad
--\frac{f^2}{2}\mathrm{Sc}(j_{\imath} j_{\imath})=-\frac12\sum_{\imath\in\{x,y,z\}}\frac{\partial \pi_\imath}{\partial R_{\imath}}\frac{\partial \pi_\imath}{\partial R_{\imath}}+O(\pi^4),
+-\frac{f^2}{2}\mathrm{Sc}(j_{\imath} j_{\imath})=-\frac12\sum_{\imath\in\{x,y,z\}}\frac{\partial \pi_{\imath}}{\partial R_{\imath}}\frac{\partial \pi_{\imath}}{\partial R_{\imath}}+O(\pi^4),
 $$
 
 so that the quadratic part is the canonical kinetic term of three real fields with coefficient exactly one and no free parameter. The constant $f$ has cancelled between the coefficient and the current, and that cancellation is the statement that $f$ is the decay constant and not a coupling.
@@ -104,7 +106,7 @@ The pairing. The pairing is the real scalar part, and it is forced. The integran
 
 Why the pairing cannot be $\mathrm{Sc}(j_{\imath} j_{\imath})$. That form is the negative of the one above only when $j_{\imath}$ is anti-Hermitian, which it is, so the two differ by a sign and not by a defect. The genuine alternative, $\mathrm{Re}\,\mathrm{Sc}(j_{\imath} j_{\imath})$ without the conjugate, would fail to be invariant under $\tilde U\mapsto g_L\tilde U g_R^{*}$ because the left and right factors do not commute with $j_{\imath}$ in the same order; the conjugated pairing is the one that survives, and this is the same selection that fixes the Dirac bilinear in the element articles.
 
-The type of the coefficient. The coefficient is a squared decay constant, real and dimensionful. $f^2$ has dimension of mass squared, is real by construction, and its value is fixed by the pion decay constant $f_\pi=130.2$ MeV in the corpus's normalization. It is not a coupling: it multiplies the whole action and cancels in the equation of motion, exactly as a coupling would not.
+The type of the coefficient. The coefficient is a squared decay constant, real and dimensionful. $f^2$ has dimension of mass squared, is real by construction, and its value is fixed by the pion decay constant $f_\pi=2.086\times10^{-11}\ \mathrm{J}$ in the corpus's normalization. It is not a coupling: it multiplies the whole action and cancels in the equation of motion, exactly as a coupling would not.
 
 What that means for the count. Because $f$ cancels from the equation, the classical content of the model is $f$-independent, and $f$ enters only when the field is normalized canonically — that is, only in the interactions. This is the structural fact behind the statement that the sigma model has one parameter and no coupling.
 
@@ -229,7 +231,7 @@ The boundary. The target, the metric and the flat current are the algebra's; the
 |---|---|
 | $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$ | sigma-model field, a unit real quaternion |
 | $\vec\pi$ | the three Goldstone coordinates, $\vec\pi^{\natural}=-\vec\pi$ |
-| $f=f_\pi$ | decay constant, $130.2$ MeV |
+| $f=f_\pi$ | decay constant, $2.086\times10^{-11}\ \mathrm{J}$ |
 | $j_{\imath}=\tilde U^{\natural}\partial_{\imath}\tilde U$ | Maurer–Cartan current, flat, anti-Hermitian |
 | $\mathrm{Sc}(\cdot)$, $\langle\cdot\rangle_\natural$ | scalar part; Minkowski square |
 | $g_L,g_R$ | constant unit quaternions acting on the left and right |

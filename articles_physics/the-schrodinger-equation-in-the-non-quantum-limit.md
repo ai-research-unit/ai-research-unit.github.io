@@ -113,13 +113,13 @@ so the wave fronts $S=\text{const}$ are the surfaces of constant phase, the rays
 
 The parent's constant-element case gives $\tilde Q(t')=\exp(-i\theta_{\mathrm{evo}})$ with $\theta_{\mathrm{evo}}=h_{t}\frac{2\pi t'}{h}$, whose word has $\varrho=1$ and $\theta_{\mathrm{rpd}}=0$: the scale is constant, so $\epsilon=0$, and the limit changes nothing because there is nothing to drop. **The limit acts only where the scale varies.** For the free particle the complete integral is $S=\vec p\cdot\vec r-Et'$ with $E=\lvert\vec p\rvert^{2}/2m$, and its gradient is the constant $\vec p$.
 
-For $V=\sum_{\imath\in\{x,y,z\}} V_\imath(x_\imath)$ the equation separates, $S=\sum_{\imath\in\{x,y,z\}} S_\imath$, each term obeying $\frac{1}{2m}(dS_\imath/dx_\imath)^{2}+V_\imath=E_\imath$ with $\sum_{\imath\in\{x,y,z\}} E_\imath=E$, so
+For $V=\sum_{\imath\in\{x,y,z\}} V_{\imath}(x_{\imath})$ the equation separates, $S=\sum_{\imath\in\{x,y,z\}} S_{\imath}$, each term obeying $\frac{1}{2m}(dS_{\imath}/dx_{\imath})^{2}+V_{\imath}=E_{\imath}$ with $\sum_{\imath\in\{x,y,z\}} E_{\imath}=E$, so
 
 $$
-S_\imath(x_\imath)=\pm\int^{x_\imath}\sqrt{2m\left(E_\imath-V_\imath(\zeta)\right)}\;d\zeta .
+S_{\imath}(x_{\imath})=\pm\int^{x_{\imath}}\sqrt{2m\left(E_{\imath}-V_{\imath}(\zeta)\right)}\;d\zeta .
 $$
 
-The two signs are the two directions of motion, and the turning points $E_\imath=V_\imath$ are where the branches meet and the amplitude below diverges.
+The two signs are the two directions of motion, and the turning points $E_{\imath}=V_{\imath}$ are where the branches meet and the amplitude below diverges.
 
 ## Order One: the Transport and the Amplitude
 

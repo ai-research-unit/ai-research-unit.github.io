@@ -277,7 +277,7 @@ The sum over paths integrates over trajectories $r_x(r'_t)$ that are ordinary co
 $$
 r_x\,dr_x/dr'_t=\lim_{\varepsilon\to0}r_x(r'_t)\frac{r_x(r'_t)-r_x(r'_t-\varepsilon)}{\varepsilon}
 $$
-is therefore ambiguous: the two orderings of the numerator differ by a term that does not vanish as $\varepsilon\to0$. Writing the discrete two-point function of the free Euclidean particle as $\langle  x_jx_\imath\rangle=(\frac{1}{2\pi\nu_m})\min(r'_{t,j},r'_{t,\imath})$ — the diffusion coefficient of the coordinate $r'_t$, the duration coefficient $\frac{c}{2\pi\nu_m}$ read in the other variable — the two orderings are
+is therefore ambiguous: the two orderings of the numerator differ by a term that does not vanish as $\varepsilon\to0$. Writing the discrete two-point function of the free Euclidean particle as $\langle  x_jx_{\imath}\rangle=(\frac{1}{2\pi\nu_m})\min(r'_{t,j},r'_{t,\imath})$ — the diffusion coefficient of the coordinate $r'_t$, the duration coefficient $\frac{c}{2\pi\nu_m}$ read in the other variable — the two orderings are
 $$
 \frac{1}{\varepsilon}\big\langle x_j(x_{j+1}-x_j)\big\rangle=0,
 \qquad
@@ -379,7 +379,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $\delta^2S$ | Second variation (Hessian) of the action about $x_{\mathrm{cl}}$ |
 | $\sqrt{\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert}$ | Van Vleck determinant; equals the WKB amplitude $A_{\mathrm{wkb}}$ |
 | $\exp(-i\pi\digamma_{\mathrm{msl}}/2)$ | Maslov phase; $\digamma_{\mathrm{msl}}$ the number of conjugate points (caustics) |
-| $\langle  x_jx_\imath\rangle=(\frac{1}{2\pi\nu_m})\min(r'_{t,j},r'_{t,\imath})$ | Free Euclidean two-point function; contact term $\frac{1}{\nu_m}$ |
+| $\langle  x_jx_{\imath}\rangle=(\frac{1}{2\pi\nu_m})\min(r'_{t,j},r'_{t,\imath})$ | Free Euclidean two-point function; contact term $\frac{1}{\nu_m}$ |
 | $[x,p]=i\,\frac{h}{2\pi}$ | Canonical commutator; the value $i\,\frac{h}{2\pi}$ is central and in $\mathbb{B}_{\Phi}$ |
 | $[p,[p,g]]=-\frac{h^{2}}{4\pi^{2}}\frac{d^{2}g}{dx^{2}}$ | Operator-ordering ambiguity; proportional to the curvature |
 | $\prod_x\sqrt{g(x)}$ | Curved-space measure factor; one volume element per slice |

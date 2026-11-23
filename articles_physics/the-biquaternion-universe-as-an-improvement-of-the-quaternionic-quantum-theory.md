@@ -14,7 +14,7 @@ The sense of the word "improvement". The biquaternion universe is offered here a
 
 The result in one sentence. Quaternionic quantum theory placed the quaternion algebra where the **scalar field** of a quantum theory goes, and every one of its limits is a limit of that placement. The biquaternion theory takes the **complex numbers** as its scalars and keeps the quaternion units as **elements of its algebra**, where they supply the internal directions and generate the rotations. The relocation carries a price, stated at the end of Part II: a theory whose scalars are already complex agrees with ordinary quantum mechanics instead of departing from it.
 
-What "the quaternions" names, in each theory. The word does different work in the two theories, and the article keeps the two uses apart throughout. In quaternionic quantum theory the quaternions are the **field of scalars**: the states live in a quaternion module, the amplitudes are quaternions, and the transition amplitude is a quaternion product. In the biquaternion theory the quaternion units $\vec e_x,\vec e_y,\vec e_z$ are **elements of an algebra over the complex scalars**. With $e_t=1$ and $\vec e_\imath^{2}=-e_t$ they supply the internal directions, they generate the rotations, and they act on the state module $S\cong\mathbb{C}^{2}$ through $\vec e_\imath\mapsto-i\sigma_\imath$. Two things the biquaternion theory does **not** use: the quaternions as a field of scalars, and the division-ring property, since $\mathbb{B}\cong M_{2}(\mathbb{C})$ has zero divisors. What it uses is the units, their sign $\vec e_\imath^{2}=-e_t$, and the centre $\mathbb{C}e_t$. The corpus states the same distinction in the form that the algebra's two roles — the imaginary unit of the coefficients and the quaternion units of the directions — cannot be exchanged (*Algebra and Element Conventions*, §*The Elements and their Coefficients*).
+What "the quaternions" names, in each theory. The word does different work in the two theories, and the article keeps the two uses apart throughout. In quaternionic quantum theory the quaternions are the **field of scalars**: the states live in a quaternion module, the amplitudes are quaternions, and the transition amplitude is a quaternion product. In the biquaternion theory the quaternion units $\vec e_x,\vec e_y,\vec e_z$ are **elements of an algebra over the complex scalars**. With $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$ they supply the internal directions, they generate the rotations, and they act on the state module $S\cong\mathbb{C}^{2}$ through $\vec e_{\imath}\mapsto-i\sigma_{\imath}$. Two things the biquaternion theory does **not** use: the quaternions as a field of scalars, and the division-ring property, since $\mathbb{B}\cong M_{2}(\mathbb{C})$ has zero divisors. What it uses is the units, their sign $\vec e_{\imath}^{2}=-e_t$, and the centre $\mathbb{C}e_t$. The corpus states the same distinction in the form that the algebra's two roles — the imaginary unit of the coefficients and the quaternion units of the directions — cannot be exchanged (*Algebra and Element Conventions*, §*The Elements and their Coefficients*).
 
 # Part I. The Quaternionic Quantum Theory
 
@@ -168,13 +168,13 @@ Its elements are written
 $$
 \tilde Q=Q_{t}e_{t}+Q_{x}\vec e_{x}+Q_{y}\vec e_{y}+Q_{z}\vec e_{z},\qquad Q_{\imath}\in\mathbb{C},
 $$
-with $e_t=1$, $\vec e_\imath^{2}=-e_t$ for $k=x,y,z$, and $\vec e_x\vec e_y=\vec e_z$ together with its cyclic companions. The algebra is associative, and it is not commutative.
+with $e_t=1$, $\vec e_{\imath}^{2}=-e_t$ for $k=x,y,z$, and $\vec e_x\vec e_y=\vec e_z$ together with its cyclic companions. The algebra is associative, and it is not commutative.
 
 What the complexification changes, in three items.
 
-- **The scalar imaginary is central.** The element $i$ commutes with every $\vec e_\imath$, so the centre of the algebra is $Z(\mathbb{B})=\mathbb{C}e_t$, the complex numbers.
+- **The scalar imaginary is central.** The element $i$ commutes with every $\vec e_{\imath}$, so the centre of the algebra is $Z(\mathbb{B})=\mathbb{C}e_t$, the complex numbers.
 - The algebra is central simple over its centre. The isomorphism $\mathbb{B}\cong M_{2}(\mathbb{C})$ is an isomorphism of complex algebras, so $\mathbb{B}$ is a full matrix algebra over $\mathbb{C}$. This is precisely the property that quaternionic scalars lack, and the whole of Part II turns on it.
-- The units survive as elements and cease to be scalars. The elements $\vec e_x,\vec e_y,\vec e_z$ remain, with $\vec e_\imath^{2}=-e_t$ and the rotation bracket, but they commute with the scalars $i$ and do not commute with one another. They are elements of the algebra over $\mathbb{C}$, not the field of scalars.
+- The units survive as elements and cease to be scalars. The elements $\vec e_x,\vec e_y,\vec e_z$ remain, with $\vec e_{\imath}^{2}=-e_t$ and the rotation bracket, but they commute with the scalars $i$ and do not commute with one another. They are elements of the algebra over $\mathbb{C}$, not the field of scalars.
 
 The conjugations and the sectors. Three operations act on $\mathbb{B}$: the coefficientwise conjugation $\overline{\cdot}$, which conjugates the complex coordinates; the quaternion conjugation ${}^{\natural}$, which fixes $e_t$, negates $\vec e_x,\vec e_y,\vec e_z$ and is $\mathbb{C}$-linear; and the Hermitian conjugation ${}^{*}={}^{\natural}\circ\overline{\cdot}$, so that $Q^{*}_{\jmath}=\varepsilon_{\jmath}\overline{Q_{\jmath}}$ with $\varepsilon=(1,-1,-1,-1)$. The Hermitian conjugation splits the algebra into its two fixed spaces,
 $$
@@ -184,7 +184,7 @@ where $\mathbb{B}_{\Psi}$ is the Hermitian sector, the elements with $\tilde Q^{
 
 The matrix model. The isomorphism is fixed by its values on the basis,
 $$
-\mathsf{M}_2(e_t)=I_{2},\qquad \mathsf{M}_2(\vec e_\imath)=-i\sigma_\imath,\qquad \mathsf{M}_2(i\tilde Q_1)=i\,\mathsf{M}_2(\tilde Q_1),
+\mathsf{M}_2(e_t)=I_{2},\qquad \mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath},\qquad \mathsf{M}_2(i\tilde Q_1)=i\,\mathsf{M}_2(\tilde Q_1),
 $$
 so that $\mathsf{M}_2$ is an isomorphism of $\mathbb{C}$-algebras onto the $2\times2$ complex matrices. The reduction convention of the series is $2\,\mathrm{Sc}(\tilde Q)=2Q_t$, where $\mathrm{Sc}(\tilde Q_1)$ is the coefficient of $e_t$.
 
@@ -298,13 +298,13 @@ The biquaternion theory would be empty if it discarded the quaternion structure,
 
 The invertibles of the quaternion algebra are $SU(2)$, the double cover of the rotation group, and they remain so in the biquaternion theory. With the matrix model above, the elements
 $$
-\tilde S_{\Psi,k}=\frac{h}{4\pi}\,i\,\vec e_\imath
+\tilde S_{\Psi,k}=\frac{h}{4\pi}\,i\,\vec e_{\imath}
 $$
-have the images $\mathsf{M}_2(\tilde S_{\Psi,k})=\frac{h}{4\pi}\sigma_\imath$, the spin operators, and they satisfy
+have the images $\mathsf{M}_2(\tilde S_{\Psi,k})=\frac{h}{4\pi}\sigma_{\imath}$, the spin operators, and they satisfy
 $$
 [\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=i\,\frac{h}{2\pi}\sum_{\imath\in\{x,y,z\}}\epsilon_{\imath\jmath\ell}\tilde S_{\Psi,k}.
 $$
-This was checked on the corpus's matrix model at two values of the quantum of action, and for every pair of indices, and the same check confirms the quaternion bracket $\mathsf{M}_2([\vec e_j,\vec e_\imath])=2\epsilon_{j\imath l}\mathsf{M}_2(\vec e_l)$, which is the bracket Part I records for the imaginary units $i,j,k$. The spin achievement of the quaternionic theory is therefore kept **exactly**: the invertibles are still $SU(2)$ and still the rotation generators. What has changed is only their role. In the quaternionic theory they multiplied the states as scalars; here they generate the representation, which is the angular-momentum algebra of the corpus. The bracket is owned by *Angular Momentum and Spin in Biquaternionic Form*.
+This was checked on the corpus's matrix model at two values of the quantum of action, and for every pair of indices, and the same check confirms the quaternion bracket $\mathsf{M}_2([\vec e_j,\vec e_{\imath}])=2\epsilon_{j\imath l}\mathsf{M}_2(\vec e_l)$, which is the bracket Part I records for the imaginary units $i,j,k$. The spin achievement of the quaternionic theory is therefore kept **exactly**: the invertibles are still $SU(2)$ and still the rotation generators. What has changed is only their role. In the quaternionic theory they multiplied the states as scalars; here they generate the representation, which is the angular-momentum algebra of the corpus. The bracket is owned by *Angular Momentum and Spin in Biquaternionic Form*.
 
 ### The Material Sector Is Spacetime
 
@@ -359,7 +359,7 @@ The first table is the correspondence of Part II: each limit of Part I, what the
 
 | Part of the quaternionic achievement | Where it lives in the biquaternion theory | Where this corpus owns it |
 |---|---|---|
-| The invertibles are $SU(2)$ and the rotation generators | The elements $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_\imath$ are the spin operators, with $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=i\,\frac{h}{2\pi}\sum_{\imath\in\{x,y,z\}}\epsilon_{\imath\jmath\ell}\tilde S_{\Psi,k}$ | *Angular Momentum and Spin in Biquaternionic Form* |
+| The invertibles are $SU(2)$ and the rotation generators | The elements $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_{\imath}$ are the spin operators, with $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=i\,\frac{h}{2\pi}\sum_{\imath\in\{x,y,z\}}\epsilon_{\imath\jmath\ell}\tilde S_{\Psi,k}$ | *Angular Momentum and Spin in Biquaternionic Form* |
 | The Lorentz group and Minkowski space | $\mathbb{B}_{\Phi}\cong\mathbb{R}^{3,1}$, the interval is the biquaternion norm, and the unit-norm elements are the Lorentz transformations | *The Anti-Hermitian Subspace $\mathbb{B}_{\Phi}$ as the Material Sector* |
 | An associative algebra with an explicit finite-dimensional formalism | $\mathbb{B}\cong M_{2}(\mathbb{C})$, the four forms $\langle\tilde Q_1,\tilde Q_2\rangle,\langle\tilde Q_1,\tilde Q_2\rangle_{\natural},\langle\tilde Q_1,\tilde Q_2\rangle_{*},\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, the reduction convention $2\,\mathrm{Sc}(\tilde Q)=2Q_t$, and no unbounded operators at the algebra level | *Algebra and Element Conventions* |
 | The quaternion algebra itself | $\mathbb{H}$ is the compact real form of $\mathbb{B}$ and the real subalgebra $\mathbb{B}_{H}\subset\mathbb{B}$; the split quaternions are the other real form | the corpus's split-biquaternion articles |
@@ -389,18 +389,18 @@ Quaternionic quantum theory is the theory obtained by making the quaternion alge
 | $\mathbb{H}_{\mathrm{spl}}$ | The split quaternion algebra, $\cong M_{2}(\mathbb{R})$; the second real form of $\mathbb{B}$ |
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ | The biquaternion algebra; central simple over $\mathbb{C}$ |
 | $Z(\mathbb{B})=\mathbb{C}e_t$ | The centre; the scalar field of the biquaternion theory |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$ | The basis, with $e_t=1$ and $\vec e_\imath^{2}=-e_t$ |
-| $i$ | The central scalar imaginary, commuting with every $\vec e_\imath$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | The basis, with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$ |
+| $i$ | The central scalar imaginary, commuting with every $\vec e_{\imath}$ |
 | $\overline{\cdot}$, ${}^{\natural}$, ${}^{*}$ | The coefficientwise conjugation, the quaternion conjugation, and the Hermitian conjugation ${}^{*}=\overline{\cdot}\circ{}^{\natural}$ |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The Hermitian and anti-Hermitian sectors, the fixed spaces of ${}^{*}$ |
 | $\mathbb{B}_{\Phi}\cong\mathbb{R}^{3,1}$ | The material sector as Minkowski space |
-| $\mathsf{M}_2(e_t)=I_{2}$, $\mathsf{M}_2(\vec e_\imath)=-i\sigma_\imath$ | The matrix model of $\mathbb{B}$ onto the $2\times2$ complex matrices |
+| $\mathsf{M}_2(e_t)=I_{2}$, $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$ | The matrix model of $\mathbb{B}$ onto the $2\times2$ complex matrices |
 | $\mathrm{Sc}$ | The scalar part, the coefficient of $e_t$, and the reduction convention |
 | $\langle\tilde Q_1,\tilde Q_2\rangle,\langle\tilde Q_1,\tilde Q_2\rangle_{\natural},\langle\tilde Q_1,\tilde Q_2\rangle_{*},\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ | The four forms: $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_{\imath}Q_{1\imath}\overline{Q_{2\imath}}$ | The Hermitian form; positive definite, linear in the first slot and conjugate-linear in the second |
 | $\langle\cdot\rangle_{\natural}$ | The biquaternion norm; the Minkowski interval on $\mathbb{B}_{\Phi}$ |
 | $S\cong\mathbb{C}^{2}$ | The defining state module, with $\mathbb{B}\cong\mathrm{End}(S)$ |
-| $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_\imath$ | The spin generators, with $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=i\,\frac{h}{2\pi}\sum_{\imath\in\{x,y,z\}}\epsilon_{\imath\jmath\ell}\tilde S_{\Psi,k}$ |
+| $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_{\imath}$ | The spin generators, with $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=i\,\frac{h}{2\pi}\sum_{\imath\in\{x,y,z\}}\epsilon_{\imath\jmath\ell}\tilde S_{\Psi,k}$ |
 | $R(q)$ | The regular representation of $q=a+bi+cj+dk$ (Part I; there $i,j,k$ are Hamilton's quaternion units): $R(q)_{11}=a+bi$, $R(q)_{12}=c+di$, $R(q)_{21}=-c+di$, $R(q)_{22}=a-bi$ |
 | $uqu^{-1}$ | The conjugacy class of a quaternionic eigenvalue (Part I); a two-sphere for $q\notin\mathbb{R}$ |
 | $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{4}(\mathbb{R})$ | The non-composition of the quaternionic scalar field |

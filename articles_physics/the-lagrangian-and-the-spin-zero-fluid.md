@@ -66,7 +66,7 @@ $$
 
 which is the block's display, arrived at as an equation of motion.
 
-The acceleration law is the gradient of the shell and is not a third equation. Differentiating the display in space, with $\partial_jp_\imath=\partial_\imathp_j$ and $\partial_jE=-\partial_tp_j$, gives
+The acceleration law is the gradient of the shell and is not a third equation. Differentiating the display in space, with $\partial_jp_{\imath}=\partial_{\imath} p_j$ and $\partial_jE=-\partial_tp_j$, gives
 
 $$
 \frac{\mathrm{d}\vec p}{\mathrm{d}t}=-\frac{1}{\gamma}\vec\nabla_\Phi Q_{\mathrm{qnt}},
@@ -132,7 +132,7 @@ $$
 
 and it splits into the two terms the action has. The first is the dust's: $\partial\mathcal L_{\mathrm{fl}}/\partial(\partial_{\imath} S_{\tilde\Xi})=-\rho_{\mathrm{num}}V_{\Phi,\imath}$, so that term is $-m\rho_{\mathrm{num}}V_{\Phi,\imath}V_{\Phi,\jmath}$, the stress of a pressureless flow, whose time–time component is $\gamma^{2}\rho_{\mathrm{num}}mc^{2}$ because the density and the energy are both boosted. The second is the gradient energy's, and it is the block's $\sigma^{Q}_{ij}$ extended to four dimensions. Two cautions about the sum. It is the canonical tensor, and the block's $w_{\mathrm{fl}}$ is the improved one: the two differ by an improvement term, so the comparison below is of structure and not of normalisation. And it is not the fluid's stress in the sense of a one-particle distribution, because the dust term is quadratic in the velocity where a fluid's action is linear in a density.
 
-What the action adds here is the reason the block's identity holds. [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) proves $\partial_j\sigma^{Q}_{j\imath}=-\rho_{\mathrm{num}}\partial_\imath Q_{\mathrm{qnt}}$ by a direct computation on the wave equation, and it records the caveat that the identity needs an amplitude stationary in the material time. Here the same identity is the translation invariance's conservation law together with the shell, and the caveat is visible: the four-dimensional stress is the divergence-free object, and the three-by-three block is a projection of it whose divergence carries the temporal derivative only when that derivative vanishes. **The action does not repair the caveat; it explains where it comes from.**
+What the action adds here is the reason the block's identity holds. [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) proves $\partial_j\sigma^{Q}_{j\imath}=-\rho_{\mathrm{num}}\partial_{\imath} Q_{\mathrm{qnt}}$ by a direct computation on the wave equation, and it records the caveat that the identity needs an amplitude stationary in the material time. Here the same identity is the translation invariance's conservation law together with the shell, and the caveat is visible: the four-dimensional stress is the divergence-free object, and the three-by-three block is a projection of it whose divergence carries the temporal derivative only when that derivative vanishes. **The action does not repair the caveat; it explains where it comes from.**
 
 And it explains the asymmetry between the two rungs. At the first-order rung the stress has no flux and no energy density separate from the block, because the action has one time derivative; there is nothing to project away and the identity is unconditional. Here there is a full four-dimensional stress and the projection costs.
 

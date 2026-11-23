@@ -73,7 +73,7 @@ In particular $f$ is a local biholomorphism at $Q_0$ exactly when $\det J_f(Q_0)
 
 **Definition.** The **Laplacian** on $\mathbb{C}^2$ is
 $$
-\Delta=\frac{\partial^2}{\partial q_{\blacktriangle}^2}+\frac{\partial^2}{\partial q'^2_{\blacktriangle}}+\frac{\partial^2}{\partial q_{\blacktriangledown}^2}+\frac{\partial^2}{\partial q'^2_{\blacktriangledown}}
+\Delta=\frac{\partial^2}{\partial q_{\blacktriangle}^2}+\frac{\partial^2}{\partial q'{}^2_{\blacktriangle}}+\frac{\partial^2}{\partial q_{\blacktriangledown}^2}+\frac{\partial^2}{\partial q'{}^2_{\blacktriangledown}}
 =4\left(\frac{\partial^2}{\partial Q_{\blacktriangle}\partial\overline{Q}_{\blacktriangle}}+\frac{\partial^2}{\partial Q_{\blacktriangledown}\partial\overline{Q}_{\blacktriangledown}}\right).
 $$
 A $C^2$ function is **harmonic** when $\Delta u=0$.
@@ -82,7 +82,7 @@ A $C^2$ function is **harmonic** when $\Delta u=0$.
 
 *Proof.* From the Cauchy–Riemann equations, $\partial u/\partial q_{\blacktriangle}=\partial v/\partial q'_{\blacktriangle}$ and $\partial u/\partial q'_{\blacktriangle}=-\partial v/\partial q_{\blacktriangle}$, and the same with the descending triangle. Differentiating the first equation in $q_{\blacktriangle}$ and the second in $q'_{\blacktriangle}$ and adding gives
 $$
-\frac{\partial^2u}{\partial q_{\blacktriangle}^2}+\frac{\partial^2u}{\partial q'^2_{\blacktriangle}}
+\frac{\partial^2u}{\partial q_{\blacktriangle}^2}+\frac{\partial^2u}{\partial q'{}^2_{\blacktriangle}}
 =\frac{\partial^2v}{\partial q_{\blacktriangle}\partial q'_{\blacktriangle}}-\frac{\partial^2v}{\partial q'_{\blacktriangle}\partial q_{\blacktriangle}}=0,
 $$
 because the mixed partials commute. The same computation with the descending triangle, added to this one, gives $\Delta u=0$; exchanging $u$ and $v$ gives $\Delta v=0$.

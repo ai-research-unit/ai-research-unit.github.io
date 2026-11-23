@@ -235,12 +235,12 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables) |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
 | $\tilde\Pi_{\mathrm{id},z} = \tfrac{1}{2}(e_t + i\vec e_z)$ | Spin-up state along $z$ |
-| $\tilde\Pi_{\mathrm{id},n_k} = \tfrac{1}{2}(e_t + i\vec u_\imath)$ | Idempotent along direction $\vec u_\imath$ |
-| $\vec u_\imath = \sin\theta_\imath\,\vec e_x + \cos\theta_\imath\,\vec e_z$ | Unit vector for the $k$-th direction |
+| $\tilde\Pi_{\mathrm{id},n_k} = \tfrac{1}{2}(e_t + i\vec u_{\imath})$ | Idempotent along direction $\vec u_{\imath}$ |
+| $\vec u_{\imath} = \sin\theta_{\imath}\,\vec e_x + \cos\theta_{\imath}\,\vec e_z$ | Unit vector for the $k$-th direction |
 | $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\vec u_y} \circ \tilde\Pi_{\mathrm{id},\vec u_x})$ | Transition probability between idempotents |
 
 ## Further Reading

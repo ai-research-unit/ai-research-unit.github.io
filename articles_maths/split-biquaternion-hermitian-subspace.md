@@ -5,7 +5,7 @@
 
 The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$ carries four linear involutions, and four of the resulting fixed spaces are its distinguished real subspaces. This article treats the **Hermitian subspace** $\mathbb{B}_{\Psi}$, the fixed space of Hermitian conjugation: its definition, its basis, the failure of closure under multiplication, the symmetrized product that gives it a Jordan structure, the forms on it, its idempotents, the action of the four involutions and its intersections with the other subspaces. Its complement $\mathbb{B}_{\Phi}$ under the Hermitian conjugation is treated in *Split-Biquaternion Anti-Hermitian Subspace*; the comparative tables are in *Split-Biquaternion Relations Between Subspaces* and *Split-Biquaternion Involution Lattice*.
 
-The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article, the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra, and the split complex algebra $\mathbb{C}_{\mathrm{spl}}$ from the article on split complex algebra. Throughout, elements are written $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{C}_{\mathrm{spl}}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, and the Hermitian norm is $\langle\tilde{Q}\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$.
+The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article, the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra, and the split complex algebra $\mathbb{C}_{\mathrm{spl}}$ from the article on split complex algebra. Throughout, elements are written $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{C}_{\mathrm{spl}}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, and the Hermitian norm is $\langle\tilde{Q}\rangle_{*} = \sum_\mu (q_\mu^2 - q'{}^2_\mu)$.
 
 ## Definition and Basis
 
@@ -120,10 +120,10 @@ This is the first structural difference from the biquaternion Hermitian subspace
 
 ### The Hermitian Norm and Its Isotropic Cone
 
-The indefinite form on the sector is the **Hermitian norm** $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$. On $\mathbb{B}_{\Psi}$ this is
+The indefinite form on the sector is the **Hermitian norm** $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'{}^2_\mu)$. On $\mathbb{B}_{\Psi}$ this is
 
 $$
-\sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 - q'^2_\mu) = q_t^2 - \left((q'_x)^2 + (q'_y)^2 + (q'_z)^2\right),
+\sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 - q'{}^2_\mu) = q_t^2 - \left((q'_x)^2 + (q'_y)^2 + (q'_z)^2\right),
 $$
 
 of inertia $(1,3)$. Its isotropic cone is the three-dimensional cone
@@ -200,11 +200,11 @@ Its decomposition along the coordinate blocks is $\mathbb{B}_{\Psi} = \mathbb{R}
 
 ## The Analysis on the Hermitian Subspace
 
-The Hermitian subspace is not a subalgebra, so it carries no intrinsic multiplicative function theory; the analysis on it is the restriction of the ambient analysis of *Split-Biquaternion Analysis* to a four-dimensional subspace, together with the differential operators built from the Hermitian form. The ambient Cauchy–Riemann operator of *Split-Biquaternion Analysis* restricted to $\mathbb{B}_{\Psi}$ splits into the Hermitian and anti-Hermitian pieces, and the second-order operator obtained is the wave operator of the restricted Lorentzian form $q_t^2 - \sum_k q'^2_k$ of inertia $(1,3)$ rather than a Laplacian. A general function on $\mathbb{B}_{\Psi}$ alone has no product rule, because a product of two elements of $\mathbb{B}_{\Psi}$ leaves the subspace; only the functions that extend to regular functions on the algebra have an intrinsic theory.
+The Hermitian subspace is not a subalgebra, so it carries no intrinsic multiplicative function theory; the analysis on it is the restriction of the ambient analysis of *Split-Biquaternion Analysis* to a four-dimensional subspace, together with the differential operators built from the Hermitian form. The ambient Cauchy–Riemann operator of *Split-Biquaternion Analysis* restricted to $\mathbb{B}_{\Psi}$ splits into the Hermitian and anti-Hermitian pieces, and the second-order operator obtained is the wave operator of the restricted Lorentzian form $q_t^2 - \sum_k q'{}^2_k$ of inertia $(1,3)$ rather than a Laplacian. A general function on $\mathbb{B}_{\Psi}$ alone has no product rule, because a product of two elements of $\mathbb{B}_{\Psi}$ leaves the subspace; only the functions that extend to regular functions on the algebra have an intrinsic theory.
 
 ## The Geometry of the Hermitian Subspace
 
-The Hermitian subspace is the fixed space of Hermitian conjugation, the positive eigenspace of the involution ${}^{*}$ of the algebra, and geometrically the invariant four-plane of the corresponding linear involution of $\mathbb{R}^8$. It is a Lorentzian subspace for the Hermitian scalar form: $g$ restricts to the real form $q_t^2 - \sum_k q'^2_k$ of inertia $(1,3)$ of *Split-Biquaternion Rotations and the Lorentz Group*, while the split-biquaternion norm restricts to the positive definite form $q_t^2 + \sum_k q'^2_k$ of inertia $(4,0)$ recorded in the notation table above. The null cone of $g$ is the cone $q_t^2 = \sum_k q'^2_k$; the restricted form being indefinite of inertia $(1,3)$, it has isotropic lines, and their projectivisation in $\mathbb{P}(\mathbb{B}_{\Psi})$ is a two-sphere. The motions it carries are the Lorentz group $SO(1,3)$ induced by the algebra units, the hyperbolic rotations of *Split-Biquaternions and Hyperbolic Geometry*.
+The Hermitian subspace is the fixed space of Hermitian conjugation, the positive eigenspace of the involution ${}^{*}$ of the algebra, and geometrically the invariant four-plane of the corresponding linear involution of $\mathbb{R}^8$. It is a Lorentzian subspace for the Hermitian scalar form: $g$ restricts to the real form $q_t^2 - \sum_k q'{}^2_k$ of inertia $(1,3)$ of *Split-Biquaternion Rotations and the Lorentz Group*, while the split-biquaternion norm restricts to the positive definite form $q_t^2 + \sum_k q'{}^2_k$ of inertia $(4,0)$ recorded in the notation table above. The null cone of $g$ is the cone $q_t^2 = \sum_k q'{}^2_k$; the restricted form being indefinite of inertia $(1,3)$, it has isotropic lines, and their projectivisation in $\mathbb{P}(\mathbb{B}_{\Psi})$ is a two-sphere. The motions it carries are the Lorentz group $SO(1,3)$ induced by the algebra units, the hyperbolic rotations of *Split-Biquaternions and Hyperbolic Geometry*.
 
 ## Summary
 
@@ -220,7 +220,7 @@ The Hermitian subspace $\mathbb{B}_{\Psi}$ is the fixed space of Hermitian conju
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace, fixed space of ${}^{\flat}$ |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
 | $\langle\tilde{Q}\rangle_{\natural} = q_t^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2$ | Norm on $\mathbb{B}_{\Psi}$, inertia $(4,0)$ |
-| $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian norm, inertia $(1,3)$ on $\mathbb{B}_{\Psi}$ |
+| $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'{}^2_\mu)$ | Hermitian norm, inertia $(1,3)$ on $\mathbb{B}_{\Psi}$ |
 | $\tilde{Q}_1 \bullet \tilde{Q}_2 = \tfrac{1}{2}(\tilde{Q}_1\tilde{Q}_2 + \tilde{Q}_2\tilde{Q}_1)$ | Symmetrized (Jordan) product |
 | $[\tilde{Q}_1, \tilde{Q}_2] = 2\,\vec q_1\times\vec q_2$ | Commutator, an element of $\mathbb{B}_{\Phi}$ |
 | $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Image in $\mathbb{H} \oplus \mathbb{H}$; $(h,h^{\natural})$ on $\mathbb{B}_{\Psi}$ |

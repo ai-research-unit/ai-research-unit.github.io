@@ -11,7 +11,7 @@ This article treats both effects in the biquaternion algebra $\mathbb{B} = \math
 3. **The Stark effect is linear for degenerate levels and quadratic otherwise.** The linear Stark effect is the spectrum of $-dE\,i\vec e_x$ at an exact degeneracy, $\pm dE$; the quadratic Stark effect is the second-order shift of a non-degenerate pair, $\delta E = -\frac{d^{2}\,E^{2}}{hf_{\mathrm{frq},0}}= -\tfrac12\alpha E^2$, with $\alpha =\frac{2\,d^{2}}{hf_{\mathrm{frq},0}}$.
 4. **The difference is diagonal versus off-diagonal coupling.** The magnetic coupling is diagonal in the energy basis because a spin-1/2 carries a permanent magnetic dipole; the electric coupling is off-diagonal because a state of definite parity has no permanent electric dipole. The first gives a first-order (linear) shift; the second gives a second-order (quadratic) shift or, at a degeneracy, a first-order splitting between the two mixed states.
 
-The notation is the series notation: $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_\imath$, $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ with eigenvalues $h_t\pm|\vec h_\Psi|$, and $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
+The notation is the series notation: $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_{\imath}$, $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ with eigenvalues $h_t\pm|\vec h_\Psi|$, and $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the spin observable and its coupling to a field.
@@ -29,7 +29,7 @@ $$
 \tilde{H}_{\Psi,Z} = -\gamma\,\vec B\cdot\tilde S_{\Psi} = -\gamma B\,\tilde{S}_{\Psi}(\vec u)
 = -\frac{hf_{\mathrm{frq},L}}{2}\,i\vec u,
 \qquad
-\tilde{S}_{\Psi}(\vec u) = \sum_{\imath\in\{x,y,z\}}  u_\imath\tilde{S}_{\Psi,k} =\frac{h}{4\pi}\,i\vec u,
+\tilde{S}_{\Psi}(\vec u) = \sum_{\imath\in\{x,y,z\}}  u_{\imath}\tilde{S}_{\Psi,k} =\frac{h}{4\pi}\,i\vec u,
 $$
 
 where $\vec u = \vec B/B$ and
@@ -38,7 +38,7 @@ $$
 \omega_L = \gamma B
 $$
 
-is the Larmor frequency. In the series convention $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_\imath$ and the isomorphism $\mathsf{M}_2$ sends $i\vec e_\imath\mapsto\sigma_\imath$, so $\tilde{H}_{\Psi,Z}\mapsto  -\frac{hf_{\mathrm{frq},L}}{2}(\vec u\cdot\boldsymbol{\sigma})$. The coupling is a Hermitian element of $\mathbb{B}_{\Psi}$ with $h_t = 0$ and $\vec h_\Psi = -\frac{hf_{\mathrm{frq},L}}{2}\vec u$.
+is the Larmor frequency. In the series convention $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_{\imath}$ and the isomorphism $\mathsf{M}_2$ sends $i\vec e_{\imath}\mapsto\sigma_{\imath}$, so $\tilde{H}_{\Psi,Z}\mapsto  -\frac{hf_{\mathrm{frq},L}}{2}(\vec u\cdot\boldsymbol{\sigma})$. The coupling is a Hermitian element of $\mathbb{B}_{\Psi}$ with $h_t = 0$ and $\vec h_\Psi = -\frac{hf_{\mathrm{frq},L}}{2}\vec u$.
 
 ### The Spin-1/2 Splitting
 
@@ -48,7 +48,7 @@ $$
 \tilde{H}_{\Psi,Z} = -\frac{hf_{\mathrm{frq},L}}{2}\,\tilde\Pi_{\mathrm{id},1}(\vec u) +\frac{hf_{\mathrm{frq},L}}{2}\,\tilde\Pi_{\mathrm{id},2}(\vec u),
 $$
 
-because $\sum_{\imath\in\{x,y,z\}}  u_\imath\tilde{S}_{\Psi,k}\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \pm\frac{h}{4\pi}\tilde\Pi_{\mathrm{id},1,2}(\vec u)$ and $\tilde{H}_{\Psi,Z}\propto \sum_{\imath\in\{x,y,z\}} u_\imath\tilde{S}_{\Psi,k}$. The two eigenvalues are
+because $\sum_{\imath\in\{x,y,z\}}  u_{\imath}\tilde{S}_{\Psi,k}\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \pm\frac{h}{4\pi}\tilde\Pi_{\mathrm{id},1,2}(\vec u)$ and $\tilde{H}_{\Psi,Z}\propto \sum_{\imath\in\{x,y,z\}} u_{\imath}\tilde{S}_{\Psi,k}$. The two eigenvalues are
 
 $$
 E_\pm = \pm\frac{hf_{\mathrm{frq},L}}{2},
@@ -271,7 +271,7 @@ The two effects differ because a spin-1/2 carries a permanent magnetic dipole an
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace; home of both couplings |
 | $\tilde{S}_{\Psi}(\vec u) =\frac{h}{4\pi}i\vec u$ | Spin observable along $\vec u$ |

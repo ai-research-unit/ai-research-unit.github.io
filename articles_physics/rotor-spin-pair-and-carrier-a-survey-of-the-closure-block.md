@@ -22,7 +22,7 @@ The second objection is that the two lists of dimensions are a bookkeeping muddl
 
 The third objection is that a match between three algebraic labels and the observed spins is a prediction. It is not, and the mathematics does not make it. The algebra supplies the set $\{0,\tfrac12,1\}$; it does not say which particle carries which spin, and it does not say why the list is realised. The entry states the match, states its boundary, and does not lean on it.
 
-The letters. The algebra is $\mathbb{B}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_\imath^{2}=-e_t$, the central imaginary is $i$ with $i^{2}=-e_t$, and an element is $\tilde Q=Q_te_t+\vec Q$ with $Q_{\imath}$ complex. The star is ${}^{*}$, the natural conjugation is ${}^{\natural}$, and the norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$. The vector part is $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$; the centre is $\mathbb{B}_C=\mathbb{C}e_t$; the sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$. At a unit real axis $\vec u$ the idempotents are $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec u)$, the plane is $\Sigma=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$, and the ideals are $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$. The generator is $A=\tfrac12\vec u$ and the rotor is $\tilde u=\cos\tfrac\theta2\,e_t+\sin\tfrac\theta2\,\vec u$. A representation is $\rho_{\mathrm{rep}}$, a weight is $\eta$, the spin is $s$, and the quadratic element is $C=\sum_{\imath\in\{x,y,z\}}\tilde S_\imath^{2}$ with $\tilde S_\imath=\tfrac12 i\vec e_\imath$.
+The letters. The algebra is $\mathbb{B}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_{\imath}^{2}=-e_t$, the central imaginary is $i$ with $i^{2}=-e_t$, and an element is $\tilde Q=Q_te_t+\vec Q$ with $Q_{\imath}$ complex. The star is ${}^{*}$, the natural conjugation is ${}^{\natural}$, and the norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$. The vector part is $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$; the centre is $\mathbb{B}_C=\mathbb{C}e_t$; the sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$. At a unit real axis $\vec u$ the idempotents are $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec u)$, the plane is $\Sigma=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$, and the ideals are $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$. The generator is $A=\tfrac12\vec u$ and the rotor is $\tilde u=\cos\tfrac\theta2\,e_t+\sin\tfrac\theta2\,\vec u$. A representation is $\rho_{\mathrm{rep}}$, a weight is $\eta$, the spin is $s$, and the quadratic element is $C=\sum_{\imath\in\{x,y,z\}}\tilde S_{\imath}^{2}$ with $\tilde S_{\imath}=\tfrac12 i\vec e_{\imath}$.
 
 Boundaries. The definition, the classification, the criterion, the quadratic element and the four closure rules are the mathematics' *From the Spin to the Carriers and the Closures*; $SU(2)$ and the two derivations of the spins are *The Spin Group via $4\times4$ Real Matrices*, *From the Spin Group to the Spin of a Single Rotor* and *The Clebsch–Gordan Decomposition of the Biquaternion Algebra*; the module theory behind the count is *The Category of Modules in the Biquaternion Algebra*; the Peirce basis and the corners are *The Peirce Decomposition of the Biquaternion Algebra*; the idempotents and their conjugacy are *The Square Roots of One and the Idempotents of the Biquaternion Algebra*; the polar form of the norm that carries the completeness proof is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the averaging argument for compact groups is *Representations of Groups*. The three carriers are read one at a time in the three entries that follow this one, *Introduction to the Spin-Zero Centre Subspace*, *Introduction to the Spin-Half Bispinors Spaces* and *Introduction to the Spin-One Anti-Hermitian Subspace*. The reading of the carrier by a field equation is *The Klein–Gordon Equation in Biquaternionic Form*, *The Dirac Equation in Biquaternionic Form* and *The Proca Equation: Massive Spin 1 in Biquaternionic Form*. No dynamics, no action principle, no mass value and no quantum postulate appear below.
 
@@ -31,7 +31,7 @@ Boundaries. The definition, the classification, the criterion, the quadratic ele
 | mathematical content | source article |
 | --- | --- |
 | $\mathrm{SU}(2)=S^3\to SO(\mathfrak{k})$ with kernel $\{\pm e_t\}$ | [The Spin Group via $4\times4$ Real Matrices](../articles_maths/the-spin-group-via-4x4-real-matrices.html) |
-| the left-regular generators $L_\imath^2=-\mathrm{I}_4$ and $[L_x,L_y]=2L_z$, the Casimir $-3\,\mathrm{I}_4$, the spin $\tfrac12$ from $s(s+1)=\tfrac34$ | [From the Spin Group to the Spin of a Single Rotor](../articles_maths/from-the-spin-group-to-the-spin-of-a-single-rotor.html) |
+| the left-regular generators $L_{\imath}^2=-\mathrm{I}_4$ and $[L_x,L_y]=2L_z$, the Casimir $-3\,\mathrm{I}_4$, the spin $\tfrac12$ from $s(s+1)=\tfrac34$ | [From the Spin Group to the Spin of a Single Rotor](../articles_maths/from-the-spin-group-to-the-spin-of-a-single-rotor.html) |
 | the pair on two sides, the two Casimirs, the total Casimir and the addition rule $\tfrac12\otimes\tfrac12=0\oplus1$ | [The Clebsch–Gordan Decomposition of the Biquaternion Algebra](../articles_maths/the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html) |
 | the Clebsch–Gordan split $\mathbb{B}\cong V_1\oplus V_0$ with the two projectors $\tfrac12(\mathrm{id}\pm\natural)$, the rotation action and its generator, the three actions, the definition of a carrier, the two identities, the criterion of irreducibility by the weight string, the three carriers with their spectra, the label of the slot, the completeness proof, the quadratic element, the four closure rules | [From the Spin to the Carriers and the Closures](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html) |
 | the simple module, the isomorphism $\mathbb{B}\cong\operatorname{End}_\mathbb{C}(S)$ and $\mathbb{B}\cong S\oplus S$, the classification of the modules | [The Category of Modules](../articles_maths/the-category-of-modules-in-the-biquaternion-algebra.html) |
@@ -46,7 +46,7 @@ Boundaries. The definition, the classification, the criterion, the quadratic ele
 
 The definition. A carrier is a nonzero real subspace of $\mathbb{B}$ that is invariant and irreducible under one of the algebra's own actions: left multiplication, or conjugation by an invertible element. The action is part of the carrier.
 
-The route. The three spins come from $SU(2)$ alone, before any subspace is named. One rotor: on the quaternion layer the left-regular generators satisfy $L_\imath^2=-\mathrm{I}_4$ and $[L_x,L_y]=2L_z$, so the Casimir is $-3\,\mathrm{I}_4$, and $s(s+1)=\tfrac34$ gives $s=\tfrac12$. A pair acting on two sides: each factor carries $\tfrac12$, the addition rule gives $\tfrac12\otimes\tfrac12=0\oplus1$, and the total Casimir on the two-sided carrier has the spectrum $\{0,-2,-2,-2\}$. So $0$, $\tfrac12$ and $1$ are fixed first, and the subspaces are read afterwards.
+The route. The three spins come from $SU(2)$ alone, before any subspace is named. One rotor: on the quaternion layer the left-regular generators satisfy $L_{\imath}^2=-\mathrm{I}_4$ and $[L_x,L_y]=2L_z$, so the Casimir is $-3\,\mathrm{I}_4$, and $s(s+1)=\tfrac34$ gives $s=\tfrac12$. A pair acting on two sides: each factor carries $\tfrac12$, the addition rule gives $\tfrac12\otimes\tfrac12=0\oplus1$, and the total Casimir on the two-sided carrier has the spectrum $\{0,-2,-2,-2\}$. So $0$, $\tfrac12$ and $1$ are fixed first, and the subspaces are read afterwards.
 
 The three carriers. The line $\mathbb{R}e_t$, of real dimension $1$, under the trivial action, with weight $0$ and spin $0$. The plane $\Sigma=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u)$, of real dimension $2$, under left multiplication by the circle about $\vec u$, with weights $\pm\tfrac12$ and spin $\tfrac12$. The vector part $\mathfrak{k}$, of real dimension $3$, under the conjugation, with weights $\pm1,0$ and spin $1$. The dimensions are $1,2,3$ and the identity $2s+1=\dim_\mathbb{R}$ holds in the three cases.
 
@@ -56,7 +56,7 @@ The criterion. A weight string that is simple and spaced by one is the string of
 
 The full turn. The operator of a full rotation is $+1$ on the line and on the vector part and $-1$ on the plane, that is $(-1)^{2s}$. On the plane the $-1$ is visible in the plane itself: a full rotation of space is a half turn of the plane.
 
-The quadratic element. $C=\sum_{\imath\in\{x,y,z\}}\tilde S_\imath^{2}=\tfrac34e_t$, and its values in the three modules are $0$, $\tfrac34$ and $2$, which are $s(s+1)$ at $s=0,\tfrac12,1$.
+The quadratic element. $C=\sum_{\imath\in\{x,y,z\}}\tilde S_{\imath}^{2}=\tfrac34e_t$, and its values in the three modules are $0$, $\tfrac34$ and $2$, which are $s(s+1)$ at $s=0,\tfrac12,1$.
 
 The completeness. Three types and no fourth, from the simplicity of $M_2(\mathbb{C})$ for the left action and from the compactness of the group for the conjugation. The two halves of the proof are different arguments and neither is a count of dimensions.
 
@@ -116,18 +116,18 @@ $$
 
 realized by the two projectors $P_0=\tfrac12(\mathrm{id}+\natural)$ and $P_1=\tfrac12(\mathrm{id}-\natural)$, whose images are the centre $\mathbb{R}e_t$ and the vector part $\mathfrak{k}$. Everything that follows is a reading of that line: the slot gives $\tfrac12$, the square gives $0$ and $1$, and the three carriers are the three labels. The mathematics is *The Clebsch–Gordan Decomposition of the Biquaternion Algebra* and *From the Spin to the Carriers and the Closures*.
 
-The rotor. A rotation of the pure part is a real-linear map that preserves the form and has determinant one, and the rotors are the unit quaternions $S^3=\{\tilde q:N(\tilde q)=1\}$. The map $S^3\to SO(\mathfrak{k})$ is onto with kernel $\{\pm e_t\}$, so a rotation has two rotors. Read on the quaternion layer $\mathbb{H}=\mathbb{R}e_t\oplus\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$ as a real space of dimension four, left multiplication by $\vec e_\imath$ is a real operator $L_\imath$, and the three satisfy
+The rotor. A rotation of the pure part is a real-linear map that preserves the form and has determinant one, and the rotors are the unit quaternions $S^3=\{\tilde q:N(\tilde q)=1\}$. The map $S^3\to SO(\mathfrak{k})$ is onto with kernel $\{\pm e_t\}$, so a rotation has two rotors. Read on the quaternion layer $\mathbb{H}=\mathbb{R}e_t\oplus\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$ as a real space of dimension four, left multiplication by $\vec e_{\imath}$ is a real operator $L_{\imath}$, and the three satisfy
 
 $$
-L_\imath^2=-\mathrm{I}_4,\qquad [L_x,L_y]=2L_z\quad\text{and cyclically.}
+L_{\imath}^2=-\mathrm{I}_4,\qquad [L_x,L_y]=2L_z\quad\text{and cyclically.}
 $$
 
 Verified on the layer: the three squares are $-\mathrm{I}_4$ to $0$, and the bracket identity to $0$.
 
-**The slot: one rotor, and the label $\tfrac12$ follows from a sum of squares.** The generators of the action are the halved ones, $A_\imath=\tfrac12\vec e_\imath$, and with them the bracket is standard, $[A_x,A_y]=A_z$. The sum of their squares is a scalar,
+**The slot: one rotor, and the label $\tfrac12$ follows from a sum of squares.** The generators of the action are the halved ones, $A_{\imath}=\tfrac12\vec e_{\imath}$, and with them the bracket is standard, $[A_x,A_y]=A_z$. The sum of their squares is a scalar,
 
 $$
-\sum_{\imath\in\{x,y,z\}}L_\imath^2=-3\,\mathrm{I}_4,\qquad \sum_{\imath\in\{x,y,z\}}A_\imath^2=-\tfrac34\,\mathrm{I}_4,
+\sum_{\imath\in\{x,y,z\}}L_{\imath}^2=-3\,\mathrm{I}_4,\qquad \sum_{\imath\in\{x,y,z\}}A_{\imath}^2=-\tfrac34\,\mathrm{I}_4,
 $$
 
 verified to $0$. On a carrier of spin $s$ the same sum is $-s(s+1)$, so $s(s+1)=\tfrac34$ and the spin is $\tfrac12$. The number is read from one sum of squares on one real space of dimension four.
@@ -135,7 +135,7 @@ verified to $0$. On a carrier of spin $s$ the same sum is $-s(s+1)$, so $s(s+1)=
 The product: two rotors, and the other two labels from the Clebsch–Gordan series. One factor on one side is not an action by automorphisms, since $L_X(YZ)=XYZ$ while $L_X(Y)L_X(Z)=XYXZ$: the two displays carry one copy of $X$ and two. A two-sided product carries one copy on each side, so a pair of rotors acts by $X\mapsto\tilde qX\tilde p$, and the diagonal generator is the difference of the two families,
 
 $$
-A_\imath^{\mathrm{tot}}=A_\imath-A_\imath',\qquad A_\imath'=\tfrac12R_{\vec e_k},
+A_{\imath}^{\mathrm{tot}}=A_{\imath}-A_{\imath}',\qquad A_{\imath}'=\tfrac12R_{\vec e_k},
 $$
 
 which satisfies the standard bracket, because the minus sign of the right bracket cancels the minus sign of the difference. Each factor carries $\tfrac12$, and the addition rule for the labels of $SU(2)$ gives
@@ -148,7 +148,7 @@ The check by the total Casimir. On the two-sided carrier, of real dimension four
 
 The three spins. One rotor gives $\tfrac12$, a pair gives $0$ and $1$, and the three are the whole list. The next question is which subspace of $\mathbb{B}$ of real dimension $2s+1$ carries each of them, and it is answered in *The Carriers*, after the criterion.
 
-The quadratic element. The same three numbers are values of one element of the algebra. With $\tilde S_\imath=\tfrac i2\vec e_\imath$ the quadratic element is $C=\sum_{\imath\in\{x,y,z\}}\tilde S_\imath^{2}=\tfrac34e_t$, verified, and its values on the three carriers are $0$, $\tfrac34$ and $2$, which are $s(s+1)$ at $s=0,\tfrac12,1$. The element is central and the values are those of the composed operator, so the algebra element and the operator are two objects; the mathematics says so in one remark, and the entry does not need more.
+The quadratic element. The same three numbers are values of one element of the algebra. With $\tilde S_{\imath}=\tfrac i2\vec e_{\imath}$ the quadratic element is $C=\sum_{\imath\in\{x,y,z\}}\tilde S_{\imath}^{2}=\tfrac34e_t$, verified, and its values on the three carriers are $0$, $\tfrac34$ and $2$, which are $s(s+1)$ at $s=0,\tfrac12,1$. The element is central and the values are those of the composed operator, so the algebra element and the operator are two objects; the mathematics says so in one remark, and the entry does not need more.
 
 ## The Criterion
 
@@ -378,7 +378,7 @@ Two boundaries hold the match in place. The first is that hadrons are composites
 
 ## Summary
 
-Three spins, and they come from $SU(2)$ before any subspace is named. One rotor: on the quaternion layer the left-regular generators satisfy $L_\imath^2=-\mathrm{I}_4$ and $[L_x,L_y]=2L_z$, so the Casimir is $-3\,\mathrm{I}_4$ and $s(s+1)=\tfrac34$ gives $s=\tfrac12$. A pair on two sides: each factor carries $\tfrac12$, the addition rule gives $0$ or $1$, and the total Casimir confirms it. The subspaces are read afterwards, and not before.
+Three spins, and they come from $SU(2)$ before any subspace is named. One rotor: on the quaternion layer the left-regular generators satisfy $L_{\imath}^2=-\mathrm{I}_4$ and $[L_x,L_y]=2L_z$, so the Casimir is $-3\,\mathrm{I}_4$ and $s(s+1)=\tfrac34$ gives $s=\tfrac12$. A pair on two sides: each factor carries $\tfrac12$, the addition rule gives $0$ or $1$, and the total Casimir confirms it. The subspaces are read afterwards, and not before.
 
 The carrier is a nonzero real subspace of the algebra, invariant and irreducible under one of the algebra's own actions, and the action is part of the carrier. There are three: the line, of real dimension one, under the trivial action, with weight $0$; the plane, of real dimension two, under left multiplication by the circle about its axis, with weights $\pm\tfrac12$; and the vector part, of real dimension three, under the conjugation, with weights $\pm1,0$. The spins are $0,\tfrac12,1$, the identity $2s+1=\dim_\mathbb{R}$ holds in the three cases, and the count is complete because the algebra is a full matrix algebra with one simple module and because the group of invertibles is compact.
 
@@ -393,7 +393,7 @@ The three closures are not a decomposition. The carriers are one algebra read th
 | symbol | meaning |
 | --- | --- |
 | $\mathbb{B}$ | the biquaternion algebra, real dimension $8$, $\cong M_2(\mathbb{C})$ |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$ | the quaternion basis, $\vec e_\imath^{2}=-e_t$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | the quaternion basis, $\vec e_{\imath}^{2}=-e_t$ |
 | $i$ | the central imaginary, $i^{2}=-e_t$ |
 | $\tilde Q=Q_te_t+\vec Q$ | an element, with complex coefficients $Q_{\imath}$ |
 | ${}^{*}$, ${}^{\natural}$ | the star and the natural conjugation |
@@ -408,11 +408,11 @@ The three closures are not a decomposition. The carriers are one algebra read th
 | $\Sigma=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ | the spinor plane, real dimension $2$ |
 | $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | the spinor spaces, real dimension $4$ |
 | $\mathbb{H}$ | the quaternion layer, $\mathbb{R}e_t\oplus\mathfrak{k}$, real dimension $4$ |
-| $L_\imath$, $R_\imath$ | left and right multiplication by $\vec e_\imath$, real $4\times4$ operators |
-| $A_\imath=\tfrac12\vec e_\imath$, $A_\imath'=\tfrac12R_{\vec e_k}$ | the halved generators of the two sides |
+| $L_{\imath}$, $R_{\imath}$ | left and right multiplication by $\vec e_{\imath}$, real $4\times4$ operators |
+| $A_{\imath}=\tfrac12\vec e_{\imath}$, $A_{\imath}'=\tfrac12R_{\vec e_k}$ | the halved generators of the two sides |
 | $A(\vec u)=\tfrac12\vec u$ | the generator along the axis |
-| $\tilde S_\imath=\tfrac12 i\vec e_\imath$ | the Hermitian generator of the coordinate axis |
-| $C=\sum_{\imath\in\{x,y,z\}}\tilde S_\imath^{2}=\tfrac34e_t$ | the quadratic element |
+| $\tilde S_{\imath}=\tfrac12 i\vec e_{\imath}$ | the Hermitian generator of the coordinate axis |
+| $C=\sum_{\imath\in\{x,y,z\}}\tilde S_{\imath}^{2}=\tfrac34e_t$ | the quadratic element |
 | $\rho_{\mathrm{rep}}$ | a representation of an action on a carrier |
 | $\eta$, $s$ | a weight, and the spin, the largest weight |
 

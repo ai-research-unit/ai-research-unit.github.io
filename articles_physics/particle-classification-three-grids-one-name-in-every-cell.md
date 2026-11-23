@@ -4,6 +4,8 @@
 
 **The model.** This article classifies the particles of one model and no other: **the Four Colours Left–Right Model**, the model the corpus adopts, set out in [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The name is stated first because every name below belongs to that model and to nothing else. It is not the Standard Model's particle list, and it is not a general classification of everything the algebra could describe: it is the spectrum of this frame, under this group, with this one declaration.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 **The structure.** The frame is one group with three factors,
 
 $$
@@ -307,9 +309,9 @@ and the six weak generators sit inside the fifteen. So $15+6=21$ is a double cou
 |---|---|---|---|---|
 | $g_{1}\dots g_{8}$ | the eight gluons | $0$ | $0$ | the six off-diagonal cells of the $3\times3$ block and two of its diagonal cells |
 | $\gamma$ | the photon | $0$ | $0$ | a mixture of $W^3_L$, $W^3_R$, $B'$ |
-| $Z$ | the neutral weak boson | $0$ | $91.2$ GeV | a mixture of $W^3_L$, $W^3_R$, $B'$ |
+| $Z$ | the neutral weak boson | $0$ | $1.63\times10^{-25}\ \mathrm{kg}$ | a mixture of $W^3_L$, $W^3_R$, $B'$ |
 | $Z_R$ | the heavy right neutral boson | $0$ | $\propto g_R^2v_R^2$ | the third mixture |
-| $W^{\pm}$ | the charged weak bosons | $\pm1$ | $80.4$ GeV | the off-diagonal cells of the $L$ grid |
+| $W^{\pm}$ | the charged weak bosons | $\pm1$ | $1.43\times10^{-25}\ \mathrm{kg}$ | the off-diagonal cells of the $L$ grid |
 | $W^{\pm}_{R}$ | the charged right bosons | $\pm1$ | $\propto g_R^2v_R^2$ | the off-diagonal cells of the $R$ grid |
 | $X^{r},X^{g},X^{b}$ | the leptoquark gauge bosons | $+\tfrac23$ | $\sqrt2\,M_{W_R}$ | the $t$ column, below the corner |
 | $\bar X^{r},\bar X^{g},\bar X^{b}$ | the antileptoquark gauge bosons | $-\tfrac23$ | $\sqrt2\,M_{W_R}$ | the $t$ row, right of the corner |
@@ -455,7 +457,7 @@ The rule used in this article is one sentence: **a name denotes a particle, so e
 |---|---|
 | positron and electron, mass and charge | equal by the definition of the electron mass |
 | antiproton and proton, $q/m$ | equal to a few parts in $10^{11}$ |
-| $K^0$ and $\bar K^0$, masses | $\lvert m_{K^0}-m_{\bar K^0}\rvert<3.5\times10^{-12}$ eV |
+| $K^0$ and $\bar K^0$, masses | $\lvert m_{K^0}-m_{\bar K^0}\rvert<6.24\times10^{-48}$ kg |
 | antihydrogen $1S$–$2S$ | agrees with hydrogen to $2\times10^{-12}$ |
 | antihydrogen in free fall | acceleration agrees with $g$ to about $20$ per cent |
 | antimatter in bulk | none beyond a few antihelium nuclei; baryon asymmetry $\digamma_{\mathrm{bau}}\approx6.1\times10^{-10}$ |
@@ -466,7 +468,7 @@ The equality of the first two rows is what $CPT$ forces and what the model's exa
 
 **Twenty-four real components, twelve eaten, twelve surviving.** Scalars are bosons and are not gauge bosons, so they do not occupy a cell of any grid: a scalar is a field whose value is a vector in a representation, not a direction in the algebra.
 
-**The Higgs is here, and it is $H$.** The name is stated once because the article would otherwise be unsearchable: the model's Higgs field is the bidoublet, and the observed $125$ GeV scalar is one of the two neutral survivors of its eight real components. Two differences from the Standard Model's Higgs are structural and not editorial, and both are counted below: **the field is a bidoublet $(\mathbf1,\mathbf2,\mathbf2)$, a $2\times2$ matrix of complex fields, and not a doublet**; and it is not alone in the sector, since $\Phi$ breaks the fourth colour and leaves survivors of its own.
+**The Higgs is here, and it is $H$.** The name is stated once because the article would otherwise be unsearchable: the model's Higgs field is the bidoublet, and the observed $2.23\times10^{-25}\ \mathrm{kg}$ scalar is one of the two neutral survivors of its eight real components. Two differences from the Standard Model's Higgs are structural and not editorial, and both are counted below: **the field is a bidoublet $(\mathbf1,\mathbf2,\mathbf2)$, a $2\times2$ matrix of complex fields, and not a doublet**; and it is not alone in the sector, since $\Phi$ breaks the fourth colour and leaves survivors of its own.
 
 | field | full name | representation | real components | role |
 |---|---|---|---|---|
@@ -481,19 +483,19 @@ The equality of the first two rows is what $CPT$ forces and what the model's exa
 | the colour-triplet scalar, three colour states | $S^{\alpha}$ | $6$ | $+\tfrac23$ or $-\tfrac13$, whichever the vacuum leaves | unseen |
 | the charged singlet, from $\Phi$ | $h$ | $2$ | $0$ or $-1$, one of the two | unseen |
 | the charged Higgs, from $H$ | $H^{\pm}$ | $2$ | $\pm1$, one complex field | unseen |
-| the lighter neutral Higgs, from $H$ | $h^{0}$ | $1$ | $0$ | the observed $125$ GeV candidate |
+| the lighter neutral Higgs, from $H$ | $h^{0}$ | $1$ | $0$ | the observed $2.23\times10^{-25}\ \mathrm{kg}$ candidate |
 | the heavier neutral Higgs, from $H$ | $H^{0}$ | $1$ | $0$ | unseen |
 
 $6+2+2+1+1=12$. The two neutral states mix, so $h^0$ and $H^0$ are interaction eigenstates and the mass eigenstates are their combinations.
 
-**Read the four columns of that table as four different objects, because that is where the counting goes wrong.** $H^{\pm}$ is the charged Higgs, one complex field and two real components. $h^0$ and $H^0$ are the two neutral Higgses, one real component each, and the $125$ GeV boson is the lighter mass eigenstate of their mixture. $h$ is not a Higgs at all: it comes from $\Phi$'s lepton doublet, it is $\mathrm{SU}(2)_L$ neutral, and it is the model's own state with no Standard Model counterpart. **Four of the twelve survivors are Higgs and eight are not**, and a sentence that calls all twelve "the Higgs sector" is the commonest error in this family.
+**Read the four columns of that table as four different objects, because that is where the counting goes wrong.** $H^{\pm}$ is the charged Higgs, one complex field and two real components. $h^0$ and $H^0$ are the two neutral Higgses, one real component each, and the $2.23\times10^{-25}\ \mathrm{kg}$ boson is the lighter mass eigenstate of their mixture. $h$ is not a Higgs at all: it comes from $\Phi$'s lepton doublet, it is $\mathrm{SU}(2)_L$ neutral, and it is the model's own state with no Standard Model counterpart. **Four of the twelve survivors are Higgs and eight are not**, and a sentence that calls all twelve "the Higgs sector" is the commonest error in this family.
 
 **The twelve that are eaten, and the names they do not get.** Six components of $\Phi$ become the longitudinal modes of the six leptoquarks, two become those of $W^{\pm}_R$, and four components of $H$ become those of $W^{\pm}$, $Z$ and $Z_R$. **An eaten component has no name of its own: it is the third polarisation of the boson that ate it.** So the count of named scalars is twelve, and the other twelve are not lost but transferred to the gauge grid.
 
 **Two things the tables do not say, and one the corpus retracted.** Both belong here because this article lists sectors and a list invites the reading that each sector is settled.
 
 - **The frame predicts no mass relation, because it fixes no scalar multiplet.** What is structural is a *count*: one bidoublet puts the down-type quarks and the charged leptons in one Yukawa term, so one matrix serves two sectors and the spectra come out **proportional**. That sentence has no scale in it and no coupling in it. The numerical equalities people write from it — $m_d=m_e$, $m_u=m_{\xi_{\mathrm{neu}}}$ — are the **Pati–Salam literature's published condition, not this model's prediction**, and the corpus quarantines them in [The Coupling Sector of the Four Colours Left–Right Model: A Retired Working Record](../articles_internal/the-coupling-sector-of-the-four-colours-model.html), whose ledger note says so in its first line. Of the four per-generation ratios the literature then checks, two hold and two fail by orders of magnitude ($m_d/m_e=1$ against a measured $9.1$, $m_u/m_{\xi_{\mathrm{neu}}}=1$ against $\sim4\times10^{7}$). **A model that claims no number misses nothing and proves nothing**; that is the trade, and it is the corpus's own verdict on its own coupling sector.
-- **Two neutral states is structural; their mixing angle is not.** The bidoublet's eight real components leave two neutral directions after the breaking, and that count is arithmetic. But the angle that rotates them into mass eigenstates is an entry of the potential, so it is scale-bearing and not fixed. **The $125$ GeV state is therefore a mixture of two directions, and *which* mixture is not something the frame decides.**
+- **Two neutral states is structural; their mixing angle is not.** The bidoublet's eight real components leave two neutral directions after the breaking, and that count is arithmetic. But the angle that rotates them into mass eigenstates is an entry of the potential, so it is scale-bearing and not fixed. **The $2.23\times10^{-25}\ \mathrm{kg}$ state is therefore a mixture of two directions, and *which* mixture is not something the frame decides.**
 
 **The word to avoid is "the Higgs coupling".** This model leaves all three gauge couplings symbolic and predicts none of them; it fixes no scalar multiplet; and the observed state is a mass eigenstate of an unfixed mixing. **So the corpus does not have a coupling claim to patch — it has no coupling claims at all in this sector**, and an article that says "the minimal sector gives $m_d=m_e$" has imported the literature's claim into a model whose ledger refuses it.
 
@@ -509,7 +511,7 @@ $6+2+2+1+1=12$. The two neutral states mix, so $h^0$ and $H^0$ are interaction e
 | "mass" | the quaternionic norm, the finite mass $m$, an eigenvalue, and a scale | name which of the four |
 | "$X$" | six particles in two charge classes | $X^{\alpha}$ and $\bar X^{\alpha}$ |
 | "$B$" | the $(t,t)$ cell against the hypercharge field | $B'$ or $C$ for the cell, $B$ for hypercharge |
-| "the Higgs" | the field $H$ against its $125$ GeV mass eigenstate against the whole scalar sector | *the field $H$*, *the $125$ GeV state*, *the scalar sector* |
+| "the Higgs" | the field $H$ against its $2.23\times10^{-25}\ \mathrm{kg}$ mass eigenstate against the whole scalar sector | *the field $H$*, *the $2.23\times10^{-25}\ \mathrm{kg}$ state*, *the scalar sector* |
 | "the sixteen" | the named particle set against the representation $S$ against the Weyl-field count | *the sixteen rows*, *the representation $S$*, *thirty-two Weyl fields* |
 
 **The mass collision is the worst.** The quaternionic norm $\mathcal N=-m^2c^2$ is a quartic invariant a boost preserves. The finite mass $m$ is a parameter of the finite Dirac operator. A mass eigenvalue is what a mass matrix returns. A mass scale $M_C$, $M_R$, $M_W$ is where a mass is generated. $M_X=\sqrt2\,M_{W_R}$ relates two of the fourth kind. **The equality $m_d=m_e$ is not of those four kinds at all: it is the Pati–Salam literature's per-generation condition, transcribed and flagged, and this model predicts no such relation because it fixes no scalar multiplet.** A sentence that says "the mass is $M_C$" mixes the fourth kind with the third.
@@ -592,7 +594,7 @@ $1+3+3=7$, and the $3+3$ is the two directions of the three mixed planes. **So t
 
 **The antiparticles.** Charge conjugation is $-e_y\bar Qe_y$. It is inner on $\mathrm{SU}(2)$ and outer on $\mathrm{SU}(4)$, so it keeps the chirality block and reflects the quartet: $(\mathbf4,\mathbf2,\mathbf1)\mapsto(\bar{\mathbf4},\mathbf2,\mathbf1)$. The sixteen fields therefore already contain their own antiparticles, as conjugate modes; what the map supplies is the antiparticle charges, $Q\to-Q$, $B-L\to-(B-L)$, colour $\to\bar 3$. Sixteen fields per generation, thirty-two states, forty-eight fields and ninety-six states in three. The spectrum is closed under $CP$ with $L\leftrightarrow R$ and not under $C$, and that closure is the structural statement of left-right symmetry and the reason the bidoublet and the Dirac neutrino are not options.
 
-**The scalars.** Not on the grids: twenty-four real components, twelve eaten into longitudinal modes, twelve named survivors. **The Higgs is among them and is $H$, the bidoublet $(\mathbf1,\mathbf2,\mathbf2)$**: its four surviving real components are the charged Higgs $H^{\pm}$ and the two neutral states $h^0$ and $H^0$, whose lighter mass eigenstate is the observed $125$ GeV boson. The other eight survivors come from $\Phi$ and are not Higgs.
+**The scalars.** Not on the grids: twenty-four real components, twelve eaten into longitudinal modes, twelve named survivors. **The Higgs is among them and is $H$, the bidoublet $(\mathbf1,\mathbf2,\mathbf2)$**: its four surviving real components are the charged Higgs $H^{\pm}$ and the two neutral states $h^0$ and $H^0$, whose lighter mass eigenstate is the observed $2.23\times10^{-25}\ \mathrm{kg}$ boson. The other eight survivors come from $\Phi$ and are not Higgs.
 
 ## Summary of Notation
 

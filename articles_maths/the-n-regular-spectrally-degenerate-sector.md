@@ -87,7 +87,7 @@ This split is the spectral refinement of the sector: the scalar and Jordan strat
 **Properties.** These elements are central and semisimple, with minimal polynomial $X-Q_t$, not $(X-Q_t)^2$: the eigenvalue is repeated but the element is diagonalisable. The centraliser is all of $\mathbb{B}$, and every idempotent commutes with $\tilde Q$. The spectral idempotent is $e_t$ itself, and it is unique; what is **not unique** is its refinement: every orthogonal pair $\tilde\Pi_{\mathrm{id},1+}\tilde\Pi_{\mathrm{id},2}=e_t$ gives
 
 $$
-\tilde Q=Q_t\tilde\Pi_{\mathrm{id},1+Q}_t\tilde\Pi_{\mathrm{id},2}
+\tilde Q=Q_t\tilde\Pi_{\mathrm{id},1+Q}{}_t\tilde\Pi_{\mathrm{id},2}
 $$
 
 with the same coefficient on both terms, and the pair is not determined by $\tilde Q$. The canonical Peirce decomposition attached to $\tilde Q$ has the **one-term** form $\tilde Q=Q_te_t$; every two-term refinement is non-unique.
@@ -146,7 +146,7 @@ f\tilde Qe=0,\qquad
 f\tilde Qf=Q_tf,
 $$
 
-and the Peirce matrix is $Q_tI$ in every Peirce basis. The spectral decomposition has one term, $\tilde Q=Q_te_t$; a two-term refinement $Q_t\tilde\Pi_{\mathrm{id},1+Q}_t\tilde\Pi_{\mathrm{id},2}$ exists for every orthogonal pair summing to $e_t$ and is not determined by $\tilde Q$. The Peirce data therefore see a repeated eigenvalue as a repeated diagonal entry, and the freedom of the refinement as the freedom of the Peirce pair.
+and the Peirce matrix is $Q_tI$ in every Peirce basis. The spectral decomposition has one term, $\tilde Q=Q_te_t$; a two-term refinement $Q_t\tilde\Pi_{\mathrm{id},1+Q}{}_t\tilde\Pi_{\mathrm{id},2}$ exists for every orthogonal pair summing to $e_t$ and is not determined by $\tilde Q$. The Peirce data therefore see a repeated eigenvalue as a repeated diagonal entry, and the freedom of the refinement as the freedom of the Peirce pair.
 
 ### Peirce data on the Jordan part
 

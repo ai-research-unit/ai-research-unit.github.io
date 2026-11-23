@@ -29,8 +29,7 @@ Three boundaries are observed. No **measure** and no representation of a groupoi
 
 **Definition.** A **groupoid** is a category $\mathcal{G}$ in which every morphism is an isomorphism.
 The objects of $\mathcal{G}$ are its **points**, the morphisms are its **arrows**, and the composition
-is defined for the composable pairs; for each arrow $f : A \to B$ there is a unique arrow $f^{-1} : B
-\to A$ with $f \circ f^{-1} = \mathrm{id}_B$ and $f^{-1} \circ f = \mathrm{id}_A$. A groupoid with one
+is defined for the composable pairs; for each arrow $f : A \to B$ there is a unique arrow $f^{-1} : B \to A$ with $f \circ f^{-1} = \mathrm{id}_B$ and $f^{-1} \circ f = \mathrm{id}_A$. A groupoid with one
 object is a **group**, the arrows being its elements.
 
 **Theorem.** In a groupoid the inversion is an involution on the arrows, fixes the identities, and
@@ -47,8 +46,7 @@ the Dagger Functor*; the groupoid with inversion is a dagger category in which e
 unitary.
 
 **Proof.** The inverse is unique in a category, so $(f^{-1})^{-1} = f$ because $f$ is an inverse of
-$f^{-1}$; the identity is its own inverse; and $f^{-1} \circ g^{-1}$ is a two-sided inverse of $g \circ
-f$ because $(g \circ f) \circ (f^{-1} \circ g^{-1}) = \mathrm{id}$ and the composite in the other order
+$f^{-1}$; the identity is its own inverse; and $f^{-1} \circ g^{-1}$ is a two-sided inverse of $g \circ f$ because $(g \circ f) \circ (f^{-1} \circ g^{-1}) = \mathrm{id}$ and the composite in the other order
 is $\mathrm{id}$. The exchange of hom-sets is the definition of the target and source of $f^{-1}$.
 
 **Example.** A group $G$ with one object is a groupoid, and the inversion is the group inversion, an
@@ -64,12 +62,10 @@ fixed elements of the inversion are exactly the self-inverse arrows, and they in
 identities.
 
 **Proof.** An orbit $\{f, f^{-1}\}$ is a singleton exactly when $f = f^{-1}$; then $A = B$ because the
-sources and targets must agree, and $f \circ f = f \circ f^{-1} = \mathrm{id}_A$, so $f^2 =
-\mathrm{id}$. Conversely $f^2 = \mathrm{id}$ with $f$ an endomorphism gives $f = f^{-1}$ by uniqueness
+sources and targets must agree, and $f \circ f = f \circ f^{-1} = \mathrm{id}_A$, so $f^2 = \mathrm{id}$. Conversely $f^2 = \mathrm{id}$ with $f$ an endomorphism gives $f = f^{-1}$ by uniqueness
 of inverses.
 
-**Corollary.** For a finite group $G$, the number of orbits of the inversion is $(|G| + \#\{g : g^2 =
-e\})/2$, where the second term is the number of elements of order at most two.
+**Corollary.** For a finite group $G$, the number of orbits of the inversion is $(|G| + \#\{g : g^2 = e\})/2$, where the second term is the number of elements of order at most two.
 
 **Proof.** The orbits are the fixed elements, one each, and the remaining $|G| - \#\{g : g^2 = e\}$
 elements, paired.
@@ -118,8 +114,7 @@ A groupoid is a category with every morphism invertible, and its inversion is th
 on the arrows: it is of order two, fixes the identities, exchanges the hom-sets and reverses the
 composition, so it is an anti-automorphism and the dagger of the groupoid. Its orbits are the pairs
 $\{f, f^{-1}\}$ and the self-inverse arrows, and its fixed elements are exactly the arrows of order at
-most two, which include the identities. For a finite group the number of orbits is $(|G| + \#\{g : g^2
-= e\})/2$.
+most two, which include the identities. For a finite group the number of orbits is $(|G| + \#\{g : g^2 = e\})/2$.
 
 In the non-abelian case the inversion is not an automorphism of the group, and the fixed elements are
 not closed under multiplication, as $S_3$ shows; the involution fixes the elements of order at most two

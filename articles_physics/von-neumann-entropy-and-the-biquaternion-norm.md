@@ -37,7 +37,7 @@ The article proceeds as follows. The state, its purity, and the biquaternion nor
 A state of the informational sector is an element of the Hermitian subspace
 
 $$
-\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\bigl(e_t + i\,\vec s_{\Psi}\bigr), \qquad \vec s_{\Psi} = r_1\vec e_x + r_2\vec e_y + r_3\vec e_z, \quad r_\imath\in\mathbb{R},
+\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\bigl(e_t + i\,\vec s_{\Psi}\bigr), \qquad \vec s_{\Psi} = r_1\vec e_x + r_2\vec e_y + r_3\vec e_z, \quad r_{\imath}\in\mathbb{R},
 $$
 
 normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$. Its matrix image is
@@ -50,7 +50,7 @@ whose eigenvalues are $\tfrac12(1\pm|\vec s_{\Psi}|)$. Positivity, $M(\tilde{Ϛ}
 
 ### Purity and the deviation from idempotency
 
-Squaring the state gives, using $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmathk}\vec e_\imath$ and the vanishing of the cross terms for the pure scalar part,
+Squaring the state gives, using $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmath k}\vec e_{\imath}$ and the vanishing of the cross terms for the pure scalar part,
 
 $$
 \tilde{Ϛ}_{\Psi}^2 = \tfrac{1}{4}\bigl(e_t + i\vec s_{\Psi}\bigr)^2
@@ -271,7 +271,7 @@ The description is the standard qubit entropy, and it predicts nothing new. What
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states and observables) |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\imath^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi})$ | State with Bloch vector $\vec s_{\Psi}$, $|\vec s_{\Psi}|\le1$ |
 | $\tilde\Pi_{\mathrm{id},1,2}(\vec u_s) = \tfrac12(e_t\pm i\vec u_s)$ | Spectral idempotents of the state |

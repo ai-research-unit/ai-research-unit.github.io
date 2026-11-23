@@ -4,6 +4,8 @@
 
 **Bhabha scattering** is electron–positron scattering, $e^+e^-\to e^+e^-$, in quantum electrodynamics. Homi Bhabha derived it in 1936, in *The scattering of positrons by electrons with exchange on Dirac's theory of the positron*. At the tree level it receives two contributions with a **relative sign difference**: the **$t$-channel scattering** diagram, in which the electron and positron exchange a photon, and the **$s$-channel annihilation** diagram, in which the pair annihilates into a photon that recreates the pair. The two diagrams interfere, and the interference term is negative. By **crossing symmetry**, the Bhabha amplitude is the Møller amplitude $e^-e^-\to e^-e^-$ with one particle line crossed from the initial to the final state, and the two describe the same analytic object.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 Bhabha scattering is the workhorse of electron–positron colliders: because its small-angle cross section is large, exactly calculable and dominated by the $1/t^2$ photon propagator, it is used as the **luminosity monitor** of the machine. This is the counterpart of the companion article *Møller Scattering in Biquaternionic Form*, and the biquaternion interpretation is largely shared: the amplitude is a product of material-sector currents joined by the framework's photon propagator, and the two structural features the framework owns are the **fermion sign** — here appearing as the relative sign between exchange and annihilation — and **crossing symmetry**, which is the framework's charge conjugation $\mathcal C$, the real structure that pairs an element with its conjugate.
 
 The article is organised as follows. The next section sets up the kinematics, the frame basis operators and the equations of the external states, then the two amplitudes with their relative sign. The section after that gives the spin sum, the traces and the cross section with its small-angle behaviour. Then comes the crossing relation to Møller, with the exact check, followed by the biquaternion interpretation, including the annihilation channel's relation to charge conjugation and to bound-state physics, and then the open questions. A closing dictionary carries the five basis operators into the display of the older literature; nothing before it needs that display. The summary, the notation table and the literature close the article.
@@ -49,7 +51,7 @@ The four **frame basis operators** that the current uses act by
 
 $$
 \Gamma_t: X\mapsto iX\vec e_x,\qquad
-\Gamma_\imath: X\mapsto i\vec e_\imath X\vec e_y\quad(k=1,2,3),
+\Gamma_{\imath}: X\mapsto i\vec e_{\imath} X\vec e_y\quad(k=1,2,3),
 $$
 
 with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$, and the fifth, the basis operator that carries the split, acts by
@@ -62,7 +64,7 @@ Each frame basis operator carries exactly one factor of the central $i$, so a sq
 
 $$
 \Gamma_t^2=1,\qquad
-\Gamma_\imath^2=-1,\qquad
+\Gamma_{\imath}^2=-1,\qquad
 \Gamma_{\imath}\Gamma_{\jmath}+\Gamma_{\jmath}\Gamma_{\imath}=0\quad(\imath\neq\jmath),
 $$
 
@@ -71,7 +73,7 @@ the $1$ being the identity action and the $0$ the zero action. The anticommutati
 The **momentum basis operator** of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is the sum of the four frame basis operators with the components as coefficients,
 
 $$
-P(p): X\mapsto p_0\,iX\vec e_x-\sum_{\imath\in\{x,y,z\}} p_\imath\,i\vec e_\imath X\vec e_y,
+P(p): X\mapsto p_0\,iX\vec e_x-\sum_{\imath\in\{x,y,z\}} p_{\imath}\,i\vec e_{\imath} X\vec e_y,
 $$
 
 the minus signs on the three spatial terms being those of the metric. Its square is a multiple of the identity action,
@@ -125,7 +127,7 @@ The **current** of a line that enters with momentum $p$ and leaves with momentum
 $$
 J_t(a,b):=\mathrm{Sc}\bigl(a^{*}b\bigr),
 \qquad
-J_\imath(a,b):=\mathrm{Sc}\bigl(a^{*}\,\vec e_\imath\,b\,\vec e_z\bigr)\quad(k=1,2,3),
+J_{\imath}(a,b):=\mathrm{Sc}\bigl(a^{*}\,\vec e_{\imath}\,b\,\vec e_z\bigr)\quad(k=1,2,3),
 $$
 
 with $a$ the element of the outgoing line and $b$ that of the incoming one. The time component is the Hermitian form of *Product and Form Conventions* read with its two arguments exchanged, $J_t(a,b)=\langle b,a\rangle_{*}$. The four numbers are the frame-basis operator bilinears reduced to the algebra, a derived form: the central $i$ of the basis operator cancels the central $i$ of the adjoint, and the product $\vec e_y\vec e_x=-\vec e_z$ turns the right multiplier of a spatial basis operator into $\vec e_z$. Every one of the four is a single complex number, and the brackets below are ordinary products.
@@ -300,7 +302,7 @@ The framework supplies the two currents, the photon propagator, the external Foc
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\imath^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_{\imath}^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 This section fixes the dictionary that the traces above reproduce, and nothing here is needed outside it.
 
@@ -322,13 +324,13 @@ $$
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3 .
 $$
 
-These are the body's own basis operators — $\Gamma_t=\gamma_0$, $\Gamma_\imath=\gamma_\imath$ for $k=1,2,3$, and $\mathsf{V}_{\mathrm{vol}}=\gamma_5$ — so nothing in the body needs the gammas: the reading is a bookkeeping device for the traces, and $\mathrm{tr}$ is the $4\times4$ matrix trace of this reading, the same number as the body's trace $\operatorname{Tr}$ of the action on $\mathbb{B}$.
+These are the body's own basis operators — $\Gamma_t=\gamma_0$, $\Gamma_{\imath}=\gamma_{\imath}$ for $k=1,2,3$, and $\mathsf{V}_{\mathrm{vol}}=\gamma_5$ — so nothing in the body needs the gammas: the reading is a bookkeeping device for the traces, and $\mathrm{tr}$ is the $4\times4$ matrix trace of this reading, the same number as the body's trace $\operatorname{Tr}$ of the action on $\mathbb{B}$.
 
 **The trace identities.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ and $\epsilon_{0123}=+1$,
 
 $$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
-(\gamma_\imath)^2=-I_4,\qquad
+(\gamma_{\imath})^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_{\imath},\gamma_5\}=0,
 $$
@@ -378,10 +380,10 @@ In the biquaternion framework the amplitude is the contraction of material-secto
 | $\theta$ | Angle between the incoming and the outgoing positron |
 | $d\sigma/d(\cos\theta)$ | Leading-order spin-averaged cross section |
 | $\alpha=e^2/4\pi$ | Fine-structure constant |
-| $\Gamma_t: X\mapsto iX\vec e_x$, $\Gamma_\imath: X\mapsto i\vec e_\imath X\vec e_y$ | Four frame basis operators |
+| $\Gamma_t: X\mapsto iX\vec e_x$, $\Gamma_{\imath}: X\mapsto i\vec e_{\imath} X\vec e_y$ | Four frame basis operators |
 | $\mathsf{V}_{\mathrm{vol}}: X\mapsto -iX\vec e_z$ | Volume basis operator of the frame |
-| $P(p): X\mapsto p_0iX\vec e_x-\sum_{\imath\in\{x,y,z\}} p_\imathi\vec e_\imath X\vec e_y$ | Momentum basis operator; $P(p)^2=p_0^2-\vec p^2$ |
-| $J_{\imath}(a,b)$ | Current of a line, $J_t=\mathrm{Sc}(a^*b)$, $J_\imath=\mathrm{Sc}(a^*\vec e_\imath b\vec e_z)$ |
+| $P(p): X\mapsto p_0iX\vec e_x-\sum_{\imath\in\{x,y,z\}} p_{\imath} i\vec e_{\imath} X\vec e_y$ | Momentum basis operator; $P(p)^2=p_0^2-\vec p^2$ |
+| $J_{\imath}(a,b)$ | Current of a line, $J_t=\mathrm{Sc}(a^*b)$, $J_{\imath}=\mathrm{Sc}(a^*\vec e_{\imath} b\vec e_z)$ |
 | $J(a,b)\cdot J(c,d)$ | Contraction with the sign vector, $\sum_{\imath}\varepsilon_{\imath} J_{\imath}(a,b)J_{\imath}(c,d)$ |
 | $\tilde u(p)$, $\tilde v(k)$ | Electron and positron state elements |
 | $\mathcal M_t,\mathcal M_s$ | Exchange and annihilation amplitudes |

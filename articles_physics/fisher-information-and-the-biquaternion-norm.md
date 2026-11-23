@@ -50,7 +50,7 @@ and its biquaternion norm is
 
 $$
 \langle\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2}\rangle_{\natural}
-= \sum_{\imath\in\{x,y,z\}} \left(\frac{i\left(r_\imath-s_\imath\right)}{2}\right)^2 e_t
+= \sum_{\imath\in\{x,y,z\}} \left(\frac{i\left(r_{\imath}-s_{\imath}\right)}{2}\right)^2 e_t
 = -\frac{1}{4}\left|\vec s_{\Psi}-\vec s\right|^2 e_t .
 $$
 

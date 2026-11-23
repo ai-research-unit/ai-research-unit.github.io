@@ -6,13 +6,13 @@ The split-biquaternion algebra $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\m
 
 This article compares these invariants. Spectral regularity forces $\Delta\neq0$, but $\Delta\neq0$ does not force spectral regularity. Hence the sector "reduced-norm-degenerate, spectrally regular" is empty, while its opposite is not: a vanishing reduced norm forces a whole half to vanish, and a vanishing half is scalar, hence spectrally degenerate. The biquaternion algebra differs: its norm is a sum, not a product, and its Hermitian idempotents are norm-degenerate with simple spectra.
 
-**Conventions.** The split complex unit is $j$, with $j^2=1$, and the idempotents are $\tilde\Pi_{\mathrm{id},1,2}=\tfrac12(1\pm j)$. An element is $\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}_-\tilde\Pi_{\mathrm{id},2}$ with $Q_\pm=t_\pm+\vec q_\pm$, $t_\pm\in\mathbb{R}$, $\vec q_\pm=\sum_k q_{\pm k}\vec e_k$, and $|\vec q_\pm|^2=\sum_k q_{\pm k}^2$. The quaternion norm is $|Q_\pm|^2=t_\pm^2+|\vec q_\pm|^2$. The split-biquaternion norm is $\langle\tilde Q\rangle_{\natural}=|Q_+|^2\tilde\Pi_{\mathrm{id},1+}|Q_-|^2\tilde\Pi_{\mathrm{id},2}=\sum_\mu Q_\mu^2$, where $Q_\mu$ are the coefficients in the basis $e_\mu$. The reduced norm is $\Delta=|Q_+|^2|Q_-|^2=\langle\tilde Q\rangle_{\natural}\langle\tilde Q\rangle_{\natural}^{*}$. The spectral classification is *[Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html)*; the sectors are *[The Three Sectors of the Split-Biquaternion Algebra](the-three-sectors-of-the-split-biquaternion-algebra.html)*; the algebra and norm are *[Split-Biquaternion Algebra](split-biquaternion-algebra.html)* and *[Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html)*.
+**Conventions.** The split complex unit is $j$, with $j^2=1$, and the idempotents are $\tilde\Pi_{\mathrm{id},1,2}=\tfrac12(1\pm j)$. An element is $\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}{}_-\tilde\Pi_{\mathrm{id},2}$ with $Q_\pm=t_\pm+\vec q_\pm$, $t_\pm\in\mathbb{R}$, $\vec q_\pm=\sum_k q_{\pm k}\vec e_k$, and $|\vec q_\pm|^2=\sum_k q_{\pm k}^2$. The quaternion norm is $|Q_\pm|^2=t_\pm^2+|\vec q_\pm|^2$. The split-biquaternion norm is $\langle\tilde Q\rangle_{\natural}=|Q_+|^2\tilde\Pi_{\mathrm{id},1+}|Q_-|^2\tilde\Pi_{\mathrm{id},2}=\sum_\mu Q_\mu^2$, where $Q_\mu$ are the coefficients in the basis $e_\mu$. The reduced norm is $\Delta=|Q_+|^2|Q_-|^2=\langle\tilde Q\rangle_{\natural}\langle\tilde Q\rangle_{\natural}^{*}$. The spectral classification is *[Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html)*; the sectors are *[The Three Sectors of the Split-Biquaternion Algebra](the-three-sectors-of-the-split-biquaternion-algebra.html)*; the algebra and norm are *[Split-Biquaternion Algebra](split-biquaternion-algebra.html)* and *[Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html)*.
 
 ## The Reduced Norm and the Component Invariants
 
 ### Definitions and Identities
 
-**Lemma (the norm in the idempotent basis).** For $\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}_-\tilde\Pi_{\mathrm{id},2}$,
+**Lemma (the norm in the idempotent basis).** For $\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}{}_-\tilde\Pi_{\mathrm{id},2}$,
 
 $$
 \langle\tilde Q\rangle_{\natural}=|Q_+|^2\tilde\Pi_{\mathrm{id},1+}|Q_-|^2\tilde\Pi_{\mathrm{id},2}
@@ -200,7 +200,7 @@ The biquaternion algebra has a sum, not a product. Its Hermitian idempotents $\t
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ | Split-biquaternion algebra |
-| $\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}_-\tilde\Pi_{\mathrm{id},2}$ | Idempotent decomposition |
+| $\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}{}_-\tilde\Pi_{\mathrm{id},2}$ | Idempotent decomposition |
 | $Q_\pm=t_\pm+\vec q_\pm$ | A half |
 | $\lvert Q_\pm\rvert^2=t_\pm^2+\lvert\vec q_\pm\rvert^2$ | Quaternion norm of a half |
 | $\lvert\vec q_\pm\rvert^2$ | Component invariant, the squared vector part |

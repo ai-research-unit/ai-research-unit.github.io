@@ -40,7 +40,7 @@ $$
 Because $D(p)$ is Lorentz-invariant, it depends only on $s^{2}(p)=p_0^{2}-p_1^{2}-p_2^{2}-p_3^{2}$ and factors as
 
 $$
-\boxed{\;D\bigl(s^{2}\bigr) = \kappa\,\bigl(s^{2}-m_1^{2}\bigr)\bigl(s^{2}-m_2^{2}\bigr)\cdots\bigl(s^{2}-m_\imath^{2}\bigr)\;},
+\boxed{\;D\bigl(s^{2}\bigr) = \kappa\,\bigl(s^{2}-m_1^{2}\bigr)\bigl(s^{2}-m_2^{2}\bigr)\cdots\bigl(s^{2}-m_{\imath}^{2}\bigr)\;},
 $$
 
 so the masses $m_i$ are the roots: the representation carries a **discrete set of masses**, one for each distinct positive root of the determinant, and the field is a **multi-mass** field. This is the sense in which mass can be "quantised" by the representation, and it is the content the bivector-space article *Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form* develops in full.

@@ -7,9 +7,9 @@ This article writes the topologically massive gauge field as one of the two elim
 The equation. The parent's equation is the pair of linear relations obtained by varying the two fields,
 
 $$
-\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_\imath\,\check c_{\imath\jmathk}\tilde\nabla_{\Phi,\jmath}G_\imath=\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_\imath\,\check c_{\imath\jmathk}\tilde\nabla_{\Phi,\jmath}H_\imath ,
+\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_{\imath}\,\check c_{\imath\jmath k}\tilde\nabla_{\Phi,\jmath}G_{\imath}=\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_{\imath}\,\check c_{\imath\jmath k}\tilde\nabla_{\Phi,\jmath}H_{\imath} ,
 \qquad
-(m-a)G_\imath=\sum_{\imath,\jmath}\epsilon_{\imath}\epsilon_{\jmath}\bigl(\tilde\nabla_{\Phi,\imath}H_{\jmath}\bigr)^{*}i\check c_{\jmath\imathk},
+(m-a)G_{\imath}=\sum_{\imath,\jmath}\epsilon_{\imath}\epsilon_{\jmath}\bigl(\tilde\nabla_{\Phi,\imath}H_{\jmath}\bigr)^{*}i\check c_{\jmath\imath k},
 $$
 
 one linear in $H$ and one linear in $G$. Eliminating $H$ leaves the Dirac equation; eliminating $G$ leaves the topologically massive one.
@@ -19,7 +19,7 @@ Three things are established.
 *First, the action.* With $G_{\imath}$ a complex four-vector (the s-vector), $H_{\imath}$ its dual potential and $\check c$ the corpus's structure-constant array,
 
 $$
-S_{GH}=\int d^4r\;\Bigl[\bigl(G_{\jmath}+\tfrac12H_{\jmath}\bigr)^{*}i\check c_{\jmath\imathk}\tilde\nabla_{\Phi,\imath}H_\imath-\bigl(\tilde\nabla_{\Phi,\imath}H_{\jmath}\bigr)^{*}i\check c_{\jmath\imathk}\bigl(G_\imath+\tfrac12H_\imath\bigr)+\tfrac{m-a}{2}\bigl(G\cdot G+G^{*}\cdot G^{*}\bigr)\Bigr],
+S_{GH}=\int d^4r\;\Bigl[\bigl(G_{\jmath}+\tfrac12H_{\jmath}\bigr)^{*}i\check c_{\jmath\imath k}\tilde\nabla_{\Phi,\imath}H_{\imath}-\bigl(\tilde\nabla_{\Phi,\imath}H_{\jmath}\bigr)^{*}i\check c_{\jmath\imath k}\bigl(G_{\imath}+\tfrac12H_{\imath}\bigr)+\tfrac{m-a}{2}\bigl(G\cdot G+G^{*}\cdot G^{*}\bigr)\Bigr],
 $$
 
 the stationarity conditions are the two relations above, and each elimination gives one of the two theories.
@@ -27,7 +27,7 @@ the stationarity conditions are the two relations above, and each elimination gi
 *Second, the mass is topological.* In three dimensions the reduced action is Maxwell plus a Chern–Simons term,
 
 $$
-\mathcal{L}_G=-\frac{1}{4m}\sum_{\imath,k}\epsilon_{\imath}\epsilon_\imath F_{\imathk}F_{\imathk}+\frac14\sum_{\imath,\jmath,k}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_\imath\,\check\varepsilon_{\jmath\imathk}B^{*}_{\jmath} F_{\imathk}+\text{(scalar sector)} ,
+\mathcal{L}_G=-\frac{1}{4m}\sum_{\imath,k}\epsilon_{\imath}\epsilon_{\imath} F_{\imath k}F_{\imath k}+\frac14\sum_{\imath,\jmath,k}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_{\imath}\,\check\varepsilon_{\jmath\imath k}B^{*}_{\jmath} F_{\imath k}+\text{(scalar sector)} ,
 $$
 
 whose mass term has one derivative, one power of $m$ and one Levi-Civita symbol. A mass of that shape is not a mass added to the action: it is a term whose gauge variation is a total derivative, so the equations are invariant while the Lagrangian is not.
@@ -38,9 +38,9 @@ What is not new. The parent action, the four reductions and the topologically ma
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\imath^{2}=-e_t$; $\mathrm{Sc}$ and $\langle\cdot\rangle_\natural$ are the scalar part and the Minkowski square.
+The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $\mathrm{Sc}$ and $\langle\cdot\rangle_\natural$ are the scalar part and the Minkowski square.
 
-The structure constants. $\check c_{\jmath\imathk}$ is the corpus's chirality-odd array, antisymmetric as $\check c_{\jmath\imathk}-\check c_{k\imath\jmath}=-2i\,\varepsilon_{\jmath\imathk\rho}j_\rho$, and $\check\varepsilon_{\jmath\imathk}=\sum_\rho\varepsilon_{\jmath\imathk\rho}j_\rho$ is the three-dimensional Levi-Civita symbol of the slice, nonzero only when all three indices lie on it.
+The structure constants. $\check c_{\jmath\imath k}$ is the corpus's chirality-odd array, antisymmetric as $\check c_{\jmath\imath k}-\check c_{k\imath\jmath}=-2i\,\varepsilon_{\jmath\imath k\rho}j_\rho$, and $\check\varepsilon_{\jmath\imath k}=\sum_\rho\varepsilon_{\jmath\imath k\rho}j_\rho$ is the three-dimensional Levi-Civita symbol of the slice, nonzero only when all three indices lie on it.
 
 The fields. $G_{\imath}$ is a complex four-vector in the vector representation of the Dirac field; $H_{\imath}$ is the dual potential, a complex four-vector introduced as an auxiliary field; $B_{\imath}$ is the three-dimensional potential. The masses are $m$ and $a$, both real, and the combination $m-a$ is the one that survives the reductions.
 
@@ -51,7 +51,7 @@ The derivative. $\tilde\nabla_{\Phi,\imath}=\partial/\partial x_{\imath}$ in the
 The parent action, and why it is written this way. The integrand is linear in $H_{\imath}$ and quadratic in $G_{\imath}$, and the two fields enter symmetrically except for that half-shift:
 
 $$
-S_{GH}=\int d^4r\;\Bigl[\bigl(G_{\jmath}+\tfrac12H_{\jmath}\bigr)^{*}i\check c_{\jmath\imathk}\partial_{\imath} H_\imath-\bigl(\partial_{\imath} H_{\jmath}\bigr)^{*}i\check c_{\jmath\imathk}\bigl(G_\imath+\tfrac12H_\imath\bigr)+\tfrac{m-a}{2}\bigl(G\cdot G+G^{*}\cdot G^{*}\bigr)\Bigr].
+S_{GH}=\int d^4r\;\Bigl[\bigl(G_{\jmath}+\tfrac12H_{\jmath}\bigr)^{*}i\check c_{\jmath\imath k}\partial_{\imath} H_{\imath}-\bigl(\partial_{\imath} H_{\jmath}\bigr)^{*}i\check c_{\jmath\imath k}\bigl(G_{\imath}+\tfrac12H_{\imath}\bigr)+\tfrac{m-a}{2}\bigl(G\cdot G+G^{*}\cdot G^{*}\bigr)\Bigr].
 $$
 
 The shift $G+\tfrac12H$ is what makes the two eliminations give theories of the same mass; without it the reduced masses would differ by a factor. The structure is the standard first-order (parent) form: a field and its dual, with the auxiliary one entering linearly so that its equation is a constraint.
@@ -61,13 +61,13 @@ Why linearity in one field is the whole device. Because $S$ is linear in $H$, va
 The three-dimensional reduction. Separating the scalar first and taking the duality between $(G_{\imath};\xi)$ and $(B_{\imath};\xi)$ with the same $\xi$,
 
 $$
-S_{G\xi B}=\int d^3r\;\Bigl[\tfrac12\bigl(G^{*}_{\jmath}+\tfrac12B^{*}_{\jmath}\bigr)i\check c_{\jmath\imathk}F_{\imathk}+\tfrac{i}{2}\sum_{\imath}\epsilon_{\imath}\Bigl(G_{\imath}\frac{\partial\xi^{*}}{\partial x_{\imath}}-\xi^{*}\frac{\partial G_{\imath}}{\partial x_{\imath}}\Bigr)+\tfrac{m-a}{2}G\cdot G+\cdots\Bigr],
+S_{G\xi B}=\int d^3r\;\Bigl[\tfrac12\bigl(G^{*}_{\jmath}+\tfrac12B^{*}_{\jmath}\bigr)i\check c_{\jmath\imath k}F_{\imath k}+\tfrac{i}{2}\sum_{\imath}\epsilon_{\imath}\Bigl(G_{\imath}\frac{\partial\xi^{*}}{\partial x_{\imath}}-\xi^{*}\frac{\partial G_{\imath}}{\partial x_{\imath}}\Bigr)+\tfrac{m-a}{2}G\cdot G+\cdots\Bigr],
 $$
 
 and the elimination of $G$ leaves
 
 $$
-\boxed{\;\mathcal{L}_G=-\frac{1}{4m}\sum_{\imath,k}\epsilon_{\imath}\epsilon_\imath F_{\imathk}F_{\imathk}+\frac14\sum_{\imath,\jmath,k}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_\imath\,\check\varepsilon_{\jmath\imathk}B^{*}_{\jmath} F_{\imathk}+\text{(scalar sector)}\;}
+\boxed{\;\mathcal{L}_G=-\frac{1}{4m}\sum_{\imath,k}\epsilon_{\imath}\epsilon_{\imath} F_{\imath k}F_{\imath k}+\frac14\sum_{\imath,\jmath,k}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_{\imath}\,\check\varepsilon_{\jmath\imath k}B^{*}_{\jmath} F_{\imath k}+\text{(scalar sector)}\;}
 $$
 
 which is Maxwell plus a Chern–Simons mass. The normalization is the source's: the kinetic term carries $1/m$ and the topological term carries no $m$ at all, so rescaling $B$ or $F$ moves the mass from one term to the other without changing the physics.
@@ -105,19 +105,19 @@ What the comparison shows. The duality is a statement about the parent, not abou
 Varying the auxiliary field. $\delta S/\delta H_{\imath}=0$ gives the first relation of the introduction. Substituting it back leaves the Dirac Lagrangian in the vector representation,
 
 $$
-\mathcal{L}_D=\tfrac12\Bigl[\sum_{\imath,\jmath,k}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_\imath\Bigl(\bigl(\tilde\nabla_{\imath} G_{\jmath}\bigr)^{*}i\check c_{\jmath\imathk}G_\imath-G^{*}_{\jmath} i\check c_{\jmath\imathk}\tilde\nabla_{\imath} G_\imath\Bigr)+m\sum_{\jmath}\epsilon_{\jmath}\bigl(G_{\jmath} G_{\jmath}+G^{*}_{\jmath} G^{*}_{\jmath}\bigr)\Bigr],
+\mathcal{L}_D=\tfrac12\Bigl[\sum_{\imath,\jmath,k}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_{\imath}\Bigl(\bigl(\tilde\nabla_{\imath} G_{\jmath}\bigr)^{*}i\check c_{\jmath\imath k}G_{\imath}-G^{*}_{\jmath} i\check c_{\jmath\imath k}\tilde\nabla_{\imath} G_{\imath}\Bigr)+m\sum_{\jmath}\epsilon_{\jmath}\bigl(G_{\jmath} G_{\jmath}+G^{*}_{\jmath} G^{*}_{\jmath}\bigr)\Bigr],
 $$
 
 up to the total divergence the corpus's $Z_0$ removes. The mass couples $G$ to $G^{*}$, that is, the two chiral halves, and that coupling is why the s-vector is not two independent complex vectors.
 
-Varying the Dirac field. $\delta S/\delta G_{\jmath}=0$ gives the second relation, $(m-a)G_\imath=\sum\epsilon\epsilon(\tilde\nabla H)^{*}i\check c$, and substituting it back leaves a second-order Lagrangian for $H_{\imath}$ with a kinetic term and a one-derivative term. At $a=e=0$ and after the rescaling $H_{\imath}\mapsto bH_{\imath}$ that restores the canonical normalization, it becomes the topologically massive form above.
+Varying the Dirac field. $\delta S/\delta G_{\jmath}=0$ gives the second relation, $(m-a)G_{\imath}=\sum\epsilon\epsilon(\tilde\nabla H)^{*}i\check c$, and substituting it back leaves a second-order Lagrangian for $H_{\imath}$ with a kinetic term and a one-derivative term. At $a=e=0$ and after the rescaling $H_{\imath}\mapsto bH_{\imath}$ that restores the canonical normalization, it becomes the topologically massive form above.
 
 **Why the two eliminations cannot both be applied.** Each elimination uses the other field's equation; applying both would impose both equations simultaneously, which is consistent only on shell. The correct reading is that the parent action defines one theory with two descriptions, and a description is chosen by which field is integrated out. The choice is not a gauge choice, because the two descriptions have different fields; it is a choice of which variable is fundamental.
 
 The check that would catch a sign. The three-dimensional topological equation
 
 $$
-\sum_{\jmath}\epsilon_{\jmath}\frac{\partial F_{\jmath\imath}}{\partial x_{\jmath}}+\frac{m}{2}\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_\imath\,\check\varepsilon_{\imath\jmathk}F^{*}_{\jmathk}=0
+\sum_{\jmath}\epsilon_{\jmath}\frac{\partial F_{\jmath\imath}}{\partial x_{\jmath}}+\frac{m}{2}\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_{\imath}\,\check\varepsilon_{\imath\jmath k}F^{*}_{\jmath k}=0
 $$
 
 must be invariant under the gauge transformation of $B_{\imath}$, and it is, because the variation of the Chern–Simons term is a total derivative. If the factor $\tfrac{m}{2}$ were $\tfrac{m}{4}$, the equation would not reduce to the Proca equation in the appropriate limit; the boxed coefficient is the check.
@@ -147,7 +147,7 @@ The gauge current. The reduced action is invariant under $B_{\imath}\mapsto B_{\
 The Chern–Simons current. The topological term defines
 
 $$
-J_{\mathrm{CS},\imath}=\varepsilon_{\imath\jmathk\rho}F_{\jmathk}B_\rho ,
+J_{\mathrm{CS},\imath}=\varepsilon_{\imath\jmath k\rho}F_{\jmath k}B_\rho ,
 $$
 
 whose divergence is $F\tilde F$; it is conserved identically in three dimensions because the term is a total derivative. The current is the three-dimensional analogue of the QCD Chern–Simons current, and its conservation is a Bianchi identity.
@@ -203,10 +203,10 @@ The three findings. The duality is exact because the parent is linear in one fie
 | $G_{\imath}$ | complex four-vector, the s-vector of the Dirac field |
 | $H_{\imath}$ | dual potential, auxiliary field of the parent |
 | $B_{\imath}$ | three-dimensional gauge potential |
-| $\check c_{\jmath\imathk}$ | chirality-odd structure-constant array |
-| $\check\varepsilon_{\jmath\imathk}$ | three-dimensional Levi-Civita of the slice |
+| $\check c_{\jmath\imath k}$ | chirality-odd structure-constant array |
+| $\check\varepsilon_{\jmath\imath k}$ | three-dimensional Levi-Civita of the slice |
 | $m$, $a$ | mass and second coupling; $m-a$ survives |
-| $F_{\imathk}$ | field strength of $B_{\imath}$ |
+| $F_{\imath k}$ | field strength of $B_{\imath}$ |
 | $J_{\mathrm{CS},\imath}$ | Chern–Simons current |
 
 ## Further Reading

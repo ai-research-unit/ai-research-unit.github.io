@@ -18,7 +18,7 @@ $$
 
 It is associative, commutative and unital, and the algebra is the product of two copies of $\mathbb{R}$, isomorphic to $\mathbb{R}\times\mathbb{R}$. Its zero divisors are the nonzero elements of the null cone $\mathcal{N}$, and such an element is a rank-one matrix in the regular matrix model (*Zero Divisors of the Split-Complex Algebra*, above this article in this category). The annihilator is the kernel of the corresponding multiplication: it is $\{0\}$ off the null cone, a real line on the nonzero part of the cone, and the whole algebra at the origin, and because the algebra is commutative the two sides carry the **same** subspace. The article owns that reading, the multiplication operators with their ranks, and the shape of the annihilator on the distinguished subspaces; the zero-divisor set is the cited article's.
 
-**The results.** The annihilator of an element is the set of partners that it kills. For the general plain product the multiplication operator $L_Q$ has trace $2q$ and determinant $Q\bar Q=q^{2}-q'^{2}$; its rank is $2$ off the null cone, $1$ on the nonzero part of the cone, and $0$ at the origin. Both annihilators of an element coincide; they are trivial off the null cone, a real line on the nonzero part of the cone, and the whole algebra at the origin. The two null lines annihilate one another, $\operatorname{ann}(\mathbb{R}\Pi_{+})=\mathbb{R}\Pi_{-}$ and $\operatorname{ann}(\mathbb{R}\Pi_{-})=\mathbb{R}\Pi_{+}$; the annihilator of the origin is the whole algebra, and the annihilator of the whole algebra is the origin.
+**The results.** The annihilator of an element is the set of partners that it kills. For the general plain product the multiplication operator $L_Q$ has trace $2q$ and determinant $Q\bar Q=q^{2}-q'{}^{2}$; its rank is $2$ off the null cone, $1$ on the nonzero part of the cone, and $0$ at the origin. Both annihilators of an element coincide; they are trivial off the null cone, a real line on the nonzero part of the cone, and the whole algebra at the origin. The two null lines annihilate one another, $\operatorname{ann}(\mathbb{R}\Pi_{+})=\mathbb{R}\Pi_{-}$ and $\operatorname{ann}(\mathbb{R}\Pi_{-})=\mathbb{R}\Pi_{+}$; the annihilator of the origin is the whole algebra, and the annihilator of the whole algebra is the origin.
 
 ## The Annihilator of a Product
 
@@ -55,7 +55,7 @@ $$
 
 ## The Multiplication Operators and Their Ranks
 
-**The left multiplication $L_Q$ is the real-linear operator of matrix $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ in the basis $1,j$; its trace is $2q$, its determinant is $Q\bar Q=q^{2}-q'^{2}$, and its rank is $2$ off the null cone, $1$ on the nonzero part of the cone, and $0$ at the origin.**
+**The left multiplication $L_Q$ is the real-linear operator of matrix $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ in the basis $1,j$; its trace is $2q$, its determinant is $Q\bar Q=q^{2}-q'{}^{2}$, and its rank is $2$ off the null cone, $1$ on the nonzero part of the cone, and $0$ at the origin.**
 
 **Definition.** For $Q\in\mathbb{C}_{\mathrm{spl}}$ the **left multiplication** by $Q$ is the map
 
@@ -71,7 +71,7 @@ $$
 \mathsf{L}(Q)=\begin{pmatrix}q&q'\\q'&q\end{pmatrix},
 $$
 
-with trace $2q$ and determinant $q^{2}-q'^{2}=Q\bar Q$.
+with trace $2q$ and determinant $q^{2}-q'{}^{2}=Q\bar Q$.
 
 **Proof.** $L_Q(1)=Q=q+jq'$ and $L_Q(j)=Qj=q'+jq$; the two columns are the coordinates of these images, $(q,q')$ and $(q',q)$. The trace and the determinant are read from the matrix.
 
@@ -105,7 +105,7 @@ so the annihilator has dimension $0$ off the null cone, dimension $1$ on the non
 **Remark (the eigenvalues and the eigenlines).** The characteristic polynomial of $\mathsf{L}(Q)$ is
 
 $$
-\lambda^{2}-2q\lambda+(q^{2}-q'^{2})=(\lambda-Q_{+})(\lambda-Q_{-}),
+\lambda^{2}-2q\lambda+(q^{2}-q'{}^{2})=(\lambda-Q_{+})(\lambda-Q_{-}),
 $$
 
 so the eigenvalues are the idempotent coordinates $Q_{+}=q+q'$ and $Q_{-}=q-q'$, with eigenvectors $\Pi_{+}$ and $\Pi_{-}$. The operator is diagonal in the idempotent basis, $L_Q\Pi_{\pm}=Q_{\pm}\Pi_{\pm}$; it is singular exactly when one eigenvalue vanishes, and then its kernel is the eigenline of the vanishing eigenvalue. The matrix is symmetric, so $L_Q$ is self-adjoint for the Euclidean form.
@@ -187,7 +187,7 @@ For $Q=q\neq0$ the operator $L_Q$ is multiplication by the nonzero real number $
 
 ### The Split Imaginary Subspace $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$
 
-For $Q=jq'$ with $q'\neq0$ the operator $L_Q$ is multiplication by $jq'$, of matrix $\begin{pmatrix}0&q'\\q'&0\end{pmatrix}$, of determinant $-q'^{2}\neq0$ and rank $2$. The annihilator is $\{0\}$.
+For $Q=jq'$ with $q'\neq0$ the operator $L_Q$ is multiplication by $jq'$, of matrix $\begin{pmatrix}0&q'\\q'&0\end{pmatrix}$, of determinant $-q'{}^{2}\neq0$ and rank $2$. The annihilator is $\{0\}$.
 
 ### The Idempotent Lines
 

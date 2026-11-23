@@ -4,12 +4,15 @@
 
 The standing of this article. Standard physics, transcribed. But this is the article where the corpus stops reporting inputs and exhibits a consistency check, and that is a different kind of claim from everything in the four articles before it. Lattice QCD reproduces one number; the triangle reproduces a *shape* from three independent measurements that were each made for a different reason.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
+
 What "closure" means here. Take three quantities measured by three different physical processes: a ratio of semileptonic decay rates, measured in tree-level decays; a ratio of oscillation frequencies, measured in loop-induced mixing; and an angle measured in a decay that involves neither mixing nor loops. Unitarily, they must satisfy a relation. They do, at the degree level. No parameter was adjusted to make them, and no new particle was needed.
 
 The claim, in four parts.
 
 - GIM is unitarity plus non-degeneracy, and that is a statement about the flavour factor. The box amplitude sums $V_{id}V^{*}_{is}m_i^2$ over the internal quarks. The sum of the $V$ products vanishes because $V$ is unitary; what survives is the failure of the mass operator to be a multiple of the identity on the generation label. Written this way, the mechanism is not a trick about charm: it is the statement that a loop of a generation-universal coupling cancels unless the masses split.
-- The charm prediction was a genuine prediction. $\delta m_K$ was measured before charm existed. The box formula, read backwards with the GIM mechanism, gave $m_c\approx1.5$ GeV. The $J/\psi$ came in at $3.1$ GeV, and the current mass relevant to the loop is $1.27$ GeV — the hadron mass was never the right number, and the prediction was right anyway.
+- The charm prediction was a genuine prediction. $\delta m_K$ was measured before charm existed. The box formula, read backwards with the GIM mechanism, gave $m_c\approx2.674\times10^{-27}\ \mathrm{kg}$. The $J/\psi$ came in at $5.526\times10^{-27}\ \mathrm{kg}$, and the current mass relevant to the loop is $2.264\times10^{-27}\ \mathrm{kg}$ — the hadron mass was never the right number, and the prediction was right anyway.
 - The three mixing systems span fourteen orders of magnitude in $\delta m/m$ and their pattern is diagnostic. $7.0\times10^{-15}$, $6.3\times10^{-14}$, $2.2\times10^{-12}$. The third is large enough that the $B_s$ oscillates essentially completely before it decays: $\chi_s=0.4993$, against a ceiling of $0.5$.
 - The triangle closes, with one number that does not. Four of the five measurements land within a per cent of the fit; $\varepsilon'/\varepsilon$ does not, and the article says so rather than presenting a triumph.
 
@@ -45,9 +48,9 @@ The three systems, with numbers.
 
 | System | $\delta m$ | $x=\delta m/\Gamma$ | $\delta m/m$ | $\chi$ (wrong-sign fraction) |
 |---|---|---|---|---|
-| $K^0$ | $5.293\times10^{-3}\ \mathrm{ps}^{-1}$ | $0.474$ | $7.0\times10^{-15}$ | — ($K_S$, $K_L$ have different lifetimes) |
-| $B^0_d$ | $0.5065\ \mathrm{ps}^{-1}$ | $0.769$ | $6.3\times10^{-14}$ | $0.1859$ |
-| $B^0_s$ | $17.757\ \mathrm{ps}^{-1}$ | $26.8$ | $2.2\times10^{-12}$ | $0.4993$ |
+| $K^0$ | $5.293\times10^{9}\ \mathrm{s^{-1}}$ | $0.474$ | $7.0\times10^{-15}$ | — ($K_S$, $K_L$ have different lifetimes) |
+| $B^0_d$ | $5.065\times10^{11}\ \mathrm{s^{-1}}$ | $0.769$ | $6.3\times10^{-14}$ | $0.1859$ |
+| $B^0_s$ | $1.7757\times10^{13}\ \mathrm{s^{-1}}$ | $26.8$ | $2.2\times10^{-12}$ | $0.4993$ |
 
 The wrong-sign fraction is
 
@@ -57,7 +60,7 @@ $$
 
 which is the probability that a meson produced as $P^0$ decays as $\bar P^0$ after the oscillation has been integrated over. Its ceiling is $\tfrac12$, reached when $x\gg1$.
 
-What the $B_s$ number says. $\chi_s=0.4993$ against a ceiling of $0.5$: the $B_s$ oscillates so fast that by the time it decays it has, to three decimal places, forgotten which flavour it was born with. This is not a curiosity. It is why $B_s$ mixing is measured as a *frequency* rather than as a counting asymmetry, and why the measurement needs a vertex detector with proper-time resolution far below $1/\delta m_s\approx0.06$ ps.
+What the $B_s$ number says. $\chi_s=0.4993$ against a ceiling of $0.5$: the $B_s$ oscillates so fast that by the time it decays it has, to three decimal places, forgotten which flavour it was born with. This is not a curiosity. It is why $B_s$ mixing is measured as a *frequency* rather than as a counting asymmetry, and why the measurement needs a vertex detector with proper-time resolution far below $1/\delta m_s\approx6\times10^{-14}\ \mathrm{s}$.
 
 **Why the mass difference ratio matters more than either mass difference.** The theoretical expression for $\delta m$ carries the hadronic matrix element — a decay constant and a bag parameter — and those are the quantities with the large uncertainties. Their ratio is much better known. Taking the ratio for the two $B$ systems cancels everything except a well-computed SU(3)-breaking factor $\xi$:
 
@@ -134,18 +137,18 @@ The situation in 1974. $\delta m_K$ was measured. The box diagram with only the 
 Reading the formula backwards. What remained was proportional to $(m_c^2-m_u^2)/m_W^2$. Setting the coefficient to the measured $\delta m_K$ gave
 
 $$
-m_c\approx1.5\ \mathrm{GeV} .
+m_c\approx2.674\times10^{-27}\ \mathrm{kg} .
 $$
 
-**What was found, and what the number actually meant.** The $J/\psi$ was discovered at $3.1$ GeV, and the $D$ meson at $1.87$ GeV. Neither is $1.5$ GeV, and both are the wrong kind of number: the mass in the box is the **current** mass of the charm quark, which is $1.27$ GeV, and the hadron masses include the binding energy of a light quark and a gluon cloud. So the prediction was right to about $15\%$ and the two numbers that "disconfirmed" it were not the quantity being predicted.
+**What was found, and what the number actually meant.** The $J/\psi$ was discovered at $5.526\times10^{-27}\ \mathrm{kg}$, and the $D$ meson at $3.334\times10^{-27}\ \mathrm{kg}$. Neither is $2.674\times10^{-27}\ \mathrm{kg}$, and both are the wrong kind of number: the mass in the box is the **current** mass of the charm quark, which is $2.264\times10^{-27}\ \mathrm{kg}$, and the hadron masses include the binding energy of a light quark and a gluon cloud. So the prediction was right to about $15\%$ and the two numbers that "disconfirmed" it were not the quantity being predicted.
 
-Why this is worth recording. It is the cleanest case in the corpus of a prediction that is easy to mis-state. A reader who compares $1.5$ GeV with $1.87$ GeV concludes the prediction was wrong by $25\%$; a reader who compares with $1.27$ GeV concludes it was right to $18\%$ with the accuracy of a one-loop calculation with an uncomputed hadronic matrix element. The second comparison is the correct one, and the distinction is exactly the one [the hadron-structure article](hadron-structure-from-qcd-the-bound-state-problem.html) drew between current and constituent masses.
+Why this is worth recording. It is the cleanest case in the corpus of a prediction that is easy to mis-state. A reader who compares $2.674\times10^{-27}\ \mathrm{kg}$ with $3.334\times10^{-27}\ \mathrm{kg}$ concludes the prediction was wrong by $25\%$; a reader who compares with $2.264\times10^{-27}\ \mathrm{kg}$ concludes it was right to $18\%$ with the accuracy of a one-loop calculation with an uncomputed hadronic matrix element. The second comparison is the correct one, and the distinction is exactly the one [the hadron-structure article](hadron-structure-from-qcd-the-bound-state-problem.html) drew between current and constituent masses.
 
 The status today. The charm loop is now a precision input rather than a prediction: the measured $\delta m_K$ and the lattice-computed matrix element determine a combination of $V_{td}$ and $V_{ts}$ that agrees with the tree-level determination. The prediction has become a test, which is what happens to a successful prediction.
 
 ## The Kaon System
 
-The two eigenstates, and why they are so different. $K_S$ and $K_L$ differ in mass by $3.5\times10^{-12}$ MeV and in lifetime by a factor of $580$ ($0.0895$ ns against $51.2$ ns). The lifetime difference is not a small perturbation: it comes from the nearly complete cancellation of the $K^0\to\pi\pi$ amplitude by the GIM-suppressed box contribution, so $K_S$ decays to two pions and $K_L$ cannot (it is CP-forbidden) and must go to three.
+The two eigenstates, and why they are so different. $K_S$ and $K_L$ differ in mass by $5.608\times10^{-25}\ \mathrm{J}$ and in lifetime by a factor of $580$ ($8.95\times10^{-11}\ \mathrm{s}$ against $5.12\times10^{-8}\ \mathrm{s}$). The lifetime difference is not a small perturbation: it comes from the nearly complete cancellation of the $K^0\to\pi\pi$ amplitude by the GIM-suppressed box contribution, so $K_S$ decays to two pions and $K_L$ cannot (it is CP-forbidden) and must go to three.
 
 The three CP observables.
 
@@ -153,7 +156,7 @@ The three CP observables.
 |---|---|---|
 | $\lvert\varepsilon_K\rvert$ | $2.228\times10^{-3}$ | CP violation in mixing: the mass eigenstates are not CP eigenstates |
 | $\mathrm{Re}(\varepsilon'/\varepsilon)$ | $1.66\times10^{-3}$ | CP violation in the decay amplitude itself |
-| $\delta m_K$ | $5.293\times10^{-3}\ \mathrm{ps}^{-1}$ | The mixing, and hence $\lvert V_{td}V_{ts}\rvert$ through the box |
+| $\delta m_K$ | $5.293\times10^{9}\ \mathrm{s^{-1}}$ | The mixing, and hence $\lvert V_{td}V_{ts}\rvert$ through the box |
 
 The ratio of the two, and what it says. $\mathrm{Re}(\varepsilon'/\varepsilon)/\lvert\varepsilon_K\rvert=0.745$. Both are nonzero, so CP is violated both in mixing and in the decay amplitude — which is the statement that the phase of $V$ enters twice, once through the mixing and once through the penguin amplitude's interference with the tree.
 
@@ -173,9 +176,9 @@ What the numbers are, and what sets them. The three systems' splittings differ b
 
 | System | Internal quarks | $f_P^2 B_P$ | $\delta m$ |
 |---|---|---|---|
-| $K^0$ | $u,c,t$ (charm dominates) | $f_K^2B_K$ | $5.3\times10^{-3}$ ps$^{-1}$ |
-| $B^0_d$ | $t$ dominates | $f_{B_d}^2B_{B_d}$ | $0.507$ ps$^{-1}$ |
-| $B^0_s$ | $t$ dominates | $f_{B_s}^2B_{B_s}$ | $17.76$ ps$^{-1}$ |
+| $K^0$ | $u,c,t$ (charm dominates) | $f_K^2B_K$ | $5.3\times10^{9}$ s$^{-1}$ |
+| $B^0_d$ | $t$ dominates | $f_{B_d}^2B_{B_d}$ | $5.07\times10^{11}$ s$^{-1}$ |
+| $B^0_s$ | $t$ dominates | $f_{B_s}^2B_{B_s}$ | $1.776\times10^{13}$ s$^{-1}$ |
 
 Read down the table: the kaon's small splitting is charm's, the $B$'s large splittings are the top's, and the ratio between the two $B$ systems is almost purely the SU(3) breaking of the decay constant, because both are top-dominated and the CKM factors $V_{tb}V_{td}$ and $V_{tb}V_{ts}$ differ by the known ratio $V_{td}/V_{ts}$.
 
@@ -191,7 +194,7 @@ $b\to s\gamma$.
 
 | Quantity | Value |
 |---|---|
-| Measured $\mathcal{B}(B\to X_s\gamma)$ at $E_\gamma>1.6$ GeV | $(3.32\pm0.15)\times10^{-4}$ |
+| Measured $\mathcal{B}(B\to X_s\gamma)$ at $E_\gamma>2.564\times10^{-10}\ \mathrm{J}$ | $(3.32\pm0.15)\times10^{-4}$ |
 | Standard Model | $(3.36\pm0.23)\times10^{-4}$ |
 | Ratio | $0.988$ |
 
@@ -341,7 +344,7 @@ The ledger.
 | $\delta m=2\lvert M_{12}\rvert$, $x=\delta m/\Gamma$, $\chi=x^2/2(1+x^2)$ | **Imported**; recomputed here for three systems |
 | The box diagram and the Inami–Lim functions | **Imported** |
 | GIM as unitarity plus non-centrality of the mass operator | **Framework reading** of an imported mechanism |
-| $m_c\approx1.5$ GeV from $\delta m_K$ | **Imported** history; the current-mass comparison computed here |
+| $m_c\approx2.674\times10^{-27}\ \mathrm{kg}$ from $\delta m_K$ | **Imported** history; the current-mass comparison computed here |
 | $\lvert\varepsilon_K\rvert=2.228\times10^{-3}$, $\varepsilon'/\varepsilon=1.66\times10^{-3}$ | **Imported** |
 | $\delta m_{B_d}$, $\delta m_{B_s}$, the ratio $35.06$ | **Imported**; $\lvert V_{ts}/V_{td}\rvert$ and $R_t$ computed here |
 | $\mathcal{B}(B\to X_s\gamma)$, $\mathcal{B}(B_s\to\mu\mu)$ | **Imported**; the ratios computed here |
@@ -356,9 +359,9 @@ What this article does not do. It does not compute a box diagram, a Wilson coeff
 
 ## Summary
 
-The neutral mesons are two-level systems with $\delta m=2\lvert M_{12}\rvert$. The three splittings are $5.29\times10^{-3}$, $0.507$ and $17.76$ ps$^{-1}$, giving $x=0.474$, $0.769$ and $26.8$ and wrong-sign fractions up to $\chi_s=0.4993$ against a ceiling of $0.5$ — the $B_s$ forgets its flavour before it decays.
+The neutral mesons are two-level systems with $\delta m=2\lvert M_{12}\rvert$. The three splittings are $5.29\times10^{9}\ \mathrm{s^{-1}}$, $5.07\times10^{11}\ \mathrm{s^{-1}}$ and $1.776\times10^{13}\ \mathrm{s^{-1}}$, giving $x=0.474$, $0.769$ and $26.8$ and wrong-sign fractions up to $\chi_s=0.4993$ against a ceiling of $0.5$ — the $B_s$ forgets its flavour before it decays.
 
-GIM is unitarity plus non-degeneracy. The constant term in the box cancels because $VV^{\dagger}=1$, and what survives is proportional to the mass splitting: $(m_c/m_W)^2=2.50\times10^{-4}$ for the kaon, $(m_t/m_c)^2=1.85\times10^{4}$ between the charm and top loops. Read backwards against $\delta m_K$ in 1974, this gave $m_c\approx1.5$ GeV; the current mass is $1.27$ GeV, and the $D$ meson's $1.87$ GeV was never the right quantity to compare with.
+GIM is unitarity plus non-degeneracy. The constant term in the box cancels because $VV^{\dagger}=1$, and what survives is proportional to the mass splitting: $(m_c/m_W)^2=2.50\times10^{-4}$ for the kaon, $(m_t/m_c)^2=1.85\times10^{4}$ between the charm and top loops. Read backwards against $\delta m_K$ in 1974, this gave $m_c\approx2.674\times10^{-27}\ \mathrm{kg}$; the current mass is $2.264\times10^{-27}\ \mathrm{kg}$, and the $D$ meson's $3.334\times10^{-27}\ \mathrm{kg}$ was never the right quantity to compare with.
 
 The triangle has sides $R_b=0.3866$, $R_t=0.9117$, base $1$, and angles $91.6^\circ$, $22.7^\circ$, $65.7^\circ$. Its area is $0.1762$ by Heron and $0.1762$ by $\bar\digamma_{\mathrm{wlf}}/2$. $R_t$ from the $B$ mixing ratio is $0.914$ against $0.9117$ from the fit — $0.3\%$; $\sin2\beta$ from the fit is $0.7128$ against $0.699\pm0.017$ measured — $0.8\sigma$. Both close.
 

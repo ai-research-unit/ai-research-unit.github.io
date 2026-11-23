@@ -115,7 +115,7 @@ What the chart therefore decides and does not decide. It decides which reading i
 
 The shift, and what it does to the bracket. For a constant potential the two shifts are constants, so the bracket is the free bracket with $\partial\theta_{\mathrm{pha}}$ translated by a constant and $\vec\nabla_\Phi\theta_{\mathrm{pha}}$ translated by a constant vector. A translation of a gradient is a change of the plane wave's wavevector and nothing else, which is the chart's form of the element companion's statement that a constant potential shifts the wavevector.
 
-The scalar potential enters squared in the chart. Because the temporal slot's shift sits inside a square with a relative sign, a constant $a'_t$ contributes $+\frac{(2\pi)^{2} ϛ^{2}}{h^{2}}a_t'^{2}\varrho^{2}$ to the exponent and no term linear in $\partial_{r'_t}\theta_{\mathrm{pha}}$. The chart's dispersion for a constant scalar potential has the potential squared and no linear shift, which is the element companion's paired shell. The linear shift belongs to the squared reading and has no chart expression, for the reason of the previous section.
+The scalar potential enters squared in the chart. Because the temporal slot's shift sits inside a square with a relative sign, a constant $a'_t$ contributes $+\frac{(2\pi)^{2} ϛ^{2}}{h^{2}}a_t'{}^{2}\varrho^{2}$ to the exponent and no term linear in $\partial_{r'_t}\theta_{\mathrm{pha}}$. The chart's dispersion for a constant scalar potential has the potential squared and no linear shift, which is the element companion's paired shell. The linear shift belongs to the squared reading and has no chart expression, for the reason of the previous section.
 
 The vector potential enters as a translation and the two are different objects. A constant $\vec A$ translates $\vec\nabla_\Phi\theta_{\mathrm{pha}}$, so it moves the wavevector and changes the bracket by the translation's square; a constant $a'_t$ does the same in the temporal slot. The chart shows the two as one operation, a translation, and the difference between them as the relative sign of the two squares. This is the chart's version of the element companion's contrast between the exact scalar shift and the vector potential's Landau problem, and the chart states the contrast as a sign.
 
@@ -161,7 +161,7 @@ The chart carries the action's reading of the covariant square and cannot carry 
 | Symbol | Meaning |
 |---|---|
 | $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}e_t$ | The word on a central field |
-| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The slot's coefficient; $c_t$ real, $c_\imath$ imaginary |
+| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The slot's coefficient; $c_t$ real, $c_{\imath}$ imaginary |
 | $\kappa^{\mathrm{kin}}_{\imath}=\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϛ}{h}A_{\imath}$ | The mechanical phase rate; the connection's only address |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath}(\varrho e^{i\theta_{\mathrm{pha}}}e_t)=e^{i\theta_{\mathrm{pha}}}\bigl(\partial_{\imath} \varrho+i \varrho\kappa^{\mathrm{kin}}_{\imath}\bigr)e_t$ | The exact factorisation of the covariant derivative |
 | $\prod_x \varrho\,\mathrm{d}\varrho\,\mathrm{d}\theta_{\mathrm{pha}}$ | The polar measure; unchanged by a gauge transformation |

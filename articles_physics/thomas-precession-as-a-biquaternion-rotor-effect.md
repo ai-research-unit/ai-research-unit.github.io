@@ -74,7 +74,7 @@ $$
 \tilde{u}\in\mathbb{B}_{H}\ \text{a rotation}.
 $$
 
-The product is Hermitian, and hence a pure boost with no rotation factor, if and only if the two directions are parallel or antiparallel. Otherwise the real vector part $\vec q=s_1s_2\,\vec u_x\times\vec u_y$ (with $c_\imath=\cosh\tfrac{\theta_{\mathrm{rpd},k}}{2}$, $s_\imath=\sinh\tfrac{\theta_{\mathrm{rpd},k}}{2}$) is non-zero, and the polar decomposition carries exactly that part into the rotation factor. The rotation $\tilde{u}$ is the **Thomas–Wigner rotation** of the pair of boosts. The failure of the exponents to add is the BCH defect of the polar word, computed in *The Exponential Word and Its Boundary*; the precession is the accumulated defect of the boost word along the path.
+The product is Hermitian, and hence a pure boost with no rotation factor, if and only if the two directions are parallel or antiparallel. Otherwise the real vector part $\vec q=s_1s_2\,\vec u_x\times\vec u_y$ (with $c_{\imath}=\cosh\tfrac{\theta_{\mathrm{rpd},k}}{2}$, $s_{\imath}=\sinh\tfrac{\theta_{\mathrm{rpd},k}}{2}$) is non-zero, and the polar decomposition carries exactly that part into the rotation factor. The rotation $\tilde{u}$ is the **Thomas–Wigner rotation** of the pair of boosts. The failure of the exponents to add is the BCH defect of the polar word, computed in *The Exponential Word and Its Boundary*; the precession is the accumulated defect of the boost word along the path.
 
 For two boosts of equal rapidity $\theta_{\mathrm{rpd}}$ whose directions make an angle $\theta$, the angle $\theta_{\mathrm{wgn}}$ of $\tilde{u}$ is
 
@@ -175,7 +175,7 @@ The factor $\tfrac12$ is not inserted by hand: it is the limit of $\gamma^2/(\ga
 
 Only the **transverse** acceleration precesses the frame. Since $\vec a\times\vec v=\vec a_\perp\times\vec v$, a purely longitudinal acceleration gives $\vec\omega_T=0$: it changes the rapidity but not the direction of the velocity, and a boost along the instantaneous direction generates no rotation. This is the first sign that a collinear configuration cannot test the direction of $\vec\omega_T$.
 
-The interval rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{\natural}$ is formed directly as a $2\times2$ complex matrix in the representation $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_\imath$, $\mathsf{M}_2(i)=iI_2$, and its polar decomposition $\tilde U_{\mathrm{int}}=\tilde U_{\Psi,\mathrm b}\tilde{u}$, $\tilde U_{\Psi,\mathrm b}=\sqrt{\tilde U_{\mathrm{int}}\tilde U_{\mathrm{int}}^{*}}$, $\tilde{u}=\tilde U_{\Psi,\mathrm b}^{-1}\tilde U_{\mathrm{int}}$, is carried out at $dr'_t=10^{-5}\,c$ for random non-collinear pairs $(\vec v,\vec a)$ with $|\vec v|<c$. The rotation vector of $\tilde{u}$ agrees with $\vec\omega_T\,dr'_t/c$ in both magnitude and direction to better than $10^{-10}$ in the units of the check; the collinear case gives zero on both sides. The sign is testable only off the collinear line, and it is the axis $\vec a\times\vec v$ that the exact product selects.
+The interval rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{\natural}$ is formed directly as a $2\times2$ complex matrix in the representation $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, $\mathsf{M}_2(i)=iI_2$, and its polar decomposition $\tilde U_{\mathrm{int}}=\tilde U_{\Psi,\mathrm b}\tilde{u}$, $\tilde U_{\Psi,\mathrm b}=\sqrt{\tilde U_{\mathrm{int}}\tilde U_{\mathrm{int}}^{*}}$, $\tilde{u}=\tilde U_{\Psi,\mathrm b}^{-1}\tilde U_{\mathrm{int}}$, is carried out at $dr'_t=10^{-5}\,c$ for random non-collinear pairs $(\vec v,\vec a)$ with $|\vec v|<c$. The rotation vector of $\tilde{u}$ agrees with $\vec\omega_T\,dr'_t/c$ in both magnitude and direction to better than $10^{-10}$ in the units of the check; the collinear case gives zero on both sides. The sign is testable only off the collinear line, and it is the axis $\vec a\times\vec v$ that the exact product selects.
 
 ## One Angle at Two Separations
 
@@ -195,7 +195,7 @@ $$
 | $10^{-3}$ | $0.743377882691$ | $0.743377298909$ | $5.8\times10^{-7}$ |
 | $10^{-4}$ | $0.743377339606$ | $0.743377298909$ | $4.1\times10^{-8}$ |
 
-The error falls by two orders per decade, so the finite angle is the rate times the step plus a term of second order: the two differ by $O(dr'^{2}_t)$ and agree in the limit.
+The error falls by two orders per decade, so the finite angle is the rate times the step plus a term of second order: the two differ by $O(dr'{}^{2}_t)$ and agree in the limit.
 
 **The integral relation follows from the composition, and it is the stronger half of the statement.** Successive interval rotors multiply, so the rotation accumulated along a path is the product of their rotation factors; where the axis is constant the angles add, and the sum is the integral of the rate. Around a circle of radius $2$ at $\lvert\vec v\rvert=0.8$:
 
@@ -305,7 +305,7 @@ It is useful to separate the algebraic content of the derivation from the standa
 
 - The boost rotor is a Hermitian unit-norm biquaternion in $\mathbb{B}_{\Psi}$, and a **single** boost contains no rotation; the rotation is created by composition.
 - The product of two boost rotors admits a unique polar decomposition $\tilde U_{\Psi,\mathrm b}\tilde{u}$ into a pure boost and a rotation of $\mathbb{B}_{H}$, and the rotation factor is the Wigner rotation.
-- The exact Wigner angle and its axis follow from the quaternion product with $\vec e_{\imath} \vec e_{\jmath}=\epsilon_{\imath\jmathk}\vec e_\imath$ and $\vec e_{\imath}^{2}=-e_t$, without any matrix or tensor apparatus; the whole of the Thomas precession is the first-order term of that product.
+- The exact Wigner angle and its axis follow from the quaternion product with $\vec e_{\imath} \vec e_{\jmath}=\epsilon_{\imath\jmath k}\vec e_{\imath}$ and $\vec e_{\imath}^{2}=-e_t$, without any matrix or tensor apparatus; the whole of the Thomas precession is the first-order term of that product.
 - The interval rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{\natural}$ is the rotor between neighbouring rest frames, and its rotation factor is the Thomas–Wigner rotor.
 - The half-angle rotor $\tilde{u}_T$ that carries the frame, and its double-valued sign, are the same rotor that acts one-sidedly on the spinor module.
 
@@ -373,7 +373,7 @@ along $\vec a\times\vec v$, with only the transverse acceleration contributing. 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=\epsilon_{\imath\jmathk}\vec e_\imath$ $(\imath\neq\jmath)$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=\epsilon_{\imath\jmath k}\vec e_{\imath}$ $(\imath\neq\jmath)$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{B}_{H}$, $\mathbb{B}_{C}$ | Real-quaternion subspace; central scalar subspace |

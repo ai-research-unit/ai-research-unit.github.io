@@ -41,7 +41,7 @@ $$
 
 **Proof.** $\tau$ is additive and $\tau(1) = J^{-1}J = 1$; $\tau(XY) = J^{-1}Y^{\mathrm t}X^{\mathrm t}J = (J^{-1}Y^{\mathrm t}J)(J^{-1}X^{\mathrm t}J) = \tau(Y)\tau(X)$; and $\tau^2(X) = J^{-1}(J^{-1}X^{\mathrm t}J)^{\mathrm t}J = J^{-1}J^{\mathrm t}XJ^{-\mathrm t}J = J^{-1}(-J)X(-J)^{-1}J = X$, using $J^{\mathrm t} = -J$ and $J^{-1} = -J$. For the fixed set, $J^{-1}X^{\mathrm t}J = X$ is equivalent to $X^{\mathrm t}J = JX$; putting $Y = JX$, so that $X = -JY$, the condition becomes $(-JY)^{\mathrm t}J = Y$, that is $-Y^{\mathrm t}J^{\mathrm t}J = Y$, and $J^{\mathrm t}J = -J^2 = 1$, so $-Y^{\mathrm t} = Y$: $Y = JX$ is antisymmetric.
 
-**Remark.** The symplectic involution is the transpose twisted by $J$: since $J^{-1} = -J$ one has $X^{\tau} = -JX^{\mathrm t}J$. If $J'$ gives the same involution then $J'J^{-1}$ commutes with every $X^{\mathrm t}$ and is therefore a central scalar, and the conditions $J'^{\mathrm t} = -J'$, $J'^2 = -1$ force $J' = \pm J$; so $J$ is determined by the involution up to sign.
+**Remark.** The symplectic involution is the transpose twisted by $J$: since $J^{-1} = -J$ one has $X^{\tau} = -JX^{\mathrm t}J$. If $J'$ gives the same involution then $J'J^{-1}$ commutes with every $X^{\mathrm t}$ and is therefore a central scalar, and the conditions $J'{}^{\mathrm t} = -J'$, $J'{}^2 = -1$ force $J' = \pm J$; so $J$ is determined by the involution up to sign.
 
 ## Symmetric and Antisymmetric Matrices
 

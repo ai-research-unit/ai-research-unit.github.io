@@ -61,7 +61,7 @@ $$
 
 **Proof.** The first statement is that the unit is central; for the reflection, $\delta(a)\alpha(a)\,\alpha(b)\delta(b) = \delta(a)\alpha(a)\cdot\alpha(a)^{-1}\delta(a)^{-1} = 1$ by $\delta^2 = \mathrm{id}$, and $a\sigma(a)\sigma(b)b = a\sigma(a)\sigma(a)^{-1}a^{-1} = 1$; the conditions reduce to centrality.
 
-**Remark (the group case).** On a topological group the analogous identity criterion for a signed two-sided operator involves the centre, $c'^{-1}c\in Z(G)$, by *The Signed Adjoint Two-Sided Operator on a Topological Group*; the ring condition is the same shape, and the centrality is not an artefact of the proof but a genuine two-sided condition. The normalised condition $\delta(a)\alpha(a) = 1$, $\alpha(b)\delta(b)=1$ is the case in which the two central products are each the unit.
+**Remark (the group case).** On a topological group the analogous identity criterion for a signed two-sided operator involves the centre, $c'{}^{-1}c\in Z(G)$, by *The Signed Adjoint Two-Sided Operator on a Topological Group*; the ring condition is the same shape, and the centrality is not an artefact of the proof but a genuine two-sided condition. The normalised condition $\delta(a)\alpha(a) = 1$, $\alpha(b)\delta(b)=1$ is the case in which the two central products are each the unit.
 
 ## The Equality Criterion and the Inner Case
 

@@ -99,7 +99,7 @@ The four rows are different structures on the same set. A subalgebra in one row 
 
 1. $A=\mathbb{R}I$, of dimension $1$;
 2. $A=\mathbb{R}I\oplus\mathbb{R}P$ with $P$ a projection of rank one, of dimension $2$, isomorphic to $\mathbb{R}\oplus\mathbb{R}$;
-3. $A=\mathbb{R}I\oplus\mathbb{R}J'$ with $J'^2=-I$, of dimension $2$, isomorphic to $\mathbb{C}$;
+3. $A=\mathbb{R}I\oplus\mathbb{R}J'$ with $J'{}^2=-I$, of dimension $2$, isomorphic to $\mathbb{C}$;
 4. $A=\mathbb{R}I\oplus\mathbb{R}N$ with $N^2=0$ and $N\neq0$, of dimension $2$, the algebra of dual numbers;
 5. $A=\mathfrak{b}=\{X:X(L)\subset L\}$ for a line $L\subset\mathbb{R}^2$, of dimension $3$, the parabolic subalgebra;
 6. $A=M_2(\mathbb{R})$, of dimension $4$.
@@ -110,12 +110,12 @@ Dimension $1$: $A$ contains $I$, so $A=\mathbb{R}I$.
 
 Dimension $3$: $A$ acts on $\mathbb{R}^2$. If $\mathbb{R}^2$ were a simple $A$-module, then $A$ would act densely on it and would be dense in the endomorphism algebra of the module, that is in $M_2(\mathbb{R})$, which no three-dimensional subspace is. So there is a line $L$ with $A(L)\subset L$, hence $A$ is contained in the parabolic $\mathfrak{b}$ of the line $L$, which has dimension $3$; since $A$ also has dimension $3$, $A=\mathfrak{b}$. All lines are conjugate under $GL(2,\mathbb{R})$, so all parabolics are conjugate, and this is one case and not two.
 
-Dimension $2$: choose $X\in A$ with $X\notin\mathbb{R}I$. Then $A=\mathbb{R}I\oplus\mathbb{R}X$, because both sides have dimension $2$ and the right side is contained in the left. Since $X^2$ lies in $A$, there are real $a,b$ with $X^2=aX+bI$, and the three cases are the three possible discriminants. If the discriminant $a^2+4b$ is positive, $X$ has two distinct real eigenvalues, $X$ is diagonalizable over $\mathbb{R}$, and $A$ is conjugate to the diagonal algebra $\mathbb{R}I\oplus\mathbb{R}P$ with $P$ a projection. If the discriminant is negative, $X$ has a conjugate pair of non-real eigenvalues, and $X$ is conjugate to a complex structure $J'$ with $J'^2=-I$, so $A\cong\mathbb{C}$. If the discriminant vanishes, $X^2=aX-\tfrac{a^2}{4}I$, the element $N=X-\tfrac{a}{2}I$ satisfies $N^2=0$, and $N\neq0$ because $X\notin\mathbb{R}I$; then $A=\mathbb{R}I\oplus\mathbb{R}N$. The three cases are exclusive and each is a single conjugacy class, because two projections of rank one, two complex structures, and two nonzero nilpotents are each conjugate under $GL(2,\mathbb{R})$. ∎
+Dimension $2$: choose $X\in A$ with $X\notin\mathbb{R}I$. Then $A=\mathbb{R}I\oplus\mathbb{R}X$, because both sides have dimension $2$ and the right side is contained in the left. Since $X^2$ lies in $A$, there are real $a,b$ with $X^2=aX+bI$, and the three cases are the three possible discriminants. If the discriminant $a^2+4b$ is positive, $X$ has two distinct real eigenvalues, $X$ is diagonalizable over $\mathbb{R}$, and $A$ is conjugate to the diagonal algebra $\mathbb{R}I\oplus\mathbb{R}P$ with $P$ a projection. If the discriminant is negative, $X$ has a conjugate pair of non-real eigenvalues, and $X$ is conjugate to a complex structure $J'$ with $J'{}^2=-I$, so $A\cong\mathbb{C}$. If the discriminant vanishes, $X^2=aX-\tfrac{a^2}{4}I$, the element $N=X-\tfrac{a}{2}I$ satisfies $N^2=0$, and $N\neq0$ because $X\notin\mathbb{R}I$; then $A=\mathbb{R}I\oplus\mathbb{R}N$. The three cases are exclusive and each is a single conjugacy class, because two projections of rank one, two complex structures, and two nonzero nilpotents are each conjugate under $GL(2,\mathbb{R})$. ∎
 
 **The continuous families.** The classification has six entries and is finite, but three of the entries are not single subalgebras: they are continuous families, and the families must be counted as part of the answer. The set of complex structures
 
 $$
-\mathcal{J}=\{J'\in M_2(\mathbb{R}):J'^2=-I\}
+\mathcal{J}=\{J'\in M_2(\mathbb{R}):J'{}^2=-I\}
 $$
 
 is traced by a traceless matrix $J'=\begin{pmatrix}a&b\\c&-a\end{pmatrix}$ with $a^2+bc=-1$, which is a two-sheeted hyperboloid in the three-dimensional space of traceless matrices; each sheet is a hyperbolic plane. Passing from $J'$ to $-J'$ does not change the subalgebra $\mathbb{R}I\oplus\mathbb{R}J'$, so the family of copies of $\mathbb{C}$ is two-dimensional. The set of projections of rank one is also two-dimensional, and the set of lines $\mathbb{R}N$ spanned by a nonzero nilpotent is a circle. So the answer to the classification question is: six types, three of them continuous families of dimensions two, two and one.
@@ -157,7 +157,7 @@ The signs differ from the quaternion brackets of the vector part by the factor $
 **Theorem (subalgebras of $\mathfrak{sl}(2,\mathbb{R})$).** Up to conjugation by $GL(2,\mathbb{R})$, the subalgebras of $\mathfrak{sl}(2,\mathbb{R})$ are:
 
 1. $0$;
-2. the elliptic line $\mathbb{R}J'$ with $J'^2=-I$, compact, one conjugacy class;
+2. the elliptic line $\mathbb{R}J'$ with $J'{}^2=-I$, compact, one conjugacy class;
 3. the hyperbolic line $\mathbb{R}H'$ with $H'$ semisimple with two distinct real eigenvalues and zero trace, one conjugacy class;
 4. the parabolic line $\mathbb{R}N$ with $N\neq0$ and $N^2=0$, one conjugacy class;
 5. the Borel subalgebra $\mathfrak{b}_0=\operatorname{span}_{\mathbb{R}}\{H',N\}$ with $[H',N]=N$, solvable and non-abelian, of dimension $2$, one conjugacy class;

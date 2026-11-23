@@ -32,17 +32,14 @@ involution that exchanges the closure operators and the interior operators of $L
 
 **Proof.** Let $c$ be monotone, extensive ($c(x) \geq x$) and idempotent. The map $c^{\perp}$ is
 monotone by *Involutions of the Operator Layer* (a conjugation by an order-reversing involution
-preserves monotonicity). It is idempotent, $(c^{\perp})^2 = {}^{\perp} c^2 {}^{\perp} = {}^{\perp} c
-{}^{\perp} = c^{\perp}$. For the deflation, $c(x^{\perp}) \geq x^{\perp}$, and applying the
-order-reversing ${}^{\perp}$ gives $c^{\perp}(x) = (c(x^{\perp}))^{\perp} \leq (x^{\perp})^{\perp} =
-x$. By duality, if $c$ is a closure operator with $c \geq \mathrm{id}$ and $c^2 = c$, then $c^{\perp}$
+preserves monotonicity). It is idempotent, $(c^{\perp})^2 = {}^{\perp} c^2 {}^{\perp} = {}^{\perp} c {}^{\perp} = c^{\perp}$. For the deflation, $c(x^{\perp}) \geq x^{\perp}$, and applying the
+order-reversing ${}^{\perp}$ gives $c^{\perp}(x) = (c(x^{\perp}))^{\perp} \leq (x^{\perp})^{\perp} = x$. By duality, if $c$ is a closure operator with $c \geq \mathrm{id}$ and $c^2 = c$, then $c^{\perp}$
 is monotone, idempotent and $\leq \mathrm{id}$, hence an interior operator. The same computation with
 $c$ replaced by an interior operator $i$ shows that $i^{\perp}$ is a closure operator; and the
 assignment is an involution because ${}^{\perp}$ is.
 
 **Corollary (the open and closed sets).** The open sets of $c^{\perp}$, the fixed points of the interior
-operator, are exactly the complements of the closed sets of $c$: $c^{\perp}(y) = y$ if and only if $y =
-x^{\perp}$ for a fixed point $x$ of $c$. The fixed points of $c$ and of $c^{\perp}$ correspond under
+operator, are exactly the complements of the closed sets of $c$: $c^{\perp}(y) = y$ if and only if $y = x^{\perp}$ for a fixed point $x$ of $c$. The fixed points of $c$ and of $c^{\perp}$ correspond under
 ${}^{\perp}$.
 
 **Proof.** $c^{\perp}(y) = y$ means $(c(y^{\perp}))^{\perp} = y$, that is, $c(y^{\perp}) = y^{\perp}$;
@@ -59,8 +56,7 @@ $$
 \boxed{\;c^{\perp} = f^{\perp} \circ g^{\perp}, \qquad (g \circ f)^{\perp} = f^{\perp} \circ g^{\perp}\;} .
 $$
 
-**Proof.** The conjugation is an anti-automorphism of composition, $(g \circ f)^{\perp} = f^{\perp}
-\circ g^{\perp}$, and by *Involutions of the Operator Layer* the conjugation reverses the adjunction,
+**Proof.** The conjugation is an anti-automorphism of composition, $(g \circ f)^{\perp} = f^{\perp} \circ g^{\perp}$, and by *Involutions of the Operator Layer* the conjugation reverses the adjunction,
 sending $f \dashv g$ to $g^{\perp} \dashv f^{\perp}$. So $c^{\perp} = f^{\perp} \circ g^{\perp}$ is the
 composite of a left adjoint followed by a right adjoint — the right adjoint of the reversed connection
 after its left adjoint — which is the interior operator $f^{\perp} \circ g^{\perp}$ of the reversed
@@ -81,8 +77,7 @@ identifies the left and right adjoints as displayed.
 commutes with ${}^{\perp}$. On a nondegenerate lattice with an orthocomplement the only fixed closure
 operator is the identity, and the only fixed interior operator is the identity.
 
-**Proof.** $c^{\perp} = {}^{\perp} c {}^{\perp} = c$ is exactly $c \circ {}^{\perp} = {}^{\perp} \circ
-c$, by composing with ${}^{\perp}$ and using that it is an involution. If $c = c^{\perp}$, then $c$ is
+**Proof.** $c^{\perp} = {}^{\perp} c {}^{\perp} = c$ is exactly $c \circ {}^{\perp} = {}^{\perp} \circ c$, by composing with ${}^{\perp}$ and using that it is an involution. If $c = c^{\perp}$, then $c$ is
 at the same time extensive (as a closure operator) and deflative (as its own conjugate, an interior
 operator), so $c = \mathrm{id}$; the same argument applies to an interior operator.
 
@@ -103,11 +98,9 @@ up-sets. The two families correspond under the complement.
 
 ## Summary
 
-On a poset with an order-reversing involution the conjugation $c \mapsto c^{\perp} = {}^{\perp} \circ c
-\circ {}^{\perp}$ sends a closure operator to an interior operator and back, and it is an involution
+On a poset with an order-reversing involution the conjugation $c \mapsto c^{\perp} = {}^{\perp} \circ c \circ {}^{\perp}$ sends a closure operator to an interior operator and back, and it is an involution
 exchanging the two families. The open sets of $c^{\perp}$ are the complements of the closed sets of $c$,
-and if $c = g \circ f$ comes from a Galois connection $f \dashv g$, then $c^{\perp} = f^{\perp} \circ
-g^{\perp}$ is the interior operator of the **reversed** connection $g^{\perp} \dashv f^{\perp}$; so the
+and if $c = g \circ f$ comes from a Galois connection $f \dashv g$, then $c^{\perp} = f^{\perp} \circ g^{\perp}$ is the interior operator of the **reversed** connection $g^{\perp} \dashv f^{\perp}$; so the
 involution reverses the Galois connection and exchanges the left and right adjoints. A closure operator
 is fixed exactly when it commutes with the involution, and on a nondegenerate lattice the only fixed
 closure operator is the identity, so the involution pairs each closure operator with its dual interior

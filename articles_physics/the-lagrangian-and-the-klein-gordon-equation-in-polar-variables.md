@@ -30,7 +30,7 @@ The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the act
 
 ## Conventions
 
-**The conventions are restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}$ is the centre; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian fixed subspaces; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the element-form companion: the quaternionic pairing gives $\mathrm{Sc}(A^{\natural}A)=\sum_{\imath} a_{\imath}^{2}$ for complex coefficients, which is not real, and it is not used. The d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ with $r'_t=c\,t'$, the four-position is $\tilde R_\Phi=i r'_t e_t+\vec r$, and $\nu_m=\frac{mc}{h}$. The action is a functional of the eight parameters over four-dimensional space, and the material time is $r'_t=c\,t'$ throughout, so every temporal derivative below is a derivative in a length. Every symbol is defined where it first appears, and §*Summary of Notation* collects the letters with their domains.
+**The conventions are restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}$ is the centre; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian fixed subspaces; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the element-form companion: the quaternionic pairing gives $\mathrm{Sc}(A^{\natural}A)=\sum_{\imath} a_{\imath}^{2}$ for complex coefficients, which is not real, and it is not used. The d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'{}^{2}_{t}$ with $r'_t=c\,t'$, the four-position is $\tilde R_\Phi=i r'_t e_t+\vec r$, and $\nu_m=\frac{mc}{h}$. The action is a functional of the eight parameters over four-dimensional space, and the material time is $r'_t=c\,t'$ throughout, so every temporal derivative below is a derivative in a length. Every symbol is defined where it first appears, and §*Summary of Notation* collects the letters with their domains.
 
 ## The Action in Polar Variables
 
@@ -309,7 +309,7 @@ $$
 j_{r'_t}=2\,\mathrm{Re}\,\mathrm{Sc}\big[i(\partial_{r'_t}\tilde\Xi)^{*}\tilde\Xi\big]
 =2\varrho^{2}\,\partial_{r'_t}\theta_{\mathrm{pha}}=\frac{2\pi 2\varrho^{2}}{h}\,\partial_{r'_t}S_{\tilde\Xi},
 \qquad
-j_\imath=-2\varrho^{2}\,\partial_{r_k}\theta_{\mathrm{pha}},
+j_{\imath}=-2\varrho^{2}\,\partial_{r_k}\theta_{\mathrm{pha}},
 $$
 
 because $\mathcal{A}_{\imath}=\partial_{\imath}\ln \varrho+i\partial_{\imath}\theta_{\mathrm{pha}}$, so that $i\mathcal{A}_{\imath}^{*}$ has scalar part $\partial_{\imath}\theta_{\mathrm{pha}}$. The charge density is therefore the density times the phase rate, and the phase rate is minus the energy over $\frac{h}{2\pi} c$,
@@ -330,7 +330,7 @@ which is the companion's $-2\nu_m\rho_{\mathrm{chg}}$ with the parent's $\rho_{\
 **Conservation is one of the two Euler–Lagrange equations.** Taking the divergence,
 
 $$
-\partial_{r'_t}j_{r'_t}+\sum_{\imath\in\{x,y,z\}}\partial_{r_k}j_\imath
+\partial_{r'_t}j_{r'_t}+\sum_{\imath\in\{x,y,z\}}\partial_{r_k}j_{\imath}
 =2\Bigl[\partial_{r'_t}\bigl(\varrho^{2}\partial_{r'_t}\theta_{\mathrm{pha}}\bigr)-\vec\nabla_\Phi\cdot\bigl(\varrho^{2}\vec\nabla_\Phi\theta_{\mathrm{pha}}\bigr)\Bigr],
 $$
 
@@ -401,7 +401,7 @@ For the general element the equivalence with the Klein–Gordon equation is exac
 | $\mathbb{B}_{C},\ \mathbb{B}_{\Psi},\ \mathbb{B}_{\Phi}$ | Centre, Hermitian subspace, anti-Hermitian subspace |
 | $^{*},\ ^{\natural}$ | Hermitian conjugation, quaternion conjugation |
 | $\mathrm{Sc}$ | Scalar part |
-| $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ | d'Alembertian; $r'_t=c\,t'$ |
+| $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'{}^{2}_{t}$ | d'Alembertian; $r'_t=c\,t'$ |
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word |
 | $\varrho>0$ | Scale and amplitude; $\rho_{\mathrm{num}}=\varrho^{2}$ |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Phase angle; $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ |
@@ -417,7 +417,7 @@ For the general element the equivalence with the Klein–Gordon equation is exac
 | $p_{a}$ | The eight parameters as coordinates |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $V$ | $\mathrm{Sc}(\tilde\Xi^{*}\tilde M\tilde\Xi)/\varrho^{2}$, real, a function of rapidity and axis |
-| $j_{r'_t},\ j_\imath$ | Charge current; $j_{r'_t}=2\rho_{\mathrm{num}}\partial_{r'_t}\theta_{\mathrm{pha}}$ |
+| $j_{r'_t},\ j_{\imath}$ | Charge current; $j_{r'_t}=2\rho_{\mathrm{num}}\partial_{r'_t}\theta_{\mathrm{pha}}$ |
 | $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}E/(mc^{2})$ | Charge density; $j_{r'_t}=-4\pi\nu_m\rho_{\mathrm{chg}}$ |
 | $T_{00}$ | Energy density; four squares plus $\varrho^{2}V$ |
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | Quantum potential of the amplitude equation |

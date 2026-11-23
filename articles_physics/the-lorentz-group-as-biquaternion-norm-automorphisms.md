@@ -158,7 +158,7 @@ a four-**real**-dimensional subspace, with the real basis $\{ie_t, \vec e_x, \ve
 
 $$
 \tilde R_\Phi = i r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z,
-\qquad r'_t, r_\imath\in\mathbb{R},
+\qquad r'_t, r_{\imath}\in\mathbb{R},
 $$
 
 the biquaternion norm is real and indefinite:
@@ -167,7 +167,7 @@ $$
 \boxed{\ \langle\tilde R_\Phi\rangle_{\natural} = (i r'_t)^2 + r_x^2 + r_y^2 + r_z^2 = -{r'_t}^2 +r_x^2+r_y^2+r_z^2\ }\ .
 $$
 
-The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, read in the real coordinates $R_t=i r'_t$, $R_\imath=r_\imath$, is therefore the level-2 Minkowski interval of the series, of inertia $(3,1)$. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
+The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, read in the real coordinates $R_t=i r'_t$, $R_{\imath}=r_{\imath}$, is therefore the level-2 Minkowski interval of the series, of inertia $(3,1)$. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
 
 | Slice | General element | $\langle\cdot\rangle_{\natural}$ | Inertia |
 |---|---|---|---|
@@ -423,11 +423,11 @@ $$
 This is the Lie algebra of the automorphism group, and it splits into **rotation** generators $\mathcal{J}_{\imath} = \vec e_{\imath}$ (real quaternion directions) and **boost** generators $\mathcal{K}_{\imath} = i\vec e_{\imath}$ (imaginary vector directions). Their brackets are computed directly from the quaternion multiplication rule; the commutator is $[A,B] = AB-BA$, and
 
 $$
-[\mathcal{J}_{\imath},\mathcal{J}_{\jmath}] = 2\varepsilon_{\imath\jmathk}\mathcal{J}_\imath,
+[\mathcal{J}_{\imath},\mathcal{J}_{\jmath}] = 2\varepsilon_{\imath\jmath k}\mathcal{J}_{\imath},
 \qquad
-[\mathcal{J}_{\imath},\mathcal{K}_{\jmath}] = 2\varepsilon_{\imath\jmathk}\mathcal{K}_\imath,
+[\mathcal{J}_{\imath},\mathcal{K}_{\jmath}] = 2\varepsilon_{\imath\jmath k}\mathcal{K}_{\imath},
 \qquad
-[\mathcal{K}_{\imath},\mathcal{K}_{\jmath}] = -2\varepsilon_{\imath\jmathk}\mathcal{J}_\imath .
+[\mathcal{K}_{\imath},\mathcal{K}_{\jmath}] = -2\varepsilon_{\imath\jmath k}\mathcal{J}_{\imath} .
 $$
 
 The first two say that the rotations close and that the boosts transform as a vector under them; the third, with its minus sign, is the algebraic statement that two boosts do not close into a boost but into a rotation. This is the infinitesimal form of the Thomas–Wigner rotation, and the sign is the one that makes the boost directions a vector and the rotation directions an axial vector.
@@ -441,14 +441,14 @@ $$
 where $\mathrm{i}$ is the complexification unit — distinct from the algebra's own central $i$ — gives two commuting copies of the rotation algebra,
 
 $$
-[\mathcal{N}^{+}_{\imath},\mathcal{N}^{+}_{\jmath}] = \varepsilon_{\imath\jmathk}\mathcal{N}^{+}_\imath,
+[\mathcal{N}^{+}_{\imath},\mathcal{N}^{+}_{\jmath}] = \varepsilon_{\imath\jmath k}\mathcal{N}^{+}_{\imath},
 \qquad
-[\mathcal{N}^{-}_{\imath},\mathcal{N}^{-}_{\jmath}] = \varepsilon_{\imath\jmathk}\mathcal{N}^{-}_\imath,
+[\mathcal{N}^{-}_{\imath},\mathcal{N}^{-}_{\jmath}] = \varepsilon_{\imath\jmath k}\mathcal{N}^{-}_{\imath},
 \qquad
 [\mathcal{N}^{+}_{\imath},\mathcal{N}^{-}_{\jmath}] = 0 .
 $$
 
-The factor $\tfrac14$ is forced by the normalization $[\mathcal{J}_{\imath},\mathcal{J}_{\jmath}] = 2\varepsilon_{\imath\jmathk}\mathcal{J}_\imath$. With $\mathcal{K}_{\imath} = i\vec e_{\imath}$ and $\mathrm{i}$ a second central imaginary unit, the combination can be written $\mathcal{N}^{\pm}_{\imath} = \tfrac14\left(1 \pm \mathrm{i} i\right)\vec e_{\imath}$, and its central factor is idempotent up to a factor two,
+The factor $\tfrac14$ is forced by the normalization $[\mathcal{J}_{\imath},\mathcal{J}_{\jmath}] = 2\varepsilon_{\imath\jmath k}\mathcal{J}_{\imath}$. With $\mathcal{K}_{\imath} = i\vec e_{\imath}$ and $\mathrm{i}$ a second central imaginary unit, the combination can be written $\mathcal{N}^{\pm}_{\imath} = \tfrac14\left(1 \pm \mathrm{i} i\right)\vec e_{\imath}$, and its central factor is idempotent up to a factor two,
 
 $$
 \left(1 \pm \mathrm{i} i\right)^2 = 2\left(1 \pm \mathrm{i} i\right),
@@ -456,7 +456,7 @@ $$
 (\mathrm{i} i)^2 = \mathrm{i}^2 i^2 = +e_t .
 $$
 
-This is what makes each combination close on itself with the same structure constants, and what makes the two commute: $\left(1 + \mathrm{i} i\right)\left(1 - \mathrm{i} i\right) = 1 - (\mathrm{i} i)^2 = 0$. For $[\mathcal{N}^{+}_{\imath},\mathcal{N}^{+}_{\jmath}]$ the central factor contributes $(1+\mathrm{i} i)^2 = 2(1+\mathrm{i} i)$ and the quaternion commutator contributes $[\vec e_{\imath},\vec e_{\jmath}] = 2\varepsilon_{\imath\jmathk}\vec e_\imath$, so the product is $4\varepsilon_{\imath\jmathk}\left(1+\mathrm{i} i\right)\vec e_\imath/16 = \varepsilon_{\imath\jmathk}\mathcal{N}^{+}_\imath$, as displayed. The combinations are the ones that diagonalize the adjoint action of the complexified boost generator. This is the Lie-algebra shadow of the group isomorphism $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\mathbb{Z}_2$ of the complex section: the two factors are the two commuting copies of the complexified rotation algebra. The care needed here is that $\mathrm{i}$ is the complexification unit and not the algebra's scalar imaginary; the latter already appears in $\mathcal{K}_{\imath} = i\vec e_{\imath}$, and conflating the two would be a notational error. The distinction is the same one that separates the real form $\mathrm{SO}(1,3)$ from its complexification.
+This is what makes each combination close on itself with the same structure constants, and what makes the two commute: $\left(1 + \mathrm{i} i\right)\left(1 - \mathrm{i} i\right) = 1 - (\mathrm{i} i)^2 = 0$. For $[\mathcal{N}^{+}_{\imath},\mathcal{N}^{+}_{\jmath}]$ the central factor contributes $(1+\mathrm{i} i)^2 = 2(1+\mathrm{i} i)$ and the quaternion commutator contributes $[\vec e_{\imath},\vec e_{\jmath}] = 2\varepsilon_{\imath\jmath k}\vec e_{\imath}$, so the product is $4\varepsilon_{\imath\jmath k}\left(1+\mathrm{i} i\right)\vec e_{\imath}/16 = \varepsilon_{\imath\jmath k}\mathcal{N}^{+}_{\imath}$, as displayed. The combinations are the ones that diagonalize the adjoint action of the complexified boost generator. This is the Lie-algebra shadow of the group isomorphism $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\mathbb{Z}_2$ of the complex section: the two factors are the two commuting copies of the complexified rotation algebra. The care needed here is that $\mathrm{i}$ is the complexification unit and not the algebra's scalar imaginary; the latter already appears in $\mathcal{K}_{\imath} = i\vec e_{\imath}$, and conflating the two would be a notational error. The distinction is the same one that separates the real form $\mathrm{SO}(1,3)$ from its complexification.
 
 ## What the Algebra Supplies and What Is Standard
 
@@ -524,11 +524,11 @@ $$
 the map being two-to-one with kernel $\{\pm e_t\}$. Infinitesimally, the algebra is $\mathfrak{sl}(2,\mathbb{C}) = \{X : \mathrm{Sc}(X)=0\}$, spanned by the rotation generators $\mathcal{J}_{\imath} = \vec e_{\imath}$ and the boost generators $\mathcal{K}_{\imath} = i\vec e_{\imath}$, with
 
 $$
-[\mathcal{J}_{\imath},\mathcal{J}_{\jmath}] = 2\varepsilon_{\imath\jmathk}\mathcal{J}_\imath,
+[\mathcal{J}_{\imath},\mathcal{J}_{\jmath}] = 2\varepsilon_{\imath\jmath k}\mathcal{J}_{\imath},
 \qquad
-[\mathcal{J}_{\imath},\mathcal{K}_{\jmath}] = 2\varepsilon_{\imath\jmathk}\mathcal{K}_\imath,
+[\mathcal{J}_{\imath},\mathcal{K}_{\jmath}] = 2\varepsilon_{\imath\jmath k}\mathcal{K}_{\imath},
 \qquad
-[\mathcal{K}_{\imath},\mathcal{K}_{\jmath}] = -2\varepsilon_{\imath\jmathk}\mathcal{J}_\imath,
+[\mathcal{K}_{\imath},\mathcal{K}_{\jmath}] = -2\varepsilon_{\imath\jmath k}\mathcal{J}_{\imath},
 $$
 
 whose complexification splits into two commuting rotation algebras. The Lorentz group, in this interpretation, is what the biquaternion norm's automorphisms become when they are required to respect the algebra's real structure.
@@ -576,7 +576,7 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 | $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Hermitian pair; the automorphism of the slice |
 | $\pi:SL(2,\mathbb{C})\to SO^+(1,3)$, $\ker\pi=\{\pm e_t\}$ | Two-to-one covering homomorphism |
 | $\mathfrak{sl}(2,\mathbb{C}) = \{X:\mathrm{Sc}(X)=0\}$ | Lie algebra; $\mathcal{J}_{\imath}=\vec e_{\imath}$ (rotations), $\mathcal{K}_{\imath}=i\vec e_{\imath}$ (boosts) |
-| $[\mathcal{K}_{\imath},\mathcal{K}_{\jmath}]=-2\varepsilon_{\imath\jmathk}\mathcal{J}_\imath$ | Boosts do not close; infinitesimal Wigner rotation |
+| $[\mathcal{K}_{\imath},\mathcal{K}_{\jmath}]=-2\varepsilon_{\imath\jmath k}\mathcal{J}_{\imath}$ | Boosts do not close; infinitesimal Wigner rotation |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |

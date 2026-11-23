@@ -152,8 +152,7 @@ order are exactly the transforms of the positive measures with the corresponding
 bounded continuous positive definite function is exactly a positive definite distribution whose measure is
 finite (Bochner's theorem in the function case).
 
-**Proof.** The order of a distribution is the least $N$ with $\lvert\langle T,\varphi\rangle\rvert\leq
-C\sum_{\lvert\alpha\rvert\leq N}\sup\lvert\partial^\alpha\varphi\rvert$, and the transformed pairing
+**Proof.** The order of a distribution is the least $N$ with $\lvert\langle T,\varphi\rangle\rvert\leq C\sum_{\lvert\alpha\rvert\leq N}\sup\lvert\partial^\alpha\varphi\rvert$, and the transformed pairing
 $\int\mathcal F\\varphi\,d\mu$ shows that the growth of $\mu$ is controlled by the seminorms of $\varphi$ used;
 the finite-measure case is Bochner's theorem for bounded continuous functions.
 

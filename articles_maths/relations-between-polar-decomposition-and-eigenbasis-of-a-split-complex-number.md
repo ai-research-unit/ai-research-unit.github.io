@@ -40,7 +40,7 @@ $$
 \theta_{\mathrm{hpa}}=\tfrac12\ln\left\lvert\frac{\lambda_+}{\lambda_-}\right\rvert,
 $$
 
-and $\epsilon$ is the component determined by the signs of $\lambda_\pm$. The product of the eigenvalues is $\lambda_+\lambda_-=q^2-q'^2=(q+q')(q-q')$, and the ratio is the exponential of twice the hyperbolic angle, up to the sign of $q^2-q'^2$. The dictionary is a bijection between the four components of ${\mathbb{C}_{\mathrm{spl}}}^\times$ and the four sign patterns.
+and $\epsilon$ is the component determined by the signs of $\lambda_\pm$. The product of the eigenvalues is $\lambda_+\lambda_-=q^2-q'{}^2=(q+q')(q-q')$, and the ratio is the exponential of twice the hyperbolic angle, up to the sign of $q^2-q'{}^2$. The dictionary is a bijection between the four components of ${\mathbb{C}_{\mathrm{spl}}}^\times$ and the four sign patterns.
 
 | Question | Answer |
 |---|---|
@@ -53,7 +53,7 @@ and $\epsilon$ is the component determined by the signs of $\lambda_\pm$. The pr
 | Sign pattern | $(\sigma_+,\sigma_-)$ is the spectral reading of $\epsilon$ |
 | Factor decompositions | $\varrho=\varrho\Pi_++\varrho\Pi_-$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\theta_{\mathrm{hpa}} j}=e^{\theta_{\mathrm{hpa}}}\Pi_++e^{-\theta_{\mathrm{hpa}}}\Pi_-$ |
 | Exponential on idempotents | $\exp(Q_{\log})=\varrho e^{\theta_{\mathrm{hpa}}}\Pi_++\varrho e^{-\theta_{\mathrm{hpa}}}\Pi_-$ |
-| Common domain | the invertibles, $q^2-q'^2=\lambda_+\lambda_-\neq0$ |
+| Common domain | the invertibles, $q^2-q'{}^2=\lambda_+\lambda_-\neq0$ |
 | Spectral domain | all $Q$; the zero divisors have a spectrum but no polar word |
 | Kernel | trivial: no continuous period |
 
@@ -85,14 +85,14 @@ with $\Pi_\pm$ primitive, orthogonal, complete and central. These are the statem
 |---|---|
 | Spectrum | $\{\lambda_+,\lambda_-\}=\{q+q',q-q'\}$ |
 | Sum | $\lambda_++\lambda_-=2q$ |
-| Product | $\lambda_+\lambda_-=q^2-q'^2$ |
+| Product | $\lambda_+\lambda_-=q^2-q'{}^2$ |
 | Distinctness | $\lambda_+\neq\lambda_-\iff q'\neq0$ |
 | Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$ |
 | Decomposition | $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ |
 
 ### The Polar Decomposition
 
-Every unit $Q\in{\mathbb{C}_{\mathrm{spl}}}^\times=\{q^2-q'^2\neq0\}$ has a unique writing
+Every unit $Q\in{\mathbb{C}_{\mathrm{spl}}}^\times=\{q^2-q'{}^2\neq0\}$ has a unique writing
 
 $$
 Q=\epsilon\exp(Q_{\log})=\varrho\,\epsilon\exp(\theta_{\mathrm{hpa}} j),
@@ -100,13 +100,13 @@ Q=\epsilon\exp(Q_{\log})=\varrho\,\epsilon\exp(\theta_{\mathrm{hpa}} j),
 Q_{\log}=\ln \varrho+j\theta_{\mathrm{hpa}},
 $$
 
-with $\varrho>0$, $\theta_{\mathrm{hpa}}\in\mathbb{R}$ and $\epsilon\in\{\pm1,\pm j\}$. The factor $\varrho=\sqrt{\lvert q^2-q'^2\rvert}$ is the modulus, $\theta_{\mathrm{hpa}}$ is the hyperbolic angle, and $\epsilon$ is the component sign; the unit factor is $u=\epsilon\exp(\theta_{\mathrm{hpa}} j)=Q/\varrho$, of modulus one. These are the statements of *Polar Decomposition of Split-Complex Numbers*, §*The Decomposition*, §*Existence and Uniqueness* and §*The Four Components*.
+with $\varrho>0$, $\theta_{\mathrm{hpa}}\in\mathbb{R}$ and $\epsilon\in\{\pm1,\pm j\}$. The factor $\varrho=\sqrt{\lvert q^2-q'{}^2\rvert}$ is the modulus, $\theta_{\mathrm{hpa}}$ is the hyperbolic angle, and $\epsilon$ is the component sign; the unit factor is $u=\epsilon\exp(\theta_{\mathrm{hpa}} j)=Q/\varrho$, of modulus one. These are the statements of *Polar Decomposition of Split-Complex Numbers*, §*The Decomposition*, §*Existence and Uniqueness* and §*The Four Components*.
 
 | Polar item | Value |
 |---|---|
-| Domain | ${\mathbb{C}_{\mathrm{spl}}}^\times=\{Q:q^2-q'^2\neq0\}$ |
+| Domain | ${\mathbb{C}_{\mathrm{spl}}}^\times=\{Q:q^2-q'{}^2\neq0\}$ |
 | Decomposition | $Q=\varrho\,\epsilon\exp(\theta_{\mathrm{hpa}} j)$ |
-| Modulus | $\varrho=\sqrt{\lvert q^2-q'^2\rvert}>0$ |
+| Modulus | $\varrho=\sqrt{\lvert q^2-q'{}^2\rvert}>0$ |
 | Angle | $\theta_{\mathrm{hpa}}\in\mathbb{R}$ |
 | Component sign | $\epsilon\in\{\pm1,\pm j\}$ |
 | Exponent | $Q_{\log}=\ln \varrho+j\theta_{\mathrm{hpa}}$ |
@@ -120,19 +120,19 @@ The spectral decomposition exists for every $Q$, including the zero divisors and
 $$
 q'\neq0\quad\text{(distinct eigenvalues)},
 \qquad
-q^2-q'^2=\lambda_+\lambda_-\neq0\quad\text{(invertibility)}.
+q^2-q'{}^2=\lambda_+\lambda_-\neq0\quad\text{(invertibility)}.
 $$
 
-They are independent: a zero divisor has $q'\neq0$ and $q^2-q'^2=0$, so it has two distinct eigenvalues and no polar word. The table records the four possibilities.
+They are independent: a zero divisor has $q'\neq0$ and $q^2-q'{}^2=0$, so it has two distinct eigenvalues and no polar word. The table records the four possibilities.
 
 | Condition | Spectrum | Polar decomposition |
 |---|---|---|
-| $q'\neq0$, $q^2-q'^2\neq0$ | two distinct nonzero eigenvalues | exists, and the component sign is one of four |
-| $q'\neq0$, $q^2-q'^2=0$ | two distinct eigenvalues, one zero | does not exist: $Q$ is a zero divisor |
+| $q'\neq0$, $q^2-q'{}^2\neq0$ | two distinct nonzero eigenvalues | exists, and the component sign is one of four |
+| $q'\neq0$, $q^2-q'{}^2=0$ | two distinct eigenvalues, one zero | does not exist: $Q$ is a zero divisor |
 | $q'=0$, $q^2\neq0$ | one repeated nonzero eigenvalue | exists with $\theta_{\mathrm{hpa}}=0$ and $\epsilon=\operatorname{sgn}q$ |
-| $q'=0$, $q^2-q'^2=0$ | the eigenvalue $0$ | does not exist: $Q=0$ |
+| $q'=0$, $q^2-q'{}^2=0$ | the eigenvalue $0$ | does not exist: $Q=0$ |
 
-The spectral domain is therefore strictly larger than the polar domain. The gap is exactly the null set $q^2-q'^2=0$: the nonzero zero divisors and the zero element, on which the eigenvalue decomposition survives and the logarithm does not.
+The spectral domain is therefore strictly larger than the polar domain. The gap is exactly the null set $q^2-q'{}^2=0$: the nonzero zero divisors and the zero element, on which the eigenvalue decomposition survives and the logarithm does not.
 
 ## The Dictionary
 
@@ -173,10 +173,10 @@ $$
 \frac{\lambda_+}{\lambda_-}=\frac{\sigma_+}{\sigma_-}e^{2\theta_{\mathrm{hpa}}}.
 $$
 
-Since $\sigma_+\sigma_-=\operatorname{sgn}(q^2-q'^2)$ and $\sigma_+/\sigma_-=\operatorname{sgn}(q^2-q'^2)$, both identities reduce to
+Since $\sigma_+\sigma_-=\operatorname{sgn}(q^2-q'{}^2)$ and $\sigma_+/\sigma_-=\operatorname{sgn}(q^2-q'{}^2)$, both identities reduce to
 
 $$
-\lambda_+\lambda_-=q^2-q'^2,
+\lambda_+\lambda_-=q^2-q'{}^2,
 \qquad
 \left\lvert\frac{\lambda_+}{\lambda_-}\right\rvert=e^{2\theta_{\mathrm{hpa}}}.
 $$
@@ -188,7 +188,7 @@ The product is independent of the component; the modulus of the ratio is the exp
 For an invertible element $Q=\lambda_+\Pi_++\lambda_-\Pi_-$, the modulus and the angle are
 
 $$
-\boxed{\; \varrho=\sqrt{\lvert\lambda_+\lambda_-\rvert}=\sqrt{\lvert q^2-q'^2\rvert},
+\boxed{\; \varrho=\sqrt{\lvert\lambda_+\lambda_-\rvert}=\sqrt{\lvert q^2-q'{}^2\rvert},
 \qquad
 \theta_{\mathrm{hpa}}=\tfrac12\ln\left\lvert\frac{\lambda_+}{\lambda_-}\right\rvert \;}
 $$
@@ -212,7 +212,7 @@ $$
 
 is a bijection from the four components, each parametrised by $(\varrho,\theta_{\mathrm{hpa}})\in(0,\infty)\times\mathbb{R}$, onto the four open quadrants of $\mathbb{R}^2$. Its inverse is the formula above.
 
-*Proof.* The forward map gives $\lambda_+\lambda_-=\sigma_+\sigma_-\varrho^2e^{0}=q^2-q'^2$, whose sign is $\sigma_+\sigma_-$, and $\lvert\lambda_+/\lambda_-\rvert=e^{2\theta_{\mathrm{hpa}}}$. Hence $\varrho$ and $\theta_{\mathrm{hpa}}$ are recovered by the displayed formulas, and the sign pair is recovered from $\lambda_\pm$. Conversely, the formulas reproduce $\lambda_\pm$ from $(\varrho,\theta_{\mathrm{hpa}},\epsilon)$.
+*Proof.* The forward map gives $\lambda_+\lambda_-=\sigma_+\sigma_-\varrho^2e^{0}=q^2-q'{}^2$, whose sign is $\sigma_+\sigma_-$, and $\lvert\lambda_+/\lambda_-\rvert=e^{2\theta_{\mathrm{hpa}}}$. Hence $\varrho$ and $\theta_{\mathrm{hpa}}$ are recovered by the displayed formulas, and the sign pair is recovered from $\lambda_\pm$. Conversely, the formulas reproduce $\lambda_\pm$ from $(\varrho,\theta_{\mathrm{hpa}},\epsilon)$.
 
 ### The Eigenprojections
 
@@ -310,8 +310,8 @@ The spectral regimes of the eigenvalue article and the components of the polar a
 
 | Regime | Condition | Spectral data | Polar data |
 |---|---|---|---|
-| Distinct interior | $q'\neq0$, $q^2-q'^2\neq0$ | $\lambda_+\neq\lambda_-$, both nonzero | $\varrho>0$, $\theta_{\mathrm{hpa}}\in\mathbb{R}$, one of four $\epsilon$ |
-| Zero divisor | $q'\neq0$, $q^2-q'^2=0$ | $\lambda_+\neq\lambda_-$, one zero | none: not an invertible element |
+| Distinct interior | $q'\neq0$, $q^2-q'{}^2\neq0$ | $\lambda_+\neq\lambda_-$, both nonzero | $\varrho>0$, $\theta_{\mathrm{hpa}}\in\mathbb{R}$, one of four $\epsilon$ |
+| Zero divisor | $q'\neq0$, $q^2-q'{}^2=0$ | $\lambda_+\neq\lambda_-$, one zero | none: not an invertible element |
 | Scalar nonzero | $q'=0$, $q\neq0$ | $\lambda_+=\lambda_-=q$ | $\varrho=\lvert q\rvert$, $\theta_{\mathrm{hpa}}=0$, $\epsilon=\operatorname{sgn}q$ |
 | Zero | $q'=0$, $q=0$ | $\lambda_+=\lambda_-=0$ | none |
 | Jordan | absent: the algebra is reduced | — | — |
@@ -319,7 +319,7 @@ The spectral regimes of the eigenvalue article and the components of the polar a
 
 ### The Zero-Divisor Regime
 
-A nonzero zero divisor has $q^2-q'^2=0$ and $q'\neq0$, so $q'=\pm q$ and
+A nonzero zero divisor has $q^2-q'{}^2=0$ and $q'\neq0$, so $q'=\pm q$ and
 
 $$
 Q=q(1\pm j)=2q\,\Pi_\pm.
@@ -425,7 +425,7 @@ Take $\varrho=4$ and $\theta_{\mathrm{hpa}}=\ln2$. The four components are obtai
 | $j$ | $4j(\cosh\ln2+j\sinh\ln2)=3+5j$ | $8$ | $-2$ | $(+,-)$ |
 | $-j$ | $-3-5j$ | $-8$ | $2$ | $(-,+)$ |
 
-The table is the dictionary in one line: the modulus and the angle are common, and the four sign patterns are the four components. The product $\lambda_+\lambda_-$ is $16$ in the first two rows and $-16$ in the last two, equal to $q^2-q'^2$; the ratio $\lvert\lambda_+/\lambda_-\rvert$ is $4=e^{2\theta_{\mathrm{hpa}}}$ in every row.
+The table is the dictionary in one line: the modulus and the angle are common, and the four sign patterns are the four components. The product $\lambda_+\lambda_-$ is $16$ in the first two rows and $-16$ in the last two, equal to $q^2-q'{}^2$; the ratio $\lvert\lambda_+/\lambda_-\rvert$ is $4=e^{2\theta_{\mathrm{hpa}}}$ in every row.
 
 ### From the Spectrum to the Polar Data
 
@@ -485,7 +485,7 @@ The table collects the formulas in one place.
 | Sign pair | $(\sigma_+,\sigma_-)$ is the spectral reading of $\epsilon$ |
 | Factor decompositions | $\varrho=\varrho\Pi_++\varrho\Pi_-$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\theta_{\mathrm{hpa}} j}=e^{\theta_{\mathrm{hpa}}}\Pi_++e^{-\theta_{\mathrm{hpa}}}\Pi_-$ |
 | Exponential on idempotents | $\exp(Q_{\log})=\varrho e^{\theta_{\mathrm{hpa}}}\Pi_++\varrho e^{-\theta_{\mathrm{hpa}}}\Pi_-$ |
-| Product | $\lambda_+\lambda_-=q^2-q'^2=\varrho^2\operatorname{sgn}(q^2-q'^2)$ |
+| Product | $\lambda_+\lambda_-=q^2-q'{}^2=\varrho^2\operatorname{sgn}(q^2-q'{}^2)$ |
 | Ratio | $\lvert\lambda_+/\lambda_-\rvert=e^{2\theta_{\mathrm{hpa}}}$ |
 | Exponent eigenvalues | $\ln \varrho\pm\theta_{\mathrm{hpa}}=\ln\lvert\lambda_\pm\rvert$ |
 | Kernel of $\exp$ | $\{0\}$ |
@@ -505,7 +505,7 @@ The table compares the three relation articles; in the split-complex column, $\s
 | Eigenvalues from polar data | $\sigma_\pm \varrho e^{\pm\theta_{\mathrm{hpa}}}$ | $\varrho e^{i\theta_{\mathrm{pha}}}e^{\pm(\theta_{\mathrm{hpa}}+i\theta_{\mathrm{phb}})}$ | $\varrho e^{i\theta_{\mathrm{pha}}}\bigl(U_t\pm i(\vec U\cdot\vec U)^{1/2}\bigr)$ |
 | Polar factors from spectrum | $\varrho$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\theta_{\mathrm{hpa}} j}=e^{\theta_{\mathrm{hpa}}}\Pi_++e^{-\theta_{\mathrm{hpa}}}\Pi_-$ | $\breve M_{\mathrm{mod}}=\varrho_+\Pi_++\varrho_-\Pi_-$, $u=e^{i\theta_+}\Pi_++e^{i\theta_-}\Pi_-$ | $\tilde U=\dfrac{\lambda_+}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_{\mathrm{id},++}\dfrac{\lambda_-}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_{\mathrm{id},-}$, $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ |
 | Discrete data | $\epsilon\in(\mathbb{Z}/2)^2$ | lattice $\Lambda$ in $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ | none |
-| Polar domain | $q^2-q'^2\neq0$ | $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2\neq0$ |
+| Polar domain | $q^2-q'{}^2\neq0$ | $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2\neq0$ |
 | Spectral domain | all $Q$ | all $\breve Q$ | $Q_x^2+Q_y^2+Q_z^2\neq0$, or $\vec Q=0$ |
 | Zero divisors | spectral, no polar word | spectral, no polar word | spectral, no polar word |
 | Zero element | spectral, no polar word | spectral, no polar word | spectral, no polar word |
@@ -522,8 +522,8 @@ Read down a column for one algebra and across a row for one concept. The first t
 | $Q=q+jq'$ | a split-complex number |
 | $\lambda_\pm=q\pm q'$ | the eigenvalues |
 | $\Pi_\pm=\tfrac12(1\pm j)$ | the fixed central idempotents |
-| $q^2-q'^2=\lambda_+\lambda_-$ | the product |
-| $\varrho=\sqrt{\lvert q^2-q'^2\rvert}$ | the modulus |
+| $q^2-q'{}^2=\lambda_+\lambda_-$ | the product |
+| $\varrho=\sqrt{\lvert q^2-q'{}^2\rvert}$ | the modulus |
 | $\theta_{\mathrm{hpa}}$ | the hyperbolic angle |
 | $\epsilon\in\{\pm1,\pm j\}$ | the component sign |
 | $\sigma_\pm=\operatorname{sgn}\lambda_\pm$ | the eigenvalue signs |

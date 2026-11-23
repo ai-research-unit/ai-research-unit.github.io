@@ -4,6 +4,8 @@
 
 This article writes the massive vector bosons of the electroweak sector as the extremum of one action, and shows that their masses are not parameters of that action but products of a coupling and a vacuum value. It is the action-first companion of *The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form*, which states the fields, the mixing and the masses; this article asks what functional produces the Proca-like equations of the two bosons, and where the masses in it come from.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 Its place in the sector. The functional here is the gauge and scalar part of the sector's complete action, written in [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html). That article is the sector's action; this one is the $W$–$Z$ reading of it, and it stops at the two curvatures and the scalar's gradient term.
 
 The equation. The parent's equations are the Yang–Mills equations for $W_{a,\imath}$ and $B_{\imath}$ with a source,
@@ -41,13 +43,13 @@ The electroweak action is standard and is imported whole. What the corpus contri
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\imath^{2}=-e_t$, used for the fermion and scalar elements; the gauge fields are written in components, because the $SU(2)$ factor is not carried by a single algebra element.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$, used for the fermion and scalar elements; the gauge fields are written in components, because the $SU(2)$ factor is not carried by a single algebra element.
 
 The group and the couplings. $SU(2)_L$ with coupling $g$ and generators $\tau_{a}=\sigma_{a}/2$ in the doublet; $\mathrm{U}(1)_Y$ with coupling $g_{\mathrm Y}$ and hypercharge $Y$. The doublet has $Y_{\mathrm{hch}}=\tfrac12$ and $T_3=\pm\tfrac12$ on its two components.
 
 The curvatures. $W_{a,\imath\jmath}=\partial_{\imath} W_{a,\jmath}-\partial_{\jmath} W_{a,\imath}+g\sum_{b,c}\varepsilon_{abc}W_{b,\imath} W_{c,\jmath}$ and $B_{\imath\jmath}=\partial_{\imath} B_{\jmath}-\partial_{\jmath} B_{\imath}$, with $\partial_{\imath}=\partial/\partial R_{\imath}$.
 
-The vacuum. $\langle\omicron_{\mathrm{hgs}}\rangle=(0,\;v/\sqrt2)^{T}$ with $v=246.22$ GeV; the potential is $V=\digamma_{\mathrm{qtc}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-v^2/2)^2$, so that $\partial V/\partial\omicron_{\mathrm{hgs}}^{\dagger}=0$ at the minimum and the mass of the radial mode is $\sqrt{2\digamma_{\mathrm{qtc}}}\,v$.
+The vacuum. $\langle\omicron_{\mathrm{hgs}}\rangle=(0,\;v/\sqrt2)^{T}$ with $v=3.9449\times10^{-8}\ \mathrm{J}$; the potential is $V=\digamma_{\mathrm{qtc}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-v^2/2)^2$, so that $\partial V/\partial\omicron_{\mathrm{hgs}}^{\dagger}=0$ at the minimum and the mass of the radial mode is $\sqrt{2\digamma_{\mathrm{qtc}}}\,v$.
 
 The sign convention. The curvature terms enter with $-\tfrac14$, the scalar kinetic term with a plus sign, and the potential with a minus sign, so that the Hamiltonian is positive and the potential's minimum is the vacuum. Every sign below follows from that choice.
 
@@ -233,7 +235,7 @@ The boundary. Both lines are carried by the algebra, since the compact factor is
 | $W_{a,\imath\jmath}$, $B_{\imath\jmath}$ | their curvatures |
 | $g$, $g_{\mathrm Y}$ | the two couplings |
 | $\omicron_{\mathrm{hgs}}$ | scalar doublet, $Y_{\mathrm{hch}}=\tfrac12$ |
-| $v$ | vacuum value, $246.22$ GeV |
+| $v$ | vacuum value, $3.9449\times10^{-8}\ \mathrm{J}$ |
 | $\theta_W$ | $\arctan(g_{\mathrm Y}/g)$ |
 | $W^\pm_{\imath}$, $Z_{\imath}$, $A_{\imath}$ | mass eigenstates |
 | $\rho$ | $M_W^2/(M_Z^2\cos^2\theta_W)$ |

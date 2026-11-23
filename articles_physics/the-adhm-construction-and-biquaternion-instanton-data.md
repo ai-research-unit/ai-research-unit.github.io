@@ -64,7 +64,7 @@ $$
 
 $$
 \boxed{\;\mu_{\mathbb C}=[B_1,B_2]+I J=0\;}
-\qquad\text{in }M_\imath(\mathbb C).
+\qquad\text{in }M_{\imath}(\mathbb C).
 $$
 
 The data are acted on by the $*$-unitary group $\mathrm{U}(k)$,
@@ -76,7 +76,7 @@ $$
 under which both equations are equivariant, and the moduli space is the quotient
 
 $$
-\mathcal M_\imath \;=\; \mu^{-1}(0)\big/ \mathrm{U}(k),
+\mathcal M_{\imath} \;=\; \mu^{-1}(0)\big/ \mathrm{U}(k),
 \qquad
 \mu=(\mu_{\mathbb R},\mu_{\mathbb C}) .
 $$
@@ -101,12 +101,12 @@ which is a pure-gauge-like expression in the $x$-dependent kernel; the self-dual
 
 ## The Dimension of the Moduli Space
 
-The dimension follows from counting the data, the constraints and the quotient — $4k^2+4kN$ real parameters, less $3k^2$ from the two equations, less $k^2$ from $\mathrm{U}(k)$; this is the general count of [The ADHM Construction and Instanton Moduli in Biquaternionic Form](the-adhm-construction-and-instanton-moduli-in-biquaternionic-form.html), and it leaves $4kN$. This agrees with the standard formula $\dim_{\mathbb R}\mathcal M_\imath=4k\,h^\vee$ for a simple group of dual Coxeter number $h^\vee$, since $h^\vee=N$ for $SU(N)$. For the framework's gauge factor $N=2$,
+The dimension follows from counting the data, the constraints and the quotient — $4k^2+4kN$ real parameters, less $3k^2$ from the two equations, less $k^2$ from $\mathrm{U}(k)$; this is the general count of [The ADHM Construction and Instanton Moduli in Biquaternionic Form](the-adhm-construction-and-instanton-moduli-in-biquaternionic-form.html), and it leaves $4kN$. This agrees with the standard formula $\dim_{\mathbb R}\mathcal M_{\imath}=4k\,h^\vee$ for a simple group of dual Coxeter number $h^\vee$, since $h^\vee=N$ for $SU(N)$. For the framework's gauge factor $N=2$,
 
 $$
-\boxed{\;\dim_{\mathbb R}\mathcal M_\imath = 8k ,
+\boxed{\;\dim_{\mathbb R}\mathcal M_{\imath} = 8k ,
 \qquad
-\dim_{\mathbb R}\mathcal M_\imath^{\text{physical}} = 8k-3\;},
+\dim_{\mathbb R}\mathcal M_{\imath}^{\text{physical}} = 8k-3\;},
 $$
 
 the second after removing the three-dimensional global $SU(2)$ rotation that acts trivially on the physical configuration. Thus $k=1$ has the five moduli of the BPST solution — four translations and one dilatation — and $k=2$ has thirteen. The dimension count is a check on the construction, not a substitute for it: it says that the data can locally parametrise a space of the right size, and it fixes the count of collective coordinates that the semiclassical expansion integrates over.
@@ -144,7 +144,7 @@ $$
 
 which that article verified to be self-dual and to satisfy the equation of motion. The five moduli of the physical $k=1$ solution are recovered as the four translations of the origin, which are not part of the ADHM data at all but appear in the reconstruction from $\mathcal{A}_{\mathrm{ADHM}}(x)$, and the scale $\rho$, which is the datum; the three global $SU(2)$ orientations are the quotient by the global symmetry. For $k>1$ the matrices $B_1,B_2$ carry the relative positions and orientations of the individual instantons, and their non-commutativity $[B_1,B_2]$ is what the complex equation constrains.
 
-This is the point at which the ADHM data and the framework meet. The relative-position matrix $B_1+iB_2$ is a complex matrix; its commutator $[B_1,B_2]$, whose vanishing would make the data simultaneously diagonalisable and the instantons independent, is precisely the quantity that a single quaternion cannot carry as a scalar. The complex equation $[B_1,B_2]+IJ=0$ is the statement that the obstruction to independence is cancelled by the boundary vectors $I$ and $J$, and it is the algebraic origin of the interaction between instantons. The biquaternion algebra accommodates the $k=1$ datum as a single $\rho$ and accommodates each $B_a$ as a complex number; the $k>1$ data require the matrix algebra $M_\imath(\mathbb C)\subset M_\imath(\mathbb B)$, which is the enlarged carrier discussed in *Grand Unification in the Biquaternion Framework: Where the Embedding Fails*.
+This is the point at which the ADHM data and the framework meet. The relative-position matrix $B_1+iB_2$ is a complex matrix; its commutator $[B_1,B_2]$, whose vanishing would make the data simultaneously diagonalisable and the instantons independent, is precisely the quantity that a single quaternion cannot carry as a scalar. The complex equation $[B_1,B_2]+IJ=0$ is the statement that the obstruction to independence is cancelled by the boundary vectors $I$ and $J$, and it is the algebraic origin of the interaction between instantons. The biquaternion algebra accommodates the $k=1$ datum as a single $\rho$ and accommodates each $B_a$ as a complex number; the $k>1$ data require the matrix algebra $M_{\imath}(\mathbb C)\subset M_{\imath}(\mathbb B)$, which is the enlarged carrier discussed in *Grand Unification in the Biquaternion Framework: Where the Embedding Fails*.
 
 ## The Twistor Construction and the Quaternionic Geometry
 
@@ -178,7 +178,7 @@ What is standard and imported is equally clear. The ADHM theorem itself — exis
 
 ## Summary
 
-The self-duality equation $F=\star F$ on the Euclidean slice is a quaternionic equation: with $\mathbb R^4\cong\mathbb H_{\mathbb B}$ and $SU(2)\times SU(2)$ acting by left and right quaternion multiplication, a self-dual curvature is quaternionic-holomorphic and its three independent components carry the adjoint of the compact factor $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$. The ADHM construction parametrises all self-dual connections of charge $k$ by matrices $B_1,B_2\in M_\imath(\mathbb C)$, $I\in M_{k\times N}(\mathbb C)$, $J\in M_{N\times k}(\mathbb C)$ satisfying the real and complex equations
+The self-duality equation $F=\star F$ on the Euclidean slice is a quaternionic equation: with $\mathbb R^4\cong\mathbb H_{\mathbb B}$ and $SU(2)\times SU(2)$ acting by left and right quaternion multiplication, a self-dual curvature is quaternionic-holomorphic and its three independent components carry the adjoint of the compact factor $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$. The ADHM construction parametrises all self-dual connections of charge $k$ by matrices $B_1,B_2\in M_{\imath}(\mathbb C)$, $I\in M_{k\times N}(\mathbb C)$, $J\in M_{N\times k}(\mathbb C)$ satisfying the real and complex equations
 
 $$
 \boxed{\;\mu_{\mathbb R}=[B_1,B_1^\dagger]+[B_2,B_2^\dagger]+II^\dagger-J^\dagger J=0 ,
@@ -186,9 +186,9 @@ $$
 \mu_{\mathbb C}=[B_1,B_2]+IJ=0\;},
 $$
 
-modulo the $\mathrm{U}(k)$ action. The equations are the vanishing of a quaternionic moment map, and the quotient is the hyperkähler quotient $\mathcal M_\imath=\mu^{-1}(0)/\mathrm{U}(k)$.
+modulo the $\mathrm{U}(k)$ action. The equations are the vanishing of a quaternionic moment map, and the quotient is the hyperkähler quotient $\mathcal M_{\imath}=\mu^{-1}(0)/\mathrm{U}(k)$.
 
-Counting data, constraints and gauge redundancy gives $\dim_{\mathbb R}\mathcal M_\imath=8k$ in the framework's two-dimensional-module convention, with $\dim_{\mathbb R}\mathcal M_\imath^{\text{physical}}=8k-3$ after removing the global $SU(2)$; $k=1$ reproduces the five moduli of BPST. The minimal datum $B_1=B_2=0$, $I=(\rho,0)$, $J=(0,\rho)^T$ satisfies both ADHM equations exactly and reconstructs the BPST solution. The quaternionic line, the moment map and the quotient are the framework's own structures; the ADHM existence and completeness theorems and the reconstruction formula are standard results transcribed. The obstruction carried by the commutator $[B_1,B_2]$ is the interaction between instantons, and for $k>1$ it lives in the enlarged matrix carrier rather than in a single biquaternion.
+Counting data, constraints and gauge redundancy gives $\dim_{\mathbb R}\mathcal M_{\imath}=8k$ in the framework's two-dimensional-module convention, with $\dim_{\mathbb R}\mathcal M_{\imath}^{\text{physical}}=8k-3$ after removing the global $SU(2)$; $k=1$ reproduces the five moduli of BPST. The minimal datum $B_1=B_2=0$, $I=(\rho,0)$, $J=(0,\rho)^T$ satisfies both ADHM equations exactly and reconstructs the BPST solution. The quaternionic line, the moment map and the quotient are the framework's own structures; the ADHM existence and completeness theorems and the reconstruction formula are standard results transcribed. The obstruction carried by the commutator $[B_1,B_2]$ is the interaction between instantons, and for $k>1$ it lives in the enlarged matrix carrier rather than in a single biquaternion.
 
 ## Summary of Notation
 
@@ -196,7 +196,7 @@ Counting data, constraints and gauge redundancy gives $\dim_{\mathbb R}\mathcal 
 |---|---|
 | $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ | Biquaternion algebra, $\cong M_2(\mathbb C)$ |
 | $\mathbb H_{\mathbb B}$ | Real-quaternion subspace; Euclidean slice $\mathbb R^4$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | Central scalar imaginary |
 | $x=x_4e_t+x_1\vec e_x+x_2\vec e_y+x_3\vec e_z$ | Quaternionic coordinate |
 | $z_1=x_2+ix_1,\ z_2=x_4+ix_3$ | Complex coordinates, defining module $\mathbb C^2$ |
@@ -206,8 +206,8 @@ Counting data, constraints and gauge redundancy gives $\dim_{\mathbb R}\mathcal 
 | $I\in\mathrm{Hom}(\mathbb C^N,\mathbb C^k)$, $J\in\mathrm{Hom}(\mathbb C^k,\mathbb C^N)$ | ADHM boundary vectors |
 | $\mu_{\mathbb R}=[B_1,B_1^\dagger]+[B_2,B_2^\dagger]+II^\dagger-J^\dagger J$ | Real (moment-map) ADHM equation |
 | $\mu_{\mathbb C}=[B_1,B_2]+IJ$ | Complex ADHM equation |
-| $\mathcal M_\imath=\mu^{-1}(0)/\mathrm{U}(k)$ | Instanton moduli space (hyperkähler quotient) |
-| $\dim_{\mathbb R}\mathcal M_\imath=8k$ | Moduli dimension; physical $8k-3$ |
+| $\mathcal M_{\imath}=\mu^{-1}(0)/\mathrm{U}(k)$ | Instanton moduli space (hyperkähler quotient) |
+| $\dim_{\mathbb R}\mathcal M_{\imath}=8k$ | Moduli dimension; physical $8k-3$ |
 | $\mathcal{A}_{\mathrm{ADHM}}(x)$ | ADHM linear operator; kernel gives the connection |
 | $\mathcal A_{\imath}=\bar v\,\partial/\partial x_{\imath} v$ | Reconstruction of the self-dual connection |
 | $\varsigma_{\mathrm{thf},\imath\jmath a}$ | Self-dual 't Hooft symbols |

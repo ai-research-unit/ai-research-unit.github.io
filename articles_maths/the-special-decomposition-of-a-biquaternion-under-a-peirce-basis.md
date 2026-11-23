@@ -120,7 +120,7 @@ $$
 \tilde W\vec{Ζ}\tilde W^{*}=\vec{Ζ}',
 $$
 
-and consequently $\tilde W\tilde\Pi_{\mathrm{id},\pm}\tilde W^{*}=\tilde\Pi_{\mathrm{id}}'_\pm$ and $\tilde W\mathbb{C}[\vec{Ζ}]\tilde W^{*}=\mathbb{C}[\vec{Ζ}']$.
+and consequently $\tilde W\tilde\Pi_{\mathrm{id},\pm}\tilde W^{*}=\tilde\Pi_{\mathrm{id}}'{}_\pm$ and $\tilde W\mathbb{C}[\vec{Ζ}]\tilde W^{*}=\mathbb{C}[\vec{Ζ}']$.
 
 *Proof.* Write $\vec{Ζ}=i\vec n$ and $\vec{Ζ}'=i\vec n'$ with $\vec n,\vec n'$ real unit vectors. A rotation of $\mathbb{R}^{3}$ carries $\vec n$ to $\vec n'$; every rotation of the vector part is the conjugation $\vec v\mapsto\tilde w\vec v\tilde w^{*}$ by a unit quaternion $\tilde w\in S^{3}\subset\mathrm{U}(\mathbb{B})$ (*Biquaternion Rotations and Lorentz Transformations*). Taking $\tilde W=\tilde w$ gives the first identity. The two consequences follow by conjugating $\tilde\Pi_{\mathrm{id},\pm}=(e_t\pm\vec{Ζ})/2$ and by conjugating the plane spanned by $e_t$ and $\vec{Ζ}$.
 
@@ -155,7 +155,7 @@ and every two bases of the same pair differ by exactly one gauge transformation.
 **Peirce coordinates.** Every element has a unique expansion
 
 $$
-\tilde Q=Q_{++}\tilde\Pi_{\mathrm{id},++Q}_{+-}\vec\Pi_{\mathrm{nil},+-}+Q_{-+}\vec\Pi_{\mathrm{nil},-+}+Q_{--}\tilde\Pi_{\mathrm{id},-},
+\tilde Q=Q_{++}\tilde\Pi_{\mathrm{id},++Q}{}_{+-}\vec\Pi_{\mathrm{nil},+-}+Q_{-+}\vec\Pi_{\mathrm{nil},-+}+Q_{--}\tilde\Pi_{\mathrm{id},-},
 \qquad Q_{st}\in\mathbb{C}.
 $$
 
@@ -232,7 +232,7 @@ and $\tilde U\tilde W^{*}$ and $\tilde V\tilde W^{*}$ are unitary.
 
 ## Uniqueness
 
-**Theorem (uniqueness).** Let $\tilde Q=\tilde U(r e_t+s\vec{Ζ})\tilde V^{*}$ with $r\ge s\ge0$, and let $\tilde Q=\tilde U'(r e_t+s\vec{Ζ})\tilde V'^{*}$ be another factorization with the same root and the same pair. Put $\tilde A=\tilde U^{*}\tilde U'$ and $\tilde B=\tilde V^{*}\tilde V'$, so that $\tilde A(r e_t+s\vec{Ζ})=(r e_t+s\vec{Ζ})\tilde B$. Then:
+**Theorem (uniqueness).** Let $\tilde Q=\tilde U(r e_t+s\vec{Ζ})\tilde V^{*}$ with $r\ge s\ge0$, and let $\tilde Q=\tilde U'(r e_t+s\vec{Ζ})\tilde V'{}^{*}$ be another factorization with the same root and the same pair. Put $\tilde A=\tilde U^{*}\tilde U'$ and $\tilde B=\tilde V^{*}\tilde V'$, so that $\tilde A(r e_t+s\vec{Ζ})=(r e_t+s\vec{Ζ})\tilde B$. Then:
 
 - if $r>s>0$, there are real $\theta_+,\theta_-$ with $\tilde A=\tilde B=e^{i\theta_+}\tilde\Pi_{\mathrm{id},++e}^{i\theta_-}\tilde\Pi_{\mathrm{id},-}$; the two unitaries are unique up to the simultaneous right multiplication by a unitary commuting with the middle factor;
 - if $r=s>0$, there are real $\theta,\varphi,\psi$ with
@@ -243,7 +243,7 @@ $$
 the phase of the image line is common and the phase of the kernel line is free on each side;
 - if $s=0$ and $r>0$, the middle factor is the scalar $r e_t$ and $\tilde A=\tilde B$ is an arbitrary unitary; if $\tilde Q=0$ the middle factor vanishes and $\tilde A$ and $\tilde B$ are independent arbitrary unitaries.
 
-*Proof.* Write the middle factor in the Peirce basis, $M=r e_t+s\vec{Ζ}=r_+\tilde\Pi_{\mathrm{id},++r}_-\tilde\Pi_{\mathrm{id},-}$ with $r_\pm=r\pm s$, and write $\tilde A$ and $\tilde B$ in the same basis, with Peirce coordinates $A_{st}$ and $B_{st}$. The identity $\tilde A M=M\tilde B$ reads, on the four Peirce components,
+*Proof.* Write the middle factor in the Peirce basis, $M=r e_t+s\vec{Ζ}=r_+\tilde\Pi_{\mathrm{id},++r}{}_-\tilde\Pi_{\mathrm{id},-}$ with $r_\pm=r\pm s$, and write $\tilde A$ and $\tilde B$ in the same basis, with Peirce coordinates $A_{st}$ and $B_{st}$. The identity $\tilde A M=M\tilde B$ reads, on the four Peirce components,
 
 $$
 A_{st}\,r_t=r_s\,B_{st},\qquad s,t\in\{+,-\}.
@@ -255,7 +255,7 @@ If $r>s>0$, then $M$ is invertible and the identity gives $\tilde A=M\tilde B M^
 
 If $r=s>0$, then $r_+=2r$ and $r_-=0$. The equations with $(s,t)=(+,-)$ and $(-,+)$ give $B_{+-}=0$ and $A_{-+}=0$, so both elements have at most three Peirce components. A unitary with $A_{-+}=0$ is diagonal: writing $A=a\tilde\Pi_{\mathrm{id},++b}\tilde\Pi_{\mathrm{id},-+c}\vec\Pi_{\mathrm{nil},+-}$, the product $\tilde A\tilde A^{*}$ carries the mixed terms $a\bar c\,\vec\Pi_{\mathrm{nil},-+}$ and $c\bar b\,\vec\Pi_{\mathrm{nil},+-}$, which must vanish, so $c=0$ because $\lvert a\rvert=\lvert b\rvert=1$; and likewise for $\tilde B$. Hence $\tilde A=\operatorname{diag}(A_{++},A_{--})$ and $\tilde B=\operatorname{diag}(B_{++},B_{--})$, the equation $(+,+)$ gives $A_{++}=B_{++}$, and unitarity gives $\lvert A_{++}\rvert=\lvert A_{--}\rvert=\lvert B_{--}\rvert=1$.
 
-**Corollary (the residual freedom preserves the middle factor).** In each case of the theorem, $\tilde A M\tilde B^{*}=M$. Hence $\tilde U'(r e_t+s\vec{Ζ})\tilde V'^{*}=\tilde U(r e_t+s\vec{Ζ})\tilde V^{*}$ with the middle factor unchanged, and the residual freedom is a subgroup of $\mathrm{U}(\mathbb{B})\times\mathrm{U}(\mathbb{B})$ acting on the right of the pair: simultaneously in the generic case, and with the two kernel phases independent in the rank-one case. It is not the gauge of the Peirce basis: the gauge rescales the mixed elements of $\mathcal{B}(\vec{Ζ})$ and leaves the unitaries alone, while the residual freedom acts on the unitaries and leaves the basis alone.
+**Corollary (the residual freedom preserves the middle factor).** In each case of the theorem, $\tilde A M\tilde B^{*}=M$. Hence $\tilde U'(r e_t+s\vec{Ζ})\tilde V'{}^{*}=\tilde U(r e_t+s\vec{Ζ})\tilde V^{*}$ with the middle factor unchanged, and the residual freedom is a subgroup of $\mathrm{U}(\mathbb{B})\times\mathrm{U}(\mathbb{B})$ acting on the right of the pair: simultaneously in the generic case, and with the two kernel phases independent in the rank-one case. It is not the gauge of the Peirce basis: the gauge rescales the mixed elements of $\mathcal{B}(\vec{Ζ})$ and leaves the unitaries alone, while the residual freedom acts on the unitaries and leaves the basis alone.
 
 ## The Peirce-Diagonal Reading
 
@@ -379,9 +379,9 @@ $$
 The Peirce data of $\vec{Ζ}_1$ are
 
 $$
-\tilde\Pi_{\mathrm{id}}'_\pm=\frac{e_t\pm i\vec e_x}{2},\qquad
-\vec\Pi_{\mathrm{nil}}'_{+-}=-\frac{\vec e_y+i\vec e_z}{2},\qquad
-\vec\Pi_{\mathrm{nil}}'_{-+}=\frac{\vec e_y-i\vec e_z}{2},
+\tilde\Pi_{\mathrm{id}}'{}_\pm=\frac{e_t\pm i\vec e_x}{2},\qquad
+\vec\Pi_{\mathrm{nil}}'{}_{+-}=-\frac{\vec e_y+i\vec e_z}{2},\qquad
+\vec\Pi_{\mathrm{nil}}'{}_{-+}=\frac{\vec e_y-i\vec e_z}{2},
 $$
 
 the mixed units being the $\tilde W$-conjugates of the standard ones. The middle factor has Peirce coordinates $(2,0,0,1)$ in $\mathcal{B}(i\vec e_x)$ as well, so the two roots give the same coefficients $r_+=2$ and $r_-=1$.
@@ -398,21 +398,21 @@ $$
 The rotated idempotents of the second presentation are
 
 $$
-\tilde\Pi_{\mathrm{id},+}^{\tilde U_1}=\tilde U_1\tilde\Pi_{\mathrm{id}}'_+\tilde U_1^{*}=\frac{e_t-i\vec e_y}{2},
+\tilde\Pi_{\mathrm{id},+}^{\tilde U_1}=\tilde U_1\tilde\Pi_{\mathrm{id}}'{}_+\tilde U_1^{*}=\frac{e_t-i\vec e_y}{2},
 \qquad
 \tilde\Pi_{\mathrm{id},-}^{\tilde U_1}=\frac{e_t+i\vec e_y}{2},
 $$
 
 $$
-\tilde\Pi_{\mathrm{id},+}^{\tilde V_1}=\tilde V_1\tilde\Pi_{\mathrm{id}}'_+\tilde V_1^{*}=\tilde\Pi_{\mathrm{id},+},
+\tilde\Pi_{\mathrm{id},+}^{\tilde V_1}=\tilde V_1\tilde\Pi_{\mathrm{id}}'{}_+\tilde V_1^{*}=\tilde\Pi_{\mathrm{id},+},
 \qquad
 \tilde\Pi_{\mathrm{id},-}^{\tilde V_1}=\tilde\Pi_{\mathrm{id},-}.
 $$
 
-The Peirce-diagonal proposition then gives $\tilde\Pi_{\mathrm{id},i}^{\tilde U_1}\tilde Q\tilde\Pi_{\mathrm{id},j}^{\tilde V_1}=\delta_{ij}r_i\tilde U_1\tilde\Pi_{\mathrm{id}}'_i\tilde V_1^{*}$, with $r_+=2$ and $r_-=1$. Relative to the unrotated pair $\tilde\Pi_{\mathrm{id}}'_\pm$ the element is not diagonal; for instance
+The Peirce-diagonal proposition then gives $\tilde\Pi_{\mathrm{id},i}^{\tilde U_1}\tilde Q\tilde\Pi_{\mathrm{id},j}^{\tilde V_1}=\delta_{ij}r_i\tilde U_1\tilde\Pi_{\mathrm{id}}'{}_i\tilde V_1^{*}$, with $r_+=2$ and $r_-=1$. Relative to the unrotated pair $\tilde\Pi_{\mathrm{id}}'{}_\pm$ the element is not diagonal; for instance
 
 $$
-\tilde\Pi_{\mathrm{id}}'_+\tilde Q\tilde\Pi_{\mathrm{id}}'_-=\frac{\sqrt2}{8}\bigl((1-i)\vec e_y+(1+i)\vec e_z\bigr)\ne0.
+\tilde\Pi_{\mathrm{id}}'{}_+\tilde Q\tilde\Pi_{\mathrm{id}}'{}_-=\frac{\sqrt2}{8}\bigl((1-i)\vec e_y+(1+i)\vec e_z\bigr)\ne0.
 $$
 
 This is the point of §*The Peirce-Diagonal Reading*: the idempotent systems must be rotated by the unitaries, and the coefficients are $2$ and $1$ in both presentations.

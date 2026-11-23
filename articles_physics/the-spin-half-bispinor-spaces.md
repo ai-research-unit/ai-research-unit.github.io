@@ -28,7 +28,7 @@ The second objection is that a carrier of real dimension two cannot hold a spino
 
 The third objection is that the axis is a coordinate and the article builds physics on a coordinate. The axis is a coordinate in the sense that it can be rotated, and the entry states exactly that and refuses to make it a datum. What survives the rotation is the structure: every axis gives a plane, an ideal, and a pair; no axis is preferred; and a statement proved at one axis holds at every axis because the group moves one axis to another and carries the whole family with it. The frame enters once, when a value or a chirality is named, and the entry marks that place.
 
-The letters. The algebra is $\mathbb{B}$, real of dimension eight, units $e_t,\vec e_x,\vec e_y,\vec e_z$, with $e_t$ the identity and $\vec e_\imath^{2}=-e_t$; the central imaginary is $i$; an element is $\tilde Q=Q_te_t+\vec Q$ with complex coefficients. The star ${}^{*}$ is the Hermitian conjugation, the bar $\bar{\cdot}$ the coefficient conjugation, and ${}^{\natural}$ the natural conjugation. The norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ and $B$ is its polar form. A unit real axis is $\vec u$, with $\vec u_2,\vec u_3$ an oriented orthonormal pair completing it; the idempotents are $\tilde\Pi_{\mathrm{id},\pm}(\vec u)=\tfrac12(e_t\pm i\vec u)$; the plane is $\Sigma(\vec u)=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u)$; the ideals are $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u)$; the action is left multiplication, $L_X(Y)=XY$. The sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$, and the four sectors of the two predicates are written $\Sigma_{ij}$. A rotor is $\tilde u=\cos\tfrac\theta2e_t+\sin\tfrac\theta2\vec u$, and the spectrum of an element is the pair $\eta_{\pm}=Q_t\pm iB$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$.
+The letters. The algebra is $\mathbb{B}$, real of dimension eight, units $e_t,\vec e_x,\vec e_y,\vec e_z$, with $e_t$ the identity and $\vec e_{\imath}^{2}=-e_t$; the central imaginary is $i$; an element is $\tilde Q=Q_te_t+\vec Q$ with complex coefficients. The star ${}^{*}$ is the Hermitian conjugation, the bar $\bar{\cdot}$ the coefficient conjugation, and ${}^{\natural}$ the natural conjugation. The norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ and $B$ is its polar form. A unit real axis is $\vec u$, with $\vec u_2,\vec u_3$ an oriented orthonormal pair completing it; the idempotents are $\tilde\Pi_{\mathrm{id},\pm}(\vec u)=\tfrac12(e_t\pm i\vec u)$; the plane is $\Sigma(\vec u)=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u)$; the ideals are $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u)$; the action is left multiplication, $L_X(Y)=XY$. The sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$, and the four sectors of the two predicates are written $\Sigma_{ij}$. A rotor is $\tilde u=\cos\tfrac\theta2e_t+\sin\tfrac\theta2\vec u$, and the spectrum of an element is the pair $\eta_{\pm}=Q_t\pm iB$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$.
 
 Boundaries. The plane, the two closures, the infinity of the family and the corners are *Introduction to the Spin-Half Bispinors Spaces*; the nullity of the idempotent, of the plane and of the ideals, the isotropic dimension and the pairing are *The Spin-Half Bispinors and N Norm Regularity*; the spectrum $\{0,\digamma_{\mathrm{scl}}\}$, the degenerate plane inside the ideal and the square-zero elements are *The Spin-Half Bispinors and Spectral Regularity*; the list of three carriers and the four closure rules are *From the Spin to the Carriers and the Closures*; the idempotents, the minimality and the splitting are *The Minimal Left Ideals of the Biquaternion Algebra*; the parametrisation of the family is *The Peirce Basis of the Biquaternion Algebra*; the one-sided action as a representation is *The One-Sided Action and the Spin Representation*. The physics is read from *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, *The Dirac Equation in Biquaternionic Form*, *Chiral Fermions in the Biquaternion Framework*, *States, Observables and the Born Weight*, *Chirality and the Weyl Spinors*, *The Celestial Sphere of the Null Cone* and *Two Spin-Half Particles*. No dynamics, no mass value and no quantum postulate appear below.
 
@@ -148,7 +148,7 @@ The spin is the largest weight, $s=\tfrac12$, and the count $2s+1=2$ is the real
 
 The full turn. At $\theta=2\pi$ the phase is $e^{-i\pi}=-1$, so the operator of a full turn is $-\mathrm{id}$ on the plane while it is $+\mathrm{id}$ on every four-vector. The coefficient is $(-1)^{2s}=-1$. This is the algebraic origin of the statement that a spinor needs two full turns to return to itself, and it is a statement about the action, not about a picture: the operator of $2\pi$ is minus the identity on the carrier and plus the identity on the vector sector, and those are two different operators of the same algebra.
 
-Verification. With the axis $\vec e_z$ the residuals are: $\lVert\tilde\Pi_{\mathrm{id},+}^{2}-\tilde\Pi_{\mathrm{id},+}\rVert=0$; $\lVert\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},--e}_t\rVert=0$; $\lVert\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}\rVert=0$; the rank of $\{\tilde\Pi_{\mathrm{id},+},i\tilde\Pi_{\mathrm{id},+}\}$ is $2$; $\lVert\vec u\tilde\Pi_{\mathrm{id},++i}\tilde\Pi_{\mathrm{id},+}\rVert=0$; the rotor identity holds to $0$ at $\theta=0.9$; and a full turn gives $\lVert\tilde u\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},+}\rVert=8.7\times10^{-17}$. The last number is round-off, not a residual.
+Verification. With the axis $\vec e_z$ the residuals are: $\lVert\tilde\Pi_{\mathrm{id},+}^{2}-\tilde\Pi_{\mathrm{id},+}\rVert=0$; $\lVert\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},--e}{}_t\rVert=0$; $\lVert\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}\rVert=0$; the rank of $\{\tilde\Pi_{\mathrm{id},+},i\tilde\Pi_{\mathrm{id},+}\}$ is $2$; $\lVert\vec u\tilde\Pi_{\mathrm{id},++i}\tilde\Pi_{\mathrm{id},+}\rVert=0$; the rotor identity holds to $0$ at $\theta=0.9$; and a full turn gives $\lVert\tilde u\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},+}\rVert=8.7\times10^{-17}$. The last number is round-off, not a residual.
 
 **What the plane is not.** The plane is not an ideal. It is a complex line inside the ideal, closed under multiplication by the axis and by every rotor about the axis, and not closed under multiplication by the rest of the algebra. The distinction between the line and the ideal is the distinction between the carrier and the first closure, and the next two sections are about that difference.
 
@@ -209,7 +209,7 @@ $$
 N\bigl(X\tilde\Pi_{\mathrm{id},+}(\vec u)\bigr)=N(X)\,N\bigl(\tilde\Pi_{\mathrm{id},+}(\vec u)\bigr)=0 .
 $$
 
-The computation on the idempotent itself is the cancellation that names the case: the coordinates are $Q_t=\tfrac12$ and $Q_\imath=\tfrac i2u_\imath$, so the four squares are $\tfrac14$ and three copies of $-\tfrac14u_\imath^{2}$, and the unit length of the axis makes them sum to zero.
+The computation on the idempotent itself is the cancellation that names the case: the coordinates are $Q_t=\tfrac12$ and $Q_{\imath}=\tfrac i2u_{\imath}$, so the four squares are $\tfrac14$ and three copies of $-\tfrac14u_{\imath}^{2}$, and the unit length of the axis makes them sum to zero.
 
 Total isotropy and maximality. The polar form vanishes on $S_+\times S_+$ because all three terms of $\tfrac12\bigl(N(X+Y)-N(X)-N(Y)\bigr)$ vanish when $X$ and $Y$ are both in $S_+$. So the ideal is totally isotropic. It is also maximal: an isotropic subspace of a nondegenerate form of complex dimension four has complex dimension at most two, by $W\subseteq W^{\perp}$ and $\dim W^{\perp}=4-\dim W$, and $S_+$ attains the bound. The plane, by contrast, is isotropic of complex dimension one and is not maximal.
 
@@ -261,7 +261,7 @@ The spectrum on the plane. The square of the vector part is
 
 $$
 B^{2}\bigl(\digamma_{\mathrm{scl}}\tilde\Pi_{\mathrm{id},+}(\vec u)\bigr)
-=\sum_{\imath\in\{x,y,z\}}\Bigl(\tfrac i2\digamma_{\mathrm{scl}} u_\imath\Bigr)^{2}
+=\sum_{\imath\in\{x,y,z\}}\Bigl(\tfrac i2\digamma_{\mathrm{scl}} u_{\imath}\Bigr)^{2}
 =-\tfrac14\digamma_{\mathrm{scl}}^{2},
 $$
 
@@ -502,7 +502,7 @@ The two ideals are the two spinor chiralities: they are the eigenspaces of $-iR_
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}$ | the biquaternion algebra, real, of dimension $8$ |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$ | the units, $e_t$ the identity, $\vec e_\imath^{2}=-e_t$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | the units, $e_t$ the identity, $\vec e_{\imath}^{2}=-e_t$ |
 | $\vec u$ | a unit real axis, the parameter of the family |
 | $\vec u_2,\vec u_3$ | an oriented orthonormal pair completing the axis |
 | $\theta$ | the rotation angle, twice the rotor angle |

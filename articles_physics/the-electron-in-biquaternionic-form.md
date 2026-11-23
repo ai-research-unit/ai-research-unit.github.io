@@ -4,6 +4,8 @@
 
 The electron is the object on which the relativistic quantum theory of this series is calibrated. It is the particle of Dirac's 1928 equation, the spin-$\tfrac{1}{2}$ field whose magnetic moment is measured to twelve significant figures, and the fermion whose two values of the chirality the Standard Model treats differently. In the biquaternion framework of these articles the electron is the **biquaternion Dirac field** $\tilde{Ξ}\in\mathbb{B}$: an element of the algebra whose two chirality parts satisfy the pair
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_{m_e}\tilde{Ξ}_{L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_{m_e}\tilde{Ξ}_{R},
 $$
@@ -37,7 +39,7 @@ A second, less comfortable point belongs in the introduction. Almost every state
 | Mass | the coefficient $m_e$ of the chirality-off-diagonal pair |
 | Charge | the coupling $ϙ=-e$ in the gauge-covariant derivative (see below) |
 | Spin state | the state $\tilde{Ϛ}_{\Psi}(\vec u)\in\mathbb{B}_{\Psi}$ along a declared unit direction $\vec u$ |
-| Spin observables | Hermitian elements $\tilde H_\Psi = i \sum_{\imath\in\{x,y,z\}} h_\imath\vec e_\imath\in\mathbb{B}_{\Psi}$ |
+| Spin observables | Hermitian elements $\tilde H_\Psi = i \sum_{\imath\in\{x,y,z\}} h_{\imath}\vec e_{\imath}\in\mathbb{B}_{\Psi}$ |
 | Conserved current | $\tilde{J}_{\Phi} = ic\,j_0 e_t + \vec j\in\mathbb{B}_{\Phi}$, with $j_0\ge0$ |
 | Chirality parts | the parts $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$, the two components of the pair |
 
@@ -75,7 +77,7 @@ $$
 
 where the right-hand side uses only $i^2=-1$ and $e_t=1$: expanding the exponential, $\exp(-i\theta_{\mathrm{rst}})=e_t-i\theta_{\mathrm{rst}}e_t-\tfrac12\theta_{\mathrm{rst}}^2e_t+\cdots$ with $\theta_{\mathrm{rst}}=c\,2\pi\nu_{m_e}r'_t$ and collecting the real and imaginary parts gives the cosine and the sine. Here $e_t\in\mathbb{B}_{\Psi}$ and $ie_t\in\mathbb{B}_{\Phi}$ (an imaginary scalar is anti-Hermitian). The rest-energy phase is central, and because $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ it is a rotation between the sectors at angular frequency $ck_{m_e}$: it takes the $\mathbb{B}_{\Psi}$ direction $e_t$ toward the $\mathbb{B}_{\Phi}$ direction $ie_t$ and back. The mass sets this scale — the frequency is $ck_{m_e}$ — through the mass shell. This is the sense in which the electron's mass, in the framework, *is* the rate of the rotation between the material and informational subspaces.
 
-**What is not derived.** The value $m_e = 9.1093837015\times10^{-31}$ kg, or equivalently $m_ec^2 = 0.510998950$ MeV, is not a consequence of the algebra or of the equation; it is a parameter. The framework is scale-free until $m_e$ is supplied, and every electron scale below — the Compton length, the Zitterbewegung frequency — is set by the supplied value, not produced by the structure.
+**What is not derived.** The value $m_e = 9.1093837015\times10^{-31}$ kg, or equivalently $m_ec^2 = 8.1871\times10^{-14}\ \mathrm{J}$, is not a consequence of the algebra or of the equation; it is a parameter. The framework is scale-free until $m_e$ is supplied, and every electron scale below — the Compton length, the Zitterbewegung frequency — is set by the supplied value, not produced by the structure.
 
 ## Charge: A Coupling Constant in the Gradient
 
@@ -116,9 +118,9 @@ The electron's spin is where the framework is strongest and where the distinctio
 
 **Derived: the representation.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique irreducible left action, on a complex space of dimension two, and the group of unit elements of the quaternionic norm is $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group (*Norm and Pairing Conventions*). A field in that space carries the representation $(\tfrac12,0)$; the field of this article splits by the chirality into two such parts and carries $(\tfrac12,0)\oplus(0,\tfrac12)$. In either case the spin is $\tfrac12$: a rotation by $2\pi$ acts as $-e_t$ on the two-dimensional space and as $+e_t$ on the four-vectors of $\mathbb{B}_{\Phi}$. The twofold, double-valued character of electron spin is therefore a consequence of where the field lives, not an independent postulate. The spin rotations are the real unit quaternions, forming $SU(2)$.
 
-**Derived: the state and observable structure.** The electron's spin state along a declared unit direction $\vec u$ is the state $\tilde{Ϛ}_{\Psi}(\vec u)\in\mathbb{B}_{\Psi}$ of *Algebra and Element Conventions*, and its spin observables are the Hermitian elements $i \sum_{\imath\in\{x,y,z\}} h_\imath\vec e_\imath\in\mathbb{B}_{\Psi}$. With the Born pairing of *Norm and Pairing Conventions* the state along $\vec u$ returns the weight $n_{\jmath} h_{\jmath}$ on $\tilde H_\Psi = i\sum_{\imath\in\{x,y,z\}} h_\imath\vec e_\imath$; in particular the state along $\vec e_z$ returns $1$ on $i\vec e_z$ and $0$ on $i\vec e_x$, the values the spin along $z$ requires.
+**Derived: the state and observable structure.** The electron's spin state along a declared unit direction $\vec u$ is the state $\tilde{Ϛ}_{\Psi}(\vec u)\in\mathbb{B}_{\Psi}$ of *Algebra and Element Conventions*, and its spin observables are the Hermitian elements $i \sum_{\imath\in\{x,y,z\}} h_{\imath}\vec e_{\imath}\in\mathbb{B}_{\Psi}$. With the Born pairing of *Norm and Pairing Conventions* the state along $\vec u$ returns the weight $n_{\jmath} h_{\jmath}$ on $\tilde H_\Psi = i\sum_{\imath\in\{x,y,z\}} h_{\imath}\vec e_{\imath}$; in particular the state along $\vec e_z$ returns $1$ on $i\vec e_z$ and $0$ on $i\vec e_x$, the values the spin along $z$ requires.
 
-**Inserted: the magnitude.** The spin element is $\tilde S_{\Psi,k} =\frac{h}{4\pi}(i\vec e_\imath)$. The element $i\vec e_\imath$ is Hermitian and squares to $+e_t$, so it is the algebra's spin component and has the two eigenvalues $\pm1$. The factor $\frac{h}{4\pi}$ is a normalisation, not a prediction: the algebra fixes that spin is two-valued and that its observables close under $SU(2)$, but it does not fix the unit in which spin is measured. The number $\tfrac{1}{2}$ in "spin-$\tfrac{1}{2}$" is algebra; the number $\frac{h}{2\pi}$ is physics inserted from outside.
+**Inserted: the magnitude.** The spin element is $\tilde S_{\Psi,k} =\frac{h}{4\pi}(i\vec e_{\imath})$. The element $i\vec e_{\imath}$ is Hermitian and squares to $+e_t$, so it is the algebra's spin component and has the two eigenvalues $\pm1$. The factor $\frac{h}{4\pi}$ is a normalisation, not a prediction: the algebra fixes that spin is two-valued and that its observables close under $SU(2)$, but it does not fix the unit in which spin is measured. The number $\tfrac{1}{2}$ in "spin-$\tfrac{1}{2}$" is algebra; the number $\frac{h}{2\pi}$ is physics inserted from outside.
 
 ## The Dirac Description of the Electron
 
@@ -156,7 +158,7 @@ $$
 -(\tilde\nabla_\Phi)^{\natural}F - 2\pi\nu_m\,i\,\overline{F}\,\vec e_z = 0
 $$
 
-with $\vec\nabla_\Phi = \sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial R_\imath$ and the bar the coefficientwise complex conjugation. The time derivative and the spatial gradient act by left multiplication; the mass term acts by right multiplication through $\vec e_z$ and carries the antilinear conjugation. This is the form in which the quaternionic analysis acts — the shifted operator, the Cauchy kernel, and the integral representation of the harmonic field.
+with $\vec\nabla_\Phi = \sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial R_{\imath}$ and the bar the coefficientwise complex conjugation. The time derivative and the spatial gradient act by left multiplication; the mass term acts by right multiplication through $\vec e_z$ and carries the antilinear conjugation. This is the form in which the quaternionic analysis acts — the shifted operator, the Cauchy kernel, and the integral representation of the harmonic field.
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
@@ -177,7 +179,7 @@ $$
 -\frac{ϙ c}{4\pi\nu_{m_e}}\,i\,\vec B \in \mathbb{B}_{\Psi} .
 $$
 
-Writing the coupling as $-\vec\mu\cdot\vec B$ identifies $\vec\mu = (ϙ/m_e)\vec S$, with the spin components $\tilde S_{\Psi,k} =\frac{h}{4\pi}i\vec e_\imath$, which is $\vec\mu = g\,(ϙ/2m_e)\vec S$ with
+Writing the coupling as $-\vec\mu\cdot\vec B$ identifies $\vec\mu = (ϙ/m_e)\vec S$, with the spin components $\tilde S_{\Psi,k} =\frac{h}{4\pi}i\vec e_{\imath}$, which is $\vec\mu = g\,(ϙ/2m_e)\vec S$ with
 
 $$
 g = 2 .
@@ -201,7 +203,7 @@ The electron is the particle on which the Zitterbewegung was found. In the frame
 
 $$
 \omega_Z = 2c\,2\pi\nu_{m_e} = 1.55269\times10^{21}\ \text{rad s}^{-1},
-\qquad \frac{1}{4\pi\nu_{m_e}} = 193.1\ \text{fm},
+\qquad \frac{1}{4\pi\nu_{m_e}} = 1.931\times10^{-13}\ \mathrm{m},
 $$
 
 half of one radian of the mass phase, $386.2$ fm. These are the standard values, reconfirmed numerically in the companion article on the Zitterbewegung. Here $\nu_t^{\prime}=\frac{E}{h\,c}$ is the energy length.
@@ -232,7 +234,7 @@ Two facts about products carry the whole structure, and they are stated in words
 |---|---|---|
 | Spin-$\tfrac{1}{2}$ representation content | Derived | $\mathbb{B}\cong M_2(\mathbb{C})$, unique irreducible action on a space of dimension two; $SL(2,\mathbb{C})$ double cover |
 | Spin states, observables, expectation values | Derived | the state of $\mathbb{B}_{\Psi}$ and the Born pairing of *Norm and Pairing Conventions* |
-| Spin magnitude $\frac{h}{4\pi}$ | Represented | normalisation of $\tilde S_{\Psi,k} =\frac{h}{4\pi}i\vec e_\imath$ |
+| Spin magnitude $\frac{h}{4\pi}$ | Represented | normalisation of $\tilde S_{\Psi,k} =\frac{h}{4\pi}i\vec e_{\imath}$ |
 | Tree-level $g=2$, $\vec\mu_e = -(e/m_e)\vec S$ | Derived (conditional) | $1/2m_e$ coefficient from the mass term plus minimal coupling |
 | Conservation of the current, $\tilde{J}_{\Phi}\in\mathbb{B}_{\Phi}$ | Derived | the law $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$; the bilinear itself is the older display's, in the companion article's closing section |
 | Coulomb field $\tilde{F}\in\mathbb{B}_{\Psi}$ | Derived (from Maxwell) | point-charge solution; purely imaginary vector |
@@ -277,7 +279,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
-(\gamma_\imath)^2=-I_4,\qquad
+(\gamma_{\imath})^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_{\imath},\gamma_5\}=0,
 $$
@@ -310,7 +312,7 @@ The electron's data are not confined to either sector: state-like and field-stre
 
 | Symbol | Meaning |
 |---|---|
-| $Q_t=i q'_t$, $Q_\imath=x,y,z$ | Coordinates; $r'_t$ the real time of the material sector |
+| $Q_t=i q'_t$, $Q_{\imath}=x,y,z$ | Coordinates; $r'_t$ the real time of the material sector |
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | The four units of the coefficient basis |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
@@ -331,7 +333,7 @@ The electron's data are not confined to either sector: state-like and field-stre
 | $\tilde\Upsilon_{\Phi} = i(\omega/c)\,e_t + 2\pi\vec\nu_\Phi$ | Four-wavevector |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign weights of the $\mathbb{B}_{\Phi}$ frame; metric in the closing section |
 | $m_e$, $e$, $\frac{h}{2\pi}$, $c$ | Electron mass, elementary charge, the action of one radian of phase, speed of light |
-| $\mathcal{N}F = (i\partial/\partial r'_t+\vec\nabla_\Phi)F - 2\pi\nu_{m_e}i\,\overline{F}\,\vec e_z$, $\vec\nabla_\Phi=\sum_{\imath\in\{x,y,z\}}\vec e_\imath\partial/\partial R_\imath$ | Two-sided Dirac equation of the dictionary form |
+| $\mathcal{N}F = (i\partial/\partial r'_t+\vec\nabla_\Phi)F - 2\pi\nu_{m_e}i\,\overline{F}\,\vec e_z$, $\vec\nabla_\Phi=\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\partial/\partial R_{\imath}$ | Two-sided Dirac equation of the dictionary form |
 | $g$, $\mu_B = ec\dfrac{1}{4\pi\nu_{m_e}}$ | Gyromagnetic factor; Bohr magneton |
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\Gamma = -iR_{\mathrm{axf},\vec e_z}$ | Central chirality grading and its representative; closing section |
 | $L_a$, $R_b$, $T_{a,b}=L_aR_b$ | Left and right multiplication and their basis operator; closing section |

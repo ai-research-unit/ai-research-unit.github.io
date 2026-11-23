@@ -24,7 +24,7 @@ That last point is what makes this category the cleanest comparison in the block
 
 **Boundaries.** The algebra, its idempotents, its ideals and the general representation theory are *Split-Complex Linear Representations*, *Ideals and Peirce Decomposition of the Split-Complex Algebra* and *Split-Complex Two-Component Element Representation*; the norm, the unit criterion and the null cone are *Norm and Invertibility in the Split-Complex Algebra*; the spectrum and the eigenbasis are *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number* and *Relations between the Split Norm and Spectral Regularity and Degeneracy*; the polar decomposition is *Modulus–Unit Polar Decomposition of Split-Complex Numbers* and *Polar Decomposition of Split-Complex Numbers*. The operators of this model are *$M_2(\mathbb{R})$ Hyperbolic Representation : Operators*.
 
-**Conventions.** The basis is $(1,j)$ with $j^{2}=+1$; the element is $Q=q+jq'$; the conjugate is $\bar Q=q-jq'$; the norm is $\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'^{2}$. The idempotents are $\Pi_\pm=\tfrac12(1\pm j)$ and the idempotent coordinates are $\lambda_\pm=q\pm q'$. The generator of the image is $J$ and the split form is $g=\operatorname{diag}(1,-1)$. The transpose is written $^{\mathsf T}$.
+**Conventions.** The basis is $(1,j)$ with $j^{2}=+1$; the element is $Q=q+jq'$; the conjugate is $\bar Q=q-jq'$; the norm is $\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'{}^{2}$. The idempotents are $\Pi_\pm=\tfrac12(1\pm j)$ and the idempotent coordinates are $\lambda_\pm=q\pm q'$. The generator of the image is $J$ and the split form is $g=\operatorname{diag}(1,-1)$. The transpose is written $^{\mathsf T}$.
 
 ## The Frame
 
@@ -100,7 +100,7 @@ $$
 with
 
 $$
-\operatorname{tr}\mathsf{M}_4(X)=4a,\qquad \det\mathsf{M}_4(X)=\lvert q^{2}-q'^{2}\rvert^{2}=\lvert\lambda_+\lambda_-\rvert^{2},
+\operatorname{tr}\mathsf{M}_4(X)=4a,\qquad \det\mathsf{M}_4(X)=\lvert q^{2}-q'{}^{2}\rvert^{2}=\lvert\lambda_+\lambda_-\rvert^{2},
 $$
 
 and the four real eigenvalues $\lambda_+,\overline{\lambda_+},\lambda_-,\overline{\lambda_-}$. This is **not a second model of $\mathbb{C}_{\mathrm{spl}}$**: it is the regular representation of the complexification, which is the reduced biquaternion algebra $\mathbb{C}\times\mathbb{C}$, and the $2\times2$ model of this article is the model of $\mathbb{C}_{\mathrm{spl}}$ itself. It is recorded here as a section because the determinant is a square, $N_{\mathbb{C}}^{2}$, exactly as in the quaternion regular model, and because it shows the pattern of the series: realifications square the determinant and double the size.
@@ -219,10 +219,10 @@ $$
 **Theorem (the determinant is the split norm).**
 
 $$
-\det\mathsf{M}_2(Q)=q^{2}-q'^{2}=\langle Q\rangle_{*}=\lambda_+\lambda_- .
+\det\mathsf{M}_2(Q)=q^{2}-q'{}^{2}=\langle Q\rangle_{*}=\lambda_+\lambda_- .
 $$
 
-**Proof.** $q^{2}-q'^{2}$ from the display; also the determinant is the product of the eigenvalues $q\pm q'$.
+**Proof.** $q^{2}-q'{}^{2}$ from the display; also the determinant is the product of the eigenvalues $q\pm q'$.
 
 **The reading.** This is the indefinite determinant. Its zero set in the algebra is the pair of lines $q=\pm q'$, which is the **null cone** of the split form and the **zero-divisor set** of the algebra. The determinant is therefore not a norm in the analytic sense: it is negative on the region $\lvert q\rvert<\lvert q'\rvert$, and it vanishes on two lines rather than at a point.
 
@@ -242,10 +242,10 @@ $$
 **The eigenvalues.** The characteristic polynomial is
 
 $$
-\chi(\lambda)=\lambda^{2}-2q\lambda+(q^{2}-q'^{2})=(\lambda-\lambda_+)(\lambda-\lambda_-),\qquad \lambda_\pm=q\pm q',
+\chi(\lambda)=\lambda^{2}-2q\lambda+(q^{2}-q'{}^{2})=(\lambda-\lambda_+)(\lambda-\lambda_-),\qquad \lambda_\pm=q\pm q',
 $$
 
-with discriminant $4q'^{2}$. The eigenvalues are real for every $Q$, and they are distinct exactly when $q'\neq0$; they coincide exactly when $Q$ is a scalar $q$, in which case $\mathsf{M}_2(Q)=qI_2$.
+with discriminant $4q'{}^{2}$. The eigenvalues are real for every $Q$, and they are distinct exactly when $q'\neq0$; they coincide exactly when $Q$ is a scalar $q$, in which case $\mathsf{M}_2(Q)=qI_2$.
 
 **The projectors.** The two idempotents give the two projectors
 
@@ -360,7 +360,7 @@ the one-parameter group of hyperbolic rotations, which is the **boost**. So $O(1
 
 **The trace and Frobenius forms coincide here.** Both have Gram $2I_2$, because every matrix of the image is symmetric, so $M^{\mathsf T}=M$ and the two forms agree on the image. In the complex model the two forms differed, because the image contained antisymmetric matrices. So the split category has one Euclidean form and not two, and the two coincide for the structural reason that the image is a space of symmetric matrices.
 
-**The conformal parameter.** The identity $M^{\mathsf T}gM=\langle Q\rangle_{*}g$ says that the image acts on the Minkowski plane by similarities of factor $\langle Q\rangle_{*}$; the Euclidean form is not preserved and is not conformal for the image in general, since $\operatorname{tr}(M^{\mathsf T}M)=2(q^{2}+q'^{2})\neq2\langle Q\rangle_{*}$ unless $qq'=0$. So the two forms of the plane play strictly different roles: the definite one measures the coefficients, the indefinite one is the one the algebra respects.
+**The conformal parameter.** The identity $M^{\mathsf T}gM=\langle Q\rangle_{*}g$ says that the image acts on the Minkowski plane by similarities of factor $\langle Q\rangle_{*}$; the Euclidean form is not preserved and is not conformal for the image in general, since $\operatorname{tr}(M^{\mathsf T}M)=2(q^{2}+q'{}^{2})\neq2\langle Q\rangle_{*}$ unless $qq'=0$. So the two forms of the plane play strictly different roles: the definite one measures the coefficients, the indefinite one is the one the algebra respects.
 
 **The absence of a Hermitian form.** As in the complex model there is no Hermitian form on the image, and the involution is the signed transpose. The symmetric/anti-Hermitian splitting of the image is degenerate here: every member is symmetric, so the anti-Hermitian part of the image is zero. What replaces the splitting is the Peirce splitting into the two null lines.
 
@@ -411,7 +411,7 @@ of dimensions $2+1+1$, and the three summands are the conformal part, the norm a
 2. The image is the two-dimensional algebra $\mathbb{R}[J]\cong\mathbb{R}\times\mathbb{R}$ of matrices symmetric with equal diagonal, characterised by $CJ=JC$; it is a split semisimple algebra and not a field.
 3. The left and right multiplications coincide, the centraliser of the image is the image, and the image is a maximal commutative subalgebra of $M_2(\mathbb{R})$.
 4. The trace is $2q$, the four entries are the two coefficients, and the trace form is the Euclidean form $2I_2$; the determinant is the split norm and the determinant form is Minkowski, so the two forms exchange roles against the complex category.
-5. The determinant is $q^{2}-q'^{2}$, indefinite, with zero set the two null lines; on those lines the rank is one, and they are exactly the zero divisors.
+5. The determinant is $q^{2}-q'{}^{2}$, indefinite, with zero set the two null lines; on those lines the rank is one, and they are exactly the zero divisors.
 6. The image contains the complete pair of orthogonal rank-one projectors $\rho_\pm=\mathsf{M}_2(\Pi_\pm)$, and every element is $\lambda_+\rho_++\lambda_-\rho_-$; the spectral frame is fixed and independent of $Q$.
 7. The diagonalising matrix is the orthogonal reflection $H$ of determinant $-1$, which is at once a similarity and a congruence, sends the split form to $J$ and does not belong to the image.
 8. Every element is diagonalisable, including the zero divisors; there are no nilpotents; the projectors never coalesce; the claim that a zero divisor breaks the diagonalisation is false.
@@ -425,7 +425,7 @@ of dimensions $2+1+1$, and the three summands are the conformal part, the norm a
 | $\mathsf{M}_2$ | the hyperbolic Cayley map $\mathbb{C}_{\mathrm{spl}}\to M_2(\mathbb{R})$ | this article |
 | $J$ | $\mathsf{M}_2(j)=\begin{pmatrix}0&1\\1&0\end{pmatrix}$, $J^{2}=I_2$ | this article |
 | $Q=q+jq'$ | a split-complex number, conjugate $\bar Q=q-jq'$ | *Split-Complex Linear Representations* |
-| $\langle Q\rangle_{*}=q^{2}-q'^{2}$ | the split norm, equal to $\det\mathsf{M}_2(Q)$ | *Norm and Invertibility in the Split-Complex Algebra* |
+| $\langle Q\rangle_{*}=q^{2}-q'{}^{2}$ | the split norm, equal to $\det\mathsf{M}_2(Q)$ | *Norm and Invertibility in the Split-Complex Algebra* |
 | $\Pi_\pm=\tfrac12(1\pm j)$ | the two idempotents | *Ideals and Peirce Decomposition of the Split-Complex Algebra* |
 | $\lambda_\pm=q\pm q'$ | the idempotent coordinates, the eigenvalues | *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number* |
 | $\rho_\pm=\mathsf{M}_2(\Pi_\pm)$ | the two spectral projectors, of rank one | this article |

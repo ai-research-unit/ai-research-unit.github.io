@@ -54,11 +54,9 @@ An **orthomodular lattice** is an ortholattice satisfying this law.
 2. $x \vee (x^{\perp} \wedge (x \vee y)) = x \vee y$ for all $x, y$.
 
 **Proof.** (1) $\Rightarrow$ (2): apply (1) to the pair $x \leq x \vee y$, for which the right side
-reads $x \vee (x^{\perp} \wedge (x \vee y))$ and the left side $x \vee y$. (2) $\Rightarrow$ (1): if $x
-\leq y$ then $x \vee y = y$, and (2) reads $y = x \vee (x^{\perp} \wedge y)$.
+reads $x \vee (x^{\perp} \wedge (x \vee y))$ and the left side $x \vee y$. (2) $\Rightarrow$ (1): if $x \leq y$ then $x \vee y = y$, and (2) reads $y = x \vee (x^{\perp} \wedge y)$.
 
-**Remark.** The law is equivalently the statement that the inequality $x \vee (x^{\perp} \wedge y)
-\leq y$, which holds for all $x \leq y$ because both $x$ and $x^{\perp} \wedge y$ are below $y$, is
+**Remark.** The law is equivalently the statement that the inequality $x \vee (x^{\perp} \wedge y) \leq y$, which holds for all $x \leq y$ because both $x$ and $x^{\perp} \wedge y$ are below $y$, is
 always an equality. In the modular law the same identity holds with an arbitrary $z$ in place of
 $x^{\perp}$; the orthomodular law is the one instance of it that the complement permits, and the next
 subsection makes the implication precise.
@@ -76,8 +74,7 @@ names of $x$ and $y$ gives the displayed law; the orthocomplement is unchanged b
 order-reversing involution, which is the same condition in the opposite order. So the class of
 orthomodular lattices is closed under duality.
 
-The law says exactly that the inequality that always holds is an equality: for $x \leq y$ one has $x
-\vee (x^{\perp} \wedge y) \leq y$ by the two joins, and orthomodularity is the statement that the
+The law says exactly that the inequality that always holds is an equality: for $x \leq y$ one has $x \vee (x^{\perp} \wedge y) \leq y$ by the two joins, and orthomodularity is the statement that the
 opposite inequality also holds. In the modular law the same identity holds with an arbitrary $z$ in
 place of $x^{\perp}$, and the orthomodular law is the one instance of it that the complement permits.
 
@@ -119,8 +116,7 @@ atoms $a, b, c, d$. Define $a^{\perp} = b$, $b^{\perp} = a$, $c^{\perp} = d$, $d
 $0^{\perp} = 1$, $1^{\perp} = 0$. This is an orthocomplement: it is an order-reversing involution, and
 every atom is disjoint from its image with join $1$. The lattice is orthomodular, because the only
 pairs $x \leq y$ are those with $x = 0$, with $x = y$, or with $y = 1$, and in each case the law
-reduces to an identity. It is modular and it is not distributive: $a \wedge (b \vee c) = a$ while $(a
-\wedge b) \vee (a \wedge c) = 0$. So $M_4$ is a modular, non-distributive orthomodular lattice with
+reduces to an identity. It is modular and it is not distributive: $a \wedge (b \vee c) = a$ while $(a \wedge b) \vee (a \wedge c) = 0$. So $M_4$ is a modular, non-distributive orthomodular lattice with
 six elements. It is the smallest non-Boolean orthomodular lattice: a nondegenerate ortholattice has
 even cardinality, so the two-element and four-element cases are $B_1$ and $B_2$ and are Boolean, and
 $M_4$ is a non-Boolean orthomodular lattice on six elements, which an exhaustive check of the six-
@@ -129,13 +125,11 @@ element lattices confirms.
 **Example (the Boolean lattices).** Every Boolean lattice is an orthomodular lattice, its
 orthocomplement being the Boolean complement; the smallest is $B_2$, the four-element lattice. The
 Boolean orthomodular lattices are exactly the distributive ones by the theorem above, so the examples
-of the non-distributive behaviour provable without a topology are the $M_n$ with $n$ even and $n \geq
-4$, of which $M_4$ is the smallest, and their subortholattices.
+of the non-distributive behaviour provable without a topology are the $M_n$ with $n$ even and $n \geq 4$, of which $M_4$ is the smallest, and their subortholattices.
 
 ## Summary
 
-An orthomodular lattice is an ortholattice in which $x \leq y$ implies $y = x \vee (x^{\perp} \wedge
-y)$. The law is equivalent to $x \vee (x^{\perp} \wedge (x \vee y)) = x \vee y$, and it says that the
+An orthomodular lattice is an ortholattice in which $x \leq y$ implies $y = x \vee (x^{\perp} \wedge y)$. The law is equivalent to $x \vee (x^{\perp} \wedge (x \vee y)) = x \vee y$, and it says that the
 inequality $x \vee (x^{\perp} \wedge y) \leq y$, which always holds for $x \leq y$, is an equality; it
 is self-dual, so the class is closed under duality; and every modular ortholattice is orthomodular,
 with the orthomodular law the one instance of the modular law that the complement forces.

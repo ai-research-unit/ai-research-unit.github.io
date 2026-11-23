@@ -210,7 +210,7 @@ The number is $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_{\natural
 $$
 \pi_{\imath}=h\nu_{\imath}+ϙA_{\imath} ,
 \qquad
-\pi^{2}=\pi_t^{2}-\vec\pi^{2}=\frac{(2\pi)^{2} p'^{2}}{h^{2}},
+\pi^{2}=\pi_t^{2}-\vec\pi^{2}=\frac{(2\pi)^{2} p'{}^{2}}{h^{2}},
 $$
 
 verified to $0.0\times10^{0}$. The subtraction is by a central number and not inside the norm, and the sibling's warning applies unchanged: the wrong object is
@@ -371,7 +371,7 @@ On the shell the mode form vanishes — $3.6\times10^{-15}$ against $-32.554945$
 | $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | The symbol of the gradient; temporal slot $+ik_t'$ |
 | $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$ | The shifted element; its symbol is $2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}$ |
 | $\tilde P'_\Phi=h\,\tilde\Upsilon_{\Phi,\mathrm{gco}}$ | The kinetic four-momentum |
-| $\pi_{\imath}=h\nu_{\imath}+ϙA_{\imath}$ | The shifted four-momentum; $\pi^{2}=p'^{2}/\frac{h^{2}}{4\pi^{2}}$ |
+| $\pi_{\imath}=h\nu_{\imath}+ϙA_{\imath}$ | The shifted four-momentum; $\pi^{2}=p'{}^{2}/\frac{h^{2}}{4\pi^{2}}$ |
 | $\mathcal{Q}$ | The mode form: four terms, no derivative, real for every field |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q$ | The $\natural$-square; central for every element |
 | $N=\pi^{2}-4\pi^{2}\nu_m^{2}$ | The second variation at a mode; one central number |

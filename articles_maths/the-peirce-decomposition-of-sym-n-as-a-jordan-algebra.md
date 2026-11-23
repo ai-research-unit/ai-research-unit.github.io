@@ -85,11 +85,11 @@ All six were verified at $n=5$ for $r=1,2,3,4$ by multiplying basis elements and
 **The middle space squares into the two outer spaces.** For $B,B'$ the block computation gives
 
 $$
-\begin{pmatrix}0&B\\B^{\mathsf T}&0\end{pmatrix}\circ\begin{pmatrix}0&B'\\B'^{\mathsf T}&0\end{pmatrix}
-=\frac12\begin{pmatrix}BB'^{\mathsf T}+B'B^{\mathsf T}&0\\0&B^{\mathsf T}B'+B'^{\mathsf T}B\end{pmatrix},
+\begin{pmatrix}0&B\\B^{\mathsf T}&0\end{pmatrix}\circ\begin{pmatrix}0&B'\\B'{}^{\mathsf T}&0\end{pmatrix}
+=\frac12\begin{pmatrix}BB'{}^{\mathsf T}+B'B^{\mathsf T}&0\\0&B^{\mathsf T}B'+B'{}^{\mathsf T}B\end{pmatrix},
 $$
 
-so the $J_1$ component is the symmetrised $BB'^{\mathsf T}$ and the $J_0$ component is the symmetrised $B^{\mathsf T}B'$. The two components are the two Gram matrices of the pair, and the identity was verified numerically at $n=5$.
+so the $J_1$ component is the symmetrised $BB'{}^{\mathsf T}$ and the $J_0$ component is the symmetrised $B^{\mathsf T}B'$. The two components are the two Gram matrices of the pair, and the identity was verified numerically at $n=5$.
 
 **The rules are the Jordan analogue of a grading, with the middle eigenvalue halved.** Since $L(E)$ is a derivation of the Jordan algebra with respect to itself, the eigenvalue of a product is the sum of the eigenvalues whenever the sum lies in the spectrum. The spectrum is $\{0,\tfrac12,1\}$, so $\tfrac12+\tfrac12=1$ lands in $J_1$, $\tfrac12+0=\tfrac12$ stays, and $1+1=2$ is truncated to $1$ by the identity $E\circ E=E$.
 
@@ -105,10 +105,10 @@ $$
 
 of dimensions $1$, $n-1$ and $n(n-1)/2$. The middle space is the space of vectors in the hyperplane, doubled by symmetry, and the outer space is the symmetric algebra of the hyperplane.
 
-**The middle space carries the structure of the hyperplane.** For $B=ub^{\mathsf T}+bu^{\mathsf T}$ and $B'=ub'^{\mathsf T}+b'u^{\mathsf T}$,
+**The middle space carries the structure of the hyperplane.** For $B=ub^{\mathsf T}+bu^{\mathsf T}$ and $B'=ub'{}^{\mathsf T}+b'u^{\mathsf T}$,
 
 $$
-B\circ B'=\tfrac12\big(bb'^{\mathsf T}+b'b^{\mathsf T}\big)+\langle b,b'\rangle\,uu^{\mathsf T},
+B\circ B'=\tfrac12\big(bb'{}^{\mathsf T}+b'b^{\mathsf T}\big)+\langle b,b'\rangle\,uu^{\mathsf T},
 $$
 
 so the product has a $J_0$ part which is the symmetric product of the two vectors and a $J_1$ part which is their inner product times the idempotent. The identity was verified for random vectors at $n=5$, and it is the matrix form of the spin-factor product of the Jordan theory.

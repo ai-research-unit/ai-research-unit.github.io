@@ -6,6 +6,8 @@
 
 The classification of one generation is a closed list. Sixteen cells, one name per cell, one charge per row, and no room left for a question. The question arrives the moment a second copy is written beside the first, because the copy is identical in every column but one: the mass.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 This article is about that second copy and the third. It asks what distinguishes a generation from its neighbours, and it gets exactly three answers. Charge, colour, weak isospin and $B-L$ are the same in all three columns, so they cannot distinguish anything. Mass differs, lifetime differs, and the decay pattern differs. Those three differences are the whole of flavour, and the first task is to show that they are not three independent things.
 
 The order of the article follows the order of the argument. *Three Words, Used Precisely* fixes the vocabulary. *Why the Index Is Inert* shows why no gauge measurement can see the generation index at all, which is the structural fact the rest depends on. *The Sixteen Rows* and 4 draw the table and separate the six independent masses from the eighteen entries that colour and chirality multiply them into. *Mass: the Column the Model Does Not Compute*, 6 and 7 take the three handles one at a time. *How Each Handle Is Seen* says what each handle looks like in a detector. *The One Sharp Prediction: Sameness* and 10 record the one sharp prediction the model makes in this sector and the one place where a flavour label is measured to change.
@@ -54,26 +56,26 @@ The only free object in the sector is the Yukawa matrix. Since no generator can 
 
 ## The Sixteen Rows
 
-The classification article's two octets stack into sixteen rows, and each generation needs a name, a mass and a lifetime. The whole table is therefore sixteen rows by twelve columns, and it is drawn here in full, because the repetition is the point. Masses are in MeV and lifetimes in seconds, both measured.
+The classification article's two octets stack into sixteen rows, and each generation needs a name, a mass and a lifetime. The whole table is therefore sixteen rows by twelve columns, and it is drawn here in full, because the repetition is the point. Masses are in kilograms and lifetimes in seconds, both measured.
 
 | # | field | $Q$ | name $i=1$ | $m_1$ | $\tau_1$ | name $i=2$ | $m_2$ | $\tau_2$ | name $i=3$ | $m_3$ | $\tau_3$ |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| $1$ | $\xi_{\mathrm{neu},eL}$ | $0$ | electron neutrino | $<8\times10^{-7}$ | stable | muon neutrino | $<8\times10^{-7}$ | stable | tau neutrino | $<8\times10^{-7}$ | stable |
-| $2$ | $e_{L}$ | $-1$ | electron | $0.511$ | stable | muon | $105.66$ | $2.20\times10^{-6}$ | tau | $1776.9$ | $2.90\times10^{-13}$ |
-| $3$ | $u^{r}_{L}$ | $+\tfrac23$ | up, red | $2.16$ | stable | charm, red | $1270$ | $1.03\times10^{-12}$ | top, red | $172690$ | $5.0\times10^{-25}$ |
-| $4$ | $d^{r}_{L}$ | $-\tfrac13$ | down, red | $4.67$ | stable | strange, red | $93.4$ | $8.98\times10^{-11}$ | bottom, red | $4180$ | $1.52\times10^{-12}$ |
-| $5$ | $u^{g}_{L}$ | $+\tfrac23$ | up, green | $2.16$ | stable | charm, green | $1270$ | $1.03\times10^{-12}$ | top, green | $172690$ | $5.0\times10^{-25}$ |
-| $6$ | $d^{g}_{L}$ | $-\tfrac13$ | down, green | $4.67$ | stable | strange, green | $93.4$ | $8.98\times10^{-11}$ | bottom, green | $4180$ | $1.52\times10^{-12}$ |
-| $7$ | $u^{b}_{L}$ | $+\tfrac23$ | up, blue | $2.16$ | stable | charm, blue | $1270$ | $1.03\times10^{-12}$ | top, blue | $172690$ | $5.0\times10^{-25}$ |
-| $8$ | $d^{b}_{L}$ | $-\tfrac13$ | down, blue | $4.67$ | stable | strange, blue | $93.4$ | $8.98\times10^{-11}$ | bottom, blue | $4180$ | $1.52\times10^{-12}$ |
-| $9$ | $\xi_{\mathrm{neu},eR}$ | $0$ | electron neutrino | $<8\times10^{-7}$ | stable | muon neutrino | $<8\times10^{-7}$ | stable | tau neutrino | $<8\times10^{-7}$ | stable |
-| $10$ | $e_{R}$ | $-1$ | electron | $0.511$ | stable | muon | $105.66$ | $2.20\times10^{-6}$ | tau | $1776.9$ | $2.90\times10^{-13}$ |
-| $11$ | $u^{r}_{R}$ | $+\tfrac23$ | up, red | $2.16$ | stable | charm, red | $1270$ | $1.03\times10^{-12}$ | top, red | $172690$ | $5.0\times10^{-25}$ |
-| $12$ | $d^{r}_{R}$ | $-\tfrac13$ | down, red | $4.67$ | stable | strange, red | $93.4$ | $8.98\times10^{-11}$ | bottom, red | $4180$ | $1.52\times10^{-12}$ |
-| $13$ | $u^{g}_{R}$ | $+\tfrac23$ | up, green | $2.16$ | stable | charm, green | $1270$ | $1.03\times10^{-12}$ | top, green | $172690$ | $5.0\times10^{-25}$ |
-| $14$ | $d^{g}_{R}$ | $-\tfrac13$ | down, green | $4.67$ | stable | strange, green | $93.4$ | $8.98\times10^{-11}$ | bottom, green | $4180$ | $1.52\times10^{-12}$ |
-| $15$ | $u^{b}_{R}$ | $+\tfrac23$ | up, blue | $2.16$ | stable | charm, blue | $1270$ | $1.03\times10^{-12}$ | top, blue | $172690$ | $5.0\times10^{-25}$ |
-| $16$ | $d^{b}_{R}$ | $-\tfrac13$ | down, blue | $4.67$ | stable | strange, blue | $93.4$ | $8.98\times10^{-11}$ | bottom, blue | $4180$ | $1.52\times10^{-12}$ |
+| $1$ | $\xi_{\mathrm{neu},eL}$ | $0$ | electron neutrino | $<1.43\times10^{-36}$ | stable | muon neutrino | $<1.43\times10^{-36}$ | stable | tau neutrino | $<1.43\times10^{-36}$ | stable |
+| $2$ | $e_{L}$ | $-1$ | electron | $9.109\times10^{-31}$ | stable | muon | $1.883\times10^{-28}$ | $2.20\times10^{-6}$ | tau | $3.167\times10^{-27}$ | $2.90\times10^{-13}$ |
+| $3$ | $u^{r}_{L}$ | $+\tfrac23$ | up, red | $3.850\times10^{-30}$ | stable | charm, red | $2.264\times10^{-27}$ | $1.03\times10^{-12}$ | top, red | $3.079\times10^{-25}$ | $5.0\times10^{-25}$ |
+| $4$ | $d^{r}_{L}$ | $-\tfrac13$ | down, red | $8.325\times10^{-30}$ | stable | strange, red | $1.665\times10^{-28}$ | $8.98\times10^{-11}$ | bottom, red | $7.452\times10^{-27}$ | $1.52\times10^{-12}$ |
+| $5$ | $u^{g}_{L}$ | $+\tfrac23$ | up, green | $3.850\times10^{-30}$ | stable | charm, green | $2.264\times10^{-27}$ | $1.03\times10^{-12}$ | top, green | $3.079\times10^{-25}$ | $5.0\times10^{-25}$ |
+| $6$ | $d^{g}_{L}$ | $-\tfrac13$ | down, green | $8.325\times10^{-30}$ | stable | strange, green | $1.665\times10^{-28}$ | $8.98\times10^{-11}$ | bottom, green | $7.452\times10^{-27}$ | $1.52\times10^{-12}$ |
+| $7$ | $u^{b}_{L}$ | $+\tfrac23$ | up, blue | $3.850\times10^{-30}$ | stable | charm, blue | $2.264\times10^{-27}$ | $1.03\times10^{-12}$ | top, blue | $3.079\times10^{-25}$ | $5.0\times10^{-25}$ |
+| $8$ | $d^{b}_{L}$ | $-\tfrac13$ | down, blue | $8.325\times10^{-30}$ | stable | strange, blue | $1.665\times10^{-28}$ | $8.98\times10^{-11}$ | bottom, blue | $7.452\times10^{-27}$ | $1.52\times10^{-12}$ |
+| $9$ | $\xi_{\mathrm{neu},eR}$ | $0$ | electron neutrino | $<1.43\times10^{-36}$ | stable | muon neutrino | $<1.43\times10^{-36}$ | stable | tau neutrino | $<1.43\times10^{-36}$ | stable |
+| $10$ | $e_{R}$ | $-1$ | electron | $9.109\times10^{-31}$ | stable | muon | $1.883\times10^{-28}$ | $2.20\times10^{-6}$ | tau | $3.167\times10^{-27}$ | $2.90\times10^{-13}$ |
+| $11$ | $u^{r}_{R}$ | $+\tfrac23$ | up, red | $3.850\times10^{-30}$ | stable | charm, red | $2.264\times10^{-27}$ | $1.03\times10^{-12}$ | top, red | $3.079\times10^{-25}$ | $5.0\times10^{-25}$ |
+| $12$ | $d^{r}_{R}$ | $-\tfrac13$ | down, red | $8.325\times10^{-30}$ | stable | strange, red | $1.665\times10^{-28}$ | $8.98\times10^{-11}$ | bottom, red | $7.452\times10^{-27}$ | $1.52\times10^{-12}$ |
+| $13$ | $u^{g}_{R}$ | $+\tfrac23$ | up, green | $3.850\times10^{-30}$ | stable | charm, green | $2.264\times10^{-27}$ | $1.03\times10^{-12}$ | top, green | $3.079\times10^{-25}$ | $5.0\times10^{-25}$ |
+| $14$ | $d^{g}_{R}$ | $-\tfrac13$ | down, green | $8.325\times10^{-30}$ | stable | strange, green | $1.665\times10^{-28}$ | $8.98\times10^{-11}$ | bottom, green | $7.452\times10^{-27}$ | $1.52\times10^{-12}$ |
+| $15$ | $u^{b}_{R}$ | $+\tfrac23$ | up, blue | $3.850\times10^{-30}$ | stable | charm, blue | $2.264\times10^{-27}$ | $1.03\times10^{-12}$ | top, blue | $3.079\times10^{-25}$ | $5.0\times10^{-25}$ |
+| $16$ | $d^{b}_{R}$ | $-\tfrac13$ | down, blue | $8.325\times10^{-30}$ | stable | strange, blue | $1.665\times10^{-28}$ | $8.98\times10^{-11}$ | bottom, blue | $7.452\times10^{-27}$ | $1.52\times10^{-12}$ |
 
 Four readings of this table are facts about the model rather than facts about the data.
 
@@ -87,7 +89,7 @@ So the sixteen rows carry four distinct masses per generation, and twelve distin
 
 **The rows name particles, and the masses are the particles'.** Charge conjugation does not add a row: the antiparticle of a field is a conjugate mode of that same field, with the same mass, the opposite $Q$, the opposite $B-L$ and conjugate colour, and the charges are listed in [Particle Classification](particle-classification-three-grids-one-name-in-every-cell.html), *The One Sharp Prediction: Sameness*A. So the sixteen rows are the whole of the matter and the antiparticles add no mass, no lifetime and no branching ratio. **Antiparticles are not a fourth handle.** They are the same three handles with the signs of the charges reversed, which is why they are mentioned here once and not tabulated twice.
 
-The neutrino rows are the ones that are not numbers. A light neutrino mass is bounded and not measured, $m_\beta<0.45$ eV from tritium decay (the 2024 KATRIN limit) and $\sum m_{\xi_{\mathrm{neu}}}<0.12$ eV from cosmology, so the entries read stable and the oscillation is treated separately in *The One Exception: Oscillation*. The bound applies to the light eigenstates only. The right-handed row is the one that carries no bound at all: in the model's spectrum $\xi_{\mathrm{neu},R}$ is a gauge singlet, its mass is not constrained by tritium decay, and the seesaw of *Mass: the Column the Model Does Not Compute* places it at a scale that is not written anywhere in this table.
+The neutrino rows are the ones that are not numbers. A light neutrino mass is bounded and not measured, $m_\beta<8.02\times10^{-37}$ kg from tritium decay (the 2024 KATRIN limit) and $\sum m_{\xi_{\mathrm{neu}}}<2.14\times10^{-37}$ kg from cosmology, so the entries read stable and the oscillation is treated separately in *The One Exception: Oscillation*. The bound applies to the light eigenstates only. The right-handed row is the one that carries no bound at all: in the model's spectrum $\xi_{\mathrm{neu},R}$ is a gauge singlet, its mass is not constrained by tritium decay, and the seesaw of *Mass: the Column the Model Does Not Compute* places it at a scale that is not written anywhere in this table.
 
 ## The Three Handles
 
@@ -197,7 +199,7 @@ Each handle has its own experimental signature, and the list is the operational 
 
 | handle | signature | classic case |
 |---|---|---|
-| mass | a peak in the invariant-mass distribution | $J/\psi$ at $3.097$ GeV, a narrow spike over a falling background |
+| mass | a peak in the invariant-mass distribution | $J/\psi$ at $5.522\times10^{-27}$ kg, a narrow spike over a falling background |
 | mass, as a threshold | a step in a cross-section | $e^+e^-$ into hadrons rising at the charm and beauty pair thresholds |
 | lifetime, long | a track that stops | a muon coming to rest after a few centimetres |
 | lifetime, short | a displaced vertex | a $b$ hadron flying a few hundred micrometres before decaying |
@@ -212,15 +214,15 @@ That is the empirical shape of the tripling, and it matches *Why the Index Is In
 
 Because the three columns couple identically, the $Z$ must decay into $e^+e^-$, $\mu^+\mu^-$ and $\tau^+\tau^-$ at the same rate. Measured at LEP:
 
-| channel | width (MeV) | ratio to the electron channel |
+| channel | width (J) | ratio to the electron channel |
 |---|---|---|
-| $Z\to e^+e^-$ | $83.984$ | $1$ |
-| $Z\to\mu^+\mu^-$ | $83.993$ | $1.00011$ |
-| $Z\to\tau^+\tau^-$ | $84.086$ | $1.00121$ |
+| $Z\to e^+e^-$ | $1.3456\times10^{-11}$ | $1$ |
+| $Z\to\mu^+\mu^-$ | $1.3457\times10^{-11}$ | $1.00011$ |
+| $Z\to\tau^+\tau^-$ | $1.3472\times10^{-11}$ | $1.00121$ |
 
 Two parts in a thousand, on a quantity the model says is exactly equal. The residual is understood as mass-dependent radiation, so the agreement is complete.
 
-One precision note about the table. The quantities LEP measures directly are ratios of partial widths, and the widths in MeV are extracted from those ratios under the assumption of the standard model's own couplings. The ratio column is therefore the test and the width column is the presentation, and a table that printed only the widths would hide which number was measured.
+One precision note about the table. The quantities LEP measures directly are ratios of partial widths, and the widths in joules are extracted from those ratios under the assumption of the standard model's own couplings. The ratio column is therefore the test and the width column is the presentation, and a table that printed only the widths would hide which number was measured.
 
 This is the model's only sharp prediction in this sector, and it is a prediction of sameness rather than of a number. It deserves the emphasis because it is easy to mistake for a triviality. A model in which the three columns coupled differently would pass every other test in this article and fail this one.
 

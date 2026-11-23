@@ -126,10 +126,10 @@ $$
 and the integrand does not depend explicitly on $x$, so the Beltrami identity applies:
 
 $$
-\sqrt{\frac{1+y'^2}{y}} - y'\frac{y'}{\sqrt{y(1+y'^2)}} = c ,
+\sqrt{\frac{1+y'{}^2}{y}} - y'\frac{y'}{\sqrt{y(1+y'{}^2)}} = c ,
 $$
 
-which simplifies to $y(1+y'^2) = 2R$ for a constant $R$. The solution is the cycloid
+which simplifies to $y(1+y'{}^2) = 2R$ for a constant $R$. The solution is the cycloid
 
 $$
 x = R(\theta-\sin\theta), \qquad y = R(1-\cos\theta),

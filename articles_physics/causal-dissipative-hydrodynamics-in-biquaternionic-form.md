@@ -4,12 +4,15 @@
 
 The first-order theory of [The Local Entropy Current](the-local-entropy-current.html) is not a theory of anything that propagates, and the corrections that make it one are Israel–Stewart's.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
+
 $$
 \tau_{\Pi}\,\frac{d\Pi}{d\tau}+\Pi=-\zeta\,\theta,
 \qquad
 \tau_{\pi}\,\frac{d\pi_{k\jmath}}{d\tau}+\pi_{k\jmath}=-2\digamma_{\mathrm{vis}}\,\sigma^{\mathrm{sh}}_{k\jmath},
 \qquad
-\tau_{q}\,\frac{dq_{\imath}}{d\tau}+q_{\imath}=-\kappa_{\mathrm{th}}\,\partial_\imath T ,
+\tau_{q}\,\frac{dq_{\imath}}{d\tau}+q_{\imath}=-\kappa_{\mathrm{th}}\,\partial_{\imath} T ,
 $$
 
 the three relaxation equations for the bulk stress, the shear and the heat flux, with the three relaxation times as new transport coefficients. The article's claim is that these three displays replace three algebraic relations and change nothing else — the conservation laws, the equation of state and the entropy current of the earlier articles are untouched.
@@ -24,10 +27,10 @@ What the article inherits and does not rewrite. The entropy inequality of [The L
 
 ### The parabolic equation
 
-A first-order theory relates the flux to the gradient at the same instant, and the resulting equation is parabolic. For heat conduction the relation is $q_{\imath}=-\kappa_{\mathrm{th}}\partial_\imath T$ and, combined with energy conservation, it gives
+A first-order theory relates the flux to the gradient at the same instant, and the resulting equation is parabolic. For heat conduction the relation is $q_{\imath}=-\kappa_{\mathrm{th}}\partial_{\imath} T$ and, combined with energy conservation, it gives
 
 $$
-\partial_t T=\frac{\kappa_{\mathrm{th}}}{c_{V}}\,\partial_\imath\partial_\imath T ,
+\partial_t T=\frac{\kappa_{\mathrm{th}}}{c_{V}}\,\partial_{\imath}\partial_{\imath} T ,
 $$
 
 the diffusion equation, whose solutions spread a disturbance over all space in any non-zero time. The equation is not wrong as a description of slow variations; it is wrong as a description of a propagation, **because a diffusion equation has no front**.
@@ -55,10 +58,10 @@ $$
 \qquad
 \tau_{\pi}\,\frac{d\pi_{k\jmath}}{d\tau}+\pi_{k\jmath}=-2\digamma_{\mathrm{vis}}\,\sigma^{\mathrm{sh}}_{k\jmath},
 \qquad
-\tau_{q}\,\frac{dq_{\imath}}{d\tau}+q_{\imath}=-\kappa_{\mathrm{th}}\,\partial_\imath T ,
+\tau_{q}\,\frac{dq_{\imath}}{d\tau}+q_{\imath}=-\kappa_{\mathrm{th}}\,\partial_{\imath} T ,
 $$
 
-the displays at the head of the article, with $\tau$ the proper time along the flow and every index low. The derivative is the comoving one, $\frac{d}{d\tau}=v_{\Phi,\imath}\partial_{\imath}$ in components — no factor of $c$, because a velocity times a gradient is already a rate: $v_{\Phi,t}\partial_t=ic\gamma\,(-i\partial/\partial r'_t)=c\gamma\,\partial/\partial r'_t$ and $v_{\Phi,k}\partial_\imath$ together give $\gamma(c\,\partial/\partial r'_t+\vec v\cdot\vec\nabla_\Phi)=\gamma\,d/dt$, which is $d/d\tau$ for a flow of Lorentz factor $\gamma$. A reader who inserts a $c$ here will find the relaxation times off by that factor against the front speeds of the next section, which are built from $\sqrt{D_{\mathrm{th}}/\tau_q}$ with $D_{\mathrm{th}}$ a diffusivity.
+the displays at the head of the article, with $\tau$ the proper time along the flow and every index low. The derivative is the comoving one, $\frac{d}{d\tau}=v_{\Phi,\imath}\partial_{\imath}$ in components — no factor of $c$, because a velocity times a gradient is already a rate: $v_{\Phi,t}\partial_t=ic\gamma\,(-i\partial/\partial r'_t)=c\gamma\,\partial/\partial r'_t$ and $v_{\Phi,k}\partial_{\imath}$ together give $\gamma(c\,\partial/\partial r'_t+\vec v\cdot\vec\nabla_\Phi)=\gamma\,d/dt$, which is $d/d\tau$ for a flow of Lorentz factor $\gamma$. A reader who inserts a $c$ here will find the relaxation times off by that factor against the front speeds of the next section, which are built from $\sqrt{D_{\mathrm{th}}/\tau_q}$ with $D_{\mathrm{th}}$ a diffusivity.
 
 The relaxation time is a transport coefficient of the same standing as the viscosity, and the second law constrains it: the production's new terms are quadratic in the fluxes and divided by the relaxation times, so a positive production requires the relaxation times to be positive as well as the coefficients.
 
@@ -86,7 +89,7 @@ $$
 
 the ratio of the relaxation time to the light-crossing time of the system's size $L$, which plays the role of the Knudsen number for the causal theory. The expansion is in this ratio, so the relaxation equation is a controlled correction while $\mathrm{Kn}_\tau\ll1$ and an uncontrolled model when it is not.
 
-Numbers, so that the statement has a scale. For $\tau_q=1\,\mathrm{fm}/c$ and a system of $L=10\,\mathrm{fm}$, the ratio is $0.1$: the relaxation time is a tenth of the crossing time and the expansion is reasonable. For $L=2\,\mathrm{fm}$ the ratio is $0.5$ and the expansion is marginal; for a system smaller than a few relaxation lengths the causal theory is the only one available and the expansion is not, which is the situation in which the corrections were invented.
+Numbers, so that the statement has a scale. For $\tau_q=3.3356\times10^{-24}\,\mathrm{s}$ and a system of $L=1.0\times10^{-14}\,\mathrm{m}$, the ratio is $0.1$: the relaxation time is a tenth of the crossing time and the expansion is reasonable. For $L=2\times10^{-15}\,\mathrm{m}$ the ratio is $0.5$ and the expansion is marginal; for a system smaller than a few relaxation lengths the causal theory is the only one available and the expansion is not, which is the situation in which the corrections were invented.
 
 What the ratio does not measure. It does not measure the accuracy of the transport coefficients, and it does not bound the front speed; causality is the separate condition of the next section, and the two conditions are independent. A theory can have a small $\mathrm{Kn}_\tau$ and be acausal if the diffusivity is too large, and a causal one with a large $\mathrm{Kn}_\tau$.
 
@@ -147,7 +150,7 @@ The front speed was evaluated at four pairs, and one of them is acausal, which i
 
 The third row is the boundary and the fourth is past it, so the condition $D_{\mathrm{th}}\le\tau_q c^{2}$ is not a formality: a physical diffusivity with too short a relaxation time gives a theory whose fastest signal outruns light, and that is exactly the defect the first-order theory has in the limit $\tau_q\to0$.
 
-The dispersion, evaluated twice at $k=2\,\mathrm{fm}^{-1}$. With $D_{\mathrm{th}}/c=0.2\,\mathrm{fm}$ and $\tau_{q}=1\,\mathrm{fm}/c$ the roots are $\omega=0.741\,620-0.500\,000\,i$ and its conjugate's negative, so the phase speed is $\mathrm{Re}\,\omega/k=0.370\,810\,c$ and the damping rate is $0.500\,000$ per $\mathrm{fm}/c$. With $D_{\mathrm{th}}/c=0.05\,\mathrm{fm}$ and the same $\tau_q$ the roots are $-0.276\,393\,i$ and $-0.723\,607\,i$, both purely imaginary, so the mode is over-damped and does not propagate at that wave number. The threshold between the two behaviours is $D_{\mathrm{th}}/c=0.062\,500\,\mathrm{fm}$ at $k=2\,\mathrm{fm}^{-1}$ and $\tau_q=1\,\mathrm{fm}/c$, which is $1/(4k^{2}\tau_q)$ and is the discriminant's zero.
+The dispersion, evaluated twice at $k=2\times10^{15}\,\mathrm{m^{-1}}$. With $D_{\mathrm{th}}/c=2\times10^{-16}\,\mathrm{m}$ and $\tau_{q}=3.3356\times10^{-24}\,\mathrm{s}$ the roots are $\omega=0.741\,620-0.500\,000\,i$ and its conjugate's negative, so the phase speed is $\mathrm{Re}\,\omega/k=0.370\,810\,c$ and the damping rate is $0.500\,000$ per $3.3356\times10^{-24}\,\mathrm{s}$. With $D_{\mathrm{th}}/c=5\times10^{-17}\,\mathrm{m}$ and the same $\tau_q$ the roots are $-0.276\,393\,i$ and $-0.723\,607\,i$, both purely imaginary, so the mode is over-damped and does not propagate at that wave number. The threshold between the two behaviours is $D_{\mathrm{th}}/c=6.25\times10^{-17}\,\mathrm{m}$ at $k=2\times10^{15}\,\mathrm{m^{-1}}$ and $\tau_q=3.3356\times10^{-24}\,\mathrm{s}$, which is $1/(4k^{2}\tau_q)$ and is the discriminant's zero.
 
 What the numbers establish and what they do not. They establish that the relaxation equation has the two regimes and that the front speed is $\sqrt{D_{\mathrm{th}}/\tau_q}$; **they do not establish that a given fluid's coefficients satisfy the causality condition**, which is a statement about the fluid and not about the equation.
 
@@ -205,9 +208,9 @@ Interpretation, and there is none in this article beyond the transcription. The 
 
 ## Summary
 
-The first-order theory's three algebraic relations make the shear, bulk and heat channels parabolic, so a signal travels unboundedly fast and the equilibrium is unstable against short wavelengths. The Israel–Stewart corrections replace them by three relaxation equations, $\tau_{\Pi}\dot\Pi+\Pi=-\zeta\theta$, $\tau_{\pi}\dot\pi_{k\jmath}+\pi_{k\jmath}=-2\digamma_{\mathrm{vis}}\sigma^{\mathrm{sh}}_{k\jmath}$ and $\tau_{q}\dot q_{\imath}+q_{\imath}=-\kappa_{\mathrm{th}}\partial_\imath T$, with six coefficients instead of three and a system that is second order in time for the fluxes.
+The first-order theory's three algebraic relations make the shear, bulk and heat channels parabolic, so a signal travels unboundedly fast and the equilibrium is unstable against short wavelengths. The Israel–Stewart corrections replace them by three relaxation equations, $\tau_{\Pi}\dot\Pi+\Pi=-\zeta\theta$, $\tau_{\pi}\dot\pi_{k\jmath}+\pi_{k\jmath}=-2\digamma_{\mathrm{vis}}\sigma^{\mathrm{sh}}_{k\jmath}$ and $\tau_{q}\dot q_{\imath}+q_{\imath}=-\kappa_{\mathrm{th}}\partial_{\imath} T$, with six coefficients instead of three and a system that is second order in time for the fluxes.
 
-The dispersion relation $\omega^{2}+(i/\tau_q)\omega-(D_{\mathrm{th}}/\tau_q)k^{2}=0$ gives two over-damped modes when $D_{\mathrm{th}}k^{2}\tau_q<\tfrac14$ and two propagating ones above it, with the asymptotic front speed $v_{\mathrm{frt}}=\sqrt{D_{\mathrm{th}}/\tau_q}$. Evaluated: $0.4472\,c$ for $(0.1,0.5)$ and $(0.2,1.0)$, $c$ exactly for $(0.5,0.5)$ and $1.4142\,c$ for $(1.0,0.5)$, so the causality condition $D_{\mathrm{th}}\le\tau_qc^{2}$ is a real constraint. At $k=2\,\mathrm{fm}^{-1}$ with $D_{\mathrm{th}}/c=0.2\,\mathrm{fm}$ and $\tau_q=1\,\mathrm{fm}/c$ the root is $0.741\,620-0.500\,000\,i$, a phase speed of $0.370\,810\,c$; at $D_{\mathrm{th}}/c=0.05\,\mathrm{fm}$ the roots are $-0.276\,393\,i$ and $-0.723\,607\,i$ and the mode is over-damped, with the threshold at $D_{\mathrm{th}}/c=0.062\,500\,\mathrm{fm}$.
+The dispersion relation $\omega^{2}+(i/\tau_q)\omega-(D_{\mathrm{th}}/\tau_q)k^{2}=0$ gives two over-damped modes when $D_{\mathrm{th}}k^{2}\tau_q<\tfrac14$ and two propagating ones above it, with the asymptotic front speed $v_{\mathrm{frt}}=\sqrt{D_{\mathrm{th}}/\tau_q}$. Evaluated: $0.4472\,c$ for $(0.1,0.5)$ and $(0.2,1.0)$, $c$ exactly for $(0.5,0.5)$ and $1.4142\,c$ for $(1.0,0.5)$, so the causality condition $D_{\mathrm{th}}\le\tau_qc^{2}$ is a real constraint. At $k=2\times10^{15}\,\mathrm{m^{-1}}$ with $D_{\mathrm{th}}/c=2\times10^{-16}\,\mathrm{m}$ and $\tau_q=3.3356\times10^{-24}\,\mathrm{s}$ the root is $0.741\,620-0.500\,000\,i$, a phase speed of $0.370\,810\,c$; at $D_{\mathrm{th}}/c=5\times10^{-17}\,\mathrm{m}$ the roots are $-0.276\,393\,i$ and $-0.723\,607\,i$ and the mode is over-damped, with the threshold at $D_{\mathrm{th}}/c=6.25\times10^{-17}\,\mathrm{m}$.
 
 The equilibrium is stable when the energy's second variation, $\delta^{2}w_{\mathrm{fl}}=\Pi^{2}/(2\zeta\tau_{\Pi})+\pi_{k\jmath}\pi_{k\jmath}/(4\digamma_{\mathrm{vis}}\tau_{\pi})+q_{\imath}q_{\imath}/(2\kappa_{\mathrm{th}}\tau_{q})$, is positive definite — evaluated once at $\Pi=0.05$, $\pi=0.1$, $q=0.02$ with $\zeta=0.1$, $\digamma_{\mathrm{vis}}=0.2$, $\kappa_{\mathrm{th}}=0.05$ and all three relaxation times $1$, $1$ and $0.5$, the three terms are $0.012\,500$, $0.012\,500$ and $0.008\,000$ for a total of $0.033\,000$. The form is real by the Hermiticity declaration of [The Local Entropy Current](the-local-entropy-current.html), which this article inherits and does not repeat.
 

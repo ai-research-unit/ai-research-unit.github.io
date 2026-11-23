@@ -163,7 +163,7 @@ of size $4\times4$.
 $$
 \operatorname{tr}K_{Q,P}=4pq,\qquad
 \det K_{Q,P}=p^{4}q^{4},\qquad
-\langle K_{Q,P}\rangle_*=(2q^{2}+q'^{2})(2p^{2}+p'^{2}),\qquad
+\langle K_{Q,P}\rangle_*=(2q^{2}+q'{}^{2})(2p^{2}+p'{}^{2}),\qquad
 \operatorname{rank}K_{Q,P}=\operatorname{rank}\mathsf{M}_2(Q)\cdot\operatorname{rank}\mathsf{M}_2(P).
 $$
 
@@ -197,7 +197,7 @@ and the nilpotent part is carried by the off-diagonal blocks. Its index is worth
 | rank | $2$, $1$ or $0$ by the stratum of $QP$ | product of the two ranks, in $\{0,1,2,4\}$ |
 | trace | $2qp$ | $4pq$ |
 | the determinant of the image | $(qp)^{2}$ | $p^{4}q^{4}$ |
-| Frobenius norm squared | $2(qp)^{2}+(qp'+q'p)^{2}$ | $(2q^{2}+q'^{2})(2p^{2}+p'^{2})$ |
+| Frobenius norm squared | $2(qp)^{2}+(qp'+q'p)^{2}$ | $(2q^{2}+q'{}^{2})(2p^{2}+p'{}^{2})$ |
 | conformal? | no, except on the scalars | no, except on the scalars |
 
 **The reading.** Both operators are triangular and both are invertible exactly when both parameters are invertible. Neither is conformal, and the failure is the failure of the model to be closed under transposition: the display contains the transposed factor, and the transposed factor is the other convention. So the two operators are read in the two conventions at once, and this is why the display is the natural place to see that the algebra has two faithful triangular models and not one.

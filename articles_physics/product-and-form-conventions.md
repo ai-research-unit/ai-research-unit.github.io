@@ -188,8 +188,8 @@ The complex numbers $\mathbb{C}$, $Q=q+iq'$.
 
 | bracket | form | algebraic norm | inertia | role |
 |---|---|---|---|---|
-| $\langle Q_1,Q_2\rangle=Q_1Q_2$ | plain, also quaternionic | $\langle Q\rangle=Q^2\in\mathbb{C}$, $\operatorname{Re}\langle Q\rangle=q^2-q'^2$ | $(1,1)$ | anisotropic; real part indefinite |
-| $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | Hermitian, also Krein | $\langle Q\rangle_{*}=Q\bar Q=q^2+q'^2$ | $(2,0)$ | definite; multiplicative; topology |
+| $\langle Q_1,Q_2\rangle=Q_1Q_2$ | plain, also quaternionic | $\langle Q\rangle=Q^2\in\mathbb{C}$, $\operatorname{Re}\langle Q\rangle=q^2-q'{}^2$ | $(1,1)$ | anisotropic; real part indefinite |
+| $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | Hermitian, also Krein | $\langle Q\rangle_{*}=Q\bar Q=q^2+q'{}^2$ | $(2,0)$ | definite; multiplicative; topology |
 
 In $\mathbb{C}$ the star bracket is definite and multiplicative at once. The plain norm is complex and anisotropic; its real part is indefinite. The modulus is $\sqrt{\langle Q\rangle_{*}}$. The quaternion sign being the identity, the quaternionic bracket is the plain one and the Krein bracket the Hermitian one.
 
@@ -197,10 +197,10 @@ The split-complex numbers $\mathbb{C}_{\mathrm{spl}}$, $Q=q+jq'$, $j^2=+1$.
 
 | bracket | form | algebraic norm | inertia | role |
 |---|---|---|---|---|
-| $\langle Q_1,Q_2\rangle=Q_1Q_2$ | plain, also quaternionic | $\langle Q\rangle=Q^2\in\mathbb{C}_{\mathrm{spl}}$, $\operatorname{Re}\langle Q\rangle=q^2+q'^2$ | $(2,0)$ | definite; topology; not multiplicative |
-| $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | Hermitian, also Krein | $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$ | $(1,1)$ | multiplicative; invertibility; null cone |
+| $\langle Q_1,Q_2\rangle=Q_1Q_2$ | plain, also quaternionic | $\langle Q\rangle=Q^2\in\mathbb{C}_{\mathrm{spl}}$, $\operatorname{Re}\langle Q\rangle=q^2+q'{}^2$ | $(2,0)$ | definite; topology; not multiplicative |
+| $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | Hermitian, also Krein | $\langle Q\rangle_{*}=Q\bar Q=q^2-q'{}^2$ | $(1,1)$ | multiplicative; invertibility; null cone |
 
-The two brackets exchange their inertias with the sign of the square of the coefficient unit: $i^2=-1$ makes the real part of the plain norm indefinite and the star norm definite, while $j^2=+1$ does the reverse. Definite and multiplicative are split across the two brackets, and no single bracket is both, since $(1+j)(1-j)=0$ with $1\pm j\neq0$. The topological norm is $\sqrt{\operatorname{Re}\langle Q\rangle}$, with no modulus sign; the scale of the polar factor is $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ and is not a norm. Over the dual numbers $\mathbb{C}_{\mathrm{dln}}$ both brackets realify to the rank-one form $q^2$; the algebraic norm is degenerate, and the topology is the Euclidean form $q^2+q'^2$ of the coefficient plane, which is not one of the brackets.
+The two brackets exchange their inertias with the sign of the square of the coefficient unit: $i^2=-1$ makes the real part of the plain norm indefinite and the star norm definite, while $j^2=+1$ does the reverse. Definite and multiplicative are split across the two brackets, and no single bracket is both, since $(1+j)(1-j)=0$ with $1\pm j\neq0$. The topological norm is $\sqrt{\operatorname{Re}\langle Q\rangle}$, with no modulus sign; the scale of the polar factor is $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ and is not a norm. Over the dual numbers $\mathbb{C}_{\mathrm{dln}}$ both brackets realify to the rank-one form $q^2$; the algebraic norm is degenerate, and the topology is the Euclidean form $q^2+q'{}^2$ of the coefficient plane, which is not one of the brackets.
 
 The reduced biquaternions $\mathbb{B}_{\mathrm{red}}$, $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with complex $Q_{\blacktriangle},Q_{\blacktriangledown}$; the marks are the bar and the tessarine sign ${}_{\mathrm{ts}}$, and ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$.
 

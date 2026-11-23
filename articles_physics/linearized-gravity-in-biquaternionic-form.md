@@ -39,7 +39,7 @@ $$
 \Box_\Phi = -\frac{\partial^2}{\partial {r'_t}^2}+\frac{\partial^2}{\partial r_x^2}+\frac{\partial^2}{\partial r_y^2}+\frac{\partial^2}{\partial r_z^2} .
 $$
 
-A product $\nu_{\Phi,k}x_\imath$ below is the invariant contraction $-\nu_t^{\prime}x_0+\nu_{\Phi x}r_x+\nu_{\Phi y}r_y+\nu_{\Phi z}r_z$, not a sum of like components; its one minus is the square of the $i$ in $Q_t=i q'_t$.
+A product $\nu_{\Phi,k}x_{\imath}$ below is the invariant contraction $-\nu_t^{\prime}x_0+\nu_{\Phi x}r_x+\nu_{\Phi y}r_y+\nu_{\Phi z}r_z$, not a sum of like components; its one minus is the square of the $i$ in $Q_t=i q'_t$.
 
 ## Linearized Gravity in Standard Form
 
@@ -62,7 +62,7 @@ At linear order the Christoffel symbols are
 $$
 \begin{aligned}
 \Gamma_{0\imath\jmath} &= -\tfrac{1}{2}\left(\partial/\partial x_{\imath} h_{\jmath 0} + \partial/\partial x_{\jmath} h_{\imath 0} - \partial/\partial x_0 h_{\imath\jmath}\right),\\[2pt]
-\Gamma_{k\imath\jmath} &= +\tfrac{1}{2}\left(\partial/\partial x_{\imath} h_{\jmath \imath} + \partial/\partial x_{\jmath} h_{\imath \imath} - \partial/\partial r_\imath h_{\imath\jmath}\right),
+\Gamma_{k\imath\jmath} &= +\tfrac{1}{2}\left(\partial/\partial x_{\imath} h_{\jmath \imath} + \partial/\partial x_{\jmath} h_{\imath \imath} - \partial/\partial r_{\imath} h_{\imath\jmath}\right),
 \end{aligned}
 $$
 
@@ -79,7 +79,7 @@ $$
 \mathrm{Ric}_{\imath\jmath} &= \tfrac{1}{2}\Bigl(\partial/\partial x_{\imath}\,D_{\jmath}
 +\partial/\partial x_{\jmath}\,D_{\imath}
 -\Box_\Phi h_{\imath\jmath}-\partial^2/\partial x_{\imath}\partial x_{\jmath} h\Bigr),
-\qquad D_{\jmath} = -\partial/\partial x_0 h_{0\jmath}+\sum_{\imath\in\{x,y,z\}}\partial/\partial r_\imath h_{k\jmath},\quad h = -h_{00}+h_{11}+h_{22}+h_{33},
+\qquad D_{\jmath} = -\partial/\partial x_0 h_{0\jmath}+\sum_{\imath\in\{x,y,z\}}\partial/\partial r_{\imath} h_{k\jmath},\quad h = -h_{00}+h_{11}+h_{22}+h_{33},
 \end{aligned}
 $$
 
@@ -87,7 +87,7 @@ and the Ricci scalar is
 
 $$
 \mathrm{Ric} = -\mathrm{Ric}_{00}+\mathrm{Ric}_{11}+\mathrm{Ric}_{22}+\mathrm{Ric}_{33}
-= \partial^2/\partial x_0^2\,h_{00}-\sum_{\imath\in\{x,y,z\}}\left(\partial^2/\partial x_0\partial r_\imath\,h_{k 0}+\partial^2/\partial r_\imath\partial x_0\,h_{0k}\right)+\sum_{\imath,l}\partial^2/\partial r_\imath\partial x_l\,h_{l\imath}-\Box_\Phi h .
+= \partial^2/\partial x_0^2\,h_{00}-\sum_{\imath\in\{x,y,z\}}\left(\partial^2/\partial x_0\partial r_{\imath}\,h_{k 0}+\partial^2/\partial r_{\imath}\partial x_0\,h_{0k}\right)+\sum_{\imath,l}\partial^2/\partial r_{\imath}\partial x_l\,h_{l\imath}-\Box_\Phi h .
 $$
 
 The Riemann tensor is gauge invariant, and therefore so are $\mathrm{Ric}_{\imath\jmath}$ and $\mathrm{Ric}$: they are constructed from the metric perturbation in a way that the relabelling leaves invariant.
@@ -105,12 +105,12 @@ so that the map is its own inverse, $\bar{\bar h}_{\imath\jmath} = h_{\imath\jma
 $$
 \begin{aligned}
 G_{00} = \mathrm{Ric}_{00} + \tfrac{1}{2}\mathrm{Ric} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_0+\partial/\partial x_0\,\bar{D}_0-\Box_\Phi\bar{h}_{00}+\bar{S}\Bigr),\\[2pt]
-G_{0k} = \mathrm{Ric}_{0k} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_\imath+\partial/\partial r_\imath\,\bar{D}_0-\Box_\Phi\bar{h}_{0k}\Bigr),\\[2pt]
-G_{\imath l} = \mathrm{Ric}_{\imath l} - \tfrac{1}{2}\delta_{\imath l}\mathrm{Ric} = \tfrac{1}{2}\Bigl(&\partial/\partial r_\imath\,\bar{D}_l+\partial/\partial x_l\,\bar{D}_\imath-\Box_\Phi\bar{h}_{\imath l}-\delta_{\imath l}\bar{S}\Bigr).
+G_{0k} = \mathrm{Ric}_{0k} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_{\imath}+\partial/\partial r_{\imath}\,\bar{D}_0-\Box_\Phi\bar{h}_{0k}\Bigr),\\[2pt]
+G_{\imath l} = \mathrm{Ric}_{\imath l} - \tfrac{1}{2}\delta_{\imath l}\mathrm{Ric} = \tfrac{1}{2}\Bigl(&\partial/\partial r_{\imath}\,\bar{D}_l+\partial/\partial x_l\,\bar{D}_{\imath}-\Box_\Phi\bar{h}_{\imath l}-\delta_{\imath l}\bar{S}\Bigr).
 \end{aligned}
 $$
 
-with $\bar{D}_{\jmath} = -\partial/\partial x_0\bar{h}_{0\jmath}+\sum_{\imath\in\{x,y,z\}}\partial/\partial r_\imath\bar{h}_{k\jmath}$ and $\bar{S} = \partial^2/\partial x_0^2\bar{h}_{00}-\sum_{\imath\in\{x,y,z\}}(\partial^2/\partial x_0\partial r_\imath\bar{h}_{k 0}+\partial^2/\partial r_\imath\partial x_0\bar{h}_{0k})+\sum_{\imath,l}\partial^2/\partial r_\imath\partial r_l\bar{h}_{l\imath}$; the minus on the time row of each contraction is the one minus of the interval.
+with $\bar{D}_{\jmath} = -\partial/\partial x_0\bar{h}_{0\jmath}+\sum_{\imath\in\{x,y,z\}}\partial/\partial r_{\imath}\bar{h}_{k\jmath}$ and $\bar{S} = \partial^2/\partial x_0^2\bar{h}_{00}-\sum_{\imath\in\{x,y,z\}}(\partial^2/\partial x_0\partial r_{\imath}\bar{h}_{k 0}+\partial^2/\partial r_{\imath}\partial x_0\bar{h}_{0k})+\sum_{\imath,l}\partial^2/\partial r_{\imath}\partial r_l\bar{h}_{l\imath}$; the minus on the time row of each contraction is the one minus of the interval.
 
 The **harmonic gauge** is the condition
 
@@ -137,7 +137,7 @@ The harmonic condition is preserved by the residual gauge transformations with $
 A plane-wave solution of the vacuum equation is
 
 $$
-h_{\imath\jmath} = A_{\imath\jmath}\cos(2\pi\nu_{\Phi,k}x_\imath), \qquad -4\pi^{2}\nu_t^{\prime\,2}+4\pi^{2}\nu_{\Phi x}^2+4\pi^{2}\nu_{\Phi y}^2+4\pi^{2}\nu_{\Phi z}^2 = 0,
+h_{\imath\jmath} = A_{\imath\jmath}\cos(2\pi\nu_{\Phi,k}x_{\imath}), \qquad -4\pi^{2}\nu_t^{\prime\,2}+4\pi^{2}\nu_{\Phi x}^2+4\pi^{2}\nu_{\Phi y}^2+4\pi^{2}\nu_{\Phi z}^2 = 0,
 $$
 
 with a constant symmetric amplitude $A_{\imath\jmath}$. The harmonic condition and the residual gauge freedom can be used to put it in **transverse-traceless** form, in which $-2\pi\nu_t^{\prime}A_{0\jmath}+k_1A_{1\jmath}+k_2A_{2\jmath}+k_3A_{3\jmath} = 0$ and $-A_{00}+A_{11}+A_{22}+A_{33} = 0$. For propagation in the $+z$ direction, $2\pi\nu_{\Phi,\imath} = (\omega/c)(1,0,0,1)$ in the coordinates $x_{\imath} = (r'_{t}, r_x, r_y, r_z)$, so that the phase is $\omega(r_z/c - r'_t)$, and the two independent amplitudes are the **plus** polarization, $A_{11} = -A_{22} \ne 0$, and the **cross** polarization, $A_{12} = A_{21} \ne 0$, all other components zero. For such a wave $\mathrm{Ric}_{\imath\jmath} = 0$, while $\mathrm{Riem}_{\imath\jmath\rho\sigma} \ne 0$: the curvature is nonzero even though the Ricci tensor vanishes, which is what distinguishes a gravitational wave from a gauge artifact. The two polarizations are the physical, propagating degrees of freedom of the linear theory.
@@ -168,10 +168,10 @@ $$
 The right-hand side is automatically symmetric in $\mu\jmath$, because the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ is symmetric. The map is also surjective onto symmetric perturbations: given any symmetric $h_{\imath\jmath}$, the choice
 
 $$
-\delta\tilde{E}_{\Phi,\imath} = \tfrac{1}{2}\sum_\imath h_{\imathk}\,\varepsilon_{\mathrm{du},k} ,
+\delta\tilde{E}_{\Phi,\imath} = \tfrac{1}{2}\sum_{\imath} h_{\imath k}\,\varepsilon_{\mathrm{du},k} ,
 $$
 
-reproduces it exactly, since $\sum_\imath\langle \varepsilon_{\imath}, \tfrac{1}{2}h_{\jmathk}\varepsilon_{\mathrm{du},k}\rangle_{\natural} = \tfrac{1}{2}h_{\jmath\imath}$ and the two terms add to $h_{\imath\jmath}$. Both statements were checked numerically: the symmetry on random perturbations, the surjectivity on random symmetric $h$, and the rank of the map on the sixteen frame directions, which is $10$ with a kernel of dimension $6$.
+reproduces it exactly, since $\sum_{\imath}\langle \varepsilon_{\imath}, \tfrac{1}{2}h_{\jmath k}\varepsilon_{\mathrm{du},k}\rangle_{\natural} = \tfrac{1}{2}h_{\jmath\imath}$ and the two terms add to $h_{\imath\jmath}$. Both statements were checked numerically: the symmetry on random perturbations, the surjectivity on random symmetric $h$, and the rank of the map on the sixteen frame directions, which is $10$ with a kernel of dimension $6$.
 
 ### The Counting
 
@@ -188,7 +188,7 @@ $$
 \delta\tilde{E}_{\Phi,\imath} \;\longmapsto\; \delta\tilde{E}_{\Phi,\imath} + \vec G\varepsilon_{\imath} + \varepsilon_{\imath}\vec G^{*} .
 $$
 
-The unit-norm condition $\tilde{U}\tilde{U}^{\natural} = e_t$ linearizes to $\vec G + \vec G^{\natural} = 0$, which says that $\vec G$ is a **complex pure vector**, $\vec G \in \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z, i\vec e_x, i\vec e_y, i\vec e_z\}$. This is the six-dimensional scalar-free subspace that the parent article identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by the rotation generators $J_\imath = \vec e_\imath$ and the boost generators $B_{\mathrm{boost},k} = i\vec e_\imath$. Its elements leave the metric perturbation invariant:
+The unit-norm condition $\tilde{U}\tilde{U}^{\natural} = e_t$ linearizes to $\vec G + \vec G^{\natural} = 0$, which says that $\vec G$ is a **complex pure vector**, $\vec G \in \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z, i\vec e_x, i\vec e_y, i\vec e_z\}$. This is the six-dimensional scalar-free subspace that the parent article identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by the rotation generators $J_{\imath} = \vec e_{\imath}$ and the boost generators $B_{\mathrm{boost},k} = i\vec e_{\imath}$. Its elements leave the metric perturbation invariant:
 
 $$
 \langle \varepsilon_{\imath}, \vec G\varepsilon_{\jmath} + \varepsilon_{\jmath}\vec G^{*}\rangle_{\natural}
@@ -449,7 +449,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 $$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
-(\gamma_\imath)^2=-I_4,\qquad
+(\gamma_{\imath})^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_{\imath},\gamma_5\}=0,
 $$
@@ -484,7 +484,7 @@ $$
 \sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_{\imath}=2\gamma_\gamma\gamma_\beta\gamma_\alpha.
 $$
 
-For a product of $n$ distinct generators they are one rule, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} A\gamma_{\imath}=-(-1)^{n+1}(4-2n)A$. With every index low only the first keeps a closed form, $\sum_{\imath}\gamma_{\imath}\gamma_{\imath}=-2I_4$; the rest are index-dependent and are computed, not transcribed: $\sum_{\imath}\gamma_{\imath}\gamma_0\gamma_{\imath}=+4\gamma_0$ and $\sum_{\imath}\gamma_{\imath}\gamma_\imath\gamma_{\imath}=0$ for $k=1,2,3$.
+For a product of $n$ distinct generators they are one rule, $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} A\gamma_{\imath}=-(-1)^{n+1}(4-2n)A$. With every index low only the first keeps a closed form, $\sum_{\imath}\gamma_{\imath}\gamma_{\imath}=-2I_4$; the rest are index-dependent and are computed, not transcribed: $\sum_{\imath}\gamma_{\imath}\gamma_0\gamma_{\imath}=+4\gamma_0$ and $\sum_{\imath}\gamma_{\imath}\gamma_{\imath}\gamma_{\imath}=0$ for $k=1,2,3$.
 
 **The two Dirac equations.** Two equations carry the name in this corpus: the one-sided chirality pair and Kravchenko's two-sided equation. They share the $\gamma$ frame and are related by the dictionary, but they are not the same equation and must not be read as one. The one-sided pair, which is the flat form of the equation meant in the body above, is
 
@@ -498,7 +498,7 @@ with both gradients acting from the left and the mass term pairing the two chira
 $$
 \bigl(i\partial/\partial r'_t+D_3\bigr)F-2\pi\nu_m\,i\,\overline{F}\,\vec e_{z}=0,
 \qquad
-D_3=\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial}{\partial R_\imath},
+D_3=\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial}{\partial R_{\imath}},
 $$
 
 with the spatial gradient acting from the left, the mass from the right through $\vec e_z$, and the mass term carrying the algebra's complex conjugation $\overline{\cdot}$. The first acts on a pair of chirality halves with a scalar mass; the second acts on one biquaternion with a directed, antilinear mass. They share the frame, not the operator. Here $\frac{1}{2\pi\nu_m}$ is the mass length.
@@ -522,7 +522,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
@@ -541,7 +541,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $h = -h_{00}+h_{11}+h_{22}+h_{33} = 2\sum_{\jmath}\langle\varepsilon_{\mathrm{du},\jmath},\delta\tilde{E}_{\Phi,\jmath}\rangle_{\natural}$ | Trace of the metric perturbation |
 | $\bar{h}_{00}=h_{00}+\tfrac12h$, $\bar{h}_{\imath l}=h_{\imath l}-\tfrac12h\,\delta_{\imath l}$, $\bar{h} = -h$ | Trace-reversed perturbation; here the overbar marks trace reversal, not complex conjugation |
 | $\bar{\delta\tilde{E}_{\Phi}}_{\imath} = \delta\tilde{E}_{\Phi,\imath} - \tfrac14 h\,\varepsilon_{\imath}$ | Trace-reversed frame perturbation |
-| $\vec G \in \mathrm{span}_{\mathbb{R}}\{\vec e_\imath, i\vec e_\imath\}$ | Infinitesimal local Lorentz generator (complex pure vector) |
+| $\vec G \in \mathrm{span}_{\mathbb{R}}\{\vec e_{\imath}, i\vec e_{\imath}\}$ | Infinitesimal local Lorentz generator (complex pure vector) |
 | $iL_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}}$ | The generator basis operator of the coordinate $x_{\imath}$, in the axis-free display of *Matrix Representations Conventions*; it is a basis operator, that is, an operator |
 | $\tilde Q_{\Phi,\mathrm d} \in \mathbb{B}_{\Phi}$ | Gauge four-vector, $\delta\tilde{E}_{\Phi,\imath} \mapsto \delta\tilde{E}_{\Phi,\imath} - \partial/\partial x_{\imath}\,\tilde Q_{\Phi,\mathrm d}$ |
 | $h_{\imath\jmath} \mapsto h_{\imath\jmath} - \partial/\partial x_{\imath}\,\zeta_{\jmath} - \partial/\partial x_{\jmath}\,\zeta_{\imath}$, $\zeta_{\jmath} = \langle\tilde Q_{\Phi,\mathrm d},\varepsilon_{\jmath}\rangle_{\natural}$ | Linearized gauge transformation |

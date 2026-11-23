@@ -22,7 +22,7 @@ The identities are proved in §*Appendix: The Algebra* from the eight real coord
 
 ## Conventions and Notation
 
-The element. $\tilde Q=Q_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_{\imath}\in\mathbb{C}$, the product fixed by $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_\imath^{2}=-e_t$, the scalar $i$ central. The symbol $e_t$ is the algebra's unit, not a time coordinate; $E$ and $t$ are reserved for energy and coordinate time, so no confusion arises.
+The element. $\tilde Q=Q_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_{\imath}\in\mathbb{C}$, the product fixed by $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_{\imath}^{2}=-e_t$, the scalar $i$ central. The symbol $e_t$ is the algebra's unit, not a time coordinate; $E$ and $t$ are reserved for energy and coordinate time, so no confusion arises.
 
 The two norms. $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\sum_{\imath} Q_{\imath}^{2}$ is the **quaternionic norm**: complex-valued, multiplicative, vanishing on the zero-divisor cone $\mathcal N$. $\langle\tilde Q\rangle_{*}=\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ is the **Euclidean size**, also called the Hermitian norm $H$: real, non-negative, definite. $\mathrm{Sc}\,\tilde Q=Q_t$ is the scalar part and $\vec Q$ the vector part, so $\tilde Q=Q_t+\vec Q$.
 
@@ -99,7 +99,7 @@ a difference of squares and a sum of squares of the same two lengths: a Lorentzi
 $$
 \langle\tilde Q\rangle_{*}^{2}=\lvert N(\tilde Q)\rvert^{2}+4A^{2},
 \qquad
-A^{2}=\sum_{j\lt k}\bigl(a_jb_\imath-a_\imathb_j\bigr)^{2}=\lvert a\rvert^{2}\lvert b\rvert^{2}-(a\cdot b)^{2},
+A^{2}=\sum_{j\lt k}\bigl(a_jb_{\imath}-a_{\imath} b_j\bigr)^{2}=\lvert a\rvert^{2}\lvert b\rvert^{2}-(a\cdot b)^{2},
 $$
 
 with $A$ the area of the parallelogram spanned by $a$ and $b$, the sum running over the six coordinate planes of $\mathbb{R}^{4}$. The two forms of $A^{2}$ are quoted together because the first displays the geometry and the second is what makes the identity algebraic. The symbol $A$ is the area; the Proca potential $\tilde A_\Phi$ carries a tilde and a label and is a different object.
@@ -268,13 +268,13 @@ $$
 
 both for an element boosted from rest by $\theta_{\mathrm{rpd}}$.
 
-*Proof of the vector case.* Write $\tilde A_\Phi=mc\bigl(i\cosh\theta_{\mathrm{rpd}}e_t+\sinh\theta_{\mathrm{rpd}}\vec u\bigr)$, the corpus's four-vector shape with an imaginary time coefficient. Its coefficients are $imc\cosh\theta$ and $mc\sinh\theta\,u_\imath$, so
+*Proof of the vector case.* Write $\tilde A_\Phi=mc\bigl(i\cosh\theta_{\mathrm{rpd}}e_t+\sinh\theta_{\mathrm{rpd}}\vec u\bigr)$, the corpus's four-vector shape with an imaginary time coefficient. Its coefficients are $imc\cosh\theta$ and $mc\sinh\theta\,u_{\imath}$, so
 
 $$
-N=(imc\cosh\theta)^{2}+(mc\sinh\theta)^{2}\sum_{\imath\in\{x,y,z\}}u_\imath^{2}=-m^{2}c^{2}\bigl(\cosh^{2}-\sinh^{2}\bigr)=-m^{2}c^{2},
+N=(imc\cosh\theta)^{2}+(mc\sinh\theta)^{2}\sum_{\imath\in\{x,y,z\}}u_{\imath}^{2}=-m^{2}c^{2}\bigl(\cosh^{2}-\sinh^{2}\bigr)=-m^{2}c^{2},
 $$
 
-using $\sum_{\imath\in\{x,y,z\}}u_\imath^{2}=1$ and $(imc\cosh\theta)^{2}=-m^{2}c^{2}\cosh^{2}\theta$; and
+using $\sum_{\imath\in\{x,y,z\}}u_{\imath}^{2}=1$ and $(imc\cosh\theta)^{2}=-m^{2}c^{2}\cosh^{2}\theta$; and
 
 $$
 \langle\tilde A_\Phi\rangle_{*}=m^{2}c^{2}\bigl(\cosh^{2}+\sinh^{2}\bigr)=m^{2}c^{2}\cosh2\theta_{\mathrm{rpd}} .
@@ -323,7 +323,7 @@ On the cone the ratio has no value and the pair does. $\rho_{\mathrm{num}}\to0$,
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | the proper density, the invariant length of the current over $c$ |
 | $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | the coordinate density, $j_0/c$ |
 | $a$, $b$ | the real and imaginary four-vectors of the coefficients |
-| $A$, $A^{2}$ | the area of the parallelogram of $a$ and $b$, with $A^{2}=\sum_{j\lt k}(a_jb_\imath-a_\imathb_j)^{2}$ |
+| $A$, $A^{2}$ | the area of the parallelogram of $a$ and $b$, with $A^{2}=\sum_{j\lt k}(a_jb_{\imath}-a_{\imath} b_j)^{2}$ |
 | $\tilde A_\Phi$ | the Proca potential, a different object from $A$ |
 | $j_0$, $\vec j$ | the current's time component and flux, with $\tilde J_\Phi=ij_0e_t+\vec j$ |
 
@@ -340,7 +340,7 @@ Claim. $\lvert N(\tilde Q)\rvert\le\langle\tilde Q\rangle_{*}$ for every $\tilde
 Claim. $\langle\tilde Q\rangle_{*}^{2}=\lvert N(\tilde Q)\rvert^{2}+4A^{2}$ with $Q_{\imath}=a_{\imath}+ib_{\imath}$ and
 
 $$
-A^{2}=\sum_{j\lt k}\bigl(a_jb_\imath-a_\imathb_j\bigr)^{2}=\lvert a\rvert^{2}\lvert b\rvert^{2}-(a\cdot b)^{2},
+A^{2}=\sum_{j\lt k}\bigl(a_jb_{\imath}-a_{\imath} b_j\bigr)^{2}=\lvert a\rvert^{2}\lvert b\rvert^{2}-(a\cdot b)^{2},
 $$
 
 the sum over the six pairs $1\le j\lt k\le 4$.
@@ -362,7 +362,7 @@ $$
 Lagrange's identity in $\mathbb{R}^{4}$ reads
 
 $$
-\lvert a\rvert^{2}\lvert b\rvert^{2}-(a\cdot b)^{2}=\sum_{j\lt k}\bigl(a_jb_\imath-a_\imathb_j\bigr)^{2},
+\lvert a\rvert^{2}\lvert b\rvert^{2}-(a\cdot b)^{2}=\sum_{j\lt k}\bigl(a_jb_{\imath}-a_{\imath} b_j\bigr)^{2},
 $$
 
 the sum over the six coordinate planes. Substituting gives the claim. The bracket is non-negative, so $\langle\cdot\rangle_{*}\ge\lvert N\rvert$ follows a second time, independently of the triangle inequality.
@@ -371,10 +371,10 @@ the sum over the six coordinate planes. Substituting gives the claim. The bracke
 
 Claim. $\langle\tilde\Xi\rangle_{*}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and $\lvert N(\tilde\Xi)\rvert=\varrho^{2}$ for an $N$-regular element.
 
-*Proof.* The Euclidean size is not multiplicative in general — $e_t+i\vec e_x$ and $e_t-i\vec e_x$ each have size $2$ and their product is $0$ — so the factors are handled one at a time. Multiplication by the central phase multiplies every coefficient by a unit complex number and leaves $\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ fixed. Right multiplication by the real unit $\tilde u_{\mathrm r}$ acts on the four complex coefficients by the same real orthogonal $4\times4$ matrix that it induces on $\mathbb{R}^{4}$, and an orthogonal real matrix preserves $\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$; the same holds for left multiplication, since the real unit quaternions act orthogonally on both sides. What remains is the boost factor alone, whose two coefficients are $\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $i\sinh\frac{\theta_{\mathrm{rpd}}}{2}u_\imath$, so
+*Proof.* The Euclidean size is not multiplicative in general — $e_t+i\vec e_x$ and $e_t-i\vec e_x$ each have size $2$ and their product is $0$ — so the factors are handled one at a time. Multiplication by the central phase multiplies every coefficient by a unit complex number and leaves $\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ fixed. Right multiplication by the real unit $\tilde u_{\mathrm r}$ acts on the four complex coefficients by the same real orthogonal $4\times4$ matrix that it induces on $\mathbb{R}^{4}$, and an orthogonal real matrix preserves $\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$; the same holds for left multiplication, since the real unit quaternions act orthogonally on both sides. What remains is the boost factor alone, whose two coefficients are $\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $i\sinh\frac{\theta_{\mathrm{rpd}}}{2}u_{\imath}$, so
 
 $$
-\langle\tilde U_{\Psi,\mathrm b}\rangle_{*}=\cosh^{2}\frac{\theta_{\mathrm{rpd}}}{2}+\sinh^{2}\frac{\theta_{\mathrm{rpd}}}{2}\sum_{\imath\in\{x,y,z\}}u_\imath^{2}=\cosh^{2}+\sinh^{2}=\cosh\theta_{\mathrm{rpd}} .
+\langle\tilde U_{\Psi,\mathrm b}\rangle_{*}=\cosh^{2}\frac{\theta_{\mathrm{rpd}}}{2}+\sinh^{2}\frac{\theta_{\mathrm{rpd}}}{2}\sum_{\imath\in\{x,y,z\}}u_{\imath}^{2}=\cosh^{2}+\sinh^{2}=\cosh\theta_{\mathrm{rpd}} .
 $$
 
 For the modulus, $N$ is multiplicative, by the theorem of [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), and $N$ of a central phase is that phase squared, $N$ of a real unit is $1$, and $N(\tilde U_{\Psi,\mathrm b})=\cosh^{2}-\sinh^{2}=1$; hence $N(\tilde\Xi)=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. **The contrast is the article in one line: the modulus is multiplicative and the size is not, which is why the modulus is the invariant and the size is a frame-dependent quantity.** The half-angle in the exponent becomes a full angle in the ratio, which is the origin of every factor of two in this article.

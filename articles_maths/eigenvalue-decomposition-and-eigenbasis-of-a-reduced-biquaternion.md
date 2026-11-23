@@ -521,7 +521,7 @@ $$
 \qquad
 \breve Q=q+jq'=\lambda_+\Pi_++\lambda_-\Pi_-.
 $$
-The reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=q^2-q'^2=\lambda_+\lambda_-$. The real plane is a real subalgebra of $\mathbb{B}_{\mathrm{red}}$ isomorphic to the split-complex algebra $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$, and on it the eigenvalue decomposition, the Peirce decomposition and the spectral calculus reduce to those of the split-complex article.
+The reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=q^2-q'{}^2=\lambda_+\lambda_-$. The real plane is a real subalgebra of $\mathbb{B}_{\mathrm{red}}$ isomorphic to the split-complex algebra $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$, and on it the eigenvalue decomposition, the Peirce decomposition and the spectral calculus reduce to those of the split-complex article.
 
 ## Degenerate Regimes
 

@@ -32,7 +32,7 @@ It is an element of $R$, and it takes its value in the real submodule $R_{\mathb
 **Proposition.** Let $Q_1 = q_1 + \varepsilon q'_1$ and $Q_2 = q_2 + \varepsilon q'_2$.
 
 - **Dependence on the real part alone.** $\langle Q_1\rangle = q_1^2$ does not involve the infinitesimal part $q'_1$; equivalently, $\langle Q_1 + \eta\rangle = \langle Q_1\rangle$ for every $\eta \in \mathrm{M}$.
-- **Invariance under dual conjugation.** $\langle \bar Q_1\rangle = \langle Q_1\rangle$, since $(-q'_1)^2 = q_1'^2$ plays no role and the real part is unchanged.
+- **Invariance under dual conjugation.** $\langle \bar Q_1\rangle = \langle Q_1\rangle$, since $(-q'_1)^2 = q_1'{}^2$ plays no role and the real part is unchanged.
 - **Sign.** Over an ordered ring $R$ the value $q_1^2$ is non-negative, and $\langle Q_1\rangle = 0$ if and only if $q_1 = 0$.
 - **Vanishing locus.** Over a field, $\langle Q_1\rangle = 0$ if and only if $Q_1 \in \mathrm{M} = (\varepsilon)$.
 
@@ -120,7 +120,7 @@ The Euclidean form of the next section is the sum of squares of the two componen
 **Definition.** The **Euclidean form** of a dual number is the real quadratic form
 
 $$
-\mathfrak{Q}(Q) = q^2 + q'^2,
+\mathfrak{Q}(Q) = q^2 + q'{}^2,
 $$
 
 the **Euclidean inner product** of two dual numbers $Q_1 = q_1 + \varepsilon q'_1$ and $Q_2 = q_2 + \varepsilon q'_2$ is
@@ -132,7 +132,7 @@ $$
 and the **Euclidean norm** is
 
 $$
-\|Q\| = \sqrt{q^2 + q'^2}.
+\|Q\| = \sqrt{q^2 + q'{}^2}.
 $$
 
 Over $R = \mathbb{R}$ this is the ordinary Euclidean structure of the plane $\mathbb{C}_{\mathrm{dln}} \cong \mathbb{R}^2$ in dual coordinates.
@@ -142,7 +142,7 @@ Over $R = \mathbb{R}$ this is the ordinary Euclidean structure of the plane $\ma
 **Proposition.** The Euclidean form is positive-definite over an ordered ring and satisfies $\langle Q_1, Q_1 \rangle = \mathfrak{Q}(Q_1)$. It is **not** multiplicative with respect to the dual product:
 
 $$
-\mathfrak{Q}(Q_1 Q_2) = (q_1 q_2)^2 + (q_1 q'_2 + q'_1 q_2)^2, \qquad \mathfrak{Q}(Q_1)\mathfrak{Q}(Q_2) = (q_1^2 + q_1'^2)(q_2^2 + q_2'^2),
+\mathfrak{Q}(Q_1 Q_2) = (q_1 q_2)^2 + (q_1 q'_2 + q'_1 q_2)^2, \qquad \mathfrak{Q}(Q_1)\mathfrak{Q}(Q_2) = (q_1^2 + q_1'{}^2)(q_2^2 + q_2'{}^2),
 $$
 
 and the two agree only when $q_1 q'_2 + q'_1 q_2 = \pm(q_1 q_2 - q'_1 q'_2)$, which is not an identity.
@@ -155,7 +155,7 @@ The two forms are distinct and play different roles.
 
 | | Norm $\langle\cdot\rangle$ | Euclidean form $\mathfrak{Q}$ |
 |---|---|---|
-| Value | $q^2$ | $q^2 + q'^2$ |
+| Value | $q^2$ | $q^2 + q'{}^2$ |
 | Multiplicative | yes | no |
 | Degenerate | yes, radical $\mathrm{M}$ | no |
 | Sign over $\mathbb{R}$ | non-negative | positive-definite |
@@ -330,8 +330,8 @@ the norm reads $\langle Q\rangle = (\operatorname{Re} Q)^2$, and invertibility d
 The three norms of the family are
 
 $$
-\langle A\rangle_{*} = a^2 + a'^2 \ \text{ in } \mathbb{C}, \qquad
-\langle A\rangle_{*} = a^2 - a'^2 \ \text{ in } \mathbb{C}_{\mathrm{spl}}, \qquad
+\langle A\rangle_{*} = a^2 + a'{}^2 \ \text{ in } \mathbb{C}, \qquad
+\langle A\rangle_{*} = a^2 - a'{}^2 \ \text{ in } \mathbb{C}_{\mathrm{spl}}, \qquad
 \langle Q\rangle_{*} = q^2 \ \text{ in } \mathbb{C}_{\mathrm{dln}},
 $$
 
@@ -345,7 +345,7 @@ The three cases form the family of the two-dimensional real algebras: complex, s
 
 ## Summary
 
-The norm $\langle Q\rangle = Q\bar Q = q^2$ of the dual-number algebra is a degenerate multiplicative quadratic form of rank one, depending only on the real part, with radical the maximal ideal $\mathrm{M} = (\varepsilon)$. It fails to be a norm in the analytic sense, and the Euclidean form $q^2 + q'^2$ is the positive-definite but non-multiplicative quantity that carries the topology. The continuous multiplicative real size function on the units, normalised on the real scalars and invariant under the parabolic one-parameter subgroup, is $r(Q) = \sqrt{\langle Q\rangle_{*}} = |q|$, the multiplicative scale on the invertibles; without the shear-invariance requirement the normalised multiplicative size functions form the one-parameter family $\rho_c = |q|\exp(c\,q'/q)$.
+The norm $\langle Q\rangle = Q\bar Q = q^2$ of the dual-number algebra is a degenerate multiplicative quadratic form of rank one, depending only on the real part, with radical the maximal ideal $\mathrm{M} = (\varepsilon)$. It fails to be a norm in the analytic sense, and the Euclidean form $q^2 + q'{}^2$ is the positive-definite but non-multiplicative quantity that carries the topology. The continuous multiplicative real size function on the units, normalised on the real scalars and invariant under the parabolic one-parameter subgroup, is $r(Q) = \sqrt{\langle Q\rangle_{*}} = |q|$, the multiplicative scale on the invertibles; without the shear-invariance requirement the normalised multiplicative size functions form the one-parameter family $\rho_c = |q|\exp(c\,q'/q)$.
 
 A dual number $Q = q + \varepsilon q'$ is invertible if and only if its real part is invertible in $R$; over a field, if and only if $q \neq 0$, equivalently if and only if $\langle Q\rangle \neq 0$. The inverse is $Q^{-1} = q^{-1} - q^{-2}\varepsilon q'$. Over a field the group of invertibles is $\mathbb{C}_{\mathrm{dln},k} \setminus \mathrm{M}$; it is the split extension $1 \to (1 + \mathrm{M}) \to (\mathbb{C}_{\mathrm{dln},k})^\times \to k^\times \to 1$, and since $\mathbb{C}_{\mathrm{dln},k}$ is commutative the extension is the direct product $k^\times \times (k, +)$ with the shear group $1 + \mathrm{M}$ as second factor. The elements of $\mathbb{C}_{\mathrm{dln},k}$ over a field fall into three classes: the invertible elements, the zero element, and the zero divisors $\mathrm{M} \setminus \{0\}$; the algebra is therefore not a division algebra, in contrast to $\mathbb{R}$ and $\mathbb{C}$. The invertible elements occupy the real submodule and avoid the infinitesimal submodule entirely, and this asymmetry of the two eigenspaces of dual conjugation is the shape the norm imposes on the algebra.
 
@@ -361,9 +361,9 @@ A dual number $Q = q + \varepsilon q'$ is invertible if and only if its real par
 | $q' = \operatorname{Inf} Q$ | Infinitesimal part |
 | $\bar{Q} = q - \varepsilon q'$ | Dual conjugation |
 | $\langle Q\rangle = Q\bar Q = q^2$ | Norm, degenerate, radical $\mathrm{M}$ |
-| $\mathfrak{Q}(Q) = q^2 + q'^2$ | Euclidean form |
+| $\mathfrak{Q}(Q) = q^2 + q'{}^2$ | Euclidean form |
 | $\langle Q_1, Q_2 \rangle = q_1 q_2 + q'_1 q'_2$ | Euclidean inner product |
-| $\|Q\| = \sqrt{q^2 + q'^2}$ | Euclidean norm |
+| $\|Q\| = \sqrt{q^2 + q'{}^2}$ | Euclidean norm |
 | $r(Q) = \sqrt{\langle Q\rangle_{*}} = |q|$ | Continuous multiplicative real size on the units, normalised on the scalars and shear-invariant |
 | $\rho_c(Q) = |q|\exp(c\,q'/q)$ | The normalised multiplicative size functions; $r = \rho_0$ |
 | $\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$ | Maximal ideal, kernel of $\langle\cdot\rangle$ |

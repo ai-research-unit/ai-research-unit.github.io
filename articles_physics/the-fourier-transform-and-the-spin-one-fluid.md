@@ -104,7 +104,7 @@ The check gave $\max\bigl\lvert\sum_{\imath}\varepsilon_{\imath} u_{\imath}\part
 
 So the fluid article's "the Lorenz condition is the continuity equation" becomes, at a mode, "the continuity equation is the transversality of the polarisation". They are the same statement: $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}(ru_{\imath})=0$ is continuity, $A_{\imath}=ru_{\imath}$ makes it the Lorenz condition, and a mode evaluates both as $k\cdot u=0$.
 
-That is the momentum-space form of the article's claim that the incompressibility is the mass's gift, and the gift is now visible. The mass enters through the dispersion relation $\nu_t'^{2}=\lvert\vec\nu_\Phi\rvert^{2}+\nu_m^{2}$, which makes $k$ timelike. A timelike $k$ has a spacelike orthogonal complement of dimension three, and a unit timelike $u$ can be chosen in it; a lightlike $k$ has an orthogonal complement that contains $k$ itself, so $k\cdot u=0$ forces $u\propto k$, which is lightlike and not an invertible element. The transverse direction exists because the mass makes $k$ timelike, and the free fluid's "incompressibility" is therefore a consequence of the mass term and of nothing else. **At $\nu_m=0$ the wave number is lightlike, the chart's wall is met, and there is no fluid mode.**
+That is the momentum-space form of the article's claim that the incompressibility is the mass's gift, and the gift is now visible. The mass enters through the dispersion relation $\nu_t'{}^{2}=\lvert\vec\nu_\Phi\rvert^{2}+\nu_m^{2}$, which makes $k$ timelike. A timelike $k$ has a spacelike orthogonal complement of dimension three, and a unit timelike $u$ can be chosen in it; a lightlike $k$ has an orthogonal complement that contains $k$ itself, so $k\cdot u=0$ forces $u\propto k$, which is lightlike and not an invertible element. The transverse direction exists because the mass makes $k$ timelike, and the free fluid's "incompressibility" is therefore a consequence of the mass term and of nothing else. **At $\nu_m=0$ the wave number is lightlike, the chart's wall is met, and there is no fluid mode.**
 
 ## The Mode Basis Is Local
 
@@ -155,7 +155,7 @@ The Proca mode basis is local. The scale carries an absolute value of a cosine a
 | $\tilde A_\Phi=\varepsilon ir\tilde U_{\Psi,\mathrm b}$ | The word on the timelike branch |
 | $r=\sqrt{-\sum_{\imath}\varepsilon_{\imath} A_{\imath} A_{\imath}}>0$ | The scale; the field's own norm |
 | $u_{\imath}=A_{\imath}/r$, $\sum_{\imath}\varepsilon_{\imath} u_{\imath} u_{\imath}=-1$ | The unit flow |
-| $\nu_t'$, $\vec\nu_\Phi$ | The label; the dispersion $\nu_t'^{2}=\lvert\vec\nu_\Phi\rvert^{2}+\nu_m^{2}$ |
+| $\nu_t'$, $\vec\nu_\Phi$ | The label; the dispersion $\nu_t'{}^{2}=\lvert\vec\nu_\Phi\rvert^{2}+\nu_m^{2}$ |
 | $\theta_{\mathrm{pwp}}=2\pi\nu_t'r_t'-2\pi\vec\nu_\Phi\cdot\vec r$ | The phase of the plane wave |
 | $\varepsilon=\mathrm{sign}\cos\theta_{\mathrm{pwp}}$ | The branch; it flips at every node |
 | $\tilde F=\mathrm{d}r\wedge u+r\omega$ | The field strength |

@@ -37,7 +37,7 @@ $$
 
 The exponential is $2\pi i$-periodic: $\exp(Q + 2\pi i) = \exp(Q)$.
 
-The modulus used below is the Hermitian norm of the layer, the bracket carrying the bar: $\langle Q\rangle_{*} = \langle Q,Q\rangle_{*} = Q\bar Q = q^2+q'^2$.
+The modulus used below is the Hermitian norm of the layer, the bracket carrying the bar: $\langle Q\rangle_{*} = \langle Q,Q\rangle_{*} = Q\bar Q = q^2+q'{}^2$.
 
 ### The Complex Logarithm
 
@@ -72,7 +72,7 @@ so $q'_{\log}$ is an argument of $Q$. The two coordinates of the logarithm are t
 
 | coordinate | real formula |
 |---|---|
-| $q_{\log}=$ | $\tfrac12\ln(q^2+q'^2)$ |
+| $q_{\log}=$ | $\tfrac12\ln(q^2+q'{}^2)$ |
 | $q'_{\log}=$ | $\arctan\dfrac{q'}{q}$ if $q>0$<br>$\arctan\dfrac{q'}{q}+\pi\operatorname{sgn}q'$ if $q<0$<br>$\operatorname{sgn}(q')\dfrac{\pi}{2}$ if $q=0$ |
 
 The logarithm is
@@ -170,10 +170,10 @@ $$
 
 hence $\operatorname{Log}' Q = 1/Q$. The same computation applies to any branch of $\log$, and it shows that all branches have the same derivative.
 
-**Cartesian check.** Write $\operatorname{Log} Q = \ln r + i\theta$ with $Q = q+iq'$ and $r^2 = q^2+q'^2$. Off the cut and away from the imaginary axis, with the quadrant correction of $\operatorname{Arg}$,
+**Cartesian check.** Write $\operatorname{Log} Q = \ln r + i\theta$ with $Q = q+iq'$ and $r^2 = q^2+q'{}^2$. Off the cut and away from the imaginary axis, with the quadrant correction of $\operatorname{Arg}$,
 
 $$
-\ln r = \tfrac12\ln(q^2+q'^2), \qquad \theta = \arctan\frac{q'}{q},
+\ln r = \tfrac12\ln(q^2+q'{}^2), \qquad \theta = \arctan\frac{q'}{q},
 $$
 
 and therefore
@@ -185,7 +185,7 @@ $$
 The Cauchy–Riemann equations hold, $\partial\ln r/\partial q = \partial\theta/\partial q'$ and $\partial\ln r/\partial q' = -\partial\theta/\partial q$, and the derivative is
 
 $$
-\frac{\partial \ln r}{\partial q} + i\frac{\partial \theta}{\partial q} = \frac{q - iq'}{q^2+q'^2} = \frac{1}{q+iq'} = \frac{1}{Q}.
+\frac{\partial \ln r}{\partial q} + i\frac{\partial \theta}{\partial q} = \frac{q - iq'}{q^2+q'{}^2} = \frac{1}{q+iq'} = \frac{1}{Q}.
 $$
 
 The three computations agree: $\operatorname{Log}$ is holomorphic exactly where $\operatorname{Arg}$ is differentiable, that is, off the branch cut, and its derivative is $1/Q$.

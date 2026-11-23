@@ -17,7 +17,7 @@ the elementary shear matrix $\begin{pmatrix}1&0\\s&1\end{pmatrix}$. The family $
 
 No physics is invoked anywhere. The word "rotation" is used throughout in the algebraic sense of a one-parameter subgroup of the group of invertibles acting linearly on the algebra, exactly as in *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*.
 
-Notation: $Q = q + \varepsilon q'$ with $q, q' \in \mathbb{R}$; $\operatorname{Re} Q = q$, $\operatorname{Inf} Q = q'$; $\bar Q = q - \varepsilon q'$; $\langle Q\rangle_{*} = Q\bar Q = q^2$; $q^2 + q'^2$ the Euclidean form; $\mathrm{M} = \varepsilon\mathbb{R}$ the maximal ideal; $\pi(q + \varepsilon q') = q$ the augmentation.
+Notation: $Q = q + \varepsilon q'$ with $q, q' \in \mathbb{R}$; $\operatorname{Re} Q = q$, $\operatorname{Inf} Q = q'$; $\bar Q = q - \varepsilon q'$; $\langle Q\rangle_{*} = Q\bar Q = q^2$; $q^2 + q'{}^2$ the Euclidean form; $\mathrm{M} = \varepsilon\mathbb{R}$ the maximal ideal; $\pi(q + \varepsilon q') = q$ the augmentation.
 
 ## The Group of Invertibles
 
@@ -225,7 +225,7 @@ The three two-dimensional algebras have three angle parameters; in each case the
 | Algebra | Norm-one group | Angle | Addition law | Group topology |
 |---|---|---|---|---|
 | $\mathbb{C}$, $i^2 = -1$ | circle $\mathrm{U}(1)$ | elliptic angle $\theta$ | addition mod $2\pi$ | compact |
-| $\mathbb{C}_{\mathrm{spl}}$, $j^2 = +1$ | hyperbola $a^2-a'^2=1$ | hyperbolic angle (rapidity) $t$ | additive on $\mathbb{R}$ | non-compact |
+| $\mathbb{C}_{\mathrm{spl}}$, $j^2 = +1$ | hyperbola $a^2-a'{}^2=1$ | hyperbolic angle (rapidity) $t$ | additive on $\mathbb{R}$ | non-compact |
 | $\mathbb{C}_{\mathrm{dln}}$, $\varepsilon^2 = 0$ | lines $q = \pm1$ | parabolic angle $s$ | additive on $\mathbb{R}$ | non-compact, unipotent |
 
 In the elliptic and hyperbolic cases the tangent of the angle obeys
@@ -288,7 +288,7 @@ The shear is an "orthogonal" transformation of the degenerate norm, in the follo
 
 **Proposition.** A linear map $T = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ satisfies $\langle TQ\rangle_{*} = \langle Q\rangle_{*}$ for all $Q$ if and only if $a = \pm 1$ and $b = 0$; the coefficients $c$ and $d$ are then free. Such a $T$ is invertible, and hence an isometry of the form, exactly when $d \neq 0$.
 
-**Proof.** $\langle T(q+\varepsilon q')\rangle_{*} = (a\,q + b\,q')^2$ must equal $q^2$ for all $q, q'$; comparing coefficients of $q^2$, $q\,q'$ and $q'^2$ gives $a^2 = 1$, $ab = 0$, $b^2 = 0$, hence $a = \pm1$ and $b = 0$. The determinant is then $\det T = ad = \pm d$, so $T$ is invertible exactly when $d \neq 0$.
+**Proof.** $\langle T(q+\varepsilon q')\rangle_{*} = (a\,q + b\,q')^2$ must equal $q^2$ for all $q, q'$; comparing coefficients of $q^2$, $q\,q'$ and $q'{}^2$ gives $a^2 = 1$, $ab = 0$, $b^2 = 0$, hence $a = \pm1$ and $b = 0$. The determinant is then $\det T = ad = \pm d$, so $T$ is invertible exactly when $d \neq 0$.
 
 The group of isometries of the form is therefore $T = \begin{pmatrix} \pm 1 & 0 \\ c & d \end{pmatrix}$ with $d \neq 0$, and its identity component is $\left\{\begin{pmatrix} 1 & 0 \\ c & d \end{pmatrix} : c \in \mathbb{R},\ d > 0\right\}$, of dimension two; the shear group $S(s) = \begin{pmatrix}1&0\\ s&1\end{pmatrix}$ is its unipotent subgroup with $d = 1$.
 
@@ -300,7 +300,7 @@ The norm-one set $\langle Q\rangle_{*} = 1$ is the pair of parallel lines $q = \
 
 ### The Contraction from the Elliptic and Hyperbolic Cases
 
-The degeneracy can be seen as a limit. Consider the family of quadratic forms $N_\sigma(q + \varepsilon q') = q^2 + \sigma q'^2$ on the plane, and the generator
+The degeneracy can be seen as a limit. Consider the family of quadratic forms $N_\sigma(q + \varepsilon q') = q^2 + \sigma q'{}^2$ on the plane, and the generator
 
 $$
 J_\sigma = \begin{pmatrix} 0 & -\sigma \\ 1 & 0 \end{pmatrix}, \qquad J_\sigma^2 = -\sigma I.
@@ -325,7 +325,7 @@ So the shear group is the common contraction of the elliptic and hyperbolic rota
 Two consequences make the parabolic case the degenerate end of the trichotomy.
 
 - **No compact rotation group.** The shear group $G \cong \mathbb{R}$ is non-compact and has no nontrivial compact subgroup; the only compact subgroup of the full group of invertibles $(\mathbb{C}_{\mathrm{dln}})^\times \cong \mathbb{R}^\times \times \mathbb{R}$ is the central $\{\pm 1\}$. There is no analogue of the circle group $\mathrm{U}(1)$.
-- **No periodic orbits.** The orbit of a point in a fibre $\pi^{-1}(q)$ with $q \neq 0$ is the whole fibre, a non-compact line on which the shear acts by translation, so no orbit other than a fixed point is periodic; in the elliptic case every orbit is a circle and the action is periodic. The shear also does not preserve the Euclidean metric: writing $Q = q + \varepsilon q'$ one has $S(s)Q = q + (q'+s q)\varepsilon$, and $q^2+q'^2$ is preserved for every $Q$ only when $s = 0$. So $S(s)$ is an isometry of the degenerate form $N$ but not of the Euclidean metric of the plane. A compact subgroup of $GL_2(\mathbb{R})$ preserves some positive-definite form, obtained by averaging any form over the group; $G$ is non-compact, so it preserves none, and the computation above is the instance of that failure for the Euclidean form itself.
+- **No periodic orbits.** The orbit of a point in a fibre $\pi^{-1}(q)$ with $q \neq 0$ is the whole fibre, a non-compact line on which the shear acts by translation, so no orbit other than a fixed point is periodic; in the elliptic case every orbit is a circle and the action is periodic. The shear also does not preserve the Euclidean metric: writing $Q = q + \varepsilon q'$ one has $S(s)Q = q + (q'+s q)\varepsilon$, and $q^2+q'{}^2$ is preserved for every $Q$ only when $s = 0$. So $S(s)$ is an isometry of the degenerate form $N$ but not of the Euclidean metric of the plane. A compact subgroup of $GL_2(\mathbb{R})$ preserves some positive-definite form, obtained by averaging any form over the group; $G$ is non-compact, so it preserves none, and the computation above is the instance of that failure for the Euclidean form itself.
 
 ## Summary
 

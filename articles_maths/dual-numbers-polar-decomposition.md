@@ -194,7 +194,7 @@ The scale and the sign give the real factor $q = ru$; the shear gives the nilpot
 
 ### The Scale
 
-The scale $\varrho = |q|$ is the continuous multiplicative real size on the units normalised by $|\lambda|$ on the scalars and invariant under the shear; it is the degeneration of the complex modulus $\sqrt{a^2 + a'^2}$ and of the split-complex modulus $\sqrt{|a^2 - a'^2|}$. In the dual case the modulus loses its dependence on the second coordinate entirely, which is the analytic face of the degeneracy of the norm.
+The scale $\varrho = |q|$ is the continuous multiplicative real size on the units normalised by $|\lambda|$ on the scalars and invariant under the shear; it is the degeneration of the complex modulus $\sqrt{a^2 + a'{}^2}$ and of the split-complex modulus $\sqrt{|a^2 - a'{}^2|}$. In the dual case the modulus loses its dependence on the second coordinate entirely, which is the analytic face of the degeneracy of the norm.
 
 ### The Central Factor
 
@@ -220,7 +220,7 @@ For $Q = -1 + s\varepsilon$ the modulus is $\varrho = 1$ and the sign is $u = -1
 
 ## Relation to the Two Partial Forms
 
-The dual polar form is the common degeneration of the complex and split-complex forms. Writing the complex modulus and angle as $\varrho = \sqrt{a^2 + a'^2}$ and $\theta = \arctan(a'/a)$, and the split-complex modulus and rapidity as $\varrho = \sqrt{|a^2 - a'^2|}$ and $\theta_{\mathrm{rpd}} = \operatorname{artanh}(a'/a)$, the dual form is obtained by sending the second-coordinate contribution to zero:
+The dual polar form is the common degeneration of the complex and split-complex forms. Writing the complex modulus and angle as $\varrho = \sqrt{a^2 + a'{}^2}$ and $\theta = \arctan(a'/a)$, and the split-complex modulus and rapidity as $\varrho = \sqrt{|a^2 - a'{}^2|}$ and $\theta_{\mathrm{rpd}} = \operatorname{artanh}(a'/a)$, the dual form is obtained by sending the second-coordinate contribution to zero:
 
 $$
 \boxed{\;
@@ -236,8 +236,8 @@ The polar decompositions of the number systems of the corpus form a series, of w
 
 | Algebra | Norm | Modulus | Phase factor | Kind |
 |---|---|---|---|---|
-| $\mathbb{C}$ | $a^2 + a'^2$ | $\sqrt{a^2+a'^2}$ | $\exp(i\theta)$ | elliptic |
-| $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$ | $a^2 - a'^2$ | $\sqrt{|a^2-a'^2|}$ | $\exp(\theta_{\mathrm{rpd}} j)$ | hyperbolic |
+| $\mathbb{C}$ | $a^2 + a'{}^2$ | $\sqrt{a^2+a'{}^2}$ | $\exp(i\theta)$ | elliptic |
+| $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$ | $a^2 - a'{}^2$ | $\sqrt{|a^2-a'{}^2|}$ | $\exp(\theta_{\mathrm{rpd}} j)$ | hyperbolic |
 | $\mathbb{C}_{\mathrm{dln}}$ | $q^2$ | $|q|$ | $1 + s\varepsilon$ | parabolic |
 
 The dual row is the missing link between the two two-dimensional cases: it is the case whose norm is degenerate, and it is the only member of the series whose polar phase factor is nilpotent. Reading down the column of phase factors, one passes from a compact circle, to a hyperbola, to a line; the dual line is the unique entry with no compact part and no period, and the series is exhaustive for the two-dimensional algebras in the same way that the rule is exhaustive for a generator of a one-parameter group.

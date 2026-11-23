@@ -78,7 +78,7 @@ $$
 
 with $V$ a real function of $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$, $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$ and independent of $\varrho$ and $\theta_{\mathrm{pha}}$. **The independence of $\varrho$ is what makes the scale's momentum vanish** and it is §*The Constraints the Action Imposes: The Structure*'s first fact.
 
-Which slots of the potential reach which bracket. Decompose as in the polar companion: the temporal slot $\frac{2\pi iϙ}{h}A_t$ is central imaginary, the spatial slots $\frac{2\pi iϙ}{h}A_\imath\vec e_\imath$ are Hermitian. The potential therefore adds to the *phase bracket* and to the *boost bracket*, and it cannot reach the scale bracket or the rotor bracket. In the action that shows up as the structure of $V$: it depends on the boost's rapidity and axis through the Hermitian slot, and it depends on $\theta_{\mathrm{pha}}$ not at all.
+Which slots of the potential reach which bracket. Decompose as in the polar companion: the temporal slot $\frac{2\pi iϙ}{h}A_t$ is central imaginary, the spatial slots $\frac{2\pi iϙ}{h}A_{\imath}\vec e_{\imath}$ are Hermitian. The potential therefore adds to the *phase bracket* and to the *boost bracket*, and it cannot reach the scale bracket or the rotor bracket. In the action that shows up as the structure of $V$: it depends on the boost's rapidity and axis through the Hermitian slot, and it depends on $\theta_{\mathrm{pha}}$ not at all.
 
 The action, written once.
 
@@ -141,7 +141,7 @@ $$
 =\frac{1}{2}\partial_{\imath}\ln\rho_{\mathrm{num}}
 +i\Bigl(\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_{\imath}^{\,t}\Bigr)
 +\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
-+\frac{2\pi i\,ϙ}{h}A_{\imath}^{\,k}\vec e_\imath
++\frac{2\pi i\,ϙ}{h}A_{\imath}^{\,k}\vec e_{\imath}
 +\tilde u_{\mathrm r}^{-1}\partial_{\imath}\tilde u_{\mathrm r},
 $$
 

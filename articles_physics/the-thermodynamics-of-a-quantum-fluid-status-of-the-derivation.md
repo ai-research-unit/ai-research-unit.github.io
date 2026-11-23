@@ -4,6 +4,8 @@
 
 The category's question is whether a quantum field has a thermodynamics, and its answer is a ledger: four of its twenty-two articles transcribe standard relativistic thermodynamics into the corpus's letters, and the remaining eighteen add something the letters make available and the standard formulation does not.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 $$
 \text{category}=\underbrace{\text{framework content}}_{17\ \text{articles}}\ \cup\ \underbrace{\text{transcription}}_{6,\ 13,\ 14,\ 21},
 $$
@@ -58,7 +60,7 @@ The velocity is a boost, not an independent field. $\tilde V_\Phi=ic\tilde U_{\P
 
 The spin is a rotor, not an independent field. $\tilde S_{\Psi}=\rho\tfrac{h}{4\pi}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The Frenkel condition is then automatic, because a rotation cannot produce a temporal component, and [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) states the equivalence as $\mathrm{Sc}(\tilde S_{\Psi})=0\Leftrightarrow\mathcal{F}$.
 
-The spin's conservation is the rotor's equation. $\partial_\imath\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\imath\tilde u_{\mathrm r}$ with $\vec\Omega_\imath$ real, and the spin current's divergence is the antisymmetric part of $\vec\Omega_\imath$ contracted with the spin. No separate spin equation is added to the framework.
+The spin's conservation is the rotor's equation. $\partial_{\imath}\tilde u_{\mathrm r}=\tfrac12\vec\Omega_{\imath}\tilde u_{\mathrm r}$ with $\vec\Omega_{\imath}$ real, and the spin current's divergence is the antisymmetric part of $\vec\Omega_{\imath}$ contracted with the spin. No separate spin equation is added to the framework.
 
 The quantum potential is the mass shell's correction and not a pressure. $Q_{\mathrm{qnt}}=-(\frac{h^{2}}{4\pi^{2}}/2m)\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$, entering as $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$. The article that writes it with the other sign is wrong, and the sign is fixed by the non-relativistic reduction.
 
@@ -106,7 +108,7 @@ Transcribed: Israel–Stewart theory. Three relaxation equations, six transport 
 
 Added: nothing but the notation and the inheritance. The relaxation equations are written on elements with low indices; the comoving derivative is a contraction with the flow's components; and the positivity section inherits the Hermiticity declaration of [The Local Entropy Current](the-local-entropy-current.html) rather than writing a fresh $\mathrm{Re}$, which is the one respect in which the article is more than a transcription.
 
-$v_{\mathrm{frt}}/c$ is $0.4472$ at $(0.1,0.5)$ and $(0.2,1.0)$, $1.0000$ at $(0.5,0.5)$ and $1.4142$ at $(1.0,0.5)$ — the last is acausal and the article says so. At $k=2\,\mathrm{fm}^{-1}$ with $D_{\mathrm{th}}=0.2\,\mathrm{fm}$ and $\tau_q=1\,\mathrm{fm}/c$ the root is $0.741\,620-0.500\,000\,i$; at $D_{\mathrm{th}}=0.05\,\mathrm{fm}$ the roots are purely imaginary and the mode is over-damped, with the threshold at $0.062\,500\,\mathrm{fm}$.
+$v_{\mathrm{frt}}/c$ is $0.4472$ at $(0.1,0.5)$ and $(0.2,1.0)$, $1.0000$ at $(0.5,0.5)$ and $1.4142$ at $(1.0,0.5)$ — the last is acausal and the article says so. At $k=2\times10^{15}\,\mathrm{m^{-1}}$ with $D_{\mathrm{th}}=2\times10^{-16}\,\mathrm{m}$ and $\tau_q=3.3356\times10^{-24}\,\mathrm{s}$ the root is $0.741\,620-0.500\,000\,i$; at $D_{\mathrm{th}}=5\times10^{-17}\,\mathrm{m}$ the roots are purely imaginary and the mode is over-damped, with the threshold at $6.25\times10^{-17}\,\mathrm{m}$.
 
 Why the four transcriptions are the category's spine. Each is the point at which the framework touches a standard result and can be checked against it; a category with no such points would be unfalsifiable, and the ledger's first recommendation to a reader is to read the four first.
 
@@ -157,7 +159,7 @@ The transcriptions are 6, 13, 14 and 21 — one in the state layer and three in 
 
 1. The full stress. Whether a sixteen-component stress can be written as one or two elements of $\mathbb{B}$ is open. The element has eight real components and the stress sixteen, so one element cannot hold it; [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) marks the pair as the natural next attempt and does not construct it.
 
-2. The spin connection's equation. $\partial_\imath\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\imath\tilde u_{\mathrm r}$ is the rotor's equation once $\vec\Omega_\imath$ is given, and the equation for $\vec\Omega_\imath$ is the specific field's dynamics. The fermionic field's is the magnetic coupling; the general one is not written.
+2. The spin connection's equation. $\partial_{\imath}\tilde u_{\mathrm r}=\tfrac12\vec\Omega_{\imath}\tilde u_{\mathrm r}$ is the rotor's equation once $\vec\Omega_{\imath}$ is given, and the equation for $\vec\Omega_{\imath}$ is the specific field's dynamics. The fermionic field's is the magnetic coupling; the general one is not written.
 
 3. The averaged Frenkel condition. Whether a fluid's averaged polarization satisfies $\mathcal{F}$ in every frame, and not only in the frame in which the average was taken, is open. The algebra's single-element statement is automatic; the many-element statement is not.
 
@@ -189,7 +191,7 @@ Its last substantive article is the fluid's transport, and beyond transport lies
 
 The category is twenty-two articles in three layers and a ledger: the state (1 to 7), locality (8 to 14) and the fluid (15 to 21), with this article as the ledger. Four of the twenty-two are transcriptions — 6, 13, 14 and 21 — and each carries the sentence that it is standard physics in the corpus's letters with no framework interpretation. The other eighteen add identifications the algebra makes available, several of them inherited from the hydrodynamics block: the velocity is a boost, the spin a rotor, the spin's conservation the rotor's equation, the Frenkel condition automatic, the quantum potential the mass shell's correction, the second law one divergence, the temperature a length.
 
-$\beta$ is $2.803\,021\times10^{-12}\,\mathrm{m}$ at $2.725\,\mathrm{K}$, $2.546\,078\times10^{-14}\,\mathrm{m}$ at $300\,\mathrm{K}$ and $7.638\,233\times10^{-15}\,\mathrm{m}$ at $1000\,\mathrm{K}$, where $c\beta=mc^{2}/(2\pi\nu_mk_BT)$ is the same circumference in the material sector's units and not an independent number: the two displays differ by the factor $c$, so agreement between them tests the constants and not the physics. Circulation is $h n/m$, checked at three radii for three windings. The Josephson frequency is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ per meV of chemical-potential difference. The second variation of the energy density in a three-channel example is $0.033$, split $0.0125+0.0125+0.008$ across the bulk, shear and heat channels. The front speed is $\sqrt{D_{\mathrm{th}}/\tau_q}$, which is $0.4472\,c$ for $(0.1,0.5)$ and $1.4142\,c$ — acausal — for $(1.0,0.5)$. The Thomas factor is $0.503\,782$ at $\beta_{\mathrm{vel}}=0.1$.
+$\beta$ is $2.803\,021\times10^{-12}\,\mathrm{m}$ at $2.725\,\mathrm{K}$, $2.546\,078\times10^{-14}\,\mathrm{m}$ at $300\,\mathrm{K}$ and $7.638\,233\times10^{-15}\,\mathrm{m}$ at $1000\,\mathrm{K}$, where $c\beta=mc^{2}/(2\pi\nu_mk_BT)$ is the same circumference in the material sector's units and not an independent number: the two displays differ by the factor $c$, so agreement between them tests the constants and not the physics. Circulation is $h n/m$, checked at three radii for three windings. The Josephson frequency is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ per $1.6022\times10^{-22}\,\mathrm{J}$ of chemical-potential difference. The second variation of the energy density in a three-channel example is $0.033$, split $0.0125+0.0125+0.008$ across the bulk, shear and heat channels. The front speed is $\sqrt{D_{\mathrm{th}}/\tau_q}$, which is $0.4472\,c$ for $(0.1,0.5)$ and $1.4142\,c$ — acausal — for $(1.0,0.5)$. The Thomas factor is $0.503\,782$ at $\beta_{\mathrm{vel}}=0.1$.
 
 One Hermiticity declaration, made in [The Local Entropy Current](the-local-entropy-current.html) and inherited by every later inequality. No inequality in the category writes $\mathrm{Re}$ after it, and a reader who checks that single fact has checked the category's thermodynamic consistency.
 

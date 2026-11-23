@@ -28,7 +28,7 @@ Three things have to be said at once, because each is a place where a summary of
 
 **The equation is written on a background.** It contains the frame and the connection and determines neither. There is no action here, no variation, and no Einstein equation.
 
-The conventions are inherited. $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\imath^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian subspaces under the star $^{*}$, which conjugates coefficients and negates vectors; ${}^{\natural}$ keeps the scalar and negates the vectors and is complex-linear; $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ and $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$; $SU(2)$ is $\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$. The coordinates are $x_{\imath}=(r'_t,r_x,r_y,r_z)$, all four in metres, and $Q_t=i q'_t$.
+The conventions are inherited. $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian subspaces under the star $^{*}$, which conjugates coefficients and negates vectors; ${}^{\natural}$ keeps the scalar and negates the vectors and is complex-linear; $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ and $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$; $SU(2)$ is $\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$. The coordinates are $x_{\imath}=(r'_t,r_x,r_y,r_z)$, all four in metres, and $Q_t=i q'_t$.
 
 ## The Two Derivatives, and Why They Are Different Objects
 
@@ -65,15 +65,15 @@ which is the inhomogeneous law of a connection on the field. The two-sided deriv
 The biquaternion gradient on the material sector, in the physical coordinates $x_{\imath}=(r'_t,r_x,r_y,r_z)$, is
 
 $$
-\tilde\nabla_\Phi=-i\,e_t\,\partial/\partial r'_t+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial x_\imath ,
+\tilde\nabla_\Phi=-i\,e_t\,\partial/\partial r'_t+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial x_{\imath} ,
 $$
 
 because $\partial/\partial r'_t=i\,\partial/\partial R_t$ and the two imaginary units multiply to a sign, $(-i)\cdot i=+1$. Its curved replacement substitutes the frame field for the rigid material frame and the one-sided derivative for the partial derivative. The rigid material frame is
 
 $$
-\tilde E_{\Phi,0}=ie_t,\qquad \tilde E_{\Phi,k}=\vec e_\imath,
+\tilde E_{\Phi,0}=ie_t,\qquad \tilde E_{\Phi,k}=\vec e_{\imath},
 \qquad
-\tilde F_0=-ie_t,\qquad \tilde F_\imath=\vec e_\imath ,
+\tilde F_0=-ie_t,\qquad \tilde F_{\imath}=\vec e_{\imath} ,
 $$
 
 and it is **not** the algebra basis $e_{\imath}=(e_t,\vec e_x,\vec e_y,\vec e_z)$, because $e_t$ is not in $\mathbb{B}_{\Phi}$. A term-by-term replacement of $\tilde E_{\Phi,\imath}$ by $e_{\imath}$ is invalid, and it is the commonest error in a first reading.
@@ -103,12 +103,12 @@ The second line needs the conjugate operator: ${}^{\natural}$ is an anti-automor
 Two consistency statements locate the construction, and the first is a limit that must reproduce the flat equation exactly. Take the rigid material frame above and $\vec\Gamma_{\imath}=0$. Then
 
 $$
-\tilde F_{\imath}D_{\imath}=\tilde F_{\imath}\partial_{\imath}=-i\,e_t\,\partial/\partial r'_t+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial x_\imath=e_t\,\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial R_\imath=\tilde\nabla_\Phi ,
+\tilde F_{\imath}D_{\imath}=\tilde F_{\imath}\partial_{\imath}=-i\,e_t\,\partial/\partial r'_t+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial x_{\imath}=e_t\,\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial R_{\imath}=\tilde\nabla_\Phi ,
 $$
 
 using $Q_t=i q'_t$ and $\partial/\partial r'_t=i\,\partial/\partial R_t$. The curved object is a strict generalisation: nothing is added at flatness and nothing of the flat structure is lost.
 
-**A nearby trap.** The informational frame, built from $e_{\inf,0}=e_t$ and $\vec e_{\inf,k}=i\vec e_\imath$, gives $F_{\inf,\imath}\partial_{\imath}=e_t\partial/\partial r'_t+i\sum_{\imath\in\{x,y,z\}}\vec e_\imath\partial/\partial x_\imath=i\tilde\nabla_\Phi$ in the same limit. So the biquaternion object that represents a source's differential operator may be $i\tilde\nabla_\Phi$ rather than $\tilde\nabla_\Phi$, and the two frames are related but not interchangeable. The material frame is the one the metric and the frame route use, and it is the one used here.
+**A nearby trap.** The informational frame, built from $e_{\inf,0}=e_t$ and $\vec e_{\inf,k}=i\vec e_{\imath}$, gives $F_{\inf,\imath}\partial_{\imath}=e_t\partial/\partial r'_t+i\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\partial/\partial x_{\imath}=i\tilde\nabla_\Phi$ in the same limit. So the biquaternion object that represents a source's differential operator may be $i\tilde\nabla_\Phi$ rather than $\tilde\nabla_\Phi$, and the two frames are related but not interchangeable. The material frame is the one the metric and the frame route use, and it is the one used here.
 
 ## The Square, and the Object It Is Taken Of
 
@@ -135,7 +135,7 @@ $$
 
 with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$. Those are the Clifford relations of a Dirac spinor, and they are why the result is the Lichnerowicz formula rather than some other second-order operator.
 
-**Why the algebra element does not square to a scalar.** In the rigid frame $\tilde\nabla_\Phi^{2}$ carries the vector term $-2i\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial^2/\partial r'_t\partial x_\imath$, so the algebra square is a biquaternion-valued operator and not the scalar Lichnerowicz square. The identity is true of the basis operator and false of the algebra element, and a version of this article that omitted the distinction would be wrong.
+**Why the algebra element does not square to a scalar.** In the rigid frame $\tilde\nabla_\Phi^{2}$ carries the vector term $-2i\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial^2/\partial r'_t\partial x_{\imath}$, so the algebra square is a biquaternion-valued operator and not the scalar Lichnerowicz square. The identity is true of the basis operator and false of the algebra element, and a version of this article that omitted the distinction would be wrong.
 
 **The sign, fixed by the flat limit.** The basis operators square to $+I_4$ on the time leg and to $-I_4$ on each spatial leg, so the rigid square is $\partial^2/\partial{r'_t}^2-\Delta_\Phi=-\Box_{g,\Phi}$. The curvature term must then carry the opposite sign to the Laplacian term, which is the sign displayed. No sign is chosen freely: the flat limit and the signature fix it.
 

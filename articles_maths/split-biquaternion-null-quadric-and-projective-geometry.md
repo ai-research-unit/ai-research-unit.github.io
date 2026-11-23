@@ -44,7 +44,7 @@ The rank-one description here is thus a **single-quaternion** parametrisation, $
 **Definition.** The **projective null quadric** of the algebra is the projectivisation of the null cone of the Hermitian form $g$:
 
 $$
-\mathcal{Q}(g) = \left\{ [\tilde{Q}] \in \mathbb{P}(\mathbb{B}_{\mathrm{spl}}) : g(\tilde{Q}) = 0 \right\} \subset \mathbb{P}^7 , \qquad g(\tilde{Q}) = \sum_\mu (q_\mu^2 - q'^2_\mu) .
+\mathcal{Q}(g) = \left\{ [\tilde{Q}] \in \mathbb{P}(\mathbb{B}_{\mathrm{spl}}) : g(\tilde{Q}) = 0 \right\} \subset \mathbb{P}^7 , \qquad g(\tilde{Q}) = \sum_\mu (q_\mu^2 - q'{}^2_\mu) .
 $$
 
 **Theorem.** $\mathcal{Q}(g)$ is a smooth non-degenerate quadric of dimension $6$ and of Kleinian inertia $(4,4)$. It contains two families of maximal isotropic projective three-spaces, and through each point of $\mathcal{Q}(g)$ there passes exactly one member of each family. The two zero divisor ideals project to two anti-Hermitian maximal isotropic three-spaces, and these two lie in the same family.
@@ -77,11 +77,11 @@ The biquaternion norm is $\sum Q_\mu^2$ with $Q_\mu \in \mathbb{C}$; over $\math
 
 ## The Relation to the Lorentzian Geometry
 
-On the Lorentzian four-plane $\mathbb{B}_{\Phi}$ the Hermitian form restricts to $-q'^2_0+\sum_k q_k^2$ of inertia $(3,1)$, with null cone $q'^2_0 = \sum_k q_k^2$, while the split-biquaternion norm restricts to the positive definite form $q'^2_0+\sum_k q_k^2$ and has no null cone but the origin. Projectivising inside $\mathbb{P}(\mathbb{B}_{\Phi}) = \mathbb{P}^3$ gives a real quadric surface of inertia $(3,1)$, whose real points form a two-sphere $S^2$; the two-sphere is the boundary at infinity of the hyperbolic three-space carried by the timelike hyperboloid of $\mathbb{B}_{\Phi}$, as in *Split-Biquaternions and Hyperbolic Geometry*. The neutral planes $\mathbb{C}_{\mathrm{spl}}e_\mu \oplus \mathbb{C}_{\mathrm{spl}}e_\nu$ have inertia $(2,2)$, and their projective null quadrics contain real lines, the two rulings of the neutral case; the two inertias $(3,1)$ and $(2,2)$ are the two real forms of the same complex quadric, as recorded in *Split-Biquaternion Rotations and the Lorentz Group*.
+On the Lorentzian four-plane $\mathbb{B}_{\Phi}$ the Hermitian form restricts to $-q'{}^2_0+\sum_k q_k^2$ of inertia $(3,1)$, with null cone $q'{}^2_0 = \sum_k q_k^2$, while the split-biquaternion norm restricts to the positive definite form $q'{}^2_0+\sum_k q_k^2$ and has no null cone but the origin. Projectivising inside $\mathbb{P}(\mathbb{B}_{\Phi}) = \mathbb{P}^3$ gives a real quadric surface of inertia $(3,1)$, whose real points form a two-sphere $S^2$; the two-sphere is the boundary at infinity of the hyperbolic three-space carried by the timelike hyperboloid of $\mathbb{B}_{\Phi}$, as in *Split-Biquaternions and Hyperbolic Geometry*. The neutral planes $\mathbb{C}_{\mathrm{spl}}e_\mu \oplus \mathbb{C}_{\mathrm{spl}}e_\nu$ have inertia $(2,2)$, and their projective null quadrics contain real lines, the two rulings of the neutral case; the two inertias $(3,1)$ and $(2,2)$ are the two real forms of the same complex quadric, as recorded in *Split-Biquaternion Rotations and the Lorentz Group*.
 
 **Theorem.** The projective null quadric of the Lorentzian slice $\mathbb{B}_{\Phi}$ is a smooth real quadric surface in $\mathbb{P}^3$ whose real points form $S^2$ and which contains no real line; the projective null quadric of a neutral plane is a smooth real quadric surface whose real points form a torus $S^1\times S^1$ and which contains two families of real lines.
 
-**Proof.** In coordinates the Lorentzian form is $q'^2_0 - \sum_k q_k^2$, whose projectivised real zero set is the image of the unit sphere $S^2$ of the spacelike three-space; a non-degenerate quadratic form on $\mathbb{R}^4$ of inertia $(3,1)$ has no isotropic line, so no real line lies on its quadric. For inertia $(2,2)$ the form is $a_1^2 + a_2^2 - a_3^2 - a_4^2$, whose real isotropic lines separate into the two families $a_1 = \pm a_3$-type and, after the standard change of coordinates, form two copies of $S^1$; the real points form $S^1\times S^1$.
+**Proof.** In coordinates the Lorentzian form is $q'{}^2_0 - \sum_k q_k^2$, whose projectivised real zero set is the image of the unit sphere $S^2$ of the spacelike three-space; a non-degenerate quadratic form on $\mathbb{R}^4$ of inertia $(3,1)$ has no isotropic line, so no real line lies on its quadric. For inertia $(2,2)$ the form is $a_1^2 + a_2^2 - a_3^2 - a_4^2$, whose real isotropic lines separate into the two families $a_1 = \pm a_3$-type and, after the standard change of coordinates, form two copies of $S^1$; the real points form $S^1\times S^1$.
 
 ## Summary
 
@@ -95,7 +95,7 @@ The split biquaternion algebra carries the quaternionic norm $\langle\tilde Q\ra
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \sum_\mu Q_{1\mu}Q_{2\mu}$ | Quaternionic form, the polarisation of the norm |
 | $R(\tilde{Q}), I(\tilde{Q})$ | Real part (Euclidean, $(8,0)$) and imaginary part ($(4,4)$) of $\langle\cdot\rangle_{\natural}$ |
 | $g(\tilde Q_1,\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Hermitian form, written $g$, inertia $(4,4)$ |
-| $\langle\tilde Q\rangle_{*} = \sum_\mu(q_\mu^2 - q'^2_\mu)$ | Hermitian norm, inertia $(4,4)$ |
+| $\langle\tilde Q\rangle_{*} = \sum_\mu(q_\mu^2 - q'{}^2_\mu)$ | Hermitian norm, inertia $(4,4)$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*} = Q_{1t}\bar Q_{2t} - \sum_k Q_{1k}\bar Q_{2k}$ | Krein form, inertia $(4,4)$, not used here |
 | $Z = \mathbb{H}\tilde\Pi_{\mathrm{id},1}\cup\mathbb{H}\tilde\Pi_{\mathrm{id},2}$ | Zero divisor locus, union of two ideals |
 | $Q_\mu, q_\mu, q'_\mu$ | Split complex coefficient and its two real parts |

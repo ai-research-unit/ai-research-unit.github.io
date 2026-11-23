@@ -153,7 +153,7 @@ The diagonal entries $a_k$ are the singular values of $g$, and they are unique u
 
 **Proposition.** The diagonal part $A$ is unique up to the action of the Weyl group $S_5$, which permutes the diagonal entries. The $K$-parts are not unique: they are determined only up to the centralizer of $A$ in $U(5)$, which contains the diagonal torus of phases and is larger when singular values coincide.
 
-**Proof.** The SVD gives $g=V\Sigma W^*$. If $g=V'\Sigma W'^*$ with the same ordered $\Sigma$ and distinct $\sigma_k$, then $V'=VD$ and $W'=WD$ for a diagonal unitary $D$; if some singular values coincide, $D$ may mix within the corresponding eigenspaces. A permutation of the diagonal entries is compensated by permuting the columns of $V$ and $W$, which is the Weyl group. At $g=I$, every $K_1$ with $K_2=K_1^{-1}$ gives $K_1IK_2=I$, so the $K$-parts are arbitrary there.
+**Proof.** The SVD gives $g=V\Sigma W^*$. If $g=V'\Sigma W'{}^*$ with the same ordered $\Sigma$ and distinct $\sigma_k$, then $V'=VD$ and $W'=WD$ for a diagonal unitary $D$; if some singular values coincide, $D$ may mix within the corresponding eigenspaces. A permutation of the diagonal entries is compensated by permuting the columns of $V$ and $W$, which is the Weyl group. At $g=I$, every $K_1$ with $K_2=K_1^{-1}$ gives $K_1IK_2=I$, so the $K$-parts are arbitrary there.
 
 **Corollary.** The $KAK$ decomposition is unique up to the Weyl group and the centralizer of $A$; ordering the diagonal entries fixes $A$, not $K_1$ and $K_2$.
 

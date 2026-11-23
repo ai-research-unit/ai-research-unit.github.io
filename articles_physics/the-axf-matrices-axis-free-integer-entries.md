@@ -124,7 +124,7 @@ $$
 | plain $P$ | $Q_t^2-B^2$ | $\tfrac142\,\mathrm{Sc}(M^2)$ | $\mathbb{C}$ | no |
 | quaternionic $N$ | $Q_t^2+B^2$ | $\tfrac14\operatorname{Tr}(M^{\mathsf T}M)$ | $\mathbb{C}$ | no |
 | Hermitian $H$ | $\sum_{\imath}\lvert Q_{\imath}\rvert^2$ | $\tfrac142\,\mathrm{Sc}(M^{\dagger}M)$ | $\mathbb{R}$ | yes |
-| Krein $K$ | $\lvert Q_t\rvert^2-\sum_{\imath\in\{x,y,z\}}\lvert Q_\imath\rvert^2$ | $\tfrac14\operatorname{Tr}(M^{\mathsf T}M^{\dagger})$ | $\mathbb{R}$ | no |
+| Krein $K$ | $\lvert Q_t\rvert^2-\sum_{\imath\in\{x,y,z\}}\lvert Q_{\imath}\rvert^2$ | $\tfrac14\operatorname{Tr}(M^{\mathsf T}M^{\dagger})$ | $\mathbb{R}$ | no |
 
 **The second and the fourth rows use the transpose identity,** $M^{\mathsf T}=M^{\natural}$, and that identity is a property of this basis. In another frame the words have to be written with the conjugation, and $\tfrac14\operatorname{Tr}(M^{\mathsf T}M)$ is then none of the four norms.
 
@@ -150,7 +150,7 @@ $$
 **No other basis keeps the sparsity.** Let $\mathcal{F}$ be a basis in which all sixteen matrices of the four units are signed permutations. Then, after relabelling the indices,
 
 $$
-f_t=\pm e_t,\qquad f_\imath=\pm e_{\sigma(k)}\ (k=x,y,z),\qquad \sigma\in S_3 .
+f_t=\pm e_t,\qquad f_{\imath}=\pm e_{\sigma(k)}\ (k=x,y,z),\qquad \sigma\in S_3 .
 $$
 
 **The count is $3!\cdot2^{4}=96$** with the scalar unit in the first slot, $3!\cdot2^{3}=48$ if the scalar unit is also fixed at $+e_t$, and $4!\cdot2^{4}=384$ if the four slots are free. So the sparse frames are the axis-free basis up to a permutation of the three directions and a sign on each vector, and the sparsity is a name for the frame rather than a coincidence of it.
@@ -195,7 +195,7 @@ So the matrices of one element over all frames are one conjugacy class and not o
 
 **The symmetry of the display is the cyclic one.** The relabelling $x\mapsto y\mapsto z\mapsto x$ is an algebra automorphism, and its permutation matrix conjugates every array into itself. A transposition reverses the orientation and flips the sign of the table, because $\vec e_x\vec e_y=\vec e_z$ becomes $\vec e_y\vec e_x=-\vec e_z$. That sign belongs to the quaternion product and not to a preference of the basis.
 
-**Time is different, and the difference is in the object.** The signs are carried by the squares, $e_t^2=+e_t$ and $\vec e_\imath^2=-e_t$, and the display inherits it without a sentence: the scalar unit occupies the first slot and the trace is $4\delta_{\imath t}$. Physical space is isotropic and spacetime is not, and the array shows the first as a symmetry of the entries and the second as a sign.
+**Time is different, and the difference is in the object.** The signs are carried by the squares, $e_t^2=+e_t$ and $\vec e_{\imath}^2=-e_t$, and the display inherits it without a sentence: the scalar unit occupies the first slot and the trace is $4\delta_{\imath t}$. Physical space is isotropic and spacetime is not, and the array shows the first as a symmetry of the entries and the second as a sign.
 
 **The boundary.** This is a statement about a frame and not about a canonical basis. The axis-free family is one representative of a conjugacy class, and nothing in the physics selects it; what it does is decline to add a direction the algebra does not contain.
 
@@ -436,13 +436,13 @@ $$
 \{\gamma_{\imath}[\mathbb{B}_{\Phi}],\gamma_{\jmath}[\mathbb{B}_{\Phi}]\}=2\varepsilon_{\imath}\delta_{\imath\jmath}\,\mathrm I_4,\qquad
 \varepsilon=(1,-1,-1,-1),$$
 
-so that $\gamma_0[\mathbb{B}_{\Phi}]^2=+\mathrm I_4$ and $\gamma_\imath[\mathbb{B}_{\Phi}]^2=-\mathrm I_4$; their product is the fifth, $\gamma_5[\mathbb{B}_{\Phi}]=i\gamma_0[\mathbb{B}_{\Phi}]\gamma_1[\mathbb{B}_{\Phi}]\gamma_2[\mathbb{B}_{\Phi}]\gamma_3[\mathbb{B}_{\Phi}]$, with $\gamma_5[\mathbb{B}_{\Phi}]^2=\mathrm I_4$. All of this was verified on the arrays.
+so that $\gamma_0[\mathbb{B}_{\Phi}]^2=+\mathrm I_4$ and $\gamma_{\imath}[\mathbb{B}_{\Phi}]^2=-\mathrm I_4$; their product is the fifth, $\gamma_5[\mathbb{B}_{\Phi}]=i\gamma_0[\mathbb{B}_{\Phi}]\gamma_1[\mathbb{B}_{\Phi}]\gamma_2[\mathbb{B}_{\Phi}]\gamma_3[\mathbb{B}_{\Phi}]$, with $\gamma_5[\mathbb{B}_{\Phi}]^2=\mathrm I_4$. All of this was verified on the arrays.
 
 In the Pauli display of the previous section the five become
 
 $$
 \gamma_0[\mathbb{B}_{\Phi}]=\begin{pmatrix}0&\mathrm I_2\ \mathrm I_2&0\end{pmatrix},\qquad
-\gamma_\imath[\mathbb{B}_{\Phi}]=\begin{pmatrix}0&\sigma_\imath\ -\sigma_\imath&0\end{pmatrix},\qquad
+\gamma_{\imath}[\mathbb{B}_{\Phi}]=\begin{pmatrix}0&\sigma_{\imath}\ -\sigma_{\imath}&0\end{pmatrix},\qquad
 \gamma_5[\mathbb{B}_{\Phi}]=\begin{pmatrix}-\mathrm I_2&0\ 0&\mathrm I_2\end{pmatrix}.
 $$
 
@@ -522,7 +522,7 @@ The argument would be worthless if it condemned every frame, and it does not. A 
 
 A measurement supplies one. A Stern–Gerlach apparatus has an axis, and the axis is in the laboratory, not in the notation. An experiment on a beam has a beam axis. A scattering process has a plane, and the plane has a normal. A background field breaks isotropy, and its direction is part of the solution. In each of these cases a frame is a physical datum, and the correct practice is to name it, use it, and say that the result is about that frame.
 
-The squares of the units supply one, and it is a different kind of direction. Time is distinguished from space by the sign, $e_t^2=e_t$ and $\vec e_\imath^2=-e_t$, and that asymmetry is carried by the units themselves. Every formula inherits it automatically and correctly, with no sentence and no declaration, because it lives in an object and not in a layout. That is the model: an asymmetry that the physics has should be carried by an object of the algebra, where a reader can see it and where it cannot be lost.
+The squares of the units supply one, and it is a different kind of direction. Time is distinguished from space by the sign, $e_t^2=e_t$ and $\vec e_{\imath}^2=-e_t$, and that asymmetry is carried by the units themselves. Every formula inherits it automatically and correctly, with no sentence and no declaration, because it lives in an object and not in a layout. That is the model: an asymmetry that the physics has should be carried by an object of the algebra, where a reader can see it and where it cannot be lost.
 
 The defect is the third case, which is neither of these: a direction that the problem does not supply, that the notation supplies anyway, that is used in every formula of the article, and that is never named.
 
@@ -532,7 +532,7 @@ The test of a displayed statement is mechanical. Apply the automorphism, re-read
 
 The statement
 $$
-\vec e_\imath^2=-e_t
+\vec e_{\imath}^2=-e_t
 $$
 returns itself, with $k$ renamed. It is a fact about $\mathbb{B}$.
 
@@ -602,7 +602,7 @@ $$
 The signs are the squares of the units, and no separate metric is needed:
 
 $$
-e_t^2=e_t,\qquad \vec e_\imath^2=-e_t,\qquad
+e_t^2=e_t,\qquad \vec e_{\imath}^2=-e_t,\qquad
 \mathrm{Sc}\bigl(\tilde Q^2\bigr)=Q_t^2-Q_x^2-Q_y^2-Q_z^2.
 $$
 
@@ -668,7 +668,7 @@ The three passes need a table, and one table serves all three. Each row gives th
 | the identity $\mathrm I_4$ | $L_{e_t}R_{e_t}$ | $\mathrm I_4$ | $\tilde{Ξ}\mapsto\tilde{Ξ}$ |
 | the image $\mathsf M_2(\tilde Q)$ | the left action on $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ | $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ | the action read on one ideal |
 | $\gamma_0[\mathbb{B}_{\Phi}]$ | $iR_{\vec e_x}$ | $iR_{\mathrm{axf},\vec e_x}$ | $\tilde{Ξ}\mapsto i\tilde{Ξ}\vec e_x$ |
-| $\gamma_\imath[\mathbb{B}_{\Phi}]$ | $iL_{\vec e_k}R_{\vec e_y}$ | $iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}$ | $\tilde{Ξ}\mapsto i\vec e_\imath\tilde{Ξ}\vec e_y$ |
+| $\gamma_{\imath}[\mathbb{B}_{\Phi}]$ | $iL_{\vec e_k}R_{\vec e_y}$ | $iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}$ | $\tilde{Ξ}\mapsto i\vec e_{\imath}\tilde{Ξ}\vec e_y$ |
 | $\gamma_5[\mathbb{B}_{\Phi}]$ | $-iR_{\vec e_z}$ | $-iR_{\mathrm{axf},\vec e_z}$ | $\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$ |
 | the mass term | $\nu_mL_{e_t}R_{e_t}$ | $\nu_m\mathrm I_4$ | $\tilde{Ξ}\mapsto \nu_m\tilde{Ξ}$ |
 | the Peirce projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{B}_{\Phi}])$ | $\tfrac12\bigl(L_{e_t}R_{e_t}+iR_{\vec e_z}\bigr)$ | $\tfrac12\bigl(\mathrm I_4-iR_{\mathrm{axf},\vec e_z}\bigr)$ | $\tilde{Ξ}\mapsto\tfrac12\bigl(\tilde{Ξ}-i\tilde{Ξ}\vec e_z\bigr)$ |

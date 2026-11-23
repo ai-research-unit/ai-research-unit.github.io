@@ -36,7 +36,7 @@ Every numerical value displayed below was recomputed in double precision.
 
 ### The Modulus–Unit Form Recalled
 
-Let $Q = q+jq'$ with $q,q'\in\mathbb{R}$ and norm $\langle Q\rangle_{*}=q^2-q'^2$. On the invertible set $\langle Q\rangle_{*}\neq0$ the modulus and unit factor are
+Let $Q = q+jq'$ with $q,q'\in\mathbb{R}$ and norm $\langle Q\rangle_{*}=q^2-q'{}^2$. On the invertible set $\langle Q\rangle_{*}\neq0$ the modulus and unit factor are
 
 $$
 \varrho = \sqrt{\lvert \langle Q\rangle_{*}\rvert} > 0, \qquad u = \frac{Q}{\varrho}, \qquad \langle u\rangle_{*} = \operatorname{sign}\langle Q\rangle_{*}\in\{\pm1\}.
@@ -117,7 +117,7 @@ $$
 For a general timelike element $Q$ the inverse reads
 
 $$
-s = -\frac{q'}{\varrho+q}, \qquad \varrho = \sqrt{q^2-q'^2},
+s = -\frac{q'}{\varrho+q}, \qquad \varrho = \sqrt{q^2-q'{}^2},
 $$
 
 because $u=Q/\varrho$ has coordinates $(q/\varrho,q'/\varrho)$. The denominator $\varrho+q$ vanishes exactly when $q=-\varrho$ and $q'=0$, that is on the negative real axis.
@@ -420,7 +420,7 @@ The Cayley matrix $M(s)=(I-sK)(I+sK)^{-1}$ is symmetric, has determinant $1$, an
 |---|---|
 | $\mathbb{C}_{\mathrm{spl}}$ | the split-complex algebra, $j^2=+1$ |
 | $Q=q+jq'$ | a split-complex number |
-| $\langle Q\rangle_{*}=q^2-q'^2$ | the norm |
+| $\langle Q\rangle_{*}=q^2-q'{}^2$ | the norm |
 | $\varrho=\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ | the modulus |
 | $u=Q/\varrho$ | the unit factor, $\lvert \langle u\rangle_{*}\rvert=1$ |
 | $u(s)=(1-sj)/(1+sj)$ | the rational chart on $\{\langle u\rangle_{*}=1\}$ |

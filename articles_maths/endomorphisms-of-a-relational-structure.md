@@ -35,8 +35,7 @@ endomorphism monoid, and its action is computed from the monoid.
 
 **Definition.** A **relational structure** is a pair $\mathcal{A} = (A, (R_i)_{i \in I})$ consisting
 of a set $A$, the **domain**, and a family of relations $R_i \subseteq A^{n_i}$ on $A$, one for each
-index $i$. A **binary** relational structure is one in which every relation is binary, $R_i
-\subseteq A \times A$; the article works with binary structures and says where non-binary relations
+index $i$. A **binary** relational structure is one in which every relation is binary, $R_i \subseteq A \times A$; the article works with binary structures and says where non-binary relations
 would change a statement.
 
 A **poset** $(P, \leq)$, a **graph** $(V, E)$ with $E$ a symmetric irreflexive relation on $V$, and a
@@ -59,8 +58,7 @@ $$
 $$
 
 An **embedding** is an injective strong homomorphism. An **isomorphism** is a bijective strong
-homomorphism, and two structures over the same index set are **isomorphic**, written $\mathcal{A}
-\cong \mathcal{B}$, when an isomorphism $\mathcal{A} \to \mathcal{B}$ exists.
+homomorphism, and two structures over the same index set are **isomorphic**, written $\mathcal{A} \cong \mathcal{B}$, when an isomorphism $\mathcal{A} \to \mathcal{B}$ exists.
 
 The three notions sit in a strict chain. Every strong homomorphism is a homomorphism, and every
 embedding is a strong homomorphism; both inclusions are strict. A homomorphism establishes a
@@ -79,8 +77,7 @@ f^{-1}(S) = \{(x,y) \in A \times A : (f(x), f(y)) \in S\}.
 $$
 
 The inverse image is a relation on $A$, and it is the exact object that the two definitions above
-compare: $f$ is a homomorphism $\mathcal{A} \to \mathcal{B}$ exactly when $R_i \subseteq f^{-1}
-(S_i)$ for every $i$, and it is strong exactly when $R_i = f^{-1}(S_i)$ for every $i$. In particular
+compare: $f$ is a homomorphism $\mathcal{A} \to \mathcal{B}$ exactly when $R_i \subseteq f^{-1} (S_i)$ for every $i$, and it is strong exactly when $R_i = f^{-1}(S_i)$ for every $i$. In particular
 a strong homomorphism is the same thing as a map under which each relation is the inverse image of
 its target relation.
 
@@ -92,18 +89,15 @@ its target relation.
 2. If $g : \mathcal{B} \to \mathcal{C}$ is a strong homomorphism then $g \circ f$ is strong.
 3. If $g \circ f$ is strong, then $f$ is strong.
 
-**Proof.** (1) Immediate from the definitions. (2) For each $i$, $(g \circ f)^{-1}(T_i) = f^{-1}(g^{-1}
-(T_i)) = f^{-1}(S_i) = R_i$, using that $g$ and $f$ are strong. (3) If $(f(x), f(y)) \in S_i$ then
+**Proof.** (1) Immediate from the definitions. (2) For each $i$, $(g \circ f)^{-1}(T_i) = f^{-1}(g^{-1} (T_i)) = f^{-1}(S_i) = R_i$, using that $g$ and $f$ are strong. (3) If $(f(x), f(y)) \in S_i$ then
 $(g(f(x)), g(f(y))) \in T_i$, so $(x,y) \in (g \circ f)^{-1}(T_i) = R_i$; the converse is the
 definition of a homomorphism.
 
 **Proposition.** A bijective homomorphism is an isomorphism if and only if it is strong.
 
 **Proof.** A bijective strong homomorphism is an isomorphism by definition, and an isomorphism is
-strong by definition. For the necessity of strength, let $A = \{1,2\}$ with $R = \{(1,2)\}$ and $B =
-\{u,v\}$ with $S = \{(u,u),(u,v)\}$, and let $f(1) = u$, $f(2) = v$. Then $f$ is a bijective
-homomorphism: the only pair of $R$ maps to $(u,v) \in S$. It is not strong, because $(f(1), f(1)) =
-(u,u) \in S$ while $(1,1) \notin R$.
+strong by definition. For the necessity of strength, let $A = \{1,2\}$ with $R = \{(1,2)\}$ and $B = \{u,v\}$ with $S = \{(u,u),(u,v)\}$, and let $f(1) = u$, $f(2) = v$. Then $f$ is a bijective
+homomorphism: the only pair of $R$ maps to $(u,v) \in S$. It is not strong, because $(f(1), f(1)) = (u,u) \in S$ while $(1,1) \notin R$.
 
 ## The Endomorphism Monoid
 
@@ -116,9 +110,7 @@ the set of homomorphisms $\mathcal{A} \to \mathcal{A}$, the **endomorphisms** of
 $\mathrm{id}_A$.
 
 **Proof.** The composite of two endomorphisms is a homomorphism, because a homomorphism is a map
-with $R_i \subseteq f^{-1}(S_i)$ and the inverse image composes: $(g \circ f)^{-1}(R_i) = f^{-1}
-(g^{-1}(R_i)) \supseteq f^{-1}(S_i) \supseteq R_i$ when $g^{-1}(R_i) \supseteq R_i$ and $f^{-1}(S_i)
-\supseteq R_i$. Composition of functions is associative and $\mathrm{id}_A$ is a two-sided identity,
+with $R_i \subseteq f^{-1}(S_i)$ and the inverse image composes: $(g \circ f)^{-1}(R_i) = f^{-1} (g^{-1}(R_i)) \supseteq f^{-1}(S_i) \supseteq R_i$ when $g^{-1}(R_i) \supseteq R_i$ and $f^{-1}(S_i) \supseteq R_i$. Composition of functions is associative and $\mathrm{id}_A$ is a two-sided identity,
 by *Sets, Functions and Relations*.
 
 **Definition.** An **automorphism** of $\mathcal{A}$ is a bijective endomorphism whose inverse is
@@ -129,8 +121,7 @@ $\operatorname{Aut}(\mathcal{A})$.
 **Theorem.** $\operatorname{Aut}(\mathcal{A})$ is the group of invertibles of the monoid
 $\operatorname{End}(\mathcal{A})$.
 
-**Proof.** If $f \in \operatorname{End}(\mathcal{A})$ has a two-sided inverse $g \in
-\operatorname{End}(\mathcal{A})$, then $f$ is bijective as a function and $g$ is its inverse
+**Proof.** If $f \in \operatorname{End}(\mathcal{A})$ has a two-sided inverse $g \in \operatorname{End}(\mathcal{A})$, then $f$ is bijective as a function and $g$ is its inverse
 function; so $f$ is a bijective endomorphism with endomorphic inverse, that is, an automorphism. If
 $f$ is an automorphism, its inverse function is an endomorphism, so $f$ is invertible. The invertibles of a
 monoid always form a group under the monoid operation: the identity is invertible, a product of invertibles is
@@ -208,35 +199,27 @@ structure.
 
 **Definition.** Let $f : \mathcal{A} \to \mathcal{B}$ be a homomorphism. Its **kernel** is the
 equivalence relation $\ker f = \{(x,y) : f(x) = f(y)\}$ on $A$. A **congruence** of $\mathcal{A}$ is
-an equivalence relation $\vartheta_{\mathrm{cng}}$ on $A$ that is compatible with every relation: if $x \mathrel{\vartheta_{\mathrm{cng}}}
-x'$, $y \mathrel{\vartheta_{\mathrm{cng}}} y'$ and $(x,y) \in R_i$, then $(x',y') \in R_i$.
+an equivalence relation $\vartheta_{\mathrm{cng}}$ on $A$ that is compatible with every relation: if $x \mathrel{\vartheta_{\mathrm{cng}}} x'$, $y \mathrel{\vartheta_{\mathrm{cng}}} y'$ and $(x,y) \in R_i$, then $(x',y') \in R_i$.
 
 **Proposition.** The kernel of a strong homomorphism is a congruence. The kernel of a homomorphism
 that is not strong need not be a congruence.
 
-**Proof.** Let $f$ be strong, let $x \mathrel{\vartheta_{\mathrm{cng}}} x'$ and $y \mathrel{\vartheta_{\mathrm{cng}}} y'$ with $\vartheta_{\mathrm{cng}} =
-\ker f$, and let $(x,y) \in R_i$. Then $f(x) = f(x')$ and $f(y) = f(y')$, so $(f(x'), f(y')) =
-(f(x), f(y)) \in S_i$, and strength gives $(x',y') \in R_i$. For the failure, take $A = \{1,2,3\}$
+**Proof.** Let $f$ be strong, let $x \mathrel{\vartheta_{\mathrm{cng}}} x'$ and $y \mathrel{\vartheta_{\mathrm{cng}}} y'$ with $\vartheta_{\mathrm{cng}} = \ker f$, and let $(x,y) \in R_i$. Then $f(x) = f(x')$ and $f(y) = f(y')$, so $(f(x'), f(y')) = (f(x), f(y)) \in S_i$, and strength gives $(x',y') \in R_i$. For the failure, take $A = \{1,2,3\}$
 with $R = \{(1,2)\}$, $B = \{u,v\}$ with $S = \{(u,v)\}$, and $f(1) = u$, $f(2) = v$, $f(3) = u$.
-The map is a homomorphism and is not strong, since $(f(3), f(2)) = (u,v) \in S$ while $(3,2) \notin
-R$. Its kernel identifies $1$ with $3$, and the pair $(1,2) \in R$ is not accompanied by $(3,2) \in
-R$, so $\ker f$ is not compatible with $R$ and is not a congruence.
+The map is a homomorphism and is not strong, since $(f(3), f(2)) = (u,v) \in S$ while $(3,2) \notin R$. Its kernel identifies $1$ with $3$, and the pair $(1,2) \in R$ is not accompanied by $(3,2) \in R$, so $\ker f$ is not compatible with $R$ and is not a congruence.
 
-**Definition.** For a congruence $\vartheta_{\mathrm{cng}}$ of $\mathcal{A}$ the **quotient structure** $\mathcal{A}/
-\vartheta_{\mathrm{cng}}$ has domain the set $A/\vartheta_{\mathrm{cng}}$ of classes, with relations
+**Definition.** For a congruence $\vartheta_{\mathrm{cng}}$ of $\mathcal{A}$ the **quotient structure** $\mathcal{A}/ \vartheta_{\mathrm{cng}}$ has domain the set $A/\vartheta_{\mathrm{cng}}$ of classes, with relations
 
 $$
 ([x], [y]) \in R_i/\vartheta_{\mathrm{cng}} \quad\Longleftrightarrow\quad (x', y') \in R_i
 \text{ for some } x' \mathrel{\vartheta_{\mathrm{cng}}} x, \ y' \mathrel{\vartheta_{\mathrm{cng}}} y .
 $$
 
-**Proposition.** The relation $R_i/\vartheta_{\mathrm{cng}}$ is well defined, and the quotient map $\pi : A \to
-A/\vartheta_{\mathrm{cng}}$ is a strong homomorphism $\mathcal{A} \to \mathcal{A}/\vartheta_{\mathrm{cng}}$.
+**Proposition.** The relation $R_i/\vartheta_{\mathrm{cng}}$ is well defined, and the quotient map $\pi : A \to A/\vartheta_{\mathrm{cng}}$ is a strong homomorphism $\mathcal{A} \to \mathcal{A}/\vartheta_{\mathrm{cng}}$.
 
 **Proof.** Well-definedness is the compatibility of $\vartheta_{\mathrm{cng}}$ with $R_i$: if $x' \mathrel{\vartheta_{\mathrm{cng}}} x$
 and $y' \mathrel{\vartheta_{\mathrm{cng}}} y$ both satisfy $(x',y') \in R_i$, then by symmetry and transitivity any
-other representatives do too. The map $\pi$ is a homomorphism because $(x,y) \in R_i$ gives $([x],
-[y]) \in R_i/\vartheta_{\mathrm{cng}}$ directly; it is strong because $([x],[y]) \in R_i/\vartheta_{\mathrm{cng}}$ means precisely that
+other representatives do too. The map $\pi$ is a homomorphism because $(x,y) \in R_i$ gives $([x], [y]) \in R_i/\vartheta_{\mathrm{cng}}$ directly; it is strong because $([x],[y]) \in R_i/\vartheta_{\mathrm{cng}}$ means precisely that
 some related representatives exist, and compatibility moves the relation to $x$ and $y$.
 
 ### The First Isomorphism Theorem
@@ -269,8 +252,7 @@ $$
 (x,y) \in R \ \Longrightarrow \ (f(x), f(y)) \in R .
 $$
 
-**Definition.** A **strong endomorphism** of $(A,R)$ is a map $f$ with $(x,y) \in R \iff (f(x),f(y))
-\in R$ for all $x,y$; an **embedding** of $(A,R)$ into $(B,S)$ is an injective map $f$ with
+**Definition.** A **strong endomorphism** of $(A,R)$ is a map $f$ with $(x,y) \in R \iff (f(x),f(y)) \in R$ for all $x,y$; an **embedding** of $(A,R)$ into $(B,S)$ is an injective map $f$ with
 $(x,y) \in R \iff (f(x),f(y)) \in S$.
 
 **Proposition.** The strong endomorphisms of $(A,R)$ form a submonoid of $\operatorname{End}(A,R)$,
@@ -309,15 +291,11 @@ is exactly the strength of the maps used.
    antisymmetric whenever $R$ is.
 
 **Proof.** (1) If $R$ is reflexive and $y = f(x) \in B$, then $(x,x) \in R$ gives $(y,y) \in S$.
-(2) If $(u,v) \in S$ with $u = f(x)$, $v = f(y)$, then $(x,y) \in R$, so $(y,x) \in R$ and $(v,u) \in
-S$. (3) If $(u,v), (v,w) \in S$ with $u = f(x)$, $v = f(y)$, $w = f(z)$, then $(x,y), (y,z) \in R$,
+(2) If $(u,v) \in S$ with $u = f(x)$, $v = f(y)$, then $(x,y) \in R$, so $(y,x) \in R$ and $(v,u) \in S$. (3) If $(u,v), (v,w) \in S$ with $u = f(x)$, $v = f(y)$, $w = f(z)$, then $(x,y), (y,z) \in R$,
 so $(x,z) \in R$ and $(u,w) \in S$. (4) If $S$ contained $(y,y)$ then by surjectivity $y = f(x)$ for
-some $x$, and strength gives $(x,x) \in R$, contradicting irreflexivity. If $(u,v) \in S$ and $(v,u)
-\in S$, write $u = f(x)$, $v = f(y)$ by surjectivity; strength gives $(x,y) \in R$ and $(y,x) \in
-R$, so $x = y$ by antisymmetry and $u = v$.
+some $x$, and strength gives $(x,x) \in R$, contradicting irreflexivity. If $(u,v) \in S$ and $(v,u) \in S$, write $u = f(x)$, $v = f(y)$ by surjectivity; strength gives $(x,y) \in R$ and $(y,x) \in R$, so $x = y$ by antisymmetry and $u = v$.
 
-**Remark.** Antisymmetry is **not** preserved by a homomorphism that is not strong: the map $f(1) =
-u$, $f(2) = v$ from $(\{1,2\}, \{(1,2)\})$ to $(\{u,v\}, \{(u,v),(v,u)\})$ is a homomorphism whose
+**Remark.** Antisymmetry is **not** preserved by a homomorphism that is not strong: the map $f(1) = u$, $f(2) = v$ from $(\{1,2\}, \{(1,2)\})$ to $(\{u,v\}, \{(u,v),(v,u)\})$ is a homomorphism whose
 target relation is symmetric, hence not antisymmetric, while the source relation is antisymmetric.
 Reflexivity is not reflected either: the target may relate a pair whose preimages are unrelated, as
 the first example of the article shows. The list therefore separates the properties that a

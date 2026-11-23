@@ -74,7 +74,7 @@ Distinct $T$ give distinct symmetries, and the correspondence is a bijection.
 
 **Proposition (equivalence of the induced forms).** The definite forms induced by any two fundamental symmetries are equivalent, and the topology they define is the same.
 
-**Proof.** Let $J'$ be the second symmetry and write $\langle x,x\rangle' = [J'x,x] = \langle JJ'x,x\rangle$. The operator $JJ'$ is bounded and self-adjoint for $\langle\cdot,\cdot\rangle$ and it is invertible, with $(JJ')^{-1} = J'J$ because $J^{2} = J'^{2} = \mathrm{id}$; its spectrum is therefore a compact subset of $(0,\infty)$, so there are constants $0 < c\leq C < \infty$ with $c\|x\|^{2}\leq\langle x,x\rangle'\leq C\|x\|^{2}$, and the two norms are equivalent.
+**Proof.** Let $J'$ be the second symmetry and write $\langle x,x\rangle' = [J'x,x] = \langle JJ'x,x\rangle$. The operator $JJ'$ is bounded and self-adjoint for $\langle\cdot,\cdot\rangle$ and it is invertible, with $(JJ')^{-1} = J'J$ because $J^{2} = J'{}^{2} = \mathrm{id}$; its spectrum is therefore a compact subset of $(0,\infty)$, so there are constants $0 < c\leq C < \infty$ with $c\|x\|^{2}\leq\langle x,x\rangle'\leq C\|x\|^{2}$, and the two norms are equivalent.
 
 **Remark (the non-uniqueness is genuine and bounded).** When both $n$ and $m$ are nonzero the fundamental symmetries are as many as the graphs $M_T$, so the choice is genuine; but the theorem shows the choice never changes the topology and only rotates the positive part inside its indefinite orthogonal complement, with an angle strictly less than $\pi/2$.
 

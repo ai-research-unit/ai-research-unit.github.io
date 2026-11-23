@@ -4,6 +4,8 @@
 
 The question. The electroweak sector's scalar is the one field in the corpus whose action is written twice in two places and never as a family article. *The Lagrangian and the Electroweak Theory* writes the full gauge action with the doublet inside it, and *Electroweak Symmetry Breaking* reads the masses and the couplings off the mass matrix. Neither asks the spin-zero question on its own: what is the action of the scalar field, what does its variation give, and what does the potential fix that the masses do not. This article asks it.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 The answer in five sentences. The scalar action is the Klein–Gordon action for a complex doublet with a potential $V=-\mu^{2}\Phi^{\dagger}\Phi+\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2}$, and the potential is a function of one variable, $r^{2}=2\Phi^{\dagger}\Phi$, so the four real components split into one radial direction that is curved and three angular directions that are flat. The variation gives $\Box\Phi=\mu^{2}\Phi-2\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)\Phi$, whose radial reading is the anharmonic oscillator and whose unitary reading is $\Box h+m_h^{2}h+3\varpi_{\mathrm{cpl}} vh^{2}+\varpi_{\mathrm{cpl}} h^{3}=0$. The mass is the curvature of the potential at its minimum, $m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2}$, and the same $\varpi_{\mathrm{cpl}}$ fixes the cubic and quartic self-couplings at $6\varpi_{\mathrm{cpl}} v$ and $6\varpi_{\mathrm{cpl}}$, so one number is measured three times. The three flat directions are the would-be Goldstone modes, and that is the whole of what the scalar sector contributes to the breaking.
 
 Why this article exists apart from the sector article. Because the sector article's subject is the gauge action and its two phases, and the scalar's own structure is a different claim. Here the gauge fields are spectators: the covariant derivative is replaced by the ordinary one, and the difference between the two actions is exactly the vector mass term, which the companion derives. What is left is a potential and its derivatives, and those are exact.
@@ -25,7 +27,7 @@ V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2}
 \qquad \mu^{2}>0,\quad \varpi_{\mathrm{cpl}}>0,
 $$
 
-and its minimum sits at $\Phi^{\dagger}\Phi=\mu^{2}/2\varpi_{\mathrm{cpl}}\equiv v^{2}/2$, so that $v^{2}=\mu^{2}/\varpi_{\mathrm{cpl}}$ and $v\simeq246.22$ GeV.
+and its minimum sits at $\Phi^{\dagger}\Phi=\mu^{2}/2\varpi_{\mathrm{cpl}}\equiv v^{2}/2$, so that $v^{2}=\mu^{2}/\varpi_{\mathrm{cpl}}$ and $v\simeq3.9449\times10^{-8}\ \mathrm{J}$.
 
 **The radial variable, named once.** Write $r=\sqrt{2\Phi^{\dagger}\Phi}$, a real non-negative field with $\dim r=1$. Every statement in this article that is not about the phase is a statement about $V$ as a function of $r$, and the notation is used to make that visible.
 
@@ -127,11 +129,11 @@ g_{hhhh}=6\varpi_{\mathrm{cpl}}=\frac{3m_h^{2}}{v^{2}},
 \frac{g_{hhhh}}{g_{hhh}}=\frac1v .
 $$
 
-With $m_h\simeq125.25$ GeV and $v\simeq246.22$ GeV, $\varpi_{\mathrm{cpl}}=m_h^{2}/2v^{2}\simeq0.129$, $g_{hhh}\simeq191$ GeV and $g_{hhhh}\simeq0.78$. The ratio is a number with the dimensions of an inverse energy and no free parameter: a reader who measures the triple coupling and the mass has tested the potential, not fitted it.
+With $m_h\simeq2.0067\times10^{-8}\ \mathrm{J}$ and $v\simeq3.9449\times10^{-8}\ \mathrm{J}$, $\varpi_{\mathrm{cpl}}=m_h^{2}/2v^{2}\simeq0.129$, $g_{hhh}\simeq3.06\times10^{-8}\ \mathrm{J}$ and $g_{hhhh}\simeq0.78$. The ratio is a number with the dimensions of an inverse energy and no free parameter: a reader who measures the triple coupling and the mass has tested the potential, not fitted it.
 
 What the claim forbids. It forbids three things. A quartic coupling tuned independently of the mass, because the same $\varpi_{\mathrm{cpl}}$ is both. A cubic coupling treated as a separate parameter, because the expansion of a quartic potential has no other cubic term. And a "Higgs mass" read as $\sqrt{2}\mu$ with $\mu$ chosen freely and $\varpi_{\mathrm{cpl}}$ adjusted afterwards: the theory has $(\mu^{2},\varpi_{\mathrm{cpl}})$ and the observables are $(m_h,g_{hhh},g_{hhhh})$, three functions of two numbers, so one relation among the three is exact at this order.
 
-The consequence the article does not resolve. The same display gives a vacuum energy. At the minimum $V(v)=-\varpi_{\mathrm{cpl}} v^{4}/4=-m_h^{2}v^{2}/8\simeq-1.2\times10^{8}\ \mathrm{GeV}^{4}$, and nothing in the action makes it zero. That number is more than fifty orders of magnitude above the observed vacuum energy density when both are written as an energy density, and the corpus has no mechanism that removes it. It is recorded here because it is a consequence of the potential and not an assumption about it; the cosmology articles state the problem and do not solve it either.
+The consequence the article does not resolve. The same display gives a vacuum energy. At the minimum $V(v)=-\varpi_{\mathrm{cpl}} v^{4}/4=-m_h^{2}v^{2}/8\simeq-2.5\times10^{45}\ \mathrm{J\,m^{-3}}$, and nothing in the action makes it zero. That number is more than fifty orders of magnitude above the observed vacuum energy density when both are written as an energy density, and the corpus has no mechanism that removes it. It is recorded here because it is a consequence of the potential and not an assumption about it; the cosmology articles state the problem and do not solve it either.
 
 ## The Noether Currents and the Sign of the Charge
 
@@ -183,7 +185,7 @@ $$
 |---|---|
 | $\Phi$ | Complex doublet, four real components $\phi_A$ |
 | $\mu^{2},\ \varpi_{\mathrm{cpl}}$ | Mass-squared parameter and quartic coupling, both positive |
-| $v=\sqrt{\mu^{2}/\varpi_{\mathrm{cpl}}}$ | Magnitude of the vacuum expectation value, $\simeq246.22$ GeV |
+| $v=\sqrt{\mu^{2}/\varpi_{\mathrm{cpl}}}$ | Magnitude of the vacuum expectation value, $\simeq3.9449\times10^{-8}\ \mathrm{J}$ |
 | $r=\sqrt{2\Phi^{\dagger}\Phi}$ | Radial field, the potential's only argument |
 | $h=r-v$ | Physical scalar fluctuation in the unitary chart |
 | $m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2}$ | Curvature of the potential at the minimum |

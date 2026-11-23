@@ -36,7 +36,7 @@ The trace part of that block is not free, and it is the mass term. The section *
 An antisymmetric part that is a total divergence carries no charge. That is the content of the Belinfante relation: the antisymmetric part of the canonical stress equals minus one half the divergence of the spin tensor,
 
 $$
-T_{\mathrm{can},[\imath\jmath]}=-\tfrac12\sum_\imath\partial_\imath S_{k\imath\jmath},
+T_{\mathrm{can},[\imath\jmath]}=-\tfrac12\sum_{\imath}\partial_{\imath} S_{k\imath\jmath},
 $$
 
 with $S_{k\imath\jmath}$ antisymmetric in its last two indices and every index low. Integrating over a localised field, the divergence integrates to a boundary term and vanishes, so the antisymmetric part contributes nothing to the total energy or momentum.
@@ -99,7 +99,7 @@ with $u$ the unit flow. Its rest frame is the mode's own frame, and there $\epsi
 
 *Check.* Boosted to the rest frame of its own current, the spatial block has largest entry $8\times10^{-16}$, for either spin, for the rest frame and for two waves of one momentum, at three events of each field. Two waves of one momentum and opposite spins give $\epsilon=4$ at the momentum $mc$ with $\bar u\,u=2m$ per wave, $p=0$ and shear $0$: the energies add and no stress appears. So the spin does not enter the symmetric part at fixed momentum, and the dust character belongs to the momentum alone.
 
-A massless mode is a null dust. At $m=0$ the trace identity forces $\Omega=0$ and the single-mode tensor is $\epsilon \nu_{\imath} \nu_{\jmath}$ with $k$ null. In the frame of the mode the spatial block is $\epsilon n_jn_\imath$: one eigenvalue $\epsilon$ along the direction of motion and two zero across it. The isotropised pressure is $\epsilon/3$, so the radiation equation of state is what tracelessness gives; the stress is nevertheless uniaxial, and the equation of state does not make it isotropic.
+A massless mode is a null dust. At $m=0$ the trace identity forces $\Omega=0$ and the single-mode tensor is $\epsilon \nu_{\imath} \nu_{\jmath}$ with $k$ null. In the frame of the mode the spatial block is $\epsilon n_jn_{\imath}$: one eigenvalue $\epsilon$ along the direction of motion and two zero across it. The isotropised pressure is $\epsilon/3$, so the radiation equation of state is what tracelessness gives; the stress is nevertheless uniaxial, and the equation of state does not make it isotropic.
 
 *Check.* At $m=10^{-8}$ with the momentum $(0.9,-0.4,0.3)$: $\sum_{\imath}\varepsilon_{\imath} P_{\imath} P_{\imath}=2\times10^{-16}$, $T_{jj}/\epsilon=1.000000$, the three eigenvalues of $T_{j\imath}$ are $(0,0,1)\epsilon$, and the trace is $3\times10^{-16}\epsilon$, for either spin.
 
@@ -146,21 +146,21 @@ The law is one real equation and the element has four slots, so three of the fou
 
 ### The Spin Law
 
-**The divergence of the spin current is a torque, and the torque is the rotor connection contracted with the spin.** With the rotor's logarithmic derivative $\tilde u_{\mathrm r}^{-1}\partial_\imath\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\imath$, a real vector part,
+**The divergence of the spin current is a torque, and the torque is the rotor connection contracted with the spin.** With the rotor's logarithmic derivative $\tilde u_{\mathrm r}^{-1}\partial_{\imath}\tilde u_{\mathrm r}=\tfrac12\vec\Omega_{\imath}$, a real vector part,
 
 $$
-\sum_{\imath\in\{x,y,z\}}\partial_\imath S_{\Psi,k,k\jmath}=\tau_{k\jmath},
+\sum_{\imath\in\{x,y,z\}}\partial_{\imath} S_{\Psi,k,k\jmath}=\tau_{k\jmath},
 \qquad
-\tau_{k\jmath}=\tfrac12\Bigl(\sum_\rho\varepsilon_\rho\,\Omega_{k\rho}S_{\rho\jmath}-\sum_\rho\varepsilon_\rho\,\Omega_{\jmath\rho}S_{\rhok}\Bigr).
+\tau_{k\jmath}=\tfrac12\Bigl(\sum_\rho\varepsilon_\rho\,\Omega_{k\rho}S_{\rho\jmath}-\sum_\rho\varepsilon_\rho\,\Omega_{\jmath\rho}S_{\rho k}\Bigr).
 $$
 
-The display is the rotor's own equation in components. The rotor's equation is $\partial_\imath\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\imath\tilde u_{\mathrm r}$, and differentiating the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ gives the commutator of the connection with the spin. The conservation law is that statement with the indices put back. [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) derives it and this article quotes it.
+The display is the rotor's own equation in components. The rotor's equation is $\partial_{\imath}\tilde u_{\mathrm r}=\tfrac12\vec\Omega_{\imath}\tilde u_{\mathrm r}$, and differentiating the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ gives the commutator of the connection with the spin. The conservation law is that statement with the indices put back. [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) derives it and this article quotes it.
 
 The torque vanishes when the connection turns about the spin's own axis. That is the free rotor's conservation, and it is a statement about the geometry of the rotation and not about the field equation.
 
 *Check.* At rest, with the flow $v_{\Phi}=e_t$ and the spin along $\vec e_z$, the spin tensor is $S_{12}=+1$ and the rest of its components vanish. Take the connection's spatial part $\vec\Omega_{0}$ and compute all six components of $\tau$. For $\vec\Omega_{0}=(0,0,2)$ the maximum modulus of $\tau$ is $0.000000$; for $\vec\Omega_{0}=(1,0,0)$ it is $0.500000$; for the mixed $\vec\Omega_{0}=(1,0,1)$ it is $0.500000$. So the torque vanishes exactly when the connection is along the spin and not otherwise.
 
-It establishes that the source of the spin law is a commutator and that its kernel is the connection along the spin. It does not establish that the connection is derivable from the field equation: $\vec\Omega_\imath$ is what the polar form's fourth bracket supplies, and the equation for it is the corpus's open question.
+It establishes that the source of the spin law is a commutator and that its kernel is the connection along the spin. It does not establish that the connection is derivable from the field equation: $\vec\Omega_{\imath}$ is what the polar form's fourth bracket supplies, and the equation for it is the corpus's open question.
 
 ## The Gordon Spin Term and the Vorticity
 
@@ -222,7 +222,7 @@ The trace of the symmetric part is the mass term, $\sum_{\imath}\varepsilon_{\im
 | $S_{\Psi,k,k\jmath}$ | Its components in the corpus's letters |
 | $\tilde S_{\Psi}=\rho\tfrac{h}{4\pi}i\hat s$ | Spin density element |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
-| $\tilde u_{\mathrm r}^{-1}\partial_\imath\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\imath$ | Rotor connection |
+| $\tilde u_{\mathrm r}^{-1}\partial_{\imath}\tilde u_{\mathrm r}=\tfrac12\vec\Omega_{\imath}$ | Rotor connection |
 | $\tau_{k\jmath}$ | Torque, the spin law's source |
 | $\omega_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath}$ | Vorticity 2-form |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |

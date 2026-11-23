@@ -55,7 +55,7 @@ $$
 \qquad \lvert\vec\nabla_\Phi\rvert^2 = \Delta_\Phi ,
 $$
 
-so $\tilde\nabla_\Phi^2 \neq \Box_\Phi$. The spacelike cross terms do cancel, because the three vector units anticommute pairwise and $\vec\nabla_\Phi\vec\nabla_\Phi = -\lvert\vec\nabla_\Phi\rvert^2e_t$ has no vector remainder; the cross term between the timelike direction and the vector part does not, because the timelike direction is carried by the unit $e_t$, which commutes with every $\vec e_\imath$ instead of anticommuting with it. The conjugate removes that remainder: $(\tilde\nabla_\Phi)^{\natural}$ enters with $-\vec\nabla_\Phi$, the two mixed terms $-\partial/\partial R_t\,\vec\nabla_\Phi$ and $+\vec\nabla_\Phi\,\partial/\partial R_t$ cancel, and $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ reduces to $(\partial^2/\partial R_t^2 + \lvert\vec\nabla_\Phi\rvert^2)e_t$.
+so $\tilde\nabla_\Phi^2 \neq \Box_\Phi$. The spacelike cross terms do cancel, because the three vector units anticommute pairwise and $\vec\nabla_\Phi\vec\nabla_\Phi = -\lvert\vec\nabla_\Phi\rvert^2e_t$ has no vector remainder; the cross term between the timelike direction and the vector part does not, because the timelike direction is carried by the unit $e_t$, which commutes with every $\vec e_{\imath}$ instead of anticommuting with it. The conjugate removes that remainder: $(\tilde\nabla_\Phi)^{\natural}$ enters with $-\vec\nabla_\Phi$, the two mixed terms $-\partial/\partial R_t\,\vec\nabla_\Phi$ and $+\vec\nabla_\Phi\,\partial/\partial R_t$ cancel, and $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ reduces to $(\partial^2/\partial R_t^2 + \lvert\vec\nabla_\Phi\rvert^2)e_t$.
 
 The conjugate is therefore what completes the square, and the two facts it uses are properties of the basis: $\vec e_x,\vec e_y,\vec e_z$ anticommute pairwise, and $e_t$ commutes with all three. Both are read from the multiplication table, and no second structure is needed. The root of $\Box_\Phi$ inside the algebra is therefore the pair $(\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural})$, never one gradient alone. No array and no frame enters the computation: a component check in a chosen basis must return the same element, because the basis is not part of the operator, and the reduction below stays with the operator.
 
@@ -113,7 +113,7 @@ $$
 \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2 = \Box_\Phi .
 $$
 
-The cancellation of the mixed terms uses the quaternion multiplication table twice: the spacelike ones cancel because $\{\vec e_j,\vec e_\imath\} = 0$ for $j\neq \nu_{\Phi}$, the timelike ones because the scalar part commutes with the vector part. This is why $\Box_\Phi$ is scalar and central, and why it acts on a biquaternion field coefficient by coefficient,
+The cancellation of the mixed terms uses the quaternion multiplication table twice: the spacelike ones cancel because $\{\vec e_j,\vec e_{\imath}\} = 0$ for $j\neq \nu_{\Phi}$, the timelike ones because the scalar part commutes with the vector part. This is why $\Box_\Phi$ is scalar and central, and why it acts on a biquaternion field coefficient by coefficient,
 
 $$
 \Box_\Phi\tilde{Ξ} = \sum_{\jmath\in\{t,x,y,z\}}(\Box_\PhiΞ_{\jmath})\,e_{\jmath} ,
@@ -160,10 +160,10 @@ The companion article on the Klein–Gordon equation proves an obstruction that 
 
 $$
 ((\tilde\nabla_\Phi)^{\natural}+ A)(\tilde\nabla_\Phi + B)
-= \Box_\Phi + (A + B)\,\partial/\partial R_t + \sum_{\imath\in\{x,y,z\}}\left(A\vec e_\imath - \vec e_\imath B\right)\partial/\partial R_\imath + AB,
+= \Box_\Phi + (A + B)\,\partial/\partial R_t + \sum_{\imath\in\{x,y,z\}}\left(A\vec e_{\imath} - \vec e_{\imath} B\right)\partial/\partial R_{\imath} + AB,
 $$
 
-so cancelling the first-order terms requires $B = -A$ together with $A\vec e_\imath + \vec e_\imath A = 0$ for $k=x,y,z$. An element that anticommutes with all three quaternion units must vanish, and the reason is visible one unit at a time: the condition for $\vec e_\imath$ removes the scalar coefficient together with the coefficient of $\vec e_\imath$, so the three conditions hold together only on the zero element. With $A = 0$ the constant term is $AB = -A^2 = 0$, which cannot equal $-\nu_m^{2}$ for a finite mass, $\nu_m\neq0$, and no scalar factorisation exists.
+so cancelling the first-order terms requires $B = -A$ together with $A\vec e_{\imath} + \vec e_{\imath} A = 0$ for $k=x,y,z$. An element that anticommutes with all three quaternion units must vanish, and the reason is visible one unit at a time: the condition for $\vec e_{\imath}$ removes the scalar coefficient together with the coefficient of $\vec e_{\imath}$, so the three conditions hold together only on the zero element. With $A = 0$ the constant term is $AB = -A^2 = 0$, which cannot equal $-\nu_m^{2}$ for a finite mass, $\nu_m\neq0$, and no scalar factorisation exists.
 
 The two results are consistent, and their consistency is the whole point. The Dirac square root is **not** a scalar factor of the form $\tilde\nabla_\Phi + A$ multiplying another scalar factor. It is an operator on the pair of chiral halves. On the pair the equation is two equations for two halves,
 
@@ -181,7 +181,7 @@ $$
 
 one equation per half, the two mass-gradient terms cancelling because the mass passes through the gradients.
 
-Equivalently, the pair is the statement that each gradient carries one half into $\nu_m$ times the other, and composing a line with the conjugate of the other returns $\nu_m^{2}$ times that half, which is $(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde{Ξ} = 0$ read on each half. This is the operator-valued square root: no scalar $\tilde\nabla_\Phi + A$ works, as the obstruction showed, but the pair of lines built from the conjugate pair does, because each line composed with its partner is the central $\Box_\Phi$ on its half; the composition of the two mass-shifted maps is the central $\Box_\Phi-4\pi^{2}\nu_m^{2}$ on each half. The obstruction identifies precisely the missing ingredient: a scalar square root would need an element anticommuting with all three vector units $\vec e_\imath$, $k=x,y,z$, and no biquaternion does; an operator-valued square root needs only that the **two different gradients cancel each other's vector parts**, which the conjugate pair does. The spin-$0$ no-go and the operator-valued square root are therefore one obstruction read two ways. This is what it means, in this framework, that the square root lives in the pair and not in the centre: the scalar field lives in $\mathbb{B}_{C}$, and the square root requires the exchange of two halves that only the pair carries.
+Equivalently, the pair is the statement that each gradient carries one half into $\nu_m$ times the other, and composing a line with the conjugate of the other returns $\nu_m^{2}$ times that half, which is $(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde{Ξ} = 0$ read on each half. This is the operator-valued square root: no scalar $\tilde\nabla_\Phi + A$ works, as the obstruction showed, but the pair of lines built from the conjugate pair does, because each line composed with its partner is the central $\Box_\Phi$ on its half; the composition of the two mass-shifted maps is the central $\Box_\Phi-4\pi^{2}\nu_m^{2}$ on each half. The obstruction identifies precisely the missing ingredient: a scalar square root would need an element anticommuting with all three vector units $\vec e_{\imath}$, $k=x,y,z$, and no biquaternion does; an operator-valued square root needs only that the **two different gradients cancel each other's vector parts**, which the conjugate pair does. The spin-$0$ no-go and the operator-valued square root are therefore one obstruction read two ways. This is what it means, in this framework, that the square root lives in the pair and not in the centre: the scalar field lives in $\mathbb{B}_{C}$, and the square root requires the exchange of two halves that only the pair carries.
 
 ## The Square on the Chiral Pair
 
@@ -240,7 +240,7 @@ $$
 with $\vec\nu_\Phi = \nu_{\Phi x}\vec e_x + \nu_{\Phi y}\vec e_y + \nu_{\Phi z}\vec e_z$ and $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. Here $\vec\nu_\Phi^2$ abbreviates the sum $\nu_{\Phi,1}^2+\nu_{\Phi,2}^2+\nu_{\Phi,3}^2$ of the squares of the components, not the quaternion product, which is its negative, $\vec\nu_\Phi\,\vec\nu_\Phi = -\vec\nu_\Phi^2e_t$. The phase is $2\pi\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_\Phi^{\natural}) = 2\pi\vec\nu_\Phi\cdot\vec r - \omega r'_t/c$, the scalar part of the product with the conjugate four-position. The exponent $2\pi i\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_\Phi^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
 
 $$
-\partial/\partial r'_t \longmapsto -2\pi i\nu_t^{\prime}, \qquad \partial/\partial r_\imath\longmapsto 2\pi i\nu_{\Phi,k}, \qquad \partial/\partial R_t \longmapsto -2\pi\nu_m,
+\partial/\partial r'_t \longmapsto -2\pi i\nu_t^{\prime}, \qquad \partial/\partial r_{\imath}\longmapsto 2\pi i\nu_{\Phi,k}, \qquad \partial/\partial R_t \longmapsto -2\pi\nu_m,
 $$
 
 and therefore
@@ -412,14 +412,14 @@ The converse holds exactly for the free pair. Read the first member as a definit
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ | The pair, as two first-order equations; the two lines exchange the chiral halves, and each composed with its partner is $\Box_\Phi$ in one half |
 | $i\tilde{Ζ}_{\mathrm{ad}}$ | Central grading of the complexified algebra, outside $\mathbb{B}$; the signs $-1$ and $+1$ of the pair are its image |
-| $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial R_\imath$ | Biquaternionic gradient, the one-sided Dirac operator, acting by multiplication on the left |
+| $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial R_{\imath}$ | Biquaternionic gradient, the one-sided Dirac operator, acting by multiplication on the left |
 | $(\tilde\nabla_\Phi)^{\natural}$ | Quaternion conjugate gradient |
-| $\vec\nabla_\Phi = \sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial R_\imath$ | Vector part of the gradient, $\lvert\vec\nabla_\Phi\rvert^2 = \Delta_\Phi$ |
+| $\vec\nabla_\Phi = \sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial R_{\imath}$ | Vector part of the gradient, $\lvert\vec\nabla_\Phi\rvert^2 = \Delta_\Phi$ |
 | $\tilde\nabla_\Phi^2 = \left(\partial^2/\partial R_t^2 - \lvert\vec\nabla_\Phi\rvert^2\right)e_t + 2\,\partial/\partial R_t\,\vec\nabla_\Phi$ | Square of the gradient alone; non-central, with a vector remainder |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ | Biquaternion norm |

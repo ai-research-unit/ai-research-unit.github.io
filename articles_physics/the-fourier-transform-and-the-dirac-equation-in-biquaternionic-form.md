@@ -72,11 +72,11 @@ On the light cone the wave-number element squares to twice its own temporal part
 
 $$
 \tilde\Upsilon_\Phi^{2}-2i\nu_t'\,\tilde\Upsilon_\Phi
-=\bigl(-\nu_t'^{2}e_t+2i\nu_t'\vec\nu_\Phi-\nu_{\Phi}^{2}e_t\bigr)-\bigl(-2\nu_t'^{2}e_t+2i\nu_t'\vec\nu_\Phi\bigr)
-=\bigl(\nu_t'^{2}-\nu_{\Phi}^{2}\bigr)e_t .
+=\bigl(-\nu_t'{}^{2}e_t+2i\nu_t'\vec\nu_\Phi-\nu_{\Phi}^{2}e_t\bigr)-\bigl(-2\nu_t'{}^{2}e_t+2i\nu_t'\vec\nu_\Phi\bigr)
+=\bigl(\nu_t'{}^{2}-\nu_{\Phi}^{2}\bigr)e_t .
 $$
 
-The right side is the interval: it vanishes exactly where the norm $\tilde\Upsilon_\Phi\tilde\Upsilon_\Phi^{\natural}=-\nu_t'^{2}+\nu_{\Phi}^{2}$ vanishes, which is the light cone. So the identity $\tilde\Upsilon_\Phi^{2}=2i\nu_t'\tilde\Upsilon_\Phi$ holds on the cone and only there.
+The right side is the interval: it vanishes exactly where the norm $\tilde\Upsilon_\Phi\tilde\Upsilon_\Phi^{\natural}=-\nu_t'{}^{2}+\nu_{\Phi}^{2}$ vanishes, which is the light cone. So the identity $\tilde\Upsilon_\Phi^{2}=2i\nu_t'\tilde\Upsilon_\Phi$ holds on the cone and only there.
 
 ### The Projector
 
@@ -91,7 +91,7 @@ $$
 where $\hat n$ is a real unit vector on the cone. The defect of idempotency is the interval, in closed form:
 
 $$
-\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}=-\frac{\nu_t'^{2}-\nu_{\Phi}^{2}}{4\nu_t'^{2}}\,e_t .
+\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}=-\frac{\nu_t'{}^{2}-\nu_{\Phi}^{2}}{4\nu_t'{}^{2}}\,e_t .
 $$
 
 The computation is one line from the identity above, and the check covered five random null momenta: $\lvert\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}\rvert$ came out at most $5.6\times10^{-17}$, $\lvert2\,\mathrm{Sc}\,\tilde\Pi_{\mathrm{id}}-1\rvert$ at most $1.1\times10^{-16}$, and the same defect formula held off the cone to $2.8\times10^{-17}$ at five further momenta. One off-cone instance, $2\pi\nu_t'=1$ and $2\pi\nu_{\Phi}=0.7$, gives a defect of $0.1275$.
@@ -145,7 +145,7 @@ The other form is not preserved, and its failure is not a normalization. The sca
 The numbers are unambiguous. On the same 64 samples the summed scalar part of the quaternionic norm went from $-16.861768-42.722374\,i$ in position space to $-15.112387-17.526486\,i$ in momentum space: the real part moved by a tenth and the imaginary part changed by more than a factor of two. For a field with real coefficients the failure is starkest, because the quaternionic norm is then real and the transform's value is not. One 64-sample real field gave $56.651597$ before the transform and $-6.686526$ after, and the exact identity behind the number is
 
 $$
-\sum_\imath\hat c_\imath^{2}=\sum_n c_nc_{-n},
+\sum_{\imath}\hat c_{\imath}^{2}=\sum_n c_nc_{-n},
 $$
 
 which held to $1.6\times10^{-13}$. **The transform of the norm is the reflected overlap of the field with itself**, not the norm, and the two agree only for a field symmetric under reflection.
@@ -161,9 +161,9 @@ The consequence for the algebra is exact. The quaternionic norm is indefinite â€
 On the symbol both forms are evaluable, and they disagree. For a wave-number element,
 
 $$
-\langle\tilde\Upsilon_\Phi\rangle_\natural=-\nu_t'^{2}+\nu_{\Phi}^{2},
+\langle\tilde\Upsilon_\Phi\rangle_\natural=-\nu_t'{}^{2}+\nu_{\Phi}^{2},
 \qquad
-\mathrm{Sc}\bigl(\tilde\Upsilon_\Phi^{*}\tilde\Upsilon_\Phi\bigr)=\nu_t'^{2}+\nu_{\Phi}^{2}.
+\mathrm{Sc}\bigl(\tilde\Upsilon_\Phi^{*}\tilde\Upsilon_\Phi\bigr)=\nu_t'{}^{2}+\nu_{\Phi}^{2}.
 $$
 
 The first is indefinite and its level sets are hyperboloids; the second is positive and its level sets are spheres. On the mode $2\pi\nu_{\Phi}=3$, $2\pi\nu_t'=5$ the first is $-16$ and the second is $34$; the first takes the value $-\nu_m^{2}$ at $2\pi\nu_m=4$, so that mode lies on the shell of a particle of wave-number mass $4$, and the second form knows nothing about it. Only the hyperboloid terminates on the mass shell. *Waveâ€“Particle Duality and the Fourier Transform* states this comparison for the general equation; the Dirac case adds the value of the level and the structure at its degenerate point.
@@ -190,9 +190,9 @@ Two adjacent questions belong to other articles. A symbol that depends on positi
 
 In position space the Dirac operator is mixed: the gradient is anti-Hermitian and the mass coefficient is Hermitian, and the two stand in one pair with opposite characters. Under the transform each derivative becomes multiplication by the central $i$ times the wave-number element, and multiplication by $i$ carries the anti-Hermitian symbol to a Hermitian one. The momentum-space operator is therefore Hermitian in every entry, and that is what a pure $\mathbb{B}_\Psi$ symbol means.
 
-The light cone is exactly the locus where $\tilde\Upsilon_\Phi/(2i\nu_t')$ is idempotent. The defect of idempotency is $-\frac{\nu_t'^{2}-\nu_{\Phi}^{2}}{4\nu_t'^{2}}e_t$, a central multiple of the interval, and on the cone the projector is $\tfrac12(e_t-i\hat n\cdot\vec e)$ of trace one, with the other sign of $\hat n$ giving the orthogonal partner. The two members of the massless pair have the two complementary minimal left ideals for their solution spaces, and the sign of the momentum's direction selects which is which.
+The light cone is exactly the locus where $\tilde\Upsilon_\Phi/(2i\nu_t')$ is idempotent. The defect of idempotency is $-\frac{\nu_t'{}^{2}-\nu_{\Phi}^{2}}{4\nu_t'{}^{2}}e_t$, a central multiple of the interval, and on the cone the projector is $\tfrac12(e_t-i\hat n\cdot\vec e)$ of trace one, with the other sign of $\hat n$ giving the orthogonal partner. The two members of the massless pair have the two complementary minimal left ideals for their solution spaces, and the sign of the momentum's direction selects which is which.
 
-The transform preserves the Hermitian form, by Plancherel, and breaks the quaternionic norm, whose scalar part is a holomorphic quadratic form: the summed scalar part of the norm of a real 64-sample field went from $56.651597$ to $-6.686526$, with the exact identity $\sum_\imath\hat c_\imath^{2}=\sum_nc_nc_{-n}$ holding to $1.6\times10^{-13}$. So the indefinite quadratic structure lives on the symbol, where it is a level set: the Dirac shell is the level $-\nu_m^{2}$, and at $\nu_m=0$ that level set is the idempotent variety.
+The transform preserves the Hermitian form, by Plancherel, and breaks the quaternionic norm, whose scalar part is a holomorphic quadratic form: the summed scalar part of the norm of a real 64-sample field went from $56.651597$ to $-6.686526$, with the exact identity $\sum_{\imath}\hat c_{\imath}^{2}=\sum_nc_nc_{-n}$ holding to $1.6\times10^{-13}$. So the indefinite quadratic structure lives on the symbol, where it is a level set: the Dirac shell is the level $-\nu_m^{2}$, and at $\nu_m=0$ that level set is the idempotent variety.
 
 ## Summary of Notation
 
@@ -201,16 +201,16 @@ The transform preserves the Hermitian form, by Plancherel, and breaks the quater
 | $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | The wave-number element; anti-Hermitian, in $\mathbb{B}_\Phi$ |
 | $2\pi i\tilde\Upsilon_\Phi$ | The symbol of the gradient; Hermitian, in $\mathbb{B}_\Psi$ |
 | $\mathcal{D}(\tilde\Upsilon_\Phi)$ | The pair's symbol; every entry Hermitian |
-| $\tilde\Upsilon_\Phi^{2}-2i\nu_t'\tilde\Upsilon_\Phi=(\nu_t'^{2}-\nu_{\Phi}^{2})e_t$ | The identity that holds on the light cone only |
+| $\tilde\Upsilon_\Phi^{2}-2i\nu_t'\tilde\Upsilon_\Phi=(\nu_t'{}^{2}-\nu_{\Phi}^{2})e_t$ | The identity that holds on the light cone only |
 | $\tilde\Pi_{\mathrm{id}}=\tilde\Upsilon_\Phi/(2i2\pi\nu_t')=\tfrac12(e_t-i\hat n\cdot\vec e)$ | The idempotent of a null momentum; rank one |
-| $\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}=-\frac{\nu_t'^{2}-\nu_{\Phi}^{2}}{4\nu_t'^{2}}e_t$ | The defect off the cone; the interval |
+| $\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}=-\frac{\nu_t'{}^{2}-\nu_{\Phi}^{2}}{4\nu_t'{}^{2}}e_t$ | The defect off the cone; the interval |
 | $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\hat n\cdot\vec e)$ | The two orthogonal projectors; $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$ |
 | $\tilde\Upsilon_\Phi=2i\nu_t'\tilde\Pi_{\mathrm{id},-}$, $\tilde\Upsilon_\Phi^{\natural}=2i\nu_t'\tilde\Pi_{\mathrm{id},+}$ | The two massless members |
 | $\int\mathrm{Sc}(f^{*}g)$ | The Hermitian form; preserved by the transform |
 | $\mathrm{Sc}(ff^{\natural})=\sum_\alpha c_\alpha^{2}$ | The quaternionic norm's scalar part; not preserved |
-| $\sum_\imath\hat c_\imath^{2}=\sum_nc_nc_{-n}$ | What the transform makes of it; the reflected overlap |
-| $\langle\tilde\Upsilon_\Phi\rangle_\natural=-\nu_t'^{2}+\nu_{\Phi}^{2}$ | The indefinite form on the symbol; level sets are shells |
-| $\mathrm{Sc}(\tilde\Upsilon_\Phi^{*}\tilde\Upsilon_\Phi)=\nu_t'^{2}+\nu_{\Phi}^{2}$ | The positive form on the symbol; level sets are spheres |
+| $\sum_{\imath}\hat c_{\imath}^{2}=\sum_nc_nc_{-n}$ | What the transform makes of it; the reflected overlap |
+| $\langle\tilde\Upsilon_\Phi\rangle_\natural=-\nu_t'{}^{2}+\nu_{\Phi}^{2}$ | The indefinite form on the symbol; level sets are shells |
+| $\mathrm{Sc}(\tilde\Upsilon_\Phi^{*}\tilde\Upsilon_\Phi)=\nu_t'{}^{2}+\nu_{\Phi}^{2}$ | The positive form on the symbol; level sets are spheres |
 
 ## Further Reading
 

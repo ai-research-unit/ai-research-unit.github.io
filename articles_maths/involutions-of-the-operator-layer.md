@@ -5,9 +5,7 @@
 
 The two preceding articles of this Part put an involution on the **elements** of a lattice or a
 relation algebra. This article puts the involution on the **operators** themselves. Given a poset $P$
-with an order-reversing involution $x \mapsto x^{\perp}$, the **conjugate** of a monotone map $f : P \to
-P$ is the map $f^{\perp} = {}^{\perp} \circ f \circ {}^{\perp}$, and the assignment $f \mapsto
-f^{\perp}$ is an **involution of the operator layer**. It is an anti-automorphism for composition,
+with an order-reversing involution $x \mapsto x^{\perp}$, the **conjugate** of a monotone map $f : P \to P$ is the map $f^{\perp} = {}^{\perp} \circ f \circ {}^{\perp}$, and the assignment $f \mapsto f^{\perp}$ is an **involution of the operator layer**. It is an anti-automorphism for composition,
 $(g \circ f)^{\perp} = f^{\perp} \circ g^{\perp}$, and it is order-reversing for the pointwise order; its
 fixed elements are the operators commuting with the involution, and it exchanges left adjoints with
 right adjoints, so it reverses every Galois connection. An order-**preserving** involution $\sigma$
@@ -40,12 +38,9 @@ $$
 f \leq g \Rightarrow g^{\perp} \leq f^{\perp}\;} .
 $$
 
-**Proof.** For monotonicity, if $x \leq y$ then $y^{\perp} \leq x^{\perp}$, so $f(y^{\perp}) \leq
-f(x^{\perp})$ and $(f(y^{\perp}))^{\perp} \geq (f(x^{\perp}))^{\perp}$; comparing with the definition
-gives $f^{\perp}(x) \leq f^{\perp}(y)$. The involution is $(f^{\perp})^{\perp} = {}^{\perp} \circ
-{}^{\perp} \circ f \circ {}^{\perp} \circ {}^{\perp} = f$ because ${}^{\perp}$ has order two. For the
-composition, $(g \circ f)^{\perp} = {}^{\perp} \circ g \circ f \circ {}^{\perp} = ({}^{\perp} \circ g
-\circ {}^{\perp}) \circ ({}^{\perp} \circ f \circ {}^{\perp}) = g^{\perp} \circ f^{\perp}$. For the order,
+**Proof.** For monotonicity, if $x \leq y$ then $y^{\perp} \leq x^{\perp}$, so $f(y^{\perp}) \leq f(x^{\perp})$ and $(f(y^{\perp}))^{\perp} \geq (f(x^{\perp}))^{\perp}$; comparing with the definition
+gives $f^{\perp}(x) \leq f^{\perp}(y)$. The involution is $(f^{\perp})^{\perp} = {}^{\perp} \circ {}^{\perp} \circ f \circ {}^{\perp} \circ {}^{\perp} = f$ because ${}^{\perp}$ has order two. For the
+composition, $(g \circ f)^{\perp} = {}^{\perp} \circ g \circ f \circ {}^{\perp} = ({}^{\perp} \circ g \circ {}^{\perp}) \circ ({}^{\perp} \circ f \circ {}^{\perp}) = g^{\perp} \circ f^{\perp}$. For the order,
 $f \leq g$ pointwise gives $f(x^{\perp}) \leq g(x^{\perp})$, and applying the order-reversing
 ${}^{\perp}$ reverses the inequality, so $g^{\perp}(x) \leq f^{\perp}(x)$ for all $x$.
 
@@ -64,8 +59,7 @@ $f^{\perp} = f$.
 involution, $f \circ {}^{\perp} = {}^{\perp} \circ f$. The fixed part contains the identity and is
 closed under composition; it is the centralizer of the involution in the monoid of monotone maps.
 
-**Proof.** $f^{\perp} = {}^{\perp} \circ f \circ {}^{\perp} = f$ is exactly $f \circ {}^{\perp} =
-{}^{\perp} \circ f$ after composing with ${}^{\perp}$ on one side and using that it is an involution.
+**Proof.** $f^{\perp} = {}^{\perp} \circ f \circ {}^{\perp} = f$ is exactly $f \circ {}^{\perp} = {}^{\perp} \circ f$ after composing with ${}^{\perp}$ on one side and using that it is an involution.
 The fixed elements of a monoid endomorphism are always a submonoid, which here is the centralizer of
 ${}^{\perp}$.
 
@@ -76,8 +70,7 @@ posets with order-reversing involutions, then $g^{\perp} \dashv f^{\perp}$, that
 right adjoints are exchanged.
 
 **Proof.** The Galois condition is $f(x) \leq y \Leftrightarrow x \leq g(y)$. Replacing $x$ by
-$x^{\perp}$ and $y$ by $y^{\perp}$ and using the involutions, $f(x^{\perp}) \leq y^{\perp} \Leftrightarrow
-x^{\perp} \leq g(y^{\perp})$, which becomes $y \leq f^{\perp}(x) \Leftrightarrow g^{\perp}(y) \leq x$
+$x^{\perp}$ and $y$ by $y^{\perp}$ and using the involutions, $f(x^{\perp}) \leq y^{\perp} \Leftrightarrow x^{\perp} \leq g(y^{\perp})$, which becomes $y \leq f^{\perp}(x) \Leftrightarrow g^{\perp}(y) \leq x$
 after applying ${}^{\perp}$ and rewriting; this is the Galois condition $g^{\perp} \dashv f^{\perp}$.
 
 **Corollary.** The conjugation carries the set of left adjoints bijectively onto the set of right
@@ -93,8 +86,7 @@ involution, in the sense of *The Converse as an Adjoint*: for an operator $F$ on
 $F^{\perp}(R) = (F(R^{-1}))^{-1}$. Then $F \mapsto F^{\perp}$ is the conjugation, the fixed operators
 are those with $F(R^{-1}) = F(R)^{-1}$, that is, those commuting with the converse, and the conjugation
 is an anti-automorphism of the composition of operators. The left-composition operator $L_R(S) = R;S$
-of *The Converse as an Adjoint* has the conjugate $L_R^{\perp}(S) = (L_R(S^{-1}))^{-1} = (R;S^{-1})^{-1}
-= S;R^{-1}$, the right-composition by the converse of $R$; this is computed again in *The Converse
+of *The Converse as an Adjoint* has the conjugate $L_R^{\perp}(S) = (L_R(S^{-1}))^{-1} = (R;S^{-1})^{-1} = S;R^{-1}$, the right-composition by the converse of $R$; this is computed again in *The Converse
 Relation as an Adjoint*.
 
 **Example (a Boolean lattice).** Let $P$ be a Boolean lattice and let ${}^{\perp}$ be the complement.
@@ -128,13 +120,11 @@ that an orthocomplement is order-reversing.
 
 ## Summary
 
-An order-reversing involution ${}^{\perp}$ of a poset acts on the operators by conjugation, $f^{\perp}
-= {}^{\perp} \circ f \circ {}^{\perp}$; this is an involution of the operator layer, an
+An order-reversing involution ${}^{\perp}$ of a poset acts on the operators by conjugation, $f^{\perp} = {}^{\perp} \circ f \circ {}^{\perp}$; this is an involution of the operator layer, an
 **anti-automorphism** of composition and an **order-reversing** map of the pointwise order, and its
 fixed elements are the operators commuting with ${}^{\perp}$. It exchanges left and right adjoints, so
 it reverses every Galois connection, and it carries left adjoints bijectively onto right adjoints. An
-order-preserving involution $\sigma$ gives instead the conjugation $f \mapsto \sigma \circ f \circ
-\sigma$, an order-preserving automorphism of the operator monoid with the same fixed part.
+order-preserving involution $\sigma$ gives instead the conjugation $f \mapsto \sigma \circ f \circ \sigma$, an order-preserving automorphism of the operator monoid with the same fixed part.
 
 ## Summary of Notation
 

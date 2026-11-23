@@ -58,7 +58,7 @@ $$
 
 and both signs were recomputed directly from the definition $(\star F)_{\imath\jmath}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\imath\jmath\rho\sigma}F_{\rho\sigma}$ by applying it twice to each of the six basis two-forms. The consequences are the two facts that organise this article.
 
-- **Euclidean.** Because $\star^2=+1$, the projectors $\tfrac12(1\pm\star)$ split the two-forms into a **self-dual** three-dimensional half and an **anti-self-dual** three-dimensional half, both real. The condition $F=\pm\star F$ is a real, first-order, non-trivial condition. In the component description with $F_{4k}=E_\imath$ and $F_{j\imath}=\epsilon_{j\imath l}B_l$ it reads simply
+- **Euclidean.** Because $\star^2=+1$, the projectors $\tfrac12(1\pm\star)$ split the two-forms into a **self-dual** three-dimensional half and an **anti-self-dual** three-dimensional half, both real. The condition $F=\pm\star F$ is a real, first-order, non-trivial condition. In the component description with $F_{4k}=E_{\imath}$ and $F_{j\imath}=\epsilon_{j\imath l}B_l$ it reads simply
 $$
 \text{self-dual} \iff \vec B=+\vec E,
 \qquad
@@ -345,7 +345,7 @@ This article has treated the localised finite-energy solutions of the biquaterni
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb R}\mathbb{H}$ | The biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$, central |
 | $\mathbb{B}_{\Phi}$ | Material sector, anti-Hermitian, one negative direction |
 | $\mathbb{B}_{\Psi}$ | Informational sector, Hermitian, one positive direction |

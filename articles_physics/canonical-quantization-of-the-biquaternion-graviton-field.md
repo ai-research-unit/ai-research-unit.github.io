@@ -6,7 +6,7 @@ The graviton is the quantum of the metric's deviation from flatness: the massles
 
 The framework's account of the graviton is the cleanest illustration of how it builds a higher-spin field. The graviton's carrier is the **symmetric trace-free square of the material vector**, and its decomposition is the framework's own:
 
-**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial R_{\imath}$ and the coefficients $Q_{\imath}=q_{\imath}+iq'_{\imath}$, written out in full as $Q_t=q_t+i q'_t$ and $Q_\imath=q_\imath+i q'_\imath$, with $q_t=h_t$, $q'_t=r'_t$, $q_\imath=x_\imath$ and $q'_\imath=h'_{x_k}$. The reading used below is the material one, $Q_t=i q'_t$ and $Q_\imath=q_\imath$: the labels are summed directly with the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$, and the d'Alembertian is $\Box_\Phi=\sum_{\imath}\partial^2/\partial R_{\imath}^2$, whose one minus on the time term is the square of the $i$ in $Q_t$, not a declared sign.
+**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial R_{\imath}$ and the coefficients $Q_{\imath}=q_{\imath}+iq'_{\imath}$, written out in full as $Q_t=q_t+i q'_t$ and $Q_{\imath}=q_{\imath}+i q'_{\imath}$, with $q_t=h_t$, $q'_t=r'_t$, $q_{\imath}=x_{\imath}$ and $q'_{\imath}=h'_{x_k}$. The reading used below is the material one, $Q_t=i q'_t$ and $Q_{\imath}=q_{\imath}$: the labels are summed directly with the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$, and the d'Alembertian is $\Box_\Phi=\sum_{\imath}\partial^2/\partial R_{\imath}^2$, whose one minus on the time term is the square of the $i$ in $Q_t$, not a declared sign.
 
 $$
 \boxed{\;\left(V\odot V\right)_{\text{sym}} = 0\oplus 2 ,
@@ -100,7 +100,7 @@ $$
 \qquad
 \mathrm{tr}\,P = 2 ,
 \qquad
-P_{ij,\imath l}\left(k_\imath\zeta_l+2\pi\nu_{l}\zeta_\imath\right) = 0 ,
+P_{ij,\imath l}\left(k_{\imath}\zeta_l+2\pi\nu_{l}\zeta_{\imath}\right) = 0 ,
 \qquad
 P_{ij,\imath l}\,\delta_{\imath l} = 0\;},
 $$
@@ -223,7 +223,7 @@ What is genuinely algebraic in this account is the trace removal. The bilinear f
 
 ### The Trace-Free Square in Components
 
-The split is explicit in components. Write a material vector as $u=\sum_{\imath\in\{x,y,z\}} u_\imath\vec e_\imath$ with real coefficients $u_\imath$, and take the symmetric square with components $T_{j\imath}=u_ju_\imath$, or $T_{j\imath}=u_jv_\imath+u_\imathv_j$ for a pair of vectors. The bilinear form gives the trace
+The split is explicit in components. Write a material vector as $u=\sum_{\imath\in\{x,y,z\}} u_{\imath}\vec e_{\imath}$ with real coefficients $u_{\imath}$, and take the symmetric square with components $T_{j\imath}=u_ju_{\imath}$, or $T_{j\imath}=u_jv_{\imath}+u_{\imath} v_j$ for a pair of vectors. The bilinear form gives the trace
 
 $$
 \langle u,v\rangle = \mathrm{Sc}\left(u\bar{v}\right) = \vec u\cdot\vec v ,

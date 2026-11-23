@@ -352,7 +352,7 @@ The two-sided placement depends on the sign of the second root, and the two sign
 | $\mathbb{B}$ | The biquaternion algebra, of real dimension $8$ |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | The units, with $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | The central scalar imaginary |
-| $\tilde{Ζ},\tilde{Ζ}'$ | Roots of $1$, with $\tilde{Ζ}^{2}=\tilde{Ζ}'^{2}=e_t$; $\tilde{Ζ}$ is the Hermitian root, $\tilde{Ζ}^{*}=\tilde{Ζ}$ |
+| $\tilde{Ζ},\tilde{Ζ}'$ | Roots of $1$, with $\tilde{Ζ}^{2}=\tilde{Ζ}'{}^{2}=e_t$; $\tilde{Ζ}$ is the Hermitian root, $\tilde{Ζ}^{*}=\tilde{Ζ}$ |
 | $R,R'$ | The attached roots of $-e_t$, $R=i\tilde{Ζ}$ and $R'=i\tilde{Ζ}'$, pure with $R^{2}=-e_t$; $R$ is a real unit vector, $R^{*}=-R$ |
 | $W,W'$ | The kernels $W(t,\omega)=\exp(-2\pi R\omega t)$ and $W'(t,\omega)=\exp(2\pi R'\omega t)$ |
 | $t$ | The time, the variable of integration |

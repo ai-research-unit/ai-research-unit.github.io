@@ -5,7 +5,7 @@
 
 This article describes the group of linear transformations of the split complex plane that preserve the split norm, and its realisation by the algebra $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$. It is the split complex counterpart of *Rotations and Reflections in the Complex Plane*, written in parallel: there the unit circle acts by multiplication and its group is identified with the compact rotation group $SO(2)$, whereas here the unit hyperbola acts by multiplication and its identity component is identified with $SO(1,1)$, a group isomorphic to the additive line. The transformations are the **hyperbolic rotations**, and they are treated here only as a group of linear transformations of a plane, with no physical interpretation invoked.
 
-The split complex algebra and its conjugation $\bar Q = q - jq'$ are taken from *Split-Complex Algebra*; the split norm $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$, its polarisation and the group of invertibles are the form and the distance of *Norm and Invertibility in the General Split-Complex Algebra*; and the idempotents $\Pi_\pm = \tfrac12(1\pm j)$ are taken from *Square Roots of One and the Idempotents of the Split-Complex Algebra*. The vocabulary of quadratic forms, polar forms and orthogonal groups is that of *Isometries and Orthogonal Transformations*, and the Lie algebra of a matrix group is that of *The Orthogonal Lie Algebra*. The base field throughout is $\mathbb{R}$, so that $2$ is invertible and every isometry of a non-degenerate form is a linear automorphism; the coefficients $q, q'$ of $Q = q + jq'$ are always real, and $\mathbb{C}_{\mathrm{spl}}$ is written in the basis $\{1, j\}$.
+The split complex algebra and its conjugation $\bar Q = q - jq'$ are taken from *Split-Complex Algebra*; the split norm $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'{}^2$, its polarisation and the group of invertibles are the form and the distance of *Norm and Invertibility in the General Split-Complex Algebra*; and the idempotents $\Pi_\pm = \tfrac12(1\pm j)$ are taken from *Square Roots of One and the Idempotents of the Split-Complex Algebra*. The vocabulary of quadratic forms, polar forms and orthogonal groups is that of *Isometries and Orthogonal Transformations*, and the Lie algebra of a matrix group is that of *The Orthogonal Lie Algebra*. The base field throughout is $\mathbb{R}$, so that $2$ is invertible and every isometry of a non-degenerate form is a linear automorphism; the coefficients $q, q'$ of $Q = q + jq'$ are always real, and $\mathbb{C}_{\mathrm{spl}}$ is written in the basis $\{1, j\}$.
 
 Two features distinguish the theory from its complex counterpart and organise everything below. The norm $\langle\cdot\rangle_{*}$ is indefinite, of inertia $(1,1)$, so the set $\{\langle Q\rangle_{*} = 0\}$ is a pair of lines, the **null cone**, rather than the single point of the complex case; and the group of invertibles $\{\langle Q\rangle_{*} = 1\}$ is a hyperbola with two branches rather than a circle, so the rotation group is non-compact and its exponential is injective. The null cone is also the zero-divisor set of $\mathbb{C}_{\mathrm{spl}}$, so the group theory developed here and the failure of the Cauchy theory recorded below have the same locus.
 
@@ -22,7 +22,7 @@ $$
 In the real basis $\{1, j\}$, with $Q = q + jq'$ and $B = b + jb'$,
 
 $$
-g(Q, B) = qb - q'b', \qquad \langle Q\rangle_{*} = g(Q, Q) = q^2 - q'^2.
+g(Q, B) = qb - q'b', \qquad \langle Q\rangle_{*} = g(Q, Q) = q^2 - q'{}^2.
 $$
 
 **Proposition.** The form $g$ is symmetric and bilinear, its matrix in the basis $\{1, j\}$ is
@@ -96,7 +96,7 @@ By *Norm and Invertibility in the General Split-Complex Algebra*, an element $Q 
 **Definition.** The **unit hyperbola** is
 
 $$
-\mathcal{H} = \{u \in \mathbb{C}_{\mathrm{spl}} : \langle u\rangle_{*} = 1\} = \{u = q + jq' : q^2 - q'^2 = 1\}.
+\mathcal{H} = \{u \in \mathbb{C}_{\mathrm{spl}} : \langle u\rangle_{*} = 1\} = \{u = q + jq' : q^2 - q'{}^2 = 1\}.
 $$
 
 **Theorem.** The map
@@ -107,7 +107,7 @@ $$
 
 is a group isomorphism onto the component $\mathcal{H}^+ = \{u \in \mathcal{H} : \operatorname{Re} u > 0\}$ of $\mathcal{H}$. The other component is $\mathcal{H}^- = -\mathcal{H}^+ = \{u \in \mathcal{H} : \operatorname{Re} u < 0\}$, and $\mathcal{H} = \mathcal{H}^+ \sqcup \mathcal{H}^-$ with $\operatorname{Re} u$ of constant sign on each component.
 
-**Proof.** The split complex exponential $\exp(B) = \sum B^n/n!$ converges for every $B$, and $\exp(\theta_{\mathrm{hpa}} j) = \cosh\theta_{\mathrm{hpa}} + j\sinh\theta_{\mathrm{hpa}}$ because $j^{2m} = 1$ and $j^{2m+1} = j$; this follows also from the addition formula. Then $\langle \exp(\theta_{\mathrm{hpa}} j)\rangle_{*} = \cosh^2\theta_{\mathrm{hpa}} - \sinh^2\theta_{\mathrm{hpa}} = 1$, so the image lies in $\mathcal{H}$, and $\exp(\theta_{\mathrm{hpa}} j)\exp(\theta_{\mathrm{rpd}} j) = \exp((\theta_{\mathrm{hpa}}+\theta_{\mathrm{rpd}})j)$ since $j$ commutes with scalars and $j^2 = 1$. So the map is a homomorphism from $(\mathbb{R},+)$. It is injective, because $\cosh\theta_{\mathrm{hpa}} \geq 1$ determines $|\theta_{\mathrm{hpa}}|$ and $\sinh\theta_{\mathrm{hpa}}$ determines the sign, and it is surjective onto $\mathcal{H}^+$, since for $u = q + jq' \in \mathcal{H}^+$ the number $\theta_{\mathrm{hpa}} = \operatorname{arsinh} q'$ is real and then $q = \cosh\theta_{\mathrm{hpa}} \geq 1$ is forced by $q^2 - q'^2 = 1$ and $q > 0$. The component $\mathcal{H}^-$ is the negative of $\mathcal{H}^+$, and $\operatorname{Re} u$ cannot vanish on $\mathcal{H}$ because that would give $-q'^2 = 1$.
+**Proof.** The split complex exponential $\exp(B) = \sum B^n/n!$ converges for every $B$, and $\exp(\theta_{\mathrm{hpa}} j) = \cosh\theta_{\mathrm{hpa}} + j\sinh\theta_{\mathrm{hpa}}$ because $j^{2m} = 1$ and $j^{2m+1} = j$; this follows also from the addition formula. Then $\langle \exp(\theta_{\mathrm{hpa}} j)\rangle_{*} = \cosh^2\theta_{\mathrm{hpa}} - \sinh^2\theta_{\mathrm{hpa}} = 1$, so the image lies in $\mathcal{H}$, and $\exp(\theta_{\mathrm{hpa}} j)\exp(\theta_{\mathrm{rpd}} j) = \exp((\theta_{\mathrm{hpa}}+\theta_{\mathrm{rpd}})j)$ since $j$ commutes with scalars and $j^2 = 1$. So the map is a homomorphism from $(\mathbb{R},+)$. It is injective, because $\cosh\theta_{\mathrm{hpa}} \geq 1$ determines $|\theta_{\mathrm{hpa}}|$ and $\sinh\theta_{\mathrm{hpa}}$ determines the sign, and it is surjective onto $\mathcal{H}^+$, since for $u = q + jq' \in \mathcal{H}^+$ the number $\theta_{\mathrm{hpa}} = \operatorname{arsinh} q'$ is real and then $q = \cosh\theta_{\mathrm{hpa}} \geq 1$ is forced by $q^2 - q'{}^2 = 1$ and $q > 0$. The component $\mathcal{H}^-$ is the negative of $\mathcal{H}^+$, and $\operatorname{Re} u$ cannot vanish on $\mathcal{H}$ because that would give $-q'{}^2 = 1$.
 
 The parameter $\theta_{\mathrm{hpa}}$ is the **hyperbolic angle** of the unit $u$; it is also called the rapidity. Since the branch sign $\epsilon$ is carried separately, $\theta_{\mathrm{hpa}}$ is a coordinate on all of $\mathcal{H}$, one copy of $\mathbb{R}$ for each branch; and it is defined modulo nothing at all, because the exponential is injective, in contrast with $\exp(i\theta)$, whose kernel is $2\pi\mathbb{Z}$. Half of the difference between the two theories is already visible here.
 
@@ -158,12 +158,12 @@ is a group isomorphism and $R_u$ has determinant $1$.
 **Proposition (matrix form).** In the basis $\{1, j\}$, write $u = q + jq'$. Then
 
 $$
-R_u \ \longleftrightarrow \ M_u = \begin{pmatrix} q & q' \\ q' & q \end{pmatrix}, \qquad \det M_u = q^2 - q'^2 = \langle u\rangle_{*}.
+R_u \ \longleftrightarrow \ M_u = \begin{pmatrix} q & q' \\ q' & q \end{pmatrix}, \qquad \det M_u = q^2 - q'{}^2 = \langle u\rangle_{*}.
 $$
 
-**Proof.** $R_u(1) = u = q\cdot 1 + q'\cdot j$ and $R_u(j) = uj = (q+jq')j = q' + qj$, which are the two columns. The determinant is $q^2 - q'^2$.
+**Proof.** $R_u(1) = u = q\cdot 1 + q'\cdot j$ and $R_u(j) = uj = (q+jq')j = q' + qj$, which are the two columns. The determinant is $q^2 - q'{}^2$.
 
-So the matrices of the form $\begin{pmatrix} q & q'\\ q' & q\end{pmatrix}$ constitute a two-dimensional family, and the rotation group is cut out inside it by the single equation $\langle u\rangle_{*} = 1$: the group $SO(1,1) = \{M_u : \langle u\rangle_{*} = 1\}$ is the hyperbola $q^2 - q'^2 = 1$, a curve with two branches, and $SO^+(1,1)$ is the branch $q > 0$, which the angle parametrises.
+So the matrices of the form $\begin{pmatrix} q & q'\\ q' & q\end{pmatrix}$ constitute a two-dimensional family, and the rotation group is cut out inside it by the single equation $\langle u\rangle_{*} = 1$: the group $SO(1,1) = \{M_u : \langle u\rangle_{*} = 1\}$ is the hyperbola $q^2 - q'{}^2 = 1$, a curve with two branches, and $SO^+(1,1)$ is the branch $q > 0$, which the angle parametrises.
 
 ### The Hyperbolic Angle
 
@@ -442,7 +442,7 @@ So the identity component of the isometry group acts on the four sectors trivial
 
 ### The Hyperbola and Its Asymptotes
 
-The norm-one hyperbola $q^2 - q'^2 = 1$ has the two null lines as asymptotes; it meets each sector with $\langle Q\rangle_{*} > 0$ in one branch, and the hyperbola $\langle Q\rangle_{*} = -1$ meets each sector with $\langle Q\rangle_{*} < 0$ in one branch. The identity component of the rotation group acts simply transitively on each branch, and the whole rotation group $SO(1,1)$ acts transitively on each *pair* of branches of a given hyperbola. The orbit of a point under the rotation group is the hyperbola through it, and the two null lines, with the origin removed, are the two non-trivial orbits of the cone: each line is preserved setwise by every rotation and fixed pointwise by none except the identity.
+The norm-one hyperbola $q^2 - q'{}^2 = 1$ has the two null lines as asymptotes; it meets each sector with $\langle Q\rangle_{*} > 0$ in one branch, and the hyperbola $\langle Q\rangle_{*} = -1$ meets each sector with $\langle Q\rangle_{*} < 0$ in one branch. The identity component of the rotation group acts simply transitively on each branch, and the whole rotation group $SO(1,1)$ acts transitively on each *pair* of branches of a given hyperbola. The orbit of a point under the rotation group is the hyperbola through it, and the two null lines, with the origin removed, are the two non-trivial orbits of the cone: each line is preserved setwise by every rotation and fixed pointwise by none except the identity.
 
 ## Comparison with the Complex Case
 
@@ -450,7 +450,7 @@ The two theories are the positive-definite and indefinite cases of the same cons
 
 | Property | Complex | Split complex |
 |---|---|---|
-| Norm | $q^2 + q'^2$, inertia $(2,0)$ | $q^2 - q'^2$, inertia $(1,1)$ |
+| Norm | $q^2 + q'{}^2$, inertia $(2,0)$ | $q^2 - q'{}^2$, inertia $(1,1)$ |
 | Null cone | $\{0\}$, no null directions | two null lines, the zero divisors |
 | Norm-one group | circle $\mathrm{U}(1)$, compact, connected | hyperbola $\mathcal{H}$, non-compact, two branches |
 | Rotation group | $SO(2) \cong \mathrm{U}(1) \cong \mathbb{R}/2\pi\mathbb{Z}$ | $SO^+(1,1) \cong \mathbb{R}$, $SO(1,1) \cong \mathbb{R} \times \mathbb{Z}/2$ |
@@ -467,7 +467,7 @@ The complex rotation group is compact and the angle is periodic, so a rotation i
 
 ## Summary
 
-The split plane carries the indefinite **norm** $\langle q+jq'\rangle_{*} = q^2 - q'^2$ of inertia $(1,1)$ and its **polar form** $g(Q,B) = qb - q'b'$. The **isometries** of $\langle\cdot,\cdot\rangle_{*}$ are exactly the maps $Q \mapsto uQ$ and $Q \mapsto u\bar Q$ with $\langle u\rangle_{*} = 1$; the first family is the rotation subgroup with determinant $1$ and the second the reflection coset with determinant $-1$. The **group of invertibles** ${\mathbb{C}_{\mathrm{spl}}}^\times$ is the complement of the null cone, with four components and polar decomposition $Q = \rho u$, $\rho > 0$, $\langle u\rangle_{*} = \pm 1$.
+The split plane carries the indefinite **norm** $\langle q+jq'\rangle_{*} = q^2 - q'{}^2$ of inertia $(1,1)$ and its **polar form** $g(Q,B) = qb - q'b'$. The **isometries** of $\langle\cdot,\cdot\rangle_{*}$ are exactly the maps $Q \mapsto uQ$ and $Q \mapsto u\bar Q$ with $\langle u\rangle_{*} = 1$; the first family is the rotation subgroup with determinant $1$ and the second the reflection coset with determinant $-1$. The **group of invertibles** ${\mathbb{C}_{\mathrm{spl}}}^\times$ is the complement of the null cone, with four components and polar decomposition $Q = \rho u$, $\rho > 0$, $\langle u\rangle_{*} = \pm 1$.
 
 The **unit hyperbola** $\mathcal{H} = \{\langle Q\rangle_{*} = 1\}$ has two branches, parametrised by the **hyperbolic angle** through $u = \exp(\theta_{\mathrm{hpa}} j) = \cosh\theta_{\mathrm{hpa}} + j\sinh\theta_{\mathrm{hpa}}$, and $\mathcal{H}^+ \cong \mathbb{R}$ via the additive angle. The **hyperbolic rotation** $R_u(Q) = uQ$ is an isometry, realises $\mathcal{H}$ as $SO(1,1)$ through $u \mapsto R_u$, and in the idempotent coordinates is the diagonal map $(Q_+, Q_-) \mapsto (\exp(\theta_{\mathrm{hpa}})Q_+, \exp(-\theta_{\mathrm{hpa}})Q_-)$, a squeeze that preserves the product $Q_+Q_-$ and hence the form. The composition law is the addition of angles, $SO^+(1,1) \cong (\mathbb{R},+)$, and the group law transported to the interval $(-1,1)$ by $s = \tanh\theta_{\mathrm{hpa}}$ is $s \star t = (s+t)/(1+st)$. The Lie algebra is $\mathrm{SO}(1,1) = \mathbb{R}J$ with $J^2 = I$, and the exponential is a bijection onto the identity component.
 
@@ -480,7 +480,7 @@ The **reflection** $S_u(Q) = u\bar Q$ has determinant $-1$, is an involution, fi
 | $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$ | Split complex numbers |
 | $Q = q + jq'$ | General split complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$ |
 | $\bar Q = q - jq'$ | Split complex conjugate |
-| $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$ | Norm, inertia $(1,1)$ |
+| $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'{}^2$ | Norm, inertia $(1,1)$ |
 | $g(Q,B) = \operatorname{Re}(\bar Q B) = qb - q'b'$ | Polar bilinear form of $\langle\cdot,\cdot\rangle_{*}$ |
 | $G = \operatorname{diag}(1,-1)$ | Matrix of $g$ in the basis $\{1,j\}$ |
 | $\{\langle Q\rangle_{*} = 0\}$ | Null cone, the zero-divisor set |

@@ -4,8 +4,7 @@
 ## Introduction
 
 The converse $R^{-1}$ of a relation is the adjoint of $R$ in two distinct senses, and this article
-separates them and proves that they agree. In the **residuation** of composition, the operator $S
-\mapsto R ; S$ has the right adjoint $T \mapsto R \backslash T$, and the right adjoint is computed by
+separates them and proves that they agree. In the **residuation** of composition, the operator $S \mapsto R ; S$ has the right adjoint $T \mapsto R \backslash T$, and the right adjoint is computed by
 the converse, $R \backslash T = \overline{R^{-1} ; \overline{T}}$; the same holds on the other side,
 $T / R = \overline{\overline{T} ; R^{-1}}$. In the **operator layer** of the preceding article, the
 conjugation by the converse sends the left-composition with $R$ to the right-composition with
@@ -20,15 +19,13 @@ no norm and no topology; the Hilbert-space adjoint is Part II and is not used.
 
 ## The Residuation by the Converse
 
-**Definition.** For relations $R \subseteq X \times Y$, $S \subseteq Y \times Z$ and $T \subseteq X
-\times Z$, the two composition operators are
+**Definition.** For relations $R \subseteq X \times Y$, $S \subseteq Y \times Z$ and $T \subseteq X \times Z$, the two composition operators are
 
 $$
 L_R(S) = R ; S, \qquad R_R(S) = S ; R ,
 $$
 
-the **left** and the **right** composition with $R$, where $R_R$ is defined for relations $S \subseteq
-W \times X$.
+the **left** and the **right** composition with $R$, where $R_R$ is defined for relations $S \subseteq W \times X$.
 
 **Theorem.** The right adjoints of the two composition operators are computed by the converse:
 
@@ -69,8 +66,7 @@ $$
 \boxed{\;\varphi(L_R) = R_{R^{-1}}, \qquad \varphi(R_R) = L_{R^{-1}}\;} .
 $$
 
-**Proof.** For the first, $\varphi(L_R)(S) = (L_R(S^{-1}))^{-1} = (R ; S^{-1})^{-1} = (S^{-1})^{-1} ;
-R^{-1} = S ; R^{-1} = R_{R^{-1}}(S)$, using the law of the converse for a composite. The second is the
+**Proof.** For the first, $\varphi(L_R)(S) = (L_R(S^{-1}))^{-1} = (R ; S^{-1})^{-1} = (S^{-1})^{-1} ; R^{-1} = S ; R^{-1} = R_{R^{-1}}(S)$, using the law of the converse for a composite. The second is the
 same computation with the roles of the sides exchanged.
 
 **Corollary.** The involution is an automorphism of the composition of operators,
@@ -92,13 +88,10 @@ $$
 
 **Proof.** The adjunction-reversal of *Involutions of the Operator Layer* applied to $L_R \dashv K_R$
 gives $K_R^{\perp} \dashv L_R^{\perp}$, that is, $\varphi(K_R) \dashv \varphi(L_R)$. For the explicit
-formula, $K_R(T) = \overline{R^{-1};\overline{T}}$, so $\varphi(K_R)(T) = (K_R(T^{-1}))^{-1} =
-\overline{\overline{(T^{-1})} ; R} = \overline{\overline{T};R}$, using $(\overline{R^{-1};\overline{T^{-1}}})^{-1}
-= \overline{(\overline{T^{-1}})^{-1}; R}$; and $\overline{\overline{T};R} = T / R^{-1}$ by the definition
+formula, $K_R(T) = \overline{R^{-1};\overline{T}}$, so $\varphi(K_R)(T) = (K_R(T^{-1}))^{-1} = \overline{\overline{(T^{-1})} ; R} = \overline{\overline{T};R}$, using $(\overline{R^{-1};\overline{T^{-1}}})^{-1} = \overline{(\overline{T^{-1}})^{-1}; R}$; and $\overline{\overline{T};R} = T / R^{-1}$ by the definition
 of the left residual, since $(R^{-1})^{-1} = R$.
 
-**Example.** Let $R$ be a function, so that $R^{-1}$ is its inverse relation. Then $R \backslash T =
-R^{-1} ; T$ (no complement is needed, because $R$ is total and single-valued), and the two operators
+**Example.** Let $R$ be a function, so that $R^{-1}$ is its inverse relation. Then $R \backslash T = R^{-1} ; T$ (no complement is needed, because $R$ is total and single-valued), and the two operators
 $L_R$ and $L_{R^{-1}}$ are mutually inverse on the level of the induced maps; the involution
 $\varphi$ fixes the pair. For a general relation the complement remains and the adjoint is the residual
 of the theorem.

@@ -47,7 +47,7 @@ $$
 \bigl(i\partial/\partial r'_t+\vec\nabla_\Phi\bigr)F-2\pi\nu_m\,i\,\overline{F}\,\vec e_z=0,
 $$
 
-with $\vec\nabla_\Phi=\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial R_\imath$ the spatial gradient, is a different operator: the spatial gradient acts from the left, the mass from the right through $\vec e_z$, and the mass term carries the algebra's complex conjugation $\overline{\cdot}$ — a bar over the field, the coefficient conjugation, and it is not the Dirac adjoint $\bar{\tilde{Ξ}}$ of the sections below. The two are related by the explicit dictionary with conjugation in the mass term, in the parent article's section of that name, but they are not the same equation, and their mass terms are of different kinds. This article quantizes the one-sided pair; the two-sided equation is recorded only to keep the two apart.
+with $\vec\nabla_\Phi=\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial R_{\imath}$ the spatial gradient, is a different operator: the spatial gradient acts from the left, the mass from the right through $\vec e_z$, and the mass term carries the algebra's complex conjugation $\overline{\cdot}$ — a bar over the field, the coefficient conjugation, and it is not the Dirac adjoint $\bar{\tilde{Ξ}}$ of the sections below. The two are related by the explicit dictionary with conjugation in the mass term, in the parent article's section of that name, but they are not the same equation, and their mass terms are of different kinds. This article quantizes the one-sided pair; the two-sided equation is recorded only to keep the two apart.
 
 The solutions article works on the elements themselves. An element of $\mathbb{B}$ has four complex coefficients, exactly the four components of the Dirac spinor, so the element is the carrier of the field and no separate module is introduced; the two chiral halves of the pair are the two parts $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$ of that one element. There the pair is the two equations
 
@@ -70,7 +70,7 @@ $$
 \qquad \varepsilon=(1,-1,-1,-1),
 $$
 
-with $\Delta_\Phi:=\sum_{\imath\in\{x,y,z\}}\partial^2/\partial R_\imath^2$ the spatial Laplacian. On the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$, where $\Delta_\Phi=\sum_{\imath\in\{x,y,z\}}\partial^2/\partial r_\imath^2$ is the same operator written in the material parameters.
+with $\Delta_\Phi:=\sum_{\imath\in\{x,y,z\}}\partial^2/\partial R_{\imath}^2$ the spatial Laplacian. On the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$, where $\Delta_\Phi=\sum_{\imath\in\{x,y,z\}}\partial^2/\partial r_{\imath}^2$ is the same operator written in the material parameters.
 
 The chiral pair is two first-order equations on two elements,
 
@@ -85,19 +85,19 @@ and composing each line with the conjugate of the other gives $\Box_\Phi$ on its
 Read on one element — the carrier of the field, as the preceding paragraph fixes — the massless action is written out with the side in position:
 
 $$
-\tilde X\longmapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial\tilde X}{\partial R_\imath}\vec e_y ,
+\tilde X\longmapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial\tilde X}{\partial R_{\imath}}\vec e_y ,
 $$
 
-with $Q_\imath$ running over the three spatial coordinates. The sides are the whole of the content. The time term carries $e_t$ on the left, and $e_t$ is the unit of the algebra, so that term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_\imath$ on the left and $\vec e_y$ on the right. The operator is therefore **two-sided**, and the two elements are the ones just named. Its square is the d'Alembertian: the cross terms cancel because left and right multiplications commute and $\vec e_x\vec e_y=-\vec e_y\vec e_x$, the time term contributes $-\partial^2/\partial {r'_t}^2$ because $\vec e_x^2=-e_t$, and the spatial terms contribute $+\Delta_\Phi$ because $\vec e_y^2=-e_t$ and $\vec e_\imath\vec e_l+\vec e_l\vec e_\imath=-2\delta_{\imath l}e_t$. Verified on plane-wave symbols at $4\times10^{-15}$.
+with $Q_{\imath}$ running over the three spatial coordinates. The sides are the whole of the content. The time term carries $e_t$ on the left, and $e_t$ is the unit of the algebra, so that term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_{\imath}$ on the left and $\vec e_y$ on the right. The operator is therefore **two-sided**, and the two elements are the ones just named. Its square is the d'Alembertian: the cross terms cancel because left and right multiplications commute and $\vec e_x\vec e_y=-\vec e_y\vec e_x$, the time term contributes $-\partial^2/\partial {r'_t}^2$ because $\vec e_x^2=-e_t$, and the spatial terms contribute $+\Delta_\Phi$ because $\vec e_y^2=-e_t$ and $\vec e_{\imath}\vec e_l+\vec e_l\vec e_{\imath}=-2\delta_{\imath l}e_t$. Verified on plane-wave symbols at $4\times10^{-15}$.
 
 On a plane wave the same action is the momentum form
 
 $$
-\tilde X\longmapsto i\frac{E_{\vec p}}{c}\,\tilde X\vec e_x-i\sum_{\imath\in\{x,y,z\}}  p_\imath\,\vec e_\imath\tilde X\vec e_y,
+\tilde X\longmapsto i\frac{E_{\vec p}}{c}\,\tilde X\vec e_x-i\sum_{\imath\in\{x,y,z\}}  p_{\imath}\,\vec e_{\imath}\tilde X\vec e_y,
 \qquad\text{whose square is } -N ,
 $$
 
-with $p_0=E_{\vec p}/c$ and $p_\imath$ the physical momentum components, and $N=\langle\tilde P_\Phi\rangle_{\natural}=-p_0^{2}+\lvert\vec p\rvert^{2}$ the norm of the four-momentum, so that $N=-m^{2}\,c^{2}$ on the mass shell. The lower index of $p_{\imath}$ is a label and not a metric contraction: the signs are carried by $\varepsilon$. That sign vector is what the plane wave produces. On $\exp(-i\theta_{\mathrm{pwp}})$ the time derivative gives $-\frac{2\pi iE_{\vec p}}{h\,c}$ and the spatial derivatives $+\frac{2\pi ip_\imath}{h}$, so the time term contributes $i\frac{E_{\vec p}}{c}\tilde X\vec e_x$ and the spatial terms $-ip_\imath\vec e_\imath\tilde X\vec e_y$. On the material sector the derivative action and the momentum action square to $\Box_\Phi$ and to $-N$ respectively, the second equal to $-m^{2}c^{2}$ on the mass shell.
+with $p_0=E_{\vec p}/c$ and $p_{\imath}$ the physical momentum components, and $N=\langle\tilde P_\Phi\rangle_{\natural}=-p_0^{2}+\lvert\vec p\rvert^{2}$ the norm of the four-momentum, so that $N=-m^{2}\,c^{2}$ on the mass shell. The lower index of $p_{\imath}$ is a label and not a metric contraction: the signs are carried by $\varepsilon$. That sign vector is what the plane wave produces. On $\exp(-i\theta_{\mathrm{pwp}})$ the time derivative gives $-\frac{2\pi iE_{\vec p}}{h\,c}$ and the spatial derivatives $+\frac{2\pi ip_{\imath}}{h}$, so the time term contributes $i\frac{E_{\vec p}}{c}\tilde X\vec e_x$ and the spatial terms $-ip_{\imath}\vec e_{\imath}\tilde X\vec e_y$. On the material sector the derivative action and the momentum action square to $\Box_\Phi$ and to $-N$ respectively, the second equal to $-m^{2}c^{2}$ on the mass shell.
 
 Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
@@ -108,7 +108,7 @@ The classical field theory is defined by the Lagrangian density
 $$
 \mathcal{L}
 =i\,\mathrm{Sc}\Big(\tilde{Ξ}^*\frac{\partial\tilde{Ξ}}{\partial r'_t}\Big)
-+i\sum_{\imath\in\{x,y,z\}}\mathrm{Sc}\Big(\tilde{Ξ}^*\vec e_\imath\frac{\partial\tilde{Ξ}}{\partial R_\imath}\vec e_z\Big)
++i\sum_{\imath\in\{x,y,z\}}\mathrm{Sc}\Big(\tilde{Ξ}^*\vec e_{\imath}\frac{\partial\tilde{Ξ}}{\partial R_{\imath}}\vec e_z\Big)
 -m\,\mathrm{Sc}\big(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x\big),
 $$
 
@@ -118,14 +118,14 @@ $$
 \bar{\tilde{Ξ}}X:=\mathrm{Sc}\big(\tilde{Ξ}^*iX\vec e_x\big),
 $$
 
-the Hermitian conjugate followed by right multiplication by the timelike element $i\vec e_x$, the element that the time term of the action carries. The scalar part is taken of the product, because a bilinear of an element-valued field is a number only through its scalar part. The three pieces are visible: no unit at all on the time derivative, the pair $\vec e_\imath$ on the left and $\vec e_z$ on the right on each spatial derivative, and the right multiplication by $i\vec e_x$ on the field itself. The $\vec e_z$ is $-\vec e_y\vec e_x$, the operator's right element times the adjoint's right factor; that minus sign turns the operator's $-i$ into the $+i$ displayed. Variation with respect to the adjoint $\bar{\tilde{Ξ}}$ returns the two lines, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$; variation with respect to $\tilde{Ξ}$ returns the conjugate equation, in which the operator acts on the adjoint, and it is the conjugate of the first.
+the Hermitian conjugate followed by right multiplication by the timelike element $i\vec e_x$, the element that the time term of the action carries. The scalar part is taken of the product, because a bilinear of an element-valued field is a number only through its scalar part. The three pieces are visible: no unit at all on the time derivative, the pair $\vec e_{\imath}$ on the left and $\vec e_z$ on the right on each spatial derivative, and the right multiplication by $i\vec e_x$ on the field itself. The $\vec e_z$ is $-\vec e_y\vec e_x$, the operator's right element times the adjoint's right factor; that minus sign turns the operator's $-i$ into the $+i$ displayed. Variation with respect to the adjoint $\bar{\tilde{Ξ}}$ returns the two lines, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$; variation with respect to $\tilde{Ξ}$ returns the conjugate equation, in which the operator acts on the adjoint, and it is the conjugate of the first.
 
 The Lagrangian is **real up to a four-divergence**. The mass term is real outright, because $\mathrm{Sc}(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x)$ is real for every element — verified at $4.4\times10^{-16}$ over fifty random elements — and $m$ is real. Each derivative term differs from its conjugate by a total derivative, both identities holding exactly, and the sum of the two differences is
 
 $$
 \mathcal{L}-\bar{\mathcal{L}}
 =\frac{\partial}{\partial r'_t}\big(i\,\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ})\big)
-+i\sum_{\imath\in\{x,y,z\}}\frac{\partial}{\partial R_\imath}\mathrm{Sc}\big(\tilde{Ξ}^*\vec e_\imath\tilde{Ξ}\vec e_z\big),
++i\sum_{\imath\in\{x,y,z\}}\frac{\partial}{\partial R_{\imath}}\mathrm{Sc}\big(\tilde{Ξ}^*\vec e_{\imath}\tilde{Ξ}\vec e_z\big),
 $$
 
 verified at $3.6\times10^{-15}$ over thirty random fields with independent derivative values. This is the Lagrangian of a free Dirac field, with the two lines in place of the matrix contraction.
@@ -238,9 +238,9 @@ $$
 
 $$
 \sum_{r=1}^{2}\tilde{Ξ}_{+}^{(r)}\big\langle\tilde{Ξ}_{+}^{(r)},\tilde{Ξ}\big\rangle_{\mathrm D}
-=i\frac{E_{\vec p}}{c}\tilde{Ξ}\vec e_x-i\sum_{\imath\in\{x,y,z\}} p_\imath\vec e_\imath\tilde{Ξ}\vec e_y+mc\,\tilde{Ξ},\qquad
+=i\frac{E_{\vec p}}{c}\tilde{Ξ}\vec e_x-i\sum_{\imath\in\{x,y,z\}} p_{\imath}\vec e_{\imath}\tilde{Ξ}\vec e_y+mc\,\tilde{Ξ},\qquad
 \sum_{r=1}^{2}\tilde{Ξ}_{-}^{(r)}\big\langle\tilde{Ξ}_{-}^{(r)},\tilde{Ξ}\big\rangle_{\mathrm D}
-=i\frac{E_{\vec p}}{c}\tilde{Ξ}\vec e_x-i\sum_{\imath\in\{x,y,z\}} p_\imath\vec e_\imath\tilde{Ξ}\vec e_y-mc\,\tilde{Ξ}
+=i\frac{E_{\vec p}}{c}\tilde{Ξ}\vec e_x-i\sum_{\imath\in\{x,y,z\}} p_{\imath}\vec e_{\imath}\tilde{Ξ}\vec e_y-mc\,\tilde{Ξ}
 \qquad\text{for every }\tilde{Ξ}\in\mathbb{B}.
 $$
 
@@ -270,7 +270,7 @@ $$
 \tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2},
 $$
 
-and the polarization equation, $i\frac{E_{\vec p}}{c}\tilde{Ξ}_{0}\vec e_x-i\sum_{\imath\in\{x,y,z\}} p_\imath\vec e_\imath\tilde{Ξ}_{0}\vec e_y-mc\,\tilde{Ξ}_{0}=0$, is the algebraic form of the momentum-space equation. Promoting the coefficients to operators is thus a transcription of the standard mode expansion onto the parent article's biquaternion plane waves; it is not, by itself, a derivation of the expansion from the algebra.
+and the polarization equation, $i\frac{E_{\vec p}}{c}\tilde{Ξ}_{0}\vec e_x-i\sum_{\imath\in\{x,y,z\}} p_{\imath}\vec e_{\imath}\tilde{Ξ}_{0}\vec e_y-mc\,\tilde{Ξ}_{0}=0$, is the algebraic form of the momentum-space equation. Promoting the coefficients to operators is thus a transcription of the standard mode expansion onto the parent article's biquaternion plane waves; it is not, by itself, a derivation of the expansion from the algebra.
 
 ## Anticommutators of the Mode Operators
 
@@ -310,9 +310,9 @@ The two phases are **opposite**: the positive-frequency term carries $e^{+i\thet
 
 $$
 \sum_r\tilde{Ξ}_{+}^{(r)}\,\mathrm{Sc}\big(\tilde{Ξ}_{+}^{(r)*}\tilde{Ξ}\big)
-=i\frac{E_{\vec p}}{c}\big(\tilde{Ξ}i\vec e_x\big)\vec e_x-i\sum_{\imath\in\{x,y,z\}} p_\imath\vec e_\imath\big(\tilde{Ξ}i\vec e_x\big)\vec e_y+mc\,\big(\tilde{Ξ}i\vec e_x\big),\qquad
+=i\frac{E_{\vec p}}{c}\big(\tilde{Ξ}i\vec e_x\big)\vec e_x-i\sum_{\imath\in\{x,y,z\}} p_{\imath}\vec e_{\imath}\big(\tilde{Ξ}i\vec e_x\big)\vec e_y+mc\,\big(\tilde{Ξ}i\vec e_x\big),\qquad
 \sum_r\tilde{Ξ}_{-}^{(r)}\,\mathrm{Sc}\big(\tilde{Ξ}_{-}^{(r)*}\tilde{Ξ}\big)
-=i\frac{E_{\vec p}}{c}\big(\tilde{Ξ}i\vec e_x\big)\vec e_x-i\sum_{\imath\in\{x,y,z\}} p_\imath\vec e_\imath\big(\tilde{Ξ}i\vec e_x\big)\vec e_y-mc\,\big(\tilde{Ξ}i\vec e_x\big).
+=i\frac{E_{\vec p}}{c}\big(\tilde{Ξ}i\vec e_x\big)\vec e_x-i\sum_{\imath\in\{x,y,z\}} p_{\imath}\vec e_{\imath}\big(\tilde{Ξ}i\vec e_x\big)\vec e_y-mc\,\big(\tilde{Ξ}i\vec e_x\big).
 
 $$
 
@@ -323,10 +323,10 @@ Multiplying by the two phases and adding, with $\theta_{\mathrm{pwp}}=\vec p\cdo
 $$
 \sum_r\Big[\tilde{Ξ}_{+}^{(r)}\mathrm{Sc}\big(\tilde{Ξ}_{+}^{(r)*}\tilde{Ξ}\big)e^{+i\theta_{\mathrm{pwp}}}
 +\tilde{Ξ}_{-}^{(r)}\mathrm{Sc}\big(\tilde{Ξ}_{-}^{(r)*}\tilde{Ξ}\big)e^{-i\theta_{\mathrm{pwp}}}\Big]
-=2\cos\theta_{\mathrm{pwp}}\,\Big[i\frac{E_{\vec p}}{c}\big(\tilde{Ξ}i\vec e_x\big)\vec e_x-i\sum_{\imath\in\{x,y,z\}} p_\imath\vec e_\imath\big(\tilde{Ξ}i\vec e_x\big)\vec e_y\Big]+2im\sin\theta_{\mathrm{pwp}}\,\big(\tilde{Ξ}\,i\vec e_x\big),
+=2\cos\theta_{\mathrm{pwp}}\,\Big[i\frac{E_{\vec p}}{c}\big(\tilde{Ξ}i\vec e_x\big)\vec e_x-i\sum_{\imath\in\{x,y,z\}} p_{\imath}\vec e_{\imath}\big(\tilde{Ξ}i\vec e_x\big)\vec e_y\Big]+2im\sin\theta_{\mathrm{pwp}}\,\big(\tilde{Ξ}\,i\vec e_x\big),
 $$
 
-the four terms grouping as $e^{+i\theta_{\mathrm{pwp}}}$ times the action with $+mc$ and $e^{-i\theta_{\mathrm{pwp}}}$ times the action with $-mc$. Each piece now has a definite parity in $\vec p$: the time part of the action contributes $i\frac{E_{\vec p}}{c}(\tilde{Ξ} i\vec e_x)\vec e_x=\frac{E_{\vec p}}{c}\tilde{Ξ}$, because $i\vec e_x\cdot i\vec e_x=i^2\vec e_x^2=e_t$, and it is even, since $E_{\vec p}$ and the units are; the spatial part $-i\sum_{\imath\in\{x,y,z\}} p_\imath\vec e_\imath(\tilde{Ξ} i\vec e_x)\vec e_y$ and the mass term $2im\sin\theta_{\mathrm{pwp}}(\tilde{Ξ} i\vec e_x)$ are odd. The even part is $2E_{\vec p}\cos\theta_{\mathrm{pwp}}$ times the identity and, after division by $2E_{\vec p}$, integrates to $\delta^{(3)}(\vec r_{12})$; the odd parts vanish under symmetric integration. Hence the equal-time relation holds. The cancellation of the odd terms is exactly what the opposite phases of the two branches accomplish; had both phases been equal, the cross terms would have survived and the canonical relation would have failed.
+the four terms grouping as $e^{+i\theta_{\mathrm{pwp}}}$ times the action with $+mc$ and $e^{-i\theta_{\mathrm{pwp}}}$ times the action with $-mc$. Each piece now has a definite parity in $\vec p$: the time part of the action contributes $i\frac{E_{\vec p}}{c}(\tilde{Ξ} i\vec e_x)\vec e_x=\frac{E_{\vec p}}{c}\tilde{Ξ}$, because $i\vec e_x\cdot i\vec e_x=i^2\vec e_x^2=e_t$, and it is even, since $E_{\vec p}$ and the units are; the spatial part $-i\sum_{\imath\in\{x,y,z\}} p_{\imath}\vec e_{\imath}(\tilde{Ξ} i\vec e_x)\vec e_y$ and the mass term $2im\sin\theta_{\mathrm{pwp}}(\tilde{Ξ} i\vec e_x)$ are odd. The even part is $2E_{\vec p}\cos\theta_{\mathrm{pwp}}$ times the identity and, after division by $2E_{\vec p}$, integrates to $\delta^{(3)}(\vec r_{12})$; the odd parts vanish under symmetric integration. Hence the equal-time relation holds. The cancellation of the odd terms is exactly what the opposite phases of the two branches accomplish; had both phases been equal, the cross terms would have survived and the canonical relation would have failed.
 
 ### The Fock Space and Pauli Exclusion
 
@@ -356,13 +356,13 @@ which is the Pauli exclusion principle as an algebraic identity: the square of a
 The conserved energy of the free Dirac field is
 
 $$
-H=\int d^3X\;\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm{fop}}^*\Big(-i\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial\tilde{Ξ}_{\mathrm{fop}}}{\partial R_\imath}\vec e_z+2\pi\nu_mi\,\tilde{Ξ}_{\mathrm{fop}}\vec e_x\Big)\Big)
-=\int d^3X\;\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm{fop}}^*i\Big(\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial\tilde{Ξ}_{\mathrm{fop}}}{\partial R_\imath}\vec e_y+2\pi\nu_m\tilde{Ξ}_{\mathrm{fop}}\Big)\vec e_x\Big).
+H=\int d^3X\;\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm{fop}}^*\Big(-i\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial\tilde{Ξ}_{\mathrm{fop}}}{\partial R_{\imath}}\vec e_z+2\pi\nu_mi\,\tilde{Ξ}_{\mathrm{fop}}\vec e_x\Big)\Big)
+=\int d^3X\;\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm{fop}}^*i\Big(\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial\tilde{Ξ}_{\mathrm{fop}}}{\partial R_{\imath}}\vec e_y+2\pi\nu_m\tilde{Ξ}_{\mathrm{fop}}\Big)\vec e_x\Big).
 $$
 
 The integrand is the $00$ component of the canonical energy–momentum tensor, equivalently the Legendre transform $\pi\,\partial \tilde{Ξ}/\partial r'_t-\mathcal{L}$ of the Lagrangian fixed in the section *The Lagrangian*: the two time-derivative terms cancel, and what is left is the expression above with the sign reversed, verified at $3.6\times10^{-15}$.
 
-The two forms are the same number. In the first the spatial derivative is multiplied by $\vec e_\imath$ on the left and $\vec e_z$ on the right, and the mass term is the right multiplication by $i\vec e_x$; in the second the right multiplication by $i\vec e_x$ has been absorbed into the adjoint, where it composes with the $\vec e_y$ of the spatial term, and $\vec e_y\vec e_x=-\vec e_z$ returns the same pair. Both mass terms are real, which is the reality checked in the Lagrangian section. Substituting the mode expansion and using the parent article's normalizations and orthogonality gives the standard result
+The two forms are the same number. In the first the spatial derivative is multiplied by $\vec e_{\imath}$ on the left and $\vec e_z$ on the right, and the mass term is the right multiplication by $i\vec e_x$; in the second the right multiplication by $i\vec e_x$ has been absorbed into the adjoint, where it composes with the $\vec e_y$ of the spatial term, and $\vec e_y\vec e_x=-\vec e_z$ returns the same pair. Both mass terms are real, which is the reality checked in the Lagrangian section. Substituting the mode expansion and using the parent article's normalizations and orthogonality gives the standard result
 
 $$
 H=\sum_{r}\int\!\frac{d^3p}{h^{3}}\,E_{\vec p}
@@ -541,19 +541,19 @@ The extension is a transcription of standard canonical quantization onto the par
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
-| $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial R_\imath$ | Biquaternionic gradient (Dirac operator) |
+| $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial R_{\imath}$ | Biquaternionic gradient (Dirac operator) |
 | $(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath}\varepsilon_{\imath} e_{\imath}\partial/\partial R_{\imath}$ | Its quaternion conjugate, $\varepsilon=(+1,-1,-1,-1)$ |
-| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, $\Delta_\Phi=\sum_{\imath\in\{x,y,z\}}\partial^2/\partial R_\imath^2$; in $r'_t$ it is $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, $\Delta_\Phi=\sum_{\imath\in\{x,y,z\}}\partial^2/\partial R_{\imath}^2$; in $r'_t$ it is $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ |
 | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | Classical Dirac field, an element of $\mathbb{B}$, in its two chiral halves |
 | $\tilde{Ξ}^{\flat}=-\tilde{Ξ}^*$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\bar{\tilde{Ξ}}X=\mathrm{Sc}(\tilde{Ξ}^*iX\vec e_x)$ | Dirac adjoint: Hermitian conjugate, then right multiplication by $i\vec e_x$ |
 | $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Sc}(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x)$ | Dirac pairing; equals $\bar{\tilde{Ξ}}\tilde{Ξ}$ |
-| $e_{\imath}$ | Basis unit: $e_t$ for ${\imath}=t$, $\vec e_\imath$ for $\mu=k$ |
-| $\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial\tilde X}{\partial R_\imath}\vec e_y$ | Massless action of the pair read on one element; its square is $\Box_\Phi$ |
-| $\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_{\imath\in\{x,y,z\}} p_\imath\vec e_\imath\tilde X\vec e_y$ | The same action on a plane wave; its square is $-N$ |
+| $e_{\imath}$ | Basis unit: $e_t$ for ${\imath}=t$, $\vec e_{\imath}$ for $\mu=k$ |
+| $\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial\tilde X}{\partial R_{\imath}}\vec e_y$ | Massless action of the pair read on one element; its square is $\Box_\Phi$ |
+| $\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_{\imath\in\{x,y,z\}} p_{\imath}\vec e_{\imath}\tilde X\vec e_y$ | The same action on a plane wave; its square is $-N$ |
 | $\mathcal{L}$ | Dirac Lagrangian density of the two lines |
 | $\pi=\partial\mathcal{L}/\partial(\partial\tilde{Ξ}/\partial r'_t)=i\tilde{Ξ}^*$ | Conjugate momentum; $\pi-i\tilde{Ξ}^*\approx0$ is second class |
 | $\tilde{Ξ}_{\pm}^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency element amplitudes |

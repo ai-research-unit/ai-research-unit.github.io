@@ -22,7 +22,7 @@ The article is organised as follows. The next section fixes the field, the pairi
 
 ## The Field, the Pairing and the Two Equations
 
-The conventions are those of the companion articles: the algebra and its units, the gradient $\tilde\nabla_\Phi$, read on the material chart $x_t=r'_t$ and $x_\imath=r_\imath$, the d'Alembertian $\Box_\Phi$, the two components of the pair, and the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. A bilinear of this article is a **pairing** and never an action. It is the scalar part of the product of the Hermitian conjugate of the field, one element built from the field, and the fixed element $i\vec e_x$,
+The conventions are those of the companion articles: the algebra and its units, the gradient $\tilde\nabla_\Phi$, read on the material chart $x_t=r'_t$ and $x_{\imath}=r_{\imath}$, the d'Alembertian $\Box_\Phi$, the two components of the pair, and the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. A bilinear of this article is a **pairing** and never an action. It is the scalar part of the product of the Hermitian conjugate of the field, one element built from the field, and the fixed element $i\vec e_x$,
 $$\mathrm{Sc}\bigl(\tilde{Ξ}^*iX\vec e_x\bigr),$$
 where $X$ is the element the bilinear reads. The fixed element $i\vec e_x$ is the only datum the pairing adds to the field, and it is the same one for every bilinear below. The **slot action** of the index $\mu$ is the action
 $$\tilde Q\longmapsto ie_{\imath}\tilde Q\vec e_{\mathrm{spt}(\imath)},$$
@@ -50,12 +50,12 @@ so the current is a density of the field and not a derivative of it.
 The axial bilinear is the vector bilinear with the right unit displaced. Where the vector reads $\vec e_{\mathrm{spt}(\imath)}$ in the right slot, the axial reads the product $\vec e_z\vec e_{\mathrm{spt}(\imath)}$ and drops the factor $i$.
 
 The tensor bilinear completes the list. Its element is the antisymmetric composite of two slot actions, which is a derived form of the two actions above and is written here in the element language of the body:
-$$T_{0k}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,i\vec e_\imath\tilde{Ξ}\vec e_z\vec e_x\bigr),
+$$T_{0k}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,i\vec e_{\imath}\tilde{Ξ}\vec e_z\vec e_x\bigr),
 \qquad
-T_{j\imath}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,i\vec e_j\vec e_\imath\tilde{Ξ}\vec e_x\bigr)\quad(j\ne k),
+T_{j\imath}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,i\vec e_j\vec e_{\imath}\tilde{Ξ}\vec e_x\bigr)\quad(j\ne k),
 \qquad
 T_{\imath\imath}=0 .$$
-The composite of the time slot action with the $k$-th space slot action is the left multiplication by $\vec e_\imath$ followed by the right multiplication by $\vec e_z$, and the composite of the $j$-th with the $k$-th is the left multiplication by the product $\vec e_j\vec e_\imath$. The two orders of each pair are opposite, so the antisymmetrised product is the composite itself, and the element of $T_{\imath\jmath}$ is $i$ times that composite. The factor $i$ is what makes the entries real: with it the entries are real on the 100 elements, and without it the same pairing returns purely imaginary values. Every independent entry is real on that run: the three $T_{0k}$ and the three $T_{j\imath}$. The diagonal vanishes because the antisymmetrised product takes the same index twice.
+The composite of the time slot action with the $k$-th space slot action is the left multiplication by $\vec e_{\imath}$ followed by the right multiplication by $\vec e_z$, and the composite of the $j$-th with the $k$-th is the left multiplication by the product $\vec e_j\vec e_{\imath}$. The two orders of each pair are opposite, so the antisymmetrised product is the composite itself, and the element of $T_{\imath\jmath}$ is $i$ times that composite. The factor $i$ is what makes the entries real: with it the entries are real on the 100 elements, and without it the same pairing returns purely imaginary values. Every independent entry is real on that run: the three $T_{0k}$ and the three $T_{j\imath}$. The diagonal vanishes because the antisymmetrised product takes the same index twice.
 
 ### The Two Writings of the Free Equation
 
@@ -69,10 +69,10 @@ The **two-sided** writing is the action
 $$\tilde Q\longmapsto \sum_{\imath} e_{\imath}\frac{\partial\tilde Q}{\partial x_{\imath}}\vec e_{\mathrm{spt}(\imath)},$$
 and it is the one this article needs, because every bilinear above carries a right slot as well as a left one. The two writings describe one dynamics, and each is first order.
 
-The composition of the two-sided action is read slot by slot. The slot of this action is the unit $e_{\imath}$ on the left and $\vec e_{\mathrm{spt}(\imath)}$ on the right, with no factor $i$: the $i$ belongs to the **slot action** of the section above, which is what the bilinears are built from, and a sum that carried it in every slot would be the $\gamma$ display of the reference article, whose square is $-\Box_\Phi$ and not $\Box_\Phi$. Composed with itself, the unit slot multiplies the element by $-1$ on the time slot, because $e_t^2=+1$ and $\vec e_x^2=-1$, and by $+1$ on each spatial slot, because $\vec e_\imath^2=\vec e_y^2=-1$; two different slots composed in the two orders cancel in pairs, because the derivatives commute; so the action composed with itself is
+The composition of the two-sided action is read slot by slot. The slot of this action is the unit $e_{\imath}$ on the left and $\vec e_{\mathrm{spt}(\imath)}$ on the right, with no factor $i$: the $i$ belongs to the **slot action** of the section above, which is what the bilinears are built from, and a sum that carried it in every slot would be the $\gamma$ display of the reference article, whose square is $-\Box_\Phi$ and not $\Box_\Phi$. Composed with itself, the unit slot multiplies the element by $-1$ on the time slot, because $e_t^2=+1$ and $\vec e_x^2=-1$, and by $+1$ on each spatial slot, because $\vec e_{\imath}^2=\vec e_y^2=-1$; two different slots composed in the two orders cancel in pairs, because the derivatives commute; so the action composed with itself is
 $$\tilde Q\longmapsto\Box_\Phi\tilde Q,
 \qquad
-\Box_\Phi=\sum_{\imath\in\{x,y,z\}}\frac{\partial^2}{\partial x_\imath^2}-\frac{\partial^2}{\partial x_t^2}=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi,$$
+\Box_\Phi=\sum_{\imath\in\{x,y,z\}}\frac{\partial^2}{\partial x_{\imath}^2}-\frac{\partial^2}{\partial x_t^2}=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi,$$
 which is the corpus's d'Alembertian: $R_t=i\,x_t$ is the imaginary time, so $\partial^2/\partial R_t^2=-\partial^2/\partial x_t^2$. The verification is exact: the six cross compositions sum to zero, and the four diagonal ones to the four signs above. With this $\Box_\Phi$ the free equation $\sum_{\imath} e_{\imath}\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}\vec e_{\mathrm{spt}(\imath)}=2\pi\nu_m\tilde{Ξ}$ squares to $(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde{Ξ}=0$, the second-order equation of the reference article, and a plane wave obeys $\nu_t^{\prime2}=\lvert\vec\nu_\Phi\rvert^{2}+\nu_m^{2}$.
 
 ### The Two Values and the Axial Bilinear
@@ -152,10 +152,10 @@ $$\sum_{\imath} e_{\imath}\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}\vec e_{
 The term is the axial current multiplying the axial slot action on the field. Its coefficient is $3\kappa/8$, twice the $3\kappa/16$ of the Lagrangian, and the factor of two is the one that varying a square supplies.
 
 **The spacelike case.** Where only the spacelike components of the current are nonzero, the equation separates into a time part and a space part,
-$$\Bigl((\nabla_t\tilde{Ξ})\vec e_x+\sum_{\imath\in\{x,y,z\}}\vec e_\imath(\nabla_\imath\tilde{Ξ})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_{\imath\in\{x,y,z\}}\varepsilon_\imath A_\imath\,\vec e_\imath\tilde{Ξ}\vec e_z\vec e_y=2\pi\nu_m\tilde{Ξ},$$
+$$\Bigl((\nabla_t\tilde{Ξ})\vec e_x+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}(\nabla_{\imath}\tilde{Ξ})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_{\imath\in\{x,y,z\}}\varepsilon_{\imath} A_{\imath}\,\vec e_{\imath}\tilde{Ξ}\vec e_z\vec e_y=2\pi\nu_m\tilde{Ξ},$$
 with $A_0=0$, and the two parts are read separately.
 
-**Why the square is the d'Alembertian.** The three spatial slots composed with one another give $+\partial_\imath^2$ on each diagonal and cancel in pairs off it, so the square of the two-sided action restricted to the plane's space is $+\sum_{\imath\in\{x,y,z\}}\partial_\imath^2=\Delta_\Phi$, the spatial part of $\Box_\Phi$. The eliminated equation therefore has a square that is a wave operator, and no sign in it is chosen by hand.
+**Why the square is the d'Alembertian.** The three spatial slots composed with one another give $+\partial_{\imath}^2$ on each diagonal and cancel in pairs off it, so the square of the two-sided action restricted to the plane's space is $+\sum_{\imath\in\{x,y,z\}}\partial_{\imath}^2=\Delta_\Phi$, the spatial part of $\Box_\Phi$. The eliminated equation therefore has a square that is a wave operator, and no sign in it is chosen by hand.
 
 ## The Local Channels and Their Sectors
 
@@ -167,8 +167,8 @@ The five bilinears, with the element at which the pairing is read, and with the 
 |---|---|---|---|
 | $S_{\mathrm d}=\mathrm{Sc}(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x)$ | $\tilde{Ξ}$ | scalar | even |
 | $P_5=\mathrm{Sc}(\tilde{Ξ}^*i\tilde{Ξ}\vec e_z\vec e_x)$ | $\tilde{Ξ}\vec e_z$ | pseudoscalar | odd |
-| $V_{\imath}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,ie_{\imath}\tilde{Ξ}\vec e_{\mathrm{spt}(\imath)}\vec e_x\bigr)$ | $ie_{\imath}\tilde{Ξ}\vec e_{\mathrm{spt}(\imath)}$ | vector | $V_0$ even, $V_\imath$ odd |
-| $A_{\imath}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,e_{\imath}\tilde{Ξ}\vec e_z\vec e_{\mathrm{spt}(\imath)}\vec e_x\bigr)$ | $e_{\imath}\tilde{Ξ}\vec e_z\vec e_{\mathrm{spt}(\imath)}$ | axial vector | $A_0$ odd, $A_\imath$ even |
+| $V_{\imath}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,ie_{\imath}\tilde{Ξ}\vec e_{\mathrm{spt}(\imath)}\vec e_x\bigr)$ | $ie_{\imath}\tilde{Ξ}\vec e_{\mathrm{spt}(\imath)}$ | vector | $V_0$ even, $V_{\imath}$ odd |
+| $A_{\imath}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,e_{\imath}\tilde{Ξ}\vec e_z\vec e_{\mathrm{spt}(\imath)}\vec e_x\bigr)$ | $e_{\imath}\tilde{Ξ}\vec e_z\vec e_{\mathrm{spt}(\imath)}$ | axial vector | $A_0$ odd, $A_{\imath}$ even |
 | $T_{\imath\jmath}$ | the antisymmetric composite of two slot actions, read on $\tilde{Ξ}$ | antisymmetric tensor | $T_{0k}$ odd, $T_{j\imath}$ even |
 
 The Lorentz-type column is the classification of the sources, recorded here and not derived: the algebra fixes which element each bilinear reads, and the sources fix which Lorentz type that element carries.
@@ -212,7 +212,7 @@ Two further limits are inherited from other gaps. The Einstein–Cartan route ne
 
 ## Verified Two-Dimensional Relations
 
-The two-dimensional identities on which the Thirring model's one coupling rests were checked directly, in exact arithmetic on the algebra over the Gaussian integers, so every residual below is exactly $0$ and not merely small. The frame is the $\mathbb{B}_{\Phi}$ frame of the conventions article, whose metric is $g_{tt}=-c^{2}$ and $g_{xx}=+1$, so that $\varepsilon_t=-g_{tt}=+1$ on the time index and $\varepsilon_\imath=-g_{\imath\imath}=-1$ on the spatial ones.
+The two-dimensional identities on which the Thirring model's one coupling rests were checked directly, in exact arithmetic on the algebra over the Gaussian integers, so every residual below is exactly $0$ and not merely small. The frame is the $\mathbb{B}_{\Phi}$ frame of the conventions article, whose metric is $g_{tt}=-c^{2}$ and $g_{xx}=+1$, so that $\varepsilon_t=-g_{tt}=+1$ on the time index and $\varepsilon_{\imath}=-g_{\imath\imath}=-1$ on the spatial ones.
 
 ### The Two Slot Actions
 
@@ -254,7 +254,7 @@ The duality is the exact reason the two-dimensional model has one coupling. It i
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\imath^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_{\imath}^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 This section writes the same basis operators in the $\gamma$ notation, so that each formula the sources state can be checked against the basis operator it names. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -292,7 +292,7 @@ The identities the literature quotes were written in the $\gamma$ notation, and 
 
 $$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
-(\gamma_\imath)^2=-I_4,\qquad
+(\gamma_{\imath})^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_{\imath},\gamma_5\}=0,
 $$
@@ -344,7 +344,7 @@ Each bilinear, however, is a pairing and not a product: it is the scalar part of
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $\vec e_\imath^2 = -e_t$, central $i$ |
+| $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $\vec e_{\imath}^2 = -e_t$, central $i$ |
 | $\tilde Q\mapsto ie_{\imath}\tilde Q\vec e_{\mathrm{spt}(\imath)}$ | Slot action of the index $\mu$; $\mathrm{spt}(t)=x$, $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$ |
 | $\sum_{\imath} e_{\imath}\frac{\partial\tilde Q}{\partial x_{\imath}}\vec e_{\mathrm{spt}(\imath)}$ | Two-sided Dirac action; composed with itself it is $\Box_\Phi$ |
 | $\mathrm{Sc}\bigl(\tilde{Ξ}^*iX\vec e_x\bigr)$ | The bilinear form; every density below is this scalar part read at one element $X$ |
@@ -352,7 +352,7 @@ Each bilinear, however, is a pairing and not a product: it is the scalar part of
 | $P_5=\mathrm{Sc}(\tilde{Ξ}^*i\tilde{Ξ}\vec e_z\vec e_x)$ | Pseudoscalar density, the parity-odd partner of $S_{\mathrm d}$; the quaternion representative $P=S_{\mathrm d}\vec e_z$ has $P\cdot P=-S_{\mathrm d}^2$, a different object from the density square $P_5^2$ |
 | $V_{\imath}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,ie_{\imath}\tilde{Ξ}\vec e_{\mathrm{spt}(\imath)}\vec e_x\bigr)$ | Vector current (material sector in the framework); $V_0=\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ})$ |
 | $A_{\imath}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,e_{\imath}\tilde{Ξ}\vec e_z\vec e_{\mathrm{spt}(\imath)}\vec e_x\bigr)$ | Axial current (channel broken by the mass); in two dimensions built with the plane's insertions and the factor $i$ kept |
-| $T_{\imath\jmath}$ | Tensor bilinear; $T_{0k}=\mathrm{Sc}(\tilde{Ξ}^*i\,i\vec e_\imath\tilde{Ξ}\vec e_z\vec e_x)$, $T_{j\imath}=\mathrm{Sc}(\tilde{Ξ}^*i\,i\vec e_j\vec e_\imath\tilde{Ξ}\vec e_x)$ for $j\ne k$, $T_{\imath\imath}=0$ |
+| $T_{\imath\jmath}$ | Tensor bilinear; $T_{0k}=\mathrm{Sc}(\tilde{Ξ}^*i\,i\vec e_{\imath}\tilde{Ξ}\vec e_z\vec e_x)$, $T_{j\imath}=\mathrm{Sc}(\tilde{Ξ}^*i\,i\vec e_j\vec e_{\imath}\tilde{Ξ}\vec e_x)$ for $j\ne k$, $T_{\imath\imath}=0$ |
 | $\varepsilon_{\imath} = -g_{\imath\imath}$ | Sign of the index $\mu$ |
 | $g$ | Self-coupling of the Thirring and Soler models |
 | $\kappa = 8\pi G/c^4$ | Einstein gravitational constant |

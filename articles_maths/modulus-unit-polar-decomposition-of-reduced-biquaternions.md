@@ -75,7 +75,7 @@ $$
 with $q=|Q_{\blacktriangle}|^2+|Q_{\blacktriangledown}|^2$ and $q'=2\operatorname{Re}(Q_{\blacktriangle}\bar Q_{\blacktriangledown})$. The key identity is
 
 $$
-q^2-q'^2=|Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2|^2=|\langle\breve Q\rangle_{\mathrm{ts}}|^2.
+q^2-q'{}^2=|Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2|^2=|\langle\breve Q\rangle_{\mathrm{ts}}|^2.
 $$
 
 For an invertible element the right side is positive, so $q>|q'|$, and $\breve Q\bar{\breve Q}$ lies in the positive cone
@@ -93,8 +93,8 @@ $$
 It is the positive square root of $\breve Q\bar{\breve Q}$ in the cone, the exact analogue of $\varrho=\sqrt{Q\bar Q}$ in $\mathbb{C}$ with the positive ray replaced by the cone $P$. Explicitly, with $q$ and $q'$ as above,
 
 $$
-\breve M_{\mathrm{mod}}=\sqrt{\frac{q+\sqrt{q^2-q'^2}}{2}}
-+j\,\operatorname{sgn}q'\sqrt{\frac{q-\sqrt{q^2-q'^2}}{2}},
+\breve M_{\mathrm{mod}}=\sqrt{\frac{q+\sqrt{q^2-q'{}^2}}{2}}
++j\,\operatorname{sgn}q'\sqrt{\frac{q-\sqrt{q^2-q'{}^2}}{2}},
 $$
 
 and the sign convention is immaterial when $q'=0$. The two coordinates of $\breve M_{\mathrm{mod}}$ are real, so $\bar{\breve M_{\mathrm{mod}}}=\breve M_{\mathrm{mod}}$.
@@ -108,7 +108,7 @@ $$
 Then
 
 $$
-\varrho_+=|Q_{+}|,\qquad \varrho_-=|Q_{-}|,\qquad \varrho_+\varrho_-=\sqrt{q^2-q'^2}=|\langle\breve Q\rangle_{\mathrm{ts}}|.
+\varrho_+=|Q_{+}|,\qquad \varrho_-=|Q_{-}|,\qquad \varrho_+\varrho_-=\sqrt{q^2-q'{}^2}=|\langle\breve Q\rangle_{\mathrm{ts}}|.
 $$
 
 Conversely,
@@ -126,7 +126,7 @@ $$
 (x+y)^2=x^2+y^2+2xy=q+q'=|Q_{+}|^2,
 $$
 
-because $|Q_{+}|^2=|Q_{\blacktriangle}|^2+|Q_{\blacktriangledown}|^2+2\operatorname{Re}(Q_{\blacktriangle}\bar Q_{\blacktriangledown})=q+q'$; and similarly $(x-y)^2=q-q'=|Q_{-}|^2$. Both $x\pm y$ are positive because $x>|y|$, so $\varrho_\pm=|Q_{\pm}|$. The product is $\varrho_+\varrho_-=x^2-y^2=\sqrt{q^2-q'^2}$. The parametrisation is the identity $\cosh\theta_{\mathrm{rpd}}\pm\sinh\theta_{\mathrm{rpd}}=e^{\pm\theta_{\mathrm{rpd}}}$ applied to $\varrho_\pm=\varrho e^{\pm\theta_{\mathrm{rpd}}}$.
+because $|Q_{+}|^2=|Q_{\blacktriangle}|^2+|Q_{\blacktriangledown}|^2+2\operatorname{Re}(Q_{\blacktriangle}\bar Q_{\blacktriangledown})=q+q'$; and similarly $(x-y)^2=q-q'=|Q_{-}|^2$. Both $x\pm y$ are positive because $x>|y|$, so $\varrho_\pm=|Q_{\pm}|$. The product is $\varrho_+\varrho_-=x^2-y^2=\sqrt{q^2-q'{}^2}$. The parametrisation is the identity $\cosh\theta_{\mathrm{rpd}}\pm\sinh\theta_{\mathrm{rpd}}=e^{\pm\theta_{\mathrm{rpd}}}$ applied to $\varrho_\pm=\varrho e^{\pm\theta_{\mathrm{rpd}}}$.
 
 The modulus therefore carries two positive scales, $\varrho_+$ and $\varrho_-$. The reduced norm sees only their product $\varrho_+\varrho_-$, and the Euclidean norm only their sum of squares $\varrho_+^2+\varrho_-^2$; neither form distinguishes the two scales from their interchange, and the pair carries the sign of the boost, which both forms lose. No scalar modulus exists, and the modulus is genuinely two-dimensional.
 
@@ -203,7 +203,7 @@ The cone $P$ is non-compact, the torus $T^2$ is compact, and the product is the 
 
 **Existence.** Put $\breve M_{\mathrm{mod}}=\sqrt{\breve Q\bar{\breve Q}}$ in $P$ and $u=\breve M_{\mathrm{mod}}^{-1}\breve Q$. The element $\breve M_{\mathrm{mod}}$ is defined because $\breve Q\bar{\breve Q}\in P$ for an invertible element, and $u\bar u=1$ by the computation of §*The Unit Factor and the Torus*. Hence $\breve Q=\breve M_{\mathrm{mod}} u$ with the two factors in the required sets.
 
-**Uniqueness.** Suppose $\breve M_{\mathrm{mod}} u=\breve M_{\mathrm{mod}}'u'$ with $\breve M_{\mathrm{mod}},\breve M_{\mathrm{mod}}'\in P$ and $u\bar u=u'\bar u'=1$. Multiplying by the bar gives $\breve M_{\mathrm{mod}}^2=\breve M_{\mathrm{mod}}'^2$, because $\bar{\breve M_{\mathrm{mod}}}=\breve M_{\mathrm{mod}}$, $\bar{\breve M_{\mathrm{mod}}}'=\breve M_{\mathrm{mod}}'$ and $u\bar u=u'\bar u'=1$. Two elements of $P$ with the same square are equal: if $x+jy\in P$ and $x'+jy'\in P$ have square $q+jq'$, then $x^2+y^2=x'^2+y'^2=q$ and $xy=x'y'=q'/2$; the positive numbers $x^2-y^2$ and $x'^2-y'^2$ both equal $\sqrt{q^2-q'^2}$, so $x^2=x'^2$, $x=x'>0$, and then $y=y'$. Hence $\breve M_{\mathrm{mod}}=\breve M_{\mathrm{mod}}'$, and $u=\breve M_{\mathrm{mod}}^{-1}\breve Q=u'$.
+**Uniqueness.** Suppose $\breve M_{\mathrm{mod}} u=\breve M_{\mathrm{mod}}'u'$ with $\breve M_{\mathrm{mod}},\breve M_{\mathrm{mod}}'\in P$ and $u\bar u=u'\bar u'=1$. Multiplying by the bar gives $\breve M_{\mathrm{mod}}^2=\breve M_{\mathrm{mod}}'{}^2$, because $\bar{\breve M_{\mathrm{mod}}}=\breve M_{\mathrm{mod}}$, $\bar{\breve M_{\mathrm{mod}}}'=\breve M_{\mathrm{mod}}'$ and $u\bar u=u'\bar u'=1$. Two elements of $P$ with the same square are equal: if $x+jy\in P$ and $x'+jy'\in P$ have square $q+jq'$, then $x^2+y^2=x'{}^2+y'{}^2=q$ and $xy=x'y'=q'/2$; the positive numbers $x^2-y^2$ and $x'{}^2-y'{}^2$ both equal $\sqrt{q^2-q'{}^2}$, so $x^2=x'{}^2$, $x=x'>0$, and then $y=y'$. Hence $\breve M_{\mathrm{mod}}=\breve M_{\mathrm{mod}}'$, and $u=\breve M_{\mathrm{mod}}^{-1}\breve Q=u'$.
 
 The pair $(\breve M_{\mathrm{mod}},u)$ is unique. This is a statement about the factorisation, not about a coordinate on the torus: two different charts of $T^2$ assign different parameters to the same unit factor.
 
@@ -217,7 +217,7 @@ $$
 
 the union of the two complex lines $\mathbb{C}(1+j)$ and $\mathbb{C}(1-j)$, each of real dimension two. The failure set has real codimension two, as the origin does in $\mathbb{C}$.
 
-*Proof.* The construction uses $\breve M_{\mathrm{mod}}\in P$, which requires $q^2-q'^2>0$, that is $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0$. The vanishing of $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$ is the vanishing of $Q_{+}Q_{-}$, the two lines named.
+*Proof.* The construction uses $\breve M_{\mathrm{mod}}\in P$, which requires $q^2-q'{}^2>0$, that is $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0$. The vanishing of $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$ is the vanishing of $Q_{+}Q_{-}$, the two lines named.
 
 ## The Group of Invertibles and the Torus
 
@@ -578,8 +578,8 @@ The modulus–unit decomposition exists in every algebra of the family, with the
 | algebra | element | norm | modulus | unit set | topology of the unit set |
 |---|---|---|---|---|---|
 | $\mathbb{R}$ | $q$ | $q^2$ | $\lvert q\rvert$ | $\{\pm1\}$ | two points |
-| $\mathbb{C}$ | $Q=q+iq'$ | $q^2+q'^2$, definite | $\sqrt{N}$ | $\mathrm{U}(1)$ | circle, compact and connected |
-| $\mathbb{C}_{\mathrm{spl}}$ | $Q=q+jq'$ | $q^2-q'^2$, indefinite | $\sqrt{\lvert N\rvert}$, $N\neq0$ | $\{N=\pm1\}$ | four branches, non-compact |
+| $\mathbb{C}$ | $Q=q+iq'$ | $q^2+q'{}^2$, definite | $\sqrt{N}$ | $\mathrm{U}(1)$ | circle, compact and connected |
+| $\mathbb{C}_{\mathrm{spl}}$ | $Q=q+jq'$ | $q^2-q'{}^2$, indefinite | $\sqrt{\lvert N\rvert}$, $N\neq0$ | $\{N=\pm1\}$ | four branches, non-compact |
 | $\mathbb{H}$ | $\tilde q$ | sum of four squares, definite | $\sqrt{N}$ | $S^3$ | sphere, compact and connected |
 | $\mathbb{B}_{\mathrm{red}}$ | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$, complex, multiplicative | the pair $(\varrho_+,\varrho_-)$ | $T^2$ | two-torus, compact and connected |
 

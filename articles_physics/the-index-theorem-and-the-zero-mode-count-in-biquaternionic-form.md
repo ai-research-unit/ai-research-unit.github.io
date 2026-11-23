@@ -62,7 +62,7 @@ $$
 **The symbol, and the square.** The principal symbol at a covector $\zeta$ is the left multiplication by $\sum_{\imath}\zeta_{\imath} e_{\imath}$. That element is invertible for every real $\zeta\neq0$, because its norm is $\sum_{\imath}\zeta_{\imath}^2$ and that is nonzero; so the operator is elliptic, and on a closed manifold its kernel and cokernel are finite-dimensional. The square of the symbol is not a multiple of the identity,
 
 $$
-\Bigl(\sum_{\imath}\zeta_{\imath} e_{\imath}\Bigr)^2=\zeta_t^2-\sum_{\imath\in\{x,y,z\}}\zeta_\imath^2+2\zeta_t\sum_{\imath\in\{x,y,z\}}\zeta_\imath\vec e_\imath ,
+\Bigl(\sum_{\imath}\zeta_{\imath} e_{\imath}\Bigr)^2=\zeta_t^2-\sum_{\imath\in\{x,y,z\}}\zeta_{\imath}^2+2\zeta_t\sum_{\imath\in\{x,y,z\}}\zeta_{\imath}\vec e_{\imath} ,
 $$
 
 because $e_t$ commutes with the three spatial units, so the mixed time–space terms add; the three spatial units anticommute, so their mixed terms vanish; and each spatial square is $-e_t$, which gives the negative sum. Ellipticity needs the invertibility of the symbol and not of its square, so the vector term changes nothing.
@@ -175,7 +175,7 @@ $$
 
 a surface integral over the three-sphere at infinity. The coefficient $\tfrac23 i\kappa$ is the one that makes the identity exact: the derivative of the cubic term contributes $3\cdot\tfrac23 i\kappa=2i\kappa$ times $\mathrm{Tr}(d\mathcal A\wedge\mathcal A\wedge\mathcal A)$, which is the cross term of $\mathrm{Tr}(F\wedge F)$, and the quartic term $\mathrm{Tr}(\mathcal A^4)$ vanishes — the trace is cyclic and the wedge is graded antisymmetric, so moving one of the four factors past the other three multiplies the term by the sign of a four-cycle, and that sign is $-1$. The index theorem's integral and the instanton's charge are therefore the same integral, computed in two ways: as the integral of the index density over the bulk, and as the Chern–Simons flux through the boundary. They agree in the defining representation, and differ by the Dynkin factor $2T(R)$ otherwise.
 
-In the abelian case the density collapses to the framework's second invariant. Every index in these displays is written low and the four labels are summed explicitly. The alternating symbol is the orientation density: in the Lorentzian ordering $(Q_t,Q_x,Q_y,Q_z)$ it is fixed by $\epsilon_{0123}=+1$, and in the Euclidean ordering $(x_4,x_1,x_2,x_3)$ by $\epsilon_{4123}=+1$; no index is raised, so no metric sign enters it. With the components $F_{0k}=iE_\imath/c$ and $F_{j\imath}=\epsilon_{j\imath l}B_l$ in the Lorentzian case, and $F_{4k}=E_\imath$ and $F_{j\imath}=\epsilon_{j\imath l}B_l$ in the Euclidean one, the contraction reads
+In the abelian case the density collapses to the framework's second invariant. Every index in these displays is written low and the four labels are summed explicitly. The alternating symbol is the orientation density: in the Lorentzian ordering $(Q_t,Q_x,Q_y,Q_z)$ it is fixed by $\epsilon_{0123}=+1$, and in the Euclidean ordering $(x_4,x_1,x_2,x_3)$ by $\epsilon_{4123}=+1$; no index is raised, so no metric sign enters it. With the components $F_{0k}=iE_{\imath}/c$ and $F_{j\imath}=\epsilon_{j\imath l}B_l$ in the Lorentzian case, and $F_{4k}=E_{\imath}$ and $F_{j\imath}=\epsilon_{j\imath l}B_l$ in the Euclidean one, the contraction reads
 
 $$
 \frac14\sum_{\imath,\jmath,\rho,\sigma}\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}
@@ -222,15 +222,15 @@ n_+=4k ,
 n_-=0 ,
 $$
 
-and the framed moduli space of the background has real dimension $8k$. For $\mathrm{SU}(2)$ that space $\mathcal M_\imath$ is a smooth hyperkähler manifold of real dimension $8k$ and complex dimension $4k$ in each of its complex structures; the $4k$ adjoint zero modes of one chirality are counted as complex objects, so they match the complex dimension, while the $8k$ real collective coordinates are the tangent space. The index
+and the framed moduli space of the background has real dimension $8k$. For $\mathrm{SU}(2)$ that space $\mathcal M_{\imath}$ is a smooth hyperkähler manifold of real dimension $8k$ and complex dimension $4k$ in each of its complex structures; the $4k$ adjoint zero modes of one chirality are counted as complex objects, so they match the complex dimension, while the $8k$ real collective coordinates are the tangent space. The index
 
 $$
-\mathrm{ind}\,\tilde D_{\text{adjoint}}=4k=\tfrac12\dim_{\mathbb R}\mathcal M_\imath=\dim_{\mathbb C}\mathcal M_\imath
+\mathrm{ind}\,\tilde D_{\text{adjoint}}=4k=\tfrac12\dim_{\mathbb R}\mathcal M_{\imath}=\dim_{\mathbb C}\mathcal M_{\imath}
 $$
 
 is the precise form of this statement for $\mathrm{SU}(2)$.
 
-Two consequences follow and are used in the later articles. First, the adjoint zero modes are the infinitesimal deformations of the background, so they are tangent to the moduli space: integrating over the moduli in the semiclassical expansion of *The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form* is integrating over the collective coordinates, and the Grassmann integral over the zero modes fills that measure mode for mode. Second, the number of zero modes is a topological invariant and so cannot change under a deformation of the background within its charge sector. The standard bridge to the moduli counting of the ADHM construction of *The ADHM Construction and Biquaternion Instanton Data* is the quantum mechanics whose target is $\mathcal M_\imath$, whose index is the Euler characteristic of $\mathcal M_\imath$.
+Two consequences follow and are used in the later articles. First, the adjoint zero modes are the infinitesimal deformations of the background, so they are tangent to the moduli space: integrating over the moduli in the semiclassical expansion of *The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form* is integrating over the collective coordinates, and the Grassmann integral over the zero modes fills that measure mode for mode. Second, the number of zero modes is a topological invariant and so cannot change under a deformation of the background within its charge sector. The standard bridge to the moduli counting of the ADHM construction of *The ADHM Construction and Biquaternion Instanton Data* is the quantum mechanics whose target is $\mathcal M_{\imath}$, whose index is the Euler characteristic of $\mathcal M_{\imath}$.
 
 ## The Biquaternion Reading and the Rank-Two Limitation
 
@@ -251,7 +251,7 @@ The index density is a total derivative whose integral equals the instanton char
 | Symbol | Meaning |
 |---|---|
 | $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ | Biquaternion algebra, $\cong M_2(\mathbb C)$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra inside $\mathbb{B}_{\Phi}$ |

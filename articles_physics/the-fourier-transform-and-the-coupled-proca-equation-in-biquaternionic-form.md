@@ -200,7 +200,7 @@ The mass does not enter the obstruction: the mass term is $-\nu_m^{2}\delta$, wh
 | $\varkappa$ | The coupling; a length whose inverse multiplies the potential |
 | $A_{\imath}$ | The background potential |
 | $\pi_{\imath}=h\nu_{\imath}-q A_{\imath}$ | The shifted four-momentum; the symbol's argument |
-| $2\pi\nu_t'=\omega/c$, $k^{2}=4\pi^{2}\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}$ | The free four-wave-number and its interval |
+| $2\pi\nu_t'=\omega/c$, $k^{2}=4\pi^{2}\nu_t'{}^{2}-4\pi^{2}\nu_{\Phi}^{2}$ | The free four-wave-number and its interval |
 | $\nu_m=\frac{mc}{h}$ | The mass wave number |
 | $\sigma_{\mathrm{gco}}=-\pi^{2}+\frac{2\pi i\varkappa}{h}F^{(\Phi)}$ | The coupled symbol; translation plus obstruction |
 | $F^{(\Phi)}_{\imath\jmath}$ | The curvature; $\lvert F_{21}\rvert=0.9$ in the example |

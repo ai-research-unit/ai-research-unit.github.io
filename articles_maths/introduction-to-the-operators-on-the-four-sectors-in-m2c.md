@@ -66,7 +66,7 @@ Every row has one nonzero entry of modulus one, so the three are signed permutat
 $$
 L_{AA'}=L_A L_{A'},\qquad R_{AA'}=R_{A'}R_A,\qquad \mathrm{Sd}_{AA'}=\mathrm{Sd}_A\,\mathrm{Sd}_{A'}.
 $$
-Each is associativity read at one position, and the third uses $(AA')^{\dagger}=A'^{\dagger}A^{\dagger}$. Verified on a hundred random pairs, with residuals $1.5\cdot10^{-14}$, $1.6\cdot10^{-14}$ and $2\cdot10^{-13}$.
+Each is associativity read at one position, and the third uses $(AA')^{\dagger}=A'{}^{\dagger}A^{\dagger}$. Verified on a hundred random pairs, with residuals $1.5\cdot10^{-14}$, $1.6\cdot10^{-14}$ and $2\cdot10^{-13}$.
 
 **The orders.** The left multiplication is a representation, the right multiplication an anti-representation, and the two-sided operator a representation again because the two reversals cancel. In arrays, $L$ acts on the first Kronecker slot and $R$ on the second.
 

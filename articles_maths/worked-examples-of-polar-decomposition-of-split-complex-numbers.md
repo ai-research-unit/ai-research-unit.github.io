@@ -32,7 +32,7 @@ The eight cases cover the four open components, the pure discrete unit, the two 
 For $Q=q+jq'$ the two real coordinates are $q$ and $q'$. The modulus and the angle are
 
 $$
-\varrho=\sqrt{\lvert q^2-q'^2\rvert}
+\varrho=\sqrt{\lvert q^2-q'{}^2\rvert}
 =\sqrt{\lvert(q+q')(q-q')\rvert},
 \qquad
 \theta=\tfrac12\ln\left\lvert\frac{q+q'}{q-q'}\right\rvert.
@@ -79,11 +79,11 @@ $$
 M_Q=\begin{pmatrix}q&q'\\q'&q\end{pmatrix}.
 $$
 
-Its trace is $2q$ and its determinant is $q^2-q'^2=(q+q')(q-q')$. It is invertible exactly when $Q$ is invertible. The product $\epsilon Q$ acts on $F$ by a positive scale and a hyperbolic rotation.
+Its trace is $2q$ and its determinant is $q^2-q'{}^2=(q+q')(q-q')$. It is invertible exactly when $Q$ is invertible. The product $\epsilon Q$ acts on $F$ by a positive scale and a hyperbolic rotation.
 
 ### The Null Cone
 
-For $q^2-q'^2=0$ the element is a nonzero zero divisor, of the form $Q=q(1\pm j)$ with $q\neq0$, and no polar word exists: the modulus vanishes, the angle diverges and the unit factor is undefined. The matrix has rank one, its determinant is zero, and $Q^2=2q\,Q$. Case 8 treats the boundary explicitly.
+For $q^2-q'{}^2=0$ the element is a nonzero zero divisor, of the form $Q=q(1\pm j)$ with $q\neq0$, and no polar word exists: the modulus vanishes, the angle diverges and the unit factor is undefined. The matrix has rank one, its determinant is zero, and $Q^2=2q\,Q$. Case 8 treats the boundary explicitly.
 
 ## The Eight Cases
 
@@ -96,7 +96,7 @@ q=5,
 \qquad
 q'=3,
 \qquad
-q^2-q'^2=25-9=16,
+q^2-q'{}^2=25-9=16,
 \qquad
 q+q'=8,
 \qquad
@@ -154,7 +154,7 @@ q=3,
 \qquad
 q'=5,
 \qquad
-q^2-q'^2=9-25=-16,
+q^2-q'{}^2=9-25=-16,
 \qquad
 q+q'=8,
 \qquad
@@ -216,7 +216,7 @@ q=-5,
 \qquad
 q'=-3,
 \qquad
-q^2-q'^2=25-9=16,
+q^2-q'{}^2=25-9=16,
 \qquad
 q+q'=-8,
 \qquad
@@ -266,7 +266,7 @@ q=1,
 \qquad
 q'=-2,
 \qquad
-q^2-q'^2=1-4=-3,
+q^2-q'{}^2=1-4=-3,
 \qquad
 q+q'=-1,
 \qquad
@@ -329,7 +329,7 @@ q=0,
 \qquad
 q'=1,
 \qquad
-q^2-q'^2=-1,
+q^2-q'{}^2=-1,
 \qquad
 q+q'=1,
 \qquad
@@ -373,7 +373,7 @@ q=2,
 \qquad
 q'=0,
 \qquad
-q^2-q'^2=4,
+q^2-q'{}^2=4,
 \qquad
 q+q'=2,
 \qquad
@@ -417,7 +417,7 @@ q=-2,
 \qquad
 q'=0,
 \qquad
-q^2-q'^2=4,
+q^2-q'{}^2=4,
 \qquad
 q+q'=-2,
 \qquad
@@ -461,7 +461,7 @@ q=1,
 \qquad
 q'=1,
 \qquad
-q^2-q'^2=1-1=0,
+q^2-q'{}^2=1-1=0,
 \qquad
 q+q'=2,
 \qquad
@@ -508,13 +508,13 @@ and the two combinations are $\varrho e^{\theta}=2+\delta$ and $\varrho e^{-\the
 | $0.01$ | $0.1417744688$ | $2.651652454$ | $2.01$ | $0.01$ |
 | $0.001$ | $0.0447325385$ | $3.800701167$ | $2.001$ | $0.001$ |
 
-As $\delta\to0$, the modulus tends to $0$, the angle diverges, and the larger combination tends to $2$; the word tends to the boundary value $1+j$. The polar decomposition exists on the open components and stops exactly at $q^2-q'^2=0$.
+As $\delta\to0$, the modulus tends to $0$, the angle diverges, and the larger combination tends to $2$; the word tends to the boundary value $1+j$. The polar decomposition exists on the open components and stops exactly at $q^2-q'{}^2=0$.
 
 ## Summary
 
 ### Main Results
 
-| Case | $Q$ | $q$ | $q'$ | $q^2-q'^2$ | $\epsilon$ | $\varrho$ | $\theta$ | $Q_{\log}$ |
+| Case | $Q$ | $q$ | $q'$ | $q^2-q'{}^2$ | $\epsilon$ | $\varrho$ | $\theta$ | $Q_{\log}$ |
 |---|---|---|---|---|---|---|---|---|
 | $1$ | $5+3j$ | $5$ | $3$ | $16$ | $1$ | $4$ | $\ln2$ | $\ln4+j\ln2$ |
 | $2$ | $3+5j$ | $3$ | $5$ | $-16$ | $j$ | $4$ | $\ln2$ | $\ln4+j\ln2$ |
@@ -554,9 +554,9 @@ As $\delta\to0$, the modulus tends to $0$, the angle diverges, and the larger co
 | $\mathbb{C}_{\mathrm{spl}}$ | the split-complex algebra, $j^2=+1$ |
 | $Q=q+jq'$ | a split-complex number |
 | $q,q'$ | the two real coordinates |
-| $q^2-q'^2=(q+q')(q-q')$ | the product $Q\bar Q$ |
+| $q^2-q'{}^2=(q+q')(q-q')$ | the product $Q\bar Q$ |
 | $\epsilon\in\{1,-1,j,-j\}$ | the component sign |
-| $\varrho=\sqrt{\lvert q^2-q'^2\rvert}$ | the modulus |
+| $\varrho=\sqrt{\lvert q^2-q'{}^2\rvert}$ | the modulus |
 | $\theta$ | the hyperbolic angle |
 | $Q_{\log}=\ln \varrho+j\theta$ | the exponent, a logarithm of $\epsilon Q$ |
 | $F,R,L$ | the future cone and the two spacelike wedges |

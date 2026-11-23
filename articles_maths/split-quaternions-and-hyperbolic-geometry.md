@@ -86,7 +86,7 @@ The metric on the sheet is carried to the hyperbolic metric of the half-plane, $
 **Proof.** *Positivity.* On the sheet, $q_x = \sqrt{1 + q_y^2 + q_z^2}$, so $q_x - q_y > 0$ and the displayed formula gives $\operatorname{Im}\varkappa_{\mathrm{crd}} > 0$. *Bijectivity.* Given $A = a + ia' \in \mathbb{H}$, put
 
 $$
-M(A) = \begin{pmatrix} a/a' & -(a^2+a'^2)/a' \\ 1/a' & -a/a' \end{pmatrix},
+M(A) = \begin{pmatrix} a/a' & -(a^2+a'{}^2)/a' \\ 1/a' & -a/a' \end{pmatrix},
 $$
 
 which is traceless with determinant $1$; the element $\tilde\zeta \in V$ associated with $M(A)$ then has $\langle\tilde\zeta\rangle_{\natural} = \det M(A) = 1$ and $q_x > 0$, so it lies in the sheet, and $(A,1)$ is an eigenvector of $\tilde\zeta$ for $i$, so $\varkappa_{\mathrm{crd}} = A$. The two constructions are inverse, so $\varkappa_{\mathrm{crd}}$ is a bijection. *Equivariance.* The eigenvector of $g\tilde\zeta g^{-1}$ for the eigenvalue $i$ is $g$ applied to the eigenvector of $\tilde\zeta$, and the action of $g$ on the ratios of components of eigenvectors is exactly the fractional linear transformation displayed. *The metric.* The metric $-B$ on the sheet is invariant under the adjoint action, and the half-plane metric is invariant under the fractional linear action; the two metrics are proportional and agree at the point $\varkappa_{\mathrm{crd}} = i$, so they agree.

@@ -36,7 +36,7 @@ The companion articles supply the pieces:
 $$
 N(\tilde Q)=\tilde Q\tilde Q^{\natural}=(h_te_t+i\vec h)(h_te_t-i\vec h)=h_t^2-(i\vec h)^2=h_t^2-\lvert\vec h\rvert^2 ,
 $$
-because $(i\vec h)^2=i^2\vec h^2=+\lvert\vec h\rvert^2$ for a real vector $\vec h$. The form is positive on the temporal axis $e_t$ and negative on the three spatial directions $i\vec e_\imath$. This is the sector of states, of observables and of the boosts.
+because $(i\vec h)^2=i^2\vec h^2=+\lvert\vec h\rvert^2$ for a real vector $\vec h$. The form is positive on the temporal axis $e_t$ and negative on the three spatial directions $i\vec e_{\imath}$. This is the sector of states, of observables and of the boosts.
 
 The state is one particular element of it. Every state of the sector is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$, so $h_t=\tfrac12$ and $\vec h=\tfrac12\vec s_{\Psi}$. Normalisation is the statement $2\,\mathrm{Sc}=1$, that is $\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=\tfrac12$.
 
@@ -46,7 +46,7 @@ The material sector is a real four-plane with the opposite signature. An element
 $$
 N(\tilde P_{\Phi})=\Bigl(\frac{iE}{c}\Bigr)^2+\lvert\vec p\rvert^2=-\frac{E^2}{c^2}+\lvert\vec p\rvert^2 .
 $$
-The form is negative on the temporal axis $ie_t$ and positive on the three spatial directions $\vec e_\imath$. This is the sector of four-momenta, of currents and of the field strengths.
+The form is negative on the temporal axis $ie_t$ and positive on the three spatial directions $\vec e_{\imath}$. This is the sector of four-momenta, of currents and of the field strengths.
 
 ### One form, two signs
 
@@ -177,7 +177,7 @@ The velocity state is the case where the projected image is a familiar object, a
 
 The worked case, with $\vec v=0.5c$ along $\vec e_x$ and a frame boost of $v_{b}=0.6c$ along the same axis. The image has norm $0.1875$, which is $\tfrac14(1-0.25)$ and is the norm of the original element. Divided by its own $2\,\mathrm{Sc}$, it is the state with radius $0.142857$ and norm $0.244898$, and velocity addition gives $v'=(0.5-0.6)/(1-0.3)=-0.142857$. So the projected state is purer than the original, and the element's norm is unchanged.
 
-This removes a possible misreading and it is worth stating in full. The corpus says that a fast particle is in a nearly pure state, and the corpus also says that the congruence preserves the norm. Both are true, and they are statements about two different elements: the projected image, whose norm is $\tfrac14/\gamma'^{2}$ and runs, and the image before projection, whose norm is $\tfrac14/\gamma^{2}$ and does not. The two differ by the square of the projection factor, which is exactly the factor that makes velocity addition what it is.
+This removes a possible misreading and it is worth stating in full. The corpus says that a fast particle is in a nearly pure state, and the corpus also says that the congruence preserves the norm. Both are true, and they are statements about two different elements: the projected image, whose norm is $\tfrac14/\gamma'{}^{2}$ and runs, and the image before projection, whose norm is $\tfrac14/\gamma^{2}$ and does not. The two differ by the square of the projection factor, which is exactly the factor that makes velocity addition what it is.
 
 ## Two Metrics, Two Groups
 

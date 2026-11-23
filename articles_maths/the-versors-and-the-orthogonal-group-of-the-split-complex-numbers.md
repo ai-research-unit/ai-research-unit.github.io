@@ -11,7 +11,7 @@ The article does not define the two forms, which are *The Two Forms and the Two 
 **Definition.** A **versor** of the split-complex numbers is a unit of the quadratic form $\langle\cdot,\cdot\rangle_{*}$ of norm one,
 
 $$
-{\mathbb{C}_{\mathrm{spl}}}^{(1)}=\{u\in\mathbb{C}_{\mathrm{spl}}:\langle u\rangle_{*}=u\bar u=1\}=\mathcal{H}=\{u=q+jq':q^{2}-q'^{2}=1\},
+{\mathbb{C}_{\mathrm{spl}}}^{(1)}=\{u\in\mathbb{C}_{\mathrm{spl}}:\langle u\rangle_{*}=u\bar u=1\}=\mathcal{H}=\{u=q+jq':q^{2}-q'{}^{2}=1\},
 $$
 
 the unit hyperbola of *Hyperbolic Rotations*.
@@ -22,7 +22,7 @@ the unit hyperbola of *Hyperbolic Rotations*.
 
 **Remark (the shell of the indefinite form is a group, and it is a hyperbola).** The versor condition is read on the norm $\langle\cdot\rangle_{*}$, not on the plain algebraic norm $\langle Q\rangle=Q^{2}$. On the norm the form is multiplicative and real, so its shell is a group; here the shell is the hyperbola, of two branches and not compact, in contrast with the compact circle that is the shell of the definite norm of the complex case. The group is ${\mathbb{C}_{\mathrm{spl}}}^{(1)}\cong\mathbb{Z}/2\mathbb{Z}\times\mathbb{R}$, with identity component $\mathcal{H}^+=\{\exp(\theta j):\theta\in\mathbb{R}\}\cong(\mathbb{R},+)$ (*Split-Complex Exponential and Lie Group Structure*, *Hyperbolic Rotations*).
 
-**Remark (the shell of the plain form).** The plain algebraic norm $\langle Q\rangle=Q^{2}$ is $\mathbb{C}_{\mathrm{spl}}$-valued, and its shell $\{Q:Q^{2}=\pm1\}$ is the four-element set $\{1,-1,j,-j\}$, a group $\{1,-1\}\times\{1,j\}\cong(\mathbb{Z}/2\mathbb{Z})^{2}$, because $Q^{2}=(q^{2}+q'^{2})+2qq'j$ forces $q^{2}+q'^{2}=1$ and $qq'=0$. The value $-1$ is not attained, since $q^{2}+q'^{2}\geq0$, so this shell is already the solution set of $Q^{2}=1$. It is not the versor group: the versors are the invertibles of norm one for the indefinite form $\langle\cdot,\cdot\rangle_{*}$, whereas this four-element shell is exactly the group of $\mathbb{C}_{\mathrm{spl}}$-linear maps preserving the Euclidean metric (*The Two Metrics of the Split-Complex Numbers*).
+**Remark (the shell of the plain form).** The plain algebraic norm $\langle Q\rangle=Q^{2}$ is $\mathbb{C}_{\mathrm{spl}}$-valued, and its shell $\{Q:Q^{2}=\pm1\}$ is the four-element set $\{1,-1,j,-j\}$, a group $\{1,-1\}\times\{1,j\}\cong(\mathbb{Z}/2\mathbb{Z})^{2}$, because $Q^{2}=(q^{2}+q'{}^{2})+2qq'j$ forces $q^{2}+q'{}^{2}=1$ and $qq'=0$. The value $-1$ is not attained, since $q^{2}+q'{}^{2}\geq0$, so this shell is already the solution set of $Q^{2}=1$. It is not the versor group: the versors are the invertibles of norm one for the indefinite form $\langle\cdot,\cdot\rangle_{*}$, whereas this four-element shell is exactly the group of $\mathbb{C}_{\mathrm{spl}}$-linear maps preserving the Euclidean metric (*The Two Metrics of the Split-Complex Numbers*).
 
 ## The Group of Linear Maps Preserving the Indefinite Form
 
@@ -121,7 +121,7 @@ The square map $u\mapsto u^{2}$ is a surjective homomorphism of the hyperbola on
 | Symbol | Meaning |
 |---|---|
 | $Q=q+jq'$, $C=c+jc'$ | elements of $\mathbb{C}_{\mathrm{spl}}$, with $q,q',c,c'\in\mathbb{R}$ |
-| $\langle Q,C\rangle_{*}=Q\bar C$ | the indefinite Hermitian form; diagonal $\langle Q\rangle_{*}=q^{2}-q'^{2}$ |
+| $\langle Q,C\rangle_{*}=Q\bar C$ | the indefinite Hermitian form; diagonal $\langle Q\rangle_{*}=q^{2}-q'{}^{2}$ |
 | $\langle Q,C\rangle=QC$ | the plain bilinear form; diagonal $\langle Q\rangle=Q^{2}$ |
 | $g(Q,C)=qc-q'c'$ | the polarisation of $\langle\cdot,\cdot\rangle_{*}$, the indefinite form preserved by the versors |
 | ${\mathbb{C}_{\mathrm{spl}}}^{(1)}=\{u:\langle u\rangle_{*}=1\}=\mathcal{H}$ | the versors, the unit hyperbola of two branches |

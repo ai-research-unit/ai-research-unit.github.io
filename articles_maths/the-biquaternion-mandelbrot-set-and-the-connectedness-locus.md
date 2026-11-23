@@ -116,7 +116,7 @@ $$
 
 and the critical-orbit locus of the plane is the product $\mathcal M\times\mathcal M$. The general plain bilinear product therefore gives the **intersection** of the two conditions, not their union.
 
-**Proof.** $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}'^2=\tilde\Pi_{\mathrm{id}}'$ and $\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}'=0$ give $(A\tilde\Pi_{\mathrm{id}}+B\tilde\Pi_{\mathrm{id}}')^2=A^2\tilde\Pi_{\mathrm{id}}+B^2\tilde\Pi_{\mathrm{id}}'$, and the parameter splits the same way; the two coordinates do not interact, so the orbit is the pair of complex orbits and both must be bounded.
+**Proof.** $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}'{}^2=\tilde\Pi_{\mathrm{id}}'$ and $\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}'=0$ give $(A\tilde\Pi_{\mathrm{id}}+B\tilde\Pi_{\mathrm{id}}')^2=A^2\tilde\Pi_{\mathrm{id}}+B^2\tilde\Pi_{\mathrm{id}}'$, and the parameter splits the same way; the two coordinates do not interact, so the orbit is the pair of complex orbits and both must be bounded.
 
 **Remark (the choice of product and the shape of the locus).** On the diagonal subalgebra the complex bilinear product has no cross term, so the locus is a product; a product that mixes the two coordinates would couple the two iterations, and the locus would be neither a product nor a union but a genuinely two-variable object. **The phrase "intersection or union of two lower-dimensional loci" is exact only where the algebra splits; where it does not, no such description holds.** The comparison of the four general products is *The Four General Products and Their Relations over the Biquaternion Algebra*.
 

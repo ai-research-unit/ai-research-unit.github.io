@@ -140,7 +140,7 @@ which is the exact sequence used to compute the cohomology of a fibration and of
 
 1. $R^qf_* = 0$ for $q<0$ and $R^0f_* = f_*$; for a closed immersion $f$, $R^qf_* = 0$ for $q>0$.
 2. There is a natural spectral sequence $E_2^{n,m} = R^pg_*(R^qf_*\mathcal{F})\Rightarrow R^{p+q}(g\circ f)_*\mathcal{F}$, the Grothendieck spectral sequence of the composite of the two left exact functors.
-3. The **base change map** $g^{-1}R^qf_*\mathcal{F}\to R^qf'_*(g'^{-1}\mathcal{F})$ for a cartesian square with maps $f, g, f', g'$ is an isomorphism when $f$ is proper and of finite cohomological dimension, or when $g$ is flat; more generally there is a base change spectral sequence.
+3. The **base change map** $g^{-1}R^qf_*\mathcal{F}\to R^qf'_*(g'{}^{-1}\mathcal{F})$ for a cartesian square with maps $f, g, f', g'$ is an isomorphism when $f$ is proper and of finite cohomological dimension, or when $g$ is flat; more generally there is a base change spectral sequence.
 4. The **projection formula** $R^qf_*\mathcal{F}\otimes_{\mathcal{O}_Y}\mathcal{G}\cong R^qf_*(\mathcal{F}\otimes_{\mathcal{O}_X}f^*\mathcal{G})$ holds when the tensor and direct image are taken over compatible structure sheaves.
 
 *Proof.* (1) is immediate from the definition; for a closed immersion the direct image is exact because the induced map on stalks is an isomorphism or zero. (2) is the Grothendieck spectral sequence applied to $F = f_*$, $G = g_*$; the hypothesis is verified by resolving on $X$, since an injective sheaf on $X$ is flabby and $R^pf_*$ of a flabby sheaf vanishes for $p>0$. (3) and (4) are the standard constructions of the subject, proved by reducing to the affine or the locally free case and using the exactness of $g^{-1}$ and the projection formula for modules.

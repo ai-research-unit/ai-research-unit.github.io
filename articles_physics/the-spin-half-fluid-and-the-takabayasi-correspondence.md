@@ -181,9 +181,9 @@ The sign of the mass density is the particle content, and charge conjugation fli
 His velocity is the current's direction, and the standard name for that choice is the Eckart frame. Relativistic hydrodynamics fixes the fluid's velocity in one of two ways. The Eckart frame takes the particle flux, and that is his, by definition: $S_{\imath}=\rho v_{\imath}$. The Landau frame takes the energy flux, the timelike eigenvector of the stress. The two coincide exactly when the energy flux vanishes in the Eckart frame, and that flux is the heat flow,
 
 $$
-q_{\imath}=\sum_\imath\varepsilon_\imath T_{\imathk}u_\imath-\epsilon\,u_{\imath},
+q_{\imath}=\sum_{\imath}\varepsilon_{\imath} T_{\imath k}u_{\imath}-\epsilon\,u_{\imath},
 \qquad
-\epsilon=\sum_{k,\rho}\varepsilon_\imath\varepsilon_\rho T_{k\rho}u_\imath u_\rho,
+\epsilon=\sum_{k,\rho}\varepsilon_{\imath}\varepsilon_\rho T_{k\rho}u_{\imath} u_\rho,
 $$
 
 with $u$ the Eckart velocity, a unit timelike vector, and $\epsilon$ the energy density it sees.

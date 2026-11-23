@@ -4,6 +4,8 @@
 
 **One coupling.** The coupling that returns the Standard Model is a single equation. It is the matching of hypercharge to the two abelian factors above it:
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 $$
 \boxed{\;\frac{1}{g_Y^2}=\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2}\quad\text{at }M_R\;}
 $$
@@ -104,7 +106,7 @@ $$
 and the solution exists only while the bracket is positive. Two consequences follow at once:
 
 - $g_R$ comes out below $g_L$, between $0.62$ and $0.73$ of it over the admissible region, so the fourth colour's right-handed sector is weaker than its left-handed one at the threshold.
-- The ratio $M_X/M_{W_R}$ lies between $2.2$ and $3.1$, not at $\sqrt2$, and a leptoquark floor of $2\times10^{2}$ TeV therefore corresponds to a $W_R$ floor of $70$ to $90$ TeV rather than to $160$.
+- The ratio $M_X/M_{W_R}$ lies between $2.2$ and $3.1$, not at $\sqrt2$, and a leptoquark floor of $3.2\times10^{-5}$ J therefore corresponds to a $W_R$ floor of $1.1$ to $1.4\times10^{-5}$ J rather than to $160$.
 
 **3.3 What it confirms.** The relation reproduces $\alpha_{\mathrm{em}}$, $\alpha_s$ and $\sin^2\theta_W$ at $M_Z$ exactly and for any admissible pair of scales, because each is built from those three numbers at $M_Z$ and run up. Those three are data at $M_Z$ — $\alpha^{-1}(M_Z)=127.95$ and $\sin^2\theta_W=0.23122$ among them — and the relation is imposed on top of them. A statement that reproduces its own inputs is a consistency condition, and a consistency condition confirms nothing.
 
@@ -121,11 +123,11 @@ $$
 
 | $M_X$ | $g_4^2$ | $\mathcal B(K_L\to\mu e)$ | against $4.7\times10^{-12}$ |
 |---|---|---|---|
-| $200$ TeV | $0.736$ | $8.9\times10^{-12}$ | excluded |
-| $233$ TeV | $0.730$ | $4.7\times10^{-12}$ | at the limit |
-| $300$ TeV | $0.718$ | $1.7\times10^{-12}$ | allowed, margin $2.8$ |
+| $3.2\times10^{-5}$ J | $0.736$ | $8.9\times10^{-12}$ | excluded |
+| $3.73\times10^{-5}$ J | $0.730$ | $4.7\times10^{-12}$ | at the limit |
+| $4.81\times10^{-5}$ J | $0.718$ | $1.7\times10^{-12}$ | allowed, margin $2.8$ |
 
-The table takes $|U_{de}U_{s\imath}|=1$, the largest value; a smaller entry multiplies every rate by its fourth power and lowers the bound by its square root, and the identity branch gives zero at every mass. The bound is $M_X\gtrsim2.3\times10^{2}$ TeV for that largest value and under that assumption, and it is a band of a factor of two rather than an order of magnitude, because the rate carries the fourth power of the mass. This is the only number in the model that a search can contradict, and it is a coupling's number: the rate is proportional to $g_4^4$, and the bound follows only once $g_4$ is replaced by a measured $\alpha_s$. The channel, its quantum numbers, its tree-level character and the reason $K_S$ does not do the same are structural and are in [Lepton Flavour in the Four-Colours Model](lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html); the substitution that turns the channel into a mass bound is what this section adds.
+The table takes $|U_{de}U_{s\imath}|=1$, the largest value; a smaller entry multiplies every rate by its fourth power and lowers the bound by its square root, and the identity branch gives zero at every mass. The bound is $M_X\gtrsim3.69\times10^{-5}$ J for that largest value and under that assumption, and it is a band of a factor of two rather than an order of magnitude, because the rate carries the fourth power of the mass. This is the only number in the model that a search can contradict, and it is a coupling's number: the rate is proportional to $g_4^4$, and the bound follows only once $g_4$ is replaced by a measured $\alpha_s$. The channel, its quantum numbers, its tree-level character and the reason $K_S$ does not do the same are structural and are in [Lepton Flavour in the Four-Colours Model](lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html); the substitution that turns the channel into a mass bound is what this section adds.
 
 ## The Boundary Condition, and Why It Fails
 
@@ -135,8 +137,8 @@ The table takes $|U_{de}U_{s\imath}|=1$, the largest value; a smaller entry mult
 
 | condition | the scale where it holds | what is wrong there |
 |---|---|---|
-| $\sin^2\theta_W=\tfrac38$ | $1.02\times10^{13}$ GeV | $\alpha_3^{-1}=36.8$ against $\alpha_L^{-1}=42.4$, $13\%$ short |
-| $g_4=g_L$ | $9.79\times10^{16}$ GeV | $\sin^2\theta_W=0.4365$ against $\tfrac38$, $16\%$ high |
+| $\sin^2\theta_W=\tfrac38$ | $1.63\times10^{3}$ J | $\alpha_3^{-1}=36.8$ against $\alpha_L^{-1}=42.4$, $13\%$ short |
+| $g_4=g_L$ | $1.57\times10^{7}$ J | $\sin^2\theta_W=0.4365$ against $\tfrac38$, $16\%$ high |
 
 The two scales are four decades apart, and no single scale is both. That is the failure: one boundary value cannot satisfy two conditions that hold at different energies.
 
@@ -227,8 +229,8 @@ The last column is where the scale enters, and it enters twice: once in the rati
 | the angle at the threshold | $\tfrac35/(1+\tfrac35)$ | $\tfrac38$ exact |
 | the two routes to $g_Y$ | normalisation against expansion | agree exactly |
 | the matching has a solution | $1/g_Y^2>1/(4g_{B-L}^2)$ | holds for $g_R/g_L\in[0.62,0.73]$ |
-| the $\tfrac38$ scale | running the measured pair up | $1.02\times10^{13}$ GeV |
-| the $g_4=g_L$ scale | running the measured pair up | $9.79\times10^{16}$ GeV |
+| the $\tfrac38$ scale | running the measured pair up | $1.63\times10^{3}$ J |
+| the $g_4=g_L$ scale | running the measured pair up | $1.57\times10^{7}$ J |
 | the separation | the two scales | four decades, so no single scale is both |
 | the parity freeze | $c_{2L}$ against $c_{2R}$ above $M_R$ | equal, so the gap does not run |
 | the required asymmetry | $2\pi\times44.6/27$ | about $10$, or thirty doublets |
@@ -240,7 +242,7 @@ The recovery is not a derivation: it shows that the measured numbers below are c
 
 The output is not a prediction: $g_R$ moves with the chosen scales, between $0.62$ and $0.73$ of $g_L$ (*The One Scale*).
 
-$\tfrac38$ is not a prediction of the unified case: it holds at $1.02\times10^{13}$ GeV, where colour is $13\%$ short (*The Boundary Condition, and Why It Fails*).
+$\tfrac38$ is not a prediction of the unified case: it holds at $1.63\times10^{3}$ J, where colour is $13\%$ short (*The Boundary Condition, and Why It Fails*).
 
 The failure of the unified case is not arithmetic: the equality is not preserved by the matter content between the thresholds (*The Boundary Condition, and Why It Fails*).
 

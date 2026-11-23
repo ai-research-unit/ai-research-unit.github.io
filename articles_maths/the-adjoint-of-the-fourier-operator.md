@@ -167,8 +167,7 @@ the previous section.
 unimodular scalar: the operators $c\mathcal F_1$ that are unitary are those with
 $\lvert c\rvert=(2\pi)^{-n/2}$.
 
-**Proof.** $(c\mathcal F_1)^\dagger(c\mathcal F_1)=\lvert c\rvert^2\,\mathcal F_1^\dagger\mathcal F_1
-=\lvert c\rvert^2(2\pi)^n\mathrm{id}$, so unitarity is $\lvert c\rvert^2=(2\pi)^{-n}$; the phase is free. The
+**Proof.** $(c\mathcal F_1)^\dagger(c\mathcal F_1)=\lvert c\rvert^2\,\mathcal F_1^\dagger\mathcal F_1 =\lvert c\rvert^2(2\pi)^n\mathrm{id}$, so unitarity is $\lvert c\rvert^2=(2\pi)^{-n}$; the phase is free. The
 ordinary-frequency convention is the case $c=(2\pi)^{-n/2}$ of the angular one.
 
 **Remark (the classical normalisation).** The two classical normalisations are the one of the present corpus,

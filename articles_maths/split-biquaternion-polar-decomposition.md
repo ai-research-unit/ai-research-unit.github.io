@@ -125,7 +125,7 @@ and the last form exhibits the group as a central non-compact factor times a com
 $$
 \mathbb{C}_{\mathrm{spl},>0}\times\left(\mathrm{Sp}(1)\times\mathrm{Sp}(1)\right)\longrightarrow{\mathbb{B}_{\mathrm{spl}}}^{\times} ,
 $$
-and it is a bijection, not merely a factorisation of manifolds: if $M_{\mathrm{mod}}\tilde{U} = M_{\mathrm{mod}}'\tilde{U}'$ then $M_{\mathrm{mod}}^{-1}M_{\mathrm{mod}}' = \tilde{U}\tilde{U}'^{-1}$ lies in the intersection of $\mathbb{C}_{\mathrm{spl},>0}$ with the unit sphere, which is $\{e_t\}$ — a central element $\varrho_+\tilde\Pi_{\mathrm{id},1} + \varrho_-\tilde\Pi_{\mathrm{id},2}$ has norm $\varrho_+^2\tilde\Pi_{\mathrm{id},1} + \varrho_-^2\tilde\Pi_{\mathrm{id},2}$, equal to $e_t$ with non-negative components only when $\varrho_+ = \varrho_- = 1$ — so that $M_{\mathrm{mod}} = M_{\mathrm{mod}}'$ and $\tilde{U} = \tilde{U}'$. This is the point at which the split biquaternion case is simpler than the biquaternion case, where the corresponding multiplication map on $\mathbb{C}^*\times SL(2,\mathbb{C})$ is two-to-one, the two preimages differing by the sign of the modulus and of the $*$-unitary factor, and the branch $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ is what removes the doubling.
+and it is a bijection, not merely a factorisation of manifolds: if $M_{\mathrm{mod}}\tilde{U} = M_{\mathrm{mod}}'\tilde{U}'$ then $M_{\mathrm{mod}}^{-1}M_{\mathrm{mod}}' = \tilde{U}\tilde{U}'{}^{-1}$ lies in the intersection of $\mathbb{C}_{\mathrm{spl},>0}$ with the unit sphere, which is $\{e_t\}$ — a central element $\varrho_+\tilde\Pi_{\mathrm{id},1} + \varrho_-\tilde\Pi_{\mathrm{id},2}$ has norm $\varrho_+^2\tilde\Pi_{\mathrm{id},1} + \varrho_-^2\tilde\Pi_{\mathrm{id},2}$, equal to $e_t$ with non-negative components only when $\varrho_+ = \varrho_- = 1$ — so that $M_{\mathrm{mod}} = M_{\mathrm{mod}}'$ and $\tilde{U} = \tilde{U}'$. This is the point at which the split biquaternion case is simpler than the biquaternion case, where the corresponding multiplication map on $\mathbb{C}^*\times SL(2,\mathbb{C})$ is two-to-one, the two preimages differing by the sign of the modulus and of the $*$-unitary factor, and the branch $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ is what removes the doubling.
 
 The Lie algebra of the group of invertibles is $\mathbb{R}^2\oplus\mathrm{SU}(2)\oplus\mathrm{SU}(2)$: the abelian summand $\mathbb{R}^2$ is central and non-compact, and the two $\mathrm{SU}(2)$ summands are compact, one for each half. The correct statement of what the centrality of $\mathbb{R}^2$ implies is not that every non-compact one-parameter subgroup is central, which is false: the generator $e_t + \vec e_x$ of the group of invertibles's Lie algebra has a central component and a non-central one, and the subgroup it generates,
 $$
@@ -193,7 +193,7 @@ The absence of the branch is the algebraic content of the remark in the corpus t
 The modulus $M_{\mathrm{mod}}$ must be distinguished from the two other positive quantities attached to the algebra, and the article uses them in the comparison section. The **Euclidean norm** of the corpus is
 
 $$
-\|\tilde{Q}\| = \sqrt{\sum_\mu\left(q_\mu^2+q'^2_\mu\right)} = \sqrt{|\tilde q|^2+|\tilde q'|^2} ,
+\|\tilde{Q}\| = \sqrt{\sum_\mu\left(q_\mu^2+q'{}^2_\mu\right)} = \sqrt{|\tilde q|^2+|\tilde q'|^2} ,
 $$
 
 which is definite and not multiplicative. The **split complex modulus** of the split-biquaternion norm is
@@ -507,7 +507,7 @@ For $\tilde{Q} = 0$ the modulus is $M_{\mathrm{mod}} = 0$ and the rotor is arbit
 
 ### The Four Conjugations and the Two Factors
 
-The four conjugations act on the pair $(\tilde q,\tilde q')$ as follows: ${}^{\natural}$ conjugates the two quaternion parts, $\tilde{Q}^{\natural} = \tilde q^{\natural} + j \tilde q'^{\natural}$; $\bar{\cdot}$ changes the sign of the split complex part, $\bar{\tilde{Q}} = \tilde q - j\tilde q'$, so that $\bar{\tilde{Q}_{\pm}} = \tilde{Q}_{\mp}$; ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ does both; and $\flat = -{}^{*}$. Of these, ${}^{\natural}$ and ${}^{*}$ are anti-automorphisms, $\bar{\cdot}$ is an automorphism, and $\flat$ is neither, satisfying $(\tilde{Q}_1\tilde{Q}_2)^{\flat} = -\tilde{Q}_2^{\flat}\tilde{Q}_1^{\flat}$ in place of an anti-automorphism law.
+The four conjugations act on the pair $(\tilde q,\tilde q')$ as follows: ${}^{\natural}$ conjugates the two quaternion parts, $\tilde{Q}^{\natural} = \tilde q^{\natural} + j \tilde q'{}^{\natural}$; $\bar{\cdot}$ changes the sign of the split complex part, $\bar{\tilde{Q}} = \tilde q - j\tilde q'$, so that $\bar{\tilde{Q}_{\pm}} = \tilde{Q}_{\mp}$; ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ does both; and $\flat = -{}^{*}$. Of these, ${}^{\natural}$ and ${}^{*}$ are anti-automorphisms, $\bar{\cdot}$ is an automorphism, and $\flat$ is neither, satisfying $(\tilde{Q}_1\tilde{Q}_2)^{\flat} = -\tilde{Q}_2^{\flat}\tilde{Q}_1^{\flat}$ in place of an anti-automorphism law.
 
 On the polar data the first three act as follows. Quaternion conjugation fixes the modulus — $M_{\mathrm{mod}}$ has real components, so $\bar M_{\mathrm{mod}} = M_{\mathrm{mod}}$ — and inverts each half of the rotor,
 
@@ -576,10 +576,10 @@ with the split complex cosine, sine and square root taken componentwise in the c
 The square of the vector part is a split complex number with **non-negative** components:
 
 $$
-\theta^2 = \sum_kQ_k^2 = \sum_k\left(q_k^2+q'^2_k\right) + 2j\sum_kq_kq'_k , \qquad \theta^2_\pm = \sum_k\left(q_k\pm q'_k\right)^2 \ge 0 ,
+\theta^2 = \sum_kQ_k^2 = \sum_k\left(q_k^2+q'{}^2_k\right) + 2j\sum_kq_kq'_k , \qquad \theta^2_\pm = \sum_k\left(q_k\pm q'_k\right)^2 \ge 0 ,
 $$
 
-so $\theta$ is a split complex number with non-negative components and the exponential of a vector part is trigonometric in both halves, $\exp(\vec Q)_\pm = \cos\theta_\pm + (\sin\theta_\pm/\theta_\pm)\vec Q_\pm$. There is therefore **no hyperbolic case for the vector part**. A classification of the exponential of a vector part by the sign of $\theta^2$ is not available in this algebra: the real part of $\theta^2$ is $\sum_k(q_k^2+q'^2_k)$, which is non-negative for every vector part and vanishes only at $\vec Q = 0$, and a split complex number has no sign to classify against. What distinguishes the two characters of $\theta^2$ is instead the equality of its two components:
+so $\theta$ is a split complex number with non-negative components and the exponential of a vector part is trigonometric in both halves, $\exp(\vec Q)_\pm = \cos\theta_\pm + (\sin\theta_\pm/\theta_\pm)\vec Q_\pm$. There is therefore **no hyperbolic case for the vector part**. A classification of the exponential of a vector part by the sign of $\theta^2$ is not available in this algebra: the real part of $\theta^2$ is $\sum_k(q_k^2+q'{}^2_k)$, which is non-negative for every vector part and vanishes only at $\vec Q = 0$, and a split complex number has no sign to classify against. What distinguishes the two characters of $\theta^2$ is instead the equality of its two components:
 
 $$
 \theta^2\in\mathbb{R} \quad\Longleftrightarrow\quad \sum_kq_kq'_k = 0 \quad\Longleftrightarrow\quad \theta^2_+ = \theta^2_- ,
@@ -706,7 +706,7 @@ The representation also has an exponential form. The exponential of an element w
 | $\exp$, $\log$ | the exponential and the logarithm, componentwise on the two halves, $\log$ defined exactly on the invertible elements |
 | $Q_t$, $\vec Q$ | the split complex scalar part and the vector part of an element |
 | $\theta$ | the split complex angle of the exponential form, $\theta^2 = \sum_kQ_k^2$, with non-negative components |
-| $\|\tilde{Q}\|$ | the Euclidean norm, $\sqrt{\sum_\mu(q_\mu^2+q'^2_\mu)}$, not multiplicative |
+| $\|\tilde{Q}\|$ | the Euclidean norm, $\sqrt{\sum_\mu(q_\mu^2+q'{}^2_\mu)}$, not multiplicative |
 
 ## Further Reading
 

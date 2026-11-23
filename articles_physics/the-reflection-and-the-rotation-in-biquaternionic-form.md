@@ -69,7 +69,7 @@ Two derived forms are used below, both read off the frame basis operators at the
 $$
 w = q_t e_t + i q_x\vec e_x + i q_y\vec e_y + i q_z\vec e_z ,
 \qquad
-iR_{\mathrm{axf},\vec e_x}\times(\text{image of } w) = q_t\, iR_{\mathrm{axf},\vec e_x} + \sum_{\imath\in\{x,y,z\}} q_\imath\, iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y} ,
+iR_{\mathrm{axf},\vec e_x}\times(\text{image of } w) = q_t\, iR_{\mathrm{axf},\vec e_x} + \sum_{\imath\in\{x,y,z\}} q_{\imath}\, iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y} ,
 $$
 and a trivector is the frame basis operator applied after the image of an element of $\mathbb{B}_{\Phi}$, up to a sign that depends on the orientation chosen for each trivector.
 
@@ -77,7 +77,7 @@ The decisive consequence concerns the **metric**. The biquaternion norm is the s
 
 The same fact appears in the square of a vector. For $w$ as above,
 $$
-\Bigl(q_t\, iR_{\mathrm{axf},\vec e_x} + \sum_{\imath\in\{x,y,z\}} q_\imath\, iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}\Bigr)^2
+\Bigl(q_t\, iR_{\mathrm{axf},\vec e_x} + \sum_{\imath\in\{x,y,z\}} q_{\imath}\, iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}\Bigr)^2
 = \bigl(q_t^2 - q_x^2 - q_y^2 - q_z^2\bigr)\,I_4 ,
 $$
 with no relative sign between the square of the basis operator and the biquaternion norm. The absence of that sign is the sign pattern showing through.
@@ -91,7 +91,7 @@ $$
 $$
 where $\bar{\tilde Q}$ is the conjugation of the coefficients, $i\mapsto -i$, with the units $e_t,\vec e_x,\vec e_y,\vec e_z$ fixed. That map fixes $\mathbb{B}_{H}$ and negates $\mathbb{B}_{iH}$, so the identity says that **conjugation by the frame basis operator is the bar**: it is the spacetime-side avatar of the split into the quaternion sector and its imaginary multiple. It preserves each of the two sectors, because it commutes with the Hermitian conjugation whose fixed spaces they are; the sector exchange is multiplication by $i$, not a conjugation.
 
-Among the four generators, the frame basis operator is unique in being the bar itself. Conjugation by any of the four reverses the imaginary basis operator, since the image of $i$ is $L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ and every generator anticommutes with it, so all four carry the scalar imaginary $i$ to $-i$ and act on the biquaternions as conjugate-linear maps rather than $\mathbb{C}$-linear ones. Only the time one leaves the quaternion units alone. Conjugation by a spatial generator is the bar composed with a sign change of two units: it fixes $\vec e_\imath$ and negates the two units $\vec e_j$ with $j\neq k$, and the bar then flips the imaginary multiples the other way round. The spatial generators reflect the quaternion units; the time one conjugates them without a reflection.
+Among the four generators, the frame basis operator is unique in being the bar itself. Conjugation by any of the four reverses the imaginary basis operator, since the image of $i$ is $L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ and every generator anticommutes with it, so all four carry the scalar imaginary $i$ to $-i$ and act on the biquaternions as conjugate-linear maps rather than $\mathbb{C}$-linear ones. Only the time one leaves the quaternion units alone. Conjugation by a spatial generator is the bar composed with a sign change of two units: it fixes $\vec e_{\imath}$ and negates the two units $\vec e_j$ with $j\neq k$, and the bar then flips the imaginary multiples the other way round. The spatial generators reflect the quaternion units; the time one conjugates them without a reflection.
 
 The frame basis operator completes the reading of the three conjugations of $\mathbb{B}$, and the three can be written together. Reversal, $\mathrm{rev}$, is the anti-automorphism that reverses the order of the factors in a product: on an array it is the transpose, and on the biquaternions it is quaternion conjugation. The image does not carry one of the two into the other, because it sends the scalar $i$ to a right multiplication rather than to a scalar, and the frame basis operator is exactly the difference. Of the three conjugations, the bar and the quaternion conjugation each carry one factor of the frame, and the composite carries none:
 $$
@@ -114,7 +114,7 @@ With the split in hand, the two sets can be described, and they are not of the s
 $$
 SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{lor}}\in\mathbb{B} : \langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1\},
 $$
-a group of real dimension six, the double cover of the restricted Lorentz group. The sign of the norm is the time orientation: an even unit element with $\langle\tilde U\rangle_{\natural}=+1$ is orthochronous, and one with $\langle\tilde U\rangle_{\natural}=-1$ reverses time, which is why the group defined here is the restricted one. Its Lie algebra is spanned by the six bivectors, the images of the six directions $\vec e_\imath$ and $i\vec e_\imath$, $k=1,2,3$. This is the space in which the rotors of the relativity articles live and act: on four-vectors in *Relativistic Mechanics in Biquaternionic Form* and *Exercise: Boosting a Four-Velocity and Rapidity Composition*, on the elements in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, on states in *Quantum Physics in Biquaternionic Form*, and in the composition of rotations of *Exercise: The Thomas Precession*.
+a group of real dimension six, the double cover of the restricted Lorentz group. The sign of the norm is the time orientation: an even unit element with $\langle\tilde U\rangle_{\natural}=+1$ is orthochronous, and one with $\langle\tilde U\rangle_{\natural}=-1$ reverses time, which is why the group defined here is the restricted one. Its Lie algebra is spanned by the six bivectors, the images of the six directions $\vec e_{\imath}$ and $i\vec e_{\imath}$, $k=1,2,3$. This is the space in which the rotors of the relativity articles live and act: on four-vectors in *Relativistic Mechanics in Biquaternionic Form* and *Exercise: Boosting a Four-Velocity and Rapidity Composition*, on the elements in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, on states in *Quantum Physics in Biquaternionic Form*, and in the composition of rotations of *Exercise: The Thomas Precession*.
 
 Two subfamilies are worth separating, because the series uses them differently:
 

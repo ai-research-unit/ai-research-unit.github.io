@@ -196,7 +196,7 @@ $$
 A function $f$ is holomorphic iff $\bar{\partial} f = 0$. The **Laplacian** on $\mathbb{C}$ is
 
 $$
-\Delta = 4 \partial \bar{\partial} = \frac{\partial^2}{\partial q^2} + \frac{\partial^2}{\partial q'^2},
+\Delta = 4 \partial \bar{\partial} = \frac{\partial^2}{\partial q^2} + \frac{\partial^2}{\partial q'{}^2},
 $$
 
 where $\partial = \partial/\partial Q$.

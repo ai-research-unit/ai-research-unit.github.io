@@ -88,7 +88,7 @@ The second law is the statement that the scalar part of the divergence is non-ne
 $$
 \mathrm{Sc}\left((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{ent}}\right)
 =\partial_t\left(s_{\mathrm{ent}}\gamma\right)
-+\partial_\imath\left(s_{\mathrm{ent}}\gamma\beta_{\mathrm{vel},k}\right)
++\partial_{\imath}\left(s_{\mathrm{ent}}\gamma\beta_{\mathrm{vel},k}\right)
 =\sigma_{\mathrm{ent}}\ \ge 0,
 $$
 
@@ -96,7 +96,7 @@ where $\sigma_{\mathrm{ent}}$ is the entropy production per unit coordinate volu
 
 Read as a balance, it says that the entropy in a region changes by the flux through the boundary plus the production inside. Read as an inequality, it says that the production cannot be negative, so entropy is not destroyed anywhere. The first reading is the one the fluid equations use; the second is the one the state's monotonicity uses, and the corpus keeps the two apart because the first holds for the fields and the second for the functional, which is [Coarse-Graining and the Biquaternion Entropy Functional](coarse-graining-and-the-biquaternion-entropy-functional.html)'s and is cited here rather than re-derived.
 
-The production vanishes identically when the current is divergence-free, $\partial_t(s_{\mathrm{ent}}\gamma)+\partial_\imath(s_{\mathrm{ent}}\gamma\beta_{\mathrm{vel},k})=0$, which is the statement that the total entropy of an isolated region is constant. In equilibrium this is what happens, and the mechanics of why is the next subsection's.
+The production vanishes identically when the current is divergence-free, $\partial_t(s_{\mathrm{ent}}\gamma)+\partial_{\imath}(s_{\mathrm{ent}}\gamma\beta_{\mathrm{vel},k})=0$, which is the statement that the total entropy of an isolated region is constant. In equilibrium this is what happens, and the mechanics of why is the next subsection's.
 
 ### Equilibrium: why an ideal fluid produces nothing
 
@@ -122,14 +122,14 @@ In the first-order form the display above evaluates to
 
 $$
 \sigma_{\mathrm{ent}}=\frac{1}{T}\left(\zeta\,\theta^{2}+2\digamma_{\mathrm{vis}}\,\sigma^{\mathrm{sh}}_{\imath\jmath}\sigma^{\mathrm{sh}}_{\imath\jmath}
-+\kappa_{\mathrm{th}}\,\frac{\partial_\imath T\,\partial_\imath T}{T}\right)+\cdots,
++\kappa_{\mathrm{th}}\,\frac{\partial_{\imath} T\,\partial_{\imath} T}{T}\right)+\cdots,
 $$
 
 with $\zeta$ the bulk viscosity, $\digamma_{\mathrm{vis}}$ the shear viscosity and $\kappa_{\mathrm{th}}$ the thermal conductivity, $\sigma^{\mathrm{sh}}_{\imath\jmath}$ the shear of the flow and $\theta$ its expansion. Every term is a square multiplied by a coefficient that positivity requires to be non-negative, so the inequality holds if and only if the transport coefficients are non-negative; that statement is the *content* of the second law at first order and not a decoration on it.
 
 The first-order form is not causal and is not stable, which is [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html)'s subject: the ellipsis hides the relaxation terms that restore hyperbolicity. This article writes the ellipsis and does not open it, because the production's *form* — a sum of squares with non-negative coefficients — survives the relaxation structure and is the part that the rest of the category needs.
 
-For a pure shear, $\theta=0$ and $\partial_\imath T=0$, so $\sigma_{\mathrm{ent}}=2\digamma_{\mathrm{vis}}\sigma^{\mathrm{sh}}_{\imath\jmath}\sigma^{\mathrm{sh}}_{\imath\jmath}/T\ge0$ for $\digamma_{\mathrm{vis}}\ge0$: a sheared fluid heats and its entropy grows. **A negative shear viscosity would make the production negative and the inequality fail**, which is the standard argument that $\digamma_{\mathrm{vis}}\ge0$ is not an assumption but a consequence.
+For a pure shear, $\theta=0$ and $\partial_{\imath} T=0$, so $\sigma_{\mathrm{ent}}=2\digamma_{\mathrm{vis}}\sigma^{\mathrm{sh}}_{\imath\jmath}\sigma^{\mathrm{sh}}_{\imath\jmath}/T\ge0$ for $\digamma_{\mathrm{vis}}\ge0$: a sheared fluid heats and its entropy grows. **A negative shear viscosity would make the production negative and the inequality fail**, which is the standard argument that $\digamma_{\mathrm{vis}}\ge0$ is not an assumption but a consequence.
 
 ## The Quantum Contribution
 
@@ -179,7 +179,7 @@ The functional is a number attached to a state, the current is a field attached 
 
 The last column is $s_{\mathrm{ent}}^{2}=9$ in every row, which is the numerical form of the contraction $J_{\Phi,\mathrm{ent},t}^{2}-\lvert\vec J_{\Phi,\mathrm{ent}}\rvert^{2}=s_{\mathrm{ent}}^{2}$ and the check on where the $\gamma$ sits.
 
-With $\zeta=0.1$, $\theta=0.5$, $\digamma_{\mathrm{vis}}=0.2$, $\sigma^{\mathrm{sh}}_{\imath\jmath}\sigma^{\mathrm{sh}}_{\imath\jmath}=0.3$, $\kappa_{\mathrm{th}}=0.05$, $\partial_\imath T\,\partial_\imath T=0.4$ and $T=2$: the three terms of the first-order production are $\zeta\theta^{2}/T=0.012\,500$, $2\digamma_{\mathrm{vis}}\sigma^{\mathrm{sh}}_{\imath\jmath}\sigma^{\mathrm{sh}}_{\imath\jmath}/T=0.060\,000$ and $\kappa_{\mathrm{th}}\partial_\imath T\,\partial_\imath T/T^{2}=0.005\,000$, and the total is $0.077\,500$. Every term is positive and the sum is positive, so the display's sign is not a coincidence of the chosen numbers but the consequence of each coefficient being positive.
+With $\zeta=0.1$, $\theta=0.5$, $\digamma_{\mathrm{vis}}=0.2$, $\sigma^{\mathrm{sh}}_{\imath\jmath}\sigma^{\mathrm{sh}}_{\imath\jmath}=0.3$, $\kappa_{\mathrm{th}}=0.05$, $\partial_{\imath} T\,\partial_{\imath} T=0.4$ and $T=2$: the three terms of the first-order production are $\zeta\theta^{2}/T=0.012\,500$, $2\digamma_{\mathrm{vis}}\sigma^{\mathrm{sh}}_{\imath\jmath}\sigma^{\mathrm{sh}}_{\imath\jmath}/T=0.060\,000$ and $\kappa_{\mathrm{th}}\partial_{\imath} T\,\partial_{\imath} T/T^{2}=0.005\,000$, and the total is $0.077\,500$. Every term is positive and the sum is positive, so the display's sign is not a coincidence of the chosen numbers but the consequence of each coefficient being positive.
 
 What the numbers do not check. They do not check that $\sigma_{\mathrm{ent}}\ge0$ for *every* flow — that is a theorem about the transport coefficients and not an arithmetic fact. They do not check the quantum stress's conservation, which is the polar-form article's. They check the two identities of this article — the norm and the decomposition of the production — and nothing further.
 
@@ -199,7 +199,7 @@ The entropy current is $\tilde J_{\Phi,\mathrm{ent}}=s_{\mathrm{ent}}\gamma(e_t+
 
 The self-contraction is the proper entropy density squared, $J_{\Phi,\mathrm{ent},t}^{2}-\lvert\vec J_{\Phi,\mathrm{ent}}\rvert^{2}=\gamma^{2}s_{\mathrm{ent}}^{2}(1-\beta_{\mathrm{vel}}^{2})=s_{\mathrm{ent}}^{2}$, checked at three velocities with $s_{\mathrm{ent}}=3$ where the value is $9$ in every frame; the quaternionic norm of the same element is $\gamma^{2}s_{\mathrm{ent}}^{2}(1+\beta_{\mathrm{vel}}^{2})$ and is not the invariant, the two coinciding only when the temporal slot carries an $i$. The thermal element of the moving-frame article has the quaternionic norm $-\beta^{2}$, the sign difference being exactly that $i$.
 
-The second law is one divergence, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{ent}})=\partial_t(s_{\mathrm{ent}}\gamma)+\partial_\imath(s_{\mathrm{ent}}\gamma\beta_{\mathrm{vel},k})=\sigma_{\mathrm{ent}}\ge0$. An ideal fluid has $\sigma_{\mathrm{ent}}=0$ because $\sigma_{\mathrm{spc}}$ is constant along the flow; off equilibrium the production is $\sigma_{\mathrm{ent}}=T^{-1}(\zeta\theta^{2}+2\digamma_{\mathrm{vis}}\sigma^{\mathrm{sh}}_{\imath\jmath}\sigma^{\mathrm{sh}}_{\imath\jmath}+\kappa_{\mathrm{th}}\partial_\imath T\,\partial_\imath T/T)$ plus relaxation terms, a sum of squares whose sign is the non-negativity of the transport coefficients. Evaluated once at $T=2$, the three terms of the bracket are $\zeta\theta^{2}=0.025\,000$, $2\digamma_{\mathrm{vis}}\sigma^{\mathrm{sh}}_{\imath\jmath}\sigma^{\mathrm{sh}}_{\imath\jmath}=0.120\,000$ and $\kappa_{\mathrm{th}}\partial_\imath T\,\partial_\imath T/T=0.010\,000$, which is $\sigma_{\mathrm{ent}}=0.077\,500$ after the division by $T$.
+The second law is one divergence, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{ent}})=\partial_t(s_{\mathrm{ent}}\gamma)+\partial_{\imath}(s_{\mathrm{ent}}\gamma\beta_{\mathrm{vel},k})=\sigma_{\mathrm{ent}}\ge0$. An ideal fluid has $\sigma_{\mathrm{ent}}=0$ because $\sigma_{\mathrm{spc}}$ is constant along the flow; off equilibrium the production is $\sigma_{\mathrm{ent}}=T^{-1}(\zeta\theta^{2}+2\digamma_{\mathrm{vis}}\sigma^{\mathrm{sh}}_{\imath\jmath}\sigma^{\mathrm{sh}}_{\imath\jmath}+\kappa_{\mathrm{th}}\partial_{\imath} T\,\partial_{\imath} T/T)$ plus relaxation terms, a sum of squares whose sign is the non-negativity of the transport coefficients. Evaluated once at $T=2$, the three terms of the bracket are $\zeta\theta^{2}=0.025\,000$, $2\digamma_{\mathrm{vis}}\sigma^{\mathrm{sh}}_{\imath\jmath}\sigma^{\mathrm{sh}}_{\imath\jmath}=0.120\,000$ and $\kappa_{\mathrm{th}}\partial_{\imath} T\,\partial_{\imath} T/T=0.010\,000$, which is $\sigma_{\mathrm{ent}}=0.077\,500$ after the division by $T$.
 
 The quantum part does not enter the production. It enters the mass shell, $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$, and the stress is conserved on the flows that obey it; the pure state has no entropy, so its current vanishes and the second law is saturated. Entropy from a quantum fluid comes from friction between the component that carries the quantum stress and the component that carries the entropy, which is [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html)'s subject and is not derived here.
 
@@ -221,7 +221,7 @@ The functional of [Coarse-Graining and the Biquaternion Entropy Functional](coar
 | $\gamma=(1-\beta_{\mathrm{vel}}^{2})^{-1/2}$ | Boost factor |
 | $\langle\ \rangle_{\natural}$ | Quaternionic norm, $\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, a sum of squares |
 | $J_{\Phi,\mathrm{ent},t}^{2}-\lvert\vec J_{\Phi,\mathrm{ent}}\rvert^{2}$ | The contraction of the current with itself, the invariant this article uses |
-| $\tilde Q$, $Q_t$, $Q_\imath$ | A general element and its temporal and spatial coefficients |
+| $\tilde Q$, $Q_t$, $Q_{\imath}$ | A general element and its temporal and spatial coefficients |
 | $\mathrm{Sc}$ | Scalar part |
 | $(\tilde\nabla_\Phi)^{\natural}$ | The algebra's divergence operator |
 | $\tilde Q^{*}$ | The conjugation; $\tilde Q^{*}=\tilde Q$ is Hermiticity |

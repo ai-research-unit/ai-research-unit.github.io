@@ -151,7 +151,7 @@ The whole basis has vanishing norm. All four elements are rank-one in the matrix
 The bases of one family form a torsor under a one-parameter complex gauge.
 
 $$
-\vec\Pi_{\mathrm{nil}}'_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad \vec\Pi_{\mathrm{nil}}'_{-+}=t\,\vec\Pi_{\mathrm{nil},-+},\qquad t\in\mathbb{C}^{\times} ,
+\vec\Pi_{\mathrm{nil}}'{}_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad \vec\Pi_{\mathrm{nil}}'{}_{-+}=t\,\vec\Pi_{\mathrm{nil},-+},\qquad t\in\mathbb{C}^{\times} ,
 $$
 
 two real parameters, and no basis of the family is distinguished.
@@ -322,7 +322,7 @@ The boundary. $\varsigma_{\mathrm{prc}}$ is complex-linear and it is a legitimat
 Read: completing the cut to a basis needs one point in each mixed line, and the choice is free up to a complex parameter.
 
 $$
-\vec\Pi_{\mathrm{nil}}'_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad \vec\Pi_{\mathrm{nil}}'_{-+}=t\,\vec\Pi_{\mathrm{nil},-+},\qquad t\in\mathbb{C}^{\times} .
+\vec\Pi_{\mathrm{nil}}'{}_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad \vec\Pi_{\mathrm{nil}}'{}_{-+}=t\,\vec\Pi_{\mathrm{nil},-+},\qquad t\in\mathbb{C}^{\times} .
 $$
 
 Two real parameters, of which one is a phase and one is a scale. The modulus of $t$ rescales the two nilpotent directions reciprocally; the argument rotates them. The product normalisation $\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}=\tilde\Pi_{\mathrm{id},+}$ fixes the product of the two scalings and leaves their ratio free.

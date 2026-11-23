@@ -4,7 +4,7 @@
 
 A charged particle in a uniform magnetic field has a discrete energy spectrum — the Landau levels — even though it is free in the field direction. The problem is the simplest exactly solvable system in which the Hamiltonian depends on a gauge potential, and it is the non-relativistic cornerstone of the quantum Hall effect. This article solves it in the biquaternion framework and reads the result algebraically.
 
-The biquaternion content is a single, decisive fact: the **magnetic field enters the Hamiltonian as a central commutator**. The mechanical momentum $\tilde\pi_\imath=(p_\imath-ϙA_\imath)e_t$ is Hermitian in $\mathbb{B}_{\Psi}$ and central, and its two transverse components do not commute. Their commutator is a pure imaginary multiple of $e_t$,
+The biquaternion content is a single, decisive fact: the **magnetic field enters the Hamiltonian as a central commutator**. The mechanical momentum $\tilde\pi_{\imath}=(p_{\imath}-ϙA_{\imath})e_t$ is Hermitian in $\mathbb{B}_{\Psi}$ and central, and its two transverse components do not commute. Their commutator is a pure imaginary multiple of $e_t$,
 
 $$
 [\tilde\pi_x,\tilde\pi_y]=i\,\frac{h}{2\pi}\,ϙB_z\,e_t ,
@@ -24,12 +24,12 @@ The non-relativistic Hamiltonian of a charge $ϙ$ in a vector potential $\vec A(
 
 $$
 H=\left[\frac{1}{2\,m}\left(\vec p-q\vec A\right)^2+ϙ\xi_{\mathrm{scp}}\right]e_t
-=\frac{1}{2\,m}\sum_{\imath\in\{x,y,z\}}\tilde\pi_\imath^2 ,
+=\frac{1}{2\,m}\sum_{\imath\in\{x,y,z\}}\tilde\pi_{\imath}^2 ,
 \qquad
-\tilde\pi_\imath=\left(p_\imath-ϙA_\imath\right)e_t ,
+\tilde\pi_{\imath}=\left(p_{\imath}-ϙA_{\imath}\right)e_t ,
 $$
 
-where each $\tilde\pi_\imath$ is a central Hermitian operator (a multiple of $e_t$) and the sum is over the three spatial directions. Because $A_\imath$ and $\xi_{\mathrm{scp}}$ are ordinary real functions of position, they multiply the central element $e_t$, and the Hamiltonian is central. The mechanical momentum components act on the envelope and multiply by $e_t$, so they commute with the module. The magnetic field changes the Hamiltonian's spectrum by changing the operator algebra of the envelope; it does not touch the module.
+where each $\tilde\pi_{\imath}$ is a central Hermitian operator (a multiple of $e_t$) and the sum is over the three spatial directions. Because $A_{\imath}$ and $\xi_{\mathrm{scp}}$ are ordinary real functions of position, they multiply the central element $e_t$, and the Hamiltonian is central. The mechanical momentum components act on the envelope and multiply by $e_t$, so they commute with the module. The magnetic field changes the Hamiltonian's spectrum by changing the operator algebra of the envelope; it does not touch the module.
 
 For a uniform field $\vec B=B\vec u_z$ the vector potential can be chosen in many gauges, all related by $\vec A\to\vec A+\vec\nabla_\Phi\digamma_{\mathrm{gau}}$, and the spectrum is gauge invariant. In the biquaternion interpretation the gauge freedom is a freedom in the central part of the operator algebra: $\digamma_{\mathrm{gau}}$ is a real scalar and $\vec\nabla_\Phi\digamma_{\mathrm{gau}}$ is a real quaternion, so the gauge transformation shifts $\tilde\pi$ by a real-vector multiple of $e_t$ and leaves the central structure untouched. The field strength, which is gauge invariant, is the object with algebraic meaning.
 
@@ -38,7 +38,7 @@ For a uniform field $\vec B=B\vec u_z$ the vector potential can be chosen in man
 The components of the mechanical momentum do not commute. With the convention $\vec B=\vec\nabla_\Phi\times\vec A$, a direct computation gives
 
 $$
-\boxed{\;[\tilde\pi_\imath,\tilde\pi_l]=i\,\frac{h}{2\pi}\,ϙ\,\varepsilon_{k l\,n_{\mathrm{idx}}}B_{n_{\mathrm{idx}}}\,e_t\;},
+\boxed{\;[\tilde\pi_{\imath},\tilde\pi_l]=i\,\frac{h}{2\pi}\,ϙ\,\varepsilon_{k l\,n_{\mathrm{idx}}}B_{n_{\mathrm{idx}}}\,e_t\;},
 $$
 
 so that, for $\vec B=B\vec u_z$,
@@ -166,7 +166,7 @@ $$
 is conserved, and it is central. The transverse problem has two independent oscillator structures: the **cyclotron** ladder, built from $\tilde\pi_x$ and $\tilde\pi_y$, which raises the energy by $hf_{\mathrm{frq},c}$, and the **guiding-centre** ladder, built from the centre-of-orbit coordinates
 
 $$
-R_\imath=x_\imath+\frac{1}{m\omega_c^{\mathrm{s}}}\,\varepsilon_{k l\,n_{\mathrm{idx}}}\,\tilde\pi_l\,\vec u_{B,m} ,
+R_{\imath}=x_{\imath}+\frac{1}{m\omega_c^{\mathrm{s}}}\,\varepsilon_{k l\,n_{\mathrm{idx}}}\,\tilde\pi_l\,\vec u_{B,m} ,
 \qquad
 \omega_c^{\mathrm{s}}=\frac{ϙB}{m} ,
 $$
@@ -265,10 +265,10 @@ This is the sharpest illustration in the subcategory of what "spin 0" buys. The 
 
 ## Summary
 
-The biquaternion Hamiltonian of a spin-0 charge in a uniform magnetic field is central, $H=\frac{1}{2\,m}\sum_{\imath\in\{x,y,z\}}\tilde\pi_\imath^2$ with $\tilde\pi_\imath=(p_\imath-ϙA_\imath)e_t$, and the field strength is the central commutator
+The biquaternion Hamiltonian of a spin-0 charge in a uniform magnetic field is central, $H=\frac{1}{2\,m}\sum_{\imath\in\{x,y,z\}}\tilde\pi_{\imath}^2$ with $\tilde\pi_{\imath}=(p_{\imath}-ϙA_{\imath})e_t$, and the field strength is the central commutator
 
 $$
-[\tilde\pi_\imath,\tilde\pi_l]=i\,\frac{h}{2\pi}\,ϙ\varepsilon_{k l\,n_{\mathrm{idx}}}B_{n_{\mathrm{idx}}}\,e_t ,
+[\tilde\pi_{\imath},\tilde\pi_l]=i\,\frac{h}{2\pi}\,ϙ\varepsilon_{k l\,n_{\mathrm{idx}}}B_{n_{\mathrm{idx}}}\,e_t ,
 \qquad
 [\tilde\pi_x,\tilde\pi_y]=i\,\frac{h}{2\pi}\,ϙ\,B\,e_t ,
 $$
@@ -294,8 +294,8 @@ Each level is degenerate with multiplicity $N_{\mathrm{scl},\xi}=AB/Ξ_0$, the n
 | $\mathbb{B}_{H}$ | Real-quaternion subspace; home of $\vec B$ and $\vec A$ |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong\mathbb{C}^2$ | State module |
-| $\tilde\pi_\imath=(p_\imath-ϙA_\imath)e_t$ | Mechanical momentum; central Hermitian |
-| $[\tilde\pi_\imath,\tilde\pi_l]=i\,\frac{h}{2\pi}\,ϙ\varepsilon_{k l\,n_{\mathrm{idx}}}B_me_t$ | Central field-strength commutator |
+| $\tilde\pi_{\imath}=(p_{\imath}-ϙA_{\imath})e_t$ | Mechanical momentum; central Hermitian |
+| $[\tilde\pi_{\imath},\tilde\pi_l]=i\,\frac{h}{2\pi}\,ϙ\varepsilon_{k l\,n_{\mathrm{idx}}}B_me_t$ | Central field-strength commutator |
 | $\omega_c=\lvert ϙ\rvert B/m$ | Cyclotron frequency |
 | $\ell_B=\sqrt{\frac{h}{2\pi \lvert\,ϙ\,\rvert\,B}}$ | Magnetic length |
 | $x_0=\ell_B^2 k\,\mathrm{sgn}(ϙ)$ | Oscillator centre; conserved $k$ |
@@ -303,7 +303,7 @@ Each level is degenerate with multiplicity $N_{\mathrm{scl},\xi}=AB/Ξ_0$, the n
 | $H_n$ | Hermite polynomials |
 | $a,a^\dagger$ | Central cyclotron ladder operators, $[a,a^\dagger]=e_t$ |
 | $L_{\mathrm{orb},z}$ | Conserved central angular momentum (symmetric gauge) |
-| $R_\imath$ | Guiding-centre operators; commute with $H$ |
+| $R_{\imath}$ | Guiding-centre operators; commute with $H$ |
 | $Ξ_0=h/\lvert ϙ\rvert$ | Magnetic flux quantum |
 | $N_{\mathrm{scl},\xi}=AB/Ξ_0$ | Landau-level degeneracy |
 | $\digamma_{\mathrm{fil}}=N_e/N_{\mathrm{scl},\xi}$ | Filling factor |

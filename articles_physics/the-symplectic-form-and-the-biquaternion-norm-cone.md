@@ -12,7 +12,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ car
 
 The article is classical throughout. The Hermitian pairing is the form that the companion articles on $\mathbb{B}_{\Psi}$ write as the Born pairing; here it is read as a phase-space metric and a symplectic form, and no measurement postulate is involved. No commutator appears.
 
-The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\varepsilon_{\imath\jmathk}\vec e_\imath$; $i$ is central with $i^2=-1$; conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), and ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian sectors. The phase-space biquaternion is $\vec Z=\vec q+i\vec p$ with $\vec q,\vec p$ pure real quaternions, identified with a point of the six-dimensional real phase space; the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The material interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i q'_t$, and the d'Alembertian of the series is $\Box_\Phi=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$.
+The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\varepsilon_{\imath\jmath k}\vec e_{\imath}$; $i$ is central with $i^2=-1$; conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), and ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian sectors. The phase-space biquaternion is $\vec Z=\vec q+i\vec p$ with $\vec q,\vec p$ pure real quaternions, identified with a point of the six-dimensional real phase space; the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The material interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i q'_t$, and the d'Alembertian of the series is $\Box_\Phi=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$.
 
 The companion articles are:
 - Companion article *The Lagrangian and Hamiltonian Mechanics*, for the phase-space biquaternion and the Poisson bracket.
@@ -25,19 +25,19 @@ The companion articles are:
 A **symplectic vector space** is a real vector space $V$ with a bilinear form $\omega$ that is antisymmetric, $\omega(Q_x,Q_y)=-\omega(Q_y,Q_x)$, and non-degenerate, $\omega(Q_x,Q_y)=0$ for all $Q_y$ implies $Q_x=0$. In canonical coordinates $(\vec q,\vec p)$ on $V=\mathbb{R}^{2n}$ the standard form is
 
 $$
-\omega=\sum_{k=1}^{n}dq_\imath\wedge dp_\imath ,
+\omega=\sum_{k=1}^{n}dq_{\imath}\wedge dp_{\imath} ,
 $$
 
-so that $\omega(Q_x,Q_y)=\sum_{\imath\in\{x,y,z\}}(q_\imath^{(1)} p_\imath^{(2)}-p_\imath^{(1)} q_\imath^{(2)})$ on component vectors. The **Hamiltonian vector field** of a function $f$ is defined by
+so that $\omega(Q_x,Q_y)=\sum_{\imath\in\{x,y,z\}}(q_{\imath}^{(1)} p_{\imath}^{(2)}-p_{\imath}^{(1)} q_{\imath}^{(2)})$ on component vectors. The **Hamiltonian vector field** of a function $f$ is defined by
 
 $$
-\omega(X_f,\,\cdot\,)=df,\qquad\text{that is}\qquad X_f=\sum_{\imath\in\{x,y,z\}}\left(\frac{\partial f}{\partial p_\imath}\frac{\partial}{\partial q_\imath}-\frac{\partial f}{\partial q_\imath}\frac{\partial}{\partial p_\imath}\right),
+\omega(X_f,\,\cdot\,)=df,\qquad\text{that is}\qquad X_f=\sum_{\imath\in\{x,y,z\}}\left(\frac{\partial f}{\partial p_{\imath}}\frac{\partial}{\partial q_{\imath}}-\frac{\partial f}{\partial q_{\imath}}\frac{\partial}{\partial p_{\imath}}\right),
 $$
 
 and the **Poisson bracket** is
 
 $$
-\{f,g\}=\omega(X_f,X_g)=\sum_{\imath\in\{x,y,z\}}\left(\frac{\partial f}{\partial q_\imath}\frac{\partial g}{\partial p_\imath}-\frac{\partial f}{\partial p_\imath}\frac{\partial g}{\partial q_\imath}\right).
+\{f,g\}=\omega(X_f,X_g)=\sum_{\imath\in\{x,y,z\}}\left(\frac{\partial f}{\partial q_{\imath}}\frac{\partial g}{\partial p_{\imath}}-\frac{\partial f}{\partial p_{\imath}}\frac{\partial g}{\partial q_{\imath}}\right).
 $$
 
 The form $\omega$ is closed ($d\omega=0$, trivially for a constant form), and **Darboux's theorem** states that any symplectic form can be brought to the constant form above by a change of coordinates, so there are no local invariants beyond the dimension.
@@ -48,7 +48,7 @@ $$
 g(JQ_x,JQ_y)=g(Q_x,Q_y),\qquad \omega(Q_x,Q_y)=g(JQ_x,Q_y).
 $$
 
-In that case $\omega(JQ_x,JQ_y)=\omega(Q_x,Q_y)$, and $(g,\omega,J)$ is called a compatible triple. The standard example on $\mathbb{R}^{2n}$ is the Euclidean metric $g(Q_x,Q_y)=\sum_{\imath\in\{x,y,z\}}(q_\imath^{(1)}q_\imath^{(2)}+p_\imath^{(1)}p_\imath^{(2)})$ with the block matrix $J$ sending $q_\imath\mapsto p_\imath$, $p_\imath\mapsto -q_\imath$. The biquaternion algebra realizes exactly this triple with $J$ equal to its own complex structure $i$.
+In that case $\omega(JQ_x,JQ_y)=\omega(Q_x,Q_y)$, and $(g,\omega,J)$ is called a compatible triple. The standard example on $\mathbb{R}^{2n}$ is the Euclidean metric $g(Q_x,Q_y)=\sum_{\imath\in\{x,y,z\}}(q_{\imath}^{(1)}q_{\imath}^{(2)}+p_{\imath}^{(1)}p_{\imath}^{(2)})$ with the block matrix $J$ sending $q_{\imath}\mapsto p_{\imath}$, $p_{\imath}\mapsto -q_{\imath}$. The biquaternion algebra realizes exactly this triple with $J$ equal to its own complex structure $i$.
 
 ## The Hermitian Pairing of the Phase-Space Biquaternion
 
@@ -306,10 +306,10 @@ $$
 \omega_{\mathrm{S}}
 =\frac{1}{S}\,\Omega_S,
 \qquad
-\Omega_S=\frac{1}{2S}\,\varepsilon_{\imath\jmath\ell}S_i\,dS_j\wedge dS_\imath ,
+\Omega_S=\frac{1}{2S}\,\varepsilon_{\imath\jmath\ell}S_i\,dS_j\wedge dS_{\imath} ,
 $$
 
-where $\Omega_S$ is the area form of the sphere of radius $S$ (the sum over $i,j,k$ is unrestricted; the explicit $\tfrac12$ is what makes the expression the area form rather than twice it). The division by $S$ is the Souriau normalization: it is fixed by requiring that the inverse form give the bracket $\{S_i,S_j\}=\varepsilon_{\imath\jmath\ell}S_\imath$ of the companion article, and it is checked at once at the north pole, where $\omega_{\mathrm S}=S^{-1}dS_1\wedge dS_2$ and the bracket reads $\{S_1,S_2\}=S_3=S$. The form is non-degenerate on the sphere and closed. The Hamiltonian flow generated by $H=2\vec G\cdot\vec S$ is the rotor conjugation $\vec S\mapsto \exp(r'_t\vec G)\vec S\,\exp(-r'_t\vec G)$, as the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* establishes, with $\{S_i,S_j\}=\varepsilon_{\imath\jmath\ell}S_\imath$.
+where $\Omega_S$ is the area form of the sphere of radius $S$ (the sum over $i,j,k$ is unrestricted; the explicit $\tfrac12$ is what makes the expression the area form rather than twice it). The division by $S$ is the Souriau normalization: it is fixed by requiring that the inverse form give the bracket $\{S_i,S_j\}=\varepsilon_{\imath\jmath\ell}S_{\imath}$ of the companion article, and it is checked at once at the north pole, where $\omega_{\mathrm S}=S^{-1}dS_1\wedge dS_2$ and the bracket reads $\{S_1,S_2\}=S_3=S$. The form is non-degenerate on the sphere and closed. The Hamiltonian flow generated by $H=2\vec G\cdot\vec S$ is the rotor conjugation $\vec S\mapsto \exp(r'_t\vec G)\vec S\,\exp(-r'_t\vec G)$, as the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* establishes, with $\{S_i,S_j\}=\varepsilon_{\imath\jmath\ell}S_{\imath}$.
 
 The biquaternion norm enters in two ways. First, the orbits are the level sets of $\langle\cdot,\cdot\rangle_{\natural}$; the symplectic form is the Souriau form on those level sets, and the biquaternion norm's gradient is normal to them. Second, the level $S=0$ is the **degenerate orbit**: the sphere shrinks to a point, the area form collapses, and $\langle\vec S\rangle_{\natural}=0$ is exactly the biquaternion-norm cone. The cone is therefore the singular (zero-radius) member of the family of coadjoint orbits on which the symplectic form lives. On the cone the form degenerates, and the algebra's product degenerates with it; away from the cone the orbifold of level sets carries a non-degenerate symplectic form. This is the precise sense in which the symplectic form and the biquaternion-norm cone are two aspects of one structure.
 
@@ -361,7 +361,7 @@ The symplectic form is the antisymmetric (imaginary) part of one Hermitian pairi
 | $\langle\tilde R_\Phi\rangle_{\natural}=0$, $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Light cone of the material sector |
 | $\langle\tilde P_{\Phi}\rangle_{\natural}=0$, $\tilde P_{\Phi}=\frac{i\omega}{c}e_t+2\pi\vec\nu_\Phi$ | Characteristic cone of $\Box_\Phi$ |
 | $\langle\vec S\rangle_{\natural}=S^2$ | Coadjoint-orbit level set; $S=0$ is the cone |
-| $\omega_{\mathrm S}=\frac{1}{S}\Omega_S,\ \ \Omega_S=\frac{1}{2S}\varepsilon_{\imath\jmath\ell}S_i dS_j\wedge dS_\imath$ | Souriau–Kirillov form on the orbit (area form divided by $S$) |
+| $\omega_{\mathrm S}=\frac{1}{S}\Omega_S,\ \ \Omega_S=\frac{1}{2S}\varepsilon_{\imath\jmath\ell}S_i dS_j\wedge dS_{\imath}$ | Souriau–Kirillov form on the orbit (area form divided by $S$) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 

@@ -95,7 +95,7 @@ $$
 $$
 and the parametrisation is injective in each slot once the other is fixed.
 
-*Proof.* Both matrices have the same image, which is the line $\mathbb{C}u=\mathbb{C}u'$, so $u'=\lambda u$; then $u\phi^{\mathsf T}=u\lambda\phi'^{\mathsf T}$ and the rows are equal because $u\neq0$ and the map $\phi\mapsto u\phi^{\mathsf T}$ is injective.
+*Proof.* Both matrices have the same image, which is the line $\mathbb{C}u=\mathbb{C}u'$, so $u'=\lambda u$; then $u\phi^{\mathsf T}=u\lambda\phi'{}^{\mathsf T}$ and the rows are equal because $u\neq0$ and the map $\phi\mapsto u\phi^{\mathsf T}$ is injective.
 
 **A worked member.** For $u=(1,i)$ and $\phi=(2,1-i)$ the products of the coordinates are the four entries,
 $$
@@ -175,7 +175,7 @@ $$
 L_{u}R_{\phi}\,L_{u'}R_{\phi'}=\phi(u')\,L_{u}R_{\phi'} .
 $$
 
-*Proof.* $u\phi^{\mathsf T}u'\phi'^{\mathsf T}=u(\phi^{\mathsf T}u')\phi'^{\mathsf T}$ and $\phi^{\mathsf T}u'=\phi(u')$ is a scalar.
+*Proof.* $u\phi^{\mathsf T}u'\phi'{}^{\mathsf T}=u(\phi^{\mathsf T}u')\phi'{}^{\mathsf T}$ and $\phi^{\mathsf T}u'=\phi(u')$ is a scalar.
 
 **Corollary (the powers).** For $n\ge1$,
 $$

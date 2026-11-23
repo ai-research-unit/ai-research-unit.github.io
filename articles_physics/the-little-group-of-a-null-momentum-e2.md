@@ -42,7 +42,7 @@ $$
 T_1=K_x-J_y,\qquad T_2=K_y+J_x,\qquad J_z .
 $$
 
-Here $J_\imath=\tfrac12\vec e_\imath$ is the rotation generator about $\varsigma_{\mathrm{gen}}$ and $K_\imath=\tfrac12 i\vec e_\imath$ the boost generator along $\varsigma_{\mathrm{gen}}$, in the block's normalisation, in which the rotations are real and the boosts imaginary.
+Here $J_{\imath}=\tfrac12\vec e_{\imath}$ is the rotation generator about $\varsigma_{\mathrm{gen}}$ and $K_{\imath}=\tfrac12 i\vec e_{\imath}$ the boost generator along $\varsigma_{\mathrm{gen}}$, in the block's normalisation, in which the rotations are real and the boosts imaginary.
 
 ### The Brackets
 

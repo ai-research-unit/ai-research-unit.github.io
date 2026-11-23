@@ -341,7 +341,7 @@ and each term of this sum is the group of the terms of the sum form whose weight
 
 **What is intrinsic.** The spectrum of $\Sigma$ is the spectrum of $\lvert F\rvert$, so the multiset of the weights, the multiplicity of each, and the filtration of $\mathbb{B}$ by the subspaces spanned by the right vectors of the largest weights depend on $F$ alone. The scale itself is determined by $F$ and by $\mathcal V$, so it is unique once the right family is chosen and unique up to the ordering of the equal weights when it is not. The two unitaries are not intrinsic: they carry the chosen basis to the two families, and a different choice of families is a different pair.
 
-**The residual freedom.** Suppose $F=\mathcal U\Sigma\mathcal V^{*}=\mathcal U'\Sigma\mathcal V'^{*}$, and write $\mathcal U'=\mathcal U W$ and $\mathcal V'=\mathcal V Z$ with $W$ and $Z$ unitary. The equality is $W\Sigma Z^{*}=\Sigma$, that is
+**The residual freedom.** Suppose $F=\mathcal U\Sigma\mathcal V^{*}=\mathcal U'\Sigma\mathcal V'{}^{*}$, and write $\mathcal U'=\mathcal U W$ and $\mathcal V'=\mathcal V Z$ with $W$ and $Z$ unitary. The equality is $W\Sigma Z^{*}=\Sigma$, that is
 
 $$
 W\Sigma=\Sigma Z .

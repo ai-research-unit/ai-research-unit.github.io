@@ -323,7 +323,7 @@ So the analysis of the dual algebra reduces to the analysis of the real line tog
 Define the **dual Laplacian**
 
 $$
-\Delta = \partial^2/\partial q^2 + \partial^2/\partial q'^2, \qquad \Delta f = u_{qq} + u_{q'q'} + \bigl(v_{qq} + v_{q'q'}\bigr)\varepsilon.
+\Delta = \partial^2/\partial q^2 + \partial^2/\partial q'{}^2, \qquad \Delta f = u_{qq} + u_{q'q'} + \bigl(v_{qq} + v_{q'q'}\bigr)\varepsilon.
 $$
 
 **Proposition.** For a regular function $f(q + \varepsilon q') = u(q) + (q'\,u'(q) + c(q))\varepsilon$,
@@ -354,13 +354,13 @@ $$
 \;},
 $$
 
-which is not $\Delta$ in any sign, and cannot be brought into the form $\partial^2/\partial q^2 + \partial^2/\partial q'^2$ by any choice of the two first-order factors. The reason is the degeneracy: the two complex Wirtinger operators $\partial/\partial A$, $\partial/\partial\bar A$ are conjugates of one another and their product recovers a positive form, whereas here the conjugate of $\bar{\partial}$ in the sense of dual conjugation changes the sign of the nilpotent term only,
+which is not $\Delta$ in any sign, and cannot be brought into the form $\partial^2/\partial q^2 + \partial^2/\partial q'{}^2$ by any choice of the two first-order factors. The reason is the degeneracy: the two complex Wirtinger operators $\partial/\partial A$, $\partial/\partial\bar A$ are conjugates of one another and their product recovers a positive form, whereas here the conjugate of $\bar{\partial}$ in the sense of dual conjugation changes the sign of the nilpotent term only,
 
 $$
 \overline{\bar{\partial}} = \partial/\partial q' + \varepsilon\,\partial/\partial q,
 $$
 
-and the product $\bar{\partial}\,\overline{\bar{\partial}} = \partial^2/\partial q'^2 - \varepsilon^2 \partial^2/\partial q^2 = \partial^2/\partial q'^2$ has lost the real direction entirely, because $\varepsilon^2 = 0$. So there is no factorisation of $\Delta$ into dual-conjugate first-order operators and no harmonicity theorem.
+and the product $\bar{\partial}\,\overline{\bar{\partial}} = \partial^2/\partial q'{}^2 - \varepsilon^2 \partial^2/\partial q^2 = \partial^2/\partial q'{}^2$ has lost the real direction entirely, because $\varepsilon^2 = 0$. So there is no factorisation of $\Delta$ into dual-conjugate first-order operators and no harmonicity theorem.
 
 ### The Ellipticity Failure
 
@@ -451,7 +451,7 @@ The differential operators of the dual algebra act on the two submodules $R_{\ma
 | $\varepsilon\,\partial/\partial q$ | Nilpotent component, $(\varepsilon\,\partial/\partial q)^2 = 0$ |
 | $\bar{\partial} = \partial/\partial q' - \varepsilon\,\partial/\partial q$ | Cauchy–Riemann operator |
 | $\overline{\bar{\partial}} = \partial/\partial q' + \varepsilon\,\partial/\partial q$ | Its dual conjugate |
-| $\Delta = \partial^2/\partial q^2 + \partial^2/\partial q'^2$ | Dual Laplacian, no factorisation |
+| $\Delta = \partial^2/\partial q^2 + \partial^2/\partial q'{}^2$ | Dual Laplacian, no factorisation |
 | $g(q + \varepsilon q') = g(q) + q'\,g'(q)\varepsilon$ | First-order Taylor truncation, exact |
 | $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$ | Split complex algebra, the comparison case |
 

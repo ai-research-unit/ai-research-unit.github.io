@@ -266,7 +266,7 @@ The non-abelian extension is stated and its status fixed.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\imath^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_{\imath}^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gamma symbols are used only in this section; every other section writes the same objects as basis operators. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra; in the two-dimensional reduction of this article the two generators are $\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}$ with $L_{a}R_{b}$, and the two-dimensional chirality is their product, the basis operator $L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z}$, not the four-dimensional $\gamma_5$.
 
@@ -308,7 +308,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 **The standard gamma identities.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$ and $\varepsilon=(1,-1,-1,-1)$,
 $$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
-(\gamma_\imath)^2=-I_4,\qquad
+(\gamma_{\imath})^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_{\imath},\gamma_5\}=0,
 $$
@@ -332,7 +332,7 @@ $$
 \sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\gamma_\alpha\gamma_\beta\gamma_{\imath}=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
 \sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} A\gamma_{\imath}=-(-1)^{n+1}(4-2n)A ,
 $$
-the general rule being $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} A\gamma_{\imath}=-(-1)^{n+1}(4-2n)A$ for $A$ a product of $n$ distinct generators. The weight sits in the sum and nowhere else: with no weight the sums read $\sum_{\imath}\gamma_{\imath}\gamma_{\imath}=-2I_4$, $\sum_{\imath}\gamma_{\imath}\gamma_0\gamma_{\imath}=+4\gamma_0$, and the spacelike sums vanish, $\sum_{\imath}\gamma_{\imath}\gamma_\imath\gamma_{\imath}=0$.
+the general rule being $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} A\gamma_{\imath}=-(-1)^{n+1}(4-2n)A$ for $A$ a product of $n$ distinct generators. The weight sits in the sum and nowhere else: with no weight the sums read $\sum_{\imath}\gamma_{\imath}\gamma_{\imath}=-2I_4$, $\sum_{\imath}\gamma_{\imath}\gamma_0\gamma_{\imath}=+4\gamma_0$, and the spacelike sums vanish, $\sum_{\imath}\gamma_{\imath}\gamma_{\imath}\gamma_{\imath}=0$.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

@@ -16,6 +16,9 @@ $$
 
 Nothing else is assumed. The three wave numbers of the title are the coordinates of $\tilde\Upsilon_{\Phi}$, and they are deduced from that division rather than postulated beside it.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
+
 The deduction. $h$ is a real central scalar, so it divides every coefficient of the element and touches no basis unit. Distributing it over the four units gives
 
 $$
@@ -96,7 +99,7 @@ Why $h$ and not $\frac{h}{2\pi}$. The series uses the spectroscopic wave number 
 
 The division by $h$ is what leaves the count of waves. That is what the missing $2\pi$ means, and it is why the readings below are phrased per turn rather than per radian: a phase advances by a full turn over a distance $1/\nu_{\Phi}$, and by one radian over $1/(2\pi\nu_{\Phi})$. Every comparison with a measured fringe spacing, a spectrometer reading or a quoted wavelength carries the $2\pi$ back.
 
-Which is which. Three labels, and no bare symbol. Two of the labels name the slot the coefficient fills in $\tilde\Upsilon_{\Phi}$: the sector letter $\Phi$ on the vector part, $\vec\nu_{\Phi}$, and the primed $t$ on the temporal one, $\nu_t^{\prime}$. The third names the norm, $\nu_m$ from the mass. The sector letter is written rather than the letter of the quantity because the momentum already writes its components $p_\imath$, and $\nu_p$ beside $p_\imath$ would be one transposition apart in running text. The prime on the temporal coefficient is the mark the corpus puts on a temporal slot, as on $p_{t}^{\prime}$ and $r'_t$, and it is kept because the division by $h\,c$ converts a quantity and not a coordinate.
+Which is which. Three labels, and no bare symbol. Two of the labels name the slot the coefficient fills in $\tilde\Upsilon_{\Phi}$: the sector letter $\Phi$ on the vector part, $\vec\nu_{\Phi}$, and the primed $t$ on the temporal one, $\nu_t^{\prime}$. The third names the norm, $\nu_m$ from the mass. The sector letter is written rather than the letter of the quantity because the momentum already writes its components $p_{\imath}$, and $\nu_p$ beside $p_{\imath}$ would be one transposition apart in running text. The prime on the temporal coefficient is the mark the corpus puts on a temporal slot, as on $p_{t}^{\prime}$ and $r'_t$, and it is kept because the division by $h\,c$ converts a quantity and not a coordinate.
 
 The particle enters through its mass. A wave number is never labelled by the name of a particle. The species enters as a subscript on the mass itself, $\nu_{m_e}$ for the electron and $\nu_{m_p}$ for the proton, so that the family reads as one scheme: the subscript names the input, and the input of one species is the mass of that species.
 
@@ -153,7 +156,7 @@ $$
 
 The first line is the norm of one element and the second is the mass shell divided by $h^{2}c^{2}$; the two are one statement, and the equality is what the rest of the article reads.
 
-The arithmetic, once. For the electron at $1\ \mathrm{MeV}$ the three numbers of §*The Values* are $\nu_t^{\prime}=8.0655\times10^{11}$, $\nu_{\Phi}=6.9330\times10^{11}$ and $\nu_m=4.1215\times10^{11}\ \mathrm{m^{-1}}$, and in $\mathrm{m^{-2}}$
+The arithmetic, once. For the electron at $1.6022\times10^{-13}\ \mathrm{J}$ the three numbers of §*The Values* are $\nu_t^{\prime}=8.0655\times10^{11}$, $\nu_{\Phi}=6.9330\times10^{11}$ and $\nu_m=4.1215\times10^{11}\ \mathrm{m^{-1}}$, and in $\mathrm{m^{-2}}$
 
 $$
 -\nu_t^{\prime\,2}+\nu_{\Phi}^{2}=-6.505\times10^{23}+4.807\times10^{23}=-1.699\times10^{23}=-\nu_m^{2},
@@ -187,9 +190,9 @@ Its inverse, up to the factor $2\pi$, is a distance, and each of the three dista
 
 | wave number | what it counts | the distance per radian | what that distance is |
 |---|---|---|---|
-| $\nu_m=\frac{m\,c}{h}$ | waves of the rest-frame phase per metre | $386\ \mathrm{fm}$ for the electron | the distance over which the phase of a particle at rest turns one radian; the order of length at which relativistic effects begin; the shortest distance at which it is still one particle; the range of the force it carries |
-| $\nu_{\Phi}=\frac{p}{h}$ | waves of the spatial phase per metre | $52.9\ \mathrm{pm}$ for the hydrogen ground state | the distance over which the phase of the state turns one radian; the unit of the fringe spacing; the coherence scale of the state |
-| $\nu_t^{\prime}=\frac{E}{h\,c}$ | waves of the temporal phase per metre of light travel | $197\ \mathrm{fm}$ for a $1\ \mathrm{MeV}$ electron | the distance light covers while the phase turns one radian; the length a duration becomes; the decay length of an unstable particle |
+| $\nu_m=\frac{m\,c}{h}$ | waves of the rest-frame phase per metre | $3.86\times10^{-13}\ \mathrm{m}$ for the electron | the distance over which the phase of a particle at rest turns one radian; the order of length at which relativistic effects begin; the shortest distance at which it is still one particle; the range of the force it carries |
+| $\nu_{\Phi}=\frac{p}{h}$ | waves of the spatial phase per metre | $5.29\times10^{-11}\ \mathrm{m}$ for the hydrogen ground state | the distance over which the phase of the state turns one radian; the unit of the fringe spacing; the coherence scale of the state |
+| $\nu_t^{\prime}=\frac{E}{h\,c}$ | waves of the temporal phase per metre of light travel | $1.97\times10^{-13}\ \mathrm{m}$ for a $1.6022\times10^{-13}\ \mathrm{J}$ electron | the distance light covers while the phase turns one radian; the length a duration becomes; the decay length of an unstable particle |
 
 **The three distances are in the inverse ratio of the wave numbers.** Since $\nu_t^{\prime}\ge \nu_{\Phi}$ and $\nu_t^{\prime}\ge \nu_m$, the energy distance is the shortest of the three at every speed, with equality at rest for the momentum one and in the massless limit for the mass one. And $\nu_{\Phi}/\nu_t^{\prime}=\beta$ reads as $\lambda_{\Phi}/\lambda_{t}=1/\beta$: the phase distance of the state is the light-travel distance divided by the speed, which is the statement that a slow particle winds slowly in space and quickly in time.
 
@@ -267,30 +270,30 @@ The second is the box with the sign of the Minkowski form, and the division by $
 
 ## The Values
 
-The conversion is the one constant that turns an energy into a wave number, $h\,c=1239.84198\ \mathrm{MeV}\cdot\mathrm{fm}$: a wave number in $\mathrm{fm}^{-1}$ is the corresponding quantity in MeV divided by $1239.842$, that quantity being $mc^2$ for $\nu_m$, $pc$ for $\nu_{\Phi}$ and $E$ for $\nu_t^{\prime}$. The particle masses are the CODATA 2018 values; $\frac{h}{2\pi}$ and $c$ are exact, and have been since the 2019 redefinition of the SI, so every uncertainty in the tables below comes from a mass.
+The conversion is the one constant that turns an energy into a wave number, $h\\,c=1.986\\,446\\times10^{-25}\\ \\mathrm{J\\,m}$: a wave number in $\\mathrm{m^{-1}}$ is the corresponding quantity in $\\mathrm{J}$ divided by $1.986\\,446\\times10^{-25}$, that quantity being $mc^2$ for $\\nu_m$, $pc$ for $\\nu_{\\Phi}$ and $E$ for $\\nu_t^{\\prime}$. The particle masses are the CODATA 2018 values; $\\frac{h}{2\\pi}$ and $c$ are exact, and have been since the 2019 redefinition of the SI, so every uncertainty in the tables below comes from a mass.
 
 At rest. The energy wave number equals the mass wave number, and the momentum wave number vanishes.
 
 | particle | $mc^2$ | $\nu_m$ | $1/(2\pi\nu_m)$ |
 |---|---|---|---|
-| electron | $0.510999\ \mathrm{MeV}$ | $4.1215\times10^{11}\ \mathrm{m^{-1}}$ | $386.159\ \mathrm{fm}$ |
-| muon | $105.658\ \mathrm{MeV}$ | $8.5218\times10^{13}\ \mathrm{m^{-1}}$ | $1.8676\ \mathrm{fm}$ |
-| charged pion | $139.570\ \mathrm{MeV}$ | $1.1258\times10^{14}\ \mathrm{m^{-1}}$ | $1.4138\ \mathrm{fm}$ |
-| proton | $938.272\ \mathrm{MeV}$ | $7.5675\times10^{14}\ \mathrm{m^{-1}}$ | $0.2103\ \mathrm{fm}$ |
-| top quark | $172.69\ \mathrm{GeV}$ | $1.3928\times10^{17}\ \mathrm{m^{-1}}$ | $1.1427\times10^{-3}\ \mathrm{fm}$ |
+| electron | $8.1871\times10^{-14}\ \mathrm{J}$ | $4.1215\times10^{11}\ \mathrm{m^{-1}}$ | $3.86159\times10^{-13}\ \mathrm{m}$ |
+| muon | $1.6928\times10^{-11}\ \mathrm{J}$ | $8.5218\times10^{13}\ \mathrm{m^{-1}}$ | $1.8676\times10^{-15}\ \mathrm{m}$ |
+| charged pion | $2.2362\times10^{-11}\ \mathrm{J}$ | $1.1258\times10^{14}\ \mathrm{m^{-1}}$ | $1.4138\times10^{-15}\ \mathrm{m}$ |
+| proton | $1.5033\times10^{-10}\ \mathrm{J}$ | $7.5675\times10^{14}\ \mathrm{m^{-1}}$ | $2.103\times10^{-16}\ \mathrm{m}$ |
+| top quark | $2.7668\times10^{-8}\ \mathrm{J}$ | $1.3928\times10^{17}\ \mathrm{m^{-1}}$ | $1.1427\times10^{-18}\ \mathrm{m}$ |
 
 The electron in motion. The mass wave number is the same in every row and the other two move.
 
 | $E$ | $\beta$ | $\nu_t^{\prime}$ | $\nu_{\Phi}$ | $\nu_m$ |
 |---|---|---|---|---|
-| $0.511\ \mathrm{MeV}$ | $0$ | $4.1215\times10^{11}$ | $0$ | $4.1215\times10^{11}$ |
-| $1\ \mathrm{MeV}$ | $0.860$ | $8.0655\times10^{11}$ | $6.9330\times10^{11}$ | $4.1215\times10^{11}$ |
-| $100\ \mathrm{MeV}$ | $0.99999$ | $8.0655\times10^{13}$ | $8.0655\times10^{13}$ | $4.1215\times10^{11}$ |
-| $1\ \mathrm{GeV}$ | $1.000$ | $8.0655\times10^{14}$ | $8.0655\times10^{14}$ | $4.1215\times10^{11}$ |
+| $8.187\times10^{-14}\ \mathrm{J}$ | $0$ | $4.1215\times10^{11}$ | $0$ | $4.1215\times10^{11}$ |
+| $1.6022\times10^{-13}\ \mathrm{J}$ | $0.860$ | $8.0655\times10^{11}$ | $6.9330\times10^{11}$ | $4.1215\times10^{11}$ |
+| $1.6022\times10^{-11}\ \mathrm{J}$ | $0.99999$ | $8.0655\times10^{13}$ | $8.0655\times10^{13}$ | $4.1215\times10^{11}$ |
+| $1.6022\times10^{-10}\ \mathrm{J}$ | $1.000$ | $8.0655\times10^{14}$ | $8.0655\times10^{14}$ | $4.1215\times10^{11}$ |
 
 The unit of the last three columns is $\mathrm{m^{-1}}$.
 
-A check of the relation. At $1\ \mathrm{MeV}$ the three numbers satisfy the box, and the check is arithmetic in $\mathrm{m^{-2}}$:
+A check of the relation. At $1.6022\times10^{-13}\ \mathrm{J}$ the three numbers satisfy the box, and the check is arithmetic in $\mathrm{m^{-2}}$:
 
 $$
 (8.0655\times10^{11})^{2} = 6.505\times10^{23},
@@ -298,9 +301,9 @@ $$
 (6.9330\times10^{11})^{2}+(4.1215\times10^{11})^{2} = 4.807\times10^{23}+1.699\times10^{23} = 6.505\times10^{23}.
 $$
 
-A photon. For $m=0$ the mass wave number vanishes and the other two coincide. At $1\ \mathrm{eV}$ both are $8.0655\times10^{5}\ \mathrm{m^{-1}}$, the wave number of that photon; the angular wave number is $5.0677\times10^{6}\ \mathrm{m^{-1}}$, the same number multiplied by $2\pi$, that is $8065.5\ \mathrm{cm^{-1}}$, and the wavelength is $1239.842\ \mathrm{nm}$.
+A photon. For $m=0$ the mass wave number vanishes and the other two coincide. At $1.6022\times10^{-19}\ \mathrm{J}$ both are $8.0655\times10^{5}\ \mathrm{m^{-1}}$, the wave number of that photon; the angular wave number is $5.0677\times10^{6}\ \mathrm{m^{-1}}$, the same number multiplied by $2\pi$, that is $8.0655\times10^{5}\ \mathrm{m^{-1}}$, and the wavelength is $1.239842\times10^{-6}\ \mathrm{m}$.
 
-What the tables say. The electron's mass wave number is $4.1215\times10^{11}\ \mathrm{m^{-1}}$, one wavelength per $2.426\ \mathrm{pm}$, that is one radian of phase per $3.86\times10^{-13}\ \mathrm{m}$. The wave numbers are in direct proportion to the masses, so the ordering of the mass wave numbers is the ordering of the masses, and that is the whole content of the definition.
+What the tables say. The electron's mass wave number is $4.1215\times10^{11}\ \mathrm{m^{-1}}$, one wavelength per $2.426\times10^{-12}\ \mathrm{m}$, that is one radian of phase per $3.86\times10^{-13}\ \mathrm{m}$. The wave numbers are in direct proportion to the masses, so the ordering of the mass wave numbers is the ordering of the masses, and that is the whole content of the definition.
 
 ## Where Each Form Is Used
 
@@ -344,7 +347,7 @@ The parameter's square is the squared wave number of the state, and by the box i
 
 **It is the wave number of the rest frame.** Set $p=0$. Then $\nu_{\Phi}=0$, $\nu_t^{\prime}=\nu_m$, and the triangle collapses onto the mass side. Every interpretation of $\nu_m$ is therefore an interpretation in the rest frame, and the number travels with the particle unchanged, which is why it can be quoted as a property of the species.
 
-It is a wave number and not a radius. It is the wave number of the field in its own rest frame, not the extent of the field in space. A particle whose $1/(2\pi\nu_m)$ is $386\ \mathrm{fm}$ may have no measured size at all, and the two statements are compatible because a wave number is a rate of phase and a radius is a distribution of charge. §*It Is Not the Size of the Particle* collects the numbers that make the difference unmistakable.
+It is a wave number and not a radius. It is the wave number of the field in its own rest frame, not the extent of the field in space. A particle whose $1/(2\pi\nu_m)$ is $3.86\times10^{-13}\ \mathrm{m}$ may have no measured size at all, and the two statements are compatible because a wave number is a rate of phase and a radius is a distribution of charge. §*It Is Not the Size of the Particle* collects the numbers that make the difference unmistakable.
 
 It is the wave number at which the one-particle description ends. A probe must carry a wave number larger than $\nu_m$ to resolve the particle's own scale, and a probe of that wave number carries the rest energy, so it makes pairs instead of resolving. The next subsection derives that statement, and it is the reading that carries the rest.
 
@@ -358,19 +361,19 @@ $$
 \frac{1}{2\pi\nu_m},
 $$
 
-which is $386.159\ \mathrm{fm}$ for the electron. The full turn is $2\pi$ times as long, $\lambda_m=1/\nu_m=h/(mc)=2.426\ \mathrm{pm}$, and only the full turn is called the Compton wavelength. Every statement of this section is the first of those numbers read another way.
+which is $3.86159\times10^{-13}\ \mathrm{m}$ for the electron. The full turn is $2\pi$ times as long, $\lambda_m=1/\nu_m=h/(mc)=2.426\times10^{-12}\ \mathrm{m}$, and only the full turn is called the Compton wavelength. Every statement of this section is the first of those numbers read another way.
 
 **One radian is the form the exponents use.** The phase of a plane wave is written as an angle, and an angle counts radians, so the length that enters every exponent is the turn divided by $2\pi$. No shorter length is given a letter of its own: the rule is in *Physics Units and Common Elements Conventions*, §*No reduced length, no reduced constant*.
 
 It is the shortest distance at which the particle is still one particle. The derivation of §*The Cost of Localization* is the statement: a region of size $1/(2\pi\nu_m)$ has a wave number spread $\nu_m$, an energy spread $m\,c^{2}=mc^{2}$, and the energy to make a second particle of the same mass. Below that distance the state that would be described is not a one-particle state, so $1/(2\pi\nu_m)$ is the resolution limit of the description and not the radius of an object.
 
-It is the order of length at which relativistic effects cannot be ignored. A particle localized to $1/(2\pi\nu_m)$ has, by the uncertainty relation, a momentum spread of order $h\,\nu_m=mc$, so its kinetic energy is of order its rest energy and the non-relativistic description fails there. The distance is therefore the boundary of the Schrödinger theory: far above $1/(2\pi\nu_m)$ the non-relativistic equation is accurate, at $1/(2\pi\nu_m)$ it must give way to the Dirac or Klein–Gordon equation, and below it pair creation ends the one-particle description. That is the reading of the criterion $\nu_{\Phi}\ll \nu_m$ of §*The Non-Relativistic Criterion*, and it is the sense in which $1/(2\pi\nu_m)$ is quoted as the length at which a particle becomes relativistic: $386\ \mathrm{fm}$ for the electron, $0.21\ \mathrm{fm}$ for the proton, $1.1\times10^{-3}\ \mathrm{fm}$ for the top quark.
+It is the order of length at which relativistic effects cannot be ignored. A particle localized to $1/(2\pi\nu_m)$ has, by the uncertainty relation, a momentum spread of order $h\,\nu_m=mc$, so its kinetic energy is of order its rest energy and the non-relativistic description fails there. The distance is therefore the boundary of the Schrödinger theory: far above $1/(2\pi\nu_m)$ the non-relativistic equation is accurate, at $1/(2\pi\nu_m)$ it must give way to the Dirac or Klein–Gordon equation, and below it pair creation ends the one-particle description. That is the reading of the criterion $\nu_{\Phi}\ll \nu_m$ of §*The Non-Relativistic Criterion*, and it is the sense in which $1/(2\pi\nu_m)$ is quoted as the length at which a particle becomes relativistic: $3.86\times10^{-13}\ \mathrm{m}$ for the electron, $2.1\times10^{-16}\ \mathrm{m}$ for the proton, $1.1\times10^{-18}\ \mathrm{m}$ for the top quark.
 
 It is the range of the force the particle carries. The Yukawa potential is $e^{-2\pi\nu_m r}/r$, so the distance $1/(2\pi\nu_m)$ is where the exponential has fallen by $1/e$, and beyond it the force is gone. A force carried by a massless particle has $\nu_m=0$ and no range at all, which is the same statement as the divergence of $1/(2\pi\nu_m)$.
 
 It is the distance a mass term measures. The coefficient $\nu_m$ in $\Box_\Phi-4\pi^{2}\nu_m^{2}$ fixes the distance at which the Green function stops falling as $1/r$ and starts falling exponentially. The operator coefficient and the range of the force are one distance, and in wave numbers the coefficient and the range are the same symbol read two ways.
 
-**It is not a size.** The two comparisons point in opposite directions and that is the argument. For the electron the distance is $386\ \mathrm{fm}$, while the particle is pointlike below $10^{-18}\ \mathrm{m}$: the distance exceeds every bound on the radius by five orders of magnitude. For the proton the distance is $0.21\ \mathrm{fm}$, while the charge radius is $0.84\ \mathrm{fm}$: the distance falls short of the radius by a factor of four. A number that is sometimes far too large and sometimes too small is not a radius, and §*It Is Not the Size of the Particle* collects the comparisons.
+**It is not a size.** The two comparisons point in opposite directions and that is the argument. For the electron the distance is $3.86\times10^{-13}\ \mathrm{m}$, while the particle is pointlike below $10^{-18}\ \mathrm{m}$: the distance exceeds every bound on the radius by five orders of magnitude. For the proton the distance is $2.1\times10^{-16}\ \mathrm{m}$, while the charge radius is $8.4\times10^{-16}\ \mathrm{m}$: the distance falls short of the radius by a factor of four. A number that is sometimes far too large and sometimes too small is not a radius, and §*It Is Not the Size of the Particle* collects the comparisons.
 
 ### The Cost of Localization
 
@@ -386,9 +389,9 @@ $$
 
 The energy available in the region has reached the energy needed to make a second particle of the same mass. Beyond that point the description with a fixed number of particles fails, not because the calculation is difficult, but because the state that would be described has the energy to become a different state.
 
-The crossing, said three ways. It is the point where the Compton wave number is resolved, the point where a probe photon carries the rest energy, and the point where the pair threshold is reached. The three are one number. For the electron the probe photon is $511\ \mathrm{keV}$, which is a hard gamma ray, and the corresponding length is $386\ \mathrm{fm}$, which is why no microscope resolves a free electron's own scale: the photon that would resolve it would create pairs instead.
+The crossing, said three ways. It is the point where the Compton wave number is resolved, the point where a probe photon carries the rest energy, and the point where the pair threshold is reached. The three are one number. For the electron the probe photon is $8.187\times10^{-14}\ \mathrm{J}$, which is a hard gamma ray, and the corresponding length is $3.86\times10^{-13}\ \mathrm{m}$, which is why no microscope resolves a free electron's own scale: the photon that would resolve it would create pairs instead.
 
-The same statement for any mass. Since $\nu_m$ is proportional to $m$, the crossing is at a higher energy and a higher wave number for a heavier particle. A proton needs $938\ \mathrm{MeV}$ and $\nu_m=0.757\ \mathrm{fm^{-1}}$; a top quark needs $173\ \mathrm{GeV}$ and $139.5\ \mathrm{fm^{-1}}$. The rest energy per unit of mass wave number is $mc^2/\nu_m=h\,c$, a constant, which is why the ladder of the last section has one slope for every species.
+The same statement for any mass. Since $\nu_m$ is proportional to $m$, the crossing is at a higher energy and a higher wave number for a heavier particle. A proton needs $1.503\times10^{-10}\ \mathrm{J}$ and $\nu_m=7.57\times10^{14}\ \mathrm{m^{-1}}$; a top quark needs $2.772\times10^{-8}\ \mathrm{J}$ and $1.395\times10^{17}\ \mathrm{m^{-1}}$. The rest energy per unit of mass wave number is $mc^2/\nu_m=h\,c$, a constant, which is why the ladder of the last section has one slope for every species.
 
 ### The Rest-Frame Clock
 
@@ -415,7 +418,7 @@ $$
 \frac{1}{4\pi\nu_m} ,
 $$
 
-which is $193.080\ \mathrm{fm}$ for the electron. The oscillating part is the interference between the positive- and negative-frequency pieces of the state, which is why it exists in the Dirac theory and not in a one-component theory.
+which is $1.93080\times10^{-13}\ \mathrm{m}$ for the electron. The oscillating part is the interference between the positive- and negative-frequency pieces of the state, which is why it exists in the Dirac theory and not in a one-component theory.
 
 The product of amplitude and frequency is $c$. The angular frequency of the trembling is $2\omega_C=4\pi c\,\nu_m$, twice the rest-frame rate, and the amplitude times that frequency is
 
@@ -441,10 +444,10 @@ The measured ranges.
 
 | carrier | $mc^2$ | $\nu_m$ | $1/(2\pi\nu_m)$ | force |
 |---|---|---|---|---|
-| photon | $<10^{-27}\ \mathrm{eV}$ | $<5\times10^{-21}\ \mathrm{m^{-1}}$ | $>2\times10^{20}\ \mathrm{m}$ | electromagnetism |
-| pion | $139.57\ \mathrm{MeV}$ | $1.1258\times10^{14}\ \mathrm{m^{-1}}$ | $1.4138\ \mathrm{fm}$ | the nuclear force |
-| $W$ | $80.377\ \mathrm{GeV}$ | $6.483\times10^{16}\ \mathrm{m^{-1}}$ | $2.455\times10^{-18}\ \mathrm{m}$ | the weak charged current |
-| $Z$ | $91.188\ \mathrm{GeV}$ | $7.355\times10^{16}\ \mathrm{m^{-1}}$ | $2.164\times10^{-18}\ \mathrm{m}$ | the weak neutral current |
+| photon | $<1.602\times10^{-46}\ \mathrm{J}$ | $<5\times10^{-21}\ \mathrm{m^{-1}}$ | $>2\times10^{20}\ \mathrm{m}$ | electromagnetism |
+| pion | $2.2361\times10^{-11}\ \mathrm{J}$ | $1.1258\times10^{14}\ \mathrm{m^{-1}}$ | $1.4138\times10^{-15}\ \mathrm{m}$ | the nuclear force |
+| $W$ | $1.2878\times10^{-8}\ \mathrm{J}$ | $6.483\times10^{16}\ \mathrm{m^{-1}}$ | $2.455\times10^{-18}\ \mathrm{m}$ | the weak charged current |
+| $Z$ | $1.4610\times10^{-8}\ \mathrm{J}$ | $7.355\times10^{16}\ \mathrm{m^{-1}}$ | $2.164\times10^{-18}\ \mathrm{m}$ | the weak neutral current |
 
 The ordering of the force ranges is the ordering of the mass wave numbers, read backwards. The electromagnetic force is long ranged because the wave number of its carrier is zero; the weak force is the shortest because its carriers have the largest wave numbers among the known gauge bosons; the nuclear force sits between them because the pion is light on the scale of the weak bosons. In every case the number that decides is $\nu_m$, and no other number enters.
 
@@ -464,7 +467,7 @@ $$
 
 using $mc^2=m\,c^{2}$. For the electron the number is $1.323\times10^{18}\ \mathrm{V\,m^{-1}}$, the Schwinger field. The reading is direct: the rest energy, divided by the charge and multiplied by the mass wave number, is the field that supplies it over one wave number. In wave numbers the formula is a square and a constant, and no length appears.
 
-The same number as a voltage. Divide by $e$ and the statement becomes a potential difference: the rest energy per unit charge is $511\ \mathrm{kV}$, delivered over $386\ \mathrm{fm}$. Both numbers are the same pair again, energy and wave number, and the mass wave number is what fixes the second.
+The same number as a voltage. Divide by $e$ and the statement becomes a potential difference: the rest energy per unit charge is $511\ \mathrm{kV}$, delivered over $3.86\times10^{-13}\ \mathrm{m}$. Both numbers are the same pair again, energy and wave number, and the mass wave number is what fixes the second.
 
 Why the wave number is the invariant statement. The critical field depends on the charge as well as on the mass, so it is not a property of the particle alone; $\nu_m$ is. The Schwinger field is the mass wave number read through the coupling, and it is quoted in volts per metre only because a laboratory field is measured that way.
 
@@ -478,11 +481,11 @@ $$
 \lambda_C = \dfrac{h}{mc} = \dfrac{1}{\nu_m} .
 $$
 
-For the electron $\lambda_C=2.426\ \mathrm{pm}$, and the maximum shift, at backward scattering, is $2\lambda_C=4.85\ \mathrm{pm}$.
+For the electron $\lambda_C=2.426\times10^{-12}\ \mathrm{m}$, and the maximum shift, at backward scattering, is $2\lambda_C=4.85\times10^{-12}\ \mathrm{m}$.
 
 The factor $2\pi$ is not decoration. A spectrometer measures the ordinary wavelength, so the Compton formula is quoted with $\lambda_C=1/\nu_m$ and not with $1/(2\pi\nu_m)$; the angular wave number enters the theory and the ordinary wavelength enters the instrument. The two differ by exactly the $2\pi$ that separates $\frac{h}{2\pi}$ from $h$ in the definition.
 
-When the effect is visible. The shift is a fixed length, so it matters only when the incident wavelength is comparable to it. At $1\ \mathrm{pm}$ the shift is a few tenths of the wavelength; at $500\ \mathrm{nm}$ it is $10^{-5}$ of it and unobservable. That is why the Compton effect is a hard-X-ray and gamma-ray phenomenon and why visible-light scattering is Thomson scattering: the mass wave number marks the crossover, and the crossover is the usual one of a ratio of order one.
+When the effect is visible. The shift is a fixed length, so it matters only when the incident wavelength is comparable to it. At $1\times10^{-12}\ \mathrm{m}$ the shift is a few tenths of the wavelength; at $5.00\times10^{-7}\ \mathrm{m}$ it is $10^{-5}$ of it and unobservable. That is why the Compton effect is a hard-X-ray and gamma-ray phenomenon and why visible-light scattering is Thomson scattering: the mass wave number marks the crossover, and the crossover is the usual one of a ratio of order one.
 
 The cross-section falls at the same wave number. Below $\lambda_C$ the Klein–Nishina cross-section drops with energy, and the drop is the same statement as the pair threshold: the photon has enough energy to do more than shake the charge, and the elastic channel closes. The mass wave number marks both.
 
@@ -516,15 +519,15 @@ $$
 
 to five figures, the two differing only in the fifth because the binding energy is $2.7\times10^{-5}$ of the rest energy; and the ordering $\nu_m\simeq \nu_t^{\prime}\gg \nu_{\Phi}$ is the statement that the electron is slow. Only one ratio is large: $\nu_{m_e}/\nu_{\Phi}=\nu_t^{\prime}/\nu_{\Phi}=1/\beta\simeq1/\alpha$, so the momentum wave number is $1/(2\pi a_0)$ while the other two stay at the mass wave number.
 
-The binding has a wave number of its own, and it is not one of the three. The energy that moves inside the atom is the binding energy, and $\frac{h\,c}{13.6\ \mathrm{eV}}$ is the wavelength at the ionization threshold, that is $\nu_{\gamma}=1.097\times10^{7}\ \mathrm{m^{-1}}$. That number is not $\nu_t^{\prime}$ of the state, because $\nu_t^{\prime}$ is built from the total energy and the total energy carries the rest energy. It is the energy wave number of an energy difference, of the kind read in §*The Uncertainty in Time*, and it is two hundred and seventy times smaller than the momentum wave number of the ground state: the photon that ionizes hydrogen has a wave number far below the inverse radius of the atom it ionizes, which is why the photo-ionization cross-section is so small.
+The binding has a wave number of its own, and it is not one of the three. The energy that moves inside the atom is the binding energy, and $\frac{h\,c}{2.179\times10^{-18}\ \mathrm{J}}$ is the wavelength at the ionization threshold, that is $\nu_{\gamma}=1.097\times10^{7}\ \mathrm{m^{-1}}$. That number is not $\nu_t^{\prime}$ of the state, because $\nu_t^{\prime}$ is built from the total energy and the total energy carries the rest energy. It is the energy wave number of an energy difference, of the kind read in §*The Uncertainty in Time*, and it is two hundred and seventy times smaller than the momentum wave number of the ground state: the photon that ionizes hydrogen has a wave number far below the inverse radius of the atom it ionizes, which is why the photo-ionization cross-section is so small.
 
-What the ratio buys. Because the ratio is the inverse fine-structure constant divided by $2\pi$, a relativistic correction is smaller than the non-relativistic energy by a factor $\alpha^{2}$. The binding energy itself is $\tfrac12\alpha^{2}m_ec^{2}=13.6\ \mathrm{eV}$, and the corrections to it are of order $\alpha^{4}m_ec^{2}=1.4\ \mathrm{meV}$, a relative size of $2\alpha^{2}=1.1\times10^{-4}$. The scale $\alpha^{2}m_ec^{2}=27.2\ \mathrm{eV}$ is the binding scale and not the size of a correction; confusing the two overstates the corrections by the factor $1/\alpha^{2}=1.9\times10^{4}$. That the corrections sit four powers of $\alpha$ down follows from the same small parameter that makes $\nu_{\Phi}\ll \nu_m$, and it is why the Schrödinger equation with a Coulomb potential works as well as it does.
+What the ratio buys. Because the ratio is the inverse fine-structure constant divided by $2\pi$, a relativistic correction is smaller than the non-relativistic energy by a factor $\alpha^{2}$. The binding energy itself is $\tfrac12\alpha^{2}m_ec^{2}=2.179\times10^{-18}\ \mathrm{J}$, and the corrections to it are of order $\alpha^{4}m_ec^{2}=2.24\times10^{-22}\ \mathrm{J}$, a relative size of $2\alpha^{2}=1.1\times10^{-4}$. The scale $\alpha^{2}m_ec^{2}=4.358\times10^{-18}\ \mathrm{J}$ is the binding scale and not the size of a correction; confusing the two overstates the corrections by the factor $1/\alpha^{2}=1.9\times10^{4}$. That the corrections sit four powers of $\alpha$ down follows from the same small parameter that makes $\nu_{\Phi}\ll \nu_m$, and it is why the Schrödinger equation with a Coulomb potential works as well as it does.
 
 ## The Momentum Wave Number
 
 ### It Belongs to the State
 
-**It is the wave number of the preparation.** Two electrons of the same mass, one at $1\ \mathrm{MeV}$ and one at $1\ \mathrm{TeV}$, have the same $\nu_m$ and momentum wave numbers that differ by six orders of magnitude. Nothing about $\nu_{\Phi}$ can be tabulated for a species. It is quoted for a beam, a trap, a thermal ensemble or a bound orbit, and it changes when any of those changes.
+**It is the wave number of the preparation.** Two electrons of the same mass, one at $1.6022\times10^{-13}\ \mathrm{J}$ and one at $1.6022\times10^{-7}\ \mathrm{J}$, have the same $\nu_m$ and momentum wave numbers that differ by six orders of magnitude. Nothing about $\nu_{\Phi}$ can be tabulated for a species. It is quoted for a beam, a trap, a thermal ensemble or a bound orbit, and it changes when any of those changes.
 
 It is the reciprocal of the momentum wavelength, exactly. A plane wave of momentum $\vec p_{\Phi}$ has the spatial phase $e^{i\theta_{\mathrm{spa}}}$, so its wave vector is the vector part of the element, $\vec\nu_{\Phi}=\frac{\vec p_{\Phi}}{h}$, and its magnitude is the momentum wave number:
 
@@ -553,7 +556,7 @@ $$
 \frac{1}{2\pi\nu_{\Phi}}=\frac{h}{2\pi p_{\Phi}} ,
 $$
 
-the full turn being $2\pi$ times as long, $\lambda_{\Phi}=1/\nu_{\Phi}=h/p_{\Phi}$, the de Broglie wavelength. The quotient is one radian of the spatial phase, and it is the distance this section is about. It is not a property of the species but of the preparation: for the electron in the hydrogen ground state it is the Bohr radius, $52.9\ \mathrm{pm}$; for a $100\ \mathrm{eV}$ electron it is $19.5\ \mathrm{pm}$; for a thermal neutron it is $16.0\ \mathrm{pm}$.
+the full turn being $2\pi$ times as long, $\lambda_{\Phi}=1/\nu_{\Phi}=h/p_{\Phi}$, the de Broglie wavelength. The quotient is one radian of the spatial phase, and it is the distance this section is about. It is not a property of the species but of the preparation: for the electron in the hydrogen ground state it is the Bohr radius, $5.29\times10^{-11}\ \mathrm{m}$; for a $1.6022\times10^{-17}\ \mathrm{J}$ electron it is $1.95\times10^{-11}\ \mathrm{m}$; for a thermal neutron it is $1.60\times10^{-11}\ \mathrm{m}$.
 
 It is the unit of every interference spacing. The fringe spacing of two slits is
 
@@ -567,7 +570,7 @@ so the spacing of the fringes is the distance per radian, magnified by the geome
 
 It is the ruler of a bound orbit. A closed orbit holds a whole number of turns of phase, $r=n/(2\pi\nu_{\Phi})$, so the distance $1/(2\pi\nu_{\Phi})$ is the step of the ladder of bound states. For hydrogen in the ground state the step is the orbit itself, and the quantization is the statement that the orbit is one step long.
 
-It is the coherence length of an ensemble. A thermal ensemble has its wave numbers spread over $\nu_T=\frac{\sqrt{2\pi m k_BT}}{h}$, so the distance over which its phase stays defined is $1/(2\pi\nu_T)$: $0.685\ \mathrm{nm}$ for the electron at $300\ \mathrm{K}$ and $0.0160\ \mathrm{nm}$ for the neutron. A gas is quantum when the interparticle spacing reaches that distance, and the criterion $n/\nu_T^{3}\sim1$ is the statement that the basis operators of size $1/(2\pi\nu_T)$ have filled the volume.
+It is the coherence length of an ensemble. A thermal ensemble has its wave numbers spread over $\nu_T=\frac{\sqrt{2\pi m k_BT}}{h}$, so the distance over which its phase stays defined is $1/(2\pi\nu_T)$: $6.85\times10^{-10}\ \mathrm{m}$ for the electron at $300\ \mathrm{K}$ and $1.60\times10^{-11}\ \mathrm{m}$ for the neutron. A gas is quantum when the interparticle spacing reaches that distance, and the criterion $n/\nu_T^{3}\sim1$ is the statement that the basis operators of size $1/(2\pi\nu_T)$ have filled the volume.
 
 ### Interference and Diffraction
 
@@ -579,7 +582,7 @@ $$
 
 which is the ordinary formula $\lambda D/d$ with $\lambda=1/\nu_{\Phi}$. The wave number enters the phase with its $2\pi$ in front, and the wavelength enters the ruler on the screen.
 
-A number. Electrons of $100\ \mathrm{eV}$ have $\nu_{\Phi}=8.154\times10^{9}\ \mathrm{m^{-1}}$, so with $d=1\ \mu\mathrm{m}$ and $D=1\ \mathrm{m}$ the fringes are $0.12\ \mathrm{mm}$ apart and plainly visible. The same electrons through a crystal, whose planes are $0.2\ \mathrm{nm}$ apart, give diffraction angles of order $1/(2d\,\nu_{\Phi})=0.3\ \mathrm{rad}$: the crystal is the grating that matches the wave number.
+A number. Electrons of $1.6022\times10^{-17}\ \mathrm{J}$ have $\nu_{\Phi}=8.154\times10^{9}\ \mathrm{m^{-1}}$, so with $d=1\ \mu\mathrm{m}$ and $D=1\ \mathrm{m}$ the fringes are $1.2\times10^{-4}\ \mathrm{m}$ apart and plainly visible. The same electrons through a crystal, whose planes are $2\times10^{-10}\ \mathrm{m}$ apart, give diffraction angles of order $1/(2d\,\nu_{\Phi})=0.3\ \mathrm{rad}$: the crystal is the grating that matches the wave number.
 
 Diffraction is the same statement. An aperture of width $w$ spreads the beam over an angle of order $1/(w\,\nu_{\Phi})$. The pattern is wide when the wave number is small compared with the inverse aperture, which is the wave regime, and narrow when it is large, which is the ray regime. The boundary between the two is a product of two lengths, one of them $1/(2\pi\nu_{\Phi})$ and the other the apparatus.
 
@@ -595,11 +598,11 @@ The factor of two is a convention — Abbe's — and the constant of order one b
 
 Visible light stops at about $2\times10^{-7}\ \mathrm{m}$ and a proton is $10^{-15}\ \mathrm{m}$ across, so the gap is eight orders of magnitude. The way past the barrier is a larger $\nu_{\Phi}$, and since $\nu_{\Phi}=p/h$ a fast light particle supplies one. The electron is the choice: its mass is small, so a modest accelerating voltage buys a large momentum without a large rest-energy budget.
 
-The arithmetic, relativistically. An electron through a potential difference $V$ has $eV$ of kinetic energy, so $pc=\sqrt{(eV)^{2}+2\,eV\,m_ec^{2}}$, and one division by $h$ gives the wave number. At $100\ \mathrm{kV}$, $\lambda_{\Phi}=3.70\ \mathrm{pm}$; at $200\ \mathrm{kV}$, $2.51\ \mathrm{pm}$; at $300\ \mathrm{kV}$, $1.97\ \mathrm{pm}$. Each is some hundred thousand times shorter than a visible photon, and the diffraction limit each sets is far below the spacing of atoms in a crystal.
+The arithmetic, relativistically. An electron through a potential difference $V$ has $e\,V$ of kinetic energy, so $pc=\sqrt{(e\,V)^{2}+2\,e\,V\,m_ec^{2}}$, and one division by $h$ gives the wave number. At $100\ \mathrm{kV}$, $\lambda_{\Phi}=3.70\times10^{-12}\ \mathrm{m}$; at $200\ \mathrm{kV}$, $2.51\times10^{-12}\ \mathrm{m}$; at $300\ \mathrm{kV}$, $1.97\times10^{-12}\ \mathrm{m}$. Each is some hundred thousand times shorter than a visible photon, and the diffraction limit each sets is far below the spacing of atoms in a crystal.
 
-**The limit met in practice is not the diffraction one.** A transmission electron microscope resolves $50$ to $100\ \mathrm{pm}$, whereas $\lambda_{\Phi}/2$ at $300\ \mathrm{kV}$ is $1\ \mathrm{pm}$: the instrument sits a factor of fifty to a hundred above its own diffraction limit. The gap is the aberration of the magnetic lenses, chiefly spherical and chromatic, together with the small aperture those aberrations force. So the electron microscope is the case where the wavelength stops being the obstacle: at these wave numbers the instrument is the limit and the wave is not. That is the opposite of the optical microscope, where the wavelength is the limit and the glass is nearly perfect.
+**The limit met in practice is not the diffraction one.** A transmission electron microscope resolves $50$ to $1.00\times10^{-10}\ \mathrm{m}$, whereas $\lambda_{\Phi}/2$ at $300\ \mathrm{kV}$ is $1\times10^{-12}\ \mathrm{m}$: the instrument sits a factor of fifty to a hundred above its own diffraction limit. The gap is the aberration of the magnetic lenses, chiefly spherical and chromatic, together with the small aperture those aberrations force. So the electron microscope is the case where the wavelength stops being the obstacle: at these wave numbers the instrument is the limit and the wave is not. That is the opposite of the optical microscope, where the wavelength is the limit and the glass is nearly perfect.
 
-The mass wave number plays no part in the argument and must not be put in its place. To resolve $1/(2\pi\nu_{m_e})=386\ \mathrm{fm}$ a probe would need a wave number $\nu_{m_e}$, and a photon of that wave number carries $511\ \mathrm{keV}$. That is the pair threshold: the photon that reaches the electron's own scale makes an electron-positron pair instead of resolving the electron. The resolution of an instrument is written in $\nu_{\Phi}$, and the boundary beyond which the one-particle description ends is written in $\nu_m$. They are different numbers and they answer different questions.
+The mass wave number plays no part in the argument and must not be put in its place. To resolve $1/(2\pi\nu_{m_e})=3.86\times10^{-13}\ \mathrm{m}$ a probe would need a wave number $\nu_{m_e}$, and a photon of that wave number carries $8.187\times10^{-14}\ \mathrm{J}$. That is the pair threshold: the photon that reaches the electron's own scale makes an electron-positron pair instead of resolving the electron. The resolution of an instrument is written in $\nu_{\Phi}$, and the boundary beyond which the one-particle description ends is written in $\nu_m$. They are different numbers and they answer different questions.
 
 ### No State Is Narrower Than Half Its Wavelength
 
@@ -631,9 +634,9 @@ The same count for any potential. A bound state has $\oint\nu_{\Phi}\,dq=n+\tfra
 
 ### Matter Waves at the Crystal
 
-Two numbers worth remembering. A $100\ \mathrm{eV}$ electron has $\nu_{\Phi}=8.154\times10^{9}\ \mathrm{m^{-1}}$ and an ordinary wavelength of $0.123\ \mathrm{nm}$. A neutron at $300\ \mathrm{K}$ has the thermal wave number $\nu_T=\frac{\sqrt{2\pi m k_BT}}{h}$, giving $\nu_{\Phi}=9.963\times10^{9}\ \mathrm{m^{-1}}$ and an ordinary wavelength of $0.100\ \mathrm{nm}$.
+Two numbers worth remembering. A $1.6022\times10^{-17}\ \mathrm{J}$ electron has $\nu_{\Phi}=8.154\times10^{9}\ \mathrm{m^{-1}}$ and an ordinary wavelength of $1.23\times10^{-10}\ \mathrm{m}$. A neutron at $300\ \mathrm{K}$ has the thermal wave number $\nu_T=\frac{\sqrt{2\pi m k_BT}}{h}$, giving $\nu_{\Phi}=9.963\times10^{9}\ \mathrm{m^{-1}}$ and an ordinary wavelength of $1.00\times10^{-10}\ \mathrm{m}$.
 
-The crystal spacing matches them. Atomic planes are of order $0.2\ \mathrm{nm}$ apart, the same decade as both wavelengths, so a crystal diffracts both electrons and neutrons. The Bragg condition in this notation is $2d\sin\theta=n\lambda=n/\nu_{\Phi}$, which is the textbook form read with $\lambda=1/\nu_{\Phi}$.
+The crystal spacing matches them. Atomic planes are of order $2\times10^{-10}\ \mathrm{m}$ apart, the same decade as both wavelengths, so a crystal diffracts both electrons and neutrons. The Bragg condition in this notation is $2d\sin\theta=n\lambda=n/\nu_{\Phi}$, which is the textbook form read with $\lambda=1/\nu_{\Phi}$.
 
 Why neutrons and not protons. A proton at $300\ \mathrm{K}$ has a thermal wave number larger than the neutron's only by the square root of the mass ratio, which is not enough to matter; what decides the choice is that the neutron is neutral and penetrates the crystal, while the proton is stopped in the first layer. The wave numbers are comparable; the interactions are not.
 
@@ -645,7 +648,7 @@ $$
 \nu_T =\frac{\sqrt{2\pi m k_BT}}{h} .
 $$
 
-For the electron at $300\ \mathrm{K}$ this is $2.324\times10^{8}\ \mathrm{m^{-1}}$, with an ordinary wavelength of $4.30\ \mathrm{nm}$; for the neutron, $9.963\times10^{9}\ \mathrm{m^{-1}}$ and $0.100\ \mathrm{nm}$.
+For the electron at $300\ \mathrm{K}$ this is $2.324\times10^{8}\ \mathrm{m^{-1}}$, with an ordinary wavelength of $4.30\times10^{-9}\ \mathrm{m}$; for the neutron, $9.963\times10^{9}\ \mathrm{m^{-1}}$ and $1.00\times10^{-10}\ \mathrm{m}$.
 
 **The degeneracy criterion is a count of basis operators per particle.** A gas is quantum when the volume per particle is comparable to the cube of the inverse wave number:
 
@@ -665,7 +668,7 @@ $$
 \nu_{\Phi} =\gamma\,\frac{v}{c}\,\nu_m = \gamma\beta\,\nu_m .
 $$
 
-At rest it vanishes; at $\beta=1/\sqrt{2}$ it equals the mass wave number; at $\beta\to1$ it approaches $\gamma \nu_m$ and grows without bound as the energy rises. The momentum and energy wave numbers can both be made arbitrarily large by raising the energy; only the mass wave number is fixed. At $1\ \mathrm{TeV}$ an electron's momentum wave number is $8.07\times10^{17}\ \mathrm{m^{-1}}$, and its energy wave number is the same number.
+At rest it vanishes; at $\beta=1/\sqrt{2}$ it equals the mass wave number; at $\beta\to1$ it approaches $\gamma \nu_m$ and grows without bound as the energy rises. The momentum and energy wave numbers can both be made arbitrarily large by raising the energy; only the mass wave number is fixed. At $1.6022\times10^{-7}\ \mathrm{J}$ an electron's momentum wave number is $8.07\times10^{17}\ \mathrm{m^{-1}}$, and its energy wave number is the same number.
 
 That is the resolution of a collider. Two beams collide with a wave number far above the inverse size of a proton, and the collisions resolve structure at that wave number. The statement that a collider probes a given distance is a statement about $\nu_{\Phi}$, not about any particle's size.
 
@@ -675,15 +678,15 @@ $$
 \frac{\lambda_{\Phi}}{\lambda_m}=\frac{1}{\gamma\beta},
 $$
 
-so the de Broglie length is the mass length divided by $\gamma\beta$. The electron gives the ladder: $24.14\ \mathrm{pm}$ at $\beta=0.1$, $4.202\ \mathrm{pm}$ at $\beta=0.5$, and $2.426\ \mathrm{pm}$ at $\beta=1/\sqrt{2}$, where the two lengths are equal. Above that speed the de Broglie length is the shorter of the two, and below it the longer. A proton at $\beta=0.5$ carries $2.289\ \mathrm{fm}$, shorter than the electron's by the mass ratio $1836$.
+so the de Broglie length is the mass length divided by $\gamma\beta$. The electron gives the ladder: $2.414\times10^{-11}\ \mathrm{m}$ at $\beta=0.1$, $4.202\times10^{-12}\ \mathrm{m}$ at $\beta=0.5$, and $2.426\times10^{-12}\ \mathrm{m}$ at $\beta=1/\sqrt{2}$, where the two lengths are equal. Above that speed the de Broglie length is the shorter of the two, and below it the longer. A proton at $\beta=0.5$ carries $2.289\times10^{-15}\ \mathrm{m}$, shorter than the electron's by the mass ratio $1836$.
 
-The limit at rest is the one worth stating. As $\beta\to0$ the de Broglie length diverges while the mass length does not move: $2.426\ \mathrm{pm}$ for the electron at every speed. A particle at rest has no de Broglie wavelength at all and a finite Compton wavelength, and the two statements are about two different lengths. The reading that a massive particle has a short wavelength comes from confusing them.
+The limit at rest is the one worth stating. As $\beta\to0$ the de Broglie length diverges while the mass length does not move: $2.426\times10^{-12}\ \mathrm{m}$ for the electron at every speed. A particle at rest has no de Broglie wavelength at all and a finite Compton wavelength, and the two statements are about two different lengths. The reading that a massive particle has a short wavelength comes from confusing them.
 
 ### Not a Size Either
 
-A cold atom. $\nu_{\Phi}=1.6\times10^{5}\ \mathrm{m^{-1}}$ for an atom at microkelvin temperatures, and the atom is $0.1\ \mathrm{nm}$ across, that is $10^{10}\ \mathrm{m^{-1}}$ of inverse size. The ratio is four orders of magnitude, in the direction opposite to the naive reading.
+A cold atom. $\nu_{\Phi}=1.6\times10^{5}\ \mathrm{m^{-1}}$ for an atom at microkelvin temperatures, and the atom is $1\times10^{-10}\ \mathrm{m}$ across, that is $10^{10}\ \mathrm{m^{-1}}$ of inverse size. The ratio is four orders of magnitude, in the direction opposite to the naive reading.
 
-A macroscopic object. A grain of $1\ \mathrm{g}$ moving at $1\ \mathrm{mm\,s^{-1}}$ has $p=10^{-6}\ \mathrm{kg\,m\,s^{-1}}$ and $\nu_{\Phi}=1.51\times10^{27}\ \mathrm{m^{-1}}$, twenty orders of magnitude above the inverse size of the grain. No interference is observable, and the reason is not that the grain is large but that its wave number is large compared with every inverse aperture available.
+A macroscopic object. A grain of $1\times10^{-3}\ \mathrm{kg}$ moving at $1\times10^{-3}\ \mathrm{m\,s^{-1}}$ has $p=10^{-6}\ \mathrm{kg\,m\,s^{-1}}$ and $\nu_{\Phi}=1.51\times10^{27}\ \mathrm{m^{-1}}$, twenty orders of magnitude above the inverse size of the grain. No interference is observable, and the reason is not that the grain is large but that its wave number is large compared with every inverse aperture available.
 
 **The grain shows the other length too.** Its mass wave number is $\nu_m=4.52\times10^{38}\ \mathrm{m^{-1}}$, so $\lambda_m=2.210\times10^{-39}\ \mathrm{m}$. That is $3.34\times10^{-12}$ of its own de Broglie length, and $1.37\times10^{-4}$ of the Planck length. For a macroscopic body the mass length is the shortest length in the description by eleven orders of magnitude, and it is the de Broglie length that matters for every observable: the two are separate numbers and only the second is set by the motion.
 
@@ -731,7 +734,7 @@ $$
 
 the full turn being $2\pi$ times as long, $\lambda_{t}=1/\nu_t^{\prime}=h\,c/E$, the wavelength of the temporal phase.
 
-The distance is the one the energy becomes when a duration is converted into a length, and the conversion is the speed of light and nothing else. For an electron of $1\ \mathrm{MeV}$ it is $197\ \mathrm{fm}$; at rest it equals the mass distance, because the energy is the rest energy.
+The distance is the one the energy becomes when a duration is converted into a length, and the conversion is the speed of light and nothing else. For an electron of $1.6022\times10^{-13}\ \mathrm{J}$ it is $1.97\times10^{-13}\ \mathrm{m}$; at rest it equals the mass distance, because the energy is the rest energy.
 
 It is the length a time becomes. A process of duration $\tau$ has the wave number $1/(2\pi c\tau)$, and the distance light covers while it runs is $c\tau$, the reciprocal of $2\pi$ times that wave number. A lifetime and a length are therefore one measurement in two units, and the decay of §*The Decay Wave Number* is the case where the duration is the mean life.
 
@@ -777,7 +780,7 @@ $$
 
 which is the inverse of the distance the particle travels before it decays. The same number is a wave number and an inverse flight path, and the equality is not a coincidence: both are an energy divided by $h\,c$.
 
-Two numbers. The charged pion has $\tau=2.60\times10^{-8}\ \mathrm{s}$, so $c\tau=7.80\ \mathrm{m}$ and $\nu_t^{\prime}=0.0204\ \mathrm{m^{-1}}$: a pion at rest decays after seven metres of light travel, which is why a pion beam line is measured in metres. The $Z$ boson has $\Gamma=2.496\ \mathrm{GeV}$, so $\nu_t^{\prime}=1.265\times10^{16}\ \mathrm{m^{-1}}$: its decay distance is $0.0791\ \mathrm{fm}$, about a tenth of the proton charge radius, which is why it leaves no track.
+Two numbers. The charged pion has $\tau=2.60\times10^{-8}\ \mathrm{s}$, so $c\tau=7.80\ \mathrm{m}$ and $\nu_t^{\prime}=0.0204\ \mathrm{m^{-1}}$: a pion at rest decays after seven metres of light travel, which is why a pion beam line is measured in metres. The $Z$ boson has $\Gamma=4.000\times10^{-10}\ \mathrm{J}$, so $\nu_t^{\prime}=1.265\times10^{16}\ \mathrm{m^{-1}}$: its decay distance is $7.91\times10^{-17}\ \mathrm{m}$, about a tenth of the proton charge radius, which is why it leaves no track.
 
 The pair of statements is one measurement. A width read in an energy spectrum and a lifetime read in a beam line give the same wave number, and the conversion between them is the same $h\,c$ that converts every energy in this article into a wave number.
 
@@ -785,7 +788,7 @@ The pair of statements is one measurement. A width read in an energy spectrum an
 
 **The hypotenuse is the longest side.** Since $\nu_t^{\prime}$ is the hypotenuse of the triangle, $\nu_t^{\prime}\ge \nu_{\Phi}$ and $\nu_t^{\prime}\ge \nu_m$, with equality at rest for the first and in the massless limit for the second. The energy wave number is the largest of the three at every speed.
 
-It grows without bound. It tracks the total energy, and the total energy grows without limit as the particle is accelerated, so the energy wave number can be made as large as the energy allows. At the Planck energy, $1.22\times10^{19}\ \mathrm{GeV}$, it reaches $9.85\times10^{33}\ \mathrm{m^{-1}}$, whose inverse is the Planck length. That is not a coincidence either: the Planck length is defined as the inverse energy wave number of the Planck energy, so the statement is a tautology once the definition is read.
+It grows without bound. It tracks the total energy, and the total energy grows without limit as the particle is accelerated, so the energy wave number can be made as large as the energy allows. At the Planck energy, $1.955\times10^{9}\ \mathrm{J}$, it reaches $9.85\times10^{33}\ \mathrm{m^{-1}}$, whose inverse is the Planck length. That is not a coincidence either: the Planck length is defined as the inverse energy wave number of the Planck energy, so the statement is a tautology once the definition is read.
 
 ### It Is Not Independent
 
@@ -795,21 +798,21 @@ Why name it anyway. Because the same number appears in four unrelated places —
 
 ## The Ladder
 
-One column of energies, one column of wave numbers. The conversion $h\,c=1239.84198\ \mathrm{MeV}\cdot\mathrm{fm}$ gives a wave number for every energy, and the same table read with $k_BT$ in place of $E$ gives a wave number for every temperature.
+One column of energies, one column of wave numbers. The conversion $h\\,c=1.986\\,446\\times10^{-25}\\ \\mathrm{J\\,m}$ gives a wave number for every energy, and the same table read with $k_BT$ in place of $E$ gives a wave number for every temperature.
 
 | energy | $\nu_t^{\prime}$ | temperature | $\nu_t^{\prime}$ |
 |---|---|---|---|
-| $1\ \mathrm{meV}$ | $8.066\times10^{2}\ \mathrm{m^{-1}}$ | $1\ \mathrm{K}$ | $69.49\ \mathrm{m^{-1}}$ |
-| $1\ \mathrm{eV}$ | $8.066\times10^{5}\ \mathrm{m^{-1}}$ | $2.725\ \mathrm{K}$ | $189.4\ \mathrm{m^{-1}}$ |
-| $1\ \mathrm{keV}$ | $8.066\times10^{8}\ \mathrm{m^{-1}}$ | $300\ \mathrm{K}$ | $2.085\times10^{4}\ \mathrm{m^{-1}}$ |
-| $1\ \mathrm{MeV}$ | $8.066\times10^{11}\ \mathrm{m^{-1}}$ | $10^{9}\ \mathrm{K}$ | $6.949\times10^{10}\ \mathrm{m^{-1}}$ |
-| $1\ \mathrm{GeV}$ | $8.066\times10^{14}\ \mathrm{m^{-1}}$ | | |
-| $1\ \mathrm{TeV}$ | $8.066\times10^{17}\ \mathrm{m^{-1}}$ | | |
-| $1.22\times10^{19}\ \mathrm{GeV}$ | $9.847\times10^{33}\ \mathrm{m^{-1}}$ | | |
+| $1.6022\times10^{-22}\ \mathrm{J}$ | $8.066\times10^{2}\ \mathrm{m^{-1}}$ | $1\ \mathrm{K}$ | $69.49\ \mathrm{m^{-1}}$ |
+| $1.6022\times10^{-19}\ \mathrm{J}$ | $8.066\times10^{5}\ \mathrm{m^{-1}}$ | $2.725\ \mathrm{K}$ | $189.4\ \mathrm{m^{-1}}$ |
+| $1.6022\times10^{-16}\ \mathrm{J}$ | $8.066\times10^{8}\ \mathrm{m^{-1}}$ | $300\ \mathrm{K}$ | $2.085\times10^{4}\ \mathrm{m^{-1}}$ |
+| $1.6022\times10^{-13}\ \mathrm{J}$ | $8.066\times10^{11}\ \mathrm{m^{-1}}$ | $10^{9}\ \mathrm{K}$ | $6.949\times10^{10}\ \mathrm{m^{-1}}$ |
+| $1.6022\times10^{-10}\ \mathrm{J}$ | $8.066\times10^{14}\ \mathrm{m^{-1}}$ | | |
+| $1.6022\times10^{-7}\ \mathrm{J}$ | $8.066\times10^{17}\ \mathrm{m^{-1}}$ | | |
+| $1.955\times10^{9}\ \mathrm{J}$ | $9.847\times10^{33}\ \mathrm{m^{-1}}$ | | |
 
-**Three columns are the same column.** The row for $1\ \mathrm{eV}$ is the row for $11605\ \mathrm{K}$ and the row for $1.78\times10^{-36}\ \mathrm{kg}$; the three quantities are related by exact constants, and a wave number is one way of writing any of them. The ladder is the conversion table of the whole series, and every order-of-magnitude statement in it can be read from this table alone.
+**Three columns are the same column.** The row for $1.6022\times10^{-19}\ \mathrm{J}$ is the row for $11605\ \mathrm{K}$ and the row for $1.78\times10^{-36}\ \mathrm{kg}$; the three quantities are related by exact constants, and a wave number is one way of writing any of them. The ladder is the conversion table of the whole series, and every order-of-magnitude statement in it can be read from this table alone.
 
-A caution that the table invites. The ladder gives a wave number for every energy, and the wave number is a scale and not an extent. The $1\ \mathrm{eV}$ entry, $8.066\times10^{5}\ \mathrm{m^{-1}}$, is the wave number of a visible photon; it is not the inverse size of anything. The $1\ \mathrm{MeV}$ entry, $8.066\times10^{11}\ \mathrm{m^{-1}}$, is the wave number of a gamma ray; it is not the inverse radius of a nucleus. Reading the table as a list of sizes is the mistake that §*It Is Not the Size of the Particle* refutes.
+A caution that the table invites. The ladder gives a wave number for every energy, and the wave number is a scale and not an extent. The $1.6022\times10^{-19}\ \mathrm{J}$ entry, $8.066\times10^{5}\ \mathrm{m^{-1}}$, is the wave number of a visible photon; it is not the inverse size of anything. The $1.6022\times10^{-13}\ \mathrm{J}$ entry, $8.066\times10^{11}\ \mathrm{m^{-1}}$, is the wave number of a gamma ray; it is not the inverse radius of a nucleus. Reading the table as a list of sizes is the mistake that §*It Is Not the Size of the Particle* refutes.
 
 ## The Non-Relativistic Criterion
 
@@ -908,13 +911,13 @@ $$
 
 The limit $N\gg1$ is classical and $N\lesssim1$ is wave. The criterion never mentions $\nu_m$, and the reason is that a heavy body and a light one at the same speed differ in scale alone.
 
-The heavy body is classical because its length is short. A grain of $1\ \mathrm{g}$ at $1\ \mathrm{mm\,s^{-1}}$ has $\lambda_{\Phi}=6.626\times10^{-28}\ \mathrm{m}$, so a chamber of $1\ \mathrm{m}$ holds $1.51\times10^{27}$ wavelengths of it. No instrument holds fewer, and interference is impossible for that reason and not for any other. The mass length of the same grain, $2.210\times10^{-39}\ \mathrm{m}$, is shorter still and plays no part in the argument: the classical criterion is built on the length the state supplies.
+The heavy body is classical because its length is short. A grain of $1\times10^{-3}\ \mathrm{kg}$ at $1\times10^{-3}\ \mathrm{m\,s^{-1}}$ has $\lambda_{\Phi}=6.626\times10^{-28}\ \mathrm{m}$, so a chamber of $1\ \mathrm{m}$ holds $1.51\times10^{27}$ wavelengths of it. No instrument holds fewer, and interference is impossible for that reason and not for any other. The mass length of the same grain, $2.210\times10^{-39}\ \mathrm{m}$, is shorter still and plays no part in the argument: the classical criterion is built on the length the state supplies.
 
 **What $h\to0$ does depends on what is held fixed.** Hold the speed and let $h\to0$: the three lengths all go to zero in proportion, because each is $h$ over a momentum or an energy over $c$, and every ratio of §*What a Wave Number Is* is untouched. The triangle keeps its shape and loses its scale, and no length becomes large. Hold the wave number and let $h\to0$: the momentum $\vec p_{\Phi}=h\vec\nu_{\Phi}$ goes to zero, so the speed goes to zero and the particle comes to rest. The two readings are opposite, and *The Non-Quantum Limit of the Biquaternion Model* states both with the caution that the second is the one a fixed-wavelength statement of the limit actually makes.
 
 The reason the triangle cannot supply a second parameter. It has one shape, fixed by $\beta$ through $\nu_{\Phi}/\nu_m=\gamma\beta$, and a right triangle has no second degree of freedom. So $h$ cannot appear in any internal ratio of the three lengths, and the classical limit cannot be a statement about those ratios. It can only be a statement about $h$ against a length the apparatus supplies, which is the ratio $N$ of the first display.
 
-The objection, and the answer. A reader may say that the grain is classical because it is heavy, and that the criterion $N\gg1$ merely restates the fact in other units. It does not. Two grains of the same mass, one at rest and one at $1\ \mathrm{mm\,s^{-1}}$, have the same $\nu_m$ and de Broglie lengths that differ by an infinity; only the moving one has a finite $N$ at all. If mass made a body classical, a cold atom of large mass would be as classical as a cannonball, and a Bose–Einstein condensate of $10^{5}$ heavy atoms shows interference over its whole extent. The mass fixes the scale; the state fixes the classicality.
+The objection, and the answer. A reader may say that the grain is classical because it is heavy, and that the criterion $N\gg1$ merely restates the fact in other units. It does not. Two grains of the same mass, one at rest and one at $1\times10^{-3}\ \mathrm{m\,s^{-1}}$, have the same $\nu_m$ and de Broglie lengths that differ by an infinity; only the moving one has a finite $N$ at all. If mass made a body classical, a cold atom of large mass would be as classical as a cannonball, and a Bose–Einstein condensate of $10^{5}$ heavy atoms shows interference over its whole extent. The mass fixes the scale; the state fixes the classicality.
 
 ## The Massless Case
 
@@ -946,7 +949,7 @@ whose inverse is of the order of a galactic scale. A smaller mass gives a smalle
 
 The name invites a mistake, and the numbers refute it.
 
-The proton. Its mass wave number is $\nu_m=0.7568\ \mathrm{fm^{-1}}$. Its charge radius, measured by electron scattering and by hydrogen spectroscopy, is $r_p=0.8414\ \mathrm{fm}$. The product with $2\pi$ is four:
+The proton. Its mass wave number is $\nu_m=7.568\times10^{14}\ \mathrm{m^{-1}}$. Its charge radius, measured by electron scattering and by hydrogen spectroscopy, is $r_p=8.414\times10^{-16}\ \mathrm{m}$. The product with $2\pi$ is four:
 
 $$
 2\pi\,r_p\,\nu_m = \frac{0.8414}{0.2103} = 4.001 .
@@ -964,9 +967,9 @@ The statement. Each of the three wave numbers is a scale at which a description 
 
 ## The Letter and the Subscript
 
-Why a subscript at all. Four wave numbers share one letter: the mass one, the momentum one, the temporal one and the Euclidean one. A bare letter therefore names none of them, and every wave number of this article carries a subscript. The space index is $k$, in $\vec e_\imath$ and $\sum_{\imath\in\{x,y,z\}}$; it is not a wave number, and the migration that keeps the two apart is recorded in *Wavenumber Migration*.
+Why a subscript at all. Four wave numbers share one letter: the mass one, the momentum one, the temporal one and the Euclidean one. A bare letter therefore names none of them, and every wave number of this article carries a subscript. The space index is $k$, in $\vec e_{\imath}$ and $\sum_{\imath\in\{x,y,z\}}$; it is not a wave number, and the migration that keeps the two apart is recorded in *Wavenumber Migration*.
 
-Which subscripts. The labels come in two kinds, and neither names a particle. Two of them name a slot of $\tilde\Upsilon_{\Phi}$: the sector letter $\Phi$ on the vector part, $\vec\nu_{\Phi}$ and its modulus $\nu_{\Phi}$, and the primed $t$ on the temporal coefficient, $\nu_t^{\prime}$, which is the corpus's mark for a temporal slot and matches $p_{t}^{\prime}$ of the four-momentum and $r'_t$ of the four-position; the prime stays because the division by $h\,c$ converts a quantity and not a coordinate. The third names the norm of the element, $\nu_m$, and with it the species, $\nu_{m_e}$ and $\nu_{m_p}$. The letter of the momentum is not used: the momentum already writes its components $p_\imath$, and $\nu_p$ beside $p_\imath$ would be one transposition apart in running text. The sector letter is not open to that confusion, and it carries a fact the letter of the quantity would not — it says to which subspace the element belongs.
+Which subscripts. The labels come in two kinds, and neither names a particle. Two of them name a slot of $\tilde\Upsilon_{\Phi}$: the sector letter $\Phi$ on the vector part, $\vec\nu_{\Phi}$ and its modulus $\nu_{\Phi}$, and the primed $t$ on the temporal coefficient, $\nu_t^{\prime}$, which is the corpus's mark for a temporal slot and matches $p_{t}^{\prime}$ of the four-momentum and $r'_t$ of the four-position; the prime stays because the division by $h\,c$ converts a quantity and not a coordinate. The third names the norm of the element, $\nu_m$, and with it the species, $\nu_{m_e}$ and $\nu_{m_p}$. The letter of the momentum is not used: the momentum already writes its components $p_{\imath}$, and $\nu_p$ beside $p_{\imath}$ would be one transposition apart in running text. The sector letter is not open to that confusion, and it carries a fact the letter of the quantity would not — it says to which subspace the element belongs.
 
 The species enters on the mass. A wave number of a named particle is written $\nu_{m_e}$ for the electron and $\nu_{m_p}$ for the proton, which is the rule of the series that the label names the input: the input of one species is the mass of that species. No wave number is ever labelled by the name of a particle alone.
 
@@ -988,7 +991,7 @@ $$
 \lambda_m=\frac{1}{\nu_m},
 $$
 
-so the electron's mass length, $2.426\ \mathrm{pm}$, entered physics as a measured shift of a spectrum line, one year before any matter wave was proposed. The number in the formula is read off the same element this article divides by $h$: it is the norm of $\tilde\Upsilon_{\Phi}$.
+so the electron's mass length, $2.426\times10^{-12}\ \mathrm{m}$, entered physics as a measured shift of a spectrum line, one year before any matter wave was proposed. The number in the formula is read off the same element this article divides by $h$: it is the norm of $\tilde\Upsilon_{\Phi}$.
 
 **The two relations came in 1924.** De Broglie's thesis proposed that every particle carries a wave, and it did so through two equations. The first, $p=\frac{h}{\lambda}$, is $\lambda_{\Phi}=1/\nu_{\Phi}$ with the momentum of the state. The second, $hf_{\mathrm{frq}}=m\,c^{2}$, sets the rest energy of a particle as a frequency; divided by $c$ it is the rest-frame value of $\nu_t^{\prime}$, that is $\nu_m$. So the two relations give the momentum number and the mass number, and the third number is what the mass shell makes of them.
 
@@ -1006,11 +1009,11 @@ The mass shell, divided by $h^{2}$ term by term, gives the box $\nu_t^{\prime\,2
 
 The mass wave number is where localization costs the rest energy: at $1/(2\pi\nu_m)$ the wave number spread is $\nu_m$ and the energy spread is $mc^{2}$, so a second particle can be made and the one-particle description ends. It is the rest-frame clock, $\omega_C=2\pi c\,\nu_m$, which is $7.76\times10^{20}\ \mathrm{rad\,s^{-1}}$ for the electron. It is twice the trembling amplitude, and the amplitude times the trembling frequency is exactly $c$. It is the range of the force the particle carries, from $1.126\times10^{14}\ \mathrm{m^{-1}}$ for the pion to $7.36\times10^{16}\ \mathrm{m^{-1}}$ for the $Z$. It is the field that pays for a pair, $\frac{2\pi c^{3}\,m^{2}}{h\,e}=1.32\times10^{18}\ \mathrm{V\,m^{-1}}$ for the electron. It is the inverse of the Compton wavelength, and the wave number at which elastic scattering gives way. It is the scale the hydrogen atom is $21.8$ of, and that ratio is the inverse fine-structure constant over $2\pi$.
 
-The momentum wave number is the rate at which the phase winds. It fixes the fringe spacing $D/(d\,\nu_{\Phi})$, and no state is narrower than half the inverse of its spread. It is the ruler of a bound state: the ground state of hydrogen is the one whose momentum wave number is the inverse Bohr radius, and the Bohr condition is the statement that the orbit accumulates a whole number of turns of phase. It is what a crystal diffracts, $8.15\times10^{9}\ \mathrm{m^{-1}}$ for a $100\ \mathrm{eV}$ electron and $9.96\times10^{9}\ \mathrm{m^{-1}}$ for a thermal neutron. It sets quantum degeneracy through $n/\nu_T^{3}\sim1$, met by a metal and not by a gas at room temperature. It grows with speed as $\gamma\beta \nu_m$, and it is the resolution of a collider.
+The momentum wave number is the rate at which the phase winds. It fixes the fringe spacing $D/(d\,\nu_{\Phi})$, and no state is narrower than half the inverse of its spread. It is the ruler of a bound state: the ground state of hydrogen is the one whose momentum wave number is the inverse Bohr radius, and the Bohr condition is the statement that the orbit accumulates a whole number of turns of phase. It is what a crystal diffracts, $8.15\times10^{9}\ \mathrm{m^{-1}}$ for a $1.6022\times10^{-17}\ \mathrm{J}$ electron and $9.96\times10^{9}\ \mathrm{m^{-1}}$ for a thermal neutron. It sets quantum degeneracy through $n/\nu_T^{3}\sim1$, met by a metal and not by a gas at room temperature. It grows with speed as $\gamma\beta \nu_m$, and it is the resolution of a collider.
 
 The energy wave number is the temporal coefficient of $\tilde\Upsilon_{\Phi}$, and it is the wave number the particle would have if it were massless, with $\nu_{\Phi}/\nu_t^{\prime}=\beta$ the measure of how far it is from that. It is one radian per $1/(2\pi\nu_t^{\prime})$ of light travel. It is the inverse reach of a virtual deficit of energy, and the Yukawa range is the case of a deficit $mc^{2}$. It is the inverse decay length, $\frac{\Gamma}{h\,c}=1/(2\pi c\tau)$: $0.0204\ \mathrm{m^{-1}}$ for the pion and $1.265\times10^{16}\ \mathrm{m^{-1}}$ for the $Z$. It is the largest of the three, and at the Planck energy it is the inverse Planck length.
 
-For the electron $\nu_m=4.1215\times10^{11}\ \mathrm{m^{-1}}$, and it is the same at every energy; at $1\ \mathrm{MeV}$ the other two are $\nu_t^{\prime}=8.0655\times10^{11}\ \mathrm{m^{-1}}$ and $\nu_{\Phi}=6.9330\times10^{11}\ \mathrm{m^{-1}}$, at $100\ \mathrm{MeV}$ both are $8.0655\times10^{13}\ \mathrm{m^{-1}}$, and at rest the energy wave number equals the mass wave number while the momentum wave number vanishes.
+For the electron $\nu_m=4.1215\times10^{11}\ \mathrm{m^{-1}}$, and it is the same at every energy; at $1.6022\times10^{-13}\ \mathrm{J}$ the other two are $\nu_t^{\prime}=8.0655\times10^{11}\ \mathrm{m^{-1}}$ and $\nu_{\Phi}=6.9330\times10^{11}\ \mathrm{m^{-1}}$, at $1.6022\times10^{-11}\ \mathrm{J}$ both are $8.0655\times10^{13}\ \mathrm{m^{-1}}$, and at rest the energy wave number equals the mass wave number while the momentum wave number vanishes.
 
 None of the three is the size of the particle: the proton's charge radius times $2\pi\nu_m$ is four, and the electron is pointlike far below its own inverse. At $m=0$ the triangle degenerates, $\nu_t^{\prime}=\nu_{\Phi}$ and the mass wave number is no longer a wave number of the problem. The massless equations of the series are exact for that reason, not approximate.
 
@@ -1040,7 +1043,7 @@ The history is two relations and one measurement. Compton's shift, $\Delta\lambd
 | $E_c =\frac{2\pi c^{3}\,m^{2}}{h\,e}$ | The pair-creation field, $1.32\times10^{18}\ \mathrm{V\,m^{-1}}$ for the electron |
 | $a_0\,\nu_{m_e} = \frac{1}{2\pi\alpha}=21.81$ | The Bohr radius in wave numbers, and the inverse fine-structure constant over $2\pi$ |
 | $\nu_T =\frac{\sqrt{2\pi m k_BT}}{h}$ | The thermal wave number, whose cube sets the degeneracy criterion $n/\nu_T^{3}\sim1$ |
-| $\frac{h}{2\pi}\,c= 197.32698\ \mathrm{MeV}\cdot\mathrm{fm}$ | The conversion between an energy and a wave number |
+| $\frac{h}{2\pi}\,c= 3.161\,527\times10^{-26}\ \mathrm{J\,m}$ | The conversion between an energy and a wave number |
 | $\Omega = \nu_t^{\prime}-\nu_m$ | The excess wave number; the part of the energy wave number above the mass side, $\Omega=\sqrt{\nu_{\Phi}^{2}+\nu_m^{2}}-\nu_m=\nu_{\Phi}^{2}/2\nu_m-\cdots$ |
 | $\nu_{\Phi}^{2}=2\nu_m\Omega+\Omega^{2}$ | The triangle with its origin moved to the mass side; exact, one term linear in the excess and one quadratic |
 | $\digamma_{\mathrm{nr}} = \frac{\Omega}{2\nu_m}=\frac{\gamma-1}{2}$ | The ratio of the quadratic term to the linear one; the small parameter of the limit, with $-\digamma_{\mathrm{nr}}/(1+\digamma_{\mathrm{nr}})$ the error of the truncation |

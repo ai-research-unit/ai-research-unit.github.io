@@ -253,7 +253,7 @@ with $\det T = \eta$; conversely every such matrix lies in $\operatorname{O}(V, 
 **Proof.** Write $T = \begin{pmatrix} p & q' \\ r & t\end{pmatrix}$ and impose $T^{T} G T = G$, which is the three conditions
 
 $$
-p^2 - r^2 = 1, \qquad t^2 - q'^2 = 1, \qquad pq' = rt.
+p^2 - r^2 = 1, \qquad t^2 - q'{}^2 = 1, \qquad pq' = rt.
 $$
 
 From $p^2 - r^2 = (p + r)(p - r) = 1$ the elements $\lambda = p - r$ and $\lambda^{-1} = p + r$ are nonzero, so $p = \tfrac{1}{2}(\lambda + \lambda^{-1})$ and $r = \tfrac{1}{2}(\lambda - \lambda^{-1})$; likewise, with $\mu = t - q'$, one has $t = \tfrac{1}{2}(\mu + \mu^{-1})$ and $q' = \tfrac{1}{2}(\mu - \mu^{-1})$. Substituting in $pq' = rt$ and cancelling the factor $\tfrac{1}{4}$ gives

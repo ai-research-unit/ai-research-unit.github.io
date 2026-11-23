@@ -96,7 +96,7 @@ $$
 
 the conjugate of $P$ by $Q$.
 
-*Proof.* With $A=QP$ put $P'=QPQ^{\mathsf T}$. It is symmetric and positive definite, since $x^{\mathsf T}P'x=(Q^{\mathsf T}x)^{\mathsf T}P(Q^{\mathsf T}x)>0$ for $x\ne0$, and $P'Q=QPQ^{\mathsf T}Q=QP=A$. Uniqueness follows from the same argument as before, applied to $A^{\mathsf T}A=QP'^{2}Q^{\mathsf T}$.
+*Proof.* With $A=QP$ put $P'=QPQ^{\mathsf T}$. It is symmetric and positive definite, since $x^{\mathsf T}P'x=(Q^{\mathsf T}x)^{\mathsf T}P(Q^{\mathsf T}x)>0$ for $x\ne0$, and $P'Q=QPQ^{\mathsf T}Q=QP=A$. Uniqueness follows from the same argument as before, applied to $A^{\mathsf T}A=QP'{}^{2}Q^{\mathsf T}$.
 
 **The two orders give different symmetric factors.** $P$ is the square root of $A^{\mathsf T}A$, while $P'$ is the square root of $AA^{\mathsf T}$. The two have the same eigenvalues, since $AA^{\mathsf T}=Q(A^{\mathsf T}A)Q^{\mathsf T}$, and they differ by conjugation when $Q\ne\pm\mathrm{I}$.
 

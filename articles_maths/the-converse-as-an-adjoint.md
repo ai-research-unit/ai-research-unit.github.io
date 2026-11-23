@@ -6,8 +6,7 @@
 For a relation $R \subseteq X \times Y$ the converse $R^{-1} \subseteq Y \times X$ is the involution
 studied in *The Converse Relation as an Operator* and *Relation Algebras and the Converse*. This
 article reads the converse through a **pairing** of relations and shows that it is the **adjoint** of
-$R$ for that pairing: the operator "compose on the left with $R$" has, under the pairing $\langle U, V
-\rangle = U^{-1} ; V$, the adjoint "compose on the left with $R^{-1}$", and the identity
+$R$ for that pairing: the operator "compose on the left with $R$" has, under the pairing $\langle U, V \rangle = U^{-1} ; V$, the adjoint "compose on the left with $R^{-1}$", and the identity
 
 $$
 \langle R ; S, T \rangle = \langle S, R^{-1} ; T \rangle
@@ -34,9 +33,7 @@ $$
 \boxed{\;\langle U, V \rangle = U^{-1} ; V \subseteq Z \times Z\;} .
 $$
 
-**Proposition.** The pairing is additive in each variable and satisfies $\langle U, V \rangle^{-1} =
-\langle V, U \rangle$; it is nondegenerate, in the sense that $\langle U, W \rangle \subseteq \langle V,
-W \rangle$ for all $W$ implies $U \subseteq V$, and dually.
+**Proposition.** The pairing is additive in each variable and satisfies $\langle U, V \rangle^{-1} = \langle V, U \rangle$; it is nondegenerate, in the sense that $\langle U, W \rangle \subseteq \langle V, W \rangle$ for all $W$ implies $U \subseteq V$, and dually.
 
 **Proof.** Composition distributes over unions, so the pairing is additive. The identity is
 $(U^{-1};V)^{-1} = V^{-1};U = \langle V,U \rangle$ by the law of the converse. For the nondegeneracy,
@@ -44,24 +41,19 @@ take $W = Z \times Z$, the greatest relation, so that $\langle U, W \rangle = U^
 $Z \times Z$ if $U \neq \emptyset$ and $\emptyset$ if $U = \emptyset$; the inclusion for this $W$ forces
 $U = \emptyset$ whenever $V = \emptyset$, and iterating over the elements of $X$ gives $U \subseteq V$.
 
-**Theorem (adjointness).** For relations $R \subseteq X \times Y$, $S \subseteq Y \times Z$ and $T
-\subseteq X \times Z$,
+**Theorem (adjointness).** For relations $R \subseteq X \times Y$, $S \subseteq Y \times Z$ and $T \subseteq X \times Z$,
 
 $$
 \boxed{\;\langle R ; S, T \rangle = \langle S, R^{-1} ; T \rangle\;} .
 $$
 
-Hence the operator $L_R : S \mapsto R ; S$ on relations has, under the pairing, the adjoint $L_{R^{-1}}
-: T \mapsto R^{-1} ; T$, and the adjoint of $L_R$ is $L_{R^{-1}}$.
+Hence the operator $L_R : S \mapsto R ; S$ on relations has, under the pairing, the adjoint $L_{R^{-1}} : T \mapsto R^{-1} ; T$, and the adjoint of $L_R$ is $L_{R^{-1}}$.
 
-**Proof.** By the law of the converse for a composite, $(R;S)^{-1} = S^{-1};R^{-1}$, so $\langle R;S, T
-\rangle = (R;S)^{-1};T = S^{-1};R^{-1};T = S^{-1};(R^{-1};T) = \langle S, R^{-1};T \rangle$ by
+**Proof.** By the law of the converse for a composite, $(R;S)^{-1} = S^{-1};R^{-1}$, so $\langle R;S, T \rangle = (R;S)^{-1};T = S^{-1};R^{-1};T = S^{-1};(R^{-1};T) = \langle S, R^{-1};T \rangle$ by
 associativity. The adjoint statement is the identity read as the definition of the adjoint operator for
 the pairing.
 
-**Corollary.** The adjoint operation on the operator layer, $L \mapsto L^{*}$ with $\langle L S, T
-\rangle = \langle S, L^{*} T \rangle$, is an involution: $(L_R)^{*} = L_{R^{-1}}$ and $(L_{R^{-1}})^{*}
-= L_R$. On the operators that commute with the converse it is the identity, and $L_R$ is self-adjoint
+**Corollary.** The adjoint operation on the operator layer, $L \mapsto L^{*}$ with $\langle L S, T \rangle = \langle S, L^{*} T \rangle$, is an involution: $(L_R)^{*} = L_{R^{-1}}$ and $(L_{R^{-1}})^{*} = L_R$. On the operators that commute with the converse it is the identity, and $L_R$ is self-adjoint
 exactly when $R = R^{-1}$, that is, when $R$ is symmetric.
 
 **Proof.** The two identities are the theorem applied twice; $L_R = L_{R^{-1}}$ means $R;S = R^{-1};S$
@@ -69,8 +61,7 @@ for all $S$, which with $S = \Delta_Y$ gives $R = R^{-1}$.
 
 ## The Galois Interpretation
 
-**Theorem (residuation).** For a fixed relation $R \subseteq X \times Y$ the operator $L_R : S \mapsto R
-; S$ is residuated, with right adjoint $T \mapsto R \backslash T$ where
+**Theorem (residuation).** For a fixed relation $R \subseteq X \times Y$ the operator $L_R : S \mapsto R ; S$ is residuated, with right adjoint $T \mapsto R \backslash T$ where
 
 $$
 \boxed{\;R \backslash T = \overline{R^{-1} ; \overline{T}} \subseteq Y \times Z\;} .
@@ -87,14 +78,12 @@ which hold for all $S, T$.
 **Proof.** The residual identity $R;S \subseteq T \Leftrightarrow S \subseteq R \backslash T$ is proved
 in *Relation Algebras and the Converse*; the displayed formula for $R \backslash T$ follows from it
 because $R^{-1};\overline{T}$ is the set of $(y,z)$ with some $(x,y) \in R$ and $(x,z) \notin T$, whose
-complement is the set of $(y,z)$ with every $(x,y) \in R$ giving $(x,z) \in T$, which is $R \backslash
-T$. The unit and counit are the two inclusions of the adjunction, with $S$ arbitrary in the first and
+complement is the set of $(y,z)$ with every $(x,y) \in R$ giving $(x,z) \in T$, which is $R \backslash T$. The unit and counit are the two inclusions of the adjunction, with $S$ arbitrary in the first and
 $T$ arbitrary in the second.
 
 The formula expresses the Galois reading of the scope: the converse $R^{-1}$ is exactly what computes
 the right adjoint of composition with $R$, and the adjunction is the residuation of *Operators on a
-Poset*. The operator $L_{R^{-1}}$ of the previous section and the right adjoint $T \mapsto R \backslash
-T$ are two different faces of the same converse: the first is the adjoint for the pairing, the second
+Poset*. The operator $L_{R^{-1}}$ of the previous section and the right adjoint $T \mapsto R \backslash T$ are two different faces of the same converse: the first is the adjoint for the pairing, the second
 the adjoint for the order.
 
 ## Unit and Counit
@@ -106,14 +95,12 @@ $Y$ respectively, and their comparison with the diagonal decides the nature of $
 
 1. $\Delta_Y \subseteq R^{-1} ; R$ if and only if $R$ is **surjective**, that is, every $y \in Y$ is
    related to some $x \in X$;
-2. $R ; R^{-1} \subseteq \Delta_Y$ if and only if $R$ is a **partial function**, that is, each $y \in
-   Y$ is the image of at most one $x$;
+2. $R ; R^{-1} \subseteq \Delta_Y$ if and only if $R$ is a **partial function**, that is, each $y \in Y$ is the image of at most one $x$;
 3. both hold, so that $R^{-1}$ is a two-sided adjoint of $R$, if and only if $R$ is a bijection, in
    which case $R^{-1}$ is the inverse function.
 
 **Proof.** $(y,y') \in R^{-1};R$ means that some $x$ is related to both $y$ and $y'$; the diagonal is
-contained exactly when every $y$ is related to at least one $x$, which is surjectivity. $(y,y') \in
-R;R^{-1}$ means that some $z$ with $(y,z) \in R$ and $(y',z) \in R$ exists — that is, $y$ and $y'$
+contained exactly when every $y$ is related to at least one $x$, which is surjectivity. $(y,y') \in R;R^{-1}$ means that some $z$ with $(y,z) \in R$ and $(y',z) \in R$ exists — that is, $y$ and $y'$
 share an image; this is contained in the diagonal exactly when no two distinct elements share an image,
 which is the partial-function condition. In that case $R$ is a partial function and $R^{-1}$ is its
 partially defined inverse; with the unit as well, the function is total and its inverse is two-sided.
@@ -132,9 +119,7 @@ identity $\langle R;S, T \rangle = \langle S, R^{-1};T \rangle$ says that left c
 as adjoint under the pairing, left composition with $R^{-1}$, and the adjoint operation is an involution
 fixed exactly by the operators commuting with the converse.
 
-The same converse computes the right adjoint of composition in the residuation, $R \backslash T =
-\overline{R^{-1};\overline{T}}$, with unit $S \subseteq R \backslash (R;S)$ and counit $R ; (R
-\backslash T) \subseteq T$. The unit $R^{-1};R$ and the counit $R;R^{-1}$ of the pairing measure
+The same converse computes the right adjoint of composition in the residuation, $R \backslash T = \overline{R^{-1};\overline{T}}$, with unit $S \subseteq R \backslash (R;S)$ and counit $R ; (R \backslash T) \subseteq T$. The unit $R^{-1};R$ and the counit $R;R^{-1}$ of the pairing measure
 surjectivity and single-valuedness, so that $R$ and $R^{-1}$ are two-sided adjoints exactly when $R$ is
 a bijection.
 

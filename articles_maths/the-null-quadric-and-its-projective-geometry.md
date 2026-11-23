@@ -25,11 +25,11 @@ The article owns the four null sets, the degenerate quadric of the reduced norm 
 **Proposition (the sign of the forms).** On the real coordinates $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ the four norms are
 
 $$
-B=q_{\blacktriangle}^{2}-q'^{2}_{\blacktriangle}+q_{\blacktriangledown}^{2}-q'^{2}_{\blacktriangledown}+2i(q_{\blacktriangle}q'_{\blacktriangle}+q_{\blacktriangledown}q'_{\blacktriangledown}), \qquad N=q_{\blacktriangle}^{2}-q'^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}+q'^{2}_{\blacktriangledown}+2i(q_{\blacktriangle}q'_{\blacktriangle}-q_{\blacktriangledown}q'_{\blacktriangledown}),
+B=q_{\blacktriangle}^{2}-q'{}^{2}_{\blacktriangle}+q_{\blacktriangledown}^{2}-q'{}^{2}_{\blacktriangledown}+2i(q_{\blacktriangle}q'_{\blacktriangle}+q_{\blacktriangledown}q'_{\blacktriangledown}), \qquad N=q_{\blacktriangle}^{2}-q'{}^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}+q'{}^{2}_{\blacktriangledown}+2i(q_{\blacktriangle}q'_{\blacktriangle}-q_{\blacktriangledown}q'_{\blacktriangledown}),
 $$
 
 $$
-H=q_{\blacktriangle}^{2}+q'^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}-q'^{2}_{\blacktriangledown}, \qquad K=q_{\blacktriangle}^{2}+q'^{2}_{\blacktriangle}+q_{\blacktriangledown}^{2}+q'^{2}_{\blacktriangledown}.
+H=q_{\blacktriangle}^{2}+q'{}^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}-q'{}^{2}_{\blacktriangledown}, \qquad K=q_{\blacktriangle}^{2}+q'{}^{2}_{\blacktriangle}+q_{\blacktriangledown}^{2}+q'{}^{2}_{\blacktriangledown}.
 $$
 
 Hence $\langle\cdot,\cdot\rangle_{*}$ is a real quadratic form of inertia $(2,2)$, $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ is positive definite of inertia $(4,0)$, and $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\mathrm{ts}}$ are complex-valued forms whose real and imaginary parts are each of inertia $(2,2)$.
@@ -74,7 +74,7 @@ the two summands of the direct product, and the null cone of the reduced norm is
 
 ## The Smooth Quadric of the Indefinite Hermitian Form
 
-**Theorem (the quadric of $\langle\cdot,\cdot\rangle_{*}$ is smooth).** The real form $\langle\cdot,\cdot\rangle_{*}=q_{\blacktriangle}^{2}+q'^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}-q'^{2}_{\blacktriangledown}$ is non-degenerate of inertia $(2,2)$, its null cone is a real three-dimensional cone, and its projectivisation is a smooth quadric surface in $\mathbb{P}^{3}_{\mathbb{R}}$.
+**Theorem (the quadric of $\langle\cdot,\cdot\rangle_{*}$ is smooth).** The real form $\langle\cdot,\cdot\rangle_{*}=q_{\blacktriangle}^{2}+q'{}^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}-q'{}^{2}_{\blacktriangledown}$ is non-degenerate of inertia $(2,2)$, its null cone is a real three-dimensional cone, and its projectivisation is a smooth quadric surface in $\mathbb{P}^{3}_{\mathbb{R}}$.
 
 **Proof.** The gradient of $\langle\cdot\rangle_{*}$ is $2(q_{\blacktriangle},q'_{\blacktriangle},-q_{\blacktriangledown},-q'_{\blacktriangledown})$, which vanishes only at the origin, so the cone is a smooth hypersurface and its projectivisation is a smooth quadric; the inertia is read from the diagonal form $\operatorname{diag}(1,1,-1,-1)$.
 

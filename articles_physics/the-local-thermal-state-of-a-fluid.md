@@ -192,7 +192,7 @@ With
 $$
 p_{\mathrm{qnt}}=\rho_{\mathrm{num}}\,Q_{\mathrm{qnt}}
 =-\frac{hc}{16\pi^{2}\nu_m}\Box_\Phi\rho_{\mathrm{num}}
-+\frac{hc}{32\pi^{2}\nu_m}\frac{\partial_\imath\rho_{\mathrm{num}}\,\partial_\imath\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}},
++\frac{hc}{32\pi^{2}\nu_m}\frac{\partial_{\imath}\rho_{\mathrm{num}}\,\partial_{\imath}\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}},
 $$
 
 with $Q_{\mathrm{qnt}}$ the quantum potential and its minus sign, the pressure at an event depends on the second derivative of the density at that event. A second derivative is a property of the neighbourhood, so $p_{\mathrm{qnt}}$ is not a function of the local data in the sense of requirement 1; it is a functional of the density field's germ at the event.

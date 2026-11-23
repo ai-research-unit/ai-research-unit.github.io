@@ -564,7 +564,7 @@ $$
 \tilde Q=i\,q'_t\,e_t+\vec r\ \text{real}
 \ \Longrightarrow\
 B^{2}=\lvert\vec r\rvert^{2},\qquad
-N=-q_t'^{2}+\lvert\vec r\rvert^{2},
+N=-q_t'{}^{2}+\lvert\vec r\rvert^{2},
 $$
 
 so both conditions together force $\vec r=0$ and $q_t'=0$.

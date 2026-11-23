@@ -51,7 +51,7 @@ and the second equality is the reason nothing has to be chosen. The connection's
 
 $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi^{\natural}
-=e_t\tilde\nabla_{\mathrm{gco},\Phi,t}-\sum_{\imath\in\{x,y,z\}}\vec e_\imath\tilde\nabla_{\mathrm{gco},\Phi,k},
+=e_t\tilde\nabla_{\mathrm{gco},\Phi,t}-\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,k},
 $$
 
 the conjugation applied to the units and not to the connection's coefficients, which are scalars and unaffected by $\natural$. The article writes $\natural$ on the operator and never on a coefficient.
@@ -329,12 +329,12 @@ The current is $J_{\imath}=\frac{i}{4\pi\nu_m}\mathrm{Sc}\big(\tilde\Xi^{*}\tild
 
 | Symbol | Meaning |
 | --- | --- |
-| $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The algebra; $e_t=1$, $\vec e_\imath^{2}=-e_t$; $i$ central |
+| $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The algebra; $e_t=1$, $\vec e_{\imath}^{2}=-e_t$; $i$ central |
 | $\mathbb{B}_\Psi$, $\mathbb{B}_\Phi$ | Hermitian and anti-Hermitian sectors |
 | $^{*}$, $^{\natural}$ | Hermitian and quaternion conjugation |
 | $\mathrm{Sc}$ | Scalar part |
 | $\tilde\Xi=\sum_{\imath}\Xi_{\imath} e_{\imath}$ | The field, a general element of $\mathbb{B}$ |
-| $\tilde A_\Phi=\sum_{\imath} A_{\imath} e_{\imath}$ | The connection; $A_t=i a'_t$ imaginary, $A_\imath$ real in the material case |
+| $\tilde A_\Phi=\sum_{\imath} A_{\imath} e_{\imath}$ | The connection; $A_t=i a'_t$ imaginary, $A_{\imath}$ real in the material case |
 | $ϙ$ | The coupling |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | The central per-slot covariant derivative |
 | $\tilde\nabla_{\mathrm{gco},\Phi}$, $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ | The covariant gradient and its quaternion conjugate |

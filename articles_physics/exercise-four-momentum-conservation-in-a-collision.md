@@ -42,7 +42,7 @@ $$
 \qquad\Longleftrightarrow\qquad
 \tilde{P}_{\Phi,\rm in} - \tilde{P}_{\Phi,\rm out} = 0 .
 $$
-Write the difference as $i\delta_0\,e_t + \vec r_{12}$, with $\delta_0$ real and $\vec r_{12} = \sum_{\imath\in\{x,y,z\}} r_{12,k} \vec e_\imath$ a real three-vector, by the membership condition of $\mathbb{B}_{\Phi}$ (imaginary scalar, real vector). The scalar and vector parts of $\mathbb{B}_{\Phi}$ are extracted by the real-linear projections $\mathrm{Sc}$ and $\mathrm{Vect}$, so the single biquaternion equation vanishes if and only if its scalar and vector parts vanish separately:
+Write the difference as $i\delta_0\,e_t + \vec r_{12}$, with $\delta_0$ real and $\vec r_{12} = \sum_{\imath\in\{x,y,z\}} r_{12,k} \vec e_{\imath}$ a real three-vector, by the membership condition of $\mathbb{B}_{\Phi}$ (imaginary scalar, real vector). The scalar and vector parts of $\mathbb{B}_{\Phi}$ are extracted by the real-linear projections $\mathrm{Sc}$ and $\mathrm{Vect}$, so the single biquaternion equation vanishes if and only if its scalar and vector parts vanish separately:
 $$
 \mathrm{Sc}\!\left(\tilde{P}_{\Phi,\rm in}-\tilde{P}_{\Phi,\rm out}\right) = 0
 \iff \sum_a E_a = \sum_f E_f,
@@ -240,13 +240,13 @@ E_1^{\rm thr} = \frac{\left(\sum_{f\ge3}m_f\right)^2 - m_1^2 - m_2^2}{2m_2}\,c^2
 \qquad
 T_{\mathrm{kin},1}^{\rm thr} = E_1^{\rm thr} - m_1c^2 .
 $$
-For $p+p\to p+p+\pi^0$, with $m_p = 938.272$ MeV$/c^2$ and $m_\pi = 134.977$ MeV$/c^2$, the final mass sum is $2m_p+m_\pi = 2011.521$ MeV$/c^2$, so
+For $p+p\to p+p+\pi^0$, with $m_p = 1.6726\times10^{-27}$ kg and $m_\pi = 2.4063\times10^{-28}$ kg, the final mass sum is $2m_p+m_\pi = 3.22281\times10^{-10}\ \mathrm{J}$$/c^2$, so
 $$
 E_1^{\rm thr} = 1217.935\ \text{MeV},
 \qquad
 T_{\mathrm{kin},1}^{\rm thr} = 279.663\ \text{MeV}.
 $$
-A projectile kinetic energy of $200$ MeV is below threshold ($\sqrt{s} = 1974.0$ MeV $< 2011.5$ MeV), and one of $300$ MeV is above it ($\sqrt{s} = 2021.0$ MeV); the threshold lies at the computed $279.66$ MeV, as a direct evaluation of $s(T_{\mathrm{kin},1})$ confirms.
+A projectile kinetic energy of $3.20\times10^{-11}\ \mathrm{J}$ is below threshold ($\sqrt{s} = 3.1627\times10^{-10}\ \mathrm{J}$ $< 3.2228\times10^{-10}\ \mathrm{J}$), and one of $4.81\times10^{-11}\ \mathrm{J}$ is above it ($\sqrt{s} = 3.2380\times10^{-10}\ \mathrm{J}$); the threshold lies at the computed $4.4806\times10^{-11}\ \mathrm{J}$, as a direct evaluation of $s(T_{\mathrm{kin},1})$ confirms.
 
 **Solution (c).** In a symmetric collider the two initial bodies have equal and opposite momenta, so the laboratory *is* the COM frame and $s = (2E)^2 = 4E^2$, $E$ being the total energy of each beam. The threshold is therefore
 $$
@@ -254,7 +254,7 @@ E_{\rm beam}^{\rm thr} = \tfrac{1}{2}\left(\sum_{f\ge3}m_f\right)c^2,
 \qquad
 T_{\mathrm{kin},\mathrm{beam}}^{\rm thr} = \tfrac{1}{2}\left(\sum_{f\ge3}m_f\right)c^2 - m_1c^2 .
 $$
-For $p+p\to p+p+\pi^0$ this is $E_{\rm beam}^{\rm thr} = 1005.761$ MeV and $T_{\mathrm{kin},\mathrm{beam}}^{\rm thr} = 67.489$ MeV. The collider threshold is lower by the factor
+For $p+p\to p+p+\pi^0$ this is $E_{\rm beam}^{\rm thr} = 1.61141\times10^{-10}\ \mathrm{J}$ and $T_{\mathrm{kin},\mathrm{beam}}^{\rm thr} = 1.0813\times10^{-11}\ \mathrm{J}$. The collider threshold is lower by the factor
 $$
 \boxed{\;\frac{K_1^{\rm thr}}{K_{\rm beam}^{\rm thr}} = \frac{279.663}{67.489} = 4.14\;},
 $$
@@ -346,7 +346,7 @@ The scalar part is $i/c$ times (rest energy + kinetic energy), and the vector pa
 $$
 T_{\mathrm{kin},1}^{\rm thr} = \frac{M_{\rm out}^2 - (m_1+m_2)^2}{2m_2}\,c^2,
 $$
-which for $M_{\rm out} = m_1+m_2+\delta m$ becomes $T_{\mathrm{kin},1}^{\rm thr}\approx \frac{(m_1+m_2)\delta m}{m_2}c^2$: the projectile must supply the mass excess, diluted by the recoil of the heavy target. For $p+p\to p+p+\pi^0$ this gives $T_{\mathrm{kin},1}^{\rm thr}\approx\frac{2m_p\,m_\pi}{m_p}c^2 = 2m_\pi c^2 = 270.0$ MeV, within $3.5\%$ of the exact $279.66$ MeV, the correction being the target's recoil kinetic energy, which the approximation neglects by setting $M_{\rm out}\approx m_1+m_2$ before expanding.
+which for $M_{\rm out} = m_1+m_2+\delta m$ becomes $T_{\mathrm{kin},1}^{\rm thr}\approx \frac{(m_1+m_2)\delta m}{m_2}c^2$: the projectile must supply the mass excess, diluted by the recoil of the heavy target. For $p+p\to p+p+\pi^0$ this gives $T_{\mathrm{kin},1}^{\rm thr}\approx\frac{2m_p\,m_\pi}{m_p}c^2 = 2m_\pi c^2 = 4.326\times10^{-11}\ \mathrm{J}$, within $3.5\%$ of the exact $4.4806\times10^{-11}\ \mathrm{J}$, the correction being the target's recoil kinetic energy, which the approximation neglects by setting $M_{\rm out}\approx m_1+m_2$ before expanding.
 
 **Solution (c).** For elastic equal-mass scattering, expand the laboratory angle relations of Problem 3(c). With $V\ll c$, $\gamma\to1$, and the COM relations $p^* = mV + O(V^3/c^2)$,
 $$
@@ -376,7 +376,7 @@ We have worked four-momentum conservation for a collision as an application of t
 
 3. **COM frame.** The rotor $\tilde U_{\rm CM} = \sqrt{-\frac{ic}{W}\tilde{P}_{\Phi}^{\natural}}$ carries the laboratory to the centre-of-momentum frame, rotating $\tilde{P}_{\Phi}$ to $iW/c\,e_t$; the conjugate rotor carries the data back. The COM energies and momentum magnitudes are $E_a^* = (s+m_a^2c^4-m_b^2c^4)/(2\sqrt{s})$ and $p^{*2}c^2 = [s-(m_1+m_2)^2c^4][s-(m_1-m_2)^2c^4]/(4s)$, and conservation leaves the COM scattering angle free.
 
-4. **Threshold.** Production requires $\sqrt{s}\ge\left(\sum_f m_f\right)c^2$. For a fixed target $s = (m_1^2+m_2^2)c^4+2E_1m_2c^2$, giving $T_{\mathrm{kin},1}^{\rm thr} = 279.663$ MeV for $p+p\to p+p+\pi^0$; a symmetric collider has $s=4E^2$ and needs only $67.489$ MeV per beam, the ratio $4.14$ reflecting the linear versus quadratic growth of $s$.
+4. **Threshold.** Production requires $\sqrt{s}\ge\left(\sum_f m_f\right)c^2$. For a fixed target $s = (m_1^2+m_2^2)c^4+2E_1m_2c^2$, giving $T_{\mathrm{kin},1}^{\rm thr} = 4.48070\times10^{-11}\ \mathrm{J}$ for $p+p\to p+p+\pi^0$; a symmetric collider has $s=4E^2$ and needs only $1.0813\times10^{-11}\ \mathrm{J}$ per beam, the ratio $4.14$ reflecting the linear versus quadratic growth of $s$.
 
 5. **Numbers.** For equal masses with $E_1=3mc^2$ and $\theta^*=90^\circ$: $s=8m^2$, $W=2\sqrt{2}m$, $E^*=\sqrt{2}m$, $p^*=m$, $V=1/\sqrt{2}$, $\gamma=\sqrt{2}$; the laboratory four-momenta are $i\,2m\,e_t \pm m\,\vec e_x + \sqrt{2}\,m\,\vec e_z$, the laboratory angles are $35.2644^\circ$ each, the opening angle is $70.5288^\circ$, and $s+t+u=4m^2$.
 
@@ -387,7 +387,7 @@ We have worked four-momentum conservation for a collision as an application of t
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector): real scalar, imaginary vector |

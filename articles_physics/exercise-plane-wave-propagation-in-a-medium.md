@@ -84,7 +84,7 @@ $$
 \boxed{\;\tilde P_{\Phi}\,\tilde{F}_0 = 0\;}.
 $$
 
-**Solution (b).** Write $\tilde{F}_0 = F_{tx}\vec e_x + F_{ty}\vec e_y + F_{tz}\vec e_z$. Because $\tilde P_{\Phi}$ has a scalar part and $\tilde{F}_0$ is a pure vector, the product separates by parts. For a scalar $\kappa$ and a vector $\vec q$, $\kappa\tilde{F}_0 = \kappa F_{tk}\vec e_\imath$ distributes over components, while the vector part of $\tilde P_{\Phi}$ multiplies by the quaternion rule $\vec\nu_\Phi\tilde{F}_0 = -\vec\nu_\Phi\cdot\tilde{F}_0 + \vec\nu_\Phi\times\tilde{F}_0$. Thus
+**Solution (b).** Write $\tilde{F}_0 = F_{tx}\vec e_x + F_{ty}\vec e_y + F_{tz}\vec e_z$. Because $\tilde P_{\Phi}$ has a scalar part and $\tilde{F}_0$ is a pure vector, the product separates by parts. For a scalar $\kappa$ and a vector $\vec q$, $\kappa\tilde{F}_0 = \kappa F_{tk}\vec e_{\imath}$ distributes over components, while the vector part of $\tilde P_{\Phi}$ multiplies by the quaternion rule $\vec\nu_\Phi\tilde{F}_0 = -\vec\nu_\Phi\cdot\tilde{F}_0 + \vec\nu_\Phi\times\tilde{F}_0$. Thus
 $$
 \tilde P_{\Phi}\tilde{F}_0 = \frac{i\omega}{c}\,\tilde{F}_0 - 2\pi\vec\nu_\Phi\cdot\tilde{F}_0 + 2\pi\vec\nu_\Phi\times\tilde{F}_0 .
 $$
@@ -374,7 +374,7 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$, $\vec e_j \vec e_\imath = -\delta_{j\imath}e_t + \epsilon_{j\imath m}\vec e_m$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$, $\vec e_j \vec e_{\imath} = -\delta_{j\imath}e_t + \epsilon_{j\imath m}\vec e_m$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace, scalar subspace |

@@ -189,7 +189,7 @@ $$
 \vec\Pi_{\mathrm{nil},-+}=\tfrac{1}{2}(i\vec e_x+\vec e_y),
 $$
 
-of *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*. Both are nilpotent, each idempotent is the product of the two in one order, and every element has the unique expansion $\tilde Q=Q_{++}\tilde\Pi_{\mathrm{id},++Q}_{+-}\vec\Pi_{\mathrm{nil},+-}+Q_{-+}\vec\Pi_{\mathrm{nil},-+}+Q_{--}\tilde\Pi_{\mathrm{id},-}$ in the **Peirce coordinates** $Q_{st}$.
+of *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*. Both are nilpotent, each idempotent is the product of the two in one order, and every element has the unique expansion $\tilde Q=Q_{++}\tilde\Pi_{\mathrm{id},++Q}{}_{+-}\vec\Pi_{\mathrm{nil},+-}+Q_{-+}\vec\Pi_{\mathrm{nil},-+}+Q_{--}\tilde\Pi_{\mathrm{id},-}$ in the **Peirce coordinates** $Q_{st}$.
 
 **The two spaces.** Every point of the punctured cone is a product of two elements of a plane, one taken on the left and one on the right. The **spinor space** is the Peirce carrier $S_{+}=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$, with basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-+})$. The **co-spinor space** is the row space
 

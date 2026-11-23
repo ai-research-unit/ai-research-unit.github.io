@@ -29,9 +29,9 @@ $$
 
 where $V^*\otimes_k V^*$ is identified with the dual of $V\otimes_k V$; equivalently, $A^! = T(V^*)/(R^\perp)$. The dual is a quadratic algebra with $A^!_1 = V^*$.
 
-**Proposition.** The construction is involutive up to the natural identifications: $(A^!)^! \cong A$ when $V$ is finite-dimensional, and it reverses the inclusion of relation spaces, so that a quotient $A \to A'$ of quadratic algebras induces a map $A'^! \to A^!$ in the opposite direction.
+**Proposition.** The construction is involutive up to the natural identifications: $(A^!)^! \cong A$ when $V$ is finite-dimensional, and it reverses the inclusion of relation spaces, so that a quotient $A \to A'$ of quadratic algebras induces a map $A'{}^! \to A^!$ in the opposite direction.
 
-*Proof.* The orthogonal complement is an inclusion-reversing involution on subspaces of a finite-dimensional space with a non-degenerate pairing, and $R^{\perp\perp} = R$; the identification $(V^*)^* \cong V$ then gives the first statement. The second is immediate because $R \subseteq R'$ implies $R'^\perp \subseteq R^\perp$.
+*Proof.* The orthogonal complement is an inclusion-reversing involution on subspaces of a finite-dimensional space with a non-degenerate pairing, and $R^{\perp\perp} = R$; the identification $(V^*)^* \cong V$ then gives the first statement. The second is immediate because $R \subseteq R'$ implies $R'{}^\perp \subseteq R^\perp$.
 
 **Remark.** The dual is defined by the quadratic relations alone and depends on the presentation. Two algebras that are isomorphic as algebras need not have isomorphic duals unless the isomorphism respects the grading and the space of generators; the dual is an invariant of the quadratic algebra, that is, of the pair $(V,R)$, not of the underlying algebra.
 

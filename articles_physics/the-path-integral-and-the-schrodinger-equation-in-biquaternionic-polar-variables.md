@@ -14,7 +14,7 @@ Conventions. The chart is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U
 
 ## The Exponent in the Chart
 
-The action is one identity away from the chart's form. Substituting $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}e_t$ into the element action and using $\mathrm{Sc}(i \frac{h}{2\pi}\tilde\Xi^{*}\dot{\tilde\Xi})=-\frac{h}{2\pi} \varrho^{2}\dot\theta_{\mathrm{pha}}$ and $\mathrm{Sc}((\partial_\imath\tilde\Xi)^{*}\partial_\imath\tilde\Xi)=(\partial_\imath \varrho)^{2}+\varrho^{2}(\partial_\imath\theta_{\mathrm{pha}})^{2}$ gives
+The action is one identity away from the chart's form. Substituting $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}e_t$ into the element action and using $\mathrm{Sc}(i \frac{h}{2\pi}\tilde\Xi^{*}\dot{\tilde\Xi})=-\frac{h}{2\pi} \varrho^{2}\dot\theta_{\mathrm{pha}}$ and $\mathrm{Sc}((\partial_{\imath}\tilde\Xi)^{*}\partial_{\imath}\tilde\Xi)=(\partial_{\imath} \varrho)^{2}+\varrho^{2}(\partial_{\imath}\theta_{\mathrm{pha}})^{2}$ gives
 
 $$
 \boxed{\;S=\int dt'\,d^{3}x\;\Bigl[-\frac{h}{2\pi}\,\varrho^{2}\,\dot\theta_{\mathrm{pha}}-\frac{hc}{8\pi^{2}\nu_m}\Bigl((\vec\nabla_\Phi \varrho)^{2}+\varrho^{2}(\vec\nabla_\Phi\theta_{\mathrm{pha}})^{2}\Bigr)-V\,\varrho^{2}\Bigr],\;}
@@ -34,7 +34,7 @@ $$
 \varrho\,d\varrho=\tfrac12\,dn,
 $$
 
-so the chart's measure is $\prod_\imath\tfrac12\,dn_\imath\,d\theta_{\mathrm{pha},k}$: flat in the density and flat in the angle, with a constant $\tfrac12$ per site and no $n$-dependent weight anywhere. The quadrature $\int_0^{\infty}\varrho\,d\varrho\,e^{-a\varrho^{2}}=\frac{1}{2a}$ against the exact $\frac{1}{2a}$ reproduces the value to a relative $1.8\times10^{-10}$, and the identity is of course exact.
+so the chart's measure is $\prod_{\imath}\tfrac12\,dn_{\imath}\,d\theta_{\mathrm{pha},k}$: flat in the density and flat in the angle, with a constant $\tfrac12$ per site and no $n$-dependent weight anywhere. The quadrature $\int_0^{\infty}\varrho\,d\varrho\,e^{-a\varrho^{2}}=\frac{1}{2a}$ against the exact $\frac{1}{2a}$ reproduces the value to a relative $1.8\times10^{-10}$, and the identity is of course exact.
 
 The cancellation is not an accident and it is not available to the second-order chart. The factor $\varrho$ is the Jacobian of the pair $(\varrho,\theta)$ relative to the Cartesian pair, and the first-order kinetic term is linear in $n=\varrho^{2}$; the two exponents of $\varrho$ match, one from the measure and one from the exponent. A second-order kinetic term is quadratic in $\varrho$ and needs no Jacobian, so in the Klein–Gordon chart the substitution $u=\varrho^{2}$ leaves $du/(2\sqrt{u})$, a weight that the exponent does not supply and that the measure cannot drop. The measure problem of the Klein–Gordon chart therefore has no counterpart here, and the reason is the order in time and not the algebra.
 

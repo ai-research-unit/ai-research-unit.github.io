@@ -16,7 +16,7 @@ $$
 A=P'U',
 \qquad
 P'=(AA^*)^{1/2}>0,\quad
-U'=P'^{-1}A,
+U'=P'{}^{-1}A,
 $$
 
 written in exponential form: $P'=e^H$ with $H=\log P'$, and $U'=e^{\mathrm iK}$ with $K$ a Hermitian logarithm of the $*$-unitary factor. The Hermitian factor $H$ is unique; the $*$-unitary factor is unique, and $K$ is unique modulo $2\pi$ on each eigenspace.
@@ -41,16 +41,16 @@ with $P'$ positive definite Hermitian and $U'$ $*$-unitary:
 
 $$
 P'=(AA^*)^{1/2},\qquad
-U'=P'^{-1}A.
+U'=P'{}^{-1}A.
 $$
 
-**Proof.** $AA^*$ is positive definite, so $P'$ is positive definite and invertible. Set $U'=P'^{-1}A$. Then
+**Proof.** $AA^*$ is positive definite, so $P'$ is positive definite and invertible. Set $U'=P'{}^{-1}A$. Then
 
 $$
-U'^*U'=A^*P'^{-2}A=A^*(AA^*)^{-1}A=I_6,
+U'{}^*U'=A^*P'{}^{-2}A=A^*(AA^*)^{-1}A=I_6,
 $$
 
-so $U'$ is $*$-unitary. Uniqueness: $P'^2=AA^*$ forces $P'=(AA^*)^{1/2}$, and then $U'=P'^{-1}A$.
+so $U'$ is $*$-unitary. Uniqueness: $P'{}^2=AA^*$ forces $P'=(AA^*)^{1/2}$, and then $U'=P'{}^{-1}A$.
 
 **Corollary (the two polars).** The same $A$ has the right polar decomposition
 
@@ -63,7 +63,7 @@ $$
 
 The $*$-unitary factors agree, $U'=U$, and the positive factors are conjugate, $P'=UPU^*$.
 
-**Proof.** From $A=UP$, $AA^*=UP^2U^*$, so $P'=UPU^*$ and $U'=P'^{-1}A=UP^{-1}U^*UP=U$.
+**Proof.** From $A=UP$, $AA^*=UP^2U^*$, so $P'=UPU^*$ and $U'=P'{}^{-1}A=UP^{-1}U^*UP=U$.
 
 ### The Exponential Form
 
@@ -154,7 +154,7 @@ $$
 
 **Theorem.** The $*$-unitary factor $U'$ is unique. The Hermitian exponent $K$ is unique modulo $2\pi$: if $e^{\mathrm iK}=e^{\mathrm iK'}=U'$, then $K-K'$ has eigenvalues in $2\pi\mathbb{Z}$ on the eigenspaces of $U'$.
 
-**Proof.** The $*$-unitary factor is $U'=P'^{-1}A$; the logarithm of a $*$-unitary is unique modulo $2\pi$ on each eigenspace.
+**Proof.** The $*$-unitary factor is $U'=P'{}^{-1}A$; the logarithm of a $*$-unitary is unique modulo $2\pi$ on each eigenspace.
 
 **Corollary (the principal exponent).** There is a unique $K$ with spectrum in $(-\pi,\pi]$; it is the principal Hermitian logarithm of $U'$.
 
@@ -307,7 +307,7 @@ A=e^He^{\mathrm iK},
 H,K\in\operatorname{Herm}_6,
 $$
 
-with $H=\log P'$ unique and $K$ unique modulo $2\pi$. It is the left polar decomposition $A=P'U'$, $P'=(AA^*)^{1/2}$, $U'=P'^{-1}A$, in exponential form. The right polar decomposition $A=UP$ shares the $*$-unitary factor, and the positive factors are conjugate, $P'=UPU^*$. The two orderings coincide exactly when $A$ is normal.
+with $H=\log P'$ unique and $K$ unique modulo $2\pi$. It is the left polar decomposition $A=P'U'$, $P'=(AA^*)^{1/2}$, $U'=P'{}^{-1}A$, in exponential form. The right polar decomposition $A=UP$ shares the $*$-unitary factor, and the positive factors are conjugate, $P'=UPU^*$. The two orderings coincide exactly when $A$ is normal.
 
 $$
 \boxed{\ A=e^He^{\mathrm iK},\quad H=\log P',\quad U'=e^{\mathrm iK},\quad A\in GL_6 .\ }
@@ -333,7 +333,7 @@ In the $3+3$ chiral split the mass block $M=A_{+-}\in M_3(\mathbb{C})$ has the S
 | Symbol | Meaning |
 |---|---|
 | $P'=(AA^*)^{1/2}$ | the left positive factor |
-| $U'=P'^{-1}A$ | the left $*$-unitary factor |
+| $U'=P'{}^{-1}A$ | the left $*$-unitary factor |
 | $H=\log P'$ | the Hermitian exponent of the scale |
 | $K=\log U'$ | the Hermitian exponent of the phase |
 | $M=A_{+-}$ | the mass block in the $3+3$ split |

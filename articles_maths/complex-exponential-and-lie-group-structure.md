@@ -7,7 +7,7 @@ This article develops the Lie theory of the complex algebra $\mathbb{C}$. *Compl
 
 The complex case is the degenerate base of the family and everything below is correspondingly simple. The algebra is commutative, so its commutator bracket vanishes identically, its Lie algebra is abelian, the Baker–Campbell–Hausdorff series terminates at the first term, the exponential is a homomorphism, and the exponential map is both surjective and locally bijective. The whole of the structure is the product of a line and a circle.
 
-Every statement is a special case of the standard theory of the abelian Lie group $\mathbb{R}^n$ and the circle group, and the passage to the real two-dimensional algebra is the identification $\mathbb{C} \cong \mathbb{R}^2$. Throughout, a complex number is written $Q = q + i q'$ with $q, q' \in \mathbb{R}$, the norm is $\langle Q\rangle_{*} = q^2+q'^2$, and the imaginary unit satisfies $i^2 = -1$. The dimension statements name the field, since $\mathbb{C}$ is one-dimensional over $\mathbb{C}$ and two-dimensional over $\mathbb{R}$.
+Every statement is a special case of the standard theory of the abelian Lie group $\mathbb{R}^n$ and the circle group, and the passage to the real two-dimensional algebra is the identification $\mathbb{C} \cong \mathbb{R}^2$. Throughout, a complex number is written $Q = q + i q'$ with $q, q' \in \mathbb{R}$, the norm is $\langle Q\rangle_{*} = q^2+q'{}^2$, and the imaginary unit satisfies $i^2 = -1$. The dimension statements name the field, since $\mathbb{C}$ is one-dimensional over $\mathbb{C}$ and two-dimensional over $\mathbb{R}$.
 
 ## The Algebra as the Abelian Lie Algebra
 

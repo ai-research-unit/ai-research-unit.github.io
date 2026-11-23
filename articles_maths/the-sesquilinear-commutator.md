@@ -94,7 +94,7 @@ $$
 
 So on the Hermitian part the sesquilinear bracket is the ordinary commutator of the envelope, on the anti-Hermitian part it is the negative of the ordinary commutator, and across the two halves it is the **symmetrised** product $sh+hs$.
 
-**Proof.** For Hermitian $h$ the derived operation is the algebra product in the first slot, $h\star h'=hh'^{*}=hh'$, and the transposed product is the same in the other order, so $[h,h']_{\varsigma}=hh'-h'h=[h,h']$. For anti-Hermitian $s$ the involution contributes a sign, $s^{*}=-s$, so $[s,s']_{\varsigma}=(-ss')-(-s's)=-[s,s']$, and $[s,h]_{\varsigma}=sh^{*}-hs^{*}=sh+hs$.
+**Proof.** For Hermitian $h$ the derived operation is the algebra product in the first slot, $h\star h'=hh'{}^{*}=hh'$, and the transposed product is the same in the other order, so $[h,h']_{\varsigma}=hh'-h'h=[h,h']$. For anti-Hermitian $s$ the involution contributes a sign, $s^{*}=-s$, so $[s,s']_{\varsigma}=(-ss')-(-s's)=-[s,s']$, and $[s,h]_{\varsigma}=sh^{*}-hs^{*}=sh+hs$.
 
 **Corollary (the Lie algebra of the anti-Hermitian half).** On $S(A)$ the sesquilinear bracket is $R$-bilinear, antisymmetric and satisfies the Jacobi identity, being the negative of the commutator of the associative envelope; the negation being an isomorphism of brackets, the sesquilinear bracket and the ordinary commutator make $S(A)$ one and the same Lie algebra, up to the sign of the bracket. That Lie algebra is *The Unitary Lie Algebra*, and its place in the sesqualgebra is *Lie Algebras of Sesqualgebras*, §*The Anti-Hermitian Half*.
 

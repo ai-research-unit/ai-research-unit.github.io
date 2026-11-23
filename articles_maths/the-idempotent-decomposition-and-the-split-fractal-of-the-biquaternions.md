@@ -50,7 +50,7 @@ $$
 
 the product of two complex filled Julia sets. The **split fractal** is this product, and it is the fractal of the diagonal model.
 
-**Proof.** $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}'^2=\tilde\Pi_{\mathrm{id}}'$, $\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}'=0$ give the coordinatewise product and the split map; the two coordinates do not interact, so the orbit is the pair of complex orbits and the locus is the product. The boundary formula is the boundary of a product.
+**Proof.** $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}'{}^2=\tilde\Pi_{\mathrm{id}}'$, $\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}'=0$ give the coordinatewise product and the split map; the two coordinates do not interact, so the orbit is the pair of complex orbits and the locus is the product. The boundary formula is the boundary of a product.
 
 **Remark (the diagonal model).** In the model the split fractal is the set of diagonal matrices $\operatorname{diag}(\lambda_1,\lambda_2)$ with $\lambda_j$ in the complex filled Julia set $K_{C_j}$; the parameter is the diagonal matrix $\operatorname{diag}(C_1,C_2)$ and the map is the entrywise square plus the parameter. **The diagonal matrices carry exactly the product of two complex quadratic dynamics, and they are the largest subalgebra on which the biquaternion dynamics is a product.** The off-diagonal entries are zero on the plane and are the coupling off it.
 

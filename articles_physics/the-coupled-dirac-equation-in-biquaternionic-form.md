@@ -95,7 +95,7 @@ that is, $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h
 **The conjugate entry is not the negative of the entry.** Since $\natural$ fixes $e_t$ and negates the three spatial units, a potential with real coefficients has
 
 $$
-\tilde A_{\Phi}^{\natural}=A_te_t-\sum_{\imath\in\{x,y,z\}} A_\imath\vec e_\imath .
+\tilde A_{\Phi}^{\natural}=A_te_t-\sum_{\imath\in\{x,y,z\}} A_{\imath}\vec e_{\imath} .
 $$
 
 For a purely electric potential $\tilde A_{\Phi}^{\natural}=+\tilde A_{\Phi}$, so the two members carry opposite entries; for a purely magnetic one $\tilde A_{\Phi}^{\natural}=-\tilde A_{\Phi}$, so they carry the same entry; for a general potential it is neither. The second member is the conjugate of the first and not the first with $ϙ\to-ϙ$.
@@ -110,7 +110,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi,\imath}=\frac{\partial}{\partial R_{\imath}}+\frac{2\pi i\,ϙ}{h}A_{\imath},
 $$
 
-with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\imath=\partial/\partial x_\imath$. Each $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$ is a central scalar operator: the derivative acts on the coefficients only and the $A_{\imath}$ are complex numbers, so every component commutes with every element of $\mathbb{B}$ and with every invertible element.
+with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_{\imath}=\partial/\partial x_{\imath}$. Each $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$ is a central scalar operator: the derivative acts on the coefficients only and the $A_{\imath}$ are complex numbers, so every component commutes with every element of $\mathbb{B}$ and with every invertible element.
 
 **That one line is the whole of the polar reading.** Because each component is central, the interaction term passes through the field and can be written on either side of it. It cannot rotate a non-central factor; it multiplies the whole word. The polar companion draws every consequence of that sentence, and this article uses it once, in §*Larmor Precession and the Gyromagnetic Ratio*.
 
@@ -315,7 +315,7 @@ $$
 
 On a plane wave it is $\frac{h}{2\pi} c\,\kappa_t$ in the covariant reading and $\frac{h}{2\pi} c\,\pi_t$ in the canonical one, and the two differ by $ϙA_t c$: the energy of the coupled system is the kinetic energy, and the canonical energy is the kinetic energy less the potential's share. That difference is the whole of the constant-potential shift of §*Solutions in a Constant Potential*.
 
-**Momentum.** If $\tilde A_{\Phi}$ does not depend on $x_\imath$, the charge is the corresponding component of
+**Momentum.** If $\tilde A_{\Phi}$ does not depend on $x_{\imath}$, the charge is the corresponding component of
 
 $$
 \vec P=\int\mathrm{d}^{3}\varrho\;\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\,(-i \frac{h}{2\pi})\vec\nabla_\Phi\tilde\Xi\bigr],
@@ -377,7 +377,7 @@ j_{\imath}=\tilde\Xi^{\dagger}iR_{\vec e_x}\,iL_{e_{\imath}}R_{\vec e_{\mathrm{s
 \mathrm{spt}(t)=x,\ \mathrm{spt}(\varsigma_{\mathrm{spt}})=y .
 $$
 
-Its time component is $\tilde\Xi^{\dagger}\tilde\Xi$ and its spatial components are $\tilde\Xi^{\dagger}\alpha_\imath\tilde\Xi$ with $\alpha_\imath=L_{\vec e_k}R_{\vec e_z}$.
+Its time component is $\tilde\Xi^{\dagger}\tilde\Xi$ and its spatial components are $\tilde\Xi^{\dagger}\alpha_{\imath}\tilde\Xi$ with $\alpha_{\imath}=L_{\vec e_k}R_{\vec e_z}$.
 
 **The dictionary, and the point of making it.** Every ingredient of that display is a basis operator of the algebra except one: the adjoint row is built on $iR_{\vec e_x}$, a one-sided operator. Read as a pairing, the same object is
 
@@ -394,7 +394,7 @@ a scalar part of three factors: the field, an invertible element, the field agai
 $$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,
 \qquad
-(\gamma_\imath)^{2}=-I_4,
+(\gamma_{\imath})^{2}=-I_4,
 \qquad
 \gamma_5^{2}=I_4,
 \qquad
@@ -473,7 +473,7 @@ The naive $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, 
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^{2}=-e_t$ |
+| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^{2}=-e_t$ |
 | $i$ | Central scalar imaginary, $i^{2}=-e_t$ |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part, the coefficient of $e_t$ |
 | $\mathbb{B}_{\Phi},\ \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
@@ -481,7 +481,7 @@ The naive $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, 
 | $\tilde\Xi^{\flat}=-\tilde\Xi^{*}$ | The anti-Hermitian conjugate; the algebra's real structure, not the mass |
 | $\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$ | The gradient and its quaternion conjugate |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
-| $\tilde A_{\Phi}=A_te_t+\sum_{\imath\in\{x,y,z\}} A_\imath\vec e_\imath$ | Potential biquaternion, an element of $\mathbb{B}_{\Phi}$ |
+| $\tilde A_{\Phi}=A_te_t+\sum_{\imath\in\{x,y,z\}} A_{\imath}\vec e_{\imath}$ | Potential biquaternion, an element of $\mathbb{B}_{\Phi}$ |
 | $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$ | Gauge law of the connection; $\Gamma$ real |
 | $\digamma_{\mathrm{gau}}=\exp(i\theta_{\mathrm{gau}})$ | Local central phase; $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ |
 | $ϙ$ | Charge; the algebra fixes neither its value nor its sign |

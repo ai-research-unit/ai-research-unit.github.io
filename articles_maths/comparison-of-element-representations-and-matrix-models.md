@@ -58,8 +58,8 @@ The Cayley matrices of the two-dimensional rung are
 
 $$
 \boxed{\;
-Q=q+iq'\mapsto\begin{pmatrix}q&-q'\\q'&q\end{pmatrix},\ \ \det=q^2+q'^2;\qquad
-Q=q+jq'\mapsto\begin{pmatrix}q&q'\\q'&q\end{pmatrix},\ \ \det=q^2-q'^2;\qquad
+Q=q+iq'\mapsto\begin{pmatrix}q&-q'\\q'&q\end{pmatrix},\ \ \det=q^2+q'{}^2;\qquad
+Q=q+jq'\mapsto\begin{pmatrix}q&q'\\q'&q\end{pmatrix},\ \ \det=q^2-q'{}^2;\qquad
 Q=q+\varepsilon q'\mapsto\begin{pmatrix}q&q'\\0&q\end{pmatrix},\ \ \det=q^2
 \;},
 $$

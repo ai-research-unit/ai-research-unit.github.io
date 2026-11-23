@@ -33,7 +33,7 @@ $$
 
 and the field strength keeps the canonical form $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ of the field-strength article.
 
-The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\imath^2 = -e_t$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The quaternion conjugate of a biquaternion $\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$ is $\tilde{Q}^{\natural} = Q_te_t - \vec Q$, its complex conjugate is $\bar{\tilde{Q}} = \sum_{\imath} \bar{Q}_{\imath} e_{\imath}$, and its Hermitian conjugate is $\tilde{Q}^{*} = \bar{\tilde{Q}}^{\natural} = \sum_{\imath} \bar{Q}_{\imath} e_{\imath}$ with the vector components negated. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, $\vec v$ is the particle velocity, $\vec v_b$ is a frame (boost) velocity, and $\vec B = \mu\vec H$ is the magnetic induction.
+The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_{\imath}^2 = -e_t$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The quaternion conjugate of a biquaternion $\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$ is $\tilde{Q}^{\natural} = Q_te_t - \vec Q$, its complex conjugate is $\bar{\tilde{Q}} = \sum_{\imath} \bar{Q}_{\imath} e_{\imath}$, and its Hermitian conjugate is $\tilde{Q}^{*} = \bar{\tilde{Q}}^{\natural} = \sum_{\imath} \bar{Q}_{\imath} e_{\imath}$ with the vector components negated. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, $\vec v$ is the particle velocity, $\vec v_b$ is a frame (boost) velocity, and $\vec B = \mu\vec H$ is the magnetic induction.
 
 ## The Lorentz Four-Force in Component Form
 
@@ -69,18 +69,18 @@ F_{\imath\jmath} =
 \end{pmatrix},
 $$
 
-that is, $F_{0k} = iE_\imath/c$ and $F_{j\imath} = \epsilon_{j\imath l}B_l$. The time component of the contraction is
+that is, $F_{0k} = iE_{\imath}/c$ and $F_{j\imath} = \epsilon_{j\imath l}B_l$. The time component of the contraction is
 
 $$
-K_0 = ϙ\,F_{0k}u_\imath = ϙ\,\frac{iE_\imath}{c}\,\gamma v_\imath = i\,\frac{\gamma ϙ}{c}\,\vec E\cdot\vec v,
+K_0 = ϙ\,F_{0k}u_{\imath} = ϙ\,\frac{iE_{\imath}}{c}\,\gamma v_{\imath} = i\,\frac{\gamma ϙ}{c}\,\vec E\cdot\vec v,
 $$
 
 and the spatial components are
 
 $$
 B_{\mathrm{boost},k} = ϙ\,F_{k0}u_0 + ϙ\,F_{\imath j}u_j
-= ϙ\left(-\frac{iE_\imath}{c}\right)(i\gamma c) + ϙ\,\epsilon_{\imath jl}B_l\,\gamma v_j
-= \gamma ϙ\,E_\imath + \gamma ϙ\left(\vec v\times\vec B\right)_\imath,
+= ϙ\left(-\frac{iE_{\imath}}{c}\right)(i\gamma c) + ϙ\,\epsilon_{\imath jl}B_l\,\gamma v_j
+= \gamma ϙ\,E_{\imath} + \gamma ϙ\left(\vec v\times\vec B\right)_{\imath},
 $$
 
 which is exactly the vector part above. The component form and the tensor contraction are the same statement.
@@ -157,7 +157,7 @@ $$
 \tilde{F}\tilde{V}_{\Phi} - \tilde{V}_{\Phi}\tilde{F} = 2\gamma\,\tilde{F}\times\vec v.
 $$
 
-(Here $\tilde{F}\cdot\vec v$ is the scalar biquaternion $\sum_{\imath\in\{x,y,z\}} F_\imath v_\imath$ and $\tilde{F}\times\vec v$ the pure-vector biquaternion with components $\epsilon_{j\imath l}F_j v_l$.) The electric and magnetic fields are recovered from
+(Here $\tilde{F}\cdot\vec v$ is the scalar biquaternion $\sum_{\imath\in\{x,y,z\}} F_{\imath} v_{\imath}$ and $\tilde{F}\times\vec v$ the pure-vector biquaternion with components $\epsilon_{j\imath l}F_j v_l$.) The electric and magnetic fields are recovered from
 
 $$
 \vec E = \frac{\tilde{F} + \tilde{F}^{*}}{2i\sqrt{\epsilon}},
@@ -567,7 +567,7 @@ $$
 \mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,\rho\,\tilde F_2 - i\,\big[\tilde F_2,\vec J\big],
 $$
 
-where $(\cdot,\cdot)$ is the general plain bilinear form $\sum_{\imath\in\{x,y,z\}} F_\imathG_\imath$. The scalar part is a **power density**: its real part is the rate at which the electric and gravimagnetic fields do work on their currents, and its imaginary part is the corresponding magnetic-charge quantity.
+where $(\cdot,\cdot)$ is the general plain bilinear form $\sum_{\imath\in\{x,y,z\}} F_{\imath} G_{\imath}$. The scalar part is a **power density**: its real part is the rate at which the electric and gravimagnetic fields do work on their currents, and its imaginary part is the corresponding magnetic-charge quantity.
 
 The vector part is the **force density**, and its relation to the two halves named below carries a factor of $i$:
 
@@ -638,7 +638,7 @@ At the level of densities the companion programme replaces the per-particle forc
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\tilde{Q}^{*} = \bar{\tilde Q}^{\natural}$ | Hermitian conjugate |

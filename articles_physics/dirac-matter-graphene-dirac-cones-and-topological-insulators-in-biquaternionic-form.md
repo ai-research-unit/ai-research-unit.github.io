@@ -4,6 +4,8 @@
 
 **Dirac matter** is the name for the solids whose low-energy electronic excitations obey, not the Schrödinger equation, but an equation of Dirac type. The prototype is monolayer graphene, where the honeycomb lattice leaves electrons near the Fermi level massless and linearly dispersing, forming the **Dirac cones** of the Brillouin zone. The same structure appears in the surface states of three-dimensional **topological insulators**, where the bulk is gapped and insulating and the boundary carries a gapless Dirac cone protected by time-reversal symmetry. In both cases a two-component spinor, a $\boldsymbol{\sigma}\cdot\vec p$ kinetic term and a mass term that opens a gap organise the physics; these are exactly the three objects the biquaternion framework names as its own.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 This article asks what the framework contributes to Dirac matter and, just as importantly, what it does not. The framework **transcribes** the low-energy equations faithfully, and it locates the gap-opening term as the parent's chirality-mixing mass. It does **not** derive the honeycomb lattice, the Fermi velocity, or the topological invariant: those are material and many-body data. The one genuinely algebraic point offered here is a **counting** observation — the biquaternion field carries eight real components, the same count as the sublattice and valley isospins of graphene together — and a corresponding **caution**: the framework has two minimal left ideals, and they are two copies of one module, so the index between them is a copy index and not a chirality; the identification of those ideals with graphene's valley isospin is therefore a choice and not a consequence. The distinction between the framework's chirality and graphene's pseudospin is the sharpest thing this article has to say.
 
 The article is organised as follows. The next section explains why lattice electrons look relativistic and derives the Dirac cone. The third separates graphene's two isospins from the framework's two ideals and states the counting comparison. The fourth identifies the gap with the framework's mass. The fifth treats topological insulators, their edge states, the $\mathbb Z_2$ invariant and the surface Dirac cone, and cross-links the framework's Kramers article for the time-reversal structure. The sixth recalls Klein tunnelling in graphene $p$–$n$ junctions. The seventh separates transcription from framework-level content. The closing sections are the open questions, the summary, the notation table and the literature.
@@ -14,7 +16,7 @@ The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otim
 
 ### The honeycomb lattice and the two-site cell
 
-Graphene is a single layer of carbon atoms on a honeycomb lattice. The lattice is bipartite: it is a triangular Bravais lattice with a **two-atom basis**, so each unit cell carries two sites, conventionally labelled $A$ and $B$. The electronic states near the Fermi level are built from one $p_z$ orbital per site, and the tight-binding hopping $\gamma_0\approx 2.8$ eV between nearest neighbours gives two bands. A cell with two sites and two orbitals per cell necessarily gives a two-component Bloch spinor, and the two components are the amplitudes on the two sublattices. This two-valued label is the **sublattice pseudospin**; it is not the electron's spin.
+Graphene is a single layer of carbon atoms on a honeycomb lattice. The lattice is bipartite: it is a triangular Bravais lattice with a **two-atom basis**, so each unit cell carries two sites, conventionally labelled $A$ and $B$. The electronic states near the Fermi level are built from one $p_z$ orbital per site, and the tight-binding hopping $\gamma_0\approx 4.5\times10^{-19}$ J between nearest neighbours gives two bands. A cell with two sites and two orbitals per cell necessarily gives a two-component Bloch spinor, and the two components are the amplitudes on the two sublattices. This two-valued label is the **sublattice pseudospin**; it is not the electron's spin.
 
 ### The low-energy effective equation
 
@@ -163,7 +165,7 @@ The biquaternion framework transcribes these equations exactly and locates two s
 | $A$, $B$ | The two sublattices of the honeycomb cell |
 | $\boldsymbol{\sigma}$ | Pauli matrices acting on sublattice pseudospin |
 | $v_F \approx 10^6$ m/s | Fermi velocity, replacing $c$ in the effective equation |
-| $\gamma_0 \approx 2.8$ eV | Nearest-neighbour hopping of graphene |
+| $\gamma_0 \approx 4.5\times10^{-19}$ J | Nearest-neighbour hopping of graphene |
 | $K_+$, $K_-$ | The two inequivalent zone corners (valleys) |
 | $g_v = 2$ | Valley degeneracy |
 | $\mathcal{G}_{\mathrm{gap}}$ | Sublattice-symmetry-breaking gap parameter, mass $m=\mathcal{G}_{\mathrm{gap}}/v_F^2$ |

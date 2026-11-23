@@ -61,18 +61,18 @@ a pure right multiplier, so it is an example of the right slot and never its def
 
 $$
 c_0:\tilde{Ξ}\longmapsto\tilde{Ξ}\,\vec e_x,\qquad
-c_\imath:\tilde{Ξ}\longmapsto\vec e_\imath\,\tilde{Ξ}\,\vec e_y,\quad k=x,y,z .
+c_{\imath}:\tilde{Ξ}\longmapsto\vec e_{\imath}\,\tilde{Ξ}\,\vec e_y,\quad k=x,y,z .
 $$
 
 The four are real: the coefficient conjugation fixes each of them, because it fixes the invertibles and negates only $i$, and none of the four carries an $i$. Two squares and six anticommutators are all that is used below,
 
 $$
-c_0^{2}=-1,\qquad c_\imath^{2}=+1,\qquad \{c_{\imath},c_{\jmath}\}=0\quad(\imath\neq\jmath),
+c_0^{2}=-1,\qquad c_{\imath}^{2}=+1,\qquad \{c_{\imath},c_{\jmath}\}=0\quad(\imath\neq\jmath),
 $$
 
-and they are read at once: $c_0^{2}$ is $\vec e_x^{2}=-1$, $c_\imath^{2}$ is $\vec e_\imath^{2}\vec e_y^{2}=(-1)(-1)=+1$, and a pair anticommutes because one quaternion unit passes the other and $\vec e_y$ passes $\vec e_y$.
+and they are read at once: $c_0^{2}$ is $\vec e_x^{2}=-1$, $c_{\imath}^{2}$ is $\vec e_{\imath}^{2}\vec e_y^{2}=(-1)(-1)=+1$, and a pair anticommutes because one quaternion unit passes the other and $\vec e_y$ passes $\vec e_y$.
 
-**The operator.** With $x_0=r'_t$ and $x_\imath$ the three spatial coordinates, and with $Q_t=i q'_t$, $Q_\imath=q_\imath$ the material reading of the four coordinates,
+**The operator.** With $x_0=r'_t$ and $x_{\imath}$ the three spatial coordinates, and with $Q_t=i q'_t$, $Q_{\imath}=q_{\imath}$ the material reading of the four coordinates,
 
 $$
 D=\sum_{\imath} \varepsilon_{\imath}\, c_{\imath}\,\frac{\partial}{\partial x_{\imath}},\qquad
@@ -80,7 +80,7 @@ D=\sum_{\imath} \varepsilon_{\imath}\, c_{\imath}\,\frac{\partial}{\partial x_{\
 D^{2}=\Box_\Phi=\sum_{\imath}\frac{\partial^{2}}{\partial R_{\imath}^{2}}=-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\Delta_\Phi .
 $$
 
-The sign vector is the one that makes the square the d'Alembertian: the time direction enters with $c_0^{2}=-1$ and the three space directions with $c_\imath^{2}=+1$. The minus on the time term of $\Box_\Phi$ is the square of the $i$ in $Q_t=i q'_t$: the derivative is taken with respect to a coefficient that is imaginary, and $i^{2}=-1$ is the whole of the sign. The operator carries no $i$; the $i$ of a plane wave comes from the wave and not from the frame.
+The sign vector is the one that makes the square the d'Alembertian: the time direction enters with $c_0^{2}=-1$ and the three space directions with $c_{\imath}^{2}=+1$. The minus on the time term of $\Box_\Phi$ is the square of the $i$ in $Q_t=i q'_t$: the derivative is taken with respect to a coefficient that is imaginary, and $i^{2}=-1$ is the whole of the sign. The operator carries no $i$; the $i$ of a plane wave comes from the wave and not from the frame.
 
 **The conjugation.** The charge conjugation of this article is
 
@@ -210,10 +210,10 @@ The vanishing of the vector current is the statement that a self-conjugate field
 
 | Conjugation | Action on the units and on $i$ | Type |
 |---|---|---|
-| ${}^{\natural}$ quaternion | $\vec e_\imath\mapsto-\vec e_\imath$, $i\mapsto i$, $e_t\mapsto e_t$ | $\mathbb{C}$-linear antiautomorphism |
+| ${}^{\natural}$ quaternion | $\vec e_{\imath}\mapsto-\vec e_{\imath}$, $i\mapsto i$, $e_t\mapsto e_t$ | $\mathbb{C}$-linear antiautomorphism |
 | $\bar{\cdot}$ complex | units fixed, $i\mapsto-i$ | conjugate-linear **automorphism** |
-| ${}^{*}={}^{\natural}\circ\bar{\cdot}$ Hermitian | $\vec e_\imath\mapsto-\vec e_\imath$, $i\mapsto-i$ | conjugate-linear antiautomorphism |
-| $\flat=-{}^{*}$ | $\vec e_\imath\mapsto\vec e_\imath$, $i\mapsto i$, $e_t\mapsto-e_t$ | conjugate-linear, order-reversing with a sign |
+| ${}^{*}={}^{\natural}\circ\bar{\cdot}$ Hermitian | $\vec e_{\imath}\mapsto-\vec e_{\imath}$, $i\mapsto-i$ | conjugate-linear antiautomorphism |
+| $\flat=-{}^{*}$ | $\vec e_{\imath}\mapsto\vec e_{\imath}$, $i\mapsto i$, $e_t\mapsto-e_t$ | conjugate-linear, order-reversing with a sign |
 
 **The criterion is automorphism against antiautomorphism.** A conjugation that is to be a real structure on the field must commute with the algebra's action on it, and on the regular element the action is left multiplication. Commuting with the order of a product is what an automorphism does and what an antiautomorphism reverses:
 
@@ -318,7 +318,7 @@ The framework transcribes both facts, and neither is a derivation.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\imath^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_{\imath}^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. In basis operators they are
 
@@ -337,7 +337,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
-(\gamma_\imath)^2=-I_4,\qquad
+(\gamma_{\imath})^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_{\imath},\gamma_5\}=0,
 $$
@@ -384,7 +384,7 @@ The left-handedness of the neutrino is empirical, and the mass values and mixing
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Complex scalar subspace; the centre |
 | ${}^{\natural},\ \bar{\cdot},\ {}^{*}=({}^{\natural})^{\,*}$ | Quaternion, complex and Hermitian conjugations |
 | $Q^{\flat}=-Q^{*}$ | Algebra's real structure; fixed space $\mathbb{B}_{\Phi}$ |
-| $c_0:\tilde{Ξ}\mapsto\tilde{Ξ}\vec e_x$; $c_\imath:\tilde{Ξ}\mapsto\vec e_\imath\tilde{Ξ}\vec e_y$ | The four real multipliers of the frame; $c_0^2=-1$, $c_\imath^2=+1$, pairwise anticommuting |
+| $c_0:\tilde{Ξ}\mapsto\tilde{Ξ}\vec e_x$; $c_{\imath}:\tilde{Ξ}\mapsto\vec e_{\imath}\tilde{Ξ}\vec e_y$ | The four real multipliers of the frame; $c_0^2=-1$, $c_{\imath}^2=+1$, pairwise anticommuting |
 | $D=\sum_{\imath}\varepsilon_{\imath} c_{\imath}\partial/\partial x_{\imath}$ | Kinetic operator; $D^2=\Box_\Phi$; $D_p=-i\sum_{\imath}\varepsilon_{\imath} p_{\imath} c_{\imath}$ |
 | $\Box_\Phi=-\partial^2/\partial {r'_{t}}^2+\Delta_\Phi$ | d'Alembertian; $\Delta_\Phi$ is the material Laplacian |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the frame |

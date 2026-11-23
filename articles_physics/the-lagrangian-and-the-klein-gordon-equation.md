@@ -7,7 +7,7 @@
 $$
 \left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\tilde\Xi=0,
 \qquad
-\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\frac{\partial^{2}}{\partial r'^{2}_{t}},
+\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\frac{\partial^{2}}{\partial r'{}^{2}_{t}},
 \qquad
 \nu_m=\frac{mc}{h},
 $$
@@ -32,7 +32,7 @@ The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the act
 
 **The conventions are restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace and $\mathbb{B}_{\Phi}$ the anti-Hermitian one. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The measure is $\mathrm{d}^{4}x=\mathrm{d}r'_t\,\mathrm{d}r_x\,\mathrm{d}r_y\,\mathrm{d}r_z$ with $r'_t=c\,t'$, so the material time is a length and no $c$ appears beside a temporal derivative. The four-position is $\tilde R_\Phi=i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Each symbol is defined where it first appears, and all of them are collected in §*Summary of Notation*.
 
-**The d'Alembertian, and the dispersion relation it fixes.** The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial r_\imath$ with $R_t=i r'_t$, and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ on the material sector. On a plane wave $\exp\big(-i(\omega r'_t/c-2\pi\vec\nu_\Phi\cdot\vec r)\big)$ the operator returns $\omega^{2}-c^{2}\,4\pi^{2}\nu_{\Phi}^{2}$ times the wave, so the equation requires $\omega^{2}=c^{2}\,4\pi^{2}\nu_{\Phi}^{2}+c^{2}\,4\pi^{2}\nu_m^{2}$. That is the parent's dispersion relation, and it fixes the sign of the mass term in the action below.
+**The d'Alembertian, and the dispersion relation it fixes.** The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial r_{\imath}$ with $R_t=i r'_t$, and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^{2}/\partial r'{}^{2}_{t}$ on the material sector. On a plane wave $\exp\big(-i(\omega r'_t/c-2\pi\vec\nu_\Phi\cdot\vec r)\big)$ the operator returns $\omega^{2}-c^{2}\,4\pi^{2}\nu_{\Phi}^{2}$ times the wave, so the equation requires $\omega^{2}=c^{2}\,4\pi^{2}\nu_{\Phi}^{2}+c^{2}\,4\pi^{2}\nu_m^{2}$. That is the parent's dispersion relation, and it fixes the sign of the mass term in the action below.
 ## The Action in Element Form
 
 The action is
@@ -98,7 +98,7 @@ $$
 (\tilde\Xi^{*}\tilde M\tilde\Xi)^{*}=\tilde\Xi^{*}\tilde M^{*}\tilde\Xi=\tilde\Xi^{*}\tilde M\tilde\Xi,
 $$
 
-using $(\tilde\Xi^{*})^{*}=\tilde\Xi$ and $\tilde M^{*}=\tilde M$. So the density is Hermitian, and a Hermitian element has a real scalar part, because $\mathbb{B}_{\Psi}$ is the real-linear span of $e_t$ and $i\vec e_\imath$. The potential density is therefore real for every Hermitian coefficient, central or not. With $\tilde M=4\pi^{2}\nu_m^{2}e_t$ it is $\nu_m^{2}\sum_{\imath}\lvert\Xi_{\imath}\rvert^{2}$, and the action is real.
+using $(\tilde\Xi^{*})^{*}=\tilde\Xi$ and $\tilde M^{*}=\tilde M$. So the density is Hermitian, and a Hermitian element has a real scalar part, because $\mathbb{B}_{\Psi}$ is the real-linear span of $e_t$ and $i\vec e_{\imath}$. The potential density is therefore real for every Hermitian coefficient, central or not. With $\tilde M=4\pi^{2}\nu_m^{2}e_t$ it is $\nu_m^{2}\sum_{\imath}\lvert\Xi_{\imath}\rvert^{2}$, and the action is real.
 
 **The selection rule. Not at issue here.** The potential is $\tilde M=4\pi^{2}\nu_m^{2}e_t$, central and Hermitian at once, so both sectors pass the test and no sector is excluded. The general potential is the momentum article's subject.
 
@@ -119,7 +119,7 @@ The parent distinguishes two objects and this article inherits the distinction i
 **Vary the conjugate and integrate by parts.** The variation is taken with respect to $\tilde\Xi^{*}$, the two halves of a complex field being independent variables of the real functional. Writing $\partial_t=\partial_{r'_t}$ and summing over the spatial slots with their metric signs, the variation of the display of the previous section is
 
 $$
-\delta S=\int\mathrm{d}^{4}x\;\mathrm{Sc}\Bigl[(\partial_t\,\delta\tilde\Xi)^{*}\partial_t\tilde\Xi-\sum_{\imath\in\{x,y,z\}}(\partial_\imath\,\delta\tilde\Xi)^{*}\partial_\imath\tilde\Xi-4\pi^{2}\nu_m^{2}\,\delta\tilde\Xi^{*}\tilde\Xi\Bigr].
+\delta S=\int\mathrm{d}^{4}x\;\mathrm{Sc}\Bigl[(\partial_t\,\delta\tilde\Xi)^{*}\partial_t\tilde\Xi-\sum_{\imath\in\{x,y,z\}}(\partial_{\imath}\,\delta\tilde\Xi)^{*}\partial_{\imath}\tilde\Xi-4\pi^{2}\nu_m^{2}\,\delta\tilde\Xi^{*}\tilde\Xi\Bigr].
 $$
 
 Two integrations by parts, one per derivative, give
@@ -129,7 +129,7 @@ $$
 +\oint\mathrm{d}\Sigma\;\mathrm{Sc}\bigl[\delta\tilde\Xi^{*}\partial_n\tilde\Xi\bigr],
 $$
 
-with the spatial second derivative carrying the plus that the metric sign and the minus in the action cancel, and with $\Delta_\Phi=\sum_{\imath\in\{x,y,z\}}\partial_\imath^{2}$.
+with the spatial second derivative carrying the plus that the metric sign and the minus in the action cancel, and with $\Delta_\Phi=\sum_{\imath\in\{x,y,z\}}\partial_{\imath}^{2}$.
 
 **The boundary term.** On a region whose boundary is held fixed, $\delta\tilde\Xi^{*}=0$ there and the surface term vanishes; on a region that extends to infinity the flux is killed by the fall-off of a solution. The two sentences are the whole of the boundary discussion, and the corpus uses the second.
 
@@ -186,13 +186,13 @@ The transformation is $\tilde\Xi\mapsto e^{i\alpha}\tilde\Xi$, $\tilde\Xi^{*}\ma
 $$
 j_{r'_t}=2\,\mathrm{Re}\,\mathrm{Sc}\big[i(\partial_{r'_t}\tilde\Xi)^{*}\tilde\Xi\big],
 \qquad
-j_\imath=-2\,\mathrm{Re}\,\mathrm{Sc}\big[i(\partial_{r_k}\tilde\Xi)^{*}\tilde\Xi\big],
+j_{\imath}=-2\,\mathrm{Re}\,\mathrm{Sc}\big[i(\partial_{r_k}\tilde\Xi)^{*}\tilde\Xi\big],
 $$
 
 and its divergence is the equation itself,
 
 $$
-\partial_{r'_t}j_{r'_t}+\sum_{\imath\in\{x,y,z\}}\partial_{r_k}j_\imath=-2\,\mathrm{Im}\,\mathrm{Sc}\big[\tilde\Xi^{*}\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\tilde\Xi\big],
+\partial_{r'_t}j_{r'_t}+\sum_{\imath\in\{x,y,z\}}\partial_{r_k}j_{\imath}=-2\,\mathrm{Im}\,\mathrm{Sc}\big[\tilde\Xi^{*}\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\tilde\Xi\big],
 $$
 
 which vanishes on every solution. The identity is exact off shell: its right side is the equation contracted with $\tilde\Xi^{*}$ and projected on the scalar part, so it is zero exactly when the bracket is.
@@ -232,7 +232,7 @@ which is the Hamiltonian of the previous section and is non-negative term by ter
 
 ### Space translations and rotations: the stress
 
-The remaining symmetries are the three translations $r_\imath\mapsto r_\imath+\epsilon_\imath$ and the three rotations of the spatial axes. Their Noether currents are the components of one tensor,
+The remaining symmetries are the three translations $r_{\imath}\mapsto r_{\imath}+\epsilon_{\imath}$ and the three rotations of the spatial axes. Their Noether currents are the components of one tensor,
 
 $$
 T_{\imath\jmath}=\mathrm{Sc}\big[(\partial_{\imath}\tilde\Xi)^{*}\partial_{\jmath}\tilde\Xi+(\partial_{\jmath}\tilde\Xi)^{*}\partial_{\imath}\tilde\Xi\big]-\delta_{\imath\jmath}\mathcal{L},
@@ -302,8 +302,8 @@ The second-order structure appears in the variational principle as the conjugate
 | $^{*}$ | Hermitian conjugation |
 | $^{\natural}$ | Quaternion conjugation |
 | $\mathrm{Sc}$ | Coefficient of $e_t$ |
-| $\tilde\nabla_\Phi$ | Biquaternionic gradient, $\partial/\partial R_t$ and $\partial/\partial r_\imath$ |
-| $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ | d'Alembertian on the material sector |
+| $\tilde\nabla_\Phi$ | Biquaternionic gradient, $\partial/\partial R_t$ and $\partial/\partial r_{\imath}$ |
+| $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'{}^{2}_{t}$ | d'Alembertian on the material sector |
 | $r'_t=c\,t'$ | Material time, a length |
 | $\tilde\Xi=\sum_{\imath}\Xi_{\imath} e_{\imath}$ | The Klein–Gordon field, four complex coefficients |
 | $\Xi_{\imath}$ | Coefficient of $e_{\imath}$; the four are independent in the free theory |
@@ -313,7 +313,7 @@ The second-order structure appears in the variational principle as the conjugate
 | $\Pi_\Xi=(\partial_{r'_t}\tilde\Xi)^{*}$ | Conjugate momentum, the second element of the pair |
 | $H$ | Hamiltonian, the energy of the pair |
 | $\nu'_t=\sqrt{\nu_{\Phi}^{2}+\nu_m^{2}}$ | Temporal wave number of a free mode, in one length unit |
-| $j_{r'_t},\ j_\imath$ | Noether current of the phase symmetry |
+| $j_{r'_t},\ j_{\imath}$ | Noether current of the phase symmetry |
 | $\rho_{\mathrm{chg}}$ | The parent's charge density; $j_{r'_t}=-4\pi\nu_m\rho_{\mathrm{chg}}$ |
 | $E_{\mathrm{nrg}}$ | Noether charge of time translation; non-negative |
 | $T_{\imath\jmath}$ | Stress tensor, the current of translations and rotations |

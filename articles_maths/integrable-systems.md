@@ -321,7 +321,7 @@ where $\vartheta_{\mathrm{thf}}$ is the Riemann theta function of the hyperellip
 **Remark (the Hirota form).** The substitution $w = -2\partial^2/\partial x^2\,\log\tau$ with $\tau$ a **tau function** converts KdV into the bilinear equation $D_x(D_t + D_x^3)\tau\cdot\tau = 0$, where $D$ denotes the Hirota bilinear derivative
 
 $$
-D_x^mD_t^n\,f\cdot g = \partial^m/\partial x'^m\,\partial^n/\partial t'^n\,f(x+x',t+t')g(x-x',t-t')\bigr|_{x'=t'=0} .
+D_x^mD_t^n\,f\cdot g = \partial^m/\partial x'{}^m\,\partial^n/\partial t'{}^n\,f(x+x',t+t')g(x-x',t-t')\bigr|_{x'=t'=0} .
 $$
 
 The $N$-soliton and the finite-gap solutions are then obtained from a tau function that is a finite determinant or a theta function, and the bilinear method gives the cleanest route to the explicit formulas and to the Lax pair itself.

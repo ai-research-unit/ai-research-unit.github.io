@@ -10,7 +10,7 @@ Throughout the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ 
 
 **Theorem (the forms).** The two real quadratic forms
 $$
-\langle \breve Q\rangle_{\mathrm{ts}*}=q_{\blacktriangle}^{2}+q'^{2}_{\blacktriangle}+q_{\blacktriangledown}^{2}+q'^{2}_{\blacktriangledown},\qquad \langle \breve Q\rangle_{*}=q_{\blacktriangle}^{2}+q'^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}-q'^{2}_{\blacktriangledown}
+\langle \breve Q\rangle_{\mathrm{ts}*}=q_{\blacktriangle}^{2}+q'{}^{2}_{\blacktriangle}+q_{\blacktriangledown}^{2}+q'{}^{2}_{\blacktriangledown},\qquad \langle \breve Q\rangle_{*}=q_{\blacktriangle}^{2}+q'{}^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}-q'{}^{2}_{\blacktriangledown}
 $$
 have inertias $(4,0)$ and $(2,2)$ respectively. They are the scalar parts of the two products with the coefficient conjugation and with the star,
 $$
@@ -18,7 +18,7 @@ $$
 $$
 where $\operatorname{Sc}(X+Yj)=X$ is the scalar part, and the algebra norm is complex-valued,
 $$
-\langle \breve Q\rangle_{\mathrm{ts}}=\breve Q \breve Q_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\bigl(q_{\blacktriangle}^{2}-q'^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}+q'^{2}_{\blacktriangledown}\bigr)+2i\bigl(q_{\blacktriangle}q'_{\blacktriangle}-q_{\blacktriangledown}q'_{\blacktriangledown}\bigr)=Q_{+}Q_{-},
+\langle \breve Q\rangle_{\mathrm{ts}}=\breve Q \breve Q_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\bigl(q_{\blacktriangle}^{2}-q'{}^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}+q'{}^{2}_{\blacktriangledown}\bigr)+2i\bigl(q_{\blacktriangle}q'_{\blacktriangle}-q_{\blacktriangledown}q'_{\blacktriangledown}\bigr)=Q_{+}Q_{-},
 $$
 whose real part and imaginary part are each a form of inertia $(2,2)$. The forms $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ and $\langle\cdot,\cdot\rangle_{*}$ are related to the two complex coefficients by $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$ and $\langle\cdot,\cdot\rangle_{*}=\lvert Q_{\blacktriangle}\rvert^{2}-\lvert Q_{\blacktriangledown}\rvert^{2}$, and in the idempotent coordinates
 $$
@@ -185,8 +185,8 @@ The reduced biquaternion algebra carries the definite Euclidean form $\langle\cd
 
 | Symbol | Meaning |
 |---|---|
-| $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}=q_{\blacktriangle}^{2}+q'^{2}_{\blacktriangle}+q_{\blacktriangledown}^{2}+q'^{2}_{\blacktriangledown}$ | Euclidean form, inertia $(4,0)$ |
-| $\langle\cdot,\cdot\rangle_{*}=q_{\blacktriangle}^{2}+q'^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}-q'^{2}_{\blacktriangledown}$ | Indefinite form, inertia $(2,2)$ |
+| $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}=q_{\blacktriangle}^{2}+q'{}^{2}_{\blacktriangle}+q_{\blacktriangledown}^{2}+q'{}^{2}_{\blacktriangledown}$ | Euclidean form, inertia $(4,0)$ |
+| $\langle\cdot,\cdot\rangle_{*}=q_{\blacktriangle}^{2}+q'{}^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}-q'{}^{2}_{\blacktriangledown}$ | Indefinite form, inertia $(2,2)$ |
 | $\langle\cdot,\cdot\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$ | Algebra norm, complex-valued |
 | $O(K)=O(4)$, $O(H)=O(2,2)$ | Isometry groups, dimension six |
 | $T^{2}=\{\lvert Q_{+}\rvert=\lvert Q_{-}\rvert=1\}$ | Realised torus of versors, a maximal torus of $O(4)$ |

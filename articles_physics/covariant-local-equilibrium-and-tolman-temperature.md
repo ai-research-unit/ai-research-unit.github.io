@@ -42,7 +42,7 @@ $$
 
 This is symmetric in the pair $(\imath,\jmath)$, so it is ten equations on four functions. It is the Killing equation for the velocity field, and its solutions are the unit Killing fields of the flat frame: the ten equations are not ten independent conditions on four functions, because the normalisation $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ and the integrability identities cut them down, and the flatness of the frame is what makes the surviving solutions few.
 
-The letters. $R_{\imath}$ runs over $r'_t$ and the three $r_\imath$. The derivative is the algebra's own, $\partial/\partial R_t=-i\,\partial/\partial r'_t$ on the material sector and $\partial/\partial R_\imath=\partial/\partial r_\imath$, exactly as [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html) uses it. No Christoffel symbol appears, and none is needed: the frame is flat, the metric is $\delta_{\imath\jmath}$, and the index is a label of a direction. The curved-spacetime bookkeeping is the subject of [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html), and this article stays in the flat frame on purpose.
+The letters. $R_{\imath}$ runs over $r'_t$ and the three $r_{\imath}$. The derivative is the algebra's own, $\partial/\partial R_t=-i\,\partial/\partial r'_t$ on the material sector and $\partial/\partial R_{\imath}=\partial/\partial r_{\imath}$, exactly as [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html) uses it. No Christoffel symbol appears, and none is needed: the frame is flat, the metric is $\delta_{\imath\jmath}$, and the index is a label of a direction. The curved-spacetime bookkeeping is the subject of [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html), and this article stays in the flat frame on purpose.
 
 The relation to the vorticity. [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) defines the vorticity 2-form as the *antisymmetric* part of the same gradient,
 
@@ -59,7 +59,7 @@ The rigidity condition has three consequences, and each is one line of algebra. 
 $$
 v_{\Phi,t}=ic\gamma,
 \qquad
-v_{\Phi,k}=\gamma v_\imath,
+v_{\Phi,k}=\gamma v_{\imath},
 \qquad
 \gamma=\cosh\theta_{\mathrm{rpd}},
 \qquad
@@ -79,9 +79,9 @@ A rigid flow has a constant time-dilation factor along its own time direction. E
 (b) There is neither expansion nor shear. The $(\upsilon_{\mathrm{rnd}},\upsilon_{\mathrm{rnd}})$ component, without summation, and the $(j,\upsilon_{\mathrm{rnd}})$ components give
 
 $$
-\frac{\partial}{\partial r_\imath}\bigl(\gamma v_\imath\bigr)=0
+\frac{\partial}{\partial r_{\imath}}\bigl(\gamma v_{\imath}\bigr)=0
 \qquad\text{and}\qquad
-\frac{\partial}{\partial r_j}\bigl(\gamma v_\imath\bigr)+\frac{\partial}{\partial r_\imath}\bigl(\gamma v_j\bigr)=0 .
+\frac{\partial}{\partial r_j}\bigl(\gamma v_{\imath}\bigr)+\frac{\partial}{\partial r_{\imath}}\bigl(\gamma v_j\bigr)=0 .
 $$
 
 The first is the vanishing of the expansion's diagonal; the second is the vanishing of the shear, and an antisymmetric gradient — a rigid rotation — is left free by it. Together they say that the spatial current density $\gamma\vec v$ has a symmetric gradient that is zero, which is the classical statement that a rigid body's velocity field is an antisymmetric matrix plus a translation.
@@ -89,10 +89,10 @@ The first is the vanishing of the expansion's diagonal; the second is the vanish
 (c) The acceleration is locked to the rapidity gradient. The $(t,\upsilon_{\mathrm{rnd}})$ components give
 
 $$
-\frac{\partial}{\partial r'_t}\bigl(\gamma v_\imath\bigr)=c\,\frac{\partial\gamma}{\partial r_\imath},
+\frac{\partial}{\partial r'_t}\bigl(\gamma v_{\imath}\bigr)=c\,\frac{\partial\gamma}{\partial r_{\imath}},
 $$
 
-which follows from the $(t,\upsilon_{\mathrm{rnd}})$ entry $-i\partial_{r'_t}(\gamma v_\imath)+ic\partial_{r_k}\gamma=0$ on dividing by the factor $-i$ that the temporal slot's derivative carries. Both sides are real, as they must be, and no $i$ survives: a condition that left an $i$ standing would force both sides to vanish. The display says that the flow's acceleration is fixed by the rapidity gradient and by nothing else. For a static flow, $\partial_{r'_t}=0$, so the condition forces $\partial_{r_k}\gamma=0$: a static rigid flow has a constant rapidity, that is, it is inertial.
+which follows from the $(t,\upsilon_{\mathrm{rnd}})$ entry $-i\partial_{r'_t}(\gamma v_{\imath})+ic\partial_{r_k}\gamma=0$ on dividing by the factor $-i$ that the temporal slot's derivative carries. Both sides are real, as they must be, and no $i$ survives: a condition that left an $i$ standing would force both sides to vanish. The display says that the flow's acceleration is fixed by the rapidity gradient and by nothing else. For a static flow, $\partial_{r'_t}=0$, so the condition forces $\partial_{r_k}\gamma=0$: a static rigid flow has a constant rapidity, that is, it is inertial.
 
 ### What rigidity does not constrain
 
@@ -166,9 +166,9 @@ with $c$ and $T$ evaluated at $x$. The six components with both labels spatial v
 The qualification is that the frame is local, and the four temporal components are the whole of the failure. In a medium whose $c$ varies, the velocity's temporal slot is $ic(x)$, and the rigidity condition fails by
 
 $$
-\frac{\partial v_{\Phi,t}}{\partial r_\imath}=i\,\frac{\partial c}{\partial r_\imath}
-=i\,c\,\frac{\partial\ln c}{\partial r_\imath}
-=-i\,c\,\frac{\partial\ln T}{\partial r_\imath},
+\frac{\partial v_{\Phi,t}}{\partial r_{\imath}}=i\,\frac{\partial c}{\partial r_{\imath}}
+=i\,c\,\frac{\partial\ln c}{\partial r_{\imath}}
+=-i\,c\,\frac{\partial\ln T}{\partial r_{\imath}},
 $$
 
 where the last equality is Tolman's law differentiated. So a varying medium violates rigidity by exactly the logarithmic gradient of the Tolman temperature. That is not a defect of the spelling: it is article 11's own answer, which is that the thermal structure is *global only in the limit in which $c$ is constant*, and that a varying medium carries a local and not a global equilibrium. The violation and the temperature gradient are one phenomenon, and the number in the last display is the measure of how far the state is from global equilibrium.
@@ -266,7 +266,7 @@ $$
 
 written on the component spelling of the velocity element, with the index low and the derivative the algebra's own. It is the vanishing of the symmetric part of the velocity's gradient, and it has three consequences: the Lorentz factor does not vary in time, the spatial current density has neither expansion nor shear, and the flow's acceleration is locked to the rapidity gradient so that a static rigid flow is inertial. Vorticity is unconstrained, but the relativistic rigid rotation fails the acceleration condition, so the only global rigid flow in the flat frame is a uniform translation. The condition was checked at one event with central differences of step $10^{-6}$: a uniform translation gave a residual of exactly $0$ in all sixteen entries, and the transverse shear flow gave $0.471\,438$ at the spatial pair, matching $\partial_{r_x}(\gamma v_y)$ computed independently, while satisfying the acceleration pair exactly.
 
-The pointwise temperature of [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html) is $\beta=mc/(2\pi\nu_mk_BT)$, an imaginary-time circumference and therefore a length, with $c\beta=mc^{2}/(2\pi\nu_mk_BT)$ for the material sector's circumference; both are quoted, with that article's check at $2.725$, $300$ and $1000\,\mathrm{K}$. Tolman's law is quoted as $Tc=\text{const}$, so $T\propto1/c\propto n$, with that article's two-point check $T_0=300\,\mathrm{K}$ at $c=1$ and $T=200\,\mathrm{K}$ at $c=1.5$. A fluid at rest in the local frame satisfies the six purely spatial components of the rigidity condition identically, and the four components that carry the temporal slot are $2i\partial_{\imath} c$: they vanish where the medium is uniform and in a varying medium the condition fails by $i c\,\partial\ln c/\partial r_\imath=-i c\,\partial\ln T/\partial r_\imath$, the logarithmic gradient of the Tolman temperature. The medium therefore admits local and not global equilibrium, which is article 11's own answer.
+The pointwise temperature of [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html) is $\beta=mc/(2\pi\nu_mk_BT)$, an imaginary-time circumference and therefore a length, with $c\beta=mc^{2}/(2\pi\nu_mk_BT)$ for the material sector's circumference; both are quoted, with that article's check at $2.725$, $300$ and $1000\,\mathrm{K}$. Tolman's law is quoted as $Tc=\text{const}$, so $T\propto1/c\propto n$, with that article's two-point check $T_0=300\,\mathrm{K}$ at $c=1$ and $T=200\,\mathrm{K}$ at $c=1.5$. A fluid at rest in the local frame satisfies the six purely spatial components of the rigidity condition identically, and the four components that carry the temporal slot are $2i\partial_{\imath} c$: they vanish where the medium is uniform and in a varying medium the condition fails by $i c\,\partial\ln c/\partial r_{\imath}=-i c\,\partial\ln T/\partial r_{\imath}$, the logarithmic gradient of the Tolman temperature. The medium therefore admits local and not global equilibrium, which is article 11's own answer.
 
 The verdict on the gate is that a local temperature is available, and that the pointwise thermal state is rigid at the events where the medium is uniform and fails the condition by the Tolman gradient at the rest. It is a pointwise period on the field of states and not a pointwise metric, as article 11 establishes; this article adopts that answer and does not reopen it. The mechanical form of the condition is the one the flat frame can carry, and the thermal form — the Killing property of $v_{\Phi,\imath}/T$ — belongs to the curved bookkeeping of [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html), where the lapse supplies the Christoffel term the flat frame lacks.
 
@@ -278,14 +278,14 @@ The verdict on the gate is that a local temperature is available, and that the p
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Phi}$ | Material sector, in which the fluid lives |
-| $e_t,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, with $\vec e_\imath^{2}=-e_t$ |
+| $e_t,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, with $\vec e_{\imath}^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\delta_{\imath\jmath}$ | The one metric, all coefficients $+1$; indices stay low |
 | $r'_t$ | Temporal coordinate of the material sector, a length |
-| $R_{\imath}$ | The four frame directions, $R_t=r'_t$ and $R_\imath=r_\imath$ |
+| $R_{\imath}$ | The four frame directions, $R_t=r'_t$ and $R_{\imath}=r_{\imath}$ |
 | $\partial/\partial R_t=-i\,\partial/\partial r'_t$ | The derivative on the material sector |
 | $v_{\Phi,\imath}$ | Component spelling of the velocity element, index low |
-| $v_{\Phi,t}=ic\gamma$, $v_{\Phi,k}=\gamma v_\imath$ | The two families of components |
+| $v_{\Phi,t}=ic\gamma$, $v_{\Phi,k}=\gamma v_{\imath}$ | The two families of components |
 | $\tilde V_{\Phi}$ | The velocity as an element, with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ |
 | $\theta_{\mathrm{rpd}}$ | Rapidity |
 | $\gamma=\cosh\theta_{\mathrm{rpd}}$ | Lorentz factor |

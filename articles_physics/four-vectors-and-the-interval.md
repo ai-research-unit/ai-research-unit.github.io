@@ -58,10 +58,10 @@ The temporal block $\mathbb{R}(ie_t)$ is one-dimensional and central; the spatia
 
 | operation | temporal block $\mathbb{R}(ie_t)$ | spatial block $k$ | whole sector |
 | --- | --- | --- | --- |
-| quaternionic norm $N$ | $-r_t'^{2}$ | $+\lvert\vec r\rvert^{2}$ | $-r_t'^{2}+\lvert\vec r\rvert^{2}$, three positives and one negative |
-| Hermitian norm $H$ | $+r_t'^{2}$ | $+\lvert\vec r\rvert^{2}$ | positive definite, $(4,0)$ |
-| plain norm $P$ | $-r_t'^{2}$ | $-\lvert\vec r\rvert^{2}$ | negative definite, $(0,4)$ |
-| K norm $\mathrm{Kr}$ | $+r_t'^{2}$ | $-\lvert\vec r\rvert^{2}$ | $r_t'^{2}-\lvert\vec r\rvert^{2}$, one positive and three negatives |
+| quaternionic norm $N$ | $-r_t'{}^{2}$ | $+\lvert\vec r\rvert^{2}$ | $-r_t'{}^{2}+\lvert\vec r\rvert^{2}$, three positives and one negative |
+| Hermitian norm $H$ | $+r_t'{}^{2}$ | $+\lvert\vec r\rvert^{2}$ | positive definite, $(4,0)$ |
+| plain norm $P$ | $-r_t'{}^{2}$ | $-\lvert\vec r\rvert^{2}$ | negative definite, $(0,4)$ |
+| K norm $\mathrm{Kr}$ | $+r_t'{}^{2}$ | $-\lvert\vec r\rvert^{2}$ | $r_t'{}^{2}-\lvert\vec r\rvert^{2}$, one positive and three negatives |
 | bracket $[\cdot,\cdot]$ | $0$ | $2\vec r_1\times\vec r_2$ | stays in the sector |
 | anticommutator $\{\cdot,\cdot\}$ | — | — | leaves the sector |
 | product | — | — | leaves the sector unless the factors commute |
@@ -166,12 +166,12 @@ The sector sits in the six-subspace decomposition as one of the two Hermitian ha
 The interval is the quaternionic norm restricted to the sector, and on the sector it is real. The norm of a general biquaternion is complex; the general formula is $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$, and it is real exactly when the element lies in one of the two Hermitian halves. On the sector,
 
 $$
-N(\tilde R_{\Phi})=\tilde R_{\Phi}\tilde R_{\Phi}^{\natural}=-r_t'^{2}+r_x^{2}+r_y^{2}+r_z^{2},
+N(\tilde R_{\Phi})=\tilde R_{\Phi}\tilde R_{\Phi}^{\natural}=-r_t'{}^{2}+r_x^{2}+r_y^{2}+r_z^{2},
 $$
 
 and the right-hand side is a real quadratic form with one negative direction, the temporal one, and three positive ones, the spatial ones.
 
-The signs are produced by the square of the central imaginary. The temporal coordinate enters the display as $ir'_t$, and $(ir'_t)^{2}=-r_t'^{2}$. With a real temporal coefficient the form would be $r_t'^{2}+\lvert\vec r\rvert^{2}$, positive definite, with no null set and no cone. The Lorentzian sign pattern is therefore a consequence of the placement of $i$ in the definition of the sector, and the placement is a consequence of the involution that defines the sector. Nothing is added.
+The signs are produced by the square of the central imaginary. The temporal coordinate enters the display as $ir'_t$, and $(ir'_t)^{2}=-r_t'{}^{2}$. With a real temporal coefficient the form would be $r_t'{}^{2}+\lvert\vec r\rvert^{2}$, positive definite, with no null set and no cone. The Lorentzian sign pattern is therefore a consequence of the placement of $i$ in the definition of the sector, and the placement is a consequence of the involution that defines the sector. Nothing is added.
 
 The inverse formula fails exactly on the cone. For a unit-norm element the inverse is $\tilde R_{\Phi}^{-1}=\tilde R_{\Phi}^{\natural}/N(\tilde R_{\Phi})$, and for zero norm there is no inverse. The zero set of the norm is therefore the boundary of the set of invertibles, and on it the element is a zero divisor:
 
@@ -187,10 +187,10 @@ The four forms on the sector are all real, and their signs are the four combinat
 
 | form | expression on $\tilde R_{\Phi}$ | signs | on the sector |
 | --- | --- | --- | --- |
-| $\langle\tilde R,\tilde R\rangle$ | $-r_t'^{2}-\lvert\vec r\rvert^{2}$ | $(0,4)$ | negative definite |
-| $\langle\tilde R,\tilde R\rangle_{\natural}$ | $-r_t'^{2}+\lvert\vec r\rvert^{2}$ | $(3,1)$ | the interval |
-| $\langle\tilde R,\tilde R\rangle_{*}$ | $+r_t'^{2}+\lvert\vec r\rvert^{2}$ | $(4,0)$ | positive definite |
-| $\langle\tilde R,\tilde R\rangle_{\natural*}$ | $+r_t'^{2}-\lvert\vec r\rvert^{2}$ | $(1,3)$ | minus the interval |
+| $\langle\tilde R,\tilde R\rangle$ | $-r_t'{}^{2}-\lvert\vec r\rvert^{2}$ | $(0,4)$ | negative definite |
+| $\langle\tilde R,\tilde R\rangle_{\natural}$ | $-r_t'{}^{2}+\lvert\vec r\rvert^{2}$ | $(3,1)$ | the interval |
+| $\langle\tilde R,\tilde R\rangle_{*}$ | $+r_t'{}^{2}+\lvert\vec r\rvert^{2}$ | $(4,0)$ | positive definite |
+| $\langle\tilde R,\tilde R\rangle_{\natural*}$ | $+r_t'{}^{2}-\lvert\vec r\rvert^{2}$ | $(1,3)$ | minus the interval |
 
 The identities that relate them are two. The first is $N=-\mathrm{Kr}$, which is the statement that the two indefinite forms on the sector are negatives of each other. The second is $H=-P$, which is the same statement for the two definite ones. Both hold because the star acts as minus the identity on the sector, and both fail on the informational sector, where the star acts as plus the identity and the two indefinite forms coincide with opposite orientation.
 
@@ -206,7 +206,7 @@ The temporal sign convention is a convention and the entry names it once. In thi
 
 $$
 d\tau=\frac{1}{c}\sqrt{-N(d\tilde R_{\Phi})}
-=\sqrt{dr_t'^{2}-\frac{dr_x^{2}+dr_y^{2}+dr_z^{2}}{c^{2}}},
+=\sqrt{dr_t'{}^{2}-\frac{dr_x^{2}+dr_y^{2}+dr_z^{2}}{c^{2}}},
 $$
 
 and the parameter is defined where the interval is negative. On the null set the proper time vanishes and the worldline is a light ray. The formula is a consequence of the norm and not an independent axiom, and it is the only place where the speed of light enters the sector: as the constant that converts the spatial coordinates into the invertibles of the temporal one.
@@ -423,7 +423,7 @@ The sector carries the standard four-vectors, and each one is a different invari
 
 | four-vector | element | components | norm $N$ | reading of the norm |
 | --- | --- | --- | --- | --- |
-| four-position | $\tilde R=i r'_t e_t+\vec r$ | $(r'_t,r_x,r_y,r_z)$ | $-r_t'^{2}+\lvert\vec r\rvert^{2}$ | the squared interval |
+| four-position | $\tilde R=i r'_t e_t+\vec r$ | $(r'_t,r_x,r_y,r_z)$ | $-r_t'{}^{2}+\lvert\vec r\rvert^{2}$ | the squared interval |
 | four-velocity | $\tilde V_{\Phi}=i\gamma c\,e_t+\gamma\vec v$ | $(\gamma c,\gamma\vec v)$ | $-c^{2}$ | the normalisation |
 | four-momentum | $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ | $(E/c,\vec p)$ | $-m^{2}c^{2}$ | the mass shell |
 | four-wavevector | $\tilde\Upsilon_{\Phi}=i\frac{\omega}{c}e_t+2\pi\vec\nu_\Phi$ | $(\omega/c,\vec\nu_\Phi)$ | $0$ for light | the dispersion relation |
@@ -615,8 +615,8 @@ The sector is a chart and the informational sector is the other chart. The ident
 | --- | --- |
 | the sector | $\mathbb{B}_{\Phi}=\{\tilde Q^{*}=-\tilde Q\}$, basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, real dimension four |
 | the blocks | $\mathbb{R}(ie_t)$ of dimension one, central; $k=\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ of dimension three |
-| the interval | $N=-r_t'^{2}+\lvert\vec r\rvert^{2}$, real, three positives and one negative |
-| the companions | $H=r_t'^{2}+\lvert\vec r\rvert^{2}$ positive definite; $P=-H$; $\mathrm{Kr}=-N$ |
+| the interval | $N=-r_t'{}^{2}+\lvert\vec r\rvert^{2}$, real, three positives and one negative |
+| the companions | $H=r_t'{}^{2}+\lvert\vec r\rvert^{2}$ positive definite; $P=-H$; $\mathrm{Kr}=-N$ |
 | the inverse | $\tilde R^{-1}=\tilde R^{\natural}/N(\tilde R)$, defined off the cone |
 | the closure | bracket in the sector, anticommutator in $\mathbb{B}_{\Psi}$, product in the sector only when the factors commute |
 | the bracket | $[\tilde R_1,\tilde R_2]=2\vec r_1\times\vec r_2$; the sector is $\mathfrak{u}(2)$ |
@@ -636,9 +636,9 @@ The sector is a chart and the informational sector is the other chart. The ident
 | --- | --- | --- |
 | the element | $\tilde R_{\Phi}=i r'_t e_t+\vec r$ | imaginary temporal part, real spatial part |
 | the reversal | $\tilde Q^{\flat}=-{}^{*}\tilde Q$ | the involution whose fixed space is the sector |
-| the interval | $N(\tilde R_{\Phi})$ | $-r_t'^{2}+\lvert\vec r\rvert^{2}$, real |
-| the Hermitian norm | $H(\tilde R_{\Phi})$ | $r_t'^{2}+\lvert\vec r\rvert^{2}$, positive |
-| the K norm | $\mathrm{Kr}(\tilde R_{\Phi})$ | $r_t'^{2}-\lvert\vec r\rvert^{2}$, equal to $-N$ |
+| the interval | $N(\tilde R_{\Phi})$ | $-r_t'{}^{2}+\lvert\vec r\rvert^{2}$, real |
+| the Hermitian norm | $H(\tilde R_{\Phi})$ | $r_t'{}^{2}+\lvert\vec r\rvert^{2}$, positive |
+| the K norm | $\mathrm{Kr}(\tilde R_{\Phi})$ | $r_t'{}^{2}-\lvert\vec r\rvert^{2}$, equal to $-N$ |
 | the bracket | $[\tilde R_1,\tilde R_2]$ | $2\vec r_1\times\vec r_2$ |
 | the definite pairing | $\operatorname{Sc}(\tilde R_{\Phi,1}\tilde R_{\Phi,2})$ | minus the Euclidean pairing of the coefficients |
 | the Minkowski pairing | $\operatorname{Sc}(\tilde R_{\Phi,1}\tilde R_{\Phi,2}^{\natural})$ | $-r'_{1t}r'_{2t}+\vec r_1\cdot\vec r_2$ |

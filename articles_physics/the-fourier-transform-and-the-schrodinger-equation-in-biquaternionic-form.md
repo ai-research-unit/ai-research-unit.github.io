@@ -23,7 +23,7 @@ The bookkeeping is quoted once. With $t'$ the time and $r'_t=c\,t'$ the material
 $$
 \partial_{t'}\longmapsto-i\omega,
 \qquad
-\partial_\imath\longmapsto i\nu_{\Phi,k},
+\partial_{\imath}\longmapsto i\nu_{\Phi,k},
 \qquad
 i \frac{h}{2\pi}\,\partial_{t'}\longmapsto hf_{\mathrm{frq}},
 \qquad
@@ -121,7 +121,7 @@ The count. Over one hundred draws: all four roots real in $32$ draws for $\vec e
 
 A first-order equation has no dispersion surface. The symbol depends on $\omega$ alone, because the constant setting carries no spatial derivative. Its zero set is therefore a subset of the real line, not a hypersurface in $(\omega,\vec\nu_\Phi)$.
 
-The contrast is with the second-order case. The Klein–Gordon symbol is $\nu_t'^{2}-\nu_{\Phi}^{2}-\nu_m^{2}$ with $2\pi\nu_t'=\omega/c$, and its zero set is a two-sheeted hyperboloid in four variables. The Dirac symbol's determinant is a power of the same quadric. Those equations have a mass shell; this one has two frequencies, and the polar companion draws the same conclusion from the absence of a second time derivative.
+The contrast is with the second-order case. The Klein–Gordon symbol is $\nu_t'{}^{2}-\nu_{\Phi}^{2}-\nu_m^{2}$ with $2\pi\nu_t'=\omega/c$, and its zero set is a two-sheeted hyperboloid in four variables. The Dirac symbol's determinant is a power of the same quadric. Those equations have a mass shell; this one has two frequencies, and the polar companion draws the same conclusion from the absence of a second time derivative.
 
 What replaces the shell is a definition. The dispersion relation of a first-order equation defines the frequency rather than constraining the field. Given $\vec\nu_\Phi$, the equation returns $\omega$; nothing is required of the initial data beyond the field's value at one time.
 

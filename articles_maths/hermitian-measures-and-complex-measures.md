@@ -165,8 +165,7 @@ Consequently $\mu$ is Hermitian if and only if its transform is a Hermitian func
 $\hat\mu(-\zeta)=\overline{\hat\mu(\zeta)}$, and $\mu$ is anti-Hermitian if and only if $\hat\mu$ is odd, with
 $\hat\mu(-\zeta)=-\overline{\hat\mu(\zeta)}$.
 
-**Proof.** $\widehat{\bar\mu}(\zeta)=\int \exp(-2\pi ix\cdot\zeta)d\bar\mu(x)
-=\overline{\int \exp(2\pi ix\cdot\zeta)d\mu(x)}=\overline{\hat\mu(-\zeta)}$ by the conjugation of the integral and
+**Proof.** $\widehat{\bar\mu}(\zeta)=\int \exp(-2\pi ix\cdot\zeta)d\bar\mu(x) =\overline{\int \exp(2\pi ix\cdot\zeta)d\mu(x)}=\overline{\hat\mu(-\zeta)}$ by the conjugation of the integral and
 the sign change $x\mapsto-x$. The Hermitian condition $\hat\mu=\widehat{\bar\mu}$ is then the stated
 symmetry.
 

@@ -193,7 +193,7 @@ Equivalently it is the fixed-point set of a conjugate-linear involution $\sigma$
 The real span of the six generators with the brackets of the table **with the sign of the boost–boost block reversed**,
 
 $$
-[K_i,K_j]=+J_\imath,
+[K_i,K_j]=+J_{\imath},
 $$
 
 is $\mathfrak{so}(4)\cong\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, of real dimension six and compact. Its Killing form is negative definite, its Cartan is compact, its roots are imaginary, and every finite-dimensional representation is equivalent to a unitary one.
@@ -203,7 +203,7 @@ is $\mathfrak{so}(4)\cong\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, of real dimens
 The real span of the same six with
 
 $$
-[K_i,K_j]=-J_\imath
+[K_i,K_j]=-J_{\imath}
 $$
 
 is $\mathfrak{so}(1,3)\cong\mathfrak{sl}(2,\mathbb{C})$ read as a real algebra. Its Killing form has inertia $(3,3)$, its Cartan has one compact and one non-compact direction, and *as a real algebra it is simple*: it is not a direct sum of two real three-dimensional algebras. This is the form of this block.

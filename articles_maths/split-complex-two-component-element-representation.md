@@ -166,7 +166,7 @@ In the idempotent basis the same two lines appear as the diagonals $(t,t)$ and $
 The norm of $Q = q+j q'$ in coordinates is
 
 $$
-\boxed{\; \langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2 \;},
+\boxed{\; \langle Q\rangle_{*} = Q\bar Q = q^2 - q'{}^2 \;},
 $$
 
 the difference of the two squares of the coordinates. Its polarisation is the symmetric bilinear form
@@ -188,7 +188,7 @@ with matrix $\operatorname{diag}(1, -1)$ and inertia $(1,1)$. So the coefficient
 Restricted to the two fixed-point subspaces the norm is definite:
 
 $$
-\boxed{\; \langle\cdot\rangle_{*}\big|_{\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}}(q) = q^2 \quad (\text{positive definite}), \qquad \langle\cdot\rangle_{*}\big|_{j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}}(q') = -q'^2 \quad (\text{negative definite}) \;},
+\boxed{\; \langle\cdot\rangle_{*}\big|_{\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}}(q) = q^2 \quad (\text{positive definite}), \qquad \langle\cdot\rangle_{*}\big|_{j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}}(q') = -q'{}^2 \quad (\text{negative definite}) \;},
 $$
 
 so the real axis is positive definite and the split imaginary axis negative definite. This is the coordinate statement, made in *Norm and Invertibility in the General Split-Complex Algebra*, that the null cone meets each eigenspace only at the origin. In the idempotent coordinates the same form is the product $\langle Q\rangle_{*} = Q_+Q_-$, which vanishes exactly when one coordinate vanishes.
@@ -196,10 +196,10 @@ so the real axis is positive definite and the split imaginary axis negative defi
 **Comparison with the complex case.** For $\mathbb{C}$ the norm is
 
 $$
-\langle Q\rangle_{*} = Q\bar Q = q^2 + q'^2,
+\langle Q\rangle_{*} = Q\bar Q = q^2 + q'{}^2,
 $$
 
-the **sum** of the two squares: positive definite, so the complex coefficient plane carries a Euclidean, not a Lorentzian, structure. It is again the single sign of the product rule that produces the difference: the square $i^2 = -1$ turns the $q'^2$ term of $q^2+q'^2$ into $-q'^2$ in the split case, and the definite form becomes the indefinite one.
+the **sum** of the two squares: positive definite, so the complex coefficient plane carries a Euclidean, not a Lorentzian, structure. It is again the single sign of the product rule that produces the difference: the square $i^2 = -1$ turns the $q'{}^2$ term of $q^2+q'{}^2$ into $-q'{}^2$ in the split case, and the definite form becomes the indefinite one.
 
 ## The Two-Component Opposite of the Complex Two-Component Element Representation
 
@@ -211,7 +211,7 @@ The complex field and the split-complex algebra are the two two-dimensional real
 | product rule | $(q b-q' b', \, q b'+q' b)$ | $(q b+q' b', \, q b'+q' b)$ |
 | conjugation in coordinates | $(q,-q')$ | $(q,-q')$ |
 | fixed / anti-fixed subspaces | $\mathbb{R}$ and $i\mathbb{R}$ | $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ and $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ |
-| norm | $q^2+q'^2$, positive definite | $q^2-q'^2$, inertia $(1,1)$ |
+| norm | $q^2+q'{}^2$, positive definite | $q^2-q'{}^2$, inertia $(1,1)$ |
 | isotropic set | $\{0\}$ | the two lines $q = \pm q'$ |
 | zero divisors | none | the two idempotent lines |
 | idempotents beyond $0,1$ | none | $\Pi_\pm$ |
@@ -223,7 +223,7 @@ The two realizations share their coefficient space, their column and row, their 
 
 A split-complex number $Q = q+j q'$ is realized as its two-component vector $(q, q')$ in $\mathbb{R}^2$, with column $\begin{pmatrix} q \\ q' \end{pmatrix}$ and dual row $(q, q')$; the map to $\mathbb{R}^2$ is an isomorphism of real vector spaces, and the component space is the algebra itself as a coordinate space. The product in components is $(QB)_0 = q b+q' b'$, $(QB)_1 = q b'+q' b$, differing from the complex product rule in the single sign of the $q' b'$ term; the left multiplication operator is the regular matrix $\begin{pmatrix} q & q' \\ q' & q \end{pmatrix}$ of *Split-Complex Regular Element Representation*.
 
-The conjugation is the reflection $(q,q') \mapsto (q,-q')$, with fixed subspace the real axis and anti-fixed subspace the split imaginary axis. The norm is $q^2-q'^2$, indefinite of inertia $(1,1)$ with isotropic set the two lines $q = \pm q'$; restricted to the real axis it is positive definite and to the split imaginary axis negative definite. In the idempotent coordinates the same form is $Q_+Q_-$ and the conjugation swaps the two coordinates. The complex field shares the coefficient space, the conjugation, the column and row picture and the second component of the product, and differs only in the sign of the $q' b'$ term of the first component; that sign is the whole difference between the definite two-component algebra and the indefinite one, between a field and a ring with zero divisors.
+The conjugation is the reflection $(q,q') \mapsto (q,-q')$, with fixed subspace the real axis and anti-fixed subspace the split imaginary axis. The norm is $q^2-q'{}^2$, indefinite of inertia $(1,1)$ with isotropic set the two lines $q = \pm q'$; restricted to the real axis it is positive definite and to the split imaginary axis negative definite. In the idempotent coordinates the same form is $Q_+Q_-$ and the conjugation swaps the two coordinates. The complex field shares the coefficient space, the conjugation, the column and row picture and the second component of the product, and differs only in the sign of the $q' b'$ term of the first component; that sign is the whole difference between the definite two-component algebra and the indefinite one, between a field and a ring with zero divisors.
 
 ## Summary of Notation
 
@@ -240,7 +240,7 @@ The conjugation is the reflection $(q,q') \mapsto (q,-q')$, with fixed subspace 
 | $C = \operatorname{diag}(1,-1)$ | Matrix of the conjugation |
 | $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}} = \{(q,0)\}$ | Fixed subspace, real axis |
 | $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}} = \{(0,q')\}$ | Anti-fixed subspace, split imaginary axis |
-| $\langle Q\rangle_{*} = q^2-q'^2$ | Norm, inertia $(1,1)$ |
+| $\langle Q\rangle_{*} = q^2-q'{}^2$ | Norm, inertia $(1,1)$ |
 | $g(Q,B) = q b-q' b'$ | Polarised form |
 | $(Q_+, Q_-) = (q+q', q-q')$ | Idempotent coordinates |
 

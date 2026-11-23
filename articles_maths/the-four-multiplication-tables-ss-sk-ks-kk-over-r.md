@@ -50,7 +50,7 @@ $$
 KK'=\underbrace{\tfrac12(KK'+K'K)}_{\in\operatorname{Sym}_n}+\underbrace{\tfrac12(KK'-K'K)}_{\in\operatorname{Skew}_n},
 $$
 
-by the same computation with a sign: $(KK'+K'K)^{\mathsf T}=K'^{\mathsf T}K^{\mathsf T}+K^{\mathsf T}K'^{\mathsf T}=K'K+KK'$, and the difference is antisymmetric. Measured on $100$ random pairs at $n=2,3,4$, the symmetric part is symmetric in every case and the antisymmetric part antisymmetric in every case.
+by the same computation with a sign: $(KK'+K'K)^{\mathsf T}=K'{}^{\mathsf T}K^{\mathsf T}+K^{\mathsf T}K'{}^{\mathsf T}=K'K+KK'$, and the difference is antisymmetric. Measured on $100$ random pairs at $n=2,3,4$, the symmetric part is symmetric in every case and the antisymmetric part antisymmetric in every case.
 
 **The structure of the two formulas is identical and the meaning is different.** In $SS'$ the symmetric part is the anticommutator of two symmetric matrices and the antisymmetric part is their commutator; in $KK'$ the same two words appear with the same roles. What changes is the sign of the square: $S^{2}$ is symmetric and positive semidefinite, while $K^{2}$ is symmetric and negative semidefinite.
 

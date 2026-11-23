@@ -56,7 +56,7 @@ where $\tilde{Q}^{\natural}$ is the quaternion conjugate.
 Writing $Q_\mu = q_\mu + j q'_\mu$ and using $j^2 = +1$,
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 + q'^2_\mu) + 2j \sum_{\mu\in\{t,x,y,z\}} q_\mu q'_\mu.
+\langle\tilde{Q}\rangle_{\natural} = \sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 + q'{}^2_\mu) + 2j \sum_{\mu\in\{t,x,y,z\}} q_\mu q'_\mu.
 $$
 
 So the real part of the split-biquaternion norm is the sum of the squares of all eight real components, and the split part is twice the inner product of the real and split parts. This is the **same structure** as in the biquaternion case, with $j$ in place of $i$. The difference is the sign of the square of the extra unit: $j^2 = +1$ versus $i^2 = -1$.
@@ -130,21 +130,21 @@ $$
 Writing $Q_\mu = q_\mu + jq'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$,
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = R(\tilde{Q}) + j\,I(\tilde{Q}), \qquad R(\tilde{Q}) = \sum_\mu (q_\mu^2 + q'^2_\mu), \quad I(\tilde{Q}) = 2\sum_\mu q_\mu q'_\mu.
+\langle\tilde{Q}\rangle_{\natural} = R(\tilde{Q}) + j\,I(\tilde{Q}), \qquad R(\tilde{Q}) = \sum_\mu (q_\mu^2 + q'{}^2_\mu), \quad I(\tilde{Q}) = 2\sum_\mu q_\mu q'_\mu.
 $$
 
 **Proposition.** For the quaternionic norm, the form $R$ is the Euclidean form, positive definite of inertia $(8,0)$, and the form $I$ pairs each real coordinate with its split partner, non-degenerate of inertia $(4,4)$. The real part of the Hermitian form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, written $g$ in the geometry articles, is non-degenerate of inertia $(4,4)$; the real part of the Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ has the same inertia.
 
-**Proof.** $R$ is a sum of squares of the eight real coordinates. $I$ has the matrix with two $4\times 4$ off-diagonal blocks $I_4$, of inertia $(4,4)$. The real part of the Hermitian form is non-degenerate of inertia $(4,4)$ as established in *Split-Biquaternion Rotations and the Lorentz Group*. The Krein norm reduces to the explicit real form $q_t^2-q'^2_t-\sum_k(q_k^2-q'^2_k)$, of the same inertia.
+**Proof.** $R$ is a sum of squares of the eight real coordinates. $I$ has the matrix with two $4\times 4$ off-diagonal blocks $I_4$, of inertia $(4,4)$. The real part of the Hermitian form is non-degenerate of inertia $(4,4)$ as established in *Split-Biquaternion Rotations and the Lorentz Group*. The Krein norm reduces to the explicit real form $q_t^2-q'{}^2_t-\sum_k(q_k^2-q'{}^2_k)$, of the same inertia.
 
 For the two split-complex-valued norms the table gives the real part and its inertia. The four norms restricted to the four distinguished subspaces are:
 
 | Subspace | Condition | $\langle\cdot\rangle$ | $\langle\cdot\rangle_{\natural}$ | $\langle\cdot\rangle_{*}$ | $\langle\cdot\rangle_{\natural*}$ |
 |---|---|---|---|---|---|
-| $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | $Q_x=Q_y=Q_z=0$ | $q_t^2 + q'^2_t$ $(2,0)$ | $q_t^2 + q'^2_t$ $(2,0)$ | $q_t^2 - q'^2_t$ $(1,1)$ | $q_t^2 - q'^2_t$ $(1,1)$ |
+| $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | $Q_x=Q_y=Q_z=0$ | $q_t^2 + q'{}^2_t$ $(2,0)$ | $q_t^2 + q'{}^2_t$ $(2,0)$ | $q_t^2 - q'{}^2_t$ $(1,1)$ | $q_t^2 - q'{}^2_t$ $(1,1)$ |
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $q'_\mu = 0$ | $q_t^2 - \sum_k q_k^2$ $(1,3)$ | $\sum_\mu q_\mu^2$ $(4,0)$ | $\sum_\mu q_\mu^2$ $(4,0)$ | $q_t^2 - \sum_k q_k^2$ $(1,3)$ |
-| $\mathbb{B}_{\Psi}$ | $q'_t = 0$, $q_k = 0$ | $q_t^2 - \sum_k q'^2_k$ $(1,3)$ | $q_t^2 + \sum_k q'^2_k$ $(4,0)$ | $q_t^2 - \sum_k q'^2_k$ $(1,3)$ | $q_t^2 + \sum_k q'^2_k$ $(4,0)$ |
-| $\mathbb{B}_{\Phi}$ | $q_t = 0$, $q'_k = 0$ | $q'^2_t - \sum_k q_k^2$ $(1,3)$ | $q'^2_t + \sum_k q_k^2$ $(4,0)$ | $-q'^2_t + \sum_k q_k^2$ $(3,1)$ | $-q'^2_t - \sum_k q_k^2$ $(0,4)$ |
+| $\mathbb{B}_{\Psi}$ | $q'_t = 0$, $q_k = 0$ | $q_t^2 - \sum_k q'{}^2_k$ $(1,3)$ | $q_t^2 + \sum_k q'{}^2_k$ $(4,0)$ | $q_t^2 - \sum_k q'{}^2_k$ $(1,3)$ | $q_t^2 + \sum_k q'{}^2_k$ $(4,0)$ |
+| $\mathbb{B}_{\Phi}$ | $q_t = 0$, $q'_k = 0$ | $q'{}^2_t - \sum_k q_k^2$ $(1,3)$ | $q'{}^2_t + \sum_k q_k^2$ $(4,0)$ | $-q'{}^2_t + \sum_k q_k^2$ $(3,1)$ | $-q'{}^2_t - \sum_k q_k^2$ $(0,4)$ |
 
 On the centre $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ every norm is a norm of the single split complex scalar $Q_t$: the plain and the quaternionic norms are both $Q_t^2$, and the Hermitian and the Krein norms are both $Q_t\bar Q_t$. On the quaternion subspace and on the two Hermitian sectors the quaternionic norm is positive definite of inertia $(4,0)$, the plain norm is Lorentzian of inertia $(1,3)$, and the Hermitian and the Krein forms exchange their roles: the Hermitian form is $(1,3)$ on $\mathbb{B}_{\Psi}$ and $(3,1)$ on $\mathbb{B}_{\Phi}$, while the Krein form is $(4,0)$ on $\mathbb{B}_{\Psi}$ and $(0,4)$ on $\mathbb{B}_{\Phi}$.
 
@@ -155,7 +155,7 @@ On the centre $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ every norm i
 **The Hermitian form** is the sesquilinear form of the corpus, with the star in the second slot:
 
 $$
-\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_\mu Q_{1\mu}\bar Q_{2\mu}, \qquad \langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu Q_\mu\bar Q_\mu=\sum_\mu(q_\mu^2-q'^2_\mu),
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_\mu Q_{1\mu}\bar Q_{2\mu}, \qquad \langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu Q_\mu\bar Q_\mu=\sum_\mu(q_\mu^2-q'{}^2_\mu),
 $$
 
 where $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$ is the Hermitian conjugate and $\bar Q_\mu = q_\mu - j q'_\mu$ is the split complex conjugate. The form is linear in the first slot and split-antilinear in the second, and Hermitian, $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\overline{\langle\tilde Q_2,\tilde Q_1\rangle_{*}}$. The geometry articles write it $g$.
@@ -164,7 +164,7 @@ where $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$ is the Hermitian conjugate
 
 - The norm $\langle\tilde Q\rangle_{*}$ is real, the difference between the sum of the squares of the real parts and the sum of the squares of the split parts; the full product $\tilde{Q} \tilde{Q}^{*}$ need not be real.
 - The norm is **not positive-definite**: it can be positive, negative, or zero. Its inertia is $(4, 4)$ on the eight-dimensional real space $\mathbb{B}_{\mathrm{spl}}$.
-- The product $\tilde{Q} \tilde{Q}^{*}$ vanishes exactly when one of the idempotent components vanishes, that is on the union of two four-dimensional subspaces; the norm vanishes on the quadric hypersurface $\sum_\mu q_\mu^2 = \sum_\mu q'^2_\mu$, of dimension $7$.
+- The product $\tilde{Q} \tilde{Q}^{*}$ vanishes exactly when one of the idempotent components vanishes, that is on the union of two four-dimensional subspaces; the norm vanishes on the quadric hypersurface $\sum_\mu q_\mu^2 = \sum_\mu q'{}^2_\mu$, of dimension $7$.
 - It is **not multiplicative**: neither $\tilde{Q} \tilde{Q}^{*}$ nor $\langle\tilde Q\rangle_{*}$ satisfies a product formula.
 
 ### The Inertia
@@ -181,7 +181,7 @@ So the Hermitian norm is the difference of two positive-definite forms, each of 
 The Hermitian norm vanishes when
 
 $$
-\sum_{\mu\in\{t,x,y,z\}} q_\mu^2 = \sum_{\mu\in\{t,x,y,z\}} q'^2_\mu.
+\sum_{\mu\in\{t,x,y,z\}} q_\mu^2 = \sum_{\mu\in\{t,x,y,z\}} q'{}^2_\mu.
 $$
 
 This is a quadric hypersurface of dimension $7$ in $\mathbb{B}_{\mathrm{spl}} \cong \mathbb{R}^8$, the analogue of the null cone of a Lorentzian four-space, with inertia $(4, 4)$ instead of $(1, 3)$.
@@ -219,7 +219,7 @@ $$
 linear in the first slot and split-antilinear in the second, and Hermitian. At equal arguments,
 
 $$
-\langle\tilde Q\rangle_{\natural*}=Q_t\bar Q_t-\sum_k Q_k\bar Q_k=\sum_\mu\epsilon_\mu(q_\mu^2-q'^2_\mu),\qquad (\epsilon_t,\epsilon_x,\epsilon_y,\epsilon_z)=(+1,-1,-1,-1),
+\langle\tilde Q\rangle_{\natural*}=Q_t\bar Q_t-\sum_k Q_k\bar Q_k=\sum_\mu\epsilon_\mu(q_\mu^2-q'{}^2_\mu),\qquad (\epsilon_t,\epsilon_x,\epsilon_y,\epsilon_z)=(+1,-1,-1,-1),
 $$
 
 which is real of inertia $(4,4)$. It is the $\natural$-partner of the Hermitian form: on $\mathbb{B}_{\Psi}$ it is positive definite of inertia $(4,0)$, where the Hermitian form is Lorentzian of inertia $(1,3)$, and on $\mathbb{B}_{\Phi}$ it is negative definite of inertia $(0,4)$, where the Hermitian form is $(3,1)$.
@@ -244,7 +244,7 @@ The plain and the quaternionic norms are split complex-valued; the Hermitian and
 The **Euclidean norm** of a split biquaternion $\tilde{Q}$ is
 
 $$
-\|\tilde{Q}\| = \sqrt{\sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 + q'^2_\mu)}.
+\|\tilde{Q}\| = \sqrt{\sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 + q'{}^2_\mu)}.
 $$
 
 It is a genuine norm on the real vector space $\mathbb{B}_{\mathrm{spl}} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one.
@@ -254,7 +254,7 @@ It is a genuine norm on the real vector space $\mathbb{B}_{\mathrm{spl}} \cong \
 The Euclidean norm is not the square root of the Hermitian norm, because the Hermitian norm is indefinite. It is also not the modulus of the split-biquaternion norm, because the split-biquaternion norm is split complex and its modulus is
 
 $$
-|\langle\tilde{Q}\rangle_{\natural}| = \sqrt{\left(\sum_\mu (q_\mu^2 + q'^2_\mu)\right)^2 - 4\left(\sum_\mu q_\mu q'_\mu\right)^2},
+|\langle\tilde{Q}\rangle_{\natural}| = \sqrt{\left(\sum_\mu (q_\mu^2 + q'{}^2_\mu)\right)^2 - 4\left(\sum_\mu q_\mu q'_\mu\right)^2},
 $$
 
 which is not the Euclidean norm squared.
@@ -599,11 +599,11 @@ The zero divisors themselves are studied in the article on split biquaternion ze
 | $\langle\tilde Q_1,\tilde Q_2\rangle = \mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Plain form |
 | $\langle\tilde Q\rangle = Q_t^2 - \sum_k Q_k^2$ | Plain norm |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = \sum_\mu Q_{1\mu}\bar Q_{2\mu}$ | Hermitian form, written $g$ in the geometry articles |
-| $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian norm, inertia $(4,4)$ |
+| $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'{}^2_\mu)$ | Hermitian norm, inertia $(4,4)$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*} = Q_{1t}\bar Q_{2t} - \sum_k Q_{1k}\bar Q_{2k}$ | Krein form |
-| $\langle\tilde Q\rangle_{\natural*} = q_t^2 - q'^2_t - \sum_k(q_k^2 - q'^2_k)$ | Krein norm, inertia $(4,4)$ |
+| $\langle\tilde Q\rangle_{\natural*} = q_t^2 - q'{}^2_t - \sum_k(q_k^2 - q'{}^2_k)$ | Krein norm, inertia $(4,4)$ |
 | $\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$ | Reduced norm |
-| $\|\tilde{Q}\| = \sqrt{\sum_\mu (q_\mu^2 + q'^2_\mu)}$ | Euclidean norm |
+| $\|\tilde{Q}\| = \sqrt{\sum_\mu (q_\mu^2 + q'{}^2_\mu)}$ | Euclidean norm |
 | $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | Inverse |
 | ${\mathbb{B}_{\mathrm{spl}}}^\times$ | Group of invertibles |
 | $\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + j)$ | Positive idempotent |

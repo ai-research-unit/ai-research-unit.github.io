@@ -36,7 +36,7 @@ S_n=\frac{1}{1-n}\log\Bigl(2\,\mathrm{Sc}\big(\rho_A^n\big)\Bigr)=\frac{1}{1-n}\
 \qquad
 Z_n=2\,\mathrm{Sc}\big(\rho_A^n\big),
 $$
-and the von Neumann entropy is their limit as $n\to1$. The moments $Z_n$ are called the **replica moments**; $Z_1=1$; $Z_2=2\,\mathrm{Sc}\rho_A^2$ is the purity, $1/Z_2$ being the participation ratio; and the Rényi entropies are non-increasing in $n$, with $S_n\to S_0=\log\mathrm{rank}\,\rho_A$ as $n\to0$ and $S_n\to S_\infty=-\log\eta_\max$ as $n\to\infty$.
+and the von Neumann entropy is their limit as $n\to1$. The moments $Z_n$ are called the **replica moments**; $Z_1=1$; $Z_2=2\,\mathrm{Sc}\rho_A^2$ is the purity, $1/Z_2$ being the participation ratio; and the Rényi entropies are non-increasing in $n$, with $S_n\to S_0=\log\mathrm{rank}\,\rho_A$ as $n\to0$ and $S_n\to S_\infty=-\log\eta_{\max}$ as $n\to\infty$.
 
 ### The Entropy as the Limit of the Rényi Entropies
 
@@ -216,7 +216,7 @@ and the entropies are $S_1=h(1/3)=0.636514$, $S_2=0.587787$, $S_3=0.549306$, $S_
 
 **2. The many-mode replica moments.** For a state of $\mathbb{B}^{\otimes m}$ with a bipartition into several modes, the reduced state has $2^{m_A}$ eigenvalues and the moments are power sums. Do these reproduce, in a regulated chain, the scaling of the field-theoretic entanglement entropy that the area law describes?
 
-**3. The Rényi entropy at $n=0$ and $n=\infty$.** The limits $S_0=\log\mathrm{rank}\,\rho_A$ and $S_\infty=-\log\eta_\max$ are properties of the reduced state's spectrum. In the framework they are the rank and the largest eigenvalue of a biquaternion state; does the zero-divisor boundary give them a distinguished role?
+**3. The Rényi entropy at $n=0$ and $n=\infty$.** The limits $S_0=\log\mathrm{rank}\,\rho_A$ and $S_\infty=-\log\eta_{\max}$ are properties of the reduced state's spectrum. In the framework they are the rank and the largest eigenvalue of a biquaternion state; does the zero-divisor boundary give them a distinguished role?
 
 **4. The swap and the modular Hamiltonian.** The swap operator and the modular Hamiltonian of the first-law companion article are both built from the reduced state. Is there an operator identity relating them at $n=2$, in the spirit of the Rényi entropy's relation to the modular flow at integer $n$?
 
@@ -235,7 +235,7 @@ The framework thus reproduces the replica method exactly in finite dimension, wi
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar part of a product; $\mathrm{Sc}(e_t)=1$ |

@@ -20,10 +20,10 @@ $$
 Q = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z = (a_0+ib_0)e_t + \dots + (a_3+ib_3)\vec e_z ,
 $$
 
-with real $a_\imath,b_\imath$, the scalar imaginary $i^2=-1$, and quaternion units of square $-1$ satisfying
+with real $a_{\imath},b_{\imath}$, the scalar imaginary $i^2=-1$, and quaternion units of square $-1$ satisfying
 
 $$
-\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmathk}\vec e_\imath ,
+\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmath k}\vec e_{\imath} ,
 $$
 
 the standard Hamilton rule. The complex conjugate and the quaternion conjugate are $\bar Q = \bar Q_te_t+\bar Q_x\vec e_x+\bar Q_y\vec e_y+\bar Q_z\vec e_z$ and $Q^{\natural} = Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, and the norm is $\langle Q\rangle_{\natural}=Q Q^{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, which may vanish, so the algebra is not a division algebra. These are the corpus's objects; the algebra and its conjugations are fixed in *Algebra and Element Conventions*, and the two conjugations $\bar\cdot$ and ${}^{\natural}$ with their fixed subspaces are fixed in *The Realification and the Effect of the Change of Scalars*.
@@ -162,7 +162,7 @@ Put in the corpus's conventions, the construction is the following, and it is wo
 
 Three points of the printed algebra are internally inconsistent, and each is reproduced by recomputation against the paper's own rules. They are listed because the corpus records printed defects, not because the paper's final result depends on them; the final result is correct. The interpretation is from the scanned article as extracted, and isolated signs are the least reliable part of such an extraction.
 
-**The product rule against the basis rule.** The basis rule $\vec e_{\imath} \vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\epsilon_{\imath\jmathk}\vec e_\imath$ gives $\vec e_x \vec e_y = \epsilon_{123}\vec e_z = \vec e_z$. The printed product rule is $PQ = P_0Q_t - \vec P\cdot\vec Q + P_0Q + PQ_0 + iP\times Q$, which for $P=\vec e_x$, $Q=\vec e_y$ gives $i\vec e_x\times\vec e_y = i\vec e_z$ instead. The two rules differ by the factor $i$ on the cross term, and they cannot both hold. The recomputation gives $|\vec e_z - \vec e_x \vec e_y| = 0$ from the basis rule and $|i\vec e_z - \vec e_x \vec e_y| = \sqrt2$ from the product rule. The corpus uses the basis rule, which is the standard one.
+**The product rule against the basis rule.** The basis rule $\vec e_{\imath} \vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\epsilon_{\imath\jmath k}\vec e_{\imath}$ gives $\vec e_x \vec e_y = \epsilon_{123}\vec e_z = \vec e_z$. The printed product rule is $PQ = P_0Q_t - \vec P\cdot\vec Q + P_0Q + PQ_0 + iP\times Q$, which for $P=\vec e_x$, $Q=\vec e_y$ gives $i\vec e_x\times\vec e_y = i\vec e_z$ instead. The two rules differ by the factor $i$ on the cross term, and they cannot both hold. The recomputation gives $|\vec e_z - \vec e_x \vec e_y| = 0$ from the basis rule and $|i\vec e_z - \vec e_x \vec e_y| = \sqrt2$ from the product rule. The corpus uses the basis rule, which is the standard one.
 
 **The sign of the imaginary part of the field.** With the printed gradient $\vec\nabla_\Phi = i\partial/\partial r'_t\,e_t+\partial/\partial R_x\,\vec e_x+\partial/\partial R_y\,\vec e_y+\partial/\partial R_z\,\vec e_z$, the equation $\vec\nabla_\Phi F=0$ gives, on a free plane wave, $|\vec\nabla_\Phi F| = 9.4\times10^{-1}$ for the printed $F=\vec E+i\vec B$ against a field scale of $4.8\times10^{-1}$, and $3.3\times10^{-10}$ for $F=\vec E-i\vec B$. The consistent object is therefore $\vec E-i\vec B$, or equivalently the printed $\vec E+i\vec B$ with the conjugate placement of the $i$, $\vec\nabla_\Phi=\partial/\partial r'_t\,e_t+i\vec\nabla_\Phi$, which also gives $3.3\times10^{-10}$. The paper's $\vec E+i\vec B$ with its printed $\vec\nabla_\Phi$ reproduces the two divergence equations but gives $\partial/\partial r'_t\,\vec E=-\mathrm{rot}\,\vec B$ and $\partial/\partial r'_t\,\vec B=+\mathrm{rot}\,\vec E$ in place of the paper's own curl equations; both signs are reversed. The corpus's own field is $\vec N=\vec E+ic\vec B$ with $\vec\nabla_\Phi$ in the $i r'_t$ convention, for which the free equation is $i\partial/\partial r'_t\,\vec N=c\,\mathrm{rot}\,\vec N$, and the two conventions are related by the $\pm i$ that the check exhibits.
 

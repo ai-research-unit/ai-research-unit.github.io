@@ -14,20 +14,20 @@ What is proved here is that at $\nu_m=0$ the label's null cone and the pole set 
 
 ## Conventions and Notation
 
-The element and its two norms. $\tilde Q=Q_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_{\imath}\in\mathbb{C}$, the product fixed by $\vec e_x\vec e_y=\vec e_z$ cyclically and $\vec e_\imath^{2}=-e_t$, with $i$ central. $N(\tilde Q)=\sum_{\imath} Q_{\imath}^{2}$ is the **quaternionic norm**, complex and multiplicative, vanishing exactly on the zero divisors; $\langle\tilde Q\rangle_{*}=\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ is the **Euclidean size**, real and definite. The modulus is the invariant and the size is the frame-dependent number [The Two Scales of the Field](../articles_physics/the-two-scales-of-the-field-the-proper-density-and-the-euclidean-size.html).
+The element and its two norms. $\tilde Q=Q_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_{\imath}\in\mathbb{C}$, the product fixed by $\vec e_x\vec e_y=\vec e_z$ cyclically and $\vec e_{\imath}^{2}=-e_t$, with $i$ central. $N(\tilde Q)=\sum_{\imath} Q_{\imath}^{2}$ is the **quaternionic norm**, complex and multiplicative, vanishing exactly on the zero divisors; $\langle\tilde Q\rangle_{*}=\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ is the **Euclidean size**, real and definite. The modulus is the invariant and the size is the frame-dependent number [The Two Scales of the Field](../articles_physics/the-two-scales-of-the-field-the-proper-density-and-the-euclidean-size.html).
 
 The label. The corpus writes a four-vector with an imaginary time coefficient, $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$, so that
 
 $$
-N(\tilde\Upsilon_\Phi)=-\nu_t'^{2}+\lvert\vec\nu_\Phi\rvert^{2}\in\mathbb{R},
+N(\tilde\Upsilon_\Phi)=-\nu_t'{}^{2}+\lvert\vec\nu_\Phi\rvert^{2}\in\mathbb{R},
 $$
 
-the mass shell being $N(\tilde\Upsilon_\Phi)=-\nu_m^{2}$, that is $\nu_t'^{2}=\lvert\vec\nu_\Phi\rvert^{2}+\nu_m^{2}$ [Four-Vectors and the Interval](four-vectors-and-the-interval.html). $\nu_m$ is the mass in wave-number units, the block's $2\pi\nu_m$. The **label cone** is $N(\tilde\Upsilon_\Phi)=0$, that is $\nu_t'=\lvert\vec\nu_\Phi\rvert$.
+the mass shell being $N(\tilde\Upsilon_\Phi)=-\nu_m^{2}$, that is $\nu_t'{}^{2}=\lvert\vec\nu_\Phi\rvert^{2}+\nu_m^{2}$ [Four-Vectors and the Interval](four-vectors-and-the-interval.html). $\nu_m$ is the mass in wave-number units, the block's $2\pi\nu_m$. The **label cone** is $N(\tilde\Upsilon_\Phi)=0$, that is $\nu_t'=\lvert\vec\nu_\Phi\rvert$.
 
 The two symbols. The scalar rung's operator $\Box_\Phi-4\pi^{2}\nu_m^{2}$ has the scalar symbol
 
 $$
-\mathcal N(\tilde\Upsilon_\Phi)=\nu_t'^{2}-\lvert\vec\nu_\Phi\rvert^{2}-\nu_m^{2},
+\mathcal N(\tilde\Upsilon_\Phi)=\nu_t'{}^{2}-\lvert\vec\nu_\Phi\rvert^{2}-\nu_m^{2},
 $$
 
 which is the single number the propagator inverts, and which equals $-N(\tilde\Upsilon_\Phi)-\nu_m^{2}$ by the definition of the label's norm. The two glyphs are visually close and are different objects: $N$ is the quaternionic norm of an element, script $\mathcal N$ is the symbol of an operator, and the sign between them is a minus. A reader who drops the script from $\mathcal N$ sees the self-reference $\mathcal N=-N-4\pi^{2}\nu_m^{2}$ where there is none, so the definition is given above in components and the relation to $N$ second.
@@ -366,8 +366,8 @@ The label chart's failure is a projection and not a divergence. Its least-square
 | $\langle\tilde Q\rangle_{*}$ | the Euclidean size, $\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ |
 | $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | the label, with imaginary time coefficient |
 | $\nu_m$ | the mass in wave-number units, the block's $2\pi\nu_m$ |
-| $N(\tilde\Upsilon_\Phi)=-\nu_t'^{2}+\lvert\vec\nu_\Phi\rvert^{2}$ | the label's norm (plain $N$); the mass shell is $-\nu_m^{2}$ |
-| $\mathcal N(\tilde\Upsilon_\Phi)$ | the scalar symbol (script $\mathcal N$), $\nu_t'^{2}-\lvert\vec\nu_\Phi\rvert^{2}-\nu_m^{2}$, equal to $-N-\nu_m^{2}$ |
+| $N(\tilde\Upsilon_\Phi)=-\nu_t'{}^{2}+\lvert\vec\nu_\Phi\rvert^{2}$ | the label's norm (plain $N$); the mass shell is $-\nu_m^{2}$ |
+| $\mathcal N(\tilde\Upsilon_\Phi)$ | the scalar symbol (script $\mathcal N$), $\nu_t'{}^{2}-\lvert\vec\nu_\Phi\rvert^{2}-\nu_m^{2}$, equal to $-N-\nu_m^{2}$ |
 | $\Sigma(\tilde\Upsilon_\Phi)$ | the algebra-valued symbol of the first-order rung |
 | $L_{\tilde Q}$ | left multiplication by $\tilde Q$ as a real map on eight coordinates |
 | $\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id},-}$ | $\tfrac12(e_t\pm i\vec u)$, idempotents on the value cone |
@@ -421,9 +421,9 @@ Claim. $\tilde\Pi_{\mathrm{id}}\mathbb{B}\subseteq\{\tilde Q: N(\tilde Q)=0\}$, 
 
 ### The Scalar Symbol at the Corner
 
-Claim. The scalar symbol $\mathcal N(\tilde\Upsilon_\Phi)=\nu_t'^{2}-\lvert\vec\nu_\Phi\rvert^{2}-\nu_m^{2}$ vanishes on the label cone exactly when $\nu_m=0$, and equals $-\nu_m^{2}$ there otherwise.
+Claim. The scalar symbol $\mathcal N(\tilde\Upsilon_\Phi)=\nu_t'{}^{2}-\lvert\vec\nu_\Phi\rvert^{2}-\nu_m^{2}$ vanishes on the label cone exactly when $\nu_m=0$, and equals $-\nu_m^{2}$ there otherwise.
 
-*Proof.* On the cone $\nu_t'^{2}=\lvert\vec\nu_\Phi\rvert^{2}$, so $\mathcal N=-4\pi^{2}\nu_m^{2}$. A central element $-\nu_m^{2}e_t$ is invertible whenever $\nu_m\neq0$, its inverse being $(-1/\nu_m^{2})e_t$, so $L$ has rank eight; and at $\nu_m=0$ the symbol is the zero element and $L$ has rank zero. This is why the scalar rung loses the whole operator and the first-order rung only half of it.
+*Proof.* On the cone $\nu_t'{}^{2}=\lvert\vec\nu_\Phi\rvert^{2}$, so $\mathcal N=-4\pi^{2}\nu_m^{2}$. A central element $-\nu_m^{2}e_t$ is invertible whenever $\nu_m\neq0$, its inverse being $(-1/\nu_m^{2})e_t$, so $L$ has rank eight; and at $\nu_m=0$ the symbol is the zero element and $L$ has rank zero. This is why the scalar rung loses the whole operator and the first-order rung only half of it.
 
 ### The Numerical Checks
 

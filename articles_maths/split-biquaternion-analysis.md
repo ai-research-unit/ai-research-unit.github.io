@@ -34,7 +34,7 @@ with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{\mathrm{id},1,2} \in \mathbb{H}$ ordi
 The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$ is a real vector space of dimension $8$. The **Euclidean norm** is
 
 $$
-\|\tilde{Q}\| = \sqrt{\sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 + q'^2_\mu)}.
+\|\tilde{Q}\| = \sqrt{\sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 + q'{}^2_\mu)}.
 $$
 
 It is a genuine norm on the real vector space $\mathbb{B}_{\mathrm{spl}} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one. It satisfies

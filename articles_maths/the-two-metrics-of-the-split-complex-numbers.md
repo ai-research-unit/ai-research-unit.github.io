@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The split-complex space carries two distinguished forms (*The Two Forms and the Two Algebraic Norms of the Split-Complex Space*), and each of them induces a distance-like function on the one underlying plane. The **Euclidean metric** comes from the realification of the bilinear form $\langle\cdot,\cdot\rangle$, and the **indefinite metric** from the realification of the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, whose diagonal is the norm $\langle Q\rangle_{*}=q^{2}-q'^{2}$. This article defines both, computes their Gram matrices and inertias in the real basis $1$, $j$, reads their level sets and the null cone of the indefinite one, and identifies the group of linear maps preserving each. The two functions are then compared: they are the two real quadratic forms of a form pair, one definite and one indefinite, carried by one and the same space.
+The split-complex space carries two distinguished forms (*The Two Forms and the Two Algebraic Norms of the Split-Complex Space*), and each of them induces a distance-like function on the one underlying plane. The **Euclidean metric** comes from the realification of the bilinear form $\langle\cdot,\cdot\rangle$, and the **indefinite metric** from the realification of the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, whose diagonal is the norm $\langle Q\rangle_{*}=q^{2}-q'{}^{2}$. This article defines both, computes their Gram matrices and inertias in the real basis $1$, $j$, reads their level sets and the null cone of the indefinite one, and identifies the group of linear maps preserving each. The two functions are then compared: they are the two real quadratic forms of a form pair, one definite and one indefinite, carried by one and the same space.
 
 The word **metric** is used in the sense of the menu, for the quadratic function a form induces on the difference of two elements. Only the Euclidean one is a metric in the strict sense; the indefinite one is named a metric by the same convention, and the difference is stated where it occurs.
 
@@ -21,7 +21,7 @@ $$
 the first the multiplication of the commutative ring, symmetric, and the second the derived operation of the algebra with its involution $j\mapsto-j$, conjugate-symmetric; both are $\mathbb{C}_{\mathrm{spl}}$-linear in the first slot and both have Gram matrix $[1]$ over $\mathbb{C}_{\mathrm{spl}}$ (*The Two Forms and the Two Algebraic Norms of the Split-Complex Space*). Their diagonals are the two algebraic norms,
 
 $$
-\langle Q,Q\rangle=Q^{2}, \qquad \langle Q,Q\rangle_{*}=Q\bar Q=q^{2}-q'^{2}=\langle Q\rangle_{*},
+\langle Q,Q\rangle=Q^{2}, \qquad \langle Q,Q\rangle_{*}=Q\bar Q=q^{2}-q'{}^{2}=\langle Q\rangle_{*},
 $$
 
 the first $\mathbb{C}_{\mathrm{spl}}$-valued and anisotropic, vanishing only at the origin, the second real and indefinite, vanishing on the two null lines.
@@ -179,7 +179,7 @@ The two metrics are the two readings of the two forms and satisfy $d_{B}^{2}-d_{
 | $Q=q+jq'$, $C=c+jc'$ | two elements of $\mathbb{C}_{\mathrm{spl}}$, with $q,q',c,c'\in\mathbb{R}$ |
 | $\bar Q=q-jq'$ | the conjugation, the involution $j\mapsto-j$ |
 | $\langle Q,C\rangle=QC$ | general plain bilinear form; Gram matrix $[1]$ over $\mathbb{C}_{\mathrm{spl}}$; diagonal $\langle Q\rangle=Q^{2}$, anisotropic |
-| $\langle Q,C\rangle_{*}=Q\bar C$ | general plain Hermitian form; Gram matrix $[1]$ over $\mathbb{C}_{\mathrm{spl}}$; diagonal $\langle Q\rangle_{*}=q^{2}-q'^{2}$, indefinite |
+| $\langle Q,C\rangle_{*}=Q\bar C$ | general plain Hermitian form; Gram matrix $[1]$ over $\mathbb{C}_{\mathrm{spl}}$; diagonal $\langle Q\rangle_{*}=q^{2}-q'{}^{2}$, indefinite |
 | $\operatorname{Re}\langle Q,C\rangle=qc+q'c'$ | the realified bilinear form, the Euclidean form $\langle Q,C\rangle$; Gram matrix $\mathrm{I}_{2}$; inertia $(2,0)$ |
 | $\operatorname{Re}\langle Q,C\rangle_{*}=qc-q'c'$ | the realified Hermitian form, the polarisation $g$; Gram matrix $\operatorname{diag}(1,-1)$; inertia $(1,1)$ |
 | $d_{B}^{2}(Q,C)=\lVert Q-C\rVert^{2}$ | Euclidean metric; positive definite; level sets the circles |

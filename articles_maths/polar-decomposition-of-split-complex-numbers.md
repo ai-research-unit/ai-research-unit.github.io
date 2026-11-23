@@ -27,14 +27,14 @@ The exponential and the logarithm are those of *Split-Complex Elementary Functio
 
 The shape of the formula is forced by the image of the exponential. In $\mathbb{C}$ the exponential is onto $\mathbb{C}^\times$, so every nonzero $Q$ is $\exp(Q_{\log})$. In $\mathbb{C}_{\mathrm{spl}}$ the exponential is injective and its image is the future cone $F=\{Q:q>\lvert q'\rvert\}$ (*Split-Complex Elementary Functions*, §*The Exponential*). A logarithm therefore exists exactly on $F$, and nowhere else. The four elements $\epsilon\in\{\pm1,\pm j\}$ permute the four components of ${\mathbb{C}_{\mathrm{spl}}}^\times$, and exactly one of the four products $\epsilon Q$ lies in $F$ (§*The Four Components*). The exponent is the logarithm of that product, and the discrete factor $\epsilon$ records the component of $Q$. It is not a period: the exponential has trivial kernel.
 
-The element $Q_{\log}$ is the logarithm of $\epsilon Q$, the element that is exponentiated: $\exp(Q_{\log})=\epsilon Q$. It is a logarithm of $Q$ itself exactly when $\epsilon=1$. In coordinates, with $\langle Q\rangle_{*}=q^2-q'^2$, the logarithm formula of *Split-Complex Elementary Functions*, §*The Logarithm*, applied to $\epsilon Q$, gives one branch on the two timelike components and one on the two spacelike components. The two coordinates, their formulas and their roles are tabulated in §*The Exponent and Its Components*.
+The element $Q_{\log}$ is the logarithm of $\epsilon Q$, the element that is exponentiated: $\exp(Q_{\log})=\epsilon Q$. It is a logarithm of $Q$ itself exactly when $\epsilon=1$. In coordinates, with $\langle Q\rangle_{*}=q^2-q'{}^2$, the logarithm formula of *Split-Complex Elementary Functions*, §*The Logarithm*, applied to $\epsilon Q$, gives one branch on the two timelike components and one on the two spacelike components. The two coordinates, their formulas and their roles are tabulated in §*The Exponent and Its Components*.
 
 **The result.** The decomposition reads as follows.
 
 | Item | Value |
 |---|---|
 | Algebra | $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]/(j^{2}-1)$ |
-| Domain | ${\mathbb{C}_{\mathrm{spl}}}^{\times}=\{Q:\langle Q\rangle_{*}=q^{2}-q'^{2}\neq0\}$ |
+| Domain | ${\mathbb{C}_{\mathrm{spl}}}^{\times}=\{Q:\langle Q\rangle_{*}=q^{2}-q'{}^{2}\neq0\}$ |
 | Decomposition | $Q=\epsilon\exp(Q_{\log})=\varrho\,\epsilon\exp(\theta j)$ |
 | Parameters | $\varrho=\sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$, $\theta\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$ |
 | Unit factor | $\epsilon\exp(\theta j)=Q/\varrho$, with $\lvert\langle u\rangle_{*}\rvert=1$ |
@@ -129,7 +129,7 @@ The subscript is a label, not an operation: $q_{\log}$ is the real coordinate of
 
 ### The Exponent and Its Components
 
-Let $Q=q+jq'$ lie in the future cone $F$: $q>\lvert q'\rvert$, hence $\langle Q\rangle_{*}=q^2-q'^2>0$. The logarithm of *Split-Complex Elementary Functions*, §*The Logarithm*, gives at once
+Let $Q=q+jq'$ lie in the future cone $F$: $q>\lvert q'\rvert$, hence $\langle Q\rangle_{*}=q^2-q'{}^2>0$. The logarithm of *Split-Complex Elementary Functions*, §*The Logarithm*, gives at once
 
 $$
 Q_{\log}=\tfrac12\ln \langle Q\rangle_{*}+j\operatorname{artanh}\frac{q'}{q},
@@ -262,7 +262,7 @@ The decomposition is defined exactly on ${\mathbb{C}_{\mathrm{spl}}}^\times=\{Q:
 *Split-Complex Elementary Functions*, §*The Logarithm*, gives the image, the injectivity and the inverse: $\exp(\mathbb{C}_{\mathrm{spl}})=F$, the kernel is $\{0\}$, and the inverse on $F$ is the logarithm
 
 $$
-\boxed{\; Q_{\log}=\tfrac12\ln\bigl(q^2-q'^2\bigr)+j\operatorname{artanh}\frac{q'}{q},
+\boxed{\; Q_{\log}=\tfrac12\ln\bigl(q^2-q'{}^2\bigr)+j\operatorname{artanh}\frac{q'}{q},
 \qquad Q=q+jq',\quad q>\lvert q'\rvert \;}
 $$
 
@@ -281,7 +281,7 @@ The logarithm exists on one component of four and nowhere else.
 | Spacelike wedges | $\lvert q'\rvert>\lvert q\rvert$ | none |
 | Null cone | $q=\pm q'$ | none |
 
-The past cone and the spacelike wedges fail because they are the other components, while the image of the exponential is $F$. The null cone is not in ${\mathbb{C}_{\mathrm{spl}}}^\times$: the norm vanishes, and the logarithm diverges rather than jumps. As $q^2-q'^2\to0^+$ inside $F$, for instance, the angle $\operatorname{artanh}(q'/q)\to+\infty$. The principal domain is $F$ itself: the exponential maps $\mathbb{C}_{\mathrm{spl}}$ bijectively onto $F$, so $\exp:\mathbb{C}_{\mathrm{spl}}\to F$ is bijective and $\log:F\to\mathbb{C}_{\mathrm{spl}}$ is its inverse.
+The past cone and the spacelike wedges fail because they are the other components, while the image of the exponential is $F$. The null cone is not in ${\mathbb{C}_{\mathrm{spl}}}^\times$: the norm vanishes, and the logarithm diverges rather than jumps. As $q^2-q'{}^2\to0^+$ inside $F$, for instance, the angle $\operatorname{artanh}(q'/q)\to+\infty$. The principal domain is $F$ itself: the exponential maps $\mathbb{C}_{\mathrm{spl}}$ bijectively onto $F$, so $\exp:\mathbb{C}_{\mathrm{spl}}\to F$ is bijective and $\log:F\to\mathbb{C}_{\mathrm{spl}}$ is its inverse.
 
 ### The Fibre
 
@@ -505,7 +505,7 @@ The coordinates $\ln \varrho$ and $\theta$ are linear, hence harmonic for the in
 
 | Result | Statement |
 |---|---|
-| Domain | $Q\in{\mathbb{C}_{\mathrm{spl}}}^\times$, that is $\langle Q\rangle_{*}=q^2-q'^2\neq0$ |
+| Domain | $Q\in{\mathbb{C}_{\mathrm{spl}}}^\times$, that is $\langle Q\rangle_{*}=q^2-q'{}^2\neq0$ |
 | Decomposition | $Q=\epsilon\exp(Q_{\log})=\varrho\,\epsilon\exp(\theta j)$ |
 | Parameters | $\varrho=\sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$, $\theta\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$ |
 | Unit factor | $\epsilon\exp(\theta j)$ with $\lvert\langle u\rangle_{*}\rvert=1$ |
@@ -526,7 +526,7 @@ The coordinates $\ln \varrho$ and $\theta$ are linear, hence harmonic for the in
 | Quantity | Formula |
 |---|---|
 | Element | $Q=q+jq'$ |
-| Norm | $\langle Q\rangle_{*}=q^2-q'^2$ |
+| Norm | $\langle Q\rangle_{*}=q^2-q'{}^2$ |
 | Exponent | $Q_{\log}=\tfrac12\ln\lvert \langle Q\rangle_{*}\rvert+j\theta$ |
 | Modulus | $\varrho=\sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$ |
 | Unit factor | $\epsilon\exp(\theta j)$ |
@@ -564,7 +564,7 @@ In the matrix picture the exponential of $xI+yK$ is $\exp(x)(\cosh y\,I+\sinh y\
 |---|---|
 | $\mathbb{C}_{\mathrm{spl}}$ | the split-complex algebra, $j^2=+1$ |
 | $Q=q+jq'$ | a split-complex number |
-| $\langle Q\rangle_{*}=q^2-q'^2$ | the norm |
+| $\langle Q\rangle_{*}=q^2-q'{}^2$ | the norm |
 | $\varrho=\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ | the modulus, a positive real |
 | $q_{\log}=\ln \varrho=\tfrac12\ln\lvert \langle Q\rangle_{*}\rvert$ | the logarithmic scale, the real coordinate of the exponent |
 | $q'_{\log}=\theta$ | the hyperbolic angle, or rapidity, the $j$-coordinate of the exponent |

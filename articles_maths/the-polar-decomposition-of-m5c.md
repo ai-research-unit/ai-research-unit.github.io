@@ -79,7 +79,7 @@ where $U$ is a partial isometry with initial space $\overline{\operatorname{ran}
 
 **Theorem.** If $A=UP=U'P'$ with $U,U'$ $*$-unitary and $P,P'$ positive definite, then $U=U'$ and $P=P'$. For a general $A$, the positive part is unique, and the partial isometry with initial space $\operatorname{ran}|A|$ is unique; it is zero on $\ker A$. A unitary extension is determined by an isometry from $\ker A$ onto $(\operatorname{ran}A)^\perp$.
 
-**Proof.** $A^*A=P^2=P'^2$; the positive definite square root is unique, so $P=P'$. Then $UP=U'P$ and $P$ is invertible, so $U=U'$. For a general $A$, $A^*A$ determines $|A|$ uniquely; the canonical $U$ is determined on $\operatorname{ran}|A|$ by $U(|A|x)=Ax$ and is zero on $\ker|A|=\ker A$. A unitary extension is determined on $\ker A$ by an isometry onto $(\operatorname{ran}A)^\perp$.
+**Proof.** $A^*A=P^2=P'{}^2$; the positive definite square root is unique, so $P=P'$. Then $UP=U'P$ and $P$ is invertible, so $U=U'$. For a general $A$, $A^*A$ determines $|A|$ uniquely; the canonical $U$ is determined on $\operatorname{ran}|A|$ by $U(|A|x)=Ax$ and is zero on $\ker|A|=\ker A$. A unitary extension is determined on $\ker A$ by an isometry onto $(\operatorname{ran}A)^\perp$.
 
 **Corollary.** The polar decomposition gives a bijection between $GL_5$ and $U(5)\times\mathcal{P}$, where $\mathcal{P}$ is the cone of positive definite Hermitian matrices.
 

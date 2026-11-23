@@ -31,7 +31,7 @@ Here the coefficients $\lambda_\pm$ are the eigenvalues and the idempotents $\Pi
 | Spinor spaces | $S_\pm=\mathbb{R}\Pi_\pm$, two real lines; one real spinor coordinate per Peirce copy |
 | Group of invertibles | ${\mathbb{C}_{\mathrm{spl}}}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$ |
 
-**Conventions.** The notation is fixed in *Algebra and Element Conventions*: the algebra is $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$, with basis $1,j$, $j^2=+1$, general element $Q=q+jq'$ with $q=\operatorname{Re}Q$ and $q'=\operatorname{Im}Q$, conjugate $\bar Q=q-jq'$, idempotents $\Pi_\pm=\tfrac12(1\pm j)$ and idempotent coordinates $Q_\pm=q\pm q'$, so that $Q=Q_+\Pi_+ + Q_-\Pi_-$. The norm is $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$. The eigenvalues are written $\lambda_\pm=Q_\pm=q\pm q'$; a test scalar in the definition of an eigenvalue is written $\mu$, so the letter $\lambda$ is reserved for the two eigenvalues. The two spinor spaces are $S_\pm=\mathbb{R}\Pi_\pm$, with real spinor coordinates $a_1,a_2$, the two diagonal entries of the matrix in the eigenbasis; after complexification the coefficients are complex. The base is $\mathbb{R}$, as throughout the category.
+**Conventions.** The notation is fixed in *Algebra and Element Conventions*: the algebra is $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$, with basis $1,j$, $j^2=+1$, general element $Q=q+jq'$ with $q=\operatorname{Re}Q$ and $q'=\operatorname{Im}Q$, conjugate $\bar Q=q-jq'$, idempotents $\Pi_\pm=\tfrac12(1\pm j)$ and idempotent coordinates $Q_\pm=q\pm q'$, so that $Q=Q_+\Pi_+ + Q_-\Pi_-$. The norm is $\langle Q\rangle_{*}=Q\bar Q=q^2-q'{}^2$. The eigenvalues are written $\lambda_\pm=Q_\pm=q\pm q'$; a test scalar in the definition of an eigenvalue is written $\mu$, so the letter $\lambda$ is reserved for the two eigenvalues. The two spinor spaces are $S_\pm=\mathbb{R}\Pi_\pm$, with real spinor coordinates $a_1,a_2$, the two diagonal entries of the matrix in the eigenbasis; after complexification the coefficients are complex. The base is $\mathbb{R}$, as throughout the category.
 
 **Boundaries.** The complex case is the subject of *Eigenvalues and Diagonalisation*; the reduced biquaternion case is *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*; the biquaternion case is *The Biquaternion Eigenvalue Decomposition*; the Peirce and ideal theory is *Ideals and Peirce Decomposition of the Split-Complex Algebra*; the exponential and the logarithm built on the decomposition are those of *Split-Complex Exponential and Lie Group Structure*; and the polar forms are those of *Modulus–Unit Polar Decomposition of Split-Complex Numbers* and *Polar Decomposition of Split-Complex Numbers*. The general definition, existence and uniqueness of the eigenvalue decomposition are those of *The Eigenvalue Decomposition of an Element* and are not restated.
 
@@ -56,10 +56,10 @@ Thus the two eigenvalues are the two idempotent coordinates, and their sum and p
 $$
 \lambda_++\lambda_-=2q,
 \qquad
-\lambda_+\lambda_-=q^2-q'^2=\langle Q\rangle_{*}.
+\lambda_+\lambda_-=q^2-q'{}^2=\langle Q\rangle_{*}.
 $$
 
-**Proof.** The element $Q-\mu=(q-\mu)+jq'$ has norm $(q-\mu)^2-q'^2$. By the criterion of *Norm and Invertibility in the General Split-Complex Algebra*, §*The Criterion*, it is invertible exactly when its norm is nonzero. Hence $Q-\mu$ is not invertible exactly when $(q-\mu)^2=q'^2$, that is, when $\mu=q+q'$ or $\mu=q-q'$. These two numbers are $\lambda_+$ and $\lambda_-$.
+**Proof.** The element $Q-\mu=(q-\mu)+jq'$ has norm $(q-\mu)^2-q'{}^2$. By the criterion of *Norm and Invertibility in the General Split-Complex Algebra*, §*The Criterion*, it is invertible exactly when its norm is nonzero. Hence $Q-\mu$ is not invertible exactly when $(q-\mu)^2=q'{}^2$, that is, when $\mu=q+q'$ or $\mu=q-q'$. These two numbers are $\lambda_+$ and $\lambda_-$.
 
 **Characteristic polynomial.** The characteristic polynomial of $Q$ is
 
@@ -73,7 +73,7 @@ $$
 It is the characteristic polynomial of the multiplication operator, whose trace is $\lambda_++\lambda_-=2q$ and whose determinant is $\lambda_+\lambda_-=\langle Q\rangle_{*}$. Its discriminant is
 
 $$
-(\lambda_+-\lambda_-)^2=(2q')^2=4q'^2,
+(\lambda_+-\lambda_-)^2=(2q')^2=4q'{}^2,
 $$
 
 so the eigenvalues are distinct exactly when $q'\neq0$, that is, exactly when $\lambda_+\neq\lambda_-$.
@@ -87,8 +87,8 @@ The data of the spectrum are collected in the table.
 | Spectrum | $\sigma(Q)=\{\lambda_+,\lambda_-\}$ |
 | Eigenvalues | $\lambda_+=q+q'$, $\lambda_-=q-q'$ |
 | Sum | $\lambda_++\lambda_-=2q$ |
-| Product | $\lambda_+\lambda_-=q^2-q'^2=\langle Q\rangle_{*}$ |
-| Discriminant | $(\lambda_+-\lambda_-)^2=4q'^2$ |
+| Product | $\lambda_+\lambda_-=q^2-q'{}^2=\langle Q\rangle_{*}$ |
+| Discriminant | $(\lambda_+-\lambda_-)^2=4q'{}^2$ |
 | Characteristic polynomial | $p_Q(X)=X^2-2qX+\langle Q\rangle_{*}=(X-\lambda_+)(X-\lambda_-)$ |
 | Minimal polynomial | $(X-\lambda_+)(X-\lambda_-)$ if $q'\neq0$; $X-q$ if $q'=0$ |
 
@@ -337,8 +337,8 @@ The decomposition $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ gives every power, every pol
 | Element $Q$ | $q+jq'$ | $(\lambda_+,\lambda_-)$ |
 | Power $Q^n$, $n\geq0$ | — | $(\lambda_+^n,\lambda_-^n)$ |
 | Polynomial $f(Q)$ | — | $(f(\lambda_+),f(\lambda_-))$ |
-| Inverse $Q^{-1}$, $q'\neq0$ | $\dfrac{q-jq'}{q^2-q'^2}$ | $(\lambda_+^{-1},\lambda_-^{-1})$ |
-| Norm $\langle Q\rangle_{*}$ | $q^2-q'^2$ | $\lambda_+\lambda_-$ |
+| Inverse $Q^{-1}$, $q'\neq0$ | $\dfrac{q-jq'}{q^2-q'{}^2}$ | $(\lambda_+^{-1},\lambda_-^{-1})$ |
+| Norm $\langle Q\rangle_{*}$ | $q^2-q'{}^2$ | $\lambda_+\lambda_-$ |
 | Trace | $2q$ | $\lambda_++\lambda_-$ |
 
 The eigenbasis is the basis in which the two Peirce coordinates of $Q$ are the two eigenvalues.
@@ -655,7 +655,7 @@ Every complete orthogonal pair of nontrivial idempotents gives such a writing, b
 
 **A nonzero zero divisor has one zero eigenvalue and one nonzero eigenvalue, and it admits an eigenvalue decomposition even though it is not invertible.**
 
-Suppose $\langle Q\rangle_{*}=q^2-q'^2=0$ with $Q\neq0$. Then $q'=\pm q$ and $q\neq0$, so
+Suppose $\langle Q\rangle_{*}=q^2-q'{}^2=0$ with $Q\neq0$. Then $q'=\pm q$ and $q\neq0$, so
 
 $$
 Q=q(1\pm j)=2q\,\Pi_\pm.
@@ -779,7 +779,7 @@ Read down a column for one algebra and across a row for one concept. The rows do
 | $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$ | Split-complex algebra, dimension $2$ over $\mathbb{R}$ |
 | $Q=q+jq'$ | General split-complex number, $q,q'\in\mathbb{R}$ |
 | $\bar Q=q-jq'$ | Split-complex conjugate |
-| $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2=\lambda_+\lambda_-$ | Norm, inertia $(1,1)$ |
+| $\langle Q\rangle_{*}=Q\bar Q=q^2-q'{}^2=\lambda_+\lambda_-$ | Norm, inertia $(1,1)$ |
 | $2q=\lambda_++\lambda_-$ | Doubled real part |
 | $\Pi_\pm=\tfrac12(1\pm j)$ | Standard idempotents; the eigenprojections when $q'\neq0$ |
 | $Q_\pm=q\pm q'$ | Idempotent coordinates, equal to the eigenvalues: $Q_\pm=\lambda_\pm$ |

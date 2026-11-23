@@ -104,18 +104,18 @@ $$
 |\tilde{Ξ}\rangle=s_1\,|u_x\rangle|v_1\rangle+s_2\,|u_y\rangle|v_2\rangle,
 $$
 
-where $|u_\imath\rangle=\sum_i U_{i\imath}|i\rangle$ and $|v_\imath\rangle=\sum_j V_{j\imath}|j\rangle$ are orthonormal bases of the two factors. The reduced states are then
+where $|u_{\imath}\rangle=\sum_i U_{i\imath}|i\rangle$ and $|v_{\imath}\rangle=\sum_j V_{j\imath}|j\rangle$ are orthonormal bases of the two factors. The reduced states are then
 
 $$
-\rho_1=MM^\dagger=\sum_{\imath\in\{x,y,z\}}s_\imath^2\,|u_\imath\rangle\langle u_\imath|,
+\rho_1=MM^\dagger=\sum_{\imath\in\{x,y,z\}}s_{\imath}^2\,|u_{\imath}\rangle\langle u_{\imath}|,
 \qquad
-\rho_2=M^\dagger M=\sum_{\imath\in\{x,y,z\}}s_\imath^2\,|v_\imath\rangle\langle v_\imath| .
+\rho_2=M^\dagger M=\sum_{\imath\in\{x,y,z\}}s_{\imath}^2\,|v_{\imath}\rangle\langle v_{\imath}| .
 $$
 
 This is the whole content of part (a) of the exercise. $\rho_1$ and $\rho_2$ are **not** equal in general — they act on different factors and have different eigenvectors — but they have the **same eigenvalues**, namely $s_1^2,s_2^2$, because the nonzero eigenvalues of $MM^\dagger$ and $M^\dagger M$ coincide. The entropy is a function of the spectrum alone, so
 
 $$
-S(\rho_1)=S(\rho_2)=-\sum_\imath s_\imath^2\log s_\imath^2
+S(\rho_1)=S(\rho_2)=-\sum_{\imath} s_{\imath}^2\log s_{\imath}^2
 =h(s_1^2),
 $$
 
@@ -134,7 +134,7 @@ Since $h$ is strictly concave on $[0,1]$, its maximum over the admissible range 
 
 ### The biquaternion form of the worked family
 
-The two-qubit state space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, and the pure state $|\tilde{Ξ}_{\theta}\rangle$ corresponds to a Hermitian idempotent $\tilde\Pi_{\mathrm{id},\theta}$ of unit weight. To write it in the tensor basis, expand the joint density in Pauli strings and translate with the isomorphism of the companion articles, $e_t\mapsto I_2$ and $\vec e_\imath\mapsto -i\sigma_\imath$. Equivalently, $\sigma_\imath\mapsto i \vec e_\imath$.
+The two-qubit state space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, and the pure state $|\tilde{Ξ}_{\theta}\rangle$ corresponds to a Hermitian idempotent $\tilde\Pi_{\mathrm{id},\theta}$ of unit weight. To write it in the tensor basis, expand the joint density in Pauli strings and translate with the isomorphism of the companion articles, $e_t\mapsto I_2$ and $\vec e_{\imath}\mapsto -i\sigma_{\imath}$. Equivalently, $\sigma_{\imath}\mapsto i \vec e_{\imath}$.
 
 For the state $|\tilde{Ξ}_{\theta}\rangle=\cos\theta\,|\uparrow\uparrow\rangle+\sin\theta\,|\downarrow\downarrow\rangle$, the Pauli-string coefficients $\mathrm{Ric}_{\imath\jmath}=\langle\sigma_{\imath}\otimes\sigma_{\jmath}\rangle$, with $\sigma_t=I_2$ and ${\imath},\jmath\in\{t,x,y,z\}$, are
 
@@ -164,7 +164,7 @@ $$
 =2\,\delta_{\jmath t}\,e_{\imath},
 $$
 
-because $\mathrm{Sc}(e_t)=1$ and $\mathrm{Sc}(\vec e_\imath)=0$ for $k\in\{x,y,z\}$. Term by term:
+because $\mathrm{Sc}(e_t)=1$ and $\mathrm{Sc}(\vec e_{\imath})=0$ for $k\in\{x,y,z\}$. Term by term:
 
 - $\tfrac14 e_t\otimes e_t\mapsto\tfrac14\cdot 2\,e_t=\tfrac12 e_t$;
 - $-\tfrac14 \vec e_z\otimes \vec e_z\mapsto 0$;
@@ -387,16 +387,16 @@ The entanglement entropy of a pure two-qubit state is the von Neumann entropy of
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit tensor-product algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables) |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector) |
-| $\mathrm{Sc}$ | Scalar part on one factor: $\mathrm{Sc}(e_t)=1$, $\mathrm{Sc}(\vec e_\imath)=0$ |
+| $\mathrm{Sc}$ | Scalar part on one factor: $\mathrm{Sc}(e_t)=1$, $\mathrm{Sc}(\vec e_{\imath})=0$ |
 | $\mathrm{Sc}(x\otimes y)=\mathrm{Sc}(x)\mathrm{Sc}(y)$ | Scalar part on the tensor product; a full contraction pays $4$ |
 | $\mathrm{Sc}_1,\mathrm{Sc}_2$ | Partial scalar parts: $\mathrm{Sc}_2(a\otimes b)=a\,\mathrm{Sc}(b)$; reductions $2\,\mathrm{Sc}_1$, $2\,\mathrm{Sc}_2$ |
 | $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$ | Normalisation of a state |
 | $\tilde\Pi_{\mathrm{id}}(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$ | Single-qubit idempotents |
-| $\tilde\Pi_{\mathrm{id},\epsilon}=\tfrac14(e_t\otimes e_t+\sum_{\imath\in\{x,y,z\}}\epsilon_\imath \vec e_\imath\otimes \vec e_\imath)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
+| $\tilde\Pi_{\mathrm{id},\epsilon}=\tfrac14(e_t\otimes e_t+\sum_{\imath\in\{x,y,z\}}\epsilon_{\imath} \vec e_{\imath}\otimes \vec e_{\imath})$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
 | $|\tilde{Ξ}_{\theta}\rangle=\cos\theta|\uparrow\uparrow\rangle+\sin\theta|\downarrow\downarrow\rangle$ | Worked family |
 | $\tilde\Pi_{\mathrm{id},\theta}$ | Its idempotent in $\mathbb{B}\otimes\mathbb{B}$ |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ | General state of $\mathbb{B}_{\Psi}$, $|\vec s_{\Psi}|\le1$ |

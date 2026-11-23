@@ -48,8 +48,7 @@ $$
 where $g_{\mathrm{refl}}(x)=g(-x)$ is the reflection; equivalently, in the notation of the Fourier article,
 $\mathcal F(\bar f)=\overline{\mathcal F f}\circ(-1)$.
 
-**Proof.** $\widehat{\bar f}(\zeta)=\int\overline{f(x)}\exp(-2\pi ix\cdot\zeta)dx
-=\overline{\int f(x)\exp(2\pi ix\cdot\zeta)dx}=\overline{(\mathcal F f)(-\zeta)}$, by the conjugation of the integral and
+**Proof.** $\widehat{\bar f}(\zeta)=\int\overline{f(x)}\exp(-2\pi ix\cdot\zeta)dx =\overline{\int f(x)\exp(2\pi ix\cdot\zeta)dx}=\overline{(\mathcal F f)(-\zeta)}$, by the conjugation of the integral and
 the substitution $x\mapsto-x$.
 
 The reflection commutes with the transform, $\widehat{f_{\mathrm{refl}}}=(\mathcal F f)_{\mathrm{refl}}$, as recorded in the
@@ -183,8 +182,7 @@ algebra of functions on the dual group with pointwise product and pointwise conj
 $\mathbb Z$ and $\mathbb R$ it is a star-homomorphism of $\ell^1$ or $L^1$ into the bounded continuous
 functions, with dense image, whose extension is the Gelfand transform of the algebra.
 
-**Proof.** $\widehat{f^{*}}(\zeta)=\int\overline{f(-x)}\exp(-2\pi ix\cdot\zeta)dx
-=\overline{\int f(-x)\exp(2\pi ix\cdot\zeta)dx}=\overline{\int f(u)\exp(-2\pi iu\cdot\zeta)du}=\overline{(\mathcal F f)(\zeta)}$,
+**Proof.** $\widehat{f^{*}}(\zeta)=\int\overline{f(-x)}\exp(-2\pi ix\cdot\zeta)dx =\overline{\int f(-x)\exp(2\pi ix\cdot\zeta)dx}=\overline{\int f(u)\exp(-2\pi iu\cdot\zeta)du}=\overline{(\mathcal F f)(\zeta)}$,
 which is the statement; the product statement is the convolution theorem of the Fourier article, and the
 isomorphism statements are the Fourier inversion and Plancherel theorems.
 

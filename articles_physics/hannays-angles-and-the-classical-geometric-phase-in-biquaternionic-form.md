@@ -12,7 +12,7 @@ This article develops the subject in the biquaternion algebra $\mathbb{B}=\mathb
 
 The article is classical. The relation to the quantum Berry phase is used as the standard statement $-\partial\gamma/\partial I$ relating the two phases, and the Berry phase itself is not developed; the companion article on the Berry phase owns the quantum side. No state space, no measurement, and no commutator appear.
 
-The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\varepsilon_{\imath\jmathk}\vec e_\imath$; $i$ is central, $i^2=-1$; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian sectors; $\mathbb{B}_{H}$ is the real-quaternion subspace. The rotor is $\tilde u\in\mathbb{B}_{H}$ with $\langle\tilde u\rangle_{\natural}=e_t$, acting by $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$; the body-frame angular velocity is $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dr'_t$, the logarithmic derivative that makes the body axes turn by $d\vec e_{\imath}/dr'_t=\vec\omega\times\vec e_{\imath}$ in the corpus rotation convention. The coadjoint orbit of the spin is the level set $\langle\tilde S_{\Psi}\rangle_{\natural}=S^2$ of the biquaternion norm, with the Poisson bracket $\{S_{\imath},S_{\jmath}\}=\varepsilon_{\imath\jmathk}S_\imath$.
+The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\varepsilon_{\imath\jmath k}\vec e_{\imath}$; $i$ is central, $i^2=-1$; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian sectors; $\mathbb{B}_{H}$ is the real-quaternion subspace. The rotor is $\tilde u\in\mathbb{B}_{H}$ with $\langle\tilde u\rangle_{\natural}=e_t$, acting by $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$; the body-frame angular velocity is $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dr'_t$, the logarithmic derivative that makes the body axes turn by $d\vec e_{\imath}/dr'_t=\vec\omega\times\vec e_{\imath}$ in the corpus rotation convention. The coadjoint orbit of the spin is the level set $\langle\tilde S_{\Psi}\rangle_{\natural}=S^2$ of the biquaternion norm, with the Poisson bracket $\{S_{\imath},S_{\jmath}\}=\varepsilon_{\imath\jmath k}S_{\imath}$.
 
 The companion articles are:
 - Companion article *Rigid-Body Dynamics and the Biquaternion Rotor*, for the rotor, the angular velocity, and the Euler-angle parametrisation.
@@ -31,25 +31,25 @@ $$
 The **frequency** of the $k$-th angle is
 
 $$
-\omega_\imath(I,R)=\frac{\partial H_0}{\partial I_\imath},
+\omega_{\imath}(I,R)=\frac{\partial H_0}{\partial I_{\imath}},
 $$
 
 and Hamilton's equations are
 
 $$
-c\,dI_\imath/dr'_t=-\frac{\partial H_0}{\partial\theta_\imath},\qquad \,d\theta_\imath/dr'_t=\frac{1}{c}\,\omega_\imath(I,R).
+c\,dI_{\imath}/dr'_t=-\frac{\partial H_0}{\partial\theta_{\imath}},\qquad \,d\theta_{\imath}/dr'_t=\frac{1}{c}\,\omega_{\imath}(I,R).
 $$
 
 Now let the parameters vary slowly and periodically: $R=R(\epsilon r'_t)$ with $\epsilon\ll1$ and $R(T)=R(0)$ after a period $T$. For a time-independent $H_0$, $I$ is exactly conserved; for slowly varying parameters, the **adiabatic theorem for classical systems** states that $I$ is conserved to all orders in $\epsilon$, and the angle evolves as
 
 $$
-\theta_\imath(r'_t)=\theta_\imath(0)+\int_0^{r'_{t}}\frac{\omega_\imath\!\left(I,R(\epsilon\tau)\right)}{c}\,d\tau+\delta\theta_\imath .
+\theta_{\imath}(r'_t)=\theta_{\imath}(0)+\int_0^{r'_{t}}\frac{\omega_{\imath}\!\left(I,R(\epsilon\tau)\right)}{c}\,d\tau+\delta\theta_{\imath} .
 $$
 
 The first two terms are dynamical: they are the phase accumulated at the instantaneous frequency. The third term is the **Hannay angle**. It is independent of the speed of the cycle to leading order, depends only on the geometric cycle of $R$, and is the classical geometric phase. Its general expression, derived by Hannay and confirmed in the examples, is
 
 $$
-\boxed{\;\delta\theta_\imath=-\frac{\partial}{\partial I_\imath}\oint\sum_{\imath}\mathcal A_{\imath}(R)\,dR_{\imath}\;}
+\boxed{\;\delta\theta_{\imath}=-\frac{\partial}{\partial I_{\imath}}\oint\sum_{\imath}\mathcal A_{\imath}(R)\,dR_{\imath}\;}
 $$
 
 where $\mathcal A_{\imath}$ is the **Berry connection** of the quantum system obtained by quantising the same classical problem, and $\gamma=\oint\sum_{\imath}\mathcal A_{\imath} dR_{\imath}$ is the Berry phase. Hannay's angle is thus the derivative of the Berry phase with respect to the action. This is the precise sense in which the classical geometric phase is the classical counterpart of the quantum one: the classical angle is the action-derivative of the quantum phase.
@@ -87,7 +87,7 @@ $$
 \tilde S_{\Psi}\in\mathbb{B}_{H}\cap\mathbb{B}_{\Phi},\qquad \langle\tilde S_{\Psi}\rangle_{\natural}=\vec S^2=S^2 ,
 $$
 
-and the orbit is the level set $\langle\tilde S_{\Psi}\rangle_{\natural}=S^2$, a sphere of radius $S$. The symplectic form is the Souriau form of the companion article, and the Poisson bracket is $\{S_{\imath},S_{\jmath}\}=\varepsilon_{\imath\jmathk}S_\imath$. A Hamiltonian linear in the spin,
+and the orbit is the level set $\langle\tilde S_{\Psi}\rangle_{\natural}=S^2$, a sphere of radius $S$. The symplectic form is the Souriau form of the companion article, and the Poisson bracket is $\{S_{\imath},S_{\jmath}\}=\varepsilon_{\imath\jmath k}S_{\imath}$. A Hamiltonian linear in the spin,
 
 $$
 H=\vec\omega\cdot\vec S=\tfrac12\,\mathrm{Sc}\!\left(\vec\omega^{\natural}\,\tilde S_{\Psi}+\tilde S_{\Psi}^{\natural}\,\vec\omega\right),
@@ -268,7 +268,7 @@ $$
 S=\sqrt{\langle\tilde S_{\Psi}\rangle_{\natural}}=\sqrt{\vec S^2},
 $$
 
-and it is conserved not only in the adiabatic limit but exactly, because it is the Casimir of the bracket $\{S_{\imath},S_{\jmath}\}=\varepsilon_{\imath\jmathk}S_\imath$ and is therefore a constant of motion for every Hamiltonian on the orbit. For a general action-angle system the adiabatic invariant $I_\imath$ is the action $\oint p_\imath\,dq_\imath$; for the spin on its orbit, the distinguished invariant is the biquaternion norm, and it is the action with respect to which the Hannay angle is differentiated. The statement "the Hannay angle is the derivative of the phase with respect to the action" therefore reads, in the algebra, "differentiate with respect to the square root of the biquaternion norm".
+and it is conserved not only in the adiabatic limit but exactly, because it is the Casimir of the bracket $\{S_{\imath},S_{\jmath}\}=\varepsilon_{\imath\jmath k}S_{\imath}$ and is therefore a constant of motion for every Hamiltonian on the orbit. For a general action-angle system the adiabatic invariant $I_{\imath}$ is the action $\oint p_{\imath}\,dq_{\imath}$; for the spin on its orbit, the distinguished invariant is the biquaternion norm, and it is the action with respect to which the Hannay angle is differentiated. The statement "the Hannay angle is the derivative of the phase with respect to the action" therefore reads, in the algebra, "differentiate with respect to the square root of the biquaternion norm".
 
 For the adiabatic transport of a general rotor — a rigid body carried around a loop of orientations — the same structure holds: the transport is parallel with respect to a connection on the group, the holonomy is an element of $SU(2)$ (a rotor), and its rotation angle is the classical geometric phase. The Foucault pendulum is the standard mechanical instance; the falling-cat and bicycle-wheel problems are the standard instances of a rotor holonomy, in which a body is reoriented by internal motion with no net angular momentum. Their mechanical details are standard and are not developed here, and the algebraic content is the one developed here.
 
@@ -282,7 +282,7 @@ The one place where the quantum counterpart enters the discussion is the formula
 
 Hannay's angle is the classical geometric phase of an adiabatically cycled system, and in the biquaternion algebra it is the holonomy of the rotor that carries a fixed axis to the slowly varying direction.
 
-- Action-angle variables $(\theta,I)$ with slowly cycled parameters $R$ have an adiabatic invariant $I$ and an angle $\theta$ that acquires, after a closed cycle, the Hannay angle $\delta\theta_\imath=-\partial/\partial I_\imath\,\oint\sum_{\imath}\mathcal A_{\imath} dR_{\imath}$, the action-derivative of the Berry phase.
+- Action-angle variables $(\theta,I)$ with slowly cycled parameters $R$ have an adiabatic invariant $I$ and an angle $\theta$ that acquires, after a closed cycle, the Hannay angle $\delta\theta_{\imath}=-\partial/\partial I_{\imath}\,\oint\sum_{\imath}\mathcal A_{\imath} dR_{\imath}$, the action-derivative of the Berry phase.
 - The classical spin vector is a point of the coadjoint orbit $\langle\tilde S_{\Psi}\rangle_{\natural}=S^2$, with $H=\vec\omega\cdot\vec S$ generating the rotor flow $d\vec S/dr'_t=\frac{1}{c}\,\vec\omega\times\vec S$.
 - The direction $\vec u_x=\tilde u\vec e_z\tilde u^{*}$ defines a rotor field; the geodesic (shortest) rotor is $\tilde u_g=\cos\frac{\theta_0}{2}+\sin\frac{\theta_0}{2}\vec u_y$ with $\vec u_y$ in the plane perpendicular to $\vec e_z$, and its body-frame twist about the direction is $\omega_b^{\parallel}=-(1-\cos\theta_0)d\theta_{\mathrm{azm}}/dr'_t$, so that the Hannay angle is $-\oint\omega_b^{\parallel}dr'_t=\theta_{\mathrm{sol}}$.
 - Integrating the twist around a cycle of solid angle $\theta_{\mathrm{sol}}$ gives Hannay's angle $\delta\theta_{\mathrm{Hannay}}=\theta_{\mathrm{sol}}$, the holonomy of the connection $\mathcal A=(1-\cos\theta)d\theta_{\mathrm{azm}}$ with curvature $\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$.
@@ -296,10 +296,10 @@ The phase is classical: it is the holonomy of a transport on the space of direct
 
 | Symbol | Meaning |
 |---|---|
-| $(\theta_\imath,I_\imath)$ | Action-angle variables |
+| $(\theta_{\imath},I_{\imath})$ | Action-angle variables |
 | $R$ | Slowly cycled parameters |
-| $\omega_\imath=\partial H_0/\partial I_\imath$ | Instantaneous frequencies |
-| $\delta\theta_\imath=-\partial/\partial I_\imath\,\oint\sum_{\imath}\mathcal A_{\imath} dR_{\imath}$ | Hannay's angle |
+| $\omega_{\imath}=\partial H_0/\partial I_{\imath}$ | Instantaneous frequencies |
+| $\delta\theta_{\imath}=-\partial/\partial I_{\imath}\,\oint\sum_{\imath}\mathcal A_{\imath} dR_{\imath}$ | Hannay's angle |
 | $\mathcal A_{\imath}$ | Berry connection of the quantised problem |
 | $\gamma=\oint\sum_{\imath}\mathcal A_{\imath} dR_{\imath}$ | Berry phase (quantum counterpart) |
 | $\tilde S_{\Psi}\in\mathbb{B}_{H}\cap\mathbb{B}_{\Phi}$, $\langle\tilde S_{\Psi}\rangle_{\natural}=S^2$ | Classical spin on its coadjoint orbit |

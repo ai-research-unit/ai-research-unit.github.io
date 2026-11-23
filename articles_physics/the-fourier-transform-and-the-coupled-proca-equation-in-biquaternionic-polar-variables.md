@@ -25,7 +25,7 @@ $$
 \qquad
 2\pi\nu_t'=\frac{\omega}{c} ,
 \qquad
-k^{2}=4\pi^{2}\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}.
+k^{2}=4\pi^{2}\nu_t'{}^{2}-4\pi^{2}\nu_{\Phi}^{2}.
 $$
 
 The coupled word is the parent's:

@@ -133,7 +133,7 @@ $$
 **The middle square is one dimension smaller than the direct sum.** From the second display,
 
 $$
-\operatorname{tr}(BB'^{\mathsf T})=\operatorname{tr}(B^{\mathsf T}B'),
+\operatorname{tr}(BB'{}^{\mathsf T})=\operatorname{tr}(B^{\mathsf T}B'),
 $$
 
 so the two diagonal blocks of $X_{1/2}\circ Y_{1/2}$ have equal trace. The image is therefore the block-diagonal matrices with matched traces, of dimension

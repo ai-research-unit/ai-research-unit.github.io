@@ -72,7 +72,7 @@ produces $\mathcal{A}_{\mathrm{cfa}}=0$ on shell, the bracket reducing in flat c
 
 ### The Material Reading of the Flat Arena
 
-**The flat arena.** The flat metric is $\delta_{\imath\jmath}=(1,1,1,1)$ on the four $Q_{\imath}$, and the level-2 reading of the level-1 form is the material one, $Q_t=i q'_t$ and $Q_\imath=q_\imath$, as *Frame and Metric Conventions* fixes. The response $\mathcal{A}_{\mathrm{cfa}}$ is then a level-2 number, four diagonal entries summed with their weights, while the statement it makes is level-1: the form was stretched.
+**The flat arena.** The flat metric is $\delta_{\imath\jmath}=(1,1,1,1)$ on the four $Q_{\imath}$, and the level-2 reading of the level-1 form is the material one, $Q_t=i q'_t$ and $Q_{\imath}=q_{\imath}$, as *Frame and Metric Conventions* fixes. The response $\mathcal{A}_{\mathrm{cfa}}$ is then a level-2 number, four diagonal entries summed with their weights, while the statement it makes is level-1: the form was stretched.
 
 **Two operations that are not one.** A rescaling of the level-1 form is not a change of the $i r'_t$ assignment. The first multiplies the form by a function of the point. The second writes the time coefficient on the material sector, once, and the minus of the interval is $i^2=-1$ in that coefficient. The section on the three levels makes the distinction precise, and it is the place where the two are most easily mixed.
 
@@ -115,10 +115,10 @@ up to a divergent constant, the proper-time representation of the logarithm of a
 **The small-$\tau$ expansion.** Regulating the determinant with a proper-time cutoff, the heat kernel has the expansion
 
 $$
-\sum_{\imath}\mathrm{e}^{-\tau\eta}\;\sim\;\frac{1}{(4\pi\tau)^{d/2}}\sum_{k\ge0}\tau^{k}\int d^dx\,\sqrt{|g|}\,a_\imath,
+\sum_{\imath}\mathrm{e}^{-\tau\eta}\;\sim\;\frac{1}{(4\pi\tau)^{d/2}}\sum_{k\ge0}\tau^{k}\int d^dx\,\sqrt{|g|}\,a_{\imath},
 $$
 
-where $a_\imath$ is the Seeley–DeWitt coefficient of order $k$, the first being $a_0=1$ for the minimal operator. The term that survives renormalisation is $a_{d/2}$, because $\tau^{k-d/2}$ is logarithmically divergent exactly at $k=d/2$. The response of the regulated determinant is then
+where $a_{\imath}$ is the Seeley–DeWitt coefficient of order $k$, the first being $a_0=1$ for the minimal operator. The term that survives renormalisation is $a_{d/2}$, because $\tau^{k-d/2}$ is logarithmically divergent exactly at $k=d/2$. The response of the regulated determinant is then
 
 $$
 \delta_\sigma\Gamma_1=\frac{1}{(4\pi)^{d/2}}\int d^dx\,\sqrt{|g|}\;\sigma\,a_{d/2},
@@ -126,7 +126,7 @@ $$
 
 so that the response is local and proportional to the single coefficient $a_{d/2}$. This is the standard heat-kernel account (DeWitt 2003; Vassilevich 2003), and it is the reason the anomaly is a one-loop, one-coefficient statement rather than a tower of terms: $a_{d/2}$ is local, and the higher coefficients are not.
 
-**The algebra's place in the expansion.** The coefficient $a_\imath$ of an operator on a biquaternion-valued field is the coefficient of the scalar problem times the dimension of the fibre on which the operator acts, when the operator is central. The geometry of the operator supplies the curvature invariants. The algebra supplies the dimension of the space the operator acts on. This is the same division as in the determinant article, and it is why the anomaly's multiplicity, as opposed to its form, is the algebra's contribution.
+**The algebra's place in the expansion.** The coefficient $a_{\imath}$ of an operator on a biquaternion-valued field is the coefficient of the scalar problem times the dimension of the fibre on which the operator acts, when the operator is central. The geometry of the operator supplies the curvature invariants. The algebra supplies the dimension of the space the operator acts on. This is the same division as in the determinant article, and it is why the anomaly's multiplicity, as opposed to its form, is the algebra's contribution.
 
 ## The Multiplicity of the Fibre
 
@@ -232,7 +232,7 @@ The one metric is read at three levels in the series, and the rescaling is where
 
 ### Level 2
 
-**The material reading.** The level-2 reading is the same form read on the material sector, with $Q_t=i q'_t$ and $Q_\imath=q_\imath$, which is the substitution *Frame and Metric Conventions* fixes. A stretch rescales the level-1 form and the level-2 coefficients with it, but it does not change the $i r'_t$ assignment or the sector split. The minus of the material $\Box_\Phi$ comes from $i^2=-1$ in $\partial/\partial i r'_t$ and from nothing else, and no sign in the coefficient above is to be corrected on the basis of the level-1 form.
+**The material reading.** The level-2 reading is the same form read on the material sector, with $Q_t=i q'_t$ and $Q_{\imath}=q_{\imath}$, which is the substitution *Frame and Metric Conventions* fixes. A stretch rescales the level-1 form and the level-2 coefficients with it, but it does not change the $i r'_t$ assignment or the sector split. The minus of the material $\Box_\Phi$ comes from $i^2=-1$ in $\partial/\partial i r'_t$ and from nothing else, and no sign in the coefficient above is to be corrected on the basis of the level-1 form.
 
 ### Level 3
 
@@ -273,7 +273,7 @@ Two details of the derivation and one structural fact about the mass are recorde
 **The derivatives.** The gradient and its quaternion conjugate are fixed in *Operator and Calculus Conventions*, §*The Gradient*, and $\Box_\Phi$ is the scalar composition of the two. The massive dynamics is the chiral pair of *The Dirac Equation in Biquaternionic Form*, and its two letters are the two values of the chirality: $\tilde{Ξ}_{L}$ is the $-1$ part and $\tilde{Ξ}_{R}$ the $+1$ part. No one-field first-order massive equation stands beside the pair, because the square of the gradient is not scalar. In the coordinates $Q_{\imath}$ it is
 
 $$
-\tilde\nabla_\Phi^{2}=\frac{\partial^{2}}{\partial R_t^{2}}-\Delta_\Phi+2\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial^{2}}{\partial R_t\,\partial R_\imath},
+\tilde\nabla_\Phi^{2}=\frac{\partial^{2}}{\partial R_t^{2}}-\Delta_\Phi+2\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial^{2}}{\partial R_t\,\partial R_{\imath}},
 $$
 
 where the mixed term survives because $e_t$ commutes with the spatial units, and $\Delta_\Phi$ is the convention's Laplacian. Only the composition with the conjugate is scalar, and that composition is the series' $\Box_\Phi$. Both identities are derived forms, read from the multiplication of the units.
@@ -335,7 +335,7 @@ The response is written as a sum over the diagonal of the matrix of components o
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^{2}=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^{2}=-e_t$ |
 | $i$ | Central scalar imaginary, $i^{2}=-1$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\delta_{\imath\jmath}=(1,1,1,1)$ | The unit metric, the one metric of the series |
@@ -353,7 +353,7 @@ The response is written as a sum over the diagonal of the matrix of components o
 | $\det L(a)=\langle a\rangle_{\natural}^{2}$ | Determinant of the left regular matrix; the count of the fibre is the exponent four |
 | $2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde H_\Psi)$ | The state-and-observable pairing; a scalar part, not a determinant and not a count |
 | $2\,\mathrm{Sc}\tilde Q=2Q_t$ | The scalar part of one element with the factor of the $2\times2$ image |
-| $Q_t=i q'_t$, $Q_\imath=q_\imath$ | The material reading |
+| $Q_t=i q'_t$, $Q_{\imath}=q_{\imath}$ | The material reading |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ | Series d'Alembertian |
 | $c_{\mathrm{2d}}$ | Two-dimensional central charge; a different letter from the four-dimensional $c$ |
 | $a$, $c$ | Four-dimensional Euler and Weyl coefficients |

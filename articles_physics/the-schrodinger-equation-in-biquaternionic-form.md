@@ -40,7 +40,7 @@ The equation carries one symbol that squares to minus one, and that symbol is $i
 
 ### The scalar imaginary
 
-The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_{\imath}^2 = -e_t$ and $\vec e_{\imath} \vec e_{\jmath} = \varepsilon_{\imath\jmathk}\vec e_\imath$ for ${\imath},\jmath \in \{x,y,z\}$, ${\imath} \neq \jmath$. The **scalar imaginary** $i$ is the image of the imaginary unit of the complexifying factor $\mathbb{C}$. It satisfies $i^2 = -e_t$ and is **central**: it commutes with every element of $\mathbb{B}$.
+The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_{\imath}^2 = -e_t$ and $\vec e_{\imath} \vec e_{\jmath} = \varepsilon_{\imath\jmath k}\vec e_{\imath}$ for ${\imath},\jmath \in \{x,y,z\}$, ${\imath} \neq \jmath$. The **scalar imaginary** $i$ is the image of the imaginary unit of the complexifying factor $\mathbb{C}$. It satisfies $i^2 = -e_t$ and is **central**: it commutes with every element of $\mathbb{B}$.
 
 The central elements are exactly the complex scalars,
 
@@ -348,7 +348,7 @@ The uniqueness of $i$ up to sign is what makes both writings available simultane
 | $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}\tilde{Ξ}^{*}/2\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$ | Density matrix associated to the field |
 | $\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}})(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi)$ | $*$-Unitary evolution, $\tilde{Ξ}(r'_t) = \tilde Q(r'_t)\tilde{Ξ}(0)$; $\theta_{\mathrm{evo}}=\frac{2\pi h_t r'_t}{h\,c}$, $\theta=\frac{2\pi \lvert\vec h_\Psi\rvert r'_t}{h\,c}$ |
 | $\langle\tilde H_\Psi\rangle_{\tilde{Ξ}} = \mathrm{Sc}(\tilde H_\Psi\tilde{Ξ}\tilde{Ξ}^{*})/\mathrm{Sc}(\tilde{Ξ}\tilde{Ξ}^{*})$ | Mean of the observable in the field |
-| $\vec e_{\imath} \vec e_{\jmath} = \varepsilon_{\imath\jmathk}\vec e_\imath$, ${\imath} \neq \jmath$ | Quaternion multiplication |
+| $\vec e_{\imath} \vec e_{\jmath} = \varepsilon_{\imath\jmath k}\vec e_{\imath}$, ${\imath} \neq \jmath$ | Quaternion multiplication |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | The general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | The general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 

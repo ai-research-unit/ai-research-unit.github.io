@@ -73,7 +73,7 @@ and the adjoint operation is an involution exchanging the two sides, $\mathcal{L
 
 **Proof.** Read the pairing in the other order, $\langle y, x\rangle_{F,E} = \langle x, y\rangle_{E,F}$; then $T^{*}$ is defined by $\langle T^{*}y, x\rangle = \langle y, Tx\rangle$, so the adjoint of $T^{*}$ satisfies $\langle T^{*}y, x\rangle = \langle y, T^{**}x\rangle$ and hence $\langle y, Tx\rangle = \langle y, T^{**}x\rangle$ for all $y \in F$. Non-degeneracy gives $T^{**}x = Tx$ for every $x$, and $T^{**} = T$.
 
-**Corollary (the commutant duality).** The adjoint exchanges the commutants, $\{T\}'^{*} = \{T^{*}\}'$, and an algebra $\mathcal{A} \subseteq \mathcal{L}_{\sigma}(E)$ is closed under the adjoint exactly when its commutant is; in the Hilbert case this is the self-adjointness of the commutant of a self-adjoint algebra, which is *Operator Algebras*.
+**Corollary (the commutant duality).** The adjoint exchanges the commutants, $\{T\}'{}^{*} = \{T^{*}\}'$, and an algebra $\mathcal{A} \subseteq \mathcal{L}_{\sigma}(E)$ is closed under the adjoint exactly when its commutant is; in the Hilbert case this is the self-adjointness of the commutant of a self-adjoint algebra, which is *Operator Algebras*.
 
 **Proof.** $S$ commutes with $T$ iff $\langle STx, y\rangle = \langle TSx, y\rangle$ for all $x, y$, which by the definition of the adjoints is $S^{*}$ commuting with $T^{*}$; the Hilbert statement is the special case.
 

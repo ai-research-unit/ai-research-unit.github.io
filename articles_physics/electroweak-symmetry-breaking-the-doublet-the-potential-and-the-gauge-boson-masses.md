@@ -4,6 +4,8 @@
 
 The claim. The electroweak sector breaks $SU(2)_L\times\mathrm{U}(1)_Y$ to $\mathrm{U}(1)_{\mathrm{em}}$ through one scalar doublet. The doublet's four real components become one massive scalar and three longitudinal polarisations, and the gauge bosons acquire the masses
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 $$
 M_W=\frac{g\,v}{2},
 \qquad
@@ -12,7 +14,7 @@ M_Z=\frac{\sqrt{g^2+g_{\mathrm Y}^2}\,v}{2},
 M_\gamma=0 ,
 $$
 
-with $v=246.22$ GeV. This article writes the mass matrix, diagonalises it, counts the degrees of freedom before and after, and evaluates the numbers against measurement.
+with $v=4.3893\times10^{-25}\ \mathrm{kg}$. This article writes the mass matrix, diagonalises it, counts the degrees of freedom before and after, and evaluates the numbers against measurement.
 
 The standing. The mechanism is standard theory, transcribed. The biquaternion framework supplies the *abelian* version of it as a construction, and §*What the Framework Supplies* states exactly how much of the non-abelian version it reaches, which is the group and not the representation. The article is the full working-out that [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html) names as its own gap, and it does not soften that gap.
 
@@ -20,7 +22,7 @@ Three results that the single-particle articles do not state.
 
 - The mass matrix and its trace. In the basis $(W_1,W_2,W_3,B)$ the squared-mass matrix is one $4\times4$ object with three non-zero eigenvalues, and it obeys the trace sum rule $2M_W^2+M_Z^2=\tfrac{v^2}{4}(3g^2+g_{\mathrm Y}^2)$.
 - Why the photon is massless, structurally. Not because of a tuning: the eigenvalue is zero because the generator $Q=T_3+Y$ annihilates the vacuum. The zero is a consequence of the alignment of the vacuum with the charge, and it is the only reason the electromagnetic group survives.
-- The numbers, from three independent sets of inputs. From $g$, $g_{\mathrm Y}$ and $v$ at $M_Z$ the values are $80.24$ and $91.51$ GeV. From $\alpha$, $G_F$ and $M_Z$ the tree value of $M_W$ is $79.83$ GeV with $\alpha$ at the Z pole and $80.94$ GeV with $\alpha$ at zero momentum, against the measured $80.377$. The two brackets miss in opposite directions by about half a GeV, and $\delta r=0.0355$ reconciles them.
+- The numbers, from three independent sets of inputs. From $g$, $g_{\mathrm Y}$ and $v$ at $M_Z$ the values are $80.24$ and $1.631\times10^{-25}\ \mathrm{kg}$. From $\alpha$, $G_F$ and $M_Z$ the tree value of $M_W$ is $1.423\times10^{-25}\ \mathrm{kg}$ with $\alpha$ at the Z pole and $1.443\times10^{-25}\ \mathrm{kg}$ with $\alpha$ at zero momentum, against the measured $80.377$. The two brackets miss in opposite directions by about $8.0\times10^{-11}$ J, and $\delta r=0.0355$ reconciles them.
 
 The order. What the doublet must do; the potential and its minimum; the covariant derivative at the vacuum; the mass matrix; its eigenvalues and the two structural zeros; the counting of degrees of freedom; the unitary gauge and the physical spectrum; the scalar's own mass and couplings; the numbers; the $\rho$ parameter and custodial symmetry; the equivalence theorem; and the framework's position.
 
@@ -216,7 +218,7 @@ $$
 2M_W^2+M_Z^2=\frac{v^2}{4}\left(3g^2+g_{\mathrm Y}^2\right).
 $$
 
-Checked against the numbers of §*The Numbers*, the left side is $21249$ GeV$^2$ and the right side $21249$ GeV$^2$ — equal because they are the same expression rearranged, so the check is one on the arithmetic and not on the physics. The load-bearing comparison is with the measured masses: $2(80.377)^2+(91.1876)^2=21236$ GeV$^2$, so the tree sum rule overshoots the measured sum by $13$ GeV$^2$, or $0.06$ per cent, which is the size of the correction that §*The Numbers* calls $\delta r$. The sum rule is exact at tree level and is the cheapest check on any computation of the two masses.
+Checked against the numbers of §*The Numbers*, the left side is $6.7527\times10^{-50}\ \mathrm{kg^{2}}$ and the right side $6.7527\times10^{-50}\ \mathrm{kg^{2}}$ — equal because they are the same expression rearranged, so the check is one on the arithmetic and not on the physics. The load-bearing comparison is with the measured masses: $2(80.377)^2+(91.1876)^2=6.7486\times10^{-50}\ \mathrm{kg^{2}}$, so the tree sum rule overshoots the measured sum by $4.1\times10^{-53}\ \mathrm{kg^{2}}$, or $0.06$ per cent, which is the size of the correction that §*The Numbers* calls $\delta r$. The sum rule is exact at tree level and is the cheapest check on any computation of the two masses.
 
 The two masses in terms of one another. With $\tan\theta_W=g_{\mathrm Y}/g$,
 
@@ -318,21 +320,21 @@ $$
 
 both fixed by the mass and the scale. These are the model's sharpest predictions that have not been tested: the $hhh$ coupling is the target of the next generation of colliders, and its measurement would test whether the potential has the double-well shape or something else.
 
-The numbers, for the measured scalar mass $M_H=125.09$ GeV.
+The numbers, for the measured scalar mass $M_H=2.2299\times10^{-25}\ \mathrm{kg}$.
 
 | Quantity | Value |
 |---|---|
-| $v$ | $246.22$ GeV |
+| $v$ | $4.3893\times10^{-25}\ \mathrm{kg}$ |
 | $\digamma_{\mathrm{qtc}}=M_H^2/(2v^2)$ | $0.1291$ |
-| $\mu=\sqrt{\mu^2}=M_H/\sqrt2$ | $88.45$ GeV |
-| $g_{hhh}=3M_H^2/v$ | $190.7$ GeV |
+| $\mu=\sqrt{\mu^2}=M_H/\sqrt2$ | $1.577\times10^{-25}\ \mathrm{kg}$ |
+| $g_{hhh}=3M_H^2/v$ | $3.400\times10^{-25}\ \mathrm{kg}$ |
 | $g_{hhhh}=3M_H^2/v^2$ | $0.7743$ |
-| $g_{hWW}=2M_W^2/v$ | $52.48$ GeV |
-| $g_{hZZ}=2M_Z^2/v$ | $67.54$ GeV |
+| $g_{hWW}=2M_W^2/v$ | $9.355\times10^{-26}\ \mathrm{kg}$ |
+| $g_{hZZ}=2M_Z^2/v$ | $1.204\times10^{-25}\ \mathrm{kg}$ |
 
-The vintage of $M_H$. The value is $125.09$ GeV, the 2015 ATLAS+CMS run-1 combination that the rest of the corpus quotes. The current average is $125.25\pm0.17$ GeV, a shift of $0.16$ GeV or $0.9\sigma$, and it moves no number here: $\digamma_{\mathrm{qtc}}$ by $0.0003$, $g_{hhh}$ by $0.4$ GeV. The corpus keeps the older central value for one reason, the same one that keeps the fermion masses on a single vintage — [The Landau Pole, Triviality and Vacuum Stability](the-landau-pole-triviality-and-vacuum-stability.html) states the metastability margin as $1.39$ GeV $=4.6\sigma$ against $\sigma=0.30$, and a new central value would force a recomputation of a number quoted in two articles.
+The vintage of $M_H$. The value is $2.2299\times10^{-25}\ \mathrm{kg}$, the 2015 ATLAS+CMS run-1 combination that the rest of the corpus quotes. The current average is $125.25\pm3.0\times10^{-28}\ \mathrm{kg}$, a shift of $2.9\times10^{-28}\ \mathrm{kg}$ or $0.9\sigma$, and it moves no number here: $\digamma_{\mathrm{qtc}}$ by $0.0003$, $g_{hhh}$ by $7.1\times10^{-28}\ \mathrm{kg}$. The corpus keeps the older central value for one reason, the same one that keeps the fermion masses on a single vintage — [The Landau Pole, Triviality and Vacuum Stability](the-landau-pole-triviality-and-vacuum-stability.html) states the metastability margin as $2.48\times10^{-27}\ \mathrm{kg}$ $=4.6\sigma$ against $\sigma=0.30$, and a new central value would force a recomputation of a number quoted in two articles.
 
-The dimension of each coupling is the check. A triple scalar coupling has dimension one and is measured in GeV; a quartic has dimension zero and is a pure number; a scalar-vector-vector coupling has dimension one. The table's units agree with the dimensions, which is a check on the powers of $v$ and not a deep statement.
+The dimension of each coupling is the check. A triple scalar coupling has dimension one and is measured in joules; a quartic has dimension zero and is a pure number; a scalar-vector-vector coupling has dimension one. The table's units agree with the dimensions, which is a check on the powers of $v$ and not a deep statement.
 
 **What the unitary gauge hides.** The Goldstones are gone, and so is the manifest $SU(2)$ invariance: the gauge looks asymmetric, and the propagators of the massive vectors grow with energy in a way that requires the scalar exchange to cancel. That cancellation is a check on the whole sector, and [Gauge Fixing in the Electroweak Theory](gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html) carries it. The unitary gauge is a convenient bookkeeping and a poor place to compute loops.
 
@@ -340,7 +342,7 @@ The dimension of each coupling is the check. A triple scalar coupling has dimens
 
 **Two routes to the same two masses, and they do not agree at tree level.** This is the most informative numerical fact of the sector, and it is usually hidden by quoting one route.
 
-Route A: from the couplings and the scale. With $\alpha^{-1}(M_Z)=127.95$, $\sin^2\theta_W=0.23122$ in the $\overline{\mathrm{MS}}$ scheme and $v=246.22$ GeV, the two couplings are
+Route A: from the couplings and the scale. With $\alpha^{-1}(M_Z)=127.95$, $\sin^2\theta_W=0.23122$ in the $\overline{\mathrm{MS}}$ scheme and $v=4.3893\times10^{-25}\ \mathrm{kg}$, the two couplings are
 
 $$
 g=\frac{e}{\sin\theta_W}=0.65174 ,
@@ -353,12 +355,12 @@ $$
 Then
 
 $$
-M_W=\frac{gv}{2}=80.24\ \mathrm{GeV} ,
+M_W=\frac{gv}{2}=1.430\times10^{-25}\ \mathrm{kg} ,
 \qquad
-M_Z=\frac{\sqrt{g^2+g_{\mathrm Y}^2}\,v}{2}=91.51\ \mathrm{GeV} ,
+M_Z=\frac{\sqrt{g^2+g_{\mathrm Y}^2}\,v}{2}=1.631\times10^{-25}\ \mathrm{kg} ,
 $$
 
-against the measured $80.377$ and $91.1876$ GeV. The tree $W$ is $0.14$ GeV low and the tree $Z$ is $0.32$ GeV high, so the two misses are in opposite directions even within one route.
+against the measured $80.377$ and $1.62557\times10^{-25}\ \mathrm{kg}$. The tree $W$ is $2.5\times10^{-28}\ \mathrm{kg}$ low and the tree $Z$ is $5.7\times10^{-28}\ \mathrm{kg}$ high, so the two misses are in opposite directions even within one route.
 
 Route B: from $\alpha$, $G_F$ and $M_Z$. Three measured inputs over-determine the two masses, so the third is a test. The tree-level relations are
 
@@ -371,18 +373,18 @@ $$
 With $\alpha$ at the Z pole, $\alpha^{-1}(M_Z)=127.95$, the right-hand side is $0.17901$, the quadratic solves to $\sin^2\theta_W=0.23357$, and
 
 $$
-M_W=79.83\ \mathrm{GeV} ,
+M_W=1.423\times10^{-25}\ \mathrm{kg} ,
 $$
 
-which sits $0.55$ GeV below the measured $80.377$, a gap of $0.68$ per cent.
+which sits $9.8\times10^{-28}\ \mathrm{kg}$ below the measured $80.377$, a gap of $0.68$ per cent.
 
 Route C: the same relation with $\alpha$ at zero momentum. Take instead $\alpha^{-1}(0)=137.036$. The right-hand side becomes $0.16714$, the quadratic solves to $\sin^2\theta_W=0.21215$, and
 
 $$
-M_W=80.94\ \mathrm{GeV} ,
+M_W=1.443\times10^{-25}\ \mathrm{kg} ,
 $$
 
-which sits $0.56$ GeV *above* the measured value. So the tree-level prediction moves by $1.1$ GeV when $\alpha$ is moved from the Z pole to zero momentum, and the gap flips sign. The two tree-level numbers bracket the measurement, and the pair of them is the clearest statement of what the correction is doing.
+which sits $10.0\times10^{-28}\ \mathrm{kg}$ *above* the measured value. So the tree-level prediction moves by $2.0\times10^{-27}\ \mathrm{kg}$ when $\alpha$ is moved from the Z pole to zero momentum, and the gap flips sign. The two tree-level numbers bracket the measurement, and the pair of them is the clearest statement of what the correction is doing.
 
 The correction has a name and a size. The quantity that reconciles the routes is
 
@@ -407,18 +409,18 @@ The scale of the breaking, from the muon lifetime. The most precise input is $G_
 $$
 \frac{G_F}{\sqrt2}=\frac{g^2}{8M_W^2}=\frac{1}{2v^2} ,
 \qquad
-v=\left(\sqrt2\,G_F\right)^{-1/2}=246.2197\ \mathrm{GeV} .
+v=\left(\sqrt2\,G_F\right)^{-1/2}=4.38926\times10^{-25}\ \mathrm{kg} .
 $$
 
-This is the sector's counterpart of the pion decay constant: a low-energy constant, measured to five digits, that fixes the scale of a symmetry breaking. The analogy is exact in structure and not in size — the pion constant is $92$ MeV and the electroweak scale is $246$ GeV, and the ratio is the ratio of the two breakings.
+This is the sector's counterpart of the pion decay constant: a low-energy constant, measured to five digits, that fixes the scale of a symmetry breaking. The analogy is exact in structure and not in size — the pion constant is $1.6\times10^{-28}\ \mathrm{kg}$ and the electroweak scale is $4.39\times10^{-25}\ \mathrm{kg}$, and the ratio is the ratio of the two breakings.
 
 A third number, for the same reason. The width of the $W$ into one lepton pair is computable at tree level from the same three inputs,
 
 $$
-\Gamma\left(W\to e\xi_{\mathrm{neu}}\right)=\frac{G_F\,M_W^3}{6\pi\sqrt2}=227\ \mathrm{MeV} ,
+\Gamma\left(W\to e\xi_{\mathrm{neu}}\right)=\frac{G_F\,M_W^3}{6\pi\sqrt2}=3.637\times10^{-11}\ \mathrm{J} ,
 $$
 
-against the measured $223$ MeV. The agreement to two per cent is a check on the coupling $g/\sqrt2$ that enters the leptonic vertex, and the difference is again the radiative correction.
+against the measured $3.573\times10^{-11}$ J. The agreement to two per cent is a check on the coupling $g/\sqrt2$ that enters the leptonic vertex, and the difference is again the radiative correction.
 
 What the three numbers establish. The sector has five measured quantities — $M_W$, $M_Z$, $\sin^2\theta_W$, $\alpha$ and $G_F$ — and four relations among them at tree level, so one combination is a genuine test. The test passes at tree level to the accuracy of the one-loop correction, which is the strongest empirical statement available about the sector and is the subject of [The Electroweak Precision Observables](electroweak-precision-observables-the-oblique-parameters-s-t-u.html).
 
@@ -454,7 +456,7 @@ Why it is true here. The Goldstone fields are the gauge directions that the mass
 
 The use. The theorem converts a calculation in a gauge theory into a calculation in a scalar theory, which is the reason the longitudinal amplitudes of the Standard Model are computable. It is also the reason the sector is testable: the scattering of longitudinal gauge bosons at high energy would grow with energy if the scalar were absent, and the scalar exchange cancels the growth. The cancellation is exact only if the scalar's couplings are the ones in the table above, so a measurement of longitudinal scattering is a measurement of that table.
 
-The bound it gives. Without a scalar, the amplitude for $W_LW_L\to W_LW_L$ grows as $E^2/v^2$ and violates unitarity at about $1.2$ TeV. The scalar's exchange cancels the growth, and the residual term is of order $M_H^2/v^2$. The scale $1.2$ TeV is therefore the scale at which something must appear if the sector is not as described, and it is the reason the scalar was expected below about a TeV.
+The bound it gives. Without a scalar, the amplitude for $W_LW_L\to W_LW_L$ grows as $E^2/v^2$ and violates unitarity at about $2.1\times10^{-24}\ \mathrm{kg}$. The scalar's exchange cancels the growth, and the residual term is of order $M_H^2/v^2$. The scale $2.1\times10^{-24}\ \mathrm{kg}$ is therefore the scale at which something must appear if the sector is not as described, and it is the reason the scalar was expected below about $1.6\times10^{-7}$ J.
 
 **The theorem is a check on the counting.** It says that the eaten Goldstone and the longitudinal polarisation are the same object at high energy, which is the dynamical counterpart of the counting identity $12=12$ of §*The Counting of Degrees of Freedom*. The count says the number is right; the theorem says which number is which.
 
@@ -486,7 +488,7 @@ The mass matrix in the basis $(W_1,W_2,W_3,B)$ is $\tfrac{v^2}{4}$ times a block
 
 The counting balances at twelve. Before the breaking, four massless vectors give eight polarisations and the four real scalar components give four. After, the photon gives two, the three massive vectors nine and the physical scalar one. Three scalar components ceased to be independent fields and three gauge polarisations were gained, and the two events are one. In the unitary gauge the spectrum is a massless photon, a $W$ pair, a $Z$ and one scalar, with couplings $g_{hWW}=2M_W^2/v$, $g_{hZZ}=2M_Z^2/v$, $g_{hhh}=3M_H^2/v$ and $g_{hhhh}=3M_H^2/v^2$, all fixed by the masses.
 
-Numerically the sector is over-determined and the over-determination is the test. From $g$, $g_{\mathrm Y}$ and $v$ the tree masses are $80.24$ and $91.51$ GeV; from $\alpha$, $G_F$ and $M_Z$ the tree value of $M_W$ is $79.83$ GeV against the measured $80.377$. Both routes miss by about half a GeV, in opposite directions, and the discrepancy is the one-loop correction: $\delta r=0.0355$, of which $+0.071$ is the running of $\alpha$ from zero momentum to $M_Z$ and about $-0.033$ is the top-quark and scalar loop contribution. The scale itself comes from the muon lifetime, $v=(\sqrt2G_F)^{-1/2}=246.2197$ GeV, which is the electroweak counterpart of a pion decay constant. The same three inputs give $\Gamma(W\to e\xi_{\mathrm{neu}})=227$ MeV at tree level against $223$ measured.
+Numerically the sector is over-determined and the over-determination is the test. From $g$, $g_{\mathrm Y}$ and $v$ the tree masses are $80.24$ and $1.631\times10^{-25}\ \mathrm{kg}$; from $\alpha$, $G_F$ and $M_Z$ the tree value of $M_W$ is $1.423\times10^{-25}\ \mathrm{kg}$ against the measured $80.377$. Both routes miss by about $8.0\times10^{-11}$ J, in opposite directions, and the discrepancy is the one-loop correction: $\delta r=0.0355$, of which $+0.071$ is the running of $\alpha$ from zero momentum to $M_Z$ and about $-0.033$ is the top-quark and scalar loop contribution. The scale itself comes from the muon lifetime, $v=(\sqrt2G_F)^{-1/2}=4.38926\times10^{-25}\ \mathrm{kg}$, which is the electroweak counterpart of a pion decay constant. The same three inputs give $\Gamma(W\to e\xi_{\mathrm{neu}})=3.637\times10^{-11}\ \mathrm{J}$ at tree level against $223$ measured.
 
 The $\rho$ parameter is unity by identity for a doublet and deviates for larger multiplets, through the general formula $\rho=\sum v_i^2[T_i(T_i+1)-T_{3i}^2]/\sum 2v_i^2T_{3i}^2$, which gives one half for a triplet. The identity is the visible sign of a custodial $SU(2)$ symmetry of the potential that the vacuum preserves and the hypercharge gauging breaks. The measurement of $\rho$ to four parts in $10^4$ is therefore a bound on any additional multiplet's vacuum expectation value.
 
@@ -500,7 +502,7 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 | $\xi_{\mathrm{scl}}$, $\tilde\Xi=\xi e_t$ | The same object in the W/Z and Higgs articles |
 | $\tilde\omicron_{\mathrm{pot}}$ | The conjugate doublet of hypercharge $-\tfrac12$ |
 | $\mu^2$, $\digamma_{\mathrm{qtc}}$ | The two parameters of the potential; $\mu^2=\digamma_{\mathrm{qtc}} v^2$ |
-| $v$ | Vacuum expectation value, $\sqrt2\langle\omicron_{\mathrm{pot}}^0\rangle=246.2197$ GeV |
+| $v$ | Vacuum expectation value, $\sqrt2\langle\omicron_{\mathrm{pot}}^0\rangle=4.38926\times10^{-25}\ \mathrm{kg}$ |
 | $h$ | The radial excitation of the neutral component |
 | $\omicron_{\mathrm{pot},0}$ | The vacuum $\frac{1}{\sqrt2}(0,v)^{T}$ |
 | $\tau_a=\sigma_a/2$ | Weak-isospin generators in the doublet |
@@ -512,7 +514,7 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 | $g_{hWW}$, $g_{hZZ}$, $g_{hhh}$, $g_{hhhh}$ | Scalar couplings, fixed by the masses |
 | $\rho$ | $M_W^2/(M_Z^2\cos^2\theta_W)$, identically one for a doublet |
 | $\delta r$ | The correction to the tree-level mass relation, $0.0355$, computed from $\alpha(0)$ |
-| $G_F$ | $1.1663787\times10^{-5}$ GeV$^{-2}$, fixing $v$ |
+| $G_F$ | $2.07926\times10^{-32}\ \mathrm{kg}$$^{-2}$, fixing $v$ |
 | $\xi_a$ | The three would-be Goldstone fields |
 
 ## Further Reading

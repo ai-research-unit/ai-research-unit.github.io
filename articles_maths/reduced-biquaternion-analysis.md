@@ -97,13 +97,13 @@ $$
 
 **Theorem (the Laplacian).** The Euclidean Laplacian in the four real coordinates is
 $$
-\Delta=\partial^2/\partial q_{\blacktriangle}^2+\partial^2/\partial q'^2_{\blacktriangle}+\partial^2/\partial q_{\blacktriangledown}^2+\partial^2/\partial q'^2_{\blacktriangledown}
+\Delta=\partial^2/\partial q_{\blacktriangle}^2+\partial^2/\partial q'{}^2_{\blacktriangle}+\partial^2/\partial q_{\blacktriangledown}^2+\partial^2/\partial q'{}^2_{\blacktriangledown}
 =4\bigl(\partial^2/\partial Q_{\blacktriangle}\partial\bar Q_{\blacktriangle}+\partial^2/\partial Q_{\blacktriangledown}\partial\bar Q_{\blacktriangledown}\bigr)
 =8\bigl(\partial^2/\partial Q_{+}\partial\bar Q_{+}+\partial^2/\partial Q_{-}\partial\bar Q_{-}\bigr).
 $$
 As a check, $\Delta K=8$ and $\Delta Q_{+}=\Delta Q_{-}=0$.
 
-*Proof.* For a complex variable $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ one has $\partial/\partial q_{\blacktriangle}=\partial/\partial Q_{\blacktriangle}+\partial/\partial\bar Q_{\blacktriangle}$ and $\partial/\partial q'_{\blacktriangle}=i(\partial/\partial Q_{\blacktriangle}-\partial/\partial\bar Q_{\blacktriangle})$, so $\partial^2/\partial q_{\blacktriangle}^2+\partial^2/\partial q'^2_{\blacktriangle}=4\partial^2/\partial Q_{\blacktriangle}\partial\bar Q_{\blacktriangle}$, and likewise for $Q_{\blacktriangledown}$; this gives the middle expression. The change of variables $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ gives $\partial/\partial Q_{\blacktriangle}=\partial/\partial Q_{+}+\partial/\partial Q_{-}$ and $\partial/\partial Q_{\blacktriangledown}=\partial/\partial Q_{+}-\partial/\partial Q_{-}$, whence $\partial^2/\partial Q_{\blacktriangle}\partial\bar Q_{\blacktriangle}+\partial^2/\partial Q_{\blacktriangledown}\partial\bar Q_{\blacktriangledown}=2(\partial^2/\partial Q_{+}\partial\bar Q_{+}+\partial^2/\partial Q_{-}\partial\bar Q_{-})$, the last expression. For the check: $K=\tfrac12(\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2})$ and $\partial^2/\partial Q_{+}\partial\bar Q_{+}\lvert Q_{+}\rvert^{2}=1$, so $8(\tfrac12+\tfrac12)=8$; and the holomorphic coordinates are annihilated by the conjugate derivations.
+*Proof.* For a complex variable $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ one has $\partial/\partial q_{\blacktriangle}=\partial/\partial Q_{\blacktriangle}+\partial/\partial\bar Q_{\blacktriangle}$ and $\partial/\partial q'_{\blacktriangle}=i(\partial/\partial Q_{\blacktriangle}-\partial/\partial\bar Q_{\blacktriangle})$, so $\partial^2/\partial q_{\blacktriangle}^2+\partial^2/\partial q'{}^2_{\blacktriangle}=4\partial^2/\partial Q_{\blacktriangle}\partial\bar Q_{\blacktriangle}$, and likewise for $Q_{\blacktriangledown}$; this gives the middle expression. The change of variables $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ gives $\partial/\partial Q_{\blacktriangle}=\partial/\partial Q_{+}+\partial/\partial Q_{-}$ and $\partial/\partial Q_{\blacktriangledown}=\partial/\partial Q_{+}-\partial/\partial Q_{-}$, whence $\partial^2/\partial Q_{\blacktriangle}\partial\bar Q_{\blacktriangle}+\partial^2/\partial Q_{\blacktriangledown}\partial\bar Q_{\blacktriangledown}=2(\partial^2/\partial Q_{+}\partial\bar Q_{+}+\partial^2/\partial Q_{-}\partial\bar Q_{-})$, the last expression. For the check: $K=\tfrac12(\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2})$ and $\partial^2/\partial Q_{+}\partial\bar Q_{+}\lvert Q_{+}\rvert^{2}=1$, so $8(\tfrac12+\tfrac12)=8$; and the holomorphic coordinates are annihilated by the conjugate derivations.
 
 **Corollary (the differentiable functions are harmonic).** A differentiable reduced biquaternion function $f(\breve Q)=G_{1}(Q_{+})\Pi_++G_{2}(Q_{-})\Pi_-$ satisfies
 $$
@@ -113,7 +113,7 @@ $$
 $$
 each component being annihilated by the conjugate derivative of its own coordinate, $\partial/\partial\bar Q_{+}G_{1}=0$ and $\partial/\partial\bar Q_{-}G_{2}=0$.
 
-*Proof.* A holomorphic function of one complex variable has harmonic real and imaginary parts, the Cauchy–Riemann equations giving $\partial^2/\partial q_{\blacktriangle}^2+\partial^2/\partial q'^2_{\blacktriangle}$ applied to each part equal to zero; the components are decoupled and the total Laplacian is the sum of the two-dimensional Laplacians of the two components, up to the factor of the change of variables.
+*Proof.* A holomorphic function of one complex variable has harmonic real and imaginary parts, the Cauchy–Riemann equations giving $\partial^2/\partial q_{\blacktriangle}^2+\partial^2/\partial q'{}^2_{\blacktriangle}$ applied to each part equal to zero; the components are decoupled and the total Laplacian is the sum of the two-dimensional Laplacians of the two components, up to the factor of the change of variables.
 
 ## Functions on a Subspace
 

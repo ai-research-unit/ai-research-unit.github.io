@@ -166,7 +166,7 @@ $$
 \mathbb{Z}[i] = \{q + i q' : q, q' \in \mathbb{Z}\} \subseteq \mathbb{C},
 $$
 
-with the **norm** $\langle q+i q'\rangle_{*} = q^2 + q'^2 = (q+i q')(q-i q')$.
+with the **norm** $\langle q+i q'\rangle_{*} = q^2 + q'{}^2 = (q+i q')(q-i q')$.
 
 **Proposition.** $\mathbb{Z}[i]$ is a subring of $\mathbb{C}$ and an integral domain; its field of fractions is $\mathbb{Q}(i)$; its group of invertibles is $\{\pm 1, \pm i\}$; and the norm is multiplicative.
 
@@ -176,7 +176,7 @@ $$
 \frac{q_1+i q'_1}{q_2+i q'_2} = \frac{(q_1+i q'_1)(q_2-i q'_2)}{q_2^2+(q'_2)^2} \in \mathbb{Q}(i) \quad (q_2+i q'_2 \neq 0),
 $$
 
-so $\operatorname{Frac}(\mathbb{Z}[i]) \subseteq \mathbb{Q}(i)$; conversely $\mathbb{Q} \subseteq \operatorname{Frac}(\mathbb{Z}[i])$ and $i \in \operatorname{Frac}(\mathbb{Z}[i])$, so $\mathbb{Q}(i) \subseteq \operatorname{Frac}(\mathbb{Z}[i])$. Finally $Q$ is invertible if and only if $\langle Q\rangle_{*} = 1$, since $QU = 1$ gives $\langle Q\rangle_{*}\langle U\rangle_{*} = 1$ with both norms nonnegative integers; $q^2 + q'^2 = 1$ has the solutions $(\pm1,0), (0,\pm1)$.
+so $\operatorname{Frac}(\mathbb{Z}[i]) \subseteq \mathbb{Q}(i)$; conversely $\mathbb{Q} \subseteq \operatorname{Frac}(\mathbb{Z}[i])$ and $i \in \operatorname{Frac}(\mathbb{Z}[i])$, so $\mathbb{Q}(i) \subseteq \operatorname{Frac}(\mathbb{Z}[i])$. Finally $Q$ is invertible if and only if $\langle Q\rangle_{*} = 1$, since $QU = 1$ gives $\langle Q\rangle_{*}\langle U\rangle_{*} = 1$ with both norms nonnegative integers; $q^2 + q'{}^2 = 1$ has the solutions $(\pm1,0), (0,\pm1)$.
 
 ### Euclidean Structure
 
@@ -198,11 +198,11 @@ so for $Q_3 = Q_1 - ZQ_2$ we get $\langle Q_3\rangle_{*} = \langle Q_2\rangle_{*
 
 **Corollary (the primes of $\mathbb{Z}[i]$).** Let $p$ be a rational prime. If $p \equiv 3 \pmod 4$ then $p$ remains prime in $\mathbb{Z}[i]$; if $p \equiv 1 \pmod 4$ then $p$ splits as $p = \pi\bar\pi$ with $\pi$ and $\bar\pi$ nonassociate primes; and $2 = -i(1+i)^2$ ramifies.
 
-**Proof.** If $p$ were not prime in $\mathbb{Z}[i]$ then $p = Q_1Q_2$ with $\langle Q_1\rangle_{*}, \langle Q_2\rangle_{*} > 1$, so $p^2 = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$ forces $\langle Q_1\rangle_{*} = \langle Q_2\rangle_{*} = p$, giving $p = q_1^2 + q_1'^2$; this is impossible for $p \equiv 3 \pmod 4$, since squares are $0$ or $1$ modulo $4$ and $q_1^2 + q_1'^2 \equiv 3 \pmod 4$ has no solution. For $p \equiv 1 \pmod 4$ the congruence $m^2 \equiv -1 \pmod p$ is soluble, so $p \mid (m+i)(m-i)$ while $p$ divides neither factor in $\mathbb{Z}[i]$ (as $p \nmid m$ and $p \nmid 1$), and since $\mathbb{Z}[i]$ is a unique factorization domain, $p$ admits a nontrivial factorization $p = \pi\bar\pi$ with $\langle \pi\rangle_{*} = p$. Finally $(1+i)^2 = 2i$ gives $2 = -i(1+i)^2$.
+**Proof.** If $p$ were not prime in $\mathbb{Z}[i]$ then $p = Q_1Q_2$ with $\langle Q_1\rangle_{*}, \langle Q_2\rangle_{*} > 1$, so $p^2 = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$ forces $\langle Q_1\rangle_{*} = \langle Q_2\rangle_{*} = p$, giving $p = q_1^2 + q_1'{}^2$; this is impossible for $p \equiv 3 \pmod 4$, since squares are $0$ or $1$ modulo $4$ and $q_1^2 + q_1'{}^2 \equiv 3 \pmod 4$ has no solution. For $p \equiv 1 \pmod 4$ the congruence $m^2 \equiv -1 \pmod p$ is soluble, so $p \mid (m+i)(m-i)$ while $p$ divides neither factor in $\mathbb{Z}[i]$ (as $p \nmid m$ and $p \nmid 1$), and since $\mathbb{Z}[i]$ is a unique factorization domain, $p$ admits a nontrivial factorization $p = \pi\bar\pi$ with $\langle \pi\rangle_{*} = p$. Finally $(1+i)^2 = 2i$ gives $2 = -i(1+i)^2$.
 
 **Theorem (Fermat).** A positive integer $n$ is a sum of two squares of integers if and only if every prime $p \equiv 3 \pmod 4$ occurs in the prime factorization of $n$ with an even exponent.
 
-**Proof.** By the description of the primes of $\mathbb{Z}[i]$, an element $n \in \mathbb{Z}$ is a norm $\langle Q\rangle_{*}$ for some $Q \in \mathbb{Z}[i]$ exactly when the primes $p \equiv 3 \pmod 4$ dividing $n$ divide it to an even power: such primes stay prime and their exponents in $\langle Q\rangle_{*}$ are twice their exponents in $Q$, while the primes $p \equiv 1 \pmod 4$ and the prime $2$ are norms of elements and can be distributed arbitrarily. The norm of $Q = q + i q'$ is $q^2 + q'^2$.
+**Proof.** By the description of the primes of $\mathbb{Z}[i]$, an element $n \in \mathbb{Z}$ is a norm $\langle Q\rangle_{*}$ for some $Q \in \mathbb{Z}[i]$ exactly when the primes $p \equiv 3 \pmod 4$ dividing $n$ divide it to an even power: such primes stay prime and their exponents in $\langle Q\rangle_{*}$ are twice their exponents in $Q$, while the primes $p \equiv 1 \pmod 4$ and the prime $2$ are norms of elements and can be distributed arbitrarily. The norm of $Q = q + i q'$ is $q^2 + q'{}^2$.
 
 **Remark.** $\mathbb{Z}[i]$ is the ring of integers of the quadratic field $\mathbb{Q}(i)$, and the example shows the general mechanism by which arithmetic in a number field controls representations of integers by quadratic forms; quadratic form theory in this corpus is developed in category 14, and the use made here is only to exhibit $\mathbb{Z}[i]$ as a Euclidean domain inside $\mathbb{C}$.
 
@@ -250,7 +250,7 @@ $\mathbb{C} = \mathbb{R}[x]/(x^2+1) = \mathbb{R}(i)$ is the quadratic extension 
 
 Conjugation $Q \mapsto \bar Q$ is the unique nontrivial $\mathbb{R}$-automorphism, with $\operatorname{gal}(\mathbb{C}/\mathbb{R}) \cong \mathbb{Z}/2\mathbb{Z}$ and fixed field $\mathbb{R}$; the norm $\langle Q\rangle_{*} = Q\bar Q$ is multiplicative, and $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$. Every element outside $\mathbb{R}$ has minimal polynomial $x^2 - T(Q)x + \langle Q\rangle_{*}$ over $\mathbb{R}$. The roots of unity form the group $\mu \cong \mathbb{Q}/\mathbb{Z}$, and $\mathbb{C}$ contains every cyclotomic field and every algebraic extension of $\mathbb{Q}$. As a field, $\mathbb{C}$ has $2^{2^{\aleph_0}}$ automorphisms, of which only the identity and conjugation are continuous; it is the unique algebraically closed field of characteristic $0$ and cardinality $2^{\aleph_0}$ up to isomorphism, and it is isomorphic as an abstract field, but not as a topological or valued field, to the completed algebraic closure of $\mathbb{Q}_p$.
 
-Inside $\mathbb{C}$ the Gaussian integers $\mathbb{Z}[i]$ form a Euclidean domain for the norm $q^2+q'^2$, hence a unique factorization domain; this yields the description of the primes of $\mathbb{Z}[i]$, with $p \equiv 3 \pmod 4$ inert, $p \equiv 1 \pmod 4$ split and $2$ ramified, and gives Fermat's criterion for an integer to be a sum of two squares. The rational function field $\mathbb{C}(t)$ has automorphism group $\operatorname{Aut}(\mathbb{C}(t)/\mathbb{C}) \cong \operatorname{PGL}_2(\mathbb{C})$ acting by fractional linear substitutions, with finite subgroups the cyclic, dihedral and polyhedral groups, and $\mathbb{C}(t)$ is an example of a field that is neither algebraically closed nor real closed but whose algebraic closure is, as an abstract field, isomorphic to $\mathbb{C}$.
+Inside $\mathbb{C}$ the Gaussian integers $\mathbb{Z}[i]$ form a Euclidean domain for the norm $q^2+q'{}^2$, hence a unique factorization domain; this yields the description of the primes of $\mathbb{Z}[i]$, with $p \equiv 3 \pmod 4$ inert, $p \equiv 1 \pmod 4$ split and $2$ ramified, and gives Fermat's criterion for an integer to be a sum of two squares. The rational function field $\mathbb{C}(t)$ has automorphism group $\operatorname{Aut}(\mathbb{C}(t)/\mathbb{C}) \cong \operatorname{PGL}_2(\mathbb{C})$ acting by fractional linear substitutions, with finite subgroups the cyclic, dihedral and polyhedral groups, and $\mathbb{C}(t)$ is an example of a field that is neither algebraically closed nor real closed but whose algebraic closure is, as an abstract field, isomorphic to $\mathbb{C}$.
 
 | Property | Value for $\mathbb{C}$ |
 |---|---|
@@ -286,7 +286,7 @@ Inside $\mathbb{C}$ the Gaussian integers $\mathbb{Z}[i]$ form a Euclidean domai
 | $\overline{\mathbb{Q}}$, $\mathbb{C}_p$ | Algebraic numbers; completed algebraic closure of $\mathbb{Q}_p$ |
 | $\operatorname{Frac}$ | Field of fractions, $\operatorname{Frac}(\mathbb{Z}[i]) = \mathbb{Q}(i)$ |
 | $\operatorname{tr.deg}$ | Transcendence degree |
-| $\mathbb{Z}[i]$ | Gaussian integers, norm $\langle q+i q'\rangle_{*} = q^2+q'^2$ |
+| $\mathbb{Z}[i]$ | Gaussian integers, norm $\langle q+i q'\rangle_{*} = q^2+q'{}^2$ |
 | $\mathrm{Cl}_{0,1}$ | Clifford algebra isomorphic to $\mathbb{C}$ |
 | $\mathbb{C}(t)$ | Rational function field; $\operatorname{Aut}(\mathbb{C}(t)/\mathbb{C}) \cong \operatorname{PGL}_2(\mathbb{C})$ |
 | $\operatorname{PGL}_2(\mathbb{C})$ | $\operatorname{GL}_2(\mathbb{C})/\mathbb{C}^\times$, fractional linear substitutions |

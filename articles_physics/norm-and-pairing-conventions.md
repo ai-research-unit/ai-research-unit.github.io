@@ -23,7 +23,7 @@ and the convention is one of **notation, not of substance**: the pair is the for
 **Bars around a complex element are the ordinary complex modulus.** For $Q=q+iq'$,
 
 $$
-\lvert Q\rvert=\sqrt{Q\bar Q}=\sqrt{q^2+q'^2},
+\lvert Q\rvert=\sqrt{Q\bar Q}=\sqrt{q^2+q'{}^2},
 $$
 
 a real and non-negative number. The bars are the modulus and not a bracket of the layer: the algebraic norms keep their bracket, $\langle Q\rangle=Q^2$ and $\langle Q\rangle_{*}=Q\bar Q$. The same bars apply to a complex coefficient of a biquaternion, $\lvert Q_{\imath}\rvert=\sqrt{q_{\imath}^2+{q'_{\imath}}^2}$; over $\mathbb{C}$ the square of the modulus is the Hermitian norm, $\lvert Q\rvert^2=\langle Q\rangle_{*}$.
@@ -142,7 +142,7 @@ A boost is a unit element and is not $*$-unitary: $\tilde U_{\Psi,\mathrm b}$ is
 $$
 \tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
 $$
-a Hermitian element of norm one; it carries the glyph $\tilde U$ of every unit element. It is the **frame rotor**; the four-vector factor $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ is a different object, and §*The Polar Word and the Three Pairings* separates the four objects called a boost. Where an infinitesimal generator is needed it is read from the exponential as the pure element $\tfrac12 i\vec u_{\mathrm b}$, and the Lorentz brackets are written on the pure elements $\tfrac12\vec e_\imath$ and $\tfrac12 i\vec e_\imath$. No letter $\mathrm{Kr}$ is introduced for the Lorentz boost.
+a Hermitian element of norm one; it carries the glyph $\tilde U$ of every unit element. It is the **frame rotor**; the four-vector factor $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ is a different object, and §*The Polar Word and the Three Pairings* separates the four objects called a boost. Where an infinitesimal generator is needed it is read from the exponential as the pure element $\tfrac12 i\vec u_{\mathrm b}$, and the Lorentz brackets are written on the pure elements $\tfrac12\vec e_{\imath}$ and $\tfrac12 i\vec e_{\imath}$. No letter $\mathrm{Kr}$ is introduced for the Lorentz boost.
 
 ## The Polar Word and the Three Pairings
 

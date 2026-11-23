@@ -139,7 +139,7 @@ The split biquaternion Cauchy–Riemann operator $\tilde\nabla_\Phi = \sum_\mu e
 | $\tilde\nabla_\Phi^2 = (\partial^2/\partial Q_t^2-\Delta_\Phi) + 2\sum_k \vec e_k\partial^2/(\partial Q_t\,\partial Q_k)$ | Square of the operator, not the d'Alembertian |
 | $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$ | Left-regular (monogenic) condition |
 | $G_{\mathrm{fn}} = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ | Cauchy kernel on the quaternion subspace |
-| $\|\tilde{Q}\|^2 = \sum_\mu(q_\mu^2+q'^2_\mu)$ | Euclidean norm squared |
+| $\|\tilde{Q}\|^2 = \sum_\mu(q_\mu^2+q'{}^2_\mu)$ | Euclidean norm squared |
 | $Z = \mathbb{H}\tilde\Pi_{\mathrm{id},1}\cup\mathbb{H}\tilde\Pi_{\mathrm{id},2}$ | Zero divisor locus |
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | Quaternion subspace, a division algebra |
 

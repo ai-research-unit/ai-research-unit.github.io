@@ -5,7 +5,7 @@
 
 This article collects the topology of the split-complex algebra $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$ as a space: its contractibility as $\mathbb{R}^2$, its Euclidean unit circle, its null cone as a pair of lines, the link of the null cone, the topology of the group of invertibles and its four components, the deformation retract of the complement of the null cone, and the null cone as the frontier of the four sign classes of ${\mathbb{C}_{\mathrm{spl}}}^\times$. It is the two-dimensional counterpart of the higher-dimensional zero-divisor cones, and the degeneration is complete: the null cone drops from a real hypersurface to two lines, its link from a connected manifold to four points, and the group of invertibles from connected to four components.
 
-The article uses the algebra of *Split-Complex Algebra*, the norm $\langle Q\rangle_{*}=q^2-q'^2$ and the invertibility criterion of *Norm and Invertibility in the General Split-Complex Algebra*, the zero-divisor set of *Zero Divisors of the Split-Complex Algebra*, the idempotents of *Square Roots of One and the Idempotents of the Split-Complex Algebra*, and the group structure of *Split-Complex Exponential and Lie Group Structure*. No physics is invoked and no new result is claimed.
+The article uses the algebra of *Split-Complex Algebra*, the norm $\langle Q\rangle_{*}=q^2-q'{}^2$ and the invertibility criterion of *Norm and Invertibility in the General Split-Complex Algebra*, the zero-divisor set of *Zero Divisors of the Split-Complex Algebra*, the idempotents of *Square Roots of One and the Idempotents of the Split-Complex Algebra*, and the group structure of *Split-Complex Exponential and Lie Group Structure*. No physics is invoked and no new result is claimed.
 
 ## The Algebra as a Topological Space
 
@@ -34,12 +34,12 @@ So none of the four lines of *The Involutions, the Subspaces and the Idempotent 
 **Definition.** The **Euclidean unit circle** is
 
 $$
-S^1_E=\{Q\in\mathbb{C}_{\mathrm{spl}}:\lVert Q\rVert=1\}=\{(q,q'):q^2+q'^2=1\}\cong S^1,
+S^1_E=\{Q\in\mathbb{C}_{\mathrm{spl}}:\lVert Q\rVert=1\}=\{(q,q'):q^2+q'{}^2=1\}\cong S^1,
 $$
 
 a closed, compact, connected $1$-manifold.
 
-The circle is the wrong object here. Multiplication does not preserve $\lVert\cdot\rVert$, and $S^1_E$ is not contained in the invertibles. Indeed the null cone meets the circle where $q^2=q'^2$ and $q^2+q'^2=1$, that is at the four points
+The circle is the wrong object here. Multiplication does not preserve $\lVert\cdot\rVert$, and $S^1_E$ is not contained in the invertibles. Indeed the null cone meets the circle where $q^2=q'{}^2$ and $q^2+q'{}^2=1$, that is at the four points
 
 $$
 S^1_E\cap\mathcal{N}=\Bigl\{\pm\tfrac{1}{\sqrt2}(1+j),\ \pm\tfrac{1}{\sqrt2}(1-j)\Bigr\}=\bigl\{\pm\sqrt2\,\Pi_+,\ \pm\sqrt2\,\Pi_-\bigr\},
@@ -58,14 +58,14 @@ the field $\mathbb{C}$ is the definite exception, where $S^1\subseteq\mathbb{C}^
 **Definition.** The **null cone**, or singular set, is
 
 $$
-\mathcal{N}=\{Q\in\mathbb{C}_{\mathrm{spl}}:\langle Q\rangle_{*}=0\}=\{Q:q^2=q'^2\}=\{q=q'\}\cup\{q=-q'\},
+\mathcal{N}=\{Q\in\mathbb{C}_{\mathrm{spl}}:\langle Q\rangle_{*}=0\}=\{Q:q^2=q'{}^2\}=\{q=q'\}\cup\{q=-q'\},
 $$
 
 the union of the two **null lines** $\mathbb{R}(1+j)$ and $\mathbb{R}(1-j)$, equivalently the union of the two idempotent lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$.
 
 **Theorem.** The null cone is a closed real algebraic cone with apex $0$, of real dimension $1$, with empty interior; it is the union of two distinct lines through the origin, is a real $1$-manifold away from the apex, and is singular at the apex. Its complement $\mathbb{C}_{\mathrm{spl}}\setminus\mathcal{N}={\mathbb{C}_{\mathrm{spl}}}^\times$ is dense and open.
 
-**Proof.** The form $\langle q,q'\rangle_{*}=q^2-q'^2=(q-q')(q+q')$ is homogeneous of degree $2$, so $\mathcal{N}$ is a cone; it is closed, being the zero set of a polynomial. It factors into the two linear factors $q-q'=0$ and $q+q'=0$, whose zero sets are the two distinct lines of slope $\pm1$, each of real dimension $1$; hence $\mathcal{N}$ has real dimension $1$ and empty interior (a finite union of lines contains no open set). Each line is a real $1$-manifold through $0$, but their union is not a manifold at $0$, where the two branches cross. The complement of a closed set of empty interior is open and dense.
+**Proof.** The form $\langle q,q'\rangle_{*}=q^2-q'{}^2=(q-q')(q+q')$ is homogeneous of degree $2$, so $\mathcal{N}$ is a cone; it is closed, being the zero set of a polynomial. It factors into the two linear factors $q-q'=0$ and $q+q'=0$, whose zero sets are the two distinct lines of slope $\pm1$, each of real dimension $1$; hence $\mathcal{N}$ has real dimension $1$ and empty interior (a finite union of lines contains no open set). Each line is a real $1$-manifold through $0$, but their union is not a manifold at $0$, where the two branches cross. The complement of a closed set of empty interior is open and dense.
 
 The differentiability statement that each line is smooth at its non-apex points, equivalently that the cone is smooth away from the apex, is analytic and is in *Split-Complex Analysis*.
 
@@ -91,7 +91,7 @@ $$
 
 the two null directions.
 
-**Proof.** A point of $\mathcal{N}$ with $\lVert\cdot\rVert=1$ satisfies $q^2=q'^2$ and $q^2+q'^2=1$, so $2q^2=1$, $q=\pm 1/\sqrt2$ and $q'=\pm q$ with the two signs matched by $q=\pm q'$; this gives the four listed points. Since the null cone is the union of two lines, its projectivisation, the set of its lines, has two elements.
+**Proof.** A point of $\mathcal{N}$ with $\lVert\cdot\rVert=1$ satisfies $q^2=q'{}^2$ and $q^2+q'{}^2=1$, so $2q^2=1$, $q=\pm 1/\sqrt2$ and $q'=\pm q$ with the two signs matched by $q=\pm q'$; this gives the four listed points. Since the null cone is the union of two lines, its projectivisation, the set of its lines, has two elements.
 
 **Remark (the link).** Here the link of the null cone is four points, and the null cone of $\mathbb{C}_{\mathrm{spl}}$ is a union of linear subspaces rather than a nonsingular real hypersurface.
 
@@ -147,7 +147,7 @@ which is continuous on $[0,1]\times{\mathbb{C}_{\mathrm{spl}}}^\times$, fixes ${
 
 **Corollary.** Each of the four branches of ${\mathbb{C}_{\mathrm{spl}}}^{(\pm1)}$ is homeomorphic to $\mathbb{R}$ and contractible, so ${\mathbb{C}_{\mathrm{spl}}}^\times$ is homotopy equivalent to the four-point space $\pi_0({\mathbb{C}_{\mathrm{spl}}}^\times)$; in particular $\pi_1({\mathbb{C}_{\mathrm{spl}}}^\times)=0$, and the complement of the null cone has the homotopy type of four isolated points.
 
-**Remark (the definite analogue).** For the complex field the same construction retracts $\mathbb{C}^\times$ onto the unit circle $S^1$, a connected $1$-manifold, so $\mathbb{C}^\times$ is homotopy equivalent to $S^1$ with $\pi_1\cong\mathbb{Z}$. Replacing the definite level set $q^2+q'^2=1$ by the indefinite level set $q^2-q'^2=\pm1$ turns one circle into four lines: the transverse intersection of the level set with a Euclidean sphere becomes the pair of null lines, and the fundamental group is killed.
+**Remark (the definite analogue).** For the complex field the same construction retracts $\mathbb{C}^\times$ onto the unit circle $S^1$, a connected $1$-manifold, so $\mathbb{C}^\times$ is homotopy equivalent to $S^1$ with $\pi_1\cong\mathbb{Z}$. Replacing the definite level set $q^2+q'{}^2=1$ by the indefinite level set $q^2-q'{}^2=\pm1$ turns one circle into four lines: the transverse intersection of the level set with a Euclidean sphere becomes the pair of null lines, and the fundamental group is killed.
 
 ## The Null Cone as a Frontier
 
@@ -166,9 +166,9 @@ The group of invertibles ${\mathbb{C}_{\mathrm{spl}}}^\times=\mathbb{C}_{\mathrm
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}^2$ | Split complex algebra as a topological space; contractible |
-| $\lVert Q\rVert=(q^2+q'^2)^{1/2}$ | Euclidean norm; topological algebra |
+| $\lVert Q\rVert=(q^2+q'{}^2)^{1/2}$ | Euclidean norm; topological algebra |
 | $S^1_E=\{\lVert Q\rVert=1\}$ | Euclidean unit circle; not contained in the invertibles |
-| $\langle Q\rangle_{*}=q^2-q'^2$ | Norm |
+| $\langle Q\rangle_{*}=q^2-q'{}^2$ | Norm |
 | $\mathcal{N}=\{\langle Q\rangle_{*}=0\}$ | Null cone; the two lines $q=\pm q'$; contractible, singular at $0$ |
 | $L=\mathcal{N}\cap S^1_E$ | Link of the null cone; four points |
 | $\mathbb{P}(\mathcal{N})$ | Projectivised null cone; the two null directions |

@@ -49,10 +49,10 @@ Over $\mathbb{R}$ each equation has the single solution $Ζ_{\pm}=0$, hence $Ζ=
 **Remark (the scalar form).** In the basis $1,j$ the same equation reads
 
 $$
-x^{2}+x'^{2}=0,\qquad 2xx'=0,
+x^{2}+x'{}^{2}=0,\qquad 2xx'=0,
 $$
 
-because $Ζ^{2}=(x^{2}+x'^{2})+2xx'j$. The first equation forces $x=x'=0$ over $\mathbb{R}$, since both squares are non-negative; the second is then automatic. The scalar form shows the same result without the idempotent basis.
+because $Ζ^{2}=(x^{2}+x'{}^{2})+2xx'j$. The first equation forces $x=x'=0$ over $\mathbb{R}$, since both squares are non-negative; the second is then automatic. The scalar form shows the same result without the idempotent basis.
 
 ### The Zero Element
 
@@ -172,7 +172,7 @@ A nilpotent ideal is an ideal $I$ with $I^{n}=0$ for some $n$; since every nonze
 
 **Every distinguished subspace contains $0$ and no nonzero nilpotent.**
 
-The real line $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, the split imaginary line $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, the two idempotent lines $\mathbb{R}\Pi_{\mathrm{id},\pm}$, and the whole algebra all have the same square-zero set, $\{0\}$. On the real line, $q^{2}=0$ forces $q=0$; on the imaginary line, $-q'^{2}=0$ forces $q'=0$; on an idempotent line, $(\lambda\Pi_{\mathrm{id},\pm})^{2}=\lambda^{2}\Pi_{\mathrm{id},\pm}$, which is zero only at $\lambda=0$. The distribution is the simplest possible: the origin in every subspace and nothing else.
+The real line $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, the split imaginary line $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, the two idempotent lines $\mathbb{R}\Pi_{\mathrm{id},\pm}$, and the whole algebra all have the same square-zero set, $\{0\}$. On the real line, $q^{2}=0$ forces $q=0$; on the imaginary line, $-q'{}^{2}=0$ forces $q'=0$; on an idempotent line, $(\lambda\Pi_{\mathrm{id},\pm})^{2}=\lambda^{2}\Pi_{\mathrm{id},\pm}$, which is zero only at $\lambda=0$. The distribution is the simplest possible: the origin in every subspace and nothing else.
 
 ## Summary
 

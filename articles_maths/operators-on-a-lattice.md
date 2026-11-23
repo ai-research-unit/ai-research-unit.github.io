@@ -83,8 +83,7 @@ $$
 f(0) = 0, \quad f(a) = a, \quad f(b) = b, \quad f(c) = b, \quad f(1) = 1 .
 $$
 
-This map is monotone. It is not join-preserving, because $b \vee c = 1$ gives $f(b \vee c) = f(1) =
-1$, while $f(b) \vee f(c) = b \vee b = b$, and $b \neq 1$. It is not meet-preserving either:
+This map is monotone. It is not join-preserving, because $b \vee c = 1$ gives $f(b \vee c) = f(1) = 1$, while $f(b) \vee f(c) = b \vee b = b$, and $b \neq 1$. It is not meet-preserving either:
 $a \wedge c = 0$ gives $f(a \wedge c) = 0$, while $f(a) \wedge f(c) = a \wedge b = 0$, so this
 instance agrees, but $a \wedge b = 0$ gives $0$, while $f(a) \wedge f(b) = a \wedge b = 0$ agrees
 also; the failure of the meet is read on $c$ and the pair, where $b \wedge c = 0$ with image $0$
@@ -103,10 +102,8 @@ condition than a naive reading of "structure-preserving" suggests. The constants
 forget all of $L$; they are the elements of $\operatorname{End}(L)$ that are neither injective nor
 surjective, and they play the role of the zero of an operator algebra when the lattice is bounded.
 
-**Remark (bounded lattices).** If $L$ and $M$ are bounded, with least and greatest elements $0_L,
-1_L$ and $0_M, 1_M$, a **bounded lattice homomorphism** is one that also satisfies $h(0_L) = 0_M$
-and $h(1_L) = 1_M$. The constant maps are then homomorphisms only in the degenerate case $k = 0_M =
-1_M$. The distinction is recorded because the representation theorems of the corpus work with
+**Remark (bounded lattices).** If $L$ and $M$ are bounded, with least and greatest elements $0_L, 1_L$ and $0_M, 1_M$, a **bounded lattice homomorphism** is one that also satisfies $h(0_L) = 0_M$
+and $h(1_L) = 1_M$. The constant maps are then homomorphisms only in the degenerate case $k = 0_M = 1_M$. The distinction is recorded because the representation theorems of the corpus work with
 bounded homomorphisms, while the theory of congruences below works with the unital notions.
 
 ### The Endomorphism Monoid
@@ -117,8 +114,7 @@ $\operatorname{Aut}(L)$.
 
 **Proposition.** $\operatorname{End}(L)$ is a monoid, and $\operatorname{Aut}(L)$ is a group.
 
-**Proof.** The composite of two lattice homomorphisms is a lattice homomorphism: $h(g(x \vee y)) =
-h(g(x) \vee g(y)) = h(g(x)) \vee h(g(y))$, and dually for the meet. Composition is associative and
+**Proof.** The composite of two lattice homomorphisms is a lattice homomorphism: $h(g(x \vee y)) = h(g(x) \vee g(y)) = h(g(x)) \vee h(g(y))$, and dually for the meet. Composition is associative and
 $\mathrm{id}_L$ is a two-sided identity by *Sets, Functions and Relations*. A unit of the monoid is
 a bijective endomorphism with inverse in the monoid; by the proposition above that inverse is a
 lattice homomorphism, so the invertibles are exactly the automorphisms, and they form a group.
@@ -139,8 +135,7 @@ differ; the duality principle interchanges them.
 
 **Example (idempotent endomorphisms).** An endomorphism $e$ with $e \circ e = e$ is a
 **retraction** of $L$ onto the sublattice $e(L)$, which is the set of fixed points of $e$. In the
-power-set lattice $\mathcal{P}(X)$ of a set $X$ the maps $A \mapsto A \cap Y$ and $A \mapsto A \cup
-Y$, for a fixed $Y \subseteq X$, are idempotent lattice endomorphisms, with images the sublattices
+power-set lattice $\mathcal{P}(X)$ of a set $X$ the maps $A \mapsto A \cap Y$ and $A \mapsto A \cup Y$, for a fixed $Y \subseteq X$, are idempotent lattice endomorphisms, with images the sublattices
 $[\emptyset, Y]$ and $[Y, X]$. The lattice endomorphisms of $\mathcal{P}(X)$ are not the only maps
 that preserve the binary operations for that reason: a lattice homomorphism preserves $\wedge$ and
 $\vee$ as *binary* operations, and it need not preserve the empty join or the empty meet, so the
@@ -149,8 +144,7 @@ forced. The two
 examples above are the retractions onto the principal ideals and the principal filters, and the
 general classification of the idempotent endomorphisms of a power-set lattice is not needed here.
 
-**Example.** For the two-element lattice $\mathbf{2} = \{0, 1\}$ every map $\mathbf{2} \to
-\mathbf{2}$ is monotone, so $|\operatorname{End}(\mathbf{2})| = 4$: the identity, the two constants
+**Example.** For the two-element lattice $\mathbf{2} = \{0, 1\}$ every map $\mathbf{2} \to \mathbf{2}$ is monotone, so $|\operatorname{End}(\mathbf{2})| = 4$: the identity, the two constants
 and the negation. The negation is an automorphism and the two constants are not, so
 $\operatorname{Aut}(\mathbf{2})$ has two elements.
 
@@ -221,8 +215,7 @@ on $L$, and for every congruence $\vartheta_{\mathrm{cng}}$ on $L$ the quotient 
 $\ker \pi = \vartheta_{\mathrm{cng}}$.
 
 **Proof.** The relation $\ker h$ is the kernel of the underlying function and is therefore an
-equivalence relation. If $h(x) = h(x')$ and $h(y) = h(y')$ then $h(x \vee y) = h(x) \vee h(y) =
-h(x') \vee h(y') = h(x' \vee y')$, so $\ker h$ is compatible with $\vee$; the argument for
+equivalence relation. If $h(x) = h(x')$ and $h(y) = h(y')$ then $h(x \vee y) = h(x) \vee h(y) = h(x') \vee h(y') = h(x' \vee y')$, so $\ker h$ is compatible with $\vee$; the argument for
 $\wedge$ is the same. The second statement is the definition of the quotient operations.
 
 **Theorem (first isomorphism theorem for lattices).** Let $h : L \to M$ be a surjective lattice
@@ -236,8 +229,7 @@ is a lattice isomorphism.
 
 **Proof.** The map $\bar h$ is well defined, because $[x] = [x']$ says exactly that $h(x) = h(x')$.
 It is injective by the same equivalence, and it is surjective because $h$ is. It preserves the
-operations: $\bar h([x] \vee [y]) = \bar h([x \vee y]) = h(x \vee y) = h(x) \vee h(y) = \bar h([x])
-\vee \bar h([y])$, and the same with $\wedge$. So $\bar h$ is a bijective homomorphism, hence an
+operations: $\bar h([x] \vee [y]) = \bar h([x \vee y]) = h(x \vee y) = h(x) \vee h(y) = \bar h([x]) \vee \bar h([y])$, and the same with $\wedge$. So $\bar h$ is a bijective homomorphism, hence an
 isomorphism.
 
 The theorem says that a congruence and a quotient are two descriptions of the same passage from a
@@ -276,10 +268,8 @@ $\vartheta_{\mathrm{cng}} \neq \mathrm{id}$, so $x \mathrel{\vartheta_{\mathrm{c
   identified with $1$. In particular $b \mathrel{\vartheta_{\mathrm{cng}}} 1$ for a coatom $b \neq a$, and
   compatibility with the meet then gives $0 = b \wedge c \mathrel{\vartheta_{\mathrm{cng}}} 1 \wedge c = c$ for a third
   coatom $c$; so $0 \mathrel{\vartheta_{\mathrm{cng}}} c$, and with $c \mathrel{\vartheta_{\mathrm{cng}}} 1$ from the first step,
-  transitivity gives $0 \mathrel{\vartheta_{\mathrm{cng}}} 1$ and $\vartheta_{\mathrm{cng}}$ is universal. The case $1 \mathrel{\vartheta_{\mathrm{cng}}}
-  a$ is dual.
-- If $a \mathrel{\vartheta_{\mathrm{cng}}} b$ with $a \neq b$ two coatoms, then $a \vee b = 1$ gives $1 \mathrel{\vartheta_{\mathrm{cng}}}
-  b$, compatibility with the meet gives $c = 1 \wedge c \mathrel{\vartheta_{\mathrm{cng}}} b \wedge c = 0$ for the third
+  transitivity gives $0 \mathrel{\vartheta_{\mathrm{cng}}} 1$ and $\vartheta_{\mathrm{cng}}$ is universal. The case $1 \mathrel{\vartheta_{\mathrm{cng}}} a$ is dual.
+- If $a \mathrel{\vartheta_{\mathrm{cng}}} b$ with $a \neq b$ two coatoms, then $a \vee b = 1$ gives $1 \mathrel{\vartheta_{\mathrm{cng}}} b$, compatibility with the meet gives $c = 1 \wedge c \mathrel{\vartheta_{\mathrm{cng}}} b \wedge c = 0$ for the third
   coatom $c$, and compatibility with the join gives $1 = c \vee a \mathrel{\vartheta_{\mathrm{cng}}} 0 \vee a = a$; so
   $0 \mathrel{\vartheta_{\mathrm{cng}}} c$ and $c \mathrel{\vartheta_{\mathrm{cng}}} 1$, whence $0 \mathrel{\vartheta_{\mathrm{cng}}} 1$ and $\vartheta_{\mathrm{cng}}$ is
   universal.

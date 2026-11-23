@@ -274,7 +274,7 @@ and the **maximum** is $\theta = \pi$. For $\gamma \gg 1$, $\theta_{\min} \appro
 
 **Statement.** Evaluate the two-body formulas for $K^+ \to \pi^+ \pi^0$, and for the limits $\pi^0 \to \gamma\gamma$ (two massless daughters) and $\pi^+ \to \mu^+ \xi_{\mathrm{neu},\imath}$ (one massless daughter). Compare with the non-relativistic approximation.
 
-**Solution.** We use the standard masses $m_{K^+} = 493.677$, $m_{\pi^+} = 139.57039$, $m_{\pi^0} = 134.9768$, $m_\mu = 105.6583755$ MeV$/c^2$, and quote energies in MeV and momenta in MeV$/c$, the invertibles every display below carries.
+**Solution.** We use the standard masses $m_{K^+} = 8.8006\times10^{-28}$ kg, $m_{\pi^+} = 2.4881\times10^{-28}$ kg, $m_{\pi^0} = 2.4062\times10^{-28}$ kg, $m_\mu = 1.8835\times10^{-28}$ kg, and quote energies in joules and momenta in kg m s$^{-1}$, the invertibles every display below carries.
 
 For $K^+ \to \pi^+\pi^0$, with $M = m_{K^+}$, $m_1 = m_{\pi^+}$, $m_2 = m_{\pi^0}$:
 $$
@@ -294,15 +294,15 @@ v_{\pi^+}^*/c = 0.826783,
 \qquad
 v_{\pi^0}^*/c = 0.835384 .
 $$
-The kinetic energies are $T_{\mathrm{kin},\pi^{+}} = 108.5454$ MeV and $T_{\mathrm{kin},\pi^{0}} = 110.5844$ MeV, whose sum is $219.1298$ MeV $= Q$, as required; the mass-shell residual $E_{\pi^+}^{*2} - m_{\pi^+}^2c^4 - p^{*2}c^2$ vanishes to round-off.
+The kinetic energies are $T_{\mathrm{kin},\pi^{+}} = 1.73909\times10^{-11}\ \mathrm{J}$ and $T_{\mathrm{kin},\pi^{0}} = 1.77176\times10^{-11}\ \mathrm{J}$, whose sum is $3.51085\times10^{-11}\ \mathrm{J}$ $= Q$, as required; the mass-shell residual $E_{\pi^+}^{*2} - m_{\pi^+}^2c^4 - p^{*2}c^2$ vanishes to round-off.
 
-The non-relativistic approximation of Problem 6 gives, with $\mu = m_1m_2/(m_1+m_2) = 68.6176$ MeV,
+The non-relativistic approximation of Problem 6 gives, with $\mu = m_1m_2/(m_1+m_2) = 1.09938\times10^{-11}\ \mathrm{J}$,
 $$
 p^*_{\rm NR}c = \sqrt{2\mu Q} = 173.4137\ \text{MeV},
 $$
 which is low by $15.46\%$; and the partition $T_{\mathrm{kin},1}/Q$ is $0.495348$ exactly, against the approximation $m_2/(m_1+m_2) = 0.491634$, an error of $0.75\%$. The momentum formula is poor here because $Q/(m_1+m_2) \approx 0.80$, far from the non-relativistic regime.
 
-A decay with a smaller release, $\Lambda \to p\pi^-$ ($M = 1115.683$, $m_p = 938.2721$, $m_{\pi^-} = 139.5704$ MeV$/c^2$, so $Q = 37.8405$ MeV, only $3.51\%$ of the mass sum), illustrates the opposite regime:
+A decay with a smaller release, $\Lambda \to p\pi^-$ ($M = 1.9889\times10^{-27}$ kg, $m_p = 1.6726\times10^{-27}$ kg, $m_{\pi^-} = 2.4881\times10^{-28}$ kg, so $Q = 6.06272\times10^{-12}\ \mathrm{J}$, only $3.51\%$ of the mass sum), illustrates the opposite regime:
 $$
 E_p^* = 943.6476\ \text{MeV},
 \qquad
@@ -319,14 +319,14 @@ v_{\pi^-}^*/c = 0.584645,
 \qquad
 \frac{m_{\pi^-}}{m_p+m_{\pi^-}} = 0.129491 .
 $$
-Here $\sqrt{2\mu Q} = 95.8908$ MeV, low by $4.66\%$, and the partition is in error by $8.9\%$.
+Here $\sqrt{2\mu Q} = 1.53634\times10^{-11}\ \mathrm{J}$, low by $4.66\%$, and the partition is in error by $8.9\%$.
 
-The two limiting checks confirm the formula in the regime $\beta_a^* = 1$. For the massless decay $\pi^0 \to \gamma\gamma$ ($M = m_{\pi^0} = 134.9768$ MeV$/c^2$),
+The two limiting checks confirm the formula in the regime $\beta_a^* = 1$. For the massless decay $\pi^0 \to \gamma\gamma$ ($M = m_{\pi^0} = 2.4062\times10^{-28}$ kg),
 $$
 E_\gamma^* = p^*c = \frac{Mc^2}{2} = 67.4884\ \text{MeV},
 \qquad Q = Mc^2 .
 $$
-For $\pi^+ \to \mu^+\xi_{\mathrm{neu},\imath}$ with a massless neutrino ($M = m_{\pi^+} = 139.57039$, $m_1 = m_\mu = 105.6583755$, $m_2 = 0$ MeV$/c^2$),
+For $\pi^+ \to \mu^+\xi_{\mathrm{neu},\imath}$ with a massless neutrino ($M = m_{\pi^+} = 2.4881\times10^{-28}$ kg, $m_1 = m_\mu = 1.8835\times10^{-28}$ kg, $m_2 = 0$),
 $$
 E_{\imath}^* = 109.7782\ \text{MeV},
 \qquad
@@ -336,7 +336,7 @@ p^*c = 29.7921\ \text{MeV},
 \qquad
 v_{\imath}^*/c = 0.271385,
 $$
-with $Q = 33.9120$ MeV and $T_{\mathrm{kin},\imath} = 4.1199$ MeV. In this decay $\mu = 0$, so the non-relativistic momentum formula $\sqrt{2\mu Q}$ vanishes and fails completely: a massless, necessarily ultrarelativistic daughter lies outside the non-relativistic limit.
+with $Q = 5.43330\times10^{-12}\ \mathrm{J}$ and $T_{\mathrm{kin},\imath} = 6.6008\times10^{-13}\ \mathrm{J}$. In this decay $\mu = 0$, so the non-relativistic momentum formula $\sqrt{2\mu Q}$ vanishes and fails completely: a massless, necessarily ultrarelativistic daughter lies outside the non-relativistic limit.
 
 ## Problem 6: The Non-Relativistic Limit
 
@@ -402,7 +402,7 @@ We have worked the relativistic kinematics of a two-body decay as an application
 
 4. **Threshold and opening angle.** The threshold is $M \ge m_1+m_2$; in the COM frame the opening angle is $\pi$, and for two massless daughters the lab opening angle has minimum $\theta_{\min} = \arccos(1 - 2/\gamma^2) \approx 2/\gamma$ at symmetric emission.
 
-5. **Numbers.** For $K^+ \to \pi^+\pi^0$ the exact values are $p^*c = 205.1379$ MeV and $T_{\mathrm{kin},\pi^{+}} = 108.5454$ MeV, $T_{\mathrm{kin},\pi^{0}} = 110.5844$ MeV; for $\Lambda \to p\pi^-$, $p^*c = 100.5797$ MeV. The massless limits $\pi^0 \to \gamma\gamma$ and $\pi^+ \to \mu^+\xi_{\mathrm{neu},\imath}$ reproduce $E_\gamma^* = Mc^2/2$ and the standard pion-decay energies.
+5. **Numbers.** For $K^+ \to \pi^+\pi^0$ the exact values are $p^*c = 3.28667\times10^{-11}\ \mathrm{J}$ and $T_{\mathrm{kin},\pi^{+}} = 1.73909\times10^{-11}\ \mathrm{J}$, $T_{\mathrm{kin},\pi^{0}} = 1.77176\times10^{-11}\ \mathrm{J}$; for $\Lambda \to p\pi^-$, $p^*c = 1.61146\times10^{-11}\ \mathrm{J}$. The massless limits $\pi^0 \to \gamma\gamma$ and $\pi^+ \to \mu^+\xi_{\mathrm{neu},\imath}$ reproduce $E_\gamma^* = Mc^2/2$ and the standard pion-decay energies.
 
 6. **Non-relativistic limit.** The exact formulas reduce to $K_a \approx (m_b/(m_1+m_2))Q$, $p^* \approx \sqrt{2\mu Q} = \mu v_{\rm rel}$, and Galilean velocity addition, with relative errors of order $Q/((m_1+m_2)c^2)$.
 
@@ -413,7 +413,7 @@ We have worked the relativistic kinematics of a two-body decay as an application
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector) |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |

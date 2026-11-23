@@ -104,10 +104,10 @@ The scalar field has no boost factor, so $\gamma$ is signed. $\gamma=E/(mc^{2})$
 
 ## The Euler Equation
 
-A fluid's acceleration law is the gradient of its energy equation, and here that gradient is one line. Differentiating the mass shell in space, with $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$ and $E=-\partial_t S_{\tilde\Xi}$ so that $\partial_jE=-\partial_tp_j$, and using $\partial_jp_\imath=\partial_\imathp_j$,
+A fluid's acceleration law is the gradient of its energy equation, and here that gradient is one line. Differentiating the mass shell in space, with $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$ and $E=-\partial_t S_{\tilde\Xi}$ so that $\partial_jE=-\partial_tp_j$, and using $\partial_jp_{\imath}=\partial_{\imath} p_j$,
 
 $$
-\frac{E}{c^{2}}\partial_jE-p_\imath\partial_jp_\imath=m\partial_jQ_{\mathrm{qnt}}
+\frac{E}{c^{2}}\partial_jE-p_{\imath}\partial_jp_{\imath}=m\partial_jQ_{\mathrm{qnt}}
 \qquad\Longrightarrow\qquad
 \left(\partial_t+\vec v\cdot\nabla\right)p_j=-\frac{1}{\gamma}\partial_jQ_{\mathrm{qnt}} .
 $$
@@ -158,7 +158,7 @@ The objection is that the quantum term looks like a pressure. In the non-relativ
 
 The class the fluid belongs to has a name, and naming it is the honest statement. A fluid whose stress depends on the gradients of its density rather than on the density alone is a Korteweg fluid, and a Korteweg fluid has no equation of state in the algebraic sense and a perfectly definite stress. This fluid is of that class, and the parent article's identity is what shows it: its pressure is a function of $\rho_{\mathrm{num}}$ and of the first two derivatives of $\rho_{\mathrm{num}}$, and of nothing else.
 
-What does exist is a stress, and the stress is not a pressure. The quantum force has the divergence form $\partial_\imath\sigma_{j\imath}$ with the tensor $\sigma$ exhibited in [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), and that tensor is not isotropic: it is not $p\,\delta_{ij}$ for any scalar $p$. A divergence of an anisotropic stress is a force, not a pressure. So the fluid is one with a quantum stress and without an equation of state, and the two statements are consistent because a stress tensor carries more than a scalar pressure.
+What does exist is a stress, and the stress is not a pressure. The quantum force has the divergence form $\partial_{\imath}\sigma_{j\imath}$ with the tensor $\sigma$ exhibited in [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), and that tensor is not isotropic: it is not $p\,\delta_{ij}$ for any scalar $p$. A divergence of an anisotropic stress is a force, not a pressure. So the fluid is one with a quantum stress and without an equation of state, and the two statements are consistent because a stress tensor carries more than a scalar pressure.
 
 The reader's check is the order of the derivatives. A barotropic pressure makes the force density $-\vec\nabla_\Phi p(\rho_{\mathrm{num}})=-p'(\rho_{\mathrm{num}})\vec\nabla_\Phi\rho_{\mathrm{num}}$, a term along the density's gradient and first order in it. The force density here is $\rho_{\mathrm{num}}\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, and $Q_{\mathrm{qnt}}$ already carries two derivatives of $\ln\rho_{\mathrm{num}}$, so the force is third order. No function of the density's value can turn two derivatives into none.
 

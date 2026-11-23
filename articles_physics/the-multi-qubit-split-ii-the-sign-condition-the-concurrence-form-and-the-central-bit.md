@@ -16,24 +16,24 @@ The article uses [The Material-Informational Split as a Superselection Structure
 
 ## The Eight Diagonal Candidates
 
-**Why the diagonal ansatz is the natural one.** The two-qubit state must be a Hermitian element of $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$ of trace one. The most economical candidates are the elements built from matched tensor products of the four units, because those are the elements that a product of two sector pictures would produce: informational times informational for the first pair of slots, material times material for the second. With the identity $e_t\otimes e_t=\mathrm I_4$ and the four material tensors $\vec e_\imath\otimes\vec e_\imath$ there are exactly eight such elements of trace one — the eight candidates of [The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$](the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.html), written there with the same letter $\tilde\Pi_{\mathrm{id}}$,
+**Why the diagonal ansatz is the natural one.** The two-qubit state must be a Hermitian element of $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$ of trace one. The most economical candidates are the elements built from matched tensor products of the four units, because those are the elements that a product of two sector pictures would produce: informational times informational for the first pair of slots, material times material for the second. With the identity $e_t\otimes e_t=\mathrm I_4$ and the four material tensors $\vec e_{\imath}\otimes\vec e_{\imath}$ there are exactly eight such elements of trace one — the eight candidates of [The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$](the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.html), written there with the same letter $\tilde\Pi_{\mathrm{id}}$,
 
 $$
-\tilde\Pi_{\mathrm{id},\epsilon}=\tfrac14\Bigl(e_t\otimes e_t+\sum_{\imath\in\{x,y,z\}}\epsilon_\imath\,\vec e_\imath\otimes\vec e_\imath\Bigr),\qquad \epsilon_\imath=\pm1 ,
+\tilde\Pi_{\mathrm{id},\epsilon}=\tfrac14\Bigl(e_t\otimes e_t+\sum_{\imath\in\{x,y,z\}}\epsilon_{\imath}\,\vec e_{\imath}\otimes\vec e_{\imath}\Bigr),\qquad \epsilon_{\imath}=\pm1 ,
 $$
 
-each Hermitian, since $e_t\otimes e_t$ and each $\vec e_\imath\otimes\vec e_\imath$ are Hermitian, and each of trace one, since $\operatorname{tr}(e_t\otimes e_t)=4$ and $\operatorname{tr}(\vec e_\imath\otimes\vec e_\imath)=\operatorname{tr}(\vec e_\imath)^{2}=0$ because the quaternion units have vanishing scalar part.
+each Hermitian, since $e_t\otimes e_t$ and each $\vec e_{\imath}\otimes\vec e_{\imath}$ are Hermitian, and each of trace one, since $\operatorname{tr}(e_t\otimes e_t)=4$ and $\operatorname{tr}(\vec e_{\imath}\otimes\vec e_{\imath})=\operatorname{tr}(\vec e_{\imath})^{2}=0$ because the quaternion units have vanishing scalar part.
 
-What the eight are, in the Pauli model. With $e_t=\mathrm I_2$ and $\vec e_\imath=i\sigma_\imath$,
+What the eight are, in the Pauli model. With $e_t=\mathrm I_2$ and $\vec e_{\imath}=i\sigma_{\imath}$,
 
 $$
-\vec e_\imath\otimes\vec e_\imath=(i\sigma_\imath)\otimes(i\sigma_\imath)=-\sigma_\imath\otimes\sigma_\imath,
+\vec e_{\imath}\otimes\vec e_{\imath}=(i\sigma_{\imath})\otimes(i\sigma_{\imath})=-\sigma_{\imath}\otimes\sigma_{\imath},
 $$
 
 so
 
 $$
-\tilde\Pi_{\mathrm{id},\epsilon}=\tfrac14\Bigl(\mathrm I_4-\sum_{\imath\in\{x,y,z\}}\epsilon_\imath\,\sigma_\imath\otimes\sigma_\imath\Bigr).
+\tilde\Pi_{\mathrm{id},\epsilon}=\tfrac14\Bigl(\mathrm I_4-\sum_{\imath\in\{x,y,z\}}\epsilon_{\imath}\,\sigma_{\imath}\otimes\sigma_{\imath}\Bigr).
 $$
 
 In this display the eight candidates are the eight ways of signing the three spin-spin correlation terms, which is what a reader expects: the diagonal candidates are the states whose correlations are extremal in all three directions.
@@ -44,21 +44,21 @@ Two of them are familiar. $\tilde\Pi_{\mathrm{id},(+,+,+)}$ is $\tfrac14(\mathrm
 
 **The theorem.** $\tilde\Pi_{\mathrm{id},\epsilon}$ is a state, that is positive semidefinite, exactly when $\epsilon_1\epsilon_2\epsilon_3=+1$. In that case it is a rank-one projector and a Bell state. When $\epsilon_1\epsilon_2\epsilon_3=-1$ it has spectrum $(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$ and is not a state.
 
-The four tensors form a group of order four. Put $B_\imath=\vec e_\imath\otimes\vec e_\imath$ and $A=e_t\otimes e_t=\mathrm I_4$. Then
+The four tensors form a group of order four. Put $B_{\imath}=\vec e_{\imath}\otimes\vec e_{\imath}$ and $A=e_t\otimes e_t=\mathrm I_4$. Then
 
 $$
-A^{2}=A,\qquad AB_\imath=B_\imathA=B_\imath,\qquad B_\imath^{2}=A,
+A^{2}=A,\qquad AB_{\imath}=B_{\imath} A=B_{\imath},\qquad B_{\imath}^{2}=A,
 $$
 
 and, for distinct $k,l$ with $m$ the third index,
 
 $$
-B_\imathB_l=B_lB_\imath=B_m .
+B_{\imath} B_l=B_lB_{\imath}=B_m .
 $$
 
-The first two lines are immediate. The third is the one that matters and it has a one-line reason: $B_\imathB_l=(\vec e_\imath\vec e_l)\otimes(\vec e_\imath\vec e_l)$, and the sign produced by $\vec e_\imath\vec e_l=\pm\vec e_m$ appears twice, once in each slot, so it squares to $+1$. Hence $B_\imathB_l=+\vec e_m\otimes\vec e_m=B_m$, and the same computation in the reverse order gives the same result because the two sign changes cancel together.
+The first two lines are immediate. The third is the one that matters and it has a one-line reason: $B_{\imath} B_l=(\vec e_{\imath}\vec e_l)\otimes(\vec e_{\imath}\vec e_l)$, and the sign produced by $\vec e_{\imath}\vec e_l=\pm\vec e_m$ appears twice, once in each slot, so it squares to $+1$. Hence $B_{\imath} B_l=+\vec e_m\otimes\vec e_m=B_m$, and the same computation in the reverse order gives the same result because the two sign changes cancel together.
 
-So $\{A,B_x,B_y,B_z\}$ is a group isomorphic to $\mathbb{Z}_2\times\mathbb{Z}_2$. The four elements are pairwise commuting involutions with $B_xB_y=B_z$ and cyclic. That is the Klein four-group, and the eight candidates are its four group elements with the four sign choices, that is the eight elements $\tfrac14(A+\sum_{\imath\in\{x,y,z\}}\epsilon_\imathB_\imath)$ of the four-dimensional commutative algebra $\mathbb{R}[\mathbb{Z}_2\times\mathbb{Z}_2]$.
+So $\{A,B_x,B_y,B_z\}$ is a group isomorphic to $\mathbb{Z}_2\times\mathbb{Z}_2$. The four elements are pairwise commuting involutions with $B_xB_y=B_z$ and cyclic. That is the Klein four-group, and the eight candidates are its four group elements with the four sign choices, that is the eight elements $\tfrac14(A+\sum_{\imath\in\{x,y,z\}}\epsilon_{\imath} B_{\imath})$ of the four-dimensional commutative algebra $\mathbb{R}[\mathbb{Z}_2\times\mathbb{Z}_2]$.
 
 A character is exactly a sign pattern with product $+1$. A complex character of $\mathbb{Z}_2\times\mathbb{Z}_2$ assigns $\pm1$ to each of the three involutions consistently: $\chi(B_x)\chi(B_y)=\chi(B_z)$, which is $\epsilon_1\epsilon_2=\epsilon_3$, equivalently $\epsilon_1\epsilon_2\epsilon_3=+1$ because each sign is its own inverse. There are exactly four such patterns, namely $(+,+,+)$, $(+,-,-)$, $(-,+,-)$ and $(-,-,+)$, and they are the four characters of the group.
 
@@ -73,7 +73,7 @@ is idempotent, because the orthogonality of characters makes $p_\chi^{2}=p_\chi$
 The other four are the complements. If $\epsilon_1\epsilon_2\epsilon_3=-1$ then $\epsilon'=-\epsilon$ satisfies $\epsilon'_1\epsilon'_2\epsilon'_3=+1$, and
 
 $$
-\tilde\Pi_{\mathrm{id},\epsilon}=\tfrac14\bigl(A-\textstyle\sum_{\imath\in\{x,y,z\}}\epsilon'_\imathB_\imath\bigr)=\tfrac12 A-p_{\epsilon'} ,
+\tilde\Pi_{\mathrm{id},\epsilon}=\tfrac14\bigl(A-\textstyle\sum_{\imath\in\{x,y,z\}}\epsilon'_{\imath} B_{\imath}\bigr)=\tfrac12 A-p_{\epsilon'} ,
 $$
 
 since $\tfrac12A-p_{\epsilon'}=\tfrac12A-\tfrac14(A+\sum\epsilon'B)=\tfrac14(A-\sum\epsilon'B)$. A rank-one projector subtracted from $\tfrac12$ of the identity has spectrum $(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$. So the four remaining candidates are not states, and each is exactly one half of the identity minus one of the four states.
@@ -84,7 +84,7 @@ What the sign condition is and is not. It is not a superselection rule and not a
 
 ## The Reduction Is Blind
 
-The partial trace kills every correlation term. For a two-qubit element $X$ the reduction to the first factor is the partial trace over the second. Every $B_\imath=\vec e_\imath\otimes\vec e_\imath$ has vanishing partial trace, because $\operatorname{tr}\vec e_\imath=0$, and $A$ has partial trace $\operatorname{tr}_{\!2}(e_t\otimes e_t)=2e_t$. Hence for every $\epsilon$,
+The partial trace kills every correlation term. For a two-qubit element $X$ the reduction to the first factor is the partial trace over the second. Every $B_{\imath}=\vec e_{\imath}\otimes\vec e_{\imath}$ has vanishing partial trace, because $\operatorname{tr}\vec e_{\imath}=0$, and $A$ has partial trace $\operatorname{tr}_{\!2}(e_t\otimes e_t)=2e_t$. Hence for every $\epsilon$,
 
 $$
 \operatorname{tr}_{\!2}\tilde\Pi_{\mathrm{id},\epsilon}=\tfrac14\cdot 2e_t=\tfrac12 e_t ,
@@ -114,13 +114,13 @@ $$
 
 The concurrence is $C=2\lvert D\rvert$. The vanishing of $D$ is the rank-one condition on the coefficient array, hence the product-state condition; the normalised modulus is the entanglement measure.
 
-The Bell-basis diagonalisation. With $\lvert b_\imath\rangle$ the four Bell states and $\psi=\sum_\imath b_\imath\lvert b_\imath\rangle$,
+The Bell-basis diagonalisation. With $\lvert b_{\imath}\rangle$ the four Bell states and $\psi=\sum_{\imath} b_{\imath}\lvert b_{\imath}\rangle$,
 
 $$
 2D(\psi)=b_1^{2}-b_2^{2}-b_3^{2}+b_4^{2},
 $$
 
-so the concurrence is the modulus of a quadratic form of inertia $(2,2)$ on the Bell-basis amplitudes. The biquaternion norm, by contrast, is $\sum_\imath c_\imath^{2}$ in the quaternion basis and $\sum_\imath b_\imath^{2}$ in the Bell basis, because the Bell transform is orthogonal; the two forms are different and the change of basis separates them.
+so the concurrence is the modulus of a quadratic form of inertia $(2,2)$ on the Bell-basis amplitudes. The biquaternion norm, by contrast, is $\sum_{\imath} c_{\imath}^{2}$ in the quaternion basis and $\sum_{\imath} b_{\imath}^{2}$ in the Bell basis, because the Bell transform is orthogonal; the two forms are different and the change of basis separates them.
 
 The two forms are independent. They are not proportional: the norm has inertia $(4,0)$ on real amplitudes in its diagonal basis and the concurrence form has $(2,2)$, and inertia is a congruence invariant. So the two-qubit module carries two independent quadratic forms where the one-qubit module carries one, and the corpus's interval form is the one that does not measure entanglement.
 
@@ -202,14 +202,14 @@ The pattern. Each residue is a place where a name became a number: state or not 
 
 ## Summary
 
-The eight diagonal Hermitian candidates $\tilde\Pi_{\mathrm{id},\epsilon}=\tfrac14(e_t\otimes e_t+\sum_{\imath\in\{x,y,z\}}\epsilon_\imath\vec e_\imath\otimes\vec e_\imath)$ are the elements of the Klein four-group algebra spanned by $e_t\otimes e_t$ and the three $\vec e_\imath\otimes\vec e_\imath$, because the sign twist of the quaternion product squares away in a tensor square. Positivity selects exactly the four sign patterns that are characters, $\epsilon_1\epsilon_2\epsilon_3=+1$, which are the four Bell projectors; the other four are $\tfrac12-p$ and have spectrum $(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$. All eight reduce to $\tfrac12e_t$, so no partial trace sees the sign. The concurrence amplitude $D=c_{00}c_{11}-c_{01}c_{10}$ is a quadratic form of inertia $(2,2)$, independent of the biquaternion norm, and it is not the expectation of any algebra element, because it scales by $e^{2i\theta}$ under a global phase while an expectation does not. Over $\mathbb{R}$ the tensor product is $M_4(\mathbb{C})\oplus M_4(\mathbb{C})$, split by the central involution $\mathsf J=i\otimes i$ into the summands of $u=\tfrac12(1+\mathsf J)$ and $v=\tfrac12(1-\mathsf J)$; the complex tensor product is the summand where $\mathsf J=-1$, selected by $v$, and there the bit is frozen rather than hidden. For $n$ factors there are $2^{n-1}$ summands, and the physical description fixes one.
+The eight diagonal Hermitian candidates $\tilde\Pi_{\mathrm{id},\epsilon}=\tfrac14(e_t\otimes e_t+\sum_{\imath\in\{x,y,z\}}\epsilon_{\imath}\vec e_{\imath}\otimes\vec e_{\imath})$ are the elements of the Klein four-group algebra spanned by $e_t\otimes e_t$ and the three $\vec e_{\imath}\otimes\vec e_{\imath}$, because the sign twist of the quaternion product squares away in a tensor square. Positivity selects exactly the four sign patterns that are characters, $\epsilon_1\epsilon_2\epsilon_3=+1$, which are the four Bell projectors; the other four are $\tfrac12-p$ and have spectrum $(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$. All eight reduce to $\tfrac12e_t$, so no partial trace sees the sign. The concurrence amplitude $D=c_{00}c_{11}-c_{01}c_{10}$ is a quadratic form of inertia $(2,2)$, independent of the biquaternion norm, and it is not the expectation of any algebra element, because it scales by $e^{2i\theta}$ under a global phase while an expectation does not. Over $\mathbb{R}$ the tensor product is $M_4(\mathbb{C})\oplus M_4(\mathbb{C})$, split by the central involution $\mathsf J=i\otimes i$ into the summands of $u=\tfrac12(1+\mathsf J)$ and $v=\tfrac12(1-\mathsf J)$; the complex tensor product is the summand where $\mathsf J=-1$, selected by $v$, and there the bit is frozen rather than hidden. For $n$ factors there are $2^{n-1}$ summands, and the physical description fixes one.
 
 ## Summary of Notation
 
 | symbol | meaning |
 | --- | --- |
 | $\tilde\Pi_{\mathrm{id},\epsilon}$ | the eight diagonal Hermitian candidates, of trace one |
-| $B_\imath=\vec e_\imath\otimes\vec e_\imath$ | the three material tensors; $B_\imath^{2}=e_t\otimes e_t$ and $B_\imathB_l=B_m$ |
+| $B_{\imath}=\vec e_{\imath}\otimes\vec e_{\imath}$ | the three material tensors; $B_{\imath}^{2}=e_t\otimes e_t$ and $B_{\imath} B_l=B_m$ |
 | $\epsilon_1\epsilon_2\epsilon_3=+1$ | the sign condition; the four characters of $\mathbb{Z}_2\times\mathbb{Z}_2$ |
 | $\tfrac12 e_t-p$ | the form of the four non-positive candidates |
 | $\operatorname{tr}_{\!2}\tilde\Pi_{\mathrm{id},\epsilon}$ | the reduction, equal to $\tfrac12e_t$ in all eight cases |

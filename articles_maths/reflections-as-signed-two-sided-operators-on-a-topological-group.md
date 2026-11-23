@@ -69,7 +69,7 @@ $$
 
 factors through $G/Z(G)$ as a continuous injection on the carriers.
 
-**Proof.** The coset description is *Reflections as Signed Two-Sided Operators on a Group*: $\rho_a = \rho_{a'}$ if and only if $a'^{-1}a$ commutes with every element of the image of $\alpha$, hence lies in $Z(G)$. Continuity of $a \mapsto \rho_a$ is the continuity of the inner automorphism map composed with the fixed $\alpha$; the factorisation through $G/Z(G)$ is exactly the coset statement, and injectivity on $C/Z(G)$ follows.
+**Proof.** The coset description is *Reflections as Signed Two-Sided Operators on a Group*: $\rho_a = \rho_{a'}$ if and only if $a'{}^{-1}a$ commutes with every element of the image of $\alpha$, hence lies in $Z(G)$. Continuity of $a \mapsto \rho_a$ is the continuity of the inner automorphism map composed with the fixed $\alpha$; the factorisation through $G/Z(G)$ is exactly the coset statement, and injectivity on $C/Z(G)$ follows.
 
 **Corollary (compact case).** If $G$ is compact then $C$ is compact and the set of reflections is the continuous image of the compact quotient $C/Z(G)$, hence is compact, and in particular closed, in the group $\operatorname{Homeo}(G)$ of homeomorphisms with the compact-open topology.
 

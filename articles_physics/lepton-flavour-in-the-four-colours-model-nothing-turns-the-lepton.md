@@ -4,6 +4,8 @@
 
 No flavour change. The six leptoquarks do not change a lepton's generation, and no experiment has seen a lepton change its generation by any process at all. That statement rests on the data first and on the frame second.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 A word that may not apply. "Lepton flavour" is loose language. In this frame a lepton carries a generation index and nothing else: no charge distinguishes the three columns, and no boson carries a flavour quantum number away. The reason is structural and is in *Why Nothing Turns the Lepton*: the lepton is the temporal line $\mathbb C e_t$, the axis of the colour rotation, so there is no rotating multiplet for a flavour label to index. Whether the word names a property of the lepton at all — beyond "it has a mass" — the corpus cannot say. This article therefore uses it only to mean "which generation", or avoids it.
 
 The one open item. The frame fixes the leptoquark operator except for one thing: whether its vertex carries a generation index. It does not fix that, and it cannot, because the Yukawa sector that would fix it is not solved. So the corpus says what it knows, states the two possibilities, and calls neither of them the answer.
@@ -12,7 +14,7 @@ What the frame fixes. The six leptoquarks, their charges, their mass relation, t
 
 What it does not fix. Whether $K_L\to\mu e$ happens at all. A generation-blind vertex gives zero at every mass. A vertex with generation structure gives a rate set by a matrix the frame never writes.
 
-Why this matters for the corpus. The bound $M_X\gtrsim2.3\times10^{2}$ TeV, repeated as the frame's strongest model-independent statement, is the second case with the matrix set to one. It is not a prediction and it is not a bound: it is an assumption, and it should be quoted as one.
+Why this matters for the corpus. The bound $M_X\gtrsim3.69\times10^{-5}$ J, repeated as the frame's strongest model-independent statement, is the second case with the matrix set to one. It is not a prediction and it is not a bound: it is an assumption, and it should be quoted as one.
 
 ## What the Frame Fixes
 
@@ -26,7 +28,7 @@ There is no $LR$ term. The operator is $V\pm A$ and nothing else, and that is a 
 
 1.2 The colour factor. The quark legs contract over the triplet index of the $\mathbf4$, and the leptoquark propagator is diagonal in colour. The contraction gives one, not three: the two vertices sit on the same colour line, and there is no sum over colours to make.
 
-1.3 The $\Delta F=0$ term. Whatever happens to the generation index, the diagonal part of the operator exists. It shifts the short-distance $d$–$e$ and $s$–$\mu$ couplings by a relative amount of order $(g_4v/M_X)^{2}$, some $10^{-9}$ at $10^{2}$ TeV, and nothing measures it. The frame has a leptoquark contact interaction for certain.
+1.3 The $\Delta F=0$ term. Whatever happens to the generation index, the diagonal part of the operator exists. It shifts the short-distance $d$–$e$ and $s$–$\mu$ couplings by a relative amount of order $(g_4v/M_X)^{2}$, some $10^{-9}$ at $1.60\times10^{-5}$ J, and nothing measures it. The frame has a leptoquark contact interaction for certain.
 
 ## Why Nothing Turns the Lepton
 
@@ -108,7 +110,7 @@ $$
 \Gamma(K_L\to\mu e)=\frac{g_4^{4}\,\lvert U_{de}U_{s\imath}\rvert^{2}f_K^{2}m_\mu^{2}m_K}{128\pi\,M_X^{4}} .
 $$
 
-At $M_X=250$ TeV with $|U_{de}U_{s\imath}|=1$ this is $3.5\times10^{-12}$, against the measured limit $4.7\times10^{-12}$: the corner of parameter space where the matrix is maximal sits at the limit, which is why the number $2.3\times10^{2}$ TeV appears in the corpus. Any smaller entry moves the curve down and moves the bound down with it, and an entry of $10^{-2}$ removes the bound entirely.
+At $M_X=4.01\times10^{-5}\ \mathrm{J}$ with $|U_{de}U_{s\imath}|=1$ this is $3.5\times10^{-12}$, against the measured limit $4.7\times10^{-12}$: the corner of parameter space where the matrix is maximal sits at the limit, which is why the number $3.7\times10^{-5}\ \mathrm{J}$ appears in the corpus. Any smaller entry moves the curve down and moves the bound down with it, and an entry of $10^{-2}$ removes the bound entirely.
 
 4.3 The scale is not fixed either way. Both branches leave $M_X$ a free parameter with only the $W_R$ floor. The difference is whether a kaon measurement also constrains it.
 
@@ -165,7 +167,7 @@ In the first branch the sum vanishes identically, because $U$ is the identity an
 | the minimal Yukawa | one $Y$, contraction $\delta^{a}{}_{b}$ | $M_d=M_e$ entry by entry, so $U=\mathbb 1$ |
 | the mass ratios | $m_d/m_e$, $m_s/m_\mu$, $m_b/m_\tau$ against $1$ | $9.1$, $0.88$, $2.4$ — minimal sector falsified |
 | the $\mathbf{15}$ split | traceless on the quartet | singlet contribution $-\tfrac13$ of the triplet, so $U\neq\mathbb 1$ |
-| the two-body rate | $g_4^{4}f_K^{2}m_\mu^{2}m_K/(128\pi M_X^{4})$ at $250$ TeV | $3.5\times10^{-12}$ for $|U_{de}U_{s\imath}|=1$ |
+| the two-body rate | $g_4^{4}f_K^{2}m_\mu^{2}m_K/(128\pi M_X^{4})$ at $4.01\times10^{-5}\ \mathrm{J}$ | $3.5\times10^{-12}$ for $|U_{de}U_{s\imath}|=1$ |
 | the spin sum | $p\!\!/=p\!\!/_e+p\!\!/_{\imath}$, Dirac equations | $m_K^{2}(m_e^{2}+m_\mu^{2})$, helicity suppressed |
 | the normalisation | the same form applied to $K\to\mu\xi_{\mathrm{neu}}$ | $0.63$ against the measured $0.635$ |
 
@@ -197,7 +199,7 @@ Why the lepton does not turn. It is the temporal line $\mathbb C e_t$; colour is
 
 The channels. $\mu\to e\gamma$, $\mu\to eee$ and $\mu$–$e$ conversion need a loop, a chirality flip and, in the second branch, a GIM sum. They are orders of magnitude below their limits at any scale the kaon channel could reach.
 
-The verdict. No lepton has been seen to change generation, and the frame's minimal sector forbids the change. Whether the leptons have a flavour at all is a further question the corpus cannot answer. What the frame does know is what a change would look like, which channel would see it first, and which measurement decides. The number $2.3\times10^{2}$ TeV belongs to one assumption about $U$ and should be quoted that way.
+The verdict. No lepton has been seen to change generation, and the frame's minimal sector forbids the change. Whether the leptons have a flavour at all is a further question the corpus cannot answer. What the frame does know is what a change would look like, which channel would see it first, and which measurement decides. The number $3.7\times10^{-5}\ \mathrm{J}$ belongs to one assumption about $U$ and should be quoted that way.
 
 ## Summary of Notation
 
@@ -208,7 +210,7 @@ The verdict. No lepton has been seen to change generation, and the frame's minim
 | $X_d$, $X_e$ | the unitaries that diagonalise $M_d$ and $M_e$ |
 | $U$ | the leptoquark generation matrix $X_d^{\dagger}X_e$; the identity in the minimal sector, unconstrained otherwise |
 | $M_X$ | the leptoquark mass, $=\sqrt2\,M_{W_R}$ in the minimal vacuum |
-| $f_K$ | the kaon decay constant, $156.2$ MeV |
+| $f_K$ | the kaon decay constant, $2.503\times10^{-11}\ \mathrm{J}$ |
 | $\epsilon_K$ | the CP impurity of the neutral-kaon eigenstates, $2.228\times10^{-3}$ |
 | $P_{L,R}$ | the chirality projectors, from the two gauge multiplets |
 | $C_{\mathrm{dip}}$ | the $\mu\to e\gamma$ dipole coefficient, an order-one loop function times $eg_4^{2}m_\mu/(16\pi^{2}M_X^{2})$ |

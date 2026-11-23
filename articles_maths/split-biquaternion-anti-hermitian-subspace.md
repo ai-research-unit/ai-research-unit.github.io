@@ -5,7 +5,7 @@
 
 The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$ carries four linear involutions, and four of the resulting fixed spaces are its distinguished real subspaces. This article treats the **anti-Hermitian subspace** $\mathbb{B}_{\Phi}$, the fixed space of anti-Hermitian conjugation: its definition, its basis, the failure of closure under multiplication, the symmetrized product that carries it into $\mathbb{B}_{\Psi}$, the Lie structure it acquires under the commutator, the forms on it, its roots of $-1$, the action of the four involutions and its intersections with the other subspaces. Its complementary partner $\mathbb{B}_{\Psi}$ is treated in *Split-Biquaternion Hermitian Subspace*; the comparative tables are in *Split-Biquaternion Relations Between Subspaces* and *Split-Biquaternion Involution Lattice*.
 
-The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. Throughout, elements are written $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{C}_{\mathrm{spl}}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, and the Hermitian norm is $\langle\tilde{Q}\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$.
+The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. Throughout, elements are written $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{C}_{\mathrm{spl}}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, and the Hermitian norm is $\langle\tilde{Q}\rangle_{*} = \sum_\mu (q_\mu^2 - q'{}^2_\mu)$.
 
 ## Definition and Basis
 
@@ -124,10 +124,10 @@ Here the split-biquaternion norm is definite exactly as on $\mathbb{B}_{\Psi}$; 
 
 ### The Hermitian Norm and Its Isotropic Cone
 
-The Hermitian norm $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$, which on $\mathbb{B}_{\Phi}$ is
+The Hermitian norm $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'{}^2_\mu)$, which on $\mathbb{B}_{\Phi}$ is
 
 $$
-\sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 - q'^2_\mu) = -r_0^2 + q_x^2 + q_y^2 + q_z^2,
+\sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 - q'{}^2_\mu) = -r_0^2 + q_x^2 + q_y^2 + q_z^2,
 $$
 
 of inertia $(3,1)$. Its isotropic cone is the three-dimensional cone
@@ -226,7 +226,7 @@ The anti-Hermitian subspace $\mathbb{B}_{\Phi}$ is the fixed space of anti-Hermi
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace, fixed space of ${}^{*}$ |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
 | $\langle\tilde{Q}\rangle_{\natural} = r_0^2 + \lvert\vec q\rvert^2$ | Norm on $\mathbb{B}_{\Phi}$, inertia $(4,0)$ |
-| $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian norm, inertia $(3,1)$ on $\mathbb{B}_{\Phi}$ |
+| $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'{}^2_\mu)$ | Hermitian norm, inertia $(3,1)$ on $\mathbb{B}_{\Phi}$ |
 | $\tilde{Q}_1 \bullet \tilde{Q}_2 = \tfrac{1}{2}(\tilde{Q}_1\tilde{Q}_2 + \tilde{Q}_2\tilde{Q}_1)$ | Symmetrized product, landing in $\mathbb{B}_{\Psi}$ |
 | $[\tilde{Q}_1, \tilde{Q}_2] = 2\,\vec q_1 \times \vec q_2$ | Commutator, a pure real quaternion |
 | $j : \mathbb{B}_{\Phi} \to \mathbb{B}_{\Psi}$ | Isomorphism by multiplication by $j$ |

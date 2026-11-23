@@ -16,7 +16,7 @@ The article is the $\mathbb{C}_{\mathrm{spl}}$ instance of the quadratic family.
 
 ### The Algebra and the Idempotents
 
-**Definition.** The **split-complex algebra** is $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$ with $j^2 = +1$. A general element is $z = a + ja'$ with $a, a' \in \mathbb{R}$; the **conjugation** is $\bar z = a - ja'$; the **norm** is $\langle z\rangle_{*} = z\bar z = a^2 - a'^2$, an indefinite form of inertia $(1,1)$; and the **idempotents** are
+**Definition.** The **split-complex algebra** is $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$ with $j^2 = +1$. A general element is $z = a + ja'$ with $a, a' \in \mathbb{R}$; the **conjugation** is $\bar z = a - ja'$; the **norm** is $\langle z\rangle_{*} = z\bar z = a^2 - a'{}^2$, an indefinite form of inertia $(1,1)$; and the **idempotents** are
 
 $$
 \Pi_+ = \frac{1+j}{2}, \qquad \Pi_- = \frac{1-j}{2}, \qquad \Pi_\pm^2 = \Pi_\pm, \quad \Pi_+\Pi_- = 0, \quad \Pi_+ + \Pi_- = 1 .
@@ -134,7 +134,7 @@ so $\langle\cdot\rangle_{*}$ vanishes at the $n$-th step exactly when one of the
 
 ## Summary
 
-The split-complex quadratic family $f_c(z) = z^2+c$ on $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$ is, through the idempotent decomposition $\varphi(z) = (z_+,z_-) = (a+a',a-a')$, the pair of real quadratic maps $u \mapsto u^2+c_+$ and $v \mapsto v^2+c_-$ acting on the two coordinates. The critical set is the null cone $\mathcal{N}$ — the derivative is the multiplication by $2z$, singular exactly where $2z$ is a zero divisor — and the critical value of the point $0$ is $c$; the other critical points $t\Pi_\pm$ have the images $t^2\Pi_\pm+c$, and the orbit of $0$ is the pair of the two real critical orbits and is the orbit that defines the connectedness locus. The orbit of a point is bounded exactly when both coordinate orbits are bounded. The norm $N = a^2-a'^2 = z_+z_-$ is indefinite and vanishes on the two null lines; it cannot serve as an escape radius, and the escape is decided by the two real radii $R_\pm = \frac12(1+\sqrt{1+4|c_\pm|})$ separately, not by a single radius.
+The split-complex quadratic family $f_c(z) = z^2+c$ on $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$ is, through the idempotent decomposition $\varphi(z) = (z_+,z_-) = (a+a',a-a')$, the pair of real quadratic maps $u \mapsto u^2+c_+$ and $v \mapsto v^2+c_-$ acting on the two coordinates. The critical set is the null cone $\mathcal{N}$ — the derivative is the multiplication by $2z$, singular exactly where $2z$ is a zero divisor — and the critical value of the point $0$ is $c$; the other critical points $t\Pi_\pm$ have the images $t^2\Pi_\pm+c$, and the orbit of $0$ is the pair of the two real critical orbits and is the orbit that defines the connectedness locus. The orbit of a point is bounded exactly when both coordinate orbits are bounded. The norm $N = a^2-a'{}^2 = z_+z_-$ is indefinite and vanishes on the two null lines; it cannot serve as an escape radius, and the escape is decided by the two real radii $R_\pm = \frac12(1+\sqrt{1+4|c_\pm|})$ separately, not by a single radius.
 
 The connectedness locus is the square $\varphi^{-1}([-2,\frac14]\times[-2,\frac14])$, the product of the two real Mandelbrot intervals, with vertices $\frac14$, $-\frac78\pm j\frac98$, $-2$, centre $-\frac78$ and side $\frac{9\sqrt2}{8}$; on the real axis it is the interval $[-2,\frac14]$ of the real quadratic family. The fractal content of the complex parameter plane — the Mandelbrot set and its hyperbolic components — is replaced here by the convex square, and the fractal content of the split family is carried by the Julia sets of the individual parameters, treated in *The Split-Complex Julia Sets*. The algebra, the idempotents and the null cone are those of *Split-Complex Algebra*, *Square Roots of One and the Idempotents of the Split-Complex Algebra* and *Split-Complex Null Quadric and Projective Geometry*; the real quadratic theory that the pair inherits is that of *The Mandelbrot Set and the Quadratic Family* and *The Escape Radius and the Green's Function*.
 
@@ -145,7 +145,7 @@ The connectedness locus is the square $\varphi^{-1}([-2,\frac14]\times[-2,\frac1
 | $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2=+1$ | Split-complex algebra |
 | $z = a + ja'$ | General element, $a, a'\in\mathbb{R}$ |
 | $\bar z = a-ja'$ | Conjugation |
-| $\langle z\rangle_{*} = a^2-a'^2 = z_+z_-$ | Norm, inertia $(1,1)$ |
+| $\langle z\rangle_{*} = a^2-a'{}^2 = z_+z_-$ | Norm, inertia $(1,1)$ |
 | $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents |
 | $z_\pm = a\pm a'$ | Idempotent coordinates |
 | $\varphi(z) = (z_+,z_-)$ | Isomorphism $\mathbb{C}_{\mathrm{spl}}\to\mathbb{R}^2$ |

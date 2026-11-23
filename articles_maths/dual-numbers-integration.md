@@ -21,7 +21,7 @@ What replaces the reconstruction half is a **derived** statement. Because the in
 
 No physics is invoked. The dual plane is used as the two-dimensional real algebra fixed in *Dual-Numbers Algebra*, and the operator notation $\partial/\partial Q, \partial/\partial\bar Q$ is the one fixed in *Dual-Numbers Analysis*.
 
-Notation: $Q = q + \varepsilon q'$ with $q, q' \in \mathbb{R}$, $\bar Q = q - \varepsilon q'$, $\operatorname{Re} Q = q$, $\operatorname{Inf} Q = q'$, and $\|Q\| = \sqrt{q^2 + q'^2}$. The maximal ideal is $\mathrm{M} = \varepsilon\mathbb{R}$.
+Notation: $Q = q + \varepsilon q'$ with $q, q' \in \mathbb{R}$, $\bar Q = q - \varepsilon q'$, $\operatorname{Re} Q = q$, $\operatorname{Inf} Q = q'$, and $\|Q\| = \sqrt{q^2 + q'{}^2}$. The maximal ideal is $\mathrm{M} = \varepsilon\mathbb{R}$.
 
 ## The Dual Integral
 
@@ -86,10 +86,10 @@ $$
 in the basis $(1, \varepsilon)$, so $\|Q_1Q_2\| \leq \|M(Q_2)\| \|Q_1\|$. The eigenvalues of $M(Q_2)^{\mathsf{T}} M(Q_2)$ are
 
 $$
-\lambda_\pm = \frac{2q_2^2 + q_2'^2 \pm \sqrt{q_2'^4 + 4q_2^2q_2'^2}}{2},
+\lambda_\pm = \frac{2q_2^2 + q_2'{}^2 \pm \sqrt{q_2'{}^4 + 4q_2^2q_2'{}^2}}{2},
 $$
 
-so $\|M(Q_2)\|^2 = \lambda_+$. Dividing by $\|Q_2\|^2 = q_2^2 + q_2'^2$ and maximising over the ratio $q_2^2/q_2'^2$ gives the supremum $\tfrac43$, attained when $q_2^2 = 2q_2'^2$; hence
+so $\|M(Q_2)\|^2 = \lambda_+$. Dividing by $\|Q_2\|^2 = q_2^2 + q_2'{}^2$ and maximising over the ratio $q_2^2/q_2'{}^2$ gives the supremum $\tfrac43$, attained when $q_2^2 = 2q_2'{}^2$; hence
 
 $$
 \|Q_1Q_2\| \leq \frac{2}{\sqrt3}\,\|Q_1\|\|Q_2\|
@@ -344,16 +344,16 @@ $$
 be the dual Cauchy–Riemann operator, so that $Df = 0$ is dual differentiability. On $f = u + v\varepsilon$ it acts by $Df = u_{q'} + (v_{q'} - u_q)\varepsilon$. Squaring, the term $\varepsilon^2\partial^2/\partial q^2$ vanishes but the cross terms do not cancel, and
 
 $$
-D^2 = \partial^2/\partial q'^2 - 2\,\varepsilon\,\partial^2/\partial q\partial q' .
+D^2 = \partial^2/\partial q'{}^2 - 2\,\varepsilon\,\partial^2/\partial q\partial q' .
 $$
 
 So $D$ itself does not factor the Laplacian of the plane. With the conjugate operator $\bar D = \partial/\partial q' + \varepsilon\partial/\partial q$ the two mixed terms cancel instead, and
 
 $$
-D\bar D = \bar D D = \partial^2/\partial q'^2 ,
+D\bar D = \bar D D = \partial^2/\partial q'{}^2 ,
 $$
 
-the one-dimensional operator in the nilpotent coordinate rather than $\Delta = \partial^2/\partial q^2 + \partial^2/\partial q'^2$; this is the ellipticity failure in operator form. The symbol of $D$, the algebra element $i\zeta_{q'} - i\zeta_q\varepsilon$, is invertible exactly when $\zeta_{q'} \neq 0$, so the characteristic set of $D$ is the line $\zeta_{q'} = 0$, the conormal of the fibre direction, and the operator is not elliptic.
+the one-dimensional operator in the nilpotent coordinate rather than $\Delta = \partial^2/\partial q^2 + \partial^2/\partial q'{}^2$; this is the ellipticity failure in operator form. The symbol of $D$, the algebra element $i\zeta_{q'} - i\zeta_q\varepsilon$, is invertible exactly when $\zeta_{q'} \neq 0$, so the characteristic set of $D$ is the line $\zeta_{q'} = 0$, the conormal of the fibre direction, and the operator is not elliptic.
 
 **Theorem.** A fundamental solution of $D$ on the plane with Lebesgue measure is
 
@@ -487,7 +487,7 @@ The differences are consequences of the single relation $\varepsilon^2 = 0$ agai
 |---|---|---|
 | Coefficient ring | field, no zero divisors, no nilpotents | local ring, nilpotent $\varepsilon$ |
 | Cauchy–Riemann operator | $\partial/\partial a + i\partial/\partial a'$, elliptic | $\partial/\partial q' - \varepsilon\partial/\partial q$, characteristic set $\zeta_{q'} = 0$ |
-| Second-order square | Laplacian $\Delta$ | $D\bar D = \bar D D = \partial^2/\partial q'^2$ |
+| Second-order square | Laplacian $\Delta$ | $D\bar D = \bar D D = \partial^2/\partial q'{}^2$ |
 | Section of the singular set | a point | a fibre, a whole line |
 | Fundamental solution | $1/(\pi A)$, singular at a point | supported on a ray of the fibre |
 | Cauchy–Goursat, closed contour | holds, with content | holds, soft, on every domain |
@@ -517,10 +517,10 @@ whose square $D\bar D = \bar D D$ is a Laplacian and whose fundamental solution 
 Equivalently, putting the dual operator in the general form $D = \partial/\partial q' + B\,\partial/\partial q$ with $B = -\varepsilon$, one has $B^2 = \varepsilon^2 = 0$ and, for $\bar D = \partial/\partial q' - B\,\partial/\partial q = \partial/\partial q' + \varepsilon\partial/\partial q$,
 
 $$
-D\bar D = \bar D D = \partial^2/\partial q'^2,
+D\bar D = \bar D D = \partial^2/\partial q'{}^2,
 $$
 
-which is the degenerate second-order operator in the $q'$-direction and not the Laplacian $\Delta = \partial^2/\partial q^2 + \partial^2/\partial q'^2$ of the plane. So the dual system is not elliptic, and no scalar multiple of $D$ has an elliptic principal symbol.
+which is the degenerate second-order operator in the $q'$-direction and not the Laplacian $\Delta = \partial^2/\partial q^2 + \partial^2/\partial q'{}^2$ of the plane. So the dual system is not elliptic, and no scalar multiple of $D$ has an elliptic principal symbol.
 
 The consequences are those of the preceding sections. The general **Cauchy–Goursat** theorem applies to the dual system, because $\mathbb{C}_{\mathrm{dln}}$ is commutative and every dual differentiable function has an explicit primitive; but it carries no information there, since the vanishing half of the theory is soft. The general **residue theory** and **Cauchy integral formula**, by contrast, have no dual analogue, because their proofs use the point singularity of the fundamental solution and here the singular support is the fibre. The mechanism of the failure is the constant in the characteristic equation: for $\mathbb{C}$ the characteristic set of $D$ is the single point $\{\zeta = 0\}$, for $\mathbb{C}_{\mathrm{spl}}$ it is the null cone, and for $\mathbb{C}_{\mathrm{dln}}$ it is the line $\zeta_{q'} = 0$. The dual theory is thus the most degenerate case of the general theory: the characteristic set is a line, the group of invertibles modulo scaling is one-dimensional and unipotent, and the integral reduces to a pair of ordinary real integrals of which the real part is always exact.
 
@@ -538,7 +538,7 @@ which reduces a dual integral to a pair of real line integrals, with the real pa
 
 The form $f\,dQ$ is **closed** exactly when $f$ is **dual differentiable**, that is when $u_{q'} = 0$ and $v_{q'} = u_q$; equivalently $\partial/\partial\bar Q f = 0$. Consequently the **Cauchy–Goursat theorem** $\oint_\gamma f\,dQ = 0$ holds on every domain, and every differentiable function has an explicit primitive; the theorem is nevertheless **soft**, because it excludes nothing and its truth is the existence of the primitive rather than a property of the domain. A **rectangle criterion** characterises the continuous densities that are derivatives of dual differentiable functions — one step short of differentiability itself, since that class is not closed under differentiation — and the conjugate $\bar Q$ supplies the detector $\oint_\gamma \bar Q\,dQ = 2\operatorname{Area}(\gamma)\varepsilon$.
 
-The **obstruction** to the reconstruction half of the theory is the nilpotent ideal. The kernel $(\omega - Q_0)^{-1}$ is defined exactly off the fibre through $Q_0$, and no contour of non-zero winding avoids that fibre, so there is no **Cauchy integral formula**, no residue, no winding number, no Cauchy estimates, no Liouville theorem, no mean value property, no maximum principle, no Laurent expansion and no identity theorem. Analytically the same obstruction is the **fundamental solution** of the dual Cauchy–Riemann operator $D = \partial/\partial q' - \varepsilon\partial/\partial q$, which is supported on a ray of the fibre and not at a point; the pair $D, \bar D = \partial/\partial q' \pm \varepsilon\partial/\partial q$ satisfies $D\bar D = \bar D D = \partial^2/\partial q'^2$ and not $\Delta$, so $D$ is not elliptic.
+The **obstruction** to the reconstruction half of the theory is the nilpotent ideal. The kernel $(\omega - Q_0)^{-1}$ is defined exactly off the fibre through $Q_0$, and no contour of non-zero winding avoids that fibre, so there is no **Cauchy integral formula**, no residue, no winding number, no Cauchy estimates, no Liouville theorem, no mean value property, no maximum principle, no Laurent expansion and no identity theorem. Analytically the same obstruction is the **fundamental solution** of the dual Cauchy–Riemann operator $D = \partial/\partial q' - \varepsilon\partial/\partial q$, which is supported on a ray of the fibre and not at a point; the pair $D, \bar D = \partial/\partial q' \pm \varepsilon\partial/\partial q$ satisfies $D\bar D = \bar D D = \partial^2/\partial q'{}^2$ and not $\Delta$, so $D$ is not elliptic.
 
 What replaces the reconstruction half is the **derived** statement. A dual differentiable function is determined by its restriction to the real axis through $f(q + \varepsilon q') = u(q) + (q'u'(q)+c(q))\varepsilon$, its expansion in the nilpotent direction is exact, and the fibre integral evaluates while the derivation $\partial_{\mathrm{nil}}$ differentiates; for higher truncations $R[\varepsilon]/(\varepsilon^{n+1})$ the same scheme returns an exact $n$-jet and the residue functional becomes coefficient extraction in the derived variable. Finally, the dual system fails the ellipticity hypothesis $B_k^2 = -1$ of *Hypercomplex Integration* — $\mathbb{C}_{\mathrm{dln}}$ contains no square root of $-1$ — and it is the case in which the general theory degenerates to a soft vanishing theorem with no reconstruction theorem.
 
@@ -551,7 +551,7 @@ What replaces the reconstruction half is the **derived** statement. A dual diffe
 | $Q = q + \varepsilon q'$ | General dual number, $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ |
 | $\bar Q = q - \varepsilon q'$ | Dual conjugate |
 | $\langle Q\rangle = Q\bar Q = q^2$ | Degenerate norm |
-| $\|Q\| = \sqrt{q^2+q'^2}$ | Euclidean modulus |
+| $\|Q\| = \sqrt{q^2+q'{}^2}$ | Euclidean modulus |
 | $\mathrm{M} = \varepsilon\mathbb{R}$ | Maximal ideal, nilpotent, $\mathrm{M}^2 = 0$ |
 | $\pi : \mathbb{C}_{\mathrm{dln}} \to \mathbb{R}$ | Augmentation, kernel $\mathrm{M}$ |
 | $\gamma : [a,b] \to \mathbb{C}_{\mathrm{dln}}$ | Piecewise $C^1$ path |
@@ -560,8 +560,8 @@ What replaces the reconstruction half is the **derived** statement. A dual diffe
 | $\int_\gamma f\,dQ$ | Dual integral |
 | $f = u + v\varepsilon$ | Real and infinitesimal components |
 | $\partial/\partial\bar Q f = 0$ | Dual Cauchy–Riemann equation, $u_{q'} = 0$, $v_{q'} = u_q$ |
-| $D = \partial/\partial\bar Q = \partial/\partial q' - \varepsilon\partial/\partial q$ | Cauchy–Riemann operator, $D^2 = \partial^2/\partial q'^2 - 2\varepsilon\partial^2/\partial q\partial q'$ |
-| $\bar D = \partial/\partial q' + \varepsilon\partial/\partial q$ | Conjugate operator, $D\bar D = \bar D D = \partial^2/\partial q'^2$ |
+| $D = \partial/\partial\bar Q = \partial/\partial q' - \varepsilon\partial/\partial q$ | Cauchy–Riemann operator, $D^2 = \partial^2/\partial q'{}^2 - 2\varepsilon\partial^2/\partial q\partial q'$ |
+| $\bar D = \partial/\partial q' + \varepsilon\partial/\partial q$ | Conjugate operator, $D\bar D = \bar D D = \partial^2/\partial q'{}^2$ |
 | $\partial_{\mathrm{nil}}\,(q+\varepsilon q') = \varepsilon q'$ | Nilpotent-parameter derivation, idempotent |
 | $F = A + (q'u + C)\varepsilon$ | Primitive of a differentiable $f$, with $A' = u$, $C' = c$ |
 | $E = H(q')\delta(q) + q'_+\delta'(q)\varepsilon$ | Fundamental solution of $D$, supported on a fibre ray |

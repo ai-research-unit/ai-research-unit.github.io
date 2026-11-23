@@ -26,7 +26,7 @@ The Peirce frame comes first, then its compression, then the general theory, the
 
 ### The Root and the Peirce Frame
 
-A root of the unit fixes a frame. For $\vec Z=\sum_{\imath\in\{x,y,z\}}a_\imath\vec e_\imath$ with
+A root of the unit fixes a frame. For $\vec Z=\sum_{\imath\in\{x,y,z\}}a_{\imath}\vec e_{\imath}$ with
 
 $$
 \vec Z^{2}=-\bigl(a_x^2+a_y^2+a_z^2\bigr)e_t=e_t ,
@@ -79,8 +79,8 @@ The larger size is the smaller one written twice.
 | unit | matrix | Hermitian |
 | --- | --- | --- |
 | $e_t$ | $\mathrm I_2$ | yes |
-| $\vec e_\imath$ | $-i\sigma_\imath$ | no |
-| $i\vec e_\imath$ | $\sigma_\imath$ | yes |
+| $\vec e_{\imath}$ | $-i\sigma_{\imath}$ | no |
+| $i\vec e_{\imath}$ | $\sigma_{\imath}$ | yes |
 
 $$
 \boxed{\;\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr)\;}
@@ -102,7 +102,7 @@ They satisfy the Clifford relations, with the sign vector $\varepsilon=(1,-1,-1,
 
 $$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}\mathrm I_4,\qquad
-(\gamma_\imath)^2=-\mathrm I_4,\qquad
+(\gamma_{\imath})^2=-\mathrm I_4,\qquad
 \gamma_5^2=\mathrm I_4,\qquad
 \{\gamma_{\imath},\gamma_5\}=0,
 $$
@@ -160,7 +160,7 @@ The orbit is a statement of physics; the page shows one member of it and two oth
 Apply the automorphism that exchanges two spatial units, re-read the statement, and compare.
 
 $$
-\vec e_\imath^{2}=-e_t
+\vec e_{\imath}^{2}=-e_t
 $$
 
 returns itself, with the index renamed: it is a fact about $\mathbb{B}$.
@@ -179,7 +179,7 @@ The defect is not that the display has a direction. A frame is legitimate whenev
 
 **The defect is that the direction is unmarked.** A sentence $\sigma_3[\vec u]$, with $\vec u$ the axis, would be complete and could be rotated. The sentence $\sigma_3$, with no axis, is incomplete and cannot be rotated, and the notation supplies no place to put the missing name. A formula of general physics is then printed with a datum it does not contain, and the reader has no way to subtract the datum.
 
-The signs are the model of the other case. Time is distinguished from space by the squares, $e_t^2=+e_t$ and $\vec e_\imath^2=-e_t$, and that asymmetry is carried by an object of the algebra, where it cannot be lost and needs no declaration. An asymmetry that the physics has belongs in an object; a direction that the physics does not have belongs nowhere.
+The signs are the model of the other case. Time is distinguished from space by the squares, $e_t^2=+e_t$ and $\vec e_{\imath}^2=-e_t$, and that asymmetry is carried by an object of the algebra, where it cannot be lost and needs no declaration. An asymmetry that the physics has belongs in an object; a direction that the physics does not have belongs nowhere.
 
 ### What Is Not Claimed
 
@@ -236,10 +236,10 @@ The boundary. The statement is structural: it says which kind of action can coup
 Read: the algebra's own basis maps to minus $i$ times the Pauli matrices, and the Hermitian basis maps to the Pauli matrices. The two rows differ by one factor and by nothing else.
 
 $$
-\vec e_\imath\longmapsto-i\sigma_\imath\ \ (\text{anti-Hermitian, generates}),\qquad i\vec e_\imath\longmapsto\sigma_\imath\ \ (\text{Hermitian, is measured}) .
+\vec e_{\imath}\longmapsto-i\sigma_{\imath}\ \ (\text{anti-Hermitian, generates}),\qquad i\vec e_{\imath}\longmapsto\sigma_{\imath}\ \ (\text{Hermitian, is measured}) .
 $$
 
-The factor is forced, and the sign is forced. A real $2\times2$ matrix of square $-\mathrm I_2$ is a complex structure on $\mathbb{R}^2$; three of them, anticommuting, are the quaternionic structure. The algebra whose vectors square to $-e_t$ needs the coefficient field to supply the $i$ that turns $\sigma_\imath$ into $-i\sigma_\imath$. The alternative assignment $\vec e_\imath\mapsto-\mathsf M_2(\vec e_\imath)$ keeps the squares and fails the products.
+The factor is forced, and the sign is forced. A real $2\times2$ matrix of square $-\mathrm I_2$ is a complex structure on $\mathbb{R}^2$; three of them, anticommuting, are the quaternionic structure. The algebra whose vectors square to $-e_t$ needs the coefficient field to supply the $i$ that turns $\sigma_{\imath}$ into $-i\sigma_{\imath}$. The alternative assignment $\vec e_{\imath}\mapsto-\mathsf M_2(\vec e_{\imath})$ keeps the squares and fails the products.
 
 So $i$ is not bookkeeping. It is the statement that the three directions of the algebra are generators of rotations and not observables, and that the same three directions multiplied by $i$ are observables and not generators. The complexification is what allows one algebra to hold both.
 
@@ -257,10 +257,10 @@ The boundary. The rule is bookkeeping and not physics. Its role is diagnostic: w
 
 ### I.2.n — The Element Stores Half the Rapidity
 
-Read: a boost rotor of rapidity $\upsilon_{\mathrm{rnd}}$ has a matrix with eigenvalues $e^{\pmk/2}$, and its two-sided operator has eigenvalues $e^k,1,1,e^{-k}$.
+Read: a boost rotor of rapidity $\upsilon_{\mathrm{rnd}}$ has a matrix with eigenvalues $e^{\pm k/2}$, and its two-sided operator has eigenvalues $e^k,1,1,e^{-k}$.
 
 $$
-\tilde B_\imath=\cosh\tfrac{\upsilon_{\mathrm{rnd}}}{2}\,e_t+\sinh\tfrac{\upsilon_{\mathrm{rnd}}}{2}\,i\vec e_z,\qquad \mathsf M_2(\tilde B_\imath)=\operatorname{diag}\bigl(e^{k/2},e^{-k/2}\bigr) .
+\tilde B_{\imath}=\cosh\tfrac{\upsilon_{\mathrm{rnd}}}{2}\,e_t+\sinh\tfrac{\upsilon_{\mathrm{rnd}}}{2}\,i\vec e_z,\qquad \mathsf M_2(\tilde B_{\imath})=\operatorname{diag}\bigl(e^{k/2},e^{-k/2}\bigr) .
 $$
 
 The half is the double cover, read on the spectrum. The element acts on the spinor, so it carries half of the rapidity; the congruence acts on the four-vector, so it carries the whole of it. The two middle eigenvalues of the operator are the transverse directions, which the boost fixes.

@@ -118,7 +118,7 @@ $$
 u=-2\digamma_{\mathrm{kin}}\,\partial_x\ln\psi=\frac{x}{t'},
 $$
 
-which solves Burgers' equation with no pressure: $\partial_{t'}u=-x/t'^{2}$, $u\partial_xu=x/t'^{2}$, and $\digamma_{\mathrm{kin}}\partial_{xx}u=0$. The three terms cancel pairwise, and the solution is the inviscid rarefaction written in similarity variables.
+which solves Burgers' equation with no pressure: $\partial_{t'}u=-x/t'{}^{2}$, $u\partial_xu=x/t'{}^{2}$, and $\digamma_{\mathrm{kin}}\partial_{xx}u=0$. The three terms cancel pairwise, and the solution is the inviscid rarefaction written in similarity variables.
 
 In three dimensions the transformation survives only for potential flow. With $\vec v=-2\digamma_{\mathrm{kin}}\vec\nabla_\Phi\ln\psi$ and $\psi$ solving $\partial_{t'}\psi=\digamma_{\mathrm{kin}}\Delta_\Phi\psi$, the vector Burgers equation holds identically, because the two identities used in one dimension are the gradient of the scalar ones. A flow with a non-vanishing curl is not of this form, and for it no such transformation is known. So even the exceptional linearisation is a potential-flow statement, and the vorticity obstruction of [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html) is untouched.
 

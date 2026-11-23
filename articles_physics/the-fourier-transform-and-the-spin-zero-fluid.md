@@ -92,7 +92,7 @@ The radius reading survives the sum. For a general solution the two effects comp
 The support of a solution is the pole set of the kernel, and that is not a coincidence of this rung. A mode at the label $\tilde\Upsilon_\Phi$ solves the free equation exactly when the symbol vanishes there,
 
 $$
-\mathcal N(\tilde\Upsilon_\Phi)=\nu_t'^{\,2}-\lvert\vec\nu_\Phi\rvert^{2}-\nu_m^{2}=0 ,
+\mathcal N(\tilde\Upsilon_\Phi)=\nu_t'{}^{\,2}-\lvert\vec\nu_\Phi\rvert^{2}-\nu_m^{2}=0 ,
 $$
 
 so the labels a solution's transform can occupy are the labels at which the kernel's inverse has its pole, and the residue there is the mode's weight. Two consequences follow and neither needs a calculation: the support cannot sit at a label the symbol does not vanish at, and a coupling that enters linearly moves the pole and cannot reshape it, which is the second row of the table above. At the rung below the symbol is affine rather than homogeneous, so its zero set is a paraboloid and not a hyperboloid — no shell in the sense of §*The Two Scalar Rungs*, but still a set of labels and still the support, and the identification survives with only the shape of the set changed.
@@ -185,7 +185,7 @@ The passage to the first-order rung removes the shell and with it the radius rea
 | $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$ | Its norm; $-c^{2}$ at a mode |
 | $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, $\gamma=E/(mc^{2})$ | The conserved density |
 | $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | The wave number element |
-| $\mathcal N(\tilde\Upsilon_\Phi)=\nu_t'^{\,2}-\lvert\vec\nu_\Phi\rvert^{2}-\nu_m^{2}$ | The symbol; its zero set is the mass shell, and the support of a solution is that set |
+| $\mathcal N(\tilde\Upsilon_\Phi)=\nu_t'{}^{\,2}-\lvert\vec\nu_\Phi\rvert^{2}-\nu_m^{2}$ | The symbol; its zero set is the mass shell, and the support of a solution is that set |
 | $\varepsilon=\pm1$ | The branch |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 

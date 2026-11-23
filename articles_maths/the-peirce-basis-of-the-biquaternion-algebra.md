@@ -119,20 +119,20 @@ The identity is independent of the basis: a change of basis conjugates the coord
 **A change of basis of the same family.** Every other basis of the same family has the form
 
 $$
-\vec\Pi_{\mathrm{nil}}'_{+-}=t_{+}t_{-}^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
-\vec\Pi_{\mathrm{nil}}'_{-+}=t_{-}t_{+}^{-1}\vec\Pi_{\mathrm{nil},-+},\qquad
+\vec\Pi_{\mathrm{nil}}'{}_{+-}=t_{+}t_{-}^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
+\vec\Pi_{\mathrm{nil}}'{}_{-+}=t_{-}t_{+}^{-1}\vec\Pi_{\mathrm{nil},-+},\qquad
 t_{+},t_{-}\in\mathbb{C}^{\times},
 $$
 
 with the diagonal elements unchanged.
 
-**Proof.** Each primed mixed element is a nonzero multiple of the unprimed one, say $\vec\Pi_{\mathrm{nil}}'_{+-}=c_{+}\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil}}'_{-+}=c_{-}\vec\Pi_{\mathrm{nil},-+}$. The product normalization gives $c_{+}c_{-}=1$. Set $t_{+}=c_{+}$ and $t_{-}=1$; then $c_{+}=t_{+}t_{-}^{-1}$ and $c_{-}=t_{-}t_{+}^{-1}$. The converse is a direct check.
+**Proof.** Each primed mixed element is a nonzero multiple of the unprimed one, say $\vec\Pi_{\mathrm{nil}}'{}_{+-}=c_{+}\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil}}'{}_{-+}=c_{-}\vec\Pi_{\mathrm{nil},-+}$. The product normalization gives $c_{+}c_{-}=1$. Set $t_{+}=c_{+}$ and $t_{-}=1$; then $c_{+}=t_{+}t_{-}^{-1}$ and $c_{-}=t_{-}t_{+}^{-1}$. The converse is a direct check.
 
 **The effective gauge.** Put $t=t_{-}t_{+}^{-1}$. Then
 
 $$
-\vec\Pi_{\mathrm{nil}}'_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
-\vec\Pi_{\mathrm{nil}}'_{-+}=t\,\vec\Pi_{\mathrm{nil},-+}.
+\vec\Pi_{\mathrm{nil}}'{}_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
+\vec\Pi_{\mathrm{nil}}'{}_{-+}=t\,\vec\Pi_{\mathrm{nil},-+}.
 $$
 
 A common scalar in $t_{+}$ and $t_{-}$ acts trivially, because $(ct_{+})(ct_{-})^{-1}=t_{+}t_{-}^{-1}$. The effective group is
@@ -261,8 +261,8 @@ $$
 The gauge transformation is
 
 $$
-\vec\Pi_{\mathrm{nil}}'_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
-\vec\Pi_{\mathrm{nil}}'_{-+}=t\vec\Pi_{\mathrm{nil},-+},
+\vec\Pi_{\mathrm{nil}}'{}_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
+\vec\Pi_{\mathrm{nil}}'{}_{-+}=t\vec\Pi_{\mathrm{nil},-+},
 $$
 
 for $t\in\mathbb{C}^{\times}$. The standard basis is Hermitian, $\vec\Pi_{\mathrm{nil},-+}=\vec\Pi_{\mathrm{nil},+-}^{*}$; the Hermitian gauges are the circle $|t|=1$, so the standard basis is one point of a $U(1)$-family and not a canonical one.

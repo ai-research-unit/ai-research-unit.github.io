@@ -4,6 +4,8 @@
 
 The quadratic part of the electroweak Lagrangian is not invertible, because it is flat along the gauge orbits. A gauge-fixing functional is what makes it invertible, and the functional that is chosen here does two things at once: it gives the would-be Goldstones a mass $\zeta M^2$ and it cancels the derivative mixing between each Goldstone and the vector that ate it. Both jobs are done by one term, and that is why the choice is the one it is.
 
+Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.
+
 $$
 \mathcal{L}_{\mathrm{gf}}=-\frac{1}{2\zeta}\sum_{a=1,2}\left(\sum_{\imath}\frac{\partial W_{a,\imath}}{\partial R_{\imath}}-\zeta M_W\,\xi_{a}\right)^2-\frac{1}{2\zeta}\left(\sum_{\imath}\frac{\partial Z_{\imath}}{\partial R_{\imath}}-\zeta M_Z\,\xi^0\right)^2-\frac{1}{2\zeta_A}\left(\sum_{\imath}\frac{\partial A_{\imath}}{\partial R_{\imath}}\right)^2 .
 $$
@@ -112,7 +114,7 @@ M_{\xi^\pm}^2=\zeta M_W^2 ,
 M_{\xi^0}^2=\zeta M_Z^2 .
 $$
 
-For the measured masses, quoted as fractions of the vacuum value with $E_{\mathrm{vev}}=246.22$ GeV and $n_W=0.3264$, $n_Z=0.3704$, the table reads:
+For the measured masses, quoted as fractions of the vacuum value with $E_{\mathrm{vev}}=3.9449\times10^{-8}\ \mathrm{J}$ and $n_W=0.3264$, $n_Z=0.3704$, the table reads:
 
 | $\zeta$ | $n_{\xi^\pm}=\sqrt{\zeta}\,n_W$ | $n_{\xi^0}=\sqrt{\zeta}\,n_Z$ |
 |---|---|---|
@@ -159,7 +161,7 @@ $$
 M_{\mathrm{gh}}^2=\frac{\zeta v^2}{4}\begin{pmatrix}g^2 & -g\,g_{\mathrm Y}\\ -g_{\mathrm Y}\,g & g_{\mathrm Y}^2\end{pmatrix},
 $$
 
-whose determinant vanishes identically and whose trace is $\zeta M_Z^2$. Its eigenvalues are therefore $0$ and $\zeta M_Z^2$; verified at $\zeta=0.5$, $1$ and $3$, where the computed determinant stayed below $2\times10^{-8}$ GeV$^4$ against a trace squared of order $10^{8}$ GeV$^4$, that is zero to floating-point precision. The zero eigenvalue is the photon's ghost, and its existence is the statement that the residual symmetry is unbroken. A gauge theory with a compact unbroken factor has a massless ghost per generator of that factor, and the count is a check on the breaking pattern rather than on the gauge.
+whose determinant vanishes identically and whose trace is $\zeta M_Z^2$. Its eigenvalues are therefore $0$ and $\zeta M_Z^2$; verified at $\zeta=0.5$, $1$ and $3$, where the computed determinant stayed below $4.17\times10^{29}\ \mathrm{J\,m^{-3}}$ against a trace squared of order $2.09\times10^{45}$ J m$^{-3}$, that is zero to floating-point precision. The zero eigenvalue is the photon's ghost, and its existence is the statement that the residual symmetry is unbroken. A gauge theory with a compact unbroken factor has a massless ghost per generator of that factor, and the count is a check on the breaking pattern rather than on the gauge.
 
 Three weights are attached to each ghost, and they are separate facts:
 
@@ -227,7 +229,7 @@ The third limit is not a gauge in which one can compute loops: the vector propag
 
 ## What the Parameter Cannot Change
 
-The pole at $\Pi=M^2$ sits in the first term only, whose residue is $P_{\imath\jmath}$, and $P$ carries no $\zeta$. Verified: multiplying $D$ by $(\Pi-M^2)$ and subtracting $P$ leaves a deviation that vanishes linearly with the off-shellness, $1.4\times10^{-9}$ for $2M\epsilon=2.8\times10^{-9}$ GeV$^{2}$. The physical pole's residue is $\zeta$-independent, and the $\zeta$-pole is somewhere else.
+The pole at $\Pi=M^2$ sits in the first term only, whose residue is $P_{\imath\jmath}$, and $P$ carries no $\zeta$. Verified: multiplying $D$ by $(\Pi-M^2)$ and subtracting $P$ leaves a deviation that vanishes linearly with the off-shellness, $1.4\times10^{-9}$ for $2M\epsilon=7.19\times10^{-29}$ J$^{2}$. The physical pole's residue is $\zeta$-independent, and the $\zeta$-pole is somewhere else.
 
 For a conserved external current, $\sum_{\jmath} p_{\jmath} j_{\jmath}=0$, the longitudinal projector annihilates it, $L_{\imath\jmath}j_{\jmath}=0$, so
 
@@ -308,10 +310,10 @@ The piece $\frac{1}{M}p_{\imath}$ contracted with a vertex is, by the Ward ident
 Without a scalar, the amplitude for $W_LW_L\to W_LW_L$ grows as $s/v^2$. The $J=0$ partial wave is $a_0=s/(16\pi v^2)$, and the unitarity bound $\lvert a_0\rvert\le\frac12$ is saturated at
 
 $$
-\sqrt{s}=\sqrt{8\pi}\,v=1.23\ \text{TeV} .
+\sqrt{s}=\sqrt{8\pi}\,v=1.97\times10^{-7}\ \text{J} .
 $$
 
-With the scalar present, the $s/v^2$ growth cancels against the scalar exchange and the residual is of order $M_H^2/v^2$. The $1.23$ TeV is therefore the energy at which the sector must either show its scalar or show something else.
+With the scalar present, the $s/v^2$ growth cancels against the scalar exchange and the residual is of order $M_H^2/v^2$. The $1.97\times10^{-7}\ \mathrm{J}$ is therefore the energy at which the sector must either show its scalar or show something else.
 
 The theorem is the dynamical counterpart of the counting. The count is $12=12$: the three eaten components become the three longitudinal polarisations. The theorem says which is which: at high energy the eaten Goldstone and the longitudinal polarisation are the same object, and the equality of their couplings is what makes the count a statement about dynamics and not only about arithmetic.
 
@@ -329,7 +331,7 @@ At the three standard gauges the Goldstone and ghost masses are these.
 
 Physical pole at $\Pi=M^2$; $\zeta$-pole at $\Pi=\zeta M^2$, shared by the Goldstone and the ghost. At $\zeta=2$ the $\zeta$-pole of the $W$ sector sits at $\Pi=2M_W^2$, that is at $\sqrt2\,n_W=0.4618$, above the physical pole by a factor $\sqrt2$ in mass.
 
-The unitarity scale is $\sqrt{8\pi}\,v=1.23$ TeV, and $\sqrt{16\pi}\,v=1.75$ TeV for the bound $\lvert a_0\rvert\le1$. The two differ by $\sqrt2$, which is the difference between the two conventions for the partial-wave bound, and both are quoted in the literature.
+The unitarity scale is $\sqrt{8\pi}\,v=1.97\times10^{-7}\ \mathrm{J}$, and $\sqrt{16\pi}\,v=2.80\times10^{-7}\ \mathrm{J}$ for the bound $\lvert a_0\rvert\le1$. The two differ by $\sqrt2$, which is the difference between the two conventions for the partial-wave bound, and both are quoted in the literature.
 
 One number is zero and must be: the determinant of the neutral ghost mass matrix. It vanishes for every $\zeta$, and it does so because the photon is massless. A non-zero determinant would mean that $\mathrm{U}(1)_{\mathrm{em}}$ was broken by the gauge fixing, which cannot happen: a gauge condition cannot break a symmetry that the gauge condition respects.
 
@@ -367,7 +369,7 @@ One propagator formula covers the family, $D_{\imath\jmath}=\frac{P_{\imath\jmat
 
 The parameter changes nothing observable: the residue at the physical pole is $P_{\imath\jmath}$ and carries no $\zeta$, and a conserved current is blind to the parameter, drifting by $4.5\times10^{-16}$ across five gauges while a non-conserved current drifts by $0.78$. Every $R_\xi$ propagator falls as $1/\Pi$, so the superficial degree of divergence is bounded by four independently of the number of loops; the unitary gauge loses that property, which is why renormalisability is proved in the family and not at its endpoint.
 
-The equivalence theorem follows from $\epsilon_{L,\imath}=p_{\imath}/M+O(M^2/E^2)$, since $p_{\imath}/M$ contracts to the divergence of the current and the Goldstone couples to that divergence by the Ward identity. Without the scalar the $W_LW_L$ amplitude grows as $s/v^2$ and the $J=0$ partial wave saturates unitarity at $\sqrt{8\pi}\,v=1.23$ TeV.
+The equivalence theorem follows from $\epsilon_{L,\imath}=p_{\imath}/M+O(M^2/E^2)$, since $p_{\imath}/M$ contracts to the divergence of the current and the Goldstone couples to that divergence by the Ward identity. Without the scalar the $W_LW_L$ amplitude grows as $s/v^2$ and the $J=0$ partial wave saturates unitarity at $\sqrt{8\pi}\,v=1.97\times10^{-7}\ \mathrm{J}$.
 
 The framework realises the gauge-fixing procedure itself, not the selection of a section, and it transcribes the electroweak instantiation, which needs the group, the representation and the scalar that the framework does not have. The parameter $\zeta$ is a coordinate and is not derivable in principle.
 
@@ -380,7 +382,7 @@ The framework realises the gauge-fixing procedure itself, not the selection of a
 | $\xi_{a}$, $\xi^\pm$, $\xi^0$ | The would-be Goldstone fields of article 4, which writes the index down |
 | $W_{a,\imath}$, $Z_{\imath}$, $A_{\imath}$ | The gauge fields in the broken basis: the charged pair, the neutral massive one and the photon |
 | $\omicron_{\mathrm{pot}}$, $h$ | The scalar doublet and the physical scalar left after the Goldstones are eaten |
-| $v$ | $246.22$ GeV, the vacuum expectation value, entering $M_W=gv/2$ |
+| $v$ | $3.9449\times10^{-8}\ \mathrm{J}$, the vacuum expectation value, entering $M_W=gv/2$ |
 | $g$, $g_{\mathrm Y}$ | The $SU(2)_L$ and $\mathrm U(1)_{\mathrm Y}$ couplings |
 | $n_W$, $n_Z$, $n_H$ | $0.3264$, $0.3704$ and $0.5080$, the measured boson masses as fractions of $m_{\mathrm{vev}}$ |
 | $M_Y$ | $g_{\mathrm Y}v/2$, the hypercharge partner in the unbroken-basis functional |

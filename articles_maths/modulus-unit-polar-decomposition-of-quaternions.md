@@ -76,7 +76,7 @@ The three is the dimension of the sphere $S^3$, not a triple of scalar parameter
 
 **Existence.** Put $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/\varrho$. Since $\langle\tilde q\rangle_{\natural}>0$, the number $\varrho$ is a positive real. Since the norm is homogeneous of degree two, $\langle\tilde u_{\mathrm r}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}/\varrho^2=1$. Hence $\tilde q=\varrho\tilde u_{\mathrm r}$ with $\varrho>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$.
 
-**Uniqueness.** Suppose $\tilde q=\varrho\tilde u_{\mathrm r}=r'\tilde u_{\mathrm r}'$ with $\varrho,r'>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=\langle\tilde u_{\mathrm r}'\rangle_{\natural}=1$. Taking norms gives $\varrho^2=\langle\tilde q\rangle_{\natural}=r'^2$. Both are positive, so $\varrho=r'$. Dividing, $\tilde u_{\mathrm r}=\tilde q/\varrho=\tilde u_{\mathrm r}'$.
+**Uniqueness.** Suppose $\tilde q=\varrho\tilde u_{\mathrm r}=r'\tilde u_{\mathrm r}'$ with $\varrho,r'>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=\langle\tilde u_{\mathrm r}'\rangle_{\natural}=1$. Taking norms gives $\varrho^2=\langle\tilde q\rangle_{\natural}=r'{}^2$. Both are positive, so $\varrho=r'$. Dividing, $\tilde u_{\mathrm r}=\tilde q/\varrho=\tilde u_{\mathrm r}'$.
 
 The pair is unique, with no sign ambiguity and no branch ambiguity. The two quaternions $\tilde q$ and $-\tilde q$ have the same modulus and opposite unit factors; the sign is carried by the unit factor, not by the modulus. This is a statement about the factorisation, not about a coordinate on the sphere: two different charts assign different parameters to the same unit factor.
 
@@ -296,8 +296,8 @@ The modulus–unit decomposition exists in every algebra of the family, with the
 | algebra | element | norm | inertia | modulus | unit set | topology of the unit set |
 |---|---|---|---|---|---|---|
 | $\mathbb{R}$ | $q$ | $q^2$ | $(1,0)$ | $\lvert q\rvert$ | $\{\pm1\}$ | two points |
-| $\mathbb{C}$ | $Q=q+iq'$ | $q^2+q'^2$ | $(2,0)$ | $\sqrt{\langle Q\rangle_{*}}$ | $\mathrm{U}(1)$ | circle, compact and connected |
-| $\mathbb{C}_{\mathrm{spl}}$ | $Q=q+jq'$ | $q^2-q'^2$ | $(1,1)$ | $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $\langle Q\rangle_{*}\neq0$ | $\{\langle Q\rangle_{*}=\pm1\}$ | four components, non-compact |
+| $\mathbb{C}$ | $Q=q+iq'$ | $q^2+q'{}^2$ | $(2,0)$ | $\sqrt{\langle Q\rangle_{*}}$ | $\mathrm{U}(1)$ | circle, compact and connected |
+| $\mathbb{C}_{\mathrm{spl}}$ | $Q=q+jq'$ | $q^2-q'{}^2$ | $(1,1)$ | $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $\langle Q\rangle_{*}\neq0$ | $\{\langle Q\rangle_{*}=\pm1\}$ | four components, non-compact |
 | $\mathbb{H}$ | $\tilde q$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ | $\sqrt{\langle\tilde q\rangle_{\natural}}$ | $S^3=\mathrm{Sp}(1)$ | sphere, compact, connected, simply connected |
 | $\mathbb{H}_{\mathrm{spl}}$ | $\tilde q$ | $q_t^2+q_x^2-q_y^2-q_z^2$ | $(2,2)$ | $\sqrt{\lvert\langle\tilde q\rangle_{\natural}\rvert}$, $\langle\tilde q\rangle_{\natural}\neq0$ | $\{\langle\tilde q\rangle_{\natural}=\pm1\}$ | two components, non-compact |
 

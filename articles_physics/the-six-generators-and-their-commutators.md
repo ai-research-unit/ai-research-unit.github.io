@@ -13,10 +13,10 @@ The article assumes *The Isomorphisms and Their Dimensions* for the traceless pa
 ### The Three Rotations
 
 $$
-J_\imath=\tfrac12\vec e_\imath,\qquad k=x,y,z .
+J_{\imath}=\tfrac12\vec e_{\imath},\qquad k=x,y,z .
 $$
 
-Each is a pure vector with real coefficients, so each is anti-Hermitian, $J_\imath^{*}=-J_\imath$. As a rotor generator, $J_\imath$ exponentiates to the rotation of *The Group of Unit-Norm Biquaternions*,
+Each is a pure vector with real coefficients, so each is anti-Hermitian, $J_{\imath}^{*}=-J_{\imath}$. As a rotor generator, $J_{\imath}$ exponentiates to the rotation of *The Group of Unit-Norm Biquaternions*,
 
 $$
 \exp(\theta_{\mathrm{axr}}J_{\vec u})=\cos\tfrac{\theta_{\mathrm{axr}}}{2}+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec u ,
@@ -27,10 +27,10 @@ and the factor $\tfrac12$ in the generator is the half-angle of the rotor, seen 
 ### The Three Boosts
 
 $$
-K_\imath=\tfrac12 i\vec e_\imath,\qquad k=x,y,z .
+K_{\imath}=\tfrac12 i\vec e_{\imath},\qquad k=x,y,z .
 $$
 
-Each is a pure vector with imaginary coefficients, so each is Hermitian, $K_\imath^{*}=K_\imath$. It exponentiates to the boost,
+Each is a pure vector with imaginary coefficients, so each is Hermitian, $K_{\imath}^{*}=K_{\imath}$. It exponentiates to the boost,
 
 $$
 \exp(\theta_{\mathrm{rpd}}K_{\vec u})=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}+\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u ,
@@ -40,9 +40,9 @@ with the rapidity $\theta_{\mathrm{rpd}}$ and $\tanh\theta_{\mathrm{rpd}}=v/c$.
 
 ### The Two Kinds, in One Table
 
-| | $J_\imath$ | $K_\imath$ |
+| | $J_{\imath}$ | $K_{\imath}$ |
 |---|---|---|
-| element | $\tfrac12\vec e_\imath$ | $\tfrac12 i\vec e_\imath$ |
+| element | $\tfrac12\vec e_{\imath}$ | $\tfrac12 i\vec e_{\imath}$ |
 | under the star | anti-Hermitian | Hermitian |
 | sector | $\mathbb{B}_{\Phi}$ | $\mathbb{B}_{\Psi}$ |
 | exponential is | a rotation, compact, periodic | a boost, non-compact, monotone |
@@ -52,7 +52,7 @@ The last row is the infinitesimal form of the difference between a closed and an
 
 ### Why These and Not Others
 
-The six are a basis of the traceless part: three complex directions $\vec e_\imath$ read as six real directions $\vec e_\imath$ and $i\vec e_\imath$. The factors $\tfrac12$ are conventions that make the exponential formula free of factors of two; they do not affect the bracket's shape, only its numerical entries.
+The six are a basis of the traceless part: three complex directions $\vec e_{\imath}$ read as six real directions $\vec e_{\imath}$ and $i\vec e_{\imath}$. The factors $\tfrac12$ are conventions that make the exponential formula free of factors of two; they do not affect the bracket's shape, only its numerical entries.
 
 ## The Commutator Table
 
@@ -61,7 +61,7 @@ The six are a basis of the traceless part: three complex directions $\vec e_\ima
 Direct multiplication in the algebra gives, for cyclic $(i,j,k)=(x,y,z)$,
 
 $$
-[J_i,J_j]=J_\imath,\qquad [J_i,K_j]=K_\imath,\qquad [K_i,K_j]=-J_\imath .
+[J_i,J_j]=J_{\imath},\qquad [J_i,K_j]=K_{\imath},\qquad [K_i,K_j]=-J_{\imath} .
 $$
 
 Written out in full, with the antisymmetry understood:
@@ -106,7 +106,7 @@ The table is checked by direct multiplication on all thirty-six ordered pairs, a
 
 ### The Rotation Block
 
-The first block is the rotation algebra: three generators with $[J_i,J_j]=\epsilon_{\imath\jmath\ell}J_\imath$, which is $\mathfrak{su}(2)$ up to the factor of $i$ that the anti-Hermitian convention absorbs. No other three-dimensional algebra has that table.
+The first block is the rotation algebra: three generators with $[J_i,J_j]=\epsilon_{\imath\jmath\ell}J_{\imath}$, which is $\mathfrak{su}(2)$ up to the factor of $i$ that the anti-Hermitian convention absorbs. No other three-dimensional algebra has that table.
 
 ### The Boost Block
 
@@ -114,7 +114,7 @@ The second and third blocks say that the boosts are a three-dimensional vector s
 
 ### The Alternative That Fails
 
-Had the third block read $[K_i,K_j]=+J_\imath$, the table would be the table of $\mathfrak{so}(4)$, the Euclidean rotation algebra of four dimensions. Both tables are tables of *real forms of the same complex algebra*, and the sign is what decides which real form. A reader who "fixes" the sign to remove the minus gets a compact group and a positive-definite metric, and no light cone.
+Had the third block read $[K_i,K_j]=+J_{\imath}$, the table would be the table of $\mathfrak{so}(4)$, the Euclidean rotation algebra of four dimensions. Both tables are tables of *real forms of the same complex algebra*, and the sign is what decides which real form. A reader who "fixes" the sign to remove the minus gets a compact group and a positive-definite metric, and no light cone.
 
 ### The Inertia Check, Done Independently
 
@@ -178,9 +178,9 @@ $$
 C=\tfrac12\bigl(\vec K^{2}-\vec J^{2}\bigr),
 $$
 
-where $\vec J^{2}=\sum_{\imath\in\{x,y,z\}} J_\imath J_\imath$ and $\vec K^{2}=\sum_{\imath\in\{x,y,z\}} K_\imath K_\imath$ are sums of products inside the universal enveloping algebra. A second, independent invariant exists and is written in *The Two Casimirs of the Lorentz Algebra*; this article needs only the first.
+where $\vec J^{2}=\sum_{\imath\in\{x,y,z\}} J_{\imath} J_{\imath}$ and $\vec K^{2}=\sum_{\imath\in\{x,y,z\}} K_{\imath} K_{\imath}$ are sums of products inside the universal enveloping algebra. A second, independent invariant exists and is written in *The Two Casimirs of the Lorentz Algebra*; this article needs only the first.
 
-**Why the sign is what it is.** In the physicist's Hermitian convention the generators are $\mathcal{J}_\imath=iJ_\imath$ and $\mathcal{K}_\imath=iK_\imath$, and $\mathcal{J}^{2}-\mathcal{K}^{2}=(i)^{2}(\vec J^{2}-\vec K^{2})=\vec K^{2}-\vec J^{2}$. So the same Casimir is written
+**Why the sign is what it is.** In the physicist's Hermitian convention the generators are $\mathcal{J}_{\imath}=iJ_{\imath}$ and $\mathcal{K}_{\imath}=iK_{\imath}$, and $\mathcal{J}^{2}-\mathcal{K}^{2}=(i)^{2}(\vec J^{2}-\vec K^{2})=\vec K^{2}-\vec J^{2}$. So the same Casimir is written
 
 $$
 C=\tfrac12\bigl(\mathcal{J}^{2}-\mathcal{K}^{2}\bigr)\quad\text{(Hermitian generators)}
@@ -191,7 +191,7 @@ A formula copied from a book that uses the other convention will be off by an ov
 
 ### The Eigenvalue on the Defining Representation
 
-On the $2\times2$ image, $J_\imath=\tfrac12\mathsf{M}_2(\vec e_\imath)$ satisfies $J_\imath^{2}=-\tfrac14I_2$, so $\vec J^{2}=-\tfrac34I_2$; and $K_\imath^{2}=+\tfrac14I_2$, so $\vec K^{2}=+\tfrac34I_2$. Hence
+On the $2\times2$ image, $J_{\imath}=\tfrac12\mathsf{M}_2(\vec e_{\imath})$ satisfies $J_{\imath}^{2}=-\tfrac14I_2$, so $\vec J^{2}=-\tfrac34I_2$; and $K_{\imath}^{2}=+\tfrac14I_2$, so $\vec K^{2}=+\tfrac34I_2$. Hence
 
 $$
 C=\tfrac12\bigl(\tfrac34+\tfrac34\bigr)I_2=\tfrac34 I_2 .
@@ -235,14 +235,14 @@ A reader who meets the table in the four-vector display and again in the two-tri
 
 ## Summary
 
-The six generators are $J_\imath=\tfrac12\vec e_\imath$, anti-Hermitian and compact, and $K_\imath=\tfrac12 i\vec e_\imath$, Hermitian and non-compact. Their brackets are $[J_i,J_j]=J_\imath$, $[J_i,K_j]=K_\imath$, $[K_i,K_j]=-J_\imath$ cyclically, with structure constants $\pm\epsilon_{\imath\jmath\ell}$. The three blocks say that the rotations close, that the boosts transform as a vector, and that two boosts bracket to a rotation with the sign that makes the algebra Lorentzian rather than Euclidean. The trace form is $-\tfrac12$ on rotations and $+\tfrac12$ on boosts; the Killing form is $-4$ and $+4$; both have inertia $(3,3)$ and the Killing form has determinant $-4096$. The quadratic Casimir is $\tfrac12(\vec K^{2}-\vec J^{2})$ in the anti-Hermitian convention, equal to $\tfrac12(\mathcal{J}^{2}-\mathcal{K}^{2})$ in the Hermitian one, with value $\tfrac34$ on the defining representation. The table is the same in every display because every faithful representation is a Lie algebra homomorphism, and a homomorphism preserves brackets.
+The six generators are $J_{\imath}=\tfrac12\vec e_{\imath}$, anti-Hermitian and compact, and $K_{\imath}=\tfrac12 i\vec e_{\imath}$, Hermitian and non-compact. Their brackets are $[J_i,J_j]=J_{\imath}$, $[J_i,K_j]=K_{\imath}$, $[K_i,K_j]=-J_{\imath}$ cyclically, with structure constants $\pm\epsilon_{\imath\jmath\ell}$. The three blocks say that the rotations close, that the boosts transform as a vector, and that two boosts bracket to a rotation with the sign that makes the algebra Lorentzian rather than Euclidean. The trace form is $-\tfrac12$ on rotations and $+\tfrac12$ on boosts; the Killing form is $-4$ and $+4$; both have inertia $(3,3)$ and the Killing form has determinant $-4096$. The quadratic Casimir is $\tfrac12(\vec K^{2}-\vec J^{2})$ in the anti-Hermitian convention, equal to $\tfrac12(\mathcal{J}^{2}-\mathcal{K}^{2})$ in the Hermitian one, with value $\tfrac34$ on the defining representation. The table is the same in every display because every faithful representation is a Lie algebra homomorphism, and a homomorphism preserves brackets.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $J_\imath=\tfrac12\vec e_\imath$ | the rotation generators, anti-Hermitian |
-| $K_\imath=\tfrac12 i\vec e_\imath$ | the boost generators, Hermitian |
+| $J_{\imath}=\tfrac12\vec e_{\imath}$ | the rotation generators, anti-Hermitian |
+| $K_{\imath}=\tfrac12 i\vec e_{\imath}$ | the boost generators, Hermitian |
 | $\mathfrak{k}$, $\mathfrak{p}$ | the spans of the $J$ and of the $K$ |
 | $f_{abc}$ | the structure constants, $[T_a,T_b]=f_{abc}T_c$ |
 | $\langle\cdot,\cdot\rangle_{\mathrm{tr}}$ | the trace form $\operatorname{Tr}(\mathsf{M}_2(T_a)\mathsf{M}_2(T_b))$ |

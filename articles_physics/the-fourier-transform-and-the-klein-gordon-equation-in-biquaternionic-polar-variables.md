@@ -18,7 +18,7 @@ The two companion articles ask neighbouring questions. *The Lagrangian and the K
 
 The algebra and its units are those of *Algebra and Element Conventions*, the gradient, the d'Alembertian and the symbol rule those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*. The word, the four brackets and the quantum potential are the polar parent's, and they are cited rather than restated.
 
-The seed is quoted once. On the material sector $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and $\partial/\partial R_\imath=\partial/\partial r_\imath$, so
+The seed is quoted once. On the material sector $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and $\partial/\partial R_{\imath}=\partial/\partial r_{\imath}$, so
 
 $$
 \tilde\nabla_\Phi S_{\tilde\Xi}
@@ -41,7 +41,7 @@ $$
 
 with $\rho_{\mathrm{num}}=\varrho^{2}$.
 
-The bookkeeping is stated once. $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$, $2\pi\nu_t'=\omega/c$, $\nu_m=\frac{mc}{h}$, $\langle\tilde\Upsilon_\Phi\rangle_\natural=-\nu_t'^{2}+\nu_{\Phi}^{2}$, and the phase is $\theta_{\mathrm{pwp}}=\omega r_t'-2\pi\vec\nu_\Phi\cdot\vec r$ for a positive-frequency plane wave.
+The bookkeeping is stated once. $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$, $2\pi\nu_t'=\omega/c$, $\nu_m=\frac{mc}{h}$, $\langle\tilde\Upsilon_\Phi\rangle_\natural=-\nu_t'{}^{2}+\nu_{\Phi}^{2}$, and the phase is $\theta_{\mathrm{pwp}}=\omega r_t'-2\pi\vec\nu_\Phi\cdot\vec r$ for a positive-frequency plane wave.
 
 ## The Phase of the Transform Is the Action
 

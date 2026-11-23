@@ -78,7 +78,7 @@ $$
 
 which is not symmetric. The diagonal matrix and the permutation matrix commute only when the two diagonal entries they involve are equal.
 
-**The product of two antisymmetric matrices is symmetric, so it misses the antisymmetric half.** $(KK')^{\mathsf T}=K'^{\mathsf T}K^{\mathsf T}=K'K$, which is the transpose of $KK'$; hence $KK'\in\operatorname{Sym}_n$. At $n=2$, with $K_1=E_{12}-E_{21}$ and $K_2=2E_{12}-2E_{21}$,
+**The product of two antisymmetric matrices is symmetric, so it misses the antisymmetric half.** $(KK')^{\mathsf T}=K'{}^{\mathsf T}K^{\mathsf T}=K'K$, which is the transpose of $KK'$; hence $KK'\in\operatorname{Sym}_n$. At $n=2$, with $K_1=E_{12}-E_{21}$ and $K_2=2E_{12}-2E_{21}$,
 
 $$
 K_1K_2=\begin{pmatrix}-2&0\\ 0&-2\end{pmatrix},

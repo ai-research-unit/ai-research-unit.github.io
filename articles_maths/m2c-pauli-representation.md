@@ -128,7 +128,7 @@ The two mixed units are nilpotent, and each pair multiplies to one of the idempo
 
 **The coordinates.** An element written in the frame is
 $$
-\tilde Q=P_+\tilde\Pi_{\mathrm{id},++X}_+\vec\Pi_{\mathrm{nil},++X}_-\vec\Pi_{\mathrm{nil},-+P}_-\tilde\Pi_{\mathrm{id},-},
+\tilde Q=P_+\tilde\Pi_{\mathrm{id},++X}{}_+\vec\Pi_{\mathrm{nil},++X}{}_-\vec\Pi_{\mathrm{nil},-+P}{}_-\tilde\Pi_{\mathrm{id},-},
 \qquad P_\pm,X_\pm\in\mathbb{C},
 $$
 with
@@ -176,13 +176,13 @@ The left bases are the two pairs of $\mathcal{P}$; the right bases are the two p
 
 **The left matrix.** On $S_+$, in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$, left multiplication by $\tilde Q$ has the matrix $A$. On $S_-$, in the basis $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$, it has the same matrix. The two columns in the first basis are
 $$
-\tilde Q\tilde\Pi_{\mathrm{id},+}=P_+\tilde\Pi_{\mathrm{id},++X}_+\vec\Pi_{\mathrm{nil},+},\qquad
-\tilde Q\vec\Pi_{\mathrm{nil},+}=X_-\tilde\Pi_{\mathrm{id},++P}_-\vec\Pi_{\mathrm{nil},+},
+\tilde Q\tilde\Pi_{\mathrm{id},+}=P_+\tilde\Pi_{\mathrm{id},++X}{}_+\vec\Pi_{\mathrm{nil},+},\qquad
+\tilde Q\vec\Pi_{\mathrm{nil},+}=X_-\tilde\Pi_{\mathrm{id},++P}{}_-\vec\Pi_{\mathrm{nil},+},
 $$
 and the two columns in the second are
 $$
-\tilde Q\vec\Pi_{\mathrm{nil},-}=P_+\vec\Pi_{\mathrm{nil},-+X}_+\tilde\Pi_{\mathrm{id},-},\qquad
-\tilde Q\tilde\Pi_{\mathrm{id},-}=X_-\vec\Pi_{\mathrm{nil},-+P}_-\tilde\Pi_{\mathrm{id},-} .
+\tilde Q\vec\Pi_{\mathrm{nil},-}=P_+\vec\Pi_{\mathrm{nil},-+X}{}_+\tilde\Pi_{\mathrm{id},-},\qquad
+\tilde Q\tilde\Pi_{\mathrm{id},-}=X_-\vec\Pi_{\mathrm{nil},-+P}{}_-\tilde\Pi_{\mathrm{id},-} .
 $$
 In both bases the columns are $(P_+,X_+)$ and $(X_-,P_-)$, so
 $$
@@ -192,13 +192,13 @@ The computation in the first basis is the left action on a couple; the second ba
 
 **The right matrix.** On $T_+$, in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-})$, right multiplication by $\tilde Q$ has the matrix $A^{\mathsf T}$. On $T_-$, in the basis $(\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$, it has the same matrix. The two columns in the first basis are
 $$
-\tilde\Pi_{\mathrm{id},+}\tilde Q=P_+\tilde\Pi_{\mathrm{id},++X}_-\vec\Pi_{\mathrm{nil},-},\qquad
-\vec\Pi_{\mathrm{nil},-}\tilde Q=X_+\tilde\Pi_{\mathrm{id},++P}_-\vec\Pi_{\mathrm{nil},-},
+\tilde\Pi_{\mathrm{id},+}\tilde Q=P_+\tilde\Pi_{\mathrm{id},++X}{}_-\vec\Pi_{\mathrm{nil},-},\qquad
+\vec\Pi_{\mathrm{nil},-}\tilde Q=X_+\tilde\Pi_{\mathrm{id},++P}{}_-\vec\Pi_{\mathrm{nil},-},
 $$
 and the two columns in the second are
 $$
-\vec\Pi_{\mathrm{nil},+}\tilde Q=P_+\vec\Pi_{\mathrm{nil},++X}_-\tilde\Pi_{\mathrm{id},-},\qquad
-\tilde\Pi_{\mathrm{id},-}\tilde Q=X_+\vec\Pi_{\mathrm{nil},++P}_-\tilde\Pi_{\mathrm{id},-} .
+\vec\Pi_{\mathrm{nil},+}\tilde Q=P_+\vec\Pi_{\mathrm{nil},++X}{}_-\tilde\Pi_{\mathrm{id},-},\qquad
+\tilde\Pi_{\mathrm{id},-}\tilde Q=X_+\vec\Pi_{\mathrm{nil},++P}{}_-\tilde\Pi_{\mathrm{id},-} .
 $$
 In both bases the columns are $(P_+,X_-)$ and $(X_+,P_-)$, so
 $$

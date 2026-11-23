@@ -58,7 +58,7 @@ $$
 $$
 and the Euclidean Laplacian is the sum of the two idempotent components of $8\bar\partial\partial$,
 $$
-\Delta=\partial^2/\partial q_{\blacktriangle}^2+\partial^2/\partial q'^2_{\blacktriangle}+\partial^2/\partial q_{\blacktriangledown}^2+\partial^2/\partial q'^2_{\blacktriangledown}=8\bigl(\partial^2/\partial Q_{+}\partial\bar Q_{+}+\partial^2/\partial Q_{-}\partial\bar Q_{-}\bigr).
+\Delta=\partial^2/\partial q_{\blacktriangle}^2+\partial^2/\partial q'{}^2_{\blacktriangle}+\partial^2/\partial q_{\blacktriangledown}^2+\partial^2/\partial q'{}^2_{\blacktriangledown}=8\bigl(\partial^2/\partial Q_{+}\partial\bar Q_{+}+\partial^2/\partial Q_{-}\partial\bar Q_{-}\bigr).
 $$
 
 *Proof.* The idempotents are orthogonal and act as the identity on the two coordinates, so the products collapse to the diagonal terms; the two Wirtinger derivatives commute because partial derivatives do; and the identity for $\Delta$ is the Laplacian theorem of *Reduced Biquaternion Analysis*, §*The Differential Operators*.
@@ -159,7 +159,7 @@ The reduced biquaternion algebra carries two commuting complex structures, $J_{i
 | $\partial/\partial Q_{+},\partial/\partial\bar Q_{+},\partial/\partial Q_{-},\partial/\partial\bar Q_{-}$ | Wirtinger derivatives of the two coordinates |
 | $\bar\partial=\Pi_+\partial/\partial\bar Q_{+}+\Pi_-\partial/\partial\bar Q_{-}$ | Reduced Cauchy–Riemann operator |
 | $\partial=\Pi_+\partial/\partial Q_{+}+\Pi_-\partial/\partial Q_{-}$ | Conjugate operator |
-| $\Delta=\partial^2/\partial q_{\blacktriangle}^2+\partial^2/\partial q'^2_{\blacktriangle}+\partial^2/\partial q_{\blacktriangledown}^2+\partial^2/\partial q'^2_{\blacktriangledown}$ | Euclidean Laplacian |
+| $\Delta=\partial^2/\partial q_{\blacktriangle}^2+\partial^2/\partial q'{}^2_{\blacktriangle}+\partial^2/\partial q_{\blacktriangledown}^2+\partial^2/\partial q'{}^2_{\blacktriangledown}$ | Euclidean Laplacian |
 | $f=G_{1}(Q_{+})\Pi_++G_{2}(Q_{-})\Pi_-$ | Reduced-analytic function |
 | $G(\breve Q)=\tfrac{1}{2\pi i}(\Pi_+/Q_{+}+\Pi_-/Q_{-})$ | Cauchy kernel |
 | $Z=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ | Zero-divisor set |

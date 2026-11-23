@@ -24,7 +24,7 @@ where $\varepsilon^2 = 0$. The element $q$ is the **real part**, and $q'$ is the
 There is no Euclidean modulus intrinsic to the algebra, because the norm $\langle Q\rangle = q^2$ is degenerate and vanishes on the maximal ideal. The closest analogue is the **Euclidean modulus**
 
 $$
-\|Q\| = \sqrt{q^2 + q'^2},
+\|Q\| = \sqrt{q^2 + q'{}^2},
 $$
 
 which is the ordinary Euclidean norm on the underlying module $\mathbb{C}_{\mathrm{dln}} \cong R^2$, defined when $R$ is an ordered ring. It is not multiplicative with respect to the dual product.
@@ -423,7 +423,7 @@ The article develops what the nilpotent structure supports: contour integrals al
 | $Q = q + \varepsilon q'$ | General dual number |
 | $q = \operatorname{Re} Q$ | Real part |
 | $q' = \operatorname{Inf} Q$ | Infinitesimal part |
-| $\|Q\| = \sqrt{q^2 + q'^2}$ | Euclidean modulus |
+| $\|Q\| = \sqrt{q^2 + q'{}^2}$ | Euclidean modulus |
 | $B(Q_0, r)$ | Open disk of radius $r$ |
 | $\frac{df}{dQ}$ | Dual derivative |
 | $\partial/\partial Q, \partial/\partial \bar{Q}$ | Dual Wirtinger derivatives |

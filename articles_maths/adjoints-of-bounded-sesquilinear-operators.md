@@ -89,7 +89,7 @@ $$
 **Theorem (parity preservation and the composite laws).** Let $S,S'\in B^{\varsigma}(A)$ be adjointable. Then $S^{\dagger}$ is $\varsigma$-semilinear, so the operation preserves the parity, and for the bounded linear $T$,
 
 $$
-(S+S')^{\dagger}=S^{\dagger}+S'^{\dagger},\qquad (\lambda S)^{\dagger}=\lambda S^{\dagger},\qquad (TS)^{\dagger}=S^{\dagger}T^{\dagger},\qquad (ST)^{\dagger}=T^{\dagger}S^{\dagger},\qquad (S^{\dagger})^{\dagger}=S .
+(S+S')^{\dagger}=S^{\dagger}+S'{}^{\dagger},\qquad (\lambda S)^{\dagger}=\lambda S^{\dagger},\qquad (TS)^{\dagger}=S^{\dagger}T^{\dagger},\qquad (ST)^{\dagger}=T^{\dagger}S^{\dagger},\qquad (S^{\dagger})^{\dagger}=S .
 $$
 
 **Proof.** The scalar laws are the two scalar laws of the pairing: $h((\lambda S)x,y)=\lambda h(Sx,y)=\lambda h(x,S^{\dagger}y)^{*}=h(x,\lambda S^{\dagger}y)^{*}$, which gives $(\lambda S)^{\dagger}=\lambda S^{\dagger}$. For the parity, replace $y$ by $\lambda y$ in the defining identity: the left side is $h(Sx,\lambda y)^{*}=\bigl(\lambda h(Sx,y)\bigr)^{*}=\varsigma(\lambda)h(Sx,y)^{*}$ and the right is $h\bigl(x,S^{\dagger}(\lambda y)\bigr)^{*}$, so $h\bigl(x,S^{\dagger}(\lambda y)\bigr)=\varsigma(\lambda)h(x,S^{\dagger}y)$ and the nondegeneracy gives $S^{\dagger}(\lambda y)=\varsigma(\lambda)S^{\dagger}y$. The composite laws follow by applying the two defining rules in the two orders, with the twists cancelling in pairs, and the law of order two is the definition with the Hermitian property.

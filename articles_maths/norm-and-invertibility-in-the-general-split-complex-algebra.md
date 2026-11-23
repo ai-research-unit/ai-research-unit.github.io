@@ -10,11 +10,11 @@ $$
 Q_1\star Q_2=Q_1\bar Q_2,
 $$
 
-the square of every element is scalar, $Q\star Q=Q\bar Q=\langle Q\rangle_{*}1$, so the form is real-valued and its diagonal is the real scalar $\langle Q\rangle_{*}=q^{2}-q'^{2}$. That scalar is the **second algebraic norm** of the space, the algebraic norm of this product and not the algebraic norm of the plain product, which is the $\mathbb{C}_{\mathrm{spl}}$-valued $\langle Q\rangle=Q^{2}$ of *Norm and Invertibility in the Split-Complex Algebra*. The norm $\langle\cdot\rangle_{*}$ is real, of inertia $(1,1)$, indefinite, and multiplicative for the product.
+the square of every element is scalar, $Q\star Q=Q\bar Q=\langle Q\rangle_{*}1$, so the form is real-valued and its diagonal is the real scalar $\langle Q\rangle_{*}=q^{2}-q'{}^{2}$. That scalar is the **second algebraic norm** of the space, the algebraic norm of this product and not the algebraic norm of the plain product, which is the $\mathbb{C}_{\mathrm{spl}}$-valued $\langle Q\rangle=Q^{2}$ of *Norm and Invertibility in the Split-Complex Algebra*. The norm $\langle\cdot\rangle_{*}$ is real, of inertia $(1,1)$, indefinite, and multiplicative for the product.
 
 The inverse is where the two products separate. The definition of an inverse presupposes a product with a **two-sided unit**, and the general plain sesquilinear product has a **right unit** alone. The consequence is stated and not filled: no element of $\mathbb{C}_{\mathrm{spl}}$ is invertible of $\star$, the product has no group of invertibles of its own, and the word has no reading for it. What survives is the pair of one-sided inverse equations relative to the right unit $1$, and the article computes them: the two have the same unique solution, $Q_1/\langle Q_1\rangle_{*}$, exactly when the norm is non-zero, and neither has a solution when the norm vanishes. The criterion is therefore the algebraic norm of this product, and it is not the algebraic norm of the plain product; the two products do not share their algebraic norms.
 
-**The results.** The general plain sesquilinear product $Q_1\star Q_2=Q_1\bar Q_2$ has a central square, $Q\star Q=\langle Q\rangle_{*}1$ with $\langle Q\rangle_{*}=q^{2}-q'^{2}$, and $\langle\cdot\rangle_{*}$ is multiplicative, $\langle Q_1\star Q_2\rangle_{*}=\langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$. The product has the right unit $1$ and no left unit, hence no two-sided unit, so **no element is invertible of $\star$** and the product has **no group of invertibles**; what survives is the pair of one-sided equations $Q_1\star Q_2=1$ and $Q_2\star Q_1=1$, soluble exactly when $\langle Q_1\rangle_{*}\neq0$ with the common unique solution $Q_1/\langle Q_1\rangle_{*}$, and insoluble when $\langle Q_1\rangle_{*}=0$. The criterion is therefore the algebraic norm: a nonzero $Q$ is a zero divisor exactly when $\langle Q\rangle_{*}=0$, and the elements of non-vanishing norm form the plain group of invertibles ${\mathbb{C}_{\mathrm{spl}}}^{\times}=\{\langle Q\rangle_{*}\neq0\}$, stable under $\star$ but not a group under it. Each section below states its result first and then proves it.
+**The results.** The general plain sesquilinear product $Q_1\star Q_2=Q_1\bar Q_2$ has a central square, $Q\star Q=\langle Q\rangle_{*}1$ with $\langle Q\rangle_{*}=q^{2}-q'{}^{2}$, and $\langle\cdot\rangle_{*}$ is multiplicative, $\langle Q_1\star Q_2\rangle_{*}=\langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$. The product has the right unit $1$ and no left unit, hence no two-sided unit, so **no element is invertible of $\star$** and the product has **no group of invertibles**; what survives is the pair of one-sided equations $Q_1\star Q_2=1$ and $Q_2\star Q_1=1$, soluble exactly when $\langle Q_1\rangle_{*}\neq0$ with the common unique solution $Q_1/\langle Q_1\rangle_{*}$, and insoluble when $\langle Q_1\rangle_{*}=0$. The criterion is therefore the algebraic norm: a nonzero $Q$ is a zero divisor exactly when $\langle Q\rangle_{*}=0$, and the elements of non-vanishing norm form the plain group of invertibles ${\mathbb{C}_{\mathrm{spl}}}^{\times}=\{\langle Q\rangle_{*}\neq0\}$, stable under $\star$ but not a group under it. Each section below states its result first and then proves it.
 
 $$
 Q_1\star Q_2=Q_1\bar Q_2 .
@@ -22,7 +22,7 @@ $$
 
 ## The Algebraic Norm of the Product
 
-**The general plain sesquilinear product carries exactly one algebraic norm, the scalar of its central square, $\langle Q\rangle_{*}=q^{2}-q'^{2}$; its polar form is $\langle Q_1,Q_2\rangle_{*}=q_1q_2-q'_1q'_2$, and it is multiplicative, $\langle Q_1\star Q_2\rangle_{*}=\langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$.**
+**The general plain sesquilinear product carries exactly one algebraic norm, the scalar of its central square, $\langle Q\rangle_{*}=q^{2}-q'{}^{2}$; its polar form is $\langle Q_1,Q_2\rangle_{*}=q_1q_2-q'_1q'_2$, and it is multiplicative, $\langle Q_1\star Q_2\rangle_{*}=\langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$.**
 
 ### Definition
 
@@ -39,10 +39,10 @@ Throughout this article the product is the general plain sesquilinear product $Q
 **Proposition.** For every $Q\in\mathbb{C}_{\mathrm{spl}}$,
 
 $$
-\boxed{\;Q\star Q=Q\bar Q=\langle Q\rangle_{*}1,\qquad \langle Q\rangle_{*}=q^{2}-q'^{2}\;}.
+\boxed{\;Q\star Q=Q\bar Q=\langle Q\rangle_{*}1,\qquad \langle Q\rangle_{*}=q^{2}-q'{}^{2}\;}.
 $$
 
-**Proof.** The first display is the definition of the product at equal arguments; the product $Q\bar Q=(q+jq')(q-jq')=q^{2}-j^{2}q'^{2}=q^{2}-q'^{2}$ is real. The same scalar is produced in the two orders, $Q\bar Q=\bar Q Q$, because $\mathbb{C}_{\mathrm{spl}}$ is commutative.
+**Proof.** The first display is the definition of the product at equal arguments; the product $Q\bar Q=(q+jq')(q-jq')=q^{2}-j^{2}q'{}^{2}=q^{2}-q'{}^{2}$ is real. The same scalar is produced in the two orders, $Q\bar Q=\bar Q Q$, because $\mathbb{C}_{\mathrm{spl}}$ is commutative.
 
 The algebraic norm is therefore an element of $\mathbb{R}$ and not of $\mathbb{C}_{\mathrm{spl}}$: it is the value of a real quadratic form on the plane, and its vanishing set is a pair of lines and not a point.
 
@@ -99,7 +99,7 @@ So $\langle\cdot\rangle_{*}$ is a real-valued multiplicative semi-norm: multipli
 
 ## The Unique Real Norm
 
-**The positive definite real norm of the algebra is the Euclidean norm $\|Q\|=\sqrt{q^{2}+q'^{2}}$, which comes from the real part of the plain square and not from the algebraic norm of either product.**
+**The positive definite real norm of the algebra is the Euclidean norm $\|Q\|=\sqrt{q^{2}+q'{}^{2}}$, which comes from the real part of the plain square and not from the algebraic norm of either product.**
 
 The **Euclidean form** is
 
@@ -110,7 +110,7 @@ $$
 the ordinary inner product of $\mathbb{R}^{2}$, positive definite and symmetric, of Gram matrix $\operatorname{diag}(1,1)$. Its diagonal is
 
 $$
-\|Q\|^{2}=q^{2}+q'^{2}=\operatorname{Re}(Q^{2}),
+\|Q\|^{2}=q^{2}+q'{}^{2}=\operatorname{Re}(Q^{2}),
 $$
 
 the real part of the first algebraic norm. The Euclidean norm is a genuine norm: positive definite, subadditive, homogeneous of degree one. It is the norm that turns $\mathbb{C}_{\mathrm{spl}}$ into a topological algebra and that underlies the analysis of *Split-Complex Analysis*.
@@ -130,7 +130,7 @@ $$
 using $\bar\Pi_{\pm}=\Pi_{\mp}$. The two coordinates of the norm are equal, as they must be because the norm is real. In the same coordinates,
 
 $$
-\|Q\|^{2}=q^{2}+q'^{2}=\tfrac12(Q_{+}^{2}+Q_{-}^{2}),
+\|Q\|^{2}=q^{2}+q'{}^{2}=\tfrac12(Q_{+}^{2}+Q_{-}^{2}),
 $$
 
 so the Euclidean norm is the root of the mean of the squares of the two idempotent coordinates, while the algebraic norm is their product. The two are related by
@@ -286,10 +286,10 @@ On $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ the norm is $\langle q\rangle_{*}=q^
 
 ### The Split Imaginary Subspace $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$
 
-On $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ the norm is $\langle jq'\rangle_{*}=-q'^{2}$, negative definite and vanishing only at $q'=0$. Every nonzero element $jq'$ is a spacelike unit, and
+On $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ the norm is $\langle jq'\rangle_{*}=-q'{}^{2}$, negative definite and vanishing only at $q'=0$. Every nonzero element $jq'$ is a spacelike unit, and
 
 $$
-(jq')^{-1}=\frac{\overline{jq'}}{\langle jq'\rangle_{*}}=\frac{-jq'}{-q'^{2}}=\frac{j}{q'},
+(jq')^{-1}=\frac{\overline{jq'}}{\langle jq'\rangle_{*}}=\frac{-jq'}{-q'{}^{2}}=\frac{j}{q'},
 $$
 
 so $(jq')(j/q')=1$. There are no zero divisors on $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$.
@@ -309,7 +309,7 @@ on each of which $\langle\cdot\rangle_{*}$ vanishes identically. These lines are
 | subspace | dimension | restricted $\langle\cdot\rangle_{*}$ | invertible elements | zero divisors |
 |---|---|---|---|---|
 | $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $1$ | $q^{2}$, positive definite | all nonzero, timelike | none |
-| $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $1$ | $-q'^{2}$, negative definite | all nonzero, spacelike | none |
+| $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $1$ | $-q'{}^{2}$, negative definite | all nonzero, spacelike | none |
 | $\mathbb{R}\Pi_{+}$ | $1$ | $0$ | none but $0$ | all nonzero |
 | $\mathbb{R}\Pi_{-}$ | $1$ | $0$ | none but $0$ | all nonzero |
 
@@ -320,7 +320,7 @@ So the two eigenspaces of the conjugation are totally invertible, while the two 
 The general plain sesquilinear product $Q_1\star Q_2=Q_1\bar Q_2$ carries one algebraic norm, the scalar of its central square,
 
 $$
-\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'^{2},
+\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'{}^{2},
 $$
 
 real, of inertia $(1,1)$, indefinite, and multiplicative, $\langle Q_1\star Q_2\rangle_{*}=\langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$. Its polar form is $g(Q_1,Q_2)=q_1q_2-q'_1q'_2$, the split bilinear form; its vanishing set is the two null lines $\mathbb{R}\Pi_{+}\cup\mathbb{R}\Pi_{-}$.
@@ -341,13 +341,13 @@ an abelian group with four connected components and non-compact, in contrast wit
 | $Q=q+jq'$ | General split complex number |
 | $\bar Q=q-jq'$ | Split complex conjugate |
 | $Q_1\star Q_2=Q_1\bar Q_2$ | General plain sesquilinear product |
-| $\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'^{2}$ | Algebraic norm of $\star$, inertia $(1,1)$ |
+| $\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'{}^{2}$ | Algebraic norm of $\star$, inertia $(1,1)$ |
 | $g(Q_1,Q_2)=q_1q_2-q'_1q'_2$ | Polarisation of $\langle\cdot\rangle_{*}$, the split bilinear form |
 | $Q_{\pm}=q\pm q'$ | Idempotent coordinates, $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ |
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | Idempotents |
 | $\mathcal{N}=\{\langle Q\rangle_{*}=0\}$ | Isotropic cone, the two null lines $\mathbb{R}\Pi_{\pm}$ |
 | $\varrho=\sqrt{|\langle Q\rangle_{*}|}=\sqrt{|Q_{+}Q_{-}|}$ | Modulus, multiplicative and absolutely homogeneous |
-| $\|Q\|=\sqrt{q^{2}+q'^{2}}$ | Euclidean norm, the positive definite real norm |
+| $\|Q\|=\sqrt{q^{2}+q'{}^{2}}$ | Euclidean norm, the positive definite real norm |
 | $\langle Q,B\rangle_{E}=qb+q'b'$ | Euclidean inner product |
 | $H(Q_1,Q_2)=Q_1\bar Q_2=(q_1q_2-q'_1q'_2)+j(q'_1q_2-q_1q'_2)$ | Hermitian form; real part $g$, indefinite |
 | ${\mathbb{C}_{\mathrm{spl}}}^{\times}=\{\langle Q\rangle_{*}\neq0\}$ | Group of invertibles of the plain product |

@@ -136,7 +136,7 @@ $$
 
 If $M$ is invertible and the singular values are distinct, the decomposition is unique up to the diagonal torus $U(1)^3$ acting on both sides.
 
-**Proof.** This is the singular value decomposition $M=U\Sigma V^*$ with $U_L=U$ and $U_R=V$. Uniqueness: if $U_L\Sigma U_R^{-1}=U_L'\Sigma U_R'^{-1}$, then $U_L'^{-1}U_L$ commutes with $\Sigma$; for distinct positive $\sigma_i$ it is diagonal with phases, and the same for $U_R'^{-1}U_R$, with the phases equal.
+**Proof.** This is the singular value decomposition $M=U\Sigma V^*$ with $U_L=U$ and $U_R=V$. Uniqueness: if $U_L\Sigma U_R^{-1}=U_L'\Sigma U_R'{}^{-1}$, then $U_L'{}^{-1}U_L$ commutes with $\Sigma$; for distinct positive $\sigma_i$ it is diagonal with phases, and the same for $U_R'{}^{-1}U_R$, with the phases equal.
 
 **Definition.** The **positive mass factor** is $\Sigma$, and the **chiral unitaries** are $U_L,U_R$. The **chiral phase** is the phase of $\det(U_LU_R^{-1})$.
 

@@ -22,7 +22,7 @@ where $j^2 = +1$. The real number $q$ is the **real part**, and $q'$ is the **im
 The **Euclidean modulus** of $Q$ is
 
 $$
-\|Q\| = \sqrt{q^2 + q'^2},
+\|Q\| = \sqrt{q^2 + q'{}^2},
 $$
 
 and the **Euclidean distance** between two split complex numbers $Q$ and $B$ is
@@ -36,10 +36,10 @@ This makes $\mathbb{C}_{\mathrm{spl}}$ a metric space isometric to $\mathbb{R}^2
 The **split modulus** is
 
 $$
-\rho = \sqrt{|q^2 - q'^2|},
+\rho = \sqrt{|q^2 - q'{}^2|},
 $$
 
-which is not a norm. It vanishes on the null cone $q = \pm q'$, and it is not subadditive; the quadratic form $q^2-q'^2$ from which it is built is indefinite. It is used in the study of the multiplicative structure, not the topological structure.
+which is not a norm. It vanishes on the null cone $q = \pm q'$, and it is not subadditive; the quadratic form $q^2-q'{}^2$ from which it is built is indefinite. It is used in the study of the multiplicative structure, not the topological structure.
 
 ### Balls and Neighborhoods
 
@@ -204,7 +204,7 @@ For the limit to exist independently of the direction of $h$, the numerator must
 **Corollary.** If $f$ is split complex differentiable, then $u$ and $v$ satisfy the **wave equation**:
 
 $$
-\boxed{\;\frac{\partial^2 u}{\partial q^2} - \frac{\partial^2 u}{\partial q'^2} = 0, \qquad \frac{\partial^2 v}{\partial q^2} - \frac{\partial^2 v}{\partial q'^2} = 0\;}.
+\boxed{\;\frac{\partial^2 u}{\partial q^2} - \frac{\partial^2 u}{\partial q'{}^2} = 0, \qquad \frac{\partial^2 v}{\partial q^2} - \frac{\partial^2 v}{\partial q'{}^2} = 0\;}.
 $$
 
 **Proof.** Differentiate the split Cauchy–Riemann equations and use the equality of mixed partials.
@@ -432,8 +432,8 @@ The article develops the subject in that basis: contour integrals along paths, p
 | $j$ | Split imaginary unit, $j^2 = +1$ |
 | $Q = q + jq'$ | General split complex number |
 | $\bar{Q} = q - jq'$ | Split complex conjugate |
-| $\|Q\| = \sqrt{q^2 + q'^2}$ | Euclidean modulus |
-| $\rho = \sqrt{|q^2 - q'^2|}$ | Split modulus |
+| $\|Q\| = \sqrt{q^2 + q'{}^2}$ | Euclidean modulus |
+| $\rho = \sqrt{|q^2 - q'{}^2|}$ | Split modulus |
 | $B(Q_0, r)$ | Open disk of radius $r$ |
 | $f'(Q)$ | Split complex derivative |
 | $\partial/\partial Q, \partial/\partial \bar{Q}$ | Split Wirtinger derivatives |
@@ -441,7 +441,7 @@ The article develops the subject in that basis: contour integrals along paths, p
 | $\Pi_- = (1 - j)/2$ | Negative idempotent |
 | $Q = Q_+ \Pi_+ + Q_- \Pi_-$ | Idempotent decomposition |
 | $\int_\gamma f(Q) \, dQ$ | Contour integral |
-| $\Box_\Phi = \partial^2/\partial q^2 - \partial^2/\partial q'^2$ | d'Alembertian |
+| $\Box_\Phi = \partial^2/\partial q^2 - \partial^2/\partial q'{}^2$ | d'Alembertian |
 
 ## Further Reading
 

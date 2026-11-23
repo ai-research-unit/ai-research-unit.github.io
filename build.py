@@ -156,18 +156,50 @@ MATH_RE = re.compile(
     re.DOTALL
 )
 
+# Code is protected before math, and only its body is masked, so Markdown still
+# sees the fence and the backticks and builds <pre><code> around the
+# placeholder. A fenced block that shows a dollar — a rule quoted as `$$` —
+# would otherwise be swallowed by MATH_RE, which is blind to fences: it pairs
+# one dollar in code with one in prose, deletes the fence lines between them,
+# and leaves the rest of the file parsed as prose.
+FENCE_RE = re.compile(
+    r'(?ms)^[ \t]*(?P<fence>```|~~~)[^\n]*\n(?P<body>.*?)^[ \t]*(?P=fence)[ \t]*$')
+SPAN_RE = re.compile(r'(?P<ticks>`+)(?P<body>[^`\n]+)(?P=ticks)')
+
 def protect_math(md_text):
-    """Replace math blocks with placeholders before Markdown conversion."""
+    """Replace the body of code and math blocks with placeholders."""
     store = []
-    def repl(m):
-        store.append(m.group(0))
+    def put(kind, body):
+        store.append((kind, body))
         return f"\x00MATH{len(store)-1}\x00"
-    return MATH_RE.sub(repl, md_text), store
+    def fenced(m):
+        body = m.group("body")
+        if not body.strip():
+            return m.group(0)
+        core = body[:-1] if body.endswith("\n") else body
+        tail = body[len(core):]
+        whole = m.group(0)
+        at = whole.index(body)
+        return whole[:at] + put("code", core) + tail + whole[at + len(body):]
+    def spanned(m):
+        return m.group("ticks") + put("code", m.group("body")) + m.group("ticks")
+    text = FENCE_RE.sub(fenced, md_text)
+    text = SPAN_RE.sub(spanned, text)
+    return MATH_RE.sub(lambda m: put("math", m.group(0)), text), store
 
 def restore_math(html_text, store):
-    """Put math blocks back into the rendered HTML."""
-    for i, chunk in enumerate(store):
-        html_text = html_text.replace(f"\x00MATH{i}\x00", chunk)
+    """Put code and math blocks back into the rendered HTML.
+
+    Both are restored into HTML text, so the markup characters are escaped.
+    Left raw, a formula such as a<b} opens a bogus tag and the browser swallows
+    the text up to the next '>', which cuts the formula and the prose after it.
+    KaTeX reads textContent, so it still receives a<b.
+    """
+    for i, (kind, chunk) in enumerate(store):
+        escaped = (chunk.replace("&", "&amp;")
+                        .replace("<", "&lt;")
+                        .replace(">", "&gt;"))
+        html_text = html_text.replace(f"\x00MATH{i}\x00", escaped)
     return html_text
 
 TABLE_RE = re.compile(r"<table>.*?</table>", re.DOTALL)

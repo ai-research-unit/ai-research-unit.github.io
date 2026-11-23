@@ -144,12 +144,12 @@ The parity rule is not a grading of the algebra. The two spaces are the eigenspa
 What has to be checked. The identity $C_{\Psi\Psi}=C_{\Phi\Phi}$ is a statement about spans, and a span can be smaller than the count of its generators suggests. The check is that the sixteen tensors
 
 $$
-e_t\otimes e_t,\quad (i\vec e_\imath)\otimes e_t,\quad e_t\otimes(i\vec e_\imath),\quad (i\vec e_\imath)\otimes(i\vec e_\ell),
+e_t\otimes e_t,\quad (i\vec e_{\imath})\otimes e_t,\quad e_t\otimes(i\vec e_{\imath}),\quad (i\vec e_{\imath})\otimes(i\vec e_\ell),
 $$
 
 with $k,\ell\in\{x,y,z\}$, are linearly independent and span the Hermitian part.
 
-The check. In the Pauli model $e_t=\mathrm I_2$ and $i\vec e_\imath=-\sigma_\imath$, so the sixteen tensors are $\mathrm I\otimes\mathrm I$, $-\sigma_\imath\otimes\mathrm I$, $-\mathrm I\otimes\sigma_\imath$ and $\sigma_\imath\otimes\sigma_\ell$. All are Hermitian. Since $\{\mathrm I,\sigma_x,\sigma_y,\sigma_z\}$ is a real basis of $\mathrm{Herm}(2)$, the sixteen products form a real basis of $\mathrm{Herm}(2)\otimes_{\mathbb{R}}\mathrm{Herm}(2)$, which maps isomorphically onto $\mathrm{Herm}(4)$ because both have real dimension sixteen and the products span. So the rank is sixteen, which is half of thirty-two.
+The check. In the Pauli model $e_t=\mathrm I_2$ and $i\vec e_{\imath}=-\sigma_{\imath}$, so the sixteen tensors are $\mathrm I\otimes\mathrm I$, $-\sigma_{\imath}\otimes\mathrm I$, $-\mathrm I\otimes\sigma_{\imath}$ and $\sigma_{\imath}\otimes\sigma_\ell$. All are Hermitian. Since $\{\mathrm I,\sigma_x,\sigma_y,\sigma_z\}$ is a real basis of $\mathrm{Herm}(2)$, the sixteen products form a real basis of $\mathrm{Herm}(2)\otimes_{\mathbb{R}}\mathrm{Herm}(2)$, which maps isomorphically onto $\mathrm{Herm}(4)$ because both have real dimension sixteen and the products span. So the rank is sixteen, which is half of thirty-two.
 
 The anti-Hermitian part is the same computation with one sign. Replacing one factor by a material element multiplies the tensor by $-1$ times a Hermitian tensor, hence the odd spans are the anti-Hermitian part, of dimension sixteen, and the two together exhaust the algebra.
 

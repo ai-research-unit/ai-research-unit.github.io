@@ -21,7 +21,7 @@ The algebra and its units are those of *Algebra and Element Conventions*, the gr
 The bookkeeping is stated once. With $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$, $2\pi\nu_t'=\omega/c$, $\nu_m=\frac{mc}{h}$ and $r_t'=ct'$,
 
 $$
-\langle\tilde\Upsilon_\Phi\rangle_\natural=-2\pi\nu_t'^{2}+4\pi^{2}\nu_{\Phi}^{2},
+\langle\tilde\Upsilon_\Phi\rangle_\natural=-2\pi\nu_t'{}^{2}+4\pi^{2}\nu_{\Phi}^{2},
 \qquad
 \langle\tilde P_\Phi\rangle_\natural=N,
 \qquad
@@ -30,7 +30,7 @@ $$
 \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\longmapsto-\langle\tilde\Upsilon_\Phi\rangle_\natural .
 $$
 
-The phase carries the sign and the sign is quoted. A positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=\omega r_t'-2\pi\vec\nu_\Phi\cdot\vec r$. On it $\partial/\partial r_t'\mapsto-i\omega$ and $\partial/\partial r_\imath\mapsto i\nu_{\Phi,k}$, so $\Box_\Phi\mapsto 2\pi\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}$, which is the parent's own computation and is used here without alteration.
+The phase carries the sign and the sign is quoted. A positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=\omega r_t'-2\pi\vec\nu_\Phi\cdot\vec r$. On it $\partial/\partial r_t'\mapsto-i\omega$ and $\partial/\partial r_{\imath}\mapsto i\nu_{\Phi,k}$, so $\Box_\Phi\mapsto 2\pi\nu_t'{}^{2}-4\pi^{2}\nu_{\Phi}^{2}$, which is the parent's own computation and is used here without alteration.
 
 The potential is a constant element. Throughout, $\tilde M$ is a constant element of $\mathbb{B}$: Hermitian, $\tilde M=a\,e_t+i\vec v\cdot\vec e$ with $a$ and $\vec v$ real, or anti-Hermitian, $\tilde M=i\,a\,e_t+\vec v\cdot\vec e$. Its left multiplication $L(\tilde M)$ is complex-linear on the four-dimensional complex space $\mathbb{B}$, because $i$ is central, so it is a $4\times4$ complex matrix in the basis $e_{\imath}$ and its eigenvalues are ordinary complex eigenvalues.
 
@@ -56,7 +56,7 @@ $$
 
 The right side is left multiplication, and that is the whole content. The parent's position-space equation has $\tilde M$ multiplying the field at each event; its transform is the same left multiplication at each wave number, because a constant element has no position dependence to transform. The equation is therefore an eigenvalue problem with $\tilde M$ as the operator and $\omega^{2}/c^{2}-\nu_{\Phi}^{2}$ as the eigenvalue.
 
-The parent's display has a bookkeeping defect, and it is repaired here rather than copied. The parent prints $(\omega^{2}-c^{2}\,4\pi^{2}\nu_{\Phi}^{2})\tilde\Xi_0=\tilde M\tilde\Xi_0$. Take $\tilde M=4\pi^{2}\nu_m^{2}e_t$, which the parent's own §*The Two Settings* permits: the right side then has dimension $\mathrm{L}^{-2}$, because $\nu_m$ is an inverse length, while the left side has dimension $\mathrm{T}^{-2}$, because $\omega$ is an inverse time. The two differ by $c^{2}$. The parent's own §*The Equation and Its Operator* fixes $\nu_t'^{2}-\nu_{\Phi}^{2}=+\nu_m^{2}$ with $2\pi\nu_t'=\omega/c$, which is the corrected display. The parent's eigenvalue form is therefore its reading with the speed of light divided out, and the article uses the corrected form throughout.
+The parent's display has a bookkeeping defect, and it is repaired here rather than copied. The parent prints $(\omega^{2}-c^{2}\,4\pi^{2}\nu_{\Phi}^{2})\tilde\Xi_0=\tilde M\tilde\Xi_0$. Take $\tilde M=4\pi^{2}\nu_m^{2}e_t$, which the parent's own §*The Two Settings* permits: the right side then has dimension $\mathrm{L}^{-2}$, because $\nu_m$ is an inverse length, while the left side has dimension $\mathrm{T}^{-2}$, because $\omega$ is an inverse time. The two differ by $c^{2}$. The parent's own §*The Equation and Its Operator* fixes $\nu_t'{}^{2}-\nu_{\Phi}^{2}=+\nu_m^{2}$ with $2\pi\nu_t'=\omega/c$, which is the corrected display. The parent's eigenvalue form is therefore its reading with the speed of light divided out, and the article uses the corrected form throughout.
 
 The repair is measured, not asserted. On the case $c=2$, $2\pi\nu_m=1.4$, $2\pi\vec\nu_\Phi=(0.9,-0.5,0.3)$ and a Hermitian potential $\tilde M=4\pi^{2}\nu_m^{2}e_t+i(0.3,-0.2,0.5)\cdot\vec e$, the two eigenvalues of $\tilde M$ are $2.576441$ and $1.343559$. On the corresponding solutions the corrected left side returns those two numbers to all printed digits; the parent's expression $\omega^{2}-c^{2}\nu_{\Phi}^{2}$ returns $10.305766$ and $5.374234$, which are the same numbers multiplied by $c^{2}=4$. The residual of the corrected form is $0.0$ and the discrepancy of the uncorrected form is exactly the factor, so the defect is a bookkeeping slip and not a physical disagreement.
 
@@ -226,7 +226,7 @@ The lower branch is negative when $\lvert\vec v\rvert>a$, which happened in $276
 | Symbol | Meaning |
 | --- | --- |
 | $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | The four-wavevector; $2\pi\nu_t'=\omega/c$ |
-| $\langle\tilde\Upsilon_\Phi\rangle_\natural=-\nu_t'^{2}+\nu_{\Phi}^{2}$ | Its quaternionic norm |
+| $\langle\tilde\Upsilon_\Phi\rangle_\natural=-\nu_t'{}^{2}+\nu_{\Phi}^{2}$ | Its quaternionic norm |
 | $\tilde M$ | The constant potential; Hermitian $a\,e_t+i\vec v\cdot\vec e$ or anti-Hermitian $i\,a\,e_t+\vec v\cdot\vec e$ |
 | $L(\tilde M)$ | Left multiplication by $\tilde M$; complex-linear on $\mathbb{B}$ |
 | $\operatorname{eig}L(\tilde M)=a\pm\lvert\vec v\rvert$ | The spectrum, each value twice |

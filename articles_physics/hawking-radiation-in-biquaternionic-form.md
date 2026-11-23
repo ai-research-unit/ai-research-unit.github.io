@@ -238,7 +238,7 @@ The honest summary, in the sibling's form: the framework supplies the *algebraic
 On a time-dependent background such as a collapsing star, the field has two natural mode decompositions. At early times, before the collapse, the spacetime is approximately static and one has a complete orthonormal set $\{u_i\}$ of **in** modes, positive-frequency with respect to the early Killing time; at late times one has a complete orthonormal set $\{v_j\}$ of **out** modes, positive-frequency with respect to the late Killing time. Each set is orthonormal under the Klein–Gordon inner product,
 
 $$
-(u_i,u_\imath)=\delta_{i\imath},\qquad (u_i^*,u_\imath^*)=-\delta_{i\imath},\qquad (u_i,u_\imath^*)=0,
+(u_i,u_{\imath})=\delta_{i\imath},\qquad (u_i^*,u_{\imath}^*)=-\delta_{i\imath},\qquad (u_i,u_{\imath}^*)=0,
 $$
 
 and similarly for the $v_j$. The field expands equally well in either set,
@@ -267,9 +267,9 @@ The in-vacuum $|0_{\mathrm{in}}\rangle$ is defined by $a_i|0_{\mathrm{in}}\rangl
 The Bogoliubov transformation is a canonical transformation, and the requirement that the out operators satisfy the canonical brackets fixes the coefficients. Two relations follow, and they are the only algebraic input of this section:
 
 $$
-[b_j,b_\imath^\dagger]=\sum_i\left(\alpha_{ji}\alpha^*_{\imath i}-\beta_{ji}\beta^*_{\imath i}\right)=\delta_{j\imath},
+[b_j,b_{\imath}^\dagger]=\sum_i\left(\alpha_{ji}\alpha^*_{\imath i}-\beta_{ji}\beta^*_{\imath i}\right)=\delta_{j\imath},
 \qquad
-[b_j,b_\imath]=\sum_i\left(\beta_{ji}\alpha_{\imath i}-\alpha_{ji}\beta_{\imath i}\right)=0 .
+[b_j,b_{\imath}]=\sum_i\left(\beta_{ji}\alpha_{\imath i}-\alpha_{ji}\beta_{\imath i}\right)=0 .
 $$
 
 In matrix form, with $\alpha=(\alpha_{ji})$ and $\beta=(\beta_{ji})$,
@@ -291,7 +291,7 @@ $$
 =\sum_i\left|\beta_{ji}\right|^2,
 $$
 
-because only the $a_i a_\imath^\dagger$ contraction survives. The total number of out quanta produced in the in-vacuum is $\sum_j\sum_i|\beta_{ji}|^2$. This was verified on the same finite model. Two consequences are worth separating.
+because only the $a_i a_{\imath}^\dagger$ contraction survives. The total number of out quanta produced in the in-vacuum is $\sum_j\sum_i|\beta_{ji}|^2$. This was verified on the same finite model. Two consequences are worth separating.
 
 - **The vacua coincide if and only if $\beta=0$.** A nonzero negative-frequency coefficient is exactly the obstruction to the in and out mode systems defining the same vacuum. Particle creation is the failure of the two vacua to agree, not a property of either one.
 - **Thermality is a property of the distribution of the $\beta_{ji}$, not of their existence.** A general $\beta$ produces some spectrum; only a specific exponential distribution produces a Planckian one. The next subsection isolates it.
@@ -540,7 +540,7 @@ The biquaternion framework supplies the algebraic home for the effect — the ma
 | $\mathbb{B}_{\Phi}$ | Material sector: imaginary time, real space |
 | $\mathbb{B}_{\Psi}$ | Informational sector: real time, imaginary space |
 | $\mathbb{B}_{H}$ | Quaternion subspace |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
 | $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}$ | Biquaternion norm, $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |

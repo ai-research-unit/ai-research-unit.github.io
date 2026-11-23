@@ -8,7 +8,7 @@ The finding is a classification of one term by its order. The coupling acts as a
 
 The ladder has a gauge-invariant floor. A gauge in which $\tilde A_\Phi$ is constant exists exactly when the field strength vanishes, because a constant connection is a gradient and a connection is a gradient exactly when its field strength vanishes. So the multiplier case is the zero-curvature case, and the first case that no gauge can remove is the linear one. That is why the linear bench is the interesting one: it is the first coupling that is genuinely an operator rather than a multiplier.
 
-The shift of the wave number is a translation and not an addition. At constant $\tilde A_\Phi$ the covariant wave number element is $\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$, and its quaternionic norm is $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_\natural=p'^{2}/\frac{h^{2}}{4\pi^{2}}$ with $p'$ the kinetic four-momentum. A translation of a variable cannot change the quadratic form's shape, only its origin, and the numerical check confirms that the naive sum of the two norms misses the cross terms by an amount of order one.
+The shift of the wave number is a translation and not an addition. At constant $\tilde A_\Phi$ the covariant wave number element is $\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$, and its quaternionic norm is $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_\natural=p'{}^{2}/\frac{h^{2}}{4\pi^{2}}$ with $p'$ the kinetic four-momentum. A translation of a variable cannot change the quadratic form's shape, only its origin, and the numerical check confirms that the naive sum of the two norms misses the cross terms by an amount of order one.
 
 The sector statement is inherited and not re-derived. The connection is written anti-Hermitially in the parent, $\tilde A_\Phi^{*}=-\tilde A_\Phi$ on $\mathbb{B}_\Phi$, and the factor $i$ in $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ carries it into the Hermitian sector. The coupling element of this article is that same element. It is not a new object and it is not written loosely.
 
@@ -135,16 +135,16 @@ Finding 3. At constant $\tilde A_\Phi$ the covariant wave number element is $\ti
 $$
 \langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_\natural
 =\Bigl(2\pi\nu_t'+\frac{ϙ}{h}a_t\Bigr)^{2}-\Bigl\lvert2\pi\vec\nu_\Phi+\frac{ϙ}{h}\vec a\Bigr\rvert^{2}
-=\frac{(2\pi)^{2} p'^{2}}{h^{2}},
+=\frac{(2\pi)^{2} p'{}^{2}}{h^{2}},
 $$
 
-with $\tilde A_\Phi=i a_t e_t+\vec a$, $a_t$ and $\vec a$ real, and $p'=h\,\tilde\Upsilon_{\Phi,\mathrm{gco}}$ the kinetic four-momentum. The $\frac{h^{2}}{4\pi^{2}}$ is where it belongs: the norm of a wave-number element is an inverse length squared, and $p'^{2}$ is that quantity multiplied by $\frac{h^{2}}{4\pi^{2}}$, so the division restores the wave-number units.
+with $\tilde A_\Phi=i a_t e_t+\vec a$, $a_t$ and $\vec a$ real, and $p'=h\,\tilde\Upsilon_{\Phi,\mathrm{gco}}$ the kinetic four-momentum. The $\frac{h^{2}}{4\pi^{2}}$ is where it belongs: the norm of a wave-number element is an inverse length squared, and $p'{}^{2}$ is that quantity multiplied by $\frac{h^{2}}{4\pi^{2}}$, so the division restores the wave-number units.
 
 The reason is that a translation cannot change a shape. The norm is one fixed quadratic form of four real numbers. Evaluating it at the translated numbers gives the same form at a new origin: the surface is congruent to the free one, and the congruence is a translation rather than a Lorentz transformation. What follows for the spectrum is the parent's sentence: a uniform scalar potential shifts every level by $ϙA_tc$ and changes no spacing, and no constant potential opens a gap, because a translated hyperboloid has the same radius.
 
 The guard, and why it is needed. The temptation is to write the norm of the sum as the sum of the norms. The check rejects it: over fifty random pairs of momenta and connections the correct identity held with deviation $0.0$, while the additive form $\langle 2\pi i\tilde\Upsilon_\Phi\rangle_\natural+\langle\frac{i\,ϙ}{h}\tilde A_\Phi\rangle_\natural$ deviated by up to $4.2$ in absolute value. **The cross terms are the whole of the difference**, and they are what makes the shift a translation instead of an addition.
 
-The same statement in the momentum variable. With $\tilde P_{\Phi,\mathrm{gco}}=h\,\tilde\Upsilon_{\Phi,\mathrm{gco}}$ the identity reads $\langle i\tilde P_{\Phi,\mathrm{gco}}\rangle_\natural/\frac{h^{2}}{4\pi^{2}}=p'^{2}/\frac{h^{2}}{4\pi^{2}}$, and the check gave deviation $0.0$: the two writings are one identity and the units carry the factor.
+The same statement in the momentum variable. With $\tilde P_{\Phi,\mathrm{gco}}=h\,\tilde\Upsilon_{\Phi,\mathrm{gco}}$ the identity reads $\langle i\tilde P_{\Phi,\mathrm{gco}}\rangle_\natural/\frac{h^{2}}{4\pi^{2}}=p'{}^{2}/\frac{h^{2}}{4\pi^{2}}$, and the check gave deviation $0.0$: the two writings are one identity and the units carry the factor.
 
 The clause that must travel with the finding. All of this holds at constant $\tilde A_\Phi$, under the licence stated where the multiplier was first used. For a position-dependent connection there is no $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ at a point, no single shifted argument, and no norm to evaluate: the operator is a convolution and the statement is empty.
 
@@ -168,7 +168,7 @@ In momentum space the coupled Dirac operator is the sum of a multiplier and the 
 
 The ladder of orders is the article's finding. A profile of degree $d$ gives an operator of order $d$: the linear bench fitted to $1.38\times10^{-16}$ with order one and failed by $4.13\times10^{-1}$ with order zero, the quadratic bench fitted to $2.35\times10^{-16}$ with order two and failed by $1.99\times10^{-1}$ with order one. The linear bench is the first rung that no gauge can remove, because a linear connection with a constant field strength is not a gradient, and its curvature was $0.9$ against $0.0$ for a constant connection.
 
-The shift of the wave number is a translation. At constant $\tilde A_\Phi$ the norm is $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_\natural=p'^{2}/\frac{h^{2}}{4\pi^{2}}$, exact over fifty draws, while the additive form of the same quantity deviated by up to $4.2$. Gauge invariance is a translation in momentum space when the gauge phase $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ is linear — one mode in, one mode out, residual $4.3\times10^{-15}$ — and a convolution when it is not, where one mode became one hundred and twenty-eight.
+The shift of the wave number is a translation. At constant $\tilde A_\Phi$ the norm is $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_\natural=p'{}^{2}/\frac{h^{2}}{4\pi^{2}}$, exact over fifty draws, while the additive form of the same quantity deviated by up to $4.2$. Gauge invariance is a translation in momentum space when the gauge phase $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ is linear — one mode in, one mode out, residual $4.3\times10^{-15}$ — and a convolution when it is not, where one mode became one hundred and twenty-eight.
 
 ## Summary of Notation
 
@@ -179,7 +179,7 @@ The shift of the wave number is a translation. At constant $\tilde A_\Phi$ the n
 | $2\pi i\tilde\Upsilon_\Phi$, $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | The symbol of the gradient; temporal slot $+ik_t'$ |
 | $2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}=i(\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi)$ | The symbol of the coupled derivative |
 | $p'=h\,\tilde\Upsilon_{\Phi,\mathrm{gco}}$ | The kinetic four-momentum |
-| $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_\natural=p'^{2}/\frac{h^{2}}{4\pi^{2}}$ | The norm of the shifted symbol; the interval at the shifted argument |
+| $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_\natural=p'{}^{2}/\frac{h^{2}}{4\pi^{2}}$ | The norm of the shifted symbol; the interval at the shifted argument |
 | $d$ | The degree of the connection's profile; the order of its momentum-space operator |
 | $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\,\Gamma}{h}$ | The gauge angle |
 | $\mathcal{F}[fg]=\mathcal{F}[f]*\mathcal{F}[g]$ | The convolution theorem; cited from *Biquaternion Continuous Harmonic Analysis* |

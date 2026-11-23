@@ -106,7 +106,7 @@ $$
 
 which is the singular value decomposition, verified at $n=2,3,4$ on random matrices. So the Cartan decomposition refines to the product of two unitary matrices and one positive diagonal matrix, and the diagonal entries are the singular values of *The Polar Decomposition from the Two Halves*.
 
-**The middle factor is unique up to permutation.** If $K_1\Sigma K_2=K_1'\Sigma'K_2'$, then $\Sigma^{2}$ and $\Sigma'^{2}$ are both the diagonal form of $AA^{*}$, so the two diagonals agree up to order; and the ordering is fixed by requiring the diagonal to be decreasing. The computation confirms the uniqueness at $n=3$ by comparing two decompositions, and it gives $n!$ equivalent forms before the ordering is imposed. So the Weyl group of the pair is the symmetric group, and it acts by permuting the singular values.
+**The middle factor is unique up to permutation.** If $K_1\Sigma K_2=K_1'\Sigma'K_2'$, then $\Sigma^{2}$ and $\Sigma'{}^{2}$ are both the diagonal form of $AA^{*}$, so the two diagonals agree up to order; and the ordering is fixed by requiring the diagonal to be decreasing. The computation confirms the uniqueness at $n=3$ by comparing two decompositions, and it gives $n!$ equivalent forms before the ordering is imposed. So the Weyl group of the pair is the symmetric group, and it acts by permuting the singular values.
 
 ## Uniqueness and the Weyl Group
 

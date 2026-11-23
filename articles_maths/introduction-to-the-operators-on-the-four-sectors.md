@@ -44,7 +44,7 @@ R_{\tilde Q\tilde Q'}=R_{\tilde Q'}\circ R_{\tilde Q},\qquad
 \mathrm{Sd}_{\tilde Q\tilde Q'}=\mathrm{Sd}_{\tilde Q}\circ\mathrm{Sd}_{\tilde Q'}.
 $$
 
-*Proof.* Each identity is the associativity of the product read at the three positions: $\tilde Q\tilde Q'\tilde X=\tilde Q(\tilde Q'\tilde X)$, $\tilde X\tilde Q\tilde Q'=(\tilde X\tilde Q)\tilde Q'$, and $\tilde Q\tilde Q'\tilde X(\tilde Q\tilde Q')^{*}=\tilde Q(\tilde Q'\tilde X\tilde Q'^{*})\tilde Q^{*}$. The last uses $(\tilde Q\tilde Q')^{*}=\tilde Q'^{*}\tilde Q^{*}$.
+*Proof.* Each identity is the associativity of the product read at the three positions: $\tilde Q\tilde Q'\tilde X=\tilde Q(\tilde Q'\tilde X)$, $\tilde X\tilde Q\tilde Q'=(\tilde X\tilde Q)\tilde Q'$, and $\tilde Q\tilde Q'\tilde X(\tilde Q\tilde Q')^{*}=\tilde Q(\tilde Q'\tilde X\tilde Q'{}^{*})\tilde Q^{*}$. The last uses $(\tilde Q\tilde Q')^{*}=\tilde Q'{}^{*}\tilde Q^{*}$.
 
 The order is the only difference between the three laws: the left multiplication is a representation of the multiplicative monoid, the right multiplication is an anti-representation, and the two-sided operator is a representation again because the two reversals cancel.
 

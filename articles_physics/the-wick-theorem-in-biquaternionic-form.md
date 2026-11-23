@@ -150,7 +150,7 @@ Because the generators are nilpotent, the one-mode theorem can be stated and pro
 $$
 \vec\Pi_{\mathrm{nil},x}\vec\Pi_{\mathrm{nil},y} = e_t - \vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x} = e_t - \tilde\Pi_{\mathrm{id},-} = \tilde\Pi_{\mathrm{id},+},
 $$
-whose vacuum expectation is $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},+}^2)=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},+})=1$. Normal ordering moves the creation operator to the left and produces $:\vec\Pi_{\mathrm{nil},x}\vec\Pi_{\mathrm{nil},y}:\,=-\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}=-\tilde\Pi_{\mathrm{id},-}$. Adding back the contraction gives $-\tilde\Pi_{\mathrm{id},-+e}_t=e_t-\tilde\Pi_{\mathrm{id},-}$, which is the left-hand side.
+whose vacuum expectation is $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},+}^2)=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},+})=1$. Normal ordering moves the creation operator to the left and produces $:\vec\Pi_{\mathrm{nil},x}\vec\Pi_{\mathrm{nil},y}:\,=-\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}=-\tilde\Pi_{\mathrm{id},-}$. Adding back the contraction gives $-\tilde\Pi_{\mathrm{id},-+e}{}_t=e_t-\tilde\Pi_{\mathrm{id},-}$, which is the left-hand side.
 
 **Why the higher identities are exact.** No induction is needed. The identities $\vec\Pi_{\mathrm{nil},x}^2=0$ and $(\vec\Pi_{\mathrm{nil},y})^2=0$ say that any word in the mode operators that contains two adjacent equal letters vanishes; and any word in which the letters alternate can be reduced by the anticommutator to a word with a repeated adjacent pair plus a contraction times a shorter word:
 $$
