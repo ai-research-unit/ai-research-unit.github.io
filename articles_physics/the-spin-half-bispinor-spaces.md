@@ -28,9 +28,9 @@ The second objection is that a carrier of real dimension two cannot hold a spino
 
 The third objection is that the axis is a coordinate and the article builds physics on a coordinate. The axis is a coordinate in the sense that it can be rotated, and the entry states exactly that and refuses to make it a datum. What survives the rotation is the structure: every axis gives a plane, an ideal, and a pair; no axis is preferred; and a statement proved at one axis holds at every axis because the group moves one axis to another and carries the whole family with it. The frame enters once, when a value or a chirality is named, and the entry marks that place.
 
-The letters. The algebra is $\mathbb{B}$, real of dimension eight, units $e_t,\vec e_x,\vec e_y,\vec e_z$, with $e_t$ the identity and $\vec e_\imath^{2}=-e_t$; the central imaginary is $i$; an element is $\tilde Q=Q_te_t+\vec Q$ with complex coefficients. The star ${}^{*}$ is the Hermitian conjugation, the bar $\bar{\cdot}$ the coefficient conjugation, and ${}^{\natural}$ the natural conjugation. The norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ and $B$ is its polar form. A unit real axis is $\vec u$, with $\vec u_2,\vec u_3$ an oriented orthonormal pair completing it; the idempotents are $\tilde\Pi_{\mathrm{id},\pm}(\vec u)=\tfrac12(e_t\pm i\vec u)$; the plane is $\Sigma(\vec u)=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u)$; the ideals are $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u)$; the action is left multiplication, $L_X(Y)=XY$. The sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$, and the four sectors of the two predicates are written $\Sigma_{ij}$. A rotor is $\tilde u=\cos\tfrac\theta2e_t+\sin\tfrac\theta2\vec u$, and the spectrum of an element is the pair $\lambda_{\pm}=Q_t\pm iB$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$.
+The letters. The algebra is $\mathbb{B}$, real of dimension eight, units $e_t,\vec e_x,\vec e_y,\vec e_z$, with $e_t$ the identity and $\vec e_\imath^{2}=-e_t$; the central imaginary is $i$; an element is $\tilde Q=Q_te_t+\vec Q$ with complex coefficients. The star ${}^{*}$ is the Hermitian conjugation, the bar $\bar{\cdot}$ the coefficient conjugation, and ${}^{\natural}$ the natural conjugation. The norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ and $B$ is its polar form. A unit real axis is $\vec u$, with $\vec u_2,\vec u_3$ an oriented orthonormal pair completing it; the idempotents are $\tilde\Pi_{\mathrm{id},\pm}(\vec u)=\tfrac12(e_t\pm i\vec u)$; the plane is $\Sigma(\vec u)=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u)$; the ideals are $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u)$; the action is left multiplication, $L_X(Y)=XY$. The sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$, and the four sectors of the two predicates are written $\Sigma_{ij}$. A rotor is $\tilde u=\cos\tfrac\theta2e_t+\sin\tfrac\theta2\vec u$, and the spectrum of an element is the pair $\eta_{\pm}=Q_t\pm iB$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$.
 
-Boundaries. The plane, the two closures, the infinity of the family and the corners are *Introduction to the Spin-Half Bispinors Spaces*; the nullity of the idempotent, of the plane and of the ideals, the isotropic dimension and the pairing are *The Spin-Half Bispinors and N Norm Regularity*; the spectrum $\{0,\lambda\}$, the degenerate plane inside the ideal and the square-zero elements are *The Spin-Half Bispinors and Spectral Regularity*; the list of three carriers and the four closure rules are *From the Spin to the Carriers and the Closures*; the idempotents, the minimality and the splitting are *The Minimal Left Ideals of the Biquaternion Algebra*; the parametrisation of the family is *The Peirce Basis of the Biquaternion Algebra*; the one-sided action as a representation is *The One-Sided Action and the Spin Representation*. The physics is read from *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, *The Dirac Equation in Biquaternionic Form*, *Chiral Fermions in the Biquaternion Framework*, *States, Observables and the Born Weight*, *Chirality and the Weyl Spinors*, *The Celestial Sphere of the Null Cone* and *Two Spin-Half Particles*. No dynamics, no mass value and no quantum postulate appear below.
+Boundaries. The plane, the two closures, the infinity of the family and the corners are *Introduction to the Spin-Half Bispinors Spaces*; the nullity of the idempotent, of the plane and of the ideals, the isotropic dimension and the pairing are *The Spin-Half Bispinors and N Norm Regularity*; the spectrum $\{0,\digamma_{\mathrm{scl}}\}$, the degenerate plane inside the ideal and the square-zero elements are *The Spin-Half Bispinors and Spectral Regularity*; the list of three carriers and the four closure rules are *From the Spin to the Carriers and the Closures*; the idempotents, the minimality and the splitting are *The Minimal Left Ideals of the Biquaternion Algebra*; the parametrisation of the family is *The Peirce Basis of the Biquaternion Algebra*; the one-sided action as a representation is *The One-Sided Action and the Spin Representation*. The physics is read from *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, *The Dirac Equation in Biquaternionic Form*, *Chiral Fermions in the Biquaternion Framework*, *States, Observables and the Born Weight*, *Chirality and the Weyl Spinors*, *The Celestial Sphere of the Null Cone* and *Two Spin-Half Particles*. No dynamics, no mass value and no quantum postulate appear below.
 
 ## The Source Table
 
@@ -38,7 +38,7 @@ Boundaries. The plane, the two closures, the infinity of the family and the corn
 | --- | --- |
 | the idempotent, the plane, the action and the half angle, the failure of invariance, the two closures, the family and the corners | [Introduction to the Spin-Half Bispinors Spaces](../articles_maths/the-spin-half-bispinor-spaces.html) |
 | the nullity of the idempotent, of the plane and of the ideals, the isotropic dimension, the pairing $N=2B$ and its nondegeneracy | [The Spin-Half Bispinors and N Norm Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-n-norm-regularity.html) |
-| the square $B^{2}=-\lambda^{2}/4$ on the plane, the spectrum $\{0,\lambda\}$, the degenerate plane of the ideal and the square-zero elements | [The Spin-Half Bispinors and Spectral Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-spectral-regularity.html) |
+| the square $B^{2}=-\digamma_{\mathrm{scl}}^{2}/4$ on the plane, the spectrum $\{0,\digamma_{\mathrm{scl}}\}$, the degenerate plane of the ideal and the square-zero elements | [The Spin-Half Bispinors and Spectral Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-spectral-regularity.html) |
 | the list of three carriers, the criterion of the weight string and the four closure rules | [From the Spin to the Carriers and the Closures](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html) |
 | the idempotents, the minimality of the left ideals and the splitting of the algebra | [The Minimal Left Ideals of the Biquaternion Algebra](../articles_maths/the-minimal-left-ideals-of-the-biquaternion-algebra.html) |
 | the Peirce basis and the parametrisation of the family by the axis | [The Peirce Basis of the Biquaternion Algebra](../articles_maths/the-peirce-basis-of-the-biquaternion-algebra.html) |
@@ -61,9 +61,9 @@ The half angle. $\vec u\tilde\Pi_{\mathrm{id},+}=-i\tilde\Pi_{\mathrm{id},+}$ an
 
 The two numbers. The weights are $\pm\tfrac12$, the spin is $\tfrac12$, $2s+1=2$ is the dimension of the carrier, and a full turn acts as $-\mathrm{id}$, which is $(-1)^{2s}$.
 
-The norm. $N(\lambda\tilde\Pi_{\mathrm{id},+})=0$ for every $\lambda$; the norm vanishes on the plane and on each ideal, so no element of a single chirality is norm-regular.
+The norm. $N(\digamma_{\mathrm{scl}}\tilde\Pi_{\mathrm{id},+})=0$ for every $\digamma_{\mathrm{scl}}$; the norm vanishes on the plane and on each ideal, so no element of a single chirality is norm-regular.
 
-The spectrum. $B^{2}(\lambda\tilde\Pi_{\mathrm{id},+})=-\lambda^{2}/4$, so the plane is spectrally regular off the origin, with $\operatorname{spec}(\lambda\tilde\Pi_{\mathrm{id},+})=\{0,\lambda\}$ and $\operatorname{spec}(\tilde\Pi_{\mathrm{id},+})=\{0,1\}$.
+The spectrum. $B^{2}(\digamma_{\mathrm{scl}}\tilde\Pi_{\mathrm{id},+})=-\digamma_{\mathrm{scl}}^{2}/4$, so the plane is spectrally regular off the origin, with $\operatorname{spec}(\digamma_{\mathrm{scl}}\tilde\Pi_{\mathrm{id},+})=\{0,\digamma_{\mathrm{scl}}\}$ and $\operatorname{spec}(\tilde\Pi_{\mathrm{id},+})=\{0,1\}$.
 
 The sector. The plane away from the origin is $\Sigma_{01}$: null and spectrally regular. It is the only carrier in that sector.
 
@@ -243,7 +243,7 @@ The physics of the two steps. The first closure is the Weyl spinor: a field of t
 
 Two predicates, two failures. An element carries two independent scalar invariants. The norm $N=Q_t^{2}+\lvert\vec Q\rvert^{2}$ is multiplicative and vanishes on the elements without an inverse; the square of the vector part $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ controls whether the two eigenvalues $Q_t\pm iB$ coincide. An element is norm-regular when $N\neq0$ and spectrally regular when $B^{2}\neq0$. On the carrier the first fails everywhere and the second fails only at the origin.
 
-**The norm on the plane is zero.** By multiplicativity, $N(\lambda\tilde\Pi_{\mathrm{id},+})=\lambda^{2}N(\tilde\Pi_{\mathrm{id},+})=0$ for every complex $\lambda$; the residual over one hundred random values is $7.0\times10^{-16}$ and is round-off. The statement excludes nothing: every element of the plane, including every nonzero one, is norm-degenerate. The plane meets the null cone in its entirety.
+**The norm on the plane is zero.** By multiplicativity, $N(\digamma_{\mathrm{scl}}\tilde\Pi_{\mathrm{id},+})=\digamma_{\mathrm{scl}}^{2}N(\tilde\Pi_{\mathrm{id},+})=0$ for every complex $\digamma_{\mathrm{scl}}$; the residual over one hundred random values is $7.0\times10^{-16}$ and is round-off. The statement excludes nothing: every element of the plane, including every nonzero one, is norm-degenerate. The plane meets the null cone in its entirety.
 
 The norm is mixedness. Let the axis be replaced by an arbitrary real vector $\vec s_{\Psi}$ and put $S_{\vec s}=\tfrac12(e_t+i\vec s_{\Psi})$. This is the general element of the real three-dimensional ball of Hermitian elements of unit trace, which is the state slice of the informational sector. Its norm and its failure to be idempotent are the same quantity:
 
@@ -260,28 +260,28 @@ The scope of the identity. This is a statement about the Hermitian slice and not
 The spectrum on the plane. The square of the vector part is
 
 $$
-B^{2}\bigl(\lambda\tilde\Pi_{\mathrm{id},+}(\vec u)\bigr)
-=\sum_{\imath\in\{x,y,z\}}\Bigl(\tfrac i2\lambda u_\imath\Bigr)^{2}
-=-\tfrac14\lambda^{2},
+B^{2}\bigl(\digamma_{\mathrm{scl}}\tilde\Pi_{\mathrm{id},+}(\vec u)\bigr)
+=\sum_{\imath\in\{x,y,z\}}\Bigl(\tfrac i2\digamma_{\mathrm{scl}} u_\imath\Bigr)^{2}
+=-\tfrac14\digamma_{\mathrm{scl}}^{2},
 $$
 
-because the three squares of the components of a unit vector sum to one. Residual $0$ over one hundred random $\lambda$. The factor $-\tfrac14$ is invertible, so the plane meets the degenerate cone only at $\lambda=0$: the plane is spectrally regular at every nonzero point, while its norm vanishes at every point. Its spectrum is
+because the three squares of the components of a unit vector sum to one. Residual $0$ over one hundred random $\digamma_{\mathrm{scl}}$. The factor $-\tfrac14$ is invertible, so the plane meets the degenerate cone only at $\digamma_{\mathrm{scl}}=0$: the plane is spectrally regular at every nonzero point, while its norm vanishes at every point. Its spectrum is
 
 $$
-\operatorname{spec}\bigl(\lambda\tilde\Pi_{\mathrm{id},+}(\vec u)\bigr)=\{0,\lambda\},
+\operatorname{spec}\bigl(\digamma_{\mathrm{scl}}\tilde\Pi_{\mathrm{id},+}(\vec u)\bigr)=\{0,\digamma_{\mathrm{scl}}\},
 \qquad
 \operatorname{spec}\bigl(\tilde\Pi_{\mathrm{id},+}(\vec u)\bigr)=\{0,1\},
 $$
 
-verified at $\lambda=0.7+0.2i$ and at the idempotent.
+verified at $\digamma_{\mathrm{scl}}=0.7+0.2i$ and at the idempotent.
 
-The scaled idempotent. The spectrum $\{0,\lambda\}$ has a second statement, shorter and stronger: every nonzero element of the plane satisfies
+The scaled idempotent. The spectrum $\{0,\digamma_{\mathrm{scl}}\}$ has a second statement, shorter and stronger: every nonzero element of the plane satisfies
 
 $$
-X^{2}=\lambda X\qquad\text{for } X=\lambda\tilde\Pi_{\mathrm{id},+}(\vec u),
+X^{2}=\digamma_{\mathrm{scl}} X\qquad\text{for } X=\digamma_{\mathrm{scl}}\tilde\Pi_{\mathrm{id},+}(\vec u),
 $$
 
-residual $0$ over one hundred draws. So the plane is the set of rescaled idempotents: every element of the carrier is a nonzero complex multiple of a projector. The idempotent is the case $\lambda=1$, and the scale $\lambda$ is the amplitude. This is the sharpest statement of what the carrier is: not a set of projectors, but the projective line of one projector, which is the same set up to the scale that carries the amplitude.
+residual $0$ over one hundred draws. So the plane is the set of rescaled idempotents: every element of the carrier is a nonzero complex multiple of a projector. The idempotent is the case $\digamma_{\mathrm{scl}}=1$, and the scale $\digamma_{\mathrm{scl}}$ is the amplitude. This is the sharpest statement of what the carrier is: not a set of projectors, but the projective line of one projector, which is the same set up to the scale that carries the amplitude.
 
 Inside the ideal. Every element of $S_+$ has vanishing norm, so its two eigenvalues have vanishing product and one of them is zero:
 
@@ -313,12 +313,12 @@ The residual table.
 
 | statement | residual |
 | --- | --- |
-| $N(\lambda\tilde\Pi_{\mathrm{id},+})=0$ | $7.0\times10^{-16}$ |
+| $N(\digamma_{\mathrm{scl}}\tilde\Pi_{\mathrm{id},+})=0$ | $7.0\times10^{-16}$ |
 | $N(S_{\vec s})=\tfrac14(1-\lvert\vec s_{\Psi}\rvert^{2})$ | $0$ |
 | $S_{\vec s}^{2}=S_{\vec s}-N(S_{\vec s})e_t$ | $0$ |
-| $B^{2}(\lambda\tilde\Pi_{\mathrm{id},+})=-\lambda^{2}/4$ | $0$ |
-| $\operatorname{spec}(\lambda\tilde\Pi_{\mathrm{id},+})=\{0,\lambda\}$ | exact |
-| $X^{2}=\lambda X$ on the plane | $0$ |
+| $B^{2}(\digamma_{\mathrm{scl}}\tilde\Pi_{\mathrm{id},+})=-\digamma_{\mathrm{scl}}^{2}/4$ | $0$ |
+| $\operatorname{spec}(\digamma_{\mathrm{scl}}\tilde\Pi_{\mathrm{id},+})=\{0,\digamma_{\mathrm{scl}}\}$ | exact |
+| $X^{2}=\digamma_{\mathrm{scl}} X$ on the plane | $0$ |
 | $B^{2}(Y)=-Q_t(Y)^{2}$ on $S_+$ | $4.6\times10^{-16}$ |
 | $(\vec u_2-i\vec u_3)^{2}=0$ | $0$ |
 
@@ -433,7 +433,7 @@ $$
 
 which is the standard formula for a spin-$\tfrac12$ measurement along $\vec u$ of a state polarised along $\vec s_{\Psi}$, and the two weights sum to one by the completeness of the pair. The formula is the archive's and is quoted, not derived here; what the entry adds is its place: the probability is the pairing of the state with an *element of the carrier's own basis*, and the carrier's axis is the analyser's axis.
 
-Amplitude and scale. The plane is the projective line of one projector together with a complex scale, and the scale is the amplitude. A nonzero element of the plane is $\lambda\tilde\Pi_{\mathrm{id},+}$, with $\lambda$ a complex number; the state is the idempotent, and the square root of the state is the element. The complex scale is the phase of the field, and the phase is what the action multiplies by $e^{-i\theta/2}$. So the carrier holds the two things a spinor holds: a direction, which is the axis, and a phase, which is the scale.
+Amplitude and scale. The plane is the projective line of one projector together with a complex scale, and the scale is the amplitude. A nonzero element of the plane is $\digamma_{\mathrm{scl}}\tilde\Pi_{\mathrm{id},+}$, with $\digamma_{\mathrm{scl}}$ a complex number; the state is the idempotent, and the square root of the state is the element. The complex scale is the phase of the field, and the phase is what the action multiplies by $e^{-i\theta/2}$. So the carrier holds the two things a spinor holds: a direction, which is the axis, and a phase, which is the scale.
 
 The field and the state. The distinction that the entry keeps throughout is that the field is the element and the state is its image. The informational sector writes the image as $\tilde X\tilde X^{*}$ up to a positive factor, and records as an open question whether the phase of $\tilde X$ is physical. The carrier sits on the field side of that question: left multiplication acts on $\tilde X$ and not on $\tilde X\tilde X^{*}$, the mass pairs $\tilde X$ and not the image, and the double cover is visible on $\tilde X$ and invisible on the image. So the carrier of spin one half is a carrier of fields, and the state space is a separate object that the field maps onto.
 
@@ -445,7 +445,7 @@ The light cone. The degenerate plane of the ideal has a physical name too. Its g
 
 ## The Interpretations
 
-1. A spinor is the square root of a state. The carrier is the projective line of a projector, so an element of the carrier is the amplitude of a pure state and the state is the projector it generates. The scale is the amplitude and the phase of the scale is the phase of the field. This is a reading of the algebra and not an added postulate: it is what $S^{2}=\lambda S$ and $\tilde X\tilde X^{*}$ say.
+1. A spinor is the square root of a state. The carrier is the projective line of a projector, so an element of the carrier is the amplitude of a pure state and the state is the projector it generates. The scale is the amplitude and the phase of the scale is the phase of the field. This is a reading of the algebra and not an added postulate: it is what $S^{2}=\digamma_{\mathrm{scl}} S$ and $\tilde X\tilde X^{*}$ say.
 
 2. The nullity of the carrier is purity, not pathology. The norm vanishes on the plane because a projector has rank one in the two-dimensional representation, and the determinant of a rank-one matrix is zero. For a general state the same norm is $\tfrac14(1-\lvert\vec s_{\Psi}\rvert^{2})$, so it measures the departure from purity. A carrier that lives entirely in the null cone is the exact image of the statement that its elements are pure.
 
@@ -491,7 +491,7 @@ The carrier of spin one half is the plane $\Sigma(\vec u)=\mathbb{C}\tilde\Pi_{\
 
 The plane is invariant under the rotations about its own axis and under no others: a transverse axis sends the idempotent to $\tfrac12(\vec u_2-i\vec u_3)$, at distance $\sqrt2/2$ from the plane. The repair is the first closure, the minimal left ideal $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ of real dimension four, spanned by $\tilde\Pi_{\mathrm{id},+}$ and $\vec u_2\tilde\Pi_{\mathrm{id},+}$, closed under the whole algebra, with no smaller invariant left subspace, and totally isotropic and maximal. The completion is the second closure, $\mathbb{B}=S_+\oplus S_-$, which as a set is the algebra and as a decomposition is the algebra with a Peirce pair.
 
-The norm vanishes on the plane and on each ideal; on the state slice it is $\tfrac14(1-\lvert\vec s_{\Psi}\rvert^{2})$, which is the departure from purity, so the nullity of the carrier is the purity of its elements and $S^{2}=S-N e_t$ states it in one line. The spectrum separates instead: $B^{2}=-\lambda^{2}/4$ on the plane, $\operatorname{spec}(\lambda\tilde\Pi_{\mathrm{id},+})=\{0,\lambda\}$, and every element of the plane is a rescaled projector. So the plane away from the origin is $\Sigma_{01}$ and it is the only carrier in that sector.
+The norm vanishes on the plane and on each ideal; on the state slice it is $\tfrac14(1-\lvert\vec s_{\Psi}\rvert^{2})$, which is the departure from purity, so the nullity of the carrier is the purity of its elements and $S^{2}=S-N e_t$ states it in one line. The spectrum separates instead: $B^{2}=-\digamma_{\mathrm{scl}}^{2}/4$ on the plane, $\operatorname{spec}(\digamma_{\mathrm{scl}}\tilde\Pi_{\mathrm{id},+})=\{0,\digamma_{\mathrm{scl}}\}$, and every element of the plane is a rescaled projector. So the plane away from the origin is $\Sigma_{01}$ and it is the only carrier in that sector.
 
 Inside one ideal every element is null, $\operatorname{spec}(Y)=\{0,2Q_t(Y)\}$, and the degenerate elements are the square-zero ones: they form the real plane $\mathbb{C}(\vec u_2-i\vec u_3)$, the exceptional locus of the closure and the spinor of a null direction.
 
@@ -525,7 +525,7 @@ The two ideals are the two spinor chiralities: they are the eigenspaces of $-iR_
 
 - [Introduction to the Spin-Half Bispinors Spaces](../articles_maths/the-spin-half-bispinor-spaces.html), for the plane, the two closures, the family and the corners.
 - [The Spin-Half Bispinors and N Norm Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-n-norm-regularity.html), for the nullity of the idempotent, the plane and the ideals, the isotropic dimension and the pairing.
-- [The Spin-Half Bispinors and Spectral Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-spectral-regularity.html), for the spectrum $\{0,\lambda\}$ and the degenerate plane of the ideal.
+- [The Spin-Half Bispinors and Spectral Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-spectral-regularity.html), for the spectrum $\{0,\digamma_{\mathrm{scl}}\}$ and the degenerate plane of the ideal.
 - [The Minimal Left Ideals of the Biquaternion Algebra](../articles_maths/the-minimal-left-ideals-of-the-biquaternion-algebra.html), for the idempotents, the minimality and the splitting.
 - [The Peirce Basis of the Biquaternion Algebra](../articles_maths/the-peirce-basis-of-the-biquaternion-algebra.html), for the basis that parametrises the family.
 - [The One-Sided Action and the Spin Representation](../articles_maths/the-one-sided-action-and-the-spin-representation.html), for the representation and its tensor square.

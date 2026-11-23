@@ -37,7 +37,7 @@ For a barotropic fluid the pressure is a function of the density, so the second 
 **The characteristic speeds are the sound speed carried by the flow.** Linearising about a uniform state with density $\rho_0$ and sound speed $c_{\mathrm{s}}$, the two speeds are
 
 $$
-\lambda_{\pm}=u\pm c_{\mathrm{s}},
+\eta_{\pm}=u\pm c_{\mathrm{s}},
 $$
 
 and the corresponding Riemann invariants are constant along the two families of characteristics. A simple wave is a solution in which one invariant is uniform, and its characteristics are straight lines.
@@ -99,7 +99,7 @@ The linearisation smooths the catastrophe instead of removing the nonlinearity's
 Adding dispersion instead of viscosity gives the Korteweg–de Vries equation. In the weakly nonlinear long-wave limit of a shallow layer of depth $H_0$, the surface elevation obeys
 
 $$
-\partial_{t'}\eta+c_0\,\partial_x\eta+\tfrac32\frac{c_0}{H_0}\eta\,\partial_x\eta+\tfrac16c_0H_0^{2}\,\partial_{xxx}\eta=0,
+\partial_{t'}\digamma_{\mathrm{elv}}+c_0\,\partial_x\digamma_{\mathrm{elv}}+\tfrac32\frac{c_0}{H_0}\digamma_{\mathrm{elv}}\,\partial_x\digamma_{\mathrm{elv}}+\tfrac16c_0H_0^{2}\,\partial_{xxx}\digamma_{\mathrm{elv}}=0,
 \qquad
 c_0=\sqrt{g_{\mathrm{gr}}H_0},
 $$
@@ -170,7 +170,7 @@ The two linear objects of the article are a diffusion equation and a scattering 
 | $\rho_{\mathrm{mass}}$ | Mass density |
 | $p_{\mathrm{th}}$ | Thermodynamic pressure |
 | $c_{\mathrm{s}}$ | Sound speed |
-| $\lambda_{\pm}=u\pm c_{\mathrm{s}}$ | Characteristic speeds |
+| $\eta_{\pm}=u\pm c_{\mathrm{s}}$ | Characteristic speeds |
 | $f$ | Initial velocity profile |
 | $t'_{c}=-1/\inf f'$ | Time of the gradient catastrophe |
 | $\phi$ | Potential with $u=\partial_x\phi$; Hopf–Lax function |

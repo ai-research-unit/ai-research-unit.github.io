@@ -169,7 +169,7 @@ The three writings are one object. The display above, the polar reading $J_{t}=\
 $$
 j_{\imath}=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_{\imath}\tilde\Xi\,\vec e_{\mathrm{spt}(\imath)}\bigr)\vec e_x\bigr),
 \qquad
-\mathrm{spt}(t)=x,\ \mathrm{spt}(\eta)=y,
+\mathrm{spt}(t)=x,\ \mathrm{spt}(\varsigma_{\mathrm{spt}})=y,
 $$
 
 are the same four numbers. The first two agree by the parent polar article's evaluation on the word; the first and the third agree by a direct evaluation on a general element, slot by slot, once the letter assignment $\tilde\Xi_R=\tilde\Xi\Pi_-$, $\tilde\Xi_L=\tilde\Xi\Pi_+$ is fixed. The action, the chart and the pairing therefore say the same thing three ways, and the three-fold agreement is the strongest statement this article makes.

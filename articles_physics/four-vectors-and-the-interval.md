@@ -86,7 +86,7 @@ with no temporal part and no dependence on $r'_{1t}$ or $r'_{2t}$. The temporal 
 
 **The Lorentz action is a congruence by an invertible element, and the invertible need not be in the sector.** For any invertible $\tilde U$ the map $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ carries $\mathbb{B}_{\Phi}$ into itself, since $(\tilde U\tilde Q\tilde U^{*})^{*}=\tilde U\tilde Q^{*}\tilde U^{*}=-\tilde U\tilde Q\tilde U^{*}$. The norm scales by $\lvert N(\tilde U)\rvert^{2}$, so the action is by isometries exactly on the elements with $\lvert N(\tilde U)\rvert=1$, a set of real dimension $7$ strictly larger than the norm-one group.
 
-For a momentum $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ the eigenvalues are $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)$, the two frequencies are $f_{\mathrm{dop},\pm}=mc\,e^{\pm\theta_{\mathrm{rpd}}}$ for a massive momentum, and the product is the mass squared.
+For a momentum $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ the eigenvalues are $\eta_{\pm}=i(E/c\pm\lvert\vec p\rvert)$, the two frequencies are $f_{\mathrm{dop},\pm}=mc\,e^{\pm\theta_{\mathrm{rpd}}}$ for a massive momentum, and the product is the mass squared.
 
 The eigenprojectors lie in the other sector. They are $\tilde\Pi_{\mathrm{id},\pm}=\frac12(e_t\mp i\vec u_p)$, Hermitian idempotents, so $\tilde\Pi_{\mathrm{id},\pm}\in\mathbb{B}_{\Psi}$ although $\tilde P_{\Phi}\in\mathbb{B}_{\Phi}$. The decomposition of a material element is written with informational idempotents.
 
@@ -301,7 +301,7 @@ $$
 N\bigl(\Lambda_{\tilde U}(\tilde Q)\bigr)=N(\tilde U)N(\tilde Q)N(\tilde U^{*})=\lvert N(\tilde U)\rvert^{2}N(\tilde Q).
 $$
 
-So the congruences by invertible elements form a group larger than the Lorentz group. A central rescaling $\tilde U=\lambda e_t$ acts on the sector as multiplication by $\lambda^{2}$ and moves the interval by the positive factor $\lvert\lambda\rvert^{4}$, while the invertibles act by isometries. Only the second is the Lorentz group, and the first is the reason a four-vector can be rescaled without leaving the sector.
+So the congruences by invertible elements form a group larger than the Lorentz group. A central rescaling $\tilde U=Q_te_t$ acts on the sector as multiplication by $Q_t^{2}$ and moves the interval by the positive factor $\lvert Q_t\rvert^{4}$, while the invertibles act by isometries. Only the second is the Lorentz group, and the first is the reason a four-vector can be rescaled without leaving the sector.
 
 The group of invertibles is the double cover of the proper orthochronous Lorentz group. The kernel of the action is the set of invertibles that act trivially, and it is the centre $\{\pm e_t\}$. Hence
 
@@ -349,17 +349,17 @@ A Lorentz transformation is the congruence by an invertible element; the unit is
 
 ## The Spectrum
 
-For $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ with $B=\lvert\vec p\rvert$ the characteristic equation is $\lambda^{2}-2Q_t\lambda+N=0$ with $Q_t=iE/c$ and $N=-E^{2}/c^{2}+B^{2}$, so
+For $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ with $B=\lvert\vec p\rvert$ the characteristic equation is $\eta^{2}-2Q_t\eta+N=0$ with $Q_t=iE/c$ and $N=-E^{2}/c^{2}+B^{2}$, so
 
 $$
-\lambda_\pm=i\left(\frac{E}{c}\pm B\right),
+\eta_{\pm}=i\left(\frac{E}{c}\pm B\right),
 \qquad
-\lambda_++\lambda_-=2i\frac{E}{c},
+\eta_{+}+\eta_{-}=2i\frac{E}{c},
 \qquad
-\lambda_+\lambda_-=-m^{2}c^{2}.
+\eta_{+}\eta_{-}=-m^{2}c^{2}.
 $$
 
-The eigenvalues are imaginary and the frequencies are real. Writing $f_{\mathrm{dop},\pm}=\lambda_\pm/i$ gives the two non-negative numbers
+The eigenvalues are imaginary and the frequencies are real. Writing $f_{\mathrm{dop},\pm}=\eta_{\pm}/i$ gives the two non-negative numbers
 
 $$
 f_{\mathrm{dop},\pm}=\frac{E}{c}\pm\lvert\vec p\rvert,
@@ -401,21 +401,21 @@ $$
 \tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0,
 $$
 
-and the element reconstructs as $\tilde P_{\Phi}=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$. The projectors satisfy $\tilde P_{\Phi}\tilde\Pi_{\mathrm{id},\pm}=\lambda_\pm\tilde\Pi_{\mathrm{id},\pm}$, so they are right eigenprojectors, and the reconstruction is exact.
+and the element reconstructs as $\tilde P_{\Phi}=\eta_{+}\tilde\Pi_{\mathrm{id},++}\eta_{-}\tilde\Pi_{\mathrm{id},-}$. The projectors satisfy $\tilde P_{\Phi}\tilde\Pi_{\mathrm{id},\pm}=\eta_{\pm}\tilde\Pi_{\mathrm{id},\pm}$, so they are right eigenprojectors, and the reconstruction is exact.
 
 Each projector is a null element, and that is the whole point of the display. A pure state is a null element of the algebra, so the two pieces into which a massive momentum splits are lightlike. The momentum is not null; its two spectral components are. The mass is the product of the two eigenvalues, which are scalars, and the null set is not closed under addition: the sum of two null elements need not be null, and that is why a massive momentum can be written as a sum of two lightlike pieces.
 
 The projectors lie in the informational sector while the momentum lies in the material one. Two statements are involved and only the second is specific to this element. First, there is no non-zero anti-Hermitian idempotent: if $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$ and $\tilde\Pi_{\mathrm{id}}^{*}=-\tilde\Pi_{\mathrm{id}}$, then $\tilde\Pi_{\mathrm{id}}^{*}=(\tilde\Pi_{\mathrm{id}}^{2})^{*}=\tilde\Pi_{\mathrm{id}}^{*}\tilde\Pi_{\mathrm{id}}^{*}=\tilde\Pi_{\mathrm{id}}$, so $\tilde\Pi_{\mathrm{id}}=0$. The projectors therefore cannot be material. Second, they are exactly the Hermitian ones, because the spectral projectors of a semisimple element are polynomials in it,
 
 $$
-\tilde\Pi_{\mathrm{id},\pm}=\frac{\tilde P_{\Phi}-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp},
+\tilde\Pi_{\mathrm{id},\pm}=\frac{\tilde P_{\Phi}-\lambda_\mp e_t}{\eta_{\pm}-\lambda_\mp},
 $$
 
 and the interpolation of the two imaginary eigenvalues returns $\frac12(e_t\mp i\vec u_p)$. Non-Hermitian idempotents do exist in the algebra: for a real unit $\vec u$ and a null complex unit vector $\hat w$ orthogonal to it, $\tfrac12(e_t+i\vec u-\hat w)$ is idempotent and not Hermitian. They are simply not the spectral projectors of this element. The modes of a four-vector are therefore states, and the sector that carries the vector does not carry its own decomposition.
 
 The spectral decomposition is the one operation of this entry that leaves the sector and re-enters it. The element is material, the projectors are informational, the eigenvalues are imaginary scalars, and the reconstruction is a sum of informational elements with imaginary coefficients whose result is material. That is the algebra's version of the statement that a mode decomposition is a change of description and not a change of object.
 
-The eigenprojectors are also the idempotents of the Peirce decomposition of the momentum. The pair $\{\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-}\}$ is a complete set of orthogonal idempotents, so it defines a Peirce decomposition of the algebra relative to the momentum, with $\tilde P_{\Phi}$ acting as $\lambda_+$ on the first Peirce space and $\lambda_-$ on the second. The statement and its proofs are *The Biquaternion Eigenvalue Decomposition*; the entry uses only the pair and the two eigenvalues.
+The eigenprojectors are also the idempotents of the Peirce decomposition of the momentum. The pair $\{\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-}\}$ is a complete set of orthogonal idempotents, so it defines a Peirce decomposition of the algebra relative to the momentum, with $\tilde P_{\Phi}$ acting as $\eta_{+}$ on the first Peirce space and $\eta_{-}$ on the second. The statement and its proofs are *The Biquaternion Eigenvalue Decomposition*; the entry uses only the pair and the two eigenvalues.
 
 ## The Seven Four-Vectors
 
@@ -497,7 +497,7 @@ Boundary. The reading names roles. It does not claim that every observable is a 
 
 Read: the eigenprojector display and the idempotent argument of §*The Spectrum of a Biquaternion*.
 
-The two spectral projectors of a momentum are Hermitian idempotents, so they lie in the informational half. The momentum lies in the material half. The decomposition $\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$ therefore writes a material element as a combination of informational ones with imaginary coefficients.
+The two spectral projectors of a momentum are Hermitian idempotents, so they lie in the informational half. The momentum lies in the material half. The decomposition $\eta_{+}\tilde\Pi_{\mathrm{id},++}\eta_{-}\tilde\Pi_{\mathrm{id},-}$ therefore writes a material element as a combination of informational ones with imaginary coefficients.
 
 An idempotent cannot be anti-Hermitian. If $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$ and $\tilde\Pi_{\mathrm{id}}^{*}=-\tilde\Pi_{\mathrm{id}}$, then $\tilde\Pi_{\mathrm{id}}^{*}=(\tilde\Pi_{\mathrm{id}}^{2})^{*}=\tilde\Pi_{\mathrm{id}}^{*}\tilde\Pi_{\mathrm{id}}^{*}=\tilde\Pi_{\mathrm{id}}$, hence $\tilde\Pi_{\mathrm{id}}=0$. There is therefore no material idempotent and no decomposition of a four-vector inside its own sector. The projectors that do occur are the Hermitian ones, obtained as the interpolation of the element at its two eigenvalues; the algebra also contains non-Hermitian idempotents, which are not the spectral projectors of anything in this entry.
 
@@ -624,7 +624,7 @@ The sector is a chart and the informational sector is the other chart. The ident
 | the action | $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$, sector preserved for every invertible $\tilde U$, norm scaled by $\lvert N(\tilde U)\rvert^{2}$ |
 | the group | $\mathbb{B}^{\times}_{1}/\{\pm e_t\}\cong SO^{+}(1,3)$, $\mathbb{B}^{\times}_{1}\cong\mathrm{Spin}(1,3)$ |
 | the factorisation | $\tilde U=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, boost informational, rotation material |
-| the spectrum | $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)$; $f_{\mathrm{dop},\pm}=mc\,e^{\pm\theta_{\mathrm{rpd}}}$; $f_{\mathrm{dop},+}f_{\mathrm{dop},-}=m^{2}c^{2}$ |
+| the spectrum | $\eta_{\pm}=i(E/c\pm\lvert\vec p\rvert)$; $f_{\mathrm{dop},\pm}=mc\,e^{\pm\theta_{\mathrm{rpd}}}$; $f_{\mathrm{dop},+}f_{\mathrm{dop},-}=m^{2}c^{2}$ |
 | the projectors | $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\mp i\vec u_p)$, Hermitian idempotents, null elements, in $\mathbb{B}_{\Psi}$ |
 | the degeneracies | $\vec p=0$: repeated eigenvalue; $E/c=\lvert\vec p\rvert$: null element, one zero eigenvalue |
 | the null set | the zero-divisor cone, real dimension three, apex excluded from the divisors |
@@ -646,8 +646,8 @@ The sector is a chart and the informational sector is the other chart. The ident
 | the boost factor | $\tilde U_{\Psi,\mathrm b}$ | $\cosh\tfrac{\theta}{2}+i\sinh\tfrac{\theta}{2}\vec u_{\mathrm b}$, Hermitian |
 | the rotation factor | $\tilde u_{\mathrm r}$ | $\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\vec u_{\mathrm r}$, real |
 | the rapidity | $\theta_{\mathrm{rpd}}$ | $\tanh\theta_{\mathrm{rpd}}=\lvert\vec p\rvert c/E$ |
-| the eigenvalues | $\lambda_\pm$ | $i(E/c\pm\lvert\vec p\rvert)$ |
-| the frequencies | $f_{\mathrm{dop},\pm}$ | $\lambda_\pm/i=mc\,e^{\pm\theta_{\mathrm{rpd}}}$ |
+| the eigenvalues | $\eta_{\pm}$ | $i(E/c\pm\lvert\vec p\rvert)$ |
+| the frequencies | $f_{\mathrm{dop},\pm}$ | $\eta_{\pm}/i=mc\,e^{\pm\theta_{\mathrm{rpd}}}$ |
 | the projectors | $\tilde\Pi_{\mathrm{id},\pm}$ | $\tfrac12(e_t\mp i\vec u_p)$, Hermitian idempotents |
 | the four-velocity | $\tilde V_{\Phi}$ | $i\gamma c\,e_t+\gamma\vec v$, norm $-c^{2}$ |
 | the four-momentum | $\tilde P_{\Phi}$ | $i\frac{E}{c}e_t+\vec p$, norm $-m^{2}c^{2}$ |

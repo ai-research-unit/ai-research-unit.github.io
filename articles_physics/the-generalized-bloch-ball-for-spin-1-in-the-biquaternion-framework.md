@@ -32,7 +32,7 @@ $$
 \tilde{Ϛ}_{\Psi}=\tfrac{1}{2}\left(e_t+i\vec s_{\Psi}\right),\qquad \vec s_{\Psi}=2\vec h_\Psi,\qquad |\vec s_{\Psi}|^2\le1 ,
 $$
 
-with eigenvalues $\lambda_\pm=\tfrac12(1\pm|\vec s_{\Psi}|)$. Purity is the boundary condition $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\lambda_+\lambda_-=0$, equivalently $|\vec s_{\Psi}|=1$, equivalently the idempotence of $\tilde{Ϛ}_{\Psi}$. Three structures coincide on the boundary: the extreme rays of the cone, the rank-one projections, and the zero divisors of $\mathbb{B}$ at trace one.
+with eigenvalues $\eta_{\pm}=\tfrac12(1\pm|\vec s_{\Psi}|)$. Purity is the boundary condition $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\eta_{+}\eta_{-}=0$, equivalently $|\vec s_{\Psi}|=1$, equivalently the idempotence of $\tilde{Ϛ}_{\Psi}$. Three structures coincide on the boundary: the extreme rays of the cone, the rank-one projections, and the zero divisors of $\mathbb{B}$ at trace one.
 
 Three features of this account are the ones that must be examined for spin $1$:
 
@@ -134,11 +134,11 @@ $$
 \boxed{\;|\vec b|\le1\qquad\text{and}\qquad \det\rho\ge0\;}.
 $$
 
-*Proof.* Positivity is equivalent to the non-negativity of all three eigenvalues. If $|\vec b|\le1$ then $\mathrm{Tr}(\rho^2)\le1$. Suppose an eigenvalue $\lambda_1<0$; then $\det\rho\ge0$ forces $\lambda_2\lambda_3\le0$, and since $\lambda_1\le\lambda_2\le\lambda_3$ and $\lambda_1<0$ the only possibility is $\lambda_2\le0$, whence $\lambda_3=1-\lambda_1-\lambda_2\ge1$ and $\mathrm{Tr}(\rho^2)\ge\lambda_3^2>1$, contradicting $|\vec b|\le1$. Thus $\det\rho\ge0$ together with $|\vec b|\le1$ forces $\lambda_1\ge0$. The converse is immediate.
+*Proof.* Positivity is equivalent to the non-negativity of all three eigenvalues. If $|\vec b|\le1$ then $\mathrm{Tr}(\rho^2)\le1$. Suppose an eigenvalue $\eta_1<0$; then $\det\rho\ge0$ forces $\eta_2\eta_3\le0$, and since $\eta_1\le\eta_2\le\eta_3$ and $\eta_1<0$ the only possibility is $\eta_2\le0$, whence $\eta_3=1-\eta_1-\eta_2\ge1$ and $\mathrm{Tr}(\rho^2)\ge\eta_3^2>1$, contradicting $|\vec b|\le1$. Thus $\det\rho\ge0$ together with $|\vec b|\le1$ forces $\eta_1\ge0$. The converse is immediate.
 
 The state space is therefore the intersection of the eight-dimensional unit ball with the region $\det\rho\ge0$, whose boundary is the cubic hypersurface $\det\rho=0$. A numerical scan confirms the structure: along the $\lambda_8$ axis the boundary is at $|\vec b|=\tfrac12$ exactly, and the states with $|\vec b|>1$ are excluded everywhere.
 
-The cubic is not cosmetic. For the qubit the invariant was a quadratic form, $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\lambda_+\lambda_-$, and positivity was the single inequality of a Lorentzian cone. For the qutrit the determinant is a cubic and positivity is the conjunction of a quadratic and a cubic inequality; no single quadratic form has the state space as its positivity region. This is the precise sense in which the cone picture does not generalise.
+The cubic is not cosmetic. For the qubit the invariant was a quadratic form, $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\eta_{+}\eta_{-}$, and positivity was the single inequality of a Lorentzian cone. For the qutrit the determinant is a cubic and positivity is the conjunction of a quadratic and a cubic inequality; no single quadratic form has the state space as its positivity region. This is the precise sense in which the cone picture does not generalise.
 
 ### The spin directions and the quadrupole directions
 

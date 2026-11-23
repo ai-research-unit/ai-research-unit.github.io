@@ -65,20 +65,20 @@ where the matrix is **symmetric** (both entries are Majorana-type couplings in t
 **Exact eigenvalues.** A real symmetric $2\times2$ matrix has eigenvalues
 
 $$
-\boxed{\;\lambda_\pm = \frac{M_R\pm\sqrt{M_R^2+4m_D^2}}{2}\;},
+\boxed{\;\eta_{\pm} = \frac{M_R\pm\sqrt{M_R^2+4m_D^2}}{2}\;},
 $$
 
 and for $m_D\ll M_R$ the roots are
 
 $$
-\lambda_- = -\frac{2m_D^2}{M_R+\sqrt{M_R^2+4m_D^2}} \simeq -\frac{m_D^2}{M_R},
+\eta_{-} = -\frac{2m_D^2}{M_R+\sqrt{M_R^2+4m_D^2}} \simeq -\frac{m_D^2}{M_R},
 \qquad
-\lambda_+ \simeq M_R + \frac{m_D^2}{M_R} .
+\eta_{+} \simeq M_R + \frac{m_D^2}{M_R} .
 $$
 
-The light eigenvalue is suppressed by the ratio, and the heavy one is essentially the Majorana mass. The exact form of $\lambda_-$ was used to avoid the cancellation in $(M_R-\sqrt{M_R^2+4m_D^2})/2$, and the values were recomputed:
+The light eigenvalue is suppressed by the ratio, and the heavy one is essentially the Majorana mass. The exact form of $\eta_{-}$ was used to avoid the cancellation in $(M_R-\sqrt{M_R^2+4m_D^2})/2$, and the values were recomputed:
 
-| $m_D$ (GeV) | $M_R$ (GeV) | heavy $\lambda_+$ (GeV) | light $\lambda_-$ (GeV) | $-m_D^2/M_R$ (GeV) |
+| $m_D$ (GeV) | $M_R$ (GeV) | heavy $\eta_{+}$ (GeV) | light $\eta_{-}$ (GeV) | $-m_D^2/M_R$ (GeV) |
 |---|---|---|---|---|
 | $100$ | $10^{15}$ | $10^{15}$ | $-10^{-11}$ | $-10^{-11}$ |
 | $100$ | $10^{12}$ | $10^{12}$ | $-10^{-8}$ | $-10^{-8}$ |
@@ -102,7 +102,7 @@ $$
 \boxed{\;m_{\nu_{\mathrm{neu}}} \;\simeq\; -\,m_D\,M_R^{-1}\,m_D^{T}\;},
 $$
 
-a complex symmetric $3\times3$ matrix whose eigenvalues are the light masses. This is the standard type-I seesaw formula; the leading term is exact to relative order $(m_D/M_R)^2$. The formula requires only that $M_R$ be invertible and heavy; it is basis-independent in the sense that the light masses are the eigenvalues, whatever basis the blocks are written in. The diagonal case, $m_D=\mathrm{diag}(a_1,a_2,a_3)$ and $M_R=\mathrm{diag}(b_1,b_2,b_3)$, was checked to reproduce the per-generation suppression $\lambda_i\simeq-a_i^2/b_i$, and it is the only multi-generation case that is safely resolvable in double precision at physical scale ratios; the general non-diagonal formula is quoted from the standard literature.
+a complex symmetric $3\times3$ matrix whose eigenvalues are the light masses. This is the standard type-I seesaw formula; the leading term is exact to relative order $(m_D/M_R)^2$. The formula requires only that $M_R$ be invertible and heavy; it is basis-independent in the sense that the light masses are the eigenvalues, whatever basis the blocks are written in. The diagonal case, $m_D=\mathrm{diag}(a_1,a_2,a_3)$ and $M_R=\mathrm{diag}(b_1,b_2,b_3)$, was checked to reproduce the per-generation suppression $\digamma_{\mathrm{yuk},i}\simeq-a_i^2/b_i$, and it is the only multi-generation case that is safely resolvable in double precision at physical scale ratios; the general non-diagonal formula is quoted from the standard literature.
 
 **The two suppressions.** The seesaw is often described as one suppression, $m_D/M_R$ squared. It is worth separating the two factors. The light mass is small because (i) the Dirac mass is at the electroweak scale while the Majorana mass is heavy, and (ii) the light state has only a small admixture of the heavy state through which to feel the Majorana mass. The first is a hierarchy of scales; the second is the mixing angle $\theta\simeq m_D/M_R$; and the product of $m_D$ with $\theta$ is the light mass. The framework distinguishes the two masses, and the suppression is the statement that the linear chiral pairing is fed into the light state only through the small mixing with the self-conjugate pairing.
 
@@ -251,7 +251,7 @@ which is the leading result of the matrix diagonalisation, obtained now by elimi
 
 ## Summary
 
-The seesaw generates a light neutrino mass from the mixing of two masses of different kinds. In biquaternionic form the two are exactly the framework's two objects: the **Dirac mass** is the linear, chirality-off-diagonal pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=\lambda_{m_D}^{-1}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=\lambda_{m_D}^{-1}\tilde{Ξ}_{R}$, which conserves fermion number; the **Majorana mass** is the self-conjugate pairing on the spinor module's antilinear real structure $\mathcal{C}$ with $\mathcal{C}^2=1$, which violates fermion number by two units. The type-I mass matrix in the $(\nu_{\mathrm{neu},L},\nu_{\mathrm{neu},R,c})$ basis is the symmetric matrix $\begin{pmatrix}0&m_D\ m_D&M_R\end{pmatrix}$, whose exact eigenvalues are $\lambda_\pm=\tfrac12(M_R\pm\sqrt{M_R^2+4m_D^2}\,)$; the light one is $\lambda_-\simeq-m_D^2/M_R$ and the heavy one is $\lambda_+\simeq M_R$, with mixing $\theta\simeq m_D/M_R$. The values were recomputed: $m_D=100$ GeV and $M_R=10^{15}$ GeV give $m_{\nu_{\mathrm{neu}}}=-10^{-11}$ GeV $=0.01$ eV, and at the resolvable scale $M_R=10^6$ GeV the exact eigenvalue reproduces $-m_D^2/M_R$ exactly. For several generations the light matrix is $m_{\nu_{\mathrm{neu}}}\simeq-m_DM_R^{-1}m_D^{T}$, which is standard and whose diagonal case was verified.
+The seesaw generates a light neutrino mass from the mixing of two masses of different kinds. In biquaternionic form the two are exactly the framework's two objects: the **Dirac mass** is the linear, chirality-off-diagonal pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=\lambda_{m_D}^{-1}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=\lambda_{m_D}^{-1}\tilde{Ξ}_{R}$, which conserves fermion number; the **Majorana mass** is the self-conjugate pairing on the spinor module's antilinear real structure $\mathcal{C}$ with $\mathcal{C}^2=1$, which violates fermion number by two units. The type-I mass matrix in the $(\nu_{\mathrm{neu},L},\nu_{\mathrm{neu},R,c})$ basis is the symmetric matrix $\begin{pmatrix}0&m_D\ m_D&M_R\end{pmatrix}$, whose exact eigenvalues are $\eta_{\pm}=\tfrac12(M_R\pm\sqrt{M_R^2+4m_D^2}\,)$; the light one is $\eta_{-}\simeq-m_D^2/M_R$ and the heavy one is $\eta_{+}\simeq M_R$, with mixing $\theta\simeq m_D/M_R$. The values were recomputed: $m_D=100$ GeV and $M_R=10^{15}$ GeV give $m_{\nu_{\mathrm{neu}}}=-10^{-11}$ GeV $=0.01$ eV, and at the resolvable scale $M_R=10^6$ GeV the exact eigenvalue reproduces $-m_D^2/M_R$ exactly. For several generations the light matrix is $m_{\nu_{\mathrm{neu}}}\simeq-m_DM_R^{-1}m_D^{T}$, which is standard and whose diagonal case was verified.
 
 The right-handed singlet that the mechanism needs is a gauge singlet and contributes nothing to any anomaly cancellation condition, so the heavy state is unconstrained by the consistency of the spectrum. Below the heavy scale the mechanism is the unique dimension-five Weinberg operator $(LH)(LH)/\Lambda$, which gives $m_{\nu_{\mathrm{neu}}}=v^2/\Lambda$; with $v=174$ GeV this is $0.03$ eV at $\Lambda=10^{15}$ GeV, the observed order of magnitude. The framework supplies the distinction between the two masses and the carrier of each, and thereby the possibility of the mixing; it does not fix $m_D$, $M_R$, or $\Lambda$, does not select among the type-I, type-II, and type-III variants (whose differences are gauge representations it does not generate, and the type-II agent belongs to the spin-$0$ subcategory), and does not predict the light masses.
 
@@ -268,8 +268,8 @@ The right-handed singlet that the mechanism needs is a gauge singlet and contrib
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=\lambda_{m_D}^{-1}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=\lambda_{m_D}^{-1}\tilde{Ξ}_{R}$ | Linear Dirac mass pair |
 | $m_D$, $M_R$ | Dirac mass and heavy Majorana mass |
 | $\begin{pmatrix}0&m_D\ m_D&M_R\end{pmatrix}$ | Type-I mass matrix in $(\nu_{\mathrm{neu},L},\nu_{\mathrm{neu},R,c})$ |
-| $\lambda_\pm=\tfrac12(M_R\pm\sqrt{M_R^2+4m_D^2})$ | Exact eigenvalues |
-| $m_{\nu_{\mathrm{neu}}}=\lambda_-\simeq-m_D^2/M_R$ | Light mass (type-I, one generation) |
+| $\eta_{\pm}=\tfrac12(M_R\pm\sqrt{M_R^2+4m_D^2})$ | Exact eigenvalues |
+| $m_{\nu_{\mathrm{neu}}}=\eta_{-}\simeq-m_D^2/M_R$ | Light mass (type-I, one generation) |
 | $m_{\nu_{\mathrm{neu}}}\simeq-m_DM_R^{-1}m_D^{T}$ | Light mass matrix (type-I, $N_g$ generations) |
 | $\theta\simeq m_D/M_R$ | Light–heavy mixing angle |
 | $c_5(LH)(LH)/\Lambda$ | Dimension-five Weinberg operator |

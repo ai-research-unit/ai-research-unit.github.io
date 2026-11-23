@@ -131,7 +131,7 @@ the **regular representation**, of complex dimension four. The Gram matrix of th
 
 **The general state.** For $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $0<|\vec s_{\Psi}|<1$ the state has full rank, $\mathrm{rank}\,\tilde{Ϛ}_{\Psi}=2$, so the radical is trivial and the GNS space has dimension four, exactly as for the trace state. There is no intermediate value: writing $\mathcal{H}_{\tilde{Ϛ}_{\Psi}}\cong\mathbb{B}/\mathcal{N}_{\tilde{Ϛ}_{\Psi}}$ and using the eigenvectors of $\tilde{Ϛ}_{\Psi}$,
 $$
-2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_3\big) = \sum_i \lambda_i\,\big\|\tilde Q_3 e_i\big\|^2 ,
+2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_3\big) = \sum_i \eta_i\,\big\|\tilde Q_3 e_i\big\|^2 ,
 $$
 which vanishes if and only if $\tilde Q_3$ annihilates the range of $\tilde{Ϛ}_{\Psi}$. The radical therefore has dimension $2(2-\mathrm{rank}\,\tilde{Ϛ}_{\Psi})$ and
 $$
@@ -210,7 +210,7 @@ and conjugates the scalar imaginary, $J_{\tilde{Ϛ}_{\Psi}}\,i\,J_{\tilde{Ϛ}_{\
 
 Two facts are standard and were verified explicitly:
 
-1. **Positivity and spectrum.** $\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi}}>0$, and its spectrum in the operator basis $\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ is the set of ratios $\lambda_i/\lambda_j$ of the eigenvalues of $\tilde{Ϛ}_{\Psi}$, so $\det\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi}}=1$.
+1. **Positivity and spectrum.** $\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi}}>0$, and its spectrum in the operator basis $\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ is the set of ratios $\eta_i/\eta_j$ of the eigenvalues of $\tilde{Ϛ}_{\Psi}$, so $\det\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi}}=1$.
 2. **The modular conjugation.** $J_{\tilde{Ϛ}_{\Psi}}^2=1$, $J_{\tilde{Ϛ}_{\Psi}}\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi}}J_{\tilde{Ϛ}_{\Psi}}\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi}}=1$, $J_{\tilde{Ϛ}_{\Psi}}iJ_{\tilde{Ϛ}_{\Psi}}=-i$, and $J_{\tilde{Ϛ}_{\Psi}}$ is anti-unitary for the GNS inner product.
 
 Numerically, for a full-rank Hermitian $\tilde{Ϛ}_{\Psi}$ with eigenvalues $(0.17984,0.82016)$ the operator $\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi}}=L_{e^{-H_{\mathrm{modular}}}}R_{e^{H_{\mathrm{modular}}}}$ was verified self-adjoint and positive on the four basis elements and on a generic element, and $J_{\tilde{Ϛ}_{\Psi}}\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi}}J_{\tilde{Ϛ}_{\Psi}}\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi}}-1=0$ to machine precision.

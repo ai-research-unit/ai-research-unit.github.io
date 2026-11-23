@@ -168,7 +168,7 @@ which is the object of the previous section, and its conservation is the identit
 
 $$
 T_{\imath\jmath}=\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\jmath}\tilde\Xi
-+\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\jmath}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi\Bigr]-\eta_{\imath\jmath}\mathcal L ,
++\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\jmath}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi\Bigr]-\delta_{\imath\jmath}\mathcal L ,
 $$
 
 which is real and symmetric in the index pair by construction: the two terms are each other's complex conjugates, and there is no antisymmetric piece to remove. This is a genuine difference from the free Proca case, where the symmetrisation had to be imposed.

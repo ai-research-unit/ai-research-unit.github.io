@@ -12,7 +12,7 @@ Here $S_{\mathrm d}$ and $V_{\imath}$ are the two scalar parts
 $$S_{\mathrm d}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x\bigr),
 \qquad
 V_{\imath}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,(ie_{\imath}\tilde{Ξ}\vec e_{\mathrm{spt}(\imath)})\vec e_x\bigr),$$
-with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$, and $\varepsilon_{\imath}=-g_{\imath\imath}$ the sign of the index, $+1$ on the time index and $-1$ on the three spatial ones in the $\mathbb{B}_{\Phi}$ frame of the conventions article. The contraction is written as a sum because no index is summed silently in this corpus, and the sign on the time component is what makes $\sum_{\imath}\varepsilon_{\imath} V_{\imath} V_{\imath}$ a Lorentz scalar rather than a sum of squares.
+with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$, and $\varepsilon_{\imath}=-g_{\imath\imath}$ the sign of the index, $+1$ on the time index and $-1$ on the three spatial ones in the $\mathbb{B}_{\Phi}$ frame of the conventions article. The contraction is written as a sum because no index is summed silently in this corpus, and the sign on the time component is what makes $\sum_{\imath}\varepsilon_{\imath} V_{\imath} V_{\imath}$ a Lorentz scalar rather than a sum of squares.
 
 This article states these equations, gives the Einstein–Cartan route that produces one of them from geometry, organises the possible interactions by the bilinears they use, and gives the biquaternion interpretation. Its contribution is a **placement of the channels**. The scalar density $S_{\mathrm d}$ is the mass channel, the object whose expectation is the dynamical mass of the companion article on the chiral condensate. The vector current $V_{\imath}$ is the material-sector current, the object of the companion articles on minimal coupling and on the Gordon decomposition. The axial current $A_{\imath}$ is the channel the linear mass breaks, so an axial-axial self-interaction is a coupling conjugate to the mass. A quartic interaction is also **bosonic**: it is even in the field and carries zero fermion number, so it passes through the framework's central phase untouched, which is why a self-interaction is compatible with the exact vector symmetry.
 
@@ -37,7 +37,7 @@ P_5=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\tilde{Ξ}\vec e_z\vec e_x\bigr),$$
 $$V_{\imath}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,(ie_{\imath}\tilde{Ξ}\vec e_{\mathrm{spt}(\imath)})\vec e_x\bigr),
 \qquad
 A_{\imath}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,e_{\imath}\tilde{Ξ}\vec e_z\vec e_{\mathrm{spt}(\imath)}\vec e_x\bigr),$$
-with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$. The scalar density carries the role subscript because the bare letter is the action of the corpus.
+with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$. The scalar density carries the role subscript because the bare letter is the action of the corpus.
 
 The four are real, and the reality is a computation and not a convention: over 100 generic elements the largest imaginary part of each is below $10^{-15}$. Each is worth a sentence.
 
@@ -345,7 +345,7 @@ Each bilinear, however, is a pairing and not a product: it is the scalar part of
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $\vec e_\imath^2 = -e_t$, central $i$ |
-| $\tilde Q\mapsto ie_{\imath}\tilde Q\vec e_{\mathrm{spt}(\imath)}$ | Slot action of the index $\mu$; $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$ |
+| $\tilde Q\mapsto ie_{\imath}\tilde Q\vec e_{\mathrm{spt}(\imath)}$ | Slot action of the index $\mu$; $\mathrm{spt}(t)=x$, $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$ |
 | $\sum_{\imath} e_{\imath}\frac{\partial\tilde Q}{\partial x_{\imath}}\vec e_{\mathrm{spt}(\imath)}$ | Two-sided Dirac action; composed with itself it is $\Box_\Phi$ |
 | $\mathrm{Sc}\bigl(\tilde{Ξ}^*iX\vec e_x\bigr)$ | The bilinear form; every density below is this scalar part read at one element $X$ |
 | $S_{\mathrm d}=\mathrm{Sc}(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x)$ | Scalar density (mass channel) |

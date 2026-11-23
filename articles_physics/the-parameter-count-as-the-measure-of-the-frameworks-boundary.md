@@ -223,7 +223,7 @@ The comparison is better stated as "the framework fixes none of nineteen", not a
 
 ## The Over-determination, Quantified
 
-Nineteen parameters, and the model survives a number of measurements far larger than nineteen. That gap is the model's testability, and it can be measured in a specific case: [the closure article](meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.html) used five independent measurements to determine two parameters $(\bar\rho,\bar\eta)$ of the unitarity triangle, leaving three degrees of freedom. Three over-determination is what made the closure test a test.
+Nineteen parameters, and the model survives a number of measurements far larger than nineteen. That gap is the model's testability, and it can be measured in a specific case: [the closure article](meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.html) used five independent measurements to determine two parameters $(\bar\rho,\bar\digamma_{\mathrm{wlf}})$ of the unitarity triangle, leaving three degrees of freedom. Three over-determination is what made the closure test a test.
 
 The general shape:
 
@@ -336,7 +336,7 @@ Four machines would reduce the count: a spectral principle (ten entries), a scal
 | $ϙ$ | The framework's central charge parameter |
 | $m$, $\nu_m$ | Mass and constant of the massive field equation |
 | $M_{\mathrm{Pl}}$ | Planck mass, $1.22\times10^{19}$ GeV |
-| $\bar\rho$, $\bar\eta$ | The two parameters of the unitarity triangle |
+| $\bar\rho$, $\bar\digamma_{\mathrm{wlf}}$ | The two parameters of the unitarity triangle |
 | $m_{\beta\beta}$ | Effective Majorana mass |
 
 ## Further Reading

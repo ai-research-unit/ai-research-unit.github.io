@@ -139,7 +139,7 @@ $$
 both verified exactly. The single real parameter $\rho$ is the instanton scale. The construction applied to this datum yields the BPST configuration of the companion article,
 
 $$
-\mathcal A_{\imath a}(x)=2\sum_{\jmath}\eta_{\imath\jmath a}\,\frac{x_{\jmath}}{r^2+\rho^2} ,
+\mathcal A_{\imath a}(x)=2\sum_{\jmath}\varsigma_{\mathrm{thf},\imath\jmath a}\,\frac{x_{\jmath}}{r^2+\rho^2} ,
 $$
 
 which that article verified to be self-dual and to satisfy the equation of motion. The five moduli of the physical $k=1$ solution are recovered as the four translations of the origin, which are not part of the ADHM data at all but appear in the reconstruction from $\mathcal{A}_{\mathrm{ADHM}}(x)$, and the scale $\rho$, which is the datum; the three global $SU(2)$ orientations are the quotient by the global symmetry. For $k>1$ the matrices $B_1,B_2$ carry the relative positions and orientations of the individual instantons, and their non-commutativity $[B_1,B_2]$ is what the complex equation constrains.
@@ -210,7 +210,7 @@ Counting data, constraints and gauge redundancy gives $\dim_{\mathbb R}\mathcal 
 | $\dim_{\mathbb R}\mathcal M_\imath=8k$ | Moduli dimension; physical $8k-3$ |
 | $\mathcal{A}_{\mathrm{ADHM}}(x)$ | ADHM linear operator; kernel gives the connection |
 | $\mathcal A_{\imath}=\bar v\,\partial/\partial x_{\imath} v$ | Reconstruction of the self-dual connection |
-| $\eta_{\imath\jmath a}$ | Self-dual 't Hooft symbols |
+| $\varsigma_{\mathrm{thf},\imath\jmath a}$ | Self-dual 't Hooft symbols |
 | $a$ | colour index of the instanton connection, written low |
 | $\rho$ | Instanton scale; the $k=1$ datum |
 | $T(R)$, defining module | Dynkin index $\tfrac12$; the two-dimensional simple module of $\mathbb B$ |

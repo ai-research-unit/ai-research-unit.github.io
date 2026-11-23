@@ -106,7 +106,7 @@ $$
 
 and its conservation is one line from the equation and its conjugate. The factor of two is the $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ convention and not a normalisation; it is stated once here and not again.
 
-**The local version, and what it costs.** The gauge principle localises the centre's $\mathrm{U}(1)$: the angle becomes a real function $\Gamma$, the field acquires the factor $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$, and the connection transforms as
+**The local version, and what it costs.** The gauge principle localises the centre's $\mathrm{U}(1)$: the angle becomes a real function $\Gamma$, the field acquires the factor $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$, and the connection transforms as
 
 $$
 \tilde A_\Phi\longmapsto\tilde A_\Phi-\tilde\nabla_\Phi\Gamma,
@@ -145,19 +145,19 @@ The left side is the covariant time derivative times $i \frac{h}{2\pi}$; the rig
 **The first derivative.** With primes marking the transformed objects and $D'_\imath=\partial_\imath+\frac{2\pi iϙ}{h}A'_\imath$,
 
 $$
-D'_\imath\big(\lambda\tilde\Xi\big)
-=\lambda\Big(\partial_\imath+\frac{2\pi iϙ}{h}\partial_\imath\Gamma+\frac{2\pi iϙ}{h}A_\imath-\frac{2\pi iϙ}{h}\partial_\imath\Gamma\Big)\tilde\Xi
-=\lambda\,D_\imath\tilde\Xi .
+D'_\imath\big(\digamma_{\mathrm{gau}}\tilde\Xi\big)
+=\digamma_{\mathrm{gau}}\Big(\partial_\imath+\frac{2\pi iϙ}{h}\partial_\imath\Gamma+\frac{2\pi iϙ}{h}A_\imath-\frac{2\pi iϙ}{h}\partial_\imath\Gamma\Big)\tilde\Xi
+=\digamma_{\mathrm{gau}}\,D_\imath\tilde\Xi .
 $$
 
 The two gauge gradients cancel because one comes from the derivative of the central unit and the other from the transformation of the connection. Nothing else in the computation can cancel them, which is why the connection's transformation law is forced rather than chosen.
 
-**The second derivative, and the temporal slot.** Applying $D'_\imath$ once more multiplies by $\lambda$ again, since $\lambda$ is central and passes through; and the temporal slot behaves the same way, with $\omicron_{\mathrm{pot}}$'s shift opposite to $\vec A$'s and the sign in $D_t$ opposite to the sign in $D_\imath$. Hence
+**The second derivative, and the temporal slot.** Applying $D'_\imath$ once more multiplies by $\digamma_{\mathrm{gau}}$ again, since $\digamma_{\mathrm{gau}}$ is central and passes through; and the temporal slot behaves the same way, with $\omicron_{\mathrm{pot}}$'s shift opposite to $\vec A$'s and the sign in $D_t$ opposite to the sign in $D_\imath$. Hence
 
 $$
-D'^{2}_\imath(\lambda\tilde\Xi)=\lambda\,D_\imath^{2}\tilde\Xi,
+D'^{2}_\imath(\digamma_{\mathrm{gau}}\tilde\Xi)=\digamma_{\mathrm{gau}}\,D_\imath^{2}\tilde\Xi,
 \qquad
-D'_t(\lambda\tilde\Xi)=\lambda\,D_t\tilde\Xi,
+D'_t(\digamma_{\mathrm{gau}}\tilde\Xi)=\digamma_{\mathrm{gau}}\,D_t\tilde\Xi,
 $$
 
 and the equation is form-invariant:
@@ -168,7 +168,7 @@ i \frac{h}{2\pi}\,D'_t\tilde\Xi'=\frac{1}{2m}\sum_{\imath\in\{x,y,z\}}\big(-i \f
 i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_{\imath\in\{x,y,z\}}\big(-i \frac{h}{2\pi}\,D_\imath\big)^{2}\tilde\Xi .
 $$
 
-**What the covariance does not use.** It does not use the commutativity of the field with anything, the reality of the field, or the central field's collapse. It uses only the centrality of $\lambda$ and of the connection's coefficients, and it therefore holds for every element of $\mathbb{B}$ and for every connection in the material sector. The Dirac companion's covariance proof has the same three lines and one more: there the two members of the pair carry $\natural$, and the conjugate operator carries the conjugate connection. Here there is one equation and one operator, and no second member.
+**What the covariance does not use.** It does not use the commutativity of the field with anything, the reality of the field, or the central field's collapse. It uses only the centrality of $\digamma_{\mathrm{gau}}$ and of the connection's coefficients, and it therefore holds for every element of $\mathbb{B}$ and for every connection in the material sector. The Dirac companion's covariance proof has the same three lines and one more: there the two members of the pair carry $\natural$, and the conjugate operator carries the conjugate connection. Here there is one equation and one operator, and no second member.
 
 ## The Conserved Current
 
@@ -197,7 +197,7 @@ $$
 
 so the right side is the equation's residual contracted with the field and projected on the imaginary part of the scalar part: it vanishes on every solution and the continuity equation is exact off shell. The same identity in the free case is the free article's, with $D_\imath\to\partial_\imath$.
 
-**Gauge invariance.** Under $\tilde\Xi\mapsto\lambda\tilde\Xi$ and $A_\imath\mapsto A_\imath-\partial_\imath\Gamma$, the two factors of the bilinear acquire $\lambda$ and $\lambda^{-1}$, and $\lambda$ is central, so they cancel; and each $D_\imath\tilde\Xi$ is multiplied by $\lambda$, so the two factors acquire $\lambda^{-1}$ and $\lambda$ and cancel again. The current is invariant, and so is the density. This is the property the free current lacks and the coupling supplies: for $ϙ=0$ a local phase shift changes $\vec j$ by a term in $\vec\nabla_\Phi\Gamma$, and with the connection in place the shift is absorbed.
+**Gauge invariance.** Under $\tilde\Xi\mapsto\digamma_{\mathrm{gau}}\tilde\Xi$ and $A_\imath\mapsto A_\imath-\partial_\imath\Gamma$, the two factors of the bilinear acquire $\digamma_{\mathrm{gau}}$ and $\digamma_{\mathrm{gau}}^{-1}$, and $\digamma_{\mathrm{gau}}$ is central, so they cancel; and each $D_\imath\tilde\Xi$ is multiplied by $\digamma_{\mathrm{gau}}$, so the two factors acquire $\digamma_{\mathrm{gau}}^{-1}$ and $\digamma_{\mathrm{gau}}$ and cancel again. The current is invariant, and so is the density. This is the property the free current lacks and the coupling supplies: for $ϙ=0$ a local phase shift changes $\vec j$ by a term in $\vec\nabla_\Phi\Gamma$, and with the connection in place the shift is absorbed.
 
 **The charge current, and the source.** Multiplying by $ϙ$ gives the charge density $\rho_{\mathrm{chg}}:=ϙ n$ and the charge current $\vec J:=ϙ\vec j$, and the continuity equation is theirs unchanged. That current is the source of the inhomogeneous Maxwell equation, in the form the Maxwell article and the coupled Klein–Gordon companion use,
 
@@ -308,7 +308,7 @@ In the constant setting the coupling is a shift of two numbers, $\tilde H^{\rm g
 | $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | The density; $\rho=2n$ is the free article's |
 | $j_\imath$, $j_t=n$ | The particle current and its temporal component |
 | $\rho_{\mathrm{chg}}=ϙ n$, $\vec J=ϙ\vec j$ | The charge density and the charge current |
-| $\lambda=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge factor; $\Gamma$ real |
+| $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge factor; $\Gamma$ real |
 | $\Gamma$ | The gauge function; $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$, $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$ |
 
 ## Further Reading

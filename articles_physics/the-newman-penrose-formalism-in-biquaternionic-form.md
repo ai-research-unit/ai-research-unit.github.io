@@ -223,7 +223,7 @@ This costs a sentence and prevents an overclaim. The correct statement is that t
 
 ## The Interval Recovered from the Tetrad
 
-The tetrad is a complex basis of $\mathbb{B}$ as a four-dimensional complex vector space, and the interval is recovered from it by the completeness relation. Since the matrix $\eta$ in (5) squares to the identity, the expansion of an arbitrary element $\tilde{Q}\in\mathbb{B}$ in the tetrad is
+The tetrad is a complex basis of $\mathbb{B}$ as a four-dimensional complex vector space, and the interval is recovered from it by the completeness relation. Since the matrix $\varrho_{\mathrm{ifm}}$ in (5) squares to the identity, the expansion of an arbitrary element $\tilde{Q}\in\mathbb{B}$ in the tetrad is
 
 $$
 \tilde{Q} = -\langle \tilde{Q},l\rangle_{\natural}\,n - \langle \tilde{Q},n\rangle_{\natural}\,l + \langle \tilde{Q},m\rangle_{\natural}\,\bar m + \langle \tilde{Q},\bar m\rangle_{\natural}\,m ,
@@ -300,7 +300,7 @@ The framework's contribution here is a home, not a construction. It supplies the
 
 ## The Weyl Scalars
 
-The Weyl tensor $C_{abcd}$ is the trace-free part of the Riemann tensor, the part left after the Ricci tensor and the curvature scalar are removed. It inherits the algebraic symmetries of the Riemann tensor, $C_{abcd}=-C_{bacd}=-C_{abdc}=C_{cdab}$ with $C_{a[bcd]}=0$, and it is trace-free, $\sum_{a,c}\eta_{ac}C_{abcd}=0$; in four dimensions this leaves ten independent real components. Contracting it with the null tetrad produces the five complex **Weyl scalars**:
+The Weyl tensor $C_{abcd}$ is the trace-free part of the Riemann tensor, the part left after the Ricci tensor and the curvature scalar are removed. It inherits the algebraic symmetries of the Riemann tensor, $C_{abcd}=-C_{bacd}=-C_{abdc}=C_{cdab}$ with $C_{a[bcd]}=0$, and it is trace-free, $\sum_{a,c}\varrho_{\mathrm{ifm,ac}}C_{abcd}=0$; in four dimensions this leaves ten independent real components. Contracting it with the null tetrad produces the five complex **Weyl scalars**:
 
 $$
 \begin{aligned}
@@ -315,7 +315,7 @@ $$
 
 with an overall sign that is convention-dependent. The index structure of (9) fixes the boost weights computed in the next section, and the pattern of which legs appear in which scalar is the part of the convention that matters.
 
-The counting works, and the passage from ten real components to five complex ones is a real isomorphism rather than a coincidence. To verify it, parametrise a general tensor with the Weyl symmetries $C_{abcd}=-C_{bacd}=-C_{abdc}=C_{cdab}$, $C_{a[bcd]}=0$ and $\sum_{a,c}\eta_{ac}C_{abcd}=0$. With the antisymmetries and pair symmetry there are $21$ independent pair-components; the first Bianchi identity imposes one independent condition and trace-freeness imposes ten, leaving a $21-11=10$ dimensional space. The map that sends such a tensor to the five complex contractions (9) was computed on that ten-dimensional space and found to have rank ten over $\mathbb{R}$ — equivalently rank five over $\mathbb{C}$ — so the five complex scalars are exactly the ten real components reorganised, and no information is lost.
+The counting works, and the passage from ten real components to five complex ones is a real isomorphism rather than a coincidence. To verify it, parametrise a general tensor with the Weyl symmetries $C_{abcd}=-C_{bacd}=-C_{abdc}=C_{cdab}$, $C_{a[bcd]}=0$ and $\sum_{a,c}\varrho_{\mathrm{ifm,ac}}C_{abcd}=0$. With the antisymmetries and pair symmetry there are $21$ independent pair-components; the first Bianchi identity imposes one independent condition and trace-freeness imposes ten, leaving a $21-11=10$ dimensional space. The map that sends such a tensor to the five complex contractions (9) was computed on that ten-dimensional space and found to have rank ten over $\mathbb{R}$ — equivalently rank five over $\mathbb{C}$ — so the five complex scalars are exactly the ten real components reorganised, and no information is lost.
 
 The scalars have a spinorial form that names them in the framework's own objects. The self-dual part of the Weyl tensor is the totally symmetric fourth-rank spinor
 $$

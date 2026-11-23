@@ -10,15 +10,15 @@ The second claim is that the action is trivial and that this is the whole conten
 
 The third claim is that the triviality is a statement about one action and not about the subspace. The centre is fixed by the adjoint action of the whole group of invertibles, and it is not preserved by left multiplication: a general element multiplies $e_t$ to a general element, and the left multiples of $e_t$ span six of the eight real dimensions. Even a rotor does it, since $\tilde u e_t=\tilde u$ is a unit quaternion and not central unless $\tilde u=\pm e_t$. So the line is a carrier for the conjugation and not for the multiplication, and this single asymmetry is why a scalar field is not a value of the state action.
 
-The fourth claim is that the norm on the centre separates points and the spectrum does not. The norm is $N(\lambda e_t)=\lambda^{2}$, which vanishes only at the origin, so every nonzero central element is invertible and the centre is a copy of the complex field inside the algebra. The second predicate goes the other way: the vector part vanishes identically, so the two eigenvalues coincide, and every element of the centre is spectrally degenerate. The centre is the extreme case of both predicates and in opposite directions, and it is the only carrier with that property.
+The fourth claim is that the norm on the centre separates points and the spectrum does not. The norm is $N(Q_te_t)=Q_t^{2}$, which vanishes only at the origin, so every nonzero central element is invertible and the centre is a copy of the complex field inside the algebra. The second predicate goes the other way: the vector part vanishes identically, so the two eigenvalues coincide, and every element of the centre is spectrally degenerate. The centre is the extreme case of both predicates and in opposite directions, and it is the only carrier with that property.
 
-The fifth claim is that the closure adds exactly one degree of freedom, and that it is the phase. The line is a real amplitude; the centre is an amplitude and a phase. In the polar form $\lambda=re^{i\vartheta}$ the amplitude is the carrier and the angle is the added direction, and the two are the radial and angular coordinates of one complex number. A scalar field therefore has two real degrees of freedom at each event for a structural reason and not by choice.
+The fifth claim is that the closure adds exactly one degree of freedom, and that it is the phase. The line is a real amplitude; the centre is an amplitude and a phase. In the polar form $Q_t=re^{i\vartheta}$ the amplitude is the carrier and the angle is the added direction, and the two are the radial and angular coordinates of one complex number. A scalar field therefore has two real degrees of freedom at each event for a structural reason and not by choice.
 
 The sixth claim is that the centre is the only carrier that carries a continuous phase. A central phase $\exp(i\vartheta)$ multiplies the centre into itself for every $\vartheta$, because a central element commutes with everything; the same test on the material sector succeeds only at $\vartheta\equiv0$ and $\vartheta\equiv\pi$. Verified on a random anti-Hermitian element: the anti-Hermitian defect after multiplication by $\exp(i\vartheta)$ is $0$ at the two ends of the range and between $1.9$ and $6.4$ in between. Charge is therefore a property of this carrier and not of the others, and it is continuous here and discrete there.
 
 The first objection is that a trivial representation is not worth an article. It is worth one because four separate pieces of physics hang on the triviality: the absence of an intrinsic magnetic moment, the globality of the central phase, the freedom of the Klein–Gordon restriction, and the two-mode structure of the broken vacuum. None of them is a consequence of the *dimension* of the carrier; all four are consequences of the action being the identity.
 
-The second objection is that the norm should be $\lvert\lambda\rvert^{2}$ and the article's $\lambda^{2}$ is a mistake. The two are different objects and both are needed. The algebraic norm is $N(\lambda e_t)=\lambda^{2}$, complex-valued, multiplicative, and zero exactly on the non-invertible elements; its argument is twice the phase of the field. The modulus is the Hermitian square $XX^{*}=\lvert\lambda\rvert^{2}$, real and non-negative. The first is the algebra's own quadratic form and the second is the form a probability needs, and the entry keeps the two apart throughout.
+The second objection is that the norm should be $\lvertQ_t\rvert^{2}$ and the article's $Q_t^{2}$ is a mistake. The two are different objects and both are needed. The algebraic norm is $N(Q_te_t)=Q_t^{2}$, complex-valued, multiplicative, and zero exactly on the non-invertible elements; its argument is twice the phase of the field. The modulus is the Hermitian square $XX^{*}=\lvertQ_t\rvert^{2}$, real and non-negative. The first is the algebra's own quadratic form and the second is the form a probability needs, and the entry keeps the two apart throughout.
 
 The third objection is that spin zero is a gap in the classification rather than a member of it. It is a member, and the algebra says so twice: the centre is a copy of $\mathbb{C}$ inside $\mathbb{B}$, and the trivial module of any group is its identity object. A gap would be a value the algebra cannot carry; spin zero is the value it carries most cheaply.
 
@@ -31,7 +31,7 @@ Boundaries. The carrier, the closure, the character theorem, the two numbers and
 | mathematical content | source article |
 | --- | --- |
 | the fixed line, the two propositions on the fixed space, the character theorem, the trivial action and the two numbers, the multiplicity two, the exclusion of a Peirce corner | [Introduction to the Spin-Zero Centre Subspace](../articles_maths/the-spin-zero-centre-subspace.html) |
-| the norm $\lambda^{2}$ on the centre, the null locus, the two real forms of inertia $(1,1)$, the isotropic lines, the polar form $\lambda\mu$ | [The Spin-Zero Centre Subspace and N Norm Regularity](../articles_maths/the-spin-zero-centre-subspace-and-n-norm-regularity.html) |
+| the norm $Q_t^{2}$ on the centre, the null locus, the two real forms of inertia $(1,1)$, the isotropic lines, the polar form $Q_t\mu$ | [The Spin-Zero Centre Subspace and N Norm Regularity](../articles_maths/the-spin-zero-centre-subspace-and-n-norm-regularity.html) |
 | the double eigenvalue, the degenerate cone, the centre as the part of the cone with vanishing vector part, the sector $\Sigma_{10}$ | [The Spin-Zero Centre Subspace and Spectral Regularity](../articles_maths/the-spin-zero-centre-subspace-and-spectral-regularity.html) |
 | the list of three carriers, the criterion of the weight string, the four closure rules | [From the Spin to the Carriers and the Closures](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html) |
 | the two predicates, the four sectors and the placement of the carriers among them | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
@@ -50,19 +50,19 @@ The action. Trivial at every axis: $\rho_{\mathrm{rep}}(\tilde u)=\mathrm{id}$ f
 
 The two numbers. The spectrum is $\{0\}$, of multiplicity one on the line and two on the closure; the spin is $0$; $2s+1=1$ is the dimension of the carrier; a full turn has operator $+1=(-1)^{2s}$.
 
-The norm. $N(\lambda e_t)=\lambda^{2}$, whose zero locus in the centre is the origin alone. Every nonzero central element is invertible, with inverse $\lambda^{-1}e_t$, and the centre contains no zero divisor.
+The norm. $N(Q_te_t)=Q_t^{2}$, whose zero locus in the centre is the origin alone. Every nonzero central element is invertible, with inverse $Q_t^{-1}e_t$, and the centre contains no zero divisor.
 
-The spectrum predicate. $B^{2}(\lambda e_t)=0$ identically, so $\lambda_{\pm}=\lambda$ and the whole centre lies in the spectrally degenerate cone.
+The spectrum predicate. $B^{2}(Q_te_t)=0$ identically, so $\eta_{\pm}=Q_t$ and the whole centre lies in the spectrally degenerate cone.
 
 The sector. Away from the origin the carrier lies in $\Sigma_{10}$: norm-regular and spectrally degenerate. It meets $\Sigma_{00}$ at the origin and meets neither $\Sigma_{01}$ nor $\Sigma_{11}$.
 
-The polar form. $\lambda=re^{i\vartheta}$ gives $N=r^{2}e^{2i\vartheta}$, so the amplitude is the square root of $\lvert N\rvert$ and the phase is half the argument of $N$.
+The polar form. $Q_t=re^{i\vartheta}$ gives $N=r^{2}e^{2i\vartheta}$, so the amplitude is the square root of $\lvert N\rvert$ and the phase is half the argument of $N$.
 
 The two real forms. The real part of $N$ has inertia $(1,1)$ with the isotropic lines $\mathbb{R}(e_t\pm ie_t)$, and on those lines $N=\pm2i$ and not zero.
 
 The phase. A central phase preserves the centre for every angle and preserves the material sector only for $\pm1$.
 
-The double cover on the scalar. $N(-\lambda)=N(\lambda)$, so the algebraic norm identifies a value with its negative and cannot see the sign of the amplitude.
+The double cover on the scalar. $N(-Q_t)=N(Q_t)$, so the algebraic norm identifies a value with its negative and cannot see the sign of the amplitude.
 
 The equation. The Klein–Gordon operator is central and real, so it preserves every real subspace and chooses no carrier; the restriction to the centre is free, and the three complex coefficients it discards are three further scalar fields.
 
@@ -124,7 +124,7 @@ $$
 
 verified to $0$ on one hundred random axes. The operator of the generator is the zero operator, at every axis, with no computation beyond the centrality of $e_t$.
 
-The numbers. A weight is a real $\lambda$ for which $i\lambda$ is an eigenvalue of that operator. The only eigenvalue is $0$, so the spectrum is $\{0\}$ with multiplicity one on the line and two on the closure; the spin is the largest weight, $s=0$; the identity reads
+The numbers. A weight is a real $Q_t$ for which $iQ_t$ is an eigenvalue of that operator. The only eigenvalue is $0$, so the spectrum is $\{0\}$ with multiplicity one on the line and two on the closure; the spin is the largest weight, $s=0$; the identity reads
 
 $$
 2s+1=1=\dim_\mathbb{R}\mathbb{R}e_t ,
@@ -148,29 +148,29 @@ One consequence at once. No one-dimensional subspace of $\mathbb{B}$ is a left m
 
 ## The Two Numbers: the Norm and the Eigenvalue
 
-The norm. For complex $\lambda$,
+The norm. For complex $Q_t$,
 
 $$
-N(\lambda e_t)=\lambda^{2},
+N(Q_t e_t)=Q_t^{2},
 $$
 
-because three of the four coordinates vanish and the fourth is $\lambda$. The null locus in the centre is the origin alone, since $\lambda^{2}=0$ forces $\lambda=0$; every nonzero central element is invertible with inverse $\lambda^{-1}e_t$, and $N(\lambda e_t)N(\lambda^{-1}e_t)=1$. The centre is a copy of the complex field inside the algebra, it contains no zero divisor, and it is the only carrier of the three on which the norm is a genuine function of the value.
+because three of the four coordinates vanish and the fourth is $Q_t$. The null locus in the centre is the origin alone, since $Q_t^{2}=0$ forces $Q_t=0$; every nonzero central element is invertible with inverse $Q_t^{-1}e_t$, and $N(Q_te_t)N(Q_t^{-1}e_t)=1$. The centre is a copy of the complex field inside the algebra, it contains no zero divisor, and it is the only carrier of the three on which the norm is a genuine function of the value.
 
-The real part is indefinite. With $\lambda=a+ib$,
+The real part is indefinite. With $Q_t=a+ib$,
 
 $$
-N(\lambda e_t)=(a^{2}-b^{2})+2iab ,
+N(Q_t e_t)=(a^{2}-b^{2})+2iab ,
 $$
 
 and the real part is a form of inertia $(1,1)$: positive on $\mathbb{R}e_t$, negative on $\mathbb{R}(ie_t)$, and vanishing on the two lines $a=\pm b$, that is on $\mathbb{R}(e_t\pm ie_t)$. On those lines the norm itself is not zero but $\pm2i$, verified exactly. A reader who reports from the real part alone that the centre is isotropic has reported a fact about one real form; the complex norm has no isotropic line in the centre.
 
-The eigenvalue. Every element of the algebra satisfies $X^{2}-2Q_tX+N(X)e_t=0$, whose roots are $\lambda_{\pm}=Q_t\pm iB$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. On the centre $B^{2}=0$ identically, so
+The eigenvalue. Every element of the algebra satisfies $X^{2}-2Q_tX+N(X)e_t=0$, whose roots are $\eta_{\pm}=Q_t\pm iB$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. On the centre $B^{2}=0$ identically, so
 
 $$
-\lambda_{+}=\lambda_{-}=\lambda,\qquad \operatorname{spec}(\lambda e_t)=\{\lambda\},
+\eta_{+}=\eta_{-}=Q_t,\qquad \operatorname{spec}(Q_t e_t)=\{Q_t\},
 $$
 
-and the whole centre lies in the spectrally degenerate cone. The element satisfies the relation of degree one, $X-\lambda e_t=0$: it is one number, and one number has one eigenvalue.
+and the whole centre lies in the spectrally degenerate cone. The element satisfies the relation of degree one, $X-Q_te_t=0$: it is one number, and one number has one eigenvalue.
 
 Degenerate and not defective. A double eigenvalue usually invites the question of whether the element can be separated into two independent directions. For a central element the question does not arise: the element does not mix any two directions, because it does not move anything at all. The multiplicity two is the multiplicity of the two-dimensional real space over the one-dimensional complex one, the same factor of two as before.
 
@@ -178,7 +178,7 @@ The sector. With the two predicates taken together, a nonzero central element is
 
 **The reading. The two predicates disagree maximally on this carrier, and they agree nowhere else so sharply.** The norm separates the points of the centre; the spectrum does not separate anything. A scalar field therefore has a mass, in the sense that its norm is a nonzero function of the value, and no internal spectrum, in the sense that its value cannot be split into components. The combination is the algebraic form of the sentence that a scalar has a mass and no polarisation.
 
-The norm is not injective. Because $N(-\lambda)=N(\lambda)$, verified to $0$, the algebraic norm identifies a value with its negative. The map $\lambda\mapsto\lambda^{2}$ is two-to-one away from the origin and branched there. This is the first appearance of a doubling that runs through the corpus: a quadratic quantity cannot see a sign, and the sign it cannot see is the one the group of invertibles cannot see either, since $\{\pm e_t\}$ is the kernel of the adjoint action.
+The norm is not injective. Because $N(-Q_t)=N(Q_t)$, verified to $0$, the algebraic norm identifies a value with its negative. The map $Q_t\mapstoQ_t^{2}$ is two-to-one away from the origin and branched there. This is the first appearance of a doubling that runs through the corpus: a quadratic quantity cannot see a sign, and the sign it cannot see is the one the group of invertibles cannot see either, since $\{\pm e_t\}$ is the kernel of the adjoint action.
 
 The modulus is a different form. The Hermitian square is
 
@@ -391,7 +391,7 @@ Spin zero forbids an internal vector and everything built from one: the intrinsi
 | $\theta$ | the rotation angle, twice the rotor angle |
 | $\tilde u$ | a rotor, $\cos\tfrac\theta2 e_t+\sin\tfrac\theta2\,\vec u$ |
 | $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the discriminant, $B^{2}=0$ being spectral degeneracy |
-| $\lambda_{\pm}=Q_t\pm iB$ | the two eigenvalues of an element |
+| $\eta_{\pm}=Q_t\pm iB$ | the two eigenvalues of an element |
 | $\Sigma_{ij}$ | the four sectors of the two predicates |
 | $\xi=re^{i\vartheta}$ | the value of a scalar field and its polar form |
 | $\Box_\Phi$ | the central second-order operator |

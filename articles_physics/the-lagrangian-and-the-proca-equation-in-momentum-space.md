@@ -10,7 +10,7 @@ The second finding is that gauge freedom is the vanishing of a coefficient and n
 
 The third finding is a primary constraint visible as an absent power of the frequency. The coefficient of $A_0^{2}$ in the form is $\tfrac12(\vec\nu_\Phi^{2}+\nu_m^{2})$, with no $\omega^{2}$ in it, and it therefore does not move when the frequency moves: $0.315000000$ at $2\pi\nu_t'=0.5$, $1.2$ and $2.0$. The three spatial coefficients move ($-0.145$, $+0.45$, $+1.73$). That asymmetry is the frequency-space form of "the second-order form carries a primary constraint", and it is why the count is four minus one.
 
-The gradient of the form is $-\eta\,\sigma A$, verified to $2.1\times10^{-11}$ on a random amplitude at $2\pi\nu_t'=1.2$, so the momentum-space variational principle *is* the vanishing of the Proca symbol. The variational statement and the operator statement are one equation in two registers, and the form companion's determinant, rank and kernel are all statements about this form's Hessian.
+The gradient of the form is $-\digamma_{\mathrm{frm}}\,\sigma A$, verified to $2.1\times10^{-11}$ on a random amplitude at $2\pi\nu_t'=1.2$, so the momentum-space variational principle *is* the vanishing of the Proca symbol. The variational statement and the operator statement are one equation in two registers, and the form companion's determinant, rank and kernel are all statements about this form's Hessian.
 
 There is no new solution, no new action and no new current. The action is the parent's, the form is its value at a mode, and what is added is the coefficient structure: the longitudinal constant, the absent frequency in the temporal slot, and the identification of the constraint's cost.
 
@@ -215,7 +215,7 @@ Whether the absent $\omega^{2}$ in the temporal coefficient has a chart reading.
 
 ## Summary
 
-At a wave number the Proca action is one quadratic form, $\mathcal{Q}=\tfrac12\{[kA]^{2}-(k^{2}-4\pi^{2}\nu_m^{2})A\!\cdot\!A\}$, whose gradient is $-\eta\,\sigma A$ and whose stationarity is therefore the Proca symbol's vanishing, verified to $2.1\times10^{-11}$ on a random amplitude.
+At a wave number the Proca action is one quadratic form, $\mathcal{Q}=\tfrac12\{[kA]^{2}-(k^{2}-4\pi^{2}\nu_m^{2})A\!\cdot\!A\}$, whose gradient is $-\digamma_{\mathrm{frm}}\,\sigma A$ and whose stationarity is therefore the Proca symbol's vanishing, verified to $2.1\times10^{-11}$ on a random amplitude.
 
 Along the four-wave-number the form is $\tfrac12\nu_m^{2}(A\!\cdot\!A)$ exactly, because the $k^{4}$ of the field term cancels against the $k^{4}$ inside the second term. Measured on a unit-norm longitudinal amplitude, the coefficient is $0.245000000$ at $2\pi\nu_m=0.7$ and $0.045000000$ at $2\pi\nu_m=0.3$, at every frequency from $2\pi\nu_t'=0.5$ to $2.0$. The longitudinal coefficient is a function of the mass alone.
 
@@ -234,7 +234,7 @@ The form degenerates exactly where the symbol is singular and where the propagat
 | $\nu_m=\frac{mc}{h}$ | The mass wave number |
 | $[kA]=2\pi\nu_t'a_t'-2\pi\vec\nu_\Phi\cdot\vec a$ | The Lorenz form of the amplitude; the parent's $S$ up to $-i$ |
 | $\mathcal{Q}(A)=\tfrac12\{[kA]^{2}-(k^{2}-4\pi^{2}\nu_m^{2})A\!\cdot\!A\}$ | The momentum-space quadratic form |
-| $\partial\mathcal{Q}/\partial A=-\eta\,\sigma A$ | The stationarity; the Proca symbol's vanishing |
+| $\partial\mathcal{Q}/\partial A=-\digamma_{\mathrm{frm}}\,\sigma A$ | The stationarity; the Proca symbol's vanishing |
 | $\tfrac12\nu_m^{2}(A\!\cdot\!A)$ | The longitudinal coefficient; independent of the frequency |
 | $\tfrac12(\vec\nu_\Phi^{2}+\nu_m^{2})$ | The coefficient of $A_0^{2}$; no $\omega^{2}$ |
 | $3k^{2}-4\nu_m^{2}$ | The symbol's trace; $-\nu_m^{2}$ on the shell |

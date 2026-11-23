@@ -40,7 +40,7 @@ $$
 S_{\Psi,k\jmath}\equiv S_{\Psi,t,k\jmath},
 $$
 
-so that $S_{\Psi,k\jmath}$ is the angular momentum in the $\lambda\jmath$ plane per unit proper volume, the $\eta=t$ component of the current. Every thermodynamic relation below uses the two-index density and every conservation or transport equation uses the three-index current, and the distinction is not bookkeeping: $\omega_{k\jmath}$ has two indices, so only the two-index object can be contracted with it.
+so that $S_{\Psi,k\jmath}$ is the angular momentum in the $\lambda\jmath$ plane per unit proper volume, the $\upsilon_{\mathrm{tme}}=t$ component of the current. Every thermodynamic relation below uses the two-index density and every conservation or transport equation uses the three-index current, and the distinction is not bookkeeping: $\omega_{k\jmath}$ has two indices, so only the two-index object can be contracted with it.
 
 The rotor is an element of norm one, and the spin element it builds is regular as long as the rotor is; on the zero-divisor cone the quaternionic norm of the spin element vanishes and the polarization has no inverse. The corpus states the restriction because the algebra's degenerate elements are where its structure changes, and a hydrodynamic expansion around a degenerate polarization is not the same expansion.
 

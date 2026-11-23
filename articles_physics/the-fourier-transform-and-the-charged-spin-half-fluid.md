@@ -12,7 +12,7 @@ This is the charged companion of [The Fourier Transform and the Spin-Half Fluid]
 
 ## Conventions
 
-The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $ϙ$, the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$, the gauge transformation $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ with $\Gamma$ real, and
+The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $ϙ$, the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$, the gauge transformation $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ with $\Gamma$ real, and
 
 $$
 \tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi ,
@@ -159,7 +159,7 @@ The vorticity is $ϙF/m$ and a constant connection has no curvature, so a mode i
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin direction |
 | $\mathcal H=\mathcal H_{SL(2,\mathbb{C})}\exp(\frac{2\pi iϙ\Phi_B}{h})$ | The loop invariant |
 | $\Phi_B$ | The flux through the loop's spanning surface |
-| $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ | The gauge element; central |
+| $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ | The gauge element; central |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
 ## Further Reading

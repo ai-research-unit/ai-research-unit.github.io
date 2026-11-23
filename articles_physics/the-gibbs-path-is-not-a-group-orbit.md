@@ -116,7 +116,7 @@ What the orbit picture does supply is the negative result. If the thermal path w
 
 **A map on the ball is affine when it preserves mixtures of states, and the congruence passes that test exactly when it is a rotation.** On two hundred random mixtures the deviation
 $$
-\bigl\lVert \mathrm{Rp}_{\tilde U}\bigl(\lambda\vec a+(1-\lambda)\vec b\bigr)-\bigl(\lambda\,\mathrm{Rp}_{\tilde U}\vec a+(1-\lambda)\mathrm{Rp}_{\tilde U}\vec b\bigr)\bigr\rVert
+\bigl\lVert \mathrm{Rp}_{\tilde U}\bigl(\digamma_{\mathrm{mix}}\vec a+(1-\digamma_{\mathrm{mix}})\vec b\bigr)-\bigl(\digamma_{\mathrm{mix}}\,\mathrm{Rp}_{\tilde U}\vec a+(1-\digamma_{\mathrm{mix}})\mathrm{Rp}_{\tilde U}\vec b\bigr)\bigr\rVert
 $$
 is $3.0\times10^{-16}$ for a rotation of $40^\circ$ and $2.9\times10^{-16}$ for one of $120^\circ$; for a boost it is $0.101822$ at rapidity $0.3$, $0.141042$ at $1$ and $0.070345$ at $2$.
 
@@ -136,15 +136,15 @@ The prohibition is not an accident of this algebra. It follows from the same lin
 
 The simplest channel that changes a radius is the mixture with the identity, and it has an exact biquaternion form. For $\lambda\in[0,1]$,
 $$
-\mathcal E_\imath(\tilde Q)=(1-\lambda)\tilde Q+\lambda\,\mathrm{Sc}(\tilde Q)\,e_t ,
+\mathcal E_\imath(\tilde Q)=(1-\digamma_{\mathrm{mix}})\tilde Q+\digamma_{\mathrm{mix}}\,\mathrm{Sc}(\tilde Q)\,e_t ,
 $$
-which on the slice reads $\vec s\mapsto(1-\lambda)\vec s$. It is affine by construction, it preserves $2\,\mathrm{Sc}$, and it fixes the centre.
+which on the slice reads $\vec s\mapsto(1-\digamma_{\mathrm{mix}})\vec s$. It is affine by construction, it preserves $2\,\mathrm{Sc}$, and it fixes the centre.
 
-It is a semigroup, and the law is exact. Composing two members gives $(1-\lambda_1)(1-\lambda_2)=1-(\lambda_1+\lambda_2-\lambda_1\lambda_2)$, which is the parameter of a third member; the numerical check returns $0.0$ and not a small residue, because the identity is algebraic.
+It is a semigroup, and the law is exact. Composing two members gives $(1-\digamma_{\mathrm{mix},1})(1-\digamma_{\mathrm{mix},2})=1-(\digamma_{\mathrm{mix},1}+\digamma_{\mathrm{mix},2}-\digamma_{\mathrm{mix},1}\digamma_{\mathrm{mix},2})$, which is the parameter of a third member; the numerical check returns $0.0$ and not a small residue, because the identity is algebraic.
 
 Its effect on the thermal parameter is a contraction and not a translation. The Gibbs family maps into itself, with
 $$
-\tanh\bigl(\beta'\lvert\vec h_\Psi\rvert\bigr)=(1-\lambda)\tanh\bigl(\beta\lvert\vec h_\Psi\rvert\bigr),
+\tanh\bigl(\beta'\lvert\vec h_\Psi\rvert\bigr)=(1-\digamma_{\mathrm{mix}})\tanh\bigl(\beta\lvert\vec h_\Psi\rvert\bigr),
 $$
 so $\beta'$ is defined for every $\beta$ and every $\lambda$, and $\beta'$ is closer to zero than $\beta$. For $\lvert\vec h_\Psi\rvert=1.7$, $\beta=1.2$ and $\lambda=0.5$ the new parameter is $\beta'=0.310222$, because $\tanh(1.2\cdot1.7)=0.966747$ becomes $0.483374$; for $\lambda=0.8$ it is $0.115185$, from $0.193349$. The map is monotone, it never crosses the centre, and it has the centre as its limit.
 
@@ -205,7 +205,7 @@ The objection is that the boost does change the temperature, so the group does a
 
 **The answer is that the clause is not enough, because the same group changes every other family too.** The action is transitive, so the translation of $\beta$ is one instance of a map that carries any state anywhere. A group that can do everything cannot be the group of a thermodynamic process, because a thermodynamic process is constrained: it preserves $2\,\mathrm{Sc}$, it respects mixtures, and it cannot increase the purity for free. Those three constraints are the channel axioms, and the translation satisfies none of them.
 
-A second objection is that the affinity test is a convention about what counts as a mixture. The answer is that a mixture is an operational notion: $\lambda\vec a+(1-\lambda)\vec b$ is the state of a system prepared by a coin flip, and any operation that treats a coin-flip preparation as a coin flip of the outcomes is affine. A non-affine map is one whose output depends on the preparation in a way no coin flip explains. The number $0.141042$ is the size of that dependence at rapidity $1$.
+A second objection is that the affinity test is a convention about what counts as a mixture. The answer is that a mixture is an operational notion: $\digamma_{\mathrm{mix}}\vec a+(1-\digamma_{\mathrm{mix}})\vec b$ is the state of a system prepared by a coin flip, and any operation that treats a coin-flip preparation as a coin flip of the outcomes is affine. A non-affine map is one whose output depends on the preparation in a way no coin flip explains. The number $0.141042$ is the size of that dependence at rapidity $1$.
 
 A third objection is that both metrics make the path a geodesic, so the metric plays no role and the article's use of it is decorative. The answer is that the metrics disagree on the only thing that matters at the boundary: the densities. A constant density puts the pure boundary at infinity; an integrable one puts it at $\pi/4$. The third law is not a statement about which curves are geodesics but about how fast the arc length accumulates, and the two metrics disagree there by the whole of the third law.
 
@@ -241,7 +241,7 @@ The channel that changes the temperature is a mixture with the identity, and its
 | $r=\tanh(\beta\lvert\vec h_\Psi\rvert)$ | the radius, the modulus of the state vector |
 | $N=\tfrac14(1-r^{2})$ | the linear entropy |
 | $\mathrm{Rp}_{\tilde U}$ | the congruence followed by normalisation |
-| $\mathcal E_\imath$ | the mixture with the identity, $\vec s\mapsto(1-\lambda)\vec s$ |
+| $\mathcal E_\imath$ | the mixture with the identity, $\vec s\mapsto(1-\digamma_{\mathrm{mix}})\vec s$ |
 | $\gamma$ | the rate of the semigroup generator |
 | $P=\tfrac12(1+r^{2})$ | the purity |
 | $d_{K}$, $d_{B}$ | the Klein and Bures distances |

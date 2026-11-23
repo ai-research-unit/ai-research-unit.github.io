@@ -38,20 +38,20 @@ $$
 Write $B^2=\vec Q\cdot\vec Q$. The two eigenvalues of the element are
 
 $$
-\lambda_\pm=Q_t\pm iB,
+\eta_{\pm}=Q_t\pm iB,
 $$
 
 and the two numbers are their sum and their product:
 
 $$
-\lambda_++\lambda_-=2\,\mathrm{Sc}\tilde Q,\qquad \lambda_+\lambda_-=\langle\tilde Q\rangle_\natural .
+\eta_{+}+\eta_{-}=2\,\mathrm{Sc}\tilde Q,\qquad \eta_{+}\eta_{-}=\langle\tilde Q\rangle_\natural .
 $$
 
 Twice the scalar part is therefore the **sum** of the spectrum and the norm is the **product**. That is all the algebra the split needs, and both identities hold on a hundred random elements to machine precision.
 
 | property | $2\,\mathrm{Sc}$ | quaternionic norm |
 | --- | --- | --- |
-| operation on the spectrum | sum $\lambda_++\lambda_-$ | product $\lambda_+\lambda_-$ |
+| operation on the spectrum | sum $\eta_{+}+\eta_{-}$ | product $\eta_{+}\eta_{-}$ |
 | linearity | $\mathbb{C}$-linear | quadratic |
 | composition | additive for a sum | multiplicative for a product |
 | behaviour under congruence | changes in general | preserved by every unit-norm rotor |
@@ -145,12 +145,12 @@ The statement is about a conjugation, so it applies to every element of the alge
 
 ### Why a Similarity Fixes Both Numbers
 
-The two numbers the algebra attaches to an element are the two symmetric functions of its spectrum. Writing $\tilde Q=Q_t e_t+\vec Q$ and $B^{2}=\vec Q\cdot\vec Q$, the eigenvalues are $\lambda_\pm=Q_t\pm iB$, and
+The two numbers the algebra attaches to an element are the two symmetric functions of its spectrum. Writing $\tilde Q=Q_t e_t+\vec Q$ and $B^{2}=\vec Q\cdot\vec Q$, the eigenvalues are $\eta_{\pm}=Q_t\pm iB$, and
 
 $$
-2\,\mathrm{Sc}\tilde Q=\lambda_++\lambda_-=2Q_t,
+2\,\mathrm{Sc}\tilde Q=\eta_{+}+\eta_{-}=2Q_t,
 \qquad
-\langle\tilde Q\rangle_\natural=\lambda_+\lambda_-=\det\mathsf M_2(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2},
+\langle\tilde Q\rangle_\natural=\eta_{+}\eta_{-}=\det\mathsf M_2(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2},
 $$
 
 checked on a hundred random elements to $4.4\times10^{-16}$ and $8.2\times10^{-15}$. A conjugation is a similarity, a similarity has the same spectrum, and the two symmetric functions are therefore fixed. The identity is not a coincidence of two formulas: it is the statement that $\tilde U\tilde X\tilde U^{*}$ and $\tilde X$ are the same operator in two bases.
@@ -373,7 +373,7 @@ Energy is the scalar part of the four-momentum, up to the factor $-ic$. The fact
 The eigenvalues make the same statement without the factor. They are
 
 $$
-\lambda_\pm=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right),
+\eta_{\pm}=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right),
 $$
 
 the two light-cone combinations. Their sum is $2iE/c$ and their difference is $2i\lvert\vec p\rvert$. Energy is the sum of the two combinations and momentum is their difference, up to the same factor.
@@ -389,7 +389,7 @@ $$
 Mass is the norm, and the mass shell is the level set of the norm. The eigenvalues are the two branches of the square root,
 
 $$
-\lambda_\pm=imc\,e^{\pm\theta_{\mathrm{rpd}}},\qquad
+\eta_{\pm}=imc\,e^{\pm\theta_{\mathrm{rpd}}},\qquad
 \cosh\theta_{\mathrm{rpd}}=\frac{E}{mc^{2}},\qquad
 \sinh\theta_{\mathrm{rpd}}=\frac{\lvert\vec p\rvert}{mc},
 $$
@@ -397,7 +397,7 @@ $$
 and their product is $-m^2c^2$. The product is frame-independent; the two factors are not, and their dependence is the Doppler rescaling. The ratio is the squared Doppler factor,
 
 $$
-\frac{\lambda_+}{\lambda_-}=e^{2\theta_{\mathrm{rpd}}}.
+\frac{\eta_{+}}{\eta_{-}}=e^{2\theta_{\mathrm{rpd}}}.
 $$
 
 This is the corpus's spectral reading of a four-vector, and the article only recalls it: mass is the product, energy the sum, momentum the difference, rapidity the ratio.

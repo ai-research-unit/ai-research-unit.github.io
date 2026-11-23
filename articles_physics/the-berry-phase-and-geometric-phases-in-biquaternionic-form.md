@@ -82,11 +82,11 @@ which is exactly the **Bloch sphere** of pure states of $\mathbb{B}_{\Psi}$. Thi
 
 The instantaneous eigenstate of $\tilde H_\Psi = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{\mathrm{id},1,2}(\vec u_R)$. It is natural to try to build the Berry connection out of it. One cannot, and the reason is worth stating as a lemma, because it is the first place the framework's two notions of "state" separate.
 
-**Lemma (the idempotent is blind to the connection).** Let $\tilde\Pi_{\mathrm{id}}(\lambda)$ be a smooth family of idempotents with $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}) = 1$. Then
+**Lemma (the idempotent is blind to the connection).** Let $\tilde\Pi_{\mathrm{id}}(\eta)$ be a smooth family of idempotents with $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}) = 1$. Then
 
 $$
 2\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{id}}\,\partial/\partial R_{\imath}\tilde\Pi_{\mathrm{id}}\right) = 0
-\qquad\text{for every parameter } \lambda_{\imath} .
+\qquad\text{for every parameter } \eta_{\imath} .
 $$
 
 **Proof.** Since $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$, differentiating gives $\partial/\partial R_{\imath}\tilde\Pi_{\mathrm{id}} = (\partial/\partial R_{\imath}\tilde\Pi_{\mathrm{id}})\tilde\Pi_{\mathrm{id}} + \tilde\Pi_{\mathrm{id}}(\partial/\partial R_{\imath}\tilde\Pi_{\mathrm{id}})$. Taking the scalar part and using cyclicity of $\mathrm{Sc}$ on $\mathbb{B}$,
@@ -158,7 +158,7 @@ This is the transformation law of an **abelian gauge connection**. It is the sam
 
 ### Why the Analogy Is Structural and Not Decorative
 
-The gauge-principle article derives its abelian connection from a precise algebraic object: the **centre** $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ of the algebra, whose $*$-unitary part is $\mathrm{U}(1) = \{\exp(i\theta_{\mathrm{cen}})\}$, with $\theta_{\mathrm{cen}}$ the real central angle. The phase $\lambda = \exp(i\theta_{\mathrm{gau}})$ it localizes is a **central $*$-unitary element**. The rephasing $\exp(i\theta_{\mathrm{gau}})$ of the eigenstate is also a central $*$-unitary element, of the same group. The two constructions therefore select the same structure group inside the same algebra,
+The gauge-principle article derives its abelian connection from a precise algebraic object: the **centre** $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ of the algebra, whose $*$-unitary part is $\mathrm{U}(1) = \{\exp(i\theta_{\mathrm{cen}})\}$, with $\theta_{\mathrm{cen}}$ the real central angle. The phase $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$ it localizes is a **central $*$-unitary element**. The rephasing $\exp(i\theta_{\mathrm{gau}})$ of the eigenstate is also a central $*$-unitary element, of the same group. The two constructions therefore select the same structure group inside the same algebra,
 
 $$
 \mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C}) \subset \mathbb{B}_{C} \subset \mathbb{B} ,
@@ -349,7 +349,7 @@ Everything above has assumed that the eigenvectors of the parameterised Hamilton
 **The setting and the classification.** Let $Ξ : B \to \operatorname{End}(V)$ be a continuous field of operators over a base space $B$, with $V$ of dimension $n$, and let $k \le n$. The object whose existence is in question is the **$k$-spectral bundle**: the bundle over $B$ whose fibre at $b$ is the $k$-dimensional eigenspace of $Ξ(b)$ for a chosen eigenvalue. Consider the intermediate spaces
 
 $$
-L_3 = \bigl\{(b,\lambda,W,v) \;:\; \lambda \text{ an eigenvalue of } Ξ(b),\; W \text{ a $k$-plane eigenspace of } \lambda,\; v \in W \bigr\},
+L_3 = \bigl\{(b,\eta,W,v) \;:\; \eta \text{ an eigenvalue of } Ξ(b),\; W \text{ a $k$-plane eigenspace of } \eta,\; v \in W \bigr\},
 $$
 
 with $L_2$ and $L_1$ the images of $L_3$ under the projections that forget $v$ and then $W$. The projections
@@ -364,17 +364,17 @@ make $\pi_z$ a $k$-plane bundle wherever it is defined, and the existence questi
 
 **The three cross-sections.** The composite splits into two, and a further one is needed for an eigenvector field, so the existence question splits into three.
 
-1. **$s_1 : B \to L_1$, a continuous eigenvalue branch.** A cross-section $s_1(b) = (b, \lambda(b))$ exists exactly when there is a continuous function $\lambda : B \to K$ whose every value is an eigenvalue of $Ξ(b)$ whose eigenspace has dimension $\ge k$. It fails when the eigenvalue branch cannot be continued — the elementary example is a field of real rotation matrices, which has no real eigenvalue at all over part of the base, or an eigenvalue crossing at which two branches exchange.
-2. **$s_2 : s_1(B) \to L_2$, a continuous choice of eigenspace.** Given the branch, $s_2(b) = (b,\lambda(b),W_b)$ is a continuous map $B \to G_\imath(V)$ into the Grassmannian of $k$-planes in $V$. It fails when the eigenvalue exists at every point but its eigenspace cannot be selected continuously — the level crossing again, seen one floor up.
+1. **$s_1 : B \to L_1$, a continuous eigenvalue branch.** A cross-section $s_1(b) = (b, \eta(b))$ exists exactly when there is a continuous function $\eta : B \to K$ whose every value is an eigenvalue of $Ξ(b)$ whose eigenspace has dimension $\ge k$. It fails when the eigenvalue branch cannot be continued — the elementary example is a field of real rotation matrices, which has no real eigenvalue at all over part of the base, or an eigenvalue crossing at which two branches exchange.
+2. **$s_2 : s_1(B) \to L_2$, a continuous choice of eigenspace.** Given the branch, $s_2(b) = (b,\eta(b),W_b)$ is a continuous map $B \to G_\imath(V)$ into the Grassmannian of $k$-planes in $V$. It fails when the eigenvalue exists at every point but its eigenspace cannot be selected continuously — the level crossing again, seen one floor up.
 3. **$s_3$, a nowhere-zero eigenvector field.** Given the first two, the spectral bundle $\pi_z$ restricts to a $k$-plane bundle over $B$, and a nowhere-zero cross-section of it is a nowhere-zero eigenvector field. Its existence is the vanishing question for that bundle, and the Chern number computed above is its invariant.
 
-So the eigenbundle of a two-band Hamiltonian over the Bloch sphere exists because all three cross-sections exist: the eigenvalues $\lambda_\pm = h_t \pm \lvert\vec h_\Psi\rvert$ are continuous and exchange only where $|\vec h_\Psi| = 0$, the eigenline can be chosen continuously on any chart, and the Chern number $C_\pm = \mp 1$ is the invariant of the last step, not of the first two. The adiabatic theorem of this article is stated under precisely the hypothesis that the three exist.
+So the eigenbundle of a two-band Hamiltonian over the Bloch sphere exists because all three cross-sections exist: the eigenvalues $\eta_{\pm} = h_t \pm \lvert\vec h_\Psi\rvert$ are continuous and exchange only where $|\vec h_\Psi| = 0$, the eigenline can be chosen continuously on any chart, and the Chern number $C_\pm = \mp 1$ is the invariant of the last step, not of the first two. The adiabatic theorem of this article is stated under precisely the hypothesis that the three exist.
 
 **Boundary.** The classification is a statement of homotopy theory, and this article records it and does not use it. What the corpus takes from it is the sharp form of the assumption it has been making: the "gap does not close along the surface" condition, used above only to make an integral well defined, is the condition that the first two cross-sections extend over the whole surface, and an obstruction at any of the three steps is a topological reason for a phase that cannot be computed. The theory's machinery — the diagram, the lifting spaces, the obstruction classes — is not imported into the algebra, and no biquaternionic statement is claimed to follow from it.
 
 ## Degenerate Levels and the Abelian Case
 
-Every phase computed so far is a single real number modulo $2\pi$. That is the **abelian** case, and it holds because the traversed level is non-degenerate: the two eigenvalues $\lambda_\pm = h_t \pm |\vec h_\Psi|$ of the Hamiltonian are distinct, the eigen-idempotents $\tilde\Pi_{\mathrm{id},1,2}(\vec u_\Psi)$ are rank one, and the adiabatic evolution acquires one phase, not a matrix of phases. The general adiabatic theorem for a degenerate level replaces the connection by a matrix-valued one-form and the phase by a $*$-unitary matrix on the degenerate subspace; that is the non-abelian, or Wilczek–Zee, case, and it is a genuinely different object.
+Every phase computed so far is a single real number modulo $2\pi$. That is the **abelian** case, and it holds because the traversed level is non-degenerate: the two eigenvalues $\eta_{\pm} = h_t \pm |\vec h_\Psi|$ of the Hamiltonian are distinct, the eigen-idempotents $\tilde\Pi_{\mathrm{id},1,2}(\vec u_\Psi)$ are rank one, and the adiabatic evolution acquires one phase, not a matrix of phases. The general adiabatic theorem for a degenerate level replaces the connection by a matrix-valued one-form and the phase by a $*$-unitary matrix on the degenerate subspace; that is the non-abelian, or Wilczek–Zee, case, and it is a genuinely different object.
 
 **Which case is available here.** For a single-qubit Hamiltonian the degeneracy condition is $h_t + |\vec h_\Psi| = h_t - |\vec h_\Psi|$, i.e. $|\vec h_\Psi| = 0$, i.e. $\vec h_\Psi = 0$. So the only degenerate Hamiltonian in $\mathbb{B}_{\Psi}$ is a multiple of the identity, $\tilde H_\Psi = h_t e_t$, for which the two levels coincide and the eigen-idempotents are not defined at all. That is the same point at which the gap closes and the adiabatic theorem fails. There is therefore **no level of multiplicity greater than one** in a single-qubit framework: degeneracy and gap closing coincide, and the abelian case is the only case. The non-abelian Berry phase requires a level of dimension greater than one separated from the rest of the spectrum, which in this framework means at least three levels, hence at least $\mathbb{B}^{\otimes n}$ for $n \geq 2$. The parent article leaves the tensor product $\mathbb{B}^{\otimes_\mathbb{C} n} \cong M_{2^n}(\mathbb{C})$ as an open question, so the non-abelian case is out of reach of the present article and is recorded as a gap rather than approximated.
 

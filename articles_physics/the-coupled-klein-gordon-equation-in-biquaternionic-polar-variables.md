@@ -108,7 +108,7 @@ and the scalar and vector potentials are the two slots of one element, so the tw
 
 ## The Gauge Transformation Is a Phase Translation
 
-**The exact infinitesimal statement.** Let $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ with $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Lambda}{h}$ and let $\tilde\Xi_2=\lambda\tilde\Xi$. Then
+**The exact infinitesimal statement.** Let $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$ with $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Lambda}{h}$ and let $\tilde\Xi_2=\digamma_{\mathrm{gau}}\tilde\Xi$. Then
 
 $$
 \tilde\Xi_2=\varrho\,e^{i(\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}})}\,

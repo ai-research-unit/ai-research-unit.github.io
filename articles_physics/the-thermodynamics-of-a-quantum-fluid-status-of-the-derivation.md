@@ -163,7 +163,7 @@ The transcriptions are 6, 13, 14 and 21 — one in the state layer and three in 
 
 4. The relaxation times and $\beta$. Whether $\tau_q$, $\tau_\pi$ and $\tau_\Pi$ are functions of the imaginary-time circumference, and in what combination, is not established. [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html) declines to speculate and says so.
 
-5. The transport coefficients from the field. $\zeta$, $\eta_{\mathrm{sh}}$ and $\kappa_{\mathrm{th}}$ are not computed from the field in the category. The two-fluid and spin articles name the mechanisms — friction, shear, spin diffusion — and not the values.
+5. The transport coefficients from the field. $\zeta$, $\digamma_{\mathrm{vis}}$ and $\kappa_{\mathrm{th}}$ are not computed from the field in the category. The two-fluid and spin articles name the mechanisms — friction, shear, spin diffusion — and not the values.
 
 6. The nodal solutions' dynamics. Existence, stability and interaction of nodal solutions are open; [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) proves the kinematic statements and leaves the dynamical ones.
 
@@ -225,7 +225,7 @@ Ten questions are open, and the ledger names them so that the next article need 
 | $v_{\mathrm{frt}}=\sqrt{D_{\mathrm{th}}/\tau_q}$ | Causal front speed |
 | $\tau_q$, $\tau_\pi$, $\tau_\Pi$ | Relaxation times |
 | $\beta_{\mathrm{vel}}=\vec v/c$, $\gamma$ | Velocity and boost factor |
-| $\zeta$, $\eta_{\mathrm{sh}}$, $\kappa_{\mathrm{th}}$ | Bulk viscosity, shear viscosity, conductivity |
+| $\zeta$, $\digamma_{\mathrm{vis}}$, $\kappa_{\mathrm{th}}$ | Bulk viscosity, shear viscosity, conductivity |
 | $k_B$ | Boltzmann's constant |
 | $\mathrm{Sc}$, $\langle\ \rangle_{\natural}$ | Scalar part, quaternionic norm |
 | $\mathbb{B}$, $\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$ | The algebra and its two sectors |

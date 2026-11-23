@@ -266,7 +266,7 @@ L_{\mathcal{C}}R_{\pm,k}[w](r_x,r'_t) := \int_0^{r'_{t}}\int_{\mathbb{R}^3} \exp
 \tag{16}
 $$
 
-with the completion rescaling $g_0 \pm \tfrac{1}{\lambda}\mathcal{V}[g_0] \in \ker(D \pm i\lambda\partial/\partial r'_t)$ whenever $g_0$ solves $(-\Delta_\Phi + \lambda^2\partial^2/\partial {r'_{t}}^2)g_0 = 0$ (its Corollary 15). The application is Maxwell's equations in a homogeneous isotropic medium in **SI units**,
+with the completion rescaling $g_0 \pm \tfrac{1}{\digamma_{\mathrm{cfm}}}\mathcal{V}[g_0] \in \ker(D \pm i\digamma_{\mathrm{cfm}}\partial/\partial r'_t)$ whenever $g_0$ solves $(-\Delta_\Phi + \digamma_{\mathrm{cfm}}^2\partial^2/\partial {r'_{t}}^2)g_0 = 0$ (its Corollary 15). The application is Maxwell's equations in a homogeneous isotropic medium in **SI units**,
 
 $$
 \mathrm{div}\,\vec{E} = \frac{\rho}{\epsilon}, \qquad

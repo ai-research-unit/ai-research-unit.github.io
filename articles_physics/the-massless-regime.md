@@ -366,10 +366,10 @@ That split is not available on the open stratum. There the scale and the directi
 The eigenvalues are distinct and one of them is zero.
 
 $$
-\lambda_{+}=\kappa=2Q_t,\qquad
-\lambda_{-}=0,\qquad
-\lambda_{+}\lambda_{-}=N=0,\qquad
-\lambda_{+}+\lambda_{-}=2Q_t .
+\eta_{+}=\kappa=2Q_t,\qquad
+\eta_{-}=0,\qquad
+\eta_{+}\eta_{-}=N=0,\qquad
+\eta_{+}+\eta_{-}=2Q_t .
 $$
 
 Distinctness is what the eigenbasis needs, and it holds. The minimal polynomial is $X(X-\kappa)$, of degree two with distinct roots, so the element is semisimple, the spectral idempotents are unique, and the spectral decomposition has two terms.
@@ -447,7 +447,7 @@ $$
 f(\tilde Q)=f(\kappa)\tilde\Pi_{\mathrm{id}}+f(0)\tilde\Pi_{\mathrm{id}}',
 $$
 
-which is the two-term writing read as an algebra homomorphism. It is the exact analogue of the open stratum's $f(\lambda_+)e_+ + f(\lambda_-)e_-$, with one of the two values fixed at zero.
+which is the two-term writing read as an algebra homomorphism. It is the exact analogue of the open stratum's $f(\eta_{+})e_+ + f(\eta_{-})e_-$, with one of the two values fixed at zero.
 
 ## The Description That Fails
 
@@ -701,8 +701,8 @@ The name for the material element is the light ray. It has a direction, an energ
 The spectrum on the material slice is $\{2iE/c,\,0\}$.
 
 $$
-\lambda_{+}=2i\frac{E}{c},\qquad
-\lambda_{-}=0,\qquad
+\eta_{+}=2i\frac{E}{c},\qquad
+\eta_{-}=0,\qquad
 \tilde P_\Phi=2i\frac{E}{c}\,\tilde\Pi_{\mathrm{id}} .
 $$
 

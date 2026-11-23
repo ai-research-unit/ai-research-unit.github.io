@@ -104,10 +104,10 @@ with equality if and only if the state is pure.
 Every density matrix has a spectral decomposition:
 
 $$
-\rho = \sum_i \lambda_i\, |i\rangle\langle i|,
+\rho = \sum_i \eta_i\, |i\rangle\langle i|,
 $$
 
-where $\lambda_i \geq 0$, $\sum_i \lambda_i = 1$, and $\{|i\rangle\}$ is an orthonormal basis of eigenvectors. The eigenvalues $\lambda_i$ are the **probabilities** of finding the system in the corresponding eigenstate $|i\rangle$ when a measurement in that basis is performed.
+where $\eta_i \geq 0$, $\sum_i \eta_i = 1$, and $\{|i\rangle\}$ is an orthonormal basis of eigenvectors. The eigenvalues $\eta_i$ are the **probabilities** of finding the system in the corresponding eigenstate $|i\rangle$ when a measurement in that basis is performed.
 
 ## Observables
 

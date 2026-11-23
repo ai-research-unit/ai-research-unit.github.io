@@ -168,10 +168,10 @@ $$
 \mathrm{Sc}\left(\tilde{Ϛ}_{\Psi}(r'_t)^2 - \tilde{Ϛ}_{\Psi}(r'_t)\right) = \tfrac14\left(|\vec s_{\Psi}(r'_t)|^2 - 1\right),
 $$
 
-descends from $0$ to $\tfrac14(s_\parallel^2 - 1) \leq 0$. The spectrum $\lambda_\pm = \tfrac12(1 \pm |\vec s_{\Psi}(r'_t)|)$ widens from the pure pair $(1,0)$, and the von Neumann entropy
+descends from $0$ to $\tfrac14(s_\parallel^2 - 1) \leq 0$. The spectrum $\eta_{\pm} = \tfrac12(1 \pm |\vec s_{\Psi}(r'_t)|)$ widens from the pure pair $(1,0)$, and the von Neumann entropy
 
 $$
-S(\tilde{Ϛ}_{\Psi}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-,
+S(\tilde{Ϛ}_{\Psi}) = -\eta_{+}\log\eta_{+} - \eta_{-}\log\eta_{-},
 $$
 
 which is a decreasing function of $|\vec s_{\Psi}|$, increases strictly for any state with $s_\perp \neq 0$.
@@ -343,7 +343,7 @@ One many-qubit case belongs here because a source overstates it. The singlet $\l
 | $\alpha\otimes e_t+e_t\otimes\alpha$ | Collective dephasing generator (total spin) |
 | $\lvert\tilde{Ξ}^-\rangle = \tfrac{1}{\sqrt2}(\lvert01\rangle-\lvert10\rangle)$ | Singlet; decoherence-free for collective dephasing |
 | $A = \mathbb{C}\tilde\Pi_{\mathrm{id},1} \oplus \mathbb{C}\tilde\Pi_{\mathrm{id},2}$ | Pointer (commutative) subalgebra |
-| $S(\tilde{Ϛ}_{\Psi}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$ | Von Neumann entropy, $\lambda_\pm = \tfrac12(1\pm|\vec s_{\Psi}|)$ |
+| $S(\tilde{Ϛ}_{\Psi}) = -\eta_{+}\log\eta_{+} - \eta_{-}\log\eta_{-}$ | Von Neumann entropy, $\eta_{\pm} = \tfrac12(1\pm|\vec s_{\Psi}|)$ |
 | $Ξ(\tilde{Ϛ}_{\Psi}) = \sum_l \tilde M_{\mathrm{kraus},l}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},l}^{*}$ | Kraus representation of a channel |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

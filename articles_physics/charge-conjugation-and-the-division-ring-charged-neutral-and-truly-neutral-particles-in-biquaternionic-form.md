@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Charge conjugation is the discrete operation that exchanges a particle with its antiparticle. On the biquaternion algebra it is written on the element, $Q^{\mathrm c}=-e_y\bar Qe_y$: the coefficient conjugation, followed by a two-sided product by a fixed product of invertibles. The companion article *The CPT Theorem in Biquaternionic Form* builds the same operation and finds that its internal factor is the single spatial unit $-e_y$, which is anti-Hermitian, so it lies in the material sector $\mathbb{B}_{\Phi}$ and not in the Hermitian one $\mathbb{B}_{\Psi}$. The present article asks the question that computation cannot answer: **when is $C$ trivial?** A symmetry that acts as the identity on the algebra exchanges nothing there; the class of particles on which charge conjugation acts trivially has a name — the **truly neutral** particles — and a place in physics: the photon, the $Z$ boson, and the neutral mesons $\pi^0$, $\eta$ and the phi meson.
+Charge conjugation is the discrete operation that exchanges a particle with its antiparticle. On the biquaternion algebra it is written on the element, $Q^{\mathrm c}=-e_y\bar Qe_y$: the coefficient conjugation, followed by a two-sided product by a fixed product of invertibles. The companion article *The CPT Theorem in Biquaternionic Form* builds the same operation and finds that its internal factor is the single spatial unit $-e_y$, which is anti-Hermitian, so it lies in the material sector $\mathbb{B}_{\Phi}$ and not in the Hermitian one $\mathbb{B}_{\Psi}$. The present article asks the question that computation cannot answer: **when is $C$ trivial?** A symmetry that acts as the identity on the algebra exchanges nothing there; the class of particles on which charge conjugation acts trivially has a name — the **truly neutral** particles — and a place in physics: the photon, the $Z$ boson, and the neutral mesons $\pi^0$, $\digamma_{\mathrm{mes}}$ and the phi meson.
 
 The classification of the algebra literature answers the question with a single algebraic datum. The field of the article is valued in a module, and a module has a **division ring** of scalars, which is $\mathbb{R}$, $\mathbb{H}$ or $\mathbb{C}$ and nothing else. Over a real division ring the fixed product that implements the conjugation is central, so the conjugation reduces to the coefficient conjugation and exchanges no two states. Over a quaternionic division ring it is a genuine product of invertibles and exchanges an element with a distinct partner; over the complex one it relates the module to its conjugate. The division ring, in other words, is what decides whether a particle can be its own antiparticle. (The literature writes the operation with a star on the element; here the star is reserved for the Hermitian conjugation of the corpus, and the bar is the coefficient conjugation.)
 
@@ -81,7 +81,7 @@ The classification is a theorem of the algebra literature and is transcribed her
 
 ### The Three Cases
 
-**Real division ring.** The scalars are $\mathbb{R}$. The fixed product is central and the conjugation is the coefficient conjugation, so every element of the real form is its own conjugate. The particles are their own antiparticles in the strongest sense — not a neutral particle equal to its conjugate, but a particle on which the conjugation exchanges nothing. A real form may still carry the sign $-1$; for a boson that sign is the charge-conjugation parity, $-1$ for the photon and the phi meson and $+1$ for the $\pi^0$ and the $\eta$, and it does not make the antiparticle a distinct state.
+**Real division ring.** The scalars are $\mathbb{R}$. The fixed product is central and the conjugation is the coefficient conjugation, so every element of the real form is its own conjugate. The particles are their own antiparticles in the strongest sense — not a neutral particle equal to its conjugate, but a particle on which the conjugation exchanges nothing. A real form may still carry the sign $-1$; for a boson that sign is the charge-conjugation parity, $-1$ for the photon and the phi meson and $+1$ for the $\pi^0$ and the $\digamma_{\mathrm{mes}}$, and it does not make the antiparticle a distinct state.
 
 **Quaternionic division ring.** The scalars are $\mathbb{H}$. The fixed product is a product of invertibles and is not central. The conjugation acts inside the real form and exchanges an element with a distinct one: the state is its own conjugate only up to a distinct partner. This is the neutral case.
 
@@ -107,7 +107,7 @@ The physics uses the trichotomy, not the other way round. Three classes of parti
 
 **Neutral particles.** Neutron, neutrino, the neutral kaon $K^0$: a charge state $Ϙ=0$ but a non-vanishing field. The particle is neutral — the conjugation carries it to a state of the same charge, $Ϙ=0$ — but that state is still distinct from it, and it has its own name, the antiparticle. This is the case of the quaternionic division ring.
 
-**Truly neutral particles.** Photon, $Z$ boson, $\pi^0$, $\eta$ and the phi meson: a charge state $Ϙ=0$ and a field that is its own antiparticle at the level of states, not only of charges. The diagram $Z$ decays to an electron-positron pair, so its fields couple to charge, and its self-conjugacy is not the statement that it carries no charge; it is the statement that the conjugation is trivial on the module that carries it. This is the case of the real division ring.
+**Truly neutral particles.** Photon, $Z$ boson, $\pi^0$, $\digamma_{\mathrm{mes}}$ and the phi meson: a charge state $Ϙ=0$ and a field that is its own antiparticle at the level of states, not only of charges. The diagram $Z$ decays to an electron-positron pair, so its fields couple to charge, and its self-conjugacy is not the statement that it carries no charge; it is the statement that the conjugation is trivial on the module that carries it. This is the case of the real division ring.
 
 ### The Dictionary
 
@@ -217,13 +217,13 @@ $$
 The first and the last collapse to one-sided multipliers, $\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$, because $L_{\mathrm{pau},e_t}$ is the identity. The charge-conjugation basis operator of the article is the same frame read in the spatial direction:
 
 $$
-\eta_C=-L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}=i\gamma_2,
+\varsigma_{\mathrm{cjg}}=-L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}=i\gamma_2,
 $$
 
 In the axis-free display:
 
 $$
-\eta_C=-L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}=i\gamma_2,
+\varsigma_{\mathrm{cjg}}=-L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}=i\gamma_2,
 $$
 
 and the chirality basis operator is:
@@ -275,7 +275,7 @@ No identity in this list is used in the body of the article. They are recorded s
 
 Charge conjugation is the conjugate-linear map $Q^{\mathrm c}=-e_y\bar Qe_y$ of the biquaternion algebra: the coefficient conjugation, followed by the two-sided product by a fixed product of invertibles. It preserves products and reverses the scalar. The multiplier alone, $-e_yQe_y$, reverses the value; the coefficient conjugation reverses it as well, so the conjugation keeps it; and the conjugation is an involution. The one-sided form is the right multiplication by $e_x$, whose square is $-e_t$, that is, minus the argument; the sign of that square is the square of the unit, not a property of the division ring.
 
-The three charge classes are the three division rings of the module. Over $\mathbb{R}$ the fixed product is central, the conjugation is the coefficient conjugation, and no element of the module moves: the truly neutral particles, at $Ϙ=\bar0$, with the parity $-1$ for the photon and the phi meson and $+1$ for the $\pi^0$ and the $\eta$. Over $\mathbb{H}$ the fixed product is not central and an element is carried to a distinct partner: the neutral particles, at $Ϙ=0$, the neutron among them. Over $\mathbb{C}$ the conjugation relates the module to its conjugate: the charged particles, at $Ϙ=\pm1$.
+The three charge classes are the three division rings of the module. Over $\mathbb{R}$ the fixed product is central, the conjugation is the coefficient conjugation, and no element of the module moves: the truly neutral particles, at $Ϙ=\bar0$, with the parity $-1$ for the photon and the phi meson and $+1$ for the $\pi^0$ and the $\digamma_{\mathrm{mes}}$. Over $\mathbb{H}$ the fixed product is not central and an element is carried to a distinct partner: the neutral particles, at $Ϙ=0$, the neutron among them. Over $\mathbb{C}$ the conjugation relates the module to its conjugate: the charged particles, at $Ϙ=\pm1$.
 
 The biquaternion algebra read over $\mathbb{C}$ has $\mathbb{C}$ for scalars, so its division ring is $\mathbb{C}$: the charged case, by the table itself. Its two real subalgebras of real dimension four carry the other two cases: the real-coefficient subspace $\mathbb{B}_{H}\cong\mathbb{H}$ is the fixed set of the coefficient conjugation and carries the neutral case, and the fixed set of the charge conjugation is a real subalgebra of real type and carries the truly neutral case. The division ring therefore places the three classes in one algebra: the photon's self-conjugacy is the case of the real ring, the neutron's neutrality the case of the quaternionic one, and the charged fields are the complex algebra itself. What is transcribed is the classification and the physical assignments; what is recomputed here is the conjugation on the element, its two squares, and the two fixed sets.
 

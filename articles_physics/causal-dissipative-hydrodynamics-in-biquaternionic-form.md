@@ -7,7 +7,7 @@ The first-order theory of [The Local Entropy Current](the-local-entropy-current.
 $$
 \tau_{\Pi}\,\frac{d\Pi}{d\tau}+\Pi=-\zeta\,\theta,
 \qquad
-\tau_{\pi}\,\frac{d\pi_{k\jmath}}{d\tau}+\pi_{k\jmath}=-2\eta_{\mathrm{sh}}\,\sigma^{\mathrm{sh}}_{k\jmath},
+\tau_{\pi}\,\frac{d\pi_{k\jmath}}{d\tau}+\pi_{k\jmath}=-2\digamma_{\mathrm{vis}}\,\sigma^{\mathrm{sh}}_{k\jmath},
 \qquad
 \tau_{q}\,\frac{dq_{\imath}}{d\tau}+q_{\imath}=-\kappa_{\mathrm{th}}\,\partial_\imath T ,
 $$
@@ -34,7 +34,7 @@ the diffusion equation, whose solutions spread a disturbance over all space in a
 
 The consequence, stated as the standard objection. A localized initial disturbance has, at any $t>0$, a non-zero value at every point; so the theory permits a signal to travel at unbounded speed, which contradicts the framework's own causal structure — the light cone of the metric $\delta_{\imath\jmath}$. The contradiction is not a matter of interpretation and does not depend on the corpus's letters: it is visible in the diffusion equation.
 
-The same objection in the shear channel. The algebraic relation $\pi_{k\jmath}=-2\eta_{\mathrm{sh}}\sigma^{\mathrm{sh}}_{k\jmath}$ combined with momentum conservation gives a parabolic equation for the velocity, so a shear disturbance also travels at unbounded speed. The bulk channel is parabolic for the same reason. Three channels, one defect.
+The same objection in the shear channel. The algebraic relation $\pi_{k\jmath}=-2\digamma_{\mathrm{vis}}\sigma^{\mathrm{sh}}_{k\jmath}$ combined with momentum conservation gives a parabolic equation for the velocity, so a shear disturbance also travels at unbounded speed. The bulk channel is parabolic for the same reason. Three channels, one defect.
 
 ### The instability
 
@@ -53,7 +53,7 @@ Each dissipative flux gains a relaxation time and an inertial term, and the alge
 $$
 \tau_{\Pi}\,\frac{d\Pi}{d\tau}+\Pi=-\zeta\,\theta,
 \qquad
-\tau_{\pi}\,\frac{d\pi_{k\jmath}}{d\tau}+\pi_{k\jmath}=-2\eta_{\mathrm{sh}}\,\sigma^{\mathrm{sh}}_{k\jmath},
+\tau_{\pi}\,\frac{d\pi_{k\jmath}}{d\tau}+\pi_{k\jmath}=-2\digamma_{\mathrm{vis}}\,\sigma^{\mathrm{sh}}_{k\jmath},
 \qquad
 \tau_{q}\,\frac{dq_{\imath}}{d\tau}+q_{\imath}=-\kappa_{\mathrm{th}}\,\partial_\imath T ,
 $$
@@ -66,7 +66,7 @@ The limit in which the old theory is recovered. As $\tau_{\Pi},\tau_{\pi},\tau_{
 
 ### What the correction changes and what it does not
 
-Changes: the number of transport coefficients. A causal theory has six where the first-order theory has three — $\zeta$, $\eta_{\mathrm{sh}}$, $\kappa_{\mathrm{th}}$ and their three relaxation times. A model with fewer is first-order in disguise.
+Changes: the number of transport coefficients. A causal theory has six where the first-order theory has three — $\zeta$, $\digamma_{\mathrm{vis}}$, $\kappa_{\mathrm{th}}$ and their three relaxation times. A model with fewer is first-order in disguise.
 
 Changes: the order of the equations. The system is now second order in time for the fluxes, so it needs initial data for the fluxes and not only for the conserved densities. That is the price of causality and it is not optional: a hyperbolic system needs more data than a parabolic one.
 
@@ -156,12 +156,12 @@ What the numbers establish and what they do not. They establish that the relaxat
 The same structure holds in the other two channels with the kinematic viscosities in place of the diffusivity.
 
 $$
-v_{\mathrm{frt,sh}}=\sqrt{\frac{\eta_{\mathrm{sh}}}{m\,\rho_{\mathrm{num}}\,\tau_{\pi}}},
+v_{\mathrm{frt,sh}}=\sqrt{\frac{\digamma_{\mathrm{vis}}}{m\,\rho_{\mathrm{num}}\,\tau_{\pi}}},
 \qquad
 v_{\mathrm{frt,bk}}=\sqrt{\frac{\zeta}{m\,\rho_{\mathrm{num}}\,\tau_{\Pi}}},
 $$
 
-with the mass $m$ in the denominator, and it is not decoration. A viscosity over a density is a kinematic viscosity only when the density is a *mass* density; $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ is a number density, as the pressure of [The Equation of State in Biquaternion Form](the-equation-of-state-in-biquaternion-form.html) makes plain — $p_{\mathrm{qnt}}\sim(\frac{h^{2}}{4\pi^{2}}/m)(\rho_{\mathrm{num}}/L^{2})$ is a pressure only if $\rho_{\mathrm{num}}$ carries $1/\mathrm{length}^{3}$ — so for the scalar-rung fluid of this article, where the scalar bilinear equals the proper density, the mass density is $m\rho_{\mathrm{num}}$ and the kinematic viscosity is $\eta_{\mathrm{sh}}/(m\rho_{\mathrm{num}})$; for a spinor superposition the mass density is $m\rho_{\mathrm{num}}\cos\theta$ of the Takabayasi article, and the two displays above carry that factor in place of $m\rho_{\mathrm{num}}$. A reader who drops the $m$ gets a front speed in units of $\sqrt{\mathrm{kg}}\,\mathrm{m/s}$ and will not notice it in a table of pure numbers. The heat channel needs no such factor because $D_{\mathrm{th}}=\kappa_{\mathrm{th}}/c_{V}$ is already a diffusivity, the heat capacity being per unit volume.
+with the mass $m$ in the denominator, and it is not decoration. A viscosity over a density is a kinematic viscosity only when the density is a *mass* density; $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ is a number density, as the pressure of [The Equation of State in Biquaternion Form](the-equation-of-state-in-biquaternion-form.html) makes plain — $p_{\mathrm{qnt}}\sim(\frac{h^{2}}{4\pi^{2}}/m)(\rho_{\mathrm{num}}/L^{2})$ is a pressure only if $\rho_{\mathrm{num}}$ carries $1/\mathrm{length}^{3}$ — so for the scalar-rung fluid of this article, where the scalar bilinear equals the proper density, the mass density is $m\rho_{\mathrm{num}}$ and the kinematic viscosity is $\digamma_{\mathrm{vis}}/(m\rho_{\mathrm{num}})$; for a spinor superposition the mass density is $m\rho_{\mathrm{num}}\cos\theta$ of the Takabayasi article, and the two displays above carry that factor in place of $m\rho_{\mathrm{num}}$. A reader who drops the $m$ gets a front speed in units of $\sqrt{\mathrm{kg}}\,\mathrm{m/s}$ and will not notice it in a table of pure numbers. The heat channel needs no such factor because $D_{\mathrm{th}}=\kappa_{\mathrm{th}}/c_{V}$ is already a diffusivity, the heat capacity being per unit volume.
 
 So each channel has its own causality condition and the theory is causal only if all three hold. The article writes the three because a single satisfied channel is the commonest way a causal claim is made falsely.
 
@@ -174,7 +174,7 @@ The combined condition, in one line. With $v_{\mathrm{snd}}$ the sound speed, th
 The equilibrium is stable when the energy's second variation is a positive definite quadratic form in the dissipative fluxes, and the causal theory's form is the first-order one divided by the relaxation times.
 
 $$
-\delta^{2}w_{\mathrm{fl}}=\frac{\Pi^{2}}{2\zeta\tau_{\Pi}}+\frac{\pi_{k\jmath}\pi_{k\jmath}}{4\eta_{\mathrm{sh}}\tau_{\pi}}+\frac{q_{\imath}q_{\imath}}{2\kappa_{\mathrm{th}}\tau_{q}} ,
+\delta^{2}w_{\mathrm{fl}}=\frac{\Pi^{2}}{2\zeta\tau_{\Pi}}+\frac{\pi_{k\jmath}\pi_{k\jmath}}{4\digamma_{\mathrm{vis}}\tau_{\pi}}+\frac{q_{\imath}q_{\imath}}{2\kappa_{\mathrm{th}}\tau_{q}} ,
 $$
 
 the standard Israel–Stewart result, quoted with every index low. Each term is a square divided by a positive coefficient and a positive relaxation time, so the form is positive definite exactly when the six coefficients are positive — the three transport coefficients and the three relaxation times.
@@ -205,11 +205,11 @@ Interpretation, and there is none in this article beyond the transcription. The 
 
 ## Summary
 
-The first-order theory's three algebraic relations make the shear, bulk and heat channels parabolic, so a signal travels unboundedly fast and the equilibrium is unstable against short wavelengths. The Israel–Stewart corrections replace them by three relaxation equations, $\tau_{\Pi}\dot\Pi+\Pi=-\zeta\theta$, $\tau_{\pi}\dot\pi_{k\jmath}+\pi_{k\jmath}=-2\eta_{\mathrm{sh}}\sigma^{\mathrm{sh}}_{k\jmath}$ and $\tau_{q}\dot q_{\imath}+q_{\imath}=-\kappa_{\mathrm{th}}\partial_\imath T$, with six coefficients instead of three and a system that is second order in time for the fluxes.
+The first-order theory's three algebraic relations make the shear, bulk and heat channels parabolic, so a signal travels unboundedly fast and the equilibrium is unstable against short wavelengths. The Israel–Stewart corrections replace them by three relaxation equations, $\tau_{\Pi}\dot\Pi+\Pi=-\zeta\theta$, $\tau_{\pi}\dot\pi_{k\jmath}+\pi_{k\jmath}=-2\digamma_{\mathrm{vis}}\sigma^{\mathrm{sh}}_{k\jmath}$ and $\tau_{q}\dot q_{\imath}+q_{\imath}=-\kappa_{\mathrm{th}}\partial_\imath T$, with six coefficients instead of three and a system that is second order in time for the fluxes.
 
 The dispersion relation $\omega^{2}+(i/\tau_q)\omega-(D_{\mathrm{th}}/\tau_q)k^{2}=0$ gives two over-damped modes when $D_{\mathrm{th}}k^{2}\tau_q<\tfrac14$ and two propagating ones above it, with the asymptotic front speed $v_{\mathrm{frt}}=\sqrt{D_{\mathrm{th}}/\tau_q}$. Evaluated: $0.4472\,c$ for $(0.1,0.5)$ and $(0.2,1.0)$, $c$ exactly for $(0.5,0.5)$ and $1.4142\,c$ for $(1.0,0.5)$, so the causality condition $D_{\mathrm{th}}\le\tau_qc^{2}$ is a real constraint. At $k=2\,\mathrm{fm}^{-1}$ with $D_{\mathrm{th}}/c=0.2\,\mathrm{fm}$ and $\tau_q=1\,\mathrm{fm}/c$ the root is $0.741\,620-0.500\,000\,i$, a phase speed of $0.370\,810\,c$; at $D_{\mathrm{th}}/c=0.05\,\mathrm{fm}$ the roots are $-0.276\,393\,i$ and $-0.723\,607\,i$ and the mode is over-damped, with the threshold at $D_{\mathrm{th}}/c=0.062\,500\,\mathrm{fm}$.
 
-The equilibrium is stable when the energy's second variation, $\delta^{2}w_{\mathrm{fl}}=\Pi^{2}/(2\zeta\tau_{\Pi})+\pi_{k\jmath}\pi_{k\jmath}/(4\eta_{\mathrm{sh}}\tau_{\pi})+q_{\imath}q_{\imath}/(2\kappa_{\mathrm{th}}\tau_{q})$, is positive definite — evaluated once at $\Pi=0.05$, $\pi=0.1$, $q=0.02$ with $\zeta=0.1$, $\eta_{\mathrm{sh}}=0.2$, $\kappa_{\mathrm{th}}=0.05$ and all three relaxation times $1$, $1$ and $0.5$, the three terms are $0.012\,500$, $0.012\,500$ and $0.008\,000$ for a total of $0.033\,000$. The form is real by the Hermiticity declaration of [The Local Entropy Current](the-local-entropy-current.html), which this article inherits and does not repeat.
+The equilibrium is stable when the energy's second variation, $\delta^{2}w_{\mathrm{fl}}=\Pi^{2}/(2\zeta\tau_{\Pi})+\pi_{k\jmath}\pi_{k\jmath}/(4\digamma_{\mathrm{vis}}\tau_{\pi})+q_{\imath}q_{\imath}/(2\kappa_{\mathrm{th}}\tau_{q})$, is positive definite — evaluated once at $\Pi=0.05$, $\pi=0.1$, $q=0.02$ with $\zeta=0.1$, $\digamma_{\mathrm{vis}}=0.2$, $\kappa_{\mathrm{th}}=0.05$ and all three relaxation times $1$, $1$ and $0.5$, the three terms are $0.012\,500$, $0.012\,500$ and $0.008\,000$ for a total of $0.033\,000$. The form is real by the Hermiticity declaration of [The Local Entropy Current](the-local-entropy-current.html), which this article inherits and does not repeat.
 
 **This is standard Israel–Stewart-type causal hydrodynamics in the corpus's letters, with no framework interpretation.**
 
@@ -221,7 +221,7 @@ The equilibrium is stable when the energy's second variation, $\delta^{2}w_{\mat
 | $\pi_{k\jmath}$ | Shear stress, indices low |
 | $q_{\imath}$ | Heat flux |
 | $\tau_{\Pi}$, $\tau_{\pi}$, $\tau_{q}$ | Relaxation times |
-| $\zeta$, $\eta_{\mathrm{sh}}$, $\kappa_{\mathrm{th}}$ | Bulk viscosity, shear viscosity, conductivity |
+| $\zeta$, $\digamma_{\mathrm{vis}}$, $\kappa_{\mathrm{th}}$ | Bulk viscosity, shear viscosity, conductivity |
 | $\theta=\partial_{\imath} v_{\Phi,\imath}$ | Expansion, the divergence of the flow |
 | $d/d\tau=v_{\Phi,\imath}\partial_{\imath}$ | Comoving derivative along the flow |
 | $\sigma^{\mathrm{sh}}_{k\jmath}$ | Shear of the flow |

@@ -118,11 +118,11 @@ and the finite distance along a path is the integral of $ds$. The metric is inva
 The state carries a natural classical distribution: its two eigenvalues in its own basis. Write $\vec u_s = \vec s_{\Psi}/|\vec s_{\Psi}|$ for a state with $\vec s_{\Psi}\neq0$ and let $\tilde\Pi_{\mathrm{id},1,2}(\vec u_s)$ be the corresponding idempotents, so that
 
 $$
-\tilde{Ϛ}_{\Psi} = \lambda_+\tilde\Pi_{\mathrm{id},1}(\vec u_s) + \lambda_-\tilde\Pi_{\mathrm{id},2}(\vec u_s), \qquad
-\lambda_\pm = \tfrac{1}{2}\left(1\pm|\vec s_{\Psi}|\right).
+\tilde{Ϛ}_{\Psi} = \eta_{+}\tilde\Pi_{\mathrm{id},1}(\vec u_s) + \eta_{-}\tilde\Pi_{\mathrm{id},2}(\vec u_s), \qquad
+\eta_{\pm} = \tfrac{1}{2}\left(1\pm|\vec s_{\Psi}|\right).
 $$
 
-The pair $(\lambda_+,\lambda_-)$ is a classical two-outcome distribution; it is what a measurement in the eigenbasis of the state reports. Consider the one-parameter family obtained by varying the Bloch radius at fixed direction, so that the parameter is $r = |\vec s_{\Psi}|$ and
+The pair $(\eta_{+},\eta_{-})$ is a classical two-outcome distribution; it is what a measurement in the eigenbasis of the state reports. Consider the one-parameter family obtained by varying the Bloch radius at fixed direction, so that the parameter is $r = |\vec s_{\Psi}|$ and
 
 $$
 p_\pm(r) = \tfrac{1}{2}(1\pm r), \qquad \partial/\partial s p_\pm = \pm\tfrac{1}{2} .
@@ -132,11 +132,11 @@ The Fisher information of this **spectral family** is
 
 $$
 F_s(s) = \frac{(\partial/\partial s p_+)^2}{p_+} + \frac{(\partial/\partial s p_-)^2}{p_-}
-= \frac{1}{4}\left(\frac{1}{\lambda_+}+\frac{1}{\lambda_-}\right)
-= \frac{1}{4\,\lambda_+\lambda_-} .
+= \frac{1}{4}\left(\frac{1}{\eta_{+}}+\frac{1}{\eta_{-}}\right)
+= \frac{1}{4\,\eta_{+}\eta_{-}} .
 $$
 
-Since $\lambda_+\lambda_- = \tfrac{1}{4}(1-s^2)$, this collapses to
+Since $\eta_{+}\eta_{-} = \tfrac{1}{4}(1-s^2)$, this collapses to
 
 $$
 \boxed{\;F_s(s) = \frac{1}{1-s^2} = \frac{1}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}\;}.
@@ -221,7 +221,7 @@ $$
 For the radial spectral family the divergence is
 
 $$
-D(r\,\|\,r_0) = \lambda_+(r)\log\frac{\lambda_+(r)}{\lambda_+(r_0)} + \lambda_-(r)\log\frac{\lambda_-(r)}{\lambda_-(r_0)},
+D(r\,\|\,r_0) = \eta_{+}(r)\log\frac{\eta_{+}(r)}{\eta_{+}(r_0)} + \eta_{-}(r)\log\frac{\eta_{-}(r)}{\eta_{-}(r_0)},
 $$
 
 and its second derivative at $r = r_0$ is $1/(1-r_0^2)$. The identity was verified numerically at $r_0 = 0.4$: a central second difference of the divergence at step $10^{-4}$ returns $1.1904761946$ against the exact $1/(1-0.16) = 1.1904761905$, an agreement to seven figures. So the reciprocity is not an accident of the two-outcome formula; it is the statement that the biquaternion norm of the state is the inverse of the curvature of the sector's relative entropy.
@@ -273,7 +273,7 @@ The bound also explains the rank-one degeneracy of the classical metric from the
 
 ## What Is Derived and What Is Imported
 
-**Derived from the algebra.** The biquaternion norm of a difference, $\langle\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2}\rangle_{\natural} = -\tfrac{1}{4}|\vec s_{\Psi}-\vec s|^2 e_t$, and its equivalence with the trace-pairing distance; the spectral decomposition of the state and the eigenvalue pair $(\lambda_+,\lambda_-)$; the Fisher information of the spectral family, $F_s = 1/(1-s^2)$; the identification of that denominator with the biquaternion-norm defect, $F_s = 1/(4\,\mathrm{Sc}\,\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural})$; the rank-one information metric $g_{ij} = \vec{u_s}_i\vec{u_s}_j/(1-s^2)$; the general measurement formula; and the Fisher–Rao distance $\arcsin s$ with the finite boundary distance $\pi/2$. All of these are worked out in the basis and, where numerical, checked on the interior superposition $\tfrac{1}{2}(\tilde\Pi_{\mathrm{id},1}(\vec e_x)+\tilde\Pi_{\mathrm{id},1}(\vec e_y))$ rather than on a pure state.
+**Derived from the algebra.** The biquaternion norm of a difference, $\langle\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2}\rangle_{\natural} = -\tfrac{1}{4}|\vec s_{\Psi}-\vec s|^2 e_t$, and its equivalence with the trace-pairing distance; the spectral decomposition of the state and the eigenvalue pair $(\eta_{+},\eta_{-})$; the Fisher information of the spectral family, $F_s = 1/(1-s^2)$; the identification of that denominator with the biquaternion-norm defect, $F_s = 1/(4\,\mathrm{Sc}\,\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural})$; the rank-one information metric $g_{ij} = \vec{u_s}_i\vec{u_s}_j/(1-s^2)$; the general measurement formula; and the Fisher–Rao distance $\arcsin s$ with the finite boundary distance $\pi/2$. All of these are worked out in the basis and, where numerical, checked on the interior superposition $\tfrac{1}{2}(\tilde\Pi_{\mathrm{id},1}(\vec e_x)+\tilde\Pi_{\mathrm{id},1}(\vec e_y))$ rather than on a pure state.
 
 **Imported from standard mathematics and physics.** The definition of the classical Fisher information and its reparametrisation invariance; the Cramér–Rao bound; the theorem that the Fisher information is the Hessian of the relative entropy; the Braunstein–Caves bound and the formula for the quantum Fisher information of a pure-state family, with the symmetric-logarithmic-derivative normalization $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}L^2)$ and the factor of four that relates it to the Bures metric of the standard geometry; and the Bures and Fubini–Study metrics. Each is transcribed as standard.
 
@@ -283,7 +283,7 @@ The bound also explains the rank-one degeneracy of the classical metric from the
 
 A state of the informational sector is $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t+i\vec s_{\Psi})$, $|\vec s_{\Psi}|\le1$, with biquaternion norm $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}(1-|\vec s_{\Psi}|^2)e_t$. The biquaternion norm of a difference of states is a negative multiple of the squared Euclidean distance, $\langle\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2}\rangle_{\natural} = -\tfrac{1}{4}|\vec s_{\Psi}-\vec s|^2 e_t$, so the same quadratic form supplies the sector's metric.
 
-The **Fisher information of the spectral family** — the classical two-outcome distribution formed by the state's eigenvalues $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec s_{\Psi}|)$ — is
+The **Fisher information of the spectral family** — the classical two-outcome distribution formed by the state's eigenvalues $\eta_{\pm} = \tfrac{1}{2}(1\pm|\vec s_{\Psi}|)$ — is
 
 $$
 \boxed{\;F_s = \frac{1}{1-|\vec s_{\Psi}|^2} = \frac{1}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}\;},
@@ -317,7 +317,7 @@ The classical metric is the radial shadow of the full quantum Fisher information
 | $\tfrac{1}{4}(1-|\vec s_{\Psi}|^2)$ | Biquaternion-norm defect |
 | $\langle\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2}\rangle_{\natural} = -\tfrac{1}{4}|\vec s_{\Psi}-\vec s|^2 e_t$ | Biquaternion norm of a difference (metric) |
 | $2\,\mathrm{Sc}((\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2})^2) = \tfrac{1}{2}|\vec s_{\Psi}-\vec s|^2$ | Hilbert–Schmidt distance |
-| $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec s_{\Psi}|)$ | Spectral (pointer) probabilities |
+| $\eta_{\pm} = \tfrac{1}{2}(1\pm|\vec s_{\Psi}|)$ | Spectral (pointer) probabilities |
 | $\vec u_s = \vec s_{\Psi}/|\vec s_{\Psi}|$ | Bloch direction |
 | $F(\vartheta_{\mathrm{stt}}) = \sum_x (\partial/\partial\vartheta_{\mathrm{stt}} p)^2/p$ | Classical Fisher information |
 | $g_{ij}(\vec\vartheta_{\mathrm{stt}})$ | Fisher information matrix (metric) |

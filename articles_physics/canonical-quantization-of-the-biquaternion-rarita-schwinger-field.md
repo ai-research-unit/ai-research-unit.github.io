@@ -26,7 +26,7 @@ The article is organized as follows. The field and its frame are fixed first, an
 ## The Field, Its Constraint, and Transversality
 
 ### The Field and Its Frame Operators
-The field is a vector-spinor: four components $\tilde{Ξ}_{\imath}$, each an element of $\mathbb{B}$. The vector index is carried by the **frame basis operators** of *Matrix Representations Conventions*: the basis operator of the coordinate $x_{\imath}$ is $iL_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}}$, with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$, and its action on an element is
+The field is a vector-spinor: four components $\tilde{Ξ}_{\imath}$, each an element of $\mathbb{B}$. The vector index is carried by the **frame basis operators** of *Matrix Representations Conventions*: the basis operator of the coordinate $x_{\imath}$ is $iL_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}}$, with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$, and its action on an element is
 
 $$
 \tilde{Ξ}\longmapsto i\,e_{\imath}\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\imath)} .
@@ -309,7 +309,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 The gammas are the frame basis operators of the body written as single letters; they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 $$
-\gamma_{\imath}:=iL_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\imath)}}\quad(\mathrm{spt}(t)=x,\ \mathrm{spt}(\eta)=y),
+\gamma_{\imath}:=iL_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\imath)}}\quad(\mathrm{spt}(t)=x,\ \mathrm{spt}(\varsigma_{\mathrm{spt}})=y),
 \qquad
 \gamma_5:=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z},
 $$
@@ -317,7 +317,7 @@ $$
 The same in the axis-free display:
 
 $$
-\gamma_{\imath}:=iL_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}}\quad(\mathrm{spt}(t)=x,\ \mathrm{spt}(\eta)=y),
+\gamma_{\imath}:=iL_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}}\quad(\mathrm{spt}(t)=x,\ \mathrm{spt}(\varsigma_{\mathrm{spt}})=y),
 \qquad
 \gamma_5:=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z},
 $$
@@ -406,7 +406,7 @@ In the biquaternion framework the field is the tensor product of the material fo
 |---|---|
 | $\tilde{Ξ}_{\imath}$ | Rarita–Schwinger vector-spinor; material vector index $\mu$, spinor index suppressed |
 | $\tilde{Ξ}\mapsto a\tilde{Ξ} b$ | The action a display writes; a basis operator $L_{a}R_{b}$ is named only where the operator itself is the subject |
-| $iL_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}}$, $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$ | Frame basis operator of the coordinate $x_{\imath}$, acting as $\tilde{Ξ}\mapsto i\,e_{\imath}\tilde{Ξ}\vec e_{\mathrm{spt}(\imath)}$: $iR_{\mathrm{axf},\vec e_x}$ for ${\imath}=t$, $iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}$ for $\mu=k$ |
+| $iL_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}}$, $\mathrm{spt}(t)=x$, $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$ | Frame basis operator of the coordinate $x_{\imath}$, acting as $\tilde{Ξ}\mapsto i\,e_{\imath}\tilde{Ξ}\vec e_{\mathrm{spt}(\imath)}$: $iR_{\mathrm{axf},\vec e_x}$ for ${\imath}=t$, $iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}$ for $\mu=k$ |
 | $2\varepsilon_{\imath}\delta_{\imath\jmath}$ on the identity action | The sum of the two compositions of two frame basis operators; their two imaginary units multiply to $-1$ |
 | $\varepsilon_{\imath}=-g_{\imath\imath}$, $\varepsilon_0=+1$, $\varepsilon_\imath=-1$ | Sign vector; every contraction of two low indices carries it |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{\imath,R}=2\pi\nu_m\tilde{Ξ}_{\imath,L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\imath,L}=2\pi\nu_m\tilde{Ξ}_{\imath,R}$ | Field equation as the chiral pair; the two Dirac equations |

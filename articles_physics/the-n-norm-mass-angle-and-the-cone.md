@@ -54,7 +54,7 @@ Nothing here is new mathematics. The norm, its multiplicativity, the two cases, 
 - Off the cone the element has the complete polar decomposition $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\varrho=\lvert N\rvert^{1/2}>0$, $\tilde U_{\mathrm b}$ Hermitian positive of norm one and $\tilde u_{\mathrm r}$ a unit real quaternion.
 - The four factors are the scale, the central phase, the boost and the rotor, of real dimensions $1,1,3,3$, summing to eight.
 - The modulus is the principal square root of the norm, $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=N$ with $\varrho\,e^{i\theta_{\mathrm{pha}}}$ in the half-plane $\{\operatorname{Re}(\varrho\,e^{i\theta_{\mathrm{pha}}})>0\}\cup\{it:t>0\}$; the branch is the only convention of the decomposition.
-- The scale is the geometric mean of the two eigenvalues and the angle is the mean of their phases: $\varrho=\lvert\lambda_+\lambda_-\rvert^{1/2}$ and $2\theta_{\mathrm{pha}}=\arg(\lambda_+\lambda_-)$.
+- The scale is the geometric mean of the two eigenvalues and the angle is the mean of their phases: $\varrho=\lvert\eta_{+}\eta_{-}\rvert^{1/2}$ and $2\theta_{\mathrm{pha}}=\arg(\eta_{+}\eta_{-})$.
 - On the material sector the norm is real, so the phase is $1$ on spacelike and $i$ on timelike four-vectors, and the scale is $mc$ in the second case and the proper length in the first.
 - The amplitude of the previous entry is recovered as $\tilde Q_H=\varrho\tilde U_{\mathrm b}$ and the frame as $\tilde Q_0=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$, so the two articles are two bracketings of one word.
 - On the cone the two-factor pair survives with a rank-one amplitude $\tilde Q_H=a e_t+i\vec W/(2a)$ and $\lvert\vec W\rvert=2a^{2}$; the rank is two off the cone, one on it, and zero at the origin.
@@ -201,7 +201,7 @@ so the two strata are also the two values of the second invariant on the cone.
 
 The cone is stable under the product and is not a subspace. Stability is multiplicativity: a product of two zeros of the norm has norm zero. Not a subspace is the cross term: two null elements add to a null element only when they are proportional, and a check on a hundred random pairs of null elements found a non-null sum in every case.
 
-The norm vanishes nowhere else, and that is a small but useful fact. On the centre $N(\lambda e_t)=\lambda^{2}$, so the only zero is $\lambda=0$. On the real quaternion subspace the norm is a sum of four squares of real numbers and vanishes only at $0$. On the vector subspace $N(\vec Q)=B^{2}$ with $B^{2}$ a sum of three squares, so again only at $0$ over the reals. The cone is carried by the mixed subspaces, where one coordinate is imaginary and another is real.
+The norm vanishes nowhere else, and that is a small but useful fact. On the centre $N(Q_te_t)=Q_t^{2}$, so the only zero is $Q_t=0$. On the real quaternion subspace the norm is a sum of four squares of real numbers and vanishes only at $0$. On the vector subspace $N(\vec Q)=B^{2}$ with $B^{2}$ a sum of three squares, so again only at $0$ over the reals. The cone is carried by the mixed subspaces, where one coordinate is imaginary and another is real.
 
 **The two cases are therefore not two kinds of element but two values of one function.** This matters for the reading: the massless case is not a limiting species of particle that the algebra distinguishes by a label. It is the zero level of the interval, and the particle content on that level is imported.
 
@@ -465,12 +465,12 @@ This is a statement about elements and their products, not about time. Nothing i
 
 ### I.9.c — The Modulus Is the Geometric Mean of the Two Eigenvalues
 
-with $\lambda_\pm=Q_t\pm iB$,
+with $\eta_{\pm}=Q_t\pm iB$,
 
 $$
-N=\lambda_+\lambda_-,
+N=\eta_{+}\eta_{-},
 \qquad
-\varrho=\lvert N\rvert^{1/2}=\bigl(\lvert\lambda_+\rvert\,\lvert\lambda_-\rvert\bigr)^{1/2}.
+\varrho=\lvert N\rvert^{1/2}=\bigl(\lvert\eta_{+}\rvert\,\lvert\eta_{-}\rvert\bigr)^{1/2}.
 $$
 
 The scale is the geometric mean of the two eigenvalue moduli and the norm is their product. The two eigenvalues are the two spectral values of the element, and the mass is a symmetric function of them: it is what they share. A change of frame multiplies the two eigenvalues in opposite directions and leaves the product alone.
@@ -481,7 +481,7 @@ The two eigenvalues belong to one element and are not two particles. Statements 
 
 ### I.9.d — The Angle Is the Mean Phase
 
-$\theta_{\mathrm{pha}}=\tfrac12\arg(\lambda_+\lambda_-)=\tfrac12\bigl(\arg\lambda_++\arg\lambda_-\bigr)$.
+$\theta_{\mathrm{pha}}=\tfrac12\arg(\eta_{+}\eta_{-})=\tfrac12\bigl(\arg\eta_{+}+\arg\eta_{-}\bigr)$.
 
 The phase of the modulus is the mean of the two eigenphases, and the halving is the square root. The angle is therefore not an independent datum: it is the average of the two phases of the spectrum, read through the branch that halves it.
 
@@ -639,7 +639,7 @@ The three statements to carry away are these. The quaternionic norm is the only 
 | $\theta_{\mathrm{axr}}$ | the rotor angle, written $\Theta$ in the previous entry |
 | $\vec u_{\mathrm b},\ \vec u_{\mathrm r}$ | the boost axis and the rotor axis, real unit three-vectors |
 | $\tilde U_{\mathrm b},\ \tilde u_{\mathrm r}$ | the boost, Hermitian positive of norm one, and the rotor, a unit real quaternion |
-| $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues, of product $N$ and of sum $2Q_t$ |
+| $\eta_{\pm}=Q_t\pm iB$ | the two eigenvalues, of product $N$ and of sum $2Q_t$ |
 | $\Theta$ | the Hamilton complex angle, $\cos\Theta=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ and $\sin\Theta=B/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ |
 | $a=\sqrt{H/2}$ | the cone scale, with $2a$ the norm of the rank-one amplitude |
 
@@ -647,6 +647,6 @@ The three statements to carry away are these. The quaternionic norm is the only 
 
 In the mathematics corpus. The ten articles of the source table, and inside the first of them the sections *The Quaternionic Norm*, which owns the identity and the five equivalent criteria; *The $\natural$-regular case: The Group of Invertibles*, which owns the connectedness and the homotopy; and *The $\natural$-degenerate case: the origin together with the zero divisors*, which owns the two strata and the law $\tilde Q^{2}=2Q_t\tilde Q$. The four-factor word, its modulus, its branch and its three pairings are in *The Complete Polar Decomposition of an N-Regular Biquaternion*, in the sections *The Four Factors*, *The split of the modulus*, *The Group of Invertibles* and *The Three Pairings*. The word in the logarithmic variable, with the ranges of the three angles, is *The Complete Polar Decomposition of an N-Regular Biquaternion*. The rank-one amplitude is in *The Polar Decomposition of an N-Degenerate Biquaternion*. The independence of the two invariants and the four sectors are in *Relations between the N Norm and Spectral Regularity and Degeneracy*, and the topology of the cone is in *The Topology of the Zero-Divisor Cone*.
 
-In this category. *The Four Forms and the Four Norms* supplies the four measures, their Gram matrices and the proof that only the quaternionic one is multiplicative. *The Four Products: Composition, Probability, Causality and Gauge* supplies the products whose scalar parts the measures are. *The Spectrum and the Two Modes* supplies the two eigenvalues, the characteristic polynomial and the identity $N=\lambda_+\lambda_-$. *The Two Sectors: The Hermitian Split and the Four Bridges* supplies the coordinate split on which the material sector and the sign of the norm depend. *The Element: the Six Subspaces and the Two Ledgers* supplies the six subspaces and the two ledgers. *The H Norm: Amplitude and Frame* is the previous entry and supplies the Cartan pair that this entry brackets the other way. The next entries are *The Partition: Two Invariants and Four Regimes*, which reads the four sectors as a partition, and *Mass in Motion: The Region of Both Invariants*, which reads the boost on the sector where both invariants are nonzero.
+In this category. *The Four Forms and the Four Norms* supplies the four measures, their Gram matrices and the proof that only the quaternionic one is multiplicative. *The Four Products: Composition, Probability, Causality and Gauge* supplies the products whose scalar parts the measures are. *The Spectrum and the Two Modes* supplies the two eigenvalues, the characteristic polynomial and the identity $N=\eta_{+}\eta_{-}$. *The Two Sectors: The Hermitian Split and the Four Bridges* supplies the coordinate split on which the material sector and the sign of the norm depend. *The Element: the Six Subspaces and the Two Ledgers* supplies the six subspaces and the two ledgers. *The H Norm: Amplitude and Frame* is the previous entry and supplies the Cartan pair that this entry brackets the other way. The next entries are *The Partition: Two Invariants and Four Regimes*, which reads the four sectors as a partition, and *Mass in Motion: The Region of Both Invariants*, which reads the boost on the sector where both invariants are nonzero.
 
 The sources of this entry. [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html) states the two cases as the reversible and the irreversible. [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html) places the massless content on the cone. [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html) compares the three bracketings and their domains. [The Massless Regime](the-massless-regime.html) is the family of §*The Two Walls*, read as a limit of the polar data. [The Light Cone as the Biquaternion Zero-Divisor Cone](the-light-cone-as-the-biquaternion-zero-divisor-cone.html) identifies the two cones. [Zero Divisors as a Physical Locus in Biquaternionic Form](zero-divisors-as-a-physical-locus-in-biquaternionic-form.html) is the earlier reading of the same wall. [Norm and Pairing Conventions](norm-and-pairing-conventions.html) fixes the letters and the inertias.

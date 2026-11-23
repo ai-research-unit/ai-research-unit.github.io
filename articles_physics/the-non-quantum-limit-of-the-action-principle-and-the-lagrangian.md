@@ -714,7 +714,7 @@ $$
 \mathrm{Ve}\!\left(\tilde u^{\natural}\,d^2\tilde u/d{r'_{t}}^2\right)=0 ,
 $$
 
-the **geodesic equation on the group**. Writing $\vec\eta=\tilde u^{\natural}d\tilde u/dt'$, a real pure quaternion by the constraint — its scalar part is $\tfrac{1}{2}\tfrac{d}{dt'}\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=0$ — one has $\tilde u^{\natural}d^2\tilde u/d{r'_{t}}^2=d\vec\eta/dt'+\vec\eta^2$ with $\vec\eta^2$ a real scalar; the equation therefore says that the vector part of $d\vec\eta/dt'$ vanishes, and since $\vec\eta$ is pure real for all $r'_t$ this is $d\vec\eta/dt'=0$. Equivalently, the equation with the constraint is $\frac{d}{dt'}(\tilde u^{\natural}d\tilde u/dt')=0$: the **body angular velocity is constant**. Its solutions are the one-parameter subgroups, and the **classical rotor path is**
+the **geodesic equation on the group**. Writing $\\vec\\varsigma_{\mathrm{acc}}=\tilde u^{\natural}d\tilde u/dt'$, a real pure quaternion by the constraint — its scalar part is $\tfrac{1}{2}\tfrac{d}{dt'}\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=0$ — one has $\tilde u^{\natural}d^2\tilde u/d{r'_{t}}^2=d\\vec\\varsigma_{\mathrm{acc}}/dt'+\\vec\\varsigma_{\mathrm{acc}}^2$ with $\\vec\\varsigma_{\mathrm{acc}}^2$ a real scalar; the equation therefore says that the vector part of $d\\vec\\varsigma_{\mathrm{acc}}/dt'$ vanishes, and since $\\vec\\varsigma_{\mathrm{acc}}$ is pure real for all $r'_t$ this is $d\\vec\\varsigma_{\mathrm{acc}}/dt'=0$. Equivalently, the equation with the constraint is $\frac{d}{dt'}(\tilde u^{\natural}d\tilde u/dt')=0$: the **body angular velocity is constant**. Its solutions are the one-parameter subgroups, and the **classical rotor path is**
 
 $$
 \boxed{\;\tilde u(r'_t)=\tilde u(0)\,\exp\!\left(+\tfrac{1}{2}\vec\omega_b r'_t/c\right),\qquad \vec\omega_b\in\mathbb{B}_{H}\cap\mathbb{B}_{\Phi}\;},
@@ -764,10 +764,10 @@ Nothing in the paraphrase requires a Hilbert space, a state, or an operator. The
 
 The prefactor $A[\tilde q_c]$ of the stationary-phase evaluation is built from the second variation of the previous section. In the biquaternion setting the fluctuation operator is the Jacobi operator $\mathcal{J}$, and the prefactor is the inverse square root of its regularized determinant, taken relative to the free reference and with $\frac{h}{2\pi}$ restored; that combination is the biquaternion form of the van Vleck factor. The zeros of the determinant are the conjugate points; the Maslov phase jumps there. This is the classical Morse theory of the action, expressed with the biquaternion-norm kinetic term.
 
-For the free particle the calculation is explicit. The Jacobi operator is $\mathcal{J}=-m\,d^2/d{r'_{t}}^2$ with Dirichlet boundary conditions on the interval $[0,T]$. Its eigenfunctions are $\sin(n\pi r'_t/T)$ with eigenvalues $\lambda_n=m n^2\pi^2/T^2$, $n=1,2,\dots$, and the zeta-regularized determinant is computed from the spectral zeta function
+For the free particle the calculation is explicit. The Jacobi operator is $\mathcal{J}=-m\,d^2/d{r'_{t}}^2$ with Dirichlet boundary conditions on the interval $[0,T]$. Its eigenfunctions are $\sin(n\pi r'_t/T)$ with eigenvalues $\eta_n=m n^2\pi^2/T^2$, $n=1,2,\dots$, and the zeta-regularized determinant is computed from the spectral zeta function
 
 $$
-\zeta_{\mathcal J}(s)=\sum_{n\ge1}\lambda_n^{-s}
+\zeta_{\mathcal J}(s)=\sum_{n\ge1}\eta_n^{-s}
 =m^{-s}\left(\frac{T}{\pi}\right)^{2s}\zeta(2s),
 \qquad
 \det\mathcal{J}=\exp\!\left(-\left.\frac{d\zeta_{\mathcal J}}{ds}\right|_{s=0}\right).

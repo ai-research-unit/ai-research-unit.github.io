@@ -43,12 +43,12 @@ The norm here is the quaternionic norm $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$
 Two facts about the cone are used throughout, and both are proved in the companion. On the cone the scalar part decides the spectral type: with $\tilde Q=Q_te_t+\vec Q$ and $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$, the identity $N=Q_t^{2}+B^{2}$ makes $Q_t\neq0$ equivalent to $B^{2}\neq0$. And on the cone the non-zero elements fall into the two sectors
 
 $$
-\Sigma_{01}=\{\tilde Q^{2}=\lambda\tilde Q,\ \lambda\neq0\},
+\Sigma_{01}=\{\tilde Q^{2}=\eta\tilde Q,\ \eta\neq0\},
 \qquad
 \Sigma_{00}=\{\tilde Q^{2}=0,\ \tilde Q\neq0\},
 $$
 
-which are the idempotent multiples and the nilpotents of index two. The scalar $\lambda$ is the non-zero eigenvalue, and $\lambda=2Q_t$; the companion writes it $c$, and this article writes $\lambda$ so that the letter $c$ stays the speed of light.
+which are the idempotent multiples and the nilpotents of index two. The scalar $\eta$ is the non-zero eigenvalue, and $\eta=2Q_t$; the companion writes it $c$, and this article writes $\eta$ so that the letter $c$ stays the speed of light.
 
 ## Three Things Called L and R
 
@@ -182,7 +182,7 @@ This asymmetry belongs to the sign convention of the pair and not to the physics
 
 ### The Condition and Its Form
 
-The first sector is $\Sigma_{01}=\{\tilde\Xi^{2}=\lambda\tilde\Xi,\ \lambda\neq0\}$. Its spectrum is $\{\lambda,0\}$, the two eigenvalues are distinct, and the minimal polynomial $X(X-\lambda)$ is squarefree. The element is $\lambda$ times a non-trivial idempotent, and the idempotent is $\tilde\Pi_{\mathrm{id}}=\tilde\Xi/\lambda$.
+The first sector is $\Sigma_{01}=\{\tilde\Xi^{2}=\eta\tilde\Xi,\ \eta\neq0\}$. Its spectrum is $\{\eta,0\}$, the two eigenvalues are distinct, and the minimal polynomial $X(X-\eta)$ is squarefree. The element is $\eta$ times a non-trivial idempotent, and the idempotent is $\tilde\Pi_{\mathrm{id}}=\tilde\Xi/\eta$.
 
 **In components.** With $\vec Z=\vec Q/Q_t$ the element is
 
@@ -204,7 +204,7 @@ $$
 
 So a member is a scalar part together with a vector part whose Euclidean square is minus the square of the scalar part. The condition is one complex equation in the three complex coefficients of $\vec Z$, which cuts the six real parameters of $\vec Z$ to four and returns the sector's six real parameters once the scalar part is added back.
 
-**In the matrix model.** Under the isomorphism $\mathbb{B}\cong\mathsf M_2(\mathbb{C})$ the norm is the determinant and $2Q_t$ is the trace. The sector is the set of matrices of rank one with non-zero trace: $\det=0$ is the cone, and rank one follows from $\det=0$ and $\tilde\Xi\neq0$. Cayley–Hamilton then reads $M^{2}=(\operatorname{tr}M)M$, which is the sector's identity with $\lambda=\operatorname{tr}M=2Q_t$. A rank-one matrix with a non-zero trace is a projection up to scale: it selects a line, scales it by $\lambda$, and kills a complementary line. The image of left multiplication by $M$ is the set of elements whose columns lie in the image of $M$, the kernel is the set whose columns lie in the kernel of $M$, and the two are complementary here, because $M^{2}=\lambda M$ with $\lambda\neq0$ leaves nothing in both.
+**In the matrix model.** Under the isomorphism $\mathbb{B}\cong\mathsf M_2(\mathbb{C})$ the norm is the determinant and $2Q_t$ is the trace. The sector is the set of matrices of rank one with non-zero trace: $\det=0$ is the cone, and rank one follows from $\det=0$ and $\tilde\Xi\neq0$. Cayley–Hamilton then reads $M^{2}=(\operatorname{tr}M)M$, which is the sector's identity with $\eta=\operatorname{tr}M=2Q_t$. A rank-one matrix with a non-zero trace is a projection up to scale: it selects a line, scales it by $\eta$, and kills a complementary line. The image of left multiplication by $M$ is the set of elements whose columns lie in the image of $M$, the kernel is the set whose columns lie in the kernel of $M$, and the two are complementary here, because $M^{2}=\eta M$ with $\eta\neq0$ leaves nothing in both.
 
 ### The Split of a Degenerate Field in This Sector
 
@@ -222,22 +222,22 @@ $$
 \tilde\Xi_{0,L}=\frac{1-\sqrt3}{4}\bigl(e_t+i\vec e_z\bigr).
 $$
 
-Both components are real multiples of the same idempotent, both have vanishing norm, and both are in $\Sigma_{01}$ with the weights $\lambda_R=(1+\sqrt3)/2$ and $\lambda_L=(1-\sqrt3)/2$. The two lines of the pair hold: the first gives $2\pi i\tilde\Upsilon_{\Phi}\tilde\Xi_{0,R}-2\pi\nu_m\tilde\Xi_{0,L}=0$ and the second gives $2\pi i\tilde\Upsilon_{\Phi}^{\natural}\tilde\Xi_{0,L}-2\pi\nu_m\tilde\Xi_{0,R}=0$, both to machine precision. The field has $N=0$, $\tilde\Xi^{2}=\tilde\Xi$ and $Q_t=\tfrac12$, so it is in $\Sigma_{01}$ with $\lambda=1=2Q_t$.
+Both components are real multiples of the same idempotent, both have vanishing norm, and both are in $\Sigma_{01}$ with the weights $\eta_R=(1+\sqrt3)/2$ and $\eta_L=(1-\sqrt3)/2$. The two lines of the pair hold: the first gives $2\pi i\tilde\Upsilon_{\Phi}\tilde\Xi_{0,R}-2\pi\nu_m\tilde\Xi_{0,L}=0$ and the second gives $2\pi i\tilde\Upsilon_{\Phi}^{\natural}\tilde\Xi_{0,L}-2\pi\nu_m\tilde\Xi_{0,R}=0$, both to machine precision. The field has $N=0$, $\tilde\Xi^{2}=\tilde\Xi$ and $Q_t=\tfrac12$, so it is in $\Sigma_{01}$ with $\eta=1=2Q_t$.
 
 **The parts do not leave the ideal.** The factor $A^{-1}$ multiplies on the left, so both components lie in the left ideal $\mathbb{B}\tilde\Xi_{0}$ generated by the field, which for a $\Sigma_{01}$ element is a minimal left ideal of complex dimension two. The split of a degenerate field mixes no directions that the field did not already carry.
 
 ### What Survives and What Does Not
 
-**The word fails and the state does not.** The polar word of the field is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and its scale is read from the norm, $N=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ with $\rho_{\mathrm{num}}=\varrho^{2}$. On the cone $N=0$, so $\varrho=0$ and the word has no value. What survives is the pair's own data: the idempotent $\tilde\Pi_{\mathrm{id}}$ and the weight $\lambda$. The idempotent carries a direction and the weight carries a complex number, and neither is read by the word.
+**The word fails and the state does not.** The polar word of the field is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and its scale is read from the norm, $N=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ with $\rho_{\mathrm{num}}=\varrho^{2}$. On the cone $N=0$, so $\varrho=0$ and the word has no value. What survives is the pair's own data: the idempotent $\tilde\Pi_{\mathrm{id}}$ and the weight $\eta$. The idempotent carries a direction and the weight carries a complex number, and neither is read by the word.
 
 Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
-**The two numbers are the trace.** The two numbers that the word would have called amplitude and phase are the modulus and the argument of $\lambda$,
+**The two numbers are the trace.** The two numbers that the word would have called amplitude and phase are the modulus and the argument of $\eta$,
 
 $$
-\lvert\lambda\rvert=2\lvert Q_t\rvert,
+\lvert\eta\rvert=2\lvert Q_t\rvert,
 \qquad
-\arg\lambda=\arg Q_t .
+\arg\eta=\arg Q_t .
 $$
 
 The polar companion's density is $\rho_{\mathrm{num}}=\varrho^{2}$, a quadratic object, and its angle is half the argument of the norm. Here the norm is gone and the reading drops to the trace, which is linear. The factor of two that the companion carries in $N=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ has no counterpart, which is the algebraic reason the polar word does not extend to this sector.
@@ -360,14 +360,14 @@ The two sectors differ at every level, and the table is the whole of the differe
 
 | | $\Sigma_{01}$ | $\Sigma_{00}$ |
 | --- | --- | --- |
-| algebraic condition | $\tilde\Xi^{2}=\lambda\tilde\Xi$, $\lambda\neq0$ | $\tilde\Xi^{2}=0$, $\tilde\Xi\neq0$ |
-| trace, $2Q_t$ | $\lambda\neq0$ | $0$ |
-| spectrum | $\{\lambda,0\}$, distinct | $\{0\}$ |
-| minimal polynomial | $X(X-\lambda)$, squarefree | $X^{2}$ |
+| algebraic condition | $\tilde\Xi^{2}=\eta\tilde\Xi$, $\eta\neq0$ | $\tilde\Xi^{2}=0$, $\tilde\Xi\neq0$ |
+| trace, $2Q_t$ | $\eta\neq0$ | $0$ |
+| spectrum | $\{\eta,0\}$, distinct | $\{0\}$ |
+| minimal polynomial | $X(X-\eta)$, squarefree | $X^{2}$ |
 | components | $Q_x^{2}+Q_y^{2}+Q_z^{2}=-Q_t^{2}$, $Q_t\neq0$ | $Q_t=0$, $Q_x^{2}+Q_y^{2}+Q_z^{2}=0$ |
 | matrix model | rank one, non-zero trace | rank one, zero trace |
 | image against kernel of $L_{\tilde\Xi}$ | complementary | equal |
-| what survives | a plane and a weight $\lambda$ | a plane and no weight |
+| what survives | a plane and a weight $\eta$ | a plane and no weight |
 | real parameters | six | four |
 | polar word | absent | absent |
 | reading | a ray with a direction and a weight | a null direction with neither |
@@ -392,9 +392,9 @@ The degenerate solutions of the biquaternionic Dirac equation are the solutions 
 
 For a massive plane wave the polarization biquaternion is free. Every element of the algebra is the polarization of exactly one solution, the pair fixes only the split into its two components, and the factor $A=e_t+(i/\nu_m)\tilde\Upsilon_{\Phi}$ carries the field to its right component with $N(A)=2(1-\gamma)$. The degenerate massive plane waves are therefore exactly the polarizations on the cone, of real codimension two, carried along by a momentum of three parameters.
 
-The cone has two non-zero sectors. $\Sigma_{01}$ is $\tilde\Xi^{2}=\lambda\tilde\Xi$ with $\lambda\neq0$, a rank-one matrix with non-zero trace, in components $Q_x^{2}+Q_y^{2}+Q_z^{2}=-Q_t^{2}$ at $Q_t\neq0$, of six real parameters; its image and kernel under left multiplication are complementary, and it keeps a plane and a weight. $\Sigma_{00}$ is $\tilde\Xi^{2}=0$ with $\tilde\Xi\neq0$, a rank-one matrix with zero trace, in components an isotropic vector part at $Q_t=0$, of four real parameters; its image equals its kernel, and it keeps a plane and no weight.
+The cone has two non-zero sectors. $\Sigma_{01}$ is $\tilde\Xi^{2}=\eta\tilde\Xi$ with $\eta\neq0$, a rank-one matrix with non-zero trace, in components $Q_x^{2}+Q_y^{2}+Q_z^{2}=-Q_t^{2}$ at $Q_t\neq0$, of six real parameters; its image and kernel under left multiplication are complementary, and it keeps a plane and a weight. $\Sigma_{00}$ is $\tilde\Xi^{2}=0$ with $\tilde\Xi\neq0$, a rank-one matrix with zero trace, in components an isotropic vector part at $Q_t=0$, of four real parameters; its image equals its kernel, and it keeps a plane and no weight.
 
-The polar word fails on both sectors, because its scale is read from the norm and the norm has vanished. What survives is the trace: the amplitude and the phase of a degenerate field are the modulus and the argument of $\lambda=2Q_t$, a linear object where the word's reading was quadratic.
+The polar word fails on both sectors, because its scale is read from the norm and the norm has vanished. What survives is the trace: the amplitude and the phase of a degenerate field are the modulus and the argument of $\eta=2Q_t$, a linear object where the word's reading was quadratic.
 
 At $\nu_m=0$ the two lines decouple and every non-zero one-sided solution is degenerate, at every momentum and every amplitude. The kernel of a null left multiplier is a right ideal of complex dimension two, and inside it the two sectors appear as two lines, one of each. The sum of one component from each kernel is generically an invertible element, so a massless field with both components is generically regular, and the norm of the sum is the interference of the two parts.
 
@@ -416,8 +416,8 @@ The letters $L$ and $R$ are the pair's two components and are fixed by the equat
 | $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | Square of the vector part; $N=Q_t^{2}+B^{2}$ |
 | $\mathcal N=\{N=0\}$ | The cone of zero divisors |
 | $\Sigma_{01}$, $\Sigma_{00}$ | The two non-zero sectors of the cone |
-| $\lambda=2Q_t$ | The non-zero eigenvalue of a $\Sigma_{01}$ element; the companion's $c$ |
-| $\tilde\Pi_{\mathrm{id}}=\tilde\Xi/\lambda$ | The idempotent of a $\Sigma_{01}$ element |
+| $\eta=2Q_t$ | The non-zero eigenvalue of a $\Sigma_{01}$ element; the companion's $c$ |
+| $\tilde\Pi_{\mathrm{id}}=\tilde\Xi/\eta$ | The idempotent of a $\Sigma_{01}$ element |
 | $A=e_t+(i/\nu_m)\tilde\Upsilon_{\Phi}$ | The momentum factor; $\tilde\Xi_{0}=A\tilde\Xi_{0,R}$ |
 | $u$, $R_u$ | A declared scalar-free unit with $u^{2}=-e_t$, and its right multiplier |
 

@@ -195,11 +195,11 @@ Take the faithful state with Bloch vector
 $$
 \tilde{Ϛ}_{\Psi}=\tfrac12\big(e_t+i\vec s_{\Psi}\cdot\mathbf{e}\big),\qquad \vec s_{\Psi}=\big(\tfrac{3}{10},\tfrac{2}{5},-\tfrac15\big),\qquad |\vec s_{\Psi}|^2=\tfrac{29}{100}<1 .
 $$
-Its eigenvalues are $\lambda_\pm=\tfrac12\pm\tfrac{\sqrt{29}}{20}$, and
+Its eigenvalues are $\eta_{\pm}=\tfrac12\pm\tfrac{\sqrt{29}}{20}$, and
 $$
 \tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=a_0e_t+i\vec a\cdot\mathbf{e},\qquad
 a_0=-\tfrac12\log\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=-\tfrac12\log\tfrac{71}{400}=0.864392\ldots,\qquad
-\vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\,\vec u_s,
+\vec a=-\tfrac12\log\frac{\eta_{+}}{\eta_{-}}\,\vec u_s,
 $$
 with $\vec a=(-0.335401,-0.447202,0.223601)$. The direction $\vec s_{\Psi}$ is deliberately neither an axis of the basis nor the thermal direction. For this state the KMS relation was evaluated at several real $r'_t$ with generic $\tilde{Q}_3,\tilde Q_1$: $F_{AB}(r'_t+i)$ agrees with $\omega(\sigma_{-r'_t}(B)A)$ and with $F_{BA}(-r'_t)$ to machine precision, and the flow identities hold to the same order.
 

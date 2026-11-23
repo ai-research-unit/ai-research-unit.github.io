@@ -73,7 +73,7 @@ d_{ij}=\min\left(4\pi^{2}\nu_{Ti}^{2p},4\pi^{2}\nu_{Tj}^{2p}\right)\frac{\delta 
 d_{iB}=4\pi^{2}\nu_{Ti}^{2p} ,
 $$
 
-with $\delta R_{ij}^2=\delta\eta_{ij}^2+\delta\phi_{ij}^2$. The exponent $p$ selects the algorithm: $p=1$ is $\nu_T$, $p=0$ is Cambridge–Aachen, $p=-1$ is anti-$\nu_T$, and the last is the default at the LHC because it produces geometrically regular jets.
+with $\delta R_{ij}^2=\delta\delta_{ij}^2+\delta\phi_{ij}^2$. The exponent $p$ selects the algorithm: $p=1$ is $\nu_T$, $p=0$ is Cambridge–Aachen, $p=-1$ is anti-$\nu_T$, and the last is the default at the LHC because it produces geometrically regular jets.
 
 **Why the definition is part of the prediction.** The number of jets in an event is not a property of the event. It is a property of the event and the resolution: at a coarse resolution any event is two-jet, at a fine one every event is many-jet. So a cross section "for three jets" is meaningless until the resolution is given, and the resolution is a number that must be stated and, ideally, varied to show that the dependence is under control. This is not a technicality of experimental practice. It is the same statement as [the confinement article's](confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html) that the parton picture is a description at a resolution, made quantitative.
 
@@ -332,7 +332,7 @@ The framework supplies the null direction and the form of the interference, and 
 | $c_2$ | Second-order coefficient, $1.4092-0.0781N_f$: $1.097$ at $N_f=4$, $1.019$ at $N_f=5$ |
 | $y$ | Jet resolution parameter |
 | $d_{ij}$, $d_{iB}$ | Pairwise and beam distances in a sequential algorithm |
-| $\nu_T$, $\eta$, $\phi$ | Transverse momentum, pseudorapidity, azimuth |
+| $\nu_T$, $\upsilon_{\mathrm{rpd}}$, $\phi$ | Transverse momentum, pseudorapidity, azimuth |
 | $T$ | Thrust; $\langle1-T\rangle$ an event shape |
 | $P_{qq},P_{gq},P_{qg},P_{gg}$ | Splitting functions |
 | $z$ | Momentum fraction in a splitting |

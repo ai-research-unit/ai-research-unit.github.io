@@ -50,17 +50,17 @@ so the masses $m_i$ are the roots: the representation carries a **discrete set o
 The roots are read off from the eigenvalues of $\Gamma_{0}$. Setting $\vec p=0$ gives $\Gamma(p)=p_0\Gamma_{0}$ and
 
 $$
-\det\bigl(p_0\Gamma_{0}+mE\bigr) = \kappa\,\bigl(p_0-\mu_0\lambda_1\bigr)\bigl(p_0-\mu_0\lambda_2\bigr)\cdots\bigl(p_0-\mu_0\lambda_N\bigr),
+\det\bigl(p_0\Gamma_{0}+mE\bigr) = \kappa\,\bigl(p_0-\mu_0\eta_1\bigr)\bigl(p_0-\mu_0\eta_2\bigr)\cdots\bigl(p_0-\mu_0\lambda_N\bigr),
 $$
 
-where the $\lambda_i$ are the eigenvalues of $\Gamma_{0}$ and $\mu_0$ is a single constant with the dimensions of mass. Comparing with the factorisation gives $m_i=\mu_0\lambda_i$ up to signs, and, because $\lambda$ and $-\lambda$ occur with the same multiplicity, the positive spectrum is the set of positive $|\lambda_i|$. For a representation of type $\tau^{0,\bar l}$ the eigenvalues are the $\bar\lambda$; for a general $\tau^{l\bar l}$ the mass is the **product** of a pair of eigenvalue factors,
+where the $\eta_i$ are the eigenvalues of $\Gamma_{0}$ and $\mu_0$ is a single constant with the dimensions of mass. Comparing with the factorisation gives $m_i=\mu_0\eta_i$ up to signs, and, because $\lambda$ and $-\lambda$ occur with the same multiplicity, the positive spectrum is the set of positive $|\eta_i|$. For a representation of type $\tau^{0,\bar l}$ the eigenvalues are the $\bar\lambda$; for a general $\tau^{l\bar l}$ the mass is the **product** of a pair of eigenvalue factors,
 
 $$
-m_1 = \mu_0\,\lambda_1\bar\lambda_1,
+m_1 = \mu_0\,\eta_1\bar\eta_1,
 \qquad
--m_1 = \mu_0\,\lambda_2\bar\lambda_2,
+-m_1 = \mu_0\,\eta_2\bar\eta_2,
 \qquad
-m_2 = \mu_0\,\lambda_3\bar\lambda_3 = -\mu_0\,\lambda_4\bar\lambda_4,\ \dots
+m_2 = \mu_0\,\eta_3\bar\eta_3 = -\mu_0\,\eta_4\bar\eta_4,\ \dots
 $$
 
 The formula is a statement about the eigenvalues of $\Gamma_{0}$ in the representation. Its clean form is the asymptotic one: for the infinite-dimensional representations that arise as the limits of the chains, $l\to\infty$ and $\bar l\to\infty$, the eigenvalues degenerate and
@@ -138,7 +138,7 @@ Third, the interlocking relation is the corpus's own tensor-product relation, an
 **Established, and recomputed.**
 
 - The mass formula in dimension form, $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\bar l}$, is the identity $(l+\frac12)(\bar l+\frac12)=\frac14(2l+1)(2\bar l+1)$ applied to the programme's asymptotic formula; it is an algebraic identity, verified here.
-- The determinant factorisation and the eigenvalue relation $m_i=\mu_0\lambda_i$ (with $m_i=\mu_0\lambda_i\bar\lambda_i$ for $\tau^{l\bar l}$) are the standard Bhabha–Gel'fand–Yaglom argument, reproduced in outline.
+- The determinant factorisation and the eigenvalue relation $m_i=\mu_0\eta_i$ (with $m_i=\mu_0\eta_i\bar\eta_i$ for $\tau^{l\bar l}$) are the standard Bhabha–Gel'fand–Yaglom argument, reproduced in outline.
 - The degrees along the spin-$\frac12$ line are $(s+1)(s+2)$, giving $2,6,12,20,30,\dots$; the formula's ratios for the electron, proton, $\Sigma$ and $\pi$ are $1.00$, $1770$, $2278$, and $264.5$.
 - The next interlocking representation after $\tau^{59/2,29}$ on the same chain is $\tau^{30,29/2}$, of degree $3660$ and ratio $1830$; the programme's claim that it is $\tau^{67/2,33}$ skips eight places and is inconsistent with its own chain.
 
@@ -183,7 +183,7 @@ What is transcribed is the formula, the chains, and the assignments; what is est
 | $m^{(s)}=\mu_0(l+\frac12)(\bar l+\frac12)=\frac{\mu_0}{4}\deg$ | The spin–mass formula |
 | $\mu_0$ | Mass scale; the electron's anchor is $m_e=\mu_0/2$ |
 | $\Gamma_{\imath}$, $\Gamma(p)$ | Generators and the momentum matrix of the Bhabha equation |
-| $\lambda_i$, $\bar\lambda_i$ | Eigenvalues of $\Gamma_{0}$; $m_i=\mu_0\lambda_i\bar\lambda_i$ |
+| $\eta_i$, $\bar\eta_i$ | Eigenvalues of $\Gamma_{0}$; $m_i=\mu_0\eta_i\bar\eta_i$ |
 | $D(p)=\det(\Gamma(p)+mE)$ | The determinant whose roots are the masses |
 | Interlocking | $l_2=l\pm\frac12$, $\bar l_2=\bar l\pm\frac12$ |
 | Spin-$\frac12$ line | $\tau^{\frac{n+1}{2},\frac n2}$, degree $(n+1)(n+2)$ |

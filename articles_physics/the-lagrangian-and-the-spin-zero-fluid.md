@@ -127,7 +127,7 @@ Why the count matters. A Lagrangian with two fields and two equations is not ove
 The action is invariant under translations, so it has a stress, and the stress is the block's up to an improvement. The canonical tensor is
 
 $$
-T_{\imath\jmath}=\bigl(\partial_{\jmath} S_{\tilde\Xi}\bigr)\frac{\partial\mathcal L_{\mathrm{fl}}}{\partial(\partial_{\imath} S_{\tilde\Xi})}+\bigl(\partial_{\jmath} \varrho\bigr)\frac{\partial\mathcal L_{\mathrm{fl}}}{\partial(\partial_{\imath} \varrho)}-\eta_{\imath\jmath}\mathcal L_{\mathrm{fl}},
+T_{\imath\jmath}=\bigl(\partial_{\jmath} S_{\tilde\Xi}\bigr)\frac{\partial\mathcal L_{\mathrm{fl}}}{\partial(\partial_{\imath} S_{\tilde\Xi})}+\bigl(\partial_{\jmath} \varrho\bigr)\frac{\partial\mathcal L_{\mathrm{fl}}}{\partial(\partial_{\imath} \varrho)}-\delta_{\imath\jmath}\mathcal L_{\mathrm{fl}},
 $$
 
 and it splits into the two terms the action has. The first is the dust's: $\partial\mathcal L_{\mathrm{fl}}/\partial(\partial_{\imath} S_{\tilde\Xi})=-\rho_{\mathrm{num}}V_{\Phi,\imath}$, so that term is $-m\rho_{\mathrm{num}}V_{\Phi,\imath}V_{\Phi,\jmath}$, the stress of a pressureless flow, whose time–time component is $\gamma^{2}\rho_{\mathrm{num}}mc^{2}$ because the density and the energy are both boosted. The second is the gradient energy's, and it is the block's $\sigma^{Q}_{ij}$ extended to four dimensions. Two cautions about the sum. It is the canonical tensor, and the block's $w_{\mathrm{fl}}$ is the improved one: the two differ by an improvement term, so the comparison below is of structure and not of normalisation. And it is not the fluid's stress in the sense of a one-particle distribution, because the dust term is quadratic in the velocity where a fluid's action is linear in a density.

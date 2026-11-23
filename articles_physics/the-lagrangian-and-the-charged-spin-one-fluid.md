@@ -92,7 +92,7 @@ Three statements, and each is unchanged.
 
 What the mass term no longer does is make the condition a conservation law. That is the fourth statement of the free rung and it is not available, for the reason the previous section gives: the source is there whether or not the mass is.
 
-And the coupling does not break the external gauge symmetry. Under $A\mapsto\lambda A$ with $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ and $A^{\mathrm{ext}}_{\imath}\mapsto A^{\mathrm{ext}}_{\imath}-\partial_{\imath}\Gamma$, both terms are invariant: the derivative term because $D$ is, the algebraic term because $\lvert\lambda\rvert^{2}=1$. Two different freedoms must be kept apart: the field's own shift, which the mass breaks at both rungs, and the external group's phase rotation, which is a symmetry at the charged rung and is what makes the carrier complex.
+And the coupling does not break the external gauge symmetry. Under $A\mapsto\digamma_{\mathrm{gau}} A$ with $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ and $A^{\mathrm{ext}}_{\imath}\mapsto A^{\mathrm{ext}}_{\imath}-\partial_{\imath}\Gamma$, both terms are invariant: the derivative term because $D$ is, the algebraic term because $\lvert\digamma_{\mathrm{gau}}\rvert^{2}=1$. Two different freedoms must be kept apart: the field's own shift, which the mass breaks at both rungs, and the external group's phase rotation, which is a symmetry at the charged rung and is what makes the carrier complex.
 
 ## The Structural Consequence: What the Carrier's Doubling Costs
 
@@ -161,7 +161,7 @@ The carrier. Eight real parameters against the fluid's four; the action puts the
 | $\lvert A\rvert^{2}$ | The algebraic term's argument; coupling-blind |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $ϙ$ | Coupling; minus the electric charge |
-| $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ | The external gauge element; a symmetry |
+| $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ | The external gauge element; a symmetry |
 | $\theta_{\mathrm{pha}}$ | The carrier's phase; appears squared in the divergence |
 | $\mathcal L_{\mathrm{gco}}$ | The Lagrangian density in the fluid variables with the connection |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |

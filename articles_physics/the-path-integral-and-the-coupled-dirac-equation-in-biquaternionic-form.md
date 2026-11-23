@@ -154,7 +154,7 @@ The limit of the statement. It holds for a potential that is constant on the reg
 The stationary phase is the Lorentz path. Stationarity of $S_0+S_{\mathrm{gco}}$ with respect to the trajectory, with the odd variables integrated out, gives
 
 $$
-\tfrac12\sum_{\jmath}\eta_{\imath\jmath}\ddot R_{\jmath}=-ϙ\sum_{\jmath} F_{\imath\jmath}\dot R_{\jmath},
+\tfrac12\sum_{\jmath}\delta_{\imath\jmath}\ddot R_{\jmath}=-ϙ\sum_{\jmath} F_{\imath\jmath}\dot R_{\jmath},
 \qquad
 F_{\imath\jmath}=\frac{\partial A_{\jmath}}{\partial R_{\imath}}-\frac{\partial A_{\imath}}{\partial R_{\jmath}},
 $$
@@ -268,7 +268,7 @@ The curvature reaches the spin, and the semiclassical evaluation places it there
 | $\mathcal{F}[x]$ | Spin factor, the path-ordered algebra-valued weight |
 | $\Gamma$ | Real gauge function; $\tilde A_\Phi=-\tilde\nabla_\Phi\Gamma$ for an exact potential |
 | $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ | Gauge angle |
-| $\eta_{\imath\jmath}$ | The metric on the four slots, used in the Lorentz equation and in the kinetic normalisation |
+| $\delta_{\imath\jmath}$ | The metric on the four slots, used in the Lorentz equation and in the kinetic normalisation |
 | $T$ | Proper time; $x(\tau)$ the worldline |
 | $\nu_m=\frac{mc}{h}$ | Mass parameter |
 

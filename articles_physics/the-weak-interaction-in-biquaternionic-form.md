@@ -158,12 +158,12 @@ The observation is worth recording because it sharpens what "chiral" means in th
 
 ### Parity reverses the axial weight
 
-The framework's parity operation reverses the three spatial directions and fixes time; on the Dirac module it is the internal factor $\eta_P=iR_{\vec e_x}$, which satisfies $\eta_PP_R=P_L\eta_P$ and so exchanges the two projectors, as *The Reflection and the Rotation in Biquaternionic Form* establishes. In the algebra the exchange is arithmetic on one unit: conjugation by $R_{\vec e_x}$ sends $\vec e_x\vec\Pi_{\mathrm{nil},1}\vec e_x=-\vec\Pi_{\mathrm{nil},2}$ and $\vec e_x\vec\Pi_{\mathrm{nil},2}\vec e_x=-\vec\Pi_{\mathrm{nil},1}$, hence $\eta_P\xi\eta_P=-\xi$, and each basis operator $L_aR_{\vec\Pi_{\mathrm{nil},1}}$ becomes $L_aR_{\vec\Pi_{\mathrm{nil},2}}$ with the left multiplier untouched. On a vertex of weights $(g_V,g_A)$ the effect is
+The framework's parity operation reverses the three spatial directions and fixes time; on the Dirac module it is the internal factor $\varsigma_{\mathrm{pty}}=iR_{\vec e_x}$, which satisfies $\varsigma_{\mathrm{pty,P}}P_R=P_L\varsigma_{\mathrm{pty}}$ and so exchanges the two projectors, as *The Reflection and the Rotation in Biquaternionic Form* establishes. In the algebra the exchange is arithmetic on one unit: conjugation by $R_{\vec e_x}$ sends $\vec e_x\vec\Pi_{\mathrm{nil},1}\vec e_x=-\vec\Pi_{\mathrm{nil},2}$ and $\vec e_x\vec\Pi_{\mathrm{nil},2}\vec e_x=-\vec\Pi_{\mathrm{nil},1}$, hence $\varsigma_{\mathrm{pty}}\xi\varsigma_{\mathrm{pty}}=-\xi$, and each basis operator $L_aR_{\vec\Pi_{\mathrm{nil},1}}$ becomes $L_aR_{\vec\Pi_{\mathrm{nil},2}}$ with the left multiplier untouched. On a vertex of weights $(g_V,g_A)$ the effect is
 
 $$
-\eta_P\,\Gamma_t(g_V-g_A\xi)\,\eta_P=\Gamma_t(g_V+g_A\xi),
+\varsigma_{\mathrm{pty}}\,\Gamma_t(g_V-g_A\xi)\,\varsigma_{\mathrm{pty}}=\Gamma_t(g_V+g_A\xi),
 \qquad
-\eta_P\,\Gamma_\imath(g_V-g_A\xi)\,\eta_P=-\Gamma_\imath(g_V+g_A\xi),
+\varsigma_{\mathrm{pty}}\,\Gamma_\imath(g_V-g_A\xi)\,\varsigma_{\mathrm{pty}}=-\Gamma_\imath(g_V+g_A\xi),
 $$
 
 both verified exactly. Parity **reverses the axial weight**, $g_A\mapsto-g_A$, and the sign on the spatial components is the vector's own sign flip, $\Gamma_t\mapsto+\Gamma_t$ and $\Gamma_\imath\mapsto-\Gamma_\imath$. It does not annihilate a chiral vertex; it exchanges $V-A$ with $V+A$.
@@ -243,7 +243,7 @@ What the framework does not supply is the coupling, the scale, the selection of 
 | $G_{\mathrm F}=1.1663787\times10^{-5}$ GeV$^{-2}$ | Fermi constant |
 | $v=(\sqrt2\,G_{\mathrm F})^{-1/2}=246.22$ GeV | Electroweak scale |
 | $g_V=T_3-2ϙ\sin^2\theta_W$, $g_A=T_3$ | Neutral current weights; the charged current has $g_V=g_A=1$ |
-| $\eta_P=iR_{\vec e_x}$ | Internal parity factor, $\eta_P^2=I_4$, $\eta_PP_R=P_L\eta_P$, $\eta_P\xi\eta_P=-\xi$ |
+| $\varsigma_{\mathrm{pty}}=iR_{\vec e_x}$ | Internal parity factor, $\varsigma_{\mathrm{pty}}^2=I_4$, $\varsigma_{\mathrm{pty,P}}P_R=P_L\varsigma_{\mathrm{pty}}$, $\varsigma_{\mathrm{pty}}\xi\varsigma_{\mathrm{pty}}=-\xi$ |
 | $Q_W=1-4\sin^2\theta_W$ | Weak charge of the electron; **its measured value is an input, and this article carries the symbol** |
 | $\tau_{\imath}=192\pi^3/(G_{\mathrm F}^2m_\mu^5)$ | Muon lifetime at the tree level |
 | $\Gamma(\pi\to l\nu_{\mathrm{neu},l})=G_{\mathrm F}^2f_\pi^2m_\pi m_l^2(1-m_l^2/m_\pi^2)^2/(8\pi)$ | Pion decay rate, $f_\pi=130.2$ MeV |

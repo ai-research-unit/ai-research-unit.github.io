@@ -71,7 +71,7 @@ $$
 
 The covariant derivative is where the masses live: it contains the gauge fields multiplied by the generators, and when $\omicron_{\mathrm{hgs}}$ is replaced by its vacuum value the product becomes a constant matrix times $W_{\imath} W_{\imath}$.
 
-The mass term from the vacuum. Writing $\omicron_{\mathrm{hgs}}=\langle\omicron_{\mathrm{hgs}}\rangle+\eta$ and keeping the quadratic terms,
+The mass term from the vacuum. Writing $\omicron_{\mathrm{hgs}}=\langle\omicron_{\mathrm{hgs}}\rangle+\digamma_{\mathrm{hgs}}$ and keeping the quadratic terms,
 
 $$
 \sum_{\imath}\bigl(D_{\imath}\omicron_{\mathrm{hgs}}\bigr)^{\dagger}\bigl(D_{\imath}\omicron_{\mathrm{hgs}}\bigr)\supset\frac{v^2}{8}\Bigl[g^2\bigl(W_{1,\imath} W_{1,\imath}+W_{2,\imath} W_{2,\imath}\bigr)+\bigl(gW_{3,\imath}-g_{\mathrm Y}B_{\imath}\bigr)^{2}\Bigr],

@@ -38,7 +38,7 @@ $$
 
 and the integral is $\int\mathcal{D}\tilde\Xi\,\mathcal{D}\tilde\Xi^{*}\exp(\frac{2\pi iS}{h})$ with the free measure. The kinetic term is the free one and that is the metric's doing: the temporal connection is absorbed in $D_t$ and the kinetic term uses $\partial_{t'}$, so the antisymmetrisation that makes it Hermitian is untouched by the coupling.
 
-**The gradient term is a sum of moduli and stays a sum of moduli.** For each $\eta$,
+**The gradient term is a sum of moduli and stays a sum of moduli.** For each $\digamma_{\mathrm{tst}}$,
 
 $$
 \mathrm{Sc}\bigl((D_\imath\tilde\Xi)^{*}(D_\imath\tilde\Xi)\bigr)=\sum_{\imath=0}^{3}\bigl|(D_\imath\tilde\Xi)_{\imath}\bigr|^{2}\ \ge 0,

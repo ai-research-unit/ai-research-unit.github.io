@@ -29,7 +29,7 @@ The four **generators** are the actions
 $$
 \tilde Q\longmapsto i\,e_{\imath}\,\tilde Q\,\vec e_{\mathrm{spt}(\imath)},
 \qquad
-\mathrm{spt}(t)=x,\quad\mathrm{spt}(\eta)=y .
+\mathrm{spt}(t)=x,\quad\mathrm{spt}(\varsigma_{\mathrm{spt}})=y .
 $$
 
 They are a frame, not the algebra. They are a choice of four actions, made once here and used throughout, and the choice is not a default of the notation. The three spatial units have three different jobs: $\vec e_x$ is the right multiplier of the temporal generator, $\vec e_y$ the common right multiplier of the three spatial ones, and $\vec e_z$ appears in the chirality basis operator and in the current's last factor, and nowhere else in the frame. Each generator carries a spatial unit on the right, so each of the four exchanges the value of an element.
@@ -451,7 +451,7 @@ The biquaternion interpretation is a naming of the two structures: the split of 
 |---|---|
 | $\tilde{Ξ}$, $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The field, an element of $\mathbb{B}$; the value is the subscript, $L$ the minus one and $R$ the plus one |
 | $e_{\imath}$, $\varepsilon_{\imath}$, $\delta_{\imath\jmath}$ | The four units, $e_t$ and $\vec e_\imath$; the plain weight of the conventions, and the Kronecker delta |
-| $\vec e_{\mathrm{spt}(\imath)}$ | The frame's right multipliers, with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$ |
+| $\vec e_{\mathrm{spt}(\imath)}$ | The frame's right multipliers, with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$ |
 | $ie_{\imath}\,\cdot\,\vec e_{\mathrm{spt}(\imath)}$, the action $\tilde Q\mapsto ie_{\imath}\tilde Q\vec e_{\mathrm{spt}(\imath)}$ | The four generators of the frame; each exchanges the value |
 | $-i\,\cdot\,\vec e_z$, the action $\tilde Q\mapsto-i\tilde Q\vec e_z$ | The chirality basis operator, named once; it keeps the value |
 | $\bar{\tilde{Ξ}}\,X=\operatorname{Sc}(\tilde{Ξ}^*iX\vec e_x)$ | The pairing: a scalar part of a product of elements; a derived form of this article |

@@ -136,16 +136,16 @@ whose product is the same $G\Pi_1\Pi_2$, so the function $\Pi$ of the coordinate
 
 ## The Generating System and the Gauge Fields
 
-The physically relevant class of differentiable functions is obtained by a **spinor splitting** of the two-sided condition. Writing the function matrix as $F=\{\eta_1,\eta_2\}$ and the right semi-derivative as $R=\{\zeta_1,\zeta_2\}$ reduces the matrix condition to two equations of the same type,
+The physically relevant class of differentiable functions is obtained by a **spinor splitting** of the two-sided condition. Writing the function matrix as $F=\{\varsigma_{\mathrm{fnc,1}},\varsigma_{\mathrm{fnc,2}}\}$ and the right semi-derivative as $R=\{\zeta_1,\zeta_2\}$ reduces the matrix condition to two equations of the same type,
 
 $$
-d\eta_a = Ξ\, dZ\, \zeta_a , \qquad a=1,2 ,
+d\varsigma_{\mathrm{fnc,a}} = Ξ\, dZ\, \zeta_a , \qquad a=1,2 ,
 $$
 
-with a common field $Ξ$ (the left semi-derivative) transforming as a complex four-vector and $\eta,\zeta$ as $SL(2,\mathbb{C})$-spinors. Every solution of the full condition can be built from a solution of a **single** such spinor system with constant proportionality between the two pairs, so the physically nontrivial solutions all come from the **fundamental spinor system**
+with a common field $Ξ$ (the left semi-derivative) transforming as a complex four-vector and $\varsigma_{\mathrm{fnc}},\zeta$ as $SL(2,\mathbb{C})$-spinors. Every solution of the full condition can be built from a solution of a **single** such spinor system with constant proportionality between the two pairs, so the physically nontrivial solutions all come from the **fundamental spinor system**
 
 $$
-d\eta = Ξ\, dZ\, \zeta .
+d\varsigma_{\mathrm{fnc}} = Ξ\, dZ\, \zeta .
 $$
 
 On the real slice $Z\mapsto X=X^{\dagger}$ with the Minkowski metric this is the **generating system of equations** (GSE) of the programme. It is a system of eight differential equations for six unknown functions — the two spinor components and the four components of $Ξ$ — and is therefore **over-determined**, which is the source of everything that follows.
@@ -852,7 +852,7 @@ The programme's geometry is **induced**: the complex invariant $\sigma=(z_1)^2+(
 | $\varpi$, $A$ | Frequency and amplitude of the wave-like solution; the source writes the frequency $\Omega$, reserved here for the connection |
 | $1/(\varpi A e)$, $2\pi/\varpi$ | Radius and lead of the wave-like neutral-helix singular set |
 | $G^2\kappa_0^2+\kappa_1^2-b^2G^2$ | Generating function of the four-mode two-charge example, annihilating at $r'_t=b/\sqrt2$ |
-| $\eta,\zeta,Ξ$ | Biquaternion spinors and the complex four-vector of the fundamental spinor system |
+| $\varsigma_{\mathrm{fnc}},\zeta,Ξ$ | Biquaternion spinors and the complex four-vector of the fundamental spinor system |
 | $\Omega=\tilde{Ξ}\,dZ$ | $\mathbb{B}$-valued connection; $\tilde{Ξ}$ the gauge potential |
 | $R=d\Omega-\Omega\wedge\Omega$ | Curvature; weakly self-dual on GSE solutions |
 | $\vec E$, $\vec H$ | Complex field strengths of the programme, the source's tilde; $\mathbb C$-valued throughout, and no real field appears in this article |

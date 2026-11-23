@@ -458,7 +458,7 @@ The rule used in this article is one sentence: **a name denotes a particle, so e
 | $K^0$ and $\bar K^0$, masses | $\lvert m_{K^0}-m_{\bar K^0}\rvert<3.5\times10^{-12}$ eV |
 | antihydrogen $1S$–$2S$ | agrees with hydrogen to $2\times10^{-12}$ |
 | antihydrogen in free fall | acceleration agrees with $g$ to about $20$ per cent |
-| antimatter in bulk | none beyond a few antihelium nuclei; baryon asymmetry $\eta\approx6.1\times10^{-10}$ |
+| antimatter in bulk | none beyond a few antihelium nuclei; baryon asymmetry $\digamma_{\mathrm{bau}}\approx6.1\times10^{-10}$ |
 
 The equality of the first two rows is what $CPT$ forces and what the model's exact $CP$ closure reproduces cell by cell. The last row is the one thing the conjugate grid does not explain: the spectrum is symmetric under $CP$, and the universe is not.
 

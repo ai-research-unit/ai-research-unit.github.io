@@ -48,9 +48,9 @@ $$
 $$
 The two signs are the two helicities, the two senses of rotation about the propagation axis. The companion photon article draws the representation-theoretic consequences — the helicity operator, whose spectral values on the complexified vector part are $\{+1,0,-1\}$, and the fact that the polarization *states* are not idempotents of $\mathbb{B}_{\Psi}$ and are not elements of it, even though the helicity *observable* has its representative there. The operator is
 $$
-\lambda = \vec u_\Phi\cdot\vec S = \tfrac{i}{2}\mathrm{ad}_{\vec u_\Phi} ,
+\digamma_{\mathrm{hlc}} = \vec u_\Phi\cdot\vec S = \tfrac{i}{2}\mathrm{ad}_{\vec u_\Phi} ,
 \qquad
-\lambda\varepsilon = \mathrm{Vect}\bigl(i\vec u_\Phi\varepsilon\bigr) ,
+\digamma_{\mathrm{hlc}}\varepsilon = \mathrm{Vect}\bigl(i\vec u_\Phi\varepsilon\bigr) ,
 $$
 with the spin measured in units of $\frac{h}{2\pi}$ and the spin-one generators $\vec S_\imath = i\vec e_\imath$, so that the three expressions agree on the transverse plane; the identity $\tfrac{i}{2}\mathrm{ad}_{\vec u_\Phi}\varepsilon = i\vec u_\Phi\varepsilon$ holds because $\mathrm{ad}_{\vec u_\Phi}\varepsilon = 2\vec u_\Phi\varepsilon$ for a transverse $\varepsilon$. Its representative in $\mathbb{B}_{\Psi}$ is the element $i\vec u_\Phi$: left multiplication by that element, followed by the vector part, has eigenvalues $\pm1$ on $\varepsilon_{\mathrm{fop},\pm}$ and annihilates the longitudinal direction. Here the relation is used as the algebraic definition of circular polarization and as the reason the polarization sums are geometric.
 
@@ -58,7 +58,7 @@ with the spin measured in units of $\frac{h}{2\pi}$ and the spin-one generators 
 
 For any two orthonormal vectors spanning the transverse plane, the completeness relation is the transverse projector,
 $$
-\sum_{k=1,2}\varepsilon_{\mathrm{fop},i}^{(\lambda)}\varepsilon_{\mathrm{fop},j}^{(\lambda)} = \delta_{ij} - \vec u_{\Phi,i}\vec u_{\Phi,j} ,
+\sum_{k=1,2}\varepsilon_{\mathrm{fop},i}^{(\mathrm{h})}\varepsilon_{\mathrm{fop},j}^{(\mathrm{h})} = \delta_{ij} - \vec u_{\Phi,i}\vec u_{\Phi,j} ,
 $$
 and the circular pair obeys the same sum. In the framework this projector is native: the orthogonal complement of $\vec u_\Phi$ inside the vector part of $\mathbb{B}_{\Phi}$ is defined by the algebra's own biquaternion norm, and the companion photon article checks the same identity on the rational directions $(3,4,0)/5$ and $(1,2,2)/3$.
 
@@ -145,7 +145,7 @@ $$
 $$
 The amplitude's polarization dependence is therefore a single pairing of two elements of $\mathbb{B}_{\Phi}$, and the cross-section is its modulus squared, exactly as a quantum-mechanical cross-section is the modulus squared of an amplitude. Two features of the formula are worth stating. It factors: incident polarization, propagation direction, outgoing direction, and outgoing polarization enter only through the one scalar $\varepsilon_{\mathrm{fop},\mathrm{out}}\cdot\varepsilon_{\mathrm{fop}}$. And its sum over the outgoing polarizations is a **projector**: using the completeness relation gives
 $$
-\sum_{k_{\mathrm{out}}}\bigl|\varepsilon_{\mathrm{fop}}\cdot\varepsilon_{\mathrm{fop},\mathrm{out}}^{(\lambda_{\mathrm{out}})}\bigr|^2
+\sum_{k_{\mathrm{out}}}\bigl|\varepsilon_{\mathrm{fop}}\cdot\varepsilon_{\mathrm{fop},\mathrm{out}}^{(\mathrm{h}_{\mathrm{out}})}\bigr|^2
 = 1 - \bigl(\varepsilon_{\mathrm{fop}}\cdot\vec u_{\mathrm{out},k}\bigr)^2 = \sin^2\theta_{\mathrm{sct}} ,
 $$
 where $\theta_{\mathrm{sct}}$ is the angle between the incident polarization and the outgoing propagation direction; this was verified on one hundred random geometries to $10^{-15}$. For an incident beam polarized **in** the scattering plane, $\theta_{\mathrm{sct}}$ is the complement of the scattering angle, the sum is $\cos^2\theta$, and it vanishes at $90^\circ$ — no light is scattered along the direction of the incident polarization, which is the dipole's null axis. For an incident beam polarized **perpendicular** to the plane, $\theta_{\mathrm{sct}} = \pi/2$ and the sum is one at every angle, so the scattered light stays fully polarized in that direction.
@@ -372,7 +372,7 @@ The **photon polarization** is a pure vector of $\mathbb{B}_{\Phi}$, either real
 
 The **coherence biquaternion** $\tilde{Ϛ}_{\Psi}$ **is an element of $\mathbb{B}_{\Psi}$** — the state element whose direction is the normalised Stokes vector and whose scale is the intensity $S_0$ — and it is the object that carries the beam's polarization state including partial coherence. Its biquaternion norm is the mass-shell-like invariant $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \frac14(S_0^2-|\vec S|^2)$, so the polarized states are the cone and the unpolarized state is the axis. The beam's coherence therefore lives on the same cone as the framework's spin-$\tfrac12$ idempotents and as the electron's spin biquaternion of the previous section — the Stokes vector playing the role of the Bloch vector — while the photon's own polarization vectors stay in $\mathbb{B}_{\Phi}$. That is the structural reason the Stokes algebra and the biquaternion-norm algebra agree.
 
-The **helicity operator** is $\lambda = \tfrac{i}{2}\mathrm{ad}_{\vec u_\Phi}$, the action $\lambda\varepsilon = \mathrm{Vect}(i\vec u_\Phi\varepsilon)$, represented in $\mathbb{B}_{\Psi}$ by $i\vec u_\Phi \in \mathbb{B}_{\Psi}$; the two physical polarizations are its $\pm1$ eigenvectors and the longitudinal direction is its zero eigenvector, and it is the generator of the circular-to-linear geometry: the azimuthal modulation $\cos2\theta_{\mathrm{azm}}$ of the Compton cross-section is a statement about this operator's eigenspaces.
+The **helicity operator** is $\digamma_{\mathrm{hlc}} = \tfrac{i}{2}\mathrm{ad}_{\vec u_\Phi}$, the action $\digamma_{\mathrm{hlc}}\varepsilon = \mathrm{Vect}(i\vec u_\Phi\varepsilon)$, represented in $\mathbb{B}_{\Psi}$ by $i\vec u_\Phi \in \mathbb{B}_{\Psi}$; the two physical polarizations are its $\pm1$ eigenvectors and the longitudinal direction is its zero eigenvector, and it is the generator of the circular-to-linear geometry: the azimuthal modulation $\cos2\theta_{\mathrm{azm}}$ of the Compton cross-section is a statement about this operator's eigenspaces.
 
 The **geometric factor** of the scattering is the transverse projector $\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$, which is the polarization sum, and the cross-section's polarization dependence is the pairing $|\mathrm{Sc}(\vec\varepsilon_{\mathrm{out}}^{*}\vec\varepsilon)|^2$ of two material-sector vectors. The unpolarized average replaces the squared pairing by the product of two projectors, $\tfrac{r_e^2}{2}P'_{ij}P_{ij}$ with $P'$ the incident and $P$ the outgoing transverse projector, and the integral of that product over the sphere is the total cross-section. For an incident beam along $\vec e_z$ the product is $P'_{ij}P_{ij} = 1+\cos^2\theta$, whose integral is $16\pi/3$, so the cross-section is $\tfrac{r_e^2}{2}\cdot\tfrac{16\pi}{3} = \tfrac{8\pi}{3}r_e^2$; it is the integral of the product of the two projectors, not of either trace alone.
 
@@ -560,7 +560,7 @@ which sum back to $D(p)$, each being a projection of rank one; the asymmetry is 
 | $\tilde P_{\Phi,e}$ | Electron four-momentum; $\langle\tilde P_{\Phi,e}\rangle_{\natural} = -m^2c^2$; at rest $\tilde P_{\Phi,e} = imc\,e_t$ |
 | $\varepsilon_{\mathrm{fop}}, \varepsilon_{\mathrm{fop},\mathrm{out}}$ | Incident and outgoing linear polarization unit vectors |
 | $\varepsilon_{\mathrm{fop},\pm} = (\varepsilon_{\mathrm{fop},1}\pm i\varepsilon_{\mathrm{fop},2})/\sqrt2$ | Circular polarizations; $\vec u_\Phi\varepsilon_{\mathrm{fop},\pm} = \mp i\varepsilon_{\mathrm{fop},\pm}$ |
-| $\lambda = \vec u_\Phi\cdot\vec S = \tfrac{i}{2}\mathrm{ad}_{\vec u_\Phi}$, with $\lambda\varepsilon = \mathrm{Vect}(i\vec u_\Phi\varepsilon)$ | Helicity operator; spectral values $\{+1,0,-1\}$, representative $i\vec u_\Phi\in\mathbb{B}_{\Psi}$ |
+| $\digamma_{\mathrm{hlc}} = \vec u_\Phi\cdot\vec S = \tfrac{i}{2}\mathrm{ad}_{\vec u_\Phi}$, with $\digamma_{\mathrm{hlc}}\varepsilon = \mathrm{Vect}(i\vec u_\Phi\varepsilon)$ | Helicity operator; spectral values $\{+1,0,-1\}$, representative $i\vec u_\Phi\in\mathbb{B}_{\Psi}$ |
 | $\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$ | Transverse projector; the polarization sum |
 | $S_0,\vec S$ | Stokes parameters |
 | $\tilde{Ϛ}_{\Psi}$ | Coherence biquaternion, the state element of $\mathbb{B}_{\Psi}$ scaled by the intensity $S_0$; $\vec S=\sum_{\imath\in\{x,y,z\}} S_\imath\vec e_\imath$ is its vector part |

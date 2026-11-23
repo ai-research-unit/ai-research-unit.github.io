@@ -39,9 +39,9 @@ The survey states the point in one sentence: the framework carries a Dirac pair 
 ### The Direct Sum
 
 $$
-\Psi=\begin{pmatrix}\xi\\ \eta\end{pmatrix},
+\Psi=\begin{pmatrix}\xi\\ \upsilon_{\mathrm{spr}}\end{pmatrix},
 \qquad
-\xi\in(\tfrac12,0),\quad \eta\in(0,\tfrac12),
+\xi\in(\tfrac12,0),\quad \upsilon_{\mathrm{spr}}\in(0,\tfrac12),
 $$
 
 of complex dimension $2+2=4$. The direct sum is a representation, and it is the smallest representation that contains both chiralities.
@@ -54,7 +54,7 @@ $$
 \mathbb{B}\cong M_2(\mathbb{C})\cong\mathbb{C}^{2}\otimes\mathbb{C}^{2*}\cong\mathbb{C}^{4},
 $$
 
-so the four complex dimensions of the algebra are the four of the Dirac spinor. In that reading $\xi$ is the column index and $\eta$ the row index, and the two chiralities are the two tensor factors' transformations. That is why the algebra's regular representation is Dirac and not Weyl.
+so the four complex dimensions of the algebra are the four of the Dirac spinor. In that reading $\xi$ is the column index and $\upsilon_{\mathrm{spr}}$ the row index, and the two chiralities are the two tensor factors' transformations. That is why the algebra's regular representation is Dirac and not Weyl.
 
 ### The Dirac Matrices
 
@@ -78,11 +78,11 @@ The chiral algebra is checked directly: $\{\gamma_5,\gamma_{\imath}\}=0$ for all
 
 $$
 m\,\Psi^{\dagger}\gamma_{0}\Psi
-=m\bigl(\xi^{\dagger}\eta+\eta^{\dagger}\xi\bigr)
-=2m\,\mathrm{Re}\bigl(\xi^{\dagger}\eta\bigr).
+=m\bigl(\xi^{\dagger}\upsilon_{\mathrm{spr}}+\upsilon_{\mathrm{spr}}^{\dagger}\xi\bigr)
+=2m\,\mathrm{Re}\bigl(\xi^{\dagger}\upsilon_{\mathrm{spr}}\bigr).
 $$
 
-The bilinear is off-diagonal in the two halves: it pairs $\xi$ with $\eta$ and $\eta$ with $\xi$, and it never pairs a half with itself. The verification: with $\xi=(1,0)$ and $\eta=(0.3+0.2i,0.5)$ the bilinear $\Psi^{\dagger}\gamma_{0}\Psi$ is $0.600000000$, and $2\mathrm{Re}(\xi^{\dagger}\eta)$ is $0.600000000$.
+The bilinear is off-diagonal in the two halves: it pairs $\xi$ with $\upsilon_{\mathrm{spr}}$ and $\upsilon_{\mathrm{spr}}$ with $\xi$, and it never pairs a half with itself. The verification: with $\xi=(1,0)$ and $\upsilon_{\mathrm{spr}}=(0.3+0.2i,0.5)$ the bilinear $\Psi^{\dagger}\gamma_{0}\Psi$ is $0.600000000$, and $2\mathrm{Re}(\xi^{\dagger}\upsilon_{\mathrm{spr}})$ is $0.600000000$.
 
 So the mass is a **coupling** and not a self-energy: it has no diagonal part at all.
 
@@ -127,7 +127,7 @@ $$
 and
 
 $$
-P_{+}\Psi=\begin{pmatrix}0\\ \eta\end{pmatrix},
+P_{+}\Psi=\begin{pmatrix}0\\ \upsilon_{\mathrm{spr}}\end{pmatrix},
 \qquad
 P_{-}\Psi=\begin{pmatrix}\xi\\ 0\end{pmatrix}
 $$
@@ -190,14 +190,14 @@ This article stops at the carrier and the coupling. The equation itself — the 
 
 ## Summary
 
-A Weyl spinor is one chirality; the Dirac spinor is the direct sum of the two inequivalent spinor representations and is, in the algebra, the algebra itself as a four-dimensional complex space. The mass term is the off-diagonal bilinear $m\Psi^{\dagger}\gamma_{0}\Psi=2m\mathrm{Re}(\xi^{\dagger}\eta)$, verified to vanish on the diagonal and to pair the two halves, and it is parity-allowed because parity exchanges the halves. In the field equations the mass is the rate at which one chirality converts into the other, with frequency $\nu_m=\frac{mc}{h}$, and the massless limit decouples the two. Chirality is the $\gamma^{5}$ eigenvalue and coincides with helicity only for a massless particle. The Majorana option is the antilinear self-pairing, available for a single Weyl spinor and physically realised, and it is a different pairing from the Dirac one, built on a different real structure.
+A Weyl spinor is one chirality; the Dirac spinor is the direct sum of the two inequivalent spinor representations and is, in the algebra, the algebra itself as a four-dimensional complex space. The mass term is the off-diagonal bilinear $m\Psi^{\dagger}\gamma_{0}\Psi=2m\mathrm{Re}(\xi^{\dagger}\upsilon_{\mathrm{spr}})$, verified to vanish on the diagonal and to pair the two halves, and it is parity-allowed because parity exchanges the halves. In the field equations the mass is the rate at which one chirality converts into the other, with frequency $\nu_m=\frac{mc}{h}$, and the massless limit decouples the two. Chirality is the $\gamma^{5}$ eigenvalue and coincides with helicity only for a massless particle. The Majorana option is the antilinear self-pairing, available for a single Weyl spinor and physically realised, and it is a different pairing from the Dirac one, built on a different real structure.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\xi\in(\tfrac12,0)$, $\eta\in(0,\tfrac12)$ | the two Weyl spinors |
-| $\Psi=(\xi,\eta)$ | the Dirac pair |
+| $\xi\in(\tfrac12,0)$, $\upsilon_{\mathrm{spr}}\in(0,\tfrac12)$ | the two Weyl spinors |
+| $\Psi=(\xi,\upsilon_{\mathrm{spr}})$ | the Dirac pair |
 | $\gamma^{5}$ | the chirality grading, $\mathrm{diag}(-1,-1,+1,+1)$ |
 | $P_{\pm}=\tfrac12(1\pm\gamma^{5})$ | the chirality projectors |
 | $\nu_m=\frac{mc}{h}$ | the mass wave number |

@@ -377,7 +377,7 @@ The physical names are those of the corpus's conventions. The choice of the anti
 
 ## Further Reading
 
-In the mathematics corpus. The seven articles of the source table, and [The Spectrum](../articles_maths/the-spectrum-of-a-biquaternion.html) for the eigenvalue pair $\lambda_\pm=Q_t\pm iB$, which this entry names and does not read.
+In the mathematics corpus. The seven articles of the source table, and [The Spectrum](../articles_maths/the-spectrum-of-a-biquaternion.html) for the eigenvalue pair $\eta_{\pm}=Q_t\pm iB$, which this entry names and does not read.
 
 In this category. The entries that take up what this one states in brief are [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html) and [The Pauli Pair and the Gamma Frame: Which Statements Survive Conjugation](the-pauli-pair-and-the-gamma-frame-which-statements-survive-conjugation.html) for the two displays, [Idempotents, Ideals and Observables](idempotents-ideals-and-observables.html) for the idempotents and the Peirce corners, [The Spectrum and the Two Modes](the-spectrum-and-the-two-modes.html) for the eigenvalue pair and the two predicates, [The N Norm: Mass, Angle and the Cone](the-n-norm-mass-angle-and-the-cone.html) for the norm, [Four-Vectors and the Interval](four-vectors-and-the-interval.html) for the real slice and its metric, and [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) for the Hermitian slice and the weight.
 

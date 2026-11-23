@@ -120,7 +120,7 @@ Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi\varrho}{\varrho}\ \pro
 p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}\ \propto\ \frac{1}{m},
 $$
 
-and the quantum stress $\sigma^{Q}_{ij}$ carries the same factor. So the whole quantum layer of a fixed field diverges as the mass vanishes. Checked on the two-mode superposition $\rho_{\mathrm{num}}=1+\eta^{2}+2\eta\cos(\Delta k\,x)$ with $\eta=0.2$ and $\Delta k=1$ in units of $\nu_m$:
+and the quantum stress $\sigma^{Q}_{ij}$ carries the same factor. So the whole quantum layer of a fixed field diverges as the mass vanishes. Checked on the two-mode superposition $\rho_{\mathrm{num}}=1+\digamma_{\mathrm{amp}}^{2}+2\digamma_{\mathrm{amp}}\cos(\Delta k\,x)$ with $\digamma_{\mathrm{amp}}=0.2$ and $\Delta k=1$ in units of $\nu_m$:
 
 | $m$ | $Q_{\mathrm{qnt}}$ | $mQ_{\mathrm{qnt}}$ |
 | --- | --- | --- |

@@ -175,8 +175,8 @@ where $H$ is the matrix image of $\tilde H_\Psi$. On $\mathbb{B}_{\Psi}$ the sta
 A general state $\tilde{Ϛ}_{\Psi}$ is a convex combination of pure states,
 
 $$
-\tilde{Ϛ}_{\Psi} = \lambda_+\,\tilde\Pi_{\mathrm{id},1}(\vec u_s) + \lambda_-\,\tilde\Pi_{\mathrm{id},2}(\vec u_s),
-\qquad \lambda_\pm = \tfrac{1}{2}\bigl(1\pm|\vec s_{\Psi}|\bigr),
+\tilde{Ϛ}_{\Psi} = \eta_{+}\,\tilde\Pi_{\mathrm{id},1}(\vec u_s) + \eta_{-}\,\tilde\Pi_{\mathrm{id},2}(\vec u_s),
+\qquad \eta_{\pm} = \tfrac{1}{2}\bigl(1\pm|\vec s_{\Psi}|\bigr),
 $$
 
 when $\vec s_{\Psi}\neq0$, and is the maximally mixed state $\tfrac12 e_t$ when $\vec s_{\Psi}=0$. This is the spectral decomposition on the module: the two eigenvectors are the rays of $\vec u_s$ and $-\vec u_s$. The correspondence is exactly the ordinary one between a density operator and its eigenvectors, expressed in the algebra. The Bloch ball is the image of the unit-weight positive cone, and its boundary is the set of rank-one projectors; the companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone* develops that geometry from the biquaternion norm, and it is recalled below only as far as the module requires.

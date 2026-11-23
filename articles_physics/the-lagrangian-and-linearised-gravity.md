@@ -12,7 +12,7 @@ What is not done. Nothing is quantised. There is no graviton operator, no Fock s
 
 ## Conventions
 
-**The conventions are the parent's, with one exception.** The interval's array is $\eta_{\imath\jmath}=\mathrm{diag}(-1,+1,+1,+1)$, and it is the one place in this article where a metric other than the corpus's $\delta_{\imath\jmath}=(1,1,1,1)$ is used: it is the interval's array, kept until the article is rewritten in the corpus's. It is in the length units of the material sector, with the interval $-c^{2}\mathrm{d}r'^{2}_{t}+\mathrm{d}r_x^{2}+\mathrm{d}r_y^{2}+\mathrm{d}r_z^{2}$. The perturbation is $h_{\imath\jmath}$, symmetric, with $\lvert h_{\imath\jmath}\rvert\ll1$; the trace is $h=\sum_{\imath}\eta_{\imath\imath}h_{\imath\imath}$ and the trace-reversed variable is $\bar h_{\imath\jmath}=h_{\imath\jmath}-\tfrac12\eta_{\imath\jmath}h$. A repeated low index is summed with the weight $\eta_{\imath\imath}$ of that index, so that $\partial_\imath h_{\imath\jmath}\partial_\imath h_{\imath\jmath}=\sum_{k,\imath,\jmath}\eta_{\rho\rho}\eta_{\imath\imath}\eta_{\jmath\jmath}(\partial_\imath h_{\imath\jmath})^{2}$; no index is raised.
+**The conventions are the parent's, with one exception.** The interval's array is $\delta_{\imath\jmath}=\mathrm{diag}(-1,+1,+1,+1)$, and it is the one place in this article where a metric other than the corpus's $\delta_{\imath\jmath}=(1,1,1,1)$ is used: it is the interval's array, kept until the article is rewritten in the corpus's. It is in the length units of the material sector, with the interval $-c^{2}\mathrm{d}r'^{2}_{t}+\mathrm{d}r_x^{2}+\mathrm{d}r_y^{2}+\mathrm{d}r_z^{2}$. The perturbation is $h_{\imath\jmath}$, symmetric, with $\lvert h_{\imath\jmath}\rvert\ll1$; the trace is $h=\sum_{\imath}\delta_{\imath\imath}h_{\imath\imath}$ and the trace-reversed variable is $\bar h_{\imath\jmath}=h_{\imath\jmath}-\tfrac12\delta_{\imath\jmath}h$. A repeated low index is summed with the weight $\delta_{\imath\imath}$ of that index, so that $\partial_\imath h_{\imath\jmath}\partial_\imath h_{\imath\jmath}=\sum_{k,\imath,\jmath}\delta_{\rho\rho}\delta_{\imath\imath}\delta_{\jmath\jmath}(\partial_\imath h_{\imath\jmath})^{2}$; no index is raised.
 
 The frame perturbation is $\delta\tilde E_{\Phi,\imath}\in\mathbb{B}_\Phi$, related to the metric by $h_{\imath\jmath}=\langle\varepsilon_{\imath},\delta\tilde E_{\Phi,\jmath}\rangle_{\natural}+\langle\delta\tilde E_{\Phi,\imath},\varepsilon_{\jmath}\rangle_{\natural}$, the parent's dictionary. The gravitational constant enters once, through $\kappa^{2}=16\pi G/c^{4}$, and this article does not re-derive its normalisation: the Einstein–Hilbert normalisation is the gravity articles' and is quoted.
 
@@ -52,7 +52,7 @@ $$
 and two integrations by parts move the derivatives onto the perturbation. The result is
 
 $$
-\delta S^{(2)}=-\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\delta\bar h_{\imath\jmath}\Bigl(\Box\bar h_{\imath\jmath}-\eta_{\imath\jmath}\Box\bar h-\partial_{\imath}\partial_\imath\bar h_{k\jmath}-\partial_{\jmath}\partial_\imath\bar h_{k\imath}+\eta_{\imath\jmath}\partial_\imath\partial_\rho\bar h_{k\rho}\Bigr),
+\delta S^{(2)}=-\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\delta\bar h_{\imath\jmath}\Bigl(\Box\bar h_{\imath\jmath}-\delta_{\imath\jmath}\Box\bar h-\partial_{\imath}\partial_\imath\bar h_{k\jmath}-\partial_{\jmath}\partial_\imath\bar h_{k\imath}+\delta_{\imath\jmath}\partial_\imath\partial_\rho\bar h_{k\rho}\Bigr),
 $$
 
 whose bracket is the linearised Einstein tensor in the trace-reversed variable, up to the factor that the trace reversal contributes. Stationarity gives $\delta G_{\imath\jmath}=0$, the parent's equation.
@@ -73,7 +73,7 @@ $$
 
 a condition on the initial data at every time. That is Gauss's law's counterpart: the field's temporal component is not dynamical, and the equation that would determine it is a constraint instead.
 
-The gauge orbit. The action is invariant under the linearised diffeomorphism $h_{\imath\jmath}\mapsto h_{\imath\jmath}-\partial_{\imath}\zeta_{\jmath}-\partial_{\jmath}\zeta_{\imath}$, equivalently $\bar h_{\imath\jmath}\mapsto\bar h_{\imath\jmath}-\partial_{\imath}\zeta_{\jmath}-\partial_{\jmath}\zeta_{\imath}+\eta_{\imath\jmath}\partial_\imath\zeta_\imath$. Four functions, hence four directions in the kernel of the map from perturbation to linearised curvature.
+The gauge orbit. The action is invariant under the linearised diffeomorphism $h_{\imath\jmath}\mapsto h_{\imath\jmath}-\partial_{\imath}\zeta_{\jmath}-\partial_{\jmath}\zeta_{\imath}$, equivalently $\bar h_{\imath\jmath}\mapsto\bar h_{\imath\jmath}-\partial_{\imath}\zeta_{\jmath}-\partial_{\jmath}\zeta_{\imath}+\delta_{\imath\jmath}\partial_\imath\zeta_\imath$. Four functions, hence four directions in the kernel of the map from perturbation to linearised curvature.
 
 The count. Ten components; four gauge directions; four constraints (the time-time and time-space equations, which are four conditions and not evolution equations); two remaining. The two are the transverse-traceless polarisations, and the parent's structural finding — that the single-biquaternion carrier is blind to exactly that part — is the statement that the algebra's naive carrier holds the trace and not the physics.
 
@@ -114,7 +114,7 @@ The linearised gravitational field's action is the second variation of the Einst
 $$
 S^{(2)}=\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\Bigl\{\tfrac12\,\partial_\imath\bar h_{\imath\jmath}\,\partial_\imath\bar h_{\imath\jmath}-\tfrac14\,\partial_\imath\bar h\,\partial_\imath\bar h\Bigr\},
 \qquad
-\bar h_{\imath\jmath}=h_{\imath\jmath}-\tfrac12\eta_{\imath\jmath}h,
+\bar h_{\imath\jmath}=h_{\imath\jmath}-\tfrac12\delta_{\imath\jmath}h,
 \qquad
 \kappa^{2}=\frac{16\pi G}{c^{4}}.
 $$
@@ -123,10 +123,10 @@ $$
 
 | Symbol | Meaning |
 |---|---|
-| $\eta_{\imath\jmath}$ | The interval's array, $\mathrm{diag}(-1,+1,+1,+1)$; an exception |
+| $\delta_{\imath\jmath}$ | The interval's array, $\mathrm{diag}(-1,+1,+1,+1)$; an exception |
 | $h_{\imath\jmath}$ | Metric perturbation, symmetric, small |
-| $h=\sum_{\imath}\eta_{\imath\imath}h_{\imath\imath}$ | Trace |
-| $\bar h_{\imath\jmath}=h_{\imath\jmath}-\tfrac12\eta_{\imath\jmath}h$ | Trace-reversed perturbation |
+| $h=\sum_{\imath}\delta_{\imath\imath}h_{\imath\imath}$ | Trace |
+| $\bar h_{\imath\jmath}=h_{\imath\jmath}-\tfrac12\delta_{\imath\jmath}h$ | Trace-reversed perturbation |
 | $\delta\tilde E_{\Phi,\imath}$ | Frame perturbation, the exact carrier |
 | $\zeta_{\imath}$ | Gauge parameter of the linearised diffeomorphism |
 | $\kappa^{2}=16\pi G/c^{4}$ | Gravitational coupling |

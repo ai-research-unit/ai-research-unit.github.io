@@ -154,7 +154,7 @@ because $\vec\nabla_\Phi\times\nabla S$ vanishes identically. So the canonical f
 
 ## The Gauge Transformation Read on the Word
 
-**The transformation.** With $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ and $\Gamma$ real, the field becomes $\lambda\tilde\Xi$, and since $\lambda$ is central and commutes with every invertible element, the word's factors transform one at a time:
+**The transformation.** With $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ and $\Gamma$ real, the field becomes $\digamma_{\mathrm{gau}}\tilde\Xi$, and since $\digamma_{\mathrm{gau}}$ is central and commutes with every invertible element, the word's factors transform one at a time:
 
 $$
 \varrho\longmapsto \varrho,
@@ -251,7 +251,7 @@ the covariant Madelung pair, with the quantum potential $Q=-\frac{h^{2}}{4\pi^{2
 | $h_t$, $\vec h_\Psi$ | The canonical energy and momentum of the constant setting |
 | $h_t-ϙ\omicron_{\mathrm{pot}}$, $\vec h_\Psi-q\vec A$ | The kinetic energy and momentum |
 | $\Phi_B$ | The magnetic flux through a loop |
-| $\Gamma$, $\lambda=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge function and factor |
+| $\Gamma$, $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge function and factor |
 
 ## Further Reading
 

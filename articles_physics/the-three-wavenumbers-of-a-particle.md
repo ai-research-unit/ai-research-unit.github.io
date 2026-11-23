@@ -934,10 +934,10 @@ The rest-frame clock stops. $\omega_C=2\pi c\,\nu_m\to0$ as the mass wave number
 
 In the series. The massless case is treated as exact and not as a limit. The Dirac chiral pair decouples at $m=0$ into the two one-sided equations $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$, and *Conformal Invariance and the Massless Limit in Biquaternionic Form* treats the massless field on its own terms. The vanishing coefficient is what makes the decoupling exact.
 
-The photon. The empirical bound on a photon mass is of order $10^{-27}\ \mathrm{eV}/c^2$. With $h\,c=1.2398\times10^{-6}\ \mathrm{eV}\cdot\mathrm{m}$, that bound gives
+The photon. The empirical bound on a photon mass is of order $2\times10^{-63}\ \mathrm{kg}$, which is the mass a photon would need for its Coulomb potential to acquire a range shorter than the observed one. With $\nu_m=m\,c/h$, that bound gives
 
 $$
-\nu_{m_\gamma} \lesssim \frac{10^{-27}}{1.2398\times10^{-6}}\ \mathrm{m^{-1}} \approx 8\times10^{-22}\ \mathrm{m^{-1}},
+\nu_{m_\gamma} \lesssim \frac{1.8\times10^{-63}\times2.998\times10^{8}}{6.626\times10^{-34}}\ \mathrm{m^{-1}} \approx 8\times10^{-22}\ \mathrm{m^{-1}},
 $$
 
 whose inverse is of the order of a galactic scale. A smaller mass gives a smaller wave number, and the Coulomb potential is the massless limit of the Yukawa potential.
@@ -1014,7 +1014,7 @@ For the electron $\nu_m=4.1215\times10^{11}\ \mathrm{m^{-1}}$, and it is the sam
 
 None of the three is the size of the particle: the proton's charge radius times $2\pi\nu_m$ is four, and the electron is pointlike far below its own inverse. At $m=0$ the triangle degenerates, $\nu_t^{\prime}=\nu_{\Phi}$ and the mass wave number is no longer a wave number of the problem. The massless equations of the series are exact for that reason, not approximate.
 
-The non-relativistic limit is one operation on the triangle. Split off the mass side exactly, $\nu_t^{\prime}=\nu_m+\Omega$, note that the triangle then reads $\nu_{\Phi}^{2}=2\nu_m\Omega+\Omega^{2}$, expand once, and keep the term linear in the excess. The quotient of the two terms, $\eta_{\mathrm{nr}}=\Omega/(2\nu_m)$, is the small parameter, and the error of the truncation is $-\eta_{\mathrm{nr}}/(1+\eta_{\mathrm{nr}})$ in closed form. The leading term is $h\,c\,\Omega=p^{2}/2m$, and the first-order relation it carries, with $\nu_{\Phi}^{2}\to-\Delta_\Phi$, is the free Schrödinger equation. The mass length is not deleted by the limit: the coefficient of $\Delta_\Phi$ is $1/(4\pi\nu_m)$, and in clock time it is $c/(4\pi\nu_m)=5.788\times10^{-5}\ \mathrm{m^{2}\,s^{-1}}$ for the electron.
+The non-relativistic limit is one operation on the triangle. Split off the mass side exactly, $\nu_t^{\prime}=\nu_m+\Omega$, note that the triangle then reads $\nu_{\Phi}^{2}=2\nu_m\Omega+\Omega^{2}$, expand once, and keep the term linear in the excess. The quotient of the two terms, $\digamma_{\mathrm{nr}}=\Omega/(2\nu_m)$, is the small parameter, and the error of the truncation is $-\digamma_{\mathrm{nr}}/(1+\digamma_{\mathrm{nr}})$ in closed form. The leading term is $h\,c\,\Omega=p^{2}/2m$, and the first-order relation it carries, with $\nu_{\Phi}^{2}\to-\Delta_\Phi$, is the free Schrödinger equation. The mass length is not deleted by the limit: the coefficient of $\Delta_\Phi$ is $1/(4\pi\nu_m)$, and in clock time it is $c/(4\pi\nu_m)=5.788\times10^{-5}\ \mathrm{m^{2}\,s^{-1}}$ for the electron.
 
 **The scale is the mass and the ratio is the speed.** At a fixed $\beta$ every length of the particle scales as $1/m$, so "the heavier the particle, the shorter its wavelength" is one fact about the mass and is true of all three lengths. The ratios carry no mass: $\lambda_{\Phi}/\lambda_m=1/(\gamma\beta)$ and $\lambda_t/\lambda_m=1/\gamma$. The de Broglie length is infinite at rest while the mass length is not, and the two are different lengths that answer different questions.
 
@@ -1043,7 +1043,7 @@ The history is two relations and one measurement. Compton's shift, $\Delta\lambd
 | $\frac{h}{2\pi}\,c= 197.32698\ \mathrm{MeV}\cdot\mathrm{fm}$ | The conversion between an energy and a wave number |
 | $\Omega = \nu_t^{\prime}-\nu_m$ | The excess wave number; the part of the energy wave number above the mass side, $\Omega=\sqrt{\nu_{\Phi}^{2}+\nu_m^{2}}-\nu_m=\nu_{\Phi}^{2}/2\nu_m-\cdots$ |
 | $\nu_{\Phi}^{2}=2\nu_m\Omega+\Omega^{2}$ | The triangle with its origin moved to the mass side; exact, one term linear in the excess and one quadratic |
-| $\eta_{\mathrm{nr}} = \frac{\Omega}{2\nu_m}=\frac{\gamma-1}{2}$ | The ratio of the quadratic term to the linear one; the small parameter of the limit, with $-\eta_{\mathrm{nr}}/(1+\eta_{\mathrm{nr}})$ the error of the truncation |
+| $\digamma_{\mathrm{nr}} = \frac{\Omega}{2\nu_m}=\frac{\gamma-1}{2}$ | The ratio of the quadratic term to the linear one; the small parameter of the limit, with $-\digamma_{\mathrm{nr}}/(1+\digamma_{\mathrm{nr}})$ the error of the truncation |
 | $\gamma = \frac{E}{mc^{2}}$, $\beta = \frac{pc}{E}$ | The Lorentz factor and the speed, the two parameters the ratios give |
 | $\mathsf{L}$, $\mathsf{M}$, $\mathsf{T}$ | The dimensions of length, mass and time of the notation conventions |
 

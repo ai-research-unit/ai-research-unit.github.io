@@ -126,7 +126,7 @@ $$
 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1,\qquad
 \tilde{Ϛ}_{\Psi}^{*}=\tilde{Ϛ}_{\Psi}\;},
 $$
-and the eigenvalues are $\lambda_\pm=\tfrac12(1\pm|\vec s_{\Psi}|)$, so positivity is exactly $|\vec s_{\Psi}|\leq1$. The set of such $\tilde{Ϛ}_{\Psi}$ is the Bloch ball, a three-dimensional subset of the four-dimensional real space $\mathbb{B}_{\Psi}$.
+and the eigenvalues are $\eta_{\pm}=\tfrac12(1\pm|\vec s_{\Psi}|)$, so positivity is exactly $|\vec s_{\Psi}|\leq1$. The set of such $\tilde{Ϛ}_{\Psi}$ is the Bloch ball, a three-dimensional subset of the four-dimensional real space $\mathbb{B}_{\Psi}$.
 
 **A4. The ladder operators are not in either sector.** For $\vec\Pi_{\mathrm{nil},x}=\tfrac12(i\vec e_x-\vec e_y)$ one has $\vec\Pi_{\mathrm{nil},y}=\tfrac12(i\vec e_x+\vec e_y)\neq\vec\Pi_{\mathrm{nil},x}$, and $\vec\Pi_{\mathrm{nil},y}\neq-\vec\Pi_{\mathrm{nil},x}$; splitting into Hermitian and anti-Hermitian parts,
 $$

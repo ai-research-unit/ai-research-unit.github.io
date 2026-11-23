@@ -12,7 +12,7 @@ Position in the block. This is the charged companion of [The Fourier Transform a
 
 ## Conventions
 
-The charged companion's: $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ with $\omicron_{\mathrm{pot}}$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_{\imath}+\frac{2\pi i\varkappa}{h}A_{\imath}$, and the gauge transformation $\lambda=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ with $\Gamma$ real. The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are
+The charged companion's: $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ with $\omicron_{\mathrm{pot}}$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_{\imath}+\frac{2\pi i\varkappa}{h}A_{\imath}$, and the gauge transformation $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ with $\Gamma$ real. The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are
 
 $$
 \vec\pi=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}-q\vec A=\vec\nabla_\Phi S-q\vec A,
@@ -38,7 +38,7 @@ $$
 
 and the last equality is the article's first result. The velocity is constant and its curl is exactly zero, and the check on one hundred events gave $\max\lvert\nabla\times\vec v\rvert=2.5\times10^{-16}$ for a constant $\vec A$.
 
-The constant connection is a pure gradient and the mode is free in disguise. With $\vec A=\vec\nabla_\Phi\chi$ and $\omicron_{\mathrm{pot}}=-\partial_{t'}\chi$ the gauge transformation $\lambda=\exp(\frac{2\pi i\varkappa\chi}{h})$ removes the connection and multiplies the field by a central phase, which moves the label and changes nothing else. So a mode of a flat connection is gauge-equivalent to a free mode with a translated wave number, and the translation is $\frac{2\pi \varkappa\vec A}{h}$.
+The constant connection is a pure gradient and the mode is free in disguise. With $\vec A=\vec\nabla_\Phi\chi$ and $\omicron_{\mathrm{pot}}=-\partial_{t'}\chi$ the gauge transformation $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\chi}{h})$ removes the connection and multiplies the field by a central phase, which moves the label and changes nothing else. So a mode of a flat connection is gauge-equivalent to a free mode with a translated wave number, and the translation is $\frac{2\pi \varkappa\vec A}{h}$.
 
 The two labels, and which one the fluid reads.
 
@@ -147,7 +147,7 @@ The field has two supports, the free shell in the canonical variable and the tra
 | $\Phi_B$ | The flux through a loop's spanning surface |
 | $\tilde\Upsilon_\Phi=\tilde\Upsilon_{\Phi,\mathrm{gco}}-\frac{\varkappa\tilde A_\Phi}{h}$ | The canonical label less the potential |
 | $n$ | The winding of a loop around a nodal line; zero at a mode |
-| $\lambda=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ | The gauge element; central |
+| $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ | The gauge element; central |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
 ## Further Reading

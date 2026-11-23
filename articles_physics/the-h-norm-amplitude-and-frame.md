@@ -267,8 +267,8 @@ The same map is the input-free shadow of four constructions, and the four differ
 The amplitude is a pair of numbers and not one. The Hermitian square $\tilde Q\tilde Q^{*}$ has two spectral values, and they are non-negative because the element is positive semidefinite. Their square roots are the two singular values.
 
 $$
-\sigma_1^{2}=\lambda_1\bigl(\tilde Q\tilde Q^{*}\bigr),\qquad
-\sigma_2^{2}=\lambda_2\bigl(\tilde Q\tilde Q^{*}\bigr),\qquad
+\sigma_1^{2}=\eta_1\bigl(\tilde Q\tilde Q^{*}\bigr),\qquad
+\sigma_2^{2}=\eta_2\bigl(\tilde Q\tilde Q^{*}\bigr),\qquad
 \sigma_1\ge\sigma_2\ge0 .
 $$
 

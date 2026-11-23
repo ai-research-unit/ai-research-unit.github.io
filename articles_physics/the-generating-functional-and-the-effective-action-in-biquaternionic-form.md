@@ -83,7 +83,7 @@ The two functionals $\Gamma$ and $W$ differ by the product of the conjugate vari
 
 **Convexity is convexity in the real form.** In this framework the appropriate notion of convexity is with respect to the real bilinear form $\langle\cdot,\cdot\rangle$: a functional $F[\tilde{Ξ}_{\mathrm{cl}}]$ is convex if, on the module,
 $$
-F[\lambda\tilde{Ξ}_{\mathrm{cl},1}+(1-\lambda)\tilde{Ξ}_{\mathrm{cl},2}] \le \lambda F[\tilde{Ξ}_{\mathrm{cl},1}]+(1-\lambda)F[\tilde{Ξ}_{\mathrm{cl},2}],
+F[\digamma_{\mathrm{mix}}\tilde{Ξ}_{\mathrm{cl},1}+(1-\digamma_{\mathrm{mix}})\tilde{Ξ}_{\mathrm{cl},2}] \le \digamma_{\mathrm{mix}} F[\tilde{Ξ}_{\mathrm{cl},1}]+(1-\digamma_{\mathrm{mix}})F[\tilde{Ξ}_{\mathrm{cl},2}],
 \qquad \lambda\in[0,1],
 $$
 with the comparison of the two module elements understood through the positive-definite form. Because the form is positive definite and the sectors are orthogonal, the convexity is ordinary convexity on the module, and the Legendre transform factorizes over the sectors accordingly, as the next-but-one section shows. This is where the sector split, through its orthogonality, enters the effective-action formalism.

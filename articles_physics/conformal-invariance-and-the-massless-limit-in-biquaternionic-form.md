@@ -52,7 +52,7 @@ with $x^2 = \sum_{\rho}x_\rho x_\rho$. The conformal group contains the Poincar�
 
 ### What the algebra carries, and what it does not
 
-Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $\vec e_\imath$ and the boosts $B_{\mathrm{boost},k} = i\vec e_\imath$, and the Lorentz group acts by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$. The dilation is realised by a non-invertible element $\sqrt{\lambda}\,e_t$, which scales the biquaternion norm without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{B}_{\Phi}$: the special conformal transformation is a fractional map obtained by placing a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
+Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $\vec e_\imath$ and the boosts $B_{\mathrm{boost},k} = i\vec e_\imath$, and the Lorentz group acts by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$. The dilation is realised by a non-invertible element $\sqrt{\digamma_{\mathrm{cfm}}}\,e_t$, which scales the biquaternion norm without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{B}_{\Phi}$: the special conformal transformation is a fractional map obtained by placing a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
 $$
 I(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\langle\tilde{Q}\rangle_{\natural}} ,
 \qquad
@@ -84,13 +84,13 @@ and the transformation is a symmetry of the equation $(\Box_\Phi - 4\pi^{2}\nu_m
 
 ### The dilation
 
-The dilation is $\tilde{Q}\mapsto\tilde{Q}_2 = \lambda\tilde{Q}$, whose interval is scaled by $\lambda^2$ and which therefore has the constant conformal factor $\Omega = \lambda$; read in the inverse direction, $\Omega = \lambda^{-1}$. For the rescaled field
+The dilation is $\tilde{Q}\mapsto\tilde{Q}_2 = \digamma_{\mathrm{cfm}}\tilde{Q}$, whose interval is scaled by $\digamma_{\mathrm{cfm}}^2$ and which therefore has the constant conformal factor $\Omega = \digamma_{\mathrm{cfm}}$; read in the inverse direction, $\Omega = \digamma_{\mathrm{cfm}}^{-1}$. For the rescaled field
 $$
-\xi_\imath(\tilde{Q}) = \lambda^{-\mathcal{W}_{\mathrm{dim}}}\,\xi(\lambda^{-1}\tilde{Q})
+\xi_\imath(\tilde{Q}) = \digamma_{\mathrm{cfm}}^{-\mathcal{W}_{\mathrm{dim}}}\,\xi(\digamma_{\mathrm{cfm}}^{-1}\tilde{Q})
 $$
 the chain rule gives
 $$
-\Box_\Phi\,\xi_\imath = \lambda^{-(\mathcal{W}_{\mathrm{dim}}+2)}\,\bigl(\Box_\Phi\xi\bigr)\bigl(\lambda^{-1}\tilde{Q}\bigr) ,
+\Box_\Phi\,\xi_\imath = \digamma_{\mathrm{cfm}}^{-(\mathcal{W}_{\mathrm{dim}}+2)}\,\bigl(\Box_\Phi\xi\bigr)\bigl(\digamma_{\mathrm{cfm}}^{-1}\tilde{Q}\bigr) ,
 $$
 so $\xi_\imath$ solves $\Box_\Phi\xi_\imath = 0$ whenever $\xi$ does, for **every** weight $\mathcal{W}_{\mathrm{dim}}$. This is the trivial half of the conformal symmetry: the massless wave equation is homogeneous and the box operator has dimension two, so any rescaling of a solution is a solution, and only the mass term obstructs it. The nontrivial half is the inversion, where the conformal factor is a function of the point and the derivative of $\Omega$ enters.
 
@@ -132,7 +132,7 @@ the standard expression; the point for this article is that the four extra symme
 
 ### The finite transformations and the compactification
 
-The four families can be written in finite form, and their composition is what makes them a group. The Lorentz transformations are $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$; the dilation is $\tilde{Q}\mapsto\lambda\tilde{Q}$; the translation is $\tilde{Q}\mapsto\tilde{Q}+\tilde{Q}_3$; and the inversion is $\tilde{Q}\mapsto\tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. A special conformal transformation is a translation between two inversions, and the composition law of the four families closes on the fifteen parameters. Two features of the finite maps belong to this article's subject. First, the inversion is **involutive**, $I(I(\tilde{Q})) = \tilde{Q}$ off the null cone, and its conformal factor satisfies $\Omega(I(\tilde{Q})) = 1/\Omega(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}$; the weight-one transformation law is consistent with this involution, which was checked by composing the map with itself on random off-cone points. Second, the maps are only **locally defined** on $\mathbb{B}_{\Phi}$: the inversion is singular where $\langle\tilde{Q}\rangle_{\natural} = 0$, and the special conformal transformation is singular where its denominator vanishes. The conformal group is globally defined on the conformal compactification, which adjoins a boundary — a cone with a two-sphere at its base — and on which the inversions become everywhere defined; the light cone through the origin is not part of that boundary but a locus inside the chart. The compactification is built in *The Conformal Group in Biquaternionic Form*, from the $*$-unitary group $\mathrm{U}(2)$ with the two sectors as its Cayley charts; this article's field-theoretic statements live on the locally defined maps, which the compactification does not replace.
+The four families can be written in finite form, and their composition is what makes them a group. The Lorentz transformations are $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$; the dilation is $\tilde{Q}\mapsto\digamma_{\mathrm{cfm}}\tilde{Q}$; the translation is $\tilde{Q}\mapsto\tilde{Q}+\tilde{Q}_3$; and the inversion is $\tilde{Q}\mapsto\tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. A special conformal transformation is a translation between two inversions, and the composition law of the four families closes on the fifteen parameters. Two features of the finite maps belong to this article's subject. First, the inversion is **involutive**, $I(I(\tilde{Q})) = \tilde{Q}$ off the null cone, and its conformal factor satisfies $\Omega(I(\tilde{Q})) = 1/\Omega(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}$; the weight-one transformation law is consistent with this involution, which was checked by composing the map with itself on random off-cone points. Second, the maps are only **locally defined** on $\mathbb{B}_{\Phi}$: the inversion is singular where $\langle\tilde{Q}\rangle_{\natural} = 0$, and the special conformal transformation is singular where its denominator vanishes. The conformal group is globally defined on the conformal compactification, which adjoins a boundary — a cone with a two-sphere at its base — and on which the inversions become everywhere defined; the light cone through the origin is not part of that boundary but a locus inside the chart. The compactification is built in *The Conformal Group in Biquaternionic Form*, from the $*$-unitary group $\mathrm{U}(2)$ with the two sectors as its Cayley charts; this article's field-theoretic statements live on the locally defined maps, which the compactification does not replace.
 
 ## The Conformal Two-Point Function
 
@@ -159,11 +159,11 @@ The massive operator is $\Box_\Phi - 4\pi^{2}\nu_m^{2}$ with $\nu_m=\frac{mc}{h}
 
 ### The effective mass under dilation
 
-The breaking can be exhibited in one line. If $\xi$ solves the massive equation, $(\Box_\Phi-4\pi^{2}\nu_m^{2})\xi=0$, then the dilated field $\xi_\imath(\tilde{Q}) = \lambda^{-\mathcal{W}_{\mathrm{dim}}}\xi(\lambda^{-1}\tilde{Q})$ solves the *dilated* massive equation,
+The breaking can be exhibited in one line. If $\xi$ solves the massive equation, $(\Box_\Phi-4\pi^{2}\nu_m^{2})\xi=0$, then the dilated field $\xi_\imath(\tilde{Q}) = \digamma_{\mathrm{cfm}}^{-\mathcal{W}_{\mathrm{dim}}}\xi(\digamma_{\mathrm{cfm}}^{-1}\tilde{Q})$ solves the *dilated* massive equation,
 $$
 \bigl(\Box_\Phi - \lambda^{-2}\,4\pi^{2}\nu_m^{2}\bigr)\xi_\imath = 0 ,
 $$
-because $\Box_\Phi = \lambda^{-2}\Box_\Phi$ and the mass term is a constant. The computation was checked on a massive plane wave: with $2\pi\nu_m = 0.7$ and $\lambda = 2$ the rescaled field has $\Box_\Phi\xi_\imath/\xi_\imath = 0.1225 = 4\pi^{2}\nu_m^{2}/\lambda^2$ to six decimal places. The dilation therefore **rescales the mass and no value of $\lambda$ returns the original equation** unless $\nu_m = 0$; the massless equation is the unique fixed point of the dilation, and this is the precise sense in which the mass is the order parameter of the symmetry. The same computation for the other four generators shows the same thing: each carries $\nu_m^{2}$ into a point-dependent multiple of itself, and only at $\nu_m=0$ is the set of solutions preserved.
+because $\Box_\Phi = \digamma_{\mathrm{cfm}}^{-2}\Box_\Phi$ and the mass term is a constant. The computation was checked on a massive plane wave: with $2\pi\nu_m = 0.7$ and $\digamma_{\mathrm{cfm}} = 2$ the rescaled field has $\Box_\Phi\xi_\imath/\xi_\imath = 0.1225 = 4\pi^{2}\nu_m^{2}/\digamma_{\mathrm{cfm}}^2$ to six decimal places. The dilation therefore **rescales the mass and no value of $\digamma_{\mathrm{cfm}}$ returns the original equation** unless $\nu_m = 0$; the massless equation is the unique fixed point of the dilation, and this is the precise sense in which the mass is the order parameter of the symmetry. The same computation for the other four generators shows the same thing: each carries $\nu_m^{2}$ into a point-dependent multiple of itself, and only at $\nu_m=0$ is the set of solutions preserved.
 
 ### The symbol on the light cone and the rank drop
 

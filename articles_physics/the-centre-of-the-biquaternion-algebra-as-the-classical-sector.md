@@ -61,17 +61,17 @@ The identification $Z(M_2(\mathbb{C}))=\mathbb{C}I_2$ is the standard statement 
 
 The two forms on the centre. The Hermitian form restricts to
 $$
-\langle\lambda e_t,\mu e_t\rangle_{*}=2\,\mathrm{Sc}\bigl((\lambda e_t)^{*}(\mu e_t)\bigr)=2\,\lambda^{*}\mu ,
+\langle Q_te_t,P_te_t\rangle_{*}=2\,\mathrm{Sc}\bigl((Q_te_t)^{*}(P_te_t)\bigr)=2\,Q_t^{*}P_t ,
 $$
 positive definite on $\mathbb{C}$; it is the standard Hermitian form of the scalars, up to the normalization $2\,\mathrm{Sc}(e_t)=2$. The biquaternion norm restricts to the complex square,
 $$
-\langle \lambda e_t\rangle_{\natural}=\lambda^2e_t ,
+\langle Q_te_t\rangle_{\natural}=Q_t^2e_t ,
 $$
-which is holomorphic rather than Hermitian: it is positive definite on the Hermitian part of the centre, $\langle ae_t\rangle_{\natural}=a^2e_t\geq0$ for $a\in\mathbb{R}$, negative definite on its anti-Hermitian part, $\langle ibe_t\rangle_{\natural}=-b^2e_t\leq0$ for $b\in\mathbb{R}$, and complex-valued on the rest of the complex centre, where the form is non-degenerate and vanishes only at $\lambda=0$. The two forms therefore behave on the centre exactly as they behave on the whole algebra — one Hermitian, one holomorphic/quadratic — and the centre is the smallest subspace on which both are visible, with the Hermitian form positive definite and the biquaternion norm indefinite (on the complexified directions). The verification of $\langle \lambda e_t\rangle_{\natural}=\lambda^2e_t$ for representative $\lambda$ is elementary; it was checked numerically.
+which is holomorphic rather than Hermitian: it is positive definite on the Hermitian part of the centre, $\langle ae_t\rangle_{\natural}=a^2e_t\geq0$ for $a\in\mathbb{R}$, negative definite on its anti-Hermitian part, $\langle ibe_t\rangle_{\natural}=-b^2e_t\leq0$ for $b\in\mathbb{R}$, and complex-valued on the rest of the complex centre, where the form is non-degenerate and vanishes only at $Q_t=0$. The two forms therefore behave on the centre exactly as they behave on the whole algebra — one Hermitian, one holomorphic/quadratic — and the centre is the smallest subspace on which both are visible, with the Hermitian form positive definite and the biquaternion norm indefinite (on the complexified directions). The verification of $\langle Q_te_t\rangle_{\natural}=Q_t^2e_t$ for representative $Q_t$ is elementary; it was checked numerically.
 
 Commutativity and associativity. The centre is commutative, $\tilde{Q}\tilde{Q}_1=\tilde{Q}_1\tilde{Q}$, and associative, being a subalgebra; its multiplication is complex multiplication,
 $$
-(\lambda e_t)(\mu e_t)=(\lambda\mu)e_t ,
+(Q_te_t)(P_te_t)=(Q_tP_t)e_t ,
 $$
 and its unit is $e_t$. As a real algebra, $Z(\mathbb{B})\cong\mathbb{C}$; as a complex algebra, $Z(\mathbb{B})\cong\mathbb{C}$. It is the largest subalgebra of $\mathbb{B}$ that is commutative *and* central at once.
 
@@ -138,14 +138,14 @@ The absence of central projections is therefore a genuine algebraic limitation, 
 
 The limitations of the preceding section are structural, and they do not diminish the sense in which the centre is the classical sector. That sense is made precise by four properties of central elements, each of which is a classical marker.
 
-**1. Central observables have no dispersion and no state dependence.** Let $\tilde Q_3=\lambda e_t$ with $\lambda\in\mathbb{R}$ be a Hermitian central element and let $\tilde{Ϛ}_{\Psi}$ be any state. The reduction formula gives
+**1. Central observables have no dispersion and no state dependence.** Let $\tilde Q_3=Q_te_t$ with $Q_t\in\mathbb{R}$ be a Hermitian central element and let $\tilde{Ϛ}_{\Psi}$ be any state. The reduction formula gives
 $$
-\langle\tilde Q_3\rangle_{\tilde{Ϛ}_{\Psi}}=2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}\lambda e_t\bigr)=\lambda\,2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}\bigr)=\lambda ,
+\langle\tilde Q_3\rangle_{\tilde{Ϛ}_{\Psi}}=2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}Q_te_t\bigr)=Q_t\,2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}\bigr)=Q_t ,
 $$
 independently of the state. The variance vanishes in every state,
 $$
-\bigl\langle(\tilde Q_3-\lambda e_t)^2\bigr\rangle_{\tilde{Ϛ}_{\Psi}}
-=2\,\mathrm{Sc}\Bigl(\tilde{Ϛ}_{\Psi}\,(\tilde Q_3-\lambda e_t)^2\Bigr)=0 .
+\bigl\langle(\tilde Q_3-Q_te_t)^2\bigr\rangle_{\tilde{Ϛ}_{\Psi}}
+=2\,\mathrm{Sc}\Bigl(\tilde{Ϛ}_{\Psi}\,(\tilde Q_3-Q_te_t)^2\Bigr)=0 .
 $$
 A quantity whose expectation value is the same in every state and whose uncertainty is zero is not a quantum observable in any operational sense; it is a parameter. The centre is exactly the set of such quantities, and this is the sharpest algebraic expression of the statement that its elements are classical.
 
@@ -221,11 +221,11 @@ Z(\mathbb{B})_{\mathrm c}=\mathbb{B},
 $$
 because every element commutes with the scalars. The two statements together identify the centre as the fixed point of the commutant operation: it is the subalgebra whose commutant is as large as possible, and it is itself the commutant of the algebra. For a maximal commutative subalgebra $\mathbb{A}$ one has $\mathbb{A}_{\mathrm c}=\mathbb{A}$, so the MASAs are exactly the self-commuting subalgebras, and the centre is their common part. This is the von Neumann bicommutant picture restricted to the finite-dimensional matrix algebra; there is no topological content to add.
 
-2. Trivial action on the projective state space. A central element acts on the state module by scalar multiplication, $\tilde Q_3\tilde{Ξ}=(\lambda e_t)\tilde{Ξ}=\lambda\tilde{Ξ}$. On a ray $[\tilde{Ξ}]$ this is invisible, since $[\lambda\tilde{Ξ}]=[\tilde{Ξ}]$ for $\lambda\neq0$. The centre is therefore the kernel of the action of $\mathbb{B}^\times$ on the projective state space: its $*$-unitary part $\mathrm{U}(1)=\{\lambda e_t:|\lambda|=1\}$ acts trivially on rays, and conversely an element that fixes every ray is a scalar and hence central, so the Hopf fibration $S^3\to S^2$ is precisely the quotient by the central $*$-unitary action. The unobservability of the global phase is thus the statement that the centre acts trivially at the level of rays, and the same fact upgrades to mixed states because a central conjugation is a scalar multiple of the identity,
+2. Trivial action on the projective state space. A central element acts on the state module by scalar multiplication, $\tilde Q_3\tilde{Ξ}=(Q_te_t)\tilde{Ξ}=Q_t\tilde{Ξ}$. On a ray $[\tilde{Ξ}]$ this is invisible, since $[Q_t\tilde{Ξ}]=[\tilde{Ξ}]$ for $Q_t\neq0$. The centre is therefore the kernel of the action of $\mathbb{B}^\times$ on the projective state space: its $*$-unitary part $\mathrm{U}(1)=\{Q_te_t:|Q_t|=1\}$ acts trivially on rays, and conversely an element that fixes every ray is a scalar and hence central, so the Hopf fibration $S^3\to S^2$ is precisely the quotient by the central $*$-unitary action. The unobservability of the global phase is thus the statement that the centre acts trivially at the level of rays, and the same fact upgrades to mixed states because a central conjugation is a scalar multiple of the identity,
 $$
-\Gamma_{\tilde Q_3}(\tilde{Ϛ}_{\Psi})=(\lambda e_t)\,\tilde{Ϛ}_{\Psi}\,(\lambda e_t)^{*}=|\lambda|^2\tilde{Ϛ}_{\Psi},
+\Gamma_{\tilde Q_3}(\tilde{Ϛ}_{\Psi})=(Q_te_t)\,\tilde{Ϛ}_{\Psi}\,(Q_te_t)^{*}=|Q_t|^2\tilde{Ϛ}_{\Psi},
 $$
-It is a positive multiple of $\tilde{Ϛ}_{\Psi}$, hence the same state after normalization, and it is the identity on normalised states exactly for the $*$-unitary central scalars, $|\lambda|=1$. The centre is the part of the algebra that the state space cannot see.
+It is a positive multiple of $\tilde{Ϛ}_{\Psi}$, hence the same state after normalization, and it is the identity on normalised states exactly for the $*$-unitary central scalars, $|Q_t|=1$. The centre is the part of the algebra that the state space cannot see.
 
 3. The central normalizations. The two normalizations that the framework imposes on its states are central conditions. The normalisation is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$ — the left side is a central scalar, so the condition is a statement about the centre — and the normalization of a spinor is $2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})=1$, again a central value. Scale, phase, and the unit of measurement are classical data, and the centre is where they are stored. This is the operational counterpart of the parameter statement of the previous section: the framework does not merely contain $c$-numbers, it normalizes its states by them.
 
@@ -302,7 +302,7 @@ The centre's limitations are as exact as its properties. Because $\mathbb{B}$ is
 | $Z(\mathbb{B})=\mathbb{B}_{C}=\mathbb{C}e_t$ | Centre of $\mathbb{B}$; the series symbol is $\mathbb{B}_{C}$ |
 | $Z(\mathbb{B})\cap\mathbb{B}_{\Psi}=\mathbb{R}e_t$ | Hermitian central elements |
 | $2\,\mathrm{Sc}(\tilde{Q})=2Q_t$ | Doubled scalar part, $2\,\mathrm{Sc}(e_t)=2$ |
-| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, $\langle \lambda e_t\rangle_{\natural}=\lambda^2e_t$ |
+| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, $\langle Q_te_t\rangle_{\natural}=Q_t^2e_t$ |
 | $\mathrm{Ad}_{\tilde Q}(\tilde{Q})=\tilde Q\tilde{Q}\tilde Q^{*}$ | Adjoint (inner) action |
 | $\mathrm{ad}_{\tilde{Q}}(\tilde{Q}_1)=[\tilde{Q},\tilde{Q}_1]$ | Inner derivation |
 | $\mathbb{A}_{\vec u}=\mathrm{span}_\mathbb{C}\{\tilde\Pi_{\mathrm{id}}(\vec u),e_t-\tilde\Pi_{\mathrm{id}}(\vec u)\}$ | Maximal commutative subalgebra (MASA) |

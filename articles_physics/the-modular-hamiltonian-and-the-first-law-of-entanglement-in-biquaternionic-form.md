@@ -156,7 +156,7 @@ so the first law's deficit is exactly the negative of the expectation of the **r
 
 ## The Entanglement Hamiltonian of a Qubit
 
-The modular Hamiltonian of a biquaternion state is a concrete two-level operator, and its spectrum is worth recording because it displays the state dependence of the entanglement energy. The eigenvalues of $\tilde{Ϛ}_{\Psi,0}$ are $\lambda_\pm=\tfrac12(1\pm r_0)$, so the eigenvalues of $H_{\mathrm{modular},0}=-\log\tilde{Ϛ}_{\Psi,0}$ are
+The modular Hamiltonian of a biquaternion state is a concrete two-level operator, and its spectrum is worth recording because it displays the state dependence of the entanglement energy. The eigenvalues of $\tilde{Ϛ}_{\Psi,0}$ are $\eta_{\pm}=\tfrac12(1\pm r_0)$, so the eigenvalues of $H_{\mathrm{modular},0}=-\log\tilde{Ϛ}_{\Psi,0}$ are
 $$
 \varepsilon_\pm=-\log\tfrac12\big(1\pm r_0\big),
 $$

@@ -102,7 +102,7 @@ The sector is a real four-plane of two blocks. The scalar block $\mathbb{R}e_t$ 
 
 **Two of the four forms collapse on this sector and two do not.** The plain form equals the Hermitian form because the star is the identity here, and the K norm equals the quaternionic norm for the same reason. The sector therefore carries two distinct real quadratic forms, one positive definite and one indefinite, and the whole entry is an account of which question each of them answers.
 
-The observable has two numbers per axis and one overall. Its eigenvalues are $\lambda_\pm=h_t\pm\lvert\vec h_\Psi\rvert$, its mean is the scalar part, and its spread is the length of the vector part. No other data is needed, because the spectral theorem for this sector is the completeness of two idempotents.
+The observable has two numbers per axis and one overall. Its eigenvalues are $\eta_{\pm}=h_t\pm\lvert\vec h_\Psi\rvert$, its mean is the scalar part, and its spread is the length of the vector part. No other data is needed, because the spectral theorem for this sector is the completeness of two idempotents.
 
 The state has one radius and one direction. Its eigenvalues are $\tfrac12(1\pm\lvert\vec s_{\Psi}\rvert)$, so the direction is the axis of the spectral decomposition and the radius is the mixedness. A state with a given radius is determined up to a rotation of the axis, and the axis is what a measurement along that axis reads with certainty.
 
@@ -225,7 +225,7 @@ $$
 \tilde\Pi_{\mathrm{id},1,2}^{2}=\tilde\Pi_{\mathrm{id},1,2}.
 $$
 
-The two eigenvalues are $\lambda_\pm=h_t\pm\lvert\vec h_\Psi\rvert$. The display is not a construction: it is an identity, and it is the spectral theorem for this sector. The proof is one multiplication, and it uses the one algebraic accident of the sector,
+The two eigenvalues are $\eta_{\pm}=h_t\pm\lvert\vec h_\Psi\rvert$. The display is not a construction: it is an identity, and it is the spectral theorem for this sector. The proof is one multiplication, and it uses the one algebraic accident of the sector,
 
 $$
 (i\vec u)^{2}=i^{2}\vec u^{2}=(-e_t)\bigl(-\lvert\vec u\rvert^{2}e_t\bigr)=+\lvert\vec u\rvert^{2}e_t=e_t ,
@@ -244,7 +244,7 @@ The spectrum is real for every element of the sector. Both eigenvalues are real 
 $$
 \tilde H_\Psi\ge0
 \iff
-\lambda_+\ge0\ \text{and}\ \lambda_-\ge0
+\eta_{+}\ge0\ \text{and}\ \eta_{-}\ge0
 \iff
 h_t\ge\lvert\vec h_\Psi\rvert
 \iff
@@ -308,7 +308,7 @@ N(\tilde{Ϛ}_\Psi)=\tilde{Ϛ}_\Psi\tilde{Ϛ}_\Psi^{\natural}
 S_{\mathrm{lin}}(\tilde{Ϛ}_\Psi)=2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi-\tilde{Ϛ}_\Psi^{2}\bigr)=\tfrac12\bigl(1-r^{2}\bigr)=2N(\tilde{Ϛ}_\Psi).
 $$
 
-The identity is worth separating from its consequences. The form that defines the cone of the sector is the same form that measures how mixed a state is, up to the factor two. A pure state has $N=0$ and the maximally mixed state has $N=\tfrac14$, its largest value on the slice. **The two facts — that the cone cuts out the state space and that the form measures mixedness — are one fact**, because both are governed by the product of the two eigenvalues, $\lambda_+\lambda_-=\tfrac14(1-r^{2})$.
+The identity is worth separating from its consequences. The form that defines the cone of the sector is the same form that measures how mixed a state is, up to the factor two. A pure state has $N=0$ and the maximally mixed state has $N=\tfrac14$, its largest value on the slice. **The two facts — that the cone cuts out the state space and that the form measures mixedness — are one fact**, because both are governed by the product of the two eigenvalues, $\eta_{+}\eta_{-}=\tfrac14(1-r^{2})$.
 
 **The state is a zero divisor exactly when it is pure.** An element of the algebra has an inverse exactly when its norm is not zero, so the states with $N\ne0$ are invertible and the states with $N=0$ are the zero divisors. The pure states are therefore the null elements of the sector, and the boundary of the ball is the intersection of the sector with the zero-divisor cone of the algebra. A mixed state has an inverse in the algebra; a pure state does not.
 
@@ -424,7 +424,7 @@ $$
 
 which is non-negative and which vanishes exactly when $r=1$ and $\cos^{2}\theta=1$, that is, when the state is the pure state on the observable's own axis. The variance is the part of the observable that the state cannot predict, and the two factors in it are the two reasons for failing to predict: a direction that is not the observable's, and a radius below one. A mixed state therefore has a variance on every axis, including its own, where the residue is $(1-r^{2})\lvert\vec h_\Psi\rvert^{2}$. **Only a pure state can be an eigenstate of anything.**
 
-Two checks on the arithmetic. The first is the pure case at $\vec s_{\Psi}=\vec u_\Psi$, where $p_+=1$ and the variance is zero. The second is the mixed case at $\vec s_{\Psi}=0$, where $p_+=\tfrac12$ and the variance is $\lvert\vec h_\Psi\rvert^{2}$, its largest value. A computation in the algebra confirms both formulas on random states and observables to machine precision, and the identity $\lambda_+\lambda_-=h_t^{2}-\lvert\vec h_\Psi\rvert^{2}$ ties the variance to the two eigenvalues.
+Two checks on the arithmetic. The first is the pure case at $\vec s_{\Psi}=\vec u_\Psi$, where $p_+=1$ and the variance is zero. The second is the mixed case at $\vec s_{\Psi}=0$, where $p_+=\tfrac12$ and the variance is $\lvert\vec h_\Psi\rvert^{2}$, its largest value. A computation in the algebra confirms both formulas on random states and observables to machine precision, and the identity $\eta_{+}\eta_{-}=h_t^{2}-\lvert\vec h_\Psi\rvert^{2}$ ties the variance to the two eigenvalues.
 
 The matrix trace is a reading, and it adds nothing. In the two-by-two image the matrix trace of the product is the pairing twice, and the normalised state has matrix trace one, so the weight becomes the familiar ratio of matrix traces. The factor two is the dimension of the image and cancels in the ratio; it is not a normalisation constant of the form. The symmetry of that trace, $\operatorname{tr}(AB)=\operatorname{tr}(BA)$ on the image, is the symmetry of the pairing on Hermitian arguments, and it is what allows the state to be written on either side.
 
@@ -465,20 +465,20 @@ The two sums are the single condition $\sum_\imath\tilde{\mathcal E}_{\Psi,k}=e_
 An effect is a measurement with a finite resolution, and the resolution is a number. The one-parameter family
 
 $$
-\tilde{\mathcal E}_{\Psi,\pm}=\tfrac12\bigl(e_t\pm\eta\,i\vec u\bigr),
+\tilde{\mathcal E}_{\Psi,\pm}=\tfrac12\bigl(e_t\pm\digamma_{\mathrm{blc}}\,i\vec u\bigr),
 \qquad
-0\le\eta\le1,
+0\le\digamma_{\mathrm{blc}}\le1,
 \qquad
-p_\pm=\tfrac12\bigl(1\pm\eta\,\vec u\cdot\vec s_{\Psi}\bigr),
+p_\pm=\tfrac12\bigl(1\pm\digamma_{\mathrm{blc}}\,\vec u\cdot\vec s_{\Psi}\bigr),
 $$
 
-is a POVM for every $\eta$ in the range, because $a=\tfrac12$ and $\lvert\vec w\rvert=\eta/2\le\tfrac12$. It is projective only at $\eta=1$, since
+is a POVM for every $\digamma_{\mathrm{blc}}$ in the range, because $a=\tfrac12$ and $\lvert\vec w\rvert=\digamma_{\mathrm{blc}}/2\le\tfrac12$. It is projective only at $\digamma_{\mathrm{blc}}=1$, since
 
 $$
-\tilde{\mathcal E}_{\Psi,+}^{2}-\tilde{\mathcal E}_{\Psi,+}=\tfrac14\bigl(\eta^{2}-1\bigr)e_t ,
+\tilde{\mathcal E}_{\Psi,+}^{2}-\tilde{\mathcal E}_{\Psi,+}=\tfrac14\bigl(\digamma_{\mathrm{blc}}^{2}-1\bigr)e_t ,
 $$
 
-which vanishes exactly at the endpoint. The number $\eta$ is the sharpness of the measurement: at $\eta=1$ the analyser passes one axis and blocks the other, and at $\eta=0$ the two effects are both $\tfrac12e_t$ and the outcome carries no information about the state at all. **Every intermediate value is a measurement whose two outcomes overlap, and the overlap is what the interval's interior contains.**
+which vanishes exactly at the endpoint. The number $\digamma_{\mathrm{blc}}$ is the sharpness of the measurement: at $\digamma_{\mathrm{blc}}=1$ the analyser passes one axis and blocks the other, and at $\digamma_{\mathrm{blc}}=0$ the two effects are both $\tfrac12e_t$ and the outcome carries no information about the state at all. **Every intermediate value is a measurement whose two outcomes overlap, and the overlap is what the interval's interior contains.**
 
 Three outcomes show that the projection lattice is not the whole story. With three unit vectors $\vec u_0,\vec u_1,\vec u_2$ at $120^\circ$ apart, so that $\vec u_0+\vec u_1+\vec u_2=0$, the three effects
 
@@ -725,9 +725,9 @@ Boundary. Nullness here is nullness for the quaternionic norm of this algebra. I
 
 ### I.12.o — The Weight of a State Is Its Linear Entropy
 
-Read: $S_{\mathrm{lin}}=2N$ on the slice, the spectral entropy $S(r)$, and the eigenvalue product $\lambda_+\lambda_-=\tfrac14(1-r^{2})$.
+Read: $S_{\mathrm{lin}}=2N$ on the slice, the spectral entropy $S(r)$, and the eigenvalue product $\eta_{+}\eta_{-}=\tfrac14(1-r^{2})$.
 
-One quantity measures mixedness, and it is the form that also measures the interval. **The identity $S_{\mathrm{lin}}=2N$ is not a coincidence of two definitions**: both sides are functions of $\lambda_+\lambda_-$, and the product of the eigenvalues is the norm of the state. The consequence is that every statement about mixedness is a statement about the position of the state in the cone, and conversely.
+One quantity measures mixedness, and it is the form that also measures the interval. **The identity $S_{\mathrm{lin}}=2N$ is not a coincidence of two definitions**: both sides are functions of $\eta_{+}\eta_{-}$, and the product of the eigenvalues is the norm of the state. The consequence is that every statement about mixedness is a statement about the position of the state in the cone, and conversely.
 
 The first reading is thermal. The Gibbs state of a Hamiltonian $\tilde H_\Psi=h_te_t+i\vec h_\Psi$ is the state whose radius vector is $\vec s_{\Psi}=-\tanh(\beta\lvert\vec h_\Psi\rvert)\vec u_\Psi$, with $\beta=1/(k_BT)$. The radius is the magnetisation, its saturation at low temperature is the approach to the boundary, and at high temperature the expansion of the hyperbolic tangent gives $\lvert\vec s_{\Psi}\rvert\approx\lvert\vec h_\Psi\rvert/(k_BT)$, which is Curie's law. The centre of the ball is the infinite-temperature state, and the boundary is unreachable at any finite temperature.
 
@@ -787,11 +787,11 @@ Boundary. The variance computed here is the algebraic second moment of one eleme
 
 ### I.12.t — An Effect Is a Measurement of Finite Resolution
 
-Read: the interval $[0,e_t]$, the conditions $\lvert\vec w\rvert\le\min(a,1-a)$, the sharpness $\eta$, and the trine POVM.
+Read: the interval $[0,e_t]$, the conditions $\lvert\vec w\rvert\le\min(a,1-a)$, the sharpness $\digamma_{\mathrm{blc}}$, and the trine POVM.
 
-The interval is the set of measurements, and its interior is the set of imperfect ones. The two endpoints are the never and the always; the boundary circle at $a=\tfrac12,\lvert\vec w\rvert=\tfrac12$ is the set of perfect analysers; and everything between is an analyser with finite contrast. The parameter $\eta$ names the contrast, and the identity $\tilde{\mathcal E}_{\Psi,+}^{2}-\tilde{\mathcal E}_{\Psi,+}=\tfrac14(\eta^{2}-1)e_t$ says that the effect is a projection exactly at unit contrast.
+The interval is the set of measurements, and its interior is the set of imperfect ones. The two endpoints are the never and the always; the boundary circle at $a=\tfrac12,\lvert\vec w\rvert=\tfrac12$ is the set of perfect analysers; and everything between is an analyser with finite contrast. The parameter $\digamma_{\mathrm{blc}}$ names the contrast, and the identity $\tilde{\mathcal E}_{\Psi,+}^{2}-\tilde{\mathcal E}_{\Psi,+}=\tfrac14(\digamma_{\mathrm{blc}}^{2}-1)e_t$ says that the effect is a projection exactly at unit contrast.
 
-A finite-resolution measurement is not a defective perfect one. The two outcomes of an unsharp analyser overlap, and the overlap is a property of the apparatus and not of the state. The weight $p_\pm=\tfrac12(1\pm\eta\vec u\cdot\vec s_{\Psi})$ shows the two roles separately: $\eta$ belongs to the measurement and $\vec s_{\Psi}$ to the preparation, and the product is what the experiment reads. No improvement of the preparation can raise $\eta$.
+A finite-resolution measurement is not a defective perfect one. The two outcomes of an unsharp analyser overlap, and the overlap is a property of the apparatus and not of the state. The weight $p_\pm=\tfrac12(1\pm\digamma_{\mathrm{blc}}\vec u\cdot\vec s_{\Psi})$ shows the two roles separately: $\digamma_{\mathrm{blc}}$ belongs to the measurement and $\vec s_{\Psi}$ to the preparation, and the product is what the experiment reads. No improvement of the preparation can raise $\digamma_{\mathrm{blc}}$.
 
 The three-outcome measurement is the case that no basis supplies. Three effects at $120^\circ$ sum to the unit and none is a projection, so the measurement has three exclusive alternatives and no orthonormal family of three exists in a two-dimensional carrier. The interval supplies the alternatives without enlarging the carrier, and the dilation supplies the projective realisation on a larger one.
 
@@ -889,7 +889,7 @@ The Born weight is the normalised Hermitian pairing. It is $h_t+\vec s_{\Psi}\cd
 
 The variance is the part of the observable the state cannot predict. It is $\lvert\vec h_\Psi\rvert^{2}(1-r^{2}\cos^{2}\theta)$, with a transverse term and a mixedness term, and only a pure state has an eigenstate.
 
-The effects are the interval between zero and the unit. The projections are its extreme points, a general resolution of the unit is a POVM, and the sharpness $\eta$ names the resolution of a two-outcome measurement. The interval gives statistics and not the post-measurement state.
+The effects are the interval between zero and the unit. The projections are its extreme points, a general resolution of the unit is a POVM, and the sharpness $\digamma_{\mathrm{blc}}$ names the resolution of a two-outcome measurement. The interval gives statistics and not the post-measurement state.
 
 The geometry is the algebra's own. The boundary is the projective line with the Fubini–Study metric, a quarter of the round sphere; the complex structure is the commutator; the symplectic area is $\pi$, which is $2\pi$ times the spin.
 
@@ -905,7 +905,7 @@ The two entries of this section are one statement about one cone. A particle of 
 | --- | --- | --- |
 | the sector | $\mathbb{B}_{\Psi}$ | the Hermitian half, $\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |
 | the observable | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | real weight, real direction |
-| the spectrum | $\lambda_\pm$ | $h_t\pm\lvert\vec h_\Psi\rvert$ |
+| the spectrum | $\eta_{\pm}$ | $h_t\pm\lvert\vec h_\Psi\rvert$ |
 | the axis | $\vec u_\Psi$ | $\vec h_\Psi/\lvert\vec h_\Psi\rvert$ |
 | the idempotent | $\tilde\Pi_{\mathrm{id},1,2}(\vec u)$ | $\tfrac12(e_t\pm i\vec u)$, pure state on the axis $\vec u$ |
 | the state | $\tilde{Ϛ}_\Psi=\tfrac12(e_t+i\vec s_{\Psi})$ | positive, unit weight, $\lvert\vec s_{\Psi}\rvert\le1$ |
@@ -920,7 +920,7 @@ The two entries of this section are one statement about one cone. A particle of 
 | the weight of a projector | $p_\pm$ | $\tfrac12(1\pm\vec u\cdot\vec s_{\Psi})$ |
 | the variance | $\bigl\langle\tilde H_\Psi^{2}\bigr\rangle-\bigl\langle\tilde H_\Psi\bigr\rangle^{2}$ | $\lvert\vec h_\Psi\rvert^{2}(1-r^{2}\cos^{2}\theta)$ |
 | the effect | $\tilde{\mathcal E}_{\Psi}=a\,e_t+i\vec w$ | $0\le a\le1$, $\lvert\vec w\rvert\le\min(a,1-a)$ |
-| the sharpness | $\eta$ | $\lvert\vec w\rvert/(\min(a,1-a))$ for the symmetric family |
+| the sharpness | $\digamma_{\mathrm{blc}}$ | $\lvert\vec w\rvert/(\min(a,1-a))$ for the symmetric family |
 | the POVM | $\{\tilde{\mathcal E}_{\Psi,k}\}$ | positive effects summing to $e_t$ |
 | the conjugation action | $\Gamma_{\tilde U}$ | $\tilde U\tilde X\tilde U^{*}$ |
 | the unit of the flow | $\tilde Z$ | a root of $-e_t$, forced central, $\pm i$ |

@@ -18,23 +18,23 @@ The finding is stated at the outset. **The algebra supplies a canonical complex 
 
 ## The Transformation Function and the Origin of the Phase
 
-The identification of the phase with the action is not assumed; it descends from the canonical structure, and the descent is Dirac's. When the configuration variables of a system are changed — the $\zeta$'s replaced by another complete set $\eta$ — the classical transformation can be put in the contact form
+The identification of the phase with the action is not assumed; it descends from the canonical structure, and the descent is Dirac's. When the configuration variables of a system are changed — the $\zeta$'s replaced by another complete set $\varsigma_{\mathrm{grs}}$ — the classical transformation can be put in the contact form
 
 $$
-p_r=\frac{\partial S}{\partial \zeta_r}, \qquad P_r=-\frac{\partial S}{\partial \eta_r},
+p_r=\frac{\partial S}{\partial \zeta_r}, \qquad P_r=-\frac{\partial S}{\partial \varsigma_{\mathrm{grs,r}}},
 $$
 
-with $S=S(\zeta,\eta)$ the generator. In the quantum theory the two sets cannot be diagonal at once, but the two representations are connected by a **transformation function** $\langle \zeta_f|\eta_f\rangle$, and Dirac's observation is that this function is the quantum analogue of $\exp(i\theta_{\mathrm{act}})$.
+with $S=S(\zeta,\varsigma_{\mathrm{grs}})$ the generator. In the quantum theory the two sets cannot be diagonal at once, but the two representations are connected by a **transformation function** $\langle \zeta_f|\varsigma_{\mathrm{grs,f}}\rangle$, and Dirac's observation is that this function is the quantum analogue of $\exp(i\theta_{\mathrm{act}})$.
 
 Throughout this article $\theta_{\mathrm{act}}:=\frac{2\pi \mathrm{Re}\,S}{h}$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\frac{2\pi \mathrm{Im}\,S}{h}$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
-The mechanism is a change of basis, and it is exact in finite dimension. Write the transformation function as $\langle  \zeta_f|\eta_f\rangle=\exp(i\theta_{\mathrm{act}})$. For any function expressed as a well-ordered sum of products $f(\zeta)g(\eta)$ — every $\zeta$ to the left of every $\eta$ — the mixed matrix element is multiplicative,
+The mechanism is a change of basis, and it is exact in finite dimension. Write the transformation function as $\langle  \zeta_f|\varsigma_{\mathrm{grs,f}}\rangle=\exp(i\theta_{\mathrm{act}})$. For any function expressed as a well-ordered sum of products $f(\zeta)g(\varsigma_{\mathrm{grs}})$ — every $\zeta$ to the left of every $\varsigma_{\mathrm{grs}}$ — the mixed matrix element is multiplicative,
 
 $$
-\langle \zeta_f|f(\zeta)g(\eta)|\eta_f\rangle=f(\zeta_f)g(\eta_f)\,\langle \zeta_f|\eta_f\rangle ,
+\langle \zeta_f|f(\zeta)g(\varsigma_{\mathrm{grs}})|\varsigma_{\mathrm{grs,f}}\rangle=f(\zeta_f)g(\varsigma_{\mathrm{grs,f}})\,\langle \zeta_f|\varsigma_{\mathrm{grs,f}}\rangle ,
 $$
 
-because $f(\zeta)$ is diagonal in the $\zeta$-representation, $g(\eta)$ is diagonal in the $\eta$-representation, and the two diagonalisations meet only in the transformation function. Applying this to the momentum gives $p_r=\partial U/\partial \zeta_r$ and $P_r=-\partial U/\partial \eta_r$ as equations between operators, **provided the derivatives are well-ordered**. The qualification is not removable: the only differentiation available on the dynamical variables is the Poisson bracket, and it is the step at which the quantum theory fails to reproduce the classical Lagrangian equations directly. The operator form of the relations, with that caveat, had been proved by Jordan by another method and is recovered in the paper as a by-product of the transformation function.
+because $f(\zeta)$ is diagonal in the $\zeta$-representation, $g(\varsigma_{\mathrm{grs}})$ is diagonal in the $\varsigma_{\mathrm{grs}}$-representation, and the two diagonalisations meet only in the transformation function. Applying this to the momentum gives $p_r=\partial U/\partial \zeta_r$ and $P_r=-\partial U/\partial \varsigma_{\mathrm{grs,r}}$ as equations between operators, **provided the derivatives are well-ordered**. The qualification is not removable: the only differentiation available on the dynamical variables is the Poisson bracket, and it is the step at which the quantum theory fails to reproduce the classical Lagrangian equations directly. The operator form of the relations, with that caveat, had been proved by Jordan by another method and is recovered in the paper as a by-product of the transformation function.
 
 The result for the phase follows when the two sets are the configurations at two times. The generator of the transformation between the configurations at $T$ and at $r'_t$ is the action over the interval, so $\langle x_t|x_T\rangle$ corresponds to $\exp(i\theta_{\mathrm{act}})$, and for $T$ infinitesimally before $r'_t$ to $\exp(\frac{2\pi i\,L\,dr'_{t}}{h})$. The phase of the path integral is the action because the action generates the canonical transformation between the endpoints — not because it is an invariant that happens to be available. The field-theoretic counterpart of the transformation function, which is a functional of the field values on a boundary rather than a function of two configurations, is named in the companion article *The Functional Integral in Biquaternionic Form*. What that counterpart and this section fix between them is the **content** of the phase; what the algebra fixes is the imaginary unit that multiplies it, which is the question the rest of this article addresses.
 
@@ -113,7 +113,7 @@ $$
 \exp(i\theta_{\mathrm{act}})\,\big(\exp(i\theta_{\mathrm{act}})\big)^\dagger=e_t.
 $$
 
-It is **not**, however, a **unit-norm** element. The Lorentz rotors are the biquaternions with $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$ (the group $SL(2,\mathbb{C})$), and for a central element $\lambda e_t$ this condition reads $\lambda^2=1$, so $\lambda=\pm1$. For the phase,
+It is **not**, however, a **unit-norm** element. The Lorentz rotors are the biquaternions with $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$ (the group $SL(2,\mathbb{C})$), and for a central element $Q_te_t$ this condition reads $Q_t^2=1$, so $Q_t=\pm1$. For the phase,
 
 $$
 \exp(i\theta_{\mathrm{act}})\big(\exp(i\theta_{\mathrm{act}})\big)^{\natural}=\exp(2i\theta_{\mathrm{act}})\neq  e_t

@@ -272,9 +272,9 @@ $$
 $$
 therefore does not increase, and strictly decreases for any off-axis state when $p>0$.
 
-**Entropy.** The eigenvalues of $\tilde{Ϛ}_{\Psi}$ are $\lambda_\pm = \tfrac{1}{2}(1 \pm x)$ with $r_x = |\vec s_{\Psi}|$, and
+**Entropy.** The eigenvalues of $\tilde{Ϛ}_{\Psi}$ are $\eta_{\pm} = \tfrac{1}{2}(1 \pm x)$ with $r_x = |\vec s_{\Psi}|$, and
 $$
-S(x) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-
+S(x) = -\eta_{+}\log\eta_{+} - \eta_{-}\log\eta_{-}
 = -\frac{1+x}{2}\log\frac{1+x}{2} - \frac{1-x}{2}\log\frac{1-x}{2}.
 $$
 Differentiating,
@@ -289,7 +289,7 @@ S(\tilde{Ϛ}_{\Psi,\mathrm{out}}) \geq S(\tilde{Ϛ}_{\Psi}),
 $$
 with equality if and only if $p=0$ or the state is on the dephasing axis. Dephasing strictly increases the entropy of every off-axis state, for every $0 < p \leq 1$. This is consistent with the channel being unital: $Ξ(\tfrac{1}{2}e_t) = \tfrac{1}{2}e_t$, and unital channels are mixedness-increasing.
 
-**Concrete case.** Take the pure state $\tilde{Ϛ}_{\Psi} = \tilde\Pi_{\mathrm{id},1}(\vec e_x) = \tfrac{1}{2}(e_t + i\vec e_x)$, with $\vec s_{\Psi} = (1,0,0)$, purity $1$, and entropy $0$. Dephase along $\vec e_z$ with $p = \tfrac{1}{2}$. Then $\vec s_{\Psi,\mathrm{out}} = (\tfrac{1}{2},0,0)$, so $|\vec s_{\Psi,\mathrm{out}}| = \tfrac{1}{2}$, the eigenvalues are $\lambda_\pm = \tfrac{3}{4}, \tfrac{1}{4}$, and
+**Concrete case.** Take the pure state $\tilde{Ϛ}_{\Psi} = \tilde\Pi_{\mathrm{id},1}(\vec e_x) = \tfrac{1}{2}(e_t + i\vec e_x)$, with $\vec s_{\Psi} = (1,0,0)$, purity $1$, and entropy $0$. Dephase along $\vec e_z$ with $p = \tfrac{1}{2}$. Then $\vec s_{\Psi,\mathrm{out}} = (\tfrac{1}{2},0,0)$, so $|\vec s_{\Psi,\mathrm{out}}| = \tfrac{1}{2}$, the eigenvalues are $\eta_{\pm} = \tfrac{3}{4}, \tfrac{1}{4}$, and
 $$
 \boxed{\;S = -\tfrac{3}{4}\log\tfrac{3}{4} - \tfrac{1}{4}\log\tfrac{1}{4}
 = \tfrac{3}{4}\log\tfrac{4}{3} + \tfrac{1}{4}\log 4 \approx 0.562335 \ \text{nats}\;},
@@ -328,7 +328,7 @@ The two canonical channels illustrate the two faces of irreversibility. Dephasin
 | $E_{j\imath} = \lvert j\rangle\langle k\rvert$ | Matrix units of the computational basis |
 | $\gamma$ | Amplitude-damping parameter |
 | $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1+\lvert\vec s_{\Psi}\rvert^2)$ | Purity |
-| $S = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$ | von Neumann entropy |
+| $S = -\eta_{+}\log\eta_{+} - \eta_{-}\log\eta_{-}$ | von Neumann entropy |
 
 ## Further Reading
 

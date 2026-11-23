@@ -25,23 +25,23 @@ Let $\vec S$ be the rotation generator on the carrier of the state, read as one 
 **Definition (helicity).** With the axis $\vec u_p$ declared, the **helicity operator** is the projection
 
 $$
-\lambda=\vec u_p\cdot\vec S ,
+\digamma_{\mathrm{hlc}}=\vec u_p\cdot\vec S ,
 $$
 
 and the **helicity** of a state is its eigenvalue $\frac{h}{2\pi}\,h$, in units of $\frac{h}{2\pi}$. The operator is Hermitian and belongs to $\mathbb{B}_{\Psi}$; the number $h$ is real and labels the state, not the carrier.
 
-**Proposition (the spectrum, and what the two words mean).** On a carrier of spin $s$ the spectrum of $\lambda$ is $\frac{h}{2\pi}\,h$ with $h\in\{-s,-s+1,\dots,s\}$. The largest $h$ is the spin.
+**Proposition (the spectrum, and what the two words mean).** On a carrier of spin $s$ the spectrum of $\digamma_{\mathrm{hlc}}$ is $\frac{h}{2\pi}\,h$ with $h\in\{-s,-s+1,\dots,s\}$. The largest $h$ is the spin.
 
 *Proof.* The spectrum of $\vec u\cdot\vec S$ is independent of the unit vector $\vec u$, and its maximum is the spin, which is the dimension of the carrier's representation space read on the generators (*From the Spin to the Carriers and the Closures*, §*The Spin Table*). The operator at the declared axis is that same operator, so it has that same string, ordered along $\vec u_p$ rather than along a fixed axis.
 
 Two consequences are worth naming. **Spin is a property of the carrier; helicity is a property of the state.** The carrier fixes the list, the axis orders it, the state selects a member. **The list is the same at every axis**, so a rotation cannot change the values available, only which of them a given state carries; that is the content of the rotation law below.
 
-$\lambda$ is an observable and not a generator: its action on an element of the carrier is a left multiplication, and that is the sense in which the algebra supplies it as an element rather than as a matrix.
+$\digamma_{\mathrm{hlc}}$ is an observable and not a generator: its action on an element of the carrier is a left multiplication, and that is the sense in which the algebra supplies it as an element rather than as a matrix.
 
 **Two collisions of the letter.**
 
 - $\vec S$ is the spin vector of *Angular Momentum and Spin in Biquaternionic Form*. *The Photon in Biquaternionic Form* records that the same glyph is also the Poynting vector of its energy–momentum table. The two are distinguished by the carrier: the spin vector acts on a state, the Poynting vector is a density of the field.
-- $\lambda$ is used below in two senses, and the factorisation sections say which is in force. Here it is the operator, an element of the algebra carrying no index; there it is a spinor, one of the two factors of a null momentum, with a spinor index and a bar on its conjugate.
+- The letter $\lambda$ carried two senses once, and this article keeps them apart. The operator is $\digamma_{\mathrm{hlc}}$, an element of the algebra carrying no index. The spinor is $\lambda$, one of the two factors of a null momentum, with a spinor index and a bar on its conjugate; the factorisation sections say which is in force.
 
 **Two subscripts, one object.** The subscript names the element whose direction is taken, the third rule of the arrow in *Algebra and Element Conventions*, §*The Remarkable Subspaces of Biquaternions*: $\vec u_p$ for the momentum $\vec p$ and $\vec u_\Phi$ for the wave vector $\vec\nu_\Phi$. The two are the same element, since $\vec p=h\,\vec\nu_\Phi$; the subscript records which symbol the article in hand uses, the photon article writing $\vec u_\Phi$ and the Dirac articles $\vec u_p$.
 
@@ -62,7 +62,7 @@ In the algebra this is one line. The orbital operator is the vector part of the 
 On the spin-$\tfrac12$ carrier the generator is $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_\imath$, so the operator is the left multiplication by
 
 $$
-\lambda=\frac{h}{4\pi}\,i\vec u_p\in\mathbb{B}_{\Psi} .
+\digamma_{\mathrm{hlc}}=\frac{h}{4\pi}\,i\vec u_p\in\mathbb{B}_{\Psi} .
 $$
 
 The carrier is a minimal left ideal, and the two helicity values are its two weights. The vectors that carry them are named by the idempotents at the axis.
@@ -85,7 +85,7 @@ This is the proposition of *Spinors and Dirac Spinors in the Biquaternion Algebr
 **The spinor form.** The same element is written in that exercise with the root $\tilde{Ζ}=i\vec u_p$ of the central value $+1$, and the two are proportional,
 
 $$
-\lambda=\frac{h}{4\pi}\,\tilde{Ζ} .
+\digamma_{\mathrm{hlc}}=\frac{h}{4\pi}\,\tilde{Ζ} .
 $$
 
 The values $\pm1$ of $\tilde{Ζ}$ are therefore the helicity values in units of $\frac{h}{4\pi}$, and the exercise quotes them under the name of the helicity. The pair is the same pair; the factor is invertible.
@@ -97,14 +97,14 @@ The fundamental carrier is a minimal left ideal. The integer carriers are not: s
 **Spin one.** In the adjoint action, with $\vec u_p$ the axis,
 
 $$
-\lambda=\frac{i\,h}{4\pi}\,\mathrm{ad}_{\vec u_p},
+\digamma_{\mathrm{hlc}}=\frac{i\,h}{4\pi}\,\mathrm{ad}_{\vec u_p},
 $$
 
 whose representative is the Hermitian element $i\,\frac{h}{2\pi}\,\vec u_{p}\in\mathbb{B}_{\Psi}$, with the spectrum $\{+\frac{h}{2\pi},0,-\frac{h}{2\pi}\}$ on the complexified vector part. The corpus states this spectrum in units of $\frac{h}{2\pi}$, as $\{+1,0,-1\}$, and writes the dimensionless $\tfrac{i}{2}\mathrm{ad}_{\vec u_\Phi}$ (*The Photon in Biquaternionic Form*, §*Helicity as an Observable in the Informational Sector*) or $\tilde S_{\Psi,\mathrm{adj},3}$ (*Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*); the two are the same operator in different units, and the $\frac{h}{2\pi}$ above restores the invertibles of the spin-$\tfrac12$ case. The $\pm \frac{h}{2\pi}$ eigenvectors are the two circular polarizations, and the $0$ eigenvector is the direction $\vec u_p$ itself, since $\mathrm{ad}_{\vec u_p}(\vec u_p)=0$. The one qualification is a matter of sides: the observable is an element of $\mathbb{B}_{\Psi}$ and the carrier is the vector part, so the operator is a left multiplication on the algebra of which the carrier is a subspace, and it is not itself a state.
 
 **The massive field.** The same carrier carries the Proca field, and there all three states are physical. Along the momentum the two transverse states carry $\pm1$ and the longitudinal one carries $0$, and a boost rotates a transverse polarization into the longitudinal one. The label is therefore not invariant at $m\neq0$, which is the massive case of the boost law below (*The Proca Equation: Massive Spin 1 in Biquaternionic Form*, §*The Massive Field Strength and the Self-Dual Split*). The algebra represents both cases on the same carrier, and the value of $m$ decides which states are physical.
 
-**The self-dual split.** For the massless field the two nonzero labels are the two self-dual halves of the field strength. With $\vec N=\vec E+ic\vec B$ the self-dual half and $\vec N^*$ its conjugate, Faraday's law gives $\vec B=\vec u_\Phi\times\vec E$ and $\vec u_\Phi\times\varepsilon_{\mathrm{fop},\pm}=\mp i\varepsilon_{\mathrm{fop},\pm}$, so each half carries one sign of $\lambda$ (*The Photon in Biquaternionic Form*, §*Helicity and the Self-Dual Split of the Field Strength*). That is the field-theoretic face of the same operator: the weight of the little group is the label of one of the two complex three-dimensional representations of the Lorentz group.
+**The self-dual split.** For the massless field the two nonzero labels are the two self-dual halves of the field strength. With $\vec N=\vec E+ic\vec B$ the self-dual half and $\vec N^*$ its conjugate, Faraday's law gives $\vec B=\vec u_\Phi\times\vec E$ and $\vec u_\Phi\times\varepsilon_{\mathrm{fop},\pm}=\mp i\varepsilon_{\mathrm{fop},\pm}$, so each half carries one sign of $\digamma_{\mathrm{hlc}}$ (*The Photon in Biquaternionic Form*, §*Helicity and the Self-Dual Split of the Field Strength*). That is the field-theoretic face of the same operator: the weight of the little group is the label of one of the two complex three-dimensional representations of the Lorentz group.
 
 **Spin two.** On the symmetric traceless square the spectrum is $\{-2,-1,0,1,2\}$ in units of $\frac{h}{2\pi}$, and the gauge and trace removals leave the two of $\pm2$ (*Canonical Quantization of the Biquaternion Graviton Field*, §*Helicity and the Massless Little Group*). The algebra supplies the five-dimensional carrier and the projector; it does not supply the removal.
 
@@ -117,7 +117,7 @@ Three laws hold on every carrier. The first two cost no computation; the third i
 **Reversal.** The unit along $-\vec p$ is $-\vec u_p$, so
 
 $$
-\lambda(-\vec p)=-\lambda(\vec p).
+\digamma_{\mathrm{hlc}}(-\vec p)=-\digamma_{\mathrm{hlc}}(\vec p).
 $$
 
 This is also the statement $\tilde\Pi_{\mathrm{id},+}(\vec u_p)=\tilde\Pi_{\mathrm{id},-}(-\vec u_p)$: the set of values is the same at the reversed axis, and what reverses is the attribution of a value to a given momentum. The two helicities of a state are therefore not exchanged by the reversal of the momentum alone; the state is a different state in the reversed frame.
@@ -125,12 +125,12 @@ This is also the statement $\tilde\Pi_{\mathrm{id},+}(\vec u_p)=\tilde\Pi_{\math
 **Rotation.** For the rotor $\tilde u$ of a rotation carrying $\vec u_p$ to $\vec u_{p'}$ (*Angular Momentum and Spin in Biquaternionic Form*, §*The Rotor Realisation of Rotations*), the operator is conjugated,
 
 $$
-\lambda(\vec p')=\tilde u\,\lambda(\vec p)\,\tilde u^{*},
+\digamma_{\mathrm{hlc}}(\vec p')=\tilde u\,\digamma_{\mathrm{hlc}}(\vec p)\,\tilde u^{*},
 $$
 
 so a rotation relabels the axis and leaves the spectrum alone. Helicity is a scalar under rotations by construction, and no rotation can spoil the label.
 
-**Boost.** A boost along $\vec p$ leaves $\vec u_p$ alone and rescales $\lvert\vec p\rvert$, so $\lambda$ is unchanged. A boost transverse to $\vec p$ is a different matter. The momentum turns in the boost, and the spin turns with it by the Wigner rotation the boost induces, which is not in general the rotation carrying the old axis to the new one; the state then ceases to be an eigenstate of the new $\lambda$. The extreme case is a boost that overtakes the particle, which reverses the momentum in the new frame while the spin does not reverse with it, so $\lambda$ changes sign. Overtaking is possible only for a particle slower than light, and that is the whole of the massive case: **helicity is not Lorentz invariant at $m\neq0$.** The rest frame is the limit of the same fact: at $\vec p=0$ the axis is undefined, so the operator is undefined, and helicity is a property of a state in motion.
+**Boost.** A boost along $\vec p$ leaves $\vec u_p$ alone and rescales $\lvert\vec p\rvert$, so $\digamma_{\mathrm{hlc}}$ is unchanged. A boost transverse to $\vec p$ is a different matter. The momentum turns in the boost, and the spin turns with it by the Wigner rotation the boost induces, which is not in general the rotation carrying the old axis to the new one; the state then ceases to be an eigenstate of the new $\digamma_{\mathrm{hlc}}$. The extreme case is a boost that overtakes the particle, which reverses the momentum in the new frame while the spin does not reverse with it, so $\digamma_{\mathrm{hlc}}$ changes sign. Overtaking is possible only for a particle slower than light, and that is the whole of the massive case: **helicity is not Lorentz invariant at $m\neq0$.** The rest frame is the limit of the same fact: at $\vec p=0$ the axis is undefined, so the operator is undefined, and helicity is a property of a state in motion.
 
 ## The Little Group and the Invariance
 
@@ -138,7 +138,7 @@ At $m=0$ the label becomes invariant, and the reason is that a null direction ca
 
 **The invariance.** A boost cannot reverse a null direction. With $\vec p$ null and $\beta<1$ the boosted energy $E'=\gamma(E-\beta p_\parallel)=\gamma E(1-\beta\cos\theta)$ is positive for every boost, so the momentum stays in the forward light cone and $\vec u_p$ tilts with it instead of turning over. Nothing overtakes a massless particle, so the mechanism of the massive case is unavailable.
 
-**The reduction from $2s+1$ to two is not the little group.** The little group supplies the weight; it does not cut the carrier. The algebra exhibits all $2s+1$ values of $\lambda$ and removes none, and the passage to the two states of $\pm s$ is the gauge condition (*The Determination of the Possible Spins in Biquaternionic Form*, §*Mass, the Little Group and Helicity*; *The Photon in Biquaternionic Form*, §*Helicity as an Observable in the Informational Sector*). For the vector field the zero eigenvector is $\vec u_p$ itself, and the gauge structure is what deletes it. A massless scalar keeps $h=0$, so the zero weight is excluded only when the spin is nonzero and the field is a gauge field.
+**The reduction from $2s+1$ to two is not the little group.** The little group supplies the weight; it does not cut the carrier. The algebra exhibits all $2s+1$ values of $\digamma_{\mathrm{hlc}}$ and removes none, and the passage to the two states of $\pm s$ is the gauge condition (*The Determination of the Possible Spins in Biquaternionic Form*, §*Mass, the Little Group and Helicity*; *The Photon in Biquaternionic Form*, §*Helicity as an Observable in the Informational Sector*). For the vector field the zero eigenvector is $\vec u_p$ itself, and the gauge structure is what deletes it. A massless scalar keeps $h=0$, so the zero weight is excluded only when the spin is nonzero and the field is a gauge field.
 
 **The doubling.** That a massless particle of definite helicity $h$ carries the one-dimensional representation of weight $h$ is the little group's statement. Whether the field carries both signs is a property of the field: for the photon and the graviton the field is real, and a real field is the sum of a mode and its conjugate, so both signs occur; for a Weyl fermion the field is one handed spinor, and the other sign belongs to its antiparticle and not to the particle.
 
@@ -220,7 +220,7 @@ $$
 h=\tfrac12\bigl(d_{\bark}-d_\imath\bigr).
 $$
 
-The spinor $\lambda$ has $d_\imath=+1$ and therefore $h=-\tfrac12$; its conjugate has $h=+\tfrac12$. The fundamental carrier is the object of weight $\pm\tfrac12$, which is the operator's own statement at the momentum axis, $\lambda=\pm\frac{h}{4\pi}$ on the two lines of the carrier. **The two levels agree because both are the projection on $\vec u_p$, read in the two descriptions of the same spinor: as an element of a left ideal, and as a factor of a null momentum.**
+The spinor $\digamma_{\mathrm{hlc}}$ has $d_\imath=+1$ and therefore $h=-\tfrac12$; its conjugate has $h=+\tfrac12$. The fundamental carrier is the object of weight $\pm\tfrac12$, which is the operator's own statement at the momentum axis, $\digamma_{\mathrm{hlc}}=\pm\frac{h}{4\pi}$ on the two lines of the carrier. **The two levels agree because both are the projection on $\vec u_p$, read in the two descriptions of the same spinor: as an element of a left ideal, and as a factor of a null momentum.**
 
 Two qualifications are kept explicit. The full little group of a massless particle is $ISO(2)$ and not $U(1)$; the compact part is what acts nontrivially on finite-helicity states, and it is the part the factorisation exhibits. And the identification of helicity with the $U(1)$ weight is standard representation theory: the algebra supplies the $U(1)$ action through its rotation rotors, and it does not select which weight is physical.
 
@@ -242,7 +242,7 @@ $$
 
 so the zero-divisor relation $\tilde P_{\Phi}^2=2P_t\tilde P_{\Phi}$ holds only at $m=0$, and the departure is additive of order $m^2$. Three things fail to be continuous: the **rank** drops from two to one, the **factorisation** from two terms to one, and the **little group** from $SU(2)$ to $ISO(2)$.
 
-The operator, by contrast, is continuous through the limit: it never divides by the mass, and $\lambda=\vec u_p\cdot\vec S$ is defined at every $m$. What fails is not the operator but the identification of its values with a little-group weight, which is why the article keeps the two levels apart instead of deriving one from the other.
+The operator, by contrast, is continuous through the limit: it never divides by the mass, and $\digamma_{\mathrm{hlc}}=\vec u_p\cdot\vec S$ is defined at every $m$. What fails is not the operator but the identification of its values with a little-group weight, which is why the article keeps the two levels apart instead of deriving one from the other.
 
 ## Chirality and Helicity
 
@@ -250,11 +250,11 @@ The two words name different things and coincide at one mass.
 
 **Chirality** is the eigenvalue of the chirality basis operator $\xi=-iR_{\mathrm{axf},\vec e_z}$, a pure right multiplier that carries one chiral half to minus itself and the other to plus itself. It is not a central sign but a slot: it acts on the right, a product takes the value of its right factor, and a left multiplication keeps the value. It is Lorentz invariant with or without a mass, because it commutes with the six Lorentz basis operators (*Chiral Fermions in the Biquaternion Framework*).
 
-**Helicity** is the eigenvalue of $\lambda$, a projection on the momentum, fixed by the little group and dependent on it.
+**Helicity** is the eigenvalue of $\digamma_{\mathrm{hlc}}$, a projection on the momentum, fixed by the little group and dependent on it.
 
 So the two differ in kind. Chirality is a fixed side, the same in every frame and for every momentum. Helicity is a projection, and it needs a momentum to exist. At $m=0$ the two labels agree on a positive-energy state, because the little group is then all that remains of the Lorentz action and both reduce to the same weight; on a negative-energy state they are opposite, which is the same statement read on the antiparticle.
 
-**Why helicity is conserved and chirality is not.** Helicity is $\vec J\cdot\vec u_p$, since the orbital part contributes nothing, and both factors are conserved by a free motion: $\vec J$ generates the rotations the free Hamiltonian respects, and $\vec p$ is conserved, so $\vec u_p$ is conserved with it. Hence $[\lambda,\tilde H_\Psi]=0$ for a free particle, at any mass. Chirality has no such argument, because what breaks it is the mass and not the motion. One is a symmetry of the free motion, the other a symmetry of the massless Lagrangian.
+**Why helicity is conserved and chirality is not.** Helicity is $\vec J\cdot\vec u_p$, since the orbital part contributes nothing, and both factors are conserved by a free motion: $\vec J$ generates the rotations the free Hamiltonian respects, and $\vec p$ is conserved, so $\vec u_p$ is conserved with it. Hence $[\digamma_{\mathrm{hlc}},\tilde H_\Psi]=0$ for a free particle, at any mass. Chirality has no such argument, because what breaks it is the mass and not the motion. One is a symmetry of the free motion, the other a symmetry of the massless Lagrangian.
 
 In the algebra the mass is the off-diagonal pair that exchanges the two chiral parts, central in coefficient and odd under the basis operator (*The Hydrogen Atom in Biquaternionic Form — The Relativistic Case*). At $m=0$ the pair decouples into two Weyl equations, one per part, and that decoupling is why the two labels agree there.
 
@@ -264,7 +264,7 @@ In the algebra the mass is the off-diagonal pair that exchanges the two chiral p
 
 **Supplied by the algebra.**
 
-- The operator $\lambda=\vec u_p\cdot\vec S$ as a Hermitian element of $\mathbb{B}_{\Psi}$ on every carrier, and its action as a left multiplication.
+- The operator $\digamma_{\mathrm{hlc}}=\vec u_p\cdot\vec S$ as a Hermitian element of $\mathbb{B}_{\Psi}$ on every carrier, and its action as a left multiplication.
 - Its spectrum, the weight string $\frac{h}{2\pi}\,h$ of the carrier, and the two carrier vectors of the fundamental case: the pure state at the axis and its companion nilpotent.
 - The reversal law and the rotation law, as statements about the idempotents at an axis.
 - The identification of the null momentum with a zero divisor, of the zero divisor with a rank-one matrix, and of the rank-one matrix with the factorisation into two spinors.
@@ -283,7 +283,7 @@ In the algebra the mass is the off-diagonal pair that exchanges the two chiral p
 
 ## Summary
 
-Helicity is the projection of the spin on the direction of motion, $\lambda=\vec u_p\cdot\vec S$, a Hermitian element of $\mathbb{B}_{\Psi}$ acting by left multiplication on every carrier of the algebra. On a carrier of spin $s$ its spectrum is the weight string $\frac{h}{2\pi}\,h$, $h\in\{-s,\dots,s\}$, and the largest value is the spin: the carrier fixes the list, the axis orders it, the state selects a member. The orbital part drops out identically, $\vec L\cdot\vec p=0$, which is why the projection is a name and not a component of $\vec J$. On the fundamental carrier the two values are $\pm\frac{h}{4\pi}$, carried by the pure state $\tilde\Pi_{\mathrm{id},+}(\vec u_p)$ and its companion nilpotent; on the adjoint the spectrum is $\{+1,0,-1\}$ in units of $\frac{h}{2\pi}$, with the propagation direction at zero; on the symmetric square it is $\{-2,-1,0,1,2\}$. The reversal law is exact and the rotation law is a conjugation by the rotor; a boost is what breaks the label, and only for a particle slower than light.
+Helicity is the projection of the spin on the direction of motion, $\digamma_{\mathrm{hlc}}=\vec u_p\cdot\vec S$, a Hermitian element of $\mathbb{B}_{\Psi}$ acting by left multiplication on every carrier of the algebra. On a carrier of spin $s$ its spectrum is the weight string $\frac{h}{2\pi}\,h$, $h\in\{-s,\dots,s\}$, and the largest value is the spin: the carrier fixes the list, the axis orders it, the state selects a member. The orbital part drops out identically, $\vec L\cdot\vec p=0$, which is why the projection is a name and not a component of $\vec J$. On the fundamental carrier the two values are $\pm\frac{h}{4\pi}$, carried by the pure state $\tilde\Pi_{\mathrm{id},+}(\vec u_p)$ and its companion nilpotent; on the adjoint the spectrum is $\{+1,0,-1\}$ in units of $\frac{h}{2\pi}$, with the propagation direction at zero; on the symmetric square it is $\{-2,-1,0,1,2\}$. The reversal law is exact and the rotation law is a conjugation by the rotor; a boost is what breaks the label, and only for a particle slower than light.
 
 At $m=0$ a second description opens. The null momentum is a zero divisor, hence a rank-one matrix, hence a product of two spinors, and the ambiguity of that product is the little-group scaling, a $U(1)$ for real momenta, realized as the rotation about $\vec p$. Helicity is the weight of that scaling, $h=\tfrac12(d_{\bark}-d_\imath)$, and the factors $\lambda$ and $\bar\lambda$ carry $\mp\tfrac12$: the two levels of the article agree. The limit $m\to0$ is singular in the factorisation — rank, number of terms and little group all change — while the operator passes through it untouched, so the weight is not derived from the operator but identified with it where both exist. Chirality is a different object: a right multiplier, a slot, invariant at every mass, coinciding with helicity only in the massless case.
 
@@ -308,7 +308,7 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 ## Further Reading
 
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html), for the spin-one helicity operator, its three values and the gauge removal of the longitudinal state.
-- [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the little group and the adjoint-action reading of $\lambda$.
+- [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the little group and the adjoint-action reading of $\digamma_{\mathrm{hlc}}$.
 - [Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation](exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html), for the helicity element $\tilde{Ζ}$, the two helicity lines and the mass that leaves them intact.
 - [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), for the massive case, where the label is not invariant.
 - [Canonical Quantization of the Biquaternion Graviton Field](canonical-quantization-of-the-biquaternion-graviton-field.html), for the spin-two spectrum and the two physical states.

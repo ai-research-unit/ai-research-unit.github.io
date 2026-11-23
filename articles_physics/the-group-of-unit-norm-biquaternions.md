@@ -90,13 +90,13 @@ So the second description of an element of the group is **a boost and a rotation
 A third description is worth recording because it is the one *The Spinor Module in Biquaternionic Form and Its Lorentz Action* uses. The image of an element is a matrix of determinant one,
 
 $$
-\mathsf{M}_2(\tilde U)=\bigl(\xi\ \ \eta\bigr),
+\mathsf{M}_2(\tilde U)=\bigl(\xi\ \ \upsilon_{\mathrm{spr}}\bigr),
 $$
 
-whose columns $\xi,\eta$ are two spinors. The determinant condition becomes
+whose columns $\xi,\upsilon_{\mathrm{spr}}$ are two spinors. The determinant condition becomes
 
 $$
-\det\bigl(\xi\ \ \eta\bigr)=1,
+\det\bigl(\xi\ \ \upsilon_{\mathrm{spr}}\bigr)=1,
 $$
 
 which is the statement that the two spinors are paired to one by the antisymmetric Hermitian form of the module. An element of the group is therefore also a **Hermitian pair of spinors**, and the group is the set of such pairs. This description is the one that makes the one-sided action on spinors and the two-sided action on four-vectors different actions of the same object.

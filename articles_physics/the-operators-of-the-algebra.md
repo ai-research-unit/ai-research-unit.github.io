@@ -26,7 +26,7 @@ A second objection is that the three readings are standard. A conjugation is a c
 
 The letters. The argument is $\tilde X$. The parameters are $\tilde Q$ and $\tilde P$; the second parameter of a two-sided operator is written $\tilde P$ when the two are unrelated and $\tilde Q^{*}$ when the pair is Hermitian. The operators are $L_{\tilde Q}$, $R_{\tilde Q}$, $T_{\tilde Q,\tilde P}$, and the Hermitian pair is abbreviated $\mathrm{Sd}_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$. The sets are $\operatorname{End}_L(\mathbb{B})$, $\operatorname{End}_R(\mathbb{B})$, $\operatorname{End}_{LR}(\mathbb{B})$ and $\operatorname{End}_{LR*}(\mathbb{B})$, abbreviated $L(\mathbb{B})$, $R(\mathbb{B})$ and so on where a set is used in an identity. The prime is the commutant. The swap of the two slots is $\sigma$, the quaternion conjugation is $\natural$, and the Hermitian conjugation is $*$. The four adjoints carry the marks $\approx$, $\natural$, $*$ and $\natural*$. The conventions are *Operator Family Conventions* and *Operator and Calculus Conventions*; this entry uses them and defines none of them.
 
-Boundaries. The algebra and its centre are *Introduction to the Algebra of Biquaternions*; the ambient operator space is *The Endomorphisms of the Biquaternion Algebra*; the four forms and the four norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the idempotents and the Peirce decomposition are *The Square Roots of One and the Idempotents of the Biquaternion Algebra*, *The Peirce Decomposition* and *Special Element and Peirce Conventions*; the sectors $\Sigma_{\varepsilon\eta}$ are *The Spectral Strata*; the matrix models are the three representation articles. No topology, no derivative and no dynamics appear.
+Boundaries. The algebra and its centre are *Introduction to the Algebra of Biquaternions*; the ambient operator space is *The Endomorphisms of the Biquaternion Algebra*; the four forms and the four norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the idempotents and the Peirce decomposition are *The Square Roots of One and the Idempotents of the Biquaternion Algebra*, *The Peirce Decomposition* and *Special Element and Peirce Conventions*; the sectors $\Sigma_{\varepsilon\varsigma_{\mathrm{sct}}}$ are *The Spectral Strata*; the matrix models are the three representation articles. No topology, no derivative and no dynamics appear.
 
 ## The Source Table
 
@@ -39,7 +39,7 @@ Boundaries. The algebra and its centre are *Introduction to the Algebra of Biqua
 | the side as a label, the structure isomorphism, the swap, its two eigenspaces, the proof that no multiplicative sign separates the images | [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html) |
 | the four adjoints, the five families, the self-adjointness table, the sector criterion and the failure of the four non-Hermitian families | [Adjoint Pair of $L$ and $R$ Operators](../articles_maths/adjoint-pair-of-l-and-r-operators.html) |
 | the Hermitian pair as two equations on one unknown, the transposition of the right member, the one-side pair and its second-order closure | [The Hermitian Pair of Operators Acting on One Side](../articles_maths/the-hermitian-pair-of-operators-acting-on-one-side.html) |
-| the real cone $\mathrm{Hp}_{\tilde Q}$, its multiplicativity, its spectrum $\lambda_i\bar\lambda_j$, its image $CO^{+}(1,3)$ | [The Hermitian Pair of Operators Acting on Two Sides](../articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides.html) |
+| the real cone $\mathrm{Hp}_{\tilde Q}$, its multiplicativity, its spectrum $\eta_i\bar\eta_j$, its image $CO^{+}(1,3)$ | [The Hermitian Pair of Operators Acting on Two Sides](../articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides.html) |
 | the three operators of the polar word, the doubling rule, the four-sector table of rank, spectrum, Jordan type and image | [Introduction to the Operators on the Four Sectors](../articles_maths/introduction-to-the-operators-on-the-four-sectors.html) |
 | the case-by-case computation of the eight sectors, one one-sided and one two-sided for each | [One-Sided Operators on the N-Regular Sector](../articles_maths/one-sided-operators-on-the-n-regular-sector.html) and its seven companions |
 | the pair $(A,B)$ of matrices, the Kronecker display $B^{\mathsf T}\otimes A$, the rank formula, the composition and the inverse | [$M_2(\mathbb{C})$ Pauli Representation : Operators](../articles_maths/m2c-pauli-representation-operators.html) |
@@ -67,11 +67,11 @@ The adjoints. Four adjoints and five families, the fifth being the Krein pair, w
 
 The sectors. $T_{\tilde Q,k\tilde Q^{*}}$ keeps both sectors exactly for real $\lambda$; a one-sided operator keeps a sector only for a real scalar. The Hermitian pair keeps both for every parameter.
 
-The Hermitian pair. $\mathrm{Hp}_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ is multiplicative, has spectrum $\{\lambda_i\bar\lambda_j\}$, trace $4\lvert Q_t\rvert^{2}$, determinant $\lvert N\rvert^{4}$, value $H(\tilde Q)$ at the identity, is singular exactly on the cone, and covers the group $CO^{+}(1,3)$ on the invertibles.
+The Hermitian pair. $\mathrm{Hp}_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ is multiplicative, has spectrum $\{\eta_i\bar\eta_j\}$, trace $4\lvert Q_t\rvert^{2}$, determinant $\lvert N\rvert^{4}$, value $H(\tilde Q)$ at the identity, is singular exactly on the cone, and covers the group $CO^{+}(1,3)$ on the invertibles.
 
 The matrix image. In the two-dimensional model a two-sided operator is the single Kronecker product $B^{\mathsf T}\otimes A$; the second slot enters transposed because the opposite algebra is the transposed one; the spectrum is the pairwise product of the two slot spectra; and the swap of the slots is the flip of the two factors.
 
-The regimes. On the four sectors the operators have rank $4$ with a doubled spectrum, rank $4$ with a Jordan block, rank $2$, and rank $2$ with a square-zero image; the two-sided operator replaces $\lambda_i$ by $\lambda_i\bar\lambda_j$ and drops to rank $1$ on the cone.
+The regimes. On the four sectors the operators have rank $4$ with a doubled spectrum, rank $4$ with a Jordan block, rank $2$, and rank $2$ with a square-zero image; the two-sided operator replaces $\eta_i$ by $\eta_i\bar\eta_j$ and drops to rank $1$ on the cone.
 
 ## The Ambient Space
 
@@ -228,10 +228,10 @@ Why the transpose appears. The right action of an element is a left action of th
 The eigenvalues multiply. The spectrum of a Kronecker product is the pairwise product of the spectra:
 
 $$
-\operatorname{spec}T_{\tilde Q,\tilde P}=\{\lambda_i\mu_j\},
+\operatorname{spec}T_{\tilde Q,\tilde P}=\{\eta_i\mu_j\},
 $$
 
-where $\lambda_i$ are the eigenvalues of the first matrix and $\mu_j$ those of the second. For the Hermitian pair the second parameter is $\tilde Q^{*}$, whose eigenvalues are the conjugates, so the spectrum is $\{\lambda_i\bar\lambda_j\}$: real, and nonnegative on the diagonal terms $\lambda_i\bar\lambda_i$.
+where $\eta_i$ are the eigenvalues of the first matrix and $\mu_j$ those of the second. For the Hermitian pair the second parameter is $\tilde Q^{*}$, whose eigenvalues are the conjugates, so the spectrum is $\{\eta_i\bar\eta_j\}$: real, and nonnegative on the diagonal terms $\eta_i\bar\eta_i$.
 
 The two determinants. The one-sided operator has determinant $N^{2}$, and the Hermitian pair has determinant $\lvert N\rvert^{4}$, which is $\lvert\det L_{\tilde Q}\rvert^{2}$. The pair's determinant is the squared modulus of the one-sided determinant, and it vanishes on the same set.
 
@@ -344,7 +344,7 @@ The multiplicativity is the composition law with the second slot starred, and it
 
 It is a real cone. The central phase cancels, $\mathrm{Hp}_{\omega\tilde Q}=\mathrm{Hp}_{\tilde Q}$ for a central unit $\omega$, and a real rescaling squares, $\mathrm{Hp}_{t\tilde Q}=t^{2}\mathrm{Hp}_{\tilde Q}$ for real $t$. The family is therefore the image of the eight-real-dimensional parameter space modulo the central circle: a cone of real dimension seven over a base of dimension six. The gauge freedom of the general two-sided operator is not lost here; it is fixed to a sign, and the sign is invisible because the scaling is a square.
 
-The numbers. The spectrum is $\{\lambda_i\bar\lambda_j\}$, the trace is $4\lvert Q_t\rvert^{2}$, the determinant is $\lvert N\rvert^{4}$, and the value at the identity is the amplitude:
+The numbers. The spectrum is $\{\eta_i\bar\eta_j\}$, the trace is $4\lvert Q_t\rvert^{2}$, the determinant is $\lvert N\rvert^{4}$, and the value at the identity is the amplitude:
 
 $$
 \operatorname{Sc}\mathrm{Sd}_{\tilde Q}(e_t)=H(\tilde Q).
@@ -367,13 +367,13 @@ $$
 \Sigma_{00}=\{N=0,\ B^{2}=0\},
 $$
 
-and on $\Sigma_{11}$ the two eigenvalues are $\lambda_\pm=Q_t\pm iB$.
+and on $\Sigma_{11}$ the two eigenvalues are $\eta_{\pm}=Q_t\pm iB$.
 
 The one-sided operators.
 
 | sector | rank | spectrum | Jordan type | image |
 | --- | --- | --- | --- | --- |
-| $\Sigma_{11}$ | $4$ | $\lambda_+,\lambda_-$, each twice | diagonal | $\mathbb{B}$ |
+| $\Sigma_{11}$ | $4$ | $\eta_{+},\eta_{-}$, each twice | diagonal | $\mathbb{B}$ |
 | $\Sigma_{10}$ | $4$ | $Q_t$, algebraic multiplicity $4$ | diagonal on the scalar line, $J_2\oplus J_2$ on the Jordan line | $\mathbb{B}$ |
 | $\Sigma_{01}$ | $2$ | $c,0$, multiplicities $2,2$ | diagonal | the isotropic plane $\tilde Q\mathbb{B}$ |
 | $\Sigma_{00}$ | $2$ | $0$, algebraic multiplicity $4$ | $J_2(0)\oplus J_2(0)$ | $\mathbb{C}\tilde\pi_{\mathrm{nil}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ |
@@ -382,12 +382,12 @@ The two-sided operators.
 
 | sector | rank | spectrum | Jordan type | image |
 | --- | --- | --- | --- | --- |
-| $\Sigma_{11}$ | $4$ | $\lambda_i\bar\lambda_j$ | semisimple | $\mathbb{B}$ |
+| $\Sigma_{11}$ | $4$ | $\eta_i\bar\eta_j$ | semisimple | $\mathbb{B}$ |
 | $\Sigma_{10}$ | $4$ | $\lvert Q_t\rvert^{2}$, multiplicity $4$ | diagonal on the scalar line, $J_3\oplus J_1$ on the Jordan line | $\mathbb{B}$ |
 | $\Sigma_{01}$ | $1$ | $\lvert c\rvert^{2},0$ | diagonal | the null line $\mathbb{C}P$ |
 | $\Sigma_{00}$ | $1$ | $0$ | $J_2(0)\oplus0\oplus0$ | the null line $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ |
 
-**Reading the two tables.** Along a row, the rank drops when the norm vanishes and the Jordan type leaves the semisimple case when the vector part squares to zero. Along a column, the eigenvalues become the four products $\lambda_i\bar\lambda_j$: the scale survives as its square, the phase cancels, and the pair of eigenvalues of the element becomes a quartet on the regular sectors and a doubled pair on the degenerate ones. The four rows are the four regimes of one action, and the two tables are the whole of the sector theory of the operators.
+**Reading the two tables.** Along a row, the rank drops when the norm vanishes and the Jordan type leaves the semisimple case when the vector part squares to zero. Along a column, the eigenvalues become the four products $\eta_i\bar\eta_j$: the scale survives as its square, the phase cancels, and the pair of eigenvalues of the element becomes a quartet on the regular sectors and a doubled pair on the degenerate ones. The four rows are the four regimes of one action, and the two tables are the whole of the sector theory of the operators.
 
 The doubling rule. The polar word $\tilde Q=\tilde Q_H\tilde Q_0$ carries through both operators,
 
@@ -598,8 +598,8 @@ One operator, three tasks. A change of frame when the second slot holds the inve
 | the length | $\ell(F)$ | $\operatorname{rank}c(F)\in\{0,1,2,3,4\}$ |
 | the algebraic norm | $N=\langle\tilde Q\rangle_{\natural}$ | $Q_t^{2}+B^{2}$ |
 | the vector form | $B^{2}$ | $Q_x^{2}+Q_y^{2}+Q_z^{2}$ |
-| the spectral sectors | $\Sigma_{\varepsilon\eta}$ | $\varepsilon=1$ if $N\neq0$, $\eta=1$ if $B^{2}\neq0$ |
-| the element's eigenvalues | $\lambda_\pm$ | $Q_t\pm iB$ on $\Sigma_{11}$ |
+| the spectral sectors | $\Sigma_{\varepsilon\varsigma_{\mathrm{sct}}}$ | $\varepsilon=1$ if $N\neq0$, $\varsigma_{\mathrm{sct}}=1$ if $B^{2}\neq0$ |
+| the element's eigenvalues | $\eta_{\pm}$ | $Q_t\pm iB$ on $\Sigma_{11}$ |
 | the informational sector | $\mathbb{B}_{\Psi}$ | the Hermitian half, $\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |
 | the material sector | $\mathbb{B}_{\Phi}$ | the anti-Hermitian half, $\mathrm{span}_{\mathbb{R}}\{i e_t,\vec e_x,\vec e_y,\vec e_z\}$ |
 | the idempotents | $\tilde\Pi_{\mathrm{id},\pm}(\vec u)$ | $\tfrac12(e_t\pm i\vec u)$ on a real unit axis |
@@ -614,7 +614,7 @@ The product. [Operators Acting on Two Sides](../articles_maths/operators-acting-
 
 The side. [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html) proves that no multiplicative sign separates the two images and identifies the swap with the adjoint of the trace form.
 
-The adjoints. [Adjoint Pair of $L$ and $R$ Operators](../articles_maths/adjoint-pair-of-l-and-r-operators.html) works one operator through all four adjoints and gives the self-adjointness table; [The Hermitian Pair of Operators Acting on Two Sides](../articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides.html) treats the congruence family, its spectrum $\lambda_i\bar\lambda_j$ and its image.
+The adjoints. [Adjoint Pair of $L$ and $R$ Operators](../articles_maths/adjoint-pair-of-l-and-r-operators.html) works one operator through all four adjoints and gives the self-adjointness table; [The Hermitian Pair of Operators Acting on Two Sides](../articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides.html) treats the congruence family, its spectrum $\eta_i\bar\eta_j$ and its image.
 
 The sectors. [Introduction to the Operators on the Four Sectors](../articles_maths/introduction-to-the-operators-on-the-four-sectors.html) states the three operators, the doubling rule and the four-sector table; the eight sector articles carry the case-by-case computation.
 

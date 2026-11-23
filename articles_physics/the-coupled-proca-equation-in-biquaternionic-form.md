@@ -66,7 +66,7 @@ $$
 \tilde A_\Phi=A_te_t+\sum_{\imath\in\{x,y,z\}} A_\imath\vec e_\imath,
 $$
 
-acting from the left. The sign pair is the gauge principle's: $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ and $\lambda=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$.
+acting from the left. The sign pair is the gauge principle's: $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ and $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$.
 
 The connection is central per component in the abelian case. With $A_{\imath}$ scalar coefficients that commute with the units and with one another, the covariant derivative separates:
 
@@ -103,18 +103,18 @@ For a purely electric potential $\tilde A_\Phi^{\natural}=+\tilde A_\Phi$; for a
 The gauge transformation.
 
 $$
-\tilde A_2=\lambda\tilde A,
+\tilde A_2=\digamma_{\mathrm{gau}}\tilde A,
 \qquad
 \tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma,
 \qquad
-\lambda=\exp\bigl(i\vartheta_{\mathrm{gau}}\bigr),
+\digamma_{\mathrm{gau}}=\exp\bigl(i\vartheta_{\mathrm{gau}}\bigr),
 \qquad
 \Gamma\ \text{real},
 $$
 
-with $\lambda$ central and of unit modulus. The field transforms by multiplication and not by the inhomogeneous shift; the shift belongs to the connection. That division is the whole content of the phrase "the field is charged".
+with $\digamma_{\mathrm{gau}}$ central and of unit modulus. The field transforms by multiplication and not by the inhomogeneous shift; the shift belongs to the connection. That division is the whole content of the phrase "the field is charged".
 
-The chain rules. Because $\lambda$ is a central scalar function,
+The chain rules. Because $\digamma_{\mathrm{gau}}$ is a central scalar function,
 
 $$
 \tilde\nabla_\Phi\lambda=\frac{2\pi i\,ϙ}{h}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\lambda,
@@ -150,7 +150,7 @@ $$
 4\pi^{2}\nu_m^2\tilde A_2=\lambda\,4\pi^{2}\nu_m^2\tilde A .
 $$
 
-The mass term is homogeneous because it is linear in the field; it is the *bilinear* mass term of the action that is invariant, and the two statements are consistent, since $\lambda\bar\lambda=1$. In the free article the mass term is quadratic in a real field and breaks the symmetry; here the field is complex, the mass term is quadratic in the field and its conjugate, and the symmetry survives. That single sign of bookkeeping is why a massive vector field can be coupled at all.
+The mass term is homogeneous because it is linear in the field; it is the *bilinear* mass term of the action that is invariant, and the two statements are consistent, since $\digamma_{\mathrm{gau}}\bar\digamma_{\mathrm{gau}}=1$. In the free article the mass term is quadratic in a real field and breaks the symmetry; here the field is complex, the mass term is quadratic in the field and its conjugate, and the symmetry survives. That single sign of bookkeeping is why a massive vector field can be coupled at all.
 
 ## The Field Strength Carries the Connection
 
@@ -250,7 +250,7 @@ What a constant potential is. It has zero curvature, so it is pure gauge up to a
 
 ## The Current
 
-The phase symmetry exists now. The free article's §*No Second Current* argues that $\tilde A_\Phi\mapsto e^{i\alpha}\tilde A_\Phi$ leaves the material sector, since $i$ times an anti-Hermitian element is Hermitian. On the complex carrier the rotation is a symmetry of the equation: the mass term is invariant, the field strength is covariant with $\lambda$ constant, and the derivative is untouched.
+The phase symmetry exists now. The free article's §*No Second Current* argues that $\tilde A_\Phi\mapsto e^{i\alpha}\tilde A_\Phi$ leaves the material sector, since $i$ times an anti-Hermitian element is Hermitian. On the complex carrier the rotation is a symmetry of the equation: the mass term is invariant, the field strength is covariant with $\digamma_{\mathrm{gau}}$ constant, and the derivative is untouched.
 
 The Noether current.
 
@@ -327,7 +327,7 @@ The equation is standard. The algebra's contribution is the closure argument, th
 | $\tilde C=\frac{2\pi iϙ}{h}\tilde A_\Phi$ | The coupling element of a constant background |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $ϙ$ | Charge; a parameter of the framework |
-| $\lambda=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ | Central gauge phase; $\Gamma$ real |
+| $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ | Central gauge phase; $\Gamma$ real |
 | $j_{\imath}=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde A)$ | The charge current |
 
 ## Further Reading

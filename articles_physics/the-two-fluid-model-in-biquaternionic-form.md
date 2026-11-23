@@ -170,7 +170,7 @@ The check that a reader can do on the same numbers. With $w=0$ both vanish; with
 
 Viscosity acts within a component; mutual friction acts between them, and the two are different channels of the same second law. A state with a relative flow and no shear produces entropy through friction; a state with a shear and no relative flow produces it through viscosity. Both appear as separate squares in the production of [The Local Entropy Current](the-local-entropy-current.html), and the two-fluid model adds the friction square to the list without modifying the others.
 
-The consequence for the counting of transport coefficients. A two-fluid system has one more coefficient than a one-fluid system — $B_{\mathrm{frc}}$ beside $\zeta$, $\eta_{\mathrm{sh}}$ and $\kappa_{\mathrm{th}}$ — and no more. A model with more is describing something else, and the article names the count so that a reader can check a candidate model against it.
+The consequence for the counting of transport coefficients. A two-fluid system has one more coefficient than a one-fluid system — $B_{\mathrm{frc}}$ beside $\zeta$, $\digamma_{\mathrm{vis}}$ and $\kappa_{\mathrm{th}}$ — and no more. A model with more is describing something else, and the article names the count so that a reader can check a candidate model against it.
 
 ## The Josephson-Type Phase Coupling
 
@@ -306,7 +306,7 @@ The $T\to0$ limit is exact and shown in four displays: $\rho_{\mathrm{num}}\to\r
 | $J_{\Phi,\mathrm{ex},k}$, $J_{\mathrm{c}}$ | Exchange current and critical current |
 | $\omega_{\mathrm{Jsn}}$ | Josephson frequency |
 | $\mu_{\mathrm{chm,sup}}$, $\mu_{\mathrm{chm,nrm}}$ | Chemical potentials |
-| $\zeta$, $\eta_{\mathrm{sh}}$, $\kappa_{\mathrm{th}}$ | Viscosities and conductivity |
+| $\zeta$, $\digamma_{\mathrm{vis}}$, $\kappa_{\mathrm{th}}$ | Viscosities and conductivity |
 | $Q_{\mathrm{qnt}}$, $p_{\mathrm{qnt}}$ | Quantum potential and quantum pressure |
 | $\gamma_{\mathrm{sup}}$, $\gamma_{\mathrm{nrm}}$ | Boost factors of the two components |
 | $\langle\ \rangle_{\natural}$, $\mathrm{Sc}$ | Quaternionic norm, scalar part |

@@ -138,7 +138,7 @@ That last sentence is the physical content. The singular values of a frame trans
 The eigenvalues are
 
 $$
-\lambda_{\pm}=Q_t\pm iB,
+\eta_{\pm}=Q_t\pm iB,
 $$
 
 and they are the subject of *The Two Eigenvalues Are the Two Weyl Weights*. The model does not only display them; it displays the eigenlines, because an eigenvector of $\mathsf{M}_2(\tilde Q)$ is a spinor and the eigenline is a point of the projective line. That is the one place where the matrix model shows more than the four scalar data of $\operatorname{Tr}$ and $\det$.

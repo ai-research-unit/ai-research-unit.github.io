@@ -10,7 +10,7 @@ $$
 
 The predicates are the ones the partition entry named. The norm $N$ asks whether the element has an invariant magnitude. The vector square $B^{2}$ asks whether its two eigenvalues are separated. On this stratum both answers are yes, and it is the only stratum on which both are yes. The other three strata are the walls, and the entries that follow this one read them.
 
-The first claim is that this is the only stratum on which the phrase *two modes* is a statement about the element and not about an approximation. The spectral decomposition $\tilde Q=\lambda_+e_++\lambda_-e_-$ has two terms here, both coefficients non-zero, both idempotents non-trivial, and the writing is unique. Everywhere else in the algebra one of those four properties fails. So the two-mode picture is exact on this stratum and degenerate off it.
+The first claim is that this is the only stratum on which the phrase *two modes* is a statement about the element and not about an approximation. The spectral decomposition $\tilde Q=\eta_{+}e_++\eta_{-}e_-$ has two terms here, both coefficients non-zero, both idempotents non-trivial, and the writing is unique. Everywhere else in the algebra one of those four properties fails. So the two-mode picture is exact on this stratum and degenerate off it.
 
 The second claim is that the region carries more than its spectrum. The spectrum fixes the trace and the norm and nothing else. The direction of the vector part is a second datum, and it is carried by the eigenprojections. An element of the region is a spectrum together with a frame, and the two are not interchangeable.
 
@@ -68,26 +68,26 @@ The characteristic polynomial is squarefree on the region.
 $$
 p_{\tilde Q}(X)=X^{2}-2Q_tX+N(\tilde Q),\qquad
 \operatorname{disc}p_{\tilde Q}=-4B^{2}\neq0,\qquad
-\lambda_\pm=Q_t\pm iB,\qquad
-\lambda_+\lambda_-=N\neq0.
+\eta_{\pm}=Q_t\pm iB,\qquad
+\eta_{+}\eta_{-}=N\neq0.
 $$
 
 The two eigenvalues are distinct and non-zero. The spectral idempotents are unique,
 
 $$
-e_\pm=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp},\qquad
-\tilde Q=\lambda_+e_++\lambda_-e_-,
+e_\pm=\frac{\tilde Q-\lambda_\mp e_t}{\eta_{\pm}-\lambda_\mp},\qquad
+\tilde Q=\eta_{+}e_++\eta_{-}e_-,
 $$
 
 and both coefficients are non-zero. In terms of the spectrum,
 
 $$
-N=\lambda_+\lambda_-,\qquad
-B^{2}=-\left(\frac{\lambda_+-\lambda_-}{2}\right)^{2},\qquad
-2Q_t=\lambda_++\lambda_-.
+N=\eta_{+}\eta_{-},\qquad
+B^{2}=-\left(\frac{\eta_{+}-\eta_{-}}{2}\right)^{2},\qquad
+2Q_t=\eta_{+}+\eta_{-}.
 $$
 
-So the two invariants are the two elementary symmetric functions of the pair: the product and minus a quarter of the squared difference. Both terms $\lambda_\pm e_\pm$ are null, because $N(e_\pm)=0$, and neither is zero.
+So the two invariants are the two elementary symmetric functions of the pair: the product and minus a quarter of the squared difference. Both terms $\eta_{\pm} e_\pm$ are null, because $N(e_\pm)=0$, and neither is zero.
 
 ### The Eigenbasis
 
@@ -111,13 +111,13 @@ $$
 The four elements $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$ are a basis of $\mathbb{B}$, and
 
 $$
-\tilde Q\tilde\Pi_{\mathrm{id},+}=\lambda_+\tilde\Pi_{\mathrm{id},+},\quad
-\tilde Q\vec\Pi_{\mathrm{nil},-}=\lambda_+\vec\Pi_{\mathrm{nil},-},\quad
-\tilde Q\vec\Pi_{\mathrm{nil},+}=\lambda_-\vec\Pi_{\mathrm{nil},+},\quad
-\tilde Q\tilde\Pi_{\mathrm{id},-}=\lambda_-\tilde\Pi_{\mathrm{id},-},
+\tilde Q\tilde\Pi_{\mathrm{id},+}=\eta_{+}\tilde\Pi_{\mathrm{id},+},\quad
+\tilde Q\vec\Pi_{\mathrm{nil},-}=\eta_{+}\vec\Pi_{\mathrm{nil},-},\quad
+\tilde Q\vec\Pi_{\mathrm{nil},+}=\eta_{-}\vec\Pi_{\mathrm{nil},+},\quad
+\tilde Q\tilde\Pi_{\mathrm{id},-}=\eta_{-}\tilde\Pi_{\mathrm{id},-},
 $$
 
-so the matrix of left multiplication is $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$. The same basis gives the right multiplication as $\operatorname{diag}(\lambda_+,\lambda_-,\lambda_+,\lambda_-)$.
+so the matrix of left multiplication is $\operatorname{diag}(\eta_{+},\eta_{+},\eta_{-},\eta_{-})$. The same basis gives the right multiplication as $\operatorname{diag}(\eta_{+},\eta_{-},\eta_{+},\eta_{-})$.
 
 The basis depends on the element. Its root $\vec{Ζ}$ is built from $\vec Q$, and the corners and the ideals move with it. The pair of nilpotents is unique up to the reciprocal rescaling $\vec\Pi_{\mathrm{nil},+}\mapsto\mu\vec\Pi_{\mathrm{nil},+}$, $\vec\Pi_{\mathrm{nil},-}\mapsto\mu^{-1}\vec\Pi_{\mathrm{nil},-}$, and a normalisation removes that freedom.
 
@@ -131,7 +131,7 @@ S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}=\mathbb{C}\vec\Pi_{\mathrm{nil},-}\oplus
 \mathbb{B}=S_+\oplus S_-.
 $$
 
-Each is a complex plane. On each, left multiplication by $\tilde Q$ is $\operatorname{diag}(\lambda_+,\lambda_-)$: a spinor of either copy carries both modes. The scalar action is on the right: $R_{\tilde Q}$ is $\lambda_+$ on $S_+$ and $\lambda_-$ on $S_-$. That right eigenvalue is the Peirce index, and it is what distinguishes the two copies.
+Each is a complex plane. On each, left multiplication by $\tilde Q$ is $\operatorname{diag}(\eta_{+},\eta_{-})$: a spinor of either copy carries both modes. The scalar action is on the right: $R_{\tilde Q}$ is $\eta_{+}$ on $S_+$ and $\eta_{-}$ on $S_-$. That right eigenvalue is the Peirce index, and it is what distinguishes the two copies.
 
 ### Products and Inverses
 
@@ -182,7 +182,7 @@ $$
 The material part of the region is $\{\vec r\neq0,\ \lvert\vec r\rvert\neq\lvert q'_t\rvert\}$ in the coordinates $\tilde Q=iq'_te_t+\vec r$, and the spectrum is
 
 $$
-\lambda_\pm=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)=i\,mc\,e^{\pm\theta_{\mathrm{rpd}}},
+\eta_{\pm}=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)=i\,mc\,e^{\pm\theta_{\mathrm{rpd}}},
 \qquad
 \cosh\theta_{\mathrm{rpd}}=\frac{E}{mc^{2}}.
 $$
@@ -221,9 +221,9 @@ Two of the five descriptions of the region are worth restating in the language o
 The region is the image of a parameter space, and the parametrisation is unique.
 
 $$
-\tilde Q=\lambda_+e_++\lambda_-e_-,\qquad
-\lambda_\pm\in\mathbb{C}^{\times},\quad
-\lambda_+\neq\lambda_-,\quad
+\tilde Q=\eta_{+}e_++\eta_{-}e_-,\qquad
+\eta_{\pm}\in\mathbb{C}^{\times},\quad
+\eta_{+}\neq\eta_{-},\quad
 e_+^{2}=e_+,\quad e_+\neq0,e_t.
 $$
 
@@ -231,11 +231,11 @@ Every element of the region has exactly one such writing, and every choice of th
 
 The non-trivial idempotents form a quadric. They are $e_+=(e_t+\vec{Ζ})/2$ with $\vec{Ζ}^{2}=e_t$ and $\vec{Ζ}\neq\pm e_t$: a smooth connected complex surface with two points removed. That surface is the home of the direction of $\vec Q$, and it is why the region has four real dimensions more than its spectrum.
 
-The parametrisation is not a group chart. The map $\tilde Q\mapsto(\lambda_+,\lambda_-)$ is surjective onto $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ minus the diagonal, it is not injective, and it is not a homomorphism. Products do not add or multiply eigenvalues in any coordinatewise way: the eigenvalues of a product are not determined by the eigenvalues of its factors. Only the product of the two eigenvalues is determined, and it is the norm.
+The parametrisation is not a group chart. The map $\tilde Q\mapsto(\eta_{+},\eta_{-})$ is surjective onto $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ minus the diagonal, it is not injective, and it is not a homomorphism. Products do not add or multiply eigenvalues in any coordinatewise way: the eigenvalues of a product are not determined by the eigenvalues of its factors. Only the product of the two eigenvalues is determined, and it is the norm.
 
 ### Connected and Not Simply Connected
 
-The region is connected. It is the continuous image of a connected parameter space: the pair $(\lambda_+,\lambda_-)$ ranges over a complement of three complex lines, which is connected, and the idempotent ranges over a connected surface with two points removed.
+The region is connected. It is the continuous image of a connected parameter space: the pair $(\eta_{+},\eta_{-})$ ranges over a complement of three complex lines, which is connected, and the idempotent ranges over a connected surface with two points removed.
 
 It is not simply connected, and the loop that shows it is the axis turning once.
 
@@ -275,14 +275,14 @@ The second case is the one that matters for the two-mode picture. A non-trivial 
 The spectrum determines the two invariants and nothing more.
 
 $$
-N=\lambda_+\lambda_-,\qquad
-B^{2}=-\frac{(\lambda_+-\lambda_-)^{2}}{4},\qquad
-Q_t=\frac{\lambda_++\lambda_-}{2}.
+N=\eta_{+}\eta_{-},\qquad
+B^{2}=-\frac{(\eta_{+}-\eta_{-})^{2}}{4},\qquad
+Q_t=\frac{\eta_{+}+\eta_{-}}{2}.
 $$
 
 These are the three elementary symmetric functions of a two-element multiset, written in the algebra's variables: the product, minus a quarter of the discriminant, and half the trace. The region is exactly the set where the first is non-zero and the second is non-zero.
 
-The square of the difference is what the two-mode picture measures. $B^{2}$ is not the difference; it is minus a quarter of its square. The square is why the sign of $B^{2}$ carries no information about the ordering of the two eigenvalues: exchanging them changes the sign of $\lambda_+-\lambda_-$ and leaves $B^{2}$ alone. The unordered pair is the datum, and $B$ is one of the two square roots of $B^{2}$.
+The square of the difference is what the two-mode picture measures. $B^{2}$ is not the difference; it is minus a quarter of its square. The square is why the sign of $B^{2}$ carries no information about the ordering of the two eigenvalues: exchanging them changes the sign of $\eta_{+}-\eta_{-}$ and leaves $B^{2}$ alone. The unordered pair is the datum, and $B$ is one of the two square roots of $B^{2}$.
 
 The sign of $N$ is a second reading of the same region. $N=Q_t^{2}+B^{2}$ is a sum of two complex squares, and on the real slice of each it is a difference of two positive numbers. So the region splits into a part where the norm is negative, a part where it is positive, and a part where it is non-real. The material face of §*The Material Face* is where all three occur.
 
@@ -291,8 +291,8 @@ The sign of $N$ is a second reading of the same region. $N=Q_t^{2}+B^{2}$ is a s
 Each term of the spectral decomposition is null.
 
 $$
-N(\lambda_+e_+)=\lambda_+^{2}N(e_+)=0,\qquad
-N(\lambda_-e_-)=\lambda_-^{2}N(e_-)=0,
+N(\eta_{+}e_+)=\eta_{+}^{2}N(e_+)=0,\qquad
+N(\eta_{-}e_-)=\eta_{-}^{2}N(e_-)=0,
 $$
 
 because an idempotent has the eigenvalues $1$ and $0$, hence vanishing characteristic constant, hence vanishing norm. Both coefficients are non-zero and both idempotents are non-trivial, so neither term is zero.
@@ -300,10 +300,10 @@ because an idempotent has the eigenvalues $1$ and $0$, hence vanishing character
 Over a hundred elements the identities held to $3\times10^{-15}$:
 
 $$
-N(e_+)=N(e_-)=N(\lambda_+e_+)=N(\lambda_-e_-)=0,
+N(e_+)=N(e_-)=N(\eta_{+}e_+)=N(\eta_{-}e_-)=0,
 \qquad
-2Q_t=\lambda_++\lambda_-,\qquad
-N=\lambda_+\lambda_-.
+2Q_t=\eta_{+}+\eta_{-},\qquad
+N=\eta_{+}\eta_{-}.
 $$
 
 So the region is the stratum on which one element is a sum of two null elements and of nothing else. That is the precise content of the phrase *two modes*: two null components, added. It is not a decomposition into two independent objects, because their coefficients are tied by the trace and their product is tied by the norm.
@@ -313,11 +313,11 @@ So the region is the stratum on which one element is a sum of two null elements 
 The spectrum is a projection with a four-dimensional fibre.
 
 $$
-\{\tilde Q\}\longrightarrow(\lambda_+,\lambda_-),\qquad
+\{\tilde Q\}\longrightarrow(\eta_{+},\eta_{-}),\qquad
 \dim_{\mathbb R}(\text{fibre})=4.
 $$
 
-The fibre over a pair of distinct non-zero eigenvalues is the set $\{\lambda_+e_++\lambda_-e_-\ :\ e_+\ \text{non-trivial idempotent}\}$, which is the idempotent quadric, of four real dimensions. Two elements with the same spectrum differ by the choice of $e_+$, and that choice is the direction of the vector part.
+The fibre over a pair of distinct non-zero eigenvalues is the set $\{\eta_{+}e_++\eta_{-}e_-\ :\ e_+\ \text{non-trivial idempotent}\}$, which is the idempotent quadric, of four real dimensions. Two elements with the same spectrum differ by the choice of $e_+$, and that choice is the direction of the vector part.
 
 The fibre is a frame and not a degeneracy. Nothing in the fibre is redundant: each idempotent gives a different element. The spectrum is what a boost can change or preserve; the fibre is what a rotation moves. A rotation acts on the fibre and fixes the spectrum exactly, because the eigenvalues depend on $\vec Q$ only through $\vec Q^{2}$.
 
@@ -339,7 +339,7 @@ $$
 Then $\tilde\Pi_{\mathrm{id},\pm}^{2}=\tilde\Pi_{\mathrm{id},\pm}$, $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$, $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$, and
 
 $$
-\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-},\qquad
+\tilde Q=\eta_{+}\tilde\Pi_{\mathrm{id},++}\eta_{-}\tilde\Pi_{\mathrm{id},-},\qquad
 \vec{Ζ}\tilde\Pi_{\mathrm{id},\pm}=\tilde\Pi_{\mathrm{id},\pm}\vec{Ζ}=\pm\tilde\Pi_{\mathrm{id},\pm}.
 $$
 
@@ -455,7 +455,7 @@ The eigenbasis data are attached to $\tilde Q$ and are not canonical.
 | the corner lines $\mathbb{B}_{+-},\mathbb{B}_{-+}$ as subspaces | yes |
 | the ideals $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | yes |
 | the pair $(\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-})$ | yes, through the root; the residual scale is the normalisation |
-| the diagonal values $(\lambda_+,\lambda_-)$ | yes |
+| the diagonal values $(\eta_{+},\eta_{-})$ | yes |
 | the Peirce coordinates of a second element | yes |
 
 The eigenbasis coincides with the standard Peirce basis exactly on one locus. The standard pair is the one attached to the fixed root $i\vec e_z$; it agrees with the element's own pair, up to the reciprocal rescaling, exactly when $\vec Q$ is parallel to $\vec e_z$, that is when $Q_x=Q_y=0$. Everywhere else the two bases differ.
@@ -486,7 +486,7 @@ $$
 and the matrix $\mathsf M_2^{Q}(\tilde Q_2)=(Q_{2,ij})$ has the two ideals as its two columns. The element itself has
 
 $$
-\mathsf M_2^{Q}(\tilde Q)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
+\mathsf M_2^{Q}(\tilde Q)=\begin{pmatrix}\eta_{+}&0\\0&\eta_{-}\end{pmatrix}.
 $$
 
 So a general element is a pair of spinors and not a spinor. Its first column is a spinor of the first Peirce copy, its second column a spinor of the second, and each is a complex plane of two components. The algebra is the direct sum of the two, and no element of the region is confined to one.
@@ -496,13 +496,13 @@ So a general element is a pair of spinors and not a spinor. Its first column is 
 Left multiplication carries both eigenvalues on each ideal; right multiplication is scalar on each.
 
 $$
-L_{\tilde Q}\big|_{S_+}=L_{\tilde Q}\big|_{S_-}=\operatorname{diag}(\lambda_+,\lambda_-),
+L_{\tilde Q}\big|_{S_+}=L_{\tilde Q}\big|_{S_-}=\operatorname{diag}(\eta_{+},\eta_{-}),
 \qquad
-R_{\tilde Q}\big|_{S_+}=\lambda_+,\qquad
-R_{\tilde Q}\big|_{S_-}=\lambda_- .
+R_{\tilde Q}\big|_{S_+}=\eta_{+},\qquad
+R_{\tilde Q}\big|_{S_-}=\eta_{-} .
 $$
 
-This asymmetry is the whole content of the Peirce index. A spinor of either copy has two components, and the left action mixes neither: it scales the first component by $\lambda_+$ and the second by $\lambda_-$. The two ideals are distinguished by the right action alone, which scales each ideal by one eigenvalue.
+This asymmetry is the whole content of the Peirce index. A spinor of either copy has two components, and the left action mixes neither: it scales the first component by $\eta_{+}$ and the second by $\eta_{-}$. The two ideals are distinguished by the right action alone, which scales each ideal by one eigenvalue.
 
 The two ideals are isomorphic as left modules. Right multiplication by $\vec\Pi_{\mathrm{nil},-}$ maps $S_+$ onto $S_-$, with inverse right multiplication by $\vec\Pi_{\mathrm{nil},+}$. So there is one simple module here, and the two copies are two embeddings of it. The label *first* versus *second* is a label of the embedding, fixed by the choice $\tilde\Pi_{\mathrm{id},+}=(e_t+\vec{Ζ})/2$.
 
@@ -546,14 +546,14 @@ Squaring doubles the spectral angle, and the two modes meet exactly when the tra
 $$
 B^{2}(\tilde Q^{2})=4Q_t^{2}B^{2}(\tilde Q),
 \qquad
-\tilde Q^{2}=\lambda_+^{2}e_++\lambda_-^{2}e_-.
+\tilde Q^{2}=\eta_{+}^{2}e_++\eta_{-}^{2}e_-.
 $$
 
 The identity was checked to $3\times10^{-14}$ over a hundred elements. It says that squaring leaves the region exactly when the scalar part is non-zero, and that when the scalar part vanishes the square is a scalar:
 
 $$
-Q_t=0\ \Longrightarrow\ \lambda_-=-\lambda_+,\quad
-\lambda_+^{2}=\lambda_-^{2}=-B^{2},\quad
+Q_t=0\ \Longrightarrow\ \eta_{-}=-\eta_{+},\quad
+\eta_{+}^{2}=\eta_{-}^{2}=-B^{2},\quad
 \tilde Q^{2}=-B^{2}e_t .
 $$
 
@@ -563,14 +563,14 @@ $$
 (\vec e_x+\vec e_y)^{2}=\vec e_x^{2}+\vec e_x\vec e_y+\vec e_y\vec e_x+\vec e_y^{2}=-2e_t .
 $$
 
-The geometric statement is that the eigenvalue map is a squaring. The square of the pair $(\lambda_+,\lambda_-)$ is $(\lambda_+^{2},\lambda_-^{2})$, and the two squares coincide exactly when the two eigenvalues are opposite, which is $Q_t=0$. So the loss of a mode under squaring is an antipodal condition, not a magnitude condition: it does not matter how large the eigenvalues are, only that they point in opposite directions.
+The geometric statement is that the eigenvalue map is a squaring. The square of the pair $(\eta_{+},\eta_{-})$ is $(\eta_{+}^{2},\eta_{-}^{2})$, and the two squares coincide exactly when the two eigenvalues are opposite, which is $Q_t=0$. So the loss of a mode under squaring is an antipodal condition, not a magnitude condition: it does not matter how large the eigenvalues are, only that they point in opposite directions.
 
 ### Inversion
 
 Inversion is a symmetry of the region.
 
 $$
-\tilde Q^{-1}=\lambda_+^{-1}e_++\lambda_-^{-1}e_-=\frac{\tilde Q^{\natural}}{N},
+\tilde Q^{-1}=\eta_{+}^{-1}e_++\eta_{-}^{-1}e_-=\frac{\tilde Q^{\natural}}{N},
 \qquad
 N(\tilde Q^{-1})=N^{-1},\qquad
 B^{2}(\tilde Q^{-1})=\frac{B^{2}}{N^{2}}.
@@ -615,7 +615,7 @@ The region is not a causal class. It contains the timelike momenta $\lvert\vec p
 The two eigenvalues are the two light-cone frequencies of one momentum.
 
 $$
-\lambda_\pm=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)=i\,mc\,e^{\pm\theta_{\mathrm{rpd}}},
+\eta_{\pm}=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)=i\,mc\,e^{\pm\theta_{\mathrm{rpd}}},
 \qquad
 \cosh\theta_{\mathrm{rpd}}=\frac{E}{mc^{2}},\qquad
 \sinh\theta_{\mathrm{rpd}}=\frac{\lvert\vec p\rvert}{mc}.
@@ -624,10 +624,10 @@ $$
 The four elementary readings of the pair are then
 
 $$
-\lambda_++\lambda_-=2i\frac{E}{c},\qquad
-\lambda_+-\lambda_-=2i\lvert\vec p\rvert,\qquad
-\lambda_+\lambda_-=-m^{2}c^{2},\qquad
-\frac{\lambda_+}{\lambda_-}=e^{2\theta_{\mathrm{rpd}}}.
+\eta_{+}+\eta_{-}=2i\frac{E}{c},\qquad
+\eta_{+}-\eta_{-}=2i\lvert\vec p\rvert,\qquad
+\eta_{+}\eta_{-}=-m^{2}c^{2},\qquad
+\frac{\eta_{+}}{\eta_{-}}=e^{2\theta_{\mathrm{rpd}}}.
 $$
 
 The first two are the kinematics and the third is the invariant. The sum of the two frequencies is twice the energy, their difference is twice the momentum, and their product is minus the mass squared. The ratio is the square of the Doppler factor, which is why the pair is called the Doppler pair: the two eigenvalues are what one frequency becomes when it is read in the two null directions of the momentum.
@@ -779,7 +779,7 @@ which is non-zero in general. So the mass of a spinor field is in the sum and in
 
 ### I.10.m — The Two Eigenvalues Are the Two Light-Cone Frequencies
 
-Read: the spectrum $\{\lambda_+,\lambda_-\}$ on the material sector, with $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)$.
+Read: the spectrum $\{\eta_{+},\eta_{-}\}$ on the material sector, with $\eta_{\pm}=i(E/c\pm\lvert\vec p\rvert)$.
 
 One momentum has two light-cone frequencies. A momentum with energy $E$ and magnitude $\lvert\vec p\rvert$ is crossed by two null directions, and the two frequencies $E/c+\lvert\vec p\rvert$ and $E/c-\lvert\vec p\rvert$ are the Doppler-shifted readings of one frequency in those two directions. The algebra produces exactly this pair, multiplied by $i$, and it produces nothing else: the pair is the whole spectrum.
 
@@ -791,9 +791,9 @@ The boundary. The identification uses the material chart. In the full algebra th
 
 ### I.10.n — Two Null Terms Are Not Two Particles
 
-Read: $\tilde Q=\lambda_+e_++\lambda_-e_-$ with $N(e_\pm)=0$ and both coefficients non-zero.
+Read: $\tilde Q=\eta_{+}e_++\eta_{-}e_-$ with $N(e_\pm)=0$ and both coefficients non-zero.
 
-Each term is null and neither term is an object. The term $\lambda_+e_+$ has vanishing norm, so if it were a particle it would be a massless one. But the two terms are tied: their coefficients are fixed by the trace and their product by the norm, so they cannot be varied independently. A two-particle reading would need two independent mass-shell conditions; the region has one.
+Each term is null and neither term is an object. The term $\eta_{+}e_+$ has vanishing norm, so if it were a particle it would be a massless one. But the two terms are tied: their coefficients are fixed by the trace and their product by the norm, so they cannot be varied independently. A two-particle reading would need two independent mass-shell conditions; the region has one.
 
 The interpretation is that the two-term writing is a decomposition of one momentum into two null directions, not a partition of one object into two. The null directions are the two light-cone directions of the same momentum, and the coefficients are the two Doppler factors. Adding them returns the element; that is what a decomposition means.
 
@@ -803,7 +803,7 @@ The boundary. The reading forbids a two-particle interpretation of the spectral 
 
 ### I.10.o — The Spectrum Is the Kinematics; the Fibre Is the Frame
 
-Read: the projection $\tilde Q\mapsto(\lambda_+,\lambda_-)$ with a four-real-dimensional fibre.
+Read: the projection $\tilde Q\mapsto(\eta_{+},\eta_{-})$ with a four-real-dimensional fibre.
 
 The spectrum does not determine the element. Two elements with the same spectrum differ by the choice of the eigenprojections, and that choice is the direction of $\vec Q$. A hundred elements can share one spectrum.
 
@@ -815,11 +815,11 @@ The boundary. The fibre is not a gauge orbit. Its points are distinct elements o
 
 ### I.10.p — The Mass Is the Product and the Energy Is the Sum
 
-Read: $N=\lambda_+\lambda_-$ and $2Q_t=\lambda_++\lambda_-$ on the material chart.
+Read: $N=\eta_{+}\eta_{-}$ and $2Q_t=\eta_{+}+\eta_{-}$ on the material chart.
 
 The two invariants of the spectral pair are the two invariants of the momentum. The product of the eigenvalues is minus the mass squared, and their sum is twice the energy over $c$. So the mass and the energy are not two independent inputs that the algebra then combines: they are the product and the sum of one pair, and the pair is the element.
 
-The interpretation is that the mass is the geometric mean of the two frequencies and the energy is their arithmetic mean. With $\lambda_\pm=i\omega_\pm$ and $\omega_\pm=E/c\pm\lvert\vec p\rvert$, the product is $-\omega_+\omega_-=-m^{2}c^{2}$ and the sum is $2E/c$. The mass is the geometric mean of the two light-cone frequencies, and the energy is their arithmetic mean. On the timelike branch the two frequencies are positive, and the inequality $mc^{2}\le E$ is then the arithmetic–geometric mean inequality: it is strict exactly when the two frequencies differ, that is when $\vec p\neq0$.
+The interpretation is that the mass is the geometric mean of the two frequencies and the energy is their arithmetic mean. With $\eta_{\pm}=i\omega_\pm$ and $\omega_\pm=E/c\pm\lvert\vec p\rvert$, the product is $-\omega_+\omega_-=-m^{2}c^{2}$ and the sum is $2E/c$. The mass is the geometric mean of the two light-cone frequencies, and the energy is their arithmetic mean. On the timelike branch the two frequencies are positive, and the inequality $mc^{2}\le E$ is then the arithmetic–geometric mean inequality: it is strict exactly when the two frequencies differ, that is when $\vec p\neq0$.
 
 The inequality is the reason the wall is the rest frame. Equality in the mean inequality holds exactly when the two frequencies coincide, which is $\vec p=0$, which is $B^{2}=0$. So the wall is not an extra condition: it is the equality case of the mean inequality.
 
@@ -863,7 +863,7 @@ The boundary. The reading is kinematic. It says what the invariant mass of a sum
 
 ### I.10.t — A Spinor Carries Both Modes and the Peirce Index Is the Right Eigenvalue
 
-Read: $L_{\tilde Q}$ is $\operatorname{diag}(\lambda_+,\lambda_-)$ on each $S_\pm$, and $R_{\tilde Q}$ is $\lambda_\pm$ on $S_\pm$.
+Read: $L_{\tilde Q}$ is $\operatorname{diag}(\eta_{+},\eta_{-})$ on each $S_\pm$, and $R_{\tilde Q}$ is $\eta_{\pm}$ on $S_\pm$.
 
 A spinor is not a mode. Each minimal left ideal is a complex plane, and left multiplication by the element scales its two components by the two different eigenvalues. So one spinor carries both modes. The thing that distinguishes the two ideals is the right action, which scales each ideal by one eigenvalue.
 
@@ -899,7 +899,7 @@ The boundary. A growing flow is not a decaying particle. The algebra gives one-p
 
 ### I.10.w — Squaring Doubles the Angle and Can Merge the Two Modes
 
-Read: $\tilde Q^{2}=\lambda_+^{2}e_++\lambda_-^{2}e_-$ and $B^{2}(\tilde Q^{2})=4Q_t^{2}B^{2}(\tilde Q)$.
+Read: $\tilde Q^{2}=\eta_{+}^{2}e_++\eta_{-}^{2}e_-$ and $B^{2}(\tilde Q^{2})=4Q_t^{2}B^{2}(\tilde Q)$.
 
 Squaring is a map on the spectrum and the identity on the frame. The idempotents are unchanged and the eigenvalues are squared. In the complex plane of the eigenvalues, squaring doubles the argument and squares the modulus.
 
@@ -938,10 +938,10 @@ The numerical checks are checks of identities, not of the reading. Every identit
 ## Summary
 
 - $\Sigma_{11}=\{N\neq0,\ B^{2}\neq0\}$ is the complement of two cones: open, dense, connected, not simply connected, of real dimension eight.
-- Its elements are invertible with two distinct non-zero eigenvalues $\lambda_\pm=Q_t\pm iB$, and $N=\lambda_+\lambda_-$, $B^{2}=-(\lambda_+-\lambda_-)^{2}/4$.
-- The two-term writing $\tilde Q=\lambda_+e_++\lambda_-e_-$ is unique and both terms are null; the region is the only stratum where this holds with two non-zero coefficients.
+- Its elements are invertible with two distinct non-zero eigenvalues $\eta_{\pm}=Q_t\pm iB$, and $N=\eta_{+}\eta_{-}$, $B^{2}=-(\eta_{+}-\eta_{-})^{2}/4$.
+- The two-term writing $\tilde Q=\eta_{+}e_++\eta_{-}e_-$ is unique and both terms are null; the region is the only stratum where this holds with two non-zero coefficients.
 - The spectrum fixes the invariants and not the element: the fibre is four-dimensional and carries the direction of $\vec Q$.
-- The eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$ makes left multiplication $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ and right multiplication $\operatorname{diag}(\lambda_+,\lambda_-,\lambda_+,\lambda_-)$.
+- The eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$ makes left multiplication $\operatorname{diag}(\eta_{+},\eta_{+},\eta_{-},\eta_{-})$ and right multiplication $\operatorname{diag}(\eta_{+},\eta_{-},\eta_{+},\eta_{-})$.
 - The pair of nilpotents needs an auxiliary direction, because no rotation-natural rational formula exists; the pair is unique up to one complex rescaling.
 - Each minimal left ideal carries both eigenvalues under left multiplication; the Peirce index is the right eigenvalue.
 - The region is inverse-closed and not product-closed: a product lands in the region or on the wall $B^{2}=0$, and squaring leaves the region exactly when $Q_t=0$.
@@ -968,7 +968,7 @@ The mass of a sum is not the sum of the masses. Two massless addends can have a 
 | $\Sigma_{11}$ | the region $N\neq0$, $B^{2}\neq0$ |
 | $N=Q_t^{2}+B^{2}$ | the norm, the product of the eigenvalues |
 | $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the vector square, minus a quarter of the squared spectral difference |
-| $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
+| $\eta_{\pm}=Q_t\pm iB$ | the two eigenvalues |
 | $B$ | a fixed square root of $B^{2}$ |
 | $e_\pm$ | the spectral idempotents |
 | $\vec{Ζ}=-i\vec Q/B$ | the root of $e_t$ carried by the element |

@@ -296,7 +296,7 @@ $$
 
 positive for every solution, so every solution has positive energy; the linear equation gives $T_{\mathrm{Dirac}}=m\rho\cos\theta_{\mathrm{dua}}$, and the two differ by the factor $\cos\theta_{\mathrm{dua}}$, coinciding only at the two endpoints. The source adds one structural remark that the corpus records as a curiosity: the Tetrode energy–momentum one-form is a kind of **square root** of the Maxwell energy–momentum one-form $S_{\imath}=\tfrac12\,i\,Fe_{\imath} F\vec e_{\mathrm{spt}(\imath)}$. The overall sign is not fixed by the print: a 2-form reverses to minus itself, $\tilde F=-F$, so the same object written with the reverse in the middle differs only in that sign.
 
-Here $e_{\imath}$ and $\vec e_{\mathrm{spt}(\imath)}$ are the unit of the coordinate $x_{\imath}$ and its partner, with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$, and the two act on the middle factor of $F$.
+Here $e_{\imath}$ and $\vec e_{\mathrm{spt}(\imath)}$ are the unit of the coordinate $x_{\imath}$ and its partner, with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$, and the two act on the middle factor of $F$.
 
 ### The projection operators
 

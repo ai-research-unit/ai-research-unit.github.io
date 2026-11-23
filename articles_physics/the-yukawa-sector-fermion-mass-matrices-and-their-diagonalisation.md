@@ -110,7 +110,7 @@ The construction. $M^{\dagger}M$ is Hermitian and positive semidefinite, so it h
 The spectrum is basis independent, verified. The characteristic polynomial of $M^{\dagger}M$ is
 
 $$
-\det\left(\lambda\,\mathrm I-M^{\dagger}M\right)=\lambda^{3}-c_1\lambda^{2}+c_2\lambda-c_3 ,
+\det\left(\eta\,\mathrm I-M^{\dagger}M\right)=\eta^{3}-c_1\eta^{2}+c_2\eta-c_3 ,
 \qquad
 c_1=\operatorname{tr}\left(M^{\dagger}M\right) ,
 \qquad

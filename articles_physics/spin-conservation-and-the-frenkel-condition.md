@@ -108,7 +108,7 @@ The Frenkel condition is the statement that the spin is orthogonal to the flow, 
 
 $$
 \mathcal{F}:\qquad S_{\Psi,k,k\jmath}\,v_{\Phi,\jmath}=0
-\qquad\text{for all }\eta,\ \lambda,
+\qquad\text{for all }\ell,\ \lambda,
 $$
 
 with every index low and $v_{\Phi,\jmath}$ the flow's components. Its content is a count: an antisymmetric $4\times4$ array has six independent components, and three linear conditions remove three of them, leaving the three components of a spatial vector in the fluid's rest frame.
@@ -134,14 +134,14 @@ the polar-form article's display. Its scalar slot is empty — $\mathrm{Sc}(\til
 The element carries a vector and the tensor needs a bivector, so the bivector is the dual of the direction with the flow:
 
 $$
-\hat s_{k\jmath}=\varepsilon_{k\jmath\eta\zeta}\,\hat s_{\eta}\,v_{\Phi,\zeta}/c ,
+\hat s_{k\jmath}=\varepsilon_{k\jmath\ell\zeta}\,\hat s_{\ell}\,v_{\Phi,\zeta}/c ,
 $$
 
-with $\varepsilon_{k\jmath\eta\zeta}$ the antisymmetric symbol and $\eta$, $\zeta$ running over all four labels. The contraction with the flow then vanishes identically,
+with $\varepsilon_{k\jmath\ell\zeta}$ the antisymmetric symbol and $\ell$, $\zeta$ running over all four labels. The contraction with the flow then vanishes identically,
 
 $$
 \hat s_{k\jmath}\,v_{\Phi,\jmath}
-=\varepsilon_{k\jmath\eta\zeta}\,\hat s_{\eta}\,v_{\Phi,\zeta}v_{\Phi,\jmath}/c=0,
+=\varepsilon_{k\jmath\ell\zeta}\,\hat s_{\ell}\,v_{\Phi,\zeta}v_{\Phi,\jmath}/c=0,
 $$
 
 because $\varepsilon$ is antisymmetric in the pair $\zeta\jmath$ and $v_{\Phi,\zeta}v_{\Phi,\jmath}$ is symmetric in it. That one line is the Frenkel condition, and it holds for every field with a non-zero flow and every direction $\hat s$: **the condition is not imposed on the field, it is a property of the bivector the word supplies**, and the algebra's contribution is the one-line proof rather than the assertion. In the flow's rest frame the identity reads $\hat s_{t,\imath}=0$: the components whose plane contains the time direction vanish, and there are three of them, the electric part of an antisymmetric array in four dimensions, with the three spatial-plane components left as the spin density.
@@ -254,7 +254,7 @@ Not claimed. That the connection's equation has been derived; that the full sixt
 
 The spin current's conservation law is the rotor's equation of motion. With $\tilde u_{\mathrm r}^{-1}\partial_\imath\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\imath$ a real vector part, the rotor obeys $\partial_\imath\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\imath\tilde u_{\mathrm r}$, the spin direction obeys $\partial_\imath\hat s=\vec\Omega_\imath\times\hat s$, and the divergence of the spin current is the torque $\tau_{k\jmath}=\tfrac12(\Omega_{\imath,\imath}S_{\Psi,\imath,\jmath}-\Omega_{\imath,\jmath}S_{\Psi,k,k})$, which vanishes when the connection turns about the spin's axis. For the free field the torque vanishes and $\partial_\imath S_{\Psi,k,k\jmath}=0$.
 
-The Frenkel condition, $S_{\Psi,k,k\jmath}v_{\Phi,\jmath}=0$, removes the three components of the antisymmetric array that carry a temporal label and leaves the three of a spatial vector. In the corpus's letters it is automatic, and the proof is one line: the spin element is $\varrho\tfrac{h}{4\pi}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ a unit spatial direction, the bivector is its dual with the flow, $\hat s_{k\jmath}=\varepsilon_{k\jmath\eta\zeta}\hat s_\imath v_{\Phi,\zeta}/c$, and the contraction $\hat s_{k\jmath}v_{\Phi,\jmath}$ vanishes because $\varepsilon$ is antisymmetric in the pair that $v_{\Phi,\zeta}v_{\Phi,\jmath}$ is symmetric in. The corpus therefore does not impose the condition; the dual cannot violate it, whatever the direction. In the rest frame the identity reads $\hat s_{t,\imath}=0$, the three components whose plane contains the time direction; the element's empty scalar slot is a separate statement, that the direction is spatial, and it is what makes $\hat s^{2}=-e_t$. The condition is preserved by boosts — $S_{\Psi,k,0i}^{\prime}=\gamma\beta_{j}S_{\Psi,k,ji}$ is non-zero in general while the contraction with $v_{\Phi,\jmath}^{\prime}$ still vanishes — and a reader who checks components alone will wrongly conclude that it fails.
+The Frenkel condition, $S_{\Psi,k,k\jmath}v_{\Phi,\jmath}=0$, removes the three components of the antisymmetric array that carry a temporal label and leaves the three of a spatial vector. In the corpus's letters it is automatic, and the proof is one line: the spin element is $\varrho\tfrac{h}{4\pi}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ a unit spatial direction, the bivector is its dual with the flow, $\hat s_{k\jmath}=\varepsilon_{k\jmath\ell\zeta}\hat s_\imath v_{\Phi,\zeta}/c$, and the contraction $\hat s_{k\jmath}v_{\Phi,\jmath}$ vanishes because $\varepsilon$ is antisymmetric in the pair that $v_{\Phi,\zeta}v_{\Phi,\jmath}$ is symmetric in. The corpus therefore does not impose the condition; the dual cannot violate it, whatever the direction. In the rest frame the identity reads $\hat s_{t,\imath}=0$, the three components whose plane contains the time direction; the element's empty scalar slot is a separate statement, that the direction is spatial, and it is what makes $\hat s^{2}=-e_t$. The condition is preserved by boosts — $S_{\Psi,k,0i}^{\prime}=\gamma\beta_{j}S_{\Psi,k,ji}$ is non-zero in general while the contraction with $v_{\Phi,\jmath}^{\prime}$ still vanishes — and a reader who checks components alone will wrongly conclude that it fails.
 
 The Weyssenhoff condition adds conservation to constraint: $\mathcal{F}$ and $\partial_\imath S_{\Psi,k,k\jmath}=0$ together, so the spin is advected and never precesses. The corpus's free field satisfies both, which is why the two conditions are often conflated.
 
@@ -270,8 +270,8 @@ The honest limits are three. The connection's equation is not derived here; the 
 | $\tilde S_{\Psi}=\varrho\tfrac{h}{4\pi}i\hat s$ | Spin element, with $\varrho$ the scale |
 | $S_{\Psi,k,k\jmath}$ | Components of the spin current, all low |
 | $S_{\Psi,t,k\jmath}$ | Its temporal slot, the spin density, $\varrho\tfrac{h}{4\pi}\hat s_{k\jmath}$ |
-| $\hat s_{k\jmath}=\varepsilon_{k\jmath\eta\zeta}\hat s_{\eta}v_{\Phi,\zeta}/c$ | The spin bivector, the dual of the direction with the flow |
-| $\varepsilon_{k\jmath\eta\zeta}$ | The antisymmetric symbol, four labels |
+| $\hat s_{k\jmath}=\varepsilon_{k\jmath\ell\zeta}\hat s_{\ell}v_{\Phi,\zeta}/c$ | The spin bivector, the dual of the direction with the flow |
+| $\varepsilon_{k\jmath\ell\zeta}$ | The antisymmetric symbol, four labels |
 | $\tau_{k\jmath}$ | Torque, the spin current's source |
 | $\mathcal{F}$ | The Frenkel condition |
 | $\mathcal{W}$ | The Weyssenhoff condition |

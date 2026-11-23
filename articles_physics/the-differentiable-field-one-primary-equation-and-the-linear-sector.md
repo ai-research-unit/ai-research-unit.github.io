@@ -65,7 +65,7 @@ This also dissolves the most obvious objection to a nonlinear primary equation. 
 
 ### The Fields as Semi-Derivatives
 
-What plays the role of the field is not $\Sigma$ but the multiplier. The condition splits as $d\eta=Ξ\,dZ\,\zeta$, with $Ξ$ the left semi-derivative carrying the gauge field and $\eta,\zeta$ two $SL(2,\mathbb{C})$-spinors; the system is eight equations for six unknowns, and the connection it generates is weakly self-dual — the self-dual part of its curvature vanishes on the solutions rather than identically — so that its Bianchi identity is the field equation. That construction is *The Algebrodynamical Programme*, §*The Generating System and the Gauge Fields*, and it is not repeated here.
+What plays the role of the field is not $\Sigma$ but the multiplier. The condition splits as $d\digamma_{\mathrm{frm}}=Ξ\,dZ\,\zeta$, with $Ξ$ the left semi-derivative carrying the gauge field and $\digamma_{\mathrm{frm}},\zeta$ two $SL(2,\mathbb{C})$-spinors; the system is eight equations for six unknowns, and the connection it generates is weakly self-dual — the self-dual part of its curvature vanishes on the solutions rather than identically — so that its Bianchi identity is the field equation. That construction is *The Algebrodynamical Programme*, §*The Generating System and the Gauge Fields*, and it is not repeated here.
 
 The point for this article is the direction of the implication. In the corpus's gauge articles the connection is introduced because a symmetry is made local, and the field strength is defined as its curvature; the gauge principle is the postulate. Here the connection is what a differentiable function carries, the curvature is its integrability obstruction, and the field equations are identities. No gauge principle is assumed.
 
@@ -111,7 +111,7 @@ $$
 F(\lambda A)=\lambda\,F(A)+(\lambda^2-\lambda)\,[A,A] .
 $$
 
-The two terms scale differently, so a solution of the self-duality relation $F=iF^{*}$ survives a rescaling only for $\lambda=1$ — or for a commutator term that is itself (anti)self-dual in the same sense, which a generic potential does not have. The admissible amplitudes are isolated, not continuous.
+The two terms scale differently, so a solution of the self-duality relation $F=iF^{*}$ survives a rescaling only for $\digamma_{\mathrm{cfm}}=1$ — or for a commutator term that is itself (anti)self-dual in the same sense, which a generic potential does not have. The admissible amplitudes are isolated, not continuous.
 
 **That is where a fixed amplitude can come from, and it is not a quantum assumption.** A linear theory cannot prefer one amplitude, because its solution space is a vector space and every multiple of a solution is a solution. A theory whose field equations carry a quadratic term can, and here does: the amplitude of the connection is pinned by the self-duality condition rather than left free, and the pinning is a property of the algebra's product and not of $\frac{h}{2\pi}$. Nothing in the algebra knows about $\frac{h}{2\pi}$.
 
@@ -210,8 +210,8 @@ The last is the fork. Conjugation first gives the two sectors and the corpus's q
 | $\Sigma$ | One component of a differentiable function |
 | $\mathsf D\Sigma$ | The two-by-two array of its four coordinate derivatives |
 | $L$, $R$ | The left and right semi-derivatives in $dF=L\,dZ\,R$ |
-| $Ξ$ | The left semi-derivative in the spinor splitting $d\eta=Ξ\,dZ\,\zeta$ |
-| $\eta$, $\zeta$ | The two $SL(2,\mathbb{C})$-spinors of that splitting |
+| $Ξ$ | The left semi-derivative in the spinor splitting $d\digamma_{\mathrm{frm}}=Ξ\,dZ\,\zeta$ |
+| $\digamma_{\mathrm{frm}}$, $\zeta$ | The two $SL(2,\mathbb{C})$-spinors of that splitting |
 | $\Pi$, $G$ | The generating function and the projective coordinate it resolves |
 | $F_{\imath\jmath}$, $A_{\imath}$ | The curvature and the potential of the connection the condition carries |
 | $q$ | The electric charge, $q=N/4$ in the programme's units, $N$ the winding number and not the norm |

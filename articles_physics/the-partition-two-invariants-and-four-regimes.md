@@ -74,7 +74,7 @@ The partition is by truth values, so it is exhaustive by construction and needs 
 The characteristic polynomial reads both predicates at once.
 
 $$
-p_{\tilde Q}(X)=X^{2}-2Q_tX+N,\qquad \operatorname{disc}p_{\tilde Q}=-4B^{2},\qquad \lambda_\pm=Q_t\pm iB .
+p_{\tilde Q}(X)=X^{2}-2Q_tX+N,\qquad \operatorname{disc}p_{\tilde Q}=-4B^{2},\qquad \eta_{\pm}=Q_t\pm iB .
 $$
 
 The norm is the constant term and the vector square is the discriminant. So $N=0$ is a root at zero and $B^{2}=0$ is a double root, and the four regimes are the four patterns a quadratic can show.
@@ -205,7 +205,7 @@ The sign of $N$ is the causal sign and the level sets are the mass shells. That 
 The vector square is the discriminant, and it involves no scalar part.
 
 $$
-B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2},\qquad \operatorname{disc}p_{\tilde Q}=-4B^{2},\qquad \lambda_+-\lambda_-=2iB .
+B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2},\qquad \operatorname{disc}p_{\tilde Q}=-4B^{2},\qquad \eta_{+}-\eta_{-}=2iB .
 $$
 
 The difference of the eigenvalues is twice $iB$, so $B$ is half the gap of the spectrum. The vanishing of $B^{2}$ is therefore the coincidence of the two eigenvalues, and nothing else.
@@ -241,7 +241,7 @@ The four regimes are stated here as one table and one paragraph each. The proofs
 
 | regime | real dimension | spectrum | invertible | eigenbasis | polar word | name |
 | --- | --- | --- | --- | --- | --- | --- |
-| $\Sigma_{11}$ | $8$, open and dense | $\{\lambda_+,\lambda_-\}$, distinct and non-zero | yes | yes, unique | yes | mass in motion |
+| $\Sigma_{11}$ | $8$, open and dense | $\{\eta_{+},\eta_{-}\}$, distinct and non-zero | yes | yes, unique | yes | mass in motion |
 | $\Sigma_{10}$ | $6$ | $\{Q_t\}$, $Q_t\neq0$ | yes | on the scalar line; none on the Jordan part | yes | the rest frame and the exceptional point |
 | $\Sigma_{01}$ | $6$ | $\{2Q_t,0\}$, $2Q_t\neq0$ | no | yes, unique | no | the light ray |
 | $\Sigma_{00}$ | $4$ | $\{0\}$ | no | only at the origin, trivially | no | the vacuum and the nilpotent ladder |
@@ -370,10 +370,10 @@ The chain also fixes what the partition is not. A finer classification exists, b
 
 **The spectral decomposition follows the discriminant and the polar decomposition follows the norm.**
 
-The spectral side. On $\Sigma_{11}$ and on $\Sigma_{01}$ there is a unique writing $\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$ with orthogonal idempotents summing to $e_t$, and the idempotents are
+The spectral side. On $\Sigma_{11}$ and on $\Sigma_{01}$ there is a unique writing $\tilde Q=\eta_{+}\tilde\Pi_{\mathrm{id},++}\eta_{-}\tilde\Pi_{\mathrm{id},-}$ with orthogonal idempotents summing to $e_t$, and the idempotents are
 
 $$
-\tilde\Pi_{\mathrm{id},\pm}=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp}.
+\tilde\Pi_{\mathrm{id},\pm}=\frac{\tilde Q-\lambda_\mp e_t}{\eta_{\pm}-\lambda_\mp}.
 $$
 
 On the punctured scalar line the writing collapses to one term. On the Jordan part no non-trivial idempotent commutes with the element, so no two-term writing exists. On the non-zero nilpotents the same failure occurs, and at the origin the trivial one-term writing $0=0\cdot e_t$ exists.
@@ -462,7 +462,7 @@ $$
 Both are pure nilpotents, the pairing is one half, and the product is
 
 $$
-T=\frac{1}{2}e_t-\vec e_y-\frac{i}{2}\vec e_z,\qquad Q_t=\frac{1}{2},\qquad B^{2}=\frac{3}{4},\qquad \lambda_\pm=e^{\pm i\pi/3},
+T=\frac{1}{2}e_t-\vec e_y-\frac{i}{2}\vec e_z,\qquad Q_t=\frac{1}{2},\qquad B^{2}=\frac{3}{4},\qquad \eta_{\pm}=e^{\pm i\pi/3},
 $$
 
 which is elliptic: the eigenvalues are the sixth roots of unity.
@@ -470,7 +470,7 @@ which is elliptic: the eigenvalues are the sixth roots of unity.
 Replacing the second nilpotent by its negative gives the other type.
 
 $$
-\vec\Pi_{\mathrm{nil},3}=-\vec\Pi_{\mathrm{nil},2},\qquad s=-\frac{1}{2},\qquad Q_t=\frac{3}{2},\qquad B^{2}=-\frac{5}{4},\qquad \lambda_\pm=\frac{3\pm\sqrt{5}}{2},
+\vec\Pi_{\mathrm{nil},3}=-\vec\Pi_{\mathrm{nil},2},\qquad s=-\frac{1}{2},\qquad Q_t=\frac{3}{2},\qquad B^{2}=-\frac{5}{4},\qquad \eta_{\pm}=\frac{3\pm\sqrt{5}}{2},
 $$
 
 which is hyperbolic: real, reciprocal and positive. The two products differ only in the pairing of the two nilpotent parts, and that difference is the difference between a rotation and a boost.
@@ -691,7 +691,7 @@ The three statements to carry away are these. The partition is by two independen
 | $N(\tilde Q)=Q_t^{2}+B^{2}$ | the norm, the constant term of the characteristic polynomial |
 | $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the vector square, the discriminant up to $-4$ |
 | $p_{\tilde Q}(X)=X^{2}-2Q_tX+N$ | the characteristic polynomial |
-| $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues, $\lambda_+\lambda_-=N$ |
+| $\eta_{\pm}=Q_t\pm iB$ | the two eigenvalues, $\eta_{+}\eta_{-}=N$ |
 | $\mathcal N=\{N=0\}$ | the null cone, the wall of invertibility |
 | $\mathcal S=\{B^{2}=0\}$ | the spectral-degenerate cone, the wall of separation |
 | $\Sigma_{ij}$ | the regime with $N\neq0$ iff $i=1$ and $B^{2}\neq0$ iff $j=1$ |

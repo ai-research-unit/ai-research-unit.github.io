@@ -37,12 +37,12 @@ The article *The Gauge Principle in Biquaternionic Form* derives the framework's
 The centre of $\mathbb{B}$ is the complex scalar line $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$, and its $*$-unitary part is
 
 $$
-\mathrm{U}(1) \;=\; \{\lambda = \exp(i\theta_{\mathrm{cen}}) : \theta_{\mathrm{cen}} \in \mathbb{R}\} \;\subset\; \mathbb{B}_{C} .
+\mathrm{U}(1) \;=\; \{\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{cen}}) : \theta_{\mathrm{cen}} \in \mathbb{R}\} \;\subset\; \mathbb{B}_{C} .
 $$
 
 Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
-Because $\lambda$ is central and constant, it passes through the gradient, so the massless biquaternion equation $\tilde\nabla_\Phi\tilde{Ξ} = 0$ is invariant under the global phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$. Making the phase local, $\lambda = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$, forces a connection with the transformation law
+Because $\digamma_{\mathrm{gau}}$ is central and constant, it passes through the gradient, so the massless biquaternion equation $\tilde\nabla_\Phi\tilde{Ξ} = 0$ is invariant under the global phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$. Making the phase local, $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$, forces a connection with the transformation law
 
 $$
 \tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma,
@@ -56,7 +56,7 @@ Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the 
 
 under which $D\tilde{Ξ}$ transforms by the phase factor. The field strength is the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ and satisfies the curvature identity $[D_{\imath},D_{\jmath}] =\frac{2\pi i\,ϙ}{h}F_{\imath\jmath}$. The abelian gauge group is canonically attached to the algebra: the only phase that commutes with the whole algebra must lie in the centre, and the centre is one complex dimension, so no choice of representation is made in selecting it.
 
-Two properties of this factor are as important for the article as the factor itself. First, the charge $ϙ$ is a parameter; the algebra does not fix it. Second, a central element acts as a scalar on the algebra: left multiplication by $\lambda = \exp(i\theta_{\mathrm{cen}})$ multiplies every element by the same factor. A gauge group drawn from the centre therefore assigns every element the same charge — it is vector-like and cannot distinguish left from right. This is established in *Chiral Fermions in the Biquaternion Framework*, and it is the reason the abelian factor as it stands cannot be weak hypercharge, which is chiral.
+Two properties of this factor are as important for the article as the factor itself. First, the charge $ϙ$ is a parameter; the algebra does not fix it. Second, a central element acts as a scalar on the algebra: left multiplication by $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{cen}})$ multiplies every element by the same factor. A gauge group drawn from the centre therefore assigns every element the same charge — it is vector-like and cannot distinguish left from right. This is established in *Chiral Fermions in the Biquaternion Framework*, and it is the reason the abelian factor as it stands cannot be weak hypercharge, which is chiral.
 
 ### The compact algebra inside the material sector
 

@@ -93,17 +93,17 @@ The structural link between the $\theta_{\mathrm{vac}}$ vacuum and the anomaly i
 
 **A toy model exhibiting the phase.** The essential mechanism can be exhibited in two complex dimensions, and it was verified explicitly. Take the chirality-off-diagonal family
 $$
-\mathcal{D}(\lambda) = \begin{pmatrix}\lambda & m\ m & -\lambda\end{pmatrix},
+\mathcal{D}(\digamma_{\mathrm{mss}}) = \begin{pmatrix}\digamma_{\mathrm{mss}} & m\ m & -\digamma_{\mathrm{mss}}\end{pmatrix},
 \qquad
-\det\mathcal{D}(\lambda) = -\lambda^2-m^2 ,
+\det\mathcal{D}(\digamma_{\mathrm{mss}}) = -\digamma_{\mathrm{mss}}^2-m^2 ,
 $$
-which has the block structure of a mass term coupling two chiralities. Its determinant is negative real for large real $\lambda$ — its phase is $\pi$, not $0$ — and the phase is stable as $\lambda\to\infty$. By contrast the central family
+which has the block structure of a mass term coupling two chiralities. Its determinant is negative real for large real $\digamma_{\mathrm{mss}}$ — its phase is $\pi$, not $0$ — and the phase is stable as $\digamma_{\mathrm{mss}}\to\infty$. By contrast the central family
 $$
-\mathcal{C}(\lambda) = \begin{pmatrix}\lambda & 0\ 0 & \lambda\end{pmatrix},
+\mathcal{C}(\digamma_{\mathrm{mss}}) = \begin{pmatrix}\digamma_{\mathrm{mss}} & 0\ 0 & \digamma_{\mathrm{mss}}\end{pmatrix},
 \qquad
-\det\mathcal{C}(\lambda) = \lambda^2 ,
+\det\mathcal{C}(\digamma_{\mathrm{mss}}) = \digamma_{\mathrm{mss}}^2 ,
 $$
-has a strictly positive determinant and no phase. The two are the framework's central and non-central cases in miniature: a determinant phase requires the operator to mix the two chiralities, which is exactly the non-centrality of the mass term. A *varying* phase requires the crossing itself: with the parameter taken through the degeneracy, as in $\mathcal{D}(\mu)=\left(\begin{smallmatrix}\lambda & i\mu\ i\mu & -\lambda\end{smallmatrix}\right)$ at $\lambda=1$, the determinant vanishes at $\mu=1$ and its phase jumps from $\pi$ to $0$ across it, so the phase counts the crossing rather than merely reporting the sign of the determinant. The verification below records the numbers. The toy model does not compute a $\theta_{\mathrm{vac}}$ angle — that requires the gauge-field family — but it exhibits *which* operators can produce the phase that a $\theta_{\mathrm{vac}}$ angle is.
+has a strictly positive determinant and no phase. The two are the framework's central and non-central cases in miniature: a determinant phase requires the operator to mix the two chiralities, which is exactly the non-centrality of the mass term. A *varying* phase requires the crossing itself: with the parameter taken through the degeneracy, as in $\mathcal{D}(\mu)=\left(\begin{smallmatrix}\digamma_{\mathrm{mss}} & i\mu\ i\mu & -\digamma_{\mathrm{mss}}\end{smallmatrix}\right)$ at $\digamma_{\mathrm{mss}}=1$, the determinant vanishes at $\mu=1$ and its phase jumps from $\pi$ to $0$ across it, so the phase counts the crossing rather than merely reporting the sign of the determinant. The verification below records the numbers. The toy model does not compute a $\theta_{\mathrm{vac}}$ angle — that requires the gauge-field family — but it exhibits *which* operators can produce the phase that a $\theta_{\mathrm{vac}}$ angle is.
 
 **What the phase is not.** The phase of the determinant is not the $i\epsilon$ prescription (which fixes a contour, not a topology), not the sign ambiguity of a fermion determinant (which is a boundary condition on the family, not a winding), and not the central phase of the previous section (which weights sectors and is an input to the state). The framework's cleanliness here is that the three are different objects: the central phase lies in the centre, the determinant phase lies in the argument of a complex number computed from a non-central operator, and the $i\epsilon$ lies in the propagator's pole prescription.
 
@@ -135,7 +135,7 @@ The topological sector label and its weight are central; only the states $|Ϙ\ra
 
 **The eta invariant.** On a manifold with boundary the index acquires a boundary correction, and the relevant object is the **eta invariant**
 $$
-\eta(\mathcal{D}) = \lim_{s\to0^+}\sum_n \frac{\mathrm{sign}(\lambda_n)}{|\lambda_n|^s},
+\varsigma_{\mathrm{aPS}} = \lim_{s\to0^+}\sum_n \frac{\mathrm{sign}(\eta_n)}{|\eta_n|^s},
 $$
 the spectral asymmetry of the Dirac operator, which appears in the Atiyah–Patodi–Singer index theorem for the boundary problem. The eta invariant is the phase of the determinant of the operator family — the object of the previous section — and the $\theta_{\mathrm{vac}}$ angle is the coefficient of that phase. The framework's interpretation is therefore that the topological charge is the **interior, integer** half of the same information and the eta invariant is the **phase** half: one is the index, the other the argument of the determinant, and the $\theta_{\mathrm{vac}}$ angle couples them.
 
@@ -143,7 +143,7 @@ the spectral asymmetry of the Dirac operator, which appears in the Atiyah–Pato
 $$
 \delta Ϙ = \mathrm{SF}\big(\mathcal{D}(s)\big).
 $$
-This is why a crossing of the family's determinant contributes a factor $-1$: each crossing adds $\pm1$ to the index and flips the sign of the determinant. The toy family of the previous section, whose determinant changes sign exactly once between $\mu=0$ and $\mu=2$ at $\lambda=1$, therefore exhibits one unit of spectral flow, and this is the correspondence in miniature between the central integer and the determinant's phase. Both facts were verified by explicit evaluation of $\det\mathcal{D}(\mu)=-\lambda^2+\mu^2$ at $\mu=0,2$.
+This is why a crossing of the family's determinant contributes a factor $-1$: each crossing adds $\pm1$ to the index and flips the sign of the determinant. The toy family of the previous section, whose determinant changes sign exactly once between $\mu=0$ and $\mu=2$ at $\digamma_{\mathrm{mss}}=1$, therefore exhibits one unit of spectral flow, and this is the correspondence in miniature between the central integer and the determinant's phase. Both facts were verified by explicit evaluation of $\det\mathcal{D}(\mu)=-\digamma_{\mathrm{mss}}^2+\mu^2$ at $\mu=0,2$.
 
 ## The Partition Function and the Topological Susceptibility
 
@@ -176,7 +176,7 @@ at small $\theta_{\mathrm{vac}}$, so that a nonzero $\xi$ is what makes $\theta_
 - The $\theta_{\mathrm{vac}}$ vacuum does not require a non-central operator; its weighting is central and is therefore invisible to the sector structure.
 - A determinant has a phase only for a **non-central** operator.
 - The topological charge is a **central integer**, $Ϙ\in\mathbb{Z}e_t\subset\mathbb{B}_{C}$, and the weighting is a **central phase**; both ingredients of the $\theta_{\mathrm{vac}}$ vacuum therefore lie in the centre, and only the states $|Ϙ\rangle$ do not.
-- The determinant's sign flips once per crossing of the family; the toy family's $\det\mathcal{D}(\mu)=-\lambda^2+\mu^2$ changes sign exactly once between $\mu=0$ and $\mu=2$ (from $-1$ to $+3$ at $\lambda=1$), one unit of spectral flow consistent with $Ϙ=1$.
+- The determinant's sign flips once per crossing of the family; the toy family's $\det\mathcal{D}(\mu)=-\digamma_{\mathrm{mss}}^2+\mu^2$ changes sign exactly once between $\mu=0$ and $\mu=2$ (from $-1$ to $+3$ at $\digamma_{\mathrm{mss}}=1$), one unit of spectral flow consistent with $Ϙ=1$.
 - The $\theta_{\mathrm{vac}}$ term's integral is an integer (the topological charge), the abelian density is the invariant $I_2=\vec E\cdot\vec B=\mathrm{Sc}(\tilde F\star\tilde F)$, and $\star^2=-1$; all inherited from the instanton article.
 
 **Standard, and transcribed.**
@@ -206,7 +206,7 @@ $$
 S_{\mathrm{vac}} = \frac{\theta_{\mathrm{vac}}}{16\pi^2}\int d^4r\;\mathrm{tr}\big(\sum_{\imath,\jmath}F_{\imath\jmath}\tilde F_{\imath\jmath}\big) = \theta_{\mathrm{vac}}\,Ϙ ,
 \qquad Ϙ\in\mathbb{Z},
 $$
-its abelian density is $\mathrm{Sc}(\tilde F\star\tilde F)=I_2=\vec E\cdot\vec B$, and the dual obeys $\star^2=-1$; the instanton article supplies the configurations and the integrality, inherited here. The vacuum is $|\theta_{\mathrm{vac}}\rangle=\sum_Ϙ \exp(i\theta_{\mathrm{vac}} Ϙ)|Ϙ\rangle$, and the weighting $\exp(i\theta_{\mathrm{vac}} Ϙ)e_t$ is a **central $*$-unitary** of $\mathbb{B}_{C}$, commuting with every quaternion unit, every Lorentz rotor, every module component, and both sectors. The framework therefore supplies the angle's value space — its centre — and shows that the $\theta_{\mathrm{vac}}$ vacuum does not disturb the sector structure. The angle is the **phase** of a determinant, and a determinant has a phase only for a **non-central** operator, as the toy families $\mathcal{D}(\lambda)$ (phase $\pi$) and $\mathcal{C}(\lambda)$ (phase $0$) exhibit; the conformal anomaly of the previous article is the modulus interpretation of the same object. The topology, the integrality, the periodicity, the strong-CP problem, and the eta invariant are standard and transcribed.
+its abelian density is $\mathrm{Sc}(\tilde F\star\tilde F)=I_2=\vec E\cdot\vec B$, and the dual obeys $\star^2=-1$; the instanton article supplies the configurations and the integrality, inherited here. The vacuum is $|\theta_{\mathrm{vac}}\rangle=\sum_Ϙ \exp(i\theta_{\mathrm{vac}} Ϙ)|Ϙ\rangle$, and the weighting $\exp(i\theta_{\mathrm{vac}} Ϙ)e_t$ is a **central $*$-unitary** of $\mathbb{B}_{C}$, commuting with every quaternion unit, every Lorentz rotor, every module component, and both sectors. The framework therefore supplies the angle's value space — its centre — and shows that the $\theta_{\mathrm{vac}}$ vacuum does not disturb the sector structure. The angle is the **phase** of a determinant, and a determinant has a phase only for a **non-central** operator, as the toy families $\mathcal{D}(\digamma_{\mathrm{mss}})$ (phase $\pi$) and $\mathcal{C}(\digamma_{\mathrm{mss}})$ (phase $0$) exhibit; the conformal anomaly of the previous article is the modulus interpretation of the same object. The topology, the integrality, the periodicity, the strong-CP problem, and the eta invariant are standard and transcribed.
 
 ## Summary of Notation
 
@@ -225,7 +225,7 @@ its abelian density is $\mathrm{Sc}(\tilde F\star\tilde F)=I_2=\vec E\cdot\vec B
 | $\star$ | Hodge dual on two-forms; $\star^2=-1$ in the Lorentzian case, $+1$ in the Euclidean |
 | $\flat=-{}^{*}$ | Real structure; sign on the sectors; charge-conjugation shape |
 | $\bar\theta_{\mathrm{vac}}=\theta_{\mathrm{vac}}+\arg\det M$ | Physical angle with a chiral fermion |
-| $\eta$ | Eta invariant; the phase of a determinant family |
+| $\varsigma_{\mathrm{aPS}}$ | Eta invariant; the phase of a determinant family |
 | $\mathrm{ind}\,\mathcal{D}_+$ | Index of the Dirac operator; equals $Ϙ$ |
 | $\mathrm{SF}(\mathcal{D})$ | Spectral flow; equals a charge difference |
 | $Z(\theta_{\mathrm{vac}})=\sum_Ϙ \exp(i\theta_{\mathrm{vac}} Ϙ)Z_Ϙ$ | $\theta_{\mathrm{vac}}$-dependent partition function |

@@ -249,12 +249,12 @@ Two points remain open and neither is hidden. The kernel in $n\ge2$ as a sum of 
 
 **All three transforms integrate the same kernel against the same value; what changes is the side on which the kernel meets it.** The left placement multiplies on the left, the right placement on the right, and the two-sided placement sandwiches the value between two kernels. For a scalar-valued function the three products coincide, which is why the complex theory needs one name; for this algebra they are three operators, and the difference is visible only in a non-commutative algebra.
 
-The commutant of a pure root is the plane of the root. For a pure root $R$ with $R^{2}=-e_t$, an element $a$ satisfies $aR=Ra$ exactly when it lies in $\mathrm{span}_{\mathbb{C}}\{e_t,R\}$, a real subspace of dimension four. The plane $C(R)$ is commutative, and the complementary subspace $V_\perp$, also of real dimension four, is spanned by a transverse frame $\digamma_{\mathrm{trv}},\eta$ with $R\digamma_{\mathrm{trv}}=\eta$, $\digamma_{\mathrm{trv}} R=-\eta$, $\eta R=\digamma_{\mathrm{trv}}$ and $R\eta=-\digamma_{\mathrm{trv}}$.
+The commutant of a pure root is the plane of the root. For a pure root $R$ with $R^{2}=-e_t$, an element $a$ satisfies $aR=Ra$ exactly when it lies in $\mathrm{span}_{\mathbb{C}}\{e_t,R\}$, a real subspace of dimension four. The plane $C(R)$ is commutative, and the complementary subspace $V_\perp$, also of real dimension four, is spanned by a transverse frame $\digamma_{\mathrm{trv}},\varsigma_{\mathrm{tfr}}$ with $R\digamma_{\mathrm{trv}}=\varsigma_{\mathrm{tfr}}$, $\digamma_{\mathrm{trv}} R=-\varsigma_{\mathrm{tfr}}$, $\varsigma_{\mathrm{tfr}} R=\digamma_{\mathrm{trv}}$ and $R\varsigma_{\mathrm{tfr}}=-\digamma_{\mathrm{trv}}$.
 
 Conjugation by the kernel fixes the plane and rotates the complement. With $\theta=2\pi\omega t$,
 
 $$
-W\digamma_{\mathrm{trv}} W^{-1}=\cos2\theta\,\digamma_{\mathrm{trv}}-\sin2\theta\,\eta,\qquad W\eta W^{-1}=\sin2\theta\,\digamma_{\mathrm{trv}}+\cos2\theta\,\eta,
+W\digamma_{\mathrm{trv}} W^{-1}=\cos2\theta\,\digamma_{\mathrm{trv}}-\sin2\theta\,\varsigma_{\mathrm{tfr}},\qquad W\varsigma_{\mathrm{tfr}} W^{-1}=\sin2\theta\,\digamma_{\mathrm{trv}}+\cos2\theta\,\varsigma_{\mathrm{tfr}},
 $$
 
 so the conjugation is the identity on $C(R)$ and a rotation through the angle $4\pi\omega t$ on $V_\perp$. The angle is twice the phase of the kernel, and the factor two is the first appearance of the doubling that governs the two-sided placement.
@@ -370,7 +370,7 @@ The limit. The placements are three descriptions of one object, so no experiment
 
 The object. $G(\omega)=\int\chi_\omega\,d\mu$, its value $G(0)=\mu(\mathbb{R}^{n})e_t$, and the quadratic form $\sum_{\mathrm{modes}}\bar A_{\mathrm{mode},m}A_{\mathrm{mode},m'}G(\omega_{\mathrm{mode},m}-\omega_{\mathrm{mode},m'})=\int\langle Z\rangle_{\natural}\,d\mu$.
 
-The warrant. The identity is one line, because $\bar\chi_\omega\chi_\eta=\chi_{\eta-\omega}$ at a pure root; the right-hand side is the integral of the natural norm; and the natural norm is indefinite, vanishing on the null cone and negative on the centre. At $N=1$ with $Z=i e_t$ the integral is $-\mu$, since $\langle i e_t\rangle_{\natural}=i^{2}=-1$, while the star pairing gives $\langle i,i\rangle_{*}=+1$.
+The warrant. The identity is one line, because $\bar\chi_\omega\chi_\varsigma_{\mathrm{tfr}}=\chi_{\varsigma_{\mathrm{tfr}}-\omega}$ at a pure root; the right-hand side is the integral of the natural norm; and the natural norm is indefinite, vanishing on the null cone and negative on the centre. At $N=1$ with $Z=i e_t$ the integral is $-\mu$, since $\langle i e_t\rangle_{\natural}=i^{2}=-1$, while the star pairing gives $\langle i,i\rangle_{*}=+1$.
 
 The reading. Bochner's theorem needs a positive-definite function, and positivity needs a definite form. This algebra has one and it is not the norm: the norm is a signed weight, and the sign is the sign of the sector. A density read through the norm is therefore not a probability density but a charge-like weight, and a probability is read through the star pairing, which is positive by construction and not multiplicative. The archive's probability articles are the positive half of this statement; what this entry adds is the negative half, which is that no theorem of Bochner type can be stated in the norm and that the failure needs neither a zero divisor nor an exceptional value.
 
@@ -444,7 +444,7 @@ Eight readings, each with a boundary. The kernel is the clock, the frequency its
 | the norm of an element | $N(\tilde{Q})$ | $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, central and complex |
 | the degenerate set | $\{N(\Sigma)=0\}$ | where the symbol is not invertible |
 | the plane of the root | $C(R)$ | $\mathrm{span}_{\mathbb{C}}\{e_t,R\}$, the commutant of a pure root |
-| the transverse frame | $\digamma_{\mathrm{trv}},\eta$ | $R\digamma_{\mathrm{trv}}=\eta$, $\digamma_{\mathrm{trv}} R=-\eta$, $\eta R=\digamma_{\mathrm{trv}}$ |
+| the transverse frame | $\digamma_{\mathrm{trv}},\varsigma_{\mathrm{tfr}}$ | $R\digamma_{\mathrm{trv}}=\varsigma_{\mathrm{tfr}}$, $\digamma_{\mathrm{trv}} R=-\varsigma_{\mathrm{tfr}}$, $\varsigma_{\mathrm{tfr}} R=\digamma_{\mathrm{trv}}$ |
 | the two placements | $R'=\pm R$ | the two-sided kernels that fix a part |
 | the exponential type | $2\pi\rho$ | $\rho$ the distance of the nearest pole from the real axis |
 | the Tomita operator | $S$ | the star, with $\Delta_\Phi=\mathrm{id}$ and $\gimel_{\mathrm{mod}}=S$ |

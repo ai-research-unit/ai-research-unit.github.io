@@ -93,7 +93,7 @@ The magnetic coupling to an external field is a rotation-type structure, and its
 
 ## The Reduction of a Numerator
 
-**Why operators here.** The algebraic work behind the loop computation is the reduction of the numerator, and it is a statement about the operators that act on the state rather than about the elements. This section therefore writes them as basis operators, $L_aR_b$ with $L_aR_b\,X=aXb$, and the basis operator of the direction $\mu$ as $iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}$, $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$. It is the one section of the article that does, and the reason is that the operators are its subject; in the algebra's own objects the same four sums are read off the products of the invertibles, and the correspondence between the two readings is stated in the closing section.
+**Why operators here.** The algebraic work behind the loop computation is the reduction of the numerator, and it is a statement about the operators that act on the state rather than about the elements. This section therefore writes them as basis operators, $L_aR_b$ with $L_aR_b\,X=aXb$, and the basis operator of the direction $\mu$ as $iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}$, $\mathrm{spt}(t)=x$, $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$. It is the one section of the article that does, and the reason is that the operators are its subject; in the algebra's own objects the same four sums are read off the products of the invertibles, and the correspondence between the two readings is stated in the closing section.
 
 **The closure.** The generator of the pair is half the operator of the pair,
 $$S_{\imath\jmath}=\tfrac{i}{2}\big(iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}\big)\big(iL_{e_{\jmath}}R_{\vec e_{\mathrm{spt}(\jmath)}}\big),$$
@@ -242,7 +242,7 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The two sectors, and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ |
 | $\tilde S_{\Psi,m}=\frac{h}{4\pi}i\vec e_m$ | Spin generator; $\mathcal G_{12}$ acts as $\frac{2\pi 2\,\tilde{S}_{\Psi,3}}{h}$ |
 | $L_aR_b$, $L_aR_bX=aXb$ | The operator of the two multipliers, used in §*The Reduction of a Numerator* only |
-| $iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}$, $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$ | The operator of the direction $\mu$ |
+| $iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}$, $\mathrm{spt}(t)=x$, $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$ | The operator of the direction $\mu$ |
 | $\mathrm{tr}(L_aR_b)=4\mathrm{Sc}(a)\mathrm{Sc}(b)$ | Operator trace, factorized into the two multipliers |
 | $\mathrm{Tr}_2(\tilde Q_1\tilde Q_2)=2\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace on the algebra, the plain form |
 | Four contraction identities of §*The Reduction of a Numerator* | The four weighted sums (residual $0$) |

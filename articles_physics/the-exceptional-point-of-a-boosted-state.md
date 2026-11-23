@@ -24,7 +24,7 @@ $$
 and its $2\times2$ image is $\tfrac12\left(I+\mathsf M_2(i\vec s_\Psi)\right)$, Hermitian of trace one. Choosing the axis of $\vec s_\Psi$ as the third direction diagonalises it, and
 
 $$
-\lambda_\pm=\tfrac12\left(1\pm r\right),\qquad r=\lvert\vec s_\Psi\rvert,
+\eta_{\pm}=\tfrac12\left(1\pm r\right),\qquad r=\lvert\vec s_\Psi\rvert,
 $$
 
 so the two eigenvalues are positive, sum to one, and are separated by the radius. The characteristic polynomial is $\lambda^{2}-\lambda+\tfrac14(1-r^{2})$, whose discriminant is $r^{2}/4$: the spectrum is degenerate exactly at $r=0$.
@@ -116,7 +116,7 @@ The state's spectrum is $\tfrac12(1\pm r)$ and it degenerates only at the centre
 | --- | --- |
 | $\tilde{Ϛ}_\Psi=\tfrac12(e_t+i\vec s_\Psi)$ | the state, of trace one |
 | $r=\lvert\vec s_\Psi\rvert$ | the Bloch radius, the only spectral datum |
-| $\lambda_\pm=\tfrac12(1\pm r)$ | the two eigenvalues of the state |
+| $\eta_{\pm}=\tfrac12(1\pm r)$ | the two eigenvalues of the state |
 | $s_\parallel$, $\vec s_\perp$ | the projections of the Bloch vector on and off the boost axis |
 | $\theta_{\mathrm{rpd}}$ | the rapidity of the boost |
 | $2\,\mathrm{Sc}$ | the doubled scalar part, the trace of the $2\times2$ image |

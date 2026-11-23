@@ -119,7 +119,7 @@ The field strength is built from the connection by differentiation, so it cannot
 
 $$
 \boxed{\;D_\imath F_{\imath\jmath} + D_{\imath} F_{\jmathk} + D_{\jmath} F_{k\imath} = 0
-\qquad \text{for all } (\lambda,\imath,\jmath)\;}.
+\qquad \text{for all } (k,\imath,\jmath)\;}.
 $$
 
 The cyclic order is part of the statement, so it is worth writing out in full:
@@ -133,13 +133,13 @@ $$
 = 0 .
 $$
 
-The derivative index is paired with the form pair whose first index is the same index, and the three terms are the cyclic rotations of $(\lambda,\imath,\jmath)$ applied to both the derivative index and the pair at once. The order matters: the sum $D_\imath F_{\imath\jmath}+D_{\imath} F_{k\jmath}+D_{\jmath} F_{\imathk}$, in which the second and third pairs are not the cyclic rotations, is generically nonzero, and was checked as a negative control. The cyclic sum is totally antisymmetric in the three indices, so contraction with the totally antisymmetric symbol gives the compact form
+The derivative index is paired with the form pair whose first index is the same index, and the three terms are the cyclic rotations of $(k,\imath,\jmath)$ applied to both the derivative index and the pair at once. The order matters: the sum $D_\imath F_{\imath\jmath}+D_{\imath} F_{k\jmath}+D_{\jmath} F_{\imathk}$, in which the second and third pairs are not the cyclic rotations, is generically nonzero, and was checked as a negative control. The cyclic sum is totally antisymmetric in the three indices, so contraction with the totally antisymmetric symbol gives the compact form
 
 $$
 \varepsilon_{k\imath\jmath\rho}\,D_\imath F_{\imath\jmath} = 0 .
 $$
 
-with $\varepsilon_{k\imath\jmath\rho}$ the Levi-Civita symbol, $\varepsilon_{0123}=+1$; the lower-index symbol is the same array as the raised one, so the contraction is unchanged. The identity was recomputed for all $64$ ordered triples $(\lambda,\imath,\jmath)$, on generic non-commuting, position-dependent connections, with residual identically zero.
+with $\varepsilon_{k\imath\jmath\rho}$ the Levi-Civita symbol, $\varepsilon_{0123}=+1$; the lower-index symbol is the same array as the raised one, so the contraction is unchanged. The identity was recomputed for all $64$ ordered triples $(k,\imath,\jmath)$, on generic non-commuting, position-dependent connections, with residual identically zero.
 
 ## The Bianchi Identity as the Jacobi Identity
 

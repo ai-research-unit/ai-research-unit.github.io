@@ -55,28 +55,28 @@ Twirling collapses the affine data to two numbers, one of which is zero. Averagi
 What survives is a one-parameter family.
 
 $$
-\mathcal E_\imath(\tilde Q)=(1-\lambda)\tilde Q+\lambda\,\mathrm{Sc}(\tilde Q)\,e_t,
+\mathcal E_\imath(\tilde Q)=(1-\digamma_{\mathrm{mix}})\tilde Q+\digamma_{\mathrm{mix}}\,\mathrm{Sc}(\tilde Q)\,e_t,
 \qquad
-\vec s_{\Psi}\mapsto(1-\lambda)\vec s_{\Psi},
+\vec s_{\Psi}\mapsto(1-\digamma_{\mathrm{mix}})\vec s_{\Psi},
 $$
 
-which is the mixture with the centre at weight $\lambda$. It is covariant, and covariance holds to $3.3\times10^{-16}$ over three hundred random unitaries and states. It is trace-preserving, it fixes the centre, and it is the channel the companion *The Gibbs Path Is Not a Group Orbit* already uses.
+which is the mixture with the centre at weight $\digamma_{\mathrm{mix}}$. It is covariant, and covariance holds to $3.3\times10^{-16}$ over three hundred random unitaries and states. It is trace-preserving, it fixes the centre, and it is the channel the companion *The Gibbs Path Is Not a Group Orbit* already uses.
 
-Three boundaries cut the real line, and they are not the same boundary. With $c=1-\lambda$ the family is $\Phi_c(\tilde{Ϛ})=c\,\tilde{Ϛ}+(1-c)\mathrm{Sc}(\tilde{Ϛ})e_t$, whose Choi eigenvalues are
+Three boundaries cut the real line, and they are not the same boundary. With $c=1-\digamma_{\mathrm{mix}}$ the family is $\Phi_c(\tilde{Ϛ})=c\,\tilde{Ϛ}+(1-c)\mathrm{Sc}(\tilde{Ϛ})e_t$, whose Choi eigenvalues are
 
 $$
 \frac{1+3c}{2}\ \text{once},\qquad \frac{1-c}{2}\ \text{three times}.
 $$
 
-| condition | range of $c$ | range of $\lambda$ | what fails outside |
+| condition | range of $c$ | range of $\digamma_{\mathrm{mix}}$ | what fails outside |
 | --- | --- | --- | --- |
-| complete positivity | $c\ge-\tfrac13$ | $\lambda\le\tfrac43$ | the Choi matrix has a negative eigenvalue |
-| positivity, so states map to states | $-1\le c\le1$ | $0\le\lambda\le2$ | the image leaves the ball |
-| a convex mixture of the state and the centre | $0\le c\le1$ | $0\le\lambda\le1$ | the map reflects the Bloch vector instead of shrinking it |
+| complete positivity | $c\ge-\tfrac13$ | $\digamma_{\mathrm{mix}}\le\tfrac43$ | the Choi matrix has a negative eigenvalue |
+| positivity, so states map to states | $-1\le c\le1$ | $0\le\digamma_{\mathrm{mix}}\le2$ | the image leaves the ball |
+| a convex mixture of the state and the centre | $0\le c\le1$ | $0\le\digamma_{\mathrm{mix}}\le1$ | the map reflects the Bloch vector instead of shrinking it |
 
 All three follow from two eigenvalue formulas, and none of them is approximate. For a pure input the eigenvalues of the image are $\tfrac12(1+c)$ and $\tfrac12(1-c)$, both non-negative exactly for $\lvert c\rvert\le1$. For $c=-\tfrac13$ the Choi eigenvalues are $0,\tfrac23,\tfrac23,\tfrac23$; for $c=1$ they are $0,0,0,2$. The window $-1\le c<-\tfrac13$ is the standard one in which the map is positive but not completely positive, and it is where the corpus's exercise on positive-but-not-CP maps sits.
 
-**The physical segment is the last row, and it is forced rather than chosen.** A mixture with weight in $[0,1]$ is the only reading of $\mathcal E_\imath$ under which $\lambda$ is a probability. Covariance gives the family; complete positivity permits more of it than physics uses; and the mixture reading cuts it to the segment the thermal path needs. Nothing about the value of $\lambda$ is selected — that is the bath, and §*What Is Refused* returns to it.
+**The physical segment is the last row, and it is forced rather than chosen.** A mixture with weight in $[0,1]$ is the only reading of $\mathcal E_\imath$ under which $\digamma_{\mathrm{mix}}$ is a probability. Covariance gives the family; complete positivity permits more of it than physics uses; and the mixture reading cuts it to the segment the thermal path needs. Nothing about the value of $\digamma_{\mathrm{mix}}$ is selected — that is the bath, and §*What Is Refused* returns to it.
 
 ## Unitality Is the Arrow
 
@@ -96,7 +96,7 @@ The centre is the only state that every unital channel fixes. It is fixed by eac
 
 The sign of the escape is the physics. A non-unital channel can lower $N$, and that is refrigeration and not a channel's failure: damping with Kraus weight $g=0.447$ takes $r$ from $0.2000$ to $0.8400$ and $N$ from $0.240000$ to $0.073600$. The coarse-graining article already says that such a map is not a coarse-graining, because it exports entropy to an environment and keeps no ledger of the export. Unitality is precisely the condition that no such export is hidden.
 
-The semigroup law is inherited, not reproved. $\mathcal E_{k_1}\circ\mathcal E_{k_2}=\mathcal E_{k_1+k_2-k_1k_2}$ because $(1-\lambda_1)(1-\lambda_2)=1-(\lambda_1+\lambda_2-\lambda_1\lambda_2)$, and the companion computes the residual as exactly zero. So the family is a semigroup, unital throughout, with the centre as its unique common fixed point and $N$ monotone along it.
+The semigroup law is inherited, not reproved. $\mathcal E_{k_1}\circ\mathcal E_{k_2}=\mathcal E_{k_1+k_2-k_1k_2}$ because $(1-\digamma_{\mathrm{mix},1})(1-\digamma_{\mathrm{mix},2})=1-(\digamma_{\mathrm{mix},1}+\digamma_{\mathrm{mix},2}-\digamma_{\mathrm{mix},1}\digamma_{\mathrm{mix},2})$, and the companion computes the residual as exactly zero. So the family is a semigroup, unital throughout, with the centre as its unique common fixed point and $N$ monotone along it.
 
 ## The Staircase of Choi Ranks
 
@@ -108,7 +108,7 @@ The price of abandoning multiplicativity is counted by the Choi rank, and the co
 | dephasing, damping | $2$ | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | $32$ |
 | mixture, depolarising | $4$ | $M_2(\mathbb{C})\otimes M_4(\mathbb{C})\cong M_8(\mathbb{C})$ | $128$ |
 
-**The rank does not interpolate, and that is the sharpest fact in this section.** At $\lambda=0$ the channel is the identity and the rank is $1$; for every $\lambda\in(0,1]$ the rank is $4$. Verified at $\lambda=0.05$, $0.5$ and $1$. There is no gradual increase, because the rank is an integer and the family is a straight line through the identity: the channel leaves the reversible class at the first step and lands at full rank.
+**The rank does not interpolate, and that is the sharpest fact in this section.** At $\digamma_{\mathrm{mix}}=0$ the channel is the identity and the rank is $1$; for every $\digamma_{\mathrm{mix}}\in(0,1]$ the rank is $4$. Verified at $\digamma_{\mathrm{mix}}=0.05$, $0.5$ and $1$. There is no gradual increase, because the rank is an integer and the family is a straight line through the identity: the channel leaves the reversible class at the first step and lands at full rank.
 
 The selected channel therefore sits one rung above everything the corpus has dilated. $\mathbb{B}\otimes\mathbb{B}$ covers the rank-$\le2$ channels, which is exactly dephasing and damping and the one-qubit environment they need. The covariant channel needs an environment of dimension four, so its minimal carrier is $M_2\otimes M_4\cong M_8$, of $128$ real dimensions. And at the boundary of complete positivity the rank is $3$, not $4$: the rank itself changes where the Choi matrix acquires its zero eigenvalue, so the boundary of positivity is visible in the rank and not only in the spectrum.
 
@@ -126,7 +126,7 @@ The two are related by one sentence. The centre is where a contractive channel s
 
 ## What the Algebra Does Not Give
 
-The value of $\lambda$ is not derived, and neither is the identity of the bath. Covariance, complete positivity and the mixture reading force the shape of the family; they say nothing about which member a given physical situation realises. That is the temperature, or equivalently the fixed point, and it is data supplied from outside the algebra — exactly as the Hamiltonian is data under O18 and the outcome basis is data under O19.
+The value of $\digamma_{\mathrm{mix}}$ is not derived, and neither is the identity of the bath. Covariance, complete positivity and the mixture reading force the shape of the family; they say nothing about which member a given physical situation realises. That is the temperature, or equivalently the fixed point, and it is data supplied from outside the algebra — exactly as the Hamiltonian is data under O18 and the outcome basis is data under O19.
 
 **Irreversibility is never internal, and this is a theorem rather than a remark.** A completely positive multiplicative map on $\mathbb{B}$ is a $*$-homomorphism, hence inner, hence unitary conjugation, hence Choi rank $1$. So no channel with an environment can be written inside $\mathbb{B}$, and demanding one would be demanding a non-injective endomorphism of a simple algebra. The refusal is structural, and it is the reason the framework needs an environment at all.
 
@@ -138,11 +138,11 @@ Channels are not classified here; they are selected. $\mathbb{B}\cong M_2(\mathb
 
 Simplicity is the structural fact. A nonzero endomorphism of $\mathbb{B}$ is injective, a unital one is an automorphism, an automorphism of $M_2(\mathbb{C})$ is inner, and an inner one has Choi rank $1$. So multiplicative, rank $1$, conjugation by a unit, and $N$ preserved are one condition, and a channel is precisely a map that has abandoned the product. That is why no channel is internal, and why a boost does not count as one: it preserves $N$ but not $2\,\mathrm{Sc}$, so it moves the slice.
 
-Covariance under unit rotor conjugation selects the mixture family $\mathcal E_\imath(\tilde Q)=(1-\lambda)\tilde Q+\lambda\,\mathrm{Sc}(\tilde Q)e_t$, verified to $3.3\times10^{-16}$; the twirl sends $M$ to $\tfrac13\operatorname{tr}(M)I$ and $\vec t$ to zero. Its Choi eigenvalues are $\tfrac12(1+3c)$ once and $\tfrac12(1-c)$ three times with $c=1-\lambda$, which places complete positivity at $c\ge-\tfrac13$, positivity at $\lvert c\rvert\le1$, and the mixture reading at $0\le\lambda\le1$.
+Covariance under unit rotor conjugation selects the mixture family $\mathcal E_\imath(\tilde Q)=(1-\digamma_{\mathrm{mix}})\tilde Q+\digamma_{\mathrm{mix}}\,\mathrm{Sc}(\tilde Q)e_t$, verified to $3.3\times10^{-16}$; the twirl sends $M$ to $\tfrac13\operatorname{tr}(M)I$ and $\vec t$ to zero. Its Choi eigenvalues are $\tfrac12(1+3c)$ once and $\tfrac12(1-c)$ three times with $c=1-\digamma_{\mathrm{mix}}$, which places complete positivity at $c\ge-\tfrac13$, positivity at $\lvert c\rvert\le1$, and the mixture reading at $0\le\digamma_{\mathrm{mix}}\le1$.
 
 Unitality is the arrow: $r'\le r$, so $N'\ge N$, purity non-increasing and entropy non-decreasing, verified with the worst change $r'-r=-1.8\times10^{-4}$ over four hundred channels. The centre is the unique common fixed point of all unital channels, and a non-unital channel that lowers $N$ from $0.240000$ to $0.073600$ is refrigeration rather than an error.
 
-The Choi rank is the price: $1$ for a conjugation and $8$ real dimensions, $2$ for dephasing and damping with $\mathbb{B}\otimes\mathbb{B}$ and $32$, and $4$ for the selected family with $M_8$ and $128$ — reached at $\lambda=0.05$ already, since the rank jumps from $1$ to $4$ at the identity and never interpolates. Two ceilings follow: the centre as the limit of contraction, and the Stinespring staircase as the cost of leaving the algebra.
+The Choi rank is the price: $1$ for a conjugation and $8$ real dimensions, $2$ for dephasing and damping with $\mathbb{B}\otimes\mathbb{B}$ and $32$, and $4$ for the selected family with $M_8$ and $128$ — reached at $\digamma_{\mathrm{mix}}=0.05$ already, since the rank jumps from $1$ to $4$ at the identity and never interpolates. Two ceilings follow: the centre as the limit of contraction, and the Stinespring staircase as the cost of leaving the algebra.
 
 ## Summary of Notation
 
@@ -156,12 +156,12 @@ The Choi rank is the price: $1$ for a conjugation and $8$ real dimensions, $2$ f
 | $\operatorname{rank}\mathsf C$ | Choi rank: minimal Kraus number, minimal environment dimension |
 | $\sum_l\tilde\Upsilon_l^{*}\tilde\Upsilon_l=e_t$ | Trace preservation |
 | $\sum_l\tilde\Upsilon_l\tilde\Upsilon_l^{*}=e_t$ | Unitality: the centre is fixed |
-| $\mathcal E_\imath(\tilde Q)=(1-\lambda)\tilde Q+\lambda\,\mathrm{Sc}(\tilde Q)e_t$ | The covariant family; $\vec s_{\Psi}\mapsto(1-\lambda)\vec s_{\Psi}$ |
-| $\Phi_c$ with $c=1-\lambda$ | The same family in depolarising form |
+| $\mathcal E_\imath(\tilde Q)=(1-\digamma_{\mathrm{mix}})\tilde Q+\digamma_{\mathrm{mix}}\,\mathrm{Sc}(\tilde Q)e_t$ | The covariant family; $\vec s_{\Psi}\mapsto(1-\digamma_{\mathrm{mix}})\vec s_{\Psi}$ |
+| $\Phi_c$ with $c=1-\digamma_{\mathrm{mix}}$ | The same family in depolarising form |
 | $\tfrac12(1+3c)$, $\tfrac12(1-c)$ | Choi eigenvalues of $\Phi_c$, once and three times |
 | $c\ge-\tfrac13$ | Complete positivity |
 | $\lvert c\rvert\le1$ | Positivity: states map to states |
-| $0\le\lambda\le1$ | The mixture reading |
+| $0\le\digamma_{\mathrm{mix}}\le1$ | The mixture reading |
 
 ## Further Reading
 

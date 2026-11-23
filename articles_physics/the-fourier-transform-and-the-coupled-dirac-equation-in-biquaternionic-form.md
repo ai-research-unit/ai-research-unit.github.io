@@ -118,7 +118,7 @@ It does not extend to a position-dependent symbol. With a general $\tilde A_\Phi
 
 ## The Gauge Law in Momentum Space
 
-The gauge phase is $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\,\Gamma}{h}$ and the field transforms by a central phase. The parent's law is $\tilde\Xi_2=\lambda\tilde\Xi$ with $\lambda=\exp(i\theta_{\mathrm{gau}})$ and $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ for real $\Gamma$. The multiplier $\lambda$ is central and of unit modulus, so the transform sees it as one scalar function and nothing else.
+The gauge phase is $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\,\Gamma}{h}$ and the field transforms by a central phase. The parent's law is $\tilde\Xi_2=\digamma_{\mathrm{gau}}\tilde\Xi$ with $\digamma_{\mathrm{gau}}=\exp(i\theta_{\mathrm{gau}})$ and $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ for real $\Gamma$. The multiplier $\digamma_{\mathrm{gau}}$ is central and of unit modulus, so the transform sees it as one scalar function and nothing else.
 
 Finding 4. Gauge invariance is a translation in momentum space when the gauge phase is linear, and a phase is linear in the position exactly when its gradient is constant. For a linear $\theta_{\mathrm{gau}}$ the multiplication is a translation of the support by $\vec\nabla_\Phi\theta_{\mathrm{gau}}$, and the mode count is preserved. For a non-linear $\theta_{\mathrm{gau}}$ the multiplication is a convolution, and the mode count is not preserved.
 

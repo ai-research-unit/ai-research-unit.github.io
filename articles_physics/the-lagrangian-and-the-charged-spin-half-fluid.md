@@ -14,7 +14,7 @@ This is the variational companion of [The Charged Spin-Half Fluid](the-charged-s
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_{\imath\in\{x,y,z\}} A_\imath\vec e_\imath\in\mathbb{B}_\Phi$, covariant derivative $\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Gauge transformations are central: $\tilde\Xi\mapsto\tilde\Xi\lambda$ with $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})\in\mathbb{C}$, $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Gamma$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_{\imath\in\{x,y,z\}} A_\imath\vec e_\imath\in\mathbb{B}_\Phi$, covariant derivative $\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Gauge transformations are central: $\tilde\Xi\mapsto\tilde\Xi\digamma_{\mathrm{gau}}$ with $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})\in\mathbb{C}$, $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Gamma$.
 
 ## The Action in the Fluid Variables: The Kinetic Term and the Two Rates
 
@@ -74,7 +74,7 @@ and the first term is central imaginary while the second is Hermitian with a rea
 
 This is the type argument of the block's charged articles, in its most economical form. The scalar charged articles state it as one sentence about a central element reaching the phase and the boost and not the scale and the rotor; here it is a table whose two zeros are read off the decomposition of $\tilde A_\Phi$.
 
-With $\tilde\Xi\mapsto\tilde\Xi\lambda$ and $\lambda\in\mathbb{C}$ central,
+With $\tilde\Xi\mapsto\tilde\Xi\digamma_{\mathrm{gau}}$ and $\digamma_{\mathrm{gau}}\in\mathbb{C}$ central,
 
 $$
 \tilde\Xi^{-1}\bigl(\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}\bigr)\tilde\Xi
@@ -82,7 +82,7 @@ $$
 \tilde\Xi^{-1}\bigl(\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}\bigr)\tilde\Xi+\lambda^{-1}\partial_{\imath}\lambda,
 $$
 
-and $\lambda^{-1}\partial_{\imath}\lambda=\frac{2\pi iϙ\partial_{\imath}\Gamma}{h}$ is central, so it cancels against the transformed connection. The frame's brackets do not see the shift at all, because it is added on the left of the element and the frame's factors are to the right, and because a central element commutes past every one of them.
+and $\digamma_{\mathrm{gau}}^{-1}\partial_{\imath}\digamma_{\mathrm{gau}}=\frac{2\pi iϙ\partial_{\imath}\Gamma}{h}$ is central, so it cancels against the transformed connection. The frame's brackets do not see the shift at all, because it is added on the left of the element and the frame's factors are to the right, and because a central element commutes past every one of them.
 
 A gauge transformation is a multiplication of the word by a central factor; the word's factors are the phase's and the frame's; a central multiplication can be absorbed into the phase's factor — which is what a phase shift is — and cannot be absorbed into the frame's, because the frame's factors are not central. So the shift is entirely the phase's, and the boost's bracket's apparent change is the connection's cancellation. **The coupling's reach and the gauge group's reach coincide, and both are the central direction of the algebra.**
 
@@ -157,7 +157,7 @@ Gauge invariance. Exact, and exact because the gauge group is central and theref
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word, four factors |
 | $ϙ$ | Coupling; minus the electric charge |
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection; Hermitian, hence central-imaginary in time and Hermitian in space |
-| $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ | The gauge element; central, hence commuting with the frame |
+| $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ | The gauge element; central, hence commuting with the frame |
 | $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | The velocity; an invertible element's square, norm $-c^{2}$ for every field |
 | $\rho_{\mathrm{num}}=\varrho^{2}$, $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ | Proper and charge densities |
 | $\beta=\tanh\theta_{\mathrm{rpd}}$ | The spin's canonical weight |

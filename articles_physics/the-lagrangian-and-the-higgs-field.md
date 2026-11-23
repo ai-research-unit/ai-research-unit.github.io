@@ -150,7 +150,7 @@ The count of currents, from the potential alone. The potential's symmetry is $O(
 **The stress, and the sign of the energy.** With the flat directions frozen,
 
 $$
-T_{\imath\jmath}=\partial_{\imath} h\,\partial_{\jmath} h-\eta_{\imath\jmath}\Bigl(\tfrac12\partial h^{2}-V(h)\Bigr),
+T_{\imath\jmath}=\partial_{\imath} h\,\partial_{\jmath} h-\delta_{\imath\jmath}\Bigl(\tfrac12\partial h^{2}-V(h)\Bigr),
 \qquad
 T_{00}=\tfrac12\dot h^{2}+\tfrac12(\nabla h)^{2}+V(h)-V(v),
 $$

@@ -19,7 +19,7 @@ A caret carries four things and no label:
 
 A subscript carries one of two things: an index or a label.
 
-- an index — a numeric count, $Q_1$, $M_2$; the slot of a coordinate, $q_i$, $x_i$, $p_i$, $Q_i$, $\theta_i$, $\zeta_\imath$, $v_i$; the slot of a basis vector or a gamma, $\vec e_i$, $\gamma_i$; the slots of an invariant symbol, $\delta_{ij}$, $\varepsilon_{\imath\jmath\ell}$, $\eta_{ij}$; the generator of a gauge, colour, isospin or spin family, $T_a$, $G_a$, $\sigma_z$; the slot of a connection or curvature component, $\Gamma_\imath$, $\mathrm{Ric}_{ij}$, $\omega_i$, $g_{ij}$; the slot of a differential, $dx_i$.
+- an index — a numeric count, $Q_1$, $M_2$; the slot of a coordinate, $q_i$, $x_i$, $p_i$, $Q_i$, $\theta_i$, $\zeta_\imath$, $v_i$; the slot of a basis vector or a gamma, $\vec e_i$, $\gamma_i$; the slots of an invariant symbol, $\delta_{ij}$, $\varepsilon_{\imath\jmath\ell}$, $\delta_{ij}$; the generator of a gauge, colour, isospin or spin family, $T_a$, $G_a$, $\sigma_z$; the slot of a connection or curvature component, $\Gamma_\imath$, $\mathrm{Ric}_{ij}$, $\omega_i$, $g_{ij}$; the slot of a differential, $dx_i$.
 - a label naming the object, a part of it or a role of it, $E_{\mathrm{wkb}}$, $s_{\mathrm{tot}}$, $S_{\mathrm{int}}$, with every label of §*The Labels*; the label comes first in the subscript and an index already there follows it after a comma, $T_{\mathrm{em},\imath\jmath}$; the family letters of a regular matrix are of this kind, $L$ and $R$ naming the left and the right part, $\mathsf M_{4L}$ and $\mathsf M_{4R}$.
 
 The word *metric* has one meaning in the series. There is one metric, the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$: diagonal, all four coefficients $+1$, the matrix of the interval $\sum_{\imath} Q_{\imath}^2$. A frame carries a coordinate, not a metric. The minus of the material sector is not a metric: it is $i^2=-1$ in $Q_t=i q'_t$, made once on the time.
@@ -89,6 +89,54 @@ The physical corpus writes labels of its own. $\mathrm{orb}$ on the orbital part
 Six codes separate two spellings. $\mathrm{rgs}$, $\mathrm{tpl}$, $\mathrm{prm}$, $\mathrm{dfc}$, $\mathrm{obf}$, $\mathrm{adg}$, each separating the rarer of two words that share three letters — regularised from regular, topological from top, perimeter from periodic, defective from defining, orbifold from orbital, adjugate from adjoint. A code is a label and stands low with the rest, on the object it qualifies: $h_{\mathrm{tpl}}$ the topological entropy.
 
 The twelve algebraic structures carry no code at all. A product is written by its two slots and the conjugation each one carries, $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, and the operator names the structure on its own.
+
+## The Reserved Letter λ
+
+**The letter λ carries the wavelength, and nothing else.** It is written in the three forms of *Physics Units and Common Elements Conventions*, $\lambda_m$, $\lambda_{\Phi}$ and $\lambda_t$. Two names inherited from other programmes keep it: the Gell–Mann matrices $\lambda_a$ and the Wolfenstein parameter $\lambda$ of the CKM matrix. The two-component twistor column keeps it too, $M=\lambda\bar\lambda^{\mathsf T}$ with $\lambda\in\mathbb{C}^{2}$, because that object is a spinor and not a scalar.
+
+**The eigenvalue letter is the eta.** The spectrum is written $\eta$, $\eta_\pm$, $\eta_{1,2}$, $\eta_1\dots\eta_N$, $\eta_i$, $\eta_j$ or $\eta_n$ according to how many there are, the characteristic equation is $\eta^{2}-2Q_t\eta+N=0$, and the conjugate eigenvalue is $\bar\eta$. A dummy eigenvalue in a counting statement is $\eta$, as in "$\eta$ is an eigenvalue of $\tilde Q$ if and only if $\tilde Q-\eta e_t$ is not invertible". A spectrum still labelled $\lambda_1\dots\lambda_N$, $\lambda_i$ or $\lambda_n$ is a residue, not a convention: those are read as $\eta$ on sight. Every other scalar these articles once wrote with η carries a letter of its own, in the table below.
+
+**The factor letter is the digamma.** A scalar that multiplies a field or an element is written $\digamma$ with a subscript that names its sense, the shape the corpus already uses for a coefficient, $\digamma_{\mathrm{kin}}$ and $\digamma_{\mathrm{blt}}$. Four senses are fixed.
+
+- The gauge factor is $\digamma_{\mathrm{gau}}$: the central unit element that multiplies a field, $\tilde\Xi\mapsto\digamma_{\mathrm{gau}}\tilde\Xi$. It is the exponential of the gauge angle, $\digamma_{\mathrm{gau}}=\exp(i\theta_{\mathrm{gau}})$, and the angle is written $\theta$ with a long subscript and never as the factor.
+- The rescaling factor is $\digamma_{\mathrm{cfm}}$: the conformal factor of the metric, $g_{\imath\jmath}\mapsto\digamma_{\mathrm{cfm}}^{2}g_{\imath\jmath}$; the dilation of an element, $\tilde Q\mapsto\digamma_{\mathrm{cfm}}\tilde Q$; and any free scale of a solution.
+- The mixture weight of a convex combination is $\digamma_{\mathrm{mix}}$, as in $\digamma_{\mathrm{mix}}\vec a+(1-\digamma_{\mathrm{mix}})\vec b$.
+- The Lyapunov exponent is $\varkappa_{\mathrm{lyp}}$, with its direction as an argument, $\varkappa_{\mathrm{lyp}}(v)$.
+
+**What the letter η used to carry.** The letter η is retired from every scalar sense and kept for the spectrum. The replacement is fixed.
+
+| sense | letter |
+|---|---|
+| eigenvalues, spectrum | $\eta_\pm$, $\eta_{1,2}$ |
+| indefinite form, $\langle\tilde\Xi,\eta\tilde\Xi\rangle$, the $\eta$-norm | $\varrho_{\mathrm{ifm}}$ |
+| transposition, $\tilde X\mapsto\tilde X\vec e_x$ | $\varsigma_{\mathrm{trp}}$ |
+| charge, time and parity conjugations | $\varsigma_{\mathrm{cjg}}$, $\varsigma_{\mathrm{tmn}}$, $\varsigma_{\mathrm{pty}}$ |
+| support map, $\mathrm{spt}$ | $\varsigma_{\mathrm{spt}}$ |
+| Grassmann sources in a functional integral | $\varsigma_{\mathrm{grs}}$ |
+| shear viscosity | $\digamma_{\mathrm{vis}}$ |
+| Sommerfeld parameter of the Coulomb problem | $\digamma_{\mathrm{smt}}$ |
+| Wolfenstein $\bar\eta$ | $\digamma_{\mathrm{wlf}}$ |
+| the $\eta$ and $\eta'$ mesons | $\digamma_{\mathrm{mes}}$ |
+| Rindler time and rapidity | $\upsilon_{\mathrm{rnd}}$, $\upsilon_{\mathrm{rpd}}$ |
+| baryon asymmetry | $\digamma_{\mathrm{bau}}$ |
+| magnetic diffusivity | $\digamma_{\mathrm{dif}}$ |
+| the eta invariant | $\varsigma_{\mathrm{aPS}}$ |
+| 't Hooft symbols | $\varsigma_{\mathrm{thf},\imath\jmath a}$ |
+| the spacetime array | $\delta_{\imath\jmath}$ |
+| the scale on an idempotent, $B^{2}(\digamma_{\mathrm{scl}}\tilde\Pi_{\mathrm{id},+})$ | $\digamma_{\mathrm{scl}}$ |
+| the helicity operator, $\vec u_p\cdot\vec S$ | $\digamma_{\mathrm{hlc}}$ |
+| the mass-splitting entry of a chiral family, $\mathcal{D}(\digamma_{\mathrm{mss}})$ | $\digamma_{\mathrm{mss}}$ |
+| the Yukawa coupling of a generation | $\digamma_{\mathrm{yuk},i}$ |
+| the coefficients of a Bell-basis expansion | $\digamma_{\mathrm{bll},0\dots3}$ |
+| the entries of a Lyapunov spectrum, ordered | $\varkappa_{\mathrm{lyp},1}\ge\varkappa_{\mathrm{lyp},2}\ge\cdots$ |
+| a placeholder index name in a tuple | $\upsilon_{\mathrm{idx},1\dots3}$ |
+| a family of idempotents, parameterised | $\tilde\Pi_{\mathrm{id}}(\eta)$ |
+
+**The indexed form of λ is gone.** Every indexed λ that named a spectrum is now η, and every λ that named a scale or an operator is now a digamma with a long subscript. The letter λ is left with the wavelength, the Gell–Mann matrices, the Wolfenstein parameter and the twistor column, and nothing else.
+
+**The italic $\varphi$ and $\psi$ are not available for a scalar.** They are the material and the informational sector, and a sector is written as a subscript, $\tilde\Xi_\Phi$ and $\tilde\Xi_\Psi$, never as a bare scalar in a display. A phi or a psi standing alone in a formula is a defect.
+
+**A scalar with no name yet takes the same shape.** It takes $\digamma$ with a subscript that states its sense, and the subscript is written even when the sense seems obvious from the surrounding line. Two other letters are already committed and stay: $\iota$ is the abstract homomorphism $\iota_{\mathrm{Cl}}$, and $\varsigma$ alone is the second-slot conjugation, $\varsigma_\imath$.
 
 ## The Subscripts
 

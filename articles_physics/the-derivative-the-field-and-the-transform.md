@@ -42,7 +42,7 @@ $$
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | the metric structure of $\mathbb{B}$, limits and continuity, the two obstructions to differentiability, functions on a four-dimensional subspace, the gradient and its conjugate, the d'Alembertian and the convective derivative, the relation to Fueter and Clifford analysis | [Biquaternion Analysis](../articles_maths/biquaternion-analysis.html) |
-| the d'Alembertian as the norm of the gradient, the two senses of a first-order root, the Clifford relation, the minimal carrier $\mathbb{C}^{4}$, the three generators inside $\mathbb{B}$, the regular module and the two-sided generators, the unshifted and the shifted root, $\det\mathsf D_\imath=(\Box_\Phi-\lambda)^2$ | [The First-Order Root of the Biquaternion D'Alembertian](../articles_maths/the-first-order-root-of-the-biquaternion-d-alembertian.html) |
+| the d'Alembertian as the norm of the gradient, the two senses of a first-order root, the Clifford relation, the minimal carrier $\mathbb{C}^{4}$, the three generators inside $\mathbb{B}$, the regular module and the two-sided generators, the unshifted and the shifted root, $\det\mathsf D_\imath=(\Box_\Phi-\eta)^2$ | [The First-Order Root of the Biquaternion D'Alembertian](../articles_maths/the-first-order-root-of-the-biquaternion-d-alembertian.html) |
 | regularity as single-plane holomorphy against hypercomplex regularity, the system of regularity equations, examples, harmonicity, the Cauchy formula where it holds, the shifted operator and its three branches, the splitting of the Helmholtz null set by the differential projectors | [Biquaternion Regular Functions](../articles_maths/biquaternion-regular-functions.html) |
 | the three definitions of the derivative, the rank-one criterion, the identity $\det\mathsf D\Sigma=\tfrac14N(\vec\nabla_\Phi\Sigma)$, the complex eikonal, the general solution through one twistor coordinate, the linear sector | [The Two-Sided Derivative over the Biquaternion Algebra](../articles_maths/the-two-sided-derivative-over-the-biquaternion-algebra.html) |
 | the Fueter operator and its conjugate, the factorisation of the Laplacian, the componentwise system, harmonicity and the mean value, the axial extension and the affine kernel, the Fueter–Sce theorem, the power series and the Fischer decomposition | [Fueter Theory for Biquaternions](../articles_maths/fueter-theory-for-biquaternions.html) |
@@ -60,7 +60,7 @@ $$
 
 **The characteristic set.** The symbol of the gradient is $S(\xi)=\sum_{\imath}\xi_{\imath}\mathsf M_2(e_{\imath})$, and $\det S(\xi)=\sum_{\imath}\xi_{\imath}^{2}=N(\xi)$. The characteristic set is the zero-divisor cone, so the operator is elliptic at a real covector exactly when the covector is not null.
 
-**The root.** $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ has no first-order root by left multiplication alone. The root exists in the operator algebra of the regular module, $\mathsf D^{2}=\Box_\Phi I$, and a shift by the pseudoscalar gives $\mathsf D_\imath=\mathsf D+c\gamma_5$ with $c^{2}=-\lambda$ and $\det\mathsf D_\imath=(\Box_\Phi-\lambda)^{2}$.
+**The root.** $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ has no first-order root by left multiplication alone. The root exists in the operator algebra of the regular module, $\mathsf D^{2}=\Box_\Phi I$, and a shift by the pseudoscalar gives $\mathsf D_\imath=\mathsf D+c\gamma_5$ with $c^{2}=-\eta$ and $\det\mathsf D_\imath=(\Box_\Phi-\eta)^{2}$.
 
 **The regular field.** $\tilde\nabla_\Phi\tilde\Xi=0$ is four equations in the four components. Left and right regularity differ only in the sign of the curl term. Every regular field is harmonic, hence real-analytic, and satisfies the mean value property.
 
@@ -143,8 +143,8 @@ satisfy the Clifford relation. The resulting operator $\mathsf D$ is two-sided, 
 **The shift, and the mass.** A parameter is introduced by adding the pseudoscalar,
 
 $$
-\mathsf D_\imath=\mathsf D+c\gamma_5,\qquad c^{2}=-\lambda,\qquad
-\det\mathsf D_\imath=(\Box_\Phi-\lambda)^{2},
+\mathsf D_\imath=\mathsf D+c\gamma_5,\qquad c^{2}=-\eta,\qquad
+\det\mathsf D_\imath=(\Box_\Phi-\eta)^{2},
 $$
 
 and the equation $\mathsf D_\imath\psi=0$ has the chiral form
@@ -347,7 +347,7 @@ $$
 $$
 \tilde Q_{\log}=\mu_+\tilde\Pi_{\mathrm{id},++}\mu_-\tilde\Pi_{\mathrm{id},-},
 \qquad
-\mu_\pm=\operatorname{Log}\lambda_\pm+2\pi ik_\pm,
+\mu_\pm=\operatorname{Log}\eta_{\pm}+2\pi ik_\pm,
 \qquad
 \tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\mp i\vec U),
 $$
@@ -378,7 +378,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 ### III.1.c — The Root Is the Propagation
 
-**The object.** A first-order operator $\mathsf D$ with $\mathsf D^{2}=\Box_\Phi I$, and its shifted form $\mathsf D_\imath=\mathsf D+c\gamma_5$ with $\det\mathsf D_\imath=(\Box_\Phi-\lambda)^{2}$.
+**The object.** A first-order operator $\mathsf D$ with $\mathsf D^{2}=\Box_\Phi I$, and its shifted form $\mathsf D_\imath=\mathsf D+c\gamma_5$ with $\det\mathsf D_\imath=(\Box_\Phi-\eta)^{2}$.
 
 **The warrant.** No root exists by left multiplication alone, because a minimal left ideal has complex dimension two and the Clifford relation needs four. The root exists in the operator algebra of the regular module, built from the two ideals, the exchange $u$ and the grading $G$, and its shifted form has the chiral rows $D_+\psi_+=c\psi_-$ and $D_-\psi_-=-c\psi_+$.
 
@@ -520,7 +520,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 | the Cauchy formula | $\tilde\Xi(\tilde R_0)$ | boundary integral minus volume integral against $G_{\mathrm{fn}}$ |
 | the residue | $\mathrm{Res}$ | the boundary integral at an isolated singularity |
 | the first-order root | $\mathsf D$ | two-sided, with $\mathsf D^{2}=\Box_\Phi I$ |
-| the shift | $c$ | $\mathsf D_\imath=\mathsf D+c\gamma_5$, $c^{2}=-\lambda$ |
+| the shift | $c$ | $\mathsf D_\imath=\mathsf D+c\gamma_5$, $c^{2}=-\eta$ |
 | the pseudoscalar | $\gamma_5$ | the two-sided generator of the chirality |
 | the chiral halves | $\psi_\pm$ | the two minimal left ideals $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ |
 | the group of invertibles | $\mathbb{B}^{\times}$ | real dimension $8$ |
@@ -529,7 +529,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 | the $*$-unitary group | $\mathrm{U}(2)$ | $S^{3}\cdot\mathrm{U}(1)/\{\pm(1,1)\}$ |
 | the exponential | $\exp$ | the series and its closed form; the transform of this entry |
 | the complex norm | $B$ | $\sqrt{Q_x^{2}+Q_y^{2}+Q_z^{2}}$, the discriminant of $\mathbb{C}[\tilde Q]$ |
-| the eigenvalues | $\lambda_\pm$ | $Q_t\pm iB$ in the oscillatory regime |
+| the eigenvalues | $\eta_{\pm}$ | $Q_t\pm iB$ in the oscillatory regime |
 | the material sector | $\mathbb{B}_{\Phi}$ | inertia $(3,1)$, hyperbolic |
 | the informational sector | $\mathbb{B}_{\Psi}$ | inertia $(1,3)$, hyperbolic |
 | the quaternion subspace | $\mathbb{B}_{H}$ | inertia $(4,0)$, elliptic |

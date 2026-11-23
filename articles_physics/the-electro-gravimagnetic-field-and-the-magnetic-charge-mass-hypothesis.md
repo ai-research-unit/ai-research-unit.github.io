@@ -566,16 +566,16 @@ $$
 
 together with the two transverse relations. The normal (longitudinal) components of the electric and magnetic jumps are therefore exactly the jumps of the two real parts of the scalar field; when $[\alpha]=0$ both vanish and the fronts are transverse, which is the classical Maxwell case. The source reads this as the statement that the scalar field "describes the property of attraction–resistance of the EGM-field to the movement of external charges and currents", and the corpus keeps the name **attraction–resistance field** for it. This is the mirror of the $\tilde J_{\Phi,\mathrm{eg}}$-fronts: those are longitudinal when the charge jump is non-zero, and the field fronts are longitudinal when the scalar-field jump is non-zero.
 
-At the level of smooth solutions the programme constructs the corresponding waves from scalar plane potentials. Take $\theta_{\mathrm{rpd},j} = f(\eta)$ with $\eta = (2\pi\vec\nu_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega\tau$ and $\|2\pi\vec\nu_\Phi\| = \omega$, and $A = D^-\theta_{\mathrm{rpd},j}$; the four modes are
+At the level of smooth solutions the programme constructs the corresponding waves from scalar plane potentials. Take $\theta_{\mathrm{rpd},j} = f(\upsilon_{\mathrm{rpd}})$ with $\upsilon_{\mathrm{rpd}} = (2\pi\vec\nu_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega\tau$ and $\|2\pi\vec\nu_\Phi\| = \omega$, and $A = D^-\theta_{\mathrm{rpd},j}$; the four modes are
 
 | Mode | Potential | $(\vec E,\vec\nu_\Phi)$ | $(\vec H,\vec\nu_\Phi)$ |
 |---|---|---|---|
-| Longitudinal magnetic | $f$ | $0$ | $-\|\vec\nu_\Phi\|^2 \frac{df}{d\eta}/\sqrt{\mu}$ |
-| Longitudinal electric | $if$ | $\|\vec\nu_\Phi\|^2 \frac{df}{d\eta}/\sqrt{\epsilon}$ | $0$ |
-| Tesla's wave | $f \vec e_x$ | $-\omega k_1 \frac{df}{d\eta}/\sqrt{\epsilon}$ | $0$ |
-| Torsion wave | $if \vec e_x$ | $0$ | $-\omega k_1 \frac{df}{d\eta}/\sqrt{\mu}$ |
+| Longitudinal magnetic | $f$ | $0$ | $-\|\vec\nu_\Phi\|^2 \frac{df}{d\upsilon_{\mathrm{rpd}}}/\sqrt{\mu}$ |
+| Longitudinal electric | $if$ | $\|\vec\nu_\Phi\|^2 \frac{df}{d\upsilon_{\mathrm{rpd}}}/\sqrt{\epsilon}$ | $0$ |
+| Tesla's wave | $f \vec e_x$ | $-\omega k_1 \frac{df}{d\upsilon_{\mathrm{rpd}}}/\sqrt{\epsilon}$ | $0$ |
+| Torsion wave | $if \vec e_x$ | $0$ | $-\omega k_1 \frac{df}{d\upsilon_{\mathrm{rpd}}}/\sqrt{\mu}$ |
 
-the first two being pure longitudinal electric and magnetic waves, and the last two the modes the source names after Etkin. Applying $D^-$ to the potential gives the field directly; the construction was checked, and the longitudinal properties of all four modes follow from it with residuals at machine precision, as do the exact components of the Tesla mode. The source attributes the physical longitudinal electromagnetic waves to Hvorostenko and to Etkin and offers the modes as their EGM explanation; the corpus records the construction and the attribution. One printed result does not reproduce: the torsion-mode components in the source disagree with the source's own construction in one sign and one omitted term, while the other three modes reproduce exactly, so a reader returning to the PDF should confirm that one line. The exact derived form is $A = \frac{df}{d\eta}(-k_1 - i\omega \vec e_x + k_3 \vec e_y - k_2 \vec e_z)$.
+the first two being pure longitudinal electric and magnetic waves, and the last two the modes the source names after Etkin. Applying $D^-$ to the potential gives the field directly; the construction was checked, and the longitudinal properties of all four modes follow from it with residuals at machine precision, as do the exact components of the Tesla mode. The source attributes the physical longitudinal electromagnetic waves to Hvorostenko and to Etkin and offers the modes as their EGM explanation; the corpus records the construction and the attribution. One printed result does not reproduce: the torsion-mode components in the source disagree with the source's own construction in one sign and one omitted term, while the other three modes reproduce exactly, so a reader returning to the PDF should confirm that one line. The exact derived form is $A = \frac{df}{d\upsilon_{\mathrm{rpd}}}(-k_1 - i\omega \vec e_x + k_3 \vec e_y - k_2 \vec e_z)$.
 
 ## The Programme's Empirical Claims
 

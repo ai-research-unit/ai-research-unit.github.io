@@ -46,10 +46,10 @@ The Lorentz action on $S$ is the spin-$\tfrac12$ representation, and a rotor $\t
 
 First, the action factors through the double cover: the rotor through $2\pi$ is $-e_t$ (*Norm and Pairing Conventions*, §*The Word and Its Factors*), and $-e_t$ multiplies every element by $-1$. This is the module-level statement of the covering and is computed in the spin–statistics companion.
 
-Second, the action preserves the antisymmetric product up to the quaternionic norm of the rotor. For L parts $\zeta,\eta$,
+Second, the action preserves the antisymmetric product up to the quaternionic norm of the rotor. For L parts $\zeta,\varsigma_{\mathrm{lp}}$,
 
 $$
-(\tilde U\zeta)\wedge(\tilde U\eta)=\langle\tilde U\rangle_{\natural}\;\zeta\wedge\eta ,
+(\tilde U\zeta)\wedge(\tilde U\varsigma_{\mathrm{lp}})=\langle\tilde U\rangle_{\natural}\;\zeta\wedge\varsigma_{\mathrm{lp}} ,
 $$
 
 which is a derived form: the factor is the quaternionic norm of the rotor, and a unit element has quaternionic norm one (*Norm and Pairing Conventions*, §*The Four Algebraic Norms and the Unitary Convention*). For every Lorentz rotor, therefore, the two-particle state is carried to itself, and it is this, and not a transpose identity of an array, that makes the *antisymmetric* power of $S$ a singlet and the two-particle state below Lorentz invariant. The Hermitian form, by contrast, is invariant only on the compact subgroup, as the one-particle article states; a boost does not preserve it, and the invariant bilinears of the space are the antisymmetric products.
@@ -78,10 +78,10 @@ $$
 
 and this is the Fock space of the two spin states of one momentum — two modes in the parent's counting, whose one-particle space is two-dimensional. The vacuum is the unit of the exterior algebra; the one-particle states are $S$ itself; the two-particle state is the top power.
 
-The top power is read inside the algebra, and the reading is a derived form. For L parts $\zeta,\eta$ the exterior product is the algebra's own antisymmetric product,
+The top power is read inside the algebra, and the reading is a derived form. For L parts $\zeta,\varsigma_{\mathrm{lp}}$ the exterior product is the algebra's own antisymmetric product,
 
 $$
-\zeta\wedge\eta=\tfrac12\bigl(\zeta\eta-\eta\zeta\bigr),
+\zeta\wedge\varsigma_{\mathrm{lp}}=\tfrac12\bigl(\zeta\varsigma_{\mathrm{lp}}-\varsigma_{\mathrm{lp}}\zeta\bigr),
 $$
 
 which is again an L part, because a product takes the letter of its right factor, and which is pure, because the scalar part of a product is symmetric. The antisymmetric products of L parts are therefore elements of $\mathbb{B}$, and they span one complex dimension: the space $S$ is two-dimensional and the pairing is antisymmetric, so all its values are multiples of one nonzero value. That line of pure L parts is the top power read inside the algebra, and the singlet of the next section is that line.
@@ -132,7 +132,7 @@ $$
 
 where $\Lambda^n\rho$ denotes the induced action on $\Lambda^nS$, and the reason this is the natural action is that the exterior algebra is a functor: it converts each one-particle representation into the sequence of its antisymmetric powers, preserving direct sums and duals. (It does not turn a tensor product into a tensor product; only the direct sum has the tensor-product rule.)
 
-The decomposition is computed by symmetry. On $S$ the spin generators are the algebra elements $\tilde S_{\Psi,i}=\frac{h}{4\pi}i\vec e_i$, whose action is $\zeta\mapsto\tilde S_{\Psi,i}\zeta$, and the induced operator $\tilde S_{\Psi,\mathrm{fop},i}=\Gamma(\tilde S_{\Psi,i})$ acts as $0$ on the vacuum, as that same action on $\Lambda^1S=S$, and as the induced scalar action on $\Lambda^2S$. The top power is annihilated by every $\tilde S_{\Psi,\mathrm{fop},i}$: the rotor $\exp(\theta\,\vec u\cdot\tilde S_{\Psi})$ is a unit element at every $\theta$, so by the antisymmetric-product identity of §*The Lorentz Action and the Covering Sign* it carries $\zeta\wedge\eta$ to itself, and differentiating at $\theta=0$ gives $\tilde S_{\Psi,\mathrm{fop},i}(\zeta\wedge\eta)=0$. The top power is therefore a Lorentz **singlet**, and the vacuum is the other. On $\Lambda^1S$ the quadratic Casimir is the one-particle Casimir, $s(s+1)=\tfrac34$ in units of $\frac{h}{2\pi}$. The eigenvalues of $\tilde S_{\Psi,\mathrm{fop}}^{2}=\sum_i\tilde S_{\Psi,\mathrm{fop},i}^{2}$ on $\mathcal{F}$, in the occupation basis, are
+The decomposition is computed by symmetry. On $S$ the spin generators are the algebra elements $\tilde S_{\Psi,i}=\frac{h}{4\pi}i\vec e_i$, whose action is $\zeta\mapsto\tilde S_{\Psi,i}\zeta$, and the induced operator $\tilde S_{\Psi,\mathrm{fop},i}=\Gamma(\tilde S_{\Psi,i})$ acts as $0$ on the vacuum, as that same action on $\Lambda^1S=S$, and as the induced scalar action on $\Lambda^2S$. The top power is annihilated by every $\tilde S_{\Psi,\mathrm{fop},i}$: the rotor $\exp(\theta\,\vec u\cdot\tilde S_{\Psi})$ is a unit element at every $\theta$, so by the antisymmetric-product identity of §*The Lorentz Action and the Covering Sign* it carries $\zeta\wedge\varsigma_{\mathrm{lp}}$ to itself, and differentiating at $\theta=0$ gives $\tilde S_{\Psi,\mathrm{fop},i}(\zeta\wedge\varsigma_{\mathrm{lp}})=0$. The top power is therefore a Lorentz **singlet**, and the vacuum is the other. On $\Lambda^1S$ the quadratic Casimir is the one-particle Casimir, $s(s+1)=\tfrac34$ in units of $\frac{h}{2\pi}$. The eigenvalues of $\tilde S_{\Psi,\mathrm{fop}}^{2}=\sum_i\tilde S_{\Psi,\mathrm{fop},i}^{2}$ on $\mathcal{F}$, in the occupation basis, are
 
 $$
 \{0,\tfrac34,\tfrac34,0\},
@@ -317,7 +317,7 @@ The operators generated by the mode operators fill the matrix algebra of the Foc
 |---|---|
 | $S$ | One-particle space: the L parts of $\mathbb{B}$, of complex dimension two |
 | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The Dirac field, an element of $\mathbb{B}$, and its two values |
-| $\zeta\wedge\eta$ | The antisymmetric product of *Product and Form Conventions* read on $S$; its values are the pure L parts, one complex dimension |
+| $\zeta\wedge\varsigma_{\mathrm{lp}}$ | The antisymmetric product of *Product and Form Conventions* read on $S$; its values are the pure L parts, one complex dimension |
 | $\langle\cdot,\cdot\rangle_{*}$ | The Hermitian form, restricted to $S$; positive definite, and the Hilbert-space form of the construction |
 | $\langle\tilde Q\rangle_{\natural}$ | The quaternionic norm on $\mathbb{B}$; it vanishes on every L part and does not descend to $S$ |
 | $\mathcal{F}=\Lambda S$ | Fermionic Fock space |

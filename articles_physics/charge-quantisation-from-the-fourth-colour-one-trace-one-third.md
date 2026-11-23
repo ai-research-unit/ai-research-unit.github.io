@@ -132,7 +132,7 @@ $$
 
 **One warning about the symbols, because the equation is written twice in the literature and the two writings differ by a sign.** The relation $3q+\ell=0$ holds on the $B-L$ eigenvalues, with $q=+\tfrac13$ and $\ell=-1$. On electric charges it reads $3Q_d=Q_e$, not $3Q_d+Q_e=0$, and the passage between the two is one line: the down quark and the electron both carry $T_{3}=-\tfrac12$, so $Q=T_{3}+\tfrac12(B-L)$ gives $Q_d=-\tfrac12+\tfrac16=-\tfrac13$ and $Q_e=-\tfrac12-\tfrac12=-1$, whence $3Q_d-Q_e=0$. Both statements are true. A reader who transposes the additive form to electric charges gets $3\bigl(-\tfrac13\bigr)+(-1)=-2$ instead of $0$, and goes looking for an error in a table that has none.
 
-**The check that the four forms agree.** Each is a rewriting of $\sum_i\lambda_i=0$ with $\{\lambda_i\}=\{\tfrac13,\tfrac13,\tfrac13,-1\}$. Agreement is therefore not a matter of computation but of notation, and the corpus's value is that its own $\mathfrak{su}(4)$ display already is one of the four.
+**The check that the four forms agree.** Each is a rewriting of $\sum_i\eta_i=0$ with $\{\eta_i\}=\{\tfrac13,\tfrac13,\tfrac13,-1\}$. Agreement is therefore not a matter of computation but of notation, and the corpus's value is that its own $\mathfrak{su}(4)$ display already is one of the four.
 
 ## Where the Twenty-One Generators Go
 

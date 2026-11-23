@@ -10,7 +10,7 @@ The claim is short. **The even half is the biquaternion algebra itself.** Its ro
 
 The article runs as follows. §*One Operator, Two Readings* separates the basis operator read as a point from the basis operator read as an operator. §*The Two Halves by Reflection Count* states the split and ties it to the parity of the number of reflections. §*The Frame Operator and the Hermitian Sector* shows that the sign vector of the basis operators is the biquaternion norm of the Hermitian sector, which is what makes the mostly-minus metric of the series a statement about the objects rather than a choice. §*Conjugation by the Frame Operator Is the Bar* shows that conjugation by the frame basis operator is the conjugation of the coefficients. §*The Spaces of Rotations and of Reflections* and §*How Many Reflections?* describe the two sets and count the reflections a transformation needs. §*The Two Parts and the Reflection* draws the consequence for the letter, and §*Why Three Generators Cannot Carry the Letter* shows that the timelike generator is what makes the letter exist.
 
-The conventions are the series'. The algebra, the invertibles, the sectors and the metric are those of *Algebra and Element Conventions* and *Frame and Metric Conventions*; the basis operators and their multiplication are those of *Matrix Representations Conventions*, and the comparison of the biquaternion algebra with the even half is the dictionary of the same article. None of them is restated here. A basis operator enters by its two multipliers, and the short names used later — the frame basis operator, the chirality basis operator, $\omega$, the three $\eta$ factors — are bound to those multipliers where they are introduced; no basis operator is named without its product being written at least once. The derivatives are the series' gradient, written once here and never as a basis operator,
+The conventions are the series'. The algebra, the invertibles, the sectors and the metric are those of *Algebra and Element Conventions* and *Frame and Metric Conventions*; the basis operators and their multiplication are those of *Matrix Representations Conventions*, and the comparison of the biquaternion algebra with the even half is the dictionary of the same article. None of them is restated here. A basis operator enters by its two multipliers, and the short names used later — the frame basis operator, the chirality basis operator, $\omega$, the three $\varsigma_{\mathrm{fct}}$ factors — are bound to those multipliers where they are introduced; no basis operator is named without its product being written at least once. The derivatives are the series' gradient, written once here and never as a basis operator,
 $$
 \tilde\nabla_\Phi=\sum_{\imath\in\{t,x,y,z\}}e_{\imath}\frac{\partial}{\partial R_{\imath}},\qquad
 (\tilde\nabla_\Phi)^{\natural}=\sum_{\imath\in\{t,x,y,z\}}\varepsilon_{\imath} e_{\imath}\frac{\partial}{\partial R_{\imath}},\qquad
@@ -141,23 +141,23 @@ Both are reflections, with determinant $-1$; the identity component is the even 
 
 **The anti-linear case.** The rule just stated — even basis operators act with determinant $+1$, odd ones with $-1$ — holds for the **linear** action. The discrete operations of the Dirac field are not all linear: $C$ and $T$ are **anti-linear**, and each carries an internal factor. *The CPT Theorem in Biquaternionic Form* fixes the three,
 $$
-\eta_C=-L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\qquad \eta_P=iR_{\mathrm{axf},\vec e_x},\qquad \eta_T=-L_{\mathrm{axf},\vec e_y} ,
+\varsigma_{\mathrm{cjg}}=-L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\qquad \varsigma_{\mathrm{pty}}=iR_{\mathrm{axf},\vec e_x},\qquad \varsigma_{\mathrm{tmn}}=-L_{\mathrm{axf},\vec e_y} ,
 $$
-acting as $C[\tilde{Ξ}]=\eta_C\tilde{Ξ}^*$, $P[\tilde{Ξ}]=\eta_P\tilde{Ξ}(-\vec r)$ and $T[\tilde{Ξ}]=\eta_T\tilde{Ξ}^*(-r'_t)$, with $\tilde{Ξ}^*$ the Hermitian conjugate. The internal factor does not decide the determinant by itself:
+acting as $C[\tilde{Ξ}]=\varsigma_{\mathrm{cjg}}\tilde{Ξ}^*$, $P[\tilde{Ξ}]=\varsigma_{\mathrm{pty}}\tilde{Ξ}(-\vec r)$ and $T[\tilde{Ξ}]=\varsigma_{\mathrm{tmn}}\tilde{Ξ}^*(-r'_t)$, with $\tilde{Ξ}^*$ the Hermitian conjugate. The internal factor does not decide the determinant by itself:
 
 | operation | internal factor | its generator factors | coordinates reversed | the determinant of the image | induced map |
 |---|---|---|---|---|---|
-| $P$ | $\eta_P=iR_{\mathrm{axf},\vec e_x}$, the frame basis operator | odd | $\vec r$ | $-1$ | reflection |
-| $T$ | $\eta_T=-L_{\mathrm{axf},\vec e_y}$ | even | $r'_t$ | $-1$ | reflection |
-| $C$ | $\eta_C=-L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$ | odd | none | $+1$ | proper |
+| $P$ | $\varsigma_{\mathrm{pty}}=iR_{\mathrm{axf},\vec e_x}$, the frame basis operator | odd | $\vec r$ | $-1$ | reflection |
+| $T$ | $\varsigma_{\mathrm{tmn}}=-L_{\mathrm{axf},\vec e_y}$ | even | $r'_t$ | $-1$ | reflection |
+| $C$ | $\varsigma_{\mathrm{cjg}}=-L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$ | odd | none | $+1$ | proper |
 
-$P$ and $T$ each reverse one coordinate and are reflections; $C$ reverses none and is proper. What the parity of the factor decides is not the determinant but the letter, since the letter is read from the chirality basis operator: the odd factors $\eta_C$ and $\eta_P$ exchange the two parts, while the even factor $\eta_T$ keeps them. The composite $CPT$ carries an even factor and preserves the letter, which is the statement of the CPT article.
+$P$ and $T$ each reverse one coordinate and are reflections; $C$ reverses none and is proper. What the parity of the factor decides is not the determinant but the letter, since the letter is read from the chirality basis operator: the odd factors $\varsigma_{\mathrm{cjg}}$ and $\varsigma_{\mathrm{pty}}$ exchange the two parts, while the even factor $\varsigma_{\mathrm{tmn}}$ keeps them. The composite $CPT$ carries an even factor and preserves the letter, which is the statement of the CPT article.
 
 A single rule reproduces the determinant column: the parity of the factor contributes $(-1)^{k}$, with $k$ its number of generator factors, and the anti-linearity another $-1$,
 $$
 \det = (-1)^{k}\,(-1)^{\text{anti}} .
 $$
-It is a bookkeeping statement of an inversion, not a derivation. Its content is negative and worth stating plainly: for a **linear** map the parity is the reflection count, and for an **anti-linear** one it is not — the two columns are offset by one, and the even factor $\eta_T$ is the reflection while the odd factor $\eta_C$ is not.
+It is a bookkeeping statement of an inversion, not a derivation. Its content is negative and worth stating plainly: for a **linear** map the parity is the reflection count, and for an **anti-linear** one it is not — the two columns are offset by one, and the even factor $\varsigma_{\mathrm{tmn}}$ is the reflection while the odd factor $\varsigma_{\mathrm{cjg}}$ is not.
 
 ## How Many Reflections?
 
@@ -252,7 +252,7 @@ The exchange of the two copies is an orientation-reversing operation, which is w
 $$
 \mathsf{P} : (\tfrac12,0) \longleftrightarrow (0,\tfrac12).
 $$
-It is odd in both readings: the trivector $iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$ for the geometric reflection, the internal factor $\eta_P=iR_{\mathrm{axf},\vec e_x}$ for the parity of the Dirac field. Every odd basis operator carries the $R$ part into the $L$ part, so the exchange of the parts is the parity.
+It is odd in both readings: the trivector $iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$ for the geometric reflection, the internal factor $\varsigma_{\mathrm{pty}}=iR_{\mathrm{axf},\vec e_x}$ for the parity of the Dirac field. Every odd basis operator carries the $R$ part into the $L$ part, so the exchange of the parts is the parity.
 
 Parity violation — the statement that the weak interaction couples to one part and not the other — is therefore not an accidental property of the Standard Model but the statement that the interaction distinguishes the two copies of the complexified Lorentz algebra. This is what *Chiral Fermions in the Biquaternion Framework* and *The Neutrino and Majorana Fermions in Biquaternionic Form* develop on the physical side.
 
@@ -319,7 +319,7 @@ The claims of this article, in order.
 | the four conditions | Two-reflection criterion: they are dependent iff $\tilde U_{\mathrm{lor}}$ fixes a plane pointwise |
 | $\det = (-1)^{k}(-1)^{\text{anti}}$ | Reflection parity of a linear or anti-linear map |
 | $\mathsf{P}$ | Parity reflection; the trivector basis operator $iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$; exchanges the two parts |
-| $\eta_P = iR_{\mathrm{axf},\vec e_x}$ | The internal factor of the parity of the Dirac field; odd, so it carries the $R$ part into the $L$ part |
+| $\varsigma_{\mathrm{pty}} = iR_{\mathrm{axf},\vec e_x}$ | The internal factor of the parity of the Dirac field; odd, so it carries the $R$ part into the $L$ part |
 
 ## Further Reading
 

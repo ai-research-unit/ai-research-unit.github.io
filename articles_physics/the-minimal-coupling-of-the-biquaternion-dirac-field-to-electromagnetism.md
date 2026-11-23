@@ -56,7 +56,7 @@ The subscript names one of two components and no more. It belongs to the element
 
 Three facts about the letters are used below. The first two are the convention's own statement, and the third follows from the first.
 
-- **Left multiplication keeps the letter.** For a central scalar $\lambda$, the parts of $\lambda\tilde{Ξ}$ are $\lambda\tilde{Ξ}_{L}$ and $\lambda\tilde{Ξ}_{R}$.
+- **Left multiplication keeps the letter.** For a central scalar $\digamma_{\mathrm{gau}}$, the parts of $\digamma_{\mathrm{gau}}\tilde{Ξ}$ are $\digamma_{\mathrm{gau}}\tilde{Ξ}_{L}$ and $\digamma_{\mathrm{gau}}\tilde{Ξ}_{R}$.
 - **A product takes the letter of its right factor.** In particular the products of the next sections carry the letter of the factor on the right.
 - **The gradient keeps the letter.** The gradient acts by left multiplication by the four units and by differentiating the coefficients, and neither operation moves an element out of its part. Hence the gradient of a field whose $L$ part vanishes has only an $R$ part, and conversely.
 
@@ -79,8 +79,8 @@ is a symmetry of the equation, massive or massless, because a central constant c
 Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
 $$
-\tilde\nabla_\Phi\!\left(\lambda\tilde{Ξ}_{R}\right) = \lambda\,\tilde\nabla_\Phi\tilde{Ξ}_{R}, \qquad
-(\tilde\nabla_\Phi)^{\natural}\!\left(\lambda\tilde{Ξ}_{L}\right) = \lambda\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} .
+\tilde\nabla_\Phi\!\left(\digamma_{\mathrm{gau}}\tilde{Ξ}_{R}\right) = \digamma_{\mathrm{gau}}\,\tilde\nabla_\Phi\tilde{Ξ}_{R}, \qquad
+(\tilde\nabla_\Phi)^{\natural}\!\left(\digamma_{\mathrm{gau}}\tilde{Ξ}_{L}\right) = \digamma_{\mathrm{gau}}\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} .
 $$
 
 One and the same $\lambda$ multiplies both members. The pair therefore scales uniformly, and the mass term, which is linear in the field, is invariant.
@@ -93,7 +93,7 @@ $$
 
 because each member acquires the product $\varsigma\varsigma^{-1} = 1$. The massive pair is not: its two sides acquire $\varsigma$ and $\varsigma^{-1}$, so it is form-invariant only for $\varsigma^2 = 1$, and for a central constant that is $\varsigma = \pm 1$. A local $\varsigma$ fails already in the massless case, because the derivative acts on $\varsigma$ and the two members acquire derivative terms that do not cancel. The mass therefore keeps the common phase and breaks the relative one. Whether the relative one can be gauged is open question 1.
 
-A mass term that *paired the field with its conjugate* would be a different object: $\flat$ is antilinear, $(\lambda\tilde{Ξ})^\flat = \lambda^{*}\tilde{Ξ}^{\flat}$ for a central phase, so such a term would acquire the factor $\exp(2i\theta_{\mathrm{gau}})$ under a local phase and would be form-invariant only for $\lambda = \pm 1$. That obstruction belongs to the real structure and is treated in the companion articles on the neutrino and on the two kinds of mass; it is not a property of the parent's mass term, which pairs $\tilde{Ξ}_{L}$ with $\tilde{Ξ}_{R}$.
+A mass term that *paired the field with its conjugate* would be a different object: $\flat$ is antilinear, $(\digamma_{\mathrm{gau}}\tilde{Ξ})^\flat = \digamma_{\mathrm{gau}}^{*}\tilde{Ξ}^{\flat}$ for a central phase, so such a term would acquire the factor $\exp(2i\theta_{\mathrm{gau}})$ under a local phase and would be form-invariant only for $\digamma_{\mathrm{gau}} = \pm 1$. That obstruction belongs to the real structure and is treated in the companion articles on the neutrino and on the two kinds of mass; it is not a property of the parent's mass term, which pairs $\tilde{Ξ}_{L}$ with $\tilde{Ξ}_{R}$.
 
 The **charge** $ϙ$ is the coupling constant of the field, introduced by the gauge principle. It is a parameter: the algebra does not fix its value, its sign, or its quantization. For the electron $ϙ = -e$; the value and the sign are inserted, as *The Electron in Biquaternionic Form* records.
 
@@ -153,13 +153,13 @@ $$
 
 since $\tilde{A}_{\Phi}^{*} = -\tilde{A}_{\Phi}$ on $\mathbb{B}_{\Phi}$. The factor $i$ is what converts the anti-Hermitian connection into a Hermitian coupling. This is inherited, not rederived.
 
-**Sign convention.** The gauge principle article fixes the pair of signs $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ and $\tilde\nabla_{\mathrm{gco},\Phi} = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ with the phase $\lambda = \exp(i\theta_{\mathrm{gau}})$, and its companion records that the two must be kept together. The open question in the parent Dirac article writes the standard physics convention $\partial/\partial R_{\imath} \to \partial/\partial R_{\imath} -\frac{2\pi iϙA_{\imath}}{h}$, with the opposite sign. That is the same coupling with the opposite sign of $ϙ$ (or of $\tilde{A}_{\Phi}$); this article inherits the gauge principle's sign and does not silently flip it. The covariance checks below use the inherited pair.
+**Sign convention.** The gauge principle article fixes the pair of signs $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ and $\tilde\nabla_{\mathrm{gco},\Phi} = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ with the phase $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$, and its companion records that the two must be kept together. The open question in the parent Dirac article writes the standard physics convention $\partial/\partial R_{\imath} \to \partial/\partial R_{\imath} -\frac{2\pi iϙA_{\imath}}{h}$, with the opposite sign. That is the same coupling with the opposite sign of $ϙ$ (or of $\tilde{A}_{\Phi}$); this article inherits the gauge principle's sign and does not silently flip it. The covariance checks below use the inherited pair.
 
 Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
 
 **Left action, and the mirror read through $\natural$.** Every coupling used in this article acts on the left. The mirror construction — derivative and connection both inserted on the right — is not a second prescription: it is the same one applied to the conjugate field. The renaming theorem of *Operator and Calculus Conventions*, §*The Two Sides and the Renaming Theorem*, gives $(\tilde{Ξ}\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} = (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}^{\natural}$; the right-action equation on $\tilde{Ξ}$ is the left-action equation on $\tilde{Ξ}^{\natural}$, with the operator $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ that the second member of the pair already carries. Nothing needs a right arrow: the side is given by position, and $\natural$ is what changes it.
 
-Both constructions are gauge covariant, and they must be, being the same construction seen through $\natural$. What is **not** covariant is the mixed combination — the left gradient with the connection inserted on the right — because there the two $\tilde\nabla_\Phi\Gamma$ terms do not cancel: the chain rule brings $\tilde\nabla_\Phi\Gamma$ in from the left and the gauge shift removes it from the right, and the two differ by a commutator. Applying the mixed operator to $\lambda\tilde{Ξ}$ and subtracting $\lambda$ times the mixed operator applied to $\tilde{Ξ}$ leaves
+Both constructions are gauge covariant, and they must be, being the same construction seen through $\natural$. What is **not** covariant is the mixed combination — the left gradient with the connection inserted on the right — because there the two $\tilde\nabla_\Phi\Gamma$ terms do not cancel: the chain rule brings $\tilde\nabla_\Phi\Gamma$ in from the left and the gauge shift removes it from the right, and the two differ by a commutator. Applying the mixed operator to $\digamma_{\mathrm{gau}}\tilde{Ξ}$ and subtracting $\digamma_{\mathrm{gau}}$ times the mixed operator applied to $\tilde{Ξ}$ leaves
 
 $$\frac{2\pi i\,ϙ}{h}\,\lambda\left[\tilde\nabla_\Phi\Gamma,\ \tilde{Ξ}\right],
 $$
@@ -170,13 +170,13 @@ which vanishes for every field only when $\tilde\nabla_\Phi\Gamma$ is central, t
 
 Two forms are in circulation on the algebra, and the prescription of this article attaches to the first.
 
-**The pair.** The field is an element and $\lambda$ is one central element multiplying it from the left. Then the pair
+**The pair.** The field is an element and $\digamma_{\mathrm{gau}}$ is one central element multiplying it from the left. Then the pair
 
 $$
 \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}, \qquad (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}
 $$
 
-is covariant for the reason computed in the next section: $\lambda$ is central, so it passes through both gradients and through the mass.
+is covariant for the reason computed in the next section: $\digamma_{\mathrm{gau}}$ is central, so it passes through both gradients and through the mass.
 
 **The two-sided form.** The parent also carries Kravchenko's equation, a single equation on a general element $F$ in which the derivative acts on the left and the mass term on the right (*The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*), with $\vec u$ the declared unit of the frame:
 
@@ -186,15 +186,15 @@ $$
 
 the bar being the complex conjugation of the coefficients and not the real structure $\flat$. The mass term combines a conjugation, the central $i$ and a right multiplication by $\vec u$, and it is not a scalar multiple of the field.
 
-**Why the prescription attaches to the pair.** Under a constant central phase $F\mapsto\lambda F$ the two terms of the two-sided form scale differently,
+**Why the prescription attaches to the pair.** Under a constant central phase $F\mapsto\digamma_{\mathrm{gau}} F$ the two terms of the two-sided form scale differently,
 
 $$
 -(\tilde\nabla_\Phi)^{\natural}\left(\lambda F\right) = \lambda\left(-(\tilde\nabla_\Phi)^{\natural}F\right),
 \qquad
--2\pi\nu_m\,i\,\overline{\lambda F}\,\vec u = \bar\lambda\left(-2\pi\nu_m\,i\,\overline{F}\,\vec u\right),
+-2\pi\nu_m\,i\,\overline{\digamma_{\mathrm{gau}} F}\,\vec u = \bar\digamma_{\mathrm{gau}}\left(-2\pi\nu_m\,i\,\overline{F}\,\vec u\right),
 $$
 
-and $\bar\lambda\ne\lambda$ for a non-real $\lambda$. The two-sided form therefore has **no continuous central phase symmetry**: its symmetry group is the real rescalings $F\mapsto rF$, $r\in\mathbb{R}^{\times}$. There is no phase to localize, so the minimal-coupling prescription cannot be transferred to it by replacing the gradient with the covariant derivative; coupling that form would be a different construction, which this article does not attempt.
+and $\bar\digamma_{\mathrm{gau}}\ne\digamma_{\mathrm{gau}}$ for a non-real $\digamma_{\mathrm{gau}}$. The two-sided form therefore has **no continuous central phase symmetry**: its symmetry group is the real rescalings $F\mapsto rF$, $r\in\mathbb{R}^{\times}$. There is no phase to localize, so the minimal-coupling prescription cannot be transferred to it by replacing the gradient with the covariant derivative; coupling that form would be a different construction, which this article does not attempt.
 
 The two forms carry the same operator content and are not the same statement: the mass term of the second is a conjugation and a right multiplication, and it is the place where the difference shows. That is why the biquaternion form of the coupling is not fixed by the free equation alone. The third object of the older literature, on which the central phase reaches the field one way on one part and the other way on the other, is named in the closing section and is not used as a tool anywhere in this article.
 
@@ -203,7 +203,7 @@ The two forms carry the same operator content and are not the same statement: th
 The gauge transformation is
 
 $$
-\tilde{Ξ}_{2} = \lambda\,\tilde{Ξ}, \qquad \lambda = \exp(i\theta_{\mathrm{gau}}\tilde{Q}), \qquad \Gamma \ \text{real},
+\tilde{Ξ}_{2} = \digamma_{\mathrm{gau}}\,\tilde{Ξ}, \qquad \digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}}\tilde{Q}), \qquad \Gamma \ \text{real},
 $$
 
 together with $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The covariance is the same computation as in the gauge principle article, repeated here because it is the justification of the prescription. The pair needs one Leibniz rule per member and one chain rule per member. The chain rules are
@@ -214,24 +214,24 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\lambda =\frac{2\pi i\,ϙ}{h}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\lambda ,
 $$
 
-because $\lambda$ is a central scalar function and each derivative acts on it coefficient by coefficient. The first member then gives
+because $\digamma_{\mathrm{gau}}$ is a central scalar function and each derivative acts on it coefficient by coefficient. The first member then gives
 
 $$
 \begin{aligned}
-\tilde\nabla_{\mathrm{gco},\Phi,2}(\lambda\tilde{Ξ}_{R})
-&= \tilde\nabla_\Phi(\lambda\tilde{Ξ}_{R}) +\frac{2\pi i\,ϙ}{h}\left(\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\right)(\lambda\tilde{Ξ}_{R}) \\
-&= \lambda\,\tilde\nabla_\Phi\tilde{Ξ}_{R} +\frac{2\pi i\,ϙ}{h}\left(\tilde\nabla_\Phi\Gamma\right)\lambda\tilde{Ξ}_{R} +\frac{2\pi i\,ϙ}{h}\lambda\,\tilde{A}_{\Phi}\,\tilde{Ξ}_{R} -\frac{2\pi i\,ϙ}{h}\left(\tilde\nabla_\Phi\Gamma\right)\lambda\tilde{Ξ}_{R} \\
+\tilde\nabla_{\mathrm{gco},\Phi,2}(\digamma_{\mathrm{gau}}\tilde{Ξ}_{R})
+&= \tilde\nabla_\Phi(\digamma_{\mathrm{gau}}\tilde{Ξ}_{R}) +\frac{2\pi i\,ϙ}{h}\left(\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\right)(\digamma_{\mathrm{gau}}\tilde{Ξ}_{R}) \\
+&= \digamma_{\mathrm{gau}}\,\tilde\nabla_\Phi\tilde{Ξ}_{R} +\frac{2\pi i\,ϙ}{h}\left(\tilde\nabla_\Phi\Gamma\right)\digamma_{\mathrm{gau}}\tilde{Ξ}_{R} +\frac{2\pi i\,ϙ}{h}\digamma_{\mathrm{gau}}\,\tilde{A}_{\Phi}\,\tilde{Ξ}_{R} -\frac{2\pi i\,ϙ}{h}\left(\tilde\nabla_\Phi\Gamma\right)\digamma_{\mathrm{gau}}\tilde{Ξ}_{R} \\
 &= \lambda\left[\tilde\nabla_\Phi\tilde{Ξ}_{R} +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}_{R}\right] = \lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} .
 \end{aligned}
 $$
 
-The two $\tilde\nabla_\Phi\Gamma$ terms cancel, and the central $\lambda$ moves to the left, past $\tilde{A}_{\Phi}$ and past the field. The second member repeats the computation with $\natural$ throughout, using $\tilde{A}_{\Phi,2}^{\natural} = \tilde{A}_{\Phi}^{\natural} - (\tilde\nabla_\Phi)^{\natural}\Gamma$:
+The two $\tilde\nabla_\Phi\Gamma$ terms cancel, and the central $\digamma_{\mathrm{gau}}$ moves to the left, past $\tilde{A}_{\Phi}$ and past the field. The second member repeats the computation with $\natural$ throughout, using $\tilde{A}_{\Phi,2}^{\natural} = \tilde{A}_{\Phi}^{\natural} - (\tilde\nabla_\Phi)^{\natural}\Gamma$:
 
 $$
 \begin{aligned}
-\tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}(\lambda\tilde{Ξ}_{L})
-&= (\tilde\nabla_\Phi)^{\natural}(\lambda\tilde{Ξ}_{L}) +\frac{2\pi i\,ϙ}{h}\left(\tilde{A}_{\Phi}^{\natural} - (\tilde\nabla_\Phi)^{\natural}\Gamma\right)(\lambda\tilde{Ξ}_{L}) \\
-&= \lambda\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} +\frac{2\pi i\,ϙ}{h}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\lambda\tilde{Ξ}_{L} +\frac{2\pi i\,ϙ}{h}\lambda\,\tilde{A}_{\Phi}^{\natural}\,\tilde{Ξ}_{L} -\frac{2\pi i\,ϙ}{h}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\lambda\tilde{Ξ}_{L} \\
+\tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}(\digamma_{\mathrm{gau}}\tilde{Ξ}_{L})
+&= (\tilde\nabla_\Phi)^{\natural}(\digamma_{\mathrm{gau}}\tilde{Ξ}_{L}) +\frac{2\pi i\,ϙ}{h}\left(\tilde{A}_{\Phi}^{\natural} - (\tilde\nabla_\Phi)^{\natural}\Gamma\right)(\digamma_{\mathrm{gau}}\tilde{Ξ}_{L}) \\
+&= \digamma_{\mathrm{gau}}\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} +\frac{2\pi i\,ϙ}{h}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\digamma_{\mathrm{gau}}\tilde{Ξ}_{L} +\frac{2\pi i\,ϙ}{h}\digamma_{\mathrm{gau}}\,\tilde{A}_{\Phi}^{\natural}\,\tilde{Ξ}_{L} -\frac{2\pi i\,ϙ}{h}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\digamma_{\mathrm{gau}}\tilde{Ξ}_{L} \\
 &= \lambda\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} .
 \end{aligned}
 $$
@@ -249,7 +249,7 @@ $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 0 \quad \Longleftrightarrow \quad \tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}\tilde{Ξ}_{L,2} = 0 .
 $$
 
-It holds in every gauge when it holds in one, and the phase of the field is not observable on its own. The common factor $\lambda$ is the point to keep, and it follows from $\lambda$ being a central *scalar*: $\natural$ negates the three spatial units and fixes the coefficients, so it leaves the scalar $\lambda$ alone.
+It holds in every gauge when it holds in one, and the phase of the field is not observable on its own. The common factor $\digamma_{\mathrm{gau}}$ is the point to keep, and it follows from $\digamma_{\mathrm{gau}}$ being a central *scalar*: $\natural$ negates the three spatial units and fixes the coefficients, so it leaves the scalar $\digamma_{\mathrm{gau}}$ alone.
 
 **The second-order consequence.** The covariant derivative of the companion article satisfies the operator identity
 
@@ -296,10 +296,10 @@ $$
 and the right-hand side is the transformed mass term, which for a **linear** mass term carries the same factor:
 
 $$
-\nu_m\tilde{Ξ}_{L,2} = \nu_m\lambda\,\tilde{Ξ}_{L} .
+\nu_m\tilde{Ξ}_{L,2} = \nu_m\digamma_{\mathrm{gau}}\,\tilde{Ξ}_{L} .
 $$
 
-The two sides transform identically, because the central phase is a scalar and the mass is one. The same holds for the second equation, and with the **same** $\lambda$ rather than its conjugate: the factor is $\lambda$ for either member. The massive coupled equation is therefore **form-invariant** under the local phase, and it holds in every gauge when it holds in one — exactly as in the massless case.
+The two sides transform identically, because the central phase is a scalar and the mass is one. The same holds for the second equation, and with the **same** $\digamma_{\mathrm{gau}}$ rather than its conjugate: the factor is $\digamma_{\mathrm{gau}}$ for either member. The massive coupled equation is therefore **form-invariant** under the local phase, and it holds in every gauge when it holds in one — exactly as in the massless case.
 
 This is the biquaternion form of the standard fact that a mass term linear in the field is compatible with a gauged continuous $\mathrm{U}(1)$. The two parts of the field acquire the same phase; what the mass forbids is the opposite assignment of the two, as the section on the field records.
 
@@ -320,7 +320,7 @@ $$
 Three of its properties are immediate and exact. It is **gauge invariant**, because for a unimodular central phase
 
 $$
-\left(\lambda\tilde{Ξ}\right)\left(\lambda\tilde{Ξ}\right)^{*} = \lambda\,\tilde{Ξ}\tilde{Ξ}^*\,\lambda^{*} = |\lambda|^2\,\tilde{Ξ}\tilde{Ξ}^* = \tilde{Ξ}\tilde{Ξ}^* ,
+\left(\digamma_{\mathrm{gau}}\tilde{Ξ}\right)\left(\digamma_{\mathrm{gau}}\tilde{Ξ}\right)^{*} = \digamma_{\mathrm{gau}}\,\tilde{Ξ}\tilde{Ξ}^*\,\digamma_{\mathrm{gau}}^{*} = |\digamma_{\mathrm{gau}}|^2\,\tilde{Ξ}\tilde{Ξ}^* = \tilde{Ξ}\tilde{Ξ}^* ,
 $$
 
 and it is **anti-Hermitian**, $\tilde J_{\Phi,\mathrm{sp}}^{*} = -\tilde J_{\Phi,\mathrm{sp}}$, hence an element of the material sector $\mathbb{B}_{\Phi}$ — the same sector as the four-current $ic\rho\,e_t + \vec J$ of the Maxwell article. The third property makes it a density candidate: the bilinear before the $i$ has the real scalar part
@@ -457,7 +457,7 @@ $\gamma_5$ is the basis operator $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, a p
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The conserved current of the older literature.** The object that the previous sections cannot build is written here, once, in this display. The conserved current is the bilinear built with the generator basis operator of the coordinate $x_{\imath}$ — the basis operator $iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}$, with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$ — and with the adjoint row $\tilde{Ξ}^{\dagger}iR_{\vec e_x}$:
+**The conserved current of the older literature.** The object that the previous sections cannot build is written here, once, in this display. The conserved current is the bilinear built with the generator basis operator of the coordinate $x_{\imath}$ — the basis operator $iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}$, with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$ — and with the adjoint row $\tilde{Ξ}^{\dagger}iR_{\vec e_x}$:
 
 $$
 j_{\imath} = \tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,iL_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}}\,\tilde{Ξ} ,
@@ -520,7 +520,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi,2}\tilde{Ξ}_{R,2} = \lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R}, \qquad \tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}\tilde{Ξ}_{L,2} = \lambda\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L},
 $$
 
-the same factor $\lambda$ for either member, and the parent's linear mass term acquires that same factor, so $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$ holds in every gauge when it holds in one. The continuous $\mathrm{U}(1)$ of the massless theory survives the mass; what the mass breaks is the relative phase that multiplies the two parts oppositely. Squaring the pair gives the covariant wave equation
+the same factor $\digamma_{\mathrm{gau}}$ for either member, and the parent's linear mass term acquires that same factor, so $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$ holds in every gauge when it holds in one. The continuous $\mathrm{U}(1)$ of the massless theory survives the mass; what the mass breaks is the relative phase that multiplies the two parts oppositely. Squaring the pair gives the covariant wave equation
 
 $$
 \left(\sum_{\imath\in\{t,x,y,z\}}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2} +\frac{i\,ϙ}{h}\tilde{F} - 4\pi^{2}\nu_m^{2}\right)\tilde{Ξ}_{R} = 0 .
@@ -552,7 +552,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$ | Free biquaternion Dirac equation (massive chiral pair) |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Connection = potential biquaternion (in $\mathbb{B}_{\Phi}$) |
 | $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Gauge transformation of the connection |
-| $\lambda = \exp(i\theta_{\mathrm{gau}})$ | Local central phase; $\Gamma$ real scalar |
+| $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$ | Local central phase; $\Gamma$ real scalar |
 | $\varsigma$ | A second central constant, in the relative phase $\tilde{Ξ}_{R}\mapsto\varsigma\tilde{Ξ}_{R}$, $\tilde{Ξ}_{L}\mapsto\varsigma^{-1}\tilde{Ξ}_{L}$ |
 | $ϙ$ | Charge (coupling constant), not fixed by the algebra |
 | $\tilde\nabla_{\mathrm{gco},\Phi} = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ | Covariant derivative (left action) |
@@ -561,7 +561,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\tilde{F}$ | Field-strength biquaternion; $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi} = \sum_{\imath}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2 +\frac{2\pi i\,ϙ}{h}\tilde{F}$ |
 | $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$ | Minimally coupled Dirac equation |
 | $\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}$ | Interaction term |
-| $\exp(2i\theta_{\mathrm{gau}})$ | Phase that an antilinear mass term would acquire under a local phase; the linear mass term acquires $\lambda$ instead |
+| $\exp(2i\theta_{\mathrm{gau}})$ | Phase that an antilinear mass term would acquire under a local phase; the linear mass term acquires $\digamma_{\mathrm{gau}}$ instead |
 | $\|\tilde{Ξ}\|^2 = \mathrm{Sc}(\tilde{Ξ}\tilde{Ξ}^*)$ | Euclidean modulus squared; real and $\ge 0$, the sum of the four squared coefficient moduli |
 | $\tilde J_{\Phi,\mathrm{sp}} = i\tilde{Ξ}\tilde{Ξ}^*$ | Naive bilinear; gauge invariant, in $\mathbb{B}_{\Phi}$, **not conserved** |
 | $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$ | Four-current; the Maxwell source is $\sqrt{\mu}\,\tilde J_{\Phi}$ |

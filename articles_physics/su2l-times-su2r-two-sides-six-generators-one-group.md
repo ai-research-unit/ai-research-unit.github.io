@@ -135,7 +135,7 @@ $$
 
 | two-sided action | parameters | compact part | what it is |
 |---|---|---|---|
-| $L_{\tilde Q}R_{\tilde Q_2}$, free | two, modulo the rescaling $\tilde Q\to\lambda\tilde Q$, $\tilde Q_2\to\lambda^{-1}\tilde Q_2$ | $\mathrm{SU}(2)\times\mathrm{SU}(2)$ | $\mathrm{Spin}(4)$, Euclidean, untied |
+| $L_{\tilde Q}R_{\tilde Q_2}$, free | two, modulo the rescaling $\tilde Q\to\digamma_{\mathrm{cfm}}\tilde Q$, $\tilde Q_2\to\digamma_{\mathrm{cfm}}^{-1}\tilde Q_2$ | $\mathrm{SU}(2)\times\mathrm{SU}(2)$ | $\mathrm{Spin}(4)$, Euclidean, untied |
 | $\mathrm{Hp}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, tied | one | $\mathrm{SL}(2,\mathbb{C})$ on the unit slice | $\mathrm{SO}^{+}(1,3)$, Lorentz, tied |
 
 **What the table says.** The corpus contains both groups and the difference between them is one involution. **Untie the two sides and the group is $\mathrm{SU}(2)\times\mathrm{SU}(2)$; tie them by Hermitian conjugation and it is the Lorentz group.** Physics uses the tied version for spacetime and the untied version for internal symmetry, and the arithmetic is the same arithmetic in both cases.

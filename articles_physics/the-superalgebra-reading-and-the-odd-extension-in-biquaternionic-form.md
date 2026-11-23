@@ -71,7 +71,7 @@ $$
 a^{*}=\lambda a,\qquad b^{*}=\lambda^{-1}b,\qquad \lvert\lambda\rvert=1 ,
 $$
 
-for a central $\lambda$, which is wider than the case of two Hermitian multipliers: the rescaling that carries $a$ to $\mu a$ and $b$ to $b/\mu$ carries $\lambda$ to $\lambda\mu^{-2}$ for $\lvert\mu\rvert=1$, and $\mu^{2}=\pm\lambda$ gives the two signs, so the condition says that the two multipliers can be chosen **simultaneously** Hermitian or simultaneously anti-Hermitian, and an action with $a^{*}=ia$ and $b^{*}=-ib$ is its own adjoint without either multiplier being so.
+for a central $\digamma_{\mathrm{cfm}}$, which is wider than the case of two Hermitian multipliers: the rescaling that carries $a$ to $\mu a$ and $b$ to $b/\mu$ carries $\digamma_{\mathrm{cfm}}$ to $\digamma_{\mathrm{cfm}}\mu^{-2}$ for $\lvert\mu\rvert=1$, and $\mu^{2}=\pm\digamma_{\mathrm{cfm}}$ gives the two signs, so the condition says that the two multipliers can be chosen **simultaneously** Hermitian or simultaneously anti-Hermitian, and an action with $a^{*}=ia$ and $b^{*}=-ib$ is its own adjoint without either multiplier being so.
 
 *Proof.* The derived identity is $\langle aQb,t\rangle_{*}=\langle Q,a^{*}tb^{*}\rangle_{*}$, so $aQb$ and $a^{*}Qb^{*}$ agree for every $Q$ exactly under the stated condition, and the form is positive definite.
 
@@ -117,7 +117,7 @@ $$
 
 **Remark (why the two behave differently).** The adjoint reverses the order of the two factors, and the graded bracket distinguishes the two orders by the sign $(-1)^{\lvert a\rvert\lvert b\rvert}$ exactly in the odd-odd case, where the bracket is symmetric: a symmetric bracket is preserved by the reversal, an antisymmetric one is negated. The statement is therefore not an accident of the ambient algebra but the interaction of two signs, the order reversal of the adjoint and the Koszul sign of the bracket. On the even part, where the bracket is the Lie bracket of the framework, the rule reads $\bigl([a,b]\bigr)^{*}=-\bigl[a^{*},b^{*}\bigr]$, so the bracket of two anti-Hermitian elements is anti-Hermitian: the anti-Hermitian part is a Lie subalgebra, the compact form of the framework, while the Hermitian generators enter it with the conventional factor $i$.
 
-**Remark (the Koszul-signed convention and what the star is not).** A superalgebra is often equipped with a super-* satisfying the Koszul-signed rule $(\zeta\eta)^{*}=(-1)^{\lvert\zeta\rvert\lvertk\rvert}\eta^{*}\zeta^{*}$. For such a structure the bracket-adjoint identity reads $\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}}$ without the extra parity sign, and the two rules agree on a mixed pair and differ on an odd-odd one. The star of the corpus is **not** of that kind: on two generators $v_0$ and $v_1$, both odd and both anti-Hermitian, one has
+**Remark (the Koszul-signed convention and what the star is not).** A superalgebra is often equipped with a super-* satisfying the Koszul-signed rule $(\zeta\varsigma_{\mathrm{odd}})^{*}=(-1)^{\lvert\zeta\rvert\lvertk\rvert}\varsigma_{\mathrm{odd}}^{*}\zeta^{*}$. For such a structure the bracket-adjoint identity reads $\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}}$ without the extra parity sign, and the two rules agree on a mixed pair and differ on an odd-odd one. The star of the corpus is **not** of that kind: on two generators $v_0$ and $v_1$, both odd and both anti-Hermitian, one has
 
 $$
 (v_0v_1)^{*}=v_1^{*}v_0^{*}=(-v_1)(-v_0)=v_1v_0=-v_0v_1 ,

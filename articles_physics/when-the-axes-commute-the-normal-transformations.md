@@ -172,7 +172,7 @@ up to the identifications at the degenerate points, of dimension four. The two o
 With a common axis, the element is diagonal in the basis of spin states along that axis, and its two eigenvalues are the products of the two factors' eigenvalues:
 
 $$
-\lambda_+=\mu,\qquad \lambda_-=\mu^{-1},\qquad
+\eta_{+}=\mu,\qquad \eta_{-}=\mu^{-1},\qquad
 \mu=\exp\Bigl(\tfrac12\bigl(\theta_{\mathrm{rpd}}-i\theta_{\mathrm{axr}}\bigr)\Bigr),
 $$
 

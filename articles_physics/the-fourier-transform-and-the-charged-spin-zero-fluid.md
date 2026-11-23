@@ -12,7 +12,7 @@ Position in the block. This is the charged companion of [The Fourier Transform a
 
 ## Conventions
 
-The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\varkappa}{h}\tilde A_\Phi$, and the gauge transformation $\lambda=\exp(\frac{2\pi i\varkappa\Gamma}{h})$. The mechanical momentum is
+The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\varkappa}{h}\tilde A_\Phi$, and the gauge transformation $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$. The mechanical momentum is
 
 $$
 \tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+\varkappa\tilde A_\Phi,
@@ -125,7 +125,7 @@ The fluid reads its velocity from the kinetic label, so the chart in which the f
 | $\tilde F$ | The field strength; the curvature |
 | $\omega=\varkappa F/m$ | The vorticity |
 | $Q_{\mathrm{qnt}}$ | The quantum potential; it moves the radius |
-| $\lambda=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ | The gauge element; a linear $\Gamma$ translates the support |
+| $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ | The gauge element; a linear $\Gamma$ translates the support |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
 ## Further Reading

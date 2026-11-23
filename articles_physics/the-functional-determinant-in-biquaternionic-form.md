@@ -32,7 +32,7 @@ the exponent being the module's complex dimension. The determinant on the whole 
 $$
 \log\det S^{(2)} = -\left.\frac{d\zeta_{S^{(2)}}}{ds}\right|_{s=0},
 \qquad
-\zeta_{S^{(2)}}(s) = \sum_n \lambda_n^{-s},
+\zeta_{S^{(2)}}(s) = \sum_n \eta_n^{-s},
 $$
 the heat-kernel and Seeley–DeWitt expansion that evaluates $\zeta(0)$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}$, and the proper-time representation. None of these is the algebra's; the algebra supplies the operator on which they act.
 - **The physical faces.** Two structural consequences are recorded here because later articles use them: the **phase** of a non-Hermitian determinant (the fermion determinant of a chiral or $\theta$-dependent operator) is the framework's route to the $\theta_{\mathrm{vac}}$ vacuum of *The Theta Vacuum in Biquaternionic Form*, and the **conformal variation** of the determinant is the conformal anomaly of *The Conformal Anomaly in Biquaternionic Form*.
@@ -43,11 +43,11 @@ The article proceeds as follows. A section defines the determinant of a module o
 
 Let $S^{(2)}$ be a linear operator on the biquaternion module, and suppose for the moment that its spectrum is discrete and its determinant exists. Then
 $$
-\det S^{(2)} = \prod_n \lambda_n ,
+\det S^{(2)} = \prod_n \eta_n ,
 \qquad
-\log\det S^{(2)} = \sum_n \log\lambda_n = \mathrm{Tr}\log S^{(2)} ,
+\log\det S^{(2)} = \sum_n \log\eta_n = \mathrm{Tr}\log S^{(2)} ,
 $$
-the second equality making sense on the principal branch. The operator acts on the module $\mathbb{B}\tilde\Pi_{\mathrm{id}}(\vec u)\cong\mathbb{C}^2$ per mode, so each $\lambda_n$ is a two-fold object: the module contributes two complex dimensions, and the determinant is taken over both.
+the second equality making sense on the principal branch. The operator acts on the module $\mathbb{B}\tilde\Pi_{\mathrm{id}}(\vec u)\cong\mathbb{C}^2$ per mode, so each $\eta_n$ is a two-fold object: the module contributes two complex dimensions, and the determinant is taken over both.
 
 **The central case.** If $S^{(2)}=\kappa\,e_t$ is a central scalar (for instance the free kinetic operator at a given mode, $\kappa=N(\tilde Q_{\Phi})-N(\tilde P_{\Phi})=N(\tilde Q_{\Phi})+m^{2}\,c^{2}=\mathcal{M}(\tilde Q_{\Phi})$, whose Lorentzian continuation differs from the action's operator $\Box_\Phi-4\pi^{2}\nu_m^{2}$ only by the overall sign that the module's even dimension absorbs), then on the module it is multiplication by $\kappa$ on $\mathbb{C}^2$, and
 $$
@@ -133,7 +133,7 @@ $$
 $$
 in the Euclidean continuation, the square being the module's two complex dimensions and the overall sign of the continuation cancelling in it. The product diverges, and only **ratios** of determinants of operators of the same type are scheme-independent. The ratio
 $$
-\frac{\det S^{(2)}_1}{\det S^{(2)}_2} = \frac{\prod_n \lambda_n^{(1)}}{\prod_n \lambda_n^{(2)}}
+\frac{\det S^{(2)}_1}{\det S^{(2)}_2} = \frac{\prod_n \eta_n^{(1)}}{\prod_n \eta_n^{(2)}}
 $$
 is the Ray–Singer torsion of the pair when the operators are Laplacians on a manifold, and it is the finite, physical content of the determinant. In the framework the ratio is taken on a fixed module, and the algebra's contribution is the module's dimension, which fixes the size of each factor.
 
@@ -149,13 +149,13 @@ where $\xi$ is a background field and $(S^{(2)})^{-1}$ is the propagator. This i
 
 The determinant is a divergent product, and its regularized value is defined through the zeta function of the operator.
 
-**Zeta-function regularization.** For an operator $S^{(2)}$ with discrete spectrum $\{\lambda_n\}$,
+**Zeta-function regularization.** For an operator $S^{(2)}$ with discrete spectrum $\{\eta_n\}$,
 $$
-\zeta_{S^{(2)}}(s) = \sum_n \lambda_n^{-s} = \mathrm{Tr}\big(S^{(2)}\big)^{-s},
+\zeta_{S^{(2)}}(s) = \sum_n \eta_n^{-s} = \mathrm{Tr}\big(S^{(2)}\big)^{-s},
 \qquad
 \log\det S^{(2)} = -\left.\frac{d\zeta_{S^{(2)}}}{ds}\right|_{s=0},
 $$
-the second relation being the analytic continuation of the first to $s=0$. In this scheme the determinant is finite by construction, and the regularization dependence appears as an additive constant that is fixed by renormalization. For a single mode with eigenvalue $\lambda$ the definition gives $\zeta(s)=\lambda^{-s}$ and $-\left.\frac{d\zeta}{ds}\right|_{s=0}=\log\lambda$, i.e. the ordinary logarithm; the scheme reduces to the ordinary determinant when the product is finite.
+the second relation being the analytic continuation of the first to $s=0$. In this scheme the determinant is finite by construction, and the regularization dependence appears as an additive constant that is fixed by renormalization. For a single mode with eigenvalue $\eta$ the definition gives $\zeta(s)=\eta^{-s}$ and $-\left.\frac{d\zeta}{ds}\right|_{s=0}=\log\eta$, i.e. the ordinary logarithm; the scheme reduces to the ordinary determinant when the product is finite.
 
 **Heat-kernel evaluation.** The zeta function is evaluated from the heat kernel of the previous article,
 $$
@@ -187,7 +187,7 @@ $$
 $$
 with the phase $\theta_{\mathrm{pha},\mathcal{F}}$ the object of interest. For a family of operators $\mathcal{F}(r'_t)$ interpolating between two Hermitian endpoints the phase is the **eta invariant** of the family,
 $$
-\theta_{\mathrm{pha},\mathcal{F}(r'_t)} = \frac{\pi}{2}\,\eta\big(\mathcal{F}(r'_t)\big) + \text{const},
+\theta_{\mathrm{pha},\mathcal{F}(r'_t)} = \frac{\pi}{2}\,\digamma_{\mathrm{fac}}\big(\mathcal{F}(r'_t)\big) + \text{const},
 $$
 a spectral asymmetry counted by the heat-kernel regularized sum of signs of eigenvalues. This is standard (Atiyah–Patodi–Singer), and it is the analytic home of the framework's $\theta_{\mathrm{vac}}$ dependence: the $\theta_{\mathrm{vac}}$ vacuum of *The Theta Vacuum in Biquaternionic Form* arises when the fermion determinant's phase depends on a background field through the eta invariant, so that $\exp(-S)$ acquires a topological phase. The biquaternion content is that the chiral structure whose asymmetry is counted is the two-minimal-left-ideal structure of the algebra, and that the mass term is the right-multiplication operator between them.
 
@@ -256,7 +256,7 @@ For a central fluctuation operator the module determinant is the square of the s
 | $a_{d/2}$ | Coefficient controlling the divergence / conformal anomaly |
 | $\mathcal{F}=\begin{pmatrix}-2\pi\nu_m&\mathcal{F}_R\ \mathcal{F}_L&-2\pi\nu_m\end{pmatrix}$ | Fermionic fluctuation operator: the mass-shifted pair in the chirality basis, with the two lines' derivative parts off the diagonal |
 | $\det\mathcal{F}=|\det\mathcal{F}|\exp(i\theta_{\mathrm{pha},\mathcal{F}})$ | Complex (chiral) fermion determinant |
-| $\eta(\mathcal{F})$ | Eta invariant; spectral asymmetry of the phase |
+| $\digamma_{\mathrm{fac}}(\mathcal{F})$ | Eta invariant; spectral asymmetry of the phase |
 
 ## Further Reading
 

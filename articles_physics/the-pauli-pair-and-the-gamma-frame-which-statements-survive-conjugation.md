@@ -68,7 +68,7 @@ The larger size is the smaller one written twice.
 | trace | $2Q_t$ | $4Q_t$ | double |
 | the determinant of the image | $N$ | $N^2$ | square |
 | characteristic polynomial | degree $2$ | its square | square |
-| spectrum | $\lambda_\pm$ once each | each twice | repeat |
+| spectrum | $\eta_{\pm}$ once each | each twice | repeat |
 | rank | $r$ | $2r$ | double |
 | minimal polynomial | degree $2$ | degree $2$ | unchanged |
 
@@ -257,10 +257,10 @@ The boundary. The rule is bookkeeping and not physics. Its role is diagnostic: w
 
 ### I.2.n — The Element Stores Half the Rapidity
 
-Read: a boost rotor of rapidity $\eta$ has a matrix with eigenvalues $e^{\pmk/2}$, and its two-sided operator has eigenvalues $e^k,1,1,e^{-k}$.
+Read: a boost rotor of rapidity $\upsilon_{\mathrm{rnd}}$ has a matrix with eigenvalues $e^{\pmk/2}$, and its two-sided operator has eigenvalues $e^k,1,1,e^{-k}$.
 
 $$
-\tilde B_\imath=\cosh\tfrac{\eta}{2}\,e_t+\sinh\tfrac{\eta}{2}\,i\vec e_z,\qquad \mathsf M_2(\tilde B_\imath)=\operatorname{diag}\bigl(e^{k/2},e^{-k/2}\bigr) .
+\tilde B_\imath=\cosh\tfrac{\upsilon_{\mathrm{rnd}}}{2}\,e_t+\sinh\tfrac{\upsilon_{\mathrm{rnd}}}{2}\,i\vec e_z,\qquad \mathsf M_2(\tilde B_\imath)=\operatorname{diag}\bigl(e^{k/2},e^{-k/2}\bigr) .
 $$
 
 The half is the double cover, read on the spectrum. The element acts on the spinor, so it carries half of the rapidity; the congruence acts on the four-vector, so it carries the whole of it. The two middle eigenvalues of the operator are the transverse directions, which the boost fixes.

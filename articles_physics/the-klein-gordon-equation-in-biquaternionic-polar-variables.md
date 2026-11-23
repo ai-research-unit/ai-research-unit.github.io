@@ -417,7 +417,7 @@ $$
 
 with the plus sign for all four coefficients.
 
-**The reading that puts the current in the vector slots gives another object.** An element of $\mathbb{B}_{\Phi}$ carries its current in the vector slots and its charge in the temporal slot, and there the same product is not the one just summed: it vanishes identically for a field with one active coefficient, temporal or spatial, because $\vec e_{\imath}^{*}\vec e_{\imath}=+e_t$ sends every diagonal term to the scalar slot. What survives in the vector slots is off-diagonal. The smallest case is $\tilde\Xi=\Xi_t e_t+\Xi_x\vec e_x$ with the direction $\eta=x$,
+**The reading that puts the current in the vector slots gives another object.** An element of $\mathbb{B}_{\Phi}$ carries its current in the vector slots and its charge in the temporal slot, and there the same product is not the one just summed: it vanishes identically for a field with one active coefficient, temporal or spatial, because $\vec e_{\imath}^{*}\vec e_{\imath}=+e_t$ sends every diagonal term to the scalar slot. What survives in the vector slots is off-diagonal. The smallest case is $\tilde\Xi=\Xi_t e_t+\Xi_x\vec e_x$ with the direction $\varsigma_{\mathrm{dir}}=x$,
 
 $$
 \tilde\Xi^{*}\frac{\partial\tilde\Xi}{\partial r_x}

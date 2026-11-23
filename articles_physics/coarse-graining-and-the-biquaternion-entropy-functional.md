@@ -22,7 +22,7 @@ Two functionals appear below and must be kept apart, because the whole subject t
 
 The treatment is **classical**. The entropy here is the Shannon entropy of a coarse description, and the functional is the classical one throughout. The functional $\mathcal{S}$ coincides numerically, on the matrix representative of $\tilde{Ϛ}_{\Psi}$, with the von Neumann entropy of that $2\times 2$ density matrix, and the reader should not be misled by the coincidence: the von Neumann entropy as such, and the entropies attached to POVMs and to entanglement, belong to the informational subcategory of the sibling quantum category, where the companion article *Von Neumann Entropy and the Biquaternion Norm* develops them, and they are not developed here. Where the quantum interpretation is used, it is used as a bound, and it is identified as such.
 
-The probabilities the functional is built from are themselves readings of the Hermitian form, normalised by the scalar part of the state. The weights $\lambda_\pm$ of the spectral decomposition are $\lambda_\pm=\langle\tilde\Pi_{\mathrm{id},1,2}(\vec u_s),\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1,2}(\vec u_s)\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, the star being inert on $\mathbb{B}_{\Psi}$ and the scalar part of that product real and non-negative, and the companion article *The Born Rule from the Hermitian Form — Derivation and Comparison* derives the form of that pairing and fixes the objects it relates; this article takes the form as given and uses it only to read the state's own two-outcome distribution.
+The probabilities the functional is built from are themselves readings of the Hermitian form, normalised by the scalar part of the state. The weights $\eta_{\pm}$ of the spectral decomposition are $\eta_{\pm}=\langle\tilde\Pi_{\mathrm{id},1,2}(\vec u_s),\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1,2}(\vec u_s)\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, the star being inert on $\mathbb{B}_{\Psi}$ and the scalar part of that product real and non-negative, and the companion article *The Born Rule from the Hermitian Form — Derivation and Comparison* derives the form of that pairing and fixes the objects it relates; this article takes the form as given and uses it only to read the state's own two-outcome distribution.
 
 The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\imath^2 = -e_t$; the scalar imaginary is $i$, central in $\mathbb{B}$; the two four-dimensional real subspaces are the anti-Hermitian material sector $\mathbb{B}_{\Phi}$ and the Hermitian informational sector $\mathbb{B}_{\Psi}$, with $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$; the reduced value of an element is its doubled scalar part $2\,\mathrm{Sc}(\tilde{Q})$, with $2\,\mathrm{Sc}(e_t) = 2$; and the Hermitian form for a state and an observable is $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$, whose doubled value is $2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$.
 
@@ -109,24 +109,24 @@ so it is invertible and its logarithm exists. A **pure** state has $\langle\tild
 The logarithm of a state is evaluated with the idempotents. Writing $\vec u_s = \vec s_{\Psi}/|\vec s_{\Psi}|$ for a state with $\vec s_{\Psi} \neq 0$, the spectral decomposition of the state in its own basis is
 
 $$
-\tilde{Ϛ}_{\Psi} = \lambda_+\, \tilde\Pi_{\mathrm{id},1}(\vec u_s) + \lambda_-\, \tilde\Pi_{\mathrm{id},2}(\vec u_s), \qquad
-\lambda_\pm = \tfrac{1}{2}\left(1 \pm |\vec s_{\Psi}|\right),
+\tilde{Ϛ}_{\Psi} = \eta_{+}\, \tilde\Pi_{\mathrm{id},1}(\vec u_s) + \eta_{-}\, \tilde\Pi_{\mathrm{id},2}(\vec u_s), \qquad
+\eta_{\pm} = \tfrac{1}{2}\left(1 \pm |\vec s_{\Psi}|\right),
 $$
 
-as one verifies directly from the definitions of the idempotents. The eigenvalues $\lambda_\pm$ are the classical probabilities of the two pointer outcomes in the eigenbasis, they are non-negative for $|\vec s_{\Psi}| \le 1$, and they sum to one. The functional calculus of the algebra then gives
+as one verifies directly from the definitions of the idempotents. The eigenvalues $\eta_{\pm}$ are the classical probabilities of the two pointer outcomes in the eigenbasis, they are non-negative for $|\vec s_{\Psi}| \le 1$, and they sum to one. The functional calculus of the algebra then gives
 
 $$
-\log\tilde{Ϛ}_{\Psi} = \left(\log\lambda_+\right)\tilde\Pi_{\mathrm{id},1}(\vec u_s) + \left(\log\lambda_-\right)\tilde\Pi_{\mathrm{id},2}(\vec u_s),
+\log\tilde{Ϛ}_{\Psi} = \left(\log\eta_{+}\right)\tilde\Pi_{\mathrm{id},1}(\vec u_s) + \left(\log\eta_{-}\right)\tilde\Pi_{\mathrm{id},2}(\vec u_s),
 $$
 
-which is the principal branch on the positive part of $\mathbb{B}_{\Psi}$; on the general algebra the logarithm is multivalued, and positivity of the state removes the ambiguity by fixing the branch. Multiplying and taking the scalar part, using $\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1,2}) = \tfrac{1}{2}$, gives $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}) = \tfrac{1}{2}(\lambda_+\log\lambda_+ + \lambda_-\log\lambda_-)$, and therefore
+which is the principal branch on the positive part of $\mathbb{B}_{\Psi}$; on the general algebra the logarithm is multivalued, and positivity of the state removes the ambiguity by fixing the branch. Multiplying and taking the scalar part, using $\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1,2}) = \tfrac{1}{2}$, gives $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}) = \tfrac{1}{2}(\eta_{+}\log\eta_{+} + \eta_{-}\log\eta_{-})$, and therefore
 
 $$
 \mathcal{S}(\tilde{Ϛ}_{\Psi}) = -2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}\right)
-= -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_- .
+= -\eta_{+}\log\eta_{+} - \eta_{-}\log\eta_{-} .
 $$
 
-This is the **biquaternion entropy functional**. It is a real number, it is computed from the algebra's own product, logarithm and trace, and it is the classical Shannon entropy of the two-outcome distribution $(\lambda_+,\lambda_-)$ that the state induces in its eigenbasis. Written out in the Bloch radius it is the binary entropy function,
+This is the **biquaternion entropy functional**. It is a real number, it is computed from the algebra's own product, logarithm and trace, and it is the classical Shannon entropy of the two-outcome distribution $(\eta_{+},\eta_{-})$ that the state induces in its eigenbasis. Written out in the Bloch radius it is the binary entropy function,
 
 $$
 \boxed{\;\mathcal{S}(\tilde{Ϛ}_{\Psi}) = h(|\vec s_{\Psi}|), \qquad
@@ -147,15 +147,15 @@ matching $h(1/\sqrt{2})$ to machine precision. The verification is on this super
 
 Three properties follow immediately and are worth recording, because they are the properties the coarse-grained entropy inherits.
 
-**Range.** Since $0 \le \lambda_\pm \le 1$ with $\lambda_+ + \lambda_- = 1$, the functional is non-negative and bounded above:
+**Range.** Since $0 \le \eta_{\pm} \le 1$ with $\eta_{+} + \eta_{-} = 1$, the functional is non-negative and bounded above:
 
 $$
 0 \le \mathcal{S}(\tilde{Ϛ}_{\Psi}) \le \log 2 ,
 $$
 
-with the lower bound attained exactly on the pure states, $|\vec s_{\Psi}| = 1$, and the upper bound exactly at the maximally mixed state, $\vec s_{\Psi} = 0$, where $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}e_t$ and $\lambda_+ = \lambda_- = \tfrac{1}{2}$.
+with the lower bound attained exactly on the pure states, $|\vec s_{\Psi}| = 1$, and the upper bound exactly at the maximally mixed state, $\vec s_{\Psi} = 0$, where $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}e_t$ and $\eta_{+} = \eta_{-} = \tfrac{1}{2}$.
 
-**Symmetry.** The functional is unchanged by the exchange $\lambda_+ \leftrightarrow \lambda_-$, equivalently by $\vec s_{\Psi} \mapsto -\vec s_{\Psi}$; both are the same classical distribution. It is a function of the radius alone, so it is invariant under every rotation of the Bloch ball.
+**Symmetry.** The functional is unchanged by the exchange $\eta_{+} \leftrightarrow \eta_{-}$, equivalently by $\vec s_{\Psi} \mapsto -\vec s_{\Psi}$; both are the same classical distribution. It is a function of the radius alone, so it is invariant under every rotation of the Bloch ball.
 
 **Concavity.** The binary entropy is concave in its argument, so $\mathcal{S}$ is concave along the Bloch radius: for a mixture $\tilde{Ϛ}_{\Psi} = p\tilde{Ϛ}_{\Psi,1} + (1-p)\tilde{Ϛ}_{\Psi,2}$,
 
@@ -371,7 +371,7 @@ $$
 \mathcal{S}(\tilde{Ϛ}_{\Psi}) \le H(w) ,
 $$
 
-with equality exactly for the spectral ensemble, whose states are the two idempotents $\tilde\Pi_{\mathrm{id},1,2}(\vec u_s)$ with weights $\lambda_\pm$. The fine-grained entropy is therefore the **minimum over preparations** — the least coarse description the state admits. A partition of the pure-state sphere into basis operators is one preparation among many; merging basis operators lowers $H$ but changes the mean state, so the comparison is not between $H$ and the entropy of the *same* state. The invariant entropy of the state is the infimum, and the coarse-grained entropies are the values above it.
+with equality exactly for the spectral ensemble, whose states are the two idempotents $\tilde\Pi_{\mathrm{id},1,2}(\vec u_s)$ with weights $\eta_{\pm}$. The fine-grained entropy is therefore the **minimum over preparations** — the least coarse description the state admits. A partition of the pure-state sphere into basis operators is one preparation among many; merging basis operators lowers $H$ but changes the mean state, so the comparison is not between $H$ and the entropy of the *same* state. The invariant entropy of the state is the infimum, and the coarse-grained entropies are the values above it.
 
 The identity is verified on the three-point ensemble
 
@@ -399,8 +399,8 @@ The **biquaternion entropy functional** is
 
 $$
 \boxed{\;\mathcal{S}(\tilde{Ϛ}_{\Psi}) = -2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}\right)
-= -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_- = h(|\vec s_{\Psi}|),
-\qquad \lambda_\pm = \tfrac{1}{2}\left(1\pm|\vec s_{\Psi}|\right)\;},
+= -\eta_{+}\log\eta_{+} - \eta_{-}\log\eta_{-} = h(|\vec s_{\Psi}|),
+\qquad \eta_{\pm} = \tfrac{1}{2}\left(1\pm|\vec s_{\Psi}|\right)\;},
 $$
 
 with $0 \le \mathcal{S} \le \log 2$. It is computed from the algebra's logarithm, which exists exactly on the group of invertibles, that is, on the interior of the Bloch ball: the pure states are the zero divisors, and the entropy is singular there and vanishes there.
@@ -427,13 +427,13 @@ The fine-grained value is also the minimum over all preparations of the state, $
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ | State of the informational sector, Bloch vector $\vec s_{\Psi}$ |
 | $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state, rank one) |
-| $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec s_{\Psi}|)$ | Eigenvalues (pointer probabilities) of the state |
+| $\eta_{\pm} = \tfrac{1}{2}(1\pm|\vec s_{\Psi}|)$ | Eigenvalues (pointer probabilities) of the state |
 | $2\,\mathrm{Sc}(\tilde{Q})$, $2\,\mathrm{Sc}(e_t)=2$ | Doubled scalar part |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ | Biquaternion norm |
 | $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}(1-|\vec s_{\Psi}|^2)e_t$ | Biquaternion norm of a state |
 | $\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = \tfrac{1}{4}(|\vec s_{\Psi}|^2-1)e_t$ | Deviation from idempotency (mixedness) |
 | $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1+|\vec s_{\Psi}|^2)$ | Purity |
-| $\log\tilde{Ϛ}_{\Psi} = (\log\lambda_+)\tilde\Pi_{\mathrm{id},1}(\vec u_s) + (\log\lambda_-)\tilde\Pi_{\mathrm{id},2}(\vec u_s)$ | Logarithm of a state, $|\vec s_{\Psi}|<1$ |
+| $\log\tilde{Ϛ}_{\Psi} = (\log\eta_{+})\tilde\Pi_{\mathrm{id},1}(\vec u_s) + (\log\eta_{-})\tilde\Pi_{\mathrm{id},2}(\vec u_s)$ | Logarithm of a state, $|\vec s_{\Psi}|<1$ |
 | $\mathcal{S}(\tilde{Ϛ}_{\Psi}) = -2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}) = h(|\vec s_{\Psi}|)$ | Biquaternion entropy functional |
 | $h(x) = -\tfrac{1+x}{2}\log\tfrac{1+x}{2} - \tfrac{1-x}{2}\log\tfrac{1-x}{2}$ | Binary entropy function |
 | $\mathcal{S} = h\!\left(\sqrt{1-4\,\mathrm{Sc}\,\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}\right)$ | Entropy as a function of the biquaternion norm |

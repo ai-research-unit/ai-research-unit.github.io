@@ -184,7 +184,7 @@ $$
 It is unit-norm, so its spectrum is a pair of reciprocals; computed from the matrix image it is
 
 $$
-\lambda_1=1.624811-1.300243i,\qquad \lambda_2=0.375189+0.300243i,
+\eta_1=1.624811-1.300243i,\qquad \eta_2=0.375189+0.300243i,
 $$
 
 with moduli $2.081019$ and $0.480534$ and arguments $\mp0.674889$. The sum is $2Q_t=2-i$, that is $Q_t=1-\tfrac{i}{2}$, and the product is $N=1$.
@@ -299,11 +299,11 @@ which is exactly the eigenvalue computed above.
 
 | object | value on the fundamental | where it appears |
 |---|---|---|
-| weight $w_+$ | $+\tfrac12$ | $\lambda_+=e^{+\theta_{\mathrm{rpd}}/2}$ |
+| weight $w_+$ | $+\tfrac12$ | $\eta_{+}=e^{+\theta_{\mathrm{rpd}}/2}$ |
 | $B$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the square root of the squared vector part, and the square itself | — |
-| $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues of the general element | — |
+| $\eta_{\pm}=Q_t\pm iB$ | the two eigenvalues of the general element | — |
 | $\vec Z=-i\vec Q/B$, $P_\pm=\tfrac12(e_t\pm\vec Z)$ | the unit vector of the vector part and the two eigenprojectors | — |
-| weight $w_-$ | $-\tfrac12$ | $\lambda_-=e^{-\theta_{\mathrm{rpd}}/2}$ |
+| weight $w_-$ | $-\tfrac12$ | $\eta_{-}=e^{-\theta_{\mathrm{rpd}}/2}$ |
 | sum $w_++w_-$ | $0$ | $\det=1$ |
 | root of the adjoint | $\pm1$ | eigenvalue ratio $e^{2\theta_{\mathrm{rpd}}}$ |
 
@@ -333,7 +333,7 @@ The fundamental representation is two-dimensional, so it has two weights. The nu
 
 ### When the Eigenvalues Coincide
 
-$\lambda_+=\lambda_-$ requires $\operatorname{tr}^{2}=4$, that is $H_t^{2}=1$. Since $\tilde H$ is Hermitian of unit norm, $H_t$ is real and
+$\eta_{+}=\eta_{-}$ requires $\operatorname{tr}^{2}=4$, that is $H_t^{2}=1$. Since $\tilde H$ is Hermitian of unit norm, $H_t$ is real and
 
 $$
 1=\langle\tilde H\rangle_{\natural}=H_t^{2}+\sum_{\imath\in\{x,y,z\}} H_\imath^{2}=H_t^{2}-\sum_{\imath\in\{x,y,z\}}\lvert H_\imath\rvert^{2},
@@ -342,7 +342,7 @@ $$
 so $H_t^{2}\ge1$ with equality **if and only if the vector part vanishes**. Hence
 
 $$
-\lambda_+=\lambda_-\iff\tilde H=\pm e_t .
+\eta_{+}=\eta_{-}\iff\tilde H=\pm e_t .
 $$
 
 ### What It Means

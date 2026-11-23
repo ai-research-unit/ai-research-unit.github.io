@@ -12,7 +12,7 @@ This article asks what entanglement entropy and the replica trick are in the biq
 
 1. **Entanglement entropy of a biquaternion state is an entropy of a biquaternion state.** For a bipartition of a state of the tensor power $\mathbb{B}^{\otimes m}$, the reduced state $\rho_A$ is again a biquaternion-algebra element of the appropriate tensor power, and when it is a single-mode state it is a Bloch-ball state whose entropy is the closed form of the relative-entropy companion article.
 
-2. **The replica moments are explicit.** The integer moments $Z_n=2\,\mathrm{Sc}\,\rho_A^n=\sum_i\lambda_i^n$ are the power sums of the reduced state's eigenvalues, and the replica trick's analytic continuation is the continuation of a finite sum of exponentials. The entropic content is the same as in the field: $S_A=\lim_{n\to1}S_n=-\frac{d}{dn}\log Z_n|_{n=1}$.
+2. **The replica moments are explicit.** The integer moments $Z_n=2\,\mathrm{Sc}\,\rho_A^n=\sum_i\eta_i^n$ are the power sums of the reduced state's eigenvalues, and the replica trick's analytic continuation is the continuation of a finite sum of exponentials. The entropic content is the same as in the field: $S_A=\lim_{n\to1}S_n=-\frac{d}{dn}\log Z_n|_{n=1}$.
 
 3. **The replica geometry is the tensor power and its shift.** The $n$-sheeted cover of the field-theoretic replica trick is replaced, in the framework, by the tensor power $\mathbb{B}^{\otimes n}$ and the cyclic permutation of the replicas; the moment $Z_n$ is the expectation of the replica shift in the $n$-fold state, and for $n=2$ it is the swap expectation that computes the purity.
 
@@ -40,19 +40,19 @@ and the von Neumann entropy is their limit as $n\to1$. The moments $Z_n$ are cal
 
 ### The Entropy as the Limit of the Rényi Entropies
 
-The limit is worth deriving once, because the replica trick is its field-theoretic evaluation. Write the eigenvalues of $\rho_A$ as $\lambda_i$, so that $Z_n=\sum_i\lambda_i^n$ and $Z_1=\sum_i\lambda_i=1$. Then
+The limit is worth deriving once, because the replica trick is its field-theoretic evaluation. Write the eigenvalues of $\rho_A$ as $\eta_i$, so that $Z_n=\sum_i\eta_i^n$ and $Z_1=\sum_i\eta_i=1$. Then
 $$
-S_n=\frac{1}{1-n}\log\sum_i\lambda_i^n,
+S_n=\frac{1}{1-n}\log\sum_i\eta_i^n,
 $$
 and both numerator and denominator vanish at $n=1$. L'Hôpital's rule gives
 $$
 \lim_{n\to1}S_n
 =\frac{\frac{d}{dn}\log Z_n\big|_{n=1}}{\frac{d}{dn}(1-n)\big|_{n=1}}
 =-\frac{\left.\frac{dZ_n}{dn}\right|_{n=1}}{1}
-=-\sum_i\lambda_i\log\lambda_i
+=-\sum_i\eta_i\log\eta_i
 =-2\,\mathrm{Sc}\big(\rho_A\log\rho_A\big)=S_A,
 $$
-using $\left.\frac{dZ_n}{dn}\right|_{n=1}=\sum_i\lambda_i\log\lambda_i$. Hence
+using $\left.\frac{dZ_n}{dn}\right|_{n=1}=\sum_i\eta_i\log\eta_i$. Hence
 $$
 \boxed{\;S_A=\lim_{n\to1}S_n=-\frac{d}{dn}\log Z_n\Big|_{n=1}\;}.
 $$
@@ -72,11 +72,11 @@ where $Z_1$ is the ordinary partition function. The quotient removes the non-uni
 
 ### The Finite-Dimensional Trick
 
-In finite dimension the replica trick is not a trick at all: the continuation is the continuation of an explicit function. If $\rho_A$ has eigenvalues $\lambda_i$, then
+In finite dimension the replica trick is not a trick at all: the continuation is the continuation of an explicit function. If $\rho_A$ has eigenvalues $\eta_i$, then
 $$
-Z_n=\sum_i\lambda_i^n
+Z_n=\sum_i\eta_i^n
 $$
-for every integer $n\ge1$, and the right-hand side is an entire function of $n$, so its continuation to non-integer $n$ is immediate. The Rényi entropies are $S_n=\frac{1}{1-n}\log\sum_i\lambda_i^n$, and the entropy is the limit above. In the biquaternion framework the eigenvalues of a single-mode reduced state are $\tfrac12(1\pm|\vec r_A|)$, where $\vec r_A$ is the reduced state's Bloch vector, so
+for every integer $n\ge1$, and the right-hand side is an entire function of $n$, so its continuation to non-integer $n$ is immediate. The Rényi entropies are $S_n=\frac{1}{1-n}\log\sum_i\eta_i^n$, and the entropy is the limit above. In the biquaternion framework the eigenvalues of a single-mode reduced state are $\tfrac12(1\pm|\vec r_A|)$, where $\vec r_A$ is the reduced state's Bloch vector, so
 $$
 S_A=-\tfrac12\log\frac{1-|\vec r_A|^2}{4}-|\vec r_A|\,\mathrm{artanh}\big(|\vec r_A|\big),
 $$
@@ -114,18 +114,18 @@ where the factors carrying the replica subscript are the second replica. The ide
 
 For a **pure** bipartite state the reduced spectra of the two sides coincide, and the reason is the Schmidt decomposition. Every $|\tilde{Ξ}\rangle\in\mathcal H_A\otimes\mathcal H_B$ can be written
 $$
-|\tilde{Ξ}\rangle=\sum_i\sqrt{\lambda_i}\,|a_i\rangle\otimes|b_i\rangle,
-\qquad \lambda_i\ge0,\quad \sum_i\lambda_i=1,
+|\tilde{Ξ}\rangle=\sum_i\sqrt{\eta_i}\,|a_i\rangle\otimes|b_i\rangle,
+\qquad \eta_i\ge0,\quad \sum_i\eta_i=1,
 $$
 with orthonormal sets $\{|a_i\rangle\}$ and $\{|b_i\rangle\}$; then
 $$
-\rho_A=\sum_i\lambda_i\,|a_i\rangle\langle a_i|,
+\rho_A=\sum_i\eta_i\,|a_i\rangle\langle a_i|,
 \qquad
-\rho_B=\sum_i\lambda_i\,|b_i\rangle\langle b_i|,
+\rho_B=\sum_i\eta_i\,|b_i\rangle\langle b_i|,
 $$
-so the two reduced states have the same spectrum, $S_A=S_B$, and the same replica moments $Z_n=\sum_i\lambda_i^n$. In the biquaternion framework the bipartite algebra $\mathbb{B}\otimes\mathbb{B}$ has complex dimension sixteen and the modules on which pure states live are smaller; for a two-qubit pure state the Schmidt decomposition has at most two terms, which is why the worked example below has two eigenvalues and why the reduced state is a Bloch-ball state.
+so the two reduced states have the same spectrum, $S_A=S_B$, and the same replica moments $Z_n=\sum_i\eta_i^n$. In the biquaternion framework the bipartite algebra $\mathbb{B}\otimes\mathbb{B}$ has complex dimension sixteen and the modules on which pure states live are smaller; for a two-qubit pure state the Schmidt decomposition has at most two terms, which is why the worked example below has two eigenvalues and why the reduced state is a Bloch-ball state.
 
-The **entanglement spectrum** is the set $\{-\log\lambda_i\}$, the spectrum of the modular Hamiltonian of the reduced state, by the first-law companion article. Its spacing controls the entanglement, and its two limits are the two extreme cases: a product state has one Schmidt coefficient equal to one and the rest zero, so the entanglement spectrum is a single level at zero and $S_A=0$; a maximally entangled state has all nonzero coefficients equal, so the spectrum is degenerate and $S_A$ is maximal. The replica moments are the power sums of $\exp(-\varepsilon_i)$ with $\varepsilon_i$ the entanglement energies, so the Rényi entropies are free-energy differences of the entanglement spectrum: with $\tilde{Ϛ}_{\Psi,A}=\exp(-K)$ and $Z_n=2\,\mathrm{Sc}\,\exp(-nK)$, and writing $F(T)=-T\log\bigl(2\,\mathrm{Sc}\,\exp(-K/T)\bigr)$ for the free energy of the spectrum at temperature $T$, one has $S_n=\frac{n}{n-1}\big[F(1/n)-F(1)\big]$ — the standard interpretation, available in the framework because the entanglement spectrum is the spectrum of an ordinary $\mathbb{B}_{\Psi}$ element.
+The **entanglement spectrum** is the set $\{-\log\eta_i\}$, the spectrum of the modular Hamiltonian of the reduced state, by the first-law companion article. Its spacing controls the entanglement, and its two limits are the two extreme cases: a product state has one Schmidt coefficient equal to one and the rest zero, so the entanglement spectrum is a single level at zero and $S_A=0$; a maximally entangled state has all nonzero coefficients equal, so the spectrum is degenerate and $S_A$ is maximal. The replica moments are the power sums of $\exp(-\varepsilon_i)$ with $\varepsilon_i$ the entanglement energies, so the Rényi entropies are free-energy differences of the entanglement spectrum: with $\tilde{Ϛ}_{\Psi,A}=\exp(-K)$ and $Z_n=2\,\mathrm{Sc}\,\exp(-nK)$, and writing $F(T)=-T\log\bigl(2\,\mathrm{Sc}\,\exp(-K/T)\bigr)$ for the free energy of the spectrum at temperature $T$, one has $S_n=\frac{n}{n-1}\big[F(1/n)-F(1)\big]$ — the standard interpretation, available in the framework because the entanglement spectrum is the spectrum of an ordinary $\mathbb{B}_{\Psi}$ element.
 
 ## Worked Example: a Two-Qubit Biquaternion State
 
@@ -148,7 +148,7 @@ $$
 \qquad
 |\vec r_A|=\big|\cos(2\theta)\big|,
 \qquad
-\lambda_\pm=\frac{1\pm\cos2\theta}{2}=\cos^2\theta,\ \sin^2\theta .
+\eta_{\pm}=\frac{1\pm\cos2\theta}{2}=\cos^2\theta,\ \sin^2\theta .
 $$
 The purity is $Z_2=\cos^4\theta+\sin^4\theta$, and the entanglement entropy is $S_A=h(\cos^2\theta)$, the binary entropy of the squared cosine.
 
@@ -204,7 +204,7 @@ and the entropies are $S_1=h(1/3)=0.636514$, $S_2=0.587787$, $S_3=0.549306$, $S_
 
 **Established (theorem, imported).** The definition of entanglement entropy and the Rényi entropies; their ordering and limits; the identification $S_A=\lim_{n\to1}S_n=-\frac{d}{dn}\log Z_n|_{1}$; the field-theoretic replica trick as a partition function on an $n$-sheeted cover, including the quotient by $Z_1^n$; the area-law output of the method. All standard.
 
-**Established (recomputed here).** The finite-dimensional replica moments $Z_n=\sum_i\lambda_i^n$; the replica formula $Z_n=2^n\,\mathrm{Sc}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$ with the $n=2$ swap identity and its $n=2,3,4$ instances, verified on the explicit state and on a generic two-qubit state; the reduced state of the two-qubit family as a biquaternion Bloch state with $r_A=|\cos2\theta|$; the agreement of the biquaternion entropy closed form with the binary entropy; and the Rényi table with its $n\to1$ convergence.
+**Established (recomputed here).** The finite-dimensional replica moments $Z_n=\sum_i\eta_i^n$; the replica formula $Z_n=2^n\,\mathrm{Sc}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$ with the $n=2$ swap identity and its $n=2,3,4$ instances, verified on the explicit state and on a generic two-qubit state; the reduced state of the two-qubit family as a biquaternion Bloch state with $r_A=|\cos2\theta|$; the agreement of the biquaternion entropy closed form with the binary entropy; and the Rényi table with its $n\to1$ convergence.
 
 **Interpretation.** That the tensor power and its cyclic shift are read as the framework's replica geometry, and that the entanglement entropy of a bipartition is read as the entropy of a reduced biquaternion state.
 

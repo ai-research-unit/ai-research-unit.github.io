@@ -66,7 +66,7 @@ so the solutions are exactly $0$ and $e_t$. A direct sum decomposition would nee
 
 **Statement.** The kernel of the action of the invertible group $\mathbb{B}^\times$ on the complex lines of $\mathbb{B}$ is the centre, $\mathbb{C}^\times e_t$. Hence no central data is observable at the level of states.
 
-**Proof.** A central element multiplies every element by one scalar, $\tilde{Q}_3\tilde{Q}=\lambda\tilde{Q}$, so it fixes every line. Conversely, if $\tilde{U}$ fixes every line then for each element $\tilde{Q}$ there is $\lambda(\tilde{Q})\in\mathbb{C}$ with $\tilde{U}\tilde{Q}=\lambda(\tilde{Q})\tilde{Q}$; at $\tilde{Q}=e_t$ this reads $\tilde{U}=\lambda e_t$, so $\tilde{U}$ is central.
+**Proof.** A central element multiplies every element by one scalar, $\tilde{Q}_3\tilde{Q}=Q_t\tilde{Q}$, so it fixes every line. Conversely, if $\tilde{U}$ fixes every line then for each element $\tilde{Q}$ there is $Q_t\in\mathbb{C}$ with $\tilde{U}\tilde{Q}=Q_t\tilde{Q}$; at $\tilde{Q}=e_t$ this reads $\tilde{U}=Q_te_t$, so $\tilde{U}$ is central.
 
 **Consequence.** The global phase and the overall scale of the state carry no information in this framework. The relevant symmetry group on states is the projective group $PGL(2,\mathbb{C})$, or $SO(3)$ on the Bloch sphere after restriction to unitaries, and the centre is not represented.
 
@@ -166,13 +166,13 @@ for every invertible $\vec u$, with both factors non-zero. An element is inverti
 
 ### O12. There are no canonical commutation relations inside the algebra
 
-**Statement.** There are no elements $\tilde{Q}_1,\tilde{Q}_2\in\mathbb{B}$ and no non-zero central scalar $\lambda$ with $[\tilde{Q}_1,\tilde{Q}_2]=\lambda e_t$, and no finite-dimensional space on which the algebra acts carries such a pair either.
+**Statement.** There are no elements $\tilde{Q}_1,\tilde{Q}_2\in\mathbb{B}$ and no non-zero central scalar $Q_t$ with $[\tilde{Q}_1,\tilde{Q}_2]=Q_te_t$, and no finite-dimensional space on which the algebra acts carries such a pair either.
 
 **Proof.** The doubled scalar part of any commutator vanishes,
 $$
 2\,\mathrm{Sc}\bigl([\tilde{Q}_1,\tilde{Q}_2]\bigr)=2\,\mathrm{Sc}\bigl(\tilde{Q}_1\tilde{Q}_2\bigr)-2\,\mathrm{Sc}\bigl(\tilde{Q}_2\tilde{Q}_1\bigr)=0,
 $$
-by cyclicity, whereas $2\,\mathrm{Sc}(\lambda e_t)=2\lambda\neq0$. The same argument applies in any finite-dimensional carrier, since the trace there is also cyclic.
+by cyclicity, whereas $2\,\mathrm{Sc}(Q_te_t)=2Q_t\neq0$. The same argument applies in any finite-dimensional carrier, since the trace there is also cyclic.
 
 **Consequence.** The Heisenberg algebra, and with it position, momentum, and the creation and annihilation operators, cannot be internalised in $\mathbb{B}$. They require an infinite-dimensional extension, and the extension cannot be bounded: the norm argument of *The Biquaternion Framework and the Canonical Commutation Relation* excludes a bounded pair in any dimension, so unboundedness is part of the obstruction and not a technicality of the standard realisation.
 
@@ -307,7 +307,7 @@ The orbit of a state under the Hamiltonian flows is the sphere of constant $r$. 
 
 **Statement.** The algebra contains no scale: it is invariant under the simultaneous rescaling of all its elements, and it admits no relation that could fix a mass, a length, or an energy.
 
-**Proof.** Every defining relation $\vec e_\imath^2=-e_t$ for $k=x,y,z$, $\vec e_i \vec e_j=\epsilon_{\imath\jmath\ell}\vec e_\imath$ for $i\neq j$ in $\{x,y,z\}$, $i^2=-1$ is scale-free. A central element $\lambda e_t$ satisfies no equation with a numerical solution by O4; and the biquaternion norm is quadratic, so it rescales by the square of the element. No combination of the relations produces a number with the dimensions of a physical scale.
+**Proof.** Every defining relation $\vec e_\imath^2=-e_t$ for $k=x,y,z$, $\vec e_i \vec e_j=\epsilon_{\imath\jmath\ell}\vec e_\imath$ for $i\neq j$ in $\{x,y,z\}$, $i^2=-1$ is scale-free. A central element $Q_te_t$ satisfies no equation with a numerical solution by O4; and the biquaternion norm is quadratic, so it rescales by the square of the element. No combination of the relations produces a number with the dimensions of a physical scale.
 
 **Consequence.** The framework cannot explain the origin of mass or of any dimensionful parameter; masses enter through central coefficients such as $m e_t$.
 

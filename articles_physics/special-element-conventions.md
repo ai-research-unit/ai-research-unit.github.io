@@ -50,7 +50,7 @@ The **roots are outside the family** in this pass and keep the glyphs of §*The 
 
 The roots carry a symbol of their own, beside the idempotent $\tilde\Pi_{\mathrm{id}}$ (§*The Idempotent Convention*) and the nilpotent $\tilde\pi_{\mathrm{nil}}$ (§*The Nilpotent Convention*): the **root glyph**, in the two cases.
 
-A **root of $1$** of the algebra is an element $\tilde{Ζ}$ with $\tilde{Ζ}^2 = 1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde{Ζ}^2 = \lambda e_t$. The roots of the three central values $-1, 0, +1$ are those of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general root is that of *The Square Roots of a General Element in the Biquaternion Algebra*; the roots the series uses are the roots of $1$.
+A **root of $1$** of the algebra is an element $\tilde{Ζ}$ with $\tilde{Ζ}^2 = 1$. More generally a **root of a central value** $Q_t$ is an element with $\tilde{Ζ}^2 = Q_te_t$. The roots of the three central values $-1, 0, +1$ are those of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general root is that of *The Square Roots of a General Element in the Biquaternion Algebra*; the roots the series uses are the roots of $1$.
 
 **The square is read in a named product**, the algebra product unless the statement names another, as for the nilpotents (§*The Nilpotent Convention*), and the class is relative to the product; the roots of a value in the four general products are those of *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 

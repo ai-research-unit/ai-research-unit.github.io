@@ -79,9 +79,9 @@ The reason two members of an orbit are two descriptions rather than two configur
 $$
 \tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma,
 \qquad
-\tilde{Ξ}_{2} = \lambda\tilde{Ξ},
+\tilde{Ξ}_{2} = \digamma_{\mathrm{gau}}\tilde{Ξ},
 \qquad
-\lambda = \exp(i\theta_{\mathrm{gau}}).
+\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}}).
 $$
 
 Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
@@ -89,20 +89,20 @@ Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the 
 The three shifts are arranged so that the derivative of the transformed field in the transformed background is the transform of the derivative:
 
 $$
-D_2\tilde{Ξ}_{2} = \left(\tilde\nabla_\Phi + i\kappa\tilde{A}_{\Phi} - i\kappa\tilde\nabla_\Phi\Gamma\right)\lambda\tilde{Ξ}
-= \lambda\left(\tilde\nabla_\Phi + i\kappa\tilde{A}_{\Phi}\right)\tilde{Ξ}
-= \lambda\,D\tilde{Ξ},
+D_2\tilde{Ξ}_{2} = \left(\tilde\nabla_\Phi + i\kappa\tilde{A}_{\Phi} - i\kappa\tilde\nabla_\Phi\Gamma\right)\digamma_{\mathrm{gau}}\tilde{Ξ}
+= \digamma_{\mathrm{gau}}\left(\tilde\nabla_\Phi + i\kappa\tilde{A}_{\Phi}\right)\tilde{Ξ}
+= \digamma_{\mathrm{gau}}\,D\tilde{Ξ},
 $$
 
-the middle step using that $\lambda$ is central, so that $\tilde\nabla_\Phi(\lambda\tilde{Ξ}) = (\tilde\nabla_\Phi\lambda)\tilde{Ξ} + \lambda\tilde\nabla_\Phi\tilde{Ξ}$ and $(\tilde\nabla_\Phi\lambda) = i\kappa(\tilde\nabla_\Phi\Gamma)\lambda$ cancels the shift of the connection. Equivalently, at the level of operators,
+the middle step using that $\digamma_{\mathrm{gau}}$ is central, so that $\tilde\nabla_\Phi(\digamma_{\mathrm{gau}}\tilde{Ξ}) = (\tilde\nabla_\Phi\digamma_{\mathrm{gau}})\tilde{Ξ} + \digamma_{\mathrm{gau}}\tilde\nabla_\Phi\tilde{Ξ}$ and $(\tilde\nabla_\Phi\digamma_{\mathrm{gau}}) = i\kappa(\tilde\nabla_\Phi\Gamma)\digamma_{\mathrm{gau}}$ cancels the shift of the connection. Equivalently, at the level of operators,
 
 $$
-D_2 = \lambda\,D\,\lambda^{-1}.
+D_2 = \digamma_{\mathrm{gau}}\,D\,\digamma_{\mathrm{gau}}^{-1}.
 $$
 
-This is the algebraic content of the redundancy: the pair $(\tilde{A}_{\Phi},\tilde{Ξ})$ and the pair $(\tilde{A}_{\Phi,2},\tilde{Ξ}_{2})$ are related by the local $*$-unitary $\lambda$, and every quantity built from $D$ and $\tilde{Ξ}$ in a gauge-covariant way is therefore unchanged. The operator identity is what makes the invariance of the relative entropy, established below, a statement about the biquaternion algebra rather than an imported fact about gauge theory.
+This is the algebraic content of the redundancy: the pair $(\tilde{A}_{\Phi},\tilde{Ξ})$ and the pair $(\tilde{A}_{\Phi,2},\tilde{Ξ}_{2})$ are related by the local $*$-unitary $\digamma_{\mathrm{gau}}$, and every quantity built from $D$ and $\tilde{Ξ}$ in a gauge-covariant way is therefore unchanged. The operator identity is what makes the invariance of the relative entropy, established below, a statement about the biquaternion algebra rather than an imported fact about gauge theory.
 
-Two remarks fix the scope. The transformation is an automorphism of the field algebra only when $\lambda$ is central, which is the abelian case the framework's own gauge group supplies; for a non-abelian group $D_2 = \lambda D\lambda^{-1}$ holds with $\lambda$ a matrix-valued group element and $\lambda^{-1}$ on the right, which is the adjoint law of the non-abelian companion. And because the framework's $\lambda$ is central, conjugation by it fixes every element of $\mathbb{B}$: the inner automorphism of the algebra is the identity, and the transformation acts on the pair $(\tilde{A}_{\Phi},\tilde{Ξ})$ as the common central scalar $\lambda$ rather than as a non-trivial re-labelling of the algebra's elements. That is why the abelian orbit is not merely equivalent to a trivial action on the informational sector but literally the trivial action, as the next section shows.
+Two remarks fix the scope. The transformation is an automorphism of the field algebra only when $\digamma_{\mathrm{gau}}$ is central, which is the abelian case the framework's own gauge group supplies; for a non-abelian group $D_2 = \digamma_{\mathrm{gau}} D\digamma_{\mathrm{gau}}^{-1}$ holds with $\digamma_{\mathrm{gau}}$ a matrix-valued group element and $\digamma_{\mathrm{gau}}^{-1}$ on the right, which is the adjoint law of the non-abelian companion. And because the framework's $\digamma_{\mathrm{gau}}$ is central, conjugation by it fixes every element of $\mathbb{B}$: the inner automorphism of the algebra is the identity, and the transformation acts on the pair $(\tilde{A}_{\Phi},\tilde{Ξ})$ as the common central scalar $\digamma_{\mathrm{gau}}$ rather than as a non-trivial re-labelling of the algebra's elements. That is why the abelian orbit is not merely equivalent to a trivial action on the informational sector but literally the trivial action, as the next section shows.
 
 ## The Orbit Is the Fibre of the Curvature Map
 
@@ -177,11 +177,11 @@ The claim that the orbit carries no state information can be made exact with the
 Let $\omega$ be a state of the charged field algebra in a background connection $\tilde{A}_{\Phi}$, and let $\omega_2$ be the corresponding state in the gauge-transformed background $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. Gauge covariance states that the two are related by the automorphism implemented by the local central phase,
 
 $$
-\lambda(\tilde{Q}) = \exp(i\theta_{\mathrm{gau}}\tilde{Q}), \qquad
+\digamma_{\mathrm{gau}}(\tilde{Q}) = \exp(i\theta_{\mathrm{gau}}\tilde{Q}), \qquad
 \omega_2 = \omega \circ  \mathrm{Ad}_{k^{-1}} .
 $$
 
-Because $\lambda$ is central and of unit phase, the automorphism is inner and implemented by a $*$-unitary of the algebra, and the GNS representations of $\omega$ and $\omega_2$ are unitarily equivalent. For any two backgrounds $\tilde{A}_{\Phi}$ and $\tilde{Q}_1$ and their gauge transforms, the relative entropies therefore agree:
+Because $\digamma_{\mathrm{gau}}$ is central and of unit phase, the automorphism is inner and implemented by a $*$-unitary of the algebra, and the GNS representations of $\omega$ and $\omega_2$ are unitarily equivalent. For any two backgrounds $\tilde{A}_{\Phi}$ and $\tilde{Q}_1$ and their gauge transforms, the relative entropies therefore agree:
 
 $$
 \boxed{\;S(\tilde{Ϛ}_{\Psi,\tilde{A}_{\Phi,2}}\,\|\,\tilde{Ϛ}_{\Psi,\tilde{Q}_{1,2}}) = S(\tilde{Ϛ}_{\Psi,\tilde{A}_{\Phi}}\,\|\,\tilde{Ϛ}_{\Psi,\tilde{Q}_1})\;}.
@@ -195,12 +195,12 @@ Three consequences of the invariance spell out the redundancy.
 
 **The invariance is not confined to the relative entropy.** Every functional of the state that is invariant under $*$-unitary conjugation inherits it: the spectrum of $\tilde{Ϛ}_{\Psi}$, the fidelity between two states, any $f$-divergence, and, for a phase acting as a local $*$-unitary on a subsystem, that subsystem's entanglement entropy. The redundancy is therefore a property of the representation rather than of any particular measure; and because the abelian phase is central and of unit modulus, each of these quantities is here not merely preserved along the orbit but unchanged.
 
-**The abelian orbit is invisible to the informational sector.** This is the framework-specific sharpening. The gauge group is the $*$-unitary part of the centre, so $\lambda = \exp(i\theta_{\mathrm{cen}})$ commutes with every element of $\mathbb{B}$. On a state $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ its action is
+**The abelian orbit is invisible to the informational sector.** This is the framework-specific sharpening. The gauge group is the $*$-unitary part of the centre, so $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{cen}})$ commutes with every element of $\mathbb{B}$. On a state $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ its action is
 
 Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
 $$
-\tilde{Ϛ}_{\Psi} \longmapsto \lambda\,\tilde{Ϛ}_{\Psi}\,\lambda^\dagger = |\lambda|^2\tilde{Ϛ}_{\Psi} = \tilde{Ϛ}_{\Psi},
+\tilde{Ϛ}_{\Psi} \longmapsto \digamma_{\mathrm{gau}}\,\tilde{Ϛ}_{\Psi}\,\digamma_{\mathrm{gau}}^\dagger = |\digamma_{\mathrm{gau}}|^2\tilde{Ϛ}_{\Psi} = \tilde{Ϛ}_{\Psi},
 $$
 
 so the state is not merely unitarily equivalent to its gauge transform — it is *literally unchanged*. The central phase acts trivially on the Hermitian sector. The redundancy is the statement that the algebra carries no Hermitian observable conjugate to its central phase, and therefore no informational content located in the phase direction.
@@ -295,13 +295,13 @@ The boundary is drawn as in the companion articles.
 
 The gauge orbit of a biquaternionic connection is the set $\mathcal{O}(\tilde{A}_{\Phi}) = \{\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\}$ of descriptions of one physical configuration. It is a torsor for the group of real gauge functions modulo constants: the gradient map has kernel the constants, so the gauge group acts freely and transitively, and there is no preferred representative. It is the fibre of the curvature map, because $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ is orbit-invariant while the gauge scalar $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ shifts by $-\Box_\Phi\Gamma$ and is pure gauge. The rank of the pure-gauge map is one per Fourier mode, which yields the standard degree-of-freedom count $4\to3\to2$.
 
-Information-theoretically the orbit is a **redundancy**, not a loss. A gauge transformation is implemented by the central phase $\lambda = \exp(i\theta_{\mathrm{gau}})$, which is $*$-unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,
+Information-theoretically the orbit is a **redundancy**, not a loss. A gauge transformation is implemented by the central phase $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$, which is $*$-unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,
 
 $$
 S(\tilde{Ϛ}_{\Psi,\tilde{A}_{\Phi,2}}\|\tilde{Ϛ}_{\Psi,\tilde{Q}_{1,2}}) = S(\tilde{Ϛ}_{\Psi,\tilde{A}_{\Phi}}\|\tilde{Ϛ}_{\Psi,\tilde{Q}_1}).
 $$
 
-For the framework's abelian group the statement is stronger still: because the phase is central and Hermitian, it acts on a state of $\mathbb{B}_{\Psi}$ by $\tilde{Ϛ}_{\Psi}\mapsto|\lambda|^2\tilde{Ϛ}_{\Psi} = \tilde{Ϛ}_{\Psi}$. The informational sector is not merely unable to distinguish the orbit; it is unchanged by it, and no observable is conjugate to the central phase.
+For the framework's abelian group the statement is stronger still: because the phase is central and Hermitian, it acts on a state of $\mathbb{B}_{\Psi}$ by $\tilde{Ϛ}_{\Psi}\mapsto|\digamma_{\mathrm{gau}}|^2\tilde{Ϛ}_{\Psi} = \tilde{Ϛ}_{\Psi}$. The informational sector is not merely unable to distinguish the orbit; it is unchanged by it, and no observable is conjugate to the central phase.
 
 The orbit's only non-empty content is global. A connection can be gauged to zero at any point, and on a neighbourhood precisely when its curvature vanishes; the obstruction to doing so on a loop is the holonomy, whose trace is the Wilson loop. The information in the gauge orbit is therefore its monodromy — the fibre-bundle structure that the local triviality leaves behind — and not any state information. Redundancy, loss and relocation are three different operations, and the orbit realizes the first: the fibre is quotiented away and a representative recovers the configuration, which is what distinguishes it from the confinement of the companion article and from the relocation of the Higgs mechanism.
 
@@ -319,7 +319,7 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
 | $\tilde{A}_{\Phi} = \sum_{\imath} A_{\imath} e_{\imath} = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$ | Connection, a material-sector one-form |
 | $\Gamma$ | Real scalar gauge function |
-| $\lambda = \exp(i\theta_{\mathrm{gau}})$ | Local central phase |
+| $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$ | Local central phase |
 | $\kappa =\frac{2\pi ϙ}{h}$ | Coupling |
 | $\mathcal{O}(\tilde{A}_{\Phi}) = \{\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\}$ | The gauge orbit |
 | $\mathcal{G}/\mathbb{R}$ | Group of real gauge functions modulo constants; the orbit's torsor group |

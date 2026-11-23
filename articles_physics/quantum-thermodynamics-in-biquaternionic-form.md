@@ -82,10 +82,10 @@ $$
 \boxed{\;E=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t-|\vec h_\Psi|\tanh r_x\;}.
 $$
 
-The eigenvalues of $\tilde{Ϛ}_{\Psi}$ are the level populations, $\lambda_\pm=\tfrac12(1\pm\tanh x)$ with $\lambda_+$ the ground-state population, and the entropy is the binary entropy of the pair:
+The eigenvalues of $\tilde{Ϛ}_{\Psi}$ are the level populations, $\eta_{\pm}=\tfrac12(1\pm\tanh x)$ with $\eta_{+}$ the ground-state population, and the entropy is the binary entropy of the pair:
 
 $$
-\boxed{\;S=-\lambda_+\log\lambda_+-\lambda_-\log\lambda_-=\log 2+\log\cosh x-x\tanh x\;}.
+\boxed{\;S=-\eta_{+}\log\eta_{+}-\eta_{-}\log\eta_{-}=\log 2+\log\cosh x-x\tanh x\;}.
 $$
 
 The free energy is $F=E-S/\beta$, which also equals $-\beta^{-1}\log Z$:

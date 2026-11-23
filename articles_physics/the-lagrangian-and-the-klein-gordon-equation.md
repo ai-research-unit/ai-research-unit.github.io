@@ -235,10 +235,10 @@ which is the Hamiltonian of the previous section and is non-negative term by ter
 The remaining symmetries are the three translations $r_\imath\mapsto r_\imath+\epsilon_\imath$ and the three rotations of the spatial axes. Their Noether currents are the components of one tensor,
 
 $$
-T_{\imath\jmath}=\mathrm{Sc}\big[(\partial_{\imath}\tilde\Xi)^{*}\partial_{\jmath}\tilde\Xi+(\partial_{\jmath}\tilde\Xi)^{*}\partial_{\imath}\tilde\Xi\big]-\eta_{\imath\jmath}\mathcal{L},
+T_{\imath\jmath}=\mathrm{Sc}\big[(\partial_{\imath}\tilde\Xi)^{*}\partial_{\jmath}\tilde\Xi+(\partial_{\jmath}\tilde\Xi)^{*}\partial_{\imath}\tilde\Xi\big]-\delta_{\imath\jmath}\mathcal{L},
 $$
 
-with $\eta$ the metric of the display in §*The Action in Element Form*, $\mathcal{L}$ the Lagrangian density, and the index pair read with that metric.
+with $\delta$ the metric of the display in §*The Action in Element Form*, $\mathcal{L}$ the Lagrangian density, and the index pair read with that metric.
 
 **Where the tensor comes from.** The Lagrangian depends on $\tilde\Xi$ and its first derivatives and on no coordinate, so it is invariant under $r_{\imath}\mapsto r_{\imath}+\epsilon_{\imath}$ with constant $\epsilon_{\imath}$, and the Noether current of that translation is
 

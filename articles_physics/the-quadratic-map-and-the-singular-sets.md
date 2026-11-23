@@ -121,7 +121,7 @@ $$
 
 the union of the zero-divisor cone and the scalar-free subspace. The two components are different objects. The first is the cone of non-invertible elements; the second is a linear subspace of complex dimension three, the set of matrices of trace zero, on which the two eigenvalues of $\mathsf{M}(\tilde Q)$ are opposite.
 
-The first component is the light cone, inside the material sector. On a material element $\tilde R_{\Phi}=i\lambda e_t+\vec r$ with $\lambda$ and $\vec r$ real the norm is $-\lambda^{2}+\lvert\vec r\rvert^{2}$, so the equation $N=0$ is the equation $\lvert\vec r\rvert=\lvert\lambda\rvert$, which is the light cone of the interval of inertia $(1,3)$ (*The Light Cone as the Biquaternion Zero-Divisor Cone*, *The Material Sector: Four-Vectors, Interval and Lorentz Action*). **The component of the critical set that meets the material sector is the physical light cone, and it is not put there by hand: it is the zero set of the algebra's own quadratic form.**
+The first component is the light cone, inside the material sector. On a material element $\tilde R_{\Phi}=iq'_te_t+\vec r$ with $q'_t$ and $\vec r$ real the norm is $-q'_t^{2}+\lvert\vec r\rvert^{2}$, so the equation $N=0$ is the equation $\lvert\vec r\rvert=\lvert q'_t\rvert$, which is the light cone of the interval of inertia $(1,3)$ (*The Light Cone as the Biquaternion Zero-Divisor Cone*, *The Material Sector: Four-Vectors, Interval and Lorentz Action*). **The component of the critical set that meets the material sector is the physical light cone, and it is not put there by hand: it is the zero set of the algebra's own quadratic form.**
 
 The second component contains the carrier of spin one. The scalar-free subspace $\mathbb{B}_{V}$ is the complex span of the three units $\vec e_x,\vec e_y,\vec e_z$, so it contains the real triple $\mathfrak{k}$ on which the adjoint action of the rotation group acts as the vector representation (*Introduction to the Spin-One Anti-Hermitian Subspace*). Verified: the determinant of the differential vanishes to machine precision on one hundred random real vectors and on one hundred random complex vectors of $\mathbb{B}_{V}$.
 
@@ -139,7 +139,7 @@ Verified: on one hundred random cone elements the spectral radius is $\lvert 2Q_
 
 Proof. On the cone the Cayley–Hamilton identity reads $\tilde Q^{2}=2Q_t\tilde Q$, so $\mathsf{M}(\tilde Q)$ is a rank-one matrix of trace $2Q_t$ and its spectrum is $\{0,2Q_t\}$; hence $\rho=\lvert 2Q_t\rvert$, and the level set $\rho=1$ is the shell $\lvert Q_t\rvert=\tfrac12$ of the cone. A pure vector has $Q_t=0$, hence $\rho=0$, hence it lies in the open set $\{\rho<1\}\subset\mathcal K_0$ and in the interior of the filled set, so it is in no boundary at all.
 
-The reading of the shell is that the marginal lightlike elements are the ones whose scalar part has modulus one half. On the material sector $Q_t=i\lambda$, so the condition is $\lvert\lambda\rvert=\tfrac12$: the light cone cut by a level set of the material time coefficient. **Not the whole cone is marginal; the fractal boundary picks one shell of it**, and the shell is exactly where the cone's own scalar recursion changes from contraction to expansion, as the next section shows. For a parameter that is not zero the pure part of the singular Julia set need not be empty, and the case is treated where the slices are treated.
+The reading of the shell is that the marginal lightlike elements are the ones whose scalar part has modulus one half. On the material sector $Q_t=iq'_t$, so the condition is $\lvert q'_t\rvert=\tfrac12$: the light cone cut by a level set of the material time coefficient. **Not the whole cone is marginal; the fractal boundary picks one shell of it**, and the shell is exactly where the cone's own scalar recursion changes from contraction to expansion, as the next section shows. For a parameter that is not zero the pure part of the singular Julia set need not be empty, and the case is treated where the slices are treated.
 
 ## The Cone
 
@@ -174,7 +174,7 @@ The cone is invariant for one parameter only. For $\tilde C=Ce_t\neq0$ a cone el
 
 Definitions. The filled Julia set is the set of points with bounded orbit and the Julia set is its boundary, $\mathcal K_{\tilde C}=\{\tilde Q: (F_{\tilde C}^{n}(\tilde Q))\text{ bounded}\}$ and $J_{\tilde C}=\partial\mathcal K_{\tilde C}$. Both are completely invariant, and the proofs are those of *The Biquaternion Quadratic Map and Its Julia Sets*; the invariance uses no properness, and none holds.
 
-Theorem (the eigenvalue reduction). Let $\tilde C=Ce_t$ be central, let $q_n$ be the $n$-th iterate of $\omega\mapsto\omega^{2}+C$, and let $\mathsf{M}(\tilde Q)$ be diagonalisable with spectrum $\{\lambda_1,\lambda_2\}$. Then the spectrum of $\mathsf{M}(F_{\tilde C}^{n}(\tilde Q))$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$, and $\tilde Q\in\mathcal K_{\tilde C}$ exactly when both eigenvalues lie in the complex filled set $K_C$. Verified on one hundred diagonalisable elements at $C=-\tfrac{3}{10}+\tfrac{4}{10}i$ for five iterations, with no discrepancy.
+Theorem (the eigenvalue reduction). Let $\tilde C=Ce_t$ be central, let $q_n$ be the $n$-th iterate of $\omega\mapsto\omega^{2}+C$, and let $\mathsf{M}(\tilde Q)$ be diagonalisable with spectrum $\{\eta_1,\eta_2\}$. Then the spectrum of $\mathsf{M}(F_{\tilde C}^{n}(\tilde Q))$ is $\{q_n(\eta_1),q_n(\eta_2)\}$, and $\tilde Q\in\mathcal K_{\tilde C}$ exactly when both eigenvalues lie in the complex filled set $K_C$. Verified on one hundred diagonalisable elements at $C=-\tfrac{3}{10}+\tfrac{4}{10}i$ for five iterations, with no discrepancy.
 
 Theorem (the parameter zero). For $\tilde C=0$,
 
@@ -222,7 +222,7 @@ $$
 Then $G_{\tilde C}\circ F_{\tilde C}=2G_{\tilde C}$, the function vanishes exactly on the filled set, and at a central parameter with a diagonalisable matrix it is the maximum of the two complex Green's functions,
 
 $$
-\boxed{\;G_{Ce_t}(\tilde Q)=\max\bigl(G_C(\lambda_1),G_C(\lambda_2)\bigr)\;}.
+\boxed{\;G_{Ce_t}(\tilde Q)=\max\bigl(G_C(\eta_1),G_C(\eta_2)\bigr)\;}.
 $$
 
 The normalization $G=\log\lVert\tilde Q\rVert+O(1)$ holds on the $\delta$-regular part of the escaping set for every $\delta>0$ and fails on orbits that meet the cone.

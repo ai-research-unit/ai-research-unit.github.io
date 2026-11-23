@@ -62,7 +62,7 @@ The repair is measured, not asserted. On the case $c=2$, $2\pi\nu_m=1.4$, $2\pi\
 
 What the transform buys is a diagonal basis for the coupling. The parent says that a non-central $\tilde M$ turns the four independent coefficients into four coupled channels. In momentum space the coupling is one $4\times4$ matrix acting on one four-component amplitude, and the channels are its eigenvectors. The transform does not remove the coupling; it exhibits the basis in which the coupling is diagonal, and that basis is available because $\tilde M$ is constant.
 
-The eigenvalue is a frequency squared, so the count doubles again. Each eigenvalue $\lambda$ of $\tilde M$ gives $\omega^{2}=c^{2}(4\pi^{2}\nu_{\Phi}^{2}+\lambda)$ and therefore two frequencies $\pm c\sqrt{\nu_{\Phi}^{2}+\lambda}$, one per sign of $\omega$. The eigenvalue problem fixes the dispersion relation; it does not fix the sign of the frequency, and no choice of $\vec\nu_\Phi$ removes the negative root.
+The eigenvalue is a frequency squared, so the count doubles again. Each eigenvalue $\eta$ of $\tilde M$ gives $\omega^{2}=c^{2}(4\pi^{2}\nu_{\Phi}^{2}+\eta)$ and therefore two frequencies $\pm c\sqrt{\nu_{\Phi}^{2}+\eta}$, one per sign of $\omega$. The eigenvalue problem fixes the dispersion relation; it does not fix the sign of the frequency, and no choice of $\vec\nu_\Phi$ removes the negative root.
 
 The licence travels with the finding: everything in this section needs $\tilde M$ constant, because the symbol exists only there, and a position-dependent $\tilde M$ replaces the matrix by a convolution with no eigenvalue problem at all.
 

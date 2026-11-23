@@ -103,14 +103,14 @@ $$
 
 which is the conjugate momentum of the companion canonical quantization. The regularity of the Legendre transform — no constraint, no gauge redundancy — is what makes the passage between the two forms exact and uncontroversial in the scalar sector; in the Dirac and Maxwell cases the same passage requires the introduction of ghosts and constraints, and the framework supplies no principle that would avoid them.
 
-The path integral is also a semiclassical expansion. Writing $\xi_{\mathrm{scl}}=\xi_{\mathrm{scl},cl}+\eta$ about a solution of the classical equation, the exponent expands as
+The path integral is also a semiclassical expansion. Writing $\xi_{\mathrm{scl}}=\xi_{\mathrm{scl},cl}+\varsigma_{\mathrm{grs}}$ about a solution of the classical equation, the exponent expands as
 
 $$
-S[\xi_{\mathrm{scl},cl}+\eta]=S[\xi_{\mathrm{scl},cl}]
-+\int d^4r\,\eta^\dagger\!\left(\Box_\Phi-\mu^2\right)\!\eta+O(\eta^3),
+S[\xi_{\mathrm{scl},cl}+\varsigma_{\mathrm{grs}}]=S[\xi_{\mathrm{scl},cl}]
++\int d^4r\,\varsigma_{\mathrm{grs}}^\dagger\!\left(\Box_\Phi-\mu^2\right)\!\varsigma_{\mathrm{grs}}+O(\varsigma_{\mathrm{grs}}^3),
 $$
 
-the linear term vanishing by the equation of motion, and the quadratic term carrying no $\tfrac12$ because the central-valued field is complex and its quadratic form is the bilinear $\eta^\dagger(\Box_\Phi-\mu^2)\eta$ — the same complex-versus-real counting that the finite-dimensional Gaussian below exhibits. For the free theory the fluctuation integral is Gaussian and the dependence on the background drops out of the determinant, so the free kernel is **exact**, not merely semiclassical; the one-dimensional model of this statement is the free-particle kernel $K=\sqrt{m/(2\,\pi\,i\,\frac{h}{2\pi}\,T)}\,\exp(\frac{i\,m\,\delta x^{2}}{2\,\frac{h}{2\pi}\,T})$, which the path integral reproduces exactly, and the standard reference for the construction is the path-integral literature. In the interacting theory the determinant depends on the background and the semiclassical expansion becomes the loop expansion treated below.
+the linear term vanishing by the equation of motion, and the quadratic term carrying no $\tfrac12$ because the central-valued field is complex and its quadratic form is the bilinear $\varsigma_{\mathrm{grs}}^\dagger(\Box_\Phi-\mu^2)\varsigma_{\mathrm{grs}}$ — the same complex-versus-real counting that the finite-dimensional Gaussian below exhibits. For the free theory the fluctuation integral is Gaussian and the dependence on the background drops out of the determinant, so the free kernel is **exact**, not merely semiclassical; the one-dimensional model of this statement is the free-particle kernel $K=\sqrt{m/(2\,\pi\,i\,\frac{h}{2\pi}\,T)}\,\exp(\frac{i\,m\,\delta x^{2}}{2\,\frac{h}{2\pi}\,T})$, which the path integral reproduces exactly, and the standard reference for the construction is the path-integral literature. In the interacting theory the determinant depends on the background and the semiclassical expansion becomes the loop expansion treated below.
 
 ## The Generating Functional and the Free Gaussian
 

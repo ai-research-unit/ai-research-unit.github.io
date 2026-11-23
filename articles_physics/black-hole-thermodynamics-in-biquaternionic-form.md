@@ -26,7 +26,7 @@ with $\kappa$ the surface gravity of the horizon. This article takes that result
 
 1. **The entropy is the area, and the area — not a volume — is the surprising fact.** Section "The Entropy Is the Horizon Area" gives the reasons it is the area, and they are not a coincidence: the horizon's intrinsic geometry is two-dimensional; the first law's geometric conjugate to $\kappa$ is $\delta A$; dimensional analysis leaves $A/\ell_P^2$ as the only dimensionless combination; and the Euclidean section localises the entropy at the codimension-two locus where the time circle shrinks. The interior "volume" is not even a state function — it depends on the slicing and grows with the age of the hole.
 2. **The first law must be checked term by term.** Its coefficient $\kappa/(8\pi G)$ and the signs of the angular-momentum and charge terms are fixed by the sign conventions of the horizon's angular velocity and potential. Section "The First Law, Term by Term" verifies all three terms for the general Kerr–Newman horizon, symbolically and numerically, and then on each specialisation separately.
-3. **The Smarr relation is a scaling statement.** It is the Euler relation for a weighted-homogeneous mass, and Section "The Smarr Relation, by Scaling" derives it by scaling the black-hole family rather than quoting it. Its weights are $(2,2,1)$ for $(S,J,Ϙ)$, and they are exactly the scaling weights of the area, the angular momentum, and the charge under $g_{\imath\jmath}\to\lambda^2 g_{\imath\jmath}$. Where an extra dimensionful parameter is present — a cosmological constant — the scaling argument acquires a correction, given in Section "Beyond the Asymptotically Flat Case".
+3. **The Smarr relation is a scaling statement.** It is the Euler relation for a weighted-homogeneous mass, and Section "The Smarr Relation, by Scaling" derives it by scaling the black-hole family rather than quoting it. Its weights are $(2,2,1)$ for $(S,J,Ϙ)$, and they are exactly the scaling weights of the area, the angular momentum, and the charge under $g_{\imath\jmath}\to\digamma_{\mathrm{cfm}}^2 g_{\imath\jmath}$. Where an extra dimensionful parameter is present — a cosmological constant — the scaling argument acquires a correction, given in Section "Beyond the Asymptotically Flat Case".
 
 **The prohibition is that no microscopic counting is claimed.** The entropy $S=A/4$ is a thermodynamic and geometric statement here. The biquaternion framework supplies no microstate count and no horizon Hilbert space; a claim that the entropy has been *counted* would be a defect, and none is made. The framework's informational sector carries a von Neumann entropy functional on its own states, but that is a different object, and it is not the black-hole entropy.
 
@@ -311,26 +311,26 @@ but it is not an independent law: it is the **Euler relation** for a weighted-ho
 
 ### The Scaling of the Family
 
-Consider the Kerr–Newman family with $G$ and $c$ divided out. A global scaling of the metric, $g_{\imath\jmath}\to\lambda^2 g_{\imath\jmath}$, maps a solution with parameters $(M,J,Ϙ)$ to a solution with
+Consider the Kerr–Newman family with $G$ and $c$ divided out. A global scaling of the metric, $g_{\imath\jmath}\to\digamma_{\mathrm{cfm}}^2 g_{\imath\jmath}$, maps a solution with parameters $(M,J,Ϙ)$ to a solution with
 
 $$
-(M,J,Ϙ)\;\longrightarrow\;(\lambda M,\ \lambda^2 J,\ \lambda Ϙ).
+(M,J,Ϙ)\;\longrightarrow\;(\digamma_{\mathrm{cfm}} M,\ \digamma_{\mathrm{cfm}}^2 J,\ \digamma_{\mathrm{cfm}} Ϙ).
 $$
 
 The weights follow from where the charges sit in the asymptotic fields: $M$ is the coefficient of $1/r$ in $g_{tt}$ (weight one), $J$ the coefficient of $1/r^2$ in the frame-dragging function (weight two, an angular momentum), and $Ϙ$ the coefficient of $1/r$ in the Coulomb field (weight one, a charge). Under the same scaling the horizon data transform as
 
 $$
-r_+\to\lambda r_+,
+r_+\to\digamma_{\mathrm{cfm}} r_+,
 \qquad
-A\to\lambda^2 A,
+A\to\digamma_{\mathrm{cfm}}^2 A,
 \qquad
-S\to\lambda^2 S,
+S\to\digamma_{\mathrm{cfm}}^2 S,
 \qquad
-\kappa\to\frac{\kappa}{\lambda},
+\kappa\to\frac{\kappa}{\digamma_{\mathrm{cfm}}},
 \qquad
-T\to\frac{T}{\lambda},
+T\to\frac{T}{\digamma_{\mathrm{cfm}}},
 \qquad
-\Omega\to\frac{\Omega}{\lambda},
+\Omega\to\frac{\Omega}{\digamma_{\mathrm{cfm}}},
 \qquad
 Ξ\toΞ,
 $$
@@ -342,7 +342,7 @@ each verified symbolically: the radius and the area are lengths and areas, the s
 Because the family has this one-parameter scaling and no other dimensionful parameter, the mass can be written as a function $M(S,J,Ϙ)$ of the entropy and the charges, and the scaling statement above is exactly the statement that $M$ is **weighted-homogeneous**:
 
 $$
-M\!\left(\lambda^2 S,\ \lambda^2 J,\ \lambda Ϙ\right)=\lambda\,M(S,J,Ϙ).
+M\!\left(\digamma_{\mathrm{cfm}}^2 S,\ \digamma_{\mathrm{cfm}}^2 J,\ \digamma_{\mathrm{cfm}} Ϙ\right)=\digamma_{\mathrm{cfm}}\,M(S,J,Ϙ).
 $$
 
 Differentiating with respect to $\lambda$ at $\lambda=1$ gives the Euler relation for these weights,
@@ -380,7 +380,7 @@ the area law, independent of the Euclidean computation. Equivalently, integratin
 
 ## Beyond the Asymptotically Flat Case
 
-The scaling derivation of the previous section is not a general theorem about any horizon. It used two facts: that the family's parameters are exactly $(M,J,Ϙ)$, and that a scaling of the metric maps the family to itself. A **cosmological constant breaks the second fact**. Under $g_{\imath\jmath}\to\lambda^2 g_{\imath\jmath}$ the Ricci tensor is unchanged while $\Lambda g_{\imath\jmath}$ scales, so the scaled metric is a solution of a different theory unless $\Lambda=0$. Equivalently, $\Lambda$ has dimensions of inverse length squared and does not scale with the metric; it is a new dimensionful parameter, and the mass is no longer a function of $(S,J,Ϙ)$ alone at fixed $\Lambda$.
+The scaling derivation of the previous section is not a general theorem about any horizon. It used two facts: that the family's parameters are exactly $(M,J,Ϙ)$, and that a scaling of the metric maps the family to itself. A **cosmological constant breaks the second fact**. Under $g_{\imath\jmath}\to\digamma_{\mathrm{cfm}}^2 g_{\imath\jmath}$ the Ricci tensor is unchanged while $\Lambda g_{\imath\jmath}$ scales, so the scaled metric is a solution of a different theory unless $\Lambda=0$. Equivalently, $\Lambda$ has dimensions of inverse length squared and does not scale with the metric; it is a new dimensionful parameter, and the mass is no longer a function of $(S,J,Ϙ)$ alone at fixed $\Lambda$.
 
 The scaling argument can be repaired by promoting the cosmological constant to a thermodynamic variable. Writing the pressure
 
@@ -462,7 +462,7 @@ Substituting these, $M-2TS+2PV$ reduces identically to zero; and independently, 
 
 2. **Is the area intrinsically geometric, or can the algebra see it?** The biquaternion norm is pointwise and cannot produce an area; the horizon area is a global object of the imported manifold. Is there any algebraic quantity — a limit of the modular operator, a trace over a growing algebra, a boundary term — that reduces to the area in the appropriate limit?
 
-3. **Does the algebra carry the scaling?** The Smarr derivation rests on the weighted homogeneity $M(\lambda^2S,\lambda^2J,\lambda Ϙ)=\lambda M$. Is the scaling of the family visible as a scaling of the frame field $\tilde E_{\Phi,\imath}$ or of the connection, and is there an algebraic statement of the Euler relation?
+3. **Does the algebra carry the scaling?** The Smarr derivation rests on the weighted homogeneity $M(\digamma_{\mathrm{cfm}}^2S,\digamma_{\mathrm{cfm}}^2J,\digamma_{\mathrm{cfm}} Ϙ)=\digamma_{\mathrm{cfm}} M$. Is the scaling of the family visible as a scaling of the frame field $\tilde E_{\Phi,\imath}$ or of the connection, and is there an algebraic statement of the Euler relation?
 
 4. **The cosmological-constant correction.** Is the thermodynamic volume $V$ algebraically meaningful, and does the framework have anything to say about the AdS case, where the boundary description is itself informational? The $-2PV$ term is currently imported.
 
@@ -480,7 +480,7 @@ The entropy is the **Bekenstein–Hawking entropy** $S=k_B c^3A/(4\,\frac{h}{2\p
 
 The **first law** $dM=(\kappa/8\pi G)\,dA+\Omega\,dJ+Ξ\,dϘ=T\,dS+\Omega\,dJ+Ξ\,dϘ$ was checked term by term for the general Kerr–Newman horizon, with the area's derivatives in mass, angular momentum, and charge matching the conjugate quantities in magnitude and sign, and separately on the Schwarzschild, Reissner–Nordström, and Kerr specialisations and at a numerical point with both rotation and charge.
 
-The **Smarr relation** $M=2TS+2\Omega J+Ξ Ϙ=\kappa A/(4\pi G)+2\Omega J+Ξ Ϙ$ was derived by scaling: the Kerr–Newman family satisfies $(M,J,Ϙ)\to(\lambda M,\lambda^2J,\lambda Ϙ)$ under $g_{\imath\jmath}\to\lambda^2g_{\imath\jmath}$, so $M$ is weighted-homogeneous of weights $(2,2,1)$ and Euler's theorem gives the relation with the first law's conjugates. With the parent's temperature it fixes the entropy to $S=A/4$ for Schwarzschild, so the temperature, the first law, and the scaling homogeneity close the thermodynamics. A cosmological constant breaks the scaling and the relation acquires the correction $-2PV$, verified for Schwarzschild–AdS.
+The **Smarr relation** $M=2TS+2\Omega J+Ξ Ϙ=\kappa A/(4\pi G)+2\Omega J+Ξ Ϙ$ was derived by scaling: the Kerr–Newman family satisfies $(M,J,Ϙ)\to(\digamma_{\mathrm{cfm}} M,\digamma_{\mathrm{cfm}}^2J,\digamma_{\mathrm{cfm}} Ϙ)$ under $g_{\imath\jmath}\to\digamma_{\mathrm{cfm}}^2g_{\imath\jmath}$, so $M$ is weighted-homogeneous of weights $(2,2,1)$ and Euler's theorem gives the relation with the first law's conjugates. With the parent's temperature it fixes the entropy to $S=A/4$ for Schwarzschild, so the temperature, the first law, and the scaling homogeneity close the thermodynamics. A cosmological constant breaks the scaling and the relation acquires the correction $-2PV$, verified for Schwarzschild–AdS.
 
 The biquaternion framework houses the thermodynamics — the material sector $\mathbb{B}_{\Phi}$ for the charges and the intrinsic imaginary time, the informational sector $\mathbb{B}_{\Psi}$ for the modular Hamiltonian of the horizon flow — and it imports the geometry, the Euclidean action, and the area law. It contains no microstate count, no horizon state whose entropy is the area, and no correction to the standard numbers. The gaps are stated rather than filled.
 

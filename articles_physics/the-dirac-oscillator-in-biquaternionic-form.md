@@ -122,7 +122,7 @@ $$
 \omega=-\vec e_z ,
 $$
 
-where $\omega$ is the pseudoscalar of the algebra, $\omega^2=-e_t$, an element and not the central unit $i$; the oscillator frequency that multiplies $m$ is a real scalar and shares the letter, and it stands only where $m$ or $\frac{h}{2\pi}$ stands beside it. The right factor is the one the source's velocity action carries: the two-sided action $\alpha_\imath$ is the gradient's $\eta$-th term with $\vec e_z$ on the right, and $\vec e_z=-\omega$. The sign of the shift is the sign of $-\beta$ on the state the line acts on: the line for $\tilde{Ξ}_{+}$ acts on $\tilde{Ξ}_{-}$, where $\beta=-1$, so it carries $\vec\nabla_+$, and the line for $\tilde{Ξ}_{-}$ acts on $\tilde{Ξ}_{+}$, where $\beta=+1$, so it carries $\vec\nabla_-$.
+where $\omega$ is the pseudoscalar of the algebra, $\omega^2=-e_t$, an element and not the central unit $i$; the oscillator frequency that multiplies $m$ is a real scalar and shares the letter, and it stands only where $m$ or $\frac{h}{2\pi}$ stands beside it. The right factor is the one the source's velocity action carries: the two-sided action $\alpha_\imath$ is the gradient's $k$-th term with $\vec e_z$ on the right, and $\vec e_z=-\omega$. The sign of the shift is the sign of $-\beta$ on the state the line acts on: the line for $\tilde{Ξ}_{+}$ acts on $\tilde{Ξ}_{-}$, where $\beta=-1$, so it carries $\vec\nabla_+$, and the line for $\tilde{Ξ}_{-}$ acts on $\tilde{Ξ}_{+}$, where $\beta=+1$, so it carries $\vec\nabla_-$.
 
 Each right-hand side is the shifted gradient followed by one fixed right factor, the element $\omega$; the position enters the shift, and nothing else in it depends on the position. That is the shape the biquaternion reading below uses.
 

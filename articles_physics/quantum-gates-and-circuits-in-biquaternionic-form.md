@@ -123,7 +123,7 @@ $$
 \vec s_{\Psi} \;\longmapsto\; R(\tilde Q)\,\vec s_{\Psi}, \qquad R(\tilde Q) \in SO(3),
 $$
 
-a proper rotation of $\mathbb{R}^3$. The scalar part of the state is fixed, the norm $|\vec s_{\Psi}|$ is preserved, and with it the purity $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1 + |\vec s_{\Psi}|^2)$ and the spectrum $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec s_{\Psi}|)$. A gate rotates the Bloch ball rigidly; it never contracts it.
+a proper rotation of $\mathbb{R}^3$. The scalar part of the state is fixed, the norm $|\vec s_{\Psi}|$ is preserved, and with it the purity $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1 + |\vec s_{\Psi}|^2)$ and the spectrum $\eta_{\pm} = \tfrac{1}{2}(1\pm|\vec s_{\Psi}|)$. A gate rotates the Bloch ball rigidly; it never contracts it.
 
 **Rotation gates.** The unit real quaternion with axis $\vec u_{\mathrm r}$ and angle $\theta_{\mathrm{axr}}$,
 

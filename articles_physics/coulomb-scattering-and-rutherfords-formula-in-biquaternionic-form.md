@@ -43,12 +43,12 @@ is central, so the stationary equation $H\tilde{Ξ}=E\tilde{Ξ}$ reduces to the 
 For a scattering state of energy $E=\frac{h^{2}\,4\pi^{2}\nu_{\Phi}^{2}}{8\pi^{2}\,m}>0$ the natural dimensionless coupling is the **Coulomb parameter**
 
 $$
-\eta=\frac{2\pi m\,\alpha}{h^{2}\,\nu_{\Phi}}=\frac{2\pi \alpha}{h\,v},
+\digamma_{\mathrm{smt}}=\frac{2\pi m\,\alpha}{h^{2}\,\nu_{\Phi}}=\frac{2\pi \alpha}{h\,v},
 \qquad
 v=c\,\nu_{\Phi}/\nu_m,
 $$
 
-the Coulomb energy at the de Broglie wavelength measured in units of the kinetic energy. It is the single dimensionless number that controls the whole problem: $\eta\to0$ is the high-energy or weak-coupling limit, in which the Born approximation becomes accurate, and $|\eta|\gg1$ is the semiclassical or strong-coupling regime. For like charges $\eta>0$ and the potential is repulsive; for opposite charges $\eta<0$ and it is attractive. In the biquaternion interpretation $\eta$ is a central real scalar built from the central quantities $m,\alpha,\frac{h}{2\pi},\nu_{\Phi}$; it is not an algebra-valued object, and it enters every phase below as a scalar.
+the Coulomb energy at the de Broglie wavelength measured in units of the kinetic energy. It is the single dimensionless number that controls the whole problem: $\digamma_{\mathrm{smt}}\to0$ is the high-energy or weak-coupling limit, in which the Born approximation becomes accurate, and $|\digamma_{\mathrm{smt}}|\gg1$ is the semiclassical or strong-coupling regime. For like charges $\digamma_{\mathrm{smt}}>0$ and the potential is repulsive; for opposite charges $\digamma_{\mathrm{smt}}<0$ and it is attractive. In the biquaternion interpretation $\digamma_{\mathrm{smt}}$ is a central real scalar built from the central quantities $m,\alpha,\frac{h}{2\pi},\nu_{\Phi}$; it is not an algebra-valued object, and it enters every phase below as a scalar.
 
 ## Partial-Wave Decomposition
 
@@ -70,37 +70,37 @@ $$
 In the dimensionless variable $\rho=kr$ this is the **Coulomb wave equation**
 
 $$
-\frac{d^2u_l}{d\rho^2}+\left[1-\frac{2\eta}{\rho}-\frac{l(l+1)}{\rho^2}\right]u_l=0 ,
+\frac{d^2u_l}{d\rho^2}+\left[1-\frac{2\digamma_{\mathrm{smt}}}{\rho}-\frac{l(l+1)}{\rho^2}\right]u_l=0 ,
 \qquad
-\eta=\frac{2\pi m\,\alpha}{h^{2}\,\nu_{\Phi}},
+\digamma_{\mathrm{smt}}=\frac{2\pi m\,\alpha}{h^{2}\,\nu_{\Phi}},
 $$
 
-the same equation that the hydrogen article solves for bound states, now at positive energy. The angular momentum barrier $l(l+1)/\rho^2$ and the Coulomb term $-2\eta/\rho$ are both central scalars; the module does not enter the equation. The reduction of a three-dimensional central problem to a one-dimensional radial equation is thus a reduction of the scalar envelope, and the biquaternion state is the product of that envelope with a constant module element.
+the same equation that the hydrogen article solves for bound states, now at positive energy. The angular momentum barrier $l(l+1)/\rho^2$ and the Coulomb term $-2\digamma_{\mathrm{smt}}/\rho$ are both central scalars; the module does not enter the equation. The reduction of a three-dimensional central problem to a one-dimensional radial equation is thus a reduction of the scalar envelope, and the biquaternion state is the product of that envelope with a constant module element.
 
 ### The regular Coulomb function
 
-The two independent solutions of the Coulomb wave equation are the regular function $F_l(\eta,\rho)$ and the irregular function $G_l(\eta,\rho)$. The regular solution is the confluent hypergeometric function
+The two independent solutions of the Coulomb wave equation are the regular function $F_l(\digamma_{\mathrm{smt}},\rho)$ and the irregular function $G_l(\digamma_{\mathrm{smt}},\rho)$. The regular solution is the confluent hypergeometric function
 
 $$
-F_l(\eta,\rho)=C_l(\eta)\,\rho^{\,l+1}\,\exp(-i\rho)\,M\!\left(l+1-i\eta,\,2l+2,\,2i\rho\right),
+F_l(\digamma_{\mathrm{smt}},\rho)=C_l(\digamma_{\mathrm{smt}})\,\rho^{\,l+1}\,\exp(-i\rho)\,M\!\left(l+1-i\digamma_{\mathrm{smt}},\,2l+2,\,2i\rho\right),
 $$
 
 with the normalisation
 
 $$
-C_l(\eta)=\frac{2^l\,\exp(-\pi\eta/2)\,\left|\Gamma(l+1+i\eta)\right|}{\Gamma(2l+2)},
+C_l(\digamma_{\mathrm{smt}})=\frac{2^l\,\exp(-\pi\digamma_{\mathrm{smt}}/2)\,\left|\Gamma(l+1+i\digamma_{\mathrm{smt}})\right|}{\Gamma(2l+2)},
 $$
 
-and $M(a,b,z)=\sum_{n\ge0}\frac{(a)_n}{(b)_n}\frac{z^n}{n!}$ the confluent hypergeometric series. For $l=0$ the normalisation reduces to the standard $C_0(\eta)=\exp(-\pi\eta/2)|\Gamma(1+i\eta)|=(2\pi\eta/(\exp(2\pi\eta)-1))^{1/2}$, which tends to $1$ as $\eta\to0$ and to $(2\pi\eta)^{1/2}\exp(-\pi\eta)$ as $\eta\to\infty$. The regular function vanishes at the origin, $F_l\sim C_l\rho^{\,l+1}$, which is the boundary condition of a physical wave function; the irregular function diverges there and is excluded.
+and $M(a,b,z)=\sum_{n\ge0}\frac{(a)_n}{(b)_n}\frac{z^n}{n!}$ the confluent hypergeometric series. For $l=0$ the normalisation reduces to the standard $C_0(\digamma_{\mathrm{smt}})=\exp(-\pi\digamma_{\mathrm{smt}}/2)|\Gamma(1+i\digamma_{\mathrm{smt}})|=(2\pi\digamma_{\mathrm{smt}}/(\exp(2\pi\digamma_{\mathrm{smt}})-1))^{1/2}$, which tends to $1$ as $\digamma_{\mathrm{smt}}\to0$ and to $(2\pi\digamma_{\mathrm{smt}})^{1/2}\exp(-\pi\digamma_{\mathrm{smt}})$ as $\digamma_{\mathrm{smt}}\to\infty$. The regular function vanishes at the origin, $F_l\sim C_l\rho^{\,l+1}$, which is the boundary condition of a physical wave function; the irregular function diverges there and is excluded.
 
-The function $F_l$ was verified numerically against the Coulomb wave equation: evaluating the hypergeometric series at $\eta=0.5,1.0$, $l=0,1,2$, and $\rho=2$–$3$, the residual of the equation was of order $10^{-8}$, limited by the finite-difference approximation of the second derivative. The same numerical evaluation confirmed the normalisation at small $\rho$, where $F_l/C_l\rho^{\,l+1}\to1$.
+The function $F_l$ was verified numerically against the Coulomb wave equation: evaluating the hypergeometric series at $\digamma_{\mathrm{smt}}=0.5,1.0$, $l=0,1,2$, and $\rho=2$–$3$, the residual of the equation was of order $10^{-8}$, limited by the finite-difference approximation of the second derivative. The same numerical evaluation confirmed the normalisation at small $\rho$, where $F_l/C_l\rho^{\,l+1}\to1$.
 
 ### The phase shifts and the Coulomb phase
 
 The long-range Coulomb tail never dies away, so the asymptotic form of $F_l$ is not the free sine but the **Coulomb-modified sine**,
 
 $$
-F_l(\eta,\rho)\ \longrightarrow\ \sin\!\left(\rho-\eta\ln 2\rho-\frac{l\pi}{2}+\sigma_l\right),
+F_l(\digamma_{\mathrm{smt}},\rho)\ \longrightarrow\ \sin\!\left(\rho-\digamma_{\mathrm{smt}}\ln 2\rho-\frac{l\pi}{2}+\sigma_l\right),
 \qquad
 \rho\to\infty,
 $$
@@ -108,25 +108,25 @@ $$
 in which the phase accumulates a logarithm from the tail and a shift
 
 $$
-\boxed{\;\sigma_l=\arg\Gamma(l+1+i\eta)\;}
+\boxed{\;\sigma_l=\arg\Gamma(l+1+i\digamma_{\mathrm{smt}})\;}
 $$
 
-from the short-distance part of the potential. The $\eta\ln2\rho$ term is the irreducible long-range effect: because the Coulomb potential falls off only as $1/r$, the phase of the wave function grows logarithmically with distance and never settles into a constant. The phase shift $\sigma_l$ is the **Coulomb phase**, and it is the whole of the scattering phase in the pure Coulomb problem: there is no short-range phase to add, because there is no short-range potential.
+from the short-distance part of the potential. The $\digamma_{\mathrm{smt}}\ln2\rho$ term is the irreducible long-range effect: because the Coulomb potential falls off only as $1/r$, the phase of the wave function grows logarithmically with distance and never settles into a constant. The phase shift $\sigma_l$ is the **Coulomb phase**, and it is the whole of the scattering phase in the pure Coulomb problem: there is no short-range phase to add, because there is no short-range potential.
 
 The Coulomb phase was verified in two independent ways. First, it obeys the recurrence
 
 $$
-\sigma_{l+1}-\sigma_l=\arg(l+1+i\eta)=\arctan\!\left(\frac{\eta}{l+1}\right),
+\sigma_{l+1}-\sigma_l=\arg(l+1+i\digamma_{\mathrm{smt}})=\arctan\!\left(\frac{\digamma_{\mathrm{smt}}}{l+1}\right),
 $$
 
-which follows from $\Gamma(z+1)=z\Gamma(z)$; a numerical evaluation of $\sigma_l$ from the $\Gamma$ function reproduced this recurrence to machine precision ($10^{-16}$) for $\eta=0.3,0.5,1.0,2.0$ and $l=0,1,2,3$. Second, $\sigma_0$ agrees with the series obtained from the Weierstrass product,
+which follows from $\Gamma(z+1)=z\Gamma(z)$; a numerical evaluation of $\sigma_l$ from the $\Gamma$ function reproduced this recurrence to machine precision ($10^{-16}$) for $\digamma_{\mathrm{smt}}=0.3,0.5,1.0,2.0$ and $l=0,1,2,3$. Second, $\sigma_0$ agrees with the series obtained from the Weierstrass product,
 
 $$
-\sigma_0=\arg\Gamma(1+i\eta)
-=-\gamma_E\,\eta+\sum_{n=1}^{\infty}\frac{(-1)^{n+1}\zeta(2n+1)}{2n+1}\eta^{2n+1},
+\sigma_0=\arg\Gamma(1+i\digamma_{\mathrm{smt}})
+=-\gamma_E\,\digamma_{\mathrm{smt}}+\sum_{n=1}^{\infty}\frac{(-1)^{n+1}\zeta(2n+1)}{2n+1}\digamma_{\mathrm{smt}}^{2n+1},
 $$
 
-with $\gamma_E$ the Euler–Mascheroni constant and $\zeta$ the Riemann zeta function: at $\eta=0.2$ the numerical $\sigma_0$ was $-0.11230222$ against the series value $-0.11230223$, and at $\eta=0.4$, $-0.20715583$ against $-0.20715583$, the agreement limited only by the truncation of the zeta series. The Coulomb phase is a central real scalar; both checks are checks of a scalar function.
+with $\gamma_E$ the Euler–Mascheroni constant and $\zeta$ the Riemann zeta function: at $\digamma_{\mathrm{smt}}=0.2$ the numerical $\sigma_0$ was $-0.11230222$ against the series value $-0.11230223$, and at $\digamma_{\mathrm{smt}}=0.4$, $-0.20715583$ against $-0.20715583$, the agreement limited only by the truncation of the zeta series. The Coulomb phase is a central real scalar; both checks are checks of a scalar function.
 
 ## The Scattering Amplitude
 
@@ -147,14 +147,14 @@ $$
 This series can be summed in closed form. The standard result, obtained from the generating function of the Coulomb phases and the Legendre expansion, is
 
 $$
-\boxed{\;f_C(\theta_{\mathrm{sct}})=-\frac{\eta}{4\pi\nu_{\Phi}\,\sin^2(\theta_{\mathrm{sct}}/2)}
-\,\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta_{\mathrm{sct}}}{2}\right)+2i\theta_{\mathrm{sct},0}\right]\;},
+\boxed{\;f_C(\theta_{\mathrm{sct}})=-\frac{\digamma_{\mathrm{smt}}}{4\pi\nu_{\Phi}\,\sin^2(\theta_{\mathrm{sct}}/2)}
+\,\exp\!\left[-i\digamma_{\mathrm{smt}}\ln\sin^2\!\left(\frac{\theta_{\mathrm{sct}}}{2}\right)+2i\theta_{\mathrm{sct},0}\right]\;},
 $$
 
 whose squared modulus is
 
 $$
-\left|f_C(\theta_{\mathrm{sct}})\right|^2=\frac{\eta^2}{16\pi^{2}\nu_{\Phi}^2\sin^4(\theta_{\mathrm{sct}}/2)},
+\left|f_C(\theta_{\mathrm{sct}})\right|^2=\frac{\digamma_{\mathrm{smt}}^2}{16\pi^{2}\nu_{\Phi}^2\sin^4(\theta_{\mathrm{sct}}/2)},
 $$
 
 independent of the phases. The differential cross section is $d\sigma/d\Omega=|f|^2$, and the flux factors are the standard ones for a central potential.
@@ -166,17 +166,17 @@ In the biquaternion interpretation, the amplitude $f(\theta_{\mathrm{sct}})$ is 
 The Coulomb parameter and the wave vector combine as
 
 $$
-\frac{\eta^2}{16\pi^{2}\nu_{\Phi}^2}=\frac{m^{2}\,\alpha^{2}}{4\,\frac{h^{4}}{(2\pi)^{4}}\,\nu_{\Phi}^{4}}=\frac{\alpha^2}{16E^2},
+\frac{\digamma_{\mathrm{smt}}^2}{16\pi^{2}\nu_{\Phi}^2}=\frac{m^{2}\,\alpha^{2}}{4\,\frac{h^{4}}{(2\pi)^{4}}\,\nu_{\Phi}^{4}}=\frac{\alpha^2}{16E^2},
 $$
 
 and therefore
 
 $$
-\boxed{\;\frac{d\sigma}{d\Omega}=\frac{\eta^2}{16\pi^{2}\nu_{\Phi}^2\sin^4(\theta_{\mathrm{sct}}/2)}
+\boxed{\;\frac{d\sigma}{d\Omega}=\frac{\digamma_{\mathrm{smt}}^2}{16\pi^{2}\nu_{\Phi}^2\sin^4(\theta_{\mathrm{sct}}/2)}
 =\frac{(Z_1Z_2e^2)^2}{16E^2\sin^4(\theta_{\mathrm{sct}}/2)}\;},
 $$
 
-which is **Rutherford's formula**. For like charges the cross section is positive everywhere and finite away from the forward direction; for opposite charges the formula is unchanged, since the sign of $\alpha$ disappears in $\eta^2$. The formula is the non-relativistic limit of classical Rutherford scattering, and the quantum cross section coincides with it for the Coulomb potential.
+which is **Rutherford's formula**. For like charges the cross section is positive everywhere and finite away from the forward direction; for opposite charges the formula is unchanged, since the sign of $\alpha$ disappears in $\digamma_{\mathrm{smt}}^2$. The formula is the non-relativistic limit of classical Rutherford scattering, and the quantum cross section coincides with it for the Coulomb potential.
 
 The classical route to the same formula is worth recording because it is available here in the elementary form. For a Coulomb potential the orbit is a Kepler hyperbola, and the impact parameter is related to the scattering angle by
 
@@ -197,7 +197,7 @@ The first Born amplitude for the same potential is (next section)
 $$
 f_B(\theta_{\mathrm{sct}})=-\frac{2\pi 2\alpha\,2\pi\nu_m}{h\,c\lvert2\pi\vec\nu_{\Phi,2}-2\pi\vec\nu_\Phi\rvert^2}
 =-\frac{m\,\alpha}{2\,\frac{h^{2}}{4\pi^{2}}\,4\pi^{2}\nu_{\Phi}^{2}\sin^2(\theta_{\mathrm{sct}}/2)}
-=-\frac{\eta}{4\pi\nu_{\Phi}\sin^2(\theta_{\mathrm{sct}}/2)},
+=-\frac{\digamma_{\mathrm{smt}}}{4\pi\nu_{\Phi}\sin^2(\theta_{\mathrm{sct}}/2)},
 \qquad
 \lvert2\pi\vec\nu_{\Phi,2}-2\pi\vec\nu_\Phi\rvert=4\pi\nu_{\Phi}\sin(\theta_{\mathrm{sct}}/2),
 $$
@@ -205,7 +205,7 @@ $$
 whose modulus is exactly the modulus of $f_C$. The two amplitudes therefore differ by a **pure phase**:
 
 $$
-f_C(\theta_{\mathrm{sct}})=f_B(\theta_{\mathrm{sct}})\;\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta_{\mathrm{sct}}}{2}\right)+2i\theta_{\mathrm{sct},0}\right].
+f_C(\theta_{\mathrm{sct}})=f_B(\theta_{\mathrm{sct}})\;\exp\!\left[-i\digamma_{\mathrm{smt}}\ln\sin^2\!\left(\frac{\theta_{\mathrm{sct}}}{2}\right)+2i\theta_{\mathrm{sct},0}\right].
 $$
 
 This is the sharpest statement of the Coulomb problem's special character: the Born approximation is wrong about the phase and right about the magnitude, and the discrepancy is confined to the Coulomb phase and the logarithmic phase. The equality of the moduli was verified numerically at several angles and energies, and the phase factor was evaluated from the $\Gamma$-function $\sigma_0$ and the logarithm.
@@ -239,7 +239,7 @@ and squaring with $\lvert\vec\nu_{\Phi,2}-\vec\nu_\Phi\rvert^2=4\nu_{\Phi}^2\sin
 
 ### Why the first Born amplitude is already exact in modulus
 
-The first Born amplitude is the leading term of the Born series in powers of the potential. That its modulus is already exact for the Coulomb potential is a consequence of the structure of the Coulomb problem: the exact amplitude's only deviation from the Born amplitude is a phase, and a phase does not change the cross section. The reason is that the Coulomb potential is scale-free — it has no length parameter, only the coupling — so the ratio of the exact amplitude to the Born amplitude must be a function of the dimensionless combination $\eta$ and the angle alone, and the partial-wave sum shows that function to be the pure phase above. For any potential with a length scale, such as a screened Coulomb potential, the first Born amplitude is only approximate, and the cross section is corrected by terms in the Born series.
+The first Born amplitude is the leading term of the Born series in powers of the potential. That its modulus is already exact for the Coulomb potential is a consequence of the structure of the Coulomb problem: the exact amplitude's only deviation from the Born amplitude is a phase, and a phase does not change the cross section. The reason is that the Coulomb potential is scale-free — it has no length parameter, only the coupling — so the ratio of the exact amplitude to the Born amplitude must be a function of the dimensionless combination $\digamma_{\mathrm{smt}}$ and the angle alone, and the partial-wave sum shows that function to be the pure phase above. For any potential with a length scale, such as a screened Coulomb potential, the first Born amplitude is only approximate, and the cross section is corrected by terms in the Born series.
 
 The biquaternion framework has nothing to add to this argument except the observation that it is an argument about scalars: the amplitude is central, the phase is central, and the scale-free property of the $1/r$ potential is a property of the central potential, not of the module. The spin-0 state module plays no role.
 
@@ -247,7 +247,7 @@ The biquaternion framework has nothing to add to this argument except the observ
 
 ### The logarithm and the energy dependence
 
-The phase $\exp(i\theta_{\mathrm{cld}})$ and the phase $2\sigma_0$ are both energy dependent, through $\theta_{\mathrm{cld}}=-\eta\ln\sin^2(\theta_{\mathrm{sct}}/2)$ real because $\eta$ and the logarithm of a positive number are real, and through $\eta=\frac{2\pi \alpha}{h\,v}$ and through $\sigma_0(\eta)$. They do not affect the cross section, but they do affect the wave function and any interference with a second amplitude. This is the practical mark of the long-range potential: the Coulomb amplitude's phase cannot be gauged away by a constant, because the logarithm makes it angle dependent and the parameter $\eta$ makes it energy dependent.
+The phase $\exp(i\theta_{\mathrm{cld}})$ and the phase $2\sigma_0$ are both energy dependent, through $\theta_{\mathrm{cld}}=-\digamma_{\mathrm{smt}}\ln\sin^2(\theta_{\mathrm{sct}}/2)$ real because $\digamma_{\mathrm{smt}}$ and the logarithm of a positive number are real, and through $\digamma_{\mathrm{smt}}=\frac{2\pi \alpha}{h\,v}$ and through $\sigma_0(\digamma_{\mathrm{smt}})$. They do not affect the cross section, but they do affect the wave function and any interference with a second amplitude. This is the practical mark of the long-range potential: the Coulomb amplitude's phase cannot be gauged away by a constant, because the logarithm makes it angle dependent and the parameter $\digamma_{\mathrm{smt}}$ makes it energy dependent.
 
 In the biquaternion interpretation these are central phases: $\exp(i\theta_{\mathrm{cld}})$ and $\exp(2i\theta_{\mathrm{sct},0})$ are elements of the centre's unit circle $\mathrm{U}(1)\subset\mathbb{B}_{C}$, of the same kind as the free phase and the path-integral phase. They multiply the amplitude without touching the module. The framework's $*$-unitary-versus-rotor distinction applies: these are $*$-unitary central phases, not unit-norm rotors.
 
@@ -262,7 +262,7 @@ The logarithmic phase is the non-relativistic analogue of an infrared divergence
 **What the biquaternion notation provides.**
 
 - **Centrality of the whole problem.** The potential multiplies $e_t$, so the Hamiltonian is central, the partial-wave decomposition is a decomposition of the scalar envelope, and the amplitude and every phase are elements of $\mathbb{B}_{C}$. No module index appears anywhere, which is the precise statement that the problem is spin-0.
-- **The phases as central $*$-unitary elements.** The Coulomb phase $\sigma_l$, the logarithmic phase $-i\eta\ln\sin^2(\theta_{\mathrm{sct}}/2)$, and $2\sigma_0$ are central phases of the same kind as the free and path-integral phases. The framework's $*$-unitary-versus-rotor distinction applies unchanged.
+- **The phases as central $*$-unitary elements.** The Coulomb phase $\sigma_l$, the logarithmic phase $-i\digamma_{\mathrm{smt}}\ln\sin^2(\theta_{\mathrm{sct}}/2)$, and $2\sigma_0$ are central phases of the same kind as the free and path-integral phases. The framework's $*$-unitary-versus-rotor distinction applies unchanged.
 - **The momentum transfer as a real quaternion.** The Born amplitude is the Fourier transform of a central scalar at a momentum transfer that is a real quaternion, the difference of two real wave vectors; the Fourier integral produces a central scalar.
 - **Continuity with the bound problem.** The radial equation is the same central scalar equation as in the hydrogen article, at positive energy. The framework exhibits the bound and continuum problems as one central problem.
 
@@ -285,18 +285,18 @@ The logarithmic phase is the non-relativistic analogue of an infrared divergence
 
 ## Summary
 
-The Coulomb problem in the biquaternion framework is the central Hamiltonian $H=[-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi+\alpha/r]e_t$ with $\alpha=Z_1Z_2e^2$ and Coulomb parameter $\eta=\frac{2\pi m\,\alpha}{h^{2}\,\nu_{\Phi}}=\frac{2\pi \alpha}{h\,v}$. The stationary equation reduces to the scalar envelope, and the partial-wave decomposition is a decomposition of that scalar; the amplitude and all phases are central. The radial equation is the Coulomb wave equation
+The Coulomb problem in the biquaternion framework is the central Hamiltonian $H=[-\frac{hc}{8\pi^{2}\nu_m}\Delta_\Phi+\alpha/r]e_t$ with $\alpha=Z_1Z_2e^2$ and Coulomb parameter $\digamma_{\mathrm{smt}}=\frac{2\pi m\,\alpha}{h^{2}\,\nu_{\Phi}}=\frac{2\pi \alpha}{h\,v}$. The stationary equation reduces to the scalar envelope, and the partial-wave decomposition is a decomposition of that scalar; the amplitude and all phases are central. The radial equation is the Coulomb wave equation
 
 $$
-\frac{d^2u_l}{dr^2}+\left[1-\frac{2\eta}{\rho}-\frac{l(l+1)}{\rho^2}\right]u_l=0,
+\frac{d^2u_l}{dr^2}+\left[1-\frac{2\digamma_{\mathrm{smt}}}{\rho}-\frac{l(l+1)}{\rho^2}\right]u_l=0,
 $$
 
-whose regular solution is $F_l=C_l\rho^{l+1}\exp(-i\rho)M(l+1-i\eta,2l+2,2i\rho)$, verified to solve the equation to $10^{-8}$ and to have the normalisation $C_l=2^l\exp(-\pi\eta/2)|\Gamma(l+1+i\eta)|/\Gamma(2l+2)$. The asymptotic form is the Coulomb-modified sine $\sin(\rho-\eta\ln2\rho-l\pi/2+\sigma_l)$ with the Coulomb phase $\sigma_l=\arg\Gamma(l+1+i\eta)$, verified by the recurrence $\sigma_{l+1}-\sigma_l=\arctan(\eta/(l+1))$ to machine precision and by the Weierstrass series for $\sigma_0$ to $10^{-8}$.
+whose regular solution is $F_l=C_l\rho^{l+1}\exp(-i\rho)M(l+1-i\digamma_{\mathrm{smt}},2l+2,2i\rho)$, verified to solve the equation to $10^{-8}$ and to have the normalisation $C_l=2^l\exp(-\pi\digamma_{\mathrm{smt}}/2)|\Gamma(l+1+i\digamma_{\mathrm{smt}})|/\Gamma(2l+2)$. The asymptotic form is the Coulomb-modified sine $\sin(\rho-\digamma_{\mathrm{smt}}\ln2\rho-l\pi/2+\sigma_l)$ with the Coulomb phase $\sigma_l=\arg\Gamma(l+1+i\digamma_{\mathrm{smt}})$, verified by the recurrence $\sigma_{l+1}-\sigma_l=\arctan(\digamma_{\mathrm{smt}}/(l+1))$ to machine precision and by the Weierstrass series for $\sigma_0$ to $10^{-8}$.
 
 The partial-wave sum gives the closed-form amplitude
 
 $$
-f_C(\theta_{\mathrm{sct}})=-\frac{\eta}{4\pi\nu_{\Phi}\sin^2(\theta_{\mathrm{sct}}/2)}\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta_{\mathrm{sct}}}{2}\right)+2i\theta_{\mathrm{sct},0}\right],
+f_C(\theta_{\mathrm{sct}})=-\frac{\digamma_{\mathrm{smt}}}{4\pi\nu_{\Phi}\sin^2(\theta_{\mathrm{sct}}/2)}\exp\!\left[-i\digamma_{\mathrm{smt}}\ln\sin^2\!\left(\frac{\theta_{\mathrm{sct}}}{2}\right)+2i\theta_{\mathrm{sct},0}\right],
 $$
 
 whose modulus is Rutherford's formula $d\sigma/d\Omega=(Z_1Z_2e^2)^2/16E^2\sin^4(\theta_{\mathrm{sct}}/2)$. The first Born amplitude $f_B=-2m\alpha/\bigl(\frac{h^{2}}{4\pi^{2}}\lvert2\pi\vec\nu_{\Phi,2}-2\pi\vec\nu_\Phi\rvert^2\bigr)$ has the same modulus, so the exact and Born amplitudes differ by a pure phase, and the quantum and classical (impact-parameter) cross sections agree to $2\times10^{-16}$ in the numerical comparison at the sampled energies and angles.
@@ -314,14 +314,14 @@ The biquaternion content is centrality: the potential couples only to the scalar
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong\mathbb{C}^2$ | State module |
 | $V(r)=\alpha/r$, $\alpha=Z_1Z_2e^2$ | Coulomb potential, central |
-| $\eta=\frac{2\pi m\,\alpha}{h^{2}\,\nu_{\Phi}}=\frac{2\pi \alpha}{h\,v}$ | Coulomb parameter |
+| $\digamma_{\mathrm{smt}}=\frac{2\pi m\,\alpha}{h^{2}\,\nu_{\Phi}}=\frac{2\pi \alpha}{h\,v}$ | Coulomb parameter |
 | $u_l=rR_l$ | Reduced radial function |
 | $\rho=kr$ | Dimensionless radius |
-| $F_l(\eta,\rho)$ | Regular Coulomb function |
-| $G_l(\eta,\rho)$ | Irregular Coulomb function |
-| $C_l(\eta)$ | Normalisation of $F_l$ |
+| $F_l(\digamma_{\mathrm{smt}},\rho)$ | Regular Coulomb function |
+| $G_l(\digamma_{\mathrm{smt}},\rho)$ | Irregular Coulomb function |
+| $C_l(\digamma_{\mathrm{smt}})$ | Normalisation of $F_l$ |
 | $M(a,b,z)$ | Confluent hypergeometric function |
-| $\sigma_l=\arg\Gamma(l+1+i\eta)$ | Coulomb phase |
+| $\sigma_l=\arg\Gamma(l+1+i\digamma_{\mathrm{smt}})$ | Coulomb phase |
 | $f(\theta_{\mathrm{sct}})=-\frac{1}{2ik}\sum_l(2l+1)(\exp(2i\theta_{\mathrm{sct},l})-1)P_l$ | Partial-wave amplitude |
 | $f_C(\theta_{\mathrm{sct}})$ | Closed-form Coulomb amplitude |
 | $\lvert\vec\nu_{\Phi,2}-\vec\nu_\Phi\rvert=2\nu_{\Phi}\sin(\theta_{\mathrm{sct}}/2)$ | Momentum transfer |

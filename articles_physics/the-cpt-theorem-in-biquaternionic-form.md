@@ -138,7 +138,7 @@ Because $\tilde{Ξ}^J$ enters, $C$ is anti-linear, and the operator it induces o
 $$
 C^2[\tilde{Ξ}]=-\tilde{Ξ},
 $$
-verified at residual $0$. The sign is not a convention: an anti-linear map rescaled by $\lambda$ obeys $(\lambda C)^2=|\lambda|^2C^2$, so no choice of phase removes it. That $C^2=-e_t$ and not $+e_t$ is the fermionic sign, and it is forced by the same $-1$ that makes $C$ a symmetry.
+verified at residual $0$. The sign is not a convention: an anti-linear map rescaled by $\digamma_{\mathrm{cfm}}$ obeys $(\digamma_{\mathrm{cfm}} C)^2=|\digamma_{\mathrm{cfm}}|^2C^2$, so no choice of phase removes it. That $C^2=-e_t$ and not $+e_t$ is the fermionic sign, and it is forced by the same $-1$ that makes $C$ a symmetry.
 
 **The conjugation is the algebra's.** $\bar{\cdot}$ is an anti-linear automorphism of $\mathbb{B}$, $\overline{ab}=\bar a\,\bar b$, of order two, and it commutes with right multiplication by $\omega$, so it preserves the two eigenspaces of $R_\omega$. It is not the quaternion conjugate, which is linear and reverses the order of a product, and it is not the Hermitian conjugate, which is $\bar{\cdot}$ followed by ${}^{\natural}$ and reverses the order as well. Verified on a random pair of elements: order two, automorphism and anti-linearity at residual $0$, and $\natural=\bar{\cdot}\circ{}^{*}$ at residual $0$.
 

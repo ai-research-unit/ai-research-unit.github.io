@@ -312,7 +312,7 @@ For a general quaternion-valued $b$ the two products do not combine and the subs
 
 ### The Green's operator
 
-Faddeev's decomposition is to write the wave vector as $2\pi\vec\nu_\Phi=\eta+t\gamma$ with $\gamma\in S^2$ a direction, $\eta\cdot\gamma=0$, and to conjugate by the plane wave along $\gamma$. Applied to $\exp(it\gamma\cdot x)w(x)$ the Helmholtz operator gives
+Faddeev's decomposition is to write the wave vector as $2\pi\vec\nu_\Phi=\digamma_{\mathrm{wvn}}+t\gamma$ with $\gamma\in S^2$ a direction, $\digamma_{\mathrm{wvn}}\cdot\gamma=0$, and to conjugate by the plane wave along $\gamma$. Applied to $\exp(it\gamma\cdot x)w(x)$ the Helmholtz operator gives
 
 $$
 (\Delta_\Phi+4\pi^{2}\nu_{\Phi}^2)\bigl(\exp(it\gamma\cdot r_x)w\bigr) = \exp(it\gamma\cdot r_x)\bigl(-h_t^2+4\pi^{2}\nu_{\Phi}^2+2it\gamma\cdot\nabla+\Delta_\Phi\bigr)w ,
@@ -430,7 +430,7 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 | (8.1)–(8.4) | The scattering problem: homogeneous incident field, inhomogeneous total field, outgoing scattered field |
 | (8.5) | The Lippmann–Schwinger integral equation; equivalent to (8.1)–(8.4) |
 | $L^{2,s}$, $H^{\alpha,s}$ | Weighted $L^2$ and weighted Sobolev spaces of the compactness and the bounds |
-| $2\pi\vec\nu_\Phi=\eta+t\gamma$, $\lambda^2=4\pi^{2}\nu_{\Phi}^2-t^2$ | Faddeev's decomposition of the wave vector along a unit direction $\gamma$ |
+| $2\pi\vec\nu_\Phi=\digamma_{\mathrm{wvn}}+t\gamma$, $\lambda^2=4\pi^{2}\nu_{\Phi}^2-t^2$ | Faddeev's decomposition of the wave vector along a unit direction $\gamma$ |
 | $g_\gamma(\lambda,z)$ | Faddeev's Green's operator; symbol $(\zeta^2+2z\gamma\cdot\zeta-\lambda^2)^{-1}$, $z\in\mathbb{C}_+$ |
 | $G_{\mathrm{lor},\gamma}(\lambda,z)$, $G^{\mathrm R}_\gamma(\lambda,z)$ | The two Faddeev Green's functions of the shifted operators, one for each side of the multiplication |
 

@@ -180,7 +180,7 @@ verified for random $\vec a, \vec d$ with residuals below $10^{-13}$ and vanishi
 
 ### Body Frame and Lab Frame
 
-A rotating non-axisymmetric body is a second and distinct source of an oscillating quadrupole. Let the body frame carry the constant quadrupole $\mathcal{Q}^{(b)} = \mathrm{diag}(\lambda_1, \lambda_2, \lambda_3)$ with $\lambda_1+\lambda_2+\lambda_3 = 0$, and let the body rotate about the $\vec e_z$ axis with constant angular speed $\Omega$. The lab-frame moment is the rotor conjugate,
+A rotating non-axisymmetric body is a second and distinct source of an oscillating quadrupole. Let the body frame carry the constant quadrupole $\mathcal{Q}^{(b)} = \mathrm{diag}(\eta_1, \eta_2, \eta_3)$ with $\eta_1+\eta_2+\eta_3 = 0$, and let the body rotate about the $\vec e_z$ axis with constant angular speed $\Omega$. The lab-frame moment is the rotor conjugate,
 
 $$
 \mathcal{Q}^{(lab)}_{ij}(r'_t) = R_{i\imath}(r'_t)\,R_{jl}(r'_t)\,\mathcal{Q}^{(b)}_{\imath l},
@@ -194,13 +194,13 @@ Carrying out the rotation about $\vec e_z$ gives, with the rotation matrix $R = 
 
 $$
 \begin{aligned}
-\mathcal{Q}^{(lab)}_{xx}(r'_t) &= \lambda_1\cos^2(\Omega r'_t/c) + \lambda_2\sin^2(\Omega r'_t/c)
-= \frac{\lambda_1+\lambda_2}{2} + \frac{\lambda_1-\lambda_2}{2}\cos(2\Omega r'_t/c) ,\\
-\mathcal{Q}^{(lab)}_{yy}(r'_t) &= \lambda_1\sin^2(\Omega r'_t/c) + \lambda_2\cos^2(\Omega r'_t/c)
-= \frac{\lambda_1+\lambda_2}{2} - \frac{\lambda_1-\lambda_2}{2}\cos(2\Omega r'_t/c) ,\\
-\mathcal{Q}^{(lab)}_{xy}(r'_t) &= (\lambda_1-\lambda_2)\sin(\Omega r'_t/c)\cos(\Omega r'_t/c)
-= \frac{\lambda_1-\lambda_2}{2}\sin(2\Omega r'_t/c) ,\\
-\mathcal{Q}^{(lab)}_{zz}(r'_t) &= \lambda_3 , \qquad \mathcal{Q}^{(lab)}_{xz} = \mathcal{Q}^{(lab)}_{yz} = 0 .
+\mathcal{Q}^{(lab)}_{xx}(r'_t) &= \eta_1\cos^2(\Omega r'_t/c) + \eta_2\sin^2(\Omega r'_t/c)
+= \frac{\eta_1+\eta_2}{2} + \frac{\eta_1-\eta_2}{2}\cos(2\Omega r'_t/c) ,\\
+\mathcal{Q}^{(lab)}_{yy}(r'_t) &= \eta_1\sin^2(\Omega r'_t/c) + \eta_2\cos^2(\Omega r'_t/c)
+= \frac{\eta_1+\eta_2}{2} - \frac{\eta_1-\eta_2}{2}\cos(2\Omega r'_t/c) ,\\
+\mathcal{Q}^{(lab)}_{xy}(r'_t) &= (\eta_1-\eta_2)\sin(\Omega r'_t/c)\cos(\Omega r'_t/c)
+= \frac{\eta_1-\eta_2}{2}\sin(2\Omega r'_t/c) ,\\
+\mathcal{Q}^{(lab)}_{zz}(r'_t) &= \eta_3 , \qquad \mathcal{Q}^{(lab)}_{xz} = \mathcal{Q}^{(lab)}_{yz} = 0 .
 \end{aligned}
 $$
 
@@ -214,7 +214,7 @@ not at the rotation frequency itself. The reason is visible in the angular decom
 
 ### The Axisymmetric Case
 
-If the body is axisymmetric about the rotation axis, $\lambda_1 = \lambda_2$, the $m_2 = \pm 2$ components vanish and $\mathcal{Q}^{(lab)}_{xx}$ is constant. An axisymmetric body rotating about its symmetry axis has a **static** quadrupole moment: it does not oscillate, and it is not a source of an oscillating quadrupole field. This is the standard statement that a rotating spheroid does not radiate in the quadrupole channel, and it is the reason the quadrupole oscillation requires a genuinely triaxial deformation.
+If the body is axisymmetric about the rotation axis, $\eta_1 = \eta_2$, the $m_2 = \pm 2$ components vanish and $\mathcal{Q}^{(lab)}_{xx}$ is constant. An axisymmetric body rotating about its symmetry axis has a **static** quadrupole moment: it does not oscillate, and it is not a source of an oscillating quadrupole field. This is the standard statement that a rotating spheroid does not radiate in the quadrupole channel, and it is the reason the quadrupole oscillation requires a genuinely triaxial deformation.
 
 ## Higher Multipoles: The Oscillating Tower
 
@@ -321,7 +321,7 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | $\omega_l^2 = \frac{\sigma}{\rho_m R_0^3}l(l-1)(l+2)$ | Rayleigh drop-mode frequency |
 | $\mathrm{Sd}_{ij}$ | Quadrupole tensor (symmetric traceless) |
 | $ϙ_p$ | Pole strength in the two-dipole decomposition of the quadrupole |
-| $\lambda_1, \lambda_2, \lambda_3$ | Principal values of the body-frame quadrupole, $\sum_i\lambda_i = 0$ |
+| $\eta_1, \eta_2, \eta_3$ | Principal values of the body-frame quadrupole, $\sum_i\eta_i = 0$ |
 | $\mathrm{Sd}_{xx} = \frac{M}{5}(2a^2-b^2-c^2)$ | Quadrupole of a homogeneous ellipsoid |
 | $\epsilon_{ij}$ | Traceless symmetric strain |
 | $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$ | Symmetric traceless square of the vector part |

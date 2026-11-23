@@ -34,7 +34,7 @@ so the anomaly density $\mathcal{A}$ is the Jacobian per unit rotation angle. A 
 **The regulated determinant.** Regulate with a Hermitian operator whose eigenfunctions form the basis, and write the Jacobian as a trace:
 
 $$
-\mathcal{A}(x)=\lim_{M\to\infty}\sum_n\omicron_{\mathrm{pot},n}^{*}(x)\gamma_5\,\omicron_{\mathrm{pot},n}(x)\,e^{-\lambda_n^2/M^2}
+\mathcal{A}(x)=\lim_{M\to\infty}\sum_n\omicron_{\mathrm{pot},n}^{*}(x)\gamma_5\,\omicron_{\mathrm{pot},n}(x)\,e^{-\eta_n^2/M^2}
 =\lim_{M\to\infty}\mathrm{Tr}\left(\gamma_5\,e^{\not D^2/M^2}\right)_{xx}.
 $$
 
@@ -74,7 +74,7 @@ The algebra enters at two points, and neither is the coefficient.
 |---|---|
 | $\alpha$ | the chiral rotation angle |
 | $\mathcal{A}(x)$ | the anomaly density, the Jacobian per unit angle |
-| $\lambda_n$, $\omicron_{\mathrm{pot},n}$ | eigenvalues and eigenfunctions of the regulating operator |
+| $\eta_n$, $\omicron_{\mathrm{pot},n}$ | eigenvalues and eigenfunctions of the regulating operator |
 | $M$ | the regulator mass |
 | $\tilde F_{\imath\jmath}$ | the dual field strength |
 | $n$ | the topological charge, an integer |

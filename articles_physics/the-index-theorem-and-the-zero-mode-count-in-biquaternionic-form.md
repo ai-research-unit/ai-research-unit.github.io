@@ -148,10 +148,10 @@ the Chern number of the bundle, which is $1$ for the Hopf bundle. Because the cu
 **Boundary corrections.** On a manifold with boundary the index acquires a boundary contribution, and the theorem is replaced by the Atiyah–Patodi–Singer form
 
 $$
-\mathrm{ind}\,\tilde D_R \;=\; \int_M A_{\mathrm{aro}}(TM)\wedge\mathrm{ch}(E_R) - \frac{h+\eta(0)}{2},
+\mathrm{ind}\,\tilde D_R \;=\; \int_M A_{\mathrm{aro}}(TM)\wedge\mathrm{ch}(E_R) - \frac{h+\varsigma_{\mathrm{aPS}}(0)}{2},
 $$
 
-where $h$ is the dimension of the space of boundary zero modes and $\eta(0)$ is the eta invariant of the boundary Dirac operator. The correction is a boundary term, and it is the reason a background with a nontrivial boundary can support zero modes whose count is not given by the bulk integral alone. The framework's instanton boundary is the three-sphere of *The Hopf Fibration and the Biquaternion Gauge Bundle*, and the eta invariant is a spectral invariant of the operator restricted to that boundary; its evaluation is a standard analytic computation and is not an algebraic statement about $\mathbb B$.
+where $h$ is the dimension of the space of boundary zero modes and $\varsigma_{\mathrm{aPS}}(0)$ is the eta invariant of the boundary Dirac operator. The correction is a boundary term, and it is the reason a background with a nontrivial boundary can support zero modes whose count is not given by the bulk integral alone. The framework's instanton boundary is the three-sphere of *The Hopf Fibration and the Biquaternion Gauge Bundle*, and the eta invariant is a spectral invariant of the operator restricted to that boundary; its evaluation is a standard analytic computation and is not an algebraic statement about $\mathbb B$.
 
 ## The Density, the Charge, and the Total Derivative
 
@@ -275,7 +275,7 @@ The index density is a total derivative whose integral equals the instanton char
 | $F_{\imath\jmath}=\partial/\partial R_{\imath}\,\mathcal A_{\jmath}-\partial/\partial R_{\jmath}\,\mathcal A_{\imath}+i\kappa[\mathcal A_{\imath},\mathcal A_{\jmath}]$ | Its components; $[D_{\imath},D_{\jmath}]=i\kappa F_{\imath\jmath}$ |
 | $Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological (instanton) charge, $Ϙ\in\mathbb Z$; the trace in the defining representation |
 | $\Omega_{\mathrm{CS}}$ | Chern–Simons three-form; $d\Omega_{\mathrm{CS}}=\mathrm{Tr}(F\wedge F)$ |
-| $\eta(0)$, $h$ | Eta invariant and boundary zero-mode count (APS) |
+| $\varsigma_{\mathrm{aPS}}(0)$, $h$ | Eta invariant and boundary zero-mode count (APS) |
 | $I_2=\vec E\cdot\vec B$ | Framework's second invariant; index density in the abelian case |
 | $\epsilon_{\imath\jmath\rho\sigma}$ | Alternating symbol, orientation density, written all-low; $\epsilon_{0123}=+1$ Lorentzian, $\epsilon_{4123}=+1$ Euclidean |
 | $\langle\tilde F\rangle_{\natural}=\tilde F\tilde F^{\natural}$ | Biquaternion norm; rank-two, single-slot, does not supply $\mathrm{Tr}(F\wedge F)$ |

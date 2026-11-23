@@ -280,10 +280,10 @@ Each of these is an established phenomenon, with a substantial literature. The b
 
 Magnetohydrodynamics is the setting in which the fluid and electromagnetic descriptions genuinely coincide rather than merely resemble each other, and it is the plainest checkable instance of the fluid–electromagnetism correspondence. Its centre is the **induction equation**.
 
-For a conducting fluid of velocity $\vec v$ and magnetic diffusivity $\eta$, the magnetic field obeys
+For a conducting fluid of velocity $\vec v$ and magnetic diffusivity $\digamma_{\mathrm{dif}}$, the magnetic field obeys
 
 $$
-\partial/\partial r'_t\vec B = \vec\nabla_\Phi\times(\vec v\times\vec B) + \eta\,\vec\nabla_\Phi^2\vec B,
+\partial/\partial r'_t\vec B = \vec\nabla_\Phi\times(\vec v\times\vec B) + \digamma_{\mathrm{dif}}\,\vec\nabla_\Phi^2\vec B,
 $$
 
 while the vorticity of the same flow, $\vec\omega = \vec\nabla_\Phi\times\vec v$, obeys the Helmholtz equation
@@ -304,7 +304,7 @@ $$
 \partial/\partial r'_t\vec Q + (\vec v\cdot\nabla)\vec Q = (\vec Q\cdot\nabla)\vec v + \kappa\,\vec\nabla_\Phi^2\vec Q,
 $$
 
-with the diffusivity $\kappa = \eta$ for the field and $\kappa = \digamma_{\mathrm{kin}}$ for the vorticity. One consequence is that the magnetic field is frozen into a perfectly conducting fluid ($\eta = 0$) exactly as the vorticity is frozen into an inviscid one ($\digamma_{\mathrm{kin}} = 0$): Alfvén's frozen-flux theorem is the magnetic image of Kelvin's circulation theorem. The identity has been verified by exact numerical differentiation over random divergence-free fields; the residuals are at machine precision.
+with the diffusivity $\kappa = \digamma_{\mathrm{dif}}$ for the field and $\kappa = \digamma_{\mathrm{kin}}$ for the vorticity. One consequence is that the magnetic field is frozen into a perfectly conducting fluid ($\digamma_{\mathrm{dif}} = 0$) exactly as the vorticity is frozen into an inviscid one ($\digamma_{\mathrm{kin}} = 0$): Alfvén's frozen-flux theorem is the magnetic image of Kelvin's circulation theorem. The identity has been verified by exact numerical differentiation over random divergence-free fields; the residuals are at machine precision.
 
 **Where the correspondence stops.** It is a statement about two equations for one three-dimensional vector field, and it does not extend to either theory as a whole. There is no magnetic charge density, so there is no magnetic counterpart of the electric charge density, which is what empties the analogy's magnetic-Gauss sector; a fluid has no displacement current, so the constitutive relations are not the same objects; the dissipative terms have different microscopic origins; and the fluid equations are Galilean invariant while Maxwell's equations are Lorentz invariant. The correspondence is between the incompressible fluid limit and the *magnetic* Galilean limit of the electromagnetic equations (the regime of the quasi-stationary approximation), both of which are Galilean; *Maxwell's Equations in the Biquaternionic Formulation* states these limits from the electromagnetic side, and the source paper discusses changes of reference frame within the analogy. The source also offers an interpretation of electric charge in hydrodynamic terms, which is presented as part of the analogy rather than as an established identification, and the corpus records it as such.
 

@@ -104,7 +104,7 @@ $$
 |\vec s_{\Psi}|^2 = s_x^2 + s_y^2 + s_z^2 \leq 1.
 $$
 
-The eigenvalues of $\tilde{Ϛ}_{\Psi}$ are $\lambda_\pm = (1 \pm |\vec s_{\Psi}|)/2$, which are non-negative if and only if $|\vec s_{\Psi}| \leq 1$.
+The eigenvalues of $\tilde{Ϛ}_{\Psi}$ are $\eta_{\pm} = (1 \pm |\vec s_{\Psi}|)/2$, which are non-negative if and only if $|\vec s_{\Psi}| \leq 1$.
 
 The state is **pure** if and only if $|\vec s_{\Psi}| = 1$, i.e., if and only if $\tilde{Ϛ}_{\Psi}$ is idempotent. It is **mixed** if $|\vec s_{\Psi}| < 1$. The **maximally mixed state** has $\vec s_{\Psi} = 0$, i.e., $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2} e_t$.
 
@@ -143,16 +143,16 @@ The **scalar part** $h_t e_t$ carries the number $\mathrm{Sc}(\tilde H_\Psi) = h
 The **spectral decomposition** of $\tilde H_\Psi$ is
 
 $$
-\tilde H_\Psi = \lambda_+ \tilde\Pi_{\mathrm{id},1}(\vec u_\Psi) + \lambda_- \tilde\Pi_{\mathrm{id},2}(\vec u_\Psi),
+\tilde H_\Psi = \eta_{+} \tilde\Pi_{\mathrm{id},1}(\vec u_\Psi) + \eta_{-} \tilde\Pi_{\mathrm{id},2}(\vec u_\Psi),
 $$
 
 with
 
 $$
-\vec u_\Psi = \frac{\vec h_\Psi}{|\vec h_\Psi|}, \qquad \lambda_\pm = h_t \pm |\vec h_\Psi|.
+\vec u_\Psi = \frac{\vec h_\Psi}{|\vec h_\Psi|}, \qquad \eta_{\pm} = h_t \pm |\vec h_\Psi|.
 $$
 
-The eigenvalues are $\lambda_\pm$, and the eigenvectors are the idempotents $\tilde\Pi_{\mathrm{id},1,2}(\vec u_\Psi)$. So every Hermitian element of $\mathbb{B}_{\Psi}$ has a spectral decomposition in terms of idempotents.
+The eigenvalues are $\eta_{\pm}$, and the eigenvectors are the idempotents $\tilde\Pi_{\mathrm{id},1,2}(\vec u_\Psi)$. So every Hermitian element of $\mathbb{B}_{\Psi}$ has a spectral decomposition in terms of idempotents.
 
 **Observables with no scalar part.** The Hermitian elements $i\vec h_\Psi$ (with $h_t = 0$) are the analogs of the scalar-free observables of the qubit (the Pauli matrices). They have eigenvalues $\pm|\vec h_\Psi|$ and eigenvectors $\tilde\Pi_{\mathrm{id},1,2}(\vec u_\Psi)$.
 
@@ -209,7 +209,7 @@ It is obtained by multiplying out $\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}$ and takin
 
 ### Probabilities
 
-For a projective measurement of an observable $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ in a state $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$, the two outcomes are $\lambda_\pm = h_t \pm |\vec h_\Psi|$, with probabilities
+For a projective measurement of an observable $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ in a state $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$, the two outcomes are $\eta_{\pm} = h_t \pm |\vec h_\Psi|$, with probabilities
 
 $$
 \boxed{\;p_\pm = \tfrac{1}{2}\left(1 \pm \vec u_\Psi\cdot\vec s_{\Psi}\right)\;},
@@ -342,7 +342,7 @@ Reversibility is one of the structural features of the biquaternion formulation.
 
 In the standard framework, the measurement postulate is stated separately from the $*$-unitary evolution. In the biquaternion framework, both are consequences of the same structure, the Hermitian form on $\mathbb{B}$, which restricts to the plain form on $\mathbb{B}_{\Psi}$.
 
-**Projective measurement.** A projective measurement of $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ is specified by the spectral decomposition $\tilde H_\Psi = \lambda_+ \tilde\Pi_{\mathrm{id},1} + \lambda_- \tilde\Pi_{\mathrm{id},2}$, with $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(e_t \pm i\vec u_\Psi)$. The outcome $+$ has:
+**Projective measurement.** A projective measurement of $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ is specified by the spectral decomposition $\tilde H_\Psi = \eta_{+} \tilde\Pi_{\mathrm{id},1} + \eta_{-} \tilde\Pi_{\mathrm{id},2}$, with $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(e_t \pm i\vec u_\Psi)$. The outcome $+$ has:
 
 - **Probability** $p_+=\langle\tilde\Pi_{\mathrm{id},1},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1}\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, which at normalisation is $2\langle\tilde\Pi_{\mathrm{id},1},\tilde{Ϛ}_{\Psi}\rangle_{*}$.
 - **Post-measurement state** $\tilde{Ϛ}_{\Psi,\mathrm{out}} = \tilde\Pi_{\mathrm{id},1}$, from the two-sided operation.
@@ -374,13 +374,13 @@ so purity is the condition $\tilde{Ϛ}_{\Psi}^2 = \tilde{Ϛ}_{\Psi}$: the pure s
 The **spectral decomposition** of $\tilde{Ϛ}_{\Psi}$ is
 
 $$
-\tilde{Ϛ}_{\Psi} = \lambda_+ \tilde\Pi_{\mathrm{id},1}(\vec u_s) + \lambda_- \tilde\Pi_{\mathrm{id},2}(\vec u_s),
+\tilde{Ϛ}_{\Psi} = \eta_{+} \tilde\Pi_{\mathrm{id},1}(\vec u_s) + \eta_{-} \tilde\Pi_{\mathrm{id},2}(\vec u_s),
 $$
 
-with $\vec u_s = \vec s_{\Psi}/|\vec s_{\Psi}|$ and $\lambda_\pm = (1 \pm |\vec s_{\Psi}|)/2$. A function of the element is the function of its eigenvalues on its own idempotents, $\log\tilde{Ϛ}_{\Psi}=\log\lambda_+\,\tilde\Pi_{\mathrm{id},1}(\vec u_s)+\log\lambda_-\,\tilde\Pi_{\mathrm{id},2}(\vec u_s)$, with the extension by continuity at a vanishing eigenvalue. The **von Neumann entropy** is
+with $\vec u_s = \vec s_{\Psi}/|\vec s_{\Psi}|$ and $\eta_{\pm} = (1 \pm |\vec s_{\Psi}|)/2$. A function of the element is the function of its eigenvalues on its own idempotents, $\log\tilde{Ϛ}_{\Psi}=\log\eta_{+}\,\tilde\Pi_{\mathrm{id},1}(\vec u_s)+\log\eta_{-}\,\tilde\Pi_{\mathrm{id},2}(\vec u_s)$, with the extension by continuity at a vanishing eigenvalue. The **von Neumann entropy** is
 
 $$
-S(\tilde{Ϛ}_{\Psi}) = -2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}) = -\lambda_+ \log \lambda_+ - \lambda_- \log \lambda_-,
+S(\tilde{Ϛ}_{\Psi}) = -2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}) = -\eta_{+} \log \eta_{+} - \eta_{-} \log \eta_{-},
 $$
 
 which depends only on $|\vec s_{\Psi}|$ and vanishes for pure states.

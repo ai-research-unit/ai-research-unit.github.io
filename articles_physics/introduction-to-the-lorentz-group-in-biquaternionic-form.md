@@ -11,8 +11,8 @@ Every element of the group is a boost times a rotation. The same group sits insi
 The interval. Write an event as $x_{\imath}=(x_0,\mathbf{x})$ with $x_0=ct$, and let
 
 $$
-\eta=\operatorname{diag}(1,-1,-1,-1),\qquad
-s^2(x)=x^{\mathsf T}\eta\,x=(x_0)^2-\lvert\mathbf{x}\rvert^2 .
+\delta=\operatorname{diag}(1,-1,-1,-1),\qquad
+s^2(x)=x^{\mathsf T}\delta\,x=(x_0)^2-\lvert\mathbf{x}\rvert^2 .
 $$
 
 The form is indefinite, and its zero set is the light cone. The sign of $s^2$ sorts events into those a signal can reach from the origin and those it cannot, so this one quadratic form carries the causal structure of flat spacetime.
@@ -20,7 +20,7 @@ The form is indefinite, and its zero set is the light cone. The sign of $s^2$ so
 The defining equation. The maps that preserve the form are the linear maps $\Lambda$ of $\mathbb{R}^4$ with
 
 $$
-\boxed{\ \Lambda^{\mathsf T}\eta\,\Lambda=\eta\ }
+\boxed{\ \Lambda^{\mathsf T}\delta\,\Lambda=\delta\ }
 $$
 
 which says exactly that $s^2(\Lambda x)=s^2(x)$ for every $x$. Every such map preserves all intervals, and every map preserving all intervals is such a map, because a quadratic form is determined by its values.
@@ -36,7 +36,7 @@ so $\Lambda^{0}{}_{0}$ never vanishes and cannot change sign continuously. Two d
 Six parameters. The matrix $\Lambda$ has sixteen entries and the conditions form a symmetric $4\times4$ array, ten independent equations, so $16-10=6$ remain. Infinitesimally, with $\Lambda=I+\omega$,
 
 $$
-\omega^{\mathsf T}\eta+\eta\,\omega=0
+\omega^{\mathsf T}\delta+\delta\,\omega=0
 \quad\Longleftrightarrow\quad
 \omega_{\imath\jmath}=-\omega_{\jmath\imath},
 $$
@@ -83,7 +83,7 @@ $$
 
 and it is multiplicative, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$.
 
-On an anti-Hermitian element the norm returns the interval with the sign of $\eta$ reversed, $N(\tilde X)=-(x_0)^2+\lvert\mathbf{x}\rvert^2=-s^2(x)$; only the invariance is used below, and it is the same for both signs.
+On an anti-Hermitian element the norm returns the interval with the sign of $\delta$ reversed, $N(\tilde X)=-(x_0)^2+\lvert\mathbf{x}\rvert^2=-s^2(x)$; only the invariance is used below, and it is the same for both signs.
 
 The group. The unit elements are closed under multiplication, the inverse of a unit element is $\tilde U^{\natural}$, which has norm one, and $e_t$ has norm one, so they form a group
 
@@ -169,7 +169,7 @@ The congruence of $\tilde U_{\mathrm b}$ is the boost matrix written above and t
 
 ## Summary
 
-The group. The restricted Lorentz group is $\mathrm{SO}^{+}(1,3)$, the identity component of the set of linear maps with $\Lambda^{\mathsf T}\eta\Lambda=\eta$: six parameters, three boosts and three rotations.
+The group. The restricted Lorentz group is $\mathrm{SO}^{+}(1,3)$, the identity component of the set of linear maps with $\Lambda^{\mathsf T}\delta\Lambda=\delta$: six parameters, three boosts and three rotations.
 
 The products. Every element is a boost times a rotation, uniquely, so the two families generate the group; but they are not a pair of subgroups, since only the rotations close.
 

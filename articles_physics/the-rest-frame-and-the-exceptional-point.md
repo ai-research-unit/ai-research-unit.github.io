@@ -345,7 +345,7 @@ $$
 The two light-cone frequencies coincide.
 
 $$
-\lambda_+=\lambda_-=i\,mc .
+\eta_{+}=\eta_{-}=i\,mc .
 $$
 
 What survives is a scale and a phase, and neither carries an orientation. The scale is $mc$, the mass times the speed of light; the phase is the causal label, fixed to $i$ on the positive-energy timelike slice. The element acts as one number on every module, so a state module is multiplied by that number uniformly: the rest frame carries the rest frequency and no direction.
@@ -411,7 +411,7 @@ $$
 \mathsf M^{Q}=\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}=J_2(Q_t).
 $$
 
-The semisimple part is diagonal and the nilpotent part sits in one mixed corner. Compare the open stratum, where the element is $\operatorname{diag}(\lambda_+,\lambda_-)$ and both mixed corners are filled by the corner nilpotents: here one corner holds the defect and the other holds zero. The asymmetry is the defect.
+The semisimple part is diagonal and the nilpotent part sits in one mixed corner. Compare the open stratum, where the element is $\operatorname{diag}(\eta_{+},\eta_{-})$ and both mixed corners are filled by the corner nilpotents: here one corner holds the defect and the other holds zero. The asymmetry is the defect.
 
 The block is the same for every admissible choice of $e$. The pair is a gauge and the block is the invariant; the only thing the gauge moves is the scale of the corner generator, and that is the $1$ in the corner. Over forty random conjugations the four products of the transported pair agreed with the transported defect to $5.1\times10^{-14}$.
 
@@ -449,7 +449,7 @@ Here the involution has no fixed content to act on.
 $$
 B^{2}=0\ \Longrightarrow\ B=0\ \Longrightarrow\
 \vec{Ζ}\ \text{is undefined},\qquad
-\lambda_+=\lambda_-=Q_t .
+\eta_{+}=\eta_{-}=Q_t .
 $$
 
 What survives is the sign of the defect, and the two signs are two elements rather than one element in two names. $Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ and $Q_t(e_t-\vec\Pi_{\mathrm{nil}})$ differ; neither is a relabelling of the other, each has its own adapted pair, and each has the block $J_2(Q_t)$ relative to that pair. So the freedom that the open stratum spent on exchanging two labels is spent here on nothing, and the sign that remains is the sign of a direction on a line.
@@ -482,8 +482,8 @@ and the same holds on the right. So $L_{\tilde Q}=Q_t\mathrm{id}+L_{\vec\Pi_{\ma
 The eigenbasis of the open stratum is a joint eigenbasis of the two one-sided actions, and it is exactly what fails here.
 
 $$
-L_{\tilde Q}\big|_{\text{basis}}=\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-),\qquad
-R_{\tilde Q}\big|_{\text{basis}}=\operatorname{diag}(\lambda_+,\lambda_-,\lambda_+,\lambda_-).
+L_{\tilde Q}\big|_{\text{basis}}=\operatorname{diag}(\eta_{+},\eta_{+},\eta_{-},\eta_{-}),\qquad
+R_{\tilde Q}\big|_{\text{basis}}=\operatorname{diag}(\eta_{+},\eta_{-},\eta_{+},\eta_{-}).
 $$
 
 On the Jordan part the eigenvalue is one number, so both operators are $Q_t$ on their common eigenspace, and that common eigenspace is one line:
@@ -729,7 +729,7 @@ So the stratum is the boundary of the two-mode picture in exactly one respect an
 
 ### I.10.y — The Two Frequencies Coincide: the Beat Stops and the Rate Remains
 
-Read: the spectrum $\{Q_t\}$ of multiplicity two, against the pair $\{\lambda_+,\lambda_-\}$ of the open stratum.
+Read: the spectrum $\{Q_t\}$ of multiplicity two, against the pair $\{\eta_{+},\eta_{-}\}$ of the open stratum.
 
 A beat needs two frequencies and a rate needs one. On the open stratum the two eigenvalues differ by $2iB$, and their difference is the frequency of the interference between the two modes. Here $B=0$, the difference vanishes, and the beat period is infinite. What remains is the common value $Q_t$, which is the frequency of the global phase.
 
@@ -784,7 +784,7 @@ The minimal polynomial is a square; the centraliser is the dual numbers; the two
 The operational mark is the splitting law.
 
 $$
-\Delta_\Phi=\lambda_+-\lambda_-=2i\sqrt{B^{2}},\qquad
+\Delta_\Phi=\eta_{+}-\eta_{-}=2i\sqrt{B^{2}},\qquad
 B^{2}(\tilde Q+\varepsilon\tilde X)=2\varepsilon\,\tilde X\cdot\vec\Pi_{\mathrm{nil}}+\varepsilon^{2}B^{2}(\tilde X),
 $$
 

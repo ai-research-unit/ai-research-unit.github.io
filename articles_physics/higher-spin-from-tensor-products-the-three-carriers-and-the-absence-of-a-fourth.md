@@ -124,7 +124,7 @@ which is not the weight content of any direct sum of copies of $S$. A module of 
 
 The spin-zero part of the algebra is not a gap in the module content. It is a carrier, the centre, and it stands beside the other two in the catalogue.
 
-**The centre.** $\mathbb{B}_{C} = \{Q_te_t\}$ is the space of scalars, and under conjugation it is the trivial representation of the Lorentz group on a one-dimensional complex space. The centre is not a left module over $\mathbb{B}$ — left multiplication sends $\lambda e_t$ to $\lambda Q$, which leaves the centre as soon as $Q$ is not central — but it is invariant under conjugation, and that is the action that makes it a carrier. The scalar field of the companion Klein–Gordon article lives here: it is an element of the centre, and its spin is zero because scalars are Lorentz invariant.
+**The centre.** $\mathbb{B}_{C} = \{Q_te_t\}$ is the space of scalars, and under conjugation it is the trivial representation of the Lorentz group on a one-dimensional complex space. The centre is not a left module over $\mathbb{B}$ — left multiplication sends $Q_te_t$ to $Q_tQ$, which leaves the centre as soon as $Q$ is not central — but it is invariant under conjugation, and that is the action that makes it a carrier. The scalar field of the companion Klein–Gordon article lives here: it is an element of the centre, and its spin is zero because scalars are Lorentz invariant.
 
 **The invariants of products.** The tensor product of the defining module with its conjugate contains a one-dimensional invariant subspace, the trace part, and the antisymmetric square
 
@@ -280,7 +280,7 @@ The companion spin-one article exhibits the spin-one structure inside $\mathbb{B
 
 **The bimodule reading.** The conjugation action $\tilde{U}\tilde{Q}\tilde{U}^{*}$ is a bimodule action, and a bimodule over $\mathbb{B}$ is a module over $\mathbb{B}\otimes_\mathbb{R}\mathbb{B}$; correspondingly, the scalar-free part is the product $S\otimes\bar S$ with its trivial summand removed. This is a true and useful statement about where the carrier comes from. It is not a reason to deny it the name carrier: the carrier of a field is the subspace the field transforms in, and the scalar-free part is that subspace.
 
-**Why the restriction to $G$ matters for the label.** The trace survives only because $\tilde{U}^{*}=\tilde{U}^{-1}$ in $G$. A general Lorentz element does not preserve it: it sends $\lambda e_t$ to $\lambda\tilde{U}\tilde{U}^{*}$, which is not a multiple of $e_t$. Under the full Lorentz group $\mathbb{B}$ is irreducible, carrying the four-vector $(\tfrac12,\tfrac12)$. The split $Z\oplus V$ is therefore a split under the rotations, not under the Lorentz group, as the companion article on the Lorentz representations records; the spin is a rotation label, and the carrier that holds it is a rotation carrier.
+**Why the restriction to $G$ matters for the label.** The trace survives only because $\tilde{U}^{*}=\tilde{U}^{-1}$ in $G$. A general Lorentz element does not preserve it: it sends $Q_te_t$ to $Q_t\tilde{U}\tilde{U}^{*}$, which is not a multiple of $e_t$. Under the full Lorentz group $\mathbb{B}$ is irreducible, carrying the four-vector $(\tfrac12,\tfrac12)$. The split $Z\oplus V$ is therefore a split under the rotations, not under the Lorentz group, as the companion article on the Lorentz representations records; the spin is a rotation label, and the carrier that holds it is a rotation carrier.
 
 ### A spin-one module does not exist
 

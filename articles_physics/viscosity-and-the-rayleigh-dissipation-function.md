@@ -21,10 +21,10 @@ $$
 and its trace is the divergence, $\delta_{ij}S_{ij}=\vec\nabla_\Phi\cdot\vec v$. The stress is
 
 $$
-\sigma_{ij}=-p_{\mathrm{th}}\,\delta_{ij}+2\eta_{\mathrm{shr}}S_{ij}+\zeta_{\mathrm{blk}}\,\delta_{ij}\,\vec\nabla_\Phi\cdot\vec v ,
+\sigma_{ij}=-p_{\mathrm{th}}\,\delta_{ij}+2\digamma_{\mathrm{vis}}S_{ij}+\zeta_{\mathrm{blk}}\,\delta_{ij}\,\vec\nabla_\Phi\cdot\vec v ,
 $$
 
-with $\eta_{\mathrm{shr}}$ the shear viscosity and $\zeta_{\mathrm{blk}}$ the bulk viscosity. The first term is the pressure of the inviscid case; the second is the shear stress, which opposes the shearing of the flow; the third is the resistance to compression.
+with $\digamma_{\mathrm{vis}}$ the shear viscosity and $\zeta_{\mathrm{blk}}$ the bulk viscosity. The first term is the pressure of the inviscid case; the second is the shear stress, which opposes the shearing of the flow; the third is the resistance to compression.
 
 The stress has three parts and each has a different status. The pressure is a datum fixed by the law of state. The shear term is what makes a fluid stick to a wall, and it is the term that carries the fluid's viscosity in ordinary language. The bulk term is the one that survives in a purely compressive flow, and it vanishes for a monatomic ideal gas at the level of the kinetic theory.
 
@@ -34,10 +34,10 @@ $$
 \partial_{t'}\vec v+\bigl(\vec v\cdot\nabla\bigr)\vec v=-\frac{1}{\rho_{\mathrm{mass}}}\vec\nabla_\Phi p_{\mathrm{th}}+\frac{1}{\rho_{\mathrm{mass}}}\partial_j\sigma_{\mathrm{vsc},ij}+\vec f_{\mathrm{ext}},
 $$
 
-with $\sigma_{\mathrm{vsc},ij}=2\eta_{\mathrm{shr}}S_{ij}+\zeta_{\mathrm{blk}}\delta_{ij}\vec\nabla_\Phi\cdot\vec v$ the viscous part. For constant $\eta_{\mathrm{shr}}$ and an incompressible flow this is $\digamma_{\mathrm{kin}}\Delta_\Phi\vec v$ with the kinematic viscosity
+with $\sigma_{\mathrm{vsc},ij}=2\digamma_{\mathrm{vis}}S_{ij}+\zeta_{\mathrm{blk}}\delta_{ij}\vec\nabla_\Phi\cdot\vec v$ the viscous part. For constant $\digamma_{\mathrm{vis}}$ and an incompressible flow this is $\digamma_{\mathrm{kin}}\Delta_\Phi\vec v$ with the kinematic viscosity
 
 $$
-\digamma_{\mathrm{kin}}=\frac{\eta_{\mathrm{shr}}}{\rho_{\mathrm{mass}}},
+\digamma_{\mathrm{kin}}=\frac{\digamma_{\mathrm{vis}}}{\rho_{\mathrm{mass}}},
 $$
 
 and with that term the equation is the Navier–Stokes equation.
@@ -47,7 +47,7 @@ and with that term the equation is the Navier–Stokes equation.
 **The rate at which the stress does work on the flow is twice the dissipation function.** Define
 
 $$
-F_{\mathrm{rlh}}=\eta_{\mathrm{shr}}\,S_{ij}S_{ij}+\tfrac12\zeta_{\mathrm{blk}}\bigl(\vec\nabla_\Phi\cdot\vec v\bigr)^{2},
+F_{\mathrm{rlh}}=\digamma_{\mathrm{vis}}\,S_{ij}S_{ij}+\tfrac12\zeta_{\mathrm{blk}}\bigl(\vec\nabla_\Phi\cdot\vec v\bigr)^{2},
 $$
 
 the continuum form of Rayleigh's dissipation function. Then
@@ -56,7 +56,7 @@ $$
 \sigma_{\mathrm{vsc},ij}\,\partial_jv_i=2F_{\mathrm{rlh}},
 $$
 
-by expansion: the shear part contributes $2\eta_{\mathrm{shr}}S_{ij}S_{ij}$ because $\sum_{ij}(\partial_jv_i)S_{ij}=\sum_{ij}S_{ij}S_{ij}$, and the bulk part contributes $\zeta_{\mathrm{blk}}(\vec\nabla_\Phi\cdot\vec v)^{2}$. The identity is exact for every differentiable flow, and it is the continuum reading of $\mathrm{d}E/\mathrm{d}t'=-2F$ in [The Non-Quantum Limit of the Action Principle and the Lagrangian](the-non-quantum-limit-of-the-action-principle-and-the-lagrangian.html).
+by expansion: the shear part contributes $2\digamma_{\mathrm{vis}}S_{ij}S_{ij}$ because $\sum_{ij}(\partial_jv_i)S_{ij}=\sum_{ij}S_{ij}S_{ij}$, and the bulk part contributes $\zeta_{\mathrm{blk}}(\vec\nabla_\Phi\cdot\vec v)^{2}$. The identity is exact for every differentiable flow, and it is the continuum reading of $\mathrm{d}E/\mathrm{d}t'=-2F$ in [The Non-Quantum Limit of the Action Principle and the Lagrangian](the-non-quantum-limit-of-the-action-principle-and-the-lagrangian.html).
 
 The energy of an isolated viscous flow decreases. With no external force and no flux through the boundary,
 
@@ -158,9 +158,9 @@ Not claimed. It is not claimed that no variational principle exists for a viscou
 
 ## Summary
 
-The Newtonian stress is $-p_{\mathrm{th}}\delta_{ij}+2\eta_{\mathrm{shr}}S_{ij}+\zeta_{\mathrm{blk}}\delta_{ij}\vec\nabla_\Phi\cdot\vec v$, and the Navier–Stokes equation is its divergence.
+The Newtonian stress is $-p_{\mathrm{th}}\delta_{ij}+2\digamma_{\mathrm{vis}}S_{ij}+\zeta_{\mathrm{blk}}\delta_{ij}\vec\nabla_\Phi\cdot\vec v$, and the Navier–Stokes equation is its divergence.
 
-Its work rate is twice the Rayleigh dissipation function, $\sigma_{\mathrm{vsc},ij}\partial_jv_i=2F_{\mathrm{rlh}}$ with $F_{\mathrm{rlh}}=\eta_{\mathrm{shr}}S_{ij}S_{ij}+\frac12\zeta_{\mathrm{blk}}(\vec\nabla_\Phi\cdot\vec v)^{2}$. The energy of an isolated flow falls at $2F_{\mathrm{rlh}}$, and the entropy rises at the same rate over the temperature.
+Its work rate is twice the Rayleigh dissipation function, $\sigma_{\mathrm{vsc},ij}\partial_jv_i=2F_{\mathrm{rlh}}$ with $F_{\mathrm{rlh}}=\digamma_{\mathrm{vis}}S_{ij}S_{ij}+\frac12\zeta_{\mathrm{blk}}(\vec\nabla_\Phi\cdot\vec v)^{2}$. The energy of an isolated flow falls at $2F_{\mathrm{rlh}}$, and the entropy rises at the same rate over the temperature.
 
 The obstruction is the absence of an action. The viscous term is odd under reversal of time and has a fixed sign, so no functional of the flow alone varies to it. Rayleigh's device inserts the force on the right-hand side of Lagrange's equation, which is the statement that it is inserted and not derived. Doubling the variables restores a variational principle for a larger system, and the phase then belongs to the larger system.
 
@@ -177,10 +177,10 @@ The heat equation is not a wave equation. Its frequency is $-i\digamma_{\mathrm{
 | $\sigma_{ij}$ | Stress tensor |
 | $\sigma_{\mathrm{vsc},ij}$ | Its viscous part |
 | $S_{ij}=\frac12(\partial_iv_j+\partial_jv_i)$ | Strain rate |
-| $\eta_{\mathrm{shr}}$ | Shear viscosity |
+| $\digamma_{\mathrm{vis}}$ | Shear viscosity |
 | $\tau_{\mathrm{dmp}}$ | Relaxation time of the damping term in the damped wave equation |
 | $\zeta_{\mathrm{blk}}$ | Bulk viscosity |
-| $\digamma_{\mathrm{kin}}=\eta_{\mathrm{shr}}/\rho_{\mathrm{mass}}$ | Kinematic viscosity |
+| $\digamma_{\mathrm{kin}}=\digamma_{\mathrm{vis}}/\rho_{\mathrm{mass}}$ | Kinematic viscosity |
 | $F_{\mathrm{rlh}}$ | Rayleigh dissipation function |
 | $p_{\mathrm{th}}$ | Thermodynamic pressure |
 | $s_{\mathrm{spc}},\ s_{\mathrm{ent}}$ | Specific entropy and entropy density |

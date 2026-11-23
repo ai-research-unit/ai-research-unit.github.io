@@ -103,7 +103,7 @@ with $E=-\frac{h}{2\pi} c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$ and $\ve
 
 ## The Gauge Transformation Is a Phase Translation
 
-**The exact infinitesimal statement.** Let $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ be a constant central unit and let $\tilde A_2=\lambda\tilde A$. Then
+**The exact infinitesimal statement.** Let $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$ be a constant central unit and let $\tilde A_2=\digamma_{\mathrm{gau}}\tilde A$. Then
 
 $$
 \tilde A_2=\varrho\,e^{i(\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}})}\,
@@ -113,7 +113,7 @@ $$
 
 so the gauge transformation is the translation of $\theta_{\mathrm{pha}}$ by $\vartheta_{\mathrm{gau}}$ with the other seven parameters fixed. The identity is exact and the numerical check is exact to $10^{-16}$.
 
-**Why it is exact.** $\lambda$ is central, so it passes to the left through the whole word and multiplies the leftmost factor; and the leftmost factor is the phase factor, whose argument is additive. No other factor is touched, because no other factor carries a central scalar.
+**Why it is exact.** $\digamma_{\mathrm{gau}}$ is central, so it passes to the left through the whole word and multiplies the leftmost factor; and the leftmost factor is the phase factor, whose argument is additive. No other factor is touched, because no other factor carries a central scalar.
 
 **What it says about the connection.** For a pure-gauge connection, $A_{\imath}=\partial_{\imath}\Lambda$, the added term is $\frac{2\pi iϙ}{h}\partial_{\imath}\Lambda$, so
 
@@ -220,7 +220,7 @@ The connection is central per slot, so it merges with the scale and the phase br
 | $\tilde A^{-1}\partial_{\imath}\tilde A$ | The four brackets: scale, phase, boost, rotor |
 | $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$ | Covariant wavevector; the one substitution |
 | $\kappa_t,\vec\kappa$ | Its components; $\frac{h}{2\pi} c\kappa_t=E+ϙca'_t$, $\frac{h}{2\pi}\vec\kappa=\vec p-q\vec A$ |
-| $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ | Central gauge unit; $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Lambda}{h}$ |
+| $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$ | Central gauge unit; $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Lambda}{h}$ |
 | $\tilde F$ | Curvature of the connection; scalar-free, so blind to the constraint |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
 

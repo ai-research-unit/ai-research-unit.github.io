@@ -55,7 +55,7 @@ Three measures are used below, all standard.
 $$
 C(|\tilde{Ξ}\rangle) = \bigl|\langle\tilde{Ξ}|\,\tilde{\mathcal S}\,|\tilde{Ξ}^*\rangle\bigr| = 2\,s_1s_2 ,
 $$
-vanishing on product states and equal to $1$ on the Bell states; for a mixed state $\tilde{Ϛ}_{\Psi}$ it is $C(\tilde{Ϛ}_{\Psi}) = \max(0,\lambda_1-\lambda_2-\lambda_3-\lambda_4)$, where $\lambda_1\geq\lambda_2\geq\lambda_3\geq\lambda_4$ are the square roots of the eigenvalues of the Hermitian positive-semidefinite matrix $\tilde{Ϛ}_{\Psi}^{1/2}\,\tilde{\mathcal S}\tilde{Ϛ}_{\Psi}^{*}\tilde{\mathcal S}\,\tilde{Ϛ}_{\Psi}^{1/2}$.
+vanishing on product states and equal to $1$ on the Bell states; for a mixed state $\tilde{Ϛ}_{\Psi}$ it is $C(\tilde{Ϛ}_{\Psi}) = \max(0,\eta_1-\eta_2-\eta_3-\eta_4)$, where $\eta_1\geq\eta_2\geq\eta_3\geq\eta_4$ are the square roots of the eigenvalues of the Hermitian positive-semidefinite matrix $\tilde{Ϛ}_{\Psi}^{1/2}\,\tilde{\mathcal S}\tilde{Ϛ}_{\Psi}^{*}\tilde{\mathcal S}\,\tilde{Ϛ}_{\Psi}^{1/2}$.
 
 **Entanglement entropy.** For a pure joint state it is the von Neumann entropy of either reduced state, $E = S(\mathrm{Tr}_2\tilde\Pi_{\mathrm{id}}) = -s_1^2\log s_1^2 - s_2^2\log s_2^2$, and it is a function of the single invariant $s_1^2$. For mixed joint states the partial-trace entropy is a marginal entropy and not an entanglement measure, as the companion exercise records; the concurrence is used for mixed states below.
 

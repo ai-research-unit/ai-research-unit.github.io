@@ -4,7 +4,7 @@
 
 An exceptional point is a degeneracy at which two eigenvalues coincide **and** the two eigenstates merge into one. It is not the same as a degeneracy at which the eigenvalues coincide and the eigenstates stay independent. The first is a Jordan block, the second is a diagonalisable block, and only the first has no eigenprojections.
 
-The biquaternion spectrum has both. For $\tilde Q=Q_te_t+\vec Q$ the eigenvalues are $\lambda_\pm=Q_t\pm iB$ with $B^2=(\vec Q,\vec Q)$. They coincide exactly when $B=0$. If $\vec Q=0$ the element is central and semisimple: the degeneracy is diabolic. If $\vec Q\neq0$ and $B=0$ the element is a single Jordan block: the degeneracy is exceptional. The second case is the subject of this article.
+The biquaternion spectrum has both. For $\tilde Q=Q_te_t+\vec Q$ the eigenvalues are $\eta_{\pm}=Q_t\pm iB$ with $B^2=(\vec Q,\vec Q)$. They coincide exactly when $B=0$. If $\vec Q=0$ the element is central and semisimple: the degeneracy is diabolic. If $\vec Q\neq0$ and $B=0$ the element is a single Jordan block: the degeneracy is exceptional. The second case is the subject of this article.
 
 The article owns the question, not the theorem. The spectrum and the eigenprojections are those of *The Biquaternion Eigenvalue Decomposition*; the spectral-degenerate cone and the Jordan normal form are those of *The Spectrum of a Biquaternion*. The exponential of the nilpotent is that of *Biquaternion Elementary Functions*. What is added here is the reading of the degenerate point, the distinction from the diabolic point, the two normal forms, and the boundary of the physical claim.
 
@@ -101,7 +101,7 @@ with $\tilde Q_0$ on the discriminant. For a generic direction $(\vec Q_0,\vec Q
 $$
 \boxed{\;B(\epsilon)=\sqrt{2\epsilon(\vec Q_0,\vec Q_1)}\left(1+O(\epsilon)\right),
 \qquad
-\lambda_\pm(\epsilon)=Q_t(\epsilon)\pm iB(\epsilon)\;}.
+\eta_{\pm}(\epsilon)=Q_t(\epsilon)\pm iB(\epsilon)\;}.
 $$
 
 The splitting is of order $\sqrt{\epsilon}$, not $\epsilon$. That is the defining behaviour of an exceptional point: a perturbation that is linear in the parameter produces a square-root response, because the two eigenvalues are the two branches of a square root. The sign of the branch is a choice, and the two branches meet at $\epsilon=0$.
@@ -171,7 +171,7 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 | $\tilde Q=Q_te_t+\vec Q$ | a general biquaternion, $Q_t\in\mathbb{C}$, $\vec Q\in\mathbb{C}^3$ |
 | $(\vec X,\vec Y)$ | the complex bilinear form $X_xY_x+X_yY_y+X_zY_z$ on the vector part |
 | $B^2=(\vec Q,\vec Q)$ | the complex norm squared of the vector part |
-| $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
+| $\eta_{\pm}=Q_t\pm iB$ | the two eigenvalues |
 | $\mathcal{D}_{\mathrm{disc}}=-4B^2$ | the discriminant of the characteristic polynomial |
 | $\vec{Ζ}=-i\vec Q/B$ | the pure root of $+1$ of the non-degenerate regime, defined for $B\neq0$ |
 | $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\vec{Ζ})$ | the eigenprojections, defined for $B\neq0$ |

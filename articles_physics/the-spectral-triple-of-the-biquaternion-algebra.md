@@ -264,7 +264,7 @@ J_C\xi J_C^{-1}=C\bar\xi C^{-1}=-\xi,
 $$
 The sign is not an accident of the frame: an antilinear map changes frame by conjugating its defining action, $J\mapsto U^{-1}J\bar U$, and not by transforming its two factors separately, and with that rule $J_C^2$ and $J_C\xi J_C^{-1}$ are carried to themselves. Reading the sign off one factor alone, as though $J_C$ were a product of two linear maps, gives a different antilinear map and in general a different sign; that is why the sign is read from the operator's action and not from its factors.
 
-Two properties of $J_C$ are then immediate. The operator $C$ preserves the Hermitian norm, so $J_C$ is an isometry; and $J_C^2=C\bar C=C^2=-1$ because $C$ is coefficient-real. A rescaling $J_C\mapsto\lambda J_C$ with $\lvert\lambda\rvert=1$ changes neither $J_C^2$, where the factor is $\lvert\lambda\rvert^2=1$, nor $J_C\xi J_C^{-1}$, where the phase cancels. Both signs are therefore properties of the pair $(C,\xi)$, and the pair $(\epsilon,\epsilon'')=(-1,-1)$ is the $n\equiv2$ line of Connes' table, not the $n\equiv4$ one.
+Two properties of $J_C$ are then immediate. The operator $C$ preserves the Hermitian norm, so $J_C$ is an isometry; and $J_C^2=C\bar C=C^2=-1$ because $C$ is coefficient-real. A rescaling $J_C\mapsto\digamma_{\mathrm{cfm}} J_C$ with $\lvert\digamma_{\mathrm{cfm}}\rvert=1$ changes neither $J_C^2$, where the factor is $\lvert\digamma_{\mathrm{cfm}}\rvert^2=1$, nor $J_C\xi J_C^{-1}$, where the phase cancels. Both signs are therefore properties of the pair $(C,\xi)$, and the pair $(\epsilon,\epsilon'')=(-1,-1)$ is the $n\equiv2$ line of Connes' table, not the $n\equiv4$ one.
 
 What is compared with the framework's $\flat$ is consequently $\epsilon$ alone, the sign of $J_C^2=C\bar C$, which for coefficient-real $C$ is the sign of $C^2$; the sign $\epsilon'$ of $J_CD=\epsilon'DJ_C$ involves $D$ itself and is not computed.
 
@@ -284,7 +284,7 @@ The exact relation between $\flat$ and the algebra's own antilinear operator of 
 
 The triple's dimension is read from the operator's spectrum, and the framework's heat-kernel data are the same data.
 
-**Dimension from the spectrum.** If the eigenvalues $\lambda_n$ of $D$ are ordered by magnitude, the spectral dimension is the $d$ for which the counting function grows as $N(\Lambda)\sim\Lambda^d$. The growth is a statement about the principal symbol, and the biquaternion gradient's is exact. The symbol of $\tilde\nabla_\Phi$ at $\zeta$ is multiplication by the element $\sum_{\imath}\zeta_{\imath} e_{\imath}$, whose quaternionic norm is $\zeta_t^2+\zeta_x^2+\zeta_y^2+\zeta_z^2$: the four generators contribute $+\zeta_{\imath}^2$ each, because $e_t^2=+e_t$ and $\vec e_\imath^2=-e_t$ while $\vec e_\imath^{\natural}=-\vec e_\imath$. Hence
+**Dimension from the spectrum.** If the eigenvalues $\eta_n$ of $D$ are ordered by magnitude, the spectral dimension is the $d$ for which the counting function grows as $N(\Lambda)\sim\Lambda^d$. The growth is a statement about the principal symbol, and the biquaternion gradient's is exact. The symbol of $\tilde\nabla_\Phi$ at $\zeta$ is multiplication by the element $\sum_{\imath}\zeta_{\imath} e_{\imath}$, whose quaternionic norm is $\zeta_t^2+\zeta_x^2+\zeta_y^2+\zeta_z^2$: the four generators contribute $+\zeta_{\imath}^2$ each, because $e_t^2=+e_t$ and $\vec e_\imath^2=-e_t$ while $\vec e_\imath^{\natural}=-\vec e_\imath$. Hence
 $$
 \sigma\sigma^{\natural}=|\zeta|^2e_t,
 $$

@@ -209,7 +209,7 @@ $$
 with $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}=\lvert\vec p\rvert$, and the eigenvalues are
 
 $$
-\lambda_\pm=Q_t\pm iB=imc\,e^{\pm\theta_{\mathrm{rpd}}}=\varrho\,e^{i\theta_{\mathrm{pha}}}\,e^{\pm i\Theta}.
+\eta_{\pm}=Q_t\pm iB=imc\,e^{\pm\theta_{\mathrm{rpd}}}=\varrho\,e^{i\theta_{\mathrm{pha}}}\,e^{\pm i\Theta}.
 $$
 
 The factor $\mathcal B_{\Psi}=e^{-i\theta_{\mathrm{rpd}}\vec u_p}$ is not a phase either, and the eigenvalues just written say so: with $\vec u_p^2=-e_t$ the argument squares to $+\theta_{\mathrm{rpd}}^2e_t$, so

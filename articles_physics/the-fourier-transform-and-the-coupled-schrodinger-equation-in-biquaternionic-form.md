@@ -109,7 +109,7 @@ The curvature. Differentiating the operator setting's symbol twice,
 $$
 \frac{\partial^{2}\sigma_{\mathrm{gco}}}{\partial \nu_{\Phi,k}^{2}}=-\frac{hc}{(2\pi)^{2}\nu_m}
 \qquad
-\text{for each }\eta ,
+\text{for each }\digamma_{\mathrm{tst}} ,
 $$
 
 independent of $\vec A$ and of $\omicron_{\mathrm{pot}}$. A central difference at $2\pi\nu_{x}=0.4$ with step $10^{-4}$ returned $-0.588235294$, $-0.588235294$ and $-0.588235297$ for $\vec A=0$, $\vec A=(0.3,-0.2,0.5)$ and $2\vec A$, the spread being the step's error. The curvature is $-\frac{h^{2}}{4\pi^{2}}/m=-0.588235$ in all three cases.

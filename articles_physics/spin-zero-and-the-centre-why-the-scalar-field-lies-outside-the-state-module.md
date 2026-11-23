@@ -105,9 +105,9 @@ $$
 
 which lies in the centre only if $\tilde{Q}$ does. Taking $\tilde{Q}$ with a nonzero vector part produces a nonzero vector part in the product, so multiplying a central value by a general element carries it out of the centre. The centre is therefore not a carrier of the left action. It contains no nonzero subspace that the left action preserves.
 
-The centre meets the states only at zero. If a central element $\lambda e_t$ carried a pure state, $\lambda e_t\tilde\Pi_{\mathrm{id}}(\vec u)=\lambda e_t$, then $\lambda(\tilde\Pi_{\mathrm{id}}(\vec u)-e_t)=0$; the difference is nonzero and $e_t$ is invertible, so $\lambda=0$. The overlap is the zero element, and this was confirmed by recomputation.
+The centre meets the states only at zero. If a central element $Q_te_t$ carried a pure state, $Q_te_t\tilde\Pi_{\mathrm{id}}(\vec u)=Q_te_t$, then $Q_t(\tilde\Pi_{\mathrm{id}}(\vec u)-e_t)=0$; the difference is nonzero and $e_t$ is invertible, so $Q_t=0$. The overlap is the zero element, and this was confirmed by recomputation.
 
-The distinction has a second, more elementary face. A state that carries a pure state is a **zero divisor**, as shown above. A nonzero central element $\lambda e_t$, by contrast, is invertible, with inverse $\lambda^{-1}e_t$. The nonzero elements of the scalar line are invertible; the states are the algebra's zero divisors. They cannot be the same space, and they do not overlap except at zero.
+The distinction has a second, more elementary face. A state that carries a pure state is a **zero divisor**, as shown above. A nonzero central element $Q_te_t$, by contrast, is invertible, with inverse $Q_t^{-1}e_t$. The nonzero elements of the scalar line are invertible; the states are the algebra's zero divisors. They cannot be the same space, and they do not overlap except at zero.
 
 ## Three Obstructions, One Reason
 

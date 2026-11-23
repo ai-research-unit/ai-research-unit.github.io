@@ -159,13 +159,13 @@ The ratio of the two, and what it says. $\mathrm{Re}(\varepsilon'/\varepsilon)/\
 
 **The number that does not close.** $\varepsilon'/\varepsilon$ is the one measurement in the triangle programme that does not agree with its lattice prediction. The measured $1.66\times10^{-3}$ sits well above the $1.4\times10^{-4}$ that the current lattice calculation gives for the Standard Model, a difference of a factor of twelve and about two standard deviations once the (large) hadronic uncertainty is included. The article records this as a live tension rather than a confirmed conflict, and records the reason for caution: the prediction depends on the cancellation of two penguin contractions, and a quantity that is the difference of two large numbers is the last place to trust a first lattice calculation.
 
-Why $\varepsilon_K$ is the one that measures $\eta$. At leading order in the Wolfenstein parameters,
+Why $\varepsilon_K$ is the one that measures $\digamma_{\mathrm{wlf}}$. At leading order in the Wolfenstein parameters,
 
 $$
-\lvert\varepsilon_K\rvert\propto B_K\, f_K^2\, m_K\, \frac{m_t^2}{m_W^2}\,\eta\left(1-\rho\right)\times(\text{short-distance function}),
+\lvert\varepsilon_K\rvert\propto B_K\, f_K^2\, m_K\, \frac{m_t^2}{m_W^2}\,\digamma_{\mathrm{wlf}}\left(1-\rho\right)\times(\text{short-distance function}),
 $$
 
-so $\varepsilon_K$ is proportional to the altitude of the triangle. Its measurement is what first established that $\eta>0$, that is, that the triangle is not flat on the axis and CP is genuinely violated. Numerically $\lvert\varepsilon_K\rvert/\eta=6.3\times10^{-3}$, a constant of proportionality that absorbs $B_K$, $f_K$ and the short-distance function.
+so $\varepsilon_K$ is proportional to the altitude of the triangle. Its measurement is what first established that $\digamma_{\mathrm{wlf}}>0$, that is, that the triangle is not flat on the axis and CP is genuinely violated. Numerically $\lvert\varepsilon_K\rvert/\digamma_{\mathrm{wlf}}=6.3\times10^{-3}$, a constant of proportionality that absorbs $B_K$, $f_K$ and the short-distance function.
 
 ## The Two $B$ Systems
 
@@ -179,7 +179,7 @@ What the numbers are, and what sets them. The three systems' splittings differ b
 
 Read down the table: the kaon's small splitting is charm's, the $B$'s large splittings are the top's, and the ratio between the two $B$ systems is almost purely the SU(3) breaking of the decay constant, because both are top-dominated and the CKM factors $V_{tb}V_{td}$ and $V_{tb}V_{ts}$ differ by the known ratio $V_{td}/V_{ts}$.
 
-**Why the $B_d$ measurement determines a side of the triangle and the kaon does not.** $\delta m_{B_d}\propto\lvert V_{td}\rvert^2$, and $\lvert V_{td}\rvert$ is the distance from the triangle's apex to the vertex at $(1,0)$ — the side $R_t$, in units of $A\lambda^3$. The kaon's $\delta m$ is dominated by the charm contribution, which carries no $\eta$ dependence at leading order, so it constrains a different combination. Hence: the kaon measures the height, the $B_d$ measures the right side.
+**Why the $B_d$ measurement determines a side of the triangle and the kaon does not.** $\delta m_{B_d}\propto\lvert V_{td}\rvert^2$, and $\lvert V_{td}\rvert$ is the distance from the triangle's apex to the vertex at $(1,0)$ — the side $R_t$, in units of $A\lambda^3$. The kaon's $\delta m$ is dominated by the charm contribution, which carries no $\digamma_{\mathrm{wlf}}$ dependence at leading order, so it constrains a different combination. Hence: the kaon measures the height, the $B_d$ measures the right side.
 
 The $B_s$ and the width difference. $\delta\Gamma_s/\Gamma_s\approx0.12$ is measured, and it is the largest width difference of any neutral meson system. It matters because the two mass eigenstates have different CP content, so a decay into a CP eigenstate can be used to tag the flavour at production — the "same-side" or "opposite-side" tagging that makes $\delta m_s$ measurable at all.
 
@@ -219,10 +219,10 @@ $$
 V_{ud}V^{*}_{ub}+V_{cd}V^{*}_{cb}+V_{td}V^{*}_{tb}=0 ,
 $$
 
-which is a sum of three complex numbers equal to zero — three vectors that close, hence a triangle. Dividing by the middle term puts two vertices at $(0,0)$ and $(1,0)$ and the third at $(\bar\rho,\bar\eta)$:
+which is a sum of three complex numbers equal to zero — three vectors that close, hence a triangle. Dividing by the middle term puts two vertices at $(0,0)$ and $(1,0)$ and the third at $(\bar\rho,\bar\digamma_{\mathrm{wlf}})$:
 
 $$
-\bar\rho+i\bar\eta=-\frac{V_{ud}V^{*}_{ub}}{V_{cd}V^{*}_{cb}} .
+\bar\rho+i\bar\digamma_{\mathrm{wlf}}=-\frac{V_{ud}V^{*}_{ub}}{V_{cd}V^{*}_{cb}} .
 $$
 
 The parameters.
@@ -232,9 +232,9 @@ The parameters.
 | $\lambda$ | $0.22650$ | $\lvert V_{us}\rvert$, the base of the triangle |
 | $A$ | $0.826$ | $\lvert V_{cb}\rvert/\lambda^2$ |
 | $\bar\rho$ | $0.1591$ | Real coordinate of the apex |
-| $\bar\eta$ | $0.3523$ | Imaginary coordinate; the CP-violating height |
-| $R_b$ | $0.3866$ | $\sqrt{\bar\rho^2+\bar\eta^2}$ |
-| $R_t$ | $0.9117$ | $\sqrt{(1-\bar\rho)^2+\bar\eta^2}$ |
+| $\bar\digamma_{\mathrm{wlf}}$ | $0.3523$ | Imaginary coordinate; the CP-violating height |
+| $R_b$ | $0.3866$ | $\sqrt{\bar\rho^2+\bar\digamma_{\mathrm{wlf}}^2}$ |
+| $R_t$ | $0.9117$ | $\sqrt{(1-\bar\rho)^2+\bar\digamma_{\mathrm{wlf}}^2}$ |
 
 The three angles.
 
@@ -250,10 +250,10 @@ $$
 
 The sum is $180$ by construction — the triangle is drawn in a plane — so the sum alone is not a test. What is a test is that three *independent* measurements of the three angles give values consistent with one triangle.
 
-**The area.** Heron's formula on the three sides gives $0.1762$, and $\bar\eta/2$ gives $0.1762$. The area is the CP violation: a flat triangle ($\bar\eta=0$) has no area and no CP violation, and the Jarlskog invariant is proportional to it,
+**The area.** Heron's formula on the three sides gives $0.1762$, and $\bar\digamma_{\mathrm{wlf}}/2$ gives $0.1762$. The area is the CP violation: a flat triangle ($\bar\digamma_{\mathrm{wlf}}=0$) has no area and no CP violation, and the Jarlskog invariant is proportional to it,
 
 $$
-J=A^2\lambda^6\,\bar\eta\,(1-\bar\rho)=2.73\times10^{-5}
+J=A^2\lambda^6\,\bar\digamma_{\mathrm{wlf}}\,(1-\bar\rho)=2.73\times10^{-5}
 \quad\text{(leading order)} ,
 $$
 
@@ -281,7 +281,7 @@ R_t^2=1+R_b^2-2R_b\cos\gamma
 0.9117=0.9117 ,
 $$
 
-which is the law of cosines and it holds to four decimal places because both sides use the same $(\bar\rho,\bar\eta)$. That is a consistency check of the arithmetic, not of the physics. The physical test is the next two:
+which is the law of cosines and it holds to four decimal places because both sides use the same $(\bar\rho,\bar\digamma_{\mathrm{wlf}})$. That is a consistency check of the arithmetic, not of the physics. The physical test is the next two:
 
 $$
 R_t\ \text{from}\ \frac{\delta m_{B_s}}{\delta m_{B_d}}=0.914
@@ -305,7 +305,7 @@ The comparison with the alternative. A four-generation model, or a model with a 
 
 What it proves. That the CKM picture is *self-consistent*: three angles and two sides, measured by five different experimental techniques spanning tree and loop physics, satisfy the unitarity relations of a $3\times3$ unitary matrix. That is a strong statement, because unitarity is a property of the group and not of any dynamical assumption, so the test has no adjustable content.
 
-**What it does not prove.** It does not prove that the CKM matrix is the *origin* of CP violation rather than a description of it. It does not exclude new physics that respects the same unitarity relations — a heavy particle that couples in a flavour-universal way, or one whose contributions cancel in the five observables. And it does not explain the pattern: the values $\lambda=0.2265$, $A=0.826$, $\bar\rho=0.159$, $\bar\eta=0.352$ are measured, and the corpus has no principle that selects them.
+**What it does not prove.** It does not prove that the CKM matrix is the *origin* of CP violation rather than a description of it. It does not exclude new physics that respects the same unitarity relations — a heavy particle that couples in a flavour-universal way, or one whose contributions cancel in the five observables. And it does not explain the pattern: the values $\lambda=0.2265$, $A=0.826$, $\bar\rho=0.159$, $\bar\digamma_{\mathrm{wlf}}=0.352$ are measured, and the corpus has no principle that selects them.
 
 The distinction the corpus insists on. There is a difference between "the model is consistent with all data" and "the model is the correct description". The closure test establishes the first. The second would require the model to be *unique* among consistent descriptions, and it is not, as the persistence of the flavour puzzle shows.
 
@@ -314,7 +314,7 @@ What would break it. A sixth measurement of the same triangle by a different rou
 | Candidate | Currently | Would test |
 |---|---|---|
 | $\gamma$ from Belle II | $3.5^\circ$ | The one angle with no loop dependence |
-| $B_K$ from lattice at $1\%$ | $\sim3\%$ | The height, hence $\eta$, independently of $B$ decays |
+| $B_K$ from lattice at $1\%$ | $\sim3\%$ | The height, hence $\digamma_{\mathrm{wlf}}$, independently of $B$ decays |
 | $\xi$ from lattice at $1\%$ | $\sim2\%$ | $R_t$ without the SU(3)-breaking assumption |
 | $\delta m_s$ at $0.1\%$ | $0.6\%$ | The top loop directly |
 | $\varepsilon'/\varepsilon$ | factor $12$ from lattice | The penguin sector, and currently the outlier |
@@ -331,7 +331,7 @@ The triangle is a statement about $\mathrm{U}(3)$. The three-vector sum closing 
 
 What it transcribes. Everything numerical: the box functions, the Inami–Lim results, the hadronic matrix elements, the measured frequencies, the rare-decay branching ratios, the five closure inputs and their errors.
 
-What it does not supply, declared. No loop calculation. No measure on the space of field configurations over which a loop integral is defined. No lattice. No hadronic matrix element. No mechanism for the values of $\lambda$, $A$, $\bar\rho$, $\bar\eta$. No explanation of why there are three generations. Each of these is an import, and the articles that own them are named in the ledger.
+What it does not supply, declared. No loop calculation. No measure on the space of field configurations over which a loop integral is defined. No lattice. No hadronic matrix element. No mechanism for the values of $\lambda$, $A$, $\bar\rho$, $\bar\digamma_{\mathrm{wlf}}$. No explanation of why there are three generations. Each of these is an import, and the articles that own them are named in the ledger.
 
 The ledger.
 
@@ -345,7 +345,7 @@ The ledger.
 | $\lvert\varepsilon_K\rvert=2.228\times10^{-3}$, $\varepsilon'/\varepsilon=1.66\times10^{-3}$ | **Imported** |
 | $\delta m_{B_d}$, $\delta m_{B_s}$, the ratio $35.06$ | **Imported**; $\lvert V_{ts}/V_{td}\rvert$ and $R_t$ computed here |
 | $\mathcal{B}(B\to X_s\gamma)$, $\mathcal{B}(B_s\to\mu\mu)$ | **Imported**; the ratios computed here |
-| $\lambda$, $A$, $\bar\rho$, $\bar\eta$ | **Imported** global fit |
+| $\lambda$, $A$, $\bar\rho$, $\bar\digamma_{\mathrm{wlf}}$ | **Imported** global fit |
 | $R_b$, $R_t$, $\alpha$, $\beta$, $\gamma$, the area | **Computed** here from the fit |
 | The law-of-cosines identity and the two closure pulls | **Computed** here |
 | $J=2.73\times10^{-5}$ (leading), $2.91\times10^{-5}$ (angles), $3.08\times10^{-5}$ (fit) | **Computed** here, three routes |
@@ -360,7 +360,7 @@ The neutral mesons are two-level systems with $\delta m=2\lvert M_{12}\rvert$. T
 
 GIM is unitarity plus non-degeneracy. The constant term in the box cancels because $VV^{\dagger}=1$, and what survives is proportional to the mass splitting: $(m_c/m_W)^2=2.50\times10^{-4}$ for the kaon, $(m_t/m_c)^2=1.85\times10^{4}$ between the charm and top loops. Read backwards against $\delta m_K$ in 1974, this gave $m_c\approx1.5$ GeV; the current mass is $1.27$ GeV, and the $D$ meson's $1.87$ GeV was never the right quantity to compare with.
 
-The triangle has sides $R_b=0.3866$, $R_t=0.9117$, base $1$, and angles $91.6^\circ$, $22.7^\circ$, $65.7^\circ$. Its area is $0.1762$ by Heron and $0.1762$ by $\bar\eta/2$. $R_t$ from the $B$ mixing ratio is $0.914$ against $0.9117$ from the fit — $0.3\%$; $\sin2\beta$ from the fit is $0.7128$ against $0.699\pm0.017$ measured — $0.8\sigma$. Both close.
+The triangle has sides $R_b=0.3866$, $R_t=0.9117$, base $1$, and angles $91.6^\circ$, $22.7^\circ$, $65.7^\circ$. Its area is $0.1762$ by Heron and $0.1762$ by $\bar\digamma_{\mathrm{wlf}}/2$. $R_t$ from the $B$ mixing ratio is $0.914$ against $0.9117$ from the fit — $0.3\%$; $\sin2\beta$ from the fit is $0.7128$ against $0.699\pm0.017$ measured — $0.8\sigma$. Both close.
 
 The rare decays agree: $b\to s\gamma$ at $0.988$ of prediction, $B_s\to\mu\mu$ at $0.913$. The one number that does not close is $\varepsilon'/\varepsilon$, measured at $1.66\times10^{-3}$ against a lattice value near $1.4\times10^{-4}$, and it is recorded as a live tension rather than a conflict.
 
@@ -379,7 +379,7 @@ Closure proves self-consistency, not uniqueness, and it does not explain the fou
 | $\varepsilon'/\varepsilon$ | Direct CP violation in the decay amplitude |
 | $B_K$ | The kaon bag parameter |
 | $\xi$ | SU(3)-breaking ratio of $B$-meson decay constants, $1.216$ |
-| $\lambda$, $A$, $\bar\rho$, $\bar\eta$ | Wolfenstein parameters |
+| $\lambda$, $A$, $\bar\rho$, $\bar\digamma_{\mathrm{wlf}}$ | Wolfenstein parameters |
 | $R_b$, $R_t$ | The two non-trivial sides of the unitarity triangle |
 | $\alpha$, $\beta$, $\gamma$ | The three angles |
 | $J$ | Jarlskog invariant, $2.9\times10^{-5}$ |

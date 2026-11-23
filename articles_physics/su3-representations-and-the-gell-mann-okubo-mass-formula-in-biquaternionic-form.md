@@ -119,7 +119,7 @@ $$
 Ξ_3=\{\pi^+,\pi^0,\pi^-\},\qquad
 Ξ_2=\{K^-,K^0\},\qquad
 Ξ^{*}_2=\{K^+,K^0\}\ \text{(conjugate)},\qquad
-Ξ_0=\{\eta\},
+Ξ_0=\{\digamma_{\mathrm{mes}}\},
 $$
 
 for $B_0$. The reduction is the representation-theoretic content behind "the eightfold way": the eight states of the octet fall into one triplet, two doublets and one singlet, and the two doublets are conjugate because they carry opposite hypercharge. The charge multiplet structure of the companion spin–charge article is this reduction, with each isospin multiplet carrying the charge values of its members.
@@ -144,7 +144,7 @@ Z = C\begin{pmatrix}\tfrac13&0&0\\0&\tfrac13&0\\0&0&-\tfrac23\end{pmatrix}
 \qquad |C_2|\ll|C| .
 $$
 
-The first term of $Z$ splits the supermultiplet into I-multiplets of **different hypercharge** $Y$; the second, much smaller, splits the members **within** an I-multiplet by charge $Ϙ$. Writing the two contributions as $\delta m^2=\zeta A_{33}+\eta\sum_l A_{3l}A_{l3}$ and $\delta m_2^2=\zeta_2A_{11}+\eta_2\sum_l A_{1l}A_{l1}$ with $\zeta_2=\theta\zeta$, $\eta_2=\theta\eta$, $|\theta|\ll1$, and expressing them through the Casimir operators of $\mathrm{SU}(3)$ and $\mathrm{SU}(2)$, gives the **Gell-Mann–Okubo mass formula**
+The first term of $Z$ splits the supermultiplet into I-multiplets of **different hypercharge** $Y$; the second, much smaller, splits the members **within** an I-multiplet by charge $Ϙ$. Writing the two contributions as $\delta m^2=\zeta A_{33}+\digamma_{\mathrm{mes}}\sum_l A_{3l}A_{l3}$ and $\delta m_2^2=\zeta_2A_{11}+\digamma_{\mathrm{mes,2}}\sum_l A_{1l}A_{l1}$ with $\zeta_2=\theta\zeta$, $\digamma_{\mathrm{mes,2}}=\theta\digamma_{\mathrm{mes}}$, $|\theta|\ll1$, and expressing them through the Casimir operators of $\mathrm{SU}(3)$ and $\mathrm{SU}(2)$, gives the **Gell-Mann–Okubo mass formula**
 
 $$
 m^2 = m_0^2+\alpha+\beta Y+\gamma\Bigl(I(I+1)-\tfrac14Y^2\Bigr)

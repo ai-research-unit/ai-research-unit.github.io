@@ -40,7 +40,7 @@ $$
 \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\tilde{Ϛ}_{\Psi}\tilde{Ϛ}_{\Psi}^{\natural}=\tfrac14\left(1-|\vec s_{\Psi}|^2\right)e_t .
 $$
 
-The three are consistent: the eigenvalues of $\tilde{Ϛ}_{\Psi}$ are $\lambda_\pm=\tfrac12(1\pm|\vec s_{\Psi}|)$, so positivity is exactly $|\vec s_{\Psi}|\leq1$, which is exactly $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\geq0$, which is exactly membership of the future light cone of the biquaternion norm. The state space is therefore the state slice of that cone,
+The three are consistent: the eigenvalues of $\tilde{Ϛ}_{\Psi}$ are $\eta_{\pm}=\tfrac12(1\pm|\vec s_{\Psi}|)$, so positivity is exactly $|\vec s_{\Psi}|\leq1$, which is exactly $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\geq0$, which is exactly membership of the future light cone of the biquaternion norm. The state space is therefore the state slice of that cone,
 
 $$
 \boxed{\;\{\text{states}\}=\left\{\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}:\ \langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*},\ \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\geq0\right\}\;},
@@ -111,10 +111,10 @@ Positivity of the functional is thus not an extra postulate; it is the positivit
 
 ## Convexity, Extremality, and the Superposition Principle
 
-The states form a **convex set**. If $\tilde{Ϛ}_{\Psi,1},\tilde{Ϛ}_{\Psi,2}$ are states and $\lambda\in[0,1]$, then $\lambda\tilde{Ϛ}_{\Psi,1}+(1-\lambda)\tilde{Ϛ}_{\Psi,2}$ is Hermitian, normalised, and positive — a state. In Bloch coordinates this is the convexity of the ball. The **pure** states, $|\vec s_{\Psi}|=1$, are its **extreme points**: if a pure state is written as a nontrivial convex combination of two states, the two must coincide with it. For distinct unit vectors $\vec s_{\Psi,1}\neq\vec s_{\Psi,2}$ and $\lambda\in(0,1)$ one has $|\lambda\vec s_{\Psi,1}+(1-\lambda)\vec s_{\Psi,2}|<1$ strictly, by the triangle inequality, with equality only for $\vec s_{\Psi,1}=\vec s_{\Psi,2}$. Every mixed state, $|\vec s_{\Psi}|<1$, is an interior point and admits a nontrivial decomposition; its spectral decomposition
+The states form a **convex set**. If $\tilde{Ϛ}_{\Psi,1},\tilde{Ϛ}_{\Psi,2}$ are states and $\digamma_{\mathrm{mix}}\in[0,1]$, then $\digamma_{\mathrm{mix}}\tilde{Ϛ}_{\Psi,1}+(1-\digamma_{\mathrm{mix}})\tilde{Ϛ}_{\Psi,2}$ is Hermitian, normalised, and positive — a state. In Bloch coordinates this is the convexity of the ball. The **pure** states, $|\vec s_{\Psi}|=1$, are its **extreme points**: if a pure state is written as a nontrivial convex combination of two states, the two must coincide with it. For distinct unit vectors $\vec s_{\Psi,1}\neq\vec s_{\Psi,2}$ and $\digamma_{\mathrm{mix}}\in(0,1)$ one has $|\digamma_{\mathrm{mix}}\vec s_{\Psi,1}+(1-\digamma_{\mathrm{mix}})\vec s_{\Psi,2}|<1$ strictly, by the triangle inequality, with equality only for $\vec s_{\Psi,1}=\vec s_{\Psi,2}$. Every mixed state, $|\vec s_{\Psi}|<1$, is an interior point and admits a nontrivial decomposition; its spectral decomposition
 
 $$
-\tilde{Ϛ}_{\Psi}=\lambda_+\tilde\Pi_{\mathrm{id},1}(\vec u_s)+\lambda_-\tilde\Pi_{\mathrm{id},2}(\vec u_s),\qquad \lambda_\pm=\tfrac12\left(1\pm|\vec s_{\Psi}|\right),
+\tilde{Ϛ}_{\Psi}=\eta_{+}\tilde\Pi_{\mathrm{id},1}(\vec u_s)+\eta_{-}\tilde\Pi_{\mathrm{id},2}(\vec u_s),\qquad \eta_{\pm}=\tfrac12\left(1\pm|\vec s_{\Psi}|\right),
 $$
 
 is one, and the spectral decomposition is unique for $\vec s_{\Psi}\neq0$.
@@ -242,7 +242,7 @@ The article's interpretive claim is that the algebra settles the identity, the s
 | $\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = \tfrac14(\lvert\vec s_{\Psi}\rvert^2-1)e_t$ | Deviation from idempotency (mixedness) |
 | $2\,\mathrm{Sc}(\tilde Q)$ | Doubled scalar part |
 | $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*} = h_t + \vec s_{\Psi}\cdot\vec h_\Psi$, with $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ at normalisation | Born rule; form first, doubled scalar part last |
-| $\lambda_\pm = \tfrac12(1\pm\lvert\vec s_{\Psi}\rvert)$ | Eigenvalues of $\tilde{Ϛ}_{\Psi}$ |
+| $\eta_{\pm} = \tfrac12(1\pm\lvert\vec s_{\Psi}\rvert)$ | Eigenvalues of $\tilde{Ϛ}_{\Psi}$ |
 | $\vec u, \vec u, \vec u_\Psi, \vec u_s$ | Unit pure real quaternions (directions) |
 | ${}^{*} = ({}^{\natural})^{\,*}$ | Hermitian conjugation |
 

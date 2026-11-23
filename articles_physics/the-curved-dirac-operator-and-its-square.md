@@ -133,7 +133,7 @@ $$
 \{iL_{\mathrm{axf},e_a}R_{\mathrm{axf},\vec e_{\mathrm{spt}(a)}},\,iL_{\mathrm{axf},e_b}R_{\mathrm{axf},\vec e_{\mathrm{spt}(b)}}\}=2\varepsilon_a\delta_{ab}I_4,
 $$
 
-with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$. Those are the Clifford relations of a Dirac spinor, and they are why the result is the Lichnerowicz formula rather than some other second-order operator.
+with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$. Those are the Clifford relations of a Dirac spinor, and they are why the result is the Lichnerowicz formula rather than some other second-order operator.
 
 **Why the algebra element does not square to a scalar.** In the rigid frame $\tilde\nabla_\Phi^{2}$ carries the vector term $-2i\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial^2/\partial r'_t\partial x_\imath$, so the algebra square is a biquaternion-valued operator and not the scalar Lichnerowicz square. The identity is true of the basis operator and false of the algebra element, and a version of this article that omitted the distinction would be wrong.
 
@@ -145,7 +145,7 @@ with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$. Those are the Clifford rela
 
 The identity is worth checking against the derivation that does not use the algebra at all, because the point of the article is that the two agree.
 
-**The Clifford derivation, in three steps.** Let $\gamma_a$ be a set of generators with $\gamma_a\gamma_b+\gamma_b\gamma_a=2\eta_{ab}$ and let $D=\sum_a\gamma_a\nabla_a$ with $\nabla_a$ the spin connection in the frame. Then
+**The Clifford derivation, in three steps.** Let $\gamma_a$ be a set of generators with $\gamma_a\gamma_b+\gamma_b\gamma_a=2\delta_{ab}$ and let $D=\sum_a\gamma_a\nabla_a$ with $\nabla_a$ the spin connection in the frame. Then
 
 $$
 D^{2}=\sum_{a,b}\gamma_a\gamma_b\nabla_a\nabla_b
@@ -170,7 +170,7 @@ $$
 =\tfrac14\,\mathrm{Ric},
 $$
 
-and the four-gamma contraction with the Riemann tensor equals twice the scalar curvature: the identity $\sum_{a,b,c,d}R_{abcd}\gamma_a\gamma_b\gamma_c\gamma_d=2R$ follows from writing $\gamma_a\gamma_b=\gamma_{ab}+\eta_{ab}$, discarding the $\eta_{ab}$ term by the antisymmetry of $R_{abcd}$ in the first pair, and reducing $\gamma_{ab}\gamma_{cd}R_{abcd}$ by the pair antisymmetries and the Bianchi identity. So the coefficient is $\tfrac18\times2=\tfrac14$, and it is what it has to be for the known result.
+and the four-gamma contraction with the Riemann tensor equals twice the scalar curvature: the identity $\sum_{a,b,c,d}R_{abcd}\gamma_a\gamma_b\gamma_c\gamma_d=2R$ follows from writing $\gamma_a\gamma_b=\gamma_{ab}+\delta_{ab}$, discarding the $\delta_{ab}$ term by the antisymmetry of $R_{abcd}$ in the first pair, and reducing $\gamma_{ab}\gamma_{cd}R_{abcd}$ by the pair antisymmetries and the Bianchi identity. So the coefficient is $\tfrac18\times2=\tfrac14$, and it is what it has to be for the known result.
 
 **The coefficient is representation-independent; the curvature is not.** The factor $\tfrac18$ in front of the four-gamma contraction is forced by the algebra of the Clifford generators and by the $\tfrac14$ in the spin generators, and it is the same in any representation in which the generators obey the Clifford relations. What depends on the representation is which curvature appears: for the spin representation the four-gamma contraction reduces to the scalar curvature alone, while for a representation carrying extra indices a Ricci term survives alongside. Both statements together are the honest form of "the coefficient is the same number on both sides": **the $\tfrac14$ is universal and the curvature is the representation's**, and the framework's basis operator happens to sit in a representation whose curvature term is the scalar one, so the formulas coincide rather than merely resembling each other.
 
@@ -258,7 +258,7 @@ Minimal electromagnetic coupling adds a field-strength–spin term with the same
 | $\Box_{g,\Phi}=\sum_{\imath,\jmath}G_{\imath\jmath}\nabla_{\imath}\nabla_{\jmath}$ | Laplace–Beltrami operator; $\vec\nabla_\Phi^{*}\vec\nabla_\Phi=-\Box_{g,\Phi}$ |
 | $\mathrm{Ric}$ | scalar curvature of the Gram metric |
 | $(\tilde F_{\imath} D_{\imath})^2=-\Box_{g,\Phi}+\tfrac14\mathrm{Ric}$ | Lichnerowicz square, taken on the basis operator |
-| $iL_{\mathrm{axf},e_a}R_{\mathrm{axf},\vec e_{\mathrm{spt}(a)}}$ | the four frame basis operators; $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$ |
+| $iL_{\mathrm{axf},e_a}R_{\mathrm{axf},\vec e_{\mathrm{spt}(a)}}$ | the four frame basis operators; $\mathrm{spt}(t)=x$, $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$ |
 | $\varepsilon_a$ | plain weight of the basis operators, $\varepsilon=(1,-1,-1,-1)$ |
 | $S_{\imath\jmath}$ | spin basis operator, one quarter of the commutator of two frame basis operators |
 

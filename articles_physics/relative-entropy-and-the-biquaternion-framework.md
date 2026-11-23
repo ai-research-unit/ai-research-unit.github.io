@@ -30,9 +30,9 @@ S(\rho\|\sigma)=
 +\infty, & \text{otherwise}.
 \end{cases}
 $$
-Writing $\rho=\sum_i\lambda_i|i\rangle\langle i|$ and $\sigma=\sum_j\mu_j|j\rangle\langle j|$, the finite value is
+Writing $\rho=\sum_i\eta_i|i\rangle\langle i|$ and $\sigma=\sum_j\mu_j|j\rangle\langle j|$, the finite value is
 $$
-S(\rho\|\sigma)=\sum_{i,j}|\langle i|j\rangle|^2\,\lambda_i\big(\log\lambda_i-\log\mu_j\big),
+S(\rho\|\sigma)=\sum_{i,j}|\langle i|j\rangle|^2\,\eta_i\big(\log\eta_i-\log\mu_j\big),
 $$
 the sum being restricted to $\mu_j>0$. The definition is basis-independent and invariant under $*$-unitary conjugation of both arguments. It is not symmetric, $S(\rho\|\sigma)\neq S(\sigma\|\rho)$ in general, and it is not a metric: it belongs to the family of statistical divergences rather than to the metrics.
 
@@ -66,7 +66,7 @@ $$
 $$
 the eigenvalues are
 $$
-\lambda_\pm=\tfrac12\big(1\pm|\vec s_{\Psi}|\big),
+\eta_{\pm}=\tfrac12\big(1\pm|\vec s_{\Psi}|\big),
 $$
 and positivity plus the trace condition give exactly
 $$
@@ -82,7 +82,7 @@ The logarithm of a positive element of $\mathbb{B}$ is again an element of $\mat
 $$
 \exp\big(\theta_{\mathrm{rpd}}\,i\vec u_s\big)=\cosh\theta_{\mathrm{rpd}}\,e_t+i\sinh\theta_{\mathrm{rpd}}\,\vec u_s.
 $$
-Second, the determinant of the state, $\det\mathsf{M}_2(\tilde{Ϛ}_{\Psi})=\lambda_+\lambda_-=\tfrac14(1-|\vec s_{\Psi}|^2)=\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$, which vanishes exactly on the pure boundary. Writing the logarithm in the same form as the state,
+Second, the determinant of the state, $\det\mathsf{M}_2(\tilde{Ϛ}_{\Psi})=\eta_{+}\eta_{-}=\tfrac14(1-|\vec s_{\Psi}|^2)=\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$, which vanishes exactly on the pure boundary. Writing the logarithm in the same form as the state,
 $$
 \log\tilde{Ϛ}_{\Psi}=b_0\,e_t+i\,\vec b\cdot\mathbf e,
 $$
@@ -263,7 +263,7 @@ The framework-specific feature is the boundary. The logarithm is an element of $
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar-part reading of the plain form; $2\,\mathrm{Sc}(e_t)=2$ |
 | $\mathsf{M}_2(\vec e_\imath)=-i\sigma_\imath$, $\mathsf{M}_2(i)=iI_2$ | Matrix isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi}\cdot\mathbf e)$ | State of $\mathbb{B}$; Bloch vector $\vec s_{\Psi}$ |
-| $\lambda_\pm=\tfrac12(1\pm|\vec s_{\Psi}|)$ | Eigenvalues of the state |
+| $\eta_{\pm}=\tfrac12(1\pm|\vec s_{\Psi}|)$ | Eigenvalues of the state |
 | $S(\tilde{Ϛ}_{\Psi})=-\tfrac12\log\frac{1-|\vec s_{\Psi}|^2}{4}-|\vec s_{\Psi}|\,\mathrm{artanh}|\vec s_{\Psi}|$ | von Neumann entropy of a biquaternion state |
 | $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$ | Relative entropy; boxed closed form |
 | $\cos\gamma=\vec s_{\Psi}\cdot\vec s/(|\vec s_{\Psi}||\vec s|)$ | Bloch-vector angle |

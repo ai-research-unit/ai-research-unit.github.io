@@ -109,7 +109,7 @@ The parameter basis is not the bracket basis. As in the free polar article, the 
 What the coupling adds. The connection is central, so it passes through $\tilde A_\Phi^{-1}$ and adds $\frac{2\pi iϙ}{h}A_\Phi$ to the logarithmic derivative, with a real temporal slot and central imaginary spatial slots. It therefore reaches the scale and phase brackets, leaves the boost and rotor brackets alone, and — entering as a shift and not as a factor — does not change the type pairing that produces the constraint.
 ## The Constraints the Action Imposes: The Gauge Transformation in the Chart
 
-The exact statement. For a constant central unit $\lambda=\exp(i\vartheta_{\mathrm{gau}})$,
+The exact statement. For a constant central unit $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$,
 
 $$
 \lambda\tilde A
@@ -219,7 +219,7 @@ The chart needs no multipliers for the unit conditions, because the word is exac
 | $\tilde A_\Phi$, $A_{\imath}$ | The connection and its central components |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | The covariant derivative in the chart |
 | $\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_{\imath}$ | The one gradient the connection shifts |
-| $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ | Central gauge unit; translates $\theta_{\mathrm{pha}}$ |
+| $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$ | Central gauge unit; translates $\theta_{\mathrm{pha}}$ |
 | $\rho_{\mathrm{chg}}=\partial\mathcal{L}/\partial(\partial_{r'_t}\theta_{\mathrm{pha}})$ | Charge density as the phase's conjugate momentum |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $ϙ$ | Charge; a parameter |

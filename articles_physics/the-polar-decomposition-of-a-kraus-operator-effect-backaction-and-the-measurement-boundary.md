@@ -296,7 +296,7 @@ The order is fixed by the word: the $*$-unitary factor acts first, then the posi
 
 ### A Worked Unsharp Outcome
 
-Take the strength $\tilde{H}_{\Psi,0}=\tfrac{1+\eta}{2}e_t+\tfrac{\eta-1}{2}i\vec e_z=0.8e_t-0.2i\vec e_z$ with $\eta=0.6$ and eigenvalues $0.6$ and $1$, and the $*$-unitary backaction $\tilde Q_{\mathrm{ba}}=\cos\tfrac{\theta_{\mathrm{axr}}}{2}e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec e_x=0.866025404e_t+0.5\vec e_x$ with $\theta_{\mathrm{axr}}=\pi/3$. Set $\tilde M_{\mathrm{kraus}}=\tilde Q_{\mathrm{ba}}\tilde{H}_{\Psi,0}$. The polar factors are
+Take the strength $\tilde{H}_{\Psi,0}=\tfrac{1+\digamma_{\mathrm{kra}}}{2}e_t+\tfrac{\digamma_{\mathrm{kra}}-1}{2}i\vec e_z=0.8e_t-0.2i\vec e_z$ with $\digamma_{\mathrm{kra}}=0.6$ and eigenvalues $0.6$ and $1$, and the $*$-unitary backaction $\tilde Q_{\mathrm{ba}}=\cos\tfrac{\theta_{\mathrm{axr}}}{2}e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec e_x=0.866025404e_t+0.5\vec e_x$ with $\theta_{\mathrm{axr}}=\pi/3$. Set $\tilde M_{\mathrm{kraus}}=\tilde Q_{\mathrm{ba}}\tilde{H}_{\Psi,0}$. The polar factors are
 
 $$
 \tilde M_{\mathrm{kraus},H}=\tilde Q_{\mathrm{ba}}\tilde{H}_{\Psi,0}\tilde Q_{\mathrm{ba}}^{*}=0.8e_t+0.173205081i\vec e_y-0.1i\vec e_z,\qquad

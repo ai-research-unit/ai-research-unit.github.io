@@ -133,10 +133,10 @@ Three properties of the action are used below.
 The sources are Grassmann-valued: the generating functional
 
 $$
-Z[\eta,\bar\eta]=\int\mathcal{D}\tilde{Ξ}^{\dagger}\,\mathcal{D}\tilde{Ξ}\;\exp\Big[iS+i\!\int d^4r\,\big(\bar\eta\tilde{Ξ}+\tilde{Ξ}^{\dagger}i\vec e_x\eta\big)\Big]
+Z[\varsigma_{\mathrm{grs}},\bar\varsigma_{\mathrm{grs}}]=\int\mathcal{D}\tilde{Ξ}^{\dagger}\,\mathcal{D}\tilde{Ξ}\;\exp\Big[iS+i\!\int d^4r\,\big(\bar\varsigma_{\mathrm{grs}}\tilde{Ξ}+\tilde{Ξ}^{\dagger}i\vec e_x\varsigma_{\mathrm{grs}}\big)\Big]
 $$
 
-requires $\eta,\bar\eta$ to be odd, since they multiply $\tilde{Ξ},\tilde{Ξ}^{\dagger}i\vec e_x$ respectively and the linear terms must be even. This is the same requirement as in the finite-mode reduction below, now at the level of the functional: the source term is a bilinear in one external odd and one integration variable, hence even, and the sources consequently lie in the odd part of the same Grassmann extension.
+requires $\varsigma_{\mathrm{grs}},\bar\varsigma_{\mathrm{grs}}$ to be odd, since they multiply $\tilde{Ξ},\tilde{Ξ}^{\dagger}i\vec e_x$ respectively and the linear terms must be even. This is the same requirement as in the finite-mode reduction below, now at the level of the functional: the source term is a bilinear in one external odd and one integration variable, hence even, and the sources consequently lie in the odd part of the same Grassmann extension.
 
 ## The Berezin Measure
 
@@ -182,22 +182,22 @@ in the coefficient variables; the right multiplication by $i\vec e_x$ in the adj
 
 The index order is part of the statement and was checked: for a random complex $2\times2$ $M$ the four amplitudes are the four entries of $M^{-1}$, in the order $\langle\tilde{Ξ}_{a}\tilde{Ξ}_{b}^{\dagger}\rangle=(M^{-1})_{ab}$, to nine decimals. The two off-diagonal amplitudes are sensitive to it because $M$ need not be symmetric: they are $(M^{-1})_{01}$ and $(M^{-1})_{10}$, and the anticommuting order of the measure is what fixes which field contracts with which index.
 
-**The generating functional.** Completing the square in the Grassmann algebra — a finite algebraic operation, since the shift $\tilde{Ξ}\to\tilde{Ξ}+M^{-1}\eta$, $\tilde{Ξ}^{\dagger}\to\tilde{Ξ}^{\dagger}+\bar\eta M^{-1}$ is a shift by odd constants — gives the algebraic identity
+**The generating functional.** Completing the square in the Grassmann algebra — a finite algebraic operation, since the shift $\tilde{Ξ}\to\tilde{Ξ}+M^{-1}\varsigma_{\mathrm{grs}}$, $\tilde{Ξ}^{\dagger}\to\tilde{Ξ}^{\dagger}+\bar\varsigma_{\mathrm{grs}} M^{-1}$ is a shift by odd constants — gives the algebraic identity
 
 $$
-\boxed{\;\int\prod d\tilde{Ξ}^{\dagger}\,d\tilde{Ξ}\;\exp\!\big(-\tilde{Ξ}^{\dagger}M\tilde{Ξ}+\bar\eta\tilde{Ξ}+\tilde{Ξ}^{\dagger}\eta\big)=\det M\;\exp\!\big[\bar\eta\,M^{-1}\eta\big]\;},
+\boxed{\;\int\prod d\tilde{Ξ}^{\dagger}\,d\tilde{Ξ}\;\exp\!\big(-\tilde{Ξ}^{\dagger}M\tilde{Ξ}+\bar\varsigma_{\mathrm{grs}}\tilde{Ξ}+\tilde{Ξ}^{\dagger}\varsigma_{\mathrm{grs}}\big)=\det M\;\exp\!\big[\bar\varsigma_{\mathrm{grs}}\,M^{-1}\varsigma_{\mathrm{grs}}\big]\;},
 $$
 
-with the exponential terminating at the top degree in the sources: the bilinear $\bar\eta M^{-1}\eta$ has degree two, so the series stops at degree two for one mode and at degree $2N$ for $N$ modes.
+with the exponential terminating at the top degree in the sources: the bilinear $\bar\varsigma_{\mathrm{grs}} M^{-1}\varsigma_{\mathrm{grs}}$ has degree two, so the series stops at degree two for one mode and at degree $2N$ for $N$ modes.
 
-In the physical weight of §*Sources*, $-\tilde{Ξ}^{\dagger}M\tilde{Ξ}$ becomes $iS$ and the sources become the odd ones of that section, $\bar\eta\tilde{Ξ}+\tilde{Ξ}^{\dagger}i\vec e_x\eta$. Each source therefore carries an explicit $i$, and the two multiply to $i^2=-1$: the exponent of the result changes sign. With $M$ the mass-shifted pair times $-i$ and $M^{-1}=S_F$,
+In the physical weight of §*Sources*, $-\tilde{Ξ}^{\dagger}M\tilde{Ξ}$ becomes $iS$ and the sources become the odd ones of that section, $\bar\varsigma_{\mathrm{grs}}\tilde{Ξ}+\tilde{Ξ}^{\dagger}i\vec e_x\varsigma_{\mathrm{grs}}$. Each source therefore carries an explicit $i$, and the two multiply to $i^2=-1$: the exponent of the result changes sign. With $M$ the mass-shifted pair times $-i$ and $M^{-1}=S_F$,
 
 $$
-Z[\eta,\bar\eta]=\det M\;\exp\!\big[-\bar\eta\,M^{-1}\eta\big]
-=\det(\Box_\Phi-4\pi^{2}\nu_m^{2})\;\exp\!\Big[-\int d^4r\,d^4y\;\bar\eta(x)\,S_F(x-y)\,\eta(y)\Big]
+Z[\varsigma_{\mathrm{grs}},\bar\varsigma_{\mathrm{grs}}]=\det M\;\exp\!\big[-\bar\varsigma_{\mathrm{grs}}\,M^{-1}\varsigma_{\mathrm{grs}}\big]
+=\det(\Box_\Phi-4\pi^{2}\nu_m^{2})\;\exp\!\Big[-\int d^4r\,d^4y\;\bar\varsigma_{\mathrm{grs}}(x)\,S_F(x-y)\,\varsigma_{\mathrm{grs}}(y)\Big]
 $$
 
-up to a field-independent constant. The Euclidean functional, with weight $\exp(-S_{\mathrm E}+\bar\eta\tilde{Ξ}+\tilde{Ξ}^{\dagger}i\vec e_x\eta)$, is the one that carries the plus sign.
+up to a field-independent constant. The Euclidean functional, with weight $\exp(-S_{\mathrm E}+\bar\varsigma_{\mathrm{grs}}\tilde{Ξ}+\tilde{Ξ}^{\dagger}i\vec e_x\varsigma_{\mathrm{grs}})$, is the one that carries the plus sign.
 
 ### A Finite-Mode Computation
 
@@ -350,7 +350,7 @@ The phase of the determinant is where the fermionic integral's analytic content 
 
 The fermionic path integral of the biquaternion spin-$\tfrac12$ field is the Berezin integral over Grassmann-valued biquaternion histories of the phase $\exp(iS)$, with the biquaternion Dirac action as the bilinear $S=\int\mathrm{Sc}(\bar{\tilde{Ξ}}_{L}\tilde\nabla_\Phi\tilde{Ξ}_{R}+\bar{\tilde{Ξ}}_{R}(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L})-\int m\,\mathrm{Sc}(\bar{\tilde{Ξ}}_{L}\tilde{Ξ}_{L}+\bar{\tilde{Ξ}}_{R}\tilde{Ξ}_{R})$ and the sources odd. The equation integrated is the **one-sided** pair over the two parts of the field; Kravchenko's **two-sided** equation is a different operator, related to it by a real-linear dictionary, and is not integrated here. The phase is central and lies in $\mathbb{B}_{\Phi}$ along the $i r'_t$ axis; the action is even, so the parity sectors do not mix and an odd integral vanishes.
 
-The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\varkappa^*d\varkappa\,\varkappa\varkappa^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\tilde{Ξ}_{a}\tilde{Ξ}_{b}^{\dagger}\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[-\bar\eta M^{-1}\eta]$ in the Minkowski weight, with the plus sign in the Euclidean one; and for the field the kernel is the companion's amplitude carried on the two parts of the field
+The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\varkappa^*d\varkappa\,\varkappa\varkappa^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\tilde{Ξ}_{a}\tilde{Ξ}_{b}^{\dagger}\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\varsigma_{\mathrm{grs}},\bar\varsigma_{\mathrm{grs}}]=\det M\exp[-\bar\varsigma_{\mathrm{grs}} M^{-1}\varsigma_{\mathrm{grs}}]$ in the Minkowski weight, with the plus sign in the Euclidean one; and for the field the kernel is the companion's amplitude carried on the two parts of the field
 
 $$
 S_F(p):\ (w_L,w_R)\,\longmapsto\frac{\big(\tilde P_{\Phi}\,w_R-imc\,w_L,\ \tilde P_{\Phi}^{\natural}w_L-imc\,w_R\big)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon},
@@ -372,13 +372,13 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ | One-sided pair; the equation integrated |
 | $-(\tilde\nabla_\Phi)^{\natural}F-mi\,\bar F\,\vec e_z=0$ | Two-sided (Kravchenko) equation; different operator, not integrated |
 | $\exp(iS)$ | Path-integral phase; central, in $\mathbb{B}_{C}$, exponent along $i r'_t$ |
-| $\eta,\bar\eta$ | Odd (Grassmann) sources |
+| $\varsigma_{\mathrm{grs}},\bar\varsigma_{\mathrm{grs}}$ | Odd (Grassmann) sources |
 | $\mathcal{D}\tilde{Ξ}^{\dagger}\mathcal{D}\tilde{Ξ}=\prod_x\prod_ad\tilde{Ξ}_{a}^{\dagger}(x)\,d\tilde{Ξ}_{a}(x)$ | Berezin measure |
 | $\int d\varkappa^*d\varkappa\,\varkappa\varkappa^*=1$ | Berezin normalization used throughout |
 | $\int\prod d\tilde{Ξ}^{\dagger}d\tilde{Ξ}\,\exp(-\tilde{Ξ}^{\dagger}M\tilde{Ξ})=\det M$ | Gaussian = determinant |
 | $\langle\tilde{Ξ}_{a}\tilde{Ξ}_{b}^{\dagger}\rangle=(M^{-1})_{ab}$ | Two-point function (inverse kernel, stated index order); the adjoint's right multiplication cancels from the ratio |
-| $Z[\eta,\bar\eta]=\det M\,\exp[-\bar\eta M^{-1}\eta]$ | Free generating functional in the Minkowski weight; the Euclidean one carries $+\bar\eta M^{-1}\eta$ |
-| $Z_0[\eta,\bar\eta]=\det(\Box_\Phi-4\pi^{2}\nu_m^{2})\exp[-\int\bar\eta S_F\eta]$ | Field-level free functional |
+| $Z[\varsigma_{\mathrm{grs}},\bar\varsigma_{\mathrm{grs}}]=\det M\,\exp[-\bar\varsigma_{\mathrm{grs}} M^{-1}\varsigma_{\mathrm{grs}}]$ | Free generating functional in the Minkowski weight; the Euclidean one carries $+\bar\varsigma_{\mathrm{grs}} M^{-1}\varsigma_{\mathrm{grs}}$ |
+| $Z_0[\varsigma_{\mathrm{grs}},\bar\varsigma_{\mathrm{grs}}]=\det(\Box_\Phi-4\pi^{2}\nu_m^{2})\exp[-\int\bar\varsigma_{\mathrm{grs}} S_F\varsigma_{\mathrm{grs}}]$ | Field-level free functional |
 | $i h\,\tilde\Upsilon_{\Phi}=i\tilde P_{\Phi}=-\frac{E}{c}\,e_t+i\vec p$, $-\frac{h^{2}}{4\pi^{2}}\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-N$ | Symbol of the gradient on a plane wave |
 | $(w_L,w_R)\mapsto(i h\,\tilde\Upsilon_{\Phi}\,w_R,-i h\,\tilde\Upsilon_{\Phi}^{\natural}w_L)$ | The two lines on a plane wave; their composition is $-N$ times the identity, with $N=-\frac{E^{2}}{c^{2}}+|\vec p|^{2}$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ | The pair, as two first-order lines on a pair of elements of $\mathbb{B}$, with the material gradient on each; each line composed with its partner is $\Box_\Phi$, and the same pair read at $r'_t=-i\tau$ is the same two lines |

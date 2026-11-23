@@ -10,7 +10,7 @@ $$
 \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec s_{\Psi}|^2\bigr)e_t ,
 $$
 
-so the biquaternion norm carries exactly one real number, the Bloch radius squared; and the spectrum of the state depends on the state only through that number, $\lambda_\pm = \tfrac12(1\pm|\vec s_{\Psi}|)$. The entropy is therefore
+so the biquaternion norm carries exactly one real number, the Bloch radius squared; and the spectrum of the state depends on the state only through that number, $\eta_{\pm} = \tfrac12(1\pm|\vec s_{\Psi}|)$. The entropy is therefore
 
 $$
 \boxed{\;S(\tilde{Ϛ}_{\Psi}) = h\!\left(\frac{1+|\vec s_{\Psi}|}{2}\right)
@@ -110,22 +110,22 @@ The biquaternion norm therefore measures the failure of a state to be a zero div
 The state has a spectral decomposition into the two complementary idempotents along its Bloch direction. Writing $\vec u_s = \vec s_{\Psi}/|\vec s_{\Psi}|$ for $\vec s_{\Psi}\neq0$,
 
 $$
-\tilde{Ϛ}_{\Psi} = \lambda_+\,\tilde\Pi_{\mathrm{id},1}(\vec u_s) + \lambda_-\,\tilde\Pi_{\mathrm{id},2}(\vec u_s),
+\tilde{Ϛ}_{\Psi} = \eta_{+}\,\tilde\Pi_{\mathrm{id},1}(\vec u_s) + \eta_{-}\,\tilde\Pi_{\mathrm{id},2}(\vec u_s),
 \qquad
 \tilde\Pi_{\mathrm{id},1,2}(\vec u_s) = \tfrac{1}{2}\bigl(e_t \pm i\vec u_s\bigr),
 \qquad
-\lambda_\pm = \tfrac{1}{2}\bigl(1 \pm |\vec s_{\Psi}|\bigr).
+\eta_{\pm} = \tfrac{1}{2}\bigl(1 \pm |\vec s_{\Psi}|\bigr).
 $$
 
-The two idempotents are Hermitian, orthogonal, and sum to the identity: $\tilde\Pi_{\mathrm{id},1,2}^2 = \tilde\Pi_{\mathrm{id},1,2}$, $\tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2} = 0$, $\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2} = e_t$. Their normalisation is $\langle\tilde\Pi_{\mathrm{id},1,2},e_t\rangle_{*}=\tfrac12$, and the Hermitian form gives $2\langle\tilde\Pi_{\mathrm{id},1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}=\lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\vec s_{\Psi}|$ and $\lambda_+ + \lambda_- = 1$.
+The two idempotents are Hermitian, orthogonal, and sum to the identity: $\tilde\Pi_{\mathrm{id},1,2}^2 = \tilde\Pi_{\mathrm{id},1,2}$, $\tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2} = 0$, $\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2} = e_t$. Their normalisation is $\langle\tilde\Pi_{\mathrm{id},1,2},e_t\rangle_{*}=\tfrac12$, and the Hermitian form gives $2\langle\tilde\Pi_{\mathrm{id},1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}=\eta_{\pm}$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\eta_{+} - \eta_{-} = |\vec s_{\Psi}|$ and $\eta_{+} + \eta_{-} = 1$.
 
 ### Entropy as a function of the biquaternion norm
 
 The **von Neumann entropy** is
 
 $$
-S(\tilde{Ϛ}_{\Psi}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-
-= h\!\left(\lambda_+\right).
+S(\tilde{Ϛ}_{\Psi}) = -\eta_{+}\log\eta_{+} - \eta_{-}\log\eta_{-}
+= h\!\left(\eta_{+}\right).
 $$
 
 Since $|\vec s_{\Psi}| = \sqrt{1-4\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}$ on the normalised hyperplane, this is a function of the biquaternion norm alone:
@@ -149,14 +149,14 @@ As $N\to0$ this derivative diverges to $+\infty$: the entropy leaves the pure st
 The standard formula can also be written algebraically. On the interior of the Bloch ball the state has full rank, so its real logarithm exists and lies in $\mathbb{B}_{\Psi}$:
 
 $$
-\log \tilde{Ϛ}_{\Psi} = \log\lambda_+\, \tilde\Pi_{\mathrm{id},1}(\vec u_s) + \log\lambda_-\, \tilde\Pi_{\mathrm{id},2}(\vec u_s) .
+\log \tilde{Ϛ}_{\Psi} = \log\eta_{+}\, \tilde\Pi_{\mathrm{id},1}(\vec u_s) + \log\eta_{-}\, \tilde\Pi_{\mathrm{id},2}(\vec u_s) .
 $$
 
 Multiplying by $\tilde{Ϛ}_{\Psi}$ and taking the scalar part,
 
 $$
 -2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}\bigr)
-= -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-
+= -\eta_{+}\log\eta_{+} - \eta_{-}\log\eta_{-}
 = S(\tilde{Ϛ}_{\Psi}) ,
 $$
 
@@ -207,7 +207,7 @@ Rotor conjugation by a matrix-unitary biquaternion, $\tilde{Ϛ}_{\Psi}\mapsto\ti
 
 ## Relation to the Standard Formula
 
-The standard von Neumann entropy of a density operator is $S = -\operatorname{tr}(\rho\log\rho)$, where $\rho$ is a matrix and the symbol is its matrix trace, with eigenvalues $\lambda_i$. For a qubit with Bloch vector $\vec s_{\Psi}$, the eigenvalues are $\tfrac12(1\pm|\vec s_{\Psi}|)$ and the entropy is $h\!\left(\tfrac{1+|\vec s_{\Psi}|}{2}\right)$. This is exactly the formula derived above, so the framework's entropy is the standard entropy. Nothing here changes a numerical prediction.
+The standard von Neumann entropy of a density operator is $S = -\operatorname{tr}(\rho\log\rho)$, where $\rho$ is a matrix and the symbol is its matrix trace, with eigenvalues $\eta_i$. For a qubit with Bloch vector $\vec s_{\Psi}$, the eigenvalues are $\tfrac12(1\pm|\vec s_{\Psi}|)$ and the entropy is $h\!\left(\tfrac{1+|\vec s_{\Psi}|}{2}\right)$. This is exactly the formula derived above, so the framework's entropy is the standard entropy. Nothing here changes a numerical prediction.
 
 What the biquaternion-norm interpretation adds is the *location* of the entropy's argument. In the matrix formulation the entropy is a function of the spectrum, and the spectrum is obtained by diagonalizing a matrix. In the biquaternion formulation the state carries a biquaternion norm, and on the normalised hyperplane the biquaternion norm is the deviation from idempotency; the entropy is a function of that scalar. The operative content is that:
 
@@ -254,7 +254,7 @@ $$
 \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}\bigl(1-|\vec s_{\Psi}|^2\bigr)e_t .
 $$
 
-The biquaternion norm of a state is a single real number taking values in $[0,\tfrac14]$ on the state space. The deviation of the state from idempotency is minus that number, $\tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi} = -\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}e_t$, and the purity is affine in it, $P(\tilde{Ϛ}_{\Psi}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_{*} = 1-2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$. The spectrum is $\lambda_\pm = \tfrac12(1\pm\sqrt{1-4N})$, so the von Neumann entropy is a function of the biquaternion norm and nothing else,
+The biquaternion norm of a state is a single real number taking values in $[0,\tfrac14]$ on the state space. The deviation of the state from idempotency is minus that number, $\tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi} = -\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}e_t$, and the purity is affine in it, $P(\tilde{Ϛ}_{\Psi}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_{*} = 1-2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$. The spectrum is $\eta_{\pm} = \tfrac12(1\pm\sqrt{1-4N})$, so the von Neumann entropy is a function of the biquaternion norm and nothing else,
 
 $$
 S(\tilde{Ϛ}_{\Psi}) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}}{2}\right)
@@ -275,7 +275,7 @@ The description is the standard qubit entropy, and it predicts nothing new. What
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi})$ | State with Bloch vector $\vec s_{\Psi}$, $|\vec s_{\Psi}|\le1$ |
 | $\tilde\Pi_{\mathrm{id},1,2}(\vec u_s) = \tfrac12(e_t\pm i\vec u_s)$ | Spectral idempotents of the state |
-| $\lambda_\pm = \tfrac12(1\pm|\vec s_{\Psi}|)$ | Eigenvalues |
+| $\eta_{\pm} = \tfrac12(1\pm|\vec s_{\Psi}|)$ | Eigenvalues |
 | $2\,\mathrm{Sc}(\tilde{Q})$ | Twice the scalar part |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ | Biquaternion norm |
 | $\langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural} = h_t^2 - |\vec h_\Psi|^2 = \det M(\tilde H_\Psi)$ | Biquaternion norm of a Hermitian element |

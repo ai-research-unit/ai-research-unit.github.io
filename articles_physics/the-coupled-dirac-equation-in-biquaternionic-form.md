@@ -60,7 +60,7 @@ $$
 \tilde\Xi^{\flat}=-\tilde\Xi^{*}=-\overline{\tilde\Xi^{\natural}}
 $$
 
-has the material sector $\mathbb{B}_{\Phi}$ as its fixed space. It is the algebra's real structure and it is not the mass. A mass term built on $\flat$ would acquire the factor $\lambda^{2}$ under a local central phase and would be form-invariant only for $\lambda=\pm1$; the parent's mass term pairs $\tilde\Xi_L$ with $\tilde\Xi_R$ and acquires $\lambda$.
+has the material sector $\mathbb{B}_{\Phi}$ as its fixed space. It is the algebra's real structure and it is not the mass. A mass term built on $\flat$ would acquire the factor $\digamma_{\mathrm{gau}}^{2}$ under a local central phase and would be form-invariant only for $\digamma_{\mathrm{gau}}=\pm1$; the parent's mass term pairs $\tilde\Xi_L$ with $\tilde\Xi_R$ and acquires $\digamma_{\mathrm{gau}}$.
 
 **The symmetry to be localized.** A constant central phase
 
@@ -68,7 +68,7 @@ $$
 \tilde\Xi\longmapsto\exp(i\theta_{\mathrm{cen}})\tilde\Xi
 $$
 
-is a symmetry of the pair, massive or massless, because a central constant commutes with the units and with the derivatives and so passes through both members. Here $\theta_{\mathrm{cen}}$ is real: it is the argument of a unit complex number. One and the same $\lambda$ multiplies both members, so the pair scales uniformly and the linear mass term is invariant.
+is a symmetry of the pair, massive or massless, because a central constant commutes with the units and with the derivatives and so passes through both members. Here $\theta_{\mathrm{cen}}$ is real: it is the argument of a unit complex number. One and the same $\digamma_{\mathrm{gau}}$ multiplies both members, so the pair scales uniformly and the linear mass term is invariant.
 
 **What the mass breaks is the relative phase.** With $\varsigma$ a nonzero central constant, the massless pair is invariant under
 
@@ -122,7 +122,7 @@ $$
 
 since $\tilde A_{\Phi}^{*}=-\tilde A_{\Phi}$ on $\mathbb{B}_{\Phi}$. The factor $i$ is what converts the anti-Hermitian connection into a Hermitian coupling.
 
-**Sign convention.** The pair of signs is the gauge principle's: $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}$ and $\lambda=\exp(i\theta_{\mathrm{gau}})$. Here
+**Sign convention.** The pair of signs is the gauge principle's: $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}$ and $\digamma_{\mathrm{gau}}=\exp(i\theta_{\mathrm{gau}})$. Here
 
 $$
 \theta_{\mathrm{gau}}:=\frac{2\pi ϙ\,\Gamma}{h}
@@ -150,7 +150,7 @@ which vanishes for every field only when $\tilde\nabla_\Phi\Gamma$ is central, t
 
 Two forms are in circulation, and the prescription attaches to one of them. That is a theorem and not a preference.
 
-**The pair.** The field is one element and $\lambda$ is one central element multiplying it from the left. The pair is covariant because $\lambda$ is central: it passes through both gradients and through the mass. §*Gauge Covariance* computes it.
+**The pair.** The field is one element and $\digamma_{\mathrm{gau}}$ is one central element multiplying it from the left. The pair is covariant because $\digamma_{\mathrm{gau}}$ is central: it passes through both gradients and through the mass. §*Gauge Covariance* computes it.
 
 **The two-sided form.** The parent also carries a single equation on a general element in which the derivative acts on the left and the mass on the right,
 
@@ -163,12 +163,12 @@ with the bar the complex conjugation of the coefficients and $\vec u$ the declar
 **Under a constant central phase the two terms scale differently.**
 
 $$
--(\tilde\nabla_\Phi)^{\natural}\bigl(\lambda F\bigr)=\lambda\bigl(-(\tilde\nabla_\Phi)^{\natural}F\bigr),
+-(\tilde\nabla_\Phi)^{\natural}\bigl(\digamma_{\mathrm{gau}} F\bigr)=\digamma_{\mathrm{gau}}\bigl(-(\tilde\nabla_\Phi)^{\natural}F\bigr),
 \qquad
--2\pi\nu_m\,i\,\overline{\lambda F}\,\vec u=\bar\lambda\bigl(-2\pi\nu_m\,i\,\overline{F}\,\vec u\bigr),
+-2\pi\nu_m\,i\,\overline{\digamma_{\mathrm{gau}} F}\,\vec u=\bar\digamma_{\mathrm{gau}}\bigl(-2\pi\nu_m\,i\,\overline{F}\,\vec u\bigr),
 $$
 
-and $\bar\lambda\ne\lambda$ for non-real $\lambda$. The two-sided form therefore has **no continuous central phase symmetry**; its symmetry group is the real rescalings $F\mapsto rF$ with $\varrho\in\mathbb{R}^{\times}$.
+and $\bar\digamma_{\mathrm{gau}}\ne\digamma_{\mathrm{gau}}$ for non-real $\digamma_{\mathrm{gau}}$. The two-sided form therefore has **no continuous central phase symmetry**; its symmetry group is the real rescalings $F\mapsto rF$ with $\varrho\in\mathbb{R}^{\times}$.
 
 **The theorem.** There is no phase to localize, so there is no covariant derivative to build, so the minimal-coupling prescription cannot be transferred to the two-sided form. Coupling that form would be a different construction and this set of articles does not attempt it.
 
@@ -179,18 +179,18 @@ and $\bar\lambda\ne\lambda$ for non-real $\lambda$. The two-sided form therefore
 The gauge transformation is
 
 $$
-\tilde\Xi_2=\lambda\,\tilde\Xi,
+\tilde\Xi_2=\digamma_{\mathrm{gau}}\,\tilde\Xi,
 \qquad
-\lambda=\exp\bigl(i\theta_{\mathrm{gau}}\bigr),
+\digamma_{\mathrm{gau}}=\exp\bigl(i\theta_{\mathrm{gau}}\bigr),
 \qquad
 \tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma,
 \qquad
 \Gamma\ \text{real},
 $$
 
-with $\lambda$ central and of unit modulus.
+with $\digamma_{\mathrm{gau}}$ central and of unit modulus.
 
-**The chain rules.** Because $\lambda$ is a central scalar function, each derivative acts on it coefficient by coefficient:
+**The chain rules.** Because $\digamma_{\mathrm{gau}}$ is a central scalar function, each derivative acts on it coefficient by coefficient:
 
 $$
 \tilde\nabla_\Phi\lambda=\frac{2\pi i\,ϙ}{h}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\lambda,
@@ -209,7 +209,7 @@ $$
 \end{aligned}
 $$
 
-The two $\tilde\nabla_\Phi\Gamma$ terms cancel and the central $\lambda$ moves to the left past $\tilde A_{\Phi}$ and past the field.
+The two $\tilde\nabla_\Phi\Gamma$ terms cancel and the central $\digamma_{\mathrm{gau}}$ moves to the left past $\tilde A_{\Phi}$ and past the field.
 
 **The second member** repeats the computation with $\natural$ throughout, using $\tilde A_{\Phi,2}^{\natural}=\tilde A_{\Phi}^{\natural}-(\tilde\nabla_\Phi)^{\natural}\Gamma$, and gives
 
@@ -225,7 +225,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}\tilde\Xi_{L,2}=\lambda\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L .
 $$
 
-The common factor follows from $\lambda$ being a central *scalar*: $\natural$ negates the three spatial units and fixes the coefficients, so it leaves $\lambda$ alone. Consequently the coupled equation holds in every gauge when it holds in one, and the phase of the field is not observable on its own.
+The common factor follows from $\digamma_{\mathrm{gau}}$ being a central *scalar*: $\natural$ negates the three spatial units and fixes the coefficients, so it leaves $\digamma_{\mathrm{gau}}$ alone. Consequently the coupled equation holds in every gauge when it holds in one, and the phase of the field is not observable on its own.
 
 **The second-order consequence.** The covariant derivative satisfies the operator identity
 
@@ -243,13 +243,13 @@ a covariant wave equation with a curvature term. The corresponding statement for
 
 ## The Massive Case
 
-Suppose the coupled massive pair holds in one gauge. The left-hand side of the transformed first member is $\lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R$, and the right-hand side is
+Suppose the coupled massive pair holds in one gauge. The left-hand side of the transformed first member is $\digamma_{\mathrm{gau}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R$, and the right-hand side is
 
 $$
 \nu_m\tilde\Xi_{L,2}=\nu_m\lambda\,\tilde\Xi_L,
 $$
 
-because a linear mass term carries the same factor. The two sides transform identically, with $\lambda$ and not $\bar\lambda$. The massive coupled equation is therefore form-invariant under the local phase, exactly as the massless one is.
+because a linear mass term carries the same factor. The two sides transform identically, with $\digamma_{\mathrm{gau}}$ and not $\bar\digamma_{\mathrm{gau}}$. The massive coupled equation is therefore form-invariant under the local phase, exactly as the massless one is.
 
 **This is the biquaternion form of a standard fact.** A mass term linear in the field is compatible with a gauged continuous $\mathrm{U}(1)$. The two parts acquire the same phase; what the mass forbids is the *opposite* assignment of the two, which is the relative phase of §*The Field and Its Phase Symmetry*.
 
@@ -374,7 +374,7 @@ A single basis operator is a tensor $a\otimes b$ read through $L_aR_b$, so its c
 $$
 j_{\imath}=\tilde\Xi^{\dagger}iR_{\vec e_x}\,iL_{e_{\imath}}R_{\vec e_{\mathrm{spt}(\imath)}}\tilde\Xi,
 \qquad
-\mathrm{spt}(t)=x,\ \mathrm{spt}(\eta)=y .
+\mathrm{spt}(t)=x,\ \mathrm{spt}(\varsigma_{\mathrm{spt}})=y .
 $$
 
 Its time component is $\tilde\Xi^{\dagger}\tilde\Xi$ and its spatial components are $\tilde\Xi^{\dagger}\alpha_\imath\tilde\Xi$ with $\alpha_\imath=L_{\vec e_k}R_{\vec e_z}$.
@@ -452,7 +452,7 @@ with the interaction term $\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}\tilde\Xi$ that th
 
 The prescription attaches to the one-sided pair and not to the two-sided form, because the two-sided form's mass term is a conjugation and a right multiplication and carries no continuous central phase to localize. That is a theorem about the two displays.
 
-The coupled equation is exactly gauge covariant, massive as well as massless, with $\tilde\Xi_2=\lambda\tilde\Xi$ and $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$: both members transform with the same $\lambda$, and the linear mass term acquires it too. The mass breaks the relative phase of the two parts and not the common one.
+The coupled equation is exactly gauge covariant, massive as well as massless, with $\tilde\Xi_2=\digamma_{\mathrm{gau}}\tilde\Xi$ and $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$: both members transform with the same $\digamma_{\mathrm{gau}}$, and the linear mass term acquires it too. The mass breaks the relative phase of the two parts and not the common one.
 
 A constant potential is pure gauge, so a plane wave sees it as a shift of the wavevector: $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_{\Phi}$, the mass shell $\kappa_t^{2}-|\vec\kappa|^{2}=4\pi^{2}\nu_m^{2}$ is translated and not resized, and no constant potential opens a gap. Squaring the pair gives the covariant wave equation with the curvature term $\frac{2\pi i\,ϙ}{h}\tilde F$, and for constant $\tilde A_{\Phi}$ that term vanishes.
 
@@ -483,7 +483,7 @@ The naive $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, 
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $\tilde A_{\Phi}=A_te_t+\sum_{\imath\in\{x,y,z\}} A_\imath\vec e_\imath$ | Potential biquaternion, an element of $\mathbb{B}_{\Phi}$ |
 | $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$ | Gauge law of the connection; $\Gamma$ real |
-| $\lambda=\exp(i\theta_{\mathrm{gau}})$ | Local central phase; $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ |
+| $\digamma_{\mathrm{gau}}=\exp(i\theta_{\mathrm{gau}})$ | Local central phase; $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ |
 | $ϙ$ | Charge; the algebra fixes neither its value nor its sign |
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}$ | Covariant derivative, left action |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial/\partial R_{\imath}+\frac{2\pi i\,ϙ}{h}A_{\imath}$ | Components; central scalars |

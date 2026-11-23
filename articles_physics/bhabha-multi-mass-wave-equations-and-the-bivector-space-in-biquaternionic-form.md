@@ -95,27 +95,27 @@ $$
 \det\bigl(p_0M_0+mE\bigr) = \prod_{i=1}^{N}\bigl(\lambda_ip_0+m\bigr),
 $$
 
-with $\lambda_i$ the eigenvalues of $M_0$ and $N$ the dimension of the representation. The source compares this with the factorisation
+with $\eta_i$ the eigenvalues of $M_0$ and $N$ the dimension of the representation. The source compares this with the factorisation
 
 $$
-\det\bigl(p_0M_0+mE\bigr) = \kappa\,\bigl(p_0-\mu_0\lambda_1\bigr)\bigl(p_0-\mu_0\lambda_2\bigr)\cdots\bigl(p_0-\mu_0\lambda_N\bigr),
+\det\bigl(p_0M_0+mE\bigr) = \kappa\,\bigl(p_0-\mu_0\eta_1\bigr)\bigl(p_0-\mu_0\eta_2\bigr)\cdots\bigl(p_0-\mu_0\lambda_N\bigr),
 $$
 
 and reads off the relation
 
 $$
-m_1 = \mu_0\lambda_1,\quad -m_1=\mu_0\lambda_2,\quad m_2=\mu_0\lambda_3=-\mu_0\lambda_4,\ \dots
+m_1 = \mu_0\eta_1,\quad -m_1=\mu_0\eta_2,\quad m_2=\mu_0\eta_3=-\mu_0\eta_4,\ \dots
 $$
 
 which it writes first in this linear form for the general $\tau^{l\bar l}$; for the representations of type $\tau^{0,\bar l}$, where only the barred label runs, the same display holds with the barred eigenvalues alone, and in the general case the eigenvalues enter as products,
 
 $$
-m_1 = \mu_0\lambda_1\bar\lambda_1,\qquad -m_1=\mu_0\lambda_2\bar\lambda_2,\qquad m_2=\mu_0\lambda_3\bar\lambda_3=-\mu_0\lambda_4\bar\lambda_4,\ \dots
+m_1 = \mu_0\eta_1\bar\eta_1,\qquad -m_1=\mu_0\eta_2\bar\eta_2,\qquad m_2=\mu_0\eta_3\bar\eta_3=-\mu_0\eta_4\bar\eta_4,\ \dots
 $$
 
-**Why the spectrum is symmetric.** The source records the $\pm$ pairing as an observation: each non-null eigenvalue $\lambda$ of $M_0$ occurs with $-\lambda$ of the same multiplicity. It is not a separate assumption, and the reason is already in hand. At $\vec p=0$ the determinant is $\prod_i(\lambda_ip_0+m)$, and it is also $D(p_0^2)$, an even function of $p_0$, because $D$ depends on the momentum only through $s^2$. Expanding the product in $p_0$, the coefficient of $p_0^{2j+1}$ is $m^{N-2j-1}e_{2j+1}$, with $e_\imath$ the $k$-th elementary symmetric function of the $\lambda_i$; evenness therefore says $e_1=e_3=\dots=0$, and that holds exactly when the multiset $\{\lambda_i\}$ is closed under $\lambda\mapsto-\lambda$ with multiplicities preserved. The roots of $D$ are thus $\pm$ pairs — which is why the source's list contains $m_1$ and $-m_1$ — and a positive mass can be read from each pair only once the normalisation is fixed.
+**Why the spectrum is symmetric.** The source records the $\pm$ pairing as an observation: each non-null eigenvalue $\eta$ of $M_0$ occurs with $-\eta$ of the same multiplicity. It is not a separate assumption, and the reason is already in hand. At $\vec p=0$ the determinant is $\prod_i(\lambda_ip_0+m)$, and it is also $D(p_0^2)$, an even function of $p_0$, because $D$ depends on the momentum only through $s^2$. Expanding the product in $p_0$, the coefficient of $p_0^{2j+1}$ is $m^{N-2j-1}e_{2j+1}$, with $e_\imath$ the $k$-th elementary symmetric function of the $\eta_i$; evenness therefore says $e_1=e_3=\dots=0$, and that holds exactly when the multiset $\{\eta_i\}$ is closed under $\eta\mapsto-\eta$ with multiplicities preserved. The roots of $D$ are thus $\pm$ pairs — which is why the source's list contains $m_1$ and $-m_1$ — and a positive mass can be read from each pair only once the normalisation is fixed.
 
-**A check of the comparison.** Taken literally, the two displays are not the same polynomial. The roots of $\det(p_0M_0+mE)$ are $p_0=-m/\lambda_i$, while the second display has roots $p_0=\mu_0\lambda_i$; the two agree only if $\mu_0\lambda_i=-m/\lambda_i$ for every eigenvalue, that is if all $|\lambda_i|$ are equal, which a general representation of the Lorentz group does not satisfy. A constant can match the two lists at one eigenvalue and at no more, so the step is not a rescaling with a scale absorbed; in terms of mass the mismatch is an inversion. The determinant gives $m_i=m/|\lambda_i|$, which falls as the eigenvalue grows, while the source's product form rises with it. The invariant content is the $\pm$ pairing; the functional form of the mass in the eigenvalues is the point the source leaves unexamined, and it is recorded below as an open question rather than silently repaired.
+**A check of the comparison.** Taken literally, the two displays are not the same polynomial. The roots of $\det(p_0M_0+mE)$ are $p_0=-m/\eta_i$, while the second display has roots $p_0=\mu_0\eta_i$; the two agree only if $\mu_0\eta_i=-m/\eta_i$ for every eigenvalue, that is if all $|\eta_i|$ are equal, which a general representation of the Lorentz group does not satisfy. A constant can match the two lists at one eigenvalue and at no more, so the step is not a rescaling with a scale absorbed; in terms of mass the mismatch is an inversion. The determinant gives $m_i=m/|\eta_i|$, which falls as the eigenvalue grows, while the source's product form rises with it. The invariant content is the $\pm$ pairing; the functional form of the mass in the eigenvalues is the point the source leaves unexamined, and it is recorded below as an open question rather than silently repaired.
 
 In the infinite-dimensional limit $l,\bar l\to\infty$ the formula becomes
 
@@ -303,7 +303,7 @@ Third, the **equations** themselves are the corpus's Dirac–Maxwell package in 
 - The wave equations in Minkowski space and their images in $\mathbb{R}^6\cong\mathbb{C}^3$.
 - The determinant factorisation $D(p)=D(s^2)$, which is the source's Lorentz-invariance argument and is not re-proved here.
 - The interlocking schemes and the assignment of the proton to the chain member $(59/2,29)$.
-- The source's eigenvalue relation $m_i=\mu_0\lambda_i$ and its product form. The literal rest-frame determinant gives $m_i=m/|\lambda_i|$ instead, an inverse dependence, so the source's reading is not the determinant's reading with a scale absorbed.
+- The source's eigenvalue relation $m_i=\mu_0\eta_i$ and its product form. The literal rest-frame determinant gives $m_i=m/|\eta_i|$ instead, an inverse dependence, so the source's reading is not the determinant's reading with a scale absorbed.
 - The printed collective index order, which the article corrects to the boost-first order.
 - The conjugate-coordinate relations $g_{j+3}=ia_j$ and $a_j^*=-ig_{j+3}$, which cannot both hold.
 
@@ -318,7 +318,7 @@ Third, the **equations** themselves are the corpus's Dirac–Maxwell package in 
 
 ## Open Questions
 
-1. **The eigenvalue normalisation.** The rest-frame determinant has roots $p_0=-m/\lambda_i$, so the masses it carries are $m_i=m/|\lambda_i|$, which fall as the eigenvalues grow. The source writes the roots as $p_0=\mu_0\lambda_i$ and reads off $m_i=\mu_0\lambda_i\bar\lambda_i$, which rise. The two cannot both be the statement of one determinant: they agree only if all $|\lambda_i|$ are equal, and they differ by an inversion otherwise. A reconciliation would need eigenvalues falling as the degree grows, and the generators of $\tau^{l\bar l}$ carry weights of order $l+\bar l$, which grow. As it stands, the companion's rising spectrum does not come from this determinant in the form displayed. Which dependence is intended?
+1. **The eigenvalue normalisation.** The rest-frame determinant has roots $p_0=-m/\eta_i$, so the masses it carries are $m_i=m/|\eta_i|$, which fall as the eigenvalues grow. The source writes the roots as $p_0=\mu_0\eta_i$ and reads off $m_i=\mu_0\eta_i\bar\eta_i$, which rise. The two cannot both be the statement of one determinant: they agree only if all $|\eta_i|$ are equal, and they differ by an inversion otherwise. A reconciliation would need eigenvalues falling as the degree grows, and the generators of $\tau^{l\bar l}$ carry weights of order $l+\bar l$, which grow. As it stands, the companion's rising spectrum does not come from this determinant in the form displayed. Which dependence is intended?
 
 2. **The conjugate coordinate in $\mathbb{R}^6$.** The source writes both $g_{j+3}=ia_j$ and $a_j^*=-ig_{j+3}$, which together give $a_j^*=a_j$. Which is the definition? Under the reading $g_{j+3}=ia_j^*$ the $i$ of the second sum reduces by $i^2=-1$; under the printed reading it does not.
 
@@ -351,7 +351,7 @@ The framework's relation to this is the fundamental doublet's factor: $\mathbb{C
 | $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The two parts of the Dirac element named by the subscript; one equation per part |
 | $M^{l\bar l}_{\imath}$, $M(p)$ | Generator matrices of the representation and the momentum matrix |
 | $D(p)=\det(M(p)+mE)$ | Determinant whose roots are the masses |
-| $\mu_0$, $\lambda_i$ | Mass scale and eigenvalues of $M_0$ |
+| $\mu_0$, $\eta_i$ | Mass scale and eigenvalues of $M_0$ |
 | $g_{ab}$, order $10,20,30,23,31,12$ | Bivector-space metric and its boost-first collective order |
 | $a_j$, $a_j^*$ | Three complex bivector coordinates and their conjugates |
 | $\Pi_j=M^{l}_j\otimes\mathbf{1}-\mathbf{1}\otimes M^{\bar l}_j$, $\Pi_jX=X(M^{l}_j)^{\mathsf T}-M^{\bar l}_jX$ | Tensor-product generator of the $\mathbb{R}^6$ equation; two-sided, the article's one such operator |

@@ -20,7 +20,7 @@ The fourth claim is that normality is the condition under which the split into r
 
 The fifth claim is that the degenerate sector is not a limit case but a rigid structure. On $B^{2}=0$ with $N\neq0$ the unit factor is $\pm$unipotent, its two angles are tied by one equation, its two axes are orthogonal, and the closed form reduces the four word parameters to one complex number, one angle and a frame. The logarithm is exact and truncated: $\operatorname{Log}\tilde Q=\log Q_t+\vec\Pi_{\mathrm{nil}}$ with $\vec\Pi_{\mathrm{nil}}^{2}=0$. This is the flow that cannot be split, and the impossibility is algebraic rather than numerical.
 
-The sixth claim is that one slot carries half the angle and two slots carry the full angle. A one-sided operator is a representation, so its exponential is the exponential of the element, and its eigenvalues are $\lambda_\pm=Q_t\pm iB$ twice each. The two-sided operator is quadratic, its exponential is not the exponential of an element, and its eigenvalues are the four products $\lambda_i\bar\lambda_j$. The spinor therefore sees $e^{\pm\theta/2}$ and the vector sees $e^{\pm\theta}$, and the factor two between them is the whole of the bookkeeping that separates the two actions. The mathematics states it as a doubling rule with three cases, one for each kind of generator.
+The sixth claim is that one slot carries half the angle and two slots carry the full angle. A one-sided operator is a representation, so its exponential is the exponential of the element, and its eigenvalues are $\eta_{\pm}=Q_t\pm iB$ twice each. The two-sided operator is quadratic, its exponential is not the exponential of an element, and its eigenvalues are the four products $\eta_i\bar\eta_j$. The spinor therefore sees $e^{\pm\theta/2}$ and the vector sees $e^{\pm\theta}$, and the factor two between them is the whole of the bookkeeping that separates the two actions. The mathematics states it as a doubling rule with three cases, one for each kind of generator.
 
 The first objection is that this is a coordinate change dressed as a decomposition. For the word, it is. The content is in the three pairings and in the two walls: which factor is invariant, which is frame, which domain each split requires, and what survives where the element stops being semisimple. A coordinate chart that is a chart on the whole group but a chart with two different shapes on the two sectors is telling you where the algebra changes kind.
 
@@ -28,7 +28,7 @@ The second objection is that three pairings of one word cannot all be physical. 
 
 The third objection is that the degenerate sector is empty of content because it has no eigenbasis. It has no eigenbasis and it has a lock. On $\Sigma_{10}$ the rapidity is a function of the spin angle, the two axes are orthogonal, and the element is the scalar part times a unipotent written in an orthogonal frame. A sector with one angle of freedom instead of two is a sector with a prediction, and the corpus reads that prediction as the rest frame and the exceptional point.
 
-The letters. The algebra is $\mathbb{B}$; the element is $\tilde Q=Q_te_t+\vec Q$; the norms are $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+B^{2}$ and $B^{2}=\langle\vec Q,\vec Q\rangle_{\natural}$; the modulus is $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt N=\varrho e^{i\theta_{\mathrm{pha}}}$; the unit factor is $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$. The two unit factors are the boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}$ and the rotor $\tilde u_{\mathrm r}$ of angle $\theta_{\mathrm{axr}}$. The eigenvalues are $\lambda_\pm=Q_t\pm iB$. The sectors are $\Sigma_{11}$ for $N\neq0$, $B^{2}\neq0$ and $\Sigma_{10}$ for $N\neq0$, $B^{2}=0$. The three pairings are named by their first factor: quaternion, Hamilton, Cartan.
+The letters. The algebra is $\mathbb{B}$; the element is $\tilde Q=Q_te_t+\vec Q$; the norms are $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+B^{2}$ and $B^{2}=\langle\vec Q,\vec Q\rangle_{\natural}$; the modulus is $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt N=\varrho e^{i\theta_{\mathrm{pha}}}$; the unit factor is $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$. The two unit factors are the boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}$ and the rotor $\tilde u_{\mathrm r}$ of angle $\theta_{\mathrm{axr}}$. The eigenvalues are $\eta_{\pm}=Q_t\pm iB$. The sectors are $\Sigma_{11}$ for $N\neq0$, $B^{2}\neq0$ and $\Sigma_{10}$ for $N\neq0$, $B^{2}=0$. The three pairings are named by their first factor: quaternion, Hamilton, Cartan.
 
 Boundaries. The complete polar decomposition, with its four factors, is the subject of *The Complete Polar Decomposition of an N-Regular Biquaternion*; the exponential and the logarithm are *Biquaternion Elementary Functions*; the spectrum is *Spectral Regularity and Degeneracy in the Biquaternion Algebra*; the sectors are the four sector articles. The physical dictionary of the pairings is the companion entry *The Polar Decomposition and Its Three Pairings*, and the readings below are carried at length in the archived articles named with each. This entry states the decomposition, its two sectors, its three pairings and its two actions. It does not select a pairing, it does not derive a dynamics, and it does not claim that the word is conserved.
 
@@ -59,7 +59,7 @@ The seven data. $\varrho=\sqrt{|N|}$, $\theta_{\mathrm{pha}}=\tfrac12\operatorna
 
 The parameter count. $1+1+(1+2)+(1+2)=8$, the real dimension of the group of invertibles. The word is a chart on that group, not on the algebra.
 
-The eigenvalues. $\lambda_\pm=Q_t\pm iB$, distinct and nonzero exactly on $\Sigma_{11}$, coalescent on $\Sigma_{10}$. Their product is the norm and their sum is twice the trace.
+The eigenvalues. $\eta_{\pm}=Q_t\pm iB$, distinct and nonzero exactly on $\Sigma_{11}$, coalescent on $\Sigma_{10}$. Their product is the norm and their sum is twice the trace.
 
 The normal case. The two polar factors commute with $\tilde Q$ exactly when $\tilde Q$ is normal; then the eigenbasis is a polar basis, the two axes are parallel, and the word collapses to a single exponential. Verified: for a normal element both commutators vanish at $4.5\times10^{-16}$; for the non-normal example they are $1.7$ and $1.0$ in Euclidean norm.
 
@@ -71,7 +71,7 @@ The three pairings. Quaternion: $\tilde Q=\tilde q\exp(i\tilde\Theta)$ with $\ti
 
 The domains. The Cartan pairing and the word exist on the whole complement of the null cone. Hamilton needs $B^{2}\neq0$ as well. The quaternion factorisation needs $N\neq0$ and its construction needs the real quaternion part of $\tilde Q$ invertible.
 
-One slot and two. $\exp(tL_{\tilde Q})=L_{\exp(t\tilde Q)}$ with eigenvalues $e^{t\lambda_\pm}$ twice each, determinant $e^{4tQ_t}$ and trace $4e^{tQ_t}\cos(tB)$. The two-sided operator has eigenvalues $\lambda_i\bar\lambda_j$, determinant $e^{4t|Q_t|^{2}}$, and no element identity.
+One slot and two. $\exp(tL_{\tilde Q})=L_{\exp(t\tilde Q)}$ with eigenvalues $e^{t\eta_{\pm}}$ twice each, determinant $e^{4tQ_t}$ and trace $4e^{tQ_t}\cos(tB)$. The two-sided operator has eigenvalues $\eta_i\bar\eta_j$, determinant $e^{4t|Q_t|^{2}}$, and no element identity.
 
 The doubling. The scale doubles its exponent, the phase produces nothing, the boost and the rotor double theirs. A boost of rapidity $\theta$ has one-slot eigenvalues $e^{\pm\theta/2}$ and two-slot eigenvalues $e^{\pm\theta}$.
 
@@ -146,7 +146,7 @@ The exception is the scalar line. At $\tilde Q_0=Q_0e_t$ the root is $0/0$ and i
 
 ### The Two Eigenvalues and the Two Modes
 
-The element has two spectral points and the flow has two rates. $\lambda_\pm=Q_t\pm iB$, and the unit factor's eigenvalues are $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ with $\mu_+\mu_-=1$. The exponents of the two modes are opposite, because the product of the eigenvalues is the norm and the norm of the unit factor is one: whatever one mode gains in modulus the other loses.
+The element has two spectral points and the flow has two rates. $\eta_{\pm}=Q_t\pm iB$, and the unit factor's eigenvalues are $\mu_\pm=\eta_{\pm}/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ with $\mu_+\mu_-=1$. The exponents of the two modes are opposite, because the product of the eigenvalues is the norm and the norm of the unit factor is one: whatever one mode gains in modulus the other loses.
 
 A flow with two opposite rates is a boost, a rotation, or a mixture. When $Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ is real the two eigenvalues are complex conjugates of unit modulus and the flow is a rotation; when $Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ is real and greater than one the eigenvalues are real reciprocals and the flow is a boost; in general the two eigenvalues have both a modulus ratio and an argument difference, and the flow is a rotation composed with a dilation. The three cases are the three types of the regular sector, and the type is fixed by a single complex number.
 
@@ -358,14 +358,14 @@ $$
 
 The proof is one line: $L_{\tilde Q}^{n}=L_{\tilde Q^{n}}$, so the series collects term by term. This is the reason the one-sided reading is the natural home of the spinor exponent, and it is the reason the one-sided operator has a group and the two-sided one does not.
 
-The spectrum is the eigenvalue repeated twice. On $\Sigma_{11}$ the operator is diagonalisable with eigenvalues $\lambda_+,\lambda_+,\lambda_-,\lambda_-$, so
+The spectrum is the eigenvalue repeated twice. On $\Sigma_{11}$ the operator is diagonalisable with eigenvalues $\eta_{+},\eta_{+},\eta_{-},\eta_{-}$, so
 
 $$
 \det\exp\bigl(tL_{\tilde Q}\bigr)=e^{4tQ_t},\qquad
 \operatorname{tr}\exp\bigl(tL_{\tilde Q}\bigr)=4e^{tQ_t}\cos(tB).
 $$
 
-Verified at $t=0.7$ on three random elements: the eigenvalues come in the pairs $\lambda_\pm$ twice each, and the determinant and the trace agree with the formulas to $1.2\times10^{-14}$.
+Verified at $t=0.7$ on three random elements: the eigenvalues come in the pairs $\eta_{\pm}$ twice each, and the determinant and the trace agree with the formulas to $1.2\times10^{-14}$.
 
 The rate is the eigenvalue and not its square. For a central element $c\,e_t$ the group is $e^{tc}\,\mathrm{id}$, while the two-sided companion gives $e^{t|c|^{2}}\mathrm{id}$. The one-sided rate is $c$ and the two-sided rate is $|c|^{2}$, and the two are equal exactly when $|c|^{2}=2\operatorname{Re}c$ — that is, for a single point and not on a set.
 
@@ -377,7 +377,7 @@ $$
 \mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}
 $$
 
-satisfies $\mathrm{Sd}_{\tilde Q}^{n}=\mathrm{Sd}_{\tilde Q^{n}}$ only in the sense that the modulus is powered twice. What replaces the identity is the spectral form: on $\Sigma_{11}$ the operator has eigenvalues $\lambda_i\bar\lambda_j$ and
+satisfies $\mathrm{Sd}_{\tilde Q}^{n}=\mathrm{Sd}_{\tilde Q^{n}}$ only in the sense that the modulus is powered twice. What replaces the identity is the spectral form: on $\Sigma_{11}$ the operator has eigenvalues $\eta_i\bar\eta_j$ and
 
 $$
 \det\exp\bigl(t\,\mathrm{Sd}_{\tilde Q}\bigr)=\exp\bigl(4t|Q_t|^{2}\bigr).
@@ -460,7 +460,7 @@ The limit. The word says nothing about dynamics. It is a chart of a group, so it
 
 ### III.3.b — The Two Modes Are the Two Directions of the Same Flow
 
-The object. $\lambda_\pm=Q_t\pm iB$ and the exponents $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ with $\mu_+\mu_-=1$.
+The object. $\eta_{\pm}=Q_t\pm iB$ and the exponents $\mu_\pm=\eta_{\pm}/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ with $\mu_+\mu_-=1$.
 
 The warrant. The two eigenvalues are distinct on $\Sigma_{11}$, their product is the norm, and the unit factor's eigenvalues are their ratios to the modulus, so the two modes are reciprocal.
 
@@ -472,7 +472,7 @@ The limit. The two modes are the element's own, not the field's. A field that is
 
 The object. $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt N=\varrho e^{i\theta_{\mathrm{pha}}}$ in the Hamilton pairing.
 
-The warrant. $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is central, so it commutes with every element and is untouched by a conjugation; the quaternion and Cartan first factors are not central and do change under conjugation; and $\lambda_+\lambda_-=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=N$.
+The warrant. $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is central, so it commutes with every element and is untouched by a conjugation; the quaternion and Cartan first factors are not central and do change under conjugation; and $\eta_{+}\eta_{-}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=N$.
 
 The reading. The pairing that isolates the invariant is the one whose first factor is central, and it is the only one. For a four-momentum the modulus is the mass: the product of the two light-cone combinations, the one number that a change of frame cannot move. The energy is not that number — it is a component, it is the trace, and the trace is frame-dependent. The phase of the modulus carries the causal character when the norm is real: $0$ for a spacelike element, $\pi/2$ for a timelike one, undefined for a null one; and $\tfrac12\arg N$ in general. *The Hamilton Pairing: Mass as Modulus and the Complex Angle* carries the reading and its boundaries, and *The N Norm: Mass, Angle and the Cone* supplies the norm's own dictionary.
 
@@ -510,7 +510,7 @@ The limit. The lock holds exactly on $B^{2}=0$ and on no neighbourhood of it, be
 
 ### III.3.g — The Half-Angle Is the Spinor and the Full Angle Is the Vector
 
-The object. The one-sided exponentials with eigenvalues $e^{t\lambda_\pm}$ and the two-sided operator with eigenvalues $\lambda_i\bar\lambda_j$.
+The object. The one-sided exponentials with eigenvalues $e^{t\eta_{\pm}}$ and the two-sided operator with eigenvalues $\eta_i\bar\eta_j$.
 
 The warrant. The one-sided operator is a representation and its exponential is the exponential of the element; the two-sided operator is $\rho_{\mathrm{rep}}\otimes\bar\rho_{\mathrm{rep}}$; the weights of the tensor product are the sums of the weights.
 
@@ -556,7 +556,7 @@ Three pairings, three moduli, three domains. Quaternion: a real quaternion modul
 
 The three splits are not the three pairings. A pairing brackets a product, a split decomposes the algebra. The real–imaginary split is not the sector split, and identifying them is the standard error.
 
-One slot carries half the angle. $\exp(tL_{\tilde Q})=L_{\exp(t\tilde Q)}$ with eigenvalues $e^{t\lambda_\pm}$ twice each, determinant $e^{4tQ_t}$, trace $4e^{tQ_t}\cos(tB)$. The two-sided operator has eigenvalues $\lambda_i\bar\lambda_j$, determinant $e^{4t|Q_t|^{2}}$, and no element identity.
+One slot carries half the angle. $\exp(tL_{\tilde Q})=L_{\exp(t\tilde Q)}$ with eigenvalues $e^{t\eta_{\pm}}$ twice each, determinant $e^{4tQ_t}$, trace $4e^{tQ_t}\cos(tB)$. The two-sided operator has eigenvalues $\eta_i\bar\eta_j$, determinant $e^{4t|Q_t|^{2}}$, and no element identity.
 
 The doubling rule governs every factor. The scale doubles, the phase cancels, the boost and the rotor double. A boost of rapidity $0.9$ has one-slot eigenvalues $1.568312$ and $0.637628$ and two-slot eigenvalues $2.459603$, $0.406570$, $1$, $1$.
 
@@ -579,7 +579,7 @@ Eight readings, each with a boundary. The word is a flow split into rate and fra
 | the rotor | $\tilde u_{\mathrm r}$ | $\exp(\tfrac12\theta_{\mathrm{axr}}\vec u_{\mathrm r})$, a real quaternion |
 | the rapidity | $\theta_{\mathrm{rpd}}$ | real, non-negative, with axis $\vec u_{\mathrm b}\in S^{2}$ |
 | the rotor angle | $\theta_{\mathrm{axr}}$ | in $[0,2\pi]$, with axis $\vec u_{\mathrm r}\in S^{2}$ |
-| the eigenvalues | $\lambda_\pm$ | $Q_t\pm iB$, distinct and nonzero on $\Sigma_{11}$ |
+| the eigenvalues | $\eta_{\pm}$ | $Q_t\pm iB$, distinct and nonzero on $\Sigma_{11}$ |
 | the regular sector | $\Sigma_{11}$ | $N\neq0$ and $B^{2}\neq0$ |
 | the degenerate sector | $\Sigma_{10}$ | $N\neq0$ and $B^{2}=0$ |
 | the null vector | $\vec\Pi_{\mathrm{nil}}$ | $\vec Q/Q_t$ on $\Sigma_{10}$, with $\vec\Pi_{\mathrm{nil}}^{2}=0$ |

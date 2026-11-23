@@ -59,8 +59,8 @@ Two null vectors that differ by a positive real factor have the same direction. 
 A null element has rank-one matrix, so it factors:
 
 $$
-\mathsf{M}_2(\tilde X)=\xi\,\eta^{\mathsf T},
-\qquad \xi,\eta\in\mathbb{C}^{2},
+\mathsf{M}_2(\tilde X)=\xi\,\upsilon_{\mathrm{spr}}^{\mathsf T},
+\qquad \xi,\upsilon_{\mathrm{spr}}\in\mathbb{C}^{2},
 $$
 
 and for a **Hermitian** null element the two spinors are conjugate,
@@ -197,7 +197,7 @@ The null cone is the determinant-zero quadric: complex dimension three over $\ma
 |---|---|
 | $N(\tilde X)=\langle\tilde X\rangle_{\natural}$ | the norm, equal to $\det\mathsf{M}_2(\tilde X)$ |
 | null cone | $\{\tilde X:N(\tilde X)=0\}$ |
-| $\xi,\eta$ | spinors in the rank-one factorisation |
+| $\xi,\upsilon_{\mathrm{spr}}$ | spinors in the rank-one factorisation |
 | $\mathbb{CP}^{1}$ | projective spinor space, the sky |
 | Klein quadric | $\{\tilde X\in\mathbb{CP}^{3}:N(\tilde X)=0\}\cong\mathbb{CP}^{1}\times\mathbb{CP}^{1}$ |
 | helicity | the massless label carried by the null little group |

@@ -159,7 +159,7 @@ Across the eight Fourier articles the invisible object is always either a produc
 | $\tilde A_{\mathrm{trf}}*\tilde A_{\mathrm{trf}}^{\natural}$ | The correlation of the amplitude with its own conjugate |
 | $m^{2}\tilde A$, $\tilde A/\varrho$, and the charge bilinear | The three currents |
 | $\varrho=\lvert\tilde A\rvert$ in the chart | A coordinate, not the field's norm |
-| $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ | The gauge element |
+| $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ | The gauge element |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
 ## Further Reading

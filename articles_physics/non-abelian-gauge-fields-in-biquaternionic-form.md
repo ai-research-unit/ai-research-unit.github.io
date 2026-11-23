@@ -172,10 +172,10 @@ which is the same as the commutator of operators, $[D_\imath,\tilde{Q}] = D_\ima
 
 $$
 D_\imath F_{\imath\jmath} + D_{\imath} F_{\jmathk} + D_{\jmath} F_{k\imath} = 0
-\qquad \text{for all } (\lambda,\imath,\jmath).
+\qquad \text{for all } (k,\imath,\jmath).
 $$
 
-It was recomputed on all four independent triples $(\lambda,\imath,\jmath) = (0,1,2),(0,1,3),(0,2,3),(1,2,3)$ on the generic non-commuting connection, with residual of order $10^{-10}$.
+It was recomputed on all four independent triples $(k,\imath,\jmath) = (0,1,2),(0,1,3),(0,2,3),(1,2,3)$ on the generic non-commuting connection, with residual of order $10^{-10}$.
 
 **Where the Jacobi identity enters.** There are two distinct places, and conflating them hides the structure.
 
