@@ -200,7 +200,7 @@ $$</p>
 \det L_{\mathrm{axf}}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2}=N^{2},
 $$</p>
 <p>$$
-\chi(\lambda)=\bigl((\lambda-Q_t)^2+B^2\bigr)^{2},\qquad
+\chi(\eta)=\bigl((\eta-Q_t)^2+B^2\bigr)^{2},\qquad
 \operatorname{spec}=\{Q_t+iB,\ Q_t-iB\}\ \text{each twice},\qquad B^2=Q_x^2+Q_y^2+Q_z^2 .
 $$</p>
 <p><strong>The rank is even.</strong> It is twice the rank of the $2\times2$ image, hence $0$, $2$ or $4$; a matrix of rank one or three is a general matrix of the ambient and not the left matrix of any element.</p>
@@ -263,7 +263,7 @@ $$</p>
 <tr>
 <td>$\mathbb{B}_{C}$</td>
 <td>$\tilde Q^{\natural}=\tilde Q$</td>
-<td>$M=\lambda\mathrm I_4$</td>
+<td>$M=\digamma_{\mathrm{scl}}\mathrm I_4$</td>
 <td>$2$</td>
 </tr>
 <tr>
@@ -475,7 +475,7 @@ $$</p>
 <p>The idempotents. $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z)$. The unit appears inside both, with opposite signs.</p>
 <p>The mixed units. $\vec\Pi_{\mathrm{nil},\pm}=\tfrac12(i\vec e_x\pm\vec e_y)$. The two remaining spatial units are consumed here, and consumed in an order: $\vec e_x$ multiplied by $i$ comes first, $\vec e_y$ second. The pair $(\vec e_x,\vec e_y)$ is no longer a set; it is an ordered pair, and its orientation is part of the frame.</p>
 <p>The Peirce decomposition. The four components are read in the order $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$, which is a second choice, independent of the first: the two middle slots can be exchanged.</p>
-<p>The adapted basis and its scale. The mixed units are defined only up to $\vec\Pi_{\mathrm{nil},+}\mapsto\lambda\vec\Pi_{\mathrm{nil},+}$ and $\vec\Pi_{\mathrm{nil},-}\mapsto\lambda^{-1}\vec\Pi_{\mathrm{nil},-}$, so the frame carries a free nonzero scalar as well. The scale is harmless for the algebra and fatal for a display that pretends to be unique.</p>
+<p>The adapted basis and its scale. The mixed units are defined only up to $\vec\Pi_{\mathrm{nil},+}\mapsto\digamma_{\mathrm{scl}}\vec\Pi_{\mathrm{nil},+}$ and $\vec\Pi_{\mathrm{nil},-}\mapsto\digamma_{\mathrm{scl}}^{-1}\vec\Pi_{\mathrm{nil},-}$, so the frame carries a free nonzero scalar as well. The scale is harmless for the algebra and fatal for a display that pretends to be unique.</p>
 <p>The minimal left ideal. $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ is the two-dimensional carrier of the older literature. It is built from the unit, and it is the idempotent of the unit that selects it.</p>
 <p>The projector and the block split. The projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{B}_{\Phi}])$ has rank two and its range is the ideal $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$. The four-dimensional array is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$: two identical blocks, and the split of the array is the split of the ideal, written twice.</p>
 <p>The two-component column, and the spinor. A column of two components is an element of the ideal written in the basis $(\tilde\Pi_{\mathrm{id},+},i\tilde\Pi_{\mathrm{id},+})$, and the spinor of the older literature is that column. This is a consequence of the frame and not of the algebra: a state is an element of $\mathbb{B}$, which needs no ideal, no column and no frame, and it becomes a column only after the ideal has been chosen. The column is the most consequential item of the list, because a whole literature is written in it.</p>
@@ -640,7 +640,7 @@ does not return itself. Under the exchange of $\vec e_z$ with $\vec e_x$ the dia
 <p>$$
 \tilde{Ξ}\longmapsto a\,\tilde{Ξ}\,b.
 $$</p>
-<p>The pair $(a,b)$ is the operator, written $L_aR_b$ when a name is needed. It carries seven effective parameters rather than eight, because $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ give the same action for any nonzero scalar $\lambda$. No basis appears in the definition, and none appears in the result.</p>
+<p>The pair $(a,b)$ is the operator, written $L_aR_b$ when a name is needed. It carries seven effective parameters rather than eight, because $(a,b)$ and $(\digamma_{\mathrm{scl}} a,\digamma_{\mathrm{scl}}^{-1}b)$ give the same action for any nonzero scalar $\digamma_{\mathrm{scl}}$. No basis appears in the definition, and none appears in the result.</p>
 <p>This is the form the physics equations of the corpus take when the equation is the subject and no array is required. Each factor is named, so a reader sees which factor carries the mass, which the momentum and which the grading, and no factor is an entry of a display.</p>
 <h4 id="composition-and-invariants">Composition and Invariants</h4>
 <p>Composition is one line, with the second slot reversed because right multiplications compose in the opposite order:</p>

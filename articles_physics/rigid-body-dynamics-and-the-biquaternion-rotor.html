@@ -76,7 +76,7 @@
 <ol>
 <li><strong>Orientation is a rotor.</strong> A rotation is $\tilde u\in\mathbb{B}_{H}$ with $\langle\tilde u\rangle_{\natural}=e_t$, acting on a vector by $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$; the body axes are $\tilde u \vec e_\imath\tilde u^{*}$.</li>
 <li><strong>Angular velocity is the logarithmic derivative of the rotor.</strong> The body-frame angular velocity is $\vec\omega_b=+2c\,\tilde u^{\natural}d\tilde u/dr'_t$ and the space-frame angular velocity is $\vec\omega_s=+2c\,d\tilde u/dr'_t\tilde u^{\natural}$; both are real pure quaternions, and $\vec\omega_s=\tilde u\vec\omega_b\tilde u^{*}$.</li>
-<li><strong>The kinetic energy is the inertia form of the angular velocity; for the free isotropic top it is the biquaternion norm.</strong> For a spherical top, $T=\frac{\lambda}{2}\langle\vec\omega_b\rangle_{\natural}$; for a general top, $T=\frac12\vec\omega_b\cdot I\vec\omega_b$, with the inertia tensor a symmetric positive-definite operator on the real vector part.</li>
+<li><strong>The kinetic energy is the inertia form of the angular velocity; for the free isotropic top it is the biquaternion norm.</strong> For a spherical top, $T=\frac{\digamma_{\mathrm{inr}}}{2}\langle\vec\omega_b\rangle_{\natural}$; for a general top, $T=\frac12\vec\omega_b\cdot I\vec\omega_b$, with the inertia tensor a symmetric positive-definite operator on the real vector part.</li>
 <li><strong>Euler's equations are one quaternion equation.</strong> In the body frame, $c\,d\vec L/dr'_t=\frac12[\vec L,\vec\omega_b]+\vec\tau$; the commutator is the cross product.</li>
 <li><strong>The free symmetric top is integrable in closed form</strong>, and its rotor is a product of two one-parameter subgroups; the general free top is Euler's classical problem.</li>
 </ol>
@@ -180,11 +180,11 @@ $$</p>
 \vec L_b=I(\vec\omega_b)=\sum_{\imath\in\{x,y,z\}} I_\imath\omega_\imath \vec e_\imath\;},
 $$</p>
 <p>using $\mathrm{Sc}(\vec a\vec b)=-\vec a\cdot\vec b$ for pure real quaternions. The quadratic form $\mathrm{Sc}(\vec\omega_b\vec L_b)$ is negative-definite because the quaternion product of two pure vectors has the sign of the negative dot product; the two minus signs give a positive energy.</p>
-<p><strong>Spherical top.</strong> If the three principal moments are equal, $I_1=I_2=I_3=\lambda$, the inertia operator is $\lambda$ times the identity on the real vector part and</p>
+<p><strong>Spherical top.</strong> If the three principal moments are equal, $I_1=I_2=I_3=\digamma_{\mathrm{inr}}$, the inertia operator is $\digamma_{\mathrm{inr}}$ times the identity on the real vector part and</p>
 <p>$$
-T=\tfrac{\lambda}{2}\,\vec\omega^2=\tfrac{\lambda}{2}\,\langle\vec\omega_b\rangle_{\natural} ,
+T=\tfrac{\digamma_{\mathrm{inr}}}{2}\,\vec\omega^2=\tfrac{\digamma_{\mathrm{inr}}}{2}\,\langle\vec\omega_b\rangle_{\natural} ,
 \qquad
-\vec L_b=\lambda\vec\omega_b .
+\vec L_b=\digamma_{\mathrm{inr}}\vec\omega_b .
 $$</p>
 <p>The kinetic energy of a spherical top is the <strong>biquaternion norm</strong> of the body angular velocity. This is the rigid-body appearance of the same structural fact that the preceding articles established for the free particle and the rotor action: the algebra's biquaternion norm is the free kinetic energy. The general inertia tensor is a positive-definite symmetric deformation of the biquaternion norm, and its principal axes are the directions in which the deformation is diagonal.</p>
 <h3 id="the-two-integrals">The Two Integrals</h3>
@@ -206,7 +206,7 @@ $$</p>
 \boxed{\;c\,d\vec L_{b}/dr'_t=\tfrac12\left[\vec L_b,\vec\omega_b\right]+\vec\tau\;}
 \qquad\text{(body frame).}
 $$</p>
-<p>A torque-free body has $c\,d\vec L_{b}/dr'_t=\frac12[\vec L_b,\vec\omega_b]$: the bracket is $\vec L_b\times\vec\omega_b$, perpendicular to both, so in the body frame the angular momentum precesses about the instantaneous angular velocity while the space-frame angular momentum stays fixed. For the spherical top, $\vec L_b=\lambda\vec\omega_b$ commutes with $\vec\omega_b$ and the bracket vanishes: the body angular velocity is constant, and the rotor is a one-parameter subgroup. For the general top the bracket is nonzero and drives the precession.</p>
+<p>A torque-free body has $c\,d\vec L_{b}/dr'_t=\frac12[\vec L_b,\vec\omega_b]$: the bracket is $\vec L_b\times\vec\omega_b$, perpendicular to both, so in the body frame the angular momentum precesses about the instantaneous angular velocity while the space-frame angular momentum stays fixed. For the spherical top, $\vec L_b=\digamma_{\mathrm{inr}}\vec\omega_b$ commutes with $\vec\omega_b$ and the bracket vanishes: the body angular velocity is constant, and the rotor is a one-parameter subgroup. For the general top the bracket is nonzero and drives the precession.</p>
 <p>The same equation can be written with the inertia operator. Since $\vec L_b=I(\vec\omega_b)$ and $I$ is constant in the body frame,</p>
 <p>$$
 c\,I\!\left(d\vec\omega_{b}/dr'_t\right)+\tfrac12\left[\vec\omega_b,I(\vec\omega_b)\right]=\vec\tau ,
@@ -287,7 +287,7 @@ $$</p>
 <ol>
 <li>The orientation is a rotor $\tilde u\in\mathbb{B}_{H}$ with $\langle\tilde u\rangle_{\natural}=e_t$, and the composition of rotations is quaternion multiplication; the double cover is visible as the spinor sign $\tilde u\to-\tilde u$ at $2\pi$.</li>
 <li>The angular velocity is the logarithmic derivative of the rotor, $\vec\omega_b=+2c\,\tilde u^{\natural}d\tilde u/dr'_t$ and $\vec\omega_s=+2c\,d\tilde u/dr'_t\tilde u^{\natural}$, and both lie in the real vector part, which is exactly where three-vectors live in the algebra.</li>
-<li>The spherical top's kinetic energy is the <strong>biquaternion norm</strong> $\frac{\lambda}{2}\langle\vec\omega_b\rangle_{\natural}$; a general inertia tensor is a positive-definite symmetric deformation of the biquaternion norm on the real vector part.</li>
+<li>The spherical top's kinetic energy is the <strong>biquaternion norm</strong> $\frac{\digamma_{\mathrm{inr}}}{2}\langle\vec\omega_b\rangle_{\natural}$; a general inertia tensor is a positive-definite symmetric deformation of the biquaternion norm on the real vector part.</li>
 <li>Euler's equations are one quaternion equation with a commutator, $c\,d\vec L_{b}/dr'_t=\frac12[\vec L_b,\vec\omega_b]+\vec\tau$, the commutator being twice the cross product.</li>
 <li>The conservation of $\vec L^2$ is the conservation of the biquaternion norm $\langle\vec L\rangle_{\natural}$; the Poinsot construction is the intersection of a biquaternion-norm sphere with the energy ellipsoid, and the biquaternion-norm cone is the degenerate sphere.</li>
 </ol>
@@ -296,7 +296,7 @@ $$</p>
 <ul>
 <li>The orientation is a unit real quaternion (rotor) $\tilde u$, $\langle\tilde u\rangle_{\natural}=e_t$, acting by $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$; the body axes are $\tilde u\vec e_\imath\tilde u^{*}$. Unit quaternions form $SU(2)$, the double cover of $SO(3)$.</li>
 <li>The body- and space-frame angular velocities are $\vec\omega_b=+2c\,\tilde u^{\natural}d\tilde u/dr'_t$ and $\vec\omega_s=+2c\,d\tilde u/dr'_t\tilde u^{\natural}$, both real pure quaternions, related by $\vec\omega_s=\tilde u\vec\omega_b\tilde u^{*}$. The rotor equation is $d\tilde u/dr'_t=+\frac{1}{2c}\tilde u\vec\omega_b$.</li>
-<li>The kinetic energy and angular momentum are $T=-\frac12\mathrm{Sc}(\vec\omega_b\vec L_b)=\frac12\vec\omega_b\cdot I\vec\omega_b$ and $\vec L_b=I(\vec\omega_b)$; for a spherical top $T=\frac{\lambda}{2}\langle\vec\omega_b\rangle_{\natural}$.</li>
+<li>The kinetic energy and angular momentum are $T=-\frac12\mathrm{Sc}(\vec\omega_b\vec L_b)=\frac12\vec\omega_b\cdot I\vec\omega_b$ and $\vec L_b=I(\vec\omega_b)$; for a spherical top $T=\frac{\digamma_{\mathrm{inr}}}{2}\langle\vec\omega_b\rangle_{\natural}$.</li>
 <li>The body-frame Euler equation is $c\,d\vec L_{b}/dr'_t=\frac12[\vec L_b,\vec\omega_b]+\vec\tau$, equivalently $c\,I(d\vec\omega_{b}/dr'_t)+\frac12[\vec\omega_b,I(\vec\omega_b)]=\vec\tau$.</li>
 <li>The free symmetric top has $\omega_3$ constant, transverse angular velocity rotating at $\Omega=(I_3-I_\perp)\omega_3/I_\perp$, and regular precession in Euler angles; the general free top is Euler's elliptic problem.</li>
 <li>The Euler-angle rotor is $\\tilde u=\\exp(+\\frac\\theta_{\\mathrm{prc}}2\\vec e_z)\\exp(+\\frac\\theta2\\vec e_y)\\exp(+\\frac\\theta_{\\mathrm{eul}}2\\vec e_z)$, with body components $\omega_1=c\,d\theta/dr'_t\sin\theta_{\mathrm{eul}}-c\,d\theta_{\mathrm{prc}}/dr'_t\sin\theta\cos\theta_{\mathrm{eul}}$, $\omega_2=c\,d\theta_{\mathrm{prc}}/dr'_t\sin\theta\sin\theta_{\mathrm{eul}}+c\,d\theta/dr'_t\cos\theta_{\mathrm{eul}}$, $\omega_3=c\,d\theta_{\mathrm{prc}}/dr'_t\cos\theta+c\,d\theta_{\mathrm{eul}}/dr'_t$.</li>

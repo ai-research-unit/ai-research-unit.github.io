@@ -229,16 +229,16 @@ $$</p>
 <p>The diagonal corners see the scalar part and the axial component; the mixed corners see the two transverse components.</p>
 <p><strong>The Peirce functional is the diagonal coefficient.</strong></p>
 <p>$$
-\tilde\Pi_{\mathrm{id},+}\tilde Q\tilde\Pi_{\mathrm{id},+}=\lambda(\tilde Q)\,\tilde\Pi_{\mathrm{id},+},\qquad \lambda(\tilde Q)=Q_t-iQ_z .
+\tilde\Pi_{\mathrm{id},+}\tilde Q\tilde\Pi_{\mathrm{id},+}=\varsigma_{\mathrm{prc}}(\tilde Q)\,\tilde\Pi_{\mathrm{id},+},\qquad \varsigma_{\mathrm{prc}}(\tilde Q)=Q_t-iQ_z .
 $$</p>
 <p>It is complex-linear and it is not multiplicative.</p>
 <p>$$
-\lambda(\vec e_x\vec e_y)=\lambda(\vec e_z)=-i,\qquad \lambda(\vec e_x)\lambda(\vec e_y)=0 .
+\varsigma_{\mathrm{prc}}(\vec e_x\vec e_y)=\varsigma_{\mathrm{prc}}(\vec e_z)=-i,\qquad \varsigma_{\mathrm{prc}}(\vec e_x)\varsigma_{\mathrm{prc}}(\vec e_y)=0 .
 $$</p>
 <p>The failure is forced: a multiplicative functional onto $\mathbb{C}$ would have a nontrivial two-sided ideal as its kernel, and the algebra is simple.</p>
 <p>The product inside a corner ideal is governed by the functional alone.</p>
 <p>$$
-a\tilde\Pi_{\mathrm{id}}\cdot b\tilde\Pi_{\mathrm{id}}=\lambda(b)\,a\tilde\Pi_{\mathrm{id}},\qquad [a\tilde\Pi_{\mathrm{id}},b\tilde\Pi_{\mathrm{id}}]=\bigl(\lambda(b)a-\lambda(a)b\bigr)\tilde\Pi_{\mathrm{id}} .
+a\tilde\Pi_{\mathrm{id}}\cdot b\tilde\Pi_{\mathrm{id}}=\varsigma_{\mathrm{prc}}(b)\,a\tilde\Pi_{\mathrm{id}},\qquad [a\tilde\Pi_{\mathrm{id}},b\tilde\Pi_{\mathrm{id}}]=\bigl(\varsigma_{\mathrm{prc}}(b)a-\varsigma_{\mathrm{prc}}(a)b\bigr)\tilde\Pi_{\mathrm{id}} .
 $$</p>
 <h3 id="the-special-decomposition">The Special Decomposition</h3>
 <p><strong>Every element factorises relative to any root, with two intrinsic numbers.</strong></p>
@@ -332,12 +332,12 @@ $$</p>
 <h3 id="i3h-the-corner-algebra-is-degenerate-and-that-is-why-a-chirality-has-no-invertible">I.3.h — The Corner Algebra Is Degenerate, and That Is Why a Chirality Has No Invertible</h3>
 <p>Read: inside one ideal the product collapses to a scalar.</p>
 <p>$$
-a\tilde\Pi_{\mathrm{id}}\cdot b\tilde\Pi_{\mathrm{id}}=\lambda(b)\,a\tilde\Pi_{\mathrm{id}},\qquad \lambda(\tilde Q)=Q_t-iQ_z .
+a\tilde\Pi_{\mathrm{id}}\cdot b\tilde\Pi_{\mathrm{id}}=\varsigma_{\mathrm{prc}}(b)\,a\tilde\Pi_{\mathrm{id}},\qquad \varsigma_{\mathrm{prc}}(\tilde Q)=Q_t-iQ_z .
 $$</p>
 <p>So the ideal is not a subalgebra and has no invertible element of its own. The unit of the algebra does not lie in either ideal; the closest thing is the idempotent, which is invertible only for the elements already in the ideal's own corner. Composing two elements of one chirality does not produce a third element of that chirality in any general way: it produces a multiple of the first, with the multiple fixed by the second.</p>
-<p>The functional $\lambda$ is the trace-like object of the cut and it is not multiplicative. $\lambda(\vec e_x\vec e_y)=-i$ while $\lambda(\vec e_x)\lambda(\vec e_y)=0$. The failure is not an accident of the choice of axis: a multiplicative functional onto $\mathbb{C}$ would have a nontrivial two-sided ideal as its kernel, and the algebra has none.</p>
+<p>The functional $\varsigma_{\mathrm{prc}}$ is the trace-like object of the cut and it is not multiplicative. $\varsigma_{\mathrm{prc}}(\vec e_x\vec e_y)=-i$ while $\varsigma_{\mathrm{prc}}(\vec e_x)\varsigma_{\mathrm{prc}}(\vec e_y)=0$. The failure is not an accident of the choice of axis: a multiplicative functional onto $\mathbb{C}$ would have a nontrivial two-sided ideal as its kernel, and the algebra has none.</p>
 <p>The physical reading is that a chirality carries no multiplicative charge. A one-dimensional representation of the algebra would be the algebraic form of an additive label that multiplies when two objects compose. There is none, so no such label exists on a chirality; the algebra's simplicity forbids it. Whatever additive quantum numbers the physics carries are therefore not representations of this algebra on a line.</p>
-<p>The boundary. $\lambda$ is complex-linear and it is a legitimate linear functional; only multiplicativity fails. A computation may use it freely as a linear map, and must not use it as a homomorphism. The trace of the matrix image is the same kind of object, and it fails in the same way.</p>
+<p>The boundary. $\varsigma_{\mathrm{prc}}$ is complex-linear and it is a legitimate linear functional; only multiplicativity fails. A computation may use it freely as a linear map, and must not use it as a homomorphism. The trace of the matrix image is the same kind of object, and it fails in the same way.</p>
 <h3 id="i3i-the-gauge-of-a-peirce-basis-is-the-phase-of-the-state-vector">I.3.i — The Gauge of a Peirce Basis Is the Phase of the State Vector</h3>
 <p>Read: completing the cut to a basis needs one point in each mixed line, and the choice is free up to a complex parameter.</p>
 <p>$$
@@ -388,7 +388,7 @@ $$</p>
 <li>The algebra is simple, so every carrier is a minimal left ideal and the algebra itself is never a carrier.</li>
 <li>The axis is a parameter, not a datum: all minimal left ideals have one type and the unit real quaternions are transitive on them.</li>
 <li>The Peirce corners are four complex lines obeying $\mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}$, and they are graded by parity.</li>
-<li>The Peirce functional $\lambda(\tilde Q)=Q_t-iQ_z$ is linear and not multiplicative, and its failure is the simplicity of the algebra.</li>
+<li>The Peirce functional $\varsigma_{\mathrm{prc}}(\tilde Q)=Q_t-iQ_z$ is linear and not multiplicative, and its failure is the simplicity of the algebra.</li>
 <li>The whole Peirce basis lies on the isotropic cone.</li>
 <li>A Peirce basis is fixed up to a one-parameter complex gauge, and the gauge is the ray freedom of the state vector.</li>
 <li>Every element factorises as $\tilde U(re_t+s\tilde Z)\tilde V^{*}$ with $r,s$ its singular values, independent of the root.</li>
@@ -440,7 +440,7 @@ $$</p>
 <td>the Peirce basis at the axis</td>
 </tr>
 <tr>
-<td>$\lambda(\tilde Q)=Q_t-iQ_z$</td>
+<td>$\varsigma_{\mathrm{prc}}(\tilde Q)=Q_t-iQ_z$</td>
 <td>the Peirce functional</td>
 </tr>
 <tr>

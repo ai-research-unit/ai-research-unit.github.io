@@ -79,7 +79,7 @@
 <p>$$
 D_{\imath}\Phi=\Bigl(\partial_{\imath}+i\,g\,\tau_{a}W_{a,\imath}+i\,g_{\mathrm Y}Y_{\mathrm{hch}} B_{\imath}\Bigr)\Phi ,
 $$</p>
-<p>with $\tau_{a}=\sigma_{a}/2$ the generators in the doublet, so that $T_3$ has eigenvalues $\pm\tfrac12$ and the electric charge is $Q=T_3+Y$. The potential is $V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}$ with $\mu^{2}>0$ and $\lambda>0$. The measure is $\mathrm{d}^{4}x$; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi=\sum_{\imath}\varepsilon_{\imath}(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi$ carries the sign the mostly-minus literature carries; and the biquaternionic writing of the $U(1)$ connection is the Maxwell article's.</p>
+<p>with $\tau_{a}=\sigma_{a}/2$ the generators in the doublet, so that $T_3$ has eigenvalues $\pm\tfrac12$ and the electric charge is $Q=T_3+Y$. The potential is $V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\digamma_{\mathrm{qtc}}(\Phi^{\dagger}\Phi)^{2}$ with $\mu^{2}>0$ and $\digamma_{\mathrm{qtc}}>0$. The measure is $\mathrm{d}^{4}x$; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi=\sum_{\imath}\varepsilon_{\imath}(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi$ carries the sign the mostly-minus literature carries; and the biquaternionic writing of the $U(1)$ connection is the Maxwell article's.</p>
 <p>Two conventions, both settled by the corpus. The hypercharge here is $Y$, not the reference tables' $Y_W=2Y$: the corpus writes $Q=T_3+Y$ with $Y_{\mathrm{hch}}=+\tfrac12$, as <a href="the-electroweak-gauge-group-and-the-hypercharge-assignment.html">The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$</a> fixes it and as <a href="electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html">Electroweak Symmetry Breaking</a> uses it. Only the product $g_{\mathrm Y}Y$ enters any display, so a reader who arrives with $Y_W$ must halve every hypercharge and change no physical statement. The sign of the coupling in $D_{\imath}$ is likewise the corpus's, $+ig$; the opposite choice, $-ig$, is the same theory with $g\mapsto-g$, and every mass below is quadratic in $g$ and unchanged.</p>
 <p><strong>One convention is a warning.</strong> The corpus's biquaternion algebra carries the $U(1)$ connection exactly, and it carries the $SU(2)$ group exactly too: the compact factor is $SU(2)$ itself, the unit real quaternions $\mathrm{Spin}(3)=S^{3}$, so the connection the algebra writes is the one electroweak theory needs. What it does not carry is the way electroweak theory uses that group — a doublet chosen independently of the spin, and a chiral action on one letter. The electroweak articles state both halves. So the displays below are in the component dictionary, which is exact, and the biquaternionic translation is claimed only where the electroweak articles claim it.</p>
 <h2 id="the-action-in-element-form">The Action in Element Form</h2>
@@ -89,7 +89,7 @@ S=\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac14 W_{a,\imath\jmath}W_{a,\imath\jmath}-\tf
 $$</p>
 <p>with $\mathcal{L}_{\mathrm{matter}}$ the fermion kinetic terms with their covariant derivatives and the Yukawa couplings, which this article names and does not expand.</p>
 <p>Why each term is what it is. The two gauge terms are the Yang–Mills and Maxwell terms: quadratic in the field strengths, gauge invariant, and fixed in normalisation by the same requirement that fixes the Maxwell term — the charge that appears in the covariant derivative must be the charge that appears in the current. The scalar term is the Klein–Gordon kinetic term with the derivative covariantised, which is the same minimal-coupling step the coupled scalar article performs, applied twice because the group has two factors. The potential is the only term with a negative mass squared, and it is the term that decides the phase.</p>
-<p>The two phases, and why the same action has them. The potential's minimum is at $\Phi^{\dagger}\Phi=\mu^{2}/2\lambda\equiv v^{2}/2$, a circle of minima and not a point. If $\mu^{2}<0$ the minimum is at $\Phi=0$ and the action's ground state is symmetric; if $\mu^{2}>0$ it is not. The action does not change between the phases; the vacuum does. That is the classical content of "spontaneous breaking", and the corpus can state it exactly.</p>
+<p>The two phases, and why the same action has them. The potential's minimum is at $\Phi^{\dagger}\Phi=\mu^{2}/2\digamma_{\mathrm{qtc}}\equiv v^{2}/2$, a circle of minima and not a point. If $\mu^{2}<0$ the minimum is at $\Phi=0$ and the action's ground state is symmetric; if $\mu^{2}>0$ it is not. The action does not change between the phases; the vacuum does. That is the classical content of "spontaneous breaking", and the corpus can state it exactly.</p>
 <p>The broken phase, written in the unitary chart. Choose the vacuum $\Phi=\frac{1}{\sqrt{2}}\binom{0}{v+h}$ with $h$ the physical scalar. Then the scalar's gradient term becomes</p>
 <p>$$
 (D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi\supset\frac{v^{2}}{8}\Bigl[g^{2}\bigl((W_{1,\imath})^{2}+(W_{2,\imath})^{2}\bigr)+(gW_{3,\imath}-g_{\mathrm Y}B_{\imath})^{2}\Bigr]+\frac{g^{2}v}{2}h\,W^{+}W^{-}+\cdots ,
@@ -140,7 +140,7 @@ $$</p>
 <p>$$
 S=\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac14W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14B_{\imath\jmath}B_{\imath\jmath}+(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi-V(\Phi)\Bigr\},
 \qquad
-V=-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}.
+V=-\mu^{2}\Phi^{\dagger}\Phi+\digamma_{\mathrm{qtc}}(\Phi^{\dagger}\Phi)^{2}.
 $$</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -173,10 +173,10 @@ $$</p>
 </tr>
 <tr>
 <td>$V(\Phi)$</td>
-<td>$-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}$</td>
+<td>$-\mu^{2}\Phi^{\dagger}\Phi+\digamma_{\mathrm{qtc}}(\Phi^{\dagger}\Phi)^{2}$</td>
 </tr>
 <tr>
-<td>$v=\sqrt{\mu^{2}/\lambda}$</td>
+<td>$v=\sqrt{\mu^{2}/\digamma_{\mathrm{qtc}}}$</td>
 <td>Vacuum expectation value</td>
 </tr>
 <tr>

@@ -205,13 +205,13 @@ S=\int d^4r\, e\Bigl[\frac{1}{2\kappa}\exp(a){}_{\imath} \exp(b){}_{\jmath} \mat
 $$
 with the frame slot of $C_a$ written low and the weight $\varepsilon_a$ doing what the source's raising did, and with the curvature pair written world indices first, in the corpus's order, and it adds the constraint Lagrangian
 $$
-\mathcal{L}_{\text{constr}} = \lambda_{\imath a}\bigl(\exp(a){}_{\imath} - \exp(a){}_{\imath}[\tilde{Ξ}]\bigr) + \Lambda_{\imath ab}\bigl(N_{\mathrm{cont},\imath ab} - N_{\mathrm{cont},\imath ab}[\tilde{Ξ}]\bigr) ,
+\mathcal{L}_{\text{constr}} = \digamma_{\mathrm{lgr},\imath a}\bigl(\exp(a){}_{\imath} - \exp(a){}_{\imath}[\tilde{Ξ}]\bigr) + \Lambda_{\imath ab}\bigl(N_{\mathrm{cont},\imath ab} - N_{\mathrm{cont},\imath ab}[\tilde{Ξ}]\bigr) ,
 $$
 with the composite expressions of Section 4 on the right, and with the coefficient $c_A$ renamed from the source's $C_A$ so that it does not collide with the frame actions $C_{\imath}$. One remark on the printed form belongs before the variation. The weight on the frame index does what the metric's raising did in the source, $i\varepsilon_a C_a$, so the kinetic term carries a minus sign on the three spatial derivatives and none on the time derivative.</p>
 <p>Variation with respect to the multipliers returns $e=e[\tilde{Ξ}]$ and $M_{\mathrm{map}}=M_{\mathrm{map}}[\tilde{Ξ}]$, which the source describes as enforcing "our composite ansätze once and for all". But those equations are the <em>definitions</em> of $e[\tilde{Ξ}]$ and $K[\tilde{Ξ}]$; a "constraint" that repeats a definition removes no degree of freedom, and substituting it back into the action replaces the tetrad by a first derivative of the field, making the gravitational term higher order in the field.</p>
 <p><strong>The Dirac equation is not derived from the action either.</strong> Section 5.5 varies with respect to the adjoint, $\tilde{Ξ}^{\dagger}$, writes the constraint's contribution as a sum over the sixteen graded products, $\Gamma_A$ built from the $G_{\imath}$ and read as arrays,
 $$
-Ζ[\lambda,\Lambda](\tilde{Ξ})=\sum_A c_A\,\mathrm{Tr}_{\mathbb H}\bigl\langle\tilde{Ξ},\,\Gamma_A\partial \tilde{Ξ}/\partial x_{\imath}\bigr\rangle\,\Gamma_A\partial \tilde{Ξ}/\partial x_{\imath} ,
+Ζ[\upsilon,\Lambda](\tilde{Ξ})=\sum_A c_A\,\mathrm{Tr}_{\mathbb H}\bigl\langle\tilde{Ξ},\,\Gamma_A\partial \tilde{Ξ}/\partial x_{\imath}\bigr\rangle\,\Gamma_A\partial \tilde{Ξ}/\partial x_{\imath} ,
 $$
 and declares it zero "by orthogonality". Orthogonality does not deliver that: a sum of orthogonal basis elements vanishes only when every coefficient vanishes, and each coefficient vanishing is the statement to be proved. The basis invoked is the sixteen-element one, whose four-element counterpart failed at Eq. (2). Since the Dirac kinetic term is already written into the action by hand, the equation that comes out is the equation that went in; the step's only real task is to show that the constraint term does not spoil it, and that is what the non sequitur leaves undone.</p>
 <h3 id="the-two-dirac-equations">The Two Dirac Equations</h3>
@@ -244,9 +244,9 @@ in which the gradient is an element acting by left multiplication on the algebra
 <p>The difference is one line, and it is a difference in side. The letter of an element is the value of the chirality action on it, written $L$ for the minus value and $R$ for the plus value, and two facts carry every display below: a product takes the letter of its right factor, and left multiplication keeps the letter. Right multiplication by $e_t$ and by $\vec e_z$ therefore keeps the letter, right multiplication by $\vec e_x$ and by $\vec e_y$ exchanges the two, and a left multiplier never changes it. Every term of the source's kinetic operator carries a right multiplier — $C_t$ by $\vec e_x$, $C_\imath$ by $\vec e_y$ — so the whole kinetic term exchanges $L$ and $R$, while the mass term $\nu_m\tilde{Ξ}$ is left multiplication by a constant and keeps the letter. In the corpus's pair the gradient $\tilde\nabla_\Phi$ is left multiplication and keeps the letter, while the mass is the off-diagonal pairing, which is the exchange: the gradient preserves and the mass is the flip. Neither display is a rewriting of the other: they differ in the operator, in the field it acts on and in the letter, and the two forms are kept side by side in the corpus's own Dirac article for exactly this reason.</p>
 <p><strong>The Einstein equation does not follow.</strong> Variation with respect to the tetrad gives, in the source's own notation,
 $$
-G_{\imath a}=2\kappa\bigl(T_{\imath a}-\lambda_{\imath a}\bigr) ,
+G_{\imath a}=2\kappa\bigl(T_{\imath a}-\digamma_{\mathrm{lgr},\imath a}\bigr) ,
 $$
-a coefficient $2\kappa=16\pi G$ where the printed target $G_{\imath\jmath}=8\pi G T_{\imath\jmath}$ needs $\kappa=8\pi G$. The two agree only if $\lambda_{\imath a}=\tfrac12T_{\imath a}$, a specific value and not a vanishing one — or if the stress tensor is defined here with one factor of two fewer than the target uses. The source says that "when constraints hold, $\lambda_{\imath a}$ becomes auxiliary and we recover $G_{\imath\jmath}=8\pi G T_{\imath\jmath}$", but variation with respect to the multiplier returns the definition of the composite and fixes nothing about $\lambda$. Einstein's equation therefore does not follow from the action as printed.</p>
+a coefficient $2\kappa=16\pi G$ where the printed target $G_{\imath\jmath}=8\pi G T_{\imath\jmath}$ needs $\kappa=8\pi G$. The two agree only if $\digamma_{\mathrm{lgr},\imath a}=\tfrac12T_{\imath a}$, a specific value and not a vanishing one — or if the stress tensor is defined here with one factor of two fewer than the target uses. The source says that "when constraints hold, $\digamma_{\mathrm{lgr},\imath a}$ becomes auxiliary and we recover $G_{\imath\jmath}=8\pi G T_{\imath\jmath}$", but variation with respect to the multiplier returns the definition of the composite and fixes nothing about $\digamma_{\mathrm{lgr}}$. Einstein's equation therefore does not follow from the action as printed.</p>
 <h2 id="the-teleparallel-sector">The Teleparallel Sector</h2>
 <p>Section 9.1 adds a Lagrange multiplier $\mathrm{Sd}_{\imath\jmath ab}$ enforcing $\mathrm{Riem}_{\imath\jmath ab}(\omega)=0$, so that the geometry is teleparallel, and identifies the Weitzenböck gauge $\omega_{\imath ab}=0$ with the contorsion given by minus the Levi-Civita spin connection of the tetrad, $N_{\mathrm{cont},\imath ab}=-\omega_{\imath ab}(e)$. Both statements of geometry are correct and standard: the Weitzenböck connection
 $$
@@ -379,7 +379,7 @@ with $\varepsilon_t=+1$ and $\varepsilon_\imath=-1$ the sign vector, all indices
 <p>The source's factor-2 relation is therefore obtained only after antisymmetrising, and the antisymmetrisation is what the derivation omits. For three distinct indices, where $C_{\imath\jmath}=C_{\imath} C_{\jmath}$, the left side is the corpus's spin density $\Sigma_{k\imath\jmath}$, and the corpus's torsion–spin relation is $T_{k\imath\jmath}=\kappa\,\Sigma_{k\imath\jmath}$ — the Einstein–Cartan equation, verified in <em>Torsion, Contorsion and the Spin Connection in Biquaternionic Form</em> — so on its solutions
 $$
 \bigl\langle\tilde{Ξ},C_\imath\,C_{\imath\jmath}\,\tilde{Ξ}\bigr\rangle=\Sigma_{k\imath\jmath}=\kappa^{-1}T_{k\imath\jmath} ,
-\qquad \lambda,\imath,\jmath\ \text{distinct}.
+\qquad \upsilon,\imath,\jmath\ \text{distinct}.
 $$
 The source's display has $2\kappa$ multiplying the torsion instead of $\kappa^{-1}$, so the printed constant is the reciprocal of the right one up to the factor $2$: the ratio of the two is $2\kappa^{2}$, which no choice of sign of $\kappa$ repairs. On repeated indices the left side is nonzero where the epsilon channel vanishes, so the display is not an identity either way.</p>
 <p>The identity proper needs no torsion at all, and it is the one recorded for the corpus,
@@ -518,7 +518,7 @@ with $\delta s_z$ the difference of the two spin projections, B minus A, and $Ξ
 <td>the source's teleparallel Lagrange multiplier</td>
 </tr>
 <tr>
-<td>$\lambda_{\imath a}$, $\Lambda_{\imath ab}$</td>
+<td>$\digamma_{\mathrm{lgr},\imath a}$, $\Lambda_{\imath ab}$</td>
 <td>the source's Lagrange multipliers</td>
 </tr>
 <tr>

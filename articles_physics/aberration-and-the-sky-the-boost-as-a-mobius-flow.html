@@ -126,14 +126,14 @@ $$</p>
 $$</p>
 <p>which is the aberration formula. The computation is verified numerically in the block's model at three angles with $\beta=0.6$: $\theta=0.2$ gives $\theta'=0.100250626$, $\theta=1$ gives $\theta'=0.533293254$, $\theta=2.5$ gives $\theta'=1.968525471$, each matching the formula to nine digits.</p>
 <h3 id="why-the-formula-is-a-projective-one">Why the Formula Is a Projective One</h3>
-<p>The right-hand side is the restriction to the diagonal of a Möbius transformation: it is the projection of the Möbius map $z\mapsto\lambda z$ onto the axis of symmetry, with $\lambda=\sqrt{(1+\beta)/(1-\beta)}$. So aberration is not special; it is one real slice of a fractional linear map.</p>
+<p>The right-hand side is the restriction to the diagonal of a Möbius transformation: it is the projection of the Möbius map $z\mapsto\digamma_{\mathrm{mlt}} z$ onto the axis of symmetry, with $\digamma_{\mathrm{mlt}}=\sqrt{(1+\beta)/(1-\beta)}$. So aberration is not special; it is one real slice of a fractional linear map.</p>
 <h2 id="the-boost-as-a-mobius-flow">The Boost as a Möbius Flow</h2>
 <h3 id="the-map">The Map</h3>
 <p>In the coordinate $z=\cot(\theta/2)e^{i\theta_{\mathrm{azm}}}$ a boost along $z$ is</p>
 <p>$$
-z\longmapsto\lambda z,
+z\longmapsto\digamma_{\mathrm{mlt}} z,
 \qquad
-\lambda=e^{\theta_{\mathrm{rpd}}}=\sqrt{\frac{1+\beta}{1-\beta}} .
+\digamma_{\mathrm{mlt}}=e^{\theta_{\mathrm{rpd}}}=\sqrt{\frac{1+\beta}{1-\beta}} .
 $$</p>
 <p>The verification is exact: at $\beta=0.6$ the ratio $z'/z$ is $2.000000000$ for three different sky points, and $\sqrt{(1+\beta)/(1-\beta)}=2$ for that velocity.</p>
 <h3 id="the-flow">The Flow</h3>
@@ -149,13 +149,13 @@ $$</p>
 <p>A rotation is also a one-parameter group of Möbius maps, but its orbits are closed circles and its parameter is periodic. The boost's orbits are open arcs and its parameter is not periodic: $s\to\infty$ takes every star to the forward pole and $s\to-\infty$ to the backward one. So the two kinds of frame transformation are distinguished on the sky by the topology of their orbits, which is the fixed-point classification of <em>The Four Kinds of Frame Transformation</em> read on the sphere.</p>
 <h2 id="the-fixed-direction">The Fixed Direction</h2>
 <h3 id="the-two-fixed-points">The Two Fixed Points</h3>
-<p>The Möbius map $z\mapsto\lambda z$ fixes $z=0$ and $z=\infty$: the backward and the forward direction of the boost axis. They are the two points where the axis meets the sky, and they are the only directions whose aberration is zero.</p>
+<p>The Möbius map $z\mapsto\digamma_{\mathrm{mlt}} z$ fixes $z=0$ and $z=\infty$: the backward and the forward direction of the boost axis. They are the two points where the axis meets the sky, and they are the only directions whose aberration is zero.</p>
 <h3 id="the-flow-between-them">The Flow Between Them</h3>
 <p>Every other direction moves from the backward pole toward the forward one as the rapidity grows. The star exactly at the forward pole stays there, and the star exactly at the backward pole stays there, and every other star traverses the open arc between them.</p>
 <h3 id="why-two-and-not-one">Why Two and Not One</h3>
 <p>A boost is a hyperbolic element, and a hyperbolic Möbius transformation has exactly two fixed points. A null rotation — the parabolic case — has one, and a rotation has two as well, with closed orbits. So the fixed-point count alone does not separate rotation from boost; the orbit topology does, and the sky shows both facts at once.</p>
 <h3 id="the-stability">The Stability</h3>
-<p>The forward pole is attracting and the backward pole repelling, for $\lambda>1$. So the flow has a stable and an unstable fixed point, and the stable one is the direction the observer is moving toward. That is the geometric content of "the stars crowd forward".</p>
+<p>The forward pole is attracting and the backward pole repelling, for $\digamma_{\mathrm{mlt}}>1$. So the flow has a stable and an unstable fixed point, and the stable one is the direction the observer is moving toward. That is the geometric content of "the stars crowd forward".</p>
 <h3 id="the-three-kinds-on-the-sky">The Three Kinds on the Sky</h3>
 <p>A Möbius map is classified by its fixed points and by its multiplier, and the three classes are exactly the three kinds of frame change read on the sky.</p>
 <div class="table-scroll"><table>
@@ -182,13 +182,13 @@ $$</p>
 </tr>
 <tr>
 <td>loxodromic</td>
-<td>$z\mapsto\lambda z$, $\lvert\lambda\rvert\neq1$</td>
+<td>$z\mapsto\digamma_{\mathrm{mlt}} z$, $\lvert\digamma_{\mathrm{mlt}}\rvert\neq1$</td>
 <td>two, the axis directions</td>
 <td>a boost times a rotation about the axis</td>
 </tr>
 </tbody>
 </table></div>
-<p>The multiplier is the frame's spectrum read on the sky: $\lvert\lambda\rvert=e^{\theta_{\mathrm{rpd}}}$ and $\arg\lambda=\theta_{\mathrm{axr}}$. So a boost is the loxodromic case with $\lambda$ real and positive, a rotation is the elliptic case with $\lvert\lambda\rvert=1$, and the parabolic case is the one whose multiplier is $1$ with a single fixed point — the unipotent element that the exponential chart reaches only in a limit. A pure boost therefore sits in the loxodromic class, and the word "hyperbolic" used above is the name of the real-positive subcase.</p>
+<p>The multiplier is the frame's spectrum read on the sky: $\lvert\digamma_{\mathrm{mlt}}\rvert=e^{\theta_{\mathrm{rpd}}}$ and $\arg\digamma_{\mathrm{mlt}}=\theta_{\mathrm{axr}}$. So a boost is the loxodromic case with $\digamma_{\mathrm{mlt}}$ real and positive, a rotation is the elliptic case with $\lvert\digamma_{\mathrm{mlt}}\rvert=1$, and the parabolic case is the one whose multiplier is $1$ with a single fixed point — the unipotent element that the exponential chart reaches only in a limit. A pure boost therefore sits in the loxodromic class, and the word "hyperbolic" used above is the name of the real-positive subcase.</p>
 <h3 id="the-cross-ratio-check">The Cross-Ratio Check</h3>
 <p>The invariant that decides whether a map of the sky is a symmetry is the cross-ratio. For four sky points with coordinates $z_1,z_2,z_3,z_4$,</p>
 <p>$$
@@ -239,7 +239,7 @@ $$</p>
 <h3 id="the-telescopes">The Telescopes</h3>
 <p>The aberration of starlight is a $\beta=10^{-4}$ effect for the Earth's orbital motion, of order $20$ arcseconds, and it was measured in 1728. The relativistic formula's deviations from the classical one are of order $\beta^{2}\sim10^{-8}$ for the Earth and are measured for particles, not for stars.</p>
 <h2 id="summary">Summary</h2>
-<p>The sky is the sphere of null directions, coordinatised by $z=\cot(\theta/2)e^{i\theta_{\mathrm{azm}}}$, and the Lorentz group acts on it by Möbius maps. A boost along the axis acts by $z\mapsto\lambda z$ with $\lambda=\sqrt{(1+\beta)/(1-\beta)}$, verified exactly; it is a flow with two fixed points at the poles of the axis, attracting forward and repelling backward, whose orbits are the meridians. The aberration formula $\cos\theta'=(\cos\theta+\beta)/(1+\beta\cos\theta)$ follows from the congruence action on a null element and is verified at three angles. The map is conformal, with the metric rescaled by $\Omega^{2}$ and $\Omega=\sqrt{1-\beta^{2}}/(1+\beta\cos\theta)$, verified to be isotropic. In the small-velocity limit the displacement is $\beta\sin\theta$; in the large-velocity limit the whole sky crowds into a cap around the forward direction, and only the two poles stay put.</p>
+<p>The sky is the sphere of null directions, coordinatised by $z=\cot(\theta/2)e^{i\theta_{\mathrm{azm}}}$, and the Lorentz group acts on it by Möbius maps. A boost along the axis acts by $z\mapsto\digamma_{\mathrm{mlt}} z$ with $\digamma_{\mathrm{mlt}}=\sqrt{(1+\beta)/(1-\beta)}$, verified exactly; it is a flow with two fixed points at the poles of the axis, attracting forward and repelling backward, whose orbits are the meridians. The aberration formula $\cos\theta'=(\cos\theta+\beta)/(1+\beta\cos\theta)$ follows from the congruence action on a null element and is verified at three angles. The map is conformal, with the metric rescaled by $\Omega^{2}$ and $\Omega=\sqrt{1-\beta^{2}}/(1+\beta\cos\theta)$, verified to be isotropic. In the small-velocity limit the displacement is $\beta\sin\theta$; in the large-velocity limit the whole sky crowds into a cap around the forward direction, and only the two poles stay put.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -266,7 +266,7 @@ $$</p>
 <td>rapidity</td>
 </tr>
 <tr>
-<td>$\lambda=e^{\theta_{\mathrm{rpd}}}$</td>
+<td>$\digamma_{\mathrm{mlt}}=e^{\theta_{\mathrm{rpd}}}$</td>
 <td>the Möbius dilation</td>
 </tr>
 <tr>
