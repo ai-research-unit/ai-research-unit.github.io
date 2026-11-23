@@ -93,11 +93,11 @@ $$</p>
 $$</p>
 <p>Write $B^2=\vec Q\cdot\vec Q$. The two eigenvalues of the element are</p>
 <p>$$
-\lambda_\pm=Q_t\pm iB,
+\eta_{\pm}=Q_t\pm iB,
 $$</p>
 <p>and the two numbers are their sum and their product:</p>
 <p>$$
-\lambda_++\lambda_-=2\,\mathrm{Sc}\tilde Q,\qquad \lambda_+\lambda_-=\langle\tilde Q\rangle_\natural .
+\eta_{+}+\eta_{-}=2\,\mathrm{Sc}\tilde Q,\qquad \eta_{+}\eta_{-}=\langle\tilde Q\rangle_\natural .
 $$</p>
 <p>Twice the scalar part is therefore the <strong>sum</strong> of the spectrum and the norm is the <strong>product</strong>. That is all the algebra the split needs, and both identities hold on a hundred random elements to machine precision.</p>
 <div class="table-scroll"><table>
@@ -111,8 +111,8 @@ $$</p>
 <tbody>
 <tr>
 <td>operation on the spectrum</td>
-<td>sum $\lambda_++\lambda_-$</td>
-<td>product $\lambda_+\lambda_-$</td>
+<td>sum $\eta_{+}+\eta_{-}$</td>
+<td>product $\eta_{+}\eta_{-}$</td>
 </tr>
 <tr>
 <td>linearity</td>
@@ -234,11 +234,11 @@ $$</p>
 <p>The first identity is cyclicity of the scalar part, $2\,\mathrm{Sc}(AB)=2\,\mathrm{Sc}(BA)$ with $A=\tilde U$ and $B=\tilde X\tilde U^{*}$. The second is multiplicativity of the quaternionic norm, $\langle AB\rangle_\natural=\langle A\rangle_\natural\langle B\rangle_\natural$, together with $\lvert\langle\tilde U\rangle_\natural\rvert^{2}=1$, which follows from $\tilde U\tilde U^{*}=e_t$. Both were checked on a hundred random pairs to $2.7\times10^{-15}$ and $7.1\times10^{-15}$.</p>
 <p>The statement is about a conjugation, so it applies to every element of the algebra and needs no sector, no physical object and no dynamics. Everything the article says about conservation is an instance of it.</p>
 <h3 id="why-a-similarity-fixes-both-numbers">Why a Similarity Fixes Both Numbers</h3>
-<p>The two numbers the algebra attaches to an element are the two symmetric functions of its spectrum. Writing $\tilde Q=Q_t e_t+\vec Q$ and $B^{2}=\vec Q\cdot\vec Q$, the eigenvalues are $\lambda_\pm=Q_t\pm iB$, and</p>
+<p>The two numbers the algebra attaches to an element are the two symmetric functions of its spectrum. Writing $\tilde Q=Q_t e_t+\vec Q$ and $B^{2}=\vec Q\cdot\vec Q$, the eigenvalues are $\eta_{\pm}=Q_t\pm iB$, and</p>
 <p>$$
-2\,\mathrm{Sc}\tilde Q=\lambda_++\lambda_-=2Q_t,
+2\,\mathrm{Sc}\tilde Q=\eta_{+}+\eta_{-}=2Q_t,
 \qquad
-\langle\tilde Q\rangle_\natural=\lambda_+\lambda_-=\det\mathsf M_2(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2},
+\langle\tilde Q\rangle_\natural=\eta_{+}\eta_{-}=\det\mathsf M_2(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2},
 $$</p>
 <p>checked on a hundred random elements to $4.4\times10^{-16}$ and $8.2\times10^{-15}$. A conjugation is a similarity, a similarity has the same spectrum, and the two symmetric functions are therefore fixed. The identity is not a coincidence of two formulas: it is the statement that $\tilde U\tilde X\tilde U^{*}$ and $\tilde X$ are the same operator in two bases.</p>
 <p>That is why one identity carries four conservation laws. Conservation in this framework is never a separate postulate about a separate quantity; it is the invariance of a symmetric function of a spectrum under the group action that leaves the spectrum alone.</p>
@@ -511,7 +511,7 @@ $$</p>
 <p>Energy is the scalar part of the four-momentum, up to the factor $-ic$. The factor is bookkeeping: the scalar part is the coefficient of $e_t$, and that coefficient is imaginary for a material element. The statement is exact and was checked on a hundred random four-momenta. It is the algebraic content of "energy is the time component of the four-momentum": the time component is the scalar slot, and the doubled scalar part is that slot read twice.</p>
 <p>The eigenvalues make the same statement without the factor. They are</p>
 <p>$$
-\lambda_\pm=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right),
+\eta_{\pm}=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right),
 $$</p>
 <p>the two light-cone combinations. Their sum is $2iE/c$ and their difference is $2i\lvert\vec p\rvert$. Energy is the sum of the two combinations and momentum is their difference, up to the same factor.</p>
 <h3 id="mass-is-the-norm">Mass Is the Norm</h3>
@@ -521,13 +521,13 @@ $$</p>
 $$</p>
 <p>Mass is the norm, and the mass shell is the level set of the norm. The eigenvalues are the two branches of the square root,</p>
 <p>$$
-\lambda_\pm=imc\,e^{\pm\theta_{\mathrm{rpd}}},\qquad
+\eta_{\pm}=imc\,e^{\pm\theta_{\mathrm{rpd}}},\qquad
 \cosh\theta_{\mathrm{rpd}}=\frac{E}{mc^{2}},\qquad
 \sinh\theta_{\mathrm{rpd}}=\frac{\lvert\vec p\rvert}{mc},
 $$</p>
 <p>and their product is $-m^2c^2$. The product is frame-independent; the two factors are not, and their dependence is the Doppler rescaling. The ratio is the squared Doppler factor,</p>
 <p>$$
-\frac{\lambda_+}{\lambda_-}=e^{2\theta_{\mathrm{rpd}}}.
+\frac{\eta_{+}}{\eta_{-}}=e^{2\theta_{\mathrm{rpd}}}.
 $$</p>
 <p>This is the corpus's spectral reading of a four-vector, and the article only recalls it: mass is the product, energy the sum, momentum the difference, rapidity the ratio.</p>
 <h3 id="the-split-is-a-factorisation">The Split Is a Factorisation</h3>

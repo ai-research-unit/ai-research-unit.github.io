@@ -132,11 +132,11 @@ Q[\rho_1+\rho_2+\text{cross}]\ne Q[\rho_1]+Q[\rho_2],
 $$</p>
 <p>and the failure is not a small correction. The check is direct. On a grid of one hundred events, a single mode gave $\max\lvert Q\rvert=4.2\times10^{-16}$ and a density spread of $6.7\times10^{-16}$; a two-mode superposition at the same wave numbers gave $\max\lvert Q\rvert=4.36$ and a density spread of $3.20$. The first line is floating-point zero and the second is the interference term's.</p>
 <p>The precise statement is that $Q$ is homogeneous of degree zero in the amplitude and non-additive in the density. A common rescaling of all amplitudes leaves $Q$ unchanged, because $Q$ depends on $\ln\rho_{\mathrm{num}}$ and a constant addend to the logarithm differentiates away. Setting one amplitude to zero does not continuously reduce $Q$ to the other's: it reduces $Q$ to zero or to the other's value, with a discontinuous dependence on the amplitudes at the boundary. So $Q$ is a property of the set of amplitudes and not of any one of them, which is what the word "interference" states in one word.</p>
-<p>The size of what the interference adds is a number, and it is quadratic in the separation. Take two modes with $\rho_{\mathrm{num}}=1+\eta^{2}+2\eta\cos(\Delta k\,x)$, so that $\eta$ is the second amplitude relative to the first and $\Delta k$ their separation. Then, the mean being over a period,</p>
+<p>The size of what the interference adds is a number, and it is quadratic in the separation. Take two modes with $\rho_{\mathrm{num}}=1+\digamma_{\mathrm{amp}}^{2}+2\digamma_{\mathrm{amp}}\cos(\Delta k\,x)$, so that $\digamma_{\mathrm{amp}}$ is the second amplitude relative to the first and $\Delta k$ their separation. Then, the mean being over a period,</p>
 <p>$$
-\Bigl\langle\frac{\vec\nabla_\Phi^{2}\varrho}{\varrho}\Bigr\rangle=\tfrac12\eta^{2}(\Delta k)^{2}+O(\eta^{4}).
+\Bigl\langle\frac{\vec\nabla_\Phi^{2}\varrho}{\varrho}\Bigr\rangle=\tfrac12\digamma_{\mathrm{amp}}^{2}(\Delta k)^{2}+O(\digamma_{\mathrm{amp}}^{4}).
 $$</p>
-<p>The two powers are the content of the formula: the correction is second order in the amplitude that was added and second order in the label separation, which is what a correlation supported at a difference of labels has to be. Checked with a one-hundred-node quadrature: $\eta=0.1$ with $\Delta k=2$ gave $0.02020202$ against the predicted $0.02000000$, and $\eta=0.01$ with $\Delta k=1$ gave $0.00005000$ against $0.00005000$. The closed form is $\tfrac12(\Delta k)^{2}\eta^{2}/(1-\eta^{2})$, of which the displayed line is the first term; at $\eta=0.2$, $\Delta k=1$ it gives $0.020833333$ and the quadrature agrees to nine digits.</p>
+<p>The two powers are the content of the formula: the correction is second order in the amplitude that was added and second order in the label separation, which is what a correlation supported at a difference of labels has to be. Checked with a one-hundred-node quadrature: $\digamma_{\mathrm{amp}}=0.1$ with $\Delta k=2$ gave $0.02020202$ against the predicted $0.02000000$, and $\digamma_{\mathrm{amp}}=0.01$ with $\Delta k=1$ gave $0.00005000$ against $0.00005000$. The closed form is $\tfrac12(\Delta k)^{2}\digamma_{\mathrm{amp}}^{2}/(1-\digamma_{\mathrm{amp}}^{2})$, of which the displayed line is the first term; at $\digamma_{\mathrm{amp}}=0.2$, $\Delta k=1$ it gives $0.020833333$ and the quadrature agrees to nine digits.</p>
 <p>The stated objection, and the answer. The objection is that the decomposition into modes is a choice of basis, so a statement about "interference" is a statement about the basis and not about the fluid. The objection is correct about the basis and it does not touch the result: the basis is the basis of the plain waves, the plain waves are what a mode is, and the result is that in that basis the quantum layer has no diagonal part. The invariance of the statement is the invariance of the Fourier support: a single point of support cannot carry a functional of the density's curvature, because a single point has a constant density, and that is a fact about points and not about bases.</p>
 <h3 id="three-degrees-three-behaviours">Three Degrees, Three Behaviours</h3>
 <p>Every object in the block scales with one of three powers of the field, and the power decides whether a transform can see it. Under $\tilde\Xi\to\lambda\tilde\Xi$:</p>
@@ -279,8 +279,8 @@ $$</p>
 <td>The interference term of a superposition</td>
 </tr>
 <tr>
-<td>$\eta$, $\Delta k$</td>
-<td>The second amplitude relative to the first, and the separation of the two labels; the mean curvature they add is $\tfrac12\eta^{2}(\Delta k)^{2}$</td>
+<td>$\digamma_{\mathrm{amp}}$, $\Delta k$</td>
+<td>The second amplitude relative to the first, and the separation of the two labels; the mean curvature they add is $\tfrac12\digamma_{\mathrm{amp}}^{2}(\Delta k)^{2}$</td>
 </tr>
 <tr>
 <td>$\varepsilon=\pm1$</td>

@@ -180,7 +180,7 @@ $$</p>
 <p>verified for random $\vec a, \vec d$ with residuals below $10^{-13}$ and vanishing trace. The quadrupole is thus built from <strong>products of two vectors</strong>, $d_i a_j + d_j a_i$; the symmetric traceless part of such a product is exactly what the quaternion product of two vectors discards. Each individual dipole is a vector and an algebra element, and the quadrupole is a bilinear object over that same vector part, living in $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$ rather than in $\mathbb{B}$. The two-dipole picture is the physical face of the algebraic statement of the preceding article: the algebra can hold each of the two dipoles separately, and it cannot hold the quadrupole that their product forms. Whether the pole strength $ϙ_p$ is a charge, as in the electromagnetic setting of the preceding article, or a mass, as in the gravitational setting used here, is immaterial to the decomposition, since only the kernel enters it.</p>
 <h2 id="the-rotating-ellipsoid-and-the-math180-oscillation">The Rotating Ellipsoid and the $2\Omega$ Oscillation</h2>
 <h3 id="body-frame-and-lab-frame">Body Frame and Lab Frame</h3>
-<p>A rotating non-axisymmetric body is a second and distinct source of an oscillating quadrupole. Let the body frame carry the constant quadrupole $\mathcal{Q}^{(b)} = \mathrm{diag}(\lambda_1, \lambda_2, \lambda_3)$ with $\lambda_1+\lambda_2+\lambda_3 = 0$, and let the body rotate about the $\vec e_z$ axis with constant angular speed $\Omega$. The lab-frame moment is the rotor conjugate,</p>
+<p>A rotating non-axisymmetric body is a second and distinct source of an oscillating quadrupole. Let the body frame carry the constant quadrupole $\mathcal{Q}^{(b)} = \mathrm{diag}(\eta_1, \eta_2, \eta_3)$ with $\eta_1+\eta_2+\eta_3 = 0$, and let the body rotate about the $\vec e_z$ axis with constant angular speed $\Omega$. The lab-frame moment is the rotor conjugate,</p>
 <p>$$
 \mathcal{Q}^{(lab)}_{ij}(r'_t) = R_{i\imath}(r'_t)\,R_{jl}(r'_t)\,\mathcal{Q}^{(b)}_{\imath l},
 \qquad
@@ -190,13 +190,13 @@ $$</p>
 <p>Carrying out the rotation about $\vec e_z$ gives, with the rotation matrix $R = R_3(\Omega r'_t/c)$ and $\mathcal{Q}^{(lab)} = R\mathcal{Q}^{(b)}R^{\mathsf{T}}$,</p>
 <p>$$
 \begin{aligned}
-\mathcal{Q}^{(lab)}_{xx}(r'_t) &= \lambda_1\cos^2(\Omega r'_t/c) + \lambda_2\sin^2(\Omega r'_t/c)
-= \frac{\lambda_1+\lambda_2}{2} + \frac{\lambda_1-\lambda_2}{2}\cos(2\Omega r'_t/c) ,\\
-\mathcal{Q}^{(lab)}_{yy}(r'_t) &= \lambda_1\sin^2(\Omega r'_t/c) + \lambda_2\cos^2(\Omega r'_t/c)
-= \frac{\lambda_1+\lambda_2}{2} - \frac{\lambda_1-\lambda_2}{2}\cos(2\Omega r'_t/c) ,\\
-\mathcal{Q}^{(lab)}_{xy}(r'_t) &= (\lambda_1-\lambda_2)\sin(\Omega r'_t/c)\cos(\Omega r'_t/c)
-= \frac{\lambda_1-\lambda_2}{2}\sin(2\Omega r'_t/c) ,\\
-\mathcal{Q}^{(lab)}_{zz}(r'_t) &= \lambda_3 , \qquad \mathcal{Q}^{(lab)}_{xz} = \mathcal{Q}^{(lab)}_{yz} = 0 .
+\mathcal{Q}^{(lab)}_{xx}(r'_t) &= \eta_1\cos^2(\Omega r'_t/c) + \eta_2\sin^2(\Omega r'_t/c)
+= \frac{\eta_1+\eta_2}{2} + \frac{\eta_1-\eta_2}{2}\cos(2\Omega r'_t/c) ,\\
+\mathcal{Q}^{(lab)}_{yy}(r'_t) &= \eta_1\sin^2(\Omega r'_t/c) + \eta_2\cos^2(\Omega r'_t/c)
+= \frac{\eta_1+\eta_2}{2} - \frac{\eta_1-\eta_2}{2}\cos(2\Omega r'_t/c) ,\\
+\mathcal{Q}^{(lab)}_{xy}(r'_t) &= (\eta_1-\eta_2)\sin(\Omega r'_t/c)\cos(\Omega r'_t/c)
+= \frac{\eta_1-\eta_2}{2}\sin(2\Omega r'_t/c) ,\\
+\mathcal{Q}^{(lab)}_{zz}(r'_t) &= \eta_3 , \qquad \mathcal{Q}^{(lab)}_{xz} = \mathcal{Q}^{(lab)}_{yz} = 0 .
 \end{aligned}
 $$</p>
 <p>Every component is a constant plus a term at $2\Omega$. The moment therefore oscillates at <strong>twice</strong> the rotation frequency,</p>
@@ -205,7 +205,7 @@ $$</p>
 $$</p>
 <p>not at the rotation frequency itself. The reason is visible in the angular decomposition: the body-frame quadrupole $\mathcal{Q}^{(b)}$ has azimuthal components $m_2 = 0$ and $m_2 = \pm 2$ about the rotation axis, and a body-frame component of azimuthal index $m_2$ appears in the lab frame with the time dependence $\exp(i m_2\theta_{\mathrm{pwt}})$, where $\theta_{\mathrm{pwt}}=\Omega r'_t/c$ is real because the rotation frequency and the interval are real. The $m_2 = \pm 2$ components therefore carry $2\Omega$, and the $m_2 = 0$ component is time-independent.</p>
 <h3 id="the-axisymmetric-case">The Axisymmetric Case</h3>
-<p>If the body is axisymmetric about the rotation axis, $\lambda_1 = \lambda_2$, the $m_2 = \pm 2$ components vanish and $\mathcal{Q}^{(lab)}_{xx}$ is constant. An axisymmetric body rotating about its symmetry axis has a <strong>static</strong> quadrupole moment: it does not oscillate, and it is not a source of an oscillating quadrupole field. This is the standard statement that a rotating spheroid does not radiate in the quadrupole channel, and it is the reason the quadrupole oscillation requires a genuinely triaxial deformation.</p>
+<p>If the body is axisymmetric about the rotation axis, $\eta_1 = \eta_2$, the $m_2 = \pm 2$ components vanish and $\mathcal{Q}^{(lab)}_{xx}$ is constant. An axisymmetric body rotating about its symmetry axis has a <strong>static</strong> quadrupole moment: it does not oscillate, and it is not a source of an oscillating quadrupole field. This is the standard statement that a rotating spheroid does not radiate in the quadrupole channel, and it is the reason the quadrupole oscillation requires a genuinely triaxial deformation.</p>
 <h2 id="higher-multipoles-the-oscillating-tower">Higher Multipoles: The Oscillating Tower</h2>
 <p>The $2\Omega$ result is the first member of a tower. An $l$-pole deformation of a rotating body has body-frame azimuthal components of index $m_2 = -l, \dots, +l$, and each appears in the lab frame at frequency $m_2\Omega$. The lab-frame moment of order $l$ therefore oscillates with the frequencies</p>
 <p>$$
@@ -349,8 +349,8 @@ $$</p>
 <td>Pole strength in the two-dipole decomposition of the quadrupole</td>
 </tr>
 <tr>
-<td>$\lambda_1, \lambda_2, \lambda_3$</td>
-<td>Principal values of the body-frame quadrupole, $\sum_i\lambda_i = 0$</td>
+<td>$\eta_1, \eta_2, \eta_3$</td>
+<td>Principal values of the body-frame quadrupole, $\sum_i\eta_i = 0$</td>
 </tr>
 <tr>
 <td>$\mathrm{Sd}_{xx} = \frac{M}{5}(2a^2-b^2-c^2)$</td>

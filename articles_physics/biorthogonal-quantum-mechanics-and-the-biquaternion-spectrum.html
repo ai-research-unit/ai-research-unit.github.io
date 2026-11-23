@@ -114,11 +114,11 @@
 </tbody>
 </table></div>
 <h2 id="the-two-eigenbases">The Two Eigenbases</h2>
-<p>Let $A=\mathsf M_2(\tilde Q)$ and let $B\neq0$, so that $A$ has distinct eigenvalues $\lambda_\pm=Q_t\pm iB$. A <strong>right eigenvector</strong> $r_\pm\in\mathbb{C}^2$ and a <strong>left eigenvector</strong> $\ell_\pm\in\mathbb{C}^2$ satisfy</p>
+<p>Let $A=\mathsf M_2(\tilde Q)$ and let $B\neq0$, so that $A$ has distinct eigenvalues $\eta_{\pm}=Q_t\pm iB$. A <strong>right eigenvector</strong> $r_\pm\in\mathbb{C}^2$ and a <strong>left eigenvector</strong> $\ell_\pm\in\mathbb{C}^2$ satisfy</p>
 <p>$$
-Ar_\pm=\lambda_\pm r_\pm,
+Ar_\pm=\eta_{\pm} r_\pm,
 \qquad
-\ell_\pm^{\dagger}A=\lambda_\pm\ell_\pm^{\dagger}.
+\ell_\pm^{\dagger}A=\eta_{\pm}\ell_\pm^{\dagger}.
 $$</p>
 <p>The two bases are dual, not orthonormal: each left vector is normalized against its own right vector, $\ell_\pm^{\dagger}r_\pm=1$, and the crossed pairings vanish,</p>
 <p>$$
@@ -134,7 +134,7 @@ P_+P_-=0,
 \qquad
 P_++P_-=I_2,
 \qquad
-A=\lambda_+P_++\lambda_-P_-\;}.
+A=\eta_{+}P_++\eta_{-}P_-\;}.
 $$</p>
 <p>These are the Riesz projectors of $A$, and they are exactly the matrix images of the biquaternion eigenprojections:</p>
 <p>$$
@@ -176,8 +176,8 @@ $$</p>
 </tr>
 <tr>
 <td>spectral writing</td>
-<td>$A=\lambda_+P_++\lambda_-P_-$</td>
-<td>$\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$</td>
+<td>$A=\eta_{+}P_++\eta_{-}P_-$</td>
+<td>$\tilde Q=\eta_{+}\tilde\Pi_{\mathrm{id},++}\eta_{-}\tilde\Pi_{\mathrm{id},-}$</td>
 </tr>
 <tr>
 <td>dual family</td>
@@ -212,7 +212,7 @@ $$</p>
 \tilde\Pi_{\mathrm{id},\pm}^*\tilde\Pi_{\mathrm{id},\pm}
 =\tfrac14\left(e_t\mp i(\rho+\bar\rho)-\bar\rho\rho\right).
 $$</p>
-<p>The term $\rho+\bar\rho$ is a vector, of zero scalar part. For the last term, $\bar\rho\rho=\sum_{\imath,l}\bar\rho_\imath\rho_le_\imath e_l$, and only $\eta=l$ contributes to the scalar part, with $e_\imath^2=-e_t$; hence $\operatorname{Sc}(\bar\rho\rho)=-\sum_{\imath\in\{x,y,z\}}\lvert\rho_\imath\rvert^2=-\lVert\rho\rVert^2$. Therefore $\operatorname{Sc}(\tilde\Pi_{\mathrm{id},\pm}^*\tilde\Pi_{\mathrm{id},\pm})=\tfrac14(1+\lVert\rho\rVert^2)$ for either sign. The functional $2\operatorname{Sc}$ is the trace of $\mathbb{B}$, since $2\operatorname{Sc}(XY)=2\operatorname{Sc}(YX)$ and $2\operatorname{Sc}(e_t)=2$; hence the common $\kappa=2\operatorname{Sc}(\tilde\Pi_{\mathrm{id},\pm}^*\tilde\Pi_{\mathrm{id},\pm})=\tfrac12(1+\lVert\rho\rVert^2)$.</p>
+<p>The term $\rho+\bar\rho$ is a vector, of zero scalar part. For the last term, $\bar\rho\rho=\sum_{\imath,l}\bar\rho_\imath\rho_le_\imath e_l$, and only $k=l$ contributes to the scalar part, with $e_\imath^2=-e_t$; hence $\operatorname{Sc}(\bar\rho\rho)=-\sum_{\imath\in\{x,y,z\}}\lvert\rho_\imath\rvert^2=-\lVert\rho\rVert^2$. Therefore $\operatorname{Sc}(\tilde\Pi_{\mathrm{id},\pm}^*\tilde\Pi_{\mathrm{id},\pm})=\tfrac14(1+\lVert\rho\rVert^2)$ for either sign. The functional $2\operatorname{Sc}$ is the trace of $\mathbb{B}$, since $2\operatorname{Sc}(XY)=2\operatorname{Sc}(YX)$ and $2\operatorname{Sc}(e_t)=2$; hence the common $\kappa=2\operatorname{Sc}(\tilde\Pi_{\mathrm{id},\pm}^*\tilde\Pi_{\mathrm{id},\pm})=\tfrac12(1+\lVert\rho\rVert^2)$.</p>
 <p>The excess Petermann factor is therefore half the norm deficit $\lVert\rho\rVert^2-1$ of <em>Relations between the Biquaternion Exponential and the Fourier Kernel</em>, §<em>Normality, Unitarity and the Hermitian Norm of the Flow</em>. The same distance from normality is read twice: as the amplitude $\lVert\rho\rVert^2$ of the oscillating term in the flow, and as the factor $(1+\lVert\rho\rVert^2)/2$ of the projectors. The factor is one exactly when $\lVert\rho\rVert^2=1$, that is exactly when $\rho$ is real, which is the normality criterion of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Hermitian Case</em>. It is a factor, not a rate: it does not set the growth of the flow, which is carried by $Q_t$ and $B$.</p>
 <p><strong>Corollary (the factor in coordinates, and the Gram form).</strong> Put $\lVert\vec Q\rVert^2=\sum_{\imath\in\{x,y,z\}}\lvert Q_\imath\rvert^2$, the Euclidean square of the complex vector, and let $\lvert B^2\rvert$ be the modulus of the complex number $B^2$. Since $\rho_\imath=Q_\imath/B$, one has $\lVert\rho\rVert^2=\lVert\vec Q\rVert^2/\lvert B^2\rvert$, and therefore</p>
 <p>$$
@@ -282,19 +282,19 @@ c_\pm=\ell_\pm^{\dagger}\tilde{Ξ}.
 $$</p>
 <p>The coefficient is the left pairing, not the orthogonal projection. The norm is computed with the metric built from the left basis,</p>
 <p>$$
-\eta=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger},
+\digamma_{\mathrm{ifm}}=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger},
 \qquad
-\langle\tilde{Ξ},\eta\tilde{Ξ}\rangle=\lvert c_+\rvert^{2}+\lvert c_-\rvert^{2},
+\langle\tilde{Ξ},\digamma_{\mathrm{ifm}}\tilde{Ξ}\rangle=\lvert c_+\rvert^{2}+\lvert c_-\rvert^{2},
 $$</p>
 <p>and the normalized weights are</p>
 <p>$$
 \boxed{\;p_\pm=\frac{\lvert c_\pm\rvert^{2}}{\lvert c_+\rvert^{2}+\lvert c_-\rvert^{2}}
-=\frac{\lvert\ell_\pm^{\dagger}\tilde{Ξ}\rvert^{2}}{\langle\tilde{Ξ},\eta\tilde{Ξ}\rangle}\;}.
+=\frac{\lvert\ell_\pm^{\dagger}\tilde{Ξ}\rvert^{2}}{\langle\tilde{Ξ},\digamma_{\mathrm{ifm}}\tilde{Ξ}\rangle}\;}.
 $$</p>
-<p>The weights are positive and sum to one for every $\tilde{Ξ}$, because $\eta$ is a sum of rank-one positive operators and the left eigenvectors form a basis. The rule is therefore available for every diagonalizable element with distinct eigenvalues, normal or not. What it is not is the Born rule: the denominator is not one in the original Hilbert norm, and the coefficients are not the orthogonal projections.</p>
-<p>The rule has a price. The metric $\eta$ depends on the element, because the left eigenvectors do. Two different observables therefore define two different inner products on the same vector space, and a state has no element-independent norm. That is the sense in which the biorthogonal formulation is a formulation per observable, not a replacement for the Hilbert-space formulation.</p>
+<p>The weights are positive and sum to one for every $\tilde{Ξ}$, because $\digamma_{\mathrm{ifm}}$ is a sum of rank-one positive operators and the left eigenvectors form a basis. The rule is therefore available for every diagonalizable element with distinct eigenvalues, normal or not. What it is not is the Born rule: the denominator is not one in the original Hilbert norm, and the coefficients are not the orthogonal projections.</p>
+<p>The rule has a price. The metric $\digamma_{\mathrm{ifm}}$ depends on the element, because the left eigenvectors do. Two different observables therefore define two different inner products on the same vector space, and a state has no element-independent norm. That is the sense in which the biorthogonal formulation is a formulation per observable, not a replacement for the Hilbert-space formulation.</p>
 <h2 id="the-density-matrix-as-the-contrast-class">The Density Matrix as the Contrast Class</h2>
-<p>A density matrix is the case in which the whole apparatus collapses. A state $\tilde{Ϛ}_{\Psi}$ is Hermitian, positive and of trace one; it is normal, its eigenprojections are Hermitian, and its eigenbasis is orthonormal. In the matrix model $\eta=I$, the coefficients are the ordinary projections, and the rule becomes the Born rule,</p>
+<p>A density matrix is the case in which the whole apparatus collapses. A state $\tilde{Ϛ}_{\Psi}$ is Hermitian, positive and of trace one; it is normal, its eigenprojections are Hermitian, and its eigenbasis is orthonormal. In the matrix model $\digamma_{\mathrm{ifm}}=I$, the coefficients are the ordinary projections, and the rule becomes the Born rule,</p>
 <p>$$
 \boxed{\;p_\pm=\operatorname{tr}\left(\rho_{\mathrm{st}} P_\pm\right)
 =2\operatorname{Sc}\left(\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id},\pm}\right),
@@ -315,20 +315,20 @@ $$</p>
 <tr>
 <td>quantum state</td>
 <td>$\tilde{Ϛ}_{\Psi}$ Hermitian, positive, trace one</td>
-<td>$\eta=I$</td>
+<td>$\digamma_{\mathrm{ifm}}=I$</td>
 <td>$p_\pm=2\operatorname{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id},\pm})$</td>
 </tr>
 <tr>
 <td>normal observable</td>
 <td>$\tilde H_\Psi$ normal, distinct spectrum</td>
-<td>$\eta=I$ on the eigenbasis</td>
+<td>$\digamma_{\mathrm{ifm}}=I$ on the eigenbasis</td>
 <td>$p_\pm=\lvert c_\pm\rvert^{2}$</td>
 </tr>
 <tr>
 <td>non-normal operator</td>
 <td>$\tilde Q$ with $B\neq0$</td>
-<td>$\eta=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$</td>
-<td>$p_\pm=\lvert c_\pm\rvert^{2}/\langle\tilde{Ξ},\eta\tilde{Ξ}\rangle$</td>
+<td>$\digamma_{\mathrm{ifm}}=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$</td>
+<td>$p_\pm=\lvert c_\pm\rvert^{2}/\langle\tilde{Ξ},\digamma_{\mathrm{ifm}}\tilde{Ξ}\rangle$</td>
 </tr>
 <tr>
 <td>exceptional point</td>
@@ -348,20 +348,20 @@ $$</p>
 <li><strong>The exceptional point is the degenerate limit.</strong> As $B\to0$ the two right vectors and the two left vectors coalesce, the Petermann factor diverges, and the probability rule loses its basis. The reading is the standard divergence of the Petermann factor at an exceptional point.</li>
 </ul>
 <h2 id="limits">Limits</h2>
-<p>The biquaternion supplies the spectral decomposition and the projectors; it does not supply the metric. The choice $\eta=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$ is the standard one, but it is a choice, and a different physical normalization gives a different metric. The article states the standard choice and does not claim uniqueness.</p>
+<p>The biquaternion supplies the spectral decomposition and the projectors; it does not supply the metric. The choice $\digamma_{\mathrm{ifm}}=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$ is the standard one, but it is a choice, and a different physical normalization gives a different metric. The article states the standard choice and does not claim uniqueness.</p>
 <p>The eigenvalues are central, so the left and right <strong>eigenvalue</strong> problems coincide. The biorthogonal structure is a statement about eigenvectors. The non-commutative left/right eigenvalue problem of <em>The Biquaternion Eigenvalue Decomposition</em> is a different subject, and it is not used here.</p>
-<p>A conserved probability needs a real spectrum. With complex eigenvalues the $\eta$-norm of an evolving state grows or decays, and the weights $p_\pm$ are not conserved. The biorthogonal rule gives positive weights at one instant, not a conserved distribution in time. The dynamics of a non-Hermitian element is outside this article.</p>
+<p>A conserved probability needs a real spectrum. With complex eigenvalues the $\digamma_{\mathrm{ifm}}$-norm of an evolving state grows or decays, and the weights $p_\pm$ are not conserved. The biorthogonal rule gives positive weights at one instant, not a conserved distribution in time. The dynamics of a non-Hermitian element is outside this article.</p>
 <p>The Born rule is not derived. The article shows that it is the normal case of a biorthogonal rule; it does not derive the rule from the algebra, and it does not claim that a non-normal element is observable. The measurement postulate remains where <em>The Measurement Problem in Algebraic Form</em> leaves it.</p>
 <p>No dynamics, no arrow of time and no preferred metric are supplied. The article is a spectral reading of a non-normal element, not a quantum theory of open systems.</p>
 <h2 id="summary">Summary</h2>
 <ul>
-<li>For $B\neq0$ a biquaternion has distinct eigenvalues $\lambda_\pm=Q_t\pm iB$ and a spectral decomposition with idempotents $\tilde\Pi_{\mathrm{id},\pm}$.</li>
+<li>For $B\neq0$ a biquaternion has distinct eigenvalues $\eta_{\pm}=Q_t\pm iB$ and a spectral decomposition with idempotents $\tilde\Pi_{\mathrm{id},\pm}$.</li>
 <li>The idempotents need not be Hermitian; the right and left eigenvectors then form two dual bases, and the projectors are $P_\pm=r_\pm\ell_\pm^{\dagger}$.</li>
 <li>The biquaternion relations $\tilde\Pi_{\mathrm{id},\pm}^2=\tilde\Pi_{\mathrm{id},\pm}$, $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$ and $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$ are the biorthogonality and completeness of the two bases.</li>
 <li>The two eigendirections are orthogonal as idempotents and non-orthogonal in the Hilbert space; the cross inner product $2\operatorname{Sc}(\tilde\Pi_{\mathrm{id},+}^{*}\tilde\Pi_{\mathrm{id},-})$ measures the failure.</li>
 <li>The Petermann factor $\kappa=2\operatorname{Sc}(\tilde\Pi_{\mathrm{id},\pm}^{*}\tilde\Pi_{\mathrm{id},\pm})$ is at least one and equals one exactly when the element is normal.</li>
 <li>The Petermann factor is the norm deficit, $\kappa=(1+\lVert\rho\rVert^2)/2=(\lVert\vec Q\rVert^2+\lvert B^2\rvert)/(2\lvert B^2\rvert)$ with $\rho=\vec Q/B$: the excess $\kappa-1$ is half the deficit $\lVert\rho\rVert^2-1$ of the flow, and the Gram form of the two projectors has eigenvalues $1$ and $\lVert\rho\rVert^2$.</li>
-<li>The biorthogonal probability rule is $p_\pm=\lvert\ell_\pm^{\dagger}\tilde{Ξ}\rvert^{2}/\langle\tilde{Ξ},\eta\tilde{Ξ}\rangle$ with $\eta=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$; it is not the Born rule unless $\eta=I$.</li>
+<li>The biorthogonal probability rule is $p_\pm=\lvert\ell_\pm^{\dagger}\tilde{Ξ}\rvert^{2}/\langle\tilde{Ξ},\digamma_{\mathrm{ifm}}\tilde{Ξ}\rangle$ with $\digamma_{\mathrm{ifm}}=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$; it is not the Born rule unless $\digamma_{\mathrm{ifm}}=I$.</li>
 <li>A density matrix is normal, so its eigenprojections are Hermitian and the biorthogonal rule reduces to the Born rule $p_\pm=2\operatorname{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id},\pm})$.</li>
 <li>At an exceptional point the two bases coalesce and the metric degenerates; the probability rule has no limit there.</li>
 <li>The algebra supplies the decomposition and the projectors, not the metric, the dynamics or the arrow of time.</li>
@@ -392,7 +392,7 @@ $$</p>
 <td>the Euclidean square of the complex vector part</td>
 </tr>
 <tr>
-<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>$\eta_{\pm}=Q_t\pm iB$</td>
 <td>the two eigenvalues</td>
 </tr>
 <tr>
@@ -416,7 +416,7 @@ $$</p>
 <td>the Petermann factor, the same for both projectors, $\operatorname{tr}(P_\pm^{\dagger}P_\pm)=(1+\lVert\rho\rVert^2)/2$</td>
 </tr>
 <tr>
-<td>$\eta=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$</td>
+<td>$\digamma_{\mathrm{ifm}}=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$</td>
 <td>the metric of the biorthogonal basis</td>
 </tr>
 <tr>

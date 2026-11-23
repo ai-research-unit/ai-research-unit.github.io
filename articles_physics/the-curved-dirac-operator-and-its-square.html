@@ -156,13 +156,13 @@ $$</p>
 <p>$$
 \{iL_{\mathrm{axf},e_a}R_{\mathrm{axf},\vec e_{\mathrm{spt}(a)}},\,iL_{\mathrm{axf},e_b}R_{\mathrm{axf},\vec e_{\mathrm{spt}(b)}}\}=2\varepsilon_a\delta_{ab}I_4,
 $$</p>
-<p>with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$. Those are the Clifford relations of a Dirac spinor, and they are why the result is the Lichnerowicz formula rather than some other second-order operator.</p>
+<p>with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$. Those are the Clifford relations of a Dirac spinor, and they are why the result is the Lichnerowicz formula rather than some other second-order operator.</p>
 <p><strong>Why the algebra element does not square to a scalar.</strong> In the rigid frame $\tilde\nabla_\Phi^{2}$ carries the vector term $-2i\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial^2/\partial r'_t\partial x_\imath$, so the algebra square is a biquaternion-valued operator and not the scalar Lichnerowicz square. The identity is true of the basis operator and false of the algebra element, and a version of this article that omitted the distinction would be wrong.</p>
 <p><strong>The sign, fixed by the flat limit.</strong> The basis operators square to $+I_4$ on the time leg and to $-I_4$ on each spatial leg, so the rigid square is $\partial^2/\partial{r'_t}^2-\Delta_\Phi=-\Box_{g,\Phi}$. The curvature term must then carry the opposite sign to the Laplacian term, which is the sign displayed. No sign is chosen freely: the flat limit and the signature fix it.</p>
 <p><strong>The check that was run.</strong> The identity was recomputed on a conformal metric in two dimensions, in both sign conventions of the basis operators, with the connection taken from the frame. It held identically in the geometer's convention, in which the basis operators square to minus the norm, and the sign flips with the convention as it must.</p>
 <h2 id="where-the-one-quarter-comes-from">Where the One Quarter Comes From</h2>
 <p>The identity is worth checking against the derivation that does not use the algebra at all, because the point of the article is that the two agree.</p>
-<p><strong>The Clifford derivation, in three steps.</strong> Let $\gamma_a$ be a set of generators with $\gamma_a\gamma_b+\gamma_b\gamma_a=2\eta_{ab}$ and let $D=\sum_a\gamma_a\nabla_a$ with $\nabla_a$ the spin connection in the frame. Then</p>
+<p><strong>The Clifford derivation, in three steps.</strong> Let $\gamma_a$ be a set of generators with $\gamma_a\gamma_b+\gamma_b\gamma_a=2\delta_{ab}$ and let $D=\sum_a\gamma_a\nabla_a$ with $\nabla_a$ the spin connection in the frame. Then</p>
 <p>$$
 D^{2}=\sum_{a,b}\gamma_a\gamma_b\nabla_a\nabla_b
 =\sum_{a,b}\gamma_a\gamma_b\left(\nabla_{(a}\nabla_{b)}+\tfrac12[\nabla_a,\nabla_b]\right)
@@ -180,7 +180,7 @@ $$</p>
 =\tfrac18\cdot 2\,\mathrm{Ric}
 =\tfrac14\,\mathrm{Ric},
 $$</p>
-<p>and the four-gamma contraction with the Riemann tensor equals twice the scalar curvature: the identity $\sum_{a,b,c,d}R_{abcd}\gamma_a\gamma_b\gamma_c\gamma_d=2R$ follows from writing $\gamma_a\gamma_b=\gamma_{ab}+\eta_{ab}$, discarding the $\eta_{ab}$ term by the antisymmetry of $R_{abcd}$ in the first pair, and reducing $\gamma_{ab}\gamma_{cd}R_{abcd}$ by the pair antisymmetries and the Bianchi identity. So the coefficient is $\tfrac18\times2=\tfrac14$, and it is what it has to be for the known result.</p>
+<p>and the four-gamma contraction with the Riemann tensor equals twice the scalar curvature: the identity $\sum_{a,b,c,d}R_{abcd}\gamma_a\gamma_b\gamma_c\gamma_d=2R$ follows from writing $\gamma_a\gamma_b=\gamma_{ab}+\delta_{ab}$, discarding the $\delta_{ab}$ term by the antisymmetry of $R_{abcd}$ in the first pair, and reducing $\gamma_{ab}\gamma_{cd}R_{abcd}$ by the pair antisymmetries and the Bianchi identity. So the coefficient is $\tfrac18\times2=\tfrac14$, and it is what it has to be for the known result.</p>
 <p><strong>The coefficient is representation-independent; the curvature is not.</strong> The factor $\tfrac18$ in front of the four-gamma contraction is forced by the algebra of the Clifford generators and by the $\tfrac14$ in the spin generators, and it is the same in any representation in which the generators obey the Clifford relations. What depends on the representation is which curvature appears: for the spin representation the four-gamma contraction reduces to the scalar curvature alone, while for a representation carrying extra indices a Ricci term survives alongside. Both statements together are the honest form of "the coefficient is the same number on both sides": <strong>the $\tfrac14$ is universal and the curvature is the representation's</strong>, and the framework's basis operator happens to sit in a representation whose curvature term is the scalar one, so the formulas coincide rather than merely resembling each other.</p>
 <p><strong>Two checks that the coefficient is not adjustable.</strong> The flat limit forbids a rescaling of the whole right-hand side, since the flat square must be exactly $-\Box$. Dimensional analysis forbids a rescaling of the curvature term alone, since the curvature has dimension inverse length squared and the coefficient must be a pure number. So the only freedom would be a different number with the same dimensions, and the Clifford contraction fixes it.</p>
 <h2 id="minimal-coupling-and-the-pauli-term">Minimal Coupling, and the Pauli Term</h2>
@@ -284,7 +284,7 @@ $$</p>
 </tr>
 <tr>
 <td>$iL_{\mathrm{axf},e_a}R_{\mathrm{axf},\vec e_{\mathrm{spt}(a)}}$</td>
-<td>the four frame basis operators; $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$</td>
+<td>the four frame basis operators; $\mathrm{spt}(t)=x$, $\mathrm{spt}(\varsigma_{\mathrm{spt}})=y$</td>
 </tr>
 <tr>
 <td>$\varepsilon_a$</td>

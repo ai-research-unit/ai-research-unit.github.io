@@ -154,7 +154,7 @@ $$</p>
 <p>$$
 |\vec s_{\Psi}|^2 = s_x^2 + s_y^2 + s_z^2 \leq 1.
 $$</p>
-<p>The eigenvalues of $\tilde{Ϛ}_{\Psi}$ are $\lambda_\pm = (1 \pm |\vec s_{\Psi}|)/2$, which are non-negative if and only if $|\vec s_{\Psi}| \leq 1$.</p>
+<p>The eigenvalues of $\tilde{Ϛ}_{\Psi}$ are $\eta_{\pm} = (1 \pm |\vec s_{\Psi}|)/2$, which are non-negative if and only if $|\vec s_{\Psi}| \leq 1$.</p>
 <p>The state is <strong>pure</strong> if and only if $|\vec s_{\Psi}| = 1$, i.e., if and only if $\tilde{Ϛ}_{\Psi}$ is idempotent. It is <strong>mixed</strong> if $|\vec s_{\Psi}| < 1$. The <strong>maximally mixed state</strong> has $\vec s_{\Psi} = 0$, i.e., $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2} e_t$.</p>
 <h3 id="the-bloch-ball">The Bloch Ball</h3>
 <p>The set of all states (pure and mixed) is the <strong>Bloch ball</strong> of radius one in $\mathbb{R}^3$:</p>
@@ -177,13 +177,13 @@ $$</p>
 <p>The <strong>scalar part</strong> $h_t e_t$ carries the number $\mathrm{Sc}(\tilde H_\Psi) = h_t$. The <strong>imaginary vector part</strong> $i\vec h_\Psi$ has zero scalar part.</p>
 <p>The <strong>spectral decomposition</strong> of $\tilde H_\Psi$ is</p>
 <p>$$
-\tilde H_\Psi = \lambda_+ \tilde\Pi_{\mathrm{id},1}(\vec u_\Psi) + \lambda_- \tilde\Pi_{\mathrm{id},2}(\vec u_\Psi),
+\tilde H_\Psi = \eta_{+} \tilde\Pi_{\mathrm{id},1}(\vec u_\Psi) + \eta_{-} \tilde\Pi_{\mathrm{id},2}(\vec u_\Psi),
 $$</p>
 <p>with</p>
 <p>$$
-\vec u_\Psi = \frac{\vec h_\Psi}{|\vec h_\Psi|}, \qquad \lambda_\pm = h_t \pm |\vec h_\Psi|.
+\vec u_\Psi = \frac{\vec h_\Psi}{|\vec h_\Psi|}, \qquad \eta_{\pm} = h_t \pm |\vec h_\Psi|.
 $$</p>
-<p>The eigenvalues are $\lambda_\pm$, and the eigenvectors are the idempotents $\tilde\Pi_{\mathrm{id},1,2}(\vec u_\Psi)$. So every Hermitian element of $\mathbb{B}_{\Psi}$ has a spectral decomposition in terms of idempotents.</p>
+<p>The eigenvalues are $\eta_{\pm}$, and the eigenvectors are the idempotents $\tilde\Pi_{\mathrm{id},1,2}(\vec u_\Psi)$. So every Hermitian element of $\mathbb{B}_{\Psi}$ has a spectral decomposition in terms of idempotents.</p>
 <p><strong>Observables with no scalar part.</strong> The Hermitian elements $i\vec h_\Psi$ (with $h_t = 0$) are the analogs of the scalar-free observables of the qubit (the Pauli matrices). They have eigenvalues $\pm|\vec h_\Psi|$ and eigenvectors $\tilde\Pi_{\mathrm{id},1,2}(\vec u_\Psi)$.</p>
 <h3 id="compatibility">Compatibility</h3>
 <p>Two observables $\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2} \in \mathbb{B}_{\Psi}$ are <strong>compatible</strong> (simultaneously measurable) if and only if their corresponding matrices commute. In terms of the vector parts, this holds if and only if $\vec h_{\Psi,1}$ and $\vec h_{\Psi,2}$ are parallel or one of them vanishes.</p>
@@ -219,7 +219,7 @@ $$</p>
 $$
 It is obtained by multiplying out $\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}$ and taking the scalar part, with $(i\vec s_{\Psi})(i\vec h_\Psi) = \vec s_{\Psi}\cdot\vec h_\Psi - \vec s_{\Psi}\times\vec h_\Psi$ contributing only its scalar term. The rule is therefore a consequence of the form and of the placement of the states and the observables in $\mathbb{B}_{\Psi}$, not an independent postulate.</p>
 <h3 id="probabilities">Probabilities</h3>
-<p>For a projective measurement of an observable $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ in a state $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$, the two outcomes are $\lambda_\pm = h_t \pm |\vec h_\Psi|$, with probabilities</p>
+<p>For a projective measurement of an observable $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ in a state $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$, the two outcomes are $\eta_{\pm} = h_t \pm |\vec h_\Psi|$, with probabilities</p>
 <p>$$
 \boxed{\;p_\pm = \tfrac{1}{2}\left(1 \pm \vec u_\Psi\cdot\vec s_{\Psi}\right)\;},
 $$</p>
@@ -298,7 +298,7 @@ $$</p>
 <p>Reversibility is one of the structural features of the biquaternion formulation. The $*$-unitary elements form the group $\mathrm{U}(2) \subset \mathbb{B}$, and their conjugation action on $\mathbb{B}_{\Psi}$ preserves the Hermitian form and the biquaternion norm.</p>
 <h2 id="measurement-as-an-algebraic-operation">Measurement as an Algebraic Operation</h2>
 <p>In the standard framework, the measurement postulate is stated separately from the $*$-unitary evolution. In the biquaternion framework, both are consequences of the same structure, the Hermitian form on $\mathbb{B}$, which restricts to the plain form on $\mathbb{B}_{\Psi}$.</p>
-<p><strong>Projective measurement.</strong> A projective measurement of $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ is specified by the spectral decomposition $\tilde H_\Psi = \lambda_+ \tilde\Pi_{\mathrm{id},1} + \lambda_- \tilde\Pi_{\mathrm{id},2}$, with $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(e_t \pm i\vec u_\Psi)$. The outcome $+$ has:</p>
+<p><strong>Projective measurement.</strong> A projective measurement of $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ is specified by the spectral decomposition $\tilde H_\Psi = \eta_{+} \tilde\Pi_{\mathrm{id},1} + \eta_{-} \tilde\Pi_{\mathrm{id},2}$, with $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(e_t \pm i\vec u_\Psi)$. The outcome $+$ has:</p>
 <ul>
 <li><strong>Probability</strong> $p_+=\langle\tilde\Pi_{\mathrm{id},1},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1}\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, which at normalisation is $2\langle\tilde\Pi_{\mathrm{id},1},\tilde{Ϛ}_{\Psi}\rangle_{*}$.</li>
 <li><strong>Post-measurement state</strong> $\tilde{Ϛ}_{\Psi,\mathrm{out}} = \tilde\Pi_{\mathrm{id},1}$, from the two-sided operation.</li>
@@ -319,11 +319,11 @@ $$</p>
 <h3 id="spectral-decomposition-and-entropy">Spectral Decomposition and Entropy</h3>
 <p>The <strong>spectral decomposition</strong> of $\tilde{Ϛ}_{\Psi}$ is</p>
 <p>$$
-\tilde{Ϛ}_{\Psi} = \lambda_+ \tilde\Pi_{\mathrm{id},1}(\vec u_s) + \lambda_- \tilde\Pi_{\mathrm{id},2}(\vec u_s),
+\tilde{Ϛ}_{\Psi} = \eta_{+} \tilde\Pi_{\mathrm{id},1}(\vec u_s) + \eta_{-} \tilde\Pi_{\mathrm{id},2}(\vec u_s),
 $$</p>
-<p>with $\vec u_s = \vec s_{\Psi}/|\vec s_{\Psi}|$ and $\lambda_\pm = (1 \pm |\vec s_{\Psi}|)/2$. A function of the element is the function of its eigenvalues on its own idempotents, $\log\tilde{Ϛ}_{\Psi}=\log\lambda_+\,\tilde\Pi_{\mathrm{id},1}(\vec u_s)+\log\lambda_-\,\tilde\Pi_{\mathrm{id},2}(\vec u_s)$, with the extension by continuity at a vanishing eigenvalue. The <strong>von Neumann entropy</strong> is</p>
+<p>with $\vec u_s = \vec s_{\Psi}/|\vec s_{\Psi}|$ and $\eta_{\pm} = (1 \pm |\vec s_{\Psi}|)/2$. A function of the element is the function of its eigenvalues on its own idempotents, $\log\tilde{Ϛ}_{\Psi}=\log\eta_{+}\,\tilde\Pi_{\mathrm{id},1}(\vec u_s)+\log\eta_{-}\,\tilde\Pi_{\mathrm{id},2}(\vec u_s)$, with the extension by continuity at a vanishing eigenvalue. The <strong>von Neumann entropy</strong> is</p>
 <p>$$
-S(\tilde{Ϛ}_{\Psi}) = -2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}) = -\lambda_+ \log \lambda_+ - \lambda_- \log \lambda_-,
+S(\tilde{Ϛ}_{\Psi}) = -2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}) = -\eta_{+} \log \eta_{+} - \eta_{-} \log \eta_{-},
 $$</p>
 <p>which depends only on $|\vec s_{\Psi}|$ and vanishes for pure states.</p>
 <h3 id="fidelity">Fidelity</h3>

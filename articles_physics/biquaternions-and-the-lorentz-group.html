@@ -76,13 +76,13 @@
 <h2 id="the-lorentz-group">The Lorentz Group</h2>
 <p>The interval. Write an event as $x_{\imath}=(x_0,\mathbf{x})$ with $x_0=ct$, and let</p>
 <p>$$
-\eta=\operatorname{diag}(1,-1,-1,-1),\qquad
-s^2(x)=x^{\mathsf T}\eta\,x=(x_0)^2-\lvert\mathbf{x}\rvert^2 .
+\delta=\operatorname{diag}(1,-1,-1,-1),\qquad
+s^2(x)=x^{\mathsf T}\delta\,x=(x_0)^2-\lvert\mathbf{x}\rvert^2 .
 $$</p>
 <p>The form is indefinite, and its zero set is the light cone. The sign of $s^2$ sorts events into those a signal can reach from the origin and those it cannot, so this one quadratic form carries the causal structure of flat spacetime.</p>
 <p>The defining equation. The maps that preserve the form are the linear maps $\Lambda$ of $\mathbb{R}^4$ with</p>
 <p>$$
-\boxed{\ \Lambda^{\mathsf T}\eta\,\Lambda=\eta\ }
+\boxed{\ \Lambda^{\mathsf T}\delta\,\Lambda=\delta\ }
 $$</p>
 <p>which says exactly that $s^2(\Lambda x)=s^2(x)$ for every $x$. Every such map preserves all intervals, and every map preserving all intervals is such a map, because a quadratic form is determined by its values.</p>
 <p>Why this group. The condition leaves the determinant free up to sign, $\det\Lambda=\pm1$, and the time-time entry satisfies</p>
@@ -92,7 +92,7 @@ $$</p>
 <p>so $\Lambda^{0}{}_{0}$ never vanishes and cannot change sign continuously. Two discrete signs are therefore available, and the restricted Lorentz group $\mathrm{SO}^{+}(1,3)$ is the part fixed by $\det\Lambda=+1$ and $\Lambda^{0}{}_{0}\ge1$. It is connected, it contains the identity, and no continuous motion of an observer leaves it.</p>
 <p>Six parameters. The matrix $\Lambda$ has sixteen entries and the conditions form a symmetric $4\times4$ array, ten independent equations, so $16-10=6$ remain. Infinitesimally, with $\Lambda=I+\omega$,</p>
 <p>$$
-\omega^{\mathsf T}\eta+\eta\,\omega=0
+\omega^{\mathsf T}\delta+\delta\,\omega=0
 \quad\Longleftrightarrow\quad
 \omega_{\imath\jmath}=-\omega_{\jmath\imath},
 $$</p>
@@ -123,7 +123,7 @@ $$</p>
 N(\tilde Q)=\tilde Q\tilde Q^{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2 ,
 $$</p>
 <p>and it is multiplicative, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$.</p>
-<p>On an anti-Hermitian element the norm returns the interval with the sign of $\eta$ reversed, $N(\tilde X)=-(x_0)^2+\lvert\mathbf{x}\rvert^2=-s^2(x)$; only the invariance is used below, and it is the same for both signs.</p>
+<p>On an anti-Hermitian element the norm returns the interval with the sign of $\delta$ reversed, $N(\tilde X)=-(x_0)^2+\lvert\mathbf{x}\rvert^2=-s^2(x)$; only the invariance is used below, and it is the same for both signs.</p>
 <p>The group. The unit elements are closed under multiplication, the inverse of a unit element is $\tilde U^{\natural}$, which has norm one, and $e_t$ has norm one, so they form a group</p>
 <p>$$
 G=\{\tilde U\in\mathbb{B} : N(\tilde U)=1\}\cong\mathrm{SL}(2,\mathbb{C}).
@@ -207,7 +207,7 @@ $$</p>
 <p>The congruence of $\tilde U_{\mathrm b}$ is the boost matrix written above and the congruence of $\tilde u_{\mathrm r}$ is $R(\hat{\mathbf n},\theta)$, so the algebra reproduces the group decomposition element by element. The angle is halved in the element and whole in its action, because the congruence squares it: the parameters acting on a four-vector are $\theta_{\mathrm{rpd}}$ and $\theta_{\mathrm{axr}}$, and not half of them.</p>
 <p><strong>The half-angle is not a convenience.</strong> The eigenvalues of $\tilde U_{\mathrm b}$ are $e^{\pm\theta_{\mathrm{rpd}}/2}$, and $\tilde u_{\mathrm r}$ is minus the identity at $\theta_{\mathrm{axr}}=2\pi$ while its congruence is the identity: the half is what the algebra needs so that its own elements square to the transformation, and the sign it produces is the two-to-one cover.</p>
 <h2 id="summary">Summary</h2>
-<p>The group. The restricted Lorentz group is $\mathrm{SO}^{+}(1,3)$, the identity component of the set of linear maps with $\Lambda^{\mathsf T}\eta\Lambda=\eta$: six parameters, three boosts and three rotations.</p>
+<p>The group. The restricted Lorentz group is $\mathrm{SO}^{+}(1,3)$, the identity component of the set of linear maps with $\Lambda^{\mathsf T}\delta\Lambda=\delta$: six parameters, three boosts and three rotations.</p>
 <p>The products. Every element is a boost times a rotation, uniquely, so the two families generate the group; but they are not a pair of subgroups, since only the rotations close.</p>
 <p>The algebra. The unit biquaternions, $N(\tilde U)=1$, are the twofold cover of that group, and the multiplicativity of the norm is what preserves the interval.</p>
 <p>The action. A unit element acts as the two-sided Hermitian pair $\tilde X\mapsto\tilde U\tilde X\tilde U^{*}$, and the operators so obtained are exactly the transformations of $\mathrm{SO}^{+}(1,3)$.</p>

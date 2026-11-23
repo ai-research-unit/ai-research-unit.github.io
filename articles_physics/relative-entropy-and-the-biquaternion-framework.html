@@ -99,9 +99,9 @@ S(\rho\|\sigma)=
 +\infty, & \text{otherwise}.
 \end{cases}
 $$
-Writing $\rho=\sum_i\lambda_i|i\rangle\langle i|$ and $\sigma=\sum_j\mu_j|j\rangle\langle j|$, the finite value is
+Writing $\rho=\sum_i\eta_i|i\rangle\langle i|$ and $\sigma=\sum_j\mu_j|j\rangle\langle j|$, the finite value is
 $$
-S(\rho\|\sigma)=\sum_{i,j}|\langle i|j\rangle|^2\,\lambda_i\big(\log\lambda_i-\log\mu_j\big),
+S(\rho\|\sigma)=\sum_{i,j}|\langle i|j\rangle|^2\,\eta_i\big(\log\eta_i-\log\mu_j\big),
 $$
 the sum being restricted to $\mu_j>0$. The definition is basis-independent and invariant under $*$-unitary conjugation of both arguments. It is not symmetric, $S(\rho\|\sigma)\neq S(\sigma\|\rho)$ in general, and it is not a metric: it belongs to the family of statistical divergences rather than to the metrics.</p>
 <h3 id="the-properties-that-make-it-basic">The Properties That Make It Basic</h3>
@@ -128,7 +128,7 @@ $$
 $$
 the eigenvalues are
 $$
-\lambda_\pm=\tfrac12\big(1\pm|\vec s_{\Psi}|\big),
+\eta_{\pm}=\tfrac12\big(1\pm|\vec s_{\Psi}|\big),
 $$
 and positivity plus the trace condition give exactly
 $$
@@ -141,7 +141,7 @@ The state is <strong>pure</strong> on the Bloch sphere $|\vec s_{\Psi}|=1$, wher
 $$
 \exp\big(\theta_{\mathrm{rpd}}\,i\vec u_s\big)=\cosh\theta_{\mathrm{rpd}}\,e_t+i\sinh\theta_{\mathrm{rpd}}\,\vec u_s.
 $$
-Second, the determinant of the state, $\det\mathsf{M}_2(\tilde{Ϛ}_{\Psi})=\lambda_+\lambda_-=\tfrac14(1-|\vec s_{\Psi}|^2)=\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$, which vanishes exactly on the pure boundary. Writing the logarithm in the same form as the state,
+Second, the determinant of the state, $\det\mathsf{M}_2(\tilde{Ϛ}_{\Psi})=\eta_{+}\eta_{-}=\tfrac14(1-|\vec s_{\Psi}|^2)=\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$, which vanishes exactly on the pure boundary. Writing the logarithm in the same form as the state,
 $$
 \log\tilde{Ϛ}_{\Psi}=b_0\,e_t+i\,\vec b\cdot\mathbf e,
 $$
@@ -314,7 +314,7 @@ verified against the explicit matrix computation on generic superpositions and n
 <td>State of $\mathbb{B}$; Bloch vector $\vec s_{\Psi}$</td>
 </tr>
 <tr>
-<td>$\lambda_\pm=\tfrac12(1\pm|\vec s_{\Psi}|)$</td>
+<td>$\eta_{\pm}=\tfrac12(1\pm|\vec s_{\Psi}|)$</td>
 <td>Eigenvalues of the state</td>
 </tr>
 <tr>

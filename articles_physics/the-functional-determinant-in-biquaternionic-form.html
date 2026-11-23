@@ -100,7 +100,7 @@ the exponent being the module's complex dimension. The determinant on the whole 
 $$
 \log\det S^{(2)} = -\left.\frac{d\zeta_{S^{(2)}}}{ds}\right|_{s=0},
 \qquad
-\zeta_{S^{(2)}}(s) = \sum_n \lambda_n^{-s},
+\zeta_{S^{(2)}}(s) = \sum_n \eta_n^{-s},
 $$
 the heat-kernel and Seeley–DeWitt expansion that evaluates $\zeta(0)$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}$, and the proper-time representation. None of these is the algebra's; the algebra supplies the operator on which they act.</li>
 <li><strong>The physical faces.</strong> Two structural consequences are recorded here because later articles use them: the <strong>phase</strong> of a non-Hermitian determinant (the fermion determinant of a chiral or $\theta$-dependent operator) is the framework's route to the $\theta_{\mathrm{vac}}$ vacuum of <em>The Theta Vacuum in Biquaternionic Form</em>, and the <strong>conformal variation</strong> of the determinant is the conformal anomaly of <em>The Conformal Anomaly in Biquaternionic Form</em>.</li>
@@ -109,11 +109,11 @@ the heat-kernel and Seeley–DeWitt expansion that evaluates $\zeta(0)$ and $\le
 <h2 id="the-determinant-of-a-module-operator">The Determinant of a Module Operator</h2>
 <p>Let $S^{(2)}$ be a linear operator on the biquaternion module, and suppose for the moment that its spectrum is discrete and its determinant exists. Then
 $$
-\det S^{(2)} = \prod_n \lambda_n ,
+\det S^{(2)} = \prod_n \eta_n ,
 \qquad
-\log\det S^{(2)} = \sum_n \log\lambda_n = \mathrm{Tr}\log S^{(2)} ,
+\log\det S^{(2)} = \sum_n \log\eta_n = \mathrm{Tr}\log S^{(2)} ,
 $$
-the second equality making sense on the principal branch. The operator acts on the module $\mathbb{B}\tilde\Pi_{\mathrm{id}}(\vec u)\cong\mathbb{C}^2$ per mode, so each $\lambda_n$ is a two-fold object: the module contributes two complex dimensions, and the determinant is taken over both.</p>
+the second equality making sense on the principal branch. The operator acts on the module $\mathbb{B}\tilde\Pi_{\mathrm{id}}(\vec u)\cong\mathbb{C}^2$ per mode, so each $\eta_n$ is a two-fold object: the module contributes two complex dimensions, and the determinant is taken over both.</p>
 <p><strong>The central case.</strong> If $S^{(2)}=\kappa\,e_t$ is a central scalar (for instance the free kinetic operator at a given mode, $\kappa=N(\tilde Q_{\Phi})-N(\tilde P_{\Phi})=N(\tilde Q_{\Phi})+m^{2}\,c^{2}=\mathcal{M}(\tilde Q_{\Phi})$, whose Lorentzian continuation differs from the action's operator $\Box_\Phi-4\pi^{2}\nu_m^{2}$ only by the overall sign that the module's even dimension absorbs), then on the module it is multiplication by $\kappa$ on $\mathbb{C}^2$, and
 $$
 \boxed{\;\det\big(\kappa\,e_t\big)\Big|_{\text{module}} = \kappa^2\;}.
@@ -181,7 +181,7 @@ $$
 $$
 in the Euclidean continuation, the square being the module's two complex dimensions and the overall sign of the continuation cancelling in it. The product diverges, and only <strong>ratios</strong> of determinants of operators of the same type are scheme-independent. The ratio
 $$
-\frac{\det S^{(2)}_1}{\det S^{(2)}_2} = \frac{\prod_n \lambda_n^{(1)}}{\prod_n \lambda_n^{(2)}}
+\frac{\det S^{(2)}_1}{\det S^{(2)}_2} = \frac{\prod_n \eta_n^{(1)}}{\prod_n \eta_n^{(2)}}
 $$
 is the Ray–Singer torsion of the pair when the operators are Laplacians on a manifold, and it is the finite, physical content of the determinant. In the framework the ratio is taken on a fixed module, and the algebra's contribution is the module's dimension, which fixes the size of each factor.</p>
 <h3 id="the-determinant-and-the-propagator">The Determinant and the Propagator</h3>
@@ -192,13 +192,13 @@ $$
 where $\xi$ is a background field and $(S^{(2)})^{-1}$ is the propagator. This is the identity that makes the determinant the generating functional of one-loop bubbles: differentiating $\log\det$ any number of times produces the connected one-loop graphs with insertions of $\delta S^{(2)}/\delta\xi$. In the biquaternion framework the inverse is the propagator of <em>The Feynman Propagator in Biquaternionic Form</em>, taken on the module, and the trace is taken on the module. The identity is standard and is recorded because it is the practical route by which the framework's determinants are computed: one computes the propagator and integrates the trace, rather than the product.</p>
 <h2 id="regularization">Regularization</h2>
 <p>The determinant is a divergent product, and its regularized value is defined through the zeta function of the operator.</p>
-<p><strong>Zeta-function regularization.</strong> For an operator $S^{(2)}$ with discrete spectrum $\{\lambda_n\}$,
+<p><strong>Zeta-function regularization.</strong> For an operator $S^{(2)}$ with discrete spectrum $\{\eta_n\}$,
 $$
-\zeta_{S^{(2)}}(s) = \sum_n \lambda_n^{-s} = \mathrm{Tr}\big(S^{(2)}\big)^{-s},
+\zeta_{S^{(2)}}(s) = \sum_n \eta_n^{-s} = \mathrm{Tr}\big(S^{(2)}\big)^{-s},
 \qquad
 \log\det S^{(2)} = -\left.\frac{d\zeta_{S^{(2)}}}{ds}\right|_{s=0},
 $$
-the second relation being the analytic continuation of the first to $s=0$. In this scheme the determinant is finite by construction, and the regularization dependence appears as an additive constant that is fixed by renormalization. For a single mode with eigenvalue $\lambda$ the definition gives $\zeta(s)=\lambda^{-s}$ and $-\left.\frac{d\zeta}{ds}\right|_{s=0}=\log\lambda$, i.e. the ordinary logarithm; the scheme reduces to the ordinary determinant when the product is finite.</p>
+the second relation being the analytic continuation of the first to $s=0$. In this scheme the determinant is finite by construction, and the regularization dependence appears as an additive constant that is fixed by renormalization. For a single mode with eigenvalue $\eta$ the definition gives $\zeta(s)=\eta^{-s}$ and $-\left.\frac{d\zeta}{ds}\right|_{s=0}=\log\eta$, i.e. the ordinary logarithm; the scheme reduces to the ordinary determinant when the product is finite.</p>
 <p><strong>Heat-kernel evaluation.</strong> The zeta function is evaluated from the heat kernel of the previous article,
 $$
 \zeta_{S^{(2)}}(s) = \frac{1}{\Gamma(s)}\int_0^\infty dr'_t\;{r'_{t}}^{s-1}\,G_{\mathrm{prop}}(r'_t),
@@ -223,7 +223,7 @@ $$
 $$
 with the phase $\theta_{\mathrm{pha},\mathcal{F}}$ the object of interest. For a family of operators $\mathcal{F}(r'_t)$ interpolating between two Hermitian endpoints the phase is the <strong>eta invariant</strong> of the family,
 $$
-\theta_{\mathrm{pha},\mathcal{F}(r'_t)} = \frac{\pi}{2}\,\eta\big(\mathcal{F}(r'_t)\big) + \text{const},
+\theta_{\mathrm{pha},\mathcal{F}(r'_t)} = \frac{\pi}{2}\,\digamma_{\mathrm{fac}}\big(\mathcal{F}(r'_t)\big) + \text{const},
 $$
 a spectral asymmetry counted by the heat-kernel regularized sum of signs of eigenvalues. This is standard (Atiyah–Patodi–Singer), and it is the analytic home of the framework's $\theta_{\mathrm{vac}}$ dependence: the $\theta_{\mathrm{vac}}$ vacuum of <em>The Theta Vacuum in Biquaternionic Form</em> arises when the fermion determinant's phase depends on a background field through the eta invariant, so that $\exp(-S)$ acquires a topological phase. The biquaternion content is that the chiral structure whose asymmetry is counted is the two-minimal-left-ideal structure of the algebra, and that the mass term is the right-multiplication operator between them.</p>
 <p><strong>Index and anomaly.</strong> The magnitude's failure to be conformally invariant, and the phase's failure to be trivial, are two faces of the same configuration-space topology. The magnitude's conformal variation is the conformal anomaly of <em>The Conformal Anomaly in Biquaternionic Form</em>; the phase's topology is the $\theta_{\mathrm{vac}}$ vacuum of <em>The Theta Vacuum in Biquaternionic Form</em>. Both are properties of a determinant of a module operator, and both are standard field theory written in the framework's notation.</p>
@@ -333,7 +333,7 @@ Both were verified: for $\tilde Q=(0.7+0.2i,\,0.3-0.5i,\,-0.2+0.4i,\,0.1+0.6i)$,
 <td>Complex (chiral) fermion determinant</td>
 </tr>
 <tr>
-<td>$\eta(\mathcal{F})$</td>
+<td>$\digamma_{\mathrm{fac}}(\mathcal{F})$</td>
 <td>Eta invariant; spectral asymmetry of the phase</td>
 </tr>
 </tbody>

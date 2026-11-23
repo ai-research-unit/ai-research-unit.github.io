@@ -82,29 +82,29 @@ S_{ij}=\tfrac12\bigl(\partial_iv_j+\partial_jv_i\bigr),
 $$</p>
 <p>and its trace is the divergence, $\delta_{ij}S_{ij}=\vec\nabla_\Phi\cdot\vec v$. The stress is</p>
 <p>$$
-\sigma_{ij}=-p_{\mathrm{th}}\,\delta_{ij}+2\eta_{\mathrm{shr}}S_{ij}+\zeta_{\mathrm{blk}}\,\delta_{ij}\,\vec\nabla_\Phi\cdot\vec v ,
+\sigma_{ij}=-p_{\mathrm{th}}\,\delta_{ij}+2\digamma_{\mathrm{vis}}S_{ij}+\zeta_{\mathrm{blk}}\,\delta_{ij}\,\vec\nabla_\Phi\cdot\vec v ,
 $$</p>
-<p>with $\eta_{\mathrm{shr}}$ the shear viscosity and $\zeta_{\mathrm{blk}}$ the bulk viscosity. The first term is the pressure of the inviscid case; the second is the shear stress, which opposes the shearing of the flow; the third is the resistance to compression.</p>
+<p>with $\digamma_{\mathrm{vis}}$ the shear viscosity and $\zeta_{\mathrm{blk}}$ the bulk viscosity. The first term is the pressure of the inviscid case; the second is the shear stress, which opposes the shearing of the flow; the third is the resistance to compression.</p>
 <p>The stress has three parts and each has a different status. The pressure is a datum fixed by the law of state. The shear term is what makes a fluid stick to a wall, and it is the term that carries the fluid's viscosity in ordinary language. The bulk term is the one that survives in a purely compressive flow, and it vanishes for a monatomic ideal gas at the level of the kinetic theory.</p>
 <p>The equation of motion is the divergence of the stress. Euler's equation gains one term,</p>
 <p>$$
 \partial_{t'}\vec v+\bigl(\vec v\cdot\nabla\bigr)\vec v=-\frac{1}{\rho_{\mathrm{mass}}}\vec\nabla_\Phi p_{\mathrm{th}}+\frac{1}{\rho_{\mathrm{mass}}}\partial_j\sigma_{\mathrm{vsc},ij}+\vec f_{\mathrm{ext}},
 $$</p>
-<p>with $\sigma_{\mathrm{vsc},ij}=2\eta_{\mathrm{shr}}S_{ij}+\zeta_{\mathrm{blk}}\delta_{ij}\vec\nabla_\Phi\cdot\vec v$ the viscous part. For constant $\eta_{\mathrm{shr}}$ and an incompressible flow this is $\digamma_{\mathrm{kin}}\Delta_\Phi\vec v$ with the kinematic viscosity</p>
+<p>with $\sigma_{\mathrm{vsc},ij}=2\digamma_{\mathrm{vis}}S_{ij}+\zeta_{\mathrm{blk}}\delta_{ij}\vec\nabla_\Phi\cdot\vec v$ the viscous part. For constant $\digamma_{\mathrm{vis}}$ and an incompressible flow this is $\digamma_{\mathrm{kin}}\Delta_\Phi\vec v$ with the kinematic viscosity</p>
 <p>$$
-\digamma_{\mathrm{kin}}=\frac{\eta_{\mathrm{shr}}}{\rho_{\mathrm{mass}}},
+\digamma_{\mathrm{kin}}=\frac{\digamma_{\mathrm{vis}}}{\rho_{\mathrm{mass}}},
 $$</p>
 <p>and with that term the equation is the Navier–Stokes equation.</p>
 <h2 id="the-dissipation-function">The Dissipation Function</h2>
 <p><strong>The rate at which the stress does work on the flow is twice the dissipation function.</strong> Define</p>
 <p>$$
-F_{\mathrm{rlh}}=\eta_{\mathrm{shr}}\,S_{ij}S_{ij}+\tfrac12\zeta_{\mathrm{blk}}\bigl(\vec\nabla_\Phi\cdot\vec v\bigr)^{2},
+F_{\mathrm{rlh}}=\digamma_{\mathrm{vis}}\,S_{ij}S_{ij}+\tfrac12\zeta_{\mathrm{blk}}\bigl(\vec\nabla_\Phi\cdot\vec v\bigr)^{2},
 $$</p>
 <p>the continuum form of Rayleigh's dissipation function. Then</p>
 <p>$$
 \sigma_{\mathrm{vsc},ij}\,\partial_jv_i=2F_{\mathrm{rlh}},
 $$</p>
-<p>by expansion: the shear part contributes $2\eta_{\mathrm{shr}}S_{ij}S_{ij}$ because $\sum_{ij}(\partial_jv_i)S_{ij}=\sum_{ij}S_{ij}S_{ij}$, and the bulk part contributes $\zeta_{\mathrm{blk}}(\vec\nabla_\Phi\cdot\vec v)^{2}$. The identity is exact for every differentiable flow, and it is the continuum reading of $\mathrm{d}E/\mathrm{d}t'=-2F$ in <a href="the-non-quantum-limit-of-the-action-principle-and-the-lagrangian.html">The Non-Quantum Limit of the Action Principle and the Lagrangian</a>.</p>
+<p>by expansion: the shear part contributes $2\digamma_{\mathrm{vis}}S_{ij}S_{ij}$ because $\sum_{ij}(\partial_jv_i)S_{ij}=\sum_{ij}S_{ij}S_{ij}$, and the bulk part contributes $\zeta_{\mathrm{blk}}(\vec\nabla_\Phi\cdot\vec v)^{2}$. The identity is exact for every differentiable flow, and it is the continuum reading of $\mathrm{d}E/\mathrm{d}t'=-2F$ in <a href="the-non-quantum-limit-of-the-action-principle-and-the-lagrangian.html">The Non-Quantum Limit of the Action Principle and the Lagrangian</a>.</p>
 <p>The energy of an isolated viscous flow decreases. With no external force and no flux through the boundary,</p>
 <p>$$
 \frac{\mathrm{d}E}{\mathrm{d}t'}=-2\int F_{\mathrm{rlh}}\,\mathrm{d}^{3}r\le0,
@@ -165,8 +165,8 @@ $$</p>
 <p>Interpretation. That the absence of an action is <em>the</em> obstruction, rather than a symptom of one. The parity argument is exact; that parity is the property an oscillatory reading requires is the programme's reading of what a phase is. That the heat equation should count as "not a wave equation" is a definition, and this article takes the oscillatory spectrum and the cone-supported kernel as the two marks that make it.</p>
 <p>Not claimed. It is not claimed that no variational principle exists for a viscous fluid. Several do, and §<em>Why There Is No Action</em> names the price they pay. It is not claimed that the Hopf–Cole transformation is available for a general three-dimensional flow; it is available for potential flow and it is not available for a rotational one. It is not claimed that viscosity is the only source of dissipation in a fluid; heat conduction produces entropy too, and the article's entropy balance assumes it away.</p>
 <h2 id="summary">Summary</h2>
-<p>The Newtonian stress is $-p_{\mathrm{th}}\delta_{ij}+2\eta_{\mathrm{shr}}S_{ij}+\zeta_{\mathrm{blk}}\delta_{ij}\vec\nabla_\Phi\cdot\vec v$, and the Navier–Stokes equation is its divergence.</p>
-<p>Its work rate is twice the Rayleigh dissipation function, $\sigma_{\mathrm{vsc},ij}\partial_jv_i=2F_{\mathrm{rlh}}$ with $F_{\mathrm{rlh}}=\eta_{\mathrm{shr}}S_{ij}S_{ij}+\frac12\zeta_{\mathrm{blk}}(\vec\nabla_\Phi\cdot\vec v)^{2}$. The energy of an isolated flow falls at $2F_{\mathrm{rlh}}$, and the entropy rises at the same rate over the temperature.</p>
+<p>The Newtonian stress is $-p_{\mathrm{th}}\delta_{ij}+2\digamma_{\mathrm{vis}}S_{ij}+\zeta_{\mathrm{blk}}\delta_{ij}\vec\nabla_\Phi\cdot\vec v$, and the Navier–Stokes equation is its divergence.</p>
+<p>Its work rate is twice the Rayleigh dissipation function, $\sigma_{\mathrm{vsc},ij}\partial_jv_i=2F_{\mathrm{rlh}}$ with $F_{\mathrm{rlh}}=\digamma_{\mathrm{vis}}S_{ij}S_{ij}+\frac12\zeta_{\mathrm{blk}}(\vec\nabla_\Phi\cdot\vec v)^{2}$. The energy of an isolated flow falls at $2F_{\mathrm{rlh}}$, and the entropy rises at the same rate over the temperature.</p>
 <p>The obstruction is the absence of an action. The viscous term is odd under reversal of time and has a fixed sign, so no functional of the flow alone varies to it. Rayleigh's device inserts the force on the right-hand side of Lagrange's equation, which is the statement that it is inserted and not derived. Doubling the variables restores a variational principle for a larger system, and the phase then belongs to the larger system.</p>
 <p>The count does not see viscosity. A viscous fluid carries the same four data as an inviscid one, and what viscosity removes is the phase rather than a datum.</p>
 <p>In one dimension the obstruction is removable and the result is linear: the Hopf–Cole transformation carries Burgers' equation into the heat equation, exactly, with the kernel giving $u=x/t'$. In three dimensions it does so only for potential flow.</p>
@@ -193,7 +193,7 @@ $$</p>
 <td>Strain rate</td>
 </tr>
 <tr>
-<td>$\eta_{\mathrm{shr}}$</td>
+<td>$\digamma_{\mathrm{vis}}$</td>
 <td>Shear viscosity</td>
 </tr>
 <tr>
@@ -205,7 +205,7 @@ $$</p>
 <td>Bulk viscosity</td>
 </tr>
 <tr>
-<td>$\digamma_{\mathrm{kin}}=\eta_{\mathrm{shr}}/\rho_{\mathrm{mass}}$</td>
+<td>$\digamma_{\mathrm{kin}}=\digamma_{\mathrm{vis}}/\rho_{\mathrm{mass}}$</td>
 <td>Kinematic viscosity</td>
 </tr>
 <tr>

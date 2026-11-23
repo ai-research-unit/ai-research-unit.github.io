@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="the-lyapunov-exponent-and-information-loss-in-the-biquaternion-framework"><strong>The Lyapunov Exponent and Information Loss in the Biquaternion Framework</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A Lyapunov exponent is the rate at which a dynamical system loses track of its initial condition. Two trajectories that start a distance $\epsilon$ apart separate as $\epsilon\,\exp(\lambda r'_t)$, and $\lambda$ is the exponent; a positive exponent means exponential divergence, that is, sensitivity to initial conditions, and a negative exponent means exponential contraction, that is, the erasure of a distinction. The exponents are the rates in the information budget of a flow.</p>
+<p>A Lyapunov exponent is the rate at which a dynamical system loses track of its initial condition. Two trajectories that start a distance $\epsilon$ apart separate as $\epsilon\,\exp(\varkappa_{\mathrm{lyp}} r'_t)$, and $\varkappa_{\mathrm{lyp}}$ is the exponent; a positive exponent means exponential divergence, that is, sensitivity to initial conditions, and a negative exponent means exponential contraction, that is, the erasure of a distinction. The exponents are the rates in the information budget of a flow.</p>
 <p>This article computes the Lyapunov exponents of the informational sector $\mathbb{B}_{\Psi}$ of the biquaternion algebra, and locates the information loss of the framework in the sign of those exponents. The sector's state space is the Bloch ball, $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t+i\vec s_{\Psi})$ with $|\vec s_{\Psi}|\le1$, and the natural measure of a tangent vector is the sector's biquaternion norm: a tangent vector to the state space is a scalar-free element of $\mathbb{B}_{\Psi}$, and its biquaternion norm is negative definite there, so $|\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural}|^{1/2}$ is the length of the tangent vector. The Lyapunov exponent of a tangent vector is</p>
 <p>$$
 \lambda(v) = \lim_{r'_t\to\infty}\frac{1}{2r'_t}\log\frac{\left|\langle\delta\tilde{Ϛ}_{\Psi}(r'_t)\rangle_{\natural}\right|}{\left|\langle\delta\tilde{Ϛ}_{\Psi}(0)\rangle_{\natural}\right|},
@@ -95,7 +95,7 @@ $$</p>
 <p>$$
 \lambda(v) = \lim_{r'_t\to\infty}\frac{1}{r'_{t}}\log\frac{\left\|D\xi_{\mathrm{flw},r'_{t}}\,v\right\|}{\left\|v\right\|},
 $$</p>
-<p>whenever the limit exists. The flow parameter is the material length $r'_t=c\,t'$, so the exponents above are per unit length; the per-second exponents of the same flow are $c$ times these, and the symbols $\lambda_\imath$ and $\Gamma$ denote the per-length ones throughout. The <strong>multiplicative ergodic theorem</strong> of Oseledets guarantees that, for an invariant measure, the limit exists for almost every initial condition and takes finitely many values $\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_n$, the <strong>Lyapunov spectrum</strong> of the flow. A positive exponent is exponential divergence of nearby trajectories; a negative exponent is exponential contraction; a zero exponent is neutrality, and the direction of the flow itself is always neutral.</p>
+<p>whenever the limit exists. The flow parameter is the material length $r'_t=c\,t'$, so the exponents above are per unit length; the per-second exponents of the same flow are $c$ times these, and the symbols $\lambda_\imath$ and $\Gamma$ denote the per-length ones throughout. The <strong>multiplicative ergodic theorem</strong> of Oseledets guarantees that, for an invariant measure, the limit exists for almost every initial condition and takes finitely many values $\varkappa_{\mathrm{lyp},1}\ge\varkappa_{\mathrm{lyp},2}\ge\cdots\ge\varkappa_{\mathrm{lyp},n}$, the <strong>Lyapunov spectrum</strong> of the flow. A positive exponent is exponential divergence of nearby trajectories; a negative exponent is exponential contraction; a zero exponent is neutrality, and the direction of the flow itself is always neutral.</p>
 <h3 id="three-standard-facts">Three Standard Facts</h3>
 <p>Three facts are used below, and each is transcribed from the standard theory rather than re-derived.</p>
 <p><strong>Divergence and volume.</strong> The sum of the exponents is the average rate of change of the volume element,</p>
@@ -174,7 +174,7 @@ L(r'_t) = \mathrm{diag}\!\left(\exp(-\Gamma r'_t),\,\exp(-\Gamma r'_t),\,1\right
 $$</p>
 <p>The singular values are the diagonal entries, so the <strong>Lyapunov spectrum</strong> is</p>
 <p>$$
-\boxed{\;\lambda_1 = 0, \qquad \lambda_2 = \lambda_3 = -\Gamma\;}.
+\boxed{\;\varkappa_{\mathrm{lyp},1} = 0, \qquad \varkappa_{\mathrm{lyp},2} = \eta_3 = -\Gamma\;}.
 $$</p>
 <p>The zero exponent is the pointer axis, along which the state is unchanged; the two negative exponents are the transverse directions, in which distinctions decay at rate $\Gamma$. The sum of the exponents gives the volume contraction,</p>
 <p>$$
@@ -201,7 +201,7 @@ $$</p>
 \frac{1}{r'_{t}}\log\frac{\left|\langle\delta\tilde{Ϛ}_{\Psi}(r'_t)\rangle_{\natural}\right|}{\left|\langle\delta\tilde{Ϛ}_{\Psi}(0)\rangle_{\natural}\right|} = -2\Gamma ,
 $$</p>
 <p>and the factor $\tfrac{1}{2}$ in the definition of $\lambda$ removes it. <strong>The exponent of the length is the vector exponent; the logarithm of the quadratic form decays at twice that rate.</strong></p>
-<p>Both numbers were verified numerically on the transverse tangent element $\delta\tilde{Ϛ}_{\Psi} = \tfrac{i}{2}\vec e_x$, taken as a tangent to the interior superposition state $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(\tilde\Pi_{\mathrm{id},1}(\vec e_x)+\tilde\Pi_{\mathrm{id},1}(\vec e_y))$ rather than to a single idempotent, under the semigroup with $\Gamma = 0.7$. At $r'_t = 0.5$, $1.0$ and $2.0$ the displacement ratio $|\delta\vec s_{\Psi}(r'_t)|/|\delta\vec s_{\Psi}(0)| = \exp(-\Gamma r'_t)$ gives the Lyapunov exponent $\lambda = -0.7000000000 = -\Gamma$, while the logarithm of the quadratic form gives $\tfrac{1}{r'_{t}}\log|\langle\delta\tilde{Ϛ}_{\Psi}(r'_t)\rangle_{\natural}/\langle\delta\tilde{Ϛ}_{\Psi}(0)\rangle_{\natural}| = -1.4000000000 = -2\Gamma$; the two differ by exactly the factor of two that the definition of $\lambda$ absorbs. The representation used is the four-complex-coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ with the algebra's product.</p>
+<p>Both numbers were verified numerically on the transverse tangent element $\delta\tilde{Ϛ}_{\Psi} = \tfrac{i}{2}\vec e_x$, taken as a tangent to the interior superposition state $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(\tilde\Pi_{\mathrm{id},1}(\vec e_x)+\tilde\Pi_{\mathrm{id},1}(\vec e_y))$ rather than to a single idempotent, under the semigroup with $\Gamma = 0.7$. At $r'_t = 0.5$, $1.0$ and $2.0$ the displacement ratio $|\delta\vec s_{\Psi}(r'_t)|/|\delta\vec s_{\Psi}(0)| = \exp(-\Gamma r'_t)$ gives the Lyapunov exponent $\varkappa_{\mathrm{lyp}} = -0.7000000000 = -\Gamma$, while the logarithm of the quadratic form gives $\tfrac{1}{r'_{t}}\log|\langle\delta\tilde{Ϛ}_{\Psi}(r'_t)\rangle_{\natural}/\langle\delta\tilde{Ϛ}_{\Psi}(0)\rangle_{\natural}| = -1.4000000000 = -2\Gamma$; the two differ by exactly the factor of two that the definition of $\varkappa_{\mathrm{lyp}}$ absorbs. The representation used is the four-complex-coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ with the algebra's product.</p>
 <h3 id="information-loss-and-entropy-production">Information Loss and Entropy Production</h3>
 <p>The exponents are the rates, and the entropy functional of the companion article <em>Coarse-Graining and the Biquaternion Entropy Functional</em> is the stock. With $s = |\vec s_{\Psi}(r'_t)|$ and $s_\perp(r'_t) = \exp(-\Gamma r'_t)\sqrt{r_1(0)^2 + r_2(0)^2}$ the <strong>instantaneous</strong> transverse component in the frame of the dephasing display above, the entropy production rate of the dephasing semigroup is</p>
 <p>$$
@@ -230,7 +230,7 @@ $$</p>
 $$</p>
 <p>the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\rangle_{\natural}$. Since $\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec s_{\Psi}|^2e_t$ for a tangent vector, this is the Euclidean growth rate of the Bloch displacement.</p>
 <p><strong>Reversible rotor flow is Lyapunov-neutral.</strong> Conjugation by a matrix-unitary rotor leaves the biquaternion norm and the scalar pairing invariant, so every exponent is exactly zero and no information is lost. This is the biquaternion form of the volume preservation of a Hamiltonian flow, and it agrees with the conservation of the Casimir on the coadjoint orbit.</p>
-<p><strong>Irreversible channel semigroups are contractions.</strong> The affine Bloch action $\vec s_{\Psi}\mapsto L(r'_t)\vec s_{\Psi}+\vec t(r'_t)$ has tangent map $L(r'_t)$, whose singular values are the exponential rates; trace-distance contractivity of completely positive trace-preserving maps gives $\sigma_1(L(r'_t))\le1$, hence every exponent is non-positive. The dephasing semigroup has the spectrum $\{0,-\Gamma,-\Gamma\}$, sum $-2\Gamma$ equal to the volume contraction rate, and entropy production rate $\Gamma(s_\perp(r'_t)^2/s(r'_t))\,\mathrm{artanh}\,s(r'_t)$, with $s_\perp(r'_t)$ the instantaneous transverse component. The quadratic biquaternion norm of a transverse tangent vector decays at $\exp(-2\Gamma r'_t)$, twice the vector rate $\exp(-\Gamma r'_t)$, because the biquaternion norm is quadratic; the Lyapunov exponent $\lambda$, defined with the compensating factor $\tfrac{1}{2}$, is the vector exponent $-\Gamma$ itself.</p>
+<p><strong>Irreversible channel semigroups are contractions.</strong> The affine Bloch action $\vec s_{\Psi}\mapsto L(r'_t)\vec s_{\Psi}+\vec t(r'_t)$ has tangent map $L(r'_t)$, whose singular values are the exponential rates; trace-distance contractivity of completely positive trace-preserving maps gives $\sigma_1(L(r'_t))\le1$, hence every exponent is non-positive. The dephasing semigroup has the spectrum $\{0,-\Gamma,-\Gamma\}$, sum $-2\Gamma$ equal to the volume contraction rate, and entropy production rate $\Gamma(s_\perp(r'_t)^2/s(r'_t))\,\mathrm{artanh}\,s(r'_t)$, with $s_\perp(r'_t)$ the instantaneous transverse component. The quadratic biquaternion norm of a transverse tangent vector decays at $\exp(-2\Gamma r'_t)$, twice the vector rate $\exp(-\Gamma r'_t)$, because the biquaternion norm is quadratic; the Lyapunov exponent $\varkappa_{\mathrm{lyp}}$, defined with the compensating factor $\tfrac{1}{2}$, is the vector exponent $-\Gamma$ itself.</p>
 <p><strong>No positive exponents are available.</strong> Isometry forbids them for rotor flow, contraction forbids them for channels, and the compact coadjoint orbit is a two-dimensional symplectic manifold, where Hamiltonian flows are integrable. Chaos in a Hamiltonian flow needs four phase-space dimensions and a nonlinearity, neither of which the single-qubit informational sector has. The information loss of the framework is therefore contraction, not chaos, and the Kolmogorov–Sinai entropy of its linear flows is zero by Pesin's formula.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -274,11 +274,11 @@ $$</p>
 <td>Biquaternion norm of a tangent vector (negative definite)</td>
 </tr>
 <tr>
-<td>$\lambda(v) = \lim_t \tfrac{1}{2r'_t}\log|\langle\delta\tilde{Ϛ}_{\Psi}(r'_t)\rangle_{\natural}/\langle\delta\tilde{Ϛ}_{\Psi}(0)\rangle_{\natural}|$</td>
+<td>$\varkappa_{\mathrm{lyp}}(v) = \lim_t \tfrac{1}{2r'_t}\log|\langle\delta\tilde{Ϛ}_{\Psi}(r'_t)\rangle_{\natural}/\langle\delta\tilde{Ϛ}_{\Psi}(0)\rangle_{\natural}|$</td>
 <td>Lyapunov exponent in the biquaternion norm</td>
 </tr>
 <tr>
-<td>$\lambda_1\ge\lambda_2\ge\lambda_3$</td>
+<td>$\varkappa_{\mathrm{lyp},1}\ge\varkappa_{\mathrm{lyp},2}\ge\eta_3$</td>
 <td>Lyapunov spectrum</td>
 </tr>
 <tr>

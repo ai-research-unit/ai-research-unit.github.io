@@ -119,18 +119,18 @@ $$</p>
 \frac{\partial\gamma}{\partial r'_t}=0 .
 $$</p>
 <p>A rigid flow has a constant time-dilation factor along its own time direction. Equivalently, no fluid element accelerates in the sense of changing its rapidity as it moves.</p>
-<p>(b) There is neither expansion nor shear. The $(\eta,\eta)$ component, without summation, and the $(j,\eta)$ components give</p>
+<p>(b) There is neither expansion nor shear. The $(\upsilon_{\mathrm{rnd}},\upsilon_{\mathrm{rnd}})$ component, without summation, and the $(j,\upsilon_{\mathrm{rnd}})$ components give</p>
 <p>$$
 \frac{\partial}{\partial r_\imath}\bigl(\gamma v_\imath\bigr)=0
 \qquad\text{and}\qquad
 \frac{\partial}{\partial r_j}\bigl(\gamma v_\imath\bigr)+\frac{\partial}{\partial r_\imath}\bigl(\gamma v_j\bigr)=0 .
 $$</p>
 <p>The first is the vanishing of the expansion's diagonal; the second is the vanishing of the shear, and an antisymmetric gradient — a rigid rotation — is left free by it. Together they say that the spatial current density $\gamma\vec v$ has a symmetric gradient that is zero, which is the classical statement that a rigid body's velocity field is an antisymmetric matrix plus a translation.</p>
-<p>(c) The acceleration is locked to the rapidity gradient. The $(t,\eta)$ components give</p>
+<p>(c) The acceleration is locked to the rapidity gradient. The $(t,\upsilon_{\mathrm{rnd}})$ components give</p>
 <p>$$
 \frac{\partial}{\partial r'_t}\bigl(\gamma v_\imath\bigr)=c\,\frac{\partial\gamma}{\partial r_\imath},
 $$</p>
-<p>which follows from the $(t,\eta)$ entry $-i\partial_{r'_t}(\gamma v_\imath)+ic\partial_{r_k}\gamma=0$ on dividing by the factor $-i$ that the temporal slot's derivative carries. Both sides are real, as they must be, and no $i$ survives: a condition that left an $i$ standing would force both sides to vanish. The display says that the flow's acceleration is fixed by the rapidity gradient and by nothing else. For a static flow, $\partial_{r'_t}=0$, so the condition forces $\partial_{r_k}\gamma=0$: a static rigid flow has a constant rapidity, that is, it is inertial.</p>
+<p>which follows from the $(t,\upsilon_{\mathrm{rnd}})$ entry $-i\partial_{r'_t}(\gamma v_\imath)+ic\partial_{r_k}\gamma=0$ on dividing by the factor $-i$ that the temporal slot's derivative carries. Both sides are real, as they must be, and no $i$ survives: a condition that left an $i$ standing would force both sides to vanish. The display says that the flow's acceleration is fixed by the rapidity gradient and by nothing else. For a static flow, $\partial_{r'_t}=0$, so the condition forces $\partial_{r_k}\gamma=0$: a static rigid flow has a constant rapidity, that is, it is inertial.</p>
 <h3 id="what-rigidity-does-not-constrain">What rigidity does not constrain</h3>
 <p>Vorticity is free. The condition constrains the symmetric part of the gradient and says nothing about the antisymmetric part. With $\gamma$ held constant a flow can be rigid and vortical at once, and the rigid rotation of classical hydrodynamics is the example: for $\vec v=\Omega\,\vec e_z\times\vec r$ and constant $\gamma$, the conditions (b) hold because $\partial_x(\gamma v_y)=\gamma\Omega$ and $\partial_y(\gamma v_x)=-\gamma\Omega$ sum to zero, and (a) and (c) hold because nothing depends on time and $\gamma$ does not vary.</p>
 <p>But a rotation cannot hold $\gamma$ constant, so the relativistic rigid rotation is not rigid. The unit norm $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ forces $\gamma=1/\sqrt{1-\Omega^{2}r^{2}/c^{2}}$ for the rotating flow, and that $\gamma$ varies with the radius. Then the diagonal entries of (b) fail, $\partial_x(\gamma v_x)=-\Omega y\,\partial_x\gamma\ne0$, and (c) fails too whenever the flow is stationary: with $\partial_{r'_t}=0$ it forces $\partial_{r_k}\gamma=0$. Two independent entries of the condition are therefore violated, not one. A relativistic rigid rotation is <em>accelerating</em> — the centripetal acceleration is real — and the classical rigid body is a non-relativistic artefact that the unit norm excludes.</p>
@@ -139,7 +139,7 @@ $$</p>
 <p>The condition was evaluated on two flows, and the numbers separate them. With $c=2$, the component spelling above, and central differences of step $10^{-6}$ at the event $(r'_t,r_x,r_y,r_z)=(0.3,0.5,0.7,1.1)$:</p>
 <ul>
 <li>Uniform translation, $\theta_{\mathrm{rpd}}=0.4$ and $\vec u_{\mathrm b}=\vec e_y$ everywhere: the largest of the sixteen entries of $\partial_{\imath} v_{\Phi,\jmath}+\partial_{\jmath} v_{\Phi,\imath}$ was $0$, exactly, in double precision.</li>
-<li>The transverse shear flow of the spin-half-fluid article, $\theta_{\mathrm{rpd}}(r_x)=0.4+0.2\sin(1.3r_x)$ with $\vec u_{\mathrm b}=\vec e_y$: the largest entry was $0.471\,438$, attained at the $(r_x,r_y)$ pair, and it equals the single derivative $\partial_{r_x}(\gamma v_y)=c\cosh\theta\,\partial_{r_x}\theta$ computed independently at that event. The entries with $\eta$ along the flow vanish, because nothing in the flow depends on $r_y$; the entry with $\eta$ across the flow does not, because the rapidity and with it $\gamma$ vary with $r_x$, and the $(t,r_x)$ entry carries $c\,\partial_{r_x}\gamma=c\sinh\theta\,\partial_{r_x}\theta=0.225\,583$ at the same event. That second failure is the content of paragraph (c): a stationary flow whose Lorentz factor varies in space is not rigid either, and the shear entry is only the larger of the two violations.</li>
+<li>The transverse shear flow of the spin-half-fluid article, $\theta_{\mathrm{rpd}}(r_x)=0.4+0.2\sin(1.3r_x)$ with $\vec u_{\mathrm b}=\vec e_y$: the largest entry was $0.471\,438$, attained at the $(r_x,r_y)$ pair, and it equals the single derivative $\partial_{r_x}(\gamma v_y)=c\cosh\theta\,\partial_{r_x}\theta$ computed independently at that event. The entries with $\upsilon_{\mathrm{rnd}}$ along the flow vanish, because nothing in the flow depends on $r_y$; the entry with $\upsilon_{\mathrm{rnd}}$ across the flow does not, because the rapidity and with it $\gamma$ vary with $r_x$, and the $(t,r_x)$ entry carries $c\,\partial_{r_x}\gamma=c\sinh\theta\,\partial_{r_x}\theta=0.225\,583$ at the same event. That second failure is the content of paragraph (c): a stationary flow whose Lorentz factor varies in space is not rigid either, and the shear entry is only the larger of the two violations.</li>
 </ul>
 <p>The second flow therefore fails the rigidity condition in two of its families of entries — the no-shear part and the acceleration part — and the first satisfies both. The condition is not vacuous: it separates exactly the flows that the classical theory calls rigid from those it does not.</p>
 <h2 id="the-pointwise-temperature">The Pointwise Temperature</h2>
@@ -175,7 +175,7 @@ v_{\Phi,k}=0,
 \qquad
 T(x)\,c(x)=\text{const},
 $$</p>
-<p>with $c$ and $T$ evaluated at $x$. The six components with both labels spatial vanish identically, because the spatial current is zero throughout the frame and not only at $x$. The four components that carry the temporal slot do not: each is $2\partial_{\imath} v_{\Phi,t}=2i\,\partial_{\imath} c(x)$, in a static medium the $tt$ entry vanishes with $\partial_t c=0$, and the three $t\eta$ entries vanish exactly when the medium is uniform at $x$.</p>
+<p>with $c$ and $T$ evaluated at $x$. The six components with both labels spatial vanish identically, because the spatial current is zero throughout the frame and not only at $x$. The four components that carry the temporal slot do not: each is $2\partial_{\imath} v_{\Phi,t}=2i\,\partial_{\imath} c(x)$, in a static medium the $tt$ entry vanishes with $\partial_t c=0$, and the three $t\upsilon_{\mathrm{rnd}}$ entries vanish exactly when the medium is uniform at $x$.</p>
 <p>The qualification is that the frame is local, and the four temporal components are the whole of the failure. In a medium whose $c$ varies, the velocity's temporal slot is $ic(x)$, and the rigidity condition fails by</p>
 <p>$$
 \frac{\partial v_{\Phi,t}}{\partial r_\imath}=i\,\frac{\partial c}{\partial r_\imath}
@@ -234,7 +234,7 @@ $$</p>
 <p>What the transcription supplies is a set of letters that the seven articles after it can use without arguing about conventions. Four of them:</p>
 <ul>
 <li>The velocity is an element and its index stays low. $v_{\Phi,\imath}$ is the fourth coefficient of an element, on the pattern of $\nu_{\Phi,\imath}$; no velocity carries a raised index anywhere in the display, and the letter $u$ is not used for the velocity at all. The index labels a direction of the frame and is not a tensor slot, which is the third of the eight rules of <em>Frame and Metric Conventions</em>.</li>
-<li>The derivative is the algebra's own. $\partial/\partial R_t=-i\partial/\partial r'_t$ on the material sector, and the factor $c$ is the algebra's statement and not a convention. So the condition's $(t,\eta)$ pair carries an $i$ and its real form is the display of §<em>The three consequences</em>.</li>
+<li>The derivative is the algebra's own. $\partial/\partial R_t=-i\partial/\partial r'_t$ on the material sector, and the factor $c$ is the algebra's statement and not a convention. So the condition's $(t,\upsilon_{\mathrm{rnd}})$ pair carries an $i$ and its real form is the display of §<em>The three consequences</em>.</li>
 <li>The metric is $\delta_{\imath\jmath}$. One metric, all coefficients $+1$, and the local complex structure is a scale and not a coefficient. This is why the Tolman law appears as $Tc=\text{const}$ and not as a lapse.</li>
 <li>The condition is symmetric and the vorticity is antisymmetric. The two are the two halves of one gradient, and a reader who keeps them apart will not confuse this article's condition with the spin-half-fluid article's closure.</li>
 </ul>

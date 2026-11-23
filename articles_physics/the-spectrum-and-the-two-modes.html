@@ -74,7 +74,7 @@
 <p>The question is what a single element does when it multiplies. Left multiplication by $\tilde Q$ is a linear operator on the algebra, so it has eigenvalues and eigenspaces; the section computes them, decides when an eigenbasis exists, and classifies the elements for which it does not.</p>
 <p>The answer has two branches and one number between them.</p>
 <p>$$
-p_{\tilde Q}(X)=X^2-2Q_tX+Q_t^2+B^2,\qquad \operatorname{disc}p_{\tilde Q}=-4B^2,\qquad \lambda_\pm=Q_t\pm iB .
+p_{\tilde Q}(X)=X^2-2Q_tX+Q_t^2+B^2,\qquad \operatorname{disc}p_{\tilde Q}=-4B^2,\qquad \eta_{\pm}=Q_t\pm iB .
 $$</p>
 <p>The number is $B^2=Q_x^2+Q_y^2+Q_z^2$, the square of the vector part. It involves no scalar part, so the whole classification is blind to the trace and depends only on the direction and the modulus of the vector part.</p>
 <p>If $B^2\neq0$ the eigenvalues are distinct, the element is semisimple, the spectral idempotents exist, and an eigenbasis exists. If $B^2=0$ the eigenvalues have coalesced, the two-term decomposition fails, and a Jordan basis replaces the eigenbasis.</p>
@@ -118,22 +118,22 @@ $$</p>
 <h2 id="the-results-in-brief">The Results in Brief</h2>
 <h3 id="the-criterion">The Criterion</h3>
 <p><strong>An eigenvalue is a scalar for which a left ideal is proper, and the criterion turns that into one equation.</strong></p>
-<p>$$\lambda\ \text{is an eigenvalue of}\ \tilde Q\iff\tilde Q-\lambda e_t\ \text{is not invertible}\iff(\lambda-Q_t)^2+B^2=0 .$$</p>
-<p>The proof uses no matrix. If $\tilde Q-\lambda e_t$ is invertible, the left ideal it generates is the algebra; if it generates the algebra, injectivity of left multiplication in finite dimension gives a two-sided inverse. The unit condition is decided by the conjugate product,</p>
+<p>$$\eta\ \text{is an eigenvalue of}\ \tilde Q\iff\tilde Q-\eta e_t\ \text{is not invertible}\iff(\eta-Q_t)^2+B^2=0 .$$</p>
+<p>The proof uses no matrix. If $\tilde Q-\eta e_t$ is invertible, the left ideal it generates is the algebra; if it generates the algebra, injectivity of left multiplication in finite dimension gives a two-sided inverse. The unit condition is decided by the conjugate product,</p>
 <p>$$
-(\tilde Q-\lambda e_t)(\tilde Q-\lambda e_t)^{\natural}=\bigl((\lambda-Q_t)^2+B^2\bigr)e_t ,
+(\tilde Q-\eta e_t)(\tilde Q-\eta e_t)^{\natural}=\bigl((\eta-Q_t)^2+B^2\bigr)e_t ,
 $$</p>
 <p>which is a scalar, non-zero exactly off the two roots.</p>
 <p>The characteristic polynomial is quadratic, and its coefficients are the trace and the norm.</p>
 <p>$$
-p_{\tilde Q}(X)=X^2-2Q_tX+(Q_t^2+B^2),\qquad \lambda_\pm=Q_t\pm iB,\qquad \lambda_++\lambda_-=2Q_t,\qquad \lambda_+\lambda_-=Q_t^2+B^2 .
+p_{\tilde Q}(X)=X^2-2Q_tX+(Q_t^2+B^2),\qquad \eta_{\pm}=Q_t\pm iB,\qquad \eta_{+}+\eta_{-}=2Q_t,\qquad \eta_{+}\eta_{-}=Q_t^2+B^2 .
 $$</p>
 <p>Cayley–Hamilton is the same identity, and it gives the inverse.</p>
 <p>$$
 \tilde Q^2-2Q_t\tilde Q+(Q_t^2+B^2)e_t=0,\qquad \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{Q_t^2+B^2}\quad\text{when } Q_t^2+B^2\neq0 .
 $$</p>
-<p>The eigenspaces are right ideals. For a non-scalar element and an eigenvalue $\lambda$, the eigenvectors form $\operatorname{Ann}_\ell(\tilde Q-\lambda e_t)$, which is a non-zero proper right ideal, hence of complex dimension two.</p>
-<p>Left and right eigenvalues agree. The scalars are central, so $\tilde Qv=\lambda v$ and $\tilde Qv=v\lambda$ define the same set for $\lambda\in\mathbb{C}$, and that set is the spectrum.</p>
+<p>The eigenspaces are right ideals. For a non-scalar element and an eigenvalue $\eta$, the eigenvectors form $\operatorname{Ann}_\ell(\tilde Q-\eta e_t)$, which is a non-zero proper right ideal, hence of complex dimension two.</p>
+<p>Left and right eigenvalues agree. The scalars are central, so $\tilde Qv=\eta v$ and $\tilde Qv=v\eta$ define the same set for $\eta\in\mathbb{C}$, and that set is the spectrum.</p>
 <h3 id="the-discriminant-and-the-two-cases">The Discriminant and the Two Cases</h3>
 <p>Four descriptions of one condition.</p>
 <div class="table-scroll"><table>
@@ -150,7 +150,7 @@ $$</p>
 <tr>
 <td>regular</td>
 <td>$B^2\neq0$</td>
-<td>$\{\lambda_+,\lambda_-\}$, distinct</td>
+<td>$\{\eta_{+},\eta_{-}\}$, distinct</td>
 <td>two terms, unique</td>
 <td>exists</td>
 </tr>
@@ -165,7 +165,7 @@ $$</p>
 </table></div>
 <p>The equivalence is the whole content of the split.</p>
 <p>$$
-B^2\neq0\iff\lambda_+\neq\lambda_-\iff\tilde Q\ \text{semisimple}\iff L_{\tilde Q}\ \text{diagonalisable} .
+B^2\neq0\iff\eta_{+}\neq\eta_{-}\iff\tilde Q\ \text{semisimple}\iff L_{\tilde Q}\ \text{diagonalisable} .
 $$</p>
 <p><strong>The condition is not multiplicative.</strong> Neither branch is closed under products, and the two witnesses are</p>
 <p>$$
@@ -227,21 +227,21 @@ $$</p>
 $$</p>
 <p>The spectral idempotents are the Lagrange idempotents, and they are unique.</p>
 <p>$$
-\tilde\Pi_{\mathrm{id},\pm}=\frac{e_t\pm\vec Z}{2}=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp},\qquad
+\tilde\Pi_{\mathrm{id},\pm}=\frac{e_t\pm\vec Z}{2}=\frac{\tilde Q-\eta_\mp e_t}{\eta_{\pm}-\eta_\mp},\qquad
 \tilde\Pi_{\mathrm{id},\pm}^2=\tilde\Pi_{\mathrm{id},\pm},\qquad \tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0,\qquad \tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t ,
 $$</p>
 <p>$$
-\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-} .
+\tilde Q=\eta_{+}\tilde\Pi_{\mathrm{id},++}\eta_{-}\tilde\Pi_{\mathrm{id},-} .
 $$</p>
 <p>The eigenspaces of $L_{\tilde Q}$ are the right ideals generated by the idempotents, each of complex dimension two.</p>
 <p>$$
-\ker(L_{\tilde Q}-\lambda_\pm)=\tilde\Pi_{\mathrm{id},\pm}\mathbb{B} .
+\ker(L_{\tilde Q}-\eta_{\pm})=\tilde\Pi_{\mathrm{id},\pm}\mathbb{B} .
 $$</p>
 <p>An eigenbasis is one vector in each corner, and the left and right actions are both diagonal in it.</p>
 <p>$$
 \mathcal{B}(\tilde Q)=(\tilde\Pi_{\mathrm{id},+},\ \vec\Pi_{\mathrm{nil},-},\ \vec\Pi_{\mathrm{nil},+},\ \tilde\Pi_{\mathrm{id},-}),\qquad
-L_{\tilde Q}=\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-),\qquad
-R_{\tilde Q}=\operatorname{diag}(\lambda_+,\lambda_-,\lambda_+,\lambda_-) .
+L_{\tilde Q}=\operatorname{diag}(\eta_{+},\eta_{+},\eta_{-},\eta_{-}),\qquad
+R_{\tilde Q}=\operatorname{diag}(\eta_{+},\eta_{-},\eta_{+},\eta_{-}) .
 $$</p>
 <p>The four vectors are the matrix units, and their multiplication is the corner rule.</p>
 <div class="table-scroll"><table>
@@ -294,7 +294,7 @@ $$</p>
 <p>$$
 \tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-},
 \qquad
-\mathsf M_2^{Q}(\tilde Q)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
+\mathsf M_2^{Q}(\tilde Q)=\begin{pmatrix}\eta_{+}&0\\0&\eta_{-}\end{pmatrix}.
 $$</p>
 <p>What the basis diagonalises is exactly the pencil generated by the element.</p>
 <p>$$
@@ -316,32 +316,32 @@ $$</p>
 <tr>
 <td>$\tilde\Pi_{\mathrm{id},+}$</td>
 <td>$\mathbb{B}_{++}$</td>
-<td>$\lambda_+$</td>
-<td>$\lambda_+$</td>
+<td>$\eta_{+}$</td>
+<td>$\eta_{+}$</td>
 <td>$+1$</td>
 <td>$+1$</td>
 </tr>
 <tr>
 <td>$\vec\Pi_{\mathrm{nil},-}$</td>
 <td>$\mathbb{B}_{+-}$</td>
-<td>$\lambda_+$</td>
-<td>$\lambda_-$</td>
+<td>$\eta_{+}$</td>
+<td>$\eta_{-}$</td>
 <td>$+1$</td>
 <td>$-1$</td>
 </tr>
 <tr>
 <td>$\vec\Pi_{\mathrm{nil},+}$</td>
 <td>$\mathbb{B}_{-+}$</td>
-<td>$\lambda_-$</td>
-<td>$\lambda_+$</td>
+<td>$\eta_{-}$</td>
+<td>$\eta_{+}$</td>
 <td>$-1$</td>
 <td>$+1$</td>
 </tr>
 <tr>
 <td>$\tilde\Pi_{\mathrm{id},-}$</td>
 <td>$\mathbb{B}_{--}$</td>
-<td>$\lambda_-$</td>
-<td>$\lambda_-$</td>
+<td>$\eta_{-}$</td>
+<td>$\eta_{-}$</td>
 <td>$-1$</td>
 <td>$-1$</td>
 </tr>
@@ -489,7 +489,7 @@ $$</p>
 <p>$$
 \tilde Q_2=S\tilde Q_1S^{-1}\ (S\ \text{an invertible element})\quad\Longrightarrow\quad \sigma(\tilde Q_2)=\sigma(\tilde Q_1) ,
 $$</p>
-<p>and off the cone the class is determined by the unordered pair $\{\lambda_+,\lambda_-\}$. On the cone the spectrum is the singleton $\{Q_t\}$ and carries no information beyond the scalar part: exactly two classes share it, the central class and the Jordan class.</p>
+<p>and off the cone the class is determined by the unordered pair $\{\eta_{+},\eta_{-}\}$. On the cone the spectrum is the singleton $\{Q_t\}$ and carries no information beyond the scalar part: exactly two classes share it, the central class and the Jordan class.</p>
 <h3 id="the-worked-cases">The Worked Cases</h3>
 <p>Eight elements, one per regime.</p>
 <div class="table-scroll"><table>
@@ -498,8 +498,8 @@ $$</p>
 <th>case</th>
 <th>$\tilde Q$</th>
 <th>$B$</th>
-<th>$\lambda_+$</th>
-<th>$\lambda_-$</th>
+<th>$\eta_{+}$</th>
+<th>$\eta_{-}$</th>
 <th>regime</th>
 </tr>
 </thead>
@@ -579,12 +579,12 @@ $$</p>
 <p>Case 4 is the warning about the root. Its $B$ is imaginary and its spectrum is real, so the root need not be real for the spectrum to be real.</p>
 <h2 id="the-interpretations">The Interpretations</h2>
 <h3 id="i5a-the-eigenvalue-is-a-complex-frequency-and-math209-is-the-half-gap">I.5.a — The Eigenvalue Is a Complex Frequency, and $B$ Is the Half-Gap</h3>
-<p>Read: the spectrum is the pair $\lambda_\pm=Q_t\pm iB$, so the two eigenvalues differ by $2iB$ and their product is the norm.</p>
-<p>The half-gap is $iB$, not $B$. The difference is $\lambda_+-\lambda_-=2iB$; the factor $i$ is the one in the characteristic polynomial and it is not decoration. Writing the eigenvalues as complex frequencies in the convention $e^{-i\lambda t}$,</p>
+<p>Read: the spectrum is the pair $\eta_{\pm}=Q_t\pm iB$, so the two eigenvalues differ by $2iB$ and their product is the norm.</p>
+<p>The half-gap is $iB$, not $B$. The difference is $\eta_{+}-\eta_{-}=2iB$; the factor $i$ is the one in the characteristic polynomial and it is not decoration. Writing the eigenvalues as complex frequencies in the convention $e^{-i\eta t}$,</p>
 <p>$$
-\lambda_\pm=\omega_\pm-i\gamma_\pm,\qquad B=\frac{\gamma_--\gamma_+}{2}-\frac{i}{2}\bigl(\omega_+-\omega_-\bigr),
+\eta_{\pm}=\omega_\pm-i\gamma_\pm,\qquad B=\frac{\gamma_--\gamma_+}{2}-\frac{i}{2}\bigl(\omega_+-\omega_-\bigr),
 $$</p>
-<p>so the real part of $B$ is half the difference of the damping rates and the imaginary part is minus half the difference of the oscillation frequencies. In the convention $e^{+i\lambda t}$ the two roles are exchanged.</p>
+<p>so the real part of $B$ is half the difference of the damping rates and the imaginary part is minus half the difference of the oscillation frequencies. In the convention $e^{+i\eta t}$ the two roles are exchanged.</p>
 <p>The physical reading is that one algebraic number has three sector names. On the material sector $B$ is a momentum magnitude; on the informational sector it is a half-gap; for a complex $B$ it is a complex half-splitting, and the case is the general one, since normality is not implied by spectral regularity.</p>
 <p>The boundary. The frequency reading needs an evolution convention, and the algebra supplies none. For an observable the eigenvalues are outcomes rather than frequencies, and the word <em>gap</em> is then the difference of two outcomes.</p>
 <h3 id="i5b-reality-of-the-spectrum-is-a-property-of-the-sector-not-of-the-algebra">I.5.b — Reality of the Spectrum Is a Property of the Sector, Not of the Algebra</h3>
@@ -626,7 +626,7 @@ $$</p>
 <h3 id="i5c-the-spectrum-is-frame-blind-and-the-frame-is-what-it-does-not-see">I.5.c — The Spectrum Is Frame-Blind, and the Frame Is What It Does Not See</h3>
 <p>Read: the spectrum has two complex numbers and the element has eight real parameters. It fixes the trace and the norm and nothing else.</p>
 <p>$$
-\lambda_++\lambda_-=2Q_t,\qquad \lambda_+\lambda_-=Q_t^2+B^2 ,
+\eta_{+}+\eta_{-}=2Q_t,\qquad \eta_{+}\eta_{-}=Q_t^2+B^2 ,
 $$</p>
 <p>and the axis $\vec Z$ carries two free complex angles, four real parameters, on which the two eigenvalues are silent.</p>
 <p>The similarity theorem is the sharp form of the blindness. Off the cone the similarity class is the unordered spectrum, so the spectrum is a complete invariant of the element up to a change of frame, and an incomplete invariant of the element. A measurement that reads the spectrum therefore determines the element up to conjugation and no further.</p>
@@ -635,7 +635,7 @@ $$</p>
 <h3 id="i5d-the-eigenbasis-belongs-to-the-direction-not-to-the-element">I.5.d — The Eigenbasis Belongs to the Direction, Not to the Element</h3>
 <p>Read: $\tilde Q'=a\tilde Q+be_t$ has the same root, the same idempotents and the same eigenbasis; only the eigenvalues change, affinely.</p>
 <p>$$
-\vec Z'=\vec Z,\qquad \mathcal{B}(\tilde Q')=\mathcal{B}(\tilde Q),\qquad \lambda_\pm'=a\lambda_\pm+b .
+\vec Z'=\vec Z,\qquad \mathcal{B}(\tilde Q')=\mathcal{B}(\tilde Q),\qquad \eta_{\pm}'=a\eta_{\pm}+b .
 $$</p>
 <p>So the eigenbasis is a function on the projective space of the vector part, minus the conic. The element projects to $[\vec Q]$, the fibre of the projection is the affine line $\{a\tilde Q+be_t\}$, and on that fibre the basis is constant while the spectrum is affine.</p>
 <p>The worked cases are the demonstration. Cases 2 to 5 have one direction, one root $\vec Z=-i\vec e_x$, one pair of idempotents, one eigenbasis, and four different spectra: imaginary, diagonal-complex, real, and generic-complex. Scaling the element and shifting its scalar part moved the diagonal and left the frame alone.</p>
@@ -644,8 +644,8 @@ $$</p>
 <h3 id="i5e-two-eigenvalues-are-two-modes-of-one-element-not-two-particles">I.5.e — Two Eigenvalues Are Two Modes of One Element, Not Two Particles</h3>
 <p>Read: each eigenvalue has multiplicity two on the algebra, because each eigenspace is a right ideal of complex dimension two. The spectrum is two numbers repeated, and the element is one object.</p>
 <p>$$
-\ker(L_{\tilde Q}-\lambda_\pm)=\tilde\Pi_{\mathrm{id},\pm}\mathbb{B},\qquad \dim_{\mathbb{C}}=2,\qquad
-L_{\tilde Q}\ \text{has eigenvalues}\ (\lambda_+,\lambda_+,\lambda_-,\lambda_-) .
+\ker(L_{\tilde Q}-\eta_{\pm})=\tilde\Pi_{\mathrm{id},\pm}\mathbb{B},\qquad \dim_{\mathbb{C}}=2,\qquad
+L_{\tilde Q}\ \text{has eigenvalues}\ (\eta_{+},\eta_{+},\eta_{-},\eta_{-}) .
 $$</p>
 <p><strong>The arithmetic of a sum rules out a particle count.</strong> In the lightlike decomposition of a four-momentum the two coefficients add to twice the energy, not to the energy, and the two terms are imaginary multiples of idempotents, so neither is a positive-energy state. The element carries one mass-shell condition, not two.</p>
 <p>The physical reading is that a two-term spectral writing is a decomposition of one object. A second particle would need a second independent element, a tensor product, and a second mass-shell condition; the spectral writing supplies none of them.</p>
@@ -653,7 +653,7 @@ $$</p>
 <h3 id="i5f-the-diagonal-is-the-rate-and-the-mixed-corner-is-the-shear-and-on-the-cone-the-clock-stops">I.5.f — The Diagonal Is the Rate and the Mixed Corner Is the Shear, and on the Cone the Clock Stops</h3>
 <p>Read: in the adapted frame the semisimple part occupies the two diagonal corners and the nilpotent part a single mixed corner. The diagonal acts as a rate; the mixed corner acts as a shift with no rate of its own.</p>
 <p>$$
-\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-+}\vec\Pi_{\mathrm{nil}}\quad(\vec\Pi_{\mathrm{nil}}=0\ \text{off the cone}),\qquad
+\tilde Q=\eta_{+}\tilde\Pi_{\mathrm{id},++}\eta_{-}\tilde\Pi_{\mathrm{id},-+}\vec\Pi_{\mathrm{nil}}\quad(\vec\Pi_{\mathrm{nil}}=0\ \text{off the cone}),\qquad
 \tilde Q\tilde\Pi_{\mathrm{id},-}=Q_t\tilde\Pi_{\mathrm{id},-+}\vec\Pi_{\mathrm{nil},-} .
 $$</p>
 <p>On the cone the exponential is polynomial.</p>
@@ -676,7 +676,7 @@ $$</p>
 <h3 id="i5h-the-two-outcomes-exist-and-they-are-not-projectors">I.5.h — The Two Outcomes Exist, and They Are Not Projectors</h3>
 <p>Read: the spectral idempotents $\tilde\Pi_{\mathrm{id},\pm}$ are unique, orthogonal and complete, and they are the Lagrange idempotents of the element. They are idempotents, not Hermitian projectors.</p>
 <p>$$
-\tilde\Pi_{\mathrm{id},\pm}=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp},\qquad \tilde\Pi_{\mathrm{id},+}^{2}=\tilde\Pi_{\mathrm{id},+},\qquad \tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0,\qquad \tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t .
+\tilde\Pi_{\mathrm{id},\pm}=\frac{\tilde Q-\eta_\mp e_t}{\eta_{\pm}-\eta_\mp},\qquad \tilde\Pi_{\mathrm{id},+}^{2}=\tilde\Pi_{\mathrm{id},+},\qquad \tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0,\qquad \tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t .
 $$</p>
 <p>The two properties are different. A Hermitian idempotent satisfies $\tilde\Pi_{\mathrm{id}}^{*}=\tilde\Pi_{\mathrm{id}}$; the spectral idempotent of a non-normal element does not, and the two spectral idempotents are then not orthogonal in the Hilbert form:</p>
 <p>$$
@@ -692,8 +692,8 @@ $$</p>
 <h3 id="i5i-the-spectrum-is-copy-blind-so-chirality-is-not-a-spectral-label">I.5.i — The Spectrum Is Copy-Blind, So Chirality Is Not a Spectral Label</h3>
 <p>Read: left multiplication by $\tilde Q$ acts on each spinor space with the same two eigenvalues, while right multiplication is scalar on each.</p>
 <p>$$
-L_{\tilde Q}\big|_{S_+}=\operatorname{diag}(\lambda_+,\lambda_-),\qquad L_{\tilde Q}\big|_{S_-}=\operatorname{diag}(\lambda_+,\lambda_-),\qquad
-\zeta_+\tilde Q=\lambda_+\zeta_+,\qquad \zeta_-\tilde Q=\lambda_-\zeta_- .
+L_{\tilde Q}\big|_{S_+}=\operatorname{diag}(\eta_{+},\eta_{-}),\qquad L_{\tilde Q}\big|_{S_-}=\operatorname{diag}(\eta_{+},\eta_{-}),\qquad
+\zeta_+\tilde Q=\eta_{+}\zeta_+,\qquad \zeta_-\tilde Q=\eta_{-}\zeta_- .
 $$</p>
 <p>So the two gradings coexist and are not the same grading.</p>
 <p>$$
@@ -794,27 +794,27 @@ $$</p>
 </table></div>
 <p>The square-root law is the observable mark.</p>
 <p>$$
-B(\epsilon)=\sqrt{2\epsilon(\vec Q_0,\vec Q_1)}\,\bigl(1+O(\epsilon)\bigr),\qquad \lambda_\pm(\epsilon)=Q_t(\epsilon)\pm iB(\epsilon),
+B(\epsilon)=\sqrt{2\epsilon(\vec Q_0,\vec Q_1)}\,\bigl(1+O(\epsilon)\bigr),\qquad \eta_{\pm}(\epsilon)=Q_t(\epsilon)\pm iB(\epsilon),
 $$</p>
 <p>so a linear perturbation of the parameter produces a square-root response, because the two eigenvalues are the two branches of one square root.</p>
 <p>The physical reading is a theorem about where exceptional points can occur. A degeneracy that keeps the algebra semisimple is a coincidence of two eigenvalues with the states still independent; a degeneracy that destroys the projections is a coalescence of the states themselves. The first is the Hermitian case, the second needs a non-Hermitian element, and the reason is a sign in a sum of three squares.</p>
 <p>The boundary. The $\sqrt{\epsilon}$ law is generic for a family, not universal: the coefficient depends on the direction, and a direction orthogonal to $\vec Q_0$ gives a higher order. The algebra supplies the normal form at the point, not the family.</p>
 <h3 id="i5l-a-real-spectrum-is-not-a-stable-system">I.5.l — A Real Spectrum Is Not a Stable System</h3>
 <p>Read: case 4 of the worked examples is $\sqrt2 e_t+i\vec e_x$, with $B=i$ and eigenvalues $\sqrt2-1$ and $\sqrt2+1$. The root is $\vec Z=-i\vec e_x$, an imaginary root, and the spectrum is real.</p>
-<p>The lesson is that reality of the eigenvalues is a statement about oscillation, not about stability. A real $\lambda$ in the convention $e^{-i\lambda t}$ gives a pure exponential and no oscillation; a complex $\lambda$ gives an oscillation modulated by a rate. Which of the two is stable is decided by the sign of the real part of $\lambda$, that is by $\operatorname{Re}Q_t$ together with the imaginary part of $B$, and not by the reality of the pair.</p>
+<p>The lesson is that reality of the eigenvalues is a statement about oscillation, not about stability. A real $\eta$ in the convention $e^{-i\eta t}$ gives a pure exponential and no oscillation; a complex $\eta$ gives an oscillation modulated by a rate. Which of the two is stable is decided by the sign of the real part of $\eta$, that is by $\operatorname{Re}Q_t$ together with the imaginary part of $B$, and not by the reality of the pair.</p>
 <p>The same element shows that the root need not be real. $\vec Z$ is a square root of $e_t$ in the algebra, and it can be imaginary, real or complex; the branch is a convention and the two branches exchange the two eigenvalues.</p>
 <p>The physical reading is that a purely exponential mode is a rate and not a non-physical solution. A pair of real eigenvalues is a pair of amplification and attenuation factors; a pair of imaginary eigenvalues is a pair of oscillations. Both are physical, and the corpus's use of imaginary frequencies for propagation and real ones for damping is the same distinction read in the two sectors.</p>
 <p>The boundary. The reading depends on the evolution convention and on the sector. In the material sector the eigenvalues are imaginary for a real four-momentum, and the word <em>real spectrum</em> would describe the informational sector instead.</p>
 <h2 id="the-limits">The Limits</h2>
-<p>The frequency reading is a convention. Every statement about oscillation, damping and growth depends on whether the evolution is written $e^{-i\lambda t}$ or $e^{+i\lambda t}$, and the algebra fixes neither. The entry states the algebra and names the convention when it uses one.</p>
+<p>The frequency reading is a convention. Every statement about oscillation, damping and growth depends on whether the evolution is written $e^{-i\eta t}$ or $e^{+i\eta t}$, and the algebra fixes neither. The entry states the algebra and names the convention when it uses one.</p>
 <p>The identification of the spectrum with a physical quantity is a sector dictionary. On $\mathbb{B}_\Phi$ the pair is a Doppler pair; on $\mathbb{B}_\Psi$ it is an outcome pair. The algebra supplies the same two numbers in both cases, and the entry does not claim that a spectral measurement of an arbitrary element has a physical meaning.</p>
 <p><strong>The eigenbasis exists only off the cone.</strong> Every statement about the modes, the projectors and the diagonal basis is a statement on $\{B^2\neq0\}$, which is open and dense and therefore generic, but which excludes exactly the loci the physics cares about: rest frames, null fields, and exceptional points.</p>
 <p>The normalisation is not canonical. The pair $\vec\Pi_{\mathrm{nil},\pm}$ is fixed only up to a reciprocal rescaling, and the two normalisations offered by the mathematics — the transverse vector and the antisymmetric part — are different choices of representative. Nothing in the entry depends on which is used, but a numerical claim about a component does.</p>
 <p>The Jordan frame is chosen. On the cone the two idempotents that split the flag are not determined by the element; the definite Hermitian form selects one pair, which is a choice of a metric and not a consequence of the algebra.</p>
 <h2 id="summary">Summary</h2>
 <ul>
-<li>The spectrum is $\lambda_\pm=Q_t\pm iB$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, and the discriminant of the characteristic polynomial is $-4B^2$.</li>
-<li>An eigenvalue is a scalar for which $\tilde Q-\lambda e_t$ is not invertible; the criterion needs no module and no matrix.</li>
+<li>The spectrum is $\eta_{\pm}=Q_t\pm iB$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, and the discriminant of the characteristic polynomial is $-4B^2$.</li>
+<li>An eigenvalue is a scalar for which $\tilde Q-\eta e_t$ is not invertible; the criterion needs no module and no matrix.</li>
 <li>$B^2\neq0$ is equivalent to distinct eigenvalues, semisimplicity and diagonalisability; $B^2=0$ is the spectral-degenerate cone.</li>
 <li>The characteristic polynomial has two coefficients and the minimal polynomial separates the four types; two pairs of types share a characteristic polynomial.</li>
 <li>Off the cone the root $\vec Z=-i\vec Q/B$ exists, the spectral idempotents are the Lagrange idempotents, and each eigenspace is a right ideal of complex dimension two.</li>
@@ -846,7 +846,7 @@ $$</p>
 <td>square of the vector part; $B^2=-\vec Q^2$</td>
 </tr>
 <tr>
-<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>$\eta_{\pm}=Q_t\pm iB$</td>
 <td>the eigenvalues</td>
 </tr>
 <tr>
