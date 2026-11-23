@@ -116,7 +116,7 @@ $$
 
 The first is the amplitude equation and the second is the transport equation. Together they are equivalent to the Klein–Gordon equation for a field of this form, and the equivalence runs both ways: every solution of the pair gives a solution of the equation through the boxed form, and every solution of the equation that is nowhere zero gives a solution of the pair. At a node the pair still holds, with the action undefined and the products finite.
 
-**One length unit, and no setting of $c=1$.** Both equations are written with the temporal derivative $\partial/\partial r'_t$, with no $c$ beside it and no factor $c^{-2}$ on the temporal term. That is the coordinate $r'_t=c\,t'$ doing the conversion once, in the definition of $\Box_\Phi$, and it is not a choice of units made at the level of the equation.
+**One length unit, and no setting of the speed of light to one.** Both equations are written with the temporal derivative $\partial/\partial r'_t$, with no $c$ beside it and no factor $c^{-2}$ on the temporal term. That is the coordinate $r'_t=c\,t'$ doing the conversion once, in the definition of $\Box_\Phi$, and it is not a choice of units made at the level of the equation.
 
 ### The amplitude equation
 

@@ -185,7 +185,7 @@ $$
 |\vec A| = m\kappa\,e ,
 $$
 
-so the (dimensionless) eccentricity is the magnitude of a conserved vector in units of $m\kappa$. The magnitudes of the two conserved vectors fix the shape of a bound orbit: $L = |\vec L|$ fixes the size through $p = L^2/(m\kappa)$ and $|\vec A| = m\kappa e$ fixes the eccentricity, while the energy follows from the pair through $e^2 = 1 + 2EL^2/(m\kappa^2)$. Numerically, for the orbit above with $m = \kappa = 1$, $E = -0.595$, $L = 0.9$, the conserved vector has $|\vec A| = 0.19$ and $e = 0.19$, and the numerical integration of the orbit gives $\vec A = (-0.19, 0)$, constant along the orbit to better than $10^{-9}$, which is the accuracy of the integration.
+so the (dimensionless) eccentricity is the magnitude of a conserved vector in units of $m\kappa$. The magnitudes of the two conserved vectors fix the shape of a bound orbit: $L = |\vec L|$ fixes the size through $p = L^2/(m\kappa)$ and $|\vec A| = m\kappa e$ fixes the eccentricity, while the energy follows from the pair through $e^2 = 1 + 2EL^2/(m\kappa^2)$. Numerically, for the orbit above with $Gm=\kappa$, in units of $Gm$, $E = -0.595$, $L = 0.9$, the conserved vector has $|\vec A| = 0.19$ and $e = 0.19$, and the numerical integration of the orbit gives $\vec A = (-0.19, 0)$, constant along the orbit to better than $10^{-9}$, which is the accuracy of the integration.
 
 ### The Hodograph
 

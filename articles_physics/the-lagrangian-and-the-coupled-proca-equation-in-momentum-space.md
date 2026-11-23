@@ -158,7 +158,7 @@ $$
 \frac{\partial^{2}S}{\partial A_\eta^{2}}=\tfrac12\bigl(\pi_\eta^{2}+\pi^{2}-k_m^{2}\bigr) ,
 $$
 
-so the temporal coefficient has no $\pi_t^{2}$ and the three spatial coefficients each carry $\pi_t^{2}$ through $\pi^{2}$. Measured with $\varkappa=1$, $\vec A=(0.9,0.2,0.1)$ and $\vec k_\Phi=(0.3,0.2,0.1)$, so $\vec\pi=(1.2,0.4,0.2)$ and $\lvert\vec\pi\rvert^{2}=1.64$:
+so the temporal coefficient has no $\pi_t^{2}$ and the three spatial coefficients each carry $\pi_t^{2}$ through $\pi^{2}$. Measured at the unit charge, $\vec A=(0.9,0.2,0.1)$ and $\vec k_\Phi=(0.3,0.2,0.1)$, so $\vec\pi=(1.2,0.4,0.2)$ and $\lvert\vec\pi\rvert^{2}=1.64$:
 
 | $\pi_t$ | $\partial^{2}S/\partial A_0^{2}$ | $\tfrac12(\lvert\vec\pi\rvert^{2}+k_m^{2})$ | $\partial^{2}S/\partial A_1^{2}$ |
 | --- | --- | --- | --- |

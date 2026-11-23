@@ -233,7 +233,7 @@ $$
 dM=T\,dS+\Omega\,dJ+Ξ\,dϘ\;},
 $$
 
-in the Planck ratios, with the dictionary of the Conventions. In the explicit checks below we set $G=1$ as well — equivalently, $G$ is absorbed into the normalization of the mass and the area — so that the coefficient in the area term is $\kappa/8\pi$. Everything on the right is a function of the state $(M,J,Ϙ)$, and the statement is an identity among one-forms on that three-dimensional space. The coefficients are not free: the $\kappa/(8\pi G)$ multiplies $\delta A$, and $\Omega$ and $Ξ$ are the horizon's angular velocity and electric potential. This section checks all three terms on the general Kerr–Newman horizon.
+in the Planck ratios, with the dictionary of the Conventions. In the explicit checks below $G$ is divided out as well — equivalently, it is absorbed into the normalization of the mass and the area — so that the coefficient in the area term is $\kappa/8\pi$. Everything on the right is a function of the state $(M,J,Ϙ)$, and the statement is an identity among one-forms on that three-dimensional space. The coefficients are not free: the $\kappa/(8\pi G)$ multiplies $\delta A$, and $\Omega$ and $Ξ$ are the horizon's angular velocity and electric potential. This section checks all three terms on the general Kerr–Newman horizon.
 
 ### The Kerr–Newman Horizon
 
