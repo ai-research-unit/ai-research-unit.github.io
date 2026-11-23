@@ -14,7 +14,7 @@ This is the variational companion of [The Charged Spin-Half Fluid](the-charged-s
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k\in\mathbb{B}_\Phi$, covariant derivative $\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Gauge transformations are central: $\tilde\Xi\mapsto\tilde\Xi\lambda$ with $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})\in\mathbb{C}$, $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Gamma$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_{\imath\in\{x,y,z\}} A_\imath\vec e_\imath\in\mathbb{B}_\Phi$, covariant derivative $\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Gauge transformations are central: $\tilde\Xi\mapsto\tilde\Xi\lambda$ with $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})\in\mathbb{C}$, $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Gamma$.
 
 ## The Action in the Fluid Variables: The Kinetic Term and the Two Rates
 

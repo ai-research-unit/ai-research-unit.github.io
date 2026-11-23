@@ -294,7 +294,7 @@ The comparison is one-sided, and the one implication is a theorem.
 *Proof.* Positivity gives $|Q_t|>\lVert\vec Q\rVert$, hence $Q_t\neq0$. If $\tilde Q$ were a zero divisor then $Q_t^{2}=-B^{2}$, so
 
 $$
-|Q_t|^{2}=\Bigl|\sum_{k\in\{x,y,z\}}Q_k^{2}\Bigr|\le\sum_{k\in\{x,y,z\}}|Q_k|^{2}=\lVert\vec Q\rVert^{2},
+|Q_t|^{2}=\Bigl|\sum_{\imath\in\{x,y,z\}}Q_\imath^{2}\Bigr|\le\sum_{\imath\in\{x,y,z\}}|Q_\imath|^{2}=\lVert\vec Q\rVert^{2},
 $$
 
 against positivity. A non-zero element that is not a zero divisor is invertible.

@@ -37,7 +37,7 @@ The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the act
 The element-form action of the companion is
 
 $$
-S[\tilde\Xi,\tilde\Xi^{*}]=\int\mathrm{d}^{4}x\;\mathrm{Sc}\Big[(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi-\sum_{k\in\{x,y,z\}}(\partial_{r_k}\tilde\Xi)^{*}\partial_{r_k}\tilde\Xi-4\pi^{2}\nu_m^{2}\tilde\Xi^{*}\tilde\Xi\Big].
+S[\tilde\Xi,\tilde\Xi^{*}]=\int\mathrm{d}^{4}x\;\mathrm{Sc}\Big[(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi-\sum_{\imath\in\{x,y,z\}}(\partial_{r_k}\tilde\Xi)^{*}\partial_{r_k}\tilde\Xi-4\pi^{2}\nu_m^{2}\tilde\Xi^{*}\tilde\Xi\Big].
 $$
 
 The substitution is a change of variables in this functional. The subsections below compute the two terms, record where the rapidity sits in each of them, and assemble the action.
@@ -141,7 +141,7 @@ where the rotor cancels by the invariance of $\mathrm{Sc}$ under conjugation and
 
 $$
 \boxed{\;
-S=\int\mathrm{d}^{4}x\;\Bigl\{g_{ab}(p)\,\partial_{r'_t}p_{a}\partial_{r'_t}p_{b}-\sum_{k\in\{x,y,z\}}g_{ab}(p)\,\partial_{r_k}p_{a}\partial_{r_k}p_{b}-\varrho^{2}V(p)\Bigr\}\;}
+S=\int\mathrm{d}^{4}x\;\Bigl\{g_{ab}(p)\,\partial_{r'_t}p_{a}\partial_{r'_t}p_{b}-\sum_{\imath\in\{x,y,z\}}g_{ab}(p)\,\partial_{r_k}p_{a}\partial_{r_k}p_{b}-\varrho^{2}V(p)\Bigr\}\;}
 $$
 
 with $p_{a}=(\varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})$ and $g$ known on the slice of fixed axes, which is the boxed metric above. The functional is the element-form action in other coordinates: no term was added, no term was dropped, and the only object that changed is the measure of the parameter space.
@@ -309,7 +309,7 @@ $$
 j_{r'_t}=2\,\mathrm{Re}\,\mathrm{Sc}\big[i(\partial_{r'_t}\tilde\Xi)^{*}\tilde\Xi\big]
 =2\varrho^{2}\,\partial_{r'_t}\theta_{\mathrm{pha}}=\frac{2\pi 2\varrho^{2}}{h}\,\partial_{r'_t}S_{\tilde\Xi},
 \qquad
-j_k=-2\varrho^{2}\,\partial_{r_k}\theta_{\mathrm{pha}},
+j_\imath=-2\varrho^{2}\,\partial_{r_k}\theta_{\mathrm{pha}},
 $$
 
 because $\mathcal{A}_{\imath}=\partial_{\imath}\ln \varrho+i\partial_{\imath}\theta_{\mathrm{pha}}$, so that $i\mathcal{A}_{\imath}^{*}$ has scalar part $\partial_{\imath}\theta_{\mathrm{pha}}$. The charge density is therefore the density times the phase rate, and the phase rate is minus the energy over $\frac{h}{2\pi} c$,
@@ -330,7 +330,7 @@ which is the companion's $-2\nu_m\rho_{\mathrm{chg}}$ with the parent's $\rho_{\
 **Conservation is one of the two Euler–Lagrange equations.** Taking the divergence,
 
 $$
-\partial_{r'_t}j_{r'_t}+\sum_{k\in\{x,y,z\}}\partial_{r_k}j_k
+\partial_{r'_t}j_{r'_t}+\sum_{\imath\in\{x,y,z\}}\partial_{r_k}j_\imath
 =2\Bigl[\partial_{r'_t}\bigl(\varrho^{2}\partial_{r'_t}\theta_{\mathrm{pha}}\bigr)-\vec\nabla_\Phi\cdot\bigl(\varrho^{2}\vec\nabla_\Phi\theta_{\mathrm{pha}}\bigr)\Bigr],
 $$
 
@@ -373,7 +373,7 @@ The second equation of the pair is the variation of $\varrho$, and in the polar 
 The polar action is the element-form action in the coordinates of the word,
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{g_{ab}(p)\,\partial_{r'_t}p_{a}\partial_{r'_t}p_{b}-\sum_{k\in\{x,y,z\}}g_{ab}(p)\,\partial_{r_k}p_{a}\partial_{r_k}p_{b}-\varrho^{2}V(p)\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{g_{ab}(p)\,\partial_{r'_t}p_{a}\partial_{r'_t}p_{b}-\sum_{\imath\in\{x,y,z\}}g_{ab}(p)\,\partial_{r_k}p_{a}\partial_{r_k}p_{b}-\varrho^{2}V(p)\Bigr\},
 $$
 
 with the kinetic Lagrangian of one direction
@@ -417,7 +417,7 @@ For the general element the equivalence with the Klein–Gordon equation is exac
 | $p_{a}$ | The eight parameters as coordinates |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $V$ | $\mathrm{Sc}(\tilde\Xi^{*}\tilde M\tilde\Xi)/\varrho^{2}$, real, a function of rapidity and axis |
-| $j_{r'_t},\ j_k$ | Charge current; $j_{r'_t}=2\rho_{\mathrm{num}}\partial_{r'_t}\theta_{\mathrm{pha}}$ |
+| $j_{r'_t},\ j_\imath$ | Charge current; $j_{r'_t}=2\rho_{\mathrm{num}}\partial_{r'_t}\theta_{\mathrm{pha}}$ |
 | $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}E/(mc^{2})$ | Charge density; $j_{r'_t}=-4\pi\nu_m\rho_{\mathrm{chg}}$ |
 | $T_{00}$ | Energy density; four squares plus $\varrho^{2}V$ |
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | Quantum potential of the amplitude equation |

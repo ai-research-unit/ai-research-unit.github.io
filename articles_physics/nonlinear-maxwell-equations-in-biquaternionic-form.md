@@ -39,7 +39,7 @@ $$
 \vec e_x^2 = \vec e_y^2 = \vec e_z^2 = +e_t, \qquad \vec e_x \vec e_y = -\vec e_y \vec e_x = i\vec e_z,
 $$
 
-so that in general $\vec e_{\imath} \vec e_{\jmath} = \delta_{\imath\jmath}e_t + i\varepsilon_{\imath\jmath\lambda}\vec e_\lambda$. **This is not the corpus's basis.** The corpus's quaternion units satisfy $\vec e_{\imath}^2 = -e_t$ and $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \varepsilon_{\imath\jmath\lambda}\vec e_\lambda$. The two are related by
+so that in general $\vec e_{\imath} \vec e_{\jmath} = \delta_{\imath\jmath}e_t + i\varepsilon_{\imath\jmathk}\vec e_\imath$. **This is not the corpus's basis.** The corpus's quaternion units satisfy $\vec e_{\imath}^2 = -e_t$ and $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \varepsilon_{\imath\jmathk}\vec e_\imath$. The two are related by
 
 $$
 \vec e_{\imath}^{\text{source}} = i\,\vec e_{\imath}^{\text{corpus}},
@@ -405,7 +405,7 @@ The corpus keeps the corpus's own formulation. What the paper contributes that t
 | Symbol | Meaning |
 |---|---|
 | $(s, \vec q)$ | Scalar–vector biquaternion, $s \in \mathbb{C}$, $\vec q \in \mathbb{C}^3$ |
-| $e_t, \vec e_x, \vec e_y, \vec e_z$ | The paper's units, with $\vec e_{\imath}^2 = +e_t$ and $\vec e_{\imath} \vec e_{\jmath} = \delta_{\imath\jmath}e_t + i\varepsilon_{\imath\jmath\lambda}\vec e_\lambda$; not the corpus's basis |
+| $e_t, \vec e_x, \vec e_y, \vec e_z$ | The paper's units, with $\vec e_{\imath}^2 = +e_t$ and $\vec e_{\imath} \vec e_{\jmath} = \delta_{\imath\jmath}e_t + i\varepsilon_{\imath\jmathk}\vec e_\imath$; not the corpus's basis |
 | $\vec e_{\imath}^{\text{source}} = i\vec e_{\imath}^{\text{corpus}}$ | Dictionary to the corpus's Hamilton basis; a source triple $\vec q$ is the corpus triple $i\vec q$ |
 | $\bar{\mathcal{B}}$, $\mathcal{B}^{*}$ | Quaternion conjugate $(s, -\vec q)$ and complex conjugate $(s^{*}, \vec q^{*})$ |
 | $\mathcal{B}\bar{\mathcal{B}} = s^2 - \vec q^2$ | Square modulus, indefinite; "$*$-unitary" means $U\bar U = 1$ |

@@ -23,7 +23,7 @@ The order. The four sectors and why there are four, then the dictionary, then th
 |---|---|---|---|
 | Strong | $\mathcal{L}_{\mathrm{QCD}}$ | the colour connection | $g_s$, $\theta_{\mathrm{QCD}}$, six quark masses through the Yukawa sector |
 | Electroweak gauge and kinetic | $\mathcal{L}_{\mathrm{EW}}$ | the weak and hypercharge connections | $g$, $g_{\mathrm Y}$, and the fermion kinetic normalisations |
-| Scalar | $\mathcal{L}_{H}$ | all three connections, through $D_{\imath}\omicron_{\mathrm{hgs}}$ | $\mu^2$, $\lambda$ |
+| Scalar | $\mathcal{L}_{H}$ | all three connections, through $D_{\imath}\omicron_{\mathrm{hgs}}$ | $\mu^2$, $\varpi_{\mathrm{cpl}}$ |
 | Yukawa | $\mathcal{L}_{\mathrm{Yuk}}$ | no connection | the three coupling matrices |
 
 Why the fourth is not part of the third. The scalar potential $V(\omicron_{\mathrm{hgs}})$ is invariant on its own, since it depends only on $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$. The Yukawa couplings are invariant only in combination with the fermions and the scalar together. The two are separated because they are fixed by different measurements: the potential by the boson masses, the couplings by the fermion masses and mixings.
@@ -42,14 +42,14 @@ $$
 
 where the right-hand side is contracted with the metric $(+,-,-,-)$ of the interval, $X_0$ is the physical temporal component, and $X_t=iX_0$.
 
-The proof. The temporal term is $X_tY_t=(iX_0)(iY_0)=-X_0Y_0$ and the spatial ones are $\sum_{k\in\{x,y,z\}} X_kY_k$, so the sum $\sum_{\imath} X_{\imath} Y_{\imath}$ equals $-X_0Y_0+\sum_{k\in\{x,y,z\}} X_kY_k$ and the leading minus makes the left-hand side $X_0Y_0-\sum_{k\in\{x,y,z\}} X_kY_k$. On the right, the text's contraction carries the metric $(+,-,-,-)$, which puts a minus on each spatial term, so $X\cdot Y=X_0Y_0-\sum_{k\in\{x,y,z\}} X_kY_k$. The two sides are the same expression.
+The proof. The temporal term is $X_tY_t=(iX_0)(iY_0)=-X_0Y_0$ and the spatial ones are $\sum_{\imath\in\{x,y,z\}} X_\imathY_\imath$, so the sum $\sum_{\imath} X_{\imath} Y_{\imath}$ equals $-X_0Y_0+\sum_{\imath\in\{x,y,z\}} X_\imathY_\imath$ and the leading minus makes the left-hand side $X_0Y_0-\sum_{\imath\in\{x,y,z\}} X_\imathY_\imath$. On the right, the text's contraction carries the metric $(+,-,-,-)$, which puts a minus on each spatial term, so $X\cdot Y=X_0Y_0-\sum_{\imath\in\{x,y,z\}} X_\imathY_\imath$. The two sides are the same expression.
 
 The two places it bites. The rule fixes the sign of a kinetic term and nothing else in this article.
 
 - The scalar. A text in the standard metric writes $+\tfrac12\partial\xi\cdot\partial\xi$ for a real scalar. The rule turns it into $-\tfrac12\sum_{\imath}\partial_{\imath}\xi\,\partial_{\imath}\xi$, which is exactly the corpus's scalar Lagrangian of [Stress–Energy Conservation Laws and the Field Action](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), whose expansion $-\tfrac12[-\left(\partial\xi/\partial r'_t\right)^2+(\vec\nabla_\Phi\xi)^2]$ is the standard $\tfrac12\dot\xi^2-\tfrac12(\vec\nabla_\Phi\xi)^2$.
 - The gauge field. A text writes $-\tfrac14F\cdot F$. The rule turns it into $-\tfrac14\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}F_{\imath\jmath}$, which is the corpus's display. Here the sign is unchanged, because the weight over the two indices cancels the flip.
 
-The check that the two writings are one Lagrangian. With $A_t=iA_0$ and $F_{\imath\jmath}=\partial A_{\jmath}/\partial R_{\imath}-\partial A_{\imath}/\partial R_{\jmath}$, the temporal components are $F_{tk}=iE_k$ and the spatial ones are $F_{k l}=\epsilon_{k l\,n_{\mathrm{idx}}}B_m$. Then $\sum_{\imath\jmath}F_{\imath\jmath}F_{\imath\jmath}=2\sum_{k\in\{x,y,z\}} F_{tk}F_{tk}+\sum_{k l}F_{k l}F_{k l}=-2E^2+2B^2$, and $-\tfrac14$ of that is $\tfrac12(E^2-B^2)$, which is the standard $-\tfrac14F\cdot F$ evaluated on the same fields. The energy comes out positive in both writings; the corpus's own stress–energy article fixes the sign on that requirement.
+The check that the two writings are one Lagrangian. With $A_t=iA_0$ and $F_{\imath\jmath}=\partial A_{\jmath}/\partial R_{\imath}-\partial A_{\imath}/\partial R_{\jmath}$, the temporal components are $F_{tk}=iE_\imath$ and the spatial ones are $F_{\imath l}=\epsilon_{k l\,n_{\mathrm{idx}}}B_m$. Then $\sum_{\imath\jmath}F_{\imath\jmath}F_{\imath\jmath}=2\sum_{\imath\in\{x,y,z\}} F_{tk}F_{tk}+\sum_{\imath l}F_{\imath l}F_{\imath l}=-2E^2+2B^2$, and $-\tfrac14$ of that is $\tfrac12(E^2-B^2)$, which is the standard $-\tfrac14F\cdot F$ evaluated on the same fields. The energy comes out positive in both writings; the corpus's own stress–energy article fixes the sign on that requirement.
 
 The derivative. The corpus writes $\partial/\partial R_{\imath}$, and the time derivative of a material coordinate is $\partial/\partial r'_t=-i\,\partial/\partial R_t$. The two are never mixed in one display. A fermion bilinear's sign, which the rule does not fix because the bilinear carries the spin structure, is the subject of [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) and is quoted there rather than restated here.
 
@@ -114,19 +114,19 @@ $$
 with the potential and the kinetic term
 
 $$
-\mathcal{L}_{H}=-\sum_{\imath}\left(D_{\imath}\omicron_{\mathrm{hgs}}\right)^{\dagger}\left(D_{\imath}\omicron_{\mathrm{hgs}}\right)+\mu^2\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-\lambda\left(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}\right)^2 ,
+\mathcal{L}_{H}=-\sum_{\imath}\left(D_{\imath}\omicron_{\mathrm{hgs}}\right)^{\dagger}\left(D_{\imath}\omicron_{\mathrm{hgs}}\right)+\mu^2\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-\varpi_{\mathrm{cpl}}\left(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}\right)^2 ,
 \qquad
 D_{\imath}\omicron_{\mathrm{hgs}}=\frac{\partial\omicron_{\mathrm{hgs}}}{\partial R_{\imath}}+i\frac{g}{2}\sum_a\tau_aW_{a,\imath}\omicron_{\mathrm{hgs}}+i\frac{g_{\mathrm Y}}{2}B_{\imath}\omicron_{\mathrm{hgs}} .
 $$
 
-The signs are the corpus's, by the rule of §*The Dictionary*: the kinetic term carries the minus, and the potential appears with $+\mu^2$ and $-\lambda$ because $\mathcal{L}\supset -V$.
+The signs are the corpus's, by the rule of §*The Dictionary*: the kinetic term carries the minus, and the potential appears with $+\mu^2$ and $-\varpi_{\mathrm{cpl}}$ because $\mathcal{L}\supset -V$.
 
 **The sign of $\mu^2$.** A positive $\mu^2$ gives a potential with a maximum at the origin and a circle of minima away from it. That sign is the whole content of spontaneous breaking: the field settles on the circle, and the theory is read around a point of it. A negative $\mu^2$ would give a single minimum at the origin and no breaking.
 
 The minimum. The potential depends on $\omicron_{\mathrm{hgs}}$ only through $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$, so its minima form a three-sphere in the four real components. Writing $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}=\tfrac12v^2$,
 
 $$
-v^2=\frac{\mu^2}{\lambda} ,
+v^2=\frac{\mu^2}{\varpi_{\mathrm{cpl}}} ,
 \qquad
 \langle\omicron_{\mathrm{hgs}}\rangle=\frac{1}{\sqrt2}\begin{pmatrix}0\ v\end{pmatrix},
 \qquad
@@ -135,7 +135,7 @@ $$
 
 The value of $v$ is not computed here; it is the entry 18 of the parameter table of article 1, fixed by the Fermi constant.
 
-What the sector supplies. Three things, and they are computed in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) rather than here: the masses $M_W=\tfrac12gv$ and $M_Z=\tfrac12\sqrt{g^2+g_{\mathrm Y}^2}\,v$, the massless photon, and the scalar mass $M_H=\sqrt{2\lambda}\,v$. Recomputed from the table, $\lambda=M_H^2/(2v^2)=0.1291$ for $M_H=125.09$ GeV, and the three masses then follow from $g$, $g_{\mathrm Y}$, $v$ and $\lambda$.
+What the sector supplies. Three things, and they are computed in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) rather than here: the masses $M_W=\tfrac12gv$ and $M_Z=\tfrac12\sqrt{g^2+g_{\mathrm Y}^2}\,v$, the massless photon, and the scalar mass $M_H=\sqrt{2\varpi_{\mathrm{cpl}}}\,v$. Recomputed from the table, $\varpi_{\mathrm{cpl}}=M_H^2/(2v^2)=0.1291$ for $M_H=125.09$ GeV, and the three masses then follow from $g$, $g_{\mathrm Y}$, $v$ and $\varpi_{\mathrm{cpl}}$.
 
 Four real components, three eaten. The doublet carries four real fields. Three are the Goldstones that the $W^+$, $W^-$ and $Z$ absorb as longitudinal polarisations; the fourth is the physical scalar. The degree-of-freedom count closes: twenty-eight before breaking, twenty-eight after.
 
@@ -188,7 +188,7 @@ $$
 \begin{aligned}
 \mathcal{L}_{\mathrm{SM}}={}&-\tfrac14\sum_{a,\imath,\jmath}G_{a,\imath\jmath}G_{a,\imath\jmath}-\tfrac14\sum_{a,\imath,\jmath}W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14\sum_{\imath,\jmath}B_{\imath\jmath}B_{\imath\jmath}\\[2pt]
 &+\sum_{\psi}\bar{\tilde\Xi}_{\psi}\,i\,\tilde\nabla_{\mathrm{gco},\Phi}\,\tilde\Xi_{\psi}\\[2pt]
-&-\sum_{\imath}\left(D_{\imath}\omicron_{\mathrm{hgs}}\right)^{\dagger}\left(D_{\imath}\omicron_{\mathrm{hgs}}\right)+\mu^2\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-\lambda\left(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}\right)^2\\[2pt]
+&-\sum_{\imath}\left(D_{\imath}\omicron_{\mathrm{hgs}}\right)^{\dagger}\left(D_{\imath}\omicron_{\mathrm{hgs}}\right)+\mu^2\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-\varpi_{\mathrm{cpl}}\left(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}\right)^2\\[2pt]
 &-\sum_{a,b}\Bigl(\bar Q_{L,a}\omicron_{\mathrm{hgs}}\,Y_{d,ab}\,d_{R,b}+\bar Q_{L,a}\tilde\omicron_{\mathrm{hgs}}\,Y_{u,ab}\,u_{R,b}+\bar L_{L,a}\omicron_{\mathrm{hgs}}\,Y_{e,ab}\,e_{R,b}\Bigr)+\text{h.c.}\\[2pt]
 &+\frac{\theta_{\mathrm{QCD}}}{32\pi^2}\sum_{\imath,\jmath,a}G_{a,\imath\jmath}G_{a,\mathrm{dual},\imath\jmath} .
 \end{aligned}
@@ -220,7 +220,7 @@ and the analogous laws for $W_{\imath}$ with $U_L$ and for $B_{\imath}$ with the
 | $-\tfrac14B_{\imath\jmath}B_{\imath\jmath}$ | $B_{\imath\jmath}\mapsto B_{\imath\jmath}$ | the abelian curvature is a derivative of a scalar phase |
 | fermion kinetic | $\bar{\tilde\Xi}\mapsto\bar{\tilde\Xi}U^{\dagger}$, $\tilde\nabla_\Phi\tilde\Xi\mapsto U\tilde\nabla_\Phi\tilde\Xi$ | $U^{\dagger}U=1$, and the derivative is covariant |
 | scalar kinetic | $D_{\imath}\omicron_{\mathrm{hgs}}\mapsto U_{\omicron_{\mathrm{hgs}}} D_{\imath}\omicron_{\mathrm{hgs}}$ | the same, with the scalar's representation |
-| potential $\mu^2\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}-\lambda(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})^2$ | $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}\mapsto\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$ | the invariant is the modulus squared, a singlet |
+| potential $\mu^2\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}-\varpi_{\mathrm{cpl}}(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})^2$ | $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}\mapsto\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$ | the invariant is the modulus squared, a singlet |
 | Yukawa, down type | the three factors transform by $U_Q^{\dagger}$, $U_{\omicron_{\mathrm{hgs}}}$, $U_d$ | the product is $U_Q^{\dagger}U_{\omicron_{\mathrm{hgs}}} U_d$, and the $SU(2)$ contraction is the singlet |
 | Yukawa, up type | the same with $U_{\tilde\omicron_{\mathrm{hgs}}}$ | $U_{\tilde\omicron_{\mathrm{hgs}}}$ is the conjugate of $U_{\omicron_{\mathrm{hgs}}}$, and the phase is opposite |
 | $\theta$ term | invariant | $G_{\imath\jmath}$ is adjoint-valued, and the epsilon contraction is a colour singlet |
@@ -244,7 +244,7 @@ What is written. Counting real numbers,
 | Object | Real parameters |
 |---|---|
 | $g_s$, $g$, $g_{\mathrm Y}$ | $3$ |
-| $\mu^2$, $\lambda$ | $2$ |
+| $\mu^2$, $\varpi_{\mathrm{cpl}}$ | $2$ |
 | $\theta_{\mathrm{QCD}}$ | $1$ |
 | $Y_{u}$, $Y_{d}$ | $2\times18=36$ |
 | $Y_{e}$ | $18$ |
@@ -269,7 +269,7 @@ The lepton result. Three is three masses and no mixing, because the minimal mode
 
 What the count does not do. It does not say that the nineteen are independent in nature; it says that the Lagrangian has nineteen degrees of freedom once the field basis is fixed. Relations among the nineteen — a mass ratio, a mixing angle predicted from masses — would be physics beyond the count, and the model supplies none.
 
-A second redundancy, inside the mass sector. The pair $(\mu^2,\lambda)$ and the pair $(v,M_H)$ carry the same information, through $v^2=\mu^2/\lambda$ and $M_H^2=2\lambda v^2=2\mu^2$. Likewise $(g,g_{\mathrm Y})$ and $(e,\theta_W)$ through $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$. The count is of information and not of symbols, and a change of variables moves numbers between columns without changing the total.
+A second redundancy, inside the mass sector. The pair $(\mu^2,\varpi_{\mathrm{cpl}})$ and the pair $(v,M_H)$ carry the same information, through $v^2=\mu^2/\varpi_{\mathrm{cpl}}$ and $M_H^2=2\varpi_{\mathrm{cpl}} v^2=2\mu^2$. Likewise $(g,g_{\mathrm Y})$ and $(e,\theta_W)$ through $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$. The count is of information and not of symbols, and a change of variables moves numbers between columns without changing the total.
 
 ## What the Expression Omits
 
@@ -303,7 +303,7 @@ The parameter ledger, stated once. Three of the four sectors are writable in the
 
 ## Summary
 
-The Standard Model Lagrangian is the sum of four sectors plus the vacuum-angle term: the three gauge kinetic terms $-\tfrac14\sum G G$, $-\tfrac14\sum W W$, $-\tfrac14\sum BB$; one fermion kinetic term per Weyl field, fifteen per generation, each built on the covariant gradient carrying the connection in that field's representation; the scalar kinetic term and the potential $-\sum_{\imath}(D_{\imath}\omicron_{\mathrm{hgs}})^\dagger(D_{\imath}\omicron_{\mathrm{hgs}})+\mu^2\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}-\lambda(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})^2$; and the three Yukawa matrices with the conjugate doublet $\tilde\omicron_{\mathrm{hgs}}$ of hypercharge $-\tfrac12$ in the up-type term. The assembly is one notation and one sign rule.
+The Standard Model Lagrangian is the sum of four sectors plus the vacuum-angle term: the three gauge kinetic terms $-\tfrac14\sum G G$, $-\tfrac14\sum W W$, $-\tfrac14\sum BB$; one fermion kinetic term per Weyl field, fifteen per generation, each built on the covariant gradient carrying the connection in that field's representation; the scalar kinetic term and the potential $-\sum_{\imath}(D_{\imath}\omicron_{\mathrm{hgs}})^\dagger(D_{\imath}\omicron_{\mathrm{hgs}})+\mu^2\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}-\varpi_{\mathrm{cpl}}(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})^2$; and the three Yukawa matrices with the conjugate doublet $\tilde\omicron_{\mathrm{hgs}}$ of hypercharge $-\tfrac12$ in the up-type term. The assembly is one notation and one sign rule.
 
 The sign rule is $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$, proved in one line from $X_t=iX_0$ and the metric of the interval. It converts the corpus's $-\tfrac12\sum\partial\xi\partial\xi$ into the standard $+\tfrac12\partial\xi\cdot\partial\xi$, converts its $-\tfrac14\sum FF$ into the standard $-\tfrac14F\cdot F$ with no change of sign, and leaves the two writings one Lagrangian: the abelian check gives $\sum_{\imath\jmath}F_{\imath\jmath}F_{\imath\jmath}=2(B^2-E^2)$ and hence $\tfrac12(E^2-B^2)$ on both sides.
 
@@ -326,9 +326,9 @@ The expression omits neutrino masses, gravity and a dark sector, and each omissi
 | $\omicron_{\mathrm{hgs}}$, $\tilde\omicron_{\mathrm{hgs}}$ | The scalar doublet of hypercharge $\tfrac12$ and its conjugate of hypercharge $-\tfrac12$ |
 | $Y_{u}$, $Y_{d}$, $Y_{e}$ | The three Yukawa matrices, general complex $3\times3$ |
 | $M_f=vY_{f}/\sqrt2$ | The mass matrix of the fermion type $f$ |
-| $\mu^2$, $\lambda$ | The two parameters of the potential |
-| $v^2=\mu^2/\lambda$ | The vacuum expectation value, $246.22$ GeV |
-| $M_H=\sqrt{2\lambda}\,v$ | The scalar mass |
+| $\mu^2$, $\varpi_{\mathrm{cpl}}$ | The two parameters of the potential |
+| $v^2=\mu^2/\varpi_{\mathrm{cpl}}$ | The vacuum expectation value, $246.22$ GeV |
+| $M_H=\sqrt{2\varpi_{\mathrm{cpl}}}\,v$ | The scalar mass |
 | $\theta_{\mathrm{QCD}}$ | The vacuum angle |
 | $G_{a,\mathrm{dual},\imath\jmath}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\imath\jmath\rho\sigma}G_{a,\rho\sigma}$ | The dual field strength |
 | $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$ | The sign rule of §*The Dictionary* |

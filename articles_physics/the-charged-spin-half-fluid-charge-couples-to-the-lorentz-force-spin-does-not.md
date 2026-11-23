@@ -48,7 +48,7 @@ and the added term decomposes by its own slots:
 $$
 \frac{2\pi iϙ}{h}\tilde A_\Phi
 =\underbrace{\frac{2\pi iϙ}{h}A_t}_{\text{central imaginary}}
-+\underbrace{\frac{2\pi iϙ}{h}\sum_{k\in\{x,y,z\}} A_k\vec e_k}_{\text{Hermitian vector}} .
++\underbrace{\frac{2\pi iϙ}{h}\sum_{\imath\in\{x,y,z\}} A_\imath\vec e_\imath}_{\text{Hermitian vector}} .
 $$
 
 The temporal slot is a central imaginary number and the spatial slots are Hermitian vectors, so the connection adds to the phase bracket and to the boost bracket. The scale bracket is a real central scalar and the rotor bracket is a real vector part; neither is reachable by a central multiplication, and both are therefore untouched.
@@ -185,7 +185,7 @@ The chart's current is the convection part, and the magnetisation part is built 
 $$
 J^t=\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}},
 \qquad
-J_k=\rho_{\mathrm{num}}\sinh\theta_{\mathrm{rpd}}\,u_{\mathrm b,k},
+J_\imath=\rho_{\mathrm{num}}\sinh\theta_{\mathrm{rpd}}\,u_{\mathrm b,k},
 $$
 
 which is the density times the velocity and nothing else. The Gordon decomposition of [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html) splits the current into that convection part and a magnetisation part which is the divergence of the antisymmetric spin density,

@@ -33,7 +33,7 @@ with $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mat
 $$
 \mathcal{L}=-\,\mathrm{Sc}\!\left[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})\right]
 -4\pi^{2}\nu_m^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]
-=-\,(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_{k\in\{x,y,z\}}(\partial/\partial R_k\,\xi^*)(\partial/\partial R_k\,\xi)-4\pi^{2}\nu_m^{2}\xi^*\xi .
+=-\,(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_{\imath\in\{x,y,z\}}(\partial/\partial R_\imath\,\xi^*)(\partial/\partial R_\imath\,\xi)-4\pi^{2}\nu_m^{2}\xi^*\xi .
 $$
 
 Because $\partial/\partial R_t=-i\partial/\partial r'_t$, the Lagrangian written in the physical time is
@@ -242,7 +242,7 @@ Because the question addressed here is the second-quantization question of the f
 
 **Standard quantum field theory, transcribed.**
 
-- The Lagrangian $\mathcal{L}=-(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_{k\in\{x,y,z\}}(\partial/\partial R_k\,\xi^*)(\partial/\partial R_k\,\xi)-4\pi^{2}\nu_m^{2}\xi^*\xi$, the conjugate momentum $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$, and the regular Legendre transform.
+- The Lagrangian $\mathcal{L}=-(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_{\imath\in\{x,y,z\}}(\partial/\partial R_\imath\,\xi^*)(\partial/\partial R_\imath\,\xi)-4\pi^{2}\nu_m^{2}\xi^*\xi$, the conjugate momentum $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$, and the regular Legendre transform.
 - The equal-time commutators, imposed and verified, and the three reasons the bracket is a commutator rather than an anticommutator.
 - The mode expansion in the parent's plane waves, the mode commutators, and the recovery of the equal-time relation.
 - The symmetric Fock space, the occupation basis, the vacuum, and the number operator.
@@ -286,7 +286,7 @@ The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\varepsilon_{\imath\jmath\lambda}\vec e_\lambda$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\varepsilon_{\imath\jmathk}\vec e_\imath$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the scalar field's value space |

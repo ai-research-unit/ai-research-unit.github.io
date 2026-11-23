@@ -25,7 +25,7 @@ The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=
 The action and the weight. The companion's action is
 
 $$
-S[\tilde\Xi]=\frac{h}{4\pi}\int d^{4}r\;\Bigl[\mathrm{Sc}\bigl(\partial_{r'_t}\tilde\Xi^{*}\,\partial_{r'_t}\tilde\Xi\bigr)-\sum_{k\in\{x,y,z\}}\mathrm{Sc}\bigl(\partial_k\tilde\Xi^{*}\,\partial_k\tilde\Xi\bigr)-4\pi^{2}\nu_m^{2}\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)\Bigr],
+S[\tilde\Xi]=\frac{h}{4\pi}\int d^{4}r\;\Bigl[\mathrm{Sc}\bigl(\partial_{r'_t}\tilde\Xi^{*}\,\partial_{r'_t}\tilde\Xi\bigr)-\sum_{\imath\in\{x,y,z\}}\mathrm{Sc}\bigl(\partial_\imath\tilde\Xi^{*}\,\partial_\imath\tilde\Xi\bigr)-4\pi^{2}\nu_m^{2}\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)\Bigr],
 $$
 
 with the metric of the material coordinate written out: the temporal slot enters with $+$ and the three spatial ones with $-$, which is $\partial/\partial R_t=-i\,\partial/\partial r'_t$ in explicit form. This is the free companion's action with the same convention; the companion's $\frac12\int\mathrm{Sc}[\tilde\Xi^{*}(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde\Xi]$ differs from it by a boundary term, and the polar bracket below follows from this display through the identity $\mathrm{Sc}(\partial_{\imath}\tilde\Xi^{*}\partial_{\imath}\tilde\Xi)=(\partial_{\imath} \varrho)^{2}+\varrho^{2}(\partial_{\imath}\theta_{\mathrm{pha}})^{2}$. The weight of one configuration is $\exp(\frac{2\pi iS}{h})$, central and $*$-unitary. On a central field $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}e_t$ the weight becomes

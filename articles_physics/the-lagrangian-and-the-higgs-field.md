@@ -4,11 +4,11 @@
 
 The question. The electroweak sector's scalar is the one field in the corpus whose action is written twice in two places and never as a family article. *The Lagrangian and the Electroweak Theory* writes the full gauge action with the doublet inside it, and *Electroweak Symmetry Breaking* reads the masses and the couplings off the mass matrix. Neither asks the spin-zero question on its own: what is the action of the scalar field, what does its variation give, and what does the potential fix that the masses do not. This article asks it.
 
-The answer in five sentences. The scalar action is the Klein–Gordon action for a complex doublet with a potential $V=-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}$, and the potential is a function of one variable, $r^{2}=2\Phi^{\dagger}\Phi$, so the four real components split into one radial direction that is curved and three angular directions that are flat. The variation gives $\Box\Phi=\mu^{2}\Phi-2\lambda(\Phi^{\dagger}\Phi)\Phi$, whose radial reading is the anharmonic oscillator and whose unitary reading is $\Box h+m_h^{2}h+3\lambda vh^{2}+\lambda h^{3}=0$. The mass is the curvature of the potential at its minimum, $m_h^{2}=2\lambda v^{2}$, and the same $\lambda$ fixes the cubic and quartic self-couplings at $6\lambda v$ and $6\lambda$, so one number is measured three times. The three flat directions are the would-be Goldstone modes, and that is the whole of what the scalar sector contributes to the breaking.
+The answer in five sentences. The scalar action is the Klein–Gordon action for a complex doublet with a potential $V=-\mu^{2}\Phi^{\dagger}\Phi+\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2}$, and the potential is a function of one variable, $r^{2}=2\Phi^{\dagger}\Phi$, so the four real components split into one radial direction that is curved and three angular directions that are flat. The variation gives $\Box\Phi=\mu^{2}\Phi-2\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)\Phi$, whose radial reading is the anharmonic oscillator and whose unitary reading is $\Box h+m_h^{2}h+3\varpi_{\mathrm{cpl}} vh^{2}+\varpi_{\mathrm{cpl}} h^{3}=0$. The mass is the curvature of the potential at its minimum, $m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2}$, and the same $\varpi_{\mathrm{cpl}}$ fixes the cubic and quartic self-couplings at $6\varpi_{\mathrm{cpl}} v$ and $6\varpi_{\mathrm{cpl}}$, so one number is measured three times. The three flat directions are the would-be Goldstone modes, and that is the whole of what the scalar sector contributes to the breaking.
 
 Why this article exists apart from the sector article. Because the sector article's subject is the gauge action and its two phases, and the scalar's own structure is a different claim. Here the gauge fields are spectators: the covariant derivative is replaced by the ordinary one, and the difference between the two actions is exactly the vector mass term, which the companion derives. What is left is a potential and its derivatives, and those are exact.
 
-What is not done. No loop, no renormalisation, no running, no unitarity computation, no scattering amplitude and no decay rate. The value of $\lambda$ is taken from the measured mass and is not derived. Nothing here is the Standard Model's quantised scalar sector, and the article says so at the point where the reader would expect it.
+What is not done. No loop, no renormalisation, no running, no unitarity computation, no scattering amplitude and no decay rate. The value of $\varpi_{\mathrm{cpl}}$ is taken from the measured mass and is not derived. Nothing here is the Standard Model's quantised scalar sector, and the article says so at the point where the reader would expect it.
 
 ## Conventions
 
@@ -21,17 +21,17 @@ $$
 so that $\Phi$ carries four real components $\phi_A$ and $\Phi^{\dagger}\Phi=\frac12\sum_A\phi_A^{2}$. The potential is
 
 $$
-V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2},
-\qquad \mu^{2}>0,\quad \lambda>0,
+V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2},
+\qquad \mu^{2}>0,\quad \varpi_{\mathrm{cpl}}>0,
 $$
 
-and its minimum sits at $\Phi^{\dagger}\Phi=\mu^{2}/2\lambda\equiv v^{2}/2$, so that $v^{2}=\mu^{2}/\lambda$ and $v\simeq246.22$ GeV.
+and its minimum sits at $\Phi^{\dagger}\Phi=\mu^{2}/2\varpi_{\mathrm{cpl}}\equiv v^{2}/2$, so that $v^{2}=\mu^{2}/\varpi_{\mathrm{cpl}}$ and $v\simeq246.22$ GeV.
 
 **The radial variable, named once.** Write $r=\sqrt{2\Phi^{\dagger}\Phi}$, a real non-negative field with $\dim r=1$. Every statement in this article that is not about the phase is a statement about $V$ as a function of $r$, and the notation is used to make that visible.
 
 The unitary chart. Where a component reading is needed the chart is $\Phi=\frac{1}{\sqrt2}\binom{0}{v+h}$ with $h$ real. It is a chart on the same action and not a different theory; the companion article states what it costs and what it buys.
 
-Two conventions are warnings. The first: $\mu^{2}$ has the dimensions of a mass squared and is not a mass. The curvature at the minimum is $2\mu^{2}$, and the difference matters — the free Klein–Gordon article's $\nu_m^{2}$ is the coefficient of $-\tilde\Xi^{*}\tilde\Xi$ with a fixed sign, whereas here the sign is negative and the coefficient is not the mass. The second: $\lambda$ in this normalisation is the coefficient of $(\Phi^{\dagger}\Phi)^{2}$, so the quartic term in the unitary chart is $\frac{\lambda}{4}h^{4}$. A reader who imports $\frac{\lambda}{4!}\phi^{4}$ from the scalar-field literature will find the self-couplings wrong by a factor of six.
+Two conventions are warnings. The first: $\mu^{2}$ has the dimensions of a mass squared and is not a mass. The curvature at the minimum is $2\mu^{2}$, and the difference matters — the free Klein–Gordon article's $\nu_m^{2}$ is the coefficient of $-\tilde\Xi^{*}\tilde\Xi$ with a fixed sign, whereas here the sign is negative and the coefficient is not the mass. The second: $\varpi_{\mathrm{cpl}}$ in this normalisation is the coefficient of $(\Phi^{\dagger}\Phi)^{2}$, so the quartic term in the unitary chart is $\frac{\varpi_{\mathrm{cpl}}}{4}h^{4}$. A reader who imports $\frac{\varpi_{\mathrm{cpl}}}{4!}\phi^{4}$ from the scalar-field literature will find the self-couplings wrong by a factor of six.
 
 ## The Action in Element Form
 
@@ -39,7 +39,7 @@ The scalar block of the electroweak action, with the connection removed.
 
 $$
 S[\Phi,\Phi^{\dagger}]=\int\mathrm{d}^{4}x\;\Bigl\{\partial_{\imath}\Phi^{\dagger}\,\partial_{\imath}\Phi-V(\Phi)\Bigr\}
-=\int\mathrm{d}^{4}x\;\Bigl\{\tfrac12\partial_{\imath} r\,\partial_{\imath}r+\tfrac{r^{2}}{2}\partial_{\imath}\theta_A\partial_{\imath}\theta_A+\tfrac{\mu^{2}}{2}r^{2}-\tfrac{\lambda}{4}r^{4}\Bigr\},
+=\int\mathrm{d}^{4}x\;\Bigl\{\tfrac12\partial_{\imath} r\,\partial_{\imath}r+\tfrac{r^{2}}{2}\partial_{\imath}\theta_A\partial_{\imath}\theta_A+\tfrac{\mu^{2}}{2}r^{2}-\tfrac{\varpi_{\mathrm{cpl}}}{4}r^{4}\Bigr\},
 $$
 
 where the second form uses the three angular coordinates of the four-sphere $r=\mathrm{const}$ and is written to show the structure and not to be varied in.
@@ -47,13 +47,13 @@ where the second form uses the three angular coordinates of the four-sphere $r=\
 The same action in the unitary chart.
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{\tfrac12\partial_{\imath} h\,\partial_{\imath}h-\tfrac12 m_h^{2}h^{2}-\lambda vh^{3}-\tfrac{\lambda}{4}h^{4}\Bigr\},
-\qquad m_h^{2}=2\lambda v^{2}.
+S=\int\mathrm{d}^{4}x\;\Bigl\{\tfrac12\partial_{\imath} h\,\partial_{\imath}h-\tfrac12 m_h^{2}h^{2}-\varpi_{\mathrm{cpl}} vh^{3}-\tfrac{\varpi_{\mathrm{cpl}}}{4}h^{4}\Bigr\},
+\qquad m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2}.
 $$
 
-The chart is the expansion about one point of the circle of minima, and the three terms after the mass term are the same $\lambda$ read at third and fourth order.
+The chart is the expansion about one point of the circle of minima, and the three terms after the mass term are the same $\varpi_{\mathrm{cpl}}$ read at third and fourth order.
 
-It is real, term by term. The kinetic term is $\partial_{\imath}\Phi^{\dagger}\partial_{\imath}\Phi=\sum_A(\partial_{\imath}\phi_A)^{2}/2$, a sum of squares with a fixed sign. The mass term is $-\mu^{2}\Phi^{\dagger}\Phi=-\mu^{2}\sum_A\phi_A^{2}/2$, real and negative. The quartic is $\lambda(\Phi^{\dagger}\Phi)^{2}=\lambda(\sum_A\phi_A^{2})^{2}/4$, real and positive for $\lambda>0$. The potential is therefore bounded below, and the bound is what makes a minimum exist at all.
+It is real, term by term. The kinetic term is $\partial_{\imath}\Phi^{\dagger}\partial_{\imath}\Phi=\sum_A(\partial_{\imath}\phi_A)^{2}/2$, a sum of squares with a fixed sign. The mass term is $-\mu^{2}\Phi^{\dagger}\Phi=-\mu^{2}\sum_A\phi_A^{2}/2$, real and negative. The quartic is $\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2}=\varpi_{\mathrm{cpl}}(\sum_A\phi_A^{2})^{2}/4$, real and positive for $\varpi_{\mathrm{cpl}}>0$. The potential is therefore bounded below, and the bound is what makes a minimum exist at all.
 
 **Why the sign of $\mu^{2}$ is the whole content.** With $\mu^{2}<0$ the potential has a single stationary point, at $\Phi=0$, and it is a minimum; the four components are degenerate and each has mass $\sqrt{-\mu^{2}}$. With $\mu^{2}>0$ the origin is a maximum and the minimum is the three-sphere $\Phi^{\dagger}\Phi=v^{2}/2$. Nothing else in the action changes. The article's subject is the second case, and the first is named here only because the same display covers both.
 
@@ -70,13 +70,13 @@ $$
 and holding $\delta\Phi^{\dagger}$ arbitrary gives
 
 $$
-\Box\Phi=-\frac{\partial V}{\partial\Phi^{\dagger}}=\mu^{2}\Phi-2\lambda(\Phi^{\dagger}\Phi)\Phi .
+\Box\Phi=-\frac{\partial V}{\partial\Phi^{\dagger}}=\mu^{2}\Phi-2\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)\Phi .
 $$
 
-The same equation in the radial variable. Since $\Phi^{\dagger}\Phi=r^{2}/2$ and $V(r)=-\frac{\mu^{2}}{2}r^{2}+\frac{\lambda}{4}r^{4}$,
+The same equation in the radial variable. Since $\Phi^{\dagger}\Phi=r^{2}/2$ and $V(r)=-\frac{\mu^{2}}{2}r^{2}+\frac{\varpi_{\mathrm{cpl}}}{4}r^{4}$,
 
 $$
-\Box r=-V'(r)=\mu^{2}r-\lambda r^{3},
+\Box r=-V'(r)=\mu^{2}r-\varpi_{\mathrm{cpl}} r^{3},
 $$
 
 an equation in one real field. It is the anharmonic oscillator with the sign that makes $r=v$ a stable point, and it is the whole of the scalar's dynamics when the angular coordinates are frozen.
@@ -84,10 +84,10 @@ an equation in one real field. It is the anharmonic oscillator with the sign tha
 The same equation in the unitary chart.
 
 $$
-\Box h+m_h^{2}h+3\lambda vh^{2}+\lambda h^{3}=0 ,
+\Box h+m_h^{2}h+3\varpi_{\mathrm{cpl}} vh^{2}+\varpi_{\mathrm{cpl}} h^{3}=0 ,
 $$
 
-which is the radial equation expanded about $r=v+h$ with the linear term removed by the minimum condition. The three terms after the mass term are the nonlinearity, and their coefficients are fixed: there is no freedom left in them once $\lambda$ and $v$ are chosen.
+which is the radial equation expanded about $r=v+h$ with the linear term removed by the minimum condition. The three terms after the mass term are the nonlinearity, and their coefficients are fixed: there is no freedom left in them once $\varpi_{\mathrm{cpl}}$ and $v$ are chosen.
 
 The boundary term, and why it is not an obstacle. The equation is second order in time, so the variation needs $\Phi$ and its normal derivative fixed on the boundary — the same condition the Klein–Gordon article imposes, and the surface term vanishes under it. The scalar's variation is the simplest in the family for this reason: no gauge parameter, no constraint, no identity.
 
@@ -97,7 +97,7 @@ The boundary term, and why it is not an obstacle. The equation is second order i
 
 The count. One real function in the radial chart, $r$ with $\Phi^{\dagger}\Phi=r^{2}/2$, one second-order equation, and a momentum that is the velocity. The map is invertible wherever $r\neq0$, so there is no primary constraint, no Gauss law and no constraint surface.
 
-**The potential fixes a value and does not restrict the data.** The stationary points of $V(r)=-\tfrac{\mu^{2}}{2}r^{2}+\tfrac{\lambda}{4}r^{4}$ are $r=0$ and $r^{2}=\mu^{2}/\lambda$, and the sign of $\mu^{2}$ decides whether the second lies on the real branch. That is a statement about which configuration has stationary energy; a configuration away from it is a solution with a different energy, and the action admits it.
+**The potential fixes a value and does not restrict the data.** The stationary points of $V(r)=-\tfrac{\mu^{2}}{2}r^{2}+\tfrac{\varpi_{\mathrm{cpl}}}{4}r^{4}$ are $r=0$ and $r^{2}=\mu^{2}/\varpi_{\mathrm{cpl}}$, and the sign of $\mu^{2}$ decides whether the second lies on the real branch. That is a statement about which configuration has stationary energy; a configuration away from it is a solution with a different energy, and the action admits it.
 
 The two notions are routinely conflated and they are different objects. A constraint restricts initial data and cannot be removed by the equations; a stationary point selects a state and is left by moving away from it. Reading the second minimum as a constraint produces the claim that the action forbids the field from sitting at the origin, and it does not: it makes the origin unstable, which is a statement about the spectrum.
 
@@ -115,23 +115,23 @@ $$
 V(v+h)=V(v)+\tfrac12V''(v)h^{2}+\tfrac16V'''(v)h^{3}+\tfrac1{24}V''''(v)h^{4}+\cdots ,
 $$
 
-with $V'(v)=0$ by the minimum condition, $V''(v)=-\mu^{2}+3\lambda v^{2}=2\lambda v^{2}$, $V'''(v)=6\lambda v$ and $V''''(v)=6\lambda$. Comparing with the unitary display, $m_h^{2}=2\lambda v^{2}$, the $h^{3}$ coefficient is $\frac16\cdot 6\lambda v=\lambda v$, and the $h^{4}$ coefficient is $\frac{1}{24}\cdot 6\lambda=\frac{\lambda}{4}$ — which is the display, term for term.
+with $V'(v)=0$ by the minimum condition, $V''(v)=-\mu^{2}+3\varpi_{\mathrm{cpl}} v^{2}=2\varpi_{\mathrm{cpl}} v^{2}$, $V'''(v)=6\varpi_{\mathrm{cpl}} v$ and $V''''(v)=6\varpi_{\mathrm{cpl}}$. Comparing with the unitary display, $m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2}$, the $h^{3}$ coefficient is $\frac16\cdot 6\varpi_{\mathrm{cpl}} v=\varpi_{\mathrm{cpl}} v$, and the $h^{4}$ coefficient is $\frac{1}{24}\cdot 6\varpi_{\mathrm{cpl}}=\frac{\varpi_{\mathrm{cpl}}}{4}$ — which is the display, term for term.
 
 **The three measurements.** In the normalisation where the cubic vertex is $\frac{g_{hhh}}{6}h^{3}$ and the quartic is $\frac{g_{hhhh}}{24}h^{4}$,
 
 $$
-g_{hhh}=6\lambda v=\frac{3m_h^{2}}{v},
+g_{hhh}=6\varpi_{\mathrm{cpl}} v=\frac{3m_h^{2}}{v},
 \qquad
-g_{hhhh}=6\lambda=\frac{3m_h^{2}}{v^{2}},
+g_{hhhh}=6\varpi_{\mathrm{cpl}}=\frac{3m_h^{2}}{v^{2}},
 \qquad
 \frac{g_{hhhh}}{g_{hhh}}=\frac1v .
 $$
 
-With $m_h\simeq125.25$ GeV and $v\simeq246.22$ GeV, $\lambda=m_h^{2}/2v^{2}\simeq0.129$, $g_{hhh}\simeq191$ GeV and $g_{hhhh}\simeq0.78$. The ratio is a number with the dimensions of an inverse energy and no free parameter: a reader who measures the triple coupling and the mass has tested the potential, not fitted it.
+With $m_h\simeq125.25$ GeV and $v\simeq246.22$ GeV, $\varpi_{\mathrm{cpl}}=m_h^{2}/2v^{2}\simeq0.129$, $g_{hhh}\simeq191$ GeV and $g_{hhhh}\simeq0.78$. The ratio is a number with the dimensions of an inverse energy and no free parameter: a reader who measures the triple coupling and the mass has tested the potential, not fitted it.
 
-What the claim forbids. It forbids three things. A quartic coupling tuned independently of the mass, because the same $\lambda$ is both. A cubic coupling treated as a separate parameter, because the expansion of a quartic potential has no other cubic term. And a "Higgs mass" read as $\sqrt{2}\mu$ with $\mu$ chosen freely and $\lambda$ adjusted afterwards: the theory has $(\mu^{2},\lambda)$ and the observables are $(m_h,g_{hhh},g_{hhhh})$, three functions of two numbers, so one relation among the three is exact at this order.
+What the claim forbids. It forbids three things. A quartic coupling tuned independently of the mass, because the same $\varpi_{\mathrm{cpl}}$ is both. A cubic coupling treated as a separate parameter, because the expansion of a quartic potential has no other cubic term. And a "Higgs mass" read as $\sqrt{2}\mu$ with $\mu$ chosen freely and $\varpi_{\mathrm{cpl}}$ adjusted afterwards: the theory has $(\mu^{2},\varpi_{\mathrm{cpl}})$ and the observables are $(m_h,g_{hhh},g_{hhhh})$, three functions of two numbers, so one relation among the three is exact at this order.
 
-The consequence the article does not resolve. The same display gives a vacuum energy. At the minimum $V(v)=-\lambda v^{4}/4=-m_h^{2}v^{2}/8\simeq-1.2\times10^{8}\ \mathrm{GeV}^{4}$, and nothing in the action makes it zero. That number is more than fifty orders of magnitude above the observed vacuum energy density when both are written as an energy density, and the corpus has no mechanism that removes it. It is recorded here because it is a consequence of the potential and not an assumption about it; the cosmology articles state the problem and do not solve it either.
+The consequence the article does not resolve. The same display gives a vacuum energy. At the minimum $V(v)=-\varpi_{\mathrm{cpl}} v^{4}/4=-m_h^{2}v^{2}/8\simeq-1.2\times10^{8}\ \mathrm{GeV}^{4}$, and nothing in the action makes it zero. That number is more than fifty orders of magnitude above the observed vacuum energy density when both are written as an energy density, and the corpus has no mechanism that removes it. It is recorded here because it is a consequence of the potential and not an assumption about it; the cosmology articles state the problem and do not solve it either.
 
 ## The Noether Currents and the Sign of the Charge
 
@@ -159,22 +159,22 @@ where the constant is subtracted so that the energy of the vacuum is zero by def
 
 ## What the Principle Adds and What It Relabels
 
-Adds. One parameter, $\lambda$, for the whole scalar sector, with the mass as its curvature and the two self-couplings as its third and fourth derivatives. The relation $g_{hhhh}=g_{hhh}/v$. The vacuum energy as a number the potential produces. And the split into one curved and three flat directions, which is the breaking stated without the gauge fields.
+Adds. One parameter, $\varpi_{\mathrm{cpl}}$, for the whole scalar sector, with the mass as its curvature and the two self-couplings as its third and fourth derivatives. The relation $g_{hhhh}=g_{hhh}/v$. The vacuum energy as a number the potential produces. And the split into one curved and three flat directions, which is the breaking stated without the gauge fields.
 
-Relabels. The corpus's Higgs-mechanism statements — the doublet, the potential, the circle of minima, the count, the masses — are all recoverable from this action, and it adds no number to them except $\lambda$, which they already contain in the form $m_h^{2}=2\lambda v^{2}$.
+Relabels. The corpus's Higgs-mechanism statements — the doublet, the potential, the circle of minima, the count, the masses — are all recoverable from this action, and it adds no number to them except $\varpi_{\mathrm{cpl}}$, which they already contain in the form $m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2}$.
 
-**What it does not reach, and this family does not either.** The loop-corrected potential, where the curvature at the minimum is not $2\lambda v^{2}$ but that number plus a correction the corpus's effective-potential article computes in outline. The running of $\lambda$ and the two bounds that follow from it — triviality at the ultraviolet end and stability at the infrared end — which the corpus's triviality article states as bounds and not as a computation inside this action. The hierarchy problem, which is the statement that the correction to $\mu^{2}$ is quadratically sensitive to the scale at which the truncation is imposed. And the value of $m_h$ itself, which the corpus takes from experiment.
+**What it does not reach, and this family does not either.** The loop-corrected potential, where the curvature at the minimum is not $2\varpi_{\mathrm{cpl}} v^{2}$ but that number plus a correction the corpus's effective-potential article computes in outline. The running of $\varpi_{\mathrm{cpl}}$ and the two bounds that follow from it — triviality at the ultraviolet end and stability at the infrared end — which the corpus's triviality article states as bounds and not as a computation inside this action. The hierarchy problem, which is the statement that the correction to $\mu^{2}$ is quadratically sensitive to the scale at which the truncation is imposed. And the value of $m_h$ itself, which the corpus takes from experiment.
 
-The honest sentence. The corpus can write this action exactly, vary it exactly, and read three couplings from one number exactly. It cannot say why $\lambda$ has the value it has, and it cannot compute the correction to that value. The gap is the same gap the electroweak action article names: quantisation, and the renormalisation that comes with it.
+The honest sentence. The corpus can write this action exactly, vary it exactly, and read three couplings from one number exactly. It cannot say why $\varpi_{\mathrm{cpl}}$ has the value it has, and it cannot compute the correction to that value. The gap is the same gap the electroweak action article names: quantisation, and the renormalisation that comes with it.
 
 ## Summary
 
-The scalar action is the Klein–Gordon action for a complex doublet with $V=-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}$, whose potential depends on one variable and whose minimum is a three-sphere. The variation gives $\Box\Phi=\mu^{2}\Phi-2\lambda(\Phi^{\dagger}\Phi)\Phi$, the radial anharmonic equation and, in the unitary chart, $\Box h+m_h^{2}h+3\lambda vh^{2}+\lambda h^{3}=0$. The curvature at the minimum is $m_h^{2}=2\lambda v^{2}$, the third and fourth derivatives give $g_{hhh}=3m_h^{2}/v$ and $g_{hhhh}=3m_h^{2}/v^{2}$, so one number is measured three times. Three directions are flat, they carry the hypercharge current, and the vectors that eat them inherit it. Nothing is quantised, and the value of $\lambda$ is not derived.
+The scalar action is the Klein–Gordon action for a complex doublet with $V=-\mu^{2}\Phi^{\dagger}\Phi+\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2}$, whose potential depends on one variable and whose minimum is a three-sphere. The variation gives $\Box\Phi=\mu^{2}\Phi-2\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)\Phi$, the radial anharmonic equation and, in the unitary chart, $\Box h+m_h^{2}h+3\varpi_{\mathrm{cpl}} vh^{2}+\varpi_{\mathrm{cpl}} h^{3}=0$. The curvature at the minimum is $m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2}$, the third and fourth derivatives give $g_{hhh}=3m_h^{2}/v$ and $g_{hhhh}=3m_h^{2}/v^{2}$, so one number is measured three times. Three directions are flat, they carry the hypercharge current, and the vectors that eat them inherit it. Nothing is quantised, and the value of $\varpi_{\mathrm{cpl}}$ is not derived.
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{\partial_{\imath}\Phi^{\dagger}\partial_{\imath}\Phi+\mu^{2}\Phi^{\dagger}\Phi-\lambda(\Phi^{\dagger}\Phi)^{2}\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{\partial_{\imath}\Phi^{\dagger}\partial_{\imath}\Phi+\mu^{2}\Phi^{\dagger}\Phi-\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2}\Bigr\},
 \qquad
-m_h^{2}=2\lambda v^{2},\quad v^{2}=\frac{\mu^{2}}{\lambda}.
+m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2},\quad v^{2}=\frac{\mu^{2}}{\varpi_{\mathrm{cpl}}}.
 $$
 
 ## Summary of Notation
@@ -182,13 +182,13 @@ $$
 | Symbol | Meaning |
 |---|---|
 | $\Phi$ | Complex doublet, four real components $\phi_A$ |
-| $\mu^{2},\ \lambda$ | Mass-squared parameter and quartic coupling, both positive |
-| $v=\sqrt{\mu^{2}/\lambda}$ | Magnitude of the vacuum expectation value, $\simeq246.22$ GeV |
+| $\mu^{2},\ \varpi_{\mathrm{cpl}}$ | Mass-squared parameter and quartic coupling, both positive |
+| $v=\sqrt{\mu^{2}/\varpi_{\mathrm{cpl}}}$ | Magnitude of the vacuum expectation value, $\simeq246.22$ GeV |
 | $r=\sqrt{2\Phi^{\dagger}\Phi}$ | Radial field, the potential's only argument |
 | $h=r-v$ | Physical scalar fluctuation in the unitary chart |
-| $m_h^{2}=2\lambda v^{2}$ | Curvature of the potential at the minimum |
-| $g_{hhh}=3m_h^{2}/v$ | Cubic self-coupling, $=6\lambda v$ |
-| $g_{hhhh}=3m_h^{2}/v^{2}$ | Quartic self-coupling, $=6\lambda$ |
+| $m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2}$ | Curvature of the potential at the minimum |
+| $g_{hhh}=3m_h^{2}/v$ | Cubic self-coupling, $=6\varpi_{\mathrm{cpl}} v$ |
+| $g_{hhhh}=3m_h^{2}/v^{2}$ | Quartic self-coupling, $=6\varpi_{\mathrm{cpl}}$ |
 | $J_{Y,\imath}$ | Hypercharge current of the doublet, vanishing on the radial direction |
 | $V(v)=-m_h^{2}v^{2}/8$ | Depth of the potential at the minimum |
 
@@ -198,7 +198,7 @@ $$
 - *Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses*, for the mass matrix, the count and the couplings read from the masses rather than from the potential's derivatives.
 - *The Higgs Mechanism in Biquaternionic Form*, for the central scalar and the covariant derivative in the biquaternion algebra.
 - *The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form*, for the one-loop correction this article does not compute.
-- *The Landau Pole, Triviality and Vacuum Stability*, for the two bounds that follow from the running of $\lambda$.
+- *The Landau Pole, Triviality and Vacuum Stability*, for the two bounds that follow from the running of $\varpi_{\mathrm{cpl}}$.
 - *The Lagrangian and the Interacting Scalar Field*, for the same quartic term without the negative mass squared, where the symmetry is unbroken.
 - *The Lagrangian and the Goldstone Effective Action*, for the three flat directions treated as fields of their own.
 - Chris Quigg, *Gauge Theories of the Strong, Weak and Electromagnetic Interactions*, for the classical potential and the self-couplings.

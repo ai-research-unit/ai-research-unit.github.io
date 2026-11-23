@@ -216,7 +216,7 @@ $\mathbb{B}_{\Psi}$ is a four-dimensional real Hilbert space under the Hermitian
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=\epsilon_{\imath\jmath\lambda}\vec e_\lambda$ $(\imath\neq\jmath)$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=\epsilon_{\imath\jmathk}\vec e_\imath$ $(\imath\neq\jmath)$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector, $\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector, $\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |

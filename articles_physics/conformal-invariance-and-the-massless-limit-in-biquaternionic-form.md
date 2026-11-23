@@ -41,7 +41,7 @@ $$
 [P_{\imath},\mathcal{K}_{\jmath}] = 2\bigl(\delta_{\imath\jmath}D - M_{\imath\jmath}\bigr) , \qquad
 [M_{\imath\jmath},P_\rho] = \delta_{\jmath\rho}P_{\imath} - \delta_{\imath\rho}P_{\jmath} .
 $$
-The symbol $\mathcal{K}_{\imath}$ for the special conformal generator is the companion's notation, kept here: the letter $K_{\imath}$ is used in the series for the boost generator $B_{\mathrm{boost},k} = i\vec e_k$ of the Lorentz group, which is an element of the algebra, while $\mathcal{K}_{\imath}$ is a differential operator and is not. The generators act on the coordinates as
+The symbol $\mathcal{K}_{\imath}$ for the special conformal generator is the companion's notation, kept here: the letter $K_{\imath}$ is used in the series for the boost generator $B_{\mathrm{boost},k} = i\vec e_\imath$ of the Lorentz group, which is an element of the algebra, while $\mathcal{K}_{\imath}$ is a differential operator and is not. The generators act on the coordinates as
 $$
 P_{\imath} = \partial/\partial R_{\imath} , \qquad
 D = \sum_{\jmath} x_{\jmath}\partial/\partial R_{\jmath} , \qquad
@@ -52,7 +52,7 @@ with $x^2 = \sum_{\rho}x_\rho x_\rho$. The conformal group contains the Poincar�
 
 ### What the algebra carries, and what it does not
 
-Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $\vec e_k$ and the boosts $B_{\mathrm{boost},k} = i\vec e_k$, and the Lorentz group acts by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$. The dilation is realised by a non-invertible element $\sqrt{\lambda}\,e_t$, which scales the biquaternion norm without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{B}_{\Phi}$: the special conformal transformation is a fractional map obtained by placing a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
+Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $\vec e_\imath$ and the boosts $B_{\mathrm{boost},k} = i\vec e_\imath$, and the Lorentz group acts by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$. The dilation is realised by a non-invertible element $\sqrt{\lambda}\,e_t$, which scales the biquaternion norm without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{B}_{\Phi}$: the special conformal transformation is a fractional map obtained by placing a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
 $$
 I(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\langle\tilde{Q}\rangle_{\natural}} ,
 \qquad
@@ -86,13 +86,13 @@ and the transformation is a symmetry of the equation $(\Box_\Phi - 4\pi^{2}\nu_m
 
 The dilation is $\tilde{Q}\mapsto\tilde{Q}_2 = \lambda\tilde{Q}$, whose interval is scaled by $\lambda^2$ and which therefore has the constant conformal factor $\Omega = \lambda$; read in the inverse direction, $\Omega = \lambda^{-1}$. For the rescaled field
 $$
-\xi_\lambda(\tilde{Q}) = \lambda^{-\mathcal{W}_{\mathrm{dim}}}\,\xi(\lambda^{-1}\tilde{Q})
+\xi_\imath(\tilde{Q}) = \lambda^{-\mathcal{W}_{\mathrm{dim}}}\,\xi(\lambda^{-1}\tilde{Q})
 $$
 the chain rule gives
 $$
-\Box_\Phi\,\xi_\lambda = \lambda^{-(\mathcal{W}_{\mathrm{dim}}+2)}\,\bigl(\Box_\Phi\xi\bigr)\bigl(\lambda^{-1}\tilde{Q}\bigr) ,
+\Box_\Phi\,\xi_\imath = \lambda^{-(\mathcal{W}_{\mathrm{dim}}+2)}\,\bigl(\Box_\Phi\xi\bigr)\bigl(\lambda^{-1}\tilde{Q}\bigr) ,
 $$
-so $\xi_\lambda$ solves $\Box_\Phi\xi_\lambda = 0$ whenever $\xi$ does, for **every** weight $\mathcal{W}_{\mathrm{dim}}$. This is the trivial half of the conformal symmetry: the massless wave equation is homogeneous and the box operator has dimension two, so any rescaling of a solution is a solution, and only the mass term obstructs it. The nontrivial half is the inversion, where the conformal factor is a function of the point and the derivative of $\Omega$ enters.
+so $\xi_\imath$ solves $\Box_\Phi\xi_\imath = 0$ whenever $\xi$ does, for **every** weight $\mathcal{W}_{\mathrm{dim}}$. This is the trivial half of the conformal symmetry: the massless wave equation is homogeneous and the box operator has dimension two, so any rescaling of a solution is a solution, and only the mass term obstructs it. The nontrivial half is the inversion, where the conformal factor is a function of the point and the derivative of $\Omega$ enters.
 
 ### The inversion and the conformal Laplacian
 
@@ -159,11 +159,11 @@ The massive operator is $\Box_\Phi - 4\pi^{2}\nu_m^{2}$ with $\nu_m=\frac{mc}{h}
 
 ### The effective mass under dilation
 
-The breaking can be exhibited in one line. If $\xi$ solves the massive equation, $(\Box_\Phi-4\pi^{2}\nu_m^{2})\xi=0$, then the dilated field $\xi_\lambda(\tilde{Q}) = \lambda^{-\mathcal{W}_{\mathrm{dim}}}\xi(\lambda^{-1}\tilde{Q})$ solves the *dilated* massive equation,
+The breaking can be exhibited in one line. If $\xi$ solves the massive equation, $(\Box_\Phi-4\pi^{2}\nu_m^{2})\xi=0$, then the dilated field $\xi_\imath(\tilde{Q}) = \lambda^{-\mathcal{W}_{\mathrm{dim}}}\xi(\lambda^{-1}\tilde{Q})$ solves the *dilated* massive equation,
 $$
-\bigl(\Box_\Phi - \lambda^{-2}\,4\pi^{2}\nu_m^{2}\bigr)\xi_\lambda = 0 ,
+\bigl(\Box_\Phi - \lambda^{-2}\,4\pi^{2}\nu_m^{2}\bigr)\xi_\imath = 0 ,
 $$
-because $\Box_\Phi = \lambda^{-2}\Box_\Phi$ and the mass term is a constant. The computation was checked on a massive plane wave: with $2\pi\nu_m = 0.7$ and $\lambda = 2$ the rescaled field has $\Box_\Phi\xi_\lambda/\xi_\lambda = 0.1225 = 4\pi^{2}\nu_m^{2}/\lambda^2$ to six decimal places. The dilation therefore **rescales the mass and no value of $\lambda$ returns the original equation** unless $\nu_m = 0$; the massless equation is the unique fixed point of the dilation, and this is the precise sense in which the mass is the order parameter of the symmetry. The same computation for the other four generators shows the same thing: each carries $\nu_m^{2}$ into a point-dependent multiple of itself, and only at $\nu_m=0$ is the set of solutions preserved.
+because $\Box_\Phi = \lambda^{-2}\Box_\Phi$ and the mass term is a constant. The computation was checked on a massive plane wave: with $2\pi\nu_m = 0.7$ and $\lambda = 2$ the rescaled field has $\Box_\Phi\xi_\imath/\xi_\imath = 0.1225 = 4\pi^{2}\nu_m^{2}/\lambda^2$ to six decimal places. The dilation therefore **rescales the mass and no value of $\lambda$ returns the original equation** unless $\nu_m = 0$; the massless equation is the unique fixed point of the dilation, and this is the precise sense in which the mass is the order parameter of the symmetry. The same computation for the other four generators shows the same thing: each carries $\nu_m^{2}$ into a point-dependent multiple of itself, and only at $\nu_m=0$ is the set of solutions preserved.
 
 ### The symbol on the light cone and the rank drop
 

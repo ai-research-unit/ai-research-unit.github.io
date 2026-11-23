@@ -262,7 +262,7 @@ is conserved, points along the perihelion direction, and makes the momentum hodo
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmath\lambda}\vec e_\lambda$ $(\imath\neq\jmath)$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmathk}\vec e_\imath$ $(\imath\neq\jmath)$ |
 | $i$ | Central scalar imaginary, $i^2 = -e_t$ |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Informational (Hermitian), material (anti-Hermitian) sectors |
 | $\vec r, \vec p, \vec v, \vec F$ | Position, momentum, velocity, force: real vectors in $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ |

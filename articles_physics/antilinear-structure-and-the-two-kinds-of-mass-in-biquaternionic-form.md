@@ -16,7 +16,7 @@ The article is organised as follows. A section fixes what antilinear means in th
 
 ## What Antilinear Means Here
 
-The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and a scalar imaginary $i$ commuting with every invertible element, $i^2 = -1$. That relation is used all through the article: every sign produced by two imaginary factors is $i^2 = -1$ read once. An element is a sum with complex coefficients,
+The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\imath^2 = -e_t$, and a scalar imaginary $i$ commuting with every invertible element, $i^2 = -1$. That relation is used all through the article: every sign produced by two imaginary factors is $i^2 = -1$ read once. An element is a sum with complex coefficients,
 
 $$
 \tilde{Q} = (a_0 + i b_0)e_t + (a_1 + i b_1)\vec e_x + (a_2 + i b_2)\vec e_y + (a_3 + i b_3)\vec e_z , \qquad a_{\imath}, b_{\imath} \in \mathbb{R},
@@ -53,12 +53,12 @@ Both are anti-automorphisms; the second carries a sign, $(\tilde{Q}_2\tilde{Q}_1
 
 | involution | action on generators | $\mathbb{C}$-linearity | character | fixed space |
 |---|---|---|---|---|
-| $\tilde{Q}^{\natural}$ | $e_t \mapsto e_t$, $\vec e_k \mapsto -\vec e_k$, $i \mapsto i$ | linear | anti-automorphism | $\mathbb{B}_{C} = \{Q_te_t\}$ (centre), real dim $2$ |
-| $\bar{\tilde{Q}}$ | $e_t \mapsto e_t$, $\vec e_k \mapsto \vec e_k$, $i \mapsto -i$ | antilinear | automorphism | $\mathbb{B}_{H}$, real dim $4$ |
-| $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ | $e_t \mapsto e_t$, $\vec e_k \mapsto -\vec e_k$, $i \mapsto -i$ | antilinear | anti-automorphism | $\mathbb{B}_{\Psi}$, real dim $4$ |
-| $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$ | $e_t \mapsto -e_t$, $\vec e_k \mapsto \vec e_k$, $i \mapsto i$ | antilinear | anti-automorphism with twist | $\mathbb{B}_{\Phi}$, real dim $4$ |
+| $\tilde{Q}^{\natural}$ | $e_t \mapsto e_t$, $\vec e_\imath \mapsto -\vec e_\imath$, $i \mapsto i$ | linear | anti-automorphism | $\mathbb{B}_{C} = \{Q_te_t\}$ (centre), real dim $2$ |
+| $\bar{\tilde{Q}}$ | $e_t \mapsto e_t$, $\vec e_\imath \mapsto \vec e_\imath$, $i \mapsto -i$ | antilinear | automorphism | $\mathbb{B}_{H}$, real dim $4$ |
+| $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ | $e_t \mapsto e_t$, $\vec e_\imath \mapsto -\vec e_\imath$, $i \mapsto -i$ | antilinear | anti-automorphism | $\mathbb{B}_{\Psi}$, real dim $4$ |
+| $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$ | $e_t \mapsto -e_t$, $\vec e_\imath \mapsto \vec e_\imath$, $i \mapsto i$ | antilinear | anti-automorphism with twist | $\mathbb{B}_{\Phi}$, real dim $4$ |
 
-The last row is the one the rest of the article uses, and its entry on the generators needs reading with care: the minus in $\flat=-{}^{*}$ cancels the signs that ${}^{*}$ puts on the spatial units and on $i$, so on the invertibles $\flat$ does nothing but negate the real one. On an element it negates the real scalar part and the imaginary vector parts, and keeps the real vector part and the imaginary scalar part, so its fixed space is the $a_k\vec e_k + ib_0e_t$ of the material sector — a real spatial vector and an imaginary scalar, the shape of the four-potential.
+The last row is the one the rest of the article uses, and its entry on the generators needs reading with care: the minus in $\flat=-{}^{*}$ cancels the signs that ${}^{*}$ puts on the spatial units and on $i$, so on the invertibles $\flat$ does nothing but negate the real one. On an element it negates the real scalar part and the imaginary vector parts, and keeps the real vector part and the imaginary scalar part, so its fixed space is the $a_\imath\vec e_\imath + ib_0e_t$ of the material sector — a real spatial vector and an imaginary scalar, the shape of the four-potential.
 
 Four involutions, four distinct fixed spaces, of real dimensions $2, 4, 4, 4$. The two sectors of the framework are the last two rows, and they are the fixed spaces of *antilinear* maps. The real-quaternion sector $\mathbb{B}_{H}$ is the fixed space of the other antilinear involution, and the centre is the fixed space of the one linear involution. The last two rows are the only pair that is not independent: they differ by the central sign alone, $\flat=-{}^{*}$, and that sign is exactly what moves the fixed space from $\mathbb{B}_{\Psi}$ to $\mathbb{B}_{\Phi}$. The first two rows are different maps, acting differently on the generators. The fixed spaces, not the signs, are what the framework builds on.
 
@@ -178,7 +178,7 @@ $$
 
 The first acts on the right-handed half, the second on the left-handed one, and the second is the quaternion conjugate of the first. The massless case is $\tilde\nabla_\Phi\tilde{Ξ} = 0$, which is the right-handed member alone; the full massless field is the pair, not either member.
 
-**The two-sided reading.** The pair is also the corpus's two-sided structure. For a scalar mass the siding is invisible — $\nu_m$ is central, so $\nu_m\tilde{Ξ}_{L}=\tilde{Ξ}_{L}\,\nu_m$ and the mass term may be read as a left or as a right multiplication — but the siding becomes visible as soon as the mass term carries a direction and a conjugation, which is exactly what the dictionary's form of the equation does. With $r'_t$ the imaginary time and $D_3=\sum_{k\in\{x,y,z\}}\vec e_k\,\partial/\partial R_k$ the three-dimensional Cauchy–Riemann operator, Kravchenko's form of the equation on $F\in\mathbb{B}$ reads
+**The two-sided reading.** The pair is also the corpus's two-sided structure. For a scalar mass the siding is invisible — $\nu_m$ is central, so $\nu_m\tilde{Ξ}_{L}=\tilde{Ξ}_{L}\,\nu_m$ and the mass term may be read as a left or as a right multiplication — but the siding becomes visible as soon as the mass term carries a direction and a conjugation, which is exactly what the dictionary's form of the equation does. With $r'_t$ the imaginary time and $D_3=\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial R_\imath$ the three-dimensional Cauchy–Riemann operator, Kravchenko's form of the equation on $F\in\mathbb{B}$ reads
 
 $$
 (i\partial/\partial r'_t + D_3)F - mi\,\bar{F}\,\vec e_z = 0 ,
@@ -224,13 +224,13 @@ The framework calls $\flat$ the algebra's **real structure**. The neutrino compa
 | | algebra real structure $\flat$ | module charge conjugation $\mathcal{C}$ |
 |---|---|---|
 | acts on | the algebra $\mathbb{B}$, real dim $8$ | the module $\mathcal{S}_{\mathrm{rep}}$, real dim $8$ |
-| defined by | the generators: $e_t\mapsto -e_t$, $\vec e_k\mapsto \vec e_k$, $i\mapsto i$ | the conjugation by $\vec e_y$ composed with the field's star, $\mathcal{C}[\tilde{Ξ}]=-\vec e_y\tilde{Ξ}^*\vec e_y$, with $\mathcal{C}^{2}=+1$ |
+| defined by | the generators: $e_t\mapsto -e_t$, $\vec e_\imath\mapsto \vec e_\imath$, $i\mapsto i$ | the conjugation by $\vec e_y$ composed with the field's star, $\mathcal{C}[\tilde{Ξ}]=-\vec e_y\tilde{Ξ}^*\vec e_y$, with $\mathcal{C}^{2}=+1$ |
 | fixed space | $\mathbb{B}_{\Phi}$, the anti-Hermitian sector, real dim $4$ | the Majorana space, real dim $4$ |
 | respected by the kinetic operator | **no** | **yes**; the CPT companion verifies on the free equation that $\mathcal{C}$ carries solutions to solutions |
 | exchanges the two values | no — it preserves the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split | yes, through the basis operator under it |
 | role | the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split, traces, bilinears | the Majorana reality condition |
 
-The third row and the fourth row are the substance. The fixed spaces have the *same real dimension four*, which is why the two are so easy to identify — and why the identification is wrong. The neutrino companion tests it on the equation and reports the obstruction: **the Dirac operator does not preserve $\mathbb{B}_{\Phi}$.** The reason is one line of the twist in $\flat$. Because $\flat$ is an anti-automorphism with a sign, $(\vec e_k\tilde{Ξ})^\flat=-\tilde{Ξ}^{\flat}\vec e_k$; on the fixed space $\mathbb{B}_{\Phi}$ this is $-\tilde{Ξ}\vec e_k$, which equals $\vec e_k\tilde{Ξ}$ only when $\vec e_k$ anticommutes with $\tilde{Ξ}$. It does not in general: for $\tilde{Ξ}=ie_t$ one gets $\vec e_k\tilde{Ξ}=i\vec e_k$, which is Hermitian, hence in $\mathbb{B}_{\Psi}$. A reality condition that the kinetic operator does not respect cannot be imposed on a field: the constrained field would not stay constrained under time evolution. So $\mathbb{B}_{\Phi}$ is a perfectly good real form *of the algebra* — Lorentz-stable under the rotor action $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ — and simultaneously not the Majorana reality condition *of the module*, despite the matching dimension count.
+The third row and the fourth row are the substance. The fixed spaces have the *same real dimension four*, which is why the two are so easy to identify — and why the identification is wrong. The neutrino companion tests it on the equation and reports the obstruction: **the Dirac operator does not preserve $\mathbb{B}_{\Phi}$.** The reason is one line of the twist in $\flat$. Because $\flat$ is an anti-automorphism with a sign, $(\vec e_\imath\tilde{Ξ})^\flat=-\tilde{Ξ}^{\flat}\vec e_\imath$; on the fixed space $\mathbb{B}_{\Phi}$ this is $-\tilde{Ξ}\vec e_\imath$, which equals $\vec e_\imath\tilde{Ξ}$ only when $\vec e_\imath$ anticommutes with $\tilde{Ξ}$. It does not in general: for $\tilde{Ξ}=ie_t$ one gets $\vec e_\imath\tilde{Ξ}=i\vec e_\imath$, which is Hermitian, hence in $\mathbb{B}_{\Psi}$. A reality condition that the kinetic operator does not respect cannot be imposed on a field: the constrained field would not stay constrained under time evolution. So $\mathbb{B}_{\Phi}$ is a perfectly good real form *of the algebra* — Lorentz-stable under the rotor action $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ — and simultaneously not the Majorana reality condition *of the module*, despite the matching dimension count.
 
 The moral is the one this article exists to record:
 
@@ -265,7 +265,7 @@ $$
 \mathcal{C}\big(\mathcal{C}[\tilde{Ξ}]\big)=-\vec e_y\big(-\vec e_y\tilde{Ξ}^*\vec e_y\big)^{*}\vec e_y=\tilde{Ξ} ,
 $$
 
-because $\vec e_y^{*}=-\vec e_y$, so the two conjugations cancel the two units and the two signs with them. The two squares differ only in how many times the relation $\vec e_k^{2}=-e_t$ is used: the bilinear uses it once, on its right-hand factor, and carries one minus; the operation uses it on both factors, and the two minuses cancel. What makes the operation exchange the two values is the basis operator under it: multiplication on the right by $\vec e_y$ anticommutes with multiplication on the right by $\vec e_z$, which is the basis operator that defines the value, so the basis operator carries $L$ to $R$ and $R$ to $L$, while a basis operator that commuted with it would leave the two parts in place. Neither formula may be carried across the change of realization — the multiplier of the bilinear against the star, or the basis operator of the operation against the transpose — and that is why the two squares appear to disagree.
+because $\vec e_y^{*}=-\vec e_y$, so the two conjugations cancel the two units and the two signs with them. The two squares differ only in how many times the relation $\vec e_\imath^{2}=-e_t$ is used: the bilinear uses it once, on its right-hand factor, and carries one minus; the operation uses it on both factors, and the two minuses cancel. What makes the operation exchange the two values is the basis operator under it: multiplication on the right by $\vec e_y$ anticommutes with multiplication on the right by $\vec e_z$, which is the basis operator that defines the value, so the basis operator carries $L$ to $R$ and $R$ to $L$, while a basis operator that commuted with it would leave the two parts in place. Neither formula may be carried across the change of realization — the multiplier of the bilinear against the star, or the basis operator of the operation against the transpose — and that is why the two squares appear to disagree.
 
 The levels are the corpus's own statements, each made in the article that owns it: the character interpretation of $\flat$ and the two labelled dictionaries are *Parra's Four Options of the Dirac Equation and the Discrete Symmetries*; the subspace interpretation of $\flat$ is *The Biquaternion Space, the Group of Involutions and the Six Subspaces*; the level-3 passage, with the explicit statement that the conjugation basis operator is not the coefficient conjugation, is *The Physical Interpretation of the 12 Products*; the pseudoautomorphism and the division-ring sign of $\eta^{2}$ are *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form*; the level-4 identification is *The Neutrino and Majorana Fermions in Biquaternionic Form*; and the separation of all of them from the real structure on the value space of a scalar field is *The Quantized Scalar Field in Biquaternionic Form*. The $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split itself is defined by the algebra-level map, so the level-1 object is also what makes $\mathbb{B}_{\Phi}$ the material sector; the levels are not rivals but a hierarchy, and no level may be substituted for another.
 
@@ -405,7 +405,7 @@ In every one of these uses the coupling pairs the field with its conjugate, and 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\imath^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -436,7 +436,7 @@ Every generator is $i$ times a real basis operator, so $i^2 = -1$ fixes the sign
 $$
 \gamma_0^{2} = -L_{\mathrm{pau},e_t^{2}}R_{\mathrm{pau},\vec e_x^{2}} = -L_{\mathrm{pau},e_t}R_{\mathrm{pau},-e_t} = +I_4,
 \qquad
-\gamma_k^{2} = -L_{\mathrm{pau},\vec e_k^{2}}R_{\mathrm{pau},\vec e_y^{2}} = -L_{\mathrm{pau},-e_t}R_{\mathrm{pau},-e_t} = -I_4.
+\gamma_\imath^{2} = -L_{\mathrm{pau},\vec e_k^{2}}R_{\mathrm{pau},\vec e_y^{2}} = -L_{\mathrm{pau},-e_t}R_{\mathrm{pau},-e_t} = -I_4.
 $$
 
 In the axis-free display:
@@ -444,7 +444,7 @@ In the axis-free display:
 $$
 \gamma_0^{2} = -L_{\mathrm{axf},e_t^{2}}R_{\mathrm{axf},\vec e_x^{2}} = -L_{\mathrm{axf},e_t}R_{\mathrm{axf},-e_t} = +I_4,
 \qquad
-\gamma_k^{2} = -L_{\mathrm{axf},\vec e_k^{2}}R_{\mathrm{axf},\vec e_y^{2}} = -L_{\mathrm{axf},-e_t}R_{\mathrm{axf},-e_t} = -I_4.
+\gamma_\imath^{2} = -L_{\mathrm{axf},\vec e_k^{2}}R_{\mathrm{axf},\vec e_y^{2}} = -L_{\mathrm{axf},-e_t}R_{\mathrm{axf},-e_t} = -I_4.
 $$
 
 $\gamma_5$ is one basis operator that shows the chirality, a pure right multiplier; the central grading is a different object. It is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$, so that $\chi^2=e_t$ and $e_\pm=\tfrac12(e_t\pm\xi)$ are the two central idempotents; on the Dirac module it is represented by $\gamma_5$.
@@ -473,7 +473,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the gammas span $\mathrm{Cl}
 
 $$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
+(\gamma_\imath)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_{\imath},\gamma_5\}=0,\qquad
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3,
@@ -532,7 +532,7 @@ With the weight on the summed index they are $4I_4$, $-2\gamma_\alpha$, $4\varep
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; real dim $8$, complex dim $4$ |
 | $\tilde{Q}^{\natural}$, $\bar{\tilde{Q}}$, $\tilde{Q}^{*}$, $\tilde{Q}^{\flat}$ | Quaternion, complex, Hermitian, anti-Hermitian conjugations |
-| $\tilde{Q}^\flat = -\tilde{Q}^{*}$; $e_t^\flat = -e_t$, $\vec e_k^\flat = \vec e_k$, $i^\flat = +i$ | The algebra's real structure; the antilinear involution that negates the real unit and fixes the three spatial units and $i$ |
+| $\tilde{Q}^\flat = -\tilde{Q}^{*}$; $e_t^\flat = -e_t$, $\vec e_\imath^\flat = \vec e_\imath$, $i^\flat = +i$ | The algebra's real structure; the antilinear involution that negates the real unit and fixes the three spatial units and $i$ |
 | $\mathbb{B}_{\Phi} = \{\tilde{Q} : \tilde{Q}^\flat = \tilde{Q}\}$ | Anti-Hermitian (material) sector, real dim $4$ |
 | $\mathbb{B}_{\Psi} = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\}$ | Hermitian (informational) sector, real dim $4$ |
 | $\mathbb{B}_{H} = \{\tilde{Q} : \bar{\tilde{Q}} = \tilde{Q}\}$ | Real-quaternion sector, real dim $4$ |
@@ -545,7 +545,7 @@ With the weight on the summed index they are $4I_4$, $-2\gamma_\alpha$, $4\varep
 | $\mathrm{Spin}^c(1,3) = \bigl(\mathrm{Spin}(1,3)\times \mathrm{U}(1)\bigr)/\{\pm 1\}$ | Central extension of the spin group by a circle; its central factor is the framework's central phase, and a charged field is one on which that factor acts non-trivially |
 | $\mathcal{S}_{\mathrm{rep}} = S\oplus\bar{S}$ | Dirac module, real dim $8$; $\mathcal{C}$ exchanges the halves |
 | $a\tilde{Ξ} b$ | The two-sided action; the side is carried by position and never by a mark |
-| $D_3=\sum_{k\in\{x,y,z\}}\vec e_k\,\partial/\partial R_k$; $r'_t$ | Three-dimensional Cauchy–Riemann operator; imaginary time, in the two-sided form only |
+| $D_3=\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial R_\imath$; $r'_t$ | Three-dimensional Cauchy–Riemann operator; imaginary time, in the two-sided form only |
 | $m_D$, $m_M$ | Dirac and Majorana masses |
 | $\flat$ acts $+$ on $\mathbb{B}_{\Phi}$, $-$ on $\mathbb{B}_{\Psi}$ | The sector sign; the same convention as the material identification |
 

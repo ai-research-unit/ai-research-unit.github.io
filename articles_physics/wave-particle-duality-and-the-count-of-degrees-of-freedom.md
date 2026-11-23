@@ -20,7 +20,7 @@ Why this belongs to the duality. Wave–particle duality, as *Wave–Particle Du
 
 What this does not buy. No dynamics, no value of a mass, no mechanism for the massless limit, and no derivation of gauge invariance. The rank reports how many directions the symbol reaches. Why a direction is a state, and why the massless field has a gauge symmetry, are the readings imported from the articles named below.
 
-The conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, so $\vec e_k^{2}=-e_t$ for $k=x,y,z$. On a plane wave *Derivatives, Fields and Transforms* gives the symbols
+The conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, so $\vec e_\imath^{2}=-e_t$ for $k=x,y,z$. On a plane wave *Derivatives, Fields and Transforms* gives the symbols
 
 $$
 \tilde\nabla_\Phi\longmapsto 2\pi i\tilde\Upsilon_{\Phi},

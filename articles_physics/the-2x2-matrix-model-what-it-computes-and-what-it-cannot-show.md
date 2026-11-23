@@ -46,8 +46,8 @@ The form $N$ is complex. It is the algebra's quadratic form, it is multiplicativ
 The Minkowski interval is not $N$. It is what $N$ becomes when the four-vector's real coordinates are put into the algebra in the way *Frame and Metric Conventions* fixes:
 
 $$
-\text{the four-vector }(q_t,\vec q)\ \longmapsto\ \tilde Q=q_t+\sum_{k\in\{x,y,z\}}iq_k\vec e_k,
-\qquad q_t,q_k\in\mathbb{R}.
+\text{the four-vector }(q_t,\vec q)\ \longmapsto\ \tilde Q=q_t+\sum_{\imath\in\{x,y,z\}}iq_\imath\vec e_\imath,
+\qquad q_t,q_\imath\in\mathbb{R}.
 $$
 
 On that set the coefficients are $Q_t=q_t$ real and $Q_j=iq_j$ imaginary, and the image is

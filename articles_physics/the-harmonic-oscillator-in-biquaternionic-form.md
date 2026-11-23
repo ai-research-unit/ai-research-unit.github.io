@@ -223,7 +223,7 @@ The two-sector interpretation of the oscillator is therefore formal, not a pair 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_{\jmath} \vec e_{\imath}=\epsilon_{\jmath\imath\lambda}\vec e_\lambda$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_{\jmath} \vec e_{\imath}=\epsilon_{\jmath\imathk}\vec e_\imath$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material): $i r'_t e_t+\vec r_\Phi$, $\vec r_\Phi$ real |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational): $h_t\,e_t+i\vec h_\Psi$ |

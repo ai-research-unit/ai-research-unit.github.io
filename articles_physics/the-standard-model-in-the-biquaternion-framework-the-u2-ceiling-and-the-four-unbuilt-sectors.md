@@ -91,9 +91,9 @@ F = d\mathcal{A} + i\kappa\,\mathcal{A}\wedge\mathcal{A},
 [D_{\imath},D_{\jmath}] = i\kappa F_{\imath\jmath},
 $$
 
-is **not** gauge invariant but transforms in the adjoint representation, $F_{2,\imath\jmath} = \tilde U F_{\imath\jmath} \tilde U^{-1}$; it satisfies the Bianchi identity $D_\lambda F_{\imath\jmath} + D_{\imath} F_{\jmath\lambda} + D_{\jmath} F_{\lambda\imath} = 0$; and $-\tfrac12\mathrm{Tr}\bigl(\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}F_{\imath\jmath}\bigr)$ is a gauge-invariant density, with the matrix trace on the $\mathrm{SU}(2)$ factor and not the informational pairing formula. What this construction supplies is the general machinery of a non-abelian gauge theory; what it does not supply is a chiral action of the factor on matter, because left multiplication acts vector-like on the field (the chiral structure is treated below).
+is **not** gauge invariant but transforms in the adjoint representation, $F_{2,\imath\jmath} = \tilde U F_{\imath\jmath} \tilde U^{-1}$; it satisfies the Bianchi identity $D_\imath F_{\imath\jmath} + D_{\imath} F_{\jmathk} + D_{\jmath} F_{k\imath} = 0$; and $-\tfrac12\mathrm{Tr}\bigl(\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}F_{\imath\jmath}\bigr)$ is a gauge-invariant density, with the matrix trace on the $\mathrm{SU}(2)$ factor and not the informational pairing formula. What this construction supplies is the general machinery of a non-abelian gauge theory; what it does not supply is a chiral action of the factor on matter, because left multiplication acts vector-like on the field (the chiral structure is treated below).
 
-One gap in the construction is carried here unchanged, because it bears on how a Standard Model factor could ever be identified. The reality class of the connection is not gauge invariant in a single Hermitian-conjugation eigenspace: the $i r'_t$ derivative makes the Maurer–Cartan form $(\partial/\partial R_{\imath} \tilde U)\tilde U^{-1}$ anti-Hermitian in the spatial directions and Hermitian in the time direction, so a condition placing all four components $\mathcal{A}_{\imath}$ in one eigenspace cannot survive a gauge transformation. A consistent mixed assignment exists — $\mathcal{A}_0$ anti-Hermitian (in $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$), $\mathcal{A}_k$ Hermitian (in $i\,\mathrm{SU}(2)\subset\mathbb{B}_{\Psi}$) — but whether it is the intended physical one is open. The obstruction is a property of the $i r'_t$ derivative, not of the gauge algebra.
+One gap in the construction is carried here unchanged, because it bears on how a Standard Model factor could ever be identified. The reality class of the connection is not gauge invariant in a single Hermitian-conjugation eigenspace: the $i r'_t$ derivative makes the Maurer–Cartan form $(\partial/\partial R_{\imath} \tilde U)\tilde U^{-1}$ anti-Hermitian in the spatial directions and Hermitian in the time direction, so a condition placing all four components $\mathcal{A}_{\imath}$ in one eigenspace cannot survive a gauge transformation. A consistent mixed assignment exists — $\mathcal{A}_0$ anti-Hermitian (in $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$), $\mathcal{A}_\imath$ Hermitian (in $i\,\mathrm{SU}(2)\subset\mathbb{B}_{\Psi}$) — but whether it is the intended physical one is open. The obstruction is a property of the $i r'_t$ derivative, not of the gauge algebra.
 
 ### The ceiling on the gauge algebra
 
@@ -329,7 +329,7 @@ The table collects the article's items and sorts each into one of the three cate
 | Chiral structure on the field: the fifth basis operator of the frame, the two parts named by the subscript, the chirality-odd bilinear $B$, the chiral abelian charge $b$, selection rule $ϙ_L=ϙ_R$ | Established | — |
 | Vector-like character of the centre, read on the two values of the field | Established | — |
 | Linear chiral mass with conserved vector $\mathrm{U}(1)$; real structure $\flat$ (antilinear) | Established; interpretation of $\flat$'s pairing (Majorana/Dirac) open | Decide the interpretation on the real structure |
-| Reality class of the non-abelian connection | **Known route** | Recompute the transformation for the mixed assignment ($\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_k$ Hermitian) and find a principle fixing the placement of $i$; or a no-go |
+| Reality class of the non-abelian connection | **Known route** | Recompute the transformation for the mixed assignment ($\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_\imath$ Hermitian) and find a principle fixing the placement of $i$; or a no-go |
 | Non-abelian matter representation | **Known route** | Construct the action of the factor on the chosen matter field and verify $D_{2,\imath}(\tilde U\tilde{Ξ})=\tilde U D_{\imath}\tilde{Ξ}$ |
 | Gauge and gravitational anomalies of a chiral spectrum | **Known route** in standard field theory; no framework realisation | A biquaternion computation of the axial-current divergence or the triangle diagram |
 | Gauge-fixing principle | **Known route** in standard field theory; no framework realisation | Reproduce the Faddeev–Popov or BV procedure in the algebra, or prove a no-go |
@@ -413,7 +413,7 @@ No section assumes a Standard Model structure. The three gauge factors are each 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$, central |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors; $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
@@ -428,7 +428,7 @@ No section assumes a Standard Model structure. The three gauge factors are each 
 | $\mathcal{A}_{\imath}\in\mathrm{SU}(2)$, $\kappa=\frac{2\pi ϙ}{h}$ | Non-abelian connection and coupling |
 | $F_{\imath\jmath}=\partial/\partial R_{\imath}\,\mathcal{A}_{\jmath}-\partial/\partial R_{\jmath}\,\mathcal{A}_{\imath}+i\kappa[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]$ | Non-abelian field strength |
 | $F_{2,\imath\jmath}=\tilde UF_{\imath\jmath}\tilde U^{-1}$, $[D_{\imath},D_{\jmath}]=i\kappa F_{\imath\jmath}$ | Adjoint transformation law and curvature identity |
-| $D_\lambda F_{\imath\jmath}+\text{cyclic}=0$ | Bianchi identity |
+| $D_\imath F_{\imath\jmath}+\text{cyclic}=0$ | Bianchi identity |
 | $-\tfrac12\mathrm{Tr}\bigl(\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}F_{\imath\jmath}\bigr)$ | Gauge-invariant Yang–Mills density |
 | $\mathrm{GL}(2,\mathbb{C})=\mathrm{U}(2)\oplus i\,\mathrm{U}(2)$ | Cartan decomposition fixing the ceiling: maximal compact subalgebra $\mathrm{U}(2)$ |
 | $\tilde{Ξ}$, $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The field as one element and its two values: $L$ is the minus value, $R$ the plus value, and only the zero element is both |

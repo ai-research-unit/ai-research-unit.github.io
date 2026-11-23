@@ -524,7 +524,7 @@ $$
 \bigl\langle e^{\theta\tilde Q}\bigr\rangle_{*}
 =\lvert e^{\theta Q_t}\rvert^{2}\left(\lvert\cos(\theta B)\rvert^{2}+\lvert\sin(\theta B)\rvert^{2}\lVert\vec U\rVert^{2}\right),
 \qquad
-\lVert\vec U\rVert^{2}=\sum_{k\in\{x,y,z\}}\lvert U_k\rvert^{2},
+\lVert\vec U\rVert^{2}=\sum_{\imath\in\{x,y,z\}}\lvert U_\imath\rvert^{2},
 $$
 
 checked over twenty random null elements and three parameters each to a relative error of $3.2\times10^{-15}$.
@@ -957,7 +957,7 @@ The two mixed strata fail in opposite descriptions. The previous one keeps the m
 | $E_{12}=(\vec e_x+i\vec e_y)/2$ | the corner nilpotent, whose product is in $\Sigma_{00}$ |
 | $\vec U=\vec Q/B$ | the axis of the flow, $\vec U^{2}=e_t$ |
 | $\langle\tilde X\rangle_{*}=\operatorname{Sc}(\tilde X\tilde X^{*})$ | the Hermitian norm |
-| $\lVert\vec U\rVert^{2}=\sum_{k\in\{x,y,z\}}\lvert U_k\rvert^{2}$ | the size of the axis, one on the material slice |
+| $\lVert\vec U\rVert^{2}=\sum_{\imath\in\{x,y,z\}}\lvert U_\imath\rvert^{2}$ | the size of the axis, one on the material slice |
 | $\tilde P_\Phi=i\frac{E}{c}e_t+\vec p$ | a material momentum, null when $\lvert\vec p\rvert=\lvert E\rvert/c$ |
 | $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t-i\vec n)$ | the material idempotent, Hermitian, along the direction $\vec n$ |
 

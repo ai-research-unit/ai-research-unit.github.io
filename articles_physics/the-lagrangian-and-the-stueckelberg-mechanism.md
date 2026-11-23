@@ -34,7 +34,7 @@ The mechanism is standard, and it is the abelian case of what the electroweak se
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_k^{2}=-e_t$. The potential is $\tilde A_\Phi\in\mathbb{B}_\Phi$, real, with $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$ and $\partial_{\imath}=\partial/\partial R_{\imath}$.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\imath^{2}=-e_t$. The potential is $\tilde A_\Phi\in\mathbb{B}_\Phi$, real, with $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$ and $\partial_{\imath}=\partial/\partial R_{\imath}$.
 
 The scalar. $\xi$ is a real central scalar, dimensionless in this normalization, and the combination $A_{\imath}-\partial_{\imath}\xi/\mu$ is the invariant one. The parameter $\mu$ is the mass, with dimension of mass.
 

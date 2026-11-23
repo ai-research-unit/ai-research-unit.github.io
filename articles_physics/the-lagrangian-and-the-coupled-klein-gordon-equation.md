@@ -46,12 +46,12 @@ and the only difference from the free action is the substitution of the derivati
 **The kinetic term is real and non-negative, term by term.** For any element $Y=\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi$,
 
 $$
-\mathrm{Sc}\bigl(Y^{*}Y\bigr)=\sum_{\lambda}\lvert Y_\lambda\rvert^{2}\ge0 ,
+\mathrm{Sc}\bigl(Y^{*}Y\bigr)=\sum_{\imath}\lvert Y_\imath\rvert^{2}\ge0 ,
 $$
 
-exactly, because $Y^{*}Y=\mathrm{nat}(\bar Y)Y$ has scalar part $\sum_\lambda\lvert Y_\lambda\rvert^{2}$. So each slot's contribution is real and non-negative and the sum is real and non-negative; the action's reality needs no antisymmetrisation and no boundary term. This is where the second-order scalar case is simpler than the first-order cases: the Schrödinger and Dirac actions are first order and their reality is bought by antisymmetrising $\tilde\Xi^{*}\partial\tilde\Xi$.
+exactly, because $Y^{*}Y=\mathrm{nat}(\bar Y)Y$ has scalar part $\sum_\imath\lvert Y_\imath\rvert^{2}$. So each slot's contribution is real and non-negative and the sum is real and non-negative; the action's reality needs no antisymmetrisation and no boundary term. This is where the second-order scalar case is simpler than the first-order cases: the Schrödinger and Dirac actions are first order and their reality is bought by antisymmetrising $\tilde\Xi^{*}\partial\tilde\Xi$.
 
-**The mass term is real.** $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\sum_\lambda\lvert\Xi_\lambda\rvert^{2}$, the same computation with no derivative, so the mass term is real and positive for a nonzero field. The free companion's remark that the mass term's sign is fixed by the dispersion relation applies unchanged.
+**The mass term is real.** $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\sum_\imath\lvert\Xi_\imath\rvert^{2}$, the same computation with no derivative, so the mass term is real and positive for a nonzero field. The free companion's remark that the mass term's sign is fixed by the dispersion relation applies unchanged.
 
 **The field term.** $\tfrac12\mathrm{Re\,Sc}(\tilde F\tilde F)$ is the Maxwell article's density; for a material field strength it is $\tfrac12(\epsilon\vec E^{2}-\vec B^{2}/\mu)$ and it is real. Its invariance under the central phase is trivial here: $\tilde F$ is built from the connection alone, the connection is real, and the phase is the field's. The article states this explicitly because the coupled Proca article's field term is not in this position, and the contrast is the difference between a charge carried by the field and a charge carried by the potential.
 
@@ -79,7 +79,7 @@ $$
 
 and integrating by parts moves the derivative onto the first factor. The boundary term vanishes for a variation of compact support, and the operator that comes out squares one and the same covariant derivative, because the connection is central and the same in the two slots; the sign is the free companion's and no new sign has to be chosen.
 
-**The two factors of a slot, and one exact bookkeeping point.** Write $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$. The kinetic term carries $c_{\imath}$ in both factors of a slot, and the variation pairs them as $(\partial_{\imath}-\bar c_{\imath})(\partial_{\imath}+c_{\imath})$. That product is the square $\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}$ exactly when $\bar c_{\imath}=-c_{\imath}$, that is, when the slot's coefficient is purely imaginary. In the corpus's material convention $A_k$ is real, so the three spatial coefficients are purely imaginary and the three spatial slots pair into squares; and $A_t=i a'_t$ is imaginary, so the temporal coefficient is real and its slot pairs into $\partial_{R_t}^{2}-(\frac{2\pi ϙ a'_t}{h})^{2}$ rather than into $(\partial_{R_t}-\frac{2\pi ϙ a'_t}{h})^{2}$. For a constant potential the two differ by $-\frac{2\pi 2ϙ a'_t}{h}\partial_{R_t}+\frac{(2\pi)^{2} 2ϙ^{2}a_t'^{2}}{h^{2}}$: the first piece is the cross term through which the electric potential shifts the energy, the second the potential's square.
+**The two factors of a slot, and one exact bookkeeping point.** Write $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$. The kinetic term carries $c_{\imath}$ in both factors of a slot, and the variation pairs them as $(\partial_{\imath}-\bar c_{\imath})(\partial_{\imath}+c_{\imath})$. That product is the square $\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}$ exactly when $\bar c_{\imath}=-c_{\imath}$, that is, when the slot's coefficient is purely imaginary. In the corpus's material convention $A_\imath$ is real, so the three spatial coefficients are purely imaginary and the three spatial slots pair into squares; and $A_t=i a'_t$ is imaginary, so the temporal coefficient is real and its slot pairs into $\partial_{R_t}^{2}-(\frac{2\pi ϙ a'_t}{h})^{2}$ rather than into $(\partial_{R_t}-\frac{2\pi ϙ a'_t}{h})^{2}$. For a constant potential the two differ by $-\frac{2\pi 2ϙ a'_t}{h}\partial_{R_t}+\frac{(2\pi)^{2} 2ϙ^{2}a_t'^{2}}{h^{2}}$: the first piece is the cross term through which the electric potential shifts the energy, the second the potential's square.
 
 The article states the equation as $\Box_{\mathrm{gco},\Phi}\tilde\Xi=4\pi^{2}\nu_m^{2}\tilde\Xi$ and not as the adjoint-paired form, for three reasons: that is the equation the element companion states, it is the minimal-substitution form whose polar chart is the polar companion's pair, and it is the form whose mass shell carries the mechanical energy $E+ϙ c\,a'_t$. The variation reproduces it exactly for a magnetic connection and in the free limit, and for an electric one it reproduces it up to the cross term named above. The discrepancy is the single place where the corpus's convention for the temporal slot and the standard action's pairing part company, and it is recorded rather than absorbed: §*Open Questions* carries it.
 
@@ -189,7 +189,7 @@ up to the current's normalisation, with $F_{\jmath\imath}=\partial_{\jmath} A_{\
 
 - One action, three variations, two equations: the matter equation, the connection's equation and their consistency.
 - The identification of the current as both the phase symmetry's charge and the connection's source, in one computation.
-- The reality of the kinetic term as a one-line statement, $\mathrm{Sc}(Y^{*}Y)=\sum\lvert Y_\lambda\rvert^{2}$, with no antisymmetrisation to arrange.
+- The reality of the kinetic term as a one-line statement, $\mathrm{Sc}(Y^{*}Y)=\sum\lvert Y_\imath\rvert^{2}$, with no antisymmetrisation to arrange.
 - The action's arbitration between the two coupled equations: the component equation is the one the variation produces.
 - The Lorentz force as the divergence of the matter tensor, which is the exact statement of what the coupling costs in energy–momentum.
 

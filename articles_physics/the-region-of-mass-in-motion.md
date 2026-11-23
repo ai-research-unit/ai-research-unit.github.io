@@ -439,7 +439,7 @@ The exceptional cone is not the spectral cone. It is not $B^{2}=0$ and it is not
 
 No closed form for the pair can avoid an auxiliary direction.
 
-A map $F$ rational in $\vec Q$ and $B$, natural under rotations, would satisfy $F(S\vec Q)=S\,F(\vec Q)$ for every rotation $S$. By invariant theory the only such maps are $F(\vec Q)=f(B^{2})\vec Q$: the invariant tensors are $\delta_{ij}$ and $\epsilon_{ijk}$, and $\epsilon$ cannot build a vector from one vector. But the corner line is transverse to $\vec Q$, so such an $F$ would vanish, and the pair would be zero everywhere.
+A map $F$ rational in $\vec Q$ and $B$, natural under rotations, would satisfy $F(S\vec Q)=S\,F(\vec Q)$ for every rotation $S$. By invariant theory the only such maps are $F(\vec Q)=f(B^{2})\vec Q$: the invariant tensors are $\delta_{ij}$ and $\epsilon_{\imath\jmath\ell}$, and $\epsilon$ cannot build a vector from one vector. But the corner line is transverse to $\vec Q$, so such an $F$ would vanish, and the pair would be zero everywhere.
 
 So every explicit generator uses an auxiliary vector. The symmetric formula uses the permutation-invariant $\vec w$; the axis charts use $\vec e_x,\vec e_y,\vec e_z$. The auxiliary vector is not a datum of the element and not a choice of the physicist: it is what a spinor line costs. A corner line is a spinor, and a spinor is not a function of the momentum alone.
 

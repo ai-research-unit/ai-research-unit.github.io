@@ -27,7 +27,7 @@ $$
 \mathbb{B}_{\Psi} = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \mathrm{span}_\mathbb{R}\{h_t\,e_t, i h'_{x}\,\vec e_x, i h'_{y}\,\vec e_y, i h'_{z}\,\vec e_z\},
 $$
 
-with $r'_t,h'_{x},h'_{y},h'_{z}$ real, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, $\mathsf{M}_2(i\vec e_{\imath})=\sigma_{\imath}$, and the reduction formula is $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde{Q}_1,\tilde{Q}_2\rangle$. The biquaternionic gradient is $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and measure $\vec E$ and $\vec H$ in the invertibles $\sqrt{\epsilon_0}$ and $\sqrt{\mu_0}$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\vec E-\vec H$. The Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$, so that $\tilde{F}=i\sqrt{\epsilon}\,\vec N$. The material reading is $Q_t=i q'_t$ and $Q_k=q_k$.
+with $r'_t,h'_{x},h'_{y},h'_{z}$ real, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, $\mathsf{M}_2(i\vec e_{\imath})=\sigma_{\imath}$, and the reduction formula is $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde{Q}_1,\tilde{Q}_2\rangle$. The biquaternionic gradient is $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and measure $\vec E$ and $\vec H$ in the invertibles $\sqrt{\epsilon_0}$ and $\sqrt{\mu_0}$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\vec E-\vec H$. The Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$, so that $\tilde{F}=i\sqrt{\epsilon}\,\vec N$. The material reading is $Q_t=i q'_t$ and $Q_\imath=q_\imath$.
 
 ## The Photon as the Quantum of the Biquaternion Maxwell Field
 
@@ -95,7 +95,7 @@ $$
 \varepsilon_{\mathrm{fop},\pm} = \frac{1}{\sqrt 2}\bigl(\varepsilon_{\mathrm{fop},1} \pm i\,\varepsilon_{\mathrm{fop},2}\bigr),
 $$
 
-which are complex combinations and therefore do not lie in $\mathbb{B}_{\Phi}$ itself, but in its complexification, the vector part of $\mathbb{B}$. Their defining property is a statement about quaternion multiplication by the propagation direction. Using $\vec e_j \vec e_k=\epsilon_{jk l}\vec e_l$ for $j\neq k$ together with the definition of the circular combination, one computes
+which are complex combinations and therefore do not lie in $\mathbb{B}_{\Phi}$ itself, but in its complexification, the vector part of $\mathbb{B}$. Their defining property is a statement about quaternion multiplication by the propagation direction. Using $\vec e_j \vec e_\imath=\epsilon_{j\imath l}\vec e_l$ for $j\neq k$ together with the definition of the circular combination, one computes
 
 $$
 \boxed{\;\vec u_\Phi\,\varepsilon_{\mathrm{fop},\pm} = \mp\, i\,\varepsilon_{\mathrm{fop},\pm}\;}.
@@ -117,7 +117,7 @@ Both the eigenvalue relation and the circular completeness relation were checked
 
 ## Helicity as an Observable in the Informational Sector
 
-The helicity of a spin-one particle is the projection of its spin along the momentum. In the algebra, the spin-one carrier is the imaginary quaternions under the adjoint action, and its spin is $s=1$: the rotation generators are the real pure quaternions $\vec e_k\in\mathbb{B}_{\Phi}\cap\mathbb{B}_{H}$, acting by $\mathrm{ad}_{\vec e_k}a/2 = \vec e_k\times$ (the angular-momentum article normalizes the same generators as $g_k=-\tfrac12 \vec e_k$, so its generator is $-\vec e_k/2$ where this section uses $\vec e_k$), and the observable is $i$ times the generator, exactly as the spin-$\tfrac12$ observable is $\frac{h}{4\pi}i\vec e_k$ in the angular-momentum article. The helicity observable is therefore
+The helicity of a spin-one particle is the projection of its spin along the momentum. In the algebra, the spin-one carrier is the imaginary quaternions under the adjoint action, and its spin is $s=1$: the rotation generators are the real pure quaternions $\vec e_\imath\in\mathbb{B}_{\Phi}\cap\mathbb{B}_{H}$, acting by $\mathrm{ad}_{\vec e_k}a/2 = \vec e_\imath\times$ (the angular-momentum article normalizes the same generators as $g_\imath=-\tfrac12 \vec e_\imath$, so its generator is $-\vec e_\imath/2$ where this section uses $\vec e_\imath$), and the observable is $i$ times the generator, exactly as the spin-$\tfrac12$ observable is $\frac{h}{4\pi}i\vec e_\imath$ in the angular-momentum article. The helicity observable is therefore
 
 $$
 \lambda = \frac{i}{2}\,\mathrm{ad}_{\vec u_\Phi} = i\,\mathrm{Vect}(\vec u_\Phi\,\cdot\,) = \vec u_\Phi\cdot\vec S,
@@ -188,7 +188,7 @@ A third imported ingredient is the operator-valued character of the field. The p
 |---|---|---|
 | The transverse polarization plane (the space of the two physical polarizations) | Derived | the $\vec u_\Phi$-orthogonal plane in the vector part of $\mathbb{B}_{\Phi}$ |
 | Polarization space and its indefinite form | Derived | $\mathbb{B}_{\Phi}$ and its biquaternion norm, $\sigma_{\mathrm{met},0}=-1$ and $\sigma_{\mathrm{met},k}=+1$ |
-| Circular polarizations as $\pm i$ eigenstates | Derived | left multiplication by $\vec u_k$; $\vec e_j \vec e_k=\epsilon_{jk l}\vec e_l$ |
+| Circular polarizations as $\pm i$ eigenstates | Derived | left multiplication by $\vec u_\imath$; $\vec e_j \vec e_\imath=\epsilon_{j\imath l}\vec e_l$ |
 | Helicity operator $\lambda=\tfrac{i}{2}\mathrm{ad}_{\vec u_\Phi}$, spectral values $\{+1,0,-1\}$ | Derived | adjoint action on imaginary quaternions; representative $i\vec u_\Phi\in\mathbb{B}_{\Psi}$; $i$ as sector exchange |
 | Two helicities = self-dual/anti-self-dual halves | Derived (from the field-strength article) | $\vec B=\vec u_\Phi\times\vec E$; $\vec u_\Phi\times\varepsilon_{\mathrm{fop},\pm}=\mp i\varepsilon_{\mathrm{fop},\pm}$ |
 | Transverse polarization sum $\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$ | Derived | orthogonality in the material sector |
@@ -247,7 +247,7 @@ What the framework does not supply is the ladder and the gauge. There is no boso
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=\epsilon_{jk l}\vec e_l$ $(j\neq k)$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$, $\vec e_j \vec e_\imath=\epsilon_{j\imath l}\vec e_l$ $(j\neq k)$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector, $\mathrm{span}_\mathbb{R}\{i r'_t\,e_t,\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector, $\mathrm{span}_\mathbb{R}\{h_t\,e_t,i h'_{x}\,\vec e_x,i h'_{y}\,\vec e_y,i h'_{z}\,\vec e_z\}$ |
@@ -263,7 +263,7 @@ What the framework does not supply is the ladder and the gauge. There is no boso
 | $\lambda=\vec u_\Phi\cdot\vec S=\tfrac{i}{2}\mathrm{ad}_{\vec u_\Phi}$ | Helicity operator; representative $i\vec u_\Phi\in\mathbb{B}_{\Psi}$ |
 | $\vec S$ (in $\tilde\Sigma_{\Psi}=W+\tfrac{i}{c}\vec S$) | Poynting vector (Maxwell article) |
 | $\vec S$ (in $\lambda=\vec u_\Phi\cdot\vec S$) | Spin vector (angular-momentum article) |
-| $g_k=-\tfrac12 \vec e_k$ | Rotation generators in the angular-momentum article; this article writes the same generators as $\vec e_k$ |
+| $g_\imath=-\tfrac12 \vec e_\imath$ | Rotation generators in the angular-momentum article; this article writes the same generators as $\vec e_\imath$ |
 | $\epsilon^{(r)}_{\imath}$, $a_{\mathrm{fop},r},a_{\mathrm{fop},r}^{\dagger}$ | Polarization vectors and mode operators (imported) |
 | $N_\gamma=\sum_{r=1}^{2}\int a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}$ | Photon number (transverse sum), not in $\mathbb{B}$ |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |

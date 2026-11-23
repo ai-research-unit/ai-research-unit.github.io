@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The coupled equation is the free one with two numbers shifted, and the transform says so in one line. *The Coupled Schrödinger Equation in Biquaternionic Form* writes $i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_{k\in\{x,y,z\}}(-i \frac{h}{2\pi}\,D_k)^{2}\tilde\Xi$ with $D_t=\partial_{t'}-\frac{2\pi iϙ\omicron_{\mathrm{pot}}}{h}$ and $D_k=\partial_k+\frac{2\pi iϙ A_k}{h}$. In frequency space each covariant derivative becomes a number, and the equation becomes a relation between three numbers.
+The coupled equation is the free one with two numbers shifted, and the transform says so in one line. *The Coupled Schrödinger Equation in Biquaternionic Form* writes $i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_{\imath\in\{x,y,z\}}(-i \frac{h}{2\pi}\,D_\imath)^{2}\tilde\Xi$ with $D_t=\partial_{t'}-\frac{2\pi iϙ\omicron_{\mathrm{pot}}}{h}$ and $D_\imath=\partial_\imath+\frac{2\pi iϙ A_\imath}{h}$. In frequency space each covariant derivative becomes a number, and the equation becomes a relation between three numbers.
 
 The first finding is a translation of the symbol's argument. The coupled symbol is the free symbol evaluated at a shifted frequency and a shifted wave vector: $\omega\mapsto\omega+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$ and $\vec\nu_{\Phi}\mapsto\vec\nu_{\Phi}-\frac{q\vec A}{h}$. Verified over one hundred draws, the two sides differ by zero to machine precision. The potential shifts the symbol's argument and does not change its shape, and the shape is the free symbol's.
 
@@ -25,21 +25,21 @@ The equation and its slots. With $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ and $\omicr
 $$
 D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}},
 \qquad
-D_k=\partial_k+\frac{2\pi iϙ}{h}A_k,
+D_\imath=\partial_\imath+\frac{2\pi iϙ}{h}A_\imath,
 \qquad
-i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_{k\in\{x,y,z\}}\big(-i \frac{h}{2\pi}\,D_k\big)^{2}\tilde\Xi .
+i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_{\imath\in\{x,y,z\}}\big(-i \frac{h}{2\pi}\,D_\imath\big)^{2}\tilde\Xi .
 $$
 
 The temporal slot carries the opposite sign to the spatial ones, and the reason is the metric $i$ of $\partial/\partial R_t=-i\partial_{r'_t}$, which the parent states once.
 
 The two settings. The *constant* setting takes a constant Hermitian Hamiltonian and a constant connection, so the equation is an ordinary differential equation and the solution is the free one with shifted coefficients. The *operator* setting takes $\tilde H_\Psi=\hat H\,e_t$ with $\hat H=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi/(2m)+V$ and a connection that may vary in space. Every statement below is labelled with the setting it belongs to, and none is transferred.
 
-The substitution. A positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+2\pi i\vec\nu_\Phi\cdot\vec r)$, so $\partial_{t'}\mapsto-i\omega$ and $\partial_k\mapsto i\nu_{\Phi,k}$. The covariant slots therefore become the numbers
+The substitution. A positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+2\pi i\vec\nu_\Phi\cdot\vec r)$, so $\partial_{t'}\mapsto-i\omega$ and $\partial_\imath\mapsto i\nu_{\Phi,k}$. The covariant slots therefore become the numbers
 
 $$
 i \frac{h}{2\pi}\,D_t\longmapsto hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}},
 \qquad
--i \frac{h}{2\pi}\,D_k\longmapsto h\,\nu_{\Phi,k}+ϙ A_k .
+-i \frac{h}{2\pi}\,D_\imath\longmapsto h\,\nu_{\Phi,k}+ϙ A_\imath .
 $$
 
 ## Two Settings, Two Symbols
@@ -47,7 +47,7 @@ $$
 The operator setting's symbol is a central scalar. With $\hat H=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi/(2m)+V$ and a constant connection, the frequency-space equation is
 
 $$
-\Big(hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}-\frac{1}{2m}\sum_{k\in\{x,y,z\}}\big(h\,\nu_{\Phi,k}+ϙ A_k\big)^{2}\Big)\hat{\tilde\Xi}=0,
+\Big(hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}-\frac{1}{2m}\sum_{\imath\in\{x,y,z\}}\big(h\,\nu_{\Phi,k}+ϙ A_\imath\big)^{2}\Big)\hat{\tilde\Xi}=0,
 $$
 
 so the symbol is the parent's dispersion relation written as a function,
@@ -100,7 +100,7 @@ The check. Taking the free symbol at $\omega-\frac{2\pi ϙ\omicron_{\mathrm{pot}
 
 What the sign means physically. With $ϙ$ the negative of the electric charge, as the parent's note says, the potential energy is $+ϙ\omicron_{\mathrm{pot}}$ and the frequency shift is $+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$. A positive potential raises the frequency, which is the statement that the energy is $hf_{\mathrm{frq}}=-\rho_{\mathrm{chg}}\omicron_{\mathrm{pot}}+\ldots$ and the symbol is written with the opposite sign.
 
-The spatial sign. The spatial slot has $+\frac{2\pi iϙ A_k}{h}$ inside $D_k$, and $-i \frac{h}{2\pi} D_k$ gives $h\,\nu_{\Phi,k}+ϙ A_k$. So the mechanical momentum is $h\,\vec\nu_{\Phi}-q\vec A$ and the symbol's wave-vector shift is $-\frac{2\pi q\vec A}{h}$. The two shifts have the same sign in the symbol and opposite signs in the covariant derivatives, and that is the parent's bookkeeping read once more.
+The spatial sign. The spatial slot has $+\frac{2\pi iϙ A_\imath}{h}$ inside $D_\imath$, and $-i \frac{h}{2\pi} D_\imath$ gives $h\,\nu_{\Phi,k}+ϙ A_\imath$. So the mechanical momentum is $h\,\vec\nu_{\Phi}-q\vec A$ and the symbol's wave-vector shift is $-\frac{2\pi q\vec A}{h}$. The two shifts have the same sign in the symbol and opposite signs in the covariant derivatives, and that is the parent's bookkeeping read once more.
 
 ## The Curvature Is Invariant and the Gap Moves
 
@@ -126,11 +126,11 @@ Why the split matters. A measurement of the gap determines $\lvert\vec h_\Psi-q\
 
 ## Why the Connection Does Not Split the Symbol
 
-Centrality in every slot. $\omicron_{\mathrm{pot}}$ is real and multiplies $e_t$; $A_k$ is real and multiplies nothing. Both are central, so $D_k$ commutes with the units and acts on each of the four complex coefficients of $\tilde\Xi$ separately and identically. The symbol is therefore one scalar or one element, and never an array that mixes coefficients.
+Centrality in every slot. $\omicron_{\mathrm{pot}}$ is real and multiplies $e_t$; $A_\imath$ is real and multiplies nothing. Both are central, so $D_\imath$ commutes with the units and acts on each of the four complex coefficients of $\tilde\Xi$ separately and identically. The symbol is therefore one scalar or one element, and never an array that mixes coefficients.
 
 The four copies survive. The coupled theory is four copies of the standard charged scalar field sharing one connection, as the parent says. In frequency space the four copies share one symbol, so the symbol's zero set is common. A coupling that did not commute with the units would give four different symbols, and the article would have to speak of a matrix of them.
 
-The connection is a number in every slot. $i \frac{h}{2\pi} D_t$ becomes $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $-i \frac{h}{2\pi} D_k$ becomes $h\,\nu_{\Phi,k}+ϙ A_k$; both are numbers and neither is an operator. **So the coupling is invisible to the symbol's structure and visible only in its arguments.**
+The connection is a number in every slot. $i \frac{h}{2\pi} D_t$ becomes $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $-i \frac{h}{2\pi} D_\imath$ becomes $h\,\nu_{\Phi,k}+ϙ A_\imath$; both are numbers and neither is an operator. **So the coupling is invisible to the symbol's structure and visible only in its arguments.**
 
 What the commutator would have added. The covariant derivatives do not commute, and their commutator is the field strength. In the symbol that commutator contributes nothing, because the symbol is the image of the operator at one wave vector and the commutator is a statement about two. The magnetic field therefore enters the symbol only through $\vec A$ itself, which is the standard statement that a plane wave in a constant $\vec A$ sees the vector potential and not the field.
 
@@ -191,7 +191,7 @@ The connection is central in every slot, so the symbol remains one scalar or one
 | Symbol | Meaning |
 | --- | --- |
 | $D_t=\partial_{t'}-\frac{2\pi iϙ\omicron_{\mathrm{pot}}}{h}$ | The covariant time derivative; the minus sign is the metric's |
-| $D_k=\partial_k+\frac{2\pi iϙ A_k}{h}$ | The covariant spatial derivative; the plus sign |
+| $D_\imath=\partial_\imath+\frac{2\pi iϙ A_\imath}{h}$ | The covariant spatial derivative; the plus sign |
 | $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ | The covariant frequency; the first invariant $\mathcal E$ |
 | $h\,\vec\nu_{\Phi}-q\vec A$ | The mechanical momentum $\vec\pi$; the second invariant |
 | $\sigma_{\mathrm{gco}}=\sigma_{\mathrm{free}}(\omega+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h},2\pi\vec\nu_{\Phi}-\frac{q\vec A}{h})$ | The translation identity of the operator setting |

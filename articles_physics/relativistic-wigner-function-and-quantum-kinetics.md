@@ -25,8 +25,8 @@ and let $H(r,\vec p)=\lvert\vec p\rvert^{2}/(2m)+V(r)$ be its symbol. Then the e
 $$
 \frac{\partial W}{\partial t}=\frac{2\pi 2}{h}\sin\!\left(\frac{h}{4\pi}\Lambda\right)\bigl(H\,W\bigr),
 \qquad
-\Lambda=\overleftarrow{\frac{\partial}{\partial r_k}}\overrightarrow{\frac{\partial}{\partial p_k}}
--\overleftarrow{\frac{\partial}{\partial p_k}}\overrightarrow{\frac{\partial}{\partial r_k}},
+\Lambda=\overleftarrow{\frac{\partial}{\partial r_\imath}}\overrightarrow{\frac{\partial}{\partial p_\imath}}
+-\overleftarrow{\frac{\partial}{\partial p_\imath}}\overrightarrow{\frac{\partial}{\partial r_\imath}},
 $$
 
 with the summation over the spatial index $k$ understood and every index low, as the corpus's metric $\delta_{\imath\jmath}$ requires. The operator $\Lambda$ is antisymmetric and it acts on the product $HW$, differentiating the first factor to the left and the second to the right.
@@ -61,8 +61,8 @@ and the whole of the $\frac{h^{2}}{4\pi^{2}}$ correction is the second term.
 The coefficient and the structure were checked symbolically, not remembered. Applying the bidifferential operator three times to the pair $(H,W)$ with $H=\lvert\vec p\rvert^{2}/(2m)+V(r)$ and a general symbol $W(r,\vec p)$, only one of the eight ordered terms survives, because every term in which the position and momentum derivatives fall on the same side mixes them, and a mixed third derivative of a separable Hamiltonian vanishes. The surviving term is
 
 $$
-\Lambda^{3}(H,W)=\frac{\partial^{3}V}{\partial r_k^{3}}\,
-\frac{\partial^{3}W}{\partial p_k^{3}},
+\Lambda^{3}(H,W)=\frac{\partial^{3}V}{\partial r_\imath^{3}}\,
+\frac{\partial^{3}W}{\partial p_\imath^{3}},
 $$
 
 with the sum over $k$, and the identity is exact rather than leading: a computer-algebra evaluation of the four surviving monomials returns $\Lambda^{3}(H,W)-V'''\partial_{p}^{3}W=0$ as an identity in $W$. The expansion of the sine is therefore not a gradient approximation at this order — for a Hamiltonian at most quadratic in momentum, the third-order term is precisely the third derivative of the potential times the third momentum derivative of the Wigner element.
@@ -73,8 +73,8 @@ The same argument repeats at every order, so the expansion can be written down w
 
 $$
 \frac{2\pi 2}{h}\sin\left(\frac{h\Lambda}{4\pi}\right)(H,W)
-=\Lambda(H,W)-\frac{h^{2}}{96\pi^{2}}V'''\frac{\partial^{3}W}{\partial p_k^{3}}
-+\frac{h^{4}}{30720\pi^{4}}V^{(5)}\frac{\partial^{5}W}{\partial p_k^{5}}+\mathcal{O}(\frac{h^{6}}{(2\pi)^{6}}),
+=\Lambda(H,W)-\frac{h^{2}}{96\pi^{2}}V'''\frac{\partial^{3}W}{\partial p_\imath^{3}}
++\frac{h^{4}}{30720\pi^{4}}V^{(5)}\frac{\partial^{5}W}{\partial p_\imath^{5}}+\mathcal{O}(\frac{h^{6}}{(2\pi)^{6}}),
 $$
 
 with $V^{(5)}$ the fifth derivative of the potential and the coefficients the sine's, $\tfrac{1}{3!\,2^{2}}$ and $\tfrac{1}{5!\,2^{4}}$. **The expansion therefore terminates for a potential whose fifth and higher odd derivatives vanish**, which is to say a polynomial of degree at most four: a harmonic potential has $V'''=0$ and the classical equation is exact, a quartic has $V'''$ constant and $V^{(5)}=0$ and the one correction is exact, and a general potential has every order. The identity at fifth order was checked the same way as the third, symbolically, and returned $\Lambda^{5}(H,W)=V^{(5)}\partial_p^{5}W$ with no other term.
@@ -86,22 +86,22 @@ with $V^{(5)}$ the fifth derivative of the potential and the coefficients the si
 At order $\frac{h^{0}}{(2\pi)^{0}}$ the equation says that the phase-space density is constant along the classical flow. With $\Lambda(HW)=\{H,W\}$ the Poisson bracket,
 
 $$
-\frac{\partial W}{\partial t}+\frac{p_k}{m}\frac{\partial W}{\partial r_k}
--\frac{\partial V}{\partial r_k}\frac{\partial W}{\partial p_k}=0 .
+\frac{\partial W}{\partial t}+\frac{p_\imath}{m}\frac{\partial W}{\partial r_\imath}
+-\frac{\partial V}{\partial r_\imath}\frac{\partial W}{\partial p_\imath}=0 .
 $$
 
 The three terms are one statement written three ways. The first is the rate of change at a fixed phase-space point; the second is the transport of the density by the flow's velocity $\vec p/m$; the third is the change produced by the force. Their sum being zero says that the density at a point moving with the flow does not change — the statement that the flow of a collisionless fluid in phase space is incompressible.
 
-Why incompressible, in one line. The phase-space velocity is $(\vec p/m,-\vec\nabla_\Phi V)$, and its divergence is $\partial_k(p_k/m)+\partial(-\partial_k V)/\partial p_k=0$ because the first term has no $r_k$ and the second no $p_k$. So Liouville's theorem is not an extra assumption; it is the observation that the drift vector field is divergenceless, which the corpus's $\delta_{\imath\jmath}$ with all coefficients $+1$ makes manifest: the phase-space metric is flat and the flow is a rotation of it.
+Why incompressible, in one line. The phase-space velocity is $(\vec p/m,-\vec\nabla_\Phi V)$, and its divergence is $\partial_\imath(p_\imath/m)+\partial(-\partial_\imath V)/\partial p_\imath=0$ because the first term has no $r_\imath$ and the second no $p_\imath$. So Liouville's theorem is not an extra assumption; it is the observation that the drift vector field is divergenceless, which the corpus's $\delta_{\imath\jmath}$ with all coefficients $+1$ makes manifest: the phase-space metric is flat and the flow is a rotation of it.
 
 ### The characteristics, and the corpus's flow
 
 The characteristics of the drift equation are the flow's worldlines, and this is where the hydrodynamic and the kinetic descriptions meet. The characteristic equations are
 
 $$
-\frac{d r_k}{d t}=\frac{p_k}{m},
+\frac{d r_\imath}{d t}=\frac{p_\imath}{m},
 \qquad
-\frac{d p_k}{d t}=-\frac{\partial V}{\partial r_k},
+\frac{d p_\imath}{d t}=-\frac{\partial V}{\partial r_\imath},
 $$
 
 which are Newton's equations for a particle of mass $m$. Written with the corpus's velocity element, the first is $v_{\Phi,k}=p_{\Phi,k}/m$ with the index low, and the second is the statement that the force changes the momentum and hence the rapidity.
@@ -114,8 +114,8 @@ The drift term's letters are the polar form's, with the factor $c$ where the len
 
 $$
 c\,\frac{\partial W}{\partial r'_t}
-+\frac{p_k}{m}\frac{\partial W}{\partial r_k}
--\frac{\partial V}{\partial r_k}\frac{\partial W}{\partial p_k}=0 .
++\frac{p_\imath}{m}\frac{\partial W}{\partial r_\imath}
+-\frac{\partial V}{\partial r_\imath}\frac{\partial W}{\partial p_\imath}=0 .
 $$
 
 The factor of $c$ is the corpus's rule for a rate against a length, the same rule that gives $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ in the polar-form article. A reader who writes $\partial/\partial r'_t$ without the $c$ has produced a dimensionally inconsistent equation and will find the drift speed off by that factor against the polar form's velocity. This is the single place where the corpus's units bite in this article, and it is worth stating plainly.
@@ -142,14 +142,14 @@ Substituting the exact third-order term gives the kinetic equation with its firs
 
 $$
 \frac{\partial W}{\partial t}
-+\frac{p_k}{m}\frac{\partial W}{\partial r_k}
--\frac{\partial V}{\partial r_k}\frac{\partial W}{\partial p_k}
-=-\frac{h^{2}}{96\pi^{2}}\,\frac{\partial^{3}V}{\partial r_k^{3}}\,
-\frac{\partial^{3}W}{\partial p_k^{3}}
++\frac{p_\imath}{m}\frac{\partial W}{\partial r_\imath}
+-\frac{\partial V}{\partial r_\imath}\frac{\partial W}{\partial p_\imath}
+=-\frac{h^{2}}{96\pi^{2}}\,\frac{\partial^{3}V}{\partial r_\imath^{3}}\,
+\frac{\partial^{3}W}{\partial p_\imath^{3}}
 +\mathcal{O}(\frac{h^{4}}{(2\pi)^{4}}),
 $$
 
-with the sum over the spatial index $k$, every index low, and the sign as it falls out of the convention fixed above: $\Lambda(H,W)=V'W_p-(p_k/m)W_{r_k}$ reproduces the classical drift with the sign of the drift display, and the same convention fixes the sign of the correction. A reader who reverses the orientation of $\Lambda$ reverses both signs together and gets an equivalent equation; what cannot be done is to reverse one and not the other.
+with the sum over the spatial index $k$, every index low, and the sign as it falls out of the convention fixed above: $\Lambda(H,W)=V'W_p-(p_\imath/m)W_{r_k}$ reproduces the classical drift with the sign of the drift display, and the same convention fixes the sign of the correction. A reader who reverses the orientation of $\Lambda$ reverses both signs together and gets an equivalent equation; what cannot be done is to reverse one and not the other.
 
 Three readings of the right-hand side, in increasing order of interpretation.
 
@@ -162,21 +162,21 @@ Three readings of the right-hand side, in increasing order of interpretation.
 The correction is a total derivative in momentum, and three of its moments vanish identically. Integrating by parts on a distribution that falls off at large momentum,
 
 $$
-\int d^{3}p\;\frac{\partial^{3}W}{\partial p_k^{3}}=0,
+\int d^{3}p\;\frac{\partial^{3}W}{\partial p_\imath^{3}}=0,
 \qquad
-\int d^{3}p\;p_k\,\frac{\partial^{3}W}{\partial p_k^{3}}=0,
+\int d^{3}p\;p_\imath\,\frac{\partial^{3}W}{\partial p_\imath^{3}}=0,
 \qquad
-\int d^{3}p\;p_k p_\lambda\,\frac{\partial^{3}W}{\partial p_k^{3}}=0,
+\int d^{3}p\;p_\imath p_\imath\,\frac{\partial^{3}W}{\partial p_\imath^{3}}=0,
 $$
 
 so the zeroth, first and second moments of the equation are exactly the classical ones, at this order and at every higher order too. **The continuity equation is therefore exact**, not approximate:
 
 $$
-c\,\frac{\partial\rho_{\mathrm{num}}}{\partial r'_t}+\frac{\partial j_k}{\partial r_k}=0,
+c\,\frac{\partial\rho_{\mathrm{num}}}{\partial r'_t}+\frac{\partial j_\imath}{\partial r_\imath}=0,
 \qquad
 \rho_{\mathrm{num}}=\int d^{3}p\;W,
 \qquad
-j_k=\int d^{3}p\;\frac{p_k}{m}W,
+j_\imath=\int d^{3}p\;\frac{p_\imath}{m}W,
 $$
 
 with the $c$ of the length coordinate. The same is true of the momentum balance and of the pressure: the quantum correction does not touch them at this order, because a total momentum derivative cannot.
@@ -184,32 +184,32 @@ with the $c$ of the length coordinate. The same is true of the momentum balance 
 The first moment that does not vanish is the third, and its value is one line. With two more integrations by parts,
 
 $$
-\int d^{3}p\;p_k^{3}\,\frac{\partial^{3}W}{\partial p_k^{3}}=-6\int d^{3}p\;W=-6\rho_{\mathrm{num}},
+\int d^{3}p\;p_\imath^{3}\,\frac{\partial^{3}W}{\partial p_\imath^{3}}=-6\int d^{3}p\;W=-6\rho_{\mathrm{num}},
 $$
 
 so the third moment of the equation acquires the correction $+\tfrac{h^{2}}{16\pi^{2}}V'''\rho_{\mathrm{num}}$. **This is where the quantum correction enters the hydrodynamic hierarchy**: not in the density, not in the velocity, not in the pressure, but in the heat-flow-type moment — the third moment, the first one the ideal fluid does not carry. A fluid description truncated at the pressure is therefore blind to the $\frac{h^{2}}{4\pi^{2}}$ correction of this order, and a description that keeps the heat flow is not.
 
 ### Exactness for a quadratic potential
 
-**For a harmonic potential the right-hand side vanishes identically, so the classical drift equation is the exact quantum equation.** With $V=\tfrac12 m\omega^{2}r_k^{2}$ the third derivative is zero and every higher term of the sine expansion vanishes too, because the series terminates: a quadratic symbol has only the two monomials of the star product. This is the standard statement that the Wigner equation is exact for quadratic Hamiltonians, and it is the reason the harmonic oscillator is the test case of every Wigner computation.
+**For a harmonic potential the right-hand side vanishes identically, so the classical drift equation is the exact quantum equation.** With $V=\tfrac12 m\omega^{2}r_\imath^{2}$ the third derivative is zero and every higher term of the sine expansion vanishes too, because the series terminates: a quadratic symbol has only the two monomials of the star product. This is the standard statement that the Wigner equation is exact for quadratic Hamiltonians, and it is the reason the harmonic oscillator is the test case of every Wigner computation.
 
 The exactness is visible in the stationary state without any expansion at all. For the ground state the Wigner element is the Gaussian
 
 $$
 W_0(r,\vec p)=\frac{1}{\pi \frac{h}{2\pi}}
-\exp\!\left(-\frac{2\pi m\omega\,r_k^{2}}{h}-\frac{p_k^{2}}{m\omega \frac{h}{2\pi}}\right),
+\exp\!\left(-\frac{2\pi m\omega\,r_\imath^{2}}{h}-\frac{p_\imath^{2}}{m\omega \frac{h}{2\pi}}\right),
 $$
 
 whose position and momentum variances are $\sigma^{2}=\frac{h}{2\pi 2m\omega}$ and $\sigma_{p}^{2}=m\omega\frac{h}{2\pi 2}$. Its time derivative is zero because it is stationary, and the drift terms cancel identically:
 
 $$
-\frac{p_k}{m}\frac{\partial W_0}{\partial r_k}
--\frac{\partial V}{\partial r_k}\frac{\partial W_0}{\partial p_k}
-=W_0\left(-\frac{p_k}{m}\frac{2\pi\omega\nu_m}{c}r_k\cdot 2
-+m\omega^{2}r_k\frac{2}{m\omega \frac{h}{2\pi}}p_k\right)=0,
+\frac{p_\imath}{m}\frac{\partial W_0}{\partial r_\imath}
+-\frac{\partial V}{\partial r_\imath}\frac{\partial W_0}{\partial p_\imath}
+=W_0\left(-\frac{p_\imath}{m}\frac{2\pi\omega\nu_m}{c}r_\imath\cdot 2
++m\omega^{2}r_\imath\frac{2}{m\omega \frac{h}{2\pi}}p_\imath\right)=0,
 $$
 
-since the two coefficients are $-\frac{2\pi 2p_k\omega r_k}{h}$ and $+\frac{2\pi 2p_k\omega r_k}{h}$. With the variance $\sigma^{2}=\frac{h}{2\pi 2m\omega}$ the numbers are $\sigma^{2}=\sigma_{p}^{2}=\frac{h}{2\pi 2m\omega}$, $1/(m\sigma^{2})=\frac{2\pi 2\omega}{h}$ and $m\omega^{2}/\sigma_{p}^{2}=\frac{2\pi 2\omega}{h}$, and the cancellation is the equality of those two numbers. This is the check that the drift display's coefficients are right: a factor of two error anywhere in it would leave $2$ against $1$ or $2$ against $4$, and the residual would be a non-zero multiple of $W_0$.
+since the two coefficients are $-\frac{2\pi 2p_\imath\omega r_\imath}{h}$ and $+\frac{2\pi 2p_\imath\omega r_\imath}{h}$. With the variance $\sigma^{2}=\frac{h}{2\pi 2m\omega}$ the numbers are $\sigma^{2}=\sigma_{p}^{2}=\frac{h}{2\pi 2m\omega}$, $1/(m\sigma^{2})=\frac{2\pi 2\omega}{h}$ and $m\omega^{2}/\sigma_{p}^{2}=\frac{2\pi 2\omega}{h}$, and the cancellation is the equality of those two numbers. This is the check that the drift display's coefficients are right: a factor of two error anywhere in it would leave $2$ against $1$ or $2$ against $4$, and the residual would be a non-zero multiple of $W_0$.
 
 ### What the correction is, and what it is not
 
@@ -227,7 +227,7 @@ Relativistically the drift is the contraction of the flow element with the gradi
 
 $$
 p_{\Phi,\jmath}\,\frac{\partial W}{\partial R_{\jmath}}
-=\frac{E}{c}\,\frac{\partial W}{\partial r'_t}+p_{\Phi,k}\,\frac{\partial W}{\partial r_k},
+=\frac{E}{c}\,\frac{\partial W}{\partial r'_t}+p_{\Phi,k}\,\frac{\partial W}{\partial r_\imath},
 $$
 
 with the index low throughout. No component is raised. The two factors of the temporal term are separately imaginary and their product is real: $p_{\Phi,t}=iE/c$ on the polar form's display, and the temporal slot of the algebra's derivative is $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so
@@ -293,7 +293,7 @@ Not claimed. That the correction term is enough for a quantum kinetic theory of 
 
 The Wigner element of the scalar field satisfies an exact equation whose generator is the Moyal bracket, $\partial_t W=\frac{2\pi 2}{h}\sin(\frac{h}{2\pi}\Lambda/2)(H,W)$ with $\Lambda=\overleftarrow{\partial_{r_k}}\overrightarrow{\partial_{p_k}}-\overleftarrow{\partial_{p_k}}\overrightarrow{\partial_{r_k}}$, every index low. Expanding the sine gives the classical drift at order $\frac{h^{0}}{(2\pi)^{0}}$ and one term at order $\frac{h^{2}}{4\pi^{2}}$; for a Hamiltonian at most quadratic in momentum the third-order term is exactly $\Lambda^{3}(H,W)=V'''\partial_{p}^{3}W$, so the expansion is not approximate at that order.
 
-The drift equation, $\partial_t W+(p_k/m)\partial_{r_k}W-V'\partial_{p_k}W=0$, has the worldlines as its characteristics and is the statement that the phase-space flow is incompressible; its velocity field is divergenceless identically, which is Liouville's theorem rather than an assumption. With $r'_t$ a length, the temporal derivative carries a factor $c$, the same factor that gives $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$.
+The drift equation, $\partial_t W+(p_\imath/m)\partial_{r_k}W-V'\partial_{p_k}W=0$, has the worldlines as its characteristics and is the statement that the phase-space flow is incompressible; its velocity field is divergenceless identically, which is Liouville's theorem rather than an assumption. With $r'_t$ a length, the temporal derivative carries a factor $c$, the same factor that gives $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$.
 
 The correction is $-\tfrac{h^{2}}{96\pi^{2}}V'''\partial_{p}^{3}W$. It is a total momentum derivative, so its zeroth, first and second moments vanish identically and the continuity equation is exact; its third moment is $-6\rho_{\mathrm{num}}$, which is why the correction's hydrodynamic mark is in the heat flow and not in the pressure. It vanishes for a quadratic potential, where the classical drift equation is therefore exact — checked on the oscillator ground state, where the drift terms cancel because $1/(m\sigma^{2})$ and $m\omega^{2}/\sigma_{p}^{2}$ are both $\frac{2\pi 2\omega}{h}$.
 
@@ -312,9 +312,9 @@ Relativistically the drift is a contraction with the flow element and the shell 
 | $m$, $c$ | Mass and speed of light in the medium |
 | $\frac{h}{2\pi}$ | Action quantum |
 | $\nu_m$ | Mass wave number |
-| $r_k$, $p_k$ | Spatial components of position and momentum; indices low |
+| $r_\imath$, $p_\imath$ | Spatial components of position and momentum; indices low |
 | $r'_t$ | Temporal coordinate of the material sector, a length |
-| $R_{\imath}$, $\partial/\partial R_{\imath}$ | Derivative coordinate, with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_k=\partial/\partial r_k$ |
+| $R_{\imath}$, $\partial/\partial R_{\imath}$ | Derivative coordinate, with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\imath=\partial/\partial r_\imath$ |
 | $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ | Energy |
 | $p_{\Phi,\jmath}$ | Components of the flow momentum element |
 | $\tilde V_{\Phi,\jmath}=p_{\Phi,\jmath}/m$ | Components of the velocity element |
@@ -326,7 +326,7 @@ Relativistically the drift is a contraction with the flow element and the shell 
 | $\sigma^{2}$, $\sigma_{p}^{2}$ | Position and momentum variances of a Gaussian |
 | $W_0$ | Wigner element of the oscillator ground state |
 | $\rho_{\mathrm{num}}=\int d^{3}p\,W$ | Proper density as a marginal |
-| $j_k=\int d^{3}p\,(p_k/m)W$ | Current density as a first moment |
+| $j_\imath=\int d^{3}p\,(p_\imath/m)W$ | Current density as a first moment |
 | $\delta_{\imath\jmath}$ | The metric; no raised indices |
 | $\mathcal{O}(\frac{h^{4}}{(2\pi)^{4}})$ | The remainder of the sine expansion; for a separable Hamiltonian the next explicit term is the $\frac{h^{4}}{(2\pi)^{4}}$ one, $\frac{h^{4}}{30720\pi^{4}}V^{(5)}\partial_{p_k}^{5}W$ |
 

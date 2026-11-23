@@ -23,7 +23,7 @@ $$
 the complexification of the real quaternion algebra $\mathbb{H}$. Its quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with
 
 $$
-e_t^2 = e_t, \qquad \vec e_k^2 = -e_t \quad (k=1,2,3), \qquad \vec e_x\vec e_y = \vec e_z, \quad \vec e_y\vec e_z = \vec e_x, \quad \vec e_z\vec e_x = \vec e_y,
+e_t^2 = e_t, \qquad \vec e_\imath^2 = -e_t \quad (k=1,2,3), \qquad \vec e_x\vec e_y = \vec e_z, \quad \vec e_y\vec e_z = \vec e_x, \quad \vec e_z\vec e_x = \vec e_y,
 $$
 
 and the scalar imaginary is central and is written $i$, with $i^2 = -1$. A general element is
@@ -207,19 +207,19 @@ The biquaternion norm therefore measures the departure of a state from the bound
 
 ### Tomography on the module
 
-The module's state is fixed by the three expectations of the coordinate observables $i\vec e_k$, $k=1,2,3$:
+The module's state is fixed by the three expectations of the coordinate observables $i\vec e_\imath$, $k=1,2,3$:
 
 $$
-r_k = \frac{\langle\tilde{Ϛ}_{\Psi},i\vec e_k\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \langle \sigma_k\rangle_{*} ,
+r_\imath = \frac{\langle\tilde{Ϛ}_{\Psi},i\vec e_\imath\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \langle \sigma_\imath\rangle_{*} ,
 $$
 
 so the state is reconstructed from three real numbers obtained by measuring the three Pauli observables. Equivalently, since
 
 $$
-p_k^{\pm} = \frac{\langle\tilde{Ϛ}_{\Psi},\tilde\Pi_{\mathrm{id},1,2}(\vec u_k)\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = 2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{id},1,2}(\vec u_k)^{*}\bigr) = \tfrac12\bigl(1 \pm r_k\bigr),
+p_\imath^{\pm} = \frac{\langle\tilde{Ϛ}_{\Psi},\tilde\Pi_{\mathrm{id},1,2}(\vec u_\imath)\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = 2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{id},1,2}(\vec u_\imath)^{*}\bigr) = \tfrac12\bigl(1 \pm r_\imath\bigr),
 $$
 
-the three pairs of outcome probabilities determine $\vec s_{\Psi}$ and hence the state; the scalar part $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{id},1,2}(\vec u_k))$ is real and non-negative, the star being inert on $\mathbb{B}_{\Psi}$, and $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$. This is the elementary tomographic completeness of the three coordinate measurements, and it is the module-level content of the mutually unbiased bases of a qubit. The module carries no further state parameters: it has complex dimension two, its rays are parametrized by two real angles, and its states by three real numbers.
+the three pairs of outcome probabilities determine $\vec s_{\Psi}$ and hence the state; the scalar part $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{id},1,2}(\vec u_\imath))$ is real and non-negative, the star being inert on $\mathbb{B}_{\Psi}$, and $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$. This is the elementary tomographic completeness of the three coordinate measurements, and it is the module-level content of the mutually unbiased bases of a qubit. The module carries no further state parameters: it has complex dimension two, its rays are parametrized by two real angles, and its states by three real numbers.
 
 ## What the Module Supplies and What It Does Not
 
@@ -322,7 +322,7 @@ What the module does not supply is the composition rule for several qubits: the 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\imath^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states and observables) |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators of reversible evolution) |
@@ -333,7 +333,7 @@ What the module does not supply is the composition rule for several qubits: the 
 | $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Rank-one idempotents (pure states) |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi})$ | State with Bloch vector $\vec s_{\Psi}$, $|\vec s_{\Psi}|\le1$ |
 | $2\langle\tilde\Pi_{\mathrm{id}},\tilde H_\Psi\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*}) = \langle u|H|u\rangle_{*}$ | Born weight; the module expectation value |
-| $r_k = 2\langle\tilde{Ϛ}_{\Psi},i\vec e_k\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,(i\vec e_k)^{*})$ | Bloch components (tomography) |
+| $r_\imath = 2\langle\tilde{Ϛ}_{\Psi},i\vec e_\imath\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,(i\vec e_\imath)^{*})$ | Bloch components (tomography) |
 | $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-|\vec s_{\Psi}|^2)e_t$ | Biquaternion norm of a state |
 | $\mathbf c=(c_{A_1A_2})$ | Amplitude array of a two-qubit state, the $2\times2$ matrix of the four amplitudes |
 | $\mathrm{Det}(\mathbf c)=c_{00}c_{11}-c_{01}c_{10}$ | Hyperdeterminant of format $2\times2$; it vanishes exactly on the product states |

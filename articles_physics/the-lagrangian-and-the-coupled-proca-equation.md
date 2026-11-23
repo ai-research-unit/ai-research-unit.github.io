@@ -51,7 +51,7 @@ $$
 
 $$
 \mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)
-=\lvert A_t\rvert^{2}-\sum_{k\in\{x,y,z\}}\lvert A_k\rvert^{2}
+=\lvert A_t\rvert^{2}-\sum_{\imath\in\{x,y,z\}}\lvert A_\imath\rvert^{2}
 =\lvert a'_t\rvert^{2}-\lvert\vec a'\rvert^{2},
 $$
 
@@ -210,7 +210,7 @@ $$
 
 its Euler–Lagrange equation is the coupled Proca equation, and its symmetries give the charge current and the energy–momentum.
 
-The mass term is the invariant length $\lvert A_t\rvert^{2}-\sum_{k\in\{x,y,z\}}\lvert A_k\rvert^{2}=\lvert a'_t\rvert^{2}-\lvert\vec a'\rvert^{2}$, it is real, it is invariant under the central phase, and it reduces to the free article's $\langle\tilde A_\Phi\rangle_\natural$ on the material slice with the sign included. That invariance is the variational statement that a massive charged vector field is possible. The field term is the Maxwell density on the material slice and is not invariant on the complex carrier, because the algebra's field strength is one half of a complex bivector; the invariant pairing of the two halves exists and its normalization is open.
+The mass term is the invariant length $\lvert A_t\rvert^{2}-\sum_{\imath\in\{x,y,z\}}\lvert A_\imath\rvert^{2}=\lvert a'_t\rvert^{2}-\lvert\vec a'\rvert^{2}$, it is real, it is invariant under the central phase, and it reduces to the free article's $\langle\tilde A_\Phi\rangle_\natural$ on the material slice with the sign included. That invariance is the variational statement that a massive charged vector field is possible. The field term is the Maxwell density on the material slice and is not invariant on the complex carrier, because the algebra's field strength is one half of a complex bivector; the invariant pairing of the two halves exists and its normalization is open.
 
 The constraint is the trace of the equation and the curvature does not enter it. The charge current exists because the carrier has a phase, and the free article's "no second current" is the statement that a real carrier has none.
 
@@ -219,12 +219,12 @@ The constraint is the trace of the equation and the curvature does not enter it.
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^{2}=-e_t$ |
+| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathrm{Sc}$ | Scalar part |
 | $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ | Quaternionic norm; real on $\mathbb{B}_\Phi$ |
 | $\tilde A=i a'_t e_t+\vec A$ | Complex Proca potential, an element of $\mathbb{B}$ |
-| $\tilde A_\Phi=A_te_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k$ | Connection, an element of $\mathbb{B}_\Phi$ |
+| $\tilde A_\Phi=A_te_t+\sum_{\imath\in\{x,y,z\}} A_\imath\vec e_\imath$ | Connection, an element of $\mathbb{B}_\Phi$ |
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | Covariant derivative, left action |
 | $\tilde F=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | Field strength; one half of the complex bivector |
 | $\tilde F'=\mathrm{Vect}(\tilde\nabla_{\mathrm{gco},\Phi}\tilde A)$ | The companion half; the invariant pairing uses it |

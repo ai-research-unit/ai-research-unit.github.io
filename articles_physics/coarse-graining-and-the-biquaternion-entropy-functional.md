@@ -24,7 +24,7 @@ The treatment is **classical**. The entropy here is the Shannon entropy of a coa
 
 The probabilities the functional is built from are themselves readings of the Hermitian form, normalised by the scalar part of the state. The weights $\lambda_\pm$ of the spectral decomposition are $\lambda_\pm=\langle\tilde\Pi_{\mathrm{id},1,2}(\vec u_s),\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1,2}(\vec u_s)\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, the star being inert on $\mathbb{B}_{\Psi}$ and the scalar part of that product real and non-negative, and the companion article *The Born Rule from the Hermitian Form — Derivation and Comparison* derives the form of that pairing and fixes the objects it relates; this article takes the form as given and uses it only to read the state's own two-outcome distribution.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$; the scalar imaginary is $i$, central in $\mathbb{B}$; the two four-dimensional real subspaces are the anti-Hermitian material sector $\mathbb{B}_{\Phi}$ and the Hermitian informational sector $\mathbb{B}_{\Psi}$, with $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$; the reduced value of an element is its doubled scalar part $2\,\mathrm{Sc}(\tilde{Q})$, with $2\,\mathrm{Sc}(e_t) = 2$; and the Hermitian form for a state and an observable is $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$, whose doubled value is $2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\imath^2 = -e_t$; the scalar imaginary is $i$, central in $\mathbb{B}$; the two four-dimensional real subspaces are the anti-Hermitian material sector $\mathbb{B}_{\Phi}$ and the Hermitian informational sector $\mathbb{B}_{\Psi}$, with $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$; the reduced value of an element is its doubled scalar part $2\,\mathrm{Sc}(\tilde{Q})$, with $2\,\mathrm{Sc}(e_t) = 2$; and the Hermitian form for a state and an observable is $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$, whose doubled value is $2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$.
 
 ## The State Space of the Informational Sector
 
@@ -423,7 +423,7 @@ The fine-grained value is also the minimum over all preparations of the state, $
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian (informational) and anti-Hermitian (material) subspaces |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ | State of the informational sector, Bloch vector $\vec s_{\Psi}$ |
 | $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state, rank one) |

@@ -55,7 +55,7 @@ Twirling collapses the affine data to two numbers, one of which is zero. Averagi
 What survives is a one-parameter family.
 
 $$
-\mathcal E_\lambda(\tilde Q)=(1-\lambda)\tilde Q+\lambda\,\mathrm{Sc}(\tilde Q)\,e_t,
+\mathcal E_\imath(\tilde Q)=(1-\lambda)\tilde Q+\lambda\,\mathrm{Sc}(\tilde Q)\,e_t,
 \qquad
 \vec s_{\Psi}\mapsto(1-\lambda)\vec s_{\Psi},
 $$
@@ -76,7 +76,7 @@ $$
 
 All three follow from two eigenvalue formulas, and none of them is approximate. For a pure input the eigenvalues of the image are $\tfrac12(1+c)$ and $\tfrac12(1-c)$, both non-negative exactly for $\lvert c\rvert\le1$. For $c=-\tfrac13$ the Choi eigenvalues are $0,\tfrac23,\tfrac23,\tfrac23$; for $c=1$ they are $0,0,0,2$. The window $-1\le c<-\tfrac13$ is the standard one in which the map is positive but not completely positive, and it is where the corpus's exercise on positive-but-not-CP maps sits.
 
-**The physical segment is the last row, and it is forced rather than chosen.** A mixture with weight in $[0,1]$ is the only reading of $\mathcal E_\lambda$ under which $\lambda$ is a probability. Covariance gives the family; complete positivity permits more of it than physics uses; and the mixture reading cuts it to the segment the thermal path needs. Nothing about the value of $\lambda$ is selected — that is the bath, and §*What Is Refused* returns to it.
+**The physical segment is the last row, and it is forced rather than chosen.** A mixture with weight in $[0,1]$ is the only reading of $\mathcal E_\imath$ under which $\lambda$ is a probability. Covariance gives the family; complete positivity permits more of it than physics uses; and the mixture reading cuts it to the segment the thermal path needs. Nothing about the value of $\lambda$ is selected — that is the bath, and §*What Is Refused* returns to it.
 
 ## Unitality Is the Arrow
 
@@ -96,7 +96,7 @@ The centre is the only state that every unital channel fixes. It is fixed by eac
 
 The sign of the escape is the physics. A non-unital channel can lower $N$, and that is refrigeration and not a channel's failure: damping with Kraus weight $g=0.447$ takes $r$ from $0.2000$ to $0.8400$ and $N$ from $0.240000$ to $0.073600$. The coarse-graining article already says that such a map is not a coarse-graining, because it exports entropy to an environment and keeps no ledger of the export. Unitality is precisely the condition that no such export is hidden.
 
-The semigroup law is inherited, not reproved. $\mathcal E_{\lambda_1}\circ\mathcal E_{\lambda_2}=\mathcal E_{\lambda_1+\lambda_2-\lambda_1\lambda_2}$ because $(1-\lambda_1)(1-\lambda_2)=1-(\lambda_1+\lambda_2-\lambda_1\lambda_2)$, and the companion computes the residual as exactly zero. So the family is a semigroup, unital throughout, with the centre as its unique common fixed point and $N$ monotone along it.
+The semigroup law is inherited, not reproved. $\mathcal E_{k_1}\circ\mathcal E_{k_2}=\mathcal E_{k_1+k_2-k_1k_2}$ because $(1-\lambda_1)(1-\lambda_2)=1-(\lambda_1+\lambda_2-\lambda_1\lambda_2)$, and the companion computes the residual as exactly zero. So the family is a semigroup, unital throughout, with the centre as its unique common fixed point and $N$ monotone along it.
 
 ## The Staircase of Choi Ranks
 
@@ -118,7 +118,7 @@ The selected channel therefore sits one rung above everything the corpus has dil
 
 The fixed ceiling is the centre as the limit of contraction: every unital channel sends the ball inward, the fixed points of a channel are where its contraction stops, and for a unital family the stopping place is the centre. This is the sense in which the ledger's phrase *the centre as the ceiling of every channel* is meant, and it is a statement about the arrow.
 
-The dimensional ceiling is the Stinespring staircase: a channel of Choi rank $k$ requires an environment of dimension $k$, so the algebra that carries it is $\mathbb{B}\otimes M_k$, and the rank is the count of how much multiplicativity was abandoned. This is a statement about structure, and it is a corollary of §*Simplicity* rather than an independent fact — dimensions follow from rank, and rank follows from the loss of the product.
+The dimensional ceiling is the Stinespring staircase: a channel of Choi rank $k$ requires an environment of dimension $k$, so the algebra that carries it is $\mathbb{B}\otimes M_\imath$, and the rank is the count of how much multiplicativity was abandoned. This is a statement about structure, and it is a corollary of §*Simplicity* rather than an independent fact — dimensions follow from rank, and rank follows from the loss of the product.
 
 The same staircase is the corpus's gauge ceiling read on another carrier. *Grand Unification in the Biquaternion Framework: Where the Embedding Fails* passes that ceiling by moving from $\mathbb{B}$ to the matrix algebra over it, and the move here is the same enlargement: the matrix factor is the environment and its size is the Choi rank. The two share the shape of the enlargement and not the subject — one counts the factors a gauge group needs, the other the dimensions a discarded system needs.
 
@@ -138,7 +138,7 @@ Channels are not classified here; they are selected. $\mathbb{B}\cong M_2(\mathb
 
 Simplicity is the structural fact. A nonzero endomorphism of $\mathbb{B}$ is injective, a unital one is an automorphism, an automorphism of $M_2(\mathbb{C})$ is inner, and an inner one has Choi rank $1$. So multiplicative, rank $1$, conjugation by a unit, and $N$ preserved are one condition, and a channel is precisely a map that has abandoned the product. That is why no channel is internal, and why a boost does not count as one: it preserves $N$ but not $2\,\mathrm{Sc}$, so it moves the slice.
 
-Covariance under unit rotor conjugation selects the mixture family $\mathcal E_\lambda(\tilde Q)=(1-\lambda)\tilde Q+\lambda\,\mathrm{Sc}(\tilde Q)e_t$, verified to $3.3\times10^{-16}$; the twirl sends $M$ to $\tfrac13\operatorname{tr}(M)I$ and $\vec t$ to zero. Its Choi eigenvalues are $\tfrac12(1+3c)$ once and $\tfrac12(1-c)$ three times with $c=1-\lambda$, which places complete positivity at $c\ge-\tfrac13$, positivity at $\lvert c\rvert\le1$, and the mixture reading at $0\le\lambda\le1$.
+Covariance under unit rotor conjugation selects the mixture family $\mathcal E_\imath(\tilde Q)=(1-\lambda)\tilde Q+\lambda\,\mathrm{Sc}(\tilde Q)e_t$, verified to $3.3\times10^{-16}$; the twirl sends $M$ to $\tfrac13\operatorname{tr}(M)I$ and $\vec t$ to zero. Its Choi eigenvalues are $\tfrac12(1+3c)$ once and $\tfrac12(1-c)$ three times with $c=1-\lambda$, which places complete positivity at $c\ge-\tfrac13$, positivity at $\lvert c\rvert\le1$, and the mixture reading at $0\le\lambda\le1$.
 
 Unitality is the arrow: $r'\le r$, so $N'\ge N$, purity non-increasing and entropy non-decreasing, verified with the worst change $r'-r=-1.8\times10^{-4}$ over four hundred channels. The centre is the unique common fixed point of all unital channels, and a non-unital channel that lowers $N$ from $0.240000$ to $0.073600$ is refrigeration rather than an error.
 
@@ -156,7 +156,7 @@ The Choi rank is the price: $1$ for a conjugation and $8$ real dimensions, $2$ f
 | $\operatorname{rank}\mathsf C$ | Choi rank: minimal Kraus number, minimal environment dimension |
 | $\sum_l\tilde\Upsilon_l^{*}\tilde\Upsilon_l=e_t$ | Trace preservation |
 | $\sum_l\tilde\Upsilon_l\tilde\Upsilon_l^{*}=e_t$ | Unitality: the centre is fixed |
-| $\mathcal E_\lambda(\tilde Q)=(1-\lambda)\tilde Q+\lambda\,\mathrm{Sc}(\tilde Q)e_t$ | The covariant family; $\vec s_{\Psi}\mapsto(1-\lambda)\vec s_{\Psi}$ |
+| $\mathcal E_\imath(\tilde Q)=(1-\lambda)\tilde Q+\lambda\,\mathrm{Sc}(\tilde Q)e_t$ | The covariant family; $\vec s_{\Psi}\mapsto(1-\lambda)\vec s_{\Psi}$ |
 | $\Phi_c$ with $c=1-\lambda$ | The same family in depolarising form |
 | $\tfrac12(1+3c)$, $\tfrac12(1-c)$ | Choi eigenvalues of $\Phi_c$, once and three times |
 | $c\ge-\tfrac13$ | Complete positivity |

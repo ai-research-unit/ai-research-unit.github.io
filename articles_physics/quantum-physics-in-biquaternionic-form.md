@@ -81,7 +81,7 @@ where $\vec u = u_x \vec e_x + u_y \vec e_y + u_z \vec e_z$ is a unit pure real 
 
 The **parametrization** is by the unit sphere $S^2 \subset \mathbb{R}^3$: the direction $\vec u$ determines the idempotent $\tilde\Pi_{\mathrm{id},1}(\vec u)$ uniquely, and the complementary idempotent $\tilde\Pi_{\mathrm{id},2}(\vec u) = \tilde\Pi_{\mathrm{id},1}(-\vec u)$ corresponds to the opposite direction.
 
-**Identification with standard states.** Under the series isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ fixed by $\vec e_k\mapsto-i\sigma_k$ (*Algebra and Element Conventions*), the idempotent $\tilde\Pi_{\mathrm{id},1}(\vec u)$ maps to the standard pure state $|\vec u+\rangle\langle\vec u+|$, the spin-up state along direction $\vec u$. The map is computed in one line: $\mathsf{M}_2(\vec u)=-i\,\vec u\cdot\vec\sigma$, so $i\,\mathsf{M}_2(\vec u)=\vec u\cdot\vec\sigma$ and
+**Identification with standard states.** Under the series isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ fixed by $\vec e_\imath\mapsto-i\sigma_\imath$ (*Algebra and Element Conventions*), the idempotent $\tilde\Pi_{\mathrm{id},1}(\vec u)$ maps to the standard pure state $|\vec u+\rangle\langle\vec u+|$, the spin-up state along direction $\vec u$. The map is computed in one line: $\mathsf{M}_2(\vec u)=-i\,\vec u\cdot\vec\sigma$, so $i\,\mathsf{M}_2(\vec u)=\vec u\cdot\vec\sigma$ and
 
 $$
 \mathsf{M}_2\bigl(\tilde\Pi_{\mathrm{id},1}(\vec u)\bigr)=\tfrac{1}{2}\left(I+\vec u\cdot\vec\sigma\right)

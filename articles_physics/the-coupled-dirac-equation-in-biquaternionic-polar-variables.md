@@ -24,7 +24,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi .
 $$
 
-Here $\tilde A_\Phi=A_te_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k$ is the potential biquaternion, an element of the material sector $\mathbb{B}_\Phi$, with central scalar coefficients in the abelian case. That centality is the single fact the whole article turns on.
+Here $\tilde A_\Phi=A_te_t+\sum_{\imath\in\{x,y,z\}} A_\imath\vec e_\imath$ is the potential biquaternion, an element of the material sector $\mathbb{B}_\Phi$, with central scalar coefficients in the abelian case. That centality is the single fact the whole article turns on.
 
 Three things are established, and they are local statements.
 
@@ -56,12 +56,12 @@ $$
 
 The added term is one central complex number per component, and the four terms after it are the parent's four brackets unchanged in form.
 
-Which brackets the connection touches. Decompose the added term with $\tilde A_\Phi=A_te_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k$. Its temporal slot is $\frac{2\pi iϙ}{h}A_t$, a central imaginary number; its spatial slots are $\frac{2\pi iϙ}{h}A_k\vec e_k$, which are Hermitian vector parts because $i$ times a real vector is Hermitian. Hence
+Which brackets the connection touches. Decompose the added term with $\tilde A_\Phi=A_te_t+\sum_{\imath\in\{x,y,z\}} A_\imath\vec e_\imath$. Its temporal slot is $\frac{2\pi iϙ}{h}A_t$, a central imaginary number; its spatial slots are $\frac{2\pi iϙ}{h}A_\imath\vec e_\imath$, which are Hermitian vector parts because $i$ times a real vector is Hermitian. Hence
 
 $$
 \frac{2\pi i\,ϙ}{h}\tilde A_\Phi
 =\underbrace{\frac{2\pi i\,ϙ}{h}A_t}_{\text{central imaginary}}
-+\underbrace{\frac{2\pi i\,ϙ}{h}\sum_{k\in\{x,y,z\}} A_k\vec e_k}_{\text{Hermitian vector}} .
++\underbrace{\frac{2\pi i\,ϙ}{h}\sum_{\imath\in\{x,y,z\}} A_\imath\vec e_\imath}_{\text{Hermitian vector}} .
 $$
 
 The connection therefore adds to the phase bracket and to the boost bracket and to nothing else. The scale bracket and the rotor bracket are untouched, and that is a statement of type and not of size: a central scalar cannot produce a real vector part, and it cannot produce a scale.
@@ -225,7 +225,7 @@ Does not add.
 
 - No new solution. The field is the element form's and the word is a re-coordinatisation of it.
 - No new prediction. The equation is the coupled equation of the element form, written in eight real coordinates.
-- No derivation of the current beyond the element form's: the chart's current is $J_t=\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}}$, $J_k=\rho_{\mathrm{num}}\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,k}$, which is the same object in the chart's letters.
+- No derivation of the current beyond the element form's: the chart's current is $J_t=\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}}$, $J_\imath=\rho_{\mathrm{num}}\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,k}$, which is the same object in the chart's letters.
 - No spin dynamics in a background, as §*The Spin Transport* states.
 - No closure of the general case: the four brackets are coupled and the chart does not close them.
 
@@ -266,7 +266,7 @@ The polar equation is the free pair in variables. It closes for a plane wave in 
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; **the gauge-dependent coordinate** |
 | $\theta_{\mathrm{rpd}}\ge0,\ \vec u_{\mathrm b}$ | Rapidity and axis of the boost $\tilde U_{\Psi,\mathrm b}$ |
 | $\theta_{\mathrm{axr}}\in[0,2\pi]$ | Angle of the rotor $\tilde u_{\mathrm r}$; $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ |
-| $\tilde A_\Phi=A_te_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k$ | Potential biquaternion; material sector; coefficients central in the abelian case |
+| $\tilde A_\Phi=A_te_t+\sum_{\imath\in\{x,y,z\}} A_\imath\vec e_\imath$ | Potential biquaternion; material sector; coefficients central in the abelian case |
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | Covariant derivative, left action |
 | $\frac{2\pi iϙ}{h}\tilde A_\Phi$ | The added element: central imaginary slot plus Hermitian vector slot |
 | $\tilde\Upsilon_\Phi=i\frac{E}{h c}e_t+\frac{\vec p}{h}$ | Canonical wavevector, from $\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ |

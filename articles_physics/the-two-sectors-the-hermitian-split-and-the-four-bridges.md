@@ -37,12 +37,12 @@ $$
 \tilde R_\Phi=\tfrac12(\tilde Q-\tilde Q^{*})\in\mathbb{B}_{\Phi} .
 $$
 
-With $\tilde Q=z_0e_t+z_1\vec e_x+z_2\vec e_y+z_3\vec e_z$, the condition $\tilde Q^{*}=\tilde Q$ reads $z_0=\bar z_0$ and $z_k=-\bar z_k$: a real scalar and three imaginary vector coefficients. The informational sector therefore has the real basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, and the material sector, with the opposite signs, has $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$. Each is four-real-dimensional.
+With $\tilde Q=z_0e_t+z_1\vec e_x+z_2\vec e_y+z_3\vec e_z$, the condition $\tilde Q^{*}=\tilde Q$ reads $z_0=\bar z_0$ and $z_\imath=-\bar z_\imath$: a real scalar and three imaginary vector coefficients. The informational sector therefore has the real basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, and the material sector, with the opposite signs, has $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$. Each is four-real-dimensional.
 
 Two properties of the split are used throughout.
 
 - **It is a real subspace, not a complex one.** The sector $\mathbb{B}_{\Psi}$ is closed under real linear combinations but not under multiplication by $i$: the element $i\vec e_x$ is Hermitian, and $i(i\vec e_x)=-\vec e_x$ is anti-Hermitian. Multiplication by $i$ exchanges the sectors, and no nontrivial complex subspace lies inside one of them.
-- **It is not an ideal decomposition.** The product of two material elements need not be material. For $\tilde{R}_{\Phi,k}=i r'_{t,k}e_t+\vec v_k$ with real $r'_{t,k}$ and real $\vec v_k$,
+- **It is not an ideal decomposition.** The product of two material elements need not be material. For $\tilde{R}_{\Phi,k}=i r'_{t,\imath}e_t+\vec v_\imath$ with real $r'_{t,\imath}$ and real $\vec v_\imath$,
 
 $$
 \tilde{R}_{\Phi,1}\tilde{R}_{\Phi,2}=\bigl(-r'_{t,1}r'_{t,2}-(\vec v_1,\vec v_2)\bigr)e_t
@@ -221,7 +221,7 @@ The algebra splits into the material and the informational sectors, the eigenspa
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | The biquaternion algebra, isomorphic to $M_2(\mathbb{C})$ |
-| ${}^{*}$ | Hermitian conjugation, with $\vec e_k^{*}=-\vec e_k$ and $i^{*}=-i$ |
+| ${}^{*}$ | Hermitian conjugation, with $\vec e_\imath^{*}=-\vec e_\imath$ and $i^{*}=-i$ |
 | $\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$ | The material ($-$) and informational ($+$) sectors |
 | ${}^{\natural}$, $\bar{\cdot}$, $\flat=-{}^{*}$ | Quaternion conjugation, coefficient conjugation and the real structure |
 | $\langle\tilde Q\rangle_{\natural}=\sum_{\imath} Q_{\imath}^{2}$ | The biquaternion norm |

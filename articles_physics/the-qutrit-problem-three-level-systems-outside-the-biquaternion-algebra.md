@@ -60,7 +60,7 @@ The embedding is also unique up to conjugation, which rules out a cleverer three
 
 **Proposition.** *Let $\iota:\mathbb{B}\to M_3(\mathbb{C})$ be an algebra homomorphism with nonzero image. Then the image is isomorphic to $M_2(\mathbb{C})$, and up to conjugation in $M_3(\mathbb{C})$ it is the block $M_2(\mathbb{C})\oplus0$. Consequently the operators of $M_3(\mathbb{C})$ that annihilate the third level and preserve the two-level subspace $\mathbb{C}^2\oplus0$ are exactly the image, and the ten-real-dimensional complement lies outside it: eight real directions that connect the third level to the other two, and two that act within the third level.*
 
-*Proof.* The algebra $M_2(\mathbb{C})$ is simple, so a nonzero homomorphism has zero kernel and its image is isomorphic to $M_2(\mathbb{C})$; the image is therefore a simple subalgebra of $M_3(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$. By the double centraliser theorem, a subalgebra of $M_n(\mathbb{C})$ isomorphic to $M_k(\mathbb{C})$ with $k<n$ is conjugate to $M_k(\mathbb{C})\oplus0$. The dimension count is $\dim_{\mathbb{R}}M_3(\mathbb{C})-\dim_{\mathbb{R}}M_2(\mathbb{C})=18-8=10$.
+*Proof.* The algebra $M_2(\mathbb{C})$ is simple, so a nonzero homomorphism has zero kernel and its image is isomorphic to $M_2(\mathbb{C})$; the image is therefore a simple subalgebra of $M_3(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$. By the double centraliser theorem, a subalgebra of $M_n(\mathbb{C})$ isomorphic to $M_\imath(\mathbb{C})$ with $k<n$ is conjugate to $M_\imath(\mathbb{C})\oplus0$. The dimension count is $\dim_{\mathbb{R}}M_3(\mathbb{C})-\dim_{\mathbb{R}}M_2(\mathbb{C})=18-8=10$.
 
 The ten missing dimensions are the operators that involve the third level, and the count is the quantitative form of the spectator statement.
 
@@ -124,7 +124,7 @@ $$
 \mathrm{ad}_{(i\vec e_x)^2}(i\vec e_y)=[e_t,i\vec e_y]=0 .
 $$
 
-So $\mathrm{ad}_{i\vec e_x}^2\neq\mathrm{ad}_{(i\vec e_x)^2}$, and the map $x\mapsto\mathrm{ad}_x$ is not an algebra homomorphism. It is a **Lie-algebra** homomorphism: the linear span of the $i\vec e_k$ with the commutator is $\mathfrak{su}(2)$, and the adjoint action makes $W$ a module over $\mathrm{SU}(2)$, equivalently over its universal enveloping algebra $\mathcal{U}(\mathfrak{su}(2))$ and over the group $SU(2)$.
+So $\mathrm{ad}_{i\vec e_x}^2\neq\mathrm{ad}_{(i\vec e_x)^2}$, and the map $x\mapsto\mathrm{ad}_x$ is not an algebra homomorphism. It is a **Lie-algebra** homomorphism: the linear span of the $i\vec e_\imath$ with the commutator is $\mathfrak{su}(2)$, and the adjoint action makes $W$ a module over $\mathrm{SU}(2)$, equivalently over its universal enveloping algebra $\mathcal{U}(\mathfrak{su}(2))$ and over the group $SU(2)$.
 
 That is the precise location of the three-level structure. The qutrit is a module of $\mathfrak{su}(2)$ — or of $SU(2)$, whose three-dimensional irreducible representation is the adjoint — and not a module of the associative algebra $\mathbb{B}$. The companion article *Biquaternion Automorphisms and Derivations* records the same fact from the other side: all derivations of $\mathbb{B}$ are inner and $\mathrm{Der}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$, so the adjoint action sees only the six-real-dimensional Lie algebra, not the eight-real-dimensional associative algebra. For the qubit the distinction is invisible, because the defining module is a module of both.
 
@@ -163,13 +163,13 @@ the three-dimensional symmetric square being the adjoint representation of $\mat
 In the framework the tensor square is $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$, the module is $V\otimes V$ with the four basis states of the companion problem on two spin-$\tfrac12$ particles, and the two summands are the triplet and the singlet. The projector onto the qutrit sector is
 
 $$
-P_{\mathrm{sym}}=\tfrac{1}{4}\left(3\,e_t\otimes e_t-\sum_{k\in\{x,y,z\}}\vec e_k\otimes \vec e_k\right),
+P_{\mathrm{sym}}=\tfrac{1}{4}\left(3\,e_t\otimes e_t-\sum_{\imath\in\{x,y,z\}}\vec e_\imath\otimes \vec e_\imath\right),
 $$
 
 and the spin-one operators are the symmetric combinations
 
 $$
-\tilde F_k=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}=\frac{h}{4\pi}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
+\tilde F_\imath=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}=\frac{h}{4\pi}\left(i\vec e_\imath\otimes e_t+e_t\otimes i\vec e_\imath\right),
 $$
 
 which act on $\mathrm{sym}^2V$ irreducibly and annihilate $\Lambda^2V$. The ladder behaves as a three-level ladder should: the raising operator restricted to the symmetric sector is the spin-one raising operator,
@@ -260,7 +260,7 @@ Three-level systems are outside the biquaternion algebra as modules, and inside 
 - **Idempotent ceiling.** At most two orthogonal idempotents of $\mathbb{B}$ can sum to the identity, so a three-outcome projective measurement is impossible in the algebra; three-outcome POVMs exist, but they are not sharp.
 - **The adjoint representation.** The traceless part $W$ carries spin one under the adjoint action, but $\mathrm{ad}_{xy}\neq\mathrm{ad}_x\mathrm{ad}_y$: explicitly $\mathrm{ad}_{i\vec e_x}^2(i\vec e_y)=+4i\vec e_y\neq0=\mathrm{ad}_{(i\vec e_x)^2}(i\vec e_y)$. The three-dimensional space is a module of the Lie algebra $\mathfrak{su}(2)$ and of the group $SU(2)$, not of the algebra $\mathbb{B}$; all derivations are inner and $\mathrm{Der}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$.
 - **The absent dynamical algebra.** $\dim_{\mathbb{R}}\mathbb{B}_{\Psi}=4$, $\dim_{\mathbb{R}}\mathbb{B}=8$ and $\dim_{\mathbb{R}}\mathrm{Der}(\mathbb{B})=6$ are all smaller than $\dim_{\mathbb{R}}\mathrm{U}(3)=9$ and $\dim_{\mathbb{R}}\mathrm{SU}(3)=8$; the framework supplies the spin subgroup $SU(2)$ of dimension three, and the rest of $\mathrm{U}(3)$ only through the tensor square.
-- **The construction.** $V\otimes V\cong\mathrm{sym}^2V\oplus\Lambda^2V$, $4=3+1$; the qutrit is $\mathrm{sym}^2V$, selected by $P_{\mathrm{sym}}$, on which $\tilde F_k=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}$ acts irreducibly with $(\tilde S_{\Psi,+}^{(1)}+\tilde S_{\Psi,+}^{(2)})|_{\mathrm{sym}^2V}=\frac{h}{2\pi}\,J_{+}$; the products of $I_3,F_1,F_2,F_3$ generate $M_3(\mathbb{C})$, of real dimension $18$.
+- **The construction.** $V\otimes V\cong\mathrm{sym}^2V\oplus\Lambda^2V$, $4=3+1$; the qutrit is $\mathrm{sym}^2V$, selected by $P_{\mathrm{sym}}$, on which $\tilde F_\imath=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}$ acts irreducibly with $(\tilde S_{\Psi,+}^{(1)}+\tilde S_{\Psi,+}^{(2)})|_{\mathrm{sym}^2V}=\frac{h}{2\pi}\,J_{+}$; the products of $I_3,F_1,F_2,F_3$ generate $M_3(\mathbb{C})$, of real dimension $18$.
 - **The cost.** One extra level that must be projected out, an algebra that grows from $M_2(\mathbb{C})$ to $M_4(\mathbb{C})$, and a state space whose positivity is no longer a quadratic cone condition.
 - **General counting.** $\mathrm{sym}^nV$ has dimension $n+1$; spin $s$ requires $2s$ factors, so the cost in factors is linear in the number of levels minus one.
 
@@ -279,7 +279,7 @@ Three-level systems are outside the biquaternion algebra as modules, and inside 
 | $P_{\mathrm{sym}},P_{\mathrm{asym}}$ | Triplet and singlet projectors of $\mathbb{B}\otimes\mathbb{B}$ |
 | $\mathrm{sym}^2V$, $\Lambda^2V$ | Symmetric and antisymmetric squares; dimensions $3$ and $1$ |
 | $\mathrm{sym}^nV$ | Symmetric $n$-th power of the defining module, dimension $n+1$ |
-| $\tilde F_k=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}$ | Spin-one operators of the tensor square |
+| $\tilde F_\imath=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}$ | Spin-one operators of the tensor square |
 | $M_3(\mathbb{C})$ | Qutrit observable algebra, real dimension $18$ |
 
 ## Further Reading

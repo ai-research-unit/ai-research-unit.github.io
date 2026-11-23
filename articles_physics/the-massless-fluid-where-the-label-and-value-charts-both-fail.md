@@ -14,7 +14,7 @@ What is proved here is that at $\nu_m=0$ the label's null cone and the pole set 
 
 ## Conventions and Notation
 
-The element and its two norms. $\tilde Q=Q_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_{\imath}\in\mathbb{C}$, the product fixed by $\vec e_x\vec e_y=\vec e_z$ cyclically and $\vec e_k^{2}=-e_t$, with $i$ central. $N(\tilde Q)=\sum_{\imath} Q_{\imath}^{2}$ is the **quaternionic norm**, complex and multiplicative, vanishing exactly on the zero divisors; $\langle\tilde Q\rangle_{*}=\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ is the **Euclidean size**, real and definite. The modulus is the invariant and the size is the frame-dependent number [The Two Scales of the Field](../articles_physics/the-two-scales-of-the-field-the-proper-density-and-the-euclidean-size.html).
+The element and its two norms. $\tilde Q=Q_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_{\imath}\in\mathbb{C}$, the product fixed by $\vec e_x\vec e_y=\vec e_z$ cyclically and $\vec e_\imath^{2}=-e_t$, with $i$ central. $N(\tilde Q)=\sum_{\imath} Q_{\imath}^{2}$ is the **quaternionic norm**, complex and multiplicative, vanishing exactly on the zero divisors; $\langle\tilde Q\rangle_{*}=\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ is the **Euclidean size**, real and definite. The modulus is the invariant and the size is the frame-dependent number [The Two Scales of the Field](../articles_physics/the-two-scales-of-the-field-the-proper-density-and-the-euclidean-size.html).
 
 The label. The corpus writes a four-vector with an imaginary time coefficient, $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$, so that
 

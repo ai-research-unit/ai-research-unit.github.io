@@ -85,7 +85,7 @@ $$
 
 The four terms have four different algebraic types: a real central scalar; a central imaginary number; a Hermitian vector conjugated by the rotor; a real vector part. Those are the four brackets of the polar corpus, and the word's four factors produce them one for one.
 
-**The connection touches two of the four.** The added term's temporal slot is $\frac{2\pi iϙ}{h}A_t=-\frac{2\pi ϙ}{h}a'_t$ for a material connection $A_t=i a'_t$, a *real* central number; its spatial slots are $\frac{2\pi iϙ}{h}A_k$, central imaginary numbers because $A_k$ is real. So in every slot the connection is central, real in the temporal one and imaginary in the spatial ones, and the central scalars are spanned by the scale bracket and the phase bracket. The connection therefore merges with those two and with nothing else. In particular it cannot produce a Hermitian vector, so it cannot reach the boost bracket, and it cannot produce a real vector part, so it cannot reach the rotor bracket.
+**The connection touches two of the four.** The added term's temporal slot is $\frac{2\pi iϙ}{h}A_t=-\frac{2\pi ϙ}{h}a'_t$ for a material connection $A_t=i a'_t$, a *real* central number; its spatial slots are $\frac{2\pi iϙ}{h}A_\imath$, central imaginary numbers because $A_\imath$ is real. So in every slot the connection is central, real in the temporal one and imaginary in the spatial ones, and the central scalars are spanned by the scale bracket and the phase bracket. The connection therefore merges with those two and with nothing else. In particular it cannot produce a Hermitian vector, so it cannot reach the boost bracket, and it cannot produce a real vector part, so it cannot reach the rotor bracket.
 
 **The physical reading of that type statement.** The connection shifts the four-momentum and does nothing else at this order. Slot by slot,
 
@@ -214,7 +214,7 @@ The connection is central per slot, so it merges with the scale and the phase br
 | $\theta_{\mathrm{rpd}}\ge0,\ \hat u_{\mathrm b}\in S^{2}$ | Rapidity and axis of the boost |
 | $\theta_{\mathrm{axr}}\in[0,2\pi],\ \hat u_{\mathrm r}\in S^{2}$ | Angle and axis of the rotor |
 | $\mathbb{B}$, $\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$ | The algebra, its material and informational sectors |
-| $\tilde A_\Phi=A_te_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k$ | The connection; $A_t=i a'_t$ imaginary, $A_k$ real in the material case |
+| $\tilde A_\Phi=A_te_t+\sum_{\imath\in\{x,y,z\}} A_\imath\vec e_\imath$ | The connection; $A_t=i a'_t$ imaginary, $A_\imath$ real in the material case |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | The central per-component covariant derivative |
 | $\Gamma_{\imath}=\tilde U^{-1}\partial_{\imath}\tilde U$, $\rho_{\imath}=\tilde u^{-1}\partial_{\imath}\tilde u$ | The frame's two logarithmic derivatives |
 | $\tilde A^{-1}\partial_{\imath}\tilde A$ | The four brackets: scale, phase, boost, rotor |

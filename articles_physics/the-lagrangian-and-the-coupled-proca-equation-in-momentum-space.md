@@ -155,7 +155,7 @@ Expanding the form's diagonal,
 $$
 \frac{\partial^{2}S}{\partial A_0^{2}}=\tfrac12\bigl(\pi_t^{2}-\pi^{2}+4\pi^{2}\nu_m^{2}\bigr)=\tfrac12\bigl(\lvert\vec\pi\rvert^{2}+4\pi^{2}\nu_m^{2}\bigr) ,
 \qquad
-\frac{\partial^{2}S}{\partial A_k^{2}}=\tfrac12\bigl(\pi_k^{2}+\pi^{2}-4\pi^{2}\nu_m^{2}\bigr) ,
+\frac{\partial^{2}S}{\partial A_\imath^{2}}=\tfrac12\bigl(\pi_\imath^{2}+\pi^{2}-4\pi^{2}\nu_m^{2}\bigr) ,
 $$
 
 so the temporal coefficient has no $\pi_t^{2}$ and the three spatial coefficients each carry $\pi_t^{2}$ through $\pi^{2}$. Measured at the unit charge, $\vec A=(0.9,0.2,0.1)$ and $2\pi\vec\nu_\Phi=(0.3,0.2,0.1)$, so $\vec\pi=(1.2,0.4,0.2)$ and $\lvert\vec\pi\rvert^{2}=1.64$:
@@ -166,7 +166,7 @@ so the temporal coefficient has no $\pi_t^{2}$ and the three spatial coefficient
 | $1.6$ | $1.065000000$ | $1.065000000$ | $+0.935000$ |
 | $2.4$ | $1.065000000$ | $1.065000000$ | $+2.535000$ |
 
-The temporal coefficient does not move with the frequency, and the spatial ones do, exactly as in the free case. The coupling cannot add a $\pi_t^{2}$ to $A_0$, because the curvature's temporal-spatial components are $\partial_0A_k-\partial_k A_0$ and neither contains $\partial_0A_0$.
+The temporal coefficient does not move with the frequency, and the spatial ones do, exactly as in the free case. The coupling cannot add a $\pi_t^{2}$ to $A_0$, because the curvature's temporal-spatial components are $\partial_0A_\imath-\partial_\imath A_0$ and neither contains $\partial_0A_0$.
 
 **So the count is four minus one in both theories, and the reason is the field strength's antisymmetry and not the mass.** The free article's absent power and the coupled article's absent power are the same absent power. That is the article's cleanest agreement with its free companion, and it is worth stating because the coupling changes almost everything else.
 

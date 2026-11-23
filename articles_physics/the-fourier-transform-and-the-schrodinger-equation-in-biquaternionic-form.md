@@ -23,7 +23,7 @@ The bookkeeping is quoted once. With $t'$ the time and $r'_t=c\,t'$ the material
 $$
 \partial_{t'}\longmapsto-i\omega,
 \qquad
-\partial_k\longmapsto i\nu_{\Phi,k},
+\partial_\imath\longmapsto i\nu_{\Phi,k},
 \qquad
 i \frac{h}{2\pi}\,\partial_{t'}\longmapsto hf_{\mathrm{frq}},
 \qquad

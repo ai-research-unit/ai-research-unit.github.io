@@ -34,11 +34,11 @@ the Euler–Lagrange equation is the Proca equation. The normalization is fixed 
 
 **What is not new.** The action is the standard Proca action written in the algebra's letters. Nothing in the physics is new: the equation, the Lorenz condition, the polarizations and the stress tensor are the standard ones. What the algebra supplies is a compact statement of the pairing, a one-line variation, and the two structural readings above. The polar-form variational principle is the companion article, and there the action's variables are the word's parameters rather than the four components.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_k^2=-e_t$ and central scalar imaginary $i$; the sectors are $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\mathbb{B}_\Psi=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; ${}^{*}$ is coefficient conjugation composed with the quaternion conjugation $\natural$; $\mathrm{Sc}$ is the coefficient of $e_t$; $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ is the quaternionic norm, real on $\mathbb{B}_\Phi$; the potential is $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ with real $\vec A$ and real $a'_t$, so that $\langle\tilde A_\Phi\rangle_\natural=-(a'_t)^2+\vec A^2$; the derivatives are $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_k=\partial/\partial r_k$, so that $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; and the field strength is $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ with $c=1/\sqrt{\epsilon\mu}$. The mass is the wave number $\nu_m=\frac{mc}{h}$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_\imath^2=-e_t$ and central scalar imaginary $i$; the sectors are $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\mathbb{B}_\Psi=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; ${}^{*}$ is coefficient conjugation composed with the quaternion conjugation $\natural$; $\mathrm{Sc}$ is the coefficient of $e_t$; $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ is the quaternionic norm, real on $\mathbb{B}_\Phi$; the potential is $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ with real $\vec A$ and real $a'_t$, so that $\langle\tilde A_\Phi\rangle_\natural=-(a'_t)^2+\vec A^2$; the derivatives are $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\imath=\partial/\partial r_\imath$, so that $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; and the field strength is $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ with $c=1/\sqrt{\epsilon\mu}$. The mass is the wave number $\nu_m=\frac{mc}{h}$.
 
 ## Conventions
 
-**The conventions are restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian fixed subspace, where the potentials live; $\mathbb{B}_V$ is the pure-vector subspace, where the field strength lives; $\langle X\rangle_\natural=X^{\natural}X$ is the invariant length of an element, real whenever $X$ is; $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Re}\,\mathrm{Sc}(\cdot)$ is the real pairing the action uses. The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_{k\in\{x,y,z\}}\vec e_k\,\partial/\partial r_k$ with $R_t=ir'_t$, so that $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ carries the metric signs. The measure is $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^3r$, the units are those of the parent, and the mass is $\nu_m=\frac{mc}{h}$.
+**The conventions are restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian fixed subspace, where the potentials live; $\mathbb{B}_V$ is the pure-vector subspace, where the field strength lives; $\langle X\rangle_\natural=X^{\natural}X$ is the invariant length of an element, real whenever $X$ is; $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Re}\,\mathrm{Sc}(\cdot)$ is the real pairing the action uses. The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial r_\imath$ with $R_t=ir'_t$, so that $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ carries the metric signs. The measure is $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^3r$, the units are those of the parent, and the mass is $\nu_m=\frac{mc}{h}$.
 
 ## The Action in Element Form
 
@@ -141,24 +141,24 @@ S=\int d^4r\;\Bigl[-\tfrac14F_{\imath\jmath}F_{\imath\jmath}+\tfrac12 4\pi^{2}\n
 \qquad \langle\tilde A_\Phi\rangle_\natural=A_{\imath} A_{\imath} ,
 $$
 
-with $\delta_{\imath\jmath}$ contracting every pair as everywhere in the corpus. Since $\partial\mathcal L/\partial(\partial_{\imath} A_\lambda)=-F_{\imath\lambda}$, the canonical tensor is
+with $\delta_{\imath\jmath}$ contracting every pair as everywhere in the corpus. Since $\partial\mathcal L/\partial(\partial_{\imath} A_\imath)=-F_{\imathk}$, the canonical tensor is
 
 $$
-T^{\mathrm{can}}_{\imath\jmath}=-F_{\imath\lambda}\,\partial_{\jmath} A_\lambda-\delta_{\imath\jmath}\mathcal L
-=-F_{\imath\lambda}F_{\jmath\lambda}-F_{\imath\lambda}\,\partial_\lambda A_{\jmath}-\delta_{\imath\jmath}\mathcal L .
+T^{\mathrm{can}}_{\imath\jmath}=-F_{\imathk}\,\partial_{\jmath} A_\imath-\delta_{\imath\jmath}\mathcal L
+=-F_{\imathk}F_{\jmathk}-F_{\imathk}\,\partial_\imath A_{\jmath}-\delta_{\imath\jmath}\mathcal L .
 $$
 
-The second term is a total derivative minus a piece that the equation fixes: $F_{\imath\lambda}\partial_\lambda A_{\jmath}=\partial_\lambda(F_{\imath\lambda}A_{\jmath})-(\partial_\lambda F_{\imath\lambda})A_{\jmath}$, and the equation $\partial_\lambda F_{\imath\lambda}=-4\pi^{2}\nu_m^2A_{\imath}$ turns the second factor into $+\nu_m^2A_{\imath} A_{\jmath}$. Dropping the total derivative — that step *is* the Belinfante improvement, and it is the whole of it for this field — leaves
+The second term is a total derivative minus a piece that the equation fixes: $F_{\imathk}\partial_\imath A_{\jmath}=\partial_\imath(F_{\imathk}A_{\jmath})-(\partial_\imath F_{\imathk})A_{\jmath}$, and the equation $\partial_\imath F_{\imathk}=-4\pi^{2}\nu_m^2A_{\imath}$ turns the second factor into $+\nu_m^2A_{\imath} A_{\jmath}$. Dropping the total derivative — that step *is* the Belinfante improvement, and it is the whole of it for this field — leaves
 
 $$
-T_{\imath\jmath}=-F_{\imath\lambda}F_{\jmath\lambda}+\tfrac14\,\delta_{\imath\jmath}F_{\alpha\beta}F_{\alpha\beta}
+T_{\imath\jmath}=-F_{\imathk}F_{\jmathk}+\tfrac14\,\delta_{\imath\jmath}F_{\alpha\beta}F_{\alpha\beta}
 +4\pi^{2}\nu_m^2\Bigl(A_{\imath} A_{\jmath}-\tfrac12\,\delta_{\imath\jmath}\langle\tilde A_\Phi\rangle_\natural\Bigr),
 $$
 
 symmetric term by term: the improvement was needed to symmetrise the canonical form and is invisible in this one. Its properties are the ones that matter here, and each has a one-line proof.
 
-- **Symmetry.** $-F_{\imath\lambda}F_{\jmath\lambda}$ is symmetric because $F$ is antisymmetric and the two indices are contracted with the same index of the same matrix; the mass term is symmetric by inspection.
-- **Conservation.** $\partial_{\jmath} T_{\imath\jmath}=0$ on solutions. The derivative of the field terms produces $-(\partial_{\jmath} F_{\imath\lambda})F_{\jmath\lambda}$ together with a piece that combines with $\tfrac14\partial_{\imath} F^2$ through the Bianchi identity $\partial_{\imath} F_{\jmath\lambda}+\partial_{\jmath} F_{\lambda\imath}+\partial_\lambda F_{\imath\jmath}=0$, and the derivative of the mass term produces exactly the $\nu_m^2F_{\imath\lambda}A_\lambda$ the first piece needs. The identity is exact; it is also checked numerically below.
+- **Symmetry.** $-F_{\imathk}F_{\jmathk}$ is symmetric because $F$ is antisymmetric and the two indices are contracted with the same index of the same matrix; the mass term is symmetric by inspection.
+- **Conservation.** $\partial_{\jmath} T_{\imath\jmath}=0$ on solutions. The derivative of the field terms produces $-(\partial_{\jmath} F_{\imathk})F_{\jmathk}$ together with a piece that combines with $\tfrac14\partial_{\imath} F^2$ through the Bianchi identity $\partial_{\imath} F_{\jmathk}+\partial_{\jmath} F_{k\imath}+\partial_\imath F_{\imath\jmath}=0$, and the derivative of the mass term produces exactly the $\nu_m^2F_{\imathk}A_\imath$ the first piece needs. The identity is exact; it is also checked numerically below.
 - **Positive energy.** The energy density is $\tfrac12(\epsilon\vec E^2+\vec B^2/\mu)+\tfrac12\nu_m^2\bigl((a'_t)^2+\vec A^2\bigr)$, positive for the sign of the action used here.
 - **Trace.** $T_{\imath\imath}=-4\pi^{2}\nu_m^2\langle\tilde A_\Phi\rangle_\natural$ **exactly**: the field terms give $-F^2+F^2$ because $\delta_{\imath\imath}=4$ in four dimensions, and the mass term gives $\nu_m^2(A^2-2A^2)$. The trace therefore vanishes if and only if the local four-vector is lightlike.
 
@@ -168,7 +168,7 @@ symmetric term by term: the improvement was needed to symmetrise the canonical f
 
 **The trace statement is the structural one.** A massless vector field has a traceless stress tensor, and the trace is the measure of the conformal anomaly in the quantum theory. Here the trace is nonzero for every physical field, because a plane wave of a massive field is never lightlike: the invariants satisfy $\epsilon\vec E^2-c^2\vec B^2>0$ for every massive mode, as the polarization article shows in detail. So the massive vector field is not conformally invariant, and the non-invariance is exactly the mass.
 
-**The spin part.** The angular momentum current is $M_{\imath\jmath\lambda}=R_{\jmath} T_{\imath\lambda}-R_\lambda T_{\imath\jmath}+\Sigma_{\imath\jmath\lambda}$ with $\Sigma$ the vector-index part. That $\Sigma$ is the spin-one content of the field, and it is not a separate current with its own conservation law: the orbital and spin parts are separately conserved only after the improvement, and the total is the Noether current. The polar article's frame bracket is the transport of the same object read as a direction.
+**The spin part.** The angular momentum current is $M_{\imath\jmathk}=R_{\jmath} T_{\imathk}-R_\imath T_{\imath\jmath}+\Sigma_{\imath\jmathk}$ with $\Sigma$ the vector-index part. That $\Sigma$ is the spin-one content of the field, and it is not a separate current with its own conservation law: the orbital and spin parts are separately conserved only after the improvement, and the total is the Noether current. The polar article's frame bracket is the transport of the same object read as a direction.
 
 ## What the Principle Adds and What It Relabels
 
@@ -205,7 +205,7 @@ The divergence of the equation forces the Lorenz condition, and the variational 
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$, $\mathbb{B}_V$ | Material, informational, and vector sectors |
 | ${}^{*}$, ${}^{\natural}$, $\mathrm{Sc}$, $\mathrm{Vect}$ | Hermitian conjugation, quaternion conjugation, scalar part, vector part |

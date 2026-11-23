@@ -305,7 +305,7 @@ The framework's contribution to the construction is the target manifold, the inv
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$, $\vec e_{\jmath} \vec e_{\imath} = \sum_\lambda\varepsilon_{\jmath\imath\lambda}\vec e_\lambda$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$, $\vec e_{\jmath} \vec e_{\imath} = \sum_\imath\varepsilon_{\jmath\imathk}\vec e_\imath$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre; the abelian target's group |
 | $\mathbb{B}_{H}$, $\mathbb{H}^1_{\mathbb{B}}$ | Real quaternions; unit real quaternions $\cong SU(2)\cong\mathbb{S}^3$ |

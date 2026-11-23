@@ -21,14 +21,14 @@ $$
 with the six independent components organised into the electric and magnetic three-vectors:
 
 $$
-F_{0k}=E_k,\qquad F_{k\chi}=-\epsilon_{k\chi\kappa}cB_\kappa .
+F_{0k}=E_\imath,\qquad F_{k\chi}=-\epsilon_{k\chi\kappa}cB_\kappa .
 $$
 
 So the two-form's six real components are exactly the six real numbers an observer calls the electric and magnetic fields, and the split into $E$ and $B$ is a choice of observer's frame.
 
 ### The Carrier in the Algebra
 
-The bivector space is the vector part of $\mathbb{B}$: the six-dimensional real space spanned by the products $\vec e_k\vec e_\chi$, equivalently the scalar-free part of the algebra, equivalently the Lorentz Lie algebra itself. The corpus's field-strength biquaternion
+The bivector space is the vector part of $\mathbb{B}$: the six-dimensional real space spanned by the products $\vec e_\imath\vec e_\chi$, equivalently the scalar-free part of the algebra, equivalently the Lorentz Lie algebra itself. The corpus's field-strength biquaternion
 
 $$
 \tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H
@@ -60,7 +60,7 @@ $$
 \star:\ (\vec E,\vec B)\longmapsto\bigl(c\vec B,\,-\vec E/c\bigr).
 $$
 
-The action is a quarter turn in each of the three planes spanned by $(E_k,cB_k)$.
+The action is a quarter turn in each of the three planes spanned by $(E_\imath,cB_\imath)$.
 
 ### Its Square
 

@@ -43,7 +43,7 @@ The four brackets and their types, from the parent.
 | $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the velocity's transport |
 | $\tilde u_{\mathrm r}^{-1}\partial_{\imath}\tilde u_{\mathrm r}$ | real vector part | the spin's transport |
 
-The second bracket is the four-momentum, exactly. $\partial/\partial R_t=-i\partial/\partial r'_{t}$ and $\partial/\partial R_k=\partial/\partial r_k$, so
+The second bracket is the four-momentum, exactly. $\partial/\partial R_t=-i\partial/\partial r'_{t}$ and $\partial/\partial R_\imath=\partial/\partial r_\imath$, so
 
 $$
 \tilde\nabla_\Phi\theta_{\mathrm{pha}}=-i\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_{t}}e_{t}+\vec\nabla_\Phi\theta_{\mathrm{pha}}=i\frac{E}{h c}e_{t}+\frac{\vec p}{h}=\tilde\Upsilon_\Phi ,

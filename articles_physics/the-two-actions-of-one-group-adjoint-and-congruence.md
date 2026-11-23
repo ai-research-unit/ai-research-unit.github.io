@@ -97,7 +97,7 @@ separately, and it does so for every $\tilde U$, invertible or not. The adjoint 
 
 ### The Indefinite Form
 
-Take $\tilde Q\in\mathbb{B}_\Psi$ and write it as the image of a real four-vector, $\tilde Q=q_t+\sum_{k\in\{x,y,z\}} iq_k\vec e_k$, with $q_t$ and the $q_k$ real. Then
+Take $\tilde Q\in\mathbb{B}_\Psi$ and write it as the image of a real four-vector, $\tilde Q=q_t+\sum_{\imath\in\{x,y,z\}} iq_\imath\vec e_\imath$, with $q_t$ and the $q_\imath$ real. Then
 
 $$
 \det\mathsf{M}_2(\tilde U\tilde Q\tilde U^{*})=\det\mathsf{M}_2(\tilde U)\det\mathsf{M}_2(\tilde Q)\overline{\det\mathsf{M}_2(\tilde U)}
@@ -169,8 +169,8 @@ This is the two-to-one cover of *The Two-Sheeted Cover and the Topology of the G
 
 The two actions differ in what they are blind to when the group of invertibles is used.
 
-- **The adjoint** is blind to any nonzero complex factor: $\mathrm{Ad}_{\lambda\tilde U}=\mathrm{Ad}_{\tilde U}$ for $\lambda\in\mathbb{C}^{\times}$, because the factor cancels against its inverse. Its true kernel on $\mathbb{B}^{\times}$ is the whole centre $\mathbb{C}^{\times}e_t$, of real dimension two.
-- **The congruence** is blind to a unit-modulus factor only: $\mathrm{Cg}_{\lambda\tilde U}=\lvert\lambda\rvert^{2}\mathrm{Cg}_{\tilde U}$. A phase cancels, a real scale does not.
+- **The adjoint** is blind to any nonzero complex factor: $\mathrm{Ad}_{k\tilde U}=\mathrm{Ad}_{\tilde U}$ for $\lambda\in\mathbb{C}^{\times}$, because the factor cancels against its inverse. Its true kernel on $\mathbb{B}^{\times}$ is the whole centre $\mathbb{C}^{\times}e_t$, of real dimension two.
+- **The congruence** is blind to a unit-modulus factor only: $\mathrm{Cg}_{k\tilde U}=\lvert\lambda\rvert^{2}\mathrm{Cg}_{\tilde U}$. A phase cancels, a real scale does not.
 
 So a scale $r$ is invisible to the adjoint and is a genuine dilatation of the congruence: the congruence sees the modulus and the adjoint does not. This is the algebraic form of the statement that the interval's isometry group contains the scale only through its modulus, and of the further statement that the congruence by a non-invertible element is a conformal map, which *The Conformal Group in Biquaternionic Form* takes up.
 

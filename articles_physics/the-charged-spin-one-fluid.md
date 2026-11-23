@@ -138,12 +138,12 @@ $$
 and for a four-vector element the sum of the squares is the natural norm,
 
 $$
-\sum_{\imath} A_{\imath}^{2}=A_te_t\cdot A_te_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k\cdot A_k\vec e_k
-=A_t^{2}+\sum_{k\in\{x,y,z\}} A_k^{2}
+\sum_{\imath} A_{\imath}^{2}=A_te_t\cdot A_te_t+\sum_{\imath\in\{x,y,z\}} A_\imath\vec e_\imath\cdot A_\imath\vec e_\imath
+=A_t^{2}+\sum_{\imath\in\{x,y,z\}} A_\imath^{2}
 =\tilde A\tilde A^{\natural},
 $$
 
-the cross terms cancelling and $\vec e_k^{2}=-e_t$ supplying the second sign. Both identities are exact for complex coefficients and were checked to machine precision, the second against $\tilde A\tilde A^{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ over random draws of the eight parameters.
+the cross terms cancelling and $\vec e_\imath^{2}=-e_t$ supplying the second sign. Both identities are exact for complex coefficients and were checked to machine precision, the second against $\tilde A\tilde A^{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ over random draws of the eight parameters.
 
 The consequence on the constraint surface. The scalar part of the coupled equation is the covariant Lorenz condition, so the ordinary divergence is fixed:
 

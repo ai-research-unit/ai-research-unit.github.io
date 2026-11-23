@@ -12,7 +12,7 @@ This article treats the Majorana representation in the biquaternion algebra $\ma
 
 The article develops the spin-1/2 case fully, states the general construction because it is the standard setting in which the $2s=1$ case is understood, and treats the symmetric states of $N$ spin-1/2 particles as the natural multi-spin extension. The total angular momentum of those symmetric states is $\ge 1$ for $N\ge2$, and the representation theory of spin $1$ and above belongs to the neighbouring subcategory; here the constituent spins are spin-1/2 throughout.
 
-The notation is that of the read-list articles: $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_k$, $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, the reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_\imath$, $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, the reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\imath\mapsto\sigma_\imath$.
 
 The companion articles supply the pieces:
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the two-state system and the Bloch sphere.
@@ -269,11 +269,11 @@ For $N$ spin-1/2 particles in the symmetric subspace the constellation has $N$ s
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace |
 | $\mathbb{B}_{H}$ | Unit real quaternions; the rotation rotors |
-| $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_k$ | Spin-1/2 operator |
+| $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_\imath$ | Spin-1/2 operator |
 | $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Idempotent; the state of a spin-1/2 |
 | $\vec u_x = \vec s_{\Psi}$ | Bloch vector; the single Majorana star |
 | $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{2}/\tilde{Ξ}_{1} = \tan\tfrac{\theta}{2}\exp(i\theta_{\mathrm{azm}})$ | Stereographic coordinate |

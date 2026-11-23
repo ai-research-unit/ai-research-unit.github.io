@@ -35,10 +35,10 @@ The Standard Model contributes through three sources.
 |---|---|---|---|
 | Gauge bosons | $\tfrac94 g^2$ | $0.239$ | $9.6\%$ |
 | Top quark | $3y_t^2$ | $1.476$ | $59.3\%$ |
-| Higgs quartic | $6\lambda$ | $0.774$ | $31.1\%$ |
+| Higgs quartic | $6\varpi_{\mathrm{cpl}}$ | $0.774$ | $31.1\%$ |
 | Total | — | $2.489$ | $100\%$ |
 
-The coefficients use $g=0.652$, $y_t=m_t/v=172.7/246.22=0.7014$ and $\lambda=0.1291$. The top's contribution is $59\%$ of the total, which is the same fact as in the running of $\lambda$ and in the vacuum stability condition: the top coupling dominates every question about the scalar sector.
+The coefficients use $g=0.652$, $y_t=m_t/v=172.7/246.22=0.7014$ and $\varpi_{\mathrm{cpl}}=0.1291$. The top's contribution is $59\%$ of the total, which is the same fact as in the running of $\varpi_{\mathrm{cpl}}$ and in the vacuum stability condition: the top coupling dominates every question about the scalar sector.
 
 The physical interpretation needs no cutoff. Take the Standard Model to be valid up to a scale $\Lambda$ and ask what happens to the Higgs mass when a state of mass $M\sim\Lambda$ is integrated out. The answer is a shift of order $\Lambda^2/16\pi^2$, whatever the regularisation. So the question "why is the Higgs mass so much smaller than the scale of whatever comes next" is a question about heavy states, not about infinities.
 
@@ -353,7 +353,7 @@ Naturalness is a heuristic with one success (GIM) and one failure (weak-scale su
 | $\delta m_H^2$ | One-loop shift of the Higgs mass squared |
 | $c_i$ | Coefficient of the quadratic divergence from source $i$ |
 | $\mathcal{T}_{\mathrm{tune}}$ | Tuning, $\lvert\delta m_H^2\rvert/m_H^2$ |
-| $\lambda$ | Higgs quartic, $0.1291$ |
+| $\varpi_{\mathrm{cpl}}$ | Higgs quartic, $0.1291$ |
 | $y_t$ | Top Yukawa, $0.7014$ |
 | $v$ | Higgs expectation value, $246.22$ GeV |
 | $f$ | Compositeness scale |

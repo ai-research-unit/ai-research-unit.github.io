@@ -32,7 +32,7 @@ $$
 \langle\tilde P_\Phi\rangle_\natural=N.
 $$
 
-The phase convention is fixed here and used throughout. A positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=\omega r_t'-2\pi\vec\nu_\Phi\cdot\vec r$, so $\partial/\partial r_t'\mapsto-i\omega$ and $\partial/\partial r_k\mapsto i\nu_{\Phi,k}$. The sign of $\vec\zeta$ in every factorization display below is the sign this convention gives it; the opposite convention reverses it and changes no structural statement.
+The phase convention is fixed here and used throughout. A positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=\omega r_t'-2\pi\vec\nu_\Phi\cdot\vec r$, so $\partial/\partial r_t'\mapsto-i\omega$ and $\partial/\partial r_\imath\mapsto i\nu_{\Phi,k}$. The sign of $\vec\zeta$ in every factorization display below is the sign this convention gives it; the opposite convention reverses it and changes no structural statement.
 
 **The coefficient is a constant complex vector.** $\vec F$ is a constant element of the vector subspace of $\mathbb{B}$ with complex components, carrying no scalar part. It is the parent's object and it is kept in the parent's notation, including the split $\vec F=-E-iH$ for real vectors $E$ and $H$.
 

@@ -49,7 +49,7 @@ The four **frame basis operators** that the current uses act by
 
 $$
 \Gamma_t: X\mapsto iX\vec e_x,\qquad
-\Gamma_k: X\mapsto i\vec e_k X\vec e_y\quad(k=1,2,3),
+\Gamma_\imath: X\mapsto i\vec e_\imath X\vec e_y\quad(k=1,2,3),
 $$
 
 with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$, and the fifth, the basis operator that carries the split, acts by
@@ -62,7 +62,7 @@ Each frame basis operator carries exactly one factor of the central $i$, so a sq
 
 $$
 \Gamma_t^2=1,\qquad
-\Gamma_k^2=-1,\qquad
+\Gamma_\imath^2=-1,\qquad
 \Gamma_{\imath}\Gamma_{\jmath}+\Gamma_{\jmath}\Gamma_{\imath}=0\quad(\imath\neq\jmath),
 $$
 
@@ -71,7 +71,7 @@ the $1$ being the identity action and the $0$ the zero action. The anticommutati
 The **momentum basis operator** of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is the sum of the four frame basis operators with the components as coefficients,
 
 $$
-P(p): X\mapsto p_0\,iX\vec e_x-\sum_{k\in\{x,y,z\}} p_k\,i\vec e_k X\vec e_y,
+P(p): X\mapsto p_0\,iX\vec e_x-\sum_{\imath\in\{x,y,z\}} p_\imath\,i\vec e_\imath X\vec e_y,
 $$
 
 the minus signs on the three spatial terms being those of the metric. Its square is a multiple of the identity action,
@@ -125,7 +125,7 @@ The **current** of a line that enters with momentum $p$ and leaves with momentum
 $$
 J_t(a,b):=\mathrm{Sc}\bigl(a^{*}b\bigr),
 \qquad
-J_k(a,b):=\mathrm{Sc}\bigl(a^{*}\,\vec e_k\,b\,\vec e_z\bigr)\quad(k=1,2,3),
+J_\imath(a,b):=\mathrm{Sc}\bigl(a^{*}\,\vec e_\imath\,b\,\vec e_z\bigr)\quad(k=1,2,3),
 $$
 
 with $a$ the element of the outgoing line and $b$ that of the incoming one. The time component is the Hermitian form of *Product and Form Conventions* read with its two arguments exchanged, $J_t(a,b)=\langle b,a\rangle_{*}$. The four numbers are the frame-basis operator bilinears reduced to the algebra, a derived form: the central $i$ of the basis operator cancels the central $i$ of the adjoint, and the product $\vec e_y\vec e_x=-\vec e_z$ turns the right multiplier of a spatial basis operator into $\vec e_z$. Every one of the four is a single complex number, and the brackets below are ordinary products.
@@ -300,7 +300,7 @@ The framework supplies the two currents, the photon propagator, the external Foc
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\imath^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 This section fixes the dictionary that the traces above reproduce, and nothing here is needed outside it.
 
@@ -322,13 +322,13 @@ $$
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3 .
 $$
 
-These are the body's own basis operators — $\Gamma_t=\gamma_0$, $\Gamma_k=\gamma_k$ for $k=1,2,3$, and $\mathsf{V}_{\mathrm{vol}}=\gamma_5$ — so nothing in the body needs the gammas: the reading is a bookkeeping device for the traces, and $\mathrm{tr}$ is the $4\times4$ matrix trace of this reading, the same number as the body's trace $\operatorname{Tr}$ of the action on $\mathbb{B}$.
+These are the body's own basis operators — $\Gamma_t=\gamma_0$, $\Gamma_\imath=\gamma_\imath$ for $k=1,2,3$, and $\mathsf{V}_{\mathrm{vol}}=\gamma_5$ — so nothing in the body needs the gammas: the reading is a bookkeeping device for the traces, and $\mathrm{tr}$ is the $4\times4$ matrix trace of this reading, the same number as the body's trace $\operatorname{Tr}$ of the action on $\mathbb{B}$.
 
 **The trace identities.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ and $\epsilon_{0123}=+1$,
 
 $$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
+(\gamma_\imath)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_{\imath},\gamma_5\}=0,
 $$
@@ -378,10 +378,10 @@ In the biquaternion framework the amplitude is the contraction of material-secto
 | $\theta$ | Angle between the incoming and the outgoing positron |
 | $d\sigma/d(\cos\theta)$ | Leading-order spin-averaged cross section |
 | $\alpha=e^2/4\pi$ | Fine-structure constant |
-| $\Gamma_t: X\mapsto iX\vec e_x$, $\Gamma_k: X\mapsto i\vec e_k X\vec e_y$ | Four frame basis operators |
+| $\Gamma_t: X\mapsto iX\vec e_x$, $\Gamma_\imath: X\mapsto i\vec e_\imath X\vec e_y$ | Four frame basis operators |
 | $\mathsf{V}_{\mathrm{vol}}: X\mapsto -iX\vec e_z$ | Volume basis operator of the frame |
-| $P(p): X\mapsto p_0iX\vec e_x-\sum_{k\in\{x,y,z\}} p_ki\vec e_k X\vec e_y$ | Momentum basis operator; $P(p)^2=p_0^2-\vec p^2$ |
-| $J_{\imath}(a,b)$ | Current of a line, $J_t=\mathrm{Sc}(a^*b)$, $J_k=\mathrm{Sc}(a^*\vec e_k b\vec e_z)$ |
+| $P(p): X\mapsto p_0iX\vec e_x-\sum_{\imath\in\{x,y,z\}} p_\imathi\vec e_\imath X\vec e_y$ | Momentum basis operator; $P(p)^2=p_0^2-\vec p^2$ |
+| $J_{\imath}(a,b)$ | Current of a line, $J_t=\mathrm{Sc}(a^*b)$, $J_\imath=\mathrm{Sc}(a^*\vec e_\imath b\vec e_z)$ |
 | $J(a,b)\cdot J(c,d)$ | Contraction with the sign vector, $\sum_{\imath}\varepsilon_{\imath} J_{\imath}(a,b)J_{\imath}(c,d)$ |
 | $\tilde u(p)$, $\tilde v(k)$ | Electron and positron state elements |
 | $\mathcal M_t,\mathcal M_s$ | Exchange and annihilation amplitudes |

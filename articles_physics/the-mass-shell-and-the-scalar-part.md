@@ -20,7 +20,7 @@ The notation is that of the companions. An element is $\tilde Q=q_0e_t+q_1e_1+q_
 
 ## One Form on Two Planes
 
-**The two readings of $N$ are one expression.** Write $\mathcal{N}(\tilde Q)=\mathrm{Re}\sum_{k=0}^{3}q_k^{2}$. On the informational plane $q_0$ is real and $q_j=i s_j/2$, so
+**The two readings of $N$ are one expression.** Write $\mathcal{N}(\tilde Q)=\mathrm{Re}\sum_{k=0}^{3}q_\imath^{2}$. On the informational plane $q_0$ is real and $q_j=i s_j/2$, so
 $$
 \mathcal{N}=\tfrac14-\tfrac14\lvert\vec s_\Psi\rvert^{2},
 $$
@@ -140,7 +140,7 @@ It does not extend the argument beyond one element. One particle, one state, no 
 
 ## Summary
 
-One form, two planes. $\mathcal{N}=\mathrm{Re}\sum q_k^{2}$ is $-m^{2}c^{2}$ on the anti-Hermitian plane and $\tfrac14(1-\lvert\vec s\rvert^{2})$ on the Hermitian one; the two readings are one polynomial on two subspaces.
+One form, two planes. $\mathcal{N}=\mathrm{Re}\sum q_\imath^{2}$ is $-m^{2}c^{2}$ on the anti-Hermitian plane and $\tfrac14(1-\lvert\vec s\rvert^{2})$ on the Hermitian one; the two readings are one polynomial on two subspaces.
 
 The congruence preserves $\mathcal{N}$ and moves $2\,\mathrm{Sc}$, always. $\mathcal{N}$ deviates by at most $3.3\times10^{-16}$ over a hundred boosts, while $2\,\mathrm{Sc}-1$ has median $0.165$ and maximum $2.314$.
 
@@ -157,7 +157,7 @@ Two traps. $\mathcal{N}=0$ is pure on one plane and null on the other, and the H
 | symbol | meaning |
 | --- | --- |
 | $\tilde Q=q_0e_t+\vec q$ | an element of the algebra |
-| $\mathcal{N}=\mathrm{Re}\sum_k q_k^{2}$ | the one form; mass shell or impurity |
+| $\mathcal{N}=\mathrm{Re}\sum_\imath q_\imath^{2}$ | the one form; mass shell or impurity |
 | $2\,\mathrm{Sc}$ | twice the $e_t$ coefficient; the normalisation convention |
 | $\tilde p_\Phi=i(E/c)e_t+\vec p$ | the material momentum; anti-Hermitian plane |
 | $\tilde{Ϛ}_\Psi=\tfrac12(e_t+i\vec s_\Psi)$ | the state; Hermitian plane |

@@ -35,7 +35,7 @@ $$
 \tilde\Xi=\Xi_t e_t+\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z ,
 $$
 
-with the basis $e_t=1$ and $\vec e_k^{2}=-e_t$. Nothing stands behind the element. There is no column, no spinor index, no separate state space, no minimal left ideal, no projector and no Clifford algebra. The field is the element and the operator is an element.
+with the basis $e_t=1$ and $\vec e_\imath^{2}=-e_t$. Nothing stands behind the element. There is no column, no spinor index, no separate state space, no minimal left ideal, no projector and no Clifford algebra. The field is the element and the operator is an element.
 
 The two equations of the block are the algebra's own operators acting on that element. The scalar case is the biquaternionic Klein–Gordon equation
 
@@ -201,7 +201,7 @@ word leaves open, the sign $\varepsilon$, the locking on the degenerate sector a
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, with $\vec e_k^{2}=-e_t$ |
+| $e_t,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, with $\vec e_\imath^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde\Xi$ | The field, one element of $\mathbb{B}$ |

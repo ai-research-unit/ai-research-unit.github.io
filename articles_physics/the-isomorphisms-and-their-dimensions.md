@@ -65,13 +65,13 @@ $$
 \mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
 $$
 
-Each of the three vector images squares to $-I_2$, which is what $\vec e_k^2=-e_t$ demands, and the three satisfy the quaternion relations among themselves. The three are $-i$ times the Pauli matrices of *Matrix Representations Conventions*, §*The $2\times2$ Pauli Representation*; this block does not print those arrays, and the three matrices above are the display of record.
+Each of the three vector images squares to $-I_2$, which is what $\vec e_\imath^2=-e_t$ demands, and the three satisfy the quaternion relations among themselves. The three are $-i$ times the Pauli matrices of *Matrix Representations Conventions*, §*The $2\times2$ Pauli Representation*; this block does not print those arrays, and the three matrices above are the display of record.
 
 ### Why the Assignment Is Forced
 
 The assignment of the three vector images is not a choice among equally good alternatives.
 
-- $\vec e_k^2=-e_t$ forces the factor, because a real symmetric matrix squares to $+I_2$ and only an imaginary one squares to $-I_2$.
+- $\vec e_\imath^2=-e_t$ forces the factor, because a real symmetric matrix squares to $+I_2$ and only an imaginary one squares to $-I_2$.
 - $\vec e_x\vec e_y=\vec e_z$ fixes the relative sign of the three.
 - The trace must vanish on vectors, and the three Pauli matrices, though traceless, are Hermitian, so a Hermitian image would put a real number where the algebra has $i$.
 
@@ -114,13 +114,13 @@ The second number is the one this block needs: six is the number of Lorentz gene
 The traceless part is closed under the commutator, because the trace of a commutator vanishes in any associative algebra. Its six real generators are
 
 $$
-J_k=\tfrac12\vec e_k,\qquad K_k=\tfrac12 i\vec e_k,\qquad k=x,y,z,
+J_\imath=\tfrac12\vec e_\imath,\qquad K_\imath=\tfrac12 i\vec e_\imath,\qquad k=x,y,z,
 $$
 
 and direct multiplication gives
 
 $$
-[J_i,J_j]=\epsilon_{ijk}J_k,\qquad [J_i,K_j]=\epsilon_{ijk}K_k,\qquad [K_i,K_j]=-\epsilon_{ijk}J_k .
+[J_i,J_j]=\epsilon_{\imath\jmath\ell}J_\imath,\qquad [J_i,K_j]=\epsilon_{\imath\jmath\ell}K_\imath,\qquad [K_i,K_j]=-\epsilon_{\imath\jmath\ell}J_\imath .
 $$
 
 The table is the Lorentz algebra. *The Six Generators and Their Commutators* derives it in full, writes the structure constants in the form the block uses and computes the invariant form; here the table is needed only to identify the object.
@@ -133,14 +133,14 @@ Two independent warrants.
 
 **The invariant form.** The Killing form of the six-dimensional real algebra has eigenvalues $\pm4$ in the basis above and determinant $-4096$. It is therefore non-degenerate with inertia $(3,3)$, which is the inertia of $\\mathfrak{so}(1,3)$ and of nothing else in this neighbourhood: $\mathfrak{so}(4)$ has inertia $(6,0)$ and $\mathfrak{so}(2,2)$ has $(4,2)$. The computation runs on the structure constants, and it is the check that rules out the misreading in which the traceless part is called $\mathfrak{so}(4)$.
 
-**The misreading to avoid.** The table has $[K_i,K_j]=-\epsilon_{ijk}J_k$ and not $+\epsilon_{ijk}J_k$. A plus sign gives $\mathfrak{so}(4)$, the Euclidean algebra, which is the algebra of a different real form of the same complex algebra. *The Cartan Subalgebra, the Roots and the Three Real Forms* puts the three real forms side by side and states which slice of the complex algebra each one is.
+**The misreading to avoid.** The table has $[K_i,K_j]=-\epsilon_{\imath\jmath\ell}J_\imath$ and not $+\epsilon_{\imath\jmath\ell}J_\imath$. A plus sign gives $\mathfrak{so}(4)$, the Euclidean algebra, which is the algebra of a different real form of the same complex algebra. *The Cartan Subalgebra, the Roots and the Three Real Forms* puts the three real forms side by side and states which slice of the complex algebra each one is.
 
 ### The Generators Are Anti-Hermitian
 
-With the corpus's involution $\vec e_k^{*}=-\vec e_k$ and $i^{*}=-i$. Hence
+With the corpus's involution $\vec e_\imath^{*}=-\vec e_\imath$ and $i^{*}=-i$. Hence
 
 $$
-J_k^{*}=-J_k,\qquad K_k^{*}=K_k .
+J_\imath^{*}=-J_\imath,\qquad K_\imath^{*}=K_\imath .
 $$
 
 The rotations are anti-Hermitian and the boosts are Hermitian in this convention. This is a convention of the generator and not a statement about the group. Its consequences are that the structure constants above are real, that no explicit factor of $i$ appears in the bracket table, and that a Casimir written with the corpus's generators may differ in sign from the same Casimir written with the physicist's Hermitian generators $i\vec J$ and $i\vec K$. *The Two Casimirs of the Lorentz Algebra* states both forms and the dictionary between them.
@@ -255,8 +255,8 @@ The determinant of the image is the algebra's complex quadratic form and not the
 | $N(\tilde Q)$ | the biquaternion norm $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ |
 | $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$ | the scalar-free part as a real Lie algebra, the Lorentz algebra |
 | $\mathfrak{gl}(2,\mathbb{C})$ | the whole algebra under the commutator |
-| $J_k=\tfrac12\vec e_k$ | the rotation generators, anti-Hermitian |
-| $K_k=\tfrac12 i\vec e_k$ | the boost generators, Hermitian |
+| $J_\imath=\tfrac12\vec e_\imath$ | the rotation generators, anti-Hermitian |
+| $K_\imath=\tfrac12 i\vec e_\imath$ | the boost generators, Hermitian |
 | $\vec J_\pm=\tfrac12(\vec J\pm i\vec K)$ | the two complex triples |
 | $(m,n)$ | the pair of half-integers labelling an irreducible finite-dimensional representation |
 

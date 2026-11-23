@@ -145,7 +145,7 @@ The other form is not preserved, and its failure is not a normalization. The sca
 The numbers are unambiguous. On the same 64 samples the summed scalar part of the quaternionic norm went from $-16.861768-42.722374\,i$ in position space to $-15.112387-17.526486\,i$ in momentum space: the real part moved by a tenth and the imaginary part changed by more than a factor of two. For a field with real coefficients the failure is starkest, because the quaternionic norm is then real and the transform's value is not. One 64-sample real field gave $56.651597$ before the transform and $-6.686526$ after, and the exact identity behind the number is
 
 $$
-\sum_k\hat c_k^{2}=\sum_n c_nc_{-n},
+\sum_\imath\hat c_\imath^{2}=\sum_n c_nc_{-n},
 $$
 
 which held to $1.6\times10^{-13}$. **The transform of the norm is the reflected overlap of the field with itself**, not the norm, and the two agree only for a field symmetric under reflection.
@@ -192,7 +192,7 @@ In position space the Dirac operator is mixed: the gradient is anti-Hermitian an
 
 The light cone is exactly the locus where $\tilde\Upsilon_\Phi/(2i\nu_t')$ is idempotent. The defect of idempotency is $-\frac{\nu_t'^{2}-\nu_{\Phi}^{2}}{4\nu_t'^{2}}e_t$, a central multiple of the interval, and on the cone the projector is $\tfrac12(e_t-i\hat n\cdot\vec e)$ of trace one, with the other sign of $\hat n$ giving the orthogonal partner. The two members of the massless pair have the two complementary minimal left ideals for their solution spaces, and the sign of the momentum's direction selects which is which.
 
-The transform preserves the Hermitian form, by Plancherel, and breaks the quaternionic norm, whose scalar part is a holomorphic quadratic form: the summed scalar part of the norm of a real 64-sample field went from $56.651597$ to $-6.686526$, with the exact identity $\sum_k\hat c_k^{2}=\sum_nc_nc_{-n}$ holding to $1.6\times10^{-13}$. So the indefinite quadratic structure lives on the symbol, where it is a level set: the Dirac shell is the level $-\nu_m^{2}$, and at $\nu_m=0$ that level set is the idempotent variety.
+The transform preserves the Hermitian form, by Plancherel, and breaks the quaternionic norm, whose scalar part is a holomorphic quadratic form: the summed scalar part of the norm of a real 64-sample field went from $56.651597$ to $-6.686526$, with the exact identity $\sum_\imath\hat c_\imath^{2}=\sum_nc_nc_{-n}$ holding to $1.6\times10^{-13}$. So the indefinite quadratic structure lives on the symbol, where it is a level set: the Dirac shell is the level $-\nu_m^{2}$, and at $\nu_m=0$ that level set is the idempotent variety.
 
 ## Summary of Notation
 
@@ -208,7 +208,7 @@ The transform preserves the Hermitian form, by Plancherel, and breaks the quater
 | $\tilde\Upsilon_\Phi=2i\nu_t'\tilde\Pi_{\mathrm{id},-}$, $\tilde\Upsilon_\Phi^{\natural}=2i\nu_t'\tilde\Pi_{\mathrm{id},+}$ | The two massless members |
 | $\int\mathrm{Sc}(f^{*}g)$ | The Hermitian form; preserved by the transform |
 | $\mathrm{Sc}(ff^{\natural})=\sum_\alpha c_\alpha^{2}$ | The quaternionic norm's scalar part; not preserved |
-| $\sum_k\hat c_k^{2}=\sum_nc_nc_{-n}$ | What the transform makes of it; the reflected overlap |
+| $\sum_\imath\hat c_\imath^{2}=\sum_nc_nc_{-n}$ | What the transform makes of it; the reflected overlap |
 | $\langle\tilde\Upsilon_\Phi\rangle_\natural=-\nu_t'^{2}+\nu_{\Phi}^{2}$ | The indefinite form on the symbol; level sets are shells |
 | $\mathrm{Sc}(\tilde\Upsilon_\Phi^{*}\tilde\Upsilon_\Phi)=\nu_t'^{2}+\nu_{\Phi}^{2}$ | The positive form on the symbol; level sets are spheres |
 

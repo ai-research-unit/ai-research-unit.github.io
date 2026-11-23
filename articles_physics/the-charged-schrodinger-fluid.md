@@ -24,12 +24,12 @@ The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\
 $$
 \tilde\Xi^{-1}D_{t'}\tilde\Xi=\partial_{t'}\ln \varrho+i\Bigl(\partial_{t'}\theta_{\mathrm{pha}}-\frac{2\pi \varkappa}{h}\omicron_{\mathrm{pot}}\Bigr),
 \qquad
-\tilde\Xi^{-1}D_k\tilde\Xi=\partial_k\ln \varrho+i\Bigl(\partial_k\theta_{\mathrm{pha}}+\frac{2\pi \varkappa}{h}A_k\Bigr).
+\tilde\Xi^{-1}D_\imath\tilde\Xi=\partial_\imath\ln \varrho+i\Bigl(\partial_\imath\theta_{\mathrm{pha}}+\frac{2\pi \varkappa}{h}A_\imath\Bigr).
 $$
 
-The addition is a central imaginary number, so it has one place to go. The logarithmic derivative splits into a real scalar, a central imaginary, a Hermitian element and a real vector; $-\frac{2\pi i\varkappa}{h}\omicron_{\mathrm{pot}}$ and $+\frac{2\pi i\varkappa}{h}A_k$ are central imaginary, so they join the second part and no other. On a central field there is no third and no fourth part to receive anything; on a general field there is, and they still receive nothing, because the addition's type does not depend on the field.
+The addition is a central imaginary number, so it has one place to go. The logarithmic derivative splits into a real scalar, a central imaginary, a Hermitian element and a real vector; $-\frac{2\pi i\varkappa}{h}\omicron_{\mathrm{pot}}$ and $+\frac{2\pi i\varkappa}{h}A_\imath$ are central imaginary, so they join the second part and no other. On a central field there is no third and no fourth part to receive anything; on a general field there is, and they still receive nothing, because the addition's type does not depend on the field.
 
-Three quantities are therefore invariant before any calculation. The scale is: $\partial_k\ln \varrho$ is untouched. The density is, because it is a function of the scale. The quantum potential is, because it is built from $\varrho$ and its ordinary Laplacian, and the gradient the connection could shift is the phase's and not the scale's. The statement is exact and it is the article's sharpest one: *the field cannot make a quantum fluid denser or its quantum pressure stronger; it can only turn the phase.*
+Three quantities are therefore invariant before any calculation. The scale is: $\partial_\imath\ln \varrho$ is untouched. The density is, because it is a function of the scale. The quantum potential is, because it is built from $\varrho$ and its ordinary Laplacian, and the gradient the connection could shift is the phase's and not the scale's. The statement is exact and it is the article's sharpest one: *the field cannot make a quantum fluid denser or its quantum pressure stronger; it can only turn the phase.*
 
 The two gauge-invariant combinations are the kinetic momentum and the kinetic energy.
 
@@ -87,7 +87,7 @@ $$
 =-\varkappa\bigl(\vec E+\vec v\times\vec B\bigr)_{i}-\partial_{i}Q .
 $$
 
-*Proof.* Differentiating the Hamilton–Jacobi equation in space gives $\partial_{t'}\partial_{i}S=-(v_{j}\partial_{i}\pi_{j})+\varkappa\partial_{i}\omicron_{\mathrm{pot}}-\partial_{i}Q$; adding $\varkappa\partial_{t'}A_{i}$ and $v_{j}\partial_{j}\pi_{i}$, and using $\partial_{j}\pi_{i}-\partial_{i}\pi_{j}=-\varkappa\varepsilon_{ijk}B_{k}$ and $\partial_{i}\omicron_{\mathrm{pot}}+\partial_{t'}A_{i}=-E_{i}$, gives the display. The identity was also checked component by component with a symbolic algebra system, on an arbitrary $S$, $\vec A$ and $\omicron_{\mathrm{pot}}$.
+*Proof.* Differentiating the Hamilton–Jacobi equation in space gives $\partial_{t'}\partial_{i}S=-(v_{j}\partial_{i}\pi_{j})+\varkappa\partial_{i}\omicron_{\mathrm{pot}}-\partial_{i}Q$; adding $\varkappa\partial_{t'}A_{i}$ and $v_{j}\partial_{j}\pi_{i}$, and using $\partial_{j}\pi_{i}-\partial_{i}\pi_{j}=-\varkappa\varepsilon_{\imath\jmath\ell}B_{\imath}$ and $\partial_{i}\omicron_{\mathrm{pot}}+\partial_{t'}A_{i}=-E_{i}$, gives the display. The identity was also checked component by component with a symbolic algebra system, on an arbitrary $S$, $\vec A$ and $\omicron_{\mathrm{pot}}$.
 
 With $\varkappa$ the negative of the electric charge, this is the standard force. Writing $q=-\varkappa$, the right-hand side is $q(\vec E+\vec v\times\vec B)-\vec\nabla_\Phi Q$: the Lorentz force of a charge $q$ plus the quantum force. The two are separate objects and neither modifies the other. The Lorentz force is odd in the coupling and vanishes at $\varkappa=0$; the quantum force does not contain the coupling at all, and it is the whole of the free article's Euler equation.
 

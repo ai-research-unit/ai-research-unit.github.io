@@ -161,7 +161,7 @@ The chart carries the action's reading of the covariant square and cannot carry 
 | Symbol | Meaning |
 |---|---|
 | $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}e_t$ | The word on a central field |
-| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The slot's coefficient; $c_t$ real, $c_k$ imaginary |
+| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The slot's coefficient; $c_t$ real, $c_\imath$ imaginary |
 | $\kappa^{\mathrm{kin}}_{\imath}=\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϛ}{h}A_{\imath}$ | The mechanical phase rate; the connection's only address |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath}(\varrho e^{i\theta_{\mathrm{pha}}}e_t)=e^{i\theta_{\mathrm{pha}}}\bigl(\partial_{\imath} \varrho+i \varrho\kappa^{\mathrm{kin}}_{\imath}\bigr)e_t$ | The exact factorisation of the covariant derivative |
 | $\prod_x \varrho\,\mathrm{d}\varrho\,\mathrm{d}\theta_{\mathrm{pha}}$ | The polar measure; unchanged by a gauge transformation |

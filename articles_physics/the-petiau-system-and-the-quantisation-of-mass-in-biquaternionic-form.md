@@ -228,7 +228,7 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$, $\dim_{\mathbb{R}}=8$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ cyclic |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ cyclic |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian, $\partial^2/\partial R_t^2+\Delta_\Phi$ (series convention) |

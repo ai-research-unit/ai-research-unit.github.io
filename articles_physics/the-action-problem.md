@@ -107,15 +107,15 @@ There is a sharp way to put the two halves together: **the action problem is a p
 The perfect fluid makes the point concretely, with no free parameters. Take the frame
 
 $$
-\mathfrak U_0=-\sqrt{\rho}\,e_t,\qquad \mathfrak U_k=\sqrt{p}\,\vec e_k ,
+\mathfrak U_0=-\sqrt{\rho}\,e_t,\qquad \mathfrak U_\imath=\sqrt{p}\,\vec e_\imath ,
 $$
 
 with the time leg **informational** — it is Hermitian, in $\mathbb{B}_{\Psi}$ — and the three spatial legs material. The natural form reads
 
 $$
 \langle\mathfrak U_0,\mathfrak U_0\rangle_{\natural}=\rho,\qquad
-\langle\mathfrak U_k,\mathfrak U_k\rangle_{\natural}=p,\qquad
-\langle\mathfrak U_0,\mathfrak U_k\rangle_{\natural}=0,
+\langle\mathfrak U_\imath,\mathfrak U_\imath\rangle_{\natural}=p,\qquad
+\langle\mathfrak U_0,\mathfrak U_\imath\rangle_{\natural}=0,
 $$
 
 so the Gram matrix is exactly $\mathrm{diag}(\rho,p,p,p)$: the two functions are the squared leg norms and are independent, and the traceless part lives in the *shape* of the frame rather than in a trace. The sector assignment is forced, not chosen: a material time leg $\sqrt\rho\,e_t$ has norm $-\rho$, which is negative energy, and the sign is restored only by the informational leg — the same factor of $i$ that carries a projector out of $\mathbb{B}_{\Psi}$ into a real null leg, run in reverse. Under a boost rotor the legs transform by congruence and the tensor goes to its standard form; at $\rho=1.7$, $p=0.4$ and rapidity $0.9$ the reconstructed $T$ agrees with $(\rho+p)u_{\imath} u_{\jmath}+p\,\eta_{\imath\jmath}$ to $9\times10^{-16}$.

@@ -236,8 +236,8 @@ The corpus recomputes it: the quaternion-valued scalar admits $\tilde Q\mapsto g
 | the identity | $L(\mathfrak{k})\oplus R(\mathfrak{k})$ | $\mathfrak{so}(4)$ |
 | the cover | $\ker\rho$ | $\{\pm(\mathrm{I}_4,\mathrm{I}_4)\}$, so two-to-one |
 | the spins | $\tfrac12\otimes\tfrac12$ | $0\oplus1$ |
-| the self-dual side | $L(\vec e_k)$ against $\omega_k$ | $-\omega_k\in\Lambda^2_+$ |
-| the anti-self-dual side | $R(\vec e_k)$ against $\tau_k$ | $-\tau_k\in\Lambda^2_-$ |
+| the self-dual side | $L(\vec e_\imath)$ against $\omega_\imath$ | $-\omega_\imath\in\Lambda^2_+$ |
+| the anti-self-dual side | $R(\vec e_\imath)$ against $\tau_\imath$ | $-\tau_\imath\in\Lambda^2_-$ |
 | the mirror | the brackets | $+2$ against $-2$ |
 | the tie | $g_R=g_L^{*}$ instead of $g_R=g_L$ | $\mathrm{SL}(2,\mathbb{C})$, hence the Lorentz group |
 | the modules | carrier against tensor factors | $8$ real against $16$ complex |
@@ -298,7 +298,7 @@ Not observed is not excluded. The fourth role is bounded from below only, and th
 - [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The frame that uses this group, where each factor comes from, and the ceiling that forces the tensor product.
 - [The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock](the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html). $\mathrm{SU}(2)\times\mathrm{U}(1)$ against the algebra's $\mathrm{U}(2)$, and the selection rule the quotient imposes.
 - [Electroweak Theory in the Biquaternion Framework: The $\mathrm{U}(2)$ Reach and the Chiral Wall](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html). The wall of *One Group, Two Modules* at its four levels, and the ledger of what each level would need.
-- [The Lie Algebra $\mathfrak{so}(4)$](../articles_maths/the-lie-algebra-skew-4-and-so-4.html). $\mathfrak{so}(4)=\Lambda^{2}_{+}\oplus\Lambda^{2}_{-}$, the self-dual basis, and the identification of $L(\vec e_k)$ with $-\omega_k$ and $R(\vec e_k)$ with $-\tau_k$.
+- [The Lie Algebra $\mathfrak{so}(4)$](../articles_maths/the-lie-algebra-skew-4-and-so-4.html). $\mathfrak{so}(4)=\Lambda^{2}_{+}\oplus\Lambda^{2}_{-}$, the self-dual basis, and the identification of $L(\vec e_\imath)$ with $-\omega_\imath$ and $R(\vec e_\imath)$ with $-\tau_\imath$.
 - [The Spin Group via $4\times4$ Real Matrices](../articles_maths/the-spin-group-via-4x4-real-matrices.html). The display $\rho$ computed, and the warning that the group is a three-sphere and not a set of matrices.
 - [The Clebsch–Gordan Decomposition of the Biquaternion Algebra](../articles_maths/the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html). $s=\tfrac12$ per factor and $0\oplus1$ for the pair.
 - [The Hermitian Pair of Operators Acting on Two Sides](../articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides.html). The tie $R_{\tilde Q^{*}}$ and the twofold cover of the Lorentz group.

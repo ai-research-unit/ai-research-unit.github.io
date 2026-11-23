@@ -98,7 +98,7 @@ $$
 \boxed{\;\vec s_{\Psi} \;\longmapsto\; \vec s_{\Psi,2} = (1-p)\,\vec s_{\Psi} + p\,(\vec u\cdot\vec s_{\Psi})\,\vec u\;}.
 $$
 
-The component of $\vec s_{\Psi}$ along $\vec u$ is untouched; the transverse component is multiplied by $1-p$. In the eigenbasis of $\vec u$, this is exactly the statement that the diagonal entries of the density matrix — the **populations** — are preserved, while the off-diagonal entries — the **coherences** — are scaled by $1-p$. Equivalently, the coherence is the pair of transverse Bloch components, which are the expectation values $2\langle i\vec e_k,\tilde{Ϛ}_{\Psi}\rangle_{*}$ of the two scalar-free observables $i\vec e_k$ with $\vec e_k\perp\vec u$.
+The component of $\vec s_{\Psi}$ along $\vec u$ is untouched; the transverse component is multiplied by $1-p$. In the eigenbasis of $\vec u$, this is exactly the statement that the diagonal entries of the density matrix — the **populations** — are preserved, while the off-diagonal entries — the **coherences** — are scaled by $1-p$. Equivalently, the coherence is the pair of transverse Bloch components, which are the expectation values $2\langle i\vec e_\imath,\tilde{Ϛ}_{\Psi}\rangle_{*}$ of the two scalar-free observables $i\vec e_\imath$ with $\vec e_\imath\perp\vec u$.
 
 ### Composition, and the Failure of Idempotency
 
@@ -325,7 +325,7 @@ One many-qubit case belongs here because a source overstates it. The singlet $\l
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states and observables) |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators of reversible evolution) |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi})$ | State with Bloch vector $\vec s_{\Psi}$, $|\vec s_{\Psi}|\leq1$ |
 | $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pointer idempotents (pure states along $\vec u$) |

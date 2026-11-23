@@ -12,7 +12,7 @@ The biquaternion content of the Klein–Gordon path integral is a statement abou
 
 The article is organised as follows. The field configuration space and the action are set up first, and the equation of motion is derived from the action by variation. The generating functional is defined and the free Gaussian is evaluated, first on a finite lattice where it is an ordinary finite-dimensional integral and can be checked exactly, and then in the formal continuum limit. The stationary-phase expansion and the classical field are treated next. The Wick rotation and Euclidean functional are then discussed, with the positivity question. A closing section states the biquaternion interpretation, and open questions are recorded.
 
-Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, central $i$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$; $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_{k\in\{x,y,z\}} \vec e_k\partial/\partial R_k$; and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial {r'_t}^2$. The scalar field is $\tilde{Ξ}=\xi\,e_t$ with $\xi$ complex, and the mass enters as the length $\nu_m=\frac{mc}{h}$. The analytic parts are written with $c$ explicit, as the companion articles are.
+Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\imath^2=-e_t$, central $i$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$; $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}} \vec e_\imath\partial/\partial R_\imath$; and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial {r'_t}^2$. The scalar field is $\tilde{Ξ}=\xi\,e_t$ with $\xi$ complex, and the mass enters as the length $\nu_m=\frac{mc}{h}$. The analytic parts are written with $c$ explicit, as the companion articles are.
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the scalar equation, its mass-term sign, and the central scalar operator.
 - Companion article *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*, for the free two-point function, the four contour prescriptions, and the Euclidean kernel.
@@ -272,7 +272,7 @@ The Wick rotation is the sector relabelling. The passage to imaginary time is th
 
 1. **The measure.** *Open for the author.* The functional measure $\mathcal{D}\tilde{Ξ}$ is defined here as the formal limit of the lattice measure, and the lattice measure is Lebesgue measure on the central-valued field at each site. Whether the framework supplies a canonical measure from its own structure — from the plain form, or from the biquaternion norm, or from the real structure $\flat$ — rather than inheriting the Lebesgue measure, is not settled here.
 
-2. **Interactions.** The article has treated only the free Gaussian and the one-loop expansion about a source. A quartic interaction $\lambda|\xi|^4$ is central and preserves the centrality of every object; whether the framework's trace form suggests a preferred normalisation of the coupling, or a preferred class of interactions, is not considered.
+2. **Interactions.** The article has treated only the free Gaussian and the one-loop expansion about a source. A quartic interaction $\varpi_{\mathrm{cpl}}|\xi|^4$ is central and preserves the centrality of every object; whether the framework's trace form suggests a preferred normalisation of the coupling, or a preferred class of interactions, is not considered.
 
 3. **The determinant and its phase.** The free determinant $[\det(\Box_\Phi-4\pi^{2}\nu_m^{2})]^{-1/2}$ is central, but its phase requires a regularisation and a choice of branch. Whether the framework's complex structure fixes the branch, or whether the standard $i\epsilon$ prescription is the only input, is not resolved.
 
@@ -308,7 +308,7 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; the scalar field's value space |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |

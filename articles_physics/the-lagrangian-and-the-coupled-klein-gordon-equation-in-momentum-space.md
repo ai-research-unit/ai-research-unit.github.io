@@ -26,7 +26,7 @@ $$
 \tilde\Upsilon_\Phi=2\pi i\nu_t'e_t+2\pi\vec\nu_\Phi .
 $$
 
-The bookkeeping is the main article's and is quoted once. With $c_{\imath}=\frac{2\pi i\,ϙ}{h}A_{\imath}$ the material connection gives $c_t=-\frac{2\pi ϙa_t'}{h}$ real and $c_k=i\frac{2\pi ϙ}{h}A_k$ imaginary, and the free slot symbols are $\sigma_t=-2\pi\nu_t'$ real and $\sigma_k=i\kappa_k$ imaginary. The temporal slot is the only one where the two readings of the covariant square differ, so the article states everything in that slot and adds the spatial slots only where they change a conclusion.
+The bookkeeping is the main article's and is quoted once. With $c_{\imath}=\frac{2\pi i\,ϙ}{h}A_{\imath}$ the material connection gives $c_t=-\frac{2\pi ϙa_t'}{h}$ real and $c_\imath=i\frac{2\pi ϙ}{h}A_\imath$ imaginary, and the free slot symbols are $\sigma_t=-2\pi\nu_t'$ real and $\sigma_\imath=i\kappa_\imath$ imaginary. The temporal slot is the only one where the two readings of the covariant square differ, so the article states everything in that slot and adds the spatial slots only where they change a conclusion.
 
 The denials are the main article's, restated once. The transform does not exchange sectors; a symbol exists only at constant coefficients; and a Legendre transform between a field and its conjugate momentum is not a Fourier transform, so the parent's four canonical momenta are not wave numbers and no display below reads them as one.
 
@@ -34,7 +34,7 @@ The denials are the main article's, restated once. The transform does not exchan
 
 The constant-coefficient licence bounds the article. The Euler–Lagrange operator of §*The Action in Momentum Space: The Action's Operator* is read at constant $c_t$; a varying potential makes the functional's variation a differential operator of higher order in the coefficient and the identification with a symbol fails there, as the main article's ladder records.
 
-**The temporal slot is the only one where the two readings differ.** In a spatial slot $\bar c_k=-c_k$, the cross term vanishes identically, and the action, the squared form and the paired form are one operator. A vector potential therefore gives no ordering ambiguity, and the article does not manufacture one.
+**The temporal slot is the only one where the two readings differ.** In a spatial slot $\bar c_\imath=-c_\imath$, the cross term vanishes identically, and the action, the squared form and the paired form are one operator. A vector potential therefore gives no ordering ambiguity, and the article does not manufacture one.
 
 The self-adjointness argument is not used. Both readings are self-adjoint in the corpus's writing, so the standard criterion that a real action's operator be self-adjoint does not separate them. The article derives the separation from the cross term instead, and says so because the weaker argument is tempting.
 
@@ -95,7 +95,7 @@ So the variational principle's role here is narrower than it looks. It supplies 
 
 The pairing. Settled once and inherited. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the kinetic term here is its modulus squared. The alternative was rejected in the element article and the rejection is unchanged by the connection.
 
-The type of the coefficient. The symbol is real only in the corpus's writing, and the difference is the whole content. Applying the parity lemma of the main article, the squared symbol $\sum_{\imath}(\sigma_{\imath}+c_{\imath})^{2}$ is real in the temporal slot when $c_t$ is real — that is, when $A_t$ is imaginary — and real in a spatial slot when $c_k$ is imaginary — that is, when $A_k$ is real. Both conditions together are $\tilde A_\Phi^{*}=-\tilde A_\Phi$. A modulus squared is real for every $c$; a symbol is real for the anti-Hermitian $c$ and for no other.
+The type of the coefficient. The symbol is real only in the corpus's writing, and the difference is the whole content. Applying the parity lemma of the main article, the squared symbol $\sum_{\imath}(\sigma_{\imath}+c_{\imath})^{2}$ is real in the temporal slot when $c_t$ is real — that is, when $A_t$ is imaginary — and real in a spatial slot when $c_\imath$ is imaginary — that is, when $A_\imath$ is real. Both conditions together are $\tilde A_\Phi^{*}=-\tilde A_\Phi$. A modulus squared is real for every $c$; a symbol is real for the anti-Hermitian $c$ and for no other.
 
 The selection rule. Not examined here. A connection is not a potential: it enters the gradient, not the potential's slot, so there is no admissible sector to exclude. What the connection does do to the symbol is the next subsection's question.
 
@@ -211,8 +211,8 @@ Both readings are real in the corpus's writing, so the reality of the symbol can
 | --- | --- |
 | $S_{\mathrm{c}}$ | The parent's slot-summed matter action |
 | $\delta S_{\mathrm{c}}/\delta\tilde\Xi^{*}$ | The Euler–Lagrange operator; $-\bigl(\Box_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2}\bigr)\tilde\Xi$ |
-| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The per-slot connection coefficient; $c_t=-\frac{2\pi ϙa_t'}{h}$ real, $c_k$ imaginary |
-| $\sigma_{\imath}$ | The free slot symbol; $\sigma_t=-2\pi\nu_t'$ real, $\sigma_k=i\kappa_k$ imaginary |
+| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The per-slot connection coefficient; $c_t=-\frac{2\pi ϙa_t'}{h}$ real, $c_\imath$ imaginary |
+| $\sigma_{\imath}$ | The free slot symbol; $\sigma_t=-2\pi\nu_t'$ real, $\sigma_\imath=i\kappa_\imath$ imaginary |
 | $(\partial_{R_t}+c_t)^{2}$ | The squared reading; one charge twice |
 | $(\partial_{R_t}-\bar c_t)(\partial_{R_t}+c_t)$ | The paired reading; the two opposite charges once each |
 | $2c_t(\partial_{R_t}+c_t)$ | Their difference as operators; symbol $2c_t(c_t-2\pi\nu_t')=2.0522$ |

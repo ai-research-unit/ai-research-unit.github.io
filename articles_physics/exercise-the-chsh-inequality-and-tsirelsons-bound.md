@@ -25,7 +25,7 @@ First, **the framework reproduces both bounds; it does not explain why nature st
 
 Second, the sharp bound is obtained **after** the identification $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, by the spectral norm of that matrix algebra. The framework's own positive-definite quadratic form, the Euclidean form $\mathrm{Sc}(x x^{*})$ of the companion articles, is (up to the trace normalisation) the Frobenius norm of the matrix image, and it yields only the trivial bound $4$. This is a genuine gap in the framework's internal resources, and it is labelled as such in the biquaternion solution: the framework does not contain, by itself, the norm that gives Tsirelson's bound. What it contains is the algebra whose matrix representation carries that norm.
 
-The conventions are those of the companion articles: the algebra, the invertibles, the sectors and the trace are those of *Algebra and Element Conventions* and *Norm and Pairing Conventions*, and none is restated here. On the tensor product the scalar part factorises, $\mathrm{Sc}(x\otimes y)=\mathrm{Sc}(x)\cdot\mathrm{Sc}(y)$, with $\mathrm{Sc}(e_t)=1$ and $\mathrm{Sc}(\vec e_k)=0$; the trace of the $4\times4$ image, where it is used, is $4\,\mathrm{Sc}$. The isomorphism $\mathsf{M}_2$ is the one fixed by *Quantum Physics in Biquaternionic Form* (*Matrix Representations Conventions*, §*The $2\times2$ Pauli Representation*), whose image of $i\vec e_k$ is $\sigma_k$; the three Pauli matrices are written $\boldsymbol{\sigma}=(\sigma_1,\sigma_2,\sigma_3)$.
+The conventions are those of the companion articles: the algebra, the invertibles, the sectors and the trace are those of *Algebra and Element Conventions* and *Norm and Pairing Conventions*, and none is restated here. On the tensor product the scalar part factorises, $\mathrm{Sc}(x\otimes y)=\mathrm{Sc}(x)\cdot\mathrm{Sc}(y)$, with $\mathrm{Sc}(e_t)=1$ and $\mathrm{Sc}(\vec e_\imath)=0$; the trace of the $4\times4$ image, where it is used, is $4\,\mathrm{Sc}$. The isomorphism $\mathsf{M}_2$ is the one fixed by *Quantum Physics in Biquaternionic Form* (*Matrix Representations Conventions*, §*The $2\times2$ Pauli Representation*), whose image of $i\vec e_\imath$ is $\sigma_\imath$; the three Pauli matrices are written $\boldsymbol{\sigma}=(\sigma_1,\sigma_2,\sigma_3)$.
 
 ## The Exercise
 
@@ -79,35 +79,35 @@ so that $S=\langle S\rangle$. Every property of $S$ below is a property of the s
 Equivalently, one may expand in the Pauli-string basis. With the correlation matrix
 
 $$
-T_{jk} = \langle \sigma_j\otimes\sigma_k\rangle = \mathrm{Tr}\!\left(\rho\,\sigma_j\otimes\sigma_k\right),
+T_{j\imath} = \langle \sigma_j\otimes\sigma_\imath\rangle = \mathrm{Tr}\!\left(\rho\,\sigma_j\otimes\sigma_\imath\right),
 $$
 
 the correlation function is the bilinear form $E(\vec a_1,\vec b_1)=\vec a_1^T T\,\vec b_1$, and the CHSH combination is a quadratic expression in the four directions.
 
 ### Step 2: The classical bound
 
-A **local hidden-variable model** assigns to each measurement a pre-existing outcome that depends on the measurement direction and on a shared variable $\lambda$ distributed with density $p(\lambda)$:
+A **local hidden-variable model** assigns to each measurement a pre-existing outcome that depends on the measurement direction and on a shared variable $\upsilon_{\mathrm{hdd}}$ distributed with density $p(\upsilon_{\mathrm{hdd}})$:
 
 $$
-A_\lambda(\vec a_1),\; A_\lambda(\vec a_2),\; B_\lambda(\vec b_1),\; B_\lambda(\vec b_2) \in \{\pm1\},
+A_{\upsilon_{\mathrm{hdd}}}(\vec a_1),\; A_{\upsilon_{\mathrm{hdd}}}(\vec a_2),\; B_{\upsilon_{\mathrm{hdd}}}(\vec b_1),\; B_{\upsilon_{\mathrm{hdd}}}(\vec b_2) \in \{\pm1\},
 \qquad
-E(\vec a_1,\vec b_1) = \int d\lambda\,p(\lambda)\,A_\lambda(\vec a_1)B_\lambda(\vec b_1).
+E(\vec a_1,\vec b_1) = \int d\upsilon_{\mathrm{hdd}}\,p(\upsilon_{\mathrm{hdd}})\,A_{\upsilon_{\mathrm{hdd}}}(\vec a_1)B_{\upsilon_{\mathrm{hdd}}}(\vec b_1).
 $$
 
-The outcomes for Alice depend only on $\vec a_1$ and $\lambda$; those for Bob only on $\vec b_1$ and $\lambda$. Substituting into $S$ and grouping by party,
+The outcomes for Alice depend only on $\vec a_1$ and $\upsilon_{\mathrm{hdd}}$; those for Bob only on $\vec b_1$ and $\upsilon_{\mathrm{hdd}}$. Substituting into $S$ and grouping by party,
 
 $$
-S = \int d\lambda\,p(\lambda)\Bigl[\,A_\lambda(\vec a_1)\bigl(B_\lambda(\vec b_1)-B_\lambda(\vec b_2)\bigr)
-+ A_\lambda(\vec a_2)\bigl(B_\lambda(\vec b_1)+B_\lambda(\vec b_2)\bigr)\Bigr].
+S = \int d\upsilon_{\mathrm{hdd}}\,p(\upsilon_{\mathrm{hdd}})\Bigl[\,A_{\upsilon_{\mathrm{hdd}}}(\vec a_1)\bigl(B_{\upsilon_{\mathrm{hdd}}}(\vec b_1)-B_{\upsilon_{\mathrm{hdd}}}(\vec b_2)\bigr)
++ A_{\upsilon_{\mathrm{hdd}}}(\vec a_2)\bigl(B_{\upsilon_{\mathrm{hdd}}}(\vec b_1)+B_{\upsilon_{\mathrm{hdd}}}(\vec b_2)\bigr)\Bigr].
 $$
 
-Fix $\lambda$. The two signs $B_\lambda(\vec b_1)$ and $B_\lambda(\vec b_2)$ are each $\pm1$, so exactly one of the two combinations $B_\lambda(\vec b_1)-B_\lambda(\vec b_2)$ and $B_\lambda(\vec b_1)+B_\lambda(\vec b_2)$ vanishes and the other is $\pm2$. Hence the bracket is $\pm2$ in absolute value for every $\lambda$, and
+Fix $\upsilon_{\mathrm{hdd}}$. The two signs $B_{\upsilon_{\mathrm{hdd}}}(\vec b_1)$ and $B_{\upsilon_{\mathrm{hdd}}}(\vec b_2)$ are each $\pm1$, so exactly one of the two combinations $B_{\upsilon_{\mathrm{hdd}}}(\vec b_1)-B_{\upsilon_{\mathrm{hdd}}}(\vec b_2)$ and $B_{\upsilon_{\mathrm{hdd}}}(\vec b_1)+B_{\upsilon_{\mathrm{hdd}}}(\vec b_2)$ vanishes and the other is $\pm2$. Hence the bracket is $\pm2$ in absolute value for every $\upsilon_{\mathrm{hdd}}$, and
 
 $$
-\boxed{\;|S| \;\le\; \int d\lambda\,p(\lambda)\cdot 2 \;=\; 2\;} .
+\boxed{\;|S| \;\le\; \int d\upsilon_{\mathrm{hdd}}\,p(\upsilon_{\mathrm{hdd}})\cdot 2 \;=\; 2\;} .
 $$
 
-This is the classical (CHSH) bound. It is tight: the deterministic model $A_\lambda(\vec a_1)=A_\lambda(\vec a_2)=+1$, $B_\lambda(\vec b_1)=+1$, $B_\lambda(\vec b_2)=-1$ gives $S=2$.
+This is the classical (CHSH) bound. It is tight: the deterministic model $A_{\upsilon_{\mathrm{hdd}}}(\vec a_1)=A_{\upsilon_{\mathrm{hdd}}}(\vec a_2)=+1$, $B_{\upsilon_{\mathrm{hdd}}}(\vec b_1)=+1$, $B_{\upsilon_{\mathrm{hdd}}}(\vec b_2)=-1$ gives $S=2$.
 
 ### Step 3: The quantum correlators of the Bell states
 
@@ -171,14 +171,14 @@ realize this configuration, and direct substitution gives $S_{\mathrm{sp}^-}=-2\
 
 Now consider the other three Bell states. They are related to the singlet by **local $*$-unitary operations**: the parent article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* shows that conjugating $\tilde\Pi_{\mathrm{id},Ξ^+}$ by the unit real quaternions $e_t,\vec e_x,\vec e_y,\vec e_z$ on the first factor permutes the four Bell idempotents. In Hilbert-space terms the four Bell states lie in a single local-$*$-unitary orbit. The CHSH maximum is invariant under local unitaries, because a local $*$-unitary simply maps the set of measurement directions onto itself; the maximum for each Bell state is therefore also $2\sqrt{2}$.
 
-The explicit optimal configuration for a non-singlet Bell state is worth recording. Its correlation matrix $T=-\mathrm{diag}(\epsilon)$ has diagonal entries $T_{jj}=-\epsilon_j$, two of which are equal because $\epsilon_1\epsilon_2\epsilon_3=+1$ guarantees at least two equal signs. Choose the plane spanned by the two axes $j,k$ with $\epsilon_j=\epsilon_k$, put $\vec a_1,\vec a_2$ along those two axes, and put $\vec b_1,\vec b_2$ at $\pm45^\circ$ within that plane,
+The explicit optimal configuration for a non-singlet Bell state is worth recording. Its correlation matrix $T=-\mathrm{diag}(\epsilon)$ has diagonal entries $T_{jj}=-\epsilon_j$, two of which are equal because $\epsilon_1\epsilon_2\epsilon_3=+1$ guarantees at least two equal signs. Choose the plane spanned by the two axes $j,k$ with $\epsilon_j=\epsilon_\imath$, put $\vec a_1,\vec a_2$ along those two axes, and put $\vec b_1,\vec b_2$ at $\pm45^\circ$ within that plane,
 
 $$
-\vec a_1=\vec u_j,\quad \vec a_2=\vec u_k,\quad
-\vec b_1=\frac{\vec u_j+\vec u_k}{\sqrt{2}},\quad \vec b_2=\frac{-\vec u_j+\vec u_k}{\sqrt{2}} .
+\vec a_1=\vec u_j,\quad \vec a_2=\vec u_\imath,\quad
+\vec b_1=\frac{\vec u_j+\vec u_\imath}{\sqrt{2}},\quad \vec b_2=\frac{-\vec u_j+\vec u_\imath}{\sqrt{2}} .
 $$
 
-Then $S_\epsilon = \sqrt{2}\,(T_{jj}+T_{kk}) = -\sqrt{2}\,(\epsilon_j+\epsilon_k) = \mp 2\sqrt{2}$, so $|S_\epsilon|=2\sqrt{2}$. For example, $\lvertΞ^{+}\rangle$ with $\epsilon=(-1,+1,-1)$ uses the plane of $\vec u_x$ and $\vec u_z$ and gives $S=+2\sqrt{2}$; $\lvertΞ^{-}\rangle$ with $\epsilon=(+1,-1,-1)$ uses $\vec u_y,\vec u_z$; $\lvert\tilde{Ξ}^+\rangle$ with $\epsilon=(-1,-1,+1)$ uses $\vec u_x,\vec u_y$. Thus **all four Bell states attain Tsirelson's bound**.
+Then $S_\epsilon = \sqrt{2}\,(T_{jj}+T_{\imath\imath}) = -\sqrt{2}\,(\epsilon_j+\epsilon_\imath) = \mp 2\sqrt{2}$, so $|S_\epsilon|=2\sqrt{2}$. For example, $\lvertΞ^{+}\rangle$ with $\epsilon=(-1,+1,-1)$ uses the plane of $\vec u_x$ and $\vec u_z$ and gives $S=+2\sqrt{2}$; $\lvertΞ^{-}\rangle$ with $\epsilon=(+1,-1,-1)$ uses $\vec u_y,\vec u_z$; $\lvert\tilde{Ξ}^+\rangle$ with $\epsilon=(-1,-1,+1)$ uses $\vec u_x,\vec u_y$. Thus **all four Bell states attain Tsirelson's bound**.
 
 ### Step 5: Tsirelson's bound
 
@@ -256,7 +256,7 @@ $$
 + (i\vec a_2)\otimes(i\vec b_1) + (i\vec a_2)\otimes(i\vec b_2),
 $$
 
-a single Hermitian element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$. The glyph carries no tilde: the tilde marks an element of $\mathbb{B}$ read as a four-vector, with its scalar part beside its vector part, and $\mathcal{S}$ is an element of the tensor square, with no $e_t\otimes e_t$ term. Because the isomorphism $\vec e_k\mapsto-i\sigma_k$ carries $i\vec a_1$ to $\vec a_1\cdot\boldsymbol{\sigma}$ and respects the tensor product, it carries $\mathcal{S}$ to the Bell operator $S$ of the standard formulation. The CHSH combination is therefore the Born pairing of the state with one element of the algebra,
+a single Hermitian element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$. The glyph carries no tilde: the tilde marks an element of $\mathbb{B}$ read as a four-vector, with its scalar part beside its vector part, and $\mathcal{S}$ is an element of the tensor square, with no $e_t\otimes e_t$ term. Because the isomorphism $\vec e_\imath\mapsto-i\sigma_\imath$ carries $i\vec a_1$ to $\vec a_1\cdot\boldsymbol{\sigma}$ and respects the tensor product, it carries $\mathcal{S}$ to the Bell operator $S$ of the standard formulation. The CHSH combination is therefore the Born pairing of the state with one element of the algebra,
 
 $$
 S = 4\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id},\epsilon}\,\mathcal{S}\bigr),
@@ -288,7 +288,7 @@ p_\epsilon(\pm,\pm\mid\vec a_1,\vec b_1)
 = 4\,\mathrm{Sc}\Bigl(\tilde\Pi_{\mathrm{id},\epsilon}\,\bigl(\tilde\Pi_{\mathrm{id}}(\pm\vec a_1)\otimes \tilde\Pi_{\mathrm{id}}(\pm\vec b_1)\bigr)\Bigr).
 $$
 
-Expanding the product of idempotents gives $p(+,+)=p(-,-)=\tfrac14\bigl(1+E(\vec a_1,\vec b_1)\bigr)$ and $p(+,-)=p(-,+)=\tfrac14\bigl(1-E(\vec a_1,\vec b_1)\bigr)$ — the cross terms vanish because the single-particle expectations $\langle\sigma_j\otimes I\rangle$ and $\langle I\otimes\sigma_k\rangle$ are zero in every Bell state — and the CHSH combination is the corresponding combination of joint probabilities,
+Expanding the product of idempotents gives $p(+,+)=p(-,-)=\tfrac14\bigl(1+E(\vec a_1,\vec b_1)\bigr)$ and $p(+,-)=p(-,+)=\tfrac14\bigl(1-E(\vec a_1,\vec b_1)\bigr)$ — the cross terms vanish because the single-particle expectations $\langle\sigma_j\otimes I\rangle$ and $\langle I\otimes\sigma_\imath\rangle$ are zero in every Bell state — and the CHSH combination is the corresponding combination of joint probabilities,
 
 $$
 S = \bigl[p(++)+p(--)-p(+-)-p(-+)\bigr]_{\vec a_1,\vec b_1}
@@ -376,7 +376,7 @@ The CHSH combination is confined by three different values, and the gap between 
 
 | Bound | Value of $|S|$ | Assumption |
 |---|---|---|
-| Classical (CHSH) | $2$ | pre-existing local outcomes, shared $\lambda$ |
+| Classical (CHSH) | $2$ | pre-existing local outcomes, shared $\upsilon_{\mathrm{hdd}}$ |
 | Quantum (Tsirelson) | $2\sqrt{2}$ | states in $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, observables with spectrum $\{\pm1\}$ |
 | No-signaling (algebraic) | $4$ | each $E\in[-1,1]$, marginals well defined |
 
@@ -452,16 +452,16 @@ Two limitations are recorded rather than smoothed over. First, the framework rep
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit tensor-product algebra |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables) |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, cyclic products |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$, cyclic products |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $2\,\mathrm{Sc}(\tilde H_\Psi)$ | Trace of the $2\times2$ image of one element |
 | $4\,\mathrm{Sc}(x\otimes y)=4\,\mathrm{Sc}(x)\mathrm{Sc}(y)$ | Trace of the $4\times4$ image on the tensor product |
-| $e_t\mapsto I_2,\ \vec e_k\mapsto-i\sigma_k$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$; image of $i\vec e_k$ is $\sigma_k$ |
+| $e_t\mapsto I_2,\ \vec e_\imath\mapsto-i\sigma_\imath$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$; image of $i\vec e_\imath$ is $\sigma_\imath$ |
 | $\vec a_1,\vec a_2,\vec b_1,\vec b_2$ | Alice's and Bob's measurement directions |
 | $A_1=\vec a_1\cdot\boldsymbol{\sigma},\ A_2=\vec a_2\cdot\boldsymbol{\sigma},\ B_1=\vec b_1\cdot\boldsymbol{\sigma},\ B_2=\vec b_2\cdot\boldsymbol{\sigma}$ | Single-qubit observables, spectrum $\{\pm1\}$ |
 | $\tilde\Pi_{\mathrm{id},\epsilon}=\tfrac14(e_t\otimes e_t+\sum_j\epsilon_j\,\vec e_j\otimes\vec e_j)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
 | $E(\vec a_1,\vec b_1)=4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\epsilon}\,((i\vec a_1)\otimes(i\vec b_1)))=-\sum_j\epsilon_j a_{1j}b_{1j}$ | Correlation function |
-| $T_{jk}=\langle\sigma_j\otimes\sigma_k\rangle=-\epsilon_j\delta_{jk}$ | Correlation matrix of a Bell state |
+| $T_{j\imath}=\langle\sigma_j\otimes\sigma_\imath\rangle=-\epsilon_j\delta_{j\imath}$ | Correlation matrix of a Bell state |
 | $S=E(\vec a_1,\vec b_1)-E(\vec a_1,\vec b_2)+E(\vec a_2,\vec b_1)+E(\vec a_2,\vec b_2)$ | CHSH combination |
 | $S=A_1\otimes B_1-A_1\otimes B_2+A_2\otimes B_1+A_2\otimes B_2$ | Bell operator |
 | $S^2=4I+[A_1,A_2]\otimes[B_1,B_2]=4I-4(u\cdot\boldsymbol{\sigma})\otimes(v\cdot\boldsymbol{\sigma})$ | Operator identity behind the bound |

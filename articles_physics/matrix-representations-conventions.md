@@ -18,7 +18,7 @@ The article assumes the base of *Algebra and Element Conventions*, the products 
 
 **The rule.** No Pauli matrix and no gamma matrix is written in the body of an article. The two formulations are legacy, and they appear in two places only: in a legacy section of an article, and in this article, which states them once so that a legacy section has something to refer to.
 
-**What the rule forbids.** The arrays $\sigma_k$ and $\gamma_{\imath}$. A symbol built on them and used as an object of the algebra, such as $\gamma_5$ or $\sigma_3$. A sentence that reads a biquaternion off such an array by name.
+**What the rule forbids.** The arrays $\sigma_\imath$ and $\gamma_{\imath}$. A symbol built on them and used as an object of the algebra, such as $\gamma_5$ or $\sigma_3$. A sentence that reads a biquaternion off such an array by name.
 
 **What the rule allows.** The names of the frames. The Pauli frame and the gamma frame are bases and not arrays, and the names stay. A reference to a legacy section stays, and so does a historical remark inside one.
 
@@ -70,7 +70,7 @@ The subscript names the copy: $M_4(\mathbb{C})_{\mathbb{B}_L}$ is the left copy,
 
 ### General Matrix Conventions
 
-**A matrix carries no tilde, and the ban is absolute.** The tilde marks an element of the algebra, not its image. The identity is $I_n$, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_{4L}(e_t)=I_4$, and the image of an element is written $\mathsf{M}_2(\tilde Q)$ or $\mathsf{M}_{4L}(\tilde Q)$, with the tilde inside the argument. **An array of biquaternions carries no tilde either.** A matrix whose entries are biquaternions is written $\mathsf{Q}=(\tilde Q_{\lambda\rho})\in\mathbb{B}^{n\times m}$: the tildes sit on the entries, and the array that holds them has none, whatever its size and whatever its entries. The identity matrix never takes a tilde; nor do the regular matrices $\mathsf{M}_{4L}$ and $\mathsf{M}_{4R}$, whose subscript gives the size first and the side of the multiplication second. The same ban covers a matrix of biquaternions and a colour matrix.
+**A matrix carries no tilde, and the ban is absolute.** The tilde marks an element of the algebra, not its image. The identity is $I_n$, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_{4L}(e_t)=I_4$, and the image of an element is written $\mathsf{M}_2(\tilde Q)$ or $\mathsf{M}_{4L}(\tilde Q)$, with the tilde inside the argument. **An array of biquaternions carries no tilde either.** A matrix whose entries are biquaternions is written $\mathsf{Q}=(\tilde Q_{pq})\in\mathbb{B}^{n\times m}$: the tildes sit on the entries, and the array that holds them has none, whatever its size and whatever its entries. The identity matrix never takes a tilde; nor do the regular matrices $\mathsf{M}_{4L}$ and $\mathsf{M}_{4R}$, whose subscript gives the size first and the side of the multiplication second. The same ban covers a matrix of biquaternions and a colour matrix.
 
 **The ban is on the array, not on its argument.** The writings $\mathsf{M}_2(\tilde Q)$ and $\mathsf{M}_{4L}(\tilde Q)$ are correct because the tilde stays inside the argument. A tilde on the array — $\tilde I_n$, $\tilde{\mathsf{M}}_2$, $\tilde{\mathcal Q}$, or $\tilde Q$ where the matrix $\mathsf{M}_2(\tilde Q)$ is meant — is forbidden and is a defect to be rewritten, not a variant to be read: no object is behind it, and the element it would name is already named by the argument.
 
@@ -107,7 +107,7 @@ the developed form of *Algebra and Element Conventions*, §*The Element, the Coo
 | $\vec e_y$ | $\vec e_y$ | $-\vec e_z$ | $-e_t$ | $\vec e_x$ |
 | $\vec e_z$ | $\vec e_z$ | $\vec e_y$ | $-\vec e_x$ | $-e_t$ |
 
-Each of the sixteen products is $\pm$ one of the four basis elements, and the signs are those of the quaternion algebra, $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. No complex number appears in the table, because $i$ is central and is carried by the coefficients. In the compact form,
+Each of the sixteen products is $\pm$ one of the four basis elements, and the signs are those of the quaternion algebra, $\vec e_\imath^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. No complex number appears in the table, because $i$ is central and is carried by the coefficients. In the compact form,
 $$
 e_{\imath} e_{\jmath}=\sum_\rho\varepsilon_{\imath\jmath}^{\ \ \rho}\,e_\rho,\qquad
 \varepsilon_{\imath\jmath}^{\ \ \rho}\in\{0,+1,-1\},
@@ -386,12 +386,12 @@ $$
 \qquad
 \sigma_1\sigma_2\sigma_3=iI_2,
 $$
-so $\sigma_j\sigma_k=-\sigma_k\sigma_j$ for $j\ne k$ and $\{\sigma_j,\sigma_k\}=2\delta_{jk}I_2$. The image of the algebra is their complex linear combination,
+so $\sigma_j\sigma_\imath=-\sigma_\imath\sigma_j$ for $j\ne k$ and $\{\sigma_j,\sigma_\imath\}=2\delta_{j\imath}I_2$. The image of the algebra is their complex linear combination,
 $$
 \mathsf{M}_2(\tilde Q)=Q_tI_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr)
 =\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix},
 $$
-and every $4\times4$ array of this frame is a Kronecker product of these three with $I_2$ or with each other. That is why each $4\times4$ display carries the same $2\times2$ arrays twice, and why the four left matrices below are read as $-i\sigma_k$ repeated in the two diagonal blocks, the four right ones as $-i\sigma_k^{\mathsf T}$ multiplying the four blocks of $I_2$.
+and every $4\times4$ array of this frame is a Kronecker product of these three with $I_2$ or with each other. That is why each $4\times4$ display carries the same $2\times2$ arrays twice, and why the four left matrices below are read as $-i\sigma_\imath$ repeated in the two diagonal blocks, the four right ones as $-i\sigma_\imath^{\mathsf T}$ multiplying the four blocks of $I_2$.
 
 **The left matrix.** In the Peirce frame the left matrix of $\tilde Q$ is the $2\times2$ matrix taken twice,
 $$
@@ -408,7 +408,7 @@ $$
 L_{\mathrm{pau},\vec e_y}=\mathsf{M}_{4L}(\vec e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
 L_{\mathrm{pau},\vec e_z}=\mathsf{M}_{4L}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},
 $$
-each equal to $I_2\otimes\mathsf{M}_2(\vec e_k)$, with $\mathsf{M}_2(\vec e_k)=-i\sigma_k$:
+each equal to $I_2\otimes\mathsf{M}_2(\vec e_\imath)$, with $\mathsf{M}_2(\vec e_\imath)=-i\sigma_\imath$:
 $$
 L_{\mathrm{pau},e_t}=\operatorname{diag}\bigl(I_2,I_2\bigr),\qquad
 L_{\mathrm{pau},\vec e_x}=\operatorname{diag}\bigl(-i\sigma_1,-i\sigma_1\bigr),\qquad
@@ -449,21 +449,21 @@ $$
 
 **The same Pauli matrices, in the other slot.** The right matrices are
 $$
-R_{\mathrm{pau},\vec e_k}=\mathsf{M}_2(\vec e_k)^{\mathsf T}\otimes I_2=\bigl(-i\sigma_k^{\mathsf T}\bigr)\otimes I_2,\qquad
+R_{\mathrm{pau},\vec e_k}=\mathsf{M}_2(\vec e_\imath)^{\mathsf T}\otimes I_2=\bigl(-i\sigma_\imath^{\mathsf T}\bigr)\otimes I_2,\qquad
 R_{\mathrm{pau},e_t}=I_2\otimes I_2=\operatorname{diag}(I_2,I_2),
 $$
-so the entry $\bigl(-i\sigma_k^{\mathsf T}\bigr)_{rc}$ of the $2\times2$ matrix multiplies the block $I_2$ sitting in the $(r,c)$ place. The exchange of the two factors is not a transposition of the array: it moves the Pauli matrix from the diagonal blocks to the block-scaling role, and its blocks become multiples of $I_2$ instead of $I_2$-multiples of the same $2\times2$ array.
+so the entry $\bigl(-i\sigma_\imath^{\mathsf T}\bigr)_{rc}$ of the $2\times2$ matrix multiplies the block $I_2$ sitting in the $(r,c)$ place. The exchange of the two factors is not a transposition of the array: it moves the Pauli matrix from the diagonal blocks to the block-scaling role, and its blocks become multiples of $I_2$ instead of $I_2$-multiples of the same $2\times2$ array.
 
-**The Pauli form of the two families.** With $\mathsf M_2(\vec e_k)=-i\sigma_k$,
+**The Pauli form of the two families.** With $\mathsf M_2(\vec e_\imath)=-i\sigma_\imath$,
 $$
 L_{\mathrm{pau},e_t}=I_2\otimes I_2,\qquad
-L_{\mathrm{pau},\vec e_k}=-i\,I_2\otimes\sigma_k,\qquad
+L_{\mathrm{pau},\vec e_k}=-i\,I_2\otimes\sigma_\imath,\qquad
 R_{\mathrm{pau},e_t}=L_{\mathrm{pau},e_t},\qquad
 R_{\mathrm{pau},\vec e_x}=-i\,\sigma_1\otimes I_2,\quad
 R_{\mathrm{pau},\vec e_y}=+i\,\sigma_2\otimes I_2,\quad
 R_{\mathrm{pau},\vec e_z}=-i\,\sigma_3\otimes I_2 .
 $$
-The plus on $R_{\mathrm{pau},\vec e_y}$ is the transpose: $\sigma_2^{\mathsf T}=-\sigma_2$, while $\sigma_1$ and $\sigma_3$ are symmetric, so the right matrix carries $-i\sigma_k$ on $x$ and $z$ and $+i\sigma_k$ on $y$. The Pauli line is the evaluation of the $L$-based definition, never its replacement.
+The plus on $R_{\mathrm{pau},\vec e_y}$ is the transpose: $\sigma_2^{\mathsf T}=-\sigma_2$, while $\sigma_1$ and $\sigma_3$ are symmetric, so the right matrix carries $-i\sigma_\imath$ on $x$ and $z$ and $+i\sigma_\imath$ on $y$. The Pauli line is the evaluation of the $L$-based definition, never its replacement.
 
 **What the exchange does, case by case.** $\sigma_1$ and $\sigma_2$ have zero diagonal, so $R_{\mathrm{pau},\vec e_x}$ and $R_{\mathrm{pau},\vec e_y}$ have both diagonal blocks zero and their two off-diagonal blocks equal to $-iI_2$. $\sigma_3$ is diagonal, so the two matrices differ only in the order of four diagonal entries,
 $$
@@ -821,8 +821,8 @@ The identity uses $\operatorname{Tr}\mathsf M_2(\tilde Q)=2\,\mathrm{Sc}(\tilde 
 
 **Remark (the two coordinate frames, $\mathbb{B}$ and $\mathbb{B}_{\Phi}$).** The series has exactly two coordinate frames, and they are not to be mixed. Both are fixed, with their coordinate and their interval, in *Frame and Metric Conventions*, and neither is a matrix frame. There is one metric, the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$, the same in both.
 
-- The **$\mathbb{B}$ frame** is the biquaternion space read in its own coordinate, $Q_{\imath}\in\mathbb{C}$; on the material case $Q_t=i q'_t$ and $Q_k=q_k$, so $Q_t^2=-(r'_{t})^2$. Its metric is the unit metric, $(1,1,1,1)$ on the four $Q_{\imath}$, and every basis operator of this display squares to $+I_4$.
-- The **$\mathbb{B}_{\Phi}$ frame** is the material real frame, $x_0=r'_{t}$ and $x_k=q_k$, with $Q_t=i q'_t$. Its metric is the same unit metric; the interval reads $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and the plain weight of the basis operators is $(1,-1,-1,-1)$, which is not a metric.
+- The **$\mathbb{B}$ frame** is the biquaternion space read in its own coordinate, $Q_{\imath}\in\mathbb{C}$; on the material case $Q_t=i q'_t$ and $Q_\imath=q_\imath$, so $Q_t^2=-(r'_{t})^2$. Its metric is the unit metric, $(1,1,1,1)$ on the four $Q_{\imath}$, and every basis operator of this display squares to $+I_4$.
+- The **$\mathbb{B}_{\Phi}$ frame** is the material real frame, $x_0=r'_{t}$ and $x_\imath=q_\imath$, with $Q_t=i q'_t$. Its metric is the same unit metric; the interval reads $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and the plain weight of the basis operators is $(1,-1,-1,-1)$, which is not a metric.
 
 The five frame basis operators are the ones of §*The Clifford Structure* in the $\mathbb{B}_{\Phi}$ frame, and their three spatial squares are $-I_4$ there. In the $\mathbb{B}$ frame the four basis operators that all square to $+I_4$ are
 $$
@@ -841,7 +841,7 @@ so the frame is visible in the formula.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, $Q_{\imath}$ or $x_{\imath}$, not to the array. The fifth is written $\gamma_5$ with no bracket and no frame, because it is the product of the four and not the image of a direction.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\imath^2=-I_4$. The frame belongs to the coordinate, $Q_{\imath}$ or $x_{\imath}$, not to the array. The fifth is written $\gamma_5$ with no bracket and no frame, because it is the product of the four and not the image of a direction.
 
 The gammas are the five frame basis operators of §*The Clifford Structure* written as arrays, and the section writes them in both frames: first the Peirce arrays, which are the ones the gamma literature prints, and then the axis-free ones, which are the display of the body.
 
@@ -864,10 +864,10 @@ $$
 \gamma_3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
 \gamma_5=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
 $$
-They satisfy $\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4$, $(\gamma_k)^2=-I_4$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. In the Pauli form the same five are
+They satisfy $\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4$, $(\gamma_\imath)^2=-I_4$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. In the Pauli form the same five are
 $$
 \gamma_0=\sigma_1\otimes I_2,\qquad
-\gamma_k=i\,\sigma_2\otimes\sigma_k,\qquad
+\gamma_\imath=i\,\sigma_2\otimes\sigma_\imath,\qquad
 \gamma_5=-\sigma_3\otimes I_2 .
 $$
 That form is what a textbook prints, and it is what makes the five recognisable to a reader of the Dirac literature: the first and the last are one Pauli matrix repeated, the three spatial ones are a single Pauli matrix crossed with the triplet.
@@ -895,7 +895,7 @@ with $C_{\Pi}$ the change of §*The Switch Between the Two Frames*, $\det C_{\Pi
 
 **The three uses of the two letters.** $L_a$ and $R_b$ are the left and the right multiplier, an operator. $\mathsf M_4^{L}$ and $\mathsf M_4^{R}$ are the left and the right regular matrix, an array. $\tilde Q_L$, $\tilde Q_R$, $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$ are the chirality of an element, and only the third applies to every element of the algebra.
 
-**The frames do not touch the five.** These matrices are one set, the same in both coordinate frames: $\gamma_0^2=+I_4$ and $\gamma_k^2=-I_4$, with $\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4$. What a frame changes is the coordinate that feeds the derivative and the interval it forms. A formula that mixes the two metrics belongs to neither frame; the matrices carry no such label.
+**The frames do not touch the five.** These matrices are one set, the same in both coordinate frames: $\gamma_0^2=+I_4$ and $\gamma_\imath^2=-I_4$, with $\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4$. What a frame changes is the coordinate that feeds the derivative and the interval it forms. A formula that mixes the two metrics belongs to neither frame; the matrices carry no such label.
 
 **The sixteen products.** The five frame basis operators are five of the sixteen products up to a factor $i$, and their products in increasing grade are the sixteen basis operators:
 
@@ -934,7 +934,7 @@ The only minus sits on $i$ itself, and it fixes the sign of the last four rows o
 $$
 \sigma_{\imath\jmath}=\tfrac14[\gamma_{\imath},\gamma_{\jmath}]=\tfrac12\gamma_{\imath}\gamma_{\jmath}\quad(\imath\neq\jmath),
 $$
-and Clifford reversal, $\mathrm{rev}(\gamma_{\imath_1}\cdots\gamma_{\imath_k})=\gamma_{\imath_k}\cdots\gamma_{\imath_1}$, is quaternion conjugation under the reading.
+and Clifford reversal, $\mathrm{rev}(\gamma_{\imath_1}\cdots\gamma_{\imath_\imath})=\gamma_{\imath_\imath}\cdots\gamma_{\imath_1}$, is quaternion conjugation under the reading.
 
 **The contractions.** In gamma notation a momentum contraction is $\sum_{\imath} \gamma_{\imath} p_{\imath}=i(L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}p_t+L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}p_x+L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}p_y+L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}p_z)$, a derivative contraction is $i\sum_{\imath} \gamma_{\imath}\partial/\partial x_{\imath}$ with $x_0=q'_t$, and the same contraction in the $\mathbb{B}$ coordinate is $\sum_{\imath} \gamma_{\imath}\partial/\partial R_{\imath}$. The two differ by the coordinate, $Q_t=i q'_t$, and not by the matrices: $\partial/\partial x_{\imath}$ and $\partial/\partial R_{\imath}$ already name the frame, so the array needs no label to say which is meant. The axis-free spelling of the same sums is the one with the $\mathrm{axf}$ basis operators, and it is the one the body writes.
 
@@ -943,7 +943,7 @@ Over $\mathbb{R}$ the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\c
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
+(\gamma_\imath)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_{\imath},\gamma_5\}=0,
 $$
@@ -984,7 +984,7 @@ $$
 \mathsf{M}_2(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix}=-i\sigma_2,\qquad
 \mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}=-i\sigma_3,
 $$
-with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices of §*The Two Tensor Factors*. The central scalar is $\mathsf{M}_2(i)=iI_2$, and $\mathbb{C}$-linearity gives the Hermitian units, $\mathsf{M}_2(i\vec e_k)=i\,\mathsf{M}_2(\vec e_k)$. A general element is
+with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices of §*The Two Tensor Factors*. The central scalar is $\mathsf{M}_2(i)=iI_2$, and $\mathbb{C}$-linearity gives the Hermitian units, $\mathsf{M}_2(i\vec e_\imath)=i\,\mathsf{M}_2(\vec e_\imath)$. A general element is
 $$
 \mathsf{M}_2(\tilde Q)=
 \begin{pmatrix}
@@ -995,7 +995,7 @@ Q_t-iQ_z&-iQ_x-Q_y\\
 $$
 which is the $a,b,c,d$ of §*The Two Tensor Factors*, and the reason the Pauli display has that block.
 
-**The assignment is forced, not chosen.** $\vec e_k^2=-e_t$ requires the factor $i$ and $\vec e_x\vec e_y=\vec e_z$ fixes the sign, so neither the factor nor the sign in the three vector images could have been otherwise. A reviewer must not "correct" the assignment by making the three images real, nor by negating all three. *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions* derives both.
+**The assignment is forced, not chosen.** $\vec e_\imath^2=-e_t$ requires the factor $i$ and $\vec e_x\vec e_y=\vec e_z$ fixes the sign, so neither the factor nor the sign in the three vector images could have been otherwise. A reviewer must not "correct" the assignment by making the three images real, nor by negating all three. *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions* derives both.
 
 **No frame is needed.** The isomorphism is a map of algebras and does not depend on a frame of $\mathbb{B}$. The four matrices above are the images of the units, not the entries of a matrix read in a basis, and no Peirce family enters. The frame enters only in the two $4\times4$ displays, which read operators on the algebra.
 
@@ -1021,9 +1021,9 @@ $$
 and the trace factorises over the two factors, each trace taken on an image,
 $$
 \operatorname{Tr}\bigl(\mathsf M_2(x)\otimes\mathsf M_2(y)\bigr)=\operatorname{Tr}\mathsf M_2(x)\;\operatorname{Tr}\mathsf M_2(y),\qquad
-\operatorname{Tr}\mathsf M_2(e_t)=2,\qquad \operatorname{Tr}\mathsf M_2(\vec e_k)=0 .
+\operatorname{Tr}\mathsf M_2(e_t)=2,\qquad \operatorname{Tr}\mathsf M_2(\vec e_\imath)=0 .
 $$
-A subscript names the factor whose image is traced, $\operatorname{Tr}_\mathbb{B}\mathsf M_2(e_t)=2$ and $\operatorname{Tr}_\mathbb{B}\mathsf M_2(\vec e_k)=0$, and an unsubscripted $\operatorname{Tr}$ on $\mathbb{B}\otimes\mathbb{B}$ is the trace of the $4\times4$ image: on the units $\operatorname{Tr}(\mathsf M_2(e_t)\otimes\mathsf M_2(e_t))=4$ and $\operatorname{Tr}(\mathsf M_2(\vec e_j)\otimes\mathsf M_2(\vec e_k))=0$. The two-qubit arena of the exercises is this algebra and is read with this trace; it needs no second trace convention.
+A subscript names the factor whose image is traced, $\operatorname{Tr}_\mathbb{B}\mathsf M_2(e_t)=2$ and $\operatorname{Tr}_\mathbb{B}\mathsf M_2(\vec e_\imath)=0$, and an unsubscripted $\operatorname{Tr}$ on $\mathbb{B}\otimes\mathbb{B}$ is the trace of the $4\times4$ image: on the units $\operatorname{Tr}(\mathsf M_2(e_t)\otimes\mathsf M_2(e_t))=4$ and $\operatorname{Tr}(\mathsf M_2(\vec e_j)\otimes\mathsf M_2(\vec e_\imath))=0$. The two-qubit arena of the exercises is this algebra and is read with this trace; it needs no second trace convention.
 
 **A bare $\mathsf{M}_2$ means this isomorphism and nothing else.** A plain $\mathsf{M}_2$, with no subscript, superscript or tilde, is reserved throughout the series for this isomorphism alone. The other uses a reader may meet are marked differently: $\iota$ is an abstract homomorphism on the mathematics pages and an angle in the Thomas-precession exercise, $\tilde{Ξ}=\iota\,e_t$ is the central scalar field of the Higgs articles, and $Ξ_{\tilde U}$ is the quantum channel of the gates article. None of these is the isomorphism, and a bare $\mathsf{M}_2$ is not any of them.
 
@@ -1063,7 +1063,7 @@ Q_z&Q_y&-Q_x&Q_t
 $$
 Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{axf}}=D(L_{\mathrm{axf}})^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$, its transpose is the conjugation, and its sixteen products are real. Nothing is chosen but the basis the algebra already carries. This is the display of record for the physics articles of the series, because a formula of general physics distinguishes no spatial direction.
 
-**The Pauli representation comes second.** Its frame is the Peirce basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ of the standard pair, and in it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right one $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf S L(\tilde Q)^{\mathsf T}\mathsf S^{-1}$. The four left matrices $L_{\mathrm{pau},e_{\imath}}$, the four right matrices $R_{\mathrm{pau},e_{\jmath}}$ and the sixteen basis operators $L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},e_{\jmath}}$ are written out. It is the display the gamma literature prints: $\gamma_0=\sigma_1\otimes I_2$, $\gamma_k=i\sigma_2\otimes\sigma_k$ and $\gamma_5=-\sigma_3\otimes I_2$, five basis operators of the frame, written in both frames in §*The Legacy Pauli Gamma Formulation*.
+**The Pauli representation comes second.** Its frame is the Peirce basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ of the standard pair, and in it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right one $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf S L(\tilde Q)^{\mathsf T}\mathsf S^{-1}$. The four left matrices $L_{\mathrm{pau},e_{\imath}}$, the four right matrices $R_{\mathrm{pau},e_{\jmath}}$ and the sixteen basis operators $L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},e_{\jmath}}$ are written out. It is the display the gamma literature prints: $\gamma_0=\sigma_1\otimes I_2$, $\gamma_\imath=i\sigma_2\otimes\sigma_\imath$ and $\gamma_5=-\sigma_3\otimes I_2$, five basis operators of the frame, written in both frames in §*The Legacy Pauli Gamma Formulation*.
 
 **The switch comes between them, and belongs to both.** It is $C_{\Pi}$ and its inverse, of determinant $-\tfrac14$ and normalisation $C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12I_4$, with $L_{\mathrm{axf}}=C_{\Pi}L_{\mathrm{pau}}C_{\Pi}^{-1}$ and $R_{\mathrm{axf}}=C_{\Pi}R_{\mathrm{pau}}C_{\Pi}^{-1}$. It is two $2\times2$ blocks, it carries the eight unit matrices and the sixteen basis operators, and it leaves the trace $4Q_t$ and the determinant $\langle\tilde Q\rangle_{\natural}^2$ alone. What it does not carry is a single entry: the transpose dictionary, the reality of the sixteen arrays and the disappearance of the cross blocks are properties of the axis-free frame, the block form and the monomial five are properties of the Peirce frame.
 
@@ -1071,7 +1071,7 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 
 **No five of the sixteen products are singled out in the axis-free display**, so the gamma map is a display and not a structure of the algebra; §*The Switch Between the Two Frames* pairs each of the sixteen with its Peirce array through $L_{\mathrm{pau},e_{\imath}}R_{\mathrm{pau},e_{\jmath}}=C_{\Pi}^{-1}L_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},e_{\jmath}}C_{\Pi}$.
 
-**The $2\times2$ isomorphism comes last.** It is $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$, forced by $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, with $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t$. It needs no frame, and it is the block of the Pauli display: the change of frame moves the block and never the image. Conjugating entries on its own is not an involution of the algebra, a bare $\mathsf{M}_2$ names this isomorphism and nothing else, and the realisation is fixed up to a star-unitary change of basis and a central scalar.
+**The $2\times2$ isomorphism comes last.** It is $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\imath)=-i\sigma_\imath$ and $\mathsf{M}_2(i)=iI_2$, forced by $\vec e_\imath^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, with $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t$. It needs no frame, and it is the block of the Pauli display: the change of frame moves the block and never the image. Conjugating entries on its own is not an involution of the algebra, a bare $\mathsf{M}_2$ names this isomorphism and nothing else, and the realisation is fixed up to a star-unitary change of basis and a central scalar.
 
 **The coordinate frames are two, and neither is a matrix frame.** The $\mathbb{B}$ frame reads $Q_{\imath}$ with $Q_t=i q'_t$; the $\mathbb{B}_{\Phi}$ frame reads $x_0=r'_{t}$ and carries the printed gammas. The metric is one, the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$, in both. A contraction stays in one frame, and the d'Alembertian is one operator in both.
 
@@ -1081,7 +1081,7 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 
 | Symbol | Meaning |
 |---|---|
-| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | The isomorphism of the element; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |
+| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | The isomorphism of the element; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\imath)=-i\sigma_\imath$ |
 | $\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t$ | The trace of the image, twice the scalar part |
 | $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | The determinant, the biquaternion norm |
 | $\rho_L,\rho_R$ | Left and right multiplication as linear maps, $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$, $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$ |

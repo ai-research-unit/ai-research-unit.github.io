@@ -19,14 +19,14 @@ The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the rotation bracket and the cross product as a commutator.
 - Companion article *Gauge Transformations of the First and Second Kind in Biquaternionic Form*, for the central phase and its transformation law.
 
-**Notation, once.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$ and $\vec e_j^2=-e_t$. The unit of action is $\frac{h}{2\pi}$, so $i \frac{h}{2\pi}$ is that unit times $i$. Position is $\vec r=(r_x,r_y,r_z)$. The canonical momentum is $p_k=-i \frac{h}{2\pi}\,\partial/\partial r_k$. The mechanical momentum is $\pi_k=p_k-ϙA_k$ and its algebra element is $\tilde\pi_k=\pi_k\,e_t$. The charge is $ϙ$ in coulomb. Units are SI throughout, as *Physics Units and Common Elements Conventions* fixes them.
+**Notation, once.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$ and $\vec e_j^2=-e_t$. The unit of action is $\frac{h}{2\pi}$, so $i \frac{h}{2\pi}$ is that unit times $i$. Position is $\vec r=(r_x,r_y,r_z)$. The canonical momentum is $p_\imath=-i \frac{h}{2\pi}\,\partial/\partial r_\imath$. The mechanical momentum is $\pi_\imath=p_\imath-ϙA_\imath$ and its algebra element is $\tilde\pi_\imath=\pi_\imath\,e_t$. The charge is $ϙ$ in coulomb. Units are SI throughout, as *Physics Units and Common Elements Conventions* fixes them.
 
 ## The Two Momenta
 
 Minimal coupling is the replacement of one momentum by another.
 
 $$
-\pi_k=p_k-ϙA_k,\qquad \tilde\pi_k=\pi_k\,e_t .
+\pi_\imath=p_\imath-ϙA_\imath,\qquad \tilde\pi_\imath=\pi_\imath\,e_t .
 $$
 
 The two differ by a function of position. The canonical momentum differentiates and the vector potential multiplies. Nothing else separates them.
@@ -40,7 +40,7 @@ Under $\vec A\to\vec A+\vec\nabla_\Phi\lambda$ the canonical momentum is unchang
 | $\vec p$ | unchanged |
 | $\vec\pi$ | $\vec\pi-ϙ\vec\nabla_\Phi\lambda$ |
 | $\vec B$ | unchanged |
-| $[\pi_j,\pi_k]$ | unchanged |
+| $[\pi_j,\pi_\imath]$ | unchanged |
 
 The state carries the compensating central phase. The companion article on gauge transformations of the first and second kinds fixes that phase, and the Aharonov–Bohm article records what it does around a closed path.
 
@@ -49,13 +49,13 @@ The state carries the compensating central phase. The companion article on gauge
 The canonical commutation relation, in the framework's units, is
 
 $$
-[r_j,p_k]=i \frac{h}{2\pi}\,\delta_{jk},\qquad i \frac{h}{2\pi}=i\,\frac{h}{2\pi}.
+[r_j,p_\imath]=i \frac{h}{2\pi}\,\delta_{j\imath},\qquad i \frac{h}{2\pi}=i\,\frac{h}{2\pi}.
 $$
 
 The mechanical momentum satisfies the same relation, and the reason is one line. The vector potential is a function of position, so it commutes with position:
 
 $$
-[r_j,\pi_k]=[r_j,p_k]-ϙ\,[r_j,A_k]=i \frac{h}{2\pi}\,\delta_{jk}.
+[r_j,\pi_\imath]=[r_j,p_\imath]-ϙ\,[r_j,A_\imath]=i \frac{h}{2\pi}\,\delta_{j\imath}.
 $$
 
 The relation therefore does not separate the two momenta. Both satisfy it. A relation that both objects satisfy cannot be the statement that decides between them.
@@ -63,7 +63,7 @@ The relation therefore does not separate the two momenta. Both satisfy it. A rel
 The blindness is wider than the two examples. Any shift of the momentum by a function of position leaves the relation untouched:
 
 $$
-[r_j,\,p_k+f_k(\vec r)]=i \frac{h}{2\pi}\,\delta_{jk}.
+[r_j,\,p_\imath+f_\imath(\vec r)]=i \frac{h}{2\pi}\,\delta_{j\imath}.
 $$
 
 The converse runs in the same direction. If two momenta give the same bracket with position, their difference commutes with position, and on the Schrödinger carrier the commutant of the position operators is the algebra of functions of position. The difference is then a function of position, and nothing else.
@@ -79,31 +79,31 @@ The relation has a second half, and the second half is not blind.
 For the canonical momentum the components commute:
 
 $$
-[p_j,p_k]=0 .
+[p_j,p_\imath]=0 .
 $$
 
 The same shift by a function of position gives
 
 $$
-[p_j+f_j,\,p_k+f_k]=i \frac{h}{2\pi}\left(\partial_k f_j-\partial_j f_k\right).
+[p_j+f_j,\,p_\imath+f_\imath]=i \frac{h}{2\pi}\left(\partial_\imath f_j-\partial_j f_\imath\right).
 $$
 
 The right-hand side is the antisymmetrised derivative of the shift. It vanishes exactly when the shift is a gradient.
 
-Minimal coupling takes $f_k=-ϙA_k$ and the right-hand side becomes the field strength:
+Minimal coupling takes $f_\imath=-ϙA_\imath$ and the right-hand side becomes the field strength:
 
 $$
-[\pi_j,\pi_k]=i \frac{h}{2\pi}\,ϙ\,\varepsilon_{jk l}B_l=i\,\frac{h}{2\pi}\,ϙ\,\varepsilon_{jk l}B_l .
+[\pi_j,\pi_\imath]=i \frac{h}{2\pi}\,ϙ\,\varepsilon_{j\imath l}B_l=i\,\frac{h}{2\pi}\,ϙ\,\varepsilon_{j\imath l}B_l .
 $$
 
 This is the commutator the companion article on Landau levels builds the whole problem on. Here it carries a different reading: it is the exact measure of how far minimal coupling is from a relabelling.
 
 The two halves of the relation therefore behave differently under one and the same shift.
 
-| shift | $[r_j,P_k]$ | $[P_j,P_k]$ | implemented by a unitary |
+| shift | $[r_j,P_\imath]$ | $[P_j,P_\imath]$ | implemented by a unitary |
 |---|---|---|---|
-| $f_k=\partial_k\lambda$ | $i \frac{h}{2\pi}\,\delta_{jk}$ | $0$ | yes |
-| $f_k=-ϙA_k$, $\vec B\neq0$ | $i \frac{h}{2\pi}\,\delta_{jk}$ | $i \frac{h}{2\pi}\,ϙ\,\varepsilon_{jk l}B_l$ | no |
+| $f_\imath=\partial_\imath\lambda$ | $i \frac{h}{2\pi}\,\delta_{j\imath}$ | $0$ | yes |
+| $f_\imath=-ϙA_\imath$, $\vec B\neq0$ | $i \frac{h}{2\pi}\,\delta_{j\imath}$ | $i \frac{h}{2\pi}\,ϙ\,\varepsilon_{j\imath l}B_l$ | no |
 
 The last column is the physical content. A gradient shift is implemented on the states by the central phase, so it is a relabelling and no observable changes. On a simply-connected region where $\vec B\neq0$ no single-valued $\lambda$ exists, no such phase implements the shift, and the second half of the relation records the failure.
 
@@ -114,7 +114,7 @@ The last column is the physical content. A gradient shift is implemented on the 
 Two angular momenta are built from the two momenta, and they are different operators.
 
 $$
-\tilde L_{\mathrm{orb},i}=\varepsilon_{ijk}\,r_j\,p_k\,e_t ,\qquad \tilde L_{\mathrm{kin},i}=\varepsilon_{ijk}\,r_j\,\pi_k\,e_t .
+\tilde L_{\mathrm{orb},i}=\varepsilon_{\imath\jmath\ell}\,r_j\,p_\imath\,e_t ,\qquad \tilde L_{\mathrm{kin},i}=\varepsilon_{\imath\jmath\ell}\,r_j\,\pi_\imath\,e_t .
 $$
 
 The second is the physical one. It is the moment of the mechanical momentum, and it is the quantity a torque acts on. The first is the generator of rotations of the wave function.
@@ -140,7 +140,7 @@ The identity was checked numerically in the symmetric gauge on a spectral grid: 
 With $\vec B$ uniform, the bracket of the kinetic angular momentum is
 
 $$
-\boxed{\;[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=i\,\frac{h}{2\pi}\,\varepsilon_{ijk}\Bigl(\tilde L_{\mathrm{kin},k}+ϙ\,r_k\,(\vec r\cdot\vec B)\Bigr)\;}
+\boxed{\;[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=i\,\frac{h}{2\pi}\,\varepsilon_{\imath\jmath\ell}\Bigl(\tilde L_{\mathrm{kin},k}+ϙ\,r_\imath\,(\vec r\cdot\vec B)\Bigr)\;}
 $$
 
 The bracket is the rotation bracket plus one term. The extra term carries no derivative, is quadratic in position, and vanishes with the field.
@@ -148,12 +148,12 @@ The bracket is the rotation bracket plus one term. The extra term carries no der
 **The reduction.** Two contraction rules generate everything:
 
 $$
-[r_j,\pi_k]=i \frac{h}{2\pi}\,\delta_{jk},\qquad [\pi_j,\pi_k]=i \frac{h}{2\pi}\,ϙ\,\varepsilon_{jk l}B_l .
+[r_j,\pi_\imath]=i \frac{h}{2\pi}\,\delta_{j\imath},\qquad [\pi_j,\pi_\imath]=i \frac{h}{2\pi}\,ϙ\,\varepsilon_{j\imath l}B_l .
 $$
 
 Write $\tilde L_{\mathrm{kin},i}=\varepsilon_{iab}r_a\pi_b e_t$ and use $[AB,C]=A[B,C]+[A,C]B$ on the four contractions. The two rules above, with $\vec B$ taken uniform so that it commutes with $\vec r$, reduce the contractions to the boxed form. The uniform-field hypothesis is what makes the statement exact; a position-dependent field adds gradient terms that the bracket above does not carry.
 
-**The check.** The reduction was verified symbolically on the word algebra generated by $\vec r$ and $\vec\pi$ with the two contraction rules, with $\frac{h}{2\pi}$, $ϙ$ and $\vec B$ kept symbolic. The free case $ϙ\to0$ returns $[\tilde L_{\mathrm{orb},i},\tilde L_{\mathrm{orb},j}]=i\,\frac{h}{2\pi}\varepsilon_{ijk}\tilde L_{\mathrm{orb},k}$ exactly, which validates the engine before it is used. The boxed form then returns a residual of zero on all three cyclic pairs.
+**The check.** The reduction was verified symbolically on the word algebra generated by $\vec r$ and $\vec\pi$ with the two contraction rules, with $\frac{h}{2\pi}$, $ϙ$ and $\vec B$ kept symbolic. The free case $ϙ\to0$ returns $[\tilde L_{\mathrm{orb},i},\tilde L_{\mathrm{orb},j}]=i\,\frac{h}{2\pi}\varepsilon_{\imath\jmath\ell}\tilde L_{\mathrm{orb},k}$ exactly, which validates the engine before it is used. The boxed form then returns a residual of zero on all three cyclic pairs.
 
 The same statement was verified numerically in the symmetric gauge, on a $64^3$ spectral grid with $\frac{h}{2\pi}$, $c$ and $ϙ$ at their SI values and $B=1$ T. The residual of $[\tilde L_{\mathrm{kin},x},\tilde L_{\mathrm{kin},y}]$ against $i\,\frac{h}{2\pi}(\tilde L_{\mathrm{kin},z}+ϙ\,r_z(\vec r\cdot\vec B))$ is $6.4\times10^{-9}$ relative, at the discretisation floor of the grid, which the elementary commutator $[r_x,p_x]=i \frac{h}{2\pi}$ reproduces to $1.2\times10^{-8}$ on the same grid. Dropping the extra term fails the same comparison by $173$ per cent.
 
@@ -161,7 +161,7 @@ The same statement was verified numerically in the symmetric gauge, on a $64^3$ 
 
 The bracket above is not a Lie bracket on the span of the generators, and the reason is visible in the shape of the extra term.
 
-**Different kinds of object.** The generators $\tilde L_{\mathrm{kin},k}$ contain a derivative. The extra term $ϙ\,r_k(\vec r\cdot\vec B)$ does not; it is a function of position times $e_t$, hence a multiplication operator. A linear combination of the $\tilde L_{\mathrm{kin},k}$ is a first-order differential operator. The right-hand side is one of those plus a multiplication operator. The two are not the same kind of thing, and no coefficients turn one into the other.
+**Different kinds of object.** The generators $\tilde L_{\mathrm{kin},k}$ contain a derivative. The extra term $ϙ\,r_\imath(\vec r\cdot\vec B)$ does not; it is a function of position times $e_t$, hence a multiplication operator. A linear combination of the $\tilde L_{\mathrm{kin},k}$ is a first-order differential operator. The right-hand side is one of those plus a multiplication operator. The two are not the same kind of thing, and no coefficients turn one into the other.
 
 **What fails is closure, not consistency.** The Jacobi identity holds for the bracket, because the bracket is a commutator of operators and commutators always satisfy it. The failure is narrower and sharper: the commutator of two members of the triple is not a member of the span of the triple. A reader who expects the Jacobi identity to be the test will look in the wrong place.
 
@@ -229,7 +229,7 @@ The two statements are one statement seen twice. The field strength is central b
 
 ## What the Framework Supplies
 
-**Supplies.** The unit of action $\frac{h}{2\pi}$, so that every bracket is measured in one unit and no scale is fixed by the algebra. The centrality of the field strength, which is what makes $[\pi_j,\pi_k]$ a central multiple of $e_t$; the anomaly is central for a different reason, being a real function of position times $e_t$ with no quaternion direction. The separation between the internal algebra and the envelope, without which the failure would be read as a failure of $\mathbb{B}$.
+**Supplies.** The unit of action $\frac{h}{2\pi}$, so that every bracket is measured in one unit and no scale is fixed by the algebra. The centrality of the field strength, which is what makes $[\pi_j,\pi_\imath]$ a central multiple of $e_t$; the anomaly is central for a different reason, being a real function of position times $e_t$ with no quaternion direction. The separation between the internal algebra and the envelope, without which the failure would be read as a failure of $\mathbb{B}$.
 
 **Transcribes.** The two momenta, the two angular momenta, the bracket, the non-closure, the conservation statements. All of it is ordinary operator algebra in the notation of the corpus.
 
@@ -239,12 +239,12 @@ The two statements are one statement seen twice. The field strength is central b
 
 ## Summary
 
-Minimal coupling replaces $\vec p$ by $\vec\pi=\vec p-q\vec A$, and the canonical commutation relation accepts the replacement without noticing it. The bracket of position with momentum is unchanged, because the vector potential is a function of position and commutes with position; more generally, any shift of the momentum by a function of position leaves that bracket untouched, so the relation fixes the momentum only up to a function of position. The bracket of two momenta is not blind: it vanishes for the canonical momentum, is the antisymmetrised derivative of the shift for a general one, and equals $i\,\frac{h}{2\pi}\,ϙ\varepsilon_{jk l}B_l$ for minimal coupling.
+Minimal coupling replaces $\vec p$ by $\vec\pi=\vec p-q\vec A$, and the canonical commutation relation accepts the replacement without noticing it. The bracket of position with momentum is unchanged, because the vector potential is a function of position and commutes with position; more generally, any shift of the momentum by a function of position leaves that bracket untouched, so the relation fixes the momentum only up to a function of position. The bracket of two momenta is not blind: it vanishes for the canonical momentum, is the antisymmetrised derivative of the shift for a general one, and equals $i\,\frac{h}{2\pi}\,ϙ\varepsilon_{j\imath l}B_l$ for minimal coupling.
 
-The kinetic angular momentum $\tilde L_{\mathrm{kin},i}=\varepsilon_{ijk}r_j\pi_k e_t$ inherits the difference. With uniform $\vec B$,
+The kinetic angular momentum $\tilde L_{\mathrm{kin},i}=\varepsilon_{\imath\jmath\ell}r_j\pi_\imath e_t$ inherits the difference. With uniform $\vec B$,
 
 $$
-[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=i\,\frac{h}{2\pi}\,\varepsilon_{ijk}\Bigl(\tilde L_{\mathrm{kin},k}+ϙ\,r_k\,(\vec r\cdot\vec B)\Bigr),
+[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=i\,\frac{h}{2\pi}\,\varepsilon_{\imath\jmath\ell}\Bigl(\tilde L_{\mathrm{kin},k}+ϙ\,r_\imath\,(\vec r\cdot\vec B)\Bigr),
 $$
 
 a rotation bracket plus a multiplication operator quadratic in position. The three components do not span a Lie algebra, because the extra term is not a first-order differential operator. Jacobi holds; closure fails. No rescaling, redefinition or gauge choice repairs it, and the failure vanishes exactly with the field.
@@ -262,18 +262,18 @@ The conserved angular momentum of the Landau problem is the canonical one. The k
 | $\frac{h}{2\pi}$ | Unit of action; $i \frac{h}{2\pi}$ is its imaginary multiple |
 | $ϙ$ | Electric charge, in coulomb |
 | $\vec r=(r_x,r_y,r_z)$ | Position |
-| $p_k=-i \frac{h}{2\pi}\,\partial/\partial r_k$ | Canonical momentum |
-| $\pi_k=p_k-ϙA_k$ | Mechanical momentum |
-| $\tilde\pi_k=\pi_k\,e_t$ | Mechanical momentum as an algebra element |
+| $p_\imath=-i \frac{h}{2\pi}\,\partial/\partial r_\imath$ | Canonical momentum |
+| $\pi_\imath=p_\imath-ϙA_\imath$ | Mechanical momentum |
+| $\tilde\pi_\imath=\pi_\imath\,e_t$ | Mechanical momentum as an algebra element |
 | $\vec A$ | Vector potential; $\vec B=\vec\nabla_\Phi\times\vec A$ |
-| $[r_j,\pi_k]=i \frac{h}{2\pi}\,\delta_{jk}$ | Position–momentum bracket; holds for both momenta |
-| $[\pi_j,\pi_k]=i\,\frac{h}{2\pi}\,ϙ\varepsilon_{jk l}B_l$ | Field-strength commutator; central |
-| $\tilde L_{\mathrm{orb},i}=\varepsilon_{ijk}r_jp_k e_t$ | Canonical angular momentum |
-| $\tilde L_{\mathrm{kin},i}=\varepsilon_{ijk}r_j\pi_k e_t$ | Kinetic angular momentum |
+| $[r_j,\pi_\imath]=i \frac{h}{2\pi}\,\delta_{j\imath}$ | Position–momentum bracket; holds for both momenta |
+| $[\pi_j,\pi_\imath]=i\,\frac{h}{2\pi}\,ϙ\varepsilon_{j\imath l}B_l$ | Field-strength commutator; central |
+| $\tilde L_{\mathrm{orb},i}=\varepsilon_{\imath\jmath\ell}r_jp_\imath e_t$ | Canonical angular momentum |
+| $\tilde L_{\mathrm{kin},i}=\varepsilon_{\imath\jmath\ell}r_j\pi_\imath e_t$ | Kinetic angular momentum |
 | $\vec L_{\mathrm{kin}}=\vec L_{\mathrm{orb}}-ϙ\,\vec r\times\vec A$ | The two angular momenta |
-| $[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=i\,\frac{h}{2\pi}\varepsilon_{ijk}\bigl(\tilde L_{\mathrm{kin},k}+ϙ\,r_k(\vec r\cdot\vec B)\bigr)$ | The bracket that does not close |
+| $[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=i\,\frac{h}{2\pi}\varepsilon_{\imath\jmath\ell}\bigl(\tilde L_{\mathrm{kin},k}+ϙ\,r_\imath(\vec r\cdot\vec B)\bigr)$ | The bracket that does not close |
 | $\frac{ϙB}{2}(r_x^2+r_y^2)e_t$ | Anomaly in the symmetric gauge, per component |
-| $H=\frac{1}{2m}\sum_{k\in\{x,y,z\}}\pi_k^2$ | Hamiltonian of a charge in a magnetic field |
+| $H=\frac{1}{2m}\sum_{\imath\in\{x,y,z\}}\pi_\imath^2$ | Hamiltonian of a charge in a magnetic field |
 | $[\tilde L_{\mathrm{orb},z},H]=0$ | Canonical angular momentum is conserved |
 | $[\tilde L_{\mathrm{kin},z},H]=-\frac{ϙB}{2}[(r_x^2+r_y^2),H]$ | Kinetic angular momentum is not |
 

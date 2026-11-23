@@ -32,7 +32,7 @@ What is not new. The Skyrme model is standard, and its soliton, its topological 
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_k^{2}=-e_t$; the field is $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$ with $\tilde U^{-1}=\tilde U^{\natural}=\tilde U^{*}$. $\mathrm{Sc}(X)$ is the coefficient of $e_t$; $\langle X\rangle_\natural=\mathrm{Sc}(XX^{\natural})$.
+The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\imath^{2}=-e_t$; the field is $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$ with $\tilde U^{-1}=\tilde U^{\natural}=\tilde U^{*}$. $\mathrm{Sc}(X)$ is the coefficient of $e_t$; $\langle X\rangle_\natural=\mathrm{Sc}(XX^{\natural})$.
 
 The static frame. Spatial coordinates are $\vec r=R_x\vec e_x+R_y\vec e_y+R_z\vec e_z$, the fields are static, $\partial\tilde U/\partial r'_t=0$, and configurations are pure gauge at spatial infinity, $\tilde U\to e_t$ as $|\vec r|\to\infty$, so that they extend to maps $\mathbb{S}^3\to\mathbb{S}^3$.
 
@@ -71,7 +71,7 @@ Why there are exactly two terms at this order. At two derivatives the target adm
 The topological term, and why it is not in the action. The winding number
 
 $$
-N=\frac{1}{24\pi^2}\int d^3r\;\varepsilon_{ijk}\,\mathrm{Sc}\bigl(j_i[j_j,j_k]\bigr)
+N=\frac{1}{24\pi^2}\int d^3r\;\varepsilon_{\imath\jmath\ell}\,\mathrm{Sc}\bigl(j_i[j_j,j_\imath]\bigr)
 $$
 
 is a total derivative and an integer; adding it to the action multiplies the path integral by a phase and changes no classical equation. It is a parameter of the quantum theory, not a term of the classical action, and the $\theta$ angle it defines is the same object as the QCD vacuum angle.
@@ -104,7 +104,7 @@ Why the boundary condition is part of the variation. The field must approach a c
 
 ## The Constraints the Action Imposes: Derrick's Argument and the Second Term
 
-The scaling argument, re-derived here because it is the reason for the action's shape. Scale a static configuration by $\lambda$: $\tilde U_\lambda(\vec r)=\tilde U(\vec r/\lambda)$. Then the two-derivative energy scales as
+The scaling argument, re-derived here because it is the reason for the action's shape. Scale a static configuration by $\lambda$: $\tilde U_\imath(\vec r)=\tilde U(\vec r/\lambda)$. Then the two-derivative energy scales as
 
 $$
 E_2(\lambda)=\frac{1}{\lambda}E_2(1),
@@ -151,7 +151,7 @@ The chiral currents. The two terms are both invariant under $\tilde U\mapsto g_L
 The topological current. The winding density
 
 $$
-B_{\imath}=\frac{1}{24\pi^2}\varepsilon_{\imath\jmath\lambda\rho}\,\mathrm{Sc}\bigl(j_{\jmath}[j_\lambda,j_\rho]\bigr)
+B_{\imath}=\frac{1}{24\pi^2}\varepsilon_{\imath\jmathk\rho}\,\mathrm{Sc}\bigl(j_{\jmath}[j_\imath,j_\rho]\bigr)
 $$
 
 is conserved identically, not on shell, because it is a total derivative. Its conservation is a Bianchi identity and not a symmetry's consequence; it holds for every field, whether or not the equation of motion is satisfied. The distinction between a conserved current that follows from an equation and one that follows from an identity is the sharpest structural point of this section.

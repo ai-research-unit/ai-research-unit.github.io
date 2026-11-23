@@ -69,7 +69,7 @@ $$
 J(\tilde Q\tilde Q')=i\tilde Q\tilde Q'=-\left(i\tilde Q\right)\left(i\tilde Q'\right)=-J(\tilde Q)J(\tilde Q').
 $$
 
-There is no linear rescaling $J_\lambda=\lambda\,\mathrm{id}$ that repairs the sign: multiplicativity would require $\lambda=\lambda^{2}$, that is $\lambda\in\{0,1\}$, and the identity map does not carry one slice to the other. The sign is the arithmetic of $i^{2}=-1$ and it cannot be normalised away. Read as a statement about representations, $J$ is an isomorphism of $\mathbb{B}_\Phi$ with the opposite algebra $\mathbb{B}_\Psi^{\mathrm{op}}$, which is why the two sectors are mirror images rather than copies.
+There is no linear rescaling $J_\imath=\lambda\,\mathrm{id}$ that repairs the sign: multiplicativity would require $\lambda=\lambda^{2}$, that is $\lambda\in\{0,1\}$, and the identity map does not carry one slice to the other. The sign is the arithmetic of $i^{2}=-1$ and it cannot be normalised away. Read as a statement about representations, $J$ is an isomorphism of $\mathbb{B}_\Phi$ with the opposite algebra $\mathbb{B}_\Psi^{\mathrm{op}}$, which is why the two sectors are mirror images rather than copies.
 
 ## The Two Forms Under the Map
 

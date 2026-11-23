@@ -13,10 +13,10 @@ The article assumes *The Six Generators and Their Commutators* for the table's d
 ### The Six Generators
 
 $$
-J_k=\tfrac12\vec e_k,\qquad K_k=\tfrac12 i\vec e_k,\qquad k\in\{x,y,z\},
+J_\imath=\tfrac12\vec e_\imath,\qquad K_\imath=\tfrac12 i\vec e_\imath,\qquad k\in\{x,y,z\},
 $$
 
-the rotation and boost generators: the $J_k$ are anti-Hermitian, $J_k^{*}=-J_k$, and the $K_k$ are Hermitian, $K_k^{*}=+K_k$. Their brackets are stated in *The Six Generators and Their Commutators* and are reproduced here because the rest of the article reads the table.
+the rotation and boost generators: the $J_\imath$ are anti-Hermitian, $J_\imath^{*}=-J_\imath$, and the $K_\imath$ are Hermitian, $K_\imath^{*}=+K_\imath$. Their brackets are stated in *The Six Generators and Their Commutators* and are reproduced here because the rest of the article reads the table.
 
 ### The Table
 
@@ -262,8 +262,8 @@ The bracket table has three blocks; the third, $[K_a,K_b]=-\epsilon_{abc}J_c$, i
 
 | symbol | meaning |
 |---|---|
-| $J_k=\tfrac12\vec e_k$ | rotation generator |
-| $K_k=\tfrac12 i\vec e_k$ | boost generator |
+| $J_\imath=\tfrac12\vec e_\imath$ | rotation generator |
+| $K_\imath=\tfrac12 i\vec e_\imath$ | boost generator |
 | $\epsilon_{abc}$ | the alternating symbol |
 | $a_i=\tfrac12\theta_{\mathrm{rpd},i}$ | half-rapidity of the $i$-th boost |
 | $\vec u_i$, $\theta$ | boost direction and angle between the two directions |

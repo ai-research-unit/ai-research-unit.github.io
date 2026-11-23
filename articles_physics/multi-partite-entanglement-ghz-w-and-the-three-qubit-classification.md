@@ -98,7 +98,7 @@ The statement to keep. At two qubits the entanglement invariant is quadratic bec
 
 ## The Hyperdeterminant
 
-The object. Arrange the eight amplitudes of a three-qubit state in a $2\times2\times2$ array $a_{ijk}$. Cayley's hyperdeterminant is the polynomial
+The object. Arrange the eight amplitudes of a three-qubit state in a $2\times2\times2$ array $a_{\imath\jmath\ell}$. Cayley's hyperdeterminant is the polynomial
 
 $$
 \begin{aligned}

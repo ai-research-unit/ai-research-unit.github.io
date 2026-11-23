@@ -68,7 +68,7 @@ Three properties follow immediately and they are the ones the article uses.
 
 ### Why this ordering, in these letters
 
-The ordering is fixed by the requirement that the momentum marginal reproduce the polar form's momentum. The corpus writes the plane-wave phase as $\tilde\Xi\propto e^{i\theta_{\mathrm{phs}}}$ with $\vec\nabla_\Phi S_{\tilde\Xi}=\vec p$, because the derivative on the material sector is $\partial/\partial R_k=\partial/\partial r_k$ and $\vec\nabla_\Phi\tilde\Xi=(\frac{2\pi i}{h})\vec p\,\tilde\Xi$. So the combination whose $s$-dependence is $e^{+i\theta_{\mathrm{spa}}}$ is $\tilde\Xi^{*}(r-\vec s/2)\tilde\Xi(r+\vec s/2)$, and it is that combination that the kernel $e^{-i\theta_{\mathrm{spa}}}$ must multiply. Pairing the kernel with the other ordering puts the momentum at its negative, which is the sign error described above in its corpus form.
+The ordering is fixed by the requirement that the momentum marginal reproduce the polar form's momentum. The corpus writes the plane-wave phase as $\tilde\Xi\propto e^{i\theta_{\mathrm{phs}}}$ with $\vec\nabla_\Phi S_{\tilde\Xi}=\vec p$, because the derivative on the material sector is $\partial/\partial R_\imath=\partial/\partial r_\imath$ and $\vec\nabla_\Phi\tilde\Xi=(\frac{2\pi i}{h})\vec p\,\tilde\Xi$. So the combination whose $s$-dependence is $e^{+i\theta_{\mathrm{spa}}}$ is $\tilde\Xi^{*}(r-\vec s/2)\tilde\Xi(r+\vec s/2)$, and it is that combination that the kernel $e^{-i\theta_{\mathrm{spa}}}$ must multiply. Pairing the kernel with the other ordering puts the momentum at its negative, which is the sign error described above in its corpus form.
 
 Throughout, $\theta_{\mathrm{phs}}:=\frac{2\pi S_{\tilde\Xi}}{h}$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
 
@@ -104,31 +104,31 @@ What the display does not say. It does not say that the Wigner element is non-ne
 
 ### The first moment, and the current
 
-The first moment of the Wigner element in momentum is the mass times the current density. From $\int d^{3}p\,p_k\,e^{-i\theta_{\mathrm{spa}}}=i \frac{h}{2\pi}h^{3}\partial_k\delta^{3}(\vec s)$ and one integration by parts,
+The first moment of the Wigner element in momentum is the mass times the current density. From $\int d^{3}p\,p_\imath\,e^{-i\theta_{\mathrm{spa}}}=i \frac{h}{2\pi}h^{3}\partial_\imath\delta^{3}(\vec s)$ and one integration by parts,
 
 $$
-\int d^{3}p\;p_k\,\tilde W_\Xi
-=\frac{h}{4\pi i}\left[\tilde\Xi^{*}\frac{\partial\tilde\Xi}{\partial r_k}
--\frac{\partial\tilde\Xi^{*}}{\partial r_k}\tilde\Xi\right].
+\int d^{3}p\;p_\imath\,\tilde W_\Xi
+=\frac{h}{4\pi i}\left[\tilde\Xi^{*}\frac{\partial\tilde\Xi}{\partial r_\imath}
+-\frac{\partial\tilde\Xi^{*}}{\partial r_\imath}\tilde\Xi\right].
 $$
 
 The bracket is the polar form's momentum, in the corpus's letters. The polar-form article proves the identity
 
 $$
-\tilde\Xi^{*}\frac{\partial\tilde\Xi}{\partial r_k}
--\tilde\Xi\frac{\partial\tilde\Xi^{*}}{\partial r_k}
-=\frac{2\pi 2i\lVert\tilde\Xi\rVert^{2}}{h}\frac{\partial S_{\tilde\Xi}}{\partial r_k},
+\tilde\Xi^{*}\frac{\partial\tilde\Xi}{\partial r_\imath}
+-\tilde\Xi\frac{\partial\tilde\Xi^{*}}{\partial r_\imath}
+=\frac{2\pi 2i\lVert\tilde\Xi\rVert^{2}}{h}\frac{\partial S_{\tilde\Xi}}{\partial r_\imath},
 $$
 
-so substituting and using $\partial S_{\tilde\Xi}/\partial r_k=p_k$,
+so substituting and using $\partial S_{\tilde\Xi}/\partial r_\imath=p_\imath$,
 
 $$
-\mathrm{Sc}\int d^{3}p\;p_k\,\tilde W_\Xi
-=\frac{h}{4\pi i}\cdot\frac{2\pi 2i\lVert\tilde\Xi\rVert^{2}}{h}\,p_k
-=\lVert\tilde\Xi\rVert^{2}p_k=m\,j_k,
+\mathrm{Sc}\int d^{3}p\;p_\imath\,\tilde W_\Xi
+=\frac{h}{4\pi i}\cdot\frac{2\pi 2i\lVert\tilde\Xi\rVert^{2}}{h}\,p_\imath
+=\lVert\tilde\Xi\rVert^{2}p_\imath=m\,j_\imath,
 $$
 
-with $j_k=\rho_{\mathrm{num}}p_k/m$ the current density of the polar-form article. The scalar part is written because the two orderings of the quaternionic product differ by a commutator whose scalar part vanishes, so the scalar part of the marginal is ordering-independent even where the element itself is not. This is the reason the identity is stated on $\mathrm{Sc}$ and not on the element: the current is a real vector and it is read from the scalar part.
+with $j_\imath=\rho_{\mathrm{num}}p_\imath/m$ the current density of the polar-form article. The scalar part is written because the two orderings of the quaternionic product differ by a commutator whose scalar part vanishes, so the scalar part of the marginal is ordering-independent even where the element itself is not. This is the reason the identity is stated on $\mathrm{Sc}$ and not on the element: the current is a real vector and it is read from the scalar part.
 
 The two marginals together are the statement that the Wigner element reproduces the fluid's first two data. Density from the zeroth moment, current from the first; the pressure needs the second moment, and the second moment is where the quantum potential enters.
 
@@ -247,7 +247,7 @@ $$
 
 at the centre $r_0$ of a packet at rest, where the box is the spatial Laplacian in that frame and the variance is taken along one direction. The two are equal up to the mass: $Q_{\mathrm{qnt}}(r_0)=\mathrm{Var}(p)/m$.
 
-One clause about the dimension, because the box and the variance must be counted the same way. The display is one-dimensional. In three dimensions the Laplacian contributes one such term per direction, so the ratio at the centre is $-3/(2\sigma^{2})$ and the identity reads $Q_{\mathrm{qnt}}(r_0)=\mathrm{Var}_{\mathrm{tr}}(p)/m$, where $\mathrm{Var}_{\mathrm{tr}}(p)=\sum_{k\in\{x,y,z\}}\mathrm{Var}(p_k)$ is the trace of the momentum covariance and not the variance along one axis. Per component the three-dimensional identity carries a factor of three, and a reader who compares a one-dimensional formula with a three-dimensional simulation will find exactly that factor and no other. The computation is one line: for $\lVert\tilde\Xi\rVert\propto e^{-(r-r_0)^{2}/(4\sigma^{2})}$ the ratio $\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ at the centre is $-1/(2\sigma^{2})$, and the minus signs of the quantum potential and of the second derivative cancel.
+One clause about the dimension, because the box and the variance must be counted the same way. The display is one-dimensional. In three dimensions the Laplacian contributes one such term per direction, so the ratio at the centre is $-3/(2\sigma^{2})$ and the identity reads $Q_{\mathrm{qnt}}(r_0)=\mathrm{Var}_{\mathrm{tr}}(p)/m$, where $\mathrm{Var}_{\mathrm{tr}}(p)=\sum_{\imath\in\{x,y,z\}}\mathrm{Var}(p_\imath)$ is the trace of the momentum covariance and not the variance along one axis. Per component the three-dimensional identity carries a factor of three, and a reader who compares a one-dimensional formula with a three-dimensional simulation will find exactly that factor and no other. The computation is one line: for $\lVert\tilde\Xi\rVert\propto e^{-(r-r_0)^{2}/(4\sigma^{2})}$ the ratio $\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ at the centre is $-1/(2\sigma^{2})$, and the minus signs of the quantum potential and of the second derivative cancel.
 
 The identity is the bridge to the stress. The quantum potential is the term that modifies the mass shell in the corpus's polar form,
 
@@ -316,9 +316,9 @@ The biquaternionic Wigner function is the standard $x$–$p$ transform of the fi
 Its zeroth moment in momentum is the norm, $\int d^{3}p\,\tilde W_\Xi=\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}}$, exactly. Its first moment is the mass times the current,
 
 $$
-\mathrm{Sc}\int d^{3}p\;p_k\,\tilde W_\Xi
-=\frac{h}{4\pi i}\left[\tilde\Xi^{*}\frac{\partial\tilde\Xi}{\partial r_k}-\frac{\partial\tilde\Xi^{*}}{\partial r_k}\tilde\Xi\right]
-=\lVert\tilde\Xi\rVert^{2}p_k=m\,j_k,
+\mathrm{Sc}\int d^{3}p\;p_\imath\,\tilde W_\Xi
+=\frac{h}{4\pi i}\left[\tilde\Xi^{*}\frac{\partial\tilde\Xi}{\partial r_\imath}-\frac{\partial\tilde\Xi^{*}}{\partial r_\imath}\tilde\Xi\right]
+=\lVert\tilde\Xi\rVert^{2}p_\imath=m\,j_\imath,
 $$
 
 by the polar form's identity for the bracket; the scalar part is taken because the two orderings differ by a commutator whose scalar part vanishes. Its temporal moment is $\int d^{3}p\,(E/c)\tilde W_\Xi=-i\,m\,J_{\Phi,t}$, with the $i$ where the element's temporal slot puts it. The three moments together reproduce the polar form's four-current.
@@ -340,12 +340,12 @@ The classical limit is the fluid: $\tilde W_\Xi\to\rho_{\mathrm{num}}\delta^{3}(
 | $S_{\tilde\Xi}$ | Action of the polar form, with $\vec\nabla_\Phi S_{\tilde\Xi}=\vec p$ |
 | $\tilde W_\Xi(r,\vec p)$ | Biquaternionic Wigner element |
 | $r$, $\vec s$ | Position and relative coordinate; the offsets are $\pm\vec s/2$ |
-| $\vec p$, $p_k$ | Momentum, the transform variable, and its components |
+| $\vec p$, $p_\imath$ | Momentum, the transform variable, and its components |
 | $\frac{h}{2\pi}$ | Action quantum |
 | $m$, $c$ | Mass and speed of light in the medium |
 | $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ | Energy; $r'_t$ is the temporal coordinate, a length |
 | $\tilde J_\Phi=ic\rho_{\mathrm{num}}E/(mc^{2})\,e_t+\vec j$ | Four-current of the polar form |
-| $j_k=\rho_{\mathrm{num}}p_k/m$ | Current density |
+| $j_\imath=\rho_{\mathrm{num}}p_\imath/m$ | Current density |
 | $\mathrm{Sc}$ | Scalar part |
 | $\langle\ \rangle_{\natural}$ | Quaternionic norm |
 | $W[a]$, $W[a,b]$ | Wigner transform of a real function, and the cross transform of two |

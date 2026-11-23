@@ -262,7 +262,7 @@ a **purely vectorial** solution of (13), whose real part is the electric field $
 The source repeats the analysis for the slightly perturbed operator $D \pm i\lambda\partial/\partial r'_t$ with $\lambda \in \mathbb{R}$, whose kernel is characterised by (4) with $\partial/\partial r'_t$ replaced by $\lambda\partial/\partial r'_t$ (its Corollary 14) and whose right inverse is the $\lambda$-scaled transform
 
 $$
-L_{\mathcal{C}}R_{\pm,\lambda}[w](r_x,r'_t) := \int_0^{r'_{t}}\int_{\mathbb{R}^3} \exp\bigl(i\theta_{\mathrm{fou}}\bigr) \exp\bigl(\mp 2\pi\lambda^{-1}(r'_t-s)2\pi\vec\nu_\Phi\bigr) \mathcal{F}(w)(2\pi\vec\nu_\Phi,s)\,d2\pi\vec\nu_\Phi\,ds,
+L_{\mathcal{C}}R_{\pm,k}[w](r_x,r'_t) := \int_0^{r'_{t}}\int_{\mathbb{R}^3} \exp\bigl(i\theta_{\mathrm{fou}}\bigr) \exp\bigl(\mp 2\pi\lambda^{-1}(r'_t-s)2\pi\vec\nu_\Phi\bigr) \mathcal{F}(w)(2\pi\vec\nu_\Phi,s)\,d2\pi\vec\nu_\Phi\,ds,
 \tag{16}
 $$
 
@@ -306,7 +306,7 @@ The source's wave-operator factorisation $-\Delta_\Phi + \partial^2/\partial {r'
 | $\mathcal{F}$ | Fourier transform in the space variables at fixed $r'_t$ |
 | $\vec\nu_\Phi$ | Frequency three-vector, read as the pure quaternion $\nu_{\Phi x}\vec e_x + \nu_{\Phi y}\vec e_y + \nu_{\Phi z}\vec e_z$ |
 | $Ξ_\pm$ | The source's kernel, $\mathcal{F}(Ξ_\pm)(\vec\nu_\Phi,r'_t) = \exp(\mp 2\pi \vec\nu_\Phi r'_t)$ |
-| $L_{\mathcal{C}}R_{\pm}$, $L_{\mathcal{C}}R_{\pm,\lambda}$ | Parabolic Teodorescu transform (10) and its $\lambda$-scaled form (16) |
+| $L_{\mathcal{C}}R_{\pm}$, $L_{\mathcal{C}}R_{\pm,k}$ | Parabolic Teodorescu transform (10) and its $\lambda$-scaled form (16) |
 | $\vec{E}, \vec{B}, \rho, \vec j$ | Electric field, magnetic field, charge density, current density |
 | $\vec{\xi} = \vec{E} + i\vec{B}$ | Biquaternionic field of the source; the corpus's dual field strength $-i\tilde F$ |
 | $\tilde{F}, \tilde J_{\Phi}, \tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}, \Box_\Phi$ | Corpus field-strength biquaternion, four-current, biquaternionic gradient, its conjugate, d'Alembertian |

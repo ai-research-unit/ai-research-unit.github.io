@@ -14,7 +14,7 @@ The biquaternion conventions are those of the companion articles:
 - Companion article *Algebra and Element Conventions*, for the trace, the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*), and the conventions of presentation.
 - Companion article *The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form*, for the multipole series, the dipole as a vector element, and the quadrupole as a symmetric traceless tensor.
 
-Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and central scalar imaginary $i$, $i^2 = -1$. The real-quaternion subspace is $\mathbb{B}_{H}$, the material sector is $\mathbb{B}_{\Phi}$ with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, and the biquaternionic gradient is $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \vec\nabla_\Phi$ with $\vec\nabla_\Phi = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The symbol $\rho_m$ in this article denotes a **mass** density (the corpus reserves the bare $\rho$ for the charge density, and $\tilde{Ϛ}_{\Psi}$ for the density operator of the informational sector), $M$ the body's mass, and $\sigma$ a surface tension. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$ (Wigner's $D$), so the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
+Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\imath^2 = -e_t$, and central scalar imaginary $i$, $i^2 = -1$. The real-quaternion subspace is $\mathbb{B}_{H}$, the material sector is $\mathbb{B}_{\Phi}$ with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, and the biquaternionic gradient is $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \vec\nabla_\Phi$ with $\vec\nabla_\Phi = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The symbol $\rho_m$ in this article denotes a **mass** density (the corpus reserves the bare $\rho$ for the charge density, and $\tilde{Ϛ}_{\Psi}$ for the density operator of the informational sector), $M$ the body's mass, and $\sigma$ a surface tension. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$ (Wigner's $D$), so the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
 
 ## The Rigid-Body Rotor
 
@@ -63,7 +63,7 @@ This has been verified numerically: for $\theta(r'_t)$ increasing at rate $\omeg
 The quadrupole moment is a rank-two symmetric traceless tensor, and it transforms under the rotation as a bilinear form rather than as a vector. Writing $\mathcal{Q}^{(b)}$ for the body-frame components, the lab-frame components are
 
 $$
-\mathcal{Q}^{(lab)}_{ij} = R_{ik}R_{jl}\mathcal{Q}^{(b)}_{k l} ,
+\mathcal{Q}^{(lab)}_{ij} = R_{i\imath}R_{jl}\mathcal{Q}^{(b)}_{\imath l} ,
 $$
 
 equivalently $\mathcal{Q}^{(lab)} = R\,\mathcal{Q}^{(b)}R^{\mathsf{T}}$. In rotor language the same statement is that the associated bilinear form is evaluated on body-frame components,
@@ -183,7 +183,7 @@ verified for random $\vec a, \vec d$ with residuals below $10^{-13}$ and vanishi
 A rotating non-axisymmetric body is a second and distinct source of an oscillating quadrupole. Let the body frame carry the constant quadrupole $\mathcal{Q}^{(b)} = \mathrm{diag}(\lambda_1, \lambda_2, \lambda_3)$ with $\lambda_1+\lambda_2+\lambda_3 = 0$, and let the body rotate about the $\vec e_z$ axis with constant angular speed $\Omega$. The lab-frame moment is the rotor conjugate,
 
 $$
-\mathcal{Q}^{(lab)}_{ij}(r'_t) = R_{ik}(r'_t)\,R_{jl}(r'_t)\,\mathcal{Q}^{(b)}_{k l},
+\mathcal{Q}^{(lab)}_{ij}(r'_t) = R_{i\imath}(r'_t)\,R_{jl}(r'_t)\,\mathcal{Q}^{(b)}_{\imath l},
 \qquad
 \tilde U(r'_t) = \cos\frac{\Omega r'_t}{2} + \sin\frac{\Omega r'_t}{2}\,\vec e_z .
 $$
@@ -250,7 +250,7 @@ $$
 \mathrm{Sc}\!\left(\vec\nabla_\Phi\vec v\right) = -\sum_{\imath}\partial/\partial R_{\imath}\,v_{\imath} = -\vec\nabla_\Phi\cdot\vec v,
 $$
 
-obtained from $\vec\nabla_\Phi\vec v = \sum_{\imath,\jmath}\vec e_{\imath} \vec e_{\jmath}\,\partial/\partial R_{\imath}\,v_{\jmath}$: only the terms with $\mu = \jmath$ contribute to the centre, and $\vec e_k^2 = -e_t$. The divergence-free condition is therefore the vanishing of the central part of $\vec\nabla_\Phi\vec v$, a scalar statement, while the remainder of $\vec\nabla_\Phi\vec v$ is the curl, a vector. The gradient of a vector thus splits into its $D^{(0)}$ and $D^{(1)}$ pieces, exactly the two representations the algebra carries:
+obtained from $\vec\nabla_\Phi\vec v = \sum_{\imath,\jmath}\vec e_{\imath} \vec e_{\jmath}\,\partial/\partial R_{\imath}\,v_{\jmath}$: only the terms with $\mu = \jmath$ contribute to the centre, and $\vec e_\imath^2 = -e_t$. The divergence-free condition is therefore the vanishing of the central part of $\vec\nabla_\Phi\vec v$, a scalar statement, while the remainder of $\vec\nabla_\Phi\vec v$ is the curl, a vector. The gradient of a vector thus splits into its $D^{(0)}$ and $D^{(1)}$ pieces, exactly the two representations the algebra carries:
 - Companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*, for the vector-part algebra and the commutator $[\tilde{Q}_1,\tilde{Q}_2] = -2(\vec Q_1\times\vec Q_2)$ used in these manipulations.
 
 ### The Energy of a Mode
@@ -271,7 +271,7 @@ It is worth stating exactly where the tower sits in the framework, because this 
 
 ### Time-Dependent Multipole Fields
 
-The moments $\mathrm{Sd}_{ij}(r'_t)$, $\mathrm{Sd}_{ijk}(r'_t), \dots$ are the sources of a time-dependent field. In the non-relativistic, long-wavelength limit — the wavelength large compared with the body, so that the source may be treated as a single oscillating moment — the field far from the source is the retarded multipole field, and its leading $l$-pole contribution falls off as $r^{-(l+1)}$ with an oscillatory factor at the source frequency. This is the standard multipole radiation of classical field theory, and it is imported here rather than re-derived.
+The moments $\mathrm{Sd}_{ij}(r'_t)$, $\mathrm{Sd}_{\imath\jmath\ell}(r'_t), \dots$ are the sources of a time-dependent field. In the non-relativistic, long-wavelength limit — the wavelength large compared with the body, so that the source may be treated as a single oscillating moment — the field far from the source is the retarded multipole field, and its leading $l$-pole contribution falls off as $r^{-(l+1)}$ with an oscillatory factor at the source frequency. This is the standard multipole radiation of classical field theory, and it is imported here rather than re-derived.
 
 ### Power Scaling
 
@@ -300,7 +300,7 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |

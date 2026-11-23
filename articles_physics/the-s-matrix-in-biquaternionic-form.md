@@ -344,12 +344,12 @@ Two gaps remain, and one identification remains conditional. The field S-matrix 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, the four-dimensional algebra over $\mathbb{C}$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace, home of the rotation rotors |
 | $\mathbb{B}_{C}=\mathbb{C}e_t$ | Centre of the algebra, home of the S-matrix's overall phase |
-| $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_{k\in\{x,y,z\}}\vec e_k\partial/\partial R_k$ | Biquaternionic gradient |
+| $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\partial/\partial R_\imath$ | Biquaternionic gradient |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | d'Alembertian |
 | $\langle\tilde{\mathcal S}_{\Psi}\rangle_{\natural}$ | Quaternionic norm, with $\tilde{\mathcal S}_{\Psi}\tilde{\mathcal S}_{\Psi}^{\natural}=\langle\tilde{\mathcal S}_{\Psi}\rangle_{\natural}e_t$ |
 | $\langle\tilde{\mathcal S}_{\Psi}\rangle_{\natural}=1$ | Unit-norm element, the Lorentz-rotor condition, $\mathrm{SL}(2,\mathbb{C})$ |

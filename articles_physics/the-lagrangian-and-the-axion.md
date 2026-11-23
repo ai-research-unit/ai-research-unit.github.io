@@ -30,7 +30,7 @@ What is not new. The axion, the Peccei–Quinn mechanism and the potential are s
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_k^{2}=-e_t$; the axion is a real central scalar, which is the central-scalar article's field with a periodic potential.
+The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\imath^{2}=-e_t$; the axion is a real central scalar, which is the central-scalar article's field with a periodic potential.
 
 The field. $a$ is real and periodic, $a\equiv a+2\pi f_a$; $f_a$ is the axion decay constant, with dimension of mass. The dimensionless angle is $\theta=a/f_a$.
 

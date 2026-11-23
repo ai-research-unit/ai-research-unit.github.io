@@ -64,11 +64,11 @@ The scope of the theorem. The same argument applies in every finite-dimensional 
 
 Why the framework is not in the business of satisfying the relation is a matter of what its observable algebra is.
 
-**What $\mathbb{B}_{\Psi}$ is.** The Hermitian subspace is the space of Hermitian $2\times2$ matrices, of real dimension four. It is exactly the observable space of a single two-state system: the identity $e_t$ and the three directions $i\vec e_x,i\vec e_y,i\vec e_z$ play the roles of the identity and the three Pauli matrices under the matrix model $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$. Its states are the elements $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $|\vec s_{\Psi}|\leq1$, the Bloch ball, with the pure states on the boundary.
+**What $\mathbb{B}_{\Psi}$ is.** The Hermitian subspace is the space of Hermitian $2\times2$ matrices, of real dimension four. It is exactly the observable space of a single two-state system: the identity $e_t$ and the three directions $i\vec e_x,i\vec e_y,i\vec e_z$ play the roles of the identity and the three Pauli matrices under the matrix model $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\imath)=-i\sigma_\imath$. Its states are the elements $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $|\vec s_{\Psi}|\leq1$, the Bloch ball, with the pure states on the boundary.
 
 An internal algebra. The algebra describes internal degrees of freedom: a two-valued label, its superpositions, its phases and its rotations. An observable of the algebra is an internal observable. Position is not an internal observable, and it is not obtainable from the internal ones, because the algebra has no element whose spectrum is a continuum and no element that fails to commute with a translation in a configuration variable.
 
-The spin analogy, stated exactly. In ordinary quantum mechanics the spin operators are finite-dimensional matrices, and they satisfy $[S_i,S_j]=i\,\frac{h}{2\pi}\sum_{k\in\{x,y,z\}}\epsilon_{ijk}S_k$ but not the canonical relation. Nobody describes spin as failing the canonical relation, because spin is not a position variable and the relation is not about spin. The framework is in the position of the spin algebra rather than in the position of a failed oscillator. Its $\mathbb{B}_{\Psi}$ is the same kind of object: a finite-dimensional observable algebra attached to a system the configuration space of which is described elsewhere, or not at all.
+The spin analogy, stated exactly. In ordinary quantum mechanics the spin operators are finite-dimensional matrices, and they satisfy $[S_i,S_j]=i\,\frac{h}{2\pi}\sum_{\imath\in\{x,y,z\}}\epsilon_{\imath\jmath\ell}S_\imath$ but not the canonical relation. Nobody describes spin as failing the canonical relation, because spin is not a position variable and the relation is not about spin. The framework is in the position of the spin algebra rather than in the position of a failed oscillator. Its $\mathbb{B}_{\Psi}$ is the same kind of object: a finite-dimensional observable algebra attached to a system the configuration space of which is described elsewhere, or not at all.
 
 What the framework does have. It has the rotation bracket, the state space, the Born pairing, the $*$-unitary dynamics on its state module, and the Fourier transform. None of these is a position operator, and none of them requires one. That is the whole content of the word *internal*.
 
@@ -86,9 +86,9 @@ Why this is not a defect. A theory is defective when it fails at a task it sets 
 
 The framework is not without commutators, and the one it carries is worth naming, together with the inequality the bracket implies, so that "no canonical relation" is neither read as "no commutation relation" nor as "no uncertainty relation".
 
-Angular momentum. With the spin elements $\tilde{S}_{\Psi,k}=\frac{h}{4\pi}i\vec e_k\in\mathbb{B}_{\Psi}$ one has
+Angular momentum. With the spin elements $\tilde{S}_{\Psi,k}=\frac{h}{4\pi}i\vec e_\imath\in\mathbb{B}_{\Psi}$ one has
 $$
-[\tilde{S}_{\Psi,i},\tilde{S}_{\Psi,j}]=i\,\frac{h}{2\pi}\sum_{k\in\{x,y,z\}}\epsilon_{ijk}\tilde{S}_{\Psi,k},
+[\tilde{S}_{\Psi,i},\tilde{S}_{\Psi,j}]=i\,\frac{h}{2\pi}\sum_{\imath\in\{x,y,z\}}\epsilon_{\imath\jmath\ell}\tilde{S}_{\Psi,k},
 $$
 the bracket of internal rotations, verified on the matrix model. The algebra therefore carries a non-abelian commutation relation of an observable pair, and it carries it exactly, with $\frac{h}{2\pi}$ entering only as the unit in which the generators are measured: the identity holds for every value of that unit, which is how the algebra records that it fixes no scale.
 
@@ -110,9 +110,9 @@ What this settles about independence. The framework is therefore not silent abou
 
 The framework also carries the Jordan and sesquilinear structures catalogued elsewhere in the series, and the bracket that fails to be a Lie bracket — the conjugate commutator — is recorded as a separate structural fact. None of these is the canonical relation, and none of them is obtained by weakening it.
 
-The relation has two halves, and the framework meets them differently. The relation is usually written as one display, $[r_j,p_k]=i\,\frac{h}{2\pi}\delta_{jk}$. On a carrier of fields with a vector potential present the same display splits into two statements with different content, and the companion article *The Kinetic Momentum: A Bracket That Does Not Close* derives the split. The first half is the bracket of position with momentum, and it is blind to the potential: $[r_j,\,p_k+f_k(\vec r)]=i\,\frac{h}{2\pi}\delta_{jk}$ for any function $f_k$ of position, gradient or not. The second half is the bracket of two momenta, and it is not blind, being $[p_j+f_j,\,p_k+f_k]=i\,\frac{h}{2\pi}(\partial_kf_j-\partial_jf_k)$ for a general shift and $[\pi_j,\pi_k]=i\,\frac{h}{2\pi}\,ϙ\varepsilon_{jk l}B_l$ for minimal coupling. A shift by a gradient moves neither half; any other shift moves only the second. The field therefore lives in the difference between the two invariance groups, and not in the display as a whole.
+The relation has two halves, and the framework meets them differently. The relation is usually written as one display, $[r_j,p_\imath]=i\,\frac{h}{2\pi}\delta_{j\imath}$. On a carrier of fields with a vector potential present the same display splits into two statements with different content, and the companion article *The Kinetic Momentum: A Bracket That Does Not Close* derives the split. The first half is the bracket of position with momentum, and it is blind to the potential: $[r_j,\,p_\imath+f_\imath(\vec r)]=i\,\frac{h}{2\pi}\delta_{j\imath}$ for any function $f_\imath$ of position, gradient or not. The second half is the bracket of two momenta, and it is not blind, being $[p_j+f_j,\,p_\imath+f_\imath]=i\,\frac{h}{2\pi}(\partial_\imathf_j-\partial_jf_\imath)$ for a general shift and $[\pi_j,\pi_\imath]=i\,\frac{h}{2\pi}\,ϙ\varepsilon_{j\imath l}B_l$ for minimal coupling. A shift by a gradient moves neither half; any other shift moves only the second. The field therefore lives in the difference between the two invariance groups, and not in the display as a whole.
 
-Which half the framework can hold. Neither half is an internal bracket of $\mathcal{A}$, because both need the position operator the framework does not have, and the trace theorem of this article forbids any pair inside $\mathbb{B}$ whose commutator is a non-zero central multiple of $e_t$. The two halves are still met differently. The field-strength half is a central element of $\mathbb{B}$, namely $i\,\frac{h}{2\pi}\,ϙ\varepsilon_{jk l}B_l\,e_t$, a scalar multiple of $e_t$ and hence an element of the algebra; the corpus writes the field strength there whenever it writes one. The framework can therefore name the object where it cannot generate it: naming places a value in the algebra, generating needs a pair inside it, and the trace theorem forbids only the second. The position–momentum half is met in neither way: it cannot be named as an algebra element and it cannot be generated, because its left-hand side needs the missing operator and its right-hand side is the same kind of central multiple with a coefficient that carries no field.
+Which half the framework can hold. Neither half is an internal bracket of $\mathcal{A}$, because both need the position operator the framework does not have, and the trace theorem of this article forbids any pair inside $\mathbb{B}$ whose commutator is a non-zero central multiple of $e_t$. The two halves are still met differently. The field-strength half is a central element of $\mathbb{B}$, namely $i\,\frac{h}{2\pi}\,ϙ\varepsilon_{j\imath l}B_l\,e_t$, a scalar multiple of $e_t$ and hence an element of the algebra; the corpus writes the field strength there whenever it writes one. The framework can therefore name the object where it cannot generate it: naming places a value in the algebra, generating needs a pair inside it, and the trace theorem forbids only the second. The position–momentum half is met in neither way: it cannot be named as an algebra element and it cannot be generated, because its left-hand side needs the missing operator and its right-hand side is the same kind of central multiple with a coefficient that carries no field.
 
 What the split refines in the independence claim. The claim of this article stands: $\mathcal{A}$ is unchanged whether the relation holds or not. What the split fixes is which part of the relation the claim is about, and the answer is not uniform. The field content of the relation sits entirely in the half the framework can name centrally, and that is the half the framework transcribes whenever it writes a field strength or a curvature. The half that carries no field, the position–momentum bracket, is the half whose absence the obstruction records. Naming the two apart is therefore not a refinement of notation: it separates the part of the relation the framework declines, because the continuum it encodes is not internal, from the part it holds as a value without holding the pair that would produce it.
 
@@ -192,7 +192,7 @@ The claim must not be overread, and the following are not asserted.
 | The Weyl form as a rewriting of the commutator form | Not equivalent; exponentiation needs the Baker–Campbell–Hausdorff formula, which needs bounded arguments |
 | $\mathbb{B}_{\Psi}$ as an observable algebra | Hermitian $2\times2$ matrices, real dimension four; observables of one two-state system |
 | Position operator inside $\mathbb{B}$ | None; $\mathbb{B}$ has no element of continuous spectrum |
-| Angular-momentum bracket in $\mathbb{B}_{\Psi}$ | Holds exactly, $[\tilde{S}_{\Psi,i},\tilde{S}_{\Psi,j}]=i\,\frac{h}{2\pi}\sum_{k\in\{x,y,z\}}\epsilon_{ijk}\tilde{S}_{\Psi,k}$ |
+| Angular-momentum bracket in $\mathbb{B}_{\Psi}$ | Holds exactly, $[\tilde{S}_{\Psi,i},\tilde{S}_{\Psi,j}]=i\,\frac{h}{2\pi}\sum_{\imath\in\{x,y,z\}}\epsilon_{\imath\jmath\ell}\tilde{S}_{\Psi,k}$ |
 | Robertson–Schrödinger inequality in $\mathbb{B}_{\Psi}$ | Holds for every non-commuting Hermitian pair; the spin case gives $s\ge\lvert m\rvert$, with equality at $s=\tfrac12$ |
 | Momentum in the framework | The dual (Fourier) variable, an argument and not an algebra element |
 | Position in the framework | The argument of the field, external structure |
@@ -203,8 +203,8 @@ The claim must not be overread, and the following are not asserted.
 | The clock-and-shift pair as a truncated canonical pair | No; it is the $\mathbb{Z}/N$ Weyl relation, $X^jZ^k=\omega^{jk}Z^kX^j$ |
 | Finite Weyl pair at $N>2$ | Outside $\mathbb{B}$; requires $M_N(\mathbb{C})$ |
 | Canonical relation as an axiom | Postulated, not derived; its consequences are tested |
-| First half, $[r_j,p_k+f_k(\vec r)]=i\,\frac{h}{2\pi}\delta_{jk}$ | Blind to every shift by a function of position, gradient or not; carries no field |
-| Second half, $[p_j+f_j,p_k+f_k]=i\,\frac{h}{2\pi}(\partial_k f_j-\partial_jf_k)$ | Not blind; vanishes for gradients and equals the field strength for minimal coupling |
+| First half, $[r_j,p_\imath+f_\imath(\vec r)]=i\,\frac{h}{2\pi}\delta_{j\imath}$ | Blind to every shift by a function of position, gradient or not; carries no field |
+| Second half, $[p_j+f_j,p_\imath+f_\imath]=i\,\frac{h}{2\pi}(\partial_\imath f_j-\partial_jf_\imath)$ | Not blind; vanishes for gradients and equals the field strength for minimal coupling |
 | Field strength as an algebra element | Central multiple of $e_t$, so nameable in $\mathbb{B}$; not generable, since the trace theorem forbids the pair |
 | Nature's realisation of the relation at all scales | Not established by the framework; an empirical question the framework cannot address |
 
@@ -231,15 +231,15 @@ The claim must not be overread, and the following are not asserted.
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ | Biquaternion algebra |
 | $\mathcal{A}$ | Internal algebra: $\mathbb{B}$ with its sectors, the plain form and its scalar reading, brackets and $*$-unitary group |
 | $\mathcal{M}$ | Carrier, a module over $\mathcal{A}$; its dimension is the domain's choice, finite or infinite |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ |
 | $2\,\mathrm{Sc}(\tilde{Q})$ | Doubled scalar part, $2\,\mathrm{Sc}(e_t)=2$ |
 | $\tilde{H}_{\Psi,1}=h_{t,1}\,e_t+i\vec h_{\Psi,1}$ | General element of $\mathbb{B}_{\Psi}$; $\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=h_{t,1}h_{t,2}+\vec h_{\Psi,1}\cdot\vec h_{\Psi,2}$ |
 | $[Q,P]=i\,\frac{h}{2\pi}\,I$ | Canonical commutation relation |
-| $\pi_k=p_k-ϙA_k$ | Mechanical momentum |
-| $[\pi_j,\pi_k]=i\,\frac{h}{2\pi}\,ϙ\varepsilon_{jk l}B_l$ | Field-strength commutator; a central multiple of $e_t$, hence an element of $\mathbb{B}$ |
+| $\pi_\imath=p_\imath-ϙA_\imath$ | Mechanical momentum |
+| $[\pi_j,\pi_\imath]=i\,\frac{h}{2\pi}\,ϙ\varepsilon_{j\imath l}B_l$ | Field-strength commutator; a central multiple of $e_t$, hence an element of $\mathbb{B}$ |
 | $\exp(i\theta_{\mathrm{wyl},Q} Q)\exp(i\theta_{\mathrm{wyl},P} P)=\exp(-i\theta_{\mathrm{wyl}})\exp(i\theta_{\mathrm{wyl},P} P)\exp(i\theta_{\mathrm{wyl},Q} Q)$ | Weyl form of the relation |
 | $[Q,P^n]=i\,\frac{h}{2\pi}\,nP^{n-1}$ | the identity behind the boundedness obstruction; the case $m=1$ of McCoy's formula |
 | $\lVert Q\rVert$, $\lVert P\rVert$ | operator norms |
@@ -247,13 +247,13 @@ The claim must not be overread, and the following are not asserted.
 | $(\delta A)^2(\delta B)^2\ge\tfrac14\lvert\langle[A,B]\rangle\rvert^2+\tfrac14\lvert\langle\{\delta A,\delta B\}\rangle\rvert^2$ | Robertson–Schrödinger inequality |
 | $s$, $m$, $\frac{h^{2}}{4\pi^{2}}\,s\,(s+1)$ | spin label, magnetic label, and the value of the Casimir $\tilde S_{\Psi,1}^2+\tilde S_{\Psi,2}^2+\tilde S_{\Psi,3}^2$ |
 | $|x\rangle$, $\langle x|x_2\rangle=\delta(x-x_2)$ | Position eigenstate; not a vector of $L^2(\mathbb{R})$ |
-| $\tilde{S}_{\Psi,k}=\frac{h}{4\pi}i\vec e_k$ | Spin (rotation) generators in $\mathbb{B}_{\Psi}$ |
-| $[\tilde{S}_{\Psi,i},\tilde{S}_{\Psi,j}]=i\,\frac{h}{2\pi}\sum_{k\in\{x,y,z\}}\epsilon_{ijk}\tilde{S}_{\Psi,k}$ | Angular-momentum bracket |
+| $\tilde{S}_{\Psi,k}=\frac{h}{4\pi}i\vec e_\imath$ | Spin (rotation) generators in $\mathbb{B}_{\Psi}$ |
+| $[\tilde{S}_{\Psi,i},\tilde{S}_{\Psi,j}]=i\,\frac{h}{2\pi}\sum_{\imath\in\{x,y,z\}}\epsilon_{\imath\jmath\ell}\tilde{S}_{\Psi,k}$ | Angular-momentum bracket |
 | $X=\mathrm{diag}(1,\omega,\dots,\omega^{N-1})$, $\omega=\exp(2\pi i/N)$ | Clock of the finite Weyl pair |
 | $Z\lvert n\rangle=\lvert n+1\ \mathrm{mod}\ N\rangle$ | Shift of the finite Weyl pair |
 | $XZ=\omega ZX$ | Weyl (clock-and-shift) relation; phase in place of $i\,\frac{h}{2\pi}$ |
 | $X^jZ^k=\omega^{jk}Z^kX^j$ | the $\mathbb{Z}/N$ Weyl relation, of which the pair above is the case $j=k=1$ |
-| $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ | Matrix model of $\mathbb{B}$ |
+| $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\imath)=-i\sigma_\imath$ | Matrix model of $\mathbb{B}$ |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$, $|\vec s_{\Psi}|\leq1$ | State, the Bloch ball |
 
 ## Further Reading

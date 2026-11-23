@@ -264,13 +264,13 @@ For a field the vacuum is a state in a module and not an element of the algebra:
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=\varepsilon_{\imath\jmath\lambda}\vec e_\lambda$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=\varepsilon_{\imath\jmathk}\vec e_\imath$ |
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H},\mathbb{B}_{C}$ | Real-quaternion subspace; centre $\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ |
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\imath} Q_{\imath}^2=\det\mathsf{M}_2(\tilde Q)$ | Biquaternion norm |
 | $2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$, $2\,\mathrm{Sc}(e_t)=2$ | Scalar-part reading of the Hermitian form |
-| $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ | Matrix isomorphism |
+| $\mathsf{M}_2(\vec e_\imath)=-i\sigma_\imath$, $\mathsf{M}_2(i)=iI_2$ | Matrix isomorphism |
 | $\tilde\Pi_{\mathrm{id}}(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, $\vec u\in S^2$ | Minimal idempotents; vacuum idempotents |
 | $|0\rangle\langle 0|=\tilde\Pi_{\mathrm{id},+}$ | One-mode vacuum idempotent |
 | $\tilde\Pi_{\mathrm{id},-}=\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}$ | Number operator (occupied idempotent) |

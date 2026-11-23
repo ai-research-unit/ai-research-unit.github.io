@@ -144,7 +144,7 @@ $$
 
 **The abelian limit.** If all the $\mathcal{A}_{\imath}$ are central — the abelian case — the commutator term vanishes, the transformation law degenerates to the abelian one, and $F_{\imath\jmath}$ becomes invariant. The invariance of the abelian field strength is therefore not a general property of the curvature; it is the consequence of centrality, and it is exactly what fails here.
 
-**The connection as an adjoint-valued orbit.** The parent's interpretation of the connection as a gauge orbit survives, with the abelian group replaced by the adjoint action. The single point $\mathcal{A}_{\imath}(\tilde{Q}_0) = 0$ can still be reached at any one point: take $\tilde Q(\tilde{Q}_0)$ arbitrary in $SU(2)$ and set $(\partial/\partial R_{\imath} \tilde Q)(\tilde{Q}_0) = i\kappa\,\tilde Q(\tilde{Q}_0)\mathcal{A}_{\imath}(\tilde{Q}_0)$, as the vanishing of $\mathcal{A}_{\mathrm g,\imath} = \tilde Q\mathcal{A}_{\imath} \tilde Q^{-1} + (i/\kappa)(\partial/\partial R_{\imath} \tilde Q)\tilde Q^{-1}$ requires. The first derivatives of a matrix-valued function at a point can be set freely subject to the conjugation condition that unitarity imposes, and the prescribed derivative meets that condition under the mixed reality assignment exhibited in the reality-condition section below ($\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_k$ Hermitian); for a uniform anti-Hermitian connection the spatial components cannot be brought to zero by a $*$-unitary $\tilde Q$. For that mixed assignment the connection therefore has no gauge-invariant local value. The curvature is again the obstruction to doing this on a neighbourhood. The difference is that the orbit is now the orbit of a vector under conjugation rather than a translate of a scalar, and the statement "$\mathcal{A}$ can be gauged to zero at a point" is a statement about a matrix, not a number.
+**The connection as an adjoint-valued orbit.** The parent's interpretation of the connection as a gauge orbit survives, with the abelian group replaced by the adjoint action. The single point $\mathcal{A}_{\imath}(\tilde{Q}_0) = 0$ can still be reached at any one point: take $\tilde Q(\tilde{Q}_0)$ arbitrary in $SU(2)$ and set $(\partial/\partial R_{\imath} \tilde Q)(\tilde{Q}_0) = i\kappa\,\tilde Q(\tilde{Q}_0)\mathcal{A}_{\imath}(\tilde{Q}_0)$, as the vanishing of $\mathcal{A}_{\mathrm g,\imath} = \tilde Q\mathcal{A}_{\imath} \tilde Q^{-1} + (i/\kappa)(\partial/\partial R_{\imath} \tilde Q)\tilde Q^{-1}$ requires. The first derivatives of a matrix-valued function at a point can be set freely subject to the conjugation condition that unitarity imposes, and the prescribed derivative meets that condition under the mixed reality assignment exhibited in the reality-condition section below ($\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_\imath$ Hermitian); for a uniform anti-Hermitian connection the spatial components cannot be brought to zero by a $*$-unitary $\tilde Q$. For that mixed assignment the connection therefore has no gauge-invariant local value. The curvature is again the obstruction to doing this on a neighbourhood. The difference is that the orbit is now the orbit of a vector under conjugation rather than a translate of a scalar, and the statement "$\mathcal{A}$ can be gauged to zero at a point" is a statement about a matrix, not a number.
 
 ## The Field Strength as the Commutator of Covariant Derivatives
 
@@ -165,13 +165,13 @@ The identity has a structural interpretation that the abelian case hides. The fa
 The field strength is constructed from the connection by differentiation, so it cannot be arbitrary: it satisfies a differential identity. In the non-abelian case this identity is not optional either, and it is the statement that the covariant derivative of $F$ is a cycle. Define the covariant derivative acting on an algebra-valued field $\tilde{Q}$ by the adjoint action,
 
 $$
-D_\lambda \tilde{Q} = \partial/\partial R_\lambda \tilde{Q} + i\kappa\,[\mathcal{A}_\lambda, \tilde{Q}],
+D_\imath \tilde{Q} = \partial/\partial R_\imath \tilde{Q} + i\kappa\,[\mathcal{A}_\imath, \tilde{Q}],
 $$
 
-which is the same as the commutator of operators, $[D_\lambda,\tilde{Q}] = D_\lambda \tilde{Q}$ when $\tilde{Q}$ is multiplication by an algebra element. Then the **Bianchi identity** is
+which is the same as the commutator of operators, $[D_\imath,\tilde{Q}] = D_\imath \tilde{Q}$ when $\tilde{Q}$ is multiplication by an algebra element. Then the **Bianchi identity** is
 
 $$
-D_\lambda F_{\imath\jmath} + D_{\imath} F_{\jmath\lambda} + D_{\jmath} F_{\lambda\imath} = 0
+D_\imath F_{\imath\jmath} + D_{\imath} F_{\jmathk} + D_{\jmath} F_{k\imath} = 0
 \qquad \text{for all } (\lambda,\imath,\jmath).
 $$
 
@@ -179,18 +179,18 @@ It was recomputed on all four independent triples $(\lambda,\imath,\jmath) = (0,
 
 **Where the Jacobi identity enters.** There are two distinct places, and conflating them hides the structure.
 
-- **At the level of operators.** The covariant derivatives $D_{\imath}$ are operators, and the Jacobi identity for the commutator of any associative algebra gives $[D_\lambda,[D_{\imath},D_{\jmath}]] + [D_{\imath},[D_{\jmath},D_\lambda]] + [D_{\jmath},[D_\lambda,D_{\imath}]] = 0$. Substituting $[D_{\imath},D_{\jmath}] = i\kappa F_{\imath\jmath}$ and $[D_\lambda,F_{\imath\jmath}] = D_\lambda F_{\imath\jmath}$ turns this operator identity directly into the Bianchi identity. The identity is exact for operators regardless of the reality or compactness of the connection algebra; it is the associativity of operator composition.
+- **At the level of operators.** The covariant derivatives $D_{\imath}$ are operators, and the Jacobi identity for the commutator of any associative algebra gives $[D_\imath,[D_{\imath},D_{\jmath}]] + [D_{\imath},[D_{\jmath},D_\imath]] + [D_{\jmath},[D_\imath,D_{\imath}]] = 0$. Substituting $[D_{\imath},D_{\jmath}] = i\kappa F_{\imath\jmath}$ and $[D_\imath,F_{\imath\jmath}] = D_\imath F_{\imath\jmath}$ turns this operator identity directly into the Bianchi identity. The identity is exact for operators regardless of the reality or compactness of the connection algebra; it is the associativity of operator composition.
 - **At the level of the connection components.** In the coordinate proof, the terms built from $\mathcal{A}\wedge\mathcal{A}$ must cancel against the derivatives of the commutator term, and the cancellation uses the *algebraic* Jacobi identity for the connection components,
 $$
-[\mathcal{A}_\lambda, [\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]] + [\mathcal{A}_{\imath}, [\mathcal{A}_{\jmath},\mathcal{A}_\lambda]] + [\mathcal{A}_{\jmath}, [\mathcal{A}_\lambda,\mathcal{A}_{\imath}]] = 0 .
+[\mathcal{A}_\imath, [\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]] + [\mathcal{A}_{\imath}, [\mathcal{A}_{\jmath},\mathcal{A}_\imath]] + [\mathcal{A}_{\jmath}, [\mathcal{A}_\imath,\mathcal{A}_{\imath}]] = 0 .
 $$
 
-The second is the same identity that the general theory of Lie algebras singles out: in *Lie Algebras: A General Introduction* it is the identity that makes the adjoint action $\mathrm{ad}_q = [q,\cdot]$ a derivation of the bracket. It is that derivation property, $\mathrm{ad}_{\mathcal{A}_\lambda}([\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]) = [\mathrm{ad}_{\mathcal{A}_\lambda}\mathcal{A}_{\imath},\mathcal{A}_{\jmath}] + [\mathcal{A}_{\imath},\mathrm{ad}_{\mathcal{A}_\lambda}\mathcal{A}_{\jmath}]$, that makes $D_\lambda$ act on a commutator by the Leibniz rule in the coordinate computation. The algebraic Jacobi identity was checked exactly on the three generators of $\mathrm{SU}(2)$, with residual identically zero.
+The second is the same identity that the general theory of Lie algebras singles out: in *Lie Algebras: A General Introduction* it is the identity that makes the adjoint action $\mathrm{ad}_q = [q,\cdot]$ a derivation of the bracket. It is that derivation property, $\mathrm{ad}_{\mathcal{A}_k}([\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]) = [\mathrm{ad}_{\mathcal{A}_k}\mathcal{A}_{\imath},\mathcal{A}_{\jmath}] + [\mathcal{A}_{\imath},\mathrm{ad}_{\mathcal{A}_k}\mathcal{A}_{\jmath}]$, that makes $D_\imath$ act on a commutator by the Leibniz rule in the coordinate computation. The algebraic Jacobi identity was checked exactly on the three generators of $\mathrm{SU}(2)$, with residual identically zero.
 
 **Continuous formulation.** Contracting the Bianchi identity with the totally antisymmetric symbol gives the compact form
 
 $$
-\varepsilon_{\lambda\imath\jmath\rho}\, D_\lambda F_{\imath\jmath} = 0,
+\varepsilon_{k\imath\jmath\rho}\, D_\imath F_{\imath\jmath} = 0,
 $$
 
 which is the non-abelian analogue of the statement that the homogeneous Maxwell equations are automatic once the field strength is a curl. This is the sense in which the parent article's remark — "the homogeneous Maxwell equations are identities rather than equations of motion" — survives the non-abelian extension: it survives as the Bianchi identity, *not* as the one-line source-free equation $\tilde\nabla_\Phi\tilde{F} = 0$, which the parent's companion records is the full source-free Maxwell system and not the Bianchi identity.
@@ -246,12 +246,12 @@ $$
 which says that $(\partial/\partial R_{\imath} \tilde Q)\tilde Q^{-1}$ is anti-Hermitian **when the derivative is an ordinary real derivative**. This was checked numerically on a general $*$-unitary $\tilde Q$ (not merely on the exponential parametrization); what was found is the sharp split
 
 $$
-(\partial/\partial R_k \tilde Q)\,\tilde Q^{-1} \ \text{is anti-Hermitian for } k=1,2,3,
+(\partial/\partial R_\imath \tilde Q)\,\tilde Q^{-1} \ \text{is anti-Hermitian for } k=1,2,3,
 \qquad
 (\partial/\partial R_t \tilde Q)\,\tilde Q^{-1} \ \text{is Hermitian.}
 $$
 
-The reason is the $i r'_t$ convention. The time derivative is $\partial/\partial R_t = -i\partial/\partial r'_t$, so the object $(\partial/\partial R_t\,\tilde Q)\tilde Q^{-1}$ carries a factor $-i$ relative to $(\partial/\partial r'_t\,U)\tilde Q^{-1}$; and both $(\partial/\partial r'_t\,U)\tilde Q^{-1}$ and $(\partial/\partial R_k\,U)\tilde Q^{-1}$ are anti-Hermitian for a $*$-unitary $\tilde Q$. Multiplication by $-i$ converts an anti-Hermitian matrix into a Hermitian one. Hence the time-like component of the Maurer–Cartan form has the opposite conjugation behaviour to the space-like components.
+The reason is the $i r'_t$ convention. The time derivative is $\partial/\partial R_t = -i\partial/\partial r'_t$, so the object $(\partial/\partial R_t\,\tilde Q)\tilde Q^{-1}$ carries a factor $-i$ relative to $(\partial/\partial r'_t\,U)\tilde Q^{-1}$; and both $(\partial/\partial r'_t\,U)\tilde Q^{-1}$ and $(\partial/\partial R_\imath\,U)\tilde Q^{-1}$ are anti-Hermitian for a $*$-unitary $\tilde Q$. Multiplication by $-i$ converts an anti-Hermitian matrix into a Hermitian one. Hence the time-like component of the Maurer–Cartan form has the opposite conjugation behaviour to the space-like components.
 
 The consequence for the reality condition is immediate. The transformation law is
 
@@ -275,14 +275,14 @@ Two things can be said, one verified and one open.
 $$
 \mathcal{A}_0 \ \text{anti-Hermitian scalar-free (in } \mathrm{SU}(2)\subset\mathbb{B}_{\Phi}\text{)},
 \qquad
-\mathcal{A}_k \ \text{Hermitian scalar-free (in } i\,\mathrm{SU}(2)\subset\mathbb{B}_{\Psi}\text{)} ,
+\mathcal{A}_\imath \ \text{Hermitian scalar-free (in } i\,\mathrm{SU}(2)\subset\mathbb{B}_{\Psi}\text{)} ,
 $$
-under which the transformed components close: $\mathcal{A}_{\mathrm g,0}$ is anti-Hermitian and scalar-free and $\mathcal{A}_{\mathrm g,k}$ is Hermitian and scalar-free, to $10^{-9}$ under a generic $*$-unitary $\tilde Q$; and the adjoint transformation $F_{\mathrm g,\imath\jmath} = \tilde Q F_{\imath\jmath}\tilde Q^{-1}$ continues to hold for the mixed pairs. The time component sits in the material sector and the spatial components in the informational sector; the pattern is the one the $i r'_t$ convention dictates for any four-vector ($x_0= i r'_t$ imaginary, $x_k$ real), and it mirrors the parent's abelian connection $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ with its imaginary scalar and real vector coefficients.
+under which the transformed components close: $\mathcal{A}_{\mathrm g,0}$ is anti-Hermitian and scalar-free and $\mathcal{A}_{\mathrm g,k}$ is Hermitian and scalar-free, to $10^{-9}$ under a generic $*$-unitary $\tilde Q$; and the adjoint transformation $F_{\mathrm g,\imath\jmath} = \tilde Q F_{\imath\jmath}\tilde Q^{-1}$ continues to hold for the mixed pairs. The time component sits in the material sector and the spatial components in the informational sector; the pattern is the one the $i r'_t$ convention dictates for any four-vector ($x_0= i r'_t$ imaginary, $x_\imath$ real), and it mirrors the parent's abelian connection $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ with its imaginary scalar and real vector coefficients.
 - **Open.** Whether this mixed assignment is the one the framework intends, or whether the time-like and space-like components should be combined into a single reality condition by a different placement of the factor $i$ in $D_{\imath}$, is not settled here. The obstruction is a property of the $i r'_t$ derivative and not of the gauge algebra; changing the placement of $i$ relabels which components carry which reality but does not remove the mismatch. This is a genuine gap and is carried into the open questions.
 
 ## Open Questions
 
-1. **The reality class of the connection.** The obstruction above shows that no single Hermitian-conjugation eigenspace is gauge invariant across all four components under the $i r'_t$ derivative. Is the mixed assignment $\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_k$ Hermitian the intended one, or is the factor $i$ in $D_{\imath}$ to be placed differently, and with what consequence for the physical identification of the connection with the parent's $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$?
+1. **The reality class of the connection.** The obstruction above shows that no single Hermitian-conjugation eigenspace is gauge invariant across all four components under the $i r'_t$ derivative. Is the mixed assignment $\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_\imath$ Hermitian the intended one, or is the factor $i$ in $D_{\imath}$ to be placed differently, and with what consequence for the physical identification of the connection with the parent's $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$?
 
 2. **Which compact algebra, and how many factors.** This article exhibits $\mathrm{SU}(2)$ inside the vector part of $\mathbb{B}_{\Phi}$. The material sector decomposes as $\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, so the algebra available is $\mathrm{U}(1)\oplus\mathrm{SU}(2)$. Is a larger gauge algebra, such as $\mathrm{SU}(2)\times\mathrm{SU}(2)$ or a higher-rank algebra, available by using the full scalar-free subspace of $\mathbb{B}$ or by complexification, and does the framework select one?
 
@@ -322,7 +322,7 @@ $$
 F_{\mathrm g,\imath\jmath} = \tilde Q\,F_{\imath\jmath}\,\tilde Q^{-1}.
 $$
 
-This is the essential difference from the abelian case, and it was verified on all six independent components on a generic non-commuting connection, with the transformation law holding to $10^{-11}$ and the change being of order unity. It satisfies the Bianchi identity $D_\lambda F_{\imath\jmath} + D_{\imath} F_{\jmath\lambda} + D_{\jmath} F_{\lambda\imath} = 0$, verified on four independent triples, and the Jacobi identity enters both at the operator level, giving the Bianchi identity from $[D_\lambda,[D_{\imath},D_{\jmath}]] + \text{cyclic} = 0$, and at the level of the connection components, where it is the derivation property of the adjoint action that cancels the $\mathcal{A}\wedge\mathcal{A}$ terms. The Yang–Mills density $-\tfrac12\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$ is gauge invariant, verified to $10^{-9}$, with the matrix trace on the $\mathrm{SU}(2)$ factor and not the informational pairing formula.
+This is the essential difference from the abelian case, and it was verified on all six independent components on a generic non-commuting connection, with the transformation law holding to $10^{-11}$ and the change being of order unity. It satisfies the Bianchi identity $D_\imath F_{\imath\jmath} + D_{\imath} F_{\jmathk} + D_{\jmath} F_{k\imath} = 0$, verified on four independent triples, and the Jacobi identity enters both at the operator level, giving the Bianchi identity from $[D_\imath,[D_{\imath},D_{\jmath}]] + \text{cyclic} = 0$, and at the level of the connection components, where it is the derivation property of the adjoint action that cancels the $\mathcal{A}\wedge\mathcal{A}$ terms. The Yang–Mills density $-\tfrac12\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$ is gauge invariant, verified to $10^{-9}$, with the matrix trace on the $\mathrm{SU}(2)$ factor and not the informational pairing formula.
 
 Two things are left visible. First, a **defect in the parent**: the curvature formulas $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ and $\tilde{F} = \tfrac12\sum F_{\imath\jmath}\bar{e}_{\imath} e_{\jmath}$ do not survive; the non-abelian representative $\mathcal{F} = \tfrac12\sum F_{\imath\jmath}\bar{e}_{\imath} e_{\jmath}$ is a definition, and $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\mathcal{A})$ is neither in the right reality class nor adjoint-covariant. Second, a **gap**: no single Hermitian-conjugation eigenspace is preserved by the gauge transformation across all four components, because $\partial/\partial R_t = -i\partial/\partial r'_t$ flips the conjugation behaviour of the Maurer–Cartan form in the time direction. A consistent mixed assignment exists — time in $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$, space in $i\,\mathrm{SU}(2)\subset\mathbb{B}_{\Psi}$ — but whether it is the intended physical one is not settled here.
 
@@ -354,8 +354,8 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 | $F = d\mathcal{A} + i\kappa\,\mathcal{A}\wedge\mathcal{A}$ | Curvature two-form; $(\mathcal{A}\wedge\mathcal{A})_{\imath\jmath}=[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]$ |
 | $F_{\mathrm g,\imath\jmath} = \tilde Q F_{\imath\jmath}\tilde Q^{-1}$ | Adjoint (NOT invariant) transformation of the field strength |
 | $[D_{\imath},D_{\jmath}] = i\kappa F_{\imath\jmath}$ | Curvature as commutator of covariant derivatives |
-| $D_\lambda \tilde{Q} = \partial/\partial R_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Adjoint covariant derivative, $[D_\lambda,\tilde{Q}]=D_\lambda \tilde{Q}$ |
-| $D_\lambda F_{\imath\jmath} + \text{cyclic} = 0$ | Bianchi identity |
+| $D_\imath \tilde{Q} = \partial/\partial R_\imath \tilde{Q} + i\kappa[\mathcal{A}_\imath,\tilde{Q}]$ | Adjoint covariant derivative, $[D_\imath,\tilde{Q}]=D_\imath \tilde{Q}$ |
+| $D_\imath F_{\imath\jmath} + \text{cyclic} = 0$ | Bianchi identity |
 | $\mathcal{F} = \tfrac12\sum_{\imath\jmath}F_{\imath\jmath}\bar{e}_{\imath} e_{\jmath}$ | Biquaternion representative of the curvature (a definition) |
 | $-\tfrac12\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$ | Gauge-invariant Yang–Mills density |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

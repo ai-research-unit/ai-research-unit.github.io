@@ -307,7 +307,7 @@ whose squared modulus is the transition probability and whose argument is the ph
 The modulus is invariant under a central phase and the argument shifts by the relative phase.
 
 $$
-\tilde\Xi_k\mapsto e^{i\theta_k}\tilde\Xi_k\quad\Longrightarrow\quad A\mapsto e^{i(\theta_1-\theta_2)}A .
+\tilde\Xi_\imath\mapsto e^{i\theta_\imath}\tilde\Xi_\imath\quad\Longrightarrow\quad A\mapsto e^{i(\theta_1-\theta_2)}A .
 $$
 
 The axis of the pair is not part of the amplitude. It is the vector part of the commutator of the two state idempotents, hence the normal to the great circle joining the two directions on the Bloch sphere; the amplitude is a scalar and has no vector part.

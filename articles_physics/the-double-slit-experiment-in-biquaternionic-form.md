@@ -94,7 +94,7 @@ $$
 \tilde{Ϛ}_{\Psi} = \frac{\tilde{Ξ}\,\tilde{Ξ}^{\dagger}}{2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})},
 $$
 
-and the entries are, with $\rho_{jk}$ the matrix elements in the path basis,
+and the entries are, with $\rho_{j\imath}$ the matrix elements in the path basis,
 
 $$
 \rho_{11} = \frac{|A_1|^2}{|A_1|^2 + |A_2|^2}, \qquad
@@ -191,7 +191,7 @@ $$
 \exp(\frac{2\pi \vec u\,S}{h}) = \cos\!\Big(\frac{2\pi S}{h}\Big)e_t + \sin\!\Big(\frac{2\pi S}{h}\Big)\vec{u},
 $$
 
-which is $*$-unitary, $(\exp(\frac{2\pi \vec u\,S}{h}))(\exp(\frac{2\pi \vec u\,S}{h}))^\dagger = e_t$, and whose exponent $\frac{2\pi \vec u\,S}{h}$ also lies in $\mathbb{B}_{\Phi}$. Under the isomorphism $\vec e_k \mapsto -i\sigma_k$ with $\vec{u} = \vec e_z$ it maps to
+which is $*$-unitary, $(\exp(\frac{2\pi \vec u\,S}{h}))(\exp(\frac{2\pi \vec u\,S}{h}))^\dagger = e_t$, and whose exponent $\frac{2\pi \vec u\,S}{h}$ also lies in $\mathbb{B}_{\Phi}$. Under the isomorphism $\vec e_\imath \mapsto -i\sigma_\imath$ with $\vec{u} = \vec e_z$ it maps to
 
 $$
 \exp(\frac{2\pi \vec e_{z}\,S}{h}) \;\longmapsto\; \operatorname{diag}\!\bigl(\exp(-i\theta_{\mathrm{act}}),\, \exp(+i\theta_{\mathrm{act}})\bigr),
@@ -205,7 +205,7 @@ $$
 2\,\mathrm{Sc}\!\bigl((\tilde Q_{\mathrm{amp}}s)^\dagger(\tilde Q_{\mathrm{amp}}s)\bigr) = 2\,\mathrm{Sc}\bigl(s^\dagger \tilde Q_{\mathrm{amp}}^{\natural}\tilde Q_{\mathrm{amp}}s\bigr) = \langle\tilde Q_{\mathrm{amp}}\rangle_{\natural}\,2\,\mathrm{Sc}(s^\dagger s) = \bigl(a_1^2 + a_2^2 + 2a_1a_2\cos\delta\bigr),
 $$
 
-because $\tilde Q_{\mathrm{amp}}^{\natural}\tilde Q_{\mathrm{amp}} = \langle\tilde Q_{\mathrm{amp}}\rangle_{\natural}e_t$ is central and $\langle\tilde Q_{\mathrm{amp}}\rangle_{\natural} = \langle\tilde Q_{\mathrm{amp}},\tilde Q_{\mathrm{amp}}\rangle_{\natural} = \bigl(\sum_k a_k\cos\theta_{\mathrm{pha},k}\bigr)^2 + \bigl(\sum_k a_k\sin\theta_{\mathrm{pha},k}\bigr)^2 = |a_1 \exp(i\theta_{\mathrm{pha},1}) + a_2 \exp(i\theta_{\mathrm{pha},2})|^2$. This is *exactly* the central-phase intensity. The identity was checked numerically on random amplitudes and random spinors: the central and non-central intensities agreed to about $4\times10^{-14}$, the level of floating-point round-off.
+because $\tilde Q_{\mathrm{amp}}^{\natural}\tilde Q_{\mathrm{amp}} = \langle\tilde Q_{\mathrm{amp}}\rangle_{\natural}e_t$ is central and $\langle\tilde Q_{\mathrm{amp}}\rangle_{\natural} = \langle\tilde Q_{\mathrm{amp}},\tilde Q_{\mathrm{amp}}\rangle_{\natural} = \bigl(\sum_\imath a_\imath\cos\theta_{\mathrm{pha},k}\bigr)^2 + \bigl(\sum_\imath a_\imath\sin\theta_{\mathrm{pha},k}\bigr)^2 = |a_1 \exp(i\theta_{\mathrm{pha},1}) + a_2 \exp(i\theta_{\mathrm{pha},2})|^2$. This is *exactly* the central-phase intensity. The identity was checked numerically on random amplitudes and random spinors: the central and non-central intensities agreed to about $4\times10^{-14}$, the level of floating-point round-off.
 
 So the *spin-summed* two-slit intensity, for a common spin state, is **root-independent**; the double slit, read as an intensity pattern without spin analysis, does not by itself witness the centrality of the phase. What the non-central choice changes is not this number but the *type* of the amplitude and the *action* of the phase:
 
@@ -310,7 +310,7 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
 | $i$ | Scalar imaginary, central, $i^2 = -e_t$ |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre; home of the path phase |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |

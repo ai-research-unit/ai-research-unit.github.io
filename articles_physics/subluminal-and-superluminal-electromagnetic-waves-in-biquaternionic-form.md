@@ -77,7 +77,7 @@ $$
 with $f$ a constant element and $k$ the propagation vector. The gradient acts on the phase through the symbol
 
 $$
--2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi,\qquad 2\pi\vec\nu_\Phi=\sum_{k\in\{x,y,z\}}\vec e_k 2\pi\nu_{\Phik} ,
+-2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi,\qquad 2\pi\vec\nu_\Phi=\sum_{\imath\in\{x,y,z\}}\vec e_\imath 2\pi\nu_{\Phik} ,
 $$
 
 so the equation is $-2\pi i\tilde\Upsilon_{\Phi}f=0$. Applying $2\pi i\tilde\Upsilon_{\Phi}^{\natural}$ on the left gives $2\pi i\tilde\Upsilon_{\Phi}^{\natural}\cdot(-2\pi i\tilde\Upsilon_{\Phi})f=-\tilde\Upsilon_{\Phi}^{\natural}\tilde\Upsilon_{\Phi}f=(4\pi^{2}\nu_t^{\prime\,2}-|2\pi\vec\nu_\Phi|^2)f=0$, and the propagation vector is **null**,
@@ -116,7 +116,7 @@ $$
 
 with $\vec W(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ a fixed vector field, given explicitly in the source in terms of $\alpha=\Omega r\cos\Omega r-\sin\Omega r$ and $\theta_{\mathrm{dua}}=3\alpha+\Omega^2r^2\sin\Omega r$, with the angular dependence of the lowest spherical harmonics.
 
-Three of its properties are the point of the construction. First, the invariant $I_1=\vec E_0^2-c^2\vec B_0^2$ and the pseudo-invariant $I_2=\vec E_0\cdot\vec B_0$ of *The Field-Strength Biquaternion and Its Invariants* are **not zero**. Here $\vec E_0^2$ is the sum of squared components, as in that article: the source's $\vec E$ and $\vec B$ are three-vectors whose units square to $+1$, as in the vector calculus, not spatial units $\vec e_k$, which square to $-1$. Both fields are parallel to $\vec W$ and a quarter period apart, so in the source's Gaussian units
+Three of its properties are the point of the construction. First, the invariant $I_1=\vec E_0^2-c^2\vec B_0^2$ and the pseudo-invariant $I_2=\vec E_0\cdot\vec B_0$ of *The Field-Strength Biquaternion and Its Invariants* are **not zero**. Here $\vec E_0^2$ is the sum of squared components, as in that article: the source's $\vec E$ and $\vec B$ are three-vectors whose units square to $+1$, as in the vector calculus, not spatial units $\vec e_\imath$, which square to $-1$. Both fields are parallel to $\vec W$ and a quarter period apart, so in the source's Gaussian units
 
 $$
 I_2=-\tfrac12|\vec W|^2\sin 2\Omega r'_t,\qquad I_1=-|\vec W|^2\cos 2\Omega r'_t,

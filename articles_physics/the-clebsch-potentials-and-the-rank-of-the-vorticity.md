@@ -94,7 +94,7 @@ with $\chi_{\mathrm{mic},\imath}$ the infinitesimal rotation vector of the triad
 Its stress is not symmetric, and the antisymmetry is a torque and not a force. For a Cosserat medium the force balance is the usual one and the moment balance is separate. Writing $\sigma_{ij}$ for the stress, $\mu_{\mathrm{cpl},ij}$ for the couple stress, and
 
 $$
-\tau_i=\varepsilon_{ijk}\sigma_{jk}
+\tau_i=\varepsilon_{\imath\jmath\ell}\sigma_{j\imath}
 $$
 
 for the torque density that the antisymmetric part of the stress exerts, the moment balance is
@@ -153,7 +153,7 @@ For a medium with an orientation the invariant is built from the spin and the vo
 
 ## What Is Established and What Is Interpretation
 
-Established. The Clebsch representation and its vorticity, $\omega=\mathrm{d}\alpha_{\mathrm{clb}}\wedge\mathrm{d}\beta_{\mathrm{clb}}$, which is an identity. The rank classification and its test, $\omega\wedge\omega=(\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}})\,\mathrm{d}V$ and $\det\omega=(\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}})^{2}$, checked symbolically on a general antisymmetric array. That every two-form in three dimensions is simple, so that a Galilean fluid has no rank-four case. That the moment balance of a medium with a couple stress is $\partial_j\mu_{\mathrm{cpl},ij}=-\tau_i$ with $\tau_i=\varepsilon_{ijk}\sigma_{jk}$, so that a vanishing couple stress forces a symmetric stress. That the count of a Cosserat medium is seven data plus the internal energy, one density, three velocity and three orientation functions. That a projected vorticity is always simple, $\omega_{\mathrm{vrt}}\wedge\omega_{\mathrm{vrt}}=0$, so the rank of a vorticity is two and the third row belongs to the raw derivative and to the acceleration.
+Established. The Clebsch representation and its vorticity, $\omega=\mathrm{d}\alpha_{\mathrm{clb}}\wedge\mathrm{d}\beta_{\mathrm{clb}}$, which is an identity. The rank classification and its test, $\omega\wedge\omega=(\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}})\,\mathrm{d}V$ and $\det\omega=(\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}})^{2}$, checked symbolically on a general antisymmetric array. That every two-form in three dimensions is simple, so that a Galilean fluid has no rank-four case. That the moment balance of a medium with a couple stress is $\partial_j\mu_{\mathrm{cpl},ij}=-\tau_i$ with $\tau_i=\varepsilon_{\imath\jmath\ell}\sigma_{j\imath}$, so that a vanishing couple stress forces a symmetric stress. That the count of a Cosserat medium is seven data plus the internal energy, one density, three velocity and three orientation functions. That a projected vorticity is always simple, $\omega_{\mathrm{vrt}}\wedge\omega_{\mathrm{vrt}}=0$, so the rank of a vorticity is two and the third row belongs to the raw derivative and to the acceleration.
 
 Not claimed. That a given flow reaches the third row; the condition is the acceleration's alignment with the vorticity, the test is written down, and no solution of a field equation is examined here. That a potential flow is the only fluid of the layer satisfying the four-item criterion in its original form; the Gross–Pitaevskii fluid also does, being irrotational, and the criterion's fourth clause is what distinguishes them. That the helicity of the spinning fluid is the axial charge; the identification is quoted from the literature and is not derived here. That any particular Cosserat constitutive law is the right one for a given medium; the kinematics is fixed and the closure is open.
 

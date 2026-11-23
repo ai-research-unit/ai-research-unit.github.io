@@ -36,7 +36,7 @@ The companion articles supply the pieces:
 $$
 N(\tilde Q)=\tilde Q\tilde Q^{\natural}=(h_te_t+i\vec h)(h_te_t-i\vec h)=h_t^2-(i\vec h)^2=h_t^2-\lvert\vec h\rvert^2 ,
 $$
-because $(i\vec h)^2=i^2\vec h^2=+\lvert\vec h\rvert^2$ for a real vector $\vec h$. The form is positive on the temporal axis $e_t$ and negative on the three spatial directions $i\vec e_k$. This is the sector of states, of observables and of the boosts.
+because $(i\vec h)^2=i^2\vec h^2=+\lvert\vec h\rvert^2$ for a real vector $\vec h$. The form is positive on the temporal axis $e_t$ and negative on the three spatial directions $i\vec e_\imath$. This is the sector of states, of observables and of the boosts.
 
 The state is one particular element of it. Every state of the sector is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$, so $h_t=\tfrac12$ and $\vec h=\tfrac12\vec s_{\Psi}$. Normalisation is the statement $2\,\mathrm{Sc}=1$, that is $\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=\tfrac12$.
 
@@ -46,7 +46,7 @@ The material sector is a real four-plane with the opposite signature. An element
 $$
 N(\tilde P_{\Phi})=\Bigl(\frac{iE}{c}\Bigr)^2+\lvert\vec p\rvert^2=-\frac{E^2}{c^2}+\lvert\vec p\rvert^2 .
 $$
-The form is negative on the temporal axis $ie_t$ and positive on the three spatial directions $\vec e_k$. This is the sector of four-momenta, of currents and of the field strengths.
+The form is negative on the temporal axis $ie_t$ and positive on the three spatial directions $\vec e_\imath$. This is the sector of four-momenta, of currents and of the field strengths.
 
 ### One form, two signs
 

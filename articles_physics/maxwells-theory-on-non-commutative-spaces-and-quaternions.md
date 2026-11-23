@@ -24,7 +24,7 @@ First, and most important, **"non-commutative" here does not mean the non-commut
 
 Second, the deformation is of the Moyal type — an algebra deformation, $\kappa_{\imath\jmath}$ a fixed background. It is not the C-space programme of Clifford-valued coordinates, which deforms the arena differently; the corpus holds that programme separately and the two must be compared, not merged. The mathematical side of the Moyal deformation is the star product of *Deformation Quantization*, and the classical limit that the corpus's *Similitudes between the Poisson Bracket and the Quantum Commutator* develops is the undeformed limit here.
 
-Third, the source's arithmetic convention is the corpus's, with the imaginary unit placed in the time coordinate: the source writes $x_4 = ir'_t$, the corpus writes $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, and both make the temporal direction imaginary. The source writes the quaternion units $e_4 = 1$, $e_1,e_2,e_3$ with $\vec e_k^2=-1$, and realises them by $\tau_4 = i\tau_0$, $\tau_k = i\sigma_k$; the corpus's units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ are the same objects with different names. Throughout, the constants are carried and no unit is set to one.
+Third, the source's arithmetic convention is the corpus's, with the imaginary unit placed in the time coordinate: the source writes $x_4 = ir'_t$, the corpus writes $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, and both make the temporal direction imaginary. The source writes the quaternion units $e_4 = 1$, $e_1,e_2,e_3$ with $\vec e_\imath^2=-1$, and realises them by $\tau_4 = i\tau_0$, $\tau_\imath = i\sigma_\imath$; the corpus's units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ are the same objects with different names. Throughout, the constants are carried and no unit is set to one.
 
 ## The Non-Commutative Arena
 
@@ -82,13 +82,13 @@ $$
 \mathcal L = -\frac14 F_{\imath\jmath}^2 + \frac18\kappa_{\alpha\beta}F_{\alpha\beta}F_{\imath\jmath}^2 - \frac12\kappa_{\alpha\beta}F_{\imath\alpha}F_{\jmath\beta}F_{\imath\jmath} + O(\kappa^2) + \sum_{\imath} A_{\imath} J_{\imath},
 $$
 
-which the source recasts, with $E_i = iF_{i4}$ and $B_i = \epsilon_{ijk}F_{jk}$, as
+which the source recasts, with $E_i = iF_{i4}$ and $B_i = \epsilon_{\imath\jmath\ell}F_{j\imath}$, as
 
 $$
 \mathcal L = \frac12\left(\vec E^2 - \vec B^2\right)\left[1 + \vec\kappa\cdot\vec B\right] - (\vec\kappa\cdot\vec E)(\vec E\cdot\vec B) + O(\kappa^2) + \sum_{\imath} A_{\imath} J_{\imath} ,
 $$
 
-where $\kappa_i = \tfrac12\epsilon_{ijk}\kappa_{jk}$ and $\kappa_{i4}=0$. At $\vec\kappa=0$ this is the Maxwell Lagrangian. The $\vec\kappa$-terms are odd under $CP$, which is the source's first structural remark. The corpus's *The Field-Strength Biquaternion and Its Invariants* works with the two invariants $\vec E^2-\vec B^2$ and $\vec E\cdot\vec B$, and they appear here multiplied by the two $\vec\kappa$-scalars $\vec\kappa\cdot\vec B$ and $\vec\kappa\cdot\vec E$ — which is exactly why the deformation cannot preserve every symmetry those invariants otherwise carry.
+where $\kappa_i = \tfrac12\epsilon_{\imath\jmath\ell}\kappa_{j\imath}$ and $\kappa_{i4}=0$. At $\vec\kappa=0$ this is the Maxwell Lagrangian. The $\vec\kappa$-terms are odd under $CP$, which is the source's first structural remark. The corpus's *The Field-Strength Biquaternion and Its Invariants* works with the two invariants $\vec E^2-\vec B^2$ and $\vec E\cdot\vec B$, and they appear here multiplied by the two $\vec\kappa$-scalars $\vec\kappa\cdot\vec B$ and $\vec\kappa\cdot\vec E$ — which is exactly why the deformation cannot preserve every symmetry those invariants otherwise carry.
 
 The two forms are the same quantity: the $\kappa$-part of the four-index expression reproduces the three-vector expression identically (checked numerically on random fields for the companion `.context`).
 
@@ -232,7 +232,7 @@ The components of the canonical tensor make its conservation explicit, and one o
 
 $$
 T_{44} = \mathcal E, \qquad T_{m4} = -iP_m, \qquad
-T_{4m} = -i\epsilon_{mnk}\left\{E_nB_k\left[1+\vec\kappa\cdot\vec B\right] + (\vec E\cdot\vec B)B_n\kappa_k\right\}.
+T_{4m} = -i\epsilon_{mn\imath}\left\{E_nB_\imath\left[1+\vec\kappa\cdot\vec B\right] + (\vec E\cdot\vec B)B_n\kappa_\imath\right\}.
 $$
 
 The last of the three is not $-iP_m$: the mixed components are non-symmetric, as well as the spatial ones, which the source's "still not symmetric" leaves implicit. Their difference is
@@ -291,7 +291,7 @@ $$
 \boxed{\;\vec\nabla_\Phi F + \tfrac12\left(\vec\nabla_\Phi G + \bigl(\vec\nabla_\Phi^{\natural}\bar G\bigr)^{\natural}\right) = -J\;},
 $$
 
-where $\vec\nabla_\Phi = \tau_{\imath}\partial/\partial x_{\imath}$, $F = f_{\imath}\tau_{\imath}$ with $f_k = D_k+iB_k$ and $f_4=0$, $G = g_m\tau_m$ with $g_m = d_m + ih_m$, $J = J_{\imath}\tau_{\imath}$ with $J_4=i\rho$, and $G^+$ is the Hermitian conjugate. The third term is the paper's right-derivative term, $G^+$ with the derivative taken on its right and then the frame on the right. By the anti-automorphism of $\natural$, $(G^+)^{\natural}=\bar G$ and $(ab)^{\natural}=b^{\natural}a^{\natural}$, so that right derivative equals a left derivative on $\bar G$, followed by $\natural$:
+where $\vec\nabla_\Phi = \tau_{\imath}\partial/\partial x_{\imath}$, $F = f_{\imath}\tau_{\imath}$ with $f_\imath = D_\imath+iB_\imath$ and $f_4=0$, $G = g_m\tau_m$ with $g_m = d_m + ih_m$, $J = J_{\imath}\tau_{\imath}$ with $J_4=i\rho$, and $G^+$ is the Hermitian conjugate. The third term is the paper's right-derivative term, $G^+$ with the derivative taken on its right and then the frame on the right. By the anti-automorphism of $\natural$, $(G^+)^{\natural}=\bar G$ and $(ab)^{\natural}=b^{\natural}a^{\natural}$, so that right derivative equals a left derivative on $\bar G$, followed by $\natural$:
 
 $$
 \sum_{\imath} \bigl(\partial G^+/\partial x_{\imath}\bigr)\tau_{\imath} = \Bigl(\sum_{\imath} \tau_{\imath}^{\natural}\,\partial \bar G/\partial x_{\imath}\Bigr)^{\natural},
@@ -307,7 +307,7 @@ $$
 
 which shows the non-linearity in one line: the correction is quadratic in the Riemann–Silberstein vector $\vec v$ and its conjugate. The spin-tensor is defined through the potential by $F = -\vec\nabla_\Phi A$ with $A = A_{\imath}\tau_{\imath}$, which reproduces $F_{\imath\jmath}=\partial/\partial x_{\imath} A_{\jmath} - \partial/\partial x_{\jmath} A_{\imath}$. The source notes that Eq. (45) "is equivalent to the quaternion form as the quaternion algebra can be realized through the Pauli matrices", and that at $\kappa_{\imath\jmath}=0$ it becomes the quaternion form of the standard Maxwell equations that the corpus records in *Maxwell's Equations in the Biquaternionic Formulation*. This is the sense in which the paper is about quaternions: the algebra gives the compact form and nothing else.
 
-The transformation properties close the section. Under $X_{\mathrm{lor}} = L^+XL$ with $L\in SL(2,\mathbb C)$, the matrices transform as $\nabla_{\mathrm{lor}} = L^+\vec\nabla_\Phi L$, $F_{\mathrm{lor}} = L^{-1}FL$, $J_{\mathrm{lor}} = L^+JL$, and the Lorentz invariants of the transformations are the determinants of the matrices. The $\vec\kappa$-terms in the equation violate this Lorentz symmetry, which is the same statement as before, seen in the matrix form. The Gamma section realises the quaternion algebra on the Pauli matrices, $e_4=\tau_0$, $\vec e_k=i\tau_k$, with $e_4^2=1$ and $\vec e_k^2=-1$, and records the biquaternion Lorentz transformation $x_{\mathrm{lor}} = LxL^*$ with $L\bar L=1$, the six-parameter $SO(3,1)$ action the corpus's *The Lorentz Transformation as a Biquaternionic Rotation* derives from the same algebra.
+The transformation properties close the section. Under $X_{\mathrm{lor}} = L^+XL$ with $L\in SL(2,\mathbb C)$, the matrices transform as $\nabla_{\mathrm{lor}} = L^+\vec\nabla_\Phi L$, $F_{\mathrm{lor}} = L^{-1}FL$, $J_{\mathrm{lor}} = L^+JL$, and the Lorentz invariants of the transformations are the determinants of the matrices. The $\vec\kappa$-terms in the equation violate this Lorentz symmetry, which is the same statement as before, seen in the matrix form. The Gamma section realises the quaternion algebra on the Pauli matrices, $e_4=\tau_0$, $\vec e_\imath=i\tau_\imath$, with $e_4^2=1$ and $\vec e_\imath^2=-1$, and records the biquaternion Lorentz transformation $x_{\mathrm{lor}} = LxL^*$ with $L\bar L=1$, the six-parameter $SO(3,1)$ action the corpus's *The Lorentz Transformation as a Biquaternionic Rotation* derives from the same algebra.
 
 ## Status, Contrasts, and Boundaries
 
@@ -347,19 +347,19 @@ Kruglov's *Maxwell's Theory on Non-Commutative Spaces and Quaternions* re-derive
 | $x_{\imath}$, $x_{\imath}$ | Non-commuting coordinate operator and its commutative image |
 | $\kappa_{\imath\jmath}$ | Constant antisymmetric deformation tensor, dimension $(\text{length})^2$ |
 | $\Lambda_{NC}$, $\epsilon_{\imath\jmath}$ | Non-commutativity scale and dimensionless shape tensor, $\kappa_{\imath\jmath}=\epsilon_{\imath\jmath}/\Lambda_{NC}^2$ |
-| $\kappa_i$ | Three-vector of the deformation, $\kappa_i=\tfrac12\epsilon_{ijk}\kappa_{jk}$, $\kappa_{i4}=0$ |
+| $\kappa_i$ | Three-vector of the deformation, $\kappa_i=\tfrac12\epsilon_{\imath\jmath\ell}\kappa_{j\imath}$, $\kappa_{i4}=0$ |
 | $[x_{\imath},x_{\jmath}]=i\kappa_{\imath\jmath}$ | The defining commutator; the corpus's "$i r'_t$" convention is kept for time |
 | $\star$ | Moyal star product, $\exp(\tfrac{i}{2}\kappa_{\imath\jmath}\partial/\partial x_{\imath}\,\partial/\partial x_{2\jmath})$ |
 | $[A_{\imath},A_{\jmath}]_M$ | Moyal bracket $A_{\imath}\star A_{\jmath} - A_{\jmath}\star A_{\imath}$ |
-| $F_{\imath\jmath}$, $\tilde F_{\imath\jmath}$ | Field strength and its dual; $E_i=iF_{i4}$, $B_i=\epsilon_{ijk}F_{jk}$ |
+| $F_{\imath\jmath}$, $\tilde F_{\imath\jmath}$ | Field strength and its dual; $E_i=iF_{i4}$, $B_i=\epsilon_{\imath\jmath\ell}F_{j\imath}$ |
 | $\vec D,\vec H$ | Displacement and magnetic fields; $\vec D=\vec E+\vec d$, $\vec H=\vec B+\vec h$ |
 | $\vec d,\vec h$ | Field-quadratic $\vec\kappa$-corrections of eqs. (18), (19) — the non-linear constitutive relations |
 | $\vec v=\vec E+i\vec B$ | Riemann–Silberstein vector; the non-linearity is $\vec g\propto\vec\kappa\vec v^2$ |
 | $\mathcal E,\vec P$ | Deformed energy density and momentum density; $P_{\imath}=(\vec P,i\mathcal E)$ |
 | $T_{\mathrm{can},\imath\jmath}$, $T_{\mathrm{sym},\imath\jmath}$ | Canonical (conservative) and symmetric (not conserved on the deformed arena) stress tensors |
 | $T_{\imath}{}_{\imath}$ | Classical trace anomaly, $\propto(\vec\kappa\cdot\vec B)(\vec E^2-\vec B^2)-2(\vec\kappa\cdot\vec E)(\vec E\cdot\vec B)$; doubles for the symmetric tensor |
-| $\tau_{\imath}=(\tau_k,\tau_4)$, $\tau_4=i\tau_0$ | Pauli matrices realising the quaternion units; $e_4=\tau_0$, $\vec e_k=i\tau_k$ |
-| $F=f_{\imath}\tau_{\imath}$, $G=g_m\tau_m$ | Spin-tensor (quaternion) field and correction; $f_k=D_k+iB_k$, $g_m=d_m+ih_m$ |
+| $\tau_{\imath}=(\tau_\imath,\tau_4)$, $\tau_4=i\tau_0$ | Pauli matrices realising the quaternion units; $e_4=\tau_0$, $\vec e_\imath=i\tau_\imath$ |
+| $F=f_{\imath}\tau_{\imath}$, $G=g_m\tau_m$ | Spin-tensor (quaternion) field and correction; $f_\imath=D_\imath+iB_\imath$, $g_m=d_m+ih_m$ |
 
 ## Further Reading
 

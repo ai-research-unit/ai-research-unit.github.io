@@ -145,7 +145,7 @@ The arithmetic of the ordinals is thus genuinely non-commutative, and it is the 
 
 **Proof sketch.** If the axiom of choice holds then every set can be well-ordered by *Cardinality and the Axiom of Choice*, hence has an order type, and the least ordinal equipotent to it is a cardinal. Conversely, if every set has a cardinality, well-order $X$ by transporting the well-ordering of $|X|$ along the bijection.
 
-The alephs are then defined by transfinite recursion: $\aleph_0 = \omega$, and $\aleph_{\alpha+1}$ is the least cardinal strictly greater than $\aleph_\alpha$, with $\aleph_\lambda = \sup_{\beta<\lambda}\aleph_\beta$ for limit $\lambda$. The existence of $\aleph_{\alpha+1}$ uses Hartogs' theorem, which is stated below.
+The alephs are then defined by transfinite recursion: $\aleph_0 = \omega$, and $\aleph_{\alpha+1}$ is the least cardinal strictly greater than $\aleph_\alpha$, with $\aleph_{\varpi_{\mathrm{cdl}}} = \sup_{\beta<\varpi_{\mathrm{cdl}}}\aleph_\beta$ for limit $\varpi_{\mathrm{cdl}}$. The existence of $\aleph_{\alpha+1}$ uses Hartogs' theorem, which is stated below.
 
 **Theorem (Hartogs).** For every set $X$ there is an ordinal that does not inject into $X$; the least such ordinal is written $\mathrm{H}(X)$.
 

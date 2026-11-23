@@ -143,14 +143,14 @@ The coefficient of $A_0^{2}$ contains no $\omega^{2}$, and that is the primary c
 $$
 \frac{\partial^{2}\mathcal{Q}}{\partial A_0^{2}}=\tfrac12\Bigl(2\pi\nu_t'^{2}-k^{2}+4\pi^{2}\nu_m^{2}\Bigr)=\tfrac12\bigl(2\pi\vec\nu_\Phi^{2}+4\pi^{2}\nu_m^{2}\bigr) ,
 \qquad
-\frac{\partial^{2}\mathcal{Q}}{\partial A_k^{2}}=\tfrac12\Bigl(\kappa_k^{2}+k^{2}-4\pi^{2}\nu_m^{2}\Bigr) ,
+\frac{\partial^{2}\mathcal{Q}}{\partial A_\imath^{2}}=\tfrac12\Bigl(\kappa_\imath^{2}+k^{2}-4\pi^{2}\nu_m^{2}\Bigr) ,
 $$
 
 so the temporal coefficient is $\tfrac12(\vec\nu_\Phi^{2}+\nu_m^{2})$ and the three spatial coefficients each carry the frequency. **Measured at $2\pi\nu_m=0.7$ and $2\pi\vec\nu_\Phi=(0.3,0.2,0.1)$: the temporal coefficient is $0.315000000$ at $2\pi\nu_t'=0.5$, $1.2$ and $2.0$, while the first spatial coefficient is $-0.145$, $+0.450$ and $+1.730$.**
 
 A coefficient with no $\omega^{2}$ is a constraint. The Hessian's temporal entry is a number, so the equation for $A_0$ is algebraic in the frequency and can be solved and substituted; that is exactly the parent's remark that the second-order form carries a primary constraint, and it is why the count is four minus one. The absent power is the constraint, and the article's contribution is to say that it is absent rather than small.
 
-$F_{0k}=\partial_0A_k-\partial_k A_0$ contains no $\partial_0A_0$, so no amount of minimal coupling can put an $\omega^{2}$ on $A_0$. The variational coupled companion makes the same statement with the connection present, and the two agree because the reason is the antisymmetry of the field strength and not the absence of a potential.
+$F_{0k}=\partial_0A_\imath-\partial_\imath A_0$ contains no $\partial_0A_0$, so no amount of minimal coupling can put an $\omega^{2}$ on $A_0$. The variational coupled companion makes the same statement with the connection present, and the two agree because the reason is the antisymmetry of the field strength and not the absence of a potential.
 
 The three spatial coefficients move because they are the propagating ones. Their frequency dependence is the dispersion relation's, read as a coefficient: on the shell the transverse coefficient vanishes, which is the symbol's rank drop. The temporal coefficient never vanishes for a massive field, which is why the primary constraint is not a dynamical equation at any frequency.
 

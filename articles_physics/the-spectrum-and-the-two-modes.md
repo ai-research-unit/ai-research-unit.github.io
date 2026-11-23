@@ -357,8 +357,8 @@ Read: the eigenvalues are $Q_t\pm iB$ with $B^2=Q_x^2+Q_y^2+Q_z^2$. Whether they
 | --- | --- | --- |
 | $\mathbb{B}_{H}$, quaternion | $q_x^2+q_y^2+q_z^2$, real $\ge0$ | $B$ real or imaginary, never complex |
 | $\mathbb{B}_{iH}$, anti-quaternion | $-(q_x^2+q_y^2+q_z^2)$ | $B$ imaginary or real |
-| $\mathbb{B}_{\Psi}$, Hermitian | $-(a_x^2+a_y^2+a_z^2)$, $a_k$ real | $B=i\lvert\vec a\rvert$: eigenvalues $Q_t\mp\lvert\vec a\rvert$, real |
-| $\mathbb{B}_{\Phi}$, anti-Hermitian | $a_x^2+a_y^2+a_z^2$, $a_k$ real | $B=\lvert\vec a\rvert$: eigenvalues $i\bigl(\frac{E}{c}\pm\lvert\vec p\rvert\bigr)$ |
+| $\mathbb{B}_{\Psi}$, Hermitian | $-(a_x^2+a_y^2+a_z^2)$, $a_\imath$ real | $B=i\lvert\vec a\rvert$: eigenvalues $Q_t\mp\lvert\vec a\rvert$, real |
+| $\mathbb{B}_{\Phi}$, anti-Hermitian | $a_x^2+a_y^2+a_z^2$, $a_\imath$ real | $B=\lvert\vec a\rvert$: eigenvalues $i\bigl(\frac{E}{c}\pm\lvert\vec p\rvert\bigr)$ |
 
 The two physical sectors give the two familiar realities. On $\mathbb{B}_\Psi$ the spectrum is real because $B$ is purely imaginary; on $\mathbb{B}_\Phi$ the spectrum is purely imaginary because $B$ is real. Neither sentence uses a matrix and neither uses a Hermiticity axiom: each is the sign of a sum of three squares in a real basis.
 
@@ -523,7 +523,7 @@ The boundary. The identification of $\Sigma_{01}$ with *massless* is a material-
 
 ### I.5.k — The Hermitian Sector Admits Only Diabolic Degeneracies
 
-Read: on $\mathbb{B}_\Psi$ the restriction of $B^2$ is $-(a_x^2+a_y^2+a_z^2)$ with real $a_k$, so $B^2=0$ forces $\vec Q=0$. The Hermitian sector meets the cone only on the scalar line.
+Read: on $\mathbb{B}_\Psi$ the restriction of $B^2$ is $-(a_x^2+a_y^2+a_z^2)$ with real $a_\imath$, so $B^2=0$ forces $\vec Q=0$. The Hermitian sector meets the cone only on the scalar line.
 
 The two degeneracies are therefore different normal forms, and only one of them is available to a Hermitian element.
 

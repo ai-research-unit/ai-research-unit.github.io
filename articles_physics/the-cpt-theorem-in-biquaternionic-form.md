@@ -31,7 +31,7 @@ The two lines are the dynamics, and they are written as two lines. No letter gat
 
 The pair cannot be shortened to one equation on one member, because the square of the gradient is not scalar: $e_t$ commutes with the spatial units and the mixed derivatives add,
 $$
-\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2e_t\sum_{k\in\{x,y,z\}}\vec e_k\frac{\partial^2}{\partial R_t\partial R_k},
+\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2e_t\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial^2}{\partial R_t\partial R_\imath},
 $$
 
 whose last term is a pure vector. The free equation therefore stays first order in one member, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$, the massive equation is the pair, and this algebra carries no one-field first-order massive equation.
@@ -305,7 +305,7 @@ with the sign a free phase of the composition. This is the group-theoretic fact 
 - $C$ and $T$ are anti-linear, $C[i\tilde{Ξ}]=-i\,C[\tilde{Ξ}]$ and $T[i\tilde{Ξ}]=-i\,T[\tilde{Ξ}]$, and $P$ is linear; the operator induced by $T$ is anti-unitary and the one induced by $C$ is unitary.
 - $C$ and $P$ exchange the two entries and $T$ keeps them, so the composition keeps them. The chirality is the right action $\tilde{Ξ}\mapsto\tilde{Ξ}\Gamma=-i\tilde{Ξ}\vec e_z$, and it is a single right multiplication; the two entries of the pair are **not** its eigenspaces, because a left action preserves both eigenspaces of any right multiplication, so an equation between the two would force $0=m\times(\text{nonzero})$. The eigenspaces of $R_\omega$, with eigenvalues $i$ and $-i$ for $\omega=-\vec e_z$, are what the source's basis operator formulation projected onto, and the projection is what the migration removes.
 - The composition $\mathrm{CPT}=C\circ P\circ T$ acts as $\mathrm{CPT}[\tilde{Ξ}](x)=(-\tilde{Ξ}_{L},\tilde{Ξ}_{R})(-x)$; it is complex-linear, reverses the argument, and its sign pattern $\mathrm{diag}(-1,+1)$ is the chirality $\Gamma$, up to the free scalar phase of the three operations. This is the one statement of the article that does not depend on the choice of conjugation.
-- The gradient is a left action, so it acts on both entries with the same factor, and its square is not scalar, $\tilde\nabla_\Phi^2=\partial^2/\partial R_t^2-\Delta_\Phi+2e_t\sum_{k\in\{x,y,z\}}\vec e_k\partial^2/(\partial R_t\partial R_k)$; the massive equation is therefore the two lines, and each line composed with the conjugate of the other returns $\Box_\Phi$.
+- The gradient is a left action, so it acts on both entries with the same factor, and its square is not scalar, $\tilde\nabla_\Phi^2=\partial^2/\partial R_t^2-\Delta_\Phi+2e_t\sum_{\imath\in\{x,y,z\}}\vec e_\imath\partial^2/(\partial R_t\partial R_\imath)$; the massive equation is therefore the two lines, and each line composed with the conjugate of the other returns $\Box_\Phi$.
 - The algebra's conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ preserve both sectors; ${}^{*}$ is $+1$ on $\mathbb{B}_{\Psi}$ and $-1$ on $\mathbb{B}_{\Phi}$; the sector swap is the central multiplication by $i$. No discrete operation is a sector swap.
 - The algebra's three conjugations are order-two maps that commute pairwise, with $\natural=\bar{\cdot}\circ{}^{*}$, so they and the identity form a $\mathbb{Z}_2\times\mathbb{Z}_2$. This is a computation on the coefficients, and it is the one point where the classification below and the algebra meet without transcription.
 
@@ -356,13 +356,13 @@ The classification supplies a second reading of the same eight operations: they 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=\epsilon_{jk l}\vec e_l$ $(j\ne k)$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$, $\vec e_j \vec e_\imath=\epsilon_{j\imath l}\vec e_l$ $(j\ne k)$ |
 | $i$ | The central scalar imaginary |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}$, $\mathbb{B}_{C}=\mathbb{C}e_t$ | Real-quaternion subspace; centre |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=({}^{\natural})^{\,*}$ | Quaternion, complex, and Hermitian conjugations; order two, commuting pairwise, $\natural=\bar{\cdot}\circ{}^{*}$ |
 | $\tilde{Q}^{\flat}=-\tilde{Q}^{*}$ | Anti-Hermitian conjugate; the algebra's real structure, $\mathbb{C}$-antilinear and order-reversing |
-| $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_{k\in\{x,y,z\}}\vec e_k\partial/\partial R_k$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, acting on the left, and d'Alembertian |
+| $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\partial/\partial R_\imath$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, acting on the left, and d'Alembertian |
 | $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The two entries of the pair: two elements of $\mathbb{B}$, not the eigenspaces of the chirality, which no left action can separate |
 | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The Dirac field, one element of $\mathbb{B}$; dynamics $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ |
 | $\omega=-\vec e_z$, $\Gamma=i\omega=-i\vec e_z$ | $\omega^2=-e_t$; the chirality is the right action $\tilde{Ξ}\mapsto\tilde{Ξ}\Gamma=-i\tilde{Ξ}\vec e_z$, with $\Gamma^2=e_t$, equal to $-1$ on the eigenspace of $R_\omega$ with eigenvalue $i$ and $+1$ on the other |

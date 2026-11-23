@@ -28,7 +28,7 @@ $$
 H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}} .
 $$
 
-It is linear in the first slot, conjugate-linear in the second, Hermitian, and positive definite, with Gram matrix the identity, $\bigl(H(e_j,e_k)\bigr)=\mathrm I_2$. Its real and imaginary parts are the Euclidean metric $g$ of inertia $(4,0)$ and, up to sign, the symplectic form $\Omega$ of the realification: $H=g-i\Omega$, with $\Omega(Q_1,Q_2)=g(JQ_1,Q_2)$. It is the only one of the three forms whose isotropic set is the origin.
+It is linear in the first slot, conjugate-linear in the second, Hermitian, and positive definite, with Gram matrix the identity, $\bigl(H(e_j,e_\imath)\bigr)=\mathrm I_2$. Its real and imaginary parts are the Euclidean metric $g$ of inertia $(4,0)$ and, up to sign, the symplectic form $\Omega$ of the realification: $H=g-i\Omega$, with $\Omega(Q_1,Q_2)=g(JQ_1,Q_2)$. It is the only one of the three forms whose isotropic set is the origin.
 
 The complex bilinear form.
 
@@ -36,7 +36,7 @@ $$
 B(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown} .
 $$
 
-It is $\mathbb{C}$-bilinear and symmetric, with Gram matrix the identity as well, nondegenerate, and complex-valued. The letter $B$ is the maths corpus's name for this form, fixed in [The Three Canonical Forms on $\mathbb{C}^2$](../articles_maths/the-three-canonical-forms-on-c2.html) and used in every article of the $\mathbb{C}^2$ category; it is kept here for that reason. It is not the $B$ of the biquaternion layer, which is the complex modulus of the vector part, $B^{2}=\sum_{k\in\{x,y,z\}}Q_k^{2}$ of [Algebra and Element Conventions](../articles_maths/algebra-and-element-conventions.html), and it is not the algebra $\mathbb{B}$; the three are different objects on different spaces. The collision is confined to this article, where only the form on $\mathbb{C}^2$ occurs, and the notation table names it. Written out on real coordinates $Q_\blacktriangle=u+iv$, $Q_\blacktriangledown=w+iz$ its quadratic form is
+It is $\mathbb{C}$-bilinear and symmetric, with Gram matrix the identity as well, nondegenerate, and complex-valued. The letter $B$ is the maths corpus's name for this form, fixed in [The Three Canonical Forms on $\mathbb{C}^2$](../articles_maths/the-three-canonical-forms-on-c2.html) and used in every article of the $\mathbb{C}^2$ category; it is kept here for that reason. It is not the $B$ of the biquaternion layer, which is the complex modulus of the vector part, $B^{2}=\sum_{\imath\in\{x,y,z\}}Q_\imath^{2}$ of [Algebra and Element Conventions](../articles_maths/algebra-and-element-conventions.html), and it is not the algebra $\mathbb{B}$; the three are different objects on different spaces. The collision is confined to this article, where only the form on $\mathbb{C}^2$ occurs, and the notation table names it. Written out on real coordinates $Q_\blacktriangle=u+iv$, $Q_\blacktriangledown=w+iz$ its quadratic form is
 
 $$
 B(Q,Q)=\bigl(u^{2}-v^{2}+2iuv\bigr)+\bigl(w^{2}-z^{2}+2iwz\bigr),
@@ -48,12 +48,12 @@ The alternating form.
 
 $$
 \omega(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangledown}-Q_{1\blacktriangledown}Q_{2\blacktriangle},\qquad
-\bigl(\omega(e_j,e_k)\bigr)=\begin{pmatrix}0&1\\-1&0\end{pmatrix}.
+\bigl(\omega(e_j,e_\imath)\bigr)=\begin{pmatrix}0&1\\-1&0\end{pmatrix}.
 $$
 
 It is $\mathbb{C}$-bilinear and alternating, nondegenerate, and its Gram matrix is the standard symplectic matrix. It is the determinant form of the two-dimensional space, in the precise sense that $\omega(Q_1,Q_2)$ is the determinant of the matrix whose columns are $Q_1$ and $Q_2$.
 
-Two of the three have the same Gram matrix, and this is the point a reader trips on. The Gram matrix records the values of a form on pairs of basis vectors. The basis $e_1=(1,0)$, $e_2=(0,1)$ is real, and conjugation does nothing to a real number, so $H(e_j,e_k)=B(e_j,e_k)=\delta_{jk}$ and both matrices are the identity. A real basis cannot show where the conjugation sits.
+Two of the three have the same Gram matrix, and this is the point a reader trips on. The Gram matrix records the values of a form on pairs of basis vectors. The basis $e_1=(1,0)$, $e_2=(0,1)$ is real, and conjugation does nothing to a real number, so $H(e_j,e_\imath)=B(e_j,e_\imath)=\delta_{j\imath}$ and both matrices are the identity. A real basis cannot show where the conjugation sits.
 
 The discriminator. Take $Q=(1,i)$, which lies on the isotropic cone of $B$:
 
@@ -126,7 +126,7 @@ The three, side by side. Each form tensors, and each power answers one question 
 **The identity.** Let $\psi=\sum_{i,j}c_{ij}\,e_i\otimes e_j$ be a two-qubit state and $c$ its $2\times2$ coefficient array. Then
 
 $$
-\boxed{\;\omega\otimes\omega(\psi,\psi)=\sum_{i,j,k,l}\omega_{ij}\,\omega_{kl}\,c_{ik}\,c_{jl}=2\bigl(c_{00}c_{11}-c_{01}c_{10}\bigr)=2\det c\;}
+\boxed{\;\omega\otimes\omega(\psi,\psi)=\sum_{i,j,\imath,l}\omega_{ij}\,\omega_{\imathl}\,c_{i\imath}\,c_{jl}=2\bigl(c_{00}c_{11}-c_{01}c_{10}\bigr)=2\det c\;}
 $$
 
 Both sides are objects the corpus already had: on the left the alternating form of the one-qubit space, applied twice; on the right the determinant of the coefficient array of the pair. The box is a statement that the two are one number, not the introduction of a third.
@@ -269,8 +269,8 @@ The third statement of one fact. The corpus now says the same thing three ways. 
 
 Two maps that look alike. On $\mathbb{B}$ there are two antilinear involutions that a reader may take for one another.
 
-- Coefficient conjugation $\sigma$, the corpus's $\mathrm{conj}\otimes\mathrm{id}$: it sends $i\mapsto-i$ and fixes every quaternion unit. In the Pauli model $e_t=\mathrm I$ and $\vec e_k=i\sigma_k$, so $\sigma$ flips the sign of the coefficient of each $\vec e_k$ and leaves the coefficient of $e_t$ alone.
-- Entrywise conjugation $\kappa$: it sends every matrix entry to its complex conjugate. In the Pauli model it flips both $i$ and $\sigma_k$, hence it fixes each $\vec e_k=i\sigma_k$ as a matrix and only conjugates the coefficients differently.
+- Coefficient conjugation $\sigma$, the corpus's $\mathrm{conj}\otimes\mathrm{id}$: it sends $i\mapsto-i$ and fixes every quaternion unit. In the Pauli model $e_t=\mathrm I$ and $\vec e_\imath=i\sigma_\imath$, so $\sigma$ flips the sign of the coefficient of each $\vec e_\imath$ and leaves the coefficient of $e_t$ alone.
+- Entrywise conjugation $\kappa$: it sends every matrix entry to its complex conjugate. In the Pauli model it flips both $i$ and $\sigma_\imath$, hence it fixes each $\vec e_\imath=i\sigma_\imath$ as a matrix and only conjugates the coefficients differently.
 
 They act differently on the projective line. On the lattice of minimal left ideals, parametrised by the kernel line $[\zeta]$ with chart $z=\zeta_1/\zeta_2$:
 

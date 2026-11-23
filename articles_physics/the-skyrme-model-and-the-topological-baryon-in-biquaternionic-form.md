@@ -79,20 +79,20 @@ A static soliton in more than two spatial dimensions needs a term of higher orde
 **Derrick's scaling.** Let $\tilde U(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ be a static configuration of finite energy, and consider the one-parameter family obtained by spatial dilation,
 
 $$
-\tilde U_\lambda(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde U(\lambda(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)) .
+\tilde U_\imath(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde U(\lambda(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)) .
 $$
 
 The two-derivative energy scales as
 
 $$
-E_2[\tilde U_\lambda] = \int d^3r\left|\partial/\partial R_i\,\tilde U_\lambda\right|^2
+E_2[\tilde U_\imath] = \int d^3r\left|\partial/\partial R_i\,\tilde U_\imath\right|^2
 = \lambda^{-1}\int d^3y\left|\partial/\partial R_i\,\tilde U\right|^2 = \lambda^{-1}E_2 ,
 $$
 
 and the four-derivative energy as
 
 $$
-E_4[\tilde U_\lambda] = \lambda\,E_4 ,
+E_4[\tilde U_\imath] = \lambda\,E_4 ,
 $$
 
 because each derivative contributes a factor $\lambda$ and the measure a factor $\lambda^{-3}$. The total static energy is therefore
@@ -248,7 +248,7 @@ The framework supplies the target manifold, the flat current, the commutator str
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $e_a e_b = -\delta_{ab}e_t+\varepsilon_{abc}e_c$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$, $e_a e_b = -\delta_{ab}e_t+\varepsilon_{abc}e_c$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}^1_{\mathbb{B}}$ | Unit real quaternions $\cong SU(2)\cong\mathbb{S}^3$; the skyrmion target |

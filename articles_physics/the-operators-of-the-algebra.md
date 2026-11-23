@@ -65,7 +65,7 @@ The swap. The map $\sigma$ that exchanges the two slots is linear, involutive, a
 
 The adjoints. Four adjoints and five families, the fifth being the Krein pair, whose form is the plain sesquilinear form. $(L_{\tilde Q})^{\approx}=R_{\tilde Q}$, $(L_{\tilde Q})^{*}=L_{\tilde Q^{*}}$, $(T_{\tilde Q,\tilde P})^{\approx}=T_{\tilde P,\tilde Q}$, $(T_{\tilde Q,\tilde P})^{*}=T_{\tilde Q^{*},\tilde P^{*}}$.
 
-The sectors. $T_{\tilde Q,\lambda\tilde Q^{*}}$ keeps both sectors exactly for real $\lambda$; a one-sided operator keeps a sector only for a real scalar. The Hermitian pair keeps both for every parameter.
+The sectors. $T_{\tilde Q,k\tilde Q^{*}}$ keeps both sectors exactly for real $\lambda$; a one-sided operator keeps a sector only for a real scalar. The Hermitian pair keeps both for every parameter.
 
 The Hermitian pair. $\mathrm{Hp}_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ is multiplicative, has spectrum $\{\lambda_i\bar\lambda_j\}$, trace $4\lvert Q_t\rvert^{2}$, determinant $\lvert N\rvert^{4}$, value $H(\tilde Q)$ at the identity, is singular exactly on the cone, and covers the group $CO^{+}(1,3)$ on the invertibles.
 
@@ -77,7 +77,7 @@ The regimes. On the four sectors the operators have rank $4$ with a doubled spec
 
 The operator space is the algebra's endomorphism algebra. A complex-linear map $F:\mathbb{B}\to\mathbb{B}$ is determined by its values on the four units, so it is a $4\times4$ complex matrix, and the space of such maps has complex dimension sixteen. Written as an algebra under composition it is the full matrix algebra $M_4(\mathbb{C})$.
 
-The sixteen products are a basis. For a basis $e_{\imath}$ of the algebra, the sixteen operators $T_{e_{\imath},e_{\jmath}}$ are linearly independent, hence a basis of the sixteen-dimensional operator space. The proof is cleanest in a basis of matrix units $E_{jk}$, where
+The sixteen products are a basis. For a basis $e_{\imath}$ of the algebra, the sixteen operators $T_{e_{\imath},e_{\jmath}}$ are linearly independent, hence a basis of the sixteen-dimensional operator space. The proof is cleanest in a basis of matrix units $E_{j\imath}$, where
 
 $$
 T_{E_{jk},E_{l\,n_{\mathrm{idx}}}}(E_{rs})=\delta_{kr}\delta_{ls}E_{j\,n_{\mathrm{idx}}},
@@ -310,7 +310,7 @@ $$
 \mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb{R}}\{i e_t,\vec e_x,\vec e_y,\vec e_z\},
 $$
 
-the fixed and the negated spaces of the Hermitian conjugation. Among the five families only the Hermitian pair keeps both sectors in place for every parameter. The one-sided families keep a sector only for a real scalar: $L_{r e_t}$ keeps both, while $L_{\tilde Q}$ for a non-scalar unit moves a Hermitian element out of the Hermitian sector. The two-sided family keeps both exactly for the pairs $T_{\tilde Q,\lambda\tilde Q^{*}}$ with real $\lambda$; a non-real $\lambda$ rotates one sector into the other.
+the fixed and the negated spaces of the Hermitian conjugation. Among the five families only the Hermitian pair keeps both sectors in place for every parameter. The one-sided families keep a sector only for a real scalar: $L_{r e_t}$ keeps both, while $L_{\tilde Q}$ for a non-scalar unit moves a Hermitian element out of the Hermitian sector. The two-sided family keeps both exactly for the pairs $T_{\tilde Q,k\tilde Q^{*}}$ with real $\lambda$; a non-real $\lambda$ rotates one sector into the other.
 
 Why the criterion matters here. Sector stability is what makes an operator readable as a physical operation on a state space. An operator that moves a Hermitian element into the anti-Hermitian sector maps a state to a four-vector, and no amount of renaming makes that a transformation of states. The Hermitian pair is the only family that is a transformation of the state space for every parameter.
 

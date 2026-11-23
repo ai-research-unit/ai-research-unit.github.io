@@ -8,17 +8,17 @@
 
 $$
 S=\int dt'\,d^{3}x\;\mathrm{Sc}\Big[\frac{i h}{4\pi}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)
--\frac{hc}{8\pi^{2}\nu_m}\sum_{k\in\{x,y,z\}}\big(D_k\tilde\Xi\big)^{*}\big(D_k\tilde\Xi\big)
+-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}}\big(D_\imath\tilde\Xi\big)^{*}\big(D_\imath\tilde\Xi\big)
 +ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi\Big],
 $$
 
-with $D_k=\partial_k+\frac{2\pi iϙ}{h}A_k$ and $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$. It is the free action with two replacements: every spatial derivative becomes the covariant one, and one term in the potential is added. That is the whole of the coupling in the action, and it is the same one rule that the element-form companion states for the equation.
+with $D_\imath=\partial_\imath+\frac{2\pi iϙ}{h}A_\imath$ and $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$. It is the free action with two replacements: every spatial derivative becomes the covariant one, and one term in the potential is added. That is the whole of the coupling in the action, and it is the same one rule that the element-form companion states for the equation.
 
 **Three findings.**
 
 *First, the action is real for a general element, and the reality is structural.* The kinetic term is Hermitian, the gradient term is a sum of moduli and therefore a positive real number, and the potential term is Hermitian because $ϙ\omicron_{\mathrm{pot}}$ is a real scalar. $\mathrm{Sc}$ of a Hermitian element is real, so the three terms are real separately and no cancellation between them is needed (§*The Action in Element Form, Coupled*).
 
-*Second, the connection enters the action in one place and the variation puts it in two.* The action carries the connection inside $D_k$ and inside $ϙ\omicron_{\mathrm{pot}}$; the equation carries it in the kinetic operator and in the potential. The two are one substitution seen from two sides, and the boundary-term identity that relates the gradient form to the operator form is what makes the variation produce the equation and not a different one (§*The Variation*).
+*Second, the connection enters the action in one place and the variation puts it in two.* The action carries the connection inside $D_\imath$ and inside $ϙ\omicron_{\mathrm{pot}}$; the equation carries it in the kinetic operator and in the potential. The two are one substitution seen from two sides, and the boundary-term identity that relates the gradient form to the operator form is what makes the variation produce the equation and not a different one (§*The Variation*).
 
 *Third, the local phase transformation leaves the action invariant exactly, with no boundary term.* The kinetic term gains $-ϙ\,\partial_{t'}\Gamma\,n$ and the potential term gains $+ϙ\,\partial_{t'}\Gamma\,n$, and the two gains are equal and opposite. The gradient term is invariant by covariance. So the invariance is term by term, and it is the clearest statement of why the covariant derivative and the potential are one object (§*The Constraints the Action Imposes: Gauge Invariance of the Action*).
 
@@ -41,10 +41,10 @@ so $K$ is Hermitian and $\mathrm{Sc}(K)$ is real. The antisymmetrisation is what
 **The gradient term is positive and real.** For each $\eta$,
 
 $$
-\mathrm{Sc}\big((D_k\tilde\Xi)^{*}(D_k\tilde\Xi)\big)=\sum_{\imath=0}^{3}\big|(D_k\tilde\Xi)_{\imath}\big|^{2}\ \ge 0,
+\mathrm{Sc}\big((D_\imath\tilde\Xi)^{*}(D_\imath\tilde\Xi)\big)=\sum_{\imath=0}^{3}\big|(D_\imath\tilde\Xi)_{\imath}\big|^{2}\ \ge 0,
 $$
 
-a sum of four moduli. This is the one place where the coupling changes the action's *sign structure* rather than its letters: the free gradient term is $\sum_{\imath}|\partial_k\tilde\Xi_{\imath}|^{2}$, also positive, and the covariant version is positive because $D_k$'s added term is anti-Hermitian and therefore does not disturb the modulus. The consequence is that the action's kinetic part is bounded below by zero and the energy is bounded below whenever $ϙ\omicron_{\mathrm{pot}}$ is, which is the diamagnetic statement in its variational form.
+a sum of four moduli. This is the one place where the coupling changes the action's *sign structure* rather than its letters: the free gradient term is $\sum_{\imath}|\partial_\imath\tilde\Xi_{\imath}|^{2}$, also positive, and the covariant version is positive because $D_\imath$'s added term is anti-Hermitian and therefore does not disturb the modulus. The consequence is that the action's kinetic part is bounded below by zero and the energy is bounded below whenever $ϙ\omicron_{\mathrm{pot}}$ is, which is the diamagnetic statement in its variational form.
 
 **The potential term is Hermitian.** $ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi$ satisfies $[\cdot]^{*}=ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi$ because $ϙ\omicron_{\mathrm{pot}}$ is real and $\tilde\Xi^{*}\tilde\Xi$ is Hermitian; its $\mathrm{Sc}$ is $ϙ\omicron_{\mathrm{pot}}\,n$ with $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)\ge0$. The sign is the companions': $+$ in the action, so that the variation gives $-ϙ\omicron_{\mathrm{pot}}$ in the equation, which is the Hamiltonian with the potential energy subtracted.
 
@@ -55,11 +55,11 @@ a sum of four moduli. This is the one place where the coupling changes the actio
 **The two writings of the kinetic term.** The action's gradient term can be written as a modulus or as an operator sandwich,
 
 $$
--\frac{hc}{8\pi^{2}\nu_m}\sum_{k\in\{x,y,z\}}\big(D_k\tilde\Xi\big)^{*}\big(D_k\tilde\Xi\big)
-=\frac{hc}{8\pi^{2}\nu_m}\sum_{k\in\{x,y,z\}}\mathrm{Sc}\big(\tilde\Xi^{*}D_k^{2}\tilde\Xi\big)+\partial_k\,\mathrm{Sc}\big(\tilde\Xi^{*}D_k\tilde\Xi\big),
+-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}}\big(D_\imath\tilde\Xi\big)^{*}\big(D_\imath\tilde\Xi\big)
+=\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}}\mathrm{Sc}\big(\tilde\Xi^{*}D_\imath^{2}\tilde\Xi\big)+\partial_\imath\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\imath\tilde\Xi\big),
 $$
 
-because $D_k^{\dagger}=-D_k$. The two differ by a total divergence, so they give the same variation and the same equation, and the article uses the modulus form because it is manifestly positive and the operator form because it makes the variation one line.
+because $D_\imath^{\dagger}=-D_\imath$. The two differ by a total divergence, so they give the same variation and the same equation, and the article uses the modulus form because it is manifestly positive and the operator form because it makes the variation one line.
 
 ### The Two Settings: The Energy
 
@@ -76,7 +76,7 @@ and it is conserved because $\tilde H^{\mathrm{gco}}_\Psi$ commutes with itself:
 **The operator setting.** The energy density is
 
 $$
-e=\frac{hc}{8\pi^{2}\nu_m}\sum_{k\in\{x,y,z\}}\mathrm{Sc}\big((D_k\tilde\Xi)^{*}(D_k\tilde\Xi)\big)-ϙ\omicron_{\mathrm{pot}}\,n,
+e=\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}}\mathrm{Sc}\big((D_\imath\tilde\Xi)^{*}(D_\imath\tilde\Xi)\big)-ϙ\omicron_{\mathrm{pot}}\,n,
 $$
 
 which is the free article's density with the covariant gradient and the potential energy. Its spatial integral is the expectation of $\hat H^{\mathrm{gco}}$ on solutions, up to a boundary term, and **it is conserved for a time-independent connection**: the potential's contribution to the time derivative is exactly the work the field does against the potential, and the two cancel in the integral.
@@ -91,17 +91,17 @@ which is the free article's density with the covariant gradient and the potentia
 
 $$
 \frac{\delta S}{\delta\tilde\Xi^{*}}
-=i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi+\frac{hc}{8\pi^{2}\nu_m}\sum_{k\in\{x,y,z\}} D_k^{2}\tilde\Xi+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi
-=\;i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi-\frac{1}{2m}\sum_{k\in\{x,y,z\}}\big(-i \frac{h}{2\pi} D_k\big)^{2}\tilde\Xi+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi .
+=i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi+\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}} D_\imath^{2}\tilde\Xi+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi
+=\;i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi-\frac{1}{2m}\sum_{\imath\in\{x,y,z\}}\big(-i \frac{h}{2\pi} D_\imath\big)^{2}\tilde\Xi+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi .
 $$
 
 Setting it to zero and multiplying by $-1$ gives
 
 $$
-i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi=\frac{1}{2m}\sum_{k\in\{x,y,z\}}\big(-i \frac{h}{2\pi} D_k\big)^{2}\tilde\Xi-ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi,
+i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi=\frac{1}{2m}\sum_{\imath\in\{x,y,z\}}\big(-i \frac{h}{2\pi} D_\imath\big)^{2}\tilde\Xi-ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi,
 $$
 
-which is the companion's equation, with $\vec\pi_k=-i \frac{h}{2\pi} D_k$ the mechanical momentum. The two signs in the residual are worth one check: the gradient term's plus sign in $\delta S/\delta\tilde\Xi^{*}$ is the boundary-term identity of the preceding section read backwards, and the potential term's plus sign is the sign of $+ϙ\omicron_{\mathrm{pot}}$ in the action. Both signs are the free article's and the coupling only renames the letters.
+which is the companion's equation, with $\vec\pi_\imath=-i \frac{h}{2\pi} D_\imath$ the mechanical momentum. The two signs in the residual are worth one check: the gradient term's plus sign in $\delta S/\delta\tilde\Xi^{*}$ is the boundary-term identity of the preceding section read backwards, and the potential term's plus sign is the sign of $+ϙ\omicron_{\mathrm{pot}}$ in the action. Both signs are the free article's and the coupling only renames the letters.
 
 **Eight real equations, not one.** $\delta\tilde\Xi^{*}$ ranges over the eight real components of $\mathbb{B}$, and $\mathrm{Sc}$ is non-degenerate, so the vanishing of the bracket for every variation is the vanishing of the bracket as an element of $\mathbb{B}$. The eight components of the residual are the eight real Euler–Lagrange equations; they are not independent statements but one statement in eight coordinates, and the article states it once. The polar companion is the same statement in the chart's eight coordinates, and its §*The Euler–Lagrange Equations* is where the coordinate version of this paragraph lives.
 
@@ -121,7 +121,7 @@ $$
 \omicron_{\mathrm{pot}}\longmapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma .
 $$
 
-**The gradient term.** $D_k\tilde\Xi\mapsto\lambda D_k\tilde\Xi$ by the covariance identity, and $\lambda$ is a central unit, so $|D_k\tilde\Xi|^{2}$ is invariant. The term contributes nothing to the variation of the action.
+**The gradient term.** $D_\imath\tilde\Xi\mapsto\lambda D_\imath\tilde\Xi$ by the covariance identity, and $\lambda$ is a central unit, so $|D_\imath\tilde\Xi|^{2}$ is invariant. The term contributes nothing to the variation of the action.
 
 **The kinetic term, and its gain.** With $\vartheta=\frac{2\pi ϙ\Gamma}{h}$ the two halves of the kinetic term become
 
@@ -143,7 +143,7 @@ and taking $\mathrm{Sc}$ gives $-ϙ\,\partial_{t'}\Gamma\,n$.
 
 **The potential term, and its gain.** $ϙ\omicron_{\mathrm{pot}}$ becomes $ϙ(\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma)$, so the term gains $+ϙ\,\partial_{t'}\Gamma\,n$. **The two gains are equal and opposite, and the action is invariant exactly.** There is no boundary term to discard and no improvement to make: the local transformation is a symmetry of the Lagrangian and not only of the action.
 
-**Why the two gains match, and what it says.** The kinetic gain is the derivative of the gauge function times the density, with the coupling's sign; the potential gain is the same object with the opposite sign. The matching is the statement that the covariant time derivative and the potential energy are one object split across two terms of the action — the split that the element-form companion records as the opposite signs of $D_t$ and $D_k$. A reader who wants a single sentence: *the action is invariant because the potential's shift and the phase's shift are the same shift.*
+**Why the two gains match, and what it says.** The kinetic gain is the derivative of the gauge function times the density, with the coupling's sign; the potential gain is the same object with the opposite sign. The matching is the statement that the covariant time derivative and the potential energy are one object split across two terms of the action — the split that the element-form companion records as the opposite signs of $D_t$ and $D_\imath$. A reader who wants a single sentence: *the action is invariant because the potential's shift and the phase's shift are the same shift.*
 
 **What the invariance does not say.** It says nothing about the operator setting's domains or about large gauge functions with nonzero winding; those are the polar companion's open question 2 and the flux discussion, and the action's invariance is local and does not decide them.
 
@@ -152,9 +152,9 @@ and taking $\mathrm{Sc}$ gives $-ϙ\,\partial_{t'}\Gamma\,n$.
 **The statement.** The divergence of the stress tensor of the coupled field is the Lorentz force density,
 
 $$
-\partial_{t'}\mathcal P_k+\sum_\zeta\partial_\zeta T_{\zetak}=-\rho_{\mathrm{chg}}\big(\vec E+\vec v\times\vec B\big)_k,
+\partial_{t'}\mathcal P_\imath+\sum_\zeta\partial_\zeta T_{\zetak}=-\rho_{\mathrm{chg}}\big(\vec E+\vec v\times\vec B\big)_\imath,
 \qquad
-\mathcal P_k=\frac{h}{2\pi}\,\mathrm{Im}\,\mathrm{Sc}\big(\tilde\Xi^{*}D_k\tilde\Xi\big)=m\,j_k,
+\mathcal P_\imath=\frac{h}{2\pi}\,\mathrm{Im}\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\imath\tilde\Xi\big)=m\,j_\imath,
 $$
 
 with $\mathcal P$ the momentum density, $T$ the stress tensor, $\rho_{\mathrm{chg}}:=ϙn$ the charge density, $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$. The overall minus sign is the coupling's: the corpus's $ϙ$ is minus the electric charge, so a charge density $\rho_{\mathrm{chg}}$ feels $-\rho_{\mathrm{chg}}(\vec E+\vec v\times\vec B)$ in these letters, which is $+q(\vec E+\vec v\times\vec B)$ in the older ones.
@@ -168,7 +168,7 @@ with $\mathcal P$ the momentum density, $T$ the stress tensor, $\rho_{\mathrm{ch
 **The global symmetry.** For constant $\alpha$ the transformation is $\tilde\Xi\mapsto e^{i\alpha}\tilde\Xi$ and the action is invariant. The Noether construction gives the current of the element-form companion,
 
 $$
-j_k=\frac{h}{4\pi mi}\,\mathrm{Sc}\Big(\tilde\Xi^{*}D_k\tilde\Xi-\big(D_k\tilde\Xi\big)^{*}\tilde\Xi\Big),
+j_\imath=\frac{h}{4\pi mi}\,\mathrm{Sc}\Big(\tilde\Xi^{*}D_\imath\tilde\Xi-\big(D_\imath\tilde\Xi\big)^{*}\tilde\Xi\Big),
 $$
 
 and the temporal component is the density $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$. The derivation is the free article's with every derivative covariant, and the connection's terms cancel in pairs; the article does not repeat it.
@@ -176,17 +176,17 @@ and the temporal component is the density $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)
 **The current is the action's derivative with respect to the connection.** A shorter route, and the one that shows the object is not a coincidence:
 
 $$
--\frac{\partial L}{\partial A_k}
-=\frac{hc}{8\pi^{2}\nu_m}\cdot 2\,\mathrm{Re}\sum_{\imath}\frac{2\pi iϙ}{h}\,\overline{\big(D_k\tilde\Xi\big)_{\imath}}\,\tilde\Xi_{\imath}
-=-\frac{h ϙ}{2\pi m}\,\mathrm{Im}\,\mathrm{Sc}\big((D_k\tilde\Xi)^{*}\tilde\Xi\big)
-=ϙ\,j_k,
+-\frac{\partial L}{\partial A_\imath}
+=\frac{hc}{8\pi^{2}\nu_m}\cdot 2\,\mathrm{Re}\sum_{\imath}\frac{2\pi iϙ}{h}\,\overline{\big(D_\imath\tilde\Xi\big)_{\imath}}\,\tilde\Xi_{\imath}
+=-\frac{h ϙ}{2\pi m}\,\mathrm{Im}\,\mathrm{Sc}\big((D_\imath\tilde\Xi)^{*}\tilde\Xi\big)
+=ϙ\,j_\imath,
 $$
 
-where the second equality uses $\mathrm{Re}(iZ)=-\mathrm{Im}Z$. So the charge current is minus the derivative of the Lagrangian with respect to the vector potential, which is the variational statement that the current is what the connection couples to. The sign is fixed by the action's sign for $A_k$ inside $D_k$ and by the minus sign in front of the gradient term; with the opposite sign of $ϙ$ the current changes sign with it and the identity stands.
+where the second equality uses $\mathrm{Re}(iZ)=-\mathrm{Im}Z$. So the charge current is minus the derivative of the Lagrangian with respect to the vector potential, which is the variational statement that the current is what the connection couples to. The sign is fixed by the action's sign for $A_\imath$ inside $D_\imath$ and by the minus sign in front of the gradient term; with the opposite sign of $ϙ$ the current changes sign with it and the identity stands.
 
-**What the identity is good for.** It says that the current of this article and the source of the Maxwell equation are the same object, and it says it without a separate computation. It also says why the current must be gauge invariant: the Lagrangian's dependence on $\vec A$ is only through $D_k$, and $D_k$ is covariant, so $\partial L/\partial A_k$ transforms like a connection-independent vector. The free article's current lacks that property because the free Lagrangian's dependence on $\vec A$ is not there at all.
+**What the identity is good for.** It says that the current of this article and the source of the Maxwell equation are the same object, and it says it without a separate computation. It also says why the current must be gauge invariant: the Lagrangian's dependence on $\vec A$ is only through $D_\imath$, and $D_\imath$ is covariant, so $\partial L/\partial A_\imath$ transforms like a connection-independent vector. The free article's current lacks that property because the free Lagrangian's dependence on $\vec A$ is not there at all.
 
-**The factor and the letters.** $j_k$ is the particle current; $ϙ j_k$ is the charge current. The element-form companion writes the charge current as $\vec J=ϙ\vec j$ and identifies it as the source of $\tilde\nabla_\Phi\tilde F=-\mu\tilde J$; the article uses that identification and does not re-derive it. The normalisation of $j$ is the free article's and is a convention, as it records.
+**The factor and the letters.** $j_\imath$ is the particle current; $ϙ j_\imath$ is the charge current. The element-form companion writes the charge current as $\vec J=ϙ\vec j$ and identifies it as the source of $\tilde\nabla_\Phi\tilde F=-\mu\tilde J$; the article uses that identification and does not re-derive it. The normalisation of $j$ is the free article's and is a convention, as it records.
 
 ## What the Principle Adds and What It Relabels
 
@@ -206,7 +206,7 @@ The coupled action is
 
 $$
 S=\int dt'\,d^{3}x\;\mathrm{Sc}\Big[\frac{i h}{4\pi}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)
--\frac{hc}{8\pi^{2}\nu_m}\sum_{k\in\{x,y,z\}}\big(D_k\tilde\Xi\big)^{*}\big(D_k\tilde\Xi\big)
+-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}}\big(D_\imath\tilde\Xi\big)^{*}\big(D_\imath\tilde\Xi\big)
 +ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi\Big],
 $$
 
@@ -217,12 +217,12 @@ The local phase transformation leaves the action invariant exactly, with the kin
 The current is the free article's with covariant derivatives,
 
 $$
-j_k=\frac{h}{4\pi mi}\,\mathrm{Sc}\Big(\tilde\Xi^{*}D_k\tilde\Xi-\big(D_k\tilde\Xi\big)^{*}\tilde\Xi\Big),
+j_\imath=\frac{h}{4\pi mi}\,\mathrm{Sc}\Big(\tilde\Xi^{*}D_\imath\tilde\Xi-\big(D_\imath\tilde\Xi\big)^{*}\tilde\Xi\Big),
 \qquad
 j_t=n,
 $$
 
-and it has a second definition, $ϙj_k=-\partial L/\partial A_k$, which identifies it as the source of the Maxwell equation and shows why it is gauge invariant.
+and it has a second definition, $ϙj_\imath=-\partial L/\partial A_\imath$, which identifies it as the source of the Maxwell equation and shows why it is gauge invariant.
 
 The energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi)$ in the constant setting, exactly conserved; the operator setting's energy density is the covariant modulus of the gradient minus $ϙ\omicron_{\mathrm{pot}} n$, with the integral conserved for a time-independent connection. The local flux is not printed here, and §*Open Questions* says so.
 
@@ -239,12 +239,12 @@ The energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi)$ in 
 | $\tilde\Xi\in\mathbb{B}$ | The field |
 | $ϙ$ | The coupling; minus the electric charge of the older convention |
 | $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ | The material connection; $\omicron_{\mathrm{pot}}$ and $\vec A$ real |
-| $D_k=\partial_k+\frac{2\pi iϙ}{h}A_k$ | The spatial covariant derivative |
-| $\vec\pi_k=-i \frac{h}{2\pi} D_k=-i \frac{h}{2\pi}\partial_k+ϙA_k$ | The mechanical momentum |
+| $D_\imath=\partial_\imath+\frac{2\pi iϙ}{h}A_\imath$ | The spatial covariant derivative |
+| $\vec\pi_\imath=-i \frac{h}{2\pi} D_\imath=-i \frac{h}{2\pi}\partial_\imath+ϙA_\imath$ | The mechanical momentum |
 | $S$ | The action; $L$ its density per unit $t'$ |
 | $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | The density; $\rho=2n$ is the free article's |
-| $j_k$, $j_t=n$ | The particle current |
-| $ϙj_k$, $\rho_{\mathrm{chg}}=ϙn$ | The charge current and the charge density |
+| $j_\imath$, $j_t=n$ | The particle current |
+| $ϙj_\imath$, $\rho_{\mathrm{chg}}=ϙn$ | The charge current and the charge density |
 | $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\omicron_{\mathrm{pot}})e_t+i(\vec h_\Psi-q\vec A)$ | The coupled Hamiltonian of the constant setting |
 | $e$ | The energy density of the operator setting |
 | $\Gamma$, $\lambda=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge function and factor |

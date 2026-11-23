@@ -415,7 +415,7 @@ The strongest objection is that this is a reformulation. It is, and the corpus a
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, eight real dimensions |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Basis, $e_t=1$, $\vec e_k^{2}=-e_t$, products cyclic |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Basis, $e_t=1$, $\vec e_\imath^{2}=-e_t$, products cyclic |
 | $i$ | Central scalar imaginary |
 | $q_{\imath}$, $q'_{\imath}$ | Real and imaginary parts of the coefficient $Q_{\imath}$; the prime marks the parameter that carries the $i$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |

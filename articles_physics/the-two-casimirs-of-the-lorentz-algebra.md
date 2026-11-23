@@ -40,10 +40,10 @@ The complexified algebra is $\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\m
 
 $$
 \mathcal{C}_1=\tfrac12\bigl(\vec K^{2}-\vec J^{2}\bigr),
-\qquad \vec J^{2}=\sum_{k\in\{x,y,z\}}J_k J_k,\quad \vec K^{2}=\sum_{k\in\{x,y,z\}} K_k K_k ,
+\qquad \vec J^{2}=\sum_{\imath\in\{x,y,z\}}J_\imath J_\imath,\quad \vec K^{2}=\sum_{\imath\in\{x,y,z\}} K_\imath K_\imath ,
 $$
 
-with the corpus's generators $J_k=\tfrac12\vec e_k$ and $K_k=\tfrac12 i\vec e_k$ of *The Six Generators and Their Commutators*. The menu writes it as $\tfrac12(\vec J^{2}-\vec K^{2})$, and that is the same operator written with the Hermitian generators $\mathcal{J}=i\vec J$, $\mathcal{K}=i\vec K$; §*The Normalisation, Fixed Once* gives the dictionary and the reason the two spellings are not interchangeable letter for letter.
+with the corpus's generators $J_\imath=\tfrac12\vec e_\imath$ and $K_\imath=\tfrac12 i\vec e_\imath$ of *The Six Generators and Their Commutators*. The menu writes it as $\tfrac12(\vec J^{2}-\vec K^{2})$, and that is the same operator written with the Hermitian generators $\mathcal{J}=i\vec J$, $\mathcal{K}=i\vec K$; §*The Normalisation, Fixed Once* gives the dictionary and the reason the two spellings are not interchangeable letter for letter.
 
 That it commutes with all six generators is checked directly from the table: it is invariant under the rotations because it is a rotational scalar built from two vectors, and invariant under the boosts because the boost variation of $\vec K^{2}-\vec J^{2}$ is the cross term, which cancels.
 
@@ -51,12 +51,12 @@ That it commutes with all six generators is checked directly from the table: it 
 
 $$
 \mathcal{C}_2=\tfrac{i}{2}\bigl\{\vec J,\vec K\bigr\},
-\qquad \bigl\{\vec J,\vec K\bigr\}=\sum_{k\in\{x,y,z\}}\bigl(J_k K_k+K_k J_k\bigr),
+\qquad \bigl\{\vec J,\vec K\bigr\}=\sum_{\imath\in\{x,y,z\}}\bigl(J_\imath K_\imath+K_\imath J_\imath\bigr),
 $$
 
 and the menu's spelling $-\tfrac{i}{2}\{\vec J,\vec K\}$ is again the Hermitian-generator form.
 
-The anticommutator is needed because $J_k$ and $K_k$ do not commute. The factor $i$ makes the operator Hermitian, since $J_k$ is anti-Hermitian, $K_k$ is Hermitian and $i$ compensates; the factor $\tfrac12$ makes its eigenvalues the integers and half-integers of the table below.
+The anticommutator is needed because $J_\imath$ and $K_\imath$ do not commute. The factor $i$ makes the operator Hermitian, since $J_\imath$ is anti-Hermitian, $K_\imath$ is Hermitian and $i$ compensates; the factor $\tfrac12$ makes its eigenvalues the integers and half-integers of the table below.
 
 ### Neither Is the Other
 
@@ -66,7 +66,7 @@ $\mathcal{C}_1$ and $\mathcal{C}_2$ are algebraically independent: no polynomial
 
 ### The Two Generator Conventions
 
-The corpus's generators are anti-Hermitian vectors, $J_k=\tfrac12\vec e_k$, and Hermitian ones, $K_k=\tfrac12 i\vec e_k$; the physicist's are all Hermitian, $\mathcal{J}_k=iJ_k$ and $\mathcal{K}_k=iK_k$. Because $\mathcal{J}^{2}=-J^{2}$ and $\mathcal{K}^{2}=-K^{2}$, each Casimir has two spellings and they differ by one sign:
+The corpus's generators are anti-Hermitian vectors, $J_\imath=\tfrac12\vec e_\imath$, and Hermitian ones, $K_\imath=\tfrac12 i\vec e_\imath$; the physicist's are all Hermitian, $\mathcal{J}_\imath=iJ_\imath$ and $\mathcal{K}_\imath=iK_\imath$. Because $\mathcal{J}^{2}=-J^{2}$ and $\mathcal{K}^{2}=-K^{2}$, each Casimir has two spellings and they differ by one sign:
 
 $$
 \mathcal{C}_1=\tfrac12\bigl(\vec K^{2}-\vec J^{2}\bigr)\ \text{(corpus)}
@@ -151,8 +151,8 @@ The first few carriers:
 
 Both Casimirs are Hermitian operators in the corpus's convention, so their eigenvalues are real and their eigenvectors can be chosen orthogonal.
 
-- $\vec J^{2}$ is Hermitian because $J_k$ is anti-Hermitian, so $J_k^{2}$ is Hermitian and the sum of Hermitian operators is Hermitian.
-- $\vec K^{2}$ is Hermitian for the same reason, since $K_k$ is Hermitian.
+- $\vec J^{2}$ is Hermitian because $J_\imath$ is anti-Hermitian, so $J_\imath^{2}$ is Hermitian and the sum of Hermitian operators is Hermitian.
+- $\vec K^{2}$ is Hermitian for the same reason, since $K_\imath$ is Hermitian.
 - $\{\vec J,\vec K\}$ is Hermitian because $J_iK_i+K_iJ_i$ is a sum of products whose adjoint is itself, and the factor $i$ in $\mathcal{C}_2$ makes the combination Hermitian.
 
 So the two eigenvalues are real numbers, and the table's entries are those numbers. This is worth stating because a complex algebra's Casimirs could in principle take complex values on a complex carrier; they do not, and the reason is the real form's star.

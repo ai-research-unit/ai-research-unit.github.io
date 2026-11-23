@@ -168,11 +168,11 @@ $$
 \qquad
 \int dU\,\tilde U_{ij}=0,
 \qquad
-\int dU\,\tilde U_{ij}\tilde U_{k l}=0\ \ (N\ge3),
+\int dU\,\tilde U_{ij}\tilde U_{\imath l}=0\ \ (N\ge3),
 \qquad
-\int dU\,\tilde U_{ij}\tilde U^\dagger_{k l}=\frac{1}{N}\delta_{il}\delta_{jk},
+\int dU\,\tilde U_{ij}\tilde U^\dagger_{\imath l}=\frac{1}{N}\delta_{il}\delta_{j\imath},
 $$
-the last of which is the statement that only a link and its conjugate, paired between a fundamental and an antifundamental index, contribute. The third identity is the one that distinguishes the groups: for $N\ge3$ the antisymmetric square of the fundamental contains no singlet and the two-fundamental integral vanishes, whereas for $N=2$ the singlet $\epsilon_{ik}\epsilon_{jl}$ makes it nonzero and supplies the additional contribution responsible for the real-fundamental special case below. The consequence is that the strong-coupling expansion is a **tiling expansion**: a Wilson loop receives contributions from the plaquettes that tile its interior, and the leading contribution is the tiling of smallest area.
+the last of which is the statement that only a link and its conjugate, paired between a fundamental and an antifundamental index, contribute. The third identity is the one that distinguishes the groups: for $N\ge3$ the antisymmetric square of the fundamental contains no singlet and the two-fundamental integral vanishes, whereas for $N=2$ the singlet $\epsilon_{i\imath}\epsilon_{jl}$ makes it nonzero and supplies the additional contribution responsible for the real-fundamental special case below. The consequence is that the strong-coupling expansion is a **tiling expansion**: a Wilson loop receives contributions from the plaquettes that tile its interior, and the leading contribution is the tiling of smallest area.
 
 ### The Area Law and the String Tension
 
@@ -269,7 +269,7 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\sum_\lambda\varepsilon_{\imath\jmath\lambda}\vec e_\lambda$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\sum_\imath\varepsilon_{\imath\jmathk}\vec e_\imath$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $T_a=\tfrac12 ie_a\in\mathbb{B}_{\Psi}$, $[T_a,T_b]=i\sum_c\varepsilon_{abc}T_c$, $2\,\mathrm{Sc}(T_aT_b)=\tfrac12\delta_{ab}$ | Compact gauge algebra (Hermitian-generator realization) |

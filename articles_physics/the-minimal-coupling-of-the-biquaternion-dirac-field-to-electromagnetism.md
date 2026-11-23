@@ -125,10 +125,10 @@ $$
 
 The term $\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}$ is the **interaction term**. It is exactly the term that the localization of the phase forces, and the connection it forces is the potential biquaternion of the Maxwell article.
 
-**The conjugate entry is not the negative of the entry.** On the units $\natural$ fixes $e_t$ and negates $\vec e_k$, so with real coefficients
+**The conjugate entry is not the negative of the entry.** On the units $\natural$ fixes $e_t$ and negates $\vec e_\imath$, so with real coefficients
 
 $$
-\tilde{A}_{\Phi}^{\natural}=A_t e_t-\sum_{k\in\{x,y,z\}} A_k\vec e_k ,
+\tilde{A}_{\Phi}^{\natural}=A_t e_t-\sum_{\imath\in\{x,y,z\}} A_\imath\vec e_\imath ,
 $$
 
 and three cases follow that are easily read as one. For a **purely electric** potential, $\tilde{A}_{\Phi}^{\natural}=+\tilde{A}_{\Phi}$, and the two members of the pair carry opposite entries. For a **purely magnetic** one, $\tilde{A}_{\Phi}^{\natural}=-\tilde{A}_{\Phi}$, and they carry the same entry. For a general potential it is neither, and the second member is the conjugate of the first, not its negative.
@@ -143,7 +143,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi,\imath} = \partial/\partial R_{\imath} +\frac{2\pi i\,ϙ}{h}A_{\imath},
 $$
 
-with $\partial/\partial R_t = -i\,\partial/\partial r'_t$ and $\partial/\partial R_k = \partial/\partial x_k$. This is the identical component form derived in the gauge principle article, now read as an operator on the Dirac field. With the action in units of $\frac{h}{2\pi}$ this gives $\tilde\nabla_{\mathrm{gco},\Phi,\imath} = \partial/\partial R_{\imath} + iϙA_{\imath}$, the convention used for the minimal substitution in the companion article on the solutions and the non-relativistic limit.
+with $\partial/\partial R_t = -i\,\partial/\partial r'_t$ and $\partial/\partial R_\imath = \partial/\partial x_\imath$. This is the identical component form derived in the gauge principle article, now read as an operator on the Dirac field. With the action in units of $\frac{h}{2\pi}$ this gives $\tilde\nabla_{\mathrm{gco},\Phi,\imath} = \partial/\partial R_{\imath} + iϙA_{\imath}$, the convention used for the minimal substitution in the companion article on the solutions and the non-relativistic limit.
 
 **The connection is a material-sector object.** The gauge principle article shows that a **real** gauge function $\Gamma$ keeps $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ in $\mathbb{B}_{\Phi}$. The coupling is therefore the coupling of the Dirac field to a material-sector connection, and the ingredient $\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ in $\tilde\nabla_{\mathrm{gco},\Phi}$ is Hermitian:
 
@@ -463,14 +463,14 @@ $$
 j_{\imath} = \tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,iL_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\imath)}}\,\tilde{Ξ} ,
 $$
 
-whose time component is $\tilde{Ξ}^{\dagger}\tilde{Ξ}$ and whose spatial components are $\tilde{Ξ}^{\dagger}\alpha_k\tilde{Ξ}$ with $\alpha_k = L_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_z}$. The ingredient that the algebra's own bilinears cannot supply is the adjoint row, which is built on the one-sided basis operator $iR_{\vec e_x}$ and lies outside the algebra. That is why $i\tilde{Ξ}\tilde{Ξ}^*$ cannot be the conserved current, and why the current is recorded in this section and nowhere else.
+whose time component is $\tilde{Ξ}^{\dagger}\tilde{Ξ}$ and whose spatial components are $\tilde{Ξ}^{\dagger}\alpha_\imath\tilde{Ξ}$ with $\alpha_\imath = L_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_z}$. The ingredient that the algebra's own bilinears cannot supply is the adjoint row, which is built on the one-sided basis operator $iR_{\vec e_x}$ and lies outside the algebra. That is why $i\tilde{Ξ}\tilde{Ξ}^*$ cannot be the conserved current, and why the current is recorded in this section and nowhere else.
 
 **The other form of the Dirac equation.** The third object of the older literature is the four-column form, on which the central phase multiplies the field one way on one part and the other way on the other, so that the vector phase and the relative phase exchange their roles. It is the carrier the closing sentence of *The Dirac Equation in Biquaternionic Form* names, and no construction of this article uses it: the algebra's own field carries the common phase, as the section on the field shows.
 
 **The identities the corpus cites.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
+(\gamma_\imath)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_{\imath},\gamma_5\}=0,
 $$
@@ -537,13 +537,13 @@ One external result is recorded on the source side, and it is not a development 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part: the coefficient of $e_t$, and half the trace in the frame of the closing section |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
-| $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_{k\in\{x,y,z\}}\vec e_k\,\partial/\partial R_k$ | Biquaternionic gradient (Dirac operator) |
-| $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_{k\in\{x,y,z\}}\vec e_k\,\partial/\partial R_k$ | Quaternion-conjugate gradient |
+| $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial R_\imath$ | Biquaternionic gradient (Dirac operator) |
+| $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial/\partial R_\imath$ | Quaternion-conjugate gradient |
 | $\vec u$ | The declared unit of the frame, in the parent's two-sided form |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
 | $\tilde{Ξ}$ | Biquaternion Dirac field, an element of $\mathbb{B}$ |

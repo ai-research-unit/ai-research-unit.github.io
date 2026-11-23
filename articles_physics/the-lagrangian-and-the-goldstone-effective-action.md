@@ -30,7 +30,7 @@ What is not new. The theorem, the coset construction, the derivative expansion a
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_k^{2}=-e_t$; the Goldstone field is the phase of a complex element, and its kinetic term is the corpus's gradient norm.
+The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\imath^{2}=-e_t$; the Goldstone field is the phase of a complex element, and its kinetic term is the corpus's gradient norm.
 
 The field. $\vartheta_{\mathrm{fld}}$ is the canonically normalized phase, $\vartheta_{\mathrm{fld}}=\sqrt2\,\mathrm{Im}\,\ln\tilde\Xi$ in the abelian case, so that its kinetic term carries no factor of $f$. The dimensionless phase is $\vartheta_{\mathrm{fld}}/f$, and the two normalizations differ by the decay constant.
 

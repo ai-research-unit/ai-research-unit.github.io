@@ -178,7 +178,7 @@ Let $\omega$ be a state of the charged field algebra in a background connection 
 
 $$
 \lambda(\tilde{Q}) = \exp(i\theta_{\mathrm{gau}}\tilde{Q}), \qquad
-\omega_2 = \omega \circ  \mathrm{Ad}_{\lambda^{-1}} .
+\omega_2 = \omega \circ  \mathrm{Ad}_{k^{-1}} .
 $$
 
 Because $\lambda$ is central and of unit phase, the automorphism is inner and implemented by a $*$-unitary of the algebra, and the GNS representations of $\omega$ and $\omega_2$ are unitarily equivalent. For any two backgrounds $\tilde{A}_{\Phi}$ and $\tilde{Q}_1$ and their gauge transforms, the relative entropies therefore agree:
@@ -310,12 +310,12 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group $\mathrm{U}(1)$ |
-| $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_{k\in\{x,y,z\}}\,\vec e_k\partial/\partial R_k$ | Biquaternionic gradient |
-| $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_{k\in\{x,y,z\}}\,\vec e_k\partial/\partial R_k$ | Quaternion-conjugate gradient |
+| $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_{\imath\in\{x,y,z\}}\,\vec e_\imath\partial/\partial R_\imath$ | Biquaternionic gradient |
+| $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_{\imath\in\{x,y,z\}}\,\vec e_\imath\partial/\partial R_\imath$ | Quaternion-conjugate gradient |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
 | $\tilde{A}_{\Phi} = \sum_{\imath} A_{\imath} e_{\imath} = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$ | Connection, a material-sector one-form |
 | $\Gamma$ | Real scalar gauge function |

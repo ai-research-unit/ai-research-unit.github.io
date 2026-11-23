@@ -221,10 +221,10 @@ which are precisely the two circularly polarised combinations $Ξ,\tilde{Ξ}$ of
 There is a second structural theorem, which the source states for the Helmholtz null-set. Let
 
 $$
-\mathcal{R}_\lambda:=\ker\bigl((\Delta_\Phi+\lambda)I_2\bigr)
+\mathcal{R}_\imath:=\ker\bigl((\Delta_\Phi+\lambda)I_2\bigr)
 $$
 
-be the space of pair-valued metaharmonic functions, that is, of pairs whose two components are solutions of the Helmholtz equation with the same $\lambda$. The factorisation $(8)$ shows at once that $\ker N$ sits inside it, since $(\Delta_\Phi+\lambda)f=-N N^{\dagger}f$, but the sharper statement is that $\mathcal{R}_\lambda$ is the **direct sum of two rotated copies of $\ker N$**. The two rotations are the two orientations of the conjugating matrix, and the two summands are the images of two complementary projections
+be the space of pair-valued metaharmonic functions, that is, of pairs whose two components are solutions of the Helmholtz equation with the same $\lambda$. The factorisation $(8)$ shows at once that $\ker N$ sits inside it, since $(\Delta_\Phi+\lambda)f=-N N^{\dagger}f$, but the sharper statement is that $\mathcal{R}_\imath$ is the **direct sum of two rotated copies of $\ker N$**. The two rotations are the two orientations of the conjugating matrix, and the two summands are the images of two complementary projections
 
 $$
 Q_x+Q_y=I,
@@ -235,11 +235,11 @@ Q_xQ_y=Q_yQ_x=0 ,
 \tag{15}
 $$
 
-built from the matrices $A_i,B_i$ that realise the similarity $(11)$ in each of its two orientations; the projections are the two halves into which the diagonalisation splits the metaharmonic pairs. With $\mathcal{X}_{1,\lambda}:=Q_x(\mathcal{R}_\lambda)$ and $\mathcal{X}_{2,\lambda}:=Q_y(\mathcal{R}_\lambda)$ the theorem reads
+built from the matrices $A_i,B_i$ that realise the similarity $(11)$ in each of its two orientations; the projections are the two halves into which the diagonalisation splits the metaharmonic pairs. With $\mathcal{X}_{1,k}:=Q_x(\mathcal{R}_\imath)$ and $\mathcal{X}_{2,k}:=Q_y(\mathcal{R}_\imath)$ the theorem reads
 
 $$
-\mathcal{R}_\lambda
-=\mathcal{X}_{1,\lambda}\oplus\mathcal{X}_{2,\lambda}
+\mathcal{R}_\imath
+=\mathcal{X}_{1,k}\oplus\mathcal{X}_{2,k}
 =B_1^{-1}\bigl(\ker N\bigr)\oplus B_2^{-1}\bigl(\ker N\bigr),
 \tag{16}
 $$
@@ -401,7 +401,7 @@ The kernel of the theory is the outgoing Helmholtz kernel $\mathrm{Sd}_\alpha$ o
 | $b=i\omega\mu/\alpha$ | Coherence factor of the diagonalisation; $b=iZ$ when $\sigma_*=0$ |
 | $C$ | Diagonalising matrix $(11)$; $CNC^{-1}=\mathrm{diag}(D_3-\alpha,D_3+\alpha)$ |
 | $Ξ,\tilde{Ξ}$ | Diagonalising combinations $\vec E\pm b\vec H$; conjugate Cauchy–Riemann solutions |
-| $\mathcal{R}_\lambda$ | Metaharmonic pairs $\ker((\Delta_\Phi+\lambda)I_2)$ |
+| $\mathcal{R}_\imath$ | Metaharmonic pairs $\ker((\Delta_\Phi+\lambda)I_2)$ |
 | $Q_i=\tfrac{1}{2\alpha}A_iNB_i$ | The two complementary projections, $Q_x+Q_y=I$ |
 | $\mathrm{Sd}_\alpha=-\exp(i\theta_{\mathrm{shf}})e^{-\kappa_{\mathrm{dmp}}\lvert x\rvert}/(4\pi\lvert x\rvert)$ | Outgoing Helmholtz fundamental solution |
 | $\mathcal{V}_{\mathrm{vek},\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$ | Fundamental solution of $D_3\pm\alpha$ |

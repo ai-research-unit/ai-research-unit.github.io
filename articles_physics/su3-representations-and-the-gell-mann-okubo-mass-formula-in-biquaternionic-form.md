@@ -40,7 +40,7 @@ The singlet is $(0,0)$, degree $1$; the fundamental triplet is $(1,0)$, degree $
 
 ## The Okubo Basis and the Three SU(2) Subalgebras
 
-To fix a subalgebra $\mathfrak{su}(2)\subset\mathfrak{su}(3)$ it is convenient to use Okubo's basis $A_{ik}$ ($i,k=1,2,3$) of $\mathfrak{su}(3)$, with
+To fix a subalgebra $\mathfrak{su}(2)\subset\mathfrak{su}(3)$ it is convenient to use Okubo's basis $A_{i\imath}$ ($i,k=1,2,3$) of $\mathfrak{su}(3)$, with
 
 $$
 A_{11}=\mathrm{diag}\bigl(\tfrac23,-\tfrac13,-\tfrac13\bigr),\quad
@@ -48,16 +48,16 @@ A_{22}=\mathrm{diag}\bigl(-\tfrac13,\tfrac23,-\tfrac13\bigr),\quad
 A_{33}=\mathrm{diag}\bigl(-\tfrac13,-\tfrac13,\tfrac23\bigr),
 $$
 
-the off-diagonal units $A_{ik}$ ($i\ne k$) carrying one unit entry, and $A_{11}+A_{22}+A_{33}=0$. The pair is mixed, the first slot fundamental and the second antifundamental: the position records the representation, not a frame slot, and every slot is written low. It is what carries the trace $\sum_{k\in\{x,y,z\}} A_{kk}$, the matrix product $\sum_{k\in\{x,y,z\}} A_{ik}A_{k l}$ and the invariant mixed delta $\delta_{ik}$, which is not a metric. The commutation relations are
+the off-diagonal units $A_{i\imath}$ ($i\ne k$) carrying one unit entry, and $A_{11}+A_{22}+A_{33}=0$. The pair is mixed, the first slot fundamental and the second antifundamental: the position records the representation, not a frame slot, and every slot is written low. It is what carries the trace $\sum_{\imath\in\{x,y,z\}} A_{\imath\imath}$, the matrix product $\sum_{\imath\in\{x,y,z\}} A_{i\imath}A_{\imath l}$ and the invariant mixed delta $\delta_{i\imath}$, which is not a metric. The commutation relations are
 
 $$
-\bigl[A_{ik},A_{l\,n_{\mathrm{mag}}}\bigr] = \delta_{im}A_{lk}-\delta_{lk}A_{im}.
+\bigl[A_{i\imath},A_{l\,n_{\mathrm{mag}}}\bigr] = \delta_{im}A_{l\imath}-\delta_{l\imath}A_{im}.
 $$
 
 This basis makes the three $\mathfrak{su}(2)$ subalgebras transparent. Projecting with a fixed index gives
 
 $$
-a_{ij} = A_{ij}-\tfrac12\delta_{ij}\sum_{k\in\{x,y,z\}} A_{kk},
+a_{ij} = A_{ij}-\tfrac12\delta_{ij}\sum_{\imath\in\{x,y,z\}} A_{\imath\imath},
 $$
 
 whose units satisfy the $\mathfrak{su}(2)$ relations, so **I-spin** is $\mathfrak{su}(2)$ in the $(1,2)$ plane. The rank of $\mathfrak{su}(3)$ is two, so any Cartan operator is a combination of $A_{11}$ and $A_{33}$, and the three choices of which $\mathfrak{su}(2)$ to single out give the three spins
@@ -132,10 +132,10 @@ $$
 m^2 = m_0^2+\delta m^2,
 $$
 
-where $m_0^2$ is $\mathrm{SU}(3)$-symmetric — proportional to the identity on the representation — and $\delta m^2 = \sum_{i,k}D_{ik}Z_{k i}$ is a $*$-unitary moment $D$ contracted with a $*$-unitary field $Z$,
+where $m_0^2$ is $\mathrm{SU}(3)$-symmetric — proportional to the identity on the representation — and $\delta m^2 = \sum_{i,\imath}D_{i\imath}Z_{\imath i}$ is a $*$-unitary moment $D$ contracted with a $*$-unitary field $Z$,
 
 $$
-D_{ik} = \lambda\delta_{ik}\mathbf{1}+\mu A_{ik}+\jmath\sum_l A_{il}A_{lk}+\dots,
+D_{i\imath} = \lambda\delta_{i\imath}\mathbf{1}+\mu A_{i\imath}+\jmath\sum_l A_{il}A_{l\imath}+\dots,
 $$
 
 $$
@@ -208,7 +208,7 @@ The programme closes the system by identifying $m_0$ with the mass of the spin r
 
 ## The Biquaternion Reading
 
-The interpretation is short because the framework's own limit is known. The $\mathrm{SU}(3)$ representations, the Okubo operators $A_{ik}$, the $*$-unitary field $Z$ and the mass splitting are **not elements of the biquaternion algebra**. The companion *Gauge Group Ceiling* shows the algebra's compact structure stops at $\mathrm{SU}(2)$, so no $\mathfrak{su}(3)$ with an octet of generators can be built from $\mathbb{B}$; the Okubo matrices are $3\times3$, and the algebra of three-by-three matrices is not the biquaternion algebra. The $\mathrm{SU}(3)$ machinery is external, and the article's purpose is to record it accurately beside the framework's own statements, not to claim it.
+The interpretation is short because the framework's own limit is known. The $\mathrm{SU}(3)$ representations, the Okubo operators $A_{i\imath}$, the $*$-unitary field $Z$ and the mass splitting are **not elements of the biquaternion algebra**. The companion *Gauge Group Ceiling* shows the algebra's compact structure stops at $\mathrm{SU}(2)$, so no $\mathfrak{su}(3)$ with an octet of generators can be built from $\mathbb{B}$; the Okubo matrices are $3\times3$, and the algebra of three-by-three matrices is not the biquaternion algebra. The $\mathrm{SU}(3)$ machinery is external, and the article's purpose is to record it accurately beside the framework's own statements, not to claim it.
 
 What the framework can host is the **structure of the splitting**. The Gell-Mann–Okubo formula separates a symmetric part $m_0$ from a symmetry-breaking part $\delta m$ built from the Cartan directions of the algebra; the framework knows the analogous separation — a central, $\mathrm{SU}(2)$-invariant part and a breaking part along a distinguished direction — in its own sector structure and in the hypercharge direction of the charge factor. Whether the hypercharge splitting has a biquaternion image is not established here; the honest statement is that the algebra hosts the singlet/triplet/doublet isospin reduction (since those are $\mathrm{SU}(2)$ representations) and not the octet of $\mathrm{SU}(3)$.
 
@@ -260,12 +260,12 @@ The framework's relation to all this is negative and clean: $\mathrm{SU}(3)$ is 
 | $(n,n_{\mathrm{dyn}})$, $n,n_{\mathrm{dyn}}\in\mathbb{Z}_{\ge0}$ | Labels of an irreducible representation of $\mathrm{SU}(3)$ |
 | $L_{a_1\dots a_n}R_{\,b_1\dots b_{n_{\mathrm{dyn}}}}$ | Traceless bisymmetric tensor carrying the representation; the first group fundamental, the second antifundamental |
 | $N(n,n_{\mathrm{dyn}})=\tfrac12(n+1)(n_{\mathrm{dyn}}+1)(n+n_{\mathrm{dyn}}+2)$ | Degree of the representation |
-| $A_{ik}$ | Okubo basis of $\mathfrak{su}(3)$, traceless and Hermitian |
+| $A_{i\imath}$ | Okubo basis of $\mathfrak{su}(3)$, traceless and Hermitian |
 | $i,k,l$ | flavour representation slots of a 3×3 matrix: $i$ fundamental, $k$ antifundamental; not frame slots |
 | $I_3,U_3,V_3$ | I-spin, U-spin, V-spin of the three $\mathfrak{su}(2)$ subalgebras |
 | $Y,Ϙ,I,U$ | Hypercharge, charge, and the I-spin and U-spin quantum numbers |
 | $m^2=m_0^2+\delta m^2+\delta m_2^2$ | Mass operator split into symmetric and breaking parts |
-| $Z$, $D_{ik}$ | $*$-Unitary field and $*$-unitary moment of the Zeeman analogy |
+| $Z$, $D_{i\imath}$ | $*$-Unitary field and $*$-unitary moment of the Zeeman analogy |
 | $\theta$ | Ratio of charge to hypercharge splitting, $\lvert\theta\rvert\ll1$ |
 | $m_Ζ+m_N=\tfrac12(3m_\Lambda+m_\Sigma)$ | Gell-Mann–Okubo relation, baryon octet |
 | $n-m\equiv0\pmod3$ | Admissibility condition for a hadron supermultiplet |

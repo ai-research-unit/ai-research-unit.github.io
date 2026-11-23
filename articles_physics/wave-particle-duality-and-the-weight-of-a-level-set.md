@@ -14,7 +14,7 @@ The defect this article repairs has an exact counterpart in the one before it. *
 
 The import is marked. That a weight on a shell is a density of states, that an exponential type is a support radius, and that an indicator is a projection are identifications, not theorems of the algebra. The article proves the three identities and marks the three identifications in §*Limits*. The algebra supplies the surface, the gradient, and the kernel, and nothing here derives a physical density from them.
 
-The conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, so $\vec e_k^{2}=-e_t$. The wave-number element is $\tilde\Upsilon_{\Phi}=i\,\nu_t^{\prime}e_t+\vec\nu_{\Phi}$, its quaternion conjugate is $\tilde\Upsilon_{\Phi}^{\natural}=i\,\nu_t^{\prime}e_t-\vec\nu_{\Phi}$, and the norm $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_t^{\prime\,2}+\nu_{\Phi}^{2}$ is written in full throughout and never as a single letter. The transform of a field is written $\mathcal{F}[\tilde F]$, after *Biquaternion Continuous Harmonic Analysis*, and never as a mark on the field: a caret carries a power, a conjugation, a transposition and a construction, and the transform is none of the four. The two symbols are $\sigma_{\mathcal{P}}(\nu_t^{\prime},\vec\nu_\Phi)=\nu_t^{\prime\,2}-\nu_{\Phi}^{2}-\nu_m^{2}$ of *The Galilean Limit* and its affine companion $\sigma_{\mathrm{s}}=\nu_{\mathrm{s}}-\nu_{\Phi}^{2}/(2\nu_m)$ with $\nu_t^{\prime}=\nu_m+\nu_{\mathrm{s}}$. The capital $\kappa$ is a value of the energy wave number and not a variable of the field, and it is kept apart from $\nu_t^{\prime}$ for that reason alone.
+The conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, so $\vec e_\imath^{2}=-e_t$. The wave-number element is $\tilde\Upsilon_{\Phi}=i\,\nu_t^{\prime}e_t+\vec\nu_{\Phi}$, its quaternion conjugate is $\tilde\Upsilon_{\Phi}^{\natural}=i\,\nu_t^{\prime}e_t-\vec\nu_{\Phi}$, and the norm $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_t^{\prime\,2}+\nu_{\Phi}^{2}$ is written in full throughout and never as a single letter. The transform of a field is written $\mathcal{F}[\tilde F]$, after *Biquaternion Continuous Harmonic Analysis*, and never as a mark on the field: a caret carries a power, a conjugation, a transposition and a construction, and the transform is none of the four. The two symbols are $\sigma_{\mathcal{P}}(\nu_t^{\prime},\vec\nu_\Phi)=\nu_t^{\prime\,2}-\nu_{\Phi}^{2}-\nu_m^{2}$ of *The Galilean Limit* and its affine companion $\sigma_{\mathrm{s}}=\nu_{\mathrm{s}}-\nu_{\Phi}^{2}/(2\nu_m)$ with $\nu_t^{\prime}=\nu_m+\nu_{\mathrm{s}}$. The capital $\kappa$ is a value of the energy wave number and not a variable of the field, and it is kept apart from $\nu_t^{\prime}$ for that reason alone.
 
 ## The Set and the Measure
 
@@ -58,7 +58,7 @@ The relativistic instance, exactly. For the massive dispersion, obtained from $\
 $$
 \nu_t^{\prime}(\vec\nu_\Phi)=\sqrt{\nu_{\Phi}^{2}+\nu_m^{2}},
 \qquad
-\frac{\partial \nu_t^{\prime}}{\partial\vec\nu_\Phi}=\sum_{k\in\{x,y,z\}}\vec e_k\frac{\partial \nu_t^{\prime}}{\partial \nu_{\Phik}}
+\frac{\partial \nu_t^{\prime}}{\partial\vec\nu_\Phi}=\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial \nu_t^{\prime}}{\partial \nu_{\Phik}}
 =\vec e_x\frac{\nu_{\Phi x}}{\nu_t^{\prime}}+\vec e_y\frac{\nu_{\Phi y}}{\nu_t^{\prime}}+\vec e_z\frac{\nu_{\Phi z}}{\nu_t^{\prime}}
 =\frac{\vec\nu_\Phi}{\nu_t^{\prime}},
 \qquad

@@ -214,11 +214,11 @@ Note what the first bracket is not. The scale enters the derivative only through
 
 ### The Phase Gradient Is the Four-Momentum
 
-The second bracket is the momentum, and the algebra states it without a rule. Since $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_k=\partial/\partial r_k$ on the material sector,
+The second bracket is the momentum, and the algebra states it without a rule. Since $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\imath=\partial/\partial r_\imath$ on the material sector,
 
 $$
 \tilde\nabla_\Phi\theta_{\mathrm{pha}}
-=e_t\frac{\partial\theta_{\mathrm{pha}}}{\partial R_t}+\sum_{k\in\{x,y,z\}}\vec e_k\frac{\partial\theta_{\mathrm{pha}}}{\partial R_k}
+=e_t\frac{\partial\theta_{\mathrm{pha}}}{\partial R_t}+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\imath}
 =-i\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_t}e_t+\vec\nabla_\Phi\theta_{\mathrm{pha}}
 =i\frac{E}{h c}e_t+\frac{\vec p}{h}
 =\tilde\Upsilon_{\Phi},

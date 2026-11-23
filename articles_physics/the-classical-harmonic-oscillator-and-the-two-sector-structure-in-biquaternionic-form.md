@@ -268,7 +268,7 @@ positive definite and bounded below, whereas the biquaternion norm $\langle\tild
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmath\lambda}\vec e_\lambda$ $(\imath\neq \jmath)$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmathk}\vec e_\imath$ $(\imath\neq \jmath)$ |
 | $i$ | Central scalar imaginary, $i^2 = -e_t$; $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector: $iq'_te_t + \vec q$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector: $h_t\,e_t + i\vec h_\Psi$ |

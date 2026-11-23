@@ -48,10 +48,10 @@ so exactly one idempotent of each context is assigned the value one. **Noncontex
 For the native qubit the module has complex dimension two, and every context contains at most two orthogonal rank-one idempotents, $\tilde\Pi_{\mathrm{id},1}(\vec u_z)$ and $\tilde\Pi_{\mathrm{id},2}(\vec u_z)$. Two orthogonal rank-one idempotents of a qubit are the only possible pair, and a $\{0,1\}$ assignment to them consistent with $\tilde\Pi_{\mathrm{id},1+}\tilde\Pi_{\mathrm{id},2} = e_t$ is immediate. Extending to all observables, one may assign to each direction $\vec u_z$ the value
 
 $$
-v_\lambda\bigl(\tilde\Pi_{\mathrm{id},1,2}(\vec u_z)\bigr) = \begin{cases}1 & \pm\,\vec u_z\cdot\vec u_\lambda > 0,\ 0 & \text{otherwise,}\end{cases}
+v_{\upsilon_{\mathrm{hdd}}}\bigl(\tilde\Pi_{\mathrm{id},1,2}(\vec u_z)\bigr) = \begin{cases}1 & \pm\,\vec u_z\cdot\vec u_{\upsilon_{\mathrm{hdd}}} > 0,\ 0 & \text{otherwise,}\end{cases}
 $$
 
-for a fixed hidden direction $\vec u_\lambda$, with a convention on the measure-zero equator. Every context of the qubit is a pair of antipodal idempotents, and the assignment is consistent within each; there is no constraint linking two different directions, because two non-collinear rank-one idempotents of a qubit are not orthogonal and therefore do not lie in a common context. Hence **no Kochen–Specker obstruction exists for a single qubit**, which is the familiar statement that the theorem requires dimension at least three. The single-qubit noncontextual model is due to Bell (1966).
+for a fixed hidden direction $\vec u_{\upsilon_{\mathrm{hdd}}}$, with a convention on the measure-zero equator. Every context of the qubit is a pair of antipodal idempotents, and the assignment is consistent within each; there is no constraint linking two different directions, because two non-collinear rank-one idempotents of a qubit are not orthogonal and therefore do not lie in a common context. Hence **no Kochen–Specker obstruction exists for a single qubit**, which is the familiar statement that the theorem requires dimension at least three. The single-qubit noncontextual model is due to Bell (1966).
 
 The conclusion for the framework is structural: the obstruction cannot be exhibited by the native unit alone. It requires a composite, or a system of dimension at least three, and the smallest composite the framework supplies is the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$, whose module has dimension four.
 
@@ -100,7 +100,7 @@ On the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$, tensor these with $e_t$ 
 | $e_t\otimes\tilde Q_z$ | $\tilde Q_z\otimes e_t$ | $\tilde Q_z\otimes\tilde Q_z$ |
 | $\tilde Q_x\otimes\tilde Q_z$ | $\tilde Q_z\otimes\tilde Q_x$ | $\tilde Q_y\otimes\tilde Q_y$ |
 
-Each entry is Hermitian and squares to $e_t\otimes e_t$, so each has spectrum $\{\pm1\}$; this is why the array is called a **magic square**. The entries are the framework's transcription of the standard Mermin–Peres observables built from $\sigma_1,\sigma_2,\sigma_3$ and the identity, using the identification $\sigma_k\leftrightarrow i\vec e_k$.
+Each entry is Hermitian and squares to $e_t\otimes e_t$, so each has spectrum $\{\pm1\}$; this is why the array is called a **magic square**. The entries are the framework's transcription of the standard Mermin–Peres observables built from $\sigma_1,\sigma_2,\sigma_3$ and the identity, using the identification $\sigma_\imath\leftrightarrow i\vec e_\imath$.
 
 ### The product relations
 
@@ -239,7 +239,7 @@ State-independent contextuality (the Kochen–Specker theorem and the magic squa
 |---|---|
 | $\mathbb{B}\otimes\mathbb{B}$ | Two-qubit algebra, $\cong M_4(\mathbb{C})$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (observables) |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\imath^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $[\tilde{H}_{\Psi,2},\tilde{H}_{\Psi,1}]=0$ | Compatibility (common measurement) |
 | $\tilde\Pi_{\mathrm{id},a}$, $\sum_a\tilde\Pi_{\mathrm{id},a} = e_t$ | Idempotent basis of a context |

@@ -19,7 +19,7 @@ Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}
 The action is the variational companion's, cited and not re-derived. In the operator setting it is
 
 $$
-S[\tilde\Xi,\tilde\Xi^{*}]=\int dt'\,d^{3}x\;\mathrm{Sc}\Bigl[\frac{i h}{4\pi}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\frac{hc}{8\pi^{2}\nu_m}\sum_{k\in\{x,y,z\}}(\partial_k\tilde\Xi)^{*}(\partial_k\tilde\Xi)-V(\vec x)\,\tilde\Xi^{*}\tilde\Xi\Bigr],
+S[\tilde\Xi,\tilde\Xi^{*}]=\int dt'\,d^{3}x\;\mathrm{Sc}\Bigl[\frac{i h}{4\pi}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\frac{hc}{8\pi^{2}\nu_m}\sum_{\imath\in\{x,y,z\}}(\partial_\imath\tilde\Xi)^{*}(\partial_\imath\tilde\Xi)-V(\vec x)\,\tilde\Xi^{*}\tilde\Xi\Bigr],
 $$
 
 and in the constant setting the two spatial terms collapse into $-\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi$ with $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$. The antisymmetrised kinetic term is the point: $\partial_{t'}$ alone would give a complex density, and the half-difference of the two orderings is what makes the term Hermitian. That is the variational companion's first check, and it is what the exponent below inherits.
@@ -139,7 +139,7 @@ which is the parent's equation rearranged, with the module factor untouched on b
 The single-particle saddle is the classical path. Reading the same integral in the position representation turns the source-fixed problem into a boundary-value one, and the stationary point of the action between two endpoints is the classical trajectory. Expanding about it leaves a quadratic fluctuation integral, and for a central Hamiltonian that integral is a Gaussian with the van Vleck determinant:
 
 $$
-K(\vec r_f,r'_{t,f};\vec r_i,r'_{t,i})\approx\Bigl(\frac{1}{2\pi i \frac{h}{2\pi}}\Bigr)^{3/2}\Bigl|\det\frac{\partial^{2}S_{\mathrm{cl}}}{\partial x_{i,k}\,\partial x_{f,l}}\Bigr|^{1/2}\exp\Bigl(\frac{2\pi iS_{\mathrm{cl}}}{h}\Bigr)=A_{\mathrm{wkb}}\exp\Bigl(\frac{2\pi iS_{\mathrm{cl}}}{h}\Bigr).
+K(\vec r_f,r'_{t,f};\vec r_i,r'_{t,i})\approx\Bigl(\frac{1}{2\pi i \frac{h}{2\pi}}\Bigr)^{3/2}\Bigl|\det\frac{\partial^{2}S_{\mathrm{cl}}}{\partial x_{i,\imath}\,\partial x_{f,l}}\Bigr|^{1/2}\exp\Bigl(\frac{2\pi iS_{\mathrm{cl}}}{h}\Bigr)=A_{\mathrm{wkb}}\exp\Bigl(\frac{2\pi iS_{\mathrm{cl}}}{h}\Bigr).
 $$
 
 The determinant is real and the prefactor is central, so the semiclassical kernel is central too. The action is a real scalar, the determinant is real, and $(2\pi i \frac{h}{2\pi})^{-3/2}$ is central; the choice of branch is the Maslov phase, and it changes by $\pi/2$ per caustic crossed in three dimensions. The free kernel is exact at all times, and the oscillator kernel is exact away from its poles, which is why the two exact cases are the test of the semiclassical form rather than an illustration of it.

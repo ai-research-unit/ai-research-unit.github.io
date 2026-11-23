@@ -23,7 +23,7 @@ This article establishes:
 5. **The double cover is visible in the path integral.** The coherent-state integral is over the sphere of idempotents and loses the phase; the spinor integral is over the double cover and retains it. The Wess–Zumino term is the obstruction to writing the action purely in terms of the idempotent.
 6. **Topological consequences.** The Wess–Zumino term is a topological term whose coefficient is the spin; it controls spin tunnelling and the quenching of the tunnelling amplitude, and it is the same object as the curvature quantisation of the geometric-phase articles.
 
-The notation is that of the read-list articles: $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_k$, $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, the reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_\imath$, $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, the reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\imath\mapsto\sigma_\imath$.
 
 The companion articles supply the pieces:
 - Companion article *The Path Integral in Biquaternionic Form*, for the path integral in the algebra and its classical limit.
@@ -66,14 +66,14 @@ where $d^2z$ is the ordinary area element in the complex plane. The measure is t
 Discretise the time interval $[0,T]$ into $N$ slices of width $\epsilon = T/N$. Inserting $\mathbb{1}$ at each intermediate time and using the short-time limit of the propagator,
 
 $$
-\langle  z_{k+1}|\exp(-\frac{2\pi i\,\epsilon\,\tilde{H}_{\Psi}}{h})|z_k\rangle
-\approx  \langle  z_{k+1}|z_k\rangle\,\exp(-i\epsilon\langle  z_k|\tilde H_\Psi|z_k\rangle\frac{2\pi}{h}),
+\langle  z_{k+1}|\exp(-\frac{2\pi i\,\epsilon\,\tilde{H}_{\Psi}}{h})|z_\imath\rangle
+\approx  \langle  z_{k+1}|z_\imath\rangle\,\exp(-i\epsilon\langle  z_\imath|\tilde H_\Psi|z_\imath\rangle\frac{2\pi}{h}),
 $$
 
 the propagator becomes
 
 $$
-G_{\mathrm{prop}}(z_f,T;z_i,0) = \lim_{N\to\infty}\left(\frac{2}{\pi}\right)^{\!N}\int\prod_{k=1}^{N-1}\frac{d^2z_k}{(1+|z_k|^2)^2}\prod_{k=0}^{N-1}\langle  z_{k+1}|z_k\rangle\,\exp(-\frac{2\pi i\,\epsilon}{h}\langle  z_k|\tilde H_\Psi|z_k\rangle),
+G_{\mathrm{prop}}(z_f,T;z_i,0) = \lim_{N\to\infty}\left(\frac{2}{\pi}\right)^{\!N}\int\prod_{k=1}^{N-1}\frac{d^2z_\imath}{(1+|z_\imath|^2)^2}\prod_{k=0}^{N-1}\langle  z_{k+1}|z_\imath\rangle\,\exp(-\frac{2\pi i\,\epsilon}{h}\langle  z_\imath|\tilde H_\Psi|z_\imath\rangle),
 $$
 
 with $z_0 = z_i$, $z_N = z_f$. This is the spin-1/2 path integral in its fully explicit form.
@@ -85,7 +85,7 @@ with $z_0 = z_i$, $z_N = z_f$. This is the spin-1/2 path integral in its fully e
 In the continuum limit the product of overlaps contributes
 
 $$
-\prod_k\langle  z_{k+1}|z_k\rangle
+\prod_\imath\langle  z_{k+1}|z_\imath\rangle
 \;\longrightarrow\;
 \exp\!\left(-\int_0^T\langle  z|\partial/\partial r'_t|z\rangle\,dr'_t\right)
 = \exp\!\left(\frac{2\pi i}{h}S_{WZ}\right),
@@ -271,11 +271,11 @@ In the biquaternion algebra the coherent-state integral is an integral over the 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\imath^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace |
 | $\mathbb{B}_{H}$ | Unit real quaternions; the classical rotors |
-| $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_k$ | Spin-1/2 operator |
+| $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_\imath$ | Spin-1/2 operator |
 | $|\varkappa_{\mathrm{stg}}\rangle$ | Spin coherent state with Bloch vector $\vec u(\varkappa_{\mathrm{stg}})$ |
 | $\varkappa_{\mathrm{stg}} = \tan\tfrac{\theta}{2}\exp(i\theta_{\mathrm{azm}}) = \tilde{Ξ}_{2}/\tilde{Ξ}_{1}$ | Stereographic coordinate |
 | $\langle z_2|z\rangle = \dfrac{1+\bar z_2 z}{\sqrt{(1+|z_2|^2)(1+|z|^2)}}$ | Coherent-state overlap |

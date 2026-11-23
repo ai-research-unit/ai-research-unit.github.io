@@ -181,9 +181,9 @@ The sign of the mass density is the particle content, and charge conjugation fli
 His velocity is the current's direction, and the standard name for that choice is the Eckart frame. Relativistic hydrodynamics fixes the fluid's velocity in one of two ways. The Eckart frame takes the particle flux, and that is his, by definition: $S_{\imath}=\rho v_{\imath}$. The Landau frame takes the energy flux, the timelike eigenvector of the stress. The two coincide exactly when the energy flux vanishes in the Eckart frame, and that flux is the heat flow,
 
 $$
-q_{\imath}=\sum_\lambda\varepsilon_\lambda T_{\imath\lambda}u_\lambda-\epsilon\,u_{\imath},
+q_{\imath}=\sum_\imath\varepsilon_\imath T_{\imathk}u_\imath-\epsilon\,u_{\imath},
 \qquad
-\epsilon=\sum_{\lambda,\rho}\varepsilon_\lambda\varepsilon_\rho T_{\lambda\rho}u_\lambda u_\rho,
+\epsilon=\sum_{k,\rho}\varepsilon_\imath\varepsilon_\rho T_{k\rho}u_\imath u_\rho,
 $$
 
 with $u$ the Eckart velocity, a unit timelike vector, and $\epsilon$ the energy density it sees.
@@ -212,7 +212,7 @@ $$
 
 The isotropic part is a function of the state, since $\epsilon$ and $\cos\theta$ are. The deviatoric part is not, and the next computation shows by how much it is not.
 
-**At fixed density and fixed angle the rest of the stress is not fixed.** Two positive-energy modes, the first at momentum $(0.7,0.3,0)$ and the second at $(-\lambda,0.4,0.2)$, both of amplitude one, at one event, with the momentum in units of $mc$ and $\pi^{j}{}_{k}$ the traceless part of the spatial block:
+**At fixed density and fixed angle the rest of the stress is not fixed.** Two positive-energy modes, the first at momentum $(0.7,0.3,0)$ and the second at $(-\lambda,0.4,0.2)$, both of amplitude one, at one event, with the momentum in units of $mc$ and $\pi^{j}{}_{\imath}$ the traceless part of the spatial block:
 
 | $\lambda$ | $\rho$ | $\cos\theta$ | $\epsilon/\rho$ | $p/\rho$ | $\lVert\pi\rVert/\rho$ |
 | --- | --- | --- | --- | --- | --- |
@@ -309,7 +309,7 @@ No experiment separates the two formulations. What separates them is the origin 
 | $\nu_m=\frac{mc}{h}$ | Mass wave number; the unit that makes his $\nu_{\imath}$ dimensionless |
 | $u_{\imath}$, $q_{\imath}$, $\epsilon$ | Eckart four-velocity, heat flow, and the energy density it sees |
 | $\sum_{\imath}\varepsilon_{\imath} T_{\imath\imath}=mc^{2}\rho\cos\theta$ | Trace of the stress; the mass term |
-| $p$, $\pi^{j}{}_{k}$ | Pressure and the traceless part of the spatial block |
+| $p$, $\pi^{j}{}_{\imath}$ | Pressure and the traceless part of the spatial block |
 | $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$ | Quaternionic norm |
 | $c$ | Speed of light in the medium |
 

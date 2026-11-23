@@ -44,12 +44,12 @@ There is no $\frac{h}{2\pi}$ anywhere in the derivative terms. The only place th
 
 The density's variation is the field equation contracted with the flow, and the direction's variation is its transverse part. That is the cleanest way to state the pair, and it follows from the split of $\delta A_{\imath}=u_{\imath}\,\delta r+r\,\delta u_{\imath}$ into a longitudinal and a transverse piece.
 
-The $r$ variation gives $\sum_{\imath}\varepsilon_{\imath} u_{\imath}(\sum_{\jmath}\partial_{\jmath} F_{\jmath\imath}-4\pi^{2}\nu_m^{2}A_{\imath})=0$, since $\partial F/\partial r$ along $u$ is the contraction; the $\delta u$ variation, restricted to $u\cdot\delta u=0$, gives the transverse part, $\sum_{\jmath}\mathsf{P}_{\imath\jmath}(\sum_\lambda\partial_\lambda F_{\lambda\jmath}-4\pi^{2}\nu_m^{2}A_{\jmath})=0$. The two together are the field equation and neither alone is.
+The $r$ variation gives $\sum_{\imath}\varepsilon_{\imath} u_{\imath}(\sum_{\jmath}\partial_{\jmath} F_{\jmath\imath}-4\pi^{2}\nu_m^{2}A_{\imath})=0$, since $\partial F/\partial r$ along $u$ is the contraction; the $\delta u$ variation, restricted to $u\cdot\delta u=0$, gives the transverse part, $\sum_{\jmath}\mathsf{P}_{\imath\jmath}(\sum_\imath\partial_\imath F_{k\jmath}-4\pi^{2}\nu_m^{2}A_{\jmath})=0$. The two together are the field equation and neither alone is.
 
 **The unit condition is the one place in this layer where a multiplier is genuinely needed.** The word's parameterisation absorbs the unit conditions of the boost and the rotor — a unit element is invertible for every value of its parameters — but the Proca direction is invertible by declaration and not by parameterisation: $u_{\imath}$ is three functions subject to one constraint, and the constraint must be imposed. Written with a multiplier,
 
 $$
-\mathcal L_{\lambda}=\mathcal L+\lambda\bigl(\sum_{\imath}\varepsilon_{\imath} u_{\imath} u_{\imath}+1\bigr),
+\mathcal L_{\imath}=\mathcal L+\lambda\bigl(\sum_{\imath}\varepsilon_{\imath} u_{\imath} u_{\imath}+1\bigr),
 $$
 
 and the multiplier enters the direction's equation as $\lambda u_{\imath}$, which is a force along the flow. It plays the part a pressure plays in an incompressible fluid, and the analogy is exact in one respect: it is the constraint's force and not the fluid's own.

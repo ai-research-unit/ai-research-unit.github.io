@@ -73,7 +73,7 @@ The half-angle enters every boost. Because $\cosh w$ and $\sinh w$ factor throug
 
 ## The Same Group in the Biquaternion Algebra
 
-Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the complexified quaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, where $e_t$ is the identity and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with complex coefficients. Let ${}^{\natural}$ fix the scalars and negate the vectors, and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ be its composition with complex conjugation.
+Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the complexified quaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, where $e_t$ is the identity and $\vec e_\imath^2=-e_t$. An element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with complex coefficients. Let ${}^{\natural}$ fix the scalars and negate the vectors, and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ be its composition with complex conjugation.
 
 The norm. The biquaternion norm is
 

@@ -26,7 +26,7 @@ $$
 u^{\dagger}C_0u = 1, \qquad v^{\dagger}C_0v = -1, \qquad u^{\dagger}C_0v = 0,
 $$
 
-where $C_0$ multiplies on the right by $i\vec e_x$ and $\dagger$ is Liu's adjoint of the field, so that $u^{\dagger}C_0u$ above is his scalar bilinear of the neutral element $u$. The article keeps his letters for that bilinear, which is the object his dictionary reproduces, and it writes the same pairing for any two elements as $\tilde{Ξ}_{1}^{\dagger}C_0\tilde{Ξ}_{2}$. Write $a_0=e_t$, $a_k=\vec e_k$ for the units a four-vector index multiplies on the left, and $b_0=\vec e_x$, $b_k=\vec e_y$ for those it multiplies on the right. The **generator** of index $\mu$ is the action
+where $C_0$ multiplies on the right by $i\vec e_x$ and $\dagger$ is Liu's adjoint of the field, so that $u^{\dagger}C_0u$ above is his scalar bilinear of the neutral element $u$. The article keeps his letters for that bilinear, which is the object his dictionary reproduces, and it writes the same pairing for any two elements as $\tilde{Ξ}_{1}^{\dagger}C_0\tilde{Ξ}_{2}$. Write $a_0=e_t$, $a_\imath=\vec e_\imath$ for the units a four-vector index multiplies on the left, and $b_0=\vec e_x$, $b_\imath=\vec e_y$ for those it multiplies on the right. The **generator** of index $\mu$ is the action
 $$
 C_{\imath}:\tilde{Ξ}\longmapsto i a_{\imath}\tilde{Ξ} b_{\imath} .
 $$
@@ -92,33 +92,33 @@ The projection uses $iC_{\imath}$, the real map, $\tilde{Ξ}\mapsto-a_{\imath}\t
 Two four-index tensors are read off the four generators. A product of generators multiplies its left units into one chain and its right units into another, so the trace of such a product is four times the product of the scalar parts of the two chains, and
 
 $$
-{r'_{t}}_{\imath\jmath\lambda\rho} = \mathrm{Sc}(a_{\imath} a_{\jmath} a_\lambda a_\rho)\,\mathrm{Sc}(b_\rho b_\lambda b_{\jmath} b_{\imath})
-= g_{\imath\jmath}g_{\lambda\rho} + g_{\imath\rho}g_{\jmath\lambda} - g_{\imath\lambda}g_{\jmath\rho},
+{r'_{t}}_{\imath\jmathk\rho} = \mathrm{Sc}(a_{\imath} a_{\jmath} a_\imath a_\rho)\,\mathrm{Sc}(b_\rho b_\imath b_{\jmath} b_{\imath})
+= g_{\imath\jmath}g_{k\rho} + g_{\imath\rho}g_{\jmathk} - g_{\imathk}g_{\jmath\rho},
 $$
 
 $$
-\varepsilon_{\imath\jmath\lambda\rho} = \mathrm{Sc}(e_t\,a_{\imath} a_{\jmath} a_\lambda a_\rho)\,\mathrm{Sc}(b_\rho b_\lambda b_{\jmath} b_{\imath}\,\vec e_z),
+\varepsilon_{\imath\jmathk\rho} = \mathrm{Sc}(e_t\,a_{\imath} a_{\jmath} a_\imath a_\rho)\,\mathrm{Sc}(b_\rho b_\imath b_{\jmath} b_{\imath}\,\vec e_z),
 \qquad \varepsilon_{0123} = 1 .
 $$
 
 The first is symmetric under the interchange of its two index pairs; the second is the totally antisymmetric symbol. From them and the neutral vectors come the structure constants
 
 $$
-c_{\imath\jmath\lambda} = \bigl({r'_{t}}_{\imath\jmath\lambda\rho} - i\varepsilon_{\imath\jmath\lambda\rho}\bigr)k_\rho,
+c_{\imath\jmathk} = \bigl({r'_{t}}_{\imath\jmathk\rho} - i\varepsilon_{\imath\jmathk\rho}\bigr)k_\rho,
 \qquad
-\check c_{\imath\jmath\lambda} = \bigl({r'_{t}}_{\imath\jmath\lambda\rho} - i\varepsilon_{\imath\jmath\lambda\rho}\bigr)j_\rho .
+\check c_{\imath\jmathk} = \bigl({r'_{t}}_{\imath\jmathk\rho} - i\varepsilon_{\imath\jmathk\rho}\bigr)j_\rho .
 $$
 
-The two differ only in which neutral vector contracts the four-index symbol; $c$ is built on the timelike $k$, $\check c$ on the spacelike $j$. In $c_{\imath\lambda\jmath}$ and $\check c_{\imath\lambda\jmath}$ the slots are, in order, the left input, the output and the right input. The metric is symmetric, so its slot order carries no information; the totally antisymmetric $\varepsilon$ changes sign when two of its slots are exchanged, and its slot order is part of the statement.
+The two differ only in which neutral vector contracts the four-index symbol; $c$ is built on the timelike $k$, $\check c$ on the spacelike $j$. In $c_{\imathk\jmath}$ and $\check c_{\imathk\jmath}$ the slots are, in order, the left input, the output and the right input. The metric is symmetric, so its slot order carries no information; the totally antisymmetric $\varepsilon$ changes sign when two of its slots are exchanged, and its slot order is part of the statement.
 
 ### The Normed Condition
 
 The bilinear composition
 
 $$
-(G \otimes H)_\lambda = \sum_{\imath,\jmath}\epsilon_{\imath}\epsilon_{\jmath}\, G_{\imath}\, c_{\imath\lambda\jmath} H_{\jmath},
+(G \otimes H)_\imath = \sum_{\imath,\jmath}\epsilon_{\imath}\epsilon_{\jmath}\, G_{\imath}\, c_{\imathk\jmath} H_{\jmath},
 \qquad
-(G \mathbin{\check\otimes} H)_\lambda = \sum_{\imath,\jmath}\epsilon_{\imath}\epsilon_{\jmath}\, G_{\imath}\, \check c_{\imath\lambda\jmath} H_{\jmath}
+(G \mathbin{\check\otimes} H)_\imath = \sum_{\imath,\jmath}\epsilon_{\imath}\epsilon_{\jmath}\, G_{\imath}\, \check c_{\imathk\jmath} H_{\jmath}
 $$
 
 satisfies the identities that Hurwitz's theorem makes possible only in dimensions $1, 2, 4, 8$:
@@ -138,10 +138,10 @@ The sign of the second identity is the sign difference between the timelike and 
 The composition is associative and non-commutative, and $k$ is its two-sided unit:
 
 $$
-(G\otimes H)\otimes K = G\otimes(H\otimes K), \qquad \sum_{\imath,\lambda}\epsilon_{\imath}\epsilon_\lambda\, u_{\imath} c_{\imath\jmath\lambda} G_\lambda = G_{\jmath} .
+(G\otimes H)\otimes K = G\otimes(H\otimes K), \qquad \sum_{\imath,k}\epsilon_{\imath}\epsilon_\imath\, u_{\imath} c_{\imath\jmathk} G_\imath = G_{\jmath} .
 $$
 
-Its realisation is the quaternion algebra. The four directions are read with $e_0=k$ as the unit, $k$ being the algebra's identity, and $e_k=i\vec e_k$, so that $e_k^2=e_t$ and $e_xe_y=i e_z$ cyclically: the factor $i$, through $i^2=-1$, flips both signs of the quaternion law, and those are the relations of the realisation, not of the biquaternion units themselves. The unarrowed $e_k$ is this rescaled direction, not the quaternion unit $\vec e_k$, whose square is $-e_t$ and whose product is $\vec e_x\vec e_y=+\vec e_z$. The neutral vector $\vec\nu_\Phi$ is hidden inside $c$: it is the unit element of the composition, the preferred time direction of the algebra.
+Its realisation is the quaternion algebra. The four directions are read with $e_0=k$ as the unit, $k$ being the algebra's identity, and $e_\imath=i\vec e_\imath$, so that $e_\imath^2=e_t$ and $e_xe_y=i e_z$ cyclically: the factor $i$, through $i^2=-1$, flips both signs of the quaternion law, and those are the relations of the realisation, not of the biquaternion units themselves. The unarrowed $e_\imath$ is this rescaled direction, not the quaternion unit $\vec e_\imath$, whose square is $-e_t$ and whose product is $\vec e_x\vec e_y=+\vec e_z$. The neutral vector $\vec\nu_\Phi$ is hidden inside $c$: it is the unit element of the composition, the preferred time direction of the algebra.
 
 ## The Two Parts as Real Four-Vectors
 
@@ -168,11 +168,11 @@ $$
 $$
 
 $$
-\tilde{Ξ}^{\dagger}C_0\, C_{\imath}\tilde{Ξ} = \sum_{\jmath,\lambda}\epsilon_{\jmath}\epsilon_\lambda\, G_\lambda\, c_{\lambda\imath\jmath}\, G^*_{\jmath},
+\tilde{Ξ}^{\dagger}C_0\, C_{\imath}\tilde{Ξ} = \sum_{\jmath,k}\epsilon_{\jmath}\epsilon_\imath\, G_\imath\, c_{k\imath\jmath}\, G^*_{\jmath},
 \qquad
-\tilde{Ξ}^{\dagger}C_0\,\Gamma C_{\imath}\tilde{Ξ} = \sum_{\jmath,\lambda}\epsilon_{\jmath}\epsilon_\lambda\, G_\lambda\, \check c_{\lambda\imath\jmath}\, G^*_{\jmath} .
+\tilde{Ξ}^{\dagger}C_0\,\Gamma C_{\imath}\tilde{Ξ} = \sum_{\jmath,k}\epsilon_{\jmath}\epsilon_\imath\, G_\imath\, \check c_{k\imath\jmath}\, G^*_{\jmath} .
 $$
-Here $\Gamma:\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$ and $C_{\imath}:\tilde{Ξ}\mapsto i a_{\imath}\tilde{Ξ} b_{\imath}$, so $\Gamma C_{\imath}:\tilde{Ξ}\mapsto a_{\imath}\tilde{Ξ} b_{\imath}\vec e_z$: the two factors of $i$ cancel by $i^2=-1$, and the axial bilinear carries no explicit imaginary unit. The slot order is the one fixed above: the first slot of $c$ belongs to the left factor, here $G_\lambda$, the middle slot to the output index $\mu$, and the last slot to the right factor, here $G^*_{\jmath}$. Because the two factors commute as complex numbers, the sum is unchanged if the two are exchanged together with the first and last slots; it is changed if only one of the two is moved. With the opposite attachment, $\sum\epsilon_{\jmath}\epsilon_\lambda G^*_{\jmath}\check c_{\jmath\imath\lambda}G_\lambda$, the same sum appears with the opposite sign, and the two readings must not be mixed.
+Here $\Gamma:\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$ and $C_{\imath}:\tilde{Ξ}\mapsto i a_{\imath}\tilde{Ξ} b_{\imath}$, so $\Gamma C_{\imath}:\tilde{Ξ}\mapsto a_{\imath}\tilde{Ξ} b_{\imath}\vec e_z$: the two factors of $i$ cancel by $i^2=-1$, and the axial bilinear carries no explicit imaginary unit. The slot order is the one fixed above: the first slot of $c$ belongs to the left factor, here $G_\imath$, the middle slot to the output index $\mu$, and the last slot to the right factor, here $G^*_{\jmath}$. Because the two factors commute as complex numbers, the sum is unchanged if the two are exchanged together with the first and last slots; it is changed if only one of the two is moved. With the opposite attachment, $\sum\epsilon_{\jmath}\epsilon_\imath G^*_{\jmath}\check c_{\jmath\imathk}G_\imath$, the same sum appears with the opposite sign, and the two readings must not be mixed.
 
 The charge current is $e\,\pi_{\imath} = e\sum_{\rho,\sigma}\epsilon_\rho\epsilon_\sigma\, G_\rho c_{\rho\imath\sigma}G^*_\sigma = e\,\tilde{Ξ}^{\dagger}C_0C_{\imath}\tilde{Ξ}$, the source's first bilinear, and it is the vector identity above with the summation indices renamed $\lambda\to\rho$, ${\jmath}\to\sigma$. The operator that carries the split is the right multiplication
 $$
@@ -198,25 +198,25 @@ which leaves the trilinear form
 
 $$
 A_{\imath}\bigl(\tilde{Ξ}^{\dagger}C_{0,(1)}\, C_{\imath}\tilde{Ξ}_{(2)} + \tilde{Ξ}^{\dagger}C_{0,(2)}\, C_{\imath}\tilde{Ξ}_{(1)}\bigr)
-= 2\sum_{\jmath,\lambda,\sigma}\epsilon_{\jmath}\epsilon_\lambda\epsilon_\sigma\, A_{\imath}\, \varepsilon_{\lambda\imath\jmath\sigma}N_\lambda B_{\jmath} k_\sigma
+= 2\sum_{\jmath,k,\sigma}\epsilon_{\jmath}\epsilon_\imath\epsilon_\sigma\, A_{\imath}\, \varepsilon_{k\imath\jmath\sigma}N_\imath B_{\jmath} k_\sigma
 $$
 
-invariant. This is the *ding*: the fourth-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions, and the vector, the timelike unit $k$ and the two parts playing the roles the three eight-dimensional spaces play in the $\mathrm{Spin}(8)$ case. Written with the first slot of the symbol on $B$ instead, $\varepsilon_{\jmath\imath\lambda\sigma}B_{\jmath} N_\lambda$, the same sum changes sign; the identity above is the version in which each symbol carries its factors in the order of its slots.
+invariant. This is the *ding*: the fourth-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions, and the vector, the timelike unit $k$ and the two parts playing the roles the three eight-dimensional spaces play in the $\mathrm{Spin}(8)$ case. Written with the first slot of the symbol on $B$ instead, $\varepsilon_{\jmath\imathk\sigma}B_{\jmath} N_\imath$, the same sum changes sign; the identity above is the version in which each symbol carries its factors in the order of its slots.
 
 The fuller cubic form is linear in the vector $A$ and quadratic in the two parts. Its three-index symbols are the four-index ones contracted with $k$,
 $$
-{r'_{t}}_{\jmath\imath\lambda}:={r'_{t}}_{\jmath\imath\lambda\sigma}k_\sigma,
+{r'_{t}}_{\jmath\imathk}:={r'_{t}}_{\jmath\imathk\sigma}k_\sigma,
 \qquad
-\varepsilon_{\imath\lambda\jmath}:=\varepsilon_{\imath\lambda\jmath\sigma}k_\sigma,
+\varepsilon_{\imathk\jmath}:=\varepsilon_{\imathk\jmath\sigma}k_\sigma,
 $$
 and the form is
 $$
 C = \sum_{\imath} A_{\imath}\,\tilde{Ξ}^{\dagger}C_0\, C_{\imath}\tilde{Ξ}
-= \sum_{\imath,\jmath,\lambda}\epsilon_{\jmath}\epsilon_\lambda\, A_{\imath}\, G_\lambda\, c_{\lambda\imath\jmath}\, G^*_{\jmath} .
+= \sum_{\imath,\jmath,k}\epsilon_{\jmath}\epsilon_\imath\, A_{\imath}\, G_\imath\, c_{k\imath\jmath}\, G^*_{\jmath} .
 $$
 For real $A$ its real part is the source's cubic form,
 $$
-\mathrm{Re}\,C = \sum_{\imath,\jmath,\lambda}\epsilon_{\jmath}\epsilon_\lambda\, A_{\imath}\Bigl[{r'_{t}}_{\jmath\imath\lambda}\bigl(B_{\jmath} B_\lambda + N_{\jmath} N_\lambda\bigr) + 2\varepsilon_{\imath\lambda\jmath}B_\lambda N_{\jmath}\Bigr],
+\mathrm{Re}\,C = \sum_{\imath,\jmath,k}\epsilon_{\jmath}\epsilon_\imath\, A_{\imath}\Bigl[{r'_{t}}_{\jmath\imathk}\bigl(B_{\jmath} B_\imath + N_{\jmath} N_\imath\bigr) + 2\varepsilon_{\imathk\jmath}B_\imath N_{\jmath}\Bigr],
 $$
 with the symmetric $r'_t$ pairing each part with itself and the antisymmetric $\varepsilon$ pairing the two; the imaginary part is a second $r'_t$ contraction of $B$ and $N$, which the compact form keeps inside the single complex number $C$. The two together complete the dictionary of the three quadratic forms and the one cubic form that define the algebra.
 
@@ -229,28 +229,28 @@ $$
 $$
 
 $$
-= \tfrac12\Bigl[\sum_{\imath,\jmath,\lambda}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_\lambda\bigl(\tilde\nabla_{\imath} G_{\jmath}\bigr)^* i\check c_{\jmath\imath\lambda} G_\lambda - \sum_{\imath,\jmath,\lambda}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_\lambda G^*_{\jmath}\, i\check c_{\jmath\imath\lambda}\, \tilde\nabla_{\imath} G_\lambda + m\sum_{\jmath}\epsilon_{\jmath}\bigl(G^{*}_{\jmath} G^{*}_{\jmath} + G_{\jmath} G_{\jmath}\bigr)\Bigr],
+= \tfrac12\Bigl[\sum_{\imath,\jmath,k}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_\imath\bigl(\tilde\nabla_{\imath} G_{\jmath}\bigr)^* i\check c_{\jmath\imathk} G_\imath - \sum_{\imath,\jmath,k}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_\imath G^*_{\jmath}\, i\check c_{\jmath\imathk}\, \tilde\nabla_{\imath} G_\imath + m\sum_{\jmath}\epsilon_{\jmath}\bigl(G^{*}_{\jmath} G^{*}_{\jmath} + G_{\jmath} G_{\jmath}\bigr)\Bigr],
 $$
 
 with the covariant derivative
 
 $$
-\tilde\nabla_{\imath} G_\lambda = \partial/\partial x_{\imath} G_\lambda - ieA_{\imath}\, g_{\lambda\rho}\, c_5{}_{\rho\sigma} G_\sigma .
+\tilde\nabla_{\imath} G_\imath = \partial/\partial x_{\imath} G_\imath - ieA_{\imath}\, g_{k\rho}\, c_5{}_{\rho\sigma} G_\sigma .
 $$
 
 On the two parts the connection collapses to an ordinary phase, because $c_5{}_{\rho\sigma}G_{R\sigma}=+G_{R\rho}$ and $c_5{}_{\rho\sigma}G_{L\sigma}=-G_{L\rho}$:
 
 $$
-\tilde\nabla_{\imath} G_{R\lambda} = \bigl(\partial/\partial x_{\imath} - ieA_{\imath}\bigr)G_{R\lambda},
+\tilde\nabla_{\imath} G_{Rk} = \bigl(\partial/\partial x_{\imath} - ieA_{\imath}\bigr)G_{Rk},
 \qquad
-\tilde\nabla_{\imath} G_{L\lambda} = \bigl(\partial/\partial x_{\imath} + ieA_{\imath}\bigr)G_{L\lambda} .
+\tilde\nabla_{\imath} G_{Lk} = \bigl(\partial/\partial x_{\imath} + ieA_{\imath}\bigr)G_{Lk} .
 $$
 
 The opposite charges of the two parts are thus the two eigenvalues of $c_5$, and the gauge field couples to them with opposite signs, as a gauge field on two values must.
 
-Both kinetic terms carry the same combination $i\check c$, and that product is not purely imaginary, because $\check c$ already contains an $i$. Since $\check c_{\imath\jmath\lambda}=({r'_{t}}_{\imath\jmath\lambda\rho}-i\varepsilon_{\imath\jmath\lambda\rho})j_\rho$, the combination is
+Both kinetic terms carry the same combination $i\check c$, and that product is not purely imaginary, because $\check c$ already contains an $i$. Since $\check c_{\imath\jmathk}=({r'_{t}}_{\imath\jmathk\rho}-i\varepsilon_{\imath\jmathk\rho})j_\rho$, the combination is
 $$
-i\check c_{\imath\jmath\lambda}=\varepsilon_{\imath\jmath\lambda\rho}j_\rho+i\,{r'_{t}}_{\imath\jmath\lambda\rho}j_\rho,
+i\check c_{\imath\jmathk}=\varepsilon_{\imath\jmathk\rho}j_\rho+i\,{r'_{t}}_{\imath\jmathk\rho}j_\rho,
 $$
 so the operator has a real $\varepsilon$ part and an imaginary $r'_t$ part. The two kinetic terms are not equal and not merely conjugate: writing $T_1$ for the first and $T_2$ for the second, conjugation exchanges them with a minus,
 $$
@@ -260,7 +260,7 @@ so the combination $T_1-T_2=T_1+\overline{T_1}$ is real. The minus comes from th
 
 Two features are worth naming. The kinetic operator is not symmetric in $G$ and $G^*$: the two terms differ by a sign as well as by conjugation, and that is what makes their difference real. The mass term is $m(G^*G^* + GG)$, not $mG^*G$: the mass couples $G$ to $G^*$ rather than to itself, which is the shadow of the mass that relates the two parts of the field. The kinetic operator separates the two values the way a Dirac operator does in a four-vector carrier.
 
-The mass is not carried by the square of a first-order derivative operator. The derivative of the article is the gradient, and the gradient's square is not scalar, because $e_t$ commutes with the spatial units and the mixed time–space derivatives survive in $\tilde\nabla_\Phi^2=\Box_\Phi+2\sum_{k\in\{x,y,z\}}\vec e_k\,\partial^2/\partial R_t\partial R_k$. Only the paired product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ is scalar, and it conjugates one factor instead of squaring it. The free equation is therefore first order in one field, $i\sum_{\jmath,\lambda}\epsilon_{\jmath}\epsilon_\lambda\,\check c_{\imath\jmath\lambda}\,\tilde\nabla_{\jmath} G_\lambda=0$ at $m=0$; the massive system is the pair of §The Chiral Pair, and the mass sits between the two values rather than inside one square.
+The mass is not carried by the square of a first-order derivative operator. The derivative of the article is the gradient, and the gradient's square is not scalar, because $e_t$ commutes with the spatial units and the mixed time–space derivatives survive in $\tilde\nabla_\Phi^2=\Box_\Phi+2\sum_{\imath\in\{x,y,z\}}\vec e_\imath\,\partial^2/\partial R_t\partial R_\imath$. Only the paired product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ is scalar, and it conjugates one factor instead of squaring it. The free equation is therefore first order in one field, $i\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_\imath\,\check c_{\imath\jmathk}\,\tilde\nabla_{\jmath} G_\imath=0$ at $m=0$; the massive system is the pair of §The Chiral Pair, and the mass sits between the two values rather than inside one square.
 
 The pair does imply the Klein–Gordon equation, and the implication runs through the paired product. On the element, from $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, applying $(\tilde\nabla_\Phi)^{\natural}$ to the first equation and $\tilde\nabla_\Phi$ to the second gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=4\pi^{2}\nu_m^{2}\tilde{Ξ}_{R}$ and $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=4\pi^{2}\nu_m^{2}\tilde{Ξ}_{L}$, that is
 
@@ -270,7 +270,7 @@ $$
 
 since $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ is scalar. Each value obeys the Klein–Gordon equation, and the first-order system is the pair, not the square root of a scalar operator. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
-The bosonization is not canonical. It depends on the choice of the neutral elements $j_{\imath}$ and $u_{\imath}$: the Lagrangian is built from $\check c$, and $\check c$ is built from $j$. Any orthogonal pair with $k\cdot k = -j\cdot j = 1$ serves, they are arbitrary but must be fixed; the remaining symbols $c_{\imath\jmath\lambda}$, $c_5{}_{\rho\sigma}$ and the rest are reconstructed once $j$ and $k$ are chosen.
+The bosonization is not canonical. It depends on the choice of the neutral elements $j_{\imath}$ and $u_{\imath}$: the Lagrangian is built from $\check c$, and $\check c$ is built from $j$. Any orthogonal pair with $k\cdot k = -j\cdot j = 1$ serves, they are arbitrary but must be fixed; the remaining symbols $c_{\imath\jmathk}$, $c_5{}_{\rho\sigma}$ and the rest are reconstructed once $j$ and $k$ are chosen.
 
 ## The Two Equations and the Self-Dual Form
 
@@ -279,10 +279,10 @@ The bosonization is not canonical. It depends on the choice of the neutral eleme
 The massive Dirac equation in the vector representation has **two values**, and the mass couples them. Split into its two values, the equation reads two equations, not one:
 
 $$
-\sum_{\jmath,\lambda}\epsilon_{\jmath}\epsilon_\lambda\,\check c_{\imath\jmath\lambda}\, i(\partial/\partial x_{\jmath}-ieA_{\jmath})G_{R\lambda} - m\,G^{*}_{L\imath}=0,
+\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_\imath\,\check c_{\imath\jmathk}\, i(\partial/\partial x_{\jmath}-ieA_{\jmath})G_{Rk} - m\,G^{*}_{L\imath}=0,
 $$
 $$
-\sum_{\jmath,\lambda}\epsilon_{\jmath}\epsilon_\lambda\,\check c_{\imath\jmath\lambda}\, i(\partial/\partial x_{\jmath}+ieA_{\jmath})G_{L\lambda} - m\,G^{*}_{R\imath}=0,
+\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_\imath\,\check c_{\imath\jmathk}\, i(\partial/\partial x_{\jmath}+ieA_{\jmath})G_{Lk} - m\,G^{*}_{R\imath}=0,
 $$
 
 where $G_{R\imath}$ and $G_{L\imath}$ are the two parts of $G_{\imath}$: the $+1$ and the $-1$ value of $c_5$,
@@ -298,7 +298,7 @@ $$
 The single complex equation
 
 $$
-i\sum_{\jmath,\lambda}\epsilon_{\jmath}\epsilon_\lambda\,\check c_{\imath\jmath\lambda}\,\tilde\nabla_{\jmath} G_\lambda - m\, G^{*}_{\imath} = 0
+i\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_\imath\,\check c_{\imath\jmathk}\,\tilde\nabla_{\jmath} G_\imath - m\, G^{*}_{\imath} = 0
 $$
 
 is the compact form of the same pair at $A_{\imath}=0$: the two equations above are its two values, and every $G_{\imath}$ is their sum. Both halves are quoted in the source's letters, $\partial/\partial x_{\jmath}$ its index partial and $A_{\jmath}$ its gauge field; the compact line writes the same equation in the corpus gradient, whose ${\jmath}$-th leg stands in that slot. This is the two-value structure of the element's equation, carried to the four-vector carrier. On the element the same pair reads
@@ -314,7 +314,7 @@ with the mass $me_t$ central, $e_t$ being the identity of the algebra. Nothing i
 Equivalently, with $A_{\imath} = 0$, the pair is the self-dual system
 
 $$
-G_{\imath\jmath} = \tfrac{i}{2}\,\varepsilon_{\imath\jmath\lambda\rho} G_{\lambda\rho},
+G_{\imath\jmath} = \tfrac{i}{2}\,\varepsilon_{\imath\jmathk\rho} G_{k\rho},
 \qquad
 \sum_{\imath}\epsilon_{\imath}\bigl(\partial/\partial x_{\imath} G_{\imath} + i m j_{\imath} G^{*}_{\imath}\bigr) = 0,
 $$
@@ -332,26 +332,26 @@ The first equation is a self-duality condition on the field strength $G_{\imath\
 The two parts $G_{R\imath}$ and $G_{L\imath}$ of §The Chiral Pair are the two values of $c_5{}_{\imath\jmath}$ read on $G_{\imath}$; the equation of motion is the pair displayed there. The two-form
 
 $$
-H_{\imath\jmath} := \sum_\lambda\epsilon_\lambda\, G^*_\lambda\, \check c_{\lambda\imath\jmath}
+H_{\imath\jmath} := \sum_\imath\epsilon_\imath\, G^*_\imath\, \check c_{k\imath\jmath}
 $$
 
 is not antisymmetric. Its symmetric part is proportional to the metric, $H_{(\imath\jmath)}=\xi_{\mathrm{scl}}\,g_{\imath\jmath}$, with $\xi_{\mathrm{scl}}=\tfrac14 g_{\imath\jmath}H_{\imath\jmath}$, and its antisymmetric part is **anti-self-dual**,
 
 $$
-H_{[\imath\jmath]} = -\tfrac{i}{2}\sum_{\lambda,\rho}\epsilon_\lambda\epsilon_\rho\,\varepsilon_{\imath\jmath\lambda\rho} H_{[\lambda\rho]},
+H_{[\imath\jmath]} = -\tfrac{i}{2}\sum_{k,\rho}\epsilon_\imath\epsilon_\rho\,\varepsilon_{\imath\jmathk\rho} H_{[k\rho]},
 $$
 
 so the antisymmetric part, which has six real components, is carried by three complex ones. This is the biquaternion analogue of the electromagnetic field, whose six real components are carried by the single biquaternion $\vec E+i\vec H$: the source notes that only the three-dimensional vector part of a biquaternion has the Maxwell analogy. In these variables the uncharged Dirac equation reads
 
 $$
-\sum_{\jmath}\epsilon_{\jmath}\,\partial/\partial x_{\jmath} H_{\jmath\imath} - \tfrac{im}{2}\sum_{\jmath,\lambda}\epsilon_{\jmath}\epsilon_\lambda\bigl(\check c_{\jmath\imath\lambda}H_{\jmath\lambda}\bigr)^* = 0.
+\sum_{\jmath}\epsilon_{\jmath}\,\partial/\partial x_{\jmath} H_{\jmath\imath} - \tfrac{im}{2}\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_\imath\bigl(\check c_{\jmath\imathk}H_{\jmathk}\bigr)^* = 0.
 $$
 
 The source reads the resulting pair of equations as a Maxwell system with both "electric" and "magnetic" currents, and records the identity
 
 $$
-\tfrac14\bigl[G_{\imath\jmath}\varepsilon_{\imath\jmath\lambda\rho}G_{\lambda\rho} + G^*_{\imath\jmath}\varepsilon_{\imath\jmath\lambda\rho}G^*_{\lambda\rho}\bigr]
-= 2\partial/\partial x_{\imath}\Bigl[\varepsilon_{\imath\jmath\lambda\rho}\bigl(B_{\jmath}\partial/\partial x_\lambda B_\rho - N_{\jmath}\partial/\partial x_\lambda N_\rho + 2mB_{\jmath} N_\lambda j_\rho\bigr)\Bigr],
+\tfrac14\bigl[G_{\imath\jmath}\varepsilon_{\imath\jmathk\rho}G_{k\rho} + G^*_{\imath\jmath}\varepsilon_{\imath\jmathk\rho}G^*_{k\rho}\bigr]
+= 2\partial/\partial x_{\imath}\Bigl[\varepsilon_{\imath\jmathk\rho}\bigl(B_{\jmath}\partial/\partial x_\imath B_\rho - N_{\jmath}\partial/\partial x_\imath N_\rho + 2mB_{\jmath} N_\imath j_\rho\bigr)\Bigr],
 $$
 
 a Chern–Pontryagin-type density equal to a total derivative of a Chern–Simons-type current. The Dirac Lagrangian can therefore be modified by that total derivative, which is the entry into the topologically massive gauge field of the companion article *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*.
@@ -374,7 +374,7 @@ $$
 so it exchanges the two neutral vectors up to a sign and rotates the pair of spacelike directions by $i$. Its values are real on the neutral pair and imaginary on the spacelike pair; it is Hermitian, squares to the identity, and is $g$-antisymmetric,
 
 $$
-\sum_\lambda c_5{}_{\lambda\imath}g_{\lambda\jmath} = -\sum_\lambda g_{\imath\lambda}c_5{}_{\lambda\jmath},
+\sum_\imath c_5{}_{k\imath}g_{k\jmath} = -\sum_\imath g_{\imathk}c_5{}_{k\jmath},
 $$
 
 so its eigenvalues are $+1$ and $-1$, the two parts are orthogonal, and $e^{-i\theta_{\mathrm{axr}} c_5}$ is an isometry of the quadratic form. It mixes $G_0$ with $G_3$ and $G_1$ with $G_2$; it does not separate time from space, and the action is basis-dependent, the values above being a representative of the chirality rather than the chirality itself.
@@ -409,7 +409,7 @@ $$
 B \mapsto N, \qquad N \mapsto -B, \qquad m \mapsto -m
 $$
 
-leaves the quadratic form $\nu_m\tilde{Ξ}^{\dagger}C_0\tilde{Ξ} = \nu_m\sum_{\jmath}\epsilon_{\jmath}(N_{\jmath} N_{\jmath} - B_{\jmath} B_{\jmath})$, the cubic form $\sum_{\imath,\jmath,\lambda}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_\lambda V_{\imath} B_{\jmath} N_\lambda\varepsilon_{\jmath\imath\lambda}$ and hence the Lagrangian and the equation of motion invariant. The source reads this as the statement that the part of the first type is *dual* to the part of the second type, on the model of the electromagnetic duality that exchanges $\vec E$ and $\vec H$ while exchanging $e$ and a magnetic coupling. It is the first-order shadow of the parent-action duality between the Dirac Lagrangian and the second-order topologically massive gauge Lagrangian, and it is the reason the two Lagrangians can describe the same propagating modes.
+leaves the quadratic form $\nu_m\tilde{Ξ}^{\dagger}C_0\tilde{Ξ} = \nu_m\sum_{\jmath}\epsilon_{\jmath}(N_{\jmath} N_{\jmath} - B_{\jmath} B_{\jmath})$, the cubic form $\sum_{\imath,\jmath,k}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_\imath V_{\imath} B_{\jmath} N_\imath\varepsilon_{\jmath\imathk}$ and hence the Lagrangian and the equation of motion invariant. The source reads this as the statement that the part of the first type is *dual* to the part of the second type, on the model of the electromagnetic duality that exchanges $\vec E$ and $\vec H$ while exchanging $e$ and a magnetic coupling. It is the first-order shadow of the parent-action duality between the Dirac Lagrangian and the second-order topologically massive gauge Lagrangian, and it is the reason the two Lagrangians can describe the same propagating modes.
 
 ## What the Construction Does and Does Not Supply
 
@@ -417,9 +417,9 @@ leaves the quadratic form $\nu_m\tilde{Ξ}^{\dagger}C_0\tilde{Ξ} = \nu_m\sum_{\
 
 **It does not supply** a Lorentz-covariant construction. The neutral elements $j_{\imath}$ and $u_{\imath}$ are *extra structure*: they are not determined by the metric, they are the two directions the construction singles out, and the algebra's unit is $k$. The source is explicit that this is a defect of the incomplete algorithm and, in the same breath, a virtue: the structure constants *do* return the neutral vectors by contraction,
 $$
-\sum_{\imath}\epsilon_{\imath}\,c_{\imath\imath\lambda}=4u_\lambda,
+\sum_{\imath}\epsilon_{\imath}\,c_{\imath\imathk}=4u_\imath,
 \qquad
-\sum_{\imath}\epsilon_{\imath}\,\check c_{\imath\imath\lambda}=-4j_\lambda,
+\sum_{\imath}\epsilon_{\imath}\,\check c_{\imath\imathk}=-4j_\imath,
 $$
 so the preferred frame is not put in by hand in the final form, it is the algebra's own unit. But it is still a preferred frame, and a Lorentz transformation that moves $k$ is not a symmetry of the individual dictionary, only of the equivalence class of dictionaries. The source's own warning applies: the triality map $J$ is *not* a symmetry of the theory; it maps one description of the theory to another description of the same theory.
 
@@ -457,11 +457,11 @@ $\gamma_5$ is the reference-frame representative of the chirality: the ordered p
 
 ## Summary
 
-The field of four-dimensional Minkowski space decomposes into two parts, and each part is a **real four-vector**: $\tilde{Ξ}_{1} = \mathcal{R}(B^\flat)v$ and $\tilde{Ξ}_{2} = \mathcal{R}(N^\flat)u$ with real $B_{\imath}, N_{\imath}$, where $B^\flat_{\jmath}=\sum_{\imath} g_{\imath\jmath}B_{\imath}$ and $N^\flat_{\jmath}=\sum_{\imath} g_{\imath\jmath}N_{\imath}$. The combined object $G_{\imath} = B_{\imath} + iN_{\imath}$ is an **s-vector**, and the map $\tilde{Ξ} \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $u_{\imath}$, a spacelike unit vector $j_{\imath}$, and two neutral elements $u, v$ — the neutral elements of Chevalley. The composition law $c_{\imath\jmath\lambda} = ({r'_{t}}_{\imath\jmath\lambda\rho} - i\varepsilon_{\imath\jmath\lambda\rho})k_\rho$ built from the four-index traces $r'_t$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its realisation is the quaternion algebra read with $e_0=k$ and $e_k=i\vec e_k$, so that $e_k^2=e_t$ and $e_xe_y=i e_z$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two parts while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
+The field of four-dimensional Minkowski space decomposes into two parts, and each part is a **real four-vector**: $\tilde{Ξ}_{1} = \mathcal{R}(B^\flat)v$ and $\tilde{Ξ}_{2} = \mathcal{R}(N^\flat)u$ with real $B_{\imath}, N_{\imath}$, where $B^\flat_{\jmath}=\sum_{\imath} g_{\imath\jmath}B_{\imath}$ and $N^\flat_{\jmath}=\sum_{\imath} g_{\imath\jmath}N_{\imath}$. The combined object $G_{\imath} = B_{\imath} + iN_{\imath}$ is an **s-vector**, and the map $\tilde{Ξ} \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $u_{\imath}$, a spacelike unit vector $j_{\imath}$, and two neutral elements $u, v$ — the neutral elements of Chevalley. The composition law $c_{\imath\jmathk} = ({r'_{t}}_{\imath\jmathk\rho} - i\varepsilon_{\imath\jmathk\rho})k_\rho$ built from the four-index traces $r'_t$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its realisation is the quaternion algebra read with $e_0=k$ and $e_\imath=i\vec e_\imath$, so that $e_\imath^2=e_t$ and $e_xe_y=i e_z$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two parts while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
 
-The Dirac Lagrangian becomes bosonic: a quadratic kinetic term in $G$ with the $\check c$ structure constants, and a mass term $m(G^*G^* + GG)$ that couples $G$ to $G^*$ — the mass that relates the two parts of the field in another guise. The massive equation becomes the pair of §The Chiral Pair, or equivalently the self-dual pair $G_{\imath\jmath} = \tfrac{i}{2}\varepsilon_{\imath\jmath\lambda\rho}G_{\lambda\rho}$, $\sum_{\imath}\epsilon_{\imath}\bigl(\partial/\partial x_{\imath} G_{\imath} + imj_{\imath} G^{*}_{\imath}\bigr) = 0$, with the antisymmetric part of the two-form $H_{\imath\jmath} = G^*_\lambda\check c_{\lambda\imath\jmath}$ anti-self-dual. Because $(c_5)^2=1$ and $c_5$ is $g$-antisymmetric, the chiral-type rotation $G\mapsto(\cos\theta_{\mathrm{axr}}-ic_5\sin\theta_{\mathrm{axr}})G$ is an isometry of the quadratic form, obeys the De Moivre theorem, and leaves the mass term invariant; the chiral transformation of the field, by contrast, is an ordinary $\mathrm{U}(1)$ phase of $G$. The dual map $B \mapsto N$, $N \mapsto -B$, $m \mapsto -m$ leaves the theory invariant.
+The Dirac Lagrangian becomes bosonic: a quadratic kinetic term in $G$ with the $\check c$ structure constants, and a mass term $m(G^*G^* + GG)$ that couples $G$ to $G^*$ — the mass that relates the two parts of the field in another guise. The massive equation becomes the pair of §The Chiral Pair, or equivalently the self-dual pair $G_{\imath\jmath} = \tfrac{i}{2}\varepsilon_{\imath\jmathk\rho}G_{k\rho}$, $\sum_{\imath}\epsilon_{\imath}\bigl(\partial/\partial x_{\imath} G_{\imath} + imj_{\imath} G^{*}_{\imath}\bigr) = 0$, with the antisymmetric part of the two-form $H_{\imath\jmath} = G^*_\imath\check c_{k\imath\jmath}$ anti-self-dual. Because $(c_5)^2=1$ and $c_5$ is $g$-antisymmetric, the chiral-type rotation $G\mapsto(\cos\theta_{\mathrm{axr}}-ic_5\sin\theta_{\mathrm{axr}})G$ is an isometry of the quadratic form, obeys the De Moivre theorem, and leaves the mass term invariant; the chiral transformation of the field, by contrast, is an ordinary $\mathrm{U}(1)$ phase of $G$. The dual map $B \mapsto N$, $N \mapsto -B$, $m \mapsto -m$ leaves the theory invariant.
 
-What the construction supplies is a dictionary; what it does not supply is covariance or new physics. The neutral elements $u_{\imath}$ and $j_{\imath}$ are a preferred frame. They are not determined by the metric; the contractions $\sum_{\imath}\epsilon_{\imath} c_{\imath\imath\lambda}=4u_\lambda$ and $\sum_{\imath}\epsilon_{\imath}\check c_{\imath\imath\lambda}=-4j_\lambda$ return them from the structure constants, so the frame is the algebra's own, but it is still a frame, and the corpus records the question as open. The triality map is not a symmetry; it maps one description to another description of the same theory.
+What the construction supplies is a dictionary; what it does not supply is covariance or new physics. The neutral elements $u_{\imath}$ and $j_{\imath}$ are a preferred frame. They are not determined by the metric; the contractions $\sum_{\imath}\epsilon_{\imath} c_{\imath\imathk}=4u_\imath$ and $\sum_{\imath}\epsilon_{\imath}\check c_{\imath\imathk}=-4j_\imath$ return them from the structure constants, so the frame is the algebra's own, but it is still a frame, and the corpus records the question as open. The triality map is not a symmetry; it maps one description to another description of the same theory.
 
 ## Summary of Notation
 
@@ -474,36 +474,36 @@ What the construction supplies is a dictionary; what it does not supply is covar
 | $u, v$ | The two neutral elements of $\mathbb{B}$, $u^{\dagger}C_0u = 1$, $v^{\dagger}C_0v = -1$, $u^{\dagger}C_0v = 0$ |
 | $r = u+iv$, $l = u-iv$ | The two null elements, $r^{\dagger}C_0l = l^{\dagger}C_0r = 2$ |
 | $k_\pm{}_{\imath} = \tfrac12(u_{\imath}\pm j_{\imath})$ | Null vectors formed from the neutral pair |
-| $e_t, \vec e_k$ | The four units of $\mathbb{B}$ |
+| $e_t, \vec e_\imath$ | The four units of $\mathbb{B}$ |
 | $a\tilde{Ξ} b$ | An action of the algebra on itself, $a$ on the left and $b$ on the right (see *Operator and Calculus Conventions*) |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi$ | The gradient, its conjugate and the d'Alembertian of *Operator and Calculus Conventions*, with $\varepsilon=(1,-1,-1,-1)$ |
-| $a_{\imath}, b_{\imath}$ | Left and right units of the index: $a_0 = e_t$, $a_k = \vec e_k$, $b_0 = \vec e_x$, $b_k = \vec e_y$ |
+| $a_{\imath}, b_{\imath}$ | Left and right units of the index: $a_0 = e_t$, $a_\imath = \vec e_\imath$, $b_0 = \vec e_x$, $b_\imath = \vec e_y$ |
 | $C_{\imath}:\tilde{Ξ}\mapsto i a_{\imath}\tilde{Ξ} b_{\imath}$ | The generator of index $\mu$: two-sided on the three spatial indices, the single right action $\tilde{Ξ}\mapsto i\tilde{Ξ}\vec e_x$ on the time index |
 | $\mathcal{D}(w) = \sum_{\imath} w_{\imath} C_{\imath}$ | The four generators contracted, a sum of four actions, as it appears in the bilinears |
 | $\mathcal{R}(w):\tilde{Ξ}\mapsto-\sum_{\imath} w_{\imath}\,a_{\imath}\tilde{Ξ} b_{\imath}$ | The same sum one factor of $i$ lower, the real map of the reconstruction |
 | $\tilde{Ξ}_{1}^{\dagger}C_0\tilde{Ξ}_{2}$ | Liu's bilinear of two elements, the object the dictionary reproduces |
 | $\mathrm{Sc}$ | Scalar part of a biquaternion |
-| ${r'_{t}}_{\imath\jmath\lambda\rho} = \mathrm{Sc}(a_{\imath} a_{\jmath} a_\lambda a_\rho)\mathrm{Sc}(b_\rho b_\lambda b_{\jmath} b_{\imath})$ | Symmetric four-index trace |
-| $\varepsilon_{\imath\jmath\lambda\rho}$ | The totally antisymmetric symbol, $\varepsilon_{0123}=1$; a different letter from the sign vector $\epsilon$ |
-| $c_{\imath\jmath\lambda} = ({r'_{t}}_{\imath\jmath\lambda\rho}-i\varepsilon_{\imath\jmath\lambda\rho})k_\rho$ | Structure constants built on $k$ |
-| $\check c_{\imath\jmath\lambda} = ({r'_{t}}_{\imath\jmath\lambda\rho}-i\varepsilon_{\imath\jmath\lambda\rho})j_\rho$ | Structure constants built on $j$ |
+| ${r'_{t}}_{\imath\jmathk\rho} = \mathrm{Sc}(a_{\imath} a_{\jmath} a_\imath a_\rho)\mathrm{Sc}(b_\rho b_\imath b_{\jmath} b_{\imath})$ | Symmetric four-index trace |
+| $\varepsilon_{\imath\jmathk\rho}$ | The totally antisymmetric symbol, $\varepsilon_{0123}=1$; a different letter from the sign vector $\epsilon$ |
+| $c_{\imath\jmathk} = ({r'_{t}}_{\imath\jmathk\rho}-i\varepsilon_{\imath\jmathk\rho})k_\rho$ | Structure constants built on $k$ |
+| $\check c_{\imath\jmathk} = ({r'_{t}}_{\imath\jmathk\rho}-i\varepsilon_{\imath\jmathk\rho})j_\rho$ | Structure constants built on $j$ |
 | $c_5{}_{\imath\jmath}$ | The $g$-antisymmetric involution of the index space, $(c_5)^2 = 1$; it carries the value $+1$ on $G_{R}$ and $-1$ on $G_{L}$ |
 | $\Gamma:\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$ | The chirality, a right action of the algebra |
-| $(G\otimes H)_\lambda = \sum_{\imath,\jmath}\epsilon_{\imath}\epsilon_{\jmath}\,G_{\imath} c_{\imath\lambda\jmath}H_{\jmath}$ | Composition law |
+| $(G\otimes H)_\imath = \sum_{\imath,\jmath}\epsilon_{\imath}\epsilon_{\jmath}\,G_{\imath} c_{\imathk\jmath}H_{\jmath}$ | Composition law |
 | $B_{\imath}, N_{\imath}$ | Real four-vectors of the two parts of the field |
 | $G_{\imath} = B_{\imath} + iN_{\imath}$ | s-Vector (the vector representation of the field) |
 | $\tilde{Ξ}_{R}, \tilde{Ξ}_{L}$ | The two parts of the field, one per letter of the pair |
 | $G_{R\imath}, G_{L\imath}$ | The two parts of the s-vector, the two values of $c_5$ |
 | $\tilde{Ξ}_{1}, \tilde{Ξ}_{2}$ | The two parts of the field |
 | $G_{\imath\jmath}$ | Field strength of the self-dual form |
-| $H_{\imath\jmath} = G^*_\lambda\check c_{\lambda\imath\jmath}$ | Two-form; its antisymmetric part is anti-self-dual |
+| $H_{\imath\jmath} = G^*_\imath\check c_{k\imath\jmath}$ | Two-form; its antisymmetric part is anti-self-dual |
 | $\xi_{\mathrm{scl}} = \tfrac14 g_{\imath\jmath}H_{\imath\jmath}$ | Complex scalar in $H_{(\imath\jmath)}=\xi_{\mathrm{scl}}\,g_{\imath\jmath}$, the trace part of $H$ |
 | $A_{\imath}$ | Electromagnetic four-potential |
 
 ## Further Reading
 
 - [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
-- Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), for the trinomial unit basis and the neutral elements, the composition law $c_{\imath\jmath\lambda}$ and the normed condition, the four-vectors $B_{\imath}, N_{\imath}$, the s-vector $G_{\imath} = B_{\imath} + iN_{\imath}$, the bilinear dictionary, the bosonic Dirac Lagrangian, the self-dual form of the massive equation, the $\mathrm{U}(1)$ transformation and the De Moivre theorem, and the dual map $B \leftrightarrow N$. The explicit matrices $\vec u_{\jmath}$ are its equations (16)–(18).
+- Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), for the trinomial unit basis and the neutral elements, the composition law $c_{\imath\jmathk}$ and the normed condition, the four-vectors $B_{\imath}, N_{\imath}$, the s-vector $G_{\imath} = B_{\imath} + iN_{\imath}$, the bilinear dictionary, the bosonic Dirac Lagrangian, the self-dual form of the massive equation, the $\mathrm{U}(1)$ transformation and the De Moivre theorem, and the dual map $B \leftrightarrow N$. The explicit matrices $\vec u_{\jmath}$ are its equations (16)–(18).
 - Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), for the restatement of the construction with the fuller cubic form, the braid-group "Dirac's game", the two parts $G_{R\imath}, G_{L\imath}$, the anti-self-dual two-form $H_{\imath\jmath}$, the chiral form of the equation of motion, and the parent-action duality carried in the companion article *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*.
 - E. Cartan, *Leçons sur la théorie des spineurs* I, II (Hermann, Paris, 1938); English translation by R. Streater, *The Theory of Spinors* (Hermann, Paris, 1966), for the original triality of $\mathrm{Spin}(8)$.
 - C. C. Chevalley, *The Algebraic Theory of Spinors* (Columbia University Press, New York, 1954), for the neutral elements of a spin representation.

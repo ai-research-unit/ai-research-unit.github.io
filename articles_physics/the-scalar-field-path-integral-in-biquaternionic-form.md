@@ -195,7 +195,7 @@ The functional integral is made convergent by continuing to imaginary time. Writ
 
 $$
 S_E[\tilde{Ξ}]=\int d^4r_E\left[(\partial/\partial\tau\,{\xi_{\mathrm{scl}}}^*)(\partial/\partial\tau\,\xi_{\mathrm{scl}})
-+\sum_{k\in\{x,y,z\}}(\partial/\partial x_k\,{\xi_{\mathrm{scl}}}^*)(\partial/\partial x_k\,\xi_{\mathrm{scl}})+\mu^2{\xi_{\mathrm{scl}}}^*\xi_{\mathrm{scl}}\right]
++\sum_{\imath\in\{x,y,z\}}(\partial/\partial x_\imath\,{\xi_{\mathrm{scl}}}^*)(\partial/\partial x_\imath\,\xi_{\mathrm{scl}})+\mu^2{\xi_{\mathrm{scl}}}^*\xi_{\mathrm{scl}}\right]
 =\int d^4r_E\;\mathrm{Sc}\!\left[\tilde{Ξ}^{*}(-\Box_\Phi+\mu^2)\tilde{Ξ}\right],
 $$
 

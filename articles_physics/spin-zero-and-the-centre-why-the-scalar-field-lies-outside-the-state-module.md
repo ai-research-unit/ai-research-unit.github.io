@@ -46,7 +46,7 @@ $$
 \tilde S_{\Psi,1}^2+\tilde S_{\Psi,2}^2+\tilde S_{\Psi,3}^2=\frac{3\,h^{2}}{16\pi^{2}}\,e_t .
 $$
 
-The computation is one line from the squares of the generators, $\vec e_k^2=-e_t$; the value was checked by recomputation and is exact.
+The computation is one line from the squares of the generators, $\vec e_\imath^2=-e_t$; the value was checked by recomputation and is exact.
 
 Left multiplication by a central element is the identity map of $\mathbb{B}$. The left action of the Casimir is therefore multiplication by $\frac{3\,h^{2}}{16\pi^{2}}$ on every element, and on every irreducible piece of the left action the spin convention gives $s(s+1)=\tfrac34$, hence $s=\tfrac12$. The L part is stable under left multiplication and carries the same Casimir, so its pieces carry $s=\tfrac12$. The carrier of states carries spin one-half.
 
@@ -115,13 +115,13 @@ The carrier of states cannot host a spin-$0$ field for three reasons, one for ea
 
 ### No One-Dimensional Module
 
-Suppose a one-dimensional subspace is carried into itself by every left multiplication. Choose a nonzero $\tilde{Ξ}$ in it. Then $\tilde{Q}\tilde{Ξ}=\lambda(\tilde{Q})\tilde{Ξ}$ for every $\tilde{Q}$, with $\lambda(\tilde{Q})$ a complex number. The map $\lambda$ is multiplicative, $\lambda(\tilde{Q}_1\tilde{Q}_2)=\lambda(\tilde{Q}_1)\lambda(\tilde{Q}_2)$, and $\lambda(e_t)=1$. From $\vec e_k^2=-e_t$,
+Suppose a one-dimensional subspace is carried into itself by every left multiplication. Choose a nonzero $\tilde{Ξ}$ in it. Then $\tilde{Q}\tilde{Ξ}=\lambda(\tilde{Q})\tilde{Ξ}$ for every $\tilde{Q}$, with $\lambda(\tilde{Q})$ a complex number. The map $\lambda$ is multiplicative, $\lambda(\tilde{Q}_1\tilde{Q}_2)=\lambda(\tilde{Q}_1)\lambda(\tilde{Q}_2)$, and $\lambda(e_t)=1$. From $\vec e_\imath^2=-e_t$,
 
 $$
-\lambda(\vec e_k)^2=-1,
+\lambda(\vec e_\imath)^2=-1,
 $$
 
-so $\lambda(\vec e_k)=\pm i$ for each spatial direction. From $\vec e_x\vec e_y=\vec e_z$,
+so $\lambda(\vec e_\imath)=\pm i$ for each spatial direction. From $\vec e_x\vec e_y=\vec e_z$,
 
 $$
 \lambda(\vec e_x)\lambda(\vec e_y)=\lambda(\vec e_z).

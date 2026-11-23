@@ -38,7 +38,7 @@ $$
 v_{\imath} v_{\jmath}+v_{\jmath} v_{\imath}=2\varepsilon_{\imath}\delta_{\imath\jmath},
 $$
 
-with $\varepsilon=(1,-1,-1,-1)$, so that $v_0^2=+1$ and $v_k^2=-1$ for $k=1,2,3$. It is $\mathrm{Cl}_{1,3}(\mathbb R)$; an array display is a convenience, not part of the structure, and this article uses none. A general element is a **multivector** with components of grades zero to four:
+with $\varepsilon=(1,-1,-1,-1)$, so that $v_0^2=+1$ and $v_\imath^2=-1$ for $k=1,2,3$. It is $\mathrm{Cl}_{1,3}(\mathbb R)$; an array display is a convenience, not part of the structure, and this article uses none. A general element is a **multivector** with components of grades zero to four:
 
 | Grade | Elements | Count |
 |---|---|---|
@@ -158,13 +158,13 @@ in which the gradient multiplies each chirality part of the field on the left, a
 Kravchenko's equation is a single equation on $\mathbb B$, written $\mathcal NF=0$. Split into its two sides, it reads
 
 $$
-\Bigl(i\frac{\partial}{\partial r'_t}+\sum_{k\in\{x,y,z\}}\vec e_k\frac{\partial}{\partial R_k}\Bigr)F=2\pi\nu_mi\,\overline F\,\vec e_z ,
+\Bigl(i\frac{\partial}{\partial r'_t}+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial}{\partial R_\imath}\Bigr)F=2\pi\nu_mi\,\overline F\,\vec e_z ,
 $$
 
 and the operator that collects the two sides is
 
 $$
-\mathcal NF=\Bigl(i\frac{\partial}{\partial r'_t}+\sum_{k\in\{x,y,z\}}\vec e_k\frac{\partial}{\partial R_k}\Bigr)F-2\pi\nu_mi\,\overline F\,\vec e_z .
+\mathcal NF=\Bigl(i\frac{\partial}{\partial r'_t}+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial}{\partial R_\imath}\Bigr)F-2\pi\nu_mi\,\overline F\,\vec e_z .
 $$
 
 Here $r'_t$ is the physical time of the material sector, whose relation to the corpus's coordinate is fixed in *Conventions in the Biquaternion Universe*. The derivative is not a second letter for the gradient: Kravchenko's time derivative carries the sign opposite to the corpus's, and his spatial part is the spatial part of the corpus gradient unchanged. The sign is his convention for the time direction, and it is the only respect in which the two derivatives differ.
@@ -314,7 +314,7 @@ The correspondence with the biquaternion framework is the closest in this series
 
 | Symbol | Meaning |
 |---|---|
-| $\mathrm{Cl}_{1,3}(\mathbb R)$ | Spacetime algebra, $v_0^2=+1$, $v_k^2=-1$ |
+| $\mathrm{Cl}_{1,3}(\mathbb R)$ | Spacetime algebra, $v_0^2=+1$, $v_\imath^2=-1$ |
 | $v_0v_1v_2v_3$ | Pseudoscalar of the spacetime algebra; square $-1$, central on the even part, the corpus's central $i$ |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi$ | Corpus gradient, its conjugate, and the scalar square in the material reading; cited to *Operator and Calculus Conventions* |
 | $\omega=-\vec e_z$ | The source's imaginary unit, the spin plane; $\omega^2=-e_t$, right multiplication, even |

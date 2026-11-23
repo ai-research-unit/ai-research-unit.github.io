@@ -49,7 +49,7 @@ $$
 
 The parts are substituted into the element action, and two identities carry the substitution. Both are exact. First, the star conjugation fixes the idempotents, so $\tilde\Xi_{L,R}^{*}=\Pi_{\pm}\tilde\Xi^{*}$ and the kinetic terms can be written with the field on the right:
 
-Second, the two operators coincide in the homogeneous setting: with $\partial_k=0$, both $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ reduce to $-i\partial_{r'_t}$.
+Second, the two operators coincide in the homogeneous setting: with $\partial_\imath=0$, both $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ reduce to $-i\partial_{r'_t}$.
 
 The kinetic term in the homogeneous setting. Substituting both identities,
 

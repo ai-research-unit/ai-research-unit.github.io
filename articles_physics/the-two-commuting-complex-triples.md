@@ -22,14 +22,14 @@ $$
 \vec J_{+}=\tfrac12\bigl(\vec J+i\vec K\bigr),\qquad \vec J_{-}=\tfrac12\bigl(\vec J-i\vec K\bigr),
 $$
 
-component by component: $J_{+k}=\tfrac12(J_k+iK_k)$ and $J_{-k}=\tfrac12(J_k-iK_k)$.
+component by component: $J_{+k}=\tfrac12(J_\imath+iK_\imath)$ and $J_{-k}=\tfrac12(J_\imath-iK_\imath)$.
 
 ### The Complex Number in the Definition
 
-The symbol $i$ in that display is the **scalar of the complexification**, not the central element of the algebra, and the difference is not pedantic. With the central element the combination vanishes identically, because $iK_k=i\cdot\tfrac12 i\vec e_k=-\tfrac12\vec e_k=-J_k$ and therefore
+The symbol $i$ in that display is the **scalar of the complexification**, not the central element of the algebra, and the difference is not pedantic. With the central element the combination vanishes identically, because $iK_\imath=i\cdot\tfrac12 i\vec e_\imath=-\tfrac12\vec e_\imath=-J_\imath$ and therefore
 
 $$
-J_k+iK_k=0 .
+J_\imath+iK_\imath=0 .
 $$
 
 That identity is correct, and it is the reason the two triples have no meaning inside the real algebra, and none inside the algebra read with its own complex structure either.
@@ -40,7 +40,7 @@ $$
 \mathfrak{so}(1,3)_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathfrak{so}(1,3),
 $$
 
-in which the scalar multiplies a real basis without being an element of the algebra. In that space $J_k+iK_k$ is a nonzero vector, and the two triples live there.
+in which the scalar multiplies a real basis without being an element of the algebra. In that space $J_\imath+iK_\imath$ is a nonzero vector, and the two triples live there.
 
 ### The Two Must Not Be Identified
 
@@ -62,23 +62,23 @@ A reader who tries to compute the two triples as biquaternions will get zero, an
 
 ### How the Checks Are Done
 
-The numerical checks are performed on the real four-dimensional congruence matrices of the generators, in which $J_k$ and $K_k$ are real and the complexification unit $i$ is an external scalar, so the combinations $\tfrac12(\rho(J_k)\pm i\rho(K_k))$ are nonzero and the brackets below hold for them. The $2\times2$ image cannot serve for this purpose: there the central scalar is already inside the entries, $\mathsf{M}_2(K_k)=i\,\mathsf{M}_2(J_k)$, and the combination collapses to zero, as the identity above requires. This is the operational meaning of "the coefficient field's $i$": it is an operation on the array, and it is distinguishable from the central scalar because the central scalar is already inside the array.
+The numerical checks are performed on the real four-dimensional congruence matrices of the generators, in which $J_\imath$ and $K_\imath$ are real and the complexification unit $i$ is an external scalar, so the combinations $\tfrac12(\rho(J_\imath)\pm i\rho(K_\imath))$ are nonzero and the brackets below hold for them. The $2\times2$ image cannot serve for this purpose: there the central scalar is already inside the entries, $\mathsf{M}_2(K_\imath)=i\,\mathsf{M}_2(J_\imath)$, and the combination collapses to zero, as the identity above requires. This is the operational meaning of "the coefficient field's $i$": it is an operation on the array, and it is distinguishable from the central scalar because the central scalar is already inside the array.
 
 ## Each Triple Closes
 
 ### The Three Brackets
 
-With the table $[J_i,J_j]=\epsilon_{ijk}J_k$, $[J_i,K_j]=\epsilon_{ijk}K_k$, $[K_i,K_j]=-\epsilon_{ijk}J_k$,
+With the table $[J_i,J_j]=\epsilon_{\imath\jmath\ell}J_\imath$, $[J_i,K_j]=\epsilon_{\imath\jmath\ell}K_\imath$, $[K_i,K_j]=-\epsilon_{\imath\jmath\ell}J_\imath$,
 
 $$
 [J_{+i},J_{+j}]=\tfrac14\Bigl([J_i,J_j]+i[J_i,K_j]+i[K_i,J_j]-[K_i,K_j]\Bigr)
-=\tfrac14\bigl(2\epsilon_{ijk}J_k+2i\epsilon_{ijk}K_k\bigr)=\epsilon_{ijk}J_{+k}.
+=\tfrac14\bigl(2\epsilon_{\imath\jmath\ell}J_\imath+2i\epsilon_{\imath\jmath\ell}K_\imath\bigr)=\epsilon_{\imath\jmath\ell}J_{+k}.
 $$
 
 The same computation with $i\to-i$ gives
 
 $$
-[J_{-i},J_{-j}]=\epsilon_{ijk}J_{-k}.
+[J_{-i},J_{-j}]=\epsilon_{\imath\jmath\ell}J_{-k}.
 $$
 
 So each triple closes with the structure constants of a rotation algebra, and the factor $\tfrac12$ is exactly what makes the constant $\epsilon$ rather than $2\epsilon$.
@@ -87,14 +87,14 @@ So each triple closes with the structure constants of a rotation algebra, and th
 
 $$
 [J_{+i},J_{-j}]=\tfrac14\Bigl([J_i,J_j]-i[J_i,K_j]+i[K_i,J_j]+[K_i,K_j]\Bigr)
-=\tfrac14\bigl(\epsilon_{ijk}J_k-i\epsilon_{ijk}K_k+i\epsilon_{ijk}K_k-\epsilon_{ijk}J_k\bigr)=0 .
+=\tfrac14\bigl(\epsilon_{\imath\jmath\ell}J_\imath-i\epsilon_{\imath\jmath\ell}K_\imath+i\epsilon_{\imath\jmath\ell}K_\imath-\epsilon_{\imath\jmath\ell}J_\imath\bigr)=0 .
 $$
 
 Every cross bracket vanishes. This is the whole content of the change of basis: the six-generator table, which has three non-trivial blocks, becomes two three-generator tables and a block of zeros.
 
 ### The Verification
 
-Both statements are checked on the four-vector representation: the closure holds on all six ordered pairs of each triple with structure constants $\epsilon_{ijk}$, and all nine cross brackets vanish to machine precision. The check is done with complex $4\times4$ matrices obtained from the congruence representation of *The Two Actions of One Group: Adjoint and Congruence*, which is the representation in which the two triples are most easily written.
+Both statements are checked on the four-vector representation: the closure holds on all six ordered pairs of each triple with structure constants $\epsilon_{\imath\jmath\ell}$, and all nine cross brackets vanish to machine precision. The check is done with complex $4\times4$ matrices obtained from the congruence representation of *The Two Actions of One Group: Adjoint and Congruence*, which is the representation in which the two triples are most easily written.
 
 ## The Two Triples Commute
 
@@ -131,7 +131,7 @@ The direct sum is a statement about the **complexified** algebra. The real Loren
 A Lorentz transformation's infinitesimal generator is a bivector $M_{\imath\jmath}=-M_{\jmath\imath}$, with six independent components: three $M_{0i}$ and three $M_{ij}$. The dictionary to the generators of this block is
 
 $$
-M_{0i}\longleftrightarrow K_i,\qquad M_{ij}\longleftrightarrow\epsilon_{ijk}J_k,
+M_{0i}\longleftrightarrow K_i,\qquad M_{ij}\longleftrightarrow\epsilon_{\imath\jmath\ell}J_\imath,
 $$
 
 so a boost is a timelike-spacelike bivector and a rotation is a spacelike-spacelike one.
@@ -141,7 +141,7 @@ so a boost is a timelike-spacelike bivector and a rotation is a spacelike-spacel
 On bivectors the Hodge star is
 
 $$
-\star M_{0i}=\tfrac12\epsilon_{ijk}M_{jk},\qquad \star M_{jk}=-\epsilon_{jki}M_{0i},
+\star M_{0i}=\tfrac12\epsilon_{\imath\jmath\ell}M_{j\imath},\qquad \star M_{j\imath}=-\epsilon_{j\imathi}M_{0i},
 $$
 
 which satisfies $\star^{2}=-1$ on real bivectors. The sign of the square is the Lorentzian sign pattern's: in the Euclidean case the star squares to $+1$ and there is no splitting, which is why the self-dual decomposition is a Lorentzian phenomenon and why *The SO(4) Route to the Euclidean Frame* has to say what replaces it.
@@ -157,15 +157,15 @@ $$
 are complementary projectors, and they split the complexified bivector space into the $\pm i$ eigenspaces of the star. Applied to the generators:
 
 $$
-\star J_k=-K_k,\qquad \star K_k=J_k,
+\star J_\imath=-K_\imath,\qquad \star K_\imath=J_\imath,
 $$
 
 so
 
 $$
-\star\bigl(J_k+iK_k\bigr)=-K_k+iJ_k=i\bigl(J_k+iK_k\bigr),
+\star\bigl(J_\imath+iK_\imath\bigr)=-K_\imath+iJ_\imath=i\bigl(J_\imath+iK_\imath\bigr),
 \qquad
-\star\bigl(J_k-iK_k\bigr)=-i\bigl(J_k-iK_k\bigr).
+\star\bigl(J_\imath-iK_\imath\bigr)=-i\bigl(J_\imath-iK_\imath\bigr).
 $$
 
 Hence $\vec J_+$ spans the self-dual bivectors and $\vec J_-$ the anti-self-dual ones, and the two triples are the two eigenspaces. The factor $\tfrac12$ in the definition of the triples is the normalisation that makes the projector formula come out with unit coefficient.
@@ -210,8 +210,8 @@ The complexified algebra has two summands, each a copy of $\mathfrak{sl}(2,\math
 
 Two facts, each decisive.
 
-- **The two triples are not the compact real form.** In the compact real form $\mathfrak{su}(2)$ the generators are anti-Hermitian and satisfy $[T_i,T_j]=\epsilon_{ijk}T_k$ with all three directions equivalent. In the Lorentz algebra the three $J$ are anti-Hermitian and the three $K$ are Hermitian; the triple $\vec J_+$ contains $i\vec K$, which is anti-Hermitian only if $K$ is Hermitian *and* the $i$ is the coefficient field's, so the triple as a whole is in the complexification and has no Hermiticity property of its own. A complex basis element cannot be tested for Hermiticity without a real form to test against.
-- **The compact real form is a different real slice.** The algebra $\mathfrak{so}(4)$ has generators with $[K_i,K_j]=+J_k$ and is a sum of two copies of $\mathfrak{su}(2)$; the algebra $\mathfrak{so}(1,3)$ has the minus sign and is not. The two are different real forms of the same complex algebra, and the sign of one block of the table is what separates them.
+- **The two triples are not the compact real form.** In the compact real form $\mathfrak{su}(2)$ the generators are anti-Hermitian and satisfy $[T_i,T_j]=\epsilon_{\imath\jmath\ell}T_\imath$ with all three directions equivalent. In the Lorentz algebra the three $J$ are anti-Hermitian and the three $K$ are Hermitian; the triple $\vec J_+$ contains $i\vec K$, which is anti-Hermitian only if $K$ is Hermitian *and* the $i$ is the coefficient field's, so the triple as a whole is in the complexification and has no Hermiticity property of its own. A complex basis element cannot be tested for Hermiticity without a real form to test against.
+- **The compact real form is a different real slice.** The algebra $\mathfrak{so}(4)$ has generators with $[K_i,K_j]=+J_\imath$ and is a sum of two copies of $\mathfrak{su}(2)$; the algebra $\mathfrak{so}(1,3)$ has the minus sign and is not. The two are different real forms of the same complex algebra, and the sign of one block of the table is what separates them.
 
 ### What Unitarity Needs
 
@@ -223,7 +223,7 @@ The two triples are a computational device and not a statement of compactness. T
 
 ## Summary
 
-The two triples $\vec J_\pm=\tfrac12(\vec J\pm i\vec K)$ each close with structure constants $\epsilon_{ijk}$ and commute with each other, so the complexified Lorentz algebra is $\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$. The $i$ in their definition is the coefficient field's, not the algebra's central scalar; with the central scalar the combination vanishes. The triples are the self-dual and anti-self-dual eigenspaces of the Hodge star, whose square is $-1$ in Lorentzian sign pattern. The adjoint representation is the two central directions plus $(1,0)\oplus(0,1)$, each triple carrying spin one. The triples are not the real $\mathfrak{su}(2)$ inside the Lorentz algebra but its complexification, and the real form decides unitarity: the compact real form is $\mathfrak{so}(4)$ and the Lorentz algebra is not it.
+The two triples $\vec J_\pm=\tfrac12(\vec J\pm i\vec K)$ each close with structure constants $\epsilon_{\imath\jmath\ell}$ and commute with each other, so the complexified Lorentz algebra is $\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$. The $i$ in their definition is the coefficient field's, not the algebra's central scalar; with the central scalar the combination vanishes. The triples are the self-dual and anti-self-dual eigenspaces of the Hodge star, whose square is $-1$ in Lorentzian sign pattern. The adjoint representation is the two central directions plus $(1,0)\oplus(0,1)$, each triple carrying spin one. The triples are not the real $\mathfrak{su}(2)$ inside the Lorentz algebra but its complexification, and the real form decides unitarity: the compact real form is $\mathfrak{so}(4)$ and the Lorentz algebra is not it.
 
 ## Summary of Notation
 
@@ -231,7 +231,7 @@ The two triples $\vec J_\pm=\tfrac12(\vec J\pm i\vec K)$ each close with structu
 |---|---|
 | $\vec J_\pm=\tfrac12(\vec J\pm i\vec K)$ | the two complex triples |
 | $J_{+k}$, $J_{-k}$ | their components |
-| $M_{\imath\jmath}$ | the bivector generators, $M_{0i}=K_i$, $M_{ij}=\epsilon_{ijk}J_k$ |
+| $M_{\imath\jmath}$ | the bivector generators, $M_{0i}=K_i$, $M_{ij}=\epsilon_{\imath\jmath\ell}J_\imath$ |
 | $\star$ | the Hodge star on bivectors, $\star^{2}=-1$ |
 | $\Pi_\pm=\tfrac12(1\mp i\star)$ | the self-dual and anti-self-dual projectors |
 | $(m,n)$ | the pair of half-integers labelling a representation |

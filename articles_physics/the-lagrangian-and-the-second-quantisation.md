@@ -92,7 +92,7 @@ $$
 [\hat\phi(\vec r),\hat\pi(\vec r')]=i \frac{h}{2\pi}\,\delta^{3}(\vec r-\vec r').
 $$
 
-Then expand $\hat\phi$ in the modes of the free action, $\hat\phi=\sum_k(a_k u_k+a_k^{\dagger}u_k^{*})$, and the commutator forces $[a_k,a_{k'}^{\dagger}]=\delta_{kk'}$: the mode coefficients become creation and annihilation operators. The Fock space is the representation of that algebra, and the vacuum is the state annihilated by every $a_k$. Four lines, and every one of them is absent from the corpus.
+Then expand $\hat\phi$ in the modes of the free action, $\hat\phi=\sum_\imath(a_\imath u_\imath+a_\imath^{\dagger}u_\imath^{*})$, and the commutator forces $[a_\imath,a_{k'}^{\dagger}]=\delta_{kk'}$: the mode coefficients become creation and annihilation operators. The Fock space is the representation of that algebra, and the vacuum is the state annihilated by every $a_\imath$. Four lines, and every one of them is absent from the corpus.
 
 Why the substitution is a postulate and not a theorem. No classical statement forces it: the bracket's algebraic properties are consistent with many deformations, and the promotion is selected by its agreement with experiment and by its consistency, not by a derivation from the action. A reader who expects the promotion to follow from the variational principle will not find it there, and the corpus would be wrong to pretend otherwise.
 
@@ -131,7 +131,7 @@ $$
 \qquad\longrightarrow\qquad
 [\hat\phi(\vec r),\hat\pi(\vec r')]=i \frac{h}{2\pi}\,\delta^{3}(\vec r-\vec r')
 \qquad\longrightarrow\qquad
-[a_k,a_{k'}^{\dagger}]=\delta_{kk'} .
+[a_\imath,a_{k'}^{\dagger}]=\delta_{kk'} .
 $$
 
 ## Summary of Notation
@@ -145,8 +145,8 @@ $$
 | $\{\,,\,\}$ | Classical bracket (Peierls, or Dirac when constrained) |
 | $\chi_a,\ (C^{-1})_{ab}$ | Constraints and the inverse of their bracket matrix (Dirac bracket) |
 | $\frac{1}{i \frac{h}{2\pi}}[\,,\,]$ | The promotion's commutator |
-| $a_k,\ a_k^{\dagger}$ | Annihilation and creation operators, after promotion |
-| $\lvert 0\rangle$ | The vacuum, annihilated by every $a_k$ |
+| $a_\imath,\ a_\imath^{\dagger}$ | Annihilation and creation operators, after promotion |
+| $\lvert 0\rangle$ | The vacuum, annihilated by every $a_\imath$ |
 | $Q=\int j_{r'_t}$ | Charge, an operator after promotion |
 
 ## Further Reading

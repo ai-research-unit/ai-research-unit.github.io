@@ -20,7 +20,7 @@ $$
 
 be the unit along it, a pure real quaternion of square $-e_t$. The axis is **declared**: it is a datum of the state and not a property of the algebra, and no statement below is about the algebra until an axis is named.
 
-Let $\vec S$ be the rotation generator on the carrier of the state, read as one vector, so that its components are $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_k$ on the fundamental carrier (*Angular Momentum and Spin in Biquaternionic Form*, §*The Spin Operators Under the Isomorphism*) and the corresponding generator on any other.
+Let $\vec S$ be the rotation generator on the carrier of the state, read as one vector, so that its components are $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_\imath$ on the fundamental carrier (*Angular Momentum and Spin in Biquaternionic Form*, §*The Spin Operators Under the Isomorphism*) and the corresponding generator on any other.
 
 **Definition (helicity).** With the axis $\vec u_p$ declared, the **helicity operator** is the projection
 
@@ -55,11 +55,11 @@ $$
 
 In the algebra this is one line. The orbital operator is the vector part of the quaternionic product of position and momentum, $\vec L=\mathrm{Vect}(\vec r\,\tilde p)$ with $\tilde p=-i\,\frac{h}{2\pi}\vec\nabla_\Phi$ (*Angular Momentum and Spin in Biquaternionic Form*, §*The Orbital Angular Momentum Operator*), and the scalar triple product carrying $\vec p$ twice vanishes identically. The projection of $\vec J$ on $\vec u_p$ is therefore the projection of $\vec S$, which is why the quantity has a name of its own and is not called one component of the total angular momentum.
 
-**The consequence for the slots.** The orbital part occupies the central scalar slot $e_t$ and the spin part the vector slots $i\vec e_k$, the asymmetry that article records. The vanishing above is what makes the asymmetry harmless for this one projection: the orbital slot contributes nothing to it, so the projection of $\vec J$ on $\vec u_p$ is the projection of $\vec S$ alone.
+**The consequence for the slots.** The orbital part occupies the central scalar slot $e_t$ and the spin part the vector slots $i\vec e_\imath$, the asymmetry that article records. The vanishing above is what makes the asymmetry harmless for this one projection: the orbital slot contributes nothing to it, so the projection of $\vec J$ on $\vec u_p$ is the projection of $\vec S$ alone.
 
 ## The Fundamental Carrier
 
-On the spin-$\tfrac12$ carrier the generator is $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_k$, so the operator is the left multiplication by
+On the spin-$\tfrac12$ carrier the generator is $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_\imath$, so the operator is the left multiplication by
 
 $$
 \lambda=\frac{h}{4\pi}\,i\vec u_p\in\mathbb{B}_{\Psi} .
@@ -214,13 +214,13 @@ The scaling freedom of the factorisation is the kinematic little group, and the 
 
 **From $\mathbb{C}^\times$ to $U(1)$.** For a real momentum the reality condition fixes the modulus of $r'_t$ and leaves its phase, so the freedom is a $U(1)$. That $U(1)$ is realized inside the algebra as the rotation about $\vec p$: the rotor $\tilde u_{\mathrm r}=\cos(\theta_{\mathrm{rat}}/2)+\sin(\theta_{\mathrm{rat}}/2)\vec u_p$ commutes with $\tilde P_{\Phi}$, since $iE/c$ is central and $\vec u_p$ commutes with $\vec p$, and it acts on the spinor module by the phase $e^{\pm i\theta_{\mathrm{rat}}/2}$, with $\theta_{\mathrm{rat}}$ the rotation angle about $\vec p$, real. The little-group scaling is therefore not an abstract relabelling; it is the rotation about the momentum axis acting on the two factors.
 
-**The weight is the helicity.** An object of helicity $h$ scales as ${r'_{t}}^{-2h}$, so a monomial of $\lambda$-degree $d_\lambda$ and $\bar\lambda$-degree $d_{\bar\lambda}$ in a particle of definite helicity has
+**The weight is the helicity.** An object of helicity $h$ scales as ${r'_{t}}^{-2h}$, so a monomial of $\lambda$-degree $d_\imath$ and $\bar\lambda$-degree $d_{\bark}$ in a particle of definite helicity has
 
 $$
-h=\tfrac12\bigl(d_{\bar\lambda}-d_\lambda\bigr).
+h=\tfrac12\bigl(d_{\bark}-d_\imath\bigr).
 $$
 
-The spinor $\lambda$ has $d_\lambda=+1$ and therefore $h=-\tfrac12$; its conjugate has $h=+\tfrac12$. The fundamental carrier is the object of weight $\pm\tfrac12$, which is the operator's own statement at the momentum axis, $\lambda=\pm\frac{h}{4\pi}$ on the two lines of the carrier. **The two levels agree because both are the projection on $\vec u_p$, read in the two descriptions of the same spinor: as an element of a left ideal, and as a factor of a null momentum.**
+The spinor $\lambda$ has $d_\imath=+1$ and therefore $h=-\tfrac12$; its conjugate has $h=+\tfrac12$. The fundamental carrier is the object of weight $\pm\tfrac12$, which is the operator's own statement at the momentum axis, $\lambda=\pm\frac{h}{4\pi}$ on the two lines of the carrier. **The two levels agree because both are the projection on $\vec u_p$, read in the two descriptions of the same spinor: as an element of a left ideal, and as a factor of a null momentum.**
 
 Two qualifications are kept explicit. The full little group of a massless particle is $ISO(2)$ and not $U(1)$; the compact part is what acts nontrivially on finite-helicity states, and it is the part the factorisation exhibits. And the identification of helicity with the $U(1)$ weight is standard representation theory: the algebra supplies the $U(1)$ action through its rotation rotors, and it does not select which weight is physical.
 
@@ -285,7 +285,7 @@ In the algebra the mass is the off-diagonal pair that exchanges the two chiral p
 
 Helicity is the projection of the spin on the direction of motion, $\lambda=\vec u_p\cdot\vec S$, a Hermitian element of $\mathbb{B}_{\Psi}$ acting by left multiplication on every carrier of the algebra. On a carrier of spin $s$ its spectrum is the weight string $\frac{h}{2\pi}\,h$, $h\in\{-s,\dots,s\}$, and the largest value is the spin: the carrier fixes the list, the axis orders it, the state selects a member. The orbital part drops out identically, $\vec L\cdot\vec p=0$, which is why the projection is a name and not a component of $\vec J$. On the fundamental carrier the two values are $\pm\frac{h}{4\pi}$, carried by the pure state $\tilde\Pi_{\mathrm{id},+}(\vec u_p)$ and its companion nilpotent; on the adjoint the spectrum is $\{+1,0,-1\}$ in units of $\frac{h}{2\pi}$, with the propagation direction at zero; on the symmetric square it is $\{-2,-1,0,1,2\}$. The reversal law is exact and the rotation law is a conjugation by the rotor; a boost is what breaks the label, and only for a particle slower than light.
 
-At $m=0$ a second description opens. The null momentum is a zero divisor, hence a rank-one matrix, hence a product of two spinors, and the ambiguity of that product is the little-group scaling, a $U(1)$ for real momenta, realized as the rotation about $\vec p$. Helicity is the weight of that scaling, $h=\tfrac12(d_{\bar\lambda}-d_\lambda)$, and the factors $\lambda$ and $\bar\lambda$ carry $\mp\tfrac12$: the two levels of the article agree. The limit $m\to0$ is singular in the factorisation — rank, number of terms and little group all change — while the operator passes through it untouched, so the weight is not derived from the operator but identified with it where both exist. Chirality is a different object: a right multiplier, a slot, invariant at every mass, coinciding with helicity only in the massless case.
+At $m=0$ a second description opens. The null momentum is a zero divisor, hence a rank-one matrix, hence a product of two spinors, and the ambiguity of that product is the little-group scaling, a $U(1)$ for real momenta, realized as the rotation about $\vec p$. Helicity is the weight of that scaling, $h=\tfrac12(d_{\bark}-d_\imath)$, and the factors $\lambda$ and $\bar\lambda$ carry $\mp\tfrac12$: the two levels of the article agree. The limit $m\to0$ is singular in the factorisation — rank, number of terms and little group all change — while the operator passes through it untouched, so the weight is not derived from the operator but identified with it where both exist. Chirality is a different object: a right multiplier, a slot, invariant at every mass, coinciding with helicity only in the massless case.
 
 ## Summary of Notation
 
@@ -294,7 +294,7 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 | $\vec u_p=\vec p/\lvert\vec p\rvert$ | The unit along the momentum, declared; a pure real quaternion, $\vec u_p^2=-e_t$ |
 | $\vec u_\Phi=2\pi\vec\nu_\Phi/\lvert2\pi\vec\nu_\Phi\rvert$ | The unit along the wave vector; the same element as $\vec u_p$, since $\vec p=h\,\vec\nu_\Phi$ |
 | $\lambda=\vec u_p\cdot\vec S$ | The helicity operator, $\in\mathbb{B}_{\Psi}$, acting by left multiplication; $\frac{h}{2\pi}$ times the dimensionless $\tfrac{i}{2}\mathrm{ad}_{\vec u_p}$ on the adjoint |
-| $\vec S$ | The rotation generator read as one vector, $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_k$ on the fundamental carrier |
+| $\vec S$ | The rotation generator read as one vector, $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_\imath$ on the fundamental carrier |
 | $\tilde\Pi_{\mathrm{id},\pm}(\vec u_p)=\tfrac12(e_t\pm i\vec u_p)$ | The idempotents at the momentum axis; $\tilde\Pi_{\mathrm{id},+}$ is the vector of the value $+\frac{h}{4\pi}$ in $S_+(\vec u_p)$ |
 | $S_\pm(\vec u_p)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u_p)$ | The minimal left ideals at the axis; an elementary spinor is an element of one of them |
 | $\tilde{Ζ}=i\vec u_p$ | The root of $+1$ on the fundamental carrier; $\lambda=\frac{h}{4\pi}\tilde{Ζ}$ |

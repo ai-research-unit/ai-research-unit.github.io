@@ -91,7 +91,7 @@ $$
 $$
 and the field is the shifted conjugate gradient of a potential: one element of $\mathbb{B}$ built from another by differentiation, with no column and no second carrier. At $\kappa = 0$ it is the completion $\tilde{Ξ}\mapsto(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}$ of the next section, and for $\kappa \neq 0$ it is its shifted form. The source calls the scalar generator a **C-field** and takes the field to be the convolution of $\bigl((\tilde\nabla_\Phi)^{\natural}+\kappa\bigr)\tilde{Ξ}_{0}$ with it, which is how the same construction produces extended rather than only elementary solutions; the convolution is the one developed in the companion article on distributions.
 
-**Why the elementary field is null.** For the elementary case the potential is a plane wave, $\xi_{\mathrm{scl}}=\exp(-i\theta_{\mathrm{pwp}})$, and the field is read off by differentiating it. In the coordinate $Q_t=i q'_t$ the time derivative is $\partial\xi_{\mathrm{scl}}/\partial R_t=-\omega\xi_{\mathrm{scl}}$ and the three spatial ones are $\partial_k\xi_{\mathrm{scl}}=ik_k\xi_{\mathrm{scl}}$, so
+**Why the elementary field is null.** For the elementary case the potential is a plane wave, $\xi_{\mathrm{scl}}=\exp(-i\theta_{\mathrm{pwp}})$, and the field is read off by differentiating it. In the coordinate $Q_t=i q'_t$ the time derivative is $\partial\xi_{\mathrm{scl}}/\partial R_t=-\omega\xi_{\mathrm{scl}}$ and the three spatial ones are $\partial_\imath\xi_{\mathrm{scl}}=ik_\imath\xi_{\mathrm{scl}}$, so
 $$
 \bigl((\tilde\nabla_\Phi)^{\natural}+\kappa\bigr)\,\xi_{\mathrm{scl}} = \bigl((\kappa-\omega)\,e_t - 2\pi i\nu_{x}\vec e_x - 2\pi i\nu_{y}\vec e_y - 2\pi i\nu_{z}\vec e_z\bigr)\xi_{\mathrm{scl}} ,
 $$
