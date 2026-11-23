@@ -136,7 +136,7 @@ $$</p>
 \qquad
 \tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma,
 \qquad
-D=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi},
+D=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi},
 $$</p>
 <p>$$
 \boxed{\;[e_a,e_b]=2\,\varepsilon_{abc}\,e_c,\qquad T_a=\tfrac12 e_a,\quad [T_a,T_b]=\varepsilon_{abc}T_c,\quad 2\,\mathrm{Sc}(T_aT_b)=-\tfrac12\delta_{ab}\;}
@@ -228,11 +228,11 @@ $$</p>
 <h2 id="6-the-breaking-potential-masses-math105">6. The Breaking: Potential, Masses, $\rho$</h2>
 <p><strong>The abelian mechanism, which works, and the non-abelian one, which does not.</strong> The framework's scalar is $\tilde\Xi=\xi e_t\in\mathbb{B}_{C}$, central, and the connection coefficient is central too, so left and right multiplication agree and the covariant derivative stays on $e_t$:</p>
 <p>$$
-D_\mu\tilde{\Xi}\Big|_{\langle\tilde{\Xi}\rangle}=\frac{i\,ϙ}{\hbar}\,A_\mu\,\langle\tilde{\Xi}\rangle,
+D_{\imath}\tilde{\Xi}\Big|_{\langle\tilde{\Xi}\rangle}=\frac{2\pi i\,ϙ}{h}\,A_{\imath}\,\langle\tilde{\Xi}\rangle,
 \qquad
 V(\xi^{*}\xi)=\beta\Bigl(\xi^{*}\xi-\frac{v^{2}}{2}\Bigr)^{2},\qquad |\xi|=\frac{v}{\sqrt2},
 \qquad
-\boxed{\;m_h^{2}=2\beta v^{2},\qquad M_A^2=\frac{ϙ^2v^2}{\hbar^2}\;}
+\boxed{\;m_h^{2}=2\beta v^{2},\qquad M_A^2=\frac{(2\pi)^{2} ϙ^2v^2}{h^{2}}\;}
 $$</p>
 <p><strong>The non-trivial claim of the abelian case.</strong> Three things make the derivation work and each is a trap avoided: the connection is central, so no ordering ambiguity arises; the mass comes from the <strong>kinetic</strong> term and not from the potential; and the would-be Goldstone is <em>eaten</em>, so the count $4-1=3$ is the massive vector. A central scalar cannot do the non-abelian case, because a central charge acts identically on both parts of a doublet-shaped object, and that is §2's scalar row stated dynamically.</p>
 <p><strong>The doublet sector the part imports and computes.</strong></p>
@@ -277,10 +277,10 @@ $$</p>
 <p>$$
 \mathcal D\tilde\Xi\mapsto\mathcal D\tilde\Xi\,\exp\Bigl(i\int\alpha\,\mathcal A\Bigr),
 \qquad
-a(x)=-\frac{ϙ^2}{32\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
+a(x)=-\frac{ϙ^2}{32\pi^2}\,\epsilon_{{\imath}{\jmath}\rho\sigma}F_{{\imath}{\jmath}}F_{\rho\sigma},
 $$</p>
 <p>$$
-\tfrac14\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
+\tfrac14\sum_{{\imath},{\jmath},\rho,\sigma}\epsilon_{{\imath}{\jmath}\rho\sigma}F_{{\imath}{\jmath}}F_{\rho\sigma}
 =\frac{2i}{c}\,I_2\quad(\text{Lorentzian}),\qquad I_2=\vec E\cdot\vec B .
 $$</p>
 <p><strong>The non-trivial claim.</strong> The coefficient is <strong>transcribed, not computed from an algebra trace</strong>. The reason is structural and worth memorising: the four-index symbol needs four independent directions a trace can see, and in the algebra the product of four distinct units is $\pm e_t$ or $\pm\vec e_\eta$ and never a multiple of the pseudoscalar $\omega$, so the chirality-weighted trace is blind to it. What the algebra does supply is the <em>identity</em> of the insertion — the axial rotation is the pseudoscalar, and $\omega^2=-e_t$ is the statement that the orientation is a square root of minus the identity — and the null-cone structure, where the left action on the six bivector components has rank four and a two-dimensional kernel on the null cone with $f^2=0$ throughout ($5$ null wave vectors, residual below $2\times10^{-14}$).</p>
@@ -308,19 +308,19 @@ $$</p>
 <p>$$
 M_u=W_u\,D_u\,V_u^{\dagger},\qquad M_d=W_d\,D_d\,V_d^{\dagger},
 \qquad
-\mathcal{L}_{W}\supset\frac{g}{\sqrt2}W^+_\mu\sum_{a,b}V_{ab}\,\tilde\Xi_{\mathrm u,a}^{\dagger}\,i\bigl(i\,e_\mu\,\tilde\Xi_{\mathrm d,b,L}\,\vec e_{\nu(\mu)}\bigr)\vec e_x+\text{h.c.}
+\mathcal{L}_{W}\supset\frac{g}{\sqrt2}W^+_{\imath}\sum_{a,b}V_{ab}\,\tilde\Xi_{\mathrm u,a}^{\dagger}\,i\bigl(i\,e_{\imath}\,\tilde\Xi_{\mathrm d,b,L}\,\vec e_{{\jmath}({\imath})}\bigr)\vec e_x+\text{h.c.}
 $$</p>
 <p><strong>The non-trivial claim.</strong> Masses are the <strong>singular values</strong> of a mass matrix and mixing is the <strong>misalignment of the left singular bases</strong>; nothing else is physical. The decomposition is not a convenience: the kinetic terms are invariant under independent unitary rotations of each multiplet, so only a bi-unitary diagonalisation preserves them, and the singular-value decomposition is therefore forced. Thirteen is then a count: $54$ real parameters in the Yukawa sector, $41$ removed by flavour-basis freedom, thirteen left — nine masses, three angles, one phase. Each $3\times3$ complex matrix has exactly three bi-unitary invariants, which is <em>why</em> the nine masses are free.</p>
 <p><strong>Why CP violation is where it is.</strong> In this framework the gauge interactions are generation-universal — the unit on the label times the algebra's generator — so mixing can only come from the mass operators, which multiply by a number on the label and leave the element alone and are not diagonal in the same basis. The invariant is the <strong>commutator</strong> of $H_u=M_uM_u^{\dagger}$ and $H_d=M_dM_d^{\dagger}$: if they commuted, the mixing would be a permutation of phases and there would be no CP violation. The Jarlskog determinant is the invariant of the two mass matrices, not of $V$ alone, and its smallness ($\lambda^6$) is a consequence of the hierarchy, not a tuned phase.</p>
-<p><strong>The lepton sector is the same algebra with two new questions.</strong> The PMNS matrix is $W_\nu^{\dagger}W_e$; its four parameters are coordinates on $\mathrm{U}(3)/\mathrm{U}(1)^5$, of dimension $9-5=4$. The difference is that the neutrino masses are seven orders below the electron and the mixing is large instead of hierarchical. Meson mixing and the unitarity triangle are the closure test: five experimental techniques spanning tree and loop satisfy the unitarity relations of a $3\times3$ unitary matrix, and unitarity being a property of the group, the test has no adjustable content. GIM is also a framework-level statement: $VV^{\dagger}=1$ is the definition of a basis change on the label, so the constant term in the loop vanishes and the surviving term measures the non-centrality of the mass operator.</p>
+<p><strong>The lepton sector is the same algebra with two new questions.</strong> The PMNS matrix is $W_{\jmath}^{\dagger}W_e$; its four parameters are coordinates on $\mathrm{U}(3)/\mathrm{U}(1)^5$, of dimension $9-5=4$. The difference is that the neutrino masses are seven orders below the electron and the mixing is large instead of hierarchical. Meson mixing and the unitarity triangle are the closure test: five experimental techniques spanning tree and loop satisfy the unitarity relations of a $3\times3$ unitary matrix, and unitarity being a property of the group, the test has no adjustable content. GIM is also a framework-level statement: $VV^{\dagger}=1$ is the definition of a basis change on the label, so the constant term in the loop vanishes and the surviving term measures the non-centrality of the mass operator.</p>
 <p><strong>What a derivation would need.</strong> A scalar in the module rather than in the centre, so that it carries a non-central charge; a hypercharge assignment acting differently on the two chiralities; a potential and a Yukawa term invariant under both. The first is available, the second is §3's open item, the third is §2's.</p>
 <p><strong>Source.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code>, <code>articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.md</code>, <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code>, <code>articles_physics/meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.md</code>.</p>
 <h2 id="12-gauge-fixing-why-one-functional-does-two-jobs">12. Gauge Fixing: Why One Functional Does Two Jobs</h2>
 <p>$$
-\mathcal{L}_{\mathrm{gf}}=-\frac{1}{2\zeta}\sum_{a=1,2}\Bigl(\sum_\mu\frac{\partial W^a_\mu}{\partial R_\mu}-\zeta M_W\,\xi^a\Bigr)^2-\frac{1}{2\zeta}\Bigl(\sum_\mu\frac{\partial Z_\mu}{\partial R_\mu}-\zeta M_Z\,\xi^0\Bigr)^2-\frac{1}{2\zeta_A}\Bigl(\sum_\mu\frac{\partial A_\mu}{\partial R_\mu}\Bigr)^2,
+\mathcal{L}_{\mathrm{gf}}=-\frac{1}{2\zeta}\sum_{a=1,2}\Bigl(\sum_{\imath}\frac{\partial W^a_\mu}{\partial R_{\imath}}-\zeta M_W\,\xi^a\Bigr)^2-\frac{1}{2\zeta}\Bigl(\sum_{\imath}\frac{\partial Z_{\imath}}{\partial R_{\imath}}-\zeta M_Z\,\xi^0\Bigr)^2-\frac{1}{2\zeta_A}\Bigl(\sum_{\imath}\frac{\partial A_{\imath}}{\partial R_{\imath}}\Bigr)^2,
 $$</p>
 <p>$$
-\mathcal{L}^{(2)}=\tfrac12\sum_{\mu,\nu}A_\mu\left[(\Pi-M^2)\delta_{\mu\nu}+p_\mu p_\nu\right]A_\nu,
+\mathcal{L}^{(2)}=\tfrac12\sum_{{\imath},{\jmath}}A_{\imath}\left[(\Pi-M^2)\delta_{{\imath}{\jmath}}+p_{\imath} p_{\jmath}\right]A_{\jmath},
 \qquad
 \boxed{\;Kv=0\;}
 $$</p>
@@ -328,12 +328,12 @@ $$</p>
 <p><strong>Source.</strong> <code>articles_physics/gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.md</code>.</p>
 <h2 id="13-the-vector-bosons-and-the-neutral-current">13. The Vector Bosons and the Neutral Current</h2>
 <p>$$
-W_{\mu\nu a}=\frac{\partial W_{\nu a}}{\partial R_\mu}-\frac{\partial W_{\mu a}}{\partial R_\nu}+g\sum_{b,c}\varepsilon_{abc}W_{\mu b}W_{\nu c},
+W_{{\imath}{\jmath} a}=\frac{\partial W_{{\jmath} a}}{\partial R_{\imath}}-\frac{\partial W_{{\imath} a}}{\partial R_{\jmath}}+g\sum_{b,c}\varepsilon_{abc}W_{{\imath} b}W_{{\jmath} c},
 \qquad
-Z_\mu=\cos\theta_W\,W_{\mu 3}-\sin\theta_W\,B_\mu,\quad A_\mu=\sin\theta_W\,W_{\mu 3}+\cos\theta_W\,B_\mu,\quad \tan\theta_W=\frac{g_{\mathrm Y}}{g},
+Z_{\imath}=\cos\theta_W\,W_{{\imath} 3}-\sin\theta_W\,B_{\imath},\quad A_{\imath}=\sin\theta_W\,W_{{\imath} 3}+\cos\theta_W\,B_{\imath},\quad \tan\theta_W=\frac{g_{\mathrm Y}}{g},
 $$</p>
 <p>$$
-\mathcal{L}_Z=\frac{g}{\cos\theta_W}\sum_{f,\mu}\varepsilon_\mu Z_\mu\bar f\gamma_\mu\Big[\big(T_{3f}-Q_f\sin^2\theta_W\big)P_L-Q_f\sin^2\theta_W\,P_R\Big]f .
+\mathcal{L}_Z=\frac{g}{\cos\theta_W}\sum_{f,{\imath}}\varepsilon_{\imath} Z_{\imath}\bar f\gamma_{\imath}\Big[\big(T_{3f}-Q_f\sin^2\theta_W\big)P_L-Q_f\sin^2\theta_W\,P_R\Big]f .
 $$</p>
 <p><strong>The non-trivial claim.</strong> Three things the algebra supplies and two it does not. Supplied: the carrier of the massive vector as an element of $\mathbb{B}_{\Phi}$; the three polarisations and the Proca equation; the <strong>charge eigenvalues $\pm1$ of the charged $W$, as the eigenvalues of the adjoint action of the Cartan generator</strong> $\tfrac12\mathrm{ad}_{i\vec e_z}$ on $\vec e_x\pm i\vec e_y$; and the self-couplings, whose structure constants are the quaternion commutator's, read off rather than inserted. The cubic and quartic vertices are the adjoint action written as a vertex, and the <strong>abelian factor does not self-couple</strong> because the central direction has vanishing structure constants — the algebra's own statement of what "abelian" means. Not supplied: the $W$ mass (imported with the factor $\tfrac12$ that is the scalar's isospin) and the chiral coupling.</p>
 <p><strong>The angle is not a third coupling.</strong> It is the one angle by which the two neutral fields must be rotated so that the photon couples as pure electric charge; once so defined, the $Z$ coupling follows with no further freedom. The neutral-current Lagrangian in the two currents $J^3$ and $J^Y$ reduces to the bracket above, and the vector and axial couplings $v_f,a_f$ are read from it.</p>
@@ -341,12 +341,12 @@ $$</p>
 <h2 id="14-the-process-level-the-alternative-mass-route-and-the-two-fermion-asides">14. The Process Level, the Alternative Mass Route, and the Two Fermion Asides</h2>
 <p><strong>The contact interaction, whose shape is exact and whose strength is not.</strong></p>
 <p>$$
-J^{+}_\mu=\tilde{\Xi}_{\mathrm u}^{\dagger}iR_{\vec e_x}\,\gamma_\mu(1-\gamma_5)\tilde{\Xi}_{\mathrm d},
+J^{+}_{\imath}=\tilde{\Xi}_{\mathrm u}^{\dagger}iR_{\vec e_x}\,\gamma_{\imath}(1-\gamma_5)\tilde{\Xi}_{\mathrm d},
 \qquad
-\mathcal{L}_{\mathrm{eff}}=-\frac{4G_{\mathrm F}}{\sqrt2}\sum_\mu\varepsilon_\mu J^{+}_\mu J^{-}_\mu,\qquad \frac{G_{\mathrm F}}{\sqrt2}=\frac{g^2}{8M_W^2},
+\mathcal{L}_{\mathrm{eff}}=-\frac{4G_{\mathrm F}}{\sqrt2}\sum_{\imath}\varepsilon_{\imath} J^{+}_{\imath} J^{-}_{\imath},\qquad \frac{G_{\mathrm F}}{\sqrt2}=\frac{g^2}{8M_W^2},
 $$</p>
 <p>$$
-\Gamma(\mu\to e\nu_e\bar\nu_\mu)=\frac{G_{\mathrm F}^2m_\mu^5}{192\pi^3},\qquad \tau_\mu=\frac{1}{\Gamma}=2.1873\ \mu\mathrm{s}.
+\Gamma(\mu\to e\nu_{\mathrm{neu},e}\bar\nu_{\mathrm{neu},\imath})=\frac{G_{\mathrm F}^2m_\mu^5}{192\pi^3},\qquad \tau_{\imath}=\frac{1}{\Gamma}=2.1873\ \mu\mathrm{s}.
 $$</p>
 <p><strong>The non-trivial claim.</strong> The chiral vertex is <strong>one basis operator</strong>, its multipliers are named, and its nilpotency is a theorem; that shape is algebraic and exact. What is not algebraic is any reason for nature to have used that shape with that strength, or on the left half only. The shape is the framework's; the strength and the asymmetry are inputs. That sentence is the part's verdict in miniature.</p>
 <p><strong>Stueckelberg, which the algebra does supply.</strong></p>
@@ -369,9 +369,9 @@ $$</p>
 <li><em>The Lagrangian and the Higgs Field</em> — the scalar action and its potential in one variable, whose minimum is a three-sphere; three flat directions carrying the hypercharge current, and the vectors that eat them inheriting it; $m_h^2=2\lambda v^2$ with $g_{hhh}=3m_h^2/v$ and $g_{hhhh}=3m_h^2/v^2$, so one measured number fixes three vertices (the file writes the quartic $\beta$).</li>
 <li><em>The Lagrangian and the W and Z Bosons</em> — gauge kinetic terms plus one covariant scalar term; the photon's masslessness as the zero eigenvalue of a rank-three mass matrix; $\rho=1$ as a consequence of the single doublet and not a second condition.</li>
 <li><em>The Lagrangian and the Weak Interaction</em> — the Proca action plus $-\frac{g}{2\sqrt2}(W^{+}J^{+}+W^{-}J^{-})$; the contact $-\frac{G_F}{\sqrt2}J^{+}J^{-}$ with $G_F/\sqrt2=g^{2}/(8M_W^{2})$, an exact Gaussian elimination followed by a momentum expansion whose scale is $M_W$. The four-fermion theory therefore has no parameter of its own, and the $V-A$ structure is the algebra's chirality projection.</li>
-<li><em>The Lagrangian and the Stueckelberg Mechanism</em> — $S=\int d^{4}r\,[\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)-\tfrac12\mu^{2}\langle\tilde A_\Phi-\tilde\nabla_\Phi\xi/\mu\rangle_\natural]$, invariant under $A_\mu\mapsto A_\mu+\partial_\mu\Lambda$ and $\xi\mapsto\xi+\mu\Lambda$; the invariant mass term exists because the field strength cannot see a gradient of a scalar; three modes in every gauge, one scalar and no ghost; the mechanism adds a field and no parameter.</li>
+<li><em>The Lagrangian and the Stueckelberg Mechanism</em> — $S=\int d^{4}r\,[\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)-\tfrac12\mu^{2}\langle\tilde A_\Phi-\tilde\nabla_\Phi\xi/\mu\rangle_\natural]$, invariant under $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Lambda$ and $\xi\mapsto\xi+\mu\Lambda$; the invariant mass term exists because the field strength cannot see a gradient of a scalar; three modes in every gauge, one scalar and no ghost; the mechanism adds a field and no parameter.</li>
 </ul>
-<p><strong>The pairing, which is per article and not per part.</strong> None of the five uses the non-abelian trace, and the reason each pairing is the one it is differs. The complex doublet pairs with the Hermitian norm, $\sum_\mu(D_\mu\Phi)^{\dagger}(D_\mu\Phi)$, real and non-negative term by term; the asymmetry with the real gauge fields is a statement about representations and not about the pairing. The weak contact pairs the current with its own modulus, $J^{+}_\mu J^{-}_\mu=\lvert J^{+}_\mu\rvert^{2}$, so the contact action is real with a definite sign. The Stueckelberg action reduces with the scalar part of the field-strength square, $\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$. A density built on $2\,\mathrm{Sc}$ alone would not be invariant under the non-abelian conjugation, which is why the gauge action of the parent category needs the trace.</p>
+<p><strong>The pairing, which is per article and not per part.</strong> None of the five uses the non-abelian trace, and the reason each pairing is the one it is differs. The complex doublet pairs with the Hermitian norm, $\sum_{\imath}(D_{\imath}\Phi)^{\dagger}(D_{\imath}\Phi)$, real and non-negative term by term; the asymmetry with the real gauge fields is a statement about representations and not about the pairing. The weak contact pairs the current with its own modulus, $J^{+}_{\imath} J^{-}_{\imath}=\lvert J^{+}_{\imath}\rvert^{2}$, so the contact action is real with a definite sign. The Stueckelberg action reduces with the scalar part of the field-strength square, $\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$. A density built on $2\,\mathrm{Sc}$ alone would not be invariant under the non-abelian conjugation, which is why the gauge action of the parent category needs the trace.</p>
 <p><strong>What the block settles that the rest of the file states as given.</strong> That $m_W/m_Z=\cos\theta_W$ and the photon's masslessness follow from the direction the doublet does not see, and are not independent inputs. That the three degrees of freedom the vectors gain are the three the scalars lose, so no count is broken by the breaking. That the quartic curvature, the cubic and the quartic Higgs vertices are one number, $m_h$ and $v$, read three times.</p>
 <p><strong>What it declares absent, in its own words.</strong> Gauge fixing, ghosts, the $R_\xi$ charts, the Ward identities, the running of $g$ and $g'$, the oblique parameters and the precision observables. The category's $R_\xi$ article states those structures for the standard theory; it does not derive them from this action, and this family does not contain them. The actions themselves are written in the component dictionary, because the $\mathrm{U}(1)$ line is exact in the algebra and the $\mathrm{SU}(2)$ lines are only partly carried.</p>
 <p><strong>Source.</strong> <code>articles_physics/the-lagrangian-and-the-electroweak-theory.md</code>, <code>articles_physics/the-lagrangian-and-the-higgs-field.md</code>, <code>articles_physics/the-lagrangian-and-the-w-and-z-bosons.md</code>, <code>articles_physics/the-lagrangian-and-the-weak-interaction.md</code>, <code>articles_physics/the-lagrangian-and-the-stueckelberg-mechanism.md</code>.</p>
@@ -401,7 +401,7 @@ $$</p>
 <td>material sector, $\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$</td>
 </tr>
 <tr>
-<td>$\tilde A_{\Phi}$, $A_\mu$</td>
+<td>$\tilde A_{\Phi}$, $A_{\imath}$</td>
 <td>connection, its $\mathrm{SU}(2)$ part</td>
 </tr>
 <tr>
@@ -437,7 +437,7 @@ $$</p>
 <td>oblique parameters</td>
 </tr>
 <tr>
-<td>$W_{u,d}$, $W_{e,\nu}$</td>
+<td>$W_{u,d}$, $W_{e,{\jmath}}$</td>
 <td>diagonalising unitaries</td>
 </tr>
 </tbody>

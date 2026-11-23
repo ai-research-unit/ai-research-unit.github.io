@@ -77,7 +77,7 @@
 \tilde\Xi^{*}\!\left(r-\frac{\vec s}{2}\right)\tilde\Xi\!\left(r+\frac{\vec s}{2}\right),
 $$</p>
 <p>an element of $\mathbb{B}$ at each point of the $(r,\vec p)$ space. Its zeroth moment in $\vec p$ is $\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}}$, its first moment is the current density times the mass, and its $h\to0$ limit is the phase-space density of the polar-form fluid on the mass shell.</p>
-<p>The angle is $\theta_{\mathrm{spa}}=\vec k_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.</p>
+<p>The angle is $\theta_{\mathrm{spa}}=2\pi\vec\nu_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.</p>
 <p>The article's claim is a claim about what is written in the letters, not about new physics. The transform, its normalisation, its marginals, its negativity and its $\frac{h}{2\pi}$-expansion are all standard. What the corpus supplies is a definition in which the Wigner object is an element and not a matrix, and a reading of its two parts as the two quadratures of one angle. The article states both and is explicit about which is which.</p>
 <p>Where the standard function already lives in the corpus. <a href="the-bell-inequality-for-continuous-variables-in-biquaternionic-form.html">The Bell Inequality for Continuous Variables in Biquaternionic Form</a> uses the $x$–$p$ Wigner function of a two-mode squeezed state, in the normalisation in which one mode has $\int W\,d^{2}\alpha=\tfrac12$ and the vacuum is $\pi^{-1}\exp(-2\lvert\alpha\rvert^{2})$. That is the same function this article defines, in a phase-space variable $\alpha$ that absorbs the mass and the frequency; the corpus's normalisation there is the one in which $d^{2}\alpha=dq\,dp/(2\frac{h}{2\pi})$. This article keeps $\frac{h}{2\pi}$ explicit and uses the three-dimensional normalisation $\int d^{3}p\,\tilde W_\Xi=\rho_{\mathrm{num}}$, which is the normalisation the fluid articles need. The relation between the two normalisations is a constant and is recorded in the notation table.</p>
 <h2 id="the-standard-function-stated-first">The Standard Function, Stated First</h2>
@@ -177,7 +177,7 @@ $$</p>
 $$</p>
 <p>which is the four-current with the $i$ where the corpus's letters put it. A reader who wants a display with no $i$ should read it as two statements: the spatial moment is the current density times the mass, and the temporal moment is the same quantity with the temporal slot's $i$ restored.</p>
 <h3 id="the-check">The check</h3>
-<p>The marginals were checked numerically on a Gaussian packet, and the residuals are of the order of the grid error. With the position in units of $1/k_m$ and the momentum in units of $mc$, position width $\sigma=0.5$, mean position $x_0=0.3$ and mean momentum $p_0=1.7$, on a grid of $241$ positions, $301$ momenta and $2001$ relative coordinates spanning $\lvert s\rvert\le10$:</p>
+<p>The marginals were checked numerically on a Gaussian packet, and the residuals are of the order of the grid error. With the position in units of $1/\nu_m$ and the momentum in units of $mc$, position width $\sigma=0.5$, mean position $x_0=0.3$ and mean momentum $p_0=1.7$, on a grid of $241$ positions, $301$ momenta and $2001$ relative coordinates spanning $\lvert s\rvert\le10$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -269,7 +269,7 @@ $$</p>
 <p>and the variance is the spread of the Wigner distribution about the flow momentum. So the modification of the shell by the quantum potential is the statement that the fluid's momentum is the <em>mean</em> of a distribution whose width is not zero, and the amount by which the mean sits off the classical shell is set by that width. <a href="the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html">The Quantum Stress Tensor of the Biquaternion Scalar Field</a> reaches the same term from the stress and states that it is not a thermal pressure; the identification here is the phase-space statement of that sentence.</p>
 <p>The identity is exact for the Gaussian only. For a general state the second moment about the flow momentum is not the quantum potential: the general relation involves the density's third derivatives as well, and the Gaussian is the family in which they vanish. This article states the Gaussian identity, uses it to fix the interpretation, and does not generalise it. The general $\frac{h^{2}}{4\pi^{2}}$ expansion of the Wigner element is <a href="relativistic-wigner-function-and-quantum-kinetics.html">Relativistic Wigner Function and Quantum Kinetics</a>'s subject, and it is there that the higher terms appear.</p>
 <h3 id="the-numbers">The numbers</h3>
-<p>Both statements were checked numerically on the Gaussian used for the marginal table. With the position in units of $1/k_m$, $\sigma=0.5$:</p>
+<p>Both statements were checked numerically on the Gaussian used for the marginal table. With the position in units of $1/\nu_m$, $\sigma=0.5$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -296,9 +296,9 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The two numerical values agree to about $2\times10^{-3}$, which is the accuracy of a second difference on a grid of spacing $0.033$; the two exact values agree identically, since both are $\frac{h^{2}}{4\pi^{2}}/(4\sigma^{2})$ with the position in units of $1/k_m$. The agreement is the check that the Wigner normalisation and the quantum potential's sign are consistent: a plus sign on the quantum potential would give $-1$ in the third row, and the discrepancy would be visible at once.</p>
+<p>The two numerical values agree to about $2\times10^{-3}$, which is the accuracy of a second difference on a grid of spacing $0.033$; the two exact values agree identically, since both are $\frac{h^{2}}{4\pi^{2}}/(4\sigma^{2})$ with the position in units of $1/\nu_m$. The agreement is the check that the Wigner normalisation and the quantum potential's sign are consistent: a plus sign on the quantum potential would give $-1$ in the third row, and the discrepancy would be visible at once.</p>
 <h3 id="negativity-and-what-it-forbids">Negativity, and what it forbids</h3>
-<p><strong>The Wigner element of a non-Gaussian pure state is negative somewhere, and the negativity is the precise sense in which the fluid picture is incomplete.</strong> For the superposition $(\lvert0\rangle+\lvert1\rangle)/\sqrt2$ of the first two oscillator levels, with lengths in units of $1/k_m$, momenta in units of $mc$ and energies in units of $hf_{\mathrm{frq}}$:</p>
+<p><strong>The Wigner element of a non-Gaussian pure state is negative somewhere, and the negativity is the precise sense in which the fluid picture is incomplete.</strong> For the superposition $(\lvert0\rangle+\lvert1\rangle)/\sqrt2$ of the first two oscillator levels, with lengths in units of $1/\nu_m$, momenta in units of $mc$ and energies in units of $hf_{\mathrm{frq}}$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>

@@ -72,7 +72,7 @@
         <h1 id="worked-cases-for-math0-inside-the-endomorphisms-of-the-biquaternion-algebra"><strong>Worked Cases for $\mathrm{U}(3)$ inside the Endomorphisms of the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>Purpose.</strong> <em>The Meaning of $\mathrm{U}(3)$ in the Endomorphisms of the Biquaternion Algebra</em> states the widened corner and its symmetric basis in general. This note does the opposite: it writes the arrays of the nine generators, the brackets, the exponentials, the Killing form and the Casimirs, and it recomputes every number quoted there. Two errors in the circulating draft are identified and corrected in place, one algebraic and one group-theoretic, both flagged where they occur.</p>
-<p><strong>The carrier.</strong> $\mathbb B$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ cyclically and $\vec e_k^{2}=-e_t$. Operators are written in the sixteen Conway words $e_\mu[\,]e_\nu=L_{e_\mu}R_{e_\nu}$, the length $\ell$ is the number of nonzero coefficients, and all arrays below are in the coefficient basis $(t,x,y,z)$ with $M(e_t)=\mathrm{I}_2$, $M(\vec e_k)=-i\sigma_k$.</p>
+<p><strong>The carrier.</strong> $\mathbb B$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ cyclically and $\vec e_k^{2}=-e_t$. Operators are written in the sixteen Conway words $e_{\imath}[\,]e_{\jmath}=L_{e_{\imath}}R_{e_{\jmath}}$, the length $\ell$ is the number of nonzero coefficients, and all arrays below are in the coefficient basis $(t,x,y,z)$ with $M(e_t)=\mathrm{I}_2$, $M(\vec e_k)=-i\sigma_k$.</p>
 <p><strong>The corner.</strong> $\mathfrak u(3)$ is $\{X:\ X+X^{\dagger}=0,\ Xe_t=0\}$, of real dimension $9$. Its elements have the display $\operatorname{diag}(0,R)$ with $R\in M_3(\mathbb C)$ anti-Hermitian; the traceless ones are $\mathfrak{su}(3)$, and the single extra direction is $iP_V$.</p>
 <p><strong>The cases at a glance.</strong></p>
 <div class="table-scroll"><table>
@@ -240,11 +240,11 @@ $$</p>
 <p>$$
 iP_V=\begin{pmatrix}0&0&0&0\\0&i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}
 =i\,\frac{3E_t+E_x+E_y+E_z}{4},
-\qquad E_\mu=L_{e_\mu}R_{e_\mu}.
+\qquad E_{\imath}=L_{e_{\imath}}R_{e_{\imath}}.
 $$</p>
 <p>The Conway array has four nonzero entries, all on the diagonal words: the coefficients are $\tfrac34i,\tfrac14i,\tfrac14i,\tfrac14i$, so $\ell=4$. The identity behind it is $E_t=\mathrm I_4$ and $E_x+E_y+E_z=\operatorname{diag}(-3,1,1,1)$, giving $3E_t+\sum_aE_a=4P_V$.</p>
 <p><strong>Numbers.</strong> Trace $3i$; Hilbert–Schmidt norm squared $\operatorname{tr}(P_V^{2})=3$; central in $\mathfrak u(3)$, verified as $\lVert[iP_V,X]\rVert<10^{-15}$ for all nine basis elements; fixed by $P$, $\lVert PiP_VP^{-1}-iP_V\rVert=2.4\times10^{-16}$.</p>
-<p><strong>Why it is not a derivation.</strong> Every $L_{\tilde Q}-R_{\tilde Q}$ is of zero array trace — verified for all four $\tilde Q=e_\mu$ and true in general since $\operatorname{tr}L_{\tilde Q}=\operatorname{tr}R_{\tilde Q}=4Q_t$ — and $\operatorname{tr}iP_V=3i\neq0$. Hence $iP_V$ is not inner, and $\operatorname{Der}_{\mathbb C}(\mathbb B)=\mathbb B/\mathbb C e_t$ being all inner, it is not a derivation. It is an operator that rescales the carrier, not one that differentiates the product.</p>
+<p><strong>Why it is not a derivation.</strong> Every $L_{\tilde Q}-R_{\tilde Q}$ is of zero array trace — verified for all four $\tilde Q=e_{\imath}$ and true in general since $\operatorname{tr}L_{\tilde Q}=\operatorname{tr}R_{\tilde Q}=4Q_t$ — and $\operatorname{tr}iP_V=3i\neq0$. Hence $iP_V$ is not inner, and $\operatorname{Der}_{\mathbb C}(\mathbb B)=\mathbb B/\mathbb C e_t$ being all inner, it is not a derivation. It is an operator that rescales the carrier, not one that differentiates the product.</p>
 <h2 id="3-the-equal-weight-triple-three-ways">3. The Equal-Weight Triple, Three Ways</h2>
 <p><strong>Definition and arrays.</strong> With $(a,b,c)$ cyclic,</p>
 <p>$$
@@ -631,8 +631,8 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$E_\mu$</td>
-<td>$L_{e_\mu}R_{e_\mu}$, with $E_t=\mathrm I$ and $E_a=\operatorname{diag}(-1,-1,1,1)$ cyclically</td>
+<td>$E_{\imath}$</td>
+<td>$L_{e_{\imath}}R_{e_{\imath}}$, with $E_t=\mathrm I$ and $E_a=\operatorname{diag}(-1,-1,1,1)$ cyclically</td>
 </tr>
 <tr>
 <td>$P_V$</td>

@@ -87,7 +87,7 @@ $$</p>
 <p>The order. Kinematics, then the tensor decomposition, then scaling, then the parton model, then the spin relation and its violation, then the densities, then the sum rules and their two verdicts, then the gluon, then scaling violations with the anomalous dimensions computed and checked, then the coupling from the sum rule, then factorisation and the ledger.</p>
 <h2 id="kinematics-what-is-measured">Kinematics: What Is Measured</h2>
 <p>The metric, stated once. $g_{\imath\jmath}=\mathrm{diag}(1,-1,-1,-1)$ throughout, so a spacelike exchange has $q^2=-Q^2<0$ and the transverse projector below is the one these signs give. No vertex is computed in this article, so the incoming-momentum convention of <a href="the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html">the QCD article</a> does not enter; where a trace is taken, it is the Dirac trace of a massless line and carries no sign ambiguity.</p>
-<p>The process and the variables. An electron of momentum $k_\Phi$ scatters off a proton of momentum $p$ and emerges with momentum $k'$. The exchanged photon (or $Z$) carries</p>
+<p>The process and the variables. An electron of momentum $\nu_{\Phi}$ scatters off a proton of momentum $p$ and emerges with momentum $k'$. The exchanged photon (or $Z$) carries</p>
 <p>$$
 q=k-k' ,
 \qquad
@@ -112,7 +112,7 @@ $$</p>
 <p>so that $(k+q)^2=0$ reads $2xp\cdot q=Q^2$, which is the definition of $x$. The variable is not a bookkeeping device; it is the fraction of null momentum, and the elastic condition on a massless constituent fixes it uniquely.</p>
 <p>The measured range. At HERA, $E_e=27.5$ GeV against $E_p=920$ GeV gives $s=4E_eE_p=1.01\times10^5$ GeV$^2$, that is $\sqrt s=318$ GeV, and the reach is $Q^2$ up to $s$ and $x$ down to $Q^2/s\approx10^{-5}$ at $Q^2=1$ GeV$^2$. The range matters: the small-$x$ region is where the gluon dominates and where the rise of $F_2$ is seen, and it is a region that only a collider reaches.</p>
 <h2 id="the-hadronic-tensor-and-the-two-structure-functions">The Hadronic Tensor and the Two Structure Functions</h2>
-<p><strong>The cross section factorises into a lepton tensor and a hadron tensor.</strong> With $L_{\imath\jmath}=2\left(k_{\imath} k'_{\jmath}+k_{\jmath} k'_{\imath}-g_{\imath\jmath}k\cdot k'\right)$ for an unpolarised lepton, the cross section is the contraction of $L$ with $W$, and carrying out the contraction leaves two independent coefficients:</p>
+<p><strong>The cross section factorises into a lepton tensor and a hadron tensor.</strong> With $L_{\imath\jmath}=2\left(2\pi\nu_{\imath} k'_{\jmath}+2\pi\nu_{\jmath} k'_{\imath}-g_{\imath\jmath}k\cdot k'\right)$ for an unpolarised lepton, the cross section is the contraction of $L$ with $W$, and carrying out the contraction leaves two independent coefficients:</p>
 <p>$$
 \frac{d^2\sigma}{dx\,dQ^2}=\frac{4\pi\alpha^2}{xQ^4}\left[\left(1-y-\frac{M^2x^2y^2}{Q^2}\right)F_2(x,Q^2)+y^2x\,F_1(x,Q^2)\right] ,
 $$</p>
@@ -174,13 +174,13 @@ $$</p>
 <p>and the reason the struck parton's fraction equals $x$ is the elastic condition computed above: only a parton with $\xi=x$ can absorb the photon and remain on shell. The delta function $\delta(\xi-x)$ that the convolution would carry is what collapses the integral to a point, and that collapse is the origin of scaling.</p>
 <p><strong>What the model predicts and what it does not.</strong> It predicts the <em>shape</em> of $F_2$ in $x$ only in the sense of being consistent with any shape; it predicts the <em>relations</em> between different processes, which is where its power lies. Neutrino and antineutrino scattering, the $W$ asymmetry, the Drell–Yan cross section and the $Z$ pole all use the same densities, and the consistency of all of them with one set of functions is the evidence that the densities are real objects rather than fit parameters.</p>
 <h2 id="callangross-derived-in-three-lines">Callan–Gross, Derived in Three Lines</h2>
-<p>The partonic tensor. For a massless spin-$\tfrac12$ parton of charge $e$ and momentum $k_\Phi$,</p>
+<p>The partonic tensor. For a massless spin-$\tfrac12$ parton of charge $e$ and momentum $\nu_{\Phi}$,</p>
 <p>$$
 W^{(0)}_{\imath\jmath}=e^2\,\delta\!\left((k+q)^2\right)\mathrm{Tr}\!\left[\not k\,\gamma_{\imath}(\not k+\not q)\gamma_{\jmath}\right] ,
 $$</p>
 <p>up to an overall constant. The trace is standard,</p>
 <p>$$
-\mathrm{Tr}\!\left[\not k\,\gamma_{\imath}\not l\,\gamma_{\jmath}\right]=4\left[k_{\imath} l_{\jmath}+k_{\jmath} l_{\imath}-g_{\imath\jmath}\,k\cdot l\right] ,
+\mathrm{Tr}\!\left[\not k\,\gamma_{\imath}\not l\,\gamma_{\jmath}\right]=4\left[2\pi\nu_{\imath} l_{\jmath}+2\pi\nu_{\jmath} l_{\imath}-g_{\imath\jmath}\,k\cdot l\right] ,
 \qquad
 l=k+q .
 $$</p>
@@ -194,7 +194,7 @@ k\cdot l=k\cdot q=\frac{Q^2}{2} ,
 $$</p>
 <p>so that</p>
 <p>$$
-\sum_{\imath}\varepsilon_{\imath} q_{\imath} W^{(0)}_{\imath\jmath}\propto 4\left[\frac{Q^2}{2}l_{\jmath}-\frac{Q^2}{2}k_{\jmath}-\frac{Q^2}{2}q_{\jmath}\right]=\frac{4Q^2}{2}\left[l_{\jmath}-k_{\jmath}-q_{\jmath}\right]=0 .
+\sum_{\imath}\varepsilon_{\imath} q_{\imath} W^{(0)}_{\imath\jmath}\propto 4\left[\frac{Q^2}{2}l_{\jmath}-\frac{Q^2}{2}\nu_{\jmath}-\frac{Q^2}{2}q_{\jmath}\right]=\frac{4Q^2}{2}\left[l_{\jmath}-\nu_{\jmath}-q_{\jmath}\right]=0 .
 $$</p>
 <p>What the vanishing means. The partonic tensor is transverse to $q$, so it contains no longitudinal structure, so the coefficient of the $q$-longitudinal projector vanishes, so the longitudinal structure function vanishes, $F_L=0$ — which is</p>
 <p>$$
@@ -209,7 +209,7 @@ R=\frac{\sigma_L}{\sigma_T}=\frac{F_2\left(1+\dfrac{4M^2x^2}{Q^2}\right)-2xF_1}{
 $$</p>
 <p>and the Callan–Gross relation is $R=0$. The kinematic factor $4M^2x^2/Q^2$ is the target-mass correction and is negligible over most of the measured range.</p>
 <p>The measurement. $R$ is not zero. It is about $0.18$ at $Q^2\sim5$ GeV$^2$, roughly flat in $x$ up to $x\approx0.5$, rising beyond that where the higher-twist terms take over, and falling at fixed $x$ as $Q^2$ rises — which is the direction the $\alpha_s$ origin of the deviation predicts. The size is the content, and the two limits are not $0$ and $1$ but $0$ and $\infty$: $R=0$ is a massless on-shell spin-$\tfrac12$ constituent, and $R\to\infty$ is a scalar, because a scalar constituent has no transverse coupling at all and $\sigma_T$ vanishes rather than merely shrinking. A value of $0.18$ therefore says the spin-$\tfrac12$ picture is right and the deviation is a correction, and it says it without needing an upper end to compare against.</p>
-<p><strong>Where the deviation comes from.</strong> Two sources, and they are of different kinds. The first is order $\alpha_s$: a gluon in the proton can be resolved by the photon through $g\to q\bar q$, and the longitudinal part of that splitting is nonzero, so $R$ acquires a term proportional to $\alpha_s$ times the gluon density. The second is a power correction and not an $\alpha_s$ effect: the quarks' intrinsic transverse momentum gives the struck quark a virtuality of order $k_T^2/Q^2$, which breaks the on-shell condition the Callan–Gross derivation used. The first dominates at small $x$, the second at large $x$, and the fact that $R$ stays small is the quantitative statement that both are corrections rather than the leading description.</p>
+<p><strong>Where the deviation comes from.</strong> Two sources, and they are of different kinds. The first is order $\alpha_s$: a gluon in the proton can be resolved by the photon through $g\to q\bar q$, and the longitudinal part of that splitting is nonzero, so $R$ acquires a term proportional to $\alpha_s$ times the gluon density. The second is a power correction and not an $\alpha_s$ effect: the quarks' intrinsic transverse momentum gives the struck quark a virtuality of order $\nu_T^2/Q^2$, which breaks the on-shell condition the Callan–Gross derivation used. The first dominates at small $x$, the second at large $x$, and the fact that $R$ stays small is the quantitative statement that both are corrections rather than the leading description.</p>
 <h2 id="the-parton-densities">The Parton Densities</h2>
 <p>The definitions. For each flavour,</p>
 <p>$$
@@ -499,7 +499,7 @@ $$</p>
 </tr>
 <tr>
 <td>$L_{\imath\jmath}$</td>
-<td>Lepton tensor, $2(k_{\imath} k'_{\jmath}+k_{\jmath} k'_{\imath}-g_{\imath\jmath}k\cdot k')$</td>
+<td>Lepton tensor, $2(\nu_{\imath} k'_{\jmath}+\nu_{\jmath} k'_{\imath}-g_{\imath\jmath}k\cdot k')$</td>
 </tr>
 <tr>
 <td>$p^\pm=(p^0\pm p^3)/\sqrt2$</td>

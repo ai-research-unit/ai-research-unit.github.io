@@ -74,11 +74,11 @@
 <p>This article states the action whose Euler–Lagrange equations are the coupled Dirac equation, and it reads what the action's symmetries give. It is the element-form companion of <em>The Lagrangian and the Dirac Equation</em>, and it is the first of two coupled Lagrangian articles. The second substitutes the polar word into the action of this article and reads the constraint structure.</p>
 <p>The equation. The coupled pair is</p>
 <p>$$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L,
 \qquad
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi,
 $$</p>
 <p>with the connection in the material sector $\mathbb{B}_\Phi$ and with central scalar coefficients in the abelian case.</p>
 <p>Three things are established.</p>
@@ -87,16 +87,16 @@ $$</p>
 <p><em>Third, the current is settled.</em> The local phase's Noether current is conserved on solutions, and it is the pairing with two fixed frame units that the element form states and the Gordon article identifies. The naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant, is of the density sign, and is not conserved. The action does not produce it and the equation does not conserve it. The positive statement and the counterexample are both in §<em>The Noether Currents: What the Action Produces and What It Does Not</em>.</p>
 <p>The two settings. The action is stated for a connection that may depend on the coordinates. The two settings of the framework are distinct and are kept apart here. In the constant setting the connection is a fixed element of $\mathbb{B}_\Phi$ with constant coefficients; the equation becomes algebraic in momentum space, the propagator is a finite product of exponentials up to the gauge factor, and a constant potential is pure gauge. In the operator setting the connection is an operator or a general function of position; the equation is a partial differential equation, the propagator is not a finite product, and the variational principle is the standard field-theoretic one. The article computes in the constant setting and states where the operator setting differs. Nothing is transferred between them.</p>
 <h2 id="conventions">Conventions</h2>
-<p>The conventions are the free companion's, restated here for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the field is the pair $(\tilde\Xi_R,\tilde\Xi_L)$ of elements of $\mathbb{B}$, the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the mass term is the only term that couples the two parts. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ with the connection in $\mathbb{B}_\Phi$, and it is central, so it multiplies from either side without a choice. The measure is $\mathrm{d}^4r$, the mass is $k_m=\frac{2\pi mc}{h}$, and the two settings — constant and varying connection — are the parent's and are kept apart throughout.</p>
+<p>The conventions are the free companion's, restated here for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the field is the pair $(\tilde\Xi_R,\tilde\Xi_L)$ of elements of $\mathbb{B}$, the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the mass term is the only term that couples the two parts. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ with the connection in $\mathbb{B}_\Phi$, and it is central, so it multiplies from either side without a choice. The measure is $\mathrm{d}^4r$, the mass is $\nu_m=\frac{mc}{h}$, and the two settings — constant and varying connection — are the parent's and are kept apart throughout.</p>
 <h2 id="the-action-in-element-form-coupled">The Action in Element Form, Coupled</h2>
 <p>The free action of the parent article is</p>
 <p>$$
-S_0=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
+S_0=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R-2\pi\nu_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
 $$</p>
 <p>with $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^{3}r$. The coupled action is the same functional with the two gradients replaced by the two covariant operators:</p>
 <p>$$
 \boxed{\;
-S=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr]\;}
+S=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-2\pi\nu_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr]\;}
 $$</p>
 <p>with $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi^{\natural}$.</p>
 <p>The two kinetic terms carry different operators, and that is the parent's arrangement. The left part carries the conjugate and the right part carries the operator, so the two differ in the sign of the spatial derivative and in the sign of the connection's spatial slots. That arrangement is what makes the two spatial derivatives conjugate to each other, which is what the two-component structure of the equation requires.</p>
@@ -125,15 +125,15 @@ $$</p>
 $$</p>
 <p>with the two residuals</p>
 <p>$$
-r_L=(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L-k_m\tilde\Xi_R,
+r_L=(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L-2\pi\nu_m\tilde\Xi_R,
 \qquad
-r_R=\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-k_m\tilde\Xi_L .
+r_R=\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-2\pi\nu_m\tilde\Xi_L .
 $$</p>
 <p>Stationarity for every variation of compact support is $r_L=r_R=0$, which is the coupled pair.</p>
 <p>The coefficient, once. Varying $\tilde\Xi_R^{*}$ gives $\frac{h c}{4\pi}\mathrm{Re}\int\mathrm{Sc}[\delta\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R]$; varying $\tilde\Xi_R$ gives the same expression again after the operator is moved to the other slot by self-adjointness. The two halves add, the $\frac12$ cancels, and the coefficient is $\frac{h}{2\pi} c$. The coupling does not change the argument, because the connection's contribution to the two halves is the same central number in both.</p>
 <p><strong>The count.</strong> Each residual is an element of $\mathbb{B}$ with eight real components, so the pair is sixteen real equations on sixteen real unknowns. The compatibility condition is obtained by applying $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ to the first residual and using the second:</p>
 <p>$$
-\Bigl(\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0,
+\Bigl(\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}+\frac{i\,ϙ}{h}\tilde F-4\pi^{2}\nu_m^{2}\Bigr)\tilde\Xi_R=0,
 $$</p>
 <p>the covariant wave equation with the curvature term. The coupling therefore changes the compatibility condition in exactly one place, the curvature, and nowhere else.</p>
 <p>Boundary terms. The variation of a field of compact support produces none. For fields periodic in the spatial directions no boundary term appears either, provided the gauge function is periodic; a non-periodic gauge function changes the boundary data and the action is then stationary only within a gauge class. That is the standard statement and the coupling does not alter it.</p>
@@ -223,7 +223,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The coupled action is the free action with the two gradients replaced by the two covariant operators,</p>
 <p>$$
-S=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
+S=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-2\pi\nu_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
 $$</p>
 <p>and its variation gives the coupled pair. The mass term is invariant under a local central phase without help; the kinetic term is not; the repair is the covariant derivative with the gauge law's sign, and it is unique within the abelian class.</p>
 <p>The local phase's Noether current is the parent's display, and it is one object with three writings: the action's two-part display, the chart's $\rho\cosh\theta_{\mathrm{rpd}}$ and $\rho\sinh\theta_{\mathrm{rpd}}u_{\mathrm b}$, and the Gordon pairing with two frame units. The time component is a sum over the parts and the spatial component is a difference, because the parts carry conjugate derivatives.</p>

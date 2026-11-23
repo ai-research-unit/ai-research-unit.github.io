@@ -75,7 +75,7 @@
 <p><a href="the-schrodinger-equation-in-biquaternionic-polar-variables.html">The Schrödinger Equation in Biquaternionic Polar Variables</a> writes the field as the four-factor word $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and prints, boxed, the two exact real equations that the central field obeys. Nothing below re-derives them. Each term of that pair is assigned a power of one parameter, and the limit is the statement of which powers survive.</p>
 <p>What the polar chart settles before any parameter appears. Three things, and none of them is available in a form-first account. The amplitude of the limit is the word's scale $\varrho$ and not a coefficient read off a column. The density of the limit is the parent's Hermitian norm $\rho_{\mathrm{num}}=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$, which equals $2\varrho^{2}$ exactly when the boost is the identity and to no order otherwise. And the frame's two brackets — the boost's connection and the rotor's — carry no derivative of a rapidly varying object, so the parameter does not order them: they are either present or absent, and the parent's own class statement says which case closes.</p>
 <p>The pair is closed on the central class, $\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$, and the parent proves that class is invariant exactly under a central Hamiltonian. The limit therefore takes place inside the central class. A general field's word has four brackets and its pair is not closed, so there is nothing to order; the limit is not defined on it, and no truncation of the four brackets is claimed here.</p>
-<p>The criterion. $\epsilon=1/(k_{\Phi}L)$, with $k_{\Phi}=\frac{2\pi \lvert\vec p\rvert}{h}$ and $L$ the length over which the scale varies, $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$. The quantum potential over the kinetic energy is $\epsilon^{2}$; the scale's gradient over the phase's is $\epsilon$. The parameter is defined in <em>The Non-Quantum Limit of the Biquaternion Model</em>, and it is the same one here, with $\varrho$ in the place of the amplitude.</p>
+<p>The criterion. $\epsilon=1/(2\pi\nu_{\Phi}L)$, with $\nu_{\Phi}=\frac{\lvert\vec p\rvert}{h}$ and $L$ the length over which the scale varies, $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$. The quantum potential over the kinetic energy is $\epsilon^{2}$; the scale's gradient over the phase's is $\epsilon$. The parameter is defined in <em>The Non-Quantum Limit of the Biquaternion Model</em>, and it is the same one here, with $\varrho$ in the place of the amplitude.</p>
 <p>The parent's pair is exact and its two lines are ordered differently: the real line is an expansion whose third term is the quantum potential, and the imaginary line is not an expansion at all. Order zero is the Hamilton–Jacobi equation, whose characters are the classical trajectories and whose algebra form is a norm. Order one is the transport equation, which the limit does not produce and cannot spoil, and which gives $C/\sqrt{\lvert p\rvert}$ in one dimension and the van Vleck determinant in three. Order two is the quantum potential, and its ratio to the kinetic energy is $\epsilon^{2}$ everywhere but is not bounded on any region, which is the difference between the limit and the approximation.</p>
 <p>The amplitude–phase decomposition, the two real equations, the Hamilton–Jacobi equation, the method of characteristics, the optical–mechanical analogy, the transport equation, the WKB amplitude, the van Vleck determinant and the quantum potential are standard, and each is in every textbook on semiclassical mechanics. Added here: the ordering of the parent's own terms against one parameter, the norm reading of the eikonal, the identification of the limit's amplitude and density with two specific factors of the polar word, and the statement that the limit is defined only on the central class.</p>
 <p>Conventions. Those of the polar parent, unchanged: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_{\imath}^{2}=-e_{t}$; $i$ central; $\mathbb{B}_{C}$ the centre, $\mathbb{B}_{H}$ the real-quaternion subspace, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the Hermitian and anti-Hermitian sectors; $\natural$ quaternion conjugation and $*$ the Hermitian one; $\mathrm{Sc}$ the coefficient of $e_{t}$; time is $t'$ and $r'_{t}=ct'$. The word is the parent's, with its eight real parameters, and the action is $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$.</p>
@@ -144,7 +144,7 @@ $$</p>
 <p>$$
 \frac{\lvert h\vec\nabla_\Phi\ln \varrho\rvert}{2\pi \lvert\vec\nabla_\Phi S\rvert}\sim\epsilon ,
 \qquad
-\frac{1}{k_{\Phi}^{2}}\left\lvert\frac{\Delta_\Phi \varrho}{\varrho}\right\rvert\sim\epsilon^{2} .
+\frac{1}{4\pi^{2}\nu_{\Phi}^{2}}\left\lvert\frac{\Delta_\Phi \varrho}{\varrho}\right\rvert\sim\epsilon^{2} .
 $$</p>
 <p>The second ratio is the quantum potential over the kinetic energy. It is a square where the first is linear, and the two are the only ratios the pair contains: every term of the parent's boxed pair is one of the three columns below.</p>
 <div class="table-scroll"><table>
@@ -228,7 +228,7 @@ $$</p>
 Q=-\frac{h^{2}}{8\pi^{2}m}\frac{\Delta_\Phi \varrho}{\varrho},
 $$</p>
 <p>the parent's own expression, and it is the third term of the real line and the only term the limit deletes.</p>
-<p>Its ratio to the kinetic energy is $\epsilon^{2}$ but is not bounded. With $\varrho=\exp(-x^{2}/4\sigma^{2})$ and $\epsilon=1/(k_{\Phi}\sigma)$,</p>
+<p>Its ratio to the kinetic energy is $\epsilon^{2}$ but is not bounded. With $\varrho=\exp(-x^{2}/4\sigma^{2})$ and $\epsilon=1/(2\pi\nu_{\Phi}\sigma)$,</p>
 <p>$$
 \frac{\lvert Q\rvert}{E-V}=\epsilon^{2}\left\lvert\frac{x^{2}}{4\sigma^{2}}-\frac{1}{2}\right\rvert .
 $$</p>
@@ -256,7 +256,7 @@ $$</p>
 </table></div>
 <p>The ratio vanishes at $\sqrt{2}\,\sigma$ and grows as $x^{2}$ beyond it, so for every $\epsilon$ it reaches one at $x\simeq2\sigma/\epsilon$. No value of the parameter makes the expansion uniform on a region fixed in advance, and the region shrinks as $\epsilon$ shrinks.</p>
 <p>The <em>limit</em> needs no region and has no remainder: it is the statement of which terms survive. The <em>approximation</em> needs both, and the table is what a claim of approximation has to carry — the order kept and the place where it stops.</p>
-<p>Two plane waves of wave numbers $k_{\Phi}$ and $k_{\Phi}+\delta k$ are each semiclassical exactly, and their sum has envelope wave number $\delta k$ and parameter $1/(\delta k\,L)$, which is large when the two are close. So</p>
+<p>Two plane waves of wave numbers $\nu_{\Phi}$ and $\nu_{\Phi}+\delta k$ are each semiclassical exactly, and their sum has envelope wave number $\delta k$ and parameter $1/(\delta k\,L)$, which is large when the two are close. So</p>
 <p>$$
 \lim\left(\tilde\Xi_{1}+\tilde\Xi_{2}\right)\neq\lim\tilde\Xi_{1}+\lim\tilde\Xi_{2},
 $$</p>
@@ -279,7 +279,7 @@ $$</p>
 <p>The Gaussian ratio was recomputed. The five values of the table are $\lvert x^{2}/4\sigma^{2}-1/2\rvert$ at the five tabulated points, and each agrees to twelve digits.</p>
 <p>No numerical solution of the time-dependent problem was run: the limit is a statement about equations, and the pair it orders is verified as an identity, which is stronger.</p>
 <h2 id="summary">Summary</h2>
-<p>The field is the parent's polar word $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and the parent prints the exact pair its central class obeys. The limit assigns one power of $\epsilon=1/(k_{\Phi}L)$ to each spatial derivative of the scale and none to a derivative of the phase, and orders the pair's two lines by that rule.</p>
+<p>The field is the parent's polar word $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and the parent prints the exact pair its central class obeys. The limit assigns one power of $\epsilon=1/(2\pi\nu_{\Phi}L)$ to each spatial derivative of the scale and none to a derivative of the phase, and orders the pair's two lines by that rule.</p>
 <p>The real line has three orders. Order zero is the Hamilton–Jacobi equation, read in the algebra as $\frac{1}{2m}\langle\vec\nabla_\Phi S\rangle_{\natural}=E-V$, whose characters are the classical trajectories. Order two is the quantum potential $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$, the only term the limit deletes. Order one is present as the scale's gradient, and it is what the first correction keeps.</p>
 <p>The imaginary line is the transport equation and it is not an expansion: $\partial_{t'}\varrho^{2}+\vec\nabla_\Phi\cdot(\varrho^{2}\vec\nabla_\Phi S/m)=0$ holds at every order and the limit cannot spoil it. It gives $\varrho=C/\sqrt{\lvert p\rvert}$ in one dimension and the van Vleck determinant in three.</p>
 <p>Three statements are the polar chart's contribution and not the analysis's. The limit's amplitude is the word's scale. The limit's density is the Hermitian norm, equal to $2\varrho^{2}$ exactly where the boost is the identity. And the frame's two brackets are excluded by an exact statement — they carry no derivative of a fast object — rather than by an estimate.</p>
@@ -342,11 +342,11 @@ $$</p>
 <td>Phase gradient; real quaternion in $\mathbb{B}_{H}$</td>
 </tr>
 <tr>
-<td>$\epsilon=1/(k_{\Phi}L)$</td>
+<td>$\epsilon=1/(2\pi\nu_{\Phi}L)$</td>
 <td>The parameter of the limit</td>
 </tr>
 <tr>
-<td>$k_{\Phi}=\frac{2\pi \lvert\vec p\rvert}{h}$</td>
+<td>$\nu_{\Phi}=\frac{\lvert\vec p\rvert}{h}$</td>
 <td>The phase's wave number</td>
 </tr>
 <tr>

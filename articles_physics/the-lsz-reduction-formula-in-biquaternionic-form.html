@@ -127,7 +127,7 @@ $$
 so multiplying by $\mathcal{M}(\tilde Q_{\Phi})=N(\tilde Q_{\Phi})+m^{2}\,c^{2}$ and going on shell extracts the residue $Z$, while the same multiplication on an external leg of a general correlator amputates exactly the propagator that leg carried and leaves the amputated (1PI) amplitude. The residue is the wave-function renormalization. It is $Z=(\sqrt Z)^2$: one factor is the leg's overlap with the one-particle state, the other its coupling to the rest of the diagram. The formula's $Z^{-1/2}$ per leg removes the leg's own factor, so no $Z$ survives in the amplitude; the residue is the object that is measured, and it cancels out of the amplitude. All of this is standard (Lehmann–Symanzik–Zimmermann; see also the textbook derivations cited), and it is transcribed rather than rebuilt.</p>
 <p><strong>The biquaternion form of the amputation.</strong> The wave operator's momentum symbol is the negative of the central mass-shell operator,
 $$
-\big(\Box_\Phi-k_m^{2}\big) \;\longrightarrow\; -\big(N(\tilde Q_{\Phi})+m^{2}\,c^{2}\big)=\; -\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}\big) \;=\; -\,\mathcal{M}(\tilde Q_{\Phi}) ,
+\big(\Box_\Phi-4\pi^{2}\nu_m^{2}\big) \;\longrightarrow\; -\big(N(\tilde Q_{\Phi})+m^{2}\,c^{2}\big)=\; -\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}\big) \;=\; -\,\mathcal{M}(\tilde Q_{\Phi}) ,
 $$
 so the amputation is multiplication by the inverse propagator $\mathcal{M}(\tilde Q_{\Phi})$ in momentum space, equivalently by the negative of the wave operator's symbol. The two conventions differ by a factor $-1$ per leg, which is the same sign convention on the external states; no pole and no residue is affected. The mass-shell operator $\mathcal{M}(\tilde Q_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}=N(\tilde Q_{\Phi})+m^{2}\,c^{2}$ is the object whose vanishing is the shell, $\mathcal{M}(\tilde Q_{\Phi})=0$, i.e. $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$. The remaining sections spell out the consequence: the amputation is a real central scalar for a scalar field and an action on the element for a field with spin, while the pole $\mathcal{M}(\tilde Q_{\Phi})=0$ is the same central scalar in both cases.</p>
 <h2 id="amputation-as-the-inverse-mass-shell-operator">Amputation as the Inverse Mass-Shell Operator</h2>
@@ -140,7 +140,7 @@ so that, off the shell and with the prescription removed,
 $$
 \boxed{\;\lim_{\epsilon\to0^{+}}\mathcal{M}(\tilde Q_{\Phi})\,D_F(\tilde Q_{\Phi}) = \lim_{\epsilon\to0^{+}}\frac{N(\tilde Q_{\Phi})+m^{2}\,c^{2}}{N(\tilde Q_{\Phi})+m^{2}\,c^{2}-i\epsilon} = 1 \qquad (\mathcal{M}\neq0)\;}
 $$
-and with the prescription kept the same product is $1$ up to $O(\epsilon/\mathcal{M})$. Multiplying a correlation function by $\mathcal{M}(\tilde Q_{\Phi})$ on a leg is precisely the inverse operation to attaching the propagator to that leg. This is the whole content of "amputation", and in the framework it is the multiplication of an algebra-valued function by the central scalar $\mathcal{M}(\tilde Q_{\Phi})$. The normalization is the propagator article's. Its Klein–Gordon Green's function is $G_F=1/(\vec p^{\,2}+m^2-p_0^2-i\epsilon)=1/(\mathcal{M}-i\epsilon)$, which satisfies $(\Box_\Phi-k_m^{2})G_F=-\delta^{(4)}$ and whose free-field residue is $+1$; the textbook normalization $-1/(N(\tilde Q_{\Phi})+m^{2}\,c^{2}-i\epsilon)$ is its negative.</p>
+and with the prescription kept the same product is $1$ up to $O(\epsilon/\mathcal{M})$. Multiplying a correlation function by $\mathcal{M}(\tilde Q_{\Phi})$ on a leg is precisely the inverse operation to attaching the propagator to that leg. This is the whole content of "amputation", and in the framework it is the multiplication of an algebra-valued function by the central scalar $\mathcal{M}(\tilde Q_{\Phi})$. The normalization is the propagator article's. Its Klein–Gordon Green's function is $G_F=1/(\vec p^{\,2}+m^2-p_0^2-i\epsilon)=1/(\mathcal{M}-i\epsilon)$, which satisfies $(\Box_\Phi-4\pi^{2}\nu_m^{2})G_F=-\delta^{(4)}$ and whose free-field residue is $+1$; the textbook normalization $-1/(N(\tilde Q_{\Phi})+m^{2}\,c^{2}-i\epsilon)$ is its negative.</p>
 <p><strong>The centrality is a real centrality.</strong> Because $\mathcal{M}(\tilde Q_{\Phi})$ is central, the amputation commutes with the left and right multiplications of the algebra and does not disturb any internal index; it multiplies every component of the field by the same complex number. On real momenta $\mathcal{M}=N(\tilde Q_{\Phi})+m^{2}\,c^{2}$ is also <strong>real</strong>, and a real central scalar commutes with the conjugation $\flat=-{}^{*}$,
 $$
 \big(\mathcal{M}\tilde{Ξ}\big)^{\flat} = \bar{\mathcal{M}}\,\tilde{Ξ}^{\flat} = \mathcal{M}\,\tilde{Ξ}^{\flat},
@@ -161,7 +161,7 @@ $$
 $$
 Here $\tilde Q_{\mathrm{amp}}$ is a constant biquaternion amplitude, an element of $\mathbb{B}$ bound here, whose majuscule marks its complex scalar part. The differential operator is central and acts on the exponential as multiplication by its symbol, $\Box_\Phi\to -N=-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$, so
 $$
-\big(\Box_\Phi-k_m^{2}\big)\tilde{Ξ}_{\tilde P,\Phi} \;\longrightarrow\; -\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}\big)\tilde{Ξ}_{\tilde P,\Phi} = -\,\mathcal{M}(\tilde Q_{\Phi})\,\tilde{Ξ}_{\tilde P,\Phi},
+\big(\Box_\Phi-4\pi^{2}\nu_m^{2}\big)\tilde{Ξ}_{\tilde P,\Phi} \;\longrightarrow\; -\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}\big)\tilde{Ξ}_{\tilde P,\Phi} = -\,\mathcal{M}(\tilde Q_{\Phi})\,\tilde{Ξ}_{\tilde P,\Phi},
 $$
 which vanishes for $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$. The phase is the central scalar $\mathrm{Sc}(\tilde P_{\Phi}^{\natural}\tilde R_\Phi)=-p\cdot x$ with $p\cdot x=Er'_t-\vec p\cdot\vec r$ and the mode angles $\theta_{\mathrm{pwp},i}=p_i\cdot x_i$ real because each momentum and each position are real, the corpus's four-vector notation, so $\exp(-i\theta_{\mathrm{pwp}})=\exp(-i\theta_{\mathrm{pwp}})$ is the positive-frequency mode and the wave is a <strong>central-phase</strong> plane wave: its phase is a complex number and not a biquaternion, which is the reason the framework's free modes are the ordinary plane waves of the standard theory. This is the same statement that the path-integral and functional-integral articles make about the phase being central. Being complex, the phase is central but not real: it multiplies every component by the same complex number, and because that number is not real it re-mixes the two sectors instead of preserving them, so the sector split is a split of the field and never of the phase.</p>
 <p>Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.</p>
@@ -210,22 +210,22 @@ $$
 where the left factor of the energy term is $e_t$ and is not written. It is the momentum symbol of the pair of <em>Operator and Calculus Conventions</em>, in the second of the two writings that the propagator article distinguishes: the two lines read that symbol on the two parts of the element and the action reads it on the element itself, the two are not the same map, and each squares to multiplication by $-N$, so the pole set is common. The action $\mathcal{A}_p-mc$ is the symbol of the inverse propagator. The energy enters as the coefficient $p_0=E/c$ and not as the on-shell value $E_{\vec p}$, because the amputation is an off-shell operation; the two coincide only on the shell. The signs are the frame's. The energy term squares to $+p_0^2$ because the central $i^2=-1$ is met by $\vec e_x^2=-e_t$, and each spatial term squares to $-p_\eta^2$ because the two quaternion squares give $(-e_t)(-e_t)=+e_t$ and the sign is the central $i^2$ alone.</p>
 <p><strong>The two Dirac equations.</strong> The corpus carries two, and they are not the same operator (see <em>The Dirac Equation in Biquaternionic Form</em>, §<em>The One-Sided and the Two-Sided Equation</em>). The <strong>one-sided</strong> form is the pair
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L} ,
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R} ,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R} ,
 $$
 in which the gradient acts by left multiplication and the mass is the pairing of the two parts. The <strong>two-sided</strong> form is the single equation
 $$
--(\tilde\nabla_\Phi)^{\natural}F-k_m\,i\,\overline{F}\,\vec e_z=0 ,
+-(\tilde\nabla_\Phi)^{\natural}F-2\pi\nu_m\,i\,\overline{F}\,\vec e_z=0 ,
 $$
-in which the time derivative and the spatial gradient act by left multiplication, the mass acts by right multiplication through $\vec e_z$, and the componentwise conjugation $\bar F$ supplies an antilinear part. The reduction of this article is the one-sided pair: it is the pair whose Green element the propagator article inverts, and whose momentum symbol, in the second writing, is the action $\mathcal{A}_p$. The two-sided equation is another writing of the same one, and its mass is a multiplication together with a conjugation rather than a multiplication alone; a reduction in that form would have to carry the conjugation through every leg, and the corpus does not attempt it. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.</p>
+in which the time derivative and the spatial gradient act by left multiplication, the mass acts by right multiplication through $\vec e_z$, and the componentwise conjugation $\bar F$ supplies an antilinear part. The reduction of this article is the one-sided pair: it is the pair whose Green element the propagator article inverts, and whose momentum symbol, in the second writing, is the action $\mathcal{A}_p$. The two-sided equation is another writing of the same one, and its mass is a multiplication together with a conjugation rather than a multiplication alone; a reduction in that form would have to carry the conjugation through every leg, and the corpus does not attempt it. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.</p>
 <p><strong>The pole is central; the residue is an action.</strong> On a central-phase plane wave the four coefficients $p_{\imath}$ are constants, so $\mathcal{A}_p$ is a constant action and $\mathcal{A}_p^2$ is multiplication by $-N$. The equation $\mathcal{A}_p\tilde{Ξ}=m\tilde{Ξ}$ then gives
 $$
 \big(\mathcal{A}_p^2-m^{2}c^{2}\big)\tilde{Ξ}=-\big(N(\tilde Q_{\Phi})+m^{2}\,c^{2}\big)\tilde{Ξ}=0 ,
 $$
 so the second-order operator of the pair is the central scalar of the scalar case: the pole of every leg of the field with spin sits on the same biquaternion-norm level set $\mathcal{M}(\tilde Q_{\Phi})=0$. What is not scalar is the residue. The inverse of the action $\mathcal{A}_p-mc$ is
 $$
-\big(\mathcal{A}_p-mc\big)^{-1}=\frac{\mathcal{A}_p+mc}{-\big(N(\tilde Q_{\Phi})+\frac{h^{2}}{4\pi^{2}}k_m^2\big)}=\frac{\mathcal{A}_p+mc}{-\,\mathcal{M}(\tilde Q_{\Phi})} ,
+\big(\mathcal{A}_p-mc\big)^{-1}=\frac{\mathcal{A}_p+mc}{-\big(N(\tilde Q_{\Phi})+\frac{h^{2}}{4\pi^{2}}4\pi^{2}\nu_m^2\big)}=\frac{\mathcal{A}_p+mc}{-\,\mathcal{M}(\tilde Q_{\Phi})} ,
 $$
 so the residue of the propagator at $\mathcal{M}=0$ is the action $\mathcal{A}_p+mc$, up to the overall $-i$, the product of the $-1$ in the denominator $-(N(\tilde Q_{\Phi})+m^{2}\,c^{2})$ and the $i$ of the Feynman normalization. The spin-sum identity of the propagator article, which holds on the shell, writes that action as a sum of two terms of rank one,
 $$
@@ -410,7 +410,7 @@ verified as $-0.490000=-m^2c^2$ in units of $m^2c^2$, for $m=0.7$, $\vec p=(0.3,
 </tr>
 <tr>
 <td>$-(N(\tilde Q_{\Phi})+m^{2}\,c^{2})=-\mathcal{M}(\tilde Q_{\Phi})$</td>
-<td>Symbol of the wave operator $(\Box_\Phi-k_m^{2})$; amputation uses $\mathcal{M}$</td>
+<td>Symbol of the wave operator $(\Box_\Phi-4\pi^{2}\nu_m^{2})$; amputation uses $\mathcal{M}$</td>
 </tr>
 <tr>
 <td>$Z=\lim_{N(\tilde Q_{\Phi})\to-m^{2}c^{2}}(N(\tilde Q_{\Phi})+m^{2}\,c^{2})D_F(\tilde Q_{\Phi})=\lim_{\mathcal{M}\to0}\mathcal{M}D_F$</td>
@@ -441,7 +441,7 @@ verified as $-0.490000=-m^2c^2$ in units of $m^2c^2$, for $m=0.7$, $\vec p=(0.3,
 <td>Momentum action, the second writing of the momentum symbol of the pair; $\mathcal{A}_p^2\tilde{Ξ}=-N\tilde{Ξ}$</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$</td>
+<td>$\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$</td>
 <td>The pair, as two first-order lines; each line composed with its partner is $\Box_\Phi$</td>
 </tr>
 <tr>

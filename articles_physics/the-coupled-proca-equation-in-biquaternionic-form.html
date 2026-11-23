@@ -74,13 +74,13 @@
 <p>This article couples the Proca field to an electromagnetic connection and reads what the coupling does to the field, to the equation, and to the algebra's own bookkeeping. It is the element-form companion of <em>The Coupled Proca Equation in Biquaternionic Polar Variables</em>, and it depends on <em>The Proca Equation in Biquaternionic Form</em> for the free equation, on <em>The Gauge Principle in Biquaternionic Form</em> for the localization of the central phase, and on <em>The Covariant Derivative and Gauge Connection in Biquaternionic Form</em> for the operator identity.</p>
 <p>The equation.</p>
 <p>$$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^2\tilde A,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=4\pi^{2}\nu_m^2\tilde A,
 \qquad
 \tilde F=\frac12\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A-\tilde\nabla_{\mathrm{gco},\Phi}\tilde A\bigr)_{\mathrm{V}},
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi},
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{h}\tilde A_{\Phi},
 $$</p>
-<p>with $\tilde A$ the Proca potential, $\tilde A_\Phi$ the connection, $k_m=\frac{2\pi mc}{h}$, and the subscript $\mathrm{V}$ the pure-vector part of an element. The second display is one half of the antisymmetric part of the covariant gradient, and the article writes it in that form because the symmetric half is the covariant divergence, which is a different object.</p>
+<p>with $\tilde A$ the Proca potential, $\tilde A_\Phi$ the connection, $\nu_m=\frac{mc}{h}$, and the subscript $\mathrm{V}$ the pure-vector part of an element. The second display is one half of the antisymmetric part of the covariant gradient, and the article writes it in that form because the symmetric half is the covariant divergence, which is a different object.</p>
 <p>Four things are established, and they are exact statements of structure.</p>
 <p><em>First, the carrier must change.</em> The free Proca field is an element of the material sector $\mathbb{B}_\Phi$, and the material sector is not closed under its own product. A coupling that multiplies the field by a connection element therefore carries the field out of the sector unless the field is complexified, and the complexified carrier is $\mathbb{B}$ itself. The coupling is what forces $\tilde A\in\mathbb{B}$, and the free field is the real slice of the coupled one (§<em>The Carrier</em>).</p>
 <p><em>Second, the field strength carries the connection, unlike the Dirac case.</em> The Proca equation contains $\tilde F$, and $\tilde F$ is built from the covariant gradient, so the connection enters the equation twice: once through the derivative and once through the field strength. In the Dirac equation the field strength is not in the equation at all, and the coupling enters once. The extra term is $\frac{2\pi iϙ}{h}\mathrm{Vect}(\tilde A_{\Phi}^{\natural}\tilde A)$, it is bilinear in the two potentials, and it is the algebra's form of the commutator term that a non-abelian field strength carries.</p>
@@ -167,7 +167,7 @@ $$</p>
 <p>$$
 \tilde\nabla_{\mathrm{gco},\Phi,2}\tilde F_2=\lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde F,
 \qquad
-k_m^2\tilde A_2=\lambda\,k_m^2\tilde A .
+4\pi^{2}\nu_m^2\tilde A_2=\lambda\,4\pi^{2}\nu_m^2\tilde A .
 $$</p>
 <p>The mass term is homogeneous because it is linear in the field; it is the <em>bilinear</em> mass term of the action that is invariant, and the two statements are consistent, since $\lambda\bar\lambda=1$. In the free article the mass term is quadratic in a real field and breaks the symmetry; here the field is complex, the mass term is quadratic in the field and its conjugate, and the symmetry survives. That single sign of bookkeeping is why a massive vector field can be coupled at all.</p>
 <h2 id="the-field-strength-carries-the-connection">The Field Strength Carries the Connection</h2>
@@ -203,7 +203,7 @@ $$</p>
 <p>with $\tilde F^{(\Phi)}$ the curvature of the connection. The first term is scalar — each $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$ is central, so the four squares are central operators and their sum multiplies every element uniformly. The second term is a pure vector, and a pure vector has no scalar part.</p>
 <p>The scalar part of the equation therefore forces the constraint. Applying $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ to the equation and taking the scalar part,</p>
 <p>$$
-k_m^2\,\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)
+4\pi^{2}\nu_m^2\,\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)
 =\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde F\bigr)
 =\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}\,\mathrm{Sc}\bigl(\tilde F\bigr)=0,
 $$</p>
@@ -220,14 +220,14 @@ $$</p>
 <h2 id="a-constant-background">A Constant Background</h2>
 <p>The symbol. For a plane wave $\tilde A=\tilde A_0\exp(-i\vartheta)$ in a constant connection, every derivative is a multiplication and the equation becomes an algebraic system:</p>
 <p>$$
-\bigl(i\tilde K+\tilde C\bigr)\,\mathrm{Vect}\bigl((i\tilde K^{\natural}+\tilde C^{\natural})\tilde A_0\bigr)=k_m^2\tilde A_0,
+\bigl(2\pi i\tilde\Upsilon+\tilde C\bigr)\,\mathrm{Vect}\bigl((2\pi i\tilde\Upsilon^{\natural}+\tilde C^{\natural})\tilde A_0\bigr)=4\pi^{2}\nu_m^2\tilde A_0,
 \qquad
-\tilde C=\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
+\tilde C=\frac{i\,ϙ}{h}\tilde A_\Phi,
 $$</p>
-<p>four complex equations for the four components of the amplitude, with $\tilde K$ the wavevector biquaternion. The determinant of the $4\times4$ symbol is the dispersion relation; it is complex, so it is two real conditions on four real components of $\tilde K$, which is the count of a massive branch.</p>
+<p>four complex equations for the four components of the amplitude, with $\tilde\Upsilon$ the wavevector biquaternion. The determinant of the $4\times4$ symbol is the dispersion relation; it is complex, so it is two real conditions on four real components of $\tilde\Upsilon$, which is the count of a massive branch.</p>
 <p>The scalar potential is an energy shift, and it is exact. For a purely electric constant potential, $\tilde C$ is central and real, so it commutes with everything and adds to the temporal slot of the covariant wavevector. The roots move by one amount and not by two:</p>
 <p>$$
-\omega=\pm\sqrt{\vec k^{\,2}+k_m^2}-\frac{2\pi ϙ a'_t}{h}
+\omega=\pm\sqrt{\vec\nu^{\,2}+4\pi^{2}\nu_m^2}-\frac{ϙ a'_t}{h}
 \qquad\text{in the article's units,}
 $$</p>
 <p>that is $E\mapsto E+ϙ c\,a'_t$ with $E=hf_{\mathrm{frq}}$. The numerical check is exact: the determinant vanishes at the shifted frequency to machine precision ($2\times10^{-48}$) and does not vanish at the unshifted one. The particle and the antiparticle move in opposite directions, which is the algebraic statement that the two signs of $\omega$ are the two charges.</p>
@@ -265,11 +265,11 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The coupled Proca equation is</p>
 <p>$$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^2\tilde A,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=4\pi^{2}\nu_m^2\tilde A,
 \qquad
 \tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr),
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi,
 $$</p>
 <p>with the field an element of $\mathbb{B}$ and the free field its real slice.</p>
 <p>The carrier must be complex because the material sector is not closed: $\vec e_x\vec e_x=-e_t$ leaves it. The field strength carries the connection because the potential is charged, and the extra term is bilinear in the two potentials. The Lorenz condition survives in covariant form, exactly, because the curvature term of the covariant d'Alembertian is traceless, and the ordinary divergence is then fixed by the potential. A constant scalar potential shifts the energy by $ϙc\,a'_t$ and nothing else. The complex carrier has a central phase, the phase is a symmetry, and the current exists; it is the source the free article could not supply.</p>
@@ -340,7 +340,7 @@ $$</p>
 <td>The coupling element of a constant background</td>
 </tr>
 <tr>
-<td>$k_m=\frac{2\pi mc}{h}$</td>
+<td>$\nu_m=\frac{mc}{h}$</td>
 <td>Mass wave number</td>
 </tr>
 <tr>

@@ -74,7 +74,7 @@
 <p><em>The Path Integral and the Proca Equation in Biquaternionic Form</em> gives a Gaussian over the anti-Hermitian configurations, a determinant that factorises into a cube and a single eigenvalue, and a ghost that cancels. This article puts the electromagnetic connection into that integral. The result is not a small modification, because the coupled Proca field does not live where the free one lives.</p>
 <p>Four findings, and the first is a change of carrier.</p>
 <p><em>First, the configuration space changes from $\mathbb{B}_\Phi$ to $\mathbb{B}$.</em> The material sector is not closed under multiplication, so a derivative with a connection in it carries the field out of the sector. The coupled integral is therefore an integral over eight real components at each point, and the free integral is the real slice of it. <strong>No earlier article in the corpus's path-integral set has this: the scalar, spinor and Klein–Gordon carriers are closed, and only the massive vector's is not.</strong></p>
-<p><em>Second, the three–one split survives the coupling exactly.</em> The covariant d'Alembertian replaces the ordinary one in the transverse factor, and the mass alone remains in the longitudinal one. So the determinant is the covariant transverse determinant cubed times $-k_m^{2}$, and the ghost is untouched by the coupling: it is still a field-independent constant, still invisible in every normalised correlator.</p>
+<p><em>Second, the three–one split survives the coupling exactly.</em> The covariant d'Alembertian replaces the ordinary one in the transverse factor, and the mass alone remains in the longitudinal one. So the determinant is the covariant transverse determinant cubed times $-\nu_m^{2}$, and the ghost is untouched by the coupling: it is still a field-independent constant, still invisible in every normalised correlator.</p>
 <p><em>Third, the constraint is covariant and exact, and the ordinary Lorenz condition is not.</em> The curvature term of the covariant d'Alembertian is a pure vector and has no scalar part, so the trace of the coupled equation forces the covariant divergence to vanish with no term to spare. The ordinary divergence then differs from it by a term bilinear in the connection. The constraint survives in the form the coupling can preserve, and it is deformed in the form it cannot.</p>
 <p><em>Fourth, the field acquires a charge.</em> The free field is real, and a real field has no phase to rotate, so the free theory had one current and no charge. The coupled carrier is complex, the phase is a symmetry of the mass term as well as of the field term, and the Noether current exists. The measure gains a circle at each point; the circle's Jacobian is one; and the gauge invariance of the integral is exact at every step, with no link and no ghost.</p>
 <p>What is not claimed. The equation is the standard minimally coupled Proca equation, the integral is the standard one, and no new solution or prediction is offered. The algebra's contribution is that the coupling is one element, that the obstruction to it is a closure statement, and that the three–one split and the constraint fall out of two traces.</p>
@@ -96,7 +96,7 @@ $$</p>
 <h2 id="the-exponent">The Exponent</h2>
 <p>The action is the free action with the covariant gradient inside the field strength, and the field strength is where the coupling doubles.</p>
 <p>$$
-S=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F_{\mathrm{gco}}\tilde F_{\mathrm{gco}}\bigr)-\tfrac12k_m^{2}\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)\Bigr],
+S=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F_{\mathrm{gco}}\tilde F_{\mathrm{gco}}\bigr)-\tfrac124\pi^{2}\nu_m^{2}\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)\Bigr],
 \qquad
 \tilde F_{\mathrm{gco}}=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr) .
 $$</p>
@@ -116,11 +116,11 @@ $$</p>
 <h2 id="the-operator-and-its-split">The Operator and Its Split</h2>
 <p>The coupled operator is the free operator with the covariant d'Alembertian in the transverse factor.</p>
 <p>$$
-P_{\mathrm{gco}}=(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2}-\tilde\nabla_{\mathrm{gco},\Phi}D_{\mathrm{gco}},
+P_{\mathrm{gco}}=(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2}-\tilde\nabla_{\mathrm{gco},\Phi}D_{\mathrm{gco}},
 \qquad
 D_{\mathrm{gco}}\tilde A=\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr),
 $$</p>
-<p>which is $\tilde\nabla_{\mathrm{gco},\Phi}\tilde F_{\mathrm{gco}}-k_m^{2}\tilde A$ and therefore the coupled equation. The second-order operator is the sum of the squared components plus the curvature, and the curvature is a pure vector.</p>
+<p>which is $\tilde\nabla_{\mathrm{gco},\Phi}\tilde F_{\mathrm{gco}}-4\pi^{2}\nu_m^{2}\tilde A$ and therefore the coupled equation. The second-order operator is the sum of the squared components plus the curvature, and the curvature is a pure vector.</p>
 <p>The two projectors are the covariant ones and the split is the free split. With</p>
 <p>$$
 P_L^{\mathrm{gco}}=\tilde\nabla_{\mathrm{gco},\Phi}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\bigr)^{-1}D_{\mathrm{gco}},
@@ -129,23 +129,23 @@ P_T^{\mathrm{gco}}=1-P_L^{\mathrm{gco}},
 $$</p>
 <p>the same two-line computation as in the free case gives</p>
 <p>$$
-\boxed{\;P_{\mathrm{gco}}=\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2}\bigr)P_T^{\mathrm{gco}}-k_m^{2}P_L^{\mathrm{gco}}\; }
+\boxed{\;P_{\mathrm{gco}}=\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2}\bigr)P_T^{\mathrm{gco}}-4\pi^{2}\nu_m^{2}P_L^{\mathrm{gco}}\; }
 $$</p>
 <p>because the covariant gradient and the covariant divergence still compose to the covariant d'Alembertian. The mass is still the only thing that acts on the longitudinal direction, and it acts on it with no derivative, no connection and no background in it.</p>
 <p>So the determinant is the covariant transverse cube times the same single factor.</p>
 <p>$$
-\det P_{\mathrm{gco}}=\bigl(\det((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2})\bigr)^{3}\cdot\bigl(-k_m^{2}\bigr).
+\det P_{\mathrm{gco}}=\bigl(\det((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2})\bigr)^{3}\cdot\bigl(-4\pi^{2}\nu_m^{2}\bigr).
 $$</p>
 <p>The coupling deforms the transverse factor and leaves the longitudinal one alone. That is the article's sharpest statement about the integral's structure: a background changes the three propagating states' spectrum, their dispersion and their determinant, and changes nothing whatever about the constrained mode's eigenvalue.</p>
-<p>The ghost's cancellation is therefore stronger in the coupled theory than in the free one. In the free theory it is a constant because the mass is constant; here the transverse factor is a functional of the connection and the longitudinal one is still the constant $-k_m^{2}$. So the ratio of two backgrounds' determinants is the cube of the ratio of their transverse determinants, and <strong>the ghost drops out of the ratio identically</strong>. A background's effect on the Proca vacuum energy is three times its effect on a scalar's, in the coupled theory as in the free one.</p>
+<p>The ghost's cancellation is therefore stronger in the coupled theory than in the free one. In the free theory it is a constant because the mass is constant; here the transverse factor is a functional of the connection and the longitudinal one is still the constant $-\nu_m^{2}$. So the ratio of two backgrounds' determinants is the cube of the ratio of their transverse determinants, and <strong>the ghost drops out of the ratio identically</strong>. A background's effect on the Proca vacuum energy is three times its effect on a scalar's, in the coupled theory as in the free one.</p>
 <h2 id="the-covariant-constraint">The Covariant Constraint</h2>
 <p>The constraint survives because the curvature has no scalar part. Applying $D_{\mathrm{gco}}$ to the coupled equation gives</p>
 <p>$$
-D_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco},\Phi}\tilde F_{\mathrm{gco}}=k_m^{2}D_{\mathrm{gco}}\tilde A ,
+D_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco},\Phi}\tilde F_{\mathrm{gco}}=4\pi^{2}\nu_m^{2}D_{\mathrm{gco}}\tilde A ,
 $$</p>
 <p>and the left side is a total divergence of an antisymmetric object plus the scalar part of the curvature, which vanishes. <strong>The curvature's vanishing scalar part is exact and is not an approximation</strong>: the curvature of a biquaternionic connection is a pure vector by construction, and $\mathrm{Sc}$ of a pure vector is zero. Hence</p>
 <p>$$
-k_m^{2}D_{\mathrm{gco}}\tilde A=0
+4\pi^{2}\nu_m^{2}D_{\mathrm{gco}}\tilde A=0
 \qquad\Longrightarrow\qquad
 \mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)=0 ,
 $$</p>
@@ -153,9 +153,9 @@ $$</p>
 <p>What is not forced is the ordinary divergence. The covariant divergence and the ordinary one differ by a term bilinear in the connection, so a field satisfying the covariant condition need not satisfy the ordinary one. The integral inherits this asymmetry: its saddle obeys the covariant condition, and the ordinary divergence of the saddle is a functional of the background. Nothing in the integral prefers the ordinary condition, which is the point — the ordinary condition is not gauge covariant and cannot be a property of the theory.</p>
 <p>The constraint is what the saddle's longitudinal part is, and the mass is what it costs. In the transverse-longitudinal split the saddle is</p>
 <p>$$
-\tilde A^{\mathrm{cl}}=-\frac{P_T^{\mathrm{gco}}\tilde J}{(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2}}+\frac{P_L^{\mathrm{gco}}\tilde J}{k_m^{2}} ,
+\tilde A^{\mathrm{cl}}=-\frac{P_T^{\mathrm{gco}}\tilde J}{(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2}}+\frac{P_L^{\mathrm{gco}}\tilde J}{4\pi^{2}\nu_m^{2}} ,
 $$</p>
-<p>exactly as in the free case with the covariant operators in place. The longitudinal response is still local and still weighted by $1/k_m^{2}$, and this is the same statement as the free article's: the constrained direction does not propagate.</p>
+<p>exactly as in the free case with the covariant operators in place. The longitudinal response is still local and still weighted by $1/\nu_m^{2}$, and this is the same statement as the free article's: the constrained direction does not propagate.</p>
 <h2 id="the-current-and-the-phase">The Current and the Phase</h2>
 <p>The free field had no phase and therefore no charge. A real four-vector has nothing to rotate, the mass term is real and the central imaginary leaves the sector, so the free theory's only Noether current is the energy–momentum. The free article says this and gives it as the reason the free Proca field cannot source the inhomogeneous Maxwell equation.</p>
 <p>The coupled carrier has a phase and the phase is a symmetry of the whole action, mass term included. Under $\tilde A\mapsto e^{\frac{2\pi iϙ\Gamma}{h}}\tilde A$ with $\Gamma$ constant, the field strength transforms by the same factor and the invariant length is unchanged, so the action is invariant and the Noether current exists. <strong>That current is the source the Maxwell equation needs</strong>, and its existence is the integral's version of the coupled equation article's fourth finding.</p>
@@ -166,15 +166,15 @@ $$</p>
 <p>The saddle is the coupled classical equation, and the one-loop term is the covariant transverse cube.</p>
 <p>$$
 \Gamma_{\mathrm{1\,loop}}=\tfrac12\mathrm{Tr}\log P_{\mathrm{gco}}
-=3\cdot\tfrac12\mathrm{Tr}\log\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2}\bigr)+\tfrac12\mathrm{Tr}\log(-k_m^{2}),
+=3\cdot\tfrac12\mathrm{Tr}\log\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2}\bigr)+\tfrac12\mathrm{Tr}\log(-4\pi^{2}\nu_m^{2}),
 $$</p>
 <p>with the last term a constant. The background's one-loop effect on the Proca field is three times its effect on a charged scalar, and this is the integral's form of the statement that a massive vector has three states in a background as well as in vacuum.</p>
 <p>The background's effect on the transverse factor is where the whole of the physics is. The covariant d'Alembertian's spectrum in a background is the Landau-level spectrum for a constant magnetic field, the Schwinger pair-production rate for a constant electric one, and the ordinary scattering problem in general. None of these is evaluated here, and the corpus's Landau and pair-creation articles are where they are.</p>
-<p>The longitudinal mode's contribution is a constant and therefore a vacuum energy that does not respond. In a background, the constrained direction's eigenvalue is $-k_m^{2}$ at every point, so its determinant is a field-independent number times a divergence. A massive vector's constrained mode contributes to the vacuum energy and not to the effective action's field dependence, and the free article's statement that the ghost is invisible becomes, in a background, the statement that it is invisible in every derivative.</p>
+<p>The longitudinal mode's contribution is a constant and therefore a vacuum energy that does not respond. In a background, the constrained direction's eigenvalue is $-\nu_m^{2}$ at every point, so its determinant is a field-independent number times a divergence. A massive vector's constrained mode contributes to the vacuum energy and not to the effective action's field dependence, and the free article's statement that the ghost is invisible becomes, in a background, the statement that it is invisible in every derivative.</p>
 <p>No spin transport and no van Vleck determinant appear, and the reason is the carrier. This is a field integral and not a sum over paths: its semiclassical series is the loop series, its first term is the saddle and its second is the determinant. The articles that carry a van Vleck determinant and a spin transport are the single-particle ones, and the massive vector has none in this corpus.</p>
 <h2 id="what-the-integral-adds-and-what-it-does-not-add">What the Integral Adds and What It Does Not Add</h2>
 <p>Adds, first, the carrier change as a property of the integral. The measure doubles, the free integral becomes a slice, and the mass term's reality and the carrier's closure are one fact. This is the only article in the corpus's path-integral set where the coupling changes the configuration space, and the reason is the material sector's failure to close.</p>
-<p>Adds, second, the exact survival of the three–one split. The coupling deforms the transverse determinant and leaves the longitudinal eigenvalue at $-k_m^{2}$, so the ghost cancels identically in every ratio of background determinants. A background sees three states and not four, and the statement is exact rather than one-loop.</p>
+<p>Adds, second, the exact survival of the three–one split. The coupling deforms the transverse determinant and leaves the longitudinal eigenvalue at $-\nu_m^{2}$, so the ghost cancels identically in every ratio of background determinants. A background sees three states and not four, and the statement is exact rather than one-loop.</p>
 <p>Adds, third, the asymmetry between the covariant and the ordinary constraint. The integral's saddle obeys the covariant condition exactly and the ordinary one only up to a bilinear term. The integral cannot prefer a condition that is not covariant, and this is why the ordinary Lorenz condition never appears as an equation of the coupled theory.</p>
 <p>Adds, fourth, the charge as a consequence of the carrier. The free field's reality is the absence of a phase; the enlarged carrier has one; the phase is the charge's coordinate. The integral's measure acquires a circle per point with unit Jacobian, and the exactness of the gauge invariance is a consequence of the measure's flatness rather than of a discretisation rule.</p>
 <p><strong>Does not add a value.</strong> The coupled equation is the standard one, the determinant factorisation is the free one with the covariant operator in place, and the one-loop effective action is the standard one.</p>
@@ -199,7 +199,7 @@ $$</p>
 </ol>
 <h2 id="summary">Summary</h2>
 <p>The coupled Proca functional integral runs over a different configuration space from the free one. The material sector is not closed, the coupling forces the carrier to $\mathbb{B}$, the measure doubles to eight real components per point, and the free integral is the real slice. That is the article's first and largest fact, and it has no counterpart in the scalar, spinor or Klein–Gordon pairs.</p>
-<p>The action is quadratic in the Proca field for a fixed connection, with the free density, a bilinear mixed term and a term quadratic in the connection; the expansion was checked to $3.6\times10^{-15}$ and the mixed term's scalar part vanishes identically. The operator is the free operator with the covariant d'Alembertian, and it splits as $((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi-k_m^{2})P_T-k_m^{2}P_L$: the coupling deforms the transverse cube and leaves the longitudinal eigenvalue at $-k_m^{2}$, so the determinant is the covariant transverse determinant cubed times the same single factor. The covariant Lorenz condition is forced exactly, because the curvature is a pure vector and has no scalar part; the ordinary condition is not, and the difference is bilinear in the connection.</p>
+<p>The action is quadratic in the Proca field for a fixed connection, with the free density, a bilinear mixed term and a term quadratic in the connection; the expansion was checked to $3.6\times10^{-15}$ and the mixed term's scalar part vanishes identically. The operator is the free operator with the covariant d'Alembertian, and it splits as $((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi-4\pi^{2}\nu_m^{2})P_T-4\pi^{2}\nu_m^{2}P_L$: the coupling deforms the transverse cube and leaves the longitudinal eigenvalue at $-\nu_m^{2}$, so the determinant is the covariant transverse determinant cubed times the same single factor. The covariant Lorenz condition is forced exactly, because the curvature is a pure vector and has no scalar part; the ordinary condition is not, and the difference is bilinear in the connection.</p>
 <p>The coupled field has a charge, because the enlarged carrier has a phase and the mass term is phase-invariant; the measure gains a circle per point with unit Jacobian, and the gauge invariance is exact at every step with no link and no ghost. The one-loop effective action is three times a charged scalar's plus a constant.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -239,11 +239,11 @@ $$</p>
 <td>Why the mixed term does not touch the constraint</td>
 </tr>
 <tr>
-<td>$P_{\mathrm{gco}}=((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2})P_T^{\mathrm{gco}}-k_m^{2}P_L^{\mathrm{gco}}$</td>
+<td>$P_{\mathrm{gco}}=((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2})P_T^{\mathrm{gco}}-4\pi^{2}\nu_m^{2}P_L^{\mathrm{gco}}$</td>
 <td>The coupled split</td>
 </tr>
 <tr>
-<td>$\det P_{\mathrm{gco}}=(\det((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2}))^{3}(-k_m^{2})$</td>
+<td>$\det P_{\mathrm{gco}}=(\det((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2}))^{3}(-4\pi^{2}\nu_m^{2})$</td>
 <td>The determinant; coupling deforms only the cube</td>
 </tr>
 <tr>
@@ -255,7 +255,7 @@ $$</p>
 <td>The gauge transformation; unit Jacobian</td>
 </tr>
 <tr>
-<td>$3\cdot\frac12\mathrm{Tr}\log((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2})$</td>
+<td>$3\cdot\frac12\mathrm{Tr}\log((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2})$</td>
 <td>The one-loop term; three times a scalar's</td>
 </tr>
 </tbody>

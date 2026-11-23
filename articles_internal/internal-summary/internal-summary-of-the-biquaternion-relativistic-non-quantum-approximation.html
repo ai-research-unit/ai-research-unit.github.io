@@ -72,11 +72,11 @@
         <h1 id="internal-summary-of-the-biquaternion-relativistic-non-quantum-approximation"><strong>Internal Summary of the Biquaternion Relativistic Non Quantum Approximation</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>What this file is.</strong> A compressed map of the category <em>Biquaternion Relativistic Non Quantum Approximation</em>, twenty-seven articles. It gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them. Every formula is copied from the source article named in the section.</p>
-<p><strong>What the category does.</strong> It takes the relativistic quantum equations and removes $\hbar$. The result is classical relativistic mechanics, classical field theory and the classical spinning particle, all in the algebra. The method is one and the same in every article: write the field in polar form, let the amplitude vary slowly, collect the leading order.</p>
-<p><strong>What the limit is, exactly.</strong> It is a limit on the gradients of the amplitude, not a limit on $\hbar$:</p>
+<p><strong>What the category does.</strong> It takes the relativistic quantum equations and removes $\frac{h}{2\pi}$. The result is classical relativistic mechanics, classical field theory and the classical spinning particle, all in the algebra. The method is one and the same in every article: write the field in polar form, let the amplitude vary slowly, collect the leading order.</p>
+<p><strong>What the limit is, exactly.</strong> It is a limit on the gradients of the amplitude, not a limit on $\frac{h}{2\pi}$:</p>
 <p>$$
-\frac{|\vec\nabla_\Phi\ln A|}{k_\Phi}\sim\epsilon,\qquad
-\frac{1}{k_\Phi^{2}}\Bigl|\frac{\Delta_\Phi A}{A}\Bigr|\sim\epsilon^{2}.
+\frac{|\vec\nabla_\Phi\ln A|}{2\pi\nu_\Phi}\sim\epsilon,\qquad
+\frac{1}{4\pi^{2}\nu_\Phi^{2}}\Bigl|\frac{\Delta_\Phi A}{A}\Bigr|\sim\epsilon^{2}.
 $$</p>
 <p>The first inequality drops the quantum term from the momentum; the second drops the quantum potential from the Hamilton–Jacobi equation. Both are needed, and the corpus states them separately each time.</p>
 <p><strong>The five menu subsections.</strong></p>
@@ -110,7 +110,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The one-sentence version.</strong> Remove $\hbar$ from the polar form and the algebra returns the classical world.</p>
+<p><strong>The one-sentence version.</strong> Remove $\frac{h}{2\pi}$ from the polar form and the algebra returns the classical world.</p>
 <h2 id="1-generalities">1. Generalities</h2>
 <p><strong>The worldline and the interval.</strong></p>
 <p>$$
@@ -142,11 +142,11 @@ $$</p>
 <p>$$
 \tilde P_\Phi=2i\frac{E}{c}\tilde\Pi_{\mathrm{id}}(-\vec u),\qquad \tilde\Pi_{\mathrm{id}}(\vec u)=\tfrac12(e_t+i\vec u).
 $$</p>
-<p><strong>The non-trivial claim.</strong> The mass is the norm, and the norm of a null momentum is zero. For the null case the mass term is not supplied by the cone: the corpus states explicitly what the cone derives (the dispersion relation at $m=0$) and what must be added (the identification of $E$ with a frequency, and therefore $\hbar$).</p>
+<p><strong>The non-trivial claim.</strong> The mass is the norm, and the norm of a null momentum is zero. For the null case the mass term is not supplied by the cone: the corpus states explicitly what the cone derives (the dispersion relation at $m=0$) and what must be added (the identification of $E$ with a frequency, and therefore $\frac{h}{2\pi}$).</p>
 <p><strong>The action, and the Hamilton–Jacobi equation.</strong></p>
 <p>$$
 S=-mc\int\sqrt{-d\tilde R_\Phi\,d\tilde R_\Phi^{\natural}},\qquad
-\tilde p\,\tilde\Xi=\bigl(\vec\nabla_\Phi S-i\hbar\vec\nabla_\Phi\ln A\bigr)\tilde\Xi,
+\tilde p\,\tilde\Xi=\bigl(\vec\nabla_\Phi S-i \frac{h}{2\pi}\vec\nabla_\Phi\ln A\bigr)\tilde\Xi,
 $$</p>
 <p>$$
 \boxed{\;\frac{E^{2}}{c^{2}}-|\vec p|^{2}=m^{2}c^{2}\;}
@@ -162,14 +162,14 @@ $$</p>
 $$</p>
 <p><strong>The non-trivial claim.</strong> The Lorentz force is a consequence of the Hamilton–Jacobi equation for a charged particle, not an independent postulate. The two invariants of the field, $\vec E^{2}-\vec B^{2}$ and $\vec E\!\cdot\!\vec B$, are the real and imaginary parts of the field norm:</p>
 <p>$$
-\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}=2\mu\,\mathrm{Re}\langle\tilde F\rangle_{\natural}.
+\sum_{{\imath},{\jmath}}F_{{\imath}{\jmath}}F_{{\imath}{\jmath}}=2{\imath}\,\mathrm{Re}\langle\tilde F\rangle_{\natural}.
 $$</p>
 <p><strong>Stress–energy and the field action.</strong></p>
 <p>$$
-S[\tilde\Xi]=\int\mathcal L\,d^{4}r,\qquad d^{4}r=c\,dr'_t\,dr_x\,dr_y\,dr_z,\qquad \sum_\mu\partial_\mu T_{\mu\nu}=0,
+S[\tilde\Xi]=\int\mathcal L\,d^{4}r,\qquad d^{4}r=c\,dr'_t\,dr_x\,dr_y\,dr_z,\qquad \sum_{\imath}\partial_{\imath} T_{{\imath}{\jmath}}=0,
 $$</p>
 <p>$$
-\boxed{\;\mathcal L_\xi=-\tfrac12\sum_\mu\partial_\mu\tilde\Xi\,\partial_\mu\tilde\Xi^{\natural}-\tfrac12k_m^{2}\tilde\Xi\tilde\Xi^{\natural}\;}
+\boxed{\;\mathcal L_\xi=-\tfrac12\sum_{\imath}\partial_{\imath}\tilde\Xi\,\partial_{\imath}\tilde\Xi^{\natural}-2\pi^{2}\nu_m^{2}\tilde\Xi\tilde\Xi^{\natural}\;}
 $$</p>
 <p><strong>The non-trivial claim.</strong> The Lagrangian is real because the two terms are self-conjugate; the Euler–Lagrange equation it produces is the Klein–Gordon equation with the sign that matches the boxed d'Alembertian. The corpus records the sign conventions in one table because they are the commonest source of error.</p>
 <p><strong>Hamiltonian field theory.</strong> The canonical momenta are the derivatives of the Lagrangian with respect to the time derivative of the field; the Hamiltonian is the Legendre transform; the Poisson bracket of two fields is the antisymmetric form on the material sector. The energy density is the $T_{tt}$ component.</p>
@@ -206,7 +206,7 @@ $$</p>
 $$</p>
 <p><strong>The classical spinning particle.</strong> The Bargmann–Michel–Telegdi equation is</p>
 <p>$$
-\boxed{\;\frac{dS_\mu}{d\tau}=\frac{ϙ}{m}\Bigl[\frac{g}{2}\sum_\nu F_{\mu\nu}S_\nu-\Bigl(\frac{g}{2}-1\Bigr)\frac{1}{c^{2}}v_\mu B\Bigr],\qquad B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu\;}
+\boxed{\;\frac{dS_{\imath}}{d\tau}=\frac{ϙ}{m}\Bigl[\frac{g}{2}\sum_{\jmath} F_{{\imath}{\jmath}}S_{\jmath}-\Bigl(\frac{g}{2}-1\Bigr)\frac{1}{c^{2}}v_{\imath} B\Bigr],\qquad B=\sum_{\lambda,{\jmath}}S_\lambda F_{\lambda{\jmath}}v_{\jmath}\;}
 $$</p>
 <p>and in the algebra</p>
 <p>$$
@@ -218,7 +218,7 @@ $$</p>
 <p><strong>The non-trivial claims, three of them.</strong> The spin is an element of the <em>informational</em> sector and it is transported by a congruence, so the spin precesses without a torque on the orbital motion. The orthogonality $\langle\tilde S_\Psi,\tilde V_\Phi\rangle=\mathrm{Sc}(\tilde S_\Psi\tilde V_\Phi^{\natural})=0$ is preserved by the flow. The value $g=2$ is the value at which the second term vanishes, so the anomalous moment is the coefficient of the only term that the algebra distinguishes.</p>
 <p><strong>The Dirac limits.</strong> The non-quantum limit of the polar Dirac equation gives the same Hamilton–Jacobi equation as the scalar case, plus a spin transport equation:</p>
 <p>$$
-\tilde\nabla_\Phi\tilde\Xi=\frac{1}{\hbar}\Bigl(\frac{\partial_tS_{\tilde\Xi}}{c}e_t+i\nabla S_{\tilde\Xi}\Bigr)\tilde\Xi+O(\epsilon).
+\tilde\nabla_\Phi\tilde\Xi=\frac{2\pi 1}{h}\Bigl(\frac{\partial_tS_{\tilde\Xi}}{c}e_t+i\nabla S_{\tilde\Xi}\Bigr)\tilde\Xi+O(\epsilon).
 $$</p>
 <p>The spin does not enter the trajectory at leading order; it enters at the next order, as the BMT equation above.</p>
 <p><strong>Source.</strong> <code>articles_physics/thomas-precession-as-a-biquaternion-rotor-effect.md</code>, <code>articles_physics/the-classical-spinning-particle-the-bargmann-michel-telegdi-equation-in-biquaternionic-form.md</code>, <code>articles_physics/the-dirac-equation-in-the-non-quantum-limit.md</code>.</p>
@@ -267,9 +267,9 @@ $$</p>
 <p>$$
 \frac{E^{2}}{c^{2}}-|\vec p|^{2}=m^{2}c^{2},\qquad
 \frac{d\vec\pi}{dt}=ϙ(\vec E+\vec v\times\vec B),\qquad
-\sum_\mu\partial_\mu T_{\mu\nu}=0 .
+\sum_{\imath}\partial_{\imath} T_{{\imath}{\jmath}}=0 .
 $$</p>
-<p><strong>Three results to keep.</strong> The mass is the norm of the four-momentum, and the null case needs $\hbar$ added from outside. Thomas precession is the non-closure of the boost subgroup, not a force. The quadrupole is the first multipole the algebra cannot index.</p>
+<p><strong>Three results to keep.</strong> The mass is the norm of the four-momentum, and the null case needs $\frac{h}{2\pi}$ added from outside. Thomas precession is the non-closure of the boost subgroup, not a force. The quadrupole is the first multipole the algebra cannot index.</p>
 <p><strong>Two refusals.</strong> The category does not derive the Lorentz force from a gauge principle; it derives it from the Hamilton–Jacobi equation of a minimally coupled particle. It does not claim that relational time is forced: it states that the algebra supplies the two clocks and one complex number, and that the identification is a reading.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -293,7 +293,7 @@ $$</p>
 <td>Hamilton's principal function</td>
 </tr>
 <tr>
-<td>$T_{\mu\nu}$</td>
+<td>$T_{{\imath}{\jmath}}$</td>
 <td>stress–energy</td>
 </tr>
 <tr>

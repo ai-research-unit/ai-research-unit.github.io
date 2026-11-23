@@ -79,14 +79,14 @@
 <p>$$
 \tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,q}{h}\tilde A_\Phi ,
 $$</p>
-<p>with $q$ the electron's charge, $q=-e<0$ in the corpus's convention, and with $\tilde A_\Phi$ central so that the derivative multiplies from either side without a choice. The field strength is $\tilde F=\frac{1}{\sqrt{\mu}}\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$ and the field term is $\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$, exactly as in the Maxwell article. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ for the matter and $\mathrm{Re}\,\mathrm{Sc}(\cdot\,\cdot)$ for the field; the measure is $\mathrm{d}^{4}r$; $k_m=\frac{2\pi mc}{h}$.</p>
+<p>with $q$ the electron's charge, $q=-e<0$ in the corpus's convention, and with $\tilde A_\Phi$ central so that the derivative multiplies from either side without a choice. The field strength is $\tilde F=\frac{1}{\sqrt{\mu}}\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$ and the field term is $\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$, exactly as in the Maxwell article. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ for the matter and $\mathrm{Re}\,\mathrm{Sc}(\cdot\,\cdot)$ for the field; the measure is $\mathrm{d}^{4}r$; $\nu_m=\frac{mc}{h}$.</p>
 <h2 id="the-action-in-element-form">The Action in Element Form</h2>
 <p><strong>One functional, three terms, and no new constant.</strong></p>
 <p>$$
 S=\int\mathrm{d}^{4}r\;\Bigl\{
 \mathrm{Sc}\bigl[\tilde\Xi_R^{*}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_L\bigr]
 +\mathrm{Sc}\bigl[\tilde\Xi_L^{*}\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_R\bigr]
--k_m\,\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\tilde\Xi_L+\tilde\Xi_L^{*}\tilde\Xi_R\bigr]\,i\vec v
+-2\pi\nu_m\,\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\tilde\Xi_L+\tilde\Xi_L^{*}\tilde\Xi_R\bigr]\,i\vec v
 +\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)\Bigr\},
 $$</p>
 <p>with $\vec v$ the fixed spin direction that the mass bilinear needs and that the Dirac companion derives, and with the first two terms the Dirac kinetic term split into its two parts.</p>
@@ -96,9 +96,9 @@ $$</p>
 <h2 id="the-variation">The Variation</h2>
 <p>Three variations, two equations, one identity. Varying the two parts of the Dirac field gives the coupled pair</p>
 <p>$$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_L=k_m\tilde\Xi_R ,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R ,
 \qquad
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_R=k_m\tilde\Xi_L ,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L ,
 $$</p>
 <p>and their conjugates. Varying the connection gives</p>
 <p>$$
@@ -131,7 +131,7 @@ $$</p>
 <p>Why the current is the source. The connection multiplies the current in the action, so the connection's variation returns the current; the matter equation's phase symmetry conserves the same bilinear. That is the classical statement of what a quantised theory would call the Ward identity's ancestor: the source of the field is the Noether current of the symmetry that the field gauges.</p>
 <p>What the claim forbids. It forbids a second coupling constant, an arbitrary axial admixture, or a contact term between the two fields: each would break one of the three appearances of $q$. The corpus can therefore say that classical QED has one parameter, and it can say why.</p>
 <h2 id="the-noether-currents-and-the-sign-of-the-charge">The Noether Currents and the Sign of the Charge</h2>
-<p><strong>Three currents, and only one of them is conserved when the mass is present.</strong> The vector current $J_{\imath}=q\bar\Xi\gamma_{\imath}\Xi$ in the flat language, $J_{t}=q\rho_{\mathrm{chg}}$ and $\vec J=q\rho_{\mathrm{chg}}\vec v$ in the chart, is conserved by the local phase symmetry. The axial current is conserved only at $k_m=0$: the mass term converts one chirality into the other and breaks the axial conservation explicitly. The energy–momentum is conserved by translation invariance and is the sum of the matter's stress and the field's.</p>
+<p><strong>Three currents, and only one of them is conserved when the mass is present.</strong> The vector current $J_{\imath}=q\bar\Xi\gamma_{\imath}\Xi$ in the flat language, $J_{t}=q\rho_{\mathrm{chg}}$ and $\vec J=q\rho_{\mathrm{chg}}\vec v$ in the chart, is conserved by the local phase symmetry. The axial current is conserved only at $\nu_m=0$: the mass term converts one chirality into the other and breaks the axial conservation explicitly. The energy–momentum is conserved by translation invariance and is the sum of the matter's stress and the field's.</p>
 <p>The sign. The charge's sign is the sign of $q$, fixed once in the conventions as $q=-e$ for the electron; the density $\rho_{\mathrm{chg}}$ is positive. So the electron's $J^{t}$ is negative and the positron's is positive, and the sign convention is the same one the Maxwell article uses for the source.</p>
 <p>What the mass term does. It breaks the axial current and leaves the vector current alone. That asymmetry is the classical shadow of the axial anomaly discussion elsewhere in the corpus, and it is worth stating here because it is a property of the action and not of a quantisation: the mass term is the only term that couples the two chiralities, so it is the only term that can fail to commute with the axial rotation.</p>
 <p>The stress. Its temporal component is $\tfrac12(\epsilon\vec E^{2}+\vec B^{2}/\mu)$ plus the Dirac field's energy. The two add without a cross term in the constant setting, because the field's energy is quadratic in $\vec F$ and the matter's is quadratic in the field; the cross terms are the interaction's energy and they are what the coupling contributes.</p>
@@ -142,7 +142,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>QED's classical content is one action: the Dirac action with the covariant derivative, plus the Maxwell term, with one constant appearing in the derivative, the current and the gauge shift. Its variations give the coupled Dirac equation and the inhomogeneous Maxwell equation, and the scalar part of the second is the continuity equation for the first. The vector current is conserved, the axial one is broken by the mass, and the stress is positive. Nothing in the article quantises anything, and that is its subject as much as its content.</p>
 <p>$$
-S=\int\mathrm{d}^{4}r\;\Bigl\{\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_L\bigr]+\mathrm{Sc}\bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_R\bigr]-k_m\,\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\tilde\Xi_L+\tilde\Xi_L^{*}\tilde\Xi_R\bigr]i\vec v+\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)\Bigr\}.
+S=\int\mathrm{d}^{4}r\;\Bigl\{\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_L\bigr]+\mathrm{Sc}\bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_R\bigr]-2\pi\nu_m\,\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\tilde\Xi_L+\tilde\Xi_L^{*}\tilde\Xi_R\bigr]i\vec v+\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)\Bigr\}.
 $$</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -194,7 +194,7 @@ $$</p>
 <td>Fixed spin direction of the mass bilinear</td>
 </tr>
 <tr>
-<td>$k_m=\frac{2\pi mc}{h}$</td>
+<td>$\nu_m=\frac{mc}{h}$</td>
 <td>Mass wave number</td>
 </tr>
 <tr>

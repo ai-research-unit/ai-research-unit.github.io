@@ -125,20 +125,20 @@
 <p><strong>The one-sentence version.</strong> The Schrödinger equation is the statement that the time derivative of the field is a material-sector element acting on it, and every quantum-information fact of one qubit is a statement about the ball.</p>
 <h2 id="1-generalities">1. Generalities</h2>
 <p><strong>The double slit</strong> is the interference of two idempotents: the two paths contribute two elements, and the intensity is the Hermitian pairing of their sum. The pattern is the cross term. The article states that the algebraic content is the same as the Hilbert-space content, and that no path information is available when the two contributions remain coherent.</p>
-<p><strong>The quantum–classical divide</strong> is the boundary of the ball. The pure states are $|\vec s_\Psi|=1$; the classical states are the centre $\vec s_\Psi=0$. Nothing in between is classical, and the corpus refuses the reading of $\hbar\to0$ as the definition of classicality: the limit that produces classical mechanics is the one of the next section, and it is a limit on the <em>phase gradient</em>, not on $\hbar$.</p>
+<p><strong>The quantum–classical divide</strong> is the boundary of the ball. The pure states are $|\vec s_\Psi|=1$; the classical states are the centre $\vec s_\Psi=0$. Nothing in between is classical, and the corpus refuses the reading of $h\to0$ as the definition of classicality: the limit that produces classical mechanics is the one of the next section, and it is a limit on the <em>phase gradient</em>, not on $\frac{h}{2\pi}$.</p>
 <p><strong>The commutation relation is an axiom.</strong> The corpus does not derive</p>
 <p>$$
-[r_j,p_\eta]=i\hbar\,\delta_{j\eta}
+[r_j,p_\eta]=i \frac{h}{2\pi}\,\delta_{j\eta}
 $$</p>
-<p>from the algebra. It states it as an independent axiom, and it records why: the algebra supplies the generators and the products, but the identification of the position with a multiplication operator and of the momentum with a derivative is a further step. The imaginary unit in $i\hbar$ is the central one, and it is what makes the commutator anti-Hermitian and the group unitary.</p>
+<p>from the algebra. It states it as an independent axiom, and it records why: the algebra supplies the generators and the products, but the identification of the position with a multiplication operator and of the momentum with a derivative is a further step. The imaginary unit in $i \frac{h}{2\pi}$ is the central one, and it is what makes the commutator anti-Hermitian and the group unitary.</p>
 <p><strong>Source.</strong> <code>articles_physics/the-double-slit-experiment-in-biquaternionic-form.md</code>, <code>articles_physics/the-quantum-classical-divide-in-the-biquaternion-framework.md</code>, <code>articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-an-independent-axiom.md</code>.</p>
 <h2 id="2-spin-zero-the-schrodinger-equation">2. Spin Zero: the Schrödinger Equation</h2>
 <p><strong>The equation, and the direction of the generator.</strong></p>
 <p>$$
-i\hbar c\,\frac{\partial}{\partial r'_t}\tilde\Xi=\tilde H_\Psi\tilde\Xi,\qquad \tilde H_\Psi=h_t\,e_t+i\vec h_\Psi\in\mathbb{B}_{\Psi},\qquad \tilde\Xi\in\mathbb{B}.
+i \frac{h}{2\pi} c\,\frac{\partial}{\partial r'_t}\tilde\Xi=\tilde H_\Psi\tilde\Xi,\qquad \tilde H_\Psi=h_t\,e_t+i\vec h_\Psi\in\mathbb{B}_{\Psi},\qquad \tilde\Xi\in\mathbb{B}.
 $$</p>
 <p>$$
-\frac{\partial}{\partial r'_t}\tilde\Xi=\frac{1}{\hbar c}\bigl(-i\tilde H_\Psi\bigr)\tilde\Xi,\qquad -i\tilde H_\Psi\in\mathbb{B}_{\Phi}.
+\frac{\partial}{\partial r'_t}\tilde\Xi=\frac{2\pi 1}{h c}\bigl(-i\tilde H_\Psi\bigr)\tilde\Xi,\qquad -i\tilde H_\Psi\in\mathbb{B}_{\Phi}.
 $$</p>
 <p><strong>The non-trivial claim.</strong> The Hamiltonian is informational and the generator of time translation is material: $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$. The factor $i$ moves the element between the sectors, and this is why the time evolution is a one-parameter family of congruences and not a one-parameter family of multiplications.</p>
 <p>The multiplication by $i$ is $\mathbb{C}$-linear and swaps the sectors:</p>
@@ -162,12 +162,12 @@ $$</p>
 <p><strong>The non-trivial claim.</strong> The counting density and the algebraic density are different functions of the same field: one is $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$, the other is $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. An agent that normalises with the norm produces a non-conserved probability.</p>
 <p><strong>The non-quantum limit.</strong> The momentum acts as a phase gradient plus a quantum term:</p>
 <p>$$
-\tilde p\,\tilde\Xi=\Bigl[\vec\nabla_\Phi S-i\hbar\,\vec\nabla_\Phi\ln\varrho\Bigr]\tilde\Xi,
+\tilde p\,\tilde\Xi=\Bigl[\vec\nabla_\Phi S-i \frac{h}{2\pi}\,\vec\nabla_\Phi\ln\varrho\Bigr]\tilde\Xi,
 $$</p>
 <p>and the limit is the pair of conditions</p>
 <p>$$
-\frac{|\hbar\vec\nabla_\Phi\ln\varrho|}{|\vec\nabla_\Phi S|}\sim\epsilon,\qquad
-\frac{1}{k_\Phi^{2}}\Bigl|\frac{\Delta_\Phi\varrho}{\varrho}\Bigr|\sim\epsilon,
+\frac{|h\vec\nabla_\Phi\ln\varrho|}{2\pi |\vec\nabla_\Phi S|}\sim\epsilon,\qquad
+\frac{1}{4\pi^{2}\nu_\Phi^{2}}\Bigl|\frac{\Delta_\Phi\varrho}{\varrho}\Bigr|\sim\epsilon,
 $$</p>
 <p>which give the Hamilton–Jacobi equation and the continuity equation:</p>
 <p>$$
@@ -178,11 +178,11 @@ $$</p>
 \frac{d\vec r}{dt'}=\frac{\vec p}{m},\qquad \frac{d\vec p}{dt'}=-\vec\nabla_\Phi V,\qquad
 \varrho(x)=\frac{C}{\sqrt{|p(x)|}} .
 $$</p>
-<p><strong>The non-trivial claim.</strong> The classical limit is a limit on the <em>gradient of the phase</em>, not on $\hbar$. The amplitude equation survives as the continuity equation, with the correct $1/\sqrt{p}$ focusing factor. The corpus keeps the quantum potential in the exact equation and drops it only under these two inequalities.</p>
+<p><strong>The non-trivial claim.</strong> The classical limit is a limit on the <em>gradient of the phase</em>, not on $\frac{h}{2\pi}$. The amplitude equation survives as the continuity equation, with the correct $1/\sqrt{p}$ focusing factor. The corpus keeps the quantum potential in the exact equation and drops it only under these two inequalities.</p>
 <p><strong>The kinetic momentum, and the bracket that does not close.</strong></p>
 <p>$$
 \pi_\eta=p_\eta-ϙA_\eta,\qquad
-[\pi_j,\pi_\eta]=i\hbar\,ϙ\,\varepsilon_{j\eta l}B_l .
+[\pi_j,\pi_\eta]=i \frac{h}{2\pi}\,ϙ\,\varepsilon_{j\eta l}B_l .
 $$</p>
 <p>$$
 \vec L_{\mathrm{kin}}=\vec L_{\mathrm{orb}}-ϙ\,\vec r\times\vec A,\qquad
@@ -198,11 +198,11 @@ $$</p>
 \langle\tilde H_\Psi\rangle_{\tilde\Pi_{\mathrm{id}}}=\frac{\langle\tilde\Pi_{\mathrm{id}},\tilde H_\Psi\rangle_{*}}{\langle\tilde\Pi_{\mathrm{id}},e_t\rangle_{*}}=2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*}\bigr).
 $$</p>
 <p><strong>Stern–Gerlach.</strong> The beam splitter is the pair of idempotents along the field axis; the two beams have intensities $p_\pm$ and the post-measurement states are the two idempotents. Nothing else is needed.</p>
-<p><strong>Precession and resonance.</strong> The evolution is the congruence by $\exp(-i\tilde H_\Psi t'/\hbar)$:</p>
+<p><strong>Precession and resonance.</strong> The evolution is the congruence by $\exp(-\frac{2\pi i\tilde H_\Psi t'}{h})$:</p>
 <p>$$
-\tilde Q(t')=\exp\Bigl(-i\frac{\tilde H_\Psi t'}{\hbar}\Bigr)
-=\exp\Bigl(-i\frac{h_t t'}{\hbar}\Bigr)\bigl(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi\bigr),\qquad
-\theta=\frac{|\vec h_\Psi|\,t'}{\hbar}.
+\tilde Q(t')=\exp\Bigl(-i\frac{2\pi \tilde H_\Psi t'}{h}\Bigr)
+=\exp\Bigl(-i\frac{2\pi h_t t'}{h}\Bigr)\bigl(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi\bigr),\qquad
+\theta=\frac{2\pi |\vec h_\Psi|\,t'}{h}.
 $$</p>
 <p>Rabi oscillations are the same formula with a time-dependent $\vec h_\Psi$; the resonance condition is the equality of the Larmor frequency and the drive frequency.</p>
 <p><strong>Zeeman and Stark.</strong> The Zeeman term is a linear shift in $\vec h_\Psi$ along the field; the Stark term is the same with the electric field, and the quadratic part is the induced dipole.</p>
@@ -218,7 +218,7 @@ $$</p>
 $$</p>
 <p><strong>The non-trivial claim.</strong> The Berry connection vanishes identically on the idempotent:</p>
 <p>$$
-2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id}}\,\partial_\mu\tilde\Pi_{\mathrm{id}}\bigr)=0\qquad\text{for every parameter,}
+2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id}}\,\partial_{\imath}\tilde\Pi_{\mathrm{id}}\bigr)=0\qquad\text{for every parameter,}
 $$</p>
 <p>so the geometric phase is carried by the <em>frame</em> and not by the state. The parameter space of the two-level Hamiltonian is a two-sphere, and the phase is the solid angle.</p>
 <p><strong>The Majorana representation.</strong> The spinor is a polynomial in one complex variable, and its roots are the star points:</p>
@@ -238,20 +238,20 @@ $$</p>
 <h2 id="4-spin-one-and-above">4. Spin One and Above</h2>
 <p><strong>The generators and their ladder operators.</strong></p>
 <p>$$
-\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta,\qquad
-\tilde S_{\Psi,\pm}=\frac{\hbar}{2}\bigl(i\vec e_x\mp\vec e_y\bigr),
+\tilde S_{\Psi,\eta}=\frac{h}{4\pi}i\vec e_\eta,\qquad
+\tilde S_{\Psi,\pm}=\frac{h}{4\pi}\bigl(i\vec e_x\mp\vec e_y\bigr),
 $$</p>
 <p>$$
-\tilde S_{\Psi,\pm}^{2}=0,\qquad \langle\tilde S_{\Psi,\pm}\rangle_{\natural}=0,\qquad \tilde S_\Psi^{2}=\tfrac34\hbar^{2}e_t .
+\tilde S_{\Psi,\pm}^{2}=0,\qquad \langle\tilde S_{\Psi,\pm}\rangle_{\natural}=0,\qquad \tilde S_\Psi^{2}=\tfrac34\frac{h^{2}}{4\pi^{2}}e_t .
 $$</p>
 <p><strong>The non-trivial claim.</strong> The ladder operators are nilpotent and null. They are not observables and they have no norm; they are the two null directions of the spin algebra. This is why the raising and lowering cannot be read as physical transitions without a state to act on.</p>
 <p><strong>Addition of angular momenta.</strong> The total generators close on the same table:</p>
 <p>$$
-[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}]=i\hbar\,\epsilon_{ij\eta}\tilde S_{\Psi,\mathrm{tot},\eta},
+[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}]=i \frac{h}{2\pi}\,\epsilon_{ij\eta}\tilde S_{\Psi,\mathrm{tot},\eta},
 $$</p>
 <p>$$
 \tilde S_{\Psi,\mathrm{tot},\pm}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle
-=\hbar\sqrt{(s_{\mathrm{tot}}\mp s_{\mathrm{tot},z})(s_{\mathrm{tot}}\pm s_{\mathrm{tot},z}+1)}\;|s_{\mathrm{tot}},s_{\mathrm{tot},z}\pm1\rangle .
+=\frac{h}{2\pi}\sqrt{(s_{\mathrm{tot}}\mp s_{\mathrm{tot},z})(s_{\mathrm{tot}}\pm s_{\mathrm{tot},z}+1)}\;|s_{\mathrm{tot}},s_{\mathrm{tot},z}\pm1\rangle .
 $$</p>
 <p>The Clebsch–Gordan coefficients of two spin-$\tfrac12$ are the entries of the two-spin basis change; the singlet is</p>
 <p>$$
@@ -260,10 +260,10 @@ $$</p>
 <p><strong>The generalised Bloch ball for spin 1.</strong></p>
 <p>$$
 \tilde F_\eta=\tilde S_{\Psi,\eta}^{(1)}+\tilde S_{\Psi,\eta}^{(2)}
-=\frac{\hbar}{2}\bigl(i\vec e_\eta\otimes e_t+e_t\otimes i\vec e_\eta\bigr),
+=\frac{h}{4\pi}\bigl(i\vec e_\eta\otimes e_t+e_t\otimes i\vec e_\eta\bigr),
 $$</p>
 <p>$$
-[F_i,F_j]=i\hbar\,\epsilon_{ij\eta}F_\eta,\qquad F_1^{2}+F_2^{2}+F_3^{2}=2\hbar^{2}I_3 .
+[F_i,F_j]=i \frac{h}{2\pi}\,\epsilon_{ij\eta}F_\eta,\qquad F_1^{2}+F_2^{2}+F_3^{2}=2\frac{h^{2}}{4\pi^{2}}I_3 .
 $$</p>
 <p><strong>The qutrit obstruction, and it is the sharpest statement of the category.</strong></p>
 <p>$$
@@ -332,7 +332,7 @@ $$</p>
 <tbody>
 <tr>
 <td>Schrödinger</td>
-<td>$i\hbar c\,\partial_{r'_t}\tilde\Xi=\tilde H_\Psi\tilde\Xi$</td>
+<td>$i \frac{h}{2\pi} c\,\partial_{r'_t}\tilde\Xi=\tilde H_\Psi\tilde\Xi$</td>
 </tr>
 <tr>
 <td>generator, in the material sector</td>
@@ -365,7 +365,7 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>Four results to keep.</strong> The time-translation generator is material and the Hamiltonian is informational. The polar form exists exactly on the invertible elements. The von Neumann entropy is a function of the norm, and the norm vanishes on the pure states. Spin 1 sits in $\mathbb{B}$ and spin 1 <em>as a qutrit</em> does not.</p>
-<p><strong>Three refusals.</strong> The category does not derive the commutation relation; it axiomatises it. It does not define classicality by $\hbar\to0$. It does not claim that decoherence solves the measurement problem; it relocates the information.</p>
+<p><strong>Three refusals.</strong> The category does not derive the commutation relation; it axiomatises it. It does not define classicality by $h\to0$. It does not claim that decoherence solves the measurement problem; it relocates the information.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

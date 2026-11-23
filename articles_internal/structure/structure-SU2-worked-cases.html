@@ -91,7 +91,7 @@ $$</p>
 <tr>
 <td>$L_{\mathrm{axf}}(\tilde u)$</td>
 <td>$4\times4$ complex</td>
-<td>left multiplication in the coefficient basis, columns $\tilde u e_\nu$</td>
+<td>left multiplication in the coefficient basis, columns $\tilde u e_{\jmath}$</td>
 </tr>
 <tr>
 <td>$\mathrm{Ad}_{\tilde u}$</td>
@@ -110,7 +110,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The Conway array is the fifth reading: the coefficients $c_{\mu\nu}$ in $\mathrm{Ad}_{\tilde u}=\sum c_{\mu\nu}e_\mu[\,]e_\nu$, of rank the length $\ell$. The first two arrays are different matrices of related operators; the third is the block that makes the rotation; the fourth is the element itself. <strong>A matrix carries no tilde</strong>: the array is $L_{\mathrm{axf}}(\tilde u)$, the operator is $L_{\tilde u}$.</p>
+<p>The Conway array is the fifth reading: the coefficients $c_{{\imath}{\jmath}}$ in $\mathrm{Ad}_{\tilde u}=\sum c_{{\imath}{\jmath}}e_{\imath}[\,]e_{\jmath}$, of rank the length $\ell$. The first two arrays are different matrices of related operators; the third is the block that makes the rotation; the fourth is the element itself. <strong>A matrix carries no tilde</strong>: the array is $L_{\mathrm{axf}}(\tilde u)$, the operator is $L_{\tilde u}$.</p>
 <p><strong>The cases at a glance.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -203,7 +203,7 @@ $$</p>
 <p>$$
 \theta=\tfrac{\pi}{2},\qquad \tilde u=\cos\tfrac{\pi}{4}\,e_t+\sin\tfrac{\pi}{4}\,\vec e_z=\tfrac{1}{\sqrt2}\bigl(e_t+\vec e_z\bigr).
 $$</p>
-<p><strong>The axis-free display.</strong> The columns are the four products $\tilde u e_\nu$:</p>
+<p><strong>The axis-free display.</strong> The columns are the four products $\tilde u e_{\jmath}$:</p>
 <p>$$
 L_{\mathrm{axf}}(\tilde u)=\tfrac{1}{\sqrt2}
 \begin{pmatrix}
@@ -214,7 +214,7 @@ L_{\mathrm{axf}}(\tilde u)=\tfrac{1}{\sqrt2}
 \end{pmatrix}.
 $$</p>
 <p>Checks: $L^{\mathsf T}L=\mathrm I_4$ to $1.0\times10^{-17}$, $\det L=1$, $\operatorname{tr}L=2\sqrt2=4\cos\tfrac{\pi}{4}$, and the eigenvalues are $e^{\pm i\pi/4}$, each twice. The matrix is real orthogonal, of determinant one: for a real unit $\tilde u$, $L_{\mathrm{axf}}(\tilde u)$ lies in $SO(4)$.</p>
-<p><strong>The right display.</strong> The same element on the other side, columns $\vec e_\nu\tilde u$:</p>
+<p><strong>The right display.</strong> The same element on the other side, columns $\vec e_{\jmath}\tilde u$:</p>
 <p>$$
 R_{\mathrm{axf}}(\tilde u)=\tfrac{1}{\sqrt2}
 \begin{pmatrix}
@@ -243,14 +243,14 @@ M_2(\tilde u)=\cos\tfrac{\pi}{4}\,\mathrm I_2-i\sin\tfrac{\pi}{4}\,\sigma_3
 =\operatorname{diag}\bigl(e^{-i\pi/4},\,e^{i\pi/4}\bigr),
 $$</p>
 <p>unitary of determinant one: the matrix of the element, and not of an operator on it.</p>
-<p><strong>The Conway array.</strong> Solving $\mathrm{Ad}_{\tilde u}=\sum c_{\mu\nu}e_\mu[\,]e_\nu$ over the sixteen words gives four non-zero entries, $c_{\mu\nu}=u_\mu u^{\natural}_{\nu}$ with $u^{\natural}=\tfrac{1}{\sqrt2}(1,0,0,-1)$:</p>
+<p><strong>The Conway array.</strong> Solving $\mathrm{Ad}_{\tilde u}=\sum c_{{\imath}{\jmath}}e_{\imath}[\,]e_{\jmath}$ over the sixteen words gives four non-zero entries, $c_{{\imath}{\jmath}}=u_{\imath} u^{\natural}_{{\jmath}}$ with $u^{\natural}=\tfrac{1}{\sqrt2}(1,0,0,-1)$:</p>
 <p>$$
 c=\tfrac12
 \begin{pmatrix}1&0&0&-1\\0&0&0&0\\0&0&0&0\\1&0&0&-1\end{pmatrix},
 \qquad\text{that is}\qquad
 \mathrm{Ad}_{\tilde u}=\tfrac12\bigl(e_t[\,]e_t-e_t[\,]e_z+e_z[\,]e_t-e_z[\,]e_z\bigr),
 $$</p>
-<p>of rank one. The conjugation by a unit is one word, $\mathrm{Sd}_{\tilde u}=L_{\tilde u}R_{\tilde u^{\natural}}$, and its length is one. The left copy is one word as well, the trivial one, $L_{\tilde u}=\tilde u[\,]e_t$, with Conway array $c_{\mu\nu}=u_\mu\delta_{\nu 0}$: a single non-zero column.</p>
+<p>of rank one. The conjugation by a unit is one word, $\mathrm{Sd}_{\tilde u}=L_{\tilde u}R_{\tilde u^{\natural}}$, and its length is one. The left copy is one word as well, the trivial one, $L_{\tilde u}=\tilde u[\,]e_t$, with Conway array $c_{{\imath}{\jmath}}=u_{\imath}\delta_{{\jmath} 0}$: a single non-zero column.</p>
 <p><strong>The lesson.</strong> One element, four arrays of sizes $4\times4$, $4\times4$, $3\times3$ and $2\times2$, and every one of them has length one. Nothing in this note ever leaves the length-one stratum, and that is the structural difference from the $\mathrm{SU}(3)$ note, where only a three-dimensional subgroup did.</p>
 <h2 id="2-case-1-the-axial-matrix-and-the-two-sides-of-one-rotor">2. Case 1: The Axial Matrix, and the Two Sides of One Rotor</h2>
 <p><strong>The element.</strong> Let $c=\cos\tfrac{\varphi}{2}$ and $s=\sin\tfrac{\varphi}{2}$, and let $\vec n$ be a real unit vector. The rotor is $\tilde u=c\,e_t+s\,\vec n$.</p>
@@ -485,7 +485,7 @@ $$</p>
 \begin{pmatrix}1&0&0&0\\0&0&1&0\\0&0&0&1\\0&1&0&0\end{pmatrix},
 $$</p>
 <p>with the cube the identity to $7\times10^{-16}$: the cycle $\vec e_x\mapsto\vec e_y\mapsto\vec e_z\mapsto\vec e_x$, of order three, eigenvalues $1,1,\omega,\omega^{2}$ with $\omega=e^{2\pi i/3}$.</p>
-<p><strong>The Conway array.</strong> Since $\mathrm{Ad}_{\tilde u}=L_{\tilde u}R_{\tilde u^{\natural}}$ and $\tilde u^{\natural}$ has the three vector signs reversed, $c_{\mu\nu}=\pm\tfrac14$ and all sixteen entries are non-zero:</p>
+<p><strong>The Conway array.</strong> Since $\mathrm{Ad}_{\tilde u}=L_{\tilde u}R_{\tilde u^{\natural}}$ and $\tilde u^{\natural}$ has the three vector signs reversed, $c_{{\imath}{\jmath}}=\pm\tfrac14$ and all sixteen entries are non-zero:</p>
 <p>$$
 c=\tfrac14
 \begin{pmatrix}
@@ -787,7 +787,7 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The one fact to keep.</strong> The length-one stratum is the <strong>whole</strong> of this note: every one-sided multiplication is a single word by construction, and every conjugation by a unit is a single word because the unit is its own inverse up to the natural conjugation. In the $\mathrm{SU}(3)$ note the length-one stratum was a three-dimensional subgroup of an eight-dimensional group; here there is nothing outside it. The reason is structural: $\mathrm{SU}(2)$ is the group <em>of the algebra's own units</em>, so its operators are words, whereas five of the eight $\mathrm{SU}(3)$ directions have no biquaternion behind them and are the ones of length four.</p>
-<p><strong>The one length that is not one.</strong> The derivations are two words: $\mathrm{ad}_{\vec e_k}=L_{\vec e_k}-R_{\vec e_k}$ has Conway array $c_{\mu\nu}=\delta_{\mu k}\delta_{\nu 0}-\delta_{\mu 0}\delta_{\nu k}$, of rank two. Conjugating that operator by a rotor keeps the length at two, because an automorphism permutes the sixteen words and cannot change a rank: verified on the rotor of §11, whose conjugate of $\mathrm{ad}_{\vec e_z}$ has Conway array of rank two.</p>
+<p><strong>The one length that is not one.</strong> The derivations are two words: $\mathrm{ad}_{\vec e_k}=L_{\vec e_k}-R_{\vec e_k}$ has Conway array $c_{{\imath}{\jmath}}=\delta_{{\imath} k}\delta_{{\jmath} 0}-\delta_{{\imath} 0}\delta_{{\jmath} k}$, of rank two. Conjugating that operator by a rotor keeps the length at two, because an automorphism permutes the sixteen words and cannot change a rank: verified on the rotor of §11, whose conjugate of $\mathrm{ad}_{\vec e_z}$ has Conway array of rank two.</p>
 <h2 id="16-what-the-cases-establish">16. What the Cases Establish</h2>
 <p><strong>The pattern.</strong> Reading the cases together:</p>
 <ol>

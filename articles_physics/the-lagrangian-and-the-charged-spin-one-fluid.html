@@ -77,13 +77,13 @@
 <p><em>Third, the mass term is coupling-blind, so the four statements it carried at the free rung become three.</em> It still removes the field's own shift freedom, still supplies the condition, still fixes the pressure to a constant. What it can no longer do is make that condition a conservation law.</p>
 <p>Position in the block. This is the variational companion of <a href="the-charged-spin-one-fluid.html">The Charged Spin-One Fluid</a> and the eighth and last of the articles of this layer. It is the only one in which the coupling degrades a statement rather than adding a force, and the only one in which the free rung's cleanest result is lost.</p>
 <h2 id="conventions">Conventions</h2>
-<p>The conventions are restated here so that every sign below is checkable from this page alone. $A_{\imath}$ is complex, $F_{\imath\jmath}=D_{\imath} A_{\jmath}-D_{\jmath} A_{\imath}$, $D_{\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A^{\mathrm{ext}}_{\imath}$, $k_m=\frac{2\pi mc}{h}$; $\mathcal L=-\frac14\sum_{\imath,\jmath}F^{*}_{\imath\jmath}F_{\imath\jmath}-\frac{k_m^{2}}{2}\sum_{\imath}\varepsilon_{\imath} A^{*}_{\imath} A_{\imath}$ in the corpus's signs, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; <a href="the-charged-spin-one-fluid.html">The Charged Spin-One Fluid</a> records the doubling and this article does not re-derive it.</p>
+<p>The conventions are restated here so that every sign below is checkable from this page alone. $A_{\imath}$ is complex, $F_{\imath\jmath}=D_{\imath} A_{\jmath}-D_{\jmath} A_{\imath}$, $D_{\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A^{\mathrm{ext}}_{\imath}$, $\nu_m=\frac{mc}{h}$; $\mathcal L=-\frac14\sum_{\imath,\jmath}F^{*}_{\imath\jmath}F_{\imath\jmath}-\frac{4\pi^{2}\nu_m^{2}}{2}\sum_{\imath}\varepsilon_{\imath} A^{*}_{\imath} A_{\imath}$ in the corpus's signs, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; <a href="the-charged-spin-one-fluid.html">The Charged Spin-One Fluid</a> records the doubling and this article does not re-derive it.</p>
 <h2 id="the-action-in-the-fluid-variables">The Action in the Fluid Variables</h2>
 <p>The derivative term is rebuilt and the algebraic term is not.</p>
 <p>$$
-\mathcal L=-\frac{1}{4}\sum_{\imath,\jmath}F^{*}_{\imath\jmath}F_{\imath\jmath}-\frac{k_m^{2}}{2}\lvert A\rvert^{2}
+\mathcal L=-\frac{1}{4}\sum_{\imath,\jmath}F^{*}_{\imath\jmath}F_{\imath\jmath}-\frac{4\pi^{2}\nu_m^{2}}{2}\lvert A\rvert^{2}
 \;\longrightarrow\;
-\mathcal L_{\mathrm{gco}}=-\frac{1}{4}F^{\mathrm{gco}*}_{\imath\jmath}F^{\mathrm{gco}}_{\imath\jmath}-\frac{k_m^{2}}{2}\lvert A\rvert^{2},
+\mathcal L_{\mathrm{gco}}=-\frac{1}{4}F^{\mathrm{gco}*}_{\imath\jmath}F^{\mathrm{gco}}_{\imath\jmath}-\frac{4\pi^{2}\nu_m^{2}}{2}\lvert A\rvert^{2},
 \qquad
 F^{\mathrm{gco}}_{\imath\jmath}=D_{\imath} A_{\jmath}-D_{\jmath} A_{\imath} .
 $$</p>
@@ -102,9 +102,9 @@ $$</p>
 <h2 id="the-constraints-the-action-imposes-the-lorenz-condition-ceases-to-be-continuity">The Constraints the Action Imposes: The Lorenz Condition Ceases to Be Continuity</h2>
 <p>Taking the covariant divergence of the field equation,</p>
 <p>$$
-\sum_{\jmath}\varepsilon_{\jmath} D_{\jmath} F_{\mathrm{gco},\jmath\imath}=k_m^{2}A_{\imath}
+\sum_{\jmath}\varepsilon_{\jmath} D_{\jmath} F_{\mathrm{gco},\jmath\imath}=4\pi^{2}\nu_m^{2}A_{\imath}
 \qquad\Longrightarrow\qquad
-0=\sum_{\jmath}\varepsilon_{\jmath} D_{\imath} D_{\jmath} F_{\mathrm{gco},\jmath\imath}=k_m^{2}\,\sum_{\imath}\varepsilon_{\imath} D_{\imath} A_{\imath},
+0=\sum_{\jmath}\varepsilon_{\jmath} D_{\imath} D_{\jmath} F_{\mathrm{gco},\jmath\imath}=4\pi^{2}\nu_m^{2}\,\sum_{\imath}\varepsilon_{\imath} D_{\imath} A_{\imath},
 $$</p>
 <p>the first equality being the antisymmetry of $F$ and the second the field equation. So the condition is $\sum_{\imath}\varepsilon_{\imath} D_{\imath} A_{\imath}=0$, exactly as at the free rung with $\partial\to D$.</p>
 <p>Written with the ordinary divergence, the condition has a source.</p>
@@ -120,9 +120,9 @@ $$</p>
 <p><em>The count of equations changes in one place.</em> The free rung had four field components, four equations, and one of them a consequence of the others through an identity. The charged rung has the same four and the same identity, and the consequence is now a condition with a source rather than a conservation law. The count is the same and the content is not.</p>
 <h2 id="the-structural-consequence-what-the-mass-term-still-does">The Structural Consequence: What the Mass Term Still Does</h2>
 <p>Three statements, and each is unchanged.</p>
-<p><em>It removes the field's own shift freedom.</em> $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Gamma$ is not a symmetry of $\mathcal L_{\mathrm{gco}}$ at $k_m\ne0$, because $\lvert A\rvert^{2}$ is not invariant; and the coupling does not restore it, because $D\partial\Gamma\ne\partial$ unless $\Gamma$ is constant in the gauge-covariant sense.</p>
-<p><em>It supplies the condition.</em> The derivation above uses the mass term's coefficient: with $k_m=0$ the identity $\partial\partial F=0$ stands alone and says nothing about $A$.</p>
-<p><em>It fixes the stiffness.</em> The algebraic term is $\frac{k_m^{2}}{2}\lvert A\rvert^{2}$, and the pressure is read off it as at the free rung: energy density and pressure are equal, $\epsilon=p=\frac{k_m^{2}}{2}r^{2}$. <strong>The charged spin-one fluid is stiff at both rungs, and the coupling does not touch the stiffness</strong>, because the algebraic term carries no derivative for the connection to enter.</p>
+<p><em>It removes the field's own shift freedom.</em> $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Gamma$ is not a symmetry of $\mathcal L_{\mathrm{gco}}$ at $\nu_m\ne0$, because $\lvert A\rvert^{2}$ is not invariant; and the coupling does not restore it, because $D\partial\Gamma\ne\partial$ unless $\Gamma$ is constant in the gauge-covariant sense.</p>
+<p><em>It supplies the condition.</em> The derivation above uses the mass term's coefficient: with $\nu_m=0$ the identity $\partial\partial F=0$ stands alone and says nothing about $A$.</p>
+<p><em>It fixes the stiffness.</em> The algebraic term is $\frac{\nu_m^{2}}{2}\lvert A\rvert^{2}$, and the pressure is read off it as at the free rung: energy density and pressure are equal, $\epsilon=p=\frac{4\pi^{2}\nu_m^{2}}{2}r^{2}$. <strong>The charged spin-one fluid is stiff at both rungs, and the coupling does not touch the stiffness</strong>, because the algebraic term carries no derivative for the connection to enter.</p>
 <p>What the mass term no longer does is make the condition a conservation law. That is the fourth statement of the free rung and it is not available, for the reason the previous section gives: the source is there whether or not the mass is.</p>
 <p>And the coupling does not break the external gauge symmetry. Under $A\mapsto\lambda A$ with $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ and $A^{\mathrm{ext}}_{\imath}\mapsto A^{\mathrm{ext}}_{\imath}-\partial_{\imath}\Gamma$, both terms are invariant: the derivative term because $D$ is, the algebraic term because $\lvert\lambda\rvert^{2}=1$. Two different freedoms must be kept apart: the field's own shift, which the mass breaks at both rungs, and the external group's phase rotation, which is a symmetry at the charged rung and is what makes the carrier complex.</p>
 <h2 id="the-structural-consequence-what-the-carriers-doubling-costs">The Structural Consequence: What the Carrier's Doubling Costs</h2>
@@ -147,7 +147,7 @@ $$</p>
 <h2 id="open-questions">Open Questions</h2>
 <p>The extra four parameters. Whether the carrier's remaining freedom can be read as a second fluid, with its own density and phase, is not settled.</p>
 <h2 id="summary">Summary</h2>
-<p>The action. $\mathcal L_{\mathrm{gco}}=-\frac14F^{\mathrm{gco}*}F^{\mathrm{gco}}-\frac{k_m^{2}}{2}\lvert A\rvert^{2}$: the derivative term rebuilt with $D$, the algebraic term untouched.</p>
+<p>The action. $\mathcal L_{\mathrm{gco}}=-\frac14F^{\mathrm{gco}*}F^{\mathrm{gco}}-\frac{4\pi^{2}\nu_m^{2}}{2}\lvert A\rvert^{2}$: the derivative term rebuilt with $D$, the algebraic term untouched.</p>
 <p>The decomposition. $F^{\mathrm{gco}}=r\,\Omega+\mathrm{d}r\wedge u$ with $\Omega=Du$; the vorticity is covariant and rank two, its transversality being the projection's and not the curl's; the density's gradient's term is unchanged.</p>
 <p>The condition. $\sum_{\imath}\varepsilon_{\imath} D_{\imath} A_{\imath}=0$ still follows from the field equation, and written with the ordinary divergence it has a phase-carrying imaginary source. Continuity is lost and the fluid is compressible by the field's action.</p>
 <p>The mass. Three of its four free statements survive: it breaks the field's own shift, supplies the condition, fixes the pressure. It no longer makes the condition a conservation law.</p>
@@ -190,7 +190,7 @@ $$</p>
 <td>The algebraic term's argument; coupling-blind</td>
 </tr>
 <tr>
-<td>$k_m=\frac{2\pi mc}{h}$</td>
+<td>$\nu_m=\frac{mc}{h}$</td>
 <td>Mass wave number</td>
 </tr>
 <tr>

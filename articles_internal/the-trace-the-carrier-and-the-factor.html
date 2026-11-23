@@ -113,7 +113,7 @@ $$</p>
 <p><strong>The three repairs differ by factors.</strong> For a central simple algebra of degree $n$ the regular trace is $n$ times the reduced trace. The representation trace is the reduced trace times the dimension of the representation, divided by the degree. So the same element has several traces, and the number in front of the scalar part is the size of the carrier. This is the whole content of the next sections.</p>
 <p><strong>The objection.</strong> A reader may say that the trace is defined on matrices and that the corpus should simply write matrices. The answer is that the corpus does write matrices, but not always the same one, and the interesting statements are those in which the choice of matrix is the point. The $2\times2$ image is the reduced trace; the $4\times4$ left matrix is the regular trace; the $4\times4$ Dirac matrix is neither, because its embedding is real-linear. An article that named only <em>the trace</em> would hide the distinction that its own result depends on.</p>
 <h2 id="the-three-carriers-of-the-biquaternion-algebra">The Three Carriers of the Biquaternion Algebra</h2>
-<p><strong>The algebra.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $e_t=1$ and $\vec e_k^2=-e_t$, and a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. It is a complex algebra of complex dimension $4$ and real dimension $8$.</p>
+<p><strong>The algebra.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $e_t=1$ and $\vec e_k^2=-e_t$, and a general element is $\tilde Q=\sum_{\imath} Q_{\imath} e_{\imath}$ with $Q_{\imath}\in\mathbb{C}$. It is a complex algebra of complex dimension $4$ and real dimension $8$.</p>
 <h3 id="the-math87-image-and-the-reduced-trace">The $2\times2$ Image and the Reduced Trace</h3>
 <p><strong>The isomorphism.</strong> $\mathsf{M}_2\colon\mathbb{B}\to M_2(\mathbb{C})$ sends the units to $\mathrm{I}_2,-i\sigma_1,-i\sigma_2,-i\sigma_3$. It is complex-linear, and it is an isomorphism of algebras.</p>
 <p><strong>The trace.</strong> The corpus writes</p>
@@ -271,8 +271,8 @@ $$</p>
 <p><strong>The check.</strong> At $n=2$ the trace-form null vector has $\operatorname{tr}(X^2)=0$ exactly, and the trace form's Gram matrix has signature $(3,1)$. The biquaternion identities hold to $1.4\times10^{-14}$ on $100$ random pairs.</p>
 <h2 id="traceless-is-not-zero">Traceless Is Not Zero</h2>
 <p><strong>The kernel is a subspace.</strong> The traceless part of $M_n$ is $\mathfrak{sl}_n$, of dimension $n^2-1$. For $\mathbb{B}$ it is $\{Q_t=0\}$, of complex dimension $3$ and real dimension $6$. So <em>traceless</em> removes one complex number and leaves six real ones.</p>
-<p><strong>The physics uses the word in this sense.</strong> A <strong>traceless</strong> stress tensor has $T_\mu{}^\mu=0$, which is the classical statement of conformal invariance. A <strong>symmetric traceless</strong> quadrupole has $\mathcal{Q}_{ii}=0$, which removes the $l=0$ part and leaves the five components of $D^{(2)}$. A <strong>transverse traceless</strong> gravitational wave has both conditions, and those are the two polarisations. The <strong>traceless generators</strong> span $\mathfrak{sl}(2,\mathbb{C})$, the six-dimensional Lie algebra of the Lorentz group.</p>
-<p><strong>The traceless part can carry everything interesting.</strong> In linearized gravity the most obvious single-biquaternion packaging of $h_{\mu\nu}$ collapses to $h\,e_t$, the trace. It is blind to the traceless part, which is nine of the ten components and carries the two gravitational-wave polarisations. The computation is <em>Linearized Gravity in Biquaternionic Form</em>.</p>
+<p><strong>The physics uses the word in this sense.</strong> A <strong>traceless</strong> stress tensor has $T_{\imath}{}^{\imath}=0$, which is the classical statement of conformal invariance. A <strong>symmetric traceless</strong> quadrupole has $\mathcal{Q}_{ii}=0$, which removes the $l=0$ part and leaves the five components of $D^{(2)}$. A <strong>transverse traceless</strong> gravitational wave has both conditions, and those are the two polarisations. The <strong>traceless generators</strong> span $\mathfrak{sl}(2,\mathbb{C})$, the six-dimensional Lie algebra of the Lorentz group.</p>
+<p><strong>The traceless part can carry everything interesting.</strong> In linearized gravity the most obvious single-biquaternion packaging of $h_{{\imath}{\jmath}}$ collapses to $h\,e_t$, the trace. It is blind to the traceless part, which is nine of the ten components and carries the two gravitational-wave polarisations. The computation is <em>Linearized Gravity in Biquaternionic Form</em>.</p>
 <p><strong>The commutator obstruction.</strong> A commutator is traceless, and $\operatorname{Tr}(e_t)=2$. So there is no pair $a,b\in\mathbb{B}$ with $[a,b]=e_t$. This is the algebraic reason the finite-dimensional algebra carries no bosonic mode, and it is the argument of <em>The Bell Inequality for Continuous Variables in Biquaternionic Form</em>. It is not a defect of the framework; it is the trace doing its job.</p>
 <p><strong>The rule.</strong> <em>Traceless</em> means <em>in the kernel of a named trace</em>. It never means zero, and it never means <em>has no scalar part</em> unless the scalar part is the trace of the carrier in use.</p>
 <h2 id="the-other-traces">The Other Traces</h2>
@@ -311,11 +311,11 @@ $$</p>
 <p>and the <strong>trace form</strong> of the extension is $\mathfrak{Q}(x,y)=\operatorname{Tr}_{L/k}(xy)$. The carrier is $L$ as a $k$-vector space, and the factor is $[L:k]$. The form is nondegenerate exactly when the extension is separable, and its multiplicative companion is the norm $N_{L/k}(x)=\det(m_x)$. This is <em>The Weil Restriction and the Trace Form</em>.</p>
 <p><strong>The two uses of the word <em>trace form</em>.</strong> The trace form of an algebra with an involution, $(x,y)\mapsto\operatorname{Trd}(xy)$, and the trace form of a field extension, $(x,y)\mapsto\operatorname{Tr}_{L/k}(xy)$, are different objects with the same name. The first is the trace of a product in a central simple algebra; the second is the trace of a product in a field extension. Both are $\operatorname{tr}(xy)$ in a carrier, and the carrier is what separates them.</p>
 <h3 id="the-tensor-contraction">The Tensor Contraction</h3>
-<p><strong>The trace of a tensor is a matrix trace after raising an index.</strong> For a rank-two tensor $T_{\mu\nu}$ the contraction is $T_\mu{}^\mu=g^{\mu\nu}T_{\mu\nu}$. Define the endomorphism $T^\mu{}_\nu=g^{\mu\rho}T_{\rho\nu}$; then</p>
+<p><strong>The trace of a tensor is a matrix trace after raising an index.</strong> For a rank-two tensor $T_{{\imath}{\jmath}}$ the contraction is $T_{\imath}{}^{\imath}=g^{{\imath}{\jmath}}T_{{\imath}{\jmath}}$. Define the endomorphism $T^{\imath}{}_{\jmath}=g^{{\imath}\rho}T_{\rho{\jmath}}$; then</p>
 <p>$$
-T_\mu{}^\mu=\operatorname{tr}(T^\mu{}_\nu).
+T_{\imath}{}^{\imath}=\operatorname{tr}(T^{\imath}{}_{\jmath}).
 $$</p>
-<p>So the <em>trace of a tensor</em> is the matrix trace of the associated endomorphism, and the carrier is the tangent space at a point. This is the reading behind $T_\mu{}^\mu=0$ for a conformal theory, behind the trace-reversed perturbation $\bar h_{\mu\nu}=h_{\mu\nu}-\tfrac12h\,g_{\mu\nu}$ of linearized gravity, and behind the traceless quadrupole.</p>
+<p>So the <em>trace of a tensor</em> is the matrix trace of the associated endomorphism, and the carrier is the tangent space at a point. This is the reading behind $T_{\imath}{}^{\imath}=0$ for a conformal theory, behind the trace-reversed perturbation $\bar h_{{\imath}{\jmath}}=h_{{\imath}{\jmath}}-\tfrac12h\,g_{{\imath}{\jmath}}$ of linearized gravity, and behind the traceless quadrupole.</p>
 <p><strong>The rule.</strong> A tensor trace needs a metric to raise the index. A matrix trace does not. The two agree only after the metric has been used, and the metric is a chosen datum.</p>
 <h3 id="the-gauge-trace">The Gauge Trace</h3>
 <p><strong>The trace on a gauge factor is representation-dependent.</strong> For a Lie algebra element $X=X^aT^a$ in a representation $R$,</p>
@@ -326,7 +326,7 @@ $$</p>
 <p><strong>The corpus keeps this apart from the informational trace.</strong> <em>Instantons and Solitons in Biquaternionic Form</em> states explicitly that its $\operatorname{Tr}$ is the matrix trace on the $\mathrm{SU}(2)$ gauge factor, not the informational trace $\operatorname{Tr}(\tilde Q_1\tilde Q_2)=2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$. The two traces have different carriers and different factors, and the article says so.</p>
 <h2 id="three-places-where-the-distinction-decides-an-argument">Three Places Where the Distinction Decides an Argument</h2>
 <h3 id="the-conformal-anomaly">The Conformal Anomaly</h3>
-<p><strong>The anomaly was a statement about an operator trace, and it is now a statement about a determinant.</strong> A classically Weyl-invariant theory has a vanishing diagonal sum $\sum_{\mu,\nu}g_{\mu\nu}T_{\mu\nu}$. The regulated one-loop effective action produces a non-vanishing response, and the coefficient is fixed by the heat-kernel coefficient $a_{d/2}$. The article writes the one-loop action as $\tfrac12\log\det S^{(2)}$ and the heat kernel as a sum over the spectrum; what it counts is the dimension of the fibre, which is four. Neither is the scalar part of a state.</p>
+<p><strong>The anomaly was a statement about an operator trace, and it is now a statement about a determinant.</strong> A classically Weyl-invariant theory has a vanishing diagonal sum $\sum_{{\imath},{\jmath}}g_{{\imath}{\jmath}}T_{{\imath}{\jmath}}$. The regulated one-loop effective action produces a non-vanishing response, and the coefficient is fixed by the heat-kernel coefficient $a_{d/2}$. The article writes the one-loop action as $\tfrac12\log\det S^{(2)}$ and the heat kernel as a sum over the spectrum; what it counts is the dimension of the fibre, which is four. Neither is the scalar part of a state.</p>
 <p><strong>The corpus states the separation.</strong> <em>The Conformal Anomaly in Biquaternionic Form</em> says that the algebra contributes the operator on which the determinant is taken and the dimension of the space it acts on, and that the state pairing of the Hermitian sector, $2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde H_\Psi)$, is a different object. This is the clearest case in which using the wrong carrier would produce a wrong number, because the anomaly's coefficient counts the dimensions of the fibre and the pairing counts something else.</p>
 <h3 id="the-classifier-of-a-frame">The Classifier of a Frame</h3>
 <p><strong>The trace classifies the conjugacy classes of $\mathrm{SL}(2,\mathbb{C})$.</strong> For $\tilde U$ of unit norm, $\tau=\operatorname{tr}\mathsf{M}_2(\tilde U)=2Q_t$ is a conjugacy invariant, and the four classes — elliptic, hyperbolic, parabolic and loxodromic — are the four positions of $\tau$ relative to the real line and the interval $[-2,2]$. The central elements $\pm e_t$ are the one patch the classifier needs. The determinant is fixed at one by the unit-norm condition, so the trace is the only continuous invariant.</p>
@@ -394,7 +394,7 @@ $$</p>
 <li><strong>The trace is not a norm.</strong> $\operatorname{Tr}(\tilde Q)$ is complex; $\operatorname{tr}(X^2)$ is indefinite; only the Hermitian algebraic norm is positive, and only its square root is a topological norm.</li>
 <li><strong>The trace form is not the trace.</strong> $\operatorname{tr}(XY)$ is bilinear, $\operatorname{tr}X$ is linear. The first can be indefinite and can have null vectors.</li>
 <li><strong>Traceless is not zero.</strong> It is the kernel of a named trace, of codimension one.</li>
-<li><strong>A tensor trace needs a metric.</strong> $T_\mu{}^\mu$ is the matrix trace of $T^\mu{}_\nu$, and the index was raised with $g$.</li>
+<li><strong>A tensor trace needs a metric.</strong> $T_{\imath}{}^{\imath}$ is the matrix trace of $T^{\imath}{}_{\jmath}$, and the index was raised with $g$.</li>
 <li><strong>In infinite dimension, the trace needs the trace class.</strong> The identity of $B(\mathcal{H})$ is not trace class, and the sum over a basis must converge.</li>
 <li><strong>The factor cancels in a ratio and stays in a normalisation.</strong> The Born weight is a ratio; the unit-weight condition is not.</li>
 </ol>
@@ -476,9 +476,9 @@ $$</p>
 <td>$\dim\mathcal{H}_2$</td>
 </tr>
 <tr>
-<td>$T_\mu{}^\mu$</td>
-<td>the endomorphism $T^\mu{}_\nu$</td>
-<td>$\operatorname{tr}(T^\mu{}_\nu)$</td>
+<td>$T_{\imath}{}^{\imath}$</td>
+<td>the endomorphism $T^{\imath}{}_{\jmath}$</td>
+<td>$\operatorname{tr}(T^{\imath}{}_{\jmath})$</td>
 <td>$1$</td>
 </tr>
 <tr>

@@ -92,21 +92,21 @@ $$</p>
 <p>$$
 \vec e_x\vec e_y=\vec e_z,\qquad \vec e_y\vec e_z=\vec e_x,\qquad \vec e_z\vec e_x=\vec e_y,\qquad \vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t .
 $$</p>
-<p>The scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$, and $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_\mu Q_{1\mu}Q_{2\mu}$.</p>
+<p>The scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$, and $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_{\imath} Q_{1{\imath}}Q_{2{\imath}}$.</p>
 <p><strong>The two families.</strong> $L_a(\tilde X)=a\tilde X$ and $R_b(\tilde X)=\tilde Xb$ are the two regular families of <em>Operators Acting on One Side</em>. They are $\mathbb{C}$-linear, injective, and they commute; the sixteen composites</p>
 <p>$$
-e_\mu[\,]e_\nu=L_{e_\mu}R_{e_\nu},\qquad e_\mu[\,]e_\nu(\tilde X)=e_\mu\tilde Xe_\nu,
+e_{\imath}[\,]e_{\jmath}=L_{e_{\imath}}R_{e_{\jmath}},\qquad e_{\imath}[\,]e_{\jmath}(\tilde X)=e_{\imath}\tilde Xe_{\jmath},
 $$</p>
 <p>are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ by the generation theorem of <em>Operators Acting on Two Sides</em>, with the composition rule $(a[\,]b)\circ(c[\,]d)=(ac)[\,](db)$ and the isomorphism $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, $a\otimes b\mapsto L_aR_b$.</p>
-<p><strong>The coefficient matrix and the length.</strong> Every operator has one coefficient array $c(M)$ in this basis, $M=\sum_{\mu\nu}c_{\mu\nu}\,e_\mu[\,]e_\nu$, and the <strong>length</strong> is $\ell(M)=\operatorname{rank}c(M)$. The Conway theorem is $\ell\le4$, and the corpus reads it as the ladder $1,4,7,16$: the scalars, one side, both sides, the ambient space.</p>
-<p><strong>The Hermitian form and the dagger.</strong> Write $\langle X,Y\rangle_{*}=\mathrm{Sc}(XY^{*})=\sum_\mu X_\mu\overline{Y_\mu}$, of Gram matrix $\mathrm{I}_4$ and inertia $(8,0)$ over $\mathbb{R}$ by <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>. In the coefficient basis its adjoint is the conjugate transpose, and the adjoint of a word is</p>
+<p><strong>The coefficient matrix and the length.</strong> Every operator has one coefficient array $c(M)$ in this basis, $M=\sum_{{\imath}{\jmath}}c_{{\imath}{\jmath}}\,e_{\imath}[\,]e_{\jmath}$, and the <strong>length</strong> is $\ell(M)=\operatorname{rank}c(M)$. The Conway theorem is $\ell\le4$, and the corpus reads it as the ladder $1,4,7,16$: the scalars, one side, both sides, the ambient space.</p>
+<p><strong>The Hermitian form and the dagger.</strong> Write $\langle X,Y\rangle_{*}=\mathrm{Sc}(XY^{*})=\sum_{\imath} X_{\imath}\overline{Y_{\imath}}$, of Gram matrix $\mathrm{I}_4$ and inertia $(8,0)$ over $\mathbb{R}$ by <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>. In the coefficient basis its adjoint is the conjugate transpose, and the adjoint of a word is</p>
 <p>$$
 \bigl(L_aR_b\bigr)^{\dagger}=L_{\bar b}R_{\bar a},
 $$</p>
 <p>because the coefficient conjugation $\bar{\cdot}$ is an automorphism of $\mathbb{B}$ and fixes the structure constants. Hence</p>
 <p>$$
-M^{\dagger}=\overline{M}^{\,\mathsf T},\qquad M=\sum c_{\mu\nu}e_\mu[\,]e_\nu,\qquad
-M^{\dagger}=\sum_{\mu\nu}\overline{c_{\mu\nu}}\,s_\mu s_\nu\,e_\mu[\,]e_\nu,
+M^{\dagger}=\overline{M}^{\,\mathsf T},\qquad M=\sum c_{{\imath}{\jmath}}e_{\imath}[\,]e_{\jmath},\qquad
+M^{\dagger}=\sum_{{\imath}{\jmath}}\overline{c_{{\imath}{\jmath}}}\,s_{\imath} s_{\jmath}\,e_{\imath}[\,]e_{\jmath},
 $$</p>
 <p>with $s_t=+1$ and $s_x=s_y=s_z=-1$ the sign vector of $\bar{\cdot}$ on the basis.</p>
 <p><strong>The two functionals that matter.</strong> The trace of a word is a degenerate functional, and this is the fact that organises the whole note:</p>
@@ -252,24 +252,24 @@ aXb=(v^{\mathsf T}Xw)\,uz^{\mathsf T}
 $$</p>
 <p>a single functional times one fixed matrix, of operator rank at most one. But $\mathfrak{su}(3)$ has no non-zero element of rank one: a rank-one member of the traceless corner reads $i\lambda ww^{\dagger}$ with $w\in\mathbb{C}^{3}$ and $\operatorname{tr}=i\lambda\lVert w\rVert^{2}$, which vanishes only at $w=0$. Hence $\ell\ge2$ on $\mathfrak{su}(3)\setminus\{0\}$; the eight above attain $2$; and a generic element of the eight-dimensional space attains $4$, the Conway bound. Length is not additive, and that is the whole content of the table: a basis of short words spans a space of long elements.</p>
 <h2 id="anti-hermitian-in-operator-language">Anti-Hermitian, in Operator Language</h2>
-<p><strong>What the condition means.</strong> A generator is anti-Hermitian when $\exp(tX)$ is unitary for real $t$, that is when the one-parameter group it generates preserves the Hermitian norm $\langle\tilde Q\rangle_{*}=\sum_\mu|Q_\mu|^{2}$ of the carrier. Equivalently $X^{\dagger}=-X$ for the adjoint fixed by $\langle\cdot,\cdot\rangle_{*}$, equivalently $\overline{X}^{\,\mathsf T}=-X$, equivalently the spectrum of $X$ is purely imaginary.</p>
+<p><strong>What the condition means.</strong> A generator is anti-Hermitian when $\exp(tX)$ is unitary for real $t$, that is when the one-parameter group it generates preserves the Hermitian norm $\langle\tilde Q\rangle_{*}=\sum_{\imath}|Q_{\imath}|^{2}$ of the carrier. Equivalently $X^{\dagger}=-X$ for the adjoint fixed by $\langle\cdot,\cdot\rangle_{*}$, equivalently $\overline{X}^{\,\mathsf T}=-X$, equivalently the spectrum of $X$ is purely imaginary.</p>
 <p><strong>The coefficient criterion.</strong> Transcribing the dagger of a word, $M$ is anti-Hermitian exactly when</p>
 <p>$$
-c_{\mu\nu}=-s_\mu s_\nu\,\overline{c_{\mu\nu}}\qquad\text{for all }\mu,\nu,
+c_{{\imath}{\jmath}}=-s_{\imath} s_{\jmath}\,\overline{c_{{\imath}{\jmath}}}\qquad\text{for all }{\imath},{\jmath},
 $$</p>
 <p>with $s=(+1,-1,-1,-1)$. The criterion reads off slot by slot, and it explains the two shapes of the table.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>slot of the word</th>
-<th>sign $s_\mu s_\nu$</th>
-<th>condition on $c_{\mu\nu}$</th>
+<th>sign $s_{\imath} s_{\jmath}$</th>
+<th>condition on $c_{{\imath}{\jmath}}$</th>
 <th>what it produces</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$(\mu,\nu)$ both in $\{x,y,z\}$</td>
+<td>$({\imath},{\jmath})$ both in $\{x,y,z\}$</td>
 <td>$+1$</td>
 <td>$c$ purely imaginary</td>
 <td>the diagonal $h$'s and the off-diagonal symmetric sums</td>
@@ -302,7 +302,7 @@ $$</p>
 <p><strong>The operator-level reading of the pair of conditions.</strong> Putting the two sections together:</p>
 <p>$$
 X\in\mathfrak{su}(3)\iff
-\underbrace{Xe_t=0}_{c_{t\nu}=0}\ \text{and}\ \underbrace{X(B_V)\subseteq B_V}_{c_{\mu t}=0}\ \text{and}\ \underbrace{\overline{c_{\mu\nu}}s_\mu s_\nu=-c_{\mu\nu}}_{\text{anti-Hermitian}}\ \text{and}\ \underbrace{c_{tt}=0}_{\text{traceless}} .
+\underbrace{Xe_t=0}_{c_{t{\jmath}}=0}\ \text{and}\ \underbrace{X(B_V)\subseteq B_V}_{c_{{\imath} t}=0}\ \text{and}\ \underbrace{\overline{c_{{\imath}{\jmath}}}s_{\imath} s_{\jmath}=-c_{{\imath}{\jmath}}}_{\text{anti-Hermitian}}\ \text{and}\ \underbrace{c_{tt}=0}_{\text{traceless}} .
 $$</p>
 <p>Four linear conditions on the sixteen complex coefficients, and they cut out a real subspace of dimension eight. The counts run $32\to18\to9\to8$: the corner costs fourteen real dimensions, anti-Hermiticity nine, and tracelessness one.</p>
 <h2 id="why-the-rotor-guesses-fail-precisely">Why the Rotor Guesses Fail, Precisely</h2>
@@ -770,7 +770,7 @@ $$</p>
 <p>$$
 u_a=\tfrac{i}{2}\bigl(L_{e_t}R_{e_t}+L_{e_a}R_{e_a}-L_{e_b}R_{e_b}-L_{e_c}R_{e_c}\bigr)\qquad\text{(wrong)}
 $$</p>
-<p>and justifies it by "every word $L_{e_\mu}R_{e_\nu}$ has non-zero trace on the unit, specifically $\pm1$ in the $(t,t)$ slot". Both halves are wrong. Only $L_{e_t}R_{e_t}$ has nonzero trace, namely $4$; the other fifteen words are of zero array trace, verified exactly, and the diagonal words $E_a$ in particular have trace $0$ because their display is $(-1,-1,1,1)$. The correct form is</p>
+<p>and justifies it by "every word $L_{e_{\imath}}R_{e_{\jmath}}$ has non-zero trace on the unit, specifically $\pm1$ in the $(t,t)$ slot". Both halves are wrong. Only $L_{e_t}R_{e_t}$ has nonzero trace, namely $4$; the other fifteen words are of zero array trace, verified exactly, and the diagonal words $E_a$ in particular have trace $0$ because their display is $(-1,-1,1,1)$. The correct form is</p>
 <p>$$
 u_a=\tfrac{i}{4}\bigl(E_t+3E_a-E_b-E_c\bigr),
 \qquad\text{coefficients}\ \tfrac{i}{4},\tfrac{3i}{4},-\tfrac{i}{4},-\tfrac{i}{4},
@@ -813,7 +813,7 @@ $$</p>
 <td>$<10^{-15}$</td>
 </tr>
 <tr>
-<td>the coefficient criterion $c_{\mu\nu}=-s_\mu s_\nu\overline{c_{\mu\nu}}$</td>
+<td>the coefficient criterion $c_{{\imath}{\jmath}}=-s_{\imath} s_{\jmath}\overline{c_{{\imath}{\jmath}}}$</td>
 <td>holds on all $8\times16$ slots</td>
 </tr>
 <tr>
@@ -1004,7 +1004,7 @@ $$</p>
 <td>the adjoint for $\langle\cdot,\cdot\rangle_{*}$, the conjugate transpose in the coefficient basis</td>
 </tr>
 <tr>
-<td>$s_\mu$</td>
+<td>$s_{\imath}$</td>
 <td>the sign vector $(+1,-1,-1,-1)$ of the coefficient conjugation on the basis</td>
 </tr>
 <tr>

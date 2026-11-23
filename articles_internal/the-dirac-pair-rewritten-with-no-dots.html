@@ -73,14 +73,14 @@
 <h2 id="introduction">Introduction</h2>
 <p>The second line of the Dirac pair can be written without the conjugate gradient and without a dot:</p>
 <p>$$
-\boxed{\;\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\tilde\nabla=k_m\,\tilde{Ξ}_{\mathrm{sp},R}^{\natural}\;}
+\boxed{\;\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\tilde\nabla=2\pi\nu_m\,\tilde{Ξ}_{\mathrm{sp},R}^{\natural}\;}
 $$</p>
 <p>The line is equivalent to the one <em>The Dirac Equation in Biquaternionic Form</em> prints, on the same two fields. The warrant is one operator identity, applied once.</p>
 <p><strong>The pair, as the corpus writes it.</strong> The dynamics of a fermion of mass $m$ is the chiral pair</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\,\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=2\pi\nu_m\,\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}.
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=2\pi\nu_m\,\tilde{Ξ}_{\mathrm{sp},R}.
 $$</p>
 <p>The first line applies the gradient on the left. The second applies the conjugate gradient on the left. Both lines are left multiplications, and the two operators differ.</p>
 <p><strong>What a dot is, and what the title removes.</strong> A dot on a field is a placeholder for a conjugation. The corpus writes it $\tilde{Ξ}^{\bullet}$ and defines $\bullet$ as one of the four involutions ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and $\flat$ (<em>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</em>, §<em>Why a Mass Is a Pairing with a Conjugate</em>). A dotted field therefore names a conjugation and does not say which. This article writes no dot: the conjugation is $\natural$ at every occurrence, and the object it acts on is named.</p>
@@ -98,20 +98,20 @@ $$</p>
 <p><strong>What the second line is not.</strong> It is not a right multiplication. The gradient is written before the field, so it differentiates the field and multiplies it on the left. A right multiplication would write the field first, $\tilde{Ξ}_{\mathrm{sp},L}\tilde\nabla$, and would differentiate the field from the other side. The two readings differ by a curl on a general field (<em>Left and Right Actions of Operators</em>), and the second line is not the right reading.</p>
 <p><strong>Why the operator is conjugated.</strong> The two lines must be independent, and a single left multiplier cannot distinguish the two components. The conjugation supplies the second operator: $\tilde\nabla^{\natural}$ is the same four derivatives with the three spatial units negated. The mass then couples the two lines. The construction is the one <em>Objects That Split Left and Right</em>, §<em>The Checklist</em>, records as the Dirac row.</p>
 <h3 id="the-units">The Units</h3>
-<p><strong>Every derivative carries an inverse length.</strong> The gradient differentiates with respect to the coordinates $R_\mu$, so each of its four coefficients carries the unit of an inverse length. The term on the right must carry the same unit, and it does: $k_m$ is the wave number</p>
+<p><strong>Every derivative carries an inverse length.</strong> The gradient differentiates with respect to the coordinates $R_{\imath}$, so each of its four coefficients carries the unit of an inverse length. The term on the right must carry the same unit, and it does: $2\pi\nu_m$ is an inverse length, where $\nu_m=\frac{mc}{h}$ is the mass wave number</p>
 <p>$$
-k_m=\frac{m\,c}{\hbar},
+\nu_m=\frac{m\,c}{h},
 $$</p>
-<p>the reciprocal of the reduced Compton wavelength (<em>The Three Wavenumbers of a Particle</em>). The mass $m$ alone does not carry an inverse length, and the pair never writes it alone.</p>
-<p><strong>The mass is central.</strong> $k_m$ is a real scalar and multiplies the identity. It commutes with every element, and the conjugation fixes it, $\natural(k_m)=k_m$. Both facts are used below, and neither is an assumption about the dynamics.</p>
+<p>the reciprocal of the Compton wavelength, $1/\nu_m=\lambda_C$ (<em>The Three Wavenumbers of a Particle</em>). The mass $m$ alone does not carry an inverse length, and the pair never writes it alone.</p>
+<p><strong>The mass is central.</strong> $2\pi\nu_m$ is a real scalar and multiplies the identity. It commutes with every element, and the conjugation fixes it, $\natural(2\pi\nu_m)=2\pi\nu_m$. Both facts are used below, and neither is an assumption about the dynamics.</p>
 <h3 id="the-massless-limit">The Massless Limit</h3>
-<p>At $k_m=0$ the pair decouples into two one-sided equations,</p>
+<p>At $\nu_m=0$ the pair decouples into two one-sided equations,</p>
 <p>$$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0,
 \qquad
 \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0.
 $$</p>
-<p>Each line then involves one component only. The rewrite below is a statement about the massive line as well as the massless one, because it uses no property of $k_m$ beyond its being central.</p>
+<p>Each line then involves one component only. The rewrite below is a statement about the massive line as well as the massless one, because it uses no property of $2\pi\nu_m$ beyond its being central.</p>
 <h2 id="the-conjugate-gradient">The Conjugate Gradient</h2>
 <h3 id="the-definition">The Definition</h3>
 <p><strong>The gradient is the element</strong></p>
@@ -179,18 +179,18 @@ $$</p>
 <p><strong>The conjugate gradient is an element.</strong> It is not a new differential operator and not a new calculus. It is the conjugate of the element $\tilde\nabla$, written with the same four derivatives and the three spatial units negated. It acts on the algebra by left multiplication in the same way, and it is written $L_{\tilde\nabla^{\natural}}$ when the side has to be named.</p>
 <p><strong>It is not the right reading of $\tilde\nabla$.</strong> The right reading of the gradient writes the units after the differentiated field,</p>
 <p>$$
-\tilde X\overleftarrow{\tilde\nabla}=\sum_\mu\frac{\partial\tilde X}{\partial R_\mu}e_\mu,
+\tilde X\overleftarrow{\tilde\nabla}=\sum_{\imath}\frac{\partial\tilde X}{\partial R_{\imath}}e_{\imath},
 $$</p>
 <p>and it differs from the left reading by a curl. The conjugate gradient is a left reading, of a different element. The two notions are different, and §<em>The Transposition of the Gradient</em> states the identity that carries one into the other.</p>
 <h2 id="reading-the-second-equation">Reading the Second Equation</h2>
 <h3 id="as-an-operator-equation">As an Operator Equation</h3>
 <p>The second line is</p>
 <p>$$
-L_{\tilde\nabla^{\natural}}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}.
+L_{\tilde\nabla^{\natural}}\tilde{Ξ}_{\mathrm{sp},L}=2\pi\nu_m\,\tilde{Ξ}_{\mathrm{sp},R}.
 $$</p>
-<p>Read in words: apply the left multiplication by the conjugate gradient to the field $\tilde{Ξ}_{\mathrm{sp},L}$, and the result is $k_m$ times the field $\tilde{Ξ}_{\mathrm{sp},R}$.</p>
+<p>Read in words: apply the left multiplication by the conjugate gradient to the field $\tilde{Ξ}_{\mathrm{sp},L}$, and the result is $2\pi\nu_m$ times the field $\tilde{Ξ}_{\mathrm{sp},R}$.</p>
 <p><strong>The left side is an operator applied to a field.</strong> The operator is $L_{\tilde\nabla^{\natural}}$. The field is $\tilde{Ξ}_{\mathrm{sp},L}$. The right side is a field multiplied by a scalar.</p>
-<p><strong>The mass relates the two components.</strong> It does not move a component across a side. The gradient is a left multiplier, so it does not carry a value across; the mass is central and does not carry one either. The pair relates the two components by a coefficient, and the coefficient is $k_m$ (<em>The Dirac Equation in Biquaternionic Form</em>, §<em>The Equation in the Algebra</em>).</p>
+<p><strong>The mass relates the two components.</strong> It does not move a component across a side. The gradient is a left multiplier, so it does not carry a value across; the mass is central and does not carry one either. The pair relates the two components by a coefficient, and the coefficient is $2\pi\nu_m$ (<em>The Dirac Equation in Biquaternionic Form</em>, §<em>The Equation in the Algebra</em>).</p>
 <h3 id="the-strongest-objection">The Strongest Objection</h3>
 <p><strong>The objection.</strong> If the second line can be written with the plain gradient on the right, why does the pair need the conjugate gradient at all?</p>
 <p><strong>The answer.</strong> The rewritten line is on the conjugated fields. On the same fields and the same side, the operator is $\tilde\nabla^{\natural}$, and no identity removes it. The rewrite trades a conjugation on the operator for a conjugation on both fields and a reversal of one side. The algebra keeps the conjugate gradient, and the pair keeps its two left multiplications when it is read on the original fields.</p>
@@ -306,7 +306,7 @@ $$</p>
 <p><strong>The definition puts the unit after the derivative.</strong></p>
 <p>$$
 \tilde Q_1\overleftarrow{\tilde\nabla}
-:=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial\tilde Q_1}{\partial R_\mu}e_\mu .
+:=\sum_{{\imath}\in\{t,x,y,z\}}\frac{\partial\tilde Q_1}{\partial R_{\imath}}e_{\imath} .
 $$</p>
 <p>The four derivatives are the same four, in the same four directions, and each unit stands after the derivative it multiplies.</p>
 <p><strong>The integration articles name this object $\nabla^{R}$.</strong> The name is a position: it records which factor the derivative differentiates. It is not a second operator and not a new calculus. It is the gradient with its two factors exchanged, and the exchange is an identity about the order of the units.</p>
@@ -318,11 +318,11 @@ $$</p>
 \tilde Q_1\overleftarrow{\tilde\nabla}=\bigl(\tilde\nabla^{\natural}\tilde Q_1^{\natural}\bigr)^{\natural}.
 $$</p>
 <p>The boxed line is the content. The second display is the same line solved for the arrowed reading, and $\natural^2=\mathrm{id}$ licenses the step.</p>
-<p><strong>The proof is one term.</strong> Three facts carry it, and each is visible in the coefficient basis: the involution is linear over $\mathbb{C}$, it acts on a unit and on nothing else, and it leaves $\partial/\partial R_\mu$ alone because a coordinate is a complex scalar. Write $\varepsilon_\mu$ for the sign it gives the unit $e_\mu$. The anti-automorphism reverses the order of the two factors, and the $\mu$-th term on the left is</p>
+<p><strong>The proof is one term.</strong> Three facts carry it, and each is visible in the coefficient basis: the involution is linear over $\mathbb{C}$, it acts on a unit and on nothing else, and it leaves $\partial/\partial R_{\imath}$ alone because a coordinate is a complex scalar. Write $\varepsilon_{\imath}$ for the sign it gives the unit $e_{\imath}$. The anti-automorphism reverses the order of the two factors, and the $\mu$-th term on the left is</p>
 <p>$$
-\Bigl(\frac{\partial\tilde Q_1}{\partial R_\mu}e_\mu\Bigr)^{\natural}
-=\bigl(e_\mu\bigr)^{\natural}\Bigl(\frac{\partial\tilde Q_1}{\partial R_\mu}\Bigr)^{\natural}
-=\varepsilon_\mu e_\mu\frac{\partial\tilde Q_1^{\natural}}{\partial R_\mu},
+\Bigl(\frac{\partial\tilde Q_1}{\partial R_{\imath}}e_{\imath}\Bigr)^{\natural}
+=\bigl(e_{\imath}\bigr)^{\natural}\Bigl(\frac{\partial\tilde Q_1}{\partial R_{\imath}}\Bigr)^{\natural}
+=\varepsilon_{\imath} e_{\imath}\frac{\partial\tilde Q_1^{\natural}}{\partial R_{\imath}},
 $$</p>
 <p>which is the $\mu$-th term of $\tilde\nabla^{\natural}\tilde Q_1^{\natural}$. The four terms add to the boxed line, and $\natural^2=\mathrm{id}$ returns the arrow.</p>
 <p><strong>Three properties, and nothing else.</strong> Linearity over $\mathbb{C}$, action on the units at fixed coordinate, and commutation with the derivative. No metric, no mass, no frame and no field equation enters. That is why the identity holds of every element rather than of the solutions of anything.</p>
@@ -341,21 +341,21 @@ $$</p>
 $$</p>
 <p>at the same residual. The identity is a statement about the order of the basis units, and a connection brings no unit of its own to reorder.</p>
 <h3 id="the-chiral-instance">The Chiral Instance</h3>
-<p><strong>The chiral pair is the case usually quoted.</strong> Transposing the second line with $\tilde Q_1=\tilde{Ξ}_{\mathrm{sp},L}^{\natural}$ and using $\natural(k_m)=k_m$,</p>
+<p><strong>The chiral pair is the case usually quoted.</strong> Transposing the second line with $\tilde Q_1=\tilde{Ξ}_{\mathrm{sp},L}^{\natural}$ and using $\natural(2\pi\nu_m)=2\pi\nu_m$,</p>
 <p>$$
 \boxed{\;
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=2\pi\nu_m\,\tilde{Ξ}_{\mathrm{sp},R}
 \qquad\Longrightarrow\qquad
-\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\overleftarrow{\tilde\nabla}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}^{\natural}\;}
+\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\overleftarrow{\tilde\nabla}=2\pi\nu_m\,\tilde{Ξ}_{\mathrm{sp},R}^{\natural}\;}
 $$</p>
 <p>one line, with the derivative written to the right of $\tilde{Ξ}_{\mathrm{sp},L}^{\natural}$ and the same mass in place. This is the line of §<em>The Rewrite, Step by Step</em>, with the arrow written.</p>
 <p><strong>Read alone, the pair suggests that the right action is a property of the Dirac equation.</strong> It is not. The two lines hold of the first equation as well, of a massless field, and of any equation in which one field stands to the right of a derivative. Only the right-hand side comes from the Dirac pair; the identity is indifferent to it.</p>
-<h3 id="why-the-name-math152-is-still-written">Why the Name $\nabla^{R}$ Is Still Written</h3>
+<h3 id="why-the-name-math154-is-still-written">Why the Name $\nabla^{R}$ Is Still Written</h3>
 <p><strong>The identity holds for a field, and a product of fields is a field.</strong> What it does not do is move the derivative off one factor of a product while the other stays. On $\tilde Q_1\tilde Q_2$ the Leibniz rule puts the unit after the whole bracket,</p>
 <p>$$
 (\tilde Q_1\tilde Q_2)\overleftarrow{\tilde\nabla}
-=\sum_\mu\Bigl(\frac{\partial\tilde Q_1}{\partial R_\mu}\tilde Q_2
-+\tilde Q_1\frac{\partial\tilde Q_2}{\partial R_\mu}\Bigr)e_\mu ,
+=\sum_{\imath}\Bigl(\frac{\partial\tilde Q_1}{\partial R_{\imath}}\tilde Q_2
++\tilde Q_1\frac{\partial\tilde Q_2}{\partial R_{\imath}}\Bigr)e_{\imath} ,
 $$</p>
 <p>and the unit does not pass to the left of $\tilde Q_2$. Moving it there takes a commutation with the basis, and a commutation is available only for a central $\tilde Q_2$.</p>
 <p><strong>The witness.</strong> With $\tilde Q_1=R_x\vec e_x$ and $\tilde Q_2=\vec e_y$ the rule that puts the unit in the middle returns $-\vec e_y$, and the product rule returns $+\vec e_y$. The difference is $2\vec e_y$, and it comes from the one derivative that does not vanish. The unit stands on the wrong side of a factor. That defect is why the name $\nabla^{R}$ is written with the arrow: the superscript fixes the factor, and the arrow alone cannot, once a product stands under it.</p>
@@ -365,7 +365,7 @@ $$</p>
 <h3 id="step-one-replace-the-operator">Step One: Replace the Operator</h3>
 <p>The second equation is</p>
 <p>$$
-L_{\tilde\nabla^{\natural}}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}.
+L_{\tilde\nabla^{\natural}}\tilde{Ξ}_{\mathrm{sp},L}=2\pi\nu_m\,\tilde{Ξ}_{\mathrm{sp},R}.
 $$</p>
 <p>Apply the identity $L_{\tilde Q}=\natural R_{\natural(\tilde Q)}\natural$ with $\tilde Q=\tilde\nabla^{\natural}$:</p>
 <p>$$
@@ -377,7 +377,7 @@ $$</p>
 <p>Substitute:</p>
 <p>$$
 \natural\,R_{\tilde\nabla}\,\natural\,\tilde{Ξ}_{\mathrm{sp},L}
-=k_m\,\tilde{Ξ}_{\mathrm{sp},R}.
+=2\pi\nu_m\,\tilde{Ξ}_{\mathrm{sp},R}.
 $$</p>
 <h3 id="step-two-apply-the-right-action">Step Two: Apply the Right Action</h3>
 <p><strong>By definition,</strong> $R_{\tilde\nabla}\tilde X=\tilde X\tilde\nabla$. With $\tilde X=\natural\tilde{Ξ}_{\mathrm{sp},L}$,</p>
@@ -391,31 +391,31 @@ $$</p>
 <p>Substitute the previous display into the equation of Step One:</p>
 <p>$$
 \natural\bigl(\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\tilde\nabla\bigr)
-=k_m\,\tilde{Ξ}_{\mathrm{sp},R}.
+=2\pi\nu_m\,\tilde{Ξ}_{\mathrm{sp},R}.
 $$</p>
 <p>This is the right-multiplied form of the second line, with the field conjugated and the outer conjugation kept. The left side is a conjugation of a right action. The right side is the mass times the unconjugated field.</p>
 <h3 id="step-four-remove-the-outer-conjugation">Step Four: Remove the Outer Conjugation</h3>
 <p>Apply $\natural$ to both sides:</p>
 <p>$$
 \natural\Bigl(\natural\bigl(\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\tilde\nabla\bigr)\Bigr)
-=\natural\bigl(k_m\,\tilde{Ξ}_{\mathrm{sp},R}\bigr).
+=\natural\bigl(2\pi\nu_m\,\tilde{Ξ}_{\mathrm{sp},R}\bigr).
 $$</p>
-<p>On the left, $\natural^2=\mathrm{id}$. On the right, $\natural(k_m)=k_m$ because the mass is central, and $\natural(\tilde{Ξ}_{\mathrm{sp},R})=\tilde{Ξ}_{\mathrm{sp},R}^{\natural}$. Hence</p>
+<p>On the left, $\natural^2=\mathrm{id}$. On the right, $\natural(2\pi\nu_m)=2\pi\nu_m$ because the mass is central, and $\natural(\tilde{Ξ}_{\mathrm{sp},R})=\tilde{Ξ}_{\mathrm{sp},R}^{\natural}$. Hence</p>
 <p>$$
 \tilde{Ξ}_{\mathrm{sp},L}^{\natural}\tilde\nabla
-=k_m\,\tilde{Ξ}_{\mathrm{sp},R}^{\natural}.
+=2\pi\nu_m\,\tilde{Ξ}_{\mathrm{sp},R}^{\natural}.
 $$</p>
 <p>This is the right-multiplied form with the outer conjugation removed. It is the line of the Introduction. It carries no conjugate operator and no dot.</p>
 <h3 id="the-check">The Check</h3>
-<p>The chain was recomputed on $20$ random polynomial fields with six monomials each, with analytic derivatives, and on $100$ random element pairs. The Euclidean residual of $\natural(\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\tilde\nabla)-k_m\tilde{Ξ}_{\mathrm{sp},R}$ with $\tilde{Ξ}_{\mathrm{sp},R}$ defined by the original second line is $1.1\times10^{-15}$ at worst. The residual of $\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\tilde\nabla-k_m\tilde{Ξ}_{\mathrm{sp},R}^{\natural}$ is the same. A conjugate was taken at every step, and the two sides were compared term by term in the coefficient basis.</p>
+<p>The chain was recomputed on $20$ random polynomial fields with six monomials each, with analytic derivatives, and on $100$ random element pairs. The Euclidean residual of $\natural(\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\tilde\nabla)-2\pi\nu_m\tilde{Ξ}_{\mathrm{sp},R}$ with $\tilde{Ξ}_{\mathrm{sp},R}$ defined by the original second line is $1.1\times10^{-15}$ at worst. The residual of $\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\tilde\nabla-2\pi\nu_m\tilde{Ξ}_{\mathrm{sp},R}^{\natural}$ is the same. A conjugate was taken at every step, and the two sides were compared term by term in the coefficient basis.</p>
 <h2 id="the-pair-in-the-new-form">The Pair in the New Form</h2>
 <h3 id="the-mixed-form">The Mixed Form</h3>
 <p>With the second line rewritten and the first left as it stands, the pair reads</p>
 <p>$$
 \boxed{\;
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\,\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=2\pi\nu_m\,\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\tilde\nabla=k_m\,\tilde{Ξ}_{\mathrm{sp},R}^{\natural}\;}
+\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\tilde\nabla=2\pi\nu_m\,\tilde{Ξ}_{\mathrm{sp},R}^{\natural}\;}
 $$</p>
 <p><strong>One line on each side.</strong> The first line is a left action of the gradient. The second is a right action of the same gradient, on the conjugate of the other field. Neither line carries a conjugate operator.</p>
 <p><strong>The same fields.</strong> The two lines of this pair are the two lines of the original pair, on the same $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$. The second line was rewritten by an identity, not by a change of variable. The solution set is unchanged.</p>
@@ -425,20 +425,20 @@ $$</p>
 <p>$$
 \bigl(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}\bigr)^{\natural}
 =\tilde{Ξ}_{\mathrm{sp},R}^{\natural}\tilde\nabla^{\natural}
-=k_m\,\tilde{Ξ}_{\mathrm{sp},L}^{\natural}.
+=2\pi\nu_m\,\tilde{Ξ}_{\mathrm{sp},L}^{\natural}.
 $$</p>
 <p>The pair then reads</p>
 <p>$$
-\tilde{Ξ}_{\mathrm{sp},R}^{\natural}\tilde\nabla^{\natural}=k_m\,\tilde{Ξ}_{\mathrm{sp},L}^{\natural},
+\tilde{Ξ}_{\mathrm{sp},R}^{\natural}\tilde\nabla^{\natural}=2\pi\nu_m\,\tilde{Ξ}_{\mathrm{sp},L}^{\natural},
 \qquad
-\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\tilde\nabla=k_m\,\tilde{Ξ}_{\mathrm{sp},R}^{\natural}.
+\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\tilde\nabla=2\pi\nu_m\,\tilde{Ξ}_{\mathrm{sp},R}^{\natural}.
 $$</p>
 <p><strong>Both lines are right actions.</strong> Both fields are conjugated, and the two operators are $\tilde\nabla^{\natural}$ and $\tilde\nabla$.</p>
 <p><strong>The two writings are exchanged by the conjugation.</strong> Conjugate either line of this pair and you get the corresponding line of the original pair. Conjugate either line of the original pair and you get the corresponding line of this pair. The two pairs are the same two equations, read on opposite sides.</p>
 <p><strong>What this form is not.</strong> It is not an equation on the original fields. The fields of this pair are $\tilde{Ξ}_{\mathrm{sp},L}^{\natural}$ and $\tilde{Ξ}_{\mathrm{sp},R}^{\natural}$, the conjugates of the original fields. The map $(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})\mapsto(\tilde{Ξ}_{\mathrm{sp},L}^{\natural},\tilde{Ξ}_{\mathrm{sp},R}^{\natural})$ is a bijection of solution sets, not the identity (<em>Operator and Calculus Conventions</em>, §<em>The Two Sides and the Renaming Theorem</em>). The two right-reading lines are the image of the pair, and the mixed form is the pair itself.</p>
 <h3 id="what-the-rewrite-preserves">What the Rewrite Preserves</h3>
 <p><strong>The solutions.</strong> The mixed form has the same solution set as the original pair, field by field, because each line is equivalent to the line it replaces.</p>
-<p><strong>The mass.</strong> The coefficient $k_m$ is untouched. It stays on the right, central and real. The rewrite uses $\natural(k_m)=k_m$ and no other property of the mass.</p>
+<p><strong>The mass.</strong> The coefficient $2\pi\nu_m$ is untouched. It stays on the right, central and real. The rewrite uses $\natural(2\pi\nu_m)=2\pi\nu_m$ and no other property of the mass.</p>
 <p><strong>The components.</strong> The two lines still name the same two components of the same field. The conjugation is applied to a component and does not rename it: the symbol $\tilde{Ξ}_{\mathrm{sp},L}^{\natural}$ names the conjugate of the $L$ component, not the $R$ component.</p>
 <p><strong>The algebra.</strong> The conjugate gradient remains in the algebra. It is the operator of the second line in the original writing, and it is the operator of the first line of the all-right pair.</p>
 <h3 id="what-the-rewrite-does-not-do">What the Rewrite Does Not Do</h3>
@@ -447,7 +447,7 @@ $$</p>
 <p><strong>It does not remove the conjugation from the algebra.</strong> The operator loses its conjugation and each field gains one. The count rises from one to two, and the side of one line changes.</p>
 <p><strong>It does not change the physical content.</strong> The pair describes the same fermion, the same mass and the same two components. The rewriting is a change of side and a transport of the involution, and it is invertible at every step.</p>
 <h2 id="summary">Summary</h2>
-<p>The second line of the Dirac pair, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, is equivalent to $\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\tilde\nabla=k_m\tilde{Ξ}_{\mathrm{sp},R}^{\natural}$. The conjugate operator is gone from the line, the conjugation is written on the two fields, and the side is reversed.</p>
+<p>The second line of the Dirac pair, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=2\pi\nu_m\tilde{Ξ}_{\mathrm{sp},R}$, is equivalent to $\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\tilde\nabla=2\pi\nu_m\tilde{Ξ}_{\mathrm{sp},R}^{\natural}$. The conjugate operator is gone from the line, the conjugation is written on the two fields, and the side is reversed.</p>
 <p>The step is one identity. For every element $\tilde Q$, $L_{\tilde Q}=\natural R_{\natural(\tilde Q)}\natural$. The identity is the exchange of the two families of multipliers under the quaternion conjugation, and it is exact because $\natural$ is an involution, is $\mathbb{C}$-linear and reverses the order of a product.</p>
 <p>The identity that would remove the conjugation without transporting it, $R_{\tilde Q}=\natural L_{\tilde Q}\natural$, is false off the centre. The difference is the vector part of $\tilde Q$, and the witness $3\vec e_x$ against $\vec e_y$ shows it in one line.</p>
 <p>The pair in the mixed form has one line on the left and one on the right, both acting by the plain gradient, on the original fields. Conjugating the whole pair puts both lines on the right, at the price of conjugating both fields. The two writings are the same two equations, read on opposite sides.</p>
@@ -472,11 +472,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde\nabla$</td>
-<td>the gradient, $\sum_\mu e_\mu\partial/\partial R_\mu$</td>
+<td>the gradient, $\sum_{\imath} e_{\imath}\partial/\partial R_{\imath}$</td>
 </tr>
 <tr>
 <td>$\tilde\nabla^{\natural}$</td>
-<td>the conjugate gradient, $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ with $\varepsilon=(1,-1,-1,-1)$</td>
+<td>the conjugate gradient, $\sum_{\imath}\varepsilon_{\imath} e_{\imath}\partial/\partial R_{\imath}$ with $\varepsilon=(1,-1,-1,-1)$</td>
 </tr>
 <tr>
 <td>$L_{\tilde Q}$, $R_{\tilde Q}$</td>
@@ -487,8 +487,8 @@ $$</p>
 <td>the two components of the Dirac field</td>
 </tr>
 <tr>
-<td>$k_m$</td>
-<td>the mass wave number $mc/\hbar$, central and real</td>
+<td>$2\pi\nu_m$</td>
+<td>the mass coefficient, with $\nu_m=\frac{mc}{h}$ the mass wave number; central and real</td>
 </tr>
 <tr>
 <td>$\bullet$</td>
@@ -496,11 +496,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde X\overleftarrow{\tilde\nabla}$</td>
-<td>the right reading of the gradient, $\sum_\mu(\partial\tilde X/\partial R_\mu)e_\mu$; also written $\nabla^{R}$ where the differentiated factor has to be named</td>
+<td>the right reading of the gradient, $\sum_{\imath}(\partial\tilde X/\partial R_{\imath})e_{\imath}$; also written $\nabla^{R}$ where the differentiated factor has to be named</td>
 </tr>
 <tr>
 <td>$\tilde\nabla_{\mathrm{gco}}$</td>
-<td>the gauge-covariant gradient, $\sum_\mu e_\mu\tilde\nabla_{\mathrm{gco},\mu}$ with central coefficients</td>
+<td>the gauge-covariant gradient, $\sum_{\imath} e_{\imath}\tilde\nabla_{\mathrm{gco},{\imath}}$ with central coefficients</td>
 </tr>
 <tr>
 <td>$N$, $\mathsf C$</td>

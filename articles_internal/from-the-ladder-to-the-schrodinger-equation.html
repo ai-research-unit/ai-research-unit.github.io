@@ -77,7 +77,7 @@ $$</p>
 <p>and reaches the free Schrödinger equation in five steps. Nothing else is derived. The errors, the tables and the comparisons are in the appendices, and none of them is needed for the path.</p>
 <p><strong>The result.</strong></p>
 <p>$$
-i\hbar\,\frac{\partial\chi}{\partial t}=-\frac{\hbar^{2}}{2m}\,\Delta\chi .
+i \frac{h}{2\pi}\,\frac{\partial\chi}{\partial t}=-\frac{h^{2}}{8\pi^{2}m}\,\Delta\chi .
 $$</p>
 <h2 id="1-the-rung-carries-two-numbers">1. The Rung Carries Two Numbers</h2>
 <p>Name the two coefficients of the rung:</p>
@@ -93,7 +93,7 @@ $$</p>
 \boxed{\;2k_m\,\Omega=\lvert\vec k\rvert^{2}\;}
 $$</p>
 <p>because $\lvert\vec k\rvert^{2}=k_m^{2}\beta^{2}$ and $2k_m\Omega=k_m^{2}\beta^{2}$.</p>
-<p><strong>Why this is the whole input.</strong> The energy above rest is $\hbar c\,\Omega$; the momentum is $\hbar\,\vec k$; the box says the first is the second squared over $2m$. Everything below is the conversion of that one relation into a differential equation, and the box enters once: in step 4, where it supplies the eigenvalue of the Laplacian.</p>
+<p><strong>Why this is the whole input.</strong> The energy above rest is $\frac{h}{2\pi} c\,\Omega$; the momentum is $\frac{h}{2\pi}\,\vec k$; the box says the first is the second squared over $2m$. Everything below is the conversion of that one relation into a differential equation, and the box enters once: in step 4, where it supplies the eigenvalue of the Laplacian.</p>
 <h2 id="2-the-phase-is-one-scalar-part">2. The Phase Is One Scalar Part</h2>
 <p>The phase of a plane wave is the scalar part of $\tilde K\tilde R^{\natural}$, with $\tilde R_{\Phi}=i\,r'_{t}e_{t}+\vec r$ and $r'_{t}=c\,t$. On the rung,</p>
 <p>$$
@@ -135,14 +135,14 @@ $$</p>
 <p>$$
 i\,\frac{\partial\chi}{\partial r'_{t}}=-\frac{1}{2k_m}\,\Delta\chi .
 $$</p>
-<p>Multiply by $\hbar c$ and use $r'_{t}=c\,t$ and $k_m=mc/\hbar$:</p>
+<p>Multiply by $\frac{h}{2\pi} c$ and use $r'_{t}=c\,t$ and $k_m=\frac{2\pi mc}{h}$:</p>
 <p>$$
-i\hbar\,\frac{\partial\chi}{\partial t}
-=-\frac{\hbar c}{2k_m}\,\Delta\chi
-=-\frac{\hbar^{2}}{2m}\,\Delta\chi .
+i \frac{h}{2\pi}\,\frac{\partial\chi}{\partial t}
+=-\frac{h c}{4\pi k_m}\,\Delta\chi
+=-\frac{h^{2}}{8\pi^{2}m}\,\Delta\chi .
 $$</p>
-<p><strong>The free Schrödinger equation.</strong> The two constants are the ones the framework already had: $m$ entered once, in $k_m=mc/\hbar$, and $\hbar$ entered with it.</p>
-<p><strong>Dimensional check.</strong> $\hbar\,\partial_t$ is an energy; $\frac{\hbar^{2}}{2m}\Delta$ is $\frac{\left(\mathrm{J\,s}\right)^{2}}{\mathrm{kg}\,\mathrm{m}^{2}}=\mathrm{J}$.</p>
+<p><strong>The free Schrödinger equation.</strong> The two constants are the ones the framework already had: $m$ entered once, in $k_m=\frac{2\pi mc}{h}$, and $\frac{h}{2\pi}$ entered with it.</p>
+<p><strong>Dimensional check.</strong> $\frac{h}{2\pi}\,\partial_t$ is an energy; $\frac{h^{2}}{8\pi^{2}m}\Delta$ is $\frac{\left(\mathrm{J\,s}\right)^{2}}{\mathrm{kg}\,\mathrm{m}^{2}}=\mathrm{J}$.</p>
 <h2 id="6-what-was-approximated">6. What Was Approximated</h2>
 <p><strong>The rung, against the exact element.</strong> The temporal slot went from $k_m\gamma=k_m\left(1+\frac{\beta^{2}}{2}+\frac{3\beta^{4}}{8}+\cdots\right)$ to $k_m\left(1+\frac{\beta^{2}}{2}\right)$: the term $\frac{3}{8}k_m\beta^{4}$ was dropped. The vector slot went from $k_m\gamma\vec\beta$ to $k_m\vec\beta$: the term $\frac{1}{2}k_m\beta^{2}\vec\beta$ was dropped. So the rung keeps the temporal slot to order $\beta^{2}$ and the vector slot to order $\beta$, which is the order $\beta^{2}$ in the element.</p>
 <p><strong>The same act on the dispersion relation.</strong> The exact element satisfies $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$. Writing $k'_{t}=k_m+\Omega$ and expanding the square,</p>
@@ -162,7 +162,7 @@ $$</p>
 <li>$2k_m\Omega=\lvert\vec k\rvert^{2}$ — algebra on the rung.</li>
 <li>$\phi=\vec k\cdot\vec r-\left(k_m+\Omega\right)r'_{t}$, and $\phi$ splits into rest clock times envelope.</li>
 <li>$i\,\partial_{r'_{t}}\chi=\Omega\chi$ and $-\Delta\chi=\lvert\vec k\rvert^{2}\chi=2k_m\Omega\chi$.</li>
-<li>Eliminate $\Omega$ and multiply by $\hbar c$: $i\hbar\,\partial_t\chi=-\frac{\hbar^{2}}{2m}\Delta\chi$.</li>
+<li>Eliminate $\Omega$ and multiply by $\frac{h}{2\pi} c$: $i \frac{h}{2\pi}\,\partial_t\chi=-\frac{h^{2}}{8\pi^{2}m}\Delta\chi$.</li>
 </ol>
 <p><strong>One approximation, and it is already in the rung.</strong> Everything after step 1 is algebra, one projection, and two exact identifications.</p>
 <h2 id="appendix-a-the-error-in-each-slot">Appendix A — The Error in Each Slot</h2>
@@ -324,8 +324,8 @@ $$</p>
 <td>Four-wavenumber; one multiplication from the four-velocity</td>
 </tr>
 <tr>
-<td>$k_m=mc/\hbar$</td>
-<td>Mass wave number; the scale that carries $m$ and $\hbar$</td>
+<td>$k_m=\frac{2\pi mc}{h}$</td>
+<td>Mass wave number; the scale that carries $m$ and $\frac{h}{2\pi}$</td>
 </tr>
 <tr>
 <td>$\tilde K_{\Phi,1}=i\left(k_m+\Omega\right)e_{t}+\vec k$</td>
@@ -333,7 +333,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\Omega=k_m\beta^{2}/2$</td>
-<td>Excess energy wave number; the kinetic energy over $\hbar c$</td>
+<td>Excess energy wave number; the kinetic energy over $\frac{h}{2\pi} c$</td>
 </tr>
 <tr>
 <td>$\vec k=k_m\vec\beta$, $\beta=\lvert\vec v\rvert/c$</td>

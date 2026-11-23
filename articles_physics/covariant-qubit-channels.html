@@ -77,17 +77,17 @@
 <p>The plan. Admission is refused as a goal, and the imported classification is stated once with its two boundaries. Simplicity is then used to show that no channel is internal. Covariance selects a family, complete positivity and the mixture reading cut it to a segment, and unitality gives it its arrow. The Choi rank of that family is computed, and it places the thermal channel one rung above every dilation the corpus has so far needed. The two senses in which the word <em>ceiling</em> has been used are then separated, and what is refused is named.</p>
 <h2 id="admission-is-not-the-question">Admission Is Not the Question</h2>
 <p>The algebra is eight-dimensional over $\mathbb{R}$ and four over $\mathbb{C}$. $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$, each sector of four real dimensions; the coefficients are complex, so $\dim_{\mathbb{C}}\mathbb{B}=4$ and $\dim_{\mathbb{R}}\mathbb{B}=8$. The real dimension is the one that matters for dilation counting below.</p>
-<p><strong>A state map is an affine map of the ball.</strong> Write a state as $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$; a channel acts by $\vec s_{\Psi}\mapsto M\vec s_{\Psi}+\vec t$ with $M$ real $3\times3$ and $\vec t\in\mathbb{R}^{3}$, and complete positivity is a condition on the Choi matrix, the $4\times4$ matrix $\mathsf C=\sum_l\mathrm{vec}(\tilde K_l)\mathrm{vec}(\tilde K_l)^{\dagger}$ assembled from the Kraus operators. Everything in this paragraph is standard, it holds for $M_2(\mathbb{C})$, and it holds therefore for $\mathbb{B}$ with no change of statement.</p>
+<p><strong>A state map is an affine map of the ball.</strong> Write a state as $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$; a channel acts by $\vec s_{\Psi}\mapsto M\vec s_{\Psi}+\vec t$ with $M$ real $3\times3$ and $\vec t\in\mathbb{R}^{3}$, and complete positivity is a condition on the Choi matrix, the $4\times4$ matrix $\mathsf C=\sum_l\mathrm{vec}(\tilde\Upsilon_l)\mathrm{vec}(\tilde\Upsilon_l)^{\dagger}$ assembled from the Kraus operators. Everything in this paragraph is standard, it holds for $M_2(\mathbb{C})$, and it holds therefore for $\mathbb{B}$ with no change of statement.</p>
 <p>Two conditions run alongside trace preservation, and they bound the affine data.</p>
 <ul>
-<li>Trace preservation, $\sum_l\tilde K_l^{*}\tilde K_l=e_t$, keeps a state a state.</li>
-<li>Unitality, $\sum_l\tilde K_l\tilde K_l^{*}=e_t$, keeps the centre fixed.</li>
+<li>Trace preservation, $\sum_l\tilde\Upsilon_l^{*}\tilde\Upsilon_l=e_t$, keeps a state a state.</li>
+<li>Unitality, $\sum_l\tilde\Upsilon_l\tilde\Upsilon_l^{*}=e_t$, keeps the centre fixed.</li>
 </ul>
 <p>The second is not implied by the first, and the pair is the dividing line the rest of the article uses. Dephasing satisfies both; amplitude damping satisfies only the first. Verified on the canonical Kraus sets: dephasing with $\{\sqrt{\tfrac12}e_t,\sqrt{\tfrac12}\vec e_z\}$ is trace-preserving and unital; amplitude damping is trace-preserving and not unital.</p>
 <p>The classification is imported whole, and the article does not improve it. What the article adds is which sub-family survives three requirements imposed from the algebra's own structure, and at what rank.</p>
 <h2 id="simplicity-why-no-channel-is-internal">Simplicity: Why No Channel Is Internal</h2>
 <p><strong>$\mathbb{B}$ is simple, and that is the whole reason a channel cannot live inside it.</strong> A nonzero algebra endomorphism of a simple algebra is injective, because its kernel is a two-sided ideal; an injective endomorphism of a finite-dimensional algebra is surjective; and a unital automorphism of $M_2(\mathbb{C})$ is inner by Skolem–Noether. So every unital multiplicative map is a conjugation.</p>
-<p>A conjugation has one Kraus operator, and trace preservation then forces it to be unitary. With $\mathcal E(\tilde Q)=\tilde U\tilde Q\tilde U^{*}$ the Kraus sum has the single term $\tilde K=\tilde U$, and $\tilde K^{*}\tilde K=e_t$ is exactly the unit-norm condition. A completely positive map that is multiplicative is a $*$-homomorphism, so the chain closes in both directions:</p>
+<p>A conjugation has one Kraus operator, and trace preservation then forces it to be unitary. With $\mathcal E(\tilde Q)=\tilde U\tilde Q\tilde U^{*}$ the Kraus sum has the single term $\tilde\Upsilon=\tilde U$, and $\tilde\Upsilon^{*}\tilde\Upsilon=e_t$ is exactly the unit-norm condition. A completely positive map that is multiplicative is a $*$-homomorphism, so the chain closes in both directions:</p>
 <p>$$
 \text{multiplicative}\iff\text{Choi rank }1\iff\text{conjugation by a unit}\iff N\text{ preserved}.
 $$</p>
@@ -233,7 +233,7 @@ $$</p>
 <td>Affine data of a channel, $\vec s_{\Psi}\mapsto M\vec s_{\Psi}+\vec t$</td>
 </tr>
 <tr>
-<td>$\mathsf C=\sum_l\mathrm{vec}(\tilde K_l)\mathrm{vec}(\tilde K_l)^{\dagger}$</td>
+<td>$\mathsf C=\sum_l\mathrm{vec}(\tilde\Upsilon_l)\mathrm{vec}(\tilde\Upsilon_l)^{\dagger}$</td>
 <td>Choi matrix</td>
 </tr>
 <tr>
@@ -241,11 +241,11 @@ $$</p>
 <td>Choi rank: minimal Kraus number, minimal environment dimension</td>
 </tr>
 <tr>
-<td>$\sum_l\tilde K_l^{*}\tilde K_l=e_t$</td>
+<td>$\sum_l\tilde\Upsilon_l^{*}\tilde\Upsilon_l=e_t$</td>
 <td>Trace preservation</td>
 </tr>
 <tr>
-<td>$\sum_l\tilde K_l\tilde K_l^{*}=e_t$</td>
+<td>$\sum_l\tilde\Upsilon_l\tilde\Upsilon_l^{*}=e_t$</td>
 <td>Unitality: the centre is fixed</td>
 </tr>
 <tr>

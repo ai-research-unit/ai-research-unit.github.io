@@ -124,7 +124,7 @@ $$</p>
 <h2 id="the-carrier-the-six-words-and-the-condition">The Carrier, the Six Words, and the Condition</h2>
 <p><strong>The carrier.</strong> $\mathbb{B}$ is four complex dimensions with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$ cyclically and $\vec e_k^{2}=-e_t$. An operator is a sum of Conway words,
 $$
-M=\sum_{\mu\nu}c_{\mu\nu}\,e_\mu[\,]e_\nu,\qquad e_\mu[\,]e_\nu(\tilde X)=e_\mu\tilde X e_\nu ,
+M=\sum_{{\imath}{\jmath}}c_{{\imath}{\jmath}}\,e_{\imath}[\,]e_{\jmath},\qquad e_{\imath}[\,]e_{\jmath}(\tilde X)=e_{\imath}\tilde X e_{\jmath} ,
 $$
 the sixteen words are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and the <strong>length</strong> is $\ell(M)=\operatorname{rank}c(M)$, with Conway's bound $\ell\le4$. The Hermitian form is $\langle X,Y\rangle_{*}=\mathrm{Sc}(XY^{*})$, and in the coefficient (axis-free) frame its adjoint $\dagger$ is the conjugate transpose: this last point is the whole reason the article is written in this frame, and §<em>What the Frame Does for the Group</em> says so.</p>
 <p><strong>The group, as a condition on the display.</strong> With the dagger fixed,
@@ -133,7 +133,7 @@ $$
 \mathrm{SU}(4)=\mathrm{U}(\mathbb{B})\cap\mathrm{SL}_{4}(\mathbb{C}),
 $$
 real dimension $15$. The count is the count of anti-Hermitian $4\times4$ matrices less the trace: $16-1=15$. The Killing form is $K(X,Y)=8\operatorname{tr}(XY)$, negative definite, of inertia $(0,15)$; the algebra is simple, of rank $3$, with a zero centre and twelve roots; and the group is $\mathrm{SU}(4)\cong\mathrm{Spin}(6)$, simply connected, with centre $\mathbb{Z}_4$ and Weyl group $S_4$. None of that is special to the algebra, and all of it is used below.</p>
-<p><strong>Exactly six of the sixteen words are in the group.</strong> A word $e_\mu[\,]e_\nu$ has trace $4\mathrm{Sc}(e_\mu)\mathrm{Sc}(e_\nu)$, so among the sixteen only $e_t[\,]e_t$ has nonzero trace, namely $4$. A word is anti-Hermitian in this frame exactly when the two indices do not both lie among $x,y,z$. The two conditions together leave six:</p>
+<p><strong>Exactly six of the sixteen words are in the group.</strong> A word $e_{\imath}[\,]e_{\jmath}$ has trace $4\mathrm{Sc}(e_{\imath})\mathrm{Sc}(e_{\jmath})$, so among the sixteen only $e_t[\,]e_t$ has nonzero trace, namely $4$. A word is anti-Hermitian in this frame exactly when the two indices do not both lie among $x,y,z$. The two conditions together leave six:</p>
 <p>$$
 e_t[\,]e_x,\;e_t[\,]e_y,\;e_t[\,]e_z,\;e_x[\,]e_t,\;e_y[\,]e_t,\;e_z[\,]e_t ,
 \qquad\text{that is}\qquad L_{\vec e_x},L_{\vec e_y},L_{\vec e_z},R_{\vec e_x},R_{\vec e_y},R_{\vec e_z}.
@@ -163,15 +163,15 @@ $$</p>
 <p>So the six words of $\mathfrak{su}(4)$ are precisely the two regular families at the three <strong>pure</strong> units, and the scalar unit contributes the identity, which the trace deletes. That is the sharpest entry-level description of the group: <strong>six of its generators are single words, eight more are sums of two words, and the last is the three-word diagonal.</strong></p>
 <p><strong>The companions, re-read as subspaces.</strong> $\mathrm{SU}(3)$ is the stabiliser of the vector $e_t$: the eight elements that kill $e_t$ and preserve $B_V=\operatorname{span}_{\mathbb{C}}(\vec e_x,\vec e_y,\vec e_z)$. $\mathrm{U}(3)$ is the stabiliser of the line $\mathbb{C}e_t$: the nine that preserve the line without killing the vector. $\mathrm{SU}(2)$, in its left copy, is $L(\mathfrak{k})=\mathrm{span}\{L_{\vec e_x},L_{\vec e_y},L_{\vec e_z}\}$, three of the six words above. So all three groups are already inside $\mathrm{SU}(4)$, and the question of this note is what the ambient space adds around them.</p>
 <h2 id="the-two-conditions-in-operator-language">The Two Conditions, in Operator Language</h2>
-<p><strong>Anti-Hermitian is "the one-parameter group is unitary".</strong> $X^\dagger=-X$ says that $\exp(tX)$ preserves the norm $\langle\tilde Q\rangle_{*}=\sum_\mu|Q_\mu|^{2}$ of the carrier for real $t$, equivalently that the spectrum of $X$ is purely imaginary. The adjoint of a word is obtained from the antipode $e_t^{*}=e_t$, $e_k^{*}=-\vec e_k$, which is $\mathbb{C}$-linear here, so</p>
+<p><strong>Anti-Hermitian is "the one-parameter group is unitary".</strong> $X^\dagger=-X$ says that $\exp(tX)$ preserves the norm $\langle\tilde Q\rangle_{*}=\sum_{\imath}|Q_{\imath}|^{2}$ of the carrier for real $t$, equivalently that the spectrum of $X$ is purely imaginary. The adjoint of a word is obtained from the antipode $e_t^{*}=e_t$, $e_k^{*}=-\vec e_k$, which is $\mathbb{C}$-linear here, so</p>
 <p>$$
-\bigl(e_\mu[\,]e_\nu\bigr)^{\dagger}=e_\mu^{*}[\,]e_\nu^{*}=s_\mu s_\nu\,e_\mu[\,]e_\nu,\qquad s=(1,-1,-1,-1),
+\bigl(e_{\imath}[\,]e_{\jmath}\bigr)^{\dagger}=e_{\imath}^{*}[\,]e_{\jmath}^{*}=s_{\imath} s_{\jmath}\,e_{\imath}[\,]e_{\jmath},\qquad s=(1,-1,-1,-1),
 $$</p>
-<p>and for a general element $M=\sum c_{\mu\nu}e_\mu[\,]e_\nu$,</p>
+<p>and for a general element $M=\sum c_{{\imath}{\jmath}}e_{\imath}[\,]e_{\jmath}$,</p>
 <p>$$
-M^{\dagger}=-M\quad\Longleftrightarrow\quad c_{\mu\nu}=-\,s_\mu s_\nu\,\overline{c_{\mu\nu}} .
+M^{\dagger}=-M\quad\Longleftrightarrow\quad c_{{\imath}{\jmath}}=-\,s_{\imath} s_{\jmath}\,\overline{c_{{\imath}{\jmath}}} .
 $$</p>
-<p>So the <strong>Conway coefficient</strong> $c_{\mu\nu}$ must be purely imaginary on the two diagonal blocks, where $s_\mu s_\nu=+1$, and real on the two off-diagonal blocks, where $s_\mu s_\nu=-1$. This is a condition on the coefficient array and not on the matrix entries — the two differ by the frame — and it is exact only here. Applied to a word, it is the criterion of the previous section: exactly one index must be $t$.</p>
+<p>So the <strong>Conway coefficient</strong> $c_{{\imath}{\jmath}}$ must be purely imaginary on the two diagonal blocks, where $s_{\imath} s_{\jmath}=+1$, and real on the two off-diagonal blocks, where $s_{\imath} s_{\jmath}=-1$. This is a condition on the coefficient array and not on the matrix entries — the two differ by the frame — and it is exact only here. Applied to a word, it is the criterion of the previous section: exactly one index must be $t$.</p>
 <p><strong>Traceless is "the one-parameter group has determinant one".</strong> $\operatorname{tr}X=0$ is $\det\exp(tX)=1$: the circle lands in $\mathrm{SU}(4)$ and not merely in $\mathrm{U}(4)$. By the trace functional, $\operatorname{tr}M=4c_{tt}(M)$, so the condition deletes exactly the unit word and nothing else. On the corner the same condition reads $\operatorname{tr}A=0$ on the $3\times3$ block, and the $\mathrm{SU}(3)$ note has already shown that this is what removes the ninth direction of the stabiliser of the line.</p>
 <p><strong>What the pair leaves.</strong> Anti-Hermitian with no unit word: six single words plus nine composite elements. That is the whole of $\mathfrak{su}(4)$, and the sections that follow take the nine apart.</p>
 <h2 id="the-two-splits-math103-and-math104">The Two Splits: $15=8+7$ and $15=9+6$</h2>
@@ -380,7 +380,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The floor is one and it is attained, which is what distinguishes $\mathfrak{su}(4)$ from $\mathfrak{su}(3)$: there the floor is two, because no word kills $e_t$ and has the required rank. Here nothing kills $e_t$, and six words pass both conditions directly.</p>
-<p><strong>Fifteen of the sixteen words lie in $\mathfrak{su}(4)$ up to scale, and that is why the floor is not a grade.</strong> Checked on all sixteen with the four scalar choices $(1,1),(1,i),(i,1),(i,i)$: every pair $(\mu,\nu)$ except $(t,t)$ admits a scalar making $e_\mu[\,]e_\nu$ anti-Hermitian and of zero array trace, and $(t,t)$ admits none, since $L_{e_t}R_{e_t}$ is Hermitian and of trace four. <strong>So a basis of fifteen elements of length one exists</strong>, while the six of the census are the ones that qualify with coefficient one. <strong>Length is an address of an element and not a rank of a group</strong>: the span of the short elements is the whole algebra, and only the named generators have named lengths.</p>
+<p><strong>Fifteen of the sixteen words lie in $\mathfrak{su}(4)$ up to scale, and that is why the floor is not a grade.</strong> Checked on all sixteen with the four scalar choices $(1,1),(1,i),(i,1),(i,i)$: every pair $({\imath},{\jmath})$ except $(t,t)$ admits a scalar making $e_{\imath}[\,]e_{\jmath}$ anti-Hermitian and of zero array trace, and $(t,t)$ admits none, since $L_{e_t}R_{e_t}$ is Hermitian and of trace four. <strong>So a basis of fifteen elements of length one exists</strong>, while the six of the census are the ones that qualify with coefficient one. <strong>Length is an address of an element and not a rank of a group</strong>: the span of the short elements is the whole algebra, and only the named generators have named lengths.</p>
 <p><strong>The ceiling is the Conway bound.</strong> A random element of $\mathfrak{su}(4)$ has $\ell=4$: on a hundred random draws every length was exactly four, and the same on a hundred random draws inside $\mathfrak m$ and inside $\mathfrak h$ separately. So a basis of short words spans a space of long elements, exactly as in the corner, and the ambient group adds no new phenomenon — it inherits the ceiling.</p>
 <p><strong>Length is not additive, and the three-word diagonal is the example.</strong> $iD$ is the sum of three length-one elements and has length three, but $iD=iP_V-3iP_t$ is a difference of a four-word element and a one-word element; a reader who chooses the wrong decomposition pays four. The floor of a <em>space</em> is a statement about the space; the length of an <em>element</em> depends on the element.</p>
 <h2 id="the-centre-the-weyl-group-and-the-four-coefficients">The Centre, the Weyl Group, and the Four Coefficients</h2>
@@ -409,10 +409,10 @@ $$</p>
 <p>as arrays. In another frame the same algebra reads $M^{\mathsf H}G+GM=0$ with $G=\mathsf C^{\dagger}\mathsf C$, and the condition is no longer a condition on the entries. This is the one place in the corpus where the display of the group and the group agree without translation, and it is a property of the axis-free frame, not of the group.</p>
 <p><strong>$D$ is the array of $\natural$, and $\theta$ is the involution.</strong> The switch of the frame is $D=\operatorname{diag}(1,-1,-1,-1)$, which is simultaneously the Gram matrix of $\beta$, the matrix of the quaternion conjugation, and the matrix of the involution $\theta$. So the entry rule of the axis-free article,
 $$
-R_{\mathrm{axf}}(\tilde Q)_{\mu\nu}=s_\mu s_\nu\,L_{\mathrm{axf}}(\tilde Q)_{\nu\mu},
+R_{\mathrm{axf}}(\tilde Q)_{{\imath}{\jmath}}=s_{\imath} s_{\jmath}\,L_{\mathrm{axf}}(\tilde Q)_{{\jmath}{\imath}},
 \qquad s=(1,-1,-1,-1),
 $$
-and the decomposition of $\mathfrak{su}(4)$ into $\mathfrak h\oplus\mathfrak m$ are the same computation: $s_\mu s_\nu$ is $+1$ exactly on the two diagonal blocks and $-1$ exactly on the two off-diagonal ones, which is the sign of $\theta$ on the corresponding words. The six words of the group are the ones carrying exactly one index $t$; the ten that are not either carry two indices from $x,y,z$ or are the identity.</p>
+and the decomposition of $\mathfrak{su}(4)$ into $\mathfrak h\oplus\mathfrak m$ are the same computation: $s_{\imath} s_{\jmath}$ is $+1$ exactly on the two diagonal blocks and $-1$ exactly on the two off-diagonal ones, which is the sign of $\theta$ on the corresponding words. The six words of the group are the ones carrying exactly one index $t$; the ten that are not either carry two indices from $x,y,z$ or are the identity.</p>
 <p><strong>The six signed permutations.</strong> Read as arrays, the six words of the group are real antisymmetric signed permutation matrices, and they are the only six of the sixteen with that property — anti-Hermiticity, in a real frame, is antisymmetry. That is a one-line description of $\mathfrak{so}(4)$ inside $M_4(\mathbb{Z})$: the two regular families at the three pure units, six quarter-turn arrays spanning the six of the two-sided rotor algebra.</p>
 <p><strong>The caution.</strong> The three conditions of the corner — anti-Hermitian, traceless, and the block conditions — are exact only inside the image $\mathbb{B}_L$. The conditions of this note are different in kind: anti-Hermiticity and tracelessness are exact on the whole ambient space, and the block conditions are the split of the carrier, not of the algebra. So nothing here needs the caveat that the six-subspace table of the axis-free article carries; the only frame dependence is in which arrays are anti-Hermitian, and that is the dagger.</p>
 <h2 id="verification">Verification</h2>
@@ -442,11 +442,11 @@ and the decomposition of $\mathfrak{su}(4)$ into $\mathfrak h\oplus\mathfrak m$ 
 <td>$\operatorname{tr}=4$; the other fifteen $0$</td>
 </tr>
 <tr>
-<td>$W_{\mu\nu}^{\dagger}=s_\mu s_\nu W_{\mu\nu}$</td>
+<td>$W_{{\imath}{\jmath}}^{\dagger}=s_{\imath} s_{\jmath} W_{{\imath}{\jmath}}$</td>
 <td>$16$ of $16$ words</td>
 </tr>
 <tr>
-<td>$M^{\dagger}=-M$ $\Longleftrightarrow$ $c_{\mu\nu}$ imaginary where $s_\mu s_\nu=+1$, real where $-1$</td>
+<td>$M^{\dagger}=-M$ $\Longleftrightarrow$ $c_{{\imath}{\jmath}}$ imaginary where $s_{\imath} s_{\jmath}=+1$, real where $-1$</td>
 <td>$0$ violations in $200$ random skew-Hermitian traceless arrays</td>
 </tr>
 <tr>
@@ -565,8 +565,8 @@ and the decomposition of $\mathfrak{su}(4)$ into $\mathfrak h\oplus\mathfrak m$ 
 <td>$\operatorname{span}_{\mathbb{C}}(\vec e_x,\vec e_y,\vec e_z)=e_t^{\perp}$</td>
 </tr>
 <tr>
-<td>$e_\mu[\,]e_\nu$</td>
-<td>the Conway word $L_{e_\mu}R_{e_\nu}$, $c(M)$, $\ell(M)$ the coefficient array and its rank</td>
+<td>$e_{\imath}[\,]e_{\jmath}$</td>
+<td>the Conway word $L_{e_{\imath}}R_{e_{\jmath}}$, $c(M)$, $\ell(M)$ the coefficient array and its rank</td>
 </tr>
 <tr>
 <td>$\dagger$</td>
@@ -635,7 +635,7 @@ and the decomposition of $\mathfrak{su}(4)$ into $\mathfrak h\oplus\mathfrak m$ 
 <li><em>The Meaning of $\mathrm{SU}(2)$ in the Endomorphisms of the Biquaternion Algebra</em>: the three addresses of the rotor, $\mathrm{SU}(2)\subset\mathrm{U}(\mathbb{B})$, and the plus graph that does not close.</li>
 <li><em>The Meaning of $\mathrm{SU}(3)$ in the Endomorphisms of the Biquaternion Algebra</em>: the corner, the eight two-word generators, the $3+5$ split, and $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$.</li>
 <li><em>The Meaning of $\mathrm{U}(3)$ in the Endomorphisms of the Biquaternion Algebra</em>: the widened corner, $iP_V$, and the cost of four words.</li>
-<li><em>$M_4(\mathbb{C})$ Axis-Free Representation</em>: the two families, the displays, $D$, and the entry rule $R_{\mu\nu}=s_\mu s_\nu L_{\nu\mu}$.</li>
+<li><em>$M_4(\mathbb{C})$ Axis-Free Representation</em>: the two families, the displays, $D$, and the entry rule $R_{{\imath}{\jmath}}=s_{\imath} s_{\jmath} L_{{\jmath}{\imath}}$.</li>
 <li><em>The $M_1\oplus M_3$ Corner of $M_4(\mathbb{C})$</em>, <em>The Involution and the Hermitian Structure of $M_3(\mathbb{C})$</em>: the $1+3$ split and the element-level definitions.</li>
 <li><em>Families of Matrix Representations</em>: the change of frame, $\mathsf W_{\mathcal{F}'}=\mathsf C^{\mathsf T}D\mathsf C$, and why the dagger is the conjugate transpose only here.</li>
 <li><em>The Endomorphisms of the Biquaternion Algebra</em>: $\operatorname{Der}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}/\mathbb{C}e_t$, three complex dimensions, of which the three real of $\mathfrak k$ are the ones in $\mathfrak{su}(4)$.</li>

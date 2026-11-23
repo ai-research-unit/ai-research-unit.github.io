@@ -124,7 +124,7 @@ $$</p>
 <p>and the state is the thermal state of a two-level system with gap $2|\vec h_\Psi|$. <strong>The non-trivial claim.</strong> Every element of $\mathbb{B}_\Psi$ is a two-level Hamiltonian, so the algebra's thermodynamics is the thermodynamics of a qubit <em>by construction</em>; the many-body content comes from the tensor product $\mathbb{B}^{\otimes N}\cong M_{2^{N}}(\mathbb{C})$.</p>
 <p><strong>The Wigner function.</strong></p>
 <p>$$
-\boxed{\;\tilde W_\Xi(r,\vec p)=\frac{1}{(2\pi\hbar)^{3}}\int d^{3}s\,e^{-i\theta_{\mathrm{spa}}}\,\tilde\Xi^{*}\bigl(r-\tfrac{\vec s}{2}\bigr)\tilde\Xi\bigl(r+\tfrac{\vec s}{2}\bigr)\;}
+\boxed{\;\tilde W_\Xi(r,\vec p)=\frac{1}{h^{3}}\int d^{3}s\,e^{-i\theta_{\mathrm{spa}}}\,\tilde\Xi^{*}\bigl(r-\tfrac{\vec s}{2}\bigr)\tilde\Xi\bigl(r+\tfrac{\vec s}{2}\bigr)\;}
 $$</p>
 <p>$$
 \int d^{3}p\,\tilde W_\Xi=\tilde\Xi^{*}(r)\tilde\Xi(r)=|\!|\tilde\Xi|\!|^{2},\qquad
@@ -134,7 +134,7 @@ $$</p>
 \int d^{3}p\,\frac{E}{c}\,\tilde W_\Xi=-i\,m\,J_{\Phi,t}.
 $$</p>
 <p><strong>The non-trivial claim.</strong> The zeroth moment is the density and the first moment is the current, exactly as in the classical case. The Wigner function is the bridge between the quantum state and the fluid reading, and the bridge is exact for the first two moments and fails beyond them (the moments are not a positive measure).</p>
-<p><strong>Matsubara, moving frame, Schwinger–Keldysh.</strong> The Matsubara formalism is the periodic continuation $r'_t\mapsto r'_t+i\beta$; the moving-frame partition function adds the boost $\beta^\mu u_\mu$; the Schwinger–Keldysh contour is the doubled algebra $\mathbb{B}\oplus\mathbb{B}$ with the two copies on the two branches.</p>
+<p><strong>Matsubara, moving frame, Schwinger–Keldysh.</strong> The Matsubara formalism is the periodic continuation $r'_t\mapsto r'_t+i\beta$; the moving-frame partition function adds the boost $\beta^{\imath} u_{\imath}$; the Schwinger–Keldysh contour is the doubled algebra $\mathbb{B}\oplus\mathbb{B}$ with the two copies on the two branches.</p>
 <p><strong>Source.</strong> <code>articles_physics/the-partition-function-in-biquaternionic-form.md</code>, <code>articles_physics/the-wigner-function-in-biquaternionic-form.md</code>, <code>articles_physics/relativistic-wigner-function-and-quantum-kinetics.md</code>, <code>articles_physics/quantum-thermodynamics-in-biquaternionic-form.md</code>, <code>articles_physics/the-matsubara-thermal-formalism-in-biquaternionic-form.md</code>, <code>articles_physics/the-schwinger-keldysh-formalism-in-biquaternionic-form.md</code>.</p>
 <h2 id="2-locality-and-the-modular-structure">2. Locality and the Modular Structure</h2>
 <p><strong>The KMS condition.</strong></p>
@@ -147,7 +147,7 @@ $$</p>
 <p><strong>The non-trivial claim.</strong> KMS is an analyticity statement in the <em>imaginary part of the temporal coordinate</em>, and the temporal coordinate is the one whose unit is $i$. The strip $0<\mathrm{Im}\,r'_t<\beta$ is therefore a strip in the direction the algebra already marks: $\beta$ is measured along the same axis that gives the Lorentzian sign.</p>
 <p><strong>$k_B$ as the scale of imaginary time.</strong></p>
 <p>$$
-\beta=\frac{\hbar}{k_BT},\qquad \boxed{\;c\beta=\frac{\hbar c}{k_BT}\;}
+\beta=\frac{h}{2\pi k_BT},\qquad \boxed{\;c\beta=\frac{h c}{2\pi k_BT}\;}
 $$</p>
 <p><strong>The non-trivial claim, and it is the sharpest in the category.</strong> Since $\beta$ is a <em>length</em> along the temporal axis, and the same length appears in the light-cone condition, the temperature and the local speed of light are inversely related:</p>
 <p>$$
@@ -171,7 +171,7 @@ $$</p>
 \boxed{\;\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{ent}}\bigr)\ge0\;}
 $$</p>
 <p>$$
-\sigma_{\mathrm{ent}}=\frac{1}{T}\Bigl(\zeta\,\theta^{2}+2\eta_{\mathrm{sh}}\,\sigma^{\mathrm{sh}}_{\mu\nu}\sigma^{\mathrm{sh}}_{\mu\nu}+\kappa_{\mathrm{th}}\frac{(\partial_\eta T)^{2}}{T}\Bigr).
+\sigma_{\mathrm{ent}}=\frac{1}{T}\Bigl(\zeta\,\theta^{2}+2\eta_{\mathrm{sh}}\,\sigma^{\mathrm{sh}}_{{\imath}{\jmath}}\sigma^{\mathrm{sh}}_{{\imath}{\jmath}}+\kappa_{\mathrm{th}}\frac{(\partial_\eta T)^{2}}{T}\Bigr).
 $$</p>
 <p><strong>The non-trivial claim.</strong> The second law is the <em>vanishing of the vector part</em>: the divergence of the entropy current must have no vector part, and its scalar part must be non-negative. Equality holds exactly when the three dissipative coefficients vanish.</p>
 <p><strong>The two-fluid model.</strong></p>
@@ -189,15 +189,15 @@ $$</p>
 <p><strong>The non-trivial claim.</strong> The superfluid component carries no entropy, and the entropy production is proportional to the norm of the relative velocity — the mutual friction term. The two-fluid model is therefore a statement about <em>which</em> of the two velocity fields is the thermal one, and the algebra makes the answer a scalar part rather than a choice.</p>
 <p><strong>Spin hydrodynamics and the Frenkel condition.</strong></p>
 <p>$$
-\mathcal F:\quad S_{\Psi,\eta,\lambda\nu}\,v_{\Phi,\nu}=0,\qquad
+\mathcal F:\quad S_{\Psi,\eta,\lambda{\jmath}}\,v_{\Phi,{\jmath}}=0,\qquad
 \partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\,\tilde u_{\mathrm r},\qquad
-\partial_\eta S_{\Psi,\eta,\lambda\nu}=\tau_{\lambda\nu}.
+\partial_\eta S_{\Psi,\eta,\lambda{\jmath}}=\tau_{\lambda{\jmath}}.
 $$</p>
 <p><strong>The non-trivial claim.</strong> The Frenkel condition is the statement that the spin has no component along the velocity, i.e. that the spin bivector is orthogonal to the flow. In the algebra it is automatic: the spin lives in the informational sector and the velocity in the material one, so their pairing vanishes. The corpus states this as an algebraic <em>reason</em> for a condition standard theory imposes.</p>
 <p><strong>Causal dissipation.</strong></p>
 <p>$$
 \tau_\Pi\frac{d\Pi}{d\tau}+\Pi=-\zeta\,\theta,\qquad
-\tau_\pi\frac{d\pi_{\lambda\nu}}{d\tau}+\pi_{\lambda\nu}=-2\eta_{\mathrm{sh}}\,\sigma^{\mathrm{sh}}_{\lambda\nu},
+\tau_\pi\frac{d\pi_{\lambda{\jmath}}}{d\tau}+\pi_{\lambda{\jmath}}=-2\eta_{\mathrm{sh}}\,\sigma^{\mathrm{sh}}_{\lambda{\jmath}},
 $$</p>
 <p>$$
 \omega^{2}+\frac{i}{\tau_q}\omega-\frac{D_{\mathrm{th}}}{\tau_q}k^{2}=0,\qquad
@@ -219,11 +219,11 @@ $$</p>
 <p><strong>The category in six formulas.</strong></p>
 <p>$$
 Z=2\,\mathrm{Sc}\,e^{-\beta\tilde H_\Psi},\qquad
-F_{AB}(r'_t+i\beta)=F_{BA}(-r'_t),\qquad \beta=\frac{\hbar}{k_BT},\qquad c\beta=\frac{\hbar c}{k_BT},
+F_{AB}(r'_t+i\beta)=F_{BA}(-r'_t),\qquad \beta=\frac{h}{2\pi k_BT},\qquad c\beta=\frac{h c}{2\pi k_BT},
 $$</p>
 <p>$$
 \mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde J_{\mathrm{ent}}\bigr)\ge0,\qquad
-S_{\Psi,\eta,\lambda\nu}v_{\Phi,\nu}=0,\qquad D_{\mathrm{th}}\le\tau_qc^{2}.
+S_{\Psi,\eta,\lambda{\jmath}}v_{\Phi,{\jmath}}=0,\qquad D_{\mathrm{th}}\le\tau_qc^{2}.
 $$</p>
 <p><strong>Five results to keep.</strong> The partition function is twice the scalar part of the exponential, i.e. the matrix trace. KMS is analyticity in the imaginary temporal coordinate, the same coordinate that carries the Lorentzian sign. $T\,c=\mathrm{const}$, so the local temperature tracks the local light speed. The second law is the vanishing of the vector part of the entropy divergence. The Frenkel condition is automatic because spin and velocity live in different sectors.</p>
 <p><strong>Three refusals.</strong> The category does not prove that the framework is right. It does not claim that $T\,c=\mathrm{const}$ is a prediction: it is a reading. It does not derive the two-fluid model from a microscopic theory; it fixes which velocity carries the entropy.</p>
@@ -253,7 +253,7 @@ $$</p>
 <td>entropy density</td>
 </tr>
 <tr>
-<td>$S_{\Psi,\eta,\lambda\nu}$</td>
+<td>$S_{\Psi,\eta,\lambda{\jmath}}$</td>
 <td>spin tensor</td>
 </tr>
 <tr>

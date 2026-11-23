@@ -78,7 +78,7 @@
 <p><em>Third, the gradient energy is indefinite at this rung and positive at the rung below.</em> Because the operator is the d'Alembertian and not the Laplacian, the energy carried by the density's variation has one sign for the spatial gradients and the opposite sign for the temporal one. The relativistic fluid therefore has no positive-definite energy functional, and that is the action's way of saying what the block says in another place: the density is not positive definite and the fluid has two sheets.</p>
 <p>Position in the block. This is the variational companion of <a href="the-spin-zero-fluid.html">The Spin-Zero Fluid</a> and the third of the eight articles of this layer. It is the first in which the operator is the d'Alembertian, and the first in which the action's density and the current's density are different objects.</p>
 <h2 id="conventions">Conventions</h2>
-<p>The conventions are restated here so that every sign below is checkable from this page alone. $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$, $\rho_{\mathrm{num}}=\varrho^{2}$, $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, $\tilde P_\Phi=\tilde\nabla_\Phi S_{\tilde\Xi}=i(E/c)e_t+\vec p$, $\tilde V_\Phi=\tilde P_\Phi/m$, $k_m=\frac{2\pi mc}{h}$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r'_{t}}^{2}$ with $r'_t=ct$. The temporal slot carries the $i$, so $\sum_{\imath} p_{\imath} p_{\imath}=-m^{2}c^{2}$ on the free shell. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ and the conjugations are $*$ and $^{\natural}$. The action is a functional over four-dimensional space with $\mathrm{d}^4\varrho=\mathrm{d}r'_t\,\mathrm{d}^3\varrho$.</p>
+<p>The conventions are restated here so that every sign below is checkable from this page alone. $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$, $\rho_{\mathrm{num}}=\varrho^{2}$, $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, $\tilde P_\Phi=\tilde\nabla_\Phi S_{\tilde\Xi}=i(E/c)e_t+\vec p$, $\tilde V_\Phi=\tilde P_\Phi/m$, $\nu_m=\frac{mc}{h}$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r'_{t}}^{2}$ with $r'_t=ct$. The temporal slot carries the $i$, so $\sum_{\imath} p_{\imath} p_{\imath}=-m^{2}c^{2}$ on the free shell. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ and the conjugations are $*$ and $^{\natural}$. The action is a functional over four-dimensional space with $\mathrm{d}^4\varrho=\mathrm{d}r'_t\,\mathrm{d}^3\varrho$.</p>
 <h2 id="the-action-in-the-fluid-variables">The Action in the Fluid Variables</h2>
 <p>The polar action is quadratic in the bracket, and in the scalar case the bracket is the phase's and the amplitude's derivatives. With $\mathcal A_{\imath}=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi=\partial_{\imath}\ln \varrho+i\partial_{\imath}\theta_{\mathrm{pha}}$,</p>
 <p>$$
@@ -88,7 +88,7 @@ $$</p>
 <p>$$
 \boxed{\;\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}\Bigl[\sum_{\imath} V_{\Phi,\imath}V_{\Phi,\imath}+c^{2}\Bigr]-\frac{h^{2}}{8\pi^{2}m}\sum_{\imath}(\partial_{\imath} \varrho)^{2}\;}
 $$</p>
-<p>with $V_{\Phi,\imath}=\partial_{\imath} S_{\tilde\Xi}/m=\partial_{\imath}\theta_{\mathrm{pha}}/k_m$.</p>
+<p>with $V_{\Phi,\imath}=\partial_{\imath} S_{\tilde\Xi}/m=\partial_{\imath}\theta_{\mathrm{pha}}/\nu_m$.</p>
 <p>The dust term's bracket is the shell's left-hand side. That is not a coincidence of notation: the bracket is $\sum_{\imath} V_{\imath} V_{\imath}+c^{2}$, which the block's article sets equal to $-2Q_{\mathrm{qnt}}/m$, so the first term is $-\frac{m\rho_{\mathrm{num}}}{2}\cdot(-2Q_{\mathrm{qnt}}/m)=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}$ on shell. <strong>The dust term is not zero on shell and the action is not a constraint generator in disguise</strong>: what vanishes on the free shell is the bracket at $Q_{\mathrm{qnt}}=0$, and the quantum potential is exactly what the bracket measures.</p>
 <p>The two terms are energies per proper volume, and the current is not. $\rho_{\mathrm{num}}$ is the proper density and the action is written against proper volume; the current's temporal component is $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, the charge density, and it is measured against lab volume. The factor $\gamma$ between them is a Jacobian and not a dynamical statement, and it is why the block's notation table carries two densities with one action. At the rung below there is one density because there is no norm for a $\gamma$.</p>
 <p>There is no term in $\rho_{\mathrm{num}}$ alone apart from the mass term, and that is why the fluid has no equation of state. A barotropic fluid's pressure is the derivative of an energy with respect to the density at fixed entropy; here the only such derivative is $mc^{2}$, a constant per particle, so the bulk pressure vanishes identically. What survives is the gradient energy's pressure, which is the block's $\sigma^{Q}_{ij}$. The absence of an equation of state is visible in the action as the absence of a term, and the block's denial of one is the same statement made about the equations.</p>
@@ -223,7 +223,7 @@ $$</p>
 <td>Signed Lorentz factor; the Jacobian between the two densities</td>
 </tr>
 <tr>
-<td>$k_m=\frac{2\pi mc}{h}$</td>
+<td>$\nu_m=\frac{mc}{h}$</td>
 <td>Mass wave number</td>
 </tr>
 <tr>

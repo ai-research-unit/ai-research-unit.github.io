@@ -194,13 +194,13 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The distance measure, written once. In the generalised $k_T$ family,</p>
+<p>The distance measure, written once. In the generalised $\nu_T$ family,</p>
 <p>$$
-d_{ij}=\min\left(k_{Ti}^{2p},k_{Tj}^{2p}\right)\frac{\delta R_{ij}^2}{R^2} ,
+d_{ij}=\min\left(4\pi^{2}\nu_{Ti}^{2p},4\pi^{2}\nu_{Tj}^{2p}\right)\frac{\delta R_{ij}^2}{R^2} ,
 \qquad
-d_{iB}=k_{Ti}^{2p} ,
+d_{iB}=4\pi^{2}\nu_{Ti}^{2p} ,
 $$</p>
-<p>with $\delta R_{ij}^2=\delta\eta_{ij}^2+\delta\phi_{ij}^2$. The exponent $p$ selects the algorithm: $p=1$ is $k_T$, $p=0$ is Cambridge–Aachen, $p=-1$ is anti-$k_T$, and the last is the default at the LHC because it produces geometrically regular jets.</p>
+<p>with $\delta R_{ij}^2=\delta\eta_{ij}^2+\delta\phi_{ij}^2$. The exponent $p$ selects the algorithm: $p=1$ is $\nu_T$, $p=0$ is Cambridge–Aachen, $p=-1$ is anti-$\nu_T$, and the last is the default at the LHC because it produces geometrically regular jets.</p>
 <p><strong>Why the definition is part of the prediction.</strong> The number of jets in an event is not a property of the event. It is a property of the event and the resolution: at a coarse resolution any event is two-jet, at a fine one every event is many-jet. So a cross section "for three jets" is meaningless until the resolution is given, and the resolution is a number that must be stated and, ideally, varied to show that the dependence is under control. This is not a technicality of experimental practice. It is the same statement as <a href="confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">the confinement article's</a> that the parton picture is a description at a resolution, made quantitative.</p>
 <h2 id="the-three-jet-rate">The Three-Jet Rate</h2>
 <p>Where the third jet comes from. At order $\alpha_s$ the process $e^+e^-\to q\bar qg$ contributes, and it is the whole of the three-jet rate at that order. The rate is</p>
@@ -258,7 +258,7 @@ $$</p>
 <p>The correction column is $-\tfrac32\ln(1/y)$ multiplied by the same prefactor, and the last column is their sum. The last row is the point of the table, and the columns say different things. The leading logarithm alone exceeds one, which is already impossible for a rate. The subleading term is not a small correction — at $y=0.02$ it is $-0.59$ against a leading term of $1.53$ — and it pulls the sum down to $0.94$, still of order one and still far above the measured fraction at that resolution. A series whose second term is forty per cent of its first has not been truncated anywhere useful. So the leading-logarithmic calculation is not merely imprecise at the resolutions of interest; no truncation of it is trustworthy there, and what must be done is to sum the logarithms to all orders. That is the subject of the next five sections, and it is the reason the parton shower exists.</p>
 <p>Why the logarithms are squared. One logarithm comes from the energy integration over a soft gluon, $\int dE/E$; the other from the angle integration over a collinear emission, $\int d\theta/\theta$. Each runs over a range fixed by the resolution, and the two ranges are independent, so the emission probability is a product of two logs — a double logarithm. The physics is that a gluon is soft <em>and</em> collinear at once, and both limits are singular.</p>
 <h2 id="two-divergences-named">Two Divergences, Named</h2>
-<p>Soft. A gluon emitted with energy $E\to0$ has an amplitude proportional to $1/E$, because the emission is a classical radiation field and the field of a slowly moving charge is the Coulomb field. The squared amplitude is therefore $1/E^2$, and the three-body phase space carries a factor $E$ from $d^3k_\Phi/2E$, so the rate goes as $dE/E$: one power cancels and the other survives as the logarithm. The integral</p>
+<p>Soft. A gluon emitted with energy $E\to0$ has an amplitude proportional to $1/E$, because the emission is a classical radiation field and the field of a slowly moving charge is the Coulomb field. The squared amplitude is therefore $1/E^2$, and the three-body phase space carries a factor $E$ from $d^3\nu_{\Phi}/2E$, so the rate goes as $dE/E$: one power cancels and the other survives as the logarithm. The integral</p>
 <p>$$
 \int_0^{E_{\max}}\frac{dE}{E}
 $$</p>
@@ -525,7 +525,7 @@ $$</p>
 <h2 id="what-the-framework-supplies">What the Framework Supplies</h2>
 <p>Two things, and both are kinematic.</p>
 <p>The null structure, again. The eikonal and the collinear factorisation both rest on a light-cone decomposition, and $\mathbb{B}$'s null objects — the nilpotent elements and their exact unipotent exponentials — host that decomposition, as <a href="the-parton-model-and-deep-inelastic-scattering.html">the parton-model article</a> recorded. The unipotent element is a null rotation and not a boost: it rescales neither null component, so it is the carrier of the light-cone structure and not the dilation that makes $x$ scale invariant. The angular ordering is an interference effect between amplitudes emitted at different angles, and interference is what the algebra's two-sector structure is built to describe. So the algebra hosts the <em>kinematics of the emission</em> and the <em>form of the interference</em>, and nothing more.</p>
-<p><strong>The limitation, stated plainly.</strong> The divergences are properties of a gauge theory's phase space, and the cancellation is a theorem about that phase space. Neither the phase space nor the theorem is an object of $\mathbb{B}$: the algebra has no $SU(3)$, no triplet, and no measure that would make $\int d^3k_\Phi/2E$ an algebraic operation. So the whole of this article is transcription.</p>
+<p><strong>The limitation, stated plainly.</strong> The divergences are properties of a gauge theory's phase space, and the cancellation is a theorem about that phase space. Neither the phase space nor the theorem is an object of $\mathbb{B}$: the algebra has no $SU(3)$, no triplet, and no measure that would make $\int d^3\nu_{\Phi}/2E$ an algebraic operation. So the whole of this article is transcription.</p>
 <p>The ledger.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -640,7 +640,7 @@ $$</p>
 <td>Pairwise and beam distances in a sequential algorithm</td>
 </tr>
 <tr>
-<td>$k_T$, $\eta$, $\phi$</td>
+<td>$\nu_T$, $\eta$, $\phi$</td>
 <td>Transverse momentum, pseudorapidity, azimuth</td>
 </tr>
 <tr>

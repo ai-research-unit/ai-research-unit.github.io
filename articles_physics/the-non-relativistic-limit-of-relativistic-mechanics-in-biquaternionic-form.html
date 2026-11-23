@@ -72,7 +72,7 @@
         <h1 id="the-non-relativistic-limit-of-relativistic-mechanics-in-biquaternionic-form"><strong>The Non-Relativistic Limit of Relativistic Mechanics in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>Relativistic mechanics in biquaternion form rests on one element and one constraint. The element is the four-velocity, $\tilde V_{\Phi}=\gamma\left(ic\,e_{t}+\vec v\right)$, a biquaternion of the material sector. The constraint is its norm, $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$, the same for every particle and in every frame. The four-momentum, the four-wave-number, the four-current and the potential of one charge are that element multiplied by a scale.</p>
-<p>The goal. The article gives one approximation per element, for $\tilde V_{\Phi}$, $\tilde P_{\Phi}$, $\tilde K_{\Phi}$, $\tilde J_{\Phi}$ and $\tilde A_{\Phi}$, correct to order $\beta^{2}$ in the speed, with the coefficient of the next term stated. It attempts nothing else. There is no wave equation here, no spin, and no transformation law between frames.</p>
+<p>The goal. The article gives one approximation per element, for $\tilde V_{\Phi}$, $\tilde P_{\Phi}$, $\tilde\Upsilon_{\Phi}$, $\tilde J_{\Phi}$ and $\tilde A_{\Phi}$, correct to order $\beta^{2}$ in the speed, with the coefficient of the next term stated. It attempts nothing else. There is no wave equation here, no spin, and no transformation law between frames.</p>
 <p>One parameter and one rule. The two parts of the element are $\gamma c$ and $\gamma v$, and their ratio is $\beta=\lvert\vec v\rvert/c$ exactly. The limit is the statement that this ratio is small. One rule covers the five elements: keep the excess of $\gamma$ to order $\beta^{2}$ in the temporal slot, drop it in the vector slot. The error of the rule is a closed form, and it differs between the two slots.</p>
 <p>Why the velocity and not the momentum. The four-momentum is $\tilde P_{\Phi}=m\tilde V_{\Phi}$, and the mass is a free real scale: the norm is homogeneous and the light cone is scale-invariant. A limit taken on $\tilde P_{\Phi}$ carries the mass in every coefficient, and the mass then enters by a route the constraint never authorised. Taken on $\tilde V_{\Phi}$ the limit is a statement about a dimensionless element, and the mass enters once, at the end, where the scale is attached.</p>
 <p>What is not new. The algebra is that of <em>Relativistic Mechanics in Biquaternionic Form</em>, and the expansion of $1/\sqrt{1-\beta^{2}}$ is textbook. What the article isolates is the order of the moves: write the norm in two parts, expand $\gamma$ once, keep the leading correction of the temporal slot, then attach the scale.</p>
@@ -154,11 +154,11 @@ $$</p>
 <td>$\frac{3}{8}imc\,\beta^{4}e_{t}+\frac{\beta^{2}}{2}m\vec v$</td>
 </tr>
 <tr>
-<td>$\tilde K_{\Phi}$</td>
-<td>$k_m/c$</td>
-<td>$ik'_{t}e_{t}+\vec k_{\Phi}$</td>
-<td>$ik_m\left(1+\frac{\beta^{2}}{2}\right)e_{t}+k_m\vec\beta$</td>
-<td>$\frac{3}{8}ik_m\beta^{4}e_{t}+\frac{\beta^{2}}{2}k_m\vec\beta$</td>
+<td>$\tilde\Upsilon_{\Phi}$</td>
+<td>$\nu_m/c$</td>
+<td>$ik'_{t}e_{t}+\vec\nu_{\Phi}$</td>
+<td>$i\nu_m\left(1+\frac{\beta^{2}}{2}\right)e_{t}+\nu_m\vec\beta$</td>
+<td>$\frac{3}{8}i\nu_m\beta^{4}e_{t}+\frac{\beta^{2}}{2}\nu_m\vec\beta$</td>
 </tr>
 <tr>
 <td>$\tilde J_{\Phi}$</td>
@@ -176,7 +176,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>with $\vec\beta=\vec v/c$, $k_m=\frac{2\pi mc}{h}$, $k'_{t}=\frac{2\pi E}{h\,c}$, $\vec k_{\Phi}=\frac{2\pi \vec p}{h}$, $E=\gamma mc^{2}$, $\vec p=\gamma m\vec v$, $\rho$ the charge density of $\tilde J_{\Phi}$ and $\tilde A_{\Phi}=ia'_{t}e_{t}+\vec A$, the coefficient $a'_{t,0}$ being its value at rest. The readings of the three wave numbers are the subject of <em>The Three Wavenumbers of a Particle</em>. The first row is the base case; the second is its scale; the last three are the same statement in wave numbers, in a charge density and in a potential.</p>
+<p>with $\vec\beta=\vec v/c$, $\nu_m=\frac{mc}{h}$, $k'_{t}=\frac{2\pi E}{h\,c}$, $2\pi\vec\nu_{\Phi}=\frac{\vec p}{h}$, $E=\gamma mc^{2}$, $\vec p=\gamma m\vec v$, $\rho$ the charge density of $\tilde J_{\Phi}$ and $\tilde A_{\Phi}=ia'_{t}e_{t}+\vec A$, the coefficient $a'_{t,0}$ being its value at rest. The readings of the three wave numbers are the subject of <em>The Three Wavenumbers of a Particle</em>. The first row is the base case; the second is its scale; the last three are the same statement in wave numbers, in a charge density and in a potential.</p>
 <p>The energy and the momentum. The row for $\tilde P_{\Phi}$ reads off as</p>
 <p>$$
 E=mc^{2}\left(1+\frac{\beta^{2}}{2}\right),
@@ -350,8 +350,8 @@ $$</p>
 <td>Excess energy; equal to $\frac{1}{2}mv^{2}$ after truncation</td>
 </tr>
 <tr>
-<td>$k_m=\frac{2\pi mc}{h}$, $k'_{t}=\frac{2\pi E}{h\,c}$, $\vec k_{\Phi}=\frac{2\pi \vec p}{h}$</td>
-<td>The three wave numbers of $\tilde K_{\Phi}=\left(k_m/c\right)\tilde V_{\Phi}$</td>
+<td>$\nu_m=\frac{mc}{h}$, $k'_{t}=\frac{2\pi E}{h\,c}$, $2\pi\vec\nu_{\Phi}=\frac{\vec p}{h}$</td>
+<td>The three wave numbers of $\tilde\Upsilon_{\Phi}=\left(\nu_m/c\right)\tilde V_{\Phi}$</td>
 </tr>
 <tr>
 <td>$\rho=\gamma\rho_{0}$, $\vec j=\rho\vec v$</td>

@@ -163,11 +163,11 @@ $$</p>
 <p>The time derivative in front of the two rotation terms belongs there: it is what makes the deformed terms cancel for a plane wave, and it is easily lost in the two-column layout of the source. At $\vec\kappa=0$ these are the ordinary wave equations. At $\vec\kappa\ne0$ they are non-linear, because $\vec d$ and $\vec h$ are quadratic in the fields.</p>
 <p>The striking result is that the <strong>plane electromagnetic wave is still a solution</strong>. With the usual ansatz</p>
 <p>$$
-\vec E = \vec E_0\,\exp(ik_{\Phi,\imath} x_{\imath}),
+\vec E = \vec E_0\,\exp(2\pi i\nu_{\Phi,\imath} x_{\imath}),
 \qquad
-\vec B = (\vec u\times\vec E_0)\,\exp(ik_{\Phi,\imath} x_{\imath}),
+\vec B = (\vec u\times\vec E_0)\,\exp(2\pi i\nu_{\Phi,\imath} x_{\imath}),
 \qquad
-\vec u = \vec k_\Phi/|\vec k_\Phi|,
+\vec u = 2\pi\vec\nu_\Phi/|2\pi\vec\nu_\Phi|,
 $$</p>
 <p>the non-linear terms arrange themselves to cancel, and the plane wave solves the deformed equations exactly as it solves the linear ones. The cancellation is worth one line of algebra because it is not an accident: for a vacuum plane wave $\vec E^2=\vec B^2$, so the last term of $\vec h$ drops; $\vec d$ and $\vec h$ become the transverse pair multiplying the single phase $\exp(2ik_{\Phi,\imath} x_{\imath})$; the double-frequency phase squares the wave vector, and the vacuum dispersion $N=0$ makes the deformed contributions vanish identically, for every $\vec\kappa$ (checked for the companion <code>.context</code>, where dropping the two time derivatives — as the column layout invites — makes the same test fail). Two consequences follow. First, <strong>"plane wave" does not imply "linear theory"</strong>: non-linearity does not by itself destroy plane-wave propagation, and the corpus's <em>Exercise: Plane-Wave Propagation in a Medium</em> is, in this picture, the linear limit of a one-parameter family. Second, the deformation is nonetheless physically present, because it does affect the speed. The source cites the result that for propagation transverse to a background magnetic induction the velocity differs from $c$ — a birefringence-like effect that is a direct consequence of the non-linearity and that is very small, being suppressed by $\vec\kappa$.</p>
 <p>The honest interpretation is therefore: the plane-wave solution is exact, and the deviation from $c$ is a computable consequence of a specified deformation, not a new free parameter. The source attributes both the plane-wave observation and the transverse-velocity result to Guralnik, Jackiw, Pi and Polychronakos, and reports them rather than deriving them. The corpus's empirical standard applies — the effect is real but $\kappa$-suppressed, so nothing here is a candidate sign.</p>

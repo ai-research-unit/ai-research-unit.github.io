@@ -81,7 +81,7 @@
 <h2 id="the-three-things-called-left-and-right">The Three Things Called Left and Right</h2>
 <p><strong>First, the slot of an operator.</strong> An operator of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is a basis operator $L_aR_b$: the left slot holds $a$ and the right slot holds $b$. The pure left multipliers form a four-dimensional space $L(\mathbb{B})$, the pure right multipliers another, $R(\mathbb{B})$, they meet in the scalars, and their sum is seven-dimensional inside the sixteen. The label is read from the basis operator and from nothing else. This is <strong>operator chirality</strong>, and it splits operators, not fields.</p>
 <p><strong>Second, the label of an element.</strong> The fifth basis operator $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$ is an involution of spectrum $+1,+1,-1,-1$, so every element $\tilde Q$ splits into $\tilde Q_+$ and $\tilde Q_-$, written $\tilde{Ξ}^{\mathrm{sp}}_R$ and $\tilde{Ξ}^{\mathrm{sp}}_L$ in the letters of the Dirac literature. This is the <strong>value</strong> or <strong>subscript</strong> of an element, and it splits the algebra, two complex dimensions on each side.</p>
-<p><strong>Third, the helicity of a field.</strong> The projection $\lambda=\vec u_p\cdot\vec S$ of the spin on a declared axis has the spectrum $\hbar h$ on a carrier of spin $s$. This is a label of a <strong>state</strong>, and it needs an axis that the algebra does not supply.</p>
+<p><strong>Third, the helicity of a field.</strong> The projection $\lambda=\vec u_p\cdot\vec S$ of the spin on a declared axis has the spectrum $\frac{h}{2\pi} h$ on a carrier of spin $s$. This is a label of a <strong>state</strong>, and it needs an axis that the algebra does not supply.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -198,7 +198,7 @@ $$</p>
 <h3 id="3-the-dirac-current">3. The Dirac Current</h3>
 <p><strong>The split.</strong> The current has a vector part and an axial part, and the axial part is the vector part followed by the chirality basis operator. The divergence of the axial current is proportional to the mass,</p>
 <p>$$
-\sum_\mu\frac{\partial j_{5\mu}}{\partial x_\mu}=2m\,\tilde{Ξ}^{\mathrm{sp}*}\,iR_{\vec e_x}^{\mathrm{axf}}\bigl(\tilde{Ξ}^{\mathrm{sp}}\vec e_z\bigr),
+\sum_{\imath}\frac{\partial j_{5{\imath}}}{\partial x_{\imath}}=2m\,\tilde{Ξ}^{\mathrm{sp}*}\,iR_{\vec e_x}^{\mathrm{axf}}\bigl(\tilde{Ξ}^{\mathrm{sp}}\vec e_z\bigr),
 $$</p>
 <p>so the axial current is conserved exactly when the coupling of object 1 vanishes.</p>
 <p><strong>Relation to the Dirac case.</strong> The same split read on a bilinear. The mass appears as the divergence rather than as a term of the equation, and that is the same fact in a second place.</p>
@@ -243,7 +243,7 @@ $$</p>
 <h3 id="6-the-raritaschwinger-field">6. The Rarita–Schwinger Field</h3>
 <p><strong>The split.</strong> The carrier is a family of four algebra elements, one per spacetime index, and the dynamics is the chiral pair written once for each,</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_{\mu,R}=m\tilde{Ξ}^{\mathrm{sp}}_{\mu,L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_{\mu,L}=m\tilde{Ξ}^{\mathrm{sp}}_{\mu,R},
+\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_{{\imath},R}=m\tilde{Ξ}^{\mathrm{sp}}_{{\imath},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_{{\imath},L}=m\tilde{Ξ}^{\mathrm{sp}}_{{\imath},R},
 $$</p>
 <p>with the trace constraint and the divergence constraint on top. The chirality basis operator is the right multiplication by $-i\vec e_z$, which that article writes $\omega=-\vec e_z$, the factor $i$ being carried separately.</p>
 <p><strong>Relation to the Dirac case.</strong> Four copies of it, with two constraints. Nothing new in the split itself; what is new is that four copies must be tied together.</p>
@@ -299,7 +299,7 @@ $$</p>
 <h3 id="11-the-weak-vertex">11. The Weak Vertex</h3>
 <p><strong>The split.</strong> The vertex is one basis operator, and its chiral mixture is one basis operator times the chirality basis operator,</p>
 <p>$$
-\Gamma_\mu(g_V-g_A\chi).
+\Gamma_{\imath}(g_V-g_A\chi).
 $$</p>
 <p>The article's result is that this basis operator is <strong>nilpotent exactly at</strong> $|g_A|=|g_V|$, that is exactly for $V-A$ and for $V+A$, and invertible for every other pair of weights.</p>
 <p><strong>Relation to the Dirac case.</strong> The Dirac split read on a vertex, with a sharp criterion attached: $V-A$ is a choice of one half, and the algebra puts it on the same footing as $V+A$. The algebra selects the shape and not the choice.</p>
@@ -531,7 +531,7 @@ $$</p>
 <td>the array of the quaternion conjugation, $\operatorname{diag}(1,-1,-1,-1)$; $\mathsf C L(a^{\natural})\mathsf C=R(a)$</td>
 </tr>
 <tr>
-<td>$j_{5\mu}$</td>
+<td>$j_{5{\imath}}$</td>
 <td>the axial current; its divergence is proportional to the mass</td>
 </tr>
 </tbody>

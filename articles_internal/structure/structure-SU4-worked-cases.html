@@ -106,7 +106,7 @@ $$</p>
 <tr>
 <td>the Conway array</td>
 <td>$4\times4$ of words</td>
-<td>the coefficients $c_{\mu\nu}$ in $M=\sum c_{\mu\nu}e_\mu[\,]e_\nu$, of length $\ell=\operatorname{rank}c$</td>
+<td>the coefficients $c_{{\imath}{\jmath}}$ in $M=\sum c_{{\imath}{\jmath}}e_{\imath}[\,]e_{\jmath}$, of length $\ell=\operatorname{rank}c$</td>
 </tr>
 </tbody>
 </table></div>
@@ -198,12 +198,12 @@ g=\begin{pmatrix}\tfrac{1}{\sqrt2}&-\tfrac{1}{\sqrt2}&0&0\\[2pt] \tfrac{1}{\sqrt
 $$</p>
 <p>Checks: $g^{\dagger}g=\mathrm{I}_4$ to $2\times10^{-16}$, $\det g=1$, and the first column is $\tfrac{1}{\sqrt2}(1,1,0,0)$ — <strong>not</strong> $e_t$.</p>
 <p><strong>The block.</strong> In the $1+3$ split, $\alpha=\tfrac{1}{\sqrt2}$, $w=(\tfrac{1}{\sqrt2},0,0)^{\mathsf T}$ and $A=\mathrm{I}_3$: the unit coordinate and one vector coordinate are mixed, the other two are untouched.</p>
-<p><strong>The Conway array.</strong> Solving $g=\sum c_{\mu\nu}e_\mu[\,]e_\nu$ gives four non-zero entries, all in the $(t,x)\times(t,x)$ corner:</p>
+<p><strong>The Conway array.</strong> Solving $g=\sum c_{{\imath}{\jmath}}e_{\imath}[\,]e_{\jmath}$ gives four non-zero entries, all in the $(t,x)\times(t,x)$ corner:</p>
 <p>$$
 c=\begin{pmatrix}\cos^{2}\tfrac{\pi}{8}&\cos\tfrac{\pi}{8}\sin\tfrac{\pi}{8}&0&0\\[2pt] \cos\tfrac{\pi}{8}\sin\tfrac{\pi}{8}&\sin^{2}\tfrac{\pi}{8}&0&0\\[2pt] 0&0&0&0\\[2pt] 0&0&0&0\end{pmatrix}
 =\begin{pmatrix}0.853553&0.353553\\0.353553&0.146447\end{pmatrix}_{\!\!(t,x)},
 $$</p>
-<p>of rank <strong>one</strong>. Writing it as an outer product $c_{\mu\nu}=u_\mu u_\nu$ with</p>
+<p>of rank <strong>one</strong>. Writing it as an outer product $c_{{\imath}{\jmath}}=u_{\imath} u_{\jmath}$ with</p>
 <p>$$
 u=\cos\tfrac{\pi}{8}\,e_t+\sin\tfrac{\pi}{8}\,\vec e_x=(0.923880,\;0.382683,\;0,\;0),
 $$</p>
@@ -373,7 +373,7 @@ $$</p>
 <p>So the image of the unit coefficient is not itself: it receives a contribution $-\bar w^{\mathsf T}v$ from the vector part, and the vector part receives $Q_t w$. <strong>The decomposition $\mathbb{C}e_t\oplus B_V$ is not preserved</strong> unless $w=0$.</p>
 <p><strong>The invariance.</strong> For every $g\in\mathrm{SU}(4)$ and every $\tilde Q$,</p>
 <p>$$
-\langle g\cdot\tilde Q\rangle_{*}=\langle\tilde Q\rangle_{*}=\sum_\mu|Q_\mu|^{2}.
+\langle g\cdot\tilde Q\rangle_{*}=\langle\tilde Q\rangle_{*}=\sum_{\imath}|Q_{\imath}|^{2}.
 $$</p>
 <p>Verified on $Q=(1+2i,3,-1,i)$: norm $16$ before, $16$ after, to $10^{-15}$.</p>
 <p><strong>Transitivity.</strong> Given any unit vector $v\in\mathbb{C}^{4}$ there is $g\in\mathrm{SU}(4)$ with $g\,e_t=v$: complete $v$ to a unitary by Gram–Schmidt and correct the determinant by a phase on one column. Verified for $v=\tfrac12(1,i,-1,1)$, residual $0$ and $\det=1$. So the orbit of $e_t$ is the unit sphere $S^{7}$, of dimension seven, and</p>
@@ -389,7 +389,7 @@ $$</p>
 g_0=\exp\bigl(\tfrac{\pi}{4}M_x\bigr),\qquad
 g_0\,e_t=\tfrac{1}{\sqrt2}(e_t+\vec e_x),\qquad \ell(g_0)=1,
 $$</p>
-<p>chosen because its arithmetic closes in form: $g_0\cdot\tilde Q$ is the sandwich $u\tilde Qu$ with $u=\cos\tfrac{\pi}{8}e_t+\sin\tfrac{\pi}{8}\vec e_x$. In both tables $N(\tilde Q)=\sum_\mu Q_\mu^{2}$ is the multiplicative norm, of signature $(2,2)$.</p>
+<p>chosen because its arithmetic closes in form: $g_0\cdot\tilde Q$ is the sandwich $u\tilde Qu$ with $u=\cos\tfrac{\pi}{8}e_t+\sin\tfrac{\pi}{8}\vec e_x$. In both tables $N(\tilde Q)=\sum_{\imath} Q_{\imath}^{2}$ is the multiplicative norm, of signature $(2,2)$.</p>
 <p><strong>Table A: the general element of §8.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -498,7 +498,7 @@ $$</p>
 $$</p>
 <p>The action is not an automorphism of the algebra: twelve of the fifteen dimensions are not derivations, and this is the numerical content of that.</p>
 <p><strong>Where the identity does hold.</strong> On $\mathrm{SO}(3)\subset\mathrm{SO}(4)$, where $g\cdot\tilde Q=a\tilde Qa^{-1}$ with $a$ a real unit. The residual there is zero, and the dividing line is precisely "does the element fix $e_t$ and act orthogonally on $B_V$".</p>
-<p><strong>The norm.</strong> $\langle\cdot\rangle_{*}$ is preserved by everything. $N$ is preserved by $\mathrm{SO}(4)$ and by nothing else in the group. The reason is two lines: $N(\tilde Q)=\sum_\mu Q_\mu^{2}$ is the quadratic form $Q^{\mathsf T}Q$, so a complex-linear $g$ preserves it exactly when $g^{\mathsf T}g=\mathrm{I}$; together with $g^{\dagger}g=\mathrm{I}$ that gives $g^{\mathsf T}=g^{\dagger}$, that is $\overline{g}=g$, so $g$ is real. Table A shows $N$ failing on every row for a complex $g$.</p>
+<p><strong>The norm.</strong> $\langle\cdot\rangle_{*}$ is preserved by everything. $N$ is preserved by $\mathrm{SO}(4)$ and by nothing else in the group. The reason is two lines: $N(\tilde Q)=\sum_{\imath} Q_{\imath}^{2}$ is the quadratic form $Q^{\mathsf T}Q$, so a complex-linear $g$ preserves it exactly when $g^{\mathsf T}g=\mathrm{I}$; together with $g^{\dagger}g=\mathrm{I}$ that gives $g^{\mathsf T}=g^{\dagger}$, that is $\overline{g}=g$, so $g$ is real. Table A shows $N$ failing on every row for a complex $g$.</p>
 <p><strong>The decomposition.</strong> The split $\mathbb{C}e_t\oplus B_V$ is preserved exactly by the elements with $w=0$, i.e. by $\mathfrak h$ of dimension $9$ — verified as the centraliser of $D$ in $\mathfrak{su}(4)$, of dimension $9$. So the whole fifteen-dimensional group contains a nine-dimensional subgroup that respects the algebra's own split of the carrier, and six dimensions that destroy it.</p>
 <p><strong>The involution $\theta$.</strong> The conjugation $X\mapsto DXD$ is not preserved by the group: $gDg^{\dagger}\ne D$ for the general element (residual $1.39$), and it is preserved exactly on $\mathfrak h$ (residual $4\times10^{-16}$ for an element built from $\mathrm{ad}$, $S$ and $h$). So $\mathrm{SU}(4)$ acts on the algebra's conjugation without preserving it, and the stabiliser of the conjugation is the stabiliser of the line.</p>
 <p><strong>The chain of what survives.</strong></p>
@@ -897,7 +897,7 @@ $$</p>
 </tr>
 <tr>
 <td>$N$, $\langle\cdot\rangle_{*}$</td>
-<td>the multiplicative norm $\sum Q_\mu^{2}$, signature $(2,2)$, and the definite form $\mathrm{Sc}(XY^{*})$</td>
+<td>the multiplicative norm $\sum Q_{\imath}^{2}$, signature $(2,2)$, and the definite form $\mathrm{Sc}(XY^{*})$</td>
 </tr>
 <tr>
 <td>$J$</td>
@@ -910,7 +910,7 @@ $$</p>
 <li><em>The Meaning of $\mathrm{SU}(4)$ in the Endomorphisms of the Biquaternion Algebra</em>: the fifteen dimensions, the two splits, the symmetric pair, the ladder $3+5+6+1$.</li>
 <li><em>Worked Cases for $\mathrm{SU}(3)$ inside the Endomorphisms of the Biquaternion Algebra</em>: the same case list one rung down, where the unit never moves and the whole automorphism group is cheap.</li>
 <li><em>The Meaning of $\mathrm{SU}(2)$ in the Endomorphisms of the Biquaternion Algebra</em>, <em>The Meaning of $\mathrm{SU}(3)$ in the Endomorphisms of the Biquaternion Algebra</em>, <em>The Meaning of $\mathrm{U}(3)$ in the Endomorphisms of the Biquaternion Algebra</em>: the bottom of the ladder, the corner, and its widening to nine dimensions.</li>
-<li><em>$M_4(\mathbb{C})$ Axis-Free Representation</em> (maths category): the two displays, the switch $D$, and the entry rule $R_{\mu\nu}=s_\mu s_\nu L_{\nu\mu}$.</li>
+<li><em>$M_4(\mathbb{C})$ Axis-Free Representation</em> (maths category): the two displays, the switch $D$, and the entry rule $R_{{\imath}{\jmath}}=s_{\imath} s_{\jmath} L_{{\jmath}{\imath}}$.</li>
 <li><em>The Structures of $M_4(\mathbb{C})$</em> (internal): the same matrices read as an algebra, the $1+3$ block, the chains of subgroups.</li>
 <li><em>Introduction to the Operators of the Biquaternion Algebra</em>, <em>Operators Acting on One Side</em>, <em>Operators Acting on Two Sides</em>: $L$, $R$, the words, the length.</li>
 <li><em>The Hermitian Pair of Operators Acting on One Side</em>: the sandwich, which §1 and §4 use as the cheapest element of the group.</li>

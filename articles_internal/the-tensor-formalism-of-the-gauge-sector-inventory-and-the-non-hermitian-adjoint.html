@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="the-tensor-formalism-of-the-gauge-sector-where-it-is-and-the-non-hermitian-adjoint"><strong>The Tensor Formalism of the Gauge Sector: Where It Is, and the Non-Hermitian Adjoint</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The gauge articles of the physics corpus use two descriptions at once. One is the biquaternion algebra: a product, an involution, a trace. The other is a component description: an index $\mu$, a derivative $\partial_\mu$, a one-form $A_\mu$, a two-form $F_{\mu\nu}$. The second description is not contained in the first. It is a foreign layer, and this article records where it sits.</p>
+<p>The gauge articles of the physics corpus use two descriptions at once. One is the biquaternion algebra: a product, an involution, a trace. The other is a component description: an index $\mu$, a derivative $\partial_{\imath}$, a one-form $A_{\imath}$, a two-form $F_{{\imath}{\jmath}}$. The second description is not contained in the first. It is a foreign layer, and this article records where it sits.</p>
 <p>One count organises the record, and it replaces the count of an earlier version of this article. <strong>Fifteen articles that use the component description write at least one conjugation with an inverse</strong>, $X\mapsto GXG^{-1}$, where the algebra supplies an involution that could stand in its place. The field-strength law alone, $F\mapsto UFU^{-1}$, is written on <strong>thirty-three lines in ten of those articles</strong>.</p>
 <p>The earlier version reported nine occurrences in seven articles. That number was a count of distinct statement sites, not of written occurrences, and it was wrong in three ways. It included <em>Confinement and the Loss of Partonic Information</em>, which writes no field strength at all. It listed <em>Electroweak Theory</em> and <em>Instantons and Solitons</em> only as adjacent, although both write the field-strength law. And it omitted <em>The Stueckelberg Mechanism</em>, which writes it once. The corrected lists are below, with a line number for every entry.</p>
 <p>The defect is not an error of value. On the compact slice $U^{-1}=U^{*}$, so every formula listed here is numerically equal to its Hermitian form. The defect is one of provenance: a law of the algebra written with an operation the algebra does not own.</p>
@@ -89,43 +89,43 @@
 <tbody>
 <tr>
 <td>connection</td>
-<td>$A_\mu$</td>
+<td>$A_{\imath}$</td>
 <td>four algebra elements</td>
 </tr>
 <tr>
 <td>curvature</td>
-<td>$F_{\mu\nu}=-F_{\nu\mu}$</td>
+<td>$F_{{\imath}{\jmath}}=-F_{{\jmath}{\imath}}$</td>
 <td>six independent algebra elements</td>
 </tr>
 <tr>
 <td>covariant derivative</td>
-<td>$D_\mu=\partial_\mu+i\kappa A_\mu$</td>
+<td>$D_{\imath}=\partial_{\imath}+i\kappa A_{\imath}$</td>
 <td>four operators</td>
 </tr>
 <tr>
 <td>current</td>
-<td>$J_\mu$</td>
+<td>$J_{\imath}$</td>
 <td>four algebra elements</td>
 </tr>
 </tbody>
 </table></div>
 <p>$$
-F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu+i\kappa[A_\mu,A_\nu],
+F_{{\imath}{\jmath}}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}+i\kappa[A_{\imath},A_{\jmath}],
 \qquad
-\sum_\mu D_\mu F_{\mu\nu}=J_\nu,
+\sum_{\imath} D_{\imath} F_{{\imath}{\jmath}}=J_{\jmath},
 \qquad
-D_\lambda F_{\mu\nu}+D_\mu F_{\nu\lambda}+D_\nu F_{\lambda\mu}=0.
+D_\lambda F_{{\imath}{\jmath}}+D_{\imath} F_{{\jmath}\lambda}+D_{\jmath} F_{\lambda{\imath}}=0.
 $$</p>
-<p>The two operations are the index shift $\mu\mapsto\nu$ and the derivative $\partial_\mu$. Neither is an operation of $\mathbb{B}$. The algebra is closed under product, adjoint and trace; it has no coordinate, no index and no derivative. The component description therefore carries the algebra along as a coefficient space and does its real work outside it.</p>
+<p>The two operations are the index shift ${\imath}\mapsto{\jmath}$ and the derivative $\partial_{\imath}$. Neither is an operation of $\mathbb{B}$. The algebra is closed under product, adjoint and trace; it has no coordinate, no index and no derivative. The component description therefore carries the algebra along as a coefficient space and does its real work outside it.</p>
 <p>This is why the description is not an extension of the algebra in any technical sense. An extension adds an ideal; this adds a commutative algebra of functions and a set of labels. The labels are what the gauge group does not act on, and the derivative is what the gauge transformation must correct. Both are external, and both are what the corpus would have to replace to write the gauge sector as algebra alone.</p>
 <h2 id="why-it-is-a-problem">Why It Is a Problem</h2>
 <p>Three properties make the layer foreign.</p>
-<p><strong>The index is external.</strong> Four components for $A_\mu$ and six for $F_{\mu\nu}$ are copies of the algebra, tied by antisymmetry and by the commutator. No element of $\mathbb{B}$ supplies the copies. Contracting them with a basis,
+<p><strong>The index is external.</strong> Four components for $A_{\imath}$ and six for $F_{{\imath}{\jmath}}$ are copies of the algebra, tied by antisymmetry and by the commutator. No element of $\mathbb{B}$ supplies the copies. Contracting them with a basis,
 $$
-\mathcal F=\tfrac12 F_{\mu\nu}\,\bar e_\mu e_\nu,
+\mathcal F=\tfrac12 F_{{\imath}{\jmath}}\,\bar e_{\imath} e_{\jmath},
 $$
-stores the numbers in one biquaternion, but the storage is not equivariant: under $F_{\mu\nu}\mapsto UF_{\mu\nu}U^{-1}$ the contracted object does not go to $U\mathcal F U^{-1}$ unless $U$ is central. The Yang–Mills article verifies this failure numerically. The contraction is a summary, not a reduction.</p>
-<p><strong>The derivative is external.</strong> $\partial_\mu$ acts on functions of the base, not on the algebra. A gauge transformation is a function $U(Q)$, and the inhomogeneous term $(\partial_\mu U)U^{-1}$ exists precisely because $U$ varies over the base. An algebra-only formulation has no place for that term.</p>
+stores the numbers in one biquaternion, but the storage is not equivariant: under $F_{{\imath}{\jmath}}\mapsto UF_{{\imath}{\jmath}}U^{-1}$ the contracted object does not go to $U\mathcal F U^{-1}$ unless $U$ is central. The Yang–Mills article verifies this failure numerically. The contraction is a summary, not a reduction.</p>
+<p><strong>The derivative is external.</strong> $\partial_{\imath}$ acts on functions of the base, not on the algebra. A gauge transformation is a function $U(Q)$, and the inhomogeneous term $(\partial_{\imath} U)U^{-1}$ exists precisely because $U$ varies over the base. An algebra-only formulation has no place for that term.</p>
 <p><strong>The adjoint law is written with an inverse.</strong> This is the subject of the next section, and it is the only one of the three that can be repaired without changing the layer.</p>
 <h2 id="the-non-hermitian-adjoint">The Non-Hermitian Adjoint</h2>
 <p>The algebra has one two-sided action that uses only its own structure, the Hermitian pair,
@@ -188,8 +188,8 @@ $$
 A blind substitution of ${}^{*}$ for ${}^{-1}$ therefore doubles the rapidity instead of reversing it. That article records the failure explicitly: the rotation is reproduced by $\tilde U\tilde F\tilde U^{*}$, the boost only by $\tilde U^{-1}\tilde F\tilde U$.</p>
 <p>One gauge article sits on the non-compact slice. <em>Curved Spacetime and the Biquaternion Framework</em> writes the connection on the spinor module as
 $$
-\vec\Gamma_\mu \longmapsto \tilde U\vec\Gamma_\mu\tilde U^{-1}
--\left(\partial/\partial Q_\mu\,\tilde U\right)\tilde U^{-1},
+\vec\Gamma_{\imath} \longmapsto \tilde U\vec\Gamma_{\imath}\tilde U^{-1}
+-\left(\partial/\partial Q_{\imath}\,\tilde U\right)\tilde U^{-1},
 $$
 with $\tilde U$ a Lorentz rotor, an element of $SL(2,\mathbb{C})$ rather than $SU(2)$. There the inverse is load-bearing and the star is not its equal. The earlier version's statement that every gauge parameter in the corpus is unitary is false for this article.</p>
 <h2 id="the-field-strength-law-ten-articles-thirty-three-lines">The Field-Strength Law: Ten Articles, Thirty-Three Lines</h2>
@@ -271,49 +271,49 @@ with $\tilde U$ a Lorentz rotor, an element of $SL(2,\mathbb{C})$ rather than $S
 <tbody>
 <tr>
 <td><a href="../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Gauge Fields</a></td>
-<td>$F_{\mathrm g,\mu\nu}=\tilde QF_{\mu\nu}\tilde Q^{-1}$</td>
+<td>$F_{\mathrm g,{\imath}{\jmath}}=\tilde QF_{{\imath}{\jmath}}\tilde Q^{-1}$</td>
 <td>10</td>
 <td style="text-align: right;">$SU(2)$</td>
 <td>yes</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation</a></td>
-<td>$F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$</td>
+<td>$F_{2,{\imath}{\jmath}}=\tilde UF_{{\imath}{\jmath}}\tilde U^{-1}$</td>
 <td>43</td>
 <td style="text-align: right;">$SU(2)$</td>
 <td>yes</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html">The Yang–Mills Path Integral and the Faddeev–Popov Procedure</a></td>
-<td>$\mathcal A_{2,\mu}=\tilde U\mathcal A_\mu\tilde U^{-1}+\tfrac{i}{\kappa}(\partial_\mu\tilde U)\tilde U^{-1}$</td>
+<td>$\mathcal A_{2,{\imath}}=\tilde U\mathcal A_{\imath}\tilde U^{-1}+\tfrac{i}{\kappa}(\partial_{\imath}\tilde U)\tilde U^{-1}$</td>
 <td>54</td>
 <td style="text-align: right;">$SU(2)$</td>
 <td>yes</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html">Gauge Curvature and the Bianchi Identity</a></td>
-<td>$F_{\mathrm g,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$</td>
+<td>$F_{\mathrm g,{\imath}{\jmath}}=\tilde UF_{{\imath}{\jmath}}\tilde U^{-1}$</td>
 <td>84</td>
 <td style="text-align: right;">$SU(2)$</td>
 <td>yes</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html">Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated</a></td>
-<td>$F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$</td>
+<td>$F_{2,{\imath}{\jmath}}=\tilde UF_{{\imath}{\jmath}}\tilde U^{-1}$</td>
 <td>52</td>
 <td style="text-align: right;">$SU(2)$</td>
 <td>yes</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html">The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors</a></td>
-<td>$F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$</td>
+<td>$F_{2,{\imath}{\jmath}}=\tilde UF_{{\imath}{\jmath}}\tilde U^{-1}$</td>
 <td>84</td>
 <td style="text-align: right;">$SU(2)$</td>
 <td>yes</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html">Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall</a></td>
-<td>$F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$</td>
+<td>$F_{2,{\imath}{\jmath}}=\tilde UF_{{\imath}{\jmath}}\tilde U^{-1}$</td>
 <td>72</td>
 <td style="text-align: right;">$SU(2)$</td>
 <td>yes</td>
@@ -334,21 +334,21 @@ with $\tilde U$ a Lorentz rotor, an element of $SL(2,\mathbb{C})$ rather than $S
 </tr>
 <tr>
 <td><a href="../articles_physics/gauge-redundancy-and-the-information-in-the-gauge-orbit-in-biquaternionic-form.html">Gauge Redundancy and the Information in the Gauge Orbit</a></td>
-<td>$A_\mu\mapsto\tilde QA_\mu\tilde Q^{-1}+\tfrac{i}{\kappa}(\partial_\mu\tilde Q)\tilde Q^{-1}$</td>
+<td>$A_{\imath}\mapsto\tilde QA_{\imath}\tilde Q^{-1}+\tfrac{i}{\kappa}(\partial_{\imath}\tilde Q)\tilde Q^{-1}$</td>
 <td>280</td>
 <td style="text-align: right;">$SU(2)$</td>
 <td>yes</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
-<td>$\vec\Gamma_\mu\mapsto\tilde U\vec\Gamma_\mu\tilde U^{-1}-(\partial_\mu\tilde U)\tilde U^{-1}$</td>
+<td>$\vec\Gamma_{\imath}\mapsto\tilde U\vec\Gamma_{\imath}\tilde U^{-1}-(\partial_{\imath}\tilde U)\tilde U^{-1}$</td>
 <td>255</td>
 <td style="text-align: right;">$SL(2,\mathbb{C})$</td>
 <td><strong>no</strong></td>
 </tr>
 <tr>
 <td><a href="../articles_physics/instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons</a></td>
-<td>$\mathcal F_2=\tfrac12\sum(\tilde UF_{\mu\nu}\tilde U^{-1})\bar e_\mu e_\nu$</td>
+<td>$\mathcal F_2=\tfrac12\sum(\tilde UF_{{\imath}{\jmath}}\tilde U^{-1})\bar e_{\imath} e_{\jmath}$</td>
 <td>235</td>
 <td style="text-align: right;">$SU(2)$</td>
 <td>yes</td>
@@ -369,7 +369,7 @@ with $\tilde U$ a Lorentz rotor, an element of $SL(2,\mathbb{C})$ rather than $S
 </tr>
 <tr>
 <td><a href="../articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html">The Stueckelberg Mechanism</a></td>
-<td>$F_{2,\mu\nu}=UF_{\mu\nu}U^{-1}$</td>
+<td>$F_{2,{\imath}{\jmath}}=UF_{{\imath}{\jmath}}U^{-1}$</td>
 <td>226</td>
 <td style="text-align: right;">$SU(2)$</td>
 <td>yes</td>

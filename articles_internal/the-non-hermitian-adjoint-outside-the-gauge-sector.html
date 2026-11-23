@@ -164,16 +164,16 @@ $$</p>
 $$</p>
 <p>and the matrix is fixed by the requirement that the kinetic term be preserved,</p>
 <p>$$
-C\,\gamma_{\mu\,}^{T}\,C^{-1} \;=\; -\,\gamma_{\mu}.
+C\,\gamma_{{\imath}\,}^{T}\,C^{-1} \;=\; -\,\gamma_{{\imath}}.
 $$</p>
 <p>The transpose, not the inverse or the conjugate, appears because $C$ is the matrix of a bilinear pairing on the module. Two features of this definition must be stated before it is used, and they are the two traps of the subject.</p>
-<p><strong>The matrix is basis-dependent, and the reality condition is basis-dependent in form.</strong> A change of Clifford basis $\gamma_\mu\mapsto S\gamma_\mu S^{-1}$ sends $C\mapsto SCS^{T}$, so the explicit matrix changes with the basis even though the map it defines does not. In the block basis of the Conventions, with $g=\mathrm{diag}(+,-,-,-)$, the choice</p>
+<p><strong>The matrix is basis-dependent, and the reality condition is basis-dependent in form.</strong> A change of Clifford basis $\gamma_{\imath}\mapsto S\gamma_{\imath} S^{-1}$ sends $C\mapsto SCS^{T}$, so the explicit matrix changes with the basis even though the map it defines does not. In the block basis of the Conventions, with $g=\mathrm{diag}(+,-,-,-)$, the choice</p>
 <p>$$
 C \;=\; i\gamma_2\gamma_0 \;=\; \begin{pmatrix}\epsilon&0\\ 0&-\epsilon\end{pmatrix},
 \qquad
 \epsilon \;=\; i\sigma_2 \;=\; \begin{pmatrix}0&1\\ -1&0\end{pmatrix},
 $$</p>
-<p>is antisymmetric, $C^{T}=-C$, with $C^2=-I_4$ and $C^{\dagger}=C^{-1}$, and it satisfies $C\gamma_{\mu}^{T}C^{-1}=-\gamma_\mu$ for $\mu=0,1,2,3$. The same map written in the Dirac basis $\gamma_{\mathrm D}^{0}=\mathrm{diag}(I_2,-I_2)$ has the charge-conjugation matrix $S C S^{T}$, which is a different matrix. The existence of a charge-conjugation matrix is a statement about the signature, not about the basis; its form is a statement about the basis. A calculation that fixes a sign by comparing "$C$" across two papers that use different Clifford bases is comparing two different matrices.</p>
+<p>is antisymmetric, $C^{T}=-C$, with $C^2=-I_4$ and $C^{\dagger}=C^{-1}$, and it satisfies $C\gamma_{{\imath}}^{T}C^{-1}=-\gamma_{\imath}$ for ${\imath}=0,1,2,3$. The same map written in the Dirac basis $\gamma_{\mathrm D}^{0}=\mathrm{diag}(I_2,-I_2)$ has the charge-conjugation matrix $S C S^{T}$, which is a different matrix. The existence of a charge-conjugation matrix is a statement about the signature, not about the basis; its form is a statement about the basis. A calculation that fixes a sign by comparing "$C$" across two papers that use different Clifford bases is comparing two different matrices.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -183,7 +183,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=\mathrm{diag}(-I_2,I_2)$</td>
+<td>$\{\gamma_{\imath},\gamma_{\jmath}\}=2g_{{\imath}{\jmath}}I_4$, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=\mathrm{diag}(-I_2,I_2)$</td>
 <td>all $16$ commutators and anticommutators, exact</td>
 </tr>
 <tr>
@@ -191,13 +191,13 @@ $$</p>
 <td>exact, $C=i\gamma_2\gamma_0$</td>
 </tr>
 <tr>
-<td>$C\gamma_{\mu}^{T}C^{-1}=-\gamma_\mu$</td>
-<td>all $\mu=0,1,2,3$</td>
+<td>$C\gamma_{{\imath}}^{T}C^{-1}=-\gamma_{\imath}$</td>
+<td>all ${\imath}=0,1,2,3$</td>
 </tr>
 </tbody>
 </table></div>
 <p><strong>Remaining issue.</strong> $C^{-1}$ in the defining relation. Line 74 states $C^{\dagger}=C^{-1}$, and the notation row at 119 repeats it. The inverse is already the Hermitian adjoint.</p>
-<p><strong>Fix.</strong> $C^{-1}\to C^{\dagger}$ at lines 61 and 120. Value unchanged. The transpose of $\gamma_{\mu}$ remains, and a biquaternion two-sided operator has no transpose.</p>
+<p><strong>Fix.</strong> $C^{-1}\to C^{\dagger}$ at lines 61 and 120. Value unchanged. The transpose of $\gamma_{{\imath}}$ remains, and a biquaternion two-sided operator has no transpose.</p>
 <h3 id="4-the-biquaternion-basis-of-a-unified-field-fibre-bundle-lines-116-220">4. <a href="../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified Field Fibre Bundle</a>, lines 116, 220</h3>
 <p>The source's Section V performs Majorana's 1937 transformation on the same $G$, with the aim stated in its own words: to obtain a $*$-unitary transformation for which the Dirac equation becomes "with real coefficients and symmetric for both: fermions and antifermions". The transformation is the Weyl-basis charge conjugation,</p>
 <p>$$
@@ -261,9 +261,9 @@ $$</p>
 <ul>
 <li><strong>Established, and recomputed below.</strong> The topological current
 $$
-B_\mu = \frac{1}{24\pi^2}\sum_{\nu,\rho,\sigma}\varepsilon_{\mu\nu\rho\sigma}\,2\,\mathrm{Sc}\!\left(j_\nu j_\rho j_\sigma\right),
+B_{\imath} = \frac{1}{24\pi^2}\sum_{{\jmath},\rho,\sigma}\varepsilon_{{\imath}{\jmath}\rho\sigma}\,2\,\mathrm{Sc}\!\left(j_{\jmath} j_\rho j_\sigma\right),
 \qquad
-j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U ,
+j_{\imath} = \tilde U^{-1}\partial/\partial Q_{\imath}\,\tilde U ,
 $$
 is conserved identically, and its charge is the degree of the map $\tilde U:\mathbb{S}^3\to\mathbb{S}^3$. For the hedgehog configuration $\tilde U = \cos F(r)\,e_t + \sin F(r)\,\vec u_r$ the charge is</li>
 </ul>
@@ -277,9 +277,9 @@ $$</p>
 <p>where the last identities hold because $\tilde U$ is a unit real quaternion. The field takes values in the manifold $\mathbb{S}^3$, and the analyses of this article are static: the energy functional is evaluated on configurations $\tilde U(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ that are pure gauge at spatial infinity, $\tilde U(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\to e_t$ as $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|\to\infty$, so that they extend to maps $\mathbb{S}^3\to\mathbb{S}^3$.</p>
 <p><strong>The current.</strong> The Maurer–Cartan form of the companion article is</p>
 <p>$$
-j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U \in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi} ,
+j_{\imath} = \tilde U^{-1}\partial/\partial Q_{\imath}\,\tilde U \in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi} ,
 $$</p>
-<p><strong>Remaining issue.</strong> The Maurer-Cartan current $j_\mu=\tilde U^{-1}\partial_\mu\tilde U$. Line 50 states $\tilde U^{-1}=\tilde U^{\natural}=\tilde U^{*}$ for the field.</p>
+<p><strong>Remaining issue.</strong> The Maurer-Cartan current $j_{\imath}=\tilde U^{-1}\partial_{\imath}\tilde U$. Line 50 states $\tilde U^{-1}=\tilde U^{\natural}=\tilde U^{*}$ for the field.</p>
 <p><strong>Fix.</strong> $\tilde U^{-1}\to\tilde U^{\natural}$ at all six lines (21, 50, 58, 150, 223, 273). Value unchanged. This one changes a standard convention: the left-invariant current is normally written with the inverse.</p>
 <h2 id="3-the-bivector-law-seven-articles-the-earlier-version-omitted">3. The Bivector Law: Seven Articles the Earlier Version Omitted</h2>
 <p>The field strength is a bivector, and its law is $\tilde F_2=\tilde U^{\natural}\tilde F\tilde U=\tilde U^{-1}\tilde F\tilde U$. These articles state it and were not listed before.</p>

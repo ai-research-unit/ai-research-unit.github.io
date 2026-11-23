@@ -80,13 +80,13 @@
 <h2 id="conventions">Conventions</h2>
 <p>The algebra, the products, the two forms, the invertibles and the sectors are those of <em>Algebra and Element Conventions</em>, <em>Product and Form Conventions</em>, <em>Norm and Pairing Conventions</em>, <em>Physics Units and Common Elements Conventions</em>. The gradient and the d'Alembertian are those of <em>Operator and Calculus Conventions</em>, and the transform is the one of <em>Derivatives, Fields and Transforms</em>, with the symbol rule</p>
 <p>$$
-\tilde\nabla_\Phi\longmapsto i\tilde K_\Phi ,
+\tilde\nabla_\Phi\longmapsto 2\pi i\tilde\Upsilon_\Phi ,
 \qquad
-\tilde K_\Phi=ik_t'e_t+\vec k_\Phi ,
+\tilde\Upsilon_\Phi=2\pi i\nu_t'e_t+2\pi\vec\nu_\Phi ,
 \qquad
-k_t'=\frac{\omega}{c},
+2\pi\nu_t'=\frac{\omega}{c},
 \qquad
-k^{2}=k_t'^{2}-\vec k_\Phi^{2}.
+k^{2}=2\pi\nu_t'^{2}-2\pi\vec\nu_\Phi^{2}.
 $$</p>
 <p>The word and its parameters are the parent's:</p>
 <p>$$
@@ -134,13 +134,13 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The invariant is the only one the field carries.</strong> $\langle\tilde A_\Phi\rangle_\natural=-(a_t')^{2}+\vec A^{2}$, real and indefinite, and the two branches are its two signs. On a mode the same number is $\langle A\rangle_\natural=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$, an indefinite quadratic form on the amplitude. Everything the article says about the branch is a statement about that form.</p>
-<p>The symbol, quoted from the form companion. The Proca operator's symbol in the four-component reading is $\sigma_{\imath\jmath}=(k^{2}-k_m^{2})\delta_{\imath\jmath}-k_{\imath} k_{\jmath}$, acting on the amplitude by $(\sigma A)_{\imath}=(k^{2}-k_m^{2})A_{\imath}-k_{\imath}[kA]$ with $[kA]=k_t'a_t'-\vec k_\Phi\cdot\vec a$. Its eigenvalues are $\{k^{2}-k_m^{2},k^{2}-k_m^{2},k^{2}-k_m^{2},-k_m^{2}\}$. The chart reading is a decomposition of this matrix into the four types, and the decomposition is the section that follows.</p>
+<p>The symbol, quoted from the form companion. The Proca operator's symbol in the four-component reading is $\sigma_{\imath\jmath}=(k^{2}-4\pi^{2}\nu_m^{2})\delta_{\imath\jmath}-2\pi\nu_{\imath} 2\pi\nu_{\jmath}$, acting on the amplitude by $(\sigma A)_{\imath}=(k^{2}-4\pi^{2}\nu_m^{2})A_{\imath}-2\pi\nu_{\imath}[kA]$ with $[kA]=2\pi\nu_t'a_t'-2\pi\vec\nu_\Phi\cdot\vec a$. Its eigenvalues are $\{k^{2}-\nu_m^{2},k^{2}-\nu_m^{2},k^{2}-\nu_m^{2},-\nu_m^{2}\}$. The chart reading is a decomposition of this matrix into the four types, and the decomposition is the section that follows.</p>
 <p>The denial of the Legendre reading, once. The parent's chart is a chart of the field, and the transform's variable is not one of its parameters. The corpus has a second conjugacy — the polar variational parent's canonical momenta, four of which vanish — and it is a Legendre conjugacy, not a Fourier one. §<em>Limits</em> records the distinction and the article uses it nowhere else.</p>
 <h2 id="the-brackets-are-the-types-of-the-symbol">The Brackets Are the Types of the Symbol</h2>
 <p><strong>The chart's bracket slots and the symbol's parts are the same slots, and the symbol fills two of the four.</strong> A general element of $\mathbb{B}$ splits into a real central part, an imaginary central part, a Hermitian vector part and an anti-Hermitian vector part, and the polar word's four brackets are the gradients of the four parameters that generate those parts. The Proca symbol splits the same way, and only two of the four parts are non-zero:</p>
 <p>$$
-\sigma=\underbrace{\bigl(k^{2}-k_m^{2}\bigr)\delta_{\imath\jmath}}_{\text{scalar part: the scale slot}}
-\;-\;\underbrace{k_{\imath} k_{\jmath}}_{\text{rank-one part: the frame slot}} ,
+\sigma=\underbrace{\bigl(k^{2}-4\pi^{2}\nu_m^{2}\bigr)\delta_{\imath\jmath}}_{\text{scalar part: the scale slot}}
+\;-\;\underbrace{2\pi\nu_{\imath} 2\pi\nu_{\jmath}}_{\text{rank-one part: the frame slot}} ,
 \qquad
 \text{imaginary central part}=0 ,
 \qquad
@@ -148,10 +148,10 @@ $$</p>
 $$</p>
 <p>The scalar part multiplies every amplitude direction by the same number, which is what the parent's scale bracket does when it is differentiated; the rank-one part carries every amplitude onto a multiple of the wave number, which is what the frame bracket does when it transports the boost axis. The correspondence is a correspondence of decompositions and not an analogy.</p>
 <p>On the material sector the imaginary central slot is empty, and that is the parent's whole point. The material potential is $\tilde A_\Phi=i\,a_t'e_t+\vec A$ with real coefficients, and the polar word's parameter count is four: the scale, the rapidity, the boost axis and the spacelike direction. Four parameters, four components, and no angle among them — which is the parent's "the same eight parameters would be four redundant", read as a statement about which slots the carrier can fill.</p>
-<p>The symbol has no imaginary central part for a free Proca field, because $k^{2}-k_m^{2}$ and $k_{\imath} k_{\jmath}$ are both real. The matrix is real, so it commutes with complex conjugation, and a real matrix cannot generate a phase — which is the algebraic form of the parent's sentence that the material sector "loses the phase".</p>
+<p>The symbol has no imaginary central part for a free Proca field, because $k^{2}-\nu_m^{2}$ and $\nu_{\imath} \nu_{\jmath}$ are both real. The matrix is real, so it commutes with complex conjugation, and a real matrix cannot generate a phase — which is the algebraic form of the parent's sentence that the material sector "loses the phase".</p>
 <p>What replaces the phase is the frame, and the symbol carries it in its vector part. The parent's third and fourth rows — the rapidity's Hermitian vector and the axis's real vector — are the two vector types of the symbol. So the chart's positive content is the symbol's vector part and its negative content is the symbol's missing central slot, and the next section makes the negative content a measurement.</p>
 <h2 id="the-absent-phase-is-the-even-symbol">The Absent Phase Is the Even Symbol</h2>
-<p><strong>A symbol that generates a phase must be odd in the wave number, and the Proca symbol is even.</strong> Take the four theories and measure $\sigma(-\tilde K_\Phi)$ against $\sigma(\tilde K_\Phi)$ on the same wave number, $k_t'=1.2$ with $\vec k_\Phi=(0.3,0.2,0.1)$:</p>
+<p><strong>A symbol that generates a phase must be odd in the wave number, and the Proca symbol is even.</strong> Take the four theories and measure $\sigma(-\tilde\Upsilon_\Phi)$ against $\sigma(\tilde\Upsilon_\Phi)$ on the same wave number, $2\pi\nu_t'=1.2$ with $2\pi\vec\nu_\Phi=(0.3,0.2,0.1)$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -170,15 +170,15 @@ $$</p>
 </tr>
 <tr>
 <td>Klein–Gordon</td>
-<td>$k^{2}-k_m^{2}$</td>
+<td>$k^{2}-\nu_m^{2}$</td>
 <td>even</td>
 <td>$\lvert\sigma(-K)-\sigma(K)\rvert=0.00\times10^{0}$</td>
 </tr>
 <tr>
 <td>Dirac</td>
-<td>$i\tilde K_\Phi-k_m$</td>
+<td>$2\pi i\tilde\Upsilon_\Phi-\nu_m$</td>
 <td>odd</td>
-<td>$\lvert\sigma(-K)+\sigma(K)\rvert=2k_m=1.400000$</td>
+<td>$\lvert\sigma(-K)+\sigma(K)\rvert=4\pi\nu_m=1.400000$</td>
 </tr>
 <tr>
 <td>Schrödinger</td>
@@ -188,7 +188,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The measure of an odd part is $\lvert\sigma(-K)-\sigma(K)\rvert$, which for the Dirac symbol is $2k_m$ and for the Schrödinger symbol $2h_t$: hence $1.400000$ and $1.000000$ at $k_m=0.7$ and $h_t=0.5$. So the table's second and third rows differ from the first two by a factor and not by a principle: an odd symbol's reflection doubles its constant term, and an even symbol's reflection cancels its whole value.</p>
+<p>The measure of an odd part is $\lvert\sigma(-K)-\sigma(K)\rvert$, which for the Dirac symbol is $2\nu_m$ and for the Schrödinger symbol $2h_t$: hence $1.400000$ and $1.000000$ at $2\pi\nu_m=0.7$ and $h_t=0.5$. So the table's second and third rows differ from the first two by a factor and not by a principle: an odd symbol's reflection doubles its constant term, and an even symbol's reflection cancels its whole value.</p>
 <p>The Proca and Klein–Gordon symbols are quadratic in $k$; the Dirac symbol is linear; the Schrödinger symbol is affine. An even symbol is invariant under the reflection $k\mapsto-k$, and a phase bracket is precisely a quantity that changes sign under that reflection, so the material sector cannot carry one.</p>
 <p>The correspondence with the parent's table is exact and it is slot by slot. The parent's phase row is zero on both branches; the symbol's imaginary central slot is zero for every wave number. The parent's frame rows are the vector parts; the symbol's vector part is the rank-one piece. The chart reads the matrix's types; the parity reads the matrix's order; and the two readings agree because a real second-order symbol has no odd slot to fill.</p>
 <p>This is why the Dirac chart carries a phase and the Proca chart does not, and the reason is not the spin. The Dirac operator is first order and its symbol is odd, so a central imaginary coefficient is available and the guidance equation follows from it. The Proca operator is second order and its symbol is even, so no such coefficient exists and no guidance equation can be written. The difference between the two charts is the order of the operator and not the representation that carries it, and the article says so because the parent's contrast is sometimes read as a statement about spin.</p>
@@ -226,7 +226,7 @@ S=\varepsilon\Bigl[c\,\frac{\partial \varrho}{\partial r'_t}-s\,\hat u_{\mathrm 
 $$</p>
 <p>with $c=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $s=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$, and observes that the first two terms are $\partial_{r'_t}(\varepsilon rc)$ and the last three are $-\vec\nabla_\Phi\cdot(\varepsilon rs\hat u_{\mathrm b})$. On a mode every derivative becomes a multiplication, so the display collapses to</p>
 <p>$$
-[kA]=k_t'a_t'-\vec k_\Phi\cdot\vec a=0 ,
+[kA]=2\pi\nu_t'a_t'-2\pi\vec\nu_\Phi\cdot\vec a=0 ,
 $$</p>
 <p>which is one linear condition on the four amplitudes and it is the Lorenz plane.</p>
 <p>It is the same plane as the symbol's kernel, named in the chart's letters. The form companion computes the kernel of $\sigma$ on the shell and finds it three-dimensional and annihilated to $3\times10^{-17}$; here the same plane is written as the vanishing of the divergence. Two computations, one plane: the kernel is what the operator does not see, and the Lorenz condition is what the field must satisfy. That they coincide is the content of "the constraint is implied and not imposed", read in the chart.</p>
@@ -242,7 +242,7 @@ $$</p>
 <p>Whether the absent phase bracket and the even symbol are the same statement or two statements is open. The article exhibits both and shows that they agree; whether the agreement is an identity of the algebra or a coincidence of the corpus's two conventions is a question about the operator's order and not about the Proca field, and it is not answered here.</p>
 <p>The amplitude cone's sector label is inherited and not proved here. <em>Degenerate Solutions</em> proves the label for the field values, and §<em>The Chart's Failure Set Is the Amplitude Cone</em> transfers it by the sameness of the equation. Whether the transfer needs an additional argument — the amplitude being a coefficient and not a value — is a question the article raises and does not answer.</p>
 <h2 id="summary">Summary</h2>
-<p>The Proca polar chart has four parameters and two brackets, and one of its four bracket slots is empty: the phase vanishes identically on both branches. In frequency space that emptiness has a name. The Proca symbol is even in the four-wave-number to machine precision ($0.00\times10^{0}$ in the largest entry difference at $k_t'=1.2$), as is the Klein–Gordon scalar; the Dirac symbol is odd ($\lvert\sigma(-K)+\sigma(K)\rvert=2k_m=1.400000$) and the Schrödinger symbol is neither. <strong>A phase bracket needs an odd slot, and a real second-order symbol has none</strong>, which is why the Proca chart carries no guidance equation and the Dirac chart does.</p>
+<p>The Proca polar chart has four parameters and two brackets, and one of its four bracket slots is empty: the phase vanishes identically on both branches. In frequency space that emptiness has a name. The Proca symbol is even in the four-wave-number to machine precision ($0.00\times10^{0}$ in the largest entry difference at $2\pi\nu_t'=1.2$), as is the Klein–Gordon scalar; the Dirac symbol is odd ($\lvert\sigma(-K)+\sigma(K)\rvert=4\pi\nu_m=1.400000$) and the Schrödinger symbol is neither. <strong>A phase bracket needs an odd slot, and a real second-order symbol has none</strong>, which is why the Proca chart carries no guidance equation and the Dirac chart does.</p>
 <p>The branch is not a spectral property. The invariant $\langle A\rangle_\natural$ is indefinite quadratic in the amplitudes, so it does not distribute: two timelike amplitudes with invariants $+3.99$ each sum to $+16.00$ while their invariants sum to $+7.98$. The lightlike set is a cone and not a subspace: two lightlike amplitudes sum to a timelike one and differ to a spacelike one. <strong>No linear functional of the spectrum determines a branch label.</strong></p>
 <p>The chart's failure set and the branch's boundary are one variety. The parent's condition "the local four-vector is lightlike" is the same equation as the amplitude cone, and it is one real equation on four real parameters — the parent's codimension-one count and <em>Degenerate Solutions</em>'s sector label $\Sigma_{01}$ both transfer unchanged.</p>
 <p>What the transform does with the piecewiseness is relocate it. A Fourier mode is a constant frame and sits strictly inside one branch, so the nodal flip is a feature of the superposition and not of the mode. The branch moves from spacetime to the amplitude space, and the article states the move as a gain — the branch becomes algebraic — and as a bound — the branch of a sum is not determined by the summands. In the chart's own letters the Lorenz condition on a mode is $[kA]=0$, which is the same plane as the symbol's three-dimensional kernel.</p>
@@ -256,15 +256,15 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$</td>
-<td>The four-wave number; $k_t'=\omega/c$</td>
+<td>$\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$</td>
+<td>The four-wave number; $2\pi\nu_t'=\omega/c$</td>
 </tr>
 <tr>
-<td>$k^{2}=k_t'^{2}-\vec k_\Phi^{2}$</td>
+<td>$k^{2}=2\pi\nu_t'^{2}-2\pi\vec\nu_\Phi^{2}$</td>
 <td>The interval in wave numbers</td>
 </tr>
 <tr>
-<td>$k_m=\frac{2\pi mc}{h}$</td>
+<td>$\nu_m=\frac{mc}{h}$</td>
 <td>The mass wave number</td>
 </tr>
 <tr>
@@ -280,11 +280,11 @@ $$</p>
 <td>The invariant; an indefinite quadratic form on the amplitudes</td>
 </tr>
 <tr>
-<td>$[kA]=k_t'a_t'-\vec k_\Phi\cdot\vec a$</td>
+<td>$[kA]=2\pi\nu_t'a_t'-2\pi\vec\nu_\Phi\cdot\vec a$</td>
 <td>The Lorenz form of a mode; the parent's $S$ up to $-i$</td>
 </tr>
 <tr>
-<td>$\sigma_{\imath\jmath}=(k^{2}-k_m^{2})\delta_{\imath\jmath}-k_{\imath} k_{\jmath}$</td>
+<td>$\sigma_{\imath\jmath}=(k^{2}-4\pi^{2}\nu_m^{2})\delta_{\imath\jmath}-2\pi\nu_{\imath} 2\pi\nu_{\jmath}$</td>
 <td>The Proca symbol, quoted from the form companion</td>
 </tr>
 <tr>

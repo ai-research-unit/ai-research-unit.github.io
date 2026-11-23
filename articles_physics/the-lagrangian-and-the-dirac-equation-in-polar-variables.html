@@ -74,7 +74,7 @@
 <p><em>The Dirac Equation in Biquaternionic Polar Variables</em> substitutes the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ into the equation. This article substitutes the same word into the <em>action</em>, and reads the Lagrangian and the Euler–Lagrange equations that come out.</p>
 <p>The action is the element-form companion's:</p>
 <p>$$
-S=\frac{h c}{4\pi}\int\mathrm{d}^4\varrho\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr].
+S=\frac{h c}{4\pi}\int\mathrm{d}^4\varrho\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R-2\pi\nu_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr].
 $$</p>
 <p>The word is a bijection from eight parameters onto the invertibles of $\mathbb{B}$, so the substitution adds nothing and drops nothing: the eight parameters are coordinates on the carrier, and the polar action is the element action in those coordinates.</p>
 <p>Two things are found, and they are the article's content.</p>
@@ -150,7 +150,7 @@ $$</p>
 <p><strong>The spin's momentum is locked to the boost.</strong> $\vec p_{\mathrm{spin}}$ is proportional to $\sinh\theta_{\mathrm{rpd}}$. In the rest frame the rotor carries no momentum at all, however fast it turns, and the action's dynamical content is the phase alone. This is the sharpest statement the closed form makes, and it is the one the projector display could not make.</p>
 <p>The sign, and the overall factor. The Dirac kinetic term is $+\frac{h}{2\pi} c\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}\dot{\tilde\Xi}]$; the Schrödinger one is $-\frac{h}{2\pi} c\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}\dot{\tilde\Xi}]$. The difference is one operator and one antisymmetrization. The Dirac term is $\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi^{*}(-i \frac{h}{2\pi} c\,\partial_{t'})\tilde\Xi]$, and $-i \frac{h}{2\pi} c\,\partial_{t'}$ is self-adjoint, so its expectation has a real part and no symmetrization is needed. The Schrödinger term is $\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi^{*}(i \frac{h}{2\pi} c\,\partial_{r'_t})\tilde\Xi]$, and $i \frac{h}{2\pi} c\,\partial_{r'_t}$ is anti-self-adjoint, so its expectation is purely imaginary and the action must antisymmetrize: $\tfrac{i h c}{4\pi}(\tilde\Xi^{*}\dot{\tilde\Xi}-\dot{\tilde\Xi}^{*}\tilde\Xi)$ has scalar part $-\frac{h}{2\pi} c\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}\dot{\tilde\Xi}]$, which is where the minus comes from. The sign is a fact about the two equations and not a convention, while the factor $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ is common to both and is the physical statement.</p>
 <p>The pairing. Inherited, and the substitution cannot disturb it. The parent pairs with $\mathrm{Sc}(\cdot^{*}\cdot)$ and rejected $\mathrm{Sc}(\cdot^{\natural}\cdot)$ because the quaternionic pairing makes every kinetic density a total derivative. The chart writes the field as a scale, a rapidity and a rotor, and the substitution is a change of variables in that same functional. The pair is untouched: the scale is real and the rotor is a unit element, so the two chiral densities remain conjugates of one another and their sum is real.</p>
-<p>The type of the coefficient. The mass is real and the pair is Hermitian by construction. The parent's two kinetic terms carry $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$, and their sum is real because the two are conjugates under $*$. In the chart the unit-modulus factor is written once, so the two terms are conjugates by the chart's own parametrisation rather than by a sign check. The mass $k_m$ multiplies $\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L$, a Hermitian bilinear, and it is real.</p>
+<p>The type of the coefficient. The mass is real and the pair is Hermitian by construction. The parent's two kinetic terms carry $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$, and their sum is real because the two are conjugates under $*$. In the chart the unit-modulus factor is written once, so the two terms are conjugates by the chart's own parametrisation rather than by a sign check. The mass $\nu_m$ multiplies $\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L$, a Hermitian bilinear, and it is real.</p>
 <p>The selection rule. Declared. No potential is free here; the action's only coefficient beyond the metric is the mass. The rule that asks which potentials are admissible belongs to the scalar family, where the potential is a free element.</p>
 <p>What reality does not buy. A real action does not give a real energy. The chart makes the rapidity explicit and the rapidity is real exactly when the energy is real; the parent's counterexample, a real action with a complex frequency, is a case the chart displays and does not remove.</p>
 <h2 id="the-variation-the-eulerlagrange-equations">The Variation: The Euler–Lagrange Equations</h2>
@@ -158,7 +158,7 @@ $$</p>
 <p>The Lagrangian is a one-form plus a potential. Every velocity enters the display linearly, so</p>
 <p>$$
 \mathcal{L}=A_x(q)\,\dot q^{x}-U(q),\qquad
-U=\frac{h}{2\pi} c\,k_m\,\varrho^{2}\,\mathcal V,
+U=\frac{h}{2\pi} c\,2\pi\nu_m\,\varrho^{2}\,\mathcal V,
 $$</p>
 <p>with the eight coordinates $q=(\varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}}$, two angles of $\vec u_{\mathrm b}$, three of $\tilde u_{\mathrm r})$, and with the one-form</p>
 <p>$$
@@ -177,23 +177,23 @@ $$</p>
 <p>the conservation of the phase momentum, which is the polar form of the electric charge.</p>
 <p>Vary the scale. The scale appears as $\varrho^{2}$ in every term, and the rotor term carries the same $\varrho^{2}$ as the phase term, so the equation is</p>
 <p>$$
-\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}=k_m\,\mathcal V .
+\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}=2\pi\nu_m\,\mathcal V .
 $$</p>
 <p>The term $\partial(\frac{h}{2\pi} c\,\mathcal L_{\mathrm{rot}})/\partial \varrho$ is zero: the rotor's kinetic term depends on $\varrho$ only through the common factor $\varrho^{2}$, which is what makes the whole Lagrangian a one-form. What the scale's equation carries instead is the rotor term itself, at the same weight as in the kinetic display.</p>
 <p>Vary the rapidity. The rapidity appears through $\cosh\theta_{\mathrm{rpd}}$ and $\sinh\theta_{\mathrm{rpd}}$, so its equation is</p>
 <p>$$
-\sinh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\cosh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}=k_m\,\frac{\partial\mathcal V}{\partial\theta_{\mathrm{rpd}}}.
+\sinh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\cosh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}=2\pi\nu_m\,\frac{\partial\mathcal V}{\partial\theta_{\mathrm{rpd}}}.
 $$</p>
 <p>The two together fix the phase rate. The pair is linear in $\dot\theta_{\mathrm{pha}}$ and in $\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}$, and its determinant is $\cosh^{2}\theta_{\mathrm{rpd}}-\sinh^{2}\theta_{\mathrm{rpd}}=1$. Hence</p>
 <p>$$
-\dot\theta_{\mathrm{pha}}=k_m\Bigl(\cosh\theta_{\mathrm{rpd}}\,\mathcal V-\sinh\theta_{\mathrm{rpd}}\,\frac{\partial\mathcal V}{\partial\theta_{\mathrm{rpd}}}\Bigr),
+\dot\theta_{\mathrm{pha}}=2\pi\nu_m\Bigl(\cosh\theta_{\mathrm{rpd}}\,\mathcal V-\sinh\theta_{\mathrm{rpd}}\,\frac{\partial\mathcal V}{\partial\theta_{\mathrm{rpd}}}\Bigr),
 \qquad
-\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}=k_m\Bigl(\sinh\theta_{\mathrm{rpd}}\,\mathcal V-\cosh\theta_{\mathrm{rpd}}\,\frac{\partial\mathcal V}{\partial\theta_{\mathrm{rpd}}}\Bigr).
+\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}=2\pi\nu_m\Bigl(\sinh\theta_{\mathrm{rpd}}\,\mathcal V-\cosh\theta_{\mathrm{rpd}}\,\frac{\partial\mathcal V}{\partial\theta_{\mathrm{rpd}}}\Bigr).
 $$</p>
-<p>At rest the first line is $\dot\theta_{\mathrm{pha}}=k_m\mathcal V$, which is the parent's rate.</p>
+<p>At rest the first line is $\dot\theta_{\mathrm{pha}}=2\pi\nu_m\mathcal V$, which is the parent's rate.</p>
 <p>Vary the boost axis. The axis enters only through $\hat n_{\mathrm{rot}}$, and $\mathcal V$ depends on it as well, so its two equations are</p>
 <p>$$
-\sinh\theta_{\mathrm{rpd}}\;\frac{\partial}{\partial u_{\mathrm b}}\bigl(\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\bigr)+k_m\,\frac{\partial\mathcal V}{\partial u_{\mathrm b}}=0 .
+\sinh\theta_{\mathrm{rpd}}\;\frac{\partial}{\partial u_{\mathrm b}}\bigl(\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\bigr)+2\pi\nu_m\,\frac{\partial\mathcal V}{\partial u_{\mathrm b}}=0 .
 $$</p>
 <p>They contain $\vec\omega_{\mathrm r}$ and not $\dot\theta_{\mathrm{pha}}$, so they fix the rotor's rotation transverse to the boost axis.</p>
 <p>Vary the rotor. Its three momenta do not vanish, so its three equations are dynamical. Together with the phase's equation they are four first-order equations for four coordinates; the four constraints restrict the rest.</p>
@@ -205,7 +205,7 @@ $$</p>
 $$</p>
 <p>for every $\varrho>0$. One non-vanishing bracket is enough: the constraints are second class, the Dirac bracket differs from the Poisson bracket, and the Lagrangian is degenerate in the sense of Dirac rather than merely in the sense of having cyclic coordinates.</p>
 <p>What the system is, honestly. Eight equations, eight parameters. Four momenta vanish identically and four do not; of the four that do not, one is the phase's and three are the rotor's. Closing the system — the Dirac bracket and the closed flow that reproduces the parent's rates — is not done here. What the closed form settles is the table, which is now an identity, the reason each entry has the value it has, and the character of the rotor's momentum, which is proportional to the boost's $\sinh$ and therefore absent at rest.</p>
-<p>The parent's flow, at rest. At $\theta_{\mathrm{rpd}}=0$ the two rate equations give $\dot\theta_{\mathrm{pha}}=k_m\mathcal V$ and $\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}=-k_m\partial_{\theta_{\mathrm{rpd}}}\mathcal V$, with $\varrho$ and the rapidity constant. The phase rate is the parent's. The rotor's rate along the boost axis comes from the potential's rapidity dependence, and the two rates transverse to it come from the rotor's own equations. Whether that reproduces the parent's gap rate is the closure question, and the article does not assume the answer.</p>
+<p>The parent's flow, at rest. At $\theta_{\mathrm{rpd}}=0$ the two rate equations give $\dot\theta_{\mathrm{pha}}=2\pi\nu_m\mathcal V$ and $\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}=-2\pi\nu_m\partial_{\theta_{\mathrm{rpd}}}\mathcal V$, with $\varrho$ and the rapidity constant. The phase rate is the parent's. The rotor's rate along the boost axis comes from the potential's rapidity dependence, and the two rates transverse to it come from the rotor's own equations. Whether that reproduces the parent's gap rate is the closure question, and the article does not assume the answer.</p>
 <p>The parameter basis and the four brackets. Two bases of the eight-dimensional tangent space at an invertible element, and one change of basis.</p>
 <p>The bracket basis. The parent decomposes $\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi$ into a real scalar, a central imaginary, a Hermitian element and a real vector: four objects of four different algebraic types, each carrying one physical role — scale, phase, boost connection, rotor connection.</p>
 <p>The parameter basis. The eight derivatives $\partial\tilde\Xi/\partial \varrho$, $\partial\tilde\Xi/\partial\theta_{\mathrm{pha}}$, $\partial\tilde\Xi/\partial\theta_{\mathrm{rpd}}$, $\partial\tilde\Xi/\partial u_{\mathrm b}$, $\partial\tilde\Xi/\partial\theta_{\mathrm{axr}}$, $\partial\tilde\Xi/\partial u_{\mathrm r}$ span the same eight directions.</p>
@@ -236,7 +236,7 @@ $$</p>
 $$</p>
 <p>and it is zero for $\vec v\parallel\vec e_z$, so the direction is fixed by the frame's third direction and is not a free choice: only the directions that reverse the value give a mass. The mass term of the polar action is therefore</p>
 <p>$$
-\mathcal{L}_{\mathrm{mass}}=-\frac{h}{2\pi} c\,k_m\,\varrho^{2}\,\mathcal{V},
+\mathcal{L}_{\mathrm{mass}}=-\frac{h}{2\pi} c\,2\pi\nu_m\,\varrho^{2}\,\mathcal{V},
 \qquad
 \mathcal{V}=\frac{2}{\varrho^{2}}\,\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi_L^{*}\tilde\Xi_R\,i\vec v\bigr],
 $$</p>
@@ -244,7 +244,7 @@ $$</p>
 <p>The polar action, in full.</p>
 <p>$$
 \boxed{\;
-S=\int\mathrm{d}t'\;\frac{h}{2\pi} c\,\Bigl\{\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\Bigr)-\varrho^{2}k_m\,\mathcal{V}\Bigr\}\;}
+S=\int\mathrm{d}t'\;\frac{h}{2\pi} c\,\Bigl\{\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\Bigr)-\varrho^{2}\,2\pi\nu_m\,\mathcal{V}\Bigr\}\;}
 $$</p>
 <p>The scale enters as $\varrho^{2}$ in both terms. The phase enters only through its velocity. The boost enters through $\cosh\theta_{\mathrm{rpd}}$, through $\sinh\theta_{\mathrm{rpd}}$ and through the axis $\hat n_{\mathrm{rot}}$, and not through its own rate. The rotor enters through its body angular velocity and through the axis it carries. Nothing else enters.</p>
 <p>The overall factor. The element action carries $\frac{h}{2\pi} c/2$; the box has $\frac{h}{2\pi} c$. The factor is a convention on the action and cancels from every Euler–Lagrange equation, and the article writes it this way so that the phase momentum comes out $\frac{h}{2\pi} c\rho_{\mathrm{num}}\gamma$, the time component of the density current and the normalization of the standard Dirac action, whose kinetic term carries no $\tfrac12$. The sign, and the reason it is opposite to the Schrödinger companion's, is in §<em>The Kinetic Term</em>.</p>
@@ -265,8 +265,8 @@ $$</p>
 p_{\theta_{\mathrm{pha}}}=\frac{\partial\mathcal{L}}{\partial\dot\theta_{\mathrm{pha}}}=\frac{h}{2\pi} c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}},
 $$</p>
 <p>so the conserved density is $\rho_{\mathrm{pol}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$, positive for every field and equal to $\varrho^{2}$ on the central slice. The sign is positive because the box carries $+\frac{h}{2\pi} c$; the Schrödinger chart's box carries $-\frac{h}{2\pi}$, and its density is $-\frac{h}{2\pi}\varrho^{2}$. The two signs are the two conventions on the action and not two physics.</p>
-<p>The spin. The rotor $\tilde u_{\mathrm r}$ carries the spin, and its conjugate momentum is the body angular momentum. The mass term is what makes the spin direction a variable rather than a gauge: at $k_m=0$ the two phases of the element article are independent, the rotor's angle is one of them, and the spin current is conserved separately. At $k_m\neq0$ the mass couples the two parts and the rotor's angle is tied to the boost, which is the chart's form of the statement that a massive spin-$\tfrac12$ field has one spin direction and not two.</p>
-<p><strong>What the mass term kills.</strong> The axial current. The vector current survives, because it is the phase's; the axial one is the difference of the two chiral currents, and the mass term is exactly the term that converts one into the other. The chart shows it as the term that couples $\theta_{\mathrm{rpd}}$ to $\theta_{\mathrm{pha}}$, and the element article's <em>Massless Case and the Two Phases</em> is the $k_m=0$ limit of the same display.</p>
+<p>The spin. The rotor $\tilde u_{\mathrm r}$ carries the spin, and its conjugate momentum is the body angular momentum. The mass term is what makes the spin direction a variable rather than a gauge: at $\nu_m=0$ the two phases of the element article are independent, the rotor's angle is one of them, and the spin current is conserved separately. At $\nu_m\neq0$ the mass couples the two parts and the rotor's angle is tied to the boost, which is the chart's form of the statement that a massive spin-$\tfrac12$ field has one spin direction and not two.</p>
+<p><strong>What the mass term kills.</strong> The axial current. The vector current survives, because it is the phase's; the axial one is the difference of the two chiral currents, and the mass term is exactly the term that converts one into the other. The chart shows it as the term that couples $\theta_{\mathrm{rpd}}$ to $\theta_{\mathrm{pha}}$, and the element article's <em>Massless Case and the Two Phases</em> is the $\nu_m=0$ limit of the same display.</p>
 <h2 id="what-the-principle-adds-and-what-it-relabels-in-the-polar-chart">What the Principle Adds and What It Relabels: In the Polar Chart</h2>
 <p>Adds. The polar form of the element action in one closed display: the kinetic term is $\frac{h}{2\pi} c\,\varrho^{2}(\cosh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r})$. The momentum table as an identity rather than a sample: $p_r=p_{\theta_{\mathrm{rpd}}}=p_{u_{\mathrm b}}=0$, $p_{\theta_{\mathrm{pha}}}=\frac{h}{2\pi} c\rho_{\mathrm{num}}\gamma$ and $\vec p_{\mathrm{spin}}=-\frac{h}{2\pi} c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$. The reason for each entry, which is the reality of three contributions to the scalar part. The reason the mass term needs a fixed direction, which is the variational form of the parent's value-reading warning, together with the fact that the direction must be perpendicular to the frame's third direction. The bracket that makes the four primary constraints second class, computed and not assumed.</p>
 <p><strong>Does not add.</strong> No new prediction: the equation is the parent's. No new solution: the flow is the parent's. No closure of the constrained system. No simplification of the four brackets, which remain the natural form.</p>
@@ -285,11 +285,11 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The polar action of the biquaternionic Dirac field is the element action of the companion with the word substituted, and its kinetic term has a closed form:</p>
 <p>$$
-S=\int\mathrm{d}t'\;\frac{h}{2\pi} c\,\Bigl\{\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\Bigr)-\varrho^{2}k_m\,\mathcal{V}\Bigr\}.
+S=\int\mathrm{d}t'\;\frac{h}{2\pi} c\,\Bigl\{\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\Bigr)-\varrho^{2}\,2\pi\nu_m\,\mathcal{V}\Bigr\}.
 $$</p>
 <p>Everything the article says about the momenta follows from that one display, by inspection rather than by sampling. The scale, the rapidity and the boost axis appear without their rates, so their three momenta vanish identically. The phase appears linearly, with coefficient $\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\rho_{\mathrm{num}}\gamma$, so its momentum is the density times the Lorentz factor, the time component of the density current. The rotor appears through its cross term with the boost axis, so its momentum is $-\frac{h}{2\pi} c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$: a closed form, and one that vanishes at rest.</p>
 <p>The mass term needs a fixed direction, perpendicular to the frame's third direction, and the direction sits on the same side of the bilinear in both halves; with the direction on the right in both, the real part cancels and the mass term vanishes.</p>
-<p>The Lagrangian is a one-form plus a potential, so the system is first order and constrained: four momenta vanish, their four equations are the primary constraints, and one of their brackets is $2\frac{h}{2\pi} c\,\varrho\cosh\theta_{\mathrm{rpd}}$, so they are second class. The phase equation conserves $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and agrees with the parent's flow. The scale and rapidity equations together fix the phase rate at $k_m(\cosh\theta_{\mathrm{rpd}}\mathcal V-\sinh\theta_{\mathrm{rpd}}\partial_{\theta_{\mathrm{rpd}}}\mathcal V)$, which is $k_m\mathcal V$ at rest. Closing the system needs the Dirac bracket and is left open.</p>
+<p>The Lagrangian is a one-form plus a potential, so the system is first order and constrained: four momenta vanish, their four equations are the primary constraints, and one of their brackets is $2\frac{h}{2\pi} c\,\varrho\cosh\theta_{\mathrm{rpd}}$, so they are second class. The phase equation conserves $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and agrees with the parent's flow. The scale and rapidity equations together fix the phase rate at $\nu_m(\cosh\theta_{\mathrm{rpd}}\mathcal V-\sinh\theta_{\mathrm{rpd}}\partial_{\theta_{\mathrm{rpd}}}\mathcal V)$, which is $\nu_m\mathcal V$ at rest. Closing the system needs the Dirac bracket and is left open.</p>
 <p>The four brackets remain the natural form of the equation, and the parameter equations are the Jacobian-transformed version of them. No multipliers are needed for the unit conditions, because the word imposes them identically.</p>
 <p>What the revision of this article rests on. The three vanishing momenta and the spin's closed form are identities about the word, derived from the kinetic term's closed form; they do not rest on numerical checks. What rests on a computation rather than on a derivation is the second-class statement's completeness — one bracket is computed, not all of them — and what remains open is the closure and the rest frame.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -382,7 +382,7 @@ $$</p>
 <td>Potential factor, the mass term divided by $-\frac{h}{2\pi} ck_mr^{2}$</td>
 </tr>
 <tr>
-<td>$k_m=\frac{2\pi mc}{h}$</td>
+<td>$\nu_m=\frac{mc}{h}$</td>
 <td>Mass wave number</td>
 </tr>
 <tr>

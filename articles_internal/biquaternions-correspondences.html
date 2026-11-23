@@ -83,7 +83,7 @@
 <p><strong>The two errors the tests catch.</strong> The first is to put a matrix model in the third column. $M_2(\mathbb{C})$ is not a biquaternion equivalence of $\mathbb{B}$; it is the same algebra under another name, and that row belongs the other way round, with $M_2(\mathbb{C})$ in the first column and $\mathbb{B}$ in the third. In the same way $M_4(\mathbb{C})$ is not biquaternion. Its biquaternion interpretation is the endomorphism algebra of $\mathbb{B}$, and $\mathbb{B}$ itself sits inside it as the left regular copy.</p>
 <p><strong>The second error is to treat a word as a biquaternion.</strong> "Traceless" is not a property of an abstract matrix algebra in these tables. The scalar part doubled is $2\,\mathrm{Sc}(\tilde Q)=2Q_t$, so the condition behind the word is $Q_t=0$, which is $\mathbb{B}_V$. The scalar line is the centre $\mathbb{B}_C$, and the sentence "traceless, hence centre-free, hence the vector part" states one condition in three vocabularies. The word occurs in a row about $\mathfrak{sl}(2,\mathbb{R})$ at the element level and in a row about $\mathfrak{sl}(4,\mathbb{C})$ at the operator level, and it means the biquaternion condition in the first case and the tracelessness of a $4\times4$ matrix in the second. No row may pass between the two without saying which one it uses.</p>
 <h2 id="conventions">Conventions</h2>
-<p>The element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_\mu\in\mathbb{C}$, the scalar part is $Q_t$, the vector part is $\vec Q$. The norm is $N(\tilde Q)=\sum_\mu Q_\mu^2$. The conjugations are the quaternion one $\natural$, with $\tilde Q^{\natural}=Q_te_t-\vec Q$, the coefficient one $\bar{\tilde Q}=\bar Q_te_t+\bar Q_x\vec e_x+\bar Q_y\vec e_y+\bar Q_z\vec e_z$, and their composite $\tilde Q^{*}=\natural\bar{\tilde Q}=\bar Q_te_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z$.</p>
+<p>The element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_{\imath}\in\mathbb{C}$, the scalar part is $Q_t$, the vector part is $\vec Q$. The norm is $N(\tilde Q)=\sum_{\imath} Q_{\imath}^2$. The conjugations are the quaternion one $\natural$, with $\tilde Q^{\natural}=Q_te_t-\vec Q$, the coefficient one $\bar{\tilde Q}=\bar Q_te_t+\bar Q_x\vec e_x+\bar Q_y\vec e_y+\bar Q_z\vec e_z$, and their composite $\tilde Q^{*}=\natural\bar{\tilde Q}=\bar Q_te_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z$.</p>
 <p><strong>The six subspaces.</strong></p>
 <p>$$
 \mathbb{B}_C=\mathbb{C}e_t,\qquad \mathbb{B}_V=\{Q_t=0\},\qquad \mathbb{B}_H=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\},
@@ -972,10 +972,10 @@ $$</p>
 <tbody>
 <tr>
 <td>$\tilde Q=Q_te_t+\vec Q$</td>
-<td>a biquaternion, $Q_\mu\in\mathbb{C}$</td>
+<td>a biquaternion, $Q_{\imath}\in\mathbb{C}$</td>
 </tr>
 <tr>
-<td>$N(\tilde Q)=\sum_\mu Q_\mu^{2}$</td>
+<td>$N(\tilde Q)=\sum_{\imath} Q_{\imath}^{2}$</td>
 <td>the norm, equal to $\det\mathsf{M}_2$</td>
 </tr>
 <tr>
@@ -1044,13 +1044,13 @@ $$</p>
 </tr>
 <tr>
 <td>— relativistic quantum mechanics, Dirac equation</td>
-<td>$\gamma^{\mu}$, chiral projectors</td>
+<td>$\gamma^{{\imath}}$, chiral projectors</td>
 <td>the first-order wave equation of a four-component spinor</td>
 <td>the four $\gamma$'s are the four units $e_t,i\vec e_x,i\vec e_y,i\vec e_z$; the two chiral halves are the two columns of the left-regular copy; a Dirac spinor is a pair of them</td>
 </tr>
 <tr>
 <td>— Weyl and Majorana spinors</td>
-<td>$\sigma^{\mu}$, $i\sigma_2$</td>
+<td>$\sigma^{{\imath}}$, $i\sigma_2$</td>
 <td>the two inequivalent two-dimensional representations and charge conjugation</td>
 <td>left and right are the module and its conjugate; the conjugation matrix is the unit $\vec e_y$, and $\sigma_{\mathrm{tr}}=\operatorname{Ad}_{\vec e_y}\circ\natural$ is the transpose that builds it</td>
 </tr>
@@ -1134,7 +1134,7 @@ $$</p>
 </tr>
 <tr>
 <td>— $\mathcal{N}=1$ supersymmetry</td>
-<td>$\{Q_\alpha,\bar Q_{\dot\beta}\}=2\sigma^{\mu}_{\alpha\dot\beta}P_\mu$</td>
+<td>$\{Q_\alpha,\bar Q_{\dot\beta}\}=2\sigma^{{\imath}}_{\alpha\dot\beta}P_{\imath}$</td>
 <td>the fermionic generators of the super-Poincaré algebra</td>
 <td>the right side is the image of a real momentum: the momentum is an element $\tilde P=p_0e_t+i\vec p$ of $\mathbb{B}_{\Psi}$, with $N(\tilde P)=p_0^{2}-\lvert\vec p\rvert^{2}$; masslessness is $N=0$, the zero-divisor cone</td>
 </tr>

@@ -107,20 +107,20 @@
 </tr>
 <tr>
 <td>vector</td>
-<td>$S_\mu$</td>
-<td>$i\bar\psi\gamma_\mu\psi$</td>
+<td>$S_{\imath}$</td>
+<td>$i\bar\psi\gamma_{\imath}\psi$</td>
 <td>vector</td>
 </tr>
 <tr>
 <td>pseudovector</td>
-<td>$\hat S_\mu$</td>
-<td>$-i\bar\psi\gamma_\mu\gamma_5\psi$</td>
+<td>$\hat S_{\imath}$</td>
+<td>$-i\bar\psi\gamma_{\imath}\gamma_5\psi$</td>
 <td>pseudovector</td>
 </tr>
 <tr>
 <td>tensor</td>
-<td>$M_{\mu\nu}$</td>
-<td>$-\bar\psi\sigma_{\mu\nu}\psi$</td>
+<td>$M_{{\imath}{\jmath}}$</td>
+<td>$-\bar\psi\sigma_{{\imath}{\jmath}}\psi$</td>
 <td>antisymmetric tensor</td>
 </tr>
 </tbody>
@@ -128,11 +128,11 @@
 <p><strong>The sixteen are not independent.</strong> Nine kinematical identities relate them. The identities are algebraic. They hold at each event for every spinor. The paper calls them kinematical because they use no equation of motion.</p>
 <p><strong>Three identities carry the reduction.</strong> They are</p>
 <p>$$
-S_\mu S^\mu=-\rho^2,
+S_{\imath} S^{\imath}=-\rho^2,
 \qquad
-\hat S_\mu\hat S^\mu=\rho^2,
+\hat S_{\imath}\hat S^{\imath}=\rho^2,
 \qquad
-S_\mu\hat S^\mu=0,
+S_{\imath}\hat S^{\imath}=0,
 $$</p>
 <p>with</p>
 <p>$$
@@ -141,104 +141,104 @@ $$</p>
 <p><strong>The vector is timelike and the pseudovector is spacelike.</strong> They have the same magnitude and they are orthogonal. In the modern literature the identities are called the Pauli–Kofink identities. They hold in the metric with signature $(+,-,-,-)$, which is the paper's convention and the corpus's.</p>
 <p><strong>The reduction is seven real functions.</strong> The construction is stated where $\rho\neq0$. The definitions are</p>
 <p>$$
-S_\mu=\rho v_\mu,
+S_{\imath}=\rho v_{\imath},
 \qquad
-\hat S_\mu=\rho w_\mu,
+\hat S_{\imath}=\rho w_{\imath},
 \qquad
 \theta=\arctan\frac{\hat\Omega}{\Omega},
 $$</p>
 <p>with the branch of the angle fixed by the signs of the two densities. The first subsidiary conditions follow; the paper labels them (I'):</p>
 <p>$$
-v_\mu v^\mu=-1,\quad v_0\ge1,
+v_{\imath} v^{\imath}=-1,\quad v_0\ge1,
 \qquad
-w_\mu w^\mu=1,
+w_{\imath} w^{\imath}=1,
 \qquad
-v_\mu w^\mu=0 .
+v_{\imath} w^{\imath}=0 .
 $$</p>
-<p><strong>The count is $16-9=7$.</strong> The same count reads $1+1+3+2=7$: one density, one angle, three components of the timelike unit vector, two components of the spacelike unit vector. The tensor is not an independent function; the identities express it through $\rho$, $v_\mu$, $w_\mu$, and $\theta$. The count is the first check that the variables are the right size. It is not yet the whole field.</p>
-<p><strong>The physical interpretation is immediate.</strong> $\rho$ is the particle density in the local rest frame. $v_\mu$ is the four-velocity. $w_\mu$ is the spin direction; the intrinsic angular momentum per particle is $(\hbar/2)w_\mu$. The condition $w_\mu w^\mu=1$ says the spin has constant magnitude everywhere. $\theta$ is an internal angle that mixes the scalar and pseudoscalar densities.</p>
-<p><strong>A note on the pseudovector.</strong> The pseudovector is sometimes written as $-\bar\psi\gamma_\mu\psi$ without $\gamma_5$ and without the $i$. That object is a vector, not a pseudovector. The correct bilinear is $-i\bar\psi\gamma_\mu\gamma_5\psi$. The identities above hold only with the axial factor.</p>
+<p><strong>The count is $16-9=7$.</strong> The same count reads $1+1+3+2=7$: one density, one angle, three components of the timelike unit vector, two components of the spacelike unit vector. The tensor is not an independent function; the identities express it through $\rho$, $v_{\imath}$, $w_{\imath}$, and $\theta$. The count is the first check that the variables are the right size. It is not yet the whole field.</p>
+<p><strong>The physical interpretation is immediate.</strong> $\rho$ is the particle density in the local rest frame. $v_{\imath}$ is the four-velocity. $w_{\imath}$ is the spin direction; the intrinsic angular momentum per particle is $(\frac{h}{2\pi 2})w_{\imath}$. The condition $w_{\imath} w^{\imath}=1$ says the spin has constant magnitude everywhere. $\theta$ is an internal angle that mixes the scalar and pseudoscalar densities.</p>
+<p><strong>A note on the pseudovector.</strong> The pseudovector is sometimes written as $-\bar\psi\gamma_{\imath}\psi$ without $\gamma_5$ and without the $i$. That object is a vector, not a pseudovector. The correct bilinear is $-i\bar\psi\gamma_{\imath}\gamma_5\psi$. The identities above hold only with the axial factor.</p>
 <h2 id="step-two-the-missing-phase">Step Two: The Missing Phase</h2>
 <p><strong>Seven is one short of eight.</strong> The bilinears do not capture the overall phase. A spinor has four complex components. Multiplying all four by $e^{i\alpha}$ changes none of the bilinears. The missing function is the overall phase, the common part of the four component phases.</p>
 <p><strong>The phase is not a bilinear.</strong> No product of $\psi$ and $\bar\psi$ can read it, because the phase cancels. It enters only through a derivative. Takabayasi introduces the second-kind quantities</p>
 <p>$$
-\delta_\mu(\bar\psi\tau^A\psi)
+\delta_{\imath}(\bar\psi\tau^A\psi)
 =
-i\left(\partial_\mu\bar\psi\,\tau^A\psi-\bar\psi\tau^A\partial_\mu\psi\right).
+i\left(\partial_{\imath}\bar\psi\,\tau^A\psi-\bar\psi\tau^A\partial_{\imath}\psi\right).
 $$</p>
 <p>These are the bilinears of the derivative. They are the fluid's momentum and stress.</p>
-<p><strong>The vector that carries the phase gradient is $k_\mu$.</strong> Takabayasi builds it from the vector and axial second-kind currents:</p>
+<p><strong>The vector that carries the phase gradient is $k_{\imath}$.</strong> Takabayasi builds it from the vector and axial second-kind currents:</p>
 <p>$$
-K_\mu=\Omega J_\mu+\hat\Omega\hat J_\mu,
+K_{\imath}=\Omega J_{\imath}+\hat\Omega\hat J_{\imath},
 \qquad
-k_\mu=\frac{K_\mu}{\rho^2}.
+k_{\imath}=\frac{K_{\imath}}{\rho^2}.
 $$</p>
-<p>The particle momentum-energy is $p_\mu=mc\,k_\mu$. The basic set is now</p>
+<p>The particle momentum-energy is $p_{\imath}=mc\,k_{\imath}$. The basic set is now</p>
 <p>$$
-\{\rho,\ \theta,\ v_\mu,\ w_\mu,\ k_\mu\}.
+\{\rho,\ \theta,\ v_{\imath},\ w_{\imath},\ k_{\imath}\}.
 $$</p>
-<p><strong>$k_\mu$ is not $v_\mu$.</strong> The current is $\rho v_\mu$. The momentum is $mc\,k_\mu$. They differ because the current includes the spin magnetization. In modern terms, $\rho k_\mu$ is the convection part of the Gordon decomposition of the current, and the difference is the divergence of the spin tensor. This difference is the reason the momentum can be opposite to the velocity. The angle $\theta$ is the reason the mass density can be negative.</p>
-<p><strong>The count is now eight effective functions.</strong> The four components of $k_\mu$ are not free. One condition on its curl reduces them to one function, the phase. The next section states that condition.</p>
+<p><strong>$k_{\imath}$ is not $v_{\imath}$.</strong> The current is $\rho v_{\imath}$. The momentum is $mc\,k_{\imath}$. They differ because the current includes the spin magnetization. In modern terms, $\rho k_{\imath}$ is the convection part of the Gordon decomposition of the current, and the difference is the divergence of the spin tensor. This difference is the reason the momentum can be opposite to the velocity. The angle $\theta$ is the reason the mass density can be negative.</p>
+<p><strong>The count is now eight effective functions.</strong> The four components of $k_{\imath}$ are not free. One condition on its curl reduces them to one function, the phase. The next section states that condition.</p>
 <h2 id="step-three-the-second-subsidiary-condition">Step Three: The Second Subsidiary Condition</h2>
-<p><strong>The key technical move is the paper's condition (II), a condition on the curl of $k_\mu$.</strong> The paper prints</p>
+<p><strong>The key technical move is the paper's condition (II), a condition on the curl of $k_{\imath}$.</strong> The paper prints</p>
 <p>$$
-\partial_\mu k_\nu-\partial_\nu k_\mu
+\partial_{\imath} k_{\jmath}-\partial_{\jmath} k_{\imath}
 =
 -\frac{i}{2\kappa}\epsilon_{\alpha\beta\gamma\delta}
 v^\alpha w^\beta
 \left(
-\partial_\mu v^\gamma\partial_\nu v^\delta
+\partial_{\imath} v^\gamma\partial_{\jmath} v^\delta
 -
-\partial_\mu w^\gamma\partial_\nu w^\delta
+\partial_{\imath} w^\gamma\partial_{\jmath} w^\delta
 \right)
--\eta F_{\mu\nu},
+-\eta F_{{\imath}{\jmath}},
 $$</p>
-<p>with $\kappa=mc/\hbar$ and $\eta=e/(mc^2)$.</p>
+<p>with $\kappa=\frac{2\pi mc}{h}$ and $\eta=e/(mc^2)$.</p>
 <p><strong>The condition is derived, not postulated.</strong> It follows from the Dirac equation and the definitions of the bilinears. The paper derives it in the section on the kinematics of the $k$ vector. The derivation is algebraic once the Dirac equation is used.</p>
-<p><strong>It is gauge-independent.</strong> The vector potential $A_\mu$ does not appear. Only the field strength $F_{\mu\nu}$ appears. A gauge transformation changes the phase of $\psi$ and leaves the bilinears and $k_\mu$ invariant.</p>
-<p><strong>It is the integrability condition for the phase.</strong> If $k_\mu$ were a pure gradient, its curl would vanish. The condition says the curl is a specific functional of the velocity and spin gradients, and it is not zero in general. The gradient part of $k_\mu$ remains free, and that free part is the phase. The condition is the local replacement for "$k_\mu$ is a gradient" when the phase is not globally defined.</p>
+<p><strong>It is gauge-independent.</strong> The vector potential $A_{\imath}$ does not appear. Only the field strength $F_{{\imath}{\jmath}}$ appears. A gauge transformation changes the phase of $\psi$ and leaves the bilinears and $k_{\imath}$ invariant.</p>
+<p><strong>It is the integrability condition for the phase.</strong> If $k_{\imath}$ were a pure gradient, its curl would vanish. The condition says the curl is a specific functional of the velocity and spin gradients, and it is not zero in general. The gradient part of $k_{\imath}$ remains free, and that free part is the phase. The condition is the local replacement for "$k_{\imath}$ is a gradient" when the phase is not globally defined.</p>
 <p><strong>The condition is consistent.</strong> The first term on the right is itself a curl. Its curl vanishes identically. The electromagnetic term is closed by the homogeneous Maxwell equation. Taking the curl of both sides gives $0=0$.</p>
-<p><strong>The six components are not six independent equations.</strong> The curl of a one-form has six components. The map from $k_\mu$ to its curl has rank three, because the Bianchi identity holds identically. The condition therefore reduces the four components of $k_\mu$ to one function. That is the count that makes the system close.</p>
+<p><strong>The six components are not six independent equations.</strong> The curl of a one-form has six components. The map from $k_{\imath}$ to its curl has rank three, because the Bianchi identity holds identically. The condition therefore reduces the four components of $k_{\imath}$ to one function. That is the count that makes the system close.</p>
 <p><strong>The name is "quasi-irrotational."</strong> The momentum is not irrotational. Its vorticity is tied to the gradients of velocity and spin. The tie is what makes the tensor system self-contained.</p>
 <h2 id="step-four-the-tensor-equations">Step Four: The Tensor Equations</h2>
 <p><strong>The Dirac equation becomes a set of tensor equations.</strong> The paper first derives a primary set of ten tensor equations, thirty-two component equations in all. It then reduces them to a standard form. The standard form, the paper's (d'), is six equations, numbered (1'), (2'), (3'), (4'), (11'), and (12'):</p>
 <p>$$
-\partial_\mu(\rho v^\mu)=0,
+\partial_{\imath}(\rho v^{\imath})=0,
 $$</p>
 <p>$$
-\partial_\mu(\rho w^\mu)=-2\kappa\rho\sin\theta,
+\partial_{\imath}(\rho w^{\imath})=-2\kappa\rho\sin\theta,
 $$</p>
 <p>$$
-w^\mu\partial_\mu\theta
-+2\kappa v^\mu k_\mu
-+i\epsilon_{\mu\nu\kappa\lambda}v^\mu w^\nu\partial^\kappa v^\lambda
+w^{\imath}\partial_{\imath}\theta
++2\kappa v^{\imath} k_{\imath}
++i\epsilon_{{\imath}{\jmath}\kappa\lambda}v^{\imath} w^{\jmath}\partial^\kappa v^\lambda
 =
 -2\kappa\cos\theta,
 $$</p>
 <p>$$
-v^\mu\partial_\mu\theta
-+2\kappa w^\mu k_\mu
-+i\epsilon_{\mu\nu\kappa\lambda}v^\mu w^\nu\partial^\kappa w^\lambda
+v^{\imath}\partial_{\imath}\theta
++2\kappa w^{\imath} k_{\imath}
++i\epsilon_{{\imath}{\jmath}\kappa\lambda}v^{\imath} w^{\jmath}\partial^\kappa w^\lambda
 =
 0,
 $$</p>
 <p>$$
-v^\mu\partial_\nu(\rho v_\mu)
--w^\mu\partial_\nu(\rho w_\mu)
+v^{\imath}\partial_{\jmath}(\rho v_{\imath})
+-w^{\imath}\partial_{\jmath}(\rho w_{\imath})
 =
--\partial_\nu\rho
--\rho v_\nu w^\mu z_\mu
-+2i\kappa\rho\epsilon_{\nu\mu\kappa\lambda}v^\mu w^\kappa k^\lambda,
+-\partial_{\jmath}\rho
+-\rho v_{\jmath} w^{\imath} z_{\imath}
++2i\kappa\rho\epsilon_{{\jmath}{\imath}\kappa\lambda}v^{\imath} w^\kappa k^\lambda,
 $$</p>
 <p>$$
-v^\mu\partial_\mu w_\nu
--w^\mu\partial_\mu v_\nu
+v^{\imath}\partial_{\imath} w_{\jmath}
+-w^{\imath}\partial_{\imath} v_{\jmath}
 =
-z_\nu-\sigma_{\nu\mu}\partial^\mu\theta,
+z_{\jmath}-\sigma_{{\jmath}{\imath}}\partial^{\imath}\theta,
 $$</p>
 <p>with</p>
 <p>$$
-z_\mu=w^\nu\partial_\mu v_\nu=-v^\nu\partial_\mu w_\nu .
+z_{\imath}=w^{\jmath}\partial_{\imath} v_{\jmath}=-v^{\jmath}\partial_{\imath} w_{\jmath} .
 $$</p>
 <p>The numbering is the paper's; the gaps are equations of the primary set that the standard form replaces.</p>
 <p><strong>Each equation has a fluid meaning.</strong> The first is continuity. The second is the spin balance; $\rho\sin\theta$ is the source of the spin density. The third and fourth transport $\theta$ along $v$ and $w$. The fifth is the Euler equation. The sixth is the spin precession.</p>
@@ -253,8 +253,8 @@ $$</p>
 \hat\Omega=\rho\sin\theta .
 $$</p>
 <p>It is the internal degree of freedom that the bilinears alone do not fix. It controls the disparity between mass and momentum.</p>
-<p><strong>At $\theta=0$ the fluid is normal.</strong> $\Omega=\rho$ and $\hat\Omega=0$. At leading order the proper mass density is $m\rho$ and the momentum is $mc\,v_\mu$. The mass is positive and the momentum is parallel to the velocity.</p>
-<p><strong>At $\theta=\pi$ the fluid has negative mass.</strong> $\Omega=-\rho$ and $\hat\Omega=0$. At leading order the proper mass density is $-m\rho$. The momentum is $-mc\,v_\mu$. The momentum is opposite to the velocity. Takabayasi calls this "ass-like" behaviour: the fluid moves backward when pushed.</p>
+<p><strong>At $\theta=0$ the fluid is normal.</strong> $\Omega=\rho$ and $\hat\Omega=0$. At leading order the proper mass density is $m\rho$ and the momentum is $mc\,v_{\imath}$. The mass is positive and the momentum is parallel to the velocity.</p>
+<p><strong>At $\theta=\pi$ the fluid has negative mass.</strong> $\Omega=-\rho$ and $\hat\Omega=0$. At leading order the proper mass density is $-m\rho$. The momentum is $-mc\,v_{\imath}$. The momentum is opposite to the velocity. Takabayasi calls this "ass-like" behaviour: the fluid moves backward when pushed.</p>
 <p><strong>The proper mass density has a gradient correction.</strong> The exact expression is</p>
 <p>$$
 \mu^0
@@ -264,7 +264,7 @@ m\rho\left\{
 +
 \frac{1}{2\kappa}
 \left(
-w^\mu\partial_\mu\theta
+w^{\imath}\partial_{\imath}\theta
 +
 i\epsilon_{\alpha\beta\gamma\delta}v^\alpha w^\beta\partial^\gamma v^\delta
 \right)
@@ -277,47 +277,47 @@ $$</p>
 <h2 id="the-energy-momentum-tensor">The Energy-Momentum Tensor</h2>
 <p><strong>The tensor equations have a thermodynamic interpretation.</strong> The canonical energy-momentum tensor is</p>
 <p>$$
-L_{\mu\nu}
+L_{{\imath}{\jmath}}
 =
 mc^2\rho
 \left\{
-k_\mu v_\nu
+k_{\imath} v_{\jmath}
 +
 \frac{1}{2\kappa}
 \left(
-w_\nu\partial_\mu\theta
+w_{\jmath}\partial_{\imath}\theta
 +
-i\epsilon_{\nu\alpha\beta\gamma}
-v^\alpha w^\beta\partial_\mu v^\gamma
+i\epsilon_{{\jmath}\alpha\beta\gamma}
+v^\alpha w^\beta\partial_{\imath} v^\gamma
 \right)
 \right\}.
 $$</p>
 <p>It is not symmetric.</p>
 <p><strong>Its conservation law is not the Euler equation.</strong> The law is</p>
 <p>$$
-\partial^\nu L_{\mu\nu}=e\rho F_{\mu\nu}v^\nu .
+\partial^{\jmath} L_{{\imath}{\jmath}}=e\rho F_{{\imath}{\jmath}}v^{\jmath} .
 $$</p>
 <p>The right side is the Lorentz force. The left side is the transport of momentum and energy, including the quantum stress and heat flow.</p>
 <p><strong>The tensor splits into a particle part and a stress part.</strong> The split is</p>
 <p>$$
-L_{\mu\nu}=mc^2\rho k_\mu v_\nu+t^*_{\mu\nu},
+L_{{\imath}{\jmath}}=mc^2\rho k_{\imath} v_{\jmath}+t^*_{{\imath}{\jmath}},
 \qquad
-t^*_{\mu\nu}v^\nu=0 .
+t^*_{{\imath}{\jmath}}v^{\jmath}=0 .
 $$</p>
 <p>The first term is the transport of the particle momentum. The second is the internal stress and heat flow:</p>
 <p>$$
-t^*_{\mu\nu}=\frac{1}{c}v_\mu q_\nu+t_{\mu\nu}.
+t^*_{{\imath}{\jmath}}=\frac{1}{c}v_{\imath} q_{\jmath}+t_{{\imath}{\jmath}}.
 $$</p>
-<p>$q_\nu$ is the heat flow, spatial and orthogonal to $v$. $t_{\mu\nu}$ is the mechanical stress, spatial and orthogonal to $v$ in both indices.</p>
+<p>$q_{\jmath}$ is the heat flow, spatial and orthogonal to $v$. $t_{{\imath}{\jmath}}$ is the mechanical stress, spatial and orthogonal to $v$ in both indices.</p>
 <p><strong>The first law follows.</strong> It is</p>
 <p>$$
 \rho\frac{d\epsilon}{d\tau}
 +
-\partial_\mu q^\mu
+\partial_{\imath} q^{\imath}
 +
-mc^2\rho k_\mu\frac{dv^\mu}{d\tau}
+mc^2\rho k_{\imath}\frac{dv^{\imath}}{d\tau}
 +
-c\,t_{\mu\nu}\partial^\nu v^\mu
+c\,t_{{\imath}{\jmath}}\partial^{\jmath} v^{\imath}
 =
 0 .
 $$</p>
@@ -327,11 +327,11 @@ $$</p>
 $$</p>
 <p>The pressure is the trace of the stress:</p>
 <p>$$
-P=\frac{t^\mu_{\ \mu}}{3}
+P=\frac{t^{\imath}_{\ {\imath}}}{3}
 =
-\frac{\hbar c}{6}\rho
+\frac{h c}{12\pi}\rho
 \left\{
-\partial_\mu\theta\,w^\mu
+\partial_{\imath}\theta\,w^{\imath}
 +
 i\epsilon_{\alpha\beta\gamma\delta}v^\alpha w^\beta\partial^\gamma v^\delta
 \right\}.
@@ -342,8 +342,8 @@ $$</p>
 <p>$$
 \mathcal L_H=\mathcal L_D+\mathcal L_I+\mathcal L_{II}.
 $$</p>
-<p>$\mathcal L_D$ is the Dirac Lagrangian written in the fluid variables. $\mathcal L_I$ enforces the first subsidiary conditions with three Lagrange multipliers. $\mathcal L_{II}$ enforces the second subsidiary condition with an antisymmetric multiplier $g_{\mu\nu}$.</p>
-<p><strong>Varying the Lagrangian reproduces the system.</strong> The variations with respect to the multipliers give the two subsidiary conditions. The variations with respect to $\rho,\theta,v_\mu,w_\mu,k_\mu$ give the equations of motion. The Lagrangian is a compact encoding of the whole system. The electromagnetic interaction term is inversely proportional to the coupling constant, a feature the paper notes.</p>
+<p>$\mathcal L_D$ is the Dirac Lagrangian written in the fluid variables. $\mathcal L_I$ enforces the first subsidiary conditions with three Lagrange multipliers. $\mathcal L_{II}$ enforces the second subsidiary condition with an antisymmetric multiplier $g_{{\imath}{\jmath}}$.</p>
+<p><strong>Varying the Lagrangian reproduces the system.</strong> The variations with respect to the multipliers give the two subsidiary conditions. The variations with respect to $\rho,\theta,v_{\imath},w_{\imath},k_{\imath}$ give the equations of motion. The Lagrangian is a compact encoding of the whole system. The electromagnetic interaction term is inversely proportional to the coupling constant, a feature the paper notes.</p>
 <p><strong>The paper's own order is the first warrant.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -359,7 +359,7 @@ $$</p>
 </tr>
 <tr>
 <td>§4</td>
-<td>kinematics of $k_\mu$ and the second subsidiary condition</td>
+<td>kinematics of $k_{\imath}$ and the second subsidiary condition</td>
 </tr>
 <tr>
 <td>§5–6</td>
@@ -431,9 +431,9 @@ $$</p>
 <h2 id="the-velocity-spin-symmetry">The Velocity-Spin Symmetry</h2>
 <p><strong>The tensor variables expose a complex symmetry that the spinor does not.</strong> The transformation</p>
 <p>$$
-v_\mu\to i w_\mu,
+v_{\imath}\to i w_{\imath},
 \qquad
-w_\mu\to i v_\mu
+w_{\imath}\to i v_{\imath}
 $$</p>
 <p>preserves the first subsidiary conditions. It preserves the fifth and sixth equations. It does not preserve the first four unless the mass term vanishes.</p>
 <p><strong>At zero mass the symmetry is exact.</strong> The mass terms vanish, and the equations pair off under the transformation. The whole system is invariant. The neutrino is the exact case.</p>
@@ -442,7 +442,7 @@ $$</p>
 <h2 id="the-method">The Method</h2>
 <p><strong>The method is tensorization.</strong> Replace the spinor by the algebra of its bilinears. Use the algebraic identities to find the independent invariants. Add the derivative quantities that capture the phase. Derive the integrability condition on the phase. Rewrite the field equation as transport equations.</p>
 <p><strong>It is not an ansatz.</strong> An ansatz restricts the field to a class. Tensorization is a change of variables onto the space of bilinears. It is defined for every field with a nonzero density. It drops only the global phase.</p>
-<p><strong>The price is the subsidiary condition.</strong> The phase is not a bilinear, so it enters through a derivative. The derivative vector $k_\mu$ has four components, but only one is independent. The condition on its curl removes the other three. The condition is the price of eliminating the spinor.</p>
+<p><strong>The price is the subsidiary condition.</strong> The phase is not a bilinear, so it enters through a derivative. The derivative vector $k_{\imath}$ has four components, but only one is independent. The condition on its curl removes the other three. The condition is the price of eliminating the spinor.</p>
 <p><strong>The method is not specific to the Dirac equation.</strong> It can be tried for any field whose bilinears close under algebraic identities. The Dirac field closes because the sixteen matrices form a finite algebra. A field with more components would have a larger bilinear algebra, and the identities would be more complicated. The method is a general route, not a trick.</p>
 <p><strong>The limitation is the closure.</strong> The method gives an exact equivalence only when the bilinear algebra is closed and the subsidiary conditions are known. For the Dirac field, the closure is the Pauli–Kofink identities. For other fields, it may fail. The paper's achievement is to carry the closure through.</p>
 <h2 id="what-the-biquaternion-corpus-takes-from-it">What the Biquaternion Corpus Takes from It</h2>
@@ -469,17 +469,17 @@ $$</p>
 <td>identity</td>
 </tr>
 <tr>
-<td>$v_\mu$</td>
+<td>$v_{\imath}$</td>
 <td>$\tilde U_{\Psi,\mathrm b}$</td>
 <td>identity</td>
 </tr>
 <tr>
-<td>$w_\mu$</td>
+<td>$w_{\imath}$</td>
 <td>$\tilde u_{\mathrm r}$</td>
 <td>identity</td>
 </tr>
 <tr>
-<td>$k_\mu$</td>
+<td>$k_{\imath}$</td>
 <td>$\tilde\nabla_\Phi\theta_{\mathrm{pha}}$</td>
 <td>reading, with a qualifier</td>
 </tr>
@@ -491,19 +491,19 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The first three rows are identities.</strong> The density is the modulus squared. The velocity is the boost. The spin is the rotor. These are the corpus's own statements, not analogies.</p>
-<p><strong>The fourth row is a reading.</strong> The word's momentum is a gradient. Takabayasi's $k_\mu$ has a nonzero curl. The two agree where the curl vanishes. The free gradient part of $k_\mu$ is the phase. The reading is stated as a reading, not as an identity.</p>
+<p><strong>The fourth row is a reading.</strong> The word's momentum is a gradient. Takabayasi's $k_{\imath}$ has a nonzero curl. The two agree where the curl vanishes. The free gradient part of $k_{\imath}$ is the phase. The reading is stated as a reading, not as an identity.</p>
 <p><strong>The fifth row is forced by the count.</strong> The word has eight parameters. The tensor system has eight effective functions. Four rows match seven of the eight. The only unmatched pair is the rotor's angle and $\theta$. The identification is forced, but it is not computed from a solution.</p>
 <p><strong>The second subsidiary is the tensor form of the non-closure.</strong> The corpus differentiates the word and finds four brackets of four different types. The Dirac equation constrains them and does not close them. Takabayasi's condition is the tensor form of that non-closure. This is a reading of the correspondence, not a theorem of the paper. The paper does not mention biquaternions.</p>
 <p><strong>The paper's route is the tensor analogue of the polar decomposition.</strong> The bilinears are the coordinates. The second subsidiary condition is the closure condition for the phase. The angle $\theta$ is the coordinate that the chiral rotation shifts. The biquaternion word is the algebraic distillation of the same structure. The corpus's claim is that the tensor calculus and the algebra describe the same fluid. The claim is supported by the mapping and the count, not by a line-by-line translation.</p>
 <h2 id="what-was-checked">What Was Checked</h2>
-<p><strong>The bilinear identities were checked on 100 random spinors.</strong> The representation is the Dirac representation with $\gamma_0=\beta$ and $\gamma_k=\beta\alpha_k$, the metric $(+,-,-,-)$, and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. The definitions are those of the table. The largest residuals are $1.4\times10^{-13}$ for $S_\mu S^\mu=-\rho^2$, $6.0\times10^{-14}$ for $\hat S_\mu\hat S^\mu=\rho^2$, and $3.3\times10^{-14}$ for $S_\mu\hat S^\mu=0$.</p>
-<p><strong>The unit-vector conditions were checked on the same 100 spinors.</strong> The largest residuals are $5.0\times10^{-14}$ for $v_\mu v^\mu=-1$, $1.6\times10^{-14}$ for $w_\mu w^\mu=1$, and $1.4\times10^{-14}$ for $v_\mu w^\mu=0$.</p>
+<p><strong>The bilinear identities were checked on 100 random spinors.</strong> The representation is the Dirac representation with $\gamma_0=\beta$ and $\gamma_k=\beta\alpha_k$, the metric $(+,-,-,-)$, and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. The definitions are those of the table. The largest residuals are $1.4\times10^{-13}$ for $S_{\imath} S^{\imath}=-\rho^2$, $6.0\times10^{-14}$ for $\hat S_{\imath}\hat S^{\imath}=\rho^2$, and $3.3\times10^{-14}$ for $S_{\imath}\hat S^{\imath}=0$.</p>
+<p><strong>The unit-vector conditions were checked on the same 100 spinors.</strong> The largest residuals are $5.0\times10^{-14}$ for $v_{\imath} v^{\imath}=-1$, $1.6\times10^{-14}$ for $w_{\imath} w^{\imath}=1$, and $1.4\times10^{-14}$ for $v_{\imath} w^{\imath}=0$.</p>
 <p><strong>The closure of the first term of the second subsidiary condition was checked on 100 random unit fields.</strong> The fields satisfy the three first subsidiary conditions at each point. The curl of the term is zero to the truncation error of the difference scheme; the largest value is $2.4\times10^{-5}$ with a step of $10^{-4}$. The term is a curl, so its curl vanishes identically.</p>
 <p><strong>The charge-conjugation rule was checked on random spinors.</strong> With $\psi_c=i\gamma_2\gamma_0\bar\psi^T$, both $\Omega$ and $\hat\Omega$ change sign. The angle therefore shifts by $\pi$, as stated.</p>
 <p><strong>The counts were checked by arithmetic.</strong> The bilinear count is $16-9=7$. The effective-function count is $1+1+3+2+1=8$. The equation count is $1+1+1+1+2+2=8$.</p>
 <p><strong>The historical order was checked against the sources.</strong> The 1955 and 1956 short accounts, the 1956 variational paper, the 1956 seminar, and the 1957 paper are listed in <em>Further Reading</em>. The seminar's Part II §4 places the Lagrangian after the tensor variables and conditions.</p>
 <h2 id="summary">Summary</h2>
-<p><strong>The route in five steps.</strong> The bilinears; the identities that reduce them to seven quantities; the phase through $k_\mu$; the second subsidiary condition; the tensor equations. The Lagrangian is a later re-derivation.</p>
+<p><strong>The route in five steps.</strong> The bilinears; the identities that reduce them to seven quantities; the phase through $k_{\imath}$; the second subsidiary condition; the tensor equations. The Lagrangian is a later re-derivation.</p>
 <p><strong>The result is an exact fluid model.</strong> The Dirac field is equivalent to a spin fluid with density, velocity, spin, momentum, internal angle, stress, heat flow, and pressure. The equivalence is exact up to a constant phase.</p>
 <p><strong>The method is a general route.</strong> Tensorization is a way to replace a spinor by real fields. The price is a subsidiary condition on the phase. The reward is a fluid interpretation that the spinor does not give.</p>
 <p><strong>The historical point.</strong> Takabayasi did not find the equations by varying a Lagrangian. He found them by reading the bilinears. The Lagrangian came after.</p>
@@ -517,7 +517,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\eta_{\mu\nu}$</td>
+<td>$\eta_{{\imath}{\jmath}}$</td>
 <td>metric, $\mathrm{diag}(+1,-1,-1,-1)$; indices are raised and lowered with it</td>
 </tr>
 <tr>
@@ -533,16 +533,16 @@ $$</p>
 <td>the sixteen Dirac matrices, $A=1,\dots,16$</td>
 </tr>
 <tr>
-<td>$\gamma_\mu$</td>
-<td>Dirac matrices, $\{\gamma_\mu,\gamma_\nu\}=2\eta_{\mu\nu}$</td>
+<td>$\gamma_{\imath}$</td>
+<td>Dirac matrices, $\{\gamma_{\imath},\gamma_{\jmath}\}=2\eta_{{\imath}{\jmath}}$</td>
 </tr>
 <tr>
 <td>$\gamma_5$</td>
 <td>$i\gamma_0\gamma_1\gamma_2\gamma_3$</td>
 </tr>
 <tr>
-<td>$\sigma_{\mu\nu}$</td>
-<td>$\frac{i}{2}[\gamma_\mu,\gamma_\nu]$</td>
+<td>$\sigma_{{\imath}{\jmath}}$</td>
+<td>$\frac{i}{2}[\gamma_{\imath},\gamma_{\jmath}]$</td>
 </tr>
 <tr>
 <td>$\Omega$</td>
@@ -553,16 +553,16 @@ $$</p>
 <td>pseudoscalar bilinear $i\bar\psi\gamma_5\psi$</td>
 </tr>
 <tr>
-<td>$S_\mu$</td>
-<td>vector bilinear $i\bar\psi\gamma_\mu\psi$</td>
+<td>$S_{\imath}$</td>
+<td>vector bilinear $i\bar\psi\gamma_{\imath}\psi$</td>
 </tr>
 <tr>
-<td>$\hat S_\mu$</td>
-<td>pseudovector bilinear $-i\bar\psi\gamma_\mu\gamma_5\psi$</td>
+<td>$\hat S_{\imath}$</td>
+<td>pseudovector bilinear $-i\bar\psi\gamma_{\imath}\gamma_5\psi$</td>
 </tr>
 <tr>
-<td>$M_{\mu\nu}$</td>
-<td>tensor bilinear $-\bar\psi\sigma_{\mu\nu}\psi$</td>
+<td>$M_{{\imath}{\jmath}}$</td>
+<td>tensor bilinear $-\bar\psi\sigma_{{\imath}{\jmath}}\psi$</td>
 </tr>
 <tr>
 <td>$\rho$</td>
@@ -573,31 +573,31 @@ $$</p>
 <td>internal angle, $\tan\theta=\hat\Omega/\Omega$</td>
 </tr>
 <tr>
-<td>$v_\mu$</td>
-<td>unit timelike velocity, $S_\mu=\rho v_\mu$</td>
+<td>$v_{\imath}$</td>
+<td>unit timelike velocity, $S_{\imath}=\rho v_{\imath}$</td>
 </tr>
 <tr>
-<td>$w_\mu$</td>
-<td>unit spacelike spin, $\hat S_\mu=\rho w_\mu$</td>
+<td>$w_{\imath}$</td>
+<td>unit spacelike spin, $\hat S_{\imath}=\rho w_{\imath}$</td>
 </tr>
 <tr>
-<td>$J_\mu$, $\hat J_\mu$</td>
+<td>$J_{\imath}$, $\hat J_{\imath}$</td>
 <td>vector and axial second-kind currents</td>
 </tr>
 <tr>
-<td>$k_\mu$</td>
-<td>particle momentum, $p_\mu=mc\,k_\mu$</td>
+<td>$k_{\imath}$</td>
+<td>particle momentum, $p_{\imath}=mc\,k_{\imath}$</td>
 </tr>
 <tr>
 <td>$\kappa$</td>
-<td>$mc/\hbar$</td>
+<td>$\frac{2\pi mc}{h}$</td>
 </tr>
 <tr>
 <td>$\eta$</td>
 <td>$e/(mc^2)$</td>
 </tr>
 <tr>
-<td>$F_{\mu\nu}$</td>
+<td>$F_{{\imath}{\jmath}}$</td>
 <td>electromagnetic field strength</td>
 </tr>
 <tr>
@@ -605,8 +605,8 @@ $$</p>
 <td>Levi-Civita symbol, $\epsilon_{0123}=+1$</td>
 </tr>
 <tr>
-<td>$z_\mu$</td>
-<td>$w^\nu\partial_\mu v_\nu=-v^\nu\partial_\mu w_\nu$</td>
+<td>$z_{\imath}$</td>
+<td>$w^{\jmath}\partial_{\imath} v_{\jmath}=-v^{\jmath}\partial_{\imath} w_{\jmath}$</td>
 </tr>
 <tr>
 <td>$\mu^0$</td>
@@ -617,15 +617,15 @@ $$</p>
 <td>internal energy density</td>
 </tr>
 <tr>
-<td>$L_{\mu\nu}$</td>
+<td>$L_{{\imath}{\jmath}}$</td>
 <td>canonical energy-momentum tensor</td>
 </tr>
 <tr>
-<td>$q_\nu$</td>
+<td>$q_{\jmath}$</td>
 <td>heat flow</td>
 </tr>
 <tr>
-<td>$t_{\mu\nu}$</td>
+<td>$t_{{\imath}{\jmath}}$</td>
 <td>mechanical stress</td>
 </tr>
 <tr>

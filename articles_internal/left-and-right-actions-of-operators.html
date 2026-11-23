@@ -77,7 +77,7 @@
 \tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}-\tilde\nabla\tilde Q_{\mathrm f}=-2\nabla\times\vec Q_{\mathrm f},
 $$</p>
 <p>with the scalar parts equal. The identity is not an accident of the four units. It follows from one commutator, $\vec e_j\tilde Q-\tilde Q\vec e_j=2\vec e_j\times\vec Q$, summed over the three vector units against the three vector derivatives.</p>
-<p><strong>Neither reading is a derivation of the pointwise product.</strong> Both Leibniz rules fail, and they fail by the same commutator, once on each side. The left rule carries the defect $\sum_\mu[e_\mu,\tilde F]\partial\tilde G/\partial Q_\mu$ and the right rule carries $\sum_\mu(\partial\tilde F/\partial Q_\mu)[\tilde G,e_\mu]$. The defect vanishes for a central factor and for a constant partner, and for neither reason in general.</p>
+<p><strong>Neither reading is a derivation of the pointwise product.</strong> Both Leibniz rules fail, and they fail by the same commutator, once on each side. The left rule carries the defect $\sum_{\imath}[e_{\imath},\tilde F]\partial\tilde G/\partial Q_{\imath}$ and the right rule carries $\sum_{\imath}(\partial\tilde F/\partial Q_{\imath})[\tilde G,e_{\imath}]$. The defect vanishes for a central factor and for a constant partner, and for neither reason in general.</p>
 <p><strong>What the article establishes.</strong> Six claims, each computed before it is asserted. First, an element generates two operators and its two products differ by the vector product with the unit. Second, the readings of the gradient differ by exactly the curl, so they agree on the fields whose vector part is curl-free and disagree on the rest. Third, both Leibniz rules need a defect term, and the corrected forms are stated. Fourth, the arrow cannot be replaced by plain juxtaposition, because the plain product is the operator that differentiates the other factor. Fifth, integration by parts joins the two readings rather than one of them: each is the formal adjoint of the other, up to a sign and a boundary term. Sixth, the two readings are exchanged by the quaternion conjugation, which turns the right reading into the left reading of the conjugate field.</p>
 <p><strong>Why the matter is not notational.</strong> The corpus uses both readings and uses them for different jobs. The wave operators are written in the left reading, the integration identities in the right one, and the wedge that extracts the curl is in the right one too, though it is written there without the arrow. A page that writes one where the other is meant loses a sign on the curl and keeps every scalar term, so the error survives a check of the scalar part and shows only in the vector part. That is the failure mode this note exists to close.</p>
 <h2 id="what-an-action-is">What an Action Is</h2>
@@ -99,8 +99,8 @@ $$</p>
 <thead>
 <tr>
 <th>unit</th>
-<th>$e_\mu\tilde Q$, the left product</th>
-<th>$\tilde Qe_\mu$, the right product</th>
+<th>$e_{\imath}\tilde Q$, the left product</th>
+<th>$\tilde Qe_{\imath}$, the right product</th>
 </tr>
 </thead>
 <tbody>
@@ -131,12 +131,12 @@ $$</p>
 <h2 id="the-two-readings-of-the-gradient">The Two Readings of the Gradient</h2>
 <p><strong>The left reading is the gradient itself.</strong></p>
 <p>$$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
+\tilde\nabla=\sum_{{\imath}\in\{t,x,y,z\}}e_{\imath}\frac{\partial}{\partial Q_{\imath}},
 $$</p>
 <p>and $\tilde\nabla\tilde Q_{\mathrm f}$ is the element whose four coefficients are the four directional derivatives combined in the left products. It is one element of $\mathbb{B}$ with derivative coefficients, and it acts on one side.</p>
 <p><strong>The right reading is the same gradient read on the other side.</strong></p>
 <p>$$
-\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}:=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial\tilde Q_{\mathrm f}}{\partial Q_\mu}\,e_\mu ,
+\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}:=\sum_{{\imath}\in\{t,x,y,z\}}\frac{\partial\tilde Q_{\mathrm f}}{\partial Q_{\imath}}\,e_{\imath} ,
 $$</p>
 <p>the same four coefficients in the same four directions, with the unit written after each. It is not a second operator and not a new element: it is the gradient with its two factors exchanged, and the exchange is what the difference below computes.</p>
 <p><strong>The arrow.</strong> The long arrow over a glyph marks that the operator acts on the factor written to its left, and it points at that factor. It is not the short arrow of the pure part, which sits on an element and marks its vector part alone. The two marks never meet: the short arrow sits on $\vec e_x$ and on $\vec p$, the long one on an operator.</p>
@@ -308,29 +308,29 @@ $$</p>
 <h2 id="both-leibniz-rules-carry-a-defect">Both Leibniz Rules Carry a Defect</h2>
 <p><strong>The left rule fails.</strong> Differentiating a product with the units on the left gives</p>
 <p>$$
-\tilde\nabla(\tilde F\tilde G)=\bigl(\tilde\nabla\tilde F\bigr)\tilde G+\sum_\mu e_\mu\tilde F\frac{\partial\tilde G}{\partial Q_\mu},
+\tilde\nabla(\tilde F\tilde G)=\bigl(\tilde\nabla\tilde F\bigr)\tilde G+\sum_{\imath} e_{\imath}\tilde F\frac{\partial\tilde G}{\partial Q_{\imath}},
 $$</p>
 <p>and the second term is not $\tilde F\tilde\nabla\tilde G$. The two differ because the unit does not pass the factor $\tilde F$:</p>
 <p>$$
-\tilde\nabla(\tilde F\tilde G)-\bigl(\tilde\nabla\tilde F\bigr)\tilde G-\tilde F\bigl(\tilde\nabla\tilde G\bigr)=\sum_\mu\bigl[e_\mu,\tilde F\bigr]\frac{\partial\tilde G}{\partial Q_\mu}.
+\tilde\nabla(\tilde F\tilde G)-\bigl(\tilde\nabla\tilde F\bigr)\tilde G-\tilde F\bigl(\tilde\nabla\tilde G\bigr)=\sum_{\imath}\bigl[e_{\imath},\tilde F\bigr]\frac{\partial\tilde G}{\partial Q_{\imath}}.
 $$</p>
 <p>The defect is a sum of commutators with the four units, weighted by the derivatives of the second factor. It vanishes when $\tilde F$ is central and when $\tilde G$ is constant; for a generic pair it does not vanish.</p>
 <p><strong>The right rule fails in the same way, on the other side.</strong></p>
 <p>$$
-(\tilde F\tilde G)\overleftarrow{\tilde\nabla}-\bigl(\tilde F\overleftarrow{\tilde\nabla}\bigr)\tilde G-\tilde F\bigl(\tilde G\overleftarrow{\tilde\nabla}\bigr)=\sum_\mu\frac{\partial\tilde F}{\partial Q_\mu}\bigl[\tilde G,e_\mu\bigr].
+(\tilde F\tilde G)\overleftarrow{\tilde\nabla}-\bigl(\tilde F\overleftarrow{\tilde\nabla}\bigr)\tilde G-\tilde F\bigl(\tilde G\overleftarrow{\tilde\nabla}\bigr)=\sum_{\imath}\frac{\partial\tilde F}{\partial Q_{\imath}}\bigl[\tilde G,e_{\imath}\bigr].
 $$</p>
-<p>Here the defect is weighted by the derivatives of the first factor, because it is the unit's passage past $\tilde G$ that fails. A rule that moves the unit past the wrong factor, $\sum_\mu(\partial\tilde F/\partial Q_\mu)e_\mu\tilde G$ in place of the first term, is the commonest misquotation of the identity and differs from it by this sum.</p>
+<p>Here the defect is weighted by the derivatives of the first factor, because it is the unit's passage past $\tilde G$ that fails. A rule that moves the unit past the wrong factor, $\sum_{\imath}(\partial\tilde F/\partial Q_{\imath})e_{\imath}\tilde G$ in place of the first term, is the commonest misquotation of the identity and differs from it by this sum.</p>
 <p><strong>The corrected right rule, in the shape of the definition.</strong> Collect the derivative of the bracket and put the unit after it,</p>
 <p>$$
-(\tilde F\tilde G)\overleftarrow{\tilde\nabla}=\sum_\mu\Bigl(\frac{\partial\tilde F}{\partial Q_\mu}\tilde G+\tilde F\frac{\partial\tilde G}{\partial Q_\mu}\Bigr)e_\mu ,
+(\tilde F\tilde G)\overleftarrow{\tilde\nabla}=\sum_{\imath}\Bigl(\frac{\partial\tilde F}{\partial Q_{\imath}}\tilde G+\tilde F\frac{\partial\tilde G}{\partial Q_{\imath}}\Bigr)e_{\imath} ,
 $$</p>
 <p>which is the definition of the reading applied to the product, and which holds with no defect because the unit sits at the end and nothing has to pass it. The corresponding form of the left rule is</p>
 <p>$$
-\tilde\nabla(\tilde F\tilde G)=\sum_\mu e_\mu\frac{\partial}{\partial Q_\mu}\bigl(\tilde F\tilde G\bigr),
+\tilde\nabla(\tilde F\tilde G)=\sum_{\imath} e_{\imath}\frac{\partial}{\partial Q_{\imath}}\bigl(\tilde F\tilde G\bigr),
 $$</p>
 <p>with the derivative still bound to the whole bracket.</p>
 <p><strong>Why the defect is a commutator and not a correction term.</strong> The derivative is not the source of the failure; it acts on scalars and commutes with everything. The failure is entirely in the insertion of the unit at a position. A unit inserted before a factor and the same unit inserted after it differ by the commutator, and the size of the difference is the vector product of §<em>The Commutator of a Unit with an Element</em>. That is why the defect is linear in the derivatives and vanishes identically on a central factor.</p>
-<p><strong>What the corpus already says.</strong> The integration articles record the same fact for the left rule: the Leibniz term $\sum_\mu e_\mu\tilde F\,\partial\tilde G/\partial Q_\mu$ equals $\tilde F(\tilde\nabla\tilde G)$ only when $\tilde F$ commutes with every unit, and the right gradient is the transposition that removes the restriction (<em>Split-Biquaternion Integration</em>, §<em>The Vector Case</em>). The defect written above is the size of that restriction, term by term.</p>
+<p><strong>What the corpus already says.</strong> The integration articles record the same fact for the left rule: the Leibniz term $\sum_{\imath} e_{\imath}\tilde F\,\partial\tilde G/\partial Q_{\imath}$ equals $\tilde F(\tilde\nabla\tilde G)$ only when $\tilde F$ commutes with every unit, and the right gradient is the transposition that removes the restriction (<em>Split-Biquaternion Integration</em>, §<em>The Vector Case</em>). The defect written above is the size of that restriction, term by term.</p>
 <h2 id="the-arrow-cannot-be-replaced">The Arrow Cannot Be Replaced</h2>
 <p><strong>The plain product is a different operator.</strong> Written without the arrow, $\tilde Q\tilde\nabla$ is the product of the element $\tilde Q$ with the operator $\tilde\nabla$. Applied to a field it gives $\tilde Q(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}})$: it differentiates the field on its right and not the element on its left. The right reading gives $(\tilde Q\overleftarrow{\tilde\nabla})\tilde{Ξ}^{\mathrm{sp}}$, which is the element computed from $\tilde Q$ alone multiplied into $\tilde{Ξ}^{\mathrm{sp}}$. The two are different elements for generic $\tilde Q$ and $\tilde{Ξ}^{\mathrm{sp}}$.</p>
 <p><strong>The difference is not small.</strong> One differentiates $\tilde{Ξ}^{\mathrm{sp}}$ and the other does not differentiate $\tilde{Ξ}^{\mathrm{sp}}$ at all, so the two cannot be reconciled by a sign. A page that drops the arrow has changed the operator, not its display.</p>
@@ -347,15 +347,15 @@ $$</p>
 \qquad\Longrightarrow\qquad
 \tilde Q_1\overleftarrow{\tilde\nabla}=\bigl(\tilde\nabla^{\natural}\tilde Q_1^{\natural}\bigr)^{\natural},
 $$</p>
-<p>with $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial Q_\mu$ and $\varepsilon=(1,-1,-1,-1)$. The boxed line is the content and the second display is the same line read backwards, which is licensed by $\natural^2=\mathrm{id}$.</p>
-<p><strong>The proof is one term.</strong> The involution is $\mathbb{C}$-linear, it acts on the units at fixed coordinate, and it commutes with $\partial/\partial Q_\mu$; and $e_\mu^{\natural}=\varepsilon_\mu e_\mu$. The $\mu$-th term on the left, $(\partial\tilde Q_1/\partial Q_\mu)^{\natural}(e_\mu)^{\natural}$, is therefore $\varepsilon_\mu e_\mu\,\partial\tilde Q_1^{\natural}/\partial Q_\mu$, which is the $\mu$-th term of $\tilde\nabla^{\natural}\tilde Q_1^{\natural}$. Summing over $\mu$ gives the boxed line, and $\natural^2=\mathrm{id}$ gives the arrow back.</p>
+<p>with $\tilde\nabla^{\natural}=\sum_{\imath}\varepsilon_{\imath} e_{\imath}\,\partial/\partial Q_{\imath}$ and $\varepsilon=(1,-1,-1,-1)$. The boxed line is the content and the second display is the same line read backwards, which is licensed by $\natural^2=\mathrm{id}$.</p>
+<p><strong>The proof is one term.</strong> The involution is $\mathbb{C}$-linear, it acts on the units at fixed coordinate, and it commutes with $\partial/\partial Q_{\imath}$; and $e_{\imath}^{\natural}=\varepsilon_{\imath} e_{\imath}$. The $\mu$-th term on the left, $(\partial\tilde Q_1/\partial Q_{\imath})^{\natural}(e_{\imath})^{\natural}$, is therefore $\varepsilon_{\imath} e_{\imath}\,\partial\tilde Q_1^{\natural}/\partial Q_{\imath}$, which is the $\mu$-th term of $\tilde\nabla^{\natural}\tilde Q_1^{\natural}$. Summing over $\mu$ gives the boxed line, and $\natural^2=\mathrm{id}$ gives the arrow back.</p>
 <p><strong>The three properties are all the proof uses.</strong> Linearity over $\mathbb{C}$, action on the units at fixed coordinate, and commutation with the derivative. Nothing about a metric, a mass, a frame or a field equation enters, and that is why the identity holds of every element rather than of the solutions of anything.</p>
 <p><strong>What it says.</strong> A right action is the conjugation of a left action: conjugate the field, apply the conjugate gradient from the left, conjugate the result. In the notation of §<em>What an Action Is</em>,</p>
 <p>$$
 R_{\tilde\nabla}=\natural\circ L_{\tilde\nabla^{\natural}}\circ\natural,
 $$</p>
 <p>read on a differential operator rather than on a multiplication. The statement needs no equation, no mass, no chirality and no pair of fields. It is an identity between operators, true of any $\tilde Q_1$: a solution, a non-solution, a product, a constant.</p>
-<p><strong>It does not survive a product.</strong> The identity holds for a field, and a product of fields is a field. What it does not do is move the derivative off one factor of a product while the other stays. On $\tilde Q_1\tilde Q_2$ the unit must sit after the whole bracket, as §<em>Both Leibniz Rules Carry a Defect</em> derives. It does not pass to the left of $\tilde Q_2$: that is a commutation with the units, allowed only when $\tilde Q_2$ is central. Nor is the rule $\sum_\mu(\partial\tilde Q_1/\partial Q_\mu)e_\mu\tilde Q_2$, which differs from the first term by the defect $\sum_\mu(\partial\tilde Q_1/\partial Q_\mu)[\tilde Q_2,e_\mu]$. That defect is why the integration articles name $\nabla^{R}$ after the factor it differentiates instead of writing a bare arrow.</p>
+<p><strong>It does not survive a product.</strong> The identity holds for a field, and a product of fields is a field. What it does not do is move the derivative off one factor of a product while the other stays. On $\tilde Q_1\tilde Q_2$ the unit must sit after the whole bracket, as §<em>Both Leibniz Rules Carry a Defect</em> derives. It does not pass to the left of $\tilde Q_2$: that is a commutation with the units, allowed only when $\tilde Q_2$ is central. Nor is the rule $\sum_{\imath}(\partial\tilde Q_1/\partial Q_{\imath})e_{\imath}\tilde Q_2$, which differs from the first term by the defect $\sum_{\imath}(\partial\tilde Q_1/\partial Q_{\imath})[\tilde Q_2,e_{\imath}]$. That defect is why the integration articles name $\nabla^{R}$ after the factor it differentiates instead of writing a bare arrow.</p>
 <p><strong>With a connection nothing changes.</strong> The components of $\tilde\nabla^{\mathrm{gco}}$ are the four partial derivatives shifted by central scalars, one per direction, and the basis is untouched. A central coefficient passes the involution unchanged, so the same term-by-term computation gives</p>
 <p>$$
 \bigl(\tilde Q_1\overleftarrow{\tilde\nabla^{\mathrm{gco}}}\bigr)^{\natural}=\tilde\nabla^{\mathrm{gco},\natural}\tilde Q_1^{\natural},
@@ -384,17 +384,17 @@ $$</p>
 <h2 id="integration-by-parts-joins-the-two-readings">Integration by Parts Joins the Two Readings</h2>
 <p><strong>The two-sided identity, and it is exact.</strong> For two element-valued fields,</p>
 <p>$$
-\sum_\mu\frac{\partial}{\partial Q_\mu}\bigl(\tilde F e_\mu\tilde G\bigr)=\bigl(\tilde F\overleftarrow{\tilde\nabla}\bigr)\tilde G+\tilde F\bigl(\tilde\nabla\tilde G\bigr).
+\sum_{\imath}\frac{\partial}{\partial Q_{\imath}}\bigl(\tilde F e_{\imath}\tilde G\bigr)=\bigl(\tilde F\overleftarrow{\tilde\nabla}\bigr)\tilde G+\tilde F\bigl(\tilde\nabla\tilde G\bigr).
 $$</p>
 <p>The derivative here is the ordinary partial derivative of a product, so the identity is the product rule and carries no defect: the two-sided operator puts the unit between the two factors, where it belongs to neither of them alone. This is the shape the integration articles use, and it is why they can state a divergence theorem without first stating a product rule.</p>
-<p><strong>The scalar pairing gives adjointness.</strong> The product rule applied to $\tilde F\tilde G e_\mu$ and summed, with the scalar part taken term by term, gives the companion identity</p>
+<p><strong>The scalar pairing gives adjointness.</strong> The product rule applied to $\tilde F\tilde G e_{\imath}$ and summed, with the scalar part taken term by term, gives the companion identity</p>
 <p>$$
-\mathrm{Sc}\bigl(\bigl(\tilde\nabla\tilde F\bigr)\tilde G\bigr)+\mathrm{Sc}\bigl(\tilde F\,\tilde G\overleftarrow{\tilde\nabla}\bigr)=\sum_\mu\frac{\partial}{\partial Q_\mu}\mathrm{Sc}\bigl(\tilde F\tilde G e_\mu\bigr).
+\mathrm{Sc}\bigl(\bigl(\tilde\nabla\tilde F\bigr)\tilde G\bigr)+\mathrm{Sc}\bigl(\tilde F\,\tilde G\overleftarrow{\tilde\nabla}\bigr)=\sum_{\imath}\frac{\partial}{\partial Q_{\imath}}\mathrm{Sc}\bigl(\tilde F\tilde G e_{\imath}\bigr).
 $$</p>
 <p>The right-hand side is the divergence of a vector field and integrates to a boundary term. It is a companion and not the scalar part of the two-sided operator above: the two differ in which factor the unit sits beside, and the scalar part is not cyclic enough to make them the same line. Both hold, and each is verified on its own.</p>
 <p><strong>What the companion identity buys.</strong> On a domain with no boundary the two scalar terms of the companion sum to zero, so $\langle\tilde\nabla\tilde F,\tilde G\rangle=-\langle\tilde F,\tilde G\overleftarrow{\tilde\nabla}\rangle$ for the pairing $\langle\tilde A,\tilde B\rangle=\int\mathrm{Sc}(\tilde A\tilde B)$. That is the adjointness statement: $-\overleftarrow{\tilde\nabla}$ is the adjoint of $\tilde\nabla$ for this pairing, and $\tilde\nabla$ is the adjoint of $-\overleftarrow{\tilde\nabla}$. The sign is the one the integration articles carry, and it is a sign of the transposition and not of the conjugation.</p>
 <p><strong>The two adjoints are not the same adjoint.</strong> The dagger is the adjoint for the Hermitian form and it carries the involution; the transposition is the adjoint for the scalar part and it carries the position. The corpus fixes the first on the gradient as $\tilde\nabla^{*}=\tilde\nabla^{\natural}$ (<em>Operator and Calculus Conventions</em>, §<em>The Transposition of the Gradient</em>), and the second is the identity above. A page that uses the arrow where the dagger is meant loses the involution; a page that uses the dagger where the arrow is meant loses the position.</p>
-<p><strong>The boundary term is the same object in both readings.</strong> In the two-sided form the boundary term is $\tilde F\tilde u_{\mathrm n}\tilde G$ with $\tilde u_{\mathrm n}$ the unit normal; in the paired form it is $\mathrm{Sc}(\tilde F\tilde G e_\mu)$ summed against the normal. The two are the same sum, one written inside the algebra and one outside it.</p>
+<p><strong>The boundary term is the same object in both readings.</strong> In the two-sided form the boundary term is $\tilde F\tilde u_{\mathrm n}\tilde G$ with $\tilde u_{\mathrm n}$ the unit normal; in the paired form it is $\mathrm{Sc}(\tilde F\tilde G e_{\imath})$ summed against the normal. The two are the same sum, one written inside the algebra and one outside it.</p>
 <h2 id="where-the-corpus-uses-each">Where the Corpus Uses Each</h2>
 <p><strong>Four places, and the reading is not the same in all four.</strong></p>
 <div class="table-scroll"><table>
@@ -436,18 +436,18 @@ $$</p>
 <p><strong>The d'Alembertian is a left double reading.</strong> $\Box=\tilde\nabla\tilde\nabla^{\natural}$ applies the gradient to the field and then the conjugate gradient to the result, both from the left. It is scalar and the two orders agree, $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$ (<em>The Gradient, the D'Alembertian and the Frame Generators</em>, §<em>The D'Alembertian</em>).</p>
 <p><strong>The integration identities are where the right reading earns its keep.</strong> There the derivative meets two distinct factors whose order matters, and the two-sided identity keeps it attached to one of them. Everything the integration articles state follows from that identity and from nothing else, and the wedge above is the same reading used once in the algebra.</p>
 <p><strong>The wedge is where the right reading is easiest to lose.</strong> It is written with the second term as the right reading by definition, and a reader who supplies the plain product gets a different operator. The correction costs one arrow.</p>
-<p><strong>The quaternion article writes the right reading as $fD$.</strong> In <em>Quaternion Integration</em>, §<em>The Divergence Form of the Operators</em>, the two readings appear as $Df=\sum_\mu\partial/\partial q_\mu(e_\mu f)$ and $fD=\sum_\mu\partial/\partial q_\mu(fe_\mu)$, and the divergence theorem is stated for both. The second is the right reading under another name: the derivative stands outside the product and the unit stands inside it, which is exactly the order of $\tilde Q\overleftarrow{\tilde\nabla}$. The name differs and the object does not: the long arrow of this note and the operator letter placed after $f$ are the same reading.</p>
+<p><strong>The quaternion article writes the right reading as $fD$.</strong> In <em>Quaternion Integration</em>, §<em>The Divergence Form of the Operators</em>, the two readings appear as $Df=\sum_{\imath}\partial/\partial q_{\imath}(e_{\imath} f)$ and $fD=\sum_{\imath}\partial/\partial q_{\imath}(fe_{\imath})$, and the divergence theorem is stated for both. The second is the right reading under another name: the derivative stands outside the product and the unit stands inside it, which is exactly the order of $\tilde Q\overleftarrow{\tilde\nabla}$. The name differs and the object does not: the long arrow of this note and the operator letter placed after $f$ are the same reading.</p>
 <h2 id="the-five-traps">The Five Traps</h2>
 <p><strong>The first trap: the two readings are the same.</strong> They are not, and they differ by twice the curl. They agree on a curl-free field, which includes every constant and every field with a scalar part alone, so a test on a constant field will not detect the confusion.</p>
 <p><strong>The second trap: the scalar part is enough.</strong> Both readings have the same scalar part, $-\nabla\cdot\vec Q_{\mathrm{f}}$ beside the time derivative. A check of the divergence therefore passes whichever reading is used, and the error survives. The vector part is where the two differ, and it must be checked separately.</p>
-<p><strong>The third trap: a product rule without a defect.</strong> Neither reading is a derivation of the pointwise product. The left rule needs $\sum_\mu[e_\mu,\tilde F]\partial\tilde G/\partial Q_\mu$ and the right rule needs $\sum_\mu(\partial\tilde F/\partial Q_\mu)[\tilde G,e_\mu]$, and the corrected forms put the unit after the bracket on the right and bind the derivative to the bracket on the left. A page that writes either rule without the defect is wrong for every non-central factor, which is every factor of the series.</p>
+<p><strong>The third trap: a product rule without a defect.</strong> Neither reading is a derivation of the pointwise product. The left rule needs $\sum_{\imath}[e_{\imath},\tilde F]\partial\tilde G/\partial Q_{\imath}$ and the right rule needs $\sum_{\imath}(\partial\tilde F/\partial Q_{\imath})[\tilde G,e_{\imath}]$, and the corrected forms put the unit after the bracket on the right and bind the derivative to the bracket on the left. A page that writes either rule without the defect is wrong for every non-central factor, which is every factor of the series.</p>
 <p><strong>The fourth trap: the arrow means "adjoint".</strong> It does not. The arrow marks the side, and the adjoint is the dagger, which carries the involution. A page that treats the arrow as an adjoint writes the transposition where the Hermitian pairing is meant and loses the involution.</p>
 <p><strong>The fifth trap: the arrow can be dropped when it is obvious.</strong> It cannot, because the plain product is the operator that differentiates the other factor. The corpus keeps a second name, $\nabla^{R}$, for the case where the position alone is ambiguous, and using it consistently is cheaper than deciding case by case whether the reader will guess the same side.</p>
 <h2 id="summary">Summary</h2>
 <p><strong>An element generates two operators.</strong> $L_a$ and $R_b$ act from the two sides and the side is position. The gradient is an element with derivative coefficients, so it generates both readings, and the two are told apart by the long arrow or by the name $\nabla^{R}$.</p>
 <p><strong>The two readings differ by the curl.</strong> $\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}-\tilde\nabla\tilde Q_{\mathrm f}=-2\nabla\times\vec Q_{\mathrm f}$, and $\tilde\nabla\wedge\tilde Q_{\mathrm f}=\nabla\times\vec Q_{\mathrm f}$ is half of the same statement. The scalar parts are equal, and the whole difference sits in the antisymmetric block of the two arrays.</p>
 <p><strong>The difference has one origin.</strong> $\vec e_j\tilde Q-\tilde Q\vec e_j=2\vec e_j\times\vec Q$, summed against the three vector derivatives. Nothing else in the algebra contributes.</p>
-<p><strong>Both Leibniz rules carry a commutator defect.</strong> The left rule fails by $\sum_\mu[e_\mu,\tilde F]\partial\tilde G/\partial Q_\mu$ and the right by $\sum_\mu(\partial\tilde F/\partial Q_\mu)[\tilde G,e_\mu]$; both vanish for a central factor and for a constant partner. The corrected forms place the unit after the bracket on the right and bind the derivative to the bracket on the left.</p>
+<p><strong>Both Leibniz rules carry a commutator defect.</strong> The left rule fails by $\sum_{\imath}[e_{\imath},\tilde F]\partial\tilde G/\partial Q_{\imath}$ and the right by $\sum_{\imath}(\partial\tilde F/\partial Q_{\imath})[\tilde G,e_{\imath}]$; both vanish for a central factor and for a constant partner. The corrected forms place the unit after the bracket on the right and bind the derivative to the bracket on the left.</p>
 <p><strong>The arrow is not decoration.</strong> The plain product is the operator that differentiates the factor on its right, so dropping the arrow changes the operator.</p>
 <p><strong>The conjugation exchanges the two readings.</strong> $\bigl(\tilde Q_1\overleftarrow{\tilde\nabla}\bigr)^{\natural}=\tilde\nabla^{\natural}\tilde Q_1^{\natural}$ holds of every element, and it relates the two sides with no defect at all. It fails once a product has to keep its two factors apart, which is why the integration articles name the right gradient instead of writing a bare arrow. The conjugation adds no unit and moves none, so a central connection leaves the identity untouched, and the chiral instance is one instance of it rather than its content.</p>
 <p><strong>Integration by parts joins the two readings.</strong> The two-sided identity is exact and carries no defect, and the scalar pairing makes each reading the formal adjoint of the other up to a sign. The corpus needs both readings for that reason and not for symmetry.</p>
@@ -462,11 +462,11 @@ $$</p>
 <tbody>
 <tr>
 <td>$\tilde\nabla\tilde Q_{\mathrm f}$</td>
-<td>the left reading, $\sum_\mu e_\mu\partial\tilde Q_{\mathrm f}/\partial Q_\mu$; an element with derivative coefficients</td>
+<td>the left reading, $\sum_{\imath} e_{\imath}\partial\tilde Q_{\mathrm f}/\partial Q_{\imath}$; an element with derivative coefficients</td>
 </tr>
 <tr>
 <td>$\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}$</td>
-<td>the right reading, $\sum_\mu(\partial\tilde Q_{\mathrm f}/\partial Q_\mu)e_\mu$; the same gradient with its two factors exchanged</td>
+<td>the right reading, $\sum_{\imath}(\partial\tilde Q_{\mathrm f}/\partial Q_{\imath})e_{\imath}$; the same gradient with its two factors exchanged</td>
 </tr>
 <tr>
 <td>$\overleftarrow{\ }$</td>
@@ -493,8 +493,8 @@ $$</p>
 <td>the scalar part, the coefficient of $e_t$</td>
 </tr>
 <tr>
-<td>$q_\mu$</td>
-<td>the real part of the coordinate $Q_\mu$; the worked examples write $q_x,q_y,q_z$ where $Q_k=q_k$</td>
+<td>$q_{\imath}$</td>
+<td>the real part of the coordinate $Q_{\imath}$; the worked examples write $q_x,q_y,q_z$ where $Q_k=q_k$</td>
 </tr>
 <tr>
 <td>$F^{\mathrm{fn}}$</td>
@@ -502,7 +502,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde\nabla^{\natural}$</td>
-<td>the conjugate gradient, $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$ with $\varepsilon=(1,-1,-1,-1)$</td>
+<td>the conjugate gradient, $\sum_{\imath}\varepsilon_{\imath} e_{\imath}\partial/\partial Q_{\imath}$ with $\varepsilon=(1,-1,-1,-1)$</td>
 </tr>
 <tr>
 <td>$\natural$</td>
@@ -534,7 +534,7 @@ $$</p>
 <ul>
 <li><a href="../articles_maths/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, for the definition of the transposed gradient, the product rule that carries the defect, and the summary of notation.</li>
 <li><a href="../articles_maths/split-biquaternion-integration.html">Split-Biquaternion Integration</a>, for $\nabla^{R}$ inside the integration-by-parts identities and the remark on the non-commutative correction.</li>
-<li><a href="../articles_maths/quaternion-integration.html">Quaternion Integration</a>, for the two readings written as divergence forms, $Df=\sum_\mu\partial/\partial q_\mu(e_\mu f)$ and $fD=\sum_\mu\partial/\partial q_\mu(fe_\mu)$, and for the divergence theorem stated for both.</li>
+<li><a href="../articles_maths/quaternion-integration.html">Quaternion Integration</a>, for the two readings written as divergence forms, $Df=\sum_{\imath}\partial/\partial q_{\imath}(e_{\imath} f)$ and $fD=\sum_{\imath}\partial/\partial q_{\imath}(fe_{\imath})$, and for the divergence theorem stated for both.</li>
 <li><a href="../articles_maths/biquaternion-integration.html">Biquaternion Integration</a>, for $\nabla^{R}$ in the integration-by-parts identity and for the remark on the non-commutative correction.</li>
 <li>The Gradient, the D'Alembertian and the Frame Generators, for the array of the left reading and the operators built from it.</li>
 <li><a href="../articles_physics/matrix-representations-conventions.html">Matrix Representations Conventions</a>, for the coefficient-basis arrays $L^{\mathrm{axf}}$ and $R^{\mathrm{axf}}$ and the sixteen two-sided products.</li>

@@ -74,11 +74,11 @@
 <p><em>The Path Integral and the Dirac Equation in Biquaternionic Form</em> constructs the sum over worldlines that produces the free Dirac propagator. This article constructs the same sum for the coupled pair, with the gradient replaced by the covariant derivative of <em>The Gauge Principle in Biquaternionic Form</em>. The weight is $e^{\frac{2\pi iS}{h}}$, the output is the propagator, and the question is what the connection does to the sum over histories.</p>
 <p>The coupled pair, and the covariant derivative.</p>
 <p>$$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L,
 \qquad
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{h}\tilde A_\Phi,
 $$</p>
 <p>with $\tilde A_\Phi$ the potential biquaternion in the material sector $\mathbb{B}_\Phi$, central per component in the abelian case, and $ϙ$ the charge. The action that produces this pair is <em>The Lagrangian and the Coupled Dirac Equation</em>, and the solutions in a constant potential are <em>The Coupled Dirac Equation in Biquaternionic Form</em>. Neither is re-derived here. This article takes the action as its input and asks what the exponential does with it.</p>
 <p>The finding, in one sentence. The worldline integral sorts the connection into two objects and gives each a separate home: the one-form $A_\Phi$ enters the phase, and the curvature $F$ enters the spin factor. That split is the path-integral statement of the type table of <em>The Coupled Dirac Equation in Biquaternionic Polar Variables</em>, and it is why the polar reading finds the connection unable to turn the rotor while the spin still precesses in a background.</p>
@@ -92,7 +92,7 @@ $$</p>
 <p>It does not build a second integral, does not construct a measure over fields, and does not derive fermionic statistics. The companion's limitation carries over unchanged: the worldline integral is over commuting elements of $\mathbb{B}$, and the Grassmann character sits in the odd variables that the spin factor absorbs. It also does not evaluate the kernel for a general constant field strength; that is the Schwinger computation, and §<em>Open Questions</em> states what would be needed.</p>
 <p>The same integral in the other coordinates is the polar companion. <em>The Path Integral and the Coupled Dirac Equation in Biquaternionic Polar Variables</em> reads the kernel of this article in the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and finds where each of the four factors comes from. It constructs no second integral. Nothing below depends on that reading.</p>
 <h2 id="conventions">Conventions</h2>
-<p>The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_{\imath}^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The material position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, with $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_t}^{2}+|\vec r|^{2}$. The mass parameter is $k_m=\frac{2\pi mc}{h}$. The worldline parameter is $\tau$ and the proper time $T$.</p>
+<p>The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_{\imath}^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The material position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, with $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_t}^{2}+|\vec r|^{2}$. The mass parameter is $\nu_m=\frac{mc}{h}$. The worldline parameter is $\tau$ and the proper time $T$.</p>
 <p>The one-form of the connection. The potential is written $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ with real coefficients in the abelian case. Its pairing with the worldline tangent is the <strong>real</strong> pairing</p>
 <p>$$
 \tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi:=A_t\,\mathrm{d}r'_t+\sum_\eta A_\eta\,\mathrm{d}r_\eta,
@@ -105,9 +105,9 @@ $$</p>
 <p>and this is the corpus's sign and not the textbook sign. <em>The Coupled Dirac Equation in Biquaternionic Form</em> records the reason: the parent's opposite convention $\partial_{\imath}-\frac{2\pi iϙ}{h}A_{\imath}$ is the same coupling with the opposite sign of $ϙ$, and this article inherits the gauge principle's sign and does not flip it. A reader who carries $+q\!\int\!A\cdot\mathrm{d}x$ from a textbook has the same physics and the opposite charge, and the free article's §<em>The Spin Factor in a Background Field</em> writes exactly that with a generic $q$: it is this article's term with $q=-ϙ$.</p>
 <p>The two kernels. The propagator is the pair $\mathcal S_L,\mathcal S_R$ of <em>The Path Integral and the Dirac Equation in Biquaternionic Form</em>, now satisfying the two lines with the covariant operators,</p>
 <p>$$
-\tilde\nabla_{\mathrm{gco},\Phi}\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)},
+\tilde\nabla_{\mathrm{gco},\Phi}\mathcal S_R-2\pi\nu_m\mathcal S_L=i\delta^{(4)},
 \qquad
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)} .
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\mathcal S_L-2\pi\nu_m\mathcal S_R=i\delta^{(4)} .
 $$</p>
 <p>Each is an element of $\mathbb{B}$ and not a scalar, and the two are the conjugates of each other in the sense of the free article. The kernel is B-valued in the coupled case for the same reason as in the free case, and nothing about that changes here.</p>
 <h2 id="the-worldline-of-the-coupled-pair">The Worldline of the Coupled Pair</h2>
@@ -198,7 +198,7 @@ $$</p>
 <p>The composition law is a statement about additivity and not about the algebra. The free article's composition argument uses the additivity of the kinetic and mass terms and the path ordering of the spin factor; the coupling adds a third additive term and changes neither of the other two. <strong>A coupling that is the integral of a one-form composes</strong>, and a coupling that were not a line integral — an interaction depending on the path's curvature, say — would not. That is the sharp form of the statement, and it is why the worldline formulation of gauge theory needs no special care at the composition step.</p>
 <p>The flux is what composes additively in the amplitude. For two histories differing by a loop, the relative phase is the flux through the loop, and for two loops sharing an edge the fluxes add with the orientations. A chain of small loops therefore accumulates the phase linearly, and the composition of kernels at successive points is the statement that the phase accumulates along the path rather than at the junctions.</p>
 <h2 id="the-checkerboard-with-a-connection">The Checkerboard With a Connection</h2>
-<p>The discrete model takes the coupling without approximation. In Feynman's checkerboard, described in <em>The Path Integral and the Dirac Equation in Biquaternionic Form</em>, a path is a sequence of lightlike steps and corners, with a phase for each step and a factor $i\epsilon k_m$ for each corner. Minimal coupling adds one factor per step,</p>
+<p>The discrete model takes the coupling without approximation. In Feynman's checkerboard, described in <em>The Path Integral and the Dirac Equation in Biquaternionic Form</em>, a path is a sequence of lightlike steps and corners, with a phase for each step and a factor $i\epsilon \nu_m$ for each corner. Minimal coupling adds one factor per step,</p>
 <p>$$
 \exp\Bigl(-\frac{2\pi iϙ}{h}\tilde A_\Phi\cdot\Delta_\Phi\tilde R_\Phi\Bigr)
 \ \text{per directed step},
@@ -318,7 +318,7 @@ $$</p>
 <td>Proper time; $x(\tau)$ the worldline</td>
 </tr>
 <tr>
-<td>$k_m=\frac{2\pi mc}{h}$</td>
+<td>$\nu_m=\frac{mc}{h}$</td>
 <td>Mass parameter</td>
 </tr>
 </tbody>

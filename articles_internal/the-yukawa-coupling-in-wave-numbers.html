@@ -81,7 +81,7 @@
 <h2 id="1-the-conversion-made-once-and-used-thereafter">1. The Conversion, Made Once and Used Thereafter</h2>
 <p><strong>The definition.</strong> The mass of a particle is read in this note as a wave number,</p>
 <p>$$
-k_{m} := \frac{m\,c}{\hbar},
+k_{m} := \frac{2\pi m\,c}{h},
 \qquad
 [k_{m}]=\mathsf{L}^{-1},
 $$</p>
@@ -93,23 +93,23 @@ $$</p>
 \tilde\nu_{m}:=\frac{1}{\lambda_{m}}=\frac{k_{m}}{2\pi}=\frac{m\,c}{h},
 $$</p>
 <p>so $\lambda_m$ is the wavelength in metres and $\tilde\nu_m$ is the spectroscopic wave number in $\mathrm{m^{-1}}$, the number of waves per metre, which is the quantity a spectrometer quotes. The label tells the reader which is meant: $k_m$ is angular, $\mathrm{rad\,m^{-1}}$; $\tilde\nu_m$ is a count of waves, $\mathrm{m^{-1}}$; $\lambda_m$ is a length, $\mathrm{m}$.</p>
-<p><strong>The numbers, obtained once.</strong> With the measured masses $0.51099895$, $105.6583755$ and $1776.86\ \mathrm{MeV}$, the conversion $\hbar\,c=197.32698\ \mathrm{MeV}\cdot\mathrm{fm}$ and $h\,c=1239.84198\ \mathrm{MeV}\cdot\mathrm{fm}$,</p>
+<p><strong>The numbers, obtained once.</strong> With the measured masses $0.51099895$, $105.6583755$ and $1776.86\ \mathrm{MeV}$, the conversion $\frac{h}{2\pi}\,c=197.32698\ \mathrm{MeV}\cdot\mathrm{fm}$ and $h\,c=1239.84198\ \mathrm{MeV}\cdot\mathrm{fm}$,</p>
 <p>| species | $k_{m}$ in $\mathrm{rad\,m^{-1}}$ | $\tilde\nu_{m}$ in $\mathrm{m^{-1}}$ | $\lambda_{m}=1/\tilde\nu_{m}$ |
 |---|---|---|
 | $e$ | $2.5896\times10^{12}$ | $4.1215\times10^{11}$ | $2.4263\ \mathrm{pm}$ |
 | $\mu$ | $5.3545\times10^{14}$ | $8.5219\times10^{13}$ | $11.734\ \mathrm{fm}$ |
 | $\tau$ | $9.0046\times10^{15}$ | $1.4331\times10^{15}$ | $0.69777\ \mathrm{fm}$ |</p>
-<p><strong>The number the corpus currently inverts to is neither of the last two.</strong> It writes $\lambda_m=1/k_m$, of dimension $\mathrm{m}$, which is $\lambda_m/(2\pi)$ under the definition above: $386.159\ \mathrm{fm}$ for the electron, against $2.426\ \mathrm{pm}$ for its wavelength. That quantity is the length per radian and it is the one the operators use, since a derivative returns an inverse length and the exponent carries radians. It is not a wavelength and it is not $\tilde\nu_m^{-1}$, and §<em>The Defect in the Corpus's Lambda</em> states what follows.</p>
+<p><strong>The corpus writes both, and the two are named apart.</strong> The conventions define $\lambda_m=2\pi/k_m=h/(mc)$, the wavelength, and the separate symbol $\bar\lambda_m=1/k_m=\frac{h}{2\pi mc}$, the length per radian: $386.159\ \mathrm{fm}$ for the electron, against $2.426\ \mathrm{pm}$ for its wavelength. The length per radian is the one the operators use, since a derivative returns an inverse length and the exponent carries radians. It is not a wavelength and it is not $\tilde\nu_m^{-1}$, and §<em>The Defect in the Corpus's Lambda</em> records the repair.</p>
 <p><strong>What a uniform rescaling costs.</strong> [ALGEBRA] $k_m$ and $\tilde\nu_m$ differ by the constant $2\pi$, so every quantity that is a ratio of wave numbers is the same in either, and every quantity that is linear in one is $2\pi$ times the other. Koide and the ladder are ratios, so they are unchanged: $Q$ computed from $k_m$ is $0.666660511$ and from $\tilde\nu_m$ is $0.666660511$.</p>
 <p><strong>The electroweak scale, by the same rule.</strong> The vacuum expectation value is a mass, so it becomes a wave number by the same quotient, with $v=246.22\ \mathrm{GeV}$:</p>
 <p>$$
-k_{v} := \frac{v\,c}{\hbar}=1.2478\times10^{18}\ \mathrm{m^{-1}} .
+k_{v} := \frac{2\pi v\,c}{h}=1.2478\times10^{18}\ \mathrm{m^{-1}} .
 $$</p>
 <p>This one number is the whole of the electroweak scale in what follows. Every Yukawa statement below is a ratio to it, and it never appears in any other form.</p>
 <p><strong>Why a wave number and not a mass.</strong> Three reasons, and the third is the one that matters here. A wave number is the coefficient the equations already carry: the gradient multiplies by $i\tilde K_{\Phi}$, the mass term of the operator is $k_m$, and a derivative returns an inverse length. A wave number is what the algebra's norm gives: the biquaternion norm of the momentum is $-\langle\tilde K_{\Phi}\rangle_{\natural}=k_{m}^{2}$, so $k_m$ is already the square root of an invariant of the algebra. And a ratio of two wave numbers is a pure number with no unit at all, which is the only kind of number a theory can predict.</p>
-<p><strong>The amplitude, by the same rule.</strong> The canonical mode amplitude of one quantum is fixed by the wave number alone, and the corpus's form is $\sqrt{\hbar\,c/(2E)}$; on the mass shell</p>
+<p><strong>The amplitude, by the same rule.</strong> The canonical mode amplitude of one quantum is fixed by the wave number alone, and the corpus's form is $\sqrt{\frac{h}{2\pi}\,c/(2E)}$; on the mass shell</p>
 <p>$$
-A=\sqrt{\frac{\hbar\,c}{2E}}\ \propto\ k_{m}^{-1/2},
+A=\sqrt{\frac{h\,c}{4\pi E}}\ \propto\ k_{m}^{-1/2},
 \qquad
 [A]=\mathsf{L}^{1/2},
 $$</p>

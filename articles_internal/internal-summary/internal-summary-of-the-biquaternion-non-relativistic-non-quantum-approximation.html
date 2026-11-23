@@ -72,7 +72,7 @@
         <h1 id="internal-summary-of-the-biquaternion-non-relativistic-non-quantum-approximation"><strong>Internal Summary of the Biquaternion Non Relativistic Non Quantum Approximation</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>What this file is.</strong> A compressed map of the category <em>Biquaternion Non Relativistic Non Quantum Approximation</em>, twenty-five articles. It gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them. Every formula is copied from the source article named in the section.</p>
-<p><strong>What the category does.</strong> It keeps the algebra and drops both $\hbar$ and $1/c$. What remains is classical mechanics, classical rotation, classical electromagnetism and classical thermodynamics, written in $\mathbb{B}$. It is the ground floor of the physics corpus, and every later category returns to it in a limit.</p>
+<p><strong>What the category does.</strong> It keeps the algebra and drops both $\frac{h}{2\pi}$ and $1/c$. What remains is classical mechanics, classical rotation, classical electromagnetism and classical thermodynamics, written in $\mathbb{B}$. It is the ground floor of the physics corpus, and every later category returns to it in a limit.</p>
 <p><strong>The two structural gains of the algebra at this level.</strong> The phase space is one quaternion, with the metric as the real part and the symplectic form as the imaginary part. The rotation is one rotor, with the angular velocity as $\tilde u^{\natural}d\tilde u/dr'_t$ and no Euler angles.</p>
 <p><strong>The five menu subsections.</strong></p>
 <div class="table-scroll"><table>
@@ -128,13 +128,13 @@ $$</p>
 <p>$$
 \{f,g\}=\sum_\eta\Bigl(\frac{\partial f}{\partial q_\eta}\frac{\partial g}{\partial p_\eta}-\frac{\partial f}{\partial p_\eta}\frac{\partial g}{\partial q_\eta}\Bigr),
 \qquad
-\boxed{\;\{f,g\}\ \frac{\longleftrightarrow}{i\hbar}\ [f,g]\;}
+\boxed{\;\{f,g\}\ \frac{\longleftrightarrow}{i \frac{h}{2\pi}}\ [f,g]\;}
 $$</p>
 <p><strong>The non-trivial claim, and the corpus states it as a warning.</strong> The two sides are objects of different kinds: one is a number and the other an operator, and the correspondence is a <em>similarity</em>, not an identity. The three checks</p>
 <p>$$
 \{q_i,q_j\}=0,\quad \{p_i,p_j\}=0,\quad \{q_i,p_j\}=\delta_{ij}
 \longleftrightarrow
-\frac{1}{i\hbar}[q_i,q_j]=0,\quad \frac{1}{i\hbar}[p_i,p_j]=0,\quad \frac{1}{i\hbar}[q_i,p_j]=\delta_{ij}
+\frac{1}{i \frac{h}{2\pi}}[q_i,q_j]=0,\quad \frac{1}{i \frac{h}{2\pi}}[p_i,p_j]=0,\quad \frac{1}{i \frac{h}{2\pi}}[q_i,p_j]=\delta_{ij}
 $$</p>
 <p>show the parallel, and the higher brackets $\{q,p^{2}\}=2p$, $\{q^{2},p^{2}\}=4qp$, $\{q^{3},p^{3}\}=9q^{2}p^{2}$ show where the parallel stops: the quantum counterparts carry ordering corrections.</p>
 <p><strong>The action principle and its non-quantum content.</strong> The variation of the action gives the Euler–Lagrange equations; the polar form of the field gives the Hamilton–Jacobi equation. The corpus states that the two routes agree and that the classical limit is the statement $\delta S=0$ read as a condition on the phase.</p>
@@ -155,7 +155,7 @@ $$</p>
 <p><strong>The non-trivial claim.</strong> The angular velocity is the logarithmic derivative of the rotor, and the Euler equations are the statement that the derivative of the rotor has a vanishing scalar part. The body frame and the space frame are the two sides of one derivative: $d\tilde u=\tilde u\,\vec\omega_b\,dr'_t/(2c)=\vec\omega_s\,\tilde u\,dr'_t/(2c)$.</p>
 <p><strong>Hannay's angles.</strong></p>
 <p>$$
-\boxed{\;\delta\theta_k=-\frac{\partial}{\partial I_k}\oint\sum_\mu\mathcal A_\mu(R)\,dR_\mu\;}
+\boxed{\;\delta\theta_k=-\frac{\partial}{\partial I_k}\oint\sum_{\imath}\mathcal A_{\imath}(R)\,dR_{\imath}\;}
 $$</p>
 <p><strong>The non-trivial claim.</strong> The classical geometric phase is the derivative of the adiabatic connection with respect to the action, and the quantum Berry phase is the same connection evaluated on the eigenstate. The two phases are one-form integrals of one object, read at two levels.</p>
 <p><strong>Pancharatnam and Jones.</strong> The polarisation sphere is the Bloch sphere; the Pancharatnam phase is the holonomy of the connection on it. A Jones matrix decomposes into a diattenuator and a retarder:</p>
@@ -242,7 +242,7 @@ $$</p>
 \vec Z=\vec q+i\vec p,\qquad \omega=\mathrm{Im}\,\mathrm{Sc}(\vec Z^{*}\vec W),\qquad g=\mathrm{Re}\,\mathrm{Sc}(\vec Z^{*}\vec W),
 $$</p>
 <p>$$
-\{f,g\}\leftrightarrow\frac{1}{i\hbar}[f,g],\qquad
+\{f,g\}\leftrightarrow\frac{1}{i \frac{h}{2\pi}}[f,g],\qquad
 \vec\omega_b=2c\,\tilde u^{\natural}\dot{\tilde u},\qquad
 \mathcal S=h\bigl(\sqrt{1-4\,\mathrm{Sc}\langle\tilde{Ϛ}_\Psi\rangle_{\natural}}\bigr).
 $$</p>
@@ -274,7 +274,7 @@ $$</p>
 <td>body-frame, space-frame angular velocity</td>
 </tr>
 <tr>
-<td>$\mathcal A_\mu$</td>
+<td>$\mathcal A_{\imath}$</td>
 <td>adiabatic connection</td>
 </tr>
 <tr>
