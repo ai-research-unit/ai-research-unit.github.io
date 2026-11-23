@@ -11,7 +11,7 @@ $$
 \qquad
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
 $$
 
 with the connection in the material sector $\mathbb{B}_\Phi$ and with central scalar coefficients in the abelian case.
@@ -28,47 +28,47 @@ The two settings. The action is stated for a connection that may depend on the c
 
 ## Conventions
 
-The conventions are the free companion's, restated here for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is the pair $(\tilde\Xi_R,\tilde\Xi_L)$ of elements of $\mathbb{B}$, the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the mass term is the only term that couples the two parts. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ with the connection in $\mathbb{B}_\Phi$, and it is central, so it multiplies from either side without a choice. The measure is $\mathrm{d}^4r$, the mass is $k_m=mc/\hbar$, and the two settings — constant and varying connection — are the parent's and are kept apart throughout.
+The conventions are the free companion's, restated here for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is the pair $(\tilde\Xi_R,\tilde\Xi_L)$ of elements of $\mathbb{B}$, the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the mass term is the only term that couples the two parts. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ with the connection in $\mathbb{B}_\Phi$, and it is central, so it multiplies from either side without a choice. The measure is $\mathrm{d}^4r$, the mass is $k_m=\frac{2\pi mc}{h}$, and the two settings — constant and varying connection — are the parent's and are kept apart throughout.
 
 ## The Action in Element Form, Coupled
 
 The free action of the parent article is
 
 $$
-S_0=\frac{\hbar c}{2}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
+S_0=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
 $$
 
 with $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^{3}r$. The coupled action is the same functional with the two gradients replaced by the two covariant operators:
 
 $$
 \boxed{\;
-S=\frac{\hbar c}{2}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr]\;}
+S=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr]\;}
 $$
 
-with $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural}$.
+with $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi^{\natural}$.
 
 The two kinetic terms carry different operators, and that is the parent's arrangement. The left part carries the conjugate and the right part carries the operator, so the two differ in the sign of the spatial derivative and in the sign of the connection's spatial slots. That arrangement is what makes the two spatial derivatives conjugate to each other, which is what the two-component structure of the equation requires.
 
 The potential enters the two terms with opposite entries. Expanding the two kinetic terms,
 
 $$
-\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\bigl((\tilde\nabla_\Phi)^{\natural}+\tfrac{iϙ}{\hbar}\tilde A_\Phi^{\natural}\bigr)\tilde\Xi_L+\tilde\Xi_R^{*}\bigl(\tilde\nabla_\Phi+\tfrac{iϙ}{\hbar}\tilde A_\Phi\bigr)\tilde\Xi_R\Bigr],
+\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\bigl((\tilde\nabla_\Phi)^{\natural}+\frac{2\pi iϙ}{h}\tilde A_\Phi^{\natural}\bigr)\tilde\Xi_L+\tilde\Xi_R^{*}\bigl(\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi\bigr)\tilde\Xi_R\Bigr],
 $$
 
 the left part sees $\tilde A_\Phi^{\natural}$ and the right part sees $\tilde A_\Phi$. For a purely electric potential the two entries are equal and the two parts are pushed the same way; for a purely magnetic one they are opposite and the two parts are pushed opposite ways. The asymmetry is not a choice: it is the conjugate operator's, and the conjugate operator is what the left part's kinetic term has.
 
-Reality. Each kinetic term is self-adjoint for the Hermitian pairing, and the argument is the parent's: the temporal slot of each covariant component is $-i\partial_{r'_t}+\frac{iϙ}{\hbar}A_t$, which is a central imaginary operator and antisymmetric for $\mathrm{Sc}(\cdot^{*}\cdot)$, so the two signs cancel under integration by parts; each spatial slot is $\partial_\eta+\frac{iϙ}{\hbar}A_\eta$, which is a real-derivative-plus-imaginary-multiplication and is self-adjoint for the same reason. The mass terms are Hermitian because they pair one part with the conjugate of the other. Hence the bracket's imaginary part is a total divergence, the real part carries the content, and the integral is real on fields of compact support.
+Reality. Each kinetic term is self-adjoint for the Hermitian pairing, and the argument is the parent's: the temporal slot of each covariant component is $-i\partial_{r'_t}+\frac{2\pi iϙ}{h}A_t$, which is a central imaginary operator and antisymmetric for $\mathrm{Sc}(\cdot^{*}\cdot)$, so the two signs cancel under integration by parts; each spatial slot is $\partial_\eta+\frac{2\pi iϙ}{h}A_\eta$, which is a real-derivative-plus-imaginary-multiplication and is self-adjoint for the same reason. The mass terms are Hermitian because they pair one part with the conjugate of the other. Hence the bracket's imaginary part is a total divergence, the real part carries the content, and the integral is real on fields of compact support.
 
 The connection's contribution to reality is nil, and that is not an accident. A central complex number multiplying the field multiplies the pairing by its modulus squared in each term, so the potential's contribution to the reality of the action cancels between the field and its conjugate. What the potential does to the action is not realness but *local invariance*, which is §*The Structural Consequence: Why the Coupling Is Forced*.
 
-The constant $\hbar c$. It multiplies the whole functional, it cancels in the variation, and the residuals do not carry it while the currents carry one power of it. The parent's reason for the convention is unchanged by the coupling.
+The constant $\frac{h}{2\pi} c$. It multiplies the whole functional, it cancels in the variation, and the residuals do not carry it while the currents carry one power of it. The parent's reason for the convention is unchanged by the coupling.
 
 ### The Two Settings
 
 The constant setting. $\tilde A_\Phi$ is a fixed element of $\mathbb{B}_\Phi$ with constant coefficients. The equation is algebraic in momentum space, the residual is linear with constant coefficients, and the solution is a finite product of exponentials up to the gauge factor:
 
 $$
-\tilde\Xi=\exp\Bigl(-i\frac{ϙ}{\hbar}\tilde A_\Phi\cdot R\Bigr)\tilde\Xi_{\mathrm{free}},
+\tilde\Xi=\exp\Bigl(-i\frac{2\pi ϙ}{h}\tilde A_\Phi\cdot R\Bigr)\tilde\Xi_{\mathrm{free}},
 $$
 
 with $\tilde\Xi_{\mathrm{free}}$ the free solution. The action's stationary points are the same set, and the value of the action on a solution is the free value, because a constant potential is pure gauge and the gauge factor's contribution cancels between the field and its conjugate.
@@ -79,14 +79,14 @@ The operator setting. $\tilde A_\Phi$ is a function of position or an operator, 
 
 **The one statement that crosses is a negative one.** A constant potential opens no gap, and this is a statement about the constant setting. It does not say that no potential opens a gap; a non-constant potential with a non-vanishing field strength does, and the Landau-level article computes the spectrum for the constant magnetic field. The two statements are consistent and they are different statements.
 
-The loop phase and the flux. The current's conservation on a closed surface is one consequence of the phase symmetry; the phase accumulated along a closed loop at fixed material time is another, and it is a property of the action's invariance rather than of the equations. In the constant setting the loop's phase is the holonomy $\exp(i\frac{ϙ}{\hbar}\oint\tilde A_\Phi\cdot\mathrm{d}l)$, and single-valuedness of the field requires the holonomy to be trivial, which is the flux quantum $\Phi=2\pi n\hbar/ϙ$ in the standard reading. The framework's Wilson-loop construction reads the loop differently, as the norm of a unit element rather than as the trace of a phase, and the two readings have not been reconciled in the corpus. The article records the tension rather than resolving it.
+The loop phase and the flux. The current's conservation on a closed surface is one consequence of the phase symmetry; the phase accumulated along a closed loop at fixed material time is another, and it is a property of the action's invariance rather than of the equations. In the constant setting the loop's phase is the holonomy $\exp(i\frac{2\pi ϙ}{h}\oint\tilde A_\Phi\cdot\mathrm{d}l)$, and single-valuedness of the field requires the holonomy to be trivial, which is the flux quantum $\Phi=2\pi n\frac{h}{2\pi ϙ}$ in the standard reading. The framework's Wilson-loop construction reads the loop differently, as the norm of a unit element rather than as the trace of a phase, and the two readings have not been reconciled in the corpus. The article records the tension rather than resolving it.
 
 ## The Variation
 
 Vary both parts and take the real part. The result is
 
 $$
-\delta S=\hbar c\,\mathrm{Re}\int\mathrm{d}^{4}r\;\Bigl[\mathrm{Sc}\bigl(\delta\tilde\Xi_L^{*}\,r_L\bigr)+\mathrm{Sc}\bigl(\delta\tilde\Xi_R^{*}\,r_R\bigr)\Bigr],
+\delta S=\frac{h}{2\pi} c\,\mathrm{Re}\int\mathrm{d}^{4}r\;\Bigl[\mathrm{Sc}\bigl(\delta\tilde\Xi_L^{*}\,r_L\bigr)+\mathrm{Sc}\bigl(\delta\tilde\Xi_R^{*}\,r_R\bigr)\Bigr],
 $$
 
 with the two residuals
@@ -99,12 +99,12 @@ $$
 
 Stationarity for every variation of compact support is $r_L=r_R=0$, which is the coupled pair.
 
-The coefficient, once. Varying $\tilde\Xi_R^{*}$ gives $\frac{\hbar c}{2}\mathrm{Re}\int\mathrm{Sc}[\delta\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R]$; varying $\tilde\Xi_R$ gives the same expression again after the operator is moved to the other slot by self-adjointness. The two halves add, the $\frac12$ cancels, and the coefficient is $\hbar c$. The coupling does not change the argument, because the connection's contribution to the two halves is the same central number in both.
+The coefficient, once. Varying $\tilde\Xi_R^{*}$ gives $\frac{h c}{4\pi}\mathrm{Re}\int\mathrm{Sc}[\delta\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R]$; varying $\tilde\Xi_R$ gives the same expression again after the operator is moved to the other slot by self-adjointness. The two halves add, the $\frac12$ cancels, and the coefficient is $\frac{h}{2\pi} c$. The coupling does not change the argument, because the connection's contribution to the two halves is the same central number in both.
 
 **The count.** Each residual is an element of $\mathbb{B}$ with eight real components, so the pair is sixteen real equations on sixteen real unknowns. The compatibility condition is obtained by applying $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ to the first residual and using the second:
 
 $$
-\Bigl(\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0,
+\Bigl(\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0,
 $$
 
 the covariant wave equation with the curvature term. The coupling therefore changes the compatibility condition in exactly one place, the curvature, and nowhere else.
@@ -117,7 +117,7 @@ Boundary terms. The variation of a field of compact support produces none. For f
 
 The primary constraints. The action is first order: the conjugate momentum of each part is a bilinear of the other part, not a rate. So the momenta do not determine the velocities and the Legendre transform is not invertible. The count is the parent's, and the polar companion exhibits it as the vanishing of the momenta of the frame; here it is the statement that the action is linear in the time derivatives of the two parts.
 
-The gauge orbit. The local central phase $\tilde\Xi_{R,L}\mapsto e^{i\Lambda}\tilde\Xi_{R,L}$, $\tilde A_\Phi\mapsto\tilde A_\Phi-(\hbar/ϙ)\partial\Lambda$ is a symmetry of the action, and it is the orbit and not the choice: the action selects no representative, and no Lorenz condition is imposed anywhere in this article. The distinction matters because the constraint is physical — it removes momenta — while the orbit is a redundancy of the description and removes no degree of freedom from the action's content.
+The gauge orbit. The local central phase $\tilde\Xi_{R,L}\mapsto e^{i\Lambda}\tilde\Xi_{R,L}$, $\tilde A_\Phi\mapsto\tilde A_\Phi-(\frac{h}{2\pi ϙ})\partial\Lambda$ is a symmetry of the action, and it is the orbit and not the choice: the action selects no representative, and no Lorenz condition is imposed anywhere in this article. The distinction matters because the constraint is physical — it removes momenta — while the orbit is a redundancy of the description and removes no degree of freedom from the action's content.
 
 What the article looks at. The orbit, because the symmetry is exact, and the constraints only to the extent that they fix the count. That is the division the family uses, and the polar companion is where the count is carried out in full.
 
@@ -140,8 +140,8 @@ and the second term is nonzero. The obstruction is therefore the derivative and 
 The repair is unique within the abelian class. Demand that the action be invariant under $\tilde\Xi\mapsto\lambda\tilde\Xi$ with $\tilde A_\Phi\mapsto\tilde A_\Phi+\delta\tilde A_\Phi$. The kinetic terms acquire
 
 $$
-\frac{i\,ϙ}{\hbar}\Bigl(\tilde\Xi_L^{*}\bigl(\tilde\nabla_\Phi^{\natural}\Gamma\bigr)\tilde\Xi_L+\tilde\Xi_R^{*}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\tilde\Xi_R\Bigr)
-+\frac{i\,ϙ}{\hbar}\Bigl(\tilde\Xi_L^{*}\delta\tilde A_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\delta\tilde A_\Phi\tilde\Xi_R\Bigr),
+\frac{2\pi i\,ϙ}{h}\Bigl(\tilde\Xi_L^{*}\bigl(\tilde\nabla_\Phi^{\natural}\Gamma\bigr)\tilde\Xi_L+\tilde\Xi_R^{*}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\tilde\Xi_R\Bigr)
++\frac{2\pi i\,ϙ}{h}\Bigl(\tilde\Xi_L^{*}\delta\tilde A_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\delta\tilde A_\Phi\tilde\Xi_R\Bigr),
 $$
 
 and the two brackets cancel for every field exactly when $\delta\tilde A_\Phi=-\tilde\nabla_\Phi\Gamma$, that is, when the connection obeys the gauge law with the sign the element companion uses. The covariant derivative is the unique repair of this shape, and the sign of the coupling is fixed by the sign of the gauge law. No further term can be added: a term without a derivative would have to be a function of $\tilde A_\Phi$ alone, and such a term is not invariant under the shift of the connection.
@@ -245,7 +245,7 @@ The loop phase and the flux quantum. The two readings of a closed loop — the t
 The coupled action is the free action with the two gradients replaced by the two covariant operators,
 
 $$
-S=\frac{\hbar c}{2}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
+S=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
 $$
 
 and its variation gives the coupled pair. The mass term is invariant under a local central phase without help; the kinetic term is not; the repair is the covariant derivative with the gauge law's sign, and it is unique within the abelian class.
@@ -266,7 +266,7 @@ The constant setting is closed — a finite product of exponentials up to the ga
 | $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^{3}r$ | Integration measure; $r'_t=ct'$ the material time |
 | $\tilde\nabla_{\mathrm{gco},\Phi},\ (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ | Covariant derivative and its $\natural$-image |
 | $\tilde A_\Phi,\ \tilde F$ | Potential biquaternion and curvature |
-| $\lambda=e^{iϙ\Gamma/\hbar}$ | Local central phase; $\Gamma$ real |
+| $\lambda=e^{\frac{2\pi iϙ\Gamma}{h}}$ | Local central phase; $\Gamma$ real |
 | $r_L,r_R$ | The two residuals; $r_L=r_R=0$ is the coupled pair |
 | $\mathcal{L}$ | The Lagrangian density: the integrand of $S$ |
 | $J^{t},J_\eta$ | Noether current of the local phase; sum over parts, difference over parts |

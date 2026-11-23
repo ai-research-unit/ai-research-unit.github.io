@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The word has four factors, the algebra has three independent bilinears, and the whole observable content of the fluid is that mismatch. The bilinears of the complete polar decomposition are the current, the spin and the quaternionic norm. The current is $\rho_{\mathrm{num}}\tilde V_{\Phi}$ and it reads the scale and the boost. The spin is $\rho_{\mathrm{num}}\frac{\hbar}{2}i\hat s$ and it reads the scale and the rotor. The norm is $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ and it reads the scale and the phase. Each reads two of the four factors, none reads three, and between them they read all four exactly once except for the scale, which appears in all three.
+The word has four factors, the algebra has three independent bilinears, and the whole observable content of the fluid is that mismatch. The bilinears of the complete polar decomposition are the current, the spin and the quaternionic norm. The current is $\rho_{\mathrm{num}}\tilde V_{\Phi}$ and it reads the scale and the boost. The spin is $\rho_{\mathrm{num}}\frac{h}{4\pi}i\hat s$ and it reads the scale and the rotor. The norm is $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ and it reads the scale and the phase. Each reads two of the four factors, none reads three, and between them they read all four exactly once except for the scale, which appears in all three.
 
 The phase and the spin therefore never meet in one bilinear. That sentence is the structural fact of this article. A current cannot carry spin information and a spin cannot carry phase information, not because the field is arranged that way but because the two factors are of types that no single quadratic product can reach at once. The algebra's own candidate for a current, $i\tilde\Xi\tilde\Xi^{*}$, does not repair this: it cancels the rotor and keeps the boost, so it is a second reading of the same two factors with the spatial part reversed.
 
@@ -23,7 +23,7 @@ $$
 \qquad
 \tilde V_{\Phi}=ic\,\tilde U_{\Psi,\mathrm b}^{-2},
 \qquad
-\tilde S_{\Psi}=\rho_{\mathrm{num}}\,\frac{\hbar}{2}\,i\,\hat s,
+\tilde S_{\Psi}=\rho_{\mathrm{num}}\,\frac{h}{4\pi}\,i\,\hat s,
 \qquad
 \hat s=\tilde u_{\mathrm r}\,\vec e_z\,\tilde u_{\mathrm r}^{\natural},
 \qquad
@@ -52,7 +52,7 @@ so the current is a timelike element of fixed square and the density is its modu
 
 The spin is invariant under the phase and under the boost. The spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ is built from the rotor alone, so no boost enters it; and the density carries no central factor, so no phase enters it. On the generic element above, $\hat s=0.932039\,\vec e_x+0.362358\,\vec e_z$ with $\hat s\cdot\hat s=1$ and $\hat s^{2}=-e_t$, and neither number moves when the phase or the rapidity is changed.
 
-The spin direction is a unit vector and the element that carries it is Hermitian. The product $\rho_{\mathrm{num}}\frac{\hbar}{2}i\hat s$ has a real scalar part only if $\hat s$ has none, which it does not, and its three vector coefficients are purely imaginary, so the spin element lies in the informational sector. That is the same placement as the energy–flux element of [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), and it is forced by the single $i$ in the definition.
+The spin direction is a unit vector and the element that carries it is Hermitian. The product $\rho_{\mathrm{num}}\frac{h}{4\pi}i\hat s$ has a real scalar part only if $\hat s$ has none, which it does not, and its three vector coefficients are purely imaginary, so the spin element lies in the informational sector. That is the same placement as the energy–flux element of [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), and it is forced by the single $i$ in the definition.
 
 Two of the rotor's three parameters reach the spin and one does not. The rotor is an angle and an axis. The spin direction is the image of the declared axis, so it is a unit vector with two parameters; the third, the rotation about the spin direction itself, leaves $\hat s$ fixed. The rotation about the spin's own axis is the one motion the spin bilinear cannot see, and it is the same motion that the torque of [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) leaves sourceless.
 
@@ -101,7 +101,7 @@ With $\omega_{1}=0.9$, $\omega_{2}=1.3$, unit amplitudes and five sample times, 
 
 **The density beats at the difference and the norm's argument runs at the sum.** That is the whole of the interference structure in this algebra, and it is one line to state. The field's own phase is not observable; what is observable is the pair $(\rho_{\mathrm{num}},\arg\langle\tilde\Xi\rangle_{\natural})$, and the pair mixes the two branches by sum and difference rather than by sum alone.
 
-Zitterbewegung is the case $\omega_{2}=-\omega_{1}$. Then the density beats at $2\omega_{1}$ and the norm's argument is constant: a superposition of a branch and its conjugate is a standing beat at twice the branch's rate, which is the frequency the standard theory calls $2mc^{2}/\hbar$ at rest. The factor of two is not put in by hand. It is the doubling of the phase in the quaternionic norm, and it is the same doubling that forces the phase's range to be a half turn.
+Zitterbewegung is the case $\omega_{2}=-\omega_{1}$. Then the density beats at $2\omega_{1}$ and the norm's argument is constant: a superposition of a branch and its conjugate is a standing beat at twice the branch's rate, which is the frequency the standard theory calls $\frac{2\pi 2mc^{2}}{h}$ at rest. The factor of two is not put in by hand. It is the doubling of the phase in the quaternionic norm, and it is the same doubling that forces the phase's range to be a half turn.
 
 The scalar fluid sees the density and the phase, and the spin-half fluid sees neither. For the scalar field the word collapses to a scale, a phase and a sign, so the bilinears of this article reduce to two: the norm and the current, and the current is the gradient of the action. There the doubling has a kinematic meaning, since the circulation of $\tilde P_{\Phi}/m$ around a node is an integer multiple of $h/m$ and the density is blind to the sign of the action. [The Spin-Zero Fluid](the-spin-zero-fluid.html) works that case and the contrast is its point.
 
@@ -177,7 +177,7 @@ The derivative of the word separates into four brackets of four types, and the b
 | $\langle\tilde Q\rangle_{\natural}$, $\tilde Q^{*}$ | Quaternionic norm and star conjugation |
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | Current |
 | $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-velocity |
-| $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\hat s$ | Spin element |
+| $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{h}{4\pi}i\hat s$ | Spin element |
 | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | Modulus of the norm |
 | $\tilde\nabla_\Phi$ | Algebra's derivative, $-ie_t\partial_{r'_{t}}+\vec\nabla_\Phi$ |
 

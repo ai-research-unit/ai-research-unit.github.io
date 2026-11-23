@@ -120,12 +120,12 @@ The inverse temperature of this category is a length, and it is the circumferenc
 $$
 \beta=\frac{m\,c}{k_m\,k_B\,T},
 \qquad
-c\beta=\frac{\hbar\,c}{k_B\,T}.
+c\beta=\frac{h\,c}{2\pi k_B\,T}.
 $$
 
 The two displays are that article's, and its own check of the second was numerical at $T=2.725$, $300$ and $1000\,\mathrm{K}$, where the ratio of the material-sector circumference to $\beta c$ came out as $1$ to twelve decimal places. This article quotes the displays and the check and derives neither.
 
-The letter is not free. $\beta$ is the imaginary-time circumference and it carries the dimension of length, because $r'_t$ is a length in this corpus and the KMS shift is $r'_t\mapsto r'_t+i\beta$. The form in which the inverse temperature is the action quantum divided by $k_BT$, with no $c$, belongs to a description in which the temporal coordinate is a time; here the temporal coordinate is a length, and the factor $\hbar$ appears with the $c$ that converts the length into a time. A reader who omits that $c$ and writes the inverse temperature as the action over $k_BT$ has dropped the corpus's own $c$ and will find every subsequent display off by that factor. [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html) states the same display and the same reading.
+The letter is not free. $\beta$ is the imaginary-time circumference and it carries the dimension of length, because $r'_t$ is a length in this corpus and the KMS shift is $r'_t\mapsto r'_t+i\beta$. The form in which the inverse temperature is the action quantum divided by $k_BT$, with no $c$, belongs to a description in which the temporal coordinate is a time; here the temporal coordinate is a length, and the factor $\frac{h}{2\pi}$ appears with the $c$ that converts the length into a time. A reader who omits that $c$ and writes the inverse temperature as the action over $k_BT$ has dropped the corpus's own $c$ and will find every subsequent display off by that factor. [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html) states the same display and the same reading.
 
 ### Tolman's law, quoted
 
@@ -294,14 +294,14 @@ The verdict on the gate is that a local temperature is available, and that the p
 | $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ | Vorticity, the antisymmetric half of the gradient |
 | $\partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}$ | Rigidity, the symmetric half of the gradient |
 | $\beta=\frac{m\,c}{k_m\,k_B\,T}$ | Inverse temperature: the imaginary-time circumference, a length |
-| $c\beta=\frac{\hbar\,c}{k_B\,T}$ | The same circumference in the material sector's units |
+| $c\beta=\frac{h\,c}{2\pi k_B\,T}$ | The same circumference in the material sector's units |
 | $T$ | Temperature |
 | $T\,c=\text{const}$ | Tolman's law in the corpus's letters, so $T\propto1/c\propto n$ |
 | $c=1/\sqrt{\epsilon\mu}$ | Local speed of light, the medium's scale |
 | $n$ | Refractive index of the medium |
 | $k_B$ | Boltzmann's constant |
-| $k_m=mc/\hbar$ | Mass wave number |
-| $\hbar,\ m$ | Action quantum and mass |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $\frac{h}{2\pi},\ m$ | Action quantum and mass |
 | $\langle\tilde Q\rangle_{\natural}$ | Quaternionic norm |
 | $\mathrm{Sc}$ | Scalar part |
 

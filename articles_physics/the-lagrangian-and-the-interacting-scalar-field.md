@@ -10,7 +10,7 @@ What is not done. No scattering amplitude, no perturbation series, no Feynman ru
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is one element $\tilde\Xi\in\mathbb{B}$ with four complex coefficients; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the Hermitian one, for the reasons the free article gives; the measure is $\mathrm{d}^{4}r$; $k_m=mc/\hbar$.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is one element $\tilde\Xi\in\mathbb{B}$ with four complex coefficients; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the Hermitian one, for the reasons the free article gives; the measure is $\mathrm{d}^{4}r$; $k_m=\frac{2\pi mc}{h}$.
 
 The addition is the coupling $\lambda$, a real number with the dimensions that make $\lambda N$ a squared wave number, and the density
 
@@ -142,7 +142,7 @@ $$
 | $\tilde\Xi$ | The scalar field, four complex coefficients |
 | $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\varrho^{2}$ | Density, real and non-negative |
 | $\lambda$ | Quartic coupling, real, dimension of a squared wave number per density |
-| $k_m=mc/\hbar$ | Mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ | d'Alembertian on the material sector |
 | $j_\mu$ | Phase current, the free bilinear |
 | $T_{00}$ | Energy density |

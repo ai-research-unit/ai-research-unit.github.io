@@ -4,13 +4,13 @@
 
 The transform has a phase, and the polar chart has a name for every factor of it. The kernel of the transform is $e^{-i\theta_{\mathrm{pwp}}}$ with $\theta_{\mathrm{pwp}}=\omega t'-\vec k_\Phi\cdot\vec r$, so the kernel is a central unit times a sign. In the complete polar decomposition of *The Schrödinger Equation in Biquaternionic Polar Variables* that kernel is the most degenerate element there is: scale one, no boost, rotor equal to a sign. **The transform is the operation that reads a field's phase and leaves everything else in place**, and the chart shows why.
 
-The second object is the word of the symbol. The symbol of the companion article is an element of $\mathbb{B}$ at each frequency, so it has a word of its own: a scale, a phase, a boost and a rotor. Its quaternionic norm is $(\hbar\omega-h_t)^{2}-\lvert\vec h_\Psi\rvert^{2}$, and its determinant is that norm squared. **The word of the symbol fails exactly on the spectrum**, because the norm vanishes there and the element is a zero divisor. That is the polar reading of the pole set.
+The second object is the word of the symbol. The symbol of the companion article is an element of $\mathbb{B}$ at each frequency, so it has a word of its own: a scale, a phase, a boost and a rotor. Its quaternionic norm is $(h\nu-h_t)^{2}-\lvert\vec h_\Psi\rvert^{2}$, and its determinant is that norm squared. **The word of the symbol fails exactly on the spectrum**, because the norm vanishes there and the element is a zero divisor. That is the polar reading of the pole set.
 
 The third finding is a count of types. The four brackets of the logarithmic derivative are the four types of an element of $\mathbb{B}$: a real central number, an imaginary central number, a Hermitian scalar-free part and an anti-Hermitian scalar-free part, of dimensions one, one, three and three. In the constant setting the symbol occupies two of the four. The other two are occupied only by a word that varies, which is why the free equation's transform is exact.
 
 The fourth finding is that the phase is a character and the rotor is not. The phase of the flow adds over intervals, exactly, for a constant Hamiltonian; the rotor multiplies. Composing a turn of $0.6$ about $\vec e_x$ with a turn of $0.9$ about $\vec e_y$ gives a turn of $1.070152$ and not of $1.5$. The angle composes because it is a character of the time group; the rotor does not, because rotor space is a group under multiplication and not under addition.
 
-The fifth finding is the conjugate pair. The parent's kinetic Lagrangian is $-\hbar\,n\,\partial_{t'}\theta_{\mathrm{pha}}$ plus a rotor term, so the phase's conjugate momentum is $-\hbar$ times the density. The pair is $(\theta_{\mathrm{pha}},n)$, and $n=\varrho^{2}$ makes the change of variable polynomial: $\varrho\,\mathrm{d}\varrho=\tfrac12\mathrm{d}n$, exact, with no weight. The dual variable of this chart is flat, and that is a property of a first-order equation.
+The fifth finding is the conjugate pair. The parent's kinetic Lagrangian is $-\frac{h}{2\pi}\,n\,\partial_{t'}\theta_{\mathrm{pha}}$ plus a rotor term, so the phase's conjugate momentum is $-\frac{h}{2\pi}$ times the density. The pair is $(\theta_{\mathrm{pha}},n)$, and $n=\varrho^{2}$ makes the change of variable polynomial: $\varrho\,\mathrm{d}\varrho=\tfrac12\mathrm{d}n$, exact, with no weight. The dual variable of this chart is flat, and that is a property of a first-order equation.
 
 What this article is not. It is not a second transform and not a second equation. It is the companion's symbol read in the word, and every number below is a number of the companion with a name attached.
 
@@ -22,7 +22,7 @@ The word. $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm
 
 The two norms. $\langle\tilde\Xi\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ reads the scale and the phase; $\rho_{\mathrm{num}}=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ reads the scale and the rapidity. Neither reads the rotor, and neither reads an axis.
 
-The symbol. $\sigma(\omega)=\hbar\omega\,e_t-\tilde H_\Psi$ with $h_t$ and $\vec h_\Psi$ real, and its two invariants $\operatorname{tr}\sigma=4(\hbar\omega-h_t)$ and $\det\sigma=\langle\sigma\rangle_\natural^{2}$.
+The symbol. $\sigma(\omega)=h\nu\,e_t-\tilde H_\Psi$ with $h_t$ and $\vec h_\Psi$ real, and its two invariants $\operatorname{tr}\sigma=4(h\nu-h_t)$ and $\det\sigma=\langle\sigma\rangle_\natural^{2}$.
 
 ## The Kernel of the Transform in the Word
 
@@ -48,12 +48,12 @@ What the kernel cannot do. It cannot change a scale or a rapidity, because it ha
 
 ## The Word of the Symbol, and Where It Fails
 
-The symbol has a word because it is an element. At each real $\omega$ the symbol $\sigma(\omega)=\hbar\omega\,e_t-\tilde H_\Psi$ is an element of $\mathbb{B}$, so it has a scale, a phase, a boost and a rotor whenever it is off the cone.
+The symbol has a word because it is an element. At each real $\omega$ the symbol $\sigma(\omega)=h\nu\,e_t-\tilde H_\Psi$ is an element of $\mathbb{B}$, so it has a scale, a phase, a boost and a rotor whenever it is off the cone.
 
-Its quaternionic norm is the elementary determinant. With $\sigma=c_t\,e_t+\sum c_\mu\vec e_\mu$ the norm is $c_t^{2}+c_x^{2}+c_y^{2}+c_z^{2}$, and here $c_t=\hbar\omega-h_t$ and $c_\mu=-ih_\mu$, so
+Its quaternionic norm is the elementary determinant. With $\sigma=c_t\,e_t+\sum c_\mu\vec e_\mu$ the norm is $c_t^{2}+c_x^{2}+c_y^{2}+c_z^{2}$, and here $c_t=h\nu-h_t$ and $c_\mu=-ih_\mu$, so
 
 $$
-\langle\sigma(\omega)\rangle_\natural=\big(\hbar\omega-h_t\big)^{2}-\lvert\vec h_\Psi\rvert^{2},
+\langle\sigma(\omega)\rangle_\natural=\big(h\nu-h_t\big)^{2}-\lvert\vec h_\Psi\rvert^{2},
 \qquad
 \det\sigma(\omega)=\langle\sigma(\omega)\rangle_\natural^{2},
 $$
@@ -89,11 +89,11 @@ $$
 
 and the four terms are, in order, a real central number, an imaginary central number, a Hermitian scalar-free element and an anti-Hermitian traceless element. **The bracket is not four equations; it is one element read in its four types.**
 
-The symbol occupies two of the four. In the constant setting the symbol is $\hbar\omega\,e_t-\tilde H_\Psi$, whose imaginary central part vanishes and whose anti-Hermitian scalar-free part vanishes. What remains is the real central part $\hbar\omega-h_t$ and the imaginary-vector part $i\vec h_\Psi$. The phase type and the rotor type are empty in frequency space, and the emptiness is the statement that a plane wave has a constant phase rate and a constant rotor.
+The symbol occupies two of the four. In the constant setting the symbol is $h\nu\,e_t-\tilde H_\Psi$, whose imaginary central part vanishes and whose anti-Hermitian scalar-free part vanishes. What remains is the real central part $h\nu-h_t$ and the imaginary-vector part $i\vec h_\Psi$. The phase type and the rotor type are empty in frequency space, and the emptiness is the statement that a plane wave has a constant phase rate and a constant rotor.
 
 The empty types are filled by a varying word. A field whose phase rate varies with $t'$, or whose rotor turns, has a logarithmic derivative with all four types present. Its transform is then not supported at one frequency: the effective number of modes of a chirped unit is $5.64$ at a chirp rate of $1$ and $26.20$ at a rate of $4$ on a grid of sixty-four points, against $1.00$ for an integer tone. The symbol is a model of the bracket, and the model is faithful exactly when the bracket is constant.
 
-The two populated types are the two rates. The real central part is the mean $(\hbar\omega-h_t)$ and the Hermitian traceless part is the gap $\lvert\vec h_\Psi\rvert$. The polar parent's two rates are the mean of the eigenvalues for the phase and the gap for every carried direction, so the symbol's two occupied types carry exactly the two rates.
+The two populated types are the two rates. The real central part is the mean $(h\nu-h_t)$ and the Hermitian traceless part is the gap $\lvert\vec h_\Psi\rvert$. The polar parent's two rates are the mean of the eigenvalues for the phase and the gap for every carried direction, so the symbol's two occupied types carry exactly the two rates.
 
 ## Which Parameters the Transform Moves
 
@@ -113,7 +113,7 @@ Two numbers, each twice. The array $L_{\mathrm{axf}}(\tilde H_\Psi)$ has the eig
 
 The pair is the pole set, and the poles are simple in the resolvent. The determinant's zero is double because each eigenvalue is doubly degenerate; the resolvent $\sigma^{-1}$ has simple poles at the same two frequencies, with residues the two spectral projectors of rank two. The ranks were computed: the symbol has rank four off the zeros, rank two at a zero, and rank zero at the single zero of a scalar Hamiltonian.
 
-The pair is transmitted to the flow without change. The parent's propagator is $e^{i\theta_{\mathrm{pha},Q}}\tilde u_Q$ with $\theta_{\mathrm{pha},Q}=-h_tt'/\hbar$ and $\theta_{\mathrm{axr},Q}=2\lvert\vec h_\Psi\rvert t'/\hbar$. So the phase runs at the mean and the rotor's angle at the gap, and the two rates are the two eigenvalues combined as a sum and a difference. The map from the symbol's pair to the flow's two rates is the identity on the mean and the gap, which is the sharpest statement of this section.
+The pair is transmitted to the flow without change. The parent's propagator is $e^{i\theta_{\mathrm{pha},Q}}\tilde u_Q$ with $\theta_{\mathrm{pha},Q}=-\frac{2\pi h_tt'}{h}$ and $\theta_{\mathrm{axr},Q}=\frac{2\pi 2\lvert\vec h_\Psi\rvert t'}{h}$. So the phase runs at the mean and the rotor's angle at the gap, and the two rates are the two eigenvalues combined as a sum and a difference. The map from the symbol's pair to the flow's two rates is the identity on the mean and the gap, which is the sharpest statement of this section.
 
 The half-gap appears once and the gap twice. The rotor's angle runs at the gap, and its half-angle at half the gap. That factor is the word's and not the parent's, as the polar companion says, and it is why the gap has to be read twice.
 
@@ -128,7 +128,7 @@ The additivity. For a constant Hamiltonian the phase of the flow is linear in th
 $$
 \theta_{\mathrm{pha}}(t'_1+t'_2)=\theta_{\mathrm{pha}}(t'_1)+\theta_{\mathrm{pha}}(t'_2),
 \qquad
-\theta_{\mathrm{pha}}(t')=-\frac{h_t}{\hbar}t' .
+\theta_{\mathrm{pha}}(t')=-\frac{2\pi h_t}{h}t' .
 $$
 
 That is a homomorphism from the additive group of times to the circle, and it is exact. A character of the time group is what a Fourier kernel's exponent is, and the parent's additivity is the statement that the phase is one.
@@ -148,18 +148,18 @@ What composes is what the transform sees. The phase is the transform's variable,
 The parent's kinetic Lagrangian. The polar variational parent computes
 
 $$
-K=-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\;\partial_{t'}\theta_{\mathrm{pha}}+\frac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\big(\vec\Omega\cdot\vec u_{\mathrm b}\big),
+K=-\frac{h}{2\pi}\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\;\partial_{t'}\theta_{\mathrm{pha}}+\frac{h}{4\pi}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\big(\vec\Omega\cdot\vec u_{\mathrm b}\big),
 $$
 
-with $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\rho_{\mathrm{num}}/2$. So the coefficient of the phase's rate is $-\hbar n$, and the conjugate momentum of the phase is
+with $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\rho_{\mathrm{num}}/2$. So the coefficient of the phase's rate is $-\frac{h}{2\pi} n$, and the conjugate momentum of the phase is
 
 $$
-p_\theta=\frac{\partial K}{\partial(\partial_{t'}\theta_{\mathrm{pha}})}=-\hbar\,n .
+p_\theta=\frac{\partial K}{\partial(\partial_{t'}\theta_{\mathrm{pha}})}=-\frac{h}{2\pi}\,n .
 $$
 
 The density is the conjugate momentum of the phase. The statement is the parent's and it is one line here. It is also the reason the phase is the transform's variable: a pair $(q,p)$ with $p$ the density is exactly what a transform in $q$ acts on.
 
-The pair is invariant in the coupled chart. The coupled polar parent records $p_\theta=-\hbar N$ and its invariance under the gauge transformation, and the invariance is the statement that the pair survives the coupling. The transform's variable is therefore gauge invariant as a variable, even though the phase itself is translated.
+The pair is invariant in the coupled chart. The coupled polar parent records $p_\theta=-\frac{h}{2\pi} N$ and its invariance under the gauge transformation, and the invariance is the statement that the pair survives the coupling. The transform's variable is therefore gauge invariant as a variable, even though the phase itself is translated.
 
 The pair is not a pair of independent data. On a central field $n=\varrho^{2}$ and the two functions are the two unknowns of Madelung's pair; on a general field the rapidity enters $n$ and the density is a function of two parameters. The conjugacy is between the phase and the density, not between the phase and the scale, and the distinction matters as soon as the field is not central.
 
@@ -217,7 +217,7 @@ The transform's kernel is a central unit of modulus one, so its word has scale o
 
 The symbol's word fails exactly on the spectrum, because the determinant is the square of the quaternionic norm, $\det\sigma=\langle\sigma\rangle_\natural^{2}$ to $2.1\times10^{-14}$, and the norm vanishes on the cone. The four brackets of the logarithmic derivative are the four types of the algebra, of dimensions one, one, three and three; in the constant setting the symbol occupies the real central and the Hermitian traceless types, which are the mean and the gap, and the other two are empty.
 
-The phase is a character and the rotor is not: $0.6$ and $0.9$ about different axes compose to $1.070152$ and not to $1.5$, while the same axis gives $1.500000000$ exactly. The phase's conjugate momentum is $-\hbar n$, and $n=\varrho^{2}$ gives $\varrho\,\mathrm{d}\varrho=\tfrac12\mathrm{d}n$: the dual variable of this chart is flat, and the flatness is a property of a first-order equation.
+The phase is a character and the rotor is not: $0.6$ and $0.9$ about different axes compose to $1.070152$ and not to $1.5$, while the same axis gives $1.500000000$ exactly. The phase's conjugate momentum is $-\frac{h}{2\pi} n$, and $n=\varrho^{2}$ gives $\varrho\,\mathrm{d}\varrho=\tfrac12\mathrm{d}n$: the dual variable of this chart is flat, and the flatness is a property of a first-order equation.
 
 ## Summary of Notation
 
@@ -225,20 +225,20 @@ The phase is a character and the rotor is not: $0.6$ and $0.9$ about different a
 | --- | --- |
 | $\theta_{\mathrm{pwp}}=\omega t'-\vec k_\Phi\cdot\vec r$ | The plane wave's phase; the transform's exponent |
 | $\varrho=1$, $\tilde U_{\Psi,\mathrm b}=e_t$, $\tilde u_{\mathrm r}=\pm e_t$ | The word of the transform's kernel |
-| $\langle\sigma\rangle_\natural=(\hbar\omega-h_t)^{2}-\lvert\vec h_\Psi\rvert^{2}$ | The symbol's quaternionic norm; the elementary determinant |
+| $\langle\sigma\rangle_\natural=(h\nu-h_t)^{2}-\lvert\vec h_\Psi\rvert^{2}$ | The symbol's quaternionic norm; the elementary determinant |
 | $\det\sigma=\langle\sigma\rangle_\natural^{2}$ | The determinant; its zeros are the cone, hence the spectrum |
 | $h_t\pm\lvert\vec h_\Psi\rvert$ | The two eigenvalues; the mean and the gap; the two rates |
 | $1+1+3+3=8$ | The four types of the bracket, and their dimensions |
-| $p_\theta=-\hbar n$ | The phase's conjugate momentum; the density |
+| $p_\theta=-\frac{h}{2\pi} n$ | The phase's conjugate momentum; the density |
 | $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\rho_{\mathrm{num}}/2$ | The density; the dual coordinate |
 | $\varrho\,\mathrm{d}\varrho=\tfrac12\mathrm{d}n$ | The flat dual; the Jacobian $2\varrho$ |
-| $\theta_{\mathrm{axr},Q}=2\lvert\vec h_\Psi\rvert t'/\hbar$ | The rotor's angle; the gap, read twice |
+| $\theta_{\mathrm{axr},Q}=\frac{2\pi 2\lvert\vec h_\Psi\rvert t'}{h}$ | The rotor's angle; the gap, read twice |
 
 ## Further Reading
 
 - *The Schrödinger Equation in Biquaternionic Polar Variables*, for the word, its domain, the four brackets and the two rates this article reads in frequency space.
 - *The Fourier Transform and the Schrödinger Equation in Biquaternionic Form*, for the symbol, its determinant and the counts of poles.
-- *The Lagrangian and the Schrödinger Equation in Polar Variables*, for the kinetic Lagrangian, the factor $\cosh\theta_{\mathrm{rpd}}$ and the conjugate momentum $-\hbar n$.
+- *The Lagrangian and the Schrödinger Equation in Polar Variables*, for the kinetic Lagrangian, the factor $\cosh\theta_{\mathrm{rpd}}$ and the conjugate momentum $-\frac{h}{2\pi} n$.
 - *The Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the gauge direction of the chart and the invariance of the pair.
 - *The Lagrangian and the Schrödinger Equation in Momentum Space*, for the action's quadratic form at fixed frequency.
 - *Algebra and Element Conventions*, for the four types and the two conjugations that separate them.

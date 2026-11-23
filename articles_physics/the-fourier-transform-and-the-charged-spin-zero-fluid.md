@@ -12,14 +12,14 @@ Position in the block. This is the charged companion of [The Fourier Transform a
 
 ## Conventions
 
-The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\varkappa}{\hbar}\tilde A_\Phi$, and the gauge transformation $\lambda=\exp(i\varkappa\Gamma/\hbar)$. The mechanical momentum is
+The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\varkappa}{h}\tilde A_\Phi$, and the gauge transformation $\lambda=\exp(\frac{2\pi i\varkappa\Gamma}{h})$. The mechanical momentum is
 
 $$
 \tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+\varkappa\tilde A_\Phi,
 \qquad
 \tilde V_\Phi=\frac{\tilde P^{\mathrm{mech}}_\Phi}{m},
 \qquad
-\mathcal E=-\hbar c\,k_t'+\varkappa a_t' ,
+\mathcal E=-\frac{h}{2\pi} c\,k_t'+\varkappa a_t' ,
 $$
 
 and the field strength is $\tilde F=(\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi-\tilde\nabla_\Phi\tilde A_\Phi$ read as the two-form of [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html). The symbol rule is the free companion's.
@@ -29,10 +29,10 @@ and the field strength is $\tilde F=(\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi-
 With a constant connection the equation is free in translated variables, so its modes are free modes with translated labels.
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{\varkappa}{\hbar}\tilde A_\Phi ,
+\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi \varkappa}{h}\tilde A_\Phi ,
 \qquad
-\Bigl(k_t'+\frac{\varkappa}{\hbar}a_t'\Bigr)^{2}
--\Bigl\lvert\vec k_\Phi+\frac{\varkappa}{\hbar}\vec A\Bigr\rvert^{2}=k_m^{2},
+\Bigl(k_t'+\frac{2\pi \varkappa}{h}a_t'\Bigr)^{2}
+-\Bigl\lvert\vec k_\Phi+\frac{2\pi \varkappa}{h}\vec A\Bigr\rvert^{2}=k_m^{2},
 $$
 
 that is, in the energy and the momentum,
@@ -40,9 +40,9 @@ that is, in the energy and the momentum,
 $$
 \frac{1}{c^{2}}\bigl(E+\varkappa c a_t'\bigr)^{2}-\lvert\vec p-q\vec A\rvert^{2}=m^{2}c^{2},
 \qquad
-E=\hbar c\,k_t',
+E=\frac{h}{2\pi} c\,k_t',
 \qquad
-\vec p=\hbar\vec k_\Phi .
+\vec p=\frac{h}{2\pi}\vec k_\Phi .
 $$
 
 The check is exact and it is a check of an identity, not of an approximation. With lengths in units of $1/k_m$, momenta in units of $mc$, and $\varkappa=0.7$, the residual of the display above at $a_t'=0$, $0.4$, $1.0$ and $1.5$ was $0.0$ at every one of the sampled momenta.
@@ -74,7 +74,7 @@ What survives at both rungs is the invariance statement. The curvature is the on
 The canonical and kinetic labels differ by the potential, so the transform has two supports and the choice between them is a gauge choice.
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{\varkappa}{\hbar}\tilde A_\Phi
+\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi \varkappa}{h}\tilde A_\Phi
 \qquad\Longleftrightarrow\qquad
 \text{the support in the kinetic variable}=\text{the free shell},
 $$
@@ -117,15 +117,15 @@ The fluid reads its velocity from the kinetic label, so the chart in which the f
 |---|---|
 | $\varkappa$ | The coupling; minus the electric charge |
 | $\tilde A_\Phi=i a_t'e_t+\vec A$ | The connection |
-| $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\varkappa\tilde A_\Phi/\hbar$ | The covariant label |
+| $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi \varkappa\tilde A_\Phi}{h}$ | The covariant label |
 | $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+\varkappa\tilde A_\Phi$ | The mechanical momentum |
 | $\tilde V_\Phi=\tilde P^{\mathrm{mech}}_\Phi/m$ | The four-velocity |
-| $\mathcal E=-\hbar c k_t'+\varkappa a_t'$ | The kinetic energy |
+| $\mathcal E=-\frac{h}{2\pi} c k_t'+\varkappa a_t'$ | The kinetic energy |
 | $\varkappa a_t'=mc^{2}$ | The Klein threshold |
 | $\tilde F$ | The field strength; the curvature |
 | $\omega=\varkappa F/m$ | The vorticity |
 | $Q_{\mathrm{qnt}}$ | The quantum potential; it moves the radius |
-| $\lambda=\exp(i\varkappa\Gamma/\hbar)$ | The gauge element; a linear $\Gamma$ translates the support |
+| $\lambda=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ | The gauge element; a linear $\Gamma$ translates the support |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
 ## Further Reading

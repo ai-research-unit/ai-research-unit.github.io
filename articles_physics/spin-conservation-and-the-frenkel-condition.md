@@ -4,7 +4,7 @@
 
 The spin tensor's conservation law is the rotor's equation of motion read in components, and the Frenkel condition is the statement that the spin has no component along the momentum. Both statements are framework content: the algebra supplies the first through the rotor's logarithmic derivative, and it supplies the second through the fact that the complete polar decomposition carries the spin in a rotation and not in a boost.
 
-The conservation law. With the spin element $\tilde S_{\Psi}=\varrho\tfrac{\hbar}{2}i\hat s$ of [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html) and with the rotor's logarithmic derivative $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$ — a real vector part, which is what the polar decomposition's fourth factor supplies — the rotor's own equation of motion is
+The conservation law. With the spin element $\tilde S_{\Psi}=\varrho\tfrac{h}{4\pi}i\hat s$ of [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html) and with the rotor's logarithmic derivative $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$ — a real vector part, which is what the polar decomposition's fourth factor supplies — the rotor's own equation of motion is
 
 $$
 \partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\,\tilde u_{\mathrm r},
@@ -72,12 +72,12 @@ The precession is the classical spin equation, and the article states the corres
 
 ### The conservation law, derived
 
-Differentiate the spin element along the flow, insert the rotor's equation, and the result is a divergence with a torque source. With $\tilde S_{\Psi}=\varrho\tfrac{\hbar}{2}i\hat s$ and the spin current that carries it along the flow, $\tilde S_{\Psi}\,v_{\Phi,\eta}/c$,
+Differentiate the spin element along the flow, insert the rotor's equation, and the result is a divergence with a torque source. With $\tilde S_{\Psi}=\varrho\tfrac{h}{4\pi}i\hat s$ and the spin current that carries it along the flow, $\tilde S_{\Psi}\,v_{\Phi,\eta}/c$,
 
 $$
 \partial_\eta S_{\Psi,\eta,\lambda\nu}
-=\partial_\eta\left(\varrho\,\frac{\hbar}{2}\,v_{\Phi,\eta}/c\right)\hat s_{\lambda\nu}
-+\varrho\,\frac{\hbar}{2}\,v_{\Phi,\eta}/c\ \partial_\eta\hat s_{\lambda\nu},
+=\partial_\eta\left(\varrho\,\frac{h}{4\pi}\,v_{\Phi,\eta}/c\right)\hat s_{\lambda\nu}
++\varrho\,\frac{h}{4\pi}\,v_{\Phi,\eta}/c\ \partial_\eta\hat s_{\lambda\nu},
 $$
 
 the product rule's two terms in the spatial slot. The first is the spin's advection with the density's change, and it vanishes for a conserved flow with constant density along the worldline; the second is the precession, and it is the commutator of the connection with the spin. The temporal slot contributes the same two terms with the density in place of the spatial current, and the corpus writes that slot as a derivative and never hides it inside a Greek index. Writing the full balance with the components low,
@@ -85,7 +85,7 @@ the product rule's two terms in the spatial slot. The first is the spin's advect
 $$
 \partial_{r'_t}S_{\Psi,t,\lambda\nu}+\partial_\eta S_{\Psi,\eta,\lambda\nu}=\tau_{\lambda\nu},
 \qquad
-S_{\Psi,t,\lambda\nu}=\varrho\,\frac{\hbar}{2}\,\hat s_{\lambda\nu},
+S_{\Psi,t,\lambda\nu}=\varrho\,\frac{h}{4\pi}\,\hat s_{\lambda\nu},
 $$
 
 the divergence of the spin current equals the torque. With the torque written out,
@@ -122,7 +122,7 @@ Why this is the natural condition and not an arbitrary one. A spinning particle'
 In the corpus's letters the Frenkel condition is automatic, and this is the article's central framework claim. The spin element is
 
 $$
-\tilde S_{\Psi}=\varrho\,\frac{\hbar}{2}\,i\hat s,
+\tilde S_{\Psi}=\varrho\,\frac{h}{4\pi}\,i\hat s,
 \qquad
 \hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural},
 \qquad
@@ -230,7 +230,7 @@ Supplies: the antisymmetric structure of the torque. The spin is antisymmetric i
 
 Does not supply: the connection's equation. $\vec\Omega_\eta$ is written and not derived; the equation that determines it is the dynamics of a specific field, and in the Dirac case it is the magnetic coupling that [The Classical Origin of g = 2 in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html) writes. The conservation law's source is therefore determined only once $\vec\Omega_\eta$ is, which is the article's honest boundary.
 
-Does not supply: the value of the spin. That the spin element carries $\hbar/2$ is the corpus's normalisation for a spin-$\tfrac12$ field, quoted from the polar-form article; a different field would carry a different factor, and the algebra does not fix it.
+Does not supply: the value of the spin. That the spin element carries $\frac{h}{2\pi 2}$ is the corpus's normalisation for a spin-$\tfrac12$ field, quoted from the polar-form article; a different field would carry a different factor, and the algebra does not fix it.
 
 Does not supply: the Thomas precession, which the article mentions and does not derive. A spinning particle accelerated along a curved worldline precesses at a rate reduced by the Thomas factor
 
@@ -254,7 +254,7 @@ Not claimed. That the connection's equation has been derived; that the full sixt
 
 The spin current's conservation law is the rotor's equation of motion. With $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$ a real vector part, the rotor obeys $\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\tilde u_{\mathrm r}$, the spin direction obeys $\partial_\eta\hat s=\vec\Omega_\eta\times\hat s$, and the divergence of the spin current is the torque $\tau_{\lambda\nu}=\tfrac12(\Omega_{\eta,\lambda}S_{\Psi,\eta,\nu}-\Omega_{\eta,\nu}S_{\Psi,\eta,\lambda})$, which vanishes when the connection turns about the spin's axis. For the free field the torque vanishes and $\partial_\eta S_{\Psi,\eta,\lambda\nu}=0$.
 
-The Frenkel condition, $S_{\Psi,\eta,\lambda\nu}v_{\Phi,\nu}=0$, removes the three components of the antisymmetric array that carry a temporal label and leaves the three of a spatial vector. In the corpus's letters it is automatic, and the proof is one line: the spin element is $\varrho\tfrac{\hbar}{2}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ a unit spatial direction, the bivector is its dual with the flow, $\hat s_{\lambda\nu}=\varepsilon_{\lambda\nu\eta\zeta}\hat s_\eta v_{\Phi,\zeta}/c$, and the contraction $\hat s_{\lambda\nu}v_{\Phi,\nu}$ vanishes because $\varepsilon$ is antisymmetric in the pair that $v_{\Phi,\zeta}v_{\Phi,\nu}$ is symmetric in. The corpus therefore does not impose the condition; the dual cannot violate it, whatever the direction. In the rest frame the identity reads $\hat s_{t,\eta}=0$, the three components whose plane contains the time direction; the element's empty scalar slot is a separate statement, that the direction is spatial, and it is what makes $\hat s^{2}=-e_t$. The condition is preserved by boosts — $S_{\Psi,\eta,0i}^{\prime}=\gamma\beta_{j}S_{\Psi,\eta,ji}$ is non-zero in general while the contraction with $v_{\Phi,\nu}^{\prime}$ still vanishes — and a reader who checks components alone will wrongly conclude that it fails.
+The Frenkel condition, $S_{\Psi,\eta,\lambda\nu}v_{\Phi,\nu}=0$, removes the three components of the antisymmetric array that carry a temporal label and leaves the three of a spatial vector. In the corpus's letters it is automatic, and the proof is one line: the spin element is $\varrho\tfrac{h}{4\pi}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ a unit spatial direction, the bivector is its dual with the flow, $\hat s_{\lambda\nu}=\varepsilon_{\lambda\nu\eta\zeta}\hat s_\eta v_{\Phi,\zeta}/c$, and the contraction $\hat s_{\lambda\nu}v_{\Phi,\nu}$ vanishes because $\varepsilon$ is antisymmetric in the pair that $v_{\Phi,\zeta}v_{\Phi,\nu}$ is symmetric in. The corpus therefore does not impose the condition; the dual cannot violate it, whatever the direction. In the rest frame the identity reads $\hat s_{t,\eta}=0$, the three components whose plane contains the time direction; the element's empty scalar slot is a separate statement, that the direction is spatial, and it is what makes $\hat s^{2}=-e_t$. The condition is preserved by boosts — $S_{\Psi,\eta,0i}^{\prime}=\gamma\beta_{j}S_{\Psi,\eta,ji}$ is non-zero in general while the contraction with $v_{\Phi,\nu}^{\prime}$ still vanishes — and a reader who checks components alone will wrongly conclude that it fails.
 
 The Weyssenhoff condition adds conservation to constraint: $\mathcal{F}$ and $\partial_\eta S_{\Psi,\eta,\lambda\nu}=0$ together, so the spin is advected and never precesses. The corpus's free field satisfies both, which is why the two conditions are often conflated.
 
@@ -267,9 +267,9 @@ The honest limits are three. The connection's equation is not derived here; the 
 | $\tilde u_{\mathrm r}$ | Rotor of the polar word, real and unitary |
 | $\vec\Omega_\eta$ | Rotor connection, a real vector per direction |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction, a unit spatial vector |
-| $\tilde S_{\Psi}=\varrho\tfrac{\hbar}{2}i\hat s$ | Spin element, with $\varrho$ the scale |
+| $\tilde S_{\Psi}=\varrho\tfrac{h}{4\pi}i\hat s$ | Spin element, with $\varrho$ the scale |
 | $S_{\Psi,\eta,\lambda\nu}$ | Components of the spin current, all low |
-| $S_{\Psi,t,\lambda\nu}$ | Its temporal slot, the spin density, $\varrho\tfrac{\hbar}{2}\hat s_{\lambda\nu}$ |
+| $S_{\Psi,t,\lambda\nu}$ | Its temporal slot, the spin density, $\varrho\tfrac{h}{4\pi}\hat s_{\lambda\nu}$ |
 | $\hat s_{\lambda\nu}=\varepsilon_{\lambda\nu\eta\zeta}\hat s_{\eta}v_{\Phi,\zeta}/c$ | The spin bivector, the dual of the direction with the flow |
 | $\varepsilon_{\lambda\nu\eta\zeta}$ | The antisymmetric symbol, four labels |
 | $\tau_{\lambda\nu}$ | Torque, the spin current's source |
@@ -284,7 +284,7 @@ The honest limits are three. The connection's equation is not derived here; the 
 | $\vec e_z$ | Frame's third direction, used by the value test |
 | $\beta_{\mathrm{vel}}=\vec v/c$, $\gamma$ | Velocity and boost factor |
 | $\gamma^{2}/(\gamma+1)$ | Thomas factor |
-| $\hbar$ | Planck constant |
+| $\frac{h}{2\pi}$ | Planck constant |
 | $\langle\ \rangle_{\natural}$, $\mathrm{Sc}$ | Quaternionic norm, scalar part |
 | $\mathbb{B}$, $\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$ | The algebra and its two sectors |
 

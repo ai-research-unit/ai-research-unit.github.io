@@ -36,7 +36,7 @@ $$
 
 where $U(r'_t, r'_{t,0})$ is the $*$-unitary evolution operator satisfying
 
-$$i\,\hbar\,c\,\frac{d}{dr'_{t}} U(r'_t, r'_{t,0}) = H\, U(r'_t, r'_{t,0}), \qquad U(r'_{t,0}, r'_{t,0}) = I,
+$$i\,\frac{h}{2\pi}\,c\,\frac{d}{dr'_{t}} U(r'_t, r'_{t,0}) = H\, U(r'_t, r'_{t,0}), \qquad U(r'_{t,0}, r'_{t,0}) = I,
 $$
 
 with $H$ the Hamiltonian of the system.
@@ -256,7 +256,7 @@ i.e., the Bloch vector becomes $a_{\mathrm{fop}}$.
 In the **Schrödinger picture**, the state of the system evolves in time, and the observables are fixed. For a pure state $|\tilde{Ξ}(r'_t)\rangle$, the evolution is governed by the **Schrödinger equation**:
 
 $$
-\boxed{\;i\,\hbar\,c\frac{\partial}{\partial  r'_t}|\tilde{Ξ}(r'_t)\rangle  = H\, |\tilde{Ξ}(r'_t)\rangle\;},
+\boxed{\;i\,\frac{h}{2\pi}\,c\frac{\partial}{\partial  r'_t}|\tilde{Ξ}(r'_t)\rangle  = H\, |\tilde{Ξ}(r'_t)\rangle\;},
 $$
 
 where $H$ is the Hamiltonian. The solution is
@@ -265,11 +265,11 @@ $$
 |\tilde{Ξ}(r'_t)\rangle = U(r'_t, r'_{t,0})\, |\tilde{Ξ}(r'_{t,0})\rangle,
 $$
 
-with $U(r'_t, r'_{t,0}) = \exp(-i\theta_{\mathrm{prp}}H)$, where the propagation angle $\theta_{\mathrm{prp}}=(r'_t-r'_{t,0})/(\hbar\,c)$ is real because the two times and $\hbar$ are real, for a time-independent Hamiltonian.
+with $U(r'_t, r'_{t,0}) = \exp(-i\theta_{\mathrm{prp}}H)$, where the propagation angle $\theta_{\mathrm{prp}}=(r'_t-r'_{t,0})\frac{2\pi}{h\,c}$ is real because the two times and $\frac{h}{2\pi}$ are real, for a time-independent Hamiltonian.
 
 For a density matrix $\rho(r'_t)$, the evolution is given by the **von Neumann equation**:
 
-$$i\,\hbar\,c\frac{\partial}{\partial  r'_t}\rho(r'_t) = [H, \rho(r'_t)],
+$$i\,\frac{h}{2\pi}\,c\frac{\partial}{\partial  r'_t}\rho(r'_t) = [H, \rho(r'_t)],
 $$
 
 whose solution is $\rho(r'_t) = U(r'_t, r'_{t,0})\rho(r'_{t,0})U(r'_t, r'_{t,0})^\dagger$.
@@ -284,7 +284,7 @@ $$
 
 The evolution equation is the **Heisenberg equation**:
 
-$$i\,\hbar\,c\,\frac{d}{dr'_{t}} A_H(r'_t) = [A_H(r'_t), H].
+$$i\,\frac{h}{2\pi}\,c\,\frac{d}{dr'_{t}} A_H(r'_t) = [A_H(r'_t), H].
 $$
 
 The two pictures are related by a $*$-unitary transformation and give the same predictions for physical quantities.
@@ -454,7 +454,7 @@ The standard formalism has several open issues: the measurement problem, the axi
 | $\langle A\rangle_\rho = \mathrm{Tr}(A\rho)$ | Expectation value of $A$ in state $\rho$ |
 | $U(r'_t,r'_{t,0})$ | $*$-Unitary evolution operator, $U(r'_{t,0},r'_{t,0}) = I$ |
 | $H$ | Hamiltonian |
-| $\hbar$ | Reduced Planck constant |
+| $\frac{h}{2\pi}$ | Reduced Planck constant |
 | $\lvert\tilde{Ξ}\rangle = \alpha\lvert 0\rangle + \beta\lvert 1\rangle$ | Pure qubit state, $\lvert\alpha\rvert^2 + \lvert\beta\rvert^2 = 1$ |
 | $\boldsymbol{\sigma} = (\sigma_1,\sigma_2,\sigma_3)$ | Pauli matrices |
 | $\vec s_{\Psi}$ | Bloch vector, $\rho = \tfrac{1}{2}(I + \vec s_{\Psi}\cdot\boldsymbol{\sigma})$ |

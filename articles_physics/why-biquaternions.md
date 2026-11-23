@@ -126,7 +126,7 @@ The pattern is worth naming, because it repeats at every level. One element on t
 The Schrödinger equation is
 
 $$
-i\hbar c\,\frac{\partial}{\partial r'_t}\tilde\Xi=\tilde H_{\Psi}\tilde\Xi,
+i \frac{h}{2\pi} c\,\frac{\partial}{\partial r'_t}\tilde\Xi=\tilde H_{\Psi}\tilde\Xi,
 \qquad
 \tilde H_{\Psi}=h_t e_t+i\vec h_{\Psi}\in\mathbb{B}_{\Psi},
 \qquad
@@ -135,12 +135,12 @@ $$
 
 with the Hamiltonian an element of the informational sector and the state an element of the full algebra ([The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html)). The Hamiltonian is Hermitian, so the evolution operator $\exp(-i\theta_{\mathrm{evo}})$ is unitary in the algebra's own sense, and no Hilbert space is posited for it.
 
-The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
+The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\frac{h}{2\pi}\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
 
-Dividing by the central unit $i\hbar c$ gives a second writing of the same equation,
+Dividing by the central unit $i \frac{h}{2\pi} c$ gives a second writing of the same equation,
 
 $$
-\frac{\partial}{\partial r'_t}\tilde\Xi=\frac{1}{\hbar c}(-i\tilde H_{\Psi})\tilde\Xi,
+\frac{\partial}{\partial r'_t}\tilde\Xi=\frac{2\pi 1}{h c}(-i\tilde H_{\Psi})\tilde\Xi,
 \qquad
 -i\tilde H_{\Psi}\in\mathbb{B}_{\Phi}.
 $$
@@ -159,7 +159,7 @@ $$
 \tilde\nabla_{\Phi}(\tilde\nabla_{\Phi})^{\natural}=\Box_{\Phi}=\Delta_{\Phi}-\frac{\partial^{2}}{\partial {r'_t}^{2}},
 $$
 
-with $k_m=mc/\hbar$ ([The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html)). Since $\Box_{\Phi}$ is central and scalar, the one equation is the same equation for each of the four coefficients, and no coefficient is mixed with another. The second order is a product of two first-order operators, not a postulate about the wave equation.
+with $k_m=\frac{2\pi mc}{h}$ ([The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html)). Since $\Box_{\Phi}$ is central and scalar, the one equation is the same equation for each of the four coefficients, and no coefficient is mixed with another. The second order is a product of two first-order operators, not a postulate about the wave equation.
 
 The two equations of this section are one equation in two regimes. The Schrödinger equation is first order in $r'_t$ and singles out one branch; the Klein–Gordon equation is second order and keeps both branches, which is why the negative-frequency sector exists at all and why the hole theory of §*Antimatter* has something to talk about.
 
@@ -227,7 +227,7 @@ $$
 \qquad
 \tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi},
 \qquad
-\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\,\hat s,
+\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{h}{4\pi}i\,\hat s,
 \qquad
 \hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}.
 $$
@@ -424,7 +424,7 @@ The strongest objection is that this is a reformulation. It is, and the corpus a
 | $\mathrm{Sc}$ | Scalar part, the coefficient of $e_t$ |
 | $\tilde\nabla_{\Phi}$ | The gradient, the Dirac operator of the material frame |
 | $\tilde\nabla_{\Phi}(\tilde\nabla_{\Phi})^{\natural}=\Box_{\Phi}$ | The wave operator, central and scalar |
-| $k_m=mc/\hbar$ | Mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $r'_t$ | Material time coordinate, with $e_t=1$ and temporal direction $ie_t$ |
 | $R_\mu$ | The four coordinates of the material frame; indices stay low |
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word: scale, phase, boost, rotor |
@@ -434,8 +434,8 @@ The strongest objection is that this is a reformulation. It is, and the corpus a
 | $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-velocity, $\tilde V_{\Phi}\tilde V_{\Phi}^{\natural}=-c^{2}$ |
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | Current |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
-| $\tilde S_{\Psi}=\rho_{\mathrm{num}}\tfrac{\hbar}{2}i\hat s$ | Spin element |
-| $\tilde K_{\Phi}=\tilde\nabla_{\Phi}\theta_{\mathrm{pha}}$ | Momentum element: four-momentum divided by $\hbar$ |
+| $\tilde S_{\Psi}=\rho_{\mathrm{num}}\tfrac{h}{4\pi}i\hat s$ | Spin element |
+| $\tilde K_{\Phi}=\tilde\nabla_{\Phi}\theta_{\mathrm{pha}}$ | Momentum element: four-momentum divided by $\frac{h}{2\pi}$ |
 | $\tilde F=i\sqrt{\epsilon}(\vec E+ic\vec B)$ | Field strength element |
 | $\tilde\varsigma_{\Psi}$ | State of the informational sector, positive and of trace one |
 | $\ast$ | Star conjugation |

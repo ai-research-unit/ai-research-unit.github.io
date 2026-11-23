@@ -16,17 +16,17 @@ Position in the block. This is the variational companion of [The Charged Schröd
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with the connection added: $ϙ$ is the coupling and equals minus the electric charge, $q=-ϙ$; $\varphi$ and $\vec A$ are the scalar and vector potentials; $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$; a gauge transformation is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$, $\varphi\mapsto\varphi+\partial_{t'}\Gamma$, $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. The field is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, $\rho_{\mathrm{num}}=\varrho^{2}$, and the covariant derivative is $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$, so the mechanical momentum is $\tilde P^{\mathrm{mech}}=\tilde P+ϙ\tilde A$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with the connection added: $ϙ$ is the coupling and equals minus the electric charge, $q=-ϙ$; $\varphi$ and $\vec A$ are the scalar and vector potentials; $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$; a gauge transformation is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Gamma}{h}$, $\varphi\mapsto\varphi+\partial_{t'}\Gamma$, $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. The field is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, $\rho_{\mathrm{num}}=\varrho^{2}$, and the covariant derivative is $\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$, so the mechanical momentum is $\tilde P^{\mathrm{mech}}=\tilde P+ϙ\tilde A$.
 
 ## The Action in the Fluid Variables
 
-The free action's two slots are the two places the connection can go, and it goes to both. With $S=\hbar\theta_{\mathrm{pha}}$ and $\vec\pi=\vec\nabla_\Phi S-q\vec A$,
+The free action's two slots are the two places the connection can go, and it goes to both. With $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ and $\vec\pi=\vec\nabla_\Phi S-q\vec A$,
 
 $$
-\boxed{\;\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S-ϙ\varphi+\frac{\vec\pi^{2}}{2m}\Bigr)-\frac{\hbar^{2}}{2m}(\vec\nabla_\Phi \varrho)^{2}\;}
+\boxed{\;\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S-ϙ\varphi+\frac{\vec\pi^{2}}{2m}\Bigr)-\frac{h^{2}}{8\pi^{2}m}(\vec\nabla_\Phi \varrho)^{2}\;}
 $$
 
-The first bracket is one object and not two. The combination $\partial_{t'}S-ϙ\varphi$ is the time slot of the covariant derivative of the phase, and the corpus names it $\mathcal E=-\hbar\partial_{t'}\theta_{\mathrm{pha}}+ϙ\varphi$, the kinetic energy. The spatial slot is $\vec\pi$, the kinetic momentum. **Both are gauge invariant and neither is separately meaningful**: a shift of the phase moves both, and a shift of the potential moves both back.
+The first bracket is one object and not two. The combination $\partial_{t'}S-ϙ\varphi$ is the time slot of the covariant derivative of the phase, and the corpus names it $\mathcal E=-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}+ϙ\varphi$, the kinetic energy. The spatial slot is $\vec\pi$, the kinetic momentum. **Both are gauge invariant and neither is separately meaningful**: a shift of the phase moves both, and a shift of the potential moves both back.
 
 The gradient energy is unchanged, and the reason is algebraic. The third term carries the amplitude and its derivatives and no phase, so no substitution can reach it. In the word, the amplitude and the phase are separate factors and the connection is a central element: it multiplies the phase factor and commutes past the amplitude. That is the whole of the type argument, and in the action it is the statement that one term of four is untouched.
 
@@ -144,7 +144,7 @@ The boundary term at the nodes. The action is stated on $\varrho>0$. Whether the
 
 ## Summary
 
-The action. $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S-ϙ\varphi+\vec\pi^{2}/2m)-\frac{\hbar^{2}}{2m}(\vec\nabla_\Phi \varrho)^{2}$, with $\vec\pi=\vec\nabla_\Phi S-q\vec A$.
+The action. $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S-ϙ\varphi+\vec\pi^{2}/2m)-\frac{h^{2}}{8\pi^{2}m}(\vec\nabla_\Phi \varrho)^{2}$, with $\vec\pi=\vec\nabla_\Phi S-q\vec A$.
 
 The variations. The phase gives continuity with $\vec j=\rho_{\mathrm{num}}\vec v$; the amplitude gives $\mathcal E=\vec\pi^{2}/2m+Q$; the gradient of the second is $\mathrm{D}\vec\pi/\mathrm{D}t=-ϙ(\vec E+\vec v\times\vec B)-\vec\nabla_\Phi Q$, which is the standard Lorentz force for $q=-ϙ$.
 
@@ -161,14 +161,14 @@ Gauge invariance. Exact in the density, term by term, with no boundary term. The
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The word; the free article's, unchanged |
 | $ϙ$ | Coupling; minus the electric charge, $q=-ϙ$ |
 | $\varphi$, $\vec A$ | Scalar and vector potentials; gauge dependent |
-| $S=\hbar\theta_{\mathrm{pha}}$ | Phase; gauge dependent |
+| $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | Phase; gauge dependent |
 | $\partial_{t'}S-ϙ\varphi$ | Time slot of the covariant derivative; the kinetic energy's negative |
 | $\vec\pi=\vec\nabla_\Phi S-q\vec A$ | Kinetic momentum; gauge invariant |
 | $\vec v=\vec\pi/m$ | Velocity; gauge invariant |
 | $\mathcal E=-\partial_{t'}S+ϙ\varphi$ | Kinetic energy; gauge invariant |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | Density; gauge invariant |
-| $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; untouched by the coupling |
-| $\mathcal E_{\mathrm{grad}}=\frac{\hbar^{2}}{2m}\int(\vec\nabla_\Phi \varrho)^{2}$ | Gradient energy; untouched by the coupling |
+| $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; untouched by the coupling |
+| $\mathcal E_{\mathrm{grad}}=\frac{h^{2}}{8\pi^{2}m}\int(\vec\nabla_\Phi \varrho)^{2}$ | Gradient energy; untouched by the coupling |
 | $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Field strengths; gauge invariant |
 | $\phi_{\mathrm{clb}},\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}}$ | Clebsch potentials; here $\phi_{\mathrm{clb}}=S/m$, $\alpha_{\mathrm{clb}}=ϙ/m$, $\beta_{\mathrm{clb}}$ the potential's |
 | $\mathcal L_{\mathrm{fl}}$ | The Lagrangian density in the fluid variables |

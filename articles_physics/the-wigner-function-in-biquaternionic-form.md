@@ -5,17 +5,17 @@
 The biquaternionic Wigner function is the standard $x$–$p$ Wigner transform of the field taken in the algebra, and its two marginal moments are the density and the current. The definition is
 
 $$
-\tilde W_\Xi(r,\vec p)=\frac{1}{(2\pi\hbar)^{3}}\int d^{3}s\;e^{-i\theta_{\mathrm{spa}}}\;
+\tilde W_\Xi(r,\vec p)=\frac{1}{h^{3}}\int d^{3}s\;e^{-i\theta_{\mathrm{spa}}}\;
 \tilde\Xi^{*}\!\left(r-\frac{\vec s}{2}\right)\tilde\Xi\!\left(r+\frac{\vec s}{2}\right),
 $$
 
-an element of $\mathbb{B}$ at each point of the $(r,\vec p)$ space. Its zeroth moment in $\vec p$ is $\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}}$, its first moment is the current density times the mass, and its $\hbar\to0$ limit is the phase-space density of the polar-form fluid on the mass shell.
+an element of $\mathbb{B}$ at each point of the $(r,\vec p)$ space. Its zeroth moment in $\vec p$ is $\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}}$, its first moment is the current density times the mass, and its $h\to0$ limit is the phase-space density of the polar-form fluid on the mass shell.
 
 The angle is $\theta_{\mathrm{spa}}=\vec k_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.
 
-The article's claim is a claim about what is written in the letters, not about new physics. The transform, its normalisation, its marginals, its negativity and its $\hbar$-expansion are all standard. What the corpus supplies is a definition in which the Wigner object is an element and not a matrix, and a reading of its two parts as the two quadratures of one angle. The article states both and is explicit about which is which.
+The article's claim is a claim about what is written in the letters, not about new physics. The transform, its normalisation, its marginals, its negativity and its $\frac{h}{2\pi}$-expansion are all standard. What the corpus supplies is a definition in which the Wigner object is an element and not a matrix, and a reading of its two parts as the two quadratures of one angle. The article states both and is explicit about which is which.
 
-Where the standard function already lives in the corpus. [The Bell Inequality for Continuous Variables in Biquaternionic Form](the-bell-inequality-for-continuous-variables-in-biquaternionic-form.html) uses the $x$–$p$ Wigner function of a two-mode squeezed state, in the normalisation in which one mode has $\int W\,d^{2}\alpha=\tfrac12$ and the vacuum is $\pi^{-1}\exp(-2\lvert\alpha\rvert^{2})$. That is the same function this article defines, in a phase-space variable $\alpha$ that absorbs the mass and the frequency; the corpus's normalisation there is the one in which $d^{2}\alpha=dq\,dp/(2\hbar)$. This article keeps $\hbar$ explicit and uses the three-dimensional normalisation $\int d^{3}p\,\tilde W_\Xi=\rho_{\mathrm{num}}$, which is the normalisation the fluid articles need. The relation between the two normalisations is a constant and is recorded in the notation table.
+Where the standard function already lives in the corpus. [The Bell Inequality for Continuous Variables in Biquaternionic Form](the-bell-inequality-for-continuous-variables-in-biquaternionic-form.html) uses the $x$–$p$ Wigner function of a two-mode squeezed state, in the normalisation in which one mode has $\int W\,d^{2}\alpha=\tfrac12$ and the vacuum is $\pi^{-1}\exp(-2\lvert\alpha\rvert^{2})$. That is the same function this article defines, in a phase-space variable $\alpha$ that absorbs the mass and the frequency; the corpus's normalisation there is the one in which $d^{2}\alpha=dq\,dp/(2\frac{h}{2\pi})$. This article keeps $\frac{h}{2\pi}$ explicit and uses the three-dimensional normalisation $\int d^{3}p\,\tilde W_\Xi=\rho_{\mathrm{num}}$, which is the normalisation the fluid articles need. The relation between the two normalisations is a constant and is recorded in the notation table.
 
 ## The Standard Function, Stated First
 
@@ -24,7 +24,7 @@ Where the standard function already lives in the corpus. [The Bell Inequality fo
 **The Wigner function of a wave function is the Fourier transform of the density matrix in the relative coordinate.** For a complex-valued field $\Xi$ on $\mathbb{R}^{3}$ — the central case of the corpus's field, in which the vector part is zero —
 
 $$
-W(\vec r,\vec p)=\frac{1}{(2\pi\hbar)^{3}}\int d^{3}s\;e^{-i\theta_{\mathrm{spa}}}\,
+W(\vec r,\vec p)=\frac{1}{h^{3}}\int d^{3}s\;e^{-i\theta_{\mathrm{spa}}}\,
 \Xi^{*}\!\left(\vec r-\frac{\vec s}{2}\right)\Xi\!\left(\vec r+\frac{\vec s}{2}\right),
 $$
 
@@ -33,7 +33,7 @@ and the conventions are worth stating because three of them are in circulation a
 - the relative coordinate $\vec s$ enters with a half offset, so that the two field arguments are symmetric about $\vec r$;
 - the kernel is $e^{-i\theta_{\mathrm{spa}}}$ with the momentum $\vec p$ as the transform variable, so that a plane wave of momentum $\vec p_0$ is concentrated at $\vec p=\vec p_0$ and not at $-\vec p_0$;
 - the conjugate field is the one at $\vec r-\vec s/2$, so that the ordering of the two arguments is fixed once and for all;
-- the normalisation is $(2\pi\hbar)^{-3}$, so that $\int d^{3}p\,W=\Xi^{*}\Xi$ and $\int d^{3}r\,d^{3}p\,W=1$.
+- the normalisation is $h^{-3}$, so that $\int d^{3}p\,W=\Xi^{*}\Xi$ and $\int d^{3}r\,d^{3}p\,W=1$.
 
 The third and second conventions must be consistent, and the cost of getting them wrong is a sign in the momentum. A definition that pairs $e^{-i\theta_{\mathrm{spa}}}$ with $\Xi^{*}(\vec r+\vec s/2)\Xi(\vec r-\vec s/2)$ is internally consistent but concentrates a plane wave of momentum $\vec p_0$ at $\vec p=-\vec p_0$; the error is invisible for a real wave function, which is exactly the case that cannot catch it. The check is the plane wave, and it is the first thing to run on any implementation. This article's definition was checked this way: with the convention above, a packet of mean momentum $p_0$ has its Wigner distribution centred at $p_0$, and the reverse convention puts it at $-p_0$.
 
@@ -43,7 +43,7 @@ The Wigner function is a real function that behaves like a phase-space density w
 
 1. Its marginals are the density and the current. Integrating over momentum gives the position density; integrating over position gives the momentum density; the first moment in momentum gives the current.
 2. It is not non-negative in general. The ground state of an oscillator has a Gaussian Wigner function and is as positive as a distribution can be; a superposition of two levels has negative regions (Hudson's theorem: a pure state has a non-negative Wigner function if and only if it is Gaussian, and a mixed state if and only if it is a mixture of Gaussians).
-3. Its uncertainty is the quantum of phase-space area. The second moment in momentum about the mean is $\hbar^{2}/(4\sigma^{2})$ for a Gaussian of position width $\sigma$, so the phase-space area it occupies is set by $\hbar$ and not by the state.
+3. Its uncertainty is the quantum of phase-space area. The second moment in momentum about the mean is $\frac{h^{2}}{4\pi^{2}}/(4\sigma^{2})$ for a Gaussian of position width $\sigma$, so the phase-space area it occupies is set by $\frac{h}{2\pi}$ and not by the state.
 
 The third fact is what makes it the right object for this category. The fluid articles describe a quantum fluid by a density and a velocity, and the Wigner function is the object that says how far the fluid picture can be pushed: where the distribution is positive and narrow, a phase-space density exists and the fluid is classical; where it is negative or wide, the fluid picture is a description of the first two moments and nothing more. [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) makes the same point from the stress, and the identity at the end of this article connects the two.
 
@@ -54,7 +54,7 @@ The third fact is what makes it the right object for this category. The fluid ar
 **The biquaternionic Wigner function is the same transform applied to the element, with the element's own conjugation.** Define
 
 $$
-\boxed{\;\tilde W_\Xi(r,\vec p)=\frac{1}{(2\pi\hbar)^{3}}\int d^{3}s\;e^{-i\theta_{\mathrm{spa}}}\;
+\boxed{\;\tilde W_\Xi(r,\vec p)=\frac{1}{h^{3}}\int d^{3}s\;e^{-i\theta_{\mathrm{spa}}}\;
 \tilde\Xi^{*}\!\left(r-\frac{\vec s}{2}\right)\tilde\Xi\!\left(r+\frac{\vec s}{2}\right)\;}
 $$
 
@@ -68,15 +68,15 @@ Three properties follow immediately and they are the ones the article uses.
 
 ### Why this ordering, in these letters
 
-The ordering is fixed by the requirement that the momentum marginal reproduce the polar form's momentum. The corpus writes the plane-wave phase as $\tilde\Xi\propto e^{i\theta_{\mathrm{phs}}}$ with $\vec\nabla_\Phi S_{\tilde\Xi}=\vec p$, because the derivative on the material sector is $\partial/\partial R_\eta=\partial/\partial r_\eta$ and $\vec\nabla_\Phi\tilde\Xi=(i/\hbar)\vec p\,\tilde\Xi$. So the combination whose $s$-dependence is $e^{+i\theta_{\mathrm{spa}}}$ is $\tilde\Xi^{*}(r-\vec s/2)\tilde\Xi(r+\vec s/2)$, and it is that combination that the kernel $e^{-i\theta_{\mathrm{spa}}}$ must multiply. Pairing the kernel with the other ordering puts the momentum at its negative, which is the sign error described above in its corpus form.
+The ordering is fixed by the requirement that the momentum marginal reproduce the polar form's momentum. The corpus writes the plane-wave phase as $\tilde\Xi\propto e^{i\theta_{\mathrm{phs}}}$ with $\vec\nabla_\Phi S_{\tilde\Xi}=\vec p$, because the derivative on the material sector is $\partial/\partial R_\eta=\partial/\partial r_\eta$ and $\vec\nabla_\Phi\tilde\Xi=(\frac{2\pi i}{h})\vec p\,\tilde\Xi$. So the combination whose $s$-dependence is $e^{+i\theta_{\mathrm{spa}}}$ is $\tilde\Xi^{*}(r-\vec s/2)\tilde\Xi(r+\vec s/2)$, and it is that combination that the kernel $e^{-i\theta_{\mathrm{spa}}}$ must multiply. Pairing the kernel with the other ordering puts the momentum at its negative, which is the sign error described above in its corpus form.
 
-Throughout, $\theta_{\mathrm{phs}}:=S_{\tilde\Xi}/\hbar$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
+Throughout, $\theta_{\mathrm{phs}}:=\frac{2\pi S_{\tilde\Xi}}{h}$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
 
 The half-offset is fixed by the requirement that the first moment be the current and not twice it. With the full offset, the transform reproduces the density after a rescaling but the first moment comes out with the wrong coefficient, and the wrong coefficient is a factor of two that no normalisation can repair. The half-offset is the standard choice and the corpus adopts it for the standard reason.
 
 ### Conjugation, and the two imaginary structures
 
-The definition uses the field's conjugate, and the corpus has two operations that a reader may take for one. The polar-form article separates multiplication by the central $i$ from complex conjugation: the first translates the action by $\pi\hbar/2$ and preserves the mass-shell sheet, and the second reflects the action and exchanges the sheets. In the Wigner transform the conjugation is the second operation only — the complex conjugation of the coefficients — and the central $i$ is untouched, because the transform's kernel is complex and not quaternionic. So a reader who asks whether $\tilde W_\Xi$ is "the conjugate" of something should be told: it is the transform of the conjugate field, and the two conjugations of the corpus are not interchanged anywhere in this article.
+The definition uses the field's conjugate, and the corpus has two operations that a reader may take for one. The polar-form article separates multiplication by the central $i$ from complex conjugation: the first translates the action by $\pi\frac{h}{2\pi 2}$ and preserves the mass-shell sheet, and the second reflects the action and exchanges the sheets. In the Wigner transform the conjugation is the second operation only — the complex conjugation of the coefficients — and the central $i$ is untouched, because the transform's kernel is complex and not quaternionic. So a reader who asks whether $\tilde W_\Xi$ is "the conjugate" of something should be told: it is the transform of the conjugate field, and the two conjugations of the corpus are not interchanged anywhere in this article.
 
 This matters for the reality of the marginal. The zeroth moment is $\tilde\Xi^{*}\tilde\Xi$, which is the norm and is real and non-negative; there is no ambiguity. The first moment is a difference of two products and its reality depends on the ordering conventions, which is the subject of the next section.
 
@@ -87,7 +87,7 @@ This matters for the reality of the marginal. The zeroth moment is $\tilde\Xi^{*
 **Integrating the Wigner element over momentum gives the norm of the field.** The delta identity in the corpus's Fourier convention is
 
 $$
-\int d^{3}p\;e^{-i\theta_{\mathrm{spa}}}=(2\pi\hbar)^{3}\,\delta^{3}(\vec s),
+\int d^{3}p\;e^{-i\theta_{\mathrm{spa}}}=h^{3}\,\delta^{3}(\vec s),
 $$
 
 so that
@@ -104,11 +104,11 @@ What the display does not say. It does not say that the Wigner element is non-ne
 
 ### The first moment, and the current
 
-The first moment of the Wigner element in momentum is the mass times the current density. From $\int d^{3}p\,p_\eta\,e^{-i\theta_{\mathrm{spa}}}=i\hbar(2\pi\hbar)^{3}\partial_{\eta}\delta^{3}(\vec s)$ and one integration by parts,
+The first moment of the Wigner element in momentum is the mass times the current density. From $\int d^{3}p\,p_\eta\,e^{-i\theta_{\mathrm{spa}}}=i \frac{h}{2\pi}h^{3}\partial_{\eta}\delta^{3}(\vec s)$ and one integration by parts,
 
 $$
 \int d^{3}p\;p_\eta\,\tilde W_\Xi
-=\frac{\hbar}{2i}\left[\tilde\Xi^{*}\frac{\partial\tilde\Xi}{\partial r_\eta}
+=\frac{h}{4\pi i}\left[\tilde\Xi^{*}\frac{\partial\tilde\Xi}{\partial r_\eta}
 -\frac{\partial\tilde\Xi^{*}}{\partial r_\eta}\tilde\Xi\right].
 $$
 
@@ -117,14 +117,14 @@ The bracket is the polar form's momentum, in the corpus's letters. The polar-for
 $$
 \tilde\Xi^{*}\frac{\partial\tilde\Xi}{\partial r_\eta}
 -\tilde\Xi\frac{\partial\tilde\Xi^{*}}{\partial r_\eta}
-=\frac{2i\lVert\tilde\Xi\rVert^{2}}{\hbar}\frac{\partial S_{\tilde\Xi}}{\partial r_\eta},
+=\frac{2\pi 2i\lVert\tilde\Xi\rVert^{2}}{h}\frac{\partial S_{\tilde\Xi}}{\partial r_\eta},
 $$
 
 so substituting and using $\partial S_{\tilde\Xi}/\partial r_\eta=p_\eta$,
 
 $$
 \mathrm{Sc}\int d^{3}p\;p_\eta\,\tilde W_\Xi
-=\frac{\hbar}{2i}\cdot\frac{2i\lVert\tilde\Xi\rVert^{2}}{\hbar}\,p_\eta
+=\frac{h}{4\pi i}\cdot\frac{2\pi 2i\lVert\tilde\Xi\rVert^{2}}{h}\,p_\eta
 =\lVert\tilde\Xi\rVert^{2}p_\eta=m\,j_\eta,
 $$
 
@@ -167,9 +167,9 @@ The marginals were checked numerically on a Gaussian packet, and the residuals a
 | $\int dx\,dp\,W$ | $0.999\,999\,1$ |
 | $\max\bigl\lvert\int dp\,p\,W-\Xi^{*}\Xi\,p_0\bigr\rvert$ | $4.0\times10^{-6}$ |
 | $W(x_0,p_0)$ | $0.318\,309\,886\,183\,790\,7$ |
-| $1/(\pi\hbar)$ | $0.318\,309\,886\,183\,790\,7$ |
+| $1/(\pi \frac{h}{2\pi})$ | $0.318\,309\,886\,183\,790\,7$ |
 
-The fourth and fifth rows are the exact value of a Gaussian's Wigner function at its centre, $1/(\pi\hbar)$, and the agreement is to the last digit a double can hold. The peak value is the check that the normalisation is right: an error of $\pi$ or of $2\pi$ in the normalisation moves it and nothing else in the table does.
+The fourth and fifth rows are the exact value of a Gaussian's Wigner function at its centre, $1/(\pi \frac{h}{2\pi})$, and the agreement is to the last digit a double can hold. The peak value is the check that the normalisation is right: an error of $\pi$ or of $2\pi$ in the normalisation moves it and nothing else in the table does.
 
 ## What the Element Carries
 
@@ -190,12 +190,12 @@ $$
 
 where $W[a]$ is the Wigner transform of $a$ with itself and $W[a,b]$ the cross transform. Both statements are exact, and they are the content of the sentence that the algebra supplies a decomposition of the Wigner object into its two quadratures and their correlation. The real part is the total phase-space density of the pair of real fields; the imaginary part measures the local correlation of the two quadratures, and it vanishes for a field whose quadratures are uncorrelated at every scale.
 
-The polar form identifies the two quadratures. The article on the polar form of the Klein–Gordon equation records that the material and informational parts of the element are the quadratures $\lVert\tilde\Xi\rVert\cos(S_{\tilde\Xi}/\hbar)$ and $\lVert\tilde\Xi\rVert\sin(S_{\tilde\Xi}/\hbar)$ of the one angle. Substituting,
+The polar form identifies the two quadratures. The article on the polar form of the Klein–Gordon equation records that the material and informational parts of the element are the quadratures $\lVert\tilde\Xi\rVert\cos(\frac{2\pi S_{\tilde\Xi}}{h})$ and $\lVert\tilde\Xi\rVert\sin(\frac{2\pi S_{\tilde\Xi}}{h})$ of the one angle. Substituting,
 
 $$
-a=\lVert\tilde\Xi\rVert\cos\frac{S_{\tilde\Xi}}{\hbar},
+a=\lVert\tilde\Xi\rVert\cos\frac{2\pi S_{\tilde\Xi}}{h},
 \qquad
-b=\lVert\tilde\Xi\rVert\sin\frac{S_{\tilde\Xi}}{\hbar},
+b=\lVert\tilde\Xi\rVert\sin\frac{2\pi S_{\tilde\Xi}}{h},
 \qquad
 a^{2}+b^{2}=\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}},
 $$
@@ -220,29 +220,29 @@ In the limit in which the phase varies slowly the Wigner element collapses onto 
 $$
 \tilde\Xi^{*}\!\left(r-\frac{\vec s}{2}\right)\tilde\Xi\!\left(r+\frac{\vec s}{2}\right)
 =\rho_{\mathrm{num}}(r)\,e^{i\theta_{\mathrm{sft}}}
-\left(1+\mathcal{O}(s^{2})\right),\qquad \theta_{\mathrm{sft}}=\vec s\cdot\vec\nabla_\Phi S_{\tilde\Xi}/\hbar\in\mathbb{R},
+\left(1+\mathcal{O}(s^{2})\right),\qquad \theta_{\mathrm{sft}}=\frac{2\pi \vec s\cdot\vec\nabla_\Phi S_{\tilde\Xi}}{h}\in\mathbb{R},
 $$
 
 where the amplitude's two offsets combine to $\rho_{\mathrm{num}}$ to this order because the correction is a derivative of a symmetric combination. Substituting,
 
 $$
 \tilde W_\Xi\;\longrightarrow\;\rho_{\mathrm{num}}(r)\,\delta^{3}\!\left(\vec p-\vec\nabla_\Phi S_{\tilde\Xi}\right)
-\qquad\left(\hbar\to0\ \text{at fixed}\ r,\ \vec p\right),
+\qquad\left(h\to0\ \text{at fixed}\ r,\ \vec p\right),
 $$
 
 which is the statement that the fluid's phase-space density is supported on the momentum the flow carries. **The support is the mass shell** — the flow momentum is $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$ and the energy is fixed by the mass-shell relation of the polar-form article — so the classical limit of the Wigner element is a shell-supported density and not a diffuse one.
 
-Two things the limit says. First, the fluid picture is the $\hbar\to0$ limit of the Wigner picture and not an independent description: density and velocity are the two moments of a distribution, and the limit is what makes the higher moments disappear. Second, the limit is a *limit*, and the parameter that controls the correction is the width of the distribution divided by the scale on which the potential varies — which is what the next two subsections measure.
+Two things the limit says. First, the fluid picture is the $h\to0$ limit of the Wigner picture and not an independent description: density and velocity are the two moments of a distribution, and the limit is what makes the higher moments disappear. Second, the limit is a *limit*, and the parameter that controls the correction is the width of the distribution divided by the scale on which the potential varies — which is what the next two subsections measure.
 
 ### The width is the quantum, and it is the quantum potential
 
-The second moment of the Wigner element about the flow momentum is the phase-space area the state occupies, and for a Gaussian it is exactly the quantum potential. With $\sigma$ the position width of a normalized Gaussian and $\hbar$ the action quantum,
+The second moment of the Wigner element about the flow momentum is the phase-space area the state occupies, and for a Gaussian it is exactly the quantum potential. With $\sigma$ the position width of a normalized Gaussian and $\frac{h}{2\pi}$ the action quantum,
 
 $$
-\mathrm{Var}(p)=\frac{\hbar^{2}}{4\sigma^{2}},
+\mathrm{Var}(p)=\frac{h^{2}}{16\pi^{2}\sigma^{2}},
 \qquad
-Q_{\mathrm{qnt}}(r_0)=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}\bigg|_{r_0}
-=\frac{\hbar^{2}}{4m\sigma^{2}},
+Q_{\mathrm{qnt}}(r_0)=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}\bigg|_{r_0}
+=\frac{h^{2}}{16\pi^{2}m\sigma^{2}},
 $$
 
 at the centre $r_0$ of a packet at rest, where the box is the spatial Laplacian in that frame and the variance is taken along one direction. The two are equal up to the mass: $Q_{\mathrm{qnt}}(r_0)=\mathrm{Var}(p)/m$.
@@ -257,7 +257,7 @@ $$
 
 and the variance is the spread of the Wigner distribution about the flow momentum. So the modification of the shell by the quantum potential is the statement that the fluid's momentum is the *mean* of a distribution whose width is not zero, and the amount by which the mean sits off the classical shell is set by that width. [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) reaches the same term from the stress and states that it is not a thermal pressure; the identification here is the phase-space statement of that sentence.
 
-The identity is exact for the Gaussian only. For a general state the second moment about the flow momentum is not the quantum potential: the general relation involves the density's third derivatives as well, and the Gaussian is the family in which they vanish. This article states the Gaussian identity, uses it to fix the interpretation, and does not generalise it. The general $\hbar^{2}$ expansion of the Wigner element is [Relativistic Wigner Function and Quantum Kinetics](relativistic-wigner-function-and-quantum-kinetics.html)'s subject, and it is there that the higher terms appear.
+The identity is exact for the Gaussian only. For a general state the second moment about the flow momentum is not the quantum potential: the general relation involves the density's third derivatives as well, and the Gaussian is the family in which they vanish. This article states the Gaussian identity, uses it to fix the interpretation, and does not generalise it. The general $\frac{h^{2}}{4\pi^{2}}$ expansion of the Wigner element is [Relativistic Wigner Function and Quantum Kinetics](relativistic-wigner-function-and-quantum-kinetics.html)'s subject, and it is there that the higher terms appear.
 
 ### The numbers
 
@@ -266,15 +266,15 @@ Both statements were checked numerically on the Gaussian used for the marginal t
 | quantity | value |
 |---|---|
 | $\mathrm{Var}(p)$ from the Wigner distribution | $0.999\,978\,2$ |
-| $\hbar^{2}/(4\sigma^{2})$ | $1$ |
+| $\frac{h^{2}}{4\pi^{2}}/(4\sigma^{2})$ | $1$ |
 | $Q_{\mathrm{qnt}}$ at the centre, from finite differences | $0.997\,781\,1$ |
 | $\mathrm{Var}(p)/m$ | $0.999\,978\,2$ |
 
-The two numerical values agree to about $2\times10^{-3}$, which is the accuracy of a second difference on a grid of spacing $0.033$; the two exact values agree identically, since both are $\hbar^{2}/(4\sigma^{2})$ with the position in units of $1/k_m$. The agreement is the check that the Wigner normalisation and the quantum potential's sign are consistent: a plus sign on the quantum potential would give $-1$ in the third row, and the discrepancy would be visible at once.
+The two numerical values agree to about $2\times10^{-3}$, which is the accuracy of a second difference on a grid of spacing $0.033$; the two exact values agree identically, since both are $\frac{h^{2}}{4\pi^{2}}/(4\sigma^{2})$ with the position in units of $1/k_m$. The agreement is the check that the Wigner normalisation and the quantum potential's sign are consistent: a plus sign on the quantum potential would give $-1$ in the third row, and the discrepancy would be visible at once.
 
 ### Negativity, and what it forbids
 
-**The Wigner element of a non-Gaussian pure state is negative somewhere, and the negativity is the precise sense in which the fluid picture is incomplete.** For the superposition $(\lvert0\rangle+\lvert1\rangle)/\sqrt2$ of the first two oscillator levels, with lengths in units of $1/k_m$, momenta in units of $mc$ and energies in units of $\hbar\omega$:
+**The Wigner element of a non-Gaussian pure state is negative somewhere, and the negativity is the precise sense in which the fluid picture is incomplete.** For the superposition $(\lvert0\rangle+\lvert1\rangle)/\sqrt2$ of the first two oscillator levels, with lengths in units of $1/k_m$, momenta in units of $mc$ and energies in units of $h\nu$:
 
 | quantity | value |
 |---|---|
@@ -294,8 +294,8 @@ The accounting is a table, because the temptation to overstate the algebra's rol
 | The half-offset and the relative coordinate | The conjugate is the algebra's, not an external star |
 | The marginals as density and current | The quadratures are the material and informational parts |
 | Hudson's theorem and the negativity | The rotor, which a complex number cannot carry |
-| The width $\hbar/(2\sigma)$ of a minimum packet | The decomposition $\tilde W_\Xi=\bigl(W[a]+W[b]\bigr)+i\bigl(W[a,b]-W[b,a]\bigr)$ |
-| The $\hbar$-expansion and the kinetic equation | The reading of the two parts as the two sectors of one angle |
+| The width $\frac{h}{2\pi 2\sigma}$ of a minimum packet | The decomposition $\tilde W_\Xi=\bigl(W[a]+W[b]\bigr)+i\bigl(W[a,b]-W[b,a]\bigr)$ |
+| The $\frac{h}{2\pi}$-expansion and the kinetic equation | The reading of the two parts as the two sectors of one angle |
 
 The two columns are not equally heavy, and the article says which is which. The left column is the physics and it is entirely standard. The right column is a set of spellings and one genuine addition — the rotor — and even the rotor is an addition of *representation*: the standard treatment carries the same information in a matrix, and the corpus's claim is that the element is the natural carrier, not that a matrix cannot carry it. A reader who wants new predictions will not find them in this article, and the next section says so in the house's own terms.
 
@@ -303,29 +303,29 @@ One awkwardness the algebra produces, recorded rather than hidden. The product $
 
 ## What Is Established and What Is Interpretation
 
-Established. The definition of the biquaternionic Wigner element, and its reduction to the standard transform in the fixed-unit case. The zeroth and first moments as density and current, the first stated on the scalar part and justified by the vanishing of the commutator's scalar part. The temporal moment with the element's $i$ restored. The quadrature decomposition, exact in the fixed-unit case. The classical limit $\rho_{\mathrm{num}}\delta^{3}(\vec p-\vec\nabla_\Phi S_{\tilde\Xi})$ to leading order in the offset. The Gaussian identity $Q_{\mathrm{qnt}}(r_0)=\mathrm{Var}(p)/m$. The numerical checks: marginal residuals $7.1\times10^{-7}$ and $4.0\times10^{-6}$, the peak value $1/(\pi\hbar)$ to the last digit a double holds, $\mathrm{Var}(p)=0.999\,978\,2$ against $\hbar^{2}/(4\sigma^{2})=1$, $Q_{\mathrm{qnt}}(r_0)=0.997\,781\,1$, and the negativity minimum $-0.113\,359\,879\,579\,893\,8$ with $1.89\%$ of the grid negative.
+Established. The definition of the biquaternionic Wigner element, and its reduction to the standard transform in the fixed-unit case. The zeroth and first moments as density and current, the first stated on the scalar part and justified by the vanishing of the commutator's scalar part. The temporal moment with the element's $i$ restored. The quadrature decomposition, exact in the fixed-unit case. The classical limit $\rho_{\mathrm{num}}\delta^{3}(\vec p-\vec\nabla_\Phi S_{\tilde\Xi})$ to leading order in the offset. The Gaussian identity $Q_{\mathrm{qnt}}(r_0)=\mathrm{Var}(p)/m$. The numerical checks: marginal residuals $7.1\times10^{-7}$ and $4.0\times10^{-6}$, the peak value $1/(\pi \frac{h}{2\pi})$ to the last digit a double holds, $\mathrm{Var}(p)=0.999\,978\,2$ against $\frac{h^{2}}{4\pi^{2}}/(4\sigma^{2})=1$, $Q_{\mathrm{qnt}}(r_0)=0.997\,781\,1$, and the negativity minimum $-0.113\,359\,879\,579\,893\,8$ with $1.89\%$ of the grid negative.
 
-Interpretation. That the Wigner element is the object that mediates between the quantum state and the fluid, and that the fluid description is the $\hbar\to0$ projection of it. Both are standard readings; the article's contribution is the letters in which they are written and the explicit separation of what is imported from what is supplied.
+Interpretation. That the Wigner element is the object that mediates between the quantum state and the fluid, and that the fluid description is the $h\to0$ projection of it. Both are standard readings; the article's contribution is the letters in which they are written and the explicit separation of what is imported from what is supplied.
 
 Not claimed. That the Wigner element is non-negative — it is not, and the negativity is quantified above. That the quadrature decomposition is basis-independent — it is not, and the invariant objects are named. That the Gaussian identity for the quantum potential holds for general states — it does not. That the Dirac Wigner element has been constructed in these letters — it has not, and the standard matrix statement is cited rather than reproduced.
 
 ## Summary
 
-The biquaternionic Wigner function is the standard $x$–$p$ transform of the field taken in the algebra, $\tilde W_\Xi(r,\vec p)=(2\pi\hbar)^{-3}\int d^{3}s\,e^{-i\theta_{\mathrm{spa}}}\tilde\Xi^{*}(r-\vec s/2)\tilde\Xi(r+\vec s/2)$, with the conjugate at the lower offset and the momentum kernel of the corpus's Fourier convention. Both choices are fixed by the requirement that a plane wave of momentum $\vec p_0$ sit at $\vec p=\vec p_0$, which is the check that catches the sign error a real wave function cannot catch.
+The biquaternionic Wigner function is the standard $x$–$p$ transform of the field taken in the algebra, $\tilde W_\Xi(r,\vec p)=h^{-3}\int d^{3}s\,e^{-i\theta_{\mathrm{spa}}}\tilde\Xi^{*}(r-\vec s/2)\tilde\Xi(r+\vec s/2)$, with the conjugate at the lower offset and the momentum kernel of the corpus's Fourier convention. Both choices are fixed by the requirement that a plane wave of momentum $\vec p_0$ sit at $\vec p=\vec p_0$, which is the check that catches the sign error a real wave function cannot catch.
 
 Its zeroth moment in momentum is the norm, $\int d^{3}p\,\tilde W_\Xi=\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}}$, exactly. Its first moment is the mass times the current,
 
 $$
 \mathrm{Sc}\int d^{3}p\;p_\eta\,\tilde W_\Xi
-=\frac{\hbar}{2i}\left[\tilde\Xi^{*}\frac{\partial\tilde\Xi}{\partial r_\eta}-\frac{\partial\tilde\Xi^{*}}{\partial r_\eta}\tilde\Xi\right]
+=\frac{h}{4\pi i}\left[\tilde\Xi^{*}\frac{\partial\tilde\Xi}{\partial r_\eta}-\frac{\partial\tilde\Xi^{*}}{\partial r_\eta}\tilde\Xi\right]
 =\lVert\tilde\Xi\rVert^{2}p_\eta=m\,j_\eta,
 $$
 
 by the polar form's identity for the bracket; the scalar part is taken because the two orderings differ by a commutator whose scalar part vanishes. Its temporal moment is $\int d^{3}p\,(E/c)\tilde W_\Xi=-i\,m\,J_{\Phi,t}$, with the $i$ where the element's temporal slot puts it. The three moments together reproduce the polar form's four-current.
 
-In a fixed unit element the element splits exactly, $\tilde W_\Xi=\bigl(W[a]+W[b]\bigr)+i\bigl(W[a,b]-W[b,a]\bigr)$ with $a=\lVert\tilde\Xi\rVert\cos(S_{\tilde\Xi}/\hbar)$ and $b=\lVert\tilde\Xi\rVert\sin(S_{\tilde\Xi}/\hbar)$ the two quadratures, so the real part is the phase-space image of the density and the imaginary part the phase-space image of the quadrature correlation. A rotating unit adds rotor gradients at first order in the offset, which is the Wigner picture of the spin-half-fluid article's statement that the vorticity is sourced by rotor gradients.
+In a fixed unit element the element splits exactly, $\tilde W_\Xi=\bigl(W[a]+W[b]\bigr)+i\bigl(W[a,b]-W[b,a]\bigr)$ with $a=\lVert\tilde\Xi\rVert\cos(\frac{2\pi S_{\tilde\Xi}}{h})$ and $b=\lVert\tilde\Xi\rVert\sin(\frac{2\pi S_{\tilde\Xi}}{h})$ the two quadratures, so the real part is the phase-space image of the density and the imaginary part the phase-space image of the quadrature correlation. A rotating unit adds rotor gradients at first order in the offset, which is the Wigner picture of the spin-half-fluid article's statement that the vorticity is sourced by rotor gradients.
 
-The classical limit is the fluid: $\tilde W_\Xi\to\rho_{\mathrm{num}}\delta^{3}(\vec p-\vec\nabla_\Phi S_{\tilde\Xi})$, shell-supported, so the fluid picture is a projection of the Wigner picture and not an independent description. The width the projection discards is the quantum potential for a Gaussian, $Q_{\mathrm{qnt}}(r_0)=\mathrm{Var}(p)/m=\hbar^{2}/(4m\sigma^{2})$, and the part the projection cannot make positive is measured on a two-level superposition at $-0.113\,359\,879\,579\,893\,8$, with $1.89\%$ of the sampled phase space negative.
+The classical limit is the fluid: $\tilde W_\Xi\to\rho_{\mathrm{num}}\delta^{3}(\vec p-\vec\nabla_\Phi S_{\tilde\Xi})$, shell-supported, so the fluid picture is a projection of the Wigner picture and not an independent description. The width the projection discards is the quantum potential for a Gaussian, $Q_{\mathrm{qnt}}(r_0)=\mathrm{Var}(p)/m=\frac{h^{2}}{4\pi^{2}}/(4m\sigma^{2})$, and the part the projection cannot make positive is measured on a two-level superposition at $-0.113\,359\,879\,579\,893\,8$, with $1.89\%$ of the sampled phase space negative.
 
 ## Summary of Notation
 
@@ -341,7 +341,7 @@ The classical limit is the fluid: $\tilde W_\Xi\to\rho_{\mathrm{num}}\delta^{3}(
 | $\tilde W_\Xi(r,\vec p)$ | Biquaternionic Wigner element |
 | $r$, $\vec s$ | Position and relative coordinate; the offsets are $\pm\vec s/2$ |
 | $\vec p$, $p_\eta$ | Momentum, the transform variable, and its components |
-| $\hbar$ | Action quantum |
+| $\frac{h}{2\pi}$ | Action quantum |
 | $m$, $c$ | Mass and speed of light in the medium |
 | $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ | Energy; $r'_t$ is the temporal coordinate, a length |
 | $\tilde J_\Phi=ic\rho_{\mathrm{num}}E/(mc^{2})\,e_t+\vec j$ | Four-current of the polar form |
@@ -349,10 +349,10 @@ The classical limit is the fluid: $\tilde W_\Xi\to\rho_{\mathrm{num}}\delta^{3}(
 | $\mathrm{Sc}$ | Scalar part |
 | $\langle\ \rangle_{\natural}$ | Quaternionic norm |
 | $W[a]$, $W[a,b]$ | Wigner transform of a real function, and the cross transform of two |
-| $a$, $b$ | Quadratures, $\lVert\tilde\Xi\rVert\cos(S_{\tilde\Xi}/\hbar)$ and $\lVert\tilde\Xi\rVert\sin(S_{\tilde\Xi}/\hbar)$ |
+| $a$, $b$ | Quadratures, $\lVert\tilde\Xi\rVert\cos(\frac{2\pi S_{\tilde\Xi}}{h})$ and $\lVert\tilde\Xi\rVert\sin(\frac{2\pi S_{\tilde\Xi}}{h})$ |
 | $u$ | A fixed unit element |
 | $\tilde U_{\mathrm{rot}}$ | Rotor of the polar form |
-| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
+| $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
 | $\sigma$ | Position width of a Gaussian packet |
 | $\mathrm{Var}(p)$ | Second moment of the Wigner distribution about the flow momentum, along one direction |
 | $\mathrm{Var}_{\mathrm{tr}}(p)$ | Its trace over the three directions, the three-dimensional reading |

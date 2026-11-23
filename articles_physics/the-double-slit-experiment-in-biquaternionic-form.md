@@ -4,9 +4,9 @@
 
 The double-slit experiment is the minimal experiment in which a quantum amplitude is the **sum of two alternatives**. A particle reaches a screen point by either slit, the two routes contribute two amplitudes, and the intensity at the screen is the squared modulus of their sum. The cross term is the interference pattern; closing one slit removes it. Everything that is strange and everything that is ordinary about quantum amplitudes is visible in this one arrangement.
 
-This article asks what the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ says about the double slit, and what it does not. The read list has already settled the three objects the question depends on. *The Path Integral in Biquaternionic Form* identifies the symbol $i$ of the phase $\exp(i\theta_{\mathrm{act}})$ with the **central scalar imaginary**, places the exponent $\frac{i\,S}{\hbar}$ in the material sector $\mathbb{B}_{\Phi}$, and records that only *relative* phases of paths are observable. *The Schrödinger Equation in Biquaternionic Form* identifies the wave function not with an element of $\mathbb{B}_{\Psi}$ but with a **spinor in a Peirce carrier**, a minimal left ideal here, $\mathbb{B}\tilde\Pi_{\mathrm{id}} \cong \mathbb{C}^2$, and shows that the same central $i$ is the complex structure of that module. *Quantum Physics in Biquaternionic Form* supplies the states, observables, Born rule, and measurement rule for the corresponding qubit. Two further articles of the series carry the geometry the double slit turns out to use: *The Bloch Ball as the Normalised Slice of the Future Light Cone* identifies the state space with a slice of the biquaternion-norm cone, and *Decoherence as Idempotent Projection* describes the destruction of coherence as an algebraic channel. This article assembles these into the canonical interference experiment.
+This article asks what the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ says about the double slit, and what it does not. The read list has already settled the three objects the question depends on. *The Path Integral in Biquaternionic Form* identifies the symbol $i$ of the phase $\exp(i\theta_{\mathrm{act}})$ with the **central scalar imaginary**, places the exponent $\frac{2\pi i\,S}{h}$ in the material sector $\mathbb{B}_{\Phi}$, and records that only *relative* phases of paths are observable. *The Schrödinger Equation in Biquaternionic Form* identifies the wave function not with an element of $\mathbb{B}_{\Psi}$ but with a **spinor in a Peirce carrier**, a minimal left ideal here, $\mathbb{B}\tilde\Pi_{\mathrm{id}} \cong \mathbb{C}^2$, and shows that the same central $i$ is the complex structure of that module. *Quantum Physics in Biquaternionic Form* supplies the states, observables, Born rule, and measurement rule for the corresponding qubit. Two further articles of the series carry the geometry the double slit turns out to use: *The Bloch Ball as the Normalised Slice of the Future Light Cone* identifies the state space with a slice of the biquaternion-norm cone, and *Decoherence as Idempotent Projection* describes the destruction of coherence as an algebraic channel. This article assembles these into the canonical interference experiment.
 
-Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
+Throughout this article $\theta_{\mathrm{act}}:=\frac{2\pi \mathrm{Re}\,S}{h}$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\frac{2\pi \mathrm{Im}\,S}{h}$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
 The division between what is established and what is interpretation is stated here and kept explicit.
 
@@ -23,10 +23,10 @@ The article is organized as follows. The next section writes the two-route ampli
 Let $K_j(X)$ be the amplitude for the particle to arrive at the screen point $X$ through slit $j$, $j = 1, 2$. Each is a sum over paths through that slit, and by the path-integral article the single-path phase is a **central** $*$-unitary element of $\mathbb{B}_{C}$ whose exponent lies in $\mathbb{B}_{\Phi}$:
 
 $$
-K_j(X) \;=\; \int_{\text{paths via slit }j}\!\mathcal{D}x\; \exp(iS_j[x]/\hbar), \qquad \exp(i\theta_{\mathrm{act},j}) \in  \mathbb{B}_{C},\frac{iS_{j}}{\hbar} \in  \mathbb{B}_{C} \cap \mathbb{B}_{\Phi} .
+K_j(X) \;=\; \int_{\text{paths via slit }j}\!\mathcal{D}x\; \exp(iS_j[x]\frac{2\pi}{h}), \qquad \exp(i\theta_{\mathrm{act},j}) \in  \mathbb{B}_{C},\frac{2\pi iS_{j}}{h} \in  \mathbb{B}_{C} \cap \mathbb{B}_{\Phi} .
 $$
 
-The route angle is $\theta_{\mathrm{act},j}=S_j[x]/\hbar$, real because the action of a real path is real. Because each phase factor is central and the sum of central elements is central, each $K_j$ is a complex scalar times $e_t$. Writing $a_j(X) = |K_j(X)| \ge 0$ and $\theta_{\mathrm{pha},j}(X) =\frac{S_{j}\,X}{\hbar}$ for its phase,
+The route angle is $\theta_{\mathrm{act},j}=S_j[x]\frac{2\pi}{h}$, real because the action of a real path is real. Because each phase factor is central and the sum of central elements is central, each $K_j$ is a complex scalar times $e_t$. Writing $a_j(X) = |K_j(X)| \ge 0$ and $\theta_{\mathrm{pha},j}(X) =\frac{2\pi S_{j}\,X}{h}$ for its phase,
 
 $$
 K_j(X) = a_j(X)\, \exp(i\theta_{\mathrm{pha},j}(X))\, e_t .
@@ -70,7 +70,7 @@ Maxima occur where $d\sin\theta = m\lambda$ and nodes where $d\sin\theta = (m + 
 Two remarks keep this section honest.
 
 - **Finite slit width adds an envelope, which is standard.** A slit of finite width has its own diffraction pattern, and the observed intensity is the two-slit interference modulated by the single-slit envelope. Nothing about the biquaternion framework changes this; it is ordinary wave optics, and this article does not develop it.
-- **The numbers are inputs, not outputs.** The wavelength, the separation $d$, the distance $D$, and the action $S_j$ itself are not supplied by the algebra. What the biquaternion interpretation supplies is the *identification* of the $i$ in $\exp(i\theta_{\mathrm{act},j})$ with the central scalar imaginary, the *location* of the exponent $\frac{iS_{j}}{\hbar}$ in $\mathbb{B}_{\Phi}$, and the *statement* that only $\delta$ is observable. It does not supply the action, the measure, or the geometry; that is the path-integral article's central gap, and it is inherited here without change.
+- **The numbers are inputs, not outputs.** The wavelength, the separation $d$, the distance $D$, and the action $S_j$ itself are not supplied by the algebra. What the biquaternion interpretation supplies is the *identification* of the $i$ in $\exp(i\theta_{\mathrm{act},j})$ with the central scalar imaginary, the *location* of the exponent $\frac{2\pi iS_{j}}{h}$ in $\mathbb{B}_{\Phi}$, and the *statement* that only $\delta$ is observable. It does not supply the action, the measure, or the geometry; that is the path-integral article's central gap, and it is inherited here without change.
 
 ## The Which-Path Qubit and the Bloch Ball
 
@@ -188,13 +188,13 @@ It is natural to ask whether the double slit requires the phase's root to be the
 Take a **non-central** root $\vec{u}$ — a unit pure real quaternion, $\vec{u}^2 = -e_t$, lying in $\mathbb{B}_{H} \cap \mathbb{B}_{\Phi}$. The phase factor is
 
 $$
-\exp(\frac{\vec u\,S}{\hbar}) = \cos\!\Big(\frac{S}{\hbar}\Big)e_t + \sin\!\Big(\frac{S}{\hbar}\Big)\vec{u},
+\exp(\frac{2\pi \vec u\,S}{h}) = \cos\!\Big(\frac{2\pi S}{h}\Big)e_t + \sin\!\Big(\frac{2\pi S}{h}\Big)\vec{u},
 $$
 
-which is $*$-unitary, $(\exp(\frac{\vec u\,S}{\hbar}))(\exp(\frac{\vec u\,S}{\hbar}))^\dagger = e_t$, and whose exponent $\frac{\vec u\,S}{\hbar}$ also lies in $\mathbb{B}_{\Phi}$. Under the isomorphism $\vec e_\eta \mapsto -i\sigma_\eta$ with $\vec{u} = \vec e_z$ it maps to
+which is $*$-unitary, $(\exp(\frac{2\pi \vec u\,S}{h}))(\exp(\frac{2\pi \vec u\,S}{h}))^\dagger = e_t$, and whose exponent $\frac{2\pi \vec u\,S}{h}$ also lies in $\mathbb{B}_{\Phi}$. Under the isomorphism $\vec e_\eta \mapsto -i\sigma_\eta$ with $\vec{u} = \vec e_z$ it maps to
 
 $$
-\exp(\frac{\vec e_{z}\,S}{\hbar}) \;\longmapsto\; \operatorname{diag}\!\bigl(\exp(-i\theta_{\mathrm{act}}),\, \exp(+i\theta_{\mathrm{act}})\bigr),
+\exp(\frac{2\pi \vec e_{z}\,S}{h}) \;\longmapsto\; \operatorname{diag}\!\bigl(\exp(-i\theta_{\mathrm{act}}),\, \exp(+i\theta_{\mathrm{act}})\bigr),
 $$
 
 verified directly in the matrix representation. It is a **relative** phase between the two spin components — a spin rotation — not a global phase shared by both.
@@ -250,7 +250,7 @@ maximal when the two route spinors are parallel (the scalar case) and vanishing 
 **What the biquaternion notation provides.**
 
 - A **canonical complex structure.** The $i$ of the phase and of the relative phase is the central scalar imaginary, fixed by the algebra rather than chosen; the amplitude is a complex scalar, and the relative phase is the argument of the off-diagonal element of $\tilde{Ϛ}_{\Psi}$.
-- A **home for the amplitude.** Each route amplitude is a central element of $\mathbb{B}_{C}$, and the exponent $\frac{iS_{j}}{\hbar}$ lies in the material sector $\mathbb{B}_{\Phi}$ along $i r'_t$, as the path-integral article establishes.
+- A **home for the amplitude.** Each route amplitude is a central element of $\mathbb{B}_{C}$, and the exponent $\frac{2\pi iS_{j}}{h}$ lies in the material sector $\mathbb{B}_{\Phi}$ along $i r'_t$, as the path-integral article establishes.
 - A **state geometry for the which-path degree of freedom.** The which-path state is an element $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi})$ of $\mathbb{B}_{\Psi}$; visibility and predictability are its equatorial and polar components; and the duality bound $V^2 + P^2 \le 1$ is exactly the unit-weight-slice-of-the-cone condition of the Bloch-ball article, with equality on the zero-divisor cone.
 - **Measurement and dephasing as algebraic operations.** The projective two-sided operator and the dephasing channel are the same operations the framework uses elsewhere; the double slit is an application, not a new mechanism.
 - **The sector chain, restated.** A material-sector quantity (the action along a route in $\mathbb{B}_{\Phi}$) is converted, through the central complex structure, into a central phase, and the state it produces, $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}\tilde{Ξ}^{\dagger}/2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$, lies in the informational sector $\mathbb{B}_{\Psi}$.
@@ -286,7 +286,7 @@ maximal when the two route spinors are parallel (the scalar case) and vanishing 
 The double-slit experiment in biquaternionic form is the statement that two route amplitudes, each a **central** complex phase $a_j \exp(i\theta_{\mathrm{act},j})$, add, and that the intensity is their squared modulus:
 
 $$
-\boxed{\;I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta, \qquad \delta =\frac{S_1 - S_2}{\hbar}\;}.
+\boxed{\;I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta, \qquad \delta =\frac{2\pi S_1 - S_2}{h}\;}.
 $$
 
 A common phase shift is unobservable, so only the relative phase $\delta$ — a central element whose exponent lies in $\mathbb{B}_{\Phi}$ along $i r'_t$ — is read off. The standard geometry (nodes where $d\sin\theta = (m+\tfrac12)\lambda$, spacing $\lambda D/d$) is unchanged and is an input, not an output, of the algebra.
@@ -316,7 +316,7 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $K_j = a_j \exp(i\theta_{\mathrm{pha},j}) e_t$ | Route amplitude through slit $j$; central |
-| $\theta_{\mathrm{pha},j} =\frac{S_{j}}{\hbar}$, $\delta = \theta_{\mathrm{pha},1} - \theta_{\mathrm{pha},2}$ | Route phase; relative phase |
+| $\theta_{\mathrm{pha},j} =\frac{2\pi S_{j}}{h}$, $\delta = \theta_{\mathrm{pha},1} - \theta_{\mathrm{pha},2}$ | Route phase; relative phase |
 | $I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta$ | Two-path intensity |
 | $d, D, \lambda, k_\Phi = 2\pi/\lambda$ | Slit separation, screen distance, wavelength, wavenumber |
 | $\vec{u}$ | Unit pure real quaternion; path (pointer) axis |
@@ -330,7 +330,7 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 | $\tilde{Ξ} = \tilde{Ξ}_{1} + \tilde{Ξ}_{2} \in \mathbb{B}\tilde\Pi_{\mathrm{id}} \cong \mathbb{C}^2$ | Spinor-valued two-route amplitude |
 | $s$, $2\,\mathrm{Sc}(s^\dagger s)=1$ | Normalised spinor; the phase of the amplitude |
 | $\langle s_1,s_2\rangle_{*} = 2\,\mathrm{Sc}(s_1^\dagger s_2)$ | Module inner product; spin overlap |
-| $\exp(\frac{\vec u\,S}{\hbar})$ | Non-central phase; a spin rotation |
+| $\exp(\frac{2\pi \vec u\,S}{h})$ | Non-central phase; a spin rotation |
 | $2\langle\tilde\Pi_{\mathrm{id}},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$ | Born weight at normalisation |
 | $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ | The scalar imaginary exchanges the sectors |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

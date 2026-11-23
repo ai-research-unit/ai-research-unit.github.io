@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Temperature enters the informational sector as a parameter of a state, and the parameter has the dimensions of an inverse energy. Multiplied by $\hbar$, an inverse energy is a time, which is the inverse frequency it is read as below. The article takes that dimensional statement seriously and shows that it is structural: $\beta$ is the circumference of a circle, and the circle is an orbit of the algebra's compact flow.
+Temperature enters the informational sector as a parameter of a state, and the parameter has the dimensions of an inverse energy. Multiplied by $\frac{h}{2\pi}$, an inverse energy is a time, which is the inverse frequency it is read as below. The article takes that dimensional statement seriously and shows that it is structural: $\beta$ is the circumference of a circle, and the circle is an orbit of the algebra's compact flow.
 
 Three exact statements carry the reading.
 
@@ -64,21 +64,21 @@ $$
 \tau_{\mathrm{free}}=\frac{2\pi}{\omega},
 $$
 
-a number fixed by the gap and by nothing else. It does not depend on the temperature and it is the same at every $\beta$. The circle whose circumference is the inverse temperature is a different one: it is the circle on which the imaginary time of the *thermal state* is closed, and its circumference is $\beta\hbar$, the width of the KMS strip. The two coincide at exactly one temperature,
+a number fixed by the gap and by nothing else. It does not depend on the temperature and it is the same at every $\beta$. The circle whose circumference is the inverse temperature is a different one: it is the circle on which the imaginary time of the *thermal state* is closed, and its circumference is $\beta \frac{h}{2\pi}$, the width of the KMS strip. The two coincide at exactly one temperature,
 
 $$
-\beta\hbar=\frac{2\pi}{\omega}\quad\Longleftrightarrow\quad k_BT=\frac{\hbar\omega}{2\pi},
+\beta \frac{h}{2\pi}=\frac{2\pi}{\omega}\quad\Longleftrightarrow\quad k_BT=\frac{h\nu}{2\pi},
 $$
 
 and that coincidence is a property of a particular two-level system, not the definition of $\beta$. A sentence that reads the inverse temperature off $2\pi/\omega$ has read the gap and called it a temperature.
 
-What the trace over a loop gives, and what it does not. $Z(\beta)=2\cosh\frac{\beta\omega}{2}$ is the sum of the two eigenvalues of the translation $U(-i\beta)$, which is the trace of a translation and not the trace of a periodic function: the operator $U(-i\beta)$ is Hermitian positive, and it does not come back at $\tau=-i\beta$. What is periodic is the thermal *correlation function*, and its period is $\beta\hbar$. So the correct statement of the circle is the KMS one, and it is the following. For the thermal state at $\beta$, the two-point function of any two observables obeys
+What the trace over a loop gives, and what it does not. $Z(\beta)=2\cosh\frac{\beta\omega}{2}$ is the sum of the two eigenvalues of the translation $U(-i\beta)$, which is the trace of a translation and not the trace of a periodic function: the operator $U(-i\beta)$ is Hermitian positive, and it does not come back at $\tau=-i\beta$. What is periodic is the thermal *correlation function*, and its period is $\beta \frac{h}{2\pi}$. So the correct statement of the circle is the KMS one, and it is the following. For the thermal state at $\beta$, the two-point function of any two observables obeys
 
 $$
-F_{AB}(r'_t+i\beta\hbar)=F_{BA}(r'_t),
+F_{AB}(r'_t+i\beta \frac{h}{2\pi})=F_{BA}(r'_t),
 $$
 
-which closes the imaginary axis into a circle of circumference $\beta\hbar$. The periodicity is a property of the *state*, and it holds at every temperature; the free flow's periodicity is a property of the *spectrum*, and it holds at every temperature too, at a different number.
+which closes the imaginary axis into a circle of circumference $\beta \frac{h}{2\pi}$. The periodicity is a property of the *state*, and it holds at every temperature; the free flow's periodicity is a property of the *spectrum*, and it holds at every temperature too, at a different number.
 
 Where a circumference is forced rather than chosen. In a two-level system $\beta$ is a free parameter and the circle is whatever length the reservoir sets, so the geometry is a picture and not a derivation. The case where the geometry does the work is a horizon, and the corpus has it in *The Unruh Effect in Biquaternionic Form*: the boost's orbit closes in imaginary time with period $2\pi$ in the rapidity, the Euclidean chart must be regular at the horizon, regularity fixes that period, and $\beta=2\pi c/a$ follows. There the circumference is computed and the temperature is its reciprocal; here the circumference is given and the temperature is its reciprocal by definition. The two statements are one formula, $T\propto1/\beta$, read once as a theorem and once as a definition.
 
@@ -86,7 +86,7 @@ Where the circle is absent. For a boost the generator is a pure vector and the e
 
 ## Inverse Temperature Is an Inverse Time
 
-**The dimensional statement is the structural one.** $\beta$ has units of inverse energy, so $\beta\hbar$ is a time. The article's claim is that this is not a unit coincidence but the length of the orbit computed above: $\beta=\tau_{\mathrm{per}}/\hbar$ at the scale set by the gap. Temperature is a frequency, $k_BT=\hbar\omega$, and the thermal circle is the orbit whose period is that frequency's inverse.
+**The dimensional statement is the structural one.** $\beta$ has units of inverse energy, so $\beta \frac{h}{2\pi}$ is a time. The article's claim is that this is not a unit coincidence but the length of the orbit computed above: $\beta=\frac{2\pi \tau_{\mathrm{per}}}{h}$ at the scale set by the gap. Temperature is a frequency, $k_BT=h\nu$, and the thermal circle is the orbit whose period is that frequency's inverse.
 
 Two limits, and they are the two ends of the ball.
 
@@ -107,21 +107,21 @@ It does not give a derivation of thermality. The article takes the Gibbs form as
 
 ## Summary
 
-The thermal state is the congruence of the centre by $e^{-\beta\tilde H/2}$, so the Gibbs path is the radial segment from the maximally mixed state to a pure state on the boundary, and it is an orbit of a semigroup rather than of the group. Continuing $\beta\mapsto i\tau$ turns the Boltzmann factor into the value $U(-i\beta)$ of the compact flow $U(\tau)=e^{-i\tau\tilde H}$, so $\beta$ is a translation length along imaginary time and the thermal circle's circumference is $\beta\hbar$; the flow's own period, $2\pi/\omega$, is a different number fixed by the gap, and the two agree only at $k_BT=\hbar\omega/2\pi$. Temperature is therefore an inverse time in the structural sense and not only in the dimensional one, the two limits $\beta\to0$ and $\beta\to\infty$ are the centre and the boundary, and the circle exists on the informational slice because its generator is Hermitian — the material flow is a boost, and a boost does not come back.
+The thermal state is the congruence of the centre by $e^{-\beta\tilde H/2}$, so the Gibbs path is the radial segment from the maximally mixed state to a pure state on the boundary, and it is an orbit of a semigroup rather than of the group. Continuing $\beta\mapsto i\tau$ turns the Boltzmann factor into the value $U(-i\beta)$ of the compact flow $U(\tau)=e^{-i\tau\tilde H}$, so $\beta$ is a translation length along imaginary time and the thermal circle's circumference is $\beta \frac{h}{2\pi}$; the flow's own period, $2\pi/\omega$, is a different number fixed by the gap, and the two agree only at $k_BT=h\nu/2\pi$. Temperature is therefore an inverse time in the structural sense and not only in the dimensional one, the two limits $\beta\to0$ and $\beta\to\infty$ are the centre and the boundary, and the circle exists on the informational slice because its generator is Hermitian — the material flow is a boost, and a boost does not come back.
 
 ## Summary of Notation
 
 | symbol | meaning |
 | --- | --- |
 | $\beta$
-| the inverse temperature; $\beta\hbar$ is the circumference |
+| the inverse temperature; $\beta \frac{h}{2\pi}$ is the circumference |
 | $\tilde H$ | the Hermitian Hamiltonian of the informational sector |
 | $\lambda_1\ge\lambda_2$, $\omega=\lambda_1-\lambda_2$ | the two energies and their gap |
 | $Z=\operatorname{tr}e^{-\beta\tilde H}=2\cosh\frac{\beta\omega}{2}$ | the partition function |
 | $\tilde{Ϛ}_\Psi(\beta)$ | the thermal state, of Bloch radius $\tanh\frac{\beta\omega}{2}$ |
 | $\tilde U_\beta=e^{-\beta\tilde H/2}/\sqrt{Z}$ | the positive Hermitian element whose congruence gives the state |
 | $\tau$ | the imaginary time, $\beta=i\tau$ |
-| $\beta\hbar$ | the circumference of the thermal circle, the width of the KMS strip |
+| $\beta \frac{h}{2\pi}$ | the circumference of the thermal circle, the width of the KMS strip |
 | $\tau_{\mathrm{free}}=2\pi/\omega$ | the period of the continued free flow; a property of the gap, not of the temperature |
 
 ## Further Reading

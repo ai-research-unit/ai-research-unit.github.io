@@ -6,7 +6,7 @@ The previous articles argued that a fluid with a pressure maps to a nonlinear wa
 
 The order parameter is the fundamental object: it is what the theory is written in and what the experiment measures. The fluid is derived from it. The linear Schrödinger equation is the non-interacting limit of the Gross–Pitaevskii equation, and it is reached by setting the coupling to zero, which is also the limit in which the fluid loses its pressure.
 
-The constant is written $\hbar$ here because the medium is a condensate, and the same slot is written $\sigma_{\mathrm{dsp}}$ in the map's general form. The two are the same object at two values of the physics: it is a length squared over a time in the classical dispersion case and an action per particle here, and the second-gradient term is $Q_{\mathrm{qnt}}$ in this article's notation and $Q_{\mathrm{kor}}$ in [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html).
+The constant is written $\frac{h}{2\pi}$ here because the medium is a condensate, and the same slot is written $\sigma_{\mathrm{dsp}}$ in the map's general form. The two are the same object at two values of the physics: it is a length squared over a time in the classical dispersion case and an action per particle here, and the second-gradient term is $Q_{\mathrm{qnt}}$ in this article's notation and $Q_{\mathrm{kor}}$ in [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html).
 
 A uniform condensate with repulsive interaction gives the chemical potential and the healing length; a trapped condensate gives the Thomas–Fermi profile and its radius; an attractive condensate gives a bright soliton whose amplitude and width are fixed by its chemical potential. Each is exact, each is checked by substitution, and each is a place where the fluid's variables can be read off the order parameter.
 
@@ -17,7 +17,7 @@ The vocabulary of superfluidity agrees with the block's and the objects do not: 
 The condensate is described by one complex function and its modulus squared is the density. Write
 
 $$
-\psi=\sqrt{\rho_{\mathrm{num}}}\,e^{iS/\hbar},
+\psi=\sqrt{\rho_{\mathrm{num}}}\,e^{\frac{2\pi iS}{h}},
 \qquad
 \vec v=\frac{1}{m}\vec\nabla_\Phi S ,
 $$
@@ -25,7 +25,7 @@ $$
 with $\rho_{\mathrm{num}}$ the number density of condensed particles and $\vec v$ the velocity of the condensate's flow. The Gross–Pitaevskii equation is
 
 $$
-i\hbar\,\partial_{t'}\psi=-\frac{\hbar^{2}}{2m}\Delta_\Phi\psi+g\lvert\psi\rvert^{2}\psi ,
+i \frac{h}{2\pi}\,\partial_{t'}\psi=-\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi\psi+g\lvert\psi\rvert^{2}\psi ,
 $$
 
 with $g$ the contact coupling, positive for a repulsive interaction and negative for an attractive one.
@@ -38,11 +38,11 @@ $$
 
 which is the polytrope of exponent $2$ in [The Equation of State and the Barotropic Condition](the-equation-of-state-and-the-barotropic-condition.html). So the contact interaction and the quadratic pressure are one datum, and the article's fluid is the map's fourth row.
 
-For a dilute gas of hard spheres, $g=4\pi\hbar^{2}a_{\mathrm{sc}}/m$ with $a_{\mathrm{sc}}$ the s-wave scattering length. So the nonlinear term of the wave equation is fixed by a two-body scattering measurement, and the fluid's pressure is fixed by the same number.
+For a dilute gas of hard spheres, $g=4\pi \frac{h^{2}}{4\pi^{2}}a_{\mathrm{sc}}/m$ with $a_{\mathrm{sc}}$ the s-wave scattering length. So the nonlinear term of the wave equation is fixed by a two-body scattering measurement, and the fluid's pressure is fixed by the same number.
 
 ## Two Exact Solutions
 
-**The uniform condensate fixes the chemical potential and the healing length.** With $\psi=\sqrt{\rho_0}\exp(-i\mu_{\mathrm{chm}}t'/\hbar)$ and $\mu_{\mathrm{chm}}=g\rho_0$, the equation is satisfied identically: the kinetic term vanishes and the two remaining terms cancel. The chemical potential is the interaction energy per particle, and it is the energy cost of adding one particle to the condensate.
+**The uniform condensate fixes the chemical potential and the healing length.** With $\psi=\sqrt{\rho_0}\exp(-i\mu_{\mathrm{chm}}\frac{2\pi t'}{h})$ and $\mu_{\mathrm{chm}}=g\rho_0$, the equation is satisfied identically: the kinetic term vanishes and the two remaining terms cancel. The chemical potential is the interaction energy per particle, and it is the energy cost of adding one particle to the condensate.
 
 A long-wavelength disturbance propagates at the sound speed
 
@@ -53,7 +53,7 @@ $$
 and a short-wavelength disturbance is cut off at the healing length
 
 $$
-\xi=\frac{\hbar}{\sqrt{2mg\rho_0}}=\frac{\hbar}{\sqrt{2}\,m\,c_{\mathrm{s}}} .
+\xi=\frac{h}{2\pi \sqrt{2mg\rho_0}}=\frac{h}{2\pi \sqrt{2}\,m\,c_{\mathrm{s}}} .
 $$
 
 The healing length is the distance over which the density recovers from a boundary value, and the two scales are one: their ratio is the only dimensionless combination the uniform state has.
@@ -71,16 +71,16 @@ The radius is where the density vanishes, and the profile is an inverted parabol
 With $g=-g_{\mathrm{att}}<0$ the equation admits
 
 $$
-\psi=\sqrt{\frac{2\mu_{\mathrm{chm}}}{g_{\mathrm{att}}}}\;\mathrm{sech}\!\left(\frac{\sqrt{2m\mu_{\mathrm{chm}}}}{\hbar}\,x\right)e^{i\mu_{\mathrm{chm}}t'/\hbar},
+\psi=\sqrt{\frac{2\mu_{\mathrm{chm}}}{g_{\mathrm{att}}}}\;\mathrm{sech}\!\left(\frac{2\pi \sqrt{2m\mu_{\mathrm{chm}}}}{h}\,x\right)e^{i\mu_{\mathrm{chm}}\frac{2\pi t'}{h}},
 $$
 
-which is checked by substitution: the three terms cancel identically for every $\mu_{\mathrm{chm}}>0$. The phase advances as $+\mu_{\mathrm{chm}}t'/\hbar$, so the state's energy is $-\mu_{\mathrm{chm}}$ and the soliton is bound. Its amplitude and its width are both fixed by $\mu_{\mathrm{chm}}$, so the pulse has one parameter and not two.
+which is checked by substitution: the three terms cancel identically for every $\mu_{\mathrm{chm}}>0$. The phase advances as $+\mu_{\mathrm{chm}}\frac{2\pi t'}{h}$, so the state's energy is $-\mu_{\mathrm{chm}}$ and the soliton is bound. Its amplitude and its width are both fixed by $\mu_{\mathrm{chm}}$, so the pulse has one parameter and not two.
 
 The soliton is the fluid at its most nonlinear and its most rigid. Its density is a sech squared, its velocity is zero, and its shape is preserved because the dispersion of the kinetic term and the steepening of the interaction cancel exactly. That is the same balance as the Korteweg–de Vries soliton, in a different equation, and it is the reason the two are often mentioned together.
 
 ## The Linear Limit
 
-With $g=0$ the Gross–Pitaevskii equation is $i\hbar\partial_{t'}\psi=-\frac{\hbar^{2}}{2m}\Delta_\Phi\psi$, the free equation of the trilogy. In the fluid's variables the pressure vanishes, so the limit is the pressureless member of the reverse map's family, and its only force is the quantum potential.
+With $g=0$ the Gross–Pitaevskii equation is $i \frac{h}{2\pi}\partial_{t'}\psi=-\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi\psi$, the free equation of the trilogy. In the fluid's variables the pressure vanishes, so the limit is the pressureless member of the reverse map's family, and its only force is the quantum potential.
 
 **So the linear equation is the non-interacting limit and not the fundamental law.** The order parameter is the same object in both cases; what changes is whether the interaction is present. A condensate with $g=0$ is a gas of non-interacting bosons, which is the case in which the condensate is a single-particle state and the fluid has nothing to carry but the quantum potential.
 
@@ -88,7 +88,7 @@ In the one condensed-matter system where a Schrödinger-like equation is fundame
 
 ## The Direction
 
-**The order parameter is written first, and the fluid is read from it.** The theory's variable is $\psi$; the density and the velocity are defined from it by the polar decomposition; the pressure is not an independent datum but the interaction written in fluid variables. A reader who wanted to start from the fluid would have to invent $\hbar$, $m$ and $g$, and the three together are the theory.
+**The order parameter is written first, and the fluid is read from it.** The theory's variable is $\psi$; the density and the velocity are defined from it by the polar decomposition; the pressure is not an independent datum but the interaction written in fluid variables. A reader who wanted to start from the fluid would have to invent $\frac{h}{2\pi}$, $m$ and $g$, and the three together are the theory.
 
 The condensate fraction, the healing length around a defect, the Thomas–Fermi radius and the soliton's width are all measured, and each is a measurement of the order parameter's parameters. None of them is a measurement of a pressure in a fluid that was known beforehand.
 
@@ -100,11 +100,11 @@ Superfluid helium is described by a normal component and a superfluid component,
 
 Both write a complex function as a modulus times a phase, both read the phase's gradient as a velocity, and both find the circulation quantised when the phase winds. That sharing is why the vocabulary transfers, and it is not evidence that the objects are the same.
 
-A condensate's healing length is a physical length set by $g$ and $\rho_0$; the block's field has no healing length, because it has no interaction and no density to heal to. So the two descriptions agree in the formulas that use only $\hbar$ and $m$ and diverge in the formulas that use $g$.
+A condensate's healing length is a physical length set by $g$ and $\rho_0$; the block's field has no healing length, because it has no interaction and no density to heal to. So the two descriptions agree in the formulas that use only $\frac{h}{2\pi}$ and $m$ and diverge in the formulas that use $g$.
 
 ## What Is Established and What Is Interpretation
 
-Established. That the Gross–Pitaevskii equation's Madelung pair is the reverse map's pair with $p_{\mathrm{th}}=\frac12g\rho_{\mathrm{num}}^{2}$, by comparison of the two. That the uniform state, the sound speed, the healing length, the Thomas–Fermi profile and the bright soliton are exact solutions of the stated equations, each checked by substitution. That $g=4\pi\hbar^{2}a_{\mathrm{sc}}/m$ for a dilute gas. That the linear Schrödinger equation is the $g=0$ limit.
+Established. That the Gross–Pitaevskii equation's Madelung pair is the reverse map's pair with $p_{\mathrm{th}}=\frac12g\rho_{\mathrm{num}}^{2}$, by comparison of the two. That the uniform state, the sound speed, the healing length, the Thomas–Fermi profile and the bright soliton are exact solutions of the stated equations, each checked by substitution. That $g=4\pi \frac{h^{2}}{4\pi^{2}}a_{\mathrm{sc}}/m$ for a dilute gas. That the linear Schrödinger equation is the $g=0$ limit.
 
 Interpretation. That the direction of explanation is the order parameter to the fluid, and that this is the section's thesis in a physical case. That the agreement of the quantum of circulation with the field's is an agreement of formulas and not of objects is the block's reading, and the healing-length test is what makes it more than a preference.
 
@@ -114,9 +114,9 @@ Not claimed. It is not claimed that every superfluid is a dilute Bose gas; heliu
 
 A dilute Bose gas at zero temperature has one order parameter, and its modulus squared is the density and its phase's gradient over the mass is the velocity.
 
-The order parameter obeys the Gross–Pitaevskii equation, and its Madelung pair is the reverse map's pair with the quadratic pressure $p_{\mathrm{th}}=\frac12g\rho_{\mathrm{num}}^{2}$. The contact coupling $g=4\pi\hbar^{2}a_{\mathrm{sc}}/m$ is measured by two-body scattering.
+The order parameter obeys the Gross–Pitaevskii equation, and its Madelung pair is the reverse map's pair with the quadratic pressure $p_{\mathrm{th}}=\frac12g\rho_{\mathrm{num}}^{2}$. The contact coupling $g=4\pi \frac{h^{2}}{4\pi^{2}}a_{\mathrm{sc}}/m$ is measured by two-body scattering.
 
-The uniform state fixes the chemical potential $\mu_{\mathrm{chm}}=g\rho_0$, the sound speed $c_{\mathrm{s}}=\sqrt{g\rho_0/m}$ and the healing length $\xi=\hbar/(\sqrt2mc_{\mathrm{s}})$. A trapped condensate has the Thomas–Fermi profile and radius. An attractive condensate has a bright soliton whose amplitude and width are both fixed by $\mu_{\mathrm{chm}}$.
+The uniform state fixes the chemical potential $\mu_{\mathrm{chm}}=g\rho_0$, the sound speed $c_{\mathrm{s}}=\sqrt{g\rho_0/m}$ and the healing length $\xi=\frac{h}{2\pi \sqrt2mc_{\mathrm{s}}}$. A trapped condensate has the Thomas–Fermi profile and radius. An attractive condensate has a bright soliton whose amplitude and width are both fixed by $\mu_{\mathrm{chm}}$.
 
 The linear Schrödinger equation is the $g=0$ limit, and the fluid's pressure vanishes in the same limit. So in the one case where a Schrödinger-like equation is fundamental the equation is the nonlinear one.
 
@@ -128,16 +128,16 @@ The block's denial stands: the sharing is of formulas, not of objects, and the h
 
 | Symbol | Meaning |
 |---|---|
-| $\psi=\sqrt{\rho_{\mathrm{num}}}e^{iS/\hbar}$ | Order parameter |
+| $\psi=\sqrt{\rho_{\mathrm{num}}}e^{\frac{2\pi iS}{h}}$ | Order parameter |
 | $\rho_{\mathrm{num}},\ \rho_0$ | Number density and its uniform value |
-| $S$ | Action; the phase is $S/\hbar$ |
+| $S$ | Action; the phase is $\frac{2\pi S}{h}$ |
 | $\vec v=\vec\nabla_\Phi S/m$ | Condensate velocity |
-| $g$ | Contact coupling; $g=4\pi\hbar^{2}a_{\mathrm{sc}}/m$ |
+| $g$ | Contact coupling; $g=4\pi \frac{h^{2}}{4\pi^{2}}a_{\mathrm{sc}}/m$ |
 | $a_{\mathrm{sc}}$ | s-wave scattering length |
 | $\mu_{\mathrm{chm}}$ | Chemical potential |
 | $p_{\mathrm{th}}=\frac12g\rho_{\mathrm{num}}^{2}$ | Pressure of the condensate |
 | $c_{\mathrm{s}}=\sqrt{g\rho_0/m}$ | Sound speed |
-| $\xi=\hbar/\sqrt{2mg\rho_0}$ | Healing length |
+| $\xi=\frac{h}{2\pi \sqrt{2mg\rho_0}}$ | Healing length |
 | $V_{\mathrm{tr}}=\frac12m\omega_{\mathrm{tr}}^{2}r^{2}$ | Harmonic trap |
 | $\omega_{\mathrm{tr}}$ | Trap frequency |
 | $R_{\mathrm{TF}}=\sqrt{2\mu_{\mathrm{chm}}/(m\omega_{\mathrm{tr}}^{2})}$ | Thomas–Fermi radius |

@@ -63,7 +63,7 @@ The free field obeys the linear chiral pair
 $$\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
 \qquad
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},$$
-in which the gradient acts by left multiplication on the field and the mass relates the two parts. This is the **one-sided** writing. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+in which the gradient acts by left multiplication on the field and the mass relates the two parts. This is the **one-sided** writing. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 The **two-sided** writing is the action
 $$\tilde Q\longmapsto \sum_\mu e_\mu\frac{\partial\tilde Q}{\partial x_\mu}\vec e_{\nu(\mu)},$$

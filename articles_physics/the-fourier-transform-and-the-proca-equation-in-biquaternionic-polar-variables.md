@@ -83,7 +83,7 @@ What replaces the phase is the frame, and the symbol carries it in its vector pa
 | Proca | $\sigma_{\mu\nu}$ | even | $\lvert\sigma(-K)-\sigma(K)\rvert=0.00\times10^{0}$ |
 | Klein–Gordon | $k^{2}-k_m^{2}$ | even | $\lvert\sigma(-K)-\sigma(K)\rvert=0.00\times10^{0}$ |
 | Dirac | $i\tilde K_\Phi-k_m$ | odd | $\lvert\sigma(-K)+\sigma(K)\rvert=2k_m=1.400000$ |
-| Schrödinger | $-\hbar\omega-h_t$ | neither | $\lvert\sigma(-\omega)+\sigma(\omega)\rvert=2h_t=1.000000$ |
+| Schrödinger | $-h\nu-h_t$ | neither | $\lvert\sigma(-\omega)+\sigma(\omega)\rvert=2h_t=1.000000$ |
 
 The measure of an odd part is $\lvert\sigma(-K)-\sigma(K)\rvert$, which for the Dirac symbol is $2k_m$ and for the Schrödinger symbol $2h_t$: hence $1.400000$ and $1.000000$ at $k_m=0.7$ and $h_t=0.5$. So the table's second and third rows differ from the first two by a factor and not by a principle: an odd symbol's reflection doubles its constant term, and an even symbol's reflection cancels its whole value.
 
@@ -196,7 +196,7 @@ What the transform does with the piecewiseness is relocate it. A Fourier mode is
 | --- | --- |
 | $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | The four-wave number; $k_t'=\omega/c$ |
 | $k^{2}=k_t'^{2}-\vec k_\Phi^{2}$ | The interval in wave numbers |
-| $k_m=mc/\hbar$ | The mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
 | $\tilde A_\Phi=\varepsilon i \varrho\tilde U$, $\varrho\tilde U\hat u$ | The word on the timelike and spacelike branches |
 | $\varrho,\ \varepsilon,\ \theta_{\mathrm{rpd}},\ \hat u_{\mathrm b},\ \hat u$ | Scale, branch label, rapidity, boost axis, spacelike direction |
 | $\langle A\rangle_\natural=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ | The invariant; an indefinite quadratic form on the amplitudes |

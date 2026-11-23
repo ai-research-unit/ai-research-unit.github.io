@@ -9,7 +9,7 @@ $$
 \qquad
 \Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\frac{\partial^{2}}{\partial r'^{2}_{t}},
 \qquad
-k_m=\frac{mc}{\hbar},
+k_m=\frac{2\pi mc}{h},
 $$
 
 with $\tilde\Xi=\Xi_t e_t+\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z$ one element of $\mathbb{B}$ and four complex coefficients. The operator is central with real coefficients, so the one biquaternion equation is the four complex equations $\left(\Box_\Phi-k_m^{2}\right)\Xi_\mu=0$, one per coefficient. The present article asks which action has this equation as its Euler–Lagrange equation, and what the symmetries of that action give.
@@ -112,7 +112,7 @@ The parent distinguishes two objects and this article inherits the distinction i
 
 **The varying coefficient.** With $\tilde M=\tilde M(x)$ Hermitian and not constant, the equation keeps its form and loses its modes. There is no closed-form propagator, the Green's functions are those of *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*, and the variational principle is unchanged: the same functional, with $\tilde M$ in place of $k_m^{2}e_t$, has the same Euler–Lagrange equation and the same Noether construction, and the currents are conserved with the same identity. What is lost is not the variational principle but the solubility.
 
-**What does not transfer.** Two statements of the Schrödinger pair have no counterpart here and are not imported. There is no setting in which the equation is an ordinary differential equation, because the Laplacian is in the operator in every case. And there is no exponential $\exp(-\tfrac{i}{\hbar}\tilde H t')$ whose powers solve the equation, because the second-order equation needs two data per mode; the block of §*Aside: The Conjugate Pair* is what replaces it, and it exists for the constant coefficient only.
+**What does not transfer.** Two statements of the Schrödinger pair have no counterpart here and are not imported. There is no setting in which the equation is an ordinary differential equation, because the Laplacian is in the operator in every case. And there is no exponential $\exp(-\frac{2\pi i}{h}\tilde H t')$ whose powers solve the equation, because the second-order equation needs two data per mode; the block of §*Aside: The Conjugate Pair* is what replaces it, and it exists for the constant coefficient only.
 
 ## The Variation
 
@@ -307,7 +307,7 @@ The second-order structure appears in the variational principle as the conjugate
 | $r'_t=c\,t'$ | Material time, a length |
 | $\tilde\Xi=\sum_\mu\Xi_\mu e_\mu$ | The Klein–Gordon field, four complex coefficients |
 | $\Xi_\mu$ | Coefficient of $e_\mu$; the four are independent in the free theory |
-| $k_m=mc/\hbar$ | Mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $\tilde M\in\mathbb{B}_{\Psi}$ | Hermitian potential coefficient; $k_m^{2}e_t$ when free |
 | $S,\ \mathcal{L}$ | Action and Lagrangian density |
 | $\Pi_\Xi=(\partial_{r'_t}\tilde\Xi)^{*}$ | Conjugate momentum, the second element of the pair |

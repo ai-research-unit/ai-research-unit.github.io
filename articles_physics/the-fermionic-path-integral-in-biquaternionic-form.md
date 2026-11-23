@@ -4,9 +4,9 @@
 
 The companion article *The Path Integral in Biquaternionic Form* settles what the biquaternion algebra can and cannot contribute to a path integral: the phase factor $\exp(i\theta_{\mathrm{act}})$ is a *central* $*$-unitary element, because the central scalar imaginary is the algebra's unique complex structure up to sign; the exponent lies along the $i r'_t$ direction of the material sector $\mathbb{B}_{\Phi}$; and the measure, the action and the space of paths are not supplied by the algebra, because $\mathbb{B}$ is finite-dimensional and the space of histories is not. The companion article *The Feynman Propagator in Biquaternionic Form* adds where the $i\epsilon$ lives and that the algebra names its axis without choosing its orientation. The companion article *Interpretation of the Wick Rotation in the Biquaternion Universe* adds that $r'_t\to-i\tau$ is the relabeling of the imaginary-time coefficient as a real one, turning the material sector into the quaternion subspace.
 
-Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
+Throughout this article $\theta_{\mathrm{act}}:=\frac{2\pi \mathrm{Re}\,S}{h}$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\frac{2\pi \mathrm{Im}\,S}{h}$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
-**Units.** Throughout, a four-momentum is $(p_0,\vec p)$ with $p_0=E/c$, the mass shell is $E^2=\vec p^{\,2}c^2+m^{2}\,c^{4}$, and every mass enters through the mass wave number $k_m=mc/\hbar$.
+**Units.** Throughout, a four-momentum is $(p_0,\vec p)$ with $p_0=E/c$, the mass shell is $E^2=\vec p^{\,2}c^2+m^{2}\,c^{4}$, and every mass enters through the mass wave number $k_m=\frac{2\pi mc}{h}$.
 
 This article applies those findings to the spin-$\tfrac12$ field, where the histories are **anticommuting**. The fermionic path integral differs from the bosonic one in exactly one structural place — the integration variables are odd, so the integral is Berezin's rather than Lebesgue's — and that one difference propagates into every formula. The article establishes:
 
@@ -58,7 +58,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R},
 $$
 
-two equations because the field has two parts. The subscript has two values, and only the zero element is both: $\tilde{Ξ}_{L}$ is the element of value minus one and $\tilde{Ξ}_{R}$ the element of value plus one. The field is their sum, $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$. Both gradients act from the left, and the mass pairs the two parts. The Lagrangian above is the same dynamics, written once, not a second one. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+two equations because the field has two parts. The subscript has two values, and only the zero element is both: $\tilde{Ξ}_{L}$ is the element of value minus one and $\tilde{Ξ}_{R}$ the element of value plus one. The field is their sum, $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$. Both gradients act from the left, and the mass pairs the two parts. The Lagrangian above is the same dynamics, written once, not a second one. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 **Its elimination.** The two equations are one system, and either part can be eliminated. The gradients compose to the d'Alembertian, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$, so applying $(\tilde\nabla_\Phi)^{\natural}$ to the first and using the second gives
 
@@ -103,15 +103,15 @@ one gradient per part, and each line composed with the conjugate of the other is
 **The symbol.** On the plane wave $\tilde{Ξ}=\tilde{Ξ}_{0}\exp(-iEr'_t+i\vec p\cdot\vec r)$ the gradient acts as left multiplication by the momentum element
 
 $$
-i\hbar\tilde K_{\Phi}=i\tilde P_{\Phi}=-\frac{E}{c}\,e_t+i\vec p ,
+i \frac{h}{2\pi}\tilde K_{\Phi}=i\tilde P_{\Phi}=-\frac{E}{c}\,e_t+i\vec p ,
 \qquad
--\hbar^{2}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=\frac{E^2}{c^2}-|\vec p|^{2}=-N ,
+-\frac{h^{2}}{4\pi^{2}}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=\frac{E^2}{c^2}-|\vec p|^{2}=-N ,
 $$
 
 with $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$ the wave biquaternion. The derivatives bring $-E$ from the time coordinate, through $\partial/\partial R_t=-i\partial/\partial r'_t$ followed by $\partial/\partial r'_t\to-iE$, and $+ip_\eta$ from each spatial one. The two lines on a plane wave are therefore
 
 $$
-\big(w_L,w_R\big)\longmapsto\big(i\hbar\tilde K_{\Phi}\,w_R,\ -i\hbar\tilde K_{\Phi}^{\natural}w_L\big),
+\big(w_L,w_R\big)\longmapsto\big(i \frac{h}{2\pi}\tilde K_{\Phi}\,w_R,\ -i \frac{h}{2\pi}\tilde K_{\Phi}^{\natural}w_L\big),
 $$
 
 and the composition of the two returns $-N$ times the identity: each component is left multiplication by an element whose product with its conjugate is the scalar $-N$, and the two orders of the pair agree. The square of the element is not the scalar, $-\tilde K_{\Phi}^{2}=E^2+|\vec p|^{2}-2E\,i\vec p$: its scalar part is $E^2+|\vec p|^{2}$ rather than $-N$, and its vector part does not cancel. Only the composition with the conjugate returns $-N$.
@@ -221,7 +221,7 @@ to machine precision (ratio $1+0i$), and the four two-point amplitudes divided b
 
 ### The Biquaternion Form of the Kernel
 
-Write the wave biquaternion $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$, so that $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$. The symbol of the pair on the plane wave $\exp\!\big(-i(E/(\hbar c))r'_t+i(\vec p/\hbar)\cdot\vec r\big)$ is the left multiplication by $i\tilde K_{\Phi}=i\tilde P_{\Phi}$ of §*The Two Lines on the Algebra*, with $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-N$, so the two lines composed give $-N$ times the identity, and the kernel of the pair at momentum $p$ is the companion lines divided by $-(N+m^{2}c^{2})$, which is the standard $(\text{line}+mc)/\bigl(-(N+m^{2}c^{2})\bigr)$. The Gaussian weight of the finite-mode section carries the mass-shifted pair with the minus sign $-i$, so the free two-point amplitude is the action
+Write the wave biquaternion $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$, so that $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$. The symbol of the pair on the plane wave $\exp\!\big(-i(\frac{2\pi E}{h\,c})r'_t+i(\frac{2\pi \vec p}{h})\cdot\vec r\big)$ is the left multiplication by $i\tilde K_{\Phi}=i\tilde P_{\Phi}$ of §*The Two Lines on the Algebra*, with $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-N$, so the two lines composed give $-N$ times the identity, and the kernel of the pair at momentum $p$ is the companion lines divided by $-(N+m^{2}c^{2})$, which is the standard $(\text{line}+mc)/\bigl(-(N+m^{2}c^{2})\bigr)$. The Gaussian weight of the finite-mode section carries the mass-shifted pair with the minus sign $-i$, so the free two-point amplitude is the action
 
 $$
 S_F(p)=-\frac{i\big(\tilde P_{\Phi}\,w_R+imc\,w_L,\ \tilde P_{\Phi}^{\natural}w_L+imc\,w_R\big)}{N+m^{2}\,c^{2}-i\epsilon}.
@@ -239,7 +239,7 @@ The determinant is therefore that of the operator whose inverse is $S_F$ up to t
 
 $$
 \det\big(\Box_\Phi-k_m^{2}\big)=\big(N+m^{2}\,c^{2}\big)^4
-=\exp\Big[4\!\int\frac{d^4p}{(2\pi\hbar)^4}\,\ln\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon\big)\Big],
+=\exp\Big[4\!\int\frac{d^4p}{h^{4}}\,\ln\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon\big)\Big],
 $$
 
 formally, up to a field-independent constant and with the standard subtractions understood; the fourth power is a count of the four pairs of opposite eigenvalues, not of any decomposition of the field. The generalities companion's finding is inherited: the algebra names the axis of the deformation, the boundary condition chooses its orientation, and the determinant does not distinguish them.
@@ -282,7 +282,7 @@ $$
 
 with $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ the corpus gradient and its conjugate read at $r'_t=-i\tau$: the substitution moves the coordinate $Q_t=i q'_t$ to $Q_t=c\tau$ and renames no operator, so the gradient is the one of §*The Two Lines on the Algebra* and the integral is the same density written on the real slice. The kinetic operator is anti-Hermitian and the mass term Hermitian, and the plus sign on the mass is the one that makes the kernel of the Gaussian the pair at $+k_m$. The Euclidean determinant is therefore real, and positive for real $m$; a continuous phase appears only when a non-Hermitian deformation is added.
 
-**Antiperiodic boundary conditions.** The Euclidean fermionic integral that computes a thermal trace is taken over fields on a circle of circumference $\beta=\frac{\hbar}{k_{B}\,T}$ in $\tau$ with the fermions antiperiodic,
+**Antiperiodic boundary conditions.** The Euclidean fermionic integral that computes a thermal trace is taken over fields on a circle of circumference $\beta=\frac{h}{2\pi k_{B}\,T}$ in $\tau$ with the fermions antiperiodic,
 
 $$
 \tilde{Ξ}(\tau+\beta)=-\tilde{Ξ}(\tau) ,
@@ -379,8 +379,8 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $\langle\tilde{Ξ}_{a}\tilde{Ξ}_{b}^{\dagger}\rangle=(M^{-1})_{ab}$ | Two-point function (inverse kernel, stated index order); the adjoint's right multiplication cancels from the ratio |
 | $Z[\eta,\bar\eta]=\det M\,\exp[-\bar\eta M^{-1}\eta]$ | Free generating functional in the Minkowski weight; the Euclidean one carries $+\bar\eta M^{-1}\eta$ |
 | $Z_0[\eta,\bar\eta]=\det(\Box_\Phi-k_m^{2})\exp[-\int\bar\eta S_F\eta]$ | Field-level free functional |
-| $i\hbar\tilde K_{\Phi}=i\tilde P_{\Phi}=-\frac{E}{c}\,e_t+i\vec p$, $-\hbar^{2}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-N$ | Symbol of the gradient on a plane wave |
-| $(w_L,w_R)\mapsto(i\hbar\tilde K_{\Phi}\,w_R,-i\hbar\tilde K_{\Phi}^{\natural}w_L)$ | The two lines on a plane wave; their composition is $-N$ times the identity, with $N=-\frac{E^{2}}{c^{2}}+|\vec p|^{2}$ |
+| $i \frac{h}{2\pi}\tilde K_{\Phi}=i\tilde P_{\Phi}=-\frac{E}{c}\,e_t+i\vec p$, $-\frac{h^{2}}{4\pi^{2}}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-N$ | Symbol of the gradient on a plane wave |
+| $(w_L,w_R)\mapsto(i \frac{h}{2\pi}\tilde K_{\Phi}\,w_R,-i \frac{h}{2\pi}\tilde K_{\Phi}^{\natural}w_L)$ | The two lines on a plane wave; their composition is $-N$ times the identity, with $N=-\frac{E^{2}}{c^{2}}+|\vec p|^{2}$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The pair, as two first-order lines on a pair of elements of $\mathbb{B}$, with the material gradient on each; each line composed with its partner is $\Box_\Phi$, and the same pair read at $r'_t=-i\tau$ is the same two lines |
 | $S_F(p):\ (w_L,w_R)\mapsto\frac{(\tilde P_{\Phi}\,w_R-imc\,w_L,\ \tilde P_{\Phi}^{\natural}w_L-imc\,w_R)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon}$ | Kernel; the two imaginary units of the numerator multiply to $-1$ |
 | $\det(\Box_\Phi-k_m^{2})=(N+m^{2}\,c^{2})^4$ | Determinant; the four opposite eigenvalue pairs of the two lines give the fourth power of the scalar mode factor |

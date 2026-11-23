@@ -92,7 +92,7 @@ in which both operators act by left multiplication: the first by $\tilde\nabla_\
 $$
 \mathsf C\,L(a^{\natural})\,\mathsf C=R(a),
 $$
-so the conjugate member of the pair is the same operator read on the other side. Nothing else is used: no carrier, no splitting of a carrier, no projector, no idempotent, no ideal. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+so the conjugate member of the pair is the same operator read on the other side. Nothing else is used: no carrier, no splitting of a carrier, no projector, no idempotent, no ideal. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 **The two letters of the pair are not the two values of the basis operator.** They are written alike, and they are different objects, so the difference comes before anything about the mass. The pair is two equations for two elements, and the mass is the number that relates them: each element is the gradient of the other divided by $k_m$, which at $k_m\neq0$ is a change of variable. The two values of the basis operator are a second partition of the same algebra, cut by an operator the pair never uses. A reader who takes the letters of the pair for the values of the basis operator finds that the pair has only the zero solution, and the reason is one line: both members of every line are left multiplications, a left multiplication keeps the value, so each line would equate a field of one value with a field of the other.
 
@@ -207,7 +207,7 @@ The limit is stated once and it is not small: the two values of the basis operat
 | $-iR_u$ | the basis operator that realises the split, a pure right multiplier: an example of the right slot and not the definition |
 | $\tfrac12(\mathrm I\pm iR_u)$ | the two chiral projectors, derived from the sign |
 | $P_\pm=\tfrac12(\mathrm I\mp iR_u)$ | the projectors onto the two values |
-| $m$, $k_m=mc/\hbar$ | the mass and its wave number; in the pair the coefficient is central and keeps the value |
+| $m$, $k_m=\frac{2\pi mc}{h}$ | the mass and its wave number; in the pair the coefficient is central and keeps the value |
 | $v$, $uv+vu=0$ | the carrier of the mass as an operator: a right multiplier that exchanges the two values |
 
 ## Further Reading

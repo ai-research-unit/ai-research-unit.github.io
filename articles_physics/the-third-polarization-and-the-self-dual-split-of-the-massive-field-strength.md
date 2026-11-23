@@ -21,7 +21,7 @@ for the helicity state carried by $\vec E$, and the same two numbers with the ro
 
 **What this article does not claim.** It does not claim that the split fails, or that the massive field needs a different carrier. The split is a decomposition of the complexified field strength, it is exact for every field, and it is the correct home of the integer-spin representations. What the article claims is narrower and sharper: the split resolves the two circular polarizations and does not resolve the third, so the three states are **not** a $2+1$ split of the two chiral halves. The third state lives in the direction the split leaves out, and any programme that treats self-duality as a condition on a massive field is imposing the vanishing of a combination that is not there.
 
-The conventions are those of the two companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; the field strength is $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H\in\mathbb{B}_V$ with $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$; the Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$; the Hodge dual is $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$ with $\star^2=-1$ and $\star\tilde F=-i\tilde F$; the projectors are $\tilde\Pi_{\mathrm{id},sd,asd}=\tfrac12(1\pm i\star)$; and the mass is $k_m=mc/\hbar$ with the dispersion relation $\omega^2=c^2\lvert\vec k_\Phi\rvert^{2}+c^2k_m^2$. Where the wavevector's magnitude is written $k_\Phi$, it means $\lvert\vec k_\Phi\rvert$.
+The conventions are those of the two companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; the field strength is $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H\in\mathbb{B}_V$ with $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$; the Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$; the Hodge dual is $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$ with $\star^2=-1$ and $\star\tilde F=-i\tilde F$; the projectors are $\tilde\Pi_{\mathrm{id},sd,asd}=\tfrac12(1\pm i\star)$; and the mass is $k_m=\frac{2\pi mc}{h}$ with the dispersion relation $\omega^2=c^2\lvert\vec k_\Phi\rvert^{2}+c^2k_m^2$. Where the wavevector's magnitude is written $k_\Phi$, it means $\lvert\vec k_\Phi\rvert$.
 
 ## The Three States at a Wavevector
 
@@ -203,7 +203,7 @@ The origin of the count is the difference of carriers. The potential is a four-v
 | $\varepsilon_{\mathrm{fop},\pm}$ | Circular polarization vectors, $\hat k_\Phi\times\varepsilon_\pm=\mp i\varepsilon_\pm$ |
 | $A_+,A_-,A_L$ | Amplitudes of the two circular and the longitudinal states |
 | $I_1=\vec E^2-c^2\vec B^2$, $I_2=\vec E\cdot\vec B$ | The two field invariants |
-| $k_m=mc/\hbar$ | Mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $\omega^2=c^2k_\Phi^{2}+c^2k_m^2$ | Dispersion relation; $k_\Phi=\lvert\vec k_\Phi\rvert$ |
 | $\beta=ck_\Phi/\omega$ | Frame speed of the mode; $\gamma=(1-\beta^2)^{-1/2}$ |
 | $\rho=(1-\beta)/(1+\beta)$ | Ratio of the two chiral weights, the impurity measure |

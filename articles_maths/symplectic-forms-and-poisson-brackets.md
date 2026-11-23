@@ -297,31 +297,31 @@ The Poisson bracket is the first-order term of a noncommutative associative prod
 
 ### The Star Product
 
-Let $A = K[x_1, \ldots, x_n, y_1, \ldots, y_n]$ and let $(\omega^{-1})_{ij}$ be the entries of the constant matrix inverse to the symplectic form. On the algebra $A[[\hbar]]$ of formal power series in a central parameter $\hbar$, define the **star product**
+Let $A = K[x_1, \ldots, x_n, y_1, \ldots, y_n]$ and let $(\omega^{-1})_{ij}$ be the entries of the constant matrix inverse to the symplectic form. On the algebra $A[[h_{\mathrm{def}}]]$ of formal power series in a central parameter $h_{\mathrm{def}}$, define the **star product**
 
 $$
-f * g = \sum_{r \geq 0} \frac{(-\hbar)^r}{r!} \sum_{i_1, j_1, \ldots, i_r, j_r} (\omega^{-1})_{i_1 j_1} \cdots (\omega^{-1})_{i_r j_r}\, \partial/\partial x_{i_1} \cdots \partial/\partial x_{i_r} f\; \partial/\partial x_{j_1} \cdots \partial/\partial x_{j_r} g.
+f * g = \sum_{r \geq 0} \frac{(-h_{\mathrm{def}})^r}{r!} \sum_{i_1, j_1, \ldots, i_r, j_r} (\omega^{-1})_{i_1 j_1} \cdots (\omega^{-1})_{i_r j_r}\, \partial/\partial x_{i_1} \cdots \partial/\partial x_{i_r} f\; \partial/\partial x_{j_1} \cdots \partial/\partial x_{j_r} g.
 $$
 
-The sum is finite on polynomials, because the higher partial derivations vanish, so the series is well defined on $A$ and extends to $A[[\hbar]]$.
+The sum is finite on polynomials, because the higher partial derivations vanish, so the series is well defined on $A$ and extends to $A[[h_{\mathrm{def}}]]$.
 
-**Theorem (Weyl–Moyal).** The star product is an associative $K[[\hbar]]$-bilinear product on $A[[\hbar]]$, with unit the constant function $1$, and it is a deformation of the commutative product:
-
-$$
-f * g = fg + \hbar\, \{f, g\} + O(\hbar^2).
-$$
-
-Only the odd powers of $\hbar$ survive in the commutator, and
+**Theorem (Weyl–Moyal).** The star product is an associative $K[[h_{\mathrm{def}}]]$-bilinear product on $A[[h_{\mathrm{def}}]]$, with unit the constant function $1$, and it is a deformation of the commutative product:
 
 $$
-f * g - g * f = 2\hbar\, \{f, g\} + O(\hbar^3),
+f * g = fg + h_{\mathrm{def}}\, \{f, g\} + O(h_{\mathrm{def}}^2).
 $$
 
-so the Poisson bracket is the leading term of the commutator of the deformed product, up to the normalisation factor $2\hbar$.
+Only the odd powers of $h_{\mathrm{def}}$ survive in the commutator, and
 
-**Proof.** The $r = 0$ term of the definition is $fg$ and the $r = 1$ term is $-\sum_{ij}(\omega^{-1})_{ij}\partial/\partial x_i f \partial/\partial x_j g = \sum_{ij}(\omega^{-1})_{ij}\partial/\partial x_j f \partial/\partial x_i g = \{f,g\}$, which gives the first display. The $r$-th term of $g*f$ is obtained from that of $f*g$ by exchanging $f$ and $g$ and relabelling the summation indices; for even $r$ this term is symmetric in $f, g$ and for odd $r$ it is antisymmetric, so the commutator retains only the odd powers, and its $r = 1$ term is $2\hbar\{f,g\}$. Associativity is the classical theorem of Weyl and Moyal, and is most cleanly seen by transporting the product along the Weyl map: there is a linear isomorphism from $A[[\hbar]]$ onto a space of operators under which the star product becomes operator composition, and composition is associative.
+$$
+f * g - g * f = 2h_{\mathrm{def}}\, \{f, g\} + O(h_{\mathrm{def}}^3),
+$$
 
-**Remark.** The theorem identifies the Poisson algebra $(A, \cdot, \{\cdot, \cdot\})$ as the classical shadow of a family of noncommutative associative algebras $A_\hbar = (A[[\hbar]], *)$. The bracket is exactly the commutator of the deformation, divided by $\hbar$ and taken to leading order, so the Lie algebra structure on the functions is not an isolated algebraic accident but the shadow at order $\hbar$ of an associative product. For a general Poisson space the existence of a star product with the analogous property is Kontsevich's deformation-quantisation theorem; the constant-coefficient case above is the classical Weyl–Moyal product, and it is entirely algebraic.
+so the Poisson bracket is the leading term of the commutator of the deformed product, up to the normalisation factor $2h_{\mathrm{def}}$.
+
+**Proof.** The $r = 0$ term of the definition is $fg$ and the $r = 1$ term is $-\sum_{ij}(\omega^{-1})_{ij}\partial/\partial x_i f \partial/\partial x_j g = \sum_{ij}(\omega^{-1})_{ij}\partial/\partial x_j f \partial/\partial x_i g = \{f,g\}$, which gives the first display. The $r$-th term of $g*f$ is obtained from that of $f*g$ by exchanging $f$ and $g$ and relabelling the summation indices; for even $r$ this term is symmetric in $f, g$ and for odd $r$ it is antisymmetric, so the commutator retains only the odd powers, and its $r = 1$ term is $2h_{\mathrm{def}}\{f,g\}$. Associativity is the classical theorem of Weyl and Moyal, and is most cleanly seen by transporting the product along the Weyl map: there is a linear isomorphism from $A[[h_{\mathrm{def}}]]$ onto a space of operators under which the star product becomes operator composition, and composition is associative.
+
+**Remark.** The theorem identifies the Poisson algebra $(A, \cdot, \{\cdot, \cdot\})$ as the classical shadow of a family of noncommutative associative algebras $A_{h_{\mathrm{def}}} = (A[[h_{\mathrm{def}}]], *)$. The bracket is exactly the commutator of the deformation, divided by $h_{\mathrm{def}}$ and taken to leading order, so the Lie algebra structure on the functions is not an isolated algebraic accident but the shadow at order $h_{\mathrm{def}}$ of an associative product. For a general Poisson space the existence of a star product with the analogous property is Kontsevich's deformation-quantisation theorem; the constant-coefficient case above is the classical Weyl–Moyal product, and it is entirely algebraic.
 
 ## Summary
 
@@ -358,7 +358,7 @@ On the commutative algebra of functions on a symplectic space, the Poisson brack
 | $\operatorname{Ham}(V)$ | Lie algebra of Hamiltonian vector fields |
 | $\operatorname{Der}(A)$ | Lie algebra of derivations of $A$; $\operatorname{Ham}(V) \subseteq \operatorname{Der}(A)$ |
 | $\mathcal{E} = (e_1, \ldots, e_m)$ | Ordered basis of $V$; matrices of forms are taken in it |
-| $f * g$ | Star product; associative deformation with $f*g = fg + \hbar\{f,g\} + O(\hbar^2)$ and $f*g - g*f = 2\hbar\{f,g\} + O(\hbar^3)$ |
+| $f * g$ | Star product; associative deformation with $f*g = fg + h_{\mathrm{def}}\{f,g\} + O(h_{\mathrm{def}}^2)$ and $f*g - g*f = 2h_{\mathrm{def}}\{f,g\} + O(h_{\mathrm{def}}^3)$ |
 
 ## Further Reading
 

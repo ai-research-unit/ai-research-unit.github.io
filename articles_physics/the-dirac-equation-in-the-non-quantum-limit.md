@@ -22,13 +22,13 @@ The parent is honest about how much of that is a result, and this article repeat
 
 The frame's ordering is a hypothesis and it is stated here as one. The scale's derivative is order $\epsilon$ by the criterion; the boost's must be too, because the velocity field of a slowly varying fluid varies on the fluid's own length. The rotor's is order one for a different reason: the spin changes only as the momentum changes, since a boost and a rotor that are functions of $\tilde K_\Phi$ change at the rate $\tilde K_\Phi$ changes, and that rate is order one. No article in the corpus states either assignment, and this one states both.
 
-What the article establishes, in five sentences. The logarithmic derivative is exact and its four brackets are the parent's. The limit assigns order zero to the phase bracket and order one to the other three, and order zero of the equation is the algebraic frame system plus the mass shell. Order one carries three transport laws — the continuity equation, the velocity's transport, and the spin's transport — and the last two are the Lorentz force and the precession. The current and the spin are exact in the parent and the limit does not touch them: $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$ and $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\hat s$. The equation is first order, so the family has no amplitude-curvature term, and its order-two content is the product of two order-one brackets, of which the scalar part reproduces the Klein–Gordon quantum potential on iteration and the spin-dependent part is not derived anywhere in the corpus.
+What the article establishes, in five sentences. The logarithmic derivative is exact and its four brackets are the parent's. The limit assigns order zero to the phase bracket and order one to the other three, and order zero of the equation is the algebraic frame system plus the mass shell. Order one carries three transport laws — the continuity equation, the velocity's transport, and the spin's transport — and the last two are the Lorentz force and the precession. The current and the spin are exact in the parent and the limit does not touch them: $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$ and $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{h}{4\pi}i\hat s$. The equation is first order, so the family has no amplitude-curvature term, and its order-two content is the product of two order-one brackets, of which the scalar part reproduces the Klein–Gordon quantum potential on iteration and the spin-dependent part is not derived anywhere in the corpus.
 
 What is not new. The semiclassical Dirac equation's WKB structure, the polarisation condition, the BMT equation and the Thomas precession are standard. Added here: the ordering of the parent's four brackets against one parameter, the statement that the rotor's ordering follows from the spin's dependence on the momentum, and the exactness of the current and the spin as limits of nothing.
 
 The restriction. The complete polar decomposition exists only for an $N$-regular element, $N(\tilde\Xi)\neq0$, and the parent's boxed statement says so. The limit is defined on that domain and nowhere else, and a node is where both the word and the spin's axis lose their meaning.
 
-Conventions. Those of the polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$ and the boost and rotor real units; $S=\hbar\theta_{\mathrm{pha}}$; $\tilde K_\Phi=i(E/\hbar c)e_{t}+\vec p/\hbar$; $\tilde P_\Phi=imc\,\tilde U_{\Psi,\mathrm b}^{-2}$ and $\tilde V_\Phi=\tilde P_\Phi/m=\gamma(ic\,e_{t}+\vec v)$; $k_m=mc/\hbar$; $\rho_{\mathrm{num}}=\varrho^{2}$; $\epsilon=1/(k_{\Phi}L)$ with $k_{\Phi}=\lvert\vec p\rvert/\hbar$ and $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$.
+Conventions. Those of the polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$ and the boost and rotor real units; $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$; $\tilde K_\Phi=i(\frac{2\pi E}{h\,c})e_{t}+\frac{2\pi \vec p}{h}$; $\tilde P_\Phi=imc\,\tilde U_{\Psi,\mathrm b}^{-2}$ and $\tilde V_\Phi=\tilde P_\Phi/m=\gamma(ic\,e_{t}+\vec v)$; $k_m=\frac{2\pi mc}{h}$; $\rho_{\mathrm{num}}=\varrho^{2}$; $\epsilon=1/(k_{\Phi}L)$ with $k_{\Phi}=\frac{2\pi \lvert\vec p\rvert}{h}$ and $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$.
 
 ## The Word and the Four Brackets
 
@@ -46,17 +46,17 @@ The four brackets and their types, from the parent.
 The second bracket is the four-momentum, exactly. $\partial/\partial R_t=-i\partial/\partial r'_{t}$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$, so
 
 $$
-\tilde\nabla_\Phi\theta_{\mathrm{pha}}=-i\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_{t}}e_{t}+\vec\nabla_\Phi\theta_{\mathrm{pha}}=i\frac{E}{\hbar c}e_{t}+\frac{\vec p}{\hbar}=\tilde K_\Phi ,
+\tilde\nabla_\Phi\theta_{\mathrm{pha}}=-i\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_{t}}e_{t}+\vec\nabla_\Phi\theta_{\mathrm{pha}}=i\frac{2\pi E}{h c}e_{t}+\frac{2\pi \vec p}{h}=\tilde K_\Phi ,
 $$
 
-with $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ and $E=-\hbar c\,\partial\theta_{\mathrm{pha}}/\partial r'_{t}$. No factor is inserted by hand: the two temporal slots match because both are $i$ times a rate.
+with $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ and $E=-\frac{h}{2\pi} c\,\partial\theta_{\mathrm{pha}}/\partial r'_{t}$. No factor is inserted by hand: the two temporal slots match because both are $i$ times a rate.
 
 The third bracket is the four-velocity, up to a factor of the boost. The parent's proposition is $\tilde V_\Phi=ic\,\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_{t}+\vec v)$, $\tilde P_\Phi=imc\,\tilde U_{\Psi,\mathrm b}^{-2}$, so the frame appears squared, once for the boost the word deposits and once for the four-vector's formation. The square is why the velocity has norm $-c^{2}$ exactly, $\langle\tilde V_\Phi\rangle_{\natural}=i^{2}c^{2}\tilde U_{\Psi,\mathrm b}^{-2}\tilde U_{\Psi,\mathrm b}^{2}=-c^{2}$.
 
 The fourth bracket is the spin's frame. The parent's display is
 
 $$
-\tilde S_{\Psi}=\rho_{\mathrm{num}}\,\frac{\hbar}{2}\,i\,\hat s,
+\tilde S_{\Psi}=\rho_{\mathrm{num}}\,\frac{h}{4\pi}\,i\,\hat s,
 \qquad
 \hat s=\tilde u_{\mathrm r}\,\vec e_z\,\tilde u_{\mathrm r}^{\natural},
 \qquad
@@ -142,7 +142,7 @@ with $\vec\Omega_{\mathrm{sp}}$ the precession's angular velocity, whose two con
 
 Why the two laws are separate and why that is the family's structure. The boost and the rotor are two independent factors of the word, so their connections are two independent brackets, so their transport laws are two. **A reader who expects one equation at order one has counted the factors wrong**: four factors, four brackets, three laws at order one because the phase's is order zero.
 
-The current and the spin are exact and the limit does not produce them. $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi=ic\gamma\rho_{\mathrm{num}}\,e_{t}+\rho_{\mathrm{num}}\gamma\vec v$ and $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\hat s$ are the parent's displays, valid for every field of the class. **They are not orders of an expansion**: the first is the density times a unit four-vector and the second is the density times a unit direction, and neither carries a derivative. The limit's role is to leave them standing while it orders everything that does carry one.
+The current and the spin are exact and the limit does not produce them. $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi=ic\gamma\rho_{\mathrm{num}}\,e_{t}+\rho_{\mathrm{num}}\gamma\vec v$ and $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{h}{4\pi}i\hat s$ are the parent's displays, valid for every field of the class. **They are not orders of an expansion**: the first is the density times a unit four-vector and the second is the density times a unit direction, and neither carries a derivative. The limit's role is to leave them standing while it orders everything that does carry one.
 
 ## Order Two: What a First-Order Equation Does Not Have
 
@@ -150,13 +150,13 @@ The Dirac equation is first order, so its polar form carries no amplitude-curvat
 
 What is order two is the product of two order-one brackets. The derivative of the word is a single element $\mathcal A_\mu$; a second derivative produces $\mathcal A_\mu\mathcal A_\nu$-type products, and those are the only quadratic objects the theory has. Their scalar part is a combination of the density's gradient squared and the frame's connections squared, and their vector part is a spin-direction times a curvature.
 
-The scalar part reproduces the Klein–Gordon quantum potential when the equation is iterated. Applying the first-order equation twice returns a second-order equation for the two chiral parts, and the scalar part of that iteration is $-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ together with the frame's contributions. **So the quantum potential is not a term of the Dirac equation: it is a term of its square**, and the corpus's statements about it in this family are statements about the iterated equation.
+The scalar part reproduces the Klein–Gordon quantum potential when the equation is iterated. Applying the first-order equation twice returns a second-order equation for the two chiral parts, and the scalar part of that iteration is $-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ together with the frame's contributions. **So the quantum potential is not a term of the Dirac equation: it is a term of its square**, and the corpus's statements about it in this family are statements about the iterated equation.
 
 The spin-dependent part of order two is not in the corpus, and this article records that as a gap. The vector part of the quadratic bracket is a spin-direction times a curvature, and it would be the spin's back-reaction on the transport laws. **No article derives it**, the spin-fluid literature has it, and a treatment that claimed the Dirac limit is complete without it would be overstating. The honest count is: the scalar part is derived, the spin transport at order one is derived, and the spin's order-two back-reaction is not.
 
 ## What the Limit Produces, in One Page
 
-A fluid with a velocity, a spin density, and no pressure. Density $\rho_{\mathrm{num}}$, four-velocity $\tilde V_\Phi$, spin $\rho_{\mathrm{num}}\frac{\hbar}{2}\hat s$, current $\rho_{\mathrm{num}}\tilde V_\Phi$. The word's four factors give the four ingredients, which is the sense in which the polar chart is the natural one for a limit of this kind.
+A fluid with a velocity, a spin density, and no pressure. Density $\rho_{\mathrm{num}}$, four-velocity $\tilde V_\Phi$, spin $\rho_{\mathrm{num}}\frac{h}{4\pi}\hat s$, current $\rho_{\mathrm{num}}\tilde V_\Phi$. The word's four factors give the four ingredients, which is the sense in which the polar chart is the natural one for a limit of this kind.
 
 The classical object is not a point particle. A point particle has a position and a momentum; this object has those and a spin field, and the spin has its own transport law. The corpus's phrase is that the limit gives relativistic mechanics, and this article adds that it gives the mechanics of a spinning fluid, of which the single particle is the ray.
 
@@ -194,17 +194,17 @@ Order two is not a term of this equation at all: it is first order, so the quadr
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; defined where $N(\tilde\Xi)\neq0$ |
 | $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | The scale; the density |
-| $S=\hbar\theta_{\mathrm{pha}}$ | The action |
+| $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | The action |
 | $\tilde U_{\Psi,\mathrm b}$ | The boost, a real unit |
 | $\tilde u_{\mathrm r}$ | The rotor, a real unit |
 | $\mathcal A_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ | The logarithmic derivative; four brackets |
-| $\tilde K_\Phi=i(E/\hbar c)e_{t}+\vec p/\hbar$ | The four-wavevector; the phase bracket |
+| $\tilde K_\Phi=i(\frac{2\pi E}{h\,c})e_{t}+\frac{2\pi \vec p}{h}$ | The four-wavevector; the phase bracket |
 | $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | The four-velocity |
 | $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$ | The boost's inverse square; the chiral link |
 | $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$ | The current, exact |
-| $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\hat s$, $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin, exact |
+| $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{h}{4\pi}i\hat s$, $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin, exact |
 | $\epsilon=1/(k_{\Phi}L)$ | The parameter; one power per derivative of a slow quantity |
-| $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ | The scalar quantum potential |
+| $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | The scalar quantum potential |
 
 ## Further Reading
 

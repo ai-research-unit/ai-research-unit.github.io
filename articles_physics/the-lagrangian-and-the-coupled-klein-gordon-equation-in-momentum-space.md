@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The variational parent records a mismatch and leaves it open, and the mismatch is not where it says it is. *The Lagrangian and the Coupled Klein–Gordon Equation* writes, at §*The Variation in the Field*, that the action's pairing of the two factors in the temporal slot is $\partial^{2}_{R_t}-(ϙa_t'/\hbar)^{2}$ while the article's equation carries $(\partial_{R_t}-ϙa_t'/\hbar)^{2}$, and it calls the difference "one bookkeeping choice, stated rather than absorbed". The two displays differ by a cross term, and the parent is right that a cross term is at stake. It is wrong about which side of the mismatch each display belongs to.
+The variational parent records a mismatch and leaves it open, and the mismatch is not where it says it is. *The Lagrangian and the Coupled Klein–Gordon Equation* writes, at §*The Variation in the Field*, that the action's pairing of the two factors in the temporal slot is $\partial^{2}_{R_t}-(\frac{2\pi ϙa_t'}{h})^{2}$ while the article's equation carries $(\partial_{R_t}-\frac{2\pi ϙa_t'}{h})^{2}$, and it calls the difference "one bookkeeping choice, stated rather than absorbed". The two displays differ by a cross term, and the parent is right that a cross term is at stake. It is wrong about which side of the mismatch each display belongs to.
 
 The transform settles the attribution in one measurement. The action of the temporal slot is a modulus squared, and its Euler–Lagrange operator can be read off by differentiating the functional. Done on a grid of $256$ points the linear term of the variation reproduces $2\,\mathrm{Re}\langle(\partial_{R_t}+c_t)^{2}\Xi,\eta\rangle$ to two parts in $10^{11}$, and the action's density on a plane wave is $10.956100$ — which is the *squared* symbol and not the paired one, which is $8.903900$. The action and the equation agree; the paired form is a third object, and it is what the parent's first display describes.
 
@@ -26,7 +26,7 @@ $$
 \tilde K_\Phi=ik_t'e_t+\vec k_\Phi .
 $$
 
-The bookkeeping is the main article's and is quoted once. With $c_\mu=\frac{i\,ϙ}{\hbar}A_\mu$ the material connection gives $c_t=-\frac{ϙa_t'}{\hbar}$ real and $c_\eta=i\frac{ϙ}{\hbar}A_\eta$ imaginary, and the free slot symbols are $\sigma_t=-k_t'$ real and $\sigma_\eta=i\kappa_\eta$ imaginary. The temporal slot is the only one where the two readings of the covariant square differ, so the article states everything in that slot and adds the spatial slots only where they change a conclusion.
+The bookkeeping is the main article's and is quoted once. With $c_\mu=\frac{2\pi i\,ϙ}{h}A_\mu$ the material connection gives $c_t=-\frac{2\pi ϙa_t'}{h}$ real and $c_\eta=i\frac{2\pi ϙ}{h}A_\eta$ imaginary, and the free slot symbols are $\sigma_t=-k_t'$ real and $\sigma_\eta=i\kappa_\eta$ imaginary. The temporal slot is the only one where the two readings of the covariant square differ, so the article states everything in that slot and adds the spatial slots only where they change a conclusion.
 
 The denials are the main article's, restated once. The transform does not exchange sectors; a symbol exists only at constant coefficients; and a Legendre transform between a field and its conjugate momentum is not a Fourier transform, so the parent's four canonical momenta are not wave numbers and no display below reads them as one.
 
@@ -53,13 +53,13 @@ $$
 \;}
 $$
 
-What this does to the parent's recorded mismatch. The parent's second display, $(\partial_{R_t}-ϙa_t'/\hbar)^{2}$, is the action's slot with $c_t=-ϙa_t'/\hbar$, so the parent's *equation* side is the action's operator and the two agree. The parent's first display, $\partial^{2}_{R_t}-(ϙa_t'/\hbar)^{2}$, is $\partial^{2}-c_t^{2}$: the paired form, which no functional in the parent produces. The mismatch is real but it is not between the action and the equation; it is between the action and a third object the parent wrote down as though it were the action's.
+What this does to the parent's recorded mismatch. The parent's second display, $(\partial_{R_t}-\frac{2\pi ϙa_t'}{h})^{2}$, is the action's slot with $c_t=-\frac{2\pi ϙa_t'}{h}$, so the parent's *equation* side is the action's operator and the two agree. The parent's first display, $\partial^{2}_{R_t}-(\frac{2\pi ϙa_t'}{h})^{2}$, is $\partial^{2}-c_t^{2}$: the paired form, which no functional in the parent produces. The mismatch is real but it is not between the action and the equation; it is between the action and a third object the parent wrote down as though it were the action's.
 
-The correction is an attribution and not an equation. Nothing in the parent's displays is wrong as a display. $\partial^{2}_{R_t}-(ϙa_t'/\hbar)^{2}$ is a perfectly good operator and the article of §*The Action in Momentum Space: The Ordering Ambiguity Is the Cross Term* identifies its symbol. What is wrong is the sentence that attaches it to the action. The corpus's action and the corpus's equation are one operator, and the third object is the subject of the next section.
+The correction is an attribution and not an equation. Nothing in the parent's displays is wrong as a display. $\partial^{2}_{R_t}-(\frac{2\pi ϙa_t'}{h})^{2}$ is a perfectly good operator and the article of §*The Action in Momentum Space: The Ordering Ambiguity Is the Cross Term* identifies its symbol. What is wrong is the sentence that attaches it to the action. The corpus's action and the corpus's equation are one operator, and the third object is the subject of the next section.
 
 ### The Source's Symbol
 
-The connection's equation is algebraic only in the constant setting, and there its symbol is the current's transform. Varying the matter action with respect to $A_\mu$ gives $\delta S_{\mathrm{c}}/\delta A_\mu=-\frac{ϙ}{\hbar}J_\mu$, and the transform of that equation replaces the derivative by $i\tilde K_\Phi$; the current is a bilinear, so its transform is a convolution and the connection's equation is algebraic only where the current is a single mode. The source's symbol is therefore the transform of the current, and it is a convolution in every other case.
+The connection's equation is algebraic only in the constant setting, and there its symbol is the current's transform. Varying the matter action with respect to $A_\mu$ gives $\delta S_{\mathrm{c}}/\delta A_\mu=-\frac{2\pi ϙ}{h}J_\mu$, and the transform of that equation replaces the derivative by $i\tilde K_\Phi$; the current is a bilinear, so its transform is a convolution and the connection's equation is algebraic only where the current is a single mode. The source's symbol is therefore the transform of the current, and it is a convolution in every other case.
 
 The constant setting is the one the article uses and the one the parent uses. There the current's transform is a coefficient at one wave number, the connection's equation is algebraic, and the fork of §*The Action in Momentum Space: The Ordering Ambiguity Is the Cross Term* is the fork between two polynomials in the same variable. Nothing in the source's structure decides which polynomial is the operator's, and the article states this rather than reading a decision into the variation.
 
@@ -125,7 +125,7 @@ What is lost, and it must be said. The variation at a mode cannot see a boundary
 
 The zero of the symbol is the pole of the propagator. The mode action's kernel is the symbol, so the propagator at that wave number is the symbol's inverse, and the inverse does not exist exactly where the symbol vanishes. The zero of the symbol and the pole of the propagator are one locus, read from two sides, and the article treats them as one object rather than two.
 
-Why the identification matters here. The coupled scalar's symbol is the free one with a translated argument, so its zero is the free zero moved by the connection: $k_\mu\to k_\mu-\frac{q}{\hbar}A_\mu$. The coupling does not create a new zero and does not remove one; it moves the existing one, and every statement about the spectrum in the coupled theory is the free statement translated.
+Why the identification matters here. The coupled scalar's symbol is the free one with a translated argument, so its zero is the free zero moved by the connection: $k_\mu\to k_\mu-\frac{2\pi q}{h}A_\mu$. The coupling does not create a new zero and does not remove one; it moves the existing one, and every statement about the spectrum in the coupled theory is the free statement translated.
 
 The on-shell action. On a solution the amplitude is a null vector of the symbol, so the quadratic form $\langle\tilde X,\sigma\tilde X\rangle$ is zero. **The mode action vanishes on shell**, and that is not a coincidence: the action is the form, the equation is the kernel, and a kernel vector is annihilated by the form. A reader who expects the on-shell action to equal the energy has imported a non-degenerate Lagrangian from another reading; here the form is the action and its value on a solution is zero.
 
@@ -174,7 +174,7 @@ What the invariant does not do is choose between the readings. A reader who want
 The charge at a mode. The Noether charge is the spatial integral of the temporal component of the current, and by Parseval it becomes a sum over modes. At one mode the summand is the bilinear of the amplitude,
 
 $$
-\mathcal{Q}(\vec k)=\hbar\,\mathrm{Sc}\bigl[X^{*}(\vec k)X(\vec k)\bigr],
+\mathcal{Q}(\vec k)=\frac{h}{2\pi}\,\mathrm{Sc}\bigl[X^{*}(\vec k)X(\vec k)\bigr],
 $$
 
 up to the normalisation the element article fixes, so that the total charge is the integral of this density over the wave numbers. The step from the position-space charge to this display is Parseval's identity and nothing else; the companion article *The Lagrangian and the Schrödinger Equation in Momentum Space* proves it in that case and the proof transfers, because it uses only the transform and the Hermitian pairing.
@@ -199,7 +199,7 @@ What it cannot reach. The boundary term, the varying coefficient and the operato
 
 The action of the coupled scalar theory is a modulus squared, so it is real for every connection, and the reality of the action is therefore not the criterion for the reality of the symbol. The criterion is the parity lemma of the main article: the symbol is real in a slot exactly when the connection's coefficient has the reality of that slot's gradient symbol, and in the corpus's slots that is the anti-Hermitian writing $\tilde A_\Phi^{*}=-\tilde A_\Phi$.
 
-The action's Euler–Lagrange operator is the squared one. Its variation reproduces $2\,\mathrm{Re}\langle(\partial_{R_t}+c_t)^{2}\Xi,\eta\rangle$ to two parts in $10^{11}$, and its density on a plane wave is $10.956100$, which is the squared symbol against the paired symbol's $8.903900$. **The parent's recorded mismatch between its action and its equation therefore does not exist**: the two agree, and the parent's first display, $\partial^{2}_{R_t}-(ϙa_t'/\hbar)^{2}$, is the paired form, a third object.
+The action's Euler–Lagrange operator is the squared one. Its variation reproduces $2\,\mathrm{Re}\langle(\partial_{R_t}+c_t)^{2}\Xi,\eta\rangle$ to two parts in $10^{11}$, and its density on a plane wave is $10.956100$, which is the squared symbol against the paired symbol's $8.903900$. **The parent's recorded mismatch between its action and its equation therefore does not exist**: the two agree, and the parent's first display, $\partial^{2}_{R_t}-(\frac{2\pi ϙa_t'}{h})^{2}$, is the paired form, a third object.
 
 The two ambiguities are one. The paired form is the product of the two charge-conjugate first-order operators and the squared form is one factor with itself, so flipping the charge and reordering the factors are the same operation. The symbol records both in the cross term $2c_t(\partial_{R_t}+c_t)$, whose value is $2c_t(c_t-k_t')=2.0522$. The charge flip translates the root pair by $-2c_t=0.62$ and leaves the separation at $6.161169$; the ordering decides whether the cross term survives at all.
 
@@ -211,7 +211,7 @@ Both readings are real in the corpus's writing, so the reality of the symbol can
 | --- | --- |
 | $S_{\mathrm{c}}$ | The parent's slot-summed matter action |
 | $\delta S_{\mathrm{c}}/\delta\tilde\Xi^{*}$ | The Euler–Lagrange operator; $-\bigl(\Box_{\mathrm{gco},\Phi}-k_m^{2}\bigr)\tilde\Xi$ |
-| $c_\mu=\frac{iϙ}{\hbar}A_\mu$ | The per-slot connection coefficient; $c_t=-ϙa_t'/\hbar$ real, $c_\eta$ imaginary |
+| $c_\mu=\frac{2\pi iϙ}{h}A_\mu$ | The per-slot connection coefficient; $c_t=-\frac{2\pi ϙa_t'}{h}$ real, $c_\eta$ imaginary |
 | $\sigma_\mu$ | The free slot symbol; $\sigma_t=-k_t'$ real, $\sigma_\eta=i\kappa_\eta$ imaginary |
 | $(\partial_{R_t}+c_t)^{2}$ | The squared reading; one charge twice |
 | $(\partial_{R_t}-\bar c_t)(\partial_{R_t}+c_t)$ | The paired reading; the two opposite charges once each |

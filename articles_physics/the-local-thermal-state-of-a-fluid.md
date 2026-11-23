@@ -150,7 +150,7 @@ $$
 
 the first being Euler's relation and the second Gibbs–Duhem's. Both are quoted; both are standard; and both are the local statement, in the sense that every symbol carries an $x$ that is suppressed for readability.
 
-Since $\beta(x)=A/T(x)$ with $A=\hbar/k_B$ a constant, $dT=-(T/\beta)\,d\beta$, so the Gibbs–Duhem relation reads in the corpus's variable as
+Since $\beta(x)=A/T(x)$ with $A=\frac{h}{2\pi k_B}$ a constant, $dT=-(T/\beta)\,d\beta$, so the Gibbs–Duhem relation reads in the corpus's variable as
 
 $$
 \frac{\partial p_{\mathrm{th}}}{\partial\beta}=-\frac{\beta}{T}\,s_{\mathrm{ent}}
@@ -191,13 +191,13 @@ With
 
 $$
 p_{\mathrm{qnt}}=\rho_{\mathrm{num}}\,Q_{\mathrm{qnt}}
-=-\frac{\hbar^{2}}{4m}\Box_\Phi\rho_{\mathrm{num}}
-+\frac{\hbar^{2}}{8m}\frac{\partial_\eta\rho_{\mathrm{num}}\,\partial_\eta\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}},
+=-\frac{h^{2}}{16\pi^{2}m}\Box_\Phi\rho_{\mathrm{num}}
++\frac{h^{2}}{32\pi^{2}m}\frac{\partial_\eta\rho_{\mathrm{num}}\,\partial_\eta\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}},
 $$
 
 with $Q_{\mathrm{qnt}}$ the quantum potential and its minus sign, the pressure at an event depends on the second derivative of the density at that event. A second derivative is a property of the neighbourhood, so $p_{\mathrm{qnt}}$ is not a function of the local data in the sense of requirement 1; it is a functional of the density field's germ at the event.
 
-Determinacy is replaced by determinacy *to a stated gradient order*; consistency is kept for the thermal part and abandoned for the quantum part, which is precisely why the corpus keeps the two labels apart; integrability is kept for the thermal part, and the quantum part is derived from the field rather than from a potential, so it does not need one. The modified statement is the honest one: the effective pressure is local to order $\hbar^{2}$ and not exactly, and a reader who wants an exactly local equation of state must drop the quantum part and with it every effect the framework adds.
+Determinacy is replaced by determinacy *to a stated gradient order*; consistency is kept for the thermal part and abandoned for the quantum part, which is precisely why the corpus keeps the two labels apart; integrability is kept for the thermal part, and the quantum part is derived from the field rather than from a potential, so it does not need one. The modified statement is the honest one: the effective pressure is local to order $\frac{h^{2}}{4\pi^{2}}$ and not exactly, and a reader who wants an exactly local equation of state must drop the quantum part and with it every effect the framework adds.
 
 The three requirements are stated for $p_{\mathrm{th}}$, they hold for $p_{\mathrm{th}}$, and they fail for $p_{\mathrm{qnt}}$ in a controlled way. The failure is the framework's content and not its defect: a strictly local equation of state is a classical statement, and a quantum fluid is not classical. The article's contribution is to say exactly which requirement fails, at which order, and why.
 
@@ -219,7 +219,7 @@ What the numbers do not check. They do not check the rigidity condition's satisf
 
 ## What Is Established and What Is Interpretation
 
-Established, and standard. That the local thermal state is the triple of a density, a thermal pressure and a flow element, read at a pointwise period; that the density is the amplitude squared; that the flow's gradient decomposes into expansion, vorticity and acceleration, all with low indices; that the rigidity condition kills the expansion and the shear and permits the vorticity; that a local equation of state requires determinacy, thermodynamic consistency and integrability; that the first of the three needs the rigidity condition; that the second and third hold for $p_{\mathrm{th}}$ and fail for $p_{\mathrm{qnt}}$ in a controlled way; and the numerical identity $p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}=-\tfrac{\hbar^{2}}{4m}\Box_\Phi\rho_{\mathrm{num}}+\tfrac{\hbar^{2}}{8m}\lvert\vec\nabla_\Phi\rho_{\mathrm{num}}\rvert^{2}/\rho_{\mathrm{num}}$.
+Established, and standard. That the local thermal state is the triple of a density, a thermal pressure and a flow element, read at a pointwise period; that the density is the amplitude squared; that the flow's gradient decomposes into expansion, vorticity and acceleration, all with low indices; that the rigidity condition kills the expansion and the shear and permits the vorticity; that a local equation of state requires determinacy, thermodynamic consistency and integrability; that the first of the three needs the rigidity condition; that the second and third hold for $p_{\mathrm{th}}$ and fail for $p_{\mathrm{qnt}}$ in a controlled way; and the numerical identity $p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}=-\tfrac{h^{2}}{16\pi^{2}m}\Box_\Phi\rho_{\mathrm{num}}+\tfrac{h^{2}}{32\pi^{2}m}\lvert\vec\nabla_\Phi\rho_{\mathrm{num}}\rvert^{2}/\rho_{\mathrm{num}}$.
 
 Interpretation, and marked as such. That the triple is the *complete* local state, in the sense that the entropy density and the chemical potential are functions of it and not independent fields. This is true of a one-component fluid in local equilibrium and it is not a theorem about every fluid; a fluid with several conserved charges needs one density per charge, and the article says so rather than generalising.
 
@@ -229,13 +229,13 @@ The three requirements are stated in a form that can be checked on any candidate
 
 ## Summary
 
-The local thermal state of the fluid is the triple $\bigl(\rho_{\mathrm{num}}(x),p_{\mathrm{th}}(x),\tilde V_\Phi(x)\bigr)$ at the pointwise period $\beta(x)=\hbar/(k_BT(x))$, with $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$, $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$, and $\tilde V_\Phi=\tilde P_\Phi/m$, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, every component written with a low index and never raised. The temperature is a field at each event — a pointwise period, not a pointwise metric — and the article uses the gate article's verdict without reopening it.
+The local thermal state of the fluid is the triple $\bigl(\rho_{\mathrm{num}}(x),p_{\mathrm{th}}(x),\tilde V_\Phi(x)\bigr)$ at the pointwise period $\beta(x)=\frac{h}{2\pi k_BT(x)}$, with $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$, $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$, and $\tilde V_\Phi=\tilde P_\Phi/m$, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, every component written with a low index and never raised. The temperature is a field at each event — a pointwise period, not a pointwise metric — and the article uses the gate article's verdict without reopening it.
 
 The flow's gradient decomposes into $\theta=\partial_\mu v_{\Phi,\mu}$, $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ and $a_{\Phi,\nu}=v_{\Phi,\mu}\partial_\mu v_{\Phi,\nu}$; the rigidity condition $\partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}=0$ makes the first two vanish and leaves the vorticity free, so rigid flows may rotate.
 
 A local equation of state must be determinate, $p_{\mathrm{th}}(x)=\mathfrak{F}(\rho_{\mathrm{num}}(x),\beta(x))$ with no gradient on the right; must satisfy Euler's and Gibbs–Duhem's relations at each event, with $s_{\mathrm{ent}}=-(\beta/T)\partial p_{\mathrm{th}}/\partial\beta$ the chain-rule form of the second; and must come from one potential per unit proper volume, $p_{\mathrm{th}}=-\;f+\mu_{\mathrm{chm}}n_{\mathrm{num}}$, $s_{\mathrm{ent}}=-\partial f/\partial T$. Determinacy needs the rigid flow, because an expanding flow adds $-\zeta\theta$ to the pressure. Integrability is the requirement most often skipped, and it is the one that fails silently when a pressure is written down without a potential.
 
-The quantum part violates determinacy at second order: $p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}=-\tfrac{\hbar^{2}}{4m}\Box_\Phi\rho_{\mathrm{num}}+\tfrac{\hbar^{2}}{8m}\lvert\vec\nabla_\Phi\rho_{\mathrm{num}}\rvert^{2}/\rho_{\mathrm{num}}$, checked on a Gaussian to $1.8\times10^{-5}$ on a grid of spacing $3\times10^{-3}$, with the central value $Q_{\mathrm{qnt}}(0)=0.999\,982$ against $\hbar^{2}/(4m\sigma^{2})=1$. So the equation of state is local to order $\hbar^{2}$ and not exactly, and the two labels $p_{\mathrm{th}}$ and $p_{\mathrm{qnt}}$ exist to keep the exact statement and the approximate one apart.
+The quantum part violates determinacy at second order: $p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}=-\tfrac{h^{2}}{16\pi^{2}m}\Box_\Phi\rho_{\mathrm{num}}+\tfrac{h^{2}}{32\pi^{2}m}\lvert\vec\nabla_\Phi\rho_{\mathrm{num}}\rvert^{2}/\rho_{\mathrm{num}}$, checked on a Gaussian to $1.8\times10^{-5}$ on a grid of spacing $3\times10^{-3}$, with the central value $Q_{\mathrm{qnt}}(0)=0.999\,982$ against $\frac{h^{2}}{4\pi^{2}}/(4m\sigma^{2})=1$. So the equation of state is local to order $\frac{h^{2}}{4\pi^{2}}$ and not exactly, and the two labels $p_{\mathrm{th}}$ and $p_{\mathrm{qnt}}$ exist to keep the exact statement and the approximate one apart.
 
 ## Summary of Notation
 
@@ -247,7 +247,7 @@ The quantum part violates determinacy at second order: $p_{\mathrm{qnt}}=\rho_{\
 | $p_{\mathrm{th}}$ | Thermal pressure |
 | $p_{\mathrm{qnt}}$ | Quantum part of the pressure |
 | $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$ | Effective pressure |
-| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
+| $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
 | $w_{\mathrm{fl}}$ | Energy density |
 | $s_{\mathrm{ent}}$ | Entropy density |
 | $n_{\mathrm{num}}$ | Number density |

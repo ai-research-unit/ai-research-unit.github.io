@@ -360,7 +360,7 @@ The framework's relation to this is the fundamental doublet's factor: $\mathbb{C
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi$ | The gradient, its quaternion conjugate and the d'Alembertian in the material reading, all of *Operator and Calculus Conventions* |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The Dirac pair: each member one left multiplication, one equation per value |
 
-Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 ## Further Reading
 

@@ -18,7 +18,7 @@ The fourth is that **the plane-wave amplitude is strictly spacelike**. For a pla
 
 **A note on the sector names.** The subscripts of $\Sigma_{01}$ and $\Sigma_{00}$ are the corpus's two predicates, $N=0$ and $B^2\neq0$, and not a count of anything. The Dirac article fixes the notation, and this article uses it unchanged.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_\mu^2=-e_t$ and central scalar imaginary $i$; the material sector is $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and the vector part is $\mathbb{B}_V=\mathrm{span}_\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$; the quaternionic norm is $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$, real on $\mathbb{B}_\Phi$; the gradient is $\tilde\nabla_\Phi$ with conjugate $(\tilde\nabla_\Phi)^{\natural}$ and $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; and $k_m=mc/\hbar$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_\mu^2=-e_t$ and central scalar imaginary $i$; the material sector is $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and the vector part is $\mathbb{B}_V=\mathrm{span}_\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$; the quaternionic norm is $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$, real on $\mathbb{B}_\Phi$; the gradient is $\tilde\nabla_\Phi$ with conjugate $(\tilde\nabla_\Phi)^{\natural}$ and $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; and $k_m=\frac{2\pi mc}{h}$.
 
 ## The Equation and the Field
 
@@ -298,7 +298,7 @@ Degenerate values of the potential therefore arise from superpositions, which cr
 | $\theta_{\mathrm{pwp}}=\omega r'_t/c-\vec k_\Phi\cdot\vec r$ | Plane-wave angle |
 | $\tilde A_0=i\,a'_t\,e_t+\vec a$ | Plane-wave amplitude of the potential |
 | $\vec a_\parallel$, $\vec a_\perp$ | The amplitude along and across $\vec k_\Phi$ |
-| $k_m=mc/\hbar$ | Mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 
 ## Further Reading
 

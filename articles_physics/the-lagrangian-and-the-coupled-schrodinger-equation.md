@@ -7,12 +7,12 @@
 **The action.**
 
 $$
-S=\int dt'\,d^{3}x\;\mathrm{Sc}\Big[\frac{i\hbar}{2}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)
--\frac{\hbar^{2}}{2m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
+S=\int dt'\,d^{3}x\;\mathrm{Sc}\Big[\frac{i h}{4\pi}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)
+-\frac{h^{2}}{8\pi^{2}m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
 +ϙ\varphi\,\tilde\Xi^{*}\tilde\Xi\Big],
 $$
 
-with $D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta$ and $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$. It is the free action with two replacements: every spatial derivative becomes the covariant one, and one term in the potential is added. That is the whole of the coupling in the action, and it is the same one rule that the element-form companion states for the equation.
+with $D_\eta=\partial_\eta+\frac{2\pi iϙ}{h}A_\eta$ and $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$. It is the free action with two replacements: every spatial derivative becomes the covariant one, and one term in the potential is added. That is the whole of the coupling in the action, and it is the same one rule that the element-form companion states for the equation.
 
 **Three findings.**
 
@@ -26,14 +26,14 @@ with $D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta$ and $\tilde A_\Phi=i(\varphi
 
 ## Conventions
 
-**The conventions are restated here so that every sign below is checkable from this page alone.** The algebra, the two sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the two settings and the letters are the free variational companion's, with one addition: the connection $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling $ϙ$, and the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy is $-ϙ\varphi$. Time is $t'$ and $r'_t=c\,t'$ is the parent's material length.
+**The conventions are restated here so that every sign below is checkable from this page alone.** The algebra, the two sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the two settings and the letters are the free variational companion's, with one addition: the connection $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling $ϙ$, and the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=-i \frac{h}{2\pi}\nabla-q\vec A$ and the potential energy is $-ϙ\varphi$. Time is $t'$ and $r'_t=c\,t'$ is the parent's material length.
 
 ## The Action in Element Form, Coupled
 
-**The kinetic term is Hermitian.** Write $K=\frac{i\hbar}{2}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)$. Then
+**The kinetic term is Hermitian.** Write $K=\frac{i h}{4\pi}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)$. Then
 
 $$
-K^{*}=-\frac{i\hbar}{2}\Big(\big(\partial_{t'}\tilde\Xi\big)^{*}\tilde\Xi-\tilde\Xi^{*}\partial_{t'}\tilde\Xi\Big)=K,
+K^{*}=-\frac{i h}{4\pi}\Big(\big(\partial_{t'}\tilde\Xi\big)^{*}\tilde\Xi-\tilde\Xi^{*}\partial_{t'}\tilde\Xi\Big)=K,
 $$
 
 so $K$ is Hermitian and $\mathrm{Sc}(K)$ is real. The antisymmetrisation is what does it: the two terms are conjugates of one another up to sign, and the difference of a number and its conjugate is imaginary, which the factor $i$ turns real. The coupling does not touch this term, and the reason is the metric: the connection's temporal coefficient is absorbed in $D_t$ and not in $\partial_{t'}$, so the kinetic term's structure is the free one.
@@ -55,8 +55,8 @@ a sum of four moduli. This is the one place where the coupling changes the actio
 **The two writings of the kinetic term.** The action's gradient term can be written as a modulus or as an operator sandwich,
 
 $$
--\frac{\hbar^{2}}{2m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
-=\frac{\hbar^{2}}{2m}\sum_\eta\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta^{2}\tilde\Xi\big)+\partial_\eta\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big),
+-\frac{h^{2}}{8\pi^{2}m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
+=\frac{h^{2}}{8\pi^{2}m}\sum_\eta\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta^{2}\tilde\Xi\big)+\partial_\eta\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big),
 $$
 
 because $D_\eta^{\dagger}=-D_\eta$. The two differ by a total divergence, so they give the same variation and the same equation, and the article uses the modulus form because it is manifestly positive and the operator form because it makes the variation one line.
@@ -76,7 +76,7 @@ and it is conserved because $\tilde H^{\mathrm{gco}}_\Psi$ commutes with itself:
 **The operator setting.** The energy density is
 
 $$
-e=\frac{\hbar^{2}}{2m}\sum_\eta\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)-ϙ\varphi\,n,
+e=\frac{h^{2}}{8\pi^{2}m}\sum_\eta\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)-ϙ\varphi\,n,
 $$
 
 which is the free article's density with the covariant gradient and the potential energy. Its spatial integral is the expectation of $\hat H^{\mathrm{gco}}$ on solutions, up to a boundary term, and **it is conserved for a time-independent connection**: the potential's contribution to the time derivative is exactly the work the field does against the potential, and the two cancel in the integral.
@@ -91,17 +91,17 @@ which is the free article's density with the covariant gradient and the potentia
 
 $$
 \frac{\delta S}{\delta\tilde\Xi^{*}}
-=i\hbar\,\partial_{t'}\tilde\Xi+\frac{\hbar^{2}}{2m}\sum_\eta D_\eta^{2}\tilde\Xi+ϙ\varphi\,\tilde\Xi
-=\;i\hbar\,\partial_{t'}\tilde\Xi-\frac{1}{2m}\sum_\eta\big(-i\hbar D_\eta\big)^{2}\tilde\Xi+ϙ\varphi\,\tilde\Xi .
+=i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi+\frac{h^{2}}{8\pi^{2}m}\sum_\eta D_\eta^{2}\tilde\Xi+ϙ\varphi\,\tilde\Xi
+=\;i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi-\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi} D_\eta\big)^{2}\tilde\Xi+ϙ\varphi\,\tilde\Xi .
 $$
 
 Setting it to zero and multiplying by $-1$ gives
 
 $$
-i\hbar\,\partial_{t'}\tilde\Xi=\frac{1}{2m}\sum_\eta\big(-i\hbar D_\eta\big)^{2}\tilde\Xi-ϙ\varphi\,\tilde\Xi,
+i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi=\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi} D_\eta\big)^{2}\tilde\Xi-ϙ\varphi\,\tilde\Xi,
 $$
 
-which is the companion's equation, with $\vec\pi_\eta=-i\hbar D_\eta$ the mechanical momentum. The two signs in the residual are worth one check: the gradient term's plus sign in $\delta S/\delta\tilde\Xi^{*}$ is the boundary-term identity of the preceding section read backwards, and the potential term's plus sign is the sign of $+ϙ\varphi$ in the action. Both signs are the free article's and the coupling only renames the letters.
+which is the companion's equation, with $\vec\pi_\eta=-i \frac{h}{2\pi} D_\eta$ the mechanical momentum. The two signs in the residual are worth one check: the gradient term's plus sign in $\delta S/\delta\tilde\Xi^{*}$ is the boundary-term identity of the preceding section read backwards, and the potential term's plus sign is the sign of $+ϙ\varphi$ in the action. Both signs are the free article's and the coupling only renames the letters.
 
 **Eight real equations, not one.** $\delta\tilde\Xi^{*}$ ranges over the eight real components of $\mathbb{B}$, and $\mathrm{Sc}$ is non-degenerate, so the vanishing of the bracket for every variation is the vanishing of the bracket as an element of $\mathbb{B}$. The eight components of the residual are the eight real Euler–Lagrange equations; they are not independent statements but one statement in eight coordinates, and the article states it once. The polar companion is the same statement in the chart's eight coordinates, and its §*The Euler–Lagrange Equations* is where the coordinate version of this paragraph lives.
 
@@ -111,7 +111,7 @@ which is the companion's equation, with $\vec\pi_\eta=-i\hbar D_\eta$ the mechan
 
 ## The Constraints the Action Imposes: Gauge Invariance of the Action
 
-**The transformation.** Let $\Gamma$ be a real function, $\lambda=\exp(iϙ\Gamma/\hbar)$, and let the field and the connection transform as
+**The transformation.** Let $\Gamma$ be a real function, $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$, and let the field and the connection transform as
 
 $$
 \tilde\Xi\longmapsto\lambda\tilde\Xi,
@@ -123,7 +123,7 @@ $$
 
 **The gradient term.** $D_\eta\tilde\Xi\mapsto\lambda D_\eta\tilde\Xi$ by the covariance identity, and $\lambda$ is a central unit, so $|D_\eta\tilde\Xi|^{2}$ is invariant. The term contributes nothing to the variation of the action.
 
-**The kinetic term, and its gain.** With $\vartheta=ϙ\Gamma/\hbar$ the two halves of the kinetic term become
+**The kinetic term, and its gain.** With $\vartheta=\frac{2\pi ϙ\Gamma}{h}$ the two halves of the kinetic term become
 
 $$
 \tilde\Xi'^{*}\partial_{t'}\tilde\Xi'=\tilde\Xi^{*}\partial_{t'}\tilde\Xi+i\,\partial_{t'}\vartheta\,\tilde\Xi^{*}\tilde\Xi,
@@ -134,8 +134,8 @@ $$
 because the central factors cancel in pairs and the derivative of the unit contributes once in each. The antisymmetrised combination therefore gains
 
 $$
-\Delta K=\frac{i\hbar}{2}\cdot 2i\,\partial_{t'}\vartheta\,\tilde\Xi^{*}\tilde\Xi
-=-\hbar\,\partial_{t'}\vartheta\,\tilde\Xi^{*}\tilde\Xi
+\Delta K=\frac{i h}{4\pi}\cdot 2i\,\partial_{t'}\vartheta\,\tilde\Xi^{*}\tilde\Xi
+=-\frac{h}{2\pi}\,\partial_{t'}\vartheta\,\tilde\Xi^{*}\tilde\Xi
 =-ϙ\,\partial_{t'}\Gamma\,\tilde\Xi^{*}\tilde\Xi,
 $$
 
@@ -154,7 +154,7 @@ and taking $\mathrm{Sc}$ gives $-ϙ\,\partial_{t'}\Gamma\,n$.
 $$
 \partial_{t'}\mathcal P_\eta+\sum_\zeta\partial_\zeta T_{\zeta\eta}=-\rho_{\mathrm{chg}}\big(\vec E+\vec v\times\vec B\big)_\eta,
 \qquad
-\mathcal P_\eta=\hbar\,\mathrm{Im}\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big)=m\,j_\eta,
+\mathcal P_\eta=\frac{h}{2\pi}\,\mathrm{Im}\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big)=m\,j_\eta,
 $$
 
 with $\mathcal P$ the momentum density, $T$ the stress tensor, $\rho_{\mathrm{chg}}:=ϙn$ the charge density, $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$. The overall minus sign is the coupling's: the corpus's $ϙ$ is minus the electric charge, so a charge density $\rho_{\mathrm{chg}}$ feels $-\rho_{\mathrm{chg}}(\vec E+\vec v\times\vec B)$ in these letters, which is $+q(\vec E+\vec v\times\vec B)$ in the older ones.
@@ -168,7 +168,7 @@ with $\mathcal P$ the momentum density, $T$ the stress tensor, $\rho_{\mathrm{ch
 **The global symmetry.** For constant $\alpha$ the transformation is $\tilde\Xi\mapsto e^{i\alpha}\tilde\Xi$ and the action is invariant. The Noether construction gives the current of the element-form companion,
 
 $$
-j_\eta=\frac{\hbar}{2mi}\,\mathrm{Sc}\Big(\tilde\Xi^{*}D_\eta\tilde\Xi-\big(D_\eta\tilde\Xi\big)^{*}\tilde\Xi\Big),
+j_\eta=\frac{h}{4\pi mi}\,\mathrm{Sc}\Big(\tilde\Xi^{*}D_\eta\tilde\Xi-\big(D_\eta\tilde\Xi\big)^{*}\tilde\Xi\Big),
 $$
 
 and the temporal component is the density $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$. The derivation is the free article's with every derivative covariant, and the connection's terms cancel in pairs; the article does not repeat it.
@@ -177,8 +177,8 @@ and the temporal component is the density $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)
 
 $$
 -\frac{\partial L}{\partial A_\eta}
-=\frac{\hbar^{2}}{2m}\cdot 2\,\mathrm{Re}\sum_\mu\frac{iϙ}{\hbar}\,\overline{\big(D_\eta\tilde\Xi\big)_\mu}\,\tilde\Xi_\mu
-=-\frac{\hbar ϙ}{m}\,\mathrm{Im}\,\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}\tilde\Xi\big)
+=\frac{h^{2}}{8\pi^{2}m}\cdot 2\,\mathrm{Re}\sum_\mu\frac{2\pi iϙ}{h}\,\overline{\big(D_\eta\tilde\Xi\big)_\mu}\,\tilde\Xi_\mu
+=-\frac{h ϙ}{2\pi m}\,\mathrm{Im}\,\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}\tilde\Xi\big)
 =ϙ\,j_\eta,
 $$
 
@@ -205,8 +205,8 @@ where the second equality uses $\mathrm{Re}(iZ)=-\mathrm{Im}Z$. So the charge cu
 The coupled action is
 
 $$
-S=\int dt'\,d^{3}x\;\mathrm{Sc}\Big[\frac{i\hbar}{2}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)
--\frac{\hbar^{2}}{2m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
+S=\int dt'\,d^{3}x\;\mathrm{Sc}\Big[\frac{i h}{4\pi}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)
+-\frac{h^{2}}{8\pi^{2}m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
 +ϙ\varphi\,\tilde\Xi^{*}\tilde\Xi\Big],
 $$
 
@@ -217,7 +217,7 @@ The local phase transformation leaves the action invariant exactly, with the kin
 The current is the free article's with covariant derivatives,
 
 $$
-j_\eta=\frac{\hbar}{2mi}\,\mathrm{Sc}\Big(\tilde\Xi^{*}D_\eta\tilde\Xi-\big(D_\eta\tilde\Xi\big)^{*}\tilde\Xi\Big),
+j_\eta=\frac{h}{4\pi mi}\,\mathrm{Sc}\Big(\tilde\Xi^{*}D_\eta\tilde\Xi-\big(D_\eta\tilde\Xi\big)^{*}\tilde\Xi\Big),
 \qquad
 j_t=n,
 $$
@@ -239,15 +239,15 @@ The energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi)$ in 
 | $\tilde\Xi\in\mathbb{B}$ | The field |
 | $ϙ$ | The coupling; minus the electric charge of the older convention |
 | $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ | The material connection; $\varphi$ and $\vec A$ real |
-| $D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta$ | The spatial covariant derivative |
-| $\vec\pi_\eta=-i\hbar D_\eta=-i\hbar\partial_\eta+ϙA_\eta$ | The mechanical momentum |
+| $D_\eta=\partial_\eta+\frac{2\pi iϙ}{h}A_\eta$ | The spatial covariant derivative |
+| $\vec\pi_\eta=-i \frac{h}{2\pi} D_\eta=-i \frac{h}{2\pi}\partial_\eta+ϙA_\eta$ | The mechanical momentum |
 | $S$ | The action; $L$ its density per unit $t'$ |
 | $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | The density; $\rho=2n$ is the free article's |
 | $j_\eta$, $j_t=n$ | The particle current |
 | $ϙj_\eta$, $\rho_{\mathrm{chg}}=ϙn$ | The charge current and the charge density |
 | $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi-q\vec A)$ | The coupled Hamiltonian of the constant setting |
 | $e$ | The energy density of the operator setting |
-| $\Gamma$, $\lambda=e^{iϙ\Gamma/\hbar}$ | The gauge function and factor |
+| $\Gamma$, $\lambda=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge function and factor |
 | $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | The fields of the connection |
 
 ## Further Reading

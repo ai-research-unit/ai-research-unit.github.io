@@ -14,11 +14,11 @@ What the article does not do. It adds no solution and no equation. The transform
 
 ## Conventions
 
-The algebra and the word are the polar article's: $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ and $\varepsilon=\pm1$. The density is $\rho_{\mathrm{num}}=\varrho^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, the action is $S=\hbar\theta_{\mathrm{pha}}$, the velocity is $\vec v=\vec\nabla_\Phi S/m$, and the quantum potential is
+The algebra and the word are the polar article's: $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ and $\varepsilon=\pm1$. The density is $\rho_{\mathrm{num}}=\varrho^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, the action is $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, the velocity is $\vec v=\vec\nabla_\Phi S/m$, and the quantum potential is
 
 $$
-Q=-\frac{\hbar^{2}}{2m}\frac{\Delta_\Phi \varrho}{\varrho}
-=-\frac{\hbar^{2}}{4m}\Bigl(\Delta_\Phi\ln\rho_{\mathrm{num}}+\tfrac12\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}\Bigr).
+Q=-\frac{h^{2}}{8\pi^{2}m}\frac{\Delta_\Phi \varrho}{\varrho}
+=-\frac{h^{2}}{16\pi^{2}m}\Bigl(\Delta_\Phi\ln\rho_{\mathrm{num}}+\tfrac12\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}\Bigr).
 $$
 
 The transform is the transform of [The Derivative, the Field and the Transform](the-derivative-the-field-and-the-transform.html), with the symbol rule of [The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html):
@@ -31,7 +31,7 @@ $$
 \text{a plane wave }e^{i(\vec k\cdot\vec r-\omega t')}.
 $$
 
-The wave number is $\vec k=\vec p/\hbar$ and the frequency is $\omega=E/\hbar$, so no new symbol is introduced and no fourth use is made of a wave number. Time is $t'$ and $\hbar$ is written explicitly.
+The wave number is $\vec k=\frac{2\pi \vec p}{h}$ and the frequency is $\omega=\frac{2\pi E}{h}$, so no new symbol is introduced and no fourth use is made of a wave number. Time is $t'$ and $\frac{h}{2\pi}$ is written explicitly.
 
 ## The Mode, and the One Bracket It Occupies
 
@@ -50,7 +50,7 @@ $$
 $$
 \rho_{\mathrm{num}}=\lvert a\rvert^{2},
 \qquad
-\vec v=\frac{\hbar\vec k}{m},
+\vec v=\frac{h\vec k}{2\pi m},
 \qquad
 Q=0,
 \qquad
@@ -124,15 +124,15 @@ A degree-zero object is a ratio, and a ratio of two transforms is not the transf
 The quantised circulation is therefore inter-mode as well. From [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html),
 
 $$
-\oint\vec v\cdot\mathrm{d}\vec l=\frac{2\pi\hbar\,n}{m}
+\oint\vec v\cdot\mathrm{d}\vec l=\frac{h\,n}{m}
 $$
 
 around a loop that links a nodal line of winding $n$. A mode has no such loop, so the quantum of circulation is invisible to every single mode. **The quantum $h/m$ is a statement about a pair of modes and not about a wave.**
 
-The vorticity does not follow the same rule, and the difference is worth stating. The velocity is $\hbar\nabla\theta/m$, so
+The vorticity does not follow the same rule, and the difference is worth stating. The velocity is $\frac{h}{2\pi}\nabla\theta/m$, so
 
 $$
-\vec\nabla_\Phi\times\vec v=\frac{\hbar}{m}\vec\nabla_\Phi\times\nabla\theta=0
+\vec\nabla_\Phi\times\vec v=\frac{h}{2\pi m}\vec\nabla_\Phi\times\nabla\theta=0
 $$
 
 wherever the phase is twice differentiable — at a mode and at every superposition alike. The vorticity vanishes identically at every order of superposition, and what a superposition supplies is not a vorticity but a place where the phase is not a function, that is a node. The fluid is irrotational everywhere the flow is defined, and the rotation it does carry is a circulation around a hole in its domain. That is the precise sense in which this rung's rotation is topological and not local, and it contrasts with the spinor rung, where the vorticity is a local quantity read off a frame.
@@ -170,11 +170,11 @@ The denial. The transform carries $\mathbb{B}$-valued functions to $\mathbb{B}$-
 
 ## Summary
 
-A mode has a constant scale, so its density is a constant, its velocity is the constant $\hbar\vec k/m$, and its quantum potential and quantum stress vanish. The density is blind to the wave number and the velocity is read from the wave number alone, because the two are functionals of different factors of the word.
+A mode has a constant scale, so its density is a constant, its velocity is the constant $\frac{h}{2\pi}\vec k/m$, and its quantum potential and quantum stress vanish. The density is blind to the wave number and the velocity is read from the wave number alone, because the two are functionals of different factors of the word.
 
 The quantum potential is a functional of the scale and is homogeneous of degree zero in the amplitude, so it is not additive in the density. On one hundred events a single mode gave $\max\lvert Q\rvert=4.2\times10^{-16}$ and a two-mode superposition gave $4.36$ at the same wave numbers.
 
-A mode has no node, because its modulus is constant and positive. The nodal set, and with it the quantised circulation $2\pi\hbar n/m$, is therefore inter-mode: the quantum of circulation is a statement about a pair of waves and not about one.
+A mode has no node, because its modulus is constant and positive. The nodal set, and with it the quantised circulation $h n/m$, is therefore inter-mode: the quantum of circulation is a statement about a pair of waves and not about one.
 
 The vorticity vanishes identically at every order of superposition, since the velocity is a gradient. What a superposition supplies is not a vorticity but a place where the phase stops being a function, so this rung's rotation is topological and not local.
 
@@ -186,11 +186,11 @@ The momentum of a mode lives in the phase bracket and the quantum data live in t
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The central field, in its word |
 | $a$ | The complex amplitude of a mode |
-| $\vec k=\vec p/\hbar$, $\omega=E/\hbar$ | The label of a mode |
+| $\vec k=\frac{2\pi \vec p}{h}$, $\omega=\frac{2\pi E}{h}$ | The label of a mode |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | The density; constant at a mode |
-| $\vec v=\vec\nabla_\Phi S/m=\hbar\vec k/m$ | The velocity; constant at a mode |
-| $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$ | The quantum potential; zero at a mode |
-| $\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | The quantum stress; zero at a mode |
+| $\vec v=\vec\nabla_\Phi S/m=\frac{h}{2\pi}\vec k/m$ | The velocity; constant at a mode |
+| $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | The quantum potential; zero at a mode |
+| $\sigma^{Q}_{ij}=\frac{h^{2}}{16\pi^{2}m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | The quantum stress; zero at a mode |
 | $2\sqrt{\rho_1\rho_2}\cos(\theta_1-\theta_2)$ | The interference term of a superposition |
 | $\eta$, $\Delta k$ | The second amplitude relative to the first, and the separation of the two labels; the mean curvature they add is $\tfrac12\eta^{2}(\Delta k)^{2}$ |
 | $\varepsilon=\pm1$ | The branch; the datum the transform does not read |

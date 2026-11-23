@@ -137,7 +137,7 @@ Two structural remarks do belong to the model. The right-handed neutrino slot ex
 
 ## Lifetime: the One Relation Phase Space Computes
 
-A lifetime is the inverse width, $\tau=\hbar/\Gamma$, and the width is fixed by the mass and by the open channels. For the muon and the tau the final state is the same, $\ell\to e\bar\nu_e\nu_\ell$, and the parent mass is far above every threshold. The width then scales as the fifth power of the parent mass:
+A lifetime is the inverse width, $\tau=\frac{h}{2\pi \Gamma}$, and the width is fixed by the mass and by the open channels. For the muon and the tau the final state is the same, $\ell\to e\bar\nu_e\nu_\ell$, and the parent mass is far above every threshold. The width then scales as the fifth power of the parent mass:
 
 $$
 \frac{\Gamma(\tau\to e\bar\nu_e\nu_\tau)}{\Gamma(\mu\to e\bar\nu_e\nu_\mu)}=\left(\frac{m_\tau}{m_\mu}\right)^{5}.
@@ -153,7 +153,7 @@ and from the measured lifetime of the tau, $\tau_\tau=2.903\times10^{-13}$ s, it
 
 $$
 \frac{\Gamma(\tau\to e\bar\nu\nu)}{\Gamma(\mu\to\mathrm{all})}
-=\frac{0.1782\times\hbar/2.903\times10^{-13}}{\hbar/2.1969811\times10^{-6}}
+=\frac{0.1782\times h/2.903\times10^{-13}}{h/2.1969811\times10^{-6}}
 =1.3486\times10^{6}.
 $$
 

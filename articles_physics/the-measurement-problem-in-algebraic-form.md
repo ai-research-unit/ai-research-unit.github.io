@@ -75,7 +75,7 @@ $$
 
 using $\tilde\Pi_{\mathrm{id},1,2}^2 = \tilde\Pi_{\mathrm{id},1,2}$ and $\langle\tilde\Pi_{\mathrm{id},1,2},\tilde{Ϛ}_{\Psi}\rangle_{*} = \tfrac12 p_\pm$. As a linear map on the four-dimensional real space $\mathbb{B}_{\Psi}$, this has rank one: its image is the single ray spanned by $\tilde\Pi_{\mathrm{id},1,2}$. It does not preserve the biquaternion norm unless $\tilde\Pi_{\mathrm{id},1,2} = e_t$, and it is not invertible.
 
-The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
+The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\frac{h}{2\pi}\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
 
 The measurement update of *Quantum Physics in Biquaternionic Form* is the normalized version of the idempotent case,
 

@@ -28,7 +28,7 @@ $$
 \qquad
 T_a=\tfrac12 \vec e_a ,\ \ [T_a,T_b]=\sum_c\varepsilon_{abc}T_c ,\ \ 2\,\mathrm{Sc}(T_aT_b)=-\tfrac12\delta_{ab},
 $$
-with the connection $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} \vec e_a\in\mathrm{SU}(2)$, the coupling $\kappa=\frac{ϙ}{\hbar}$, the covariant derivative $D_\mu=\partial/\partial R_\mu+i\kappa\mathcal{A}_\mu$, the curvature $F_{\mu\nu}=\partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, its adjoint law $F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$ for a unit real quaternion $\tilde U$, and the adjoint covariant derivative $D_\lambda \tilde{Q}=\partial/\partial R_\lambda \tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$. The connection components are taken in the unnormalized basis $\vec e_a$, in which the structure constants are $f_{abc}=2\varepsilon_{abc}$; in the normalized basis $T_a=\tfrac12 \vec e_a$ the same algebra reads $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$, with $f_{abc}=\varepsilon_{abc}$, and in the Hermitian-generator realization $T_a=i\vec e_a\in\mathbb{B}_{\Psi}$ of the BRST companion it reads $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c=i\sum_c f_{abc}T_c$, with $f_{abc}=2\varepsilon_{abc}$ in that realization. The two realizations are related by the central $i$, which exchanges the sectors, and the same structure constants $f_{abc}$ serve both. The matrix trace on the $\mathrm{SU}(2)$ factor is written $\mathrm{Tr}$ and is distinct from the informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The constants are carried in every exponent, which reads $\frac{i}{\hbar}S$ with $\hbar$ the action quantum; no unit is set to one.
+with the connection $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} \vec e_a\in\mathrm{SU}(2)$, the coupling $\kappa=\frac{2\pi ϙ}{h}$, the covariant derivative $D_\mu=\partial/\partial R_\mu+i\kappa\mathcal{A}_\mu$, the curvature $F_{\mu\nu}=\partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, its adjoint law $F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$ for a unit real quaternion $\tilde U$, and the adjoint covariant derivative $D_\lambda \tilde{Q}=\partial/\partial R_\lambda \tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$. The connection components are taken in the unnormalized basis $\vec e_a$, in which the structure constants are $f_{abc}=2\varepsilon_{abc}$; in the normalized basis $T_a=\tfrac12 \vec e_a$ the same algebra reads $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$, with $f_{abc}=\varepsilon_{abc}$, and in the Hermitian-generator realization $T_a=i\vec e_a\in\mathbb{B}_{\Psi}$ of the BRST companion it reads $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c=i\sum_c f_{abc}T_c$, with $f_{abc}=2\varepsilon_{abc}$ in that realization. The two realizations are related by the central $i$, which exchanges the sectors, and the same structure constants $f_{abc}$ serve both. The matrix trace on the $\mathrm{SU}(2)$ factor is written $\mathrm{Tr}$ and is distinct from the informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The constants are carried in every exponent, which reads $\frac{2\pi i}{h}S$ with $\frac{h}{2\pi}$ the action quantum; no unit is set to one.
 
 - Companion article *The Gauge Field Path Integral in Biquaternionic Form*, for the abelian Faddeev–Popov construction, the gauge-fixing parameter and the propagator.
 - Companion article *The Yang–Mills Equation in Biquaternionic Form*, for the non-abelian curvature, the field equation and covariant conservation.
@@ -68,7 +68,7 @@ Z=\int\mathcal{D}\mathcal{A}\,\exp(i\theta_{\mathrm{ym}})
 $$
 with $\mathrm{Vol}(\mathcal{G})$ the infinite volume of the group of gauge transformations. The factor is an artifact of the parameterization and must be removed; the Faddeev–Popov construction removes it, and in the non-abelian case it does so at the cost of the determinant and the ghosts.
 
-Throughout, $\theta_{\mathrm{ym}}:=S_{\mathrm{YM}}[\mathcal{A}]/\hbar$ is real: the Yang--Mills action is $-\int d^4r\,\mathrm{Tr}\langle\tilde{\mathcal{F}},\tilde{\mathcal{F}}\rangle$, a real number for real potentials, so $\exp(i\theta_{\mathrm{ym}})$ is a phase of modulus one and the weight on each orbit is unitary.
+Throughout, $\theta_{\mathrm{ym}}:=S_{\mathrm{YM}}[\mathcal{A}]\frac{2\pi}{h}$ is real: the Yang--Mills action is $-\int d^4r\,\mathrm{Tr}\langle\tilde{\mathcal{F}},\tilde{\mathcal{F}}\rangle$, a real number for real potentials, so $\exp(i\theta_{\mathrm{ym}})$ is a phase of modulus one and the weight on each orbit is unitary.
 
 ## Gauge Fixing and the Faddeev–Popov Determinant
 
@@ -169,7 +169,7 @@ Z=\int\mathcal{D}\mathcal{A}\,\mathcal{D}c\,\mathcal{D}\bar c\;\exp(i\theta_{\ma
 $$
 is the Yang–Mills path integral of the framework.
 
-Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
+Throughout this article $\theta_{\mathrm{act}}:=\frac{2\pi \mathrm{Re}\,S}{h}$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\frac{2\pi \mathrm{Im}\,S}{h}$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
 ## The Propagator and Gauge-Parameter Independence
 
@@ -291,7 +291,7 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | $[\vec e_a,\vec e_b]=2\sum_c\varepsilon_{abc}\vec e_c$, $T_a=\tfrac12 \vec e_a$, $2\,\mathrm{Sc}(T_aT_b)=-\tfrac12\delta_{ab}$ | Generators and matrix trace |
 | $a,b,c$; $\mu,\nu$ | Internal colour and spacetime indices, both written low; every contraction over them is an explicit sum |
 | $f_{abc}=2\varepsilon_{abc}$ | Structure constants from the quaternion commutator, in the unnormalized basis $\vec e_a$ ($f_{abc}=\varepsilon_{abc}$ in the normalized basis $T_a=\tfrac12\vec e_a$) |
-| $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} \vec e_a\in\mathrm{SU}(2)$, $\kappa=\frac{ϙ}{\hbar}$ | Connection and coupling |
+| $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} \vec e_a\in\mathrm{SU}(2)$, $\kappa=\frac{2\pi ϙ}{h}$ | Connection and coupling |
 | $D_\mu=\partial/\partial R_\mu+i\kappa\mathcal{A}_\mu$, $D_\lambda \tilde{Q}=\partial/\partial R_\lambda \tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Covariant derivative; adjoint action |
 | $\tilde{\mathcal{F}}=\tilde\nabla_\Phi\mathcal{A}+\tfrac{i\kappa}{2}[\mathcal{A},\mathcal{A}]$ | Non-abelian curvature |
 | $S_{\mathrm{YM}}=-\int\mathrm{Tr}\langle\tilde{\mathcal{F}}\rangle_{\natural}$ | Yang–Mills action (matrix trace) |

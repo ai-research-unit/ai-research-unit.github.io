@@ -56,9 +56,9 @@ The mapping is a table, and every row is a comparison of what a bilinear reads.
 | $k_\mu$, the momentum | $\tilde K_{\mu}/k_m$, the phase gradient in units of the mass wave number | reading, with a qualifier |
 | $\theta$, the internal angle | $\theta_{\mathrm{axr}}$, the rotor angle | forced by the count, given the first four rows |
 
-Two of the rows carry a unit as well as a comparison, and the momentum row is one of them. Takabayasi defines $k_\mu=p_\mu/(mc)$, a momentum divided by a mass, so his $k_\mu$ is dimensionless. The word's momentum is the phase gradient, an inverse length. The ratio between them is the mass wave number $k_m=mc/\hbar$, so the row reads $k_\mu=\tilde K_\mu/k_m$ and a table that equates the two loses the $\hbar$. His units also divide out the speed of light, which is why his $v_\mu$ is $\tilde V_{\Phi}/c$ and his $\rho$ is the corpus's $\rho_{\mathrm{num}}$; with $c$ carried, the velocity's norm is $c^{2}$ in the word and $1$ in his display.
+Two of the rows carry a unit as well as a comparison, and the momentum row is one of them. Takabayasi defines $k_\mu=p_\mu/(mc)$, a momentum divided by a mass, so his $k_\mu$ is dimensionless. The word's momentum is the phase gradient, an inverse length. The ratio between them is the mass wave number $k_m=\frac{2\pi mc}{h}$, so the row reads $k_\mu=\tilde K_\mu/k_m$ and a table that equates the two loses the $\frac{h}{2\pi}$. His units also divide out the speed of light, which is why his $v_\mu$ is $\tilde V_{\Phi}/c$ and his $\rho$ is the corpus's $\rho_{\mathrm{num}}$; with $c$ carried, the velocity's norm is $c^{2}$ in the word and $1$ in his display.
 
-The first three rows are identities and they are the corpus's own statements. The density of the word is $\rho_{\mathrm{num}}=\varrho^{2}$, read from the scale. The four-velocity is $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$, read from the boost, with $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$ for every field. The spin is $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, read from the rotor. These are not correspondences of formulas; they are the same three objects named twice.
+The first three rows are identities and they are the corpus's own statements. The density of the word is $\rho_{\mathrm{num}}=\varrho^{2}$, read from the scale. The four-velocity is $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$, read from the boost, with $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$ for every field. The spin is $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{h}{4\pi}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, read from the rotor. These are not correspondences of formulas; they are the same three objects named twice.
 
 ### Why the count forces the fifth row
 
@@ -99,7 +99,7 @@ The four brackets are four different objects, and the equation cannot mix them.
 | bracket | type | fluid reading |
 | --- | --- | --- |
 | $\tfrac12\partial_\mu\ln\rho_{\mathrm{num}}$ | real central scalar | continuity of the density |
-| $i\partial_\mu\theta_{\mathrm{pha}}$ | central imaginary | guidance: $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ |
+| $i\partial_\mu\theta_{\mathrm{pha}}$ | central imaginary | guidance: $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ |
 | $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | transport of the velocity |
 | $\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$ | real vector part | transport of the spin direction |
 
@@ -116,7 +116,7 @@ Both formulations separate the current from the spin, and both separate them the
 | object | Takabayasi | polar word |
 | --- | --- | --- |
 | current | $\rho v_\mu$ | $\rho_{\mathrm{num}}\tilde V_{\Phi}$, reading $\rho_{\mathrm{num}}$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ |
-| spin density | $\rho w_\mu$ | $\rho_{\mathrm{num}}\frac{\hbar}{2}i\vec s$, reading $\rho_{\mathrm{num}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ |
+| spin density | $\rho w_\mu$ | $\rho_{\mathrm{num}}\frac{h}{4\pi}i\vec s$, reading $\rho_{\mathrm{num}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ |
 | what neither reads | $\theta$ | $\theta_{\mathrm{pha}}$ |
 
 The separation is the same and the reason is not. In the tensor formulation the current and the spin are different bilinears, and the separation is a fact about which bilinear is which. In the word the current reads the Hermitian factor and the spin reads the real-unitary factor, and the separation is a consequence of the four factors being of different types. **The word explains the separation and does not merely record it.**
@@ -134,7 +134,7 @@ His assumption and the word's condition are different conditions. The factorisat
 - Parts of definite value. An element with $\tilde X\vec e_z=\pm i\tilde X$ is a zero divisor at every amplitude, because $\tilde X(\vec e_z\mp ie_t)=0$ and the bracket is not zero. Every field of definite chirality is of this kind.
 - One-sided plane waves. A plane wave with $\tilde K_{\Phi}\tilde\Xi_{0}=0$ and $\tilde K_{\Phi}$ null has $N(\tilde\Xi_{0})=0$ everywhere. It is nowhere zero and its density never vanishes, and its word does not exist.
 
-The second family is the one that matters physically, because a one-sided wave is what a massless helicity eigenstate is. His variables $\rho$, $v_\mu$ and $w_\mu$ are defined on it, since $\rho>0$. Whether his formulation proceeds on it is a separate question. Several of his quantities carry the factor $1/k_m=\hbar/(mc)$, so they diverge at $m=0$ and the massless field is a limit rather than a case, and whether that limit exists for a one-sided wave is not settled here. What the comparison establishes is a difference of domain conditions: the word needs the element to be an invertible element, which is strictly stronger than $\rho\neq0$, and the one-sided wave is the field that exhibits the difference.
+The second family is the one that matters physically, because a one-sided wave is what a massless helicity eigenstate is. His variables $\rho$, $v_\mu$ and $w_\mu$ are defined on it, since $\rho>0$. Whether his formulation proceeds on it is a separate question. Several of his quantities carry the factor $1/k_m=\frac{h}{2\pi mc}$, so they diverge at $m=0$ and the massless field is a limit rather than a case, and whether that limit exists for a one-sided wave is not settled here. What the comparison establishes is a difference of domain conditions: the word needs the element to be an invertible element, which is strictly stronger than $\rho\neq0$, and the one-sided wave is the field that exhibits the difference.
 
 What survives on the cone is the two-factor decomposition. Every element is $\tilde\Xi=\tilde\Xi_{H}\tilde\Xi_{0}$ with $\tilde\Xi_{H}$ Hermitian positive semidefinite and $\tilde\Xi_{0}$ a partial isometry, and that factorisation is defined on the whole algebra. It separates a scale from a direction but not a velocity from a spin, so it is not enough for a fluid. The four-factor word is the finer decomposition and it is the one that fails.
 
@@ -292,7 +292,7 @@ No experiment separates the two formulations. What separates them is the origin 
 |---|---|
 | $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The field, in its word |
 | $\varrho$, $\rho_{\mathrm{num}}=\varrho^{2}$ | Scale; proper density |
-| $\theta_{\mathrm{pha}}$ | Angle of the word; $S=\hbar\theta_{\mathrm{pha}}$ |
+| $\theta_{\mathrm{pha}}$ | Angle of the word; $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ |
 | $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ | Rapidity and unit axis of the boost |
 | $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ | Angle and unit axis of the rotor |
 | $\tilde U_{\Psi,\mathrm b}$ | Hermitian positive boost factor |
@@ -302,11 +302,11 @@ No experiment separates the two formulations. What separates them is the origin 
 | $\tilde K_{\Phi}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ | The phase gradient; the momentum in wave-number units |
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | The current |
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
-| $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\vec s$ | The spin element |
+| $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{h}{4\pi}i\vec s$ | The spin element |
 | $\rho$, $v_\mu$, $w_\mu$, $k_\mu$, $\theta$ | Takabayasi's density, velocity, spin, momentum and internal angle |
 | $\Omega=\bar\psi\psi$, $\Omega_{\mathrm{ps}}=i\bar\psi\gamma_5\psi$ | His scalar and pseudoscalar bilinears; $\Omega=\rho\cos\theta$ and $\Omega_{\mathrm{ps}}=\rho\sin\theta$ |
 | $j_\mu$ | The current, with $\rho^{2}=\sum_\mu\varepsilon_\mu j_\mu j_\mu=\Omega^{2}+\Omega_{\mathrm{ps}}^{2}$ |
-| $k_m=mc/\hbar$ | Mass wave number; the unit that makes his $k_\mu$ dimensionless |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number; the unit that makes his $k_\mu$ dimensionless |
 | $u_\mu$, $q_\mu$, $\epsilon$ | Eckart four-velocity, heat flow, and the energy density it sees |
 | $\sum_\mu\varepsilon_\mu T_{\mu\mu}=mc^{2}\rho\cos\theta$ | Trace of the stress; the mass term |
 | $p$, $\pi^{j}{}_{k}$ | Pressure and the traceless part of the spatial block |

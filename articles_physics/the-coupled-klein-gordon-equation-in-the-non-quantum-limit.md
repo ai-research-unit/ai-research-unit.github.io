@@ -4,7 +4,7 @@
 
 The limit in one sentence. The connection enters the parent's factorisation as one additive term inside the phase's gradient, so it changes the mass shell, the transport current and the criterion, and it changes no order: order zero becomes a mass shell in the mechanical four-momentum, and its gradient is the Lorentz force.
 
-The parent proves the factorisation and prints the pair. [The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html) shows that for the central field the covariant derivative factors exactly, $\tilde\nabla_{\mathrm{gco},\Phi,\mu}(\varrho\,e^{i\theta_{\mathrm{pha}}}e_{t})=e^{i\theta_{\mathrm{pha}}}\left(\partial_\mu \varrho+i\varrho\kappa^{\mathrm{kin}}_\mu\right)e_{t}$ with $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu$, and that the square of that parenthesis gives the two boxed equations. The coupling is one term inside one square, and that is the whole of its structure.
+The parent proves the factorisation and prints the pair. [The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html) shows that for the central field the covariant derivative factors exactly, $\tilde\nabla_{\mathrm{gco},\Phi,\mu}(\varrho\,e^{i\theta_{\mathrm{pha}}}e_{t})=e^{i\theta_{\mathrm{pha}}}\left(\partial_\mu \varrho+i\varrho\kappa^{\mathrm{kin}}_\mu\right)e_{t}$ with $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_\mu$, and that the square of that parenthesis gives the two boxed equations. The coupling is one term inside one square, and that is the whole of its structure.
 
 The consequence for the limit is one substitution. Every display of the free article survives with $S\to$ the mechanical action, that is with $\partial_\mu S$ replaced by $\partial_\mu S$ minus the potential's contribution. The orders are untouched because the substitution is inside a term and does not create one.
 
@@ -30,7 +30,7 @@ What is not new. The covariant Madelung pair for a charged scalar field, the mas
 
 The sign, stated once. The parent writes the coupling as $ϙ$ with $ϙ=-q$; its mass shell carries $+ϙ c a'_{t}$ in the mechanical energy and its transport carries $-q\vec A$ in the current. Every display here uses $q$, the electric charge, $\vec\pi=\vec\nabla_\Phi S-q\vec A$ and $\mathcal E=E-q\varphi$ with $E=-c\,\partial_{r'_{t}}S$.
 
-Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+iq\tilde A_\mu/\hbar$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ with $r'_{t}=ct'$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$.
+Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iq\tilde A_\mu}{h}$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ with $r'_{t}=ct'$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=\frac{2\pi mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$.
 
 ## The Factorisation and the Pair
 
@@ -40,7 +40,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi,\mu}\bigl(\varrho\,e^{i\theta_{\mathrm{pha}}}e_{t}\bigr)
 =e^{i\theta_{\mathrm{pha}}}\Bigl(\partial_\mu \varrho+i\,\varrho\,\kappa^{\mathrm{kin}}_\mu\Bigr)e_{t},
 \qquad
-\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu,
+\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_\mu,
 $$
 
 and the parenthesis is central, so the derivation is a computation among scalars. The connection enters once, as an additive term in one scalar, and every later statement of this article is that term read at one order or another.
@@ -48,7 +48,7 @@ and the parenthesis is central, so the derivation is a computation among scalars
 The pair, in the article's letters.
 
 $$
-\Bigl(\frac{\partial S}{\partial r'_{t}}+\frac{q\varphi}{c}\Bigr)^{2}-\lvert\vec\nabla_\Phi S-q\vec A\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi \varrho}{\varrho},
+\Bigl(\frac{\partial S}{\partial r'_{t}}+\frac{q\varphi}{c}\Bigr)^{2}-\lvert\vec\nabla_\Phi S-q\vec A\rvert^{2}=m^{2}c^{2}-\frac{h^{2}}{4\pi^{2}}\frac{\Box_\Phi \varrho}{\varrho},
 \qquad
 \vec\nabla_\Phi\cdot\bigl(\rho_{\mathrm{num}}\vec\pi\bigr)+\frac{\partial}{\partial r'_{t}}\Bigl(\rho_{\mathrm{num}}\Bigl(\partial_{r'_{t}}S+\frac{q\varphi}{c}\Bigr)\Bigr)=0 .
 $$
@@ -60,7 +60,7 @@ The mass shell in mechanical variables.
 $$
 \frac{\mathcal E^{2}}{c^{2}}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}},
 \qquad
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi \varrho}{\varrho},
+Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho},
 \qquad
 \mathcal E=E-q\varphi .
 $$
@@ -69,17 +69,17 @@ The quantum potential is the free one, and the parent's reason is one line: it i
 
 ## The Criterion on the Mechanical Momentum
 
-The parameter. $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$ and $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$. The covariant derivative differentiates the phase's gradient minus the potential's contribution, so that combination is what is large and what the scale's gradient is measured against.
+The parameter. $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$ and $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$. The covariant derivative differentiates the phase's gradient minus the potential's contribution, so that combination is what is large and what the scale's gradient is measured against.
 
-Why the canonical gradient fails. Under $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+q\Gamma/\hbar$ the canonical gradient shifts by $q\vec\nabla_\Phi\Gamma$, while $\vec A$ shifts by $\vec\nabla_\Phi\Gamma$ and the two cancel inside $\vec\pi$. A criterion on the canonical gradient would be gauge dependent, and a limit whose validity depends on the gauge is a statement about the chart and not about the field.
+Why the canonical gradient fails. Under $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+\frac{2\pi q\Gamma}{h}$ the canonical gradient shifts by $q\vec\nabla_\Phi\Gamma$, while $\vec A$ shifts by $\vec\nabla_\Phi\Gamma$ and the two cancel inside $\vec\pi$. A criterion on the canonical gradient would be gauge dependent, and a limit whose validity depends on the gauge is a statement about the chart and not about the field.
 
 The order table is the free table with one substitution.
 
 | object | order in $\epsilon$ | kept by the limit |
 |---|---|---|
 | $\mathcal E$, $\vec\pi$ | $0$ | yes |
-| $\hbar\,\vec\nabla_\Phi\ln \varrho$ | $1$ | no |
-| $\hbar^{2}\,\Box_\Phi \varrho/\varrho$ | $2$ | no |
+| $\frac{h}{2\pi}\,\vec\nabla_\Phi\ln \varrho$ | $1$ | no |
+| $\frac{h^{2}}{4\pi^{2}}\,\Box_\Phi \varrho/\varrho$ | $2$ | no |
 
 **Nothing in the table mentions the potential's strength.** A large potential shifts the leading terms and creates no parameter, so the coupling costs no accuracy. The statement is the same as in the non-relativistic family and the reason is the same: the parameter counts derivatives of the scale.
 
@@ -159,7 +159,7 @@ The second term is the energy's gradient and it is absent from the non-relativis
 The circulation inherits the quantisation with the flux. For a loop bounding a surface that no node crosses,
 
 $$
-\oint\vec\pi\cdot\mathrm{d}\vec l=2\pi\hbar\,n-q\Phi_{B},
+\oint\vec\pi\cdot\mathrm{d}\vec l=h\,n-q\Phi_{B},
 $$
 
 the same statement as the non-relativistic companion's, and here it is the relativistic circulation of the mechanical momentum. The limit neither produces it nor modifies it.
@@ -169,15 +169,15 @@ the same statement as the non-relativistic companion's, and here it is the relat
 The discarded term.
 
 $$
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi \varrho}{\varrho}
-=-\frac{\hbar^{2}}{2m}\left[\frac{1}{2}\Box_\Phi\ln\rho_{\mathrm{num}}+\frac{1}{4}\left(\partial\ln\rho_{\mathrm{num}}\right)^{2}\right],
+Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho}
+=-\frac{h^{2}}{8\pi^{2}m}\left[\frac{1}{2}\Box_\Phi\ln\rho_{\mathrm{num}}+\frac{1}{4}\left(\partial\ln\rho_{\mathrm{num}}\right)^{2}\right],
 $$
 
 the free article's two forms, with the d'Alembertian and with the density alone.
 
 Nothing about the coupling appears in either form. The scale is invariant under the gauge group, the logarithm of the density is invariant, and the second derivatives are ordinary. **The quantum potential is the free one, term for term**, and the parent states it as its first finding.
 
-Its size is the free size in both denominators. Against the rest energy it is $\delta^{2}=\hbar^{2}/(m^{2}c^{2}L^{2})$; against the kinetic energy it is $\epsilon^{2}$. Neither involves $q$, so a strong potential does not make the approximation worse, and a rapidly varying one does — which is the hypothesis the next section states.
+Its size is the free size in both denominators. Against the rest energy it is $\delta^{2}=\frac{h^{2}}{4\pi^{2}}/(m^{2}c^{2}L^{2})$; against the kinetic energy it is $\epsilon^{2}$. Neither involves $q$, so a strong potential does not make the approximation worse, and a rapidly varying one does — which is the hypothesis the next section states.
 
 ## What the Coupling Costs and What It Does Not
 
@@ -213,7 +213,7 @@ The parent's covariant derivative factors exactly on the central field, with the
 
 Order zero is the mass shell in the mechanical energy and momentum, and its gradient is the Lorentz force with $\vec v=c^{2}\vec\pi/\mathcal E$. The force is the same bracket as the non-relativistic family's and the kinematics is not: $\vec\pi=\gamma m\vec v$ here and $\vec\pi=m\vec v$ there.
 
-Order one is the transport equation in the mechanical current, gauge invariant and exact, and it carries two exact companions the limit inherits: the current velocity's vorticity is $-(q/m)\vec B$, and the circulation is $2\pi\hbar n-q\Phi_{B}$. The kinematic velocity's vorticity differs from the current velocity's by the energy's gradient, a relativistic effect that the non-relativistic family cannot have.
+Order one is the transport equation in the mechanical current, gauge invariant and exact, and it carries two exact companions the limit inherits: the current velocity's vorticity is $-(q/m)\vec B$, and the circulation is $h n-q\Phi_{B}$. The kinematic velocity's vorticity differs from the current velocity's by the energy's gradient, a relativistic effect that the non-relativistic family cannot have.
 
 Order two is the free quantum potential, with the free size in both denominators. The coupling changes the value of every leading term and the accuracy of none, and it costs one unstated hypothesis: the potential must be slowly varying on the scale $L$.
 
@@ -223,7 +223,7 @@ Order two is the free quantum potential, with the free size in both denominators
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ | The parent's polar word on the central class |
 | $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | The scale; the proper density |
-| $S=\hbar\theta_{\mathrm{pha}}$, $E=-c\,\partial_{r'_{t}}S$ | The action; the canonical energy |
+| $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, $E=-c\,\partial_{r'_{t}}S$ | The action; the canonical energy |
 | $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$ | The connection |
 | $q$; the parent's $ϙ=-q$ | The electric charge; the parent's coupling |
 | $\vec\pi=\vec\nabla_\Phi S-q\vec A$ | Mechanical momentum |
@@ -232,7 +232,7 @@ Order two is the free quantum potential, with the free size in both denominators
 | $\vec V=\vec\pi/m$ | Current velocity |
 | $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}\mathcal E/(mc^{2})$ | Charge density |
 | $\epsilon=1/(\pi_{\Phi}L)$, $\delta=1/(k_{m}L)$ | The semiclassical and one-particle parameters |
-| $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ | The quantum potential; the free one |
+| $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | The quantum potential; the free one |
 | $\Phi_{B}$ | Magnetic flux through a surface the loop bounds |
 
 ## Further Reading

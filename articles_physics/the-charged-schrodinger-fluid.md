@@ -15,28 +15,28 @@ What the article supplies, in four statements.
 
 The article is a reading and not a derivation. The covariant pair is [The Coupled Schrödinger Equation in Biquaternionic Polar Variables](the-coupled-schrodinger-equation-in-biquaternionic-polar-variables.html), §*The Central Field in the Operator Setting*: the covariant continuity equation, the covariant Hamilton–Jacobi equation, and the statement that the quantum potential is unchanged. This article takes them and asks what the object is in fluid words.
 
-Conventions. The free companion's, and the coupled polar article's for the connection: $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, so that $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy enters as $-\varkappa\varphi$. Time is $t'$, the density is $\rho_{\mathrm{num}}=\varrho^{2}$, the action is $S=\hbar\theta_{\mathrm{pha}}$, and the quantum potential is $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$. The gauge transformation is $\lambda=\exp(i\varkappa\Gamma/\hbar)$ with $\Gamma$ real.
+Conventions. The free companion's, and the coupled polar article's for the connection: $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, so that $\vec\pi=-i \frac{h}{2\pi}\nabla-q\vec A$ and the potential energy enters as $-\varkappa\varphi$. Time is $t'$, the density is $\rho_{\mathrm{num}}=\varrho^{2}$, the action is $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, and the quantum potential is $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$. The gauge transformation is $\lambda=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ with $\Gamma$ real.
 
 ## The Word Collapses, and the Connection Joins the Phase
 
 The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the covariant derivative is the free one with a central addition in each slot,
 
 $$
-\tilde\Xi^{-1}D_{t'}\tilde\Xi=\partial_{t'}\ln \varrho+i\Bigl(\partial_{t'}\theta_{\mathrm{pha}}-\frac{\varkappa}{\hbar}\varphi\Bigr),
+\tilde\Xi^{-1}D_{t'}\tilde\Xi=\partial_{t'}\ln \varrho+i\Bigl(\partial_{t'}\theta_{\mathrm{pha}}-\frac{2\pi \varkappa}{h}\varphi\Bigr),
 \qquad
-\tilde\Xi^{-1}D_{\eta}\tilde\Xi=\partial_{\eta}\ln \varrho+i\Bigl(\partial_{\eta}\theta_{\mathrm{pha}}+\frac{\varkappa}{\hbar}A_{\eta}\Bigr).
+\tilde\Xi^{-1}D_{\eta}\tilde\Xi=\partial_{\eta}\ln \varrho+i\Bigl(\partial_{\eta}\theta_{\mathrm{pha}}+\frac{2\pi \varkappa}{h}A_{\eta}\Bigr).
 $$
 
-The addition is a central imaginary number, so it has one place to go. The logarithmic derivative splits into a real scalar, a central imaginary, a Hermitian element and a real vector; $-\frac{i\varkappa}{\hbar}\varphi$ and $+\frac{i\varkappa}{\hbar}A_\eta$ are central imaginary, so they join the second part and no other. On a central field there is no third and no fourth part to receive anything; on a general field there is, and they still receive nothing, because the addition's type does not depend on the field.
+The addition is a central imaginary number, so it has one place to go. The logarithmic derivative splits into a real scalar, a central imaginary, a Hermitian element and a real vector; $-\frac{2\pi i\varkappa}{h}\varphi$ and $+\frac{2\pi i\varkappa}{h}A_\eta$ are central imaginary, so they join the second part and no other. On a central field there is no third and no fourth part to receive anything; on a general field there is, and they still receive nothing, because the addition's type does not depend on the field.
 
 Three quantities are therefore invariant before any calculation. The scale is: $\partial_\eta\ln \varrho$ is untouched. The density is, because it is a function of the scale. The quantum potential is, because it is built from $\varrho$ and its ordinary Laplacian, and the gradient the connection could shift is the phase's and not the scale's. The statement is exact and it is the article's sharpest one: *the field cannot make a quantum fluid denser or its quantum pressure stronger; it can only turn the phase.*
 
 The two gauge-invariant combinations are the kinetic momentum and the kinetic energy.
 
 $$
-\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A=\vec\nabla_\Phi S-q\vec A,
+\vec\pi=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}-q\vec A=\vec\nabla_\Phi S-q\vec A,
 \qquad
-\mathcal E=-\hbar\,\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi .
+\mathcal E=-\frac{h}{2\pi}\,\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi .
 $$
 
 Both are invariant term by term: the phase's gradient shifts by $\varkappa\nabla\Gamma$ and $\vec A$ by $-\vec\nabla_\Phi\Gamma$; the phase's rate shifts by $-\varkappa\partial_{t'}\Gamma$ and $\varphi$ by $+\partial_{t'}\Gamma$. Neither the phase nor its rate is invariant alone, and the pairing is the statement that the fluid's data are the invariants and the chart's coordinates are not.
@@ -130,14 +130,14 @@ The rank is two, and the electric field never enters. $\vec\omega$ is a three-ve
 **The canonical circulation is quantised always and the kinetic circulation only where the flux vanishes.** Around a loop that links a nodal line,
 
 $$
-\oint\vec v\cdot\mathrm{d}\vec l=\frac{2\pi\hbar\,n+\varkappa\,\Phi_{B}}{m},
+\oint\vec v\cdot\mathrm{d}\vec l=\frac{h\,n+\varkappa\,\Phi_{B}}{m},
 \qquad
 \Phi_{B}=\oint\vec A\cdot\mathrm{d}\vec l=\int_{\Sigma}\vec B\cdot\mathrm{d}\vec S,
 $$
 
-with $n$ the winding of the phase. The derivation is one line: $\vec v=(\vec\nabla_\Phi S-q\vec A)/m$, the phase is single valued on the field so its gradient integrates to $2\pi\hbar n$, and the potential integrates to the flux. With $\varkappa$ the negative of the electric charge this is $(2\pi\hbar n-q\Phi_{B})/m$, the standard statement that a magnetic flux shifts every circulation quantum.
+with $n$ the winding of the phase. The derivation is one line: $\vec v=(\vec\nabla_\Phi S-q\vec A)/m$, the phase is single valued on the field so its gradient integrates to $h n$, and the potential integrates to the flux. With $\varkappa$ the negative of the electric charge this is $(h n-q\Phi_{B})/m$, the standard statement that a magnetic flux shifts every circulation quantum.
 
-So the flux shifts the circulation and does not quantise it. The kinetic circulation is a multiple of $2\pi\hbar/m$ exactly when $\varkappa\Phi_{B}$ is one too — in particular where $\vec B$ vanishes on a spanning surface — and otherwise it takes the flux's value and is not a multiple of anything. The canonical circulation, being $\vec\nabla_\Phi S$'s, is a multiple always.
+So the flux shifts the circulation and does not quantise it. The kinetic circulation is a multiple of $h/m$ exactly when $\varkappa\Phi_{B}$ is one too — in particular where $\vec B$ vanishes on a spanning surface — and otherwise it takes the flux's value and is not a multiple of anything. The canonical circulation, being $\vec\nabla_\Phi S$'s, is a multiple always.
 
 What the loop statement needs is only one phase, single valued on the loop. It does not need the connection to be weak, the flow to be slow, or the region to be free of the field's effects; and it does not need a condensate. The single-particle fluid's circulation is quantised for the same reason a superfluid's is, and the reason is the single-valuedness of one phase, not the presence of a macroscopic occupation.
 
@@ -145,7 +145,7 @@ The Aharonov–Bohm statement and the fluxoid are the same identity read twice. 
 
 ## What the Coupling Does Not Change
 
-**Density, quantum potential and stress are untouched, and the reason is one type.** $\rho_{\mathrm{num}}=\varrho^{2}$ is the scale's; $Q$ is the scale's Laplacian; $\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ is the scale's second derivatives. The connection is central imaginary, joins the phase bracket, and cannot reach the scale. So the stress identity of the free article holds verbatim, with the same tensor and the same force:
+**Density, quantum potential and stress are untouched, and the reason is one type.** $\rho_{\mathrm{num}}=\varrho^{2}$ is the scale's; $Q$ is the scale's Laplacian; $\sigma^{Q}_{ij}=\frac{h^{2}}{16\pi^{2}m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ is the scale's second derivatives. The connection is central imaginary, joins the phase bracket, and cannot reach the scale. So the stress identity of the free article holds verbatim, with the same tensor and the same force:
 
 $$
 \partial_{j}\sigma^{Q}_{ij}=-\rho_{\mathrm{num}}\,\partial_{i}Q,
@@ -165,7 +165,7 @@ The vorticity is the quantity the ladder orders, and the ordering is by the orde
 
 | rung | velocity | vorticity | rank |
 | --- | --- | --- | --- |
-| Euler, $\hbar\to0$ | $\vec\nabla_\Phi\Phi$, a gradient | $0$ | $0$ |
+| Euler, $h\to0$ | $\vec\nabla_\Phi\Phi$, a gradient | $0$ | $0$ |
 | Schrödinger | $\vec\nabla_\Phi S/m$, a gradient | $0$ | $0$ |
 | charged Schrödinger | $\vec\pi/m$, a gradient plus a potential | $\varkappa\vec B/m$ | $2$ |
 | Klein–Gordon | $\tilde P_{\Phi}/m$, a gradient | $0$ | $0$ |
@@ -177,7 +177,7 @@ The rank is the count of what the flow can hold. Rank zero is one function's wor
 
 ## What Is Established and What Is Interpretation
 
-Established. That the connection is central imaginary in every slot and joins the phase bracket only, by its type. That the density, the quantum potential and the quantum stress are therefore invariant under the coupling. The covariant pair, with the kinetic momentum in the continuity equation and in the kinetic term, and $-\varkappa\varphi$ in the potential. The gauge invariance of $\vec\pi$ and $\mathcal E$, term by term. That the velocity is $\vec\pi/m$ and is not a gradient. That the Lorentz force appears as $-\varkappa(\vec E+\vec v\times\vec B)$ in the acceleration law, verified component by component, with the quantum force charge-blind and additive. The vorticity identity $\vec\omega=\varkappa\vec B/m$, exact and unconditional, with the canonical flow irrotational. That $\vec\nabla_\Phi\cdot\vec\omega=0$ combined with the identity gives $\vec\nabla_\Phi\cdot\vec B=0$. That the vorticity's rate is Faraday's law, with no velocity in it. That the kinetic circulation is $(2\pi\hbar n+\varkappa\Phi_{B})/m$ and the canonical one is $2\pi\hbar n/m$. That the stress identity and the absence of a state law survive the coupling unchanged. That the vorticity's rank is at most two, and that $\vec E\cdot\vec B$ therefore has no non-relativistic image.
+Established. That the connection is central imaginary in every slot and joins the phase bracket only, by its type. That the density, the quantum potential and the quantum stress are therefore invariant under the coupling. The covariant pair, with the kinetic momentum in the continuity equation and in the kinetic term, and $-\varkappa\varphi$ in the potential. The gauge invariance of $\vec\pi$ and $\mathcal E$, term by term. That the velocity is $\vec\pi/m$ and is not a gradient. That the Lorentz force appears as $-\varkappa(\vec E+\vec v\times\vec B)$ in the acceleration law, verified component by component, with the quantum force charge-blind and additive. The vorticity identity $\vec\omega=\varkappa\vec B/m$, exact and unconditional, with the canonical flow irrotational. That $\vec\nabla_\Phi\cdot\vec\omega=0$ combined with the identity gives $\vec\nabla_\Phi\cdot\vec B=0$. That the vorticity's rate is Faraday's law, with no velocity in it. That the kinetic circulation is $(h n+\varkappa\Phi_{B})/m$ and the canonical one is $h n/m$. That the stress identity and the absence of a state law survive the coupling unchanged. That the vorticity's rank is at most two, and that $\vec E\cdot\vec B$ therefore has no non-relativistic image.
 
 Interpretation. That the vorticity's being the field is best read as the statement that the fluid's rotation is a response and not a degree of freedom: the warrant is that $\vec\omega$ is a function of $\vec B$ alone, and the reading is the programme's step. That the rank table orders the block by the equation's order rather than by the field's spin is an observation about the table and not a theorem; the spin-one and spinor fluids of the block are not in it. That the identity's unconditional form at this rung is a *gain* is a judgement; the companion's qualified statement is not refuted by it.
 
@@ -197,7 +197,7 @@ The vorticity is the field: $\vec\omega=\varkappa\vec B/m$, exactly and at every
 
 The rank is two, and the electric field never enters the vorticity. The charged spin-zero fluid's rank four when $\vec E\cdot\vec B\ne0$ has no non-relativistic image, because a boost mixes the two halves of the field and there is no boost here.
 
-The kinetic circulation is $(2\pi\hbar n+\varkappa\Phi_{B})/m$ around a loop that links a node, and the canonical circulation is $2\pi\hbar n/m$ unconditionally; the kinetic one is a multiple of $2\pi\hbar/m$ only where the flux is. The flux term is the same statement as the Aharonov–Bohm phase.
+The kinetic circulation is $(h n+\varkappa\Phi_{B})/m$ around a loop that links a node, and the canonical circulation is $h n/m$ unconditionally; the kinetic one is a multiple of $h/m$ only where the flux is. The flux term is the same statement as the Aharonov–Bohm phase.
 
 The density is a norm with one sign, so the charge density $\varkappa\rho_{\mathrm{num}}$ has one sign too, and there is no second sheet.
 
@@ -210,19 +210,19 @@ The stress identity, the absence of an equation of state and the non-dissipativi
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The central field, in its word |
 | $\varkappa$ | Coupling; minus the electric charge, $q=-\varkappa$ |
 | $\varphi$, $\vec A$ | Scalar and vector potentials |
-| $S=\hbar\theta_{\mathrm{pha}}$ | Action; gauge dependent |
+| $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | Action; gauge dependent |
 | $\vec p_{\mathrm{can}}=\vec\nabla_\Phi S$ | Canonical momentum; a gradient |
 | $\vec\pi=\vec\nabla_\Phi S-q\vec A$ | Kinetic momentum; gauge invariant |
 | $\vec v=\vec\pi/m$ | Velocity; gauge invariant |
-| $\mathcal E=-\hbar\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi$ | Kinetic energy; gauge invariant |
+| $\mathcal E=-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi$ | Kinetic energy; gauge invariant |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | Density; gauge invariant |
 | $\vec j=\rho_{\mathrm{num}}\vec v$ | Current; the charge current is $\varkappa\vec j$ |
-| $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; unchanged by the coupling |
-| $\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | Quantum stress; unchanged by the coupling |
+| $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; unchanged by the coupling |
+| $\sigma^{Q}_{ij}=\frac{h^{2}}{16\pi^{2}m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | Quantum stress; unchanged by the coupling |
 | $\vec\omega=\vec\nabla_\Phi\times\vec v$ | Vorticity; $\varkappa\vec B/m$ |
 | $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Field strengths |
 | $\Phi_{B}=\oint\vec A\cdot\mathrm{d}\vec l$ | Magnetic flux through a spanning surface |
-| $\lambda=\exp(i\varkappa\Gamma/\hbar)$ | Gauge transformation |
+| $\lambda=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ | Gauge transformation |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
 ## Further Reading

@@ -32,19 +32,19 @@ $$
 
 The coordinate is $R_t=i\,r_t'$, so $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and the temporal slot of the gradient's symbol is $+i(ik_t')=-k_t'$, real; the three spatial slots are $i\kappa_\eta$, imaginary. Write $\sigma_\mu$ for those four numbers, so $\sigma_t=-k_t'$ and $\sigma_\eta=i\kappa_\eta$. A reader who takes the metric signs from the slot list instead of from $\partial/\partial R_t=-i\,\partial/\partial r_t'$ will put an extra $-1$ on $\sigma_t$ and will then find an imaginary cross term that does not exist. The corpus has already spent that sign twice, once in $R_t=ir_t'$ and once in $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r_t'}^{2}$, and there is none left to spend.
 
-With $c_\mu=\frac{i\,ϙ}{\hbar}A_\mu$ and $\tilde A_\Phi=i a_t' e_t+\sum_\eta A_\eta\vec e_\eta$ for real $a_t'$ and real $A_\eta$, the four coefficients are
+With $c_\mu=\frac{2\pi i\,ϙ}{h}A_\mu$ and $\tilde A_\Phi=i a_t' e_t+\sum_\eta A_\eta\vec e_\eta$ for real $a_t'$ and real $A_\eta$, the four coefficients are
 
 $$
-c_t=\frac{i\,ϙ}{\hbar}\,i a_t'=-\frac{ϙ a_t'}{\hbar}\ \text{real},
+c_t=\frac{2\pi i\,ϙ}{h}\,i a_t'=-\frac{2\pi ϙ a_t'}{h}\ \text{real},
 \qquad
-c_\eta=\frac{i\,ϙ}{\hbar}A_\eta=i\,a_\eta\ \text{imaginary},
+c_\eta=\frac{2\pi i\,ϙ}{h}A_\eta=i\,a_\eta\ \text{imaginary},
 \qquad
-a_\eta:=\frac{ϙ}{\hbar}A_\eta .
+a_\eta:=\frac{2\pi ϙ}{h}A_\eta .
 $$
 
 The coefficient $c_\mu$ always carries an index and the speed of light $c$ never does; the corpus's $r_t'=ct'$ is the only place the letter appears unindexed. The writing $A_t=ia_t'$ is the parent's and it is the one the anti-Hermiticity of $\tilde A_\Phi$ produces: $\tilde A_\Phi^{*}=-\tilde A_\Phi$ holds exactly when $a_t'$ and $\vec A$ are both real.
 
-The mechanical wave number is $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$, whose temporal slot is $-k_t'+c_t$ in the gradient's units. First, the transform carries $\mathbb{B}$-valued functions to $\mathbb{B}$-valued functions and never carries a material-sector field to an informational-sector one; the fork below is about classes of scalars and not about sectors. Second, a symbol exists only where the coefficients are constant, which is the licence used throughout and the first entry in *Limits*. Third, a Legendre transform between a field and its conjugate momentum grants no Fourier reading, and nothing below is one.
+The mechanical wave number is $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$, whose temporal slot is $-k_t'+c_t$ in the gradient's units. First, the transform carries $\mathbb{B}$-valued functions to $\mathbb{B}$-valued functions and never carries a material-sector field to an informational-sector one; the fork below is about classes of scalars and not about sectors. Second, a symbol exists only where the coefficients are constant, which is the licence used throughout and the first entry in *Limits*. Third, a Legendre transform between a field and its conjugate momentum grants no Fourier reading, and nothing below is one.
 
 ## The Two Symbols
 
@@ -152,7 +152,7 @@ $$
 
 The first is the parent's $(\omega-c_t)^{2}-\lvert\vec\kappa\rvert^{2}-k_m^{2}=0$, the second its $\omega^{2}-\lvert\vec\kappa\rvert^{2}-k_m^{2}-c_t^{2}=0$, with $\omega$ standing for $k_t'$ in the parent's letters. Both displays in the parent are correct, and no transposition of a real and an imaginary part is needed to read them.
 
-Its roots are $k_t'=\pm\sqrt{\lvert\vec\kappa\rvert^{2}+k_m^{2}}+c_t$: at $k_m=0.7$ and $\lvert\vec\kappa\rvert=3$ they are $+2.770584$ and $-3.390584$ against the free $\pm3.080584$. The pair translates by $c_t=-0.310000$ and its separation stays $6.161169$. A common real displacement of both branches is a shift of the energy, since $E=\hbar c\,k_t'$: $E\mapsto E+\hbar c\,c_t=E-ϙ c\,a_t'$, which is the parent's $E\mapsto E+ϙ c\,a_t'$ with the sign of $c_t$ carried through.
+Its roots are $k_t'=\pm\sqrt{\lvert\vec\kappa\rvert^{2}+k_m^{2}}+c_t$: at $k_m=0.7$ and $\lvert\vec\kappa\rvert=3$ they are $+2.770584$ and $-3.390584$ against the free $\pm3.080584$. The pair translates by $c_t=-0.310000$ and its separation stays $6.161169$. A common real displacement of both branches is a shift of the energy, since $E=\frac{h}{2\pi} c\,k_t'$: $E\mapsto E+\frac{h}{2\pi} c\,c_t=E-ϙ c\,a_t'$, which is the parent's $E\mapsto E+ϙ c\,a_t'$ with the sign of $c_t$ carried through.
 
 Its roots are $\pm\sqrt{\lvert\vec\kappa\rvert^{2}+k_m^{2}+c_t^{2}}$, here $\pm3.096143$: no displacement, and a separation of $6.192286$ against the free $6.161169$. A separation that grows with the square of the potential is a shift of the mass squared, $k_m^{2}\mapsto k_m^{2}+c_t^{2}$, and the mass shift is second order where the energy shift is first.
 
@@ -162,11 +162,11 @@ Neither root pair has an imaginary part, so neither reading describes a state wi
 
 ## The Field Strength and the Three Benches
 
-With $\tilde F=i[D_\mu,D_\nu]$ and $D_\mu$ the per-slot covariant derivative, the commutator has no derivative left: it is pointwise multiplication by $\frac{iϙ}{\hbar}F_{\mu\nu}$. The transform of a multiplication is the convolution of the transform of its coefficient with the transform of the field, so the coefficient's own transform decides the bench.
+With $\tilde F=i[D_\mu,D_\nu]$ and $D_\mu$ the per-slot covariant derivative, the commutator has no derivative left: it is pointwise multiplication by $\frac{2\pi iϙ}{h}F_{\mu\nu}$. The transform of a multiplication is the convolution of the transform of its coefficient with the transform of the field, so the coefficient's own transform decides the bench.
 
 The first bench is $\tilde F=0$ and the operator is a multiplier. A constant connection gives a symbol and the plane wave stays a plane wave. Measured on $256$ points: the covariant derivative of a plane wave of wave number $3$ occupies one mode, and the free case occupies one mode. The count is one because the coefficient is a constant and its transform is a single coefficient.
 
-An affine coefficient is not periodic, so the periodic test cannot carry it; on a line of $4096$ points with central differences, an affine $A_y=Bx$ and a Gaussian probe, the commutator identity $[D_x,D_y]g=iBg$ holds to $1.1\times10^{-5}$ against a term of scale $0.731$, which is the second-order scheme's own error. In the transform an affine coefficient is $i\,\mathrm{d}/\mathrm{d}k$, so a single wave number is carried to a derivative of a delta: still one point of support, now a jet at that point. The Heisenberg algebra of the covariant momenta, $[\tilde\pi_\mu,\tilde\pi_\nu]=i\hbarϙF_{\mu\nu}$ with a central constant on the right, is the reason the spectrum is a ladder there, and *Landau Levels in Biquaternionic Form* computes it; this article cites and does not recompute.
+An affine coefficient is not periodic, so the periodic test cannot carry it; on a line of $4096$ points with central differences, an affine $A_y=Bx$ and a Gaussian probe, the commutator identity $[D_x,D_y]g=iBg$ holds to $1.1\times10^{-5}$ against a term of scale $0.731$, which is the second-order scheme's own error. In the transform an affine coefficient is $i\,\mathrm{d}/\mathrm{d}k$, so a single wave number is carried to a derivative of a delta: still one point of support, now a jet at that point. The Heisenberg algebra of the covariant momenta, $[\tilde\pi_\mu,\tilde\pi_\nu]=i \frac{h}{2\pi}ϙF_{\mu\nu}$ with a central constant on the right, is the reason the spectrum is a ladder there, and *Landau Levels in Biquaternionic Form* computes it; this article cites and does not recompute.
 
 The coefficient's transform is then a spread, the plane wave is carried into a band of modes, and there is no ladder: a convolution is an integral operator of no finite order and it has no eigenvalue problem in the algebraic sense at all. Measured with a single sinusoid in the coefficient the derivative of a plane wave occupies $3$ modes; with a random coefficient it occupies all $256$ above the threshold. The third bench is the end of the classification, and the article says so rather than reaching for an approximation to it.
 
@@ -176,9 +176,9 @@ The lemma decides whether a symbol is real; the ladder decides whether a symbol 
 
 ## The Prohibition in Symbol Language
 
-The parent's prohibition on central fields becomes a statement about which elements a scalar symbol can be. The covariant square of a central field splits into the scalar d'Alembertian plus $\frac{iϙ}{\hbar}\xi\tilde F$, and the second term is a pure vector. A symbol is a central scalar, and a central scalar cannot absorb a vector part; so wherever $\tilde F\ne0$ the symbol of the covariant square is not the symbol of any scalar equation. **The prohibition is a mismatch of types between the symbol and the curvature term.**
+The parent's prohibition on central fields becomes a statement about which elements a scalar symbol can be. The covariant square of a central field splits into the scalar d'Alembertian plus $\frac{2\pi iϙ}{h}\xi\tilde F$, and the second term is a pure vector. A symbol is a central scalar, and a central scalar cannot absorb a vector part; so wherever $\tilde F\ne0$ the symbol of the covariant square is not the symbol of any scalar equation. **The prohibition is a mismatch of types between the symbol and the curvature term.**
 
-The curvature term's symbol is $\frac{iϙ}{\hbar}$ times the transform of $\xi\tilde F$, which is a convolution with the transform of $\tilde F$; a scalar symbol is a single number at a single wave number. **A convolution cannot equal a product**, so no choice of the central field makes the equation hold in a region of nonzero curvature. That is the parent's conclusion with its reason attached.
+The curvature term's symbol is $\frac{2\pi iϙ}{h}$ times the transform of $\xi\tilde F$, which is a convolution with the transform of $\tilde F$; a scalar symbol is a single number at a single wave number. **A convolution cannot equal a product**, so no choice of the central field makes the equation hold in a region of nonzero curvature. That is the parent's conclusion with its reason attached.
 
 The prohibition concerns E1 in a *varying* field strength; the fork of §*The Two Shells* concerns a constant one, where $\tilde F=0$ and E1 and E2 coincide as operators. The two statements sit in different regimes, and confusing them would turn a constant-potential bookkeeping question into a curvature question it is not.
 
@@ -229,14 +229,14 @@ The parent's measured complex symbol, $-8.8876+1.86i$, is reproduced exactly by 
 | $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | The four-wave number; $k_t'=\omega/c$ |
 | $\sigma_\mu$ | The free slot symbol: $\sigma_t=-k_t'$ real, $\sigma_\eta=i\kappa_\eta$ imaginary |
 | $\tilde A_\Phi=i a_t'e_t+\sum_\eta A_\eta\vec e_\eta$ | The connection, anti-Hermitian in the material writing |
-| $c_\mu=\frac{iϙ}{\hbar}A_\mu$ | The per-slot connection coefficient; $c_t=-ϙa_t'/\hbar$ real, $c_\eta=ia_\eta$ imaginary |
-| $a_\eta=\frac{ϙ}{\hbar}A_\eta$ | The reduced vector potential, real |
-| $k_m=mc/\hbar$ | The mass wave number |
+| $c_\mu=\frac{2\pi iϙ}{h}A_\mu$ | The per-slot connection coefficient; $c_t=-\frac{2\pi ϙa_t'}{h}$ real, $c_\eta=ia_\eta$ imaginary |
+| $a_\eta=\frac{2\pi ϙ}{h}A_\eta$ | The reduced vector potential, real |
+| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
 | (E2), the squared reading | $\sum_\mu(\sigma_\mu+c_\mu)^{2}$; shell $(k_t'-c_t)^{2}=\lvert\vec\kappa\rvert^{2}+k_m^{2}$ |
 | (E1), the paired reading | $\sum_\mu(\sigma_\mu-\bar c_\mu)(\sigma_\mu+c_\mu)$; shell $k_t'^{2}=\lvert\vec\kappa\rvert^{2}+k_m^{2}+c_t^{2}$ |
 | $2c_t(c_t-k_t')$ | The difference of the two symbols; real, first order in the potential |
-| $\tilde F=i[D_\mu,D_\nu]$ | The field strength; a multiplication by $\frac{iϙ}{\hbar}F_{\mu\nu}$ |
-| $\tilde K_{\Phi,\mathrm{gco}}$ | The mechanical wave number, $\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$ |
+| $\tilde F=i[D_\mu,D_\nu]$ | The field strength; a multiplication by $\frac{2\pi iϙ}{h}F_{\mu\nu}$ |
+| $\tilde K_{\Phi,\mathrm{gco}}$ | The mechanical wave number, $\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$ |
 
 ## Further Reading
 

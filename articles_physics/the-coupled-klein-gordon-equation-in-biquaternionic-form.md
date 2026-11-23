@@ -11,21 +11,21 @@ $$
 \qquad
 \Box_{\mathrm{gco},\Phi}=\sum_{\mu}\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2},
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{i\,ϙ}{\hbar}A_\mu,
+\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi i\,ϙ}{h}A_\mu,
 $$
 
-with $\tilde\Xi\in\mathbb{B}$ the field, $\tilde A_\Phi=\sum_\mu A_\mu e_\mu$ the connection of the Maxwell article restricted to its material sector, $ϙ$ the coupling, $k_m=mc/\hbar$, and the sum over the four gradient components in the corpus's convention of *Operator and Calculus Conventions*. The operator is the one the free equation uses with $\partial_\mu$ replaced by $\tilde\nabla_{\mathrm{gco},\Phi,\mu}$, slot by slot; that is the whole prescription, and §*The Field Equation and the Carrier* shows what it produces.
+with $\tilde\Xi\in\mathbb{B}$ the field, $\tilde A_\Phi=\sum_\mu A_\mu e_\mu$ the connection of the Maxwell article restricted to its material sector, $ϙ$ the coupling, $k_m=\frac{2\pi mc}{h}$, and the sum over the four gradient components in the corpus's convention of *Operator and Calculus Conventions*. The operator is the one the free equation uses with $\partial_\mu$ replaced by $\tilde\nabla_{\mathrm{gco},\Phi,\mu}$, slot by slot; that is the whole prescription, and §*The Field Equation and the Carrier* shows what it produces.
 
 **Four findings, and the second is the reason the article exists.**
 
-*First, the coupling is one rule and not four.* The connection is one element of $\mathbb{B}_\Phi$ with central scalar coefficients, so $\frac{i\,ϙ}{\hbar}$ times it is a central scalar in every slot and the covariant derivative is a central operator. There is no ordering question, no commutator to compute, and no choice of relative sign between the scalar and the vector potentials: the four substitutions are the four slots of one element (§*The Coupling Prescription*).
+*First, the coupling is one rule and not four.* The connection is one element of $\mathbb{B}_\Phi$ with central scalar coefficients, so $\frac{2\pi i\,ϙ}{h}$ times it is a central scalar in every slot and the covariant derivative is a central operator. There is no ordering question, no commutator to compute, and no choice of relative sign between the scalar and the vector potentials: the four substitutions are the four slots of one element (§*The Coupling Prescription*).
 
 *Second, the free case hides an ambiguity that the connection exposes.* In the free theory the algebra's own second-order operator $\tilde\nabla_\Phi^{\natural}\tilde\nabla_\Phi$ and the scalar d'Alembertian $\sum_\mu\partial_\mu^{2}$ agree identically, so the free Klein–Gordon equation has two writings that cannot be told apart. With the connection they differ, and the difference is the field strength:
 
 $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t)
 =\Big(\sum_\mu \tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\xi\Big)e_t
-+\frac{i\,ϙ}{\hbar}\,\xi\,\tilde F .
++\frac{2\pi i\,ϙ}{h}\,\xi\,\tilde F .
 $$
 
 The second term is a pure vector, so a central field cannot satisfy the covariant second-order equation in a region of nonzero curvature; and the *component* equation $\Box_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$, which is the one the action produces and the one this article adopts, differs from it by exactly that term (§*The Covariant Square and What It Forbids*, §*The Two Coupled Equations*).
@@ -41,8 +41,8 @@ The second term is a pure vector, so a central field cannot satisfy the covarian
 **The operator.** Minimal coupling replaces the four-gradient by the covariant derivative,
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi
-=\sum_\mu e_\mu\Big(\partial_\mu+\frac{i\,ϙ}{\hbar}A_\mu\Big),
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi
+=\sum_\mu e_\mu\Big(\partial_\mu+\frac{2\pi i\,ϙ}{h}A_\mu\Big),
 $$
 
 and the second equality is the reason nothing has to be chosen. The connection's coefficients $A_\mu$ are complex scalars — central — so they pass through the invertibles, and the sum over the four slots of one element is the sum over four scalar operators. The covariant derivative is therefore an operator with central coefficients, and the algebra's non-commutativity never enters at this order.
@@ -50,7 +50,7 @@ and the second equality is the reason nothing has to be chosen. The connection's
 **The conjugate.** The second-order operator uses the quaternion conjugate of the gradient, $(\tilde\nabla_\Phi)^{\natural}$, and the corresponding covariant operator is
 
 $$
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural}
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi^{\natural}
 =e_t\tilde\nabla_{\mathrm{gco},\Phi,t}-\sum_\eta\vec e_\eta\tilde\nabla_{\mathrm{gco},\Phi,\eta},
 $$
 
@@ -61,7 +61,7 @@ the conjugation applied to the units and not to the connection's coefficients, w
 **The two potentials are the two slots of one element.** For a material connection $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ with $a'_t$ and $\vec A$ real, the temporal coefficient is imaginary and the three spatial coefficients are real. So
 
 $$
-\frac{i\,ϙ}{\hbar}\tilde A_\Phi=-\frac{ϙ}{\hbar}a'_t\,e_t+\frac{i\,ϙ}{\hbar}\vec A ,
+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi=-\frac{2\pi ϙ}{h}a'_t\,e_t+\frac{2\pi i\,ϙ}{h}\vec A ,
 $$
 
 a real central number in the temporal slot and imaginary central numbers in the spatial ones. The sign difference is not a convention of this article: it is the metric, and it is the same sign difference that appears in the Proca companion's four-momentum shift. The article records it once here and uses it in §*The Field Equation and the Carrier*.
@@ -73,7 +73,7 @@ a real central number in the temporal slot and imaginary central numbers in the 
 **The transformation.** Let $\Lambda$ be a real scalar function and set
 
 $$
-\tilde\Xi\mapsto e^{i\,ϙ\Lambda/\hbar}\,\tilde\Xi,
+\tilde\Xi\mapsto e^{\frac{2\pi i\,ϙ\Lambda}{h}}\,\tilde\Xi,
 \qquad
 \tilde A_\Phi\mapsto\tilde A_\Phi-\tilde\nabla_\Phi\Lambda,
 \qquad\text{that is}\qquad
@@ -82,12 +82,12 @@ $$
 
 The field's factor is a central unit, so it multiplies the field on either side and the transformation is the localization of the centre's $\mathrm{U}(1)$ — the gauge principle article's construction, applied to a scalar.
 
-**The first derivative is covariant, exactly.** With $D_\mu:=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ and the primed connection,
+**The first derivative is covariant, exactly.** With $D_\mu:=\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$ and the primed connection,
 
 $$
-D_\mu'\big(e^{i\,ϙ\Lambda/\hbar}\tilde\Xi\big)
-=e^{i\,ϙ\Lambda/\hbar}\Big(\partial_\mu+\frac{i\,ϙ}{\hbar}\partial_\mu\Lambda+\frac{i\,ϙ}{\hbar}A_\mu-\frac{i\,ϙ}{\hbar}\partial_\mu\Lambda\Big)\tilde\Xi
-=e^{i\,ϙ\Lambda/\hbar}D_\mu\tilde\Xi .
+D_\mu'\big(e^{\frac{2\pi i\,ϙ\Lambda}{h}}\tilde\Xi\big)
+=e^{\frac{2\pi i\,ϙ\Lambda}{h}}\Big(\partial_\mu+\frac{2\pi i\,ϙ}{h}\partial_\mu\Lambda+\frac{2\pi i\,ϙ}{h}A_\mu-\frac{2\pi i\,ϙ}{h}\partial_\mu\Lambda\Big)\tilde\Xi
+=e^{\frac{2\pi i\,ϙ\Lambda}{h}}D_\mu\tilde\Xi .
 $$
 
 The two $\partial_\mu\Lambda$ terms cancel because one comes from the derivative of the unit and the other from the transformation of the connection; nothing else in the computation can cancel them, and that is why the connection's transformation law is forced rather than chosen. The identity is exact and holds for a general element, not only for a central one, because the unit and the coefficients are central.
@@ -95,14 +95,14 @@ The two $\partial_\mu\Lambda$ terms cancel because one comes from the derivative
 **The second derivative is covariant, and the field strength is the reason.** Applying $D_\mu'$ once more,
 
 $$
-D_\mu'D_\mu'\big(e^{i\,ϙ\Lambda/\hbar}\tilde\Xi\big)
-=e^{i\,ϙ\Lambda/\hbar}D_\mu D_\mu\tilde\Xi ,
+D_\mu'D_\mu'\big(e^{\frac{2\pi i\,ϙ\Lambda}{h}}\tilde\Xi\big)
+=e^{\frac{2\pi i\,ϙ\Lambda}{h}}D_\mu D_\mu\tilde\Xi ,
 $$
 
 because the two derivatives act on the same central unit and the cancellation of the gauge gradients repeats slot by slot. So $\Box_{\mathrm{gco},\Phi}$ is covariant, the mass term is invariant (two factors, opposite phases, both central), and the coupled equation is gauge covariant. The commutator of two covariant derivatives is the curvature,
 
 $$
-\big[D_\mu,D_\nu\big]=\frac{i\,ϙ}{\hbar}\Big(\partial_\mu A_\nu-\partial_\nu A_\mu\Big)=\frac{i\,ϙ}{\hbar}F_{\mu\nu},
+\big[D_\mu,D_\nu\big]=\frac{2\pi i\,ϙ}{h}\Big(\partial_\mu A_\nu-\partial_\nu A_\mu\Big)=\frac{2\pi i\,ϙ}{h}F_{\mu\nu},
 $$
 
 a multiplication by a scalar multiple of the identity, which is the abelian statement that the field strength carries no matrix.
@@ -117,12 +117,12 @@ $$
 \boxed{\;
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t)
 =\Big(\sum_\mu \tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\xi\Big)e_t
-+\frac{i\,ϙ}{\hbar}\,\xi\,\tilde F\;}
++\frac{2\pi i\,ϙ}{h}\,\xi\,\tilde F\;}
 $$
 
 with $\tilde F=\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\big)$ the field strength of the covariant-derivative article. The first term is central and is the scalar d'Alembertian with the connection in every slot; the second is a pure vector, and it is the curvature.
 
-**Why the second term is where it is.** The composition $\sum_{\mu\nu}e_\mu^{\natural}e_\nu D_\mu D_\nu$ has a diagonal part, which is $\sum_\mu D_\mu^{2}$ because $e_\mu^{\natural}e_\mu=e_t$ for every $\mu$, and an off-diagonal part. In the free case the off-diagonal part cancels pairwise, because $\partial_\mu\partial_\nu$ is symmetric and $e_\mu^{\natural}e_\nu$ is antisymmetric in the pair. With the connection the derivatives no longer commute, the symmetric part still cancels and the antisymmetric part does not: what survives is the commutator, and the commutator is $F_{\mu\nu}$. The surviving sum is $\sum_{\mu<\nu}e_\mu^{\natural}e_\nu\,[D_\mu,D_\nu]$, and for a material connection it collapses to the one element $\frac{iϙ}{\hbar}\tilde F$.
+**Why the second term is where it is.** The composition $\sum_{\mu\nu}e_\mu^{\natural}e_\nu D_\mu D_\nu$ has a diagonal part, which is $\sum_\mu D_\mu^{2}$ because $e_\mu^{\natural}e_\mu=e_t$ for every $\mu$, and an off-diagonal part. In the free case the off-diagonal part cancels pairwise, because $\partial_\mu\partial_\nu$ is symmetric and $e_\mu^{\natural}e_\nu$ is antisymmetric in the pair. With the connection the derivatives no longer commute, the symmetric part still cancels and the antisymmetric part does not: what survives is the commutator, and the commutator is $F_{\mu\nu}$. The surviving sum is $\sum_{\mu<\nu}e_\mu^{\natural}e_\nu\,[D_\mu,D_\nu]$, and for a material connection it collapses to the one element $\frac{2\pi iϙ}{h}\tilde F$.
 
 **The consequence, stated as a prohibition.** Multiply the identity by $\xi^{-1}$ and read the two sides. The kinetic and mass terms of the covariant equation $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$ are central, so the vector part must vanish, and it does so only where $\tilde F\,\xi=0$. Since $\xi\ne0$ wherever the field is regular, the statement is
 
@@ -141,7 +141,7 @@ No central field is a solution of the covariant square's equation in a region of
 
 *Let the field leave the centre.* Keep the full equation in $\mathbb{B}$ and let the field acquire vector components. Then the equation is consistent and gauge covariant, and its four coefficients are coupled by $\tilde F$: the curvature term is pure vector, so it converts a scalar coefficient into vector coefficients and the reverse. That theory is not the standard one, because the standard charged scalar has one component and no curvature coupling.
 
-**The check.** The identity was verified on a periodic lattice of $16^4$ points with a band-limited field and a periodic connection, in three configurations. With a constant connection — a pure gauge — the residual's vector part after subtracting the scalar equation is $5\times10^{-15}$ of the field, which is machine zero. With a constant field strength of magnitude $0.7$ in units of $ϙ$, with $k_m=1.3$, the scalar part of the residual equals $(\sum_\mu D_\mu^{2}-k_m^{2})\xi$ to $0.0$ and the vector part is nonzero and equal to $\frac{iϙ}{\hbar}\xi\tilde F$ to $4\times10^{-15}$; the measured coefficient at a sampled point is $0.21+0.48i$ against a predicted $0.21+0.48i$. With a purely electric connection varying in space, the vector part appears along the direction of the electric field and nowhere else, again to $5\times10^{-15}$. The identity is exact and the numerical work only locates the terms.
+**The check.** The identity was verified on a periodic lattice of $16^4$ points with a band-limited field and a periodic connection, in three configurations. With a constant connection — a pure gauge — the residual's vector part after subtracting the scalar equation is $5\times10^{-15}$ of the field, which is machine zero. With a constant field strength of magnitude $0.7$ in units of $ϙ$, with $k_m=1.3$, the scalar part of the residual equals $(\sum_\mu D_\mu^{2}-k_m^{2})\xi$ to $0.0$ and the vector part is nonzero and equal to $\frac{2\pi iϙ}{h}\xi\tilde F$ to $4\times10^{-15}$; the measured coefficient at a sampled point is $0.21+0.48i$ against a predicted $0.21+0.48i$. With a purely electric connection varying in space, the vector part appears along the direction of the electric field and nowhere else, again to $5\times10^{-15}$. The identity is exact and the numerical work only locates the terms.
 
 ## The Two Coupled Equations
 
@@ -153,7 +153,7 @@ $$
 \text{(E2)}\quad \Box_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi,
 $$
 
-with $\Box_{\mathrm{gco},\Phi}=\sum_\mu \tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}$. In the free limit they coincide, because $\tilde\nabla_\Phi^{\natural}\tilde\nabla_\Phi=\sum_\mu\partial_\mu^{2}=\Box_\Phi$ as operators. With the connection they do not, and the difference is the curvature: for a central field, E1 minus E2 is $\frac{iϙ}{\hbar}\tilde\Xi\,\tilde F$, and for a general element it is the curvature term written in the field's own frame.
+with $\Box_{\mathrm{gco},\Phi}=\sum_\mu \tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}$. In the free limit they coincide, because $\tilde\nabla_\Phi^{\natural}\tilde\nabla_\Phi=\sum_\mu\partial_\mu^{2}=\Box_\Phi$ as operators. With the connection they do not, and the difference is the curvature: for a central field, E1 minus E2 is $\frac{2\pi iϙ}{h}\tilde\Xi\,\tilde F$, and for a general element it is the curvature term written in the field's own frame.
 
 **E2 is the minimal substitution.** The free equation is $(\Box_\Phi-k_m^{2})\tilde\Xi=0$, and the prescription "replace the derivative by the covariant derivative in the equation as written" acts on the scalar operator, not on the algebra's factorisation of it. The result is E2. This is the prescription the Proca and Dirac companions use and the one the phrase *minimal coupling* names.
 
@@ -225,7 +225,7 @@ $$
 
 which is real: the second term is the complex conjugate of the first, so the difference is $2i$ times a real number and the factor $i$ makes the whole real. The check is exact and does not need a numerical test, but the lattice check returns the imaginary part as $0.00\times10^{0}$ over random fields.
 
-**Conservation, and what conserves it.** Differentiating and using $\partial_\mu\tilde\Xi^{*}=\big(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\big)^{*}+\frac{iϙ}{\hbar}A_\mu\tilde\Xi^{*}$ together with $\partial_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi=\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\tilde\Xi-\frac{iϙ}{\hbar}A_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$, the connection's terms cancel in pairs and
+**Conservation, and what conserves it.** Differentiating and using $\partial_\mu\tilde\Xi^{*}=\big(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\big)^{*}+\frac{2\pi iϙ}{h}A_\mu\tilde\Xi^{*}$ together with $\partial_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi=\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\tilde\Xi-\frac{2\pi iϙ}{h}A_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$, the connection's terms cancel in pairs and
 
 $$
 \partial_\mu J_\mu=-\frac{1}{k_m}\,\mathrm{Im}\,\mathrm{Sc}\Big[\tilde\Xi^{*}\big(\Box_{\mathrm{gco},\Phi}-k_m^{2}\big)\tilde\Xi\Big].
@@ -233,7 +233,7 @@ $$
 
 The right side is the equation's residual contracted with the field and projected on the imaginary part of the scalar part, so it vanishes on every solution of E2 and the current is conserved. The identity is exact off shell and was verified on the lattice to $6\times10^{-13}$ with a varying connection in both a temporal and a spatial slot.
 
-**The current picks the equation.** The right side contains $\Box_{\mathrm{gco},\Phi}$ and not $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$, so the conservation is a conservation for E2 and not for E1. That is a third, independent reason to prefer E2: the current that the phase symmetry supplies belongs to it. For E1 the same computation leaves the curvature behind, and the residual is $\frac{iϙ}{\hbar}\tilde F\tilde\Xi$ rather than zero.
+**The current picks the equation.** The right side contains $\Box_{\mathrm{gco},\Phi}$ and not $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$, so the conservation is a conservation for E2 and not for E1. That is a third, independent reason to prefer E2: the current that the phase symmetry supplies belongs to it. For E1 the same computation leaves the curvature behind, and the residual is $\frac{2\pi iϙ}{h}\tilde F\tilde\Xi$ rather than zero.
 
 **What the coupling repairs and what it does not.** The free current $\tilde J_\Phi$ is not gauge invariant: shifting the phase of the field by a function changes $\rho$ and $\vec j$ by terms in the gradient of the shift. The coupled current is gauge invariant, because every derivative in it is covariant and the field's factor cancels between the two terms. What the coupling does not repair is the sign: on the negative-frequency branch the temporal component is negative, exactly as in the free article, and no choice of connection changes that. The two defects of the free article therefore separate under the coupling — one is repaired, the other is a property of the carrier and stays.
 
@@ -244,7 +244,7 @@ The right side is the equation's residual contracted with the field and projecte
 **The connection's equation.** The current is what the inhomogeneous Maxwell equation needs. Varying the matter action with respect to the connection gives
 
 $$
-\frac{\delta S_{\mathrm{c}}}{\delta A_\mu}=-\frac{ϙ}{\hbar}\,J_\mu ,
+\frac{\delta S_{\mathrm{c}}}{\delta A_\mu}=-\frac{2\pi ϙ}{h}\,J_\mu ,
 $$
 
 with the sign from the two appearances of $A_\mu$ in the squared covariant derivative, and adding the field term of the Maxwell article gives the coupled system
@@ -252,7 +252,7 @@ with the sign from the two appearances of $A_\mu$ in the squared covariant deriv
 $$
 \tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_\Phi^{\mathrm{(src)}},
 \qquad
-\tilde J_\Phi^{\mathrm{(src)}}\ \propto\ \frac{ϙ}{\hbar}J ,
+\tilde J_\Phi^{\mathrm{(src)}}\ \propto\ \frac{2\pi ϙ}{h}J ,
 $$
 
 where the proportionality is the normalisation of the field term, which the Maxwell article fixes once and this article does not re-derive. The sign is fixed and the constant is a convention; the identification of the source with the matter current is neither.
@@ -300,7 +300,7 @@ the same shift the Proca companion records, and for the same reason: the tempora
 
 **The multiplicity of the coefficients.** The standard charged scalar has one complex component; the algebra's transcription has four, all with the same charge. Whether the framework intends the four as a physical multiplicity, as a polarization space that the equation does not constrain, or as an artefact of transcribing a scalar into an algebra built for spin is not answered by the equation and is not answered here.
 
-**The normalisation of the coupling to the field.** The proportionality between $\frac{ϙ}{\hbar}J$ and the Maxwell source is fixed by the field term's normalisation, which the Maxwell article fixes on the material slice and the coupled Proca article records as open for the complex carrier. The same question returns here with the same status.
+**The normalisation of the coupling to the field.** The proportionality between $\frac{2\pi ϙ}{h}J$ and the Maxwell source is fixed by the field term's normalisation, which the Maxwell article fixes on the material slice and the coupled Proca article records as open for the complex carrier. The same question returns here with the same status.
 
 ## Summary
 
@@ -309,7 +309,7 @@ The coupled Klein–Gordon equation is
 $$
 \left(\Box_{\mathrm{gco},\Phi}-k_m^{2}\right)\tilde\Xi=0,
 \qquad
-\Box_{\mathrm{gco},\Phi}=\sum_\mu\Big(\partial_\mu+\frac{i\,ϙ}{\hbar}A_\mu\Big)^{2},
+\Box_{\mathrm{gco},\Phi}=\sum_\mu\Big(\partial_\mu+\frac{2\pi i\,ϙ}{h}A_\mu\Big)^{2},
 $$
 
 and it is the free equation with the derivative replaced slot by slot. The connection's coefficients are central, so the coupling is one rule, the field stays in the centre and the equation stays one complex equation for one charged scalar; the covariant derivative is the only change. A value outside the centre would give four charged scalars with one charge and one connection, and the curvature term is what keeps the central field from satisfying the algebra's own covariant square, E1.
@@ -318,7 +318,7 @@ The free theory has two writings of its second-order operator, $\tilde\nabla_\Ph
 
 $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t)
-=\Big(\sum_\mu \tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\xi\Big)e_t+\frac{i\,ϙ}{\hbar}\,\xi\,\tilde F ,
+=\Big(\sum_\mu \tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\xi\Big)e_t+\frac{2\pi i\,ϙ}{h}\,\xi\,\tilde F ,
 $$
 
 and the difference is a pure vector, so a central field is forbidden wherever the field strength is nonzero. The article adopts the component equation, which is the action's, which decouples, and which the current belongs to; it records the algebra's alternative and does not adopt it.
@@ -336,15 +336,15 @@ The current is $J_\mu=\frac{i}{2k_m}\mathrm{Sc}\big(\tilde\Xi^{*}\tilde\nabla_{\
 | $\tilde\Xi=\sum_\mu\Xi_\mu e_\mu$ | The field, a general element of $\mathbb{B}$ |
 | $\tilde A_\Phi=\sum_\mu A_\mu e_\mu$ | The connection; $A_t=i a'_t$ imaginary, $A_\eta$ real in the material case |
 | $ϙ$ | The coupling |
-| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The central per-slot covariant derivative |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$ | The central per-slot covariant derivative |
 | $\tilde\nabla_{\mathrm{gco},\Phi}$, $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ | The covariant gradient and its quaternion conjugate |
 | $\Box_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}$ | The covariant d'Alembertian |
 | $\tilde F=\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\big)$ | The field strength; a pure vector, scalar-free |
-| $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ | Its components; $[D_\mu,D_\nu]=\frac{iϙ}{\hbar}F_{\mu\nu}$ |
+| $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ | Its components; $[D_\mu,D_\nu]=\frac{2\pi iϙ}{h}F_{\mu\nu}$ |
 | (E1), (E2) | $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$; $\Box_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$ |
 | $S_{\mathrm{c}}$, $S_{\mathrm{a}}$ | The slot-summed action (adopted); the algebra-invariant action (recorded) |
 | $J_\mu$ | The charge current |
-| $k_m=mc/\hbar$ | The mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
 | $r'_t=ct'$ | The material time |
 
 ## Further Reading

@@ -251,7 +251,7 @@ The contrast is the operational mark of entanglement: **product states have pure
 | Physical process | Measurement | Evolution | Successive measurements | Entangled measurement | Reduced state |
 | Structural object | Idempotent + idempotent | Idempotent + $*$-unitary | Sequence of idempotents | State in $\mathbb{B}\otimes\mathbb{B}$ | Partial trace of a state |
 | Rule used | Pairing formula | Pairing formula + rotor conjugation | Product of pairing formulas | Tensor-product pairing formula | Partial trace + pairing formula |
-| Result | $\cos^2(\theta/2)$ | $(\frac{\hbar}{2})\cos(\omega_L r'_t/c)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1-\vec u_a\cdot\vec u_b)$ | $\tilde{Ϛ}_{\Psi,1} = \frac{1}{2}e_t$, purity $\frac{1}{2}$, entropy $\log 2$ |
+| Result | $\cos^2(\theta/2)$ | $(\frac{h}{4\pi})\cos(\omega_L r'_t/c)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1-\vec u_a\cdot\vec u_b)$ | $\tilde{Ϛ}_{\Psi,1} = \frac{1}{2}e_t$, purity $\frac{1}{2}$, entropy $\log 2$ |
 
 These exercises illustrate five fundamental operations of the quantum formalism: **measurement** (Exercise: Measuring Spin Along an Arbitrary Direction), **evolution** (Exercise: Spin Precession in a Magnetic Field), **sequential measurement** (Exercise: Successive Measurements of Spin), **entangled measurement** (Exercise: Two Spins in the Singlet State), and **partial trace** (Exercise: The Reduced State of an Entangled Subsystem). In each case, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{B}_{\Psi}$, $\mathbb{H}_\mathbb{B}$, and their tensor products.
 

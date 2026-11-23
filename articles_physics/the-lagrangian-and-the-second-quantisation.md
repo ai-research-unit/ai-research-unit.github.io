@@ -6,7 +6,7 @@ The sentence this article exists to explain. The corpus's one-particle field art
 
 Why a bridge article at all. Because an absence that is not described is indistinguishable from an oversight, and because a reader who has the actions and not the quantisation is entitled to know what the missing step consists of. The bridge is not a derivation of a quantum field theory. It is a map of the step, with its two classical ingredients and its one quantum postulate, and with an honest ledger of what the corpus would need to build before any of the field articles' results could be called quantum.
 
-The route in four steps. First, the action's quadratic form is inverted: its retarded and advanced Green functions exist and their difference defines the Peierls bracket, a classical bracket on the space of solutions. Second, when the action has constraints — the Proca field, the first-order Dirac field, every gauge theory — the bracket is replaced by the Dirac bracket, which is the same construction after the constraints are solved. Third, the promotion: the bracket is replaced by a commutator, $\{\,,\,\}\to\frac{1}{i\hbar}[\,,\,]$, and the field becomes an operator. Fourth, the completion: the operator algebra is represented on a Fock space, and that representation is where particles, the vacuum and the $S$-matrix live.
+The route in four steps. First, the action's quadratic form is inverted: its retarded and advanced Green functions exist and their difference defines the Peierls bracket, a classical bracket on the space of solutions. Second, when the action has constraints — the Proca field, the first-order Dirac field, every gauge theory — the bracket is replaced by the Dirac bracket, which is the same construction after the constraints are solved. Third, the promotion: the bracket is replaced by a commutator, $\{\,,\,\}\to\frac{1}{i \frac{h}{2\pi}}[\,,\,]$, and the field becomes an operator. Fourth, the completion: the operator algebra is represented on a Fock space, and that representation is where particles, the vacuum and the $S$-matrix live.
 
 Which step this family takes. The first, in the sense that every action in the family is quadratic and its Green functions are computable; and part of the second, in the sense that the constraints are counted and stated in the spin-one and first-order articles. It does not take the third and it does not take the fourth. No article of the family promotes a bracket; none writes a commutator between fields as a postulate; none constructs a Fock space.
 
@@ -16,11 +16,11 @@ What this article is not. It is not a derivation of the promotion — the promot
 
 ## Conventions
 
-The conventions are the family's, and one more. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the actions are the family's, element-form or chart-form as the article in question writes them; $\hbar$ is the constant that converts an action's units into a rate; $k_m=mc/\hbar$; the measure is $\mathrm{d}^{4}r$; the pairing is the one the field's article uses.
+The conventions are the family's, and one more. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the actions are the family's, element-form or chart-form as the article in question writes them; $\frac{h}{2\pi}$ is the constant that converts an action's units into a rate; $k_m=\frac{2\pi mc}{h}$; the measure is $\mathrm{d}^{4}r$; the pairing is the one the field's article uses.
 
 The addition is the bracket's notation. For a field $\phi$ and its conjugate $\pi$ — in the corpus's terms the two members of the conjugate pair — the equal-time bracket is written $\{\phi(\vec r),\pi(\vec r')\}=\delta^{3}(\vec r-\vec r')$, and the general bracket of two functionals is written $\{F,G\}$. The Green functions are $G_{R}$ (retarded: support in the forward cone) and $G_{A}$ (advanced: support in the backward cone), and the fundamental object of the Peierls construction is their difference $G=G_{R}-G_{A}$, whose support is the full light cone.
 
-**One symbol is a postulate and is marked.** The promotion's symbol is $\frac{1}{i\hbar}[\,,\,]$. Everything to its left is classical and derivable from the actions the corpus has; everything to its right is a new axiom. The article marks the boundary once, here, and does not blur it below.
+**One symbol is a postulate and is marked.** The promotion's symbol is $\frac{1}{i \frac{h}{2\pi}}[\,,\,]$. Everything to its left is classical and derivable from the actions the corpus has; everything to its right is a new axiom. The article marks the boundary once, here, and does not blur it below.
 
 ## The Action in Element Form: The Point of Departure
 
@@ -82,14 +82,14 @@ What this family does with this step. It states the constraints and counts with 
 
 ## The Structural Consequence: The Promotion Is One Substitution, and It Changes What the Symbols Mean
 
-The claim. The step from classical to quantum is a substitution of the bracket, $\{\,,\,\}\to\frac{1}{i\hbar}[\,,\,]$, applied to the fields themselves. It is one line, and it changes every symbol it touches: a field that was a function of position becomes an operator-valued distribution; a bracket that was a classical product becomes a commutator; a solution becomes a state.
+The claim. The step from classical to quantum is a substitution of the bracket, $\{\,,\,\}\to\frac{1}{i \frac{h}{2\pi}}[\,,\,]$, applied to the fields themselves. It is one line, and it changes every symbol it touches: a field that was a function of position becomes an operator-valued distribution; a bracket that was a classical product becomes a commutator; a solution becomes a state.
 
 The hand check. Take the scalar's derived bracket and substitute:
 
 $$
 \{\phi(\vec r),\pi(\vec r')\}=\delta^{3}(\vec r-\vec r')
 \quad\longrightarrow\quad
-[\hat\phi(\vec r),\hat\pi(\vec r')]=i\hbar\,\delta^{3}(\vec r-\vec r').
+[\hat\phi(\vec r),\hat\pi(\vec r')]=i \frac{h}{2\pi}\,\delta^{3}(\vec r-\vec r').
 $$
 
 Then expand $\hat\phi$ in the modes of the free action, $\hat\phi=\sum_k(a_k u_k+a_k^{\dagger}u_k^{*})$, and the commutator forces $[a_k,a_{k'}^{\dagger}]=\delta_{kk'}$: the mode coefficients become creation and annihilation operators. The Fock space is the representation of that algebra, and the vacuum is the state annihilated by every $a_k$. Four lines, and every one of them is absent from the corpus.
@@ -129,7 +129,7 @@ The route from a one-particle action to a quantum field theory has four steps: t
 $$
 \{\phi(\vec r),\pi(\vec r')\}=\delta^{3}(\vec r-\vec r')
 \qquad\longrightarrow\qquad
-[\hat\phi(\vec r),\hat\pi(\vec r')]=i\hbar\,\delta^{3}(\vec r-\vec r')
+[\hat\phi(\vec r),\hat\pi(\vec r')]=i \frac{h}{2\pi}\,\delta^{3}(\vec r-\vec r')
 \qquad\longrightarrow\qquad
 [a_k,a_{k'}^{\dagger}]=\delta_{kk'} .
 $$
@@ -144,7 +144,7 @@ $$
 | $G=G_{R}-G_{A}$ | Pauli–Jordan function, the bracket's kernel |
 | $\{\,,\,\}$ | Classical bracket (Peierls, or Dirac when constrained) |
 | $\chi_a,\ (C^{-1})_{ab}$ | Constraints and the inverse of their bracket matrix (Dirac bracket) |
-| $\frac{1}{i\hbar}[\,,\,]$ | The promotion's commutator |
+| $\frac{1}{i \frac{h}{2\pi}}[\,,\,]$ | The promotion's commutator |
 | $a_k,\ a_k^{\dagger}$ | Annihilation and creation operators, after promotion |
 | $\lvert 0\rangle$ | The vacuum, annihilated by every $a_k$ |
 | $Q=\int j_{r'_t}$ | Charge, an operator after promotion |

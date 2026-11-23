@@ -157,7 +157,7 @@ two first-order equations in two components, each coupling one chiral half to th
 
 **The reading.** The root is the propagation. A second-order wave equation says that a disturbance propagates at a speed fixed by the symbol; a first-order root says the same thing as a transport, with the two chiralities transported independently and the shift coupling them. The two halves are the two minimal left ideals $S_{\pm}$, and the coupling constant is the shift, so the algebra states in one place why a massless field has two decoupled chiral halves and a massive one has two coupled halves. The corpus's Dirac equation has exactly this structure, and its mass term is the one place where the field is multiplied on the right rather than on the left: the derivative acts on one side, the mass on the other, and the algebra's two-sidedness is what makes a mass term possible at all.
 
-**What the reading does not say.** It does not identify $c$ with a mass, and it does not supply the constant that relates the shift to an energy. The root's parameter is a parameter of an operator; the identification with $mc/\hbar$ is an input of the corpus and is recorded as imported, not derived.
+**What the reading does not say.** It does not identify $c$ with a mass, and it does not supply the constant that relates the shift to an energy. The root's parameter is a parameter of an operator; the identification with $\frac{2\pi mc}{h}$ is an input of the corpus and is recorded as imported, not derived.
 
 ## The Regular Field
 
@@ -185,7 +185,7 @@ $$
 
 whose scalar part is the constraint on the source and whose vector part is the dynamical equation; the componentwise identification is in *Maxwell's Equations in the Biquaternionic Formulation*, §*The Three-Vector Form*. This is the sharpest agreement in the corpus between the two routes: the equations that were transcribed into the algebra in the electromagnetism block are the differentiability condition of the material sector, written without a transcription.
 
-**On the informational sector.** The $i$ moves from the time slot to the three space slots. The condition is then first order in the real time and second order in the imaginary spatial coordinates, which is the algebraic shape of a Schrödinger equation: one real time derivative, an $i$ on the spatial operator, and a second-order spatial symbol. No $\hbar$ appears, and the identification of the rate with an energy is not made here. What the algebra supplies is the shape, and the shape is what the two sectors differ by.
+**On the informational sector.** The $i$ moves from the time slot to the three space slots. The condition is then first order in the real time and second order in the imaginary spatial coordinates, which is the algebraic shape of a Schrödinger equation: one real time derivative, an $i$ on the spatial operator, and a second-order spatial symbol. No $\frac{h}{2\pi}$ appears, and the identification of the rate with an energy is not made here. What the algebra supplies is the shape, and the shape is what the two sectors differ by.
 
 **On the cone.** The characteristic set is the null cone, so the initial-value problem on $\mathbb{B}_\Phi$ requires data on a surface that is not characteristic, and the Cauchy problem on the light-like surfaces is not determined by the same data. On $\mathbb{B}_H$ there is no cone, the symbol is definite, and the operator is elliptic; on $\mathbb{B}_{iH}$ it is elliptic with the opposite sign.
 
@@ -462,7 +462,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The word action names an integral and not a variational principle.** III.1.h identifies the representation formula with the action because both integrate the field against a kernel and both carry the strength. It does not claim that the volume term is a Lagrangian density, and the distinction is not cosmetic: a variational principle would supply the dynamics that this entry does not have.
 
-**No constant is derived.** $\hbar$ does not appear in the analysis, and the identification of the root's shift with a mass, of the flow's rate with an energy, and of the kernel's pole with a shell are inputs of the corpus. The algebra supplies the shape of each identification and none of the numbers.
+**No constant is derived.** $\frac{h}{2\pi}$ does not appear in the analysis, and the identification of the root's shift with a mass, of the flow's rate with an energy, and of the kernel's pole with a shell are inputs of the corpus. The algebra supplies the shape of each identification and none of the numbers.
 
 **The integral theory is stated on one subspace.** The Cauchy formula, its consequences and the residue theorem are theorems on $\mathbb{B}_{H}$, where the norm is definite. On the indefinite sectors the kernel is not the Euclidean one, the domains must avoid the cone, and the integral theory is open; the corpus records this as an open question and not as a result.
 

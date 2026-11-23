@@ -98,7 +98,7 @@ The consequence for the second law, which [The Local Entropy Current](the-local-
 The condensate's flow is the gradient of the phase, and this is the polar form's statement quoted. From [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), with the phase $S_{\tilde\Xi}$ of the field,
 
 $$
-m\,v_{\Phi,\mathrm{sup},\mu}=\partial_\mu S_{\tilde\Xi}+\hbar\,\chi_{\mu},
+m\,v_{\Phi,\mathrm{sup},\mu}=\partial_\mu S_{\tilde\Xi}+\frac{h}{2\pi}\,\chi_{\mu},
 $$
 
 where $\chi_\mu$ is the part the rotor contributes — zero for the scalar field and non-zero for the spinor, which is why [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) is a different article. For the scalar condensate the flow is a pure gradient, so its vorticity $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\mathrm{sup},\nu}-\partial_\nu v_{\Phi,\mathrm{sup},\mu}$ vanishes identically.
@@ -179,22 +179,22 @@ The consequence for the counting of transport coefficients. A two-fluid system h
 When the two components are two states of one field, their phases can lock, and the locking has a Josephson form. With $S_{\tilde\Xi,\mathrm{sup}}$ and $S_{\tilde\Xi,\mathrm{nrm}}$ the phases of the two contributions and $\delta S=S_{\tilde\Xi,\mathrm{nrm}}-S_{\tilde\Xi,\mathrm{sup}}$ their difference, the coupling energy per unit proper volume is
 
 $$
-e_{\mathrm{cpl}}=-\,E_{J}\cos\left(\frac{\delta S}{\hbar}\right),
+e_{\mathrm{cpl}}=-\,E_{J}\cos\left(\frac{2\pi \delta S}{h}\right),
 $$
 
 with $E_{J}$ the coupling energy density. The display is the standard Josephson form and is quoted; what the corpus adds is the argument: the phase is the quantity that the polar form assigns to the rotor, and a coupling between the two components is a coupling between two phases.
 
-The current between the components follows by differentiation of the coupling energy with respect to the phase difference. With $J_{\Phi,\mathrm{ex},\eta}$ the exchange current, the result is that the exchange current is the critical current times the sine of the phase difference, $J_{\Phi,\mathrm{ex},\eta}=J_{\mathrm{c}}\sin(\delta S/\hbar)$. The constant $J_{\mathrm{c}}$ is convention-dependent — it absorbs the normalisation of the phase, of the charge and of the density — and the corpus quotes the structural form rather than fixing a constant that the Josephson literature already fixes differently in different unit systems. A reader who needs the numerical value of $J_{\mathrm{c}}$ for a specific system will find it in the references at the end.
+The current between the components follows by differentiation of the coupling energy with respect to the phase difference. With $J_{\Phi,\mathrm{ex},\eta}$ the exchange current, the result is that the exchange current is the critical current times the sine of the phase difference, $J_{\Phi,\mathrm{ex},\eta}=J_{\mathrm{c}}\sin(\frac{2\pi \delta S}{h})$. The constant $J_{\mathrm{c}}$ is convention-dependent — it absorbs the normalisation of the phase, of the charge and of the density — and the corpus quotes the structural form rather than fixing a constant that the Josephson literature already fixes differently in different unit systems. A reader who needs the numerical value of $J_{\mathrm{c}}$ for a specific system will find it in the references at the end.
 
 What the phase difference does when the two flows coincide. Then $\delta S$ is constant, the sine is constant, and the exchange current is a constant flow between the components with no relative acceleration — the DC case. When the two flows differ, $\delta S$ advances at the rate $d(\delta S)/dR_t=\mu_{\mathrm{chm,nrm}}-\mu_{\mathrm{chm,sup}}$, and the exchange current oscillates at the frequency
 
 $$
-\omega_{\mathrm{Jsn}}=\frac{\mu_{\mathrm{chm,nrm}}-\mu_{\mathrm{chm,sup}}}{\hbar},
+\omega_{\mathrm{Jsn}}=\frac{2\pi \mu_{\mathrm{chm,nrm}}-\mu_{\mathrm{chm,sup}}}{h},
 $$
 
 the AC case. The frequency is fixed by the chemical potential difference and by nothing else, and it is the cleanest experimental mark that the two components are two states of one field rather than two fluids.
 
-A number, for scale. With a chemical potential difference of $1\,\mathrm{meV}$, $\omega_{\mathrm{Jsn}}=1.5193\times10^{12}\,\mathrm{s^{-1}}$, using $\hbar=6.582\,119\,569\times10^{-16}\,\mathrm{eV\,s}$. At $1\,\mu\mathrm{eV}$ the frequency is $1.5193\times10^{9}\,\mathrm{s^{-1}}$ and at $1\,\mathrm{neV}$ it is $1.5193\times10^{6}\,\mathrm{s^{-1}}$; the three span the range from microwave to radio, which is why the effect is measured electrically.
+A number, for scale. With a chemical potential difference of $1\,\mathrm{meV}$, $\omega_{\mathrm{Jsn}}=1.5193\times10^{12}\,\mathrm{s^{-1}}$, using $h=4.135\,667\,697\times10^{-15}\,\mathrm{eV\,s}$. At $1\,\mu\mathrm{eV}$ the frequency is $1.5193\times10^{9}\,\mathrm{s^{-1}}$ and at $1\,\mathrm{neV}$ it is $1.5193\times10^{6}\,\mathrm{s^{-1}}$; the three span the range from microwave to radio, which is why the effect is measured electrically.
 
 ### What the coupling does to the entropy
 
@@ -259,7 +259,7 @@ The algebra does not supply the friction coefficient either. $B_{\mathrm{frc}}$ 
 
 ## What Is Established and What Is Interpretation
 
-Established, and standard. That a quantum fluid at finite temperature admits a two-fluid description with a condensate that carries no entropy and a normal component that carries all of it; that the condensate's flow is a gradient and therefore irrotational; that the two components exchange momentum and that only the total stress is conserved; that mutual friction produces entropy at a rate proportional to the square of the relative speed to leading order in that speed, and vanishing when the two flows coincide; that a phase coupling between the two components has the Josephson form, with a DC exchange current proportional to the sine of the phase difference and an AC frequency equal to the chemical potential difference over $\hbar$; that the $T\to0$ limit is the one-fluid model.
+Established, and standard. That a quantum fluid at finite temperature admits a two-fluid description with a condensate that carries no entropy and a normal component that carries all of it; that the condensate's flow is a gradient and therefore irrotational; that the two components exchange momentum and that only the total stress is conserved; that mutual friction produces entropy at a rate proportional to the square of the relative speed to leading order in that speed, and vanishing when the two flows coincide; that a phase coupling between the two components has the Josephson form, with a DC exchange current proportional to the sine of the phase difference and an AC frequency equal to the chemical potential difference over $\frac{h}{2\pi}$; that the $T\to0$ limit is the one-fluid model.
 
 The framework's contribution. The two flows are elements with a common normalisation, the relative flow is their difference and its quaternionic norm measures the departure from coincidence, and the $T\to0$ limit is exact because every term that disappears carries a positive power of the normal density. The articles' contribution is structural: it makes the model's two central statements — the split and the coupling — statements about elements rather than about index conventions.
 
@@ -275,7 +275,7 @@ The condensate carries no entropy, $s_{\mathrm{ent,sup}}=0$, because it is a pur
 
 Mutual friction is $\tilde F_{\Phi,\mathrm{fr}}=(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}\tilde W_\Phi$, with the exact production $\sigma_{\mathrm{ent}}=-T^{-1}\mathrm{Sc}(\tilde F_{\Phi,\mathrm{fr}}\tilde W_\Phi)=T^{-1}(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}(\lvert\vec w\rvert^{2}-w_t^{2})\ge0$, which reduces to $T^{-1}(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}w^{2}$ to leading order in the relative speed. Evaluated once at $\rho_{\mathrm{num,sup}}=0.7$, $\rho_{\mathrm{num,nrm}}=0.3$, $B_{\mathrm{frc}}=0.1$, $w=0.2$ and $T=2$, the force is $0.004\,200\,000\,000$ and the production is $0.000\,420\,000\,000$.
 
-The phase coupling is $e_{\mathrm{cpl}}=-E_{J}\cos(\delta S/\hbar)$, an exchange current $J_{\mathrm{c}}\sin(\delta S/\hbar)$ and an AC frequency $\omega_{\mathrm{Jsn}}=\delta\mu_{\mathrm{chm}}/\hbar$, which is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ for $1\,\mathrm{meV}$. The coupling is conservative and produces no entropy; the friction does, and the two meet only through the chemical potential difference that the friction changes.
+The phase coupling is $e_{\mathrm{cpl}}=-E_{J}\cos(\frac{2\pi \delta S}{h})$, an exchange current $J_{\mathrm{c}}\sin(\frac{2\pi \delta S}{h})$ and an AC frequency $\omega_{\mathrm{Jsn}}=\frac{2\pi \delta\mu_{\mathrm{chm}}}{h}$, which is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ for $1\,\mathrm{meV}$. The coupling is conservative and produces no entropy; the friction does, and the two meet only through the chemical potential difference that the friction changes.
 
 The $T\to0$ limit is exact and shown in four displays: $\rho_{\mathrm{num}}\to\rho_{\mathrm{num,sup}}$, $s_{\mathrm{ent}}\to0$, $\tilde F_{\Phi,\mathrm{fr}}\to0$ so that $(\tilde\nabla_\Phi)^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}=0$, and $\tilde J_{\Phi,\mathrm{ent}}\to0$ with the second law saturated. The normal flow does not tend to the condensate's flow; it ceases to exist. The remaining flow is the polar-form article's, and the two-fluid model is its finite-temperature extension.
 
@@ -310,7 +310,7 @@ The $T\to0$ limit is exact and shown in four displays: $\rho_{\mathrm{num}}\to\r
 | $Q_{\mathrm{qnt}}$, $p_{\mathrm{qnt}}$ | Quantum potential and quantum pressure |
 | $\gamma_{\mathrm{sup}}$, $\gamma_{\mathrm{nrm}}$ | Boost factors of the two components |
 | $\langle\ \rangle_{\natural}$, $\mathrm{Sc}$ | Quaternionic norm, scalar part |
-| $\hbar$, $m$, $c$ | Planck constant, mass, speed of light |
+| $\frac{h}{2\pi}$, $m$, $c$ | Planck constant, mass, speed of light |
 
 ## Further Reading
 

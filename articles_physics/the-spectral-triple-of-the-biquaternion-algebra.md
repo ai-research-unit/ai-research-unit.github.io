@@ -96,7 +96,7 @@ with the gradient acting on the right-chirality part and its conjugate on the le
 $$
 \mathcal{N}\tilde{Ξ}=\Bigl(-(\tilde\nabla_\Phi)^{\natural}-k_mi\,\overline{\,\cdot}\,\vec e_z\Bigr)\tilde{Ξ}=0,
 $$
-with the mass acting on the right through conjugation. The three displays describe one physics: the first is the chirality form, the second the two lines written once each, and the third the two-sided form. The spectral triple's candidate operator is $\mathcal{D}=i\tilde\nabla_\Phi+D_F$: the gradient in the same chirality basis, with the chirality-odd mass added. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+with the mass acting on the right through conjugation. The three displays describe one physics: the first is the chirality form, the second the two lines written once each, and the third the two-sided form. The spectral triple's candidate operator is $\mathcal{D}=i\tilde\nabla_\Phi+D_F$: the gradient in the same chirality basis, with the chirality-odd mass added. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 **The chirality.** The chirality is the right action by the element $-i\vec e_z$,
 $$

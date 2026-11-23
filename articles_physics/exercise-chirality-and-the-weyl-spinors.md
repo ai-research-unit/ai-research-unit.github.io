@@ -30,7 +30,7 @@ Seven problems are worked below, one per section.
 
 ## Problem 2: The Two Weyl Halves and the Mass Term
 
-This problem writes every mass through $k_m=m\,c/\hbar$ and every phase through $\omega r'_t/c$; the mass-shell paragraph gathers the two factors.
+This problem writes every mass through $k_m=\frac{2\pi m\,c}{h}$ and every phase through $\omega r'_t/c$; the mass-shell paragraph gathers the two factors.
 
 **The gradient.** The biquaternionic gradient $\tilde\nabla_\Phi$ is one element and acts by left multiplication (*Operator and Calculus Conventions*, §*The Operators*). It therefore keeps each letter (Problem 1), and its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ is a conjugation of the same operator and not a second derivative.
 
@@ -66,15 +66,15 @@ $$
 \left(\Box_\Phi-k_m^{2}\right)\tilde{Ξ}_{R} = 0, \qquad \left(\Box_\Phi-k_m^{2}\right)\tilde{Ξ}_{L} = 0,
 $$
 
-and with $\hbar$ and $c$ restored the same statement is $(\Box_\Phi - k_m^{2})\tilde{Ξ}=0$. The sign on the time term of $\Box_\Phi$ is the series convention of the material sector, and the article uses that one operator and no second one. Thus the mass term, and only the mass term, relates the two parts: when $m=0$ each part separately obeys a one-sided equation; for $m\neq0$ it obeys the Klein–Gordon equation. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+and with $\frac{h}{2\pi}$ and $c$ restored the same statement is $(\Box_\Phi - k_m^{2})\tilde{Ξ}=0$. The sign on the time term of $\Box_\Phi$ is the series convention of the material sector, and the article uses that one operator and no second one. Thus the mass term, and only the mass term, relates the two parts: when $m=0$ each part separately obeys a one-sided equation; for $m\neq0$ it obeys the Klein–Gordon equation. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
-**Mass shell.** For a plane wave $\tilde{Ξ}\propto\exp(-i\theta_{\mathrm{pwp}})$ with the plane-wave angle $\theta_{\mathrm{pwp}}=k_{t}^{\prime}x_0-\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ real because every factor is real, and $x_0 = r'_{t}$, the Klein–Gordon equation gives $k_{t}^{\prime\,2} = \vec k_\Phi^2 + k_m^{2}$. Equivalently, with the four-momentum $\tilde{P}_{\Phi} = iE/c\,e_t + \vec p\in\mathbb{B}_{\Phi}$ and $k =\frac{P}{\hbar}$,
+**Mass shell.** For a plane wave $\tilde{Ξ}\propto\exp(-i\theta_{\mathrm{pwp}})$ with the plane-wave angle $\theta_{\mathrm{pwp}}=k_{t}^{\prime}x_0-\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ real because every factor is real, and $x_0 = r'_{t}$, the Klein–Gordon equation gives $k_{t}^{\prime\,2} = \vec k_\Phi^2 + k_m^{2}$. Equivalently, with the four-momentum $\tilde{P}_{\Phi} = iE/c\,e_t + \vec p\in\mathbb{B}_{\Phi}$ and $k =\frac{2\pi P}{h}$,
 
 $$
 \langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 \qquad(\vec p^2=|\vec p|^2),
 $$
 
-i.e. $E^2 = \vec p^2c^2 + m^2c^4$. Here $k_{\Phi}=\frac{p}{\hbar}$ and $k_{t}^{\prime}=E/(\hbar\,c)$ are the momentum and energy wave numbers.
+i.e. $E^2 = \vec p^2c^2 + m^2c^4$. Here $k_{\Phi}=\frac{2\pi p}{h}$ and $k_{t}^{\prime}=\frac{2\pi E}{h\,c}$ are the momentum and energy wave numbers.
 
 **The second Dirac equation.** Two equations carry the name, and they must not be read as one. The pair above is the **one-sided** form of the equation: both gradients act by left multiplication, the field is one element, and the mass is the coupling between the two values. The **two-sided** form of the equation is a single field equation on $F\in\mathbb{B}$, Kravchenko's form,
 

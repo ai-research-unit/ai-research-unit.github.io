@@ -6,13 +6,13 @@ The path integral is the third formulation of a quantum theory, alongside the eq
 
 The division of labour with the companion path-integral article must be stated at once. The companion article *The Path Integral in Biquaternionic Form* analyses the algebraic status of the phase: it shows that the $i$ of $\exp(i\theta_{\mathrm{act}})$ is the central scalar imaginary, that the exponent lies in the material sector $\mathbb{B}_{\Phi}$, that the phase is a central $*$-unitary element, and that a non-central root would produce a spin rotation rather than a global phase. This article does not repeat that analysis; it takes the centrality of the phase as established and addresses the complementary case, the relativistic field-theoretic one: a functional integral over a field configuration space, not a single-particle sum over paths, with the Klein–Gordon quadratic form in the exponent. The non-relativistic single-particle scalar case, which is a sum over paths with a central kernel, belongs to the Schrödinger setting and is not treated here.
 
-Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(iS/\hbar)=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
+Throughout this article $\theta_{\mathrm{act}}:=\frac{2\pi \mathrm{Re}\,S}{h}$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\frac{2\pi \mathrm{Im}\,S}{h}$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(\frac{2\pi iS}{h})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
 The biquaternion content of the Klein–Gordon path integral is a statement about the **configuration space and the quadratic form** rather than about the phase. The field is a function into the centre $\mathbb{B}_{C}$, as the companion article *Spin Zero and the Centre: Why the Scalar Field Lies Outside the State Module* establishes; the action is therefore a central scalar functional; the measure is a measure on a space of central-valued functions; and every object built from the Gaussian — the two-point function, the determinant, the effective action — is central and acts on the state module as scalar multiplication. The two structural points that are genuinely the algebra's are the identification of the **mass shell** with a level set of the biquaternion norm, so that the quadratic form in the exponent is the biquaternion norm read on the material sector, and the identification of the **Wick rotation** with the passage from the material sector to the quaternion subspace, which is exactly the passage that makes the Euclidean quadratic form positive definite. The path integral's convergence, and its failure for a negative mass squared, are properties of the biquaternion norm.
 
 The article is organised as follows. The field configuration space and the action are set up first, and the equation of motion is derived from the action by variation. The generating functional is defined and the free Gaussian is evaluated, first on a finite lattice where it is an ordinary finite-dimensional integral and can be checked exactly, and then in the formal continuum limit. The stationary-phase expansion and the classical field are treated next. The Wick rotation and Euclidean functional are then discussed, with the positivity question. A closing section states the biquaternion interpretation, and open questions are recorded.
 
-Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$, central $i$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$; $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\eta \vec e_\eta\partial/\partial R_\eta$; and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial {r'_t}^2$. The scalar field is $\tilde{Ξ}=\xi\,e_t$ with $\xi$ complex, and the mass enters as the length $k_m=mc/\hbar$. The analytic parts are written with $c$ explicit, as the companion articles are.
+Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$, central $i$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$; $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\eta \vec e_\eta\partial/\partial R_\eta$; and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial {r'_t}^2$. The scalar field is $\tilde{Ξ}=\xi\,e_t$ with $\xi$ complex, and the mass enters as the length $k_m=\frac{2\pi mc}{h}$. The analytic parts are written with $c$ explicit, as the companion articles are.
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the scalar equation, its mass-term sign, and the central scalar operator.
 - Companion article *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*, for the free two-point function, the four contour prescriptions, and the Euclidean kernel.
@@ -45,11 +45,11 @@ so that the complex scalar is equivalent to two real scalars, one in each sector
 
 ### The action and its variation
 
-The Klein–Gordon action for the complex scalar field is the standard relativistic scalar action, written with the framework's d'Alembertian. The action carries the quantum of action $\hbar$,
+The Klein–Gordon action for the complex scalar field is the standard relativistic scalar action, written with the framework's d'Alembertian. The action carries the quantum of action $\frac{h}{2\pi}$,
 
 $$
 S[\tilde{Ξ}]
-=\hbar\int d^4r\left[-\frac{1}{2}\sum_\mu\partial/\partial R_\mu\,\xi^*\,\partial/\partial R_\mu\,\xi-\frac{1}{2}\,k_m^{2}\,|\xi|^2\right],
+=\frac{h}{2\pi}\int d^4r\left[-\frac{1}{2}\sum_\mu\partial/\partial R_\mu\,\xi^*\,\partial/\partial R_\mu\,\xi-\frac{1}{2}\,k_m^{2}\,|\xi|^2\right],
 $$
 
 with the index summed over the same $Q$ coordinate; in biquaternion form, using $\tilde{Ξ}^{*}=\xi^*e_t$ and $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})=|\xi|^2$, this is a central scalar functional,
@@ -104,7 +104,7 @@ k_{t}^{\prime\,2}-k_\Phi^{2}-k_m^{2}=0
 \langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2},
 $$
 
-a level set of the biquaternion norm on the material four-wavevector, read indifferently as the wave number $\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}=i k_{t}^{\prime}e_t+\vec k_\Phi$ or as the momentum $\tilde P_{\Phi}=\hbar\,\tilde K_{\Phi}$. The two differ by the division alone, so they have the same level sets and different dimensions: $k_{t}^{\prime}=\omega/c$ and $k_\Phi=|\vec k_\Phi|$ are inverse lengths, and the subtraction above is a subtraction of like quantities, which the momentum form is not. The quadratic form of the path integral is thus the biquaternion norm of $\mathbb{B}_{\Phi}$, shifted by the mass: the exponent's saddle is the biquaternion norm's level set, and the Gaussian's width is the operator whose symbol is that biquaternion norm minus the mass. This is the sense in which the framework's contribution to the scalar path integral is geometry rather than a new mechanism.
+a level set of the biquaternion norm on the material four-wavevector, read indifferently as the wave number $\tilde K_{\Phi}=\frac{2\pi \tilde P_{\Phi}}{h}=i k_{t}^{\prime}e_t+\vec k_\Phi$ or as the momentum $\tilde P_{\Phi}=\frac{h}{2\pi}\,\tilde K_{\Phi}$. The two differ by the division alone, so they have the same level sets and different dimensions: $k_{t}^{\prime}=\omega/c$ and $k_\Phi=|\vec k_\Phi|$ are inverse lengths, and the subtraction above is a subtraction of like quantities, which the momentum form is not. The quadratic form of the path integral is thus the biquaternion norm of $\mathbb{B}_{\Phi}$, shifted by the mass: the exponent's saddle is the biquaternion norm's level set, and the Gaussian's width is the operator whose symbol is that biquaternion norm minus the mass. This is the sense in which the framework's contribution to the scalar path integral is geometry rather than a new mechanism.
 
 ## The Generating Functional and the Free Gaussian
 
@@ -201,7 +201,7 @@ $$
 the exponent separates into the classical action, a linear term that vanishes by stationarity, and the quadratic fluctuation term $\frac{1}{2}\zeta(\Box_\Phi-k_m^{2})\zeta$. The one-loop approximation is the Gaussian integral over $\zeta$, giving
 
 $$
-Z[J]\simeq \exp(i\theta_{\mathrm{act}}+i\theta_{\mathrm{src}})\,,\qquad \theta_{\mathrm{src}}=\frac{1}{\hbar}\int J^*\xi_{\mathrm{cl}}\in\mathbb{R},
+Z[J]\simeq \exp(i\theta_{\mathrm{act}}+i\theta_{\mathrm{src}})\,,\qquad \theta_{\mathrm{src}}=\frac{2\pi 1}{h}\int J^*\xi_{\mathrm{cl}}\in\mathbb{R},
 \left[\det\left(\Box_\Phi-k_m^{2}\right)\right]^{-1/2},
 $$
 
@@ -216,7 +216,7 @@ $$
 \qquad k_{t}^{\prime}=\frac{\omega}{c},
 $$
 
-so that the propagator is the inverse of the biquaternion norm shifted by the mass. In the framework's terms, the saddle condition is that the wave biquaternion of a free mode, $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, lies on the level set $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$ of the biquaternion norm of $\mathbb{B}_{\Phi}$, and the source moves the field off the shell by an amount measured by the biquaternion norm through the kernel. This is the third formulation's version of the same biquaternion-norm geometry that the equation and the propagator exhibit.
+so that the propagator is the inverse of the biquaternion norm shifted by the mass. In the framework's terms, the saddle condition is that the wave biquaternion of a free mode, $\tilde K_{\Phi}=\frac{2\pi \tilde P_{\Phi}}{h}$, lies on the level set $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$ of the biquaternion norm of $\mathbb{B}_{\Phi}$, and the source moves the field off the shell by an amount measured by the biquaternion norm through the kernel. This is the third formulation's version of the same biquaternion-norm geometry that the equation and the propagator exhibit.
 
 ## The Wick Rotation and the Euclidean Functional
 
@@ -241,7 +241,7 @@ $$
 and the phase factor becomes a decaying weight,
 
 $$
-\exp(i\theta_{\mathrm{act}})\;\longmapsto\;\exp(-\frac{S_{E}}{\hbar}),
+\exp(i\theta_{\mathrm{act}})\;\longmapsto\;\exp(-\frac{2\pi S_{E}}{h}),
 \qquad
 S_E\ge  0 .
 $$
@@ -316,10 +316,10 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate, $\in\mathbb{B}_{\Phi}$ |
 | $\tilde{Q}_E=c\tau\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Euclidean coordinate, $\in\mathbb{B}_{H}$ |
 | $\tilde{Ξ}=\xi e_t$ | Scalar (spin-$0$) field, valued in the centre |
-| $\tilde P_{\Phi}=\hbar\,(i\omega/c\,e_t+\vec k_\Phi)$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
+| $\tilde P_{\Phi}=\frac{h}{2\pi}\,(i\omega/c\,e_t+\vec k_\Phi)$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$, equivalently $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^{2}c^{2}$, is the mass shell |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
-| $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the mass parameter |
+| $1/k_m$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $k_m=\frac{2\pi mc}{h}$ is the mass parameter |
 | $\Omega_{\vec k_\Phi}=\sqrt{k_\Phi^{2}+k_m^{2}}=k_{t}^{\prime}$ | On-shell frequency, an inverse length: the temporal wave number |
 | $S[\tilde{Ξ}]$ | Klein–Gordon action, central scalar |
 | $S_E[\tilde{Ξ}]$ | Euclidean action, $\ge0$ for $k_m^{2}\ge0$ |

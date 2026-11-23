@@ -18,7 +18,7 @@ $$
 \tilde P_{0}=\tfrac{mc}{2}\bigl(e_t+i\vec e_z\bigr),
 $$
 
-whose norm is zero, $\langle\tilde P_0\rangle_{\natural}=0$. The factor $\tfrac12$ is a normalisation: it gives $\tilde P_0^{2}=m\tilde P_0$, so the element is $m$ times an idempotent, and for $m=1$ it is the pure spinor idempotent $\tfrac12(e_t+i\vec e_z)$.
+whose norm is zero, $\langle\tilde P_0\rangle_{\natural}=0$. The factor $\tfrac12$ is a normalisation: it gives $\tilde P_0^{2}=m\tilde P_0$, so the element is $m$ times an idempotent, and for unit mass it is the pure spinor idempotent $\tfrac12(e_t+i\vec e_z)$.
 
 ### The Orbit
 
@@ -201,7 +201,7 @@ The corpus's massless labels are $(0,h)$: a zero in the mass slot and a half-int
 | compact? | yes | no |
 | labels | $(m,j)$ | $(0,h)$ |
 | states per momentum | $2j+1$ | one per helicity sign |
-| second Casimir | $m^{2}c^{2}\hbar^{2}j(j+1)$ | $0$ |
+| second Casimir | $m^{2}c^{2}\frac{h^{2}}{4\pi^{2}}j(j+1)$ | $0$ |
 
 The compactness is the whole difference. A compact little group has finite-dimensional unitary representations with a discrete label; a non-compact one has mostly infinite-dimensional ones, and the finite-dimensional survivors are one-dimensional.
 

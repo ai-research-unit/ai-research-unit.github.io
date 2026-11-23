@@ -21,16 +21,16 @@ $$
 \qquad
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi .
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi .
 $$
 
 Here $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ is the potential biquaternion, an element of the material sector $\mathbb{B}_\Phi$, with central scalar coefficients in the abelian case. That centality is the single fact the whole article turns on.
 
 Three things are established, and they are local statements.
 
-*First, the coupling enters the logarithmic derivative as one added four-vector.* Because each component of the connection is a central scalar, $\frac{iϙ}{\hbar}\tilde A_\Phi$ passes through $\tilde\Xi^{-1}$ and joins the four brackets without disturbing their types. It lands in the phase bracket and in the boost bracket and in neither of the other two.
+*First, the coupling enters the logarithmic derivative as one added four-vector.* Because each component of the connection is a central scalar, $\frac{2\pi iϙ}{h}\tilde A_\Phi$ passes through $\tilde\Xi^{-1}$ and joins the four brackets without disturbing their types. It lands in the phase bracket and in the boost bracket and in neither of the other two.
 
-*Second, the shift is the classical substitution, in one object.* The scalar potential and the vector potential are the temporal and spatial slots of one element, so $E\mapsto E+ϙ\phi$ and $\vec p\mapsto\vec p-q\vec A$ are not two substitutions. They are the addition of $\frac{ϙ}{\hbar}\tilde A_\Phi$ to the covariant wavevector, and the algebra states them with one sign.
+*Second, the shift is the classical substitution, in one object.* The scalar potential and the vector potential are the temporal and spatial slots of one element, so $E\mapsto E+ϙ\phi$ and $\vec p\mapsto\vec p-q\vec A$ are not two substitutions. They are the addition of $\frac{2\pi ϙ}{h}\tilde A_\Phi$ to the covariant wavevector, and the algebra states them with one sign.
 
 *Third, the spin transport is what the chart does and does not show.* The connection is central per component, so it multiplies the word and cannot rotate either frame factor. The rotor's own rate is the mass term's and the coupling leaves it alone. What the background does to the spin is indirect and is recorded as the chart's limit.
 
@@ -46,22 +46,22 @@ The logarithmic derivative, coupled.
 
 $$
 \tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi
-=\tilde\Xi^{-1}\frac{\partial\tilde\Xi}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu
+=\tilde\Xi^{-1}\frac{\partial\tilde\Xi}{\partial R_\mu}+\frac{2\pi i\,ϙ}{h}A_\mu
 =\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}
 +i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
-+\frac{i\,ϙ}{\hbar}A_\mu
++\frac{2\pi i\,ϙ}{h}A_\mu
 +\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu}\Bigr)\tilde u_{\mathrm r}
 +\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_\mu}.
 $$
 
 The added term is one central complex number per component, and the four terms after it are the parent's four brackets unchanged in form.
 
-Which brackets the connection touches. Decompose the added term with $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$. Its temporal slot is $\frac{iϙ}{\hbar}A_t$, a central imaginary number; its spatial slots are $\frac{iϙ}{\hbar}A_\eta\vec e_\eta$, which are Hermitian vector parts because $i$ times a real vector is Hermitian. Hence
+Which brackets the connection touches. Decompose the added term with $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$. Its temporal slot is $\frac{2\pi iϙ}{h}A_t$, a central imaginary number; its spatial slots are $\frac{2\pi iϙ}{h}A_\eta\vec e_\eta$, which are Hermitian vector parts because $i$ times a real vector is Hermitian. Hence
 
 $$
-\frac{i\,ϙ}{\hbar}\tilde A_\Phi
-=\underbrace{\frac{i\,ϙ}{\hbar}A_t}_{\text{central imaginary}}
-+\underbrace{\frac{i\,ϙ}{\hbar}\sum_\eta A_\eta\vec e_\eta}_{\text{Hermitian vector}} .
+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi
+=\underbrace{\frac{2\pi i\,ϙ}{h}A_t}_{\text{central imaginary}}
++\underbrace{\frac{2\pi i\,ϙ}{h}\sum_\eta A_\eta\vec e_\eta}_{\text{Hermitian vector}} .
 $$
 
 The connection therefore adds to the phase bracket and to the boost bracket and to nothing else. The scale bracket and the rotor bracket are untouched, and that is a statement of type and not of size: a central scalar cannot produce a real vector part, and it cannot produce a scale.
@@ -71,8 +71,8 @@ The type table, with the coupling in place.
 | bracket | type | the connection's share |
 | --- | --- | --- |
 | $\tfrac12\partial_\mu\ln \varrho^{2}$ | real central scalar | none |
-| $i\partial_\mu\theta_{\mathrm{pha}}+\frac{iϙ}{\hbar}A_\mu$ | central imaginary | the whole temporal slot of $\frac{iϙ}{\hbar}\tilde A_\Phi$ |
-| $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the whole spatial slot of $\frac{iϙ}{\hbar}\tilde A_\Phi$ |
+| $i\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi iϙ}{h}A_\mu$ | central imaginary | the whole temporal slot of $\frac{2\pi iϙ}{h}\tilde A_\Phi$ |
+| $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the whole spatial slot of $\frac{2\pi iϙ}{h}\tilde A_\Phi$ |
 | $\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$ | real vector part | none |
 
 The one-line reason. The connection is a material-sector element, and the material sector is the central imaginary plus the real vector; multiplying by $i$ carries it into the central imaginary plus the Hermitian vector, which are brackets two and three. The scale and the rotor are the two brackets a multiplication by a central scalar cannot reach.
@@ -83,30 +83,30 @@ The one-line reason. The connection is a material-sector element, and the materi
 
 The phase gradient is the four-momentum, and the coupling shifts it.
 
-The gradient, with the connection. Adding the temporal slot of $\frac{iϙ}{\hbar}\tilde A_\Phi$ to the phase bracket gives
+The gradient, with the connection. Adding the temporal slot of $\frac{2\pi iϙ}{h}\tilde A_\Phi$ to the phase bracket gives
 
 $$
-i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu
-=i\frac{\partial}{\partial R_\mu}\Bigl(\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\Lambda\Bigr)
+i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}+\frac{2\pi i\,ϙ}{h}A_\mu
+=i\frac{\partial}{\partial R_\mu}\Bigl(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda\Bigr)
 \qquad\text{whenever}\qquad A_\mu=\frac{\partial\Lambda}{\partial R_\mu},
 $$
 
 so a pure-gauge potential is absorbed by a reparameterisation of the angle and by nothing else. That is the polar statement of gauge invariance, and it is a statement about the *angle* and not about the field.
 
-The momentum. With $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ and $E=-\hbar c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$ the free reading, the coupled reading is
+The momentum. With $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ and $E=-\frac{h}{2\pi} c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$ the free reading, the coupled reading is
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi,
+\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi,
 \qquad
-\tilde K_\Phi=i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}.
+\tilde K_\Phi=i\frac{2\pi E}{h c}e_t+\frac{2\pi \vec p}{h}.
 $$
 
 Slot by slot this is
 
 $$
-\hbar c\,\kappa_t=E+ϙ cA_t,
+\frac{h}{2\pi} c\,\kappa_t=E+ϙ cA_t,
 \qquad
-\hbar\vec\kappa=\vec p-q\vec A,
+ \frac{h}{2\pi}\vec\kappa=\vec p-q\vec A,
 $$
 
 where $\kappa_t$ and $\vec\kappa$ are the components of the covariant wavevector. The whole of the classical substitution is one addition, because the scalar and vector potentials are the temporal and spatial slots of one element of $\mathbb{B}_\Phi$. No second rule is needed and no sign can be chosen independently.
@@ -136,7 +136,7 @@ $$
 The boost in the word is therefore the one the *covariant* wavevector names. The canonical wavevector is the covariant one less the potential:
 
 $$
-\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{ϙ}{\hbar}\tilde A_\Phi .
+\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{2\pi ϙ}{h}\tilde A_\Phi .
 $$
 
 What that says in one sentence. The velocity is kinetic: it is built from the wavevector the background leaves, and the potential sits entirely in the canonical wavevector. This is the classical statement $\vec p_{\mathrm{kin}}=\vec p_{\mathrm{can}}-ϙ\vec A$, and the chart states it as a property of which wavevector names the boost.
@@ -150,7 +150,7 @@ $$
 and in canonical components it is
 
 $$
-\Bigl(\frac{E+ϙcA_t}{\hbar c}\Bigr)^{2}-\Bigl|\frac{\vec p-q\vec A}{\hbar}\Bigr|^{2}=-k_m^{2}.
+\Bigl(\frac{2\pi E+ϙcA_t}{h c}\Bigr)^{2}-\Bigl|\frac{2\pi \vec p-q\vec A}{h}\Bigr|^{2}=-k_m^{2}.
 $$
 
 The same translated hyperboloid as in the element form. The radius is $k_m$ and the potential moves the centre. A constant potential therefore shifts every level and opens no gap, and the polar reason is the one-line reason of the element form: a shift of a variable cannot change a radius.
@@ -166,7 +166,7 @@ The angle is a coordinate, so the gauge transformation is a change of coordinate
 The transformation in the chart.
 
 $$
-\theta_{\mathrm{pha}}\longmapsto\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\Lambda,
+\theta_{\mathrm{pha}}\longmapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda,
 \qquad
 \tilde A_\Phi\longmapsto\tilde A_\Phi-\tilde\nabla_\Phi\Lambda,
 \qquad
@@ -178,13 +178,13 @@ Only the angle moves. The scale, the boost and the rotor are gauge invariant by 
 The covariant wavevector is invariant.
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}\longmapsto\tilde\nabla_\Phi\Bigl(\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\Lambda\Bigr)+\frac{ϙ}{\hbar}\bigl(\tilde A_\Phi-\tilde\nabla_\Phi\Lambda\bigr)=\tilde K_{\Phi,\mathrm{gco}} .
+\tilde K_{\Phi,\mathrm{gco}}\longmapsto\tilde\nabla_\Phi\Bigl(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda\Bigr)+\frac{2\pi ϙ}{h}\bigl(\tilde A_\Phi-\tilde\nabla_\Phi\Lambda\bigr)=\tilde K_{\Phi,\mathrm{gco}} .
 $$
 
 The invariant is the curvature. Define $\tilde F:=\tilde\nabla_\Phi^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$ restricted to its vector part; the operator identity of the covariant-derivative article gives
 
 $$
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F,
 $$
 
 and $\tilde F$ is unchanged by the transformation, since a gradient can be absorbed and a field strength cannot. In the abelian case $\tilde F$ is the Maxwell biquaternion of *Maxwell's Equations in the Biquaternionic Formulation*.
@@ -216,7 +216,7 @@ What survives exactly. The spin's *kinematics* is exact and gauge invariant: $\h
 Adds.
 
 - A local reading of the kinetic momentum: the potential shifts the phase gradient, and the shift is visible at each event (§*The Kinetic Momentum*).
-- One object for the whole classical substitution: $\frac{ϙ}{\hbar}\tilde A_\Phi$ carries the scalar and the vector potential together, and the two signs cannot be chosen independently (§*The Kinetic Momentum*).
+- One object for the whole classical substitution: $\frac{2\pi ϙ}{h}\tilde A_\Phi$ carries the scalar and the vector potential together, and the two signs cannot be chosen independently (§*The Kinetic Momentum*).
 - A direct statement of the kinetic velocity: the boost is named by the covariant wavevector, and the canonical one is the covariant one less the potential (§*The Kinetic Velocity*).
 - The gauge-invariant split of the field: the phase is the gauge-dependent part, the three frame factors are the gauge-invariant part (§*The Gauge-Invariant Reparameterisation*).
 - The type table, which says in advance where a central connection can act and where it cannot (§*The Coupling in Polar Variables*).
@@ -243,11 +243,11 @@ The relative phase and the chart's parameter count. The mass breaks the relative
 
 ## Summary
 
-The coupled Dirac equation in polar variables is the pair $\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L$ and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ substituted into it.
+The coupled Dirac equation in polar variables is the pair $\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L$ and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$, and the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ substituted into it.
 
-The coupling enters the logarithmic derivative as one added element, $\frac{iϙ}{\hbar}\tilde A_\Phi$. Because that element is central per component, it lands in the phase bracket and in the boost bracket and in neither of the other two. The scale and the rotor are untouched by type, not by accident.
+The coupling enters the logarithmic derivative as one added element, $\frac{2\pi iϙ}{h}\tilde A_\Phi$. Because that element is central per component, it lands in the phase bracket and in the boost bracket and in neither of the other two. The scale and the rotor are untouched by type, not by accident.
 
-The phase bracket carries the momentum, and the coupling shifts it: $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$, which is $E\mapsto E+ϙcA_t$ and $\vec p\mapsto\vec p-q\vec A$ in the slots. One element, one sign, no independent choice.
+The phase bracket carries the momentum, and the coupling shifts it: $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$, which is $E\mapsto E+ϙcA_t$ and $\vec p\mapsto\vec p-q\vec A$ in the slots. One element, one sign, no independent choice.
 
 The boost bracket carries the velocity, and the boost is named by the covariant wavevector, so the velocity is the kinetic one and the canonical wavevector is the covariant one less the potential. The mass shell is $\kappa_t^{2}-|\vec\kappa|^{2}=-k_m^{2}$, a translated hyperboloid of unchanged radius: no constant potential opens a gap.
 
@@ -267,17 +267,17 @@ The polar equation is the free pair in variables. It closes for a plane wave in 
 | $\theta_{\mathrm{rpd}}\ge0,\ \vec u_{\mathrm b}$ | Rapidity and axis of the boost $\tilde U_{\Psi,\mathrm b}$ |
 | $\theta_{\mathrm{axr}}\in[0,2\pi]$ | Angle of the rotor $\tilde u_{\mathrm r}$; $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ |
 | $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | Potential biquaternion; material sector; coefficients central in the abelian case |
-| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | Covariant derivative, left action |
-| $\frac{iϙ}{\hbar}\tilde A_\Phi$ | The added element: central imaginary slot plus Hermitian vector slot |
-| $\tilde K_\Phi=i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}$ | Canonical wavevector, from $\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ |
-| $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$ | Covariant wavevector; gauge invariant; names the boost |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | Covariant derivative, left action |
+| $\frac{2\pi iϙ}{h}\tilde A_\Phi$ | The added element: central imaginary slot plus Hermitian vector slot |
+| $\tilde K_\Phi=i\frac{2\pi E}{h c}e_t+\frac{2\pi \vec p}{h}$ | Canonical wavevector, from $\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ |
+| $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$ | Covariant wavevector; gauge invariant; names the boost |
 | $\kappa_t,\vec\kappa$ | Components of $\tilde K_{\Phi,\mathrm{gco}}$; $\kappa_t^{2}-|\vec\kappa|^{2}=-k_m^{2}$ |
 | $\tilde V_\Phi=ic\,\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ | Four-velocity; kinetic |
 | $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-vector factor; $\tilde K_{\Phi,\mathrm{gco}}=ik_m\mathcal B_\Psi$ |
-| $i\partial_\mu\theta_{\mathrm{pha}}+\frac{iϙ}{\hbar}A_\mu$ | The coupled phase bracket |
+| $i\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi iϙ}{h}A_\mu$ | The coupled phase bracket |
 | $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | The boost bracket; receives the Hermitian slot |
 | $\tilde F$ | Curvature; the gauge invariant |
-| $\Lambda$ | Gauge function; $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Lambda/\hbar$ |
+| $\Lambda$ | Gauge function; $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Lambda}{h}$ |
 
 ## Further Reading
 

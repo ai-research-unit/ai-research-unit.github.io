@@ -92,7 +92,7 @@ with $\bar{\tilde\Xi}=\tilde\Xi^{*}i\vec e_x$ the Dirac adjoint of the corpus, a
 The covariant gradient. Its action on a field in the representation $(\mathbf{3}$ or $\mathbf{1},\mathbf{2}$ or $\mathbf{1},Y)$ is the one of *Operator and Calculus Conventions*, §*The Gradient*, and it reads
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_{\psi}=\tilde\nabla_\Phi\tilde\Xi_{\psi}+\frac{i\,ϙ}{\hbar}\Bigl(\sum_a T_{a,\psi} G_{a}+\sum_a\tau_{a,\psi} W_{a}+Y_\psi B\Bigr)\tilde\Xi_{\psi} ,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_{\psi}=\tilde\nabla_\Phi\tilde\Xi_{\psi}+\frac{2\pi i\,ϙ}{h}\Bigl(\sum_a T_{a,\psi} G_{a}+\sum_a\tau_{a,\psi} W_{a}+Y_\psi B\Bigr)\tilde\Xi_{\psi} ,
 $$
 
 with $T_{a,\psi}$ the colour generators in the representation of $\psi$ and $\tau_{a,\psi}$ the weak ones. The bracket is the connection in that representation, and it is the same object for all fifteen fields of a generation, differing only in which generators act and with which hypercharge.

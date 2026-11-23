@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The path integral is the third formulation of the same quantum dynamics, and for a field it is a functional integral rather than a sum over trajectories. *The Lagrangian and the Schrödinger Equation* gives the action of the biquaternionic Schrödinger field. This article sums $\exp(iS/\hbar)$ over field configurations, computes the generating functional, identifies the free two-point function with the propagator, and evaluates the two kernels that can be computed exactly: the free particle and the harmonic oscillator.
+The path integral is the third formulation of the same quantum dynamics, and for a field it is a functional integral rather than a sum over trajectories. *The Lagrangian and the Schrödinger Equation* gives the action of the biquaternionic Schrödinger field. This article sums $\exp(\frac{2\pi iS}{h})$ over field configurations, computes the generating functional, identifies the free two-point function with the propagator, and evaluates the two kernels that can be computed exactly: the free particle and the harmonic oscillator.
 
 The division of labour with the three companions is fixed at the start. *The Path Integral and the Schrödinger Equation in Biquaternionic Polar Variables* reads the same integral in the word and adds nothing to its value. *The Path Integral and the Coupled Schrödinger Equation in Biquaternionic Form* puts the electromagnetic connection into this integral, and its polar companion reads that. This article is the free element-form integral: the action, the measure, the determinant, the two-point function and the semiclassical form. No connection, no word.
 
@@ -10,16 +10,16 @@ The action is first order in time, and that fixes the shape of the whole integra
 
 No new prediction, no new solution, no new particle. The functional integral is the standard one of a non-relativistic scalar field, written in the algebra's letters. What the algebra contributes is the centrality of the kernel, the scalar reduction of the integral on the state module, and the identity of the determinant's power with the order in time. Each is stated where it is used.
 
-The two settings are kept apart. The parent distinguishes a constant-element setting, in which the Hamiltonian is a fixed element $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$, from an operator setting, in which it is $\tilde H_\Psi=\hat H\,e_t$ with $\hat H=-\hbar^{2}\Delta_\Phi/2m+V$. The integral below is written in both, but every closed-form kernel is a kernel of the operator setting, where the Hamiltonian is central, and no result is transferred from one setting to the other. The general constant element is treated once, in §*The Kernel and Its Centrality*, because its kernel is the central kernel times a rotor and that exception states the rule.
+The two settings are kept apart. The parent distinguishes a constant-element setting, in which the Hamiltonian is a fixed element $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$, from an operator setting, in which it is $\tilde H_\Psi=\hat H\,e_t$ with $\hat H=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi/2m+V$. The integral below is written in both, but every closed-form kernel is a kernel of the operator setting, where the Hamiltonian is central, and no result is transferred from one setting to the other. The general constant element is treated once, in §*The Kernel and Its Centrality*, because its kernel is the central kernel times a rotor and that exception states the rule.
 
-Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$. $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the Hermitian and anti-Hermitian fixed subspaces. The asterisk is Hermitian conjugation, $\natural$ quaternion conjugation, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The variable is $r'_t=c\,t'$, and $i\hbar c\,\partial_{r'_t}=i\hbar\,\partial_{t'}$; $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length. The density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the parent's $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2n$ is twice it. The step variables are lengths along $r'_t$, and $\mathrm{Lag}$ is the Lagrangian per unit $r'_t$, that is $L/c$.
+Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$. $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the Hermitian and anti-Hermitian fixed subspaces. The asterisk is Hermitian conjugation, $\natural$ quaternion conjugation, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The variable is $r'_t=c\,t'$, and $i \frac{h}{2\pi} c\,\partial_{r'_t}=i \frac{h}{2\pi}\,\partial_{t'}$; $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length. The density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the parent's $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2n$ is twice it. The step variables are lengths along $r'_t$, and $\mathrm{Lag}$ is the Lagrangian per unit $r'_t$, that is $L/c$.
 
 ## The Integral and Its Weight
 
 The action is the variational companion's, cited and not re-derived. In the operator setting it is
 
 $$
-S[\tilde\Xi,\tilde\Xi^{*}]=\int dt'\,d^{3}x\;\mathrm{Sc}\Bigl[\frac{i\hbar}{2}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\frac{\hbar^{2}}{2m}\sum_\eta(\partial_\eta\tilde\Xi)^{*}(\partial_\eta\tilde\Xi)-V(\vec x)\,\tilde\Xi^{*}\tilde\Xi\Bigr],
+S[\tilde\Xi,\tilde\Xi^{*}]=\int dt'\,d^{3}x\;\mathrm{Sc}\Bigl[\frac{i h}{4\pi}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\frac{h^{2}}{8\pi^{2}m}\sum_\eta(\partial_\eta\tilde\Xi)^{*}(\partial_\eta\tilde\Xi)-V(\vec x)\,\tilde\Xi^{*}\tilde\Xi\Bigr],
 $$
 
 and in the constant setting the two spatial terms collapse into $-\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi$ with $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$. The antisymmetrised kinetic term is the point: $\partial_{t'}$ alone would give a complex density, and the half-difference of the two orderings is what makes the term Hermitian. That is the variational companion's first check, and it is what the exponent below inherits.
@@ -27,40 +27,40 @@ and in the constant setting the two spatial terms collapse into $-\tilde\Xi^{*}\
 The integral is over one element and its conjugate, point by point. Write
 
 $$
-Z=\int\mathcal{D}\tilde\Xi\,\mathcal{D}\tilde\Xi^{*}\;\exp\Bigl(\frac{i}{\hbar}S[\tilde\Xi,\tilde\Xi^{*}]\Bigr),
+Z=\int\mathcal{D}\tilde\Xi\,\mathcal{D}\tilde\Xi^{*}\;\exp\Bigl(\frac{2\pi i}{h}S[\tilde\Xi,\tilde\Xi^{*}]\Bigr),
 $$
 
 with $\mathcal{D}\tilde\Xi\,\mathcal{D}\tilde\Xi^{*}$ the flat product over the eight real coordinates of the element at each point. The measure is flat in the coordinates and not in the word, which is the point the polar companion takes up; here it is the product of the eight real differentials at each point of spacetime.
 
 The field is a commuting element, and here that costs nothing. The biquaternion $\tilde\Xi$ multiplies as an algebra element and its components commute as numbers, so the integral is a bosonic integral: no Grassmann variable, no Berezin rule, no sign from reordering. For the Dirac field the same fact is a limitation, because the standard Dirac field integral is fermionic and the commuting integral is a different object. For the Schrödinger field there is no such gap: the non-relativistic scalar field is a commuting field at the level of the single-particle theory, and the many-body statistics is imposed at second quantisation by the choice of the Fock space, not by the path integral. The distinction is recorded because the Dirac companion records the opposite, and the two articles should be read against one another.
 
-The weight is a central phase of scale one. The integrand is $\exp(iS/\hbar)$ and nothing else, so the weight of one configuration carries no scale and no rotor: its word is $r=1$, $\theta_{\mathrm{pha}}=S/\hbar$, $\tilde U_{\Psi,\mathrm b}=e_t$, $\tilde u_{\mathrm r}=\pm e_t$. The whole of the amplitude is in the sum over configurations and not in any one of them, and the polar companion makes that its first finding.
+The weight is a central phase of scale one. The integrand is $\exp(\frac{2\pi iS}{h})$ and nothing else, so the weight of one configuration carries no scale and no rotor: its word is $r=1$, $\theta_{\mathrm{pha}}=\frac{2\pi S}{h}$, $\tilde U_{\Psi,\mathrm b}=e_t$, $\tilde u_{\mathrm r}=\pm e_t$. The whole of the amplitude is in the sum over configurations and not in any one of them, and the polar companion makes that its first finding.
 
-The convergence factor is the centre's. The integral is oscillatory, and it is defined by the usual device: $V\to V-i\epsilon$, or the equivalent rotation of the contour, which gives $i\hbar\partial_{t'}\to i\hbar\partial_{t'}+i\epsilon$ in the operator. The factor is central, real and small, and it is the only place where the integral's definition uses something outside the action. Every closed form below is stated with the prescription understood and dropped from the display.
+The convergence factor is the centre's. The integral is oscillatory, and it is defined by the usual device: $V\to V-i\epsilon$, or the equivalent rotation of the contour, which gives $i \frac{h}{2\pi}\partial_{t'}\to i \frac{h}{2\pi}\partial_{t'}+i\epsilon$ in the operator. The factor is central, real and small, and it is the only place where the integral's definition uses something outside the action. Every closed form below is stated with the prescription understood and dropped from the display.
 
 ## Why the Integral Is Not a Gaussian
 
-**A Gaussian integral needs a symmetric bilinear, and this action is not one.** A Gaussian over a field pairs the field with itself, $\exp(\frac{i}{2\hbar}\tilde\Xi^{*}M\tilde\Xi)$, and its value is a determinant to the half power. The Schrödinger action pairs the field with itself once but carries one time derivative, so its quadratic form is
+**A Gaussian integral needs a symmetric bilinear, and this action is not one.** A Gaussian over a field pairs the field with itself, $\exp(\frac{i}{2\frac{h}{2\pi}}\tilde\Xi^{*}M\tilde\Xi)$, and its value is a determinant to the half power. The Schrödinger action pairs the field with itself once but carries one time derivative, so its quadratic form is
 
 $$
 S=\int dt'\,d^{3}x\;\tilde\Xi^{*}A\tilde\Xi,
 \qquad
-A=i\hbar\,\partial_{t'}-\hat H,
+A=i \frac{h}{2\pi}\,\partial_{t'}-\hat H,
 $$
 
-with $\hat H=-\frac{\hbar^{2}}{2m}\Delta_\Phi+V$ central. The operator $A$ is first order in the time derivative and second order in the space derivatives, and it is self-adjoint for the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ because the kinetic term was antisymmetrised. This is a first-order quadratic form, and the name for its integral is the first-order or Feynman-type integral, not the Gaussian.
+with $\hat H=-\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi+V$ central. The operator $A$ is first order in the time derivative and second order in the space derivatives, and it is self-adjoint for the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ because the kinetic term was antisymmetrised. This is a first-order quadratic form, and the name for its integral is the first-order or Feynman-type integral, not the Gaussian.
 
 Its value is the inverse operator, and that is the exact statement. Completing the square in the field at fixed source gives the saddle $\tilde\Xi_{\mathrm{cl}}=-GJ$ and
 
 $$
-\boxed{\;Z[J]=\det(A)^{-1}\exp\Bigl(-\frac{i}{\hbar}\int dt'\,d^{3}x\;J^{*}G\,J\Bigr),\qquad G=A^{-1}=\bigl(i\hbar\partial_{t'}-\hat H+i\epsilon\bigr)^{-1},\;}
+\boxed{\;Z[J]=\det(A)^{-1}\exp\Bigl(-\frac{2\pi i}{h}\int dt'\,d^{3}x\;J^{*}G\,J\Bigr),\qquad G=A^{-1}=\bigl(i \frac{h}{2\pi}\partial_{t'}-\hat H+i\epsilon\bigr)^{-1},\;}
 $$
 
 with $J$ a complex source and the sign of the exponent fixed by the same $i\epsilon$ that defines $G$. The Gaussian's fluctuation factor is absent and its place is taken by the inverse operator: the integral does not produce $\det^{-1/2}$ times a kernel, it produces $\det^{-1}$ times the kernel itself.
 
 The zero-dimensional case verifies the sign and the normalisation. Take one point, one real frequency $w>0$ and one source, and integrate $\exp[-\mathrm{Sc}(w\tilde\Xi^{*}\tilde\Xi+J^{*}\tilde\Xi+\tilde\Xi^{*}J)]$ over the two real coordinates of $\tilde\Xi$, which is the Euclidean rotation of the one-point integral above. The value is $\frac{\pi}{w}\exp(|J|^{2}/w)$, and a two-dimensional quadrature of the same integrand on a $1601^{2}$ grid reproduces it to a relative $8.0\times10^{-15}$. The exponent's sign, the determinant's power and the source's normalisation are all in that identity, and all three are checked.
 
-The Euclidean rotation turns it into a Gaussian without changing the order. With $t'\to-i\tau$, $A\to\hbar\partial_\tau-\hat H$, which is positive for a confining $\hat H$, and the integral is a genuine Gaussian of a first-order operator, $\det(\hbar\partial_\tau-\hat H)^{-1}$. The Matsubara sum of the propagator is this determinant's logarithm, the free case being $\sum_{\omega_n}\ln(\hbar\omega_n+\vec p^{2}/2m)$ with no fermionic shift, because the field is bosonic. The rotation is a computation device and it does not make the action second order: the operator stays first order in the rotated time too.
+The Euclidean rotation turns it into a Gaussian without changing the order. With $t'\to-i\tau$, $A\to \frac{h}{2\pi}\partial_\tau-\hat H$, which is positive for a confining $\hat H$, and the integral is a genuine Gaussian of a first-order operator, $\det(\frac{h}{2\pi}\partial_\tau-\hat H)^{-1}$. The Matsubara sum of the propagator is this determinant's logarithm, the free case being $\sum_{\omega_n}\ln(h\nu_n+\vec p^{2}/2m)$ with no fermionic shift, because the field is bosonic. The rotation is a computation device and it does not make the action second order: the operator stays first order in the rotated time too.
 
 ## The Power of the Determinant Counts the Order in Time
 
@@ -76,7 +76,7 @@ The magnitude counts the derivatives and the sign counts the statistics. A quadr
 
 The factor of two is the two real components. The Klein–Gordon half exponent is the statement that a complex field with two real components is counted twice, while the Schrödinger field's pair of real components is counted once because the first-order form already pairs them. This is the functional-integral shadow of the parent's remark that the Schrödinger field is the square root of the Klein–Gordon field, and it is the only place in the four articles of this set where that relation becomes a numerical coefficient.
 
-The vacuum energies of the two theories differ by the factor of two between $\frac{\hbar}{2}2\,\mathrm{Sc}\ln$ and $\hbar\,2\,\mathrm{Sc}\ln$, and the Casimir-type sums inherit it. Nothing below needs the statement, and it is recorded because it is the cheapest test of the rule and the easiest to get wrong.
+The vacuum energies of the two theories differ by the factor of two between $\frac{h}{4\pi}2\,\mathrm{Sc}\ln$ and $\frac{h}{2\pi}\,2\,\mathrm{Sc}\ln$, and the Casimir-type sums inherit it. Nothing below needs the statement, and it is recorded because it is the cheapest test of the rule and the easiest to get wrong.
 
 ## The Measure
 
@@ -93,7 +93,7 @@ The measure is flat in the coordinates of the element and not in the word. The e
 $$
 G_{\mathrm{prop}}(\vec r_f,r'_{t,f};\vec r_i,r'_{t,i})=\langle \vec r_f|\,\tilde Q(r'_{t,f}-r'_{t,i})\,|\vec r_i\rangle=K\,e_t,
 \qquad
-\tilde Q(r'_t)=\exp\Bigl(-\frac{i\tilde H_\Psi r'_t}{\hbar c}\Bigr).
+\tilde Q(r'_t)=\exp\Bigl(-\frac{2\pi i\tilde H_\Psi r'_t}{h c}\Bigr).
 $$
 
 The kernel is central because the Hamiltonian is, and the reason is structural. A central element commutes with everything, so its exponential does too, and a central operator has central matrix elements. The content for the module is immediate: left multiplication by a central element is scalar multiplication, so the integral propagates the state module's factor unchanged and acts on the scalar envelope alone. Whatever orientation the initial module carries, it arrives at the final time unchanged.
@@ -101,14 +101,14 @@ The kernel is central because the Hamiltonian is, and the reason is structural. 
 The general constant element is the exception that states the rule. For $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $\vec h_\Psi\neq0$ the evolution operator is not central: the polar companion reads it as
 
 $$
-\tilde Q(t')=\exp\Bigl(-i\frac{h_t t'}{\hbar}\Bigr)\Bigl(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi\Bigr),
+\tilde Q(t')=\exp\Bigl(-i\frac{2\pi h_t t'}{h}\Bigr)\Bigl(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi\Bigr),
 \qquad
-\theta=\frac{|\vec h_\Psi|t'}{\hbar},
+\theta=\frac{2\pi |\vec h_\Psi|t'}{h},
 $$
 
 a central phase times a real rotor. The kernel is then $K\,\tilde Q$ with $K$ the central scalar kernel: the rotor is position-independent and rides along, and the position integral is untouched. Centrality of the kernel is therefore exactly centrality of the Hamiltonian, no more and no less, and for the Dirac field neither holds.
 
-The free kernel, exactly. For $\hat H=-\frac{\hbar^{2}}{2m}\Delta_\Phi$ the kernel is the free propagator,
+The free kernel, exactly. For $\hat H=-\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi$ the kernel is the free propagator,
 
 $$
 \boxed{\;K_0(\vec r,r'_t)=\Bigl(\frac{k_m}{2\pi i\,r'_t}\Bigr)^{3/2}\exp\Bigl(\frac{i\,k_m|\vec r|^{2}}{2\,r'_t}\Bigr),\qquad \vec r=\vec r_f-\vec r_i,\;}
@@ -116,10 +116,10 @@ $$
 
 with the one-dimensional case the square root of the same expression with one power of the prefactor. Its composition law is exact, and a Euclidean quadrature of the composition of two factors on a $400001$-point grid reproduces the single factor to a relative $2.3\times10^{-12}$. The Maslov phases are the phases of the square root of the central $i$: the prefactor is $(2\pi i\,r'_t)^{-3/2}$ and the root is taken in the centre, where $i$ has two branches and the choice of branch is the choice of the kernel's overall phase.
 
-The oscillator kernel, exactly. For $\hat H=-\frac{\hbar^{2}}{2m}\Delta_\Phi+\frac{m\omega^{2}}{2}|\vec r|^{2}$ the kernel is
+The oscillator kernel, exactly. For $\hat H=-\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi+\frac{m\omega^{2}}{2}|\vec r|^{2}$ the kernel is
 
 $$
-K_{\mathrm{osc}}=\Bigl(\frac{m\omega}{2\pi i\hbar\sin(\omega r'_t/c)}\Bigr)^{3/2}\exp\Bigl[\frac{im\omega}{2\hbar\sin(\omega r'_t/c)}\bigl((|\vec r_f|^{2}+|\vec r_i|^{2})\cos(\omega r'_t/c)-2\vec r_f\cdot\vec r_i\bigr)\Bigr],
+K_{\mathrm{osc}}=\Bigl(\frac{m\omega}{2\pi i \frac{h}{2\pi}\sin(\omega r'_t/c)}\Bigr)^{3/2}\exp\Bigl[\frac{im\omega}{2\frac{h}{2\pi}\sin(\omega r'_t/c)}\bigl((|\vec r_f|^{2}+|\vec r_i|^{2})\cos(\omega r'_t/c)-2\vec r_f\cdot\vec r_i\bigr)\Bigr],
 $$
 
 with caustic poles where $\omega r'_t/c=n\pi$. Its composition was verified to a relative $3.3\times10^{-11}$ in the Euclidean chart, its free limit falls back on $K_0$ as $\omega\to0$, and after the rotation $r'_t\to-i\tau$ it becomes the Mehler kernel. Both kernels are central, and both are closed forms of one construction: the short-time kernel's Fresnel integral, iterated.
@@ -127,7 +127,7 @@ with caustic poles where $\omega r'_t/c=n\pi$. Its composition was verified to a
 The kernel reproduces the equation, and that is the equivalence of the two formulations. Expanding the free kernel at a step $\varepsilon$,
 
 $$
-\tilde\Xi(\vec r,r'_t+\varepsilon)=\tilde\Xi-\frac{i\varepsilon}{\hbar}V\tilde\Xi+\frac{i\,c\,\varepsilon}{2\,k_m}\Delta_\Phi\tilde\Xi+O(\varepsilon^{2}),
+\tilde\Xi(\vec r,r'_t+\varepsilon)=\tilde\Xi-\frac{2\pi i\varepsilon}{h}V\tilde\Xi+\frac{i\,c\,\varepsilon}{2\,k_m}\Delta_\Phi\tilde\Xi+O(\varepsilon^{2}),
 $$
 
 which is the parent's equation rearranged, with the module factor untouched on both sides. The path integral and the state-vector equation are the same statement for a central Hamiltonian, and the equivalence is a statement about the scalar envelope alone.
@@ -139,10 +139,10 @@ which is the parent's equation rearranged, with the module factor untouched on b
 The single-particle saddle is the classical path. Reading the same integral in the position representation turns the source-fixed problem into a boundary-value one, and the stationary point of the action between two endpoints is the classical trajectory. Expanding about it leaves a quadratic fluctuation integral, and for a central Hamiltonian that integral is a Gaussian with the van Vleck determinant:
 
 $$
-K(\vec r_f,r'_{t,f};\vec r_i,r'_{t,i})\approx\Bigl(\frac{1}{2\pi i\hbar}\Bigr)^{3/2}\Bigl|\det\frac{\partial^{2}S_{\mathrm{cl}}}{\partial x_{i,k}\,\partial x_{f,l}}\Bigr|^{1/2}\exp\Bigl(\frac{iS_{\mathrm{cl}}}{\hbar}\Bigr)=A_{\mathrm{wkb}}\exp\Bigl(\frac{iS_{\mathrm{cl}}}{\hbar}\Bigr).
+K(\vec r_f,r'_{t,f};\vec r_i,r'_{t,i})\approx\Bigl(\frac{1}{2\pi i \frac{h}{2\pi}}\Bigr)^{3/2}\Bigl|\det\frac{\partial^{2}S_{\mathrm{cl}}}{\partial x_{i,k}\,\partial x_{f,l}}\Bigr|^{1/2}\exp\Bigl(\frac{2\pi iS_{\mathrm{cl}}}{h}\Bigr)=A_{\mathrm{wkb}}\exp\Bigl(\frac{2\pi iS_{\mathrm{cl}}}{h}\Bigr).
 $$
 
-The determinant is real and the prefactor is central, so the semiclassical kernel is central too. The action is a real scalar, the determinant is real, and $(2\pi i\hbar)^{-3/2}$ is central; the choice of branch is the Maslov phase, and it changes by $\pi/2$ per caustic crossed in three dimensions. The free kernel is exact at all times, and the oscillator kernel is exact away from its poles, which is why the two exact cases are the test of the semiclassical form rather than an illustration of it.
+The determinant is real and the prefactor is central, so the semiclassical kernel is central too. The action is a real scalar, the determinant is real, and $(2\pi i \frac{h}{2\pi})^{-3/2}$ is central; the choice of branch is the Maslov phase, and it changes by $\pi/2$ per caustic crossed in three dimensions. The free kernel is exact at all times, and the oscillator kernel is exact away from its poles, which is why the two exact cases are the test of the semiclassical form rather than an illustration of it.
 
 The first-order structure survives the semiclassical limit. The determinant is the fluctuation of the field, of a first-order operator, and it enters the kernel's amplitude to the first power; the van Vleck form above is the position-space reading of that determinant, not a second object. The two statements agree because for a first-order operator $\det(A)^{-1}$ and the inverse's matrix elements carry the same information.
 
@@ -162,7 +162,7 @@ The continuum field measure is formal, and the algebra does not change that. The
 
 1. Can the field measure be built from the algebra's own structure? The element's eight real coordinates carry a flat measure, and the centre carries a two-dimensional one. Whether the zero-divisor cone of $\mathbb{B}_{\Phi}$, which is the light cone of the material sector, supports a distinguished measure for the integral is open. The Schrödinger equation has no light cone of its own, so the question enters here only through the relativistic parent.
 
-2. Does the first-order determinant admit a biquaternionic regulator? The determinant of $i\hbar\partial_{t'}-\hat H$ is a formal object, and the algebra offers a natural cutoff in the finite number of coordinates of the element. Whether that number can be used as a regulator, rather than as a fact about each point, is not known.
+2. Does the first-order determinant admit a biquaternionic regulator? The determinant of $i \frac{h}{2\pi}\partial_{t'}-\hat H$ is a formal object, and the algebra offers a natural cutoff in the finite number of coordinates of the element. Whether that number can be used as a regulator, rather than as a fact about each point, is not known.
 
 3. What is the second-quantised statement? The integral here is over a commuting field with no many-body content. The Fock-space structure and the choice of statistics belong to a second quantisation that the corpus has not written for the Schrödinger field, and the Dirac companion's limitation is the same gap seen from the other side.
 
@@ -172,7 +172,7 @@ The continuum field measure is formal, and the algebra does not change that. The
 
 ## Summary
 
-The Schrödinger field's functional integral is the sum of $\exp(iS/\hbar)$ over the elements of $\mathbb{B}$, with the variational companion's first-order action. Because the action carries one time derivative the integral is not a Gaussian: its value is $\det(A)^{-1}\exp(-\frac{i}{\hbar}\int J^{*}GJ)$ with $A=i\hbar\partial_{t'}-\hat H$ and $G=A^{-1}$, so the determinant enters to the first power and the kernel is the inverse operator itself. The power counts the time derivatives and the sign counts the statistics, which places Schrödinger's $\det^{-1}$ between Klein–Gordon's $\det^{-1/2}$ and Dirac's $\det^{+1}$.
+The Schrödinger field's functional integral is the sum of $\exp(\frac{2\pi iS}{h})$ over the elements of $\mathbb{B}$, with the variational companion's first-order action. Because the action carries one time derivative the integral is not a Gaussian: its value is $\det(A)^{-1}\exp(-\frac{2\pi i}{h}\int J^{*}GJ)$ with $A=i \frac{h}{2\pi}\partial_{t'}-\hat H$ and $G=A^{-1}$, so the determinant enters to the first power and the kernel is the inverse operator itself. The power counts the time derivatives and the sign counts the statistics, which places Schrödinger's $\det^{-1}$ between Klein–Gordon's $\det^{-1/2}$ and Dirac's $\det^{+1}$.
 
 The kernel is central whenever the Hamiltonian is, and only then: for the operator setting it is $K e_t$ and the integral acts on the state module as scalar multiplication; for a general constant element it is the central kernel times the parent's rotor. The free kernel is $K_0=(k_m/2\pi i r'_t)^{3/2}\exp(ik_m|\vec r|^{2}/2r'_t)$, exact, with its composition verified to $2.3\times10^{-12}$; the oscillator kernel is the standard closed form with caustics at $\omega r'_t/c=n\pi$, its composition verified to $3.3\times10^{-11}$. The semiclassical form is van Vleck's determinant times the phase of the classical action, central for the same reason as the exact kernel, with the Maslov phases read off the central square root of $i$.
 
@@ -189,9 +189,9 @@ The saddle of the field integral is source-fixed rather than boundary-fixed, whi
 | $\tilde\Xi$ | The Schrödinger field, one element of $\mathbb{B}$ |
 | $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, $\rho=2n$ | Density, and the parent's normalisation |
 | $S[\tilde\Xi,\tilde\Xi^{*}]$ | The first-order action; $\mathrm{Lag}$ per unit $r'_t$ |
-| $A=i\hbar\partial_{t'}-\hat H$ | The first-order quadratic form's operator |
+| $A=i \frac{h}{2\pi}\partial_{t'}-\hat H$ | The first-order quadratic form's operator |
 | $G=A^{-1}$ | The free two-point function; the propagator |
-| $Z[J]=\det(A)^{-1}\exp(-\frac{i}{\hbar}\int J^{*}GJ)$ | Generating functional |
+| $Z[J]=\det(A)^{-1}\exp(-\frac{2\pi i}{h}\int J^{*}GJ)$ | Generating functional |
 | $K e_t$ | The position kernel; central when the Hamiltonian is |
 | $K_0=(k_m/2\pi i r'_t)^{3/2}\exp(ik_m|\vec r|^{2}/2r'_t)$ | Free kernel |
 | $K_{\mathrm{osc}}$ | Oscillator kernel; poles at $\omega r'_t/c=n\pi$ |

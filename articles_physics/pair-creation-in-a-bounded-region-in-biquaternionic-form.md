@@ -14,7 +14,7 @@ Three statements organise the article.
 
 The article derives the matching, the threshold and the two tables of numbers. It does not derive the second-quantized statements: the pair number, the Bogoliubov mixing and the vacuum persistence amplitude are those of *Scalar Pair Creation in Biquaternionic Form*, the operator content of the sea is that of *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form*, and the mode count of a cavity is that of *The Vacuum State and the Casimir Effect in Biquaternionic Form*. What the framework supplies is the location of the threshold on the mass shell, and the criterion that separates a confining model which can create pairs from one which cannot.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace, the material sector, on which $Q_t=i q'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$; the gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$; the Dirac equation is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ with $k_m=mc/\hbar$; and the minimal coupling replaces $\tilde\nabla_\Phi$ by $D=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$. No array and no column is written below.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace, the material sector, on which $Q_t=i q'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$; the gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$; the Dirac equation is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ with $k_m=\frac{2\pi mc}{h}$; and the minimal coupling replaces $\tilde\nabla_\Phi$ by $D=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$. No array and no column is written below.
 
 ## The Well and the Gap
 
@@ -33,9 +33,9 @@ $$
 a one-dimensional well of depth $V_0$ and width $L$, constant on each of its three regions and discontinuous at the two walls. The particle moves along $r_x$ and is taken to be in a spin state along the direction of motion, so the reduction of the companion article applies unchanged and the same two-component pair results:
 
 $$
-i\,\hbar\,c\,\frac{\partial\tilde{Ξ}_{1}}{\partial r_x}=\bigl(E-V(r_x)+mc^{2}\bigr)\tilde{Ξ}_{2},
+i\,\frac{h}{2\pi}\,c\,\frac{\partial\tilde{Ξ}_{1}}{\partial r_x}=\bigl(E-V(r_x)+mc^{2}\bigr)\tilde{Ξ}_{2},
 \qquad
-i\,\hbar\,c\,\frac{\partial\tilde{Ξ}_{2}}{\partial r_x}=\bigl(E-V(r_x)-mc^{2}\bigr)\tilde{Ξ}_{1},
+i\,\frac{h}{2\pi}\,c\,\frac{\partial\tilde{Ξ}_{2}}{\partial r_x}=\bigl(E-V(r_x)-mc^{2}\bigr)\tilde{Ξ}_{1},
 $$
 
 with $V(r_x)=ϙ\xi(r_x)$ and $E$ the total energy. The pair is the reduced equation of the parent, and the biquaternion field is recovered from it by the standing dictionary of *The Dirac Equation in Biquaternionic Form*. Nothing below uses a second reduction.
@@ -49,15 +49,15 @@ with $V(r_x)=ϙ\xi(r_x)$ and $E$ the total energy. The pair is the reduced equat
 The well is symmetric, so every solution is even or odd. In the well the wave number is
 
 $$
-k_{\Phi,\mathrm{w}}=\frac{\sqrt{(E+V_0)^{2}-m^{2}c^{4}}}{\hbar c},
+k_{\Phi,\mathrm{w}}=\frac{2\pi \sqrt{(E+V_0)^{2}-m^{2}c^{4}}}{h c},
 \qquad
-\hbar c=\hbar\,c,
+ \frac{h}{2\pi} c=\frac{h}{2\pi}\,c,
 $$
 
 the momentum wave number of the parent read at the shifted frequency, and outside the well the solution decays with
 
 $$
-k_{\Phi,\mathrm{ev}}=\frac{\sqrt{m^{2}c^{4}-E^{2}}}{\hbar c},
+k_{\Phi,\mathrm{ev}}=\frac{2\pi \sqrt{m^{2}c^{4}-E^{2}}}{h c},
 $$
 
 which is real in the gap and is the inverse of the decay length. Both are inverse lengths: the first is a wave number and the second a decay constant, and it is the second that vanishes at the threshold.
@@ -83,7 +83,7 @@ The two lines are the whole of the problem. Each is the continuity of one ratio 
 Let the energy approach the lower edge of the gap, $E\to-mc^{2}$ from above. The decay constant vanishes there, $k_{\Phi,\mathrm{ev}}\to0$, but the factor $E+mc^{2}$ vanishes faster, since
 
 $$
-\frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=\frac{1}{\hbar c}\sqrt{\frac{mc^{2}-E}{mc^{2}+E}}\;\longrightarrow\;\frac{1}{\hbar c}\sqrt{\frac{2mc^{2}}{\varepsilon}},
+\frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=\frac{2\pi 1}{h c}\sqrt{\frac{mc^{2}-E}{mc^{2}+E}}\;\longrightarrow\;\frac{2\pi 1}{h c}\sqrt{\frac{2mc^{2}}{\varepsilon}},
 \qquad
 \varepsilon=E+mc^{2},
 $$
@@ -111,9 +111,9 @@ with $n_{\mathrm{w}}$ counting half-wavelengths across the well. Odd $n_{\mathrm
 At $E=-mc^{2}$ the wave number inside is fixed by the depth alone,
 
 $$
-k_{\Phi,\mathrm{w}}^{2}=\frac{(V_0-mc^{2})^{2}-m^{2}c^{4}}{(\hbar c)^{2}},
+k_{\Phi,\mathrm{w}}^{2}=\frac{(V_0-mc^{2})^{2}-m^{2}c^{4}}{(\frac{h}{2\pi} c)^{2}},
 \qquad
-k_m^{2}=\frac{m^{2}c^{2}}{\hbar^{2}},
+k_m^{2}=\frac{(2\pi)^{2} m^{2}c^{2}}{h^{2}},
 $$
 
 so that $k_{\Phi,\mathrm{w}}a=n_{\mathrm{w}}\pi/2$ with $a=L/2$ becomes $(V_0/mc^{2}-1)^{2}=1+(n_{\mathrm{w}}\pi/(k_mL))^{2}$, and the depth follows in closed form:
@@ -125,7 +125,7 @@ $$
 **What the formula says.** Three things. First, the threshold depends on $n_{\mathrm{w}}$ and $L$ only through the ratio $n_{\mathrm{w}}/(k_mL)$, so the $n_{\mathrm{w}}$-th level of a well of width $L$ dives at the depth of the first level of a well of width $L/n_{\mathrm{w}}$; the tables below confirm the identity, $2.181010\,mc^{2}$ both ways. Second, the threshold lies above $2mc^{2}$ for every finite width, and the excess is the confinement energy of the standing wave that dives. Expanding the root for large $k_mL$,
 
 $$
-V_0^{\mathrm{cr}}-2mc^{2}=mc^{2}\left[\sqrt{1+\left(\frac{n_{\mathrm{w}}\pi}{k_mL}\right)^{2}}-1\right]\simeq\frac{n_{\mathrm{w}}^{2}\pi^{2}\hbar^{2}}{2mL^{2}},
+V_0^{\mathrm{cr}}-2mc^{2}=mc^{2}\left[\sqrt{1+\left(\frac{n_{\mathrm{w}}\pi}{k_mL}\right)^{2}}-1\right]\simeq\frac{n_{\mathrm{w}}^{2}\pi^{2}h^{2}}{8\pi^{2}mL^{2}},
 $$
 
 which is the kinetic energy of a particle confined to a region of width $L$. A bounded region therefore needs a deeper potential than a step, and the extra depth is exactly the price of confining the charge to the region; as the region narrows the price rises without bound, so a well much narrower than a Compton wavelength dives only many rest energies deep. Third, as $L\to\infty$ at fixed $n_{\mathrm{w}}$ the threshold tends to $2mc^{2}$ from above, and $2mc^{2}$ is a floor that no finite width attains. The same number is the step's critical height, $V_0>E+mc^{2}$ at $E\to mc^{2}$, and the agreement is in the number only: $2mc^{2}$ is the least potential that brings an edge of one branch onto an edge of the other, and the well reaches it through a bound level at the lower edge of the gap while the step reaches it through a scattering state at the upper edge. What the two faces share is the formula and the floor; what separates them is the width.
@@ -178,12 +178,12 @@ for $V_0>2mc^{2}$, and $N=0$ otherwise. The floor is a count of half-wavelengths
 **The width that allows a dive.** The count is zero until the root reaches $\pi/(k_mL)$, so at a fixed depth the first dive needs a width of at least
 
 $$
-L_{\min}=\frac{\pi\hbar c}{\sqrt{V_0^{2}-2V_0\,mc^{2}}},
+L_{\min}=\frac{\pi h c}{2\pi \sqrt{V_0^{2}-2V_0\,mc^{2}}},
 $$
 
 and the $n_{\mathrm{w}}$-th dive comes at $n_{\mathrm{w}}L_{\min}$ exactly. The dive widths are therefore equally spaced. Since the root is bounded by $V_0/mc^{2}-1$, nothing dives at any width unless $V_0>2mc^{2}$: a well shallower than twice the rest energy is Klein-stable however wide it is. The floor is the same $2mc^{2}$ that the step meets as a critical height, and here it appears as a depth below which no width dives.
 
-**The count grows with the width, not with the narrowness.** This is worth stating plainly, because the opposite is often assumed. At a fixed depth the count rises as the box widens and falls to zero as it narrows. For $V_0=2.5\,mc^{2}$ the first dive needs $L_{\min}=2.810\,\hbar c/mc^{2}$, and the count runs $0,1,3,7$ at $k_mL=2.5,5,10,20$. The reason is the confinement energy, in the direction the reader may not expect: a narrow box raises the kinetic energy of the standing wave and pushes every level *up*, away from the lower edge, so a level needs room before it can sink to $-mc^{2}$. The same quantity $\hbar c/L$ that makes a small box relativistic is what keeps its vacuum intact. Smallness of $L$ changes which equation is needed; it does not by itself put a level into the lower continuum.
+**The count grows with the width, not with the narrowness.** This is worth stating plainly, because the opposite is often assumed. At a fixed depth the count rises as the box widens and falls to zero as it narrows. For $V_0=2.5\,mc^{2}$ the first dive needs $L_{\min}=2.810\,\frac{h}{2\pi} c/mc^{2}$, and the count runs $0,1,3,7$ at $k_mL=2.5,5,10,20$. The reason is the confinement energy, in the direction the reader may not expect: a narrow box raises the kinetic energy of the standing wave and pushes every level *up*, away from the lower edge, so a level needs room before it can sink to $-mc^{2}$. The same quantity $\frac{h}{2\pi} c/L$ that makes a small box relativistic is what keeps its vacuum intact. Smallness of $L$ changes which equation is needed; it does not by itself put a level into the lower continuum.
 
 **The check.** The count was verified without using the closed form, by asking which level survives. If $N$ levels have crossed, the lowest level still in the gap is the $(N+1)$-th, so its wavelength inside the well must satisfy $k_{\Phi,\mathrm{w}}a$ just below $(N+1)\pi/2$. The levels were located numerically at $V_0=2.5\,mc^{2}$ and the surviving lowest one measured:
 
@@ -213,9 +213,9 @@ $$
 \qquad\Longleftrightarrow\qquad
 k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2},
 \qquad
-k_{t}^{\prime}=\frac{E}{\hbar\,c},
+k_{t}^{\prime}=\frac{2\pi E}{h\,c},
 \qquad
-k_{\Phi}=\frac{p}{\hbar},
+k_{\Phi}=\frac{2\pi p}{h},
 $$
 
 the temporal coefficient on the left and the spatial part on the right. The electrostatic potential enters as the time component of the four-potential, and on a state of energy $E$ it shifts the energy by the central scalar it carries,
@@ -223,28 +223,28 @@ the temporal coefficient on the left and the spatial part on the right. The elec
 $$
 E\;\longmapsto\;E-ϙ\xi,
 \qquad\text{hence}\qquad
-k_{t}^{\prime}=\frac{E}{\hbar\,c}\;\longmapsto\;\frac{(E-ϙ\xi)}{\hbar\,c},
+k_{t}^{\prime}=\frac{2\pi E}{h\,c}\;\longmapsto\;\frac{2\pi (E-ϙ\xi)}{h\,c},
 $$
 
-a shift of the left side of the mass shell by a central scalar. The companion article writes the same shift as an exchange $\omega\mapsto\omega-\frac{ϙ\,\xi}{\hbar}$ of its frequency, and the two are the same statement with the energy and the frequency interchanged. A shift there moves the state along the two-rooted shell and can carry it past the point where the sign of $k_{t}^{\prime}$ is reversed; the companion article computes that reversal at the step, and this article computes it at the wall. The threshold of a bounded region is the same shift read on a bound level: the level is the value of $k_{t}^{\prime}$ at which the state fits the well and decays outside, and the shift drags that value down to $-k_m$.
+a shift of the left side of the mass shell by a central scalar. The companion article writes the same shift as an exchange $\omega\mapsto\omega-\frac{2\pi ϙ\,\xi}{h}$ of its frequency, and the two are the same statement with the energy and the frequency interchanged. A shift there moves the state along the two-rooted shell and can carry it past the point where the sign of $k_{t}^{\prime}$ is reversed; the companion article computes that reversal at the step, and this article computes it at the wall. The threshold of a bounded region is the same shift read on a bound level: the level is the value of $k_{t}^{\prime}$ at which the state fits the well and decays outside, and the shift drags that value down to $-k_m$.
 
 ### The oscillator's shift
 
 The Dirac oscillator's substitution is a shift of the other side. Its non-minimal term replaces $\vec p$ by $\vec p-im\omega\beta\vec r$, so it acts on the spatial part of the gradient and on nothing else, and the shifted gradients are the plain gradient shifted by a vector,
 
 $$
-\vec\nabla_\Phi\pm\frac{m\,\omega}{\hbar}\,\vec r .
+\vec\nabla_\Phi\pm\frac{2\pi m\,\omega}{h}\,\vec r .
 $$
 
 Multiplying the two shifts, as the companion article on the oscillator does, the cross terms reduce to a central commutator and a spin–orbit term, and the confining term that survives in the identity is a positive addition, $+m^{2}\omega^{2}r^{2}$:
 
 $$
-\mathcal Q_{+}\mathcal Q_{-}=\vec p^{\,2}+m^{2}\omega^{2}\vec r^{\,2}-3\,\hbar\,m\,\omega-2m\omega\sum_\eta L_{\mathrm{orb},\eta}\,i\vec e_\eta ,
+\mathcal Q_{+}\mathcal Q_{-}=\vec p^{\,2}+m^{2}\omega^{2}\vec r^{\,2}-3\,\frac{h}{2\pi}\,m\,\omega-2m\omega\sum_\eta L_{\mathrm{orb},\eta}\,i\vec e_\eta ,
 \qquad
 E^{2}=m^{2}c^{4}+c^{2}\,\mathcal Q_{+}\mathcal Q_{-}.
 $$
 
-The right-hand side is bounded below by zero, and its lowest eigenvalue is zero, attained on the aligned states with $n_r=0$. Hence $E^{2}\ge m^{2}c^{4}$ for every level and every frequency: the positive branch begins at $mc^{2}$, the negative branch ends at $-mc^{2}$, and the gap is empty for every value of $\omega$. The spectrum quoted by that article, $E^{2}=m^{2}c^{4}+4\,\hbar\,m\,c^{2}\,\omega\,n_r$ on the aligned branch, says the same thing in one line, and it says it for all $n_r$ at once.
+The right-hand side is bounded below by zero, and its lowest eigenvalue is zero, attained on the aligned states with $n_r=0$. Hence $E^{2}\ge m^{2}c^{4}$ for every level and every frequency: the positive branch begins at $mc^{2}$, the negative branch ends at $-mc^{2}$, and the gap is empty for every value of $\omega$. The spectrum quoted by that article, $E^{2}=m^{2}c^{4}+4\,\frac{h}{2\pi}\,m\,c^{2}\,\omega\,n_r$ on the aligned branch, says the same thing in one line, and it says it for all $n_r$ at once.
 
 **The criterion.** The two confinements differ in which side of the mass shell they act on, and that, and not their strength, decides whether the model can create pairs. A term that shifts $k_{t}^{\prime}$ moves the level along the shell and across the gap; a term that adds to $k_{\Phi}^{2}$ raises the right side and pushes every level away from the gap. The oscillator's substitution adds $+m^{2}\omega^{2}r^{2}$, which is positive whenever the oscillator frequency is, however small it is, so its confinement is Klein-stable at every frequency; the electrostatic well subtracts from $k_{t}^{\prime}$, which is indefinite in sign, so its confinement is Klein-unstable at every width once the depth passes the threshold. Neither statement is a numerical accident: both follow from where the term sits in $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$.
 
@@ -286,7 +286,7 @@ The mass step is the bag-model mechanism of Bardeen, Chanowitz, Drell, Weinstein
 
 ## Summary
 
-A well of depth $V_0$ and width $L$ in the electrostatic potential is the Klein step with a finite region. The reduced Dirac pair is matched at the two walls, and the even and odd conditions are $\frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=\frac{k_{\Phi,\mathrm{w}}\tan(k_{\Phi,\mathrm{w}}a)}{E+V_0+mc^{2}}$ and $\frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=-\frac{k_{\Phi,\mathrm{w}}\cot(k_{\Phi,\mathrm{w}}a)}{E+V_0+mc^{2}}$, with $k_{\Phi,\mathrm{w}}=\frac{\sqrt{(E+V_0)^{2}-m^{2}c^{4}}}{\hbar c}$ and $k_{\Phi,\mathrm{ev}}=\frac{\sqrt{m^{2}c^{4}-E^{2}}}{\hbar c}$.
+A well of depth $V_0$ and width $L$ in the electrostatic potential is the Klein step with a finite region. The reduced Dirac pair is matched at the two walls, and the even and odd conditions are $\frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=\frac{k_{\Phi,\mathrm{w}}\tan(k_{\Phi,\mathrm{w}}a)}{E+V_0+mc^{2}}$ and $\frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=-\frac{k_{\Phi,\mathrm{w}}\cot(k_{\Phi,\mathrm{w}}a)}{E+V_0+mc^{2}}$, with $k_{\Phi,\mathrm{w}}=\frac{2\pi \sqrt{(E+V_0)^{2}-m^{2}c^{4}}}{h c}$ and $k_{\Phi,\mathrm{ev}}=\frac{2\pi \sqrt{m^{2}c^{4}-E^{2}}}{h c}$.
 
 At the lower edge of the gap the left side diverges and the conditions reduce to $\cos(k_{\Phi,\mathrm{w}}a)=0$ and $\sin(k_{\Phi,\mathrm{w}}a)=0$, that is $k_{\Phi,\mathrm{w}}a=n_{\mathrm{w}}\pi/2$, and the threshold depth is
 
@@ -294,7 +294,7 @@ $$
 V_0^{\mathrm{cr}}=mc^{2}\left[1+\sqrt{1+\left(\frac{n_{\mathrm{w}}\pi}{k_mL}\right)^{2}}\;\right],
 $$
 
-which exceeds $2mc^{2}$ by the confinement energy $\frac{n_{\mathrm{w}}^{2}\pi^{2}\hbar^{2}}{2mL^{2}}$ at leading order and tends to the floor $2mc^{2}$ as $L\to\infty$, the floor being the value that the step attains as its critical height and that no finite width reaches. Inverting the formula at fixed depth counts the levels that have crossed, $N(V_0,L)=\lfloor (k_mL/\pi)\sqrt{(V_0/mc^{2}-1)^{2}-1}\rfloor$ for $V_0>2mc^{2}$ and zero otherwise, with the dives equally spaced in width at multiples of $L_{\min}=\pi\hbar c/\sqrt{V_0^{2}-2V_0\,mc^{2}}$. The count rises with the width and vanishes as the box narrows, so a small box protects the vacuum rather than emptying it, and the region carries $Q=-eN$. The closed form was checked against the matched conditions: the level descends to $E=-mc^{2}$ without a jump, the threshold condition holds to $3\times10^{-10}$ there, and above it no level of that parity remains in the gap. For $k_mL=10$ the threshold is $2.048187\,mc^{2}$; for $k_mL=40$ it is $2.003080\,mc^{2}$; the scaling in $n_{\mathrm{w}}/(k_mL)$ is exact.
+which exceeds $2mc^{2}$ by the confinement energy $\frac{n_{\mathrm{w}}^{2}\pi^{2}h^{2}}{8\pi^{2}mL^{2}}$ at leading order and tends to the floor $2mc^{2}$ as $L\to\infty$, the floor being the value that the step attains as its critical height and that no finite width reaches. Inverting the formula at fixed depth counts the levels that have crossed, $N(V_0,L)=\lfloor (k_mL/\pi)\sqrt{(V_0/mc^{2}-1)^{2}-1}\rfloor$ for $V_0>2mc^{2}$ and zero otherwise, with the dives equally spaced in width at multiples of $L_{\min}=\pi \frac{h}{2\pi} c/\sqrt{V_0^{2}-2V_0\,mc^{2}}$. The count rises with the width and vanishes as the box narrows, so a small box protects the vacuum rather than emptying it, and the region carries $Q=-eN$. The closed form was checked against the matched conditions: the level descends to $E=-mc^{2}$ without a jump, the threshold condition holds to $3\times10^{-10}$ there, and above it no level of that parity remains in the gap. For $k_mL=10$ the threshold is $2.048187\,mc^{2}$; for $k_mL=40$ it is $2.003080\,mc^{2}$; the scaling in $n_{\mathrm{w}}/(k_mL)$ is exact.
 
 The criterion that separates this model from a stable confining model is which side of the mass shell the confining term enters. The electrostatic well shifts the energy, $E\mapsto E-ϙ\xi$, so that the temporal coefficient $k_{t}^{\prime}$ is the one whose sign is dragged, and the sign of $k_{t}^{\prime}$ is what selects the branch. The Dirac oscillator's non-minimal term shifts the spatial part instead, and its product adds $+m^{2}\omega^{2}r^{2}$, so that $E^{2}=m^{2}c^{4}+c^{2}\mathcal Q_{+}\mathcal Q_{-}$ with $\mathcal Q_{+}\mathcal Q_{-}\ge0$ and the spectrum is gapped for every frequency. A static spatial confinement cannot create pairs, which is why a magnetic field creates none; a temporal one can, given the depth. The mass step is the third case, stable for the same reason as the oscillator, and the three are tabulated above.
 
@@ -312,15 +312,15 @@ In a step the created pair leaves as a current and no level holds the imbalance.
 | $V_0$, $L$, $a=L/2$ | Well depth, width, and half-width |
 | $ϙ\xi(r_x)=-V_0$ inside the well | Electrostatic potential energy |
 | $E$, $mc^{2}$, $(-mc^{2},mc^{2})$ | Total energy, rest energy, and the gap |
-| $k_{\Phi,\mathrm{w}}=\frac{\sqrt{(E+V_0)^{2}-m^{2}c^{4}}}{\hbar c}$ | Wave number inside the well |
-| $k_{\Phi,\mathrm{ev}}=\frac{\sqrt{m^{2}c^{4}-E^{2}}}{\hbar c}$ | Decay constant outside the well; $1/k_{\Phi,\mathrm{ev}}$ the decay length |
+| $k_{\Phi,\mathrm{w}}=\frac{2\pi \sqrt{(E+V_0)^{2}-m^{2}c^{4}}}{h c}$ | Wave number inside the well |
+| $k_{\Phi,\mathrm{ev}}=\frac{2\pi \sqrt{m^{2}c^{4}-E^{2}}}{h c}$ | Decay constant outside the well; $1/k_{\Phi,\mathrm{ev}}$ the decay length |
 | $n_{\mathrm{w}}=1,2,3,\dots$ | Half-wavelengths across the well; odd is the even solution |
 | $V_0^{\mathrm{cr}}=mc^{2}[1+\sqrt{1+(n_{\mathrm{w}}\pi/(k_mL))^{2}}]$ | Threshold depth of the $n_{\mathrm{w}}$-th level |
 | $N(V_0,L)=\lfloor\frac{k_mL}{\pi}\sqrt{(V_0/mc^{2}-1)^{2}-1}\rfloor$ | Number of levels that have crossed into the lower continuum; zero for $V_0\le2mc^{2}$ |
-| $L_{\min}=\frac{\pi\hbar c}{\sqrt{V_0^{2}-2V_0\,mc^{2}}}$ | Least width at which one level dives at fixed depth; the $n_{\mathrm{w}}$-th dive is at $n_{\mathrm{w}}L_{\min}$ |
+| $L_{\min}=\frac{\pi h c}{2\pi \sqrt{V_0^{2}-2V_0\,mc^{2}}}$ | Least width at which one level dives at fixed depth; the $n_{\mathrm{w}}$-th dive is at $n_{\mathrm{w}}L_{\min}$ |
 | $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$ | Mass shell, split into its two sides |
-| $k_{t}^{\prime}=\frac{E}{\hbar\,c}$, $k_{\Phi}=\frac{p}{\hbar}$ | Temporal coefficient and momentum wave number |
-| $\vec\nabla_\Phi\pm\frac{m\,\omega}{\hbar}\vec r$ | The two non-minimal shifts of the oscillator, written out |
+| $k_{t}^{\prime}=\frac{2\pi E}{h\,c}$, $k_{\Phi}=\frac{2\pi p}{h}$ | Temporal coefficient and momentum wave number |
+| $\vec\nabla_\Phi\pm\frac{2\pi m\,\omega}{h}\vec r$ | The two non-minimal shifts of the oscillator, written out |
 | $\mathcal Q_{+}\mathcal Q_{-}\ge0$ | Oscillator identity: the gap is empty at every frequency |
 | $\omega$ | Oscillator frequency, a real scalar; the pseudoscalar $\omega=-\vec e_z$ of the algebra is not used here |
 | $\beta$ | The frame action of the oscillator, a right action equal to $\pm1$ on the two frame parts |

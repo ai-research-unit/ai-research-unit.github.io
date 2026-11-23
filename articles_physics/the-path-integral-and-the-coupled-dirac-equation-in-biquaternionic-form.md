@@ -2,7 +2,7 @@
 
 ## Introduction
 
-*The Path Integral and the Dirac Equation in Biquaternionic Form* constructs the sum over worldlines that produces the free Dirac propagator. This article constructs the same sum for the coupled pair, with the gradient replaced by the covariant derivative of *The Gauge Principle in Biquaternionic Form*. The weight is $e^{iS/\hbar}$, the output is the propagator, and the question is what the connection does to the sum over histories.
+*The Path Integral and the Dirac Equation in Biquaternionic Form* constructs the sum over worldlines that produces the free Dirac propagator. This article constructs the same sum for the coupled pair, with the gradient replaced by the covariant derivative of *The Gauge Principle in Biquaternionic Form*. The weight is $e^{\frac{2\pi iS}{h}}$, the output is the propagator, and the question is what the connection does to the sum over histories.
 
 The coupled pair, and the covariant derivative.
 
@@ -11,7 +11,7 @@ $$
 \qquad
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
 $$
 
 with $\tilde A_\Phi$ the potential biquaternion in the material sector $\mathbb{B}_\Phi$, central per component in the abelian case, and $ϙ$ the charge. The action that produces this pair is *The Lagrangian and the Coupled Dirac Equation*, and the solutions in a constant potential are *The Coupled Dirac Equation in Biquaternionic Form*. Neither is re-derived here. This article takes the action as its input and asks what the exponential does with it.
@@ -31,7 +31,7 @@ The same integral in the other coordinates is the polar companion. *The Path Int
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The material position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, with $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_t}^{2}+|\vec r|^{2}$. The mass parameter is $k_m=mc/\hbar$. The worldline parameter is $\tau$ and the proper time $T$.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The material position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, with $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_t}^{2}+|\vec r|^{2}$. The mass parameter is $k_m=\frac{2\pi mc}{h}$. The worldline parameter is $\tau$ and the proper time $T$.
 
 The one-form of the connection. The potential is written $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ with real coefficients in the abelian case. Its pairing with the worldline tangent is the **real** pairing
 
@@ -41,13 +41,13 @@ $$
 
 and not the algebra product. The distinction is forced by the coordinates: the temporal slot of the position is $ir'_t$, and $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so a product would carry a factor of $i$ that no gauge transformation produces. The one-form is a real number at each point of the worldline.
 
-The sign of the gauge term. The covariant derivative carries $+\frac{iϙ}{\hbar}\tilde A_\Phi$. A field redefinition then removes a constant potential only with the phase $e^{-iϙ\tilde A_\Phi\cdot(\tilde R_\Phi-\tilde R_{\Phi,i})/\hbar}$, as §*The Exact Kernel in a Field-Free Potential* shows by one differentiation. The worldline weight therefore carries the gauge term with a minus,
+The sign of the gauge term. The covariant derivative carries $+\frac{2\pi iϙ}{h}\tilde A_\Phi$. A field redefinition then removes a constant potential only with the phase $e^{-iϙ\tilde A_\Phi\cdot(\tilde R_\Phi-\tilde R_{\Phi,i})\frac{2\pi}{h}}$, as §*The Exact Kernel in a Field-Free Potential* shows by one differentiation. The worldline weight therefore carries the gauge term with a minus,
 
 $$
 S_{\mathrm{gco}}[x]=-\!ϙ\!\int\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi ,
 $$
 
-and this is the corpus's sign and not the textbook sign. *The Coupled Dirac Equation in Biquaternionic Form* records the reason: the parent's opposite convention $\partial_\mu-\frac{iϙ}{\hbar}A_\mu$ is the same coupling with the opposite sign of $ϙ$, and this article inherits the gauge principle's sign and does not flip it. A reader who carries $+q\!\int\!A\cdot\mathrm{d}x$ from a textbook has the same physics and the opposite charge, and the free article's §*The Spin Factor in a Background Field* writes exactly that with a generic $q$: it is this article's term with $q=-ϙ$.
+and this is the corpus's sign and not the textbook sign. *The Coupled Dirac Equation in Biquaternionic Form* records the reason: the parent's opposite convention $\partial_\mu-\frac{2\pi iϙ}{h}A_\mu$ is the same coupling with the opposite sign of $ϙ$, and this article inherits the gauge principle's sign and does not flip it. A reader who carries $+q\!\int\!A\cdot\mathrm{d}x$ from a textbook has the same physics and the opposite charge, and the free article's §*The Spin Factor in a Background Field* writes exactly that with a generic $q$: it is this article's term with $q=-ϙ$.
 
 The two kernels. The propagator is the pair $\mathcal S_L,\mathcal S_R$ of *The Path Integral and the Dirac Equation in Biquaternionic Form*, now satisfying the two lines with the covariant operators,
 
@@ -72,7 +72,7 @@ $$
 with $S_0$ the central kinetic and mass term and $S_{\mathrm{spin}}$ the odd part. The propagator is the sum
 
 $$
-\mathcal S(x,x_2)=\int_0^\infty\mathrm{d}T\int_{x}^{x_2}\mathcal{D}x\;\mathcal{F}[x]\;\exp\!\Bigl(\frac{i}{\hbar}\bigl(S_0[x]+S_{\mathrm{gco}}[x]\bigr)\Bigr),
+\mathcal S(x,x_2)=\int_0^\infty\mathrm{d}T\int_{x}^{x_2}\mathcal{D}x\;\mathcal{F}[x]\;\exp\!\Bigl(\frac{2\pi i}{h}\bigl(S_0[x]+S_{\mathrm{gco}}[x]\bigr)\Bigr),
 $$
 
 with $\mathcal{F}$ the spin factor. The odd variables are integrated at fixed $x(\tau)$, so the gauge term does not reach them: it is a functional of the material trajectory alone.
@@ -118,7 +118,7 @@ S_{\mathrm{gco}}[\gamma_1]-S_{\mathrm{gco}}[\gamma_2]
 =-ϙ\int_{\Sigma}F ,
 $$
 
-with $\Sigma$ any surface the loop bounds. The relative weight of the two histories is therefore $e^{-iϙ\Phi/\hbar}$ with $\Phi$ the flux. The connection is invisible to a single history and visible only between two, and the flux is the only channel by which the one-form reaches an amplitude.
+with $\Sigma$ any surface the loop bounds. The relative weight of the two histories is therefore $e^{-\frac{2\pi iϙ\Phi}{h}}$ with $\Phi$ the flux. The connection is invisible to a single history and visible only between two, and the flux is the only channel by which the one-form reaches an amplitude.
 
 The check is exact for polygons. For a constant field strength in a two-dimensional model the gauge term of a polygonal loop equals the field strength times the enclosed area to $2\times10^{-16}$ over five random hexagons, and a two-path model with endpoints $(0,0)$ and $(2,0)$ gives a difference of $-0.480$ against a field-times-area of $-0.480$. Green's theorem is exact for a linear potential on a polygon, so the identity is algebraic and the number is a check on the arithmetic and the orientation.
 
@@ -129,8 +129,8 @@ What the three regimes say together. The gauge field has exactly two ways to cha
 The identity. For a constant potential the covariant derivative is removed by a phase,
 
 $$
-\Bigl(\frac{\partial}{\partial R_\mu}+\frac{iϙ}{\hbar}A_\mu\Bigr)\Bigl(e^{-iϙ\tilde A_\Phi\cdot\tilde R_\Phi/\hbar}f\Bigr)
-=e^{-iϙ\tilde A_\Phi\cdot\tilde R_\Phi/\hbar}\frac{\partial f}{\partial R_\mu},
+\Bigl(\frac{\partial}{\partial R_\mu}+\frac{2\pi iϙ}{h}A_\mu\Bigr)\Bigl(e^{-\frac{2\pi iϙ\tilde A_\Phi\cdot\tilde R_\Phi}{h}}f\Bigr)
+=e^{-\frac{2\pi iϙ\tilde A_\Phi\cdot\tilde R_\Phi}{h}}\frac{\partial f}{\partial R_\mu},
 $$
 
 because each component of the connection is a central scalar and the two connection terms cancel. The identity is checked by finite differences to $2\times10^{-11}$ over the four slots, and it is exact by the centality of $A_\mu$: a central number passes through the field and cannot produce a commutator to cancel.
@@ -138,12 +138,12 @@ because each component of the connection is a central scalar and the two connect
 The kernel. Applying the identity to both lines of the pair gives
 
 $$
-\boxed{\;\mathcal S^{A}(x_f,x_i)=e^{-iϙ\tilde A_\Phi\cdot(\tilde R_{\Phi,f}-\tilde R_{\Phi,i})/\hbar}\;\mathcal S^{0}(x_f,x_i)\;}
+\boxed{\;\mathcal S^{A}(x_f,x_i)=e^{-iϙ\tilde A_\Phi\cdot(\tilde R_{\Phi,f}-\tilde R_{\Phi,i})\frac{2\pi}{h}}\;\mathcal S^{0}(x_f,x_i)\;}
 $$
 
 for every constant potential, component by component, exactly. The result agrees with §*The One-Form and the Three Regimes*: a constant potential has zero field strength, its gauge term is a boundary term along every path, and the boundary term is this phase. The two routes to the statement are independent — one differentiates the operator, the other sums over paths — and they agree, which is the consistency the two articles owe each other.
 
-What the phase means. The exponent is $ϙ(A_t\Delta r'_t+\sum_\eta A_\eta\Delta r_\eta)/\hbar$. Its temporal slot is the energy shift $E\mapsto E+ϙcA_t$ of the coupled equation, written as a phase over the elapsed coordinate time; its spatial slots are the momentum shift $\vec p\mapsto\vec p-q\vec A$, written as a phase over the displacement. The classical substitution of the element article is one phase in the sum, and the algebra states it with one sign because the scalar and vector potentials are the two slot types of one element.
+What the phase means. The exponent is $ϙ(A_t\Delta r'_t+\sum_\eta A_\eta\Delta r_\eta)\frac{2\pi}{h}$. Its temporal slot is the energy shift $E\mapsto E+ϙcA_t$ of the coupled equation, written as a phase over the elapsed coordinate time; its spatial slots are the momentum shift $\vec p\mapsto\vec p-q\vec A$, written as a phase over the displacement. The classical substitution of the element article is one phase in the sum, and the algebra states it with one sign because the scalar and vector potentials are the two slot types of one element.
 
 Three consequences, and each is a statement about the amplitude. The modulus is unchanged, so a constant potential does not change the weight of any single history and leaves the probability of propagation at fixed endpoints alone. The pole structure in momentum space is translated and not deformed, so the mass shell is the translated hyperboloid of unchanged radius. And the spin transport is unchanged, because the phase is central and commutes with the spin factor's path ordering. **A constant potential is a change of variable on the space of histories and not a force**, and the sum over histories shows the change of variable in one line where the operator shows it in a covariance proof.
 
@@ -166,7 +166,7 @@ The check distinguishes the coefficient from its half. On a two-dimensional mode
 The phase is the classical action with the gauge term. At the stationary path
 
 $$
-\theta_{\mathrm{act}}=\frac{1}{\hbar}\bigl(S_0[x_{\mathrm{cl}}]+S_{\mathrm{gco}}[x_{\mathrm{cl}}]\bigr),
+\theta_{\mathrm{act}}=\frac{2\pi 1}{h}\bigl(S_0[x_{\mathrm{cl}}]+S_{\mathrm{gco}}[x_{\mathrm{cl}}]\bigr),
 $$
 
 and the gauge term's contribution is $-ϙ\!\int\!\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$ evaluated on the Lorentz path. For an exact potential it is a boundary term and the phase is the free one plus the endpoint phases. For a field strength it is the flux through the surface between the Lorentz path and the straight line, and it is the part of the phase that the classical motion adds.
@@ -204,13 +204,13 @@ The flux is what composes additively in the amplitude. For two histories differi
 The discrete model takes the coupling without approximation. In Feynman's checkerboard, described in *The Path Integral and the Dirac Equation in Biquaternionic Form*, a path is a sequence of lightlike steps and corners, with a phase for each step and a factor $i\epsilon k_m$ for each corner. Minimal coupling adds one factor per step,
 
 $$
-\exp\Bigl(-\frac{iϙ}{\hbar}\tilde A_\Phi\cdot\Delta_\Phi\tilde R_\Phi\Bigr)
+\exp\Bigl(-\frac{2\pi iϙ}{h}\tilde A_\Phi\cdot\Delta_\Phi\tilde R_\Phi\Bigr)
 \ \text{per directed step},
 $$
 
 and leaves the corner weight alone. The corner is the mass insertion. The mass term carries no derivative, so the substitution that dresses the steps cannot reach it, and it is invariant under the local central phase without help — which is why the coupling is a repair of the kinetic term alone in *The Lagrangian and the Coupled Dirac Equation*. The corner is untouched and the step is dressed, and that is the discrete image of the sorting of the connection into the phase.
 
-The lattice gauge invariance is exact and needs no limit. Under $\tilde A_\Phi\mapsto\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$, each step's phase changes by the difference of $ϙ\Gamma/\hbar$ at the step's two ends, and the product over the steps of a path telescopes to the two endpoint factors. The sum over paths is therefore invariant at every step size, with no continuum limit taken and no counterterm added. **The checkerboard is exactly gauge invariant, and the continuum integral is only formally so**, which is the correct order of the two statements and the reason the lattice formulation of gauge theory exists.
+The lattice gauge invariance is exact and needs no limit. Under $\tilde A_\Phi\mapsto\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$, each step's phase changes by the difference of $\frac{2\pi ϙ\Gamma}{h}$ at the step's two ends, and the product over the steps of a path telescopes to the two endpoint factors. The sum over paths is therefore invariant at every step size, with no continuum limit taken and no counterterm added. **The checkerboard is exactly gauge invariant, and the continuum integral is only formally so**, which is the correct order of the two statements and the reason the lattice formulation of gauge theory exists.
 
 What the discrete model shows that the continuum does not. The link phase is evaluated on the link, which is the symmetric rule of §*The One-Form and the Three Regimes*; a rule that evaluated the potential at the step's foot would break the telescoping and the lattice invariance with it. The checkerboard therefore exhibits, in a model with finitely many paths, the statement that the gauge term must be a coboundary term to be removable. The step phase is the coboundary and the corner is the mass, and the two are the two ingredients of the discrete propagator.
 
@@ -245,7 +245,7 @@ Adds.
 
 The sum over worldlines for the coupled pair is the free sum with one term added to the exponent, and the added term is the integral of the connection one-form along the history. Because that term is a real number, it multiplies the weight and never enters the algebra: the scale, the boost and the rotor of a history are those of the free history, and only the phase moves.
 
-The one-form's behaviour is decided by cohomology. When the potential is exact its integral depends on the endpoints alone, so it factors out and the coupled kernel is the free kernel times two endpoint phases — exactly, for every field-free potential, and the modulus, the poles and the spin transport are untouched. When the potential is not exact, two histories with the same endpoints differ by the flux through the loop they enclose, and the relative phase $e^{-iϙ\Phi/\hbar}$ is the only way the one-form reaches an amplitude.
+The one-form's behaviour is decided by cohomology. When the potential is exact its integral depends on the endpoints alone, so it factors out and the coupled kernel is the free kernel times two endpoint phases — exactly, for every field-free potential, and the modulus, the poles and the spin transport are untouched. When the potential is not exact, two histories with the same endpoints differ by the flux through the loop they enclose, and the relative phase $e^{-\frac{2\pi iϙ\Phi}{h}}$ is the only way the one-form reaches an amplitude.
 
 The curvature reaches the spin, and the semiclassical evaluation places it there: the stationary path is the Lorentz path, the phase is the classical action with the flux, the van Vleck determinant has no term linear in the field strength because the linear term is an antisymmetric trace against a symmetric kernel, and the rotor is the parallel transport along the bent path. The connection's one-form and its curvature therefore have separate homes, and the polar companion reads them as the angle and the rotor.
 
@@ -254,8 +254,8 @@ The curvature reaches the spin, and the semiclassical evaluation places it there
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$, $\mathbb{B}_\Phi$ | Biquaternion algebra; its material (anti-Hermitian) sector, the home of $\tilde R_\Phi$ and $\tilde A_\Phi$ |
-| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | Covariant derivative, acting from the left, central per component in the abelian case |
-| $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{iϙ}{\hbar}\tilde A_\Phi^{\natural}$ | Its quaternion conjugate, the $L$ line's operator |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | Covariant derivative, acting from the left, central per component in the abelian case |
+| $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi iϙ}{h}\tilde A_\Phi^{\natural}$ | Its quaternion conjugate, the $L$ line's operator |
 | $ϙ$ | Charge; the coupling constant of the prescription |
 | $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | Potential biquaternion, real coefficients in the abelian case |
 | $\tilde A_\Phi^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta$ | Its conjugate; equal for a purely electric potential, opposite for a purely magnetic one |
@@ -267,10 +267,10 @@ The curvature reaches the spin, and the semiclassical evaluation places it there
 | $\mathcal S^{A},\mathcal S^{0}$ | The kernels in a constant potential and in no potential |
 | $\mathcal{F}[x]$ | Spin factor, the path-ordered algebra-valued weight |
 | $\Gamma$ | Real gauge function; $\tilde A_\Phi=-\tilde\nabla_\Phi\Gamma$ for an exact potential |
-| $\theta_{\mathrm{gau}}=ϙ\Gamma/\hbar$ | Gauge angle |
+| $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ | Gauge angle |
 | $\eta_{\mu\nu}$ | The metric on the four slots, used in the Lorentz equation and in the kinetic normalisation |
 | $T$ | Proper time; $x(\tau)$ the worldline |
-| $k_m=mc/\hbar$ | Mass parameter |
+| $k_m=\frac{2\pi mc}{h}$ | Mass parameter |
 
 ## Further Reading
 

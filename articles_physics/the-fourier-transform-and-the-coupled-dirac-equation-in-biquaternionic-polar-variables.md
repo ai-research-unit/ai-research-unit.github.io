@@ -12,7 +12,7 @@ The polar reading is a per-mode reading, and that is a statement about the word.
 
 The companion classifies the order of the operator the transform produces. *The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Form* shows that the coupling is a multiplier exactly when the connection is constant, a first-order operator for a linear connection, and a convolution otherwise. This article counts what the same operator does to the mode basis. Neither article's answer depends on the other's.
 
-The denial and the inheritance. The transform carries $\mathbb{B}$-valued functions to $\mathbb{B}$-valued functions; it does not carry a material-sector field to an informational-sector field. The connection is the parent's anti-Hermitian $\tilde A_\Phi$, and the coupling element $\frac{i\,ϙ}{\hbar}\tilde A_\Phi$ is that same element multiplied by the central $i$. **There is no new prediction and no new solution**: the equation, the word, the gauge law and the constant-potential solutions are the parents'.
+The denial and the inheritance. The transform carries $\mathbb{B}$-valued functions to $\mathbb{B}$-valued functions; it does not carry a material-sector field to an informational-sector field. The connection is the parent's anti-Hermitian $\tilde A_\Phi$, and the coupling element $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ is that same element multiplied by the central $i$. **There is no new prediction and no new solution**: the equation, the word, the gauge law and the constant-potential solutions are the parents'.
 
 ## Conventions
 
@@ -30,15 +30,15 @@ $$
 
 The temporal slot is fixed once and then used. Because $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and the plane wave's phase carries $-k_t'r_t'$, the temporal slot of the symbol is $+ik_t'$. On $\tilde\Xi=\tilde\Xi_0\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}=\vec k_\Phi\cdot\vec r-k_t'r_t'$ one has $\tilde\nabla_\Phi e^{i\theta_{\mathrm{pha}}}=i\tilde K_\Phi e^{i\theta_{\mathrm{pha}}}$, which is the polar parent's identity and the only symbol statement used below.
 
-The coupled operator and the gauge phase. The parent's covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi$, the gauge law is $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with the field transforming by $\lambda=\exp(i\theta_{\mathrm{gau}})$, and the gauge angle is
+The coupled operator and the gauge phase. The parent's covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$, the gauge law is $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with the field transforming by $\lambda=\exp(i\theta_{\mathrm{gau}})$, and the gauge angle is
 
 $$
-\theta_{\mathrm{gau}}=\frac{ϙ\,\Gamma}{\hbar},
+\theta_{\mathrm{gau}}=\frac{2\pi ϙ\,\Gamma}{h},
 \qquad
 \Gamma\ \text{real}.
 $$
 
-The connection is written anti-Hermitially, and that is the parent's writing. On $\mathbb{B}_\Phi$ one has $\tilde A_\Phi^{*}=-\tilde A_\Phi$, so $\frac{i\,ϙ}{\hbar}\tilde A_\Phi$ is Hermitian and the coupling sits in the informational sector as an element. The article uses that element and does not replace it by a loosely related one: it is the same $\tilde A_\Phi$, multiplied by the same central $i$, in every display.
+The connection is written anti-Hermitially, and that is the parent's writing. On $\mathbb{B}_\Phi$ one has $\tilde A_\Phi^{*}=-\tilde A_\Phi$, so $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ is Hermitian and the coupling sits in the informational sector as an element. The article uses that element and does not replace it by a loosely related one: it is the same $\tilde A_\Phi$, multiplied by the same central $i$, in every display.
 
 ## The Word of a Mode
 
@@ -46,9 +46,9 @@ The connection is written anti-Hermitially, and that is the parent's writing. On
 
 The amplitude's word has four constants. Because $\tilde\Xi_0$ is one element of $\mathbb{B}$ it has a word $\tilde\Xi_0=r_0e^{i\theta_0}\tilde U_{\Psi,\mathrm b,0}\tilde u_{\mathrm r,0}$ wherever it is $N$-regular, and the four factors are numbers of the mode. None depends on the wave number, because the mode has one wave number.
 
-The kinetic bracket becomes the label. The polar parent's second bracket is $i\partial_\mu\theta_{\mathrm{pha}}+\frac{i\,ϙ}{\hbar}A_\mu$, a central imaginary element per component, and with the connection it is the covariant wave number of the mode. So the coupling's temporal slot is a change of the label and nothing else: it shifts $\tilde K_\Phi$ to $\tilde K_{\Phi,\mathrm{gco}}$ and leaves the amplitude's four constants where they are.
+The kinetic bracket becomes the label. The polar parent's second bracket is $i\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi i\,ϙ}{h}A_\mu$, a central imaginary element per component, and with the connection it is the covariant wave number of the mode. So the coupling's temporal slot is a change of the label and nothing else: it shifts $\tilde K_\Phi$ to $\tilde K_{\Phi,\mathrm{gco}}$ and leaves the amplitude's four constants where they are.
 
-The constant-$\tilde A_\Phi$ licence, stated where the multiplier is first used. The momentum-space reading in this section treats $\frac{i\,ϙ}{\hbar}\tilde A_\Phi$ as a multiplier at each wave number. That is legitimate exactly when $\tilde A_\Phi$ is constant, and the licence is stated here, used here, and dropped at §*What Is Diagonal and What Mixes*, where the mixing is counted.
+The constant-$\tilde A_\Phi$ licence, stated where the multiplier is first used. The momentum-space reading in this section treats $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ as a multiplier at each wave number. That is legitimate exactly when $\tilde A_\Phi$ is constant, and the licence is stated here, used here, and dropped at §*What Is Diagonal and What Mixes*, where the mixing is counted.
 
 The scale bracket has no share of the connection, and the check is exact. The parent's type table assigns the connection to the phase bracket and the boost bracket and to nothing else, because the scale bracket $\frac12\partial_\mu\ln \varrho^{2}$ is a real central scalar and a central imaginary element cannot produce one. In momentum space the corresponding statement is that the coupling cannot change the amplitude's density: over one hundred random amplitudes multiplied by a central phase, the norm changed exactly as $\langle\tilde\Xi_0\rangle_\natural\mapsto e^{2i\theta_{\mathrm{gau}}}\langle\tilde\Xi_0\rangle_\natural$ with deviation $4.2\times10^{-15}$, and the scale, read as the square root of the norm's modulus, changed by $0.0\times10^{0}$.
 
@@ -67,8 +67,8 @@ The mass is diagonal in momentum and off-diagonal in the part label. The symbol 
 $$
 \mathcal{D}(\tilde K_\Phi)=
 \begin{pmatrix}
--k_m & i\tilde K_\Phi^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural}\\[2pt]
-i\tilde K_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi & -k_m
+-k_m & i\tilde K_\Phi^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi^{\natural}\\[2pt]
+i\tilde K_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi & -k_m
 \end{pmatrix},
 $$
 
@@ -122,18 +122,18 @@ In momentum space a mode is a point and an element, and the element's word has f
 
 The coupling is the only source of mode mixing, and the mixing is the smoothness of the connection read in the mode basis. One mode in gave one mode out for a constant connection, seventeen for a smooth bump, sixty-three for a spike and all sixty-four for a linear one, whose envelope fell as $1/\Delta k$ with $\lvert G\rvert\cdot\lvert\Delta_\Phi\rvert=38.4$ to within $1.3\%$. A strong constant connection mixes nothing and a weak spiky one mixes everything.
 
-Gauge freedom is the only rearrangement that leaves the equation fixed, and it removes the mixing exactly when the connection is a pure gradient, which is exactly when the curvature vanishes: $0.0$ for a constant $\tilde A_t$ against $0.9$ for $\tilde A_t=i\,0.9x$. A linear gauge phase $\theta_{\mathrm{gau}}=\frac{ϙ\Gamma}{\hbar}$ translates the support and preserves the count; anything else re-superposes. The parent's two settings are the two cases of that one distinction.
+Gauge freedom is the only rearrangement that leaves the equation fixed, and it removes the mixing exactly when the connection is a pure gradient, which is exactly when the curvature vanishes: $0.0$ for a constant $\tilde A_t$ against $0.9$ for $\tilde A_t=i\,0.9x$. A linear gauge phase $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ translates the support and preserves the count; anything else re-superposes. The parent's two settings are the two cases of that one distinction.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 | --- | --- |
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; four factors, eight parameters |
-| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi$ | The parent's covariant derivative |
-| $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$ | The covariant wave number; the mode's label |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ | The parent's covariant derivative |
+| $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$ | The covariant wave number; the mode's label |
 | $-k_m$ on the diagonal | The mass: diagonal in momentum, off-diagonal in the part label |
 | $k_m^{2}-k^{2}$ | The determinant of the symbol; its zero is the shell |
-| $\theta_{\mathrm{gau}}=\frac{ϙ\,\Gamma}{\hbar}$ | The gauge angle |
+| $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\,\Gamma}{h}$ | The gauge angle |
 | $N(\tilde\Xi)=\langle\tilde\Xi\rangle_\natural$ | The quaternionic norm; scale and angle |
 | $\tilde\Xi^{\natural}\tilde\Xi/N(\tilde\Xi)$ | The rotor read relative to the norm; gauge invariant |
 | $\lvert G(k_0+\Delta_\Phi)\rvert\cdot\lvert\Delta_\Phi\rvert$ | The envelope of the linear connection's mixing |

@@ -26,7 +26,7 @@ S_\theta=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int \sum_{\mu,\nu}F_{\mu\nu}F_{\m
 F_{\mathrm{dual},\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma} ,
 $$
 
-with all indices summed in the $i r'_t$ convention as in the companion gauge articles. A quantisation statement carries the factor $\frac{1}{\hbar}$ beside the charge product. The trace $\mathrm{Tr}$ is the matrix trace on the gauge factor, distinguished from the trace of an element of the algebra, and it is taken in the fundamental representation with $\mathrm{Tr}(T_{a}T_{b})=\tfrac12\delta_{ab}$; that normalization is what makes $Ϙ$ an integer.
+with all indices summed in the $i r'_t$ convention as in the companion gauge articles. A quantisation statement carries the factor $\frac{2\pi 1}{h}$ beside the charge product. The trace $\mathrm{Tr}$ is the matrix trace on the gauge factor, distinguished from the trace of an element of the algebra, and it is taken in the fundamental representation with $\mathrm{Tr}(T_{a}T_{b})=\tfrac12\delta_{ab}$; that normalization is what makes $Ϙ$ an integer.
 
 Two things follow, and the article states them separately. The framework **supplies** the theta term's density and its discrete periodicity; it **does not supply** the value of $\theta_{\mathrm{vac}}$, because $\theta_{\mathrm{vac}}$ is a parameter labelling the vacuum and not an output of a complexified classical algebra. The strong CP problem is the statement that the observed near-vanishing of the physical theta parameter is not explained by the framework — or by the Standard Model without additional structure. This is reported as the boundary of what the algebra can address.
 
@@ -40,7 +40,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
 $$
 
-both acting from the left, and each half satisfies $\Box_\Phi\tilde{Ξ}=k_m^{2}\tilde{Ξ}$ by the other. A source that writes the mass as a right multiplication prints a two-sided equation related to the pair by a change of variable, not a second dynamics (*The Dirac Equation in Biquaternionic Form*). The corpus writes the pair, and no one-field first-order massive equation is written here. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+both acting from the left, and each half satisfies $\Box_\Phi\tilde{Ξ}=k_m^{2}\tilde{Ξ}$ by the other. A source that writes the mass as a right multiplication prints a two-sided equation related to the pair by a change of variable, not a second dynamics (*The Dirac Equation in Biquaternionic Form*). The corpus writes the pair, and no one-field first-order massive equation is written here. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 **The field and its two values.** The field is an element $\tilde{Ξ}$ of $\mathbb{B}$. Its two parts carry the chirality subscript of *Special Element Conventions*, §*The Chirality Convention*: $\tilde{Ξ}_{L}$ is the part of value $-1$ and $\tilde{Ξ}_{R}$ the part of value $+1$, and only the zero element carries both. The label belongs to the element and not to a state, so a product and an invertible element carry it as well. A central phase multiplies the two parts alike. The axial rotation of §*The Chiral Rotation and the Invariance of the Physical Parameter* does not, and that difference is what moves the physical parameter.
 

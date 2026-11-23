@@ -333,7 +333,7 @@ $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
 $$
-both members acting from the left on their own field, so no glyph names a side. Applying $(\tilde\nabla_\Phi)^{\natural}$ to the first member and substituting the second returns $\Box_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$, so the pair is one dynamics on two fields: the mass couples the halves, and each half obeys the d'Alembertian at mass $m$. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+both members acting from the left on their own field, so no glyph names a side. Applying $(\tilde\nabla_\Phi)^{\natural}$ to the first member and substituting the second returns $\Box_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$, so the pair is one dynamics on two fields: the mass couples the halves, and each half obeys the d'Alembertian at mass $m$. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 This is the operator form of the boundary drawn above. The massless law is first order in one field and the massive law is first order in two; no rewriting puts the mass into a first-order equation for one field, and the mass is exactly what breaks the conformal invariance. The algebra is large enough for both, and the passage from one to the other is the price the boundary charges.
 

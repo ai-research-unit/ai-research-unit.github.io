@@ -260,7 +260,7 @@ What the restriction discards. Three of the four complex coefficients. They are 
 
 $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t)
-=\Big(\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\xi\Big)e_t+\frac{i\,ϙ}{\hbar}\,\xi\,\tilde F ,
+=\Big(\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\xi\Big)e_t+\frac{2\pi i\,ϙ}{h}\,\xi\,\tilde F ,
 $$
 
 and the second term is a pure vector, so the centre is not invariant under that operator whenever the field strength does not vanish. The component form

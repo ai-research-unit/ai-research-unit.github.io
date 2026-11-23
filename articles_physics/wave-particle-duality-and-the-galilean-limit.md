@@ -44,7 +44,7 @@ The mass shell is where the non-relativistic physics lives, and the light cone i
 
 $\sigma_{\mathcal{P}}$ is quadratic in $k_{t}^{\prime}$ and $\sigma_{\mathrm{s}}$ is linear in $k_{\mathrm{s}}$. That is the degree the next section uses, and it is the only degree the article needs.
 
-The mass is a wave number, $k_m=mc/\hbar$, and it is a coordinate of the same kind as the other two. Scaling the triple gives
+The mass is a wave number, $k_m=\frac{2\pi mc}{h}$, and it is a coordinate of the same kind as the other two. Scaling the triple gives
 
 $$
 \sigma_{\mathcal{P}}(\lambda k_{t}^{\prime},\lambda\vec k_\Phi,\lambda k_m)=\lambda^{2}\sigma_{\mathcal{P}}(k_{t}^{\prime},\vec k_\Phi,k_m),
@@ -80,7 +80,7 @@ and the two signs are two sheets, related by $k_{t}^{\prime}\to-k_{t}^{\prime}$.
 Write the energy wave number as its rest value plus an excess,
 
 $$
-k_{t}^{\prime}=k_m+k_{\mathrm{s}},\qquad k_{\mathrm{s}}:=\frac{E-mc^{2}}{\hbar c},
+k_{t}^{\prime}=k_m+k_{\mathrm{s}},\qquad k_{\mathrm{s}}:=\frac{2\pi E-mc^{2}}{h c},
 $$
 
 so that $k_{\mathrm{s}}$ is the energy above rest, in the units of the corpus. It is the quantity the companion article writes as $k_{t}^{\prime}-k_m$ whenever it writes the affine condition, and it deserves a name because it is the only variable in which the non-relativistic symbol is simple. It is non-negative for a physical state, vanishes at rest, and is small compared with $k_m$ in the non-relativistic regime.
@@ -337,11 +337,11 @@ The condition on the source is homogeneous in either variable, and the symbol is
 |---|---|
 | $\sigma_{\mathcal{P}}$ | the symbol of $\Box_\Phi-k_m^{2}$, $k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}$; a complex number |
 | $\mathcal{S}$ | the operator with symbol $\sigma_{\mathrm{s}}$; first order in $r'_t$, second in space |
-| $k_{\mathrm{s}}$ | the energy above rest, $k_{t}^{\prime}-k_m=(E-mc^{2})/(\hbar c)$ |
+| $k_{\mathrm{s}}$ | the energy above rest, $k_{t}^{\prime}-k_m=(E-mc^{2})\frac{2\pi}{h\,c}$ |
 | $\sigma_{\mathrm{s}}$ | the Schrödinger symbol, $k_{\mathrm{s}}-k_{\Phi}^{2}/(2k_m)$; affine |
-| $k_m$ | the mass wave number, $mc/\hbar$; the gap between the two sheets at zero momentum |
-| $k_{t}^{\prime}$ | the energy wave number, $E/(\hbar c)$ |
-| $k_{\Phi}$ | the modulus of the momentum wave number, $\lvert\vec p\rvert/\hbar$ |
+| $k_m$ | the mass wave number, $\frac{2\pi mc}{h}$; the gap between the two sheets at zero momentum |
+| $k_{t}^{\prime}$ | the energy wave number, $\frac{2\pi E}{h\,c}$ |
+| $k_{\Phi}$ | the modulus of the momentum wave number, $\frac{2\pi \lvert\vec p\rvert}{h}$ |
 | $\vec\beta_b$ | the boost velocity in units of $c$; its square enters the boost law with the coefficient $\frac{1}{2}k_m$ |
 | $a$, $c$, $d$ | the coefficients of $k_{\mathrm{s}}$, $k_{\Phi}^{2}$ and the constant in a trial symbol; invariance forces $a=-2ck_m$ and leaves $d$ free |
 | $\lambda$ | the scaling parameter that tests homogeneity |

@@ -37,7 +37,7 @@ $$
 
 $$
 
-The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.
+The angle is $\theta_{\mathrm{pwp}}=\frac{2\pi p\cdot x}{h}=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\frac{h}{2\pi}$, so the angle is real.
 
 That is the whole of the equation's content on a mode, and the article needs nothing else. The function $\sigma_{\mathcal{P}}$ is a complex number, not an element, because the norm of a quaternion is central; *Wave–Particle Duality and the Galilean Limit* uses that fact for the degree argument, and this article uses it for a different purpose: a central symbol has a zero set that is a locus of complex numbers, and a locus of complex numbers can be drawn on a plane.
 
@@ -141,14 +141,14 @@ $$
 \boxed{\;\kappa\le k_m,\qquad\text{with equality exactly at }k_{t}^{\prime}=0\;}
 $$
 
-and the decay length of the asymptotic tail $1/\kappa$ cannot be shorter than $1/k_m=\hbar/(mc)$. **The tail of a bound state of this equation cannot fall off faster than one reduced Compton wavelength, and the bound is saturated at zero frequency.** The statement is about the tail and not about the support: a wavefunction has structure inside the well that may be narrower than that, and only its exponential fall-off is bounded. For the electron that length is $3.8616\times10^{-13}\ \mathrm{m}$.
+and the decay length of the asymptotic tail $1/\kappa$ cannot be shorter than $1/k_m=\frac{h}{2\pi mc}$. **The tail of a bound state of this equation cannot fall off faster than one reduced Compton wavelength, and the bound is saturated at zero frequency.** The statement is about the tail and not about the support: a wavefunction has structure inside the well that may be narrower than that, and only its exponential fall-off is bounded. For the electron that length is $3.8616\times10^{-13}\ \mathrm{m}$.
 
 This is the strongest statement the position makes, and it is not a statement about a potential. No well, however deep, can push a bound position off the circle, and no well can push it past $\kappa=k_m$ without the frequency ceasing to be real. A would-be state that needs $\kappa>k_m$ does not become a tighter bound state; it leaves the real-frequency slice altogether and lands in the third row of the table, where nothing is stationary. The ceiling is therefore a statement about the equation, not about the well.
 
 Hydrogen realises the ceiling exactly. For the Dirac ground state the decay constant of the upper component is $\kappa=k_m\mathfrak Z\alpha$, and the corpus's exact spectrum gives $E=mc^{2}\sqrt{1-(\mathfrak Z\alpha)^{2}}$; the two satisfy
 
 $$
-E^{2}+\hbar^{2}c^{2}\kappa^{2}=m^{2}c^{4}
+E^{2}+\frac{h^{2}}{4\pi^{2}}c^{2}\kappa^{2}=m^{2}c^{4}
 $$
 
 identically, which is the circle with the factors restored. The ceiling $\kappa=k_m$ is then $\mathfrak Z\alpha=1$, and that is exactly the endpoint at which the corpus's hydrogen formula returns $E=0$ and loses its branch. The dive that article describes and the ceiling this one describes are one statement, and the circle is what makes them one.
@@ -195,7 +195,7 @@ The choice between the two members of a pair is the boundary condition, and it i
 
 ### One determinant, both positions
 
-A single well realises both positions, and the same analytic function holds them. For a square well of depth $V_0$ and width $a$, with $\eta=a\sqrt{2mV_0}/\hbar$ and $q^{2}=k^{2}+2mV_0/\hbar^{2}$, the outgoing condition is
+A single well realises both positions, and the same analytic function holds them. For a square well of depth $V_0$ and width $a$, with $\eta=\frac{2\pi a\sqrt{2mV_0}}{h}$ and $q^{2}=k^{2}+2mV_0/\frac{h^{2}}{4\pi^{2}}$, the outgoing condition is
 
 $$
 D(k)=\cos(qa)-\frac{i}{2}\bigl(\frac{q}{k}+\frac{k}{q}\bigr)\sin(qa)=0 ,
@@ -215,7 +215,7 @@ which is the reciprocal of the transmission amplitude up to a phase, and whose z
 | resonance, fourth | $19.31210-3.19542\,i$ | $3.6275-1.2342\,i$ | $1.2342$ | $2.4684$ | $1.470$ |
 | resonance, fifth | $22.79971-3.42551\,i$ | $5.0809-1.5620\,i$ | $1.5620$ | $3.1240$ | $1.626$ |
 
-The bound rows are on the axis and the resonance rows are off it, and both are zeros of the same $D$. The frequencies are given by $E/V_0=(ka)^{2}/\eta^{2}$, so the bound entries are real and negative and the resonance entries are complex with a negative imaginary part; the decay constant is $\alpha=-\Im k$ and the width is $\Gamma=2\hbar v\alpha$ with $v=\hbar\Re k/m$. The table separates the two halves of that factor of two: the column $\lvert\Im E\rvert/V_0$ is half the width and the column $\Gamma/V_0$ is the width, so the entries stand in the ratio $1:2$ by construction and a reader who takes the smaller one for $\Gamma$ will be off by exactly that factor. The four bound zeros are the four standing waves the well supports, and their count is $\lfloor\eta/\pi\rfloor+1=4$.
+The bound rows are on the axis and the resonance rows are off it, and both are zeros of the same $D$. The frequencies are given by $E/V_0=(ka)^{2}/\eta^{2}$, so the bound entries are real and negative and the resonance entries are complex with a negative imaginary part; the decay constant is $\alpha=-\Im k$ and the width is $\Gamma=2\frac{h}{2\pi} v\alpha$ with $v=\frac{h}{2\pi}\Re k/m$. The table separates the two halves of that factor of two: the column $\lvert\Im E\rvert/V_0$ is half the width and the column $\Gamma/V_0$ is the width, so the entries stand in the ratio $1:2$ by construction and a reader who takes the smaller one for $\Gamma$ will be off by exactly that factor. The four bound zeros are the four standing waves the well supports, and their count is $\lfloor\eta/\pi\rfloor+1=4$.
 
 Two checks that the table is not a coincidence. First, every bound entry satisfies $\kappa a<\eta$, which is the statement that the binding cannot exceed the depth; the deepest is $9.65$ against a depth of $10$, so the well's own edge is what stops it, and no relativistic ceiling is in play here because this determinant is non-relativistic. Second, the resonance frequencies are all above the continuum edge: $\Re E>0$ for each, so no resonance in the table is below threshold. Both facts are identities of the same graph — the graph in the non-relativistic variable is $k_{\mathrm{s}}=k_{\Phi}^{2}/(2k_m)$, so $\Re k_{\mathrm{s}}>0$ is $\lvert\Re\vec k_\Phi\rvert^{2}>\lvert\Im\vec k_\Phi\rvert^{2}$, and that inequality is what the table's resonances satisfy.
 
@@ -223,10 +223,10 @@ Two checks that the table is not a coincidence. First, every bound entry satisfi
 
 ### Two expressions, one identity
 
-The width is twice the imaginary part of the frequency, and this is a definition rather than a formula. The pole contributes the amplitude $e^{-i\theta_{\mathrm{pwt}}}$, so with $k_{t}^{\prime}=k_R-ik_I$ and $k_I>0$ the probability falls as $e^{-2k_Ir'_t}$. Since $r'_t=ct$ and the probability is $e^{-\Gamma t/\hbar}$,
+The width is twice the imaginary part of the frequency, and this is a definition rather than a formula. The pole contributes the amplitude $e^{-i\theta_{\mathrm{pwt}}}$, so with $k_{t}^{\prime}=k_R-ik_I$ and $k_I>0$ the probability falls as $e^{-2k_Ir'_t}$. Since $r'_t=ct$ and the probability is $e^{-\frac{2\pi \Gamma t}{h}}$,
 
 $$
-\boxed{\;\Gamma=2\hbar c\,\lvert\Im k_{t}^{\prime}\rvert\;}
+\boxed{\;\Gamma=2\frac{h}{2\pi} c\,\lvert\Im k_{t}^{\prime}\rvert\;}
 $$
 
 A width is a distance from the real axis, measured in energy. Nothing in the definition mentions an integral, a density of states, or a continuum; the Golden Rule is how the width is *computed*, and this is what the computed number *is*.
@@ -237,9 +237,9 @@ $$
 \Im k_{\mathrm{s}}=\frac{\Re k_\Phi\,\Im k_\Phi}{k_m}=-\frac{k_R\alpha}{k_m},
 $$
 
-so $\Gamma=2\hbar c k_R\alpha/k_m=2\hbar v\alpha$ with $v=\hbar k_R/m$. The width is twice the momentum times the attenuation, which is the statement that a wave attenuated by $e^{-\alpha x}$ loses its probability over a length $1/(2\alpha)$, and the two forms are the same because $k_{\mathrm{s}}=k^{2}/(2k_m)$ is a polynomial in $k$. Verified on the table's first resonance: $\Gamma=2(7.21923)(2.29987)$ in units of $\hbar^{2}/(ma^{2})$ and $\lvert\Im(ka)^{2}\rvert$ agree to a relative difference of exactly zero, as they must, since $\Im(k^{2})=2\Re k\,\Im k$ identically, and dividing by $\eta^{2}=100$ gives the table's $\Gamma/V_0=0.6641$, which is twice its $\lvert\Im E\rvert/V_0=0.3321$.
+so $\Gamma=2\frac{h}{2\pi} c k_R\alpha/k_m=2\frac{h}{2\pi} v\alpha$ with $v=\frac{h}{2\pi} k_R/m$. The width is twice the momentum times the attenuation, which is the statement that a wave attenuated by $e^{-\alpha x}$ loses its probability over a length $1/(2\alpha)$, and the two forms are the same because $k_{\mathrm{s}}=k^{2}/(2k_m)$ is a polynomial in $k$. Verified on the table's first resonance: $\Gamma=2(7.21923)(2.29987)$ in units of $\frac{h^{2}}{4\pi^{2}}/(ma^{2})$ and $\lvert\Im(ka)^{2}\rvert$ agree to a relative difference of exactly zero, as they must, since $\Im(k^{2})=2\Re k\,\Im k$ identically, and dividing by $\eta^{2}=100$ gives the table's $\Gamma/V_0=0.6641$, which is twice its $\lvert\Im E\rvert/V_0=0.3321$.
 
-In the relativistic variable the second form holds to first order, and the order is measured. With $k_{t}^{\prime}=\sqrt{k_{\Phi}^{2}+k_m^{2}}$ the chain rule gives $\Im k_{t}^{\prime}\approx(\Re k_\Phi/k_{t}^{\prime\,0})\Im k_\Phi$, hence $\Gamma\approx2\hbar v_g\alpha$ with $v_g=c\Re k_\Phi/k_{t}^{\prime\,0}$. At $k_\Phi=k_m$ and $\alpha=10^{-2}$ the exact imaginary part is $-7.071156\times10^{-3}$ against the first-order $-7.071068\times10^{-3}$, a relative difference of $1.25\times10^{-5}$; at $\alpha=10^{-3}$ the same quotient is $1.25\times10^{-7}$ and at $10^{-4}$ it is $1.25\times10^{-9}$. The error falls as $\alpha^{2}$, which is what a second-order term should do, and the exact form is the one without a small parameter.
+In the relativistic variable the second form holds to first order, and the order is measured. With $k_{t}^{\prime}=\sqrt{k_{\Phi}^{2}+k_m^{2}}$ the chain rule gives $\Im k_{t}^{\prime}\approx(\Re k_\Phi/k_{t}^{\prime\,0})\Im k_\Phi$, hence $\Gamma\approx2\frac{h}{2\pi} v_g\alpha$ with $v_g=c\Re k_\Phi/k_{t}^{\prime\,0}$. At $k_\Phi=k_m$ and $\alpha=10^{-2}$ the exact imaginary part is $-7.071156\times10^{-3}$ against the first-order $-7.071068\times10^{-3}$, a relative difference of $1.25\times10^{-5}$; at $\alpha=10^{-3}$ the same quotient is $1.25\times10^{-7}$ and at $10^{-4}$ it is $1.25\times10^{-9}$. The error falls as $\alpha^{2}$, which is what a second-order term should do, and the exact form is the one without a small parameter.
 
 ### The quality factor, and the grade of the state
 
@@ -249,7 +249,7 @@ $$
 Q=\frac{\Re E}{2\lvert\Im E\rvert}=\frac{\Re E}{\Gamma}.
 $$
 
-The ratio has to be taken on the energy measured from the rest energy and not on the total. Relativistically $E=\hbar c\,k_{t}^{\prime}$, so $Q=\Re k_{t}^{\prime}/(2\lvert\Im k_{t}^{\prime}\rvert)$ outright; in the Galilean variable the total is $k_{t}^{\prime}=k_m+k_{\mathrm{s}}$ and the rest term $k_m$ is a real constant that neither oscillates nor decays, so the ratio is $Q=\Re k_{\mathrm{s}}/(2\lvert\Im k_{\mathrm{s}}\rvert)$ and $k_m$ cancels nothing because it is never there. The table below uses the Galilean form, and the two definitions differ by the factor $(\Re^{2}+\Im^{2})/\Re^{2}$ of the frequency: $0.705$ against $1.570$ for the table's first resonance. They agree for a narrow resonance and part company for a broad one, and the first row of the table is broad.
+The ratio has to be taken on the energy measured from the rest energy and not on the total. Relativistically $E=\frac{h}{2\pi} c\,k_{t}^{\prime}$, so $Q=\Re k_{t}^{\prime}/(2\lvert\Im k_{t}^{\prime}\rvert)$ outright; in the Galilean variable the total is $k_{t}^{\prime}=k_m+k_{\mathrm{s}}$ and the rest term $k_m$ is a real constant that neither oscillates nor decays, so the ratio is $Q=\Re k_{\mathrm{s}}/(2\lvert\Im k_{\mathrm{s}}\rvert)$ and $k_m$ cancels nothing because it is never there. The table below uses the Galilean form, and the two definitions differ by the factor $(\Re^{2}+\Im^{2})/\Re^{2}$ of the frequency: $0.705$ against $1.570$ for the table's first resonance. They agree for a narrow resonance and part company for a broad one, and the first row of the table is broad.
 
 Over one period $2\pi/\Re k_{\mathrm{s}}$ the amplitude falls by $e^{-\pi/Q}$, so $Q$ counts cycles per e-fold up to a factor $\pi$. $Q$ is infinite on the real axis and finite off it, so it separates the third position from the other two and says nothing about which of them a point occupies. What it does say is how far the third position is from being a state: $Q\gg1$ is a resonance that oscillates many times before it decays, $Q\ll1$ is a decay that never completes a cycle.
 
@@ -267,11 +267,11 @@ $$
 \bigl\lvert e^{i(k_\Phi x-k_{t}^{\prime}r'_t)}\bigr\rvert^{2}=e^{2\alpha x}\,e^{-2k_Ir'_t} .
 $$
 
-Along the ray $x=v_gt$ the exponent is $\bigl(2\alpha v_g-2k_Ic\bigr)t$, and $\Gamma=2\hbar v_g\alpha$ says exactly that the bracket vanishes. So the probability density of a resonance mode is constant along the outgoing ray, and falls only at fixed position. That is what a decaying source looks like from outside: a steady flux whose amplitude is set by the source's remaining probability, and not a wave that fades as it travels.
+Along the ray $x=v_gt$ the exponent is $\bigl(2\alpha v_g-2k_Ic\bigr)t$, and $\Gamma=2\frac{h}{2\pi} v_g\alpha$ says exactly that the bracket vanishes. So the probability density of a resonance mode is constant along the outgoing ray, and falls only at fixed position. That is what a decaying source looks like from outside: a steady flux whose amplitude is set by the source's remaining probability, and not a wave that fades as it travels.
 
-The factor of two between the width and the imaginary part is the standard one and not a slip. *The Three Wavenumbers of a Particle* records $k_{t}^{\prime}(\Gamma)=k_m\Gamma/(mc^{2})=\Gamma/(\hbar c)=1/(c\tau)$ as the wave number of the width, and this article's $\lvert\Im k_{t}^{\prime}\rvert=\Gamma/(2\hbar c)$ is half of it. The reason is that the amplitude carries half the width and the probability carries all of it, which is the same reason the pole is written $E-i\Gamma/2$. Both numbers are correct and they name different things: one is the wave number of the width, the other the imaginary part of the frequency.
+The factor of two between the width and the imaginary part is the standard one and not a slip. *The Three Wavenumbers of a Particle* records $k_{t}^{\prime}(\Gamma)=k_m\Gamma/(mc^{2})=\frac{2\pi \Gamma}{h\,c}=1/(c\tau)$ as the wave number of the width, and this article's $\lvert\Im k_{t}^{\prime}\rvert=\Gamma/(2\frac{h}{2\pi} c)$ is half of it. The reason is that the amplitude carries half the width and the probability carries all of it, which is the same reason the pole is written $E-i\Gamma/2$. Both numbers are correct and they name different things: one is the wave number of the width, the other the imaginary part of the frequency.
 
-The lifetime is the inverse of the width in the corpus's own units. $\tau=\hbar/\Gamma$, which is the expression *The Unstable State and the Complex Energy Pole in Biquaternionic Form* uses, and it agrees with the definition here, the quotient of the two being the same constant. No new parameter enters: the lifetime is the reciprocal of the distance from the real axis.
+The lifetime is the inverse of the width in the corpus's own units. $\tau=\frac{h}{2\pi \Gamma}$, which is the expression *The Unstable State and the Complex Energy Pole in Biquaternionic Form* uses, and it agrees with the definition here, the quotient of the two being the same constant. No new parameter enters: the lifetime is the reciprocal of the distance from the real axis.
 
 ### Where the exponential stops
 
@@ -321,7 +321,7 @@ The bound positions lie on a circle of radius $k_m$. Verified to $2.2\times10^{-
 
 The resonance is the same zero off the axis. A determinant with the reflection symmetry $D(-\overline{k})=\overline{D(k)}$ has its bound zeros on the fixed locus and its resonance zeros in pairs across it; one well of $\eta=10$ has four of the first and a ladder of the second, all zeros of one analytic function. The retarded condition selects the decaying member, and that selection is the choice of sheet the corpus's unstable-state article describes, seen here as a choice between two positions of one zero rather than between two sheets of one pole.
 
-The width is a coordinate and not an integral. $\Gamma=2\hbar c\lvert\Im k_{t}^{\prime}\rvert$ by definition, $2\hbar v\alpha$ exactly in the non-relativistic variable, and $2\hbar v_g\alpha$ to first order relativistically with the error falling as $\alpha^{2}$. The two exponentials of a resonance cancel along the outgoing ray, so the probability density is steady in space and falls in time. The quality factor $\Re E/(2\lvert\Im E\rvert)=\Re E/\Gamma$ measures how much of a state the position is, and the table's ladder from $0.705$ to $1.626$ is a ladder of that measure.
+The width is a coordinate and not an integral. $\Gamma=2\frac{h}{2\pi} c\lvert\Im k_{t}^{\prime}\rvert$ by definition, $2\frac{h}{2\pi} v\alpha$ exactly in the non-relativistic variable, and $2\frac{h}{2\pi} v_g\alpha$ to first order relativistically with the error falling as $\alpha^{2}$. The two exponentials of a resonance cancel along the outgoing ray, so the probability density is steady in space and falls in time. The quality factor $\Re E/(2\lvert\Im E\rvert)=\Re E/\Gamma$ measures how much of a state the position is, and the table's ladder from $0.705$ to $1.626$ is a ladder of that measure.
 
 The partition is a partition of the centre. The symbol is central, so its zero is a complex number of $\mathbb{B}_{C}$, and the three names denote a central point. What the algebra adds is that nothing non-central can move the point off its locus; what it does not add is the selection, which the potential makes.
 
@@ -331,15 +331,15 @@ The partition is a partition of the centre. The symbol is central, so its zero i
 |---|---|
 | $\sigma_{\mathcal{P}}$ | the symbol of the Klein–Gordon operator, $k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}$; a central complex number |
 | $\sigma_{\mathrm{s}}$ | the Schrödinger symbol, $k_{\mathrm{s}}-k_{\Phi}^{2}/(2k_m)$; affine in the energy |
-| $k_{t}^{\prime}$ | the energy wave number, $E/(\hbar c)$; the frequency of a mode |
+| $k_{t}^{\prime}$ | the energy wave number, $\frac{2\pi E}{h\,c}$; the frequency of a mode |
 | $k_{\Phi}^{2}$ | the quadratic invariant $\vec k_\Phi\cdot\vec k_\Phi$, complex bilinear and not a modulus squared |
-| $k_{\mathrm{s}}$ | the energy above rest, $k_{t}^{\prime}-k_m=(E-mc^{2})/(\hbar c)$ |
-| $k_m$ | the mass wave number, $mc/\hbar$; the radius of the circle, and the ceiling on $\kappa$ |
+| $k_{\mathrm{s}}$ | the energy above rest, $k_{t}^{\prime}-k_m=(E-mc^{2})\frac{2\pi}{h\,c}$ |
+| $k_m$ | the mass wave number, $\frac{2\pi mc}{h}$; the radius of the circle, and the ceiling on $\kappa$ |
 | $\vec\kappa$ | the decay vector, $\vec k_\Phi=i\vec\kappa$, with $\kappa=\sqrt{-k_{\Phi}^{2}}>0$ in the bound position |
-| $\eta$ | the well strength, $a\sqrt{2mV_0}/\hbar$; dimensionless, and the count of bound zeros is $\lfloor\eta/\pi\rfloor+1$ |
+| $\eta$ | the well strength, $\frac{2\pi a\sqrt{2mV_0}}{h}$; dimensionless, and the count of bound zeros is $\lfloor\eta/\pi\rfloor+1$ |
 | $D(k)$ | the determinant of the outgoing matching condition; its zeros are the poles of $S$ |
 | $\alpha$ | the attenuation, $-\Im k_\Phi$; a decay constant in space |
-| $\Gamma$ | the width, $2\hbar c\lvert\Im k_{t}^{\prime}\rvert$; a decay constant in energy |
+| $\Gamma$ | the width, $2\frac{h}{2\pi} c\lvert\Im k_{t}^{\prime}\rvert$; a decay constant in energy |
 | $Q$ | the quality factor, $\Re E/(2\lvert\Im E\rvert)=\Re E/\Gamma$, taken on the energy above rest; cycles per e-fold up to a factor $\pi$ |
 
 ## Further Reading

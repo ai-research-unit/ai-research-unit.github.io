@@ -50,7 +50,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_p}\,\tilde{Ξ}_{R},
 $$
 
-and composing the two lines gives $(\Box_\Phi-k_{m_p}^{2})\tilde{Ξ}_{L}=0$ and $(\Box_\Phi-k_{m_p}^{2})\tilde{Ξ}_{R}=0$. Here $1/k_{m_p}=\hbar/(m_pc)$ is the mass length.
+and composing the two lines gives $(\Box_\Phi-k_{m_p}^{2})\tilde{Ξ}_{L}=0$ and $(\Box_\Phi-k_{m_p}^{2})\tilde{Ξ}_{R}=0$. Here $1/k_{m_p}=\frac{h}{2\pi m_pc}$ is the mass length.
 
 The two lines act on the element and contain no matrix generator. What the reading on one element adds is the charge and the bilinears, which are read on the element. The algebra carries the mass term and the mass shell, and the two readings are related by a change of carrier, not by a change of physics.
 
@@ -100,12 +100,12 @@ $$
 a derived form: $Ϙ=ϙ_L\tilde\Pi_{\mathrm{id},+}(\vec e_z)+ϙ_R\tilde\Pi_{\mathrm{id},-}(\vec e_z)$, the two chirality states at the axis of the previous section. The element $Ϙ$ is Hermitian, and it is central only in the vector-like case $ϙ_L=ϙ_R$, where the action is also a left multiplication. The covariant derivative carries it,
 
 $$
-D_\mu\tilde{Ξ}=\frac{\partial\tilde{Ξ}}{\partial R_\mu}+\frac{i}{\hbar}A_\mu\,\tilde{Ξ}Ϙ .
+D_\mu\tilde{Ξ}=\frac{\partial\tilde{Ξ}}{\partial R_\mu}+\frac{2\pi i}{h}A_\mu\,\tilde{Ξ}Ϙ .
 $$
 
 The framework's own abelian gauge structure — the one drawn from the central line $\mathbb{B}_{C}$ — is the specialization $ϙ_L=ϙ_R$: a central phase multiplies the two values alike, so it is vector-like by construction, and an axial coupling would have to sit outside the centre.
 
-Two structural facts about $Ϙ$ are inherited from the chiral-fermion article and are used here. First, $Ϙ$ is Hermitian and diagonal in the two values: it commutes with the chirality basis operator $\Gamma=-iR_{\vec e_z}$, and it acts on the L value by $ϙ_L$ and on the R value by $ϙ_R$. Second, the **mass selection rule**. The mass term is the only term of the free pair that links the two values, so it is the only place where the two charges meet. Under a gauge transformation the L value picks up the phase $\exp(i\theta_{\mathrm{gau},L})$ and the R value the phase $\exp(i\theta_{\mathrm{gau},R})$; with $\theta_{\mathrm{gau},L}=ϙ_{L}\lambda/\hbar$ and $\theta_{\mathrm{gau},R}=ϙ_{R}\lambda/\hbar$ real because the charges and the parameter are real; the derivative terms are made covariant by the transformed potential, but the mass term $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_p}\tilde{Ξ}_{L}$ then carries one phase on each side, so it is invariant for every real gauge function $\lambda$ **if and only if** $ϙ_R=ϙ_L$. A framework fermion that carries a mass is thus *forced* to be vector-like, and its charge element collapses to the central element,
+Two structural facts about $Ϙ$ are inherited from the chiral-fermion article and are used here. First, $Ϙ$ is Hermitian and diagonal in the two values: it commutes with the chirality basis operator $\Gamma=-iR_{\vec e_z}$, and it acts on the L value by $ϙ_L$ and on the R value by $ϙ_R$. Second, the **mass selection rule**. The mass term is the only term of the free pair that links the two values, so it is the only place where the two charges meet. Under a gauge transformation the L value picks up the phase $\exp(i\theta_{\mathrm{gau},L})$ and the R value the phase $\exp(i\theta_{\mathrm{gau},R})$; with $\theta_{\mathrm{gau},L}=\frac{2\pi ϙ_{L}\lambda}{h}$ and $\theta_{\mathrm{gau},R}=\frac{2\pi ϙ_{R}\lambda}{h}$ real because the charges and the parameter are real; the derivative terms are made covariant by the transformed potential, but the mass term $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_p}\tilde{Ξ}_{L}$ then carries one phase on each side, so it is invariant for every real gauge function $\lambda$ **if and only if** $ϙ_R=ϙ_L$. A framework fermion that carries a mass is thus *forced* to be vector-like, and its charge element collapses to the central element,
 
 $$
 \boxed{\;ϙ_L=ϙ_R=ϙ
@@ -217,7 +217,7 @@ The consequence is that the proton's compositeness — the reason its mass is 93
 
 **The magnetic moment.** Carrying the biquaternion Dirac equation to the non-relativistic regime produces the tree-level gyromagnetic factor $g=2$ for any structureless spin-$\tfrac12$ field with the inserted charge, exactly as for the electron (*The Electron in Biquaternionic Form*). Applied to the proton's effective field this gives a magnetic moment $\vec\mu_p=(e\,ϙ_p/m_p)\vec S$ with $ϙ_p=+1$, of one nuclear magneton $\mu_N=\dfrac{e}{2}\dfrac{c}{k_{m_p}}$ when $\vec S$ is aligned with the field. The measured proton moment is $2.7928\,\mu_N$, i.e. $g_p\approx5.586$. The deviation is *not* a small radiative correction of the kind the electron's $g-2$ is: it is a large strong-interaction and compositeness effect, produced by the quark and gluon dynamics of the bound state, and the framework supplies none of it. For the proton, therefore, even the tree-level value is not a prediction about the real object — it is the value the framework would assign to a fictitious elementary field of the same mass and charge.
 
-Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 ## What Is Imported from Standard Physics
 
@@ -350,7 +350,7 @@ What the framework does not supply is everything that makes the proton a proton.
 | $\tilde{Ξ}^{\flat}=-\tilde{Ξ}^*$ | The algebra's real structure |
 | $\tilde\Pi_{\mathrm{id},\pm}(\vec e_z)$ | The two chirality states at the axis; $\tilde\Pi_{\mathrm{id},+}$ the L state, $\tilde\Pi_{\mathrm{id},-}$ the R state |
 | $Ϙ=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z=ϙ_L\tilde\Pi_{\mathrm{id},+}(\vec e_z)+ϙ_R\tilde\Pi_{\mathrm{id},-}(\vec e_z)$ | The charge element, in $\mathbb{B}_{\Psi}$; the charge is the right multiplication by it |
-| $D_\mu\tilde{Ξ}=\partial\tilde{Ξ}/\partial R_\mu+\frac{i}{\hbar}A_\mu\tilde{Ξ}Ϙ$ | Covariant derivative of the chiral charge |
+| $D_\mu\tilde{Ξ}=\partial\tilde{Ξ}/\partial R_\mu+\frac{2\pi i}{h}A_\mu\tilde{Ξ}Ϙ$ | Covariant derivative of the chiral charge |
 | $ϙ_L, ϙ_R$ | Chiral couplings (real parameters); a massive field forces $ϙ_L=ϙ_R$ |
 | $Ϙ=ϙ\,e_t$, $ϙ_p=+1$ | Vector-like charge element; the proton's value (inserted, not derived) |
 | $m_p$ | Proton mass (a parameter) |
@@ -375,7 +375,7 @@ What the framework does not supply is everything that makes the proton a proton.
 - [The Spin–Statistics Theorem in Biquaternionic Form](the-spin-statistics-theorem-in-biquaternionic-form.html) — half-integer weights as native to the algebra, and the sense in which the spin–statistics theorem is transcribed rather than derived.
 - [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html) — the two values of the field and the Lorentz action that fixes the spin-$\tfrac12$ content.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian gauge group as the $*$-unitary part of the centre, on which the electric-charge identification rests.
-- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html) — the spin operators $\tilde{S}_{\Psi,\mu}=\frac{\hbar}{2} i\vec e_\mu$ and the state structure used implicitly here.
+- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html) — the spin operators $\tilde{S}_{\Psi,\mu}=\frac{h}{4\pi} i\vec e_\mu$ and the state structure used implicitly here.
 - [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) — the real structure and the Majorana-versus-Dirac interpretation that bears on charge conservation.
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html) and [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the two sectors, their bases and the normalised Hermitian form, with its trace reading, inherited unchanged.
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html) — the two first-order equations, the square on each line, and the reading of the massive equation on one element, taken over unchanged.

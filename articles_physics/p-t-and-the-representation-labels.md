@@ -94,10 +94,10 @@ $$
 with the sign fixed by the orientation convention of $\epsilon$, so
 
 $$
-C_2=m^{2}c^{2}\lvert\vec S\rvert^{2}=\hbar^{2}m^{2}c^{2}s(s+1).
+C_2=m^{2}c^{2}\lvert\vec S\rvert^{2}=\frac{h^{2}}{4\pi^{2}}m^{2}c^{2}s(s+1).
 $$
 
-The computation is verified in the spin-$\tfrac12$ representation of the Lorentz algebra: with $\tilde P=(mc,0,0,0)$, the four Pauli–Lubanski generators come out as $W_0=0$ and $\vec W=mc\vec S$, with $\vec S$ the Hermitian spin operator so that $\vec S^{2}=+s(s+1)$, and $C_2=\tfrac34\hbar^{2}m^{2}c^{2}$, which is $s(s+1)$ at $s=\tfrac12$.
+The computation is verified in the spin-$\tfrac12$ representation of the Lorentz algebra: with $\tilde P=(mc,0,0,0)$, the four Pauli–Lubanski generators come out as $W_0=0$ and $\vec W=mc\vec S$, with $\vec S$ the Hermitian spin operator so that $\vec S^{2}=+s(s+1)$, and $C_2=\tfrac34\frac{h^{2}}{4\pi^{2}}m^{2}c^{2}$, which is $s(s+1)$ at $s=\tfrac12$.
 
 ### Why $C_2$ Is the Spin
 
@@ -116,7 +116,7 @@ $$
 and the module has dimension $2j+1$ times the dimension of the momentum space's orbit measure. The two numbers are the eigenvalues of the two Casimirs:
 
 $$
-C_1=m^{2}c^{2},\qquad C_2=\hbar^{2}m^{2}c^{2}j(j+1).
+C_1=m^{2}c^{2},\qquad C_2=\frac{h^{2}}{4\pi^{2}}m^{2}c^{2}j(j+1).
 $$
 
 ### The Rest Frame
@@ -145,7 +145,7 @@ with $h$ a constant on the module. Then $C_2=-\sum_\mu\varepsilon_\mu\tilde W_\m
 
 ### The Helicity
 
-$h$ is the **helicity**: the component of the spin along the momentum, in units of $\hbar$. It is invariant under the little group $E(2)$'s compact part and fixed by the requirement that the two null rotations act trivially. The massless labels are
+$h$ is the **helicity**: the component of the spin along the momentum, in units of $\frac{h}{2\pi}$. It is invariant under the little group $E(2)$'s compact part and fixed by the requirement that the two null rotations act trivially. The massless labels are
 
 $$
 (0,h),\qquad h\in\{0,\pm\tfrac12,\pm1,\dots\},
@@ -215,7 +215,7 @@ The two readings are used in different articles of the block for different purpo
 
 ## Summary
 
-The Poincaré algebra has two Casimirs, $C_1=N$ and $C_2=-\sum_\mu\varepsilon_\mu W_\mu W_\mu$ with $W_\mu$ the Pauli–Lubanski vector. Their eigenvalues label an irreducible module by $(m,j)$, with $C_1=m^{2}c^{2}$ and $C_2=\hbar^{2}m^{2}c^{2}j(j+1)$; in the rest frame $\vec W=\pm mc\vec S$, which is why $j$ is the spin. On the null cone $W_\mu=hP_\mu$, $C_2$ vanishes, and the labels become $(0,h)$ with $h$ the helicity, because the little group has grown from $SU(2)$ to $E(2)$. The two readings, by Casimirs and by little groups, agree on both orbits. $PT$ preserves the momentum and reverses the spin, so it fixes $(m,j)$ and flips $h$: the Casimir labels are untouchable and the helicity is not one.
+The Poincaré algebra has two Casimirs, $C_1=N$ and $C_2=-\sum_\mu\varepsilon_\mu W_\mu W_\mu$ with $W_\mu$ the Pauli–Lubanski vector. Their eigenvalues label an irreducible module by $(m,j)$, with $C_1=m^{2}c^{2}$ and $C_2=\frac{h^{2}}{4\pi^{2}}m^{2}c^{2}j(j+1)$; in the rest frame $\vec W=\pm mc\vec S$, which is why $j$ is the spin. On the null cone $W_\mu=hP_\mu$, $C_2$ vanishes, and the labels become $(0,h)$ with $h$ the helicity, because the little group has grown from $SU(2)$ to $E(2)$. The two readings, by Casimirs and by little groups, agree on both orbits. $PT$ preserves the momentum and reverses the spin, so it fixes $(m,j)$ and flips $h$: the Casimir labels are untouchable and the helicity is not one.
 
 ## Summary of Notation
 

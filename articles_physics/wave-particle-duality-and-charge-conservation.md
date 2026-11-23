@@ -290,7 +290,7 @@ The counts close. The rank and the cokernel dimension add to four at every point
 | $\tilde J_\Phi$ | the four-current $ic\rho\,e_t+\vec J$ |
 | $\tilde K_{\Phi}$ | the wave-number element $i\,k_{t}^{\prime}e_t+\vec k_{\Phi}$ |
 | $\tilde K_{\Phi}^{\natural}$ | its quaternion conjugate $i\,k_{t}^{\prime}e_t-\vec k_{\Phi}$ |
-| $k_{t}^{\prime}$ | the energy wave number, $E/(\hbar c)=\omega/c$ |
+| $k_{t}^{\prime}$ | the energy wave number, $\frac{2\pi E}{h\,c}=\omega/c$ |
 | $k_{\Phi}$ | the modulus of the momentum wave number |
 | $\vec u_\Phi$ | the unit propagation direction, $\vec k_\Phi/k_\Phi$ |
 | $\mathbb{B}_V$, $\mathbb{B}$ | the domain and codomain of $L_{i\tilde K_\Phi}$, of complex dimensions three and four |

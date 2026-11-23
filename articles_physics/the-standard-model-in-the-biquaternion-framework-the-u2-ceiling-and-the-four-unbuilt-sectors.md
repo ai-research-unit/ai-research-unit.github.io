@@ -47,14 +47,14 @@ Because $\lambda$ is central and constant, it passes through the gradient, so th
 $$
 \tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma,
 \qquad
-D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi},
+D = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi},
 \qquad
-D_\mu = \partial/\partial R_\mu +\frac{i\,ϙ}{\hbar}A_\mu,
+D_\mu = \partial/\partial R_\mu +\frac{2\pi i\,ϙ}{h}A_\mu,
 $$
 
-Here $\theta_{\mathrm{gau}}:=ϙ\,\Gamma/\hbar$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
+Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
 
-under which $D\tilde{Ξ}$ transforms by the phase factor. The field strength is the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ and satisfies the curvature identity $[D_\mu,D_\nu] =\frac{i\,ϙ}{\hbar}F_{\mu\nu}$. The abelian gauge group is canonically attached to the algebra: the only phase that commutes with the whole algebra must lie in the centre, and the centre is one complex dimension, so no choice of representation is made in selecting it.
+under which $D\tilde{Ξ}$ transforms by the phase factor. The field strength is the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ and satisfies the curvature identity $[D_\mu,D_\nu] =\frac{2\pi i\,ϙ}{h}F_{\mu\nu}$. The abelian gauge group is canonically attached to the algebra: the only phase that commutes with the whole algebra must lie in the centre, and the centre is one complex dimension, so no choice of representation is made in selecting it.
 
 Two properties of this factor are as important for the article as the factor itself. First, the charge $ϙ$ is a parameter; the algebra does not fix it. Second, a central element acts as a scalar on the algebra: left multiplication by $\lambda = \exp(i\theta_{\mathrm{cen}})$ multiplies every element by the same factor. A gauge group drawn from the centre therefore assigns every element the same charge — it is vector-like and cannot distinguish left from right. This is established in *Chiral Fermions in the Biquaternion Framework*, and it is the reason the abelian factor as it stands cannot be weak hypercharge, which is chiral.
 
@@ -148,9 +148,9 @@ $$
 so that $\tilde{Ξ}_{L}b=ϙ_L\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}b=ϙ_R\tilde{Ξ}_{R}$, and its covariant derivative and the curvature it gives are these
 
 $$
-D_\mu\tilde{Ξ}=\frac{\partial}{\partial R_\mu}\tilde{Ξ}+\frac{i}{\hbar}A_\mu\,(\tilde{Ξ} b),
+D_\mu\tilde{Ξ}=\frac{\partial}{\partial R_\mu}\tilde{Ξ}+\frac{2\pi i}{h}A_\mu\,(\tilde{Ξ} b),
 \qquad
-[D_\mu,D_\nu]\tilde{Ξ}=\frac{i}{\hbar}F_{\mu\nu}\,(\tilde{Ξ} b).
+[D_\mu,D_\nu]\tilde{Ξ}=\frac{2\pi i}{h}F_{\mu\nu}\,(\tilde{Ξ} b).
 $$
 
 The derivative is gauge covariant for arbitrary $ϙ_L,ϙ_R$, and the mass bilinear is gauge invariant if and only if $ϙ_L = ϙ_R$. This mass selection rule is the framework's form of the Standard Model's requirement that a chiral fermion acquire mass only through a compensating scalar. Both are the chiral article's, written with the charge element $b$.
@@ -165,7 +165,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R},
 $$
 
-through which the continuous central phase passes: the vector $\mathrm{U}(1)$ is conserved for the massive field, and what the mass breaks is the axial symmetry, whose current carries the chirality as a right factor of the field. The algebra's anti-linear object is the real structure $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$, whose separate conjugate pairing — Majorana-type or the real form of an ordinary Dirac mass — is the open reading treated in *The Neutrino and Majorana Fermions in Biquaternionic Form*. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+through which the continuous central phase passes: the vector $\mathrm{U}(1)$ is conserved for the massive field, and what the mass breaks is the axial symmetry, whose current carries the chirality as a right factor of the field. The algebra's anti-linear object is the real structure $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$, whose separate conjugate pairing — Majorana-type or the real form of an ordinary Dirac mass — is the open reading treated in *The Neutrino and Majorana Fermions in Biquaternionic Form*. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 ## The Three Gauge Factors
 
@@ -173,7 +173,7 @@ through which the continuous central phase passes: the vector $\mathrm{U}(1)$ is
 
 The source is *The Gauge Principle in Biquaternionic Form*. The gauge principle is established; the identification with weak hypercharge is not made, and no route to it exists.
 
-What is established is a single abelian gauge factor, canonical and vector-like: the $*$-unitary part of the centre, with connection law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ and curvature $[D_\mu,D_\nu] =\frac{i\,ϙ}{\hbar}F_{\mu\nu}$. What weak hypercharge requires is a factor that (i) carries a definite set of assignments — different eigenvalues on different Standard Model multiplets, the pattern that makes $Ϙ = T_3 + Y$ work and that cancels the anomalies — and (ii) acts chirally, with independent left and right charges on a single fermion, since the left- and right-handed components of the Standard Model fermions carry different hypercharge.
+What is established is a single abelian gauge factor, canonical and vector-like: the $*$-unitary part of the centre, with connection law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ and curvature $[D_\mu,D_\nu] =\frac{2\pi i\,ϙ}{h}F_{\mu\nu}$. What weak hypercharge requires is a factor that (i) carries a definite set of assignments — different eigenvalues on different Standard Model multiplets, the pattern that makes $Ϙ = T_3 + Y$ work and that cancels the anomalies — and (ii) acts chirally, with independent left and right charges on a single fermion, since the left- and right-handed components of the Standard Model fermions carry different hypercharge.
 
 The framework's abelian factor supplies neither. Its action is a scalar multiplication, so it gives every element the same charge; under the alternative real-structure interpretation it would be axial, but still a single one-dimensional charge with no room for independent left and right assignments. And the coupling $ϙ$ is one parameter, not a table. There is no object in the series from which the numbers $1/6$, $-1/2$, $2/3$, and so on could be read off. An abelian gauge factor is established; weak hypercharge is not derived, and no computation in the series points toward it. This item is filed as no route yet.
 
@@ -422,10 +422,10 @@ No section assumes a Standard Model structure. The three gauge factors are each 
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | d'Alembertian |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Abelian connection (in $\mathbb{B}_{\Phi}$) |
 | $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Abelian gauge transformation |
-| $D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$ | Abelian covariant derivative |
+| $D = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ | Abelian covariant derivative |
 | $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12 e_a$ | Commutator and normalized generators of $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)=\mathrm{U}(2)$ | Material-sector Lie-algebra decomposition (dimension $4$) |
-| $\mathcal{A}_\mu\in\mathrm{SU}(2)$, $\kappa=\frac{ϙ}{\hbar}$ | Non-abelian connection and coupling |
+| $\mathcal{A}_\mu\in\mathrm{SU}(2)$, $\kappa=\frac{2\pi ϙ}{h}$ | Non-abelian connection and coupling |
 | $F_{\mu\nu}=\partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Non-abelian field strength |
 | $F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$, $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ | Adjoint transformation law and curvature identity |
 | $D_\lambda F_{\mu\nu}+\text{cyclic}=0$ | Bianchi identity |

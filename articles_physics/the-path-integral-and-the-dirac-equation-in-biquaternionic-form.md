@@ -15,7 +15,7 @@ The dynamics is the chiral pair.
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}, \qquad
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}, \qquad
-k_m=\dfrac{mc}{\hbar},
+k_m=\frac{2\pi mc}{h},
 $$
 
 with massless limit $\tilde\nabla_\Phi\tilde{Ξ} = 0$. Both lines act from the left, the conjugation $\natural$ separates them, and no glyph names a side (*Operator and Calculus Conventions*, §*The Two Sides and the Renaming Theorem*). Every coordinate form of the pair is the standard Dirac equation and is not a second dynamics. The field is one element of $\mathbb{B}$ with two parts, one for each letter of the pair, and the mass is the central coefficient that relates them; it takes no part into the other, since a coefficient multiplying on the left keeps the value.
@@ -30,7 +30,7 @@ The same integral in the other coordinates is the companion article. *The Path I
 
 The object the path integral must compute is the Feynman propagator of the pair. Its two components are the amplitudes for the two letters of the pair, and each component is an element of the algebra: no array enters, and the pair is what the algebra's own product acts on.
 
-The two symbols. A plane wave of the pair is $\tilde{Ξ}(x) = \tilde{Ξ}_{\mathrm{amp}}\exp(-i\theta_{\mathrm{pwp}})=\tilde{Ξ}_{\mathrm{amp}}\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\big)$, with $p\cdot x = p_0x_0 - \vec p\cdot\vec r$, $p_0 = E/c$ and $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$; the two exponents are one number, since $p\cdot x/\hbar=-\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})$. The momentum element is $\tilde{P}_{\Phi}$, and its norm is the mass-shell scalar,
+The two symbols. A plane wave of the pair is $\tilde{Ξ}(x) = \tilde{Ξ}_{\mathrm{amp}}\exp(-i\theta_{\mathrm{pwp}})=\tilde{Ξ}_{\mathrm{amp}}\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\big)$, with $p\cdot x = p_0x_0 - \vec p\cdot\vec r$, $p_0 = E/c$ and $\tilde K_{\Phi}=\frac{2\pi \tilde P_{\Phi}}{h}$; the two exponents are one number, since $\frac{2\pi p\cdot x}{h}=-\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})$. The momentum element is $\tilde{P}_{\Phi}$, and its norm is the mass-shell scalar,
 
 $$
 \langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = N,
@@ -38,7 +38,7 @@ $$
 N = -p_0^{2} + p_1^{2} + p_2^{2} + p_3^{2} .
 $$
 
-Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
+Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 The gradient and its conjugate act on the plane wave by left multiplication by the two symbols,
 
@@ -48,10 +48,10 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\,e^{-i\theta_{\mathrm{pwp}}} = i\tilde K_{\Phi}^{\natural}\,e^{-i\theta_{\mathrm{pwp}}},
 $$
 
-a derived form: the time derivative of the phase is $-ik_{t}^{\prime}$ and the spatial derivative $+ik_k$, the two coordinates of $\tilde K_{\Phi}$ and nothing else, with $k_{t}^{\prime}=p_0/\hbar=E/(\hbar c)$ and $k_{\Phi\eta}=p_\eta/\hbar$; on the material sector the time derivative of the gradient is read with $\partial/\partial R_t = -i\,\partial/\partial x_0$ (*Operator and Calculus Conventions*, §*The Gradient*). The product of the two symbols is the symbol of the d'Alembertian,
+a derived form: the time derivative of the phase is $-ik_{t}^{\prime}$ and the spatial derivative $+ik_k$, the two coordinates of $\tilde K_{\Phi}$ and nothing else, with $k_{t}^{\prime}=\frac{2\pi p_0}{h}=\frac{2\pi E}{h\,c}$ and $k_{\Phi\eta}=\frac{2\pi p_\eta}{h}$; on the material sector the time derivative of the gradient is read with $\partial/\partial R_t = -i\,\partial/\partial x_0$ (*Operator and Calculus Conventions*, §*The Gradient*). The product of the two symbols is the symbol of the d'Alembertian,
 
 $$
-i\tilde K_{\Phi}\,i\tilde K_{\Phi}^{\natural} = -\langle\tilde K_{\Phi}\rangle_{\natural} = -\frac{N}{\hbar^{2}} .
+i\tilde K_{\Phi}\,i\tilde K_{\Phi}^{\natural} = -\langle\tilde K_{\Phi}\rangle_{\natural} = -\frac{(2\pi)^{2} N}{h^{2}} .
 $$
 
 The sign bookkeeping is the whole of that line. The two factors of $i$ multiply to $-1$ and the norm is $N$, so the product of the two symbols is the mass-shell scalar itself. Either order gives the same product, because the norm of an element is central: the sign with which the momentum is contracted is a labelling convention and not something the square can see.
@@ -82,9 +82,9 @@ i\tilde K_{\Phi}\,\mathcal S_R - k_m\mathcal S_L = i,
 i\tilde K_{\Phi}^{\natural}\,\mathcal S_L - k_m\mathcal S_R = i .
 $$
 
-Each line is verified in one step: $i\tilde K_{\Phi}(\tilde K_{\Phi}^{\natural}-ik_m) = i\langle\tilde K_{\Phi}\rangle_{\natural}+k_m\tilde K_{\Phi}$ and $k_m(\tilde K_{\Phi}-ik_m)=k_m\tilde K_{\Phi}-ik_m^{2}$, so the difference is $i(\langle\tilde K_{\Phi}\rangle_{\natural}+k_m^{2})$ over the same denominator, which is $i$. The form written is $\hbar$ times the momentum-space expression $(\tilde P_{\Phi}-imc)/(N+m^{2}c^{2})$, since $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$ and $N+m^{2}c^{2}=\hbar^{2}(k_m^{2}+\langle\tilde K_{\Phi}\rangle_{\natural})$: the two differ by the constant $\hbar$ of the wave-number normalisation and by nothing else, and they have the same pole.
+Each line is verified in one step: $i\tilde K_{\Phi}(\tilde K_{\Phi}^{\natural}-ik_m) = i\langle\tilde K_{\Phi}\rangle_{\natural}+k_m\tilde K_{\Phi}$ and $k_m(\tilde K_{\Phi}-ik_m)=k_m\tilde K_{\Phi}-ik_m^{2}$, so the difference is $i(\langle\tilde K_{\Phi}\rangle_{\natural}+k_m^{2})$ over the same denominator, which is $i$. The form written is $\frac{h}{2\pi}$ times the momentum-space expression $(\tilde P_{\Phi}-imc)/(N+m^{2}c^{2})$, since $\tilde K_{\Phi}=\frac{2\pi \tilde P_{\Phi}}{h}$ and $N+m^{2}c^{2}=\frac{h^{2}}{4\pi^{2}}(k_m^{2}+\langle\tilde K_{\Phi}\rangle_{\natural})$: the two differ by the constant $\frac{h}{2\pi}$ of the wave-number normalisation and by nothing else, and they have the same pole.
 
-Two factors of $i$ do different work and neither is redundant. The $i$ of the numerator is the normalisation of the Green's function, fixed by the right-hand side. The $i$ inside each symbol fixes the sign of the squared operator: the symbols are $i\tilde K_{\Phi}$ and $i\tilde K_{\Phi}^{\natural}$, their product is $-\langle\tilde K_{\Phi}\rangle_{\natural}=-N/\hbar^{2}$, and without the two factors of $i$ the product would be the norm $\langle\tilde K_{\Phi}\rangle_{\natural}=N/\hbar^{2}$ and the denominator would have the wrong sign.
+Two factors of $i$ do different work and neither is redundant. The $i$ of the numerator is the normalisation of the Green's function, fixed by the right-hand side. The $i$ inside each symbol fixes the sign of the squared operator: the symbols are $i\tilde K_{\Phi}$ and $i\tilde K_{\Phi}^{\natural}$, their product is $-\langle\tilde K_{\Phi}\rangle_{\natural}=-N/\frac{h^{2}}{4\pi^{2}}$, and without the two factors of $i$ the product would be the norm $\langle\tilde K_{\Phi}\rangle_{\natural}=N/\frac{h^{2}}{4\pi^{2}}$ and the denominator would have the wrong sign.
 
 The propagator satisfies
 
@@ -94,7 +94,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\mathcal S_L-k_m\mathcal S_R=i\,\delta^{(4)}\!\left(\tilde R_\Phi-\tilde R_{\Phi,2}\right),
 $$
 
-the two lines with a source of unit strength. Each term carries the dimension of a wave number, the gradients and $k_m$ alike, so the two terms of a line add without a dimensional mismatch; the $\delta^{(4)}$ is the four-dimensional delta of the material four-position measured in metres, and the Fourier measure $d^4p/(2\pi\hbar)^4$ of the display below is its matching transform, so the powers close on both sides. The powers, written out once: $\mathcal G_F$ carries $L^{-2}$, the bracket $\tilde\nabla_\Phi+k_m$ carries $L^{-1}$, so $\mathcal S_L$ and $\mathcal S_R$ carry $L^{-3}$, and a second application of the bracket carries $L^{-4}$, the dimension of the $\delta^{(4)}$ on the right-hand side. Each line composed with the conjugate of the other is scalar,
+the two lines with a source of unit strength. Each term carries the dimension of a wave number, the gradients and $k_m$ alike, so the two terms of a line add without a dimensional mismatch; the $\delta^{(4)}$ is the four-dimensional delta of the material four-position measured in metres, and the Fourier measure $d^4p/h^{4}$ of the display below is its matching transform, so the powers close on both sides. The powers, written out once: $\mathcal G_F$ carries $L^{-2}$, the bracket $\tilde\nabla_\Phi+k_m$ carries $L^{-1}$, so $\mathcal S_L$ and $\mathcal S_R$ carry $L^{-3}$, and a second application of the bracket carries $L^{-4}$, the dimension of the $\delta^{(4)}$ on the right-hand side. Each line composed with the conjugate of the other is scalar,
 
 $$
 (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\mathcal S_R = \Box_\Phi\,\mathcal S_R,
@@ -102,21 +102,21 @@ $$
 \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\mathcal S_L = \Box_\Phi\,\mathcal S_L,
 $$
 
-the composition of two left multiplications by the two gradients, whose product is central (*Operator and Calculus Conventions*, §*The Gradient*). In symbols that is the identity $i\tilde K_{\Phi}\,i\tilde K_{\Phi}^{\natural} = -N/\hbar^{2}$; the operator is $\Box_\Phi=\sum_\mu\partial^2/\partial R_\mu^2$, and on the material reading, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, it is $\Delta_\Phi - \partial^2/\partial x_0^2$, with $\Delta_\Phi$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.
+the composition of two left multiplications by the two gradients, whose product is central (*Operator and Calculus Conventions*, §*The Gradient*). In symbols that is the identity $i\tilde K_{\Phi}\,i\tilde K_{\Phi}^{\natural} = -N/\frac{h^{2}}{4\pi^{2}}$; the operator is $\Box_\Phi=\sum_\mu\partial^2/\partial R_\mu^2$, and on the material reading, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, it is $\Delta_\Phi - \partial^2/\partial x_0^2$, with $\Delta_\Phi$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.
 
 This is standard relativistic quantum physics (see the Further Reading); the companion article *The Feynman Propagator in Biquaternionic Form* treats the same object in the biquaternion framework. Two structural facts are needed here.
 
 The propagator is the scalar kernel acted on by the first-order operator. Write
 
 $$
-\mathcal{G}_F(x-x_2) = \int\frac{d^4p}{(2\pi\hbar)^4}\,
--\frac{i\,\hbar^{2}}{N + m^{2}c^{2} - i\epsilon}\,
-\exp(-i(p\cdot(x-x_2))/\hbar),
+\mathcal{G}_F(x-x_2) = \int\frac{d^4p}{h^{4}}\,
+-\frac{i\,h^{2}}{(2\pi)^{2} N + m^{2}c^{2} - i\epsilon}\,
+\exp(-i(p\cdot(x-x_2))\frac{2\pi}{h}),
 \qquad
 \left(\Box_\Phi - k_m^{2}\right)\mathcal{G}_F = i\,\delta^{(4)},
 $$
 
-for the scalar (Klein–Gordon) Feynman propagator, the spin-$0$ object of the companion subcategory. It carries the same $i$ as $\mathcal S$, so the two kernels have one and the same Green's-function normalisation and differ by the first-order operator alone. Since $\Box_\Phi$ acts on the exponential as multiplication by $-N/\hbar^2$, the difference is exactly that operator, and formally
+for the scalar (Klein–Gordon) Feynman propagator, the spin-$0$ object of the companion subcategory. It carries the same $i$ as $\mathcal S$, so the two kernels have one and the same Green's-function normalisation and differ by the first-order operator alone. Since $\Box_\Phi$ acts on the exponential as multiplication by $-N/\frac{h^{2}}{4\pi^{2}}$, the difference is exactly that operator, and formally
 
 $$
 \boxed{\;\mathcal S_L = \left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F,
@@ -138,17 +138,17 @@ The propagator is not one path integral with one phase. The worldline proper-tim
 
 $$
 \frac{-i}{N + m^{2}c^{2} - i\epsilon}
-= \int_0^\infty dT\,\exp\left(iT\left(-\bigl(N + m^{2}c^{2}\bigr) + i\epsilon\right)/\hbar\right),
+= \int_0^\infty dT\,\exp\left(iT\left(-\bigl(N + m^{2}c^{2}\bigr) + i\epsilon\right)\frac{2\pi}{h}\right),
 $$
 
-the scalar propagator is the integral over a proper time $T$ of a kernel $\langle x_2|\exp(i\hbar T(\Box_\Phi - k_m^{2}))|x\rangle$, and that kernel is a sum over worldlines,
+the scalar propagator is the integral over a proper time $T$ of a kernel $\langle x_2|\exp(i \frac{h}{2\pi} T(\Box_\Phi - k_m^{2}))|x\rangle$, and that kernel is a sum over worldlines,
 
 $$
 \mathcal{G}_F(x,x_2) = \int_0^\infty dT\int_{x(0)=x}^{x(T)=x_2}\mathcal{D}x(\tau)\;
 \exp(i\theta_{\mathrm{act}}),
 \qquad
-S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - \hbar^{2}k_m^{2}\right),
-\qquad \hbar^{2}k_m^{2}=m^{2}c^{2},
+S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - \frac{h^{2}}{4\pi^{2}}k_m^{2}\right),
+\qquad  \frac{h^{2}}{4\pi^{2}}k_m^{2}=m^{2}c^{2},
 $$
 
 up to the standard normalisation of the measure and the einbein gauge choice. The tangent is read in the complex coordinate, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, so that for a straight worldline
@@ -161,9 +161,9 @@ $$
 
 **The sign in the time slot is not a convention.** $R_t=ir'_t$ gives $\dot R_t^{2}=-(\dot r'_t)^{2}$, so the time direction enters the sum with the sign opposite to the three spatial ones, and $\sum_\mu\dot R_\mu\dot R_\mu$ is minus the Lorentzian square of the tangent. The kinetic term is negative along the time direction because the temporal coordinate is the imaginary one, and that is the whole of the sign bookkeeping of the proper-time exponent.
 
-writing $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the vector part of the position, and the phase reduces to $\exp\left(-\frac{i}{\hbar}\left[\frac{(x-x_2)^2}{4T} + \hbar^{2}k_m^{2} T\right]\right)$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then $\left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F$ in the first component and $\left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\mathcal{G}_F$ in the second. The worldline is a curve in the material sector $\mathbb{B}_{\Phi}$: its tangent is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.
+writing $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the vector part of the position, and the phase reduces to $\exp\left(-\frac{2\pi i}{h}\left[\frac{(x-x_2)^2}{4T} + \frac{h^{2}}{4\pi^{2}}k_m^{2} T\right]\right)$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then $\left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F$ in the first component and $\left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\mathcal{G}_F$ in the second. The worldline is a curve in the material sector $\mathbb{B}_{\Phi}$: its tangent is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.
 
-The angle is $\theta_{\mathrm{act}}=\mathrm{Re}\,S/\hbar$: the real part of the action is taken before dividing by $\hbar$, so the angle is real.
+The angle is $\theta_{\mathrm{act}}=\frac{2\pi \mathrm{Re}\,S}{h}$: the real part of the action is taken before dividing by $\frac{h}{2\pi}$, so the angle is real.
 
 The deficiency of this representation is that the spin is nowhere to be seen until the differential operator is applied at the end. The second resolution supplies the spin directly.
 
@@ -172,26 +172,26 @@ The deficiency of this representation is that the spin is nowhere to be seen unt
 It is worth evaluating the scalar worldline kernel in the free case, because the calculation is the whole content of the proper-time method and fixes the sense in which a first-order object is a square root. The proper-time kernel is the Fourier transform
 
 $$
-\mathcal{G}_F(x,x_2) = \int_0^\infty dT\int\frac{d^4p}{(2\pi\hbar)^4}\,
-\exp\left(iT\left(-\bigl(N + m^{2}c^{2}\bigr) + i\epsilon\right)/\hbar\right)\,\exp(-i(p\cdot(x-x_2))/\hbar),
+\mathcal{G}_F(x,x_2) = \int_0^\infty dT\int\frac{d^4p}{h^{4}}\,
+\exp\left(iT\left(-\bigl(N + m^{2}c^{2}\bigr) + i\epsilon\right)\frac{2\pi}{h}\right)\,\exp(-i(p\cdot(x-x_2))\frac{2\pi}{h}),
 $$
 
 where the $i\epsilon$ prescription makes the $T$-integral converge at large $T$. The $p$-integral is a Gaussian: completing the square in each of the four components gives the standard free kernel
 
 $$
 \mathcal{G}_F(x,x_2) = \int_0^\infty dT\;\mathcal{N}(T)\;
-\exp\left(-\frac{i}{\hbar}\left[\frac{(x-x_2)^2}{4T} + \hbar^{2}k_m^{2} T\right]\right),
+\exp\left(-\frac{2\pi i}{h}\left[\frac{(x-x_2)^2}{4T} + \frac{h^{2}}{4\pi^{2}}k_m^{2} T\right]\right),
 $$
 
 with $\mathcal{N}(T)$ the standard Gaussian normalisation $\propto T^{-2}$, whose precise constant depends on the measure convention and is not needed below. Three features of this expression carry the physics.
 
-- The proper time $T$ is the Schwinger parameter, and the exponent is the classical action of a relativistic free particle, $\frac{(x-x_2)^2}{4T}$ being the kinetic term and $\hbar^{2}k_m^{2}T=m^{2}c^{2}T$ the mass term, both in units of action; the path integral over $x(\tau)$ is the statement that the exponent is extremised by a straight line, with the fluctuations around it producing the prefactor.
+- The proper time $T$ is the Schwinger parameter, and the exponent is the classical action of a relativistic free particle, $\frac{(x-x_2)^2}{4T}$ being the kinetic term and $\frac{h^{2}}{4\pi^{2}}k_m^{2}T=m^{2}c^{2}T$ the mass term, both in units of action; the path integral over $x(\tau)$ is the statement that the exponent is extremised by a straight line, with the fluctuations around it producing the prefactor.
 - The mass is a constant in the exponent. There is no spin and no algebra-valued weight: $\mathcal{G}_F$ is a scalar, and it obeys $(\Box_\Phi - k_m^{2})\mathcal{G}_F = i\delta^{(4)}$ up to the measure convention.
 - The first-order structure enters only through the differential prefactor. The Dirac propagator is obtained by applying $\left(\tilde\nabla_\Phi + k_m\right)$ to $\mathcal{G}_F$, which is why the spin is invisible until that operation is performed.
 
 The same proper-time integral is the bridge to the worldline of the next section: replacing the constant mass by a general worldline interaction, and adding the odd variables, converts this scalar kernel into the algebra-valued kernel of the pair.
 
-Two limits are read in the polar companion. At $k_m=0$ the components reduce to the two gradients applied to the massless scalar kernel, $\mathcal S_L\propto\tilde R_\Phi\langle\tilde R_\Phi\rangle_{\natural}^{-2}$ and $\mathcal S_R\propto\tilde R_\Phi^{\natural}\langle\tilde R_\Phi\rangle_{\natural}^{-2}$, whose singular support is the light cone $\langle\tilde R_\Phi\rangle_{\natural}=0$. For small $\hbar$ the worldline integral is the van Vleck determinant times the phase $e^{iS_{\mathrm{cl}}/\hbar}$ times the spin transport, and *The Path Integral and the Dirac Equation in Biquaternionic Polar Variables* reads those three factors as the scale, the angle and the rotor of the kernel's polar word. Neither limit is used below.
+Two limits are read in the polar companion. At $k_m=0$ the components reduce to the two gradients applied to the massless scalar kernel, $\mathcal S_L\propto\tilde R_\Phi\langle\tilde R_\Phi\rangle_{\natural}^{-2}$ and $\mathcal S_R\propto\tilde R_\Phi^{\natural}\langle\tilde R_\Phi\rangle_{\natural}^{-2}$, whose singular support is the light cone $\langle\tilde R_\Phi\rangle_{\natural}=0$. For small $\frac{h}{2\pi}$ the worldline integral is the van Vleck determinant times the phase $e^{\frac{2\pi iS_{\mathrm{cl}}}{h}}$ times the spin transport, and *The Path Integral and the Dirac Equation in Biquaternionic Polar Variables* reads those three factors as the scale, the angle and the rotor of the kernel's polar word. Neither limit is used below.
 
 ## The Spinning Worldline and the Spin Factor
 
@@ -354,13 +354,13 @@ It is worth stating what the square does not do in this setting. It does not rem
 The worldline integrals above are written with a proper-time parameter $T$ that has already been gauge-fixed, and the fixing is worth stating because it is the reason the four-dimensional propagator carries a proper-time integral at all. A relativistic worldline is reparametrisation invariant: the action
 
 $$
-S[x,e] = \int_0^1 d\tau\left[\frac{1}{4e(\tau)}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - \hbar^{2}e(\tau)\,k_m^{2}\right]
+S[x,e] = \int_0^1 d\tau\left[\frac{1}{4e(\tau)}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - \frac{h^{2}}{4\pi^{2}}e(\tau)\,k_m^{2}\right]
 $$
 
 depends on the worldline only through its image, the auxiliary field $e(\tau)$ (the einbein) transforming as a density; the parameter $\tau$ has no physical meaning. In the path integral one does not fix $e$ but integrates over it, and the integral over the constant modes of $e$ is precisely the proper-time integral: writing $e(\tau) = T$ for the constant mode, the other modes can be gauged to zero and divide out the volume of the reparametrisation group, and the action becomes
 
 $$
-S = \frac{1}{4T}\int_0^1 \sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau}\,d\tau - \hbar^{2}k_m^{2} T ,
+S = \frac{1}{4T}\int_0^1 \sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau}\,d\tau - \frac{h^{2}}{4\pi^{2}}k_m^{2} T ,
 $$
 
 which is the proper-time exponent of the previous sections, with $T$ identified as the total proper time. The fluctuations of the material trajectory about the straight line — equivalently, in the Fourier form used above, the four-dimensional Gaussian integral over $p$ — produce the $T^{-2}$ prefactor $\mathcal{N}(T)$ of the free kernel.
@@ -489,7 +489,7 @@ In the biquaternion framework, a single odd variable is not an element of the al
 | $\tilde{P}_{\Phi} = ip_0e_t+\vec p$ | Four-momentum element, $\langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = N$ |
 | $N = -p_0^{2}+p_1^{2}+p_2^{2}+p_3^{2}$ | Mass-shell scalar of the momentum, with $p_0 = E/c$ |
 | $i\tilde{P}_{\Phi}$, $i\tilde{P}_{\Phi}^{\natural}$ | Symbols of $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ on a plane wave |
-| $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the mass parameter |
+| $1/k_m$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $k_m=\frac{2\pi mc}{h}$ is the mass parameter |
 | $\tilde{Ξ}$, $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The field and its two parts, one per letter of the pair |
 | $\mathcal S_L$, $\mathcal S_R$ | Dirac propagator and its two components, the two lines with a source |
 | $\mathcal{G}_F(x-x_2)$ | Scalar (Klein–Gordon) Feynman propagator, $\left(\Box_\Phi-k_m^{2}\right)\mathcal{G}_F = i\delta^{(4)}$ |

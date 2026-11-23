@@ -9,10 +9,10 @@ The equation. The coupled Proca equation is
 $$
 \tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^{2}\tilde A,
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi,
 $$
 
-with the field strength built from the *covariant* gradients, $\tilde F=\frac12((\tilde\nabla_\Phi)^{\natural}_{\mathrm{gco}}\tilde A-\tilde\nabla_{\mathrm{gco},\Phi}\tilde A)_{V}$. The field strength therefore carries a term bilinear in the potential, $\frac{iϙ}{\hbar}\mathrm{Vect}(\tilde A_\Phi^{\natural}\tilde A)$, and the equation is nonlinear in the field in a way the free one was not. The word is the four-factor decomposition
+with the field strength built from the *covariant* gradients, $\tilde F=\frac12((\tilde\nabla_\Phi)^{\natural}_{\mathrm{gco}}\tilde A-\tilde\nabla_{\mathrm{gco},\Phi}\tilde A)_{V}$. The field strength therefore carries a term bilinear in the potential, $\frac{2\pi iϙ}{h}\mathrm{Vect}(\tilde A_\Phi^{\natural}\tilde A)$, and the equation is nonlinear in the field in a way the free one was not. The word is the four-factor decomposition
 
 $$
 \tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
@@ -33,8 +33,8 @@ $$
 \mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)=0
 \qquad\Longrightarrow\qquad
 \mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)
-=-\frac{iϙ}{\hbar}\langle\tilde A\rangle_\natural
-=-\frac{iϙ}{\hbar}\,\varrho^{2}e^{2i\theta_{\mathrm{pha}}} .
+=-\frac{2\pi iϙ}{h}\langle\tilde A\rangle_\natural
+=-\frac{2\pi iϙ}{h}\,\varrho^{2}e^{2i\theta_{\mathrm{pha}}} .
 $$
 
 The free article's incompressibility is the $ϙ=0$ case, and it was the mass's gift. With the coupling the expansion is the amplitude.
@@ -43,7 +43,7 @@ What is not here. No new solution and no new particle. The article's subject is 
 
 Position in the block. This article is the charged companion of [The Spin-One Fluid](the-spin-one-fluid.html). Its siblings are [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-Half Fluid](the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html), and §*The Three Charged Fluids* compares the three.
 
-Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The material sector is $\mathbb{B}_\Phi=\{i a'_t e_t+\vec A\}$ with $a'_t$ and $\vec A$ real, and the connection is $\tilde A_\Phi\in\mathbb{B}_\Phi$. The coupling is $ϙ$, $k_m=mc/\hbar$, and $\langle\tilde A\rangle_\natural:=\tilde A\tilde A^{\natural}$ is the natural norm, a central complex number. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
+Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The material sector is $\mathbb{B}_\Phi=\{i a'_t e_t+\vec A\}$ with $a'_t$ and $\vec A$ real, and the connection is $\tilde A_\Phi\in\mathbb{B}_\Phi$. The coupling is $ϙ$, $k_m=\frac{2\pi mc}{h}$, and $\langle\tilde A\rangle_\natural:=\tilde A\tilde A^{\natural}$ is the natural norm, a central complex number. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
 
 ## The Word and the Two Restorations
 
@@ -132,7 +132,7 @@ The identity. The natural divergence of the covariant derivative differs from th
 $$
 \mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}_{\mathrm{gco}}\tilde A\bigr)
 =\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)
-+\frac{iϙ}{\hbar}\sum_\mu A_\mu^{2},
++\frac{2\pi iϙ}{h}\sum_\mu A_\mu^{2},
 $$
 
 and for a four-vector element the sum of the squares is the natural norm,
@@ -149,18 +149,18 @@ The consequence on the constraint surface. The scalar part of the coupled equati
 
 $$
 \mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)
-=-\frac{iϙ}{\hbar}\,\tilde A\tilde A^{\natural}
-=-\frac{iϙ}{\hbar}\,\varrho^{2}e^{2i\theta_{\mathrm{pha}}} .
+=-\frac{2\pi iϙ}{h}\,\tilde A\tilde A^{\natural}
+=-\frac{2\pi iϙ}{h}\,\varrho^{2}e^{2i\theta_{\mathrm{pha}}} .
 $$
 
-The display is the article's headline. The ordinary divergence of the potential — which the free article set to zero and read as the continuity of the current — is now the field's own natural norm, times $iϙ/\hbar$. **It is not a continuity equation and it is not zero: the fluid's expansion is its amplitude.**
+The display is the article's headline. The ordinary divergence of the potential — which the free article set to zero and read as the continuity of the current — is now the field's own natural norm, times $\frac{2\pi iϙ}{h}$. **It is not a continuity equation and it is not zero: the fluid's expansion is its amplitude.**
 
 Two real statements, and neither is the free one. Writing $\theta_{\mathrm{pha}}$ out,
 
 $$
-\mathrm{Re}\,\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)=+\frac{ϙ}{\hbar}\varrho^{2}\sin 2\theta_{\mathrm{pha}},
+\mathrm{Re}\,\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)=+\frac{2\pi ϙ}{h}\varrho^{2}\sin 2\theta_{\mathrm{pha}},
 \qquad
-\mathrm{Im}\,\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)=-\frac{ϙ}{\hbar}\varrho^{2}\cos 2\theta_{\mathrm{pha}},
+\mathrm{Im}\,\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)=-\frac{2\pi ϙ}{h}\varrho^{2}\cos 2\theta_{\mathrm{pha}},
 $$
 
 so the two real combinations of the divergence are a sine and a cosine of twice the phase, weighted by the scale squared. The free case is $\theta_{\mathrm{pha}}\in\{0,\pi\}$ and $ϙ=0$, where both vanish; either condition alone is enough, which is why the free identification looked robust and was not.
@@ -193,7 +193,7 @@ The plane wave is where the free article measured the split, and its numbers are
 
 The three fluids' rows in the block's table become a comparison of what each one's stress can say. The scalar fluid's stress has the quantum potential and no equation of state. The spin-half fluid's stress has the antisymmetric part and no equation of state. The vector fluid's stress is stiff on the sector where the field strength vanishes, and the free article says so. The charged version of the vector fluid keeps that sector, keeps the stiffness on it, and loses the identification of the sector's density — which is the smallest possible change, and the article reports it as such.
 
-What the coupling does add is the self-interaction term in the field strength. The covariant field strength carries $\frac{iϙ}{\hbar}\mathrm{Vect}(\tilde A_\Phi^{\natural}\tilde A)$, so the field-strength part of the stress is no longer purely the gradient of the potential's own tensor: it contains a term quadratic in the potential and independent of its derivatives. That term is present even where the derivatives vanish, and it is the chart's version of the statement that a charged vector field's stress sees its own charge density. No number is quoted for it here because the parent does not compute it and this article does not either.
+What the coupling does add is the self-interaction term in the field strength. The covariant field strength carries $\frac{2\pi iϙ}{h}\mathrm{Vect}(\tilde A_\Phi^{\natural}\tilde A)$, so the field-strength part of the stress is no longer purely the gradient of the potential's own tensor: it contains a term quadratic in the potential and independent of its derivatives. That term is present even where the derivatives vanish, and it is the chart's version of the statement that a charged vector field's stress sees its own charge density. No number is quoted for it here because the parent does not compute it and this article does not either.
 
 ## The Massless Limit
 
@@ -218,7 +218,7 @@ Twelve statements, each one line, and each with its reason. This is what the cha
 5. The scale is the amplitude and not the density. The velocity and the vorticity are independent of $\varrho$ and the stress is quadratic in it, and $\varrho$ is fixed by a normalisation convention only.
 6. The domain is $\varrho=0$ and nothing else. The free fluid's lightlike wall is gone, and the failure of the chart is a codimension-two set rather than a hypersurface.
 7. The covariant Lorenz condition is forced and blind to the frame. The scalar part of the equation is the condition, and it is a relation among the scale and phase brackets, the connection's temporal slot and the modulus.
-8. The ordinary divergence is the amplitude. $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)=-\frac{iϙ}{\hbar}\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$, with real part $\frac{ϙ}{\hbar}\varrho^{2}\sin2\theta_{\mathrm{pha}}$ and imaginary part $-\frac{ϙ}{\hbar}\varrho^{2}\cos2\theta_{\mathrm{pha}}$.
+8. The ordinary divergence is the amplitude. $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)=-\frac{2\pi iϙ}{h}\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$, with real part $\frac{2\pi ϙ}{h}\varrho^{2}\sin2\theta_{\mathrm{pha}}$ and imaginary part $-\frac{2\pi ϙ}{h}\varrho^{2}\cos2\theta_{\mathrm{pha}}$.
 9. The charged vector fluid is compressible. The free article's incompressibility is the $ϙ=0$ case, and it was the mass's gift through the Lorenz condition.
 10. The stiff equation of state survives as a formula. $\epsilon=p=\frac12m^{2}\varrho^{2}$ on the sector where the field strength vanishes, and it dies as a constitutive law because $\varrho$ is a coordinate and not an invariant.
 11. The field's own stress is in the fluid's stress. The field strength is dynamical and its part of the stress is present, which is the opposite of the two companion articles, where the gauge field's stress is external.
@@ -236,7 +236,7 @@ The three relativistic charged articles can be put side by side, and the table i
 | is it an invertible element? | only where the quantum potential vanishes | always, $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ | its boost is; the element is not a four-vector |
 | the vorticity | the field strength, $ϙF/m$ | the frame's gradient, and not $ϙF/m$ | not established; the free case's is $F$ minus a radial term |
 | the vorticity's rank | $0$, $2$ or $4$ | $2$ for the proper part | the free case's is $2$ |
-| the loop invariant | $2\pi\hbar n/m+ϙ\Phi_B/m$ | a Lorentz transformation times a phase | for $ϙ=0$ an integer; for $ϙ\ne0$, not known |
+| the loop invariant | $h n/m+ϙ\Phi_B/m$ | a Lorentz transformation times a phase | for $ϙ=0$ an integer; for $ϙ\ne0$, not known |
 | the force | the Lorentz force, plus a quantum potential | the Lorentz force, and no torque | the covariant divergence, self-acting |
 | the stress | the quantum potential is in it; no EOS | the antisymmetric part is in it; no EOS | its own field strength is in it; stiff on $F=0$ |
 | the degenerate set | $\varrho=0$, codimension two | $\varrho=0$, codimension two | $\varrho=0$; the free case's lightlike wall is gone |
@@ -268,7 +268,7 @@ What the correspondence supports and what it does not. It supports the claim tha
 
 ## What Is Established and What Is Interpretation
 
-Established. The word's eight parameters and the real slice. The two invariants: $\tilde A\tilde A^{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ exactly, checked to machine precision, and the parent's numbers for $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$. The three-current split, with the charge current vanishing on the real slice. The identity $\sum_\mu A_\mu^{2}=\tilde A\tilde A^{\natural}$, checked symbolically in all sixteen products and against random draws of the eight parameters. The divergence statement $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)=-\frac{iϙ}{\hbar}\tilde A\tilde A^{\natural}$ on the constraint surface, with its two real parts. The failure of the free incompressibility, which is that statement with $ϙ\ne0$. The survival of the stiff formula on the $F=0$ sector and its failure as a law. The massless limit's structure.
+Established. The word's eight parameters and the real slice. The two invariants: $\tilde A\tilde A^{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ exactly, checked to machine precision, and the parent's numbers for $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$. The three-current split, with the charge current vanishing on the real slice. The identity $\sum_\mu A_\mu^{2}=\tilde A\tilde A^{\natural}$, checked symbolically in all sixteen products and against random draws of the eight parameters. The divergence statement $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)=-\frac{2\pi iϙ}{h}\tilde A\tilde A^{\natural}$ on the constraint surface, with its two real parts. The failure of the free incompressibility, which is that statement with $ϙ\ne0$. The survival of the stiff formula on the $F=0$ sector and its failure as a law. The massless limit's structure.
 
 Interpretation. That $\varrho$ is an amplitude rather than a density is a reading of the homogeneity of the fluid formulas, and it is a reading and not a theorem. That the three currents "separate one object into three" is a way of describing the real slice's collapse, and the collapse itself is the fact. That the self-interaction term is what makes the vector fluid the block's richest medium is an assessment and not a result.
 
@@ -276,7 +276,7 @@ Not claimed. It is not claimed that the charged spin-one fluid has an equation o
 
 ## Summary
 
-The coupled Proca equation is $\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^{2}\tilde A$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ and $\tilde F$ built from covariant gradients, and the word is $\tilde A=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$.
+The coupled Proca equation is $\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^{2}\tilde A$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ and $\tilde F$ built from covariant gradients, and the word is $\tilde A=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$.
 
 The carrier doubles: eight parameters for eight real components, the free word is the real slice, and the rotor is a factor the free word lacked. The domain shrinks to $\varrho=0$: the free fluid's lightlike wall is gone, and the chart fails only where the field vanishes.
 
@@ -284,7 +284,7 @@ The density is not the field's norm. $\tilde A\tilde A^{\natural}=\varrho^{2}e^{
 
 There are three currents and only one is conserved: the response $m^{2}\tilde A$, the direction $\tilde A/\varrho$, and the charge bilinear, which vanishes on the real slice.
 
-The covariant Lorenz condition is forced by the scalar part and is blind to the frame; the ordinary divergence is the amplitude, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)=-\frac{iϙ}{\hbar}\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. The free article's incompressibility was the mass's gift and is the $ϙ=0$ case.
+The covariant Lorenz condition is forced by the scalar part and is blind to the frame; the ordinary divergence is the amplitude, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)=-\frac{2\pi iϙ}{h}\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. The free article's incompressibility was the mass's gift and is the $ϙ=0$ case.
 
 The stiff equation of state survives as a formula on the sector where the field strength vanishes and dies as a constitutive law, because its variable is a coordinate. The field's own stress is in the fluid's stress, and the massless limit keeps the current and loses the constraint.
 
@@ -304,7 +304,7 @@ The stiff equation of state survives as a formula on the sector where the field 
 | $\tilde A/\varrho$ | The direction; the free article's velocity |
 | $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)$ | The ordinary divergence; the amplitude on the constraint surface |
 | $ϙ$ | The coupling |
-| $k_m=mc/\hbar$ | The mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
 
 ## Further Reading
 

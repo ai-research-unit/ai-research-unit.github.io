@@ -6,7 +6,7 @@
 
 The substitution is the polar equation article's, and it is not the scalar substitution. The carrier is four-dimensional, so the eight-parameter word of $\mathbb{B}$ cannot be a bijection onto it. What survives is a two-branch word with four parameters on each branch: a scale, a rapidity, and two angles for the axis. The central angle is absent, because a real four-vector has no phase to carry one. That absence is the whole of this article, and its consequences run further than they look.
 
-*First, the weight has no chart coordinate.* The weight $\exp(iS/\hbar)e_t$ is central and $*$-unitary; the chart's coordinates are those of an anti-Hermitian element. The chart is a chart of the carrier, and the weight does not live in the carrier. So the sentence the scalar chart can say — every path has scale one — has no Proca analogue, and the Maslov phase, which lives in the centre, is invisible to this chart.
+*First, the weight has no chart coordinate.* The weight $\exp(\frac{2\pi iS}{h})e_t$ is central and $*$-unitary; the chart's coordinates are those of an anti-Hermitian element. The chart is a chart of the carrier, and the weight does not live in the carrier. So the sentence the scalar chart can say — every path has scale one — has no Proca analogue, and the Maslov phase, which lives in the centre, is invisible to this chart.
 
 *Second, the measure does not cancel and it does not have to.* The chart's volume element is $\varrho^{3}\sinh^{2}u\,\mathrm{d}\varrho\,\mathrm{d}u\,\mathrm{d}\Omega$ on the timelike branch and $\varrho^{3}\cosh^{2}u\,\mathrm{d}\varrho\,\mathrm{d}u\,\mathrm{d}\Omega$ on the spacelike one, and the mass term supplies $\varrho^{2}$ on both. The radial integral is then $\int_0^\infty \varrho^{3}\mathrm{d}\varrho\,e^{-a\varrho^{2}}=\frac{1}{2a^{2}}$, which is the power a four-component Gaussian carries. The radial power is one less than the carrier's dimension, and the mass term completes the count.
 
@@ -45,14 +45,14 @@ The branch is a label and not a coordinate. $\varepsilon$ is not varied, it is s
 The weight of one configuration is central, and the chart's coordinates are anti-Hermitian. For a configuration of the field the weight is
 
 $$
-e^{\frac{i}{\hbar}S[\tilde A_\Phi]}\,e_t ,
+e^{\frac{2\pi i}{h}S[\tilde A_\Phi]}\,e_t ,
 $$
 
-a central $*$-unitary element: scale one, angle $S/\hbar$, trivial boost, trivial rotor. The chart's coordinates describe an element of $\mathbb{B}_\Phi$, whose scalar part is a coefficient of $ie_t$ and whose vector part is real. A central element is neither anti-Hermitian nor of the imaginary-vector type; it is outside the material sector entirely.
+a central $*$-unitary element: scale one, angle $\frac{2\pi S}{h}$, trivial boost, trivial rotor. The chart's coordinates describe an element of $\mathbb{B}_\Phi$, whose scalar part is a coefficient of $ie_t$ and whose vector part is real. A central element is neither anti-Hermitian nor of the imaginary-vector type; it is outside the material sector entirely.
 
 **So the chart cannot read the weight, and the scalar chart's first sentence does not survive.** There the weight and the field value lived in the same chart, so "every configuration has scale one" was a statement inside the chart. Here the weight has a scale and an angle and the chart has neither: the chart's $\varrho$ is the magnitude of the *field value*, and the weight's modulus is one by construction. The two scales are different objects and the chart names only one of them.
 
-The consequence is that the Maslov phase is invisible. In the scalar pair the kernel's angle was the classical action over $\hbar$ plus a central constant, and the constant was the argument of the Fresnel square root — a central object, read in the central angle's slot. Here there is no central angle's slot. **The Maslov phase of the Proca kernel exists, is central, and has no chart coordinate**; the chart's only discrete data are the branch sign $\varepsilon$ and the two halves of each branch.
+The consequence is that the Maslov phase is invisible. In the scalar pair the kernel's angle was the classical action over $\frac{h}{2\pi}$ plus a central constant, and the constant was the argument of the Fresnel square root — a central object, read in the central angle's slot. Here there is no central angle's slot. **The Maslov phase of the Proca kernel exists, is central, and has no chart coordinate**; the chart's only discrete data are the branch sign $\varepsilon$ and the two halves of each branch.
 
 What the chart does say about a configuration is what the configuration is, and that is enough. The scale, the rapidity and the axis are the field's own data, and every quantity built from the field value alone is readable. The weight is not such a quantity, and the article does not pretend otherwise — this is the one place in the corpus's path-integral set where the chart and the weight are in different sectors, and it should be said plainly rather than smoothed over.
 
@@ -75,7 +75,7 @@ The four pieces sum to the Cartesian integral, and the sum was checked twice. In
 The measure does not cancel against the exponent, and the reason is the order in time. The mass term is $\mp\frac12k_m^{2}\varrho^{2}$ on the two branches, so it is a function of $\varrho^{2}$ alone, and the radial integral is
 
 $$
-\int_0^{\infty}\varrho^{3}\mathrm{d}\varrho\,e^{\mp\frac{i}{2\hbar}k_m^{2}\varrho^{2}}\ \propto\ \frac{1}{(k_m^{2})^{2}} ,
+\int_0^{\infty}\varrho^{3}\mathrm{d}\varrho\,e^{\mp\frac{i}{2\frac{h}{2\pi}}k_m^{2}\varrho^{2}}\ \propto\ \frac{1}{(k_m^{2})^{2}} ,
 $$
 
 which is the $a^{-2}$ a four-component Gaussian carries. The Jacobian's three powers and the exponent's one power of $\varrho^{2}$ together give exactly the four components' worth of Gaussian weight. In the scalar chart the opposite happened: the exponent was linear in $n=\varrho^{2}$, the Jacobian $\varrho\,\mathrm{d}\varrho=\frac12\mathrm{d}n$ cancelled it exactly, and the measure left no trace. A linear exponent cancels the Jacobian; a quadratic one is completed by it.
@@ -131,7 +131,7 @@ The element form has neither, because it has only the equation. There the diverg
 
 The classical field is readable, and it is the saddle. The saddle of the sourced integral is $\tilde A_\Phi^{\mathrm{cl}}=-P^{-1}\tilde J_\Phi$, which lies in $\mathbb{B}_\Phi$ because $P$ maps the sector into itself. Its chart is a scale, a rapidity and an axis, the branch is decided by the sign of $\langle\tilde A_\Phi^{\mathrm{cl}}\rangle_\natural$, and every statement the polar equation article makes about a solution applies to it.
 
-The kernel is not readable, and the count is the reason. The two-point function $\langle\tilde A_\Phi(x)\tilde A_\Phi(y)\rangle=i\hbar P^{-1}(x-y)$ is a bivector-valued distribution: sixteen real components at each pair of points, symmetric in the pair. A bivector is not a four-vector, so the two-branch word has nothing to act on. **The chart's carrier is four; the kernel's carrier is sixteen; the chart cannot be applied to an object that is not in its carrier.**
+The kernel is not readable, and the count is the reason. The two-point function $\langle\tilde A_\Phi(x)\tilde A_\Phi(y)\rangle=i \frac{h}{2\pi} P^{-1}(x-y)$ is a bivector-valued distribution: sixteen real components at each pair of points, symmetric in the pair. A bivector is not a four-vector, so the two-branch word has nothing to act on. **The chart's carrier is four; the kernel's carrier is sixteen; the chart cannot be applied to an object that is not in its carrier.**
 
 What can be read is the kernel's action on a fixed direction. For a fixed real unit $\hat e$ the object $P^{-1}\hat e$ is a material-sector element at each point, and the chart reads it. So the chart reads a column of the propagator and not the propagator, and the column is enough for the statements about a source that points one way — the transverse and longitudinal responses, the $1/k_m^{2}$ term and its divergence — but not for a statement about the kernel's own structure.
 
@@ -197,7 +197,7 @@ The divergence's square is a displayed term of the exponent and its saddle is th
 | $\int_0^\infty \varrho^{3}\mathrm{d}\varrho\,e^{-a\varrho^{2}}=\frac{1}{2a^{2}}$ | The radial integral; four components' worth |
 | $-\frac12S^{2}$, $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ | The displayed Lorenz term; its saddle is $S=0$ |
 | $\Gamma_\mu=\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}$ | The frame's Maurer–Cartan form |
-| $\langle\tilde A_\Phi(x)\tilde A_\Phi(y)\rangle=i\hbar P^{-1}$ | The kernel; a bivector, outside the chart |
+| $\langle\tilde A_\Phi(x)\tilde A_\Phi(y)\rangle=i \frac{h}{2\pi} P^{-1}$ | The kernel; a bivector, outside the chart |
 
 ## Further Reading
 

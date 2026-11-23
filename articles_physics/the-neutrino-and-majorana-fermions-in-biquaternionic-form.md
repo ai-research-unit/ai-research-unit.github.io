@@ -116,7 +116,7 @@ $$
 D_p=-i\sum_\mu\varepsilon_\mu\,p_\mu\,c_\mu ,
 $$
 
-Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
+Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 whose coefficients are purely imaginary, so $\overline{D_p}=-D_p$. The conjugation therefore **anticommutes with the symbol** while it commutes with the operator, and the two statements are one: the conjugate of a wave of momentum $p$ is a wave of momentum $-p$, and the symbol changes sign with the momentum. That is why the conjugate of a positive-frequency amplitude is a negative-frequency one, and it is why the space of solutions is closed under conjugation without any single mode being its own conjugate.
 
@@ -179,7 +179,7 @@ $$
 \Box_\Phi\,\tilde{Ξ}=D^{2}\tilde{Ξ}=k_mD\,\tilde{Ξ}_c=k_m^{2}\,\tilde{Ξ} ,
 $$
 
-so a plane wave of the field sits on $N=-m^{2}c^{2}$, exactly as in the Dirac case. The mass shell is the one of a massive fermion, and the Majorana restriction has removed half the degrees of freedom and nothing else. The bilinear that normalises the field is the one of the companion quantisation article, and it is nonzero for $m>0$. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+so a plane wave of the field sits on $N=-m^{2}c^{2}$, exactly as in the Dirac case. The mass shell is the one of a massive fermion, and the Majorana restriction has removed half the degrees of freedom and nothing else. The bilinear that normalises the field is the one of the companion quantisation article, and it is nonzero for $m>0$. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 **No single mode is self-conjugate.** At fixed momentum the equation reads $D_p u=m\,\mathcal{C}u$, and $\mathcal{C}$ anticommutes with $D_p$, so it carries the kernel of $D_p-m$ to the kernel of $D_p+m$. A solution of definite frequency therefore has a conjugate of the opposite frequency, and no one mode is its own conjugate. The self-conjugate field is a pair of opposite frequencies, one amplitude at $p$ and its conjugate at $-p$, and each amplitude solves its own equation. That is the standard statement that the charge conjugate of a positive-frequency amplitude is a negative-frequency one, and it is why the condition does not quantise the theory into nothing.
 

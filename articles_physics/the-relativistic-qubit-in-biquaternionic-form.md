@@ -265,7 +265,7 @@ The frame dependence of everything that follows enters through the momentum argu
 
 **Observables.** The observables of the qubit are the Hermitian elements $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$, with the spin operators
 $$
-\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}\,i \vec e_\eta , \qquad [\tilde{S}_{\Psi,j},\tilde{S}_{\Psi,\eta}] =i\,\hbar\,\epsilon_{j\eta l}\,\tilde{S}_{\Psi,l},
+\tilde{S}_{\Psi,\eta} =\frac{h}{4\pi}\,i \vec e_\eta , \qquad [\tilde{S}_{\Psi,j},\tilde{S}_{\Psi,\eta}] =i\,\frac{h}{2\pi}\,\epsilon_{j\eta l}\,\tilde{S}_{\Psi,l},
 $$
 and the Born pairing $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$. The four-momentum is the material element $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}\in\mathbb{B}_{\Phi}$, with $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$; it is not an observable but the frame datum that labels which little-group qubit is in question.
 
@@ -314,7 +314,7 @@ which fixes the rest four-velocity, is a unit real quaternion, and acts on the B
 | $\mathrm{Little}(\tilde{V}_{\Phi})$ | Stabilizer of $\tilde{V}_{\Phi}$: $\mathrm{U}(2)$ massive, $E(2)$ massless |
 | $\tilde U_{\mathrm{lor},\tilde{V}_{\Phi}}$ | Standard boost carrying $\tilde{V}_{\Phi}$ to rest |
 | $\tilde U_{\mathrm{Wig}}(\tilde U_{\mathrm{lor}},\tilde{V}_{\Phi}) = \tilde U_{\mathrm{lor},\tilde{V}_{\Phi,2}}\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor},\tilde{V}_{\Phi}}{}^{-1}$ | Wigner rotation, $\in SU(2)$ |
-| $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$ | Spin operators |
+| $\tilde{S}_{\Psi,\eta} =\frac{h}{4\pi}i\vec e_\eta$ | Spin operators |
 | $\tfrac12\vec e_\eta\in\mathbb{B}_{\Phi}^{0}$ | Rotation generators (pure elements, material, compact) |
 | $\tfrac12 i\vec e_\eta\in\mathbb{B}_{\Psi}^{0}$ | Boost generators (pure elements, informational) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |

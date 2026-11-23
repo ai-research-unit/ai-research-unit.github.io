@@ -28,7 +28,7 @@ Four findings.
 
 What the article does not do. It does not produce a second integral, does not evaluate the coupled kernel, and does not decide the gauge-fixing question for a dynamical connection. It reads the enlarged integral and says what the enlargement is.
 
-Conventions. The algebra, the word, the sectors and the pairing are the polar equation article's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling is $ϙ$, and the covariant gradient is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The Proca potential is $\tilde A$; the connection is $\tilde A_\Phi$. The Hermitian factor is $H=\varrho\tilde U_{\Psi,\mathrm b}$ with $\tilde U_{\Psi,\mathrm b}=\cosh u+i\sinh u\,\hat u_{\mathrm b}$, and the unitary factor is $\Omega=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$. The word is the polar decomposition $\tilde A=H\Omega$ and it is a bijection onto the N-regular set, not onto the whole algebra; the equation article's domain statements apply and are not repeated.
+Conventions. The algebra, the word, the sectors and the pairing are the polar equation article's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling is $ϙ$, and the covariant gradient is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$. The Proca potential is $\tilde A$; the connection is $\tilde A_\Phi$. The Hermitian factor is $H=\varrho\tilde U_{\Psi,\mathrm b}$ with $\tilde U_{\Psi,\mathrm b}=\cosh u+i\sinh u\,\hat u_{\mathrm b}$, and the unitary factor is $\Omega=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$. The word is the polar decomposition $\tilde A=H\Omega$ and it is a bijection onto the N-regular set, not onto the whole algebra; the equation article's domain statements apply and are not repeated.
 
 ## The Word of the Enlarged Carrier
 
@@ -86,9 +86,9 @@ The measure's flatness survives the enlargement, and that is why the gauge trans
 
 **The phase's circle is the charge's coordinate, and the free chart's missing angle is the free field's reality.** The free carrier has $\Omega=i$: a fixed unitary element and not a variable. So the free field's "no phase" is the statement that the unitary factor is frozen, and the coupled field's charge is the statement that it is free. One coordinate, one charge, and the chart names it.
 
-The gauge transformation is a shift of that coordinate by a function of the point. $\tilde A\mapsto e^{iϙ\Gamma/\hbar}\tilde A$ multiplies the unitary factor on the left by a central phase, so $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$ and nothing else changes. The scale, the rapidity and the rotor are untouched, which is the chart's version of the statement that the gauge group acts on the phase alone.
+The gauge transformation is a shift of that coordinate by a function of the point. $\tilde A\mapsto e^{\frac{2\pi iϙ\Gamma}{h}}\tilde A$ multiplies the unitary factor on the left by a central phase, so $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Gamma}{h}$ and nothing else changes. The scale, the rapidity and the rotor are untouched, which is the chart's version of the statement that the gauge group acts on the phase alone.
 
-The mass term is invariant under the shift in the modulus and not in the argument. $\langle\tilde A\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ rotates by $e^{2iϙ\Gamma/\hbar}$ under the transformation, so its modulus is invariant and its argument is not. The invariant length is the modulus, and this is why the coupled action's mass term is the real pairing and not the biquaternionic norm. The chart shows both faces of one fact.
+The mass term is invariant under the shift in the modulus and not in the argument. $\langle\tilde A\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ rotates by $e^{\frac{2\pi 2iϙ\Gamma}{h}}$ under the transformation, so its modulus is invariant and its argument is not. The invariant length is the modulus, and this is why the coupled action's mass term is the real pairing and not the biquaternionic norm. The chart shows both faces of one fact.
 
 The current is the response to the connection and it is conserved by the measure's flatness. The exponent's derivative with respect to the connection's scalar part is the density, and its derivative with respect to the vector part is the current; the current's conservation follows from the invariance of the measure and does not need the equation of motion. The chart's contribution is that the invariance is a coordinate shift, so the conservation is exact at every step of any regulator.
 
@@ -161,7 +161,7 @@ The constraint's square is displayed, its saddle is the covariant Lorenz conditi
 | $\varrho^{7}$ | The coupled chart's radial power |
 | $\varrho^{3}$ | The free chart's radial power |
 | $\int_0^\infty \varrho^{7}\mathrm{d}\varrho\,e^{-a\varrho^{2}}=3/a^{4}$ | Eight components' worth of Gaussian weight |
-| $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$ | The gauge transformation as a coordinate shift |
+| $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Gamma}{h}$ | The gauge transformation as a coordinate shift |
 | $S_{\mathrm{gco}}=\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | The displayed constraint; its saddle is the covariant condition |
 | $-k_m^{2}$ | The ghost; a momentum-space eigenvalue the chart does not see |
 

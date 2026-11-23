@@ -12,14 +12,14 @@ This is the charged companion of [The Fourier Transform and the Spin-Half Fluid]
 
 ## Conventions
 
-The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $ϙ$, the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, the gauge transformation $\lambda=\exp(iϙ\Gamma/\hbar)$ with $\Gamma$ real, and
+The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $ϙ$, the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$, the gauge transformation $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ with $\Gamma$ real, and
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi ,
+\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi ,
 \qquad
 \tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2},
 \qquad
-k_m=\frac{mc}{\hbar}.
+k_m=\frac{2\pi mc}{h}.
 $$
 
 The word is $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$, $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{axr}}$ the rotor's angle, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ the spin direction, and $\rho_{\mathrm{num}}=\varrho^{2}$. The symbol rule is the spin-half fluid Fourier companion's.
@@ -45,10 +45,10 @@ $$
 \tilde u_{\mathrm r}\ \text{is not in the display at all}.
 $$
 
-The covariant derivative is a derivative plus $\frac{iϙ}{\hbar}\tilde A_\Phi$, so at a constant connection a plane wave remains a plane wave with
+The covariant derivative is a derivative plus $\frac{2\pi iϙ}{h}\tilde A_\Phi$, so at a constant connection a plane wave remains a plane wave with
 
 $$
-\tilde K_\Phi\longmapsto\tilde K_\Phi-\frac{ϙ}{\hbar}\tilde A_\Phi ,
+\tilde K_\Phi\longmapsto\tilde K_\Phi-\frac{2\pi ϙ}{h}\tilde A_\Phi ,
 $$
 
 a translation of four numbers. So the coupling's whole effect on a mode is a shift of four numbers, and the four numbers are the label's. The amplitude, the rotor and the spin direction are outside the shifted object by the counting above, and not by an argument about the connection's type.
@@ -62,15 +62,15 @@ The objection is that a general connection is not constant, so its action is a c
 The companion's loop invariant is a Lorentz transformation times a phase, and the article asks which factor a mode supplies.
 
 $$
-\mathcal H=\mathrm{P}\exp\oint\Bigl(\Gamma_\mu+\frac{iϙ}{\hbar}A_\mu\Bigr)\mathrm{d}x_\mu
+\mathcal H=\mathrm{P}\exp\oint\Bigl(\Gamma_\mu+\frac{2\pi iϙ}{h}A_\mu\Bigr)\mathrm{d}x_\mu
 =\underbrace{\mathcal H_{SL(2,\mathbb{C})}}_{\text{the frame's}}\cdot
-\underbrace{\exp\Bigl(\frac{iϙ\Phi_B}{\hbar}\Bigr)}_{\text{the phase's}} .
+\underbrace{\exp\Bigl(\frac{2\pi iϙ\Phi_B}{h}\Bigr)}_{\text{the phase's}} .
 $$
 
 At a mode the frame is constant, so $\Gamma_\mu=0$ and the first factor is the identity.
 
 $$
-\mathcal H_{\text{mode}}=\exp\Bigl(\frac{iϙ\Phi_B}{\hbar}\Bigr),
+\mathcal H_{\text{mode}}=\exp\Bigl(\frac{2\pi iϙ\Phi_B}{h}\Bigr),
 \qquad
 \mathcal H_{SL(2,\mathbb{C})}=1 .
 $$
@@ -83,7 +83,7 @@ Nothing in either factor is quantised: the phase is a real number modulo $2\pi$ 
 
 ## Both Slots Are Translations, and the Force Is Inter-Mode
 
-The temporal slot shifts $k_t'$ by $ϙa_t'/(\hbar c)$ and the spatial slots shift $\vec k_\Phi$ by $ϙ\vec A/\hbar$, and neither is a rotation, a dilation or a turn.
+The temporal slot shifts $k_t'$ by $\frac{2\pi ϙa_t'}{h\,c}$ and the spatial slots shift $\vec k_\Phi$ by $\frac{2\pi ϙ\vec A}{h}$, and neither is a rotation, a dilation or a turn.
 
 A mode's label is constant, so a mode's velocity is constant, so a mode does not accelerate.
 
@@ -107,8 +107,8 @@ At a mode the connection is constant, so $\tilde F=0$ and the companion's vortic
 
 | rung | the mode's label | what the gauge does | the invariant |
 | --- | --- | --- | --- |
-| Schrödinger | $\hbar\vec k$ | shifts it | $\vec B$ |
-| Klein–Gordon | $\hbar\tilde K_\Phi$ | shifts it | $\tilde F$ |
+| Schrödinger | $\frac{h}{2\pi}\vec k$ | shifts it | $\vec B$ |
+| Klein–Gordon | $\frac{h}{2\pi}\tilde K_\Phi$ | shifts it | $\tilde F$ |
 | spinor | $ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ | shifts it | $\tilde F$ |
 | vector | $\varrho\,u_\mu$ with $u$ constant | shifts it and turns the chart | the coupled field strength |
 
@@ -138,7 +138,7 @@ A mode is a point of the momentum space and a constant element of the spinor car
 
 The label has room for the momentum and the frame and no room for the rotor. The gauge acts on the label and on nothing else, so at a constant connection the whole effect of the coupling on a mode is a translation of four numbers, and a translation cannot reach the rotor. That is the counting form of the companion's type argument, and it holds for every profile and not only for the constant one.
 
-The loop invariant is a Lorentz transformation times a phase. At a mode the frame is constant, so the Lorentz factor is the identity and the invariant is the phase $\exp(iϙ\Phi_B/\hbar)$ alone. The frozen-frame sector is exactly the set of modes, so the product $\mathbb{C}^{*}\times SL(2,\mathbb{C})$ is an inter-mode object with one factor on the diagonal.
+The loop invariant is a Lorentz transformation times a phase. At a mode the frame is constant, so the Lorentz factor is the identity and the invariant is the phase $\exp(\frac{2\pi iϙ\Phi_B}{h})$ alone. The frozen-frame sector is exactly the set of modes, so the product $\mathbb{C}^{*}\times SL(2,\mathbb{C})$ is an inter-mode object with one factor on the diagonal.
 
 Both slots of the connection are translations at a mode, so a mode's velocity is constant, its acceleration is zero and the Lorentz force vanishes identically. The force is inter-mode, and the phrase "the force takes the charge and the spin does not" is a dynamical statement about the label followed by a bookkeeping statement about the carrier.
 
@@ -150,16 +150,16 @@ The vorticity is $ϙF/m$ and a constant connection has no curvature, so a mode i
 |---|---|
 | $ϙ$ | The coupling |
 | $\tilde A_\Phi=i a_t'e_t+\vec A$ | The connection |
-| $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+ϙ\tilde A_\Phi/\hbar$ | The covariant label |
+| $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ\tilde A_\Phi}{h}$ | The covariant label |
 | $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ | The label as the boost |
-| $k_m=mc/\hbar$ | The mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
 | $\tilde w(\vec k_\Phi)$ | The carrier's element at a mode |
 | $\theta_{\mathrm{pwp}}=k_t'r_t'-\vec k_\Phi\cdot\vec r$ | The phase of a mode |
 | $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$ | The rapidity and the rotor's angle |
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin direction |
-| $\mathcal H=\mathcal H_{SL(2,\mathbb{C})}\exp(iϙ\Phi_B/\hbar)$ | The loop invariant |
+| $\mathcal H=\mathcal H_{SL(2,\mathbb{C})}\exp(\frac{2\pi iϙ\Phi_B}{h})$ | The loop invariant |
 | $\Phi_B$ | The flux through the loop's spanning surface |
-| $\lambda=\exp(iϙ\Gamma/\hbar)$ | The gauge element; central |
+| $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ | The gauge element; central |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
 ## Further Reading

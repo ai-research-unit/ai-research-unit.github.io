@@ -4,7 +4,7 @@
 
 The Rarita–Schwinger field is the field of spin $\tfrac32$: a vector-spinor $\tilde{Ξ}_{\mu}$, carrying one Lorentz vector index and one Dirac spinor index, subject to the constraint that its trace vanish. As a classical field equation the Rarita–Schwinger equation is the subject of the companion article *The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form*; the present article takes that equation as given and develops the **canonical quantization** of the field in the biquaternion framework: the constraint structure, the mode expansion, the anticommutators, the count of physical polarizations, and the gauge and ghost structure of the massless case.
 
-**Units.** Throughout, a four-momentum is $(p_0,\vec p)$ with $p_0=E/c$, the mass shell is $E^2=\vec p^{\,2}c^2+m^{2}\,c^{4}$, and every mass enters through the mass wave number $k_m=mc/\hbar$.
+**Units.** Throughout, a four-momentum is $(p_0,\vec p)$ with $p_0=E/c$, the mass shell is $E^2=\vec p^{\,2}c^2+m^{2}\,c^{4}$, and every mass enters through the mass wave number $k_m=\frac{2\pi mc}{h}$.
 
 The biquaternion framework is well suited to this field, because the two indices of $\tilde{Ξ}_{\mu}$ correspond to the two kinds of object the framework distinguishes. The vector index carries the **material** vector representation, which the article on integer-spin quantization identifies with the adjoint action on the vector part $V\subset\mathbb{B}_{\Phi}$; the spinor index carries the representation that the Dirac article identifies as the spin-$\tfrac12$ carrier. The Rarita–Schwinger field is therefore the tensor product of the two, and its decomposition is the framework's own:
 
@@ -62,7 +62,7 @@ $$
 \;}
 $$
 
-with $\tilde{Ξ}_{\mu}=\tilde{Ξ}_{\mu,L}+\tilde{Ξ}_{\mu,R}$. The two equations are the two values of the chirality subscript, not two independent dynamics: the first couples the gradient to the right-chiral value, the second the conjugate gradient to the left-chiral value, and the conjugation $\natural$ is what exchanges the two. This is the two-sided operator theorem of *Operator and Calculus Conventions*: a right action on $\tilde{Ξ}$ is a left action on $\tilde{Ξ}^{\natural}$, so the pair is complete as written and no second field is needed. The chirality basis operator acts by $\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$, and it anticommutes with the four frame basis operators: each basis operator therefore carries one value into the other, which is what makes the pair a two-sided form of a single equation rather than two dynamics. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+with $\tilde{Ξ}_{\mu}=\tilde{Ξ}_{\mu,L}+\tilde{Ξ}_{\mu,R}$. The two equations are the two values of the chirality subscript, not two independent dynamics: the first couples the gradient to the right-chiral value, the second the conjugate gradient to the left-chiral value, and the conjugation $\natural$ is what exchanges the two. This is the two-sided operator theorem of *Operator and Calculus Conventions*: a right action on $\tilde{Ξ}$ is a left action on $\tilde{Ξ}^{\natural}$, so the pair is complete as written and no second field is needed. The chirality basis operator acts by $\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$, and it anticommutes with the four frame basis operators: each basis operator therefore carries one value into the other, which is what makes the pair a two-sided form of a single equation rather than two dynamics. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 On the spinor module the pair is transcribed as the **basis operator equation**
 
@@ -193,14 +193,14 @@ $$
 the naive $\delta_{\mu\nu}$ replaced by the entries of the projector of the preceding section, read from its action, and it is that projector that closes the algebra on $(P\tilde{Ξ})_\mu$. The mode expansion carries four polarizations,
 
 $$
-\tilde{Ξ}_{\mu}(x) = \int\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_p}}
+\tilde{Ξ}_{\mu}(x) = \int\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_p}}
 \sum_{r=1}^{4}\left[
 a_r(\vec p)\,\zeta_{\mu,r}(p)\,\exp(-i\theta_{\mathrm{pwp}})
 + b_r^\dagger(\vec p)\,v_{\mu,r}(p)\,\exp(+i\theta_{\mathrm{pwp}})
 \right] ,
 $$
 
-Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
+Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 with $E_p=\sqrt{\vec p^2+m^2}$, $p\cdot x=E_p r'_t-\vec p\cdot\vec r$, and with the Rarita–Schwinger polarization spinors satisfying
 
@@ -223,7 +223,7 @@ The object $\Pi_{\mu\nu}$ is the **transverse** traceless projector, the on-shel
 $$
 \{a_r(\vec p),\,a_s^\dagger(\vec k_\Phi)\}
 = \{b_r(\vec p),\,b_s^\dagger(\vec k_\Phi)\}
-= (2\pi\hbar)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec p^{\,\prime}) ,
+= h^{3}\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec p^{\,\prime}) ,
 $$
 
 with all other anticommutators vanishing, and the Fock space is built by acting on the vacuum with $a_r^\dagger$ and $b_r^\dagger$. The four polarizations $r=1,\dots,4$ are the two helicities $\pm\tfrac32$ and the two helicities $\pm\tfrac12$.
@@ -239,7 +239,7 @@ The field is quantized with anticommutators, not commutators, and the reason is 
 The momentum-space propagator is the inverse of the quadratic form that the field equation and the constraint define on the traceless subspace. It is of the general form
 
 $$
-G_{\mu\nu}(p) = \frac{i}{N+\hbar^{2}k_m^{2}}\Bigl[\bigl(\mathcal{D}_p+ mc\bigr)\Pi_{\mu\nu} + \text{(lower-spin terms)}\Bigr] ,
+G_{\mu\nu}(p) = \frac{i}{N+\frac{h^{2}}{4\pi^{2}}k_m^{2}}\Bigl[\bigl(\mathcal{D}_p+ mc\bigr)\Pi_{\mu\nu} + \text{(lower-spin terms)}\Bigr] ,
 $$
 
 where the transverse projector $\Pi_{\mu\nu}$ is the one of the completeness relation and the lower-spin terms are the parts that the constraint removes; in the standard covariant form the propagator carries the gauge-fixing dependence of the massless case and a $p_\mu p_\nu$ term whose coefficient involves $1/m^2$ for the massive case. The detailed form, including the dependence on the gauge-fixing parameter and the $D$-dimensional continuation, is the standard result and is cited below; the framework's contribution is the identification of the trace part of the projector with the algebra's traceless projector and the interpretation of the lower-spin terms as the removed $\left(\tfrac12\right)$ component.
@@ -387,7 +387,7 @@ $$
 $$
 \sum_{r=1}^{4}\zeta_{\mu,r}\bar\zeta_{\nu,r}=(\gamma\cdot p+mc)\Pi_{\mu\nu},
 \qquad
-G_{\mu\nu}(p)=\frac{i}{N+\hbar^{2}k_m^{2}}\Bigl[(\gamma\cdot p+mc)\Pi_{\mu\nu}+\text{(lower-spin terms)}\Bigr].
+G_{\mu\nu}(p)=\frac{i}{N+\frac{h^{2}}{4\pi^{2}}k_m^{2}}\Bigl[(\gamma\cdot p+mc)\Pi_{\mu\nu}+\text{(lower-spin terms)}\Bigr].
 $$
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
@@ -396,7 +396,7 @@ $$
 
 The Rarita–Schwinger field is a vector-spinor $\tilde{Ξ}_{\mu}$ satisfying the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mu,R}=k_m\tilde{Ξ}_{\mu,L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mu,L}=k_m\tilde{Ξ}_{\mu,R}$ and the irreducibility constraint $\Sigma(\tilde{Ξ})=0$. On the spinor module the pair is the single equation $(\mathcal{D}-k_m)\tilde{Ξ}_{\mu}=0$, the operator $\mathcal{D}$ carrying the product $i\cdot i=-1$ of its two imaginary units. The trace of the equation, taken with one use of the anticommutation relation of the basis operators, is $\Sigma(\mathcal{D}_p\tilde{Ξ})=2p\cdot\tilde{Ξ}-\mathcal{D}_p\Sigma(\tilde{Ξ})$; with $\Sigma(\tilde{Ξ})=0$ it gives the transversality condition $p\cdot\tilde{Ξ}=0$, verified on shell with explicit frame basis operators. The constraint is imposed by the projector $(P\tilde{Ξ})_\mu=\tilde{Ξ}_{\mu}-\tfrac14\,i\,e_\mu\Sigma(\tilde{Ξ})\vec e_{\nu(\mu)}$, which is idempotent, annihilates the trace, and whose rank on the sixteen components of the vector-spinor is twelve, so that the constraint removes exactly a four-component spinor — all verified to machine precision.
 
-The gauge structure differs between the two mass regimes. For $m=0$ the field has the gauge symmetry $\tilde{Ξ}_{\mu}\mapsto\tilde{Ξ}_{\mu}+\partial/\partial x_\mu\,\epsilon$ with a spinor parameter, the constraints are first class, the trace gauge fixing requires Faddeev–Popov commuting spinor ghosts, and the physical states are the two helicities $\pm\tfrac32$. For $m\neq0$ the gauge symmetry is absent, the constraints are second class, the quantization uses the Dirac bracket, and the physical states are the four helicities $\pm\tfrac32,\pm\tfrac12$. The canonical quantization gives a fermionic mode expansion with four polarizations, anticommutators $\{a_r(\vec p),a_s^\dagger(\vec k_\Phi)\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime})$, and a completeness relation whose transverse projector is built from the same frame basis operators.
+The gauge structure differs between the two mass regimes. For $m=0$ the field has the gauge symmetry $\tilde{Ξ}_{\mu}\mapsto\tilde{Ξ}_{\mu}+\partial/\partial x_\mu\,\epsilon$ with a spinor parameter, the constraints are first class, the trace gauge fixing requires Faddeev–Popov commuting spinor ghosts, and the physical states are the two helicities $\pm\tfrac32$. For $m\neq0$ the gauge symmetry is absent, the constraints are second class, the quantization uses the Dirac bracket, and the physical states are the four helicities $\pm\tfrac32,\pm\tfrac12$. The canonical quantization gives a fermionic mode expansion with four polarizations, anticommutators $\{a_r(\vec p),a_s^\dagger(\vec k_\Phi)\}=h^{3}\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime})$, and a completeness relation whose transverse projector is built from the same frame basis operators.
 
 In the biquaternion framework the field is the tensor product of the material four-vector index — whose spatial part is the adjoint-action triplet $V$ — with the spinor carrier $S$, and the tensor product decomposes as $1\otimes\tfrac12=\tfrac32\oplus\tfrac12$ with $3\cdot2=4+2$. The trace constraint removes the $\left(\tfrac12\right)$ component, and the surviving spin-$\tfrac32$ is the field. The structure is the close analogue, one tensor factor down, of the graviton's symmetric trace-free square of the material vector: in each case a lower-spin carrier is tensored with the material vector and projected onto the top component by a projector built from the algebra's invariant form. The mass, the gauge choice, the propagator's detailed form, the odd coordinates, and any empirical content are imported; the decomposition and the projection are the framework's.
 
@@ -423,7 +423,7 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $\pi_\mu=\sum_\lambda T_{\lambda h_t\mu}(\bar{\tilde{Ξ}}_{\lambda})$, $\bar{\tilde{Ξ}}_{\lambda}:=\tilde{Ξ}_{\lambda iR,\mathrm{axf},\vec e_x}^{\dagger}$ | Canonical momentum, read as the triple applied to the Dirac adjoint; the triple is plain, so the $i$ of the adjoint is the only one |
 | $\vec r:=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Shorthand for the spatial point in the anticommutator and the delta function |
 | $\{A,B\}_D$, $C_{ab}=\{\xi_a,\xi_b\}_P$ | Dirac bracket and its constraint matrix (second-class constraints, $m\neq0$) |
-| $\{a_r(\vec p),a_s^\dagger(\vec k_\Phi)\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime})$ | Fermionic mode algebra |
+| $\{a_r(\vec p),a_s^\dagger(\vec k_\Phi)\}=h^{3}\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime})$ | Fermionic mode algebra |
 | $\zeta_{\mu,r},v_{\mu,r}$, $r=1,\dots,4$ | Polarization spinors; helicities $\pm\tfrac32,\pm\tfrac12$ |
 | $\Pi_{\mu\nu}$ | Transverse traceless (Rarita–Schwinger) projector; rank $8$, and $4$ on positive-energy solutions |
 | $\sum_r \zeta_{\mu,r}\bar\zeta_{\nu,r}=(\mathcal{D}_p+mc)\Pi_{\mu\nu}$ | Completeness relation, carried by the transverse projector |

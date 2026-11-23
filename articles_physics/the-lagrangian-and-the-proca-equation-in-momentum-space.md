@@ -231,7 +231,7 @@ The form degenerates exactly where the symbol is singular and where the propagat
 | --- | --- |
 | $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | The four-wave number; $k_t'=\omega/c$ |
 | $k^{2}=k_t'^{2}-\vec k_\Phi^{2}$ | The interval in wave numbers |
-| $k_m=mc/\hbar$ | The mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
 | $[kA]=k_t'a_t'-\vec k_\Phi\cdot\vec a$ | The Lorenz form of the amplitude; the parent's $S$ up to $-i$ |
 | $\mathcal{Q}(A)=\tfrac12\{[kA]^{2}-(k^{2}-k_m^{2})A\!\cdot\!A\}$ | The momentum-space quadratic form |
 | $\partial\mathcal{Q}/\partial A=-\eta\,\sigma A$ | The stationarity; the Proca symbol's vanishing |

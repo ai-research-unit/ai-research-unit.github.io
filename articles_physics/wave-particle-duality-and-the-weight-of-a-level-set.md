@@ -280,9 +280,9 @@ The count is the level set plus the weight, and that is where the two arms meet.
 | $\mathcal{F}[\tilde F]$ | the transform of a field, written without a mark on the field |
 | $\tilde K_{\Phi}$ | the wave-number element $i\,k_{t}^{\prime}e_t+\vec k_{\Phi}$ |
 | $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$ | its norm, $-k_{t}^{\prime\,2}+k_{\Phi}^{2}$, and $-k_m^{2}$ on shell |
-| $k_{t}^{\prime}$ | the energy wave number, $E/(\hbar c)$ |
+| $k_{t}^{\prime}$ | the energy wave number, $\frac{2\pi E}{h\,c}$ |
 | $\vec k_{\Phi}$, $k_{\Phi}$ | the momentum wave number and its modulus |
-| $k_m$ | the mass wave number, $mc/\hbar$ |
+| $k_m$ | the mass wave number, $\frac{2\pi mc}{h}$ |
 | $\kappa$ | a value of the energy wave number; a constant, not a variable |
 | $\sigma_{\mathcal{P}}$ | the second-order symbol, $k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}$ |
 | $\sigma_{\mathrm{s}}$ | the affine symbol, $k_{\mathrm{s}}-k_{\Phi}^{2}/(2k_m)$ |

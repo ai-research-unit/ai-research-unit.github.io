@@ -378,7 +378,7 @@ $$
 \bigl(\tilde\nabla_\Phi\bigr)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
 $$
 
-and the mass coefficient $k_m=mc/\hbar$ is the constant that relates the two components. The entry's statement and the equation's statement are the same statement in two notations: the operator acts inside one ideal, since it is an element and an element is a left multiplier, and the mass is the only term that ties the two ideals together. At $k_m=0$ the pair decouples into two independent equations, one for each chirality, and each is consistent on its own because the operator preserves the ideal. That is why a massless fermion can be described by a two-component field and a massive one cannot.
+and the mass coefficient $k_m=\frac{2\pi mc}{h}$ is the constant that relates the two components. The entry's statement and the equation's statement are the same statement in two notations: the operator acts inside one ideal, since it is an element and an element is a left multiplier, and the mass is the only term that ties the two ideals together. At $k_m=0$ the pair decouples into two independent equations, one for each chirality, and each is consistent on its own because the operator preserves the ideal. That is why a massless fermion can be described by a two-component field and a massive one cannot.
 
 The mass number is diagonal in the value. The mass enters as the central scalar $k_m$, and a central scalar holds both slots, so it cannot move a value. In the projectors of the chirality operator,
 
@@ -473,7 +473,7 @@ The light cone. The degenerate plane of the ideal has a physical name too. Its g
 
 **No dynamics.** Left multiplication by an element is not an equation of motion. The entry describes the carrier, the closures and the invariants; the operator that acts on a field, its square and its solutions belong to the Dirac articles. A reader who wants the propagator will not find it here, and the entry says so rather than sketching one.
 
-**No mass value.** The pairing has the shape of a mass term and no number. The coefficient $k_m=mc/\hbar$ is a parameter, the algebra gives no equation that would fix it, and the mass spectrum of the framework is not a result of the carrier theory.
+**No mass value.** The pairing has the shape of a mass term and no number. The coefficient $k_m=\frac{2\pi mc}{h}$ is a parameter, the algebra gives no equation that would fix it, and the mass spectrum of the framework is not a result of the carrier theory.
 
 **No proof of minimality from first principles.** The minimality of the ideal is proved from the structure of the algebra as a full matrix algebra, which is an established result of the corpus and not re-derived here. The dimension count does the work and the matrix-algebra input is cited.
 
@@ -518,7 +518,7 @@ The two ideals are the two spinor chiralities: they are the eigenspaces of $-iR_
 | $\gamma(\vec u)=-iR_{\vec u}$ | the chirality operator of the axis |
 | $\bar{\cdot}$, ${}^{*}$ | coefficient conjugation (automorphism) and Hermitian conjugation (antiautomorphism) |
 | $S_{\vec s}=\tfrac12(e_t+i\vec s_{\Psi})$ | a state of the informational sector, $\lvert\vec s_{\Psi}\rvert\le1$ |
-| $k_m=mc/\hbar$ | the mass coefficient of the Dirac pair |
+| $k_m=\frac{2\pi mc}{h}$ | the mass coefficient of the Dirac pair |
 | $\mathcal N$, $\mathcal S$ | the null cone and the spectral-degenerate cone |
 
 ## Further Reading

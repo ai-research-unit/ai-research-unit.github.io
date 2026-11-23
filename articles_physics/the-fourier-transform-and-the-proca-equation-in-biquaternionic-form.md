@@ -225,7 +225,7 @@ The massless limit is a failure of invertibility: $\lvert\det\sigma\rvert$ falls
 | --- | --- |
 | $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | The four-wave number; $k_t'=\omega/c$ |
 | $k^{2}=k_t'^{2}-\vec k_\Phi^{2}$ | The interval in wave numbers; the Klein–Gordon symbol |
-| $k_m=mc/\hbar$ | The mass wave number; $k_m^{2}=0.49$ at $k_m=0.7$ |
+| $k_m=\frac{2\pi mc}{h}$ | The mass wave number; $k_m^{2}=0.49$ at $k_m=0.7$ |
 | $\tilde A_\Phi=i\,a_t'e_t+\vec A$ | The potential; $(a_t',\vec a)$ its four-vector amplitude |
 | $[kA]=k_t'a_t'-\vec k_\Phi\cdot\vec a$ | The Lorenz form of the amplitude; symbol of $S$ up to $-i$ |
 | $\sigma_{\mu\nu}=(k^{2}-k_m^{2})\delta_{\mu\nu}-k_\mu k_\nu$ | The Proca symbol |

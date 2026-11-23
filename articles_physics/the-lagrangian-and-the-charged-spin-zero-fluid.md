@@ -14,19 +14,19 @@ This is the variational companion of [The Charged Spin-Zero Fluid](the-charged-s
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with the connection: $ϙ$ is the coupling, $q=-ϙ$ the electric charge; $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta$ with $a'_t=\varphi$; the covariant derivative is $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$; $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$; $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$, $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$. A gauge transformation is $S_{\tilde\Xi}\mapsto S_{\tilde\Xi}+ϙ\Gamma$ together with $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$, that is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$. The temporal slot's sign is the one that looks odd and is not: the invariant is $W_0=(\partial_{t'}S_{\tilde\Xi}+ϙ a'_t)/m$, so the scalar potential moves against the phase and not with it, where the first-order rung's bracket $\partial_{t'}S-ϙ\varphi$ carries the opposite sign on the phase and the potential moves with it. The two rungs differ in the sign of one bracket and in nothing else, and a reader moving between the two articles should expect the scalar potential to shift in opposite directions.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with the connection: $ϙ$ is the coupling, $q=-ϙ$ the electric charge; $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta$ with $a'_t=\varphi$; the covariant derivative is $\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$; $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$; $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$, $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$. A gauge transformation is $S_{\tilde\Xi}\mapsto S_{\tilde\Xi}+ϙ\Gamma$ together with $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$, that is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Gamma}{h}$. The temporal slot's sign is the one that looks odd and is not: the invariant is $W_0=(\partial_{t'}S_{\tilde\Xi}+ϙ a'_t)/m$, so the scalar potential moves against the phase and not with it, where the first-order rung's bracket $\partial_{t'}S-ϙ\varphi$ carries the opposite sign on the phase and the potential moves with it. The two rungs differ in the sign of one bracket and in nothing else, and a reader moving between the two articles should expect the scalar potential to shift in opposite directions.
 
 ## The Action in the Fluid Variables
 
 One substitution, in the four-derivative of the phase, and the action is the free one written in the new variable.
 
 $$
-\boxed{\;\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}\Bigl[\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}+c^{2}\Bigr]-\frac{\hbar^{2}}{2m}\sum_\mu(\partial_\mu \varrho)^{2},
+\boxed{\;\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}\Bigl[\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}+c^{2}\Bigr]-\frac{h^{2}}{8\pi^{2}m}\sum_\mu(\partial_\mu \varrho)^{2},
 \qquad
 V_{\Phi,\mu}=\frac{\partial_\mu S_{\tilde\Xi}-q A_\mu}{m}\;}
 $$
 
-Compare the two displays: the dust term, the coefficient $m\rho_{\mathrm{num}}/2$, the $c^{2}$, the gradient energy with its $\hbar^{2}/2m$ — every symbol is the free one. What is different is that $V$ is no longer a pure gradient, and the whole of the coupling is in that one word.
+Compare the two displays: the dust term, the coefficient $m\rho_{\mathrm{num}}/2$, the $c^{2}$, the gradient energy with its $\frac{h^{2}}{4\pi^{2}}/2m$ — every symbol is the free one. What is different is that $V$ is no longer a pure gradient, and the whole of the coupling is in that one word.
 
 The connection is a central element of $\mathbb{B}_\Phi$, so it multiplies the phase factor of the word and commutes past the amplitude. A term built from $\varrho$ and its derivatives therefore cannot contain $\tilde A_\Phi$ at all. In the action that is the second term: **the gradient energy is the unique term the coupling cannot reach, and it is the whole of the quantum sector.**
 
@@ -47,7 +47,7 @@ Varying the amplitude gives the free shell verbatim.
 $$
 \sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}=-c^{2}-\frac{2Q_{\mathrm{qnt}}}{m},
 \qquad
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}\Box_\Phi \varrho}{2m\varrho},
+Q_{\mathrm{qnt}}=-\frac{h^{2}\Box_\Phi \varrho}{8\pi^{2}m\varrho},
 $$
 
 because the variation of the gradient term is the free article's and the variation of the dust term is $-\frac{m}{2}$ times the bracket. The right-hand side is coupling-blind, and that is the action's version of the block's statement that the quantum potential is charge-blind: it carries $\varrho$ and its d'Alembertian, and the connection is not in it.
@@ -98,7 +98,7 @@ A rotational fluid written in Eulerian variables needs the pair $(\alpha_{\mathr
 
 Three objects are exactly the free ones.
 
-*The gradient energy.* $-\frac{\hbar^{2}}{2m}\sum_\mu(\partial_\mu \varrho)^{2}$, unchanged, because it carries the amplitude and the connection reaches the phase.
+*The gradient energy.* $-\frac{h^{2}}{8\pi^{2}m}\sum_\mu(\partial_\mu \varrho)^{2}$, unchanged, because it carries the amplitude and the connection reaches the phase.
 
 *The quantum potential and the quantum stress.* $Q_{\mathrm{qnt}}$ and $\sigma^{Q}_{ij}$ are functions of $\varrho$ and its derivatives, and the block's identity $\partial_j\sigma^{Q}_{j\eta}=-\rho_{\mathrm{num}}\partial_\eta Q_{\mathrm{qnt}}$ is unchanged with it.
 
@@ -144,7 +144,7 @@ The chart fails at $\varrho=0$, and here the failure is on a surface that also c
 
 ## Summary
 
-The action. $\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}[\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}+c^{2}]-\frac{\hbar^{2}}{2m}\sum_\mu(\partial_\mu \varrho)^{2}$, with $V_\mu=(\partial_\mu S-q A_\mu)/m$: the free action in a new variable.
+The action. $\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}[\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}+c^{2}]-\frac{h^{2}}{8\pi^{2}m}\sum_\mu(\partial_\mu \varrho)^{2}$, with $V_\mu=(\partial_\mu S-q A_\mu)/m$: the free action in a new variable.
 
 The variations. The phase gives $\partial_\mu(\rho_{\mathrm{num}}V_{\Phi,\mu})=0$; the amplitude gives the free shell verbatim; the gradient of the second is $\mathrm{d}\vec p^{\mathrm{mech}}/\mathrm{d}t=-ϙ(\vec E+\vec v\times\vec B)-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$.
 
@@ -161,17 +161,17 @@ What the charge changes. One variable. The gradient energy, the quantum potentia
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$ | The word; the free article's, unchanged |
 | $ϙ$ | Coupling; minus the electric charge, $q=-ϙ$ |
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection; $a'_t=\varphi$ |
-| $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ | Phase; gauge dependent |
+| $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | Phase; gauge dependent |
 | $W_\mu=(\partial_\mu S_{\tilde\Xi}-q A_\mu)/m$ | Mechanical four-velocity; the action's second argument |
 | $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$ | Mechanical momentum; $m\tilde V_\Phi$ |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | Proper density; gauge invariant |
 | $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ | Charge density; the current's temporal component over $c$ |
-| $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ | Quantum potential; coupling-blind |
-| $\mathcal E_{\mathrm{grad}}=-\frac{\hbar^{2}}{2m}\int\sum_\mu(\partial_\mu \varrho)^{2}$ | Gradient energy; coupling-blind |
+| $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | Quantum potential; coupling-blind |
+| $\mathcal E_{\mathrm{grad}}=-\frac{h^{2}}{8\pi^{2}m}\int\sum_\mu(\partial_\mu \varrho)^{2}$ | Gradient energy; coupling-blind |
 | $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ | Field strength; $m\omega=ϙ F$ |
 | $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Field strengths |
 | $\gamma=E/(mc^{2})$ | Signed Lorentz factor |
-| $k_m=mc/\hbar$ | Mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $\mathcal L_{\mathrm{fl}}$ | The Lagrangian density in the fluid variables |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 

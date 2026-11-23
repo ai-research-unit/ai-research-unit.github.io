@@ -25,7 +25,7 @@ $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
 $$
 
-two first-order equations, one per member, with massless limit $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$. The two members are the two entries of the pair, each an element of $\mathbb{B}$, and the sum is the shorthand by which the two members are written on one symbol. They are **not** the two chiral projections of one element, and the reason is a one-line count: the gradient is a left multiplication with derivative coefficients, every left multiplication commutes with every right multiplication, so $\tilde\nabla_\Phi$ preserves every eigenspace of every right multiplication; an equation between two members lying in two different eigenspaces of the same right multiplication would read $0=m\times(\text{nonzero})$. The chiral-halves reading belongs to the basis operator formulation, where a two-sided basis operator could exchange the two lines, and it is exactly what the migration costs. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+two first-order equations, one per member, with massless limit $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$. The two members are the two entries of the pair, each an element of $\mathbb{B}$, and the sum is the shorthand by which the two members are written on one symbol. They are **not** the two chiral projections of one element, and the reason is a one-line count: the gradient is a left multiplication with derivative coefficients, every left multiplication commutes with every right multiplication, so $\tilde\nabla_\Phi$ preserves every eigenspace of every right multiplication; an equation between two members lying in two different eigenspaces of the same right multiplication would read $0=m\times(\text{nonzero})$. The chiral-halves reading belongs to the basis operator formulation, where a two-sided basis operator could exchange the two lines, and it is exactly what the migration costs. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 The two lines are the dynamics, and they are written as two lines. No letter gathers the two members into one object: a single glyph cannot hold an anti-Hermitian derivative next to a Hermitian mass, its adjoint would be a single sign, its metric would be chosen silently and never written, and its square would report one scalar for two members.
 
@@ -43,7 +43,7 @@ $$
 
 so that the **chirality operator** is $\tilde{Ξ}\mapsto\tilde{Ξ}\Gamma=-i\tilde{Ξ}\vec e_z$, a right multiplication written out and not a glyph for a map. In the source's basis operator formulation the chirality was a two-sided basis operator, a product of a left and a right multiplication, and in that form it could exchange the two lines of a column. Here the left factors cancel in pairs and what remains is the single right multiplication by $\Gamma$; a single-sided multiplication cannot exchange the two entries of a pair, and that loss is the point of the migration. What survives is the sign pattern: right multiplication by $\Gamma$ is $-1$ on the eigenspace of $R_\omega$ with eigenvalue $i$ and $+1$ on the eigenspace with eigenvalue $-i$, so $\Gamma$ is the pair sign $\mathrm{diag}(-1,+1)$ read on those two eigenspaces. That sign is the internal factor the discrete operations below use, and it is the only trace of the source's basis operator that they keep.
 
-The field is one element of the algebra and not a column, and nothing is introduced to hold the two entries. Every derivative in a display below belongs to the gradient and is taken with respect to the coordinates $Q_\mu$; the $i r'_t$ normalization $Q_t=i q'_t$ is used only where it is named, and a derivative with respect to $x_\mu=(r'_t,r_x,r_y,r_z)$ is written out when it is meant. Every display carries $c$ and $k_m=m\,c/\hbar$, the mass-shell relation stated with both, and we borrow the plane-wave amplitudes and the spin sums of the solutions article unchanged.
+The field is one element of the algebra and not a column, and nothing is introduced to hold the two entries. Every derivative in a display below belongs to the gradient and is taken with respect to the coordinates $Q_\mu$; the $i r'_t$ normalization $Q_t=i q'_t$ is used only where it is named, and a derivative with respect to $x_\mu=(r'_t,r_x,r_y,r_z)$ is written out when it is meant. Every display carries $c$ and $k_m=\frac{2\pi m\,c}{h}$, the mass-shell relation stated with both, and we borrow the plane-wave amplitudes and the spin sums of the solutions article unchanged.
 
 The division between what is established and what is only transcribed is kept explicit throughout.
 
@@ -90,7 +90,7 @@ $$
 $$
 and nothing else is meant by a paired operator in this article. Each line is first order, and the second-order form is obtained by composing the two, since $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ are both the same scalar. No glyph gathers the two lines: it would carry no matrix generator and no chart, its only content would be which gradient acted on which member, and it would hide the adjoint and the metric that the two lines show.
 
-**The plane wave.** The wave numbers of the particle are $k_{t}^{\prime}=E_{\vec p}/(\hbar\,c)$, $\vec k_\Phi=\vec p/\hbar$ and $k_m=mc/\hbar$, so the phase is the pure number $k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r$. On $e^{-i\theta_{\mathrm{pwp}}}$ the gradient acts by left multiplication by its symbol
+**The plane wave.** The wave numbers of the particle are $k_{t}^{\prime}=\frac{2\pi E_{\vec p}}{h\,c}$, $\vec k_\Phi=\frac{2\pi \vec p}{h}$ and $k_m=\frac{2\pi mc}{h}$, so the phase is the pure number $k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r$. On $e^{-i\theta_{\mathrm{pwp}}}$ the gradient acts by left multiplication by its symbol
 $$
 i\tilde K_{\Phi}=-k_{t}^{\prime}\,e_t+i\vec k_\Phi,\qquad
 i\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime}\,e_t-i\vec k_\Phi,\qquad
@@ -99,7 +99,7 @@ $$
 
 the last on the mass shell. The symbol is an element of the algebra, its square is not scalar, and its quaternion norm is the mass shell. This is the amplitude used in the verification below.
 
-The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.
+The angle is $\theta_{\mathrm{pwp}}=\frac{2\pi p\cdot x}{h}=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\frac{h}{2\pi}$, so the angle is real.
 
 ### The Two Entries, the Sides, and What No Element Does
 
@@ -203,7 +203,7 @@ $$
 with
 $$
 i\tilde K_{\Phi}=-k_{t}^{\prime}\,e_t+i\vec k_\Phi,\qquad i\tilde K_{\Phi,+}=+k_{t}^{\prime}\,e_t-i\vec k_\Phi,\qquad
-k_{t}^{\prime}=\frac{E_{\vec p}}{\hbar c},\qquad k_{t}^{\prime\,2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2},
+k_{t}^{\prime}=\frac{2\pi E_{\vec p}}{h c},\qquad k_{t}^{\prime\,2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2},
 $$
 
 and $\xi,\xi_2$ arbitrary constant elements of $\mathbb{B}$, with no constraint relating the two: this is the point at which the arbitrariness matters, since the two members are independent elements and not two projections of one. The first branch is positive-frequency and the second negative-frequency; their sum is a general solution of the pair by linearity, and the second member holds because $-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=k_m^{2}$ on shell, the second branch carrying $\tilde K_{\Phi,+}=-i\tilde K_{\Phi}$ and $\tilde K_{\Phi,+}^{\natural}\tilde K_{\Phi,+}=-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=k_m^{2}$ as well. Substituting, conjugating, exchanging and reflecting as the definitions require, the residual of the two lines acting on each transform was evaluated and found to vanish to machine precision in every case. The checks were run for the three parameter sets

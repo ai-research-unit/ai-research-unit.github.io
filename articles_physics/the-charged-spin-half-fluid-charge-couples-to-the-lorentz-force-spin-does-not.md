@@ -7,9 +7,9 @@ The charge reaches the momentum and the frame's rapidity, and it cannot reach th
 The equation. The coupled Dirac equation in polar variables is the free one with covariant derivatives,
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_{\mathrm D}=\frac{i}{\hbar}k_m\tilde\Xi_{\mathrm D},
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_{\mathrm D}=\frac{2\pi i}{h}k_m\tilde\Xi_{\mathrm D},
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi,
 \qquad
 \tilde\Xi_{\mathrm D}=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r},
 $$
@@ -28,7 +28,7 @@ What is not here. No new solution, no derivation of a spin equation in a backgro
 
 Position in the block. This article is the charged companion of [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html). Its siblings are [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), and §*The Three Charged Fluids* compares the three.
 
-Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The word is $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$, $\tilde U_{\Psi,\mathrm b}$ a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$ a rotor of angle $\theta_{\mathrm{axr}}$ about its axis. The coupling is $ϙ$, the action is $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, $k_m=mc/\hbar$, and $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real. The spin direction is $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$.
+Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The word is $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$, $\tilde U_{\Psi,\mathrm b}$ a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$ a rotor of angle $\theta_{\mathrm{axr}}$ about its axis. The coupling is $ϙ$, the action is $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, $k_m=\frac{2\pi mc}{h}$, and $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real. The spin direction is $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$.
 
 ## The Two Brackets the Charge Can Reach
 
@@ -38,7 +38,7 @@ $$
 \tilde\Xi_{\mathrm D}^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi_{\mathrm D}
 =\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}
 +i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
-+\frac{iϙ}{\hbar}A_\mu
++\frac{2\pi iϙ}{h}A_\mu
 +\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu}\Bigr)\tilde u_{\mathrm r}
 +\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_\mu},
 $$
@@ -46,9 +46,9 @@ $$
 and the added term decomposes by its own slots:
 
 $$
-\frac{iϙ}{\hbar}\tilde A_\Phi
-=\underbrace{\frac{iϙ}{\hbar}A_t}_{\text{central imaginary}}
-+\underbrace{\frac{iϙ}{\hbar}\sum_\eta A_\eta\vec e_\eta}_{\text{Hermitian vector}} .
+\frac{2\pi iϙ}{h}\tilde A_\Phi
+=\underbrace{\frac{2\pi iϙ}{h}A_t}_{\text{central imaginary}}
++\underbrace{\frac{2\pi iϙ}{h}\sum_\eta A_\eta\vec e_\eta}_{\text{Hermitian vector}} .
 $$
 
 The temporal slot is a central imaginary number and the spatial slots are Hermitian vectors, so the connection adds to the phase bracket and to the boost bracket. The scale bracket is a real central scalar and the rotor bracket is a real vector part; neither is reachable by a central multiplication, and both are therefore untouched.
@@ -56,7 +56,7 @@ The temporal slot is a central imaginary number and the spatial slots are Hermit
 | bracket | type | the connection's share | what it moves in the fluid |
 | --- | --- | --- | --- |
 | $\tfrac12\partial_\mu\ln\rho_{\mathrm{num}}$ | real central scalar | none | the density: nothing |
-| $i\partial_\mu\theta_{\mathrm{pha}}+\frac{iϙ}{\hbar}A_\mu$ | central imaginary | the whole temporal slot | the momentum |
+| $i\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi iϙ}{h}A_\mu$ | central imaginary | the whole temporal slot | the momentum |
 | $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the whole spatial slot | the rapidity and the axis |
 | $\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$ | real vector part | none | the spin direction: nothing |
 
@@ -83,7 +83,7 @@ $$
 and the canonical wavevector is the covariant one less the potential:
 
 $$
-\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{ϙ}{\hbar}\tilde A_\Phi .
+\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{2\pi ϙ}{h}\tilde A_\Phi .
 $$
 
 In one sentence: the boost in the word is the one the covariant wavevector names, so the velocity is kinetic and the potential sits entirely in the canonical wavevector. The classical statement is $\vec p_{\mathrm{kin}}=\vec p_{\mathrm{can}}-q\vec A$; the chart's statement is that the two wavevectors differ by one element and that the mass-shell identity is applied to the second.
@@ -100,7 +100,7 @@ and the reason is that the velocity is not the momentum over the mass but the fr
 The mass shell in canonical components is the translated hyperboloid. Expanding the identity,
 
 $$
-\Bigl(\frac{E+ϙcA_t}{\hbar c}\Bigr)^{2}-\Bigl|\frac{\vec p-q\vec A}{\hbar}\Bigr|^{2}=-k_m^{2},
+\Bigl(\frac{2\pi E+ϙcA_t}{h c}\Bigr)^{2}-\Bigl|\frac{2\pi \vec p-q\vec A}{h}\Bigr|^{2}=-k_m^{2},
 $$
 
 so the radius is $k_m$ and the potential moves the centre: a constant potential shifts every level and opens no gap. The polar reason is one line: a shift of a variable cannot change a radius. The fluid reason is equally short: a shift of the momentum cannot change the frame.
@@ -169,14 +169,14 @@ $$
 \text{the loop's transport}
 =\underbrace{\text{holonomy of }\tilde U_{\Psi,\mathrm b}}_{\text{a Lorentz transformation}}
 \times
-\underbrace{\exp\Bigl(\frac{iϙ\Phi_B}{\hbar}\Bigr)}_{\text{a phase}},
+\underbrace{\exp\Bigl(\frac{2\pi iϙ\Phi_B}{h}\Bigr)}_{\text{a phase}},
 $$
 
 and the two factors commute because the second is central. The object is an element of $\mathbb{C}^{\ast}\times SL(2,\mathbb{C})$, and that is the honest description of a charged spin fluid's circulation: a rotation of the frame and a phase, and neither of them quantised.
 
 Why the scalar case is the special one. There the velocity was a gradient plus a potential, so the loop integral split into an integer and a flux and both terms were numbers. Here the velocity is a frame, so the loop integral is a group element before the potential is added and remains one after. The charge adds a phase to a Lorentz transformation; it does not turn the transformation into a number.
 
-What survives of the free article's statement. The free article records that the spin-half fluid's circulation is the holonomy and is therefore not quantised, and that the frozen-frame sector is where the circulation vanishes. Both survive, the first with the phase attached and the second with a qualification: a constant frame has a trivial holonomy and a constant flux still gives a phase, so the frozen-frame sector's circulation becomes $e^{iϙ\Phi_B/\hbar}$ rather than unity. That is the smallest exact statement the article can make about the charge, and it is a statement about a loop and not about an event.
+What survives of the free article's statement. The free article records that the spin-half fluid's circulation is the holonomy and is therefore not quantised, and that the frozen-frame sector is where the circulation vanishes. Both survive, the first with the phase attached and the second with a qualification: a constant frame has a trivial holonomy and a constant flux still gives a phase, so the frozen-frame sector's circulation becomes $e^{\frac{2\pi iϙ\Phi_B}{h}}$ rather than unity. That is the smallest exact statement the article can make about the charge, and it is a statement about a loop and not about an event.
 
 ## The Gordon Split
 
@@ -236,7 +236,7 @@ Twelve statements, each one line, and each with its reason. This is what the cha
 
 1. The word is unchanged and the coupling is confined by type. Eight parameters; the connection reaches the phase and boost brackets and not the scale or the rotor.
 2. The density is untouched. The gauge transformation moves the angle alone, and the scale, the rapidity, the axis and the rotor are gauge invariant by inspection.
-3. The velocity is the kinetic one, named by the covariant wavevector: $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ and $\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-ϙ\tilde A_\Phi/\hbar$.
+3. The velocity is the kinetic one, named by the covariant wavevector: $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ and $\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{2\pi ϙ\tilde A_\Phi}{h}$.
 4. The velocity is invertible for every field. $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$; the normalisation is kinematical and the coupling cannot touch it.
 5. The rapidity and the axis are observables. $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, and no gauge transformation changes either.
 6. The vorticity is the frame's gradient. Its proper part is rank two for every solution, and it is not $ϙF/m$ for any field.
@@ -259,7 +259,7 @@ The three relativistic charged articles can be put side by side, and the table i
 | is it an invertible element? | only where the quantum potential vanishes | always, $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ | its boost is; the element is not a four-vector |
 | the vorticity | the field strength, $ϙF/m$ | the frame's gradient, and not $ϙF/m$ | not established; the free case's is $F$ minus a radial term |
 | the vorticity's rank | $0$, $2$ or $4$ | $2$ for the proper part | the free case's is $2$ |
-| the loop invariant | $2\pi\hbar n/m+ϙ\Phi_B/m$ | a Lorentz transformation times a phase | for $ϙ=0$ an integer; for $ϙ\ne0$, not known |
+| the loop invariant | $h n/m+ϙ\Phi_B/m$ | a Lorentz transformation times a phase | for $ϙ=0$ an integer; for $ϙ\ne0$, not known |
 | the force | the Lorentz force, plus a quantum potential | the Lorentz force, and no torque | the covariant divergence, self-acting |
 | the stress | the quantum potential is in it; no EOS | the antisymmetric part is in it; no EOS | its own field strength is in it; stiff on $F=0$ |
 | the degenerate set | $\varrho=0$, codimension two | $\varrho=0$, codimension two | $\varrho=0$; the free case's lightlike wall is gone |
@@ -299,7 +299,7 @@ Not claimed. It is not claimed that the vorticity has a dynamics, that the spin 
 
 ## Summary
 
-The coupled Dirac equation in polar variables is $\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_{\mathrm D}=\frac{i}{\hbar}k_m\tilde\Xi_{\mathrm D}$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word is $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$.
+The coupled Dirac equation in polar variables is $\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_{\mathrm D}=\frac{2\pi i}{h}k_m\tilde\Xi_{\mathrm D}$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$, and the word is $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$.
 
 The connection is central per component. Its temporal slot is a central imaginary number and joins the phase bracket; its spatial slots are Hermitian vectors and join the boost bracket. The scale is a real scalar and the rotor is a real vector part, so the density and the spin are untouched.
 
@@ -324,11 +324,11 @@ The spin direction is gauge invariant and coupling-blind, and the Larmor precess
 | $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | The four-velocity; $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ |
 | $\Gamma_\mu=\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}$ | The frame's logarithmic derivative |
 | $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ | The covariant wavevector |
-| $\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{ϙ}{\hbar}\tilde A_\Phi$ | The canonical wavevector |
+| $\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{2\pi ϙ}{h}\tilde A_\Phi$ | The canonical wavevector |
 | $\omega_{\mu\nu}$ | The vorticity; the frame's gradient, proper part rank two |
 | $\Phi_B$ | The flux through a loop |
 | $ϙ$ | The coupling |
-| $k_m=mc/\hbar$ | The mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
 
 ## Further Reading
 

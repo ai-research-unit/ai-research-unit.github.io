@@ -11,7 +11,7 @@ The gauge element is central, so it acts on one factor and only one: the angle i
 $$
 \varrho\longmapsto \varrho,
 \qquad
-\theta_{\mathrm{pha}}\longmapsto\theta_{\mathrm{pha}}+\frac{q}{\hbar}\Gamma,
+\theta_{\mathrm{pha}}\longmapsto\theta_{\mathrm{pha}}+\frac{2\pi q}{h}\Gamma,
 \qquad
 \tilde U_{\Psi,\mathrm b}\longmapsto\tilde U_{\Psi,\mathrm b},
 \qquad
@@ -20,7 +20,7 @@ $$
 
 The scale, the rapidity, the two axes and the density are invariant, and the two combinations of the phase with the potential are the invariants the limit works with.
 
-The consequence for the criterion is the article's first result. The large gradient is no longer $\vec\nabla_\Phi S$ but the kinetic momentum $\vec\pi=\vec\nabla_\Phi S-q\vec A$, which is the gauge-invariant combination. A criterion written on the canonical gradient would not be gauge invariant, and it would be wrong wherever the potential is large. The parameter is $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$, and the scale's gradient is measured against that.
+The consequence for the criterion is the article's first result. The large gradient is no longer $\vec\nabla_\Phi S$ but the kinetic momentum $\vec\pi=\vec\nabla_\Phi S-q\vec A$, which is the gauge-invariant combination. A criterion written on the canonical gradient would not be gauge invariant, and it would be wrong wherever the potential is large. The parameter is $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$, and the scale's gradient is measured against that.
 
 The parent's coupling is $ϙ$, with $ϙ=-q$ where $q$ is the electric charge. Every display in this article uses $q$ and the canonical form $\vec\pi=\vec p-q\vec A$; the parent's $-ϙ\varphi$ is $+q\varphi$ here, and the parent's $\vec\nabla_\Phi\times\vec v=ϙ\vec B/m$ is $-(q/m)\vec B$.
 
@@ -30,7 +30,7 @@ The covariant Madelung pair, the kinetic momentum in the transport current, the 
 
 The restriction is the free one, and the coupling does not remove it. The parent's pair is the central field's, $\theta_{\mathrm{rpd}}=0$ and $\tilde u_{\mathrm r}=\varepsilon e_{t}$, and that class is invariant only under a central Hamiltonian. The limit is therefore defined on the central class here as it is in the free companion, and for the same reason.
 
-Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$ with $\varphi=c\,a'_{t}$; the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+iq\tilde A_\Phi/\hbar$; the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{\,2}/2m+q\varphi+\hat V$ with $\tilde{\vec\pi}=-i\hbar\nabla-q\vec A$; $S=\hbar\theta_{\mathrm{pha}}$; $q$ the electric charge, real; $\Delta_\Phi$ the Laplacian of the material sector.
+Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$ with $\varphi=c\,a'_{t}$; the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iq\tilde A_\Phi}{h}$; the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{\,2}/2m+q\varphi+\hat V$ with $\tilde{\vec\pi}=-i \frac{h}{2\pi}\nabla-q\vec A$; $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$; $q$ the electric charge, real; $\Delta_\Phi$ the Laplacian of the material sector.
 
 ## The Two Equations and Where the Connection Sits
 
@@ -42,7 +42,7 @@ $$
 \partial_{t'}S+\frac{\lvert\vec\nabla_\Phi S-q\vec A\rvert^{2}}{2m}+q\varphi+Q=0,
 $$
 
-with $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$. The first is the covariant continuity equation and the second the quantum Hamilton–Jacobi equation of the coupled field.
+with $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$. The first is the covariant continuity equation and the second the quantum Hamilton–Jacobi equation of the coupled field.
 
 The connection appears in three places and nowhere else. In the transport it replaces the canonical gradient by the kinetic momentum. In the Hamilton–Jacobi equation it does the same in the kinetic term and it adds the potential energy $q\varphi$. In the quantum potential it does not appear at all.
 
@@ -53,14 +53,14 @@ $Q$ is built from the scale $\varrho$ and its ordinary Laplacian. The scale is i
 $$
 \vec\pi=\vec\nabla_\Phi S-q\vec A,
 \qquad
-\mathcal E=-\hbar\,\partial_{t'}\theta_{\mathrm{pha}}-q\varphi .
+\mathcal E=-\frac{h}{2\pi}\,\partial_{t'}\theta_{\mathrm{pha}}-q\varphi .
 $$
 
 The first is the mechanical momentum and the second the kinetic energy, and both are unchanged when the phase and the potential shift together. Every statement of the limit is made in these two and in the scale.
 
 ## The Criterion Is the Mechanical Wave Number
 
-The phase's gradient is not what the equation differentiates: the covariant derivative does, and what it produces is $\vec\pi/\hbar$. So the large quantity is $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$, the scale's variation is measured against $L$, and
+The phase's gradient is not what the equation differentiates: the covariant derivative does, and what it produces is $\frac{2\pi \vec\pi}{h}$. So the large quantity is $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$, the scale's variation is measured against $L$, and
 
 $$
 \epsilon=\frac{1}{\pi_{\Phi}L},
@@ -68,15 +68,15 @@ $$
 L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert .
 $$
 
-**A criterion on the canonical gradient would fail gauge invariance, and the failure is not cosmetic.** Under $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+q\Gamma/\hbar$ and $\vec A\to\vec A+\vec\nabla_\Phi\Gamma$, the canonical gradient shifts by $q\vec\nabla_\Phi\Gamma$ while $\vec\pi$ does not. A parameter defined on the canonical gradient would therefore change value under a gauge transformation, and a limit whose smallness depends on the gauge is not a statement about the field.
+**A criterion on the canonical gradient would fail gauge invariance, and the failure is not cosmetic.** Under $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+\frac{2\pi q\Gamma}{h}$ and $\vec A\to\vec A+\vec\nabla_\Phi\Gamma$, the canonical gradient shifts by $q\vec\nabla_\Phi\Gamma$ while $\vec\pi$ does not. A parameter defined on the canonical gradient would therefore change value under a gauge transformation, and a limit whose smallness depends on the gauge is not a statement about the field.
 
 The order table is the free table with one substitution.
 
 | object | order in $\epsilon$ | kept by the limit | kept by the first correction |
 |---|---|---|---|
 | $\vec\pi=\vec\nabla_\Phi S-q\vec A$ | $0$ | yes | yes |
-| $\hbar\,\vec\nabla_\Phi\ln \varrho$ | $1$ | no | yes |
-| $\hbar^{2}\,\Delta_\Phi \varrho/\varrho$ | $2$ | no | no |
+| $\frac{h}{2\pi}\,\vec\nabla_\Phi\ln \varrho$ | $1$ | no | yes |
+| $\frac{h^{2}}{4\pi^{2}}\,\Delta_\Phi \varrho/\varrho$ | $2$ | no | no |
 
 Nothing in the table mentions the potential's strength. The connection contributes no parameter: $q\vec A$ enters the leading term, and a large potential shifts the leading term without changing its order. The coupling changes the value of the eikonal and never its size, and that is why the accuracy of the limit is the free accuracy.
 
@@ -147,7 +147,7 @@ The canonical flow is irrotational — that is the free article's exact statemen
 The circulation is quantised with the flux subtracted, and the limit adds nothing to it.
 
 $$
-\oint\vec\pi\cdot\mathrm{d}\vec l=2\pi\hbar\,n-q\Phi_{B},
+\oint\vec\pi\cdot\mathrm{d}\vec l=h\,n-q\Phi_{B},
 \qquad
 \Phi_{B}=\int_{\Sigma}\vec B\cdot\mathrm{d}\vec\Sigma ,
 $$
@@ -161,7 +161,7 @@ A ray-level statement that survives a limit unchanged is rare, and this one carr
 **The deleted term is the same function as in the free case.**
 
 $$
-Q=-\frac{\hbar^{2}}{2m}\frac{\Delta_\Phi \varrho}{\varrho},
+Q=-\frac{h^{2}}{8\pi^{2}m}\frac{\Delta_\Phi \varrho}{\varrho},
 $$
 
 with the ordinary Laplacian and no potential in it. The coupling does not enter, and the reason is one sentence long: the covariant derivative acts on the phase, the quantum potential is built from the scale, and the scale is inert under the gauge group.
@@ -200,7 +200,7 @@ The vorticity was checked by direct differentiation. $\vec\nabla_\Phi\times(\vec
 
 The quantum potential was checked for invariance. $Q$ contains $\varrho$ and $\Delta_\Phi \varrho$ only; under the gauge transformation the word's factors transform as the parent states, the scale is unchanged, and $Q$ is unchanged term for term.
 
-The circulation was checked against the parent's letters. The parent writes $\oint\vec\pi\cdot\mathrm{d}\vec l=2\pi\hbar n+ϙ\Phi_{B}$ with $ϙ=-q$; the display here is the same statement in the article's letters.
+The circulation was checked against the parent's letters. The parent writes $\oint\vec\pi\cdot\mathrm{d}\vec l=h n+ϙ\Phi_{B}$ with $ϙ=-q$; the display here is the same statement in the article's letters.
 
 **What was not checked.** No numerical solution of the coupled time-dependent problem was run and no flux was computed on a closed form. The claims are about terms and identities, and both were verified as algebra.
 
@@ -210,7 +210,7 @@ The parent's pair carries the connection in exactly three places: the transport 
 
 The criterion must be written on the mechanical momentum, $\epsilon=1/(\pi_{\Phi}L)$, because the canonical gradient is not gauge invariant. With that substitution the order table is the free table and the coupling contributes no parameter.
 
-Order zero is the Hamilton–Jacobi equation in the kinetic momentum, and its gradient is the Lorentz force with $\vec\pi=m\vec v$: Newton's law with the magnetic force, from order zero alone, by two named cancellations. Order one is the covariant continuity equation, exact and untouched by the limit, and it carries two exact companions — the vorticity $-(q/m)\vec B$ and the circulation $2\pi\hbar n-q\Phi_{B}$.
+Order zero is the Hamilton–Jacobi equation in the kinetic momentum, and its gradient is the Lorentz force with $\vec\pi=m\vec v$: Newton's law with the magnetic force, from order zero alone, by two named cancellations. Order one is the covariant continuity equation, exact and untouched by the limit, and it carries two exact companions — the vorticity $-(q/m)\vec B$ and the circulation $h n-q\Phi_{B}$.
 
 Order two is the free quantum potential, with the free size and the free non-uniformity. The coupling therefore changes the value of every leading term and the accuracy of none.
 
@@ -220,14 +220,14 @@ Order two is the free quantum potential, with the free size and the free non-uni
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The parent's polar word |
 | $\varrho>0$ | The scale; the density is $\varrho^{2}$ on the central field |
-| $\theta_{\mathrm{pha}}$, $S=\hbar\theta_{\mathrm{pha}}$ | The central angle; the action |
+| $\theta_{\mathrm{pha}}$, $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | The central angle; the action |
 | $\varepsilon e_{t}$ | The rotor on the central field |
 | $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$ | The connection; $\varphi$ the scalar potential |
 | $q$ | The electric charge; the parent's $ϙ=-q$ |
 | $\vec\pi=\vec\nabla_\Phi S-q\vec A$ | Mechanical momentum |
-| $\mathcal E=-\hbar\partial_{t'}\theta_{\mathrm{pha}}-q\varphi$ | Kinetic energy |
-| $\epsilon=1/(\pi_{\Phi}L)$, $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$ | The parameter |
-| $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; the free one |
+| $\mathcal E=-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}-q\varphi$ | Kinetic energy |
+| $\epsilon=1/(\pi_{\Phi}L)$, $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$ | The parameter |
+| $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; the free one |
 | $\Phi_{B}$ | Magnetic flux through a surface the loop bounds |
 
 ## Further Reading

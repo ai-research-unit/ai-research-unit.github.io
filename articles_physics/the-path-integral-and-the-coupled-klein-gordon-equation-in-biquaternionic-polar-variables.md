@@ -6,7 +6,7 @@ The integral is the companion's and this article reads it in the chart. *The Pat
 
 The word on a central field is a scale and an angle. The boost and the rotor have nothing to carry and are $e_t$ and $\pm e_t$. So the chart has two functions per point, the measure has one Jacobian per point, and the connection has only two objects it can touch. The collapse is the polar equation article's and is not re-derived.
 
-The finding is one sentence. The connection enters the exponent as a shift of one bracket, $(\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{ϛ}{\hbar}a'_t)^{2}-\lvert\nabla\theta_{\mathrm{pha}}+\frac{ϛ}{\hbar}\vec A\rvert^{2}$, and the amplitude's two terms are untouched, so the two interaction terms of the element form are the expansion of that one shift and the chart shows their shapes.
+The finding is one sentence. The connection enters the exponent as a shift of one bracket, $(\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{2\pi ϛ}{h}a'_t)^{2}-\lvert\nabla\theta_{\mathrm{pha}}+\frac{2\pi ϛ}{h}\vec A\rvert^{2}$, and the amplitude's two terms are untouched, so the two interaction terms of the element form are the expansion of that one shift and the chart shows their shapes.
 
 Four consequences follow, and each is stated exactly or checked.
 
@@ -21,25 +21,25 @@ What the article does not do. It does not produce a second integral, does not de
 
 The algebra, the pairing and the word are the free polar article's: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}(\cdot^{*}\cdot)$, and $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with the ranges of *The Klein–Gordon Equation in Biquaternionic Polar Variables*, §*The Word*.
 
-The covariant derivative and its coefficient. With $c_\mu=\frac{iϙ}{\hbar}A_\mu$ the covariant derivative is $\partial_\mu+c_\mu$ on the coefficients, and for a central field
+The covariant derivative and its coefficient. With $c_\mu=\frac{2\pi iϙ}{h}A_\mu$ the covariant derivative is $\partial_\mu+c_\mu$ on the coefficients, and for a central field
 
 $$
 \tilde\nabla_{\mathrm{gco},\Phi,\mu}\bigl(\varrho e^{i\theta_{\mathrm{pha}}}e_t\bigr)
 =e^{i\theta_{\mathrm{pha}}}\Bigl(\partial_\mu \varrho+i\,\varrho\,\kappa_{\mu}^{\mathrm{kin}}\Bigr)e_t,
 \qquad
-\kappa_{\mu}^{\mathrm{kin}}=\partial_\mu\theta_{\mathrm{pha}}+\frac{ϛ}{\hbar}A_\mu ,
+\kappa_{\mu}^{\mathrm{kin}}=\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi ϛ}{h}A_\mu ,
 $$
 
 which is the coupled polar companion's factorisation. The derivative of the word is one real number and one shifted phase rate, and the shift is the whole of the connection's presence in the derivative.
 
 The factorisation is checked and it converges at the second order. On a nine-site chain with a smooth scale, a smooth angle and one coefficient per slot, the two sides of $\mathrm{Sc}\bigl[(D_\mu\tilde\Xi)^{*}D_\mu\tilde\Xi\bigr]=(\partial_\mu \varrho)^{2}+\varrho^{2}(\kappa^{\mathrm{kin}}_\mu)^{2}$ differ by $2.2\times10^{-2}$, $5.6\times10^{-3}$, $1.4\times10^{-3}$ and $3.5\times10^{-4}$ relative, at steps $10^{-1}$, $5\times10^{-2}$, $2.5\times10^{-2}$ and $1.25\times10^{-2}$, falling by four at each halving. The identity is exact in the continuum and is a product rule away from it on a grid, which is the same status as the free article's $\lvert\partial\xi\rvert^{2}$ identity.
 
-The exponent. The weight is $\exp(iS_{\mathrm{gco}}/\hbar)$ with the element companion's action, and in the chart
+The exponent. The weight is $\exp(\frac{2\pi iS_{\mathrm{gco}}}{h})$ with the element companion's action, and in the chart
 
 $$
-\frac{i}{\hbar}S_{\mathrm{gco}}=\frac{i}{2}\int\mathrm{d}^{4}x\;\Bigl\{(\partial_{r'_t}\varrho)^{2}-\lvert\nabla \varrho\rvert^{2}
-+\varrho^{2}\Bigl[\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}-\tfrac{ϛ}{\hbar}a'_t\bigr)^{2}
--\bigl\lvert\nabla\theta_{\mathrm{pha}}+\tfrac{ϛ}{\hbar}\vec A\bigr\rvert^{2}\Bigr]-k_m^{2}\varrho^{2}\Bigr\},
+\frac{2\pi i}{h}S_{\mathrm{gco}}=\frac{i}{2}\int\mathrm{d}^{4}x\;\Bigl\{(\partial_{r'_t}\varrho)^{2}-\lvert\nabla \varrho\rvert^{2}
++\varrho^{2}\Bigl[\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{2\pi ϛ}{h}a'_t\bigr)^{2}
+-\bigl\lvert\nabla\theta_{\mathrm{pha}}+\frac{2\pi ϛ}{h}\vec A\bigr\rvert^{2}\Bigr]-k_m^{2}\varrho^{2}\Bigr\},
 $$
 
 which is the free polar article's bracket with the two substitutions of the polar variational companion, §*The Action in the Chart*, and with the $\tfrac12$ of the free article's normalisation. The material convention is $A_t=i a'_t$ with $a'_t$ and $\vec A$ real, so the temporal shift carries a minus and the spatial one a plus; the two signs are the metric's and are the same two the polar equation companion records for the four-momentum.
@@ -58,8 +58,8 @@ The expansion. Squaring the shifted bracket gives three terms,
 
 $$
 \varrho^{2}\Bigl[\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\bigr)^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr]
--\frac{2ϛ \varrho^{2}}{\hbar}\Bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\,a'_t+\vec\nabla_\Phi\theta_{\mathrm{pha}}\cdot\vec A\Bigr)
-+\frac{ϛ^{2}\varrho^{2}}{\hbar^{2}}\Bigl(\bigl(a'_t\bigr)^{2}-\lvert\vec A\rvert^{2}\Bigr),
+-\frac{2\pi 2ϛ \varrho^{2}}{h}\Bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\,a'_t+\vec\nabla_\Phi\theta_{\mathrm{pha}}\cdot\vec A\Bigr)
++\frac{(2\pi)^{2} ϛ^{2}\varrho^{2}}{h^{2}}\Bigl(\bigl(a'_t\bigr)^{2}-\lvert\vec A\rvert^{2}\Bigr),
 $$
 
 which is the free phase term, a term linear in the potential, and a term quadratic in it. The element companion's three-term split is the expansion of this one square, and the correspondence is term by term.
@@ -72,7 +72,7 @@ The quadratic term is not removable and it is what the invariance needs. The lin
 
 ## The Measure Is Untouched
 
-The Jacobian is the scale and the scale is gauge invariant. The polar measure is $\prod_x \varrho\,\mathrm{d}\varrho\,\mathrm{d}\theta_{\mathrm{pha}}$, and a gauge transformation translates $\theta_{\mathrm{pha}}$ by $ϛ\Lambda/\hbar$ and leaves $\varrho$ alone. So the measure is invariant with no computation, whereas the element form has to note that the transformation is a rotation at each point and that a rotation has unit determinant.
+The Jacobian is the scale and the scale is gauge invariant. The polar measure is $\prod_x \varrho\,\mathrm{d}\varrho\,\mathrm{d}\theta_{\mathrm{pha}}$, and a gauge transformation translates $\theta_{\mathrm{pha}}$ by $\frac{2\pi ϛ\Lambda}{h}$ and leaves $\varrho$ alone. So the measure is invariant with no computation, whereas the element form has to note that the transformation is a rotation at each point and that a rotation has unit determinant.
 
 The two statements are one and the chart's is the shorter. A rotation of the plane preserves the flat measure and the polar measure's radial factor; the chart's statement is that the radial factor does not move, and the element form's is that the angular factor does not. Neither statement needs the connection, which is why neither needs a regulator to be true.
 
@@ -89,9 +89,9 @@ $$
 =k_m^{2}-\frac{\Box_\Phi \varrho}{\varrho},
 $$
 
-which is the polar equation companion's amplitude equation with the mechanical bracket in place of the free one. Read through $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ it is $(\partial_{r'_t}S_{\tilde\Xi}-ϛa'_t)^{2}-\lvert\nabla S_{\tilde\Xi}+ϛ\vec A\rvert^{2}=m^{2}c^{2}-\hbar^{2}\Box_\Phi \varrho/\varrho$, the mass shell with the mechanical momentum and the quantum potential.
+which is the polar equation companion's amplitude equation with the mechanical bracket in place of the free one. Read through $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ it is $(\partial_{r'_t}S_{\tilde\Xi}-ϛa'_t)^{2}-\lvert\nabla S_{\tilde\Xi}+ϛ\vec A\rvert^{2}=m^{2}c^{2}-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/\varrho$, the mass shell with the mechanical momentum and the quantum potential.
 
-The quantum potential is untouched. It is $-\frac{\hbar^{2}}{2m}\Box_\Phi \varrho/\varrho$, a functional of the scale alone, and the connection does not appear in it because the connection does not appear in the amplitude's terms. This is the chart's sharpest statement about the coupling: the coupling changes the relation between the phase's rate and the momentum, and it changes nothing about the curvature of the density.
+The quantum potential is untouched. It is $-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi \varrho/\varrho$, a functional of the scale alone, and the connection does not appear in it because the connection does not appear in the amplitude's terms. This is the chart's sharpest statement about the coupling: the coupling changes the relation between the phase's rate and the momentum, and it changes nothing about the curvature of the density.
 
 Stationarity in the angle gives the mechanical transport equation. Varying $\theta_{\mathrm{pha}}$ gives $\sum_\mu\partial_\mu\bigl(\varrho^{2}\kappa_{\mathrm{kin},\mu}\bigr)=0$, which is the divergence of the density times the mechanical four-velocity. The free article's saddle is the same equation with the free rate, so the coupling's whole effect on the constraint is to replace the phase's gradient by the mechanical one.
 
@@ -115,7 +115,7 @@ What the chart therefore decides and does not decide. It decides which reading i
 
 The shift, and what it does to the bracket. For a constant potential the two shifts are constants, so the bracket is the free bracket with $\partial\theta_{\mathrm{pha}}$ translated by a constant and $\vec\nabla_\Phi\theta_{\mathrm{pha}}$ translated by a constant vector. A translation of a gradient is a change of the plane wave's wavevector and nothing else, which is the chart's form of the element companion's statement that a constant potential shifts the wavevector.
 
-The scalar potential enters squared in the chart. Because the temporal slot's shift sits inside a square with a relative sign, a constant $a'_t$ contributes $+\frac{ϛ^{2}}{\hbar^{2}}a_t'^{2}\varrho^{2}$ to the exponent and no term linear in $\partial_{r'_t}\theta_{\mathrm{pha}}$. The chart's dispersion for a constant scalar potential has the potential squared and no linear shift, which is the element companion's paired shell. The linear shift belongs to the squared reading and has no chart expression, for the reason of the previous section.
+The scalar potential enters squared in the chart. Because the temporal slot's shift sits inside a square with a relative sign, a constant $a'_t$ contributes $+\frac{(2\pi)^{2} ϛ^{2}}{h^{2}}a_t'^{2}\varrho^{2}$ to the exponent and no term linear in $\partial_{r'_t}\theta_{\mathrm{pha}}$. The chart's dispersion for a constant scalar potential has the potential squared and no linear shift, which is the element companion's paired shell. The linear shift belongs to the squared reading and has no chart expression, for the reason of the previous section.
 
 The vector potential enters as a translation and the two are different objects. A constant $\vec A$ translates $\vec\nabla_\Phi\theta_{\mathrm{pha}}$, so it moves the wavevector and changes the bracket by the translation's square; a constant $a'_t$ does the same in the temporal slot. The chart shows the two as one operation, a translation, and the difference between them as the relative sign of the two squares. This is the chart's version of the element companion's contrast between the exact scalar shift and the vector potential's Landau problem, and the chart states the contrast as a sign.
 
@@ -150,7 +150,7 @@ The honest ledger. The chart contributes one sentence about where the connection
 
 ## Summary
 
-The coupled Klein–Gordon integral read in the chart is the free one with one bracket translated. The connection enters as $\kappa^{\mathrm{kin}}=\partial\theta_{\mathrm{pha}}+\frac{ϛ}{\hbar}A$, the amplitude's two terms and the mass term are untouched, and the exponent's two interaction terms are $2c\varrho^{2}\partial\theta_{\mathrm{pha}}$ and $c^{2}\varrho^{2}$. The element companion's three-term split is the expansion of this one shift.
+The coupled Klein–Gordon integral read in the chart is the free one with one bracket translated. The connection enters as $\kappa^{\mathrm{kin}}=\partial\theta_{\mathrm{pha}}+\frac{2\pi ϛ}{h}A$, the amplitude's two terms and the mass term are untouched, and the exponent's two interaction terms are $2c\varrho^{2}\partial\theta_{\mathrm{pha}}$ and $c^{2}\varrho^{2}$. The element companion's three-term split is the expansion of this one shift.
 
 The measure is invariant for one reason: its Jacobian is the scale and the scale is gauge invariant. The two saddles are the amplitude equation with the mechanical bracket and the mechanical transport equation, both exact, the second verified to $10^{-13}$ against its Fresnel factor and to $10^{-16}$ against the discrete divergence condition. The quantum potential is untouched because the amplitude's terms are.
 
@@ -161,20 +161,20 @@ The chart carries the action's reading of the covariant square and cannot carry 
 | Symbol | Meaning |
 |---|---|
 | $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}e_t$ | The word on a central field |
-| $c_\mu=\frac{iϙ}{\hbar}A_\mu$ | The slot's coefficient; $c_t$ real, $c_\eta$ imaginary |
-| $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{ϛ}{\hbar}A_\mu$ | The mechanical phase rate; the connection's only address |
+| $c_\mu=\frac{2\pi iϙ}{h}A_\mu$ | The slot's coefficient; $c_t$ real, $c_\eta$ imaginary |
+| $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi ϛ}{h}A_\mu$ | The mechanical phase rate; the connection's only address |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\mu}(\varrho e^{i\theta_{\mathrm{pha}}}e_t)=e^{i\theta_{\mathrm{pha}}}\bigl(\partial_\mu \varrho+i \varrho\kappa^{\mathrm{kin}}_\mu\bigr)e_t$ | The exact factorisation of the covariant derivative |
 | $\prod_x \varrho\,\mathrm{d}\varrho\,\mathrm{d}\theta_{\mathrm{pha}}$ | The polar measure; unchanged by a gauge transformation |
 | $2c\varrho^{2}\partial\theta_{\mathrm{pha}}$ | The linear interaction term; the current's slot |
 | $c^{2}\varrho^{2}$ | The quadratic interaction term; no derivative |
-| $\frac{ϛ^{2}\varrho^{2}}{\hbar^{2}}\bigl((a'_t)^{2}-\lvert\vec A\rvert^{2}\bigr)$ | The quadratic term in the material slots; the relative sign is the metric's |
+| $\frac{(2\pi)^{2} ϛ^{2}\varrho^{2}}{h^{2}}\bigl((a'_t)^{2}-\lvert\vec A\rvert^{2}\bigr)$ | The quadratic term in the material slots; the relative sign is the metric's |
 | $\kappa^{\mathrm{kin}}\!\cdot\kappa^{\mathrm{kin}}=k_m^{2}-\Box_\Phi \varrho/\varrho$ | The amplitude equation; the scale's saddle |
 | $\sum_\mu\partial_\mu\bigl(\varrho^{2}\kappa_{\mathrm{kin},\mu}\bigr)=0$ | The mechanical transport equation; the angle's saddle |
-| $-\frac{\hbar^{2}}{2m}\Box_\Phi \varrho/\varrho$ | The quantum potential; independent of the connection |
+| $-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi \varrho/\varrho$ | The quantum potential; independent of the connection |
 | $\sum_\mu(\partial_\mu-\bar c_\mu)(\partial_\mu+c_\mu)$ | The action's paired operator; the chart's object |
 | $\sum_\mu(\partial_\mu+c_\mu)^{2}$ | The equation's squared operator; needs a cross term the chart lacks |
 | $2\Sigma c$ | The squared operator's symbol's imaginary part where $\bar c\ne-c$ |
-| $k_m=mc/\hbar$ | The mass parameter |
+| $k_m=\frac{2\pi mc}{h}$ | The mass parameter |
 
 ## Further Reading
 

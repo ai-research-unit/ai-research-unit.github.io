@@ -5,7 +5,7 @@
 *The Schrödinger Equation in Biquaternionic Form* writes
 
 $$
-i\hbar\,c\,\partial_{r'_t}\tilde\Xi=\tilde H_\Psi\,\tilde\Xi,
+i \frac{h}{2\pi}\,c\,\partial_{r'_t}\tilde\Xi=\tilde H_\Psi\,\tilde\Xi,
 \qquad
 \tilde H_\Psi=h_t\,e_t+i\vec h_\Psi\in\mathbb{B}_{\Psi},
 \qquad
@@ -17,7 +17,7 @@ with $h_t$ and $\vec h_\Psi$ fixed numbers. A fixed Hamiltonian has no room for 
 This article puts the electromagnetic connection into that equation. The replacement is one rule, the ordinary derivative becomes a covariant one,
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
 \qquad
 \tilde A_\Phi=i\,\frac{\varphi}{c}\,e_t+\vec A,
 $$
@@ -25,11 +25,11 @@ $$
 with $\varphi$ the electric potential and $\vec A$ the vector potential, both real, and $ϙ$ the coupling the gauge principle introduces. The coupled equation is
 
 $$
-\boxed{\;i\hbar\,D_t\tilde\Xi=\frac{1}{2m}\sum_\eta\big(-i\hbar\,D_\eta\big)^{2}\tilde\Xi,\;}
+\boxed{\;i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi}\,D_\eta\big)^{2}\tilde\Xi,\;}
 \qquad
-D_t=\partial_{t'}-\frac{i\,ϙ}{\hbar}\varphi,
+D_t=\partial_{t'}-\frac{2\pi i\,ϙ}{h}\varphi,
 \qquad
-D_\eta=\partial_\eta+\frac{i\,ϙ}{\hbar}A_\eta,
+D_\eta=\partial_\eta+\frac{2\pi i\,ϙ}{h}A_\eta,
 $$
 
 which is the standard Schrödinger equation of a charged scalar field, written with the two slots of one covariant derivative.
@@ -56,7 +56,7 @@ The two shifts are the canonical-to-kinetic dictionary of the older literature, 
 
 **One setting is not the other.** The free article distinguishes a constant-element setting, in which the equation is an ordinary differential equation with the closed-form propagator, from an operator setting, in which it is the ordinary Schrödinger equation. The coupling has a different face in each: a shift of two numbers in the first, a covariant Laplacian in the second. The two are kept apart below, and no result is transferred between them.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian fixed subspaces; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$; the density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ and the free article's $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2n$ is twice it. Time is $t'$ and the parent's material length is $r'_t=c\,t'$, so $\partial/\partial r'_t=c^{-1}\partial/\partial t'$ and $i\hbar c\,\partial_{r'_t}=i\hbar\,\partial_{t'}$; the article uses $t'$ and never mixes the two. The charge $ϙ$ is the gauge principle's coupling constant, a parameter the algebra does not fix; its value and its sign are inserted, as *The Electron in Biquaternionic Form* records.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian fixed subspaces; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$; the density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ and the free article's $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2n$ is twice it. Time is $t'$ and the parent's material length is $r'_t=c\,t'$, so $\partial/\partial r'_t=c^{-1}\partial/\partial t'$ and $i \frac{h}{2\pi} c\,\partial_{r'_t}=i \frac{h}{2\pi}\,\partial_{t'}$; the article uses $t'$ and never mixes the two. The charge $ϙ$ is the gauge principle's coupling constant, a parameter the algebra does not fix; its value and its sign are inserted, as *The Electron in Biquaternionic Form* records.
 
 ## Conventions and the Sign Bookkeeping
 
@@ -68,23 +68,23 @@ $$
 a'_t\in\mathbb{R},\quad\vec A\in\mathbb{R}^{3},
 $$
 
-and the article writes $\varphi:=c\,a'_t$ for the electric potential, so that $ϙ\varphi$ is an energy. This is the same identification the Klein–Gordon companion makes when it writes the four-momentum shift as $\hbar c\,P_t=E+ϙ\varphi$ and $\hbar\vec P=\vec p-q\vec A$; the letters differ and the object does not.
+and the article writes $\varphi:=c\,a'_t$ for the electric potential, so that $ϙ\varphi$ is an energy. This is the same identification the Klein–Gordon companion makes when it writes the four-momentum shift as $\frac{h}{2\pi} c\,P_t=E+ϙ\varphi$ and $\frac{h}{2\pi}\vec P=\vec p-q\vec A$; the letters differ and the object does not.
 
 **The two signs, and why they differ.** In the $t'$ language the covariant derivative's slots are
 
 $$
-D_t=\partial_{t'}-\frac{i\,ϙ}{\hbar}\varphi,
+D_t=\partial_{t'}-\frac{2\pi i\,ϙ}{h}\varphi,
 \qquad
-D_\eta=\partial_\eta+\frac{i\,ϙ}{\hbar}A_\eta,
+D_\eta=\partial_\eta+\frac{2\pi i\,ϙ}{h}A_\eta,
 \qquad
 \eta\in\{x,y,z\}.
 $$
 
 The temporal slot carries a minus where the spatial slots carry a plus. The difference is not a choice of this article and it is not a sign error: $\tilde A_\Phi$'s temporal coefficient is imaginary, $\tilde\nabla_\Phi$'s temporal slot carries the metric $i$ of $\partial/\partial R_t=-i\partial_{r'_t}$, and after the two factors of $i$ are multiplied the temporal connection enters with the opposite sign to the spatial ones. The Klein–Gordon companion's four-momentum shift carries the same sign difference, and its covariant square carries it twice.
 
-**Hermiticity.** Each $D_\eta$ is anti-Hermitian for the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ when $A_\eta$ is real, since $D_\eta^{\dagger}=-D_\eta$; each $D_\eta^{2}$ is therefore Hermitian, and $(D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)$ is a sum of moduli. The temporal combination is Hermitian in the same sense, $i\hbar D_t=i\hbar\partial_{t'}+ϙ\varphi$, because the second term is a real multiplication. The two facts together are what make the equation's operator Hermitian and its action real.
+**Hermiticity.** Each $D_\eta$ is anti-Hermitian for the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ when $A_\eta$ is real, since $D_\eta^{\dagger}=-D_\eta$; each $D_\eta^{2}$ is therefore Hermitian, and $(D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)$ is a sum of moduli. The temporal combination is Hermitian in the same sense, $i \frac{h}{2\pi} D_t=i \frac{h}{2\pi}\partial_{t'}+ϙ\varphi$, because the second term is a real multiplication. The two facts together are what make the equation's operator Hermitian and its action real.
 
-**What the sign of $ϙ$ means.** With these conventions the mechanical momentum is $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy enters as $-ϙ\varphi$, which is $q\varphi$ with $q=-ϙ$. That is the standard equation with the electric charge, and the corpus's kinetic momentum $\vec p-q\vec A$ is the same display and not another one. The article keeps the companions' sign and does not silently flip it; every formula below is written in terms of $ϙ$, so a reader who prefers the older letter reads $ϙ$ as minus the charge and nothing else changes.
+**What the sign of $ϙ$ means.** With these conventions the mechanical momentum is $\vec\pi=-i \frac{h}{2\pi}\nabla-q\vec A$ and the potential energy enters as $-ϙ\varphi$, which is $q\varphi$ with $q=-ϙ$. That is the standard equation with the electric charge, and the corpus's kinetic momentum $\vec p-q\vec A$ is the same display and not another one. The article keeps the companions' sign and does not silently flip it; every formula below is written in terms of $ϙ$, so a reader who prefers the older letter reads $ϙ$ as minus the charge and nothing else changes.
 
 ## The Carrier and the Phase Symmetry
 
@@ -106,7 +106,7 @@ $$
 
 and its conservation is one line from the equation and its conjugate. The factor of two is the $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ convention and not a normalisation; it is stated once here and not again.
 
-**The local version, and what it costs.** The gauge principle localises the centre's $\mathrm{U}(1)$: the angle becomes a real function $\Gamma$, the field acquires the factor $\lambda=\exp(iϙ\Gamma/\hbar)$, and the connection transforms as
+**The local version, and what it costs.** The gauge principle localises the centre's $\mathrm{U}(1)$: the angle becomes a real function $\Gamma$, the field acquires the factor $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$, and the connection transforms as
 
 $$
 \tilde A_\Phi\longmapsto\tilde A_\Phi-\tilde\nabla_\Phi\Gamma,
@@ -123,30 +123,30 @@ The two transformation laws are one law read in two slots, and they must be kept
 **The equation.** Replacing the gradient by the covariant derivative slot by slot gives
 
 $$
-i\hbar\,D_t\tilde\Xi=\frac{1}{2m}\sum_\eta\big(-i\hbar\,D_\eta\big)^{2}\tilde\Xi,
+i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi}\,D_\eta\big)^{2}\tilde\Xi,
 $$
 
 which written out is
 
 $$
-i\hbar\,\partial_{t'}\tilde\Xi+ϙ\varphi\,\tilde\Xi=\frac{1}{2m}\sum_\eta\Big(-i\hbar\,\partial_\eta+ϙ A_\eta\Big)^{2}\tilde\Xi .
+i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi+ϙ\varphi\,\tilde\Xi=\frac{1}{2m}\sum_\eta\Big(-i \frac{h}{2\pi}\,\partial_\eta+ϙ A_\eta\Big)^{2}\tilde\Xi .
 $$
 
-The left side is the covariant time derivative times $i\hbar$; the right side is the kinetic energy written with the mechanical momentum $\vec\pi_\eta=-i\hbar D_\eta=-i\hbar\partial_\eta+ϙA_\eta$. Both sides are built from the same object, and that is the whole of the prescription.
+The left side is the covariant time derivative times $i \frac{h}{2\pi}$; the right side is the kinetic energy written with the mechanical momentum $\vec\pi_\eta=-i \frac{h}{2\pi} D_\eta=-i \frac{h}{2\pi}\partial_\eta+ϙA_\eta$. Both sides are built from the same object, and that is the whole of the prescription.
 
 **Why the equation has four copies and no more.** $D_\eta$ has central coefficients, so it commutes with the units; the operator therefore acts on each of the four complex coefficients of $\tilde\Xi$ separately and identically. The coupled theory is four copies of the standard charged scalar field sharing one connection and one charge, with no equation relating the four coefficients. This is the free article's fourfold structure surviving the coupling, and it is the scalar case's answer to the carrier question: the coupling forces no enlargement because it is central.
 
-**The equation is linear, and its operator is Hermitian.** The covariant derivative is complex-linear, so the equation is linear over $\mathbb{C}$ and no term is quadratic in $\tilde\Xi$. Since $D_\eta$ is anti-Hermitian and $D_\eta^{2}$ Hermitian, and since $i\hbar D_t$ is Hermitian, the operator on the right is Hermitian for the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ and the flow it generates preserves $n$. The one hypothesis is that $\varphi$ and $\vec A$ are real, which is the material-sector condition on the connection and not a further assumption.
+**The equation is linear, and its operator is Hermitian.** The covariant derivative is complex-linear, so the equation is linear over $\mathbb{C}$ and no term is quadratic in $\tilde\Xi$. Since $D_\eta$ is anti-Hermitian and $D_\eta^{2}$ Hermitian, and since $i \frac{h}{2\pi} D_t$ is Hermitian, the operator on the right is Hermitian for the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ and the flow it generates preserves $n$. The one hypothesis is that $\varphi$ and $\vec A$ are real, which is the material-sector condition on the connection and not a further assumption.
 
-**What the equation is not.** It is not the second-order covariant d'Alembertian restricted to a slowly varying field. The Klein–Gordon companion records that the covariant square of the quaternion-conjugate gradient differs from the sum of the covariant squares by a curvature term; nothing of that kind arises here, because the Schrödinger equation is first order in time and the kinetic operator is a sum of squares of first-order operators with no $\natural$ on the outside. The curvature enters the Schrödinger equation only through the commutator of two covariant derivatives, and that commutator is a multiplication by $\frac{iϙ}{\hbar}(\partial_\eta A_\zeta-\partial_\zeta A_\eta)$, which is the field strength and is not a differential operator at all. The commutation of $D_\eta$ and $D_\zeta$ is therefore a magnetic-field statement and never a constraint on the carrier.
+**What the equation is not.** It is not the second-order covariant d'Alembertian restricted to a slowly varying field. The Klein–Gordon companion records that the covariant square of the quaternion-conjugate gradient differs from the sum of the covariant squares by a curvature term; nothing of that kind arises here, because the Schrödinger equation is first order in time and the kinetic operator is a sum of squares of first-order operators with no $\natural$ on the outside. The curvature enters the Schrödinger equation only through the commutator of two covariant derivatives, and that commutator is a multiplication by $\frac{2\pi iϙ}{h}(\partial_\eta A_\zeta-\partial_\zeta A_\eta)$, which is the field strength and is not a differential operator at all. The commutation of $D_\eta$ and $D_\zeta$ is therefore a magnetic-field statement and never a constraint on the carrier.
 
 ## Gauge Covariance
 
-**The first derivative.** With primes marking the transformed objects and $D'_\eta=\partial_\eta+\frac{iϙ}{\hbar}A'_\eta$,
+**The first derivative.** With primes marking the transformed objects and $D'_\eta=\partial_\eta+\frac{2\pi iϙ}{h}A'_\eta$,
 
 $$
 D'_\eta\big(\lambda\tilde\Xi\big)
-=\lambda\Big(\partial_\eta+\frac{iϙ}{\hbar}\partial_\eta\Gamma+\frac{iϙ}{\hbar}A_\eta-\frac{iϙ}{\hbar}\partial_\eta\Gamma\Big)\tilde\Xi
+=\lambda\Big(\partial_\eta+\frac{2\pi iϙ}{h}\partial_\eta\Gamma+\frac{2\pi iϙ}{h}A_\eta-\frac{2\pi iϙ}{h}\partial_\eta\Gamma\Big)\tilde\Xi
 =\lambda\,D_\eta\tilde\Xi .
 $$
 
@@ -163,9 +163,9 @@ $$
 and the equation is form-invariant:
 
 $$
-i\hbar\,D'_t\tilde\Xi'=\frac{1}{2m}\sum_\eta\big(-i\hbar\,D'_\eta\big)^{2}\tilde\Xi'
+i \frac{h}{2\pi}\,D'_t\tilde\Xi'=\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi}\,D'_\eta\big)^{2}\tilde\Xi'
 \qquad\Longleftrightarrow\qquad
-i\hbar\,D_t\tilde\Xi=\frac{1}{2m}\sum_\eta\big(-i\hbar\,D_\eta\big)^{2}\tilde\Xi .
+i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi}\,D_\eta\big)^{2}\tilde\Xi .
 $$
 
 **What the covariance does not use.** It does not use the commutativity of the field with anything, the reality of the field, or the central field's collapse. It uses only the centrality of $\lambda$ and of the connection's coefficients, and it therefore holds for every element of $\mathbb{B}$ and for every connection in the material sector. The Dirac companion's covariance proof has the same three lines and one more: there the two members of the pair carry $\natural$, and the conjugate operator carries the conjugate connection. Here there is one equation and one operator, and no second member.
@@ -175,8 +175,8 @@ $$
 **The current.** The phase symmetry's Noether current of the coupled equation is the free article's bilinear with every derivative covariant,
 
 $$
-j_\eta=\frac{\hbar}{2mi}\,\mathrm{Sc}\Big(\tilde\Xi^{*}D_\eta\tilde\Xi-\big(D_\eta\tilde\Xi\big)^{*}\tilde\Xi\Big)
-=\frac{\hbar}{m}\,\mathrm{Im}\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big),
+j_\eta=\frac{h}{4\pi mi}\,\mathrm{Sc}\Big(\tilde\Xi^{*}D_\eta\tilde\Xi-\big(D_\eta\tilde\Xi\big)^{*}\tilde\Xi\Big)
+=\frac{h}{2\pi m}\,\mathrm{Im}\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big),
 $$
 
 and the temporal component is the density,
@@ -188,11 +188,11 @@ $$
 
 The second equality in the first line is an identity: the bracket is the difference of a number and its conjugate, so it is $2i$ times a real number, and dividing by $2i$ leaves the real part. The current is therefore real by construction and not by a check.
 
-**Conservation.** With $\partial_\eta\tilde\Xi^{*}=(D_\eta\tilde\Xi)^{*}+\frac{iϙ}{\hbar}A_\eta\tilde\Xi^{*}$ and $\partial_\eta D_\eta\tilde\Xi=D_\eta^{2}\tilde\Xi-\frac{iϙ}{\hbar}A_\eta D_\eta\tilde\Xi$, the connection's terms cancel in pairs and
+**Conservation.** With $\partial_\eta\tilde\Xi^{*}=(D_\eta\tilde\Xi)^{*}+\frac{2\pi iϙ}{h}A_\eta\tilde\Xi^{*}$ and $\partial_\eta D_\eta\tilde\Xi=D_\eta^{2}\tilde\Xi-\frac{2\pi iϙ}{h}A_\eta D_\eta\tilde\Xi$, the connection's terms cancel in pairs and
 
 $$
 \partial_{t'}n+\sum_\eta\partial_\eta j_\eta
-=-\frac{1}{m}\,\mathrm{Im}\,\mathrm{Sc}\Big[\tilde\Xi^{*}\Big(\frac{1}{2m}\sum_\eta\big(-i\hbar D_\eta\big)^{2}-\big(i\hbar D_t\big)\Big)\tilde\Xi\Big],
+=-\frac{1}{m}\,\mathrm{Im}\,\mathrm{Sc}\Big[\tilde\Xi^{*}\Big(\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi} D_\eta\big)^{2}-\big(i \frac{h}{2\pi} D_t\big)\Big)\tilde\Xi\Big],
 $$
 
 so the right side is the equation's residual contracted with the field and projected on the imaginary part of the scalar part: it vanishes on every solution and the continuity equation is exact off shell. The same identity in the free case is the free article's, with $D_\eta\to\partial_\eta$.
@@ -220,23 +220,23 @@ $$
 =\big(h_t-ϙ\varphi\big)e_t+i\big(\vec h_\Psi-q\vec A\big).
 $$
 
-The element has the same form as $\tilde H_\Psi$, with two real numbers shifted, so every statement of the free article and of its polar companion applies to it unchanged. The phase runs at $-(h_t-ϙ\varphi)/\hbar$, the rotor's axis is $\vec h_\Psi-q\vec A$, every carried direction turns at $2|\vec h_\Psi-q\vec A|/\hbar$, and the frozen parameters are the field's scale and rapidity as before.
+The element has the same form as $\tilde H_\Psi$, with two real numbers shifted, so every statement of the free article and of its polar companion applies to it unchanged. The phase runs at $-(h_t-ϙ\varphi)\frac{2\pi}{h}$, the rotor's axis is $\vec h_\Psi-q\vec A$, every carried direction turns at $2|\vec h_\Psi-q\vec A|\frac{2\pi}{h}$, and the frozen parameters are the field's scale and rapidity as before.
 
-**How to read the two shifts.** $\vec h_\Psi$ is the free field's momentum and $h_t$ its energy; after the coupling the coefficients are the mechanical momentum and the canonical energy, $h_t-ϙ\varphi$. The first is the canonical-to-kinetic dictionary in the spatial slot, the second in the temporal one, and they carry opposite signs for the reason §*Conventions and the Sign Bookkeeping* gives. A constant potential therefore translates every frequency by $ϙ\varphi/\hbar$ and every rotor axis by $ϙ\vec A$, and it resizes nothing: the gap between the two eigenvalues is $2|\vec h_\Psi-q\vec A|$ and depends on the vector potential alone.
+**How to read the two shifts.** $\vec h_\Psi$ is the free field's momentum and $h_t$ its energy; after the coupling the coefficients are the mechanical momentum and the canonical energy, $h_t-ϙ\varphi$. The first is the canonical-to-kinetic dictionary in the spatial slot, the second in the temporal one, and they carry opposite signs for the reason §*Conventions and the Sign Bookkeeping* gives. A constant potential therefore translates every frequency by $\frac{2\pi ϙ\varphi}{h}$ and every rotor axis by $ϙ\vec A$, and it resizes nothing: the gap between the two eigenvalues is $2|\vec h_\Psi-q\vec A|$ and depends on the vector potential alone.
 
-**No gauge invariance is lost.** The two shifts are consistent with the gauge transformation, and the check is one line: under $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ the phase rate would appear to change, but the field's phase changes by $ϙ\Gamma/\hbar$ in the same step, and the two changes are equal and opposite. In the constant setting the gauge function must be at most linear in $t'$ for the connection to stay constant, and for a linear one the shift of $\varphi$ is a constant translation of the phase rate — which is exactly the translation the field's own phase supplies.
+**No gauge invariance is lost.** The two shifts are consistent with the gauge transformation, and the check is one line: under $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ the phase rate would appear to change, but the field's phase changes by $\frac{2\pi ϙ\Gamma}{h}$ in the same step, and the two changes are equal and opposite. In the constant setting the gauge function must be at most linear in $t'$ for the connection to stay constant, and for a linear one the shift of $\varphi$ is a constant translation of the phase rate — which is exactly the translation the field's own phase supplies.
 
 ## The Non-Relativistic Limit of the Coupled Klein–Gordon Equation
 
 **The statement.** The coupled Schrödinger system is the non-relativistic limit of the coupled Klein–Gordon system — scalar electrodynamics — in the same sense in which the free Schrödinger equation is the non-relativistic limit of the free Klein–Gordon equation. The free statement is the free article's open question 4 and this article does not close it either; what the coupling adds is a check that the two limiting procedures agree.
 
-**The two slots must agree.** Write the coupled Klein–Gordon equation in the component form of its companion, $\big(\sum_\mu D_\mu^{2}-k_m^{2}\big)\tilde\Xi=0$, and set $\tilde\Xi=e^{-ik_m r'_t}\tilde\Xi_{\mathrm{nr}}$ with $k_m=mc/\hbar$. The temporal slot then produces a term linear in $k_m$, which is the mass, and the balance of that term against the spatial covariant Laplacian gives
+**The two slots must agree.** Write the coupled Klein–Gordon equation in the component form of its companion, $\big(\sum_\mu D_\mu^{2}-k_m^{2}\big)\tilde\Xi=0$, and set $\tilde\Xi=e^{-ik_m r'_t}\tilde\Xi_{\mathrm{nr}}$ with $k_m=\frac{2\pi mc}{h}$. The temporal slot then produces a term linear in $k_m$, which is the mass, and the balance of that term against the spatial covariant Laplacian gives
 
 $$
-i\hbar\,D_t\tilde\Xi_{\mathrm{nr}}\simeq\frac{1}{2m}\sum_\eta\big(-i\hbar D_\eta\big)^{2}\tilde\Xi_{\mathrm{nr}},
+i \frac{h}{2\pi}\,D_t\tilde\Xi_{\mathrm{nr}}\simeq\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi} D_\eta\big)^{2}\tilde\Xi_{\mathrm{nr}},
 $$
 
-with the same $D_\eta$ and the same $D_t$ as above. The sign check is the one that matters: the temporal slot of the Klein–Gordon equation carries $+\frac{iϙ}{\hbar}A_t$ with $A_t=i\varphi/c$, and after the mass phase is removed it becomes $\partial_{t'}-\frac{iϙ}{\hbar}\varphi$, which is this article's $D_t$. Had the metric sign been dropped, the potential would have entered with the wrong sign in one slot and the limit would not close.
+with the same $D_\eta$ and the same $D_t$ as above. The sign check is the one that matters: the temporal slot of the Klein–Gordon equation carries $+\frac{2\pi iϙ}{h}A_t$ with $A_t=i\varphi/c$, and after the mass phase is removed it becomes $\partial_{t'}-\frac{2\pi iϙ}{h}\varphi$, which is this article's $D_t$. Had the metric sign been dropped, the potential would have entered with the wrong sign in one slot and the limit would not close.
 
 **What the limit does not preserve.** The Klein–Gordon density is the temporal slot of its current and changes sign with the branch; the Schrödinger density is a norm. The limit therefore keeps the positive-frequency branch and discards the other, and the discarded branch is not a small correction — it is a second field. The same remark is the free article's, and the coupling does not alter it.
 
@@ -261,14 +261,14 @@ with the same $D_\eta$ and the same $D_t$ as above. The sign check is the one th
 The coupled Schrödinger equation is
 
 $$
-i\hbar\,D_t\tilde\Xi=\frac{1}{2m}\sum_\eta\big(-i\hbar D_\eta\big)^{2}\tilde\Xi,
+i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi} D_\eta\big)^{2}\tilde\Xi,
 \qquad
-D_t=\partial_{t'}-\frac{i\,ϙ}{\hbar}\varphi,
+D_t=\partial_{t'}-\frac{2\pi i\,ϙ}{h}\varphi,
 \qquad
-D_\eta=\partial_\eta+\frac{i\,ϙ}{\hbar}A_\eta,
+D_\eta=\partial_\eta+\frac{2\pi i\,ϙ}{h}A_\eta,
 $$
 
-with $\tilde\Xi\in\mathbb{B}$ one general element, $ϙ$ the coupling and $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ the material connection. The two signs of the two slots differ by the metric, not by a convention, and the mechanical momentum is $\vec\pi=-i\hbar\nabla-q\vec A$.
+with $\tilde\Xi\in\mathbb{B}$ one general element, $ϙ$ the coupling and $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ the material connection. The two signs of the two slots differ by the metric, not by a convention, and the mechanical momentum is $\vec\pi=-i \frac{h}{2\pi}\nabla-q\vec A$.
 
 The field remains one element of $\mathbb{B}$ and the coupling changes nothing about the carrier, because the connection's coefficients are central and left multiplication by them is scalar multiplication. The theory is four copies of the standard charged scalar field sharing one connection.
 
@@ -277,7 +277,7 @@ Gauge covariance is exact and holds for a general element: the central unit canc
 The current is
 
 $$
-j_\eta=\frac{\hbar}{2mi}\,\mathrm{Sc}\Big(\tilde\Xi^{*}D_\eta\tilde\Xi-\big(D_\eta\tilde\Xi\big)^{*}\tilde\Xi\Big),
+j_\eta=\frac{h}{4\pi mi}\,\mathrm{Sc}\Big(\tilde\Xi^{*}D_\eta\tilde\Xi-\big(D_\eta\tilde\Xi\big)^{*}\tilde\Xi\Big),
 \qquad
 j_t=n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi),
 $$
@@ -300,15 +300,15 @@ In the constant setting the coupling is a shift of two numbers, $\tilde H^{\rm g
 | $ϙ$ | The coupling constant; minus the electric charge of the older convention |
 | $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ | The material-sector connection; $\varphi$ and $\vec A$ real |
 | $\varphi=c\,a'_t$ | The electric potential, so that $ϙ\varphi$ is an energy |
-| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | The covariant derivative |
-| $D_t=\partial_{t'}-\frac{iϙ}{\hbar}\varphi$, $D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta$ | Its slots in the $t'$ language |
-| $\vec\pi_\eta=-i\hbar D_\eta=-i\hbar\partial_\eta+ϙA_\eta$ | The mechanical momentum |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | The covariant derivative |
+| $D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\varphi$, $D_\eta=\partial_\eta+\frac{2\pi iϙ}{h}A_\eta$ | Its slots in the $t'$ language |
+| $\vec\pi_\eta=-i \frac{h}{2\pi} D_\eta=-i \frac{h}{2\pi}\partial_\eta+ϙA_\eta$ | The mechanical momentum |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | The free Hermitian Hamiltonian |
 | $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi-q\vec A)$ | The coupled Hamiltonian of the constant setting |
 | $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | The density; $\rho=2n$ is the free article's |
 | $j_\eta$, $j_t=n$ | The particle current and its temporal component |
 | $\rho_{\mathrm{chg}}=ϙ n$, $\vec J=ϙ\vec j$ | The charge density and the charge current |
-| $\lambda=e^{iϙ\Gamma/\hbar}$ | The gauge factor; $\Gamma$ real |
+| $\lambda=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge factor; $\Gamma$ real |
 | $\Gamma$ | The gauge function; $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$, $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ |
 
 ## Further Reading

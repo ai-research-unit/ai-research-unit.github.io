@@ -162,7 +162,7 @@ Off the cone the rank is three. The map is three in and four out, so rank three 
 
 **On the cone the rank is two.** The first eigenvalue vanishes, so $\varepsilon_{\mathrm{fop},+}$ joins the kernel, the rank falls by one and the cokernel becomes two-dimensional. The second eigenvalue is $-2k_{\Phi}$, non-zero at every non-zero wave number, so $\varepsilon_{\mathrm{fop},-}$ is never annihilated.
 
-The domain is the forward cone. The count is stated for $k_{t}^{\prime}\ge0$ and $k_{\Phi}>0$, which is what $k_{t}^{\prime}=E/(\hbar c)$ with $E>0$ and a non-zero momentum give. Neither restriction is cosmetic. At negative energy the drop does not disappear but moves: at $k_{t}^{\prime}=-k_{\Phi}$ the branch that vanishes is $\varepsilon_{\mathrm{fop},-}$, and $\varepsilon_{\mathrm{fop},+}$ is scaled by $+2k_{\Phi}$, so the mirror statement of §*The conjugate symbol kills the other direction* holds with the two circular labels exchanged. At $\vec k_{\Phi}=0$ the unit direction $\vec u_\Phi$ does not exist and the circular basis is undefined; there the symbol is the central scalar $i k_{t}^{\prime}e_t$, of rank three on the vector part for $k_{t}^{\prime}\ne0$ and of rank zero at the origin, where both eigenvalues vanish at once.
+The domain is the forward cone. The count is stated for $k_{t}^{\prime}\ge0$ and $k_{\Phi}>0$, which is what $k_{t}^{\prime}=\frac{2\pi E}{h\,c}$ with $E>0$ and a non-zero momentum give. Neither restriction is cosmetic. At negative energy the drop does not disappear but moves: at $k_{t}^{\prime}=-k_{\Phi}$ the branch that vanishes is $\varepsilon_{\mathrm{fop},-}$, and $\varepsilon_{\mathrm{fop},+}$ is scaled by $+2k_{\Phi}$, so the mirror statement of §*The conjugate symbol kills the other direction* holds with the two circular labels exchanged. At $\vec k_{\Phi}=0$ the unit direction $\vec u_\Phi$ does not exist and the circular basis is undefined; there the symbol is the central scalar $i k_{t}^{\prime}e_t$, of rank three on the vector part for $k_{t}^{\prime}\ne0$ and of rank zero at the origin, where both eigenvalues vanish at once.
 
 The four rows, in one table. The first two were checked on one hundred random frequency points each, with the rank taken by singular value decomposition at a tolerance of $10^{-9}$ and the cokernel dimension taken as $4-r$. The last two are exact: the negative cone is the positive cone with $k_{t}^{\prime}$ reflected, and the origin is a zero map.
 
@@ -320,9 +320,9 @@ What is not derived. Gauge invariance, the value of a mass, the mechanism of the
 | $\tilde K_{\Phi}$ | the wave-number element $i\,k_{t}^{\prime}e_t+\vec k_{\Phi}$ |
 | $\tilde K_{\Phi}^{\natural}$ | its quaternion conjugate $i\,k_{t}^{\prime}e_t-\vec k_{\Phi}$ |
 | $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$ | the central quaternion norm, $-k_{t}^{\prime\,2}+k_{\Phi}^{2}$, equal to $-k_{m}^{2}$ on shell |
-| $k_{t}^{\prime}$ | the energy wave number, $E/(\hbar c)=\omega/c$ |
-| $k_{\Phi}$ | the modulus of the momentum wave number, $\lvert\vec p\rvert/\hbar$ |
-| $k_{m}$ | the mass wave number, $m\,c/\hbar$ |
+| $k_{t}^{\prime}$ | the energy wave number, $\frac{2\pi E}{h\,c}=\omega/c$ |
+| $k_{\Phi}$ | the modulus of the momentum wave number, $\frac{2\pi \lvert\vec p\rvert}{h}$ |
+| $k_{m}$ | the mass wave number, $\frac{2\pi m\,c}{h}$ |
 | $\vec u_\Phi$ | the unit propagation direction, $\vec k_{\Phi}/k_{\Phi}$ |
 | $\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2}$ | a right-handed orthonormal pair transverse to $\vec u_\Phi$ |
 | $\varepsilon_{\mathrm{fop},\pm}$ | the circular directions $(\varepsilon_{\mathrm{fop},1}\pm i\varepsilon_{\mathrm{fop},2})/\sqrt 2$ |

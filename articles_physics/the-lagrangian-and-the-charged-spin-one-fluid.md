@@ -14,7 +14,7 @@ Position in the block. This is the variational companion of [The Charged Spin-On
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. $A_\mu$ is complex, $F_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$, $D_\mu=\partial_\mu+\frac{iϙ}{\hbar}A^{\mathrm{ext}}_\mu$, $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F^{*}_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A^{*}_\mu A_\mu$ in the corpus's signs, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) records the doubling and this article does not re-derive it.
+The conventions are restated here so that every sign below is checkable from this page alone. $A_\mu$ is complex, $F_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$, $D_\mu=\partial_\mu+\frac{2\pi iϙ}{h}A^{\mathrm{ext}}_\mu$, $k_m=\frac{2\pi mc}{h}$; $\mathcal L=-\frac14\sum_{\mu,\nu}F^{*}_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A^{*}_\mu A_\mu$ in the corpus's signs, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) records the doubling and this article does not re-derive it.
 
 ## The Action in the Fluid Variables
 
@@ -67,12 +67,12 @@ Written with the ordinary divergence, the condition has a source.
 $$
 \sum_\mu\varepsilon_\mu D_\mu A_\mu=0
 \qquad\Longleftrightarrow\qquad
-\sum_\mu\varepsilon_\mu\partial_\mu A_\mu=-\frac{iϙ}{\hbar}\sum_\mu\varepsilon_\mu A_{\mathrm{ext},\mu}A_\mu,
+\sum_\mu\varepsilon_\mu\partial_\mu A_\mu=-\frac{2\pi iϙ}{h}\sum_\mu\varepsilon_\mu A_{\mathrm{ext},\mu}A_\mu,
 $$
 
 and the right-hand side is not zero, is imaginary, and carries the carrier's phase. **That is the precise sense in which the condition ceases to be continuity**: the left-hand side is the divergence of the field and would be the flow's density balance, and the right-hand side is a source the flow does not supply.
 
-[The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) writes $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\theta_{\mathrm{pha}}}$: the divergence is imaginary, it is proportional to the coupling, and it carries twice the phase. Read as a continuity equation it says that the fluid's density is not conserved by the flow, and the $e^{2i\vartheta}$ says that what spoils the conservation is not a real rate but a phase-carrying quantity — a source that is not a scalar.
+[The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) writes $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)=-\frac{2\pi iϙ}{h}r^{2}e^{2i\theta_{\mathrm{pha}}}$: the divergence is imaginary, it is proportional to the coupling, and it carries twice the phase. Read as a continuity equation it says that the fluid's density is not conserved by the flow, and the $e^{2i\vartheta}$ says that what spoils the conservation is not a real rate but a phase-carrying quantity — a source that is not a scalar.
 
 *The free rung's cleanest result is gone.* There the Lorenz condition was continuity and the fluid's continuity was the mass's gift; here the condition is a constraint that the flow cannot satisfy alone.
 
@@ -92,7 +92,7 @@ Three statements, and each is unchanged.
 
 What the mass term no longer does is make the condition a conservation law. That is the fourth statement of the free rung and it is not available, for the reason the previous section gives: the source is there whether or not the mass is.
 
-And the coupling does not break the external gauge symmetry. Under $A\mapsto\lambda A$ with $\lambda=\exp(iϙ\Gamma/\hbar)$ and $A^{\mathrm{ext}}_\mu\mapsto A^{\mathrm{ext}}_\mu-\partial_\mu\Gamma$, both terms are invariant: the derivative term because $D$ is, the algebraic term because $\lvert\lambda\rvert^{2}=1$. Two different freedoms must be kept apart: the field's own shift, which the mass breaks at both rungs, and the external group's phase rotation, which is a symmetry at the charged rung and is what makes the carrier complex.
+And the coupling does not break the external gauge symmetry. Under $A\mapsto\lambda A$ with $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ and $A^{\mathrm{ext}}_\mu\mapsto A^{\mathrm{ext}}_\mu-\partial_\mu\Gamma$, both terms are invariant: the derivative term because $D$ is, the algebraic term because $\lvert\lambda\rvert^{2}=1$. Two different freedoms must be kept apart: the field's own shift, which the mass breaks at both rungs, and the external group's phase rotation, which is a symmetry at the charged rung and is what makes the carrier complex.
 
 ## The Structural Consequence: What the Carrier's Doubling Costs
 
@@ -104,7 +104,7 @@ The consequence for what the fluid reading can be is a boundary and the article 
 
 ## The Noether Currents: Charge, Spin and Stress
 
-Three currents, and the constraint removes part of one. The charge current is $q\rho_{\mathrm{chg}}$ and $q\rho_{\mathrm{chg}}\vec v$ with the mechanical velocity; the spin current is the rotor's momentum, $-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}}$, transported by the flow; the stress is the translation current of the chart's Lagrangian.
+Three currents, and the constraint removes part of one. The charge current is $q\rho_{\mathrm{chg}}$ and $q\rho_{\mathrm{chg}}\vec v$ with the mechanical velocity; the spin current is the rotor's momentum, $-\frac{h}{2\pi} c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}}$, transported by the flow; the stress is the translation current of the chart's Lagrangian.
 
 What the constraint does to them. The Lorenz condition is the scalar part of the connection's equation, so it constrains the charge current's divergence and not the spin's. The spin current is conserved by the rotor's equation alone, and the mass term does not break its conservation — it changes what the spin means, by making the longitudinal polarisation physical.
 
@@ -153,15 +153,15 @@ The carrier. Eight real parameters against the fluid's four; the action puts the
 | Symbol | Meaning |
 |---|---|
 | $A_\mu$ | The complex Proca field; eight real parameters |
-| $D_\mu=\partial_\mu+\frac{iϙ}{\hbar}A^{\mathrm{ext}}_\mu$ | The covariant derivative; abelian |
+| $D_\mu=\partial_\mu+\frac{2\pi iϙ}{h}A^{\mathrm{ext}}_\mu$ | The covariant derivative; abelian |
 | $F^{\mathrm{gco}}_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$ | The covariant field strength |
 | $r$, $u_\mu$ | Magnitude and direction; $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$ |
 | $\Omega_{\mu\nu}=D_\mu u_\nu-D_\nu u_\mu$ | Covariant curl, contracting to minus the covariant acceleration; its projection is the vorticity and is rank two |
 | $F^{\mathrm{gco}}=r\,\Omega+\mathrm{d}r\wedge u$ | The decomposition of the field strength |
 | $\lvert A\rvert^{2}$ | The algebraic term's argument; coupling-blind |
-| $k_m=mc/\hbar$ | Mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $ϙ$ | Coupling; minus the electric charge |
-| $\lambda=\exp(iϙ\Gamma/\hbar)$ | The external gauge element; a symmetry |
+| $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ | The external gauge element; a symmetry |
 | $\theta_{\mathrm{pha}}$ | The carrier's phase; appears squared in the divergence |
 | $\mathcal L_{\mathrm{gco}}$ | The Lagrangian density in the fluid variables with the connection |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
@@ -172,4 +172,4 @@ The carrier. Eight real parameters against the fluid's four; the action puts the
 - Wolfgang Pauli, "Relativistic field theories of elementary particles," *Reviews of Modern Physics* **13** (1941) 203–232, for the constraint counting of a massive vector field and the fate of its gauge freedom.
 - John R. Oppenheimer and Julian S. Schwinger, "On the interaction of mesotrons and nuclear particles," *Physical Review* **60** (1941) 150, for the constraint structure of a massive vector coupled to an external field.
 - Friedrich W. Hehl, "On the kinematics of the torsion of space-time," *Foundations of Physics* **15** (1985) 451–471, for a unit vector's covariant vorticity, its transversality and its rank.
-- The companion articles: [The Lagrangian and the Coupled Proca Equation in Polar Variables](the-lagrangian-and-the-coupled-proca-equation-in-polar-variables.html), the same action in the chart and the branch's role; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), the equations and the divergence $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\theta_{\mathrm{pha}}}$; [The Lagrangian and the Spin-One Fluid](the-lagrangian-and-the-spin-one-fluid.html), the free rung where the condition is continuity; and [The Lagrangian and the Charged Spin-Half Fluid](the-lagrangian-and-the-charged-spin-half-fluid.html), the rung where the coupling reaches neither the density's nor the spin's norm.
+- The companion articles: [The Lagrangian and the Coupled Proca Equation in Polar Variables](the-lagrangian-and-the-coupled-proca-equation-in-polar-variables.html), the same action in the chart and the branch's role; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), the equations and the divergence $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)=-\frac{2\pi iϙ}{h}r^{2}e^{2i\theta_{\mathrm{pha}}}$; [The Lagrangian and the Spin-One Fluid](the-lagrangian-and-the-spin-one-fluid.html), the free rung where the condition is continuity; and [The Lagrangian and the Charged Spin-Half Fluid](the-lagrangian-and-the-charged-spin-half-fluid.html), the rung where the coupling reaches neither the density's nor the spin's norm.

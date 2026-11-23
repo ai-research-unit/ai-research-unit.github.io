@@ -15,12 +15,12 @@ The equation. The coupled Klein–Gordon equation is the free one with covariant
 $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi,
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi,
 \qquad
 \tilde A_\Phi=i\,a'_t\,e_t+\vec A,
 $$
 
-with $a'_t$ and $\vec A$ real, so that $\tilde A_\Phi$ is an element of the material sector $\mathbb{B}_\Phi$ and its four coefficients are the scalar and the vector potential. The connection is central per component in the abelian case, which is the fact the whole article turns on: $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ is a central operator, it commutes with the complete polar decomposition, and it adds one scalar to each bracket of the logarithmic derivative without disturbing the bracket's type.
+with $a'_t$ and $\vec A$ real, so that $\tilde A_\Phi$ is an element of the material sector $\mathbb{B}_\Phi$ and its four coefficients are the scalar and the vector potential. The connection is central per component in the abelian case, which is the fact the whole article turns on: $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$ is a central operator, it commutes with the complete polar decomposition, and it adds one scalar to each bracket of the logarithmic derivative without disturbing the bracket's type.
 
 Three things are established.
 
@@ -34,7 +34,7 @@ What is not here. No new solution, no new prediction, no new particle. The artic
 
 Position in the block. This article is the charged companion of [The Spin-Zero Fluid](the-spin-zero-fluid.html). Its siblings are [The Charged Spin-Half Fluid](the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html) and [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), and the three are compared side by side in §*The Three Charged Fluids*. The free article's own table of the three free fluids is in that article and in the two free companions, and the present table is its charged counterpart.
 
-Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The material time is $r'_t=c\,t'$, the d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $k_m=mc/\hbar$. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, the coupling is $ϙ$, the action is $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, and $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
+Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The material time is $r'_t=c\,t'$, the d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $k_m=\frac{2\pi mc}{h}$. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, the coupling is $ϙ$, the action is $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, and $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
 
 ## The Bracket the Connection Reaches
 
@@ -43,7 +43,7 @@ The coupling enters the logarithmic derivative as one added central element, and
 $$
 \tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi
 =\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}
-+i\Bigl(\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}+\frac{ϙ}{\hbar}A_\mu\Bigr)
++i\Bigl(\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}+\frac{2\pi ϙ}{h}A_\mu\Bigr)
 +\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu}\Bigr)\tilde u_{\mathrm r}
 +\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_\mu},
 $$
@@ -53,7 +53,7 @@ and the four terms are the free article's four brackets with the connection's sh
 | bracket | type | the connection's share |
 | --- | --- | --- |
 | $\tfrac12\partial_\mu\ln \varrho^{2}$ | real central scalar | none |
-| $i\partial_\mu\theta_{\mathrm{pha}}+\frac{iϙ}{\hbar}A_\mu$ | central imaginary, with a real part | the whole slot |
+| $i\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi iϙ}{h}A_\mu$ | central imaginary, with a real part | the whole slot |
 | $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | none |
 | $\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$ | real vector part | none |
 
@@ -67,7 +67,7 @@ $$
 \tilde P_\Phi=i\frac{E}{c}e_t+\vec p,
 $$
 
-with $E=-\hbar c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$ and $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ the free readings. Slot by slot the shift is $E\mapsto E+ϙc\,a'_t$ and $\vec p\mapsto\vec p-q\vec A$ — one substitution in one element, with the two signs the metric's and not a convention.
+with $E=-\frac{h}{2\pi} c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$ and $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ the free readings. Slot by slot the shift is $E\mapsto E+ϙc\,a'_t$ and $\vec p\mapsto\vec p-q\vec A$ — one substitution in one element, with the two signs the metric's and not a convention.
 
 The one-line reason, and the reason it matters for the fluid. A central connection acts on the word as a whole, so it can move the phase and cannot reach inside the product $e^{i\theta_{\mathrm{pha}}}\varepsilon$ to change the branch. **The branch $\varepsilon$ is untouched by the coupling**, and that is the first of the article's negative results: the charge does not repair the sign of the charge density.
 
@@ -81,7 +81,7 @@ c\,\rho_{\mathrm{chg}}=\frac{\rho_{\mathrm{num}}}{m}\bigl(E+ϙc\,a'_t\bigr),
 \gamma=-\frac{1}{c}\,V^{t},
 $$
 
-and the bracket is invariant under $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Lambda/\hbar$, $\tilde A_\Phi\mapsto\tilde A_\Phi-\tilde\nabla_\Phi\Lambda$, because the two shifts cancel inside it. The free current was not gauge invariant and the coupling repairs that; the repair is a cancellation inside one bracket, where the element form's is a cancellation between two terms of a bilinear.
+and the bracket is invariant under $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Lambda}{h}$, $\tilde A_\Phi\mapsto\tilde A_\Phi-\tilde\nabla_\Phi\Lambda$, because the two shifts cancel inside it. The free current was not gauge invariant and the coupling repairs that; the repair is a cancellation inside one bracket, where the element form's is a cancellation between two terms of a bilinear.
 
 The velocity is the mechanical one and it is the only velocity the fluid has. Write
 
@@ -141,16 +141,16 @@ The circulation is the canonical winding plus the flux, and the two terms have d
 $$
 \oint\tilde P^{\mathrm{mech}}\cdot\mathrm{d}\vec l
 =\oint\vec p\cdot\mathrm{d}\vec l+ϙ\oint\vec A\cdot\mathrm{d}\vec l
-=2\pi\hbar\,n+ϙ\,\Phi_B,
+=h\,n+ϙ\,\Phi_B,
 $$
 
-the first term because $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ is a gradient and the phase's single valuedness makes its circulation an integer multiple of $2\pi\hbar$, the second because the circulation of the vector potential is the magnetic flux through any surface the loop bounds.
+the first term because $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ is a gradient and the phase's single valuedness makes its circulation an integer multiple of $h$, the second because the circulation of the vector potential is the magnetic flux through any surface the loop bounds.
 
-The canonical quantisation is untouched and the mechanical one is shifted. [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) proves that a loop linking a nodal line carries $\oint\vec p\cdot\mathrm{d}\vec l=2\pi\hbar n$, and that the circulation of $\vec p/m$ is $hn/m$. That statement is unchanged, because it is a statement about the angle and the nodes and neither the coupling nor the connection enters it. What the coupling changes is the fluid's circulation, and it changes it by the flux: $\omega=ϙF/m$, so the loop integral of the velocity is $2\pi\hbar n/m+ϙ\Phi_B/m$.
+The canonical quantisation is untouched and the mechanical one is shifted. [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) proves that a loop linking a nodal line carries $\oint\vec p\cdot\mathrm{d}\vec l=h n$, and that the circulation of $\vec p/m$ is $hn/m$. That statement is unchanged, because it is a statement about the angle and the nodes and neither the coupling nor the connection enters it. What the coupling changes is the fluid's circulation, and it changes it by the flux: $\omega=ϙF/m$, so the loop integral of the velocity is $h n/m+ϙ\Phi_B/m$.
 
 The flux term survives where the field strength vanishes on the loop. A loop encircling a solenoid has $\vec B=0$ on itself and $\Phi_B\ne0$ through it, so its mechanical circulation is shifted while its vorticity is zero at every point it passes. **The fluid's circulation is therefore not determined by the vorticity it carries**, because the potential is not determined by the field. The free article's identification of circulation with the winding of one function is exactly what the coupling breaks, and the break is topological and not dynamical.
 
-What that earns and what it does not. The relation $2\pi\hbar n+ϙ\Phi_B$ is the flux-quantisation condition of a charged condensate, and the free article refuses the superfluid identification on the ground that the object is one element and not a condensate. **The charged fluid earns the kinematic half of that identification and not the dynamical half**: its vorticity is locked to the flux and its circulation is quantised up to the flux, and it still has no order parameter, no condensate and no second sound. The analogy is with a charged fluid carrying its own field, which is the same conclusion the Proca article of the block reaches from the other end.
+What that earns and what it does not. The relation $h n+ϙ\Phi_B$ is the flux-quantisation condition of a charged condensate, and the free article refuses the superfluid identification on the ground that the object is one element and not a condensate. **The charged fluid earns the kinematic half of that identification and not the dynamical half**: its vorticity is locked to the flux and its circulation is quantised up to the flux, and it still has no order parameter, no condensate and no second sound. The analogy is with a charged fluid carrying its own field, which is the same conclusion the Proca article of the block reaches from the other end.
 
 ## The Force
 
@@ -187,7 +187,7 @@ was verified to hold in both slots with no residual term. Each of the three term
 
 The Lorentz force is a force and not a stress, and that is the structural statement. A flow whose only force is a gradient has no transverse force and therefore generates no vorticity; the free article says exactly this, and it is why the free scalar fluid cannot rotate. The coupling adds a transverse force without adding a stress, because the field is external: the quantum stress is computed from $\varrho$ and its derivatives, the connection does not enter it, and the field's own stress belongs to the field. So the charged scalar fluid has a prescribed vorticity, a transverse force, and still one stress.
 
-The quantum potential is untouched, and the reason is worth stating. $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ depends on the amplitude and its second derivatives. The coupling shifts the momentum and not the amplitude; the amplitude equation is the mass shell with the mechanical momentum and the same curvature term. So the third-order character of the force survives, and with it the free article's "no equation of state", which this article does not restate because nothing in it moves.
+The quantum potential is untouched, and the reason is worth stating. $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ depends on the amplitude and its second derivatives. The coupling shifts the momentum and not the amplitude; the amplitude equation is the mass shell with the mechanical momentum and the same curvature term. So the third-order character of the force survives, and with it the free article's "no equation of state", which this article does not restate because nothing in it moves.
 
 ## The Sign, the Threshold and the Klein Paradox
 
@@ -207,7 +207,7 @@ $$
 
 and the third member is not a condition on the flow alone: the flow and the connection are one datum, and neither determines the other. That is what the coupling does to the correspondence, and it is a change of the domain and not of the strength of either arrow.
 
-The two arrows are still of different strengths, and the asymmetry is now a quotient. The field gives a density, an action and a mechanical momentum, exactly and with no conditions. The reverse direction takes a positive density, an action and a connection and returns $\tilde\Xi=\varrho e^{iS_{\tilde\Xi}/\hbar}\varepsilon$, but two triples differing by a gauge transformation give the same field. **The map is well defined on gauge orbits and not on triples**, and the free article's bijection on the $N$-regular set is the $ϙ=0$ slice of a bijection on orbits. Nothing is lost and nothing is gained: the count of the field's data is unchanged, because the connection was never the field's datum.
+The two arrows are still of different strengths, and the asymmetry is now a quotient. The field gives a density, an action and a mechanical momentum, exactly and with no conditions. The reverse direction takes a positive density, an action and a connection and returns $\tilde\Xi=\varrho e^{\frac{2\pi iS_{\tilde\Xi}}{h}}\varepsilon$, but two triples differing by a gauge transformation give the same field. **The map is well defined on gauge orbits and not on triples**, and the free article's bijection on the $N$-regular set is the $ϙ=0$ slice of a bijection on orbits. Nothing is lost and nothing is gained: the count of the field's data is unchanged, because the connection was never the field's datum.
 
 A reader's objection, and the answer. The objection is that the mechanical velocity is defined as the canonical one plus the potential, so "the vorticity is the field strength" is a definition and not a result. The objection is right about the definition and wrong about the content: what the display fixes is that the fluid's vorticity is *not an independent variable*, and that is a statement about the fluid and not about the letters. A free fluid could have had a vorticity of its own and did not; this one has the field's and cannot have another.
 
@@ -220,8 +220,8 @@ Twelve statements, each one line, and each with its reason. This is what the cha
 3. The velocity is the mechanical momentum over the mass, and it is the only velocity the fluid has. It is invertible exactly where $Q_{\mathrm{qnt}}$ vanishes, as before.
 4. The flow is irrotational exactly where the field strength vanishes. $\omega=ϙF/m$, exact, with no quantum correction.
 5. The vorticity's rank is the field strength's: $0$, $2$ or $4$, and $4$ exactly where $\vec E\cdot\vec B\ne0$. No free fluid of the block reaches rank four with its vorticity proper.
-6. The circulation is $2\pi\hbar n+ϙ\Phi_B$, and the flux term survives on a loop where the field strength vanishes.
-7. The canonical circulation is untouched. $\oint\vec p\cdot\mathrm{d}\vec l=2\pi\hbar n$ still comes from the nodes and the coupling does not enter it.
+6. The circulation is $h n+ϙ\Phi_B$, and the flux term survives on a loop where the field strength vanishes.
+7. The canonical circulation is untouched. $\oint\vec p\cdot\mathrm{d}\vec l=h n$ still comes from the nodes and the coupling does not enter it.
 8. The force is the Lorentz force plus the free quantum gradient, and the free acceleration law is the $ϙ=0$ case of the coupled one, term for term.
 9. There is no new stress. The quantum stress is the free article's Korteweg stress, unchanged, and the field's stress is the field's.
 10. There is still no equation of state. $Q_{\mathrm{qnt}}$ carries two derivatives of $\ln \varrho$, and no function of the density's value produces it.
@@ -240,7 +240,7 @@ The three relativistic charged articles can be put side by side, and the table i
 | is it an invertible element? | only where the quantum potential vanishes | always, $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ | its boost is; the element is not a four-vector |
 | the vorticity | the field strength, $ϙF/m$ | the frame's gradient, and not $ϙF/m$ | not established; the free case's is $F$ minus a radial term |
 | the vorticity's rank | $0$, $2$ or $4$ | $2$ for the proper part | the free case's is $2$ |
-| the loop invariant | $2\pi\hbar n/m+ϙ\Phi_B/m$ | a Lorentz transformation times a phase | for $ϙ=0$ an integer; for $ϙ\ne0$, not known |
+| the loop invariant | $h n/m+ϙ\Phi_B/m$ | a Lorentz transformation times a phase | for $ϙ=0$ an integer; for $ϙ\ne0$, not known |
 | the force | the Lorentz force, plus a quantum potential | the Lorentz force, and no torque | the covariant divergence, self-acting |
 | the stress | the quantum potential is in it; no EOS | the antisymmetric part is in it; no EOS | its own field strength is in it; stiff on $F=0$ |
 | the degenerate set | $\varrho=0$, codimension two | $\varrho=0$, codimension two | $\varrho=0$; the free case's lightlike wall is gone |
@@ -258,7 +258,7 @@ The correspondence still has three steps, and the charge changes the second. The
 
 The forward arrow is unchanged and exact. Any nowhere-zero solution of the coupled equation gives a positive density, an action and a mechanical momentum, by the polar substitution, and the substitution is a bijection on the $N$-regular set. The connection is a datum of the equation and not of the solution, so it costs the arrow nothing.
 
-The reverse arrow now takes three data and returns one field. Given $(\rho_{\mathrm{num}},S_{\tilde\Xi},A)$ with $\rho_{\mathrm{num}}>0$, the field is $\varrho e^{iS_{\tilde\Xi}/\hbar}\varepsilon$, and it solves the coupled equation iff the pair of §*The Force* and §*The Vorticity* holds. The extra structure is therefore no longer a constitutive law internal to the fluid; it is a connection external to it, and the classical object it names is a charged fluid with a prescribed field.
+The reverse arrow now takes three data and returns one field. Given $(\rho_{\mathrm{num}},S_{\tilde\Xi},A)$ with $\rho_{\mathrm{num}}>0$, the field is $\varrho e^{\frac{2\pi iS_{\tilde\Xi}}{h}}\varepsilon$, and it solves the coupled equation iff the pair of §*The Force* and §*The Vorticity* holds. The extra structure is therefore no longer a constitutive law internal to the fluid; it is a connection external to it, and the classical object it names is a charged fluid with a prescribed field.
 
 | | the word's data | what the reverse map needs beyond it | the medium it makes |
 | --- | --- | --- | --- |
@@ -272,7 +272,7 @@ What the correspondence supports and what it does not. It supports the claim tha
 
 ## What Is Established and What Is Interpretation
 
-Established. The type table, and with it the statement that the coupling can reach the scale and the phase brackets and no others. The mechanical momentum as the canonical one plus the potential, and the velocity as that over the mass. The gauge invariance of the velocity, the charge density and the current, from a cancellation inside one bracket. The vorticity as $ϙF/m$, exactly, with the rank statement and the three-row singular-value table. The circulation as $2\pi\hbar n+ϙ\Phi_B$, and the survival of the flux term where the field strength vanishes on the loop. The acceleration law as the free one plus the Lorentz term, with the identity verified symbolically in both slots. The invariance of the quantum potential, the Korteweg class of the stress, and the absence of an equation of state. The movement of the charge-sign boundary with the potential, and its gauge invariance. The reverse map's domain as a set of triples, well defined on gauge orbits.
+Established. The type table, and with it the statement that the coupling can reach the scale and the phase brackets and no others. The mechanical momentum as the canonical one plus the potential, and the velocity as that over the mass. The gauge invariance of the velocity, the charge density and the current, from a cancellation inside one bracket. The vorticity as $ϙF/m$, exactly, with the rank statement and the three-row singular-value table. The circulation as $h n+ϙ\Phi_B$, and the survival of the flux term where the field strength vanishes on the loop. The acceleration law as the free one plus the Lorentz term, with the identity verified symbolically in both slots. The invariance of the quantum potential, the Korteweg class of the stress, and the absence of an equation of state. The movement of the charge-sign boundary with the potential, and its gauge invariance. The reverse map's domain as a set of triples, well defined on gauge orbits.
 
 The comparison is established as a table and not as a claim. Every entry of §*The Three Charged Fluids* is a statement proved in one of the three charged articles, and the entries are what make the comparison systematic: the word's count, the density, the velocity, the vorticity's form and rank, the circulation, where the charge lands, the stress, the equation of state, the compressibility, the degenerate set, and what closes the system.
 
@@ -282,13 +282,13 @@ Not claimed. It is not claimed that the charged fluid has a vorticity dynamics: 
 
 ## Summary
 
-The charged Klein–Gordon equation is $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word is the free article's $\varrho e^{i\theta_{\mathrm{pha}}}\varepsilon$ substituted into it.
+The charged Klein–Gordon equation is $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$, and the word is the free article's $\varrho e^{i\theta_{\mathrm{pha}}}\varepsilon$ substituted into it.
 
 The connection is central per component, so it merges with the scale and the phase brackets and cannot reach the branch. On the central field the kinematics is therefore exactly a shift of the phase rate, and the shift is the classical substitution in one element: $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$.
 
 The density is $\varrho^{2}$ and the conserved density is the mechanical phase rate times it, gauge invariant where the free one was not. The velocity is $\tilde P^{\mathrm{mech}}/m$, an invertible element exactly where the quantum potential vanishes and no longer a gradient.
 
-The vorticity is $ϙF/m$ exactly, so the fluid is irrotational exactly where the field strength vanishes. Its rank is $0$, $2$ or $4$, and four exactly where $\vec E\cdot\vec B\ne0$, which is the rank no free fluid of the block reaches with its vorticity proper. The circulation is $2\pi\hbar n+ϙ\Phi_B$, and the flux term survives where the field strength vanishes on the loop.
+The vorticity is $ϙF/m$ exactly, so the fluid is irrotational exactly where the field strength vanishes. Its rank is $0$, $2$ or $4$, and four exactly where $\vec E\cdot\vec B\ne0$, which is the rank no free fluid of the block reaches with its vorticity proper. The circulation is $h n+ϙ\Phi_B$, and the flux term survives where the field strength vanishes on the loop.
 
 The force is the Lorentz force plus the free quantum gradient, $\mathrm{d}\vec p^{\mathrm{mech}}/\mathrm{d}t=-ϙ(\vec E+\vec v\times\vec B)-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, and it comes from the one gradient of the coupled mass shell. The quantum potential, the Korteweg stress and the absence of an equation of state are untouched, because the field is external and the amplitude is untouched.
 
@@ -303,18 +303,18 @@ The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is gaug
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The phase coordinate; moves under a gauge transformation |
 | $\varepsilon$ | The branch; untouched by the connection |
 | $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta$ | The connection; $a'_t$ and $\vec A$ real, so $\tilde A_\Phi\in\mathbb{B}_\Phi$ |
-| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The covariant derivative; central per component |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$ | The covariant derivative; central per component |
 | $ϙ$ | The coupling |
-| $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ | The action |
-| $\tilde P_\Phi=i\frac{E}{c}e_t+\vec p$ | The canonical momentum; $E=-\hbar c\,\partial_{r'_t}\theta_{\mathrm{pha}}$, $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ |
+| $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | The action |
+| $\tilde P_\Phi=i\frac{E}{c}e_t+\vec p$ | The canonical momentum; $E=-\frac{h}{2\pi} c\,\partial_{r'_t}\theta_{\mathrm{pha}}$, $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ |
 | $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$ | The mechanical momentum; gauge invariant |
 | $\tilde V_\Phi=\tilde P^{\mathrm{mech}}_\Phi/m$ | The four-velocity; $\tilde V_\Phi\tilde V_\Phi^{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$ |
 | $\rho_{\mathrm{chg}}$ | The conserved density; $c\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}(E+ϙca'_t)/m$ |
 | $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ | The field strength; $\det F$ is $(\vec E\cdot\vec B)^{2}$ up to a factor |
 | $\omega_{\mu\nu}$ | The vorticity; $\omega=ϙF/m$ |
 | $\Phi_B$ | The flux through a loop; $\oint\vec A\cdot\mathrm{d}\vec l$ |
-| $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ | The quantum potential; untouched by the coupling |
-| $k_m=mc/\hbar$ | The mass wave number |
+| $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | The quantum potential; untouched by the coupling |
+| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
 
 ## Further Reading
 

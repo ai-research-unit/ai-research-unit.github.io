@@ -187,7 +187,7 @@ $$
 c\,dS_{i}/dr'_t = \{S_i,H\} = -\gamma B_j\,\{S_i,S_j\} = -\gamma B_j\,\epsilon_{ij\eta}S_\eta = \gamma\,(\vec S\times\vec B)_i,
 $$
 
-which is the Larmor equation again. The biquaternion commutator $\tfrac{1}{2}[\vec\mu,\vec\omega_G]$ is that Poisson bracket written in the algebra, and it is the same bracket that the quantum article realizes as $[\tilde{S}_{\Psi,i},\tilde{S}_{\Psi,j}] =i\,\hbar\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\eta}$.
+which is the Larmor equation again. The biquaternion commutator $\tfrac{1}{2}[\vec\mu,\vec\omega_G]$ is that Poisson bracket written in the algebra, and it is the same bracket that the quantum article realizes as $[\tilde{S}_{\Psi,i},\tilde{S}_{\Psi,j}] =i\,\frac{h}{2\pi}\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\eta}$.
 
 ### The Time-Dependence of the Moment
 
@@ -317,7 +317,7 @@ $$
 \mu_B = \frac{e c1/k_{m_e}}{2} = 9.274010\times10^{-24}\ \text{J T}^{-1},
 $$
 
-Here $1/k_{m_e}=\hbar/(m_ec)$ is the electron mass length.
+Here $1/k_{m_e}=\frac{h}{2\pi m_ec}$ is the electron mass length.
 
 per unit spin for the electron.
 
@@ -328,7 +328,7 @@ For a rigid rotor with proportional charge and mass densities, the moment and th
 ## Relation to the Quantum Treatment
 
 
-The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
+The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\frac{h}{2\pi}\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
 
 The two treatments agree because they are the same rotor. The classical moment of this article lives in $\mathbb{B}_{H}$ as a real pure quaternion and is rotated by $\tilde u_L(r'_t) = \exp(-\tfrac{1}{2}\gamma B r'_t\,\vec u_{B,\eta} \vec e_\eta)$; the quantum state lives in $\mathbb{B}_{\Psi}$ and is rotated by $\tilde{U}(r'_t)$, whose vector part is the same unit real quaternion. The factor $i$ that separates the two representatives is the sector exchange, not a physical difference. What the quantum treatment adds is the Born rule and the state; what this article adds is that the precession needs neither, because the moment of a classical current distribution obeys the same Larmor equation as the mean spin. The two are different derivations of one motion, and the classical one is the subject of this subcategory.
 

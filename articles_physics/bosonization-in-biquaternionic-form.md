@@ -138,7 +138,7 @@ with $\Gamma$ the chirality and $\overline{\tilde{Ξ}}$ the coefficient conjugat
 $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}=k_m\overline{\tilde{Ξ}}\,\vec e_y ,
 $$
-and the label balances. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length. The left side keeps the value of $\tilde{Ξ}$; the right side conjugates, which keeps it, and then multiplies on the right by $\vec e_y$, which exchanges it. The equation pairs the two values, and no coefficient could do the same.
+and the label balances. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length. The left side keeps the value of $\tilde{Ξ}$; the right side conjugates, which keeps it, and then multiplies on the right by $\vec e_y$, which exchanges it. The equation pairs the two values, and no coefficient could do the same.
 
 **The mass bilinear.** The mass bilinear of the dictionary is
 $$
@@ -194,7 +194,7 @@ The fermionic side of the dictionary is built from vertex operators, and their d
 $$
 \bigl[j_t(Q_x),j_x(Q_y)\bigr] = \frac{i}{\pi}\,\frac{d\delta}{dQ_x}(Q_x-Q_y),
 $$
-the **Schwinger term**. The sign and the coefficient are the canonical commutator's: the commutator $[\xi_{\mathrm{scl}},\partial\xi_{\mathrm{scl}}/\partial R_t]=i\delta$ in units of $\hbar$, the corpus's convention, gives $\frac{1}{\pi}[\partial\xi_{\mathrm{scl}}/\partial R_x,\partial\xi_{\mathrm{scl}}/\partial R_t]$, which is $\frac{i}{\pi}$ times the derivative of the delta written in the display above. Both indices are low, so no metric sign enters this commutator; the signs are already carried by the dictionary's $\epsilon_{\mu\nu}\varepsilon_\nu$. The coefficient is $1/\pi$, the square of the anomaly's $1/\sqrt\pi$ because it is bilinear in the current, the anomaly being the second relation of the dictionary section.
+the **Schwinger term**. The sign and the coefficient are the canonical commutator's: the commutator $[\xi_{\mathrm{scl}},\partial\xi_{\mathrm{scl}}/\partial R_t]=i\delta$ in units of $\frac{h}{2\pi}$, the corpus's convention, gives $\frac{1}{\pi}[\partial\xi_{\mathrm{scl}}/\partial R_x,\partial\xi_{\mathrm{scl}}/\partial R_t]$, which is $\frac{i}{\pi}$ times the derivative of the delta written in the display above. Both indices are low, so no metric sign enters this commutator; the signs are already carried by the dictionary's $\epsilon_{\mu\nu}\varepsilon_\nu$. The coefficient is $1/\pi$, the square of the anomaly's $1/\sqrt\pi$ because it is bilinear in the current, the anomaly being the second relation of the dictionary section.
 
 **Vertex operators.** The bosonized fermion is an exponential of the boson field, the **vertex operator**
 $$

@@ -102,7 +102,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\,\tilde{Ξ}_{R} .
 $$
 
-Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 Each member is a left multiplication, and the mass is the off-diagonal pairing of the two parts. The second member is the biquaternion conjugate of the first: the conjugation exchanges the two sides, so the conjugate of a left action on $\tilde{Ξ}_{R}$ is written as a left action of $(\tilde\nabla_\Phi)^{\natural}$ on $\tilde{Ξ}_{L}$ (*Operator and Calculus Conventions*, §*The Two Sides and the Renaming Theorem*). Eliminating one part returns the mass shell, $\Box_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$. No basis operator enters the pair itself, because both members are left multiplications.
 

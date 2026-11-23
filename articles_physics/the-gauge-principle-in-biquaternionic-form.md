@@ -12,7 +12,7 @@ Two results in the corpus are the point of departure. *Maxwell's Equations in th
 
 The division between what is established and what is interpretation is stated at the outset and kept explicit throughout.
 
-- **Established, and recomputed below.** The centre of $\mathbb{B}$ is the complex scalar subspace $\mathbb{B}_{C}$ of *Algebra and Element Conventions*; its $*$-unitary part is $\mathrm{U}(1)$. The global phase is a symmetry of the one-sided chiral pair, massive or massless. Localizing it forces a connection $\tilde{A}_{\Phi}$ with the transformation law $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$, and a covariant derivative whose action is $\tilde{Ξ}\mapsto\tilde\nabla_\Phi\tilde{Ξ}+\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}\tilde{Ξ}$, under which the field equation is gauge covariant. The element $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ is gauge invariant; it satisfies the exact identity $\tilde{F} = \tfrac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu$ with $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$; and in the abelian case $\tilde{F}$ is the commutator of the components of $D$, $[D_\mu, D_\nu] =\frac{i\,ϙ}{\hbar}F_{\mu\nu}$.
+- **Established, and recomputed below.** The centre of $\mathbb{B}$ is the complex scalar subspace $\mathbb{B}_{C}$ of *Algebra and Element Conventions*; its $*$-unitary part is $\mathrm{U}(1)$. The global phase is a symmetry of the one-sided chiral pair, massive or massless. Localizing it forces a connection $\tilde{A}_{\Phi}$ with the transformation law $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$, and a covariant derivative whose action is $\tilde{Ξ}\mapsto\tilde\nabla_\Phi\tilde{Ξ}+\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}$, under which the field equation is gauge covariant. The element $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ is gauge invariant; it satisfies the exact identity $\tilde{F} = \tfrac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu$ with $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$; and in the abelian case $\tilde{F}$ is the commutator of the components of $D$, $[D_\mu, D_\nu] =\frac{2\pi i\,ϙ}{h}F_{\mu\nu}$.
 - **Interpretation.** Reading $\tilde{A}_{\Phi}$ as a *connection* and $\tilde{F}$ as its *curvature* is a geometric interpretation of an algebraic construction. The algebra is consistent with the interpretation, and the commutator identity makes it precise, but the algebra does not by itself force the bundle-theoretic picture. This is labelled as interpretation, not derivation.
 - **Gap, left visible.** The extension to non-abelian gauge fields, and the question of whether the framework supplies a gauge-fixing principle, are not settled here. They are stated as gaps in the sections where they arise and collected in the open questions.
 
@@ -57,7 +57,7 @@ is invariant: if $\tilde\nabla_\Phi\tilde{Ξ} = 0$ then $\tilde\nabla_\Phi(\lamb
 - **The complex scalar biquaternion field.** Take $\tilde{Ξ} = \xi_{\mathrm{gau}}\,e_t$ with $\xi_{\mathrm{gau}}$ a complex scalar function, obeying the massive Klein–Gordon equation $(\Box_\Phi - k_m^{2})\tilde{Ξ} = 0$. The mass term is *linear* in the field, so under $\tilde{Ξ} \mapsto \lambda\tilde{Ξ}$ both sides acquire the same factor $\lambda$ and the equation is invariant. Here the global $\mathrm{U}(1)$ survives the mass.
 - **The biquaternion Dirac field.** Take the massless chiral pair of *The Dirac Equation in Biquaternionic Form*, whose two lines are the two Weyl equations, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$. Each line carries one value of a massless fermion; the full massless field is the pair, not either line alone. The massive form is the linear, off-diagonal pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$. Its mass term is *linear* in the field, so it too passes the central phase through unchanged and the global $\mathrm{U}(1)$ survives the mass. The mass term nonetheless plays a distinguished role: it relates the two parts of the subscript, and it is the **axial** symmetry, not the phase symmetry, that it breaks — a point taken up in §*The Mass Term and the Axial Symmetry* below. The two-sided form of the same physics is recorded there as well, because it is the form in which the mass is a multiplication on the right rather than a pairing.
 
-Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 **Why the group is $\mathrm{U}(1)$ and not larger.** A phase that is to commute with the whole algebra must lie in the centre, and the centre is one complex dimension; its $*$-unitary part is one real parameter. The abelian gauge group is therefore *canonically attached* to the algebra: no choice is made in selecting it. A larger gauge group requires an action that does not commute with the algebra, that is, a choice of representation — which is exactly what the non-abelian extension will need.
 
@@ -73,19 +73,19 @@ $$
 \tilde\nabla_\Phi(\lambda\tilde{Ξ})=(\tilde\nabla_\Phi\lambda)\tilde{Ξ}+\lambda\,\tilde\nabla_\Phi\tilde{Ξ},
 $$
 
-where $\Gamma = \Gamma(\tilde{Q})$ is a real scalar function and $ϙ$ is a real coupling constant. Here $\theta_{\mathrm{gau}}:=ϙ\,\Gamma/\hbar$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one. Two elementary facts govern it. The product rule for the gradient, applied to a field,
+where $\Gamma = \Gamma(\tilde{Q})$ is a real scalar function and $ϙ$ is a real coupling constant. Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one. Two elementary facts govern it. The product rule for the gradient, applied to a field,
 
 and the chain rule
 
 $$
-\tilde\nabla_\Phi\lambda =\frac{i\,ϙ}{\hbar}\,\lambda\,\tilde\nabla_\Phi\Gamma .
+\tilde\nabla_\Phi\lambda =\frac{2\pi i\,ϙ}{h}\,\lambda\,\tilde\nabla_\Phi\Gamma .
 $$
 
 The second uses the centrality of $\lambda$: the derivative acts only on the scalar function $\Gamma$, and $\lambda$ passes through $\tilde\nabla_\Phi\Gamma$. Combining the two,
 
 $$
 \tilde\nabla_\Phi(\lambda\tilde{Ξ})
-=\lambda\,\tilde\nabla_\Phi\tilde{Ξ}+\frac{i\,ϙ}{\hbar}\,\lambda\,(\tilde\nabla_\Phi\Gamma)\tilde{Ξ}.
+=\lambda\,\tilde\nabla_\Phi\tilde{Ξ}+\frac{2\pi i\,ϙ}{h}\,\lambda\,(\tilde\nabla_\Phi\Gamma)\tilde{Ξ}.
 $$
 
 The equation $\tilde\nabla_\Phi\tilde{Ξ} = 0$ is **not** preserved by a local phase: the second term is exactly the cost of making the symmetry local. It is the term that forces a new field.
@@ -93,7 +93,7 @@ The equation $\tilde\nabla_\Phi\tilde{Ξ} = 0$ is **not** preserved by a local p
 Introduce a biquaternion-valued field $\tilde{A}_{\Phi}$, and replace the gradient by the **covariant derivative**
 
 $$
-D\tilde{Ξ} := \tilde\nabla_\Phi\tilde{Ξ}+\frac{i\,ϙ}{\hbar}\,\tilde{A}_{\Phi}\tilde{Ξ},
+D\tilde{Ξ} := \tilde\nabla_\Phi\tilde{Ξ}+\frac{2\pi i\,ϙ}{h}\,\tilde{A}_{\Phi}\tilde{Ξ},
 $$
 
 the multiplication by $\tilde{A}_{\Phi}$ being on the left. Let the new field transform as
@@ -107,11 +107,11 @@ Then the covariant derivative built from the transformed connection, applied to 
 $$
 \begin{aligned}
 D_2(\lambda\tilde{Ξ})
-&=\tilde\nabla_\Phi(\lambda\tilde{Ξ})+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi,2}(\lambda\tilde{Ξ}) \\
-&=\lambda\,\tilde\nabla_\Phi\tilde{Ξ}+\frac{i\,ϙ}{\hbar}\lambda(\tilde\nabla_\Phi\Gamma)\tilde{Ξ}
- +\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}\lambda\tilde{Ξ}
- -\frac{i\,ϙ}{\hbar}(\tilde\nabla_\Phi\Gamma)\lambda\tilde{Ξ} \\
-&=\lambda\left(\tilde\nabla_\Phi\tilde{Ξ}+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}\tilde{Ξ}\right)
+&=\tilde\nabla_\Phi(\lambda\tilde{Ξ})+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi,2}(\lambda\tilde{Ξ}) \\
+&=\lambda\,\tilde\nabla_\Phi\tilde{Ξ}+\frac{2\pi i\,ϙ}{h}\lambda(\tilde\nabla_\Phi\Gamma)\tilde{Ξ}
+ +\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}\lambda\tilde{Ξ}
+ -\frac{2\pi i\,ϙ}{h}(\tilde\nabla_\Phi\Gamma)\lambda\tilde{Ξ} \\
+&=\lambda\left(\tilde\nabla_\Phi\tilde{Ξ}+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}\tilde{Ξ}\right)
  =\lambda\,D\tilde{Ξ} .
 \end{aligned}
 $$
@@ -135,7 +135,7 @@ and for real $\Gamma$ the scalar coefficient $\partial/\partial R_t\,\Gamma = -i
 The field $\tilde{A}_{\Phi}$ is the **connection**, and $D$ is the **covariant derivative**. Writing $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu$ with complex scalar coefficients $A_\mu$, the action of $D$ on a field separates into components,
 
 $$
-D\tilde{Ξ} = \sum_{\mu\in\{t,x,y,z\}}  e_\mu\,D_\mu\tilde{Ξ}, \qquad D_\mu = \partial/\partial R_\mu +\frac{i\,ϙ}{\hbar}A_\mu,
+D\tilde{Ξ} = \sum_{\mu\in\{t,x,y,z\}}  e_\mu\,D_\mu\tilde{Ξ}, \qquad D_\mu = \partial/\partial R_\mu +\frac{2\pi i\,ϙ}{h}A_\mu,
 $$
 
 where $\partial/\partial R_t = \partial/\partial(i r'_t)$ and $\partial/\partial R_\eta = \partial/\partial x_\eta$, and where $A_0:=A_t$ in the component displays below.
@@ -197,13 +197,13 @@ This also explains, structurally, why the field strength is not a four-vector. T
 In the abelian case the connection coefficients are complex scalars, so they commute and the commutator of the covariant derivatives reduces to the field strength, the curl of the potential:
 
 $$
-\boxed{\;[D_\mu, D_\nu] =\frac{i\,ϙ}{\hbar}\left(\partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu\right) =\frac{i\,ϙ}{\hbar}F_{\mu\nu}\;}.
+\boxed{\;[D_\mu, D_\nu] =\frac{2\pi i\,ϙ}{h}\left(\partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu\right) =\frac{2\pi i\,ϙ}{h}F_{\mu\nu}\;}.
 $$
 
 Combining this with the boxed identity,
 
 $$
-\tilde{F} =\frac{\hbar}{2\,i\,ϙ}\sum_{\mu,\nu\in\{t,x,y,z\}}[D_\mu, D_\nu]\,\bar{e}_\mu e_\nu .
+\tilde{F} =\frac{h}{4\pi \,i\,ϙ}\sum_{\mu,\nu\in\{t,x,y,z\}}[D_\mu, D_\nu]\,\bar{e}_\mu e_\nu .
 $$
 
 The field strength is the **commutator of two covariant derivatives**, contracted with the biquaternion basis. This is the precise sense in which "the field strength is the curvature": the curvature measures the failure of covariant derivatives to commute, and in the algebra that failure is packaged into the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$. The overall constant in the two boxed formulas depends on the convention for $ϙ$ and on the normalization of $\tilde{A}_{\Phi}$; the structural content is the identity of the objects, not the numerical factor.
@@ -248,8 +248,8 @@ The non-abelian case is the subject of the planned companion articles, but one s
 If the connection is allowed to be algebra-valued — $A_\mu$ an element of $\mathbb{B}$ rather than a complex scalar — then the multiplications by the components no longer commute, and the curvature acquires a commutator term:
 
 $$
-D_\mu D_\nu\tilde{Ξ}-D_\nu D_\mu\tilde{Ξ} =\frac{i\,ϙ}{\hbar}F_{\mu\nu}\tilde{Ξ}, \qquad
-F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu +\frac{i\,ϙ}{\hbar}[A_\mu, A_\nu],
+D_\mu D_\nu\tilde{Ξ}-D_\nu D_\mu\tilde{Ξ} =\frac{2\pi i\,ϙ}{h}F_{\mu\nu}\tilde{Ξ}, \qquad
+F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu +\frac{2\pi i\,ϙ}{h}[A_\mu, A_\nu],
 $$
 
 the bracket $[D_\mu,D_\nu]$ being read as the difference of the two compositions applied to a field. The biquaternion algebra already contains the non-commutativity this needs: no enlargement of the algebra is required to write a non-abelian curvature. But the commutator algebra of $\mathbb{B}$ is the general linear algebra $\mathfrak{gl}(2,\mathbb{C})$, not a compact simple algebra; to land on a gauge algebra such as $\mathrm{SU}(2)$ one must impose a reality condition (anti-Hermiticity, and tracelessness) on the connection. **The algebra supplies the non-commutativity but not the compactness.** Whether the reality conditions required are natural in the biquaternion framework, and which gauge algebras they admit, is the open question that the planned companions on the covariant derivative, non-abelian fields, and Yang–Mills must settle. This article does not.
@@ -312,7 +312,7 @@ $$
 \tilde{Ξ}_{R,2} = \exp(-i\theta_{\mathrm{pha}})\tilde{Ξ}_{R}, \qquad \xi_{\mathrm{gau}} = \xi_{\mathrm{gau}}(x_\mu) \in \mathbb{R},
 $$
 
-and it leaves the covariant derivatives covariant, $(D_{2,\mu}\tilde{Ξ}_{L,2}) = \exp(+i\theta_{\mathrm{pha}})D_\mu\tilde{Ξ}_{L}$ and $(D_{2,\mu}\tilde{Ξ}_{R,2}) = \exp(-i\theta_{\mathrm{pha}})D_\mu\tilde{Ξ}_{R}$, exactly as the local phase $\lambda = \exp(i\theta_{\mathrm{gau}})$ of this article leaves $D_\mu\tilde{Ξ}$ covariant. With the central phase identified as $\xi_{\mathrm{gau}} =\frac{ϙ\,\Gamma}{\hbar}$ and the dictionary $\omega_\mu = i(\frac{ϙ}{\hbar})A_\mu$ — so that $-i\omega_\mu = (\frac{ϙ}{\hbar})A_\mu$ is the potential, and the shift $-i\partial/\partial R_\mu\,\xi_{\mathrm{gau}}$ is the gradient term — the source's transformation is this article's $\tilde A_{\Phi,2} = \tilde A_{\Phi} - \tilde\nabla_\Phi\Gamma$, component by component. The source's $\mathrm{U}(1)$ is thus the central direction of $\mathbb{B}$, its generator the same scalar imaginary $i$, and the phase on $\tilde{Ξ}_{L}$ carries the same sign as the multiplication on the left that this article's parent uses for the charged massive field. The opposite phase on $\tilde{Ξ}_{R}$ is consistent with $\tilde{Ξ}_{R}$ being the conjugate half of the pair: a central phase read through the algebra's real structure is $\lambda^{\flat}=-\bar\lambda$, the antilinear half recorded in §*The Mass Term and the Axial Symmetry*. In that reading the source's pair of phases is one central phase, not two symmetries.
+and it leaves the covariant derivatives covariant, $(D_{2,\mu}\tilde{Ξ}_{L,2}) = \exp(+i\theta_{\mathrm{pha}})D_\mu\tilde{Ξ}_{L}$ and $(D_{2,\mu}\tilde{Ξ}_{R,2}) = \exp(-i\theta_{\mathrm{pha}})D_\mu\tilde{Ξ}_{R}$, exactly as the local phase $\lambda = \exp(i\theta_{\mathrm{gau}})$ of this article leaves $D_\mu\tilde{Ξ}$ covariant. With the central phase identified as $\xi_{\mathrm{gau}} =\frac{2\pi ϙ\,\Gamma}{h}$ and the dictionary $\omega_\mu = i(\frac{2\pi ϙ}{h})A_\mu$ — so that $-i\omega_\mu = (\frac{2\pi ϙ}{h})A_\mu$ is the potential, and the shift $-i\partial/\partial R_\mu\,\xi_{\mathrm{gau}}$ is the gradient term — the source's transformation is this article's $\tilde A_{\Phi,2} = \tilde A_{\Phi} - \tilde\nabla_\Phi\Gamma$, component by component. The source's $\mathrm{U}(1)$ is thus the central direction of $\mathbb{B}$, its generator the same scalar imaginary $i$, and the phase on $\tilde{Ξ}_{L}$ carries the same sign as the multiplication on the left that this article's parent uses for the charged massive field. The opposite phase on $\tilde{Ξ}_{R}$ is consistent with $\tilde{Ξ}_{R}$ being the conjugate half of the pair: a central phase read through the algebra's real structure is $\lambda^{\flat}=-\bar\lambda$, the antilinear half recorded in §*The Mass Term and the Axial Symmetry*. In that reading the source's pair of phases is one central phase, not two symmetries.
 
 The construction bears on Open Question 3. In the source, the shared generator $i$ is **content-bearing rather than vacuous**: the imaginary-scalar direction of $\omega_\mu$ *is* the $\mathrm{U}(1)$ direction, and the same $i$ is what lets the two-sided vector derivative $\partial/\partial R_\mu V + \omega_\mu V + V\bar\omega_\mu^\ast$ reduce to a one-sided one on the central piece. The source makes the point explicitly in a note added to the paper: the local Lorentz transformations, which obey $\bar\Lambda = \Lambda^{-1}$, and the local $\mathrm{U}(1)$ transformations, $\Lambda = \exp(i\xi_{\mathrm{gau}})$, are two cases of the single law $\omega_{2,\mu} = \Lambda\omega_\mu\Lambda^{-1} - (\partial/\partial R_\mu\,\Lambda)\Lambda^{-1}$. So there the internal phase and the local frame are not merely neighbours in one algebra; they are two subgroups of one local symmetry, and the connection is one object.
 
@@ -386,7 +386,7 @@ The correspondence with the matrix algebra is complex-linear. Over $\mathbb{R}$ 
 
 The gauge principle in biquaternionic form begins with the **centre** of the biquaternion algebra. The centre is the complex scalar subspace $\mathbb{B}_{C}$, whose $*$-unitary part is $\mathrm{U}(1)$. A constant central phase $\tilde{Ξ} \mapsto \lambda\tilde{Ξ}$ is a symmetry of the one-sided chiral pair, massive or massless, because a central constant passes through the gradient and through the linear mass term.
 
-Making the phase local, $\lambda = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$, adds the term $\frac{i\,ϙ}{\hbar}\lambda(\tilde\nabla_\Phi\Gamma)\tilde{Ξ}$, and cancelling it forces a connection $\tilde{A}_{\Phi}$ with the transformation law
+Making the phase local, $\lambda = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$, adds the term $\frac{2\pi i\,ϙ}{h}\lambda(\tilde\nabla_\Phi\Gamma)\tilde{Ξ}$, and cancelling it forces a connection $\tilde{A}_{\Phi}$ with the transformation law
 
 $$
 \boxed{\;\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\;},
@@ -395,7 +395,7 @@ $$
 which is exactly the gauge transformation of the biquaternionic Maxwell article, together with a covariant derivative
 
 $$
-\boxed{\;D\tilde{Ξ} = \tilde\nabla_\Phi\tilde{Ξ} +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}\tilde{Ξ}, \qquad D_\mu = \partial/\partial R_\mu +\frac{i\,ϙ}{\hbar}A_\mu\;},
+\boxed{\;D\tilde{Ξ} = \tilde\nabla_\Phi\tilde{Ξ} +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}, \qquad D_\mu = \partial/\partial R_\mu +\frac{2\pi i\,ϙ}{h}A_\mu\;},
 $$
 
 under which $D\tilde{Ξ}$ transforms by the phase factor. The connection is a material-sector object: a real gauge function keeps $\tilde{A}_{\Phi} \in \mathbb{B}_{\Phi}$.
@@ -409,7 +409,7 @@ $$
 the six real components of the curvature 2-form sitting in the vector part of the algebra, and the **commutator identity**
 
 $$
-[D_\mu, D_\nu] =\frac{i\,ϙ}{\hbar}F_{\mu\nu}, \qquad \tilde{F} =\frac{\hbar}{2\,i\,ϙ}\sum_{\mu,\nu}[D_\mu, D_\nu]\,\bar{e}_\mu e_\nu .
+[D_\mu, D_\nu] =\frac{2\pi i\,ϙ}{h}F_{\mu\nu}, \qquad \tilde{F} =\frac{h}{4\pi \,i\,ϙ}\sum_{\mu,\nu}[D_\mu, D_\nu]\,\bar{e}_\mu e_\nu .
 $$
 
 Because $\tilde{F}$ is constructed from $\tilde{A}_{\Phi}$, the homogeneous Maxwell equations are an identity — the Bianchi identity of the connection — not equations of motion.
@@ -438,8 +438,8 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 | $ϙ$ | the coupling constant (charge), not fixed by the algebra |
 | $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu$ | the connection, the potential biquaternion of $\mathbb{B}_{\Phi}$ |
 | $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | the gauge transformation of the connection |
-| $D\tilde{Ξ} = \tilde\nabla_\Phi\tilde{Ξ} +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}\tilde{Ξ}$ | the covariant derivative, written as an action |
-| $D_\mu = \partial/\partial R_\mu +\frac{i\,ϙ}{\hbar}A_\mu$ | its components |
+| $D\tilde{Ξ} = \tilde\nabla_\Phi\tilde{Ξ} +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}$ | the covariant derivative, written as an action |
+| $D_\mu = \partial/\partial R_\mu +\frac{2\pi i\,ϙ}{h}A_\mu$ | its components |
 | $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, $S_2 = S - \Box_\Phi\Gamma$ | the gauge scalar; Lorenz gauge $S = 0$ |
 | $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ | the field strength, the curvature |
 | $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ | the abelian curvature components |

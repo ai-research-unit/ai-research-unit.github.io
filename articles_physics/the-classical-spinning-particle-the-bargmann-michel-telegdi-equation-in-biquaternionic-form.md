@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A **classical spinning particle** is a point particle of mass $m$ and charge $ϙ$ that carries, in addition to its four-velocity $\tilde{V}_{\Phi}=\gamma(ic\,e_t+\vec v)$, an intrinsic angular momentum, the **spin four-vector** $\tilde{S}_{\Psi}\in\mathbb{B}_{\Phi}$, together with an intrinsic magnetic moment proportional to it. The spin four-vector is orthogonal to the four-velocity, $\langle\tilde{S}_{\Psi},\tilde{V}_{\Phi}\rangle=0$, so that in the momentary rest frame it has a purely spatial representative $\vec s$, the spin; the constant of proportionality between moment and spin is the gyromagnetic ratio $\gamma_g=g\,ϙ/2m$. The classical model captures the two features of the intrinsic magnetism of a particle with spin $\tfrac12$ that survive in the limit $\hbar\to0$: an angular momentum that is not orbital, and a magnetic moment locked to it with a factor $g$ close to $2$.
+A **classical spinning particle** is a point particle of mass $m$ and charge $ϙ$ that carries, in addition to its four-velocity $\tilde{V}_{\Phi}=\gamma(ic\,e_t+\vec v)$, an intrinsic angular momentum, the **spin four-vector** $\tilde{S}_{\Psi}\in\mathbb{B}_{\Phi}$, together with an intrinsic magnetic moment proportional to it. The spin four-vector is orthogonal to the four-velocity, $\langle\tilde{S}_{\Psi},\tilde{V}_{\Phi}\rangle=0$, so that in the momentary rest frame it has a purely spatial representative $\vec s$, the spin; the constant of proportionality between moment and spin is the gyromagnetic ratio $\gamma_g=g\,ϙ/2m$. The classical model captures the two features of the intrinsic magnetism of a particle with spin $\tfrac12$ that survive in the limit $h\to0$: an angular momentum that is not orbital, and a magnetic moment locked to it with a factor $g$ close to $2$.
 
 The equation of motion of $\tilde{S}_{\Psi}$ in an external electromagnetic field is the **Bargmann–Michel–Telegdi (BMT) equation**, published in 1959. Like the Lorentz force, it is a standard result of relativistic classical physics, and it is transcribed here rather than re-derived from first principles. What the biquaternion algebra does is to **organize** it: it exhibits the two and only two covariant structures from which a covariant equation linear in the field and the spin can be built, it realizes the field coupling as a projection of a product of biquaternions and the invariant coupling as the material pairing, it expresses the orthogonality constraint $\langle\tilde{S}_{\Psi},\tilde{V}_{\Phi}\rangle=0$ as the vanishing of the same pairing, and it writes the whole equation as one statement in the material sector $\mathbb{B}_{\Phi}$.
 
@@ -89,7 +89,7 @@ $$
 \langle\tilde{S}_{\Psi}\rangle_\natural=\vec s^{2},
 $$
 
-is a Lorentz invariant and is constant on any solution of the equations below; it is the classical counterpart of the fixed spin quantum number $\frac{\hbar}{2}$.
+is a Lorentz invariant and is constant on any solution of the equations below; it is the classical counterpart of the fixed spin quantum number $\frac{h}{4\pi}$.
 
 The **intrinsic magnetic moment** is
 

@@ -29,10 +29,10 @@ $$
 \qquad
 (\tilde\nabla_\Phi)^{\natural}e^{-i\theta_{\mathrm{pwp}}}=i\tilde K_\Phi^{\natural}e^{-i\theta_{\mathrm{pwp}}},
 \qquad
-\theta_{\mathrm{pwp}}=\frac{p\cdot x}{\hbar},
+\theta_{\mathrm{pwp}}=\frac{2\pi p\cdot x}{h},
 $$
 
-with $\tilde K_\Phi=\tilde P_\Phi/\hbar=ik_t'e_t+\vec k_\Phi$ and $k_t'=\omega/c$. The four sector statements used below are $\tilde K_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian, $i\tilde K_\Phi\in\mathbb{B}_\Psi$ and Hermitian, $k_me_t\in\mathbb{B}_\Psi$ and Hermitian, and $iS/\hbar\in\mathbb{B}_\Phi$ and anti-Hermitian. The transform's constant and the sign of its exponent depend on the convention, and no statement below depends on either.
+with $\tilde K_\Phi=\frac{2\pi \tilde P_\Phi}{h}=ik_t'e_t+\vec k_\Phi$ and $k_t'=\omega/c$. The four sector statements used below are $\tilde K_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian, $i\tilde K_\Phi\in\mathbb{B}_\Psi$ and Hermitian, $k_me_t\in\mathbb{B}_\Psi$ and Hermitian, and $\frac{2\pi iS}{h}\in\mathbb{B}_\Phi$ and anti-Hermitian. The transform's constant and the sign of its exponent depend on the convention, and no statement below depends on either.
 
 ## The Operator's Symbol
 

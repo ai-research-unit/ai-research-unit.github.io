@@ -60,26 +60,26 @@ We collect the mode operators that the parents supply, because the rest of the a
 **Fermionic (Dirac).** The field expands as
 
 $$
-\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}\sum_{r=1}^{2}
+\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}\sum_{r=1}^{2}
 \Big[a_{\mathrm{fop},r}(\vec p)w^{(r)}(\vec p)\exp(-i\theta_{\mathrm{pwp}})
 +b_{\mathrm{fop},r}^{\dagger}(\vec p)v^{(r)}(\vec p)\exp(+i\theta_{\mathrm{pwp}})\Big],
 $$
 
-Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
+Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 with $a_{\mathrm{fop},r}$ annihilating particles and $b_{\mathrm{fop},r}$ annihilating antiparticles. The mode algebra is
 
 $$
 \{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec p^{\,\prime})\}
 =\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}
-=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime}),
+=h^{3}\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime}),
 $$
 
 with all other anticommutators vanishing. The particle number, the antiparticle number, the total number of quanta and the electric charge are
 
 $$
-N_a=\sum_r\int\!\frac{d^3p}{(2\pi\hbar)^3}a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r},\qquad
-N_b=\sum_r\int\!\frac{d^3p}{(2\pi\hbar)^3}b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r},\qquad
+N_a=\sum_r\int\!\frac{d^3p}{h^{3}}a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r},\qquad
+N_b=\sum_r\int\!\frac{d^3p}{h^{3}}b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r},\qquad
 F=N_a+N_b,\qquad
 Ϙ_{\mathrm{fop}}=N_a-N_b,
 $$
@@ -176,7 +176,7 @@ $$
 \tilde\Pi_{\mathrm{id},-}^2=\tilde\Pi_{\mathrm{id},-}\;}
 $$
 
-so the truncated ladder satisfies the **fermionic** canonical anticommutation relations with no truncation error at all. The operators are the angular-momentum article's spin ladder up to the factor $\hbar$, $\tilde S_{\Psi,+}=\frac{\hbar}{2}(i\vec e_x-\vec e_y)$; the annihilation and creation operators of the single mode are the spin-raising and spin-lowering operators of the informational sector. Under the isomorphism $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$ they have the images
+so the truncated ladder satisfies the **fermionic** canonical anticommutation relations with no truncation error at all. The operators are the angular-momentum article's spin ladder up to the factor $\frac{h}{2\pi}$, $\tilde S_{\Psi,+}=\frac{h}{4\pi}(i\vec e_x-\vec e_y)$; the annihilation and creation operators of the single mode are the spin-raising and spin-lowering operators of the informational sector. Under the isomorphism $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$ they have the images
 
 $$
 \mathsf{M}_2(\vec\Pi_{\mathrm{nil},x})=|0\rangle\langle1|,\qquad
@@ -226,7 +226,7 @@ Nor does it create a particle with momentum, mass or charge. Momentum and spin a
 
 **The star and the name.** The word "creator" is fixed by the choice of vacuum rung, not by the star. In the standard frame $\vec\Pi_{\mathrm{nil},y}=\vec\Pi_{\mathrm{nil},x}^{*}$, the vacuum is $\tilde\Pi_{\mathrm{id},+}$, and the creator is the adjoint of the annihilator. Under the reciprocal rescaling of *The Peirce Decomposition*, $\vec\Pi_{\mathrm{nil},x}\mapsto\mu\vec\Pi_{\mathrm{nil},x}$, $\vec\Pi_{\mathrm{nil},y}\mapsto\mu^{-1}\vec\Pi_{\mathrm{nil},y}$, the two rungs and the number operator are unchanged, and the creator still maps the vacuum ray to the occupied ray, now with the scalar: $\vec\Pi_{\mathrm{nil},y}|0\rangle=\mu^{-1}|1\rangle$. But $\vec\Pi_{\mathrm{nil},y}=\vec\Pi_{\mathrm{nil},x}^{*}$ survives only for $|\mu|=1$. For other $\mu$ the two elements still span the two mixed corners and still multiply to the two rungs, but $\vec\Pi_{\mathrm{nil},y}$ is not the adjoint of $\vec\Pi_{\mathrm{nil},x}$: the adjoint is $|\mu|^2\vec\Pi_{\mathrm{nil},y}$, the same corner with a different normalisation. The pair is conjugate up to the positive scale $|\mu|^2$, which equals one exactly for $|\mu|=1$. The rungs remain Hermitian throughout this rescaling; it is the ladder that loses its conjugation.
 
-**The spin and the name.** The same two matrix units are the spin ladder, read the other way. In the standard frame the corpus writes $\tilde S_{\Psi,+}=\hbar\,\vec\Pi_{\mathrm{nil},x}$ and $\tilde S_{\Psi,-}=\hbar\,\vec\Pi_{\mathrm{nil},y}$, so $\vec\Pi_{\mathrm{nil},x}$ raises the spin and $\vec\Pi_{\mathrm{nil},y}$ lowers it. Since $|0\rangle$ is the $+1$ eigenstate of $\mathsf{M}_2(i\vec e_z)=\sigma_3$, the Fock vacuum is the top spin rung, and the spin-raising operator is the fermion annihilation operator. Neither name is more physical than the other: they are the same ladder read from opposite ends.
+**The spin and the name.** The same two matrix units are the spin ladder, read the other way. In the standard frame the corpus writes $\tilde S_{\Psi,+}=\frac{h}{2\pi}\,\vec\Pi_{\mathrm{nil},x}$ and $\tilde S_{\Psi,-}=\frac{h}{2\pi}\,\vec\Pi_{\mathrm{nil},y}$, so $\vec\Pi_{\mathrm{nil},x}$ raises the spin and $\vec\Pi_{\mathrm{nil},y}$ lowers it. Since $|0\rangle$ is the $+1$ eigenstate of $\mathsf{M}_2(i\vec e_z)=\sigma_3$, the Fock vacuum is the top spin rung, and the spin-raising operator is the fermion annihilation operator. Neither name is more physical than the other: they are the same ladder read from opposite ends.
 
 **One square-zero that is not a mode.** The BRST charge also squares to zero, but it is a differential: it shifts ghost number, creates no particle, has no vacuum idempotent, and pairs with no identity. Its content is the cohomology $\ker Q/\mathrm{im}\,Q$. The contrast is §*The Differential* of *The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge*; the construction is *BRST Symmetry in Biquaternionic Form*. The equation $X^2=0$ alone does not make $X$ a creator. What makes it one is the pair, the two rungs and the module.
 

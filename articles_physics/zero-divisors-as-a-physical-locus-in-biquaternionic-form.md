@@ -10,7 +10,7 @@ The answer has three parts, and they are three images of one algebraic object un
 - **In configuration space** the locus is not reached by a real momentum, because a real pure momentum $p\,\vec e_\mu$ has $N=p^2$ and vanishes only at $p=0$. The image of $N\to0$ is the **turning surface** of the semiclassical treatment, $p(x)^2=2m(E-V(x))=0$, which is where the WKB amplitude $A\propto1/\sqrt{|p|}$ diverges and the eikonal momentum degenerates. The turning surface is the configuration-space shadow of the cone.
 - **In state space** the locus is the boundary of the pure-state manifold. The state space of the spin-0 problem is the unit-weight slice of the future light cone of the informational sector, and the pure states are exactly the points on its boundary, where the density operator is a projector.
 
-Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 The unifying statement is that the zero divisor locus is a **kinematic boundary**, not a dynamical attractor. The $*$-unitary flow of the spin-0 problem preserves membership in the locus: a rotor with unit norm carries $\langle x\rangle_{\natural}$ to $\langle x\rangle_{\natural}$, and a central phase multiplies $\langle x\rangle_{\natural}$ by a nonzero factor, so an invertible state never becomes a zero divisor and a zero-divisor envelope stays null. The locus bounds where the algebra's division property holds, where the semiclassical approximations are valid, and where the non-relativistic description is self-consistent; it does not bound propagation, because the Schrödinger equation is parabolic and its characteristics are instantaneous.
 
@@ -123,7 +123,7 @@ x_\pm=\pm\sqrt{\frac{2E}{m\omega^2}} ,
 p(x_\pm)=\sqrt{2m(E-V(x_\pm))}=0 .
 $$
 
-With the energy in units of $\hbar\omega$ and the position in units of $1/k_m$, $E=2$ gives the turning points $x=\pm2$, and the momentum was evaluated numerically as $p=2.000000,1.732051,0.624500,0.199750,0$ at $x=0,1,1.9,1.99,2$; the amplitude ratio between the centre and a point close to the turning point is $A(0)/A(1.99)=\sqrt{p(0)/p(1.99)}=3.1643$, and it grows without bound as the turning point is approached. The locus is where the classical momentum vanishes, the semiclassical description fails, and the connection formulas of the companion WKB article take over.
+With the energy in units of $h\nu$ and the position in units of $1/k_m$, $E=2$ gives the turning points $x=\pm2$, and the momentum was evaluated numerically as $p=2.000000,1.732051,0.624500,0.199750,0$ at $x=0,1,1.9,1.99,2$; the amplitude ratio between the centre and a point close to the turning point is $A(0)/A(1.99)=\sqrt{p(0)/p(1.99)}=3.1643$, and it grows without bound as the turning point is approached. The locus is where the classical momentum vanishes, the semiclassical description fails, and the connection formulas of the companion WKB article take over.
 
 The companion article *The Phase-Integral Content* of *The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form* develops the connection formulas that carry the solution across the turning surface, and the companion article *The Path Integral and the Schrödinger Equation in Biquaternionic Form* shows the same locus appearing as a **caustic** of the path integral, where the van Vleck determinant diverges. The two are one object: the projection of the momentum-space cone onto configuration space, where the classical momentum vanishes.
 
@@ -242,7 +242,7 @@ $$
 \langle \tilde{Ξ}\rangle_{\natural}=0 \quad \text{identically},
 $$
 
-a wave function whose biquaternion norm vanishes everywhere: a **null solution**. It is a genuine algebraic solution of the free dynamics, and it is the image of the algebraic null cone in the solution space. The construction was verified with a spreading Gaussian wave packet, that is, with a superposition of plane waves rather than a single one: in units $\hbar=m=k_{t}^{\prime}=1$ and with the initial density $|q(0,x)|^2=\exp(-x^2)$ (density width $s_0=1/\sqrt2$),
+a wave function whose biquaternion norm vanishes everywhere: a **null solution**. It is a genuine algebraic solution of the free dynamics, and it is the image of the algebraic null cone in the solution space. The construction was verified with a spreading Gaussian wave packet, that is, with a superposition of plane waves rather than a single one: in units $\frac{h}{2\pi}=m=k_{t}^{\prime}=1$ and with the initial density $|q(0,x)|^2=\exp(-x^2)$ (density width $s_0=1/\sqrt2$),
 
 $$
 q(r'_t,r_x)=(1+ir'_t)^{-1/2}\exp\left[-\frac{(r_x-k_{t}^{\prime}r'_t)^2}{2(1+ir'_t)}+i\left(k_{t}^{\prime}r_x-\tfrac12k_{t}^{\prime\,2}r'_t\right)\right],

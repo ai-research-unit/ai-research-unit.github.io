@@ -31,7 +31,7 @@ $$
 = \tilde{Ξ}_{0}\,\exp\!\big(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-k_{t}^{\prime} r'_t)\big)\;},
 $$
 
-where $\tilde{Ξ}_{0} \in \mathbb{B}$ is a constant biquaternion, $\tilde{K}_{\Phi}=\frac{\tilde{P}_{\Phi}}{\hbar}= i k_{t}^{\prime} e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $k_{t}^{\prime} = \omega/c$) is the wave biquaternion, and $\tilde R_\Phi = e_t (i r'_t) + \vec e_x r_x + \vec e_y r_y + \vec e_z r_z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - k_{t}^{\prime} r'_t$ is real, so the exponent $i\,\mathrm{Sc}(\tilde{K}_{\Phi}\tilde{R}_{\Phi}^{\natural})$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{Ξ}_{0}$ and differentiates to left multiplication by $i\tilde{K}_{\Phi}$,
+where $\tilde{Ξ}_{0} \in \mathbb{B}$ is a constant biquaternion, $\tilde{K}_{\Phi}=\frac{2\pi \tilde{P}_{\Phi}}{h}= i k_{t}^{\prime} e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $k_{t}^{\prime} = \omega/c$) is the wave biquaternion, and $\tilde R_\Phi = e_t (i r'_t) + \vec e_x r_x + \vec e_y r_y + \vec e_z r_z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - k_{t}^{\prime} r'_t$ is real, so the exponent $i\,\mathrm{Sc}(\tilde{K}_{\Phi}\tilde{R}_{\Phi}^{\natural})$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{Ξ}_{0}$ and differentiates to left multiplication by $i\tilde{K}_{\Phi}$,
 
 $$
 \tilde\nabla_\Phi\tilde{Ξ} = i\tilde{K}_{\Phi}\,\tilde{Ξ},
@@ -45,7 +45,7 @@ $$
 
 i.e., the polarization biquaternion $\tilde{Ξ}_{0}$ is annihilated by the wave biquaternion $\tilde{K}_{\Phi}$. This is the momentum-space massless equation in the algebra; its kernel has complex dimension two, and the basis operator acts on it with the two eigenvalues $+1$ and $-1$, one state each. Those two states are the two helicities in the frame whose third direction is the momentum's, one of each value, so the full massless field is the pair of this equation and its conjugate.
 
-Nonzero solutions of $\tilde{K}_{\Phi}\tilde{Ξ}_{0} = 0$ exist only when $\tilde{K}_{\Phi}$ is a zero divisor in $\mathbb{B}$, that is, when $\tilde{K}_{\Phi}$ is null: $\tilde{K}_{\Phi}\tilde{K}_{\Phi}^{\natural}= \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}/\hbar^{2}= 0$, equivalently $k_{t}^{\prime\,2} = k_\Phi^{2}$, the massless dispersion relation. In that case the kernel is a two-dimensional complex vector space, one state of each value; for non-null $\tilde{K}_{\Phi}$ the kernel is trivial.
+Nonzero solutions of $\tilde{K}_{\Phi}\tilde{Ξ}_{0} = 0$ exist only when $\tilde{K}_{\Phi}$ is a zero divisor in $\mathbb{B}$, that is, when $\tilde{K}_{\Phi}$ is null: $\tilde{K}_{\Phi}\tilde{K}_{\Phi}^{\natural}= \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}/\frac{h^{2}}{4\pi^{2}}= 0$, equivalently $k_{t}^{\prime\,2} = k_\Phi^{2}$, the massless dispersion relation. In that case the kernel is a two-dimensional complex vector space, one state of each value; for non-null $\tilde{K}_{\Phi}$ the kernel is trivial.
 
 ### Massive Plane Waves
 
@@ -75,7 +75,7 @@ so a nonzero solution requires the **mass-shell condition**
 $$\tilde{K}_{\Phi}\tilde{K}_{\Phi}^{\natural}=-k_m^{2},
 $$
 
-i.e., $-k_{t}^{\prime\,2} + \|\vec k_\Phi\|^2 = -k_m^{2}$, which is the standard mass-shell relation $k_{t}^{\prime\,2} = \|\vec k_\Phi\|^2 + k_m^{2}$ (with $k_{t}^{\prime}=\omega/c$ and $E=\hbar c\,k_{t}^{\prime}$). This is the biquaternion form of the standard relativistic energy-momentum relation $E^2 = \vec p^2 c^2 +m^{2}\,c^{4}$ (with $\vec p =\hbar\,\vec k_\Phi$), the same shell as the four-momentum kinematics of *The Dirac Equation in Biquaternionic Form*. The two signs of $k_{t}^{\prime}$ are the two frequency branches — the particle and the antiparticle — and with the two spin states they give the four solutions that the field carries.
+i.e., $-k_{t}^{\prime\,2} + \|\vec k_\Phi\|^2 = -k_m^{2}$, which is the standard mass-shell relation $k_{t}^{\prime\,2} = \|\vec k_\Phi\|^2 + k_m^{2}$ (with $k_{t}^{\prime}=\omega/c$ and $E=\frac{h}{2\pi} c\,k_{t}^{\prime}$). This is the biquaternion form of the standard relativistic energy-momentum relation $E^2 = \vec p^2 c^2 +m^{2}\,c^{4}$ (with $\vec p =\frac{h}{2\pi}\,\vec k_\Phi$), the same shell as the four-momentum kinematics of *The Dirac Equation in Biquaternionic Form*. The two signs of $k_{t}^{\prime}$ are the two frequency branches — the particle and the antiparticle — and with the two spin states they give the four solutions that the field carries.
 
 ## The Field as the Gradient of a Scalar Potential
 
@@ -166,9 +166,9 @@ Cylindrical solutions are similarly constructed from cylindrical harmonics by th
 |---|---|
 | $\mathbb{B}$ | The biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
 | $\tilde{Ξ}$, $\tilde{Ξ}_{L,R}$ | The field and its two components, as in *The Dirac Equation in Biquaternionic Form* |
-| $\tilde K_\Phi=i k_t^{\prime}e_t+\vec k_\Phi=\tilde P_\Phi/\hbar$ | The wave biquaternion; $k_t^{\prime}=\omega/c$ |
+| $\tilde K_\Phi=i k_t^{\prime}e_t+\vec k_\Phi=\frac{2\pi \tilde P_\Phi}{h}$ | The wave biquaternion; $k_t^{\prime}=\omega/c$ |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | The four-position biquaternion |
-| $k_m=\dfrac{mc}{\hbar}$ | The mass wave number, the coefficient of the mass term |
+| $k_m=\frac{2\pi mc}{h}$ | The mass wave number, the coefficient of the mass term |
 | $k_\Phi=\omega\sqrt{\epsilon\mu}$ | The propagation wave number of the medium, equal to $k_t^{\prime}$ on the light cone |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian, a central scalar |
 | $\tilde\nabla_\Phi+\kappa$, $\kappa\in\mathbb{C}$ central | The shifted gradient, written out; the glyph is never extended |

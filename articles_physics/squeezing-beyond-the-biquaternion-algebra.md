@@ -23,16 +23,16 @@ The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otim
 For a one-dimensional oscillator with mass $m$ and frequency $\omega$, the creation and annihilation operators are
 
 $$
-a=\sqrt{\frac{m\,\omega}{2\,\hbar}}\,r_x+i\sqrt{\frac{1}{2\,\hbar\,m\,\omega}}\,p,
+a=\sqrt{\frac{m\,\omega}{2\,\frac{h}{2\pi}}}\,r_x+i\sqrt{\frac{1}{2\,\frac{h}{2\pi}\,m\,\omega}}\,p,
 \qquad
-a^\dagger=\sqrt{\frac{m\,\omega}{2\,\hbar}}\,r_x-i\sqrt{\frac{1}{2\,\hbar\,m\,\omega}}\,p,
+a^\dagger=\sqrt{\frac{m\,\omega}{2\,\frac{h}{2\pi}}}\,r_x-i\sqrt{\frac{1}{2\,\frac{h}{2\pi}\,m\,\omega}}\,p,
 \qquad
 [a,a^\dagger]=e_t .
 $$
 
-Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
-Both $x$ and $p=-i\,\hbar\partial/\partial r_x$ are central operators: $x$ multiplies by a real scalar and $p$ is the central imaginary times a real derivative. Hence $a$ and $a^\dagger$ are central, and the **squeeze operator**
+Both $x$ and $p=-i\,\frac{h}{2\pi}\partial/\partial r_x$ are central operators: $x$ multiplies by a real scalar and $p$ is the central imaginary times a real derivative. Hence $a$ and $a^\dagger$ are central, and the **squeeze operator**
 
 $$
 S(\zeta)=\exp\left[\tfrac12\left(\bar\zeta\,a^2-\zeta\,a^{\dagger 2}\right)\right],
@@ -67,7 +67,7 @@ $$
 and in terms of quadratures it is the general Bogoliubov dilation. Writing $x$ and $p$ in terms of $a$ and $a^\dagger$ and using their transformation,
 
 $$
-S^{*}xS=\sqrt{\frac{\hbar}{2\omega\,m}}\Big[(a+a^\dagger)\cosh r-\sinh r\big(\exp(\,i\theta_{\mathrm{sqz}})a^\dagger+\exp(-i\theta_{\mathrm{sqz}})a\big)\Big],
+S^{*}xS=\sqrt{\frac{h}{4\pi \omega\,m}}\Big[(a+a^\dagger)\cosh r-\sinh r\big(\exp(\,i\theta_{\mathrm{sqz}})a^\dagger+\exp(-i\theta_{\mathrm{sqz}})a\big)\Big],
 $$
 
 which for real $\zeta$ ($\theta_{\mathrm{sqz}}=0$) reduces to the pure dilation $S^{*}xS=\exp(-r)x$ and $S^{*}pS=\exp(r)p$, while for $\theta_{\mathrm{sqz}}=\pi/2$ it becomes a rotation–dilation mixing $x$ and $p$. The transformation is a central Bogoliubov rotation; in the biquaternion interpretation it is a central automorphism of the oscillator algebra, and it never touches the module. The transformation is standard; the framework's statement is that its generator is central.
@@ -77,34 +77,34 @@ which for real $\zeta$ ($\theta_{\mathrm{sqz}}=0$) reduces to the pure dilation 
 The squeezed vacuum is $S(\zeta)|0\rangle$, a Gaussian whose width in $x$ is reduced by $\exp(-r)$. In the position representation it is
 
 $$
-\tilde{Ξ}_{r}(x)=\left(\frac{m\,\omega}{\pi\,\hbar}\right)^{1/4}\exp(\,r/2)
-\exp\left[-\frac{m\,\omega}{2\,\hbar}\,\exp(2r)\,x^2\right],
+\tilde{Ξ}_{r}(x)=\left(\frac{m\,\omega}{\pi\,\frac{h}{2\pi}}\right)^{1/4}\exp(\,r/2)
+\exp\left[-\frac{m\,\omega}{2\,\frac{h}{2\pi}}\,\exp(2r)\,x^2\right],
 $$
 
 up to a phase. The quadrature variances are
 
 $$
-\boxed{\;\delta x^2=\frac{\hbar}{2\omega\,m}\exp(-2r),
+\boxed{\;\delta x^2=\frac{h}{4\pi \omega\,m}\exp(-2r),
 \qquad
-\delta p^2=\frac{\hbar\,m\,\omega}{2}\exp(2r),
+\delta p^2=\frac{h\,m\,\omega}{4\pi}\exp(2r),
 \qquad
-\delta x\,\delta p=\frac{\hbar}{2}\;},
+\delta x\,\delta p=\frac{h}{4\pi}\;},
 $$
 
-so the state is a minimum-uncertainty state at every $r$: squeezing redistributes the uncertainty between the quadratures but cannot reduce the product below $\frac{\hbar}{2}$. This is the algebraic reason squeezing is a legitimate operation of the framework: it is a central automorphism of the oscillator algebra, and the uncertainty product is fixed by the central commutator $[r_x,p]=i\,\hbar\,e_{t}$.
+so the state is a minimum-uncertainty state at every $r$: squeezing redistributes the uncertainty between the quadratures but cannot reduce the product below $\frac{h}{4\pi}$. This is the algebraic reason squeezing is a legitimate operation of the framework: it is a central automorphism of the oscillator algebra, and the uncertainty product is fixed by the central commutator $[r_x,p]=i\,\frac{h}{2\pi}\,e_{t}$.
 
-The variances were verified numerically by direct quadrature in the position representation, in explicit arithmetic with lengths in units of $1/k_m$, frequencies in units of $\omega$ and actions in units of $\hbar$, and the width convention $\alpha=(\frac{m\,\omega}{\hbar})\exp(2r)$. The squeezed vacuum is not a single oscillator state but a superposition of all the even-numbered states, and the computation used its position wave function in that superposition:
+The variances were verified numerically by direct quadrature in the position representation, in explicit arithmetic with lengths in units of $1/k_m$, frequencies in units of $\omega$ and actions in units of $\frac{h}{2\pi}$, and the width convention $\alpha=(\frac{2\pi m\,\omega}{h})\exp(2r)$. The squeezed vacuum is not a single oscillator state but a superposition of all the even-numbered states, and the computation used its position wave function in that superposition:
 
 $$
 \begin{aligned}
-r=0.5:&\quad  \delta x^2=0.18393972=\frac{\hbar}{2\,m\,\omega}\exp(-1),\quad
-\delta p^2=1.35914091=\frac{\hbar\,m\,\omega}{2}\exp(1),\quad  \delta x\delta p=0.50000000,\\[2pt]
-r=0.7:&\quad  \delta x^2=0.12329848=\frac{\hbar}{2\,m\,\omega}\exp(-1.4),\quad
-\delta p^2=2.02759998=\frac{\hbar\,m\,\omega}{2}\exp(1.4),\quad  \delta x\delta p=0.50000000 .
+r=0.5:&\quad  \delta x^2=0.18393972=\frac{h}{4\pi \,m\,\omega}\exp(-1),\quad
+\delta p^2=1.35914091=\frac{h\,m\,\omega}{4\pi}\exp(1),\quad  \delta x\delta p=0.50000000,\\[2pt]
+r=0.7:&\quad  \delta x^2=0.12329848=\frac{h}{4\pi \,m\,\omega}\exp(-1.4),\quad
+\delta p^2=2.02759998=\frac{h\,m\,\omega}{4\pi}\exp(1.4),\quad  \delta x\delta p=0.50000000 .
 \end{aligned}
 $$
 
-Both rows reproduce the closed forms to eight decimals, and the product is $\frac{\hbar}{2}$ in both cases.
+Both rows reproduce the closed forms to eight decimals, and the product is $\frac{h}{4\pi}$ in both cases.
 
 ### The biquaternion reading of the squeeze
 
@@ -229,7 +229,7 @@ Two further extensions are outside $\mathbb{B}$ for different reasons. The **inf
 
 The framework's central statement about unitarity — that a central Hamiltonian generates a $*$-unitary flow, $\exp(-i\theta_{\mathrm{evo}})$ with $\tilde H_\Psi$ Hermitian and central — is exactly what fails in each of these cases: a field-theoretic Hamiltonian has no finite trace, and a Lindbladian is not anti-Hermitian. Both are honest extensions, and both are beyond the algebra as the corpus uses it.
 
-The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
+The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\frac{h}{2\pi}\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
 
 ## What the Algebra Cannot Reach
 
@@ -259,7 +259,7 @@ The table is the article's answer: envelope squeezing is available, module squee
 
 ## Summary
 
-Squeezing is generated by $S(\zeta)=\exp[\frac12(\bar\zeta a^2-\zeta a^{\dagger2})]$, whose generator is built from the central operators $a,a^\dagger$ and is therefore central. $S$ is a central $*$-unitary, $SS^{*}=e_t$, and it acts on the state module as $S\otimes I_2$: it squeezes the envelope and leaves the module orientation untouched. The squeezed vacuum $\tilde{Ξ}_{r}\propto  \exp(-(\frac{m\,\omega}{2\,\hbar})\exp(2r)x^2)$ has variances $\delta x^2=\frac{\hbar}{2\omega\,m}\exp(-2r)$, $\delta p^2=\frac{\hbar\,m\,\omega}{2}\exp(2r)$, $\delta x\delta p=\frac{\hbar}{2}$, verified by direct quadrature at $r=0.5$ and $r=0.7$ to eight decimals with the product equal to $\frac{\hbar}{2}$.
+Squeezing is generated by $S(\zeta)=\exp[\frac12(\bar\zeta a^2-\zeta a^{\dagger2})]$, whose generator is built from the central operators $a,a^\dagger$ and is therefore central. $S$ is a central $*$-unitary, $SS^{*}=e_t$, and it acts on the state module as $S\otimes I_2$: it squeezes the envelope and leaves the module orientation untouched. The squeezed vacuum $\tilde{Ξ}_{r}\propto  \exp(-(\frac{m\,\omega}{2\,\frac{h}{2\pi}})\exp(2r)x^2)$ has variances $\delta x^2=\frac{h}{4\pi \omega\,m}\exp(-2r)$, $\delta p^2=\frac{h\,m\,\omega}{4\pi}\exp(2r)$, $\delta x\delta p=\frac{h}{4\pi}$, verified by direct quadrature at $r=0.5$ and $r=0.7$ to eight decimals with the product equal to $\frac{h}{4\pi}$.
 
 Squeezing the **module** is beyond the spin-0 reach: a central $*$-unitary cannot change the relative weights of the two module components, and a module squeeze requires a non-central generator, which is a spin rotation and belongs to the sibling spin subcategories.
 
@@ -283,7 +283,7 @@ q-deformations, with $[J_+,J_-]=\frac{q^{2J_3}-q^{-2J_3}}{q-q^{-1}}\to2J_3$ as $
 | $S(\zeta)=\exp[\frac12(\bar\zeta a^2-\zeta a^{\dagger2})]$ | Squeeze operator; central $*$-unitary |
 | $\zeta=r\exp(i\theta_{\mathrm{sqz}})$ | Squeeze parameter |
 | $S^{*} aS=a\cosh r-\exp(i\theta_{\mathrm{sqz}})\sinh r\,a^\dagger$ | Bogoliubov transformation |
-| $\delta x^2=\frac{\hbar}{2\omega\,m}\exp(-2r)$, $\delta p^2=\frac{\hbar\,m\,\omega}{2}\exp(2r)$ | Squeezed-vacuum variances |
+| $\delta x^2=\frac{h}{4\pi \omega\,m}\exp(-2r)$, $\delta p^2=\frac{h\,m\,\omega}{4\pi}\exp(2r)$ | Squeezed-vacuum variances |
 | $E_\mu=\epsilon \vec e_\mu$ | Contracting basis |
 | $\mathrm{Cl}_{n,m}$, $\mathbb{O}$ | Clifford algebras; octonions (non-associative) |
 | $[J_+,J_-]=\frac{q^{2J_3}-q^{-2J_3}}{q-q^{-1}}$ | q-deformed bracket |

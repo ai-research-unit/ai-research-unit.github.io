@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The fluid of the Dirac field carries three data at each event — a density, a frame element, and a spin direction — and the frame element is what makes it a spin fluid rather than a dust. The density is $\rho_{\mathrm{num}}$. The frame element is the boost of the polar form, whose square is the four-velocity. The spin direction is the rotor's image of the declared axis. Two labels, one class and one member. The class is the *spin fluid*, a medium whose velocity is not a gradient because it carries an orientation; the member this block treats is the *spin-half* one, the fluid of the Dirac field, whose spin element is $\tilde S_{\Psi}=\varrho\tfrac{\hbar}{2}i\vec s$ and whose weight is therefore $\tfrac12$. The other sections' fluids carry no orientation, and the vector fluid's is a four-vector rather than a rotor; the phrase *spin fluid* is kept for the class wherever the general statement needs it. The current is the density times the frame element, the spin is the density times the rotor, and the angle of the word is read by neither.
+The fluid of the Dirac field carries three data at each event — a density, a frame element, and a spin direction — and the frame element is what makes it a spin fluid rather than a dust. The density is $\rho_{\mathrm{num}}$. The frame element is the boost of the polar form, whose square is the four-velocity. The spin direction is the rotor's image of the declared axis. Two labels, one class and one member. The class is the *spin fluid*, a medium whose velocity is not a gradient because it carries an orientation; the member this block treats is the *spin-half* one, the fluid of the Dirac field, whose spin element is $\tilde S_{\Psi}=\varrho\tfrac{h}{4\pi}i\vec s$ and whose weight is therefore $\tfrac12$. The other sections' fluids carry no orientation, and the vector fluid's is a four-vector rather than a rotor; the phrase *spin fluid* is kept for the class wherever the general statement needs it. The current is the density times the frame element, the spin is the density times the rotor, and the angle of the word is read by neither.
 
 The article assembles two results that already exist and derives neither. The polar form of the Dirac equation, with its four factors, its velocity and its spin, is [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html). The split of the current into a convection part and a spin part is [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html). Both are cited at the point of use, and the displays below that repeat their formulas are quotations, marked as such.
 
@@ -55,10 +55,10 @@ The norm being $-c^{2}$ is stronger than the corresponding statement for the sca
 
 ### The spin is the rotor's image of the axis
 
-The spin element is the density times $\hbar/2$ times the rotor's image of the declared axis. The polar article proves
+The spin element is the density times $\frac{h}{2\pi 2}$ times the rotor's image of the declared axis. The polar article proves
 
 $$
-\tilde S_{\Psi}=\varrho\,\frac{\hbar}{2}\,i\,\vec s,
+\tilde S_{\Psi}=\varrho\,\frac{h}{4\pi}\,i\,\vec s,
 \qquad
 \vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural},
 \qquad
@@ -229,7 +229,7 @@ The degeneration is not a physical limit in which interesting physics is lost. I
 
 The scalar polar form has a scale and a phase and nothing else, so its velocity is a gradient by construction. The word is $\tilde\Xi=\lVert\tilde\Xi\rVert e^{i\theta_{\mathrm{phs}}}e_t$, and the two parameters are the amplitude and the action. There is no third factor, so there is no frame element, so there is nothing whose gradient could make the flow non-closed. The scalar field is therefore the frozen-frame sector in the precise sense that it is the sector with no frame: a frame that does not exist cannot vary.
 
-Throughout, $\theta_{\mathrm{phs}}:=S_{\tilde\Xi}/\hbar$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
+Throughout, $\theta_{\mathrm{phs}}:=\frac{2\pi S_{\tilde\Xi}}{h}$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
 
 The identification is worth stating as an inclusion rather than as an analogy. Every scalar solution, read through the Dirac polar form, has a velocity that is a gradient and a spin direction that is a constant — and the constant is not arbitrary, since the axis is the declared one. Conversely, a Dirac solution whose frame is constant and whose central angle carries the phase gradient is a scalar solution up to the spin direction. So the scalar sector is the intersection of two conditions, and the Dirac sector is what the second condition removes.
 
@@ -256,7 +256,7 @@ $$
 \vec s(x)=\tilde u_{\mathrm r}(x)\,\vec e_z\,\tilde u_{\mathrm r}^{\natural}(x),
 $$
 
-with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ and $\vec s^{2}=-e_t$. The frame element is an element of $\mathbb{B}_\Phi$ and is written with its indices low, as the frame conventions require; the spin direction is a real unit vector and the spin element is $\rho_{\mathrm{num}}^{1/2}(\hbar/2)i\vec s$ in $\mathbb{B}_\Psi$.
+with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ and $\vec s^{2}=-e_t$. The frame element is an element of $\mathbb{B}_\Phi$ and is written with its indices low, as the frame conventions require; the spin direction is a real unit vector and the spin element is $\rho_{\mathrm{num}}^{1/2}(\frac{h}{2\pi 2})i\vec s$ in $\mathbb{B}_\Psi$.
 
 The triple is not a set of independent fields. The Dirac equation ties the three, and the tie is what the polar article leaves open in its §*What the general field leaves open*: the equation relates the two parts' words, and the algebra supplies no canonical rule fixing one from the other. A hydrodynamic reading of the Dirac field has therefore to impose the tie as a closure, exactly as the non-relativistic spin-fluid literature does, and the articles on spin hydrodynamics do that.
 
@@ -277,7 +277,7 @@ Twelve statements, each one line, and each with its reason. This is what the spi
 1. It carries three data at each event: a density, a frame element and a spin direction. That is the definition of a spin fluid, and the frame element is what makes it one rather than a dust.
 2. The velocity is the frame's inverse square, $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$, and it is invertible wherever the field is non-zero — stronger than the scalar case, where the velocity is invertible only where $Q_{\mathrm{qnt}}$ vanishes.
 3. The current reads four of the eight parameters — the scale, the rapidity and the two angles of the direction — and reads neither the central angle nor the rotor.
-4. The spin is the rotor's image of a declared axis, $\tilde S_{\Psi}=\varrho\frac{\hbar}{2}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The declared axis does not survive; only its image is a property of the field.
+4. The spin is the rotor's image of a declared axis, $\tilde S_{\Psi}=\varrho\frac{h}{4\pi}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The declared axis does not survive; only its image is a property of the field.
 5. The current splits by Gordon into convection and bound magnetisation. The second term is conserved by antisymmetry alone, carries no total charge, and cannot be removed from the magnetic moment.
 6. The flow is not a gradient. The velocity has three functions of the four coordinates where a gradient supplies one, and the gap of two is exactly what the phrase *spin fluid* names.
 7. The word carries the spin, and this is the only one of the three that does. The scalar and Proca words have no orientation slot; the rotor is the Dirac word's fourth factor.
@@ -353,7 +353,7 @@ Not claimed. It is not claimed that the vorticity and the spin direction are tie
 
 Compared with the block's other two fluids, this one is the only one whose word carries the spin, and the only one whose fluid data leave the stress undetermined. The scalar fluid is a gradient flow with a Korteweg stress and no orientation; the spin-one fluid is a charged flow with a London response and no orientation; this one carries an orientation, and the orientation is exactly the extra structure that a Cosserat medium has and a dust does not. The counts run two, four and eight for parameters and equations alike, and no case is a truncation of another.
 
-The Dirac field's fluid is a triple at each event: the proper density $\rho_{\mathrm{num}}$, the frame element $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic e_t+\vec v)$ with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, and the spin direction $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The current is the density times the frame element, the spin is the density's square root times $(\hbar/2)i\vec s$, and the central angle is read by neither. The Gordon decomposition splits the current into a convection part and a bound spin part, which is a magnetisation current and contributes nothing to the total charge.
+The Dirac field's fluid is a triple at each event: the proper density $\rho_{\mathrm{num}}$, the frame element $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic e_t+\vec v)$ with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, and the spin direction $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The current is the density times the frame element, the spin is the density's square root times $(\frac{h}{2\pi 2})i\vec s$, and the central angle is read by neither. The Gordon decomposition splits the current into a convection part and a bound spin part, which is a magnetisation current and contributes nothing to the total charge.
 
 The flow is not a gradient. The scalar field's velocity is $\tilde\nabla_\Phi S_{\tilde\Xi}/m$, so its one-form is closed identically; the Dirac field's velocity is a unit element squared, so its one-form is closed only when the frame is constant. The counting makes the obstruction visible: a unit timelike element carries three functions of the coordinates and a gradient carries one, so two functions at each event are unaccounted for, and those two are the frame's variation. The vorticity $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ is the antisymmetrised gradient of the frame element, read through the velocity; it vanishes for the scalar flow, it is non-zero for a shear flow with a varying rapidity, and the check gave a circulation of $0.434\,555\,977\,568\,337$ against the same closed form to fifteen digits.
 
@@ -382,14 +382,14 @@ The scalar case is the frozen-frame sector: with no frame element there is nothi
 | $\tilde U_{\Psi,\mathrm b}$ | The boost factor of the frame |
 | $\tilde u_{\mathrm r}$ | The spatial rotor |
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction, with $\vec s^{2}=-e_t$ |
-| $\tilde S_{\Psi}=\rho_{\mathrm{num}}^{1/2}\frac{\hbar}{2}i\vec s$ | Spin element, Hermitian |
+| $\tilde S_{\Psi}=\rho_{\mathrm{num}}^{1/2}\frac{h}{4\pi}i\vec s$ | Spin element, Hermitian |
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | Number current |
 | $v_{\Phi,\mu}$ | Components of $\tilde V_\Phi$, index low |
 | $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ | Vorticity 2-form |
 | $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}$ | Four-momentum of the scalar field |
 | $S_{\tilde\Xi}$ | Action of the scalar field |
-| $\theta_{\mathrm{phs}}$ | $S_{\tilde\Xi}/\hbar$, the spinor phase that the exponential carries |
-| $k_m=mc/\hbar$ | Mass wave number |
+| $\theta_{\mathrm{phs}}$ | $\frac{2\pi S_{\tilde\Xi}}{h}$, the spinor phase that the exponential carries |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $\Sigma_{\mu\nu}$ | Spin generator of the Gordon decomposition |
 | $\varepsilon_\mu$ | Sign weight, $+1$ temporal and $-1$ spatial |
 | $\langle\tilde Q\rangle_{\natural}$ | Quaternionic norm |

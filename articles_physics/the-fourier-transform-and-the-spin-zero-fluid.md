@@ -12,10 +12,10 @@ Position in the block. This is the Fourier companion of [The Spin-Zero Fluid](th
 
 ## Conventions
 
-The free companion's: $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, $\rho_{\mathrm{num}}=\varrho^{2}$, $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime 2}$ on the material sector, and
+The free companion's: $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, $\rho_{\mathrm{num}}=\varrho^{2}$, $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime 2}$ on the material sector, and
 
 $$
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi \varrho}{\varrho},
+Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho},
 \qquad
 \tilde V_{\Phi}=\frac{\tilde P_{\Phi}}{m},
 \qquad
@@ -23,10 +23,10 @@ Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi \varrho}{\varrho},
 \qquad
 \rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}},
 \qquad
-k_m=\frac{mc}{\hbar}.
+k_m=\frac{2\pi mc}{h}.
 $$
 
-The symbol rule is the Schrödinger rung's, with the temporal slot written once: a plane wave carries $e^{i(\vec k_\Phi\cdot\vec r-k_t'r_t')}$ with $k_t'=\omega/c=E/(\hbar c)$, so $\partial/\partial r_t'\mapsto-ik_t'$ and $\tilde\nabla_\Phi\mapsto i\tilde K_\Phi$ with $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$.
+The symbol rule is the Schrödinger rung's, with the temporal slot written once: a plane wave carries $e^{i(\vec k_\Phi\cdot\vec r-k_t'r_t')}$ with $k_t'=\omega/c=\frac{2\pi E}{h\,c}$, so $\partial/\partial r_t'\mapsto-ik_t'$ and $\tilde\nabla_\Phi\mapsto i\tilde K_\Phi$ with $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$.
 
 ## The Mode, and the Second-Order Shell
 
@@ -39,9 +39,9 @@ $$
 \qquad
 \rho_{\mathrm{num}}=\lvert a\rvert^{2},
 \qquad
-\vec v=\frac{\hbar\vec k_\Phi}{m},
+\vec v=\frac{h\vec k_\Phi}{2\pi m},
 \qquad
-\gamma=\frac{\hbar k_t'}{mc}.
+\gamma=\frac{h k_t'}{2\pi mc}.
 $$
 
 **The quantum potential vanishes at a mode for the same reason as at the rung below: the scale is constant.**
@@ -57,9 +57,9 @@ and this is not an approximation in any parameter. The amplitude equation, which
 $$
 \frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2},
 \qquad
-E=\hbar c\,k_t',
+E=\frac{h}{2\pi} c\,k_t',
 \qquad
-\vec p=\hbar\vec k_\Phi .
+\vec p=\frac{h}{2\pi}\vec k_\Phi .
 $$
 
 The unit velocity is then exact.
@@ -83,7 +83,7 @@ A transform is a measure on a support, and the two potentials of the block act o
 | what is added | what it does to the shell | the momentum-space face |
 | --- | --- | --- |
 | the quantum potential $Q_{\mathrm{qnt}}$ | changes the radius: $m^{2}c^{2}\mapsto m^{2}c^{2}+2mQ_{\mathrm{qnt}}$ | the local support is a hyperboloid of a different size |
-| the connection $\varkappa\tilde A_\Phi$ | changes the centre: $\tilde K_\Phi\mapsto\tilde K_\Phi-\varkappa\tilde A_\Phi/\hbar$ | the local support is a translated hyperboloid |
+| the connection $\varkappa\tilde A_\Phi$ | changes the centre: $\tilde K_\Phi\mapsto\tilde K_\Phi-\frac{2\pi \varkappa\tilde A_\Phi}{h}$ | the local support is a translated hyperboloid |
 
 The first row is this article's and the second is the charged companion's, and the comparison is the reason to state both. A radius cannot be removed by a change of variable and a centre can: a shift of a variable does not change a radius, and a translation is undone by a translation. **So the quantum potential is an intrinsic deformation of the support and the connection is a change of chart**, and the two statements are the two articles' first results in the momentum-space language.
 
@@ -105,7 +105,7 @@ The obstruction is what a character is, and no skill with the transform removes 
 
 ## The Origin of the Label
 
-Three objects sit at the zero label, and that is why the two integrals of the block can be compared at all. The transform of the density read at the zero label is the density integrated over the whole domain, which is the total charge; a constant configuration has support at that label and at no other; and the partition function is the transform of $e^{iS/\hbar}$ read at zero source. So the charge, the constant configuration and the vacuum amplitude are one point of one space, read three ways:
+Three objects sit at the zero label, and that is why the two integrals of the block can be compared at all. The transform of the density read at the zero label is the density integrated over the whole domain, which is the total charge; a constant configuration has support at that label and at no other; and the partition function is the transform of $e^{\frac{2\pi iS}{h}}$ read at zero source. So the charge, the constant configuration and the vacuum amplitude are one point of one space, read three ways:
 
 $$
 \rho_{\mathrm{chg},\mathrm{trf}}(0)=\int d^{n}x\;\rho_{\mathrm{chg}}(x)=\text{the total charge},
@@ -120,7 +120,7 @@ The zero label is also the only label at which the action and the transform meet
 A mode lies on one sheet. The charge density is $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ with $\gamma=E/(mc^{2})$, so its sign is the sign of the mode's energy:
 
 $$
-\rho_{\mathrm{chg}}=\frac{\hbar k_t'}{mc}\lvert a\rvert^{2}\ \text{ for the mode }(\vec k_\Phi,k_t'),
+\rho_{\mathrm{chg}}=\frac{h k_t'}{2\pi mc}\lvert a\rvert^{2}\ \text{ for the mode }(\vec k_\Phi,k_t'),
 $$
 
 and a negative-frequency mode carries a negative charge density. **The two sheets of the hyperboloid are two disjoint supports, so no mode can straddle them**: a point of the support is on one sheet or the other, and the transform of a mode is a delta at one point.
@@ -138,7 +138,7 @@ The passage from this rung to the one below removes the mass from the shell, and
 | the shell | none: the Hamilton–Jacobi equation constrains nothing | $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$ |
 | the support of a solution | any set of points of the momentum space | a measure on the two-sheeted hyperboloid |
 | the sign of the density | one sign, always | the sign of the energy |
-| the velocity | $\hbar\vec k/m$, unbounded | $\hbar\vec k/m$ with $\gamma$ fixed by the shell |
+| the velocity | $\frac{h}{2\pi}\vec k/m$, unbounded | $\frac{h}{2\pi}\vec k/m$ with $\gamma$ fixed by the shell |
 | $Q$ at a mode | zero | zero |
 | what $Q$ does | deforms the density | deforms the radius of the support |
 
@@ -168,7 +168,7 @@ A mode has a constant scale, so its quantum potential vanishes exactly, and the 
 
 The quantum potential is a measure of the distance between the local field and a single point of the shell. It acts on the radius of the support; the connection acts on the centre. A radius cannot be removed by a change of variable and a centre can, so the quantum potential is an intrinsic deformation and the connection is a change of chart.
 
-The charge density of a mode is $\hbar k_t'\lvert a\rvert^{2}/(mc)$ and its sign is the sign of the energy, so a mode lies on one sheet of the two-sheeted hyperboloid and the sheets are disjoint supports. A superposition that occupies both can have a density of both signs: on one hundred events the amplitudes $0.5$ and $1.0$ gave $-1.777$ to $+2.317$, and equal amplitudes gave $0.0005$ to $8.188$.
+The charge density of a mode is $\frac{h}{2\pi} k_t'\lvert a\rvert^{2}/(mc)$ and its sign is the sign of the energy, so a mode lies on one sheet of the two-sheeted hyperboloid and the sheets are disjoint supports. A superposition that occupies both can have a density of both signs: on one hundred events the amplitudes $0.5$ and $1.0$ gave $-1.777$ to $+2.317$, and equal amplitudes gave $0.0005$ to $8.188$.
 
 The passage to the first-order rung removes the shell and with it the radius reading, and keeps the vanishing of $Q_{\mathrm{qnt}}$ at a mode unchanged. The same functional has two pictures, one on the density and one on the radius, and the second exists only because the equation is second order.
 
@@ -177,10 +177,10 @@ The passage to the first-order rung removes the shell and with it the radius rea
 | Symbol | Meaning |
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The central field, in its word |
-| $k_t'=\omega/c=E/(\hbar c)$, $\vec k_\Phi=\vec p/\hbar$ | The label of a mode |
-| $k_m=mc/\hbar$ | The mass wave number |
+| $k_t'=\omega/c=\frac{2\pi E}{h\,c}$, $\vec k_\Phi=\frac{2\pi \vec p}{h}$ | The label of a mode |
+| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime 2}$ | The d'Alembertian on the material sector |
-| $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ | The quantum potential; zero at a mode |
+| $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | The quantum potential; zero at a mode |
 | $\tilde V_\Phi=\tilde P_\Phi/m=\tilde\nabla_\Phi S_{\tilde\Xi}/m$ | The four-velocity |
 | $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$ | Its norm; $-c^{2}$ at a mode |
 | $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, $\gamma=E/(mc^{2})$ | The conserved density |

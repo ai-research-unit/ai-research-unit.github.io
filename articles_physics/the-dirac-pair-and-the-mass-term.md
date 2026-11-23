@@ -102,7 +102,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
 $$
 
-with $k_m=mc/\hbar$ the mass wave number. Each equation is first order and each carries the other chirality on its right-hand side: the mass is the term that converts one into the other as the field propagates.
+with $k_m=\frac{2\pi mc}{h}$ the mass wave number. Each equation is first order and each carries the other chirality on its right-hand side: the mass is the term that converts one into the other as the field propagates.
 
 That is the algebraic form of "a massive particle's chirality flips as it moves": the free equation is a rotation of the pair, and its rate is $k_m$.
 
@@ -190,7 +190,7 @@ This article stops at the carrier and the coupling. The equation itself — the 
 
 ## Summary
 
-A Weyl spinor is one chirality; the Dirac spinor is the direct sum of the two inequivalent spinor representations and is, in the algebra, the algebra itself as a four-dimensional complex space. The mass term is the off-diagonal bilinear $m\Psi^{\dagger}\gamma_{0}\Psi=2m\mathrm{Re}(\xi^{\dagger}\eta)$, verified to vanish on the diagonal and to pair the two halves, and it is parity-allowed because parity exchanges the halves. In the field equations the mass is the rate at which one chirality converts into the other, with frequency $k_m=mc/\hbar$, and the massless limit decouples the two. Chirality is the $\gamma^{5}$ eigenvalue and coincides with helicity only for a massless particle. The Majorana option is the antilinear self-pairing, available for a single Weyl spinor and physically realised, and it is a different pairing from the Dirac one, built on a different real structure.
+A Weyl spinor is one chirality; the Dirac spinor is the direct sum of the two inequivalent spinor representations and is, in the algebra, the algebra itself as a four-dimensional complex space. The mass term is the off-diagonal bilinear $m\Psi^{\dagger}\gamma_{0}\Psi=2m\mathrm{Re}(\xi^{\dagger}\eta)$, verified to vanish on the diagonal and to pair the two halves, and it is parity-allowed because parity exchanges the halves. In the field equations the mass is the rate at which one chirality converts into the other, with frequency $k_m=\frac{2\pi mc}{h}$, and the massless limit decouples the two. Chirality is the $\gamma^{5}$ eigenvalue and coincides with helicity only for a massless particle. The Majorana option is the antilinear self-pairing, available for a single Weyl spinor and physically realised, and it is a different pairing from the Dirac one, built on a different real structure.
 
 ## Summary of Notation
 
@@ -200,7 +200,7 @@ A Weyl spinor is one chirality; the Dirac spinor is the direct sum of the two in
 | $\Psi=(\xi,\eta)$ | the Dirac pair |
 | $\gamma^{5}$ | the chirality grading, $\mathrm{diag}(-1,-1,+1,+1)$ |
 | $P_{\pm}=\tfrac12(1\pm\gamma^{5})$ | the chirality projectors |
-| $k_m=mc/\hbar$ | the mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | the mass wave number |
 | $\Psi_{c}$ | the charge conjugate |
 
 ## Further Reading

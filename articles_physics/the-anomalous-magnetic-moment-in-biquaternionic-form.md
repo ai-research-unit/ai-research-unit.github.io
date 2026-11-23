@@ -14,7 +14,7 @@ This article is the worked radiative application of the spin-$\tfrac12$ subcateg
 
 **The state.** The field of this article is an element $w$ of $\mathbb{B}$, never a list of components. The incoming state is $w$ and the outgoing one is $w_2$; their momenta are $p$ and $p_2$, and $k_\Phi=p_2-p$ is the momentum the photon carries. An amplitude is the **pairing** of the outgoing state with the element the vertex carries into the incoming one,
 $$\bar w_2\,X:=\mathrm{Sc}\big(w_2^{*}\,i\,X\,\vec e_x\big),$$
-a scalar part of a product of three factors, written here as in the companion *The Gordon Decomposition of the Dirac Current in Biquaternionic Form*. The one datum of the frame it carries is the right multiplier $\vec e_x$, the adjoint's unit. Plane waves are $e^{+i\theta_{\mathrm{pwp}}}$ with $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar$ a real angle, so the on-shell condition below carries the sign it carries; a change of that convention flips the sign of the mass in the second display of §*The Vertex Function and the Form Factors* and the sign of the bivector term with it.
+a scalar part of a product of three factors, written here as in the companion *The Gordon Decomposition of the Dirac Current in Biquaternionic Form*. The one datum of the frame it carries is the right multiplier $\vec e_x$, the adjoint's unit. Plane waves are $e^{+i\theta_{\mathrm{pwp}}}$ with $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}$ a real angle, so the on-shell condition below carries the sign it carries; a change of that convention flips the sign of the mass in the second display of §*The Vertex Function and the Form Factors* and the sign of the bivector term with it.
 
 **The directions.** A direction of the frame acts on a state by a product on both sides. That is a derived form of the frame's four directions of *Matrix Representations Conventions*, used throughout: the timelike direction carries $X$ to $iX\vec e_x$, and the direction $\vec k_\Phi$ carries it to $i\vec e_\eta X\vec e_y$. The two multipliers are $\vec e_x$ and $\vec e_y$, and $\vec e_z$ is their product, $\vec e_x\vec e_y=\vec e_z$; the frame is the canonical one of the companion articles, and the two multipliers are what declares it. The weight is $\varepsilon=(1,-1,-1,-1)$, one and the same for the directions and for the states: a paired index is written low and carries that weight, so a contraction over $\nu$ carries $\varepsilon_\nu$, and no index is ever raised.
 
@@ -34,7 +34,7 @@ Two minus signs cancel in the second display, one from $i^2$ and one from $\vec 
 $$S_F(p):\quad w\,\longmapsto\frac{-p_0\,w\,\vec e_x+\sum_\eta  p_\eta\,\vec e_\eta\,w\,\vec e_y+im\,w}{-(N+m^{2}\,c^{2})+i\epsilon} ,$$
 with $N=-p_0^{2}+\sum_\eta p_\eta^{2}$. The factor $i$ of the numerator is what shortens it: distributing the outer $i$ of the companion's display turns $i\cdot i$ into $-1$ in each of the first two terms and leaves $i\,m$ in the third. The denominator $-(N+m^{2}\,c^{2})$ is $-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}-m^{2}$ for the wave biquaternion $\tilde P_{\Phi}=ip_0e_t+\vec p$ of that companion, whose norm is $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$.
 
-**The traces.** Two traces are used, and they are not the same one. On the algebra the trace of a product is twice the scalar part, $\mathrm{Tr}_2(\tilde Q_1\tilde Q_2)=2\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the plain form. On the operators the trace is four-by-four and factorizes, $\mathrm{tr}(L_aR_b)=4\mathrm{Sc}(a)\mathrm{Sc}(b)$, the two multipliers contributing separately; both are conventions of *Matrix Representations Conventions* and are cited, not derived. The fine-structure constant is $\alpha=e^2/(4\,\pi\,\hbar\,c\,\epsilon_{0})$, and every mass enters through the mass wave number $k_m=mc/\hbar$.
+**The traces.** Two traces are used, and they are not the same one. On the algebra the trace of a product is twice the scalar part, $\mathrm{Tr}_2(\tilde Q_1\tilde Q_2)=2\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the plain form. On the operators the trace is four-by-four and factorizes, $\mathrm{tr}(L_aR_b)=4\mathrm{Sc}(a)\mathrm{Sc}(b)$, the two multipliers contributing separately; both are conventions of *Matrix Representations Conventions* and are cited, not derived. The fine-structure constant is $\alpha=e^2/(4\,\pi\,\frac{h}{2\pi}\,c\,\epsilon_{0})$, and every mass enters through the mass wave number $k_m=\frac{2\pi mc}{h}$.
 
 ## The Vertex Function and the Form Factors
 
@@ -45,7 +45,7 @@ $$\Gamma_0\,w=i\,w\,\vec e_x\,F_1(k_\Phi^2)+\frac{1}{2\,m\,c}\sum_\eta  k_{\Phi\
 $$\Gamma_j\,w=i\,\vec e_j\,w\,\vec e_y\,F_1(k_\Phi^2)+\frac{1}{2\,m\,c}\Big(k_{t}^{\prime}\,\vec e_j\,w\,\vec e_z+\sum_{\eta\ne j} k_{\Phi\eta}\,\vec e_j\vec e_\eta\,w\Big)F_2(k_\Phi^2) .$$
 The first term of each line is the direction $\mu$ acting on the state; the second is the bivector of the pair $(\mu,\nu)$, and its shape is the content of the Gordon decomposition below.
 
-Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 $F_1(0)=1$ is the charge, and $F_2(0)$ is the anomaly. The gyromagnetic ratio is
 $$\boxed{\;g=2\big(F_1(0)+F_2(0)\big)=2\big(1+F_2(0)\big),
@@ -85,9 +85,9 @@ $$\boxed{\;\text{magnetic: }i\vec e_m\in\mathbb{B}_{\Psi}\ \text{(Hermitian, inf
 \text{electric: }i\vec e_\eta(\cdot)\vec e_z\in\mathbb{B}_{\Phi}\ \text{(anti-Hermitian, material)}\;}.$$
 Both classes were verified: $(i\vec e_m)^{*}=i\vec e_m$ and $\vec e_z^{*}=-\vec e_z$, and the products of the two classes come out opposite.
 
-The magnetic coupling to an external field is a rotation-type structure, and its direction $i\vec e_m$ is the very object that carries the spin, $\tilde S_{\Psi,m}=\frac{\hbar}{2}i\vec e_m$, in the companion *Angular Momentum and Spin in Biquaternionic Form*. The anomaly, being a correction to the magnetic structure, is an $\mathbb{B}_{\Psi}$ effect: the same sector as the observable it corrects. The electric (boost-type) structure is the material-sector one, and the convection (metric) part is central, in neither sector.
+The magnetic coupling to an external field is a rotation-type structure, and its direction $i\vec e_m$ is the very object that carries the spin, $\tilde S_{\Psi,m}=\frac{h}{4\pi}i\vec e_m$, in the companion *Angular Momentum and Spin in Biquaternionic Form*. The anomaly, being a correction to the magnetic structure, is an $\mathbb{B}_{\Psi}$ effect: the same sector as the observable it corrects. The electric (boost-type) structure is the material-sector one, and the convection (metric) part is central, in neither sector.
 
-**The spin.** The rotation bivector acts on a state as a left multiplication by $i\vec e_m$, which is twice the spin generator, $\frac{2\,\tilde{S}_{\Psi,m}}{\hbar}$. At the first direction, $\mathcal G_{12}$ acts as multiplication by $i\vec e_z=\frac{2\,\tilde{S}_{\Psi,3}}{\hbar}$. Two sectors, one bivector algebra, and the anomaly's structure is the informational one.
+**The spin.** The rotation bivector acts on a state as a left multiplication by $i\vec e_m$, which is twice the spin generator, $\frac{2\pi 2\,\tilde{S}_{\Psi,m}}{h}$. At the first direction, $\mathcal G_{12}$ acts as multiplication by $i\vec e_z=\frac{2\pi 2\,\tilde{S}_{\Psi,3}}{h}$. Two sectors, one bivector algebra, and the anomaly's structure is the informational one.
 
 **The bivector algebra.** The Lorentz generator of the pair is half the operator of the pair, and the closure of the six on the Lorentz algebra is a statement about the operators and not about the elements. It is therefore stated where the operators are written out, in §*The Reduction of a Numerator*; what the objects show without the operators is the Hermiticity split just read: the three rotations are single elements and their class is read off them, and the three timelike pairs are two-sided and their class is read off the two multipliers.
 
@@ -152,7 +152,7 @@ against the measured $1.15965218073\times10^{-3}$: agreement to $5\times10^{-11}
 
 **The algebra's own.**
 
-- *The sector placement of the two vertex structures.* The magnetic (bivector, rotation-type) structure is the $\mathbb{B}_{\Psi}$ direction $i\vec e_m$, the same sector as the spin generators $\tilde S_{\Psi,m}=\frac{\hbar}{2}i\vec e_m$; the electric (timelike-pair) structure is the two-sided insertion $i\vec e_\eta(\cdot)\vec e_z$, anti-Hermitian, in $\mathbb{B}_{\Phi}$; the convection (metric) structure is central.
+- *The sector placement of the two vertex structures.* The magnetic (bivector, rotation-type) structure is the $\mathbb{B}_{\Psi}$ direction $i\vec e_m$, the same sector as the spin generators $\tilde S_{\Psi,m}=\frac{h}{4\pi}i\vec e_m$; the electric (timelike-pair) structure is the two-sided insertion $i\vec e_\eta(\cdot)\vec e_z$, anti-Hermitian, in $\mathbb{B}_{\Phi}$; the convection (metric) structure is central.
 - *The Gordon split as the symmetric/antisymmetric split of a product of two directions*, done in the algebra's own objects.
 - *The six bivectors.* Three are single elements, $i\vec e_m$, and three are two-sided; the class of each names its sector.
 
@@ -240,7 +240,7 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | $S_{\mu\nu}=\tfrac12\mathcal G_{\mu\nu}=-i\sigma_{\mu\nu}$ | Lorentz generator of the pair, half the bivector; the six close on the Lorentz algebra |
 | Product of two directions | the metric $\varepsilon_\mu$ on the diagonal and nothing off it, plus the bivector |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The two sectors, and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ |
-| $\tilde S_{\Psi,m}=\frac{\hbar}{2}i\vec e_m$ | Spin generator; $\mathcal G_{12}$ acts as $\frac{2\,\tilde{S}_{\Psi,3}}{\hbar}$ |
+| $\tilde S_{\Psi,m}=\frac{h}{4\pi}i\vec e_m$ | Spin generator; $\mathcal G_{12}$ acts as $\frac{2\pi 2\,\tilde{S}_{\Psi,3}}{h}$ |
 | $L_aR_b$, $L_aR_bX=aXb$ | The operator of the two multipliers, used in §*The Reduction of a Numerator* only |
 | $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $\nu(t)=x$, $\nu(\eta)=y$ | The operator of the direction $\mu$ |
 | $\mathrm{tr}(L_aR_b)=4\mathrm{Sc}(a)\mathrm{Sc}(b)$ | Operator trace, factorized into the two multipliers |

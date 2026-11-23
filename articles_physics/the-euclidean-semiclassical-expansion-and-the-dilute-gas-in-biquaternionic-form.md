@@ -13,12 +13,12 @@
 
 ## The Euclidean Integral and Steepest Descent
 
-**The continuation.** The path integral $e^{iS/\hbar}$ becomes $e^{-S_E/\hbar}$ after continuation to Euclidean signature, and the weight is then largest where the Euclidean action is smallest. The saddle points are the solutions of the Euclidean equations of motion, and the integral is a sum of Gaussian fluctuations about them.
+**The continuation.** The path integral $e^{\frac{2\pi iS}{h}}$ becomes $e^{-\frac{2\pi S_E}{h}}$ after continuation to Euclidean signature, and the weight is then largest where the Euclidean action is smallest. The saddle points are the solutions of the Euclidean equations of motion, and the integral is a sum of Gaussian fluctuations about them.
 
 **The expansion.** For a saddle $\phi_0$,
 
 $$
-Z=\sum_{\phi_0}e^{-S_E[\phi_0]/\hbar}\int\mathcal{D}\delta\phi\ e^{-\frac{1}{2}\delta\phi\,S''[\phi_0]\,\delta\phi/\hbar},
+Z=\sum_{\phi_0}e^{-S_E[\phi_0]\frac{2\pi}{h}}\int\mathcal{D}\delta\phi\ e^{-\frac{1}{2}\delta\phi\,S''[\phi_0]\,\frac{2\pi \delta\phi}{h}},
 $$
 
 the inner integral being the one-loop determinant, which contributes a prefactor rather than a phase.

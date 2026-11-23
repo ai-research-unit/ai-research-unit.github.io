@@ -42,7 +42,7 @@ The generating functional is
 $$
 Z[\tilde J_{\Phi,+},\tilde J_{\Phi,-}] = \int\mathcal{D}\tilde{Ξ}_+\mathcal{D}\tilde{Ξ}_-\;\exp(i\theta_{\mathrm{act}}^{+}-i\theta_{\mathrm{act}}^{-}+i\theta_{\mathrm{src}}),
 $$
-with the branch actions $\theta_{\mathrm{act}}^{\pm}=S[\tilde{Ξ}_\pm]/\hbar$ and the source angle $\theta_{\mathrm{src}}=\frac{1}{\hbar}\int(\tilde J_{\Phi,+}\tilde{Ξ}_+-\tilde J_{\Phi,-}\tilde{Ξ}_-)$, all real and dimensionless because each is a real action over $\hbar$ or a real pairing over $\hbar$; the relative sign is between the two branches. The two-branch action is the difference of two copies of the ordinary action, and the minus branch is integrated with the opposite orientation, which is what makes the formalism genuinely *in-in*: the final state is summed over, not fixed. This is standard (Schwinger 1961; Keldysh 1964; Kadanoff–Baym; see the cited reviews) and is transcribed.
+with the branch actions $\theta_{\mathrm{act}}^{\pm}=S[\tilde{Ξ}_\pm]\frac{2\pi}{h}$ and the source angle $\theta_{\mathrm{src}}=\frac{2\pi 1}{h}\int(\tilde J_{\Phi,+}\tilde{Ξ}_+-\tilde J_{\Phi,-}\tilde{Ξ}_-)$, all real and dimensionless because each is a real action over $\frac{h}{2\pi}$ or a real pairing over $\frac{h}{2\pi}$; the relative sign is between the two branches. The two-branch action is the difference of two copies of the ordinary action, and the minus branch is integrated with the opposite orientation, which is what makes the formalism genuinely *in-in*: the final state is summed over, not fixed. This is standard (Schwinger 1961; Keldysh 1964; Kadanoff–Baym; see the cited reviews) and is transcribed.
 
 **The doubled Green's functions.** The basic objects are the branch-indexed two-point functions
 $$
@@ -254,7 +254,7 @@ was checked for a model retarded function at $\beta=2$ and several frequencies; 
 | $A(\omega)=-i(G^R-G^A)$ | Spectral function, $A\ge0$ |
 | $G^{\mathrm{Kel}}=\coth(\beta\omega/2)(G^R-G^A)$ | Fluctuation–dissipation relation |
 | $n_{\mathrm B}(\omega)=1/(\exp(\beta\omega)-1)$ | Bose occupation number |
-| $\beta=\frac{\hbar}{k_{B}\,T}$ | Inverse temperature (input) |
+| $\beta=\frac{h}{2\pi k_{B}\,T}$ | Inverse temperature (input) |
 
 ## Further Reading
 

@@ -332,7 +332,7 @@ The object. The frequency $\omega$ conjugate to $t$, and the multiplier $2\pi i\
 
 The warrant. Differentiation of the kernel multiplies it by $2\pi i\tilde{Z}\omega_\mu$, so the transform converts a rate of change into a label. The label is an element and not a number, and its four coordinates are the four rates.
 
-The reading. A frequency is a rate of phase, and a wave number is a rate of phase per unit length; the two are the components of one element, which is why the corpus writes a four-wave-number $\tilde{K}_\Phi=i k'_te_t+\vec k_\Phi$ and not a frequency and a vector. The identification of $2\pi\omega$ with an energy requires $\hbar$ and is an input; the algebra supplies the shape of the identification and none of the number, and the entry states that boundary rather than crossing it. *The Three Wavenumbers of a Particle* carries the three rates that the corpus distinguishes, and *Derivatives, Fields and Transforms* the general dictionary.
+The reading. A frequency is a rate of phase, and a wave number is a rate of phase per unit length; the two are the components of one element, which is why the corpus writes a four-wave-number $\tilde{K}_\Phi=i k'_te_t+\vec k_\Phi$ and not a frequency and a vector. The identification of $2\pi\omega$ with an energy requires $\frac{h}{2\pi}$ and is an input; the algebra supplies the shape of the identification and none of the number, and the entry states that boundary rather than crossing it. *The Three Wavenumbers of a Particle* carries the three rates that the corpus distinguishes, and *Derivatives, Fields and Transforms* the general dictionary.
 
 The limit. The rate is a label of a description and not a property of an object. The same element transformed at two different roots carries two different pairs of rates, and neither is privileged by the algebra.
 
@@ -400,7 +400,7 @@ The limit. The indefinite modular theory is unavailable, so no thermal statement
 
 No dynamics. The section supplies a change of description and no equation. It selects no element, states no Lagrangian, and does not claim that any particular root is the physical one. The transform of an equation is exact; the choice of equation is elsewhere.
 
-No constant is derived. $\hbar$ does not appear. The identification of a frequency with an energy, of a wave number with a momentum, of a pole with a mass and of a type with a lifetime are inputs of the corpus, and the entry states each of them as an input.
+No constant is derived. $\frac{h}{2\pi}$ does not appear. The identification of a frequency with an energy, of a wave number with a momentum, of a pole with a mass and of a type with a lifetime are inputs of the corpus, and the entry states each of them as an input.
 
 The isometry is restricted. Every norm-preserving statement requires a Hermitian root, hence a normal element. The general transform is invertible and rescaling, and the deficit is a number that must be carried.
 

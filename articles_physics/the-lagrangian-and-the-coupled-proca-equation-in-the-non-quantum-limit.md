@@ -12,7 +12,7 @@ S=\int\mathrm{d}^{4}\varrho\;\Bigl\{\tfrac12\sum_\mu\varepsilon_\mu\bigl(\partia
 +\text{(the frame's terms)}\Bigr\},
 $$
 
-with $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{q}{\hbar}A_\mu$ the mechanical phase gradient and $\mathcal V$ the invariant length's frame factor. Three blocks and the same four brackets as the Dirac chart.
+with $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi q}{h}A_\mu$ the mechanical phase gradient and $\mathcal V$ the invariant length's frame factor. Three blocks and the same four brackets as the Dirac chart.
 
 The amplitude's kinetic term is order two; the mass term is order zero; the phase's bracket is order zero. **So the deletion of the amplitude's kinetic term is a deletion across two orders**, which is what makes it controlled.
 
@@ -26,7 +26,7 @@ The covariant Proca action, the minimal substitution, the transverse polarisatio
 
 The word is defined for $\varrho>0$; the limit is a statement on the chart's domain; the cone is $\varrho=0$.
 ## Conventions
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled polar variational parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+iq\tilde A_\mu/\hbar$; the complete polar decomposition $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\varepsilon_\mu$ the metric signs; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled polar variational parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iq\tilde A_\mu}{h}$; the complete polar decomposition $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\varepsilon_\mu$ the metric signs; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=\frac{2\pi mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$.
 ## The Action in the Non-Quantum Limit: The Blocks
 | block | derivative count | order |
 |---|---|---|
@@ -82,7 +82,7 @@ Varying the phase. The covariant transport,
 $$
 \partial_{r'_{t}}\bigl(\rho_{\mathrm{num}}\,\mathcal E/c\bigr)+\vec\nabla_\Phi\cdot\bigl(\rho_{\mathrm{num}}\,\vec\pi\bigr)=0,
 \qquad
-\vec\pi=\hbar\vec\kappa ,
+\vec\pi=\frac{h}{2\pi}\vec\kappa ,
 $$
 
 the continuity equation for the charge density and the mechanical current. It is exact in the pair and unchanged by the deletion, because the deleted block carries no phase.
@@ -158,10 +158,10 @@ The three variations give the covariant transport, the mass shell with the frame
 |---|---|
 | $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The coupled word on the complex carrier |
 | $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | The scale; the density |
-| $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+qA_\mu/\hbar$ | The mechanical phase gradient |
-| $\hbar\vec\kappa=\vec\pi$, $\hbar c\kappa_t=\mathcal E$ | Mechanical momentum and energy |
+| $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi qA_\mu}{h}$ | The mechanical phase gradient |
+| $\frac{h}{2\pi}\vec\kappa=\vec\pi$, $\frac{h}{2\pi} c\kappa_t=\mathcal E$ | Mechanical momentum and energy |
 | $\mathcal V$ | The invariant length's frame factor; not closed in the six angles |
-| $k_m=mc/\hbar$ | The mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
 | $\epsilon=1/(\pi_{\Phi}L)$ | The parameter of the amplitude's curvature |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ | The d'Alembertian of the material sector |
 ## Further Reading

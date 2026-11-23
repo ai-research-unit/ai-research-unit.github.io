@@ -57,7 +57,7 @@ The form converts a function into a vector field and defines a bracket on the fu
 | the Schouten bracket and the Jacobi identity | the integrability condition for a Poisson tensor | *Poisson Geometry* |
 | a Casimir function | a function bracketing to zero with every function | *Poisson Geometry*, §Casimirs and Symplectic Leaves |
 | the symplectic leaves of a Poisson manifold | the maximal submanifolds on which the bracket is symplectic | *Poisson Geometry*, §Casimirs and Symplectic Leaves |
-| the star product and deformation quantisation | the associative deformation $f*g = fg + \hbar\{f,g\} + O(\hbar^2)$ | *Poisson Geometry*, §Deformation Quantisation |
+| the star product and deformation quantisation | the associative deformation $f*g = fg + h_{\mathrm{def}}\{f,g\} + O(h_{\mathrm{def}}^2)$ | *Poisson Geometry*, §Deformation Quantisation |
 
 The bracket makes the functions of a symplectic manifold a Lie algebra, and the Hamiltonian fields are its image under the map $f\mapsto X_f$, whose kernel is the constants. The Poisson manifolds are the degenerate case, in which the bracket may not come from a form and the manifold foliates into the symplectic leaves; the coadjoint orbits of a Lie group are the standard examples, and they are the geometric content of the orbit method.
 

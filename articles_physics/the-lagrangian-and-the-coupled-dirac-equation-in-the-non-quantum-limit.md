@@ -11,16 +11,16 @@ The restriction. The word exists where $N(\tilde\Xi)\neq0$; the action is writte
 
 The signs. The parent writes the coupling as $ϙ$ with $ϙ=-q$. The displays here keep the parent's letters and use $\vec\pi=\vec p-q\vec A$ and $\mathcal E=E-q\varphi$ when the mechanical variables are named.
 ## Conventions
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$; $V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ the frame potential including the mass function $\mathcal V$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$; $V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ the frame potential including the mass function $\mathcal V$; $k_m=\frac{2\pi mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$.
 ## The Action in the Non-Quantum Limit
 The two displays, side by side, and their difference.
 
 $$
-S_{\mathrm{op}}=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho_{\mathrm{num}}\,\partial_{r'_{t}}\theta_{\mathrm{pha}}-\rho_{\mathrm{num}} V-mc^{2}\varrho^{2}+\text{terms in }\vec\nabla_\Phi \varrho,\ \vec\nabla_\Phi\theta_{\mathrm{rpd}},\ \vec\nabla_\Phi\theta_{\mathrm{axr}}\Bigr],
+S_{\mathrm{op}}=\int\mathrm{d}^{4}\varrho\;\Bigl[-\frac{h}{2\pi} c\,\rho_{\mathrm{num}}\,\partial_{r'_{t}}\theta_{\mathrm{pha}}-\rho_{\mathrm{num}} V-mc^{2}\varrho^{2}+\text{terms in }\vec\nabla_\Phi \varrho,\ \vec\nabla_\Phi\theta_{\mathrm{rpd}},\ \vec\nabla_\Phi\theta_{\mathrm{axr}}\Bigr],
 $$
 
 $$
-S_{\mathrm{box}}=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho_{\mathrm{num}}\,\partial_{r'_{t}}\theta_{\mathrm{pha}}-\rho_{\mathrm{num}} V-mc^{2}\varrho^{2}\Bigr],
+S_{\mathrm{box}}=\int\mathrm{d}^{4}\varrho\;\Bigl[-\frac{h}{2\pi} c\,\rho_{\mathrm{num}}\,\partial_{r'_{t}}\theta_{\mathrm{pha}}-\rho_{\mathrm{num}} V-mc^{2}\varrho^{2}\Bigr],
 \qquad
 \rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}} .
 $$
@@ -42,7 +42,7 @@ The potential is central and Hermitian, so it joins the phase bracket where the 
 
 The coupling in the one-form. The two displays above carry the free action's letters; with the connection present the phase's differential is the covariant one,
 $$
-\mathrm{d}\theta_{\mathrm{pha}}\ \longmapsto\ \mathrm{d}\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}\tilde A_\Phi ,
+\mathrm{d}\theta_{\mathrm{pha}}\ \longmapsto\ \mathrm{d}\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}\tilde A_\Phi ,
 $$
 and that is the only change. The one-form's rotor term is untouched, because the connection is central and the rotor bracket is a real vector part.
 
@@ -100,7 +100,7 @@ $$
 the momenta read off the one-form; the phase gives the one non-trivial momentum,
 
 $$
-p_{\theta_{\mathrm{pha}}}=-\hbar c\,\rho_{\mathrm{num}},
+p_{\theta_{\mathrm{pha}}}=-\frac{h}{2\pi} c\,\rho_{\mathrm{num}},
 $$
 
 and the Euler–Lagrange equation of the density and of the guidance angle gives the two evolution equations the next section counts.
@@ -121,9 +121,9 @@ What it cannot reach, and the reason is type. The scale bracket is a real centra
 
 What follows for the limit's statements, in advance of any computation. Order zero's polarisation condition is unaffected by the coupling; order one's density law is unaffected except through the velocity it carries; order one's velocity law is the one the coupling rewrites; order one's spin law is unaffected directly. The table is a prediction of the limit's structure, and the equation-route companion confirms each entry.
 ## The Noether Currents: The Charge and the Spin in the Limit
-The charge is the density, and the coupling does not touch it. The phase's momentum is $-\hbar c\,\rho_{\mathrm{num}}$, so the particle density is $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and the charge density is $q\rho_{\mathrm{num}}$, with $q=-ϙ$ the parent's charge. The current is $\rho_{\mathrm{num}}\vec v$ with $\vec v$ the transport velocity of the guidance equation, and the continuity equation of the limit is the conservation of this current.
+The charge is the density, and the coupling does not touch it. The phase's momentum is $-\frac{h}{2\pi} c\,\rho_{\mathrm{num}}$, so the particle density is $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and the charge density is $q\rho_{\mathrm{num}}$, with $q=-ϙ$ the parent's charge. The current is $\rho_{\mathrm{num}}\vec v$ with $\vec v$ the transport velocity of the guidance equation, and the continuity equation of the limit is the conservation of this current.
 
-The spin current, unchanged. The rotor's bracket is a real vector part and the connection is central, so the spin current is the free one: the rotor's conjugate momentum $-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}}$, transported by the same flow. The statement is exact and not an approximation of the limit: it is exact in the parent and the limit does not touch it.
+The spin current, unchanged. The rotor's bracket is a real vector part and the connection is central, so the spin current is the free one: the rotor's conjugate momentum $-\frac{h}{2\pi} c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}}$, transported by the same flow. The statement is exact and not an approximation of the limit: it is exact in the parent and the limit does not touch it.
 
 What the mass term does. It removes the phase from the dynamics of the density and puts it into the guidance equation, so that the charge is conserved without the mass appearing in its conservation law. The energy carries the mass; the charge does not. That split is the limit's form of the element article's *The Charge Has No Mass and the Energy Has Mass-Squared*, and it is the reason the two currents are computed separately here.
 ## What the Principle Adds and What It Relabels: What the Route Does Not Do

@@ -14,17 +14,17 @@ This is the variational companion of [The Charged Spin-Half Fluid](the-charged-s
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta\in\mathbb{B}_\Phi$, covariant derivative $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Gauge transformations are central: $\tilde\Xi\mapsto\tilde\Xi\lambda$ with $\lambda=\exp(iϙ\Gamma/\hbar)\in\mathbb{C}$, $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta\in\mathbb{B}_\Phi$, covariant derivative $\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Gauge transformations are central: $\tilde\Xi\mapsto\tilde\Xi\lambda$ with $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})\in\mathbb{C}$, $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$.
 
 ## The Action in the Fluid Variables: The Kinetic Term and the Two Rates
 
 $$
-\mathcal L_{\mathrm{kin}}=\hbar c\,\rho_{\mathrm{chg}}\bigl(\dot\theta_{\mathrm{pha}}-\beta\,\vec n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\bigr)
+\mathcal L_{\mathrm{kin}}=\frac{h}{2\pi} c\,\rho_{\mathrm{chg}}\bigl(\dot\theta_{\mathrm{pha}}-\beta\,\vec n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\bigr)
 \;\longrightarrow\;
-\mathcal L_{\mathrm{kin}}^{\mathrm{gco}}=\hbar c\,\rho_{\mathrm{chg}}\bigl(\mathcal R_{\mathrm{pha}}-\beta\,\mathcal R_{\mathrm{rpd}}\bigr),
+\mathcal L_{\mathrm{kin}}^{\mathrm{gco}}=\frac{h}{2\pi} c\,\rho_{\mathrm{chg}}\bigl(\mathcal R_{\mathrm{pha}}-\beta\,\mathcal R_{\mathrm{rpd}}\bigr),
 $$
 
-The two covariant rates are the time slots of the phase's bracket and of the boost's. The first is the gauge-invariant phase rate, $\dot\theta_{\mathrm{pha}}-ϙ a'_t/\hbar$, which is the free article's $\mathcal E$ up to the mass; the second is the rapidity's rate with the vector potential's component along the boost axis added, and it is what makes the velocity the mechanical one.
+The two covariant rates are the time slots of the phase's bracket and of the boost's. The first is the gauge-invariant phase rate, $\dot\theta_{\mathrm{pha}}-\frac{2\pi ϙ a'_t}{h}$, which is the free article's $\mathcal E$ up to the mass; the second is the rapidity's rate with the vector potential's component along the boost axis added, and it is what makes the velocity the mechanical one.
 
 If the coupling had a rotor-bracket component, the second rate would acquire a term independent of $\beta$ and the spin would be canonically visible at rest. It has none, so the weight stays $\beta$ and the rest frame stays spinless. **The statement "the coupling adds a force and not a torque" is, in the action, the statement that $\beta$ is not modified.**
 
@@ -34,8 +34,8 @@ The coupling enters the time slot with the same sign there and here, because the
 
 | momentum | value | changed by the coupling? |
 | --- | --- | --- |
-| $p_{\theta_{\mathrm{pha}}}$ | $\hbar c\,\rho_{\mathrm{chg}}$ | no |
-| $\vec p_{\mathrm{spin}}$ | $-\hbar c\,\rho_{\mathrm{chg}}\beta\,\vec n_{\mathrm{rot}}$ | no |
+| $p_{\theta_{\mathrm{pha}}}$ | $\frac{h}{2\pi} c\,\rho_{\mathrm{chg}}$ | no |
+| $\vec p_{\mathrm{spin}}$ | $-\frac{h}{2\pi} c\,\rho_{\mathrm{chg}}\beta\,\vec n_{\mathrm{rot}}$ | no |
 | $p_{\theta_{\mathrm{rpd}}}$ | $0$ | no |
 | $p_{u_{\mathrm b}}$, $p_{\varrho}$ | $0$ | no |
 
@@ -58,7 +58,7 @@ The one thing the variation adds. It shows that the coupling cannot change the c
 Since $\tilde A_\Phi\in\mathbb{B}_\Phi$ is Hermitian,
 
 $$
-\frac{iϙ}{\hbar}\tilde A_\Phi=\frac{iϙ}{\hbar}a'_t\,e_t+\frac{iϙ}{\hbar}\vec A,
+\frac{2\pi iϙ}{h}\tilde A_\Phi=\frac{2\pi iϙ}{h}a'_t\,e_t+\frac{2\pi iϙ}{h}\vec A,
 $$
 
 and the first term is central imaginary while the second is Hermitian with a real vector coefficient. In the bracket decomposition of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$,
@@ -66,8 +66,8 @@ and the first term is central imaginary while the second is Hermitian with a rea
 | bracket | type | what the free bracket reads | what the connection adds |
 | --- | --- | --- | --- |
 | scale | real scalar | $\partial_\mu\ln \varrho$ | $0$ |
-| phase | central imaginary | $\partial_\mu\theta_{\mathrm{pha}}$ | $-ϙ a'_t/\hbar$ in the time slot |
-| boost | Hermitian | the rapidity's connection | $ϙ\vec A/\hbar$ in the spatial slots |
+| phase | central imaginary | $\partial_\mu\theta_{\mathrm{pha}}$ | $-\frac{2\pi ϙ a'_t}{h}$ in the time slot |
+| boost | Hermitian | the rapidity's connection | $\frac{2\pi ϙ\vec A}{h}$ in the spatial slots |
 | rotor | real vector | $\vec\omega_{\mathrm r}$'s connection | $0$ |
 
 **The two zeros are the article's first result and they are structural.** The scale is real and the connection has no real scalar part; the rotor is a real vector and the connection has no real vector part. **No cancellation occurs and no small parameter is used**: the two brackets the coupling cannot reach are the two factors of the complete polar decomposition that carry the fluid's density and its spin.
@@ -77,12 +77,12 @@ This is the type argument of the block's charged articles, in its most economica
 With $\tilde\Xi\mapsto\tilde\Xi\lambda$ and $\lambda\in\mathbb{C}$ central,
 
 $$
-\tilde\Xi^{-1}\bigl(\partial_\mu+\tfrac{iϙ}{\hbar}A_\mu\bigr)\tilde\Xi
+\tilde\Xi^{-1}\bigl(\partial_\mu+\frac{2\pi iϙ}{h}A_\mu\bigr)\tilde\Xi
 \longmapsto
-\tilde\Xi^{-1}\bigl(\partial_\mu+\tfrac{iϙ}{\hbar}A_\mu\bigr)\tilde\Xi+\lambda^{-1}\partial_\mu\lambda,
+\tilde\Xi^{-1}\bigl(\partial_\mu+\frac{2\pi iϙ}{h}A_\mu\bigr)\tilde\Xi+\lambda^{-1}\partial_\mu\lambda,
 $$
 
-and $\lambda^{-1}\partial_\mu\lambda=iϙ\partial_\mu\Gamma/\hbar$ is central, so it cancels against the transformed connection. The frame's brackets do not see the shift at all, because it is added on the left of the element and the frame's factors are to the right, and because a central element commutes past every one of them.
+and $\lambda^{-1}\partial_\mu\lambda=\frac{2\pi iϙ\partial_\mu\Gamma}{h}$ is central, so it cancels against the transformed connection. The frame's brackets do not see the shift at all, because it is added on the left of the element and the frame's factors are to the right, and because a central element commutes past every one of them.
 
 A gauge transformation is a multiplication of the word by a central factor; the word's factors are the phase's and the frame's; a central multiplication can be absorbed into the phase's factor — which is what a phase shift is — and cannot be absorbed into the frame's, because the frame's factors are not central. So the shift is entirely the phase's, and the boost's bracket's apparent change is the connection's cancellation. **The coupling's reach and the gauge group's reach coincide, and both are the central direction of the algebra.**
 
@@ -100,7 +100,7 @@ The charged scalar fluid's rotation is a field-theoretic input that costs no fie
 
 ## The Noether Currents: Charge and Spin with the Mechanical Momentum
 
-The charge current is $q\rho_{\mathrm{chg}}$ and $q\rho_{\mathrm{chg}}\vec v$ with $\vec v=\vec\pi/m$; the spin current is the canonical table's $\vec p_{\mathrm{spin}}=-\hbar c\,\rho_{\mathrm{chg}}\beta\,\vec n_{\mathrm{rot}}$, transported by the same flow. Both are the free currents with $\vec p$ replaced by $\vec\pi$, and that replacement is the whole of the coupling's effect.
+The charge current is $q\rho_{\mathrm{chg}}$ and $q\rho_{\mathrm{chg}}\vec v$ with $\vec v=\vec\pi/m$; the spin current is the canonical table's $\vec p_{\mathrm{spin}}=-\frac{h}{2\pi} c\,\rho_{\mathrm{chg}}\beta\,\vec n_{\mathrm{rot}}$, transported by the same flow. Both are the free currents with $\vec p$ replaced by $\vec\pi$, and that replacement is the whole of the coupling's effect.
 
 The connection is central, so it multiplies the rotor and the frame without a side; the covariant derivative therefore changes the phase's rate and the spatial gradient and leaves the frame's algebra alone. The canonical table's three zeros are untouched, and so is the relation between the spin's magnitude and $\beta$.
 
@@ -142,7 +142,7 @@ The coupling's reach. Central imaginary in the time slot, Hermitian in the spati
 
 The kinetic term. Two rates, both made covariant; the weight $\beta$ unchanged, which is "no torque" in the action.
 
-The canonical table. Unchanged line for line: $p_{\theta_{\mathrm{pha}}}=\hbar c\rho_{\mathrm{chg}}$, $\vec p_{\mathrm{spin}}=-\hbar c\rho_{\mathrm{chg}}\beta\vec n_{\mathrm{rot}}$, the rest zero.
+The canonical table. Unchanged line for line: $p_{\theta_{\mathrm{pha}}}=\frac{h}{2\pi} c\rho_{\mathrm{chg}}$, $\vec p_{\mathrm{spin}}=-\frac{h}{2\pi} c\rho_{\mathrm{chg}}\beta\vec n_{\mathrm{rot}}$, the rest zero.
 
 The norms. Every norm survives, because a connection transports and does not measure; the scalar rung's shell is a norm that measures, and it is the exception.
 
@@ -157,12 +157,12 @@ Gauge invariance. Exact, and exact because the gauge group is central and theref
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word, four factors |
 | $ϙ$ | Coupling; minus the electric charge |
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection; Hermitian, hence central-imaginary in time and Hermitian in space |
-| $\lambda=\exp(iϙ\Gamma/\hbar)$ | The gauge element; central, hence commuting with the frame |
+| $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ | The gauge element; central, hence commuting with the frame |
 | $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | The velocity; an invertible element's square, norm $-c^{2}$ for every field |
 | $\rho_{\mathrm{num}}=\varrho^{2}$, $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ | Proper and charge densities |
 | $\beta=\tanh\theta_{\mathrm{rpd}}$ | The spin's canonical weight |
 | $\mathcal R_{\mathrm{pha}}$, $\mathcal R_{\mathrm{rpd}}$ | The two covariant rates |
-| $\vec p_{\mathrm{spin}}=-\hbar c\rho_{\mathrm{chg}}\beta\vec n_{\mathrm{rot}}$ | The spin's momentum; unchanged by the coupling |
+| $\vec p_{\mathrm{spin}}=-\frac{h}{2\pi} c\rho_{\mathrm{chg}}\beta\vec n_{\mathrm{rot}}$ | The spin's momentum; unchanged by the coupling |
 | $p_{\varrho}=p_{\theta_{\mathrm{rpd}}}=p_{u_{\mathrm b}}=0$ | The four vanishing momenta |
 | $\omega_{\mu\nu}$ | The vorticity; the frame's, not $ϙ F/m$ |
 | $\mathcal L_{\mathrm{kin}}^{\mathrm{gco}}$ | The kinetic Lagrangian density with the connection |

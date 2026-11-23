@@ -19,20 +19,20 @@ What is not claimed. The equation is the standard minimally coupled Proca equati
 Conventions. The algebra, the sectors, the pairing and the mass are the free companion's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling is $ϙ$, and the covariant derivative is
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi ,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi ,
 \qquad
-D_t=\partial_{t'}-\frac{iϙ}{\hbar}\varphi,
+D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\varphi,
 \qquad
-D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta ,
+D_\eta=\partial_\eta+\frac{2\pi iϙ}{h}A_\eta ,
 $$
 
-with the mechanical momentum $\vec\pi=-i\hbar\vec\nabla_\Phi-q\vec A$ and the potential energy $-ϙ\varphi$. The Proca potential is written $\tilde A$ when the distinction from the connection matters, and $\tilde A_\Phi$ is reserved for the connection.
+with the mechanical momentum $\vec\pi=-i \frac{h}{2\pi}\vec\nabla_\Phi-q\vec A$ and the potential energy $-ϙ\varphi$. The Proca potential is written $\tilde A$ when the distinction from the connection matters, and $\tilde A_\Phi$ is reserved for the connection.
 
 ## The Carrier and the Measure
 
 The obstruction is the closure failure, and one product shows it. The product of two anti-Hermitian elements is Hermitian, and the simplest instance is decisive: $\vec e_x\vec e_x=-e_t$, whose right side is central and real and therefore outside $\mathbb{B}_\Phi$. A hundred random products of material-sector elements leave the sector in every case, because the sector is a real four-dimensional subspace of an eight-dimensional algebra and it is closed only under central real scalars.
 
-The minimal substitution is what forces the issue. The added element $\frac{iϙ}{\hbar}\tilde A_\Phi$ is anti-Hermitian, so the coupled derivative of a material field is the sum of a material element and a product of two material elements: the first is in the sector, the second is not. **There is no way to pose the equation inside the sector**; projecting after every multiplication is not covariant and produces the minimal coupling of nothing.
+The minimal substitution is what forces the issue. The added element $\frac{2\pi iϙ}{h}\tilde A_\Phi$ is anti-Hermitian, so the coupled derivative of a material field is the sum of a material element and a product of two material elements: the first is in the sector, the second is not. **There is no way to pose the equation inside the sector**; projecting after every multiplication is not covariant and produces the minimal coupling of nothing.
 
 So the integral runs over $\mathbb{B}$, and the free integral is its real slice. The measure becomes the flat measure on eight real components at each point. The free field's reality is the condition $\tilde A^{*}=-\tilde A$, which is one conjugation's fixed set inside the carrier, and the free article's integral is the restriction of this one to that set. The carrier's dimension doubles, and that doubling is the article's first and largest structural fact.
 
@@ -57,8 +57,8 @@ The expansion is a square's expansion, and each term has a degree.
 $$
 \mathrm{Sc}\bigl(\tilde F_{\mathrm{gco}}\tilde F_{\mathrm{gco}}\bigr)
 =\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)
-+2\,\frac{iϙ}{\hbar}\,\mathrm{Sc}\bigl(\tilde F\tilde V\bigr)
--\frac{ϙ^{2}}{\hbar^{2}}\,\mathrm{Sc}\bigl(\tilde V\tilde V\bigr),
++2\,\frac{2\pi iϙ}{h}\,\mathrm{Sc}\bigl(\tilde F\tilde V\bigr)
+-\frac{(2\pi)^{2} ϙ^{2}}{h^{2}}\,\mathrm{Sc}\bigl(\tilde V\tilde V\bigr),
 \qquad
 \tilde V=\mathrm{Vect}\bigl(\tilde A_\Phi^{\natural}\tilde A\bigr).
 $$
@@ -139,7 +139,7 @@ exactly as in the free case with the covariant operators in place. The longitudi
 
 The free field had no phase and therefore no charge. A real four-vector has nothing to rotate, the mass term is real and the central imaginary leaves the sector, so the free theory's only Noether current is the energy–momentum. The free article says this and gives it as the reason the free Proca field cannot source the inhomogeneous Maxwell equation.
 
-The coupled carrier has a phase and the phase is a symmetry of the whole action, mass term included. Under $\tilde A\mapsto e^{iϙ\Gamma/\hbar}\tilde A$ with $\Gamma$ constant, the field strength transforms by the same factor and the invariant length is unchanged, so the action is invariant and the Noether current exists. **That current is the source the Maxwell equation needs**, and its existence is the integral's version of the coupled equation article's fourth finding.
+The coupled carrier has a phase and the phase is a symmetry of the whole action, mass term included. Under $\tilde A\mapsto e^{\frac{2\pi iϙ\Gamma}{h}}\tilde A$ with $\Gamma$ constant, the field strength transforms by the same factor and the invariant length is unchanged, so the action is invariant and the Noether current exists. **That current is the source the Maxwell equation needs**, and its existence is the integral's version of the coupled equation article's fourth finding.
 
 The measure is invariant and the invariance is exact at every step. The transformation multiplies the two real components of each complex slot by a rotation of unit determinant, so the flat measure on eight components is unchanged. No link, no discretisation rule and no Faddeev–Popov determinant is needed, and the reason is the same as in the coupled scalar case: a central phase at each point costs an invertible element Jacobian and nothing else.
 
@@ -205,14 +205,14 @@ The coupled field has a charge, because the enlarged carrier has a phase and the
 | $\mathbb{B}$, $\mathbb{B}_\Phi$ | The coupled carrier, eight real dimensions; the free carrier, four |
 | $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ | The connection |
 | $\tilde A$ | The Proca potential, now a general element of $\mathbb{B}$ |
-| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | The covariant gradient |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | The covariant gradient |
 | $\tilde F_{\mathrm{gco}}=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | The coupled field strength |
 | $\tilde V=\mathrm{Vect}(\tilde A_\Phi^{\natural}\tilde A)$ | The bilinear term; a pure vector |
 | $\mathrm{Sc}(\tilde V)=0$ | Why the mixed term does not touch the constraint |
 | $P_{\mathrm{gco}}=((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2})P_T^{\mathrm{gco}}-k_m^{2}P_L^{\mathrm{gco}}$ | The coupled split |
 | $\det P_{\mathrm{gco}}=(\det((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2}))^{3}(-k_m^{2})$ | The determinant; coupling deforms only the cube |
 | $D_{\mathrm{gco}}\tilde A=\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)=0$ | The covariant Lorenz condition |
-| $e^{iϙ\Gamma/\hbar}$ | The gauge transformation; unit Jacobian |
+| $e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge transformation; unit Jacobian |
 | $3\cdot\frac12\mathrm{Tr}\log((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2})$ | The one-loop term; three times a scalar's |
 
 ## Further Reading

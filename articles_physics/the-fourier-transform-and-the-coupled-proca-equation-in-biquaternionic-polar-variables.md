@@ -4,7 +4,7 @@
 
 *The Proca Equation in Biquaternionic Polar Variables* tabulates four brackets and finds the phase identically zero on both branches; *The Fourier Transform and the Proca Equation in Biquaternionic Polar Variables* reads that emptiness as the reality of the symbol. *The Coupled Proca Equation in Biquaternionic Polar Variables* then shows that on the complex carrier the phase returns and its motion is the gauge transformation. This article's first finding is where the returned phase sits in frequency space: not in the momentum, and in the curvature.
 
-The free symbol $\sigma=(k^{2}-k_m^{2})\delta-k_\mu k_\nu$ is a real symmetric matrix, so it commutes with complex conjugation and cannot generate a phase. The coupled symbol is $-\pi^{2}\delta+\frac{i\varkappa}{\hbar}F^{(\Phi)}-\pi_\mu\pi_\nu$: Hermitian with an imaginary part, and the imaginary part is the curvature. The phase slot is therefore open in the coupled theory — but only at second order and only through the field strength, never through the potential.
+The free symbol $\sigma=(k^{2}-k_m^{2})\delta-k_\mu k_\nu$ is a real symmetric matrix, so it commutes with complex conjugation and cannot generate a phase. The coupled symbol is $-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F^{(\Phi)}-\pi_\mu\pi_\nu$: Hermitian with an imaginary part, and the imaginary part is the curvature. The phase slot is therefore open in the coupled theory — but only at second order and only through the field strength, never through the potential.
 
 The second finding is that the branch label disappears and the cone with it. The free chart's two branches are the two signs of a real indefinite invariant; the coupled field's norm is a complex number of modulus $\varrho^{2}$ and a complex number has no sign, so there is nothing to label. In frequency space the free amplitude cone — codimension one, three-dimensional — collapses to the origin of the chart, which is codimension eight. One degenerate variety becomes one point, and the article states the collapse as a transfer of codimension and not as a loss of structure.
 
@@ -21,7 +21,7 @@ The algebra, the products, the two forms, the invertibles and the sectors are th
 $$
 \tilde\nabla_{\mathrm{gco},\Phi,\mu}\longmapsto i\pi_\mu ,
 \qquad
-\pi_\mu=\hbar k_\mu-q A_\mu ,
+\pi_\mu=\frac{h}{2\pi} k_\mu-q A_\mu ,
 \qquad
 k_t'=\frac{\omega}{c} ,
 \qquad
@@ -51,7 +51,7 @@ the first being the reduction to be evaluated and the second the exact value on 
 In the four-component reading
 
 $$
-\sigma_{\mathrm{gco}}=-\pi^{2}\delta_{\mu\nu}+\frac{i\varkappa}{\hbar}F^{(\Phi)\mu}{}_{\nu}-\pi_\mu\pi_\nu ,
+\sigma_{\mathrm{gco}}=-\pi^{2}\delta_{\mu\nu}+\frac{2\pi i\varkappa}{h}F^{(\Phi)\mu}{}_{\nu}-\pi_\mu\pi_\nu ,
 $$
 
 which is a Hermitian matrix with a real symmetric part and an imaginary antisymmetric part. The real part is the free symbol at $\pi$; the imaginary part is the curvature; and the article's sections are the three statements that follow from that splitting.
@@ -66,7 +66,7 @@ A phase bracket can be absent because the symbol is odd and the bracket is a gra
 
 The coupled symbol is even in $\pi$ and complex, so the second cause is lifted and the first is not. $\sigma_{\mathrm{gco}}(-\pi)=\sigma_{\mathrm{gco}}(\pi)$ still holds, because both the translation and the rank-one part are quadratic and the obstruction does not depend on the momentum at all. The parity table of the free article is therefore unchanged by the coupling, and the phase that returns does not come from the momentum's sign structure.
 
-**It comes from the curvature, and the curvature is what the imaginary part is.** Writing $\sigma_{\mathrm{gco}}=S+i\varkappa G/\hbar$ with $S$ real symmetric and $G$ real antisymmetric, $G$'s entries are the field strength's. So the returned phase is not a gradient of a coordinate of the field but a coefficient of the obstruction, and the difference matters: a gradient would give a guidance equation, and an obstruction gives a transport.
+**It comes from the curvature, and the curvature is what the imaginary part is.** Writing $\sigma_{\mathrm{gco}}=S+\frac{2\pi i\varkappa G}{h}$ with $S$ real symmetric and $G$ real antisymmetric, $G$'s entries are the field strength's. So the returned phase is not a gradient of a coordinate of the field but a coefficient of the obstruction, and the difference matters: a gradient would give a guidance equation, and an obstruction gives a transport.
 
 The parent's logarithmic derivative of the coupled word has an imaginary central bracket, and the parent shows that the connection merges with that bracket and with the scale bracket. In frequency space the returned imaginary part of the symbol is the *derivative* of the connection, not the connection: the symbol sees $F=\mathrm{d}A$ and not $A$. So the bracket's own gradient is not the symbol's imaginary part, and the two are related by one more derivative.
 
@@ -96,9 +96,9 @@ What the mass does not see is the phase, and what the symbol does not see is the
 
 ## The Symbol Is Blind to the Coordinate
 
-A gauge transformation moves one coordinate of the chart and one argument of the symbol, and the two motions are the same motion. The parent's identity is $\tilde A\mapsto\lambda\tilde A$ with $\lambda=e^{i\vartheta_{\mathrm{gau}}}$ central, and its effect on the word's first factor is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}}$. On the symbol the same transformation is $\pi_\mu\mapsto\pi_\mu+\hbar\partial_\mu\vartheta_{\mathrm{gau}}$, a translation of the argument, and the obstruction $F$ is unchanged.
+A gauge transformation moves one coordinate of the chart and one argument of the symbol, and the two motions are the same motion. The parent's identity is $\tilde A\mapsto\lambda\tilde A$ with $\lambda=e^{i\vartheta_{\mathrm{gau}}}$ central, and its effect on the word's first factor is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}}$. On the symbol the same transformation is $\pi_\mu\mapsto\pi_\mu+\frac{h}{2\pi}\partial_\mu\vartheta_{\mathrm{gau}}$, a translation of the argument, and the obstruction $F$ is unchanged.
 
-Write $\sigma_{\mathrm{gco}}(\pi)$ for the symbol as a function of the shifted momentum; then under a gauge transformation $\sigma_{\mathrm{gco}}(\pi)\mapsto\sigma_{\mathrm{gco}}(\pi+\hbar\,\mathrm{d}\vartheta)$ and no other change occurs. **The symbol is a function and the transformation is an argument shift**, which is the frequency-space form of "the gauge group acts on the chart by one coordinate's motion and on the equation by nothing".
+Write $\sigma_{\mathrm{gco}}(\pi)$ for the symbol as a function of the shifted momentum; then under a gauge transformation $\sigma_{\mathrm{gco}}(\pi)\mapsto\sigma_{\mathrm{gco}}(\pi+\frac{h}{2\pi}\,\mathrm{d}\vartheta)$ and no other change occurs. **The symbol is a function and the transformation is an argument shift**, which is the frequency-space form of "the gauge group acts on the chart by one coordinate's motion and on the equation by nothing".
 
 A quantity built from $\sigma_{\mathrm{gco}}(\pi)$ alone moves with $\pi$; a gauge-invariant quantity must be built from the obstruction or from a difference of symbols at two momenta. That is the frequency-space statement of the parent's "the field strength is the gauge-invariant object", and the article's contribution is to say that the symbol's invariant content is its curvature term.
 
@@ -152,23 +152,23 @@ The symbol remains even in $\pi$ at every constant connection, so the parity ent
 
 ## Summary
 
-The coupled Proca symbol is $-\pi^{2}\delta+\frac{i\varkappa}{\hbar}F^{(\Phi)}-\pi_\mu\pi_\nu$, Hermitian with a real symmetric part and an imaginary antisymmetric part. The real part is the free symbol at the shifted momentum and the imaginary part is the curvature. So the free chart's empty phase slot is filled by the coupling, and it is filled at second order and through the field strength: the symbol sees $\mathrm{d}A$ and not $A$. The symbol remains even in $\pi$ — the free article's parity table is unchanged — because both the translation and the rank-one part are quadratic.
+The coupled Proca symbol is $-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F^{(\Phi)}-\pi_\mu\pi_\nu$, Hermitian with a real symmetric part and an imaginary antisymmetric part. The real part is the free symbol at the shifted momentum and the imaginary part is the curvature. So the free chart's empty phase slot is filled by the coupling, and it is filled at second order and through the field strength: the symbol sees $\mathrm{d}A$ and not $A$. The symbol remains even in $\pi$ — the free article's parity table is unchanged — because both the translation and the rank-one part are quadratic.
 
 The branch label disappears and the cone with it. The free chart's two branches are the two signs of a real indefinite norm; the coupled norm is a complex number of modulus $\varrho^{2}$ and has no sign. In frequency space the free amplitude cone, codimension one, becomes the origin of an eight-parameter chart, codimension eight: one degenerate variety becomes one point, and the parent's N-regular set $\varrho>0$ is the collapse read backwards.
 
 The mass is a modulus in the phase. $\mathrm{Sc}(\tilde A^{\natural}\tilde A)=\varrho^{2}\mathrm{Sc}(\tilde u^{-2}\tilde U^{-2})$ is invariant under a constant central unit to fifteen digits, so the mass sees the scale and the two axes' relative angle and never the phase. In frequency space the mass term is a multiple of the identity in the amplitude space, and a multiple of the identity commutes with the phase rotation.
 
-The gauge transformation is the phase coordinate's motion, and on the symbol it is a translation of the argument: $\sigma_{\mathrm{gco}}(\pi)\mapsto\sigma_{\mathrm{gco}}(\pi+\hbar\,\mathrm{d}\vartheta)$ and nothing else. So the symbol's gauge-invariant content is its obstruction, and the constraint — the trace — carries no curvature, which is why the covariant Lorenz condition is the free one in $\pi$. The ledger closes with three gains and one loss: a bracket, a charge and a gauge freedom on one side, and the branch label on the other, and the loss is the carrier's doing and not the phase's.
+The gauge transformation is the phase coordinate's motion, and on the symbol it is a translation of the argument: $\sigma_{\mathrm{gco}}(\pi)\mapsto\sigma_{\mathrm{gco}}(\pi+\frac{h}{2\pi}\,\mathrm{d}\vartheta)$ and nothing else. So the symbol's gauge-invariant content is its obstruction, and the constraint — the trace — carries no curvature, which is why the covariant Lorenz condition is the free one in $\pi$. The ledger closes with three gains and one loss: a bracket, a charge and a gauge freedom on one side, and the branch label on the other, and the loss is the carrier's doing and not the phase's.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 | --- | --- |
-| $\pi_\mu=\hbar k_\mu-q A_\mu$ | The shifted four-momentum; the symbol's argument |
+| $\pi_\mu=\frac{h}{2\pi} k_\mu-q A_\mu$ | The shifted four-momentum; the symbol's argument |
 | $\varkappa$ | The coupling |
 | $\varrho,\ \theta_{\mathrm{pha}},\ \theta_{\mathrm{rpd}},\ \hat u_{\mathrm b},\ \phi_{\mathrm{rot}},\ \hat n_{\mathrm{ax}}$ | Scale, phase, rapidity, boost axis, rotor angle, rotor axis |
-| $\sigma_{\mathrm{gco}}=-\pi^{2}\delta+\frac{i\varkappa}{\hbar}F-\pi_\mu\pi_\nu$ | The coupled symbol; Hermitian, complex |
-| $\frac{i\varkappa}{\hbar}F^{(\Phi)}$ | The imaginary part; the obstruction |
+| $\sigma_{\mathrm{gco}}=-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F-\pi_\mu\pi_\nu$ | The coupled symbol; Hermitian, complex |
+| $\frac{2\pi i\varkappa}{h}F^{(\Phi)}$ | The imaginary part; the obstruction |
 | $-4\pi^{2}$ | The trace; the constraint's symbol, free of curvature |
 | $\lambda=e^{i\vartheta_{\mathrm{gau}}}$ | The constant central unit; the gauge parameter |
 | $\mathrm{Sc}(\tilde u^{-2}\tilde U^{-2})$ | The mass term's frame factor; $\varrho^{2}$ on the trivial-rotor slice |

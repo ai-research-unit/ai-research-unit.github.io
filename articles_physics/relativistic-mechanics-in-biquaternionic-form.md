@@ -195,7 +195,7 @@ $$
 \left(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}- (k_m)^{2}\right)\tilde{Ξ} = 0.
 $$
 
-Here $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ is the d'Alembertian in the biquaternion form, and $k_m = m\,c/\hbar$ is the mass wave number, with $\hbar$ the reduced Planck constant. Expanding,
+Here $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ is the d'Alembertian in the biquaternion form, and $k_m = \frac{2\pi m\,c}{h}$ is the mass wave number, with $\frac{h}{2\pi}$ the reduced Planck constant. Expanding,
 
 $$
 \Box_\Phi\tilde{Ξ} = (k_m)^{2}\tilde{Ξ},
@@ -234,7 +234,7 @@ the first of which is identical in form to the source-free biquaternion Maxwell 
 | Klein–Gordon | $(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}- (k_m)^{2})\tilde{Ξ} = 0$ | — |
 | Dirac | $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | — |
 
-Here $\hbar/(mc)$ is the mass length.
+Here $\frac{h}{2\pi mc}$ is the mass length.
 
 ## Structural Observations
 

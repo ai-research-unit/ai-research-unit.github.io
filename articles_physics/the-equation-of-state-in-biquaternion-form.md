@@ -14,7 +14,7 @@ $$
 
 the imaginary-time circumference and the same span in the material sector's units. Both displays are quotations. The article uses $\beta$ as the variable conjugate to the entropy density, that is, as the variable in which the Gibbs–Duhem relation reads $\partial p_{\mathrm{th}}/\partial\beta=-(\beta/T)\,s_{\mathrm{ent}}$, which [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html) established; it does not re-derive the relation between $\beta$ and $T$, and a reader who wants the counting of Matsubara modes goes to the article cited.
 
-$p_{\mathrm{th}}$ is a function of $(\rho_{\mathrm{num}},\beta)$ and satisfies the thermal identities at each event. $p_{\mathrm{qnt}}$ is not a function of $(\rho_{\mathrm{num}},\beta)$: it is a function of the density and its first two derivatives, and it is the object that makes the equation of state non-local at order $\hbar^{2}$. The two are kept apart because they obey different relations, and the labelling $\mathrm{th}$/$\mathrm{qnt}$ is the machinery that keeps them apart through the whole category.
+$p_{\mathrm{th}}$ is a function of $(\rho_{\mathrm{num}},\beta)$ and satisfies the thermal identities at each event. $p_{\mathrm{qnt}}$ is not a function of $(\rho_{\mathrm{num}},\beta)$: it is a function of the density and its first two derivatives, and it is the object that makes the equation of state non-local at order $\frac{h^{2}}{4\pi^{2}}$. The two are kept apart because they obey different relations, and the labelling $\mathrm{th}$/$\mathrm{qnt}$ is the machinery that keeps them apart through the whole category.
 
 What this article adds to [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html). That article said what a local equation of state must satisfy — determinacy, consistency, integrability — and did not give one. This article gives one, checks the three requirements on it, and finds that the thermal part passes all three while the quantum part passes the first only to a stated gradient order. The finding is the content: the equation of state of a quantum fluid cannot be exactly local, and the size of the failure is $\lVert\tilde\Xi\rVert^{2}$'s second derivative measured in units of the field's own length.
 
@@ -57,7 +57,7 @@ With $w_{\mathrm{fl}}=K\rho_{\mathrm{num}}^{\gamma}$ the identity gives $p_{\mat
 
 ### Where $\beta$ enters, and the four-thirds case in the corpus's variable
 
-With $T=A/\beta$ and $A=\hbar/k_B$,
+With $T=A/\beta$ and $A=\frac{h}{2\pi k_B}$,
 
 $$
 p_{\mathrm{th}}=\frac{aA^{4}}{3\beta^{4}},
@@ -91,7 +91,7 @@ It is not the quantum part's container either. A reader might expect $p_{\mathrm
 With
 
 $$
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
+Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
 \qquad
 p_{\mathrm{qnt}}=\rho_{\mathrm{num}}\,Q_{\mathrm{qnt}},
 $$
@@ -100,35 +100,35 @@ and with $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$, the product is an iden
 
 $$
 p_{\mathrm{qnt}}
-=-\frac{\hbar^{2}}{4m}\,\Box_\Phi\rho_{\mathrm{num}}
-+\frac{\hbar^{2}}{8m}\,\frac{\partial_\eta\rho_{\mathrm{num}}\,\partial_\eta\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}} .
+=-\frac{h^{2}}{16\pi^{2}m}\,\Box_\Phi\rho_{\mathrm{num}}
++\frac{h^{2}}{32\pi^{2}m}\,\frac{\partial_\eta\rho_{\mathrm{num}}\,\partial_\eta\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}} .
 $$
 
-Write $\rho_{\mathrm{num}}=u^{2}$ with $u=\lVert\tilde\Xi\rVert$. Then $\Box_\Phi\rho_{\mathrm{num}}=2u\,\Box_\Phi u+2\,\partial_\eta u\,\partial_\eta u$, so $u\,\Box_\Phi u=\tfrac12\Box_\Phi\rho_{\mathrm{num}}-\partial_\eta u\,\partial_\eta u$, and with $\partial_\eta u=\partial_\eta\rho_{\mathrm{num}}/(2u)$ the second term is $(\partial_\eta\rho_{\mathrm{num}})^{2}/(4\rho_{\mathrm{num}})$. Multiplying $-\tfrac{\hbar^{2}}{2m}u\,\Box_\Phi u$ out gives $-\tfrac{\hbar^{2}}{4m}\Box_\Phi\rho_{\mathrm{num}}+\tfrac{\hbar^{2}}{8m}(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$, the factor of two between the two terms coming from the $2$ in $\rho_{\mathrm{num}}=u^{2}$ and not from $Q_{\mathrm{qnt}}$. Substituting into $Q_{\mathrm{qnt}}$ and multiplying by $\rho_{\mathrm{num}}$ gives the display. The minus sign of $Q_{\mathrm{qnt}}$ is inherited and not touched: the first term of the identity carries it, and a reader who writes the first term with a plus has the wrong sign for the quantum potential.
+Write $\rho_{\mathrm{num}}=u^{2}$ with $u=\lVert\tilde\Xi\rVert$. Then $\Box_\Phi\rho_{\mathrm{num}}=2u\,\Box_\Phi u+2\,\partial_\eta u\,\partial_\eta u$, so $u\,\Box_\Phi u=\tfrac12\Box_\Phi\rho_{\mathrm{num}}-\partial_\eta u\,\partial_\eta u$, and with $\partial_\eta u=\partial_\eta\rho_{\mathrm{num}}/(2u)$ the second term is $(\partial_\eta\rho_{\mathrm{num}})^{2}/(4\rho_{\mathrm{num}})$. Multiplying $-\tfrac{h^{2}}{8\pi^{2}m}u\,\Box_\Phi u$ out gives $-\tfrac{h^{2}}{16\pi^{2}m}\Box_\Phi\rho_{\mathrm{num}}+\tfrac{h^{2}}{32\pi^{2}m}(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$, the factor of two between the two terms coming from the $2$ in $\rho_{\mathrm{num}}=u^{2}$ and not from $Q_{\mathrm{qnt}}$. Substituting into $Q_{\mathrm{qnt}}$ and multiplying by $\rho_{\mathrm{num}}$ gives the display. The minus sign of $Q_{\mathrm{qnt}}$ is inherited and not touched: the first term of the identity carries it, and a reader who writes the first term with a plus has the wrong sign for the quantum potential.
 
-The first is the definition and it is the one that connects to the mass shell the quantum potential modifies. The second is the one that shows the structure: a Laplacian term and a gradient-squared term with the opposite sign, whose ratio is fixed. The second form also makes the $\hbar^{2}$ counting visible, which is the subject of the next subsection.
+The first is the definition and it is the one that connects to the mass shell the quantum potential modifies. The second is the one that shows the structure: a Laplacian term and a gradient-squared term with the opposite sign, whose ratio is fixed. The second form also makes the $\frac{h^{2}}{4\pi^{2}}$ counting visible, which is the subject of the next subsection.
 
 ### The gradient counting
 
 **The quantum pressure is second order in gradients, and the dimensionless measure of its size is the ratio of the field's own length to the density's length scale.** Let $L$ be the length over which $\rho_{\mathrm{num}}$ varies, so that $\Box_\Phi\rho_{\mathrm{num}}\sim\rho_{\mathrm{num}}/L^{2}$ and $(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}\sim\rho_{\mathrm{num}}/L^{2}$. Then
 
 $$
-p_{\mathrm{qnt}}\sim\frac{\hbar^{2}}{m}\frac{\rho_{\mathrm{num}}}{L^{2}},
+p_{\mathrm{qnt}}\sim\frac{h^{2}}{(2\pi)^{2} m}\frac{\rho_{\mathrm{num}}}{L^{2}},
 \qquad
-\frac{p_{\mathrm{qnt}}}{w_{\mathrm{fl}}}\sim\frac{\hbar^{2}}{m^{2}c^{2}L^{2}}=\frac{1}{k_m^{2}L^{2}},
+\frac{p_{\mathrm{qnt}}}{w_{\mathrm{fl}}}\sim\frac{h^{2}}{(2\pi)^{2} m^{2}c^{2}L^{2}}=\frac{1}{k_m^{2}L^{2}},
 $$
 
-where the second step uses $w_{\mathrm{fl}}\sim\rho_{\mathrm{num}}mc^{2}$ for a fluid at rest and $\hbar/(mc)$ for the field's own length. The ratio is the square of the field's length $1/k_m$ to the density's length — the corpus's only dimensionless small parameter in this sector — and it is the expansion parameter of every gradient correction in the category.
+where the second step uses $w_{\mathrm{fl}}\sim\rho_{\mathrm{num}}mc^{2}$ for a fluid at rest and $\frac{h}{2\pi mc}$ for the field's own length. The ratio is the square of the field's length $1/k_m$ to the density's length — the corpus's only dimensionless small parameter in this sector — and it is the expansion parameter of every gradient correction in the category.
 
 With $\rho_{\mathrm{num}}=\rho_{0}\exp(-r^{2}/(2\sigma^{2}))$ in one dimension,
 
 $$
-Q_{\mathrm{qnt}}(0)=\frac{\hbar^{2}}{4m\sigma^{2}},
+Q_{\mathrm{qnt}}(0)=\frac{h^{2}}{16\pi^{2}m\sigma^{2}},
 \qquad
 \frac{p_{\mathrm{qnt}}(0)}{w_{\mathrm{fl}}}=\frac{1}{4k_m^{2}\sigma^{2}},
 $$
 
-and in three dimensions the central value is three times larger, $Q_{\mathrm{qnt}}(0)=3\hbar^{2}/(4m\sigma^{2})$, because the Laplacian has three terms. The factor $\tfrac14$ in one dimension and $\tfrac34$ in three are the whole coefficient of the correction, so a reader who wants the size of the effect at a given width has a number and not an order of magnitude. The letter $\sigma$ is the width of the density as it appears in the exponent above, and not the amplitude's: the density falls by $1/e$ at $r=\sqrt2\,\sigma$, so the amplitude's width is $\sqrt2\,\sigma$. [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) writes the same state as $\rho_{\mathrm{num}}=A^{2}\exp(-r^{2}/\sigma_{\mathrm{qst}}^{2})$, whose $\sigma_{\mathrm{qst}}$ is this $\sigma$ times $\sqrt2$, and its central coefficient $1/(2m\sigma_{\mathrm{qst}}^{2})$ is this article's $1/(4m\sigma^{2})$ with the substitution. The two agree, and a reader who equates the two letters without the $\sqrt2$ sees a factor two that is a convention and not a disagreement.
+and in three dimensions the central value is three times larger, $Q_{\mathrm{qnt}}(0)=3\frac{h^{2}}{4\pi^{2}}/(4m\sigma^{2})$, because the Laplacian has three terms. The factor $\tfrac14$ in one dimension and $\tfrac34$ in three are the whole coefficient of the correction, so a reader who wants the size of the effect at a given width has a number and not an order of magnitude. The letter $\sigma$ is the width of the density as it appears in the exponent above, and not the amplitude's: the density falls by $1/e$ at $r=\sqrt2\,\sigma$, so the amplitude's width is $\sqrt2\,\sigma$. [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) writes the same state as $\rho_{\mathrm{num}}=A^{2}\exp(-r^{2}/\sigma_{\mathrm{qst}}^{2})$, whose $\sigma_{\mathrm{qst}}$ is this $\sigma$ times $\sqrt2$, and its central coefficient $1/(2m\sigma_{\mathrm{qst}}^{2})$ is this article's $1/(4m\sigma^{2})$ with the substitution. The two agree, and a reader who equates the two letters without the $\sqrt2$ sees a factor two that is a convention and not a disagreement.
 
 | $k_m\sigma$ | $p_{\mathrm{qnt}}(0)/w_{\mathrm{fl}}$, one dimension | three dimensions |
 |---|---|---|
@@ -144,7 +144,7 @@ The table is the statement that the framework's corrections are large only when 
 The quantum pressure is not positive definite, and this is a real feature rather than a defect of the formula. At the centre of a Gaussian the Laplacian of the density is negative and the gradient term is zero, so $p_{\mathrm{qnt}}>0$; in the tail the Laplacian changes sign, and the gradient term does not fall fast enough to keep the product positive. The crossover is at $r^{2}=2\sigma^{2}$ in one dimension and at $r^{2}=6\sigma^{2}$ in three, and both are found from the second form by substitution. In one dimension $\rho_{\mathrm{num}}=\rho_{0}e^{-r^{2}/(2\sigma^{2})}$ gives $\partial_{r}^{2}\rho_{\mathrm{num}}=\rho_{\mathrm{num}}\left(-1/\sigma^{2}+r^{2}/\sigma^{4}\right)$ and $(\partial_{r}\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}=\rho_{\mathrm{num}}\,r^{2}/\sigma^{4}$, so
 
 $$
-p_{\mathrm{qnt}}=\rho_{0}e^{-r^{2}/(2\sigma^{2})}\,\frac{\hbar^{2}}{m}\left(\frac{1}{4\sigma^{2}}-\frac{r^{2}}{8\sigma^{4}}\right),
+p_{\mathrm{qnt}}=\rho_{0}e^{-r^{2}/(2\sigma^{2})}\,\frac{h^{2}}{(2\pi)^{2} m}\left(\frac{1}{4\sigma^{2}}-\frac{r^{2}}{8\sigma^{4}}\right),
 $$
 
 which vanishes at $r^{2}=2\sigma^{2}$ and is negative beyond it; in three dimensions the first bracket is $3/(4\sigma^{2})$ and the crossover moves to $r^{2}=6\sigma^{2}$. The numerically found crossing in one dimension is $r=1.414\,214\,\sigma$, which is $\sqrt2\,\sigma$ to six digits.
@@ -181,9 +181,9 @@ A substance may have any $p_{\mathrm{th}}$ consistent with the three requirement
 
 ### The two limits
 
-The classical limit is $\hbar\to0$ at fixed state, and it leaves the thermal part alone. In that limit $p_{\mathrm{qnt}}\to0$, the equation of state becomes the function $p_{\mathrm{th}}(\rho_{\mathrm{num}},\beta)$, and the fluid is classical. The limit is singular in one respect: $\hbar\to0$ at fixed $\beta$ is $\beta k_m\to\infty$, since $\beta k_m=\beta mc/\hbar$, so the classical limit is the limit in which the thermal circle is infinitely long compared with the field's length — the low-temperature limit of the same parameter.
+The classical limit is $h\to0$ at fixed state, and it leaves the thermal part alone. In that limit $p_{\mathrm{qnt}}\to0$, the equation of state becomes the function $p_{\mathrm{th}}(\rho_{\mathrm{num}},\beta)$, and the fluid is classical. The limit is singular in one respect: $h\to0$ at fixed $\beta$ is $\beta k_m\to\infty$, since $\beta k_m=\frac{2\pi \beta mc}{h}$, so the classical limit is the limit in which the thermal circle is infinitely long compared with the field's length — the low-temperature limit of the same parameter.
 
-The other limit is $T\to0$ at fixed $\hbar$, and it is the polar-form article's pure state. There the thermal part vanishes and the equation of state is
+The other limit is $T\to0$ at fixed $\frac{h}{2\pi}$, and it is the polar-form article's pure state. There the thermal part vanishes and the equation of state is
 
 $$
 p_{\mathrm{eff}}=p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}},
@@ -193,7 +193,7 @@ which is the pressure of the state that [The Klein–Gordon Equation in Biquater
 
 ### The three requirements, checked
 
-Determinacy fails at order $\hbar^{2}$, and the failure is quantified. $p_{\mathrm{th}}$ passes: it is a function of two numbers at the event. $p_{\mathrm{qnt}}$ fails: it needs the Laplacian. The effective pressure is therefore determinate to zeroth order in $1/(k_mL)^{2}$ and not to first order in $\hbar$, because the correction is already $\hbar^{2}$ and there is no $\hbar^{1}$ term.
+Determinacy fails at order $\frac{h^{2}}{4\pi^{2}}$, and the failure is quantified. $p_{\mathrm{th}}$ passes: it is a function of two numbers at the event. $p_{\mathrm{qnt}}$ fails: it needs the Laplacian. The effective pressure is therefore determinate to zeroth order in $1/(k_mL)^{2}$ and not to first order in $\frac{h}{2\pi}$, because the correction is already $\frac{h^{2}}{4\pi^{2}}$ and there is no $\frac{h^{1}}{(2\pi)^{1}}$ term.
 
 Euler's relation and Gibbs–Duhem's relation are statements about an extensive potential; $p_{\mathrm{th}}$ has one and $p_{\mathrm{qnt}}$ does not, because $\rho_{\mathrm{num}}Q_{\mathrm{qnt}}$ is not extensive — it is a density built from a Laplacian, and doubling the system doubles the density but not the Laplacian's relation to it at the join. The failure is structural and not quantitative, so no amount of care with coefficients repairs it.
 
@@ -201,7 +201,7 @@ For the quantum part the question does not arise: it is not derived from a poten
 
 | requirement | $p_{\mathrm{th}}$ | $p_{\mathrm{qnt}}$ | $p_{\mathrm{eff}}$ |
 |---|---|---|---|
-| determinacy at the event | holds | fails at order $\hbar^{2}$ | holds to order $(k_mL)^{-2}$ |
+| determinacy at the event | holds | fails at order $\frac{h^{2}}{4\pi^{2}}$ | holds to order $(k_mL)^{-2}$ |
 | Euler and Gibbs–Duhem | holds | fails (not extensive) | holds to order $(k_mL)^{-2}$ |
 | integrability from a potential | holds | not applicable | holds to order $(k_mL)^{-2}$ |
 
@@ -209,8 +209,8 @@ The effective equation of state is exactly local to zeroth order, approximately 
 
 ## Numbers
 
-- The identity for $p_{\mathrm{qnt}}$. On a one-dimensional grid of $4001$ points spanning $[-6,6]$ with a Gaussian of width $\sigma=0.5$, the two sides of $p_{\mathrm{qnt}}=-\tfrac{\hbar^{2}}{4m}\Box_\Phi\rho_{\mathrm{num}}+\tfrac{\hbar^{2}}{8m}(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$ agree to $1.8\times10^{-5}$ over the interior, the residual being the finite-difference error of the second derivative and not a discrepancy of the algebra. On a three-dimensional radial grid the same comparison agrees to $6.2\times10^{-8}$ away from the origin, where the $2/r$ term is resolved.
-- The central values. In one dimension $Q_{\mathrm{qnt}}(0)=0.999\,982$ against the analytic $\hbar^{2}/(4m\sigma^{2})=1$ for $\sigma=0.5$ in units of $\hbar/(2\sqrt m)$; the deviation is the grid's. In three dimensions the analytic value is $3\hbar^{2}/(4m\sigma^{2})=3$ under the same units, and the radial grid cannot resolve it at $r\to0$ because of the $2/r$ term, so the article quotes the analytic value and the interior residual and not a central numerical value.
+- The identity for $p_{\mathrm{qnt}}$. On a one-dimensional grid of $4001$ points spanning $[-6,6]$ with a Gaussian of width $\sigma=0.5$, the two sides of $p_{\mathrm{qnt}}=-\tfrac{h^{2}}{16\pi^{2}m}\Box_\Phi\rho_{\mathrm{num}}+\tfrac{h^{2}}{32\pi^{2}m}(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$ agree to $1.8\times10^{-5}$ over the interior, the residual being the finite-difference error of the second derivative and not a discrepancy of the algebra. On a three-dimensional radial grid the same comparison agrees to $6.2\times10^{-8}$ away from the origin, where the $2/r$ term is resolved.
+- The central values. In one dimension $Q_{\mathrm{qnt}}(0)=0.999\,982$ against the analytic $\frac{h^{2}}{4\pi^{2}}/(4m\sigma^{2})=1$ for $\sigma=0.5$ in units of $\frac{h}{2\pi (2\sqrt m)}$; the deviation is the grid's. In three dimensions the analytic value is $3\frac{h^{2}}{4\pi^{2}}/(4m\sigma^{2})=3$ under the same units, and the radial grid cannot resolve it at $r\to0$ because of the $2/r$ term, so the article quotes the analytic value and the interior residual and not a central numerical value.
 - The crossover. The one-dimensional solution changes sign at $r=1.414\,214\,\sigma$, which is $\sqrt2\,\sigma$ to six digits, confirming $r^{2}=2\sigma^{2}$; the value $0.707\,107\,\sigma$ is $1/\sqrt2$ and is the half-width at which the density has fallen by $e^{-1/4}$, not a crossing. In three dimensions the numerical crossing sits at $r=2.449\,490\,\sigma$, which is $\sqrt6\,\sigma$ to six digits.
 - The polytropic check. For $w_{\mathrm{fl}}=K\rho_{\mathrm{num}}^{5/3}$ at $\rho_{\mathrm{num}}=8$, the identity returns $p_{\mathrm{th}}=\tfrac23w_{\mathrm{fl}}$, i.e. $p_{\mathrm{th}}=(2/3)K\cdot32=21.333\,333\,K$ against $w_{\mathrm{fl}}=32K$, the ratio being $0.666\,667$ to six digits. For $w_{\mathrm{fl}}=K\rho_{\mathrm{num}}^{4/3}$ the ratio is $0.333\,333$ to six digits.
 
@@ -232,7 +232,7 @@ The equation of state is $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$, wi
 
 The thermal part closes through $p_{\mathrm{th}}=n_{\mathrm{num}}(\partial w_{\mathrm{fl}}/\partial n_{\mathrm{num}})_{s_{\mathrm{ent}}}-w_{\mathrm{fl}}$, which returns $p=\tfrac23w$ for a non-relativistic degenerate gas ($\gamma=\tfrac53$), $p=\tfrac13w$ for radiation ($\gamma=\tfrac43$), and $p=(\gamma-1)w$ for a general polytrope. In the corpus's variable radiation reads $p_{\mathrm{th}}=aA^{4}/(3\beta^{4})$ and $s_{\mathrm{ent}}=4aA^{3}/(3\beta^{3})$, with $\partial p_{\mathrm{th}}/\partial\beta=-4p_{\mathrm{th}}/\beta$ and the Gibbs–Duhem check $s_{\mathrm{ent}}=-(\beta/T)\partial p_{\mathrm{th}}/\partial\beta$ returning $4aT^{3}/3$. The thermal part is not barotropic in general; the barotropic case is the degenerate limit.
 
-The quantum part is $p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}=-\tfrac{\hbar^{2}}{4m}\Box_\Phi\rho_{\mathrm{num}}+\tfrac{\hbar^{2}}{8m}(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$, derived from the quantum potential's minus sign in two lines and verified numerically to $1.8\times10^{-5}$ (one dimension) and $6.2\times10^{-8}$ (three, interior). It is second order in gradients, its size relative to the rest energy density is $1/(4k_m^{2}\sigma^{2})$ for a Gaussian in one dimension and $3/(4k_m^{2}\sigma^{2})$ in three, it vanishes at $r^{2}=2\sigma^{2}$ (one dimension) or $r^{2}=6\sigma^{2}$ (three), and it is negative beyond.
+The quantum part is $p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}=-\tfrac{h^{2}}{16\pi^{2}m}\Box_\Phi\rho_{\mathrm{num}}+\tfrac{h^{2}}{32\pi^{2}m}(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$, derived from the quantum potential's minus sign in two lines and verified numerically to $1.8\times10^{-5}$ (one dimension) and $6.2\times10^{-8}$ (three, interior). It is second order in gradients, its size relative to the rest energy density is $1/(4k_m^{2}\sigma^{2})$ for a Gaussian in one dimension and $3/(4k_m^{2}\sigma^{2})$ in three, it vanishes at $r^{2}=2\sigma^{2}$ (one dimension) or $r^{2}=6\sigma^{2}$ (three), and it is negative beyond.
 
 The named caution is that $p_{\mathrm{qnt}}$ is the scalar part of the quantum stress and not a pressure whose gradient is the quantum force: $\partial_\eta p_{\mathrm{qnt}}=\rho_{\mathrm{num}}\partial_\eta Q_{\mathrm{qnt}}+Q_{\mathrm{qnt}}\partial_\eta\rho_{\mathrm{num}}$, and the second term is the one a classical reading loses. The equation of state is therefore exactly local to zeroth order in $(k_mL)^{-2}$, approximately local at second order, and never exactly local.
 
@@ -244,17 +244,17 @@ The named caution is that $p_{\mathrm{qnt}}$ is the scalar part of the quantum s
 | $p_{\mathrm{th}}$ | Thermal pressure, a function of $(\rho_{\mathrm{num}},\beta)$ |
 | $p_{\mathrm{qnt}}$ | Quantum pressure, a functional of the density field |
 | $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ | Proper density |
-| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
+| $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
 | $u=\lVert\tilde\Xi\rVert$ | Amplitude |
 | $w_{\mathrm{fl}}$ | Energy density |
 | $s_{\mathrm{ent}}$ | Entropy density |
 | $n_{\mathrm{num}}$ | Number density |
 | $\beta=\frac{m\,c}{k_{m}\,k_{B}\,T}$ | Inverse temperature, the imaginary-time circumference; a length |
-| $c\beta=\frac{\hbar\,c}{k_{B}\,T}$ | The same span in material units |
+| $c\beta=\frac{h\,c}{2\pi k_{B}\,T}$ | The same span in material units |
 | $T=A/\beta$ | Temperature |
-| $A=\frac{m\,c}{k_{m}\,k_{B}}=\frac{\hbar}{k_{B}}$ | The constant relating period and temperature, $\beta=A/T$ |
+| $A=\frac{m\,c}{k_{m}\,k_{B}}=\frac{h}{2\pi k_{B}}$ | The constant relating period and temperature, $\beta=A/T$ |
 | $k_B$, $k_m$ | Boltzmann's constant, mass wave number |
-| $\hbar$ | Action quantum |
+| $\frac{h}{2\pi}$ | Action quantum |
 | $m$, $c$ | Mass, speed of light in the medium |
 | $\gamma$ | Polytropic index, $1+p_{\mathrm{th}}/w_{\mathrm{fl}}$ |
 | $K$ | Polytropic constant |

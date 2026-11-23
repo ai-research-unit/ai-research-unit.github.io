@@ -21,7 +21,7 @@ The equation is
 $$
 \left(\Box_\Phi-k_m^{2}\right)\tilde{Ξ}=0,
 \qquad
-k_m=\dfrac{mc}{\hbar}.
+k_m=\frac{2\pi mc}{h}.
 $$
 
 The companion *The Klein–Gordon Equation in Biquaternionic Form* records that the operator is central and scalar, that the equation decouples into four scalar equations, and that no scalar first-order operator in $\mathbb{B}$ has it as its square. The companion *Klein–Gordon from the Dirac Square in Biquaternionic Form* records the other side: the first-order equation that exists is the chiral pair, its two members act on the two parts of one element, and its mass couples the two. Together they leave Open Question 3 of the Klein–Gordon article: is the pair the only first-orderisation, and why four components?
@@ -46,7 +46,7 @@ $$
 
 because the substitution turns $\partial^2/\partial R_t^2$ into $-\partial^2/\partial x_0^2$ and leaves the three spatial derivatives alone. This is the form the rest of the article uses.
 
-Throughout, $c$ is the speed of light in the medium and $\hbar$ the reduced Planck constant. The mass enters as the length $k_m=mc/\hbar$, and its reciprocal $k_m=mc/\hbar$ is the coefficient of the pair.
+Throughout, $c$ is the speed of light in the medium and $\frac{h}{2\pi}$ the reduced Planck constant. The mass enters as the length $k_m=\frac{2\pi mc}{h}$, and its reciprocal $k_m=\frac{2\pi mc}{h}$ is the coefficient of the pair.
 
 ## The Operator and Its Symbol
 
@@ -90,7 +90,7 @@ k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2=k_m^{2}
 E^2=\vec p^{\,2}c^2+m^2c^4 ,
 $$
 
-with $\vec k_\Phi=\vec p\,\frac{1}{\hbar}$. Here $k_{\Phi}=\frac{p}{\hbar}$ and $k_{t}^{\prime}=E/(\hbar\,c)$ are the momentum and energy wave numbers.
+with $\vec k_\Phi=\vec p\,\frac{2\pi 1}{h}$. Here $k_{\Phi}=\frac{2\pi p}{h}$ and $k_{t}^{\prime}=\frac{2\pi E}{h\,c}$ are the momentum and energy wave numbers.
 
 The symbol of $\Box_\Phi$ is the interval of the wave covector, and the mass shell is that symbol set to $k_m^{2}$. The symbol of the gradient is a zero divisor on exactly the same set: left multiplication by $-i\tilde K_{\Phi}$ is invertible off the cone and has rank two on it. The equation $\tilde\nabla_\Phi\tilde{Ξ}=0$ therefore has a nonzero plane-wave solution exactly where the massless Klein–Gordon equation does, and it halves the solution space there, as §*What the Root Does Not Carry* records.
 
@@ -182,7 +182,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
 $$
 
-with the same coefficient $k_m=m\,c/\hbar$ as above. Substituting the first into the second gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$, that is
+with the same coefficient $k_m=\frac{2\pi m\,c}{h}$ as above. Substituting the first into the second gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$, that is
 
 $$
 \Box_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R} ,
@@ -289,7 +289,7 @@ A field whose value is one complex number has no first-order equation: the four 
 | $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate, the second factor of $\Box_\Phi$ |
 | $\Box_\Phi$ | d'Alembertian; its Lorentz form is derived in §*The Equation* |
 | $c$ | The speed of light in the medium |
-| $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the inverse reduced Compton wavelength |
+| $1/k_m$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $k_m=\frac{2\pi mc}{h}$ is the inverse reduced Compton wavelength |
 | $k_{\Phi,\mu}$ | The wave covector of a plane wave |
 | $\omega=-\vec e_z$ | The pseudoscalar of the algebra, $\omega^2=-e_t$ |
 | $-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi$ | The symbol of the gradient, an element of $\mathbb{B}$ |

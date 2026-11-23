@@ -132,7 +132,7 @@ m_1^2(\rho) = \frac{3\lambda}{2}\rho,
 m_2^2(\rho) = \frac{\lambda}{2}\rho ,
 $$
 so both contribute to the one-loop potential with $n = 1$ each.
-- **The central gauge field.** The kinetic term of the scalar evaluated at the constant background produces a Proca mass term, and the companion article on the Higgs mechanism gives $M_A^2 = 2ϙ^2\rho$ (it quotes $M_A^2 =\frac{ϙ^{2}\,v^{2}}{\hbar^{2}}$ with $\rho = v^2/2$, which is the same statement). The gauge field has three polarizations in four dimensions, so $n_A = 3$.
+- **The central gauge field.** The kinetic term of the scalar evaluated at the constant background produces a Proca mass term, and the companion article on the Higgs mechanism gives $M_A^2 = 2ϙ^2\rho$ (it quotes $M_A^2 =\frac{(2\pi)^{2} ϙ^{2}\,v^{2}}{h^{2}}$ with $\rho = v^2/2$, which is the same statement). The gauge field has three polarizations in four dimensions, so $n_A = 3$.
 
 Inserting these into the general form and retaining the terms that carry the logarithm of $\rho$,
 
@@ -272,7 +272,7 @@ The loop integral, its regularization and its renormalization are standard and a
 | $V_0(\rho) = \frac{\lambda}{4}(\rho - v_0^2)^2$ | Tree-level invariant potential |
 | $\lambda, v_0$ | Quartic coupling; tree-level vacuum parameter; $v_0 = v/\sqrt2$, $\lambda = 4\beta$ against the Higgs companion's $V = \beta(\rho-v^2/2)^2$ |
 | $m_h^2 = \lambda v_0^2$, $m_\theta^2 = 0$ | Radial and angular (Goldstone) masses at tree level |
-| $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$, $\kappa =\frac{ϙ}{\hbar}$ | Covariant derivative of the central phase |
+| $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$, $\kappa =\frac{2\pi ϙ}{h}$ | Covariant derivative of the central phase |
 | $ϙ$ | Gauge charge (parameter) |
 | $\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \langle\tilde{J}_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\rangle - W[\tilde{J}_{\Phi}]$ | Effective action (Legendre transform) |
 | $\Gamma_1 = \tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ | One-loop effective action (determinant) |

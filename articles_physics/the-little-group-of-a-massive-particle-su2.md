@@ -56,7 +56,7 @@ j\in\{0,\tfrac12,1,\tfrac32,\dots\},
 \dim=2j+1,
 $$
 
-and the label is the eigenvalue of the Casimir $\vec J^{2}=\hbar^{2}j(j+1)$. That is the spin.
+and the label is the eigenvalue of the Casimir $\vec J^{2}=\frac{h^{2}}{4\pi^{2}}j(j+1)$. That is the spin.
 
 ### The Consistency With $C_2$
 

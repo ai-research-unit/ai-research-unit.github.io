@@ -25,7 +25,7 @@ $$
 \end{aligned}
 $$
 
-with $m_n$ the neutron mass. The other, Kravchenko's **two-sided equation**, is a different operator, with the derivative and the mass on opposite sides; it is recorded in the subsection *The Two Dirac Equations, and Which One the Neutron Uses* below and is not used here. The norm-one elements of the algebra, $\langle\tilde U\rangle_{\natural}=e_t$, form $\mathrm{SL}(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group; the left multiplications act irreducibly on each part with weights $\pm\tfrac12$, and a rotation by $2\pi$ is the element $-e_t$. The representation-theoretic content of spin-$\tfrac12$ — half-integer weight, the double-valued rotation, Lorentz covariance — is inherited from the algebra, and in this sense the framework **represents** a spin-$\tfrac12$ field. Three qualifications are what the neutron actually tests, and the third of them has a partial answer. Here $1/k_{m_n}=\hbar/(m_nc)$ is the neutron mass length.
+with $m_n$ the neutron mass. The other, Kravchenko's **two-sided equation**, is a different operator, with the derivative and the mass on opposite sides; it is recorded in the subsection *The Two Dirac Equations, and Which One the Neutron Uses* below and is not used here. The norm-one elements of the algebra, $\langle\tilde U\rangle_{\natural}=e_t$, form $\mathrm{SL}(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group; the left multiplications act irreducibly on each part with weights $\pm\tfrac12$, and a rotation by $2\pi$ is the element $-e_t$. The representation-theoretic content of spin-$\tfrac12$ — half-integer weight, the double-valued rotation, Lorentz covariance — is inherited from the algebra, and in this sense the framework **represents** a spin-$\tfrac12$ field. Three qualifications are what the neutron actually tests, and the third of them has a partial answer. Here $1/k_{m_n}=\frac{h}{2\pi m_nc}$ is the neutron mass length.
 
 **The representation is generic.** The algebra is simple, with one class of simple carrier, so every structureless spin-$\tfrac12$ field is an element of the same algebra with the same two values; the electron article records the same point, that the algebra contains no discriminator. The neutron is distinguished from the electron here only by the two numbers inserted into the equation, $m_n$ and the charge. Nothing in the algebra prefers these values, and nothing in it marks the field as the neutron rather than any other spin-$\tfrac12$ fermion of the same mass and charge.
 
@@ -99,9 +99,9 @@ $$
 a derived form: $b=ϙ_L\tilde\Pi_{\mathrm{id},+}(\vec e_z)+ϙ_R\tilde\Pi_{\mathrm{id},-}(\vec e_z)$, the two chirality states at the axis of the previous section. The element $b$ is Hermitian; it is central only in the vector-like case $ϙ_L=ϙ_R$, where the action is also a left multiplication. That is why the parent's left-multiplied connection arises exactly for a vector-like fermion. The covariant derivative and its curvature carry the same element,
 
 $$
-D_\mu\tilde{Ξ}=\frac{\partial\tilde{Ξ}}{\partial R_\mu}+\frac{i}{\hbar}A_\mu\,\tilde{Ξ} b,
+D_\mu\tilde{Ξ}=\frac{\partial\tilde{Ξ}}{\partial R_\mu}+\frac{2\pi i}{h}A_\mu\,\tilde{Ξ} b,
 \qquad
-[D_\mu,D_\nu]\tilde{Ξ}=\frac{i}{\hbar}F_{\mu\nu}\,\tilde{Ξ} b
+[D_\mu,D_\nu]\tilde{Ξ}=\frac{2\pi i}{h}F_{\mu\nu}\,\tilde{Ξ} b
 $$
 
 for commuting potentials.
@@ -276,7 +276,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$ | The algebra's real structure |
 | $\tilde\Pi_{\mathrm{id},\pm}(\vec e_z)$ | The two states at the axis; $\tilde\Pi_{\mathrm{id},+}$ the L state, $\tilde\Pi_{\mathrm{id},-}$ the R state |
 | $b=ϙ_L\tilde\Pi_{\mathrm{id},++}ϙ_R\tilde\Pi_{\mathrm{id},-}=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z$ | The charge element, in $\mathbb{B}_{\Psi}$; the charge is the right multiplication by $b$ |
-| $D_\mu\tilde{Ξ}=\partial\tilde{Ξ}/\partial R_\mu+\frac{i}{\hbar}A_\mu\tilde{Ξ} b$ | Covariant derivative of the chiral charge; the curvature is $\frac{i}{\hbar}F_{\mu\nu}\tilde{Ξ} b$ |
+| $D_\mu\tilde{Ξ}=\partial\tilde{Ξ}/\partial R_\mu+\frac{2\pi i}{h}A_\mu\tilde{Ξ} b$ | Covariant derivative of the chiral charge; the curvature is $\frac{2\pi i}{h}F_{\mu\nu}\tilde{Ξ} b$ |
 | $\tilde{Ξ} b=0$ | Neutrality constraint; no nonzero solution unless $ϙ_L=0$ or $ϙ_R=0$ |
 | $(i\partial/\partial r'_t+\vec\nabla_\Phi)F-k_{m_n} i\,\bar F\,\vec e_z=0$ | Kravchenko's two-sided equation, $F\in\mathbb{B}$; the bar is the coefficientwise conjugation |
 | $\gamma_\mu[\mathbb{B}_{\Phi}]$, $\gamma_5$ | The gamma frame of the legacy section; used only in §*The Legacy Pauli Gamma Formulation* |

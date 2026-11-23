@@ -15,7 +15,7 @@ S\bigl[\tilde\Xi,\tilde\Xi^{*},\tilde A_\Phi\bigr]
 \Bigr\},
 $$
 
-with $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$, $\tilde F=\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\big)$, and the sum over the four slots carrying the metric signs of the corpus's convention. The first two terms are the matter action; the third is the Maxwell article's field term. The coupling is not a separate term: it is inside the covariant derivative, and that placement is the article's first structural point.
+with $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$, $\tilde F=\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\big)$, and the sum over the four slots carrying the metric signs of the corpus's convention. The first two terms are the matter action; the third is the Maxwell article's field term. The coupling is not a separate term: it is inside the covariant derivative, and that placement is the article's first structural point.
 
 **Four results.**
 
@@ -31,7 +31,7 @@ with $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$,
 
 ## Conventions
 
-**The conventions are the free companion's, restated here for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $\mathbb{B}_\Phi$ is the anti-Hermitian sector of the connection and $\mathbb{B}_\Psi$ the Hermitian sector of the potentials. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ with $A_\mu$ the real components of $\tilde A_\Phi$ and $ϙ$ the charge of the field, fixed once here and never re-chosen. The field strength is $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$, the pure-vector part of the conjugate gradient. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the measure is $\mathrm{d}^4x=\mathrm{d}r'_t\,\mathrm{d}^3x$, the mass is $k_m=mc/\hbar$, and the field term's normalisation $\sqrt{\mu}$ is the Maxwell article's and is not fixed again.
+**The conventions are the free companion's, restated here for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $\mathbb{B}_\Phi$ is the anti-Hermitian sector of the connection and $\mathbb{B}_\Psi$ the Hermitian sector of the potentials. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$ with $A_\mu$ the real components of $\tilde A_\Phi$ and $ϙ$ the charge of the field, fixed once here and never re-chosen. The field strength is $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$, the pure-vector part of the conjugate gradient. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the measure is $\mathrm{d}^4x=\mathrm{d}r'_t\,\mathrm{d}^3x$, the mass is $k_m=\frac{2\pi mc}{h}$, and the field term's normalisation $\sqrt{\mu}$ is the Maxwell article's and is not fixed again.
 
 ## The Action in Element Form
 
@@ -79,7 +79,7 @@ $$
 
 and integrating by parts moves the derivative onto the first factor. The boundary term vanishes for a variation of compact support, and the operator that comes out squares one and the same covariant derivative, because the connection is central and the same in the two slots; the sign is the free companion's and no new sign has to be chosen.
 
-**The two factors of a slot, and one exact bookkeeping point.** Write $c_\mu=\frac{iϙ}{\hbar}A_\mu$. The kinetic term carries $c_\mu$ in both factors of a slot, and the variation pairs them as $(\partial_\mu-\bar c_\mu)(\partial_\mu+c_\mu)$. That product is the square $\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}$ exactly when $\bar c_\mu=-c_\mu$, that is, when the slot's coefficient is purely imaginary. In the corpus's material convention $A_\eta$ is real, so the three spatial coefficients are purely imaginary and the three spatial slots pair into squares; and $A_t=i a'_t$ is imaginary, so the temporal coefficient is real and its slot pairs into $\partial_{R_t}^{2}-(ϙ a'_t/\hbar)^{2}$ rather than into $(\partial_{R_t}-ϙ a'_t/\hbar)^{2}$. For a constant potential the two differ by $-\frac{2ϙ a'_t}{\hbar}\partial_{R_t}+\frac{2ϙ^{2}a_t'^{2}}{\hbar^{2}}$: the first piece is the cross term through which the electric potential shifts the energy, the second the potential's square.
+**The two factors of a slot, and one exact bookkeeping point.** Write $c_\mu=\frac{2\pi iϙ}{h}A_\mu$. The kinetic term carries $c_\mu$ in both factors of a slot, and the variation pairs them as $(\partial_\mu-\bar c_\mu)(\partial_\mu+c_\mu)$. That product is the square $\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}$ exactly when $\bar c_\mu=-c_\mu$, that is, when the slot's coefficient is purely imaginary. In the corpus's material convention $A_\eta$ is real, so the three spatial coefficients are purely imaginary and the three spatial slots pair into squares; and $A_t=i a'_t$ is imaginary, so the temporal coefficient is real and its slot pairs into $\partial_{R_t}^{2}-(\frac{2\pi ϙ a'_t}{h})^{2}$ rather than into $(\partial_{R_t}-\frac{2\pi ϙ a'_t}{h})^{2}$. For a constant potential the two differ by $-\frac{2\pi 2ϙ a'_t}{h}\partial_{R_t}+\frac{(2\pi)^{2} 2ϙ^{2}a_t'^{2}}{h^{2}}$: the first piece is the cross term through which the electric potential shifts the energy, the second the potential's square.
 
 The article states the equation as $\Box_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$ and not as the adjoint-paired form, for three reasons: that is the equation the element companion states, it is the minimal-substitution form whose polar chart is the polar companion's pair, and it is the form whose mass shell carries the mechanical energy $E+ϙ c\,a'_t$. The variation reproduces it exactly for a magnetic connection and in the free limit, and for an electric one it reproduces it up to the cross term named above. The discrepancy is the single place where the corpus's convention for the temporal slot and the standard action's pairing part company, and it is recorded rather than absorbed: §*Open Questions* carries it.
 
@@ -89,11 +89,11 @@ The article states the equation as $\Box_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\ti
 
 ### In the Connection
 
-**The source.** Varying $A_\mu$ acts only inside the covariant derivatives, through $\delta\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr)=\frac{iϙ}{\hbar}\,\delta A_\mu\,\tilde\Xi$, and the connection's coefficient is central, so the variation does not have to choose a side. Hence
+**The source.** Varying $A_\mu$ acts only inside the covariant derivatives, through $\delta\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr)=\frac{2\pi iϙ}{h}\,\delta A_\mu\,\tilde\Xi$, and the connection's coefficient is central, so the variation does not have to choose a side. Hence
 
 $$
 \frac{\delta S_{\mathrm{m}}}{\delta A_\mu}
-=-\frac{ϙ}{\hbar}\,J_\mu ,
+=-\frac{2\pi ϙ}{h}\,J_\mu ,
 \qquad
 J_\mu=2\,\mathrm{Re}\,\mathrm{Sc}\Bigl[i\,\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\Bigr],
 $$
@@ -105,7 +105,7 @@ with the sign from the two appearances of $A_\mu$ in the squared covariant deriv
 $$
 \tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_\Phi^{\mathrm{(src)}},
 \qquad
-\tilde J_\Phi^{\mathrm{(src)}}\ \propto\ \frac{ϙ}{\hbar}J ,
+\tilde J_\Phi^{\mathrm{(src)}}\ \propto\ \frac{2\pi ϙ}{h}J ,
 $$
 
 which is the Maxwell article's inhomogeneous equation with the matter current as its source. The proportionality is the field term's normalisation, which the Maxwell article fixes once; the sign is fixed by the relative sign of the two terms in the total action and is the sign that makes the source the current rather than minus the current. The article states the structure and the sign and does not re-derive the constant.
@@ -128,7 +128,7 @@ holds for the current as defined in this section, the companion's $J$ being this
 
 ## The Constraints the Action Imposes: Gauge Invariance of the Total Action
 
-**The matter term is invariant, exactly.** Under $\tilde\Xi\mapsto e^{iϙ\Lambda/\hbar}\tilde\Xi$ and $A_\mu\mapsto A_\mu-\partial_\mu\Lambda$ the covariant derivative is covariant — the computation is the element companion's and it is exact for a general element — so each slot's squared modulus is invariant and the mass term is invariant. The invariance is not up to a divergence; it is an identity.
+**The matter term is invariant, exactly.** Under $\tilde\Xi\mapsto e^{\frac{2\pi iϙ\Lambda}{h}}\tilde\Xi$ and $A_\mu\mapsto A_\mu-\partial_\mu\Lambda$ the covariant derivative is covariant — the computation is the element companion's and it is exact for a general element — so each slot's squared modulus is invariant and the mass term is invariant. The invariance is not up to a divergence; it is an identity.
 
 **The field term is invariant, exactly.** $\tilde F$ is unchanged because the gauge transformation of the connection is a gradient and the field strength is the antisymmetrised gradient; the Maxwell article's argument applies verbatim.
 
@@ -142,7 +142,7 @@ holds for the current as defined in this section, the companion's $J$ being this
 
 **The claim.** The connection's equation has a left side whose scalar part vanishes identically, because that side is the divergence of a pure vector and $\Box_\Phi$ is scalar. Its right side is proportional to the matter current. So the scalar part of the connection's equation is exactly the continuity equation for that current, and the matter equation is what makes it true. The two equations therefore cannot contradict each other: any field that solves the matter equation and the connection's equation automatically satisfies the one relation that the connection's equation cannot impose.
 
-**The hand check.** Take the connection's equation, apply $(\tilde\nabla_\Phi)^{\natural}$ and take $\mathrm{Sc}$. The left side gives zero, term by term, because $\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde F\bigr)=0$ for a pure-vector $\tilde F$. The right side gives $(\varrho/\hbar)\,\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}J\bigr)$. So the identity is
+**The hand check.** Take the connection's equation, apply $(\tilde\nabla_\Phi)^{\natural}$ and take $\mathrm{Sc}$. The left side gives zero, term by term, because $\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde F\bigr)=0$ for a pure-vector $\tilde F$. The right side gives $(\frac{2\pi \varrho}{h})\,\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}J\bigr)$. So the identity is
 
 $$
 \mathrm{Sc}\Bigl(\bigl(\tilde\nabla_\Phi\bigr)^{\natural}J\Bigr)=0,
@@ -204,7 +204,7 @@ up to the current's normalisation, with $F_{\nu\mu}=\partial_\nu A_\mu-\partial_
 
 ## Open Questions
 
-**The temporal slot's pairing.** §*The Variation: In the Field* records that the action's pairing of the two factors in the temporal slot is $\partial_{R_t}^{2}-(ϙa'_t/\hbar)^{2}$ while the article's equation carries $(\partial_{R_t}-ϙa'_t/\hbar)^{2}$, the two differing by the cross term through which the electric potential shifts the energy. The difference is a property of the corpus's convention $A_t=i a'_t$: the temporal coefficient of the covariant derivative is real, while the standard scalar action's minimal coupling pairs an imaginary one. Whether the convention should be read as the four-potential's time component being imaginary throughout — in which case the temporal slot's cross term belongs to the energy and not to the derivative — or whether the action for an electric connection should be written with the adjoint pairing in that slot, is not settled. The magnetic case, the free limit, and the polar pair are unaffected; what is at stake is one bookkeeping choice, stated rather than absorbed.
+**The temporal slot's pairing.** §*The Variation: In the Field* records that the action's pairing of the two factors in the temporal slot is $\partial_{R_t}^{2}-(\frac{2\pi ϙa'_t}{h})^{2}$ while the article's equation carries $(\partial_{R_t}-\frac{2\pi ϙa'_t}{h})^{2}$, the two differing by the cross term through which the electric potential shifts the energy. The difference is a property of the corpus's convention $A_t=i a'_t$: the temporal coefficient of the covariant derivative is real, while the standard scalar action's minimal coupling pairs an imaginary one. Whether the convention should be read as the four-potential's time component being imaginary throughout — in which case the temporal slot's cross term belongs to the energy and not to the derivative — or whether the action for an electric connection should be written with the adjoint pairing in that slot, is not settled. The magnetic case, the free limit, and the polar pair are unaffected; what is at stake is one bookkeeping choice, stated rather than absorbed.
 
 ## Summary
 
@@ -233,14 +233,14 @@ with $J_\mu=2\mathrm{Re\,Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,
 | $\tilde\Xi$ | The field, a general element of $\mathbb{B}$ |
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection, real on the material sector |
 | $ϙ$ | The coupling |
-| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The covariant derivative, central per slot |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$ | The covariant derivative, central per slot |
 | $\Box_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}$ | The covariant d'Alembertian |
 | $\tilde F=\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\big)$ | The field strength |
 | $S_{\mathrm{m}}$, $\mathcal L$ | The matter action; its density |
 | $J_\mu=2\mathrm{Re\,Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr]$ | The charge current; the Noether charge; the source |
 | $\tilde J_\Phi^{\mathrm{(src)}}$ | The source of the connection's equation |
 | $T_{\mu\nu}$ | The matter stress tensor; $\partial_\mu T_{\mu\nu}=F_{\nu\mu}J_\mu$ |
-| $k_m=mc/\hbar$ | The mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
 
 ## Further Reading
 

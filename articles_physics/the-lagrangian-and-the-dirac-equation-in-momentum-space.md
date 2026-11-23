@@ -29,10 +29,10 @@ $$
 The parent's action is quoted once and not re-derived. It is
 
 $$
-S=\frac{\hbar c}{2}\int\mathrm{d}^4r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\,\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\,\tilde\nabla_\Phi\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
+S=\frac{h c}{4\pi}\int\mathrm{d}^4r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\,\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\,\tilde\nabla_\Phi\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
 $$
 
-with $k_m=mc/\hbar$, the two parts $\tilde\Xi_L$ and $\tilde\Xi_R$ and the Hermitian pairing $\mathrm{Sc}(\cdot^{*}\cdot)$. The two parts are not values; the parent's warning applies unchanged, and no display below splits a value.
+with $k_m=\frac{2\pi mc}{h}$, the two parts $\tilde\Xi_L$ and $\tilde\Xi_R$ and the Hermitian pairing $\mathrm{Sc}(\cdot^{*}\cdot)$. The two parts are not values; the parent's warning applies unchanged, and no display below splits a value.
 
 ### The Constant-Coefficient Licence
 
@@ -47,7 +47,7 @@ $$
 
 checked to $3.9\times10^{-16}$ over five momenta. On $k_t'=1$, $\vec k_\Phi=(0.6,0,0)$ and $k_m=0.7$ the wrong object is $2.53$ and the right one is $0.64-0.49=0.15$. The norm is not linear in its argument, so the mass cannot sit inside it; it is a coefficient of the action, and the composition of the pair subtracts it from a number.
 
-The momentum-space measure's constant is the transform's convention, and the action's overall constant is the parent's $\frac{\hbar c}{2}$. No display above depends on either, and no normalization is claimed.
+The momentum-space measure's constant is the transform's convention, and the action's overall constant is the parent's $\frac{h c}{4\pi}$. No display above depends on either, and no normalization is claimed.
 
 The two parts remain elements of $\mathbb{B}$, the pair remains a pair of equations on elements, and the centrality of the second variation is a statement about one coefficient's behaviour. No sector flip occurs at any step.
 
@@ -56,7 +56,7 @@ The two parts remain elements of $\mathbb{B}$, the pair remains a pair of equati
 The transform of the action replaces each derivative by a multiplier and each integration by parts by nothing. The action becomes
 
 $$
-S=\frac{\hbar c}{2}\int\frac{\mathrm{d}^4k}{(2\pi)^4}\;\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\,i\tilde K_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\,i\tilde K_\Phi\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
+S=\frac{h c}{4\pi}\int\frac{\mathrm{d}^4k}{(2\pi)^4}\;\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\,i\tilde K_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\,i\tilde K_\Phi\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
 $$
 
 with $\tilde\Xi_{L}$ and $\tilde\Xi_{R}$ now the transforms of the two parts. The measure is the transform's own constant and no statement below depends on it; the four terms are the parent's four, in the same order, with the multipliers in place of the derivatives.
@@ -158,7 +158,7 @@ The derivative of the form with respect to $\omega$ is the density, and the requ
 
 Where the two branches are, then. They are the two eigenvalues of the Hamiltonian at that wave number, not two roots of a quadratic. **The reading distinguishes the two by the sign of the eigenvalue and not by the sign of the root**, and the distinction is the same one in either language.
 
-The slope of the action with respect to the frequency is $\hbar$ times the norm, which is the density per mode. The transform is therefore the map from the form's argument to the form's density, and it is injective on the amplitude and constant on the frequency.
+The slope of the action with respect to the frequency is $\frac{h}{2\pi}$ times the norm, which is the density per mode. The transform is therefore the map from the form's argument to the form's density, and it is injective on the amplitude and constant on the frequency.
 
 Why the article still needs it. Because the momentum reading's claim is that the mode action *is* the symbol, and a reader can test that claim only by differentiating: if the derivative in the frequency is the density and the derivative in the amplitude is the symbol, the identification is complete. The transform is the test, not a new result.
 
@@ -191,7 +191,7 @@ What it does not claim. It does not evaluate the integral, compute a residue, or
 The Noether charge is the spatial integral of the temporal component of the current, and by Parseval it becomes a sum over modes. At one mode the summand is the bilinear of the amplitude,
 
 $$
-\mathcal{Q}(\vec k)=\hbar\,\mathrm{Sc}\bigl[X^{*}(\vec k)X(\vec k)\bigr],
+\mathcal{Q}(\vec k)=\frac{h}{2\pi}\,\mathrm{Sc}\bigl[X^{*}(\vec k)X(\vec k)\bigr],
 $$
 
 up to the normalisation the element article fixes, so that the total charge is the integral of this density over the wave numbers. The step from the position-space charge to this display is Parseval's identity and nothing else; the companion article *The Lagrangian and the Schrödinger Equation in Momentum Space* proves it in that case and the proof transfers, because it uses only the transform and the Hermitian pairing.
@@ -224,7 +224,7 @@ The variational output is the zero of that scalar and the free propagator is pro
 
 | Symbol | Meaning |
 | --- | --- |
-| $S$ | The parent's action, four terms, coefficient $\frac{\hbar c}{2}$ |
+| $S$ | The parent's action, four terms, coefficient $\frac{h c}{4\pi}$ |
 | $i\tilde K_\Phi$, $i\tilde K_\Phi^{\natural}$ | The symbols of the gradient and its conjugate; Hermitian |
 | $\mathrm{Sc}(\tilde A^{*}i\tilde K_\Phi\tilde A)$ | The momentum-space kinetic bracket; real for every $\tilde A$ |
 | $\langle i\tilde K_\Phi\rangle_\natural=k^{2}$ | The symbol's norm; central, real, equal to the interval |

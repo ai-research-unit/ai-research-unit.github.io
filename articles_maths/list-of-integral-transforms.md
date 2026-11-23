@@ -44,7 +44,7 @@ This article lists the integral transforms the corpus constructs and inverts. An
 | the spherical transform on a symmetric space | the spherical functions as kernel; inversion by the Plancherel theorem for the spherical transform | *The Plancherel Theorem* |
 | the Fourier transform of a representation | the matrix coefficients as kernel; the Plancherel decomposition of a unitary representation | *Noncommutative Harmonic Analysis* |
 | the character of a representation | the trace of the representation, the degenerate kernel that inverts the decomposition | *Analysis on Compact Groups* |
-| the Wigner transform of a state | the matrix-element kernel $W(x,\zeta)$ on phase space; its semiclassical defect measure is positive, carried by the energy surface and invariant under the Hamiltonian flow; inversion is the Weyl quantisation $\operatorname{Op}^w_\hbar$ | *Semiclassical Analysis*; *Pseudodifferential Operators* |
+| the Wigner transform of a state | the matrix-element kernel $W(x,\zeta)$ on phase space; its semiclassical defect measure is positive, carried by the energy surface and invariant under the Hamiltonian flow; inversion is the Weyl quantisation $\operatorname{Op}^w_{h_{\mathrm{def}}}$ | *Semiclassical Analysis*; *Pseudodifferential Operators* |
 
 ## Transforms That Do Not Satisfy Their Inversion Theorem
 

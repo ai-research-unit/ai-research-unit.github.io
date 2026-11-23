@@ -8,13 +8,13 @@ The Proca field is $A_\mu=r\,u_\mu$: a magnitude and a direction, which are a de
 
 *Second, the density's variation and the direction's variation are the longitudinal and transverse parts of the field equation, and the Lorenz condition is neither: it is their consequence*, by the identity $\sum_{\mu,\nu}\partial_\mu\partial_\nu F_{\nu\mu}=0$. The action therefore explains the block's phrase that the free incompressibility is the mass's gift: without the mass the identity has nothing to balance, and the condition does not arise.
 
-*Third, this is the only action in the layer with no $\hbar$ in its derivative term, and correspondingly the only fluid in the block whose acceleration law has no quantum force.* The polar decomposition of a vector field produces no second derivative of the magnitude, and the action says why: $A=ru$ has one derivative and the Lagrangian is quadratic in it.
+*Third, this is the only action in the layer with no $\frac{h}{2\pi}$ in its derivative term, and correspondingly the only fluid in the block whose acceleration law has no quantum force.* The polar decomposition of a vector field produces no second derivative of the magnitude, and the action says why: $A=ru$ has one derivative and the Lagrangian is quadratic in it.
 
 Position in the block. This is the variational companion of [The Spin-One Fluid](the-spin-one-fluid.html) and the seventh of the eight articles of this layer. It is the only one in which a Lagrange multiplier is genuinely needed, and the only one whose fluid is not a quantum fluid.
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. $A_\mu=r\,u_\mu$ with $r>0$ and $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$; the temporal slot carries the $i$, so $\sum_\mu\varepsilon_\mu A_\mu A_\mu=-r^{2}$. No index is raised: a contraction names its summed index, weighted by $\varepsilon_\mu$ wherever a value is displayed. $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$; $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A_\mu A_\mu$ in the corpus's signs, whose Euler–Lagrange equation is $\sum_\nu\partial_\nu F_{\nu\mu}=k_m^{2}A_\mu$. The transverse derivative is $\nabla_\mu=\sum_\nu\mathsf{P}_{\mu\nu}\partial_\nu$ with $\mathsf{P}_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$.
+The conventions are restated here so that every sign below is checkable from this page alone. $A_\mu=r\,u_\mu$ with $r>0$ and $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$; the temporal slot carries the $i$, so $\sum_\mu\varepsilon_\mu A_\mu A_\mu=-r^{2}$. No index is raised: a contraction names its summed index, weighted by $\varepsilon_\mu$ wherever a value is displayed. $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$; $k_m=\frac{2\pi mc}{h}$; $\mathcal L=-\frac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A_\mu A_\mu$ in the corpus's signs, whose Euler–Lagrange equation is $\sum_\nu\partial_\nu F_{\nu\mu}=k_m^{2}A_\mu$. The transverse derivative is $\nabla_\mu=\sum_\nu\mathsf{P}_{\mu\nu}\partial_\nu$ with $\mathsf{P}_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$.
 
 ## The Action in the Field's Own Variables
 
@@ -38,7 +38,7 @@ obtained by expanding $-\frac14F^{2}$ and using $u^{2}=-1$. Four terms: the dens
 
 **The cross term is what makes the free spin-one fluid's acceleration law as short as the block's.** $a_\mu=-\nabla_\mu\ln r-r^{-1}E_\mu$ has no quantum force because the two pieces of $F$ are first derivatives and no second derivative of $r$ survives the variation; the cross term is where the density's gradient and the vorticity meet, and it is the term that turns the field equation into a statement about the flow's acceleration.
 
-There is no $\hbar$ anywhere in the derivative terms. The only place the quantum of action appears is inside $k_m$. So this rung's fluid is not a Madelung fluid: it is a classical field read as a medium, and the block's article says as much by giving an acceleration law with no quantum potential.
+There is no $\frac{h}{2\pi}$ anywhere in the derivative terms. The only place the quantum of action appears is inside $k_m$. So this rung's fluid is not a Madelung fluid: it is a classical field read as a medium, and the block's article says as much by giving an acceleration law with no quantum potential.
 
 ## The Variation: The Two Variations and the Multiplier
 
@@ -154,7 +154,7 @@ The variations. The density's is the field equation's longitudinal part, the dir
 
 The multiplier. The only genuine one in the layer; it is the unit condition's force and plays a pressure's part.
 
-The quantum sector. Absent: no $\hbar$ in the derivative terms, no quantum potential, no quantum force. The spin-one fluid is a classical field read as a medium.
+The quantum sector. Absent: no $\frac{h}{2\pi}$ in the derivative terms, no quantum potential, no quantum force. The spin-one fluid is a classical field read as a medium.
 
 ## Summary of Notation
 
@@ -165,7 +165,7 @@ The quantum sector. Absent: no $\hbar$ in the derivative terms, no quantum poten
 | $u_\mu$, $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$ | Unit four-velocity; three functions and one constraint |
 | $\omega_{\mu\nu}=\partial_\mu u_\nu-\partial_\nu u_\mu$ | The raw curl, whose contraction with $u$ is $-a_\mu$; its projection $\omega^{\perp}$ is the vorticity and is rank two |
 | $F_{\mu\nu}=r\omega_{\mu\nu}+\partial_\mu r\,u_\nu-\partial_\nu r\,u_\mu$ | The field strength; vorticity plus density gradient |
-| $k_m=mc/\hbar$ | Mass wave number; the only place $\hbar$ appears |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number; the only place $\frac{h}{2\pi}$ appears |
 | $\nabla_\mu=\sum_\nu\mathsf{P}_{\mu\nu}\partial_\nu$ | Transverse derivative; $\mathsf{P}_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$ |
 | $\lambda$ | Multiplier of the unit condition; a pressure |
 | $E_\mu=\sum_\nu\varepsilon_\nu F_{\mu\nu}u_\nu$ | The electric part along the flow |

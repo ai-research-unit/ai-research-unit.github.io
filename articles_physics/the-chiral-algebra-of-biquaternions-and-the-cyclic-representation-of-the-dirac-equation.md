@@ -285,7 +285,7 @@ $$
 \tag{14}
 $$
 
-Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 The factor $2$ on the left is the $\tfrac12$ of the derivatives (6): with it, (14) is the two-line pair itself, term by term; without it the system is half of it. The printed source omits the factor. The omission is not cosmetic: it also halves the derivative side of (20), and that is why the source's amplitude relations seem to disagree with its phase (see *Plane Waves and the Dispersion Relation*).
 

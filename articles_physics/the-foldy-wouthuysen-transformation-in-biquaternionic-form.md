@@ -38,7 +38,7 @@ $$
 D_3=\sum_\eta\vec e_\eta\frac{\partial}{\partial q_\eta}.
 $$
 
-Minimal coupling shifts each derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-\frac{iϙA_{\mu}}{\hbar}$, so the pure part becomes $D_3^A=\sum_\eta\vec e_\eta(\partial/\partial q_\eta-\frac{iϙA_{\eta}}{\hbar})$, and $\sum_\eta\vec e_\eta\pi_\eta=-i\,\hbar\,D_{3}^{A}$ with $\pi_\eta=p_\eta-ϙA_\eta$ and $p_\eta=-i\,\hbar\partial/\partial q_\eta$. The charge is $ϙ$ and the four-potential is $A_\mu=(A_0,-\vec A)$.
+Minimal coupling shifts each derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-\frac{2\pi iϙA_{\mu}}{h}$, so the pure part becomes $D_3^A=\sum_\eta\vec e_\eta(\partial/\partial q_\eta-\frac{2\pi iϙA_{\eta}}{h})$, and $\sum_\eta\vec e_\eta\pi_\eta=-i\,\frac{h}{2\pi}\,D_{3}^{A}$ with $\pi_\eta=p_\eta-ϙA_\eta$ and $p_\eta=-i\,\frac{h}{2\pi}\partial/\partial q_\eta$. The charge is $ϙ$ and the four-potential is $A_\mu=(A_0,-\vec A)$.
 
 **The two involutions.** The reduction needs two right multiplications of the algebra, written by position. The **mass grading** and the **chirality** are
 
@@ -68,7 +68,7 @@ both gradients acting from the left, with no right multiplication and no conjuga
 
 The FW transformation is best stated for the Hamiltonian form of the Dirac equation. The pair, read on the Dirac module $\mathcal{S}_{\mathrm{rep}}=\mathbb B$, is the equation of motion
 
-$$i\,\hbar\,c\frac{\partial  F}{\partial  r'_t}=HF,
+$$i\,\frac{h}{2\pi}\,c\frac{\partial  F}{\partial  r'_t}=HF,
 \qquad
 HF=\beta mc^2F+OF+ϙA_0F,
 \qquad
@@ -89,7 +89,7 @@ O=O^{\dagger},
 \beta=\beta^{\dagger},
 $$
 
-so that $O$ is odd, $ϙA_0$ is even, and $H$ is Hermitian. At zero potential $H^2=m^2c^4+O^2$, and the free $O^2=c^2\vec p^2$, so the eigenvalues are $\pm\sqrt{m^2c^4+c^2\vec p^2}$, which is the mass shell of the pair. With a field $O^2/c^2=\vec\pi^2-i\,\hbar\,ϙ\,\vec B$, so the two branches are split by the Zeeman term, computed below. The square is scalar because $\beta$ anticommutes with $O$ and because the pure units multiply as $\vec e_j\vec e_\eta=-\delta_{j\eta}e_t+\epsilon_{j\eta l}\vec e_l$, the antisymmetric part of which cancels between the two orderings of a mixed derivative.
+so that $O$ is odd, $ϙA_0$ is even, and $H$ is Hermitian. At zero potential $H^2=m^2c^4+O^2$, and the free $O^2=c^2\vec p^2$, so the eigenvalues are $\pm\sqrt{m^2c^4+c^2\vec p^2}$, which is the mass shell of the pair. With a field $O^2/c^2=\vec\pi^2-i\,\frac{h}{2\pi}\,ϙ\,\vec B$, so the two branches are split by the Zeeman term, computed below. The square is scalar because $\beta$ anticommutes with $O$ and because the pure units multiply as $\vec e_j\vec e_\eta=-\delta_{j\eta}e_t+\epsilon_{j\eta l}\vec e_l$, the antisymmetric part of which cancels between the two orderings of a mixed derivative.
 
 The Hamiltonian splits into an **even** part and an **odd** part,
 
@@ -126,7 +126,7 @@ and $\beta O$ is the same two-sided action as $O$, with $\vec e_y$ in place of $
 Let $U=\exp(iS)$, with $S=S_1+S_2+\cdots$ Hermitian so that $U$ is $*$-unitary. The letter $S$ is the FW generator here, as in the literature. The transformed Hamiltonian is
 
 $$
-H_2=UHU^\dagger-i\,\hbar\,U\frac{\partial}{\partial  r'_t}U^\dagger ,
+H_2=UHU^\dagger-i\,\frac{h}{2\pi}\,U\frac{\partial}{\partial  r'_t}U^\dagger ,
 $$
 
 where the second term vanishes for a time-independent $S$. Since $H=\beta mc^2+O+\mathcal{E}$, the idea is to choose $S$ so that the large commutator $i[S_1,\beta mc^2]$ equals $-O$ at leading order, cancelling the odd part and leaving an even remainder of order $1/c^2$.
@@ -191,10 +191,10 @@ $$
 S_2=-\frac{i}{2\,m\,c^{2}}\beta O_1 ,
 $$
 
-odd like $S_1$, and by the same computation as for $S_1$, with $O_1$ in place of $O$, it gives $i[S_2,\beta mc^2]=-O_1$. Every generator is odd under the grading for the same reason: it enters the transformed Hamiltonian only through the commutator with $\beta mc^2$, and only an odd generator produces an odd term there. The price of the second step is a new odd remainder $O_2$, smaller by two powers of $v/c$, which the next generator removes in turn. Explicitly, $[O,\mathcal{E}]F=i\,\hbar\,c\,ϙ\,\vec E\,F\,\vec e_{z}$ and
+odd like $S_1$, and by the same computation as for $S_1$, with $O_1$ in place of $O$, it gives $i[S_2,\beta mc^2]=-O_1$. Every generator is odd under the grading for the same reason: it enters the transformed Hamiltonian only through the commutator with $\beta mc^2$, and only an odd generator produces an odd term there. The price of the second step is a new odd remainder $O_2$, smaller by two powers of $v/c$, which the next generator removes in turn. Explicitly, $[O,\mathcal{E}]F=i\,\frac{h}{2\pi}\,c\,ϙ\,\vec E\,F\,\vec e_{z}$ and
 
 $$
-S_2F=\frac{\hbar\,ϙ}{4\,c^{3}\,m^{2}}\,(\vec EF)\vec e_z ,
+S_2F=\frac{h\,ϙ}{8\pi \,c^{3}\,m^{2}}\,(\vec EF)\vec e_z ,
 $$
 
 odd, as every generator is. For the free particle $O=c\vec p$, $\mathcal{E}=0$, so $O_1=0$ and $O^2=c^2\vec p^2$; then $O^2/(2mc^2)=\vec p^2/(2m)$ and
@@ -291,7 +291,7 @@ the $\vec p^4$ term being the first relativistic correction to the kinetic energ
 **The exact form is not a differential operator.** That the identity holds exactly is a statement about the algebra, not about locality. The symbol of $\beta\sqrt{\vec p^{2}c^{2}+m^{2}c^{4}}$ is $\sqrt{k^{2}c^{2}+m^{2}c^{4}}$, which is not a polynomial in $k$ at any order, so the operator is of infinite order: written in position space it has a kernel that does not vanish off the diagonal. In one dimension the kernel is elementary,
 
 $$
-\mathcal{K}(x)=\int\!\frac{dp}{2\pi\hbar}\;\sqrt{p^{2}c^{2}+m^{2}c^{4}}\;e^{ipx/\hbar}=-\dfrac{m\,c^{2}K_{1}(k_m\lvert x\rvert)}{\pi\lvert x\rvert},
+\mathcal{K}(x)=\int\!\frac{dp}{h}\;\sqrt{p^{2}c^{2}+m^{2}c^{4}}\;e^{\frac{2\pi ipx}{h}}=-\dfrac{m\,c^{2}K_{1}(k_m\lvert x\rvert)}{\pi\lvert x\rvert},
 $$
 
 non-zero at every $x\neq0$ and decaying only over the reduced Compton wavelength $\dfrac{1}{k_m}$. The closed form separates the distributional part with $\frac{1}{\pi}\int_0^{\infty}k\cos(kx)\,dk=-\frac{1}{\pi x^{2}}$, what remains being conditionally convergent, and the integral was checked against it to twenty-five digits at $k_m\lvert x\rvert=0.5,1,2,3$. In three dimensions the kernel is more singular at coincidence rather than less, the difference $\sqrt{p^{2}c^{2}+m^{2}c^{4}}-pc$ falling off only as $\dfrac{m^{2}c^{3}}{2\,p}$, whose angular integral diverges. The transformation therefore trades one property for another: the Dirac Hamiltonian is local and not block-diagonal, its exact Foldy–Wouthuysen image is block-diagonal and not local, and only the truncated polynomial $\beta mc^{2}+\beta\vec p^{2}/(2m)$ is both. Locality belongs to the two ends of the chain, not to the middle. Nothing here contradicts the closed form above; it says what the closed form costs. The mean position operator below is the same non-locality read on the coordinate instead of on the Hamiltonian, since the operator that is blind to the trembling cannot itself be a multiplication by $\vec x$.
@@ -306,7 +306,7 @@ $$
 
 The direction of the conjugation is the content of the definition. The other ordering, $U\vec q\,U^\dagger$, is the original coordinate read in the transformed frame, and it keeps the trembling; $U^\dagger\vec q\,U$ is the coordinate whose image in the transformed frame is plain multiplication.
 
-The correction to each component is fixed by one commutator with the momentum. Since the right multiplication by $\vec e_y$ commutes with multiplication by a coordinate and $[\pi_\eta,Q_\eta]=-i\,\hbar$,
+The correction to each component is fixed by one commutator with the momentum. Since the right multiplication by $\vec e_y$ commutes with multiplication by a coordinate and $[\pi_\eta,Q_\eta]=-i\,\frac{h}{2\pi}$,
 
 $$
 [S_1,Q_\eta]F=-\frac{i}{2\,k_m}\,\vec e_\eta F\vec e_y,
@@ -326,7 +326,7 @@ $$
 The correction is of the order of the half reduced Compton wavelength $\dfrac{1}{2\,k_m}$ — the Zitterbewegung amplitude — and the next correction is of order $1/m^2$. The exact closed form of the previous section gives the same leading term: differentiating $\theta$ and differentiating $\vec u_p$ contribute two pieces whose dependence on $\vec u_p$ cancels, so the sum is the single operator $\vec e_\eta(\cdot)\vec e_y$, and the residual against $U^\dagger\vec q\,U$ is of order $1/m^2$. The operator $\vec X$ is the **mean position** (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,
 
 $$
-\frac{d\vec X}{dr'_t}=\frac{i}{\hbar}[H,\vec X]=U^\dagger\Bigl(\beta\frac{\vec pc^2}{E}\Bigr)U,
+\frac{d\vec X}{dr'_t}=\frac{2\pi i}{h}[H,\vec X]=U^\dagger\Bigl(\beta\frac{\vec pc^2}{E}\Bigr)U,
 $$
 
 commutes with $H$ and therefore has no oscillatory part: in the transformed frame it is exactly the classical drift $\beta\vec pc^2/E$, and the rapid trembling of the ordinary position operator is entirely contained in the difference
@@ -335,7 +335,7 @@ $$
 \vec q-\vec X=\dfrac{1}{2\,k_m}\sum_\eta\vec e_\eta(\cdot)\vec e_y+\cdots .
 $$
 
-The step in the middle is one line: $UHU^\dagger=\beta E$ makes $[H,\vec X]=U^\dagger[\beta E,\vec q]U$, and $[E(\vec p),\vec q]=-\frac{i\,\hbar\,c^{2}\,\vec p}{E}$ on a function of the momentum alone, so no derivative of the field enters. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+The step in the middle is one line: $UHU^\dagger=\beta E$ makes $[H,\vec X]=U^\dagger[\beta E,\vec q]U$, and $[E(\vec p),\vec q]=-\frac{i\,h\,c^{2}\,\vec p}{2\pi E}$ on a function of the momentum alone, so no derivative of the field enters. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 In the biquaternion language, the trembling is a rotation of the field between the two frames of the algebra, and the mean position is the coordinate that is blind to it. The companion article *Zitterbewegung in Biquaternionic Form* records the same conclusion from the side of the oscillation; here it appears as a property of the mean position.
 
@@ -378,27 +378,27 @@ $$
 and the antisymmetric part contracts with the commutator of the momenta and survives:
 
 $$
-O^2=c^2\bigl(\vec\pi^2-i\,\hbar\,ϙ\,\vec B\bigr),
+O^2=c^2\bigl(\vec\pi^2-i\,\frac{h}{2\pi}\,ϙ\,\vec B\bigr),
 \qquad
-[\pi_j,\pi_\eta]=i\,\hbar\,ϙ\,\epsilon_{j\eta l}\,B_{l},
+[\pi_j,\pi_\eta]=i\,\frac{h}{2\pi}\,ϙ\,\epsilon_{j\eta l}\,B_{l},
 \qquad
 \vec B=\sum_l B_l\vec e_l .
 $$
 
-The left multiplication by $i\vec e_l$ commutes with $\beta$, so the spin terms are frame-even, and $\frac{\beta O^2}{2mc^2}$ already contains the Zeeman coupling $-\frac{\hbar\,ϙ}{2\,m}i\vec B$ with the gyromagnetic factor $g=2$. The second transformation, with the generator $S_2$ above, adds the terms of relative order $v^2/c^2$. To this order the effective Hamiltonian on the $+1$ part of the mass grading is the Pauli Hamiltonian
+The left multiplication by $i\vec e_l$ commutes with $\beta$, so the spin terms are frame-even, and $\frac{\beta O^2}{2mc^2}$ already contains the Zeeman coupling $-\frac{h\,ϙ}{4\pi \,m}i\vec B$ with the gyromagnetic factor $g=2$. The second transformation, with the generator $S_2$ above, adds the terms of relative order $v^2/c^2$. To this order the effective Hamiltonian on the $+1$ part of the mass grading is the Pauli Hamiltonian
 
 $$
 \boxed{\;
 \begin{aligned}
 H_{\mathrm{Pauli}}
-&=\frac{\vec \pi^{2}}{2\,m}+ϙA_0-\frac{\hbar\,ϙ}{2\,m}\,i\vec B\\[2pt]
-&\quad-\frac{\hbar\,ϙ}{4\,m^{2}\,c^{2}}\,i(\vec E\times\vec\pi)
+&=\frac{\vec \pi^{2}}{2\,m}+ϙA_0-\frac{h\,ϙ}{4\pi \,m}\,i\vec B\\[2pt]
+&\quad-\frac{h\,ϙ}{8\pi \,m^{2}\,c^{2}}\,i(\vec E\times\vec\pi)
 +\frac{1}{8\,k_m^{2}}\vec\nabla_\Phi^2(ϙA_0),
 \end{aligned}
 \;}
 $$
 
-whose terms beyond the leading kinetic and electrostatic ones are the spin–Zeeman term, the spin–orbit coupling and the Darwin term — the coefficient $1/(4m^2c^2)$ of the spin–orbit term already contains the Thomas factor of $\frac12$ — together with the relativistic kinetic correction $-\bigl(\vec\pi^2-i\,\hbar\,ϙ\,\vec B\bigr)^2/(8m^3c^2)$, which is the field version of the free term $-\vec p^4/(8m^3c^2)$ displayed above. The square is taken of $O^2/c^2=\vec\pi^2-i\,\hbar\,ϙ\,\vec B$ rather than of $\vec\pi^2$, because the two differ by the Zeeman term and it is the operator the transformation actually produces. The companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* derives each in the biquaternion framework; they are quoted here as the standard content of the transformation. For the electrostatic case $\vec E=-\vec\nabla_\Phi A_0$, the Darwin term has the equivalent forms
+whose terms beyond the leading kinetic and electrostatic ones are the spin–Zeeman term, the spin–orbit coupling and the Darwin term — the coefficient $1/(4m^2c^2)$ of the spin–orbit term already contains the Thomas factor of $\frac12$ — together with the relativistic kinetic correction $-\bigl(\vec\pi^2-i\,\frac{h}{2\pi}\,ϙ\,\vec B\bigr)^2/(8m^3c^2)$, which is the field version of the free term $-\vec p^4/(8m^3c^2)$ displayed above. The square is taken of $O^2/c^2=\vec\pi^2-i\,\frac{h}{2\pi}\,ϙ\,\vec B$ rather than of $\vec\pi^2$, because the two differ by the Zeeman term and it is the operator the transformation actually produces. The companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* derives each in the biquaternion framework; they are quoted here as the standard content of the transformation. For the electrostatic case $\vec E=-\vec\nabla_\Phi A_0$, the Darwin term has the equivalent forms
 
 $$
 \frac{1}{8\,k_m^{2}}\vec\nabla_\Phi^2(ϙA_0)=-\frac{ϙ}{8\,k_m^{2}}\vec\nabla_\Phi\cdot\vec E .
@@ -489,7 +489,7 @@ The biquaternion interpretation turns on two splits that must not be conflated. 
 | $S_1=-\frac{i}{2\,m\,c^{2}}\beta O$ | Leading FW generator; its action is $\frac{1}{2\,m\,c}\sum_\eta\vec e_\eta\pi_kF\vec e_y$ |
 | $O_1 = i[S_1,\mathcal{E}]$ | Odd remainder after the first step |
 | $S_2 = -\frac{i}{2\,m\,c^{2}}\beta O_1$ | Second generator; odd, like every generator |
-| $H_2 = UHU^\dagger -i\,\hbar\,U\partial/\partial r'_t\,U^\dagger$ | Transformed Hamiltonian |
+| $H_2 = UHU^\dagger -i\,\frac{h}{2\pi}\,U\partial/\partial r'_t\,U^\dagger$ | Transformed Hamiltonian |
 | $AF=i\vec u_pF\vec e_y$ | Free-particle involution, $A^2=-e_t$, $\beta A=-A\beta$ |
 | $\theta = \arctan(|\vec p|/(mc))$ | Free-particle FW angle |
 | $\vec q = \sum_\eta Q_\eta\vec e_\eta$ | Material position |

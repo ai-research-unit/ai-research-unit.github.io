@@ -86,7 +86,7 @@ $$
 \tilde F_{\mu}D_{\mu}\tilde\Xi=0 .
 $$
 
-**Massive, as a chiral pair**, with the mass length $\hbar/(mc)$ written $k_m$ and the two halves $\tilde\Xi_{R}$, $\tilde\Xi_{L}$ of the Dirac field:
+**Massive, as a chiral pair**, with the mass length $\frac{h}{2\pi mc}$ written $k_m$ and the two halves $\tilde\Xi_{R}$, $\tilde\Xi_{L}$ of the Dirac field:
 
 $$
 \tilde F_{\mu}D_{\mu}\tilde\Xi_{R}=k_m\tilde\Xi_{L},
@@ -254,7 +254,7 @@ Minimal electromagnetic coupling adds a field-strength–spin term with the same
 | $D_\mu\tilde\Xi=\partial_\mu\tilde\Xi+\vec\Gamma_\mu\tilde\Xi$ | one-sided covariant derivative of the field |
 | $D_\mu\tilde Q=\partial_\mu\tilde Q+\vec\Gamma_\mu\tilde Q+\tilde Q\vec\Gamma_\mu^{*}$ | two-sided covariant derivative of a vector |
 | $\tilde F_\mu D_\mu$ | the curved Dirac operator |
-| $k_m=\hbar/(mc)$ | mass length |
+| $k_m=\frac{h}{2\pi mc}$ | mass length |
 | $\Box_{g,\Phi}=\sum_{\mu,\nu}G_{\mu\nu}\nabla_\mu\nabla_\nu$ | Laplace–Beltrami operator; $\vec\nabla_\Phi^{*}\vec\nabla_\Phi=-\Box_{g,\Phi}$ |
 | $\mathrm{Ric}$ | scalar curvature of the Gram metric |
 | $(\tilde F_\mu D_\mu)^2=-\Box_{g,\Phi}+\tfrac14\mathrm{Ric}$ | Lichnerowicz square, taken on the basis operator |

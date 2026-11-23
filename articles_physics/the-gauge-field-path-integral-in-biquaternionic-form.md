@@ -4,7 +4,7 @@
 
 The functional integral is the series' general apparatus for the quantum theory of a field, and its general properties — the sum over field configurations weighted by $\exp(i\theta_{\mathrm{act}})$, the generating functional, the effective action — are treated in the subcategory devoted to them and are not repeated here. The present article does one thing: it specializes the functional integral to the **gauge field**. That specialization is not a matter of substituting one field for another, because the gauge field's functional integral is ill-defined as it stands. The action is invariant along gauge orbits, the integrand is constant along those orbits, and the integral therefore contains an infinite factor — the volume of the gauge group — for every orbit. Making the gauge-field path integral finite is the work of the Faddeev–Popov construction, and it is that construction, in the biquaternion framework, that this article develops.
 
-Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
+Throughout this article $\theta_{\mathrm{act}}:=\frac{2\pi \mathrm{Re}\,S}{h}$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\frac{2\pi \mathrm{Im}\,S}{h}$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
 The construction has three parts. The first is the insertion of a gauge-fixing condition into the integral, together with a compensating determinant — the Faddeev–Popov determinant — whose value is what makes the insertion an identity. The second is the observation that for an abelian gauge field the determinant is field-independent and can be discarded, while for a non-abelian field it depends on the gauge field and must be represented by ghost fields; the non-abelian case is developed in the companion subcategory on gauge fields, and here only the structure is recorded. The third is the evaluation of the resulting Gaussian integral, which produces the propagator and makes explicit the two facts that matter: the gauge-fixing parameter appears only in the longitudinal part of the propagator, so that it drops out of amplitudes built from conserved currents; and the transverse part is a projector that the biquaternion algebra already supplies.
 
@@ -28,7 +28,7 @@ S[\tilde{A}_{\Phi}] = \int d^4r\left(-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}
 = -\tfrac12\int d^4r\;\mathrm{Re}\,\mathrm{Sc}\!\left(\tilde{F}\tilde{F}^{\natural}\right),
 $$
 
-the second form being the bilinear writing of the companion article. The constants are carried. Every exponent is written $\frac{i}{\hbar}S[\tilde{A}_{\Phi}]$, the action in $\mathrm{J\,s}$ divided by $\hbar$, so the exponent is a pure number without any unit being set to one; the coupling $\kappa=\frac{ϙ}{\hbar}$ stands in the covariant derivative, and no charge is absorbed into the connection. The action depends on $\tilde{A}_{\Phi}$ only through $\tilde{F}$, and $\tilde{F}$ is invariant under the gauge transformation
+the second form being the bilinear writing of the companion article. The constants are carried. Every exponent is written $\frac{2\pi i}{h}S[\tilde{A}_{\Phi}]$, the action in $\mathrm{J\,s}$ divided by $\frac{h}{2\pi}$, so the exponent is a pure number without any unit being set to one; the coupling $\kappa=\frac{2\pi ϙ}{h}$ stands in the covariant derivative, and no charge is absorbed into the connection. The action depends on $\tilde{A}_{\Phi}$ only through $\tilde{F}$, and $\tilde{F}$ is invariant under the gauge transformation
 
 $$
 \tilde{A}_{\Phi}\;\longmapsto\;\tilde{A}_{\Phi}^{\Gamma}=\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma,
@@ -147,7 +147,7 @@ and it must be represented by ghost fields: the Gaussian representation of the d
 With the gauge fixed, the action is quadratic in the potential, and the integral is Gaussian. The four units are $e_t,\vec e_x,\vec e_y,\vec e_z$, their pairing is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and the momentum components are complex, the time one imaginary and the three space ones real, so the norm is $N=\sum_\mu p_\mu p_\mu$. Writing the gauge-fixed quadratic form in momentum space as
 
 $$
-S_2 = \tfrac12\int\frac{d^4p}{(2\pi\hbar)^4}\;\tilde{A}_{\Phi,\mu}(-p)\,
+S_2 = \tfrac12\int\frac{d^4p}{h^{4}}\;\tilde{A}_{\Phi,\mu}(-p)\,
 \mathcal F_{\mathrm{med},\mu\nu}(p)\,
 \tilde{A}_{\Phi,\nu}(p),
 \qquad
@@ -220,7 +220,7 @@ The Gaussian integral is fixed in full by adding a source. With the gauge fixed,
 
 $$
 Z[J] = \int\mathcal{D}\tilde{A}_{\Phi}\;\exp\left(iS_2[\tilde{A}_{\Phi}]+i\int d^4r\,\sum_\mu J_\mu A_\mu\right)
-= \left(\det K\right)^{-1/2}\exp\left(-\frac{i}{2}\int\frac{d^4p}{(2\pi\hbar)^4}\sum_{\mu,\nu}J_\mu(-p)D_{\mu\nu}(p)J_\nu(p)\right)
+= \left(\det K\right)^{-1/2}\exp\left(-\frac{i}{2}\int\frac{d^4p}{h^{4}}\sum_{\mu,\nu}J_\mu(-p)D_{\mu\nu}(p)J_\nu(p)\right)
 $$
 
 is evaluated by completing the square, the shift $A_\mu\to A_\mu+\sum_\nu D_{\mu\nu}J_\nu$ being the only ingredient beyond the definition of $D$ as the inverse of $K$. The two-point function is read off by differentiating twice with respect to the source,

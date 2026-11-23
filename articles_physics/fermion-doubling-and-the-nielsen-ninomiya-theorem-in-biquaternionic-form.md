@@ -34,7 +34,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
 $$
 
-with massless limit $\tilde\nabla_\Phi\tilde{Ξ}=0$; the subscript is the chirality label. The free equation is first order and one field. The massive equation is not: $\tilde\nabla_\Phi^2$ is not scalar, because the time unit commutes with the three space units, so the mixed terms survive the sum: $\tilde\nabla_\Phi^2=\partial^2/\partial R_t^2-\Delta_\Phi+2\sum_\eta\vec e_\eta\,\partial^2/\partial R_t\partial R_\eta$, which is not scalar — verified on a polynomial element, where the vector part of $\tilde\nabla_\Phi^2\tilde{Ξ}$ is nonzero. There is therefore no one-field, first-order massive equation in this algebra. The pair is the whole of the massive dynamics, and no letter is introduced to make it look like one equation. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+with massless limit $\tilde\nabla_\Phi\tilde{Ξ}=0$; the subscript is the chirality label. The free equation is first order and one field. The massive equation is not: $\tilde\nabla_\Phi^2$ is not scalar, because the time unit commutes with the three space units, so the mixed terms survive the sum: $\tilde\nabla_\Phi^2=\partial^2/\partial R_t^2-\Delta_\Phi+2\sum_\eta\vec e_\eta\,\partial^2/\partial R_t\partial R_\eta$, which is not scalar — verified on a polynomial element, where the vector part of $\tilde\nabla_\Phi^2\tilde{Ξ}$ is nonzero. There is therefore no one-field, first-order massive equation in this algebra. The pair is the whole of the massive dynamics, and no letter is introduced to make it look like one equation. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 **The chirality is a right action.** $\xi\tilde Q=-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$ and of the two values $L$ and $R$ (*Special Element Conventions*, §*The Chirality Convention*). The side is part of the definition: the left action $\tilde Q\mapsto-i\vec e_z\tilde Q$ is a different operator — the two differ by conjugation by $\vec e_z$ — and it is not the chirality. Neither operator is two-sided; each is a single multiplication, written out.
 
@@ -64,7 +64,7 @@ the action whose equation of motion is the massless limit of the pair. The mass 
 
 ### The propagator and the doubler poles
 
-**The symbol.** On a plane wave $\tilde{Ξ}_{n}\propto e^{i\theta_{\mathrm{pwp}}}$ with the plane-wave angle $\theta_{\mathrm{pwp}}=p\cdot x/\hbar$ real because the momentum and the position are real, the symmetric difference carries $i\sin(p_\mu a)/a$, so the lattice gradient acquires the element symbol
+**The symbol.** On a plane wave $\tilde{Ξ}_{n}\propto e^{i\theta_{\mathrm{pwp}}}$ with the plane-wave angle $\theta_{\mathrm{pwp}}=\frac{2\pi p\cdot x}{h}$ real because the momentum and the position are real, the symmetric difference carries $i\sin(p_\mu a)/a$, so the lattice gradient acquires the element symbol
 
 $$
 \tilde K_{\Phi}(p)=a^{-1}\sum_{\mu}\sin(p_\mu a)\,e_\mu ,

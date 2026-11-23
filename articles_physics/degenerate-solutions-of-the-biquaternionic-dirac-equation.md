@@ -26,7 +26,7 @@ $$
 \;}
 $$
 
-with $k_m=mc/\hbar$ the mass wave number, that is the reciprocal reduced Compton length. The field is one element $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ of $\mathbb{B}$. The gradient differentiates with respect to the coordinates $R_\mu$ and is an element of the algebra that multiplies on the left; the mass is a central coefficient. No column, no anticommuting array, no separate state space and no idempotent enters the statement.
+with $k_m=\frac{2\pi mc}{h}$ the mass wave number, that is the reciprocal reduced Compton length. The field is one element $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ of $\mathbb{B}$. The gradient differentiates with respect to the coordinates $R_\mu$ and is an element of the algebra that multiplies on the left; the mass is a central coefficient. No column, no anticommuting array, no separate state space and no idempotent enters the statement.
 
 At $k_m=0$ the pair decouples into two one-sided equations,
 
@@ -407,7 +407,7 @@ The letters $L$ and $R$ are the pair's two components and are fixed by the equat
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ | The Dirac field and the pair's two components |
 | $\tilde\Xi_{0}$ | The polarization biquaternion of a plane wave |
-| $k_m=mc/\hbar$ | Mass wave number; the reciprocal reduced Compton length |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number; the reciprocal reduced Compton length |
 | $\tilde K_{\Phi}=ik'_te_t+\vec k_\Phi$ | Wave biquaternion; $k'_t=\omega/c$ |
 | $\gamma=k'_t/k_m$ | Lorentz factor of the plane wave, on shell |
 | $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}$ | Quaternionic norm; the determinant of the matrix model; its zero set is the cone |

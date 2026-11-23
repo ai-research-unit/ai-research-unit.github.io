@@ -236,7 +236,7 @@ $$
 V_{ij} = -\frac{Gm^{2}}{\left|x_{B,j}-x_{A,i}\right|} .
 $$
 
-**The branch phases, and where they sit in the algebra.** After a laboratory time $t$ the branch $|ij\rangle$ carries the phase $\varphi_{ij} = -V_{ij}t/\hbar$, which is the phase of a $*$-unitary element of the material sector,
+**The branch phases, and where they sit in the algebra.** After a laboratory time $t$ the branch $|ij\rangle$ carries the phase $\varphi_{ij} = -V_{ij}\frac{2\pi t}{h}$, which is the phase of a $*$-unitary element of the material sector,
 $$
 \tilde U_{ij} = \cos\varphi_{ij}\,e_t + \sin\varphi_{ij}\,\left(i e_t\right), \qquad \tilde U_{ij}\tilde U_{ij}^{*} = e_t ,
 $$
@@ -245,12 +245,12 @@ verified on 100 random phases. The generator is $i e_t$, the central element who
 **The entangling phase.** Three of the four phases are removable. A common phase on $A$'s branches, a common phase on $B$'s branches, and a global phase are each absorbed by a $*$-unitary factor acting on one subsystem or on the pair, and none of them can change the entanglement. The one combination that no local operation touches is
 $$
 \delta = \varphi_{00}+\varphi_{11}-\varphi_{01}-\varphi_{10}
-= \frac{Gm^{2}t}{\hbar}\left(\frac{2}{R}-\frac{1}{R+d}-\frac{1}{R-d}\right)
-= -\frac{2Gm^{2}t\,d^{2}}{\hbar\,R\left(R^{2}-d^{2}\right)} ,
+= \frac{2\pi Gm^{2}t}{h}\left(\frac{2}{R}-\frac{1}{R+d}-\frac{1}{R-d}\right)
+= -\frac{2\pi 2Gm^{2}t\,d^{2}}{h\,R\left(R^{2}-d^{2}\right)} ,
 $$
 checked against the four-phase combination computed from $V_{ij}$ on 100 random configurations, with a maximum difference of $2.4\times10^{-12}$ rad. For $d\ll R$ it reduces to
 $$
-\delta \simeq -\frac{2Gm^{2}t\,d^{2}}{\hbar\,R^{3}} ,
+\delta \simeq -\frac{2\pi 2Gm^{2}t\,d^{2}}{h\,R^{3}} ,
 $$
 agreeing with the closed form to a relative $3.9\times10^{-4}$ over 100 configurations with $d/R\le 2\times10^{-2}$.
 
@@ -264,7 +264,7 @@ and its concurrence is
 $$
 C = 2\left|c_{00}c_{11}-c_{01}c_{10}\right| = \left|\sin\frac{\delta}{2}\right| ,
 $$
-the first equality the standard pure-state form and the second its evaluation on the coefficients above; the two agree to $1.6\times10^{-13}$ on 100 random configurations. The concurrence vanishes at $\delta = 0$, is maximal at $\delta = \pi$, and grows linearly in $t$ for small phase. Gravity generates entanglement and does nothing else to a pure path state, and the rate is fixed by $G$, $\hbar$ and the geometry.
+the first equality the standard pure-state form and the second its evaluation on the coefficients above; the two agree to $1.6\times10^{-13}$ on 100 random configurations. The concurrence vanishes at $\delta = 0$, is maximal at $\delta = \pi$, and grows linearly in $t$ for small phase. Gravity generates entanglement and does nothing else to a pure path state, and the rate is fixed by $G$, $\frac{h}{2\pi}$ and the geometry.
 
 **The numbers.** For $m = 10^{-14}$ kg, $R = 200\,\mu$m and $d = 100\,\mu$m,
 
@@ -281,7 +281,7 @@ The concurrence reaches $1/\sqrt2$ at $t = 7.45$ s and $1$ at $t = 14.9$ s, wher
 
 **When the separation is uncertain.** If $R$ is not sharp but distributed with weights $w_k$, the branch phases are averaged, the state is no longer pure, and the result is the dephasing channel of §*Momentum Superposition and the Frame Dependence* with $\cos\delta_k$ in place of $\cos\theta_{\mathrm{wgn}}$, acting on the path qubits. The mechanism is the same one the article analyses for momentum: what matters is the mismatch between the phases of the branches that are traced over, and the effect vanishes as the distribution narrows.
 
-**What this does not do.** The potential is Newtonian and instantaneous and is inserted rather than derived from a field equation of the framework; the masses are static sources. No quantised gravitational field, no relativistic correction, no back-reaction and no self-gravity is included. Nothing here is a deviation from the standard computation, and the framework's phase is the standard one. What the section establishes is where the two halves of the computation sit: the potential energy is a material-sector scalar, on the $i e_t$ direction of $\mathbb{B}_{\Phi}$, and the which-path degree of freedom of a two-position superposition is a two-level system, so on the framework's reading its state is an element of $\mathbb{B}_{\Psi}$ and the pair is an element of the joint object of *Composite Systems and the Multi-Qubit Extension*. A material-sector phase acting on an informational-sector state is a coupling across the sectors, and the *Empirical Status* article records under *A New Material–Informational Coupling* that the framework has no other one and no coupling constant. Gravity-induced entanglement is a candidate mechanism of exactly that kind, with $G$ and $\hbar$ supplying the scale — and it is offered here as an identification of where the standard computation sits in the algebra, not as a derivation of a new coupling.
+**What this does not do.** The potential is Newtonian and instantaneous and is inserted rather than derived from a field equation of the framework; the masses are static sources. No quantised gravitational field, no relativistic correction, no back-reaction and no self-gravity is included. Nothing here is a deviation from the standard computation, and the framework's phase is the standard one. What the section establishes is where the two halves of the computation sit: the potential energy is a material-sector scalar, on the $i e_t$ direction of $\mathbb{B}_{\Phi}$, and the which-path degree of freedom of a two-position superposition is a two-level system, so on the framework's reading its state is an element of $\mathbb{B}_{\Psi}$ and the pair is an element of the joint object of *Composite Systems and the Multi-Qubit Extension*. A material-sector phase acting on an informational-sector state is a coupling across the sectors, and the *Empirical Status* article records under *A New Material–Informational Coupling* that the framework has no other one and no coupling constant. Gravity-induced entanglement is a candidate mechanism of exactly that kind, with $G$ and $\frac{h}{2\pi}$ supplying the scale — and it is offered here as an identification of where the standard computation sits in the algebra, not as a derivation of a new coupling.
 
 ## What Is Frame-Dependent and What Is Not
 
@@ -311,7 +311,7 @@ The channel is $*$-unitary exactly when the Wigner rotation is branch-independen
 
 The invariant behind the computation is the spinor symplectic concurrence $\mathcal{C}(\tilde{Ξ}) = |\tilde{Ξ}^{\mathsf T}(\epsilon\otimes\epsilon)\tilde{Ξ}|$, which is exactly $SL(2,\mathbb{C})\otimes SL(2,\mathbb{C})$-invariant because $\tilde U_{\mathrm{lor}}{}^{\mathsf T}\epsilon\tilde U_{\mathrm{lor}} = \langle\tilde U_{\mathrm{lor}}\rangle_{\natural}\epsilon = \epsilon$. The frame dependence appears only in the normalized ratio, because a boost preserves the bilinear pairing but not the spinor norm; a sharp momentum has a single branch and the effect cancels. The entanglement of the full state, momentum included, is frame-independent, and no local operation changes the marginal statistics of the other particle; what is frame-dependent is the partial description that discards the momentum, and what produces it is the momentum dependence of the little-group rotor.
 
-The same channel is produced by a gravitational potential, and there the branch phase is the one a laboratory can supply. Two masses $m$ separated by $R$, each superposed over $d$, accumulate the entangling phase $\delta = (Gm^{2}t/\hbar)(2/R-1/(R+d)-1/(R-d)) = -2Gm^{2}td^{2}/(\hbar R(R^{2}-d^{2}))$, which is a mixed second difference of the potential and therefore vanishes for a constant potential and for a uniform field: only the tidal term survives. The branch phase $\varphi_{ij} = -V_{ij}t/\hbar$ is a $*$-unitary element of the material sector generated by $i e_t$, the two path qubits are informational-sector elements, and the concurrence of the resulting pure state is $\left|\sin(\delta/2)\right|$ — $0.105286$ after one second for $m = 10^{-14}$ kg, $R = 200\,\mu$m and $d = 100\,\mu$m, reaching $1$ at $14.9$ s. The framework contributes no deviation from this standard phase; it contributes the identification of the mechanism as a material-sector phase acting on an informational-sector state, which is the cross-sector coupling the *Empirical Status* article records as absent elsewhere.
+The same channel is produced by a gravitational potential, and there the branch phase is the one a laboratory can supply. Two masses $m$ separated by $R$, each superposed over $d$, accumulate the entangling phase $\delta = (Gm^{2}\frac{2\pi t}{h})(2/R-1/(R+d)-1/(R-d)) = -2Gm^{2}td^{2}/(\frac{h}{2\pi} R(R^{2}-d^{2}))$, which is a mixed second difference of the potential and therefore vanishes for a constant potential and for a uniform field: only the tidal term survives. The branch phase $\varphi_{ij} = -V_{ij}\frac{2\pi t}{h}$ is a $*$-unitary element of the material sector generated by $i e_t$, the two path qubits are informational-sector elements, and the concurrence of the resulting pure state is $\left|\sin(\delta/2)\right|$ — $0.105286$ after one second for $m = 10^{-14}$ kg, $R = 200\,\mu$m and $d = 100\,\mu$m, reaching $1$ at $14.9$ s. The framework contributes no deviation from this standard phase; it contributes the identification of the mechanism as a material-sector phase acting on an informational-sector state, which is the cross-sector coupling the *Empirical Status* article records as absent elsewhere.
 
 ## Summary of Notation
 
@@ -334,8 +334,8 @@ The same channel is produced by a gravitational potential, and there the branch 
 | $\mathcal{C}(\tilde{Ξ}) = \|\tilde{Ξ}^{\mathsf T}(\epsilon\otimes\epsilon)\tilde{Ξ}\|$ | Symplectic (unnormalized) concurrence |
 | $R$, $d$ | Separation of the two masses, superposition size along the joining line |
 | $V_{ij} = -Gm^{2}/\lvert x_{B,j}-x_{A,i}\rvert$ | Potential energy of branch $ij$, with $x_{A,i}$, $x_{B,j}$ the branch positions |
-| $\varphi_{ij} = -V_{ij}t/\hbar$ | Branch phase; the $*$-unitary element is $\cos\varphi_{ij}\,e_t+\sin\varphi_{ij}\,ie_t$ |
-| $\delta = \varphi_{00}+\varphi_{11}-\varphi_{01}-\varphi_{10}$ | Gravitational entangling phase, $= -2Gm^{2}td^{2}/\left(\hbar R\left(R^{2}-d^{2}\right)\right)$ |
+| $\varphi_{ij} = -V_{ij}\frac{2\pi t}{h}$ | Branch phase; the $*$-unitary element is $\cos\varphi_{ij}\,e_t+\sin\varphi_{ij}\,ie_t$ |
+| $\delta = \varphi_{00}+\varphi_{11}-\varphi_{01}-\varphi_{10}$ | Gravitational entangling phase, $= -2Gm^{2}td^{2}/\left(\frac{h}{2\pi} R\left(R^{2}-d^{2}\right)\right)$ |
 
 ## Further Reading
 

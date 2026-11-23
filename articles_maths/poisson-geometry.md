@@ -193,13 +193,13 @@ which satisfies $d_\pi^2 = 0$ because of the graded Jacobi identity and $[\pi,\p
 
 ## Deformation Quantisation
 
-**Definition.** Let $(M, \pi)$ be a Poisson manifold. A **star product** is an associative $\mathbb{R}[[\hbar]]$-bilinear product on $C^\infty(M)[[\hbar]]$ of the form
+**Definition.** Let $(M, \pi)$ be a Poisson manifold. A **star product** is an associative $\mathbb{R}[[h_{\mathrm{def}}]]$-bilinear product on $C^\infty(M)[[h_{\mathrm{def}}]]$ of the form
 
 $$
-f * g = fg + \hbar\,\{f,g\} + \sum_{r \geq 2}\hbar^{\,r}\, C_r(f, g),
+f * g = fg + h_{\mathrm{def}}\,\{f,g\} + \sum_{r \geq 2}h_{\mathrm{def}}^{\,r}\, C_r(f, g),
 $$
 
-where the $C_r$ are bidifferential operators and $\hbar$ is a formal parameter, with unit the constant function $1$. The deformation is **trivial** if it is isomorphic to the undeformed product by an $\mathbb{R}[[\hbar]]$-linear isomorphism of the form $\mathrm{id} + \hbar(\cdots)$.
+where the $C_r$ are bidifferential operators and $h_{\mathrm{def}}$ is a formal parameter, with unit the constant function $1$. The deformation is **trivial** if it is isomorphic to the undeformed product by an $\mathbb{R}[[h_{\mathrm{def}}]]$-linear isomorphism of the form $\mathrm{id} + h_{\mathrm{def}}(\cdots)$.
 
 **Theorem (Kontsevich).** Every Poisson manifold admits a star product; more precisely, the equivalence classes of star products are in bijection with the equivalence classes of Poisson structures under the action of formal diffeomorphisms, so that the formality of the little discs operad identifies the deformation of the commutative product with the Poisson structure itself.
 
@@ -236,7 +236,7 @@ A Poisson map preserves the bracket, a coisotropic submanifold is one whose vani
 | Poisson map $F$ | $\{f\circ F, g\circ F\} = \{f,g\}\circ F$ |
 | Coisotropic submanifold | Vanishing ideal closed under the bracket; $\pi^{\sharp}(TC^{\circ})\subseteq TC$ |
 | $d_\pi = [\pi,\cdot]$, $H^\bullet_\pi(M)$ | Poisson differential and Poisson cohomology |
-| $f * g = fg + \hbar\{f,g\} + \cdots$ | Star product; Kontsevich's deformation quantisation |
+| $f * g = fg + h_{\mathrm{def}}\{f,g\} + \cdots$ | Star product; Kontsevich's deformation quantisation |
 
 ## Further Reading
 

@@ -12,7 +12,7 @@ What the article still does. It states the action's standard form by name; it li
 
 ## Conventions
 
-The conventions are the parent's, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is a family $\tilde\Xi_\mu\in\mathbb{B}$ with $\mu=0,1,2,3$, each split into its two chiral parts; the gradient is $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$, the d'Alembertian $\Box_\Phi$; $k_m=mc/\hbar$; the sign vector of the frame is $\varepsilon=(1,-1,-1,-1)$; the fixed direction of the trace constraint is $\vec e_z$.
+The conventions are the parent's, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is a family $\tilde\Xi_\mu\in\mathbb{B}$ with $\mu=0,1,2,3$, each split into its two chiral parts; the gradient is $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$, the d'Alembertian $\Box_\Phi$; $k_m=\frac{2\pi mc}{h}$; the sign vector of the frame is $\varepsilon=(1,-1,-1,-1)$; the fixed direction of the trace constraint is $\vec e_z$.
 
 One symbol is used and not defined by this article. The literature's action is written with matrices that act on the spinor index. The parent's equation has no matrix, because the algebra's left and right multiplication supplies the action of the frame directly. Where this article names the standard action, it does so in the literature's notation and marks the matrices as unnamed, since their biquaternionic counterparts are the object the corpus has not built.
 
@@ -106,7 +106,7 @@ $$
 | $e_t=1,\ \vec e_\mu^{2}=-e_t$ | Basis and its squares |
 | $\tilde\Xi_\mu$ | Rarita–Schwinger field, four elements of $\mathbb{B}$ |
 | $\tilde\Xi_{\mu,R},\ \tilde\Xi_{\mu,L}$ | The two chiral parts of each component |
-| $k_m=mc/\hbar$ | Mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $\vec e_z$ | Fixed direction of the trace constraint |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the frame |
 | $\psi_\mu,\ \gamma_\mu,\ \gamma_{\mu\nu}$ | The literature's matrices, printed low and not adopted |

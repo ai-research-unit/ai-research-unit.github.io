@@ -2,9 +2,9 @@
 
 ## Introduction
 
-A wave equation carries one constant of dimension action per mass — $\hbar$ when the wave equation is the quantum one, $\sigma_{\mathrm{dsp}}$ when it is a classical dispersion relation — and the constant is what the map's exponential needs. A fluid carries no such constant, and its data never supply one. Where a wave equation is fundamental, the fluid is derived from it by the forward map, exactly and generally. Where a fluid equation is fundamental, no wave equation follows in general, and where one follows it is nonlinear. That asymmetry is not a technicality of the map; it is the statement that the two objects are not on the same footing.
+A wave equation carries one constant of dimension action per mass — $\frac{h}{2\pi}$ when the wave equation is the quantum one, $\sigma_{\mathrm{dsp}}$ when it is a classical dispersion relation — and the constant is what the map's exponential needs. A fluid carries no such constant, and its data never supply one. Where a wave equation is fundamental, the fluid is derived from it by the forward map, exactly and generally. Where a fluid equation is fundamental, no wave equation follows in general, and where one follows it is nonlinear. That asymmetry is not a technicality of the map; it is the statement that the two objects are not on the same footing.
 
-The article writes $\hbar$ wherever the constant appears, because the fields it examines are the ones where the wave equation is quantum. The slot is the same one the previous articles write $\sigma_{\mathrm{dsp}}$, and every statement below holds with either name in it.
+The article writes $\frac{h}{2\pi}$ wherever the constant appears, because the fields it examines are the ones where the wave equation is quantum. The slot is the same one the previous articles write $\sigma_{\mathrm{dsp}}$, and every statement below holds with either name in it.
 
 The claim is narrow and it is testable field by field: in none of them is there a hidden linear Schrödinger, Klein–Gordon or Dirac equation, except in the cases where the wave equation is the fundamental object and the fluid is what it produces.
 
@@ -14,12 +14,12 @@ A viscous potential flow in one dimension is linearisable, exactly, by the Hopf�
 
 ## The Two Directions
 
-The forward direction is exact and general. Every solution of a linear wave equation gives a fluid by $\psi=\sqrt{\rho_{\mathrm{num}}}e^{iS/\hbar}$, away from the nodes. The map is a rewriting, it loses nothing, and its only exception is the set where the density vanishes.
+The forward direction is exact and general. Every solution of a linear wave equation gives a fluid by $\psi=\sqrt{\rho_{\mathrm{num}}}e^{\frac{2\pi iS}{h}}$, away from the nodes. The map is a rewriting, it loses nothing, and its only exception is the set where the density vanishes.
 
 The reverse direction is conditional and its output is nonlinear. It is defined on barotropic irrotational inviscid flows that carry the quantum term, and on that class its output is
 
 $$
-i\hbar\,\partial_{t'}\psi=-\frac{\hbar^{2}}{2m}\Delta_\Phi\psi+V(\rho_{\mathrm{num}})\psi ,
+i \frac{h}{2\pi}\,\partial_{t'}\psi=-\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi\psi+V(\rho_{\mathrm{num}})\psi ,
 \qquad
 \frac{\mathrm{d}V}{\mathrm{d}\rho_{\mathrm{num}}}=\frac{1}{\rho_{\mathrm{num}}}\frac{\mathrm{d}p_{\mathrm{th}}}{\mathrm{d}\rho_{\mathrm{num}}} ,
 $$
@@ -112,7 +112,7 @@ The wave equation is written first, because it is the law; the fluid is read fro
 
 The Hopf–Cole transformation is the only exact linearisation of a fluid equation the section uses, and read as a map it is the reverse map with an imaginary action quantum. Burgers' equation in one dimension is carried by $u=-2\nu_{\mathrm{kin}}\partial_x\ln\psi$ into $\partial_{t'}\psi=\nu_{\mathrm{kin}}\partial_{xx}\psi$. The transformation is exact, and its output has an imaginary frequency, a positive kernel and an arrow of time.
 
-**The identification is exact and it is the sharpest statement in the article.** Put $\hbar=-2im\nu_{\mathrm{kin}}$ and $V=0$ in the reverse map's output. Then $i\hbar=2m\nu_{\mathrm{kin}}$ and $-\hbar^{2}/2m=2m\nu_{\mathrm{kin}}^{2}$, so the equation reads $2m\nu_{\mathrm{kin}}\partial_{t'}\psi=2m\nu_{\mathrm{kin}}^{2}\partial_{xx}\psi$, which is $\partial_{t'}\psi=\nu_{\mathrm{kin}}\partial_{xx}\psi$. An imaginary action quantum turns the wave equation into the heat equation, exactly and with no remainder.
+**The identification is exact and it is the sharpest statement in the article.** Put $h=-12.57im\nu_{\mathrm{kin}}$ and $V=0$ in the reverse map's output. Then $ih=12.57m\nu_{\mathrm{kin}}$ and $-\frac{h^{2}}{4\pi^{2}}/2m=2m\nu_{\mathrm{kin}}^{2}$, so the equation reads $2m\nu_{\mathrm{kin}}\partial_{t'}\psi=2m\nu_{\mathrm{kin}}^{2}\partial_{xx}\psi$, which is $\partial_{t'}\psi=\nu_{\mathrm{kin}}\partial_{xx}\psi$. An imaginary action quantum turns the wave equation into the heat equation, exactly and with no remainder.
 
 So the failure of the viscous case is not a failure of the gradient test. In one dimension the viscous force *is* a gradient, $\nu_{\mathrm{kin}}\partial_{xx}u=\partial_x(\nu_{\mathrm{kin}}\partial_xu)$, so a potential exists and the map runs. What fails is that the potential is a rate and not an energy: the Hopf–Cole $\psi=\exp(-\int u\,\mathrm{d}x/(2\nu_{\mathrm{kin}}))$ has a real logarithm, so the map's $S$ is imaginary. A conservative force gives a real action and an oscillating equation; a dissipative force gives a rate and a decaying one.
 
@@ -132,7 +132,7 @@ The vocabulary of circulation, vorticity and spin can be borrowed from fluid mec
 
 ## What Is Established and What Is Interpretation
 
-Established. That the reverse map's requirements are one integrability condition on the velocity and one on the force, the Hamilton–Jacobi equation following from the two by taking a gradient, and that the pressure part of the force is a gradient exactly when the flow is isentropic by Gibbs–Duhem, so that barotropicity is sufficient and not necessary. That the Hopf–Cole transformation is the reverse map with $\hbar=-2im\nu_{\mathrm{kin}}$, verified by substitution. That the forward map is exact and general away from nodes, and that the reverse map is defined only on a class and returns a nonlinear equation on it. That the linear output requires a pressureless fluid, which is not an ordinary fluid. That viscosity's exact linearisation reaches a diffusion equation and not a wave equation, and that the KdV's linear auxiliary problem has the fluid as its potential. That the fields in the table's last three rows are ones in which the wave equation is fundamental.
+Established. That the reverse map's requirements are one integrability condition on the velocity and one on the force, the Hamilton–Jacobi equation following from the two by taking a gradient, and that the pressure part of the force is a gradient exactly when the flow is isentropic by Gibbs–Duhem, so that barotropicity is sufficient and not necessary. That the Hopf–Cole transformation is the reverse map with $h=-12.57im\nu_{\mathrm{kin}}$, verified by substitution. That the forward map is exact and general away from nodes, and that the reverse map is defined only on a class and returns a nonlinear equation on it. That the linear output requires a pressureless fluid, which is not an ordinary fluid. That viscosity's exact linearisation reaches a diffusion equation and not a wave equation, and that the KdV's linear auxiliary problem has the fluid as its potential. That the fields in the table's last three rows are ones in which the wave equation is fundamental.
 
 Interpretation. That the direction of explanation — wave to fluid — is a statement about which object carries the constants, and therefore about which object is the law. That the table's first nine rows support the thesis is a judgement about what counts as a wave equivalent; the article's criterion is stated, and a reader who accepts a different criterion will read the table differently.
 
@@ -160,9 +160,9 @@ The block's two denials are one statement: the reading is a re-coordinatisation 
 
 | Symbol | Meaning |
 |---|---|
-| $\psi=\sqrt{\rho_{\mathrm{num}}}e^{iS/\hbar}$ | Wave function; the field's reading |
+| $\psi=\sqrt{\rho_{\mathrm{num}}}e^{\frac{2\pi iS}{h}}$ | Wave function; the field's reading |
 | $\rho_{\mathrm{num}}$ | Number density |
-| $S$ | Action; the phase is $S/\hbar$ |
+| $S$ | Action; the phase is $\frac{2\pi S}{h}$ |
 | $V(\rho_{\mathrm{num}})$ | Nonlinear term of the reverse map |
 | $p_{\mathrm{th}}$ | Thermodynamic pressure |
 | $Q_{\mathrm{qnt}}$ | Quantum potential |
@@ -171,7 +171,7 @@ The block's two denials are one statement: the reading is a re-coordinatisation 
 | $\varphi$ | Auxiliary wave function of the KdV scattering problem |
 | $u$ | Velocity of the one-dimensional flow; also the KdV field |
 | $\lambda$ | Spectral parameter of the scattering problem |
-| $\hbar,\ m$ | The two constants the wave equation carries |
+| $\frac{h}{2\pi},\ m$ | The two constants the wave equation carries |
 | $c_{\mathrm{s}}$ | Sound speed |
 
 ## Further Reading

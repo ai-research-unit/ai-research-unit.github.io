@@ -6,7 +6,7 @@ The parent's Dirac action is already first order in every velocity, so there is 
 The parent's action, and the fact that decides the whole article.
 
 $$
-S=\int\mathrm{d}t'\;\hbar c\,\Bigl\{\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\Bigr)-\varrho^{2}k_m\,\mathcal{V}\Bigr\},
+S=\int\mathrm{d}t'\;\frac{h}{2\pi} c\,\Bigl\{\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\Bigr)-\varrho^{2}k_m\,\mathcal{V}\Bigr\},
 $$
 
 with $\mathcal{V}$ a function of the boost, of the rotor and of the fixed direction, and with no dependence on $\varrho$ or on $\theta_{\mathrm{pha}}$. **The scale enters as $\varrho^{2}$ in both terms and never with its own derivative.** There is no $(\partial \varrho)^{2}$ here.
@@ -25,25 +25,25 @@ The first-order Lagrangian form of the Dirac equation, its primary constraints, 
 
 The word exists where $N(\tilde\Xi)\neq0$, and the action is written for the central class's complement — the eight parameters with the frame. The limit is defined on that domain.
 ## Conventions
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $S=\hbar\theta_{\mathrm{pha}}$; $k_m=mc/\hbar$; $\vec\omega_{\mathrm r}$ the rotor's body angular velocity; $\hat n_{\mathrm{rot}}$ its axis; $\mathcal V$ the mass function of the frame; $\epsilon=1/(k_{\Phi}L)$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$; $k_m=\frac{2\pi mc}{h}$; $\vec\omega_{\mathrm r}$ the rotor's body angular velocity; $\hat n_{\mathrm{rot}}$ its axis; $\mathcal V$ the mass function of the frame; $\epsilon=1/(k_{\Phi}L)$.
 ## The Action in the Non-Quantum Limit: The One-Form
 
 $$
-S=\int\mathrm{d}t'\;\Bigl\{\hbar c\,\varrho^{2}\Bigl[\cosh\theta_{\mathrm{rpd}}\,\mathrm{d}\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\bigl(\tilde u_{\mathrm r}^{-1}\mathrm{d}\tilde u_{\mathrm r}\bigr)\Bigr]-U\Bigr\},
+S=\int\mathrm{d}t'\;\Bigl\{\frac{h}{2\pi} c\,\varrho^{2}\Bigl[\cosh\theta_{\mathrm{rpd}}\,\mathrm{d}\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\bigl(\tilde u_{\mathrm r}^{-1}\mathrm{d}\tilde u_{\mathrm r}\bigr)\Bigr]-U\Bigr\},
 \qquad
-U=\hbar c\,k_m\,\varrho^{2}\,\mathcal{V}.
+U=\frac{h}{2\pi} c\,k_m\,\varrho^{2}\,\mathcal{V}.
 $$
 
 The bracket is a one-form and it is the phase's momentum plus the spin's. Its first term is the phase rate weighted by $\cosh\theta_{\mathrm{rpd}}=\gamma$; its second is the rotor's body angular velocity weighted by $\sinh\theta_{\mathrm{rpd}}=\gamma\beta$. The two weights are the boost's two hyperbolic functions, so the one-form is the four-velocity contracted with the two rates.
 
-The element action carries $\hbar c/2$ and the display carries $\hbar c$; the factor cancels from every Euler–Lagrange equation and is chosen so that the phase momentum comes out $\hbar c\rho_{\mathrm{num}}\gamma$, the temporal component of the current.
+The element action carries $\frac{h}{2\pi} c/2$ and the display carries $\frac{h}{2\pi} c$; the factor cancels from every Euler–Lagrange equation and is chosen so that the phase momentum comes out $\frac{h}{2\pi} c\rho_{\mathrm{num}}\gamma$, the temporal component of the current.
 
 $p_x=A_x(q)$, so
 
 $$
-p_{\theta_{\mathrm{pha}}}=\hbar c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}},
+p_{\theta_{\mathrm{pha}}}=\frac{h}{2\pi} c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}},
 \qquad
-p_{\tilde u_{\mathrm r}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}},
+p_{\tilde u_{\mathrm r}}=-\frac{h}{2\pi} c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}},
 \qquad
 p_{\varrho}=p_{\theta_{\mathrm{rpd}}}=p_{\vec u_{\mathrm b}}=0 .
 $$
@@ -109,7 +109,7 @@ The mass term is inside $U$, so its variation contributes to $\partial_yU$ and t
 
 ## The Constraints the Action Imposes: One Constraint, Because One Rate Is Missing
 
-The one-form $\hbar c\,\varrho^{2}\bigl[\cosh\theta_{\mathrm{rpd}}\,\mathrm{d}\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}}\cdot(\tilde u_{\mathrm r}^{-1}\mathrm{d}\tilde u_{\mathrm r})\bigr]$ is linear in the rates, and the eighth parameter appears only through $U$, which carries none. Its conjugate momentum therefore vanishes identically on the whole of the chart's phase space.
+The one-form $\frac{h}{2\pi} c\,\varrho^{2}\bigl[\cosh\theta_{\mathrm{rpd}}\,\mathrm{d}\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}}\cdot(\tilde u_{\mathrm r}^{-1}\mathrm{d}\tilde u_{\mathrm r})\bigr]$ is linear in the rates, and the eighth parameter appears only through $U$, which carries none. Its conjugate momentum therefore vanishes identically on the whole of the chart's phase space.
 
 A momentum that vanishes everywhere is a primary constraint, and it is the whole constraint content here. The truncation creates it rather than inheriting it: the parent's first-order action carries rates for all eight and its constraints are the pair the first-order form imposes, and deleting the frame's gradient terms removes a velocity. **A removed velocity is a constraint**, not a lost equation.
 
@@ -132,11 +132,11 @@ The direction is the spin axis's own frame direction, so the mass term and the s
 
 The parent says that reading the pair's letters as values gives no non-zero solution, and that the value-consistent display carries the direction $i\vec v$. The action says the same from the other side: a mass term that couples the two chirality parts vanishes identically unless the direction is there. Two statements, one fact.
 ## The Noether Currents: The Density, the Spin and the Energy
-The phase rotation is a symmetry, and its conserved quantity is the momentum that the one-form carries, $p_{\theta_{\mathrm{pha}}}=\hbar c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}$. Division by $\hbar c$ gives the density $\rho_{\mathrm{num}}$, positive, and the current is $\rho_{\mathrm{num}}$ times the transport velocity.
+The phase rotation is a symmetry, and its conserved quantity is the momentum that the one-form carries, $p_{\theta_{\mathrm{pha}}}=\frac{h}{2\pi} c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}$. Division by $\frac{h}{2\pi} c$ gives the density $\rho_{\mathrm{num}}$, positive, and the current is $\rho_{\mathrm{num}}$ times the transport velocity.
 
-The rotor's momentum is $-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}}$, a vector along the boost axis weighted by the rapidity. Its conservation is the statement that the spin direction is transported without precession in the free theory, and the mass term is what couples the spin direction to the momentum, so the free conservation is exact and the coupled one is not.
+The rotor's momentum is $-\frac{h}{2\pi} c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}}$, a vector along the boost axis weighted by the rapidity. Its conservation is the statement that the spin direction is transported without precession in the free theory, and the mass term is what couples the spin direction to the momentum, so the free conservation is exact and the coupled one is not.
 
-The Legendre transform of a first-order action is $E=U$, because $p\dot q=A\dot q$ cancels the kinetic term. So the energy of a configuration is the mass term evaluated on it, $U=\hbar c\,k_m\varrho^{2}\mathcal V$, and the equation of motion is the statement that the flow is tangent to the level surfaces of $U$ in the symplectic form $\Omega$. The energy carries the mass and the density does not, which is the limit's version of the split the element article makes.
+The Legendre transform of a first-order action is $E=U$, because $p\dot q=A\dot q$ cancels the kinetic term. So the energy of a configuration is the mass term evaluated on it, $U=\frac{h}{2\pi} c\,k_m\varrho^{2}\mathcal V$, and the equation of motion is the statement that the flow is tangent to the level surfaces of $U$ in the symplectic form $\Omega$. The energy carries the mass and the density does not, which is the limit's version of the split the element article makes.
 ## What the Principle Adds and What It Relabels: By the Variational Route
 
 *The order-zero conditions are momenta and not assumptions.* The mass shell and the polarisation are the vanishing of $p_r$, $p_{\theta_{\mathrm{rpd}}}$ and $p_{\vec u_{\mathrm b}}$. A reader who wants to know why the frame is algebraic at leading order finds the answer in the Lagrangian's linearity, not in an argument about the field's slow variation.
@@ -166,7 +166,7 @@ The price is exact: with no discarded term there is no accuracy estimate, and wi
 | $\theta_{\mathrm{rpd}}$, $\tilde u_{\mathrm b}$ | The boost's rapidity and axis |
 | $\vec\omega_{\mathrm r}$, $\hat n_{\mathrm{rot}}$ | The rotor's body angular velocity and axis |
 | $A_x(q)$ | The one-form whose components are the eight momenta |
-| $U=\hbar ck_m \varrho^{2}\mathcal V$ | The mass potential |
+| $U=\frac{h}{2\pi} ck_m \varrho^{2}\mathcal V$ | The mass potential |
 | $\mathcal V$ | The mass function of the frame, independent of $\varrho$ and $\theta_{\mathrm{pha}}$ |
 | $i\vec v$ | The fixed direction, transverse to $\vec e_z$, that the mass term requires |
 | $\Omega=\mathrm{d}A$ | The closed, degenerate two-form |
@@ -178,7 +178,7 @@ The price is exact: with no discarded term there is no accuracy estimate, and wi
 - [The Lagrangian and the Klein–Gordon Equation in the Non-Quantum Limit](the-lagrangian-and-the-klein-gordon-equation-in-the-non-quantum-limit.html), the second-order companion, where a term is deleted and the accuracy can be sized.
 - [The Non-Quantum Limit of the Biquaternion Model](the-non-quantum-limit-of-the-biquaternion-model.html), for the parameter and the difference between the limit and the approximation.
 ## Verification
-Every occurrence of a velocity in the Lagrangian is linear: $\dot\theta_{\mathrm{pha}}$ enters once with the coefficient $\hbar c \varrho^{2}\cosh\theta_{\mathrm{rpd}}$, and $\vec\omega_{\mathrm r}$ enters once through $\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}$ with the coefficient $-\hbar c \varrho^{2}\sinh\theta_{\mathrm{rpd}}$. **No velocity is squared and none appears twice**, so the Hessian vanishes and the momenta are the one-form's components.
+Every occurrence of a velocity in the Lagrangian is linear: $\dot\theta_{\mathrm{pha}}$ enters once with the coefficient $\frac{h}{2\pi} c \varrho^{2}\cosh\theta_{\mathrm{rpd}}$, and $\vec\omega_{\mathrm r}$ enters once through $\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}$ with the coefficient $-\frac{h}{2\pi} c \varrho^{2}\sinh\theta_{\mathrm{rpd}}$. **No velocity is squared and none appears twice**, so the Hessian vanishes and the momenta are the one-form's components.
 
 The Lagrangian contains no $\dot \varrho$, no $\dot\theta_{\mathrm{rpd}}$ and no rate of the boost's axis, so the three conjugate momenta vanish identically. The check is an inspection and it is exact.
 

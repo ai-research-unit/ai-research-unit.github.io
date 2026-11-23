@@ -25,17 +25,17 @@ The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=
 The action and the weight. The companion's action is
 
 $$
-S[\tilde\Xi]=\frac{\hbar}{2}\int d^{4}r\;\Bigl[\mathrm{Sc}\bigl(\partial_{r'_t}\tilde\Xi^{*}\,\partial_{r'_t}\tilde\Xi\bigr)-\sum_{\eta=1}^{3}\mathrm{Sc}\bigl(\partial_{\eta}\tilde\Xi^{*}\,\partial_{\eta}\tilde\Xi\bigr)-k_m^{2}\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)\Bigr],
+S[\tilde\Xi]=\frac{h}{4\pi}\int d^{4}r\;\Bigl[\mathrm{Sc}\bigl(\partial_{r'_t}\tilde\Xi^{*}\,\partial_{r'_t}\tilde\Xi\bigr)-\sum_{\eta=1}^{3}\mathrm{Sc}\bigl(\partial_{\eta}\tilde\Xi^{*}\,\partial_{\eta}\tilde\Xi\bigr)-k_m^{2}\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)\Bigr],
 $$
 
-with the metric of the material coordinate written out: the temporal slot enters with $+$ and the three spatial ones with $-$, which is $\partial/\partial R_t=-i\,\partial/\partial r'_t$ in explicit form. This is the free companion's action with the same convention; the companion's $\frac12\int\mathrm{Sc}[\tilde\Xi^{*}(\Box_\Phi-k_m^{2})\tilde\Xi]$ differs from it by a boundary term, and the polar bracket below follows from this display through the identity $\mathrm{Sc}(\partial_\mu\tilde\Xi^{*}\partial_\mu\tilde\Xi)=(\partial_\mu \varrho)^{2}+\varrho^{2}(\partial_\mu\theta_{\mathrm{pha}})^{2}$. The weight of one configuration is $\exp(iS/\hbar)$, central and $*$-unitary. On a central field $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}e_t$ the weight becomes
+with the metric of the material coordinate written out: the temporal slot enters with $+$ and the three spatial ones with $-$, which is $\partial/\partial R_t=-i\,\partial/\partial r'_t$ in explicit form. This is the free companion's action with the same convention; the companion's $\frac12\int\mathrm{Sc}[\tilde\Xi^{*}(\Box_\Phi-k_m^{2})\tilde\Xi]$ differs from it by a boundary term, and the polar bracket below follows from this display through the identity $\mathrm{Sc}(\partial_\mu\tilde\Xi^{*}\partial_\mu\tilde\Xi)=(\partial_\mu \varrho)^{2}+\varrho^{2}(\partial_\mu\theta_{\mathrm{pha}})^{2}$. The weight of one configuration is $\exp(\frac{2\pi iS}{h})$, central and $*$-unitary. On a central field $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}e_t$ the weight becomes
 
 $$
-\frac{i}{\hbar}S=\frac{i}{2}\int d^{4}r\;\Bigl[(\partial_{r'_t}\varrho)^{2}-\lvert\nabla \varrho\rvert^{2}
+\frac{2\pi i}{h}S=\frac{i}{2}\int d^{4}r\;\Bigl[(\partial_{r'_t}\varrho)^{2}-\lvert\nabla \varrho\rvert^{2}
 +\varrho^{2}\Bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr)-k_m^{2}\varrho^{2}\Bigr].
 $$
 
-The factor two, stated once. The bracket is the Madelung functional of the variational companion, *The Lagrangian and the Klein–Gordon Equation in Polar Variables*, §*The action, assembled*, which writes it without the $\hbar$ and without the $\tfrac12$. The companion's action is $\hbar$ times the half of it, so the weight is $\exp(\tfrac{i}{2}S_{\mathrm{Madelung}})$. The stationarity is unaffected by the constant, and every equation below is the variational companion's.
+The factor two, stated once. The bracket is the Madelung functional of the variational companion, *The Lagrangian and the Klein–Gordon Equation in Polar Variables*, §*The action, assembled*, which writes it without the $\frac{h}{2\pi}$ and without the $\tfrac12$. The companion's action is $\frac{h}{2\pi}$ times the half of it, so the weight is $\exp(\tfrac{i}{2}S_{\mathrm{Madelung}})$. The stationarity is unaffected by the constant, and every equation below is the variational companion's.
 
 ## The Word on a Central Field
 
@@ -77,7 +77,7 @@ $$
 \Box_\Phi \varrho=\varrho\Bigl[k_m^{2}-\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\bigr)^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr],
 $$
 
-which is the amplitude equation of the polar equation article, §*The amplitude equation*, rearranged. Read through $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ and multiplied by $\hbar^{2}$, it is $(\partial_{r'_t}S_{\tilde\Xi})^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\Box_\Phi \varrho/\varrho$, the mass shell shifted by the quantum potential.
+which is the amplitude equation of the polar equation article, §*The amplitude equation*, rearranged. Read through $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ and multiplied by $\frac{h^{2}}{4\pi^{2}}$, it is $(\partial_{r'_t}S_{\tilde\Xi})^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/\varrho$, the mass shell shifted by the quantum potential.
 
 Stationarity in the angle. Varying $\theta_{\mathrm{pha}}$ gives
 
@@ -203,18 +203,18 @@ The placement table is the reading. The scale sits in the measure and in the exp
 |---|---|
 | $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; on a central field the last two factors are $e_t$ and $\pm e_t$ |
 | $\varrho>0$ | The scale; the modulus of the coefficient |
-| $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The angle; the action over $\hbar$, reduced into the range |
+| $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The angle; the action over $\frac{h}{2\pi}$, reduced into the range |
 | $\varepsilon=\pm1$ | The branch sign of the modulus; the chart's other half turn |
 | $\mathcal{D}\tilde\Xi=\prod_x \varrho\,\mathrm{d}\varrho\,\mathrm{d}\theta_{\mathrm{pha}}$ | The polar measure; its Jacobian is the scale at each point |
 | $S[\tilde\Xi]$ | The companion's action; central, real, quadratic |
-| $\exp(iS/\hbar)$ | The weight; central and $*$-unitary |
+| $\exp(\frac{2\pi iS}{h})$ | The weight; central and $*$-unitary |
 | $g_{ab}$ | The parameter metric of the polar variational companion; $g_{r\varrho}=1$, $g_{\theta\theta}=\varrho^{2}$ on the centre |
 | $S_{\mathrm{Madelung}}$ | The variational companion's polar action; the weight is $\exp(\tfrac{i}{2}S_{\mathrm{Madelung}})$ |
 | $\Box_\Phi \varrho=\varrho\bigl[k_m^{2}-(\partial_{r'_t}\theta_{\mathrm{pha}})^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\bigr]$ | The amplitude equation; the scale's saddle |
 | $\sum_\mu\partial_\mu(\rho_{\mathrm{num}}\partial_\mu\theta_{\mathrm{pha}})=0$ | The transport equation; the angle's saddle |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | The density |
 | $S_{E}$ | The Euclidean bracket; four squares |
-| $k_m=mc/\hbar$ | The mass parameter |
+| $k_m=\frac{2\pi mc}{h}$ | The mass parameter |
 
 ## Further Reading
 

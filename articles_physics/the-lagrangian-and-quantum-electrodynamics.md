@@ -13,10 +13,10 @@ Why write an article that stops. Because the absence is the interesting fact, an
 The conventions are the two parents', and they agree. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $\mathbb{B}_\Phi$ is the anti-Hermitian sector of the connection, $\mathbb{B}_\Psi$ the Hermitian sector of the potentials. The covariant derivative is
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,q}{\hbar}\tilde A_\Phi ,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,q}{h}\tilde A_\Phi ,
 $$
 
-with $q$ the electron's charge, $q=-e<0$ in the corpus's convention, and with $\tilde A_\Phi$ central so that the derivative multiplies from either side without a choice. The field strength is $\tilde F=\frac{1}{\sqrt{\mu}}\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$ and the field term is $\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$, exactly as in the Maxwell article. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ for the matter and $\mathrm{Re}\,\mathrm{Sc}(\cdot\,\cdot)$ for the field; the measure is $\mathrm{d}^{4}r$; $k_m=mc/\hbar$.
+with $q$ the electron's charge, $q=-e<0$ in the corpus's convention, and with $\tilde A_\Phi$ central so that the derivative multiplies from either side without a choice. The field strength is $\tilde F=\frac{1}{\sqrt{\mu}}\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$ and the field term is $\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$, exactly as in the Maxwell article. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ for the matter and $\mathrm{Re}\,\mathrm{Sc}(\cdot\,\cdot)$ for the field; the measure is $\mathrm{d}^{4}r$; $k_m=\frac{2\pi mc}{h}$.
 
 ## The Action in Element Form
 
@@ -32,7 +32,7 @@ $$
 
 with $\vec v$ the fixed spin direction that the mass bilinear needs and that the Dirac companion derives, and with the first two terms the Dirac kinetic term split into its two parts.
 
-Why this is the coupling and not a choice. Replace the phase of the field by a local one, $\tilde\Xi_{R,L}\mapsto e^{i\Lambda}\tilde\Xi_{R,L}$. The kinetic terms shift by a term in $\partial\Lambda$, and the shift is cancelled exactly by $\tilde A_\Phi\mapsto\tilde A_\Phi-\frac{\hbar}{q}\partial\Lambda$. No other placement of the connection cancels it: a coupling outside the derivative would leave a term in $\partial\Lambda$ that no shift of $\tilde A_\Phi$ can absorb. So minimal coupling is the unique local choice, and the constant $q$ is the charge that appears in both the shift and the current.
+Why this is the coupling and not a choice. Replace the phase of the field by a local one, $\tilde\Xi_{R,L}\mapsto e^{i\Lambda}\tilde\Xi_{R,L}$. The kinetic terms shift by a term in $\partial\Lambda$, and the shift is cancelled exactly by $\tilde A_\Phi\mapsto\tilde A_\Phi-\frac{h}{2\pi q}\partial\Lambda$. No other placement of the connection cancels it: a coupling outside the derivative would leave a term in $\partial\Lambda$ that no shift of $\tilde A_\Phi$ can absorb. So minimal coupling is the unique local choice, and the constant $q$ is the charge that appears in both the shift and the current.
 
 Why the field term is the Maxwell one. Because the photon is the Maxwell field: the same $\tilde F$, the same normalisation $\sqrt{\mu}$, the same sign, fixed in the Proca companion. QED adds no term to the field's action; it adds a source to its equation.
 
@@ -76,7 +76,7 @@ and it holds whether or not the equations are solved. That is the precise sense 
 
 The temporal slot's equation is a Gauss law. The four equations of the connection come from the four slots, and the temporal one carries no second time derivative of $\tilde A_{\Phi,t}$: the field strength's temporal row is a spatial gradient, so the equation is a relation among the data at one instant rather than a rule for advancing them. Its divergence reproduces the identity above, so a configuration that satisfies the relation once satisfies it always. **The action does not fix $\tilde A_{\Phi,t}$**; it requires the data to be consistent with the charge already present.
 
-The constraint is first class, and the count of degrees follows from that. The density is invariant under the local shift $\tilde A_\Phi\mapsto\tilde A_\Phi-\frac{\hbar}{q}\partial\Lambda$, so the Gauss law generates that shift instead of restricting a physical variable, and a first-class constraint removes two degrees of freedom. Four slots minus two leaves the two polarisations of the field. Nothing is fixed here and no ghost is introduced: fixing needs a gauge condition, which is [the $R_\xi$ article](gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html)'s subject.
+The constraint is first class, and the count of degrees follows from that. The density is invariant under the local shift $\tilde A_\Phi\mapsto\tilde A_\Phi-\frac{h}{2\pi q}\partial\Lambda$, so the Gauss law generates that shift instead of restricting a physical variable, and a first-class constraint removes two degrees of freedom. Four slots minus two leaves the two polarisations of the field. Nothing is fixed here and no ghost is introduced: fixing needs a gauge condition, which is [the $R_\xi$ article](gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html)'s subject.
 
 What the section does not claim. It does not claim the constraint determines the potential, and it does not claim the matter is unconstrained. The matter equations carry the connection, the connection's equation carries the matter's current, and the Gauss law is the single relation in which the two are tied at each instant.
 
@@ -92,7 +92,7 @@ J^{t}=q\,\rho_{\mathrm{chg}},
 \rho_{\mathrm{chg}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}} ,
 $$
 
-and the charge $Q=\int\mathrm{d}^{3}r\,J^{t}$. The same $q$ appears in the covariant derivative $\partial+\frac{iq}{\hbar}A$ and in the gauge shift $A\mapsto A-\frac{\hbar}{q}\partial\Lambda$. Three appearances, one symbol: that coincidence is what "one constant" means, and it is checkable by reading the three displays.
+and the charge $Q=\int\mathrm{d}^{3}r\,J^{t}$. The same $q$ appears in the covariant derivative $\partial+\frac{2\pi iq}{h}A$ and in the gauge shift $A\mapsto A-\frac{h}{2\pi q}\partial\Lambda$. Three appearances, one symbol: that coincidence is what "one constant" means, and it is checkable by reading the three displays.
 
 Why the current is the source. The connection multiplies the current in the action, so the connection's variation returns the current; the matter equation's phase symmetry conserves the same bilinear. That is the classical statement of what a quantised theory would call the Ward identity's ancestor: the source of the field is the Noether current of the symmetry that the field gauges.
 
@@ -132,13 +132,13 @@ $$
 | $e_t=1,\ \vec e_\mu^{2}=-e_t$ | Basis and its squares |
 | $\mathbb{B}_\Phi,\ \mathbb{B}_\Psi$ | Anti-Hermitian and Hermitian sectors |
 | $\tilde\Xi_R,\ \tilde\Xi_L$ | The two chiral parts of the Dirac field |
-| $\tilde\nabla_{\mathrm{gco},\Phi}$ | Covariant derivative, $\tilde\nabla_\Phi+\frac{iq}{\hbar}\tilde A_\Phi$ |
+| $\tilde\nabla_{\mathrm{gco},\Phi}$ | Covariant derivative, $\tilde\nabla_\Phi+\frac{2\pi iq}{h}\tilde A_\Phi$ |
 | $q$ | Charge of the field; $q=-e$ for the electron |
 | $\tilde A_\Phi,\ \tilde F$ | Connection and field strength |
 | $\rho_{\mathrm{chg}}$ | Charge density, $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ |
 | $J_{\mu},\ J_{t},\ \vec J$ | Vector current and its components |
 | $\vec v$ | Fixed spin direction of the mass bilinear |
-| $k_m=mc/\hbar$ | Mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $S,\ \mathcal{L}$ | Action and Lagrangian density |
 
 ## Further Reading

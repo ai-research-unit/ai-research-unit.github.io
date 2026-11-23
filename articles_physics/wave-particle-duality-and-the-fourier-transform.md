@@ -6,7 +6,7 @@ The paradox is a change of basis mistaken for a change of object. A quantum obje
 
 This article is the general statement, and that is why it sits in the framework section and not inside a quantum one. It contains no result about any particular particle. It states the property that the particle articles use, and it says where in the algebra the property comes from. It is filed above both quantum sections because its two cleanest instances sit on either side of the split: the Schrödinger equation is non-relativistic and the Klein–Gordon equation is not, and the transform treats them alike.
 
-What is standard. The position–momentum Fourier pair, the de Broglie identification $p=\hbar k_{\Phi}$, the uncertainty relation as a bandwidth theorem, the plane wave and the delta function as the two extremes, and the diagonalisation of the derivative by the transform are textbook material and are flagged as such throughout. They are given in *Derivatives, Fields and Transforms*, which owns the transform and its symbol, and they are not re-derived here.
+What is standard. The position–momentum Fourier pair, the de Broglie identification $p=\frac{h}{2\pi} k_{\Phi}$, the uncertainty relation as a bandwidth theorem, the plane wave and the delta function as the two extremes, and the diagonalisation of the derivative by the transform are textbook material and are flagged as such throughout. They are given in *Derivatives, Fields and Transforms*, which owns the transform and its symbol, and they are not re-derived here.
 
 What is the algebra's. The textbook has two quadratic structures as well — the inner product on Hilbert space and the dispersion relation on momentum space. In the textbook the two live on different spaces and are related by Plancherel, which is the statement that the inner product of two states equals the inner product of their transforms; the textbook compares two spaces and never presents the inner product and the dispersion relation as two forms on one object. Here it does: both are defined on every element of $\mathbb{B}$, and both can be evaluated on the same element. That is what makes the comparison possible, and it is not idle: the first is positive definite on the state module while the second vanishes there identically, so the two arms cannot rest on one form. **That distinctness, on a single algebra, is the structural content the corpus adds**, and it is what makes the duality two readings of two forms rather than two readings of one.
 
@@ -71,7 +71,7 @@ $$
 and the current is the antisymmetric bilinear carrying one gradient,
 
 $$
-\vec J=\frac{\hbar}{2\,i\,m}\,2\,\mathrm{Sc}\!\left(\tilde\Xi^{\dagger}\vec\nabla_\Phi\tilde\Xi-\left(\vec\nabla_\Phi\tilde\Xi\right)^{\dagger}\tilde\Xi\right).
+\vec J=\frac{h}{4\pi \,i\,m}\,2\,\mathrm{Sc}\!\left(\tilde\Xi^{\dagger}\vec\nabla_\Phi\tilde\Xi-\left(\vec\nabla_\Phi\tilde\Xi\right)^{\dagger}\tilde\Xi\right).
 $$
 
 The pair satisfies
@@ -90,7 +90,7 @@ $$
 \rho=\frac{i}{2\,k_{m}}\left(\tilde\Xi^{*}\partial_{r'_t}\tilde\Xi-\tilde\Xi\,\partial_{r'_t}\tilde\Xi^{*}\right),
 $$
 
-and it is not positive definite: the positive- and negative-frequency branches carry $\pm\frac{\hbar\,\omega}{m\,c^{2}}\lvert N\rvert^{2}$.
+and it is not positive definite: the positive- and negative-frequency branches carry $\pm\frac{h\nu}{m\,c^{2}}\lvert N\rvert^{2}$.
 
 
 That equation is the particle statement. It says that a number is conserved: whatever leaves one region enters the next, and none is created. The number is the count of the thing the field describes, and the count is what a detector registers. Nothing in the equation refers to a wavelength, a phase or an interference pattern. The density is Hermitian and lies in $\mathbb{B}_{\Psi}$; the current is a real spatial vector and lies in $\mathbb{B}_{\Phi}$.
@@ -175,24 +175,24 @@ Numerical check, on periodic data so that the spectral derivatives are exact. On
 One substitution turns the quantum equation into the classical relation. In the corpus's form the equation is
 
 $$
-i\,\hbar\,c\partial_{r'_t}\tilde\Xi=\tilde H_{\Psi}\tilde\Xi ,
+i\,\frac{h}{2\pi}\,c\partial_{r'_t}\tilde\Xi=\tilde H_{\Psi}\tilde\Xi ,
 $$
 
-which with $r'_t=c\,t$ and $\hbar=m\,c/k_{m}$ reads $i\hbar\,\partial_{t}\psi=H\psi$. For the scalar case with a constant potential,
+which with $r'_t=c\,t$ and $\frac{h}{2\pi}=m\,c/k_{m}$ reads $i \frac{h}{2\pi}\,\partial_{t}\psi=H\psi$. For the scalar case with a constant potential,
 
 $$
-i\hbar\,\partial_{t}\psi=-\frac{\hbar^{2}}{2m}\vec\nabla_\Phi^{2}\psi+V\psi
+i \frac{h}{2\pi}\,\partial_{t}\psi=-\frac{h^{2}}{8\pi^{2}m}\vec\nabla_\Phi^{2}\psi+V\psi
 \quad\longmapsto\quad
-\hbar\,\omega=\frac{\hbar^{2}k^{2}}{2m}+V .
+ h\nu=\frac{h^{2}k^{2}}{8\pi^{2}m}+V .
 $$
 
-Divide by $\hbar$ and the quantum has disappeared from the equation. What is left is
+Divide by $\frac{h}{2\pi}$ and the quantum has disappeared from the equation. What is left is
 
 $$
 E=\frac{p^{2}}{2m}+V ,
 $$
 
-the classical energy–momentum relation, with $E=\hbar\omega$ and $p=\hbar k_{\Phi}$. One point of bookkeeping, because the corpus counts energy from a different zero: $\omega$ here is the non-relativistic frequency, measured from the rest energy. Written against $k_{t}^{\prime}=E/(\hbar c)$, which includes the rest energy, the same symbol reads
+the classical energy–momentum relation, with $E=h\nu$ and $p=\frac{h}{2\pi} k_{\Phi}$. One point of bookkeeping, because the corpus counts energy from a different zero: $\omega$ here is the non-relativistic frequency, measured from the rest energy. Written against $k_{t}^{\prime}=\frac{2\pi E}{h\,c}$, which includes the rest energy, the same symbol reads
 
 $$
 k_{t}^{\prime}-k_{m}-\frac{k_{\Phi}^{2}}{2k_{m}}=0
@@ -224,7 +224,7 @@ $$
 
 and that is the whole of the dispersion theory of the free field. Nothing is expanded, nothing is truncated, and no limit is taken: the hyperbola is the level set, exactly, at every value of the wave number.
 
-Putting $E$, $\vec p$ and $m$ back gives the mass shell, and the only work is clearing $\hbar^{2}$ and $c^{2}$. With $k_{t}^{\prime}=E/(\hbar c)$ and $\vec k_{\Phi}=\vec p/\hbar$ the display becomes
+Putting $E$, $\vec p$ and $m$ back gives the mass shell, and the only work is clearing $\frac{h^{2}}{4\pi^{2}}$ and $c^{2}$. With $k_{t}^{\prime}=\frac{2\pi E}{h\,c}$ and $\vec k_{\Phi}=\frac{2\pi \vec p}{h}$ the display becomes
 
 $$
 \frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}
@@ -232,9 +232,9 @@ $$
 E^{2}-\lvert\vec p\rvert^{2}c^{2}=m^{2}c^{4}.
 $$
 
-The same triangle is obtained from the other side, and the two derivations share no step. *The Three Wavenumbers of a Particle* divides the four-momentum by $\hbar$, $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, and reads the three numbers off the quotient: the coordinates are $E/(\hbar c)$ and $\vec p/\hbar$, and the third is the value the element's norm must take, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{m}^{2}$. That is the particle arm computing the norm, and it lands on the same hyperbola the wave arm fixes. The two derivations meet because they are the two arms of one identity, and the meeting is what this article is about.
+The same triangle is obtained from the other side, and the two derivations share no step. *The Three Wavenumbers of a Particle* divides the four-momentum by $\frac{h}{2\pi}$, $\tilde K_{\Phi}=\frac{2\pi \tilde P_{\Phi}}{h}$, and reads the three numbers off the quotient: the coordinates are $\frac{2\pi E}{h\,c}$ and $\frac{2\pi \vec p}{h}$, and the third is the value the element's norm must take, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{m}^{2}$. That is the particle arm computing the norm, and it lands on the same hyperbola the wave arm fixes. The two derivations meet because they are the two arms of one identity, and the meeting is what this article is about.
 
-The three numbers are the same kind of number, which is the point of writing them as one element. $k_{t}^{\prime}$, $\lvert\vec k_{\Phi}\rvert$ and $k_{m}$ are all inverse lengths, all coordinates or coefficients of one element of $\mathbb{B}$, and the mass shell is the statement that the first two form a right triangle with the third. Putting $\hbar$ and $c$ back rescales the coordinates — $k_{t}^{\prime}$ becomes $E/(\hbar c)$, $\lvert\vec k_{\Phi}\rvert$ becomes $\lvert\vec p\rvert/\hbar$ — and leaves the form $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}$ exactly as it was. A reader who expects the structure to change with the units will look for it in the wrong place.
+The three numbers are the same kind of number, which is the point of writing them as one element. $k_{t}^{\prime}$, $\lvert\vec k_{\Phi}\rvert$ and $k_{m}$ are all inverse lengths, all coordinates or coefficients of one element of $\mathbb{B}$, and the mass shell is the statement that the first two form a right triangle with the third. Putting $\frac{h}{2\pi}$ and $c$ back rescales the coordinates — $k_{t}^{\prime}$ becomes $\frac{2\pi E}{h\,c}$, $\lvert\vec k_{\Phi}\rvert$ becomes $\frac{2\pi \lvert\vec p\rvert}{h}$ — and leaves the form $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}$ exactly as it was. A reader who expects the structure to change with the units will look for it in the wrong place.
 
 ## Where the Transcription Stops
 
@@ -281,7 +281,7 @@ Each article of the corpus occupies one side of the table, or the switch between
 | article | which arm |
 |---|---|
 | *Derivatives, Fields and Transforms* | the switch itself: the kernel, the symbol, the root |
-| *The Three Wavenumbers of a Particle* | the label: the four-momentum divided by $\hbar$ |
+| *The Three Wavenumbers of a Particle* | the label: the four-momentum divided by $\frac{h}{2\pi}$ |
 | *The Schrödinger Equation in Biquaternionic Form* | the element arm: the state and its norm |
 | *The Free Particle and Wave Packets in Biquaternionic Form* | both arms at once, on one packet |
 | *The Biquaternion d'Alembertian and Its Green's Functions* | the gradient arm: the operator and its inverse |
@@ -326,7 +326,7 @@ The density carries as many derivatives as the equation has time derivatives, mi
 
 The transform is the switch between them. It turns the divergence into the dot product $\omega\tilde\rho-\vec k_{\Phi}\cdot\tilde{\vec J}=0$, verified to $4.4\times10^{-17}$, and it turns the operator into the number $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}-k_{m}^{2}$, verified to $1.0\times10^{-13}$ on the massless cone and exactly on the commensurate modes $3,4,5$.
 
-The Schrödinger case is the elementary instance, and the one exception. One substitution gives $E=p^{2}/(2m)+V$ from $i\hbar\partial_{t}\psi=H\psi$, with the operator identity closing at $4.1\times10^{-14}$ and the group velocity read off a packet centroid to $6.3\times10^{-12}$. Its symbol is affine rather than quadratic, so here the wave arm is a level set of an affine function and reading it as a mass shell costs a quartic correction.
+The Schrödinger case is the elementary instance, and the one exception. One substitution gives $E=p^{2}/(2m)+V$ from $i \frac{h}{2\pi}\partial_{t}\psi=H\psi$, with the operator identity closing at $4.1\times10^{-14}$ and the group velocity read off a packet centroid to $6.3\times10^{-12}$. Its symbol is affine rather than quadratic, so here the wave arm is a level set of an affine function and reading it as a mass shell costs a quartic correction.
 
 The transcription is algebraic exactly when the coefficients are constant. Constancy, not centrality, is the boundary: a constant non-central potential passes through and merely translates the shell, a varying coefficient gives a convolution and no multiplier, and a periodic one gives a finite matrix.
 
@@ -359,11 +359,11 @@ The checks, in one place. Each residual below verifies one claim, and the claim 
 | $ (\tilde\nabla_\Phi)^{\natural} $ | its conjugate, whose product with it is $\Box_\Phi$ |
 | $ \Box_\Phi $ | the d'Alembertian in the material coordinates |
 | $ \tilde K_{\Phi} $ | the wave-number element $i k_{t}^{\prime}e_{t}+\vec k_{\Phi}$ |
-| $ k_{t}^{\prime} $ | energy wave number, $E/(\hbar c)=\omega/c$ |
+| $ k_{t}^{\prime} $ | energy wave number, $\frac{2\pi E}{h\,c}=\omega/c$ |
 | $ \omega $ | angular frequency, the transform variable conjugate to $t$ |
-| $ \vec k_{\Phi} $ | momentum wave number, $\vec p/\hbar$ |
+| $ \vec k_{\Phi} $ | momentum wave number, $\frac{2\pi \vec p}{h}$ |
 | $ k_{\Phi} $ | its modulus |
-| $ k_{m} $ | mass wave number, $m\,c/\hbar$ |
+| $ k_{m} $ | mass wave number, $\frac{2\pi m\,c}{h}$ |
 | $ \tilde K_{\Phi}\tilde K_{\Phi}^{\natural} $ | the quaternion norm of the wave number, $ -k_{t}^{\prime\,2}+k_{\Phi}^{2} $, and $ -k_{m}^{2} $ on shell; the symbol of the d'Alembertian |
 | $ \rho $ | density of the element form |
 | $ \vec J $ | current of the element form, one gradient, in $\mathbb{B}_{\Phi}$ |
@@ -373,7 +373,7 @@ The checks, in one place. Each residual below verifies one claim, and the claim 
 ## Further Reading
 
 - [The Derivative, the Field and the Transform](../articles_physics/the-derivative-the-field-and-the-transform.html), for the kernel, the root, the transform pair, the symbol and the vanishing-norm obstruction used in the section on the switch.
-- [The Three Wavenumbers of a Particle](../articles_physics/the-three-wavenumbers-of-a-particle.html), for the division of the four-momentum by $\hbar$ that gives the label of the transform.
+- [The Three Wavenumbers of a Particle](../articles_physics/the-three-wavenumbers-of-a-particle.html), for the division of the four-momentum by $\frac{h}{2\pi}$ that gives the label of the transform.
 - [The Schrödinger Equation in Biquaternionic Form](../articles_physics/the-schrodinger-equation-in-biquaternionic-form.html), for the element arm in its own right.
 - [The Free Particle and Wave Packets in Biquaternionic Form](../articles_physics/the-free-particle-and-wave-packets-in-biquaternionic-form.html), for both arms on one packet, the case the third check of this article samples.
 - [The Biquaternion d'Alembertian and Its Green's Functions](../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html), for the gradient arm and its inverse.

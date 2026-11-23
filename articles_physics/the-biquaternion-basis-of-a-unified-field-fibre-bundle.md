@@ -76,7 +76,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
 $$
 
-with both derivatives acting from the left. The first is the right-handed equation; the second carries $(\tilde\nabla_\Phi)^{\natural}$ because the left-handed field is the conjugate of the right-handed one. At $m=0$ the pair decouples into the two equations $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+with both derivatives acting from the left. The first is the right-handed equation; the second carries $(\tilde\nabla_\Phi)^{\natural}$ because the left-handed field is the conjugate of the right-handed one. At $m=0$ the pair decouples into the two equations $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 The two equations are one dynamics on the two halves, and the conventions own it: *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*, writes them as $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ and squares to $\Box_\Phi$. The corpus does not develop it here; what matters is which side each term acts on. The derivative acts on the left, the mass on the right, and the mass term carries each half into the other. That is the whole of the source's "mass couples the two fields off the diagonal", read on the algebra.
 

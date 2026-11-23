@@ -12,7 +12,7 @@ for $\tilde U=\tilde U_te_t+\tilde U_x\vec e_x+\tilde U_y\vec e_y+\tilde U_z\vec
 
 The article is organized as follows. The next section states why a regulator is needed and what the lattice supplies. A section constructs the lattice carrier: sites, links, the group-valued variable and its gauge law. A section derives the plaquette and the Wilson action and shows that its naive continuum limit is the Yang–Mills density of the companion articles, with the coupling normalization fixed. A section defines the lattice path integral and its measure, and records the transfer-matrix and reflection-positivity properties on which the **physical interpretation** rests. A section carries out the strong-coupling expansion, obtains the area law and the string tension, and identifies confinement. A section takes the continuum limit and fixes the place of the lattice in the renormalization group. A closing section separates what the algebra supplies from what is imported.
 
-We use the conventions of the companion articles: the algebra, the invertibles, the sectors, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Frame and Metric Conventions* and *Operator and Calculus Conventions*, and none is restated here. The compact gauge algebra is taken in the Hermitian-generator realization, $T_a=\tfrac12ie_a\in\mathbb{B}_{\Psi}$, Hermitian and scalar-free, with the standard algebra and normalization $[T_a,T_b]=i\sum_c\varepsilon_{abc}T_c$ and $2\,\mathrm{Sc}(T_aT_b)=\tfrac12\delta_{ab}$, equivalently $e_a=-2iT_a$ with $[e_a,e_b]=2\sum_c\varepsilon_{abc}e_c$; the connection is $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} T_a$, the coupling is $\kappa=\frac{ϙ}{\hbar}$, the covariant derivative is $D_\mu=\partial/\partial R_\mu+i\kappa\mathcal{A}_\mu$, and the curvature is $F_{\mu\nu}=\partial\mathcal{A}_\nu/\partial R_\mu-\partial\mathcal{A}_\mu/\partial R_\nu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$. The realization is not a free choice on the lattice. The link must be a group element, and $i\kappa\mathcal{A}_\mu$ is anti-Hermitian only for Hermitian $\mathcal{A}_\mu$; with the anti-Hermitian assignment $\mathcal{A}_\mu\in\mathbb{B}_{\Phi}$ of the classical companion articles, $i\kappa\mathcal{A}_\mu$ is Hermitian, so that $\exp(ia\kappa\mathcal{A}_\mu)$ is Hermitian positive definite rather than $*$-unitary and departs from unitarity already at first order in $a\kappa$. This is the reality-class question *Non-Abelian Gauge Fields in Biquaternionic Form* records as open. The lattice does not settle it in general, but in the Euclidean case the $i r'_t$ derivative that forces the Minkowski mixed assignment is absent, the Hermitian class is closed under the gauge transformation for all four directions, and it is the class the holonomy of *Wilson Loops in Biquaternionic Form* already uses. The lattice is introduced in the Euclidean case, where the weight is $\exp(-\frac{1}{\hbar}S_W)$ with $S_W$ real and positive; the rotation that relates the two cases is the one of the companion articles. $\hbar$ is carried in the exponent, and no unit is set to one.
+We use the conventions of the companion articles: the algebra, the invertibles, the sectors, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Frame and Metric Conventions* and *Operator and Calculus Conventions*, and none is restated here. The compact gauge algebra is taken in the Hermitian-generator realization, $T_a=\tfrac12ie_a\in\mathbb{B}_{\Psi}$, Hermitian and scalar-free, with the standard algebra and normalization $[T_a,T_b]=i\sum_c\varepsilon_{abc}T_c$ and $2\,\mathrm{Sc}(T_aT_b)=\tfrac12\delta_{ab}$, equivalently $e_a=-2iT_a$ with $[e_a,e_b]=2\sum_c\varepsilon_{abc}e_c$; the connection is $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} T_a$, the coupling is $\kappa=\frac{2\pi ϙ}{h}$, the covariant derivative is $D_\mu=\partial/\partial R_\mu+i\kappa\mathcal{A}_\mu$, and the curvature is $F_{\mu\nu}=\partial\mathcal{A}_\nu/\partial R_\mu-\partial\mathcal{A}_\mu/\partial R_\nu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$. The realization is not a free choice on the lattice. The link must be a group element, and $i\kappa\mathcal{A}_\mu$ is anti-Hermitian only for Hermitian $\mathcal{A}_\mu$; with the anti-Hermitian assignment $\mathcal{A}_\mu\in\mathbb{B}_{\Phi}$ of the classical companion articles, $i\kappa\mathcal{A}_\mu$ is Hermitian, so that $\exp(ia\kappa\mathcal{A}_\mu)$ is Hermitian positive definite rather than $*$-unitary and departs from unitarity already at first order in $a\kappa$. This is the reality-class question *Non-Abelian Gauge Fields in Biquaternionic Form* records as open. The lattice does not settle it in general, but in the Euclidean case the $i r'_t$ derivative that forces the Minkowski mixed assignment is absent, the Hermitian class is closed under the gauge transformation for all four directions, and it is the class the holonomy of *Wilson Loops in Biquaternionic Form* already uses. The lattice is introduced in the Euclidean case, where the weight is $\exp(-\frac{2\pi 1}{h}S_W)$ with $S_W$ real and positive; the rotation that relates the two cases is the one of the companion articles. $\frac{h}{2\pi}$ is carried in the exponent, and no unit is set to one.
 
 - Companion article *The Functional Integral in Biquaternionic Form*, for the measure, the Gaussian evaluation and the Euclidean rotation.
 - Companion article *The Gauge Field Path Integral in Biquaternionic Form*, for the abelian gauge orbit and the gauge-fixing determinant.
@@ -34,7 +34,7 @@ S_{\mathrm{YM}}=-\tfrac12\int d^4r\,\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{
 $$
 is not an integral in the sense of measure theory. The symbol $\mathcal{D}\mathcal{A}$ denotes a limit of products of finitely many ordinary integrals, and the limit is not known to exist without a regulator; the perturbative expansion assumes that a regulator has been chosen and that the counterterms remove its dependence. Three properties are needed of the regulator: it must make the measure finite, it must preserve the gauge invariance of the action, and it must admit a limit in which the regulator dependence is absorbed into the parameters of the theory.
 
-Throughout, $\theta_{\mathrm{ym}}:=S_{\mathrm{YM}}[\mathcal{A}]/\hbar$ is real: the Yang--Mills action is $-2\int d^4r\,\mathrm{Sc}\langle\tilde{\mathcal{F}},\tilde{\mathcal{F}}\rangle$, a real number for real potentials, so $\exp(i\theta_{\mathrm{ym}})$ is a phase of modulus one and the weight on each orbit is unitary.
+Throughout, $\theta_{\mathrm{ym}}:=S_{\mathrm{YM}}[\mathcal{A}]\frac{2\pi}{h}$ is real: the Yang--Mills action is $-2\int d^4r\,\mathrm{Sc}\langle\tilde{\mathcal{F}},\tilde{\mathcal{F}}\rangle$, a real number for real potentials, so $\exp(i\theta_{\mathrm{ym}})$ is a phase of modulus one and the weight on each orbit is unitary.
 
 A spacetime lattice supplies all three. The lattice has finitely many sites in a finite box, so the field has finitely many components; the group-valued variable on each link is drawn from a compact group, so each integral is finite; the lattice action is built from closed loops and is therefore gauge invariant; and the limit in which the lattice spacing $a$ is taken to zero is controlled by the renormalization group, which absorbs the dependence into the coupling. The lattice regularization is the standard non-perturbative construction of a gauge theory, and it is used here because it is the construction that makes the biquaternion path integral well defined.
 
@@ -118,7 +118,7 @@ $$
 \beta=\frac{2N}{\kappa^2}=\frac{4}{\kappa^2}
 \qquad (N=2),
 $$
-which is the standard lattice normalization, written in the framework's coupling $\kappa=\frac{ϙ}{\hbar}$. The lattice coupling is therefore not an independent parameter: it is the reciprocal square of the continuum coupling, and the continuum limit is the limit in which $\kappa\to0$ and $\beta\to\infty$ with the physical scale held fixed.
+which is the standard lattice normalization, written in the framework's coupling $\kappa=\frac{2\pi ϙ}{h}$. The lattice coupling is therefore not an independent parameter: it is the reciprocal square of the continuum coupling, and the continuum limit is the limit in which $\kappa\to0$ and $\beta\to\infty$ with the physical scale held fixed.
 
 ## The Lattice Path Integral
 
@@ -126,7 +126,7 @@ which is the standard lattice normalization, written in the framework's coupling
 
 The lattice path integral is the finite product of compact-group integrals,
 $$
-Z=\int\prod_{n}\prod_{\mu=0}^{3}dU_\mu(n)\;\exp\!\big(-\frac{1}{\hbar}S_W[\tilde U]\big),
+Z=\int\prod_{n}\prod_{\mu=0}^{3}dU_\mu(n)\;\exp\!\big(-\frac{2\pi 1}{h}S_W[\tilde U]\big),
 $$
 where $dU_\mu(n)$ is the Haar measure on $SU(2)$, normalized to $\int dU=1$, and the product is over all sites and all positive directions in a finite box with periodic boundary conditions. In angular coordinates, writing $\tilde U=\cos\theta\,e_t+\sin\theta\,(\vec u_x\vec e_x+\vec u_y\vec e_y+\vec u_z\vec e_z)$ with $\vec u\in S^2$ and $\theta\in[0,\pi]$,
 $$
@@ -159,7 +159,7 @@ In the framework's terms, the lattice accomplishes the following.
 
 At small $\beta$ the weight can be expanded in powers of $\beta$,
 $$
-\exp(-\frac{1}{\hbar}S_W)=\prod_{p}\exp\left(-\beta\left(1-\frac1N\mathrm{Re}\,\mathrm{Tr}\,\mathsf M_2(\tilde U_p)\right)\right)
+\exp(-\frac{2\pi 1}{h}S_W)=\prod_{p}\exp\left(-\beta\left(1-\frac1N\mathrm{Re}\,\mathrm{Tr}\,\mathsf M_2(\tilde U_p)\right)\right)
 =\exp(-\beta N_p)\prod_p\left[1+\frac{\beta}{N}\mathrm{Re}\,\mathrm{Tr}\,\mathsf M_2(\tilde U_p)+O(\beta^2)\right],
 $$
 where $N_p$ is the number of plaquettes and $\tilde U_p$ denotes the plaquette variable. The integral of a product of links around a set of plaquettes is evaluated with the group integral identities
@@ -252,7 +252,7 @@ $$
 $$
 so that with $\beta=2N/\kappa^2=4/\kappa^2$ it reduces to the Euclidean Yang–Mills density $\frac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$; both the plaquette identity and the normalization were checked numerically on a constant non-abelian field. The path integral is the finite product of normalized Haar measures on the unit quaternions,
 $$
-Z=\int\prod_{n,\mu}dU_\mu(n)\;\exp(-\frac{1}{\hbar}S_W[\tilde U]),
+Z=\int\prod_{n,\mu}dU_\mu(n)\;\exp(-\frac{2\pi 1}{h}S_W[\tilde U]),
 \qquad
 dU=\frac{1}{2\pi^2}\sin^2\theta\,d\theta\,d\Omega,
 $$
@@ -273,7 +273,7 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $T_a=\tfrac12 ie_a\in\mathbb{B}_{\Psi}$, $[T_a,T_b]=i\sum_c\varepsilon_{abc}T_c$, $2\,\mathrm{Sc}(T_aT_b)=\tfrac12\delta_{ab}$ | Compact gauge algebra (Hermitian-generator realization) |
-| $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} T_a$, $\kappa=\frac{ϙ}{\hbar}$ | Connection and coupling |
+| $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} T_a$, $\kappa=\frac{2\pi ϙ}{h}$ | Connection and coupling |
 | $F_{\mu\nu}=\partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Non-abelian curvature |
 | $a$ | Lattice spacing |
 | $\tilde U_\mu(n)=\exp(ia\kappa\mathcal{A}_\mu(n))\in SU(2)$ | Link variable (unit quaternion) |
@@ -284,7 +284,7 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 | $2\,\mathrm{Sc}\,\tilde U=2\,\mathrm{Re}(\tilde U_0)$ | Trace of a group element, as twice its scalar part |
 | $S_W=\beta\sum(1-\tfrac2N\mathrm{Re}\,\mathrm{Sc}\,\tilde U_{\mu\nu})$, $N=2$ | Wilson action |
 | $\beta=2N/\kappa^2=4/\kappa^2$ | Lattice coupling |
-| $Z=\int\prod_{n,\mu}dU_\mu(n)\exp(-\frac{1}{\hbar}S_W)$ | Lattice path integral |
+| $Z=\int\prod_{n,\mu}dU_\mu(n)\exp(-\frac{2\pi 1}{h}S_W)$ | Lattice path integral |
 | $dU=\tfrac{1}{2\pi^2}\sin^2\theta\,d\theta\,d\Omega$ | Normalized Haar measure on the unit quaternions |
 | $W(C)=\tfrac2N\mathrm{Sc}\prod_{l\in C}\tilde U_l$ | Lattice Wilson loop |
 | $\langle W(C)\rangle\sim \exp(-\sigma A)$ | Area law; $\sigma$ the string tension |

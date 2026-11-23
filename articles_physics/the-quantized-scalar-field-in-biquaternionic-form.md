@@ -12,7 +12,7 @@ Three answers organise the article, and they are not the same answer.
 
 1. **Its value space.** The field is central-valued: at each event it is an operator times $e_t$, so its value-space indices are trivial, its Lorentz transformation has no spin part, and it commutes with every element of the algebra. This is the operator form of the statement that spin $0$ lives in the centre.
 2. **Its algebra.** The field is an operator-valued distribution, unbounded, and its commutator with its adjoint is a **multiple of the identity**, the commutator function. The field therefore generates a CCR algebra whose brackets are central; the non-commutativity of the field is a fixed c-number function, not an operator. This is what makes the scalar field bosonic, and it is the structure $\mathbb{B}$ cannot host, as the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* proves.
-3. **Its phases.** The only biquaternion structure the field carries is the transport of the central phase $\exp(\pm i\theta_{\mathrm{pwp}})$, with the mode angle $\theta_{\mathrm{pwp}}=\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar$ real because a scalar part over $\hbar$ is a real number, and the transport of the central phase $\exp(\pm i\theta_{\mathrm{pwp}})$ and the centrality of that phase. The mass shell is a level set of the biquaternion norm; the exponentials are central unitaries; the Lorentz rotors act trivially on them.
+3. **Its phases.** The only biquaternion structure the field carries is the transport of the central phase $\exp(\pm i\theta_{\mathrm{pwp}})$, with the mode angle $\theta_{\mathrm{pwp}}=\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})\frac{2\pi}{h}$ real because a scalar part over $\frac{h}{2\pi}$ is a real number, and the transport of the central phase $\exp(\pm i\theta_{\mathrm{pwp}})$ and the centrality of that phase. The mass shell is a level set of the biquaternion norm; the exponentials are central unitaries; the Lorentz rotors act trivially on them.
 
 The article is organised as follows. The next section treats the field as an operator-valued distribution and fixes its value space. The following section separates its positive- and negative-frequency parts. The next section treats the real and complex cases and charge conjugation. The section after that establishes the c-number character of the field commutator. The next section gives the two-point functions and the propagator, read through the biquaternion norm. A section treats the transformation of the field operator under the Poincaré group and the central phase. The final section separates what is standard from what is open.
 
@@ -40,11 +40,11 @@ The value space of the field is the centre. In the mode expansion
 $$
 \tilde{Ξ}_{\mathrm{fop}}(\tilde R_\Phi)=\xi_{\mathrm{fop}}(r_x)\,e_t,
 \qquad
-\xi_{\mathrm{fop}}(r_x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}
+\xi_{\mathrm{fop}}(r_x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}
 \left(a_{\mathrm{fop},\vec p}\exp(-i\theta_{\mathrm{pwp}})+{b_{\mathrm{fop},\vec p}}^\dagger \exp(+i\theta_{\mathrm{pwp}})\right),
 $$
 
-Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
+Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 every coefficient multiplies the central unit $e_t$. Three consequences follow immediately and are worth stating separately.
 
@@ -57,9 +57,9 @@ every coefficient multiplies the central unit $e_t$. Three consequences follow i
 The decomposition of the field into its two exponential branches is the operator form of the two-branch structure of the parent equation. Define
 
 $$
-\xi_{\mathrm{fop}}^{(+)}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}\,a_{\mathrm{fop},\vec p}\,\exp(-i\theta_{\mathrm{pwp}}),
+\xi_{\mathrm{fop}}^{(+)}(x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}\,a_{\mathrm{fop},\vec p}\,\exp(-i\theta_{\mathrm{pwp}}),
 \qquad
-\xi_{\mathrm{fop}}^{(-)}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}\,{b_{\mathrm{fop},\vec p}}^\dagger\,\exp(+i\theta_{\mathrm{pwp}}),
+\xi_{\mathrm{fop}}^{(-)}(x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}\,{b_{\mathrm{fop},\vec p}}^\dagger\,\exp(+i\theta_{\mathrm{pwp}}),
 $$
 
 so that $\xi_{\mathrm{fop}}=\xi_{\mathrm{fop}}^{(+)}+\xi_{\mathrm{fop}}^{(-)}$ and $\xi_{\mathrm{fop}}^{\dagger}=\xi_{\mathrm{fop}}^{(+)\dagger}+\xi_{\mathrm{fop}}^{(-)\dagger}$, with $\xi_{\mathrm{fop}}^{(+)\dagger}$ containing ${a_{\mathrm{fop},\vec p}}^\dagger$ and $\xi_{\mathrm{fop}}^{(-)\dagger}$ containing $b_{\mathrm{fop},\vec p}$. Two facts fix the interpretation.
@@ -76,7 +76,7 @@ so $\xi_{\mathrm{fop}}^{(+)}$ is the **annihilation part** and $\xi_{\mathrm{fop
 
 **The frequency split is Lorentz invariant.** The split is defined by the sign of the energy, and the sign of the energy is preserved by orthochronous Lorentz transformations; equivalently, the positive-frequency part continues analytically in the upper half of the complex time plane when the phase is written $\exp(-i\theta_{\mathrm{evo}})$. This is the standard statement that the Wightman function is the boundary value of an analytic function, and the framework's central phase $\exp(-i\theta_{\mathrm{pwp}})$ is the phase in which the statement is made.
 
-The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
+The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\frac{h}{2\pi}\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
 
 ## Real and Complex Scalar Fields
 
@@ -99,7 +99,7 @@ and it leaves the commutators and the Hamiltonian invariant. It is an antiunitar
 **The real (neutral) field.** Imposing $\xi_{\mathrm{fop}}^{\dagger}=\xi_{\mathrm{fop}}$ forces $b_{\mathrm{fop},\vec p}=a_{\mathrm{fop},\vec p}$ and reduces the expansion to a single set of modes,
 
 $$
-\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}
+\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}
 \left(a_{\mathrm{fop},\vec p}\exp(-i\theta_{\mathrm{pwp}})+{a_{\mathrm{fop},\vec p}}^\dagger \exp(+i\theta_{\mathrm{pwp}})\right),
 $$
 
@@ -113,8 +113,8 @@ The defining property of a bosonic field is that its commutator is a c-number. F
 
 $$
 \boxed{\;\big[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}^{\dagger}(y)\big]
-=\int\!\frac{d^3p}{(2\pi\hbar)^3\,\frac{\hbar c}{2E_{\vec p}}}
-\left(\exp(-ip\cdot(x-y)/\hbar)-\exp(+ip\cdot(x-y)/\hbar)\right)
+=\int\!\frac{d^3p}{h^{3}\,\frac{h c}{4\pi E_{\vec p}}}
+\left(\exp(-ip\cdot(x-y)\frac{2\pi}{h})-\exp(+ip\cdot(x-y)\frac{2\pi}{h})\right)
 \equiv i\mathcal{P}_{\mathrm{PJ}}(x-y)\;},
 $$
 
@@ -136,7 +136,7 @@ The field operator's content is exhausted by its correlation functions. The basi
 
 $$
 \boxed{\;W(x-y)=\langle0|\xi_{\mathrm{fop}}(x)\xi_{\mathrm{fop}}^{\dagger}(y)|0\rangle
-=\int\!\frac{d^3p}{(2\pi\hbar)^3\,\frac{\hbar c}{2E_{\vec p}}}\,\exp(-ip\cdot(x-y)/\hbar)\;},
+=\int\!\frac{d^3p}{h^{3}\,\frac{h c}{4\pi E_{\vec p}}}\,\exp(-ip\cdot(x-y)\frac{2\pi}{h})\;},
 $$
 
 which is precisely the positive-frequency part of the commutator function and is annihilated by the Klein–Gordon operator in each variable,
@@ -197,7 +197,7 @@ $$
 
 and it commutes with the Poincaré action. The generator $Ϙ_{\mathrm{fop}}$ is the Noether charge of the current $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$; the phase is central, so it multiplies the field by a central $*$-unitary and does not act on the state module's spinor structure. In this sense the framework's canonical internal symmetry is the group of central phases, and the scalar field is its simplest charged representation.
 
-Two statements must be kept apart, because the corpus uses both. The phase $\exp(-i\theta_{\mathrm{cen}})$ is the **active** $\mathrm{U}(1)$ transformation of the field operator, generated by the charge. The Wick-rotated weight $\exp(-\frac{S_{E}}{\hbar})$ is a **weight** in a functional integral on the centre, not a transformation of the field; the two are distinct and are not to be identified. The former is a symmetry, the latter is a convergence factor.
+Two statements must be kept apart, because the corpus uses both. The phase $\exp(-i\theta_{\mathrm{cen}})$ is the **active** $\mathrm{U}(1)$ transformation of the field operator, generated by the charge. The Wick-rotated weight $\exp(-\frac{2\pi S_{E}}{h})$ is a **weight** in a functional integral on the centre, not a transformation of the field; the two are distinct and are not to be identified. The former is a symmetry, the latter is a convergence factor.
 
 ## The Schrödinger Functional and the Field Basis
 
@@ -206,7 +206,7 @@ The field operator's representation on states can be made explicit with the fiel
 $$
 \langle\xi|\xi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|\tilde{Ξ}\rangle=\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,\tilde{Ξ}[\xi],
 \qquad
-\langle\xi|\pi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|\tilde{Ξ}\rangle=-\frac{i\,\hbar\,\tilde{Ξ}}{\xi\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)},
+\langle\xi|\pi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|\tilde{Ξ}\rangle=-\frac{i\,h\,\tilde{Ξ}}{2\pi \xi\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)},
 $$
 
 so the canonical commutator is the identity $\delta\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/\delta\xi(\vec y)=\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$ and the field-basis representation is the functional analogue of the coordinate representation of quantum physics. In this representation the Hamiltonian is a differential operator and the Schrödinger equation is a functional differential equation.
@@ -214,7 +214,7 @@ so the canonical commutator is the identity $\delta\xi(r_x\,\vec e_x+r_y\,\vec e
 For the free scalar the ground-state functional is an explicit Gaussian. With the Hamiltonian of the companion quantization and the real field for economy,
 
 $$
-\tilde{Ξ}_{0}[\xi]\;\propto\;\exp\!\left(-\frac{1}{2}\int\frac{d^3p}{(2\pi\hbar)^3}\,E_{\vec p}\,\big|\xi(\vec p)\big|^2\right)
+\tilde{Ξ}_{0}[\xi]\;\propto\;\exp\!\left(-\frac{1}{2}\int\frac{d^3p}{h^{3}}\,E_{\vec p}\,\big|\xi(\vec p)\big|^2\right)
 =\exp\!\left(-\frac{1}{2}\int d^3r\,d^3y\;\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,K(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)\,\xi(\vec y)\right),
 $$
 

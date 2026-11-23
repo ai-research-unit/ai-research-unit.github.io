@@ -7,7 +7,7 @@ action, so its curl vanishes wherever the action exists. The second is Stokes' t
 
 This article closes open question 2 of [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), which asks whether the winding of the action around a nodal line carries a topological charge, and whether that charge is an object of the algebra rather than of the phase. The answers are yes and yes, in the precise sense given below.
 
-What the article establishes. The circulation around a nodal line is $2\pi\hbar n/m$ for an integer $n$, independently of the loop's shape and radius, and the integer is the degree of the field's phase map. The charge is an object of the algebra because it is the winding of the field into the central unit circle, which is the compact direction of the algebra's group of invertibles; the phase function is only a coordinate on that circle and the charge does not depend on it. The nodal set is where the polar decomposition fails, and that failure is the field's arrival on the zero-divisor set.
+What the article establishes. The circulation around a nodal line is $h n/m$ for an integer $n$, independently of the loop's shape and radius, and the integer is the degree of the field's phase map. The charge is an object of the algebra because it is the winding of the field into the central unit circle, which is the compact direction of the algebra's group of invertibles; the phase function is only a coordinate on that circle and the charge does not depend on it. The nodal set is where the polar decomposition fails, and that failure is the field's arrival on the zero-divisor set.
 
 What it does not establish. It does not establish that a nodal solution of the Klein–Gordon equation exists for a given mass and a given winding, nor that any such solution is stable. Those are dynamical questions and this article is kinematical. It does not establish that the scalar field is a superfluid, and no thermodynamic statement is made. And it does not give the sign convention of the charge, which is a convention of the orientation of the loop and is stated once.
 
@@ -34,9 +34,9 @@ $$
 The vanishing is a statement about mixed partial derivatives and it needs nothing from the field equation: any twice differentiable action gives it. What it needs is that the action exist, and the action exists wherever the amplitude is non-zero, because it is defined by
 
 $$
-\tilde\Xi=\lVert\tilde\Xi\rVert\exp\!\left(i\frac{S_{\tilde\Xi}}{\hbar}\right)e_t
+\tilde\Xi=\lVert\tilde\Xi\rVert\exp\!\left(i\frac{2\pi S_{\tilde\Xi}}{h}\right)e_t
 \qquad\Longrightarrow\qquad
-S_{\tilde\Xi}=\hbar\arctan\!\left(\frac{\mathrm{Im}\text{-part}}{\mathrm{Re}\text{-part}}\right),
+S_{\tilde\Xi}=\frac{h}{2\pi}\arctan\!\left(\frac{\mathrm{Im}\text{-part}}{\mathrm{Re}\text{-part}}\right),
 $$
 
 up to an additive constant that the multivaluedness makes local. Where the amplitude vanishes the ratio is undefined, the action does not exist, and the closure has nothing to say.
@@ -45,7 +45,7 @@ So the irrotationality is exact on the complement of the nodal set and vacuous o
 
 ### The nodal set
 
-The nodal set is the set of events where the field's value lies on the zero-divisor set. For the central scalar field the value is $\tilde\Xi=\lVert\tilde\Xi\rVert e^{i\theta_{\mathrm{phs}}}e_t$ with $\theta_{\mathrm{phs}}=S_{\tilde\Xi}/\hbar$, and its quaternionic norm is
+The nodal set is the set of events where the field's value lies on the zero-divisor set. For the central scalar field the value is $\tilde\Xi=\lVert\tilde\Xi\rVert e^{i\theta_{\mathrm{phs}}}e_t$ with $\theta_{\mathrm{phs}}=\frac{2\pi S_{\tilde\Xi}}{h}$, and its quaternionic norm is
 
 $$
 \langle\tilde\Xi\rangle_{\natural}=\tilde\Xi\tilde\Xi^{\natural}=\lVert\tilde\Xi\rVert^{2}e^{2i\theta_{\mathrm{phs}}} .
@@ -74,17 +74,17 @@ The integer is the degree of the map from the link, a circle, into the phase cir
 
 $$
 \kappa=\oint\tilde V_{\Phi}\cdot d\vec l=\frac{1}{m}\oint\nabla S_{\tilde\Xi}\cdot d\vec l
-=\frac{\hbar}{m}\oint\nabla\theta_{\mathrm{phs}}\cdot d\vec l
-=\frac{2\pi\hbar\,n}{m},
+=\frac{h}{2\pi m}\oint\nabla\theta_{\mathrm{phs}}\cdot d\vec l
+=\frac{h\,n}{m},
 $$
 
-where the third equality uses $\vec\nabla_\Phi S_{\tilde\Xi}=\hbar\nabla\theta_{\mathrm{phs}}$ and the fourth the winding. In the corpus's units the quantum of circulation is
+where the third equality uses $\vec\nabla_\Phi S_{\tilde\Xi}=\frac{h}{2\pi}\nabla\theta_{\mathrm{phs}}$ and the fourth the winding. In the corpus's units the quantum of circulation is
 
 $$
-\kappa_{1}=\frac{2\pi\hbar}{m}=\frac{2\pi c}{k_m},
+\kappa_{1}=\frac{h}{m}=\frac{2\pi c}{k_m},
 $$
 
-the second form using $k_m=mc/\hbar$. The result is exact, it does not depend on the shape or the radius of the loop, and it does not depend on the amplitude profile: only the map's degree enters.
+the second form using $k_m=\frac{2\pi mc}{h}$. The result is exact, it does not depend on the shape or the radius of the loop, and it does not depend on the amplitude profile: only the map's degree enters.
 
 The object integrated is the mechanical momentum over the mass, and the three-velocity is a different integral. $\tilde V_\Phi=\tilde P_\Phi/m$ is the flow variable of the word; the physical three-velocity is $\vec v=\vec p/(m\gamma)$, so $\oint\vec v\cdot\mathrm{d}\vec l=\kappa_1 n/\gamma$ is quantised only where $\gamma$ is constant on the loop, which is [The Spin-Zero Fluid](the-spin-zero-fluid.html)'s qualification. At the first-order rung the two integrals coincide, $\vec v=\vec\nabla_\Phi S/m$ with no factor, and [The Schrödinger Fluid](the-schrodinger-fluid.html) reads the statement on $\vec v$ directly.
 
@@ -111,14 +111,14 @@ The sign of the charge is the orientation of the loop and nothing else. Reversin
 The velocity diverges at the node and the current does not, because the density vanishes faster. With a phase winding $n$ the gradient of the phase is $\vec\nabla_\Phi\theta_{\mathrm{phs}}=n\,\hat\varphi/r$ in cylindrical coordinates about the axis, so the velocity's magnitude is
 
 $$
-\lvert\vec v\rvert=\frac{\hbar\lvert n\rvert}{m\,r},
+\lvert\vec v\rvert=\frac{h\lvert n\rvert}{2\pi m\,r},
 $$
 
 which diverges as $r\to0$. The current's spatial part is $\rho_{\mathrm{num}}\gamma\vec v$, and with a core amplitude $f(r)=Ar$ the density is $\rho_{\mathrm{num}}=A^{2}r^{2}$, so
 
 $$
 \lvert\vec J_{\Phi}\rvert=\rho_{\mathrm{num}}\lvert\vec v\rvert
-=\frac{A^{2}\hbar\lvert n\rvert}{m}\,r\;\longrightarrow\;0 .
+=\frac{A^{2}h\lvert n\rvert}{2\pi m}\,r\;\longrightarrow\;0 .
 $$
 
 The product is regular at the node and vanishes there. This is not a coincidence of the linear profile: any core amplitude that vanishes faster than $r^{1/2}$ gives a vanishing current, and a linear core is the generic behaviour of a solution near a simple zero. The transport equation of the polar form is a statement about $\rho_{\mathrm{num}}\tilde P_{\Phi}$, so it never sees the divergence of the velocity — which is why the scalar polar article records that the transport equation remains meaningful where the action does not.
@@ -130,7 +130,7 @@ The product is regular at the node and vanishes there. This is not a coincidence
 The quantum potential diverges at the node while the quantum energy stays finite and negative. The quantum potential is fixed by the corpus's sign convention,
 
 $$
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
+Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
 $$
 
 and for the linear core, with no dependence on the axial coordinate, the box is the transverse Laplacian,
@@ -141,18 +141,18 @@ $$
 \qquad
 \frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}=\frac{1}{r^{2}},
 \qquad
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{1}{r^{2}} .
+Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{1}{r^{2}} .
 $$
 
 The potential diverges as $-1/r^{2}$ at the node. The quantum energy density does not: it is the density times the potential, and in the form of [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) it is
 
 $$
 w_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}
-=-\frac{\hbar^{2}}{2m}\left(A^{2}r^{2}\right)\frac{1}{r^{2}}
-=-\frac{\hbar^{2}A^{2}}{2m},
+=-\frac{h^{2}}{8\pi^{2}m}\left(A^{2}r^{2}\right)\frac{1}{r^{2}}
+=-\frac{h^{2}A^{2}}{8\pi^{2}m},
 $$
 
-a constant. Checked on a grid from $r=0.05$ to $r=0.5$ with $A=1.3$ and the quantum potential in units of $\hbar^{2}/m$, so that $\hbar^{2}/2m=\tfrac12$: $Q_{\mathrm{qnt}}r^{2}$ came out as $-0.500\,000\,000$ at three radii and $w_{\mathrm{qnt}}$ as $-0.845\,000\,000$, against $-A^{2}/2=-0.845$ exactly. So the divergence of the potential and the vanishing of the density cancel, and the node carries a finite negative energy density rather than an infinite one.
+a constant. Checked on a grid from $r=0.05$ to $r=0.5$ with $A=1.3$ and the quantum potential in units of $\frac{h^{2}}{4\pi^{2}}/m$, so that $\frac{h^{2}}{4\pi^{2}}/2m=\tfrac12$: $Q_{\mathrm{qnt}}r^{2}$ came out as $-0.500\,000\,000$ at three radii and $w_{\mathrm{qnt}}$ as $-0.845\,000\,000$, against $-A^{2}/2=-0.845$ exactly. So the divergence of the potential and the vanishing of the density cancel, and the node carries a finite negative energy density rather than an infinite one.
 
 The sign is the corpus's and it is worth a sentence. A negative quantum energy density is not a negative energy: the total quantum energy of a state is the integral of a positive quantity, as the quantum-stress article shows, and what is negative here is the density's local value in a region where the classical energy is larger. The vortex core is such a region, and the cancellation between the potential's divergence and the density's vanishing is the mechanism that keeps the total finite.
 
@@ -164,7 +164,7 @@ $$
 \tilde\Xi=f(r)\,e^{in\varphi}\,e^{-ik_t r'_t}\,e_t
 $$
 
-with $f$ real and positive away from the axis, $r$ the distance from the axis, $\varphi$ the angle about it and $k_t$ the temporal wave number of the ansatz, the energy being $E=\hbar c\,k_t$. The action is $S_{\tilde\Xi}=\hbar(n\varphi-k_t r'_t)$, so $\vec\nabla_\Phi S_{\tilde\Xi}=\hbar n\,\hat\varphi/r$ and $\partial S_{\tilde\Xi}/\partial r'_t=-\hbar k_t$.
+with $f$ real and positive away from the axis, $r$ the distance from the axis, $\varphi$ the angle about it and $k_t$ the temporal wave number of the ansatz, the energy being $E=\frac{h}{2\pi} c\,k_t$. The action is $S_{\tilde\Xi}=\frac{h}{2\pi}(n\varphi-k_t r'_t)$, so $\vec\nabla_\Phi S_{\tilde\Xi}=\frac{h}{2\pi} n\,\hat\varphi/r$ and $\partial S_{\tilde\Xi}/\partial r'_t=-\frac{h}{2\pi} k_t$.
 
 The transport equation is satisfied identically. It reads $\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi})-\partial(\rho_{\mathrm{num}}\partial S_{\tilde\Xi}/\partial r'_t)/\partial r'_t=0$; the first term is the divergence of a purely azimuthal field whose magnitude depends on $r$ alone, and the second is the time derivative of a quantity that does not depend on time. Both vanish.
 
@@ -217,9 +217,9 @@ The quantisation itself is kinematic and exact: it follows from the degree of a 
 
 ### The phase is a coordinate and the class is the object
 
-A shift of the action that is constant on the loop changes nothing, and a shift that is not constant is a different winding. The phase enters the field only through $e^{i\theta_{\mathrm{phs}}}$, so the field is unchanged by $S_{\tilde\Xi}\mapsto S_{\tilde\Xi}+2\pi\hbar m$ for any integer $m$, and the winding changes by $m$ under such a shift. Two readings are possible and only one is right.
+A shift of the action that is constant on the loop changes nothing, and a shift that is not constant is a different winding. The phase enters the field only through $e^{i\theta_{\mathrm{phs}}}$, so the field is unchanged by $S_{\tilde\Xi}\mapsto S_{\tilde\Xi}+h m$ for any integer $m$, and the winding changes by $m$ under such a shift. Two readings are possible and only one is right.
 
-Throughout, $\theta_{\mathrm{phs}}:=S_{\tilde\Xi}/\hbar$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
+Throughout, $\theta_{\mathrm{phs}}:=\frac{2\pi S_{\tilde\Xi}}{h}$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
 
 - The wrong reading treats the phase as a physical field with a physical value at each point, so that $\theta_{\mathrm{phs}}(r_0)=0$ and $\theta_{\mathrm{phs}}(r_0)=2\pi$ are different states. Under this reading the node is a place where the phase has a definite but unknown value, and the winding is a statement about a function's branch cut.
 - The right reading treats the phase as a coordinate on the central unit circle, so that the only gauge-invariant statements are those about the field's values. The winding is then the degree of the map and the integer is the charge; a branch cut is a choice of atlas and not a physical object.
@@ -228,7 +228,7 @@ The corpus's Dirac article states the same thing from the other side: the centra
 
 ### Gauge invariance, stated exactly
 
-Under a gauge transformation the field multiplies by a unit central element and the winding is unchanged for a single-valued transformation. Take $\tilde\Xi\mapsto\tilde\Xi\,e^{i\theta_{\mathrm{gau}}(r)}e_t$ with $\chi$ a single-valued function. Then the phase is shifted by $\hbar\chi$, the circulation around a loop gains $\hbar\oint\nabla\chi\cdot d\vec l=0$, and $n$ is unchanged. A transformation with a multivalued $\chi$ is not a gauge transformation of the field on the loop: it changes the field's value at each point and it changes $n$. So the charge is gauge invariant under the gauge group of single-valued transformations, and it classifies the field's configurations rather than being a redundant label.
+Under a gauge transformation the field multiplies by a unit central element and the winding is unchanged for a single-valued transformation. Take $\tilde\Xi\mapsto\tilde\Xi\,e^{i\theta_{\mathrm{gau}}(r)}e_t$ with $\chi$ a single-valued function. Then the phase is shifted by $\frac{h}{2\pi}\chi$, the circulation around a loop gains $\frac{h}{2\pi}\oint\nabla\chi\cdot d\vec l=0$, and $n$ is unchanged. A transformation with a multivalued $\chi$ is not a gauge transformation of the field on the loop: it changes the field's value at each point and it changes $n$. So the charge is gauge invariant under the gauge group of single-valued transformations, and it classifies the field's configurations rather than being a redundant label.
 
 **The node is where the gauge coordinate has no value, not where the field has no value.** That is why the node is a defect of the description and a feature of the state at the same time: the field is a perfectly good element of the algebra there — zero for the central scalar field — and it is the polar decomposition, and with it the phase, that fails.
 
@@ -250,19 +250,19 @@ This is why the node is a property of the algebra and not of a probability densi
 
 ## What Is Established and What Is Interpretation
 
-Established. The closure of the scalar velocity one-form on the complement of the nodal set, which is the vanishing of the curl of a gradient. The codimension of the nodal set, two real conditions on the coordinates. The circulation $2\pi\hbar n/m$ around a link of the nodal curve, exact and independent of the loop and of the amplitude profile, with the numerical check tabled above. The identification of the winding with the degree of the field's map into the central unit circle, hence with an element of $\pi_{1}$ of that circle. The identification of the nodal set with the field's arrival on the zero-divisor set, and of the failure of the polar form there with the failure of invertibility.
+Established. The closure of the scalar velocity one-form on the complement of the nodal set, which is the vanishing of the curl of a gradient. The codimension of the nodal set, two real conditions on the coordinates. The circulation $h n/m$ around a link of the nodal curve, exact and independent of the loop and of the amplitude profile, with the numerical check tabled above. The identification of the winding with the degree of the field's map into the central unit circle, hence with an element of $\pi_{1}$ of that circle. The identification of the nodal set with the field's arrival on the zero-divisor set, and of the failure of the polar form there with the failure of invertibility.
 
 Interpretation. That the circulation quantum $h/m$ should be read as a superfluid's quantum of circulation. The formula is the same and the algebra is the same, but the corpus's scalar field is not a superfluid: a superfluid's condensate is a macroscopic occupation and the field here is a single-particle amplitude. What transfers is the kinematics — the closure, the node, the integer — and the thermodynamic reading is [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html), which supplies the condensate and the normal part as separate components.
 
-**Not claimed.** No claim is made that the corpus's field *is* a superfluid order parameter, that a vortex solution exists for any particular mass, or that the quantisation is observable. The claim is the conditional one: *if* the field has a nodal line with winding $n$, *then* the circulation around it is $2\pi\hbar n/m$. The conditional is exact and the antecedent is a dynamical question.
+**Not claimed.** No claim is made that the corpus's field *is* a superfluid order parameter, that a vortex solution exists for any particular mass, or that the quantisation is observable. The claim is the conditional one: *if* the field has a nodal line with winding $n$, *then* the circulation around it is $h n/m$. The conditional is exact and the antecedent is a dynamical question.
 
 ## Summary
 
 The scalar flow is irrotational because its velocity is the gradient of the action. The closure is exact wherever the action exists, and the action fails to exist exactly where the field's value arrives on the zero-divisor set: at the cone's apex for the central scalar field, and away from the apex for a field of general value, the example $\tilde Q=\frac{1}{2}(e_t+i\vec e_x)$ having norm $\frac{1}{4}-\frac{1}{4}=0$ and not being zero. The nodal set has codimension two, so in three dimensions it is a curve and a loop can link it.
 
-Around a link the phase returns to itself up to $2\pi n$, and the circulation is $\kappa=2\pi\hbar n/m=2\pi c n/k_m$, independent of the loop's shape and radius and of the amplitude's profile. The check at radii $0.3$, $0.8$ and $2.0$ gave the same circulation to every digit for windings $1$, $2$ and $-1$, against $2\pi n$ to $2.6\times10^{-6}$, the residual being the chord error of the polygonal loop. The integer is the degree of the field's map from the link into the central unit circle, so the charge is a class in the algebra's group of invertibles and not a property of a phase function. That is the closure of open question 2 of the scalar polar form.
+Around a link the phase returns to itself up to $2\pi n$, and the circulation is $\kappa=h n/m=2\pi c n/k_m$, independent of the loop's shape and radius and of the amplitude's profile. The check at radii $0.3$, $0.8$ and $2.0$ gave the same circulation to every digit for windings $1$, $2$ and $-1$, against $2\pi n$ to $2.6\times10^{-6}$, the residual being the chord error of the polygonal loop. The integer is the degree of the field's map from the link into the central unit circle, so the charge is a class in the algebra's group of invertibles and not a property of a phase function. That is the closure of open question 2 of the scalar polar form.
 
-At the node the velocity diverges as $1/r$ and the current does not: $\lvert\vec J_\Phi\rvert=A^{2}\hbar\lvert n\rvert r/m$, which vanishes there. The quantum potential diverges as $-\hbar^{2}/(2mr^{2})$ while the quantum energy density stays finite at $-A^{2}/2$, checked on a grid to nine digits. The vortex ansatz satisfies the transport equation identically, reduces the amplitude equation to one ordinary differential equation whose indicial balance $s(s-1)=n^{2}$ fixes the core's power, and leaves the existence of a globally regular solution open.
+At the node the velocity diverges as $1/r$ and the current does not: $\lvert\vec J_\Phi\rvert=A^{2}\frac{h}{2\pi}\lvert n\rvert r/m$, which vanishes there. The quantum potential diverges as $-\frac{h^{2}}{4\pi^{2}}/(2mr^{2})$ while the quantum energy density stays finite at $-A^{2}/2$, checked on a grid to nine digits. The vortex ansatz satisfies the transport equation identically, reduces the amplitude equation to one ordinary differential equation whose indicial balance $s(s-1)=n^{2}$ fixes the core's power, and leaves the existence of a globally regular solution open.
 
 What remains open is dynamical: existence, stability and interaction of nodal solutions, and the thermodynamic reading of the condensate, which the two-fluid article supplies.
 
@@ -278,27 +278,27 @@ What remains open is dynamical: existence, stability and interaction of nodal so
 | $\lVert\tilde\Xi\rVert$ | Its amplitude, real and non-negative |
 | $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ | Proper density |
 | $S_{\tilde\Xi}$ | The action, in $\mathrm{J\,s}$ |
-| $\theta_{\mathrm{phs}}=S_{\tilde\Xi}/\hbar$ | The phase angle, dimensionless |
+| $\theta_{\mathrm{phs}}=\frac{2\pi S_{\tilde\Xi}}{h}$ | The phase angle, dimensionless |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | Quaternionic norm, vanishing on the cone |
 | $\tilde V_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}/m$ | Four-velocity of the scalar flow |
 | $v_{\Phi,\mu}$ | Its components, index low |
 | $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ | Vorticity 2-form |
 | $\tilde J_{\Phi}$ | Number current |
 | $\kappa=\oint\tilde V_\Phi\cdot d\vec l$ | Circulation |
-| $\kappa_1=2\pi\hbar/m=2\pi c/k_m$ | Quantum of circulation |
+| $\kappa_1=h/m=2\pi c/k_m$ | Quantum of circulation |
 | $n$ | Winding number, an integer; the letter is booked here for the winding and is not the Matsubara index |
 | $r$ | Distance from the nodal axis |
 | $\varphi$ | Angle about the axis |
 | $f(r)$ | Core amplitude of the vortex ansatz |
 | $A$ | Slope of the linear core, $f=Ar$ |
-| $k_t$ | Temporal wave number of the ansatz, $E=\hbar c k_t$ |
-| $k_m=mc/\hbar$ | Mass wave number |
-| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}$ | Quantum potential |
+| $k_t$ | Temporal wave number of the ansatz, $E=\frac{h}{2\pi} c k_t$ |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
+| $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}$ | Quantum potential |
 | $w_{\mathrm{qnt}}$ | Quantum energy density |
 | $\Box_\Phi$ | D'Alembertian of the material sector |
 | $\delta_{\mu\nu}$ | The one metric, all coefficients $+1$; indices stay low |
 | $\varepsilon_\mu$ | Sign weight, $+1$ temporal and $-1$ spatial |
-| $\hbar,\ m,\ c$ | Action quantum, mass, speed of light |
+| $\frac{h}{2\pi},\ m,\ c$ | Action quantum, mass, speed of light |
 
 ## Further Reading
 

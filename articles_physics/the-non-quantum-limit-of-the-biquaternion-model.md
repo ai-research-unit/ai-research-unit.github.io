@@ -10,32 +10,32 @@ On the solutions, yes. A state written as an amplitude and a phase carries one d
 
 What that removes is a partition, not a wave. *The Quantum–Classical Divide in the Biquaternion Framework* places the divide in a count: two projective measurements make a case quantum, one makes it classical, and wave phenomena are not the criterion. A superposition of two rays is one excitation across two modes, so two partitions. A single ray is one partition carrying the excitation with no second to sort, which is the corpus's classical class, Subset III. The limit removes the second partition, and that is the sense in which it is non-quantum. Classical optics performs the same passage, so the mathematics alone does not settle it and the count does.
 
-On the algebra, no. The algebra carries no $\hbar$. It carries $k_{m}$, which is $m\,c/\hbar$. A limit on $\hbar$ at fixed mass is a limit on $1/k_{m}$, which deepens the mass term instead of removing it.
+On the algebra, no. The algebra carries no $\frac{h}{2\pi}$. It carries $k_{m}$, which is $\frac{2\pi m\,c}{h}$. A limit on $\frac{h}{2\pi}$ at fixed mass is a limit on $1/k_{m}$, which deepens the mass term instead of removing it.
 
-The conventions are those of the companions: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, wave-number biquaternion $\tilde K_{\Phi}=ik_{t}^{\prime}e_{t}+\vec k_{\Phi}$, where $k_{t}^{\prime}=E/(\hbar c)$, $\vec k_{\Phi}=\vec p/\hbar$ and $-\langle\tilde K_{\Phi}\rangle_{\natural}=k_{m}^{2}$, the three numbers of *The Three Wavenumbers of a Particle*. Throughout, $k_m=m\,c/\hbar$, and $L$ is supplied by the problem.
+The conventions are those of the companions: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, wave-number biquaternion $\tilde K_{\Phi}=ik_{t}^{\prime}e_{t}+\vec k_{\Phi}$, where $k_{t}^{\prime}=\frac{2\pi E}{h\,c}$, $\vec k_{\Phi}=\frac{2\pi \vec p}{h}$ and $-\langle\tilde K_{\Phi}\rangle_{\natural}=k_{m}^{2}$, the three numbers of *The Three Wavenumbers of a Particle*. Throughout, $k_m=\frac{2\pi m\,c}{h}$, and $L$ is supplied by the problem.
 
-What is not new. The corpus has the formal character of the $\hbar\to0$ limit in *Similitudes Between the Poisson Bracket and the Quantum Commutator*, the phase forms in two companions, the divide as a count in a third, and the centre as classical sector in a fourth. Added here: the separation of the limit from the approximation, why the limit must be formal, the criterion as one inverse length, the refusal of $1/k_{m}$, the partition it removes, the phase route, the derivation of the equations of motion, the ordering of the three terms, the mass-order rule for a first-order equation, and the sector in which the limit does not exist. The relativistic side of the same expansion is carried out in the companion *Relativistic Mechanics from the Dirac Wave: The Non-Quantum Limit in Biquaternionic Form*.
+What is not new. The corpus has the formal character of the $h\to0$ limit in *Similitudes Between the Poisson Bracket and the Quantum Commutator*, the phase forms in two companions, the divide as a count in a third, and the centre as classical sector in a fourth. Added here: the separation of the limit from the approximation, why the limit must be formal, the criterion as one inverse length, the refusal of $1/k_{m}$, the partition it removes, the phase route, the derivation of the equations of motion, the ordering of the three terms, the mass-order rule for a first-order equation, and the sector in which the limit does not exist. The relativistic side of the same expansion is carried out in the companion *Relativistic Mechanics from the Dirac Wave: The Non-Quantum Limit in Biquaternionic Form*.
 
 ## The Constant the Algebra Does Not Carry
 
-**No element carries an invertible element.** A dimension enters only where an element is identified with a quantity, so $\hbar$ is not a symbol the algebra can act on.
+**No element carries an invertible element.** A dimension enters only where an element is identified with a quantity, so $\frac{h}{2\pi}$ is not a symbol the algebra can act on.
 
-| where $\hbar$ appears | with the algebra's numbers | a limit on it does this |
+| where $\frac{h}{2\pi}$ appears | with the algebra's numbers | a limit on it does this |
 |---|---|---|
-| the mass term | $k_{m}=\frac{m\,c}{\hbar}$, $\;-\langle\tilde K_{\Phi}\rangle_{\natural}=k_{m}^{2}$ | $k_{m}\to\infty$: the mass term diverges |
-| the phase | $\frac{S_{\tilde\Xi}}{\hbar}=\mathrm{Sc}\!\left(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural}\right)$ | a pure number; nothing left to move |
-| the bracket | $[x,p]=i\,\hbar$ | it vanishes: the Poisson bracket |
+| the mass term | $k_{m}=\frac{2\pi m\,c}{h}$, $\;-\langle\tilde K_{\Phi}\rangle_{\natural}=k_{m}^{2}$ | $k_{m}\to\infty$: the mass term diverges |
+| the phase | $\frac{2\pi S_{\tilde\Xi}}{h}=\mathrm{Sc}\!\left(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural}\right)$ | a pure number; nothing left to move |
+| the bracket | $[x,p]=i\,\frac{h}{2\pi}$ | it vanishes: the Poisson bracket |
 
 The three rows do not agree, and that is the argument. The third is the classical result; the first is its opposite, since $\Box_\Phi-k_{m}^{2}$ stiffens until propagation is suppressed. One knob cannot deliver both.
 
-At fixed wavelength it does not even leave the other family. On shell $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_{m}^{2}$, so $\frac{k_{\Phi}}{k_{m}}=\gamma\beta$ and $\frac{k_{t}^{\prime}}{k_{m}}=\gamma$. Send $\hbar\to0$ at fixed $k_{\Phi}$: both tend to zero and to one, and the triangle collapses onto the mass side.
+At fixed wavelength it does not even leave the other family. On shell $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_{m}^{2}$, so $\frac{k_{\Phi}}{k_{m}}=\gamma\beta$ and $\frac{k_{t}^{\prime}}{k_{m}}=\gamma$. Send $h\to0$ at fixed $k_{\Phi}$: both tend to zero and to one, and the triangle collapses onto the mass side.
 
-| $\hbar$ | $k_{m}\ (\mathrm{m^{-1}})$ | $\gamma$ | $\beta$ |
+| $\frac{h}{2\pi}$ | $k_{m}\ (\mathrm{m^{-1}})$ | $\gamma$ | $\beta$ |
 |---|---|---|---|
-| $\hbar$ | $2.590\times10^{12}$ | $1.00005$ | $1.000\times10^{-2}$ |
-| $\hbar/100$ | $2.590\times10^{14}$ | $1.000000005$ | $1.000\times10^{-4}$ |
+| $\frac{h}{2\pi}$ | $2.590\times10^{12}$ | $1.00005$ | $1.000\times10^{-2}$ |
+| $\frac{h}{2\pi 100}$ | $2.590\times10^{14}$ | $1.000000005$ | $1.000\times10^{-4}$ |
 
-The collapse is the rest frame, $\beta\to0$ at fixed $k_{\Phi}$. That is a member of the $\beta$ family, not a second limit. The naive $\hbar\to0$ returns a kinematic limit inside the family the companion article already owns.
+The collapse is the rest frame, $\beta\to0$ at fixed $k_{\Phi}$. That is a member of the $\beta$ family, not a second limit. The naive $h\to0$ returns a kinematic limit inside the family the companion article already owns.
 
 ## The Criterion, and What It Is Not
 
@@ -66,7 +66,7 @@ The approximation is that passage stopped at a stated order. It keeps the terms 
 
 One number separates them. The limit has no error, only a discarded term. The approximation has an error, and the error is a function of position.
 
-The limit is not the truncation of everything at order zero. The continuity equation survives untouched, because it never contained $\hbar$. A reader who truncates both equations at order zero deletes the density and keeps the phase.
+The limit is not the truncation of everything at order zero. The continuity equation survives untouched, because it never contained $\frac{h}{2\pi}$. A reader who truncates both equations at order zero deletes the density and keeps the phase.
 
 The approximation needs a domain and the limit does not. The Gaussian ratio $\rho=\epsilon^{2}\lvert x^{2}/4\sigma^{2}-\tfrac12\rvert$ reaches one at $x\simeq2\sigma/\epsilon$ for every $\epsilon$, so the truncated equation holds on a region of a solution and never on the solution.
 
@@ -88,8 +88,8 @@ Three terms, and the criterion sizes them. In the momentum, the real part is the
 | term | size | who retains it |
 |---|---|---|
 | $\vec\nabla_\Phi S_{\tilde\Xi}$ | $1$ | the limit, and every order above it |
-| $\hbar\,\vec\nabla_\Phi\ln A$ | $\epsilon$ | the first correction to the momentum |
-| $\hbar^{2}\,\Delta_\Phi A/A$ | $\epsilon^{2}$ | the exact rewriting; the limit drops it |
+| $\frac{h}{2\pi}\,\vec\nabla_\Phi\ln A$ | $\epsilon$ | the first correction to the momentum |
+| $\frac{h^{2}}{4\pi^{2}}\,\Delta_\Phi A/A$ | $\epsilon^{2}$ | the exact rewriting; the limit drops it |
 
 Order zero is the eikonal and order two is the return of the quantum. The limit keeps the first row and drops the third. The exact rewriting keeps all three, and that pair is Madelung's. The first order between them corrects the momentum and not the equation.
 
@@ -100,7 +100,7 @@ The order is a number the author states, and the error is what the number buys. 
 Write the state and apply the momentum. Take $\tilde{Ξ}=A\exp\!\left(i\theta_{\mathrm{phs}}\right)\xi$ with $A>0$ real and central, $S_{\tilde\Xi}$ real and central, and $\xi$ constant. The action carries the subscript of the field it belongs to, the spelling the companion limit article uses, so that the two articles of the pair write one symbol. Then
 
 $$
-\tilde p\,\tilde{Ξ}=\left(\vec\nabla_\Phi S_{\tilde\Xi}-i\,\hbar\vec\nabla_\Phi\ln A\right)\tilde{Ξ} .
+\tilde p\,\tilde{Ξ}=\left(\vec\nabla_\Phi S_{\tilde\Xi}-i\,\frac{h}{2\pi}\vec\nabla_\Phi\ln A\right)\tilde{Ξ} .
 $$
 
 The real part keeps its leading term and the imaginary part carries the first correction. The two ratios are
@@ -120,7 +120,7 @@ The rule is written for the scalar problem; the criterion does not depend on tha
 | | the $\beta$ limit | this limit |
 |---|---|---|
 | the object limited | the element $\tilde V_{\Phi}$ | the solution $\tilde{Ξ}$ |
-| the parts compared | $\gamma c$ against $\gamma v$ | $\vec\nabla_\Phi S_{\tilde\Xi}$ against $\hbar\vec\nabla_\Phi\ln A$ |
+| the parts compared | $\gamma c$ against $\gamma v$ | $\vec\nabla_\Phi S_{\tilde\Xi}$ against $\frac{h}{2\pi}\vec\nabla_\Phi\ln A$ |
 | the parameter | internal to the element | external to the algebra |
 | the dropped pieces | $\frac{3}{8}\beta^{4}$ temporal, $\frac{1}{2}\beta^{2}$ vector | order $\epsilon^{2}$ in the amplitude |
 | the error | a number, in closed form | an operator, with changing sign |
@@ -146,7 +146,7 @@ Four sectors, and the free Proca field is the one that refuses. The limit needs 
 | sector | free | coupled |
 |---|---|---|
 | Schrödinger | yes, in *The Non-Quantum Limit of the Free Schrödinger Equation* | yes, with the kinetic momentum |
-| Klein–Gordon | yes, in *The Non-Quantum Limit of the Free Klein–Gordon Equation* | yes, in *The Non-Quantum Limit of the Coupled Klein–Gordon Equation*, with the circulation quantum $2\pi\hbar n+ϙ\Phi_B$ |
+| Klein–Gordon | yes, in *The Non-Quantum Limit of the Free Klein–Gordon Equation* | yes, in *The Non-Quantum Limit of the Coupled Klein–Gordon Equation*, with the circulation quantum $h n+ϙ\Phi_B$ |
 | Dirac | yes, on the square | yes, on the square, with the spin transport |
 | Proca | no: the word is a scale and a boost | yes: the phase comes from the connection |
 
@@ -154,15 +154,15 @@ Four sectors, and the free Proca field is the one that refuses. The limit needs 
 
 ## The Classical Equations
 
-Start from the Schrödinger equation. In the corpus's biquaternionic form it is $i\,\hbar\,c\partial_{h_t'}\tilde\Xi=\tilde H_\Psi\tilde\Xi$, which with $h_t'=c\,t$ reads $i\hbar\,\partial_t\psi=H\psi$. Take the scalar case $H=\frac{\vec p^{\,2}}{2m}+V$, so that
+Start from the Schrödinger equation. In the corpus's biquaternionic form it is $i\,\frac{h}{2\pi}\,c\partial_{h_t'}\tilde\Xi=\tilde H_\Psi\tilde\Xi$, which with $h_t'=c\,t$ reads $i \frac{h}{2\pi}\,\partial_t\psi=H\psi$. Take the scalar case $H=\frac{\vec p^{\,2}}{2m}+V$, so that
 
 $$
-i\hbar\,\partial_t\psi=-\frac{\hbar^{2}}{2m}\Delta_\Phi\psi+V\psi .
+i \frac{h}{2\pi}\,\partial_t\psi=-\frac{h^{2}}{8\pi^{2}m}\Delta_\Phi\psi+V\psi .
 $$
 
 Substitute the amplitude and the phase, $\tilde{Ξ}=Ae^{i\theta_{\mathrm{phs}}}\xi$ with $A>0$ and $S_{\tilde\Xi}$ real. Two real equations follow, and neither is an approximation:
 
-Throughout, $\theta_{\mathrm{phs}}:=S_{\tilde\Xi}/\hbar$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
+Throughout, $\theta_{\mathrm{phs}}:=\frac{2\pi S_{\tilde\Xi}}{h}$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
 
 $$
 \partial_t S_{\tilde\Xi}+\frac{\lvert\vec\nabla_\Phi S_{\tilde\Xi}\rvert^{2}}{2m}+V-\frac{m\,c^{2}}{2k_{m}^{2}}\frac{\Delta_\Phi A}{A}=0 ,
@@ -173,7 +173,7 @@ $$
 Drop the third term of the first. It is the quantum potential $Q$, and its size against the kinetic term is the criterion:
 
 $$
-\frac{\lvert Q\rvert}{\lvert\vec\nabla_\Phi S_{\tilde\Xi}\rvert^{2}/2m}=\frac{\hbar^{2}}{p^{2}L^{2}}=\epsilon^{2} .
+\frac{\lvert Q\rvert}{\lvert\vec\nabla_\Phi S_{\tilde\Xi}\rvert^{2}/2m}=\frac{h^{2}}{(2\pi)^{2} p^{2}L^{2}}=\epsilon^{2} .
 $$
 
 When it is small the phase equation is Hamilton–Jacobi and the continuity equation is untouched, because it never contained $Q$:
@@ -244,7 +244,7 @@ The macroscopic end is true and empty. For the Earth in its orbit, over $L=1\ \m
 
 ## Summary
 
-The non-quantum limit cannot truncate an element, because the algebra holds no quantum constant. $\hbar$ enters only as $\hbar$. Lowered at fixed mass it stiffens the mass term while it softens the bracket; at fixed wavelength it brings the particle to rest.
+The non-quantum limit cannot truncate an element, because the algebra holds no quantum constant. $\frac{h}{2\pi}$ enters only as $\frac{h}{2\pi}$. Lowered at fixed mass it stiffens the mass term while it softens the bracket; at fixed wavelength it brings the particle to rest.
 
 The limit and the approximation are two objects and one number. The limit is the formal passage, and it yields two equations with no error. The approximation is the passage stopped at a stated order, and it yields an error that is a function of position and a region where the error is small. The third term of the expansion, the quantum potential, is order $\epsilon^{2}$ against the kinetic term, so the limit drops it and the second-order approximation puts it back.
 
@@ -261,7 +261,7 @@ What remains is one external number, $\epsilon=\frac{1}{k_{\Phi}L}$. When it is 
 | $N$ | The order kept by the approximation; the limit keeps order $0$ in the phase equation and all orders in the continuity equation |
 | $\epsilon^{N+1}$ | The size of the remainder the approximation drops |
 | $Q=-\frac{m\,c^{2}}{2k_{m}^{2}}\frac{\Delta_\Phi A}{A}$ | The quantum potential; central, real, and the term the limit drops |
-| $k_{\Phi}=\lvert\vec p\rvert/\hbar$, $k_{m}=\frac{m\,c}{\hbar}$ | The momentum and mass wave numbers; $\hbar$ is the product $\hbar$ |
+| $k_{\Phi}=\frac{2\pi \lvert\vec p\rvert}{h}$, $k_{m}=\frac{2\pi m\,c}{h}$ | The momentum and mass wave numbers; $\frac{h}{2\pi}$ is the product $\frac{h}{2\pi}$ |
 | $\beta=\lvert\vec v\rvert/c$ | The parameter of the other limit, internal to $\tilde V_{\Phi}$ |
 
 ## Further Reading

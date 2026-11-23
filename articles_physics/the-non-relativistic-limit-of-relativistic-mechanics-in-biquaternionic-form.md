@@ -25,7 +25,7 @@ $$
 = \gamma^{2}\left(-c^{2}+\vec v^{\,2}\right) = -c^{2} ,
 $$
 
-is the whole input: one equation, true of every particle, containing no mass, no $\hbar$ and no energy.
+is the whole input: one equation, true of every particle, containing no mass, no $\frac{h}{2\pi}$ and no energy.
 
 **The constraint is conserved, and it is complete.** The norm of $\mathbb{B}$ is multiplicative, $\langle\tilde Q_{1}\tilde Q_{2}\rangle_{\natural}=\langle\tilde Q_{1}\rangle_{\natural}\langle\tilde Q_{2}\rangle_{\natural}$, and a boost multiplies on the two sides by elements of unit norm. Hence $\langle\tilde V_{\Phi}'\rangle_{\natural}=-c^{2}$ in every frame and along the worldline: the group preserves the constraint rather than the constraint being imposed after the fact. The element has four real coefficients and the norm is one real condition. The three that remain are the three components of the velocity.
 
@@ -99,7 +99,7 @@ The table. Every row is $\lambda\gamma\left(ic\,e_{t}+\vec v\right)$, truncated 
 | $\tilde J_{\Phi}$ | $\rho_{0}$ | $ic\rho\,e_{t}+\vec j$ | $ic\rho_{0}\left(1+\frac{\beta^{2}}{2}\right)e_{t}+\rho_{0}\vec v$ | $\frac{3}{8}ic\rho_{0}\beta^{4}e_{t}+\frac{\beta^{2}}{2}\rho_{0}\vec v$ |
 | $\tilde A_{\Phi}$ | $a'_{t,0}/c$ | $ia'_{t}e_{t}+\vec A$ | $ia'_{t,0}\left(1+\frac{\beta^{2}}{2}\right)e_{t}+a'_{t,0}\frac{\vec v}{c}$ | $\frac{3}{8}ia'_{t,0}\beta^{4}e_{t}+\frac{\beta^{2}}{2}a'_{t,0}\frac{\vec v}{c}$ |
 
-with $\vec\beta=\vec v/c$, $k_m=mc/\hbar$, $k'_{t}=E/(\hbar c)$, $\vec k_{\Phi}=\vec p/\hbar$, $E=\gamma mc^{2}$, $\vec p=\gamma m\vec v$, $\rho$ the charge density of $\tilde J_{\Phi}$ and $\tilde A_{\Phi}=ia'_{t}e_{t}+\vec A$, the coefficient $a'_{t,0}$ being its value at rest. The readings of the three wave numbers are the subject of *The Three Wavenumbers of a Particle*. The first row is the base case; the second is its scale; the last three are the same statement in wave numbers, in a charge density and in a potential.
+with $\vec\beta=\vec v/c$, $k_m=\frac{2\pi mc}{h}$, $k'_{t}=\frac{2\pi E}{h\,c}$, $\vec k_{\Phi}=\frac{2\pi \vec p}{h}$, $E=\gamma mc^{2}$, $\vec p=\gamma m\vec v$, $\rho$ the charge density of $\tilde J_{\Phi}$ and $\tilde A_{\Phi}=ia'_{t}e_{t}+\vec A$, the coefficient $a'_{t,0}$ being its value at rest. The readings of the three wave numbers are the subject of *The Three Wavenumbers of a Particle*. The first row is the base case; the second is its scale; the last three are the same statement in wave numbers, in a charge density and in a potential.
 
 The energy and the momentum. The row for $\tilde P_{\Phi}$ reads off as
 
@@ -139,7 +139,7 @@ The constant is not a knob. The limit is taken on the state, not on $c$. Setting
 
 It does not produce spin or antiparticles. The constraint is one equation on one element, and intrinsic angular momentum needs a multicomponent field. The corpus reaches the spinor case through the square root of the wave operator, and the negative branch of the energy through second quantisation.
 
-It does not produce a wave equation. A velocity is not an operator. Only a scaled element carrying $\hbar$ is, and only then does the truncation of the energy become the free Schrödinger equation: that is the subject of *The Schrödinger Equation in Biquaternionic Form*, and, for the Dirac field, of *The Foldy–Wouthuysen Transformation in Biquaternionic Form*. The wave equation is the scale's consequence, not the limit's.
+It does not produce a wave equation. A velocity is not an operator. Only a scaled element carrying $\frac{h}{2\pi}$ is, and only then does the truncation of the energy become the free Schrödinger equation: that is the subject of *The Schrödinger Equation in Biquaternionic Form*, and, for the Dirac field, of *The Foldy–Wouthuysen Transformation in Biquaternionic Form*. The wave equation is the scale's consequence, not the limit's.
 
 It does not re-derive Galilean kinematics. What is expanded here is the state, not the transformation law between frames.
 
@@ -175,7 +175,7 @@ The kinematic content of relativistic mechanics is one element and one constrain
 
 The limit is one rule: keep the excess of $\gamma$ to order $\beta^{2}$ in the temporal slot and drop it in the vector slot. It gives $\tilde V_{\Phi,1}=ic\left(1+\frac{\beta^{2}}{2}\right)e_{t}+\vec v$, with the exact ratios $\frac{\gamma+1}{2\gamma^{2}}=1-\frac{3}{4}\beta^{2}+\cdots$ in the temporal slot and $\frac{1}{\gamma}=1-\frac{1}{2}\beta^{2}+\cdots$ in the vector slot.
 
-The scale attaches once. Every element of the family $\tilde X_{\Phi}=\lambda\tilde V_{\Phi}$ is truncated by one multiplication, which gives $E=mc^{2}+\frac{1}{2}mv^{2}$, $\vec p=m\vec v$, $\mathcal{E}=p^{2}/2m$, and the same three statements in wave numbers, in charge density and in the potential of one charge. Only an element carrying $\hbar$ goes further, to a wave equation, and that is the scale's doing and not the limit's.
+The scale attaches once. Every element of the family $\tilde X_{\Phi}=\lambda\tilde V_{\Phi}$ is truncated by one multiplication, which gives $E=mc^{2}+\frac{1}{2}mv^{2}$, $\vec p=m\vec v$, $\mathcal{E}=p^{2}/2m$, and the same three statements in wave numbers, in charge density and in the potential of one charge. Only an element carrying $\frac{h}{2\pi}$ goes further, to a wave equation, and that is the scale's doing and not the limit's.
 
 ## Summary of Notation
 
@@ -191,7 +191,7 @@ The scale attaches once. Every element of the family $\tilde X_{\Phi}=\lambda\ti
 | $\tilde X_{\Phi} = \lambda\tilde V_{\Phi}$ | The family; $\lambda$ is the one scale, real and state-independent |
 | $E=\gamma mc^{2}$, $\vec p=\gamma m\vec v$ | Energy and momentum; the components of $\tilde P_{\Phi}=m\tilde V_{\Phi}$ |
 | $\mathcal{E} = E-mc^{2} = \left(\gamma-1\right)mc^{2}$ | Excess energy; equal to $\frac{1}{2}mv^{2}$ after truncation |
-| $k_m=mc/\hbar$, $k'_{t}=E/(\hbar c)$, $\vec k_{\Phi}=\vec p/\hbar$ | The three wave numbers of $\tilde K_{\Phi}=\left(k_m/c\right)\tilde V_{\Phi}$ |
+| $k_m=\frac{2\pi mc}{h}$, $k'_{t}=\frac{2\pi E}{h\,c}$, $\vec k_{\Phi}=\frac{2\pi \vec p}{h}$ | The three wave numbers of $\tilde K_{\Phi}=\left(k_m/c\right)\tilde V_{\Phi}$ |
 | $\rho=\gamma\rho_{0}$, $\vec j=\rho\vec v$ | Charge density and current of $\tilde J_{\Phi}=\rho_{0}\tilde V_{\Phi}$ |
 | $\theta_{\mathrm{rpd}} = \operatorname{artanh}\beta$ | Rapidity; the additive parameter of the boost |
 | $r'_{t} = c\,t$ | Material time |

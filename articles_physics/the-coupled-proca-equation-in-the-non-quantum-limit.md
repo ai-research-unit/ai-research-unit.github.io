@@ -26,7 +26,7 @@ The minimal coupling of a massive vector field, the transverse polarisation of a
 
 The word is defined for $\varrho>0$; the cone is $\varrho=0$; the limit is a statement on that domain.
 
-Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+iq\tilde A_\mu/\hbar$; the word $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with the frame a full unit; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$.
+Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iq\tilde A_\mu}{h}$; the word $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with the frame a full unit; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=\frac{2\pi mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$.
 
 ## The Word, the Norm and the Four Brackets
 
@@ -43,7 +43,7 @@ $$
 
 with the same four types as the Dirac chart: real central, central imaginary, Hermitian, real vector part. The limit's order structure is therefore the Dirac family's, and the reason is that the carrier admits the same four factors.
 
-For $A_\mu=\partial_\mu\Lambda$ the covariant derivative acts as $i\partial_\mu(\theta_{\mathrm{pha}}+\frac{q}{\hbar}\Lambda)$, so the entire effect of a pure gauge potential is a reparameterisation of one coordinate — the parent's section title and the reason the criterion must be written on the mechanical phase gradient.
+For $A_\mu=\partial_\mu\Lambda$ the covariant derivative acts as $i\partial_\mu(\theta_{\mathrm{pha}}+\frac{2\pi q}{h}\Lambda)$, so the entire effect of a pure gauge potential is a reparameterisation of one coordinate — the parent's section title and the reason the criterion must be written on the mechanical phase gradient.
 
 The second-order operator reads
 
@@ -59,7 +59,7 @@ The constraint. $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde
 
 ## The Ordering
 
-The criterion. $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$ the *mechanical* momentum, because the canonical one is not gauge invariant.
+The criterion. $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$ the *mechanical* momentum, because the canonical one is not gauge invariant.
 
 The table, and it is the Dirac table.
 
@@ -82,9 +82,9 @@ The mechanical mass shell.
 $$
 \frac{\mathcal E^{2}}{c^{2}}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2},
 \qquad
-\vec\pi=\hbar\vec\kappa=\vec\nabla_\Phi S-q\vec A,
+\vec\pi=\frac{h}{2\pi}\vec\kappa=\vec\nabla_\Phi S-q\vec A,
 \qquad
-\mathcal E=-\hbar c\,\kappa_t=E-q\varphi .
+\mathcal E=-\frac{h}{2\pi} c\,\kappa_t=E-q\varphi .
 $$
 
 Three conditions in one display, and each has a different origin. The shell is the mass term's content; the transversality is the constraint's; the polarisation is the frame's.
@@ -110,7 +110,7 @@ Because the equation is read in the field's own frame, the three laws are the fr
 The deleted content. The amplitude's curvature and the frame's curvature, both quadratic in the order-one brackets:
 
 $$
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi \varrho}{\varrho}
+Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho}
 \quad\text{and}\quad
 \text{the frame's curvature terms}.
 $$
@@ -152,10 +152,10 @@ Order zero is the mechanical mass shell together with the transverse polarisatio
 |---|---|
 | $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The coupled word on the complex carrier |
 | $\varrho>0$ | The scale; the template's amplitude |
-| $\theta_{\mathrm{pha}}$; $S=\hbar\theta_{\mathrm{pha}}$ | The phase; the action |
+| $\theta_{\mathrm{pha}}$; $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | The phase; the action |
 | $\langle\tilde A\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ | The norm; the phase as its argument |
 | $\tilde A^{-1}e_\mu^{\natural}\tilde A$ | The field's own tetrad |
-| $\kappa_t$, $\vec\kappa$; $\vec\pi=\hbar\vec\kappa$ | The covariant wavevector's slots; the mechanical momentum |
+| $\kappa_t$, $\vec\kappa$; $\vec\pi=\frac{h}{2\pi}\vec\kappa$ | The covariant wavevector's slots; the mechanical momentum |
 | $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)=0$ | The covariant Lorenz constraint |
 | $\epsilon=1/(\pi_{\Phi}L)$ | The parameter; available here and not in the free chart |
 

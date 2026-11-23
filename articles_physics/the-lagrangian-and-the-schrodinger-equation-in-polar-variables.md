@@ -5,10 +5,10 @@
 *The Schrödinger Equation in Biquaternionic Polar Variables* substitutes the complete polar decomposition of the field into the equation. This article substitutes the same word into the *action*, and reads the Lagrangian and the Euler–Lagrange equations that come out. The action in element form is the companion's, *The Lagrangian and the Schrödinger Equation*:
 
 $$
-S[\tilde\Xi,\tilde\Xi^{*}]=\int \mathrm{d}t'\;\mathrm{Sc}\Bigl[\frac{i\hbar}{2}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi\Bigr],
+S[\tilde\Xi,\tilde\Xi^{*}]=\int \mathrm{d}t'\;\mathrm{Sc}\Bigl[\frac{i h}{4\pi}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi\Bigr],
 $$
 
-with the polar form's variable $t'$, so that the constant multiplying the derivative is $\hbar$ and not $\hbar\,c$. The word is
+with the polar form's variable $t'$, so that the constant multiplying the derivative is $\frac{h}{2\pi}$ and not $\frac{h}{2\pi}\,c$. The word is
 
 $$
 \tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
@@ -22,15 +22,15 @@ with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd
 
 **Two cases, and they are not the same calculation.**
 
-*The central field.* $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ with $\varepsilon=\pm1$. The word collapses to three parameters, the kinetic term is $-\hbar\,\varrho^{2}\dot\theta_{\mathrm{pha}}$, and the action is Madelung's. This case is closed and standard.
+*The central field.* $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ with $\varepsilon=\pm1$. The word collapses to three parameters, the kinetic term is $-\frac{h}{2\pi}\,\varrho^{2}\dot\theta_{\mathrm{pha}}$, and the action is Madelung's. This case is closed and standard.
 
 *The general element.* All four factors, with $\theta_{\mathrm{rpd}}\ne0$ and the rotor turning. The kinetic term is not the central one times a function of the rapidity: it carries, in addition, a term in which the rotor's angular velocity is contracted with the boost axis. That cross term is the article's main technical finding, because the naive reading of the polar action, in which the whole kinetic term is a function of the rapidity times $\dot\theta_{\mathrm{pha}}$, is wrong, and it is wrong in a way that the central case cannot show.
 
-**What the article establishes, in four sentences.** The polar Lagrangian is computed exactly: its kinetic term is $-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}+\tfrac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})$, and its potential is $\varrho^{2}\bigl(h_t\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\,(\vec h_\Psi\cdot\vec u_{\mathrm b})\bigr)$. Four of the eight momenta vanish identically, namely those conjugate to $\varrho$, to $\theta_{\mathrm{rpd}}$ and to the two angles of $\vec u_{\mathrm b}$. The Euler–Lagrange equations are equivalent to the parent's equation, because the eight residuals are exactly the eight real components of the equation in the parameter basis, and the word's Jacobian is invertible. Their solution is the parent's flow: $\varrho$ and $\theta_{\mathrm{rpd}}$ constant, $\dot\theta_{\mathrm{pha}}=-h_t/\hbar$, $\vec\Omega=2\vec h_\Psi/\hbar$, and the boost axis fixed in the rotor's own frame.
+**What the article establishes, in four sentences.** The polar Lagrangian is computed exactly: its kinetic term is $-\frac{h}{2\pi} \varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}+\tfrac{h}{4\pi}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})$, and its potential is $\varrho^{2}\bigl(h_t\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\,(\vec h_\Psi\cdot\vec u_{\mathrm b})\bigr)$. Four of the eight momenta vanish identically, namely those conjugate to $\varrho$, to $\theta_{\mathrm{rpd}}$ and to the two angles of $\vec u_{\mathrm b}$. The Euler–Lagrange equations are equivalent to the parent's equation, because the eight residuals are exactly the eight real components of the equation in the parameter basis, and the word's Jacobian is invertible. Their solution is the parent's flow: $\varrho$ and $\theta_{\mathrm{rpd}}$ constant, $\dot\theta_{\mathrm{pha}}=-\frac{2\pi h_t}{h}$, $\vec\Omega=\frac{2\pi 2\vec h_\Psi}{h}$, and the boost axis fixed in the rotor's own frame.
 
 **The constant setting throughout.** As in the polar parent, the Hamiltonian is a constant element, $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $h_t$ and $\vec h_\Psi$ fixed numbers, so that the equation is an ordinary differential equation in $t'$ and its solution is the closed form $\tilde Q(t')=\exp(-i\theta_{\mathrm{evo}})$. The operator setting appears only in the central case, where the action is Madelung's and the operator is the Laplacian; it is stated there and not re-derived. No result is transferred between the two settings.
 
-The angle is $\theta_{\mathrm{evo}}=h_t t'/\hbar$, the scalar part of the Hamiltonian times the interval over $\hbar$. The exponent $-i\tilde H_\Psi t'/\hbar$ is anti-Hermitian, not the Hamiltonian, and that is what makes it unitary: a purely imaginary scalar part makes the phase a real angle, and a real vector part makes the rotor a unit rotor.
+The angle is $\theta_{\mathrm{evo}}=\frac{2\pi h_t t'}{h}$, the scalar part of the Hamiltonian times the interval over $\frac{h}{2\pi}$. The exponent $-\frac{2\pi i\tilde H_\Psi t'}{h}$ is anti-Hermitian, not the Hamiltonian, and that is what makes it unitary: a purely imaginary scalar part makes the phase a real angle, and a real vector part makes the rotor a unit rotor.
 
 The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Schrödinger equation in its polar form.
 
@@ -97,22 +97,22 @@ $$
 +i\,\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\tfrac12\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})\Bigr).
 $$
 
-The real part is a total derivative, exactly as in the element form, and the imaginary part is the whole of the kinetic Lagrangian. The antisymmetrised kinetic term of the action is $-\hbar$ times the imaginary part, that is,
+The real part is a total derivative, exactly as in the element form, and the imaginary part is the whole of the kinetic Lagrangian. The antisymmetrised kinetic term of the action is $-\frac{h}{2\pi}$ times the imaginary part, that is,
 
 $$
-\frac{i\hbar}{2}\Bigl(\mathrm{Sc}(\tilde\Xi^{*}\partial_{t'}\tilde\Xi)-\mathrm{Sc}(\partial_{t'}\tilde\Xi^{*}\,\tilde\Xi)\Bigr)
-=-\hbar\,\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\tfrac12\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})\Bigr).
+\frac{i h}{4\pi}\Bigl(\mathrm{Sc}(\tilde\Xi^{*}\partial_{t'}\tilde\Xi)-\mathrm{Sc}(\partial_{t'}\tilde\Xi^{*}\,\tilde\Xi)\Bigr)
+=-\frac{h}{2\pi}\,\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\tfrac12\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})\Bigr).
 $$
 
 So the kinetic Lagrangian is
 
 $$
-K=-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}+\frac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b}).
+K=-\frac{h}{2\pi}\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}+\frac{h}{4\pi}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b}).
 $$
 
-**The factor is $\cosh\theta_{\mathrm{rpd}}$, and it is not the whole story.** The coefficient of $\dot\theta_{\mathrm{pha}}$ is $-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}$, so the metric factor of the phase term is the rapidity's hyperbolic cosine, and it is $1$ on the central field. But the kinetic term is *not* a function of the rapidity times $\dot\theta_{\mathrm{pha}}$: the second term couples the rotor's angular velocity to the boost axis, and it survives at $\dot\theta_{\mathrm{pha}}=0$. A computation that drops it gives an action whose Euler–Lagrange equations have almost no solutions, as the fourth section shows. The cross term is therefore not a refinement; it is part of the leading term.
+**The factor is $\cosh\theta_{\mathrm{rpd}}$, and it is not the whole story.** The coefficient of $\dot\theta_{\mathrm{pha}}$ is $-\frac{h}{2\pi} \varrho^{2}\cosh\theta_{\mathrm{rpd}}$, so the metric factor of the phase term is the rapidity's hyperbolic cosine, and it is $1$ on the central field. But the kinetic term is *not* a function of the rapidity times $\dot\theta_{\mathrm{pha}}$: the second term couples the rotor's angular velocity to the boost axis, and it survives at $\dot\theta_{\mathrm{pha}}=0$. A computation that drops it gives an action whose Euler–Lagrange equations have almost no solutions, as the fourth section shows. The cross term is therefore not a refinement; it is part of the leading term.
 
-**A check that isolates the cross term.** Set $\dot\theta_{\mathrm{pha}}=0$, $\dot \varrho=0$, $\dot\theta_{\mathrm{rpd}}=0$, and let only the rotor's angle run, about an axis parallel to $\vec u_{\mathrm b}$. Then $\vec\Omega=\dot\theta_{\mathrm{axr}}\vec u_{\mathrm b}$ and the cross term equals $\tfrac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{axr}}$, which is not zero. Computed from the element, with $\varrho=1.3$, $\theta_{\mathrm{rpd}}=0.8$ and $\dot\theta_{\mathrm{axr}}=1$, the kinetic Lagrangian is $0.7504$ for parallel axes and $0.4747$ for the axes $\vec u_{\mathrm b}$ at the spherical angles $(1.1,1.2)$ and $\vec u_{\mathrm r}$ at $(2.0,1.4)$. The formula gives $0.7504$ and $\tfrac12\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec u_{\mathrm r}\cdot\vec u_{\mathrm b})=0.7504\times0.6325=0.4747$. The element was evaluated without the formula, and the formula reproduces both numbers.
+**A check that isolates the cross term.** Set $\dot\theta_{\mathrm{pha}}=0$, $\dot \varrho=0$, $\dot\theta_{\mathrm{rpd}}=0$, and let only the rotor's angle run, about an axis parallel to $\vec u_{\mathrm b}$. Then $\vec\Omega=\dot\theta_{\mathrm{axr}}\vec u_{\mathrm b}$ and the cross term equals $\tfrac{h}{4\pi}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{axr}}$, which is not zero. Computed from the element, with $\varrho=1.3$, $\theta_{\mathrm{rpd}}=0.8$ and $\dot\theta_{\mathrm{axr}}=1$, the kinetic Lagrangian is $0.7504$ for parallel axes and $0.4747$ for the axes $\vec u_{\mathrm b}$ at the spherical angles $(1.1,1.2)$ and $\vec u_{\mathrm r}$ at $(2.0,1.4)$. The formula gives $0.7504$ and $\tfrac12\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec u_{\mathrm r}\cdot\vec u_{\mathrm b})=0.7504\times0.6325=0.4747$. The element was evaluated without the formula, and the formula reproduces both numbers.
 
 **The potential term.**
 
@@ -141,8 +141,8 @@ using $\mathrm{Sc}(i\vec h_\Psi\,i\vec u_{\mathrm b})=-\mathrm{Sc}(\vec h_\Psi\v
 Collecting,
 
 $$
-S=\int \mathrm{d}t'\;\Bigl[-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}
-+\frac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})
+S=\int \mathrm{d}t'\;\Bigl[-\frac{h}{2\pi}\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}
++\frac{h}{4\pi}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})
 -\varrho^{2}V\Bigr].
 $$
 
@@ -153,13 +153,13 @@ Its Lagrangian is first order in the velocities and carries no $\dot \varrho$ an
 Reading the coefficients of the velocities,
 
 $$
-p_{\varrho}=0,\qquad p_{\theta_{\mathrm{rpd}}}=0,\qquad p_{\vec u_{\mathrm b}}=0,\qquad p_{\theta_{\mathrm{pha}}}=-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}},
+p_{\varrho}=0,\qquad p_{\theta_{\mathrm{rpd}}}=0,\qquad p_{\vec u_{\mathrm b}}=0,\qquad p_{\theta_{\mathrm{pha}}}=-\frac{h}{2\pi}\,\varrho^{2}\cosh\theta_{\mathrm{rpd}},
 $$
 
 and the momentum conjugate to the rotor is the real vector
 
 $$
-\vec P=\frac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b},
+\vec P=\frac{h}{4\pi}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b},
 $$
 
 with $\vec P=\partial K/\partial\vec\Omega$. Four momenta vanish identically and four do not. The four that vanish are conjugate to $\varrho$, to $\theta_{\mathrm{rpd}}$ and to the two angles of the boost axis; the four that do not are conjugate to the phase and to the three coordinates of the rotor.
@@ -186,7 +186,7 @@ $$
 
 Both are the parent's numbers: $N$ is the Hermitian norm read on the word, and $E$ is the potential term. Two remarks place them.
 
-*The charge and the momentum coincide.* In a first-order action the Noether charge of a shift symmetry is the momentum conjugate to the shifted coordinate, and here the shifted coordinate is the phase: $p_{\theta_{\mathrm{pha}}}=-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}=-\hbar N$. So the conservation of $N$ is not an extra equation; it is the Euler–Lagrange equation of $\theta_{\mathrm{pha}}$, which the fourth section writes as $\mathrm{d}(\varrho^{2}\cosh\theta_{\mathrm{rpd}})/\mathrm{d}t'=0$. The same identity holds in the element form, where the phase rotation's charge is $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ and its conservation follows from the equation and its conjugate.
+*The charge and the momentum coincide.* In a first-order action the Noether charge of a shift symmetry is the momentum conjugate to the shifted coordinate, and here the shifted coordinate is the phase: $p_{\theta_{\mathrm{pha}}}=-\frac{h}{2\pi} \varrho^{2}\cosh\theta_{\mathrm{rpd}}=-\frac{h}{2\pi} N$. So the conservation of $N$ is not an extra equation; it is the Euler–Lagrange equation of $\theta_{\mathrm{pha}}$, which the fourth section writes as $\mathrm{d}(\varrho^{2}\cosh\theta_{\mathrm{rpd}})/\mathrm{d}t'=0$. The same identity holds in the element form, where the phase rotation's charge is $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ and its conservation follows from the equation and its conjugate.
 
 *The Hamiltonian is the energy.* The Legendre transform of a velocity-linear Lagrangian is a sum of momenta against velocities, $H=p_{\theta_{\mathrm{pha}}}\dot\theta_{\mathrm{pha}}+\vec P\cdot\vec\Omega-L$, and the two momentum terms cancel the two kinetic terms, leaving
 
@@ -198,33 +198,33 @@ So the polar Hamiltonian is the parent's energy, and the two kinetic terms are t
 
 **Why the cross term has the shape it has.**
 
-The two connections have opposite algebraic types. The rotor's connection $\partial_{t'}\tilde u\,\tilde u^{-1}=\tfrac12\vec\Omega$ is a real pure quaternion, and the boost enters the kinetic term through $\tilde U^{2}=\cosh\theta_{\mathrm{rpd}}+i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, whose Hermitian part is the second term. A scalar part can be formed only from the pairing of a Hermitian piece with a real vector, so only that second term contributes, and it contributes $i\sinh\theta_{\mathrm{rpd}}\,\mathrm{Sc}(\vec u_{\mathrm b}\tfrac12\vec\Omega)=-\tfrac{i}{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})$. The kinetic term carries $-\hbar \varrho^{2}$ times the imaginary content of that number. The weight $\sinh\theta_{\mathrm{rpd}}$ is why the term is invisible at $\theta_{\mathrm{rpd}}=0$ and grows with the rapidity, and the contraction is with the boost axis because that is the direction the Hermitian part carries.
+The two connections have opposite algebraic types. The rotor's connection $\partial_{t'}\tilde u\,\tilde u^{-1}=\tfrac12\vec\Omega$ is a real pure quaternion, and the boost enters the kinetic term through $\tilde U^{2}=\cosh\theta_{\mathrm{rpd}}+i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, whose Hermitian part is the second term. A scalar part can be formed only from the pairing of a Hermitian piece with a real vector, so only that second term contributes, and it contributes $i\sinh\theta_{\mathrm{rpd}}\,\mathrm{Sc}(\vec u_{\mathrm b}\tfrac12\vec\Omega)=-\tfrac{i}{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})$. The kinetic term carries $-\frac{h}{2\pi} \varrho^{2}$ times the imaginary content of that number. The weight $\sinh\theta_{\mathrm{rpd}}$ is why the term is invisible at $\theta_{\mathrm{rpd}}=0$ and grows with the rapidity, and the contraction is with the boost axis because that is the direction the Hermitian part carries.
 
 There is no analogous term in the potential because the potential has no velocity: it is the scalar part of a product of two elements and carries no connection at all. The asymmetry between the two halves of the action is therefore not an accident of the calculation: the kinetic term is the only place where a connection can appear, and the word has two connections, one of each type.
 
 ### The Central Field
 
-Set $\theta_{\mathrm{rpd}}=0$ and let the rotor be a sign, $\tilde u_{\mathrm r}=\varepsilon\,e_t$ with $\varepsilon=\pm1$. Then $\tilde U_{\Psi,\mathrm b}=e_t$, $\vec\Omega=0$, $\cosh\theta_{\mathrm{rpd}}=1$ and $\sinh\theta_{\mathrm{rpd}}=0$, so the kinetic term is $-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}$ and the potential is $\varrho^{2}h_t$. The action is
+Set $\theta_{\mathrm{rpd}}=0$ and let the rotor be a sign, $\tilde u_{\mathrm r}=\varepsilon\,e_t$ with $\varepsilon=\pm1$. Then $\tilde U_{\Psi,\mathrm b}=e_t$, $\vec\Omega=0$, $\cosh\theta_{\mathrm{rpd}}=1$ and $\sinh\theta_{\mathrm{rpd}}=0$, so the kinetic term is $-\frac{h}{2\pi} \varrho^{2}\dot\theta_{\mathrm{pha}}$ and the potential is $\varrho^{2}h_t$. The action is
 
 $$
-S_{\mathrm{central}}=\int \mathrm{d}t'\;\bigl[-\hbar\,\varrho^{2}\dot\theta_{\mathrm{pha}}-\varrho^{2}V\bigr],
+S_{\mathrm{central}}=\int \mathrm{d}t'\;\bigl[-\frac{h}{2\pi}\,\varrho^{2}\dot\theta_{\mathrm{pha}}-\varrho^{2}V\bigr],
 $$
 
 with $V=h_t$ for a constant central Hamiltonian.
 
-**The Euler–Lagrange equations.** Varying $\theta_{\mathrm{pha}}$ gives $\mathrm{d}(\varrho^{2})/\mathrm{d}t'=0$: the density is conserved. Varying $\varrho$ gives $-\hbar\,\varrho\dot\theta_{\mathrm{pha}}-rV=0$, that is, $\dot\theta_{\mathrm{pha}}=-V/\hbar=-h_t/\hbar$. Varying $\varepsilon$ gives nothing: the sign is the branch of the modulus, fixed by the field and not by an equation. These are Madelung's pair read on a constant Hamiltonian, and the pair is exact.
+**The Euler–Lagrange equations.** Varying $\theta_{\mathrm{pha}}$ gives $\mathrm{d}(\varrho^{2})/\mathrm{d}t'=0$: the density is conserved. Varying $\varrho$ gives $-\frac{h}{2\pi}\,\varrho\dot\theta_{\mathrm{pha}}-rV=0$, that is, $\dot\theta_{\mathrm{pha}}=-\frac{2\pi V}{h}=-\frac{2\pi h_t}{h}$. Varying $\varepsilon$ gives nothing: the sign is the branch of the modulus, fixed by the field and not by an equation. These are Madelung's pair read on a constant Hamiltonian, and the pair is exact.
 
-**The operator setting, stated and not re-derived.** For $\tilde H_\Psi=\hat H\,e_t$ with $\hat H=-\hbar^{2}\Delta_\Phi/2m+V_{\mathrm{op}}(\vec x)$, the same substitution in the field-theoretic action gives
+**The operator setting, stated and not re-derived.** For $\tilde H_\Psi=\hat H\,e_t$ with $\hat H=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi/2m+V_{\mathrm{op}}(\vec x)$, the same substitution in the field-theoretic action gives
 
 $$
-S_{\mathrm{central}}=\int \mathrm{d}t'\,\mathrm{d}^{3}x\;\Bigl[-\hbar\,\varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{\hbar^{2}}{2m}\bigl(|\vec\nabla_\Phi \varrho|^{2}+\varrho^{2}|\vec\nabla_\Phi\theta_{\mathrm{pha}}|^{2}\bigr)-\varrho^{2}V_{\mathrm{op}}\Bigr],
+S_{\mathrm{central}}=\int \mathrm{d}t'\,\mathrm{d}^{3}x\;\Bigl[-\frac{h}{2\pi}\,\varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{h^{2}}{8\pi^{2}m}\bigl(|\vec\nabla_\Phi \varrho|^{2}+\varrho^{2}|\vec\nabla_\Phi\theta_{\mathrm{pha}}|^{2}\bigr)-\varrho^{2}V_{\mathrm{op}}\Bigr],
 $$
 
-whose Euler–Lagrange equations are the continuity equation for $\varrho^{2}$ and the Hamilton–Jacobi equation with the quantum potential $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$. The subscript matters: $V_{\mathrm{op}}(\vec x)$ is the scalar potential of the operator, a function of position, while $V=h_t\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}(\vec h_\Psi\cdot\vec u_{\mathrm b})$ is the polar potential read from the word. They coincide only when the operator's potential is the constant $h_t$. This is the standard Madelung variational principle, in the literature since 1927 and read hydrodynamically by Takabayasi and by Bohm; the article cites it and claims nothing new. The reader should note that the two gradient terms are both present: the one in $|\vec\nabla_\Phi \varrho|^{2}$ is the quantum potential's source, and it is not optional.
+whose Euler–Lagrange equations are the continuity equation for $\varrho^{2}$ and the Hamilton–Jacobi equation with the quantum potential $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$. The subscript matters: $V_{\mathrm{op}}(\vec x)$ is the scalar potential of the operator, a function of position, while $V=h_t\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}(\vec h_\Psi\cdot\vec u_{\mathrm b})$ is the polar potential read from the word. They coincide only when the operator's potential is the constant $h_t$. This is the standard Madelung variational principle, in the literature since 1927 and read hydrodynamically by Takabayasi and by Bohm; the article cites it and claims nothing new. The reader should note that the two gradient terms are both present: the one in $|\vec\nabla_\Phi \varrho|^{2}$ is the quantum potential's source, and it is not optional.
 
 **Why the central case cannot detect the cross term.** On the central field $\sinh\theta_{\mathrm{rpd}}=0$, so the cross term vanishes identically and the action is indistinguishable from the naive one. Every statement about the central field in this section would therefore survive the error of dropping the cross term. That is why the general element must be computed, and why the next section is the article's test.
 
-**The pairing. Inherited, and the substitution cannot disturb it.** The parent pairs with $\mathrm{Sc}(\cdot^{*}\cdot)$ and its kinetic term is the anti-Hermitian combination $\tfrac{i\hbar c}{2}\bigl(\tilde\Xi^{*}\partial_{r'_t}\tilde\Xi-(\partial_{r'_t}\tilde\Xi^{*})\tilde\Xi\bigr)$. The chart turns that combination into a real product: with the density $\varrho^{2}$ and the phase $\theta_{\mathrm{pha}}$, the kinetic term is $\hbar\varrho^{2}\partial_{r'_t}\theta_{\mathrm{pha}}$, a real number times a real derivative. **The chart is where the anti-Hermitian device becomes a plain product**, and that is the whole of what the substitution does to the pairing.
+**The pairing. Inherited, and the substitution cannot disturb it.** The parent pairs with $\mathrm{Sc}(\cdot^{*}\cdot)$ and its kinetic term is the anti-Hermitian combination $\tfrac{i h c}{4\pi}\bigl(\tilde\Xi^{*}\partial_{r'_t}\tilde\Xi-(\partial_{r'_t}\tilde\Xi^{*})\tilde\Xi\bigr)$. The chart turns that combination into a real product: with the density $\varrho^{2}$ and the phase $\theta_{\mathrm{pha}}$, the kinetic term is $\frac{h}{2\pi}\varrho^{2}\partial_{r'_t}\theta_{\mathrm{pha}}$, a real number times a real derivative. **The chart is where the anti-Hermitian device becomes a plain product**, and that is the whole of what the substitution does to the pairing.
 
 **The type of the coefficient. The Hamiltonian, and nothing else.** The action carries $\tilde H_\Psi$, and the density is real when $\tilde H_\Psi$ is Hermitian with respect to $\mathrm{Sc}(\cdot^{*}\cdot)$. In the chart its contribution is $\varrho^{2}$ times the expectation of $\tilde H_\Psi$, a real density. No coefficient of the kinetic term is free.
 
@@ -239,13 +239,13 @@ Write $a=\vec\Omega\cdot\vec u_{\mathrm b}$ and $V$ as above. The Euler–Lagran
 $$
 \frac{\mathrm{d}}{\mathrm{d}t'}\bigl(\varrho^{2}\cosh\theta_{\mathrm{rpd}}\bigr)=0,
 \qquad
--\hbar\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}+\frac{\hbar}{2}\sinh\theta_{\mathrm{rpd}}\,a=V,
+-\frac{h}{2\pi}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}+\frac{h}{4\pi}\sinh\theta_{\mathrm{rpd}}\,a=V,
 $$
 
 $$
--\hbar\sinh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}+\frac{\hbar}{2}\cosh\theta_{\mathrm{rpd}}\,a=\frac{\partial V}{\partial\theta_{\mathrm{rpd}}},
+-\frac{h}{2\pi}\sinh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}+\frac{h}{4\pi}\cosh\theta_{\mathrm{rpd}}\,a=\frac{\partial V}{\partial\theta_{\mathrm{rpd}}},
 \qquad
-\frac{\hbar}{2}\bigl(\vec\Omega-a\,\vec u_{\mathrm b}\bigr)=\vec h_\Psi-(\vec h_\Psi\cdot\vec u_{\mathrm b})\,\vec u_{\mathrm b},
+\frac{h}{4\pi}\bigl(\vec\Omega-a\,\vec u_{\mathrm b}\bigr)=\vec h_\Psi-(\vec h_\Psi\cdot\vec u_{\mathrm b})\,\vec u_{\mathrm b},
 $$
 
 and, from the rotor,
@@ -261,39 +261,39 @@ The first is the phase equation, the second and third are the $\varrho$ and $\th
 **The pair for the phase and the rapidity.** Multiply the second by $\cosh\theta_{\mathrm{rpd}}$, the third by $\sinh\theta_{\mathrm{rpd}}$, and subtract. The terms in $a$ cancel and, with $V=h_t\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}(\vec h_\Psi\cdot\vec u_{\mathrm b})$ and $\partial V/\partial\theta_{\mathrm{rpd}}=h_t\sinh\theta_{\mathrm{rpd}}+\cosh\theta_{\mathrm{rpd}}(\vec h_\Psi\cdot\vec u_{\mathrm b})$,
 
 $$
--\hbar\,\dot\theta_{\mathrm{pha}}=V\cosh\theta_{\mathrm{rpd}}-\sinh\theta_{\mathrm{rpd}}\frac{\partial V}{\partial\theta_{\mathrm{rpd}}}=h_t .
+-\frac{h}{2\pi}\,\dot\theta_{\mathrm{pha}}=V\cosh\theta_{\mathrm{rpd}}-\sinh\theta_{\mathrm{rpd}}\frac{\partial V}{\partial\theta_{\mathrm{rpd}}}=h_t .
 $$
 
-So $\dot\theta_{\mathrm{pha}}=-h_t/\hbar$, the parent's phase rate, independent of the field's own rapidity and of the axis. Substituting back into the second equation,
+So $\dot\theta_{\mathrm{pha}}=-\frac{2\pi h_t}{h}$, the parent's phase rate, independent of the field's own rapidity and of the axis. Substituting back into the second equation,
 
 $$
-\frac{\hbar}{2}\sinh\theta_{\mathrm{rpd}}\,a=\sinh\theta_{\mathrm{rpd}}\,(\vec h_\Psi\cdot\vec u_{\mathrm b}),
+\frac{h}{4\pi}\sinh\theta_{\mathrm{rpd}}\,a=\sinh\theta_{\mathrm{rpd}}\,(\vec h_\Psi\cdot\vec u_{\mathrm b}),
 \qquad\text{that is}\qquad
-a=\frac{2}{\hbar}(\vec h_\Psi\cdot\vec u_{\mathrm b}),
+a=\frac{2\pi 2}{h}(\vec h_\Psi\cdot\vec u_{\mathrm b}),
 $$
 
 so the longitudinal part of the angular velocity is fixed too. The fourth equation then gives
 
 $$
-\frac{\hbar}{2}\vec\Omega=\vec h_\Psi,
+\frac{h}{4\pi}\vec\Omega=\vec h_\Psi,
 \qquad\text{that is}\qquad
-\vec\Omega=\frac{2\vec h_\Psi}{\hbar},
+\vec\Omega=\frac{2\pi 2\vec h_\Psi}{h},
 $$
 
-the parent's angular velocity: every direction the field carries turns at $2|\vec h_\Psi|/\hbar$ about $\vec h_\Psi$, and the rotor's half-angle at half of that.
+the parent's angular velocity: every direction the field carries turns at $2|\vec h_\Psi|\frac{2\pi}{h}$ about $\vec h_\Psi$, and the rotor's half-angle at half of that.
 
 **The rotor equation.** The fifth equation says that the boost axis is a constant vector in the rotor's own frame. Its part along $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}$ gives $\mathrm{d}(\varrho^{2}\sinh\theta_{\mathrm{rpd}})/\mathrm{d}t'=0$, and its transverse part gives $\dot{\vec u}_{\mathrm b}=\vec\Omega\times\vec u_{\mathrm b}$. Together with the first equation this makes $\varrho$ and $\theta_{\mathrm{rpd}}$ separately constant, and the transverse part is the parent's precession of the boost axis.
 
-**The solution is the parent's flow.** The five statements are: $\varrho$ constant; $\theta_{\mathrm{rpd}}$ constant; $\dot\theta_{\mathrm{pha}}=-h_t/\hbar$; $\vec\Omega=2\vec h_\Psi/\hbar$; and the boost axis fixed in the rotor's frame, hence precessing in space at $2\vec h_\Psi/\hbar$. That is exactly the flow of *The Schrödinger Equation in Biquaternionic Polar Variables*, read there from the equation directly. The variational derivation reproduces it, and the cross term is what makes it reproduce it.
+**The solution is the parent's flow.** The five statements are: $\varrho$ constant; $\theta_{\mathrm{rpd}}$ constant; $\dot\theta_{\mathrm{pha}}=-\frac{2\pi h_t}{h}$; $\vec\Omega=\frac{2\pi 2\vec h_\Psi}{h}$; and the boost axis fixed in the rotor's frame, hence precessing in space at $\frac{2\pi 2\vec h_\Psi}{h}$. That is exactly the flow of *The Schrödinger Equation in Biquaternionic Polar Variables*, read there from the equation directly. The variational derivation reproduces it, and the cross term is what makes it reproduce it.
 
-**What dropping the cross term would do.** Suppose the kinetic term were taken to be only $-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}$. Then the $\varrho$ and $\theta_{\mathrm{rpd}}$ equations would be $-\hbar\cosh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}=V$ and $-\hbar\sinh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}=\partial V/\partial\theta_{\mathrm{rpd}}$. Eliminating $\dot\theta_{\mathrm{pha}}$ from the pair gives $V\sinh\theta_{\mathrm{rpd}}=\partial V\cosh\theta_{\mathrm{rpd}}$, whose left side minus right side is $-(\vec h_\Psi\cdot\vec u_{\mathrm b})$. So the naive system has a solution only when $\vec h_\Psi\cdot\vec u_{\mathrm b}=0$, or when $\sinh\theta_{\mathrm{rpd}}=0$ and the two equations degenerate into one. For a general field it has none. The cross term is therefore not a correction to a working formula; it is what makes the formula have solutions at all, and the failure is invisible on the central field because there $\sinh\theta_{\mathrm{rpd}}=0$.
+**What dropping the cross term would do.** Suppose the kinetic term were taken to be only $-\frac{h}{2\pi} \varrho^{2}\cosh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}$. Then the $\varrho$ and $\theta_{\mathrm{rpd}}$ equations would be $-\frac{h}{2\pi}\cosh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}=V$ and $-\frac{h}{2\pi}\sinh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}=\partial V/\partial\theta_{\mathrm{rpd}}$. Eliminating $\dot\theta_{\mathrm{pha}}$ from the pair gives $V\sinh\theta_{\mathrm{rpd}}=\partial V\cosh\theta_{\mathrm{rpd}}$, whose left side minus right side is $-(\vec h_\Psi\cdot\vec u_{\mathrm b})$. So the naive system has a solution only when $\vec h_\Psi\cdot\vec u_{\mathrm b}=0$, or when $\sinh\theta_{\mathrm{rpd}}=0$ and the two equations degenerate into one. For a general field it has none. The cross term is therefore not a correction to a working formula; it is what makes the formula have solutions at all, and the failure is invisible on the central field because there $\sinh\theta_{\mathrm{rpd}}=0$.
 
 **No critical path is lost, and this is a theorem rather than a hope.** For a real variation of the parameters, with $\delta\tilde\Xi=\sum_a\delta p_a\,\partial\tilde\Xi/\partial p_a$, the variation of the element action is
 
 $$
 \delta S=2\,\mathrm{Re}\int \mathrm{d}t'\;\mathrm{Sc}\bigl[\delta\tilde\Xi^{*}E\bigr],
 \qquad
-E=i\hbar\,\partial_{t'}\tilde\Xi-\tilde H_\Psi\tilde\Xi,
+E=i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi-\tilde H_\Psi\tilde\Xi,
 $$
 
 since the two halves of the real variation are conjugates of one another. Writing the same variation as $\delta S=\int\mathrm{d}t'\sum_aR_a\,\delta p_a$ identifies the eight Euler–Lagrange residuals with
@@ -333,7 +333,7 @@ and the four brackets are the real scale term, the central imaginary phase term,
 
 ## The Constraints the Action Imposes: The Density Is the Phase's Momentum
 
-**The density carries one time derivative, on the phase.** The momentum conjugate to $S$ is therefore $-\hbar\varrho^{2}$, which is the density, so the relation is a determination of the momentum by a field and not a determination of a rate. **A momentum that is a function of the field is a primary constraint**, and the amplitude carries no time derivative at all, so its momentum vanishes identically and gives a second.
+**The density carries one time derivative, on the phase.** The momentum conjugate to $S$ is therefore $-\frac{h}{2\pi}\varrho^{2}$, which is the density, so the relation is a determination of the momentum by a field and not a determination of a rate. **A momentum that is a function of the field is a primary constraint**, and the amplitude carries no time derivative at all, so its momentum vanishes identically and gives a second.
 
 **The pair is second class.** The two constraints do not commute, because the phase and the density are conjugate, and a non-vanishing bracket is the definition of second class. The canonical structure is a Dirac bracket, and the count of degrees is the two fields and two equations the variation section states rather than the naive count of four.
 
@@ -345,7 +345,7 @@ and the four brackets are the real scale term, the central imaginary phase term,
 
 **The claim in one sentence.** On the central field the general polar action reduces to the central one and the Jacobian of the word is diagonal, with $\det J=\varrho>0$; on the general element the first statement survives by inspection and the second is open.
 
-**The reduction.** With $\theta_{\mathrm{rpd}}=0$ and $\tilde u_{\mathrm r}=\varepsilon e_t$ the boost is the identity and $\sinh\theta_{\mathrm{rpd}}=0$, so the cross term that separates the general action from the naive one vanishes identically and the action is $-\hbar\varrho^{2}\dot\theta_{\mathrm{pha}}-\varrho^{2}V$ (§*The Action in Polar Variables: The Central Field*).
+**The reduction.** With $\theta_{\mathrm{rpd}}=0$ and $\tilde u_{\mathrm r}=\varepsilon e_t$ the boost is the identity and $\sinh\theta_{\mathrm{rpd}}=0$, so the cross term that separates the general action from the naive one vanishes identically and the action is $-\frac{h}{2\pi}\varrho^{2}\dot\theta_{\mathrm{pha}}-\varrho^{2}V$ (§*The Action in Polar Variables: The Central Field*).
 
 **The Jacobian.** There the map is $(\varrho,\theta_{\mathrm{pha}})\mapsto(\varrho\cos\theta_{\mathrm{pha}},\varrho\sin\theta_{\mathrm{pha}})$ from the two parameters to the two real components of the single complex coefficient, and its Jacobian is
 
@@ -376,13 +376,13 @@ a rotation composed with a dilation, invertible everywhere except at $\varrho=0$
 **The density is the phase's conjugate momentum, with a sign.** The boxed action for the central field is
 
 $$
-L=-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\varrho^{2}V+\text{(rotor terms)},
+L=-\frac{h}{2\pi}\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\varrho^{2}V+\text{(rotor terms)},
 $$
 
 so
 
 $$
-p_{\theta_{\mathrm{pha}}}=-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}=-\hbar N,
+p_{\theta_{\mathrm{pha}}}=-\frac{h}{2\pi}\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}=-\frac{h}{2\pi} N,
 \qquad
 N=\varrho^{2}\cosh\theta_{\mathrm{rpd}}>0 .
 $$
@@ -408,7 +408,7 @@ The conserved quantity is $N$, the number density, and the minus sign is the con
 |  | Element form | Polar form |
 |---|---|---|
 | Coordinates | the eight real components of $\tilde\Xi$ | the eight parameters of the word |
-| Kinetic term | $-\hbar\,\mathrm{Im}\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi\bigr)$ | $-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}+\tfrac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})$ |
+| Kinetic term | $-\frac{h}{2\pi}\,\mathrm{Im}\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi\bigr)$ | $-\frac{h}{2\pi} \varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}+\tfrac{h}{4\pi}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})$ |
 | Potential term | $\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi\bigr)$ | $\varrho^{2}V$ |
 | Momenta | eight, generically non-zero | four vanish identically |
 | Phase charge | $N=\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)$ | $N=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ |
@@ -430,18 +430,18 @@ Two rows carry the whole difference. The kinetic row has no element-form counter
 The polar action of the Schrödinger field is
 
 $$
-S=\int \mathrm{d}t'\;\Bigl[-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}
-+\frac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})
+S=\int \mathrm{d}t'\;\Bigl[-\frac{h}{2\pi}\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}
++\frac{h}{4\pi}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})
 -\varrho^{2}V\Bigr],
 \qquad
 V=h_t\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\,(\vec h_\Psi\cdot\vec u_{\mathrm b}),
 $$
 
-where $\vec\Omega$ is the rotor's angular velocity, $\partial_{t'}\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{-1}=\tfrac12\vec\Omega$. The coefficient of $\dot\theta_{\mathrm{pha}}$ is $-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}$, so the metric factor of the phase term is the rapidity's hyperbolic cosine; the kinetic term also carries a rotor–boost cross term, and the cross term is not optional.
+where $\vec\Omega$ is the rotor's angular velocity, $\partial_{t'}\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{-1}=\tfrac12\vec\Omega$. The coefficient of $\dot\theta_{\mathrm{pha}}$ is $-\frac{h}{2\pi} \varrho^{2}\cosh\theta_{\mathrm{rpd}}$, so the metric factor of the phase term is the rapidity's hyperbolic cosine; the kinetic term also carries a rotor–boost cross term, and the cross term is not optional.
 
-Four of the eight momenta vanish identically, those conjugate to $\varrho$, to $\theta_{\mathrm{rpd}}$ and to the two angles of the boost axis; the phase momentum is $-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and the rotor's momentum is $\tfrac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$.
+Four of the eight momenta vanish identically, those conjugate to $\varrho$, to $\theta_{\mathrm{rpd}}$ and to the two angles of the boost axis; the phase momentum is $-\frac{h}{2\pi} \varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and the rotor's momentum is $\tfrac{h}{4\pi}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$.
 
-The Euler–Lagrange equations give $\varrho$ and $\theta_{\mathrm{rpd}}$ constant, $\dot\theta_{\mathrm{pha}}=-h_t/\hbar$, $\vec\Omega=2\vec h_\Psi/\hbar$, and the boost axis fixed in the rotor's frame. That is the parent's flow, derived from the action. The derivation is exact: the eight Euler–Lagrange residuals are the eight real components of the equation in the parameter basis, and the word's Jacobian is invertible, so the two systems have the same solutions.
+The Euler–Lagrange equations give $\varrho$ and $\theta_{\mathrm{rpd}}$ constant, $\dot\theta_{\mathrm{pha}}=-\frac{2\pi h_t}{h}$, $\vec\Omega=\frac{2\pi 2\vec h_\Psi}{h}$, and the boost axis fixed in the rotor's frame. That is the parent's flow, derived from the action. The derivation is exact: the eight Euler–Lagrange residuals are the eight real components of the equation in the parameter basis, and the word's Jacobian is invertible, so the two systems have the same solutions.
 
 For the central field $\theta_{\mathrm{rpd}}=0$, the cross term vanishes, the action is Madelung's, and the Euler–Lagrange equations are Madelung's pair, with the continuity equation for $\varrho^{2}$ and the quantum Hamilton–Jacobi equation. That case is closed and standard, and it cannot detect the cross term, because the cross term is proportional to $\sinh\theta_{\mathrm{rpd}}$.
 
@@ -462,7 +462,7 @@ The parameterisation absorbs the unit conditions, so no multiplier is needed for
 | $\tilde\Xi$ | The field: one element of $\mathbb{B}$ |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian Hamiltonian, a constant element |
 | $h_t,\ \vec h_\Psi$ | Its scalar and vector parts |
-| $-i\tilde H_\Psi$ | $i$ times the observable; the generator, over $\hbar$ |
+| $-i\tilde H_\Psi$ | $i$ times the observable; the generator, over $\frac{h}{2\pi}$ |
 | $\varrho>0$ | The scale |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The central phase angle |
 | $\theta_{\mathrm{rpd}}\ge0$ | The rapidity of the boost |
@@ -473,14 +473,14 @@ The parameterisation absorbs the unit conditions, so no multiplier is needed for
 | $\vec\Omega$ | The rotor's angular velocity, $\partial_{t'}\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{-1}=\tfrac12\vec\Omega$ |
 | $a$ | The contraction $\vec\Omega\cdot\vec u_{\mathrm b}$ |
 | $V$ | The polar potential, $h_t\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}(\vec h_\Psi\cdot\vec u_{\mathrm b})$ |
-| $V_{\mathrm{op}}(\vec x)$ | The scalar potential of the operator setting, as in $\hat H=-\hbar^{2}\Delta_\Phi/2m+V_{\mathrm{op}}$ |
+| $V_{\mathrm{op}}(\vec x)$ | The scalar potential of the operator setting, as in $\hat H=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi/2m+V_{\mathrm{op}}$ |
 | $p_a$ | The momentum conjugate to the parameter $p_a$ |
 | $L$ | The polar Lagrangian |
 | $\rho_{\mathrm{num}}=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The density, $2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ |
 | $R_a$ | The Euler–Lagrange residual of the parameter $p_a$ |
-| $E=i\hbar\partial_{t'}\tilde\Xi-\tilde H_\Psi\tilde\Xi$ | The equation's element; $E=0$ is the equation |
+| $E=i \frac{h}{2\pi}\partial_{t'}\tilde\Xi-\tilde H_\Psi\tilde\Xi$ | The equation's element; $E=0$ is the equation |
 | $J$ | The real Jacobian of the word, invertible on the invertibles |
-| $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential, in the operator setting |
+| $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential, in the operator setting |
 
 ## Further Reading
 

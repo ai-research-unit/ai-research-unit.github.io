@@ -69,7 +69,7 @@ The spin's antisymmetry is why the torque is a commutator. The connection's symm
 
 ### The Trace Is the Mass Density
 
-**The trace of the symmetric part is fixed by the field, and it equals the mass term.** The canonical trace is the scalar bilinear. With the Dirac equation written in the weight form, $\bigl(-i\sum_\mu\varepsilon_\mu\gamma_\mu\partial_\mu-k_m\bigr)\tilde\Xi=0$, the two terms inside the bracket of $-\tfrac i2\bigl[\sum_\mu\varepsilon_\mu\bar{\tilde\Xi}\gamma_\mu\partial_\mu\tilde\Xi-\sum_\mu\varepsilon_\mu(\partial_\mu\bar{\tilde\Xi})\gamma_\mu\tilde\Xi\bigr]$ are $+ik_m\Omega$ and $-ik_m\Omega$, so the bracket times $\tfrac i2$ is $k_m\Omega$. The Belinfante improvement leaves that alone, because the improvement is a divergence antisymmetric in its last two indices and its own trace vanishes. With $\Omega=\bar{\tilde\Xi}\tilde\Xi=\rho\cos\theta$ and $\hbar c\,k_m=mc^{2}$,
+**The trace of the symmetric part is fixed by the field, and it equals the mass term.** The canonical trace is the scalar bilinear. With the Dirac equation written in the weight form, $\bigl(-i\sum_\mu\varepsilon_\mu\gamma_\mu\partial_\mu-k_m\bigr)\tilde\Xi=0$, the two terms inside the bracket of $-\tfrac i2\bigl[\sum_\mu\varepsilon_\mu\bar{\tilde\Xi}\gamma_\mu\partial_\mu\tilde\Xi-\sum_\mu\varepsilon_\mu(\partial_\mu\bar{\tilde\Xi})\gamma_\mu\tilde\Xi\bigr]$ are $+ik_m\Omega$ and $-ik_m\Omega$, so the bracket times $\tfrac i2$ is $k_m\Omega$. The Belinfante improvement leaves that alone, because the improvement is a divergence antisymmetric in its last two indices and its own trace vanishes. With $\Omega=\bar{\tilde\Xi}\tilde\Xi=\rho\cos\theta$ and $\frac{h}{2\pi} c\,k_m=mc^{2}$,
 
 $$
 \sum_\mu\varepsilon_\mu T_{\mu\mu}=mc^{2}\Omega .
@@ -116,7 +116,7 @@ What the two results say together is that the pressure of a massive field is int
 | the tensor | $S_{\lambda\mu\nu}$, antisymmetric in $\mu\nu$ | 24 |
 | the Frenkel condition | $\sum_\nu S_{\lambda\mu\nu}v_{\Phi,\nu}=0$ | 12 |
 | the time slice at an event | $S^{0ij}$ | 3 |
-| the polar element | $\rho\tfrac{\hbar}{2}i\hat s$ | 3 |
+| the polar element | $\rho\tfrac{h}{4\pi}i\hat s$ | 3 |
 
 The first cut is the condition and the second is a slice. The Frenkel condition removes, for each $\lambda$, the one component along the flow, leaving twelve. Of the twelve, the slice at an event with the flow's own time direction is the spin density and has three independent components; the other nine are the spatial current of the spin, and they are not slots of the element that carries the density.
 
@@ -182,7 +182,7 @@ The strongest objection is that this is bookkeeping. The objection says that the
 
 ## The Frenkel Condition as the Scalar Part's Vanishing
 
-**The Frenkel condition says the spin has no component along the flow, and in the element it says the scalar slot is zero.** With the spin element $\tilde S_{\Psi}=\rho\tfrac{\hbar}{2}i\hat s$ and $\hat s$ a real vector, the scalar part is $\rho\tfrac{\hbar}{2}i\,\hat s_t$, which vanishes exactly when $\hat s$ has no temporal component.
+**The Frenkel condition says the spin has no component along the flow, and in the element it says the scalar slot is zero.** With the spin element $\tilde S_{\Psi}=\rho\tfrac{h}{4\pi}i\hat s$ and $\hat s$ a real vector, the scalar part is $\rho\tfrac{h}{4\pi}i\,\hat s_t$, which vanishes exactly when $\hat s$ has no temporal component.
 
 *Proposition.* $\mathrm{Sc}\,\tilde S_{\Psi}=0$ if and only if $\sum_\nu S_{\mu\nu}v_{\Phi,\nu}=0$ in the flow's rest frame.
 
@@ -220,12 +220,12 @@ The trace of the symmetric part is the mass term, $\sum_\mu\varepsilon_\mu T_{\m
 | $T_{\mu\nu}$, $T_{[\mu\nu]}$ | Stress and its antisymmetric part |
 | $S_{\lambda\mu\nu}$ | Spin current, antisymmetric in the last two indices |
 | $S_{\Psi,\eta,\lambda\nu}$ | Its components in the corpus's letters |
-| $\tilde S_{\Psi}=\rho\tfrac{\hbar}{2}i\hat s$ | Spin density element |
+| $\tilde S_{\Psi}=\rho\tfrac{h}{4\pi}i\hat s$ | Spin density element |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 | $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$ | Rotor connection |
 | $\tau_{\lambda\nu}$ | Torque, the spin law's source |
 | $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ | Vorticity 2-form |
-| $k_m=mc/\hbar$ | Mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $\rho=r^{2}$ | Density |
 | $\Omega=\bar{\tilde\Xi}\tilde\Xi=\rho\cos\theta$ | Scalar bilinear, the mass density's number |
 | $\theta$ | Internal angle between mass density and particle density |

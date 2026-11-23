@@ -12,12 +12,12 @@ Position in the block. This is the charged companion of [The Fourier Transform a
 
 ## Conventions
 
-The charged companion's: $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_\mu+\frac{i\varkappa}{\hbar}A_\mu$, and the gauge transformation $\lambda=\exp(i\varkappa\Gamma/\hbar)$ with $\Gamma$ real. The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are
+The charged companion's: $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_\mu+\frac{2\pi i\varkappa}{h}A_\mu$, and the gauge transformation $\lambda=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ with $\Gamma$ real. The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are
 
 $$
-\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A=\vec\nabla_\Phi S-q\vec A,
+\vec\pi=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}-q\vec A=\vec\nabla_\Phi S-q\vec A,
 \qquad
-\mathcal E=-\hbar\,\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi,
+\mathcal E=-\frac{h}{2\pi}\,\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi,
 \qquad
 \vec v=\frac{\vec\pi}{m}.
 $$
@@ -29,21 +29,21 @@ The transform's symbol rule is the free companion's. The curvature is $\vec B=\v
 **A constant connection leaves the mode a mode.** Take $\tilde A_\Phi$ constant, so that $\vec B=0$ and $\varphi$ is constant. A plane wave $\tilde\Xi=a\,e^{i(\vec k\cdot\vec r-\omega t')}e_t$ is a solution with the label
 
 $$
-\vec\pi=\hbar\vec k-q\vec A,
+\vec\pi=\frac{h}{2\pi}\vec k-q\vec A,
 \qquad
-\vec v=\frac{\hbar\vec k-q\vec A}{m},
+\vec v=\frac{h\vec k-q\vec A}{2\pi m},
 \qquad
 \vec\nabla_\Phi\times\vec v=0 ,
 $$
 
 and the last equality is the article's first result. The velocity is constant and its curl is exactly zero, and the check on one hundred events gave $\max\lvert\nabla\times\vec v\rvert=2.5\times10^{-16}$ for a constant $\vec A$.
 
-The constant connection is a pure gradient and the mode is free in disguise. With $\vec A=\vec\nabla_\Phi\chi$ and $\varphi=-\partial_{t'}\chi$ the gauge transformation $\lambda=\exp(i\varkappa\chi/\hbar)$ removes the connection and multiplies the field by a central phase, which moves the label and changes nothing else. So a mode of a flat connection is gauge-equivalent to a free mode with a translated wave number, and the translation is $\varkappa\vec A/\hbar$.
+The constant connection is a pure gradient and the mode is free in disguise. With $\vec A=\vec\nabla_\Phi\chi$ and $\varphi=-\partial_{t'}\chi$ the gauge transformation $\lambda=\exp(\frac{2\pi i\varkappa\chi}{h})$ removes the connection and multiplies the field by a central phase, which moves the label and changes nothing else. So a mode of a flat connection is gauge-equivalent to a free mode with a translated wave number, and the translation is $\frac{2\pi \varkappa\vec A}{h}$.
 
 The two labels, and which one the fluid reads.
 
 $$
-\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{\varkappa}{\hbar}\tilde A_\Phi ,
+\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{2\pi \varkappa}{h}\tilde A_\Phi ,
 $$
 
 so the canonical label is the free one and the kinetic label is the free one plus the potential. The transform is a chart-dependent object here for the first time in this rung: transforming in the canonical variable puts the support on the free shell, transforming in the kinetic variable puts it on the translated shell, and the two differ by a gauge. §*Two Supports, One Field* of the charged Klein–Gordon Fourier companion carries the same distinction with the mass present.
@@ -53,7 +53,7 @@ so the canonical label is the free one and the kinetic label is the free one plu
 The identity is one line and the check is exact.
 
 $$
-\vec\nabla_\Phi\times\vec v=\frac{1}{m}\vec\nabla_\Phi\times\bigl(\hbar\nabla\theta_{\mathrm{pha}}-q\vec A\bigr)=\frac{\varkappa}{m}\vec B ,
+\vec\nabla_\Phi\times\vec v=\frac{1}{m}\vec\nabla_\Phi\times\bigl(\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}-q\vec A\bigr)=\frac{\varkappa}{m}\vec B ,
 $$
 
 since the curl of a gradient vanishes wherever the phase is twice differentiable. On one hundred events with a uniform field $\vec B=0.6\vec e_z$ and a phase carrying a cross term, the residual was $5.0\times10^{-16}$.
@@ -78,7 +78,7 @@ The first two rows are the theorem and the last two are the illustration. The th
 **A mode carries the flux quantum and not the winding quantum.** The charged companion's circulation is
 
 $$
-\oint\vec\pi\cdot\mathrm{d}\vec l=2\pi\hbar\,n+\varkappa\Phi_B ,
+\oint\vec\pi\cdot\mathrm{d}\vec l=h\,n+\varkappa\Phi_B ,
 \qquad
 \Phi_B=\int_S\vec B\cdot\mathrm{d}\vec S ,
 $$
@@ -91,9 +91,9 @@ $$
 
 That is exact and it is the only circulation a single mode has. The quantum of winding is inter-mode and the quantum of flux is not; the first needs a pair of waves and the second needs only a field. In the free rung both terms were absent at a mode; here one of the two survives, and the one that survives is the one the connection supplies.
 
-The statement is the Aharonov–Bohm phase, read on a loop. The flux term is the phase $\exp(i\varkappa\Phi_B/\hbar)$ that a mode acquires on going round, and it is there whether or not the field strength vanishes on the loop. A mode's loop datum is therefore a phase and not the integer, and the integer appears only when a second mode is added and a node exists.
+The statement is the Aharonov–Bohm phase, read on a loop. The flux term is the phase $\exp(\frac{2\pi i\varkappa\Phi_B}{h})$ that a mode acquires on going round, and it is there whether or not the field strength vanishes on the loop. A mode's loop datum is therefore a phase and not the integer, and the integer appears only when a second mode is added and a node exists.
 
-The objection, and the answer. The objection is that the flux term is a gauge artefact in a simply connected region with vanishing curvature, so a mode's circulation is removable. The answer is that it is removable iff $\Phi_B$ is a multiple of $2\pi\hbar/\varkappa$ on the loops at issue, and that on a loop that links a flux the integral is not removable in any single-valued gauge. The quantum of flux is a statement about the topology of the region and the quantum of winding is a statement about the topology of the field, and a mode has only the first.
+The objection, and the answer. The objection is that the flux term is a gauge artefact in a simply connected region with vanishing curvature, so a mode's circulation is removable. The answer is that it is removable iff $\Phi_B$ is a multiple of $h/\varkappa$ on the loops at issue, and that on a loop that links a flux the integral is not removable in any single-valued gauge. The quantum of flux is a statement about the topology of the region and the quantum of winding is a statement about the topology of the field, and a mode has only the first.
 
 ## Two Supports, One Field
 
@@ -121,7 +121,7 @@ The denial. Every object is an element of $\mathbb{B}$ or a coefficient of one, 
 
 ## Summary
 
-The charged Schrödinger fluid's velocity is $(\hbar\nabla\theta_{\mathrm{pha}}-q\vec A)/m$ and its vorticity is $\varkappa\vec B/m$ exactly, with residual $5.0\times10^{-16}$ on one hundred events and the curl of a gradient vanishing identically.
+The charged Schrödinger fluid's velocity is $(\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}-q\vec A)/m$ and its vorticity is $\varkappa\vec B/m$ exactly, with residual $5.0\times10^{-16}$ on one hundred events and the curl of a gradient vanishing identically.
 
 A constant connection is a multiplier, carries no curvature, mixes no modes and is a pure gradient, so a mode of a flat connection is a free mode with a translated label and zero vorticity, checked at $2.5\times10^{-16}$.
 
@@ -129,7 +129,7 @@ A connection with curvature is not a multiplier. Its transform is a derivative o
 
 **So the mode basis is the mode basis of the flat connections, and the vorticity is exactly what it cannot carry.** The fluid's rotation is invisible to the Fourier decomposition by construction, and the one gauge-invariant object of the momentum-space reading is the curvature.
 
-A mode carries the flux quantum and not the winding quantum: its circulation is $\varkappa\Phi_B$ and not $2\pi\hbar n+\varkappa\Phi_B$, because a mode has no node. The winding quantum is inter-mode and the flux quantum is not.
+A mode carries the flux quantum and not the winding quantum: its circulation is $\varkappa\Phi_B$ and not $h n+\varkappa\Phi_B$, because a mode has no node. The winding quantum is inter-mode and the flux quantum is not.
 
 The field has two supports, the free shell in the canonical variable and the translated shell in the kinetic one, and they are the same states in two charts. The velocity is read from the kinetic label, so the chart in which the fluid's velocity is the label is the chart in which the support is translated.
 
@@ -139,15 +139,15 @@ The field has two supports, the free shell in the canonical variable and the tra
 |---|---|
 | $\varkappa$ | The coupling; minus the electric charge |
 | $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ | The connection |
-| $\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A$ | The kinetic momentum |
-| $\mathcal E=-\hbar\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi$ | The kinetic energy |
+| $\vec\pi=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}-q\vec A$ | The kinetic momentum |
+| $\mathcal E=-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi$ | The kinetic energy |
 | $\vec v=\vec\pi/m$ | The velocity |
 | $\vec B=\vec\nabla_\Phi\times\vec A$, $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$ | The field strength |
 | $\vec\omega=\varkappa\vec B/m$ | The vorticity; the curvature |
 | $\Phi_B$ | The flux through a loop's spanning surface |
-| $\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\varkappa\tilde A_\Phi/\hbar$ | The canonical label less the potential |
+| $\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{2\pi \varkappa\tilde A_\Phi}{h}$ | The canonical label less the potential |
 | $n$ | The winding of a loop around a nodal line; zero at a mode |
-| $\lambda=\exp(i\varkappa\Gamma/\hbar)$ | The gauge element; central |
+| $\lambda=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ | The gauge element; central |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
 ## Further Reading

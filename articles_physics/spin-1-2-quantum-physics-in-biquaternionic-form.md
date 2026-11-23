@@ -64,7 +64,7 @@ For a pure state $\rho_{\mathrm{sp}} = |\tilde{Ξ}\rangle\langle\tilde{Ξ}|$ and
 The spin-1/2 system is the specific physical realization of a two-state system in which the observables are the spin components
 
 $$
-S_\eta =\frac{\hbar}{2}\sigma_\eta, \qquad \eta = 1, 2, 3.
+S_\eta =\frac{h}{4\pi}\sigma_\eta, \qquad \eta = 1, 2, 3.
 $$
 
 The state space is the spinor space $\mathbb{C}^2$, and the spin states are the eigenstates of $\vec S\cdot\vec u$ for a unit vector $\vec u$. The spin-up and spin-down projectors along the direction $\vec u$ are
@@ -224,7 +224,7 @@ $$
 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},+} \tilde H_\Psi^{*}) = 2 \cdot \tfrac{1}{2} = 1,
 $$
 
-which is the correct expectation $\langle \uparrow_z | S_z | \uparrow_z \rangle$ (up to the factor $\frac{\hbar}{2}$, which is absorbed in the normalization).
+which is the correct expectation $\langle \uparrow_z | S_z | \uparrow_z \rangle$ (up to the factor $\frac{h}{4\pi}$, which is absorbed in the normalization).
 
 So the normalised Hermitian form reproduces the standard spin-1/2 expectation values; its $2\times2$ reading is the reduction formula.
 
@@ -308,7 +308,7 @@ $$
 \tilde\nabla_\Phi\tilde{Ξ} = 0,
 $$
 
-which is a first-order equation for the field $\tilde{Ξ}$. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+which is a first-order equation for the field $\tilde{Ξ}$. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 ### The Interpretation as a Spinor Field
 
@@ -351,7 +351,7 @@ We can now make a precise statement about what the biquaternion framework contai
 
 6. The Dirac equation. The biquaternionic Dirac equation is the equation of motion for a relativistic spin-1/2 field, expressed in terms of a pair of Weyl spinors.
 
-7. Maxwell's equations. The biquaternion framework contains Maxwell's equations in the form $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ (companion article). The coupling of the spinor field to the electromagnetic field — the analogue of the standard minimal coupling $\partial/\partial R_\mu \to \partial/\partial R_\mu -\frac{iqA_{\mu}}{\hbar}$ — has a natural biquaternion form, but the precise expression depends on the representation conventions and is not developed in this article.
+7. Maxwell's equations. The biquaternion framework contains Maxwell's equations in the form $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ (companion article). The coupling of the spinor field to the electromagnetic field — the analogue of the standard minimal coupling $\partial/\partial R_\mu \to \partial/\partial R_\mu -\frac{2\pi iqA_{\mu}}{h}$ — has a natural biquaternion form, but the precise expression depends on the representation conventions and is not developed in this article.
 
 ### Does Not Contain
 

@@ -22,7 +22,7 @@ $$
 N(\tilde K_\Phi)=-k_t'^{2}+\lvert\vec k_\Phi\rvert^{2}\in\mathbb{R},
 $$
 
-the mass shell being $N(\tilde K_\Phi)=-k_m^{2}$, that is $k_t'^{2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2}$ [Four-Vectors and the Interval](four-vectors-and-the-interval.html). $k_m$ is the mass in wave-number units, the block's $mc/\hbar$. The **label cone** is $N(\tilde K_\Phi)=0$, that is $k_t'=\lvert\vec k_\Phi\rvert$.
+the mass shell being $N(\tilde K_\Phi)=-k_m^{2}$, that is $k_t'^{2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2}$ [Four-Vectors and the Interval](four-vectors-and-the-interval.html). $k_m$ is the mass in wave-number units, the block's $\frac{2\pi mc}{h}$. The **label cone** is $N(\tilde K_\Phi)=0$, that is $k_t'=\lvert\vec k_\Phi\rvert$.
 
 The two symbols. The scalar rung's operator $\Box_\Phi-k_m^{2}$ has the scalar symbol
 
@@ -115,7 +115,7 @@ The speed rises from below and the rise is a square root. At fixed energy, $\lve
 Family two holds the field fixed and varies the mass, and the mass appears in exactly one place: as $1/m$ in the quantum potential. Since $\Box_\Phi\varrho/\varrho$ is a functional of the shape alone,
 
 $$
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi\varrho}{\varrho}\ \propto\ \frac{1}{m},
+Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi\varrho}{\varrho}\ \propto\ \frac{1}{m},
 \qquad
 p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}\ \propto\ \frac{1}{m},
 $$
@@ -133,7 +133,7 @@ The third column is constant, and that constancy is the $1/m$ law. Halving the m
 The force is the exception, and it is the whole of the physics. The acceleration law is $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, and $\gamma^{-1}=m/E$ cancels the $1/m$:
 
 $$
-\frac{\mathrm{d}\vec p}{\mathrm{d}t}=\frac{\hbar^{2}}{2E}\,\vec\nabla_\Phi\Bigl(\frac{\Box_\Phi\varrho}{\varrho}\Bigr),
+\frac{\mathrm{d}\vec p}{\mathrm{d}t}=\frac{h^{2}}{8\pi^{2}E}\,\vec\nabla_\Phi\Bigl(\frac{\Box_\Phi\varrho}{\varrho}\Bigr),
 $$
 
 which contains no mass at all. At fixed energy the rate of momentum transfer is the same at every mass: **the Bohm potential diverges and the Bohm force does not.** A reader who quotes "$Q_{\mathrm{qnt}}$ diverges" as the statement that the guidance fails near the wall has quoted the potential and not the force.
@@ -365,7 +365,7 @@ The label chart's failure is a projection and not a divergence. Its least-square
 | $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, $\sum_\mu Q_\mu^{2}$, complex, multiplicative |
 | $\langle\tilde Q\rangle_{*}$ | the Euclidean size, $\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | the label, with imaginary time coefficient |
-| $k_m$ | the mass in wave-number units, the block's $mc/\hbar$ |
+| $k_m$ | the mass in wave-number units, the block's $\frac{2\pi mc}{h}$ |
 | $N(\tilde K_\Phi)=-k_t'^{2}+\lvert\vec k_\Phi\rvert^{2}$ | the label's norm (plain $N$); the mass shell is $-k_m^{2}$ |
 | $\mathcal N(\tilde K_\Phi)$ | the scalar symbol (script $\mathcal N$), $k_t'^{2}-\lvert\vec k_\Phi\rvert^{2}-k_m^{2}$, equal to $-N-k_m^{2}$ |
 | $\Sigma(\tilde K_\Phi)$ | the algebra-valued symbol of the first-order rung |

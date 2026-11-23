@@ -8,7 +8,7 @@ $$
 w^{(r)}(\vec p)\,\exp(-i\theta_{\mathrm{pwp}}),\qquad v^{(r)}(\vec p)\,\exp(+i\theta_{\mathrm{pwp}}),\qquad r=1,2 .
 $$
 
-Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
+Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 The second is an **excitation**: one quantum occupying such a mode, the state $a_{\mathrm{fop},r}^{\dagger}(\vec p)|0\rangle$, or a superposition of occupations. The mode function says *which* mode; the excitation says *how many* quanta the mode contains. The subject of this article is where each of the two lives in the biquaternion algebra $\mathbb{B}$, and in particular whether the informational sector $\mathbb{B}_{\Psi}$ is their natural home.
 
@@ -42,14 +42,14 @@ and basis $\{\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},y}\}$ for $\mathbb{
 The Dirac field of the companion articles expands on the spinor module as
 
 $$
-\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}\sum_{r=1}^{2}
+\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}\sum_{r=1}^{2}
 \Big[a_{\mathrm{fop},r}(\vec p)\,w^{(r)}(\vec p)\,\exp(-i\theta_{\mathrm{pwp}})
 +b_{\mathrm{fop},r}^{\dagger}(\vec p)\,v^{(r)}(\vec p)\,\exp(+i\theta_{\mathrm{pwp}})\Big],
 $$
 
 with the mode operators and spinors of the parent article. Each term of the expansion is a **mode function**: the positive-frequency mode functions are $w^{(r)}(\vec p)\exp(-i\theta_{\mathrm{pwp}})$ and the negative-frequency ones $v^{(r)}(\vec p)\exp(+i\theta_{\mathrm{pwp}})$. Three labels specify a mode function completely — the momentum $\vec p$, the spin index $r$, and the sign of the frequency — and the mode function is a solution of the free equation with those labels.
 
-The word *definite* in "definite solution" means that the mode function is a single element of the solution space, not a general superposition. The general solution is the integral over all modes; a mode function is one basis vector of that integral. In the biquaternion interpretation of the parent article, a mode function is the module representative of a biquaternion plane wave $\tilde{Ξ}_{0}\exp(\tilde P_{\Phi}\tilde{Q})$: the four-wavevector $\tilde P_{\Phi}=\hbar\,(i\omega/c\,e_t+\vec k_\Phi)$ is an element of the material sector $\mathbb{B}_{\Phi}$ (it appears in the table of four-vectors of *The Material Sector: Four-Vectors, Interval and Lorentz Action*), and the amplitude $\tilde{Ξ}_{0}$ is a spinor, i.e. an element of the module $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$. Both pieces are therefore objects attached to the material sector and to the module. Neither is an element of the Hermitian subspace $\mathbb{B}_{\Psi}$.
+The word *definite* in "definite solution" means that the mode function is a single element of the solution space, not a general superposition. The general solution is the integral over all modes; a mode function is one basis vector of that integral. In the biquaternion interpretation of the parent article, a mode function is the module representative of a biquaternion plane wave $\tilde{Ξ}_{0}\exp(\tilde P_{\Phi}\tilde{Q})$: the four-wavevector $\tilde P_{\Phi}=\frac{h}{2\pi}\,(i\omega/c\,e_t+\vec k_\Phi)$ is an element of the material sector $\mathbb{B}_{\Phi}$ (it appears in the table of four-vectors of *The Material Sector: Four-Vectors, Interval and Lorentz Action*), and the amplitude $\tilde{Ξ}_{0}$ is a spinor, i.e. an element of the module $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$. Both pieces are therefore objects attached to the material sector and to the module. Neither is an element of the Hermitian subspace $\mathbb{B}_{\Psi}$.
 
 The Maxwell case is structurally the same and algebraically simpler. The one-particle space at fixed momentum is the space of transverse polarization amplitudes, two real dimensions, and the companion photon article identifies the polarization directions with the plane in $\mathrm{Vect}(\mathbb{B}_{\Phi})$ orthogonal to the propagation direction $\vec u_\Phi$. The mode function of the potential, $\varepsilon_\mu(\vec k_\Phi)\exp(-ik\cdot x)$, is a four-vector with a definite **linear** polarization; its polarization vector is then a direction in $\mathbb{B}_{\Phi}$. Again the definite solution lives on the material side. The photon article states the structural reason: the polarization directions are real spatial vectors and sit in the material sector, while the helicity operator is represented by the Hermitian element $i\vec u_\Phi$ of $\mathbb{B}_{\Psi}$ and is an *observable* of the mode, not the mode function itself.
 
@@ -66,7 +66,7 @@ $$
 and the occupation-number operator
 
 $$
-N=\sum_{r}\int\!\frac{d^3p}{(2\pi\hbar)^3}\ a_{\mathrm{fop},r}^{\dagger}(\vec p)\,a_{\mathrm{fop},r}(\vec p)
+N=\sum_{r}\int\!\frac{d^3p}{h^{3}}\ a_{\mathrm{fop},r}^{\dagger}(\vec p)\,a_{\mathrm{fop},r}(\vec p)
 $$
 
 counts the quanta, with $[N,a_{\mathrm{fop},r}^{\dagger}]=+a_{\mathrm{fop},r}^{\dagger}$ and $[N,a_{\mathrm{fop},r}]=-a_{\mathrm{fop},r}$. The excitation is not a solution of the wave equation and is not a mode function; it is a state in the many-particle space, and its defining datum is the integer eigenvalue of $N$.

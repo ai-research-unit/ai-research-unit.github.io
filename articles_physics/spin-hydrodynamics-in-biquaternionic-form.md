@@ -27,10 +27,10 @@ The fluid's stress is [The Local Thermal State of a Fluid](the-local-thermal-sta
 **The spin polarization is the rotor's generator, read as a thermodynamic variable.** With the rotor $\tilde u_{\mathrm r}$ of the polar form and its generator $\tilde\omega_\Psi=\tfrac12\omega_{\lambda\nu}\tilde e_{\lambda\nu}$ — the antisymmetric part of the algebra's basis, with $\lambda<\nu$ — the polarization element is proportional to the generator:
 
 $$
-\tilde S_{\Psi,\eta}=\frac{\hbar}{2}\,\tilde u_{\mathrm r}\,\tilde e_{\lambda\nu}\,\tilde u_{\mathrm r}^{\natural}\,\omega_{\lambda\nu},
+\tilde S_{\Psi,\eta}=\frac{h}{4\pi}\,\tilde u_{\mathrm r}\,\tilde e_{\lambda\nu}\,\tilde u_{\mathrm r}^{\natural}\,\omega_{\lambda\nu},
 $$
 
-the rotor conjugating the generator into the fluid's frame and the factor $\hbar/2$ making the components angular momenta. The display is the polar-form article's rotor read as a density: the spin element is what the rotor looks like when it is summed over a volume.
+the rotor conjugating the generator into the fluid's frame and the factor $\frac{h}{2\pi 2}$ making the components angular momenta. The display is the polar-form article's rotor read as a density: the spin element is what the rotor looks like when it is summed over a volume.
 
 Writing the six independent components $\omega_{\lambda\nu}=-\omega_{\nu\lambda}$ and the corresponding components $S_{\Psi,\eta,\lambda\nu}$ of the spin element, the article never raises an index; the pair $(\lambda,\nu)$ labels which rotation, and the array is antisymmetric in it. The spin tensor's components are the angular momentum density in the $\lambda\nu$ plane, and the flux of that component in the $\eta$ direction is written with $\eta$ last, so the current carries three labels: one for the direction of transport and two for the plane.
 
@@ -85,12 +85,12 @@ the antisymmetric part of the flow's gradient, built from the flow element's com
 Local equilibrium ties the two together, and the tie is the source of the spin-rotation coupling. In equilibrium a fluid element in a rotating flow is polarized in proportion to the rotation, with the standard result quoted:
 
 $$
-\mu_{\mathrm{spn}}^{\mathrm{eq}}=\frac{\hbar\,\omega^{\mathrm{vrt}}_{\mathrm{mag}}}{2},
+\mu_{\mathrm{spn}}^{\mathrm{eq}}=\frac{h\nu^{\mathrm{vrt}}_{\mathrm{mag}}}{2},
 \qquad
 P_{\mathrm{pol}}=\tanh\left(\frac{\mu_{\mathrm{spn}}^{\mathrm{eq}}}{k_B T}\right),
 $$
 
-with $\omega^{\mathrm{vrt}}_{\mathrm{mag}}$ the magnitude of the rotation vector and $P_{\mathrm{pol}}$ the polarization of one element. At $\hbar\omega^{\mathrm{vrt}}_{\mathrm{mag}}=0.019\,75\,\mathrm{GeV}$ and $k_BT=0.15\,\mathrm{GeV}$ the polarization is $0.065\,738$, so a rotation fast by hadronic standards polarizes the fluid only weakly; at $\hbar\omega^{\mathrm{vrt}}_{\mathrm{mag}}=0.065\,82\,\mathrm{GeV}$ the polarization is $0.215\,946$. The relation is the equilibrium one and is used only to identify the equilibrium polarization; off equilibrium the two differ by the polarization's own relaxation.
+with $\omega^{\mathrm{vrt}}_{\mathrm{mag}}$ the magnitude of the rotation vector and $P_{\mathrm{pol}}$ the polarization of one element. At $h\nu^{\mathrm{vrt}}_{\mathrm{mag}}=0.019\,75\,\mathrm{GeV}$ and $k_BT=0.15\,\mathrm{GeV}$ the polarization is $0.065\,738$, so a rotation fast by hadronic standards polarizes the fluid only weakly; at $h\nu^{\mathrm{vrt}}_{\mathrm{mag}}=0.065\,82\,\mathrm{GeV}$ the polarization is $0.215\,946$. The relation is the equilibrium one and is used only to identify the equilibrium polarization; off equilibrium the two differ by the polarization's own relaxation.
 
 With the polarization and the vorticity both present, the energy density gains
 
@@ -207,15 +207,15 @@ Established, and standard. That a spin fluid's thermodynamics has two intensive 
 
 The spin element is the rotor's generator conjugated into the fluid's frame, so the polarization is a property of the rotor and not an independent field; the spin's contribution to the stress and to the entropy current is written on elements, with every index low; and the entropy inequality that constrains the spin channel inherits [The Local Entropy Current](the-local-entropy-current.html)'s Hermiticity declaration, so no fresh $\mathrm{Re}$ is written.
 
-Interpretation, and marked as such. That the spin element is $\tfrac{\hbar}{2}$ times the conjugated generator with the components read as angular momenta is the corpus's normalisation and not a derivation. That the relaxation is exponential is the relaxation-time approximation and is quoted, not derived.
+Interpretation, and marked as such. That the spin element is $\tfrac{h}{4\pi}$ times the conjugated generator with the components read as angular momenta is the corpus's normalisation and not a derivation. That the relaxation is exponential is the relaxation-time approximation and is quoted, not derived.
 
 **Not claimed.** That the transport coefficients have been computed — they have not. That the full index algebra of the spin stress has been written — it has not, and the article says so where the display is schematic. That the spin conservation law has been derived from the rotor's equation of motion — that is [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html)'s subject, and this article cites it. That the theory is causal — that is [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html)'s, and the spin channel's hyperbolicity is asserted here on the strength of its relaxation equation rather than proved.
 
 ## Summary
 
-A spin fluid has two intensive variables. The spin potential $\mu_{\mathrm{spn}}$ is conjugate to the spin polarization, whose element is the rotor's generator conjugated into the fluid's frame, $\tilde S_{\Psi,\eta}=\tfrac{\hbar}{2}\tilde u_{\mathrm r}\tilde e_{\lambda\nu}\tilde u_{\mathrm r}^{\natural}\omega_{\lambda\nu}$, with the six components $\omega_{\lambda\nu}$ antisymmetric and every index low. The first law gains one term, $dw_{\mathrm{fl}}=Tds_{\mathrm{ent}}+\mu_{\mathrm{chm}}d\rho_{\mathrm{num}}+\tfrac12\omega_{\lambda\nu}dS_{\Psi,\eta,\lambda\nu}$, and the equation of state gains one argument.
+A spin fluid has two intensive variables. The spin potential $\mu_{\mathrm{spn}}$ is conjugate to the spin polarization, whose element is the rotor's generator conjugated into the fluid's frame, $\tilde S_{\Psi,\eta}=\tfrac{h}{4\pi}\tilde u_{\mathrm r}\tilde e_{\lambda\nu}\tilde u_{\mathrm r}^{\natural}\omega_{\lambda\nu}$, with the six components $\omega_{\lambda\nu}$ antisymmetric and every index low. The first law gains one term, $dw_{\mathrm{fl}}=Tds_{\mathrm{ent}}+\mu_{\mathrm{chm}}d\rho_{\mathrm{num}}+\tfrac12\omega_{\lambda\nu}dS_{\Psi,\eta,\lambda\nu}$, and the equation of state gains one argument.
 
-Rotational flow and spin gradients couple. The vorticity $\omega^{\mathrm{vrt}}_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ is not the polarization, and in equilibrium $\mu_{\mathrm{spn}}^{\mathrm{eq}}=\hbar\omega^{\mathrm{vrt}}_{\mathrm{mag}}/2$ with $P_{\mathrm{pol}}=\tanh(\mu_{\mathrm{spn}}^{\mathrm{eq}}/k_BT)$, which is $0.065\,738$ at $\hbar\omega^{\mathrm{vrt}}_{\mathrm{mag}}=0.019\,75\,\mathrm{GeV}$ and $0.215\,946$ at $0.065\,82\,\mathrm{GeV}$ for $k_BT=0.15\,\mathrm{GeV}$. The spin-rotation energy is $e_{\mathrm{rot}}=-\tfrac12\omega^{\mathrm{vrt}}_{\lambda\nu}S_{\Psi,\eta,\lambda\nu}$ and the spin gradient contributes to the stress.
+Rotational flow and spin gradients couple. The vorticity $\omega^{\mathrm{vrt}}_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ is not the polarization, and in equilibrium $\mu_{\mathrm{spn}}^{\mathrm{eq}}=h\nu^{\mathrm{vrt}}_{\mathrm{mag}}/2$ with $P_{\mathrm{pol}}=\tanh(\mu_{\mathrm{spn}}^{\mathrm{eq}}/k_BT)$, which is $0.065\,738$ at $h\nu^{\mathrm{vrt}}_{\mathrm{mag}}=0.019\,75\,\mathrm{GeV}$ and $0.215\,946$ at $0.065\,82\,\mathrm{GeV}$ for $k_BT=0.15\,\mathrm{GeV}$. The spin-rotation energy is $e_{\mathrm{rot}}=-\tfrac12\omega^{\mathrm{vrt}}_{\lambda\nu}S_{\Psi,\eta,\lambda\nu}$ and the spin gradient contributes to the stress.
 
 Spin diffusion is $J_{\Psi,\mathrm{spn},\lambda}=-\kappa_{\mathrm{spn}}\partial_\lambda\mu_{\mathrm{spn}}$, with the production $\sigma_{\mathrm{ent,spn}}=T^{-1}\kappa_{\mathrm{spn}}(\partial_\lambda\mu_{\mathrm{spn}})(\partial_\lambda\mu_{\mathrm{spn}})\ge0$, real by the inherited declaration. Spin relaxation drives the polarization to its equilibrium value on the time scale $\tau_{\mathrm{spn}}$; with $\tau_{\mathrm{spn}}=0.5\,\mathrm{fm}/c$ the surviving fraction is $0.367\,879$ after $0.5\,\mathrm{fm}/c$ and $4.540\times10^{-5}$ after $5\,\mathrm{fm}/c$.
 
@@ -253,7 +253,7 @@ The caution is the article's centre: $\partial p_{\mathrm{th}}/\partial\omega_{\
 | $\sigma_{\mathrm{ent}}$, $\sigma_{\mathrm{ent,spn}}$ | Entropy production, its spin part |
 | $\tilde\Sigma_{\Psi,\mathrm{spn}}$ | Spin contribution to the stress |
 | $v_{\Phi,\nu}$ | Components of the flow element |
-| $\hbar$, $k_B$, $c$ | Planck constant, Boltzmann constant, speed of light |
+| $\frac{h}{2\pi}$, $k_B$, $c$ | Planck constant, Boltzmann constant, speed of light |
 
 ## Further Reading
 

@@ -53,19 +53,19 @@ because $e_t$ commutes with the three spatial units while the spatial units anti
 Here $\theta_{\mathrm{pwp}}$ is the plane-wave angle: it is $\vec k_\Phi\cdot\vec r-\omega r'_t/c$ with a real wave vector and a real frequency, so it is real.
 
 $$
-\tilde P_{\Phi}=\hbar\tilde K_{\Phi},\qquad
+\tilde P_{\Phi}=\frac{h}{2\pi}\tilde K_{\Phi},\qquad
 \tilde P_{\Phi}=i p_{t}^{\prime}e_t+p_1\vec e_x+p_2\vec e_y+p_3\vec e_z,\qquad
 -i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi,
 $$
 
-with $k_{t}^{\prime}=\omega/c$ the temporal wave number and $\vec k_\Phi=\vec p/\hbar$ the vector wave number. The wave element is that of the material sector, imaginary scalar part and real vector part, and its two scalar squares are
+with $k_{t}^{\prime}=\omega/c$ the temporal wave number and $\vec k_\Phi=\frac{2\pi \vec p}{h}$ the vector wave number. The wave element is that of the material sector, imaginary scalar part and real vector part, and its two scalar squares are
 
 $$
-(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2=-\frac{N}{\hbar^{2}},\qquad
+(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2=-\frac{(2\pi)^{2} N}{h^{2}},\qquad
 \tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N,\qquad N=-p_{t}^{\prime\,2}+\lvert\vec p\rvert^2 .
 $$
 
-Each line is one use of $i^2=-1$ and one use of $\vec k_\Phi^{\,2}=-\lvert\vec k_\Phi\rvert^2$, and the two lines agree because $\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}$. The symbol of the free equation is the left multiplication by $+i\hbar\tilde K_{\Phi}$, that is by $i\tilde P_{\Phi}$: the gradient and the wave element are the same object read twice. The two squares vanish together exactly when $N=0$, and that is the null wave element of Problem 4, where the symbol loses rank and the solutions of the free equation become the kernel.
+Each line is one use of $i^2=-1$ and one use of $\vec k_\Phi^{\,2}=-\lvert\vec k_\Phi\rvert^2$, and the two lines agree because $\tilde K_{\Phi}=\frac{2\pi \tilde P_{\Phi}}{h}$. The symbol of the free equation is the left multiplication by $+i \frac{h}{2\pi}\tilde K_{\Phi}$, that is by $i\tilde P_{\Phi}$: the gradient and the wave element are the same object read twice. The two squares vanish together exactly when $N=0$, and that is the null wave element of Problem 4, where the symbol loses rank and the solutions of the free equation become the kernel.
 
 **The two parts.** The value of an element is read by the right action $\tilde Q\mapsto-i\tilde Q\vec e_z$. The action applied twice returns the element, so its spectrum is $+1,+1,-1,-1$: two values, of two complex dimensions each. A basis of the part of value $+1$ is
 
@@ -109,7 +109,7 @@ $$
 
 which is the mass shell of Problem 6 and the Klein–Gordon equation of the first part.
 
-**Conventions.** The solutions carry $\hbar$ and $c$ explicitly; Problem 6 collects the same expressions in the mass-length form. The frame is the $\mathbb{B}_{\Phi}$ frame of *Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*, and the values are read on its third direction, $\vec e_z$. The helicity direction is $\vec u_p=\vec p/\lvert\vec p\rvert$, and the helicity element is $\tilde{Ζ}=i\vec u_p$, a root of the central value $+1$, $\tilde{Ζ}^2=e_t$. The Hermitian conjugation $^{*}$ is the one of *Algebra and Element Conventions*, §*The Conjugations*, and the contraction of the gradient with a momentum is written out rather than slashed, as *Index Notation and Corpus Conventions* requires: hence the element $i\tilde P_{\Phi}$ for the symbol and no slash anywhere in the article.
+**Conventions.** The solutions carry $\frac{h}{2\pi}$ and $c$ explicitly; Problem 6 collects the same expressions in the mass-length form. The frame is the $\mathbb{B}_{\Phi}$ frame of *Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*, and the values are read on its third direction, $\vec e_z$. The helicity direction is $\vec u_p=\vec p/\lvert\vec p\rvert$, and the helicity element is $\tilde{Ζ}=i\vec u_p$, a root of the central value $+1$, $\tilde{Ζ}^2=e_t$. The Hermitian conjugation $^{*}$ is the one of *Algebra and Element Conventions*, §*The Conjugations*, and the contraction of the gradient with a momentum is written out rather than slashed, as *Index Notation and Corpus Conventions* requires: hence the element $i\tilde P_{\Phi}$ for the symbol and no slash anywhere in the article.
 
 ## Problem 1: The solutions at rest and at general momentum
 
@@ -234,10 +234,10 @@ $$
 The scalar square is the interval, and the collapse is two lines:
 
 $$
-(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-k_{t}^{\prime}i\vec k_\Phi+i\vec kk_{t}^{\prime}-i^2\vec k_\Phi^{\,2}=k_{t}^{\prime\,2}+\vec k_\Phi^{\,2}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2=\frac{p^{2}}{\hbar^{2}},
+(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-k_{t}^{\prime}i\vec k_\Phi+i\vec kk_{t}^{\prime}-i^2\vec k_\Phi^{\,2}=k_{t}^{\prime\,2}+\vec k_\Phi^{\,2}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2=\frac{(2\pi)^{2} p^{2}}{h^{2}},
 $$
 
-with the cross terms vanishing because $k_{t}^{\prime}$ is central and $\vec k_\Phi$ is pure, and with the plus in front of $\vec k_\Phi^{\,2}$ because the square of $i\vec k_\Phi$ is $i^2\vec k_\Phi^{\,2}=+\lvert\vec k_\Phi\rvert^2$. On the mass shell $\tilde P_{\Phi}^{\natural}\tilde P_{\Phi}=-m^{2}c^{2}=-\hbar^{2}k_m^{2}$, so $\Box_\Phi=k_m^{2}$ on the wave and the pair closes; the two branches then close the solution space, and no third condition is needed.
+with the cross terms vanishing because $k_{t}^{\prime}$ is central and $\vec k_\Phi$ is pure, and with the plus in front of $\vec k_\Phi^{\,2}$ because the square of $i\vec k_\Phi$ is $i^2\vec k_\Phi^{\,2}=+\lvert\vec k_\Phi\rvert^2$. On the mass shell $\tilde P_{\Phi}^{\natural}\tilde P_{\Phi}=-m^{2}c^{2}=-\frac{h^{2}}{4\pi^{2}}k_m^{2}$, so $\Box_\Phi=k_m^{2}$ on the wave and the pair closes; the two branches then close the solution space, and no third condition is needed.
 
 **No trace enters.** Each of the two sums is a product of elements and a scalar, and each of the two members is a left multiplication by an element. Neither line needs a trace, a basis or an index: the identity is an identity of the algebra, and the rank-two reading of its left side is the statement that the two helicity solutions span the part of value $R$.
 
@@ -333,7 +333,7 @@ $$
 \boxed{\;\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}}.
 $$
 
-Equivalently, with $E=\hbar\,\omega$ and $\vec p=\hbar\,\vec k_\Phi$, the norm is quadratic, so $\langle\tilde K_{\Phi}\rangle_{\natural}=\langle\tilde P_{\Phi}\rangle_{\natural}/\hbar^{2}=-k_m^{2}$. The mass shell is not a new postulate: it is the statement that the four-wavevector is a timelike element of $\mathbb{B}_{\Phi}$ with the same quaternionic norm as the four-momentum. Here $k_m=mc/\hbar$ and $k_{\Phi}=\frac{p}{\hbar}$ are the mass and momentum wave numbers.
+Equivalently, with $E=h\nu$ and $\vec p=\frac{h}{2\pi}\,\vec k_\Phi$, the norm is quadratic, so $\langle\tilde K_{\Phi}\rangle_{\natural}=\langle\tilde P_{\Phi}\rangle_{\natural}/\frac{h^{2}}{4\pi^{2}}=-k_m^{2}$. The mass shell is not a new postulate: it is the statement that the four-wavevector is a timelike element of $\mathbb{B}_{\Phi}$ with the same quaternionic norm as the four-momentum. Here $k_m=\frac{2\pi mc}{h}$ and $k_{\Phi}=\frac{2\pi p}{h}$ are the mass and momentum wave numbers.
 
 The two roots $\omega=\pm\sqrt{c^2\vec k_\Phi^2+c^2k_m^{2}}$ are the two frequency branches, and they are the two families $\tilde w$ and $\tilde v$ constructed above; the two helicity values within each branch give the four-dimensional complex solution space. As a numerical check, for an electron ($mc^2=0.510998950\ \mathrm{MeV}$) at $\lvert\vec p\rvert=1\ \mathrm{MeV}/c$, the dispersion gives $E=1.122996\ \mathrm{MeV}$ and $E^2-\vec p^2c^2=0.261120\ \mathrm{MeV}^2=(mc^2)^2$; the wave biquaternion has $\langle\tilde K_{\Phi}\rangle_{\natural}=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-k_m^{2}$ to the digits shown.
 
@@ -343,7 +343,7 @@ The two roots $\omega=\pm\sqrt{c^2\vec k_\Phi^2+c^2k_m^{2}}$ are the two frequen
 
 **Solution.** The free symbol is the element $i\tilde P_{\Phi}$, and the massive equation is the pair of §*The Field and the Equation*.
 
-**The scalar square.** The square of the wave element is not scalar, its product with its conjugate is: $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=\frac{p^{2}}{\hbar^{2}}$, by the collapse of Problem 3. The scalar datum of the wave is that product and not the square.
+**The scalar square.** The square of the wave element is not scalar, its product with its conjugate is: $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=\frac{(2\pi)^{2} p^{2}}{h^{2}}$, by the collapse of Problem 3. The scalar datum of the wave is that product and not the square.
 
 **The helicity grading.** For $\vec p\neq0$ put
 
@@ -393,7 +393,7 @@ The seven problems test the parent's plane-wave solutions and confirm them in th
 4. **Massless limit.** The pair decouples, the field annihilated by $\tilde\nabla_\Phi$ keeps one helicity and the field annihilated by $(\tilde\nabla_\Phi)^{\natural}$ the other, and the two labels are locked: positive helicity with the first member and negative helicity with the second.
 5. **The two parts.** The value is read by $\tilde Q\mapsto-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$; a left multiplication keeps it and a right multiplication by $\vec e_x$ or $\vec e_y$ exchanges it; the change of the reading is right multiplication by $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$, which sends the reading from $\vec e_z$ to $\vec e_x$ and touches no derivative.
 6. **Mass shell.** The condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ is the quaternionic-norm statement $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$, and reproduces $E^2=\vec p^{\,2}c^2+m^4c^4$.
-7. **Helicity pieces.** The scalar square of the wave is $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=-\frac{N}{\hbar^{2}}$; the symbol commutes with left multiplication by $\tilde{Ζ}=i\vec u_p$, so the carrier splits into two two-dimensional eigenspaces of piece determinant $m^{2}\,c^{2}+N$; the pieces are isospectral, the determinant of the pair is $(m^{2}\,c^{2}+N)^2$, and the mass shell is the vanishing of either piece determinant, with a one-dimensional kernel per helicity.
+7. **Helicity pieces.** The scalar square of the wave is $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=-\frac{(2\pi)^{2} N}{h^{2}}$; the symbol commutes with left multiplication by $\tilde{Ζ}=i\vec u_p$, so the carrier splits into two two-dimensional eigenspaces of piece determinant $m^{2}\,c^{2}+N$; the pieces are isospectral, the determinant of the pair is $(m^{2}\,c^{2}+N)^2$, and the mass shell is the vanishing of either piece determinant, with a one-dimensional kernel per helicity.
 
 Two objects are needed by the exercise and are not given in the parent: the negative-frequency solutions $\tilde v$ (Problem 1) and the change-of-reading element $\tilde Q_{\mathrm{disp}}$ (Problem 5). The constructions above reproduce the parent's stated results.
 
@@ -410,7 +410,7 @@ Two objects are needed by the exercise and are not given in the parent: the nega
 | $\tilde Q\mapsto-i\tilde Q\vec e_z$ | The action that reads the value; spectrum $+1,+1,-1,-1$ |
 | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The Dirac field and its two parts, values $-1$ and $+1$ |
 | $\tilde P_{\Phi}=i p_{t}^{\prime}e_t+\vec p$ | Momentum element of the plane wave, $p_{t}^{\prime}=E/c$ |
-| $-i\hbar\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi=-i\tilde P_{\Phi}$ | The same wave read by the gradient; $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=-\frac{N}{\hbar^{2}}$ |
+| $-i \frac{h}{2\pi}\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi=-i\tilde P_{\Phi}$ | The same wave read by the gradient; $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=-\frac{(2\pi)^{2} N}{h^{2}}$ |
 | $i\tilde P_{\Phi}\,\tilde{Ξ}_{R}=m\tilde{Ξ}_{L}$ and $i\tilde P_{\Phi}^{\natural}\tilde{Ξ}_{L}=m\tilde{Ξ}_{R}$ | The pair: the gradient and the mass, momentum space |
 | $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=2\,\mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x\bigr)$ | Dirac pairing, twisted by the timelike unit |
 | $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$ | Change of the reading, $\vec e_z$ to $\vec e_x$ |

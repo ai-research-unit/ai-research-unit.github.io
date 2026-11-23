@@ -17,14 +17,14 @@ What is not new. The covariant Madelung action, the interaction's two pieces, th
 
 The restriction is the parent's. The central field is $\theta_{\mathrm{rpd}}=0$ with the rotor a sign, and the class is invariant only under a central Hamiltonian. The limit is defined there, as in the other families.
 
-The signs. The parent writes the coupling as $ϙ$ with $ϙ=-q$; its temporal bracket is $\partial_{r'_{t}}\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}a'_{t}$ and its spatial bracket is $\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A$. Every display here uses $q$, the electric charge, $\vec\pi=\vec\nabla_\Phi S-q\vec A$ and $\mathcal E=E-q\varphi$ with $E=-c\,\partial_{r'_{t}}S$, so the temporal bracket is $-\mathcal E/c$ and the free article's convention $\mathcal E=E-q\varphi$ is the one kept.
+The signs. The parent writes the coupling as $ϙ$ with $ϙ=-q$; its temporal bracket is $\partial_{r'_{t}}\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}a'_{t}$ and its spatial bracket is $\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A$. Every display here uses $q$, the electric charge, $\vec\pi=\vec\nabla_\Phi S-q\vec A$ and $\mathcal E=E-q\varphi$ with $E=-c\,\partial_{r'_{t}}S$, so the temporal bracket is $-\mathcal E/c$ and the free article's convention $\mathcal E=E-q\varphi$ is the one kept.
 ## Conventions
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$; $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$; $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=\frac{2\pi mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$.
 ## The Action in the Non-Quantum Limit: The Blocks
 The parent's action for the central field.
 
 $$
-S_{\mathrm{cpl}}=\int\mathrm{d}^{4}x\;\Bigl\{\varrho^{2}\Bigl[\Bigl(\partial_{r'_{t}}\theta_{\mathrm{pha}}+\frac{q}{\hbar}\frac{\varphi}{c}\Bigr)^{2}-\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{q}{\hbar}\vec A\Bigr\rvert^{2}\Bigr]
+S_{\mathrm{cpl}}=\int\mathrm{d}^{4}x\;\Bigl\{\varrho^{2}\Bigl[\Bigl(\partial_{r'_{t}}\theta_{\mathrm{pha}}+\frac{2\pi q}{h}\frac{\varphi}{c}\Bigr)^{2}-\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{2\pi q}{h}\vec A\Bigr\rvert^{2}\Bigr]
 +\bigl(\partial_{r'_{t}}\varrho\bigr)^{2}-\lvert\vec\nabla_\Phi \varrho\rvert^{2}-k_{m}^{2}\varrho^{2}\Bigr\},
 $$
 
@@ -34,8 +34,8 @@ The blocks and their orders.
 
 | block | what it carries | order in $\epsilon$ |
 |---|---|---|
-| $\varrho^{2}\bigl(\partial_{r'_{t}}\theta_{\mathrm{pha}}+\frac{q}{\hbar}\frac{\varphi}{c}\bigr)^{2}$ | scale squared, two derivatives of the phase | $0$ |
-| $-\varrho^{2}\bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{q}{\hbar}\vec A\bigr\rvert^{2}$ | scale squared, two derivatives of the phase | $0$ |
+| $\varrho^{2}\bigl(\partial_{r'_{t}}\theta_{\mathrm{pha}}+\frac{2\pi q}{h}\frac{\varphi}{c}\bigr)^{2}$ | scale squared, two derivatives of the phase | $0$ |
+| $-\varrho^{2}\bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{2\pi q}{h}\vec A\bigr\rvert^{2}$ | scale squared, two derivatives of the phase | $0$ |
 | $(\partial_{r'_{t}}\varrho)^{2}-\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ | two derivatives of the scale | $2$ |
 | $-k_{m}^{2}\varrho^{2}$ | scale squared, no derivative | $0$ |
 
@@ -45,8 +45,8 @@ The interaction's two pieces, and both are order zero.
 
 $$
 \varrho^{2}\Bigl(\partial_{r'_{t}}\theta_{\mathrm{pha}}\Bigr)^{2}-\varrho^{2}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}
-+\frac{2q\varrho^{2}}{\hbar}\Bigl(\partial_{r'_{t}}\theta_{\mathrm{pha}}\frac{\varphi}{c}+\vec\nabla_\Phi\theta_{\mathrm{pha}}\cdot\vec A\Bigr)
-+\frac{q^{2}\varrho^{2}}{\hbar^{2}}\Bigl(\Bigl(\frac{\varphi}{c}\Bigr)^{2}-\lvert\vec A\rvert^{2}\Bigr).
++\frac{2\pi 2q\varrho^{2}}{h}\Bigl(\partial_{r'_{t}}\theta_{\mathrm{pha}}\frac{\varphi}{c}+\vec\nabla_\Phi\theta_{\mathrm{pha}}\cdot\vec A\Bigr)
++\frac{(2\pi)^{2} q^{2}\varrho^{2}}{h^{2}}\Bigl(\Bigl(\frac{\varphi}{c}\Bigr)^{2}-\lvert\vec A\rvert^{2}\Bigr).
 $$
 
 The first interaction piece is the current times the potential and the second is the potential squared. The parent states both, and the second is the one a "current times potential" presentation omits. Both are order zero, so both are leading, so neither is a correction.
@@ -59,7 +59,7 @@ $$
 S_{\mathrm{cl}}=\int\mathrm{d}^{4}x\;\varrho^{2}\Bigl[\Bigl(\partial_{r'_{t}}S+\frac{q\varphi}{c}\Bigr)^{2}-\lvert\vec\pi\rvert^{2}-m^{2}c^{2}\Bigr]
 $$
 
-with $S=\hbar\theta_{\mathrm{pha}}$ and $m^{2}c^{2}=\hbar^{2}k_{m}^{2}$; the bracket's first factor is $-\mathcal E/c$.
+with $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ and $m^{2}c^{2}=\frac{h^{2}}{4\pi^{2}}k_{m}^{2}$; the bracket's first factor is $-\mathcal E/c$.
 
 The action is degenerate in the scale. No term carries a derivative of $\varrho$, so the scale's variation is algebraic and its momentum vanishes. The scale is a Lagrange multiplier of one constraint, and the constraint is the mechanical mass shell.
 
@@ -114,7 +114,7 @@ $$
 2\varrho\Bigl[\Bigl(\partial_{r'_{t}}S+\frac{q\varphi}{c}\Bigr)^{2}-\lvert\vec\pi\rvert^{2}-m^{2}c^{2}\Bigr]-2\Box_\Phi \varrho=0 ,
 $$
 
-which divided by $2\varrho$ is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}+\hbar^{2}\Box_\Phi \varrho/\varrho$ — the parent's amplitude equation with the quantum potential on the right. **The two differ by the deleted block and by nothing else.**
+which divided by $2\varrho$ is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}+\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/\varrho$ — the parent's amplitude equation with the quantum potential on the right. **The two differ by the deleted block and by nothing else.**
 
 The constraint is the truncated theory's Hamiltonian. A degenerate Lagrangian of this shape has no momentum conjugate to the scale, and the Legendre transform returns the mechanical shell as the only constraint. **The limit has converted the scale from a dynamical field into the carrier of one constraint**, which is what "the density becomes auxiliary" means in covariant language.
 ## The Constraints the Action Imposes: Gauge Invariance and the Deletion
@@ -134,7 +134,7 @@ the covariant transport equation, with the mechanical momentum in the spatial di
 
 It is identical on the full action. The deleted block carries no phase, so both derivatives of the Lagrangian with respect to $\theta_{\mathrm{pha}}$ are one expression, and no rearrangement is needed to see it. The transport equation is not an order of an expansion; it is invariant under the deletion.
 
-The conjugate momentum is the mechanical one, and the quadratic piece is what makes it so. Differentiating the spatial bracket with respect to $\vec\nabla_\Phi\theta_{\mathrm{pha}}$ returns $-2\varrho^{2}\left(\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{q}{\hbar}\vec A\right)$, that is $\rho\vec\pi$ up to $\hbar$. **The interaction's linear piece is what shifts the conjugate momentum from the canonical to the mechanical one**, and the quadratic piece is what keeps the shift consistent under a gauge transformation.
+The conjugate momentum is the mechanical one, and the quadratic piece is what makes it so. Differentiating the spatial bracket with respect to $\vec\nabla_\Phi\theta_{\mathrm{pha}}$ returns $-2\varrho^{2}\left(\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{2\pi q}{h}\vec A\right)$, that is $\rho\vec\pi$ up to $\frac{h}{2\pi}$. **The interaction's linear piece is what shifts the conjugate momentum from the canonical to the mechanical one**, and the quadratic piece is what keeps the shift consistent under a gauge transformation.
 
 The pair the truncated action produces is charged relativistic dust. A flow along the mechanical momentum, a density carried by it, no pressure, and a normalisation that is the mechanical shell. The parent's own phrase for the free case is irrotational dust; with the connection the flow is still dust and it is no longer irrotational in the kinematic sense, which is the equation-route companion's vorticity split.
 ## The Noether Currents: Density, Charge and Energy
@@ -176,14 +176,14 @@ The coupling survives entire: both interaction pieces are order zero, the quadra
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ | The parent's polar word on the central class |
 | $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | The scale; the proper density |
-| $S=\hbar\theta_{\mathrm{pha}}$, $E=-c\,\partial_{r'_{t}}S$ | The action; the canonical energy |
+| $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, $E=-c\,\partial_{r'_{t}}S$ | The action; the canonical energy |
 | $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$ | The connection |
 | $q$; the parent's $ϙ=-q$ | The electric charge; the parent's coupling |
 | $\vec\pi=\vec\nabla_\Phi S-q\vec A$ | Mechanical momentum |
 | $\mathcal E=E-q\varphi$ | Mechanical energy; $-\mathcal E/c$ is the temporal bracket |
 | $S_{\mathrm{cpl}}$, $S_{\mathrm{cl}}$ | The parent's action; the truncated charged-dust action |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ | The d'Alembertian of the material sector |
-| $k_{m}=mc/\hbar$ | The mass wave number |
+| $k_{m}=\frac{2\pi mc}{h}$ | The mass wave number |
 | $\epsilon=1/(\pi_{\Phi}L)$ | The parameter; one power per derivative of the scale |
 ## Further Reading
 - [The Lagrangian and the Coupled Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-coupled-klein-gordon-equation-in-polar-variables.html), the parent: the covariant logarithmic derivative, the central action, and the interaction's two pieces.
@@ -196,7 +196,7 @@ Both Euler–Lagrange systems were computed, with the block and without it.
 
 | variation | full action | truncated action |
 |---|---|---|
-| with respect to $\varrho$ | mechanical shell with $+\hbar^{2}\Box_\Phi \varrho/\varrho$ | mechanical shell alone |
+| with respect to $\varrho$ | mechanical shell with $+\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/\varrho$ | mechanical shell alone |
 | with respect to $\theta_{\mathrm{pha}}$ | $\vec\nabla_\Phi\cdot(\rho\vec\pi)+\partial_{r'_{t}}(\rho\mathcal E/c)=0$ | the same, identically |
 
 The second row was compared symbolically and is equal as written. The deleted block carries no phase.

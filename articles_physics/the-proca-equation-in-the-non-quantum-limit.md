@@ -42,7 +42,7 @@ What is not new. The frame decomposition of a real massive vector field, the two
 
 The restriction. The word is defined where $\varrho>0$ and on one branch at a time; the boundary is the cone $\langle\tilde A_\Phi\rangle_\natural=0$, which for a four-vector is the lightlike set.
 
-Conventions. Those of the polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde A_\Phi=a'_{t}e_{t}+\vec A$ real; $\tilde U_{\Psi,\mathrm b}$ the boost; $\Gamma_\mu=\tilde A_\Phi^{-1}\partial_\mu\tilde A_\Phi$ the frame's connection; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$; $\epsilon=1/(k_{\Phi}L)$ is *not* available here and its unavailability is the finding.
+Conventions. Those of the polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde A_\Phi=a'_{t}e_{t}+\vec A$ real; $\tilde U_{\Psi,\mathrm b}$ the boost; $\Gamma_\mu=\tilde A_\Phi^{-1}\partial_\mu\tilde A_\Phi$ the frame's connection; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=\frac{2\pi mc}{h}$; $\epsilon=1/(k_{\Phi}L)$ is *not* available here and its unavailability is the finding.
 
 ## The Word and the Two Brackets
 
@@ -163,7 +163,7 @@ The complex carrier of the coupled article restores the phase, and with it the e
 | $\theta_{\mathrm{rpd}}$, $\hat u_{\mathrm b}$ | The boost's rapidity and axis |
 | $\Gamma_\mu=\tilde A_\Phi^{-1}\partial_\mu\tilde A_\Phi-\partial_\mu\ln \varrho$ | The frame's connection |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ | The d'Alembertian of the material sector |
-| $k_m=mc/\hbar$ | The mass wave number; the frequency of the amplitude's oscillation |
+| $k_m=\frac{2\pi mc}{h}$ | The mass wave number; the frequency of the amplitude's oscillation |
 | $\epsilon=1/(k_{\Phi}L)$ | Not available in this chart; its unavailability is the finding |
 
 ## Further Reading

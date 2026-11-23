@@ -41,14 +41,14 @@ with $\varrho\ge0$ the scale, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ the angle
 $$
 \tilde\nabla_\Phi\theta_{\mathrm{pha}}=\tilde K_\Phi ,
 \qquad
-\vec p=\hbar\nabla\theta_{\mathrm{pha}},
+\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}},
 \qquad
-E=-\hbar c\,\frac{\partial\theta_{\mathrm{pha}}}{\partial r_t'} .
+E=-\frac{h}{2\pi} c\,\frac{\partial\theta_{\mathrm{pha}}}{\partial r_t'} .
 $$
 
 ## The Phase Gradient Is the Fourier Variable
 
-The wave number of a mode is the gradient of the mode's own angle. The parent proves this for any real angle, using only that the angle is real and that the gradient is the algebra's derivative, and it exhibits the match slot by slot: the temporal slot of the gradient is $-i\partial\theta_{\mathrm{pha}}/\partial r_t'$ and the temporal slot of the wave number is $iE/(\hbar c)$, so no factor is inserted by hand. On a plane wave, where the angle is linear, the identity is the statement that the phase's rate is the momentum.
+The wave number of a mode is the gradient of the mode's own angle. The parent proves this for any real angle, using only that the angle is real and that the gradient is the algebra's derivative, and it exhibits the match slot by slot: the temporal slot of the gradient is $-i\partial\theta_{\mathrm{pha}}/\partial r_t'$ and the temporal slot of the wave number is $\frac{2\pi iE}{h\,c}$, so no factor is inserted by hand. On a plane wave, where the angle is linear, the identity is the statement that the phase's rate is the momentum.
 
 The transform reads the same coefficient. Write the field of a single mode as $\tilde\Xi_{0}\exp(-i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=\vec k_\Phi\cdot\vec r-k_t'r_t'$. The transform over the position is supported on the single wave number $\tilde K_\Phi$, and the amplitude there is $\tilde\Xi_{0}$ up to the convention's constant. **The label of the transform and the phase gradient of the field are the same element**, and the identity is the parent's.
 
@@ -104,7 +104,7 @@ The two statements are one statement, and the difference between them is the tra
 
 Constant coefficients. The word's gradient identity is exact for any field; the transform's algebraic reading needs constant coefficients, because a symbol that depends on the position turns the transform of the equation into a convolution. The mass is constant, so the free case is exact throughout. *The Coupled Dirac Equation in Biquaternionic Polar Variables* and *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* are where the potential is treated.
 
-The Legendre momenta are not the Fourier variable. The canonical momenta conjugate to the word's parameters, $p_{\theta_{\mathrm{pha}}}=\hbar c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\hbar c\rho\gamma$ and $\vec p_{\mathrm{spin}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$, are Legendre momenta of the variational problem, with four partners that vanish identically. They are not $\hbar\tilde K_\Phi$, and the operation that produces them is not the transform. The polar variational parent calls them canonical and records them as primary constraints; what this article adds is one sentence, that the Fourier variable is a different conjugacy from theirs.
+The Legendre momenta are not the Fourier variable. The canonical momenta conjugate to the word's parameters, $p_{\theta_{\mathrm{pha}}}=\frac{h}{2\pi} c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\frac{h}{2\pi} c\rho\gamma$ and $\vec p_{\mathrm{spin}}=-\frac{h}{2\pi} c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$, are Legendre momenta of the variational problem, with four partners that vanish identically. They are not $\frac{h}{2\pi}\tilde K_\Phi$, and the operation that produces them is not the transform. The polar variational parent calls them canonical and records them as primary constraints; what this article adds is one sentence, that the Fourier variable is a different conjugacy from theirs.
 
 The denial, once more. The transform of a $\mathbb{B}_\Phi$-valued field is a $\mathbb{B}_\Phi$-valued field. The four factors are a parametrisation of one element at one event, and the transform's amplitude at one wave number is one element at one point of the shell. At no step does a sector change, and no display above mixes one.
 
@@ -129,14 +129,14 @@ The amplitude's own word has four factors, and they are constants of the mode, b
 | Symbol | Meaning |
 | --- | --- |
 | $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; four factors, eight parameters |
-| $\theta_{\mathrm{pha}}$ | The word's angle; the action's phase per $\hbar$ |
+| $\theta_{\mathrm{pha}}$ | The word's angle; the action's phase per $\frac{h}{2\pi}$ |
 | $\tilde K_\Phi=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ | The wave number; the gradient of the angle |
 | $\mathcal{F}[e^{i\theta}f](\omega)=\hat f(\omega-\vec\nabla_\Phi\theta)$ | A phase is a translation of the support |
 | $\mathcal{F}[fg]=\mathcal{F}[f]*\mathcal{F}[g]$ | The transform of a product is a convolution |
 | $\hat n=\vec k_\Phi/k_t'$ | The direction of the support point |
 | $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\hat n\cdot\vec e)$ | The two idempotents the direction selects on the cone |
-| $p_{\theta_{\mathrm{pha}}}=\hbar c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The Legendre momentum of the angle; not the Fourier variable |
-| $\vec p_{\mathrm{spin}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$ | The rotor's Legendre momentum; zero at rest |
+| $p_{\theta_{\mathrm{pha}}}=\frac{h}{2\pi} c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The Legendre momentum of the angle; not the Fourier variable |
+| $\vec p_{\mathrm{spin}}=-\frac{h}{2\pi} c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$ | The rotor's Legendre momentum; zero at rest |
 
 ## Further Reading
 

@@ -41,7 +41,7 @@ The two equations of the block are the algebra's own operators acting on that el
 
 $$
 \left(\Box_\Phi-k_m^{2}\right)\tilde\Xi=0,
-\qquad k_m=\frac{mc}{\hbar},
+\qquad k_m=\frac{2\pi mc}{h},
 $$
 
 where $\Box_\Phi$ is central with real coefficients, so the one biquaternion equation is four complex equations, one per coefficient. The spinor case is the biquaternionic Dirac equation, one element acting on another by left multiplication,
@@ -56,7 +56,7 @@ Both are the subjects of their own articles ([the Klein–Gordon equation in biq
 
 "Relativistic" is a property of the algebra and not an add-on. A Lorentz transformation is invertible acting by multiplication, $\tilde\Xi\mapsto\tilde M\tilde\Xi$ with $N(\tilde M)=1$, and the quaternionic norm $N=\langle\tilde\Xi\rangle_{\natural}$ is central, so it is carried into itself. The d'Alembertian is central. Nothing is added to make the equation covariant; the covariance is the multiplication.
 
-"Quantum" in this block is quantum-mechanical and not quantized. The constant $\hbar$ enters twice: through the wave number $k_m=mc/\hbar$, and through the phase, which carries the action in units of $\hbar$. One field is present. There is no Fock space, no creation operator, no vacuum state and no trace. The block is first-quantized throughout, and the quantized field is the subject of *Biquaternion Quantum Fields*.
+"Quantum" in this block is quantum-mechanical and not quantized. The constant $\frac{h}{2\pi}$ enters twice: through the wave number $k_m=\frac{2\pi mc}{h}$, and through the phase, which carries the action in units of $\frac{h}{2\pi}$. One field is present. There is no Fock space, no creation operator, no vacuum state and no trace. The block is first-quantized throughout, and the quantized field is the subject of *Biquaternion Quantum Fields*.
 
 ## Why a Fluid Is the Right Word
 
@@ -83,7 +83,7 @@ A fluid at an event is described by a density, a velocity and the internal varia
 | factor | type | range | fluid variable | read from |
 | --- | --- | --- | --- | --- |
 | $\varrho$ | real, positive | $\varrho>0$ | density, $\rho_{\mathrm{num}}=\varrho^{2}$ | the scale |
-| $e^{i\theta_{\mathrm{pha}}}$ | central imaginary | $(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | action, $S=\hbar\theta_{\mathrm{pha}}$ | the phase |
+| $e^{i\theta_{\mathrm{pha}}}$ | central imaginary | $(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | action, $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | the phase |
 | $\tilde U_{\Psi,\mathrm b}$ | Hermitian positive | $\theta_{\mathrm{rpd}}\ge0$, unit axis $\vec u_{\mathrm b}$ | four-velocity, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | the boost |
 | $\tilde u_{\mathrm r}$ | real unit | $\theta_{\mathrm{axr}}\in[0,2\pi]$, unit axis $\vec u_{\mathrm r}$ | spin direction, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | the rotor |
 
@@ -92,7 +92,7 @@ The velocity and the spin are the two non-central factors, and each is read by i
 | bilinear | value | reads | does not read |
 | --- | --- | --- | --- |
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | $ic\gamma\rho_{\mathrm{num}}e_t+\rho_{\mathrm{num}}\gamma\vec v$ | $\rho_{\mathrm{num}}$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ (spinor case; see below) | $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ |
-| $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\vec s$ | a Hermitian element along $\vec s$ | $\rho_{\mathrm{num}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ | $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ |
+| $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{h}{4\pi}i\vec s$ | a Hermitian element along $\vec s$ | $\rho_{\mathrm{num}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ | $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ |
 | $\langle\tilde\Xi\rangle_{\natural}$ | $\rho_{\mathrm{num}}e^{2i\theta_{\mathrm{pha}}}$ | $\rho_{\mathrm{num}}$, $2\theta_{\mathrm{pha}}$ | the two frames |
 
 The three rows are the fluid's whole observable content, and the last row is where the angle lives. The angle enters no current and no spin. That is the precise sense in which the field carries an angle that no bilinear of the algebra sees, and it is the reason the phase can be moved between the factors of the word without consequence.
@@ -165,7 +165,7 @@ The two blocks meet at one object and nowhere else. The stress tensor of the sca
 
 The word adds no beable. The reading is a re-coordinatisation of one equation into two or four real equations, and every one of those equations is the original equation. Nothing is added to the theory's ontology, no trajectories of particles are posited, and no measurement theory is proposed.
 
-The guidance equation is a reading and not a postulate. That $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ is the definition of the phase gradient in a fluid that has one, and the corpus states it as an identity. A reader who wants the Bohmian programme will find its algebra here and its ontology absent, deliberately.
+The guidance equation is a reading and not a postulate. That $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ is the definition of the phase gradient in a fluid that has one, and the corpus states it as an identity. A reader who wants the Bohmian programme will find its algebra here and its ontology absent, deliberately.
 
 ### Not a superfluid
 
@@ -208,7 +208,7 @@ word leaves open, the sign $\varepsilon$, the locking on the degenerate sector a
 | $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$ | Quaternionic norm |
 | $\varrho$ | Scale of the word; $\varrho>0$ |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | Proper density |
-| $\theta_{\mathrm{pha}}$ | Angle of the word; the action is $S=\hbar\theta_{\mathrm{pha}}$ |
+| $\theta_{\mathrm{pha}}$ | Angle of the word; the action is $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ |
 | $\theta_{\mathrm{rpd}}$ | Rapidity of the boost |
 | $\vec u_{\mathrm b}$ | Unit axis of the boost |
 | $\theta_{\mathrm{axr}}$ | Angle of the rotor |
@@ -221,7 +221,7 @@ word leaves open, the sign $\varepsilon$, the locking on the degenerate sector a
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | The current |
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 | $\tilde S_{\Psi}$ | The spin element, Hermitian |
-| $k_m=mc/\hbar$ | Mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $\varepsilon=\Xi_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | Sign of the scalar part against the modulus; $\pm1$ on $\Sigma_{10}$, where the scalar case sits; $\varrho\,e^{i\theta_{\mathrm{pha}}}$ |
 | $c$ | The limiting speed of the frame structure |
 

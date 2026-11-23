@@ -23,7 +23,7 @@ What is not new. The Proca action's decomposition into an amplitude and a frame,
 
 The restriction. The word is defined for $\varrho>0$ on one branch; the boundary is the lightlike set where the norm vanishes.
 ## Conventions
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the polar parent and its variational companion: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde A_\Phi=a'_{t}e_{t}+\vec A$ real; $\Gamma_\mu$ the frame's connection; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the polar parent and its variational companion: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde A_\Phi=a'_{t}e_{t}+\vec A$ real; $\Gamma_\mu$ the frame's connection; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=\frac{2\pi mc}{h}$.
 ## The Action in the Non-Quantum Limit
 The blocks.
 
@@ -157,7 +157,7 @@ The comparison with the other families is the ledger: the Klein–Gordon and Dir
 | $\Gamma_\mu$ | The frame's connection |
 | $\varepsilon_\mu$ | The metric signs of the material sector |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ | The d'Alembertian of the material sector |
-| $k_m=mc/\hbar$ | The mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
 | $\omega$ | The real plane wave's frequency, $\omega^{2}-\lvert\vec k\rvert^{2}=k_m^{2}$ |
 ## Further Reading
 - [The Proca Equation in the Non-Quantum Limit](the-proca-equation-in-the-non-quantum-limit.html), the companion: the two brackets, the two boxed equations and the absent parameter.

@@ -18,7 +18,7 @@ The entropy inequalities are real. [The Local Entropy Current](the-local-entropy
 
 The category is ordered, and the order is a dependency chain rather than a sequence of topics. Each layer uses the layer above it and adds one object. The field's own stress and flow, which used to be the first of those layers, now form a separate category — *Biquaternion Relativistic Quantum Hydrodynamics* — and the chain here begins where a state is put on the field.
 
-The three articles that no longer open it are the whole of that block: [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), which writes $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+(i/c)\vec S_{\mathrm P}$ and shows that the quantum potential is its divergence; [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), which assembles the Dirac field's triple — density, frame element, spin direction — and shows that its flow is not a gradient; and [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), which proves that the flow is irrotational except on the zero-divisor cone and that the circulation there is $2\pi\hbar n/m$.
+The three articles that no longer open it are the whole of that block: [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), which writes $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+(i/c)\vec S_{\mathrm P}$ and shows that the quantum potential is its divergence; [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), which assembles the Dirac field's triple — density, frame element, spin direction — and shows that its flow is not a gradient; and [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), which proves that the flow is irrotational except on the zero-divisor cone and that the circulation there is $h n/m$.
 
 The fluid's variables are read from the field's polar word and not postulated; the density is the scale, the velocity the boost, the spin the rotor, and the quantum potential is a second-derivative functional of the density that enters the mass shell and not a pressure. A triple of functions is not a state: for that, a temperature is needed, and the temperature is this category's first object. The ledger counts them where they live, so the twenty-two rows below do not include them, and their article-by-article audit is not this ledger's.
 
@@ -26,7 +26,7 @@ The fluid's variables are read from the field's polar word and not postulated; t
 
 Seven articles put a state on the field: a Wigner function, a partition function, a thermal formalism.
 
-[The Wigner Function in Biquaternionic Form](the-wigner-function-in-biquaternionic-form.html) defines $\tilde W_\Xi(\varrho,\vec p)$ against the standard $x$–$p$ transform and proves that its zeroth and first moments are the density and the current. [Relativistic Wigner Function and Quantum Kinetics](relativistic-wigner-function-and-quantum-kinetics.html) expands it in $\hbar$: the classical drift at order zero, $-\tfrac{\hbar^{2}}{24}V'''\partial_p^{3}W$ at order two. [The Schwinger–Keldysh Formalism in Biquaternionic Form](the-schwinger-keldysh-formalism-in-biquaternionic-form.html) supplies the non-equilibrium contour.
+[The Wigner Function in Biquaternionic Form](the-wigner-function-in-biquaternionic-form.html) defines $\tilde W_\Xi(\varrho,\vec p)$ against the standard $x$–$p$ transform and proves that its zeroth and first moments are the density and the current. [Relativistic Wigner Function and Quantum Kinetics](relativistic-wigner-function-and-quantum-kinetics.html) expands it in $\frac{h}{2\pi}$: the classical drift at order zero, $-\tfrac{h^{2}}{96\pi^{2}}V'''\partial_p^{3}W$ at order two. [The Schwinger–Keldysh Formalism in Biquaternionic Form](the-schwinger-keldysh-formalism-in-biquaternionic-form.html) supplies the non-equilibrium contour.
 
 The thermal core of the layer is three articles. [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html) writes $Z$ in the rest frame; [Quantum Thermodynamics in Biquaternionic Form](quantum-thermodynamics-in-biquaternionic-form.html) writes the Gibbs state as a point of the Bloch ball and the free energy as the modular Hamiltonian's scalar part; [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html) gives the imaginary-time sum. The layer's fourth thermal article is the transcription: [Equilibrium Partition Function in a Moving Frame](equilibrium-partition-function-in-a-moving-frame.html) adds the boost and finds that $Z$ does not change.
 
@@ -56,17 +56,17 @@ What the layer establishes. That the field's thermodynamics is a fluid thermodyn
 
 The velocity is a boost, not an independent field. $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$. The unit norm is not imposed; it is what a boost supplies. The mass shell is the statement that the factor is a boost, so the constraint and the kinematics are one display.
 
-The spin is a rotor, not an independent field. $\tilde S_{\Psi}=\rho\tfrac{\hbar}{2}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The Frenkel condition is then automatic, because a rotation cannot produce a temporal component, and [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) states the equivalence as $\mathrm{Sc}(\tilde S_{\Psi})=0\Leftrightarrow\mathcal{F}$.
+The spin is a rotor, not an independent field. $\tilde S_{\Psi}=\rho\tfrac{h}{4\pi}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The Frenkel condition is then automatic, because a rotation cannot produce a temporal component, and [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) states the equivalence as $\mathrm{Sc}(\tilde S_{\Psi})=0\Leftrightarrow\mathcal{F}$.
 
 The spin's conservation is the rotor's equation. $\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\tilde u_{\mathrm r}$ with $\vec\Omega_\eta$ real, and the spin current's divergence is the antisymmetric part of $\vec\Omega_\eta$ contracted with the spin. No separate spin equation is added to the framework.
 
-The quantum potential is the mass shell's correction and not a pressure. $Q_{\mathrm{qnt}}=-(\hbar^{2}/2m)\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$, entering as $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$. The article that writes it with the other sign is wrong, and the sign is fixed by the non-relativistic reduction.
+The quantum potential is the mass shell's correction and not a pressure. $Q_{\mathrm{qnt}}=-(\frac{h^{2}}{4\pi^{2}}/2m)\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$, entering as $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$. The article that writes it with the other sign is wrong, and the sign is fixed by the non-relativistic reduction.
 
 The entropy inequality is one divergence and one declaration. $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{ent}})\ge0$ with $\tilde J_{\Phi,\mathrm{ent}}$ Hermitian. The inequality is a statement about a real number because the current's four coefficients are real, and the corpus declares that once.
 
 The pure state has no entropy. The condensate's current vanishes, the second law is saturated, and the $T\to0$ limit of the two-fluid model is the polar-form article's single fluid. Entropy is friction between components: mutual friction in the two-fluid model, shear and bulk dissipation in the causal model, spin diffusion in the spin model. In every case the dissipative term is a square.
 
-The temperature is a length and not a frequency. $\beta=mc/(k_mk_BT)$ with $c\beta=mc^{2}/(k_mk_BT)$; the corpus never writes the inverse temperature as the reciprocal of a frequency, and the identity with that reciprocal is the special case $k_m=mc/\hbar$ — which is the statement that the field is on its shell, not a definition of $\beta$.
+The temperature is a length and not a frequency. $\beta=mc/(k_mk_BT)$ with $c\beta=mc^{2}/(k_mk_BT)$; the corpus never writes the inverse temperature as the reciprocal of a frequency, and the identity with that reciprocal is the special case $k_m=\frac{2\pi mc}{h}$ — which is the statement that the field is on its shell, not a definition of $\beta$.
 
 The flow is an element with a low index. $\tilde V_\Phi=\tilde P_\Phi/m$, components $v_{\Phi,\mu}$ only where a component is unavoidable. The metric is $\delta_{\mu\nu}$ and the index labels a direction and not a tensor slot, which is why no display in the category raises one.
 
@@ -78,7 +78,7 @@ Five identifications, one declaration, one sign, one length. That is what the fr
 
 ### Article 6: the partition function in a moving frame
 
-Transcribed: that $Z$ is a trace and that the thermal state is specified by a four-vector. The article's thermal element is $\tilde\beta_\Phi=(\beta/c)\tilde V_\Phi=\beta\gamma(ie_t+\vec\beta_{\mathrm{vel}})$ with norm $-\beta^{2}$, and the exponent is the contraction $-\beta_{\Phi,\nu}p_{\Phi,\nu}/\hbar$, which is $\beta k_m$ and is independent of $\gamma$ and of $\vec v$.
+Transcribed: that $Z$ is a trace and that the thermal state is specified by a four-vector. The article's thermal element is $\tilde\beta_\Phi=(\beta/c)\tilde V_\Phi=\beta\gamma(ie_t+\vec\beta_{\mathrm{vel}})$ with norm $-\beta^{2}$, and the exponent is the contraction $-\beta_{\Phi,\nu}\frac{2\pi p_{\Phi,\nu}}{h}$, which is $\beta k_m$ and is independent of $\gamma$ and of $\vec v$.
 
 Added: the statement that the frame dependence is in the element and not in the trace. $Z(\beta,\vec\beta_{\mathrm{vel}})=Z(\beta,\vec 0)$, so the moving frame has no partition function of its own; the observed period is $\beta_{\mathrm{obs}}=\gamma\beta$ and the observed temperature $T_{\mathrm{obs}}=T/\gamma$, with $\beta_{\mathrm{obs}}T_{\mathrm{obs}}$ constant to twelve decimal places at three velocities. Added: the Matsubara condition tilts — periodicity along $\tilde\beta_\Phi$, with the invariant statement $k_{\Phi,\nu}\beta_{\Phi,\nu}=2\pi n$ and not the spacing.
 
@@ -129,7 +129,7 @@ The framework's modular operator is finite-dimensional, of type I$_2$, and **a t
 | # | Article | Status | The claim it carries |
 |---|---|---|---|
 | 1 | The Wigner Function in Biquaternionic Form | framework | $\tilde W_\Xi$ with density and current as its two moments |
-| 2 | Relativistic Wigner Function and Quantum Kinetics | framework | the $\hbar$-expansion; drift at order zero, $-\tfrac{\hbar^{2}}{24}V'''\partial_p^{3}W$ at order two |
+| 2 | Relativistic Wigner Function and Quantum Kinetics | framework | the $\frac{h}{2\pi}$-expansion; drift at order zero, $-\tfrac{h^{2}}{96\pi^{2}}V'''\partial_p^{3}W$ at order two |
 | 3 | The Partition Function in Biquaternionic Form | framework | $Z$ in the rest frame |
 | 4 | Quantum Thermodynamics in Biquaternionic Form | framework | the Gibbs state as a point of the Bloch ball |
 | 5 | The Matsubara Thermal Formalism in Biquaternionic Form | framework | the imaginary-time sum |
@@ -189,7 +189,7 @@ Its last substantive article is the fluid's transport, and beyond transport lies
 
 The category is twenty-two articles in three layers and a ledger: the state (1 to 7), locality (8 to 14) and the fluid (15 to 21), with this article as the ledger. Four of the twenty-two are transcriptions — 6, 13, 14 and 21 — and each carries the sentence that it is standard physics in the corpus's letters with no framework interpretation. The other eighteen add identifications the algebra makes available, several of them inherited from the hydrodynamics block: the velocity is a boost, the spin a rotor, the spin's conservation the rotor's equation, the Frenkel condition automatic, the quantum potential the mass shell's correction, the second law one divergence, the temperature a length.
 
-$\beta$ is $2.803\,021\times10^{-12}\,\mathrm{m}$ at $2.725\,\mathrm{K}$, $2.546\,078\times10^{-14}\,\mathrm{m}$ at $300\,\mathrm{K}$ and $7.638\,233\times10^{-15}\,\mathrm{m}$ at $1000\,\mathrm{K}$, where $c\beta=mc^{2}/(k_mk_BT)$ is the same circumference in the material sector's units and not an independent number: the two displays differ by the factor $c$, so agreement between them tests the constants and not the physics. Circulation is $2\pi\hbar n/m$, checked at three radii for three windings. The Josephson frequency is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ per meV of chemical-potential difference. The second variation of the energy density in a three-channel example is $0.033$, split $0.0125+0.0125+0.008$ across the bulk, shear and heat channels. The front speed is $\sqrt{D_{\mathrm{th}}/\tau_q}$, which is $0.4472\,c$ for $(0.1,0.5)$ and $1.4142\,c$ — acausal — for $(1.0,0.5)$. The Thomas factor is $0.503\,782$ at $\beta_{\mathrm{vel}}=0.1$.
+$\beta$ is $2.803\,021\times10^{-12}\,\mathrm{m}$ at $2.725\,\mathrm{K}$, $2.546\,078\times10^{-14}\,\mathrm{m}$ at $300\,\mathrm{K}$ and $7.638\,233\times10^{-15}\,\mathrm{m}$ at $1000\,\mathrm{K}$, where $c\beta=mc^{2}/(k_mk_BT)$ is the same circumference in the material sector's units and not an independent number: the two displays differ by the factor $c$, so agreement between them tests the constants and not the physics. Circulation is $h n/m$, checked at three radii for three windings. The Josephson frequency is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ per meV of chemical-potential difference. The second variation of the energy density in a three-channel example is $0.033$, split $0.0125+0.0125+0.008$ across the bulk, shear and heat channels. The front speed is $\sqrt{D_{\mathrm{th}}/\tau_q}$, which is $0.4472\,c$ for $(0.1,0.5)$ and $1.4142\,c$ — acausal — for $(1.0,0.5)$. The Thomas factor is $0.503\,782$ at $\beta_{\mathrm{vel}}=0.1$.
 
 One Hermiticity declaration, made in [The Local Entropy Current](the-local-entropy-current.html) and inherited by every later inequality. No inequality in the category writes $\mathrm{Re}$ after it, and a reader who checks that single fact has checked the category's thermodynamic consistency.
 
@@ -210,13 +210,13 @@ Ten questions are open, and the ledger names them so that the next article need 
 | $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+(i/c)\vec S_{\mathrm P}$ | Energy–momentum element |
 | $w_{\mathrm{fl}}$, $p_{\mathrm{th}}$, $p_{\mathrm{qnt}}$, $p_{\mathrm{eff}}$ | Energy density, thermal and quantum pressures, their sum |
 | $Q_{\mathrm{qnt}}$ | Quantum potential, minus sign, always with the mass shell |
-| $\tilde S_{\Psi}=\rho\tfrac{\hbar}{2}i\vec s$ | Spin element |
+| $\tilde S_{\Psi}=\rho\tfrac{h}{4\pi}i\vec s$ | Spin element |
 | $\vec s$ | Spin direction |
 | $\mu_{\mathrm{spn}}$ | Spin potential |
 | $\tilde J_{\Phi,\mathrm{ent}}=s_{\mathrm{ent}}\gamma(e_t+\vec\beta_{\mathrm{vel}})$ | Entropy current, Hermitian |
 | $s_{\mathrm{ent}}$ | Entropy density |
 | $\beta=mc/(k_mk_BT)$ | Inverse temperature as a length |
-| $k_m=mc/\hbar$ | The field's wave number |
+| $k_m=\frac{2\pi mc}{h}$ | The field's wave number |
 | $T$ | Temperature |
 | $\tilde W_\Xi$ | Wigner element |
 | $Z$ | Partition function |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The coupled Proca constraint is the only constraint in the block that is nonlinear in the momentum space. Its covariant half is a multiplier: $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)=0$ transforms to a linear condition on the amplitude at each label. Its ordinary half is not: the constraint fixes the multiplier $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)$ to equal $-\frac{iϙ}{\hbar}\langle\tilde A\rangle_\natural$, a product, and a product transforms to a correlation of the amplitude with its own conjugate. **So the constraint equates a label-local expression to a label-delocal one**, and that asymmetry is the article's finding.
+The coupled Proca constraint is the only constraint in the block that is nonlinear in the momentum space. Its covariant half is a multiplier: $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)=0$ transforms to a linear condition on the amplitude at each label. Its ordinary half is not: the constraint fixes the multiplier $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)$ to equal $-\frac{2\pi iϙ}{h}\langle\tilde A\rangle_\natural$, a product, and a product transforms to a correlation of the amplitude with its own conjugate. **So the constraint equates a label-local expression to a label-delocal one**, and that asymmetry is the article's finding.
 
 The immediate consequence is that the constraint cannot be solved label by label. Every other constraint in the block — the Lorenz condition of the free vector fluid, the mass shell of the scalar, the transversality of a polarisation — is a condition on the amplitude at one point of the momentum space, and it determines that amplitude there. This one is one scalar equation per label whose right-hand side is an integral over all labels. No change of basis removes the correlation, because a correlation is the multiplication in the position variable and the multiplication is the physical product of two field values.
 
@@ -17,7 +17,7 @@ Position in the block. This is the charged companion of [The Fourier Transform a
 The charged spin-one fluid's: $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$, eight real parameters for the eight real components, the coupling $ϙ$, and
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi ,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi ,
 \qquad
 \tilde F=\tfrac12\bigl((\tilde\nabla_\Phi)^{\natural}_{\mathrm{gco}}\tilde A-\tilde\nabla_{\mathrm{gco},\Phi}\tilde A\bigr)_{V},
 \qquad
@@ -36,8 +36,8 @@ $$
 \mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)=0
 \qquad\Longrightarrow\qquad
 \mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)
-=-\frac{iϙ}{\hbar}\langle\tilde A\rangle_{\natural}
-=-\frac{iϙ}{\hbar}\,\varrho^{2}e^{2i\theta_{\mathrm{pha}}} .
+=-\frac{2\pi iϙ}{h}\langle\tilde A\rangle_{\natural}
+=-\frac{2\pi iϙ}{h}\,\varrho^{2}e^{2i\theta_{\mathrm{pha}}} .
 $$
 
 Transform the two sides and they have different shapes.
@@ -45,7 +45,7 @@ Transform the two sides and they have different shapes.
 $$
 \underbrace{\tilde K_\Phi\cdot\tilde A_{\mathrm{trf}}(\tilde K_\Phi)}_{\text{a multiplier, label-local}}
 \qquad\text{equals}\qquad
-\underbrace{-\frac{iϙ}{\hbar}\bigl(\tilde A_{\mathrm{trf}}*\tilde A_{\mathrm{trf}}^{\natural}\bigr)(\tilde K_\Phi)}_{\text{a correlation, label-delocal}} .
+\underbrace{-\frac{2\pi iϙ}{h}\bigl(\tilde A_{\mathrm{trf}}*\tilde A_{\mathrm{trf}}^{\natural}\bigr)(\tilde K_\Phi)}_{\text{a correlation, label-delocal}} .
 $$
 
 The left side is a linear operator applied pointwise, so it constrains this component of the amplitude at this label. The right side is a quadratic functional of the whole measure, so it is an integral over every label at once. **The constraint is therefore one scalar equation per label whose right-hand side is not a datum of that label**, and no diagonalisation of the field changes that, because the correlation is the multiplication in the position variable and the multiplication is the physical product of two field values.
@@ -148,10 +148,10 @@ Across the eight Fourier articles the invisible object is always either a produc
 |---|---|
 | $ϙ$ | The coupling |
 | $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The eight-parameter word |
-| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+iϙ\tilde A_\Phi/\hbar$ | The covariant derivative |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ\tilde A_\Phi}{h}$ | The covariant derivative |
 | $\tilde F$ | The field strength, built from covariant gradients |
-| $k_m=mc/\hbar$ | The mass wave number |
-| $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)=-(iϙ/\hbar)\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ | The ordinary divergence; the amplitude |
+| $k_m=\frac{2\pi mc}{h}$ | The mass wave number |
+| $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)=-(\frac{2\pi iϙ}{h})\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ | The ordinary divergence; the amplitude |
 | $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)=0$ | The covariant constraint; a multiplier |
 | $\tilde K_\Phi$ | The label, the transform's variable |
 | $\tilde A_{\mathrm{trf}}(\tilde K_\Phi)$ | The amplitude at a label, with no hat on the transform |
@@ -159,7 +159,7 @@ Across the eight Fourier articles the invisible object is always either a produc
 | $\tilde A_{\mathrm{trf}}*\tilde A_{\mathrm{trf}}^{\natural}$ | The correlation of the amplitude with its own conjugate |
 | $m^{2}\tilde A$, $\tilde A/\varrho$, and the charge bilinear | The three currents |
 | $\varrho=\lvert\tilde A\rvert$ in the chart | A coordinate, not the field's norm |
-| $\lambda=\exp(iϙ\Gamma/\hbar)$ | The gauge element |
+| $\lambda=\exp(\frac{2\pi iϙ\Gamma}{h})$ | The gauge element |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
 ## Further Reading

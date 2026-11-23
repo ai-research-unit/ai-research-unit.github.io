@@ -15,7 +15,7 @@ What is not new. The relativistic Madelung action, the Lagrange-multiplier form 
 
 The restriction is the parent's. The central field is $\theta_{\mathrm{rpd}}=0$ with the rotor a sign, and the parent proves that class is invariant only under a central Hamiltonian. The limit is defined there, as in the other families.
 ## Conventions
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ with $\varrho>0$; $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ on the material sector with $r'_{t}=ct'$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=mc/\hbar$; $\epsilon=1/(k_{\Phi}L)$ with $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ with $\varrho>0$; $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ on the material sector with $r'_{t}=ct'$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=\frac{2\pi mc}{h}$; $\epsilon=1/(k_{\Phi}L)$ with $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$.
 ## The Action in the Non-Quantum Limit: The Three Blocks
 The parent's central action.
 
@@ -35,7 +35,7 @@ The blocks and their orders.
 
 The first block is one object and not two. $\partial_{r'_{t}}$ and $\vec\nabla_\Phi$ carry the same power, because the scale varies on a length $L$ in space and on the length $L$ in the material time $r'_{t}=ct'$. The block is $(\partial \varrho)^{2}$ and the metric structure of the material sector is what makes its two halves one term, so the order $2$ is assigned to the block and not to a spatial piece of it.
 
-The second block is the mass shell before it is a shell. Its bracket is $\lvert\partial\theta_{\mathrm{pha}}\rvert^{2}$ with the material signs, so the truncated action is the statement that this bracket equals $k_{m}^{2}$ — and that is the mass shell with $S=\hbar\theta_{\mathrm{pha}}$.
+The second block is the mass shell before it is a shell. Its bracket is $\lvert\partial\theta_{\mathrm{pha}}\rvert^{2}$ with the material signs, so the truncated action is the statement that this bracket equals $k_{m}^{2}$ — and that is the mass shell with $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$.
 
 Why the middle block cannot be the scale's partner. In the general element the action is the sigma-model form $g_{ab}(p)\,\partial p_{a}\partial p_{b}$ with a metric on the eight parameters, and the central field is its restriction to two coordinates. The scale's block and the angle's block are two diagonal blocks of one metric, and the order is a property of the coordinate: derivatives of the scale are order $\epsilon$ and derivatives of the angle are order zero.
 
@@ -66,7 +66,7 @@ What is not deleted, and it matters. The phase's block keeps both signs of the m
 
 The error is the deleted block, and its order is two. The truncated action differs from the parent by $(\partial\varrho)^{2}$ in the material signs, and each factor of $\partial$ carries one power of the parameter. The error is therefore of order $\epsilon^{2}$, and the ratio that makes it small is the amplitude's gradient over the scale the truncation assumes: $|\partial\varrho|^{2}/(k_m^{2}\varrho^{2})$, which is small exactly when the amplitude varies slowly compared with the Compton length.
 
-What restoring the term does. Varying the parent's scale equation with the block present gives the same equation as the truncated one plus a term that is a divergence of a gradient divided by the density — the term the corpus calls the quantum potential. Its coefficient is $\hbar^{2}/2m$ in the material units, so it is a quantum correction and not a classical one, and its size relative to the mass term is $\epsilon^{2}$.
+What restoring the term does. Varying the parent's scale equation with the block present gives the same equation as the truncated one plus a term that is a divergence of a gradient divided by the density — the term the corpus calls the quantum potential. Its coefficient is $\frac{h^{2}}{4\pi^{2}}/2m$ in the material units, so it is a quantum correction and not a classical one, and its size relative to the mass term is $\epsilon^{2}$.
 
 Why the error is a functional of the amplitude alone. The deleted block contains no phase and no potential, so the correction cannot move the phase's equation or the current. The error is confined to the amplitude's equation, and that is why the article can say the transport equation is untouched by the truncation and the mass-shell equation is not.
 
@@ -101,7 +101,7 @@ $$
 \boxed{\ \bigl(\partial_{r'_{t}}\theta_{\mathrm{pha}}\bigr)^{2}-\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}=k_{m}^{2}\ }
 $$
 
-which with $S=\hbar\theta_{\mathrm{pha}}$ is $\left(\partial_{r'_{t}}S\right)^{2}-\lvert\vec\nabla_\Phi S\rvert^{2}=m^{2}c^{2}$, the mass shell.
+which with $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ is $\left(\partial_{r'_{t}}S\right)^{2}-\lvert\vec\nabla_\Phi S\rvert^{2}=m^{2}c^{2}$, the mass shell.
 
 On the full action the same variation carries the quantum potential. Keeping the scale's block, $\partial L/\partial(\partial_\mu \varrho)$ is nonzero and the Euler–Lagrange equation gains the divergence:
 
@@ -109,7 +109,7 @@ $$
 2\varrho\Bigl[\bigl(\partial\theta_{\mathrm{pha}}\bigr)^{2}-k_{m}^{2}\Bigr]-2\Box_\Phi \varrho=0 ,
 $$
 
-which divided by $2\varrho$ is $\left(\partial\theta_{\mathrm{pha}}\right)^{2}-k_{m}^{2}=\Box_\Phi \varrho/\varrho$, that is the parent's amplitude line $\left(\partial S\right)^{2}-m^{2}c^{2}=\hbar^{2}\Box_\Phi \varrho/\varrho$. The two equations differ by the deleted block and by nothing else, and the sign is the one the metric of the material sector supplies.
+which divided by $2\varrho$ is $\left(\partial\theta_{\mathrm{pha}}\right)^{2}-k_{m}^{2}=\Box_\Phi \varrho/\varrho$, that is the parent's amplitude line $\left(\partial S\right)^{2}-m^{2}c^{2}=\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/\varrho$. The two equations differ by the deleted block and by nothing else, and the sign is the one the metric of the material sector supplies.
 
 The scale is a Lagrange multiplier, and the constraint is the mass shell. In the truncated action $\varrho^{2}$ multiplies the bracket, so a variation of $\varrho$ imposes the bracket's vanishing and a variation of anything else is weighted by it. The equation of motion of the classical theory is the constraint, and that is the covariant form of the statement the first-order companion makes when it calls the scale a multiplier.
 
@@ -178,11 +178,11 @@ The variational route's gain here is the covariance of the deletion and the visi
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ | The parent's polar word on the central class |
 | $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | The scale; the proper density |
-| $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ | The action |
+| $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | The action |
 | $\partial^{2}$ | The material sector's invariant contraction of one gradient |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ | The d'Alembertian of the material sector |
 | $r'_{t}=ct'$ | The material length |
-| $k_{m}=mc/\hbar$ | The mass wave number |
+| $k_{m}=\frac{2\pi mc}{h}$ | The mass wave number |
 | $S_{\mathrm{central}}$, $S_{\mathrm{cl}}$ | The parent's action; the truncated one |
 | $\epsilon=1/(k_{\Phi}L)$ | The parameter; one power per derivative of the scale |
 | $g_{ab}$ | The metric on the parameter space of the general element |
@@ -203,7 +203,7 @@ Both Euler–Lagrange systems were computed, with the block and without it.
 
 The second row was compared symbolically and is equal as written. The deleted block carries no $\theta_{\mathrm{pha}}$, so the two derivatives of the Lagrangian with respect to the phase are one expression.
 
-The first row was checked for the sign. Keeping the block, the $\varrho$-equation divided by $2\varrho$ is $\left(\partial\theta\right)^{2}-k_{m}^{2}-\Box_\Phi \varrho/\varrho=0$, which is the parent's amplitude line after $S=\hbar\theta_{\mathrm{pha}}$; deleting the block removes the divergence and leaves the bracket. The two differ by exactly the quantum potential.
+The first row was checked for the sign. Keeping the block, the $\varrho$-equation divided by $2\varrho$ is $\left(\partial\theta\right)^{2}-k_{m}^{2}-\Box_\Phi \varrho/\varrho=0$, which is the parent's amplitude line after $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$; deleting the block removes the divergence and leaves the bracket. The two differ by exactly the quantum potential.
 
 The covariance of the deletion was checked as an identity. With $\Lambda$ a boost of the material sector, $(\partial \varrho)^{2}$ is unchanged because the contraction is taken with the sector's metric, so the deleted object is a scalar and the deletion commutes with $\Lambda$.
 

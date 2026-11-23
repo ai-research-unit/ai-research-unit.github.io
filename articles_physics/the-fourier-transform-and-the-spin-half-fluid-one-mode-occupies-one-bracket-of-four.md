@@ -21,7 +21,7 @@ $$
 \qquad
 \rho_{\mathrm{num}}=\varrho^{2},
 \qquad
-S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}},
+S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}},
 $$
 
 with $\tilde U_{\Psi,\mathrm b}$ the boost, $\tilde u_{\mathrm r}$ the rotor, $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{axr}}$ the rotor's angle, and
@@ -34,7 +34,7 @@ $$
 \tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}.
 $$
 
-The spin direction is $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ and the spin element is $\rho_{\mathrm{num}}^{1/2}(\hbar/2)i\vec s$. The Gordon splitting is
+The spin direction is $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ and the spin element is $\rho_{\mathrm{num}}^{1/2}(\frac{h}{2\pi 2})i\vec s$. The Gordon splitting is
 
 $$
 \tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}+\sum_\nu\partial_\nu M_{\mu\nu},
@@ -103,7 +103,7 @@ What the frame's own velocity does is not settled by this measurement, and the a
 
 ## The Spin Precession Is Inter-Mode
 
-The rotor is constant at a mode, so the spin direction is constant, so a mode does not precess. The spin element is $\rho_{\mathrm{num}}^{1/2}(\hbar/2)i\vec s$ and both factors are constants.
+The rotor is constant at a mode, so the spin direction is constant, so a mode does not precess. The spin element is $\rho_{\mathrm{num}}^{1/2}(\frac{h}{2\pi 2})i\vec s$ and both factors are constants.
 
 The consequence in fluid words is a missing equation. The spin-half fluid's transport law is a statement about how $\vec s$ turns along the flow, and at a mode the flow's parameter is the phase's and the turning is zero: **a mode has no spin transport to write**, and the transport law is an equation on the off-diagonal part of the field in the momentum space. That is the same structure as the vorticity's, one factor over.
 

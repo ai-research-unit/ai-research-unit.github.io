@@ -4,7 +4,7 @@
 
 The companion article *Canonical Quantization of the Biquaternion Dirac Field* quantizes the biquaternion Dirac field: it promotes the field to an operator-valued distribution, imposes the equal-time anticommutators, expands the field in its plane-wave solutions, and builds the Fock space. It closes with an explicit accounting of what is standard and what remains open, and it concludes that the construction is a transcription of ordinary canonical quantization rather than a derivation from the algebra $\mathbb{B}$.
 
-The four-momentum is $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$, so that $\tilde P_{\Phi}\tilde P_{\Phi}^\natural= -m^{2}\,c^{2}$ on the mass shell with $k_m=mc/\hbar$ the mass wave number.
+The four-momentum is $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$, so that $\tilde P_{\Phi}\tilde P_{\Phi}^\natural= -m^{2}\,c^{2}$ on the mass shell with $k_m=\frac{2\pi mc}{h}$ the mass wave number.
 
 The dynamics is the one-sided chiral pair
 
@@ -12,7 +12,7 @@ $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R} .
 $$
 
-Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 The framework carries two equations called the Dirac equation, and they must not be read as one. The pair displayed above is the first: it is the definition. The gradient acts by left multiplication, the field is the element $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ of $\mathbb{B}$, and the mass is the off-diagonal pairing of the two parts named by the subscript, $L$ and $R$ (*Special Element Conventions*, §*The Chirality Convention*).
 
@@ -55,12 +55,12 @@ The deformation's *axis* is algebraically natural; its *orientation*, which is w
 The companion article quantizes the field on its module; here the same modes are read as elements of $\mathbb{B}$, and the operator-valued field is
 
 $$
-\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}
+\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}
 \sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde w^{(r)}(\vec p)\,\exp(-i\theta_{\mathrm{pwp}})
 +b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde v^{(r)}(\vec p)\,\exp(+i\theta_{\mathrm{pwp}})\Big],
 $$
 
-Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
+Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 with $E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$, and with $\tilde w^{(r)}$ and $\tilde v^{(r)}$ the plane-wave elements of that momentum: the two solutions of the chiral pair and their two negative-frequency partners, each an element of $\mathbb{B}$. Its adjoint is the Hermitian conjugate $\tilde{Ξ}_{\mathrm{fop}}^*(x)$, carried with the same fixed pair $i\,\vec e_x$. That pair sits inside the time-ordered product, between the adjoint field and the test element, and the contraction over the two solutions consumes it: what acts on the test element is the kernel $\mathcal{A}_p+mc$ derived below, and no basis operator survives in the amplitude.
 
@@ -112,21 +112,21 @@ The mode operators obey
 $$
 \{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec p^{\,\prime})\}
 =\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}
-=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime}),
+=h^{3}\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime}),
 $$
 
 with all other anticommutators vanishing. The plane-wave elements of the parent article obey the normalizations it records there, and the two sums over its two solutions are the numerators of this article, read as actions on $\mathbb{B}$: the positive-frequency sum is the momentum action shifted up by the mass, $\mathcal{A}_p+mc$, and the negative-frequency sum is the same action shifted down, $\mathcal{A}_p-mc$, both on shell.
 
-The separation angle is $\theta_{\mathrm{sep}}=p\cdot(x-y)/\hbar$, real because the momentum and the separation are real. Contracting the mode operators against the vacuum gives the two elementary two-point actions. The **positive-frequency** piece is
+The separation angle is $\theta_{\mathrm{sep}}=p\cdot(x-y)\frac{2\pi}{h}$, real because the momentum and the separation are real. Contracting the mode operators against the vacuum gives the two elementary two-point actions. The **positive-frequency** piece is
 
 $$
-W_+(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi\hbar)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)+mc\tilde Q\big)\,\exp(-i\theta_{\mathrm{sep}}),
+W_+(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{h^{3}}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)+mc\tilde Q\big)\,\exp(-i\theta_{\mathrm{sep}}),
 $$
 
 in which only the $a_{\mathrm{fop}} a_{\mathrm{fop}}^{\dagger}$ contraction survives, and the **negative-frequency** piece is
 
 $$
-W_-(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi\hbar)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)-mc\tilde Q\big)\,\exp(+i\theta_{\mathrm{sep}}),
+W_-(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{h^{3}}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)-mc\tilde Q\big)\,\exp(+i\theta_{\mathrm{sep}}),
 $$
 
 in which only $b_{\mathrm{fop}} b_{\mathrm{fop}}^{\dagger}$ survives. In both expressions the momentum action is on shell, because the free mode expansion contains the on-shell modes and nothing else. These two objects are not yet the propagator; each is a boundary value of an analytic function, and it is the time ordering that combines them into $S_F$.
@@ -144,7 +144,7 @@ an equality of actions, read on a generic element. The relative minus is not a c
 The two $\mathrm{H}_{\mathrm{hvs}}$ functions can be represented by a single four-dimensional integral. The standard result, and the object whose biquaternion form is the subject of this article, is
 
 $$
-\boxed{\;S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi\hbar)^4}\;
+\boxed{\;S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{h^{4}}\;
 \exp(-i\theta_{\mathrm{pwp}})\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{-\big(N(\tilde Q_{\Phi})+m^{2}\,c^{2}\big)+i\epsilon},
 \qquad \epsilon\to0^+\;}.
 $$
@@ -200,7 +200,7 @@ in both lines the product of the two imaginary units being $i^2=-1$.
 Both carry the same **positive** weight: the sign of the half-plane and the sign inside the residue cancel, and the $2\pi$ cancels against the $1/(2\pi)$ of the $p_0$ measure, leaving $c/(2E_{\vec p})$, which is the normalisation of $W_\pm$. The fermionic minus is therefore not in the contour, and it must come from the numerator. For $\delta t>0$ the $p_0$ integral is already the positive-frequency integrand of $W_+$. For $\delta t<0$ it is
 
 $$
-\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c}\,\exp\!\big(+iE_{\vec p}\delta h_t/(\hbar c)+i\vec p\cdot\delta\vec s_{\Psi}/\hbar\big).
+\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c}\,\exp\!\big(+\frac{2\pi iE_{\vec p}\delta h_t}{h\,c}+\frac{2\pi i\vec p\cdot\delta\vec s_{\Psi}}{h}\big).
 $$
 
 Now flip the integration variable, $\vec p\to-\vec p$: the measure and $E_{\vec p}$ are unchanged, and the spatial phase reverses. The action is linear in the four-momentum, so flipping all four components flips its sign,
@@ -403,7 +403,7 @@ $$
 Its content is the contour prescription, and the prescription is fixed by time ordering together with the fermionic anticommutation sign:
 
 $$
-S_F(x-y):\ \tilde Q\longmapsto -i\int\!\frac{d^4p}{(2\pi\hbar)^4}\,\exp(-i\theta_{\mathrm{pwp}})\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{N(\tilde Q_{\Phi})+m^{2}\,c^{2}-i\epsilon},
+S_F(x-y):\ \tilde Q\longmapsto -i\int\!\frac{d^4p}{h^{4}}\,\exp(-i\theta_{\mathrm{pwp}})\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{N(\tilde Q_{\Phi})+m^{2}\,c^{2}-i\epsilon},
 \qquad
 \mathcal{A}_p:\ \tilde Q\longmapsto i p_0\tilde Q\,\vec e_x-i\sum_{\eta=1}^{3} p_\eta\,\vec e_\eta\,\tilde Q\,\vec e_y .
 $$

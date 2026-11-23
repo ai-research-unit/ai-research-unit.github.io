@@ -10,13 +10,13 @@ What the article supplies, in five statements.
 
 - The velocity is the phase gradient over the mass, and its acceleration is minus one gradient: $\mathrm{D}\vec v/\mathrm{D}t=-\vec\nabla_\Phi(V+Q)/m$, with inertia $m$ and no factor of $\gamma$.
 - The density the fluid carries is the conserved density. The marker density and the conserved density coincide here, which is the only rung on which they do, and there is one sheet rather than two.
-- The quantum term is an exact stress, $\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\,\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$, whose divergence is the force. It is neither isotropic nor a function of the density's value, so the absence of an equation of state is a theorem and not a convention.
+- The quantum term is an exact stress, $\sigma^{Q}_{ij}=\frac{h^{2}}{16\pi^{2}m}\rho_{\mathrm{num}}\,\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$, whose divergence is the force. It is neither isotropic nor a function of the density's value, so the absence of an equation of state is a theorem and not a convention.
 - The vorticity is the curl of the three-velocity and needs no frame caveat, because the three-velocity is a three-vector and not the spatial part of a four-vector. The flow is irrotational, and the statement is unconditional.
 - The second-order article's argument against viscosity does not transfer as stated. What transfers is the reversibility, and it survives as an anti-linear involution rather than as a parity.
 
 The word, the pair and the current are [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html), §*The Central Field*. This article takes them and asks what the object is in the vocabulary a fluid is described by: what its density is, what its velocity is, what accelerates it, what its vorticity is, and what plays the role of a pressure. Nothing here is a new solution, and the pair is not re-derived.
 
-Conventions. The algebra and the word are the polar article's: $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ and $\varepsilon=\pm1$ the branch. The density is $\rho_{\mathrm{num}}=\varrho^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, the action is $S=\hbar\theta_{\mathrm{pha}}$, and the quantum potential is $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$. Time is $t'$; $\vec\nabla_\Phi$ and $\Delta_\Phi$ are the flat spatial operators of the material sector; $\hbar$ is written explicitly and no wave number is used. Where the companion's relativistic letters appear they are the companion's: $\rho_{\mathrm{chg}}$, $\gamma$, $\tilde V_{\Phi}$.
+Conventions. The algebra and the word are the polar article's: $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ and $\varepsilon=\pm1$ the branch. The density is $\rho_{\mathrm{num}}=\varrho^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, the action is $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, and the quantum potential is $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$. Time is $t'$; $\vec\nabla_\Phi$ and $\Delta_\Phi$ are the flat spatial operators of the material sector; $\frac{h}{2\pi}$ is written explicitly and no wave number is used. Where the companion's relativistic letters appear they are the companion's: $\rho_{\mathrm{chg}}$, $\gamma$, $\tilde V_{\Phi}$.
 
 ## The Word Collapses
 
@@ -28,7 +28,7 @@ $$
 \boxed{\;\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\varepsilon\,e_t\;}
 \qquad
 \rho_{\mathrm{num}}=\varrho^{2},\quad
-S=\hbar\theta_{\mathrm{pha}},\quad
+S=\frac{h}{2\pi}\theta_{\mathrm{pha}},\quad
 \varepsilon=\pm1 .
 $$
 
@@ -37,7 +37,7 @@ Three data remain at each event, and they are the fluid's.
 | datum | range | symbol | what it is |
 | --- | --- | --- | --- |
 | scale | $\varrho>0$ | $\rho_{\mathrm{num}}=\varrho^{2}$ | density of the markers |
-| angle | $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | $S=\hbar\theta_{\mathrm{pha}}$ | action, defined modulo $2\pi\hbar$ |
+| angle | $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | action, defined modulo $h$ |
 | branch | $\varepsilon=\pm1$ | $\varepsilon$ | sign of the coefficient, deposited by the half turn |
 
 Three real data against the two real components of one complex coefficient, and the third is the half turn that the angle's range excludes. A reader who counts two has forgotten that the angle runs over a half-turn and that the other half is the sign.
@@ -48,7 +48,7 @@ There is no gauge freedom to fix and no free function to choose. The field has e
 
 ## The Pair
 
-Substituting the word into the equation replaces one complex equation by two real ones, exactly. With $S=\hbar\theta_{\mathrm{pha}}$,
+Substituting the word into the equation replaces one complex equation by two real ones, exactly. With $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$,
 
 $$
 \boxed{\;\frac{\partial S}{\partial t'}+\frac{\lvert\nabla S\rvert^{2}}{2m}+V+Q=0,\qquad
@@ -58,8 +58,8 @@ $$
 with
 
 $$
-Q=-\frac{\hbar^{2}}{2m}\frac{\Delta_\Phi \varrho}{\varrho}
-=-\frac{\hbar^{2}}{4m}\Bigl(\Delta_\Phi\ln\rho_{\mathrm{num}}+\tfrac12\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}\Bigr).
+Q=-\frac{h^{2}}{8\pi^{2}m}\frac{\Delta_\Phi \varrho}{\varrho}
+=-\frac{h^{2}}{16\pi^{2}m}\Bigl(\Delta_\Phi\ln\rho_{\mathrm{num}}+\tfrac12\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}\Bigr).
 $$
 
 The first is a Hamilton–Jacobi equation with one extra term and the second is the conservation of the density along the flow it defines. The pair is equivalent to the equation in both directions: every solution gives a pair, and every nowhere-zero solution of the pair gives a field. The equivalence is exact and no term is an approximation.
@@ -120,7 +120,7 @@ $$
 The circulation is quantised by the nodes and not by the flow. Around a loop that links a nodal line,
 
 $$
-\oint\vec v\cdot\mathrm{d}\vec l=\frac{2\pi\hbar\,n}{m},
+\oint\vec v\cdot\mathrm{d}\vec l=\frac{h\,n}{m},
 $$
 
 with $n$ the winding of the phase, and around a loop that links none it is zero. That is [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html)'s statement read on $\vec v$, and the coupling of the companion article adds the flux term that this rung cannot have.
@@ -132,7 +132,7 @@ The rank is zero and the price is the same as in the companion. A flow whose vor
 **The quantum force is the divergence of a symmetric tensor, and the tensor is two derivatives of the logarithm of the density.**
 
 $$
-\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\,\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}},
+\sigma^{Q}_{ij}=\frac{h^{2}}{16\pi^{2}m}\rho_{\mathrm{num}}\,\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}},
 \qquad
 \partial_{j}\sigma^{Q}_{ij}=-\rho_{\mathrm{num}}\,\partial_{i}Q .
 $$
@@ -140,9 +140,9 @@ $$
 *Proof.* With $f=\ln\rho_{\mathrm{num}}$, so that $\partial_{i}\rho_{\mathrm{num}}=\rho_{\mathrm{num}}f_{i}$,
 
 $$
-\partial_{j}\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\bigl(\rho_{\mathrm{num}}f_{j}f_{ij}+\rho_{\mathrm{num}}\partial_{i}\Delta_\Phi f\bigr),
+\partial_{j}\sigma^{Q}_{ij}=\frac{h^{2}}{16\pi^{2}m}\bigl(\rho_{\mathrm{num}}f_{j}f_{ij}+\rho_{\mathrm{num}}\partial_{i}\Delta_\Phi f\bigr),
 \qquad
--\rho_{\mathrm{num}}\partial_{i}Q=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\bigl(f_{j}f_{ij}+\partial_{i}\Delta_\Phi f\bigr),
+-\rho_{\mathrm{num}}\partial_{i}Q=\frac{h^{2}}{16\pi^{2}m}\rho_{\mathrm{num}}\bigl(f_{j}f_{ij}+\partial_{i}\Delta_\Phi f\bigr),
 $$
 
 using $\Delta_\Phi \varrho/\varrho=\tfrac12\Delta_\Phi f+\tfrac14\lvert\nabla f\rvert^{2}$, and the two agree term by term. The identity was also checked symbolically on a general smooth density, with all three components of the divergence vanishing identically.
@@ -150,14 +150,14 @@ using $\Delta_\Phi \varrho/\varrho=\tfrac12\Delta_\Phi f+\tfrac14\lvert\nabla f\
 Its trace is not the quantum potential, and that is the measure of its anisotropy.
 
 $$
-\sigma^{Q}_{ii}=-\rho_{\mathrm{num}}Q-\frac{\hbar^{2}}{8m}\rho_{\mathrm{num}}\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2},
+\sigma^{Q}_{ii}=-\rho_{\mathrm{num}}Q-\frac{h^{2}}{32\pi^{2}m}\rho_{\mathrm{num}}\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2},
 $$
 
 so the trace is $-\rho_{\mathrm{num}}Q$ corrected by a gradient-squared term, and the mean stress equals minus the quantum potential only where the density is uniform. A fluid whose stress is isotropically $-Q$ would have a pressure; this one does not.
 
 No function of the density's value reproduces the force. $\sigma^{Q}_{ij}$ carries two derivatives of $\ln\rho_{\mathrm{num}}$, so two density fields that agree at an event and differ in curvature have different stresses and different forces there. There is therefore no equation of state in the algebraic sense, and the absence is the same theorem as the companion's, at the rung where the Korteweg term is the whole of the stress.
 
-The stress is the companion's three-by-three block, and the identity is unconditional at this rung. [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) writes the stress as one element of $\mathbb{B}$ with an energy density, a stress and a flux in it, and the block it exhibits is the same tensor written here: $\sigma_{j\eta}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\partial_j\partial_\eta\ln\rho_{\mathrm{num}}$ is that article's $\frac{\hbar^{2}}{4m}[\partial_j\partial_\eta\rho_{\mathrm{num}}-\rho_{\mathrm{num}}^{-1}\partial_j\rho_{\mathrm{num}}\partial_\eta\rho_{\mathrm{num}}]$ with the logarithm written out. What changes is the operator, and with it the scope of the identity. The companion's quantum potential carries the d'Alembertian, so its divergence identity holds for an amplitude stationary in the material time; here the quantum potential carries the Laplacian, so the identity holds for every solution and no static caveat is needed. The flux and the energy density have no separate existence at this rung — the equation has one time derivative — and the three-by-three block is all the stress there is.
+The stress is the companion's three-by-three block, and the identity is unconditional at this rung. [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) writes the stress as one element of $\mathbb{B}$ with an energy density, a stress and a flux in it, and the block it exhibits is the same tensor written here: $\sigma_{j\eta}=\frac{h^{2}}{16\pi^{2}m}\rho_{\mathrm{num}}\partial_j\partial_\eta\ln\rho_{\mathrm{num}}$ is that article's $\frac{h^{2}}{16\pi^{2}m}[\partial_j\partial_\eta\rho_{\mathrm{num}}-\rho_{\mathrm{num}}^{-1}\partial_j\rho_{\mathrm{num}}\partial_\eta\rho_{\mathrm{num}}]$ with the logarithm written out. What changes is the operator, and with it the scope of the identity. The companion's quantum potential carries the d'Alembertian, so its divergence identity holds for an amplitude stationary in the material time; here the quantum potential carries the Laplacian, so the identity holds for every solution and no static caveat is needed. The flux and the energy density have no separate existence at this rung — the equation has one time derivative — and the three-by-three block is all the stress there is.
 
 ## The Anti-Viscosity Argument Does Not Transfer
 
@@ -179,29 +179,29 @@ Three quantities are removed in passing from the companion to this rung, and eac
 
 Each row is a property that the relativistic fluid has and this one does not, and each is a property that a reader of the companion might mistake for a property of the correspondence rather than of the equation. The correspondence is the same at both rungs: an exact word, a reverse map defined on a class, and a piece of extra structure — a Korteweg stress — that makes the fluid a classical medium.
 
-The pressureless Euler equation is the $\hbar\to0$ limit of this fluid, the quantum stress vanishing with $\hbar^{2}$; the classical layer's pressure is a datum the field does not have, and the limit returns the dust rather than the general fluid. This fluid is the $\gamma\to1$ limit of the spin-zero fluid, and the free spin-zero fluid is the charged one at $\varkappa=0$. Each limit is a deletion of one structure and not a change of kind, and the rungs together are the block's answer to the question of what a scalar field's fluid is at each order of the equation.
+The pressureless Euler equation is the $h\to0$ limit of this fluid, the quantum stress vanishing with $\frac{h^{2}}{4\pi^{2}}$; the classical layer's pressure is a datum the field does not have, and the limit returns the dust rather than the general fluid. This fluid is the $\gamma\to1$ limit of the spin-zero fluid, and the free spin-zero fluid is the charged one at $\varkappa=0$. Each limit is a deletion of one structure and not a change of kind, and the rungs together are the block's answer to the question of what a scalar field's fluid is at each order of the equation.
 
 ## What Is Established and What Is Interpretation
 
-Established. The collapse of the word to three data, by the polar article's substitution. The pair, exactly, with the Laplacian in the quantum potential and no term dropped. That the marker density and the conserved density coincide, from $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ and the absence of $\gamma$. The continuity equation as the imaginary part of the wave equation. The acceleration law $\mathrm{D}\vec v/\mathrm{D}t=-\vec\nabla_\Phi(V+Q)/m$, by the gradient of the Hamilton–Jacobi equation, with inertia $m$ and no factor. The vanishing of the vorticity as the curl of the three-velocity, which is not a frame artefact because the three-velocity is a three-vector. The quantised circulation at a node, $2\pi\hbar n/m$. The stress identity $\partial_{j}\sigma^{Q}_{ij}=-\rho_{\mathrm{num}}\partial_{i}Q$ with $\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$, verified term by term and symbolically. Its trace and its anisotropy. The absence of an algebraic equation of state, from the two derivatives in the stress. That the second-order anti-viscosity argument does not transfer as stated, and that the reversibility survives as an anti-linear involution.
+Established. The collapse of the word to three data, by the polar article's substitution. The pair, exactly, with the Laplacian in the quantum potential and no term dropped. That the marker density and the conserved density coincide, from $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ and the absence of $\gamma$. The continuity equation as the imaginary part of the wave equation. The acceleration law $\mathrm{D}\vec v/\mathrm{D}t=-\vec\nabla_\Phi(V+Q)/m$, by the gradient of the Hamilton–Jacobi equation, with inertia $m$ and no factor. The vanishing of the vorticity as the curl of the three-velocity, which is not a frame artefact because the three-velocity is a three-vector. The quantised circulation at a node, $h n/m$. The stress identity $\partial_{j}\sigma^{Q}_{ij}=-\rho_{\mathrm{num}}\partial_{i}Q$ with $\sigma^{Q}_{ij}=\frac{h^{2}}{16\pi^{2}m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$, verified term by term and symbolically. Its trace and its anisotropy. The absence of an algebraic equation of state, from the two derivatives in the stress. That the second-order anti-viscosity argument does not transfer as stated, and that the reversibility survives as an anti-linear involution.
 
 Interpretation. That the pair *is* a fluid's equations rather than a rewriting with fluid words: the warrant is the count, the types of the factors, and the fact that the pair is the reverse map's pressureless case, not a proof. That the third row of the mass-shell table — the absence of a constraint — is best read as the fluid's freedom rather than as the fluid's poverty. That the flow's irrotationality is a property of the phase rather than of the algebra is the polar article's reading and is adopted, not proved, here.
 
-Not claimed. It is not claimed that the fluid is linear because its equation is: the data obey a nonlinear system, with the interference term $2\sqrt{\rho_{1}\rho_{2}}\cos((S_{1}-S_{2})/\hbar)$. It is not claimed that the quantum stress is a pressure; the trace computation says the opposite. It is not claimed that the fluid has a thermodynamics: it has no temperature and no state. It is not claimed that this rung is a new physical theory; it is the same equation read one rung lower, and its value is that it shows which of the companion's properties belong to the correspondence and which belong to the order of the equation.
+Not claimed. It is not claimed that the fluid is linear because its equation is: the data obey a nonlinear system, with the interference term $2\sqrt{\rho_{1}\rho_{2}}\cos((S_{1}-S_{2})\frac{2\pi}{h})$. It is not claimed that the quantum stress is a pressure; the trace computation says the opposite. It is not claimed that the fluid has a thermodynamics: it has no temperature and no state. It is not claimed that this rung is a new physical theory; it is the same equation read one rung lower, and its value is that it shows which of the companion's properties belong to the correspondence and which belong to the order of the equation.
 
 ## Summary
 
-The scalar field's word collapses to a scale, an action and a branch, and the fluid carries three data at each event: the density $\rho_{\mathrm{num}}=\varrho^{2}$, the action $S=\hbar\theta_{\mathrm{pha}}$, and the sign $\varepsilon$.
+The scalar field's word collapses to a scale, an action and a branch, and the fluid carries three data at each event: the density $\rho_{\mathrm{num}}=\varrho^{2}$, the action $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, and the sign $\varepsilon$.
 
-The equation separates into two real equations without remainder: a Hamilton–Jacobi equation with $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$ and a continuity equation for $\rho_{\mathrm{num}}$. The pair is unconstrained in both directions.
+The equation separates into two real equations without remainder: a Hamilton–Jacobi equation with $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ and a continuity equation for $\rho_{\mathrm{num}}$. The pair is unconstrained in both directions.
 
 The density is at once the marker density and the conserved density, because the equation is first order in time and the density is a norm rather than the temporal slot of a current. There is one sheet, no sign and no antiparticle in the data.
 
 The velocity is $\vec v=\vec\nabla_\Phi S/m$ and its acceleration is $\mathrm{D}\vec v/\mathrm{D}t=-\vec\nabla_\Phi(V+Q)/m$, with inertia $m$ and no factor of $\gamma$. Both of the companion's qualifications are removed, and their removal is the absence of a mass shell rather than an improvement of the analysis.
 
-The velocity is a gradient, so the vorticity vanishes identically and the statement needs no frame caveat: $\vec v$ is a three-vector and its curl is the vorticity. The circulation is $2\pi\hbar n/m$ around a loop that links a node and zero around one that does not. The rank is zero and the helicity vanishes.
+The velocity is a gradient, so the vorticity vanishes identically and the statement needs no frame caveat: $\vec v$ is a three-vector and its curl is the vorticity. The circulation is $h n/m$ around a loop that links a node and zero around one that does not. The rank is zero and the helicity vanishes.
 
-The quantum term is an exact stress, $\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$, whose divergence is $-\rho_{\mathrm{num}}\vec\nabla_\Phi Q$. Its trace is not the quantum potential, and no function of the density's value reproduces it, so there is no equation of state.
+The quantum term is an exact stress, $\sigma^{Q}_{ij}=\frac{h^{2}}{16\pi^{2}m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$, whose divergence is $-\rho_{\mathrm{num}}\vec\nabla_\Phi Q$. Its trace is not the quantum potential, and no function of the density's value reproduces it, so there is no equation of state.
 
 The second-order anti-viscosity argument does not transfer as stated: the bar is now an anti-linear involution rather than a parity, and it still excludes a dissipation function.
 
@@ -216,17 +216,17 @@ Three quantities of the companion are removed: the normalisation of the four-vel
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The central field, in its word |
 | $\varrho$ | Amplitude; $\varrho>0$ |
 | $\rho_{\mathrm{num}}=\varrho^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | Density; here also the conserved density |
-| $S=\hbar\theta_{\mathrm{pha}}$ | Action |
+| $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | Action |
 | $\varepsilon=\pm1$ | Branch of the modulus |
 | $\vec v=\vec\nabla_\Phi S/m$ | Three-velocity; a gradient |
 | $\vec j=\rho_{\mathrm{num}}\vec v$ | Current |
-| $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential |
+| $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential |
 | $V$ | External potential; $V=0$ for the free field |
-| $\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | Quantum stress; $\partial_{j}\sigma^{Q}_{ij}=-\rho_{\mathrm{num}}\partial_{i}Q$ |
+| $\sigma^{Q}_{ij}=\frac{h^{2}}{16\pi^{2}m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | Quantum stress; $\partial_{j}\sigma^{Q}_{ij}=-\rho_{\mathrm{num}}\partial_{i}Q$ |
 | $\vec\omega=\vec\nabla_\Phi\times\vec v$ | Vorticity; zero identically |
 | $\mathcal{T}:\tilde\Xi(t')\mapsto\tilde\Xi^{*}(-t')$ | The anti-linear time reversal |
 | $\Delta_\Phi$, $\vec\nabla_\Phi$ | Laplacian and gradient on the material sector |
-| $\hbar$, $m$ | Reduced Planck constant, mass |
+| $\frac{h}{2\pi}$, $m$ | Reduced Planck constant, mass |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
 ## Further Reading

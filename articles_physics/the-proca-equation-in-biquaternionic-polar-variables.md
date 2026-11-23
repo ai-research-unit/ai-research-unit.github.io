@@ -53,7 +53,7 @@ $$
 \langle\tilde A_\Phi\rangle_\natural=-(a'_t)^2+\vec A^2 ,
 $$
 
-the Minkowski square in the corpus's signs. The derivatives are $\partial/\partial R_t=-i\,\partial/\partial r'_t$ on the time slot and $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the three space slots, so that $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$ as in the element form. The mass is the wave number $k_m=mc/\hbar$.
+the Minkowski square in the corpus's signs. The derivatives are $\partial/\partial R_t=-i\,\partial/\partial r'_t$ on the time slot and $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the three space slots, so that $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$ as in the element form. The mass is the wave number $k_m=\frac{2\pi mc}{h}$.
 
 ## Why the Four-Factor Word Does Not Apply
 
@@ -182,7 +182,7 @@ where the conjugation by $\hat u$ acts on the boost generator and returns a boos
 | frame, rapidity part | Hermitian vector | $\tfrac12\partial_\mu\theta_{\mathrm{rpd}}\,i\hat u_{\mathrm b}$ | $-\tfrac12\partial_\mu\theta_{\mathrm{rpd}}\,i\hat u$ |
 | frame, axis part | real vector | $\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}\partial_\mu\hat u_{\mathrm b}$ | $-\hat u\partial_\mu\hat u$ and the conjugated rapidity term |
 
-**The absence of the central bracket is the whole difference.** In the spinor case the central bracket is the gradient of the angle and it is the guidance equation: $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$. In the material sector there is no central bracket at all, so there is no phase gradient, no guidance, and no Madelung pair. What replaces it is a direction $\hat u$ carried by the frame, and the transport of that direction is a real-vector bracket, which the spinor's rotor also has. The material sector keeps the scale, the boost and the rotor's rôle, and it loses the phase. That is the polar form of "the Proca field is real".
+**The absence of the central bracket is the whole difference.** In the spinor case the central bracket is the gradient of the angle and it is the guidance equation: $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$. In the material sector there is no central bracket at all, so there is no phase gradient, no guidance, and no Madelung pair. What replaces it is a direction $\hat u$ carried by the frame, and the transport of that direction is a real-vector bracket, which the spinor's rotor also has. The material sector keeps the scale, the boost and the rotor's rôle, and it loses the phase. That is the polar form of "the Proca field is real".
 
 ## The Proca Equation in Polar Variables
 
@@ -351,7 +351,7 @@ with the second in the traceless part; for a fixed axis they reduce to a massive
 | $\varepsilon=\pm1$ | Sign of $a'_t$ on the timelike branch |
 | $\Gamma_\mu=\tilde U^{-1}\partial_\mu\tilde U$ | Frame bracket, the Maurer–Cartan form |
 | $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ | Lorenz scalar |
-| $k_m=mc/\hbar$ | Mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 
 ## Further Reading
 

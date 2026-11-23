@@ -161,7 +161,7 @@ v_{\mathrm{frt,sh}}=\sqrt{\frac{\eta_{\mathrm{sh}}}{m\,\rho_{\mathrm{num}}\,\tau
 v_{\mathrm{frt,bk}}=\sqrt{\frac{\zeta}{m\,\rho_{\mathrm{num}}\,\tau_{\Pi}}},
 $$
 
-with the mass $m$ in the denominator, and it is not decoration. A viscosity over a density is a kinematic viscosity only when the density is a *mass* density; $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ is a number density, as the pressure of [The Equation of State in Biquaternion Form](the-equation-of-state-in-biquaternion-form.html) makes plain — $p_{\mathrm{qnt}}\sim(\hbar^{2}/m)(\rho_{\mathrm{num}}/L^{2})$ is a pressure only if $\rho_{\mathrm{num}}$ carries $1/\mathrm{length}^{3}$ — so for the scalar-rung fluid of this article, where the scalar bilinear equals the proper density, the mass density is $m\rho_{\mathrm{num}}$ and the kinematic viscosity is $\eta_{\mathrm{sh}}/(m\rho_{\mathrm{num}})$; for a spinor superposition the mass density is $m\rho_{\mathrm{num}}\cos\theta$ of the Takabayasi article, and the two displays above carry that factor in place of $m\rho_{\mathrm{num}}$. A reader who drops the $m$ gets a front speed in units of $\sqrt{\mathrm{kg}}\,\mathrm{m/s}$ and will not notice it in a table of numbers with $m=1$. The heat channel needs no such factor because $D_{\mathrm{th}}=\kappa_{\mathrm{th}}/c_{V}$ is already a diffusivity, the heat capacity being per unit volume.
+with the mass $m$ in the denominator, and it is not decoration. A viscosity over a density is a kinematic viscosity only when the density is a *mass* density; $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ is a number density, as the pressure of [The Equation of State in Biquaternion Form](the-equation-of-state-in-biquaternion-form.html) makes plain — $p_{\mathrm{qnt}}\sim(\frac{h^{2}}{4\pi^{2}}/m)(\rho_{\mathrm{num}}/L^{2})$ is a pressure only if $\rho_{\mathrm{num}}$ carries $1/\mathrm{length}^{3}$ — so for the scalar-rung fluid of this article, where the scalar bilinear equals the proper density, the mass density is $m\rho_{\mathrm{num}}$ and the kinematic viscosity is $\eta_{\mathrm{sh}}/(m\rho_{\mathrm{num}})$; for a spinor superposition the mass density is $m\rho_{\mathrm{num}}\cos\theta$ of the Takabayasi article, and the two displays above carry that factor in place of $m\rho_{\mathrm{num}}$. A reader who drops the $m$ gets a front speed in units of $\sqrt{\mathrm{kg}}\,\mathrm{m/s}$ and will not notice it in a table of pure numbers. The heat channel needs no such factor because $D_{\mathrm{th}}=\kappa_{\mathrm{th}}/c_{V}$ is already a diffusivity, the heat capacity being per unit volume.
 
 So each channel has its own causality condition and the theory is causal only if all three hold. The article writes the three because a single satisfied channel is the commonest way a causal claim is made falsely.
 
@@ -241,7 +241,7 @@ The equilibrium is stable when the energy's second variation, $\delta^{2}w_{\mat
 | $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ | Proper density, a number density per unit volume |
 | $m$ | Mass of the field's quantum, so that $m\rho_{\mathrm{num}}$ is the mass density |
 | $T$, $\beta$ | Temperature, imaginary-time circumference |
-| $c$, $\hbar$ | Speed of light, Planck constant |
+| $c$, $\frac{h}{2\pi}$ | Speed of light, Planck constant |
 | $e_t$ | Unit temporal direction |
 | $\gamma$ | Boost factor of the flow |
 | $\vec\beta_{\mathrm{vel}}=\vec v/c$ | Dimensionless velocity of the flow |

@@ -265,7 +265,7 @@ The table is an index of labels and not a list of tokens: a label names an objec
 | $\theta_{\mathrm{mgn}}$ | the angle between a magnetic moment and the field |
 | $\theta_{\mathrm{pha}}$ | the phase angle of a complex number or of a gate, $\theta_{\mathrm{pha}}=\arg\omega$ |
 | $\theta_{\mathrm{phb}}$ | the second phase angle, the split-complex phase of a reduced biquaternion |
-| $\theta_{\mathrm{phs}}$ | the phase of a scalar field, $\theta_{\mathrm{phs}}=S/\hbar$, a full-turn angle |
+| $\theta_{\mathrm{phs}}$ | the phase of a scalar field, $\theta_{\mathrm{phs}}=2\pi S/h$, a full-turn angle |
 | $\theta_{\mathrm{pla}}$ | the angle in the first invariant plane |
 | $\theta_{\mathrm{plb}}$ | the angle in the second invariant plane |
 | $\theta_{\mathrm{prc}}$ | the precession angle of a gyroscope |
@@ -411,7 +411,7 @@ The corpus has a small number of working conventions that are not mathematical.
 
 **The letter $\iota$ is not used in Part VI.** Every article registered under *Part VI : Synthetic Studies* of `maths.md` writes no $\iota$, in any spelling. The letter is not reserved there and names no object of those studies: a comparison with a Clifford algebra is written by its values or by the words "the Clifford image", an interior product as the pairing $\omega(X_f,\,\cdot\,)=df$, and an inner automorphism in words. A display in Part VI that introduces $\iota$ is defective.
 
-**The symbol $\hbar$ is not the deformation parameter.** The reduced Planck constant is written $\hbar$ and nothing else in the mathematical corpus: it occurs only where a physical phase is meant, $\theta_{\mathrm{phs}}=S/\hbar$ and $\exp(-iH\varepsilon/\hbar)$. The formal parameter of a star product, of a Weyl quantisation $\mathrm{Op}^w$ and of the semiclassical calculus is a different object, dimensionless and not the Planck constant, and it is written $h_{\mathrm{def}}$. The two are never the same letter, and an article that writes the star-product parameter as $\hbar$ has borrowed the Planck constant for a quantity that carries no action.
+**The Planck constant is written $h$, and the barred letter is never used.** The mathematical corpus writes the Planck constant as $h$ and as no other symbol, in this article and in every article of the series. A physical phase is $\theta_{\mathrm{phs}}=2\pi S/h$ and a physical evolution is $\exp(-2\pi iH\varepsilon/h)$: the $2\pi$ is written, because the action in an exponent stands over an angle. The barred letter is not used anywhere in the corpus, in any spelling, and an article that writes it has written a symbol this series does not have. The formal parameter of a star product, of a Weyl quantisation $\mathrm{Op}^w$ and of the semiclassical calculus is a different object, dimensionless and not the Planck constant, and it is written $h_{\mathrm{def}}$; an article that writes that parameter as the Planck constant has borrowed an action for a quantity that carries none.
 
 ## LaTeX and Typesetting
 

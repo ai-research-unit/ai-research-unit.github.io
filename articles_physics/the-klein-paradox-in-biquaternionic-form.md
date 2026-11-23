@@ -4,11 +4,11 @@
 
 The **Klein paradox** is the failure of the Dirac equation, read as a one-particle theory, at a sufficiently steep electrostatic potential step. Oskar Klein found in 1929 that an electron incident on a step of height $ϙV$ greater than twice its rest energy is not exponentially reflected as the non-relativistic theory requires: the reflection coefficient stays bounded, a substantial fraction of the wave penetrates the strong-potential region, and in the limit $ϙV \to \infty$ the transmission does not vanish. The one-particle theory cannot describe what happens in the step, because the resolution requires particle–antiparticle creation, which only a quantized field provides. The effect is now called **Klein tunnelling**, and its massless-limit form is observed in graphene $p$–$n$ junctions.
 
-This article treats the Klein step in the biquaternion framework. The framework does not resolve the paradox — no one-particle equation can — but it locates the three structures the paradox involves. The electrostatic potential enters through the minimal coupling of the companion article and is **central**: it multiplies the field by a scalar times $e_t$ and does not act on the state module. The mass is the linear, chirality-off-diagonal term of the parent, and the mass shell $\frac{\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{\hbar^{2}}= -k_m^{2}$ has two roots, the two signs of frequency. The Klein region is exactly where the potential shifts the frequency past zero, so that the branch that is positive-frequency on the incident side continues into the negative-frequency root on the far side. That branch exchange, not any failure of the algebra, is what the paradox is about. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+This article treats the Klein step in the biquaternion framework. The framework does not resolve the paradox — no one-particle equation can — but it locates the three structures the paradox involves. The electrostatic potential enters through the minimal coupling of the companion article and is **central**: it multiplies the field by a scalar times $e_t$ and does not act on the state module. The mass is the linear, chirality-off-diagonal term of the parent, and the mass shell $\frac{(2\pi)^{2} \tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{h^{2}}= -k_m^{2}$ has two roots, the two signs of frequency. The Klein region is exactly where the potential shifts the frequency past zero, so that the branch that is positive-frequency on the incident side continues into the negative-frequency root on the far side. That branch exchange, not any failure of the algebra, is what the paradox is about. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 The article is organised as follows. The next section writes the Dirac equation at a step and reduces it along one axis. The third section does the standard matching and gives the reflection and transmission coefficients, with the exact current conservation checked. The fourth states the paradox and its quantum-field-theoretic resolution. The fifth gives the biquaternion interpretation and separates what the algebra supplies from what it only transcribes. The sixth reports a worked numerical case and the massless limit. The closing sections are the open questions, the summary, the notation table and the literature.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\eta^2 = -e_t$, central scalar imaginary $i$; $\mathbb{B}_{\Psi}$ is the Hermitian and $\mathbb{B}_{\Phi}$ the anti-Hermitian subspace; the gradient is $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$; the biquaternion Dirac equation is the linear chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$; and the minimal coupling replaces $\tilde\nabla_\Phi$ by $D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$, acting by left multiplication.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\eta^2 = -e_t$, central scalar imaginary $i$; $\mathbb{B}_{\Psi}$ is the Hermitian and $\mathbb{B}_{\Phi}$ the anti-Hermitian subspace; the gradient is $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$; the biquaternion Dirac equation is the linear chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$; and the minimal coupling replaces $\tilde\nabla_\Phi$ by $D = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$, acting by left multiplication.
 
 ## The Dirac Equation at a Potential Step
 
@@ -17,7 +17,7 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B} 
 A static electrostatic potential $\xi(x)$ is the time component of the four-potential, $\tilde{A}_{\Phi} = i\,a'_te_t$ in the corpus's convention for the potential biquaternion, with no magnetic part. Inserted into the minimal-coupling prescription of the companion article, the covariant derivative is
 
 $$
-D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi} = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\cdot i\,a'_te_t = \tilde\nabla_\Phi -\frac{ϙ\,a'_{t}}{\hbar}e_t .
+D = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi} = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\cdot i\,a'_te_t = \tilde\nabla_\Phi -\frac{2\pi ϙ\,a'_{t}}{h}e_t .
 $$
 
 The added term is a **central scalar multiple of $e_t$**. This is the algebraic statement that an electrostatic potential couples to the scalar slot and not to the state module: it cannot rotate, mix or relatively phase the two chiral components of the field. The one-dimensional-scattering article makes the same point for the Schrödinger case, and the mechanism is identical here.
@@ -35,9 +35,9 @@ constant on each half-line and discontinuous at $x = 0$, with $V_0 > 0$ for a ba
 Take the particle to move along $x$ and to be in a spin state along the direction of motion. The spinor-module transcription of the biquaternion equation then reduces, as in the standard treatment of the step, to the two-component system
 
 $$
-i\,\hbar\,c\,\frac{\partial\tilde{Ξ}_{2}}{\partial x}=\left[E - mc^2 - V(x)\right]\tilde{Ξ}_{1},
+i\,\frac{h}{2\pi}\,c\,\frac{\partial\tilde{Ξ}_{2}}{\partial x}=\left[E - mc^2 - V(x)\right]\tilde{Ξ}_{1},
 \qquad
-i\,\hbar\,c\,\frac{\partial\tilde{Ξ}_{1}}{\partial x}=\left[E + mc^2 - V(x)\right]\tilde{Ξ}_{2},
+i\,\frac{h}{2\pi}\,c\,\frac{\partial\tilde{Ξ}_{1}}{\partial x}=\left[E + mc^2 - V(x)\right]\tilde{Ξ}_{2},
 $$
 
 in which $E$ is the total energy, $V(x) = V_0\mathrm{H}_{\mathrm{hvs}}(x)$ the potential energy, and the pair $(\tilde{Ξ}_{1}, \tilde{Ξ}_{2})$ is the two-component spinor of the reduced equation. This is the same two-component form the Klein paradox is usually solved in; the reduction is the one-dimensional instance of the parent's spinor-module picture, and the biquaternion field is recovered from the pair by the standing dictionary. The essential feature is already visible: the potential appears as the combination $E - V(x)$ multiplying the mass term, so a large $V$ drives that combination through zero and past $-m$.
@@ -49,7 +49,7 @@ in which $E$ is the total energy, $V(x) = V_0\mathrm{H}_{\mathrm{hvs}}(x)$ the p
 On the incident side, $x < 0$, the potential vanishes and the momentum is
 
 $$
-k_\Phi =\frac{\sqrt{E^2 -m^{2}\,c^{4}}}{\hbar\,c},
+k_\Phi =\frac{2\pi \sqrt{E^2 -m^{2}\,c^{4}}}{h\,c},
 $$
 
 which is real for $E > mc^2$. The solution is an incident wave plus a reflected wave,
@@ -63,7 +63,7 @@ $$
 so $0 < \alpha < 1$ for a massive particle, and $\alpha \to 1$ in the massless limit. On the far side, $x > 0$, the potential is $V_0$ and the momentum is
 
 $$
-k_2 = -\frac{\sqrt{(V_0 - E)^2 -m^{2}\,c^{4}}}{\hbar\,c},
+k_2 = -\frac{2\pi \sqrt{(V_0 - E)^2 -m^{2}\,c^{4}}}{h\,c},
 \qquad
 \tilde{Ξ}_{\mathrm{II}} = t\,\exp(ik_2x)\begin{pmatrix}1\ 1/\beta\end{pmatrix},
 \qquad
@@ -129,19 +129,19 @@ $$
 \tilde K_{\Phi} = i\frac{\omega}{c}e_t + \vec e_x k_\Phi ,
 $$
 
-whose two roots $\omega = \pm\sqrt{k^2c^2 +m^{2}\,c^{4}}/\hbar$ are the two frequency branches of the parent: the particle and the antiparticle. Under the central shift the covariant wave biquaternion acquires the constant shift from the potential, and the on-shell condition reads, on each half-line, the same relation with the frequency measured from the local potential. On the incident side the incident wave lies on the positive root. On the far side of a Klein step the same wave has $E - V_0 < -mc^2$, so it lies on the **negative root** of the local mass shell. The step has taken the propagating branch and exchanged it with its conjugate:
+whose two roots $\omega =\frac{2\pi  \pm\sqrt{k^2c^2 +m^{2}\,c^{4}}}{h}$ are the two frequency branches of the parent: the particle and the antiparticle. Under the central shift the covariant wave biquaternion acquires the constant shift from the potential, and the on-shell condition reads, on each half-line, the same relation with the frequency measured from the local potential. On the incident side the incident wave lies on the positive root. On the far side of a Klein step the same wave has $E - V_0 < -mc^2$, so it lies on the **negative root** of the local mass shell. The step has taken the propagating branch and exchanged it with its conjugate:
 
 $$
-\boxed{\;\omega \;\longmapsto\; \omega -\frac{ϙ\,\xi}{\hbar} \quad\text{with}\quad  \omega -\frac{ϙ\,\xi}{\hbar} < 0\;}.
+\boxed{\;\omega \;\longmapsto\; \omega -\frac{2\pi ϙ\,\xi}{h} \quad\text{with}\quad  \omega -\frac{2\pi ϙ\,\xi}{h} < 0\;}.
 $$
 
-This is the algebraic content of the phrase "the far side is reached by an antiparticle". The exchange of the two roots is the same operation that the corpus's conjugation articles study as charge conjugation and the real structure $\flat$; here it is produced not by conjugation of the field but by a central shift of the momentum, which is why the framework can describe it without leaving the algebra. What the framework cannot do is change the particle number; that is the second-quantized statement, and it belongs to the companion articles on the Dirac sea and on pair creation. Here $k_{\Phi}=\frac{p}{\hbar}$ is the momentum wave number.
+This is the algebraic content of the phrase "the far side is reached by an antiparticle". The exchange of the two roots is the same operation that the corpus's conjugation articles study as charge conjugation and the real structure $\flat$; here it is produced not by conjugation of the field but by a central shift of the momentum, which is why the framework can describe it without leaving the algebra. What the framework cannot do is change the particle number; that is the second-quantized statement, and it belongs to the companion articles on the Dirac sea and on pair creation. Here $k_{\Phi}=\frac{2\pi p}{h}$ is the momentum wave number.
 
 ### The same exchange for a bound level
 
 **The step and the well are one mechanism.** In the step the exchanged branch belongs to a scattering state, and the pair it signals leaves the step for infinity. Confine the strong-potential region instead, and the exchange becomes a statement about a **bound level**: the level descends as the well deepens, and at a definite depth it reaches the lower edge of the gap, $E=-mc^{2}$. That depth is exact and elementary, and it is the one-particle face of the threshold computed here. The second-quantized reading, including the charged vacuum that the emission leaves behind, is that of *Pair Creation in a Bounded Region in Biquaternionic Form*; here only the level is computed.
 
-**The well and its two conditions.** Take $ϙ\xi(r_x)=-V_0$ for $\lvert r_x\rvert<L/2$ and zero outside, and write $a=L/2$. On each region the reduced pair of §*Reduction along one axis* holds with $E\to E+V_0$ inside the well, so the solution is oscillatory there with the wave number $k_{\Phi,\mathrm{w}}=\frac{\sqrt{(E+V_0)^{2}-m^{2}c^{4}}}{\hbar c}$ and evanescent outside with the decay constant $k_{\Phi,\mathrm{ev}}=\frac{\sqrt{m^{2}c^{4}-E^{2}}}{\hbar c}$. Continuity of the ratio of the two components at the wall gives, for the even and the odd solution,
+**The well and its two conditions.** Take $ϙ\xi(r_x)=-V_0$ for $\lvert r_x\rvert<L/2$ and zero outside, and write $a=L/2$. On each region the reduced pair of §*Reduction along one axis* holds with $E\to E+V_0$ inside the well, so the solution is oscillatory there with the wave number $k_{\Phi,\mathrm{w}}=\frac{2\pi \sqrt{(E+V_0)^{2}-m^{2}c^{4}}}{h c}$ and evanescent outside with the decay constant $k_{\Phi,\mathrm{ev}}=\frac{2\pi \sqrt{m^{2}c^{4}-E^{2}}}{h c}$. Continuity of the ratio of the two components at the wall gives, for the even and the odd solution,
 
 $$
 \frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=\frac{k_{\Phi,\mathrm{w}}\tan(k_{\Phi,\mathrm{w}}a)}{E+V_0+mc^{2}},
@@ -151,13 +151,13 @@ $$
 
 which is the continuity statement that this article writes for the transmitted amplitude, read at a wall instead of at a discontinuity, with the exponential tail kept. No approximation enters.
 
-**The threshold.** At the lower edge the decay constant vanishes while the factor $E+mc^{2}$ vanishes faster, so the left side diverges and the two conditions reduce to $\cos(k_{\Phi,\mathrm{w}}a)=0$ and $\sin(k_{\Phi,\mathrm{w}}a)=0$. Both give $k_{\Phi,\mathrm{w}}a=n_{\mathrm{w}}\pi/2$, with $n_{\mathrm{w}}=1,2,3,\dots$ counting half-wavelengths across the well; odd $n_{\mathrm{w}}$ is the even solution, and the nodeless state is $n_{\mathrm{w}}=1$. At that energy $k_{\Phi,\mathrm{w}}^{2}=((V_0-mc^{2})^{2}-m^{2}c^{4})/(\hbar c)^{2}$, so the depth follows:
+**The threshold.** At the lower edge the decay constant vanishes while the factor $E+mc^{2}$ vanishes faster, so the left side diverges and the two conditions reduce to $\cos(k_{\Phi,\mathrm{w}}a)=0$ and $\sin(k_{\Phi,\mathrm{w}}a)=0$. Both give $k_{\Phi,\mathrm{w}}a=n_{\mathrm{w}}\pi/2$, with $n_{\mathrm{w}}=1,2,3,\dots$ counting half-wavelengths across the well; odd $n_{\mathrm{w}}$ is the even solution, and the nodeless state is $n_{\mathrm{w}}=1$. At that energy $k_{\Phi,\mathrm{w}}^{2}=((V_0-mc^{2})^{2}-m^{2}c^{4})\frac{2\pi}{h\,c}^{2}$, so the depth follows:
 
 $$
 \boxed{\;V_0^{\mathrm{cr}}=mc^{2}\left[1+\sqrt{1+\left(\frac{n_{\mathrm{w}}\pi}{k_mL}\right)^{2}}\;\right]\;}
 $$
 
-**What the formula says.** The threshold depends on $n_{\mathrm{w}}$ and $L$ only through the ratio $n_{\mathrm{w}}/(k_mL)$, so the $n_{\mathrm{w}}$-th level of a well of width $L$ dives at the depth of the first level of a well of width $L/n_{\mathrm{w}}$. It lies above $2mc^{2}$ for every finite width, and the excess is the confinement energy of the standing wave, $\frac{n_{\mathrm{w}}^{2}\pi^{2}\hbar^{2}}{2mL^{2}}$ at leading order, so a bounded region needs a deeper potential than a step by the price of confining the charge to it. And as $L\to\infty$ the threshold tends to $2mc^{2}$. That floor is the same number as this article's critical height, $V_0>E+mc^{2}$ with $E\to mc^{2}$, and the agreement is in the number only: $2mc^{2}$ is the least potential that brings an edge of one branch onto an edge of the other, and the well reaches it with a bound level at the lower edge of the gap while the step reaches it with a scattering state at the upper edge. The threshold of a finite well is that floor plus the confinement energy of the standing wave.
+**What the formula says.** The threshold depends on $n_{\mathrm{w}}$ and $L$ only through the ratio $n_{\mathrm{w}}/(k_mL)$, so the $n_{\mathrm{w}}$-th level of a well of width $L$ dives at the depth of the first level of a well of width $L/n_{\mathrm{w}}$. It lies above $2mc^{2}$ for every finite width, and the excess is the confinement energy of the standing wave, $\frac{n_{\mathrm{w}}^{2}\pi^{2}h^{2}}{8\pi^{2}mL^{2}}$ at leading order, so a bounded region needs a deeper potential than a step by the price of confining the charge to it. And as $L\to\infty$ the threshold tends to $2mc^{2}$. That floor is the same number as this article's critical height, $V_0>E+mc^{2}$ with $E\to mc^{2}$, and the agreement is in the number only: $2mc^{2}$ is the least potential that brings an edge of one branch onto an edge of the other, and the well reaches it with a bound level at the lower edge of the gap while the step reaches it with a scattering state at the upper edge. The threshold of a finite well is that floor plus the confinement energy of the standing wave.
 
 **The numbers.** The matching conditions were solved numerically and the closed form confirmed. For $k_mL=10$ the formula gives $V_0^{\mathrm{cr}}=2.048187\,mc^{2}$; the lowest even level sits at $E=-0.990625\,mc^{2}$ at $V_0=2.038187\,mc^{2}$ and at $E=-0.999185\,mc^{2}$ at $V_0=2.047187\,mc^{2}$, approaching the edge without a jump; at $V_0^{\mathrm{cr}}$ the even condition vanishes at $E=-mc^{2}$ to $3\times10^{-10}$; and above it no even level remains in the gap, the lowest one there being the next state up, at $E=-0.697067\,mc^{2}$ for $V_0=V_0^{\mathrm{cr}}+10^{-3}mc^{2}$. The odd level crosses at $n_{\mathrm{w}}=2$, $V_0^{\mathrm{cr}}=2.181010\,mc^{2}$ for $k_mL=10$, which is the $n_{\mathrm{w}}=1$ depth of $k_mL=5$; the scaling is exact to the printed digits. The table gives the depths.
 
@@ -217,7 +217,7 @@ The biquaternion framework locates the three ingredients: the potential is centr
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_{\eta=x,y,z}\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient |
-| $D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$ | Covariant derivative (minimal coupling) |
+| $D = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ | Covariant derivative (minimal coupling) |
 | $\tilde{A}_{\Phi} = i\,a'_te_t$ | Electrostatic potential biquaternion |
 | $V_0$, $ϙ\xi(x) = V_0\mathrm{H}_{\mathrm{hvs}}(x)$ | Step height and potential energy |
 | $E$, $k_\Phi$, $k_{\Phi,2}$ | Energy, incident momentum, transmitted momentum |

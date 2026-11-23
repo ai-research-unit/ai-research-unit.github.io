@@ -10,7 +10,7 @@ The field of the block is one element of $\mathbb{B}$ at each event, and that el
 
 The algebra's complex structure is not used anywhere in this article. That absence is the first measurement. The fluid's equations are one real scalar equation and one real vector equation; a wave equation is one complex equation whose unknown occupies all four slots of the element. A reader who expects the second will not find it here, and the reason is structural: the temporal slot of the flow element is the constant $ic$, so the scalar slot carries no unknown for an equation to act on.
 
-There is no $\hbar$, no mass shell and no Lorentz transformation. The flow element introduced in §*The Flow Element* is the Galilean one, and the relativistic normalisation is one factor away, a factor that no equation written here reads.
+There is no $\frac{h}{2\pi}$, no mass shell and no Lorentz transformation. The flow element introduced in §*The Flow Element* is the Galilean one, and the relativistic normalisation is one factor away, a factor that no equation written here reads.
 
 ## The Data
 

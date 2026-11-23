@@ -30,7 +30,7 @@ What is not here. The element-form companion owns the field term's normalization
 
 ## Conventions
 
-The conventions are the free chart's, restated for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the word is $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde u$, with $\varrho>0$ and $\tilde u$ a unit element of the frame; the connection is $\tilde A_\Phi$ with real components $A_\mu$ and the coupling is $ϙ$. The pairing and the measure are those of the free chart, $k_m=mc/\hbar$, and the two settings are the parent's.
+The conventions are the free chart's, restated for the coupled article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the word is $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde u$, with $\varrho>0$ and $\tilde u$ a unit element of the frame; the connection is $\tilde A_\Phi$ with real components $A_\mu$ and the coupling is $ϙ$. The pairing and the measure are those of the free chart, $k_m=\frac{2\pi mc}{h}$, and the two settings are the parent's.
 
 ## The Action in Polar Variables
 
@@ -62,10 +62,10 @@ Why the connection cannot change the metric. The covariant derivative adds one c
 The connection's only entry. The action depends on the connection through the shift of the four-momentum, so in the chart
 
 $$
-\partial_\mu\theta_{\mathrm{pha}}\longmapsto\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu
+\partial_\mu\theta_{\mathrm{pha}}\longmapsto\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_\mu
 $$
 
-in the phase slot and in the phase slot alone, with the other seven parameters' gradients untouched. That is one substitution, in one coordinate, and it is what the classical $E\mapsto E+ϙc\,a'_t$, $\vec p\mapsto\vec p-q\vec A$ becomes when the phase is a coordinate. The polar companion states the same thing as the identity $\hbar c\kappa_t=E+ϙca'_t$, $\hbar\vec\kappa=\vec p-q\vec A$.
+in the phase slot and in the phase slot alone, with the other seven parameters' gradients untouched. That is one substitution, in one coordinate, and it is what the classical $E\mapsto E+ϙc\,a'_t$, $\vec p\mapsto\vec p-q\vec A$ becomes when the phase is a coordinate. The polar companion states the same thing as the identity $\frac{h}{2\pi} c\kappa_t=E+ϙca'_t$, $\frac{h}{2\pi}\vec\kappa=\vec p-q\vec A$.
 
 No multipliers for the normalisation. The word carries the frame as an exact unit, so the condition $\tilde U\tilde U^{\natural}=1$ and the condition $\tilde u\tilde u^{\natural}=1$ are not constraints on the eight parameters; they are properties of the parameterization. A formulation in which the frame is a set of four vectors with a normalization condition would need multipliers for the normalization, and the polar formulation needs none, because the parameters are angles. That is the structural gain of the chart over a tensor formulation, and it is a gain in bookkeeping rather than in physics.
 
@@ -106,7 +106,7 @@ Why the pairing is the content of the constraint. The middle piece of the Proca 
 
 The parameter basis is not the bracket basis. As in the free polar article, the eight parameters are coordinates and the four brackets are types, and the Jacobian between them mixes the roles: the rapidity's derivative carries part of the scale bracket, the rotor's derivative part of the boost bracket. The parameter equations are the same equations in a rotated basis, and the brackets remain the form in which each object has one type and one partner.
 
-What the coupling adds. The connection is central, so it passes through $\tilde A_\Phi^{-1}$ and adds $\frac{iϙ}{\hbar}A_\Phi$ to the logarithmic derivative, with a real temporal slot and central imaginary spatial slots. It therefore reaches the scale and phase brackets, leaves the boost and rotor brackets alone, and — entering as a shift and not as a factor — does not change the type pairing that produces the constraint.
+What the coupling adds. The connection is central, so it passes through $\tilde A_\Phi^{-1}$ and adds $\frac{2\pi iϙ}{h}A_\Phi$ to the logarithmic derivative, with a real temporal slot and central imaginary spatial slots. It therefore reaches the scale and phase brackets, leaves the boost and rotor brackets alone, and — entering as a shift and not as a factor — does not change the type pairing that produces the constraint.
 ## The Constraints the Action Imposes: The Gauge Transformation in the Chart
 
 The exact statement. For a constant central unit $\lambda=\exp(i\vartheta_{\mathrm{gau}})$,
@@ -217,11 +217,11 @@ The chart needs no multipliers for the unit conditions, because the word is exac
 | $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})=R\,\varrho^{2}$, $R(0)=1$ | The mass term in the chart; $R$ the frame's scalar |
 | $(G^{-1})_{ab}(q)$ | The inverse of the chart's metric; the coefficient of the kinetic form |
 | $\tilde A_\Phi$, $A_\mu$ | The connection and its central components |
-| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The covariant derivative in the chart |
-| $\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu$ | The one gradient the connection shifts |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$ | The covariant derivative in the chart |
+| $\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_\mu$ | The one gradient the connection shifts |
 | $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ | Central gauge unit; translates $\theta_{\mathrm{pha}}$ |
 | $\rho_{\mathrm{chg}}=\partial\mathcal{L}/\partial(\partial_{r'_t}\theta_{\mathrm{pha}})$ | Charge density as the phase's conjugate momentum |
-| $k_m=mc/\hbar$ | Mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $ϙ$ | Charge; a parameter |
 
 ## Further Reading

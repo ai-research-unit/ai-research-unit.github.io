@@ -18,7 +18,7 @@ The third fact is that the determinant's cube is the field's particle content. T
 
 What is not claimed. The integral is the standard Proca integral, the propagator is the standard Proca propagator, and nothing here predicts anything new. What the algebra supplies is a frame-free derivation of the three–one split, the exactness of the ghost's eigenvalue, and the statement that the ghost is invisible in every normalised correlator.
 
-Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_\eta^{2}=-e_t$, central $i$, $\mathrm{Sc}$ the coefficient of $e_t$. The potential is $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ with $a'_t$ and $\vec A$ real, an element of the material sector $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, anti-Hermitian under ${}^{*}$. The field strength is $\tilde F=\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ and the norm is $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$, real on $\mathbb{B}_\Phi$. The d'Alembertian is $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^{2}/\partial{r'}^{2}_t$, with $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so that its symbol is $k^{2}=(\omega/c)^{2}-\vec k^{2}$. The mass is the wave number $k_m=mc/\hbar$.
+Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_\eta^{2}=-e_t$, central $i$, $\mathrm{Sc}$ the coefficient of $e_t$. The potential is $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ with $a'_t$ and $\vec A$ real, an element of the material sector $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, anti-Hermitian under ${}^{*}$. The field strength is $\tilde F=\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ and the norm is $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$, real on $\mathbb{B}_\Phi$. The d'Alembertian is $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^{2}/\partial{r'}^{2}_t$, with $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so that its symbol is $k^{2}=(\omega/c)^{2}-\vec k^{2}$. The mass is the wave number $k_m=\frac{2\pi mc}{h}$.
 
 ## The Configuration Space and the Action
 
@@ -59,7 +59,7 @@ The middle term is where the constraint lives, and the integral reads it as a te
 The generating functional is an ordinary Gaussian.
 
 $$
-Z[\tilde J_\Phi]=\int\mathcal{D}\tilde A_\Phi\;\exp\Bigl(\frac{i}{\hbar}S[\tilde A_\Phi]+\frac{i}{\hbar}\int d^{4}r\;\mathrm{Sc}\bigl(\tilde J_\Phi\tilde A_\Phi\bigr)\Bigr),
+Z[\tilde J_\Phi]=\int\mathcal{D}\tilde A_\Phi\;\exp\Bigl(\frac{2\pi i}{h}S[\tilde A_\Phi]+\frac{2\pi i}{h}\int d^{4}r\;\mathrm{Sc}\bigl(\tilde J_\Phi\tilde A_\Phi\bigr)\Bigr),
 $$
 
 with the flat measure on the anti-Hermitian configurations. There is no insertion, no orbit and no determinant to compensate: the measure is the one the configuration space carries.
@@ -72,7 +72,7 @@ $$
 
 At one site with four components, a random positive-definite form with eigenvalues $0.7,1.3,2.1,3.4$ and a random source, direct four-dimensional quadrature gave $24.507861622165$ and the closed form gave $24.507861623587$, a relative agreement of $5.8\times10^{-11}$. **The Gaussian identity is the backbone; the continuum integral is its formal limit and adds nothing.**
 
-The two-point function is the inverse of the quadratic form, and that inverse is the Proca propagator. Since the exponent is quadratic, $\langle\tilde A_\Phi(x)\tilde A_\Phi(y)\rangle=i\hbar\,P^{-1}(x-y)$, and the whole of the free theory is the computation of $P^{-1}$. The next section does it.
+The two-point function is the inverse of the quadratic form, and that inverse is the Proca propagator. Since the exponent is quadratic, $\langle\tilde A_\Phi(x)\tilde A_\Phi(y)\rangle=i \frac{h}{2\pi}\,P^{-1}(x-y)$, and the whole of the free theory is the computation of $P^{-1}$. The next section does it.
 
 ## The Operator and Its Three–One Split
 
@@ -179,7 +179,7 @@ The transverse part propagates; the longitudinal part does not, because its oper
 The one-loop term is three times the scalar's. Expanding about the saddle,
 
 $$
-Z[\tilde J_\Phi]=Z[0]\exp\Bigl(-\frac{i}{2\hbar}\int\tilde J_\Phi P^{-1}\tilde J_\Phi\Bigr),
+Z[\tilde J_\Phi]=Z[0]\exp\Bigl(-\frac{i}{2\frac{h}{2\pi}}\int\tilde J_\Phi P^{-1}\tilde J_\Phi\Bigr),
 \qquad
 \Gamma_{\mathrm{1\,loop}}=\tfrac12\mathrm{Tr}\log P
 =3\cdot\tfrac12\mathrm{Tr}\log(\Box_\Phi-k_m^{2})+\tfrac12\mathrm{Tr}\log(-k_m^{2}),
@@ -195,7 +195,7 @@ $$
 
 so the Lorenz condition holds exactly when the source is conserved. The constraint is not imposed and not lost: it is a relation between the saddle and the source, and the inhomogeneous Maxwell equation needs a conserved current for exactly this reason.
 
-The leading semiclassical kernel is the free one, and the loop expansion is the only expansion there is. The Proca integral has no worldline and no van Vleck determinant of a path, because the field is a field and not a particle: the semiclassical series is the loop series in $\hbar$, its first term is the saddle, and its second is the determinant computed above. The articles on the Schrödinger and Dirac integrals are the ones with a sum over paths; this one is a sum over field configurations, and the difference is the statistics and the carrier, not the algebra.
+The leading semiclassical kernel is the free one, and the loop expansion is the only expansion there is. The Proca integral has no worldline and no van Vleck determinant of a path, because the field is a field and not a particle: the semiclassical series is the loop series in $\frac{h}{2\pi}$, its first term is the saddle, and its second is the determinant computed above. The articles on the Schrödinger and Dirac integrals are the ones with a sum over paths; this one is a sum over field configurations, and the difference is the statistics and the carrier, not the algebra.
 
 ## What the Integral Adds and What It Does Not Add
 

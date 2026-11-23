@@ -219,7 +219,7 @@ which is the cyclotron frequency, and the velocity turns with it. For an electro
 
 1. **Intrinsic spin.** The eigenspinor used here carries only the orbital frame. A particle with intrinsic spin needs a second rotor, or a spinor variable, coupled to the same rate; the Bargmann–Michel–Telegdi equation and the spin-four-vector of the companion articles are the classical limit of that coupling. What is the joint eigenspinor of the orbit and the spin, and does it factorise?
 
-2. **The quantum eigenspinor.** In the geometric-algebra interpretation of the Dirac equation the Dirac spinor is a rotor times a density and an angle. Is the classical eigenspinor the $\hbar\to0$ limit of that object, and does the series' spinor module supply the density factor?
+2. **The quantum eigenspinor.** In the geometric-algebra interpretation of the Dirac equation the Dirac spinor is a rotor times a density and an angle. Is the classical eigenspinor the $h\to0$ limit of that object, and does the series' spinor module supply the density factor?
 
 3. **Non-uniform fields.** The closed form holds for constant $\vec\Omega_{\mathrm{LT}}$. For a varying field the equation of motion is still linear in $\tilde U$, but the direction of the rate turns with the position, and the rotor is a path-ordered exponential. What is the series' natural language for the path ordering, and does the gradient $\tilde\nabla_\Phi$ of *The Biquaternion D'Alembertian* supply it?
 

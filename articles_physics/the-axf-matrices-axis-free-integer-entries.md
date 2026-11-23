@@ -649,7 +649,7 @@ $$
 \tilde{Ξ}\longmapsto a\,\tilde{Ξ}\,b.
 $$
 
-The pass removes the operator symbol as well. A mass term is $k_m\tilde{Ξ}$; a derivative term is a term of the Dirac operator written out; a product is a product of elements. The composition law of §*Composition and Invariants* replaces every matrix multiplication. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+The pass removes the operator symbol as well. A mass term is $k_m\tilde{Ξ}$; a derivative term is a term of the Dirac operator written out; a product is a product of elements. The composition law of §*Composition and Invariants* replaces every matrix multiplication. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 An article that reaches this pass has no arrays and no ideals in its body, and reads its operators off the formula itself.
 

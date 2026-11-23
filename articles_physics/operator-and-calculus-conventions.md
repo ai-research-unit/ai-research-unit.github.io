@@ -25,16 +25,16 @@ The tilde sits in the subscript because it belongs to the element, not to the op
 
 The basis operators. The four units are written in the subscript, $L_{\mathrm{axf},e_\mu}$ and $R_{\mathrm{axf},e_\mu}$, and nowhere else: the short form $L_\mu$ is not used in this corpus. The right family is read from the left one by transposition in the coefficient basis, $R_{\mathrm{axf},e_\nu}=D(L_{\mathrm{axf},e_\nu})^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$, and in the Peirce display of §*The Legacy Pauli Gamma Formulation* by the exchange $\mathsf S$ of the two mixed Peirce units, $R=\mathsf S L^{\mathsf T}\mathsf S^{-1}$, and the sixteen two-sided operators $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are the matrix basis and the basis operator table of *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*; five of the sixteen are the frame basis operators up to the factor $i$: $iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}$, $iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$, $-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$.
 
-The spin operator and the words built on it. The generator of the rotations is $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$, an operator whose glyph is the glyph of its element, like every operator of this section. The three words built on it — the spin, the elementary spinor and the Dirac spinor — are fixed in *Special Element Conventions*, §*The Spin Convention* and §*The Spinor Convention*, and are not restated here.
+The spin operator and the words built on it. The generator of the rotations is $\tilde S_{\Psi,\eta}=\frac{h}{4\pi}i\vec e_\eta$, an operator whose glyph is the glyph of its element, like every operator of this section. The three words built on it — the spin, the elementary spinor and the Dirac spinor — are fixed in *Special Element Conventions*, §*The Spin Convention* and §*The Spinor Convention*, and are not restated here.
 
 The two marks on a glyph that is also an operator. An operator read through its element follows the element rule in full.
 
 - A glyph read with its scalar part, four components: the tilde. The canonical momentum $\tilde p=p_te_t+\vec p$, the Legendre conjugate of $\tilde q$; the biquaternionic gradient $\tilde\nabla_\Phi$ of §*The Gradient*; the gauge-covariant gradient $\tilde\nabla_{\mathrm{gco},\Phi}$ of §*The Gauge-Covariant Gradient*.
-- A pure glyph, three components: the arrow. The momentum operator $\vec p=-i\,\hbar\,\vec\nabla_\Phi=\sum_{\eta\in\{x,y,z\}}\vec e_\eta p_\eta$.
+- A pure glyph, three components: the arrow. The momentum operator $\vec p=-i\,\frac{h}{2\pi}\,\vec\nabla_\Phi=\sum_{\eta\in\{x,y,z\}}\vec e_\eta p_\eta$.
 
 The gradient decides the case cleanly: $\tilde\nabla_\Phi$ is not pure, because its $e_t$ term carries $-i\,\partial/\partial r'_t$, while $\vec\nabla_\Phi=\sum_{\eta\in\{x,y,z\}}\,\vec e_\eta\,\partial/\partial r_\eta$ is pure: it is the vector part of $\tilde\nabla_\Phi$, $\tilde\nabla_\Phi=-i\,e_t\partial/\partial r'_t+\vec\nabla_\Phi$, and the fixed glyph $\vec\nabla_\Phi$ of §*The Gradient* and the arrowed $\vec\nabla_\Phi$ name the one operator, the arrow being written where its purity is what the sentence names.
 
-The case follows the layer. The arrow does not change the case: a pure operator of the quaternion layer stays lower case, $\vec p$, and one of the biquaternion layer takes the upper case, $\vec P$. Where the letter already names another object of the layer, the operator is written in its explicit form, $-i\,\hbar\,\vec\nabla_\Phi$, because no subscript marks an operator: the two-letter form $\mathrm{op}$ is not a token of the corpus, and *Algebra and Element Conventions* states the rule (§*The Algebra and Its Basis*). The three-momentum and the momentum operator share $\vec p$, as an eigenvalue and its operator do.
+The case follows the layer. The arrow does not change the case: a pure operator of the quaternion layer stays lower case, $\vec p$, and one of the biquaternion layer takes the upper case, $\vec P$. Where the letter already names another object of the layer, the operator is written in its explicit form, $-i\,\frac{h}{2\pi}\,\vec\nabla_\Phi$, because no subscript marks an operator: the two-letter form $\mathrm{op}$ is not a token of the corpus, and *Algebra and Element Conventions* states the rule (§*The Algebra and Its Basis*). The three-momentum and the momentum operator share $\vec p$, as an eigenvalue and its operator do.
 
 The mark of a part, and the side carried by position. The only arrow on a glyph is the short one, and it marks the **pure part**: $\vec e_x$, $\vec p$. The long arrow that sits over an operator is a different mark and not a second arrow of the same kind: it is the mark of the transposed reading, fixed in §*The Transposition of the Gradient*. The side of an action is not marked at all. It is carried by position, $b\tilde{Ξ}$ against $\tilde{Ξ} b$, the actor written on the side from which it acts, and position is unambiguous because the operand is itself a glyph.
 
@@ -437,8 +437,8 @@ The rule is one rule on both parts. A contraction never raises an index and neve
 A derivative that differentiates a field charged under a connection is the gradient with a connection added. It carries the gradient's letter and **a label, not a letter of its own**:
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}
-=e_t\Bigl(-i\frac{\partial}{\partial r'_t}+\frac{i\,ϙ}{\hbar}A_t\Bigr)+\sum_{\eta\in\{x,y,z\}}\vec e_\eta\Bigl(\frac{\partial}{\partial r_\eta}+\frac{i\,ϙ}{\hbar}A_\eta\Bigr),
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}
+=e_t\Bigl(-i\frac{\partial}{\partial r'_t}+\frac{2\pi i\,ϙ}{h}A_t\Bigr)+\sum_{\eta\in\{x,y,z\}}\vec e_\eta\Bigl(\frac{\partial}{\partial r_\eta}+\frac{2\pi i\,ϙ}{h}A_\eta\Bigr),
 $$
 
 with $\tilde A_{\Phi}=\sum_{\mu\in\{t,x,y,z\}} A_\mu e_\mu\in\mathbb{B}_{\Phi}$ the connection and $ϙ$ the charge of the field the operator acts on. The superscript $\mathrm{gco}$ names the family once and is read on every member of it.
@@ -446,8 +446,8 @@ with $\tilde A_{\Phi}=\sum_{\mu\in\{t,x,y,z\}} A_\mu e_\mu\in\mathbb{B}_{\Phi}$ 
 The decomposition is the gradient's, slot by slot. One coefficient per slot, one basis element, exactly as in $\tilde\nabla_\Phi=-i\,e_t\partial/\partial r'_t+\sum_{\eta\in\{x,y,z\}}\vec e_\eta\partial/\partial r_\eta$. The only change is the coefficient: the derivative of the free gradient is joined by the connection, slot for slot, and the basis is untouched. The sum is spelled out here as everywhere. The coefficient is a central scalar — it commutes with $e_\nu$ and with every element of $\mathbb{B}$ — and that is what lets the involution act on the basis and leave the coefficients in place:
 
 $$
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}^{\natural}
-=-i\,e_t\frac{\partial}{\partial r'_t}-\sum_{\eta\in\{x,y,z\}}\vec e_\eta\frac{\partial}{\partial r_\eta}+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}^{\natural}.
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}^{\natural}
+=-i\,e_t\frac{\partial}{\partial r'_t}-\sum_{\eta\in\{x,y,z\}}\vec e_\eta\frac{\partial}{\partial r_\eta}+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}^{\natural}.
 $$
 
 The label is written before the conjugation, in the order the operator is built: the family first, the involution second. The conjugate is not a second operator; it is the same sum with $\natural$ read on the invertibles, and its coefficients are the same scalars.
@@ -455,7 +455,7 @@ The label is written before the conjugation, in the order the operator is built:
 The operator is written on the material parameters. Its four coefficients are read in the letters $r'_t$ and $r_\eta$, and $A_\mu$ stands beside each as it stands, with no derivative on it:
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}=e_t\Bigl(-i\frac{\partial}{\partial r'_t}+\frac{i\,ϙ}{\hbar}A_t\Bigr)+\sum_{\eta\in\{x,y,z\}}\vec e_\eta\Bigl(\frac{\partial}{\partial r_\eta}+\frac{i\,ϙ}{\hbar}A_\eta\Bigr),
+\tilde\nabla_{\mathrm{gco},\Phi}=e_t\Bigl(-i\frac{\partial}{\partial r'_t}+\frac{2\pi i\,ϙ}{h}A_t\Bigr)+\sum_{\eta\in\{x,y,z\}}\vec e_\eta\Bigl(\frac{\partial}{\partial r_\eta}+\frac{2\pi i\,ϙ}{h}A_\eta\Bigr),
 $$
 
 and the connection enters with a plus on every slot.
@@ -467,14 +467,14 @@ The side. Both members act from the left. The position of the operator names the
 The curvature and the square. The components do not commute, and their commutator carries no derivative:
 
 $$
-[\tilde\nabla_{\mathrm{gco},\Phi,\mu},\tilde\nabla_{\mathrm{gco},\Phi,\nu}]=\frac{i\,ϙ}{\hbar}F_{\mu\nu},
+[\tilde\nabla_{\mathrm{gco},\Phi,\mu},\tilde\nabla_{\mathrm{gco},\Phi,\nu}]=\frac{2\pi i\,ϙ}{h}F_{\mu\nu},
 \qquad
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_{\mu\in\{t,x,y,z\}}\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\bigr)^{2}+\frac{i\,ϙ}{\hbar}\tilde F,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_{\mu\in\{t,x,y,z\}}\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\bigr)^{2}+\frac{2\pi i\,ϙ}{h}\tilde F,
 $$
 
 with $\tilde F=\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde A_{\Phi})$ the curvature. The scalar part of the square is the covariant d'Alembertian and the vector part is the curvature; both are read in *The Covariant Derivative and Gauge Connection in Biquaternionic Form*.
 
-The coupling, and the letter $\kappa$. A few articles write the same operator as $\tilde\nabla_\Phi+i\kappa\mathcal A$, with $\kappa$ the coupling and $\mathcal A$ the connection. That is one object under two spellings, $\kappa=\frac{ϙ}{\hbar}$ and $\mathcal A=\tilde A_{\Phi}$. The series writes $\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$, so that $\kappa$ stays free for the retarded denominator $\kappa=1-\vec u_R\cdot\vec\beta$ of *Algebra and Element Conventions*, which is not a coupling.
+The coupling, and the letter $\kappa$. A few articles write the same operator as $\tilde\nabla_\Phi+i\kappa\mathcal A$, with $\kappa$ the coupling and $\mathcal A$ the connection. That is one object under two spellings, $\kappa=\frac{2\pi ϙ}{h}$ and $\mathcal A=\tilde A_{\Phi}$. The series writes $\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}$, so that $\kappa$ stays free for the retarded denominator $\kappa=1-\vec u_R\cdot\vec\beta$ of *Algebra and Element Conventions*, which is not a coupling.
 
 The letter $\kappa$ carries two meanings, separated by article, and both are scalars. In the kinematics articles it is the retarded denominator $1-\vec u_R\cdot\vec\beta$. In the articles on the generalized Maxwell–Dirac operator it is the complex shift added to the gradient, $\tilde\nabla_\Phi+\kappa$ with $\kappa\in\mathbb{C}$, and it is written in the expression and never in the subscript of a glyph. The two uses do not meet in one computation, and an article that uses $\kappa$ says which of the two it means.
 
@@ -490,7 +490,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\,\tilde{Ξ}_{R},
 $$
 
-with $k_m=mc/\hbar$ the mass wave number, the inverse of the mass length. Every component equation of the series is a coordinate form of these two and not a second dynamics.
+with $k_m=\frac{2\pi mc}{h}$ the mass wave number, the inverse of the mass length. Every component equation of the series is a coordinate form of these two and not a second dynamics.
 
 The mass is the coupling. Each line multiplies one chiral part and returns a multiple of the other. $k_m$ is real and central, it commutes with both gradients, and it is the only term of either line that names the other part. The massless limit is the same two lines at $k_m=0$, and each line then involves one part alone.
 
@@ -506,7 +506,7 @@ $$
 
 that is $(\Box_\Phi-k_m^{2})\tilde{Ξ}_{R}=0$ and $(\Box_\Phi-k_m^{2})\tilde{Ξ}_{L}=0$. Each part obeys the Klein–Gordon equation on its own, with the same second-order operator.
 
-The symbol. On a plane wave the gradient acts as left multiplication by the wave element, $\tilde\nabla_\Phi\mapsto i\tilde K_{\Phi}$ with $\hbar\tilde K_{\Phi}=\tilde P_{\Phi}=i(E/c)e_t+\vec p$, so that $-\hbar^{2}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=E^{2}/c^{2}-\lvert\vec p\rvert^{2}=-N$, the four-momentum being $p_0=E/c$. The symbol of the two equations is the two lines with each gradient read at its plane-wave value,
+The symbol. On a plane wave the gradient acts as left multiplication by the wave element, $\tilde\nabla_\Phi\mapsto i\tilde K_{\Phi}$ with $\frac{h}{2\pi}\tilde K_{\Phi}=\tilde P_{\Phi}=i(E/c)e_t+\vec p$, so that $-\frac{h^{2}}{4\pi^{2}}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=E^{2}/c^{2}-\lvert\vec p\rvert^{2}=-N$, the four-momentum being $p_0=E/c$. The symbol of the two equations is the two lines with each gradient read at its plane-wave value,
 
 $$
 i\tilde K_{\Phi}\,w_R=k_m\,w_L,
@@ -604,7 +604,7 @@ The display. Every array printed in this section is given twice: in the Peirce d
 
 An operator whose letter is the letter of an element is that element: the tilde and the arrow are read on it as on the element, and no mark says operator. The named operators are left and right multiplication, the two-sided operator and the inner derivation. The side of an action is position, $D\tilde{Ξ}$ against $\tilde{Ξ} D$; the two are exchanged by the quaternion conjugation, $(\tilde{Ξ} D)^{\natural}=D^{\natural}\tilde{Ξ}^{\natural}$, so a right action on a field is a left action on the conjugate field, and no glyph marks a side. The superscript $R$ marks the right derivative, the one case the exchange does not reach, and on the gradient even that case is a conjugation: $\tilde Q_1\overleftarrow{\tilde\nabla_\Phi}=\bigl((\tilde\nabla_\Phi)^{\natural}\tilde Q_1^{\natural}\bigr)^{\natural}$, so a right action is the left action of the conjugate gradient on the conjugate field, and the identity needs no equation. The dagger is the general adjoint of an operator and not a fifth conjugation, and it adds to the element's mark rather than replacing it. A Kraus operator is an element, not an array. The Fock operator is the one operator that is not an element, and its superscript is fixed with the other tokens.
 
-A subscript is a component or a label, never a derivative; every partial derivative is written with $\partial$ and its variable. A caret is a power and never a label: every label, coordinate, component, basis vector, frame basis operator and sign symbol is written low, and a contraction is a form with the sign vector. Every derivative is written against a material parameter, $\partial/\partial r'_t$ or $\partial/\partial r_\eta$, with no factor of two and no dilation in front. Every derivative operator carries the subscript $\Phi$: the gradient $\tilde\nabla_\Phi$, its conjugate $(\tilde\nabla_\Phi)^{\natural}$, the spatial gradient $\vec\nabla_\Phi$, the Laplacian $\Delta_\Phi$ and the d'Alembertian $\Box_\Phi$. None of the five is ever written without it, and no glyph of the corpus names a gradient, a Laplacian or a d'Alembertian of the informational part. The gradient is $\tilde\nabla_\Phi$, not pure: by slot it splits into a Hermitian temporal term and an anti-Hermitian spatial sum. The four parameters it differentiates are the material ones, $\tilde\nabla_\Phi=-i\,e_t\partial_{r'_t}+\sum_{\eta\in\{x,y,z\}}\vec e_\eta\partial_{r_\eta}$, and the subscript is the only mark it carries. No glyph of the corpus carries a derivative on any other set of coordinates. The d'Alembertian is $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$, and every article uses this one operator with the mass equation $(\Box_\Phi-k_m^{2})\tilde{Ξ}=0$, where $k_m^{2}$ is written $k_m^{2}$ with $k_m=mc/\hbar$. The gauge-covariant gradient is the same sum with the coefficient replaced, $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$, and it carries a label rather than a letter of its own.
+A subscript is a component or a label, never a derivative; every partial derivative is written with $\partial$ and its variable. A caret is a power and never a label: every label, coordinate, component, basis vector, frame basis operator and sign symbol is written low, and a contraction is a form with the sign vector. Every derivative is written against a material parameter, $\partial/\partial r'_t$ or $\partial/\partial r_\eta$, with no factor of two and no dilation in front. Every derivative operator carries the subscript $\Phi$: the gradient $\tilde\nabla_\Phi$, its conjugate $(\tilde\nabla_\Phi)^{\natural}$, the spatial gradient $\vec\nabla_\Phi$, the Laplacian $\Delta_\Phi$ and the d'Alembertian $\Box_\Phi$. None of the five is ever written without it, and no glyph of the corpus names a gradient, a Laplacian or a d'Alembertian of the informational part. The gradient is $\tilde\nabla_\Phi$, not pure: by slot it splits into a Hermitian temporal term and an anti-Hermitian spatial sum. The four parameters it differentiates are the material ones, $\tilde\nabla_\Phi=-i\,e_t\partial_{r'_t}+\sum_{\eta\in\{x,y,z\}}\vec e_\eta\partial_{r_\eta}$, and the subscript is the only mark it carries. No glyph of the corpus carries a derivative on any other set of coordinates. The d'Alembertian is $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$, and every article uses this one operator with the mass equation $(\Box_\Phi-k_m^{2})\tilde{Ξ}=0$, where $k_m^{2}$ is written $k_m^{2}$ with $k_m=\frac{2\pi mc}{h}$. The gauge-covariant gradient is the same sum with the coefficient replaced, $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}$, and it carries a label rather than a letter of its own.
 
 The gradient and its conjugate act on two chiral parts, and the series writes the dynamics as two equations, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, of §*The Two First-Order Equations and Their Symbol*. The pair operator $\mathbb{D}$ is not allowed: it hides the adjoint, the metric and the signs, and its square is $\Box_\Phi$ on each part only after composing the two lines. A subscript names a part and not a slice: $\tilde\nabla_\Phi$ is the anti-Hermitian part, which keeps the imaginary time and the real space numbers (*The Gradient*).
 
@@ -624,13 +624,13 @@ The four forms remain four distinct conventions and the norms two, because each 
 | $\partial/\partial r'_t$, $\partial/\partial r_\eta$ | The two shapes a derivative takes: the material time and a material space coordinate; real parameters, so no dilation stands in front |
 | $\tilde\nabla_\Phi$ | The biquaternionic gradient, $-i\,e_t\partial_{r'_t}+\sum_{\eta\in\{x,y,z\}}\vec e_\eta\partial_{r_\eta}$, four components and not pure |
 | $\tfrac12\bigl(\tilde\nabla_\Phi-\tilde\nabla_\Phi^{*}\bigr)$ | The projection $X\mapsto\tfrac12(X-X^{*})$ with the star read on the units at fixed coordinate; on the gradient it gives the operator itself, $-i\,e_t\partial_{r'_t}+\sum_{\eta\in\{x,y,z\}}\vec e_\eta\partial_{r_\eta}$ on $r'_t,r_\eta$ |
-| $\tilde\nabla_{\mathrm{gco},\Phi}$ | The gauge-covariant gradient, $\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$; its four coefficients $-i\partial/\partial r'_t+\frac{i\,ϙ}{\hbar}A_t$ and $\partial/\partial r_\eta+\frac{i\,ϙ}{\hbar}A_\eta$, its conjugate $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ |
+| $\tilde\nabla_{\mathrm{gco},\Phi}$ | The gauge-covariant gradient, $\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}$; its four coefficients $-i\partial/\partial r'_t+\frac{2\pi i\,ϙ}{h}A_t$ and $\partial/\partial r_\eta+\frac{2\pi i\,ϙ}{h}A_\eta$, its conjugate $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ |
 | $\Box_\Phi$ | The d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ |
 | $\Delta_\Phi$ | The spatial Laplacian, $\sum_{\eta\in\{x,y,z\}}\partial^2/\partial r_\eta^2$, and nothing else; a bare $\Delta$ is an increment, and a named object takes a calligraphic letter, as in §*The Laplacian Is the Only Delta* |
 | $\tilde R$ | The variable, $\sum_{\mu\in\{t,x,y,z\}} R_\mu e_\mu$ with $R_\mu=r_\mu+i r'_\mu$; the capital is written once, at the definition of the gradient, and every derivative after it is written on a lowercase parameter |
 | $\tilde\nabla_{\Phi}$, $(\tilde\nabla_\Phi)^{\natural}$ | The gradient and its conjugate, $\tilde\nabla_{\Phi}=-i\,e_t\partial_{r'_t}+\sum_{\eta\in\{x,y,z\}}\vec e_\eta\partial_{r_\eta}$ and $(\tilde\nabla_\Phi)^{\natural}=-i\,e_t\partial_{r'_t}-\sum_{\eta\in\{x,y,z\}}\vec e_\eta\partial_{r_\eta}$, with the tuples $(-i,1,1,1)$ and $(-i,-1,-1,-1)$ on $r'_t$ and $r_\eta$; both anti-Hermitian |
 | $\vec\nabla_{\Phi}$, $\Delta_{\Phi}$, $\Box_\Phi$ | The spatial gradient, the spatial Laplacian and the d'Alembertian, $\vec\nabla_{\Phi}=\sum_{\eta\in\{x,y,z\}}\vec e_\eta\partial_{r_\eta}$, $\Delta_\Phi=\sum_{\eta\in\{x,y,z\}}\partial^2/\partial r_\eta^2$ and $\Box_\Phi=\Delta_{\Phi}-\partial^2/\partial {r'_t}^2$ |
-| $1/k_m$ | The mass length, $\hbar/(mc)$; a quotient pairing $\hbar$ with a mass, in either order, is $1/k_m$ or its reciprocal $k_m$, so the mass equation reads $(\Box_\Phi-k_m^{2})\tilde{Ξ}=0$ |
+| $1/k_m$ | The mass length, $\frac{h}{2\pi mc}$; a quotient pairing $\frac{h}{2\pi}$ with a mass, in either order, is $1/k_m$ or its reciprocal $k_m$, so the mass equation reads $(\Box_\Phi-k_m^{2})\tilde{Ξ}=0$ |
 | $^{\natural}$ | The quaternion conjugation, $a^{\natural}=(a_0,-a_1,-a_2,-a_3)$; an anti-automorphism, $(ab)^{\natural}=b^{\natural}a^{\natural}$ |
 | $(\tilde{Ξ} D)^{\natural}=D^{\natural}\tilde{Ξ}^{\natural}$ | The exchange of the two sides: a right action on $\tilde{Ξ}$ is a left action on $\tilde{Ξ}^{\natural}$ |
 | $\vec\nabla_\Phi^{R}$ | The right gradient, $F\vec\nabla_\Phi^{R}=-i(\partial F/\partial r'_t)e_t+\sum_{\eta\in\{x,y,z\}}(\partial F/\partial r_\eta)\vec e_\eta$; used only where a derivative meets two distinct factors |

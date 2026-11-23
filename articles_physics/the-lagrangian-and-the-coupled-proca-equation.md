@@ -11,10 +11,10 @@ $$
 \qquad
 \tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr),
 \qquad
-\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
 $$
 
-with $\tilde A\in\mathbb{B}$ the complex potential, $\tilde A_\Phi\in\mathbb{B}_\Phi$ the connection, and $k_m=mc/\hbar$. The element-form article derives it, states its covariance, and states the covariant Lorenz condition it implies.
+with $\tilde A\in\mathbb{B}$ the complex potential, $\tilde A_\Phi\in\mathbb{B}_\Phi$ the connection, and $k_m=\frac{2\pi mc}{h}$. The element-form article derives it, states its covariance, and states the covariant Lorenz condition it implies.
 
 **The action.**
 
@@ -36,7 +36,7 @@ with $\mathrm{Sc}$ the scalar part, ${}^{*}$ the Hermitian conjugation, and $\na
 
 ## Conventions
 
-**The conventions are the free companion's, restated here for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the potential $\tilde A$ is a general element and the connection $\tilde A_\Phi$ is anti-Hermitian. The field strength is $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)$, a pure vector in the free case and half of a complex bivector in the coupled one, which is the difference the article's fourth section is about. The pairing is $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ for the field term and $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ for the mass term, the measure is $\mathrm{d}^4r$, and $k_m=mc/\hbar$.
+**The conventions are the free companion's, restated here for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the potential $\tilde A$ is a general element and the connection $\tilde A_\Phi$ is anti-Hermitian. The field strength is $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)$, a pure vector in the free case and half of a complex bivector in the coupled one, which is the difference the article's fourth section is about. The pairing is $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ for the field term and $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ for the mass term, the measure is $\mathrm{d}^4r$, and $k_m=\frac{2\pi mc}{h}$.
 
 ## The Action in Element Form
 
@@ -225,10 +225,10 @@ The constraint is the trace of the equation and the curvature does not enter it.
 | $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ | Quaternionic norm; real on $\mathbb{B}_\Phi$ |
 | $\tilde A=i a'_t e_t+\vec A$ | Complex Proca potential, an element of $\mathbb{B}$ |
 | $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | Connection, an element of $\mathbb{B}_\Phi$ |
-| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | Covariant derivative, left action |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | Covariant derivative, left action |
 | $\tilde F=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | Field strength; one half of the complex bivector |
 | $\tilde F'=\mathrm{Vect}(\tilde\nabla_{\mathrm{gco},\Phi}\tilde A)$ | The companion half; the invariant pairing uses it |
-| $k_m=mc/\hbar$ | Mass wave number |
+| $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $ϙ$ | Charge; a parameter |
 | $\mathcal{L}_{\mathrm{field}},\ \mathcal{L}_{\mathrm{mass}}$ | The two terms of the Lagrangian density |
 | $j_\mu=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde A)$ | Charge current |

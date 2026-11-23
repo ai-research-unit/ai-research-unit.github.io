@@ -511,7 +511,7 @@ $$
 \qquad
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}.
 $$
-Both lines act from the left, the mass is the off-diagonal pairing of the two halves, and no term carries a right multiplication. The two halves are told apart by the subscript $L$ or $R$, and this is the equation whose dividing line is that label. Here $\hbar/(mc)$ is the mass length.
+Both lines act from the left, the mass is the off-diagonal pairing of the two halves, and no term carries a right multiplication. The two halves are told apart by the subscript $L$ or $R$, and this is the equation whose dividing line is that label. Here $\frac{h}{2\pi mc}$ is the mass length.
 
 Kravchenko's equation is **two-sided**: one equation on the algebra,
 $$

@@ -10,7 +10,7 @@ $$
 \Box_\Phi-k_m^{2}
 $$
 
-is a **central scalar** element of the algebra: the d'Alembertian $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is central because it is built from the gradient in a symmetric way, and the mass term is a multiple of $e_t$. Consequently every Green's function of the Klein–Gordon operator is a complex scalar times $e_t$, every propagator commutes with every element of $\mathbb{B}$, and the state module — the two-dimensional complex left ideal, of four real dimensions, on which the spinor fields live — is a spectator. The whole Green's-function structure of a spin-$0$ field is the scalar structure tensored with the identity on the module. What the algebra adds is the identification of the places where the kernel is singular: the **light cone** on which the massless kernel is supported is the zero-divisor cone of the material sector $\mathbb{B}_{\Phi}$, the set of four-vectors of vanishing biquaternion norm, and the **mass shell** is the locus of constant biquaternion norm $\langle\tilde P_{\Phi}\rangle_{\natural}=-k_m^{2}$, a hyperboloid in $\mathbb{B}_{\Phi}$. The analytic structure of the propagator is the geometry of the biquaternion norm, and that is the framework's own contribution rather than a transcription of standard results. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+is a **central scalar** element of the algebra: the d'Alembertian $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is central because it is built from the gradient in a symmetric way, and the mass term is a multiple of $e_t$. Consequently every Green's function of the Klein–Gordon operator is a complex scalar times $e_t$, every propagator commutes with every element of $\mathbb{B}$, and the state module — the two-dimensional complex left ideal, of four real dimensions, on which the spinor fields live — is a spectator. The whole Green's-function structure of a spin-$0$ field is the scalar structure tensored with the identity on the module. What the algebra adds is the identification of the places where the kernel is singular: the **light cone** on which the massless kernel is supported is the zero-divisor cone of the material sector $\mathbb{B}_{\Phi}$, the set of four-vectors of vanishing biquaternion norm, and the **mass shell** is the locus of constant biquaternion norm $\langle\tilde P_{\Phi}\rangle_{\natural}=-k_m^{2}$, a hyperboloid in $\mathbb{B}_{\Phi}$. The analytic structure of the propagator is the geometry of the biquaternion norm, and that is the framework's own contribution rather than a transcription of standard results. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 The article is organized as follows. The operator, its convention and its defining equation are stated first, together with the momentum-space amplitude and the sign conventions. The poles and the four standard prescriptions are then identified. The retarded Green's function is derived in position space from its Fourier representation: the frequency contour is done exactly, the angular integral is reduced by a hyperbolic rotation to a Bessel function, and the closed form is exhibited and checked against the homogeneous equation. The light-cone Jacobian that converts the invariant kernel into the retarded-time kernel is exhibited, and the massless limit is compared with the retarded kernel of the electromagnetism exercise. The advanced kernel, the boundary condition that selects the retarded one, and the Pauli–Jordan function are then treated, with microcausality verified. The Feynman propagator, its contour, its time-ordered interpretation and its Euclidean form are given. A closing section states the biquaternion interpretation of the whole construction, and open questions are recorded.
 
@@ -20,7 +20,7 @@ $$
 \Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2 .
 $$
 
-The mass parameter is $k_m=mc/\hbar$, so that $k_m^{2}$ is the quantity that multiplies the field in the c-explicit equation; as the companion article *The Feynman Propagator in Biquaternionic Form* does, the kernels are quoted with $c$ restored. The inertia convention are level 1 and level 2 only: the biquaternion norm on $\mathbb{C}$ and its material reading, $Q_t=i q'_t$. No second metric is used anywhere in this article.
+The mass parameter is $k_m=\frac{2\pi mc}{h}$, so that $k_m^{2}$ is the quantity that multiplies the field in the c-explicit equation; as the companion article *The Feynman Propagator in Biquaternionic Form* does, the kernels are quoted with $c$ restored. The inertia convention are level 1 and level 2 only: the biquaternion norm on $\mathbb{C}$ and its material reading, $Q_t=i q'_t$. No second metric is used anywhere in this article.
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the equation, its mass term, and the central scalar d'Alembertian.
 - Companion article *Spin Zero and the Centre: Why the Scalar Field Lies Outside the State Module*, for the field's central value space and the exclusion of the state module.
@@ -38,7 +38,7 @@ For a field $\tilde{Ξ}=\xi_{\mathrm{scl}}\,e_t$ taking values in the centre, th
 $$
 \left(\Box_\Phi-k_m^{2}\right)\tilde{Ξ}=0,
 \qquad
-k_m=\dfrac{mc}{\hbar},
+k_m=\frac{2\pi mc}{h},
 $$
 
 and because both $\Box_\Phi$ and the mass term are central and scalar, the equation is the ordinary complex scalar equation for $\xi_{\mathrm{scl}}$. On a plane wave with the material four-wavevector
@@ -84,22 +84,22 @@ with the physical measure $d^3y\,dr'_{t,2}$ over the source point $\tilde{R}_{\P
 A second convention is fixed at the same time: the whole article works with the operator $\Box_\Phi-k_m^{2}$ and never with $-\Box_\Phi+k_m^{2}$, so that the momentum-space amplitude carries no compensating minus. With the measure $d^4p=d^3p\,d(\omega/c)$, whose fourth component is $p_0=\omega/c$, and the phase $\exp(-i\theta_{\mathrm{pwp}})$, the defining equation becomes
 
 $$
-\int\frac{d^4p}{(2\pi\hbar)^4}\left(\frac{\omega^2}{c^{2}}-\frac{\vec p^2}{\hbar^{2}}-k_m^{2}\right)G(\omega,\vec p)\,\exp(-i\theta_{\mathrm{pwp}})
-=-\int\frac{d^4p}{(2\pi\hbar)^4}\exp(-i\theta_{\mathrm{pwp}}),
+\int\frac{d^4p}{h^{4}}\left(\frac{\omega^2}{c^{2}}-\frac{(2\pi)^{2} \vec p^2}{h^{2}}-k_m^{2}\right)G(\omega,\vec p)\,\exp(-i\theta_{\mathrm{pwp}})
+=-\int\frac{d^4p}{h^{4}}\exp(-i\theta_{\mathrm{pwp}}),
 $$
 
 so the amplitude is
 
 $$
-G(\omega,\vec p)=\frac{1}{\vec p^2/\hbar^{2}+k_m^{2}-\omega^2/c^{2}}
+G(\omega,\vec p)=\frac{1}{\vec p^2/\frac{h^{2}}{4\pi^{2}}+k_m^{2}-\omega^2/c^{2}}
 =\frac{1}{N+k_m^{2}} ,
 $$
 
-Here $N$ is the norm of the wave number, $N=-\omega^{2}/c^{2}+\lvert\vec p\rvert^{2}/\hbar^{2}$, an inverse length squared, and the propagator's pole sits at $N=-k_m^{2}$, which is the mass shell. The measure is still written $d^3p$, so the letter $p$ names the momentum it integrates.
+Here $N$ is the norm of the wave number, $N=-\omega^{2}/c^{2}+\lvert\vec p\rvert^{2}/\frac{h^{2}}{4\pi^{2}}$, an inverse length squared, and the propagator's pole sits at $N=-k_m^{2}$, which is the mass shell. The measure is still written $d^3p$, so the letter $p$ names the momentum it integrates.
 
-The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.
+The angle is $\theta_{\mathrm{pwp}}=\frac{2\pi p\cdot x}{h}=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\frac{h}{2\pi}$, so the angle is real.
 
-The prescription that deforms the real axis is the whole of the difference between the four kernels. With the constants carried the amplitude above reduces at $k_m=0$ to $\frac{1}{\vec p^2/\hbar^{2}-\omega^2/c^{2}}$, whose contour integral is the exercise's retarded kernel.
+The prescription that deforms the real axis is the whole of the difference between the four kernels. With the constants carried the amplitude above reduces at $k_m=0$ to $\frac{1}{\vec p^2/\frac{h^{2}}{4\pi^{2}}-\omega^2/c^{2}}$, whose contour integral is the exercise's retarded kernel.
 
 ## The Poles and the Four Prescriptions
 
@@ -108,16 +108,16 @@ The prescription that deforms the real axis is the whole of the difference betwe
 The denominator vanishes at $\omega=\pm\Omega_{\vec p}$ with the relativistic frequency
 
 $$
-\Omega_{\vec p}=\sqrt{\vec p^2/\hbar^{2}+k_m^{2}}.
+\Omega_{\vec p}=\sqrt{\vec p^2/\frac{h^{2}}{4\pi^{2}}+k_m^{2}}.
 $$
 
-The on-shell energy is $\hbar\,c\,\Omega_{\vec p}=\sqrt{\vec p^{2}c^{2}+m^{2}c^{4}}$, the usual relativistic energy. The two poles sit on the real axis in the distributional sense, and the four standard prescriptions displace them into the complex plane in four ways. Each prescription defines a Green's function with a definite support and a definite interpretation.
+The on-shell energy is $\frac{h}{2\pi}\,c\,\Omega_{\vec p}=\sqrt{\vec p^{2}c^{2}+m^{2}c^{4}}$, the usual relativistic energy. The two poles sit on the real axis in the distributional sense, and the four standard prescriptions displace them into the complex plane in four ways. Each prescription defines a Green's function with a definite support and a definite interpretation.
 
 | Prescription | Denominator | Poles | Support |
 |---|---|---|---|
-| Retarded | $\vec p^2/\hbar^{2}+k_m^{2}-(\omega+i\epsilon)^2/c^{2}$ | $\omega=\pm c\,\Omega_{\vec p}-i\epsilon$ | future cone |
-| Advanced | $\vec p^2/\hbar^{2}+k_m^{2}-(\omega-i\epsilon)^2/c^{2}$ | $\omega=\pm c\,\Omega_{\vec p}+i\epsilon$ | past cone |
-| Feynman | $\vec p^2/\hbar^{2}+k_m^{2}-\omega^2/c^{2}-i\epsilon$ | $\omega=+c\,\Omega_{\vec p}-i\delta$, $\omega=-c\,\Omega_{\vec p}+i\delta$ | whole space, causal |
+| Retarded | $\vec p^2/\frac{h^{2}}{4\pi^{2}}+k_m^{2}-(\omega+i\epsilon)^2/c^{2}$ | $\omega=\pm c\,\Omega_{\vec p}-i\epsilon$ | future cone |
+| Advanced | $\vec p^2/\frac{h^{2}}{4\pi^{2}}+k_m^{2}-(\omega-i\epsilon)^2/c^{2}$ | $\omega=\pm c\,\Omega_{\vec p}+i\epsilon$ | past cone |
+| Feynman | $\vec p^2/\frac{h^{2}}{4\pi^{2}}+k_m^{2}-\omega^2/c^{2}-i\epsilon$ | $\omega=+c\,\Omega_{\vec p}-i\delta$, $\omega=-c\,\Omega_{\vec p}+i\delta$ | whole space, causal |
 | Principal value | $\mathrm{P}\frac{1}{\Omega_{\vec p}^2-\omega^2/c^{2}}$ | on the axis | on the cone |
 
 The displacement was checked explicitly. Writing $\delta=\epsilon\,c/(2\Omega_{\vec p})$ for the imaginary part of the Feynman pole in $\omega$, the four displacements are: both poles at $\mathrm{Im}\,\omega=-\epsilon$ (retarded), both at $+\epsilon$ (advanced), and one on each side with imaginary parts $\pm\delta$ (Feynman). The Feynman prescription is the only one that treats the two poles asymmetrically, and it is exactly this asymmetry that makes the resulting kernel a boundary value rather than a solution selected by a cone support.
@@ -130,17 +130,17 @@ Throughout, $\theta_{\mathrm{pwt}}:=\omega r'_t/c$ is the plane-wave time angle:
 
 $$
 \frac{1}{2\pi}\int_{-\infty}^{\infty}d\omega\,
-\frac{\exp(-i\theta_{\mathrm{pwt}})}{\vec p^2/\hbar^{2}+k_m^{2}-(\omega+i\epsilon)^2/c^{2}}
+\frac{\exp(-i\theta_{\mathrm{pwt}})}{\vec p^2/\frac{h^{2}}{4\pi^{2}}+k_m^{2}-(\omega+i\epsilon)^2/c^{2}}
 =\mathrm{H}_{\mathrm{hvs}}(r'_t)\,c\,\frac{\sin(\Omega_{\vec p}r'_t)}{\Omega_{\vec p}},
 \qquad
-\Omega_{\vec p}=\sqrt{\vec p^2/\hbar^{2}+k_m^{2}},
+\Omega_{\vec p}=\sqrt{\vec p^2/\frac{h^{2}}{4\pi^{2}}+k_m^{2}},
 $$
 
 while for $r'_t<0$ the contour closes above and the integral vanishes. The result is the statement that the retarded kernel has support only in the future. For the advanced displacement the same computation with $r'_t\to-r'_t$ gives $-c\,\mathrm{H}_{\mathrm{hvs}}(-r'_t)\sin(\Omega_{\vec p}r'_t)/\Omega_{\vec p}$, supported only in the past. For the Feynman displacement the two poles sit on opposite sides, both contribute at $r'_t>0$ and at $r'_t<0$, and the result is the symmetric combination
 
 $$
 \frac{1}{2\pi}\int_{-\infty}^{\infty}d\omega\,
-\frac{\exp(-i\theta_{\mathrm{pwt}})}{\vec p^2/\hbar^{2}+k_m^{2}-\omega^2/c^{2}-i\epsilon}
+\frac{\exp(-i\theta_{\mathrm{pwt}})}{\vec p^2/\frac{h^{2}}{4\pi^{2}}+k_m^{2}-\omega^2/c^{2}-i\epsilon}
 =\frac{i\,c}{2\Omega_{\vec p}}\,\exp(-i\theta_{\mathrm{prp}}),
 $$
 
@@ -154,7 +154,7 @@ Assembling the frequency integral with the spatial measure gives the retarded ke
 
 $$
 G_R(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
-=\mathrm{H}_{\mathrm{hvs}}(r'_t)\int\frac{d^3p}{(2\pi\hbar)^3}\,
+=\mathrm{H}_{\mathrm{hvs}}(r'_t)\int\frac{d^3p}{h^{3}}\,
 \frac{\sin(\Omega_{\vec p}r'_t)}{\Omega_{\vec p}}\,\exp(i\theta_{\mathrm{spa}}),
 $$
 
@@ -173,7 +173,7 @@ The angle is $\theta_{\mathrm{spa}}=\vec k_\Phi\cdot\vec r$, the spatial part of
 Because the kernel is spherically symmetric, the angular integral can be done. Writing $r=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$ and using
 
 $$
-\int\frac{d^3p}{(2\pi\hbar)^3}F(|\vec p|)\,\exp(i\theta_{\mathrm{spa}})
+\int\frac{d^3p}{h^{3}}F(|\vec p|)\,\exp(i\theta_{\mathrm{spa}})
 =\frac{1}{2\pi^2 r}\int_0^\infty dp\,p\,F(p)\,\sin(pr),
 $$
 
@@ -338,7 +338,7 @@ $$
 G_F(\omega,\vec p)=\frac{1}{\vec p^2+k_m^{2}-\omega^2-i\epsilon}
 =\frac{1}{N+k_m^{2}-i\epsilon},
 \qquad
-G_F(\tilde R_\Phi)=\int\frac{d^4p}{(2\pi\hbar)^4}\,G_F(\omega,\vec p)\,\exp(-i\theta_{\mathrm{pwp}}) .
+G_F(\tilde R_\Phi)=\int\frac{d^4p}{h^{4}}\,G_F(\omega,\vec p)\,\exp(-i\theta_{\mathrm{pwp}}) .
 $$
 
 Its frequency integral was given above; its position-space content is the time-ordered correlation function,
@@ -363,7 +363,7 @@ a complex scalar times the identity; the module factor is absent, as it must be 
 For spacelike separations the Feynman propagator is the Wick-rotated Euclidean kernel, and the Wick rotation is the identification of the material sector with the quaternion subspace recalled in the companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*. The rotation is quoted as the standard route; the denominator it produces is positive without it, because $\vec p_E^2$ is the **Hermitian form** of a material element, $\langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*}=(k_{\mathrm{eu},0})^2+\vec p^2=\vec p_E^2$ for $\tilde{P}_{\Phi,E}=ik_{\mathrm{eu},0}e_t+\vec p\in\mathbb{B}_{\Phi}$, positive because the form is definite and not because a metric was rotated, the two routes agreeing by the identity $\langle ik_{\mathrm{eu},0}e_t+\vec p,\,ik_{\mathrm{eu},0}e_t+\vec p\rangle_{*}=\langle -k_{\mathrm{eu},0}e_t+\vec p\rangle_{\natural}$ — the same identity that carries the thermal and renormalization-group routes of the companions. The Euclidean kernel
 
 $$
-G_E(\tilde{Q}_E)=\int\frac{d^4p_E}{(2\pi\hbar)^4}\,\frac{\exp(\,i\,p_E\cdot x_E)}{\vec p_E^2+k_m^{2}}
+G_E(\tilde{Q}_E)=\int\frac{d^4p_E}{h^{4}}\,\frac{\exp(\,i\,p_E\cdot x_E)}{\vec p_E^2+k_m^{2}}
 $$
 
 is the standard massive Euclidean propagator, whose closed form is the modified Bessel (Yukawa) kernel
@@ -375,7 +375,7 @@ K_1\!\left(k_m\sqrt{\rho_E^2}\right),
 \rho_E^2=x_E^2,
 $$
 
-with $K_1$ the modified Bessel function of the second kind. It decays exponentially at large spacelike separation, with range $k_m=mc/\hbar$, the Compton wavelength; this is the analytic form of the statement that the causal kernel vanishes outside the cone but that the Feynman kernel retains an exponentially small tail inside it. Both behaviors follow from the same biquaternion-norm geometry: the Lorentzian cone for the commutator, the Euclidean sphere for the Wick-rotated kernel. The scope of the form statement is the positivity of the denominator and no more: the form does not supply the analytic continuation, and the $i\epsilon$ remains the analytic input that names the vacuum, as the companion propagator article states.
+with $K_1$ the modified Bessel function of the second kind. It decays exponentially at large spacelike separation, with range $k_m=\frac{2\pi mc}{h}$, the Compton wavelength; this is the analytic form of the statement that the causal kernel vanishes outside the cone but that the Feynman kernel retains an exponentially small tail inside it. Both behaviors follow from the same biquaternion-norm geometry: the Lorentzian cone for the commutator, the Euclidean sphere for the Wick-rotated kernel. The scope of the form statement is the positivity of the denominator and no more: the form does not supply the analytic continuation, and the $i\epsilon$ remains the analytic input that names the vacuum, as the companion propagator article states.
 
 ### Composition and the free generating functional
 
@@ -386,7 +386,7 @@ $$
 =\delta^{(4)}(\tilde R_\Phi-\tilde Q_3),
 $$
 
-the operator acting on the delta and not on a second propagator, so that the bracket is the bare inverse kernel. Equivalently, convoluting two propagators with one operator insertion returns a single propagator, $\int d^4y\,G_F(\tilde R_\Phi-\tilde{R}_{\Phi,2})[-\bigl(\Box_\Phi-k_m^{2}\bigr)]G_F(\tilde{R}_{\Phi,2}-\tilde Q_3)=G_F(\tilde R_\Phi-\tilde Q_3)$, which is the same statement. In momentum space this is the statement $G_F^{-1}=\vec p^2/\hbar^{2}+k_m^{2}-\omega^2/c^{2}$, and it is the free propagator that the path-integral article *The Path Integral and the Klein–Gordon Equation in Biquaternionic Form* obtains as the Gaussian two-point function of the scalar field. The consistency of the two constructions — the Green's-function inverse here and the Gaussian fluctuation kernel there — is the statement that the free theory's two-point function is the inverse of the quadratic form in the action, and it is checked in that article on a finite lattice.
+the operator acting on the delta and not on a second propagator, so that the bracket is the bare inverse kernel. Equivalently, convoluting two propagators with one operator insertion returns a single propagator, $\int d^4y\,G_F(\tilde R_\Phi-\tilde{R}_{\Phi,2})[-\bigl(\Box_\Phi-k_m^{2}\bigr)]G_F(\tilde{R}_{\Phi,2}-\tilde Q_3)=G_F(\tilde R_\Phi-\tilde Q_3)$, which is the same statement. In momentum space this is the statement $G_F^{-1}=\vec p^2/\frac{h^{2}}{4\pi^{2}}+k_m^{2}-\omega^2/c^{2}$, and it is the free propagator that the path-integral article *The Path Integral and the Klein–Gordon Equation in Biquaternionic Form* obtains as the Gaussian two-point function of the scalar field. The consistency of the two constructions — the Green's-function inverse here and the Gaussian fluctuation kernel there — is the statement that the free theory's two-point function is the inverse of the quadratic form in the action, and it is checked in that article on a finite lattice.
 
 ## The Biquaternion Reading
 
@@ -416,7 +416,7 @@ The derivation of the retarded kernel given above is a transcription of the stan
 
 ## Summary
 
-The Klein–Gordon operator $(\Box_\Phi-k_m^{2})$ is a central scalar element of $\mathbb{B}$, and every Green's function of it is a central scalar times $e_t$. With the defining convention $(\Box_\Phi-k_m^{2})G=-\delta^{(4)}$, matching the electromagnetism exercise at $k_m=0$, the momentum-space amplitude is $G=(N+k_m^{2})^{-1}$ and the four standard prescriptions displace its two poles at $\omega=\pm\Omega_{\vec p}=\pm\sqrt{\vec p^2/\hbar^{2}+k_m^{2}}$.
+The Klein–Gordon operator $(\Box_\Phi-k_m^{2})$ is a central scalar element of $\mathbb{B}$, and every Green's function of it is a central scalar times $e_t$. With the defining convention $(\Box_\Phi-k_m^{2})G=-\delta^{(4)}$, matching the electromagnetism exercise at $k_m=0$, the momentum-space amplitude is $G=(N+k_m^{2})^{-1}$ and the four standard prescriptions displace its two poles at $\omega=\pm\Omega_{\vec p}=\pm\sqrt{\vec p^2/\frac{h^{2}}{4\pi^{2}}+k_m^{2}}$.
 
 The retarded Green's function is derived from its Fourier representation. The frequency contour gives $\mathrm{H}_{\mathrm{hvs}}(r'_t)\sin(\Omega_{\vec p}r'_t)/\Omega_{\vec p}$; the angular integral reduces the kernel to a radial Bessel integral; the substitution $p=(m\,c)\sinh u$ and a hyperbolic rotation evaluate it as $\frac{\pi}{2}J_0(k_m\sqrt{{r'_{t}}^2-r^2})$; and differentiation gives the closed form
 
@@ -443,15 +443,15 @@ The algebra's contribution is the identification of the singular loci with the b
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; the scalar field's value space |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate, $\in\mathbb{B}_{\Phi}$ |
-| $\tilde P_{\Phi}=\hbar\,(i\omega/c\,e_t+\vec k_\Phi)$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
+| $\tilde P_{\Phi}=\frac{h}{2\pi}\,(i\omega/c\,e_t+\vec k_\Phi)$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
 | $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}$ | Biquaternion norm |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | Hermitian form; real, positive definite |
 | $\tilde{P}_{\Phi,E}=ik_{\mathrm{eu},0}e_t+\vec p\in\mathbb{B}_{\Phi}$ | Euclidean material element; $\langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*}=\vec p_E^2$ |
 | $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\eta \vec e_\eta\partial/\partial R_\eta$ | Biquaternionic gradient |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
-| $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the inverse Compton wave number |
-| $\Omega_{\vec p}=\sqrt{\vec p^2/\hbar^{2}+k_m^{2}}$ | On-shell frequency, an inverse length |
-| $G(\omega,\vec p)=(\vec p^2/\hbar^{2}+k_m^{2}-\omega^2/c^{2})^{-1}$ | Momentum-space kernel, $(\Box_\Phi-k_m^{2})G=-\delta^{(4)}$ |
+| $1/k_m$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $k_m=\frac{2\pi mc}{h}$ is the inverse Compton wave number |
+| $\Omega_{\vec p}=\sqrt{\vec p^2/\frac{h^{2}}{4\pi^{2}}+k_m^{2}}$ | On-shell frequency, an inverse length |
+| $G(\omega,\vec p)=(\vec p^2/\frac{h^{2}}{4\pi^{2}}+k_m^{2}-\omega^2/c^{2})^{-1}$ | Momentum-space kernel, $(\Box_\Phi-k_m^{2})G=-\delta^{(4)}$ |
 | $G_R,G_A$ | Retarded and advanced Green's functions |
 | $G_C=G_R-G_A$ | Pauli–Jordan (commutator) function |
 | $G_F$ | Feynman propagator, time-ordered two-point function |
