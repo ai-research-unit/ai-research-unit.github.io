@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Repairing the Formulas: Six Silent Faults and Two Mechanical Passes — Biquaternion Universe</title>
-  <meta name="description" content="Status of this file. Executed: 498 failing formulas, now none. 376 in the physics articles, 122 in the mathematics articles and the internal notes. The…">
+  <meta name="description" content="Status of this file. Executed: 498 failing formulas, then none; the rescan of 23 November 2026 finds 4 481. The pass counted 376 in the physics articles…">
   <link rel="stylesheet" href="../../assets/css/base.css">
   <link rel="stylesheet" href="../../assets/css/layout.css">
   <link rel="stylesheet" href="../../assets/css/article.css">
@@ -70,7 +70,7 @@
     <main class="article">
       <div class="article-body">
         <h1 id="repairing-the-formulas-six-silent-faults-and-two-mechanical-passes"><strong>Repairing the Formulas: Six Silent Faults and Two Mechanical Passes</strong></h1>
-<p><em>Status of this file.</em> <strong>Executed: 498 failing formulas, now none.</strong> 376 in the physics articles, 122 in the mathematics articles and the internal notes. The one surviving record is a mention of the display delimiter inside a code span; it is not a formula and it renders as text.</p>
+<p><em>Status of this file.</em> <strong>Executed: 498 failing formulas, then none; the rescan of 23 November 2026 finds 4 481.</strong> The pass counted 376 in the physics articles, 122 in the mathematics articles and the internal notes; its one surviving record was a mention of the display delimiter inside a code span, which is not a formula. §<em>The Second Census</em> gives the state of the corpus today.</p>
 <p><em>What the file is for.</em> It is the procedure of the two passes that cleared them: the four mechanical repairs of a parse failure, the second pass over the class that never raises one, and the checks that accept a folder as repaired.</p>
 <p><em>The reader's contract, in five lines.</em></p>
 <ol>
@@ -268,14 +268,78 @@ $$</p>
 <p><strong>The objection is that an automated substitution changes mathematics.</strong> A script that merges <code>\tilde E_{\Phi}_\mu</code> into <code>\tilde E_{\Phi,\mu}</code> decides that the sector label and the index are two labels of one object. In another formula the same characters could mean the component of a frame element, and the merge would then be wrong.</p>
 <p><strong>The answer has four parts.</strong> The comma is the separator the corpus already writes between a sector and an index, and $320$ sites use that convention. The one case where the two scripts are not labels, the operator, is excluded by a stated discriminator. The merge is checked against one neighbouring sentence that writes the object in full. And the sites that carry meaning rather than punctuation are repaired by hand: <code>\lambdaiR</code>, the split of <code>\Box_\Phi G</code>, the brace of <code>\bar{\mathrm{Sd}}</code>.</p>
 <p><strong>The objection is right about one thing.</strong> The rescan certifies syntax and nothing else. A formula can render and be false. That is why the pass is followed by the reading of three sites per class, and why the census is reviewed before the automated step runs rather than after.</p>
+<h2 id="14-the-second-census-the-command-taken-as-a-script">14. The Second Census: The Command Taken as a Script</h2>
+<p><strong>A rescan on 23 November 2026 finds $4\,481$ failing snippets in $517$ files.</strong> The certificate of §<em>The Checks</em> does not hold today. The physics articles carry $4\,015$ records in $469$ files, the mathematics articles $448$ in $43$, and the internal notes $18$ in $5$. Eleven further records sit in <code>audit-bad-metric.md</code>, where a backslash and the <code>#1</code> of a macro body stand inside an indented code block; they are code, not formulas, and they are counted apart.</p>
+<p><strong>The scan repeats §<em>The Scanner</em>, with one addition.</strong> Every region is rendered by KaTeX 0.16.9 under <code>throwOnError: true</code> with the template's three macros, and code fences and code spans are masked first, because auto-render skips them. The instrument rendered $857\,422$ regions: $178\,054$ in the physics articles, $633\,962$ in the mathematics articles and $45\,406$ in the internal notes.</p>
+<p><strong>The census is one table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>records</th>
+<th>source before</th>
+<th>source after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a function command taken as a script</td>
+<td>$3\,741$</td>
+<td><code>q_\imath</code></td>
+<td><code>q_{\imath}</code></td>
+</tr>
+<tr>
+<td>an inline formula broken across a line break</td>
+<td>$360$</td>
+<td>a dollar, a line break, the rest</td>
+<td>one line</td>
+</tr>
+<tr>
+<td>a command fused to its argument</td>
+<td>$247$</td>
+<td><code>\epsilon_{\imath\jmathk}</code></td>
+<td><code>\epsilon_{\imath\jmath k}</code></td>
+</tr>
+<tr>
+<td>a script written twice</td>
+<td>$128$</td>
+<td><code>k_\upsilon_{\mathrm{crd}}</code></td>
+<td><code>k_{\upsilon_{\mathrm{crd}}}</code></td>
+</tr>
+<tr>
+<td>an undefined command in text</td>
+<td>$2$</td>
+<td><code>\emph</code> inside <code>\text</code></td>
+<td><code>\textit</code>, or plain words</td>
+</tr>
+<tr>
+<td><code>\max</code> taken as a script</td>
+<td>$2$</td>
+<td><code>\eta_\max</code></td>
+<td><code>\eta_{\max}</code></td>
+</tr>
+<tr>
+<td>a prime followed by an exponent</td>
+<td>$1$</td>
+<td><code>q'_t^{2}</code></td>
+<td><code>q_t'^{2}</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The dominant class is new, and its repair is one pair of braces.</strong> KaTeX defines <code>\imath</code> as a function, so a script that holds it alone is refused with <em>Got function <code>\html@mathml</code> with no arguments as subscript</em>. The same symbol inside braces renders. The corpus writes the generic spatial index that way in $3\,741$ places, and $3\,730$ of them are in the physics articles.</p>
+<p><strong>The rule is already written in this corpus.</strong> <code>audit-index.md</code> states it in its contract: a dotless letter in a sub- or superscript is always braced, and <code>Q_\imath</code> raises <em>Got function as subscript</em>. The migration that introduced the two dotless letters reports its failures against a baseline of 14, not against zero.</p>
+<p><strong>The message names a macro of the library, not the article's source.</strong> It says <code>\html@mathml</code>, which appears nowhere in the corpus. A scanner that classifies a record by the command it prints therefore files the commonest fault of the corpus under a name the author cannot search for.</p>
+<p><strong>The other classes are old, and they have returned.</strong> The fused command is §<em>The Lost Space</em>'s fault, and the context gives the reading: <code>\epsilon_{\imath\jmathk}</code> is the Levi-Civita symbol with three indices, so the repair is <code>\epsilon_{\imath\jmath k}</code>. The double subscript is §<em>The Merge Rule</em>'s fault, and the same comma or nesting applies. The line-broken inline formula is §<em>The Delimiters</em>' first consequence: the inline pattern excludes a newline, the pair is never protected, and $24$ mathematics files carry the $360$ records between them. The two <code>\max</code> take braces. The prime followed by an exponent takes the order the conventions state, <code>q_t'^{2}</code>, which renders.</p>
+<p><strong>The repairs above were applied to one article only.</strong> The introduction to the biquaternion universe carried six sites in five formulas; it now returns zero on the same scan. The rest of the corpus is as the table records it, and the pass of §<em>The Order of the Passes</em> still applies unchanged.</p>
 <h2 id="summary">Summary</h2>
-<p><strong>The corpus had $498$ failing formulas and has none.</strong> The count is $376$ in the physics articles, measured on the first scan, and $122$ in the mathematics articles and the internal notes.</p>
+<p><strong>The pass of this note cleared $498$ failing formulas, and the rescan of 23 November 2026 finds $4\,481$.</strong> The $498$ were $376$ in the physics articles, measured on the first scan, and $122$ in the mathematics articles and the internal notes.</p>
 <p><strong>Four classes hold $366$ of the $376$, and four rules clear them.</strong> A script written twice takes a comma, or a nesting when the first script is a differential operator. A command fused to its argument takes a space, chosen by the longest defined prefix. An operator that carries a script without braces takes them. A control character takes its letter back. The fifth class, delimiter and structure, holds the last $10$ and is repaired by reading. Two rules serve the mathematics articles: an empty group carries a script that a space cannot carry, and the same empty group separates a prime from an exponent that follows it.</p>
 <p><strong>The detector is a render, not a reading.</strong> KaTeX at 0.16.9 with <code>throwOnError: true</code> and the template's three macros. The build never reports a fault, so a scanner is the only instrument.</p>
 <p><strong>One class is invisible to the render check and needs a second instrument.</strong> A matrix whose rows are separated by a single backslash parses as one row: no message, no red type, and a wrong picture. $90$ lines in $52$ blocks of $33$ articles carried it. The detector compares the rows a block declares with the rows it renders, and the repair appends one backslash where the trailing run is exactly one.</p>
 <p><strong>The delimiters fail before the formulas do.</strong> One stray display delimiter derails the rest of a file, and a code fence does not protect one. The parity check comes before the formula check, and it is repeated after every structural edit.</p>
 <p><strong>Four faults cannot be automated.</strong> A missing <code>\right</code>, a matrix with its rows fused, prose inside a display, and a LaTeX array used as a table. Each is read, repaired and re-rendered on the spot.</p>
 <p><strong>The last pass is a rescan, and its number is zero.</strong> Anything else is an unfinished pass.</p>
+<p><strong>The number is a state, not a verdict.</strong> The second census finds $4\,481$ records in $517$ files, and $3\,741$ of them are one new class: a function command taken as a script. The procedure above is unchanged, and it is the procedure to run again.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -300,6 +364,10 @@ $$</p>
 <tr>
 <td>record</td>
 <td>one failing snippet: file, line, message, source</td>
+</tr>
+<tr>
+<td>script</td>
+<td>the argument of <code>_</code> or <code>^</code>; braces are required when it is a function command such as <code>\imath</code>, because KaTeX refuses <code>q_\imath</code> and accepts <code>q_{\imath}</code></td>
 </tr>
 <tr>
 <td>merge</td>
