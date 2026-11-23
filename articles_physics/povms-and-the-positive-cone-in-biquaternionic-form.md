@@ -50,7 +50,7 @@ $$
 where $\tilde{\mathcal E}_{\Psi} = a_te_t + i\vec a$, and the doubled pairing $2\langle\tilde H_\Psi,\tilde{\mathcal E}_{\Psi}\rangle_{*}$ is the matrix trace of the $2\times2$ image. Direct computation of the Hermitian form on the Hermitian basis gives
 
 $$
-\langle e_t,e_t\rangle = 1, \qquad \langle e_t,i\vec e_\eta\rangle = 0, \qquad \langle i\vec e_j,i\vec e_\eta\rangle = \delta_{j\eta},
+\langle e_t,e_t\rangle = 1, \qquad \langle e_t,i\vec e_k\rangle = 0, \qquad \langle i\vec e_j,i\vec e_k\rangle = \delta_{jk},
 $$
 
 so the Hermitian form is the positive definite Euclidean form of inertia $(4,0)$ in the coefficients. The **dual cone** is
@@ -193,27 +193,27 @@ This is **Naimark's dilation theorem**, the measurement analogue of Stinespring'
 
 ### The trine POVM
 
-Let $\vec u_\eta$, $\eta=1,2,3$, be three unit vectors in the equatorial plane at $120^\circ$ from one another, so that $\sum_\eta\vec u_\eta = 0$ and $\sum_\eta\tilde\Pi_{\mathrm{id},1}(\vec u_\eta) = \tfrac32 e_t$. Define
+Let $\vec u_k$, $k=1,2,3$, be three unit vectors in the equatorial plane at $120^\circ$ from one another, so that $\sum_{k\in\{x,y,z\}}\vec u_k = 0$ and $\sum_{k\in\{x,y,z\}}\tilde\Pi_{\mathrm{id},1}(\vec u_k) = \tfrac32 e_t$. Define
 
 $$
-\tilde{\mathcal E}_{\Psi,k} = \tfrac{2}{3}\,\tilde\Pi_{\mathrm{id},1}(\vec u_\eta), \qquad \eta = 1, 2, 3 .
+\tilde{\mathcal E}_{\Psi,k} = \tfrac{2}{3}\,\tilde\Pi_{\mathrm{id},1}(\vec u_k), \qquad k=1,2,3 .
 $$
 
 Each $\tilde{\mathcal E}_{\Psi,k}$ is an effect — its coefficients are $a_t = \tfrac13$ and $|\vec a| = \tfrac13$, on the boundary of the interval — and they resolve the identity:
 
 $$
-\sum_{\eta=1}^{3}\tilde{\mathcal E}_{\Psi,k} = \tfrac{2}{3}\sum_{\eta=1}^{3}\tilde\Pi_{\mathrm{id},1}(\vec u_\eta) = \tfrac{2}{3}\cdot\tfrac{3}{2}e_t = e_t .
+\sum_{k\in\{x,y,z\}}\tilde{\mathcal E}_{\Psi,k} = \tfrac{2}{3}\sum_{k\in\{x,y,z\}}\tilde\Pi_{\mathrm{id},1}(\vec u_k) = \tfrac{2}{3}\cdot\tfrac{3}{2}e_t = e_t .
 $$
 
-The trine POVM has three outcomes, which no projective measurement of a qubit can have. For the three equally likely states $\tilde{Ϛ}_{\Psi,\eta} = \tilde\Pi_{\mathrm{id},1}(\vec u_\eta)$, the probability of correctly identifying the state is
+The trine POVM has three outcomes, which no projective measurement of a qubit can have. For the three equally likely states $\tilde{Ϛ}_{\Psi,k} = \tilde\Pi_{\mathrm{id},1}(\vec u_k)$, the probability of correctly identifying the state is
 
 $$
-P_{\mathrm{succ}} = \frac{1}{3}\sum_{\eta=1}^{3}2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\eta}\tilde{\mathcal E}_{\Psi,k}^{*})
-= \frac{1}{3}\sum_{\eta=1}^{3}2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi,\eta}\,\tfrac23\tilde{Ϛ}_{\Psi,\eta}\right)
-= \frac{1}{3}\sum_{\eta=1}^{3}\frac{2}{3} = \frac{2}{3},
+P_{\mathrm{succ}} = \frac{1}{3}\sum_{k\in\{x,y,z\}}2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,k}\tilde{\mathcal E}_{\Psi,k}^{*})
+= \frac{1}{3}\sum_{k\in\{x,y,z\}}2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi,k}\,\tfrac23\tilde{Ϛ}_{\Psi,k}\right)
+= \frac{1}{3}\sum_{k\in\{x,y,z\}}\frac{2}{3} = \frac{2}{3},
 $$
 
-since $\tilde{Ϛ}_{\Psi,\eta}^2 = \tilde{Ϛ}_{\Psi,\eta}$ and $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\eta}) = 1$. A projective measurement of a qubit has only two outcomes and cannot separate three symmetric states as well; the trine POVM is the standard example of a genuinely non-projective measurement, and it is expressed here purely in terms of the idempotents and the plain form of the algebra.
+since $\tilde{Ϛ}_{\Psi,k}^2 = \tilde{Ϛ}_{\Psi,k}$ and $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,k}) = 1$. A projective measurement of a qubit has only two outcomes and cannot separate three symmetric states as well; the trine POVM is the standard example of a genuinely non-projective measurement, and it is expressed here purely in terms of the idempotents and the plain form of the algebra.
 
 ### Unambiguous discrimination
 
@@ -290,7 +290,7 @@ and the cone is self-dual with respect to the Hermitian form, $2\langle\tilde H_
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states and effects) |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\eta^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $C_+ = \{h_t\,e_t+i\vec h_\Psi: h_t\ge\lvert\vec h_\Psi\rvert\}$ | Positive cone (future light cone of $\langle\cdot\rangle_{\natural}$) |
@@ -306,7 +306,7 @@ and the cone is self-dual with respect to the Hermitian form, $2\langle\tilde H_
 | $\tilde{\mathcal E}_{\Psi,y}=\tilde Q_{\mathrm{p},y}^{*}\tilde H_{\Psi,\mathrm{pos},y}^{2}\tilde Q_{\mathrm{p},y}$ | Effect as the backaction-conjugated squared strength |
 | $\tilde{Ϛ}_{\Psi,y} = \tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}/p_y$ | Post-measurement state |
 | $\tilde{\mathcal E}_{\Psi,y} = V^\dagger\tilde{F}_yV$ | Naimark dilation |
-| $\tilde{\mathcal E}_{\Psi,k} = \tfrac23\tilde\Pi_{\mathrm{id},1}(\vec u_\eta)$ | Trine POVM |
+| $\tilde{\mathcal E}_{\Psi,k} = \tfrac23\tilde\Pi_{\mathrm{id},1}(\vec u_k)$ | Trine POVM |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading

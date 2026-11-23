@@ -221,7 +221,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\mathbb{B}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables, Hamiltonians) |
 | $\mathbb{H}_\mathbb{B}$ | Quaternion subspace (home of the real rotation rotors) |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
 | $\gamma$ | Gyromagnetic ratio |

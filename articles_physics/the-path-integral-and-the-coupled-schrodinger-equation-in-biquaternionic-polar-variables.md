@@ -9,7 +9,7 @@ The finding is one sentence long: the connection shifts the two rates of the cha
 $$
 \kappa_t=\dot\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}\omicron_{\mathrm{pot}},
 \qquad
-\kappa_\eta=\partial_\eta\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_\eta,
+\kappa_k=\partial_k\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_k,
 $$
 
 the coupled exponent is the free exponent with $\dot\theta_{\mathrm{pha}}\to\kappa_t$ and $\vec\nabla_\Phi\theta_{\mathrm{pha}}\to\vec\kappa$, and the potential $h_t$ untouched. That is the whole of the coupling in the chart, and it is the chart's form of the element companion's two shifts.
@@ -24,7 +24,7 @@ Three consequences follow, and the first is the article's structural result.
 
 The article does not produce a second integral, does not evaluate the coupled kernel beyond the constant background, does not decide the Landau spectrum, and does not treat a non-central connection. It reads one integral in another coordinate system and says what the coordinate system shows.
 
-Conventions. The chart, the collapse on a central field, the density $n=\varrho^{2}$ and the measure are the free polar companion's. The connection is $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ with $D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}}$ and $D_\eta=\partial_\eta+\frac{2\pi iϙ}{h}A_\eta$. The mechanical momentum is $\vec\pi=-i \frac{h}{2\pi}\vec\nabla_\Phi-q\vec A$ and the potential energy is $-ϙ\omicron_{\mathrm{pot}}$.
+Conventions. The chart, the collapse on a central field, the density $n=\varrho^{2}$ and the measure are the free polar companion's. The connection is $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ with $D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}}$ and $D_k=\partial_k+\frac{2\pi iϙ}{h}A_k$. The mechanical momentum is $\vec\pi=-i \frac{h}{2\pi}\vec\nabla_\Phi-q\vec A$ and the potential energy is $-ϙ\omicron_{\mathrm{pot}}$.
 
 ## The Exponent, and Where the Connection Sits
 
@@ -33,7 +33,7 @@ One substitution and two identities. Putting $\tilde\Xi=\varrho\,e^{i\theta_{\ma
 $$
 \mathrm{Sc}\bigl(i \frac{h}{2\pi}\,\tilde\Xi^{*}D_t\tilde\Xi\bigr)=-\frac{h}{2\pi}\,\varrho^{2}\kappa_t,
 \qquad
-\mathrm{Sc}\bigl((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\bigr)=(\partial_\eta \varrho)^{2}+\varrho^{2}\kappa_\eta^{2},
+\mathrm{Sc}\bigl((D_k\tilde\Xi)^{*}(D_k\tilde\Xi)\bigr)=(\partial_k \varrho)^{2}+\varrho^{2}\kappa_k^{2},
 $$
 
 gives the chart's exponent

@@ -253,12 +253,12 @@ The biquaternion content of the field operator is therefore confined to its valu
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the field's value space |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
-| $\tilde\nabla_\Phi=-i\,e_t\partial/\partial r'_t+\sum_\eta\vec e_\eta\,\partial/\partial r_\eta$, $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ | The material gradient and the d'Alembertian |
+| $\tilde\nabla_\Phi=-i\,e_t\partial/\partial r'_t+\sum_{k\in\{x,y,z\}}\vec e_k\,\partial/\partial r_k$, $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ | The material gradient and the d'Alembertian |
 | $\tilde{Ξ}_{\mathrm{fop}}(\tilde R_\Phi)=\xi_{\mathrm{fop}}(r_x)e_t$ | Quantized scalar field (central-valued) |
 | $\xi_{\mathrm{fop}}^{(+)},\xi_{\mathrm{fop}}^{(-)}$ | Annihilation (positive-frequency) and creation parts |
 | $a_{\mathrm{fop},\vec p},b_{\mathrm{fop},\vec p}$ | Particle and antiparticle annihilation operators |

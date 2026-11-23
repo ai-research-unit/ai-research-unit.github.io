@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The coupled action's fixed-frequency form is the coupled symbol, and its reality is a term-by-term fact. *The Lagrangian and the Coupled Schrödinger Equation* writes the action for $i \frac{h}{2\pi} D_t\tilde\Xi=\frac{1}{2m}\sum(-i \frac{h}{2\pi} D_\eta)^{2}\tilde\Xi$. Take a mode of one frequency and one wave vector, and the action's density becomes the symbol of *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form*. The identity is the same identity as in the free case, with two shifted arguments.
+The coupled action's fixed-frequency form is the coupled symbol, and its reality is a term-by-term fact. *The Lagrangian and the Coupled Schrödinger Equation* writes the action for $i \frac{h}{2\pi} D_t\tilde\Xi=\frac{1}{2m}\sum(-i \frac{h}{2\pi} D_k)^{2}\tilde\Xi$. Take a mode of one frequency and one wave vector, and the action's density becomes the symbol of *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form*. The identity is the same identity as in the free case, with two shifted arguments.
 
 The kinetic term is real for every anti-Hermitian root, the gradient term is a sum of moduli, and the potential term is real because $\omicron_{\mathrm{pot}}$ is. **No cancellation is used**, so the coupling cannot make a real action complex and cannot make a complex action real.
 
@@ -20,10 +20,10 @@ The earlier companions report a sign for the frequency shift that a careless sub
 
 The coupled action, its variation, its currents and the sign of $ϙ$ are those of *The Lagrangian and the Coupled Schrödinger Equation*. The symbol and its two settings are those of *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form*.
 
-With $D_t=\partial_{t'}-\frac{2\pi iϙ\omicron_{\mathrm{pot}}}{h}$ and $D_\eta=\partial_\eta+\frac{2\pi iϙ A_\eta}{h}$,
+With $D_t=\partial_{t'}-\frac{2\pi iϙ\omicron_{\mathrm{pot}}}{h}$ and $D_k=\partial_k+\frac{2\pi iϙ A_k}{h}$,
 
 $$
-S=\int\mathrm{d}t'\;\mathrm{Sc}\left[\frac{i h}{4\pi}\big(\tilde\Xi^{*}D_t\tilde\Xi-(D_t\tilde\Xi)^{*}\tilde\Xi\big)-\frac{1}{2m}\sum_\eta(D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\right],
+S=\int\mathrm{d}t'\;\mathrm{Sc}\left[\frac{i h}{4\pi}\big(\tilde\Xi^{*}D_t\tilde\Xi-(D_t\tilde\Xi)^{*}\tilde\Xi\big)-\frac{1}{2m}\sum_{k\in\{x,y,z\}}(D_k\tilde\Xi)^{*}(D_k\tilde\Xi)\right],
 $$
 
 an integral over time of a density that already contains the spatial derivatives. The action is one-dimensional and the equation is not, and that asymmetry is the parent's.
@@ -51,10 +51,10 @@ $$
 
 because the spatial derivatives vanish on a constant $\tilde X$ and the covariant time derivative becomes a number. The kernel is the element-form symbol of the companion, with $\sigma_{\mathrm{gco}}(\omega)=hf_{\mathrm{frq}}\,e_t-\tilde H^{\mathrm{gco}}_\Psi$ and $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\omicron_{\mathrm{pot}})e_t+i(\vec h_\Psi-q\vec A)$.
 
-With $\tilde\Xi=e^{-i\omega t'+2\pi i\vec\nu_\Phi\cdot\vec r}\tilde X_0$, the covariant spatial derivative becomes the number $ik_\eta+\frac{2\pi iϙ A_\eta}{h}$, so
+With $\tilde\Xi=e^{-i\omega t'+2\pi i\vec\nu_\Phi\cdot\vec r}\tilde X_0$, the covariant spatial derivative becomes the number $i\nu_{\Phi,k}+\frac{2\pi iϙ A_k}{h}$, so
 
 $$
-(D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)=\Big(k_\eta+\frac{ϙ A_\eta}{h}\Big)^{2}\mathrm{Sc}\big(\tilde X_0^{*}\tilde X_0\big),
+(D_k\tilde\Xi)^{*}(D_k\tilde\Xi)=\Big(\nu_{\Phi,k}+\frac{ϙ A_k}{h}\Big)^{2}\mathrm{Sc}\big(\tilde X_0^{*}\tilde X_0\big),
 $$
 
 and the density is $\sigma_{\mathrm{gco}}(\omega,\vec\nu_{\Phi})$ times $\mathrm{Sc}(\tilde X_0^{*}\tilde X_0)$, with $\sigma_{\mathrm{gco}}$ the scalar of the companion. The form's kernel is the symbol and the form's value is the symbol times the mode's norm.
@@ -71,7 +71,7 @@ The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the three terms below are its 
 
 The antisymmetrised covariant kinetic density is real exactly when the root is anti-Hermitian, by the free article's computation, and the covariant derivative's connection part is central so it does not change the type. The coupling adds a real number to a real quantity.
 
-$\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)=\sum_{\imath}\lvert(D_\eta\tilde\Xi)_{\imath}\rvert^{2}$, a sum of four moduli, which is real and non-negative. The term is a norm and not a form, and its positivity is what makes the kinetic energy of the field positive for every configuration.
+$\mathrm{Sc}\big((D_k\tilde\Xi)^{*}(D_k\tilde\Xi)\big)=\sum_{\imath}\lvert(D_k\tilde\Xi)_{\imath}\rvert^{2}$, a sum of four moduli, which is real and non-negative. The term is a norm and not a form, and its positivity is what makes the kinetic energy of the field positive for every configuration.
 
 $\omicron_{\mathrm{pot}}$ is real, so $ϙ\omicron_{\mathrm{pot}}\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ is real and its sign is the sign of $ϙ\omicron_{\mathrm{pot}}$. The term is the only one whose sign is not fixed, and that is the standard statement that a potential can lower the energy without bound.
 
@@ -79,7 +79,7 @@ Each of the three terms is real on its own, so the sum is real and no cancellati
 
 What the term-by-term structure forbids. It forbids a complex action from a real connection and a Hermitian Hamiltonian. **A complex action would need a non-Hermitian coefficient or a complex $ϙ$**, and the article's licence excludes both.
 
-$\lvert D_\eta\tilde\Xi\rvert$ is unchanged when $\tilde\Xi$ is multiplied by an invertible element, so the gauge transformation cannot change the gradient term. That invariance is the reason the action's gauge covariance is exact and not up to a total derivative, and the parent states it once.
+$\lvert D_k\tilde\Xi\rvert$ is unchanged when $\tilde\Xi$ is multiplied by an invertible element, so the gauge transformation cannot change the gradient term. That invariance is the reason the action's gauge covariance is exact and not up to a total derivative, and the parent states it once.
 
 The potential is real by the licence, $\varrho\omicron_{\mathrm{pot}}$ with $\omicron_{\mathrm{pot}}$ real, so no sector is excluded. The exclusion needs a potential that is a free element, and that is the scalar family's case.
 
@@ -129,7 +129,7 @@ $\frac{h}{2\pi}\neq0$, so the Legendre map is invertible and the variational pro
 
 The slope does not see $\vec\pi$, so the mechanical momentum is not a Legendre conjugate of anything in this article. It is a Noether momentum, the parent's, and the two notions coincide only in a second-order theory.
 
-$\partial^{2}\sigma_{\mathrm{gco}}/\partial\omega\partial k_\eta=0$, so the frequency and the wave vector are separated in the symbol. The separation is the statement that the symbol is a sum of a frequency term and a wave-vector term, and it is the constant-coefficient structure read on the second derivative.
+$\partial^{2}\sigma_{\mathrm{gco}}/\partial\omega\partial \nu_{\Phi,k}=0$, so the frequency and the wave vector are separated in the symbol. The separation is the statement that the symbol is a sum of a frequency term and a wave-vector term, and it is the constant-coefficient structure read on the second derivative.
 
 A nonzero mixed derivative would mean that the frequency's conjugate depends on the wave vector, which is what a dispersion with a velocity-dependent mass would look like. The article's class has none, and the flatness of the second derivative is the class's mark.
 
@@ -230,8 +230,8 @@ The symbol is gauge invariant in the invariant coordinates: the four shifts canc
 | $\omega\mapsto\omega-\frac{2\pi ϙ}{h}\partial_{t'}\Gamma$, $2\pi\vec\nu_{\Phi}\mapsto2\pi\vec\nu_{\Phi}+\frac{ϙ}{h}\vec\nabla_\Phi\Gamma$ | The mode's gauge shifts; they cancel in the symbol |
 | $E=-\sigma_{\mathrm{gco}}(0,2\pi\vec\nu_{\Phi})$ | The energy as minus the symbol at zero frequency |
 | $\partial\sigma_{\mathrm{gco}}/\partial\omega=\frac{h}{2\pi}$ | The Legendre slope; unchanged by the coupling |
-| $\partial^{2}\sigma_{\mathrm{gco}}/\partial\omega\partial k_\eta=0$ | The vanishing mixed derivative; the class's mark |
-| $\sum_{\imath}\lvert(D_\eta\tilde\Xi)_{\imath}\rvert^{2}$ | The gradient term; real and non-negative |
+| $\partial^{2}\sigma_{\mathrm{gco}}/\partial\omega\partial \nu_{\Phi,k}=0$ | The vanishing mixed derivative; the class's mark |
+| $\sum_{\imath}\lvert(D_k\tilde\Xi)_{\imath}\rvert^{2}$ | The gradient term; real and non-negative |
 
 ## Further Reading
 

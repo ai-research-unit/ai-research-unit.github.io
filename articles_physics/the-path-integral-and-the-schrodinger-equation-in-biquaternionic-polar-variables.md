@@ -14,7 +14,7 @@ Conventions. The chart is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U
 
 ## The Exponent in the Chart
 
-The action is one identity away from the chart's form. Substituting $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}e_t$ into the element action and using $\mathrm{Sc}(i \frac{h}{2\pi}\tilde\Xi^{*}\dot{\tilde\Xi})=-\frac{h}{2\pi} \varrho^{2}\dot\theta_{\mathrm{pha}}$ and $\mathrm{Sc}((\partial_\eta\tilde\Xi)^{*}\partial_\eta\tilde\Xi)=(\partial_\eta \varrho)^{2}+\varrho^{2}(\partial_\eta\theta_{\mathrm{pha}})^{2}$ gives
+The action is one identity away from the chart's form. Substituting $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}e_t$ into the element action and using $\mathrm{Sc}(i \frac{h}{2\pi}\tilde\Xi^{*}\dot{\tilde\Xi})=-\frac{h}{2\pi} \varrho^{2}\dot\theta_{\mathrm{pha}}$ and $\mathrm{Sc}((\partial_k\tilde\Xi)^{*}\partial_k\tilde\Xi)=(\partial_k \varrho)^{2}+\varrho^{2}(\partial_k\theta_{\mathrm{pha}})^{2}$ gives
 
 $$
 \boxed{\;S=\int dt'\,d^{3}x\;\Bigl[-\frac{h}{2\pi}\,\varrho^{2}\,\dot\theta_{\mathrm{pha}}-\frac{hc}{8\pi^{2}\nu_m}\Bigl((\vec\nabla_\Phi \varrho)^{2}+\varrho^{2}(\vec\nabla_\Phi\theta_{\mathrm{pha}})^{2}\Bigr)-V\,\varrho^{2}\Bigr],\;}

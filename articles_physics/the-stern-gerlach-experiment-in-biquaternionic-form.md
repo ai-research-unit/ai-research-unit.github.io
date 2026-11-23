@@ -14,7 +14,7 @@ The findings are stated here in advance, so that the reader can hold them agains
 4. **The measurement destroys the transverse coherence.** The Stern–Gerlach apparatus entangles the spin with the centre-of-mass coordinate; tracing the position out leaves the spin state with its off-diagonal (transverse) Bloch components erased, $\vec s_{\Psi} = (0,0,r_3)$. The coherence that survives is exactly the component along the field, and the lost components are the ones the apparatus cannot read.
 5. **A rotated apparatus gives the $\cos^2(\theta/2)$ law**, and the rotation that carries one analyser direction into another is a rotor in the real-quaternion subspace $\mathbb{B}_{H}$ acting by conjugation.
 
-The article uses the read-list notation throughout. Throughout, the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\eta^2 = -e_t$, the scalar imaginary is $i$, the Hermitian and anti-Hermitian subspaces are $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, the observables are $\tilde H_\Psi = h_t e_t + i\vec h_\Psi \in \mathbb{B}_{\Psi}$, the pure states are the idempotents $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ for a unit pure real quaternion $\vec u$, and the Born weight is $2\langle\tilde\Pi_{\mathrm{id}},\tilde H_\Psi\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$, with $2\,\mathrm{Sc}(e_t) = 2$.
+The article uses the read-list notation throughout. Throughout, the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_k^2 = -e_t$, the scalar imaginary is $i$, the Hermitian and anti-Hermitian subspaces are $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, the observables are $\tilde H_\Psi = h_t e_t + i\vec h_\Psi \in \mathbb{B}_{\Psi}$, the pure states are the idempotents $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ for a unit pure real quaternion $\vec u$, and the Born weight is $2\langle\tilde\Pi_{\mathrm{id}},\tilde H_\Psi\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$, with $2\,\mathrm{Sc}(e_t) = 2$.
 
 The companion articles supply the pieces:
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin operators, the idempotents and the Born rule.
@@ -78,10 +78,10 @@ Two remarks on the classical limit clarify what is and is not quantum about the 
 In the biquaternion framework the spin operators are the Hermitian elements
 
 $$
-\tilde{S}_{\Psi,\eta} =\frac{h}{4\pi}\,i \vec e_\eta \in  \mathbb{B}_{\Psi}, \qquad \eta = 1, 2, 3,
+\tilde{S}_{\Psi,k} =\frac{h}{4\pi}\,i \vec e_k \in  \mathbb{B}_{\Psi}, \qquad k=1,2,3,
 $$
 
-which under the isomorphism $e_t \mapsto I$, $\vec e_j \mapsto -i_{\mathrm{mat}}\sigma_j$ (where $i_{\mathrm{mat}}$ is the matrix imaginary, the image of the scalar imaginary $i$) map to $\frac{h}{4\pi}\sigma_\eta$. The Hamiltonian of the atom in the field $\vec B = B(z)\vec u_z$ is the Hermitian element
+which under the isomorphism $e_t \mapsto I$, $\vec e_j \mapsto -i_{\mathrm{mat}}\sigma_j$ (where $i_{\mathrm{mat}}$ is the matrix imaginary, the image of the scalar imaginary $i$) map to $\frac{h}{4\pi}\sigma_k$. The Hamiltonian of the atom in the field $\vec B = B(z)\vec u_z$ is the Hermitian element
 
 $$
 \tilde H_\Psi = -\gamma B(z)\,\tilde{S}_{\Psi,3} = -\frac{h\,\gamma\,B\,z}{4\pi}\,i \vec e_z \in  \mathbb{B}_{\Psi} .
@@ -209,7 +209,7 @@ $$
 \vec u = \sin\theta\, \vec e_x + \cos\theta\, \vec e_z .
 $$
 
-The observable measured by the rotated analyser is $\tilde{S}_{\Psi}(\vec u) = \sum_\eta  \vec u_\eta\tilde{S}_{\Psi,\eta} =\frac{h}{4\pi} i\vec u$, whose eigenstates are the idempotents $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$:
+The observable measured by the rotated analyser is $\tilde{S}_{\Psi}(\vec u) = \sum_{k\in\{x,y,z\}}  \vec u_k\tilde{S}_{\Psi,k} =\frac{h}{4\pi} i\vec u$, whose eigenstates are the idempotents $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$:
 
 $$
 \tilde{S}_{\Psi}(\vec u)\,\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \pm\frac{h}{4\pi}\,\tilde\Pi_{\mathrm{id},1,2}(\vec u).
@@ -316,12 +316,12 @@ A rotated analyser measures $\tilde{S}_{\Psi}(\vec u) =\frac{h}{4\pi}i\vec u$ fo
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, central, $i^2 = -1$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace: observables, states, Hamiltonians |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) subspace: the centre-of-mass coordinate |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace; home of the rotation rotors |
-| $\tilde{S}_{\Psi,\eta} =\frac{h}{4\pi}i\vec e_\eta$ | Spin observable along $\vec e_\eta$ |
+| $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_k$ | Spin observable along $\vec e_k$ |
 | $\tilde H_\Psi = -\gamma B(z)\tilde{S}_{\Psi,3}$ | Magnetic Hamiltonian in the field $\vec B = B\vec u_z$ |
 | $\tilde{F}_3 = \gamma (dB/dz)\tilde{S}_{\Psi,3}$ | Stern–Gerlach force operator |
 | $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pure-state idempotent |

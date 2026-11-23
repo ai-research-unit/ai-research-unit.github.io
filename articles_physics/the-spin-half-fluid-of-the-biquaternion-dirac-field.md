@@ -128,17 +128,17 @@ The two functions have a classical name and the medium has a classical type. Two
 
 ### The closure test, written out
 
-The Dirac velocity is closed only in the rigid case. Take the component spelling of the element, $v_{\Phi,t}=ic\gamma$ and $v_{\Phi,\eta}=\gamma v_\eta$, with $\gamma=\cosh\theta_{\mathrm{rpd}}$ and $\vec v=c\tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$. Closure requires $\partial_\eta v_{\Phi,t}=\partial_t v_{\Phi,\eta}$, that is,
+The Dirac velocity is closed only in the rigid case. Take the component spelling of the element, $v_{\Phi,t}=ic\gamma$ and $v_{\Phi,k}=\gamma v_k$, with $\gamma=\cosh\theta_{\mathrm{rpd}}$ and $\vec v=c\tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$. Closure requires $\partial_k v_{\Phi,t}=\partial_t v_{\Phi,k}$, that is,
 
 $$
-ic\,\frac{\partial\gamma}{\partial r_\eta}
-=\frac{\partial}{\partial r'_t}\bigl(\gamma v_\eta\bigr),
+ic\,\frac{\partial\gamma}{\partial r_k}
+=\frac{\partial}{\partial r'_t}\bigl(\gamma v_k\bigr),
 \qquad
 \text{and}\qquad
-\frac{\partial}{\partial r_j}\bigl(\gamma v_\eta\bigr)=\frac{\partial}{\partial r_\eta}\bigl(\gamma v_j\bigr).
+\frac{\partial}{\partial r_j}\bigl(\gamma v_k\bigr)=\frac{\partial}{\partial r_k}\bigl(\gamma v_j\bigr).
 $$
 
-The first pair is the statement that the rapidity does not vary in space unless it also varies in time in a compensating way; for a static flow it forces $\partial_\eta\gamma=0$. The second triple is the ordinary statement that the spatial current density $\gamma\vec v$ is curl free. Neither is implied by the Dirac equation. So the general solution has a velocity that is not closed, and the two conditions are the two functions of the counting above.
+The first pair is the statement that the rapidity does not vary in space unless it also varies in time in a compensating way; for a static flow it forces $\partial_k\gamma=0$. The second triple is the ordinary statement that the spatial current density $\gamma\vec v$ is curl free. Neither is implied by the Dirac equation. So the general solution has a velocity that is not closed, and the two conditions are the two functions of the counting above.
 
 A rigid flow is closed. If $\tilde U$ is constant then $\tilde V_\Phi$ is constant, and a constant one-form is exact: it is the gradient of a linear function. So the frozen-frame sector sits inside the gradient sector, and the inclusion is strict in the other direction only for the scalar field, which has no frame at all.
 
@@ -366,7 +366,7 @@ The scalar case is the frozen-frame sector: with no frame element there is nothi
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, with $\vec e_\eta^{2}=-e_t$ |
+| $e_t,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, with $\vec e_k^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\delta_{\imath\jmath}$ | The one metric, all coefficients $+1$; indices stay low |

@@ -302,7 +302,7 @@ The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is gaug
 | $\varrho>0$ | Scale; $\rho_{\mathrm{num}}=\varrho^{2}$ |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The phase coordinate; moves under a gauge transformation |
 | $\varepsilon$ | The branch; untouched by the connection |
-| $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta$ | The connection; $a'_t$ and $\vec A$ real, so $\tilde A_\Phi\in\mathbb{B}_\Phi$ |
+| $\tilde A_\Phi=i a'_t e_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k$ | The connection; $a'_t$ and $\vec A$ real, so $\tilde A_\Phi\in\mathbb{B}_\Phi$ |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | The covariant derivative; central per component |
 | $ϙ$ | The coupling |
 | $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | The action |

@@ -82,9 +82,9 @@ $$
 
 for every differentiable scalar $f$. The right-hand side is the derivative along the flow, $\mathrm{D}_{\mathrm{mat}}f$ with $\mathrm{D}_{\mathrm{mat}}=c\,\partial_{r'_t}+\vec v\cdot\nabla=\partial_{t'}+\vec v\cdot\nabla$.
 
-The temporal slot contributes $ic\cdot(-i\partial_{r'_t}f)=+c\partial_{r'_t}f$, because $(-i)(i)=+1$; the three spatial slots contribute $v_\eta\partial_\eta f$ each, and the sum is the convective term. No term is dropped and no sign is chosen: the $+1$ of the temporal slot and the $+1$ of each spatial slot are the same $+1$, the one of the pairing.
+The temporal slot contributes $ic\cdot(-i\partial_{r'_t}f)=+c\partial_{r'_t}f$, because $(-i)(i)=+1$; the three spatial slots contribute $v_k\partial_k f$ each, and the sum is the convective term. No term is dropped and no sign is chosen: the $+1$ of the temporal slot and the $+1$ of each spatial slot are the same $+1$, the one of the pairing.
 
-**The pairing is not the product, and the difference is the sign that a fluid cannot afford.** In the quaternion product the scalar part is $a_tb_t-\vec a\cdot\vec b$, because $\vec e_\eta^{2}=-e_t$, so the product of the flow with the gradient gives $c\partial_{r'_t}f-\vec v\cdot\nabla f$, the material derivative with the convective term reversed. The pairing gives the sum. A fluid's convective term is a sum and not a difference, so the fluid's natural bilinear in this algebra is $\langle\cdot,\cdot\rangle_{\natural}$, and the product is reserved for the object that will replace the fluid, in [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html).
+**The pairing is not the product, and the difference is the sign that a fluid cannot afford.** In the quaternion product the scalar part is $a_tb_t-\vec a\cdot\vec b$, because $\vec e_k^{2}=-e_t$, so the product of the flow with the gradient gives $c\partial_{r'_t}f-\vec v\cdot\nabla f$, the material derivative with the convective term reversed. The pairing gives the sum. A fluid's convective term is a sum and not a difference, so the fluid's natural bilinear in this algebra is $\langle\cdot,\cdot\rangle_{\natural}$, and the product is reserved for the object that will replace the fluid, in [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html).
 
 ## Continuity Is One Pairing
 
@@ -160,7 +160,7 @@ An ordinary fluid carries five real data at each point — a number density, a v
 
 In the algebra the flow is one element, $\tilde V_\Phi=i c\,e_t+\vec v$, with the speed as the unit of its four coefficients and the norm $-c^{2}/\gamma^{2}$. The relativistic normalisation multiplies the whole element by $\gamma$ and changes no equation written here.
 
-The material derivative is the pairing $\langle\tilde V_\Phi,\tilde\nabla_\Phi f\rangle_{\natural}=c\partial_{r'_t}f+\vec v\cdot\nabla f$. The product would reverse the sign of the convective term, because $\vec e_\eta^{2}=-e_t$, so the fluid's bilinear is the pairing and not the product.
+The material derivative is the pairing $\langle\tilde V_\Phi,\tilde\nabla_\Phi f\rangle_{\natural}=c\partial_{r'_t}f+\vec v\cdot\nabla f$. The product would reverse the sign of the convective term, because $\vec e_k^{2}=-e_t$, so the fluid's bilinear is the pairing and not the product.
 
 Continuity is the vanishing of one pairing, $\langle\tilde\nabla_\Phi,\tilde J_\Phi\rangle_{\natural}=0$ with $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$. Euler is one element equation whose scalar slot reads $0=0$ and whose three vector slots are the three components of the acceleration law.
 

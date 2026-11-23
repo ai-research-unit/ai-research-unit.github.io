@@ -22,7 +22,7 @@ The second objection is that the two lists of dimensions are a bookkeeping muddl
 
 The third objection is that a match between three algebraic labels and the observed spins is a prediction. It is not, and the mathematics does not make it. The algebra supplies the set $\{0,\tfrac12,1\}$; it does not say which particle carries which spin, and it does not say why the list is realised. The entry states the match, states its boundary, and does not lean on it.
 
-The letters. The algebra is $\mathbb{B}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_k^{2}=-e_t$, the central imaginary is $i$ with $i^{2}=-e_t$, and an element is $\tilde Q=Q_te_t+\vec Q$ with $Q_{\imath}$ complex. The star is ${}^{*}$, the natural conjugation is ${}^{\natural}$, and the norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$. The vector part is $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$; the centre is $\mathbb{B}_C=\mathbb{C}e_t$; the sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$. At a unit real axis $\vec u$ the idempotents are $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec u)$, the plane is $\Sigma=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$, and the ideals are $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$. The generator is $A=\tfrac12\vec u$ and the rotor is $\tilde u=\cos\tfrac\theta2\,e_t+\sin\tfrac\theta2\,\vec u$. A representation is $\rho_{\mathrm{rep}}$, a weight is $\lambda$, the spin is $s$, and the quadratic element is $C=\sum_k\tilde S_k^{2}$ with $\tilde S_k=\tfrac12 i\vec e_k$.
+The letters. The algebra is $\mathbb{B}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_k^{2}=-e_t$, the central imaginary is $i$ with $i^{2}=-e_t$, and an element is $\tilde Q=Q_te_t+\vec Q$ with $Q_{\imath}$ complex. The star is ${}^{*}$, the natural conjugation is ${}^{\natural}$, and the norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$. The vector part is $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$; the centre is $\mathbb{B}_C=\mathbb{C}e_t$; the sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$. At a unit real axis $\vec u$ the idempotents are $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec u)$, the plane is $\Sigma=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$, and the ideals are $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$. The generator is $A=\tfrac12\vec u$ and the rotor is $\tilde u=\cos\tfrac\theta2\,e_t+\sin\tfrac\theta2\,\vec u$. A representation is $\rho_{\mathrm{rep}}$, a weight is $\lambda$, the spin is $s$, and the quadratic element is $C=\sum_{k\in\{x,y,z\}}\tilde S_k^{2}$ with $\tilde S_k=\tfrac12 i\vec e_k$.
 
 Boundaries. The definition, the classification, the criterion, the quadratic element and the four closure rules are the mathematics' *From the Spin to the Carriers and the Closures*; $SU(2)$ and the two derivations of the spins are *The Spin Group via $4\times4$ Real Matrices*, *From the Spin Group to the Spin of a Single Rotor* and *The Clebsch–Gordan Decomposition of the Biquaternion Algebra*; the module theory behind the count is *The Category of Modules in the Biquaternion Algebra*; the Peirce basis and the corners are *The Peirce Decomposition of the Biquaternion Algebra*; the idempotents and their conjugacy are *The Square Roots of One and the Idempotents of the Biquaternion Algebra*; the polar form of the norm that carries the completeness proof is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the averaging argument for compact groups is *Representations of Groups*. The three carriers are read one at a time in the three entries that follow this one, *Introduction to the Spin-Zero Centre Subspace*, *Introduction to the Spin-Half Bispinors Spaces* and *Introduction to the Spin-One Anti-Hermitian Subspace*. The reading of the carrier by a field equation is *The Klein–Gordon Equation in Biquaternionic Form*, *The Dirac Equation in Biquaternionic Form* and *The Proca Equation: Massive Spin 1 in Biquaternionic Form*. No dynamics, no action principle, no mass value and no quantum postulate appear below.
 
@@ -56,7 +56,7 @@ The criterion. A weight string that is simple and spaced by one is the string of
 
 The full turn. The operator of a full rotation is $+1$ on the line and on the vector part and $-1$ on the plane, that is $(-1)^{2s}$. On the plane the $-1$ is visible in the plane itself: a full rotation of space is a half turn of the plane.
 
-The quadratic element. $C=\sum_k\tilde S_k^{2}=\tfrac34e_t$, and its values in the three modules are $0$, $\tfrac34$ and $2$, which are $s(s+1)$ at $s=0,\tfrac12,1$.
+The quadratic element. $C=\sum_{k\in\{x,y,z\}}\tilde S_k^{2}=\tfrac34e_t$, and its values in the three modules are $0$, $\tfrac34$ and $2$, which are $s(s+1)$ at $s=0,\tfrac12,1$.
 
 The completeness. Three types and no fourth, from the simplicity of $M_2(\mathbb{C})$ for the left action and from the compactness of the group for the conjugation. The two halves of the proof are different arguments and neither is a count of dimensions.
 
@@ -127,7 +127,7 @@ Verified on the layer: the three squares are $-\mathrm{I}_4$ to $0$, and the bra
 **The slot: one rotor, and the label $\tfrac12$ follows from a sum of squares.** The generators of the action are the halved ones, $A_k=\tfrac12\vec e_k$, and with them the bracket is standard, $[A_x,A_y]=A_z$. The sum of their squares is a scalar,
 
 $$
-\sum_kL_k^2=-3\,\mathrm{I}_4,\qquad \sum_kA_k^2=-\tfrac34\,\mathrm{I}_4,
+\sum_{k\in\{x,y,z\}}L_k^2=-3\,\mathrm{I}_4,\qquad \sum_{k\in\{x,y,z\}}A_k^2=-\tfrac34\,\mathrm{I}_4,
 $$
 
 verified to $0$. On a carrier of spin $s$ the same sum is $-s(s+1)$, so $s(s+1)=\tfrac34$ and the spin is $\tfrac12$. The number is read from one sum of squares on one real space of dimension four.
@@ -148,7 +148,7 @@ The check by the total Casimir. On the two-sided carrier, of real dimension four
 
 The three spins. One rotor gives $\tfrac12$, a pair gives $0$ and $1$, and the three are the whole list. The next question is which subspace of $\mathbb{B}$ of real dimension $2s+1$ carries each of them, and it is answered in *The Carriers*, after the criterion.
 
-The quadratic element. The same three numbers are values of one element of the algebra. With $\tilde S_k=\tfrac i2\vec e_k$ the quadratic element is $C=\sum_k\tilde S_k^{2}=\tfrac34e_t$, verified, and its values on the three carriers are $0$, $\tfrac34$ and $2$, which are $s(s+1)$ at $s=0,\tfrac12,1$. The element is central and the values are those of the composed operator, so the algebra element and the operator are two objects; the mathematics says so in one remark, and the entry does not need more.
+The quadratic element. The same three numbers are values of one element of the algebra. With $\tilde S_k=\tfrac i2\vec e_k$ the quadratic element is $C=\sum_{k\in\{x,y,z\}}\tilde S_k^{2}=\tfrac34e_t$, verified, and its values on the three carriers are $0$, $\tfrac34$ and $2$, which are $s(s+1)$ at $s=0,\tfrac12,1$. The element is central and the values are those of the composed operator, so the algebra element and the operator are two objects; the mathematics says so in one remark, and the entry does not need more.
 
 ## The Criterion
 
@@ -412,7 +412,7 @@ The three closures are not a decomposition. The carriers are one algebra read th
 | $A_k=\tfrac12\vec e_k$, $A_k'=\tfrac12R_{\vec e_k}$ | the halved generators of the two sides |
 | $A(\vec u)=\tfrac12\vec u$ | the generator along the axis |
 | $\tilde S_k=\tfrac12 i\vec e_k$ | the Hermitian generator of the coordinate axis |
-| $C=\sum_k\tilde S_k^{2}=\tfrac34e_t$ | the quadratic element |
+| $C=\sum_{k\in\{x,y,z\}}\tilde S_k^{2}=\tfrac34e_t$ | the quadratic element |
 | $\rho_{\mathrm{rep}}$ | a representation of an action on a carrier |
 | $\lambda$, $s$ | a weight, and the spin, the largest weight |
 

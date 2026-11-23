@@ -169,13 +169,13 @@ with the velocity on the **left** and $\tilde{F}$ itself rather than $\tilde{F}^
 
 ## The Eigenframe
 
-The eigenspinor carries the rest frame of the particle, so its images of the rest-frame axes are the particle's own frame in the laboratory. With $\mathcal{E}_0 = ie_t$ and $\mathcal{E}_k = \vec e_\eta$ the basis of $\mathbb{B}_{\Phi}$,
+The eigenspinor carries the rest frame of the particle, so its images of the rest-frame axes are the particle's own frame in the laboratory. With $\mathcal{E}_0 = ie_t$ and $\mathcal{E}_k = \vec e_k$ the basis of $\mathbb{B}_{\Phi}$,
 
 $$
 \tilde{E}_{\Phi,(\imath)}(\tau) = \tilde U(\tau)\,\mathcal{E}_{\imath}\,\tilde U(\tau)^{*} \in \mathbb{B}_{\Phi} ,
 $$
 
-and the four-vector $\tilde{E}_{\Phi,(0)} = i\tilde U\tilde U^{*}$ is the four-velocity direction, $c\,\tilde{E}_{\Phi,(0)} = \tilde{V}_{\Phi}$. The three spatial images $\tilde{E}_{\Phi,(\eta)}$ are the boosted axes, orthonormal in the sense of the Minkowski form, and they rotate along the worldline with the same rate $\vec\Omega_{\mathrm{LT}}$. The eigenspinor is therefore a **tetrad** in which the time axis is the four-velocity: it is a frame field along the worldline, and the four-momentum is its time leg rescaled by $mc$.
+and the four-vector $\tilde{E}_{\Phi,(0)} = i\tilde U\tilde U^{*}$ is the four-velocity direction, $c\,\tilde{E}_{\Phi,(0)} = \tilde{V}_{\Phi}$. The three spatial images $\tilde{E}_{\Phi,(k)}$ are the boosted axes, orthonormal in the sense of the Minkowski form, and they rotate along the worldline with the same rate $\vec\Omega_{\mathrm{LT}}$. The eigenspinor is therefore a **tetrad** in which the time axis is the four-velocity: it is a frame field along the worldline, and the four-momentum is its time leg rescaled by $mc$.
 
 This is the interpretation that separates the eigenspinor from the ordinary Lorentz rotor. A fixed rotor gives one tetrad; the eigenspinor gives a tetrad at every event, tied to the orientation of the particle's rest frame, and the equation of motion is the statement that the tetrad turns at the rate $\vec\Omega_{\mathrm{LT}}$.
 

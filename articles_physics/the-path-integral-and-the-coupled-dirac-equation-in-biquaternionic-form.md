@@ -33,10 +33,10 @@ The same integral in the other coordinates is the polar companion. *The Path Int
 
 The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_{\imath}^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The material position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, with $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_t}^{2}+|\vec r|^{2}$. The mass parameter is $\nu_m=\frac{mc}{h}$. The worldline parameter is $\tau$ and the proper time $T$.
 
-The one-form of the connection. The potential is written $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ with real coefficients in the abelian case. Its pairing with the worldline tangent is the **real** pairing
+The one-form of the connection. The potential is written $\tilde A_\Phi=A_te_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k$ with real coefficients in the abelian case. Its pairing with the worldline tangent is the **real** pairing
 
 $$
-\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi:=A_t\,\mathrm{d}r'_t+\sum_\eta A_\eta\,\mathrm{d}r_\eta,
+\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi:=A_t\,\mathrm{d}r'_t+\sum_{k\in\{x,y,z\}} A_k\,\mathrm{d}r_k,
 $$
 
 and not the algebra product. The distinction is forced by the coordinates: the temporal slot of the position is $ir'_t$, and $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so a product would carry a factor of $i$ that no gauge transformation produces. The one-form is a real number at each point of the worldline.
@@ -79,12 +79,12 @@ with $\mathcal{F}$ the spin factor. The odd variables are integrated at fixed $x
 
 **The gauge term is central, and that is the whole of its algebraic behaviour.** $S_{\mathrm{gco}}$ is a real number for every path. Its exponential is therefore a central element of modulus one, and multiplying the weight by a central element cannot reorder the path-ordered spin factor, cannot rescale it, and cannot rotate it. The connection multiplies the weight of a history; it does not enter the history's algebra. That one sentence is the worldline form of the polar companion's type table, and every statement below is a consequence of it.
 
-The two lines of the pair see conjugate gauge terms. The $L$ line's operator is $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$, whose connection entry is $\tilde A_\Phi^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta$. The two kernels therefore carry
+The two lines of the pair see conjugate gauge terms. The $L$ line's operator is $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$, whose connection entry is $\tilde A_\Phi^{\natural}=A_te_t-\sum_{k\in\{x,y,z\}} A_k\vec e_k$. The two kernels therefore carry
 
 $$
-S_{\mathrm{gco}}^{R}[x]=-\!ϙ\!\int\bigl(A_t\,\mathrm{d}r'_t+\textstyle\sum_\eta A_\eta\,\mathrm{d}r_\eta\bigr),
+S_{\mathrm{gco}}^{R}[x]=-\!ϙ\!\int\bigl(A_t\,\mathrm{d}r'_t+\textstyle\sum_{k\in\{x,y,z\}} A_k\,\mathrm{d}r_k\bigr),
 \qquad
-S_{\mathrm{gco}}^{L}[x]=-\!ϙ\!\int\bigl(A_t\,\mathrm{d}r'_t-\textstyle\sum_\eta A_\eta\,\mathrm{d}r_\eta\bigr),
+S_{\mathrm{gco}}^{L}[x]=-\!ϙ\!\int\bigl(A_t\,\mathrm{d}r'_t-\textstyle\sum_{k\in\{x,y,z\}} A_k\,\mathrm{d}r_k\bigr),
 $$
 
 by the two definitions and nothing else. For a purely electric potential the two gauge terms are equal, and the two lines accumulate the same phase. For a purely magnetic one they are opposite, and the two lines accumulate conjugate phases. The asymmetry is the conjugate operator's and not a choice, and it is the sum-over-histories reading of the element article's sentence that the conjugate entry is neither the negative of the entry nor a decomposition of it.
@@ -143,7 +143,7 @@ $$
 
 for every constant potential, component by component, exactly. The result agrees with §*The One-Form and the Three Regimes*: a constant potential has zero field strength, its gauge term is a boundary term along every path, and the boundary term is this phase. The two routes to the statement are independent — one differentiates the operator, the other sums over paths — and they agree, which is the consistency the two articles owe each other.
 
-What the phase means. The exponent is $ϙ(A_t\Delta r'_t+\sum_\eta A_\eta\Delta r_\eta)\frac{2\pi}{h}$. Its temporal slot is the energy shift $E\mapsto E+ϙcA_t$ of the coupled equation, written as a phase over the elapsed coordinate time; its spatial slots are the momentum shift $\vec p\mapsto\vec p-q\vec A$, written as a phase over the displacement. The classical substitution of the element article is one phase in the sum, and the algebra states it with one sign because the scalar and vector potentials are the two slot types of one element.
+What the phase means. The exponent is $ϙ(A_t\Delta r'_t+\sum_{k\in\{x,y,z\}} A_k\Delta r_k)\frac{2\pi}{h}$. Its temporal slot is the energy shift $E\mapsto E+ϙcA_t$ of the coupled equation, written as a phase over the elapsed coordinate time; its spatial slots are the momentum shift $\vec p\mapsto\vec p-q\vec A$, written as a phase over the displacement. The classical substitution of the element article is one phase in the sum, and the algebra states it with one sign because the scalar and vector potentials are the two slot types of one element.
 
 Three consequences, and each is a statement about the amplitude. The modulus is unchanged, so a constant potential does not change the weight of any single history and leaves the probability of propagation at fixed endpoints alone. The pole structure in momentum space is translated and not deformed, so the mass shell is the translated hyperboloid of unchanged radius. And the spin transport is unchanged, because the phase is central and commutes with the spin factor's path ordering. **A constant potential is a change of variable on the space of histories and not a force**, and the sum over histories shows the change of variable in one line where the operator shows it in a covariance proof.
 
@@ -257,9 +257,9 @@ The curvature reaches the spin, and the semiclassical evaluation places it there
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | Covariant derivative, acting from the left, central per component in the abelian case |
 | $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi iϙ}{h}\tilde A_\Phi^{\natural}$ | Its quaternion conjugate, the $L$ line's operator |
 | $ϙ$ | Charge; the coupling constant of the prescription |
-| $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | Potential biquaternion, real coefficients in the abelian case |
-| $\tilde A_\Phi^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta$ | Its conjugate; equal for a purely electric potential, opposite for a purely magnetic one |
-| $\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi=A_t\mathrm{d}r'_t+\sum_\eta A_\eta\mathrm{d}r_\eta$ | The real one-form; the algebra product is not used |
+| $\tilde A_\Phi=A_te_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k$ | Potential biquaternion, real coefficients in the abelian case |
+| $\tilde A_\Phi^{\natural}=A_te_t-\sum_{k\in\{x,y,z\}} A_k\vec e_k$ | Its conjugate; equal for a purely electric potential, opposite for a purely magnetic one |
+| $\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi=A_t\mathrm{d}r'_t+\sum_{k\in\{x,y,z\}} A_k\mathrm{d}r_k$ | The real one-form; the algebra product is not used |
 | $S_{\mathrm{gco}}[x]=-ϙ\!\int\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$ | The gauge term of the worldline action; its sign follows the covariant derivative's |
 | $F_{\imath\jmath}=\partial A_{\jmath}/\partial R_{\imath}-\partial A_{\imath}/\partial R_{\jmath}$ | Field strength; the curvature, and the only object that reaches the spin factor |
 | $\Phi$ | Flux through the loop two histories enclose |

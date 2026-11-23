@@ -57,7 +57,7 @@ $$
 
 the left part sees $\tilde A_\Phi^{\natural}$ and the right part sees $\tilde A_\Phi$. For a purely electric potential the two entries are equal and the two parts are pushed the same way; for a purely magnetic one they are opposite and the two parts are pushed opposite ways. The asymmetry is not a choice: it is the conjugate operator's, and the conjugate operator is what the left part's kinetic term has.
 
-Reality. Each kinetic term is self-adjoint for the Hermitian pairing, and the argument is the parent's: the temporal slot of each covariant component is $-i\partial_{r'_t}+\frac{2\pi iϙ}{h}A_t$, which is a central imaginary operator and antisymmetric for $\mathrm{Sc}(\cdot^{*}\cdot)$, so the two signs cancel under integration by parts; each spatial slot is $\partial_\eta+\frac{2\pi iϙ}{h}A_\eta$, which is a real-derivative-plus-imaginary-multiplication and is self-adjoint for the same reason. The mass terms are Hermitian because they pair one part with the conjugate of the other. Hence the bracket's imaginary part is a total divergence, the real part carries the content, and the integral is real on fields of compact support.
+Reality. Each kinetic term is self-adjoint for the Hermitian pairing, and the argument is the parent's: the temporal slot of each covariant component is $-i\partial_{r'_t}+\frac{2\pi iϙ}{h}A_t$, which is a central imaginary operator and antisymmetric for $\mathrm{Sc}(\cdot^{*}\cdot)$, so the two signs cancel under integration by parts; each spatial slot is $\partial_k+\frac{2\pi iϙ}{h}A_k$, which is a real-derivative-plus-imaginary-multiplication and is self-adjoint for the same reason. The mass terms are Hermitian because they pair one part with the conjugate of the other. Hence the bracket's imaginary part is a total divergence, the real part carries the content, and the integral is real on fields of compact support.
 
 The connection's contribution to reality is nil, and that is not an accident. A central complex number multiplying the field multiplies the pairing by its modulus squared in each term, so the potential's contribution to the reality of the action cancels between the field and its conjugate. What the potential does to the action is not realness but *local invariance*, which is §*The Structural Consequence: Why the Coupling Is Forced*.
 
@@ -159,12 +159,12 @@ The Noether computation. Take $\tilde\Xi\mapsto e^{i\alpha(R)}\tilde\Xi$ with $\
 $$
 J^{t}=\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\Xi_R\Bigr],
 \qquad
-J_{\eta}=\mathrm{Re}\,\mathrm{Sc}\Bigl[i\Bigl(\tilde\Xi_R^{*}\vec e_\eta\tilde\Xi_R-\tilde\Xi_L^{*}\vec e_\eta\tilde\Xi_L\Bigr)\Bigr],
+J_k=\mathrm{Re}\,\mathrm{Sc}\Bigl[i\Bigl(\tilde\Xi_R^{*}\vec e_k\tilde\Xi_R-\tilde\Xi_L^{*}\vec e_k\tilde\Xi_L\Bigr)\Bigr],
 $$
 
 with $\sum_{\imath}\partial_{\imath} J_{\imath}=0$ on solutions. **The time component is a sum over the parts and the spatial component is a difference.** The difference is not an error and it is not a convention: the two parts carry conjugate spatial derivatives, and a current built from them inherits the relative sign.
 
-The three writings are one object. The display above, the polar reading $J_{t}=\rho\cosh\theta_{\mathrm{rpd}}$, $J_{\eta}=\rho\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,\eta}$, and the Gordon pairing
+The three writings are one object. The display above, the polar reading $J_{t}=\rho\cosh\theta_{\mathrm{rpd}}$, $J_k=\rho\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,k}$, and the Gordon pairing
 
 $$
 j_{\imath}=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_{\imath}\tilde\Xi\,\vec e_{\mathrm{spt}(\imath)}\bigr)\vec e_x\bigr),
@@ -184,7 +184,7 @@ $$
 
 the value-side product that *The Dirac Equation in Biquaternionic Form* builds. It is an element of $\mathbb{B}$, it is gauge invariant because the two phases cancel, its scalar part is the density with the density's sign, and its vector part is the current-like object the letter suggests. Every formal property except one is right.
 
-The one property that fails is conservation. Evaluate the divergence on an exact solution — a superposition of two plane waves, so that the cross terms do not vanish by symmetry — and $\partial_{r'_t}\tilde J_{\Phi,\mathrm{sp}}^{\,t}+\sum_\eta\partial_\eta\tilde J_{\Phi,\mathrm{sp}}^{\,\eta}$ is nonzero, at the same order as the current itself. Evaluate the same divergence for the display above on the same field and it vanishes to machine precision. The difference is not small and it is not a boundary effect.
+The one property that fails is conservation. Evaluate the divergence on an exact solution — a superposition of two plane waves, so that the cross terms do not vanish by symmetry — and $\partial_{r'_t}\tilde J_{\Phi,\mathrm{sp}}^{\,t}+\sum_{k\in\{x,y,z\}}\partial_k\tilde J_{\Phi,\mathrm{sp}}^{\,k}$ is nonzero, at the same order as the current itself. Evaluate the same divergence for the display above on the same field and it vanishes to machine precision. The difference is not small and it is not a boundary effect.
 
 Why it fails, in one sentence. The product $\tilde\Xi\tilde\Xi^{*}$ carries the two parts with the *same* sign, and the conserved current carries them with *opposite* signs, because the two parts carry conjugate spatial derivatives.
 
@@ -269,7 +269,7 @@ The constant setting is closed — a finite product of exponentials up to the ga
 | $\lambda=e^{\frac{2\pi iϙ\Gamma}{h}}$ | Local central phase; $\Gamma$ real |
 | $r_L,r_R$ | The two residuals; $r_L=r_R=0$ is the coupled pair |
 | $\mathcal{L}$ | The Lagrangian density: the integrand of $S$ |
-| $J^{t},J_\eta$ | Noether current of the local phase; sum over parts, difference over parts |
+| $J^{t},J_k$ | Noether current of the local phase; sum over parts, difference over parts |
 | $j_{\imath}$ | The same current as a pairing with two frame units |
 | $\tilde J_{\Phi,\mathrm{sp}}=i\tilde\Xi\tilde\Xi^{*}$ | The naive bilinear: gauge invariant, density sign, **not conserved** |
 | $T_{\imath\jmath}$ | Stress tensor; covariant gradient in the current |

@@ -58,7 +58,7 @@ The velocity is a boost, not an independent field. $\tilde V_\Phi=ic\tilde U_{\P
 
 The spin is a rotor, not an independent field. $\tilde S_{\Psi}=\rho\tfrac{h}{4\pi}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The Frenkel condition is then automatic, because a rotation cannot produce a temporal component, and [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) states the equivalence as $\mathrm{Sc}(\tilde S_{\Psi})=0\Leftrightarrow\mathcal{F}$.
 
-The spin's conservation is the rotor's equation. $\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\tilde u_{\mathrm r}$ with $\vec\Omega_\eta$ real, and the spin current's divergence is the antisymmetric part of $\vec\Omega_\eta$ contracted with the spin. No separate spin equation is added to the framework.
+The spin's conservation is the rotor's equation. $\partial_k\tilde u_{\mathrm r}=\tfrac12\vec\Omega_k\tilde u_{\mathrm r}$ with $\vec\Omega_k$ real, and the spin current's divergence is the antisymmetric part of $\vec\Omega_k$ contracted with the spin. No separate spin equation is added to the framework.
 
 The quantum potential is the mass shell's correction and not a pressure. $Q_{\mathrm{qnt}}=-(\frac{h^{2}}{4\pi^{2}}/2m)\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$, entering as $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$. The article that writes it with the other sign is wrong, and the sign is fixed by the non-relativistic reduction.
 
@@ -157,7 +157,7 @@ The transcriptions are 6, 13, 14 and 21 — one in the state layer and three in 
 
 1. The full stress. Whether a sixteen-component stress can be written as one or two elements of $\mathbb{B}$ is open. The element has eight real components and the stress sixteen, so one element cannot hold it; [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) marks the pair as the natural next attempt and does not construct it.
 
-2. The spin connection's equation. $\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\tilde u_{\mathrm r}$ is the rotor's equation once $\vec\Omega_\eta$ is given, and the equation for $\vec\Omega_\eta$ is the specific field's dynamics. The fermionic field's is the magnetic coupling; the general one is not written.
+2. The spin connection's equation. $\partial_k\tilde u_{\mathrm r}=\tfrac12\vec\Omega_k\tilde u_{\mathrm r}$ is the rotor's equation once $\vec\Omega_k$ is given, and the equation for $\vec\Omega_k$ is the specific field's dynamics. The fermionic field's is the magnetic coupling; the general one is not written.
 
 3. The averaged Frenkel condition. Whether a fluid's averaged polarization satisfies $\mathcal{F}$ in every frame, and not only in the frame in which the average was taken, is open. The algebra's single-element statement is automatic; the many-element statement is not.
 

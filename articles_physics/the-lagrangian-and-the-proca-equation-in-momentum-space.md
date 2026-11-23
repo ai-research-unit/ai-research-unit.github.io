@@ -143,14 +143,14 @@ The coefficient of $A_0^{2}$ contains no $\omega^{2}$, and that is the primary c
 $$
 \frac{\partial^{2}\mathcal{Q}}{\partial A_0^{2}}=\tfrac12\Bigl(2\pi\nu_t'^{2}-k^{2}+4\pi^{2}\nu_m^{2}\Bigr)=\tfrac12\bigl(2\pi\vec\nu_\Phi^{2}+4\pi^{2}\nu_m^{2}\bigr) ,
 \qquad
-\frac{\partial^{2}\mathcal{Q}}{\partial A_\eta^{2}}=\tfrac12\Bigl(\kappa_\eta^{2}+k^{2}-4\pi^{2}\nu_m^{2}\Bigr) ,
+\frac{\partial^{2}\mathcal{Q}}{\partial A_k^{2}}=\tfrac12\Bigl(\kappa_k^{2}+k^{2}-4\pi^{2}\nu_m^{2}\Bigr) ,
 $$
 
 so the temporal coefficient is $\tfrac12(\vec\nu_\Phi^{2}+\nu_m^{2})$ and the three spatial coefficients each carry the frequency. **Measured at $2\pi\nu_m=0.7$ and $2\pi\vec\nu_\Phi=(0.3,0.2,0.1)$: the temporal coefficient is $0.315000000$ at $2\pi\nu_t'=0.5$, $1.2$ and $2.0$, while the first spatial coefficient is $-0.145$, $+0.450$ and $+1.730$.**
 
 A coefficient with no $\omega^{2}$ is a constraint. The Hessian's temporal entry is a number, so the equation for $A_0$ is algebraic in the frequency and can be solved and substituted; that is exactly the parent's remark that the second-order form carries a primary constraint, and it is why the count is four minus one. The absent power is the constraint, and the article's contribution is to say that it is absent rather than small.
 
-$F_{0\eta}=\partial_0A_\eta-\partial_\eta A_0$ contains no $\partial_0A_0$, so no amount of minimal coupling can put an $\omega^{2}$ on $A_0$. The variational coupled companion makes the same statement with the connection present, and the two agree because the reason is the antisymmetry of the field strength and not the absence of a potential.
+$F_{0k}=\partial_0A_k-\partial_k A_0$ contains no $\partial_0A_0$, so no amount of minimal coupling can put an $\omega^{2}$ on $A_0$. The variational coupled companion makes the same statement with the connection present, and the two agree because the reason is the antisymmetry of the field strength and not the absence of a potential.
 
 The three spatial coefficients move because they are the propagating ones. Their frequency dependence is the dispersion relation's, read as a coefficient: on the shell the transverse coefficient vanishes, which is the symbol's rank drop. The temporal coefficient never vanishes for a massive field, which is why the primary constraint is not a dynamical equation at any frequency.
 
@@ -221,7 +221,7 @@ Along the four-wave-number the form is $\tfrac12\nu_m^{2}(A\!\cdot\!A)$ exactly,
 
 The constraint is that coefficient. Varying along $\nu_{\imath}$ gives $\nu_m^{2}[kA]=0$, which is the parent's $\nu_m^{2}S=0$; at $\nu_m=0$ the coefficient vanishes identically and the direction is free. Gauge freedom is a zero coefficient in the quadratic form, and the massless theory's $S=0$ is a null direction of the Hessian rather than the orbit of a group.
 
-The coefficient of $A_0^{2}$ is $\tfrac12(\vec\nu_\Phi^{2}+\nu_m^{2})$, with no $\omega^{2}$: $0.315000000$ at all three frequencies, while the three spatial coefficients move from $-0.145$ to $+0.45$ to $+1.73$. The absent power is the primary constraint, and the coupling cannot add one because $F_{0\eta}$ contains no $\partial_0A_0$.
+The coefficient of $A_0^{2}$ is $\tfrac12(\vec\nu_\Phi^{2}+\nu_m^{2})$, with no $\omega^{2}$: $0.315000000$ at all three frequencies, while the three spatial coefficients move from $-0.145$ to $+0.45$ to $+1.73$. The absent power is the primary constraint, and the coupling cannot add one because $F_{0k}$ contains no $\partial_0A_0$.
 
 The form degenerates exactly where the symbol is singular and where the propagator has its pole, and the degeneracy is partial: rank one on the shell, which is the three polarisations. On the shell the symbol's trace is $3k^{2}-16\pi^{2}\nu_m^{2}=-4\pi^{2}\nu_m^{2}$, the same mass the parent's $T_{\imath\imath}=-4\pi^{2}\nu_m^{2}\langle\tilde A_\Phi\rangle_\natural$ carries, and it vanishes only at $k^{2}=\tfrac434\pi^{2}\nu_m^{2}$, which is not physical.
 

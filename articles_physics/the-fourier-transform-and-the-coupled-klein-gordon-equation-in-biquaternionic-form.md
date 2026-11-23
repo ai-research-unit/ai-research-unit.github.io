@@ -30,16 +30,16 @@ $$
 \langle\tilde\Upsilon_\Phi\rangle_\natural=-2\pi\nu_t'^{2}+4\pi^{2}\nu_{\Phi}^{2}.
 $$
 
-The coordinate is $R_t=i\,r_t'$, so $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and the temporal slot of the gradient's symbol is $+i(i\nu_t')=-\nu_t'$, real; the three spatial slots are $i\kappa_\eta$, imaginary. Write $\sigma_{\imath}$ for those four numbers, so $\sigma_t=-2\pi\nu_t'$ and $\sigma_\eta=i\kappa_\eta$. A reader who takes the metric signs from the slot list instead of from $\partial/\partial R_t=-i\,\partial/\partial r_t'$ will put an extra $-1$ on $\sigma_t$ and will then find an imaginary cross term that does not exist. The corpus has already spent that sign twice, once in $R_t=ir_t'$ and once in $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r_t'}^{2}$, and there is none left to spend.
+The coordinate is $R_t=i\,r_t'$, so $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and the temporal slot of the gradient's symbol is $+i(i\nu_t')=-\nu_t'$, real; the three spatial slots are $i\kappa_k$, imaginary. Write $\sigma_{\imath}$ for those four numbers, so $\sigma_t=-2\pi\nu_t'$ and $\sigma_k=i\kappa_k$. A reader who takes the metric signs from the slot list instead of from $\partial/\partial R_t=-i\,\partial/\partial r_t'$ will put an extra $-1$ on $\sigma_t$ and will then find an imaginary cross term that does not exist. The corpus has already spent that sign twice, once in $R_t=ir_t'$ and once in $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r_t'}^{2}$, and there is none left to spend.
 
-With $c_{\imath}=\frac{2\pi i\,ϙ}{h}A_{\imath}$ and $\tilde A_\Phi=i a_t' e_t+\sum_\eta A_\eta\vec e_\eta$ for real $a_t'$ and real $A_\eta$, the four coefficients are
+With $c_{\imath}=\frac{2\pi i\,ϙ}{h}A_{\imath}$ and $\tilde A_\Phi=i a_t' e_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k$ for real $a_t'$ and real $A_k$, the four coefficients are
 
 $$
 c_t=\frac{2\pi i\,ϙ}{h}\,i a_t'=-\frac{2\pi ϙ a_t'}{h}\ \text{real},
 \qquad
-c_\eta=\frac{2\pi i\,ϙ}{h}A_\eta=i\,a_\eta\ \text{imaginary},
+c_k=\frac{2\pi i\,ϙ}{h}A_k=i\,a_k\ \text{imaginary},
 \qquad
-a_\eta:=\frac{2\pi ϙ}{h}A_\eta .
+a_k:=\frac{2\pi ϙ}{h}A_k .
 $$
 
 The coefficient $c_{\imath}$ always carries an index and the speed of light $c$ never does; the corpus's $r_t'=ct'$ is the only place the letter appears unindexed. The writing $A_t=ia_t'$ is the parent's and it is the one the anti-Hermiticity of $\tilde A_\Phi$ produces: $\tilde A_\Phi^{*}=-\tilde A_\Phi$ holds exactly when $a_t'$ and $\vec A$ are both real.
@@ -64,7 +64,7 @@ $$
 
 which is real for every real $c_t$. **The difference of the two symbols is a real number and it is first order in the potential**; at the values used below it is $2.0522$.
 
-In a spatial slot $c_\eta$ is imaginary and $\bar c_\eta=-c_\eta$, so $(\sigma_\eta-\bar c_\eta)(\sigma_\eta+c_\eta)=(\sigma_\eta+c_\eta)^{2}$: the two readings coincide there identically, for every vector potential. **A purely magnetic connection therefore gives one operator and not two**, which is the parent's remark at §*The Quadratic Form and the Operator It Inverts*, read as the statement that the fork needs an electric slot. The vector potential enters both readings through the one combination $\vec\kappa+\vec a$, which is the mechanical wave number, and that absorption is the whole of the magnetic case.
+In a spatial slot $c_k$ is imaginary and $\bar c_k=-c_k$, so $(\sigma_k-\bar c_k)(\sigma_k+c_k)=(\sigma_k+c_k)^{2}$: the two readings coincide there identically, for every vector potential. **A purely magnetic connection therefore gives one operator and not two**, which is the parent's remark at §*The Quadratic Form and the Operator It Inverts*, read as the statement that the fork needs an electric slot. The vector potential enters both readings through the one combination $\vec\kappa+\vec a$, which is the mechanical wave number, and that absorption is the whole of the magnetic case.
 
 Everything below concerns the temporal slot with a constant scalar potential. The claim is not that the two operators differ everywhere; the claim is that where they differ they differ by a term that momentum space displays in one line and position space can only reach by an integration by parts.
 
@@ -82,7 +82,7 @@ $$
 
 where parity means real or purely imaginary. The proof is the expansion: the square of $\sigma+c$ has imaginary part $2\,\mathrm{Re}(\sigma)\,\mathrm{Im}(c)+2\,\mathrm{Im}(\sigma)\,\mathrm{Re}(c)$, and a real $\sigma$ demands a real $c$ while an imaginary $\sigma$ demands an imaginary $c$.
 
-The temporal symbol is real and the three spatial symbols are imaginary, so the condition is "$c_t$ real and $c_\eta$ imaginary", which by the bookkeeping of §*Conventions* is "$A_t$ imaginary and $\vec A$ real", which is $\tilde A_\Phi^{*}=-\tilde A_\Phi$. **The anti-Hermitian writing is the reality condition**, and the corpus's convention is doing physical work that its own introductions describe as bookkeeping.
+The temporal symbol is real and the three spatial symbols are imaginary, so the condition is "$c_t$ real and $c_k$ imaginary", which by the bookkeeping of §*Conventions* is "$A_t$ imaginary and $\vec A$ real", which is $\tilde A_\Phi^{*}=-\tilde A_\Phi$. **The anti-Hermitian writing is the reality condition**, and the corpus's convention is doing physical work that its own introductions describe as bookkeeping.
 
 On a grid of $256$ points, with $2\pi\nu_t'=\lvert\vec\kappa\rvert=3$ and coefficients of magnitude $0.31$, the four cases are:
 
@@ -105,9 +105,9 @@ Over $500$ random draws per class, with the temporal and one spatial slot combin
 
 | class | squared | paired |
 | --- | --- | --- |
-| material: $c_t$ real, $c_\eta$ imaginary | $8.1\times10^{-13}$ | $8.1\times10^{-13}$ |
-| $c_t$ real, $c_\eta$ arbitrary complex | $34.78$ | $8.3\times10^{-13}$ |
-| $c_t$ imaginary, $c_\eta$ imaginary | $19.69$ | $19.69$ |
+| material: $c_t$ real, $c_k$ imaginary | $8.1\times10^{-13}$ | $8.1\times10^{-13}$ |
+| $c_t$ real, $c_k$ arbitrary complex | $34.78$ | $8.3\times10^{-13}$ |
+| $c_t$ imaginary, $c_k$ imaginary | $19.69$ | $19.69$ |
 | both slots arbitrary complex | $30.09$ | $17.04$ |
 
 Two independently computed symbols, one of them a composition of two operators, agree on being real to eight parts in $10^{13}$ over five hundred draws. The corpus's anti-Hermitian writing is not merely compatible with a real dispersion; it is the only writing in the table that delivers one for both operators at once.
@@ -134,7 +134,7 @@ All three hold to the printed digits. The parent's arithmetic is right and its n
 
 A real $c$ in a slot with $\sigma=i\kappa$ gives the squared symbol $-\kappa^{2}+c^{2}+2i\kappa c$ and the paired symbol $-\kappa^{2}-c^{2}$: the real part moves by $+c^{2}$, the imaginary part is $2\kappa c$, and the paired form moves by $-c^{2}$. The parent's three numbers have exactly that shape, with $\kappa=3$ and $c=0.31$. **The complex symbol is the mark of a coefficient whose parity is wrong for its slot.**
 
-In the corpus's writing a real spatial coefficient would be $c_\eta$ real, that is $A_\eta$ imaginary, that is a non-material connection. The material potential has $A_\eta$ real and $c_\eta$ imaginary, and then the spatial symbol is $-(\kappa+a)^{2}$, real, with no imaginary part at all. So the parent's complex number is not a property of a scalar potential coupled to a scalar field. It is a property of a coefficient of the wrong parity, tested in a slot where the corpus never puts one.
+In the corpus's writing a real spatial coefficient would be $c_k$ real, that is $A_k$ imaginary, that is a non-material connection. The material potential has $A_k$ real and $c_k$ imaginary, and then the spatial symbol is $-(\kappa+a)^{2}$, real, with no imaginary part at all. So the parent's complex number is not a property of a scalar potential coupled to a scalar field. It is a property of a coefficient of the wrong parity, tested in a slot where the corpus never puts one.
 
 The same passage calls the imaginary coefficient "shifts the pair together" and the real one "separates them", and both phrases are right as descriptions of those two coefficients. The paragraph immediately before it is sharper still: it states that the two operators coincide exactly when $\bar c_{\imath}=-c_{\imath}$ in every slot, that the three spatial slots satisfy this for a real vector potential, and that the temporal slot does not, because $c_t$ is real. That paragraph has the slot structure right, and the measurement two paragraphs later uses a slot the paragraph rules out. The resolution is the one above: the number is a spatial-slot number, and the material connection does not produce one.
 
@@ -194,7 +194,7 @@ The symbols of §*The Two Symbols* and the shells of §*The Two Shells* are cons
 
 A constant field strength makes the covariant derivative a first-order differential operator in the transform, whose eigenfunctions are not plane waves; the Landau ladder is cited and not derived.
 
-The spatial slots carry no fork, because there $\bar c_\eta=-c_\eta$ and the two readings coincide identically. A vector potential therefore cannot separate the two equations at all, and an article that reported a magnetic fork would be reporting the parity lemma backwards.
+The spatial slots carry no fork, because there $\bar c_k=-c_k$ and the two readings coincide identically. A vector potential therefore cannot separate the two equations at all, and an article that reported a magnetic fork would be reporting the parity lemma backwards.
 
 ## Open Questions
 
@@ -227,10 +227,10 @@ The parent's measured complex symbol, $-8.8876+1.86i$, is reproduced exactly by 
 | Symbol | Meaning |
 | --- | --- |
 | $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | The four-wave number; $2\pi\nu_t'=\omega/c$ |
-| $\sigma_{\imath}$ | The free slot symbol: $\sigma_t=-2\pi\nu_t'$ real, $\sigma_\eta=i\kappa_\eta$ imaginary |
-| $\tilde A_\Phi=i a_t'e_t+\sum_\eta A_\eta\vec e_\eta$ | The connection, anti-Hermitian in the material writing |
-| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The per-slot connection coefficient; $c_t=-\frac{2\pi ϙa_t'}{h}$ real, $c_\eta=ia_\eta$ imaginary |
-| $a_\eta=\frac{2\pi ϙ}{h}A_\eta$ | The reduced vector potential, real |
+| $\sigma_{\imath}$ | The free slot symbol: $\sigma_t=-2\pi\nu_t'$ real, $\sigma_k=i\kappa_k$ imaginary |
+| $\tilde A_\Phi=i a_t'e_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k$ | The connection, anti-Hermitian in the material writing |
+| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The per-slot connection coefficient; $c_t=-\frac{2\pi ϙa_t'}{h}$ real, $c_k=ia_k$ imaginary |
+| $a_k=\frac{2\pi ϙ}{h}A_k$ | The reduced vector potential, real |
 | $\nu_m=\frac{mc}{h}$ | The mass wave number |
 | (E2), the squared reading | $\sum_{\imath}(\sigma_{\imath}+c_{\imath})^{2}$; shell $(2\pi\nu_t'-c_t)^{2}=\lvert\vec\kappa\rvert^{2}+4\pi^{2}\nu_m^{2}$ |
 | (E1), the paired reading | $\sum_{\imath}(\sigma_{\imath}-\bar c_{\imath})(\sigma_{\imath}+c_{\imath})$; shell $(2\pi\nu_t')^{2}=\lvert\vec\kappa\rvert^{2}+4\pi^{2}\nu_m^{2}+c_t^{2}$ |

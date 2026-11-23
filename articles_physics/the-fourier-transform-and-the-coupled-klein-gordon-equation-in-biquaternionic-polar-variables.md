@@ -26,7 +26,7 @@ $$
 \tilde\Upsilon_\Phi=2\pi i\nu_t'e_t+2\pi\vec\nu_\Phi .
 $$
 
-$c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ gives $c_t=-\frac{2\pi ϙa_t'}{h}$ real and $c_\eta=i\frac{2\pi ϙ}{h}A_\eta$ imaginary; the free slot symbols are $\sigma_t=-2\pi\nu_t'$ real and $\sigma_\eta=i\kappa_\eta$ imaginary; and the mechanical four-momentum is $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$, whose temporal slot is $E+ϙc\,a_t'$ and whose spatial slots are $\vec p-q\vec A$.
+$c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ gives $c_t=-\frac{2\pi ϙa_t'}{h}$ real and $c_k=i\frac{2\pi ϙ}{h}A_k$ imaginary; the free slot symbols are $\sigma_t=-2\pi\nu_t'$ real and $\sigma_k=i\kappa_k$ imaginary; and the mechanical four-momentum is $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$, whose temporal slot is $E+ϙc\,a_t'$ and whose spatial slots are $\vec p-q\vec A$.
 
 The transform does not carry a material-sector field to an informational-sector one. A symbol exists only at constant coefficients. **And a Legendre transform is not a Fourier transform**: the polar variational parent's four momenta are conjugates to the field's own parameters at each event, so they are not wave numbers, and nothing below reads them as one. This is the only place the third denial is stated.
 
@@ -127,7 +127,7 @@ What the chart is silent on, it is silent on for one reason: its functionals are
 | $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi$ | The covariant bracket: one additive central term |
 | $S_{\mathrm{p}}$ | The chart's kinetic functional, a modulus squared |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}\tilde\Xi$ | The operator $S_{\mathrm{p}}$ produces: the squared reading |
-| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The per-slot coefficient; $c_t$ real, $c_\eta$ imaginary |
+| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The per-slot coefficient; $c_t$ real, $c_k$ imaginary |
 | $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$ | The mechanical four-momentum; the chart's variable |
 | $\vec\nabla_\Phi\times(\vec p-q\vec A)=ϙ\vec B$ | The vorticity: the field strength the chart shows |
 | $2\pi\nu_t'^{\mathrm{mech}}=2\pi\nu_t'-c_t$ | The mechanical frequency; the squared shell is free in it |

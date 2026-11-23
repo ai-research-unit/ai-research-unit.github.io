@@ -78,7 +78,7 @@ $$
 
 with $V$ a real function of $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$, $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$ and independent of $\varrho$ and $\theta_{\mathrm{pha}}$. **The independence of $\varrho$ is what makes the scale's momentum vanish** and it is §*The Constraints the Action Imposes: The Structure*'s first fact.
 
-Which slots of the potential reach which bracket. Decompose as in the polar companion: the temporal slot $\frac{2\pi iϙ}{h}A_t$ is central imaginary, the spatial slots $\frac{2\pi iϙ}{h}A_\eta\vec e_\eta$ are Hermitian. The potential therefore adds to the *phase bracket* and to the *boost bracket*, and it cannot reach the scale bracket or the rotor bracket. In the action that shows up as the structure of $V$: it depends on the boost's rapidity and axis through the Hermitian slot, and it depends on $\theta_{\mathrm{pha}}$ not at all.
+Which slots of the potential reach which bracket. Decompose as in the polar companion: the temporal slot $\frac{2\pi iϙ}{h}A_t$ is central imaginary, the spatial slots $\frac{2\pi iϙ}{h}A_k\vec e_k$ are Hermitian. The potential therefore adds to the *phase bracket* and to the *boost bracket*, and it cannot reach the scale bracket or the rotor bracket. In the action that shows up as the structure of $V$: it depends on the boost's rapidity and axis through the Hermitian slot, and it depends on $\theta_{\mathrm{pha}}$ not at all.
 
 The action, written once.
 
@@ -141,11 +141,11 @@ $$
 =\frac{1}{2}\partial_{\imath}\ln\rho_{\mathrm{num}}
 +i\Bigl(\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_{\imath}^{\,t}\Bigr)
 +\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
-+\frac{2\pi i\,ϙ}{h}A_{\imath}^{\,\eta}\vec e_\eta
++\frac{2\pi i\,ϙ}{h}A_{\imath}^{\,k}\vec e_k
 +\tilde u_{\mathrm r}^{-1}\partial_{\imath}\tilde u_{\mathrm r},
 $$
 
-where $A_{\imath}^{\,t}$ and $A_{\imath}^{\,\eta}$ are the temporal and spatial slots of the component's potential, and where the two added terms have been written beside the brackets they join.
+where $A_{\imath}^{\,t}$ and $A_{\imath}^{\,k}$ are the temporal and spatial slots of the component's potential, and where the two added terms have been written beside the brackets they join.
 
 The type table.
 
@@ -246,7 +246,7 @@ $$
 
 This is the Noether current of the word's phase symmetry, and it is the statement that the density is conserved along the flow.
 
-What the element action produces. The element action's local-phase Noether current is the display of the element companion: a sum over the parts in the temporal slot and a difference in the spatial slots, which is the Gordon pairing and which equals the chart's $\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}}$ and $\rho_{\mathrm{num}}\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,\eta}$.
+What the element action produces. The element action's local-phase Noether current is the display of the element companion: a sum over the parts in the temporal slot and a difference in the spatial slots, which is the Gordon pairing and which equals the chart's $\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}}$ and $\rho_{\mathrm{num}}\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,k}$.
 
 The two are not the same object, and the difference is a spatial slot. The word's phase current is the temporal slot of the element current and nothing else. The element current's spatial slots come from the boost, not from the phase, and the word's parameterisation does not produce them from the phase's symmetry: it produces them from the boost's. A variational principle in the word therefore has *two* symmetries where the element action has one — the phase's and the boost's — and the element action's current is the combination of the two.
 

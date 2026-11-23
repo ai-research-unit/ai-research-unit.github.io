@@ -336,7 +336,7 @@ The fundamental representation is two-dimensional, so it has two weights. The nu
 $\lambda_+=\lambda_-$ requires $\operatorname{tr}^{2}=4$, that is $H_t^{2}=1$. Since $\tilde H$ is Hermitian of unit norm, $H_t$ is real and
 
 $$
-1=\langle\tilde H\rangle_{\natural}=H_t^{2}+\sum_\eta H_\eta^{2}=H_t^{2}-\sum_\eta\lvert H_\eta\rvert^{2},
+1=\langle\tilde H\rangle_{\natural}=H_t^{2}+\sum_{k\in\{x,y,z\}} H_k^{2}=H_t^{2}-\sum_{k\in\{x,y,z\}}\lvert H_k\rvert^{2},
 $$
 
 so $H_t^{2}\ge1$ with equality **if and only if the vector part vanishes**. Hence

@@ -38,7 +38,7 @@ What is not new. The parent action, the four reductions and the topologically ma
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; $\mathrm{Sc}$ and $\langle\cdot\rangle_\natural$ are the scalar part and the Minkowski square.
+The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_k^{2}=-e_t$; $\mathrm{Sc}$ and $\langle\cdot\rangle_\natural$ are the scalar part and the Minkowski square.
 
 The structure constants. $\check c_{\jmath\imath\lambda}$ is the corpus's chirality-odd array, antisymmetric as $\check c_{\jmath\imath\lambda}-\check c_{\lambda\imath\jmath}=-2i\,\varepsilon_{\jmath\imath\lambda\rho}j_\rho$, and $\check\varepsilon_{\jmath\imath\lambda}=\sum_\rho\varepsilon_{\jmath\imath\lambda\rho}j_\rho$ is the three-dimensional Levi-Civita symbol of the slice, nonzero only when all three indices lie on it.
 

@@ -134,7 +134,7 @@ $$
 \qquad\text{for all } \tilde{Ξ}_\pm\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi} .
 $$
 
-**Proof.** It suffices to check the statement on the four units, since the real form is bilinear. In the material sector the coordinates are $Q_t=i q'_t$ and $Q_\eta=q_\eta$, in the informational sector $Q_t=q_t$ and $Q_\eta=i q'_\eta$, and each elementary term is $2\,\mathrm{Re}\,\mathrm{Sc}(e_{\imath}^{*}W_{\mathrm{kinetic}}e_{\jmath})$ times the product of one material coordinate and one informational one. The trace factor vanishes off the diagonal, and on it the coordinate product is purely imaginary, $i r'_t\cdot h_t$ on the time slot and $x_\eta\cdot i h'_{x_\eta}$ on each space slot. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.
+**Proof.** It suffices to check the statement on the four units, since the real form is bilinear. In the material sector the coordinates are $Q_t=i q'_t$ and $Q_k=q_k$, in the informational sector $Q_t=q_t$ and $Q_k=i q'_k$, and each elementary term is $2\,\mathrm{Re}\,\mathrm{Sc}(e_{\imath}^{*}W_{\mathrm{kinetic}}e_{\jmath})$ times the product of one material coordinate and one informational one. The trace factor vanishes off the diagonal, and on it the coordinate product is purely imaginary, $i r'_t\cdot h_t$ on the time slot and $x_k\cdot i h'_{x_k}$ on each space slot. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.
 
 **Consequence: factorisation.** With the source split as $\tilde J_{\Phi}=\tilde J_{\Phi,-}+\tilde J_{\Phi,+}$, the free functional integral is
 $$
@@ -223,7 +223,7 @@ The functional integral requires an integration measure, and the measure is the 
 $$
 \mathcal{D}\tilde{Ξ} = \prod_{x}\prod_{\imath\in\{t,x,y,z\}}dΞ_{\imath}(x)
 \quad\text{or}\quad
-\mathcal{D}\tilde{Ξ} = \prod_{\eta}\prod_{\imath\in\{t,x,y,z\}}dΞ_{\imath}(k),
+\mathcal{D}\tilde{Ξ} = \prod_{k\in\{x,y,z\}}\prod_{\imath\in\{t,x,y,z\}}dΞ_{\imath}(k),
 $$
 a product of Lebesgue measures on the coefficients, one per biquaternion component. The algebra fixes the *number* of components — four complex coefficients, two per sector — and the fact that the measure is the volume form of the module; it does nothing else.
 
@@ -280,7 +280,7 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H},\mathbb{B}_{C}$ | Real-quaternion subspace; centre |
 | $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ | Biquaternion field and its sector parts |

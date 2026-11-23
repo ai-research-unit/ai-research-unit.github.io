@@ -17,18 +17,18 @@ with $\tilde U_{\Psi,b}=\exp(i\theta_{\mathrm{rpd}}\,\vec u_b)$ the Hermitian bo
 This article couples the same field to the electromagnetic connection and asks what the word does with it. The equation is the element form's,
 
 $$
-i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi}\,D_\eta\big)^{2}\tilde\Xi,
+i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_{k\in\{x,y,z\}}\big(-i \frac{h}{2\pi}\,D_k\big)^{2}\tilde\Xi,
 \qquad
 D_t=\partial_{t'}-\frac{2\pi i\,ϙ}{h}\omicron_{\mathrm{pot}},
 \qquad
-D_\eta=\partial_\eta+\frac{2\pi i\,ϙ}{h}A_\eta,
+D_k=\partial_k+\frac{2\pi i\,ϙ}{h}A_k,
 $$
 
 with $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ the material connection, and the whole of the article is the translation of that one operator into the chart.
 
 **Three findings, and the first is the article's structural point.**
 
-*First, the connection is a central-imaginary number in every slot, so it joins the phase bracket and nothing else.* The free article decomposes $\tilde\Xi^{-1}\partial_{t'}\tilde\Xi$ into four objects of four algebraic types — a real scalar, a central imaginary, a Hermitian element, a real vector — and the equation reads each of them separately. The covariant bracket is the free one plus $-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}}$ in the temporal slot and $+\frac{2\pi iϙ}{h}A_\eta$ in each spatial slot. Every one of those additions is a central imaginary number, so each joins the second bracket; the scale, the boost and the rotor cannot receive anything. The consequence is exact and it is the article's sharpest statement: the connection moves the phase and only the phase, so in the central field the quantum potential is untouched by it (§*The Covariant Logarithmic Derivative*).
+*First, the connection is a central-imaginary number in every slot, so it joins the phase bracket and nothing else.* The free article decomposes $\tilde\Xi^{-1}\partial_{t'}\tilde\Xi$ into four objects of four algebraic types — a real scalar, a central imaginary, a Hermitian element, a real vector — and the equation reads each of them separately. The covariant bracket is the free one plus $-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}}$ in the temporal slot and $+\frac{2\pi iϙ}{h}A_k$ in each spatial slot. Every one of those additions is a central imaginary number, so each joins the second bracket; the scale, the boost and the rotor cannot receive anything. The consequence is exact and it is the article's sharpest statement: the connection moves the phase and only the phase, so in the central field the quantum potential is untouched by it (§*The Covariant Logarithmic Derivative*).
 
 *Second, in the constant setting the coupling is a shift of the two eigenvalues and of the axis.* The free flow's numbers are the mean $h_t$ and the vector $\vec h_\Psi$; the coupled flow's are $h_t-ϙ\omicron_{\mathrm{pot}}$ and $\vec h_\Psi-q\vec A$. The scale and the rapidity are still frozen, the phase still advances at minus the mean of the shifted pair, and the carried directions still precess at the gap of the shifted pair. The kinetic momentum is the shifted vector, the canonical momentum the unshifted one, and the difference between them is the vector potential (§*The General Element in the Constant Setting*).
 
@@ -45,19 +45,19 @@ with $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ the material connect
 $$
 \mathcal A^{\mathrm{gco}}_t=\tilde\Xi^{-1}D_t\tilde\Xi=\mathcal A_t-\frac{2\pi i\,ϙ}{h}\omicron_{\mathrm{pot}},
 \qquad
-\mathcal A^{\mathrm{gco}}_\eta=\tilde\Xi^{-1}D_\eta\tilde\Xi=\mathcal A_\eta+\frac{2\pi i\,ϙ}{h}A_\eta,
+\mathcal A^{\mathrm{gco}}_k=\tilde\Xi^{-1}D_k\tilde\Xi=\mathcal A_k+\frac{2\pi i\,ϙ}{h}A_k,
 $$
 
-and the simplification is the whole of it: in each slot the connection is a scalar multiple of the identity — $A_t=i\omicron_{\mathrm{pot}}/c$ in the temporal slot and the real $A_\eta$ in the spatial ones — so it commutes with the field, needs no conjugation, and no reordering. There is no $\natural$ in this section and no second carrier.
+and the simplification is the whole of it: in each slot the connection is a scalar multiple of the identity — $A_t=i\omicron_{\mathrm{pot}}/c$ in the temporal slot and the real $A_k$ in the spatial ones — so it commutes with the field, needs no conjugation, and no reordering. There is no $\natural$ in this section and no second carrier.
 
-**Which bracket receives it.** The four brackets of the free article are the four algebraic types into which a general element splits: a real scalar, a central imaginary, a Hermitian element and a real vector. The connection's addition in each slot is $i$ times a real number, because $\omicron_{\mathrm{pot}}$ and $A_\eta$ are real; that is a central imaginary number, and it therefore lies in the second bracket and in no other. The scale bracket is a real scalar and receives nothing; the boost bracket is Hermitian and receives nothing; the rotor bracket is a real vector and receives nothing. **The connection reaches the phase and only the phase.**
+**Which bracket receives it.** The four brackets of the free article are the four algebraic types into which a general element splits: a real scalar, a central imaginary, a Hermitian element and a real vector. The connection's addition in each slot is $i$ times a real number, because $\omicron_{\mathrm{pot}}$ and $A_k$ are real; that is a central imaginary number, and it therefore lies in the second bracket and in no other. The scale bracket is a real scalar and receives nothing; the boost bracket is Hermitian and receives nothing; the rotor bracket is a real vector and receives nothing. **The connection reaches the phase and only the phase.**
 
 **One spelling difference from the second-order companion.** The coupled Klein–Gordon article records that the connection's temporal addition is *real* and joins the scale bracket. That is the same statement as this one: its temporal derivative is $\partial/\partial R_t=-i\partial_{t'}$, and multiplication by $-i$ exchanges the real and the imaginary part, so its real addition to the $R_t$ bracket is this article's imaginary addition to the $t'$ bracket. The invariant content of both spellings is physical and identical: the potential shifts the phase's rate and leaves the density's rate alone.
 
 **What that means in the chart.** For a central field the statement is one line and it is worth writing,
 
 $$
-\mathcal A^{\mathrm{gco}}_\eta=\partial_\eta\ln \varrho+i\Big(\partial_\eta\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_\eta\Big),
+\mathcal A^{\mathrm{gco}}_k=\partial_k\ln \varrho+i\Big(\partial_k\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_k\Big),
 \qquad
 \mathcal A^{\mathrm{gco}}_t=\partial_{t'}\ln \varrho+i\Big(\partial_{t'}\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}\omicron_{\mathrm{pot}}\Big),
 $$
@@ -213,7 +213,7 @@ The coupled Schrödinger equation in the chart is the free equation with the cov
 $$
 \mathcal A^{\mathrm{gco}}_t=\mathcal A_t-\frac{2\pi i\,ϙ}{h}\omicron_{\mathrm{pot}},
 \qquad
-\mathcal A^{\mathrm{gco}}_\eta=\mathcal A_\eta+\frac{2\pi i\,ϙ}{h}A_\eta .
+\mathcal A^{\mathrm{gco}}_k=\mathcal A_k+\frac{2\pi i\,ϙ}{h}A_k .
 $$
 
 Each addition is a central imaginary number, so the connection joins the phase bracket and reaches no other: the scale, the rapidity, the boost's axis and the rotor's axis are untouched by it in type, and the gauge group acts on the chart as the translation of $\theta_{\mathrm{pha}}$ alone.
@@ -240,7 +240,7 @@ the covariant Madelung pair, with the quantum potential $Q=-\frac{h^{2}}{4\pi^{2
 | $\theta_{\mathrm{rpd}}\ge0$, $\vec u_b$ | The rapidity and axis of the Hermitian boost |
 | $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\vec u_r$ | The angle and axis of the rotor |
 | $\mathcal A_{\imath}=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi$ | The free logarithmic derivative |
-| $\mathcal A^{\mathrm{gco}}_{\imath}$ | The covariant one: $\mathcal A_t-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}}$ and $\mathcal A_\eta+\frac{2\pi iϙ}{h}A_\eta$ |
+| $\mathcal A^{\mathrm{gco}}_{\imath}$ | The covariant one: $\mathcal A_t-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}}$ and $\mathcal A_k+\frac{2\pi iϙ}{h}A_k$ |
 | $ϙ$ | The coupling; minus the electric charge of the older convention |
 | $\omicron_{\mathrm{pot}}$, $\vec A$ | The electric potential, $\omicron_{\mathrm{pot}}=c\,a'_t$, and the vector potential |
 | $\vec\pi=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}-q\vec A$ | The kinetic momentum |

@@ -417,7 +417,7 @@ The honest bottom line is a negative result about the framework's central struct
 
 **The dispersion relation.** A case independent of the derivation was evaluated: $c/c_0=2$, $\nu_m=1.4\ \mathrm{m^{-1}}$, $\vec\nu_\Phi=(0.9,-0.5,0.3)\ \mathrm{m^{-1}}$, giving $\omega\approx3.527\,c_0\ \mathrm{m^{-1}}$. A cosine of each sign of $\omega$ left a residual of order $h^{2}$ in $\Box_\Phi\tilde\Xi-4\pi^{2}\nu_m^{2}\tilde\Xi$, so both branches solve the one equation. The case was chosen away from $\vec\nu_\Phi=0$, where a sign error would be invisible.
 
-**The current.** The identity $\partial_{r'_t}j_{r'_t}+\sum_\eta\partial_{r_\eta}j_\eta=-2\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde\Xi]$ was checked off shell on a periodic grid with four modes, the two sides agreeing to $10^{-13}$ at every point; on an exact solution with $\omega=2$, $\nu_{\Phi x}=1/(2\pi)$, $\nu_m=\sqrt{3}/(2\pi)$ in one length unit the divergence was $1.7\times10^{-14}$.
+**The current.** The identity $\partial_{r'_t}j_{r'_t}+\sum_{k\in\{x,y,z\}}\partial_{r_k}j_k=-2\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde\Xi]$ was checked off shell on a periodic grid with four modes, the two sides agreeing to $10^{-13}$ at every point; on an exact solution with $\omega=2$, $\nu_{\Phi x}=1/(2\pi)$, $\nu_m=\sqrt{3}/(2\pi)$ in one length unit the divergence was $1.7\times10^{-14}$.
 
 **The non-relativistic limit.** The truncated $\Omega$ and the operator $-\Delta_\Phi/(2\nu_m)$ were compared on a plane wave and agreed to machine precision, at the one-term accuracy of the expansion, which is $1.5\times10^{-3}$ for that case.
 

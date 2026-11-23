@@ -64,7 +64,7 @@ For a pure state $\rho_{\mathrm{sp}} = |\tilde{Ξ}\rangle\langle\tilde{Ξ}|$ and
 The spin-1/2 system is the specific physical realization of a two-state system in which the observables are the spin components
 
 $$
-S_\eta =\frac{h}{4\pi}\sigma_\eta, \qquad \eta = 1, 2, 3.
+S_k =\frac{h}{4\pi}\sigma_k, \qquad k=1,2,3.
 $$
 
 The state space is the spinor space $\mathbb{C}^2$, and the spin states are the eigenstates of $\vec S\cdot\vec u$ for a unit vector $\vec u$. The spin-up and spin-down projectors along the direction $\vec u$ are
@@ -98,20 +98,20 @@ where $i$ on the left is the scalar imaginary of $\mathbb{B}$ and $i$ on the rig
 It is useful to verify that this is indeed an isomorphism of algebras. The quaternion units satisfy $\vec e_{\imath}^2 = -e_t$ and $\vec e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmath\lambda} \vec e_\lambda$ for ${\imath} \neq \jmath$. Under the map:
 
 $$
-\vec e_{\imath}^2 \mapsto (-i\sigma_\eta)^2 = -\sigma_\eta^2 = -I_2 = -e_t,
+\vec e_{\imath}^2 \mapsto (-i\sigma_k)^2 = -\sigma_k^2 = -I_2 = -e_t,
 $$
 
 $$
 \vec e_x \vec e_y \mapsto (-i\sigma_1)(-i\sigma_2) = (-i)^2 \sigma_1 \sigma_2 = -\sigma_1 \sigma_2 = -i\sigma_3 = \vec e_z.
 $$
 
-So the map preserves the multiplication rules. The scalar imaginary $i$ maps to $iI_2$, which satisfies $(iI_2)^2 = -I_2$ and commutes with all $(-i\sigma_\eta)$. Both properties are required.
+So the map preserves the multiplication rules. The scalar imaginary $i$ maps to $iI_2$, which satisfies $(iI_2)^2 = -I_2$ and commutes with all $(-i\sigma_k)$. Both properties are required.
 
 ### The Two Subspaces Under the Isomorphism
 
 Under this isomorphism, the fixed-point subspaces of the algebra acquire concrete matrix forms.
 
-**Hermitian subspace $\mathbb{B}_{\Psi}$.** A general element is $\tilde H_\Psi = h_t e_t + i h'_x \vec e_x + i h'_y \vec e_y + i h'_z \vec e_z$ with $h_\eta \in \mathbb{R}$. Under the isomorphism:
+**Hermitian subspace $\mathbb{B}_{\Psi}$.** A general element is $\tilde H_\Psi = h_t e_t + i h'_x \vec e_x + i h'_y \vec e_y + i h'_z \vec e_z$ with $h_k \in \mathbb{R}$. Under the isomorphism:
 
 $$
 \tilde H_\Psi \mapsto h_t I_2 + h'_x \sigma_1 + h'_y \sigma_2 + h'_z \sigma_3.
@@ -119,7 +119,7 @@ $$
 
 This is a Hermitian $2 \times 2$ matrix. So $\mathbb{B}_{\Psi}$ is isomorphic to the space of Hermitian operators on $\mathbb{C}^2$.
 
-Anti-Hermitian subspace $\mathbb{B}_{\Phi}$. A general element is $\tilde{Q} = i x_0 e_t + x_1 \vec e_x + x_2 \vec e_y + x_3 \vec e_z$ with $x_\eta \in \mathbb{R}$. Under the isomorphism:
+Anti-Hermitian subspace $\mathbb{B}_{\Phi}$. A general element is $\tilde{Q} = i x_0 e_t + x_1 \vec e_x + x_2 \vec e_y + x_3 \vec e_z$ with $x_k \in \mathbb{R}$. Under the isomorphism:
 
 $$
 \tilde{Q} \mapsto i x_0 I_2 - i x_1 \sigma_1 - i x_2 \sigma_2 - i x_3 \sigma_3 = i\left(x_0 I_2 - x_1\sigma_1 - x_2\sigma_2 - x_3\sigma_3\right).
@@ -127,7 +127,7 @@ $$
 
 This is $i$ times a Hermitian matrix, i.e., an anti-Hermitian matrix. So $\mathbb{B}_{\Phi}$ is isomorphic to the space of anti-Hermitian operators on $\mathbb{C}^2$.
 
-Real quaternion subspace $\mathbb{H}_\mathbb{B}$. A general element is $\tilde{Q} = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $q_\eta \in \mathbb{R}$. Under the isomorphism:
+Real quaternion subspace $\mathbb{H}_\mathbb{B}$. A general element is $\tilde{Q} = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $q_k \in \mathbb{R}$. Under the isomorphism:
 
 $$
 \tilde{Q} \mapsto q_t I_2 - i q_x\sigma_1 - i q_y\sigma_2 - i q_z\sigma_3 = \begin{pmatrix} q_t - i q_z & -i(q_x - i q_y) \ -i(q_x + i q_y) & q_t + i q_z \end{pmatrix}.

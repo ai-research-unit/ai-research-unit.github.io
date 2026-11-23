@@ -26,7 +26,7 @@ What this article does not do, stated in the first section because it is the fir
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $\mathbb{B}_\Phi$ is the anti-Hermitian sector, where the potential lives; the gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial r_\eta$ with $R_t=ir'_t$.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $\mathbb{B}_\Phi$ is the anti-Hermitian sector, where the potential lives; the gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_{k\in\{x,y,z\}}\vec e_k\,\partial/\partial r_k$ with $R_t=ir'_t$.
 
 The medium enters through two constants. The permittivity is $\epsilon$ and the permeability $\mu$, both positive, and $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, so the vacuum is the case $\epsilon=\epsilon_0$, $\mu=\mu_0$. The field strength carries the normalisation
 

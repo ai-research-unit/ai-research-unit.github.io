@@ -154,12 +154,12 @@ The second is the **finding**. Nothing in the algebra selects a gauge. The gauge
 Covariant quantization proceeds with all four polarizations and imposes a subsidiary condition. Expand the free potential in plane waves,
 
 $$
-A_{\imath}(x)=\int\!d^{3}\nu_{\Phi}\sqrt{\frac{c}{2\omega_k}}\sum_{r=0}^{3}
+A_{\imath}(x)=\int\!d^{3}\nu_{\Phi}\sqrt{\frac{c}{2\omega_{\mathrm{mode},m}}}\sum_{r=0}^{3}
 \left[\epsilon^{(r)}_{\imath}(2\pi\vec\nu_\Phi)\,a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi)\,\exp(-ik\cdot x)
 +\epsilon^{(r)*}_{\imath}(2\pi\vec\nu_\Phi)\,a_{\mathrm{fop},r}^{\dagger}(2\pi\vec\nu_\Phi)\,\exp(+ik\cdot x)\right],
 $$
 
-with $\omega_k=c\lvert2\pi\vec\nu_\Phi\rvert$ an angular frequency for the massless field, $k\cdot x=2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega_k r'_t/c$, and with polarization vectors normalized as $\langle\epsilon^{(r)},\epsilon^{(s)}\rangle_{\natural}=\sigma_{\mathrm{met},r}\delta_{rs}$, where $(\sigma_{\mathrm{met},0},\sigma_{\mathrm{met},1},\sigma_{\mathrm{met},2},\sigma_{\mathrm{met},3})=(-1,+1,+1,+1)$, the one minus being the square of the $i$ that the time coefficient carries, $Q_t=i q'_t$, and the natural form on the four units $e_t,\vec e_x,\vec e_y,\vec e_z$ being $\delta_{\imath\jmath}$. The mode operators carry the corresponding commutators,
+with $\omega_{\mathrm{mode},m}=c\lvert2\pi\vec\nu_\Phi\rvert$ an angular frequency for the massless field, $k\cdot x=2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega_{\mathrm{mode},m} r'_t/c$, and with polarization vectors normalized as $\langle\epsilon^{(r)},\epsilon^{(s)}\rangle_{\natural}=\sigma_{\mathrm{met},r}\delta_{rs}$, where $(\sigma_{\mathrm{met},0},\sigma_{\mathrm{met},1},\sigma_{\mathrm{met},2},\sigma_{\mathrm{met},3})=(-1,+1,+1,+1)$, the one minus being the square of the $i$ that the time coefficient carries, $Q_t=i q'_t$, and the natural form on the four units $e_t,\vec e_x,\vec e_y,\vec e_z$ being $\delta_{\imath\jmath}$. The mode operators carry the corresponding commutators,
 
 $$
 \boxed{\;\big[a_{\mathrm{fop},r}(\vec\nu_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec\nu_2)\big]
@@ -203,7 +203,7 @@ $$
 
 which makes the physical field transverse: the polarization sum annihilates every component along $\vec u_\Phi$.
 
-This is the quantization, and it works: two transverse polarizations, no negative-norm physical states, a positive-definite physical inner product. But the machinery was imported. The subsidiary condition is a condition on the potential, and the framework does not supply it; the indefinite inner product with $\sigma_{\mathrm{met},0}=-1$ is a structure the algebra does not by itself demand. The one compensating observation is the one made above: the indefinite form $\sigma_{\mathrm{met}}$, with $\sigma_{\mathrm{met},0}=-1$ and $\sigma_{\mathrm{met},\eta}=+1$, is the biquaternion norm of $\mathbb{B}_{\Phi}$, its one minus the square of the $i$ in $Q_t=i q'_t$, so the indefinite inner product is not a new object but the framework's own. Whether that identification has content beyond the coincidence of form is open.
+This is the quantization, and it works: two transverse polarizations, no negative-norm physical states, a positive-definite physical inner product. But the machinery was imported. The subsidiary condition is a condition on the potential, and the framework does not supply it; the indefinite inner product with $\sigma_{\mathrm{met},0}=-1$ is a structure the algebra does not by itself demand. The one compensating observation is the one made above: the indefinite form $\sigma_{\mathrm{met}}$, with $\sigma_{\mathrm{met},0}=-1$ and $\sigma_{\mathrm{met},k}=+1$, is the biquaternion norm of $\mathbb{B}_{\Phi}$, its one minus the square of the $i$ in $Q_t=i q'_t$, so the indefinite inner product is not a new object but the framework's own. Whether that identification has content beyond the coincidence of form is open.
 
 The alternatives should be named. The **Coulomb gauge** $\mathrm{div}\,\vec A=0$ removes the gauge freedom non-covariantly, leaves only the two transverse modes from the start, and gives a manifestly positive-definite norm, at the price of an instantaneous interaction and a loss of manifest Lorentz covariance. It is the same physical theory; it differs in which structure is imposed by hand. The framework's covariance preference points at Gupta–Bleuler, but the preference is not a derivation.
 
@@ -215,7 +215,7 @@ $$
 \big[a_{\mathrm{fop}}(\vec\nu_\Phi),a_{\mathrm{fop}}^{\dagger}(\vec\nu_2)\big]=\delta^{(3)}(\vec\nu_\Phi-\vec\nu_2),
 $$
 
-with dispersion $\omega_k=c\sqrt{4\pi^{2}\nu_{\Phi}^{2}+4\pi^{2}\nu_m^{2}}$. Its Fock space has positive-definite norm, there is no constraint, and no gauge condition has to be imposed: the Legendre transform is regular. The massless scalar field has one mode. The photon has **two** physical transverse modes and reaches them only after the two unphysical modes — the timelike and the longitudinal — have been removed by a subsidiary condition. The photon is not a scalar particle with an extra label; the reduction from four components to two is performed by the gauge structure, and that structure is what the algebra does not fix. If the gauge field is given a mass, as in the Proca theory, the gauge freedom is absent, the constraint structure changes, and a third (longitudinal) polarization becomes physical — which shows that the two-polarization count is a consequence of the gauge symmetry, not of the number of field components.
+with dispersion $\omega_{\mathrm{mode},m}=c\sqrt{4\pi^{2}\nu_{\Phi}^{2}+4\pi^{2}\nu_m^{2}}$. Its Fock space has positive-definite norm, there is no constraint, and no gauge condition has to be imposed: the Legendre transform is regular. The massless scalar field has one mode. The photon has **two** physical transverse modes and reaches them only after the two unphysical modes — the timelike and the longitudinal — have been removed by a subsidiary condition. The photon is not a scalar particle with an extra label; the reduction from four components to two is performed by the gauge structure, and that structure is what the algebra does not fix. If the gauge field is given a mass, as in the Proca theory, the gauge freedom is absent, the constraint structure changes, and a third (longitudinal) polarization becomes physical — which shows that the two-polarization count is a consequence of the gauge symmetry, not of the number of field components.
 
 ## Comparison with the Dirac Case
 
@@ -257,7 +257,7 @@ The extension is a transcription of standard canonical quantization into the fra
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |

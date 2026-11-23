@@ -28,11 +28,11 @@ The rows are the order of the entry. The four forms first, because they are the 
 
 ## Notational Conventions
 
-$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t=1$, $\vec e_k^{2}=-e_t$, and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\imath} Q_{\imath} e_{\imath}$, with $Q_{\imath}\in\mathbb{C}$ and $\mu\in\{t,x,y,z\}$. In the centre–vector split it is $\tilde Q=c+v$, with $c=Q_te_t$ in the centre $\mathbb{B}_C$ and $v=\sum_{k=1}^{3}Q_k\vec e_k$ in the vector subspace $\mathbb{B}_V$.
+$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t=1$, $\vec e_k^{2}=-e_t$, and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\imath} Q_{\imath} e_{\imath}$, with $Q_{\imath}\in\mathbb{C}$ and $\mu\in\{t,x,y,z\}$. In the centre–vector split it is $\tilde Q=c+v$, with $c=Q_te_t$ in the centre $\mathbb{B}_C$ and $v=\sum_{k\in\{x,y,z\}}Q_k\vec e_k$ in the vector subspace $\mathbb{B}_V$.
 
 The three conjugations. The scalar part is $\mathrm{Sc}$, taking the coefficient of $e_t$. The coefficientwise conjugation is $\bar{\cdot}$. The quaternion conjugation is ${}^{\natural}$, with $Q^{\natural}_{\jmath}=\varepsilon_{\jmath} Q_{\jmath}$ and $\varepsilon=(1,-1,-1,-1)$. The Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, so $Q^{*}_{\jmath}=\varepsilon_{\jmath}\overline{Q_{\jmath}}$. Both ${}^{\natural}$ and ${}^{*}$ are involutions, and ${}^{\natural}$ is an algebra automorphism.
 
-The vector calculus. The vector parts carry the complex bilinear dot product $(\vec Q_1,\vec Q_2)=\sum_k Q_{1k}Q_{2k}$ and the cross product $\vec Q_1\times\vec Q_2$, both complex bilinear, so that
+The vector calculus. The vector parts carry the complex bilinear dot product $(\vec Q_1,\vec Q_2)=\sum_{k\in\{x,y,z\}} Q_{1k}Q_{2k}$ and the cross product $\vec Q_1\times\vec Q_2$, both complex bilinear, so that
 
 $$
 \vec Q_1\vec Q_2=-(\vec Q_1,\vec Q_2)+\vec Q_1\times\vec Q_2 .

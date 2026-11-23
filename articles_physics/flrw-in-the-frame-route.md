@@ -48,7 +48,7 @@ $$
 \tilde E_{\Phi,i}=\sum_{j}L_{ij}\,\vec e_j
 $$
 
-has Gram matrix $\langle\tilde E_{\Phi,i},\tilde E_{\Phi,j}\rangle_{\natural}=\sum_{k}L_{ik}L_{jk}=(LL^{\mathsf T})_{ij}=a^{2}\bar\gamma_{ij}$. The frame is a pointwise linear map from the tangent space of the slice into the spatial triple, and it exists because both forms are positive definite and three-dimensional: no curvature obstructs a pointwise isometry between two positive-definite quadratic spaces of the same dimension.
+has Gram matrix $\langle\tilde E_{\Phi,i},\tilde E_{\Phi,j}\rangle_{\natural}=\sum_{k\in\{x,y,z\}}L_{ik}L_{jk}=(LL^{\mathsf T})_{ij}=a^{2}\bar\gamma_{ij}$. The frame is a pointwise linear map from the tangent space of the slice into the spatial triple, and it exists because both forms are positive definite and three-dimensional: no curvature obstructs a pointwise isometry between two positive-definite quadratic spaces of the same dimension.
 
 Two checks were run. The Cholesky reconstruction reproduces $a^{2}\bar\gamma$ exactly. And the metric $\bar\gamma$ with $k=+1$ is the pullback of the unit-sphere embedding $X=(2x_{1},2x_{2},2x_{3},r^{2}-1)/(1+r^{2})$ in $\mathbb{R}^{4}$, confirmed by differentiating the embedding and comparing the induced metric to $4\delta_{ij}/(1+r^{2})^{2}$; the image has unit norm, so the sphere is the unit sphere and its scalar curvature is the standard $6$. Scaling by $a^{2}$ rescales the curvature by $a^{-2}$, and a direct computation of the three-dimensional Ricci scalar of $a^{2}\bar\gamma$ gave $6.0000$ at $a=1$, $2.6667$ at $a=1.5$ and $1.5000$ at $a=2$ for $k=+1$, and the negatives $-6.0000$ and $-2.6667$ for $k=-1$, which is $6k/a^{2}$ in every case.
 

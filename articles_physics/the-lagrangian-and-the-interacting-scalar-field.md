@@ -25,7 +25,7 @@ which is real and non-negative for every field, because $\tilde\Xi^{*}\tilde\Xi$
 The free action plus one term.
 
 $$
-S[\tilde\Xi,\tilde\Xi^{*}]=\int\mathrm{d}^{4}r\;\Bigl\{\mathrm{Sc}\Bigl[(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi-\sum_\eta(\partial_{r_\eta}\tilde\Xi)^{*}\partial_{r_\eta}\tilde\Xi-4\pi^{2}\nu_m^{2}\tilde\Xi^{*}\tilde\Xi\Bigr]-\frac{\lambda}{4}N^{2}\Bigr\}.
+S[\tilde\Xi,\tilde\Xi^{*}]=\int\mathrm{d}^{4}r\;\Bigl\{\mathrm{Sc}\Bigl[(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi-\sum_{k\in\{x,y,z\}}(\partial_{r_k}\tilde\Xi)^{*}\partial_{r_k}\tilde\Xi-4\pi^{2}\nu_m^{2}\tilde\Xi^{*}\tilde\Xi\Bigr]-\frac{\lambda}{4}N^{2}\Bigr\}.
 $$
 
 The free part is the free article's, sign for sign, and the interaction is one central term. Three properties are checked in one line each.
@@ -128,7 +128,7 @@ One consequence worth keeping. Because the equations are exact, the article can 
 The interacting scalar is the free scalar with one central quartic term, $-\frac{\lambda}{4}N^{2}$, and its Euler–Lagrange equation is $\bigl(\Box_\Phi-4\pi^{2}\nu_m^{2}\bigr)\tilde\Xi=\lambda N\tilde\Xi$. The nonlinearity is a density-dependent mass, with dispersion $\omega^{2}=c^{2}(4\pi^{2}\nu_{\Phi}^{2}+4\pi^{2}\nu_m^{2}+\lambda N)$; the current and the symmetry are the free ones; the energy gains a positive $\frac{\lambda}{4}N^{2}$ and is bounded below for $\lambda>0$. No scattering theory is constructed, and the article says why: the corpus has no quantised states to scatter.
 
 $$
-S=\int\mathrm{d}^{4}r\;\Bigl\{\mathrm{Sc}\bigl[(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi-\textstyle\sum_\eta(\partial_{r_\eta}\tilde\Xi)^{*}\partial_{r_\eta}\tilde\Xi-4\pi^{2}\nu_m^{2}\tilde\Xi^{*}\tilde\Xi\bigr]-\frac{\lambda}{4}N^{2}\Bigr\},
+S=\int\mathrm{d}^{4}r\;\Bigl\{\mathrm{Sc}\bigl[(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi-\textstyle\sum_{k\in\{x,y,z\}}(\partial_{r_k}\tilde\Xi)^{*}\partial_{r_k}\tilde\Xi-4\pi^{2}\nu_m^{2}\tilde\Xi^{*}\tilde\Xi\bigr]-\frac{\lambda}{4}N^{2}\Bigr\},
 \qquad N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi).
 $$
 

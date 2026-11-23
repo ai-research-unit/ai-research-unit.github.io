@@ -59,13 +59,13 @@ The honest summary is this: "the biquaternion vacuum" is not a biquaternion. For
 
 **From the mode expansion.** The free Maxwell potential expands in four covariant polarisations,
 $$
-A_{\imath}(x)=\int\!d^{3}\nu_{\Phi}\sqrt{\frac{c}{2\omega_k}}\sum_{r=0}^{3}
+A_{\imath}(x)=\int\!d^{3}\nu_{\Phi}\sqrt{\frac{c}{2\omega_{\mathrm{mode},m}}}\sum_{r=0}^{3}
 \Big(a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi)\,\epsilon^{(r)}_{\imath}(2\pi\vec\nu_\Phi)\,\exp(-ik\cdot x)
 +a_{\mathrm{fop},r}^{\dagger}(2\pi\vec\nu_\Phi)\,\epsilon^{(r)*}_{\imath}(2\pi\vec\nu_\Phi)\,\exp(+ik\cdot x)\Big),
 \qquad
 \big[a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec\nu_2)\big]=\sigma_{\mathrm{met},r}\,\delta_{rs}\,\delta^{(3)}(\vec\nu_\Phi-\vec\nu_2),
 $$
-with $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, $\omega_k=c\lvert2\pi\vec\nu_\Phi\rvert$ an angular frequency for the massless field, and $k\cdot x=2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega_k r'_t/c$. The normal-ordered Hamiltonian is
+with $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, $\omega_{\mathrm{mode},m}=c\lvert2\pi\vec\nu_\Phi\rvert$ an angular frequency for the massless field, and $k\cdot x=2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega_{\mathrm{mode},m} r'_t/c$. The normal-ordered Hamiltonian is
 $$
 :\!H\!:\,=\sum_{r=0}^{3}\int\!d^{3}\nu_{\Phi}\,\sigma_{\mathrm{met},r}\,hf_{\mathrm{frq},k}\,a_{\mathrm{fop},r}^{\dagger}(2\pi\vec\nu_\Phi)a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi),
 $$
@@ -320,7 +320,7 @@ Two gaps are left visible. The algebra has no native bosonic ladder, so the phot
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre of the algebra; home of the zero-point scalar |

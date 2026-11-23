@@ -108,7 +108,7 @@ Each member is a left multiplication, and the mass is the off-diagonal pairing o
 
 The pair. The two members are two first-order lines on a pair of elements of $\mathbb{B}$, the pair of *Operator and Calculus Conventions*, §*The Plain Bilinear Product, Its Form and Its Norm*: $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, each line composed with its partner being $\Box_\Phi$.
 
-**Why one field carries the massless case and not the massive one.** The square of the gradient is not scalar. The diagonal basis operators of the coefficient basis are the four squares, $e_te_t=e_t$ and $\vec e_\eta\vec e_\eta=-e_t$, so the diagonal part is scalar; the cross terms are the ones that do not cancel — the pairs of two distinct spatial units cancel by antisymmetry, and the time–space pairs add, because $e_t$ commutes with the three spatial units. This is a derived form, read from the multiplication here. Hence $\tilde\nabla_\Phi^2\neq\Box_\Phi$, and the square is not even scalar, while a scalar square is what a one-field first-order massive equation would need. The free equation therefore stays first order in one field; the massive equation is the chiral pair above, two fields and one mass; and a one-field first-order massive equation does not exist here. This article writes none.
+**Why one field carries the massless case and not the massive one.** The square of the gradient is not scalar. The diagonal basis operators of the coefficient basis are the four squares, $e_te_t=e_t$ and $\vec e_k\vec e_k=-e_t$, so the diagonal part is scalar; the cross terms are the ones that do not cancel — the pairs of two distinct spatial units cancel by antisymmetry, and the time–space pairs add, because $e_t$ commutes with the three spatial units. This is a derived form, read from the multiplication here. Hence $\tilde\nabla_\Phi^2\neq\Box_\Phi$, and the square is not even scalar, while a scalar square is what a one-field first-order massive equation would need. The free equation therefore stays first order in one field; the massive equation is the chiral pair above, two fields and one mass; and a one-field first-order massive equation does not exist here. This article writes none.
 
 The mass bilinear. The Dirac mass bilinear is the frame's scalar with the timelike unit $i\vec e_x$ inserted on the right,
 
@@ -126,7 +126,7 @@ Two further results of that article are the ones that bear on QCD.
     $$
     j_{50}=\mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,(-i\vec e_z)\bigr),
     \qquad
-    j_{5\eta}=\mathrm{Sc}\bigl(i\tilde{Ξ}^*\vec e_\eta\tilde{Ξ}\bigr),
+    j_{5k}=\mathrm{Sc}\bigl(i\tilde{Ξ}^*\vec e_k\tilde{Ξ}\bigr),
     $$
 
     the time component multiplying on the right and the three spatial ones on the left, and

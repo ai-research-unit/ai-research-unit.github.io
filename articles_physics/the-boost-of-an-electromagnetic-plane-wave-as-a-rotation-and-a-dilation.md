@@ -220,7 +220,7 @@ Transversely the dilation is $\gamma$ — the transverse Doppler factor — and 
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}$, $e_t = 1, \vec e_\eta$ | Biquaternion algebra, quaternion basis with $\vec e_\eta^2 = -e_t$ |
+| $\mathbb{B}$, $e_t = 1, \vec e_k$ | Biquaternion algebra, quaternion basis with $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
 | $\mathbb{B}_{H}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Real-quaternion, Hermitian and anti-Hermitian subspaces |
 | $\vec\nu_\Phi = \nu_{\Phi}\vec u_\Phi = \frac{\omega}{c}\vec u_\Phi$ | Wavevector, $2\pi\nu_{\Phi} = \omega/c$, $\vec u_\Phi$ its unit direction |

@@ -8,7 +8,7 @@ Each exercise in the series is solved twice: first in the standard way, then in 
 
 Earlier exercises treated a single qubit: a single measurement (Exercise: Measuring Spin Along an Arbitrary Direction), time evolution (Exercise: Spin Precession in a Magnetic Field), and successive measurements (Exercise: Successive Measurements of Spin). This exercise treats a **two-qubit system**, and introduces the first genuinely quantum-mechanical correlation: **entanglement**.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. The reading of an element of $\mathbb{B}_{\Psi}$ is its scalar part: a contraction of one biquaternion carries $2$, and a contraction of two factors carries $4$. For the two-qubit system, the state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, which is isomorphic to $M_4(\mathbb{C})$. The scalar part on $\mathbb{B}\otimes\mathbb{B}$ is the product of the scalar parts on each factor, $\mathrm{Sc}(x\otimes y) = \mathrm{Sc}(x)\cdot\mathrm{Sc}(y)$, so a contraction of both factors carries $4$ and a contraction of one carries $2$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The reading of an element of $\mathbb{B}_{\Psi}$ is its scalar part: a contraction of one biquaternion carries $2$, and a contraction of two factors carries $4$. For the two-qubit system, the state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, which is isomorphic to $M_4(\mathbb{C})$. The scalar part on $\mathbb{B}\otimes\mathbb{B}$ is the product of the scalar parts on each factor, $\mathrm{Sc}(x\otimes y) = \mathrm{Sc}(x)\cdot\mathrm{Sc}(y)$, so a contraction of both factors carries $4$ and a contraction of one carries $2$.
 
 ## The Exercise
 
@@ -69,9 +69,9 @@ The four expectation values in the singlet state are:
 - $\langle I\rangle = 1$.
 - $\langle\vec u_a\cdot\boldsymbol{\sigma}_1\rangle = \sum_j a_j\langle\sigma_{1j}\rangle = 0$, because the singlet is rotationally invariant and $\langle\sigma_{1j}\rangle = 0$ for all $j$.
 - $\langle\vec u_b\cdot\boldsymbol{\sigma}_2\rangle = 0$, by the same argument.
-- $\langle(\vec u_a\cdot\boldsymbol{\sigma}_1)(\vec u_b\cdot\boldsymbol{\sigma}_2)\rangle = \sum_{j,\eta}a_j b_k\langle\sigma_{1j}\sigma_{2\eta}\rangle = -\sum_j a_j b_j = -\vec u_a\cdot\vec u_b$.
+- $\langle(\vec u_a\cdot\boldsymbol{\sigma}_1)(\vec u_b\cdot\boldsymbol{\sigma}_2)\rangle = \sum_{j,k}a_j b_k\langle\sigma_{1j}\sigma_{2k}\rangle = -\sum_j a_j b_j = -\vec u_a\cdot\vec u_b$.
 
-The last equality uses the standard singlet correlation $\langle\sigma_{1j}\sigma_{2\eta}\rangle = -\delta_{j\eta}$.
+The last equality uses the standard singlet correlation $\langle\sigma_{1j}\sigma_{2k}\rangle = -\delta_{jk}$.
 
 Substituting,
 
@@ -111,7 +111,7 @@ $$
 
 For the diagonal pairs $\mu = \jmath$, the product $e_{\imath}\circ e_{\imath}$ equals $e_t$ for ${\imath} = t$ and $-e_t$ for $\mu\in\{x,y,z\}$. In both cases the tensor product $(e_{\imath}\circ e_{\imath})\otimes(e_{\imath}\circ e_{\imath})$ equals $e_t\otimes e_t$, so the four diagonal terms contribute $4\,e_t\otimes e_t$ in total.
 
-For the off-diagonal pairs ${\imath} \neq \jmath$, the twelve ordered pairs $(\imath,\jmath)$ with ${\imath} \neq \jmath$ group into six unordered pairs $\{\imath,\jmath\}$. Each unordered pair contributes two terms to the sum, and in every case the two terms are equal: for pairs involving the identity (of the form $\{t,\jmath\}$), the products $e_t \vec e_{\jmath}$ and $\vec e_{\jmath} e_t$ are both equal to $\vec e_{\jmath}$, so the two terms $\vec e_{\jmath}\otimes \vec e_{\jmath}$ coincide; for pairs not involving the identity (of the form $\{\imath,\jmath\}$ with ${\imath}, \jmath \in \{x,y,z\}$), the products $e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmath\lambda} e_\lambda$ and $\vec e_{\jmath} e_{\imath} = -\epsilon_{\imath\jmath\lambda} e_\lambda$ are opposites, and the tensor product squares the sign, so again the two terms $e_\lambda\otimes e_\lambda$ coincide. Concretely, the three pairs involving $e_t$ contribute $2\,\vec e_\eta\otimes \vec e_\eta$ for $\eta = 1, 2, 3$, and the three pairs not involving $e_t$ contribute $2\,e_\lambda\otimes e_\lambda$ for $\lambda$ equal to the remaining index. Summing, each of $\vec e_x\otimes \vec e_x$, $\vec e_y\otimes \vec e_y$, $\vec e_z\otimes \vec e_z$ appears four times, and the off-diagonal terms contribute
+For the off-diagonal pairs ${\imath} \neq \jmath$, the twelve ordered pairs $(\imath,\jmath)$ with ${\imath} \neq \jmath$ group into six unordered pairs $\{\imath,\jmath\}$. Each unordered pair contributes two terms to the sum, and in every case the two terms are equal: for pairs involving the identity (of the form $\{t,\jmath\}$), the products $e_t \vec e_{\jmath}$ and $\vec e_{\jmath} e_t$ are both equal to $\vec e_{\jmath}$, so the two terms $\vec e_{\jmath}\otimes \vec e_{\jmath}$ coincide; for pairs not involving the identity (of the form $\{\imath,\jmath\}$ with ${\imath}, \jmath \in \{x,y,z\}$), the products $e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmath\lambda} e_\lambda$ and $\vec e_{\jmath} e_{\imath} = -\epsilon_{\imath\jmath\lambda} e_\lambda$ are opposites, and the tensor product squares the sign, so again the two terms $e_\lambda\otimes e_\lambda$ coincide. Concretely, the three pairs involving $e_t$ contribute $2\,\vec e_k\otimes \vec e_k$ for $k=1,2,3$, and the three pairs not involving $e_t$ contribute $2\,e_\lambda\otimes e_\lambda$ for $\lambda$ equal to the remaining index. Summing, each of $\vec e_x\otimes \vec e_x$, $\vec e_y\otimes \vec e_y$, $\vec e_z\otimes \vec e_z$ appears four times, and the off-diagonal terms contribute
 
 $$
 4\left(\vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
@@ -215,7 +215,7 @@ $$
 
 the natural pairing between the joint state and the joint measurement operator. The contraction factorises over the two factors, $4\,\mathrm{Sc}(x\otimes y) = 2\,\mathrm{Sc}(x)\cdot 2\,\mathrm{Sc}(y)$.
 
-**3. The correlations arise from the tensor-product structure.** The single-qubit idempotents $\tilde\Pi_{\mathrm{id}}(\vec u_a)$ and $\tilde\Pi_{\mathrm{id}}(\vec u_b)$ are independent, but the joint state $\tilde\Pi_{\mathrm{id,singlet}}$ is entangled. The correlation $\vec u_a\cdot\vec u_b$ enters through the cross terms $\sum_\eta \vec e_\eta\otimes \vec e_\eta$ in the singlet idempotent, which couple the two qubits.
+**3. The correlations arise from the tensor-product structure.** The single-qubit idempotents $\tilde\Pi_{\mathrm{id}}(\vec u_a)$ and $\tilde\Pi_{\mathrm{id}}(\vec u_b)$ are independent, but the joint state $\tilde\Pi_{\mathrm{id,singlet}}$ is entangled. The correlation $\vec u_a\cdot\vec u_b$ enters through the cross terms $\sum_{k\in\{x,y,z\}} \vec e_k\otimes \vec e_k$ in the singlet idempotent, which couple the two qubits.
 
 **4. The geometry enters through the algebra.** The angle $\theta$ enters through the scalar product $\vec u_a\cdot\vec u_b$, which appears in the contraction formula through the products $\vec e_{\jmath}\vec u_a$ and $\vec e_{\jmath}\vec u_b$. The Bloch sphere geometry of each qubit is thus combined into the joint probability through the algebra of $\mathbb{B}\otimes\mathbb{B}$.
 
@@ -250,11 +250,11 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\mathbb{B}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables) |
 | $\mathbb{B}\otimes\mathbb{B}$ | Tensor product, isomorphic to $M_4(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
 | $|\tilde{Ξ}^-\rangle$ | Singlet state |
-| $\tilde\Pi_{\mathrm{id,singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_\eta \vec e_\eta\otimes \vec e_\eta)$ | Singlet idempotent |
+| $\tilde\Pi_{\mathrm{id,singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_{k\in\{x,y,z\}} \vec e_k\otimes \vec e_k)$ | Singlet idempotent |
 | $\tilde\Pi_{\mathrm{id}}(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$ | Single-qubit idempotent |
 | $\tilde\Pi_{\mathrm{id},++}(\vec u_a,\vec u_b) = \tilde\Pi_{\mathrm{id}}(\vec u_a)\otimes \tilde\Pi_{\mathrm{id}}(\vec u_b)$ | Joint idempotent |
 | $\mathrm{Sc}(x\otimes y) = \mathrm{Sc}(x)\cdot\mathrm{Sc}(y)$ | Scalar part on the tensor product; a contraction carries $4$ |

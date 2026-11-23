@@ -112,7 +112,7 @@ $$
 R_{\imath} = r_{\imath} + i\,r'_{\imath}, \qquad r_{\imath}, r'_{\imath} \in \mathbb{R}.
 $$
 
-The material sector is described by the real coordinates $r_\eta$ for $\eta = x, y, z$ — the spatial parameters $r_x, r_y, r_z$ — together with the imaginary time part $r'_t$. The informational sector — the sector whose elements carry the operator algebra of quantum physics — is described by the imaginary coordinates $h'_\eta$ for $\eta = x, y, z$ — the spatial parameters $h'_{x}, h'_{y}, h'_{z}$ — together with the real time part $h_t$. The time coefficient carries the $i r'_t$ structure explicitly, where $c = 1/\sqrt{\epsilon\mu}$ is the **local** speed of light in the medium. In vacuum, $c = c_0$ and the familiar $i r'_t$ form is recovered.
+The material sector is described by the real coordinates $r_k$ for $k=x,y,z$ — the spatial parameters $r_x, r_y, r_z$ — together with the imaginary time part $r'_t$. The informational sector — the sector whose elements carry the operator algebra of quantum physics — is described by the imaginary coordinates $h'_k$ for $k=x,y,z$ — the spatial parameters $h'_{x}, h'_{y}, h'_{z}$ — together with the real time part $h_t$. The time coefficient carries the $i r'_t$ structure explicitly, where $c = 1/\sqrt{\epsilon\mu}$ is the **local** speed of light in the medium. In vacuum, $c = c_0$ and the familiar $i r'_t$ form is recovered.
 
 In this framework, the Lorentzian sign pattern of the real slice is not postulated; it emerges algebraically from the complex structure. The metric convention, for all its technical convenience, hides this emergence.
 

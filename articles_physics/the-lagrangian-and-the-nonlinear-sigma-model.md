@@ -38,7 +38,7 @@ What is not new. The model, its target, its current and its power counting are s
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_\eta^{2}=-e_t$ for $\eta=x,y,z$, and central scalar imaginary $i$. The material sector is $\mathbb{B}_\Phi$; the group-valued field takes values in the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}=\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$.
+The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_k^{2}=-e_t$ for $k=x,y,z$, and central scalar imaginary $i$. The material sector is $\mathbb{B}_\Phi$; the group-valued field takes values in the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}=\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$.
 
 The two products used. $\mathrm{Sc}(X)$ is the coefficient of $e_t$ in $X$; $\langle X\rangle_\natural=\mathrm{Sc}(X X^{\natural})$ is the Minkowski square of $X$. The spatial sum $\sum_{\imath}$ runs over $t,x,y,z$ with the corpus's sign rule $\sum_{\imath} X_{\imath} X_{\imath}=X_t^{2}-\sum_j X_j^{2}$.
 
@@ -53,7 +53,7 @@ The field. The sigma-model field is the chiral field of the pion,
 $$
 \tilde U=\exp\!\left(\frac{\vec\pi}{f}\right),
 \qquad
-\vec\pi=\sum_\eta \pi_\eta\vec e_\eta ,
+\vec\pi=\sum_{k\in\{x,y,z\}} \pi_k\vec e_k ,
 \qquad
 \vec\pi^{\natural}=-\vec\pi ,
 $$
@@ -63,10 +63,10 @@ which is a unit real quaternion because $\vec\pi$ is anti-Hermitian and the expo
 $$
 \tilde U=\cos\frac{|\pi|}{f}\,e_t+\frac{\sin(|\pi|/f)}{|\pi|}\,\vec\pi ,
 \qquad
-|\pi|=\sqrt{\sum_\eta\pi_\eta\pi_\eta},
+|\pi|=\sqrt{\sum_{k\in\{x,y,z\}}\pi_k\pi_k},
 $$
 
-the second form showing that the three $\pi_\eta$ are coordinates on the group and not linear fields.
+the second form showing that the three $\pi_k$ are coordinates on the group and not linear fields.
 
 The current. The Maurer–Cartan form is
 
@@ -93,7 +93,7 @@ with $\bar j_{\imath}=-j_{\imath}$ because $j_{\imath}$ is anti-Hermitian, so th
 $$
 j_{\imath}=\frac{1}{f}\frac{\partial \vec\pi}{\partial R_{\imath}}+O(\pi^2),
 \qquad
--\frac{f^2}{2}\mathrm{Sc}(j_{\imath} j_{\imath})=-\frac12\sum_\eta\frac{\partial \pi_\eta}{\partial R_{\imath}}\frac{\partial \pi_\eta}{\partial R_{\imath}}+O(\pi^4),
+-\frac{f^2}{2}\mathrm{Sc}(j_{\imath} j_{\imath})=-\frac12\sum_{k\in\{x,y,z\}}\frac{\partial \pi_k}{\partial R_{\imath}}\frac{\partial \pi_k}{\partial R_{\imath}}+O(\pi^4),
 $$
 
 so that the quadratic part is the canonical kinetic term of three real fields with coefficient exactly one and no free parameter. The constant $f$ has cancelled between the coefficient and the current, and that cancellation is the statement that $f$ is the decay constant and not a coupling.

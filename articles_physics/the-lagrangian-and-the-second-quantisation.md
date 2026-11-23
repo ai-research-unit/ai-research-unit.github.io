@@ -53,9 +53,9 @@ is the Peierls bracket: the difference of the two Green functions is the classic
 The hand check for the scalar. For $\mathcal{D}=\Box_\Phi-4\pi^{2}\nu_m^{2}$ the difference of the Green functions is the Pauli–Jordan function,
 
 $$
-G(x,y)=\int\mathrm{d}^{3}\nu_{\Phi}\;\frac{\sin\bigl(\omega_k\,\Delta r'^{0}/c\bigr)}{\omega_k}\,e^{2\pi i\vec\nu_{\Phi}\cdot(\vec r-\vec r')},
+G(x,y)=\int\mathrm{d}^{3}\nu_{\Phi}\;\frac{\sin\bigl(\omega_{\mathrm{mode},m}\,\Delta r'^{0}/c\bigr)}{\omega_{\mathrm{mode},m}}\,e^{2\pi i\vec\nu_{\Phi}\cdot(\vec r-\vec r')},
 \qquad
-\omega_k=c\sqrt{k^{2}+4\pi^{2}\nu_m^{2}},
+\omega_{\mathrm{mode},m}=c\sqrt{4\pi^{2}\nu_{\Phi}^{2}+4\pi^{2}\nu_m^{2}},
 $$
 
 which vanishes at $\Delta r'^{0}=0$ and whose time derivative there is $\delta^{3}(\vec r-\vec r')$. So $\{\phi(\vec r),\phi(\vec r')\}=0$ and $\{\phi(\vec r),\pi(\vec r')\}=\delta^{3}(\vec r-\vec r')$: the canonical bracket is *derived* from the action's Green functions, not assumed. That derivation is the first step of the route, and it is the one the corpus's quadratic actions make available.

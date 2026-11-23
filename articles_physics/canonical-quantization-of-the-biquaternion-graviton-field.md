@@ -6,7 +6,7 @@ The graviton is the quantum of the metric's deviation from flatness: the massles
 
 The framework's account of the graviton is the cleanest illustration of how it builds a higher-spin field. The graviton's carrier is the **symmetric trace-free square of the material vector**, and its decomposition is the framework's own:
 
-**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial R_{\imath}$ and the coefficients $Q_{\imath}=q_{\imath}+iq'_{\imath}$, written out in full as $Q_t=q_t+i q'_t$ and $Q_\eta=q_\eta+i q'_{\eta}$, with $q_t=h_t$, $q'_t=r'_t$, $q_\eta=x_\eta$ and $q'_{\eta}=h'_{x_\eta}$. The reading used below is the material one, $Q_t=i q'_t$ and $Q_\eta=q_\eta$: the labels are summed directly with the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$, and the d'Alembertian is $\Box_\Phi=\sum_{\imath}\partial^2/\partial R_{\imath}^2$, whose one minus on the time term is the square of the $i$ in $Q_t$, not a declared sign.
+**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial R_{\imath}$ and the coefficients $Q_{\imath}=q_{\imath}+iq'_{\imath}$, written out in full as $Q_t=q_t+i q'_t$ and $Q_k=q_k+i q'_k$, with $q_t=h_t$, $q'_t=r'_t$, $q_k=x_k$ and $q'_k=h'_{x_k}$. The reading used below is the material one, $Q_t=i q'_t$ and $Q_k=q_k$: the labels are summed directly with the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$, and the d'Alembertian is $\Box_\Phi=\sum_{\imath}\partial^2/\partial R_{\imath}^2$, whose one minus on the time term is the square of the $i$ in $Q_t$, not a declared sign.
 
 $$
 \boxed{\;\left(V\odot V\right)_{\text{sym}} = 0\oplus 2 ,
@@ -90,7 +90,7 @@ physical polarizations. These two are the transverse-traceless modes: transverse
 The projection is performed by the transverse-traceless projector. For a wave vector $\vec\nu_\Phi$ with transverse metric $\Pi_{ij}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$, the projector on symmetric spatial tensors is
 
 $$
-P_{ij,\eta l} = \tfrac12\left(\Pi_{i\eta}\Pi_{jl}+\Pi_{il}\Pi_{j\eta}\right)-\tfrac12\,\Pi_{ij}\Pi_{\eta l} ,
+P_{ij,k l} = \tfrac12\left(\Pi_{ik}\Pi_{jl}+\Pi_{il}\Pi_{jk}\right)-\tfrac12\,\Pi_{ij}\Pi_{k l} ,
 $$
 
 and it has the defining properties
@@ -100,9 +100,9 @@ $$
 \qquad
 \mathrm{tr}\,P = 2 ,
 \qquad
-P_{ij,\eta l}\left(k_k\zeta_l+2\pi\nu_{l}\zeta_k\right) = 0 ,
+P_{ij,k l}\left(k_k\zeta_l+2\pi\nu_{l}\zeta_k\right) = 0 ,
 \qquad
-P_{ij,\eta l}\,\delta_{\eta l} = 0\;},
+P_{ij,k l}\,\delta_{k l} = 0\;},
 $$
 
 idempotent, of trace two, and annihilating both the pure-gauge modes $\nu_{i}\zeta_j+\nu_{j}\zeta_i$ and the trace mode $\delta_{ij}$. The rank of the space spanned by the pure-gauge modes and the trace was computed to be four, so that the transverse-traceless complement has dimension
@@ -217,13 +217,13 @@ V\ (\text{spin }1) ,
 V\odot V\ (\text{spin }2) ,
 $$
 
-where $S$ is the left-ideal spinor carrier. The projections are the trace removal with the general quaternionic bilinear form $\mathrm{Sc}(\cdot{}^{\natural})$ for the integer cases and the $\gamma$-trace for the half-integer case; the graviton's projector, $\mathcal{P}_{\imath\jmath,\rho\sigma}$ in the propagator and $P_{ij,\eta l}$ in the physical-state count, is the trace removal of the symmetric square. The counts then follow: the vector has three massive and two massless states, the Rarita–Schwinger field four massive and two massless, the graviton five massive and two massless — the massive count $2s+1$, the massless count two, in every case.
+where $S$ is the left-ideal spinor carrier. The projections are the trace removal with the general quaternionic bilinear form $\mathrm{Sc}(\cdot{}^{\natural})$ for the integer cases and the $\gamma$-trace for the half-integer case; the graviton's projector, $\mathcal{P}_{\imath\jmath,\rho\sigma}$ in the propagator and $P_{ij,k l}$ in the physical-state count, is the trace removal of the symmetric square. The counts then follow: the vector has three massive and two massless states, the Rarita–Schwinger field four massive and two massless, the graviton five massive and two massless — the massive count $2s+1$, the massless count two, in every case.
 
 What is genuinely algebraic in this account is the trace removal. The bilinear form of the algebra provides a canonical contraction, and the symmetric square of the material vector splits into the trace and the trace-free part relative to that form. The framework therefore does not need to postulate which combination of components is the spin-two field: the spin-two field is the trace-free part of the symmetric square, and the trace is the spin-zero field, and both are determined once the algebra's bilinear form is fixed. This is the same mechanism that made the spin-one field the adjoint action on the vector part and the spin-$\tfrac32$ field the $\gamma$-traceless part of the material four-vector tensored with the spinor $S$, of dimension twelve; the graviton is the case in which the tensor product is the symmetric square of the vector itself.
 
 ### The Trace-Free Square in Components
 
-The split is explicit in components. Write a material vector as $u=\sum_\eta u_\eta\vec e_\eta$ with real coefficients $u_k$, and take the symmetric square with components $T_{j\eta}=u_ju_k$, or $T_{j\eta}=u_jv_k+u_kv_j$ for a pair of vectors. The bilinear form gives the trace
+The split is explicit in components. Write a material vector as $u=\sum_{k\in\{x,y,z\}} u_k\vec e_k$ with real coefficients $u_k$, and take the symmetric square with components $T_{jk}=u_ju_k$, or $T_{jk}=u_jv_k+u_kv_j$ for a pair of vectors. The bilinear form gives the trace
 
 $$
 \langle u,v\rangle = \mathrm{Sc}\left(u\bar{v}\right) = \vec u\cdot\vec v ,
@@ -232,7 +232,7 @@ $$
 which for the symmetric square is $|\vec u|^2$, and the trace-free part is
 
 $$
-T_{j\eta}-\tfrac13\delta_{j\eta}\sum_l T_{ll} ,
+T_{jk}-\tfrac13\delta_{jk}\sum_l T_{ll} ,
 $$
 
 of dimension five. The decomposition $6=1+5$ is therefore the statement that the trace direction is one-dimensional and its complement is five-dimensional, and both are determined once the bilinear form is fixed, with no further postulate. This is what the rank computation of the transverse-traceless sector reproduces: the trace direction contributes one to the four-dimensional space of gauge and trace modes that the physical projector annihilates, and the remaining three are the gauge modes of helicity $\pm1$ and $0$. The framework's spin-two field is thus the trace-free symmetric square, and its five components are the massive spin-two carrier; the gauge removes three of them, leaving the two of the massless graviton.
@@ -261,7 +261,7 @@ of dimension five. The decomposition $6=1+5$ is therefore the statement that the
 
 ## Summary
 
-The graviton is the massless spin-two field of the linearized Einstein theory, with the gauge symmetry $h_{\imath\jmath}\mapsto h_{\imath\jmath}+\partial/\partial R_{\imath}\,\zeta_{\jmath}+\partial/\partial R_{\jmath}\,\zeta_{\imath}$ and the linearized Riemann tensor as its gauge-invariant field strength. A symmetric tensor has ten components; the gauge removes four and the constraints four more, leaving the two transverse-traceless polarizations of helicity $\pm2$. The transverse-traceless projector $P_{ij,\eta l}=\tfrac12(\Pi_{i\eta}\Pi_{jl}+\Pi_{il}\Pi_{j\eta})-\tfrac12\Pi_{ij}\Pi_{\eta l}$ is idempotent, has trace two, kills the pure-gauge and trace modes, and has a transverse-traceless complement of dimension two; all of these were verified to machine precision, and the two polarizations were verified to be its fixed points.
+The graviton is the massless spin-two field of the linearized Einstein theory, with the gauge symmetry $h_{\imath\jmath}\mapsto h_{\imath\jmath}+\partial/\partial R_{\imath}\,\zeta_{\jmath}+\partial/\partial R_{\jmath}\,\zeta_{\imath}$ and the linearized Riemann tensor as its gauge-invariant field strength. A symmetric tensor has ten components; the gauge removes four and the constraints four more, leaving the two transverse-traceless polarizations of helicity $\pm2$. The transverse-traceless projector $P_{ij,k l}=\tfrac12(\Pi_{ik}\Pi_{jl}+\Pi_{il}\Pi_{jk})-\tfrac12\Pi_{ij}\Pi_{k l}$ is idempotent, has trace two, kills the pure-gauge and trace modes, and has a transverse-traceless complement of dimension two; all of these were verified to machine precision, and the two polarizations were verified to be its fixed points.
 
 In the biquaternion framework the carrier is the symmetric square of the material vector, $V\odot V$, whose decomposition is $0\oplus2$ with $6=1+5$: the trace is the spin-zero singlet and the trace-free part is the spin-two carrier of dimension five, the trace being removed with the algebra's bilinear form. The massless gauge then removes three of the five, leaving the two helicities $\pm2$. The canonical quantization gives the transverse-traceless mode expansion with two polarizations, the bosonic commutators $[a_r(\vec p),a_s^\dagger(\vec p^{\,\prime})]=h^{3}\delta_{rs}\delta^{(3)}$, and the Fock space; the covariant quantization requires the de Donder gauge fixing and Faddeev–Popov vector ghosts, with the standard BRST structure. The propagator's numerator is the standard de Donder structure, and the massive Fierz–Pauli theory has five polarizations whose massless limit exhibits the van Dam–Veltman–Zakharov discontinuity.
 
@@ -279,7 +279,7 @@ The framework's statement about the graviton is therefore the same as its statem
 | $\sum_{\imath}\partial/\partial R_{\imath}\bar{h}_{\imath\jmath}=0$ | de Donder (harmonic, Lorentz-type) gauge |
 | $10-4-4=2$ | Components, gauge removal, constraint removal, physical polarizations |
 | $\Pi_{ij}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$ | Transverse metric |
-| $P_{ij,\eta l}=\tfrac12(\Pi_{i\eta}\Pi_{jl}+\Pi_{il}\Pi_{j\eta})-\tfrac12\Pi_{ij}\Pi_{\eta l}$ | Transverse-traceless projector; $P^2=P$, $\mathrm{tr}P=2$ (verified) |
+| $P_{ij,k l}=\tfrac12(\Pi_{ik}\Pi_{jl}+\Pi_{il}\Pi_{jk})-\tfrac12\Pi_{ij}\Pi_{k l}$ | Transverse-traceless projector; $P^2=P$, $\mathrm{tr}P=2$ (verified) |
 | $\varepsilon^{+}_{ij},\varepsilon^{\times}_{ij}$ | Two polarizations; helicities $\pm2$ |
 | $V\odot V=0\oplus2$, $6=1+5$ | Symmetric square of the material vector and its decomposition |
 | $h_{ij}^{\mathrm{TT}}(x)$ | Transverse-traceless mode expansion |

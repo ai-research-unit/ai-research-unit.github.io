@@ -10,7 +10,7 @@ The parent's coupled reading is explicit: on the coupled carrier the mass term d
 
 Along the shifted four-momentum the form is $\tfrac12\nu_m^{2}(A\!\cdot\!A)$, so its magnitude is $\tfrac12\nu_m^{2}$ — $0.245000000$ at $2\pi\nu_m=0.7$ — at every momentum tested, and the coupling's only effect is the sign, which follows $\pi^{2}$. The coupling cannot change what the constraint costs, and that is the frequency-space form of the parent's "the constraint is a consequence and not an imposed condition".
 
-The coefficient of $A_0^{2}$ is $\tfrac12(\lvert\vec\pi\rvert^{2}+\nu_m^{2})$, with no $\pi_t^{2}$: measured at $1.065000000$ for $\pi_t=0.9,\,1.6,\,2.4$ while the first spatial coefficient moves from $0.060$ to $0.935$ to $2.535$. **A covariant derivative cannot put a time derivative on $A_0$**, because $F_{0\eta}$ has none.
+The coefficient of $A_0^{2}$ is $\tfrac12(\lvert\vec\pi\rvert^{2}+\nu_m^{2})$, with no $\pi_t^{2}$: measured at $1.065000000$ for $\pi_t=0.9,\,1.6,\,2.4$ while the first spatial coefficient moves from $0.060$ to $0.935$ to $2.535$. **A covariant derivative cannot put a time derivative on $A_0$**, because $F_{0k}$ has none.
 
 The charge current carries no mass, because it is built from $i\tilde\nabla_{\mathrm{gco},\Phi}$ and the mass is not in the gradient; the energy carries $\nu_m^{2}$, because twice the scalar part is the mass term. The charge is the phase's and the energy is the scale's, and the article states the two as one sentence about which term of the action each one comes from.
 
@@ -155,7 +155,7 @@ Expanding the form's diagonal,
 $$
 \frac{\partial^{2}S}{\partial A_0^{2}}=\tfrac12\bigl(\pi_t^{2}-\pi^{2}+4\pi^{2}\nu_m^{2}\bigr)=\tfrac12\bigl(\lvert\vec\pi\rvert^{2}+4\pi^{2}\nu_m^{2}\bigr) ,
 \qquad
-\frac{\partial^{2}S}{\partial A_\eta^{2}}=\tfrac12\bigl(\pi_\eta^{2}+\pi^{2}-4\pi^{2}\nu_m^{2}\bigr) ,
+\frac{\partial^{2}S}{\partial A_k^{2}}=\tfrac12\bigl(\pi_k^{2}+\pi^{2}-4\pi^{2}\nu_m^{2}\bigr) ,
 $$
 
 so the temporal coefficient has no $\pi_t^{2}$ and the three spatial coefficients each carry $\pi_t^{2}$ through $\pi^{2}$. Measured at the unit charge, $\vec A=(0.9,0.2,0.1)$ and $2\pi\vec\nu_\Phi=(0.3,0.2,0.1)$, so $\vec\pi=(1.2,0.4,0.2)$ and $\lvert\vec\pi\rvert^{2}=1.64$:
@@ -166,7 +166,7 @@ so the temporal coefficient has no $\pi_t^{2}$ and the three spatial coefficient
 | $1.6$ | $1.065000000$ | $1.065000000$ | $+0.935000$ |
 | $2.4$ | $1.065000000$ | $1.065000000$ | $+2.535000$ |
 
-The temporal coefficient does not move with the frequency, and the spatial ones do, exactly as in the free case. The coupling cannot add a $\pi_t^{2}$ to $A_0$, because the curvature's temporal-spatial components are $\partial_0A_\eta-\partial_\eta A_0$ and neither contains $\partial_0A_0$.
+The temporal coefficient does not move with the frequency, and the spatial ones do, exactly as in the free case. The coupling cannot add a $\pi_t^{2}$ to $A_0$, because the curvature's temporal-spatial components are $\partial_0A_k-\partial_k A_0$ and neither contains $\partial_0A_0$.
 
 **So the count is four minus one in both theories, and the reason is the field strength's antisymmetry and not the mass.** The free article's absent power and the coupled article's absent power are the same absent power. That is the article's cleanest agreement with its free companion, and it is worth stating because the coupling changes almost everything else.
 
@@ -245,7 +245,7 @@ The two terms have different algebraic characters and transform differently unde
 
 The constraint is a determination: $[kA]=0$ gives $a_t'=2\pi\vec\nu_\Phi\cdot\vec a/\nu_t'$, verified to $8\times10^{-17}$ on two amplitudes, so the temporal component is expressed through the three spatial ones and the mass is what makes the division possible. The longitudinal coefficient's magnitude is $\tfrac124\pi^{2}\nu_m^{2}=0.245000000$ at every momentum tested, the sign following $\pi^{2}$, so the coupling moves the cone and not the cost.
 
-The temporal coefficient is $\tfrac12(\lvert\vec\pi\rvert^{2}+\nu_m^{2})$, with no $\pi_t^{2}$: $1.065000000$ at $\pi_t=0.9,\,1.6,\,2.4$ while the first spatial coefficient moves from $0.060$ to $2.535$. The primary constraint survives the coupling, because $F_{0\eta}$ contains no $\partial_0A_0$, and the count is four minus one in both theories.
+The temporal coefficient is $\tfrac12(\lvert\vec\pi\rvert^{2}+\nu_m^{2})$, with no $\pi_t^{2}$: $1.065000000$ at $\pi_t=0.9,\,1.6,\,2.4$ while the first spatial coefficient moves from $0.060$ to $2.535$. The primary constraint survives the coupling, because $F_{0k}$ contains no $\partial_0A_0$, and the count is four minus one in both theories.
 
 The charge carries no mass and the energy carries $\nu_m^{2}$: the charge's symbol is $-i\pi_{\imath}$ times a bilinear and the mass is not in the operator; the trace is $3\pi^{2}-4\nu_m^{2}$, which is $-\nu_m^{2}$ on the shell. The form is quadratic in the frequency, so the Legendre inversion is two-valued, and with a connection the two roots are reflections about $\omega=-\frac{2\pi \varkappa c\omicron_{\mathrm{pot}}}{h}$ rather than about zero.
 

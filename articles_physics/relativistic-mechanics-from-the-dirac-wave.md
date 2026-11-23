@@ -26,7 +26,7 @@ $$
 
 The product $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ is the central scalar $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, which with $r'_{t}=ct$ is $-\frac{1}{c^{2}}\partial_{t}^{2}+\vec\nabla_\Phi^{2}$, so each half obeys $\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\tilde\Xi=0$. The passage from the first-order pair to that second-order equation is the subject of *Klein–Gordon from the Dirac Square*; what matters here is that the operator is scalar, so the expansion never has to choose a chiral half.
 
-The expansion. Write $\tilde\Xi=Ae^{i\theta_{\mathrm{phs}}}\xi$ with $A>0$ real, $S_{\tilde\Xi}$ real and $\xi$ slowly varying. The action carries the subscript of the field it belongs to because this article also carries the spin $\tilde S_{\Psi,\eta}$, and the bare letter would be read for either. Then
+The expansion. Write $\tilde\Xi=Ae^{i\theta_{\mathrm{phs}}}\xi$ with $A>0$ real, $S_{\tilde\Xi}$ real and $\xi$ slowly varying. The action carries the subscript of the field it belongs to because this article also carries the spin $\tilde S_{\Psi,k}$, and the bare letter would be read for either. Then
 
 Throughout, $\theta_{\mathrm{phs}}:=\frac{2\pi S_{\tilde\Xi}}{h}$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
 
@@ -113,7 +113,7 @@ $$
 \vec B=\vec\nabla_\Phi\times\vec A\;}
 $$
 
-with $d/dt=\partial_{t}+\vec v\cdot\nabla$ along the flow. The identity $(\vec v\times\vec B)_{i}=\epsilon_{ij\eta}v_{j}B_{\eta}=v_{j}\partial_{i}A_{j}-v_{j}\partial_{j}A_{i}$ turns the last term into the cross product. The magnetic part is the curl of the potential, and both parts come out of a gradient of a scalar equation.
+with $d/dt=\partial_{t}+\vec v\cdot\nabla$ along the flow. The identity $(\vec v\times\vec B)_{i}=\epsilon_{ijk}v_{j}B_k=v_{j}\partial_{i}A_{j}-v_{j}\partial_{j}A_{i}$ turns the last term into the cross product. The magnetic part is the curl of the potential, and both parts come out of a gradient of a scalar equation.
 
 What this is, precisely. Minimal coupling supplies the charge and the potentials; the limit supplies the force. Nothing else enters, not the spin and not $m$ beyond the flow.
 
@@ -129,7 +129,7 @@ which is $\sum_{\imath}\partial_{\imath}(A^{2}\partial_{\imath} S_{\tilde\Xi})=0
 
 Why the spin cannot appear at order zero. The leading multiplier is a single biquaternion and the eikonal is its norm, $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}$. A norm is central, so it commutes with $\xi$ and cannot act on it. **The spin is an order-one effect by construction, not by neglect.**
 
-Where the spin sits, in the corpus's own terms. *From the Spin to the Carriers and the Closures* defines $\tilde S_{\Psi,\eta}=\frac{h}{4\pi}i\vec e_{\eta}$, Hermitian in $\mathbb{B}_{\Psi}$, with $\mathsf{M}_2(\tilde S_{\Psi,\eta})=\frac{h}{4\pi}\sigma_{\eta}$. Three consequences follow, and all three hold here. $\frac{h}{2\pi}$ is not sent to zero in this limit, only $\epsilon$, so $\frac{h}{4\pi}$ survives and the passage removes no spin. The leading eikonal being central, it commutes with every $\tilde S_{\Psi,\eta}$, which is why the force above carried none. And at order one the operator is the failure of the two orderings to commute, whose tangent form is the field strength contracted with $\sigma_{\imath\jmath}$; its space–space part is $\sum_{\eta}\tilde S_{\Psi,\eta}B_{\eta}$, so the expected term is $-\frac{ϙ}{m}\sum_{\eta}\tilde S_{\Psi,\eta}B_{\eta}$, which is $g=2$ as *The Classical Origin of $g=2$ in Biquaternionic Form* has it. This article locates that term rather than deriving it; *The Classical Spinning Particle* names it as open question four, and its $d\tilde P_{\Phi}/d\tau=ϙ\,\mathrm{F}(\tilde V_{\Phi})$ of *The Lorentz Force in Biquaternion Form* is the covariant form of the result above.
+Where the spin sits, in the corpus's own terms. *From the Spin to the Carriers and the Closures* defines $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_k$, Hermitian in $\mathbb{B}_{\Psi}$, with $\mathsf{M}_2(\tilde S_{\Psi,k})=\frac{h}{4\pi}\sigma_k$. Three consequences follow, and all three hold here. $\frac{h}{2\pi}$ is not sent to zero in this limit, only $\epsilon$, so $\frac{h}{4\pi}$ survives and the passage removes no spin. The leading eikonal being central, it commutes with every $\tilde S_{\Psi,k}$, which is why the force above carried none. And at order one the operator is the failure of the two orderings to commute, whose tangent form is the field strength contracted with $\sigma_{\imath\jmath}$; its space–space part is $\sum_{k\in\{x,y,z\}}\tilde S_{\Psi,k}B_k$, so the expected term is $-\frac{ϙ}{m}\sum_{k\in\{x,y,z\}}\tilde S_{\Psi,k}B_k$, which is $g=2$ as *The Classical Origin of $g=2$ in Biquaternionic Form* has it. This article locates that term rather than deriving it; *The Classical Spinning Particle* names it as open question four, and its $d\tilde P_{\Phi}/d\tau=ϙ\,\mathrm{F}(\tilde V_{\Phi})$ of *The Lorentz Force in Biquaternion Form* is the covariant form of the result above.
 
 ## Where the Two Limits Meet
 

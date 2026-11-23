@@ -47,13 +47,13 @@ the second in the traceless part. The first is a Klein–Gordon equation for the
 
 **What is not available.** There is no Madelung pair, no guidance equation and no quantum potential, because there is no phase and therefore no phase gradient. The polar form of the material sector is a magnitude–direction decomposition of a real four-vector, and the Lorenz condition in these variables is one scalar equation, not the continuity equation of a fluid.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; the sector split is $\mathbb{B}_{\Phi}=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ (anti-Hermitian) and $\mathbb{B}_{\Psi}=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ (Hermitian); the star conjugation is coefficient conjugation composed with the quaternion conjugation $\natural$, so that ${}^{*}$ is antilinear and $\natural$ is $\mathbb{C}$-linear; the quaternionic norm is $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$, a complex scalar that is real on $\mathbb{B}_{\Phi}$; and $\mathrm{Sc}$ is the coefficient of $e_t$. The potential is $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ with $a'_t$ and $\vec A$ real, so that
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_k^2=-e_t$ and central scalar imaginary $i$; the sector split is $\mathbb{B}_{\Phi}=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ (anti-Hermitian) and $\mathbb{B}_{\Psi}=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ (Hermitian); the star conjugation is coefficient conjugation composed with the quaternion conjugation $\natural$, so that ${}^{*}$ is antilinear and $\natural$ is $\mathbb{C}$-linear; the quaternionic norm is $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$, a complex scalar that is real on $\mathbb{B}_{\Phi}$; and $\mathrm{Sc}$ is the coefficient of $e_t$. The potential is $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ with $a'_t$ and $\vec A$ real, so that
 
 $$
 \langle\tilde A_\Phi\rangle_\natural=-(a'_t)^2+\vec A^2 ,
 $$
 
-the Minkowski square in the corpus's signs. The derivatives are $\partial/\partial R_t=-i\,\partial/\partial r'_t$ on the time slot and $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the three space slots, so that $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$ as in the element form. The mass is the wave number $\nu_m=\frac{mc}{h}$.
+the Minkowski square in the corpus's signs. The derivatives are $\partial/\partial R_t=-i\,\partial/\partial r'_t$ on the time slot and $\partial/\partial R_k=\partial/\partial r_k$ on the three space slots, so that $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$ as in the element form. The mass is the wave number $\nu_m=\frac{mc}{h}$.
 
 ## Why the Four-Factor Word Does Not Apply
 
@@ -336,7 +336,7 @@ with the second in the traceless part; for a fixed axis they reduce to a massive
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
+| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | ${}^{*}$, ${}^{\natural}$, $\mathrm{Sc}$ | Hermitian conjugation, quaternion conjugation, scalar part |

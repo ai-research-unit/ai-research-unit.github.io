@@ -604,7 +604,7 @@ $$
 \bigl\langle e^{\theta\tilde Q}\bigr\rangle_{*}
 =\lvert e^{\theta Q_t}\rvert^{2}\left(1+\lvert\theta\rvert^{2}\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2}\right),
 \qquad
-\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2}=\sum_k\lvert\Pi_{\mathrm{nil},k}\rvert^{2}\ge0 .
+\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2}=\sum_{k\in\{x,y,z\}}\lvert\Pi_{\mathrm{nil},k}\rvert^{2}\ge0 .
 $$
 
 The parenthesis is exact and its form is the statement. With $Q_t=2i$ and $\vec\Pi_{\mathrm{nil}}=\vec e_x+i\vec e_y$, so that $\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2}=2$, the computed values at $\theta=0.5,1,2,4,8$ were $1.5$, $3$, $9$, $33$, $129$, and the formula $1+2\theta^{2}$ reproduces each of them exactly. For a complex scalar part the same parenthesis multiplies $\lvert e^{\theta Q_t}\rvert^{2}$, and the agreement held to $10^{-13}$ at $\theta=8$ where the norm is $1.4\times10^{11}$.
@@ -788,7 +788,7 @@ $$
 B^{2}(\tilde Q+\varepsilon\tilde X)=2\varepsilon\,\tilde X\cdot\vec\Pi_{\mathrm{nil}}+\varepsilon^{2}B^{2}(\tilde X),
 $$
 
-where $\tilde X\cdot\vec\Pi_{\mathrm{nil}}=\sum_kX_k\Pi_{\mathrm{nil},k}$ is the bilinear form. So the splitting is the square root of a linear function of the parameter, and it is linear only for a perturbation with $\tilde X\cdot\vec\Pi_{\mathrm{nil}}=0$, that is one tangent to the isotropic cone. Computed on $\tilde Q=1.3e_t+\vec e_x+i\vec e_y$: the generic perturbation $\varepsilon\vec e_x$ gave splittings $2.836\times10^{-1}$, $2.828\times10^{-2}$, $2.828\times10^{-3}$ at $\varepsilon=10^{-2},10^{-4},10^{-6}$, against the predicted $2\sqrt{2\varepsilon+\varepsilon^{2}}$; the tangential perturbation $\varepsilon\vec e_z$ gave $2.000\times10^{-2}$, $2.000\times10^{-4}$, $2.000\times10^{-6}$, against $2\varepsilon$.
+where $\tilde X\cdot\vec\Pi_{\mathrm{nil}}=\sum_{k\in\{x,y,z\}}X_k\Pi_{\mathrm{nil},k}$ is the bilinear form. So the splitting is the square root of a linear function of the parameter, and it is linear only for a perturbation with $\tilde X\cdot\vec\Pi_{\mathrm{nil}}=0$, that is one tangent to the isotropic cone. Computed on $\tilde Q=1.3e_t+\vec e_x+i\vec e_y$: the generic perturbation $\varepsilon\vec e_x$ gave splittings $2.836\times10^{-1}$, $2.828\times10^{-2}$, $2.828\times10^{-3}$ at $\varepsilon=10^{-2},10^{-4},10^{-6}$, against the predicted $2\sqrt{2\varepsilon+\varepsilon^{2}}$; the tangential perturbation $\varepsilon\vec e_z$ gave $2.000\times10^{-2}$, $2.000\times10^{-4}$, $2.000\times10^{-6}$, against $2\varepsilon$.
 
 The reading is that the exceptional point is a property of the spectrum and not of the size of anything. The square-root law is a consequence of the eigenvalue map being a square root of $B^{2}$, and it is the same statement as the loss of the eigenbasis. A quantity that responds to the square root of a perturbation is responding to a defect.
 
@@ -917,7 +917,7 @@ The rest frame is a scalar operator, so the frame is not a function of the momen
 | $\tilde Q^{n}=Q_t^{n}e_t+nQ_t^{n-1}\vec\Pi_{\mathrm{nil}}$ | the powers |
 | $\tilde Q^{-1}=Q_t^{-1}e_t-Q_t^{-2}\vec\Pi_{\mathrm{nil}}$ | the inverse, with a double pole |
 | $\langle\tilde X\rangle_{*}=\operatorname{Sc}(\tilde X\tilde X^{*})$ | the Hermitian norm |
-| $\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2}=\sum_k\lvert\Pi_{\mathrm{nil},k}\rvert^{2}$ | the size of the defect in the Hermitian norm |
+| $\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2}=\sum_{k\in\{x,y,z\}}\lvert\Pi_{\mathrm{nil},k}\rvert^{2}$ | the size of the defect in the Hermitian norm |
 | $\tilde P_\Phi=i\frac{E}{c}e_t+\vec p$ | a material four-momentum, $B^{2}=\lvert\vec p\rvert^{2}$ |
 | $i\,mc\,e_t$ | the rest frame, $Q_t=\pm imc$ on the mass shell |
 

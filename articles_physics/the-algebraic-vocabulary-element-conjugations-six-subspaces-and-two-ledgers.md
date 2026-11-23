@@ -26,7 +26,7 @@ The algebra comes first, then the element that inhabits it, then the maps that c
 
 ### The Algebra and the Element
 
-**The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, of complex dimension four and real dimension eight.** The basis is $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_\eta^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ cyclic. The product is associative, has the unit $e_t$, and is not commutative. The centre is the complex line $\mathbb{C}e_t$, of real dimension two, spanned by $e_t$ and $ie_t$.
+**The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, of complex dimension four and real dimension eight.** The basis is $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ cyclic. The product is associative, has the unit $e_t$, and is not commutative. The centre is the complex line $\mathbb{C}e_t$, of real dimension two, spanned by $e_t$ and $ie_t$.
 
 A general element and its three writings.
 
@@ -57,9 +57,9 @@ Four maps act on the algebra.
 | map | formula | $\mathbb{C}$-linearity | fixed space | anti-fixed space |
 | --- | --- | --- | --- | --- |
 | $\bar{\cdot}$ | $Q_{\imath}\mapsto\bar Q_{\imath}$ | antilinear | $\mathbb{B}_{H}$ | $\mathbb{B}_{iH}$ |
-| ${}^{\natural}$ | $Q_te_t-\sum_\eta Q_\eta\vec e_\eta$ | linear | $\mathbb{B}_{C}$ | $\mathbb{B}_{V}$ |
-| ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | $\bar Q_te_t-\sum_\eta\bar Q_\eta\vec e_\eta$ | antilinear | $\mathbb{B}_{\Psi}$ | $\mathbb{B}_{\Phi}$ |
-| $\flat=-{}^{*}$ | $-\bar Q_te_t+\sum_\eta\bar Q_\eta\vec e_\eta$ | antilinear | $\mathbb{B}_{\Phi}$ | $\mathbb{B}_{\Psi}$ |
+| ${}^{\natural}$ | $Q_te_t-\sum_{k\in\{x,y,z\}} Q_k\vec e_k$ | linear | $\mathbb{B}_{C}$ | $\mathbb{B}_{V}$ |
+| ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | $\bar Q_te_t-\sum_{k\in\{x,y,z\}}\bar Q_k\vec e_k$ | antilinear | $\mathbb{B}_{\Psi}$ | $\mathbb{B}_{\Phi}$ |
+| $\flat=-{}^{*}$ | $-\bar Q_te_t+\sum_{k\in\{x,y,z\}}\bar Q_k\vec e_k$ | antilinear | $\mathbb{B}_{\Phi}$ | $\mathbb{B}_{\Psi}$ |
 
 **The first three, with the identity, form a Klein four-group.** The fourth is not a group element: it is minus the third. Each map is an involution, so each cuts the algebra into a fixed space and an anti-fixed space, and the six distinct spaces so obtained are the six subspaces of the next subsection. Each of the four maps preserves every one of them.
 

@@ -73,7 +73,7 @@ $$
 \left(\Box_\Phi-(2\pi\nu_m)^{2}\right)\tilde{Ξ} = 0 ,
 $$
 
-the biquaternionic Klein–Gordon equation of the companion article. The overall sign of $\mathcal{L}_\xi$ is fixed by the requirement that the energy be positive, as the stress–energy section shows; in the coordinates $Q_t=i q'_t$ and $Q_\eta=q_\eta$, the kinetic term of $\mathcal{L}_\xi$ written out is
+the biquaternionic Klein–Gordon equation of the companion article. The overall sign of $\mathcal{L}_\xi$ is fixed by the requirement that the energy be positive, as the stress–energy section shows; in the coordinates $Q_t=i q'_t$ and $Q_k=q_k$, the kinetic term of $\mathcal{L}_\xi$ written out is
 
 $$
 \mathcal{L}_\xi = -\tfrac12\left(-\left(\partial\xi/\partial r'_t\right)^{2}+(\vec\nabla_\Phi\xi)^2\right)-\tfrac12(2\pi\nu_m)^{2}\xi^2
@@ -92,7 +92,7 @@ S_{\mathrm{em}} = -\frac14\int \sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jma
 \sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath} = 2\imath\,\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural} ,
 $$
 
-the second equality being the statement, established in the companion article *The Field-Strength Biquaternion and Its Invariants*, that the two Lorentz invariants of the free field are the real and imaginary parts of the biquaternion norm $\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural}=\sum_\eta F_\eta^2$. Varying with respect to $A_{\jmath}$ gives the source-free Maxwell equation
+the second equality being the statement, established in the companion article *The Field-Strength Biquaternion and Its Invariants*, that the two Lorentz invariants of the free field are the real and imaginary parts of the biquaternion norm $\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural}=\sum_{k\in\{x,y,z\}} F_k^2$. Varying with respect to $A_{\jmath}$ gives the source-free Maxwell equation
 
 $$
 \sum_{\imath}\partial/\partial R_{\imath} F_{\imath\jmath} = 0 ,
@@ -143,17 +143,17 @@ $$
 \boxed{\ T_{\imath\jmath} = \partial/\partial R_{\imath}\,\xi\,\partial/\partial R_{\jmath}\,\xi + \delta_{\imath\jmath}\mathcal{L}_\xi\ } ,
 $$
 
-the sign being the one that makes $T_{tt}>0$; the canonical Noether tensor is the negative of this expression, and the two differ only by the overall sign just discussed. Its components are, with $Q_t=i q'_t$ and $Q_\eta=q_\eta$, the time row carrying the minus of $i^2$,
+the sign being the one that makes $T_{tt}>0$; the canonical Noether tensor is the negative of this expression, and the two differ only by the overall sign just discussed. Its components are, with $Q_t=i q'_t$ and $Q_k=q_k$, the time row carrying the minus of $i^2$,
 
 $$
 \boxed{\ T_{tt} = \frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2} + \frac12(\vec\nabla_\Phi\xi)^2 + \frac12(2\pi\nu_m)^{2}\xi^2 > 0\ } ,
 $$
 
 $$
-T_{t\eta} = T_{\eta t} = -\frac{1}{c}\,\partial\xi/\partial r'_t\,\partial/\partial R_\eta\,\xi ,
+T_{tk} = T_{k t} = -\frac{1}{c}\,\partial\xi/\partial r'_t\,\partial/\partial R_k\,\xi ,
 \qquad
-T_{j\eta} = T_{\eta j} = \partial/\partial R_j\,\xi\,\partial/\partial R_\eta\,\xi
-+ \delta_{j\eta}\left(\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}-\frac12(\vec\nabla_\Phi\xi)^2-\frac12(2\pi\nu_m)^{2}\xi^2\right) .
+T_{jk} = T_{k j} = \partial/\partial R_j\,\xi\,\partial/\partial R_k\,\xi
++ \delta_{jk}\left(\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}-\frac12(\vec\nabla_\Phi\xi)^2-\frac12(2\pi\nu_m)^{2}\xi^2\right) .
 $$
 
 For a right-moving massless wave, $\xi=f(x-r'_{t})$, these reduce to $T_{tt}=T_{xx}=(\partial\xi/\partial r_x)^2$ and $T_{tx}=T_{tt}$, the null-field pattern of a single traveling wave.
@@ -206,13 +206,13 @@ $$
 \qquad
 \mathsf{T}_{j0} = -\frac{1}{c}S_j,
 \qquad
-\mathsf{T}_{j\eta} = -\sigma_{j\eta},
+\mathsf{T}_{jk} = -\sigma_{jk},
 $$
 
 with the Maxwell stress
 
 $$
-\sigma_{j\eta} = \epsilon\,E_jE_\eta + \mu\,H_jH_\eta - W\,\delta_{j\eta},
+\sigma_{jk} = \epsilon\,E_jE_k + \mu\,H_jH_k - W\,\delta_{jk},
 \qquad
 W = \tfrac12\left(\epsilon\vec E^2+\mu\vec H^2\right),
 \qquad
@@ -226,18 +226,18 @@ T_{tt} = W,
 \qquad
 T_{tj} = T_{jt} = \frac{1}{c}S_j,
 \qquad
-T_{j\eta} = -\sigma_{j\eta} = W\delta_{j\eta}-\epsilon E_jE_\eta-\mu H_jH_\eta ,
+T_{jk} = -\sigma_{jk} = W\delta_{jk}-\epsilon E_jE_k-\mu H_jH_k ,
 $$
 
-which is the standard electromagnetic energy–momentum tensor in a medium: $W$ is the energy density, $\tfrac1c\vec S$ is the energy flux and (times $c$) the momentum density, and $-\sigma_{j\eta}$ is the momentum flux. The mixed tensor is deliberately not symmetric; the asymmetry is exactly the factor $-i$ of the time index, between the energy flux and the momentum density, and it disappears once the column is read in the real coordinate.
+which is the standard electromagnetic energy–momentum tensor in a medium: $W$ is the energy density, $\tfrac1c\vec S$ is the energy flux and (times $c$) the momentum density, and $-\sigma_{jk}$ is the momentum flux. The mixed tensor is deliberately not symmetric; the asymmetry is exactly the factor $-i$ of the time index, between the energy flux and the momentum density, and it disappears once the column is read in the real coordinate.
 
 **Tracelessness.** The trace in the unit metric, with the time term carrying the minus of $i^2$, is
 
 $$
-\sum_{\imath} T_{Q_{\imath} Q_{\imath}} = -T_{tt}+T_{\eta\eta} = -W - \sigma_{\eta\eta} = -W + W = 0 ,
+\sum_{\imath} T_{Q_{\imath} Q_{\imath}} = -T_{tt}+T_{kk} = -W - \sigma_{kk} = -W + W = 0 ,
 $$
 
-because $\sigma_{\eta\eta} = \epsilon\vec E^2+\mu\vec H^2-3W = 2W-3W=-W$. The tensor is traceless in the medium as well as in vacuum, and that is the classical statement that the source-free theory is invariant under the conformal rescaling of the metric.
+because $\sigma_{kk} = \epsilon\vec E^2+\mu\vec H^2-3W = 2W-3W=-W$. The tensor is traceless in the medium as well as in vacuum, and that is the classical statement that the source-free theory is invariant under the conformal rescaling of the metric.
 
 **Conservation.** The divergence of the tensor is the Lorentz four-force density. The tensor is defined by
 
@@ -247,7 +247,7 @@ $$
 T_{\imath\jmath} = \sum_\beta\delta_{\jmath\beta}\mathsf{T}_{\imath\beta} ,
 $$
 
-the definition being exact over the field algebra up to the factors the $i r'_t$ basis elements carry. In the coordinates of the framework, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, so the four directions are the four $Q_{\imath}$, and the divergence is
+the definition being exact over the field algebra up to the factors the $i r'_t$ basis elements carry. In the coordinates of the framework, $Q_t=i q'_t$ and $Q_k=q_k$, so the four directions are the four $Q_{\imath}$, and the divergence is
 
 $$
 \sum_{\imath}\partial/\partial R_{\imath} T_{\imath\jmath}
@@ -266,7 +266,7 @@ so that the source-free field has $\sum_{\imath}\partial/\partial R_{\imath} T_{
 
 The identity was verified off shell: for random arbitrary fields the divergence reproduces $\sum_{\imath}\partial/\partial R_{\imath} T_{\imath\jmath}$ to machine precision, ratio exactly one, for all four ${\jmath}$. The source-free case was then checked on shell: on random superpositions of one to three transverse plane waves with $\omega_i=c|2\pi\vec\nu_i|$ in the vacuum, $\epsilon_r=\mu_r=1$, at random events, second-order finite differences with step $10^{-5}$ give $|\sum_{\imath}\partial/\partial R_{\imath} T_{\imath\jmath}|$ below $10^{-9}$ against tensor elements of order unity, at the discretisation floor, for all four ${\jmath}$ — conservation for the interacting cross terms and not merely mode by mode.
 
-**The reading is decisive.** It is the **plain** derivative, and the projection is the plain $e_{\imath}$, not the conjugated $e_{\imath}^{\natural}$. Scalar parts are blind to the conjugation, but the spatial basis elements are not, since $\vec e_\eta^{\natural}=-\vec e_\eta$; the conjugated contraction is a different combination, it does not reproduce $\sum_{\imath}\partial/\partial R_{\imath} T_{\imath\jmath}$, and on the same on-shell fields it stays at the scale of the tensor itself instead of vanishing. The conjugation is the right operation for the framework's four-vector currents, where $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi})$ is the divergence; for the rank-two tensor the plain derivative is what carries it.
+**The reading is decisive.** It is the **plain** derivative, and the projection is the plain $e_{\imath}$, not the conjugated $e_{\imath}^{\natural}$. Scalar parts are blind to the conjugation, but the spatial basis elements are not, since $\vec e_k^{\natural}=-\vec e_k$; the conjugated contraction is a different combination, it does not reproduce $\sum_{\imath}\partial/\partial R_{\imath} T_{\imath\jmath}$, and on the same on-shell fields it stays at the scale of the tensor itself instead of vanishing. The conjugation is the right operation for the framework's four-vector currents, where $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi})$ is the divergence; for the rank-two tensor the plain derivative is what carries it.
 
 **Where the algebra enters.** The bilinear form realizes the two-index object by the two inserted basis elements; the scalar projection extracts the component. This is why the natural object is the mixed tensor $\mathsf{T}_{\imath\jmath}$ and not a doubly covariant one, and why one vector direction at a time is what the bilinear carries — the four-component object $\tilde\Sigma_{\Psi}=\tfrac12\tilde{F}\tilde{F}^{*}$ carries only the time row, as the exercise shows, whereas fixing ${\jmath}$ selects the four entries $\mathsf{T}_{\imath\jmath}$. The rank-two object with two independent vector directions is the smallest algebraic structure that holds all the components, and the algebra supplies it through the bilinear rather than through a new field. The divergence of the row is then the plain derivative $\sum_{\imath}\partial/\partial R_{\imath} T_{\imath\jmath}$, and it is that divergence which vanishes.
 
@@ -375,7 +375,7 @@ T_{tt}=W,
 \quad
 T_{tj}=\frac1cS_j,
 \quad
-T_{j\eta}=W\delta_{j\eta}-\epsilon E_jE_\eta-\mu H_jH_\eta ,
+T_{jk}=W\delta_{jk}-\epsilon E_jE_k-\mu H_jH_k ,
 $$
 
 symmetric, traceless, and conserved source-free — all verified by direct computation and by a superposition of two plane waves. With matter included, $\sum_{\imath}\partial/\partial R_{\imath} T_{\mathrm{em},\imath\jmath}=-f_{\jmath}$ and $\sum_{\imath}\partial/\partial R_{\imath} T_{\mathrm{matter},\imath\jmath}=+f_{\jmath}$, so the total tensor is conserved; the ${\jmath}=0$ component is the Poynting theorem. The same action that defines the fields and the causal cone of the algebra defines the bookkeeping of their energy and momentum.
@@ -398,11 +398,11 @@ symmetric, traceless, and conserved source-free — all verified by direct compu
 | $S_{\mathrm{em}}=-\frac14\int \sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}d^4r$ | Electromagnetic action |
 | $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$; $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ | Biquaternionic Maxwell system |
 | $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$; $\vec S=\vec E\times\vec H$ | Energy density; Poynting vector |
-| $\sigma_{j\eta}=\epsilon E_jE_\eta+\mu H_jH_\eta-W\delta_{j\eta}$ | Maxwell stress |
+| $\sigma_{jk}=\epsilon E_jE_k+\mu H_jH_k-W\delta_{jk}$ | Maxwell stress |
 | $\mathsf{T}_{\imath\jmath}=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_{\imath}\tilde{F}^{*}\mathcal{E}_{\jmath})$ | Electromagnetic stress–energy, bigeneral quaternionic bilinear |
-| $\mathsf{T}_{00}=-W$, $\mathsf{T}_{0j}=\frac1cS_j$, $\mathsf{T}_{j0}=-\frac1cS_j$, $\mathsf{T}_{j\eta}=-\sigma_{j\eta}$ | Mixed components |
-| $T_{tt}=W$, $T_{tj}=T_{jt}=\frac1cS_j$, $T_{j\eta}=-\sigma_{j\eta}$ | Symmetric components; the time column is read in the real coordinate |
-| $\sum_{\imath} T_{Q_{\imath} Q_{\imath}}=-T_{tt}+T_{\eta\eta}=0$ | Tracelessness |
+| $\mathsf{T}_{00}=-W$, $\mathsf{T}_{0j}=\frac1cS_j$, $\mathsf{T}_{j0}=-\frac1cS_j$, $\mathsf{T}_{jk}=-\sigma_{jk}$ | Mixed components |
+| $T_{tt}=W$, $T_{tj}=T_{jt}=\frac1cS_j$, $T_{jk}=-\sigma_{jk}$ | Symmetric components; the time column is read in the real coordinate |
+| $\sum_{\imath} T_{Q_{\imath} Q_{\imath}}=-T_{tt}+T_{kk}=0$ | Tracelessness |
 | $\sum_{\imath}\partial/\partial R_{\imath} T_{\imath\jmath}=-f_{\jmath}$, $\mathsf{T}_{\imath\jmath}=\tfrac12\mathrm{Sc}(\tilde F\mathcal{E}_{\imath}\tilde F^{*}\mathcal{E}_{\jmath})$; plain derivative, $i r'_t$ coordinates $Q_t=i q'_t$ | Conservation with source per direction; Lorentz four-force |
 | $T_{\imath\jmath}=\partial/\partial R_{\imath}\,\xi\partial/\partial R_{\jmath}\,\xi+\delta_{\imath\jmath}\mathcal{L}_\xi$ | Scalar stress–energy |
 | $T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\frac12(\vec\nabla_\Phi\xi)^2+\frac12(2\pi\nu_m)^{2}\xi^2$ | Scalar energy density, positive |

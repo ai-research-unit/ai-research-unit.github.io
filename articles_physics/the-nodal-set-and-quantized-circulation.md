@@ -272,7 +272,7 @@ What remains open is dynamical: existence, stability and interaction of nodal so
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}^{\times}$ | Group of invertibles, the complement of the zero-divisor set |
-| $e_t,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, with $\vec e_\eta^{2}=-e_t$ |
+| $e_t,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, with $\vec e_k^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\tilde\Xi$ | The scalar field, an element of $\mathbb{B}$ |
 | $\lVert\tilde\Xi\rVert$ | Its amplitude, real and non-negative |

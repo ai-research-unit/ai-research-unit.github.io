@@ -61,7 +61,7 @@ The components, written low. With $\tilde\beta_{\Phi}=\beta_{\Phi,t}e_t+\beta_{\
 $$
 \beta_{\Phi,t}=i\beta\gamma,
 \qquad
-\beta_{\Phi,\eta}=\beta\gamma\,\beta_{\mathrm{vel},\eta},
+\beta_{\Phi,k}=\beta\gamma\,\beta_{\mathrm{vel},k},
 $$
 
 and the rest frame is $\gamma=1$, $\vec\beta_{\mathrm{vel}}=0$. The temporal component is $i$ times a length, and the factor $i$ is the element's, exactly as $p_{\Phi,t}=iE/c$ carries the $i$ of the same slot. The product of two $i$'s is what makes the contraction below real.
@@ -99,7 +99,7 @@ $$
 =\frac{2\pi \beta\gamma}{h}\left(\frac{E}{c}-\vec\beta_{\mathrm{vel}}\cdot\vec p\right),
 $$
 
-where $p_{\Phi,t}=iE/c$ and the two $i$'s have been multiplied out; the factor $c$ in the first term is the one the temporal slot carries, and it is what makes the two terms have the same dimensions. On the flow's own momentum the bracket collapses: with $E=\gamma mc^{2}$ and $\vec p=\gamma m\vec v$, the bracket is $\gamma mc(1-\beta_{\mathrm{vel}}^{2})=mc/\gamma$, so the exponent is $-\beta\gamma\,mc/(\gamma \frac{h}{2\pi})=-\beta\nu_m=-\beta 2\pi\nu_m$, the frame-independent value of the display above. The second term is a chemical potential for momentum: in the moving frame the thermal weight favours the momenta that move with the fluid, with a coefficient $\beta\gamma\beta_{\mathrm{vel},\eta}$. It vanishes on the flow's momentum only when combined with the first term, and that cancellation is the invariance. This is the standard reading of a boost as a momentum chemical potential, quoted.
+where $p_{\Phi,t}=iE/c$ and the two $i$'s have been multiplied out; the factor $c$ in the first term is the one the temporal slot carries, and it is what makes the two terms have the same dimensions. On the flow's own momentum the bracket collapses: with $E=\gamma mc^{2}$ and $\vec p=\gamma m\vec v$, the bracket is $\gamma mc(1-\beta_{\mathrm{vel}}^{2})=mc/\gamma$, so the exponent is $-\beta\gamma\,mc/(\gamma \frac{h}{2\pi})=-\beta\nu_m=-\beta 2\pi\nu_m$, the frame-independent value of the display above. The second term is a chemical potential for momentum: in the moving frame the thermal weight favours the momenta that move with the fluid, with a coefficient $\beta\gamma\beta_{\mathrm{vel},k}$. It vanishes on the flow's momentum only when combined with the first term, and that cancellation is the invariance. This is the standard reading of a boost as a momentum chemical potential, quoted.
 
 ## The Partition Function
 
@@ -236,7 +236,7 @@ One thing the article deliberately does not do. It does not discuss the case in 
 
 ## Summary
 
-The thermal state of a moving fluid is specified by a thermal element, $\tilde\beta_\Phi=(\beta/c)\tilde V_\Phi=\beta\gamma\left(ie_t+\vec\beta_{\mathrm{vel}}\right)$, an element of the material sector with norm $-\beta^{2}$: the period $\beta$ of [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html), carried along the flow. Its components are $\beta_{\Phi,t}=i\beta\gamma$ and $\beta_{\Phi,\eta}=\beta\gamma\beta_{\mathrm{vel},\eta}$, every index low; the boost lengthens the norm not at all and tilts the direction by $\gamma$.
+The thermal state of a moving fluid is specified by a thermal element, $\tilde\beta_\Phi=(\beta/c)\tilde V_\Phi=\beta\gamma\left(ie_t+\vec\beta_{\mathrm{vel}}\right)$, an element of the material sector with norm $-\beta^{2}$: the period $\beta$ of [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html), carried along the flow. Its components are $\beta_{\Phi,t}=i\beta\gamma$ and $\beta_{\Phi,k}=\beta\gamma\beta_{\mathrm{vel},k}$, every index low; the boost lengthens the norm not at all and tilts the direction by $\gamma$.
 
 The thermal exponent is the contraction $-\beta_{\Phi,\jmath}\frac{p_{\Phi,\jmath}}{h}=-(\beta/c \frac{h}{2\pi})m\langle\tilde V_\Phi\rangle_{\natural}=\beta\nu_m=\beta 2\pi\nu_m$, independent of $\gamma$ and of $\vec v$. The partition function is that trace, so $Z(\beta,\vec\beta_{\mathrm{vel}})=Z(\beta,\vec 0)$: **the moving frame has no partition function of its own**, and the rest-frame article is the special case $\vec\beta_{\mathrm{vel}}=0$. What the boost changes is the reading of $Z$, not its value.
 
@@ -256,7 +256,7 @@ The article is transcription: standard relativistic thermodynamics in the corpus
 | $k_B$ | Boltzmann's constant |
 | $\tilde\beta_\Phi$ | Thermal element of the moving state |
 | $\tilde\beta_{\Phi,0}=\beta ie_t$ | Thermal element of the rest frame |
-| $\beta_{\Phi,t}=i\beta\gamma$, $\beta_{\Phi,\eta}$ | Its components, index low |
+| $\beta_{\Phi,t}=i\beta\gamma$, $\beta_{\Phi,k}$ | Its components, index low |
 | $\beta_{\mathrm{obs}}=\gamma\beta$ | Period the boosted observer measures |
 | $T_{\mathrm{obs}}=T/\gamma$ | Temperature the boosted observer measures |
 | $\tilde V_\Phi$ | Flow (velocity) element, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ |

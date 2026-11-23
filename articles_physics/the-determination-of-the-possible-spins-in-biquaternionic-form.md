@@ -59,7 +59,7 @@ The spin-half carrier occurs twice, as the two Peirce planes; it is one isomorph
 
 **The carrier.** The centre $Z=\mathbb{C}e_t$ is fixed by conjugation: $u(z e_t)u^{-1}=z e_t$. The Casimir vanishes, the spin is $0$, and the carrier has one state.
 
-**The generator.** $\tilde S_{\Psi,\eta} e_t=0$ for all $k$. There is no axis to choose and no ladder: the representation is trivial.
+**The generator.** $\tilde S_{\Psi,k} e_t=0$ for all $k$. There is no axis to choose and no ladder: the representation is trivial.
 
 **The physical interpretation.** A scalar field. The carrier $Z=\mathbb{C}e_t$ is a complex line, two real dimensions; its real form $\mathbb{R}e_t$ is the real scalar of one degree of freedom. The Higgs is the observed spin-zero instance; its internal components are extra data, not a larger spin.
 
@@ -69,7 +69,7 @@ The spin-half carrier occurs twice, as the two Peirce planes; it is one isomorph
 
 **The carrier.** The Peirce plane $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ has complex dimension two, with basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-+})$. The second plane $S_-$ is a second copy, module-isomorphic and Hilbert-orthogonal.
 
-**The operators.** With $\tilde S_{\Psi,\eta}=\frac{h}{4\pi}i\vec e_\eta$,
+**The operators.** With $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_k$,
 
 $$
 \tilde S_{\Psi}^2=\tfrac34\frac{h^{2}}{4\pi^{2}}\,e_{t},\qquad
@@ -118,7 +118,7 @@ $$
 
 the signs being the Condon–Shortley phase, chosen so that the ladder coefficients are positive.
 
-**The operators.** With $\tilde S_{\Psi,\mathrm{adj},\eta}=\frac{h}{4\pi}\mathrm{ad}_{i\vec e_\eta}a$,
+**The operators.** With $\tilde S_{\Psi,\mathrm{adj},k}=\frac{h}{4\pi}\mathrm{ad}_{i\vec e_k}a$,
 
 $$
 \tilde S_{\Psi,\mathrm{adj}}^2=2\frac{h^{2}}{4\pi^{2}}\operatorname{id}_V,\qquad
@@ -230,9 +230,9 @@ The physical interpretation is the scalar, the spinor and the vector, and the ob
 | $\tilde\Pi_{\mathrm{id},\pm}(\vec u)$ | The idempotents along the axis $\vec u$ |
 | $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u)$ | The copy of the carrier at the axis $\vec u$ |
 | $\vec\Pi_{\mathrm{nil},+-},\vec\Pi_{\mathrm{nil},-+}$ | The nilpotent mixed units |
-| $\tilde S_{\Psi,\eta}=\frac{h}{4\pi}i\vec e_\eta$ | The spin-half operators |
-| $\tilde S_{\Psi,\mathrm{adj},\eta}=\frac{h}{4\pi}\mathrm{ad}_{i\vec e_\eta}a$ | The spin-one generators |
-| $C=\tilde S_{\Psi,\mathrm{adj}}^2$ | The Casimir, $\sum_\eta(\tilde S_{\Psi,\mathrm{adj},\eta})^2$ |
+| $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_k$ | The spin-half operators |
+| $\tilde S_{\Psi,\mathrm{adj},k}=\frac{h}{4\pi}\mathrm{ad}_{i\vec e_k}a$ | The spin-one generators |
+| $C=\tilde S_{\Psi,\mathrm{adj}}^2$ | The Casimir, $\sum_{k\in\{x,y,z\}}(\tilde S_{\Psi,\mathrm{adj},k})^2$ |
 | $s$ | The spin label |
 | $\vec u$ | A unit real pure quaternion, an axis |
 | $N=\langle\tilde P_{\Phi}\rangle_\natural$ | The biquaternion norm of the four-momentum; $N=-m^2c^2$ |

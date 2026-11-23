@@ -33,10 +33,10 @@ the arrow labelled by a coordinate being the frame basis operator of that coordi
 $$
 F_{r'_t i}=E_i,
 \qquad
-F_{ij}=\epsilon_{ij\eta}B_\eta ,
+F_{ij}=\epsilon_{ijk}B_k ,
 $$
 
-the magnetic sign being the one the field-strength article states explicitly, $F_{j\eta}=\epsilon_{j\eta l}B_l$. The only frame-dependent component is the time one: the algebra is written in the $i r'_t$ frame, where $Q_t=i q'_t$ and $F_{Q_t\eta}=iE_\eta/c$, and dropping the $i/c$ returns the real-time $F_{r'_t\eta}=E_\eta$. All densities below are evaluated in the real-time components. For the non-abelian factor the components are those of the companion article on non-abelian gauge fields,
+the magnetic sign being the one the field-strength article states explicitly, $F_{jk}=\epsilon_{jk l}B_l$. The only frame-dependent component is the time one: the algebra is written in the $i r'_t$ frame, where $Q_t=i q'_t$ and $F_{Q_tk}=iE_k/c$, and dropping the $i/c$ returns the real-time $F_{r'_tk}=E_k$. All densities below are evaluated in the real-time components. For the non-abelian factor the components are those of the companion article on non-abelian gauge fields,
 $$
 F_{\imath\jmath}=\frac{\partial\mathcal{A}_{\jmath}}{\partial R_{\imath}}-\frac{\partial\mathcal{A}_{\imath}}{\partial R_{\jmath}}+i\kappa\,[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}],
 \qquad
@@ -46,7 +46,7 @@ of which
 $$
 \tilde F=\frac{1}{2}\sum_{\imath,\jmath\in\{t,x,y,z\}}F_{\imath\jmath}\,\bar e_{\imath} e_{\jmath}
 $$
-is the biquaternion carrier, with $\bar e_{\imath}$ the quaternion conjugate of the unit ($\bar e_t=e_t$, $\bar e_\eta=-\vec e_\eta$). For the abelian factor the carrier is $(\tilde\nabla_\Phi)^{\natural}\tilde A_{\Phi}$ itself; for the non-abelian factor it is a definition read off from the components, since the commutator term is not a derivative of $\mathcal{A}$.
+is the biquaternion carrier, with $\bar e_{\imath}$ the quaternion conjugate of the unit ($\bar e_t=e_t$, $\bar e_k=-\vec e_k$). For the abelian factor the carrier is $(\tilde\nabla_\Phi)^{\natural}\tilde A_{\Phi}$ itself; for the non-abelian factor it is a definition read off from the components, since the commutator term is not a derivative of $\mathcal{A}$.
 
 **The invariants.** With the field $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the two real invariants of *The Field-Strength Biquaternion and Its Invariants* are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the normalization of the instanton article. The reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged; it is the pairing of the Hermitian sector, and the section *The Traces Involved, and the One That Is Not* keeps it apart from the two traces that compute an anomaly. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value, and the symbols $SU(3)$, $SU(2)_L$, $\mathrm{U}(1)_Y$, $Y$, $T_3$ are **standard-model notation, not framework objects**, used only where a standard structure is named.
 
@@ -125,7 +125,7 @@ $$
 
 where the mass term has been reduced in the same way, $2im\,\mathsf{V}_{\mathrm{vol}}\tilde{Ξ}=2im(-i\tilde{Ξ}\vec e_z)=2m\,\tilde{Ξ}\vec e_z$. The first term is the classical explicit breaking by the mass; the second is the anomaly, present even at $m=0$, and its coefficient is the standard Adler–Bell–Jackiw one, quoted from the standard literature rather than derived. The minus in front of it is bookkeeping, not physics: the standard statement carries the contraction with the upper-index symbol, and the corpus writes every index low. The next paragraph does that bookkeeping once.
 
-**The density, with its sign and its coefficient.** With $F_{r'_t i}=E_i$ and $F_{ij}=\epsilon_{ij\eta}B_\eta$ the contraction evaluates exactly,
+**The density, with its sign and its coefficient.** With $F_{r'_t i}=E_i$ and $F_{ij}=\epsilon_{ijk}B_k$ the contraction evaluates exactly,
 
 $$
 \epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}=8\,\vec E\cdot\vec B ,
@@ -152,7 +152,7 @@ $$
 
 so the boxed equation with its minus in the lower-index notation *is* the standard equation, with its plus in the upper-index notation. The density $-\frac{e^2}{2\pi^2}I_2$ is the textbook value, and what does not depend on the notation is the physics: the magnitude, the parity, and the proportionality to $I_2$ hold either way, and the overall sign is fixed by the convention that the basis operator calls the value $+1$ right-handed.
 
-**The biquaternion form of the density.** The companion article on instantons computes the same density and finds it a function of $I_2$ alone. Its quoted values are $\frac{2i}{c}I_2$ in the $i r'_t$ frame and $2I_2$ in the Euclidean continuation, for the quarter-density $\frac14\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}$; the real-time value here is $2I_2$, and the $i r'_t$ value follows from it by the single factor $i/c$ that the substitution $F_{r'_t\eta}=iE_\eta/c$ contributes — each nonzero term of the contraction carries exactly one time index. The proportionality to $I_2$ is therefore the same statement in the three frames, and it is frame-independent: the anomalous divergence carries the axial current into the framework's own pseudoscalar invariant.
+**The biquaternion form of the density.** The companion article on instantons computes the same density and finds it a function of $I_2$ alone. Its quoted values are $\frac{2i}{c}I_2$ in the $i r'_t$ frame and $2I_2$ in the Euclidean continuation, for the quarter-density $\frac14\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}$; the real-time value here is $2I_2$, and the $i r'_t$ value follows from it by the single factor $i/c$ that the substitution $F_{r'_tk}=iE_k/c$ contributes — each nonzero term of the contraction carries exactly one time index. The proportionality to $I_2$ is therefore the same statement in the three frames, and it is frame-independent: the anomalous divergence carries the axial current into the framework's own pseudoscalar invariant.
 
 Three structural remarks follow. First, the density is a **pseudoscalar** — parity-odd, as $I_2$ is — which is why it can stand on the right-hand side of the divergence of an axial, parity-odd current. Second, it is a **total derivative** in the abelian case,
 
@@ -365,7 +365,7 @@ the identity that keeps the chirality-weighted trace free of an identity term, s
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The left and right multiplications act by $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$, and the five basis operators of the body become
 
@@ -400,7 +400,7 @@ so multiplying a generator basis operator by $i$ trades it for a plain one; four
 **The identities the body cites.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
-(\gamma_\eta)^2=-I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_{\imath},\gamma_5\}=0,
 \qquad \varepsilon=(1,-1,-1,-1),$$

@@ -274,7 +274,7 @@ The catalogue has three entries, and the reason is a decomposition and not a dim
 
 ### The adjoint action and the spin-one carrier
 
-The companion spin-one article exhibits the spin-one structure inside $\mathbb{B}$: the inner derivations $D_\eta = \tfrac12\mathrm{ad}_{\vec e_\eta}a$, with $\mathrm{ad}_{\vec e_\eta}a(\tilde{Q})=[\vec e_\eta,\tilde{Q}]$, act on the scalar-free part of the algebra as a three-dimensional angular momentum, and the scalar-free part is four real dimensions less its scalar line, that is, exactly the carrier of spin one.
+The companion spin-one article exhibits the spin-one structure inside $\mathbb{B}$: the inner derivations $D_k = \tfrac12\mathrm{ad}_{\vec e_k}a$, with $\mathrm{ad}_{\vec e_k}a(\tilde{Q})=[\vec e_k,\tilde{Q}]$, act on the scalar-free part of the algebra as a three-dimensional angular momentum, and the scalar-free part is four real dimensions less its scalar line, that is, exactly the carrier of spin one.
 
 **The carrier and the module are different objects, and both exist.** The scalar-free part is not a submodule of $\mathbb{B}$ under left multiplication — the product of an arbitrary element with a scalar-free element is not scalar-free — and it is a subcarrier under conjugation. Nothing follows about its spin from the first fact, because the spin is read from the action that makes it a carrier. Under the definition the corpus uses, the adjoint action is the carrier, and its dimension gives $s=1$.
 
@@ -341,7 +341,7 @@ The completeness of the catalogue is therefore a statement about the base algebr
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ | Biquaternion algebra, simple, centre the complex scalars |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary, the algebra's central phase |
 | $\mathbb{B}_{C}=\{Q_te_t\}$ | Centre, the spin-zero carrier |
 | $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | Minimal left ideals, the spin-$\tfrac12$ carriers |

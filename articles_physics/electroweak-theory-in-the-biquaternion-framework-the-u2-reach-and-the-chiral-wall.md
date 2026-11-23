@@ -170,7 +170,7 @@ $$
 
 and the massive equation stays the pair above. The second-order consequence is the d'Alembertian $\Box_\Phi$ of *Operator and Calculus Conventions*, §*The Gradient*.
 
-The square of the gradient is not that operator. $e_t$ commutes with the three spatial units, so the mixed derivatives survive: on a plane wave, where the symbol of the gradient is $\nu_t^{\prime}e_t-i\vec\nu_\Phi$ with $\vec\nu_\Phi=\sum_\eta\vec e_\eta \nu_{\Phi\eta}$,
+The square of the gradient is not that operator. $e_t$ commutes with the three spatial units, so the mixed derivatives survive: on a plane wave, where the symbol of the gradient is $\nu_t^{\prime}e_t-i\vec\nu_\Phi$ with $\vec\nu_\Phi=\sum_{k\in\{x,y,z\}}\vec e_k \nu_{\Phik}$,
 
 $$
 (\nu_t^{\prime}e_t-i\vec\nu_\Phi)^{2}=(\nu_t^{\prime\,2}+\lvert\vec\nu_\Phi\rvert^{2})e_t-2i\nu_t^{\prime}\vec\nu_\Phi,
@@ -195,7 +195,7 @@ $$
 =2im\,\tilde{Ξ}^{\dagger}\tilde{Ξ}\,\vec e_z\vec e_x ,
 $$
 
-a plain sum, with the derivative taken in $x_{\imath}=(r'_t,r_x,r_y,r_z)$; in the $i r'_t$ coordinate $Q_t$ the time slot of the current carries the factor $ic$ that the coordinate requires, so the sum is the same divergence. The metric is already spent inside the units, $e_t^{2}=+e_t$ against $\vec e_\eta^{2}=-\vec e_t$, so an extra sign $\\pm1$ would apply it a second time. The right-hand side vanishes only at $m=0$.
+a plain sum, with the derivative taken in $x_{\imath}=(r'_t,r_x,r_y,r_z)$; in the $i r'_t$ coordinate $Q_t$ the time slot of the current carries the factor $ic$ that the coordinate requires, so the sum is the same divergence. The metric is already spent inside the units, $e_t^{2}=+e_t$ against $\vec e_k^{2}=-\vec e_t$, so an extra sign $\\pm1$ would apply it a second time. The right-hand side vanishes only at $m=0$.
 
 The real structure. The algebra's anti-linear object is the **real structure** $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$, order-reversing with a sign, fixing the anti-Hermitian sector $\mathbb{B}_{\Phi}$ and negating the Hermitian one $\mathbb{B}_{\Psi}$; a coupling built on it pairs the field with its conjugate. Whether the framework intends such a Majorana-type conjugate pairing, or whether its real structure only supplies the real-form expression of an ordinary Dirac mass, is not settled in the read list, and for that separate coupling the two readings differ on whether a conserved fermion number exists at all. This is inherited as an open item, and it is the pivot on which the scalar-sector question turns: a Majorana-type coupling needs no scalar doublet, whereas the linear Dirac mass for a chiral fermion needs a compensating field carrying the charge difference $ϙ_L-ϙ_R$ (the negative of the phase $\exp(\frac{2\pi i\,(ϙ_R-ϙ_L)\,\Gamma}{h})$ the mass bilinear acquires).
 

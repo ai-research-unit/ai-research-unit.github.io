@@ -63,7 +63,7 @@ One operator, one element.
 $$
 \tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
 \qquad
-\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta,
+\tilde A_\Phi=A_te_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k,
 $$
 
 acting from the left. The sign pair is the gauge principle's: $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ and $\lambda=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$.
@@ -91,7 +91,7 @@ The conjugate operator.
 $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi^{\natural},
 \qquad
-\tilde A_\Phi^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta .
+\tilde A_\Phi^{\natural}=A_te_t-\sum_{k\in\{x,y,z\}} A_k\vec e_k .
 $$
 
 For a purely electric potential $\tilde A_\Phi^{\natural}=+\tilde A_\Phi$; for a purely magnetic one $\tilde A_\Phi^{\natural}=-\tilde A_\Phi$; for a general potential it is neither. The asymmetry is the algebra's statement that the electric and magnetic slots of the connection enter the conjugate derivative with opposite signs, and it is why the field strength below is not simply twice the magnetic part.
@@ -166,9 +166,9 @@ the two displays agreeing because the pure-vector part of an element and the par
 In components the definition is the covariant curl.
 
 $$
-F_{0\eta}=D_0A_\eta-D_\eta A_0,
+F_{0k}=D_0A_k-D_k A_0,
 \qquad
-F_{\eta\kappa}=D_\eta A_\kappa-D_\kappa A_\eta,
+F_{k\kappa}=D_k A_\kappa-D_\kappa A_k,
 \qquad
 D_{\imath}=\frac{\partial}{\partial R_{\imath}}+\frac{2\pi i\,ϙ}{h}A_{\imath} .
 $$
@@ -312,13 +312,13 @@ The equation is standard. The algebra's contribution is the closure argument, th
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^{2}=-e_t$ |
+| $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^{2}=-e_t$ |
 | $i$ | Central scalar imaginary, $i^{2}=-e_t$ |
 | $\mathrm{Sc}$ | Scalar part |
 | $\mathbb{B}_\Phi,\ \mathbb{B}_\Psi,\ \mathbb{B}_V$ | Material, informational, and pure-vector sectors |
 | $\tilde A=i\,a'_t\,e_t+\vec A$ | The coupled Proca potential, an element of $\mathbb{B}$; $a'_t$ and $\vec A$ complex |
-| $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | The connection, an element of $\mathbb{B}_\Phi$; $A_{\imath}$ central in the abelian case |
-| $\tilde A_\Phi^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta$ | Its $\natural$-image; the conjugate derivative's connection |
+| $\tilde A_\Phi=A_te_t+\sum_{k\in\{x,y,z\}} A_k\vec e_k$ | The connection, an element of $\mathbb{B}_\Phi$; $A_{\imath}$ central in the abelian case |
+| $\tilde A_\Phi^{\natural}=A_te_t-\sum_{k\in\{x,y,z\}} A_k\vec e_k$ | Its $\natural$-image; the conjugate derivative's connection |
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | Covariant derivative, left action |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial/\partial R_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | Its central per-component form |
 | $\partial/\partial R_t=-i\,\partial/\partial r'_t$ | Material time derivative |

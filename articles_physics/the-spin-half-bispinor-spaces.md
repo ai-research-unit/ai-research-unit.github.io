@@ -261,7 +261,7 @@ The spectrum on the plane. The square of the vector part is
 
 $$
 B^{2}\bigl(\lambda\tilde\Pi_{\mathrm{id},+}(\vec u)\bigr)
-=\sum_k\Bigl(\tfrac i2\lambda u_k\Bigr)^{2}
+=\sum_{k\in\{x,y,z\}}\Bigl(\tfrac i2\lambda u_k\Bigr)^{2}
 =-\tfrac14\lambda^{2},
 $$
 

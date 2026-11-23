@@ -60,7 +60,7 @@ and it is the **laboratory-to-rest** rotor. The four-velocity fixes the Hermitia
 Let
 
 $$
-\tilde U_{\mathrm{lor},\eta}=\cosh\frac{\theta_{\mathrm{rpd},\eta}}{2}+i\sinh\frac{\theta_{\mathrm{rpd},\eta}}{2}\,\vec u_\Phi,
+\tilde U_{\mathrm{lor},k}=\cosh\frac{\theta_{\mathrm{rpd},k}}{2}+i\sinh\frac{\theta_{\mathrm{rpd},k}}{2}\,\vec u_\Phi,
 \qquad k=1,2,
 $$
 
@@ -74,7 +74,7 @@ $$
 \tilde{u}\in\mathbb{B}_{H}\ \text{a rotation}.
 $$
 
-The product is Hermitian, and hence a pure boost with no rotation factor, if and only if the two directions are parallel or antiparallel. Otherwise the real vector part $\vec q=s_1s_2\,\vec u_x\times\vec u_y$ (with $c_\eta=\cosh\tfrac{\theta_{\mathrm{rpd},\eta}}{2}$, $s_\eta=\sinh\tfrac{\theta_{\mathrm{rpd},\eta}}{2}$) is non-zero, and the polar decomposition carries exactly that part into the rotation factor. The rotation $\tilde{u}$ is the **Thomas–Wigner rotation** of the pair of boosts. The failure of the exponents to add is the BCH defect of the polar word, computed in *The Exponential Word and Its Boundary*; the precession is the accumulated defect of the boost word along the path.
+The product is Hermitian, and hence a pure boost with no rotation factor, if and only if the two directions are parallel or antiparallel. Otherwise the real vector part $\vec q=s_1s_2\,\vec u_x\times\vec u_y$ (with $c_k=\cosh\tfrac{\theta_{\mathrm{rpd},k}}{2}$, $s_k=\sinh\tfrac{\theta_{\mathrm{rpd},k}}{2}$) is non-zero, and the polar decomposition carries exactly that part into the rotation factor. The rotation $\tilde{u}$ is the **Thomas–Wigner rotation** of the pair of boosts. The failure of the exponents to add is the BCH defect of the polar word, computed in *The Exponential Word and Its Boundary*; the precession is the accumulated defect of the boost word along the path.
 
 For two boosts of equal rapidity $\theta_{\mathrm{rpd}}$ whose directions make an angle $\theta$, the angle $\theta_{\mathrm{wgn}}$ of $\tilde{u}$ is
 
@@ -175,7 +175,7 @@ The factor $\tfrac12$ is not inserted by hand: it is the limit of $\gamma^2/(\ga
 
 Only the **transverse** acceleration precesses the frame. Since $\vec a\times\vec v=\vec a_\perp\times\vec v$, a purely longitudinal acceleration gives $\vec\omega_T=0$: it changes the rapidity but not the direction of the velocity, and a boost along the instantaneous direction generates no rotation. This is the first sign that a collinear configuration cannot test the direction of $\vec\omega_T$.
 
-The interval rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{\natural}$ is formed directly as a $2\times2$ complex matrix in the representation $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_\eta$, $\mathsf{M}_2(i)=iI_2$, and its polar decomposition $\tilde U_{\mathrm{int}}=\tilde U_{\Psi,\mathrm b}\tilde{u}$, $\tilde U_{\Psi,\mathrm b}=\sqrt{\tilde U_{\mathrm{int}}\tilde U_{\mathrm{int}}^{*}}$, $\tilde{u}=\tilde U_{\Psi,\mathrm b}^{-1}\tilde U_{\mathrm{int}}$, is carried out at $dr'_t=10^{-5}\,c$ for random non-collinear pairs $(\vec v,\vec a)$ with $|\vec v|<c$. The rotation vector of $\tilde{u}$ agrees with $\vec\omega_T\,dr'_t/c$ in both magnitude and direction to better than $10^{-10}$ in the units of the check; the collinear case gives zero on both sides. The sign is testable only off the collinear line, and it is the axis $\vec a\times\vec v$ that the exact product selects.
+The interval rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{\natural}$ is formed directly as a $2\times2$ complex matrix in the representation $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, and its polar decomposition $\tilde U_{\mathrm{int}}=\tilde U_{\Psi,\mathrm b}\tilde{u}$, $\tilde U_{\Psi,\mathrm b}=\sqrt{\tilde U_{\mathrm{int}}\tilde U_{\mathrm{int}}^{*}}$, $\tilde{u}=\tilde U_{\Psi,\mathrm b}^{-1}\tilde U_{\mathrm{int}}$, is carried out at $dr'_t=10^{-5}\,c$ for random non-collinear pairs $(\vec v,\vec a)$ with $|\vec v|<c$. The rotation vector of $\tilde{u}$ agrees with $\vec\omega_T\,dr'_t/c$ in both magnitude and direction to better than $10^{-10}$ in the units of the check; the collinear case gives zero on both sides. The sign is testable only off the collinear line, and it is the axis $\vec a\times\vec v$ that the exact product selects.
 
 ## One Angle at Two Separations
 

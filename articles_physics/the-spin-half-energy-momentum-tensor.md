@@ -146,21 +146,21 @@ The law is one real equation and the element has four slots, so three of the fou
 
 ### The Spin Law
 
-**The divergence of the spin current is a torque, and the torque is the rotor connection contracted with the spin.** With the rotor's logarithmic derivative $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$, a real vector part,
+**The divergence of the spin current is a torque, and the torque is the rotor connection contracted with the spin.** With the rotor's logarithmic derivative $\tilde u_{\mathrm r}^{-1}\partial_k\tilde u_{\mathrm r}=\tfrac12\vec\Omega_k$, a real vector part,
 
 $$
-\sum_\eta\partial_\eta S_{\Psi,\eta,\lambda\jmath}=\tau_{\lambda\jmath},
+\sum_{k\in\{x,y,z\}}\partial_k S_{\Psi,k,\lambda\jmath}=\tau_{\lambda\jmath},
 \qquad
 \tau_{\lambda\jmath}=\tfrac12\Bigl(\sum_\rho\varepsilon_\rho\,\Omega_{\lambda\rho}S_{\rho\jmath}-\sum_\rho\varepsilon_\rho\,\Omega_{\jmath\rho}S_{\rho\lambda}\Bigr).
 $$
 
-The display is the rotor's own equation in components. The rotor's equation is $\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\tilde u_{\mathrm r}$, and differentiating the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ gives the commutator of the connection with the spin. The conservation law is that statement with the indices put back. [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) derives it and this article quotes it.
+The display is the rotor's own equation in components. The rotor's equation is $\partial_k\tilde u_{\mathrm r}=\tfrac12\vec\Omega_k\tilde u_{\mathrm r}$, and differentiating the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ gives the commutator of the connection with the spin. The conservation law is that statement with the indices put back. [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) derives it and this article quotes it.
 
 The torque vanishes when the connection turns about the spin's own axis. That is the free rotor's conservation, and it is a statement about the geometry of the rotation and not about the field equation.
 
 *Check.* At rest, with the flow $v_{\Phi}=e_t$ and the spin along $\vec e_z$, the spin tensor is $S_{12}=+1$ and the rest of its components vanish. Take the connection's spatial part $\vec\Omega_{0}$ and compute all six components of $\tau$. For $\vec\Omega_{0}=(0,0,2)$ the maximum modulus of $\tau$ is $0.000000$; for $\vec\Omega_{0}=(1,0,0)$ it is $0.500000$; for the mixed $\vec\Omega_{0}=(1,0,1)$ it is $0.500000$. So the torque vanishes exactly when the connection is along the spin and not otherwise.
 
-It establishes that the source of the spin law is a commutator and that its kernel is the connection along the spin. It does not establish that the connection is derivable from the field equation: $\vec\Omega_\eta$ is what the polar form's fourth bracket supplies, and the equation for it is the corpus's open question.
+It establishes that the source of the spin law is a commutator and that its kernel is the connection along the spin. It does not establish that the connection is derivable from the field equation: $\vec\Omega_k$ is what the polar form's fourth bracket supplies, and the equation for it is the corpus's open question.
 
 ## The Gordon Spin Term and the Vorticity
 
@@ -219,10 +219,10 @@ The trace of the symmetric part is the mass term, $\sum_{\imath}\varepsilon_{\im
 | $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$ | Energy–momentum element: energy density and flux |
 | $T_{\imath\jmath}$, $T_{[\imath\jmath]}$ | Stress and its antisymmetric part |
 | $S_{\lambda\imath\jmath}$ | Spin current, antisymmetric in the last two indices |
-| $S_{\Psi,\eta,\lambda\jmath}$ | Its components in the corpus's letters |
+| $S_{\Psi,k,\lambda\jmath}$ | Its components in the corpus's letters |
 | $\tilde S_{\Psi}=\rho\tfrac{h}{4\pi}i\hat s$ | Spin density element |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
-| $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$ | Rotor connection |
+| $\tilde u_{\mathrm r}^{-1}\partial_k\tilde u_{\mathrm r}=\tfrac12\vec\Omega_k$ | Rotor connection |
 | $\tau_{\lambda\jmath}$ | Torque, the spin law's source |
 | $\omega_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath}$ | Vorticity 2-form |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |

@@ -14,7 +14,7 @@ The answer to the second part is a qualified **not yet**. The framework expresse
 
 The article is organized as follows. *The Operational Criterion* presents the criterion in the paper's own terms. *The Criterion in the Biquaternion Language* gives it in the framework's language: idempotent/$*$-unitary on the two partitions. *The Four Subsets Mapped to the Framework* maps the paper's four subsets (I, IIa, IIb, III) to the framework's algebra. *Fundamental versus Derived* discusses the distinction that the framework suggests but the operational criterion does not require. *What the Framework Adds, and What Remains Open* states what is added and what is open. The *Summary* closes.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. The trace of the matrix image of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $2\,\mathrm{Sc}(\tilde Q)$. Two-qubit states live in $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, with the tensor-product trace $\mathrm{Tr}\bigl(\mathsf M_2(x)\otimes\mathsf M_2(y)\bigr) = \mathrm{Tr}_\mathbb{B}\mathsf M_2(x)\cdot\mathrm{Tr}_\mathbb{B}\mathsf M_2(y)$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of the matrix image of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $2\,\mathrm{Sc}(\tilde Q)$. Two-qubit states live in $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, with the tensor-product trace $\mathrm{Tr}\bigl(\mathsf M_2(x)\otimes\mathsf M_2(y)\bigr) = \mathrm{Tr}_\mathbb{B}\mathsf M_2(x)\cdot\mathrm{Tr}_\mathbb{B}\mathsf M_2(y)$.
 
 ## The Operational Criterion
 
@@ -208,7 +208,7 @@ The paper and the framework are complementary. The paper tells us what to look f
 | $\mathbb{B}_{\Phi}$ | Material sector (anti-Hermitian): four-vectors, classical fields |
 | $\mathbb{B}_{\Psi}$ | Informational sector (Hermitian): states, observables, excitations |
 | $\mathbb{B}\otimes\mathbb{B}$ | Two-qubit tensor product, $\cong M_4(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde\Pi_{\mathrm{id},A}^{(i)}, \tilde\Pi_{\mathrm{id},B}^{(j)}$ | Idempotents on partitions $A,B$ (measurements) |
 | $\tilde Q_A^{(k)}$ | $*$-Unitary on partition $A$ (filter, sorter, basis choice) |

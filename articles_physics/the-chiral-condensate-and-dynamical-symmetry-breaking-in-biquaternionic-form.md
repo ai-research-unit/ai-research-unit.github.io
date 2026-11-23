@@ -29,7 +29,7 @@ $$
 G_{\imath}:\ Q\ \longmapsto\ i\,e_{\imath}\,Q\,\vec e_{\mathrm{spt}(\imath)} ,
 $$
 
-with $e_t=1$ the unit of the algebra, $e_\eta=\vec e_\eta$, $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$; the **chirality** is the frame's fifth basis operator, the operator
+with $e_t=1$ the unit of the algebra, $e_k=\vec e_k$, $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$; the **chirality** is the frame's fifth basis operator, the operator
 
 $$
 \xi:\ Q\ \longmapsto\ -i\,Q\,\vec e_z .
@@ -46,7 +46,7 @@ $$
 
 with $\varepsilon=(1,-1,-1,-1)$, the products read as actions and $\mathrm{id}$ the identity action. There is no root, no idempotent and no split behind these five maps: each is a product by units, and nothing else is introduced to hold it.
 
-**The side, which is what chirality is.** A basis operator is the operator $L_aR_b$, acting $Q\mapsto aQb$, and it has two slots: the left one, where $a$ multiplies, and the right one, where $b$ multiplies. An operator multiplies on the left, on the right, or on both, and that is the whole of the corpus's notion of operator chirality ([Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html)): a property of the operator, not a sign carried by an element. The five maps above are read on that scale and they are not alike. The time generator is $G_t=iR_{\vec e_x}$, a **pure right multiplier**, because $L_{e_t}$ is the identity and a basis operator with the left slot empty is a right multiplication. The three spatial generators occupy **both slots**, $G_\eta=iL_{\vec e_\eta}R_{\vec e_y}$. The chirality is a **pure right multiplier** too,
+**The side, which is what chirality is.** A basis operator is the operator $L_aR_b$, acting $Q\mapsto aQb$, and it has two slots: the left one, where $a$ multiplies, and the right one, where $b$ multiplies. An operator multiplies on the left, on the right, or on both, and that is the whole of the corpus's notion of operator chirality ([Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html)): a property of the operator, not a sign carried by an element. The five maps above are read on that scale and they are not alike. The time generator is $G_t=iR_{\vec e_x}$, a **pure right multiplier**, because $L_{e_t}$ is the identity and a basis operator with the left slot empty is a right multiplication. The three spatial generators occupy **both slots**, $G_k=iL_{\vec e_k}R_{\vec e_y}$. The chirality is a **pure right multiplier** too,
 
 $$
 \xi=-iR_{\vec e_z},\qquad \xi Q=-i\,Q\,\vec e_z ,
@@ -113,7 +113,7 @@ The framework results used here are those of the companion articles:
 
 ## The Pair, the Two-Sided Equation and the Chirality
 
-**The gradient equation.** The gradient is $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$, and its quaternion conjugate squares with it to the scalar d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$. The chiral pair
+**The gradient equation.** The gradient is $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_{k\in\{x,y,z\}}\vec e_k\partial/\partial R_k$, and its quaternion conjugate squares with it to the scalar d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$. The chiral pair
 
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},\qquad
@@ -128,10 +128,10 @@ $$
 \mathcal{D}\tilde{Ξ}=-\sum_{\imath} e_{\imath}\,\frac{\partial\tilde{Ξ}}{\partial x_{\imath}}\,\vec e_{\mathrm{spt}(\imath)} ,
 \qquad
 \mathcal{D}^{2}=-\sum_{\imath}\varepsilon_{\imath}\frac{\partial^{2}}{\partial x_{\imath}^{2}}
-=-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\sum_\eta\frac{\partial^{2}}{\partial x_\eta^{2}}=\Box_\Phi ,
+=-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\sum_{k\in\{x,y,z\}}\frac{\partial^{2}}{\partial x_k^{2}}=\Box_\Phi ,
 $$
 
-a sum of four products — one element, one derivative of the field, one unit — and the square is the d'Alembertian: the first equality is the anticommutator $\{G_{\imath},G_\rho\}=2\varepsilon_{\imath}\delta_{\imath\rho}$ with the derivatives commuting with the constant multipliers, the last is the definition $\Box_\Phi=\partial^2/\partial R_{\imath}\partial R_{\imath}$ read on the $i r'_t$ slice, where $Q_\eta=q_\eta$ and $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_t}^2$, so that $\Box_\Phi=-\partial^2/\partial {r'_t}^2+\sum_\eta\partial^2/\partial x_\eta^2$; the minus in front of the sum is the one of that convention, and it is taken once, here. The equation is $(\mathcal{D}-\nu_m)\tilde{Ξ}=0$. It is one equation and not four, and because $\xi$ anticommutes with every generator it splits by value into two members, $\mathcal{D}\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $\mathcal{D}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, which are the two lines of the pair read on the module: the derivative carries each value into the other and the mass carries it back. Every bilinear and every rotation below is an object of this equation.
+a sum of four products — one element, one derivative of the field, one unit — and the square is the d'Alembertian: the first equality is the anticommutator $\{G_{\imath},G_\rho\}=2\varepsilon_{\imath}\delta_{\imath\rho}$ with the derivatives commuting with the constant multipliers, the last is the definition $\Box_\Phi=\partial^2/\partial R_{\imath}\partial R_{\imath}$ read on the $i r'_t$ slice, where $Q_k=q_k$ and $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_t}^2$, so that $\Box_\Phi=-\partial^2/\partial {r'_t}^2+\sum_{k\in\{x,y,z\}}\partial^2/\partial x_k^2$; the minus in front of the sum is the one of that convention, and it is taken once, here. The equation is $(\mathcal{D}-\nu_m)\tilde{Ξ}=0$. It is one equation and not four, and because $\xi$ anticommutes with every generator it splits by value into two members, $\mathcal{D}\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $\mathcal{D}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, which are the two lines of the pair read on the module: the derivative carries each value into the other and the mass carries it back. Every bilinear and every rotation below is an object of this equation.
 
 **Chirality, and why it belongs to the two-sided equation.** On the algebra the statement is the side and nothing else: $\xi$ is a pure right multiplier and the gradient is a pure left multiplier, so they commute, and each member of the pair acts inside one value. The two-sided writing is where the derivative occupies **both** slots, and there the same operator anticommutes with it:
 
@@ -223,7 +223,7 @@ $$
 
 which vanishes exactly when $m=0$. The mass is the only explicit breaking, and the identity is exact at the classical level. The quantum correction to it — the axial anomaly, which adds a term even at $m=0$ — belongs to the companion articles; the *spontaneous* breaking that a condensate produces is a separate phenomenon from that anomaly.
 
-**Why the sum carries no metric factor.** The metric is already spent inside the generators, since $G_0^{2}=+\mathrm{id}$ and $G_\eta^{2}=-\mathrm{id}$ differ in sign exactly as the entries of $g$ do. Hence $j_{5\eta}$ is the contravariant spatial component and $\sum_{\imath}\partial j_{5\imath}/\partial x_{\imath}=\partial j_5^0/\partial r'_t+\vec\nabla_\Phi\cdot\vec j_5$ is the divergence; an extra $\varepsilon$ would apply the metric a second time.
+**Why the sum carries no metric factor.** The metric is already spent inside the generators, since $G_0^{2}=+\mathrm{id}$ and $G_k^{2}=-\mathrm{id}$ differ in sign exactly as the entries of $g$ do. Hence $j_{5k}$ is the contravariant spatial component and $\sum_{\imath}\partial j_{5\imath}/\partial x_{\imath}=\partial j_5^0/\partial r'_t+\vec\nabla_\Phi\cdot\vec j_5$ is the divergence; an extra $\varepsilon$ would apply the metric a second time.
 
 **The companion's notation.** There the identity reads $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,5})=2im\,\tilde{Ξ}^{\natural}\xi\tilde{Ξ}$, the time slot of $\tilde J_{\Phi,5}$ carrying the factor $ic$ that the $i r'_t$ coordinate requires. The two notations name the same operator, and the same glyph: $\xi$ is the corpus's chirality operator, the frame's fifth basis operator, a pure right multiplier, and it takes the value $-1$ on $\tilde{Ξ}_{L}$ and $+1$ on $\tilde{Ξ}_{R}$ in either notation.
 
@@ -423,7 +423,7 @@ which is $3$ for $N_f=2$ (the pions) and $8$ for $N_f=3$ (the octet). The Goldst
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -466,7 +466,7 @@ so multiplying a generator or the chirality basis operator by $i$ trades it for 
 **The identities the article cites.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
-(\gamma_\eta)^2=-I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_{\imath},\gamma_5\}=0,
 $$
@@ -511,13 +511,13 @@ The framework supplies the carrier, the symmetry pattern and the sector placemen
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the condensate itself sits on $\mathbb{R}e_t$ |
 | $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_{\imath}\vec e_{\imath}\partial/\partial R_{\imath}$ | Biquaternionic gradient |
-| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention; $Q_\eta=q_\eta$ |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention; $Q_k=q_k$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ | Gradient equation: the linear chiral pair, one-sided |
 | $(\mathcal{D}-\nu_m)\tilde{Ξ}=0$, $\mathcal{D}\tilde{Ξ}=-\sum_{\imath} e_{\imath}(\partial_{\imath}\tilde{Ξ})\vec e_{\mathrm{spt}(\imath)}$ | Two-sided equation; $\mathcal{D}^2=\Box_\Phi$ |
 | $G_{\imath}:\ Q\mapsto i e_{\imath} Q\vec e_{\mathrm{spt}(\imath)}$, $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$ | Generator actions; $\{G_{\imath},G_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}\,\mathrm{id}$ |
 | $\xi:\ Q\mapsto-iQ\vec e_z=-iR_{\vec e_z}$, the frame's fifth basis operator | Chirality operator: a **pure right multiplier**, so it commutes with every left multiplication and $\{\xi,G_{\imath}\}=0$; $\xi^2=1$, $\xi\,\mathcal{D}\,\xi^{-1}=-\mathcal{D}$ |
 | $i\xi:\ Q\mapsto Q\vec e_z$ | The collapse of the imaginary unit: $\xi$ is the fifth basis operator itself, and $i\xi$ is a plain right multiplication |
-| $G_t=iR_{\vec e_x}$, $G_\eta=iL_{\vec e_\eta}R_{\vec e_y}$ | The slots of the generators: the time one has **no left slot**, the three spatial ones carry **both slots** |
+| $G_t=iR_{\vec e_x}$, $G_k=iL_{\vec e_k}R_{\vec e_y}$ | The slots of the generators: the time one has **no left slot**, the three spatial ones carry **both slots** |
 | $m$ | Central scalar: the one term of the equation with **both slots**, hence no side, and therefore the only term that pairs the two values |
 | $U(\theta_{\mathrm{axr}})=\exp(i\theta_{\mathrm{axr}}\xi)$ | The axial rotation, a pure right multiplication; $U(\theta_{\mathrm{axr}})(\mathcal{D}-2\pi\nu_m)U(\theta_{\mathrm{axr}})^{-1}=\exp(2i\theta_{\mathrm{axr}}\xi)\mathcal{D}-2\pi\nu_m$ |
 | $iG_{\imath}:\ Q\mapsto-e_{\imath} Q\vec e_{\mathrm{spt}(\imath)}$ | The same collapse on a generator |

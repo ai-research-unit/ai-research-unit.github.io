@@ -34,7 +34,7 @@ What is not new. The Yang–Mills action is standard, and its derivation is a pa
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; the material sector is $\mathbb{B}_\Phi$; the $\mathrm{SU}(2)$ factor is spanned by the anti-Hermitian generators $T_a$, $a=1,2,3$.
+The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_k^{2}=-e_t$; the material sector is $\mathbb{B}_\Phi$; the $\mathrm{SU}(2)$ factor is spanned by the anti-Hermitian generators $T_a$, $a=1,2,3$.
 
 The two traces. $\mathrm{Tr}$ is the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$; $\mathrm{Sc}$ is the coefficient of $e_t$ in the element; and $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is the corpus's informational reduction, which is not used in this article's action and is the subject of the reality section.
 

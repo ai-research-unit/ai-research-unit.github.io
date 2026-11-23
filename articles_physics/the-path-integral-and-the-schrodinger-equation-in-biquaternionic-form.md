@@ -19,7 +19,7 @@ Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}
 The action is the variational companion's, cited and not re-derived. In the operator setting it is
 
 $$
-S[\tilde\Xi,\tilde\Xi^{*}]=\int dt'\,d^{3}x\;\mathrm{Sc}\Bigl[\frac{i h}{4\pi}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\frac{hc}{8\pi^{2}\nu_m}\sum_\eta(\partial_\eta\tilde\Xi)^{*}(\partial_\eta\tilde\Xi)-V(\vec x)\,\tilde\Xi^{*}\tilde\Xi\Bigr],
+S[\tilde\Xi,\tilde\Xi^{*}]=\int dt'\,d^{3}x\;\mathrm{Sc}\Bigl[\frac{i h}{4\pi}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\frac{hc}{8\pi^{2}\nu_m}\sum_{k\in\{x,y,z\}}(\partial_k\tilde\Xi)^{*}(\partial_k\tilde\Xi)-V(\vec x)\,\tilde\Xi^{*}\tilde\Xi\Bigr],
 $$
 
 and in the constant setting the two spatial terms collapse into $-\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi$ with $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$. The antisymmetrised kinetic term is the point: $\partial_{t'}$ alone would give a complex density, and the half-difference of the two orderings is what makes the term Hermitian. That is the variational companion's first check, and it is what the exponent below inherits.

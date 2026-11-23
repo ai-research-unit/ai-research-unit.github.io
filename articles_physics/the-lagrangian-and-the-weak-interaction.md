@@ -40,7 +40,7 @@ What is not new. The charged current, its $V-A$ form and every rate in the paren
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; the fermions are elements $\tilde\Xi\in\mathbb{B}$ and the bilinear pairing is $\bar{\tilde\Xi}=\tilde\Xi^{\dagger}iC_0$.
+The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_k^{2}=-e_t$; the fermions are elements $\tilde\Xi\in\mathbb{B}$ and the bilinear pairing is $\bar{\tilde\Xi}=\tilde\Xi^{\dagger}iC_0$.
 
 The current. $J^{+}_{\imath}=\bar{\tilde\Xi}_{\mathrm u}iR_{\vec e_z}\gamma_{\imath}(1-\gamma_5)\tilde\Xi_{\mathrm d}$, with $\mathrm u$ the upper and $\mathrm d$ the lower member of a doublet; $J^{-}_{\imath}=(J^{+}_{\imath})^{\dagger}$. The right multiplication by $\vec e_z$ is the corpus's chirality insertion, and the factor $(1-\gamma_5)$ is its component form.
 

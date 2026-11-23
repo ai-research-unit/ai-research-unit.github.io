@@ -27,12 +27,12 @@ $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi^{\natural},
 $$
 
-with $\natural$ on the invertibles and never on the connection's coefficients, which are scalars. Write $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ for the slot's coefficient, so that the covariant derivative is $\partial_{\imath}+c_{\imath}$ acting coefficient-wise. The material convention of the coupled companions is $A_t=i a'_t$ with $a'_t$ real and $\vec A$ real, so $c_t$ is real and the three $c_\eta$ are imaginary.
+with $\natural$ on the invertibles and never on the connection's coefficients, which are scalars. Write $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ for the slot's coefficient, so that the covariant derivative is $\partial_{\imath}+c_{\imath}$ acting coefficient-wise. The material convention of the coupled companions is $A_t=i a'_t$ with $a'_t$ real and $\vec A$ real, so $c_t$ is real and the three $c_k$ are imaginary.
 
 The action and the weight. The variational companion's matter action,
 
 $$
-S_{\mathrm{gco}}[\tilde\Xi,\tilde A]=\frac{h}{4\pi}\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\Phi,t}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,t}\tilde\Xi\Bigr]-\sum_{\eta=1}^{3}\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\eta}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\eta}\tilde\Xi\Bigr]-4\pi^{2}\nu_m^{2}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\Bigr\},
+S_{\mathrm{gco}}[\tilde\Xi,\tilde A]=\frac{h}{4\pi}\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\Phi,t}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,t}\tilde\Xi\Bigr]-\sum_{k\in\{x,y,z\}}\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\Phi,k}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,k}\tilde\Xi\Bigr]-4\pi^{2}\nu_m^{2}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\Bigr\},
 $$
 
 is the exponent, in the free companion's normalisation and with the covariant derivative in every slot, with the weight $\exp(\frac{2\pi iS_{\mathrm{gco}}}{h})$. The temporal slot enters with $+$ and the three spatial ones with $-$, which is the material metric written out. The connection is held fixed in the integral over the field, and the field is held fixed in the integral over the connection; this article treats the first.
@@ -102,7 +102,7 @@ $$
 
 which is exact as a composition of operators. **The two coincide exactly when $\bar c_{\imath}=-c_{\imath}$ in every slot**, which is the case of a purely imaginary coefficient.
 
-Which slots satisfy the condition. The three spatial slots satisfy it for a real vector potential, because $\bar c_\eta=-i\frac{2\pi ϙ}{h}A_\eta=-c_\eta$. The temporal slot does not, because $c_t=-\frac{2\pi ϙ}{h}a'_t$ is real and $\bar c_t=c_t$. A purely vector connection gives one operator and a scalar potential gives two, and this is the variational companion's bookkeeping point reached from the integral's side.
+Which slots satisfy the condition. The three spatial slots satisfy it for a real vector potential, because $\bar c_k=-i\frac{2\pi ϙ}{h}A_k=-c_k$. The temporal slot does not, because $c_t=-\frac{2\pi ϙ}{h}a'_t$ is real and $\bar c_t=c_t$. A purely vector connection gives one operator and a scalar potential gives two, and this is the variational companion's bookkeeping point reached from the integral's side.
 
 The symbols, measured. Applying each operator to a plane wave on a periodic grid of $256$ points with wave number $3$, the squared operator's symbol for a real coefficient $0.31$ is $-8.8876+1.86i$ and the paired operator's is $-9.0798$, real; for an imaginary coefficient $1.30i$ both are $-18.4667$ and they agree to machine zero. The free value at the same wave number is $-8.9837$. The imaginary coefficient shifts the pair together and the real one separates them, and the separation has an imaginary part that the paired form does not have.
 
@@ -197,7 +197,7 @@ The current is the first variation of the integral with respect to the connectio
 | Symbol | Meaning |
 |---|---|
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | The covariant derivative; coefficients central |
-| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The slot's coefficient; $c_t$ real and $c_\eta$ imaginary for a material connection |
+| $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The slot's coefficient; $c_t$ real and $c_k$ imaginary for a material connection |
 | $S_{\mathrm{gco}}$ | The coupled matter action; the exponent's numerator |
 | $\exp(\frac{2\pi iS_{\mathrm{gco}}}{h})$ | The weight; central, $*$-unitary, invariant under a gauge transformation |
 | $S_0$ | The free action |

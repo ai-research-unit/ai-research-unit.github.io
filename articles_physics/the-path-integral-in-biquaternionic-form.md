@@ -44,7 +44,7 @@ For a non-relativistic particle of mass $m$ in a potential $V$, the path integra
 
 $$
 G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})
-=\lim_{N\to\infty}\int\prod_{k=1}^{N-1}dx_k\;\prod_{k=0}^{N-1}G_{\mathrm{prop},\varepsilon}(x_{k+1},x_k),
+=\lim_{N\to\infty}\int\prod_{n=1}^{N-1}dx_{\mathrm{site},n}\;\prod_{n=0}^{N-1}G_{\mathrm{prop},\varepsilon}(x_{\mathrm{site},n+1},x_{\mathrm{site},n}),
 $$
 
 with the single-step kernel

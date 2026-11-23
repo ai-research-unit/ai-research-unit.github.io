@@ -319,7 +319,7 @@ The same channel is produced by a gravitational potential, and there the branch 
 |---|---|
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit algebra |
 | $\mathrm{Tr}_2$ | Partial trace over the second factor |
-| $\tilde\Pi_{\mathrm{id,singlet}} = \tfrac14\bigl(e_t\otimes e_t+\sum_{\eta=x,y,z}\vec e_\eta\otimes \vec e_\eta\bigr)$ | Singlet idempotent |
+| $\tilde\Pi_{\mathrm{id,singlet}} = \tfrac14\bigl(e_t\otimes e_t+\sum_{k\in\{x,y,z\}}\vec e_k\otimes \vec e_k\bigr)$ | Singlet idempotent |
 | $s_1,s_2$ | Schmidt coefficients, $s_1^2+s_2^2=1$ |
 | $C(|\tilde{Ξ}\rangle) = \bigl|\langle\tilde{Ξ}|\,\tilde{\mathcal S}\,|\tilde{Ξ}^*\rangle\bigr|$ | Concurrence, spin flip $\tilde{\mathcal S}=(i\sigma_2)\otimes(i\sigma_2)$ |
 | $E = S(\mathrm{Tr}_2\tilde\Pi_{\mathrm{id}})$ | Entanglement entropy of a pure state |

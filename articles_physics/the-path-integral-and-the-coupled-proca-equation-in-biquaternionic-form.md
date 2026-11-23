@@ -23,7 +23,7 @@ $$
 \qquad
 D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}},
 \qquad
-D_\eta=\partial_\eta+\frac{2\pi iϙ}{h}A_\eta ,
+D_k=\partial_k+\frac{2\pi iϙ}{h}A_k ,
 $$
 
 with the mechanical momentum $\vec\pi=-i \frac{h}{2\pi}\vec\nabla_\Phi-q\vec A$ and the potential energy $-ϙ\omicron_{\mathrm{pot}}$. The Proca potential is written $\tilde A$ when the distinction from the connection matters, and $\tilde A_\Phi$ is reserved for the connection.

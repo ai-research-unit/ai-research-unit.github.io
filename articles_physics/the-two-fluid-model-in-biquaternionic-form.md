@@ -184,7 +184,7 @@ $$
 
 with $E_{J}$ the coupling energy density. The display is the standard Josephson form and is quoted; what the corpus adds is the argument: the phase is the quantity that the polar form assigns to the rotor, and a coupling between the two components is a coupling between two phases.
 
-The current between the components follows by differentiation of the coupling energy with respect to the phase difference. With $J_{\Phi,\mathrm{ex},\eta}$ the exchange current, the result is that the exchange current is the critical current times the sine of the phase difference, $J_{\Phi,\mathrm{ex},\eta}=J_{\mathrm{c}}\sin(\frac{2\pi \delta S}{h})$. The constant $J_{\mathrm{c}}$ is convention-dependent — it absorbs the normalisation of the phase, of the charge and of the density — and the corpus quotes the structural form rather than fixing a constant that the Josephson literature already fixes differently in different unit systems. A reader who needs the numerical value of $J_{\mathrm{c}}$ for a specific system will find it in the references at the end.
+The current between the components follows by differentiation of the coupling energy with respect to the phase difference. With $J_{\Phi,\mathrm{ex},k}$ the exchange current, the result is that the exchange current is the critical current times the sine of the phase difference, $J_{\Phi,\mathrm{ex},k}=J_{\mathrm{c}}\sin(\frac{2\pi \delta S}{h})$. The constant $J_{\mathrm{c}}$ is convention-dependent — it absorbs the normalisation of the phase, of the charge and of the density — and the corpus quotes the structural form rather than fixing a constant that the Josephson literature already fixes differently in different unit systems. A reader who needs the numerical value of $J_{\mathrm{c}}$ for a specific system will find it in the references at the end.
 
 What the phase difference does when the two flows coincide. Then $\delta S$ is constant, the sine is constant, and the exchange current is a constant flow between the components with no relative acceleration — the DC case. When the two flows differ, $\delta S$ advances at the rate $d(\delta S)/dR_t=\mu_{\mathrm{chm,nrm}}-\mu_{\mathrm{chm,sup}}$, and the exchange current oscillates at the frequency
 
@@ -303,7 +303,7 @@ The $T\to0$ limit is exact and shown in four displays: $\rho_{\mathrm{num}}\to\r
 | $T$, $\beta$ | Temperature, imaginary-time circumference |
 | $E_{J}$, $e_{\mathrm{cpl}}$ | Coupling energy density and density per volume |
 | $\delta S=S_{\tilde\Xi,\mathrm{nrm}}-S_{\tilde\Xi,\mathrm{sup}}$ | Phase difference |
-| $J_{\Phi,\mathrm{ex},\eta}$, $J_{\mathrm{c}}$ | Exchange current and critical current |
+| $J_{\Phi,\mathrm{ex},k}$, $J_{\mathrm{c}}$ | Exchange current and critical current |
 | $\omega_{\mathrm{Jsn}}$ | Josephson frequency |
 | $\mu_{\mathrm{chm,sup}}$, $\mu_{\mathrm{chm,nrm}}$ | Chemical potentials |
 | $\zeta$, $\eta_{\mathrm{sh}}$, $\kappa_{\mathrm{th}}$ | Viscosities and conductivity |

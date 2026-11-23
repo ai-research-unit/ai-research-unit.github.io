@@ -65,7 +65,7 @@ Because $\mathrm{Sc}(e_{\imath}^{\natural}e_{\jmath})=\delta_{\imath\jmath}$, th
 
 $$
 \mathcal{L} = +\frac{\partial{\xi_{\mathrm{scl}}}^{*}}{\partial R_t}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_t}
-+\sum_\eta\frac{\partial{\xi_{\mathrm{scl}}}^{*}}{\partial R_\eta}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_\eta}
++\sum_{k\in\{x,y,z\}}\frac{\partial{\xi_{\mathrm{scl}}}^{*}}{\partial R_k}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_k}
 +4\pi^{2}\nu_m^{2}\,{\xi_{\mathrm{scl}}}^{*}\xi_{\mathrm{scl}} ,
 $$
 
@@ -89,7 +89,7 @@ A one-parameter family $\tilde{Ξ}_\varepsilon$ with $\tilde{Ξ}_0 = \tilde{Ξ}$
 
 ### The Theorem in the Two Forms the Framework Needs
 
-For an internal symmetry, the theorem states that there is a current biquaternion $\tilde{J}_{\Phi} = J_t\,e_t + \sum_\eta J_\eta\,\vec e_\eta$ whose divergence vanishes when the field obeys its equation:
+For an internal symmetry, the theorem states that there is a current biquaternion $\tilde{J}_{\Phi} = J_t\,e_t + \sum_{k\in\{x,y,z\}} J_k\,\vec e_k$ whose divergence vanishes when the field obeys its equation:
 
 $$
 \delta S = 0 \ \text{for all fields}
@@ -139,7 +139,7 @@ $$
 which is **purely imaginary**, while the spatial components
 
 $$
-J_\eta = +2\,\mathrm{Im}\!\left({\xi_{\mathrm{scl}}}^{*}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_\eta}\right)
+J_k = +2\,\mathrm{Im}\!\left({\xi_{\mathrm{scl}}}^{*}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_k}\right)
 $$
 
 are real, the $i$ of the current multiplying the $-2i$ of the Wronskian to $+2$. Hence $\tilde{J}_{\Phi}\in\mathbb{B}_{\Phi}$, with imaginary scalar part and real vector part, exactly as the four-current of relativistic mechanics. Writing $J_t = ic\rho$ recovers the parent's convention $\tilde{J}_{\Phi} = ic\rho\,e_t + \vec j$, with
@@ -216,7 +216,7 @@ j_{\imath} = \mathrm{Sc}\bigl(\tilde{Ξ}^*\,e_{\imath}\,\tilde{Ξ}\,b_{\imath}\b
 \qquad b_t = e_t,\quad b_k = \vec e_z\ \ (k=x,y,z),
 $$
 
-the unit of the coordinate inserted between the field and its adjoint: $j_t = \mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ})$ is the Hermitian norm of the field, and $j_\eta = \mathrm{Sc}(\tilde{Ξ}^*\vec e_\eta\tilde{Ξ}\vec e_z)$ is the component of the current along $\vec e_\eta$. The axial rotation assigns opposite phases to the two parts, so the mass term, which pairs them, is not invariant under it; the axial current therefore carries the unit $\vec e_z$ inside the product,
+the unit of the coordinate inserted between the field and its adjoint: $j_t = \mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ})$ is the Hermitian norm of the field, and $j_k = \mathrm{Sc}(\tilde{Ξ}^*\vec e_k\tilde{Ξ}\vec e_z)$ is the component of the current along $\vec e_k$. The axial rotation assigns opposite phases to the two parts, so the mass term, which pairs them, is not invariant under it; the axial current therefore carries the unit $\vec e_z$ inside the product,
 
 $$
 j_{5\imath} = \mathrm{Sc}\bigl(\tilde{Ξ}^*\,i\,e_{\imath}\,\tilde{Ξ}\,\vec e_z\vec e_{\tau(\imath)}\vec e_x\bigr),
@@ -228,7 +228,7 @@ which reduces on the two cases to
 $$
 j_{5t} = -\,i\,\mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\vec e_z\bigr),
 \qquad
-j_{5\eta} = i\,\mathrm{Sc}\bigl(\tilde{Ξ}^*\vec e_\eta\tilde{Ξ}\bigr).
+j_{5k} = i\,\mathrm{Sc}\bigl(\tilde{Ξ}^*\vec e_k\tilde{Ξ}\bigr).
 $$
 
 The right multiplier of the general form is the product $\vec e_z\vec e_{\tau(\imath)}$ in that order, and it is not symmetric: writing the two units the other way round flips the sign of the current. The divergence is the **plain** sum of the four derivatives, since the $\natural$ in $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}$ already carries the relative sign of the spatial derivatives; the mass is the obstruction:
@@ -347,7 +347,7 @@ $$
 Here $x_{\imath}=(r'_{t},r_x,r_y,r_z)$ are the real coordinates, the chart of $Q_{\imath}$ with the $i$ of the time coefficient removed, $Q_t=i q'_t$: $Q_0=i q'_t$ carries the $i$, while $x_0=r'_{t}$ does not. Both indices of $T$ are low, the first the row. The coefficient of $\mathcal{L}_{\mathrm{scl},\xi}$ is the plain form of the two units, $\mathrm{Sc}(e_{\imath} e_{\jmath})=\varepsilon_{\imath}\delta_{\imath\jmath}$: plus on the time entry and minus on the three space entries. The derivative index of the conservation law carries one minus on the time direction and none on the three space directions, and that minus is the square of the $i$ in $Q_t=i q'_t$, spent once and written out. Translation invariance gives
 
 $$
--\frac{\partial T_{0\jmath}}{\partial x_0}+\sum_\eta\frac{\partial T_{\eta\jmath}}{\partial r_\eta} = 0
+-\frac{\partial T_{0\jmath}}{\partial x_0}+\sum_{k\in\{x,y,z\}}\frac{\partial T_{k\jmath}}{\partial r_k} = 0
 $$
 
 on shell. Its time–time component is the energy density,
@@ -356,7 +356,7 @@ $$
 T_{00} = \left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2 + 4\pi^{2}\nu_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2 > 0,
 $$
 
-positive for every configuration because each term is a square. This was checked by recomputation on an on-shell superposition of two plane waves: the four divergences $-\partial T_{0\jmath}/\partial x_0+\sum_\eta\partial T_{\eta\jmath}/\partial r_\eta$ vanish to $10^{-10}$, the tensor is symmetric, and $T_{00}$ equals the expression above.
+positive for every configuration because each term is a square. This was checked by recomputation on an on-shell superposition of two plane waves: the four divergences $-\partial T_{0\jmath}/\partial x_0+\sum_{k\in\{x,y,z\}}\partial T_{k\jmath}/\partial r_k$ vanish to $10^{-10}$, the tensor is symmetric, and $T_{00}$ equals the expression above.
 
 ### Why the Framework Does Not Write It as One Biquaternion
 
@@ -394,7 +394,7 @@ $$
 \boxed{\;\tilde L = \tfrac12\sum_{\imath,\jmath}L_{\imath\jmath}\,e^{\natural}_{\imath} e_{\jmath}\;}
 $$
 
-the angular momentum of a free particle is a single biquaternion. The tilde rather than an arrow is deliberate: the vector part of $\tilde L$ is $L_{0\eta}-\tfrac12\epsilon_{\eta ij}L_{ij}$ along $\vec e_\eta$, which pairs the boost charges with $\vec r\times\vec p$ and is not the three-vector of orbital angular momentum. This is the same construction by which $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}) = \tfrac12\sum_{\imath\jmath}F_{\imath\jmath}e^{\natural}_{\imath} e_{\jmath}$ packages the antisymmetric field strength, and the Lorentz generators themselves are bivectors.
+the angular momentum of a free particle is a single biquaternion. The tilde rather than an arrow is deliberate: the vector part of $\tilde L$ is $L_{0k}-\tfrac12\epsilon_{k ij}L_{ij}$ along $\vec e_k$, which pairs the boost charges with $\vec r\times\vec p$ and is not the three-vector of orbital angular momentum. This is the same construction by which $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}) = \tfrac12\sum_{\imath\jmath}F_{\imath\jmath}e^{\natural}_{\imath} e_{\jmath}$ packages the antisymmetric field strength, and the Lorentz generators themselves are bivectors.
 
 ### The Rank-Three Field Current
 
@@ -407,7 +407,7 @@ $$
 whose conservation
 
 $$
--\frac{\partial L_{0\jmath\rho}}{\partial x_0}+\sum_\eta\frac{\partial L_{\eta\jmath\rho}}{\partial r_\eta} = 0
+-\frac{\partial L_{0\jmath\rho}}{\partial x_0}+\sum_{k\in\{x,y,z\}}\frac{\partial L_{k\jmath\rho}}{\partial r_k} = 0
 $$
 
 expresses the symmetry of the energy–momentum tensor together with the conservation of spin. Being rank three, it is not a biquaternion and not even a single bilinear; the orbital and spin pieces separate, with the spin term vanishing for the classical scalar field. The particle bivector $\tilde L$ above is the finite-dimensional case where the rank-two object *is* the whole story.
@@ -497,7 +497,7 @@ by $i^2=-1$: multiplying a generator basis operator by $i$ trades it for a plain
 $$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,
 \qquad
-(\gamma_\eta)^2=-I_4,
+(\gamma_k)^2=-I_4,
 \qquad
 \gamma_5^2=I_4,
 \qquad
@@ -538,14 +538,14 @@ $$
 
 as the Noether charge, conserved for a free particle. The conservation law for a system is the vanishing of the **coordinate**-time derivative of the total, $d\tilde{P}_{\Phi,\mathrm{tot}}/dt' = c\,d\tilde{P}_{\Phi,\mathrm{tot}}/dr'_t = 0$; the parent's proper-time four-force cannot be summed across bodies, and the correct form is $\sum_a\tilde{\mathcal F}_{\mathrm{frc},a}/(c\gamma_a) = 0$, or the integrated $\sum_{\mathrm{in}}\tilde{P}_{\Phi} = \sum_{\mathrm{out}}\tilde{P}_{\Phi}$. A translation acts on a plane wave by the central unit-modulus phase $\exp(-i\theta_{\mathrm{pwp}})$, with $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = 2\pi\vec\nu_\Phi\cdot\vec R_0-\omega r'_{t,0}/c$.
 
-The field translation current is the canonical energy–momentum, $-\partial T_{0\jmath}/\partial x_0+\sum_\eta\partial T_{\eta\jmath}/\partial r_\eta = 0$ on shell in the real coordinates, with positive energy density $T_{00} = |\partial\xi_{\mathrm{scl}}/\partial r'_t|^2 + |\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2 + 4\pi^{2}\nu_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde\Sigma_{\Psi} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde\nabla_\Phi\tilde\Sigma_{\Psi}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\imath\jmath}\,e^{\natural}_{\imath} e_{\jmath}$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
+The field translation current is the canonical energy–momentum, $-\partial T_{0\jmath}/\partial x_0+\sum_{k\in\{x,y,z\}}\partial T_{k\jmath}/\partial r_k = 0$ on shell in the real coordinates, with positive energy density $T_{00} = |\partial\xi_{\mathrm{scl}}/\partial r'_t|^2 + |\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2 + 4\pi^{2}\nu_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde\Sigma_{\Psi} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde\nabla_\Phi\tilde\Sigma_{\Psi}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\imath\jmath}\,e^{\natural}_{\imath} e_{\jmath}$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$; $\mathrm{Sc}(e_{\imath} e_{\jmath})=\varepsilon_{\imath}\delta_{\imath\jmath}$, $\varepsilon=(1,-1,-1,-1)$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$; $\mathrm{Sc}(e_{\imath} e_{\jmath})=\varepsilon_{\imath}\delta_{\imath\jmath}$, $\varepsilon=(1,-1,-1,-1)$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}, \mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Real-quaternion subspace; complex scalar line (the centre) |

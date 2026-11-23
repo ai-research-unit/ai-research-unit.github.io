@@ -16,7 +16,7 @@ This article presents the driven spin-1/2 in the biquaternion algebra $\mathbb{B
 4. **Resonance is the vanishing of the longitudinal component.** At $\omega = \omega_0$ the effective field is purely transverse, the effective Hamiltonian is $\propto i\vec e_x$, and the spin precesses about the transverse axis, so the two eigenstates exchange with unit amplitude after a $\pi$-pulse.
 5. **The transition probability is the normalised Hermitian form, read through the scalar part**, $P_\downarrow(r'_t) = 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},2}(\vec u_z)\tilde{Ϛ}_{\Psi}(r'_t)^{*})$, and it equals the standard Rabi expression. The whole Rabi problem is thus a single rotor acting on an idempotent, read by the reduction formula.
 
-The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{h}{4\pi}i\vec e_\eta$, $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ sends $e_t\mapsto I_2$, $i\vec e_\eta\mapsto\sigma_\eta$.
+The notation is that of the read-list articles: $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_k$, $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ sends $e_t\mapsto I_2$, $i\vec e_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin operators and the two-level Hamiltonian.
@@ -34,7 +34,7 @@ $$
 \vec B(r'_t) = B_0\,\vec u_z + B_1\left(\cos(\omega r'_t/c)\,\vec u_x - \sin(\omega r'_t/c)\,\vec u_y\right)
 $$
 
-has the Hamiltonian $H(r'_t) = -\vec\mu\cdot\vec B(r'_t)$ with $\vec\mu = \gamma\vec S$. In the biquaternion algebra the spin operator is $\tilde S_{\Psi} =\frac{h}{4\pi}i \vec e_\eta$ along $\vec e_\eta$, and the Hamiltonian is the Hermitian element
+has the Hamiltonian $H(r'_t) = -\vec\mu\cdot\vec B(r'_t)$ with $\vec\mu = \gamma\vec S$. In the biquaternion algebra the spin operator is $\tilde S_{\Psi} =\frac{h}{4\pi}i \vec e_k$ along $\vec e_k$, and the Hamiltonian is the Hermitian element
 
 $$
 \tilde H_\Psi(r'_t) = -\frac{hf_{\mathrm{frq},0}}{2}\,i\vec e_z
@@ -265,11 +265,11 @@ which reduces to $\sin^2(\omega_1r'_t/(2c))$ on resonance. The $\pi$-pulse $r'_t
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace; home of all Hamiltonians here |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace; home of the frame rotor |
-| $\tilde{S}_{\Psi,\eta} =\frac{h}{4\pi}i\vec e_\eta$ | Spin observable along $\vec e_\eta$ |
+| $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_k$ | Spin observable along $\vec e_k$ |
 | $\vec B(r'_t) = B_0\vec u_z+B_1(\cos(\omega r'_t/c)\,\vec u_x-\sin(\omega r'_t/c)\,\vec u_y)$ | Static field plus corotating drive |
 | $\omega_0 = \gamma B_0$ | Larmor frequency |
 | $\omega_1 = \gamma B_1$ | Rabi frequency |

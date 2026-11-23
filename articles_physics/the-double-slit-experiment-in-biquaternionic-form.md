@@ -94,7 +94,7 @@ $$
 \tilde{Ϛ}_{\Psi} = \frac{\tilde{Ξ}\,\tilde{Ξ}^{\dagger}}{2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})},
 $$
 
-and the entries are, with $\rho_{j\eta}$ the matrix elements in the path basis,
+and the entries are, with $\rho_{jk}$ the matrix elements in the path basis,
 
 $$
 \rho_{11} = \frac{|A_1|^2}{|A_1|^2 + |A_2|^2}, \qquad
@@ -191,7 +191,7 @@ $$
 \exp(\frac{2\pi \vec u\,S}{h}) = \cos\!\Big(\frac{2\pi S}{h}\Big)e_t + \sin\!\Big(\frac{2\pi S}{h}\Big)\vec{u},
 $$
 
-which is $*$-unitary, $(\exp(\frac{2\pi \vec u\,S}{h}))(\exp(\frac{2\pi \vec u\,S}{h}))^\dagger = e_t$, and whose exponent $\frac{2\pi \vec u\,S}{h}$ also lies in $\mathbb{B}_{\Phi}$. Under the isomorphism $\vec e_\eta \mapsto -i\sigma_\eta$ with $\vec{u} = \vec e_z$ it maps to
+which is $*$-unitary, $(\exp(\frac{2\pi \vec u\,S}{h}))(\exp(\frac{2\pi \vec u\,S}{h}))^\dagger = e_t$, and whose exponent $\frac{2\pi \vec u\,S}{h}$ also lies in $\mathbb{B}_{\Phi}$. Under the isomorphism $\vec e_k \mapsto -i\sigma_k$ with $\vec{u} = \vec e_z$ it maps to
 
 $$
 \exp(\frac{2\pi \vec e_{z}\,S}{h}) \;\longmapsto\; \operatorname{diag}\!\bigl(\exp(-i\theta_{\mathrm{act}}),\, \exp(+i\theta_{\mathrm{act}})\bigr),
@@ -310,7 +310,7 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, central, $i^2 = -e_t$ |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre; home of the path phase |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |

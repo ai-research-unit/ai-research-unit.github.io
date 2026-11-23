@@ -18,7 +18,7 @@ The companion articles. *The Fourier Transform and the Coupled Schrödinger Equa
 
 The chart, its word and its norms are those of *The Schrödinger Equation in Biquaternionic Polar Variables*. The covariant logarithmic derivative, the two invariants and the gauge direction are those of *The Coupled Schrödinger Equation in Biquaternionic Polar Variables*. The symbol's translation identity and its sign are those of *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form*.
 
-The covariant slots. $D_t=\partial_{t'}-\frac{2\pi iϙ\omicron_{\mathrm{pot}}}{h}$ and $D_\eta=\partial_\eta+\frac{2\pi iϙ A_\eta}{h}$, with $\omicron_{\mathrm{pot}}$ and $\vec A$ real. The two signs differ, and the difference is the metric $i$ of the material-time derivative.
+The covariant slots. $D_t=\partial_{t'}-\frac{2\pi iϙ\omicron_{\mathrm{pot}}}{h}$ and $D_k=\partial_k+\frac{2\pi iϙ A_k}{h}$, with $\omicron_{\mathrm{pot}}$ and $\vec A$ real. The two signs differ, and the difference is the metric $i$ of the material-time derivative.
 
 The two invariants. With $\theta=\theta_{\mathrm{pha}}$,
 
@@ -28,7 +28,7 @@ $$
 \mathcal E=-\frac{h}{2\pi}\,\partial_{t'}\theta_{\mathrm{pha}}+ϙ\omicron_{\mathrm{pot}} .
 $$
 
-The substitution. $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+2\pi i\vec\nu_\Phi\cdot\vec r)$, so the covariant slots become the numbers $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $h\,k_\eta+ϙ A_\eta$.
+The substitution. $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+2\pi i\vec\nu_\Phi\cdot\vec r)$, so the covariant slots become the numbers $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $h\,\nu_{\Phi,k}+ϙ A_k$.
 
 ## The Transform's Kernel in the Coupled Chart
 
@@ -177,7 +177,7 @@ The invariants $\vec\pi$ and $\mathcal E$ are gauge invariant and field dependen
 | $\lambda=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge factor; central, hence commuting with the kernel |
 | $e^{-i\theta_{\mathrm{pwp}}}$ | The transform's kernel; central, one coordinate |
 | $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ | The covariant frequency; the invariant $\mathcal E$ on a mode |
-| $h\,k_\eta+ϙ A_\eta$ | The mechanical momentum; the invariant $\vec\pi$ on a mode |
+| $h\,\nu_{\Phi,k}+ϙ A_k$ | The mechanical momentum; the invariant $\vec\pi$ on a mode |
 | $h_t-ϙ\omicron_{\mathrm{pot}}\pm\lvert\vec h_\Psi-q\vec A\rvert$ | The eigenvalue pair; the translation and the gap |
 | $1.232882$, $1.503329$ | The gap free and with $ϙ\vec A=(0.35,0.25,0)$ |
 | $1.00$, $5.64$, $26.20$ | Effective mode counts of a chirped unit at rates $0$, $1$, $4$ |

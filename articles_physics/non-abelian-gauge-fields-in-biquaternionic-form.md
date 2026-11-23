@@ -246,12 +246,12 @@ $$
 which says that $(\partial/\partial R_{\imath} \tilde Q)\tilde Q^{-1}$ is anti-Hermitian **when the derivative is an ordinary real derivative**. This was checked numerically on a general $*$-unitary $\tilde Q$ (not merely on the exponential parametrization); what was found is the sharp split
 
 $$
-(\partial/\partial R_\eta \tilde Q)\,\tilde Q^{-1} \ \text{is anti-Hermitian for } \eta = 1, 2, 3,
+(\partial/\partial R_k \tilde Q)\,\tilde Q^{-1} \ \text{is anti-Hermitian for } k=1,2,3,
 \qquad
 (\partial/\partial R_t \tilde Q)\,\tilde Q^{-1} \ \text{is Hermitian.}
 $$
 
-The reason is the $i r'_t$ convention. The time derivative is $\partial/\partial R_t = -i\partial/\partial r'_t$, so the object $(\partial/\partial R_t\,\tilde Q)\tilde Q^{-1}$ carries a factor $-i$ relative to $(\partial/\partial r'_t\,U)\tilde Q^{-1}$; and both $(\partial/\partial r'_t\,U)\tilde Q^{-1}$ and $(\partial/\partial R_\eta\,U)\tilde Q^{-1}$ are anti-Hermitian for a $*$-unitary $\tilde Q$. Multiplication by $-i$ converts an anti-Hermitian matrix into a Hermitian one. Hence the time-like component of the Maurer–Cartan form has the opposite conjugation behaviour to the space-like components.
+The reason is the $i r'_t$ convention. The time derivative is $\partial/\partial R_t = -i\partial/\partial r'_t$, so the object $(\partial/\partial R_t\,\tilde Q)\tilde Q^{-1}$ carries a factor $-i$ relative to $(\partial/\partial r'_t\,U)\tilde Q^{-1}$; and both $(\partial/\partial r'_t\,U)\tilde Q^{-1}$ and $(\partial/\partial R_k\,U)\tilde Q^{-1}$ are anti-Hermitian for a $*$-unitary $\tilde Q$. Multiplication by $-i$ converts an anti-Hermitian matrix into a Hermitian one. Hence the time-like component of the Maurer–Cartan form has the opposite conjugation behaviour to the space-like components.
 
 The consequence for the reality condition is immediate. The transformation law is
 
@@ -277,7 +277,7 @@ $$
 \qquad
 \mathcal{A}_k \ \text{Hermitian scalar-free (in } i\,\mathrm{SU}(2)\subset\mathbb{B}_{\Psi}\text{)} ,
 $$
-under which the transformed components close: $\mathcal{A}_{\mathrm g,0}$ is anti-Hermitian and scalar-free and $\mathcal{A}_{\mathrm g,k}$ is Hermitian and scalar-free, to $10^{-9}$ under a generic $*$-unitary $\tilde Q$; and the adjoint transformation $F_{\mathrm g,\imath\jmath} = \tilde Q F_{\imath\jmath}\tilde Q^{-1}$ continues to hold for the mixed pairs. The time component sits in the material sector and the spatial components in the informational sector; the pattern is the one the $i r'_t$ convention dictates for any four-vector ($x_0= i r'_t$ imaginary, $x_\eta$ real), and it mirrors the parent's abelian connection $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ with its imaginary scalar and real vector coefficients.
+under which the transformed components close: $\mathcal{A}_{\mathrm g,0}$ is anti-Hermitian and scalar-free and $\mathcal{A}_{\mathrm g,k}$ is Hermitian and scalar-free, to $10^{-9}$ under a generic $*$-unitary $\tilde Q$; and the adjoint transformation $F_{\mathrm g,\imath\jmath} = \tilde Q F_{\imath\jmath}\tilde Q^{-1}$ continues to hold for the mixed pairs. The time component sits in the material sector and the spatial components in the informational sector; the pattern is the one the $i r'_t$ convention dictates for any four-vector ($x_0= i r'_t$ imaginary, $x_k$ real), and it mirrors the parent's abelian connection $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ with its imaginary scalar and real vector coefficients.
 - **Open.** Whether this mixed assignment is the one the framework intends, or whether the time-like and space-like components should be combined into a single reality condition by a different placement of the factor $i$ in $D_{\imath}$, is not settled here. The obstruction is a property of the $i r'_t$ derivative and not of the gauge algebra; changing the placement of $i$ relabels which components carry which reality but does not remove the mismatch. This is a genuine gap and is carried into the open questions.
 
 ## Open Questions

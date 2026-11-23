@@ -271,10 +271,10 @@ both for an element boosted from rest by $\theta_{\mathrm{rpd}}$.
 *Proof of the vector case.* Write $\tilde A_\Phi=mc\bigl(i\cosh\theta_{\mathrm{rpd}}e_t+\sinh\theta_{\mathrm{rpd}}\vec u\bigr)$, the corpus's four-vector shape with an imaginary time coefficient. Its coefficients are $imc\cosh\theta$ and $mc\sinh\theta\,u_k$, so
 
 $$
-N=(imc\cosh\theta)^{2}+(mc\sinh\theta)^{2}\sum_ku_k^{2}=-m^{2}c^{2}\bigl(\cosh^{2}-\sinh^{2}\bigr)=-m^{2}c^{2},
+N=(imc\cosh\theta)^{2}+(mc\sinh\theta)^{2}\sum_{k\in\{x,y,z\}}u_k^{2}=-m^{2}c^{2}\bigl(\cosh^{2}-\sinh^{2}\bigr)=-m^{2}c^{2},
 $$
 
-using $\sum_ku_k^{2}=1$ and $(imc\cosh\theta)^{2}=-m^{2}c^{2}\cosh^{2}\theta$; and
+using $\sum_{k\in\{x,y,z\}}u_k^{2}=1$ and $(imc\cosh\theta)^{2}=-m^{2}c^{2}\cosh^{2}\theta$; and
 
 $$
 \langle\tilde A_\Phi\rangle_{*}=m^{2}c^{2}\bigl(\cosh^{2}+\sinh^{2}\bigr)=m^{2}c^{2}\cosh2\theta_{\mathrm{rpd}} .
@@ -374,7 +374,7 @@ Claim. $\langle\tilde\Xi\rangle_{*}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and $
 *Proof.* The Euclidean size is not multiplicative in general — $e_t+i\vec e_x$ and $e_t-i\vec e_x$ each have size $2$ and their product is $0$ — so the factors are handled one at a time. Multiplication by the central phase multiplies every coefficient by a unit complex number and leaves $\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ fixed. Right multiplication by the real unit $\tilde u_{\mathrm r}$ acts on the four complex coefficients by the same real orthogonal $4\times4$ matrix that it induces on $\mathbb{R}^{4}$, and an orthogonal real matrix preserves $\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$; the same holds for left multiplication, since the real unit quaternions act orthogonally on both sides. What remains is the boost factor alone, whose two coefficients are $\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $i\sinh\frac{\theta_{\mathrm{rpd}}}{2}u_k$, so
 
 $$
-\langle\tilde U_{\Psi,\mathrm b}\rangle_{*}=\cosh^{2}\frac{\theta_{\mathrm{rpd}}}{2}+\sinh^{2}\frac{\theta_{\mathrm{rpd}}}{2}\sum_ku_k^{2}=\cosh^{2}+\sinh^{2}=\cosh\theta_{\mathrm{rpd}} .
+\langle\tilde U_{\Psi,\mathrm b}\rangle_{*}=\cosh^{2}\frac{\theta_{\mathrm{rpd}}}{2}+\sinh^{2}\frac{\theta_{\mathrm{rpd}}}{2}\sum_{k\in\{x,y,z\}}u_k^{2}=\cosh^{2}+\sinh^{2}=\cosh\theta_{\mathrm{rpd}} .
 $$
 
 For the modulus, $N$ is multiplicative, by the theorem of [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), and $N$ of a central phase is that phase squared, $N$ of a real unit is $1$, and $N(\tilde U_{\Psi,\mathrm b})=\cosh^{2}-\sinh^{2}=1$; hence $N(\tilde\Xi)=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. **The contrast is the article in one line: the modulus is multiplicative and the size is not, which is why the modulus is the invariant and the size is a frame-dependent quantity.** The half-angle in the exponent becomes a full angle in the ratio, which is the origin of every factor of two in this article.

@@ -14,7 +14,7 @@ The relation to the two subspaces is the conceptual thread. States live in $\mat
 
 Two cautionary notes, in the spirit of the companion articles. First, the mathematics is **standard quantum information theory** transcribed into biquaternion notation; no result below depends on the physical hypothesis that $\mathbb{B}_{\Psi}$ is a distinct sector of the world. Second, the reformulation **reframes** the dichotomy without resolving the conceptual problems that attend it in standard quantum physics — the position taken in *Entangled Subsystems in the Biquaternion Framework*, that the framework changes the language and not the physics, applies here too.
 
-The conventions are those of the companion articles: the quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$; the central scalar imaginary $i$; the fixed-point subspaces $\mathbb{B}_{C}$ (the complex subspace, the centre), $\mathbb{B}_{H}$ (the real-quaternion subspace), $\mathbb{B}_{\Psi}$ (Hermitian), and $\mathbb{B}_{\Phi}$ (anti-Hermitian); a general element $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_{\imath} \in \mathbb{C}$; and the scalar part $\mathrm{Sc}(\tilde{Q})$, which every statement below uses directly.
+The conventions are those of the companion articles: the quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$; the central scalar imaginary $i$; the fixed-point subspaces $\mathbb{B}_{C}$ (the complex subspace, the centre), $\mathbb{B}_{H}$ (the real-quaternion subspace), $\mathbb{B}_{\Psi}$ (Hermitian), and $\mathbb{B}_{\Phi}$ (anti-Hermitian); a general element $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_{\imath} \in \mathbb{C}$; and the scalar part $\mathrm{Sc}(\tilde{Q})$, which every statement below uses directly.
 
 ## The State Space and the Plain Form
 
@@ -70,7 +70,7 @@ $$
 \boxed{\;Ξ(\tilde{Q}) = \sum_l \tilde M_{\mathrm{kraus},l}\,\tilde{Q}\,\tilde M_{\mathrm{kraus},l}^{*}\;} ,
 $$
 
-and it is trace preserving if and only if $\sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde M_{\mathrm{kraus},l} = e_t$. A completely positive, trace-preserving map is a **quantum channel**; its dual is $Ξ^{*}(\tilde H_\Psi) = \sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde H_\Psi\tilde M_{\mathrm{kraus},l}$, and the normalization is exactly $Ξ^{*}(e_t) = e_t$. The representation is not unique: two Kraus sets define the same channel precisely when they differ by a partial isometry. The **Kraus rank** is the minimal number of Kraus operators, equal to the rank of the Choi matrix $J(Ξ) = \sum_{j\eta} \tilde Q_{j\eta}\otimesΞ(\tilde Q_{j\eta})$, written on a basis $\{\tilde Q_{jk}\}$ of $\mathbb{B}$, and complete positivity is the condition $J(Ξ) \geq 0$. For a qubit channel the Choi matrix is $4\times4$, so the Kraus rank is at most four.
+and it is trace preserving if and only if $\sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde M_{\mathrm{kraus},l} = e_t$. A completely positive, trace-preserving map is a **quantum channel**; its dual is $Ξ^{*}(\tilde H_\Psi) = \sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde H_\Psi\tilde M_{\mathrm{kraus},l}$, and the normalization is exactly $Ξ^{*}(e_t) = e_t$. The representation is not unique: two Kraus sets define the same channel precisely when they differ by a partial isometry. The **Kraus rank** is the minimal number of Kraus operators, equal to the rank of the Choi matrix $J(Ξ) = \sum_{jk} \tilde Q_{jk}\otimesΞ(\tilde Q_{jk})$, written on a basis $\{\tilde Q_{jk}\}$ of $\mathbb{B}$, and complete positivity is the condition $J(Ξ) \geq 0$. For a qubit channel the Choi matrix is $4\times4$, so the Kraus rank is at most four.
 
 The companion article already introduced this form for generalized measurements. The point here is that it describes *every* physical process, not only measurement.
 
@@ -171,7 +171,7 @@ for an isometry $\tilde{V}_{\Phi}$ into the system tensor an environment, with $
 
 Geometrically, a qubit channel is an affine map of the Bloch ball into itself, $\vec s_{\Psi} \mapsto M\vec s_{\Psi} + \vec t$. The $*$-unitary channels are the rotations $M \in SO(3)$, $\vec t = 0$. Two canonical types are distinguished by whether the origin is fixed:
 
-- **Unital channels** have $\vec t = 0$ and fix the maximally mixed state, contracting the ball toward the centre. The **depolarizing channel** $\mathcal{E}_p(\tilde{Ϛ}_{\Psi}) = (1-p)\tilde{Ϛ}_{\Psi} + p\,e_t/2$, with Bloch map $\vec s_{\Psi} \mapsto (1-p)\vec s_{\Psi}$, is completely positive and trace preserving for $0 \leq p \leq 1$; in the biquaternion algebra it has Kraus operators $\{\sqrt{1-\tfrac{3p}{4}}\,e_t,\ \sqrt{\tfrac{p}{4}}\,i\vec e_x,\ \sqrt{\tfrac{p}{4}}\,i\vec e_y,\ \sqrt{\tfrac{p}{4}}\,i\vec e_z\}$, whose normalization uses $(i\vec e_\eta)^{*}(i\vec e_\eta) = e_t$.
+- **Unital channels** have $\vec t = 0$ and fix the maximally mixed state, contracting the ball toward the centre. The **depolarizing channel** $\mathcal{E}_p(\tilde{Ϛ}_{\Psi}) = (1-p)\tilde{Ϛ}_{\Psi} + p\,e_t/2$, with Bloch map $\vec s_{\Psi} \mapsto (1-p)\vec s_{\Psi}$, is completely positive and trace preserving for $0 \leq p \leq 1$; in the biquaternion algebra it has Kraus operators $\{\sqrt{1-\tfrac{3p}{4}}\,e_t,\ \sqrt{\tfrac{p}{4}}\,i\vec e_x,\ \sqrt{\tfrac{p}{4}}\,i\vec e_y,\ \sqrt{\tfrac{p}{4}}\,i\vec e_z\}$, whose normalization uses $(i\vec e_k)^{*}(i\vec e_k) = e_t$.
 - **Non-unital channels** have $\vec t \neq 0$ and move the maximally mixed state off centre. The **amplitude-damping channel** is the standard example, acting on the Bloch vector as $(s_x, s_y, s_z) \mapsto (\sqrt{1-\gamma}\,s_x,\ \sqrt{1-\gamma}\,s_y,\ \gamma + (1-\gamma)s_z)$, $0 \leq \gamma \leq 1$, contractive for $\gamma > 0$ and the identity only at $\gamma = 0$.
 
 Dephasing, treated next, is unital: it contracts the ball toward an *axis* rather than its centre.
@@ -183,7 +183,7 @@ The infinitesimal version of the dichotomy is the **Lindblad equation** (the Gor
 $$
 \boxed{\;\frac{d\tilde{Ϛ}_{\Psi}}{dr'_t}
 = -\frac{2\pi i}{h\,c}\,[H, \tilde{Ϛ}_{\Psi}]
-+ \sum_\eta  \left(\tilde M_{\mathrm{kraus},k}\,\tilde{Ϛ}_{\Psi}\,\tilde M_{\mathrm{kraus},k}^{*}
++ \sum_{k\in\{x,y,z\}}  \left(\tilde M_{\mathrm{kraus},k}\,\tilde{Ϛ}_{\Psi}\,\tilde M_{\mathrm{kraus},k}^{*}
 - \tfrac{1}{2}\left\{\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}, \tilde{Ϛ}_{\Psi}\right\}\right)\;},
 $$
 
@@ -321,7 +321,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators of reversible evolution) |
 | $\mathbb{B}_{C}$ | Complex subspace (centre); trace part of a Hamiltonian |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace (rotation rotors) |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ | State of the informational sector |
 | $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ | Observable / Hamiltonian |
@@ -335,7 +335,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $-\frac{2\pi i\,H}{h\,\in\,\mathbb{B}}_{\Phi}$ | Generator of reversible evolution |
 | $Ξ_{\mathrm{deph},p}$ | Dephasing channel along $\vec u$ |
 | $\vec s_{\Psi} \mapsto (1-p)\vec s_{\Psi} + p(\vec u\cdot\vec s_{\Psi})\vec u$ | Dephasing action on the Bloch vector |
-| $J(Ξ) = \sum_{j\eta}\tilde Q_{j\eta}\otimesΞ(\tilde Q_{j\eta})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J(Ξ)$ |
+| $J(Ξ) = \sum_{jk}\tilde Q_{jk}\otimesΞ(\tilde Q_{jk})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J(Ξ)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |

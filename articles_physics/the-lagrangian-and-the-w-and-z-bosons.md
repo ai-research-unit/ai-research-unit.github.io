@@ -41,7 +41,7 @@ The electroweak action is standard and is imported whole. What the corpus contri
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$, used for the fermion and scalar elements; the gauge fields are written in components, because the $SU(2)$ factor is not carried by a single algebra element.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_k^{2}=-e_t$, used for the fermion and scalar elements; the gauge fields are written in components, because the $SU(2)$ factor is not carried by a single algebra element.
 
 The group and the couplings. $SU(2)_L$ with coupling $g$ and generators $\tau_{a}=\sigma_{a}/2$ in the doublet; $\mathrm{U}(1)_Y$ with coupling $g_{\mathrm Y}$ and hypercharge $Y$. The doublet has $Y_{\mathrm{hch}}=\tfrac12$ and $T_3=\pm\tfrac12$ on its two components.
 

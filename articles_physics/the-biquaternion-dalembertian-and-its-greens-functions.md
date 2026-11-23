@@ -44,7 +44,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural} = e_t\,\partial/\partial R_t - \vec e_x\,\partial/\partial R_x - \vec e_y\,\partial/\partial R_y - \vec e_z\,\partial/\partial R_z
 = \sum_{\imath\in\{t,x,y,z\}} e_{\imath}^{*}\,\partial/\partial R_{\imath} ,
 $$
-where the second equality uses $e_t^{*} = e_t$ and $\vec e_\eta^{*} = -\vec e_\eta$, that is, Hermitian conjugation of the basis. The identity $(\tilde\nabla_\Phi)^{\natural} = \sum_{\imath} e_{\imath}^{*} \partial/\partial R_{\imath}$ is the only algebraic input the operator theory needs, and it is the reason the adjoint of the operator is a conjugation of the operator.
+where the second equality uses $e_t^{*} = e_t$ and $\vec e_k^{*} = -\vec e_k$, that is, Hermitian conjugation of the basis. The identity $(\tilde\nabla_\Phi)^{\natural} = \sum_{\imath} e_{\imath}^{*} \partial/\partial R_{\imath}$ is the only algebraic input the operator theory needs, and it is the reason the adjoint of the operator is a conjugation of the operator.
 
 Two warnings about reading $\tilde\nabla_\Phi$ as an element of $\mathbb{B}$ are needed, because they govern every manipulation that follows. The coefficients $\partial/\partial R_{\imath}$ are **operators**, not complex numbers, so $\tilde\nabla_\Phi$ is not an element of the algebra but an algebra-valued differential operator; statements about it are statements about its action. And the coefficients do not commute with the basis in the naive way, because the time coefficient $\partial/\partial R_t$ is imaginary while the basis is not: the product rule fixes the order, and $\tilde\nabla_\Phi$ acts by left multiplication on the field,
 $$
@@ -63,7 +63,7 @@ $$
 = \sum_{\imath} e_{\imath} e_{\imath}^{*}\,\partial^2/\partial R_{\imath}^2
 + \sum_{\imath \neq \jmath} e_{\imath} e_{\jmath}^{*}\,\partial^2/\partial R_{\imath}\partial R_{\jmath} .
 $$
-On the diagonal $e_{\imath} e_{\imath}^{*} = e_t$ for every $\mu$: for $\mu = 0$ this is $e_t e_t = e_t$, and for $\mu = k$ it is $\vec e_\eta(-\vec e_\eta) = -\vec e_\eta^2 = e_t$. On the off-diagonal the products are basis bivectors, $e_t \vec e_\eta^{*} = -\vec e_\eta$ and $\vec e_j \vec e_\eta^{*} = -\vec e_j \vec e_\eta$ for $j \neq k$, and the coefficient $\partial^2/\partial R_{\imath}\partial R_{\jmath}$ is symmetric in ${\imath},\jmath$ while the bivector part is antisymmetric. The off-diagonal sum therefore vanishes, and
+On the diagonal $e_{\imath} e_{\imath}^{*} = e_t$ for every $\mu$: for $\mu = 0$ this is $e_t e_t = e_t$, and for $\mu = k$ it is $\vec e_k(-\vec e_k) = -\vec e_k^2 = e_t$. On the off-diagonal the products are basis bivectors, $e_t \vec e_k^{*} = -\vec e_k$ and $\vec e_j \vec e_k^{*} = -\vec e_j \vec e_k$ for $j \neq k$, and the coefficient $\partial^2/\partial R_{\imath}\partial R_{\jmath}$ is symmetric in ${\imath},\jmath$ while the bivector part is antisymmetric. The off-diagonal sum therefore vanishes, and
 $$
 \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = e_t\sum_{\imath}\partial^2/\partial R_{\imath}^2 = e_t\left(\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2\right).
 $$
@@ -87,7 +87,7 @@ On a plane wave
 $$
 \tilde{Ξ} = \tilde{Ξ}_0\,\exp(-i\theta_{\mathrm{pwp}})
 $$
-the derivatives act as numbers: $\partial/\partial R_t \to -\frac{i}{c}(-i\omega) = -\omega/c$ and $\partial/\partial R_\eta \to i \nu_{\Phi\eta}$, so
+the derivatives act as numbers: $\partial/\partial R_t \to -\frac{i}{c}(-i\omega) = -\omega/c$ and $\partial/\partial R_k \to i \nu_{\Phik}$, so
 $$
 -\partial^2/\partial {r^{\prime}_t}^2 \to \frac{\omega^2}{c^2}, \qquad \Delta_\Phi \to -4\pi^{2}\nu_{\Phi}^{2},
 \qquad
@@ -164,7 +164,7 @@ With $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, 
 $$
 \rho^2 := \langle\tilde R_\Phi\rangle_{\natural} = (i r'_t)^2 +r_x^2+r_y^2+r_z^2 = -{r'_{t}}^2 +r_x^2+r_y^2+r_z^2 ,
 $$
-the Minkowski interval continued to imaginary time. Read as a quadratic form in the four coordinates $(x_0, x_1, x_2, x_3)$ with $x_0 = i r'_t$ and $x_\eta = r_\eta$, the operator $\Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ is *exactly* the four-dimensional Laplacian,
+the Minkowski interval continued to imaginary time. Read as a quadratic form in the four coordinates $(x_0, x_1, x_2, x_3)$ with $x_0 = i r'_t$ and $x_k = r_k$, the operator $\Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ is *exactly* the four-dimensional Laplacian,
 $$
 \Box_\Phi = \sum_{\imath\in\{t,x,y,z\}} \partial^2/\partial R_{\imath}^2 = \Delta_\Phi ,
 $$
@@ -439,7 +439,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | Symbol | Meaning |
 |---|---|
 | $\tilde\nabla_\Phi = \sum_{\imath} e_{\imath}\partial/\partial R_{\imath}$ | Biquaternionic gradient, $\partial/\partial R_t = \partial/\partial R_t = -i\partial/\partial r'_t$ |
-| $(\tilde\nabla_\Phi)^{\natural} = \sum_{\imath} e_{\imath}^{*}\partial/\partial R_{\imath}$ | Quaternion-conjugate gradient, $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_\eta\,\vec e_\eta\partial/\partial R_\eta$ |
+| $(\tilde\nabla_\Phi)^{\natural} = \sum_{\imath} e_{\imath}^{*}\partial/\partial R_{\imath}$ | Quaternion-conjugate gradient, $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_{k\in\{x,y,z\}}\,\vec e_k\partial/\partial R_k$ |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Series d'Alembertian; central scalar; $\Box_\Phi \to \omega^2/c^2 - 4\pi^{2}\nu_{\Phi}^{2}$ |
 | $\tilde\nabla_\Phi^{*} = -(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi^{*} = \Box_\Phi$ | Adjoints under $\langle\tilde{F},\tilde Q\rangle = \int2\,\mathrm{Sc}(\tilde{F}^{*}\tilde Q)$ |
 | $\Box_\Phi^\flat = -\Box_\Phi$, $G_{\Box,\Phi}^\flat = -G_{\Box,\Phi}$, $\tilde{G}_{\Phi,\tilde\nabla_\Phi}^\flat = \tilde{G}_{\Phi,\tilde\nabla_\Phi}$ | Conjugation action on the operator and the kernels: ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ fix a real scalar and $\flat$ negates it; the conjugations preserve the sectors, multiplication by $i$ exchanges them, $i\tilde{G}_{\Phi,\tilde\nabla_\Phi} \in \mathbb{B}_{\Psi}$ |

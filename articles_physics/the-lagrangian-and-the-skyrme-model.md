@@ -32,7 +32,7 @@ What is not new. The Skyrme model is standard, and its soliton, its topological 
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; the field is $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$ with $\tilde U^{-1}=\tilde U^{\natural}=\tilde U^{*}$. $\mathrm{Sc}(X)$ is the coefficient of $e_t$; $\langle X\rangle_\natural=\mathrm{Sc}(XX^{\natural})$.
+The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_k^{2}=-e_t$; the field is $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$ with $\tilde U^{-1}=\tilde U^{\natural}=\tilde U^{*}$. $\mathrm{Sc}(X)$ is the coefficient of $e_t$; $\langle X\rangle_\natural=\mathrm{Sc}(XX^{\natural})$.
 
 The static frame. Spatial coordinates are $\vec r=R_x\vec e_x+R_y\vec e_y+R_z\vec e_z$, the fields are static, $\partial\tilde U/\partial r'_t=0$, and configurations are pure gauge at spatial infinity, $\tilde U\to e_t$ as $|\vec r|\to\infty$, so that they extend to maps $\mathbb{S}^3\to\mathbb{S}^3$.
 

@@ -56,7 +56,7 @@ Writing the formula with a compact factor of argument $\theta_{\mathrm{axr}}$ an
 
 ### The Construction
 
-The representation $(m,n)$ is the tensor product of the spin-$m$ and spin-$n$ representations of the two $\mathfrak{sl}_2$ summands. The rotation generators act diagonally on the two factors, $J_\eta=J^{(m)}_\eta\otimes I+I\otimes J^{(n)}_\eta$, and the boost generators act with opposite signs, $K_\eta=J^{(m)}_\eta\otimes I-I\otimes J^{(n)}_\eta$: that sign is the reason the complexified algebra splits into two commuting triples while the real form does not.
+The representation $(m,n)$ is the tensor product of the spin-$m$ and spin-$n$ representations of the two $\mathfrak{sl}_2$ summands. The rotation generators act diagonally on the two factors, $J_k=J^{(m)}_k\otimes I+I\otimes J^{(n)}_k$, and the boost generators act with opposite signs, $K_k=J^{(m)}_k\otimes I-I\otimes J^{(n)}_k$: that sign is the reason the complexified algebra splits into two commuting triples while the real form does not.
 
 ### The Weights
 

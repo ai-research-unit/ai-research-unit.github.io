@@ -531,7 +531,7 @@ On the Lorentzian space the signed conjugation of the volume element negates eve
 $$
 \mathrm{Ad}^{\alpha}_{\Omega}(\eta)=\Omega\eta\Omega^{-1}=-\eta,
 $$
-because $\eta_j\Omega=-\Omega\eta_j$ for every vector of the frame. That is $-\mathrm{id}$ on $V$, of determinant $+1$ and anti-orthochronous, and it is the product of parity with time reversal.
+because $\eta_k\Omega=-\Omega\eta_k$ for every vector of the frame. That is $-\mathrm{id}$ on $V$, of determinant $+1$ and anti-orthochronous, and it is the product of parity with time reversal.
 
 On the Hermitian copy the corresponding element is the central imaginary, and its two-sided operator is the identity, since $i$ is central and $i^{*}=-i$. The same element, read through the two actions, is a reflection on one copy and the identity on the other. That is the sharpest single example of the entry's thesis, and it is the reason the reach of the two actions differs.
 
@@ -575,7 +575,7 @@ so the compact group is a bundle over the two-sphere with a two-torus as fibre.
 
 **The fibre is the stabiliser of a pure state, and it is the two-torus.** The Hermitian idempotent $\tfrac12(e_t+i\vec u)$ is fixed by conjugation exactly by the pair of diagonal phases, so the stability group of a pure state is $T^{2}$ of real dimension two, and the central circle alone is too small by a circle. Verified: the diagonal two-torus fixes the idempotent of a real unit vector to $5.6\times10^{-17}$, and a generic unitary moves it by $0.575$. The sphere and the ball of §*The Level Sets* are then the same quotient read on two sectors, and the flag variety is the set of measurement bases because a basis of $\mathbb{C}^{2}$ is a pair of orthogonal pure states, each carrying its own phase.
 
-**In the matrix model the norm is the determinant.** Under $\mathbb{B}\cong M_2(\mathbb{C})$ an element is a $2\times2$ matrix and $N(\tilde Q)=\det$, verified symbolically and numerically: the determinant of the image $\mathsf{M}_2(\tilde Q)$ of $Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, with $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, is $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$. The compact slice is therefore the unitary matrices with the norm a phase, and that is why the quotient by $S^{3}$ is the norm's circle rather than something larger.
+**In the matrix model the norm is the determinant.** Under $\mathbb{B}\cong M_2(\mathbb{C})$ an element is a $2\times2$ matrix and $N(\tilde Q)=\det$, verified symbolically and numerically: the determinant of the image $\mathsf{M}_2(\tilde Q)$ of $Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, with $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, is $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$. The compact slice is therefore the unitary matrices with the norm a phase, and that is why the quotient by $S^{3}$ is the norm's circle rather than something larger.
 
 **A point of the flag variety is a measurement basis.** A complete flag of $\mathbb{C}^{2}$ is a line inside a plane; the plane is the whole space, so the flag is one line, and the line together with its orthogonal complement is a pair of orthogonal pure states. The two-torus is the pair of their phases, so the quotient is the pair itself, and the sphere carries two readings: the pure states of *Idempotents, Ideals and Observables*, where they are the Hermitian idempotents $\tfrac12(e_t+i\vec u)$ over the real unit vectors, and the bases in which a complete measurement is stated. The two coincide because a pure state is a line and a pair of outcomes is a pair of lines, and the space of each is $P^{1}$ in two dimensions.
 

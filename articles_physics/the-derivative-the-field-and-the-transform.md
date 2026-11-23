@@ -122,7 +122,7 @@ $$
 =(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi ,
 $$
 
-the diagonal terms all giving $e_t$ because $e_t^{\natural}=e_t$ and $\vec e_k\vec e_k^{\natural}=-\vec e_k^{2}=e_t$, and the cross terms cancelling in pairs because the three spatial units anticommute with each other and the temporal one commutes with all of them. On the material part $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$, so
+the diagonal terms all giving $e_t$ because $e_t^{\natural}=e_t$ and $\vec e_k\vec e_k^{\natural}=-\vec e_k^{2}=e_t$, and the cross terms cancelling in pairs because the three spatial units anticommute with each other and the temporal one commutes with all of them. On the material part $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_k=\partial/\partial r_k$, so
 
 $$
 \Box_\Phi=\Delta_\Phi-\frac{\partial^{2}}{\partial {r'_t}^{2}},
@@ -504,7 +504,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 | the gradient | $\tilde\nabla_\Phi$ | $\sum_{\imath} e_{\imath}\partial/\partial R_{\imath}$ |
 | the conjugate gradient | $(\tilde\nabla_\Phi)^{\natural}$ | $\sum_{\imath}\varepsilon_{\imath} e_{\imath}\partial/\partial R_{\imath}$, $\varepsilon=(1,-1,-1,-1)$ |
 | the d'Alembertian | $\Box_\Phi$ | $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta_\Phi$ |
-| the spatial Laplacian | $\Delta_\Phi$ | $\sum_\eta\partial^2/\partial R_\eta^2$ |
+| the spatial Laplacian | $\Delta_\Phi$ | $\sum_{k\in\{x,y,z\}}\partial^2/\partial R_k^2$ |
 | the Euclidean Laplacian | $\Box_\Phi$ | $\sum_{\imath}\partial^2/\partial q_{\imath}^2$ on $\mathbb{B}_{H}$ |
 | the norm of an element | $N=\langle\tilde Q\rangle_{\natural}$ | $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ |
 | the symbol | $S(\xi)$ | $\sum_{\imath}\xi_{\imath}\mathsf M_2(e_{\imath})$, with $\det S=N(\xi)$ |

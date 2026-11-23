@@ -215,10 +215,10 @@ $$
 \boxed{\;\langle\tilde H_\Psi\rangle_{\tilde{Ϛ}_{\Psi}}=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde H_\Psi)\;}.
 $$
 
-For a single **fermionic** mode this formula applies directly to the Fock number operator, which is the idempotent $\tfrac12(e_t-i\vec e_z)$; its expectation is the occupation probability, and the vacuum and occupied idempotents are the two pure states. For the **scalar** field the formula applies only to finite-dimensional truncations, because the full number operator acts on an infinite-dimensional space and is not an element of $\mathbb{B}$. On the $n$-level truncation of one mode, the number operator is the diagonal matrix $\mathrm{diag}(0,1,\dots,n)$ represented in the Fock basis, and the pairing formula returns the mean occupation of the truncated state. Explicitly, a truncated state is a density matrix $\rho=\sum_{k,l}\rho_{kl}|k\rangle\langle l|$ with $\rho\ge0$ and $\mathrm{tr}\,\rho=1$, and
+For a single **fermionic** mode this formula applies directly to the Fock number operator, which is the idempotent $\tfrac12(e_t-i\vec e_z)$; its expectation is the occupation probability, and the vacuum and occupied idempotents are the two pure states. For the **scalar** field the formula applies only to finite-dimensional truncations, because the full number operator acts on an infinite-dimensional space and is not an element of $\mathbb{B}$. On the $n$-level truncation of one mode, the number operator is the diagonal matrix $\mathrm{diag}(0,1,\dots,n)$ represented in the Fock basis, and the pairing formula returns the mean occupation of the truncated state. Explicitly, a truncated state is a density matrix $\rho=\sum_{\mathrm{Fock}}\rho_{\mathrm{Fock},n,m}\lvert n\rangle\langle m\rvert$ with $\rho\ge0$ and $\mathrm{tr}\,\rho=1$, and
 
 $$
-\langle N\rangle_{\rho}=\mathrm{tr}(\rho\,N)=\sum_{k=0}^{n}k\,\rho_{kk},
+\langle N\rangle_{\rho}=\mathrm{tr}(\rho\,N)=\sum_{n'=0}^{n}n'\,\rho_{\mathrm{Fock},n'},
 $$
 
 so the diagonal of the truncated density matrix is the occupation distribution. The vacuum of the truncation is $\rho_0=|0\rangle\langle0|$, with $\langle N\rangle=0$, and the one-particle state is $\rho_1=|1\rangle\langle1|$, with $\langle N\rangle=1$; the pairing formula is exact for these finite matrices and is the only sense in which the Born rule applies to the scalar number operator.
@@ -261,7 +261,7 @@ The state space carries two gradings, an $\mathbb{N}$-grading by total number an
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; its scalars are the only elements acting on the scalar one-particle space |

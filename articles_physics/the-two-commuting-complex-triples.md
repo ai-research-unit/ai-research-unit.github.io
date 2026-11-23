@@ -22,14 +22,14 @@ $$
 \vec J_{+}=\tfrac12\bigl(\vec J+i\vec K\bigr),\qquad \vec J_{-}=\tfrac12\bigl(\vec J-i\vec K\bigr),
 $$
 
-component by component: $J_{+\eta}=\tfrac12(J_\eta+iK_\eta)$ and $J_{-\eta}=\tfrac12(J_\eta-iK_\eta)$.
+component by component: $J_{+k}=\tfrac12(J_k+iK_k)$ and $J_{-k}=\tfrac12(J_k-iK_k)$.
 
 ### The Complex Number in the Definition
 
-The symbol $i$ in that display is the **scalar of the complexification**, not the central element of the algebra, and the difference is not pedantic. With the central element the combination vanishes identically, because $iK_\eta=i\cdot\tfrac12 i\vec e_\eta=-\tfrac12\vec e_\eta=-J_\eta$ and therefore
+The symbol $i$ in that display is the **scalar of the complexification**, not the central element of the algebra, and the difference is not pedantic. With the central element the combination vanishes identically, because $iK_k=i\cdot\tfrac12 i\vec e_k=-\tfrac12\vec e_k=-J_k$ and therefore
 
 $$
-J_\eta+iK_\eta=0 .
+J_k+iK_k=0 .
 $$
 
 That identity is correct, and it is the reason the two triples have no meaning inside the real algebra, and none inside the algebra read with its own complex structure either.
@@ -40,7 +40,7 @@ $$
 \mathfrak{so}(1,3)_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathfrak{so}(1,3),
 $$
 
-in which the scalar multiplies a real basis without being an element of the algebra. In that space $J_\eta+iK_\eta$ is a nonzero vector, and the two triples live there.
+in which the scalar multiplies a real basis without being an element of the algebra. In that space $J_k+iK_k$ is a nonzero vector, and the two triples live there.
 
 ### The Two Must Not Be Identified
 
@@ -62,7 +62,7 @@ A reader who tries to compute the two triples as biquaternions will get zero, an
 
 ### How the Checks Are Done
 
-The numerical checks are performed on the real four-dimensional congruence matrices of the generators, in which $J_\eta$ and $K_\eta$ are real and the complexification unit $i$ is an external scalar, so the combinations $\tfrac12(\rho(J_\eta)\pm i\rho(K_\eta))$ are nonzero and the brackets below hold for them. The $2\times2$ image cannot serve for this purpose: there the central scalar is already inside the entries, $\mathsf{M}_2(K_\eta)=i\,\mathsf{M}_2(J_\eta)$, and the combination collapses to zero, as the identity above requires. This is the operational meaning of "the coefficient field's $i$": it is an operation on the array, and it is distinguishable from the central scalar because the central scalar is already inside the array.
+The numerical checks are performed on the real four-dimensional congruence matrices of the generators, in which $J_k$ and $K_k$ are real and the complexification unit $i$ is an external scalar, so the combinations $\tfrac12(\rho(J_k)\pm i\rho(K_k))$ are nonzero and the brackets below hold for them. The $2\times2$ image cannot serve for this purpose: there the central scalar is already inside the entries, $\mathsf{M}_2(K_k)=i\,\mathsf{M}_2(J_k)$, and the combination collapses to zero, as the identity above requires. This is the operational meaning of "the coefficient field's $i$": it is an operation on the array, and it is distinguishable from the central scalar because the central scalar is already inside the array.
 
 ## Each Triple Closes
 
@@ -230,7 +230,7 @@ The two triples $\vec J_\pm=\tfrac12(\vec J\pm i\vec K)$ each close with structu
 | symbol | meaning |
 |---|---|
 | $\vec J_\pm=\tfrac12(\vec J\pm i\vec K)$ | the two complex triples |
-| $J_{+\eta}$, $J_{-\eta}$ | their components |
+| $J_{+k}$, $J_{-k}$ | their components |
 | $M_{\imath\jmath}$ | the bivector generators, $M_{0i}=K_i$, $M_{ij}=\epsilon_{ijk}J_k$ |
 | $\star$ | the Hodge star on bivectors, $\star^{2}=-1$ |
 | $\Pi_\pm=\tfrac12(1\mp i\star)$ | the self-dual and anti-self-dual projectors |

@@ -368,7 +368,7 @@ The limit. The placements are three descriptions of one object, so no experiment
 
 ### III.2.f — The Transform of a Measure Is Not Positive Definite
 
-The object. $G(\omega)=\int\chi_\omega\,d\mu$, its value $G(0)=\mu(\mathbb{R}^{n})e_t$, and the quadratic form $\sum_{k,l}\bar A_kA_lG(\omega_k-\omega_l)=\int\langle Z\rangle_{\natural}\,d\mu$.
+The object. $G(\omega)=\int\chi_\omega\,d\mu$, its value $G(0)=\mu(\mathbb{R}^{n})e_t$, and the quadratic form $\sum_{\mathrm{modes}}\bar A_{\mathrm{mode},m}A_{\mathrm{mode},m'}G(\omega_{\mathrm{mode},m}-\omega_{\mathrm{mode},m'})=\int\langle Z\rangle_{\natural}\,d\mu$.
 
 The warrant. The identity is one line, because $\bar\chi_\omega\chi_\eta=\chi_{\eta-\omega}$ at a pure root; the right-hand side is the integral of the natural norm; and the natural norm is indefinite, vanishing on the null cone and negative on the centre. At $N=1$ with $Z=i e_t$ the integral is $-\mu$, since $\langle i e_t\rangle_{\natural}=i^{2}=-1$, while the star pairing gives $\langle i,i\rangle_{*}=+1$.
 

@@ -4,7 +4,7 @@
 
 This is an exercise in the electromagnetism series. It constructs the **electromagnetic energy–momentum tensor** from the field-strength biquaternion $\tilde F$, and it uses the framework and the notation of the companion article *The Field-Strength Biquaternion and Its Invariants* together with its parent, *Maxwell's Equations in the Biquaternionic Formulation*. Those two articles are the parents of this exercise: they fix the field strength, the medium conventions, and the Hermitian form. What follows applies them. The three universal articles — *Introduction to the Biquaternion Universe*, *The Material Sector: Four-Vectors, Interval and Lorentz Action*, and *The Informational Sector: States, Observables and Probability* — supply the algebra and the fixed-point subspace names, which are inherited without change.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_{\imath}^2 = -e_t$ and the product rule $\vec e_{\jmath} \vec e_{\imath} = -\delta_{\jmath\imath}e_t + \epsilon_{\jmath\imath\lambda}\vec e_\lambda$; the scalar imaginary $i$ with $i^2 = -1$, commuting with the quaternion units; the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ and the Hermitian subspace $\mathbb{B}_{\Psi}$, with the material reading $Q_t=i q'_t$ and $Q_\eta=q_\eta$ on $\mathbb{B}_{\Phi}$; the quaternion conjugate ${}^{\natural}$, the complex conjugate $\bar{\cdot}$, and the Hermitian conjugate ${}^{*} = ({}^{\natural})^{\,*}$; the biquaternionic gradient $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ with $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$; the reduction formula, for a state $\tilde{Ϛ}_{\Psi}$ and an observable $\tilde H_\Psi$, $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$; the field-strength biquaternion $\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$; the energy density $W$; the Poynting vector $\vec S = \vec E\times\vec H$; and the medium speed of light $c = 1/\sqrt{\epsilon\mu}$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v$ is reserved for particle and frame velocities.
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_{\imath}^2 = -e_t$ and the product rule $\vec e_{\jmath} \vec e_{\imath} = -\delta_{\jmath\imath}e_t + \epsilon_{\jmath\imath\lambda}\vec e_\lambda$; the scalar imaginary $i$ with $i^2 = -1$, commuting with the quaternion units; the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ and the Hermitian subspace $\mathbb{B}_{\Psi}$, with the material reading $Q_t=i q'_t$ and $Q_k=q_k$ on $\mathbb{B}_{\Phi}$; the quaternion conjugate ${}^{\natural}$, the complex conjugate $\bar{\cdot}$, and the Hermitian conjugate ${}^{*} = ({}^{\natural})^{\,*}$; the biquaternionic gradient $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ with $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$; the reduction formula, for a state $\tilde{Ϛ}_{\Psi}$ and an observable $\tilde H_\Psi$, $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$; the field-strength biquaternion $\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$; the energy density $W$; the Poynting vector $\vec S = \vec E\times\vec H$; and the medium speed of light $c = 1/\sqrt{\epsilon\mu}$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v$ is reserved for particle and frame velocities.
 
 **What is to be shown.** (1) Why the four-component biquaternionic energy–momentum cannot be the energy–momentum *tensor*, and why the real form $\tilde\Sigma_{\mathrm{re}} = W + \frac{1}{c}\vec S$ fails the conservation test that the Hermitian form $\frac{1}{2}\tilde F\tilde F^{*}$ passes. (2) The bilinear construction of the rank-two tensor from $\tilde F$ and the four units. (3) The tracelessness of $T_{\imath\jmath}$. (4) The conservation law $\partial/\partial R_{\imath} T_{\imath\jmath} = -f_{\jmath}$. (5) The rank-one form of $T_{\imath\jmath}$ for a plane wave. Each problem is stated and solved in full; the value of an exercise is in the solutions.
 
@@ -62,7 +62,7 @@ $$
 $$
 Only one of them can be the object whose biquaternionic gradient is the power–force density. The rest of this problem tests which. The two glyphs share the letter and differ in the label: $\tilde\Sigma_{\Psi}$ is the Hermitian element, its subscript naming the sector, and $\tilde\Sigma_{\mathrm{re}}$ is the real quaternion, its label naming the form.
 
-**Solution (c).** Write $\tilde\Sigma_{\mathrm{re}} = We_t + \frac{1}{c}\vec S$, with $W$ and $\vec S$ real, and apply the biquaternionic gradient in the material reading, $Q_t=i q'_t$ and $Q_\eta=q_\eta$,
+**Solution (c).** Write $\tilde\Sigma_{\mathrm{re}} = We_t + \frac{1}{c}\vec S$, with $W$ and $\vec S$ real, and apply the biquaternionic gradient in the material reading, $Q_t=i q'_t$ and $Q_k=q_k$,
 $$
 \begin{aligned}
 \tilde\nabla_\Phi&=e_t\frac{\partial}{\partial i r'_t}+\vec e_x\frac{\partial}{\partial r_x}+\vec e_y\frac{\partial}{\partial r_y}+\vec e_z\frac{\partial}{\partial r_z},\\[2pt]
@@ -105,7 +105,7 @@ using the Poynting theorem for the last equality. The factor $i$ is now uniform,
 
 ## Problem 2: The Tensor as a Bigeneral quaternionic Bilinear
 
-**Statement.** With $e_t, \vec e_x, \vec e_y, \vec e_z$ the four units, the same in every frame, and $\tilde{Q} = \sum_{\imath} Q_{\imath} e_{\imath}$ a four-vector read on the material coordinate $Q_t=i q'_t$, $Q_\eta=q_\eta$, so that the $Q_{\imath}$ are its components, define the **ordered pair**
+**Statement.** With $e_t, \vec e_x, \vec e_y, \vec e_z$ the four units, the same in every frame, and $\tilde{Q} = \sum_{\imath} Q_{\imath} e_{\imath}$ a four-vector read on the material coordinate $Q_t=i q'_t$, $Q_k=q_k$, so that the $Q_{\imath}$ are its components, define the **ordered pair**
 $$
 \Pi_{\imath\jmath} = \frac{1}{2}\,\mathrm{Sc}\!\left(\tilde F\,e_{\imath}\,\tilde F^{*}\,e_{\jmath}\right).
 $$
@@ -113,7 +113,7 @@ The first index is the unit inserted between the field and its conjugate — the
 $$
 T_{\imath 0} = i^2\,\Pi_{\imath 0} = -\Pi_{\imath 0},
 \qquad
-T_{\imath\eta} = \Pi_{\imath\eta}.
+T_{\imathk} = \Pi_{\imathk}.
 $$
 The conservation law is the four-divergence
 $$
@@ -164,9 +164,9 @@ $$
 $$
 This is the ordered object: it is **not symmetric**, and that is correct, because $\Pi_{0\jmath}$ (energy flux) and $\Pi_{\jmath0}$ (momentum density times $c$) are built through different slots and come out with opposite signs. Reading the time column with the $i^2=-1$ its slot carries gives the symmetric tensor
 $$
-T_{00} = W, \qquad T_{0j} = T_{j0} = \frac{1}{c}S_j, \qquad T_{j\eta} = -\sigma_{j\eta},
+T_{00} = W, \qquad T_{0j} = T_{j0} = \frac{1}{c}S_j, \qquad T_{jk} = -\sigma_{jk},
 $$
-because $T_{00} = i^2\Pi_{00} = W$, $T_{0j} = \Pi_{0j} = \frac{1}{c}S_j$, $T_{j0} = i^2\Pi_{j0} = \frac{1}{c}S_j$, and $T_{j\eta} = \Pi_{j\eta} = -\sigma_{j\eta}$, which is symmetric because $\sigma$ is. This is the standard electromagnetic energy–momentum tensor in the medium: $W$ is the energy density, $\frac{1}{c}\vec S$ the energy flux and the momentum density times $c$, and $-\sigma_{\jmath\imath}$ the momentum flux.
+because $T_{00} = i^2\Pi_{00} = W$, $T_{0j} = \Pi_{0j} = \frac{1}{c}S_j$, $T_{j0} = i^2\Pi_{j0} = \frac{1}{c}S_j$, and $T_{jk} = \Pi_{jk} = -\sigma_{jk}$, which is symmetric because $\sigma$ is. This is the standard electromagnetic energy–momentum tensor in the medium: $W$ is the energy density, $\frac{1}{c}\vec S$ the energy flux and the momentum density times $c$, and $-\sigma_{\jmath\imath}$ the momentum flux.
 
 **Remark on what the construction is.** The insertion of $e_{\imath}$ and $e_{\jmath}$ is what turns a single biquaternion into a rank-two object: each unit supplies one vector direction, and the scalar part reads off the component. The two indices are treated differently by the algebra — the first through the Hermitian form $\tilde F(\,\cdot\,)\tilde F^{*}$, the second through right multiplication and scalar projection — which is why the natural object is $\Pi_{\imath\jmath}$ (ordered) and not a tensor with both slots treated the same way. The parents' four-component $\tilde\Sigma_{\Psi} = \frac{1}{2}\tilde F\tilde F^{*}$ is the time row of $T$, up to the factor $i$ the time slot carries: $\Pi_{0\jmath} = \frac{i}{2}\mathrm{Sc}(\tilde F\tilde F^{*}e_{\jmath}) = i\,\mathrm{Sc}(\tilde\Sigma_{\Psi}e_{\jmath})$. The full tensor needs all sixteen entries; twelve of them — the six independent stress components and their partners — are simply absent from any four-component object.
 
@@ -174,9 +174,9 @@ because $T_{00} = i^2\Pi_{00} = W$, $T_{0j} = \Pi_{0j} = \frac{1}{c}S_j$, $T_{j0
 
 **Statement.** Show that $\sum_{\imath}\Pi_{\imath\imath} = 0$ identically, for every field configuration.
 
-**Solution.** The trace of the ordered object is the plain sum $\sum_{\imath}\Pi_{\imath\imath} = \Pi_{00} + \sum_\eta\Pi_{\eta\eta}$, which by Problem 2 is
+**Solution.** The trace of the ordered object is the plain sum $\sum_{\imath}\Pi_{\imath\imath} = \Pi_{00} + \sum_{k\in\{x,y,z\}}\Pi_{kk}$, which by Problem 2 is
 $$
-\sum_{\imath}\Pi_{\imath\imath} = -W - \sum_\eta\sigma_{\eta\eta}.
+\sum_{\imath}\Pi_{\imath\imath} = -W - \sum_{k\in\{x,y,z\}}\sigma_{kk}.
 $$
 The trace of the Maxwell stress is
 $$
@@ -186,15 +186,15 @@ using $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$. Hence
 $$
 \boxed{\;\sum_{\imath}\Pi_{\imath\imath} = -W - (-W) = 0\;}.
 $$
-The tensor is traceless. With the symmetric tensor the same statement reads $-T_{00} + \sum_\eta T_{\eta\eta} = -W + (-\sum_\eta\sigma_{\eta\eta}) = -W + W = 0$, the one minus of the interval sitting on the time slot. Tracelessness holds in the medium as well as in vacuum, because $W$ and the trace part of the stress are in the fixed ratio forced by the isotropic subtraction. It is the algebraic expression of the classical fact that the electromagnetic energy–momentum tensor is traceless, which is what makes source-free Maxwell theory conformally invariant at the classical level.
+The tensor is traceless. With the symmetric tensor the same statement reads $-T_{00} + \sum_{k\in\{x,y,z\}} T_{kk} = -W + (-\sum_{k\in\{x,y,z\}}\sigma_{kk}) = -W + W = 0$, the one minus of the interval sitting on the time slot. Tracelessness holds in the medium as well as in vacuum, because $W$ and the trace part of the stress are in the fixed ratio forced by the isotropic subtraction. It is the algebraic expression of the classical fact that the electromagnetic energy–momentum tensor is traceless, which is what makes source-free Maxwell theory conformally invariant at the classical level.
 
-**A caution on the trace.** The trace is $-T_{00} + \sum_\eta T_{\eta\eta}$, not the flat sum $T_{00} + \sum_\eta T_{\eta\eta}$. The minus is $i^2$ in $Q_t=i q'_t$, and it sits on the time term; here $T_{00} = W$ and $T_{\eta\eta} = -\sigma_{\eta\eta} = W$, so the flat sum would be $2W$, not zero. The cancellation uses the interval $\sum_{\imath} Q_{\imath}^2$, read on $Q_t=i q'_t$ and $Q_\eta=q_\eta$ as $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, which is the reading in which the tensor takes its standard form.
+**A caution on the trace.** The trace is $-T_{00} + \sum_{k\in\{x,y,z\}} T_{kk}$, not the flat sum $T_{00} + \sum_{k\in\{x,y,z\}} T_{kk}$. The minus is $i^2$ in $Q_t=i q'_t$, and it sits on the time term; here $T_{00} = W$ and $T_{kk} = -\sigma_{kk} = W$, so the flat sum would be $2W$, not zero. The cancellation uses the interval $\sum_{\imath} Q_{\imath}^2$, read on $Q_t=i q'_t$ and $Q_k=q_k$ as $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, which is the reading in which the tensor takes its standard form.
 
 ## Problem 4: The Conservation Law
 
 **Statement.** Show that, for a field with free charge density $\rho$ and free current density $\vec J$ satisfying Maxwell's equations and charge conservation, the tensor satisfies
 $$
-\sum_{\imath}\frac{\partial\Pi_{\imath0}}{\partial x_{\imath}} = -f_0, \qquad \sum_{\imath}\frac{\partial\Pi_{\imath\eta}}{\partial x_{\imath}} = -f_k,
+\sum_{\imath}\frac{\partial\Pi_{\imath0}}{\partial x_{\imath}} = -f_0, \qquad \sum_{\imath}\frac{\partial\Pi_{\imathk}}{\partial x_{\imath}} = -f_k,
 $$
 equivalently $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\jmath} = -f_{\jmath}$ with the **lower-index** four-force density
 $$
@@ -203,26 +203,26 @@ $$
 whose upper time component is $+\frac{1}{c}\vec E\cdot\vec J$ (the sign is the square of the $i$ in $Q_t=i q'_t$, $i^2=-1$).
 In particular, for a source-free field, $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\jmath} = 0$.
 
-**Solution (energy component).** In the real chart $x_0=r'_{t}$, where $Q_t=i q'_t$, the derivatives are $\partial/\partial x_0=\partial/\partial r'_t$ and $\partial/\partial x_\eta=\partial/\partial q_\eta$. With $\Pi_{00}=-W$ and $\Pi_{\eta0}=-\frac{1}{c}S_\eta$,
+**Solution (energy component).** In the real chart $x_0=r'_{t}$, where $Q_t=i q'_t$, the derivatives are $\partial/\partial x_0=\partial/\partial r'_t$ and $\partial/\partial x_k=\partial/\partial q_k$. With $\Pi_{00}=-W$ and $\Pi_{k0}=-\frac{1}{c}S_k$,
 $$
 \sum_{\imath}\frac{\partial\Pi_{\imath0}}{\partial x_{\imath}}
-= \frac{\partial}{\partial x_0}(-W)+\frac{\partial}{\partial x_\eta}\left(-\frac{1}{c}S_\eta\right)
+= \frac{\partial}{\partial x_0}(-W)+\frac{\partial}{\partial x_k}\left(-\frac{1}{c}S_k\right)
 = -\left(\frac{\partial W}{\partial r'_t}+\frac{1}{c}\,\mathrm{div}\,\vec S\right)
 = \frac{1}{c}\,\vec E\cdot\vec J = -f_0,
 $$
 where the Poynting theorem $c\,\partial W/\partial r'_t + \mathrm{div}\,\vec S = -\vec E\cdot\vec J$ was used in the last step. The energy component of the divergence is the work done by the field on the charges: the field loses energy at the rate $\vec E\cdot\vec J$.
 
-**Solution (momentum component).** With $\Pi_{0\eta}=\frac{1}{c}S_\eta$ and $\Pi_{j\eta}=-\sigma_{j\eta}$,
+**Solution (momentum component).** With $\Pi_{0k}=\frac{1}{c}S_k$ and $\Pi_{jk}=-\sigma_{jk}$,
 $$
-\sum_{\imath}\frac{\partial\Pi_{\imath\eta}}{\partial x_{\imath}}
-= \frac{\partial}{\partial x_0}\,\frac{1}{c}S_\eta - \frac{\partial}{\partial x_j}\,\sigma_{j\eta}
-= \frac{1}{c}\,\frac{\partial S_\eta}{\partial r'_t} - \frac{\partial\sigma_{j\eta}}{\partial x_j},
+\sum_{\imath}\frac{\partial\Pi_{\imathk}}{\partial x_{\imath}}
+= \frac{\partial}{\partial x_0}\,\frac{1}{c}S_k - \frac{\partial}{\partial x_j}\,\sigma_{jk}
+= \frac{1}{c}\,\frac{\partial S_k}{\partial r'_t} - \frac{\partial\sigma_{jk}}{\partial x_j},
 $$
 the second term being $(\vec\nabla_\Phi\cdot\boldsymbol\sigma)_k$. The standard momentum-balance identity for the Maxwell stress, obtained from the Ampère–Maxwell and Faraday laws together with the Gauss laws,
 $$
 \frac{1}{c}\,\frac{\partial\vec S}{\partial r'_t} - \vec\nabla_\Phi\cdot\boldsymbol{\sigma} = -\left(\rho\,\vec E + \vec J\times\vec B\right),
 $$
-gives $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\eta} = -f_k$. The four statements combine into $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\jmath} = -f_{\jmath}$.
+gives $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imathk} = -f_k$. The four statements combine into $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\jmath} = -f_{\jmath}$.
 
 Both component equations were checked by direct recomputation from the definition $\Pi_{\imath\jmath} = \frac{1}{2}\mathrm{Sc}(\tilde Fe_{\imath}\tilde F^{*}e_{\jmath})$, with the $i$ of $Q_t=i q'_t$ on every time slot, together with Maxwell's equations. The energy component was checked against the Poynting identity above and, independently, by substituting the time derivatives from the Ampère–Maxwell and Faraday laws into $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\jmath}$ and simplifying; the three momentum components were checked in the same way, giving exactly $-\left(\rho\vec E + \vec J\times\vec B\right)_{\imath}$. The plane wave of Problem 1 is a special case: it has $\vec J = 0$ and its divergence vanishes, as Problem 5 confirms directly.
 
@@ -238,7 +238,7 @@ F = \begin{pmatrix} 0 & \vec E^{\mathsf T} \ \vec E & -[\vec B]_\times \end{pmat
 F^* = \begin{pmatrix} 0 & -\vec B^{\mathsf T} \ -\vec B & -[\vec E]_\times \end{pmatrix},
 $$
 
-with $[\vec q]_\times$ the matrix of $\vec v\mapsto\vec q\times\vec v$, is real, traceless, and entry by entry the same components as above with the indices placed mixed: the corner entry is $\frac12(\vec E^2+\vec B^2) = W$, the first row and column carry the Poynting vector with opposite signs, $T_F{}_{0\eta} = -S_\eta$ and $T_F{}_{\eta0} = S_\eta$, and the spatial block is the Maxwell stress $\sigma_{\jmath\imath} = E_{\jmath} E_{\imath} + B_{\jmath} B_{\imath} - W\delta_{\jmath\imath}$. That the two off-diagonal blocks differ in sign is not an error: the matrix is a mixed tensor — the row slot first, the column slot second — so it is not symmetric, and the asymmetry is precisely the information about which slot is the row. Multiplying by the operator column $(-\partial/\partial r'_t,\vec\nabla_\Phi)^{\mathsf T}$ gives the balance of this problem, $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\jmath}$ equalling minus the four-force density, and the derivation has two steps: the Leibniz rule turns the divergence of the product into the divergences of the two factors, and the algebraic identity
+with $[\vec q]_\times$ the matrix of $\vec v\mapsto\vec q\times\vec v$, is real, traceless, and entry by entry the same components as above with the indices placed mixed: the corner entry is $\frac12(\vec E^2+\vec B^2) = W$, the first row and column carry the Poynting vector with opposite signs, $T_F{}_{0k} = -S_k$ and $T_F{}_{k0} = S_k$, and the spatial block is the Maxwell stress $\sigma_{\jmath\imath} = E_{\jmath} E_{\imath} + B_{\jmath} B_{\imath} - W\delta_{\jmath\imath}$. That the two off-diagonal blocks differ in sign is not an error: the matrix is a mixed tensor — the row slot first, the column slot second — so it is not symmetric, and the asymmetry is precisely the information about which slot is the row. Multiplying by the operator column $(-\partial/\partial r'_t,\vec\nabla_\Phi)^{\mathsf T}$ gives the balance of this problem, $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\jmath}$ equalling minus the four-force density, and the derivation has two steps: the Leibniz rule turns the divergence of the product into the divergences of the two factors, and the algebraic identity
 
 $$
 cF(\vec A)\,\overline{cF(\vec C)} = \overline{cF(\vec C)}\,cF(\vec A) \qquad \text{for all vectors } \vec A, \vec C,
@@ -277,7 +277,7 @@ The following problems are left to the reader. They extend the construction, and
 $$
 T_{\imath\jmath} = \frac{1}{\mu}\left(\sum_{\alpha,\beta}\delta_{\alpha\beta}F_{\imath\alpha}F_{\jmath\beta} - \frac{1}{4}\,\delta_{\imath\jmath}\sum_{\alpha,\beta}\delta_{\alpha\beta}F_{\alpha\beta}F_{\alpha\beta}\right)
 $$
-reproduces the component table of Problem 2 up to the medium factors, and identify the normalization of the bracketed expression in terms of $W$ and $\sigma_{\jmath\imath}$. The sums run over the four directions with $\delta_{\alpha\beta}$ the one metric, and a time slot carries $i^2=-1$ from $Q_t=i q'_t$, so the first sum reads $-F_{\imath0}F_{\jmath0} + \sum_\eta F_{\imath \eta}F_{\jmath \eta}$ in the real chart. This shows that the bigeneral quaternionic bilinear and the standard tensor formula are the same object.
+reproduces the component table of Problem 2 up to the medium factors, and identify the normalization of the bracketed expression in terms of $W$ and $\sigma_{\jmath\imath}$. The sums run over the four directions with $\delta_{\alpha\beta}$ the one metric, and a time slot carries $i^2=-1$ from $Q_t=i q'_t$, so the first sum reads $-F_{\imath0}F_{\jmath0} + \sum_{k\in\{x,y,z\}} F_{\imath k}F_{\jmath k}$ in the real chart. This shows that the bigeneral quaternionic bilinear and the standard tensor formula are the same object.
 
 **3. Angular momentum.** Define the angular-momentum density $M_{\imath\jmath\lambda} = x_{\jmath} T_{\imath\lambda} - x_\lambda T_{\imath\jmath}$, with $\tilde R_\Phi$ the four-position in $\mathbb{B}_{\Phi}$. Show that $\sum_{\imath}\partial/\partial x_{\imath} M_{\imath\jmath\lambda} = 0$ for a source-free field, and identify the three spatial components as the field angular momentum and the three mixed components as the boost (centre-of-energy) densities. Does the bigeneral quaternionic bilinear simplify $M$, or is the position biquaternion $\tilde R_\Phi$ the only extra ingredient?
 
@@ -307,13 +307,13 @@ The electromagnetic energy–momentum tensor is constructed from the field-stren
 $$
 \Pi_{\imath\jmath} = \frac{1}{2}\,\mathrm{Sc}\!\left(\tilde F\,e_{\imath}\,\tilde F^{*}\,e_{\jmath}\right),
 $$
-with $e_t,\vec e_x,\vec e_y,\vec e_z$ the four units, the same in every frame, read on the material coordinate $Q_t=i q'_t$, $Q_\eta=q_\eta$. A time slot carries one $i$ from that coefficient, and two time slots carry $i^2=-1$. The first index is the row and the second the column, so the pair is ordered. Its components are
+with $e_t,\vec e_x,\vec e_y,\vec e_z$ the four units, the same in every frame, read on the material coordinate $Q_t=i q'_t$, $Q_k=q_k$. A time slot carries one $i$ from that coefficient, and two time slots carry $i^2=-1$. The first index is the row and the second the column, so the pair is ordered. Its components are
 $$
 \Pi_{00} = -W, \qquad \Pi_{0\jmath} = \frac{1}{c}S_{\jmath}, \qquad \Pi_{\jmath0} = -\frac{1}{c}S_{\jmath}, \qquad \Pi_{\jmath\imath} = -\sigma_{\jmath\imath},
 $$
-with $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ the energy density, $\vec S = \vec E\times\vec H$ the Poynting vector, and $\sigma_{\jmath\imath} = \epsilon E_{\jmath} E_{\imath} + \mu H_{\jmath} H_{\imath} - W\delta_{\jmath\imath}$ the Maxwell stress. Multiplying the time column by $i^2=-1$ gives the symmetric standard tensor, $T_{00} = W$, $T_{0j} = T_{j0} = \frac{1}{c}S_j$, $T_{j\eta} = -\sigma_{j\eta}$.
+with $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ the energy density, $\vec S = \vec E\times\vec H$ the Poynting vector, and $\sigma_{\jmath\imath} = \epsilon E_{\jmath} E_{\imath} + \mu H_{\jmath} H_{\imath} - W\delta_{\jmath\imath}$ the Maxwell stress. Multiplying the time column by $i^2=-1$ gives the symmetric standard tensor, $T_{00} = W$, $T_{0j} = T_{j0} = \frac{1}{c}S_j$, $T_{jk} = -\sigma_{jk}$.
 
-The tensor is traceless, $\sum_{\imath}\Pi_{\imath\imath} = -W - \sum_\eta\sigma_{\eta\eta} = 0$, and it is conserved: $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath0} = -f_0 = \frac{1}{c}\vec E\cdot\vec J$ and $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\eta} = -(\rho\vec E + \vec J\times\vec B)_\eta$, equivalently $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\jmath} = -f_{\jmath}$ with the four-force density. For a source-free field the divergence vanishes; for the free plane wave the tensor has rank one, $T_{\imath\jmath}\propto \nu_{\Phi,\imath} \nu_{\Phi,\jmath}$.
+The tensor is traceless, $\sum_{\imath}\Pi_{\imath\imath} = -W - \sum_{k\in\{x,y,z\}}\sigma_{kk} = 0$, and it is conserved: $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath0} = -f_0 = \frac{1}{c}\vec E\cdot\vec J$ and $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imathk} = -(\rho\vec E + \vec J\times\vec B)_k$, equivalently $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\jmath} = -f_{\jmath}$ with the four-force density. For a source-free field the divergence vanishes; for the free plane wave the tensor has rank one, $T_{\imath\jmath}\propto \nu_{\Phi,\imath} \nu_{\Phi,\jmath}$.
 
 The exercise also settles the form of the four-component *biquaternionic energy–momentum*. The real form $\tilde\Sigma_{\mathrm{re}} = W + \frac{1}{c}\vec S$ and its claimed conservation law $\tilde\nabla_\Phi\tilde\Sigma_{\mathrm{re}} = -\tilde{\mathcal F}$ do not survive recomputation: the time-derivative term acquires a factor $i$ from $\partial/\partial R_t$ that the divergence term does not carry, and the equation fails already on a free plane wave, where it gives $\frac{1-i}{c}\partial/\partial r'_t\,W$ instead of zero. The consistent four-component object is the Hermitian form the parents state, $\frac{1}{2}\tilde F\tilde F^{*} = W + \frac{i}{c}\vec S \in \mathbb{B}_{\Psi}$, whose scalar divergence gives the energy law; but no four-component object can carry the spatial stress, which is the rank-two tensor built above.
 
@@ -326,7 +326,7 @@ The exercise also settles the form of the four-component *biquaternionic energy�
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
-| $e_t, \vec e_x, \vec e_y, \vec e_z$ | The four units, the same in every frame; the material reading is $Q_t=i q'_t$, $Q_\eta=q_\eta$ |
+| $e_t, \vec e_x, \vec e_y, \vec e_z$ | The four units, the same in every frame; the material reading is $Q_t=i q'_t$, $Q_k=q_k$ |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
 | $\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\vec E, \vec H, \vec B = \mu\vec H$ | Electric field, magnetic field, magnetic induction |
@@ -339,7 +339,7 @@ The exercise also settles the form of the four-component *biquaternionic energy�
 | $\sum_{\imath}\partial/\partial x_{\imath}\Pi_{\imath\jmath}$ | Divergence of the energy–momentum tensor |
 | $T_{\imath\jmath}$ | Symmetric energy–momentum tensor, $\Pi$ with its time column multiplied by $i^2$ |
 | $\delta_{\imath\jmath} = (1,1,1,1)$ | The unit metric, the one metric of the series |
-| $f_0 = -\frac{1}{c}\vec E\cdot\vec J$, $f_\eta = (\rho\vec E+\vec J\times\vec B)_\eta$ | Four-force density, lower components |
+| $f_0 = -\frac{1}{c}\vec E\cdot\vec J$, $f_k = (\rho\vec E+\vec J\times\vec B)_k$ | Four-force density, lower components |
 | $\langle\tilde F\rangle_{\natural} = \langle\tilde F,\tilde F\rangle_{\natural} = \tilde F\tilde F^{\natural}$ | Biquaternion norm (vanishes for a null field) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |

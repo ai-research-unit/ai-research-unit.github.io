@@ -41,7 +41,7 @@ $$
 [P_{\imath},\mathcal{K}_{\jmath}] = 2\bigl(\delta_{\imath\jmath}D - M_{\imath\jmath}\bigr) , \qquad
 [M_{\imath\jmath},P_\rho] = \delta_{\jmath\rho}P_{\imath} - \delta_{\imath\rho}P_{\jmath} .
 $$
-The symbol $\mathcal{K}_{\imath}$ for the special conformal generator is the companion's notation, kept here: the letter $K_{\imath}$ is used in the series for the boost generator $B_{\mathrm{boost},\eta} = i\vec e_\eta$ of the Lorentz group, which is an element of the algebra, while $\mathcal{K}_{\imath}$ is a differential operator and is not. The generators act on the coordinates as
+The symbol $\mathcal{K}_{\imath}$ for the special conformal generator is the companion's notation, kept here: the letter $K_{\imath}$ is used in the series for the boost generator $B_{\mathrm{boost},k} = i\vec e_k$ of the Lorentz group, which is an element of the algebra, while $\mathcal{K}_{\imath}$ is a differential operator and is not. The generators act on the coordinates as
 $$
 P_{\imath} = \partial/\partial R_{\imath} , \qquad
 D = \sum_{\jmath} x_{\jmath}\partial/\partial R_{\jmath} , \qquad
@@ -52,7 +52,7 @@ with $x^2 = \sum_{\rho}x_\rho x_\rho$. The conformal group contains the Poincar�
 
 ### What the algebra carries, and what it does not
 
-Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $\vec e_\eta$ and the boosts $B_{\mathrm{boost},\eta} = i\vec e_\eta$, and the Lorentz group acts by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$. The dilation is realised by a non-invertible element $\sqrt{\lambda}\,e_t$, which scales the biquaternion norm without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{B}_{\Phi}$: the special conformal transformation is a fractional map obtained by placing a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
+Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $\vec e_k$ and the boosts $B_{\mathrm{boost},k} = i\vec e_k$, and the Lorentz group acts by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$. The dilation is realised by a non-invertible element $\sqrt{\lambda}\,e_t$, which scales the biquaternion norm without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{B}_{\Phi}$: the special conformal transformation is a fractional map obtained by placing a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
 $$
 I(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\langle\tilde{Q}\rangle_{\natural}} ,
 \qquad
@@ -310,7 +310,7 @@ The improved stress tensor has trace $\sum_{\imath} T_{\imath\imath} = 8\pi^{2}\
 |---|---|
 | $SO^+(2,4) \cong SU(2,2)/\{\pm I_4\}$ | Conformal group of four-dimensional Minkowski space |
 | $P_{\imath}, M_{\imath\jmath}, D, \mathcal{K}_{\imath}$ | Generators: translations, Lorentz, dilation, special conformal |
-| $\mathcal{K}_{\imath} = 2\sum_{\jmath} x_{\imath} x_{\jmath}\partial/\partial R_{\jmath} - r_x^2\partial/\partial R_{\imath}$ | Special conformal generator (series symbol; not the boost $B_{\mathrm{boost},\eta}$) |
+| $\mathcal{K}_{\imath} = 2\sum_{\jmath} x_{\imath} x_{\jmath}\partial/\partial R_{\jmath} - r_x^2\partial/\partial R_{\imath}$ | Special conformal generator (series symbol; not the boost $B_{\mathrm{boost},k}$) |
 | $\Omega(\tilde{Q})$ | Conformal factor; interval scaled by $\Omega^{2}$; $\Omega = 1/\langle\tilde Q\rangle_{\natural}$ for the inversion |
 | $\mathcal{W}_{\mathrm{dim}}$ | Conformal weight of the field; $\mathcal{W}_{\mathrm{dim}} = 1$ for the massless scalar in $d=4$ |
 | $\xi_2(\tilde{Q}) = \Omega^{\mathcal{W}_{\mathrm{dim}}}\xi(\tilde{Q}_2)$ | Conformal transformation law |
