@@ -35,7 +35,7 @@ $$
 so that the effective equation of motion is
 
 $$
-\left(\Box_\Phi-\mu^2-g\,\xi(\tilde R_\Phi)\right)\tilde{Ξ}=0 .
+\left(\Box_\Phi-4\pi^{2}\nu_m^{2}-g\,\xi(\tilde R_\Phi)\right)\tilde{Ξ}=0 .
 $$
 
 If the background is **homogeneous**, $\xi=\xi(r'_t)$, the spatial translation invariance survives and the field can be expanded in spatial plane waves,
@@ -49,23 +49,23 @@ with the mode functions satisfying
 $$
 \boxed{\;d^2u_{\vec\nu_\Phi}/d{r'_{t}}^2+\omega_{\vec\nu_\Phi}^2(r'_t)\,u_{\vec\nu_\Phi}=0,
 \qquad
-\omega_{\vec\nu_\Phi}^2(r'_t)=4\pi^{2}\vec\nu_\Phi^2+\mu^2+g\,\xi(r'_t)\;}.
+\omega_{\vec\nu_\Phi}^2(r'_t)=4\pi^{2}\left(\vec\nu_\Phi^2+\nu_m^{2}\right)+g\,\xi(r'_t)\;}.
 
 $$
 
 The angle is $\theta_{\mathrm{spa}}=2\pi\,\vec\nu_{\Phi}\cdot\vec r_{\Phi}$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.
 
-Here $\omega_{\vec\nu_\Phi}$ is a material frequency, an inverse length, so that $\omega_{\vec\nu_\Phi}r'_t$ is dimensionless and the oscillator's angular frequency in the time variable is $c\,\omega_{\vec\nu_\Phi}$; the material four-wavevector is $\tilde\Upsilon_{\Phi,\vec\nu_\Phi}=i\omega_{\vec\nu_\Phi}e_t+2\pi\vec\nu_\Phi$, and this is the one article of the quantisation group that reads $\omega$ this way. This is the central object of the article: a set of independent harmonic oscillators with a time-dependent frequency. The biquaternion packaging is that the effective mass-squared is read off the biquaternion norm of a material four-wavevector whose time component is not conserved: the mass shell is the level set
+Here $\omega_{\vec\nu_\Phi}$ is a material frequency, an inverse length, so that $\omega_{\vec\nu_\Phi}r'_t$ is dimensionless and the oscillator's angular frequency in the time variable is $c\,\omega_{\vec\nu_\Phi}$; the material four-wave-number is $\tilde\Upsilon_{\Phi,\vec\nu_\Phi}=i\nu_{t,\vec\nu_\Phi}^{\prime}e_t+\vec\nu_\Phi$ with $\nu_{t,\vec\nu_\Phi}^{\prime}=\omega_{\vec\nu_\Phi}/(2\pi)$, and this is the one article of the quantisation group that reads $\omega$ this way. This is the central object of the article: a set of independent harmonic oscillators with a time-dependent frequency. The biquaternion packaging is that the effective mass-squared is read off the biquaternion norm of a material four-wavevector whose time component is not conserved: the mass shell is the level set
 
 $$
-\langle\tilde P_{\Phi,\vec\nu_\Phi}(r'_t)\rangle_{\natural}=-\left(\mu^2+g\,\xi(r'_t)\right)e_t ,
+\langle\tilde\Upsilon_{\Phi,\vec\nu_\Phi}(r'_t)\rangle_{\natural}=-\left(\nu_m^{2}+\frac{g\,\xi(r'_t)}{4\pi^{2}}\right)e_t ,
 \qquad
-\tilde P_{\Phi,\vec\nu_\Phi}(r'_t)=i\omega_{\vec\nu_\Phi}(r'_t)e_t+2\pi\vec\nu_\Phi,
+\tilde\Upsilon_{\Phi,\vec\nu_\Phi}(r'_t)=i\nu_{t,\vec\nu_\Phi}^{\prime}(r'_t)e_t+\vec\nu_\Phi,
 $$
 
-equivalently $\mu^2+g\,\xi(r'_t)=-\mathrm{Sc}(\langle\tilde P_{\Phi,\vec\nu_\Phi}(r'_t)\rangle_{\natural})$, since $\langle\tilde P_{\Phi}\rangle_{\natural}=(4\pi^{2}\vec\nu_\Phi^2-\omega^2)e_t$ for this four-wavevector. A time-dependent background is therefore a time-dependent level set of the biquaternion norm. The interaction itself is central: $\mathcal{L}_{\mathrm{int}}$ is a multiple of $e_t$, it commutes with the algebra, and no spinor structure is involved.
+equivalently $\nu_m^{2}+\frac{g\,\xi(r'_t)}{4\pi^{2}}=-\mathrm{Sc}(\langle\tilde\Upsilon_{\Phi,\vec\nu_\Phi}(r'_t)\rangle_{\natural})$, since $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=(\vec\nu_\Phi^2-\nu_{t,\vec\nu_\Phi}^{\prime\,2})e_t$ for this four-wave-number. A time-dependent background is therefore a time-dependent level set of the biquaternion norm. The interaction itself is central: $\mathcal{L}_{\mathrm{int}}$ is a multiple of $e_t$, it commutes with the algebra, and no spinor structure is involved.
 
-Two standard realizations fix the interpretation. A **mass quench** changes $\mu^2$ abruptly or smoothly in time; an **expanding background** makes the frequency depend on time through a scale factor, $\frac{d^2u}{d\eta^2}+(4\pi^{2}\vec\nu_\Phi^2+a^2(\eta)\mu^2)u=0$ in conformal time $\eta$ for a suitably coupled field. Both are captured by $\omega_{\vec\nu_\Phi}^2(r'_t)$ above, and both are standard cosmological and condensed-matter problems; the framework writes their operator in the notation of the centre.
+Two standard realizations fix the interpretation. A **mass quench** changes $\nu_m^{2}$ abruptly or smoothly in time; an **expanding background** makes the frequency depend on time through a scale factor, $\frac{d^2u}{d\eta^2}+4\pi^{2}\left(\vec\nu_\Phi^2+a^2(\eta)\nu_m^{2}\right)u=0$ in conformal time $\eta$ for a suitably coupled field. Both are captured by $\omega_{\vec\nu_\Phi}^2(r'_t)$ above, and both are standard cosmological and condensed-matter problems; the framework writes their operator in the notation of the centre.
 
 If the background is not homogeneous, $\xi=\xi(\tilde R_\Phi)$, the mode equation acquires a spatial dependence, and the decomposition into spatial plane waves with a single $\vec\nu_\Phi$ fails; a slowly varying background can be treated in the adiabatic approximation, and a rapidly varying one requires the full field equation. This article keeps the homogeneous case, which is the exactly solvable one and the one that isolates the temporal mechanism.
 
@@ -82,9 +82,9 @@ $$
 with corresponding asymptotic frequencies
 
 $$
-\omega_{\mathrm{in},\vec\nu_\Phi}=\sqrt{4\pi^{2}\vec\nu_\Phi^2+\mu^2+g\xi_{\mathrm{in}}},
+\omega_{\mathrm{in},\vec\nu_\Phi}=\sqrt{4\pi^{2}\left(\vec\nu_\Phi^2+\nu_m^{2}\right)+g\xi_{\mathrm{in}}},
 \qquad
-\omega_{\mathrm{out},\vec\nu_\Phi}=\sqrt{4\pi^{2}\vec\nu_\Phi^2+\mu^2+g\xi_{\mathrm{out}}} .
+\omega_{\mathrm{out},\vec\nu_\Phi}=\sqrt{4\pi^{2}\left(\vec\nu_\Phi^2+\nu_m^{2}\right)+g\xi_{\mathrm{out}}} .
 $$
 
 In each asymptotic region the field admits a standard mode decomposition, and the corresponding operators define the **in** and **out** Fock spaces. The two sets of positive-frequency solutions are, in each region,
@@ -137,7 +137,7 @@ $$
 =|\beta_{\vec\nu_\Phi}|^2\,h^{3}\delta^{(3)}(0),
 $$
 
-with the same value for the antiparticle mode. The delta function is the volume factor of the continuum normalization, $[a_{\mathrm{fop},\vec\nu_\Phi},a_{\mathrm{fop},\vec\nu_2}^{\dagger}]=(2\pi)^3\,\delta^{(3)}(\vec\nu_\Phi-\vec\nu_2)$, and the convention-free statement is the one per mode: the **mean number of created pairs** per mode is $|\beta_{\vec\nu_\Phi}|^2$, and the total pair number density is the momentum integral
+with the same value for the antiparticle mode. The delta function is the volume factor of the continuum normalization, $[a_{\mathrm{fop},\vec\nu_\Phi},a_{\mathrm{fop},\vec\nu_2}^{\dagger}]=\delta^{(3)}(\vec\nu_\Phi-\vec\nu_2)$, and the convention-free statement is the one per mode: the **mean number of created pairs** per mode is $|\beta_{\vec\nu_\Phi}|^2$, and the total pair number density is the momentum integral
 
 $$
 \frac{N_{\mathrm{pairs}}}{V}=\int\!d^{3}\nu_{\Phi}\,|\beta_{\vec\nu_\Phi}|^2 .
@@ -207,7 +207,7 @@ B=\frac{1}{2}\left(1-\frac{\omega_1}{\omega_2}\right).
 
 $$
 
-The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\omega r'_t/c$ for a length and $\omega r'_t$ for a time, so the angle is real.
+The angle is $\theta_{\mathrm{pwt}}=\omega_{\vec\nu_\Phi}r'_t$, a material frequency times a material length; both are real, so the angle is real and the exponent is a phase.
 
 Rescaling to the canonical normalizations of both modes, $u_{\mathrm{in}}=\alpha u_{\mathrm{out}}+\beta u_{\mathrm{out}}^*$ with $u_{\mathrm{in}}=\exp(-i\theta_{\mathrm{pwt}})/\sqrt{2\omega_1}$ and $u_{\mathrm{out}}=\exp(-i\theta_{\mathrm{pwt}})/\sqrt{2\omega_2}$, gives
 
@@ -233,7 +233,7 @@ Four statements summarise what the framework contributes to scalar pair creation
 
 **The background is central.** The driving field is a classical element of $\mathbb{B}_{C}$; it enters the equation only through the invariant $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$, it commutes with every element of the algebra, and it carries no spinor index. Pair creation by a scalar background is therefore a process in the centre, and the state module is not acted on by the background.
 
-**The in- and out-modes are the parent's plane waves at two masses.** Each asymptotic region has its own on-shell level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-\mu^2-g\xi_{\mathrm{in/out}}$, and the Bogoliubov coefficients are the overlap of two such plane-wave systems. The mass shell, which is a level set of the biquaternion norm, is time-dependent during the transition and constant on either side.
+**The in- and out-modes are the parent's plane waves at two masses.** Each asymptotic region has its own on-shell level set $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=-\nu_m^{2}-\frac{g\,\xi_{\mathrm{in/out}}}{4\pi^{2}}$, and the Bogoliubov coefficients are the overlap of two such plane-wave systems. The mass shell, which is a level set of the biquaternion norm, is time-dependent during the transition and constant on either side.
 
 **The charge selects pairs.** The framework's canonical continuous symmetry is the central $\mathrm{U}(1)$, whose Noether current $\tilde J_{\Phi}$ lies in $\mathbb{B}_{\Phi}$ and whose charge is the difference of the particle and antiparticle number operators. Because the generator of the mixing commutes with the charge, the background creates pairs and not single quanta; the pair is the framework's unit of production for the same reason it is the standard one.
 
@@ -255,7 +255,7 @@ The standard realizations are worth naming for orientation. Cosmological particl
 
 ## Summary
 
-Scalar pair creation is the production of particle–antiparticle pairs by a classical background that breaks time-translation invariance. In the framework the background is a central-valued classical field $\tilde Q_5=\xi e_t$ coupling through $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$, so a homogeneous background makes the frequency time-dependent, $d^2u_{\vec\nu_\Phi}/d{r'_{t}}^2+\omega_{\vec\nu_\Phi}^2(r'_t)u_{\vec\nu_\Phi}=0$ with $\omega_{\vec\nu_\Phi}^2=4\pi^{2}\vec\nu_\Phi^2+\mu^2+g\xi(r'_t)$, and the effective mass-squared is the time-dependent level set of the biquaternion norm of the material four-wavevector, $\mu^2+g\xi=-\mathrm{Sc}(\langle\tilde P_{\Phi}\rangle_{\natural})$. The in- and out-mode decompositions are related by a Bogoliubov transformation mixing $a_{\mathrm{fop},\vec\nu_\Phi}$ with ${b_{\mathrm{fop},-\vec\nu_\Phi}}^\dagger$, with $|\alpha_{\vec\nu_\Phi}|^2-|\beta_{\vec\nu_\Phi}|^2=1$.
+Scalar pair creation is the production of particle–antiparticle pairs by a classical background that breaks time-translation invariance. In the framework the background is a central-valued classical field $\tilde Q_5=\xi e_t$ coupling through $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$, so a homogeneous background makes the frequency time-dependent, $d^2u_{\vec\nu_\Phi}/d{r'_{t}}^2+\omega_{\vec\nu_\Phi}^2(r'_t)u_{\vec\nu_\Phi}=0$ with $\omega_{\vec\nu_\Phi}^2=4\pi^{2}\left(\vec\nu_\Phi^2+\nu_m^{2}\right)+g\xi(r'_t)$, and the effective mass-squared is the time-dependent level set of the biquaternion norm of the material four-wave-number, $\nu_m^{2}+\frac{g\,\xi}{4\pi^{2}}=-\mathrm{Sc}(\langle\tilde\Upsilon_{\Phi}\rangle_{\natural})$. The in- and out-mode decompositions are related by a Bogoliubov transformation mixing $a_{\mathrm{fop},\vec\nu_\Phi}$ with ${b_{\mathrm{fop},-\vec\nu_\Phi}}^\dagger$, with $|\alpha_{\vec\nu_\Phi}|^2-|\beta_{\vec\nu_\Phi}|^2=1$.
 
 The transformation is charge neutral: its generator $G_{\vec\nu_\Phi}={a_{\mathrm{fop},\vec\nu_\Phi}}^\dagger {b_{\mathrm{fop},-\vec\nu_\Phi}}^\dagger-a_{\mathrm{fop},\vec\nu_\Phi}b_{\mathrm{fop},-\vec\nu_\Phi}$ commutes with the $\mathrm{U}(1)$ charge, so the background creates pairs and not single quanta. The in-vacuum is a two-mode squeezed state, the mean number of created pairs per mode is $|\beta_{\vec\nu_\Phi}|^2$, and the vacuum persistence amplitude is $|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2=1/|\alpha_{\vec\nu_\Phi}|^2=1/(1+|\beta_{\vec\nu_\Phi}|^2)$, with the continuum product $\exp\big(-\int d^{3}\nu_{\Phi}\ln(1+|\beta_{\vec\nu_\Phi}|^2)\big)$. On the sudden-quench background $\omega_1\to\omega_2$ the result is $|\beta|^2=(\omega_2-\omega_1)^2/(4\omega_1\omega_2)$, verified numerically, with $|\alpha|^2-|\beta|^2=1$ to fifteen decimal places.
 
@@ -271,8 +271,9 @@ The process is standard scalar quantum field theory in an external background, t
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; value space of the background |
 | $\tilde{Ξ}=\xi_{\mathrm{scl}}\,e_t$, $\tilde Q_5=\xi\,e_t$ | Scalar field and central background |
 | $\mathcal{L}_{\mathrm{int}}=-g\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})\xi$ | Central interaction |
-| $\omega_{\vec\nu_\Phi}^2(r'_t)=4\pi^{2}\vec\nu_\Phi^2+\mu^2+g\xi(r'_t)$ | Time-dependent frequency |
-| $\tilde P_{\Phi,\vec\nu_\Phi}(r'_t)=i\omega_{\vec\nu_\Phi}(r'_t)e_t+2\pi\vec\nu_\Phi$ | Material four-wavevector; $\langle\tilde P_{\Phi}\rangle_{\natural}$ its biquaternion norm |
+| $\omega_{\vec\nu_\Phi}^2(r'_t)=4\pi^{2}\left(\vec\nu_\Phi^2+\nu_m^{2}\right)+g\xi(r'_t)$ | Time-dependent frequency |
+| $\tilde\Upsilon_{\Phi,\vec\nu_\Phi}(r'_t)=i\nu_{t,\vec\nu_\Phi}^{\prime}(r'_t)e_t+\vec\nu_\Phi$, $\nu_{t,\vec\nu_\Phi}^{\prime}=\omega_{\vec\nu_\Phi}/(2\pi)$ | Material four-wave-number; $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}$ its biquaternion norm |
+| $\nu_m=\frac{m\,c}{h}$ | Mass wave number; the mass term of the operator is $4\pi^{2}\nu_m^{2}$ |
 | $\omega_{\mathrm{in}},\omega_{\mathrm{out}}$ | Asymptotic frequencies |
 | $\alpha_{\vec\nu_\Phi},\beta_{\vec\nu_\Phi}$ | Bogoliubov coefficients, $\vert\alpha\vert^2-\vert\beta\vert^2=1$ |
 | $r_{\vec\nu_\Phi}$, $\tanh r_{\vec\nu_\Phi}=\vert\beta_{\vec\nu_\Phi}/\alpha_{\vec\nu_\Phi}\vert$ | Squeezing parameter |

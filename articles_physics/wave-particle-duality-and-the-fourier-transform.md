@@ -138,7 +138,7 @@ Read together, the table is the duality. One form gives a number that is conserv
 
 ## The Switch
 
-The transform carries one row of the table to the other in one step. Take the continuity equation and transform in space and time together. In the kernel of *Derivatives, Fields and Transforms*, the derivatives become $-i\omega$ and $+i\vec\nu_{\Phi}$, so
+The transform carries one row of the table to the other in one step. Take the continuity equation and transform in space and time together. In the kernel of *Derivatives, Fields and Transforms*, the derivatives become $-i\omega$ and $+2\pi i\vec\nu_{\Phi}$, so
 
 $$
 c\,\partial_{r'_t}\rho+\vec\nabla_\Phi\cdot\vec J=0
@@ -232,9 +232,9 @@ $$
 E^{2}-\lvert\vec p\rvert^{2}c^{2}=m^{2}c^{4}.
 $$
 
-The same triangle is obtained from the other side, and the two derivations share no step. *The Three Wavenumbers of a Particle* divides the four-momentum by $\frac{h}{2\pi}$, $\tilde\Upsilon_{\Phi}=\frac{\tilde P_{\Phi}}{h}$, and reads the three numbers off the quotient: the coordinates are $\frac{E}{h\,c}$ and $\frac{2\pi \vec p}{h}$, and the third is the value the element's norm must take, $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_m^{2}$. That is the particle arm computing the norm, and it lands on the same hyperbola the wave arm fixes. The two derivations meet because they are the two arms of one identity, and the meeting is what this article is about.
+The same triangle is obtained from the other side, and the two derivations share no step. *The Three Wavenumbers of a Particle* divides the four-momentum by $h$, $\tilde\Upsilon_{\Phi}=\frac{\tilde P_{\Phi}}{h}$, and reads the three numbers off the quotient: the coordinates are $\frac{E}{h\,c}$ and $\frac{\vec p}{h}$, and the third is the value the element's norm must take, $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_m^{2}$. That is the particle arm computing the norm, and it lands on the same hyperbola the wave arm fixes. The two derivations meet because they are the two arms of one identity, and the meeting is what this article is about.
 
-The three numbers are the same kind of number, which is the point of writing them as one element. $\nu_t^{\prime}$, $\lvert\vec\nu_{\Phi}\rvert$ and $\nu_m$ are all inverse lengths, all coordinates or coefficients of one element of $\mathbb{B}$, and the mass shell is the statement that the first two form a right triangle with the third. Putting $\frac{h}{2\pi}$ and $c$ back rescales the coordinates — $\nu_t^{\prime}$ becomes $\frac{E}{h\,c}$, $\lvert\vec\nu_{\Phi}\rvert$ becomes $\frac{2\pi \lvert\vec p\rvert}{h}$ — and leaves the form $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_t^{\prime\,2}+\nu_{\Phi}^{2}$ exactly as it was. A reader who expects the structure to change with the units will look for it in the wrong place.
+The three numbers are the same kind of number, which is the point of writing them as one element. $\nu_t^{\prime}$, $\lvert\vec\nu_{\Phi}\rvert$ and $\nu_m$ are all inverse lengths, all coordinates or coefficients of one element of $\mathbb{B}$, and the mass shell is the statement that the first two form a right triangle with the third. Putting $h$ and $c$ back rescales the coordinates — $\nu_t^{\prime}$ becomes $\frac{E}{h\,c}$, $\lvert\vec\nu_{\Phi}\rvert$ becomes $\frac{\lvert\vec p\rvert}{h}$ — and leaves the form $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_t^{\prime\,2}+\nu_{\Phi}^{2}$ exactly as it was. A reader who expects the structure to change with the units will look for it in the wrong place.
 
 ## Where the Transcription Stops
 
@@ -281,7 +281,7 @@ Each article of the corpus occupies one side of the table, or the switch between
 | article | which arm |
 |---|---|
 | *Derivatives, Fields and Transforms* | the switch itself: the kernel, the symbol, the root |
-| *The Three Wavenumbers of a Particle* | the label: the four-momentum divided by $\frac{h}{2\pi}$ |
+| *The Three Wavenumbers of a Particle* | the label: the four-momentum divided by $h$ |
 | *The Schrödinger Equation in Biquaternionic Form* | the element arm: the state and its norm |
 | *The Free Particle and Wave Packets in Biquaternionic Form* | both arms at once, on one packet |
 | *The Biquaternion d'Alembertian and Its Green's Functions* | the gradient arm: the operator and its inverse |
@@ -337,7 +337,7 @@ The checks, in one place. Each residual below verifies one claim, and the claim 
 | the density is not the quaternion norm | determinant against trace on the state module | $0$ against $1.000000$ to $3.890000$ |
 | the continuity equation, pointwise | two Schrödinger modes, $N=64$ | $1.7\times10^{-13}$ |
 | its transform, the dot product | the same data, in $\nu_{\Phi}$ | $4.4\times10^{-17}$ |
-| $\Box_\Phi\mapsto-\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}$ | massless cone, random modes | $1.0\times10^{-13}$ |
+| $\Box_\Phi\mapsto-4\pi^{2}\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}$ | massless cone, random modes | $1.0\times10^{-13}$ |
 | the level set itself | $3,4,5$ with $2\pi\nu_m=4$ | exact |
 | a constant non-central potential | translated shell | $5.6\times10^{-17}$ |
 | the Schrödinger operator identity | $\nu_{\Phi}=2,6$, periodic | $4.1\times10^{-14}$ |
@@ -359,21 +359,21 @@ The checks, in one place. Each residual below verifies one claim, and the claim 
 | $ (\tilde\nabla_\Phi)^{\natural} $ | its conjugate, whose product with it is $\Box_\Phi$ |
 | $ \Box_\Phi $ | the d'Alembertian in the material coordinates |
 | $ \tilde\Upsilon_{\Phi} $ | the wave-number element $i \nu_t^{\prime}e_{t}+\vec\nu_{\Phi}$ |
-| $ \nu_t^{\prime} $ | energy wave number, $\frac{E}{h\,c}=\omega/c$ |
+| $ \nu_t^{\prime} $ | energy wave number, $\frac{E}{h\,c}=\omega/(2\pi c)$ |
 | $ \omega $ | angular frequency, the transform variable conjugate to $t$ |
-| $ \vec\nu_{\Phi} $ | momentum wave number, $\frac{2\pi \vec p}{h}$ |
+| $ \vec\nu_{\Phi} $ | momentum wave number, $\frac{\vec p}{h}$ |
 | $ \nu_{\Phi} $ | its modulus |
 | $ \nu_m $ | mass wave number, $\frac{m\,c}{h}$ |
 | $ \tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural} $ | the quaternion norm of the wave number, $ -\nu_t^{\prime\,2}+\nu_{\Phi}^{2} $, and $ -\nu_m^{2} $ on shell; the symbol of the d'Alembertian |
 | $ \rho $ | density of the element form |
 | $ \vec J $ | current of the element form, one gradient, in $\mathbb{B}_{\Phi}$ |
-| $ \epsilon $ | $ 1/(\nu_{\Phi}L) $, the non-quantum parameter |
+| $ \epsilon $ | $ 1/(2\pi\nu_{\Phi}L) $, the non-quantum parameter |
 | $ L $ | the length over which the amplitude varies |
 
 ## Further Reading
 
 - [The Derivative, the Field and the Transform](../articles_physics/the-derivative-the-field-and-the-transform.html), for the kernel, the root, the transform pair, the symbol and the vanishing-norm obstruction used in the section on the switch.
-- [The Three Wavenumbers of a Particle](../articles_physics/the-three-wavenumbers-of-a-particle.html), for the division of the four-momentum by $\frac{h}{2\pi}$ that gives the label of the transform.
+- [The Three Wavenumbers of a Particle](../articles_physics/the-three-wavenumbers-of-a-particle.html), for the division of the four-momentum by $h$ that gives the label of the transform.
 - [The Schrödinger Equation in Biquaternionic Form](../articles_physics/the-schrodinger-equation-in-biquaternionic-form.html), for the element arm in its own right.
 - [The Free Particle and Wave Packets in Biquaternionic Form](../articles_physics/the-free-particle-and-wave-packets-in-biquaternionic-form.html), for both arms on one packet, the case the third check of this article samples.
 - [The Biquaternion d'Alembertian and Its Green's Functions](../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html), for the gradient arm and its inverse.

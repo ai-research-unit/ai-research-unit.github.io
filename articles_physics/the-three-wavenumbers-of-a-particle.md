@@ -35,7 +35,15 @@ h\,\nu_t^{\prime}=p_{t}^{\prime},
 \vec\nu_{\Phi}=\frac{\vec p_{\Phi}}{h}=\frac{\gamma m}{h}\,\vec v .
 $$
 
-That matching is the whole deduction: the coordinates of the quotient are the coordinates of the momentum, divided by $h$, in the same slot. The vector part has a modulus, $\nu_{\Phi}:=\lvert\vec\nu_{\Phi}\rvert$, and the element has a biquaternion norm, $-\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=\nu_m^{2}$ with $\nu_m=\frac{m\,c}{h}$ — so the third number is read off the quotient too, as the value its two coordinates must satisfy.
+That matching is the whole deduction: the coordinates of the quotient are the coordinates of the momentum, divided by $h$, in the same slot. The vector part has a modulus, $\nu_{\Phi}:=\lvert\vec\nu_{\Phi}\rvert$. The element has a biquaternion norm, and that norm fixes the mass wave number:
+
+$$
+-\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=\nu_m^{2},
+\qquad
+\nu_m=\frac{m\,c}{h},
+$$
+
+the inverse Compton wavelength, the third of the three. The third number is therefore read off the quotient too, as the value its two coordinates must satisfy.
 
 The division changes the unit and nothing else. $h$ commutes with every coefficient, is fixed by all four involutions, and moves no element from one sector into another. The momentum is anti-Hermitian, so the quotient is anti-Hermitian, and $\tilde\Upsilon_{\Phi}$ stays in $\mathbb{B}_{\Phi}$ where $\tilde P_{\Phi}$ was. What changes is the dimension, from $\mathsf{M}\,\mathsf{L}\,\mathsf{T}^{-1}$ to $\mathsf{L}^{-1}$.
 
@@ -177,7 +185,7 @@ It is what a derivative returns. The spatial gradient carries an inverse length,
 
 Its inverse, up to the factor $2\pi$, is a distance, and each of the three distances is a different fact. A wave number and the distance per radian say the same thing in two ways: the wave number says how many waves fit in a metre, and the distance says how many metres a radian takes. The inversion is the whole of the translation, and it is worth stating because the two readings are used in different places — the wave number in the equations, the distance in the laboratory. The three of this article invert to three distances, and each distance has a reading of its own: a scale of resolution, a spacing of fringes, and a length that light travels in a time.
 
-| wave number | what it counts | $\dfrac{1}{2\pi\nu}$ | what that distance is |
+| wave number | what it counts | the distance per radian | what that distance is |
 |---|---|---|---|
 | $\nu_m=\frac{m\,c}{h}$ | waves of the rest-frame phase per metre | $386\ \mathrm{fm}$ for the electron | the distance over which the phase of a particle at rest turns one radian; the order of length at which relativistic effects begin; the shortest distance at which it is still one particle; the range of the force it carries |
 | $\nu_{\Phi}=\frac{p}{h}$ | waves of the spatial phase per metre | $52.9\ \mathrm{pm}$ for the hydrogen ground state | the distance over which the phase of the state turns one radian; the unit of the fringe spacing; the coherence scale of the state |
@@ -333,18 +341,18 @@ The number itself says four things at once. It is the wave number of the field i
 One radian of the rest-frame phase. The field at rest oscillates as $e^{-2\pi i c\nu_m t}$, and the distance light covers in the time $t$ is $L=ct$, so the phase as a function of that distance is $-2\pi\nu_mL$. It turns by one radian over
 
 $$
-\frac{1}{2\pi\nu_m}=\bar\lambda_m ,
+\frac{1}{2\pi\nu_m}=\frac{h}{2\pi m\,c}=\frac{\lambda_m}{2\pi} ,
 $$
 
-the reduced Compton wavelength, $386.159\ \mathrm{fm}$ for the electron. That distance is what the mass wave number means when it is read as a length, and every statement of this section is that distance in other words.
+where $\lambda_m=1/\nu_m=h/(mc)$ is the Compton wavelength and the quotient is one radian of the same phase: $386.159\ \mathrm{fm}$ for the electron. That distance is what the mass wave number means when it is read as a length, and every statement of this section is that distance in other words.
 
-It is the wavelength of the field in its own rest frame. The field returns to the same phase after $1/\nu_m$, the ordinary Compton wavelength $\lambda_C=2.426\ \mathrm{pm}$ for the electron; the angular form $1/(2\pi\nu_m)$ is the distance per radian and is the form that enters the exponents. The name *wavelength* is therefore literal: $1/(2\pi\nu_m)$ is one period of the rest-frame phase, measured in space rather than in time.
+**The wavelength is the full turn, and only the full turn carries the name.** The field returns to the same phase after $1/\nu_m=\lambda_m$, which is $2.426\ \mathrm{pm}$ for the electron and is the Compton wavelength. The length $1/(2\pi\nu_m)=\lambda_m/(2\pi)$ is one radian of that same phase, and it is the form that enters the exponents because an exponent counts radians. The two are kept apart by writing the quotient, and no shorter length is given a letter of its own; the rule is in *Physics Units and Common Elements Conventions*, §*No reduced length, no reduced constant*.
 
 It is the shortest distance at which the particle is still one particle. The derivation of §*The Cost of Localization* is the statement: a region of size $1/(2\pi\nu_m)$ has a wave number spread $\nu_m$, an energy spread $m\,c^{2}=mc^{2}$, and the energy to make a second particle of the same mass. Below that distance the state that would be described is not a one-particle state, so $1/(2\pi\nu_m)$ is the resolution limit of the description and not the radius of an object.
 
 It is the order of length at which relativistic effects cannot be ignored. A particle localized to $1/(2\pi\nu_m)$ has, by the uncertainty relation, a momentum spread of order $h\,\nu_m=mc$, so its kinetic energy is of order its rest energy and the non-relativistic description fails there. The distance is therefore the boundary of the Schrödinger theory: far above $1/(2\pi\nu_m)$ the non-relativistic equation is accurate, at $1/(2\pi\nu_m)$ it must give way to the Dirac or Klein–Gordon equation, and below it pair creation ends the one-particle description. That is the reading of the criterion $\nu_{\Phi}\ll \nu_m$ of §*The Non-Relativistic Criterion*, and it is the sense in which $1/(2\pi\nu_m)$ is quoted as the length at which a particle becomes relativistic: $386\ \mathrm{fm}$ for the electron, $0.21\ \mathrm{fm}$ for the proton, $2.3\times10^{-5}\ \mathrm{fm}$ for the top quark.
 
-It is the range of the force the particle carries. The Yukawa potential is $e^{-r/\bar\lambda_m}/r$, so the distance $1/(2\pi\nu_m)$ is where the exponential has fallen by $1/e$, and beyond it the force is gone. A force carried by a massless particle has $\nu_m=0$ and no range at all, which is the same statement as the divergence of $1/(2\pi\nu_m)$.
+It is the range of the force the particle carries. The Yukawa potential is $e^{-2\pi\nu_m r}/r$, so the distance $1/(2\pi\nu_m)$ is where the exponential has fallen by $1/e$, and beyond it the force is gone. A force carried by a massless particle has $\nu_m=0$ and no range at all, which is the same statement as the divergence of $1/(2\pi\nu_m)$.
 
 It is the distance a mass term measures. The coefficient $\nu_m$ in $\Box_\Phi-4\pi^{2}\nu_m^{2}$ fixes the distance at which the Green function stops falling as $1/r$ and starts falling exponentially. The operator coefficient and the range of the force are one distance, and in wave numbers the coefficient and the range are the same symbol read two ways.
 
@@ -498,8 +506,6 @@ The binding has a wave number of its own, and it is not one of the three. The en
 
 What the ratio buys. Because the ratio is the inverse fine-structure constant divided by $2\pi$, a relativistic correction is smaller than the non-relativistic energy by a factor $\alpha^{2}$. The binding energy itself is $\tfrac12\alpha^{2}m_ec^{2}=13.6\ \mathrm{eV}$, and the corrections to it are of order $\alpha^{4}m_ec^{2}=1.4\ \mathrm{meV}$, a relative size of $2\alpha^{2}=1.1\times10^{-4}$. The scale $\alpha^{2}m_ec^{2}=27.2\ \mathrm{eV}$ is the binding scale and not the size of a correction; confusing the two overstates the corrections by the factor $1/\alpha^{2}=1.9\times10^{4}$. That the corrections sit four powers of $\alpha$ down follows from the same small parameter that makes $\nu_{\Phi}\ll \nu_m$, and it is why the Schrödinger equation with a Coulomb potential works as well as it does.
 
-Light and heavy. At fixed $L$, a light particle has the smaller $\nu_m$ and reaches the relativistic regime first; a heavy particle stays non-relativistic in a smaller box.
-
 ## The Momentum Wave Number
 
 ### It Belongs to the State
@@ -530,10 +536,10 @@ A change of momentum is a change of the winding. Multiply the momentum by two an
 One radian of the spatial phase. The distance over which the phase of the state turns by one radian is
 
 $$
-\frac{1}{2\pi\nu_{\Phi}}=\frac{h}{2\pi p_{\Phi}}=\lambda_{\Phi} ,
+\frac{1}{2\pi\nu_{\Phi}}=\frac{h}{2\pi p_{\Phi}}=\frac{\lambda_{\Phi}}{2\pi} ,
 $$
 
-the reduced de Broglie wavelength. It is not a property of the species but of the preparation: for the electron in the hydrogen ground state it is the Bohr radius, $52.9\ \mathrm{pm}$; for a $100\ \mathrm{eV}$ electron it is $19.5\ \mathrm{pm}$; for a thermal neutron it is $16.0\ \mathrm{pm}$.
+where $\lambda_{\Phi}=1/\nu_{\Phi}=h/p_{\Phi}$ is the de Broglie wavelength; the quotient is one radian of the spatial phase, and it is the distance this section is about. It is not a property of the species but of the preparation: for the electron in the hydrogen ground state it is the Bohr radius, $52.9\ \mathrm{pm}$; for a $100\ \mathrm{eV}$ electron it is $19.5\ \mathrm{pm}$; for a thermal neutron it is $16.0\ \mathrm{pm}$.
 
 It is the unit of every interference spacing. The fringe spacing of two slits is
 
@@ -676,8 +682,10 @@ The clock of any process. A reaction whose energy changes by $\delta E$ has a ph
 One radian of the temporal phase, measured in light travel. Since $\nu_t^{\prime}=\omega/(2\pi c)$, the phase of a plane wave read along the path of a light ray is $-2\pi\nu_t^{\prime} L$ with $L=ct$, so the phase turns by one radian over
 
 $$
-\frac{1}{2\pi\nu_t^{\prime}}=\frac{h\,c}{2\pi E}=\lambda_{t} .
+\frac{1}{2\pi\nu_t^{\prime}}=\frac{h\,c}{2\pi E}=\frac{\lambda_{t}}{2\pi} ,
 $$
+
+with $\lambda_{t}=1/\nu_t^{\prime}=h\,c/E$ the wavelength of the temporal phase and the quotient one radian of it.
 
 The distance is the one the energy becomes when a duration is converted into a length, and the conversion is the speed of light and nothing else. For an electron of $1\ \mathrm{MeV}$ it is $197\ \mathrm{fm}$; at rest it equals the mass distance, because the energy is the rest energy.
 
@@ -826,7 +834,7 @@ e^{-i\theta_{\mathrm{pwp}}}
 \underbrace{e^{-i\theta_{\mathrm{pwp}}}}_{\chi},
 $$
 
-with $f$ the rest-frame clock of §*The Rest-Frame Clock*. On the envelope $\chi$ the exponent gives $\partial_{r'_t}\chi=-i\Omega\chi$, and $\Omega$ is quadratic in $\vec\nu_{\Phi}$, so the number $\nu_{\Phi}^{2}$ is the symbol of the operator $-\Delta_\Phi$:
+with $f$ the rest-frame clock of §*The Rest-Frame Clock*. On the envelope $\chi$ the exponent gives $\partial_{r'_t}\chi=-2\pi i\Omega\chi$, and $\Omega$ is quadratic in $\vec\nu_{\Phi}$, so the number $\nu_{\Phi}^{2}$ is the symbol of the operator $-\Delta_\Phi$:
 
 $$
 i\,\frac{\partial\chi}{\partial r'_t}=-\frac{1}{4\pi\nu_m}\,\Delta_\Phi\,\chi
@@ -892,7 +900,7 @@ Which subscripts. The labels come in two kinds, and neither names a particle. Tw
 
 The species enters on the mass. A wave number of a named particle is written $\nu_{m_e}$ for the electron and $\nu_{m_p}$ for the proton, which is the rule of the series that the label names the input: the input of one species is the mass of that species. No wave number is ever labelled by the name of a particle alone.
 
-**The wavelength is the inverse and never a second symbol.** The series keeps $\lambda$ wherever a length is what the sentence needs: the Compton shift, the range of a potential, the size of an atom. In this article it appears only inside an inversion, $1/(2\pi\nu_m)=\lambda_m$, $1/(2\pi\nu_{\Phi})=\lambda_{\Phi}$ and $1/(2\pi\nu_t^{\prime})=\lambda_{t}$, and never as an independent definition, so the three letters are three distances and not three further quantities. A display that wrote both a wave number and a wavelength for the same object, without the inversion between them, would be the duplication this notation exists to remove: the wave number is the form the equations take, and the wavelength is that number read as a distance.
+**The wavelength is the inverse and never a second symbol.** The series keeps $\lambda$ wherever a length is what the sentence needs: the Compton shift, the range of a potential, the size of an atom. The wavelength of a wave number is its inverse and nothing else: $\lambda_m=1/\nu_m=h/(mc)$, $\lambda_{\Phi}=1/\nu_{\Phi}=h/p_{\Phi}$ and $\lambda_t=1/\nu_t^{\prime}=h\,c/E$. **There is no reduced wavelength.** The series defines no shorter length of that name, writes no barred letter for one, and carries no constant written with a bar: one radian of the phase is the wavelength over $2\pi$, written $\lambda_m/(2\pi)=1/(2\pi\nu_m)$ and its two companions, a quotient and not a symbol of its own. The rule is recorded in *Physics Units and Common Elements Conventions*, §*No reduced length, no reduced constant*. A display that wrote both a wave number and a wavelength for the same object, without the inversion between them, would be the duplication this notation exists to remove: the wave number is the form the equations take, and the wavelength is that number read as a distance.
 
 Why not $\mu$. The letter $\mu$ names the permeability, the direction label and the index of a component, and it is not used for an inverse Compton length anywhere in the series.
 
@@ -923,10 +931,10 @@ The non-relativistic limit is one operation on the triangle. Split off the mass 
 | $\nu_m = \frac{m\,c}{h}$ | The mass wave number, the inverse Compton wavelength; $\mathsf{L}^{-1}$; the norm of $\tilde\Upsilon_{\Phi}$, and the only one of the three that belongs to the particle alone |
 | $\vec\nu_{\Phi}=\frac{\vec p_{\Phi}}{h}$, $\nu_{\Phi} =\lvert\vec\nu_{\Phi}\rvert$ | The vector part of $\tilde\Upsilon_{\Phi}$ and its modulus, the momentum wave number, the wave number of the state; $\mathsf{L}^{-1}$; a property of the state |
 | $\nu_t^{\prime} =\frac{E}{h\,c}$ | The temporal coefficient of $\tilde\Upsilon_{\Phi}$, the energy wave number; $\mathsf{L}^{-1}$; the largest of the three |
-| $1/(2\pi\nu_m)=\bar\lambda_m$, $1/(2\pi\nu_{\Phi})=\lambda_{\Phi}$, $1/(2\pi\nu_t^{\prime})=\lambda_{t}$ | The three distances, the inverses of the three wave numbers; each is the distance per radian of the corresponding phase |
+| $\lambda_m=1/\nu_m$, $\lambda_{\Phi}=1/\nu_{\Phi}$, $\lambda_t=1/\nu_t^{\prime}$ | The three wavelengths, the inverses of the three wave numbers; one radian of each is $\lambda/(2\pi)$, a quotient and not a symbol |
 | $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$ | The mass shell in wave numbers; the right triangle of the three |
 | $\frac{\nu_t^{\prime}}{\nu_m}=\gamma$, $\frac{\nu_{\Phi}}{\nu_t^{\prime}}=\beta$ | The side ratios, which are the kinematic parameters of the state |
-| $\tilde\Upsilon_{\Phi}=\frac{\tilde P_{\Phi}}{h}=i\nu_t^{\prime}e_t+\vec\nu_{\Phi}$ | The wave-number biquaternion, the four-momentum in inverse lengths, an element of $\mathbb{B}_{\Phi}$; its norm is $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_t^{\prime\,2}+\vec\nu_{\Phi}^{\,2}=-\nu_m^{2}$; the gradient multiplies by $i\tilde\Upsilon_{\Phi}$ and the d'Alembertian by $-4\pi^{2}\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}$ |
+| $\tilde\Upsilon_{\Phi}=\frac{\tilde P_{\Phi}}{h}=i\nu_t^{\prime}e_t+\vec\nu_{\Phi}$ | The wave-number biquaternion, the four-momentum in inverse lengths, an element of $\mathbb{B}_{\Phi}$; its norm is $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_t^{\prime\,2}+\vec\nu_{\Phi}^{\,2}=-\nu_m^{2}$; the gradient multiplies by $2\pi i\tilde\Upsilon_{\Phi}$ and the d'Alembertian by $-4\pi^{2}\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}$ |
 | $\omega_C=2\pi c\,\nu_m$ | The rest-frame angular frequency; one radian of phase per $1/(2\pi\nu_m)$ of light travel |
 | $2\omega_C=4\pi c\,\nu_m$ | The trembling angular frequency; its amplitude $1/(4\pi\nu_m)$ times it is $c$ |
 | $\lambda_C = \frac{1}{\nu_m}$ | The ordinary Compton wavelength, the shift in Compton scattering |

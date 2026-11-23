@@ -26,7 +26,7 @@ $$
 \;}
 $$
 
-with $\nu_m=\frac{mc}{h}$ the mass wave number, that is the reciprocal reduced Compton length. The field is one element $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ of $\mathbb{B}$. The gradient differentiates with respect to the coordinates $R_{\imath}$ and is an element of the algebra that multiplies on the left; the mass is a central coefficient. No column, no anticommuting array, no separate state space and no idempotent enters the statement.
+with $\nu_m=\frac{mc}{h}$ the mass wave number, that is the reciprocal of the Compton wavelength. The field is one element $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ of $\mathbb{B}$. The gradient differentiates with respect to the coordinates $R_{\imath}$ and is an element of the algebra that multiplies on the left; the mass is a central coefficient. No column, no anticommuting array, no separate state space and no idempotent enters the statement.
 
 At $\nu_m=0$ the pair decouples into two one-sided equations,
 
@@ -108,7 +108,7 @@ The third object cannot be the second, and the reason is one associativity step.
 
 ### The Polarization and the Split
 
-For a plane wave $\tilde\Xi=\tilde\Xi_{0}\exp(i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=2\pi\vec\nu_\Phi\cdot\vec r-k'_tr'_t$ and $\tilde\Upsilon_{\Phi}=ik'_te_t+2\pi\vec\nu_\Phi$, the gradient acts as left multiplication by $2\pi i\tilde\Upsilon_{\Phi}$ and its conjugate as left multiplication by $2\pi i\tilde\Upsilon_{\Phi}^{\natural}$. The pair becomes
+For a plane wave $\tilde\Xi=\tilde\Xi_{0}\exp(i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=2\pi\vec\nu_\Phi\cdot\vec r-2\pi\nu'_tr'_t$ and $\tilde\Upsilon_{\Phi}=i\nu'_te_t+\vec\nu_\Phi$, the gradient acts as left multiplication by $2\pi i\tilde\Upsilon_{\Phi}$ and its conjugate as left multiplication by $2\pi i\tilde\Upsilon_{\Phi}^{\natural}$. The pair becomes
 
 Here $\theta_{\mathrm{pwp}}$ is the plane-wave angle: it is $\vec\nu_\Phi\cdot\vec r-\omega r'_t/c$ with a real wave vector and a real frequency, so it is real.
 
@@ -152,9 +152,9 @@ using the mass shell in the form $\tilde\Upsilon_{\Phi}^{\natural}\tilde\Upsilon
 
 The factor $A$ decides how degeneracy is transported from a component to the field.
 
-*Proposition.* With $\gamma=k'_t/\nu_m$, the norm of the factor is $N(A)=2(1-\gamma)$.
+*Proposition.* With $\gamma=\nu'_t/\nu_m$, the norm of the factor is $N(A)=2(1-\gamma)$.
 
-*Proof.* On the mass shell $\lvert\vec\nu_\Phi\rvert^{2}=\nu_t^{\prime\,2}-\nu_m^{2}$. Write $\tilde\Upsilon_{\Phi}=ik'_te_t+2\pi\vec\nu_\Phi$, so $(i/\nu_m)\tilde\Upsilon_{\Phi}=-(k'_t/\nu_m)e_t+i\vec\nu_\Phi/\nu_m$ and $A=(1-\gamma)e_t+2\pi i\vec\nu_\Phi/\nu_m$. The norm is the sum of the squares of the four complex coefficients, so $N(A)=(1-\gamma)^{2}-\lvert2\pi\vec\nu_\Phi\rvert^{2}/\nu_m^{2}$, and substituting $\lvert\vec\nu_\Phi\rvert^{2}=\nu_m^{2}(\gamma^{2}-1)$ gives $N(A)=1-2\gamma+\gamma^{2}-\gamma^{2}+1=2(1-\gamma)$.
+*Proof.* On the mass shell $\lvert\vec\nu_\Phi\rvert^{2}=\nu_t^{\prime\,2}-\nu_m^{2}$. Write $\tilde\Upsilon_{\Phi}=i\nu'_te_t+\vec\nu_\Phi$, so $(i/\nu_m)\tilde\Upsilon_{\Phi}=-(\nu'_t/\nu_m)e_t+i\vec\nu_\Phi/\nu_m$ and $A=(1-\gamma)e_t+i\vec\nu_\Phi/\nu_m$. The norm is the sum of the squares of the four complex coefficients, so $N(A)=(1-\gamma)^{2}-\lvert\vec\nu_\Phi\rvert^{2}/\nu_m^{2}$, and substituting $\lvert\vec\nu_\Phi\rvert^{2}=\nu_m^{2}(\gamma^{2}-1)$ gives $N(A)=1-2\gamma+\gamma^{2}-\gamma^{2}+1=2(1-\gamma)$.
 
 **The corollary.** Multiplicativity gives
 
@@ -168,13 +168,13 @@ so a massive plane wave is degenerate exactly when its right component is degene
 
 ### The Rest Frame
 
-At $\vec\nu_\Phi=0$ the two branches of the mass shell are $k'_t=\pm 2\pi\nu_m$, and $\gamma=\pm1$. The factor is
+At $\vec\nu_\Phi=0$ the two branches of the mass shell are $\nu'_t=\pm\nu_m$, and $\gamma=\pm1$. The factor is
 
 $$
-A=\bigl(1-\gamma\bigr)e_t=\begin{cases}0, & k'_t=+2\pi\nu_m,\\[2pt] 2e_t, & k'_t=-2\pi\nu_m.\end{cases}
+A=\bigl(1-\gamma\bigr)e_t=\begin{cases}0, & \nu'_t=+\nu_m,\\[2pt] 2e_t, & \nu'_t=-\nu_m.\end{cases}
 $$
 
-On the branch $k'_t=+2\pi\nu_m$ the factor vanishes, so $\tilde\Xi_{0}=A\tilde\Xi_{0,R}=0$: the single-frequency plane wave has no polarization, although its two components are separately non-zero and opposite, $\tilde\Xi_{0,L}=-\tilde\Xi_{0,R}$. On the other branch the factor is $2e_t$, an invertible element, and the field survives.
+On the branch $\nu'_t=+\nu_m$ the factor vanishes, so $\tilde\Xi_{0}=A\tilde\Xi_{0,R}=0$: the single-frequency plane wave has no polarization, although its two components are separately non-zero and opposite, $\tilde\Xi_{0,L}=-\tilde\Xi_{0,R}$. On the other branch the factor is $2e_t$, an invertible element, and the field survives.
 
 This asymmetry belongs to the sign convention of the pair and not to the physics: the polarization is the sum of the two components, and at $+\nu_m$ the two components cancel in that sum. The hypothesis $N(A)\neq0$ of the proposition fails exactly here, and the rest frame is the one momentum at which the map $\tilde X\mapsto\tilde\Xi_{0}$ is not a bijection. The consequence is worth stating once, because it is easy to misread a table of rest-frame solutions: a rest-frame field of this corpus is a superposition of the two branches, one of each sign of the frequency, and no single-frequency rest field of the positive branch exists.
 
@@ -208,7 +208,7 @@ So a member is a scalar part together with a vector part whose Euclidean square 
 
 ### The Split of a Degenerate Field in This Sector
 
-Take the momentum of §*Massive Plane Waves* with $2\pi\nu_m=1$ and $2\pi\vec\nu_\Phi=\sqrt3\,\vec e_z$, so that $k'_t=2$, $\gamma=2$ and $N(A)=-2$. The inverse factor is
+Take the momentum of §*Massive Plane Waves* with $2\pi\nu_m=1$ and $2\pi\vec\nu_\Phi=\sqrt3\,\vec e_z$, so that $2\pi\nu'_t=2$, $\gamma=2$ and $N(A)=-2$. The inverse factor is
 
 $$
 A^{-1}=\tfrac12\bigl(e_t+i\sqrt3\,\vec e_z\bigr),
@@ -407,9 +407,9 @@ The letters $L$ and $R$ are the pair's two components and are fixed by the equat
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ | The Dirac field and the pair's two components |
 | $\tilde\Xi_{0}$ | The polarization biquaternion of a plane wave |
-| $\nu_m=\frac{mc}{h}$ | Mass wave number; the reciprocal reduced Compton length |
-| $\tilde\Upsilon_{\Phi}=ik'_te_t+2\pi\vec\nu_\Phi$ | Wave biquaternion; $k'_t=\omega/c$ |
-| $\gamma=k'_t/\nu_m$ | Lorentz factor of the plane wave, on shell |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number; the reciprocal of the Compton wavelength |
+| $\tilde\Upsilon_{\Phi}=i\nu'_te_t+\vec\nu_\Phi$ | Wave biquaternion; $2\pi\nu'_t=\omega/c$ |
+| $\gamma=\nu'_t/\nu_m$ | Lorentz factor of the plane wave, on shell |
 | $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}$ | Quaternionic norm; the determinant of the matrix model; its zero set is the cone |
 | $\langle\tilde Q\rangle_{*}=\lvert Q_t\rvert^{2}+\lvert\vec Q\rvert^{2}$ | Definite Hermitian norm; measures the size, never zero off the apex |
 | $Q_t$, $\vec Q$ | Scalar part and vector part of an element |

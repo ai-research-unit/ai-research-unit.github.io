@@ -160,11 +160,11 @@ $$
 S_E[\xi] = \int d^4r_E\;\tfrac12\Big(\partial/\partial R_{\imath}\xi\,\partial/\partial R_{\imath}\xi + m^2\xi^2\Big)
 = \tfrac12\int d^4r_E\;\xi\big(-\Box_\Phi + m^2\big)\xi ,
 $$
-with $\Box_\Phi$ the Euclidean Laplacian, and in momentum space the kinetic operator is $\nu_{\mathrm{eu}}^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box_\Phi+4\pi^{2}\nu_m^{2}$ continued to the Euclidean case, with $\Box_\Phi=\sum_{\imath}\partial^2/\partial R_{\imath}^2$; the wave biquaternion $\tilde P_{\Phi}=i(E/c)e_t+\vec p$ has biquaternion norm $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$, which becomes $\nu_{\mathrm{eu}}^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}$.
+with $\Box_\Phi$ the Euclidean Laplacian, and in momentum space the kinetic operator is $4\pi^{2}\nu_{\mathrm{eu}}^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box_\Phi+4\pi^{2}\nu_m^{2}$ continued to the Euclidean case, with $\Box_\Phi=\sum_{\imath}\partial^2/\partial R_{\imath}^2$; the wave biquaternion $\tilde P_{\Phi}=i(E/c)e_t+\vec p$ has biquaternion norm $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$, which becomes $4\pi^{2}\nu_{\mathrm{eu}}^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}$.
 
 **The Gaussian result.** The free generating functional is
 $$
-Z_0[J] = \exp\left(\frac12\int\frac{d^42\pi\nu_{\mathrm{eu}}}{(2\pi)^4}\,\frac{J(-k)J(k)}{4\pi^{2}\nu_{\mathrm{eu}}^2+m^2}\right),
+Z_0[J] = \exp\left(\frac12\int d^{4}\nu_{\mathrm{eu}}\,\frac{J(-k)J(k)}{4\pi^{2}\nu_{\mathrm{eu}}^2+m^2}\right),
 $$
 and the two-point function is the propagator
 $$
@@ -287,7 +287,7 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 | $\mathrm{Sc}(\tilde{Q})=Q_t$ (complex scalar part) | Scalar extraction; the scalar part converts a biquaternion into a number |
 | $\langle\tilde{Q},\tilde{Q}_1\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q}_1)$ | Real bilinear form of the action; sector-orthogonal |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath}\partial^2/\partial R_{\imath}^2$ | d'Alembertian, series convention |
-| $\tilde P_{\Phi}=i(E/c)e_t+\vec p$, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$ | Wave biquaternion; Euclidean $\nu_{\mathrm{eu}}^2$ |
+| $\tilde P_{\Phi}=i(E/c)e_t+\vec p$, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$ | Wave biquaternion; Euclidean $4\pi^{2}\nu_{\mathrm{eu}}^2$ |
 | $S[\tilde{Ξ}]=\int d^4r\,\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle$ | Quadratic biquaternion action; $W_{\mathrm{kinetic}}=\Box_\Phi-4\pi^{2}\nu_m^{2}$ |
 | $Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(-\frac12\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$ | Functional integral with source |
 | $Z_0=(\det W_{\mathrm{kinetic}})^{-1/2}\exp(\frac12\langle\tilde J_{\Phi},W_{\mathrm{kinetic}}{}^{-1}\tilde J_{\Phi}\rangle)$ | Gaussian result; $\prod_k(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2})^{-1}$ per mode for the free central operator |

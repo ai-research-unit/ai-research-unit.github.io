@@ -274,7 +274,7 @@ The display is the divergence of the four-vector written in the word's variables
 
 ## Plane Waves and the Branch as a Region
 
-**A plane wave is a constant frame.** Take $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$ with $\tilde A_0$ a constant timelike element and $\theta_{\mathrm{pwp}}=k'_t r'_t-2\pi\vec\nu_\Phi\cdot\vec r$. The word of the field is then
+**A plane wave is a constant frame.** Take $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$ with $\tilde A_0$ a constant timelike element and $\theta_{\mathrm{pwp}}=2\pi\nu'_t r'_t-2\pi\vec\nu_\Phi\cdot\vec r$. The word of the field is then
 
 $$
 \varrho=\lvert\cos\theta_{\mathrm{pwp}}\rvert\,\sqrt{-\langle\tilde A_0\rangle_\natural},
@@ -284,7 +284,7 @@ $$
 \varepsilon=\mathrm{sign}\cos\theta_{\mathrm{pwp}} ,
 $$
 
-so the boost is fixed by the amplitude and the whole spacetime dependence sits in the scale. The frame bracket vanishes and the scale equation reduces to $(\Box_\Phi-4\pi^{2}\nu_m^2)\varrho=0$, which the cosine satisfies on each side of a node with the dispersion relation $k'^2_t=2\pi\vec\nu_\Phi^2+4\pi^{2}\nu_m^2$. The sign $\varepsilon$ flips at every node, and it must: the four-vector reverses through zero, and the reversal is a change of branch label and not a change of direction.
+so the boost is fixed by the amplitude and the whole spacetime dependence sits in the scale. The frame bracket vanishes and the scale equation reduces to $(\Box_\Phi-4\pi^{2}\nu_m^2)\varrho=0$, which the cosine satisfies on each side of a node with the dispersion relation $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$. The sign $\varepsilon$ flips at every node, and it must: the four-vector reverses through zero, and the reversal is a change of branch label and not a change of direction.
 
 **The branch is a property of the point.** For a solution, the sign of $\langle\tilde A_\Phi\rangle_\natural$ varies in spacetime, because the field's local value varies. A timelike plane wave crosses the light cone on its nodal surfaces; a field with a spacelike component crosses it on the surfaces where the local four-vector becomes null. The word is therefore piecewise in spacetime as well as in parameter space, and the two piecewiseness are the same fact read twice. The set where the chart fails is the set where the local four-vector is lightlike, and for a plane wave that set is the nodal surfaces.
 

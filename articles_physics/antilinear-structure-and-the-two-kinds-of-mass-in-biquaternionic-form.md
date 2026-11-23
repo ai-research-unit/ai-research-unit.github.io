@@ -341,8 +341,8 @@ These are $16$ real linear equations in the $16$ real unknowns $(\tilde{Ξ}_{0},
 
 | locus | shell condition | nullity |
 |---|---|---|
-| timelike | $4\pi^{2}\nu_t^{\prime\,2} = 2\pi\vec\nu_\Phi^2 + m^2$ | $0$ |
-| spacelike | $2\pi\vec\nu_\Phi^2 = 4\pi^{2}\nu_t^{\prime\,2} + m^2$ | $4$ |
+| timelike | $4\pi^{2}\nu_t^{\prime\,2} = 4\pi^{2}\nu_{\Phi}^{2} + m^2$ | $0$ |
+| spacelike | $4\pi^{2}\nu_{\Phi}^{2} = 4\pi^{2}\nu_t^{\prime\,2} + m^2$ | $4$ |
 | elsewhere | — | $0$ |
 
 The nullity vanishes on the physical shell and jumps to four on the spacelike locus. The equation has no timelike solutions and a four-real-dimensional family of spacelike ones — so its propagating modes are spacelike, at any $m\neq 0$. An equation whose central-phase plane waves are spacelike is not the Dirac equation, and it contradicts the four-momentum kinematics the rest of the series uses. That is why no algebra-level self-pairing is admissible as a mass, and reproducing the two nullities by hand is a matter of pure real arithmetic.
@@ -351,7 +351,7 @@ The nullity vanishes on the physical shell and jumps to four on the spacelike lo
 
 The nullity table is easy to misread in two opposite ways, and both errors are worth naming.
 
-**It does not say that antilinear equations are unphysical.** A Majorana mass is antilinear and physical. Its equation is nevertheless not a single-field self-pairing: the Majorana field is the Dirac field subject to the reality condition $\tilde{Ξ}=\mathcal{C}[\tilde{Ξ}]$, and since $\mathcal{C}$ carries solutions of the pair to solutions, the condition is imposed on a space the kinetic operator preserves. It halves the eight real components to four and leaves the frequency untouched, so the solutions sit on the ordinary shell $4\pi^{2}\nu_t^{\prime\,2}=2\pi\vec\nu_\Phi^2+m^2$. What differs between the two cases is not the linearity but the **space the conjugate lives on**:
+**It does not say that antilinear equations are unphysical.** A Majorana mass is antilinear and physical. Its equation is nevertheless not a single-field self-pairing: the Majorana field is the Dirac field subject to the reality condition $\tilde{Ξ}=\mathcal{C}[\tilde{Ξ}]$, and since $\mathcal{C}$ carries solutions of the pair to solutions, the condition is imposed on a space the kinetic operator preserves. It halves the eight real components to four and leaves the frequency untouched, so the solutions sit on the ordinary shell $4\pi^{2}\nu_t^{\prime\,2}=4\pi^{2}\nu_{\Phi}^{2}+m^2$. What differs between the two cases is not the linearity but the **space the conjugate lives on**:
 
 - a **Majorana mass** pairs the field with a conjugate defined *on the same space as the field*, and its reality condition reduces the field to a real form on which the kinetic operator acts consistently; its mass shell is the ordinary $N = -m^{2}$, and its solution space is the four-real-dimensional Majorana space of the previous sections.
 - the **algebra-level equation** pairs a field with the *algebra's* conjugate $\flat$, an involution of $\mathbb{B}$ that the field's own kinetic operator does not respect — left multiplication by a spatial generator carries $\mathbb{B}_{\Phi}$ out of itself. The mismatch between the space of the pairing and the space of the dynamics is what the spacelike dispersion is measuring.
@@ -370,7 +370,7 @@ $$
 
 is formed with the same gradient and the same mass. The three antilinear involutions conjugate the phase, so as in the equation above the minimal ansatz is the two-frequency superposition, a system of $16$ real unknowns; the linear involution leaves the phase alone, a single frequency suffices there, and the count is that of an $8$-unknown system. The table gives the dimension of the solution space in each case, at a representative momentum of each locus. The three antilinear rows are constant there, as the elimination shows at every momentum tested; the control row is not, and its exceptions are listed below.
 
-| involution | type | fixed space | timelike $4\pi^{2}\nu_t^{\prime\,2} = 2\pi\vec\nu_\Phi^2 + m^2$ | spacelike $2\pi\vec\nu_\Phi^2 = 4\pi^{2}\nu_t^{\prime\,2} + m^2$ |
+| involution | type | fixed space | timelike $4\pi^{2}\nu_t^{\prime\,2} = 4\pi^{2}\nu_{\Phi}^{2} + m^2$ | spacelike $4\pi^{2}\nu_{\Phi}^{2} = 4\pi^{2}\nu_t^{\prime\,2} + m^2$ |
 |---|---|---|---|---|
 | quaternion conjugation ${}^{\natural}$ | linear | $\mathbb{B}_{C}$, real dim $2$ | $2$ | $0$ |
 | complex conjugation $\bar{\cdot}$ | antilinear | $\mathbb{B}_{H}$, real dim $4$ | $0$ | $8$ |

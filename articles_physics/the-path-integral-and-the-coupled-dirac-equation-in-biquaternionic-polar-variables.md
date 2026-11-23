@@ -162,7 +162,7 @@ The division of labour, stated once. The charge enters the angle, through the on
 
 ## The Word Does Not Compose, and the Coupling Does Not Repair It
 
-The covariant phase composes. For two paths sharing an intermediate point the gauge term is additive, so the covariant phase is additive, and the angle — being the reduced phase — composes up to the branch's residue. This is the free polar article's statement that the angle composes, with the coupling's term included: the coupling is additive along concatenation and therefore compatible with the additivity of the angle.
+The covariant phase composes. For two paths sharing an intermediate point the gauge term is additive, so the covariant phase is additive, and the angle — being a phase read modulo one turn — composes up to the branch's residue. This is the free polar article's statement that the angle composes, with the coupling's term included: the coupling is additive along concatenation and therefore compatible with the additivity of the angle.
 
 The rotor does not compose. The word of a product of kernels is not the product of the words, because the sum over intermediate points is an integral. The free article measures the failure on a model of two Gaussian kernels: over the full line the composed modulus is $\sqrt{\pi/(a+b)}=\sqrt{\pi/2.3}=1.169$, neither one nor the product of the two moduli, which is one, and the composed angle is $1.33$, the phase at the stationary point plus the quarter turn of the Gaussian. The angle's additivity is recovered at the stationary point together with the Maslov constant; the modulus's multiplicativity is not recovered at all.
 

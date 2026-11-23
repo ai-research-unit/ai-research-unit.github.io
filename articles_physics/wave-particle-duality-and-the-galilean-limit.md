@@ -337,11 +337,11 @@ The condition on the source is homogeneous in either variable, and the symbol is
 |---|---|
 | $\sigma_{\mathcal{P}}$ | the symbol of $\Box_\Phi-4\pi^{2}\nu_m^{2}$, $\nu_t^{\prime\,2}-\nu_{\Phi}^{2}-\nu_m^{2}$; a complex number |
 | $\mathcal{S}$ | the operator with symbol $\sigma_{\mathrm{s}}$; first order in $r'_t$, second in space |
-| $\nu_{\mathrm{s}}$ | the energy above rest, $\nu_t^{\prime}-\nu_m=(E-mc^{2})\frac{2\pi}{h\,c}$ |
+| $\nu_{\mathrm{s}}$ | the energy above rest, $\nu_t^{\prime}-\nu_m=(E-mc^{2})\frac{1}{h\,c}$ |
 | $\sigma_{\mathrm{s}}$ | the Schrödinger symbol, $\nu_{\mathrm{s}}-\nu_{\Phi}^{2}/(2\nu_m)$; affine |
 | $\nu_m$ | the mass wave number, $\frac{m\,c}{h}$; the gap between the two sheets at zero momentum |
 | $\nu_t^{\prime}$ | the energy wave number, $\frac{E}{h\,c}$ |
-| $\nu_{\Phi}$ | the modulus of the momentum wave number, $\frac{2\pi \lvert\vec p\rvert}{h}$ |
+| $\nu_{\Phi}$ | the modulus of the momentum wave number, $\frac{\lvert\vec p\rvert}{h}$ |
 | $\vec\beta_b$ | the boost velocity in units of $c$; its square enters the boost law with the coefficient $\frac{1}{2}\nu_m$ |
 | $a$, $c$, $d$ | the coefficients of $\nu_{\mathrm{s}}$, $\nu_{\Phi}^{2}$ and the constant in a trial symbol; invariance forces $a=-2c\nu_m$ and leaves $d$ free |
 | $\lambda$ | the scaling parameter that tests homogeneity |

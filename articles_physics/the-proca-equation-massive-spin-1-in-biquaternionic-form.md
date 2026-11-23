@@ -10,7 +10,7 @@ Once the Lorenz condition is available, the Proca equation collapses to the Klei
 
 **The carrier: this article works on *Introduction to the Spin-One Anti-Hermitian Subspace*.** The spin fixes the subspace: a spin-one potential needs a four-vector, and the four-vectors of the algebra are the material sector $\mathbb{B}_{\Phi}$, of real dimension four. The restriction is not a choice of taste; it is the statement that the potential is anti-Hermitian, which is what makes its quaternionic norm real and its vector square non-negative. The subspace, its two namings — the triple for the spin and the sector for the amplitude — and the counting are [Introduction to the Spin-One Anti-Hermitian Subspace](the-spin-one-anti-hermitian-subspace.html), and nothing about it is derived below. Two consequences follow, and both are proved there. First, the sector is closed under the Proca operator for **every** material potential, because the residual of the equation is a material element times a central scalar; the Lorenz condition makes that scalar vanish and is not what makes the residual material. Second, the sector is a real form, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$, so a continuous phase destroys it and the restriction is a restriction to the neutral field. The scalar-free part carries the field strength and the spin itself, and the Lorenz condition removes the time slot that separates the four-vector from the three states of the spin.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^2=-e_t$, and central scalar imaginary $i$; the gradient is $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ with $(\tilde\nabla_\Phi)^{\natural}$ its quaternion conjugate and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$; the potential and field strength are $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ and $\tilde{F}=(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, with $c=1/\sqrt{\epsilon\mu}$ and the normalization of the potential fixed so that the two expressions for $\tilde{F}$ agree; and the mass enters as the length $\nu_m=\frac{m\,c}{h}$, whose reciprocal $\nu_m=\frac{m\,c}{h}$ is the coefficient written where the dimensions have to be displayed. The mass parameter is $m=m$, written through the mass length $1/(2\pi\nu_m)$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^2=-e_t$, and central scalar imaginary $i$; the gradient is $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ with $(\tilde\nabla_\Phi)^{\natural}$ its quaternion conjugate and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$; the potential and field strength are $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ and $\tilde{F}=(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, with $c=1/\sqrt{\epsilon\mu}$ and the normalization of the potential fixed so that the two expressions for $\tilde{F}$ agree; and the mass enters as the wave number $\nu_m=\frac{m\,c}{h}$, whose reciprocal $1/(2\pi\nu_m)$ is the mass length written where the dimensions have to be displayed.
 
 ## The Standard Proca Theory
 
@@ -166,7 +166,7 @@ At $\nu_m=0$ this is $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} F_{\ima
 
 **The mass sits in the zeroth-order term, and that is the whole content of the continuity.** The principal symbol of the Proca operator — the part that decides the characteristics and therefore the propagation — is $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} F_{\imath\jmath}$ and does not contain $\nu_m$ at all. There is no singular perturbation: the differential operator is not deformed, a lower-order term is deleted. That is the precise sense in which the equation depends continuously on the mass, and it is what licenses the substitution at the level of the equation.
 
-The claim was checked on plane waves rather than asserted. With $\nu_m=1.3$ and $\vec\nu_\Phi=(0.4,-0.9,1.1)$, so that $\omega^{2}=4\pi^{2}\left(\vec\nu_\Phi^{2}+\nu_m^{2}\right)$, one hundred random real amplitudes projected on the Lorenz surface satisfy the Proca equation with a maximum residual of $2.7\times10^{-15}$ in units of the amplitude; at $\nu_m=0$ the same amplitudes, on the null shell $\omega=2\pi\lvert\vec\nu_\Phi\rvert$, satisfy $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} F_{\imath\jmath}=0$ with a maximum residual of $1.5\times10^{-15}$.
+The claim was checked on plane waves rather than asserted. With $\nu_m=1.3$ and $\vec\nu_\Phi=(0.4,-0.9,1.1)$, so that $\omega^{2}=4\pi^{2}c^{2}\left(\vec\nu_\Phi^{2}+\nu_m^{2}\right)$, one hundred random real amplitudes projected on the Lorenz surface satisfy the Proca equation with a maximum residual of $2.7\times10^{-15}$ in units of the amplitude; at $\nu_m=0$ the same amplitudes, on the null shell $\omega=2\pi\lvert\vec\nu_\Phi\rvert$, satisfy $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} F_{\imath\jmath}=0$ with a maximum residual of $1.5\times10^{-15}$.
 
 ### The biquaternion reduction
 
@@ -225,11 +225,11 @@ The biquaternion form of the same dichotomy is the boxed identity of the section
 
 For $\nu_m\neq0$, the potential has four components and the forced Lorenz condition removes one, leaving three: the two transverse directions and the longitudinal one. For $\nu_m=0$, the Lorenz condition must be imposed rather than derived, which again leaves three, and then the residual gauge transformation $\tilde{A}_{\Phi}\to\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$ with $\Box_\Phi\Gamma=0$ removes one more, leaving two. The count jumps from three to two at the limit.
 
-**Why the massless case loses one more, in one line.** For a timelike wavevector $\nu_{\Phi}\cdot \nu_{\Phi}=\nu_m^{2}\neq0$, the wavevector is not orthogonal to itself, so it does not lie in its own Lorenz hyperplane, and no shift along $\vec\nu_{\Phi}$ preserves both the field strength and the Lorenz scalar. For a null wavevector $\nu_{\Phi}\cdot \nu_{\Phi}=0$ and the opposite holds: the wavevector lies in its own Lorenz hyperplane, and the shift $A\mapsto A+\lambda \nu_{\Phi}$ preserves the field strength **and** preserves $\partial\cdot A$. One direction of the three-dimensional Lorenz space is therefore a gauge orbit, and three minus one is two.
+**Why the massless case loses one more, in one line.** For a timelike wavevector, $\nu_t^{\prime\,2}-\vec\nu_{\Phi}^{2}=\nu_m^{2}\neq0$, the wavevector is not orthogonal to itself, so it does not lie in its own Lorenz hyperplane, and no shift along $\vec\nu_{\Phi}$ preserves both the field strength and the Lorenz scalar. For a null wavevector, $\nu_t^{\prime\,2}-\vec\nu_{\Phi}^{2}=0$, and the opposite holds: the wavevector lies in its own Lorenz hyperplane, and the shift $A\mapsto A+\lambda\tilde\Upsilon_{\Phi}$ preserves the field strength **and** preserves $\partial\cdot A$. One direction of the three-dimensional Lorenz space is therefore a gauge orbit, and three minus one is two.
 
-The two numbers were checked. On the null shell $\lvert k^{2}\rvert=2.3\times10^{-16}$; the shift leaves the field strength invariant to $1.3\times10^{-15}$ and the Lorenz scalar invariant to $1.4\times10^{-15}$. On the massive shell $k^{2}=1.69=\nu_m^{2}$; the same shift moves the Lorenz scalar by $\lambda \nu_m^{2}$, at least $1.1\times10^{-2}$ over one hundred draws, so it is not a symmetry and no orbit forms.
+The two numbers were checked. On the null shell $\lvert\nu_t^{\prime\,2}-\nu_{\Phi}^{2}\rvert=2.3\times10^{-16}$; the shift leaves the field strength invariant to $1.3\times10^{-15}$ and the Lorenz scalar invariant to $1.4\times10^{-15}$. On the massive shell $\nu_t^{\prime\,2}-\nu_{\Phi}^{2}=\nu_m^{2}=1.69$; the same shift moves the Lorenz scalar by $\lambda \nu_m^{2}$, at least $1.1\times10^{-2}$ over one hundred draws, so it is not a symmetry and no orbit forms.
 
-**The algebra's form of the drop is a rank.** Left multiplication by the on-shell symbol $\tilde{P}_{\Phi}$ is an invertible linear map at $\nu_m\neq0$ and a singular map of rank two on the null shell: the computed rank is four for the massive momentum and two for the massless one, which reproduces the companion article's statement in *Conformal Invariance and the Massless Limit in Biquaternionic Form* that the drop from four to two is the algebraic form of the massless limit.
+**The algebra's form of the drop is a rank.** Left multiplication by the on-shell symbol $2\pi i\tilde\Upsilon_{\Phi}$ is an invertible linear map at $\nu_m\neq0$ and a singular map of rank two on the null shell: the computed rank is four for the massive momentum and two for the massless one, which reproduces the companion article's statement in *Conformal Invariance and the Massless Limit in Biquaternionic Form* that the drop from four to two is the algebraic form of the massless limit.
 
 ### Third: gauge invariance emerges
 
@@ -341,10 +341,10 @@ Write a plane-wave potential
 $$
 \tilde{A}_{\Phi} = \tilde{A}_{\Phi,0}\,\exp(-i\theta_{\mathrm{pwp}}), \qquad
 \tilde{A}_{\Phi,0} = A_te_t + \vec a, \qquad
-\tilde P_{\Phi} = i\frac{\omega}{2\pi c}\,e_t + \vec\nu_\Phi,
+\tilde\Upsilon_{\Phi} = i\frac{\omega}{2\pi c}\,e_t + \vec\nu_\Phi,
 $$
 
-where $\tilde{A}_{\Phi,0}$ is a constant element of the material sector $\mathbb{B}_\Phi$, so that $A_t$ is purely imaginary and $\vec a$ is real, and $\theta_{\mathrm{pwp}}=\omega r'_t/c-2\pi\vec\nu_\Phi\cdot\vec r$ is the phase. Differentiation gives $\tilde\nabla_\Phi\tilde{A}_{\Phi} = i\tilde P_{\Phi}\tilde{A}_{\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} = i\tilde P_{\Phi}^{\natural}\tilde{A}_{\Phi}$, and the Klein–Gordon operator acts as
+where $\tilde{A}_{\Phi,0}$ is a constant element of the material sector $\mathbb{B}_\Phi$, so that $A_t$ is purely imaginary and $\vec a$ is real, and $\theta_{\mathrm{pwp}}=\omega r'_t/c-2\pi\vec\nu_\Phi\cdot\vec r$ is the phase. Differentiation gives $\tilde\nabla_\Phi\tilde{A}_{\Phi} = 2\pi i\tilde\Upsilon_{\Phi}\tilde{A}_{\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} = 2\pi i\tilde\Upsilon_{\Phi}^{\natural}\tilde{A}_{\Phi}$, and the Klein–Gordon operator acts as
 
 $$
 \Box_\Phi\,\exp(-i\theta_{\mathrm{pwp}}) = \left(\frac{\omega^2}{c^2} - 4\pi^{2}\vec\nu_\Phi^2\right)\exp(-i\theta_{\mathrm{pwp}}),
@@ -364,10 +364,10 @@ The angle is $\theta_{\mathrm{pwp}}=\frac{2\pi p\cdot x}{h}=(\omega/c)r'_t-\vec\
 
 ### The Lorenz condition on a plane wave
 
-The scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ is the scalar part of $i\tilde P_{\Phi}^{\natural}\tilde{A}_{\Phi,0}$. Splitting $\tilde P_{\Phi}^{\natural} = i(\omega/c)e_t - 2\pi\vec\nu_\Phi$ and using $\vec\nu_\Phi\vec a = -\vec\nu_\Phi\cdot\vec a + \vec\nu_\Phi\times\vec a$,
+The scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ is the scalar part of $2\pi i\tilde\Upsilon_{\Phi}^{\natural}\tilde{A}_{\Phi,0}$. Splitting $\tilde\Upsilon_{\Phi}^{\natural} = i\frac{\omega}{2\pi c}e_t - \vec\nu_\Phi$ and using $\vec\nu_\Phi\vec a = -\vec\nu_\Phi\cdot\vec a + \vec\nu_\Phi\times\vec a$,
 
 $$
-\mathrm{Sc}\!\left(i\tilde P_{\Phi}^{\natural}\tilde{A}_{\Phi,0}\right)
+\mathrm{Sc}\!\left(2\pi i\tilde\Upsilon_{\Phi}^{\natural}\tilde{A}_{\Phi,0}\right)
 = -\frac{\omega}{c}\,A_t + 2\pi i\,\vec\nu_\Phi\cdot\vec a,
 $$
 
@@ -509,7 +509,7 @@ The massless limit is an exact reduction and not an approximation. At $\nu_m=0$ 
 | $\tilde{F} = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ | Field-strength biquaternion, pure vector |
 | $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ | Gauge scalar; the Proca equation forces $S=0$ (Lorenz condition) |
 | $1/(2\pi\nu_m)$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal, up to the factor $2\pi$, is the mass wave number, $\nu_m=\frac{m\,c}{h}$, and the squared coefficient is $\nu_m^{2}=\frac{m^{2}c^{2}}{h^{2}}$ |
-| $\tilde P_{\Phi} =\frac{h}{2\pi}\,(i\omega/c\,e_t + \vec\nu_\Phi)$ | Four-wavevector biquaternion |
+| $\tilde P_{\Phi} = h\left(i\frac{\omega}{2\pi c}\,e_t + \vec\nu_\Phi\right)$ | Four-wavevector biquaternion, $h\tilde\Upsilon_{\Phi}$ |
 | $\omega^2 = 4\pi^{2}c^{2}\left(\vec\nu_\Phi^{2} + \nu_m^{2}\right)$ | Massive dispersion relation |
 | $\vec a$, $A_t$ | Spatial amplitude (three real components) and time component fixed by Lorenz |
 | $\star\tilde{F} = -i\tilde{F}$ | Hodge dual on the field strength (companion article) |

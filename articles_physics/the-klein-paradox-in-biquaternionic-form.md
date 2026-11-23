@@ -151,7 +151,7 @@ $$
 
 which is the continuity statement that this article writes for the transmitted amplitude, read at a wall instead of at a discontinuity, with the exponential tail kept. No approximation enters.
 
-**The threshold.** At the lower edge the decay constant vanishes while the factor $E+mc^{2}$ vanishes faster, so the left side diverges and the two conditions reduce to $\cos(\nu_{\Phi,\mathrm{w}}a)=0$ and $\sin(\nu_{\Phi,\mathrm{w}}a)=0$. Both give $2\pi\nu_{\Phi,\mathrm{w}}a=n_{\mathrm{w}}\pi/2$, with $n_{\mathrm{w}}=1,2,3,\dots$ counting half-wavelengths across the well; odd $n_{\mathrm{w}}$ is the even solution, and the nodeless state is $n_{\mathrm{w}}=1$. At that energy $4\pi^{2}\nu_{\Phi,\mathrm{w}}^{2}=((V_0-mc^{2})^{2}-m^{2}c^{4})\frac{2\pi}{h\,c}^{2}$, so the depth follows:
+**The threshold.** At the lower edge the decay constant vanishes while the factor $E+mc^{2}$ vanishes faster, so the left side diverges and the two conditions reduce to $\cos(2\pi\nu_{\Phi,\mathrm{w}}a)=0$ and $\sin(2\pi\nu_{\Phi,\mathrm{w}}a)=0$. Both give $2\pi\nu_{\Phi,\mathrm{w}}a=n_{\mathrm{w}}\pi/2$, with $n_{\mathrm{w}}=1,2,3,\dots$ counting half-wavelengths across the well; odd $n_{\mathrm{w}}$ is the even solution, and the nodeless state is $n_{\mathrm{w}}=1$. At that energy $4\pi^{2}\nu_{\Phi,\mathrm{w}}^{2}=((V_0-mc^{2})^{2}-m^{2}c^{4})\frac{2\pi}{h\,c}^{2}$, so the depth follows:
 
 $$
 \boxed{\;V_0^{\mathrm{cr}}=mc^{2}\left[1+\sqrt{1+\left(\frac{n_{\mathrm{w}}\pi}{2\pi\nu_mL}\right)^{2}}\;\right]\;}

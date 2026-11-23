@@ -32,7 +32,7 @@ $$
 \Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2 ,
 $$
 
-with $Q_t=i q'_t$, so that each time derivative carries the factor $(ic)^{-1} = -i/c$ when it is written in $r'_t$ and the time part is $-c^{-2}$ times the second derivative in $r'_t$. The imaginary unit satisfies $i^2 = -1$, and every product of two of them is reduced before a display is written: the collapse is what turns $(i\omega/c)^2$ into $-\omega^2/c^2$, and what makes $i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ a purely imaginary exponent whose exponential has unit modulus. The mass parameter of the operator pair is measured in inverse-length units; restoring $\frac{h}{2\pi}$ and $c$, it is the inverse reduced Compton wavelength
+with $Q_t=i q'_t$, so that each time derivative carries the factor $(ic)^{-1} = -i/c$ when it is written in $r'_t$ and the time part is $-c^{-2}$ times the second derivative in $r'_t$. The imaginary unit satisfies $i^2 = -1$, and every product of two of them is reduced before a display is written: the collapse is what turns $(i\omega/c)^2$ into $-\omega^2/c^2$, and what makes $i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ a purely imaginary exponent whose exponential has unit modulus. The mass parameter of the operator pair is measured in inverse-length units; restoring $\frac{h}{2\pi}$ and $c$, it is the mass wave number, the inverse Compton wavelength
 
 $$
 \nu_m=\frac{m\,c}{h},
@@ -70,7 +70,7 @@ $$
 whose two members carry the two chiral halves. The reduction is a two-line computation. Apply $(\tilde\nabla_\Phi)^{\natural}$ to the first member:
 
 $$
-(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R} = (\tilde\nabla_\Phi)^{\natural}\!\left(\nu_m\tilde{Ξ}_{L}\right) = 2\pi\nu_m(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 4\pi^{2}\nu_m^{2}\tilde{Ξ}_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R} = (\tilde\nabla_\Phi)^{\natural}\!\left(2\pi\nu_m\tilde{Ξ}_{L}\right) = 2\pi\nu_m(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 4\pi^{2}\nu_m^{2}\tilde{Ξ}_{R},
 $$
 
 where the middle equality uses that $m$ is a scalar and the last uses the second member. Since $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box_\Phi$ is central,
@@ -142,10 +142,10 @@ $$
 \Box_\Phi = \partial^2/\partial R_t^2 + \partial^2/\partial R_x^2 .
 $$
 
-The chiral pair retains its form and the reduction gives $(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde{Ξ}_{L,R} = 0$ exactly as before. Each half is a whole biquaternion in the reduced theory as in the full one, so the chirality still splits the pair in two and the mass couples the halves exactly as before. The plane-wave substitution gives $\tilde P_{\Phi} = i\frac{\omega}{2\pi c}e_t + \nu_{\Phi,x}\vec e_x$ and
+The chiral pair retains its form and the reduction gives $(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde{Ξ}_{L,R} = 0$ exactly as before. Each half is a whole biquaternion in the reduced theory as in the full one, so the chirality still splits the pair in two and the mass couples the halves exactly as before. The plane-wave substitution gives $\tilde\Upsilon_{\Phi} = i\frac{\omega}{2\pi c}e_t + \nu_{\Phi,x}\vec e_x$ and
 
 $$
-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -\nu_t^{\prime\,2} + \nu_{\Phi}^{2} = -\nu_m^{2},
+\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural} = -\nu_t^{\prime\,2} + \nu_{\Phi}^{2} = -\nu_m^{2},
 \qquad\text{hence}\qquad
 \omega^2 = 4\pi^{2}c^{2}\left(\nu_{\Phi}^{2} + \nu_m^{2}\right) ,
 $$
@@ -232,12 +232,12 @@ one scalar operator on each half. The second is the square of the first: the two
 Write the four-wavevector and the four-position as
 
 $$
-\tilde P_{\Phi} = i\frac{\omega}{2\pi c}e_t + \vec\nu_\Phi\in\mathbb{B}_{\Phi},
+\tilde\Upsilon_{\Phi} = i\frac{\omega}{2\pi c}e_t + \vec\nu_\Phi\in\mathbb{B}_{\Phi},
 \qquad
 \tilde R_\Phi = i r'_t\,e_t + \vec r\in\mathbb{B}_{\Phi},
 $$
 
-with $\vec\nu_\Phi = \nu_{\Phi x}\vec e_x + \nu_{\Phi y}\vec e_y + \nu_{\Phi z}\vec e_z$ and $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. Here $\vec\nu_\Phi^2$ abbreviates the sum $\nu_{\Phi,1}^2+\nu_{\Phi,2}^2+\nu_{\Phi,3}^2$ of the squares of the components, not the quaternion product, which is its negative, $\vec\nu_\Phi\,\vec\nu_\Phi = -\vec\nu_\Phi^2e_t$. The phase is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = 2\pi\vec\nu_\Phi\cdot\vec r - \omega r'_t/c$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
+with $\vec\nu_\Phi = \nu_{\Phi x}\vec e_x + \nu_{\Phi y}\vec e_y + \nu_{\Phi z}\vec e_z$ and $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. Here $\vec\nu_\Phi^2$ abbreviates the sum $\nu_{\Phi,1}^2+\nu_{\Phi,2}^2+\nu_{\Phi,3}^2$ of the squares of the components, not the quaternion product, which is its negative, $\vec\nu_\Phi\,\vec\nu_\Phi = -\vec\nu_\Phi^2e_t$. The phase is $2\pi\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_\Phi^{\natural}) = 2\pi\vec\nu_\Phi\cdot\vec r - \omega r'_t/c$, the scalar part of the product with the conjugate four-position. The exponent $2\pi i\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_\Phi^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
 
 $$
 \partial/\partial r'_t \longmapsto -2\pi i\nu_t^{\prime}, \qquad \partial/\partial r_\eta\longmapsto 2\pi i\nu_{\Phi,\eta}, \qquad \partial/\partial R_t \longmapsto -2\pi\nu_m,
@@ -254,7 +254,7 @@ $$
 The biquaternion norm of the wave biquaternion is
 
 $$
-\langle\tilde P_{\Phi}\rangle_{\natural} = \tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = \left(i\frac{\omega}{c}\right)^2 + 4\pi^{2}\left(\nu_1^2+\nu_2^2+\nu_3^2\right) = -\frac{\omega^2}{c^2} + 4\pi^{2}\vec\nu_\Phi^2 = -\Box_\Phi ,
+\langle\tilde\Upsilon_{\Phi}\rangle_{\natural} = \tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural} = \left(i\frac{\omega}{2\pi c}\right)^2 + \left(\nu_1^2+\nu_2^2+\nu_3^2\right) = -\frac{\omega^2}{4\pi^{2}c^{2}} + \vec\nu_\Phi^2 = -\frac{1}{4\pi^{2}}\Box_\Phi ,
 $$
 
 the last equality holding on the plane wave, so the second-order equation $(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde{Ξ} = 0$ is the mass-shell condition
@@ -338,7 +338,7 @@ The device is older than this algebra. The second-order form of the Dirac equati
 
 Nothing in the display is a property of plane waves; the only identity used is $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box_\Phi$, which is central. The equivalence was checked on plane waves at both frequency signs, with residual at the floating-point floor, and **off** the mass shell the same substitution leaves exactly
 
-$$\frac{1}{2\pi\nu_m}(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R} - \nu_m\tilde{Ξ}_{R} =\frac{1}{2\pi\nu_m}\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\tilde{Ξ}_{R} ,
+$$\frac{1}{2\pi\nu_m}(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R} - 2\pi\nu_m\tilde{Ξ}_{R} =\frac{1}{2\pi\nu_m}\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\tilde{Ξ}_{R} ,
 $$
 
 which is the second member's defect, so the mass shell is the exact condition and not an approximation.
@@ -423,9 +423,9 @@ The converse holds exactly for the free pair. Read the first member as a definit
 | $\tilde\nabla_\Phi^2 = \left(\partial^2/\partial R_t^2 - \lvert\vec\nabla_\Phi\rvert^2\right)e_t + 2\,\partial/\partial R_t\,\vec\nabla_\Phi$ | Square of the gradient alone; non-central, with a vector remainder |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ | Biquaternion norm |
-| $\tilde P_{\Phi} =\frac{h}{2\pi}\,(i\omega/c\,e_t + \vec\nu_\Phi)$ | Four-wavevector, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ |
-| $\tilde R_\Phi = i r'_t\,e_t + \vec r$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = 2\pi\vec\nu_\Phi\cdot\vec r - \omega r'_t/c$ |
-| $1/(2\pi\nu_m)$ | The mass length of the operator pair, $\frac{h}{2\pi mc}$ (inverse reduced Compton wavelength) |
+| $\tilde P_{\Phi} = h\,\tilde\Upsilon_{\Phi} = h\left(i\frac{\omega}{2\pi c}\,e_t + \vec\nu_\Phi\right)$ | Four-wavevector, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ |
+| $\tilde R_\Phi = i r'_t\,e_t + \vec r$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position; with $\tilde\Upsilon_{\Phi}=\tilde P_{\Phi}/h$ the phase is $\theta_{\mathrm{pwp}}=2\pi\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_\Phi^{\natural})=2\pi\vec\nu_\Phi\cdot\vec r-\omega r'_t/c$, that is $\frac{2\pi}{h}\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ |
+| $1/(2\pi\nu_m)$ | The length of one radian of the operator pair's mass phase, $\frac{h}{2\pi mc}$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$ | The one-sided pair; linear, with the mass the same scalar in each half |
 | $\tilde{Ξ}_{L} =\frac{1}{2\pi\nu_m}\tilde\nabla_\Phi\tilde{Ξ}_{R}$ | The second half as the gradient of the first; the pair's equivalent form, exact whenever $(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde{Ξ}_{R} = 0$ |
 | $\langle\tilde{Ξ}\rangle_{*} = \sum_{\imath}\lvert\tilde{Ξ}_{\imath}\rvert^2$ | Hermitian norm of a field, positive definite; the Dirac density of the pair |

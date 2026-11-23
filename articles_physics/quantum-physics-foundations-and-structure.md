@@ -454,7 +454,7 @@ The standard formalism has several open issues: the measurement problem, the axi
 | $\langle A\rangle_\rho = \mathrm{Tr}(A\rho)$ | Expectation value of $A$ in state $\rho$ |
 | $U(r'_t,r'_{t,0})$ | $*$-Unitary evolution operator, $U(r'_{t,0},r'_{t,0}) = I$ |
 | $H$ | Hamiltonian |
-| $\frac{h}{2\pi}$ | Reduced Planck constant |
+| $\frac{h}{2\pi}$ | The action of one radian of phase |
 | $\lvert\tilde{Ξ}\rangle = \alpha\lvert 0\rangle + \beta\lvert 1\rangle$ | Pure qubit state, $\lvert\alpha\rvert^2 + \lvert\beta\rvert^2 = 1$ |
 | $\boldsymbol{\sigma} = (\sigma_1,\sigma_2,\sigma_3)$ | Pauli matrices |
 | $\vec s_{\Psi}$ | Bloch vector, $\rho = \tfrac{1}{2}(I + \vec s_{\Psi}\cdot\boldsymbol{\sigma})$ |

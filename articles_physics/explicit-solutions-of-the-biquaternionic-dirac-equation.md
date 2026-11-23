@@ -75,7 +75,7 @@ so a nonzero solution requires the **mass-shell condition**
 $$\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_m^{2},
 $$
 
-i.e., $-\nu_t^{\prime\,2} + \|\vec\nu_\Phi\|^2 = -\nu_m^{2}$, which is the standard mass-shell relation $\nu_t^{\prime\,2} = \|\vec\nu_\Phi\|^2 + \nu_m^{2}$ (with $2\pi\nu_t^{\prime}=\omega/c$ and $E=\frac{h}{2\pi} c\,2\pi\nu_t^{\prime}$). This is the biquaternion form of the standard relativistic energy-momentum relation $E^2 = \vec p^2 c^2 +m^{2}\,c^{4}$ (with $\vec p =h\,2\pi\vec\nu_\Phi$), the same shell as the four-momentum kinematics of *The Dirac Equation in Biquaternionic Form*. The two signs of $\nu_t^{\prime}$ are the two frequency branches — the particle and the antiparticle — and with the two spin states they give the four solutions that the field carries.
+i.e., $-\nu_t^{\prime\,2} + \|\vec\nu_\Phi\|^2 = -\nu_m^{2}$, which is the standard mass-shell relation $\nu_t^{\prime\,2} = \|\vec\nu_\Phi\|^2 + \nu_m^{2}$ (with $2\pi\nu_t^{\prime}=\omega/c$ and $E=\frac{h}{2\pi} c\,2\pi\nu_t^{\prime}$). This is the biquaternion form of the standard relativistic energy-momentum relation $E^2 = \vec p^2 c^2 +m^{2}\,c^{4}$ (with $\vec p =h\,\vec\nu_\Phi$), the same shell as the four-momentum kinematics of *The Dirac Equation in Biquaternionic Form*. The two signs of $\nu_t^{\prime}$ are the two frequency branches — the particle and the antiparticle — and with the two spin states they give the four solutions that the field carries.
 
 ## The Field as the Gradient of a Scalar Potential
 

@@ -346,7 +346,7 @@ In the biquaternion framework, the observables are the Hermitian elements of $\m
 |---|---|
 | $\{f,g\}$ | Poisson bracket of classical observables |
 | $[f,g]$ | Commutator of quantum observables |
-| $\frac{h}{2\pi}$ | Reduced Planck constant (dimensionful; $h\to0$ is formal) |
+| $\frac{h}{2\pi}$ | The action of one radian of phase (dimensionful; $h\to0$ is formal) |
 | $q_i, p_j$ | Canonical coordinates and momenta |
 | $\delta_{ij}, \epsilon_{ij\eta}$ | Kronecker delta; Levi-Civita symbol |
 | $L_{\mathrm{orb},i}=\epsilon_{ij\eta}q_jp_\eta$ | Orbital angular momentum components |

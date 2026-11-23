@@ -26,7 +26,7 @@ Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho},
 \nu_m=\frac{mc}{h}.
 $$
 
-The symbol rule is the Schrödinger rung's, with the temporal slot written once: a plane wave carries $e^{i(\vec\nu_\Phi\cdot\vec r-\nu_t'r_t')}$ with $2\pi\nu_t'=\omega/c=\frac{E}{h\,c}$, so $\partial/\partial r_t'\mapsto-ik_t'$ and $\tilde\nabla_\Phi\mapsto 2\pi i\tilde\Upsilon_\Phi$ with $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$.
+The symbol rule is the Schrödinger rung's, with the temporal slot written once: a plane wave carries $e^{2\pi i(\vec\nu_\Phi\cdot\vec r-\nu_t'r_t')}$ with $2\pi\nu_t'=\omega/c=\frac{E}{h\,c}$, so $\partial/\partial r_t'\mapsto-2\pi i\nu_t'$ and $\tilde\nabla_\Phi\mapsto 2\pi i\tilde\Upsilon_\Phi$ with $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$.
 
 ## The Mode, and the Second-Order Shell
 
@@ -59,7 +59,7 @@ $$
 \qquad
 E=\frac{h}{2\pi} c\,2\pi\nu_t',
 \qquad
-\vec p=h\,2\pi\vec\nu_\Phi .
+\vec p=h\,\vec\nu_\Phi .
 $$
 
 The unit velocity is then exact.
@@ -177,7 +177,7 @@ The passage to the first-order rung removes the shell and with it the radius rea
 | Symbol | Meaning |
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The central field, in its word |
-| $2\pi\nu_t'=\omega/c=\frac{E}{h\,c}$, $2\pi\vec\nu_\Phi=\frac{\vec p}{h}$ | The label of a mode |
+| $2\pi\nu_t'=\omega/c=\frac{E}{h\,c}$, $\vec\nu_\Phi=\frac{\vec p}{h}$ | The label of a mode |
 | $\nu_m=\frac{mc}{h}$ | The mass wave number |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime 2}$ | The d'Alembertian on the material sector |
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | The quantum potential; zero at a mode |

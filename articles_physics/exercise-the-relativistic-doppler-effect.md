@@ -38,7 +38,7 @@ $$
 $$
 Its biquaternion norm is
 $$
-\langle\tilde P_{\Phi}\rangle_{\natural} = \tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = \left(\frac{i\omega}{c}\right)^2 + 2\pi\vec\nu_\Phi^2 = -\frac{\omega^2}{c^2} + 4\pi^{2}\nu_{\Phi}^2 .
+\langle\tilde P_{\Phi}\rangle_{\natural} = \tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = \left(\frac{i\omega}{c}\right)^2 + 4\pi^{2}\nu_{\Phi}^{2} = -\frac{\omega^2}{c^2} + 4\pi^{2}\nu_{\Phi}^2 .
 $$
 For light in a medium of local speed $c = 1/\sqrt{\epsilon\mu}$ the dispersion relation is $2\pi\nu_{\Phi} = \omega/c$, so
 $$

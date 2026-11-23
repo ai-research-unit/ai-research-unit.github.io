@@ -420,7 +420,7 @@ $$
 
 so that the field's own phase advances at $\frac{2\pi mc^{2}}{h}$ and the norm's angle at $\frac{2\pi 2mc^{2}}{h}$. The angle is a number of radians and not an energy; $\frac{h}{2\pi}$ is what makes it so, and the same $\frac{h}{2\pi}$ makes $\sigma$ dimensionless.
 
-**The factor of two is the whole of zitterbewegung.** The trembling of a state of this kind is a bilinear effect: the density and the current oscillate, and every bilinear is built from the norm, whose angle is twice the field's. The field's phase advances at the rest rate $\frac{2\pi mc^{2}}{h}$, so its square advances at $\frac{2\pi 2mc^{2}}{h}$, and that is the trembling frequency; the doubling is one line of algebra, $\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$, and not a property of the flow. The numbers are the standard ones: $1.55269\times10^{21}\ \mathrm{rad\,s^{-1}}$ for the rest frequency and $193.1\ \mathrm{fm}$ for half the reduced Compton wavelength.
+**The factor of two is the whole of zitterbewegung.** The trembling of a state of this kind is a bilinear effect: the density and the current oscillate, and every bilinear is built from the norm, whose angle is twice the field's. The field's phase advances at the rest rate $\frac{2\pi mc^{2}}{h}$, so its square advances at $\frac{2\pi 2mc^{2}}{h}$, and that is the trembling frequency; the doubling is one line of algebra, $\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$, and not a property of the flow. The numbers are the standard ones: $1.55269\times10^{21}\ \mathrm{rad\,s^{-1}}$ for the rest frequency and $193.1\ \mathrm{fm}$ for half of one radian of the mass phase.
 
 What the polar form adds is the location. The frame is untouched by the trembling: a single branch has a constant boost and a constant rotor, and the oscillation appears only when two branches are superposed. A reader who expects the frame to rotate at the trembling frequency will not find it rotating there.
 
@@ -501,7 +501,7 @@ The word fails on the zero divisors and nowhere else, that is on the $N$-degener
 | $\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$ |
 | $\tilde R_\Phi=i r'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Four-position |
 | $r'_t=c\,t^{\prime}$ | Material time, a length |
-| $\nu_m=\frac{mc}{h}$ | Mass wave number; the reciprocal reduced Compton length |
+| $\nu_m=\frac{mc}{h}$ | Mass wave number; the reciprocal of the Compton wavelength |
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word |
 | $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | Scale and density; real and central |
 | $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | The word's angle; the norm's argument is $2\theta_{\mathrm{pha}}$ |

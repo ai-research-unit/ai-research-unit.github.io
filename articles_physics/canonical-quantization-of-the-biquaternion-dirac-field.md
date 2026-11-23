@@ -257,7 +257,7 @@ $$
 The field and its adjoint,
 
 $$
-\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(Y,r'_t)=\int\!\frac{d^32\pi\nu_{\Phi}}{(2\pi)^3}\,\sqrt{\frac{h c}{4\pi E_{2\pi\vec\nu_\Phi}}}
+\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(Y,r'_t)=\int\!d^{3}\nu_{\Phi}\,\sqrt{\frac{h c}{4\pi E_{2\pi\vec\nu_\Phi}}}
 \sum_{s=1}^{2}\Big[a_{\mathrm{fop},s}^{\dagger}(2\pi\vec\nu_\Phi)\,\tilde{Ξ}_{+}^{(s)*}(2\pi\vec\nu_\Phi)\,\exp(+ik\cdot r_y)
 +b_{\mathrm{fop},s}(2\pi\vec\nu_\Phi)\,\tilde{Ξ}_{-}^{(s)*}(2\pi\vec\nu_\Phi)\,\exp(-ik\cdot r_y)\Big],
 $$

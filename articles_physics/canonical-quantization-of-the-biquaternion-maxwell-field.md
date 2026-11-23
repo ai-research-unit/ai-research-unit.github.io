@@ -154,7 +154,7 @@ The second is the **finding**. Nothing in the algebra selects a gauge. The gauge
 Covariant quantization proceeds with all four polarizations and imposes a subsidiary condition. Expand the free potential in plane waves,
 
 $$
-A_{\imath}(x)=\int\!\frac{d^32\pi\nu_{\Phi}}{(2\pi)^3}\sqrt{\frac{c}{2\omega_k}}\sum_{r=0}^{3}
+A_{\imath}(x)=\int\!d^{3}\nu_{\Phi}\sqrt{\frac{c}{2\omega_k}}\sum_{r=0}^{3}
 \left[\epsilon^{(r)}_{\imath}(2\pi\vec\nu_\Phi)\,a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi)\,\exp(-ik\cdot x)
 +\epsilon^{(r)*}_{\imath}(2\pi\vec\nu_\Phi)\,a_{\mathrm{fop},r}^{\dagger}(2\pi\vec\nu_\Phi)\,\exp(+ik\cdot x)\right],
 $$
@@ -163,7 +163,7 @@ with $\omega_k=c\lvert2\pi\vec\nu_\Phi\rvert$ an angular frequency for the massl
 
 $$
 \boxed{\;\big[a_{\mathrm{fop},r}(\vec\nu_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec\nu_2)\big]
-=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\,\delta^{(3)}(\vec\nu_\Phi-\vec\nu_2)\;},
+=\sigma_{\mathrm{met},r}\,\delta_{rs}\,\delta^{(3)}(\vec\nu_\Phi-\vec\nu_2)\;},
 $$
 
 with all other commutators vanishing. The signs are not optional: the timelike mode has $\sigma_{\mathrm{met},0}=-1$, so the one-particle state $a_{\mathrm{fop},0}^{\dagger}|0\rangle$ has **negative norm**, $\langle0|a_{\mathrm{fop},0}a_{\mathrm{fop},0}^{\dagger}|0\rangle=-1$. The longitudinal mode has positive norm, as do the two transverse modes.
@@ -212,10 +212,10 @@ The alternatives should be named. The **Coulomb gauge** $\mathrm{div}\,\vec A=0$
 The counting is worth setting beside the scalar field, because the difference is where the gauge structure lives. A real scalar field $\xi_{\mathrm{scl}}$ of mass $m$ has conjugate momentum $\pi=\partial\xi_{\mathrm{scl}}/\partial r'_t$, the canonical commutator $[\xi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\pi_{\mathrm{fop}}(\vec y)]=i\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$, and a mode expansion with **one** polarization,
 
 $$
-\big[a_{\mathrm{fop}}(\vec\nu_\Phi),a_{\mathrm{fop}}^{\dagger}(\vec\nu_2)\big]=(2\pi)^3\,\delta^{(3)}(\vec\nu_\Phi-\vec\nu_2),
+\big[a_{\mathrm{fop}}(\vec\nu_\Phi),a_{\mathrm{fop}}^{\dagger}(\vec\nu_2)\big]=\delta^{(3)}(\vec\nu_\Phi-\vec\nu_2),
 $$
 
-with dispersion $\omega_k=c\sqrt{2\pi\vec\nu_\Phi^2+4\pi^{2}\nu_m^{2}}$. Its Fock space has positive-definite norm, there is no constraint, and no gauge condition has to be imposed: the Legendre transform is regular. The massless scalar field has one mode. The photon has **two** physical transverse modes and reaches them only after the two unphysical modes — the timelike and the longitudinal — have been removed by a subsidiary condition. The photon is not a scalar particle with an extra label; the reduction from four components to two is performed by the gauge structure, and that structure is what the algebra does not fix. If the gauge field is given a mass, as in the Proca theory, the gauge freedom is absent, the constraint structure changes, and a third (longitudinal) polarization becomes physical — which shows that the two-polarization count is a consequence of the gauge symmetry, not of the number of field components.
+with dispersion $\omega_k=c\sqrt{4\pi^{2}\nu_{\Phi}^{2}+4\pi^{2}\nu_m^{2}}$. Its Fock space has positive-definite norm, there is no constraint, and no gauge condition has to be imposed: the Legendre transform is regular. The massless scalar field has one mode. The photon has **two** physical transverse modes and reaches them only after the two unphysical modes — the timelike and the longitudinal — have been removed by a subsidiary condition. The photon is not a scalar particle with an extra label; the reduction from four components to two is performed by the gauge structure, and that structure is what the algebra does not fix. If the gauge field is given a mass, as in the Proca theory, the gauge freedom is absent, the constraint structure changes, and a third (longitudinal) polarization becomes physical — which shows that the two-polarization count is a consequence of the gauge symmetry, not of the number of field components.
 
 ## Comparison with the Dirac Case
 

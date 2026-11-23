@@ -105,7 +105,7 @@ so the equation is satisfied for every constant $\xi$ provided
 $$
 \boxed{\;hf_{\mathrm{frq}}=\frac{h^{2}\,4\pi^{2}\nu_{\Phi}^{2}}{8\pi^{2}\,m}
 \qquad\Longleftrightarrow\qquad
-\omega(2\pi\vec\nu_\Phi) = \frac{c 4\pi^{2}\nu_{\Phi}^2}{2\,2\pi\nu_m}\;}.
+\omega(2\pi\vec\nu_\Phi) = \frac{c 4\pi^{2}\nu_{\Phi}^2}{4\pi\nu_m}\;}.
 $$
 
 Two features of the solution are the whole content of the plane-wave section. First, the **energy does not depend on $\xi$**: the two components of the spinor are degenerate, because the Hamiltonian is central. Second, the phase is central, so it multiplies both components equally and generates no relative phase. Neither of these is an assumption; both follow from $H \in \mathbb{B}_{C}$.
@@ -138,7 +138,7 @@ Here $\theta_{\mathrm{pwp}}:=2\pi\vec\nu_\Phi\cdot\vec r-\omega r'_t/c\in\mathbb
 The dispersion relation has the standard consequences. The phase velocity is
 
 $$
-v_{\mathrm{ph}} = \frac{\omega}{2\pi\nu_{\Phi}} = \frac{c 2\pi\nu_{\Phi}}{2\,2\pi\nu_m},
+v_{\mathrm{ph}} = \frac{\omega}{2\pi\nu_{\Phi}} = \frac{c 2\pi\nu_{\Phi}}{4\pi\nu_m},
 $$
 
 and the group velocity, which is the velocity of the packet and the classical velocity, is
@@ -207,7 +207,7 @@ The zero divisor cone therefore carries the states, while the positive Hermitian
 The free equation is linear over $\mathbb{C}$, and its coefficients are central, so superpositions of plane waves are solutions:
 
 $$
-\tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int \frac{d^32\pi\nu_{\Phi}}{(2\pi)^3}\;\tilde{Ξ}_{0}(2\pi\vec\nu_\Phi)\,\exp(\,i(2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega(2\pi\vec\nu_\Phi) r'_t/c)),
+\tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int d^{3}\nu_{\Phi}\;\tilde{Ξ}_{0}(2\pi\vec\nu_\Phi)\,\exp(\,i(2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega(2\pi\vec\nu_\Phi) r'_t/c)),
 \qquad
 \tilde{Ξ}_{0}(2\pi\vec\nu_\Phi) \in \mathbb{B}\tilde\Pi_{\mathrm{id}} .
 $$
@@ -269,7 +269,7 @@ so that $s_0$ is the **density width** (the standard deviation of $|Ξ_0|^2$) an
 
 $$
 Ξ(r_x,r'_t) = \frac{(2\pi s_0^2)^{-1/4}}{\sqrt{A(r'_t)}}\,
-\exp\!\left[-\frac{(r_x - v_0 r'_t)^2}{4s_0^2 A(r'_t)} + 2\pi i\nu_t^{\prime}r_x - \frac{i c 4\pi^{2}\nu_t^{\prime\,2} r'_t}{2\,2\pi\nu_m}\right],
+\exp\!\left[-\frac{(r_x - v_0 r'_t)^2}{4s_0^2 A(r'_t)} + 2\pi i\nu_t^{\prime}r_x - \frac{i c 4\pi^{2}\nu_t^{\prime\,2} r'_t}{4\pi\nu_m}\right],
 \qquad
 A(r'_t) = 1 + \frac{i r'_t}{2s_0^2\,2\pi\nu_m},
 \qquad
@@ -293,7 +293,7 @@ $$
 
 is the spreading time. The biquaternion form of the packet is $\tilde{Ξ} = Ξ\,\xi$: the scalar envelope $Ξ$ carries all of the dynamics, and the module factor $\xi$ is a constant.
 
-The closed forms above were checked numerically. Using the density-width normalisation, with every wave number quoted in units of $\nu_m$ (so that $2\pi\nu_m=1$), every length in units of $1/\nu_m$, and $s_0 = 0.5$, the analytic density agrees with the Gaussian $|Ξ(r_x,r'_t)|^2$ to a relative error below $6\times 10^{-16}$ at $r'_t = 0, 1.4, 2.7$, and the variance computed by direct quadrature of $|Ξ(r_x,r'_t)|^2$ equals $s(r'_t)^2$ to six decimal places at each time, with the mean equal to $v_0 r'_t$. The analytic envelope itself was checked against a direct momentum-space quadrature of $Ξ(r_x,r'_t) = \int  \frac{dk_\Phi}{2\pi}\tilde{Ξ}_0(2\pi\nu_{\Phi})\exp(2\pi i\nu_{\Phi} x -\frac{i\,4\pi^{2}\nu_{\Phi}^{2}\,r'_{t}}{2\,2\pi\nu_m})$, evaluated on a rotated contour, with agreement at the $10^{-13}$ level on three sampled points. In every case the quantity checked is a superposition — a packet is a superposition of plane waves — and never a single plane wave.
+The closed forms above were checked numerically. Using the density-width normalisation, with every wave number quoted in units of $\nu_m$ (so that $2\pi\nu_m=1$), every length in units of $1/\nu_m$, and $s_0 = 0.5$, the analytic density agrees with the Gaussian $|Ξ(r_x,r'_t)|^2$ to a relative error below $6\times 10^{-16}$ at $r'_t = 0, 1.4, 2.7$, and the variance computed by direct quadrature of $|Ξ(r_x,r'_t)|^2$ equals $s(r'_t)^2$ to six decimal places at each time, with the mean equal to $v_0 r'_t$. The analytic envelope itself was checked against a direct momentum-space quadrature of $Ξ(r_x,r'_t) = \int  \frac{dk_\Phi}{2\pi}\tilde{Ξ}_0(2\pi\nu_{\Phi})\exp(2\pi i\nu_{\Phi} x -\frac{i\,4\pi^{2}\nu_{\Phi}^{2}\,r'_{t}}{4\pi\nu_m})$, evaluated on a rotated contour, with agreement at the $10^{-13}$ level on three sampled points. In every case the quantity checked is a superposition — a packet is a superposition of plane waves — and never a single plane wave.
 
 ### Stationary phase and the classical trajectory
 
@@ -320,7 +320,7 @@ The stationary wave vector is the one whose group velocity carries it to the obs
 The free propagator is the inverse Fourier transform of the free phase,
 
 $$
-\boxed{\;G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = \int  \frac{d^32\pi\nu_{\Phi}}{(2\pi)^3}\,
+\boxed{\;G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = \int  d^{3}\nu_{\Phi}\,
 \exp(i\theta_{\mathrm{fre}}),\qquad \theta_{\mathrm{fre}}=2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\frac{h\,\nu_{\Phi}^{2}\,r'_{t}}{4\pi \,m}\in\mathbb{R}
 = \left(\frac{2\pi\nu_m}{2\pi i r'_t}\right)^{3/2}
 \exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,h\,r'_{t}}{2\pi c}}\right)\;},
@@ -462,7 +462,7 @@ is central, is a complex scalar times $e_t$, and satisfies the composition law, 
 | $T = -\tilde p^2 c/(2\,m\,c) = \tilde p\tilde p^{\natural}/2m$ | Kinetic energy as a biquaternion norm |
 | $\tilde{Ξ}_{2\pi\vec\nu_\Phi} = \xi \exp(i\theta_{\mathrm{pwp}})$ | Plane wave; $\xi \in \mathbb{B}\tilde\Pi_{\mathrm{id}}$ constant |
 | $\omega(\vec\nu_\Phi) =\frac{h\,\nu_{\Phi}^{2}}{4\pi \,m}$ | Dispersion relation |
-| $\vec v_g = \partial\omega/\partial2\pi\vec\nu_\Phi =\frac{h\,2\pi\vec\nu_\Phi}{2\pi m}$ | Group velocity; classical velocity |
+| $\vec v_g = \partial\omega/\partial2\pi\vec\nu_\Phi =\frac{h\,\vec\nu_\Phi}{2\pi m}$ | Group velocity; classical velocity |
 | $\tilde\Upsilon_{\Phi} = i\omega/c\,e_t + 2\pi\vec\nu_\Phi$ | Wave four-vector in $\mathbb{B}_{\Phi}$ |
 | $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + 4\pi^{2}\nu_{\Phi}^2$ | Biquaternion norm of the wave four-vector; spacelike |
 | $\rho = 2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$ | Probability density, the Hermitian norm of the spinor |

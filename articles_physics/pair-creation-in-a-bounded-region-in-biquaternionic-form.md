@@ -91,9 +91,9 @@ $$
 which diverges as $\varepsilon^{-1/2}$. The left side of each matching condition therefore diverges while the right side stays finite, so the tangent in the even condition must diverge and the cotangent in the odd condition must vanish:
 
 $$
-\cos\bigl(\nu_{\Phi,\mathrm{w}}a\bigr)=0\quad\text{(even)},
+\cos\bigl(2\pi\nu_{\Phi,\mathrm{w}}a\bigr)=0\quad\text{(even)},
 \qquad
-\sin\bigl(\nu_{\Phi,\mathrm{w}}a\bigr)=0\quad\text{(odd)}.
+\sin\bigl(2\pi\nu_{\Phi,\mathrm{w}}a\bigr)=0\quad\text{(odd)}.
 $$
 
 Both say the same thing: the wave number in the well is an integer multiple of $\pi/(2a)$,
@@ -155,7 +155,7 @@ The second table follows the lowest even level of a well of width $2\pi\nu_mL=10
 | $0.001$ | $-0.999185$ | $8.149\times10^{-4}$ |
 | $0.0003$ | $-0.999793$ | $2.067\times10^{-4}$ |
 
-The level descends monotonically to the edge and does not jump: at $V_0^{\mathrm{cr}}$ the even condition vanishes at $E=-mc^{2}$ to $3\times10^{-10}$, and the three conditions of the threshold hold together — $\nu_{\Phi,\mathrm{ev}}=0$, $\cos(\nu_{\Phi,\mathrm{w}}a)=0$ to $-5\times10^{-15}$, and $V_0$ at its formula value. Above the threshold no even level remains in the gap: at $V_0=V_0^{\mathrm{cr}}+10^{-3}mc^{2}$ the lowest even level in the gap is $E=-0.697067\,mc^{2}$, which is the next state up, and the tracked level has left the gap for the lower continuum. The odd level behaves identically at $n_{\mathrm{w}}=2$, reaching $E=-0.999489\,mc^{2}$ at $V_0^{\mathrm{cr}}-10^{-3}mc^{2}$ with $V_0^{\mathrm{cr}}=2.181010\,mc^{2}$.
+The level descends monotonically to the edge and does not jump: at $V_0^{\mathrm{cr}}$ the even condition vanishes at $E=-mc^{2}$ to $3\times10^{-10}$, and the three conditions of the threshold hold together — $\nu_{\Phi,\mathrm{ev}}=0$, $\cos(2\pi\nu_{\Phi,\mathrm{w}}a)=0$ to $-5\times10^{-15}$, and $V_0$ at its formula value. Above the threshold no even level remains in the gap: at $V_0=V_0^{\mathrm{cr}}+10^{-3}mc^{2}$ the lowest even level in the gap is $E=-0.697067\,mc^{2}$, which is the next state up, and the tracked level has left the gap for the lower continuum. The odd level behaves identically at $n_{\mathrm{w}}=2$, reaching $E=-0.999489\,mc^{2}$ at $V_0^{\mathrm{cr}}-10^{-3}mc^{2}$ with $V_0^{\mathrm{cr}}=2.181010\,mc^{2}$.
 
 **What the crossing means.** Below the threshold the level is a normalizable state of the well, and its energy is a property of the well. At the threshold it is degenerate with the lower continuum; above it there is no normalizable state of that parity in the gap at all. The one-particle equation has not failed: it still has solutions. What has failed is that any of them is normalisable, and that the one which was normalisable is the ground state of one electron. The level has dissolved into the lower continuum, and the failure is the same one the companion article finds at the step. The difference is bookkeeping: at the step the pair leaves as a current and the account is closed at infinity, and here the positron leaves while the electron is held, so the account is closed by the charge of the region.
 
@@ -223,7 +223,7 @@ the temporal coefficient on the left and the spatial part on the right. The elec
 $$
 E\;\longmapsto\;E-ϙ\xi,
 \qquad\text{hence}\qquad
-2\pi\nu_t^{\prime}=\frac{E}{h\,c}\;\longmapsto\;\frac{(E-ϙ\xi)}{h\,c},
+\nu_t^{\prime}=\frac{E}{h\,c}\;\longmapsto\;\frac{(E-ϙ\xi)}{h\,c},
 $$
 
 a shift of the left side of the mass shell by a central scalar. The companion article writes the same shift as an exchange $\omega\mapsto\omega-\frac{2\pi ϙ\,\xi}{h}$ of its frequency, and the two are the same statement with the energy and the frequency interchanged. A shift there moves the state along the two-rooted shell and can carry it past the point where the sign of $\nu_t^{\prime}$ is reversed; the companion article computes that reversal at the step, and this article computes it at the wall. The threshold of a bounded region is the same shift read on a bound level: the level is the value of $\nu_t^{\prime}$ at which the state fits the well and decays outside, and the shift drags that value down to $-\nu_m$.
@@ -288,7 +288,7 @@ The mass step is the bag-model mechanism of Bardeen, Chanowitz, Drell, Weinstein
 
 A well of depth $V_0$ and width $L$ in the electrostatic potential is the Klein step with a finite region. The reduced Dirac pair is matched at the two walls, and the even and odd conditions are $\frac{\nu_{\Phi,\mathrm{ev}}}{E+mc^{2}}=\frac{\nu_{\Phi,\mathrm{w}}\tan(\nu_{\Phi,\mathrm{w}}a)}{E+V_0+mc^{2}}$ and $\frac{\nu_{\Phi,\mathrm{ev}}}{E+mc^{2}}=-\frac{\nu_{\Phi,\mathrm{w}}\cot(\nu_{\Phi,\mathrm{w}}a)}{E+V_0+mc^{2}}$, with $2\pi\nu_{\Phi,\mathrm{w}}=\frac{2\pi \sqrt{(E+V_0)^{2}-m^{2}c^{4}}}{h c}$ and $2\pi\nu_{\Phi,\mathrm{ev}}=\frac{2\pi \sqrt{m^{2}c^{4}-E^{2}}}{h c}$.
 
-At the lower edge of the gap the left side diverges and the conditions reduce to $\cos(\nu_{\Phi,\mathrm{w}}a)=0$ and $\sin(\nu_{\Phi,\mathrm{w}}a)=0$, that is $2\pi\nu_{\Phi,\mathrm{w}}a=n_{\mathrm{w}}\pi/2$, and the threshold depth is
+At the lower edge of the gap the left side diverges and the conditions reduce to $\cos(2\pi\nu_{\Phi,\mathrm{w}}a)=0$ and $\sin(2\pi\nu_{\Phi,\mathrm{w}}a)=0$, that is $2\pi\nu_{\Phi,\mathrm{w}}a=n_{\mathrm{w}}\pi/2$, and the threshold depth is
 
 $$
 V_0^{\mathrm{cr}}=mc^{2}\left[1+\sqrt{1+\left(\frac{n_{\mathrm{w}}\pi}{2\pi\nu_mL}\right)^{2}}\;\right],
@@ -319,7 +319,7 @@ In a step the created pair leaves as a current and no level holds the imbalance.
 | $N(V_0,L)=\lfloor\frac{2\pi\nu_mL}{\pi}\sqrt{(V_0/mc^{2}-1)^{2}-1}\rfloor$ | Number of levels that have crossed into the lower continuum; zero for $V_0\le2mc^{2}$ |
 | $L_{\min}=\frac{\pi h c}{2\pi \sqrt{V_0^{2}-2V_0\,mc^{2}}}$ | Least width at which one level dives at fixed depth; the $n_{\mathrm{w}}$-th dive is at $n_{\mathrm{w}}L_{\min}$ |
 | $\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=-\nu_m^{2}$, $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$ | Mass shell, split into its two sides |
-| $2\pi\nu_t^{\prime}=\frac{E}{h\,c}$, $\nu_{\Phi}=\frac{p}{h}$ | Temporal coefficient and momentum wave number |
+| $\nu_t^{\prime}=\frac{E}{h\,c}$, $\nu_{\Phi}=\frac{p}{h}$ | Temporal coefficient and momentum wave number |
 | $\vec\nabla_\Phi\pm\frac{2\pi m\,\omega}{h}\vec r$ | The two non-minimal shifts of the oscillator, written out |
 | $\mathcal Q_{+}\mathcal Q_{-}\ge0$ | Oscillator identity: the gap is empty at every frequency |
 | $\omega$ | Oscillator frequency, a real scalar; the pseudoscalar $\omega=-\vec e_z$ of the algebra is not used here |

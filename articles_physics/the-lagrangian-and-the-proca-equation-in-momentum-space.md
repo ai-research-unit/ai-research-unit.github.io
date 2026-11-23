@@ -27,7 +27,7 @@ $$
 \qquad
 2\pi\nu_t'=\frac{\omega}{c},
 \qquad
-k^{2}=2\pi\nu_t'^{2}-2\pi\vec\nu_\Phi^{2}.
+k^{2}=4\pi^{2}\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}.
 $$
 
 The parent's action is quoted once and not re-derived:
@@ -183,7 +183,7 @@ The variation along $\nu_{\imath}$ is $\partial\mathcal{Q}/\partial\lambda=2\lam
 
 ## The Structural Consequence: The Trace Is the Mass
 
-$\mathrm{tr}\,\sigma=4(k^{2}-4\pi^{2}\nu_m^{2})-k^{2}=3k^{2}-44\pi^{2}\nu_m^{2}$, which at $k^{2}=4\pi^{2}\nu_m^{2}$ is $-\nu_m^{2}$ exactly. So on the mass shell the symbol's trace is the mass and nothing else, independent of the wave vector, the frequency and the direction.
+$\mathrm{tr}\,\sigma=4(k^{2}-4\pi^{2}\nu_m^{2})-k^{2}=3k^{2}-16\pi^{2}\nu_m^{2}$, which at $k^{2}=4\pi^{2}\nu_m^{2}$ is $-\nu_m^{2}$ exactly. So on the mass shell the symbol's trace is the mass and nothing else, independent of the wave vector, the frequency and the direction.
 
 The variational parent proves $T_{\imath\imath}=-4\pi^{2}\nu_m^{2}\langle\tilde A_\Phi\rangle_\natural$ exactly, and observes that the field terms' contributions cancel because $\delta_{\imath\imath}=4$. The symbol's trace carries the same cancellation: the four diagonal entries of $k^{2}-\nu_m^{2}$ minus the one from the rank-one part give three of the former and one of the latter, which is the four-minus-one count in the trace.
 
@@ -223,14 +223,14 @@ The constraint is that coefficient. Varying along $\nu_{\imath}$ gives $\nu_m^{2
 
 The coefficient of $A_0^{2}$ is $\tfrac12(\vec\nu_\Phi^{2}+\nu_m^{2})$, with no $\omega^{2}$: $0.315000000$ at all three frequencies, while the three spatial coefficients move from $-0.145$ to $+0.45$ to $+1.73$. The absent power is the primary constraint, and the coupling cannot add one because $F_{0\eta}$ contains no $\partial_0A_0$.
 
-The form degenerates exactly where the symbol is singular and where the propagator has its pole, and the degeneracy is partial: rank one on the shell, which is the three polarisations. On the shell the symbol's trace is $3k^{2}-44\pi^{2}\nu_m^{2}=-4\pi^{2}\nu_m^{2}$, the same mass the parent's $T_{\imath\imath}=-4\pi^{2}\nu_m^{2}\langle\tilde A_\Phi\rangle_\natural$ carries, and it vanishes only at $k^{2}=\tfrac434\pi^{2}\nu_m^{2}$, which is not physical.
+The form degenerates exactly where the symbol is singular and where the propagator has its pole, and the degeneracy is partial: rank one on the shell, which is the three polarisations. On the shell the symbol's trace is $3k^{2}-16\pi^{2}\nu_m^{2}=-4\pi^{2}\nu_m^{2}$, the same mass the parent's $T_{\imath\imath}=-4\pi^{2}\nu_m^{2}\langle\tilde A_\Phi\rangle_\natural$ carries, and it vanishes only at $k^{2}=\tfrac434\pi^{2}\nu_m^{2}$, which is not physical.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 | --- | --- |
 | $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | The four-wave number; $2\pi\nu_t'=\omega/c$ |
-| $k^{2}=2\pi\nu_t'^{2}-2\pi\vec\nu_\Phi^{2}$ | The interval in wave numbers |
+| $k^{2}=4\pi^{2}\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}$ | The interval in wave numbers |
 | $\nu_m=\frac{mc}{h}$ | The mass wave number |
 | $[kA]=2\pi\nu_t'a_t'-2\pi\vec\nu_\Phi\cdot\vec a$ | The Lorenz form of the amplitude; the parent's $S$ up to $-i$ |
 | $\mathcal{Q}(A)=\tfrac12\{[kA]^{2}-(k^{2}-4\pi^{2}\nu_m^{2})A\!\cdot\!A\}$ | The momentum-space quadratic form |

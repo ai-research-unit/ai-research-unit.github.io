@@ -83,16 +83,16 @@ The middle column repays one sentence of care. The spin factor of the companion 
 Read $\mathcal S_L$ as an element. Its denominator is central and real off the mass shell, so it multiplies the scale, shifts the angle, and does nothing else. The numerator $\tilde\Upsilon_{\Phi}-i\nu_m$ carries the frame. Its norm is a real number,
 
 $$
-\bigl\langle\tilde\Upsilon_{\Phi}-i\nu_m\bigr\rangle_{\natural}=|\vec\nu_{\Phi}|^{2}-\bigl(k'_{t}-\nu_m\bigr)^{2},
+\bigl\langle\tilde\Upsilon_{\Phi}-i\nu_m\bigr\rangle_{\natural}=|\vec\nu_{\Phi}|^{2}-\bigl(\nu'_{t}-\nu_m\bigr)^{2},
 \qquad
-\tilde\Upsilon_{\Phi}=ik'_{t}e_t+\vec\nu_{\Phi},
+\tilde\Upsilon_{\Phi}=i\nu'_{t}e_t+\vec\nu_{\Phi},
 $$
 
 and it is indefinite: positive far above the mass shell, negative just below it. The kernel's angle, which is half the argument of a real number, is therefore one of two values, and not a dynamical phase. Half of an argument in $(-\pi,\pi]$ lies in the word's own range $(-\pi/2,\pi/2]$, so a positive norm gives the angle $0$ and a negative norm gives $\pi/2$; the side of the mass shell decides between the two, and nothing else does.
 
 | factor | value for $\mathcal S_L$ | what fixes it |
 | --- | --- | --- |
-| scale $\varrho$ | $\bigl||\vec\nu_{\Phi}|^{2}-(k'_{t}-\nu_m)^{2}\bigr|^{1/2}\big/\bigl|\nu_m^{2}+\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}\bigr|$ | the numerator's norm and the denominator |
+| scale $\varrho$ | $\bigl||\vec\nu_{\Phi}|^{2}-(\nu'_{t}-\nu_m)^{2}\bigr|^{1/2}\big/\bigl|\nu_m^{2}+\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}\bigr|$ | the numerator's norm and the denominator |
 | angle $\theta_{\mathrm{pha}}$ | $0$ or $\pi/2$ | the sign of the numerator's norm times the sign of the denominator |
 | rapidity $\theta_{\mathrm{rpd}}$ and axis $\vec u_{\mathrm b}$ | the frame's rapidity, the axis reversed | the momentum's boost |
 | rotor angle $\theta_{\mathrm{axr}}$ and axis $\vec u_{\mathrm r}$ | non-trivial in $100$ of $100$ samples | the mass reversal composed with the frame |
@@ -113,7 +113,7 @@ $$
 =4\nu_m^{2}\sinh^{2}\frac{\theta_{\mathrm{rpd}}}{2}.
 $$
 
-*Proof.* Writing $\tilde\Upsilon_{\Phi}=i\nu_m\bigl(\cosh\theta_{\mathrm{rpd}}-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}\bigr)$ and subtracting $ik_m$ gives $i\nu_m(\cosh\theta_{\mathrm{rpd}}-1)+\nu_m\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, which is $2\nu_m\sinh(\theta_{\mathrm{rpd}}/2)$ times $\bigl(i\sinh(\theta_{\mathrm{rpd}}/2)+\cosh(\theta_{\mathrm{rpd}}/2)\,\vec u_{\mathrm b}\bigr)$. That bracket is $\tilde U_{\Psi,\mathrm b}^{-1}\vec u_{\mathrm b}$, since $\vec u_{\mathrm b}^{2}=-e_t$. The norm follows from the same line, the two cross terms cancelling because a central element commutes.
+*Proof.* Writing $\tilde\Upsilon_{\Phi}=2\pi i\nu_m\bigl(\cosh\theta_{\mathrm{rpd}}-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}\bigr)$ and subtracting $2\pi i\nu_m$ gives $2\pi i\nu_m(\cosh\theta_{\mathrm{rpd}}-1)+2\pi\nu_m\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, which is $4\pi\nu_m\sinh(\theta_{\mathrm{rpd}}/2)$ times $\bigl(i\sinh(\theta_{\mathrm{rpd}}/2)+\cosh(\theta_{\mathrm{rpd}}/2)\,\vec u_{\mathrm b}\bigr)$. That bracket is $\tilde U_{\Psi,\mathrm b}^{-1}\vec u_{\mathrm b}$, since $\vec u_{\mathrm b}^{2}=-e_t$. The norm follows from the same line, the two cross terms cancelling because a central element commutes.
 
 The identity is checked to $4\times10^{-15}$ over one hundred boosts, and its right side has two readings. The numerator is a real scalar times an invertible element. The scalar is the mass times the half-sine of the rapidity, so it vanishes at rest; the unit is the frame's own element with its axis reversed. The kernel's word is the word of an invertible element times a real number, and the number is zero at rest.
 
@@ -293,7 +293,7 @@ None of this is a new integral. It is the companion's integral read in the coord
 | $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ | Frame factor; a four-vector carries $\mathcal B_{\Psi}$ |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | Gradient and its quaternion conjugate |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
-| $\tilde\Upsilon_{\Phi}=\frac{\tilde P_{\Phi}}{h}=ik'_{t}e_t+2\pi\vec\nu_{\Phi}$ | Wave biquaternion |
+| $\tilde\Upsilon_{\Phi}=\frac{\tilde P_{\Phi}}{h}=i\nu'_{t}e_t+\vec\nu_{\Phi}$ | Wave biquaternion |
 | $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=N/\frac{h^{2}}{4\pi^{2}}$ | Mass-shell scalar |
 | $\mathcal S_L$, $\mathcal S_R$ | The two components of the Dirac propagator |
 | $\theta_{\mathrm{act}}=\frac{2\pi S}{h}$ | Angle of a path's weight |

@@ -43,9 +43,9 @@ is central, so the stationary equation $H\tilde{Ξ}=E\tilde{Ξ}$ reduces to the 
 For a scattering state of energy $E=\frac{h^{2}\,4\pi^{2}\nu_{\Phi}^{2}}{8\pi^{2}\,m}>0$ the natural dimensionless coupling is the **Coulomb parameter**
 
 $$
-\eta=\frac{(2\pi)^{2} m\,\alpha}{h^{2}\,2\pi\nu_{\Phi}}=\frac{2\pi \alpha}{h\,v},
+\eta=\frac{2\pi m\,\alpha}{h^{2}\,\nu_{\Phi}}=\frac{2\pi \alpha}{h\,v},
 \qquad
-v=c\,2\pi\nu_{\Phi}/\nu_m,
+v=c\,\nu_{\Phi}/\nu_m,
 $$
 
 the Coulomb energy at the de Broglie wavelength measured in units of the kinetic energy. It is the single dimensionless number that controls the whole problem: $\eta\to0$ is the high-energy or weak-coupling limit, in which the Born approximation becomes accurate, and $|\eta|\gg1$ is the semiclassical or strong-coupling regime. For like charges $\eta>0$ and the potential is repulsive; for opposite charges $\eta<0$ and it is attractive. In the biquaternion interpretation $\eta$ is a central real scalar built from the central quantities $m,\alpha,\frac{h}{2\pi},\nu_{\Phi}$; it is not an algebra-valued object, and it enters every phase below as a scalar.
@@ -72,7 +72,7 @@ In the dimensionless variable $\rho=kr$ this is the **Coulomb wave equation**
 $$
 \frac{d^2u_l}{d\rho^2}+\left[1-\frac{2\eta}{\rho}-\frac{l(l+1)}{\rho^2}\right]u_l=0 ,
 \qquad
-\eta=\frac{(2\pi)^{2} m\,\alpha}{h^{2}\,2\pi\nu_{\Phi}},
+\eta=\frac{2\pi m\,\alpha}{h^{2}\,\nu_{\Phi}},
 $$
 
 the same equation that the hydrogen article solves for bound states, now at positive energy. The angular momentum barrier $l(l+1)/\rho^2$ and the Coulomb term $-2\eta/\rho$ are both central scalars; the module does not enter the equation. The reduction of a three-dimensional central problem to a one-dimensional radial equation is thus a reduction of the scalar envelope, and the biquaternion state is the product of that envelope with a constant module element.
@@ -154,7 +154,7 @@ $$
 whose squared modulus is
 
 $$
-\left|f_C(\theta_{\mathrm{sct}})\right|^2=\frac{\eta^2}{44\pi^{2}\nu_{\Phi}^2\sin^4(\theta_{\mathrm{sct}}/2)},
+\left|f_C(\theta_{\mathrm{sct}})\right|^2=\frac{\eta^2}{16\pi^{2}\nu_{\Phi}^2\sin^4(\theta_{\mathrm{sct}}/2)},
 $$
 
 independent of the phases. The differential cross section is $d\sigma/d\Omega=|f|^2$, and the flux factors are the standard ones for a central potential.
@@ -166,13 +166,13 @@ In the biquaternion interpretation, the amplitude $f(\theta_{\mathrm{sct}})$ is 
 The Coulomb parameter and the wave vector combine as
 
 $$
-\frac{\eta^2}{4\nu_{\Phi}^2}=\frac{m^{2}\,\alpha^{2}}{4\,\frac{h^{4}}{(2\pi)^{4}}\,\nu_{\Phi}^{4}}=\frac{\alpha^2}{16E^2},
+\frac{\eta^2}{16\pi^{2}\nu_{\Phi}^2}=\frac{m^{2}\,\alpha^{2}}{4\,\frac{h^{4}}{(2\pi)^{4}}\,\nu_{\Phi}^{4}}=\frac{\alpha^2}{16E^2},
 $$
 
 and therefore
 
 $$
-\boxed{\;\frac{d\sigma}{d\Omega}=\frac{\eta^2}{44\pi^{2}\nu_{\Phi}^2\sin^4(\theta_{\mathrm{sct}}/2)}
+\boxed{\;\frac{d\sigma}{d\Omega}=\frac{\eta^2}{16\pi^{2}\nu_{\Phi}^2\sin^4(\theta_{\mathrm{sct}}/2)}
 =\frac{(Z_1Z_2e^2)^2}{16E^2\sin^4(\theta_{\mathrm{sct}}/2)}\;},
 $$
 
@@ -285,7 +285,7 @@ The logarithmic phase is the non-relativistic analogue of an infrared divergence
 
 ## Summary
 
-The Coulomb problem in the biquaternion framework is the central Hamiltonian $H=[-\frac{h^{2}}{8\pi^{2}\,m}\Delta_\Phi+\alpha/r]e_t$ with $\alpha=Z_1Z_2e^2$ and Coulomb parameter $\eta=\frac{(2\pi)^{2} m\,\alpha}{h^{2}\,2\pi\nu_{\Phi}}=\frac{2\pi \alpha}{h\,v}$. The stationary equation reduces to the scalar envelope, and the partial-wave decomposition is a decomposition of that scalar; the amplitude and all phases are central. The radial equation is the Coulomb wave equation
+The Coulomb problem in the biquaternion framework is the central Hamiltonian $H=[-\frac{h^{2}}{8\pi^{2}\,m}\Delta_\Phi+\alpha/r]e_t$ with $\alpha=Z_1Z_2e^2$ and Coulomb parameter $\eta=\frac{2\pi m\,\alpha}{h^{2}\,\nu_{\Phi}}=\frac{2\pi \alpha}{h\,v}$. The stationary equation reduces to the scalar envelope, and the partial-wave decomposition is a decomposition of that scalar; the amplitude and all phases are central. The radial equation is the Coulomb wave equation
 
 $$
 \frac{d^2u_l}{dr^2}+\left[1-\frac{2\eta}{\rho}-\frac{l(l+1)}{\rho^2}\right]u_l=0,
@@ -314,7 +314,7 @@ The biquaternion content is centrality: the potential couples only to the scalar
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong\mathbb{C}^2$ | State module |
 | $V(r)=\alpha/r$, $\alpha=Z_1Z_2e^2$ | Coulomb potential, central |
-| $\eta=\frac{(2\pi)^{2} m\,\alpha}{h^{2}\,2\pi\nu_{\Phi}}=\frac{2\pi \alpha}{h\,v}$ | Coulomb parameter |
+| $\eta=\frac{2\pi m\,\alpha}{h^{2}\,\nu_{\Phi}}=\frac{2\pi \alpha}{h\,v}$ | Coulomb parameter |
 | $u_l=rR_l$ | Reduced radial function |
 | $\rho=kr$ | Dimensionless radius |
 | $F_l(\eta,\rho)$ | Regular Coulomb function |

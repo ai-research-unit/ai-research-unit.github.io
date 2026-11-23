@@ -195,7 +195,7 @@ $$
 \left(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}- (2\pi\nu_m)^{2}\right)\tilde{Ξ} = 0.
 $$
 
-Here $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ is the d'Alembertian in the biquaternion form, and $\nu_m = \frac{m\,c}{h}$ is the mass wave number, with $\frac{h}{2\pi}$ the reduced Planck constant. Expanding,
+Here $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ is the d'Alembertian in the biquaternion form, and $\nu_m = \frac{m\,c}{h}$ is the mass wave number, with $\frac{h}{2\pi}$ the action of one radian of phase. Expanding,
 
 $$
 \Box_\Phi\tilde{Ξ} = (2\pi\nu_m)^{2}\tilde{Ξ},

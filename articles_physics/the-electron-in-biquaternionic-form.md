@@ -14,7 +14,7 @@ $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R} = 0, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 0,
 $$
 
-one equation per value of the chirality. Each part satisfies the Klein–Gordon equation $(\Box_\Phi - 4\pi^{2}\nu_{m_e}^{2})\tilde{Ξ}_{L,R} = 0$, with $\frac{h}{2\pi}$ and $c$ restored. The algebra's real structure is the involution $\flat=-{}^{*}$ (*Algebra and Element Conventions*); it is a map of the algebra and not of a carrier, and it is not the mass term. Here $1/\nu_{m_e}=\frac{h}{2\pi m_ec}$ is the mass length.
+one equation per value of the chirality. Each part satisfies the Klein–Gordon equation $(\Box_\Phi - 4\pi^{2}\nu_{m_e}^{2})\tilde{Ξ}_{L,R} = 0$, with $\frac{h}{2\pi}$ and $c$ restored. The algebra's real structure is the involution $\flat=-{}^{*}$ (*Algebra and Element Conventions*); it is a map of the algebra and not of a carrier, and it is not the mass term. Here $1/(2\pi\nu_{m_e})=\frac{h}{2\pi m_ec}$ is the mass length.
 
 A framework that reformulates known physics can be read in two very different ways. Read generously, every correct statement about the electron becomes a statement the framework "contains"; read carefully, most of those statements are properties of the Dirac equation that the framework merely transcribes, and the specific numbers attached to the electron must be inserted by hand. This article takes the second interpretation and asks a single question: **which properties of the electron are consequences of the biquaternion structure, which are consequences of the Dirac equation the framework contains, which are parameters inserted from outside, and which lie outside the framework altogether?**
 
@@ -69,8 +69,8 @@ so $\flat$ acts as $-1$ on the $\mathbb{B}_{\Psi}$ part and $+1$ on the $\mathbb
 **It sets the rate at which the two sectors rotate into one another.** Factoring the rest energy out of a free plane wave gives
 
 $$
-\exp\!\Big(-c\,\nu_m\,i\,r'_{t}\Big)
-= \cos\!\Big(c\,\nu_m\,r'_{t}\Big)e_t - \sin\!\Big(c\,\nu_m\,r'_{t}\Big)(ie_t),
+\exp\!\Big(-2\pi c\,\nu_m\,i\,r'_{t}\Big)
+= \cos\!\Big(2\pi c\,\nu_m\,r'_{t}\Big)e_t - \sin\!\Big(2\pi c\,\nu_m\,r'_{t}\Big)(ie_t),
 $$
 
 where the right-hand side uses only $i^2=-1$ and $e_t=1$: expanding the exponential, $\exp(-i\theta_{\mathrm{rst}})=e_t-i\theta_{\mathrm{rst}}e_t-\tfrac12\theta_{\mathrm{rst}}^2e_t+\cdots$ with $\theta_{\mathrm{rst}}=c\,2\pi\nu_{m_e}r'_t$ and collecting the real and imaginary parts gives the cosine and the sine. Here $e_t\in\mathbb{B}_{\Psi}$ and $ie_t\in\mathbb{B}_{\Phi}$ (an imaginary scalar is anti-Hermitian). The rest-energy phase is central, and because $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ it is a rotation between the sectors at angular frequency $ck_{m_e}$: it takes the $\mathbb{B}_{\Psi}$ direction $e_t$ toward the $\mathbb{B}_{\Phi}$ direction $ie_t$ and back. The mass sets this scale — the frequency is $ck_{m_e}$ — through the mass shell. This is the sense in which the electron's mass, in the framework, *is* the rate of the rotation between the material and informational subspaces.
@@ -128,10 +128,10 @@ The electron's relativistic dynamics is the chirality pair $\tilde\nabla_\Phi\ti
 
 $$
 \tilde\Upsilon_{\Phi} = i\,\frac{\omega}{c}\,e_t + 2\pi\vec\nu_\Phi, \qquad
-\langle\tilde\Upsilon_{\Phi}\rangle_{\natural} = \tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural} = -\frac{\omega^2}{c^2} + 2\pi\vec\nu_\Phi^2 = -4\pi^{2}\nu_{m_e}^{2},
+\langle\tilde\Upsilon_{\Phi}\rangle_{\natural} = \tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural} = -\frac{\omega^2}{c^2} + 4\pi^{2}\nu_{\Phi}^{2} = -4\pi^{2}\nu_{m_e}^{2},
 $$
 
-with $\vec\nu_\Phi^2$ the Euclidean square $\nu_{x}^2+\nu_{y}^2+\nu_{z}^2$, which is what the norm of a vector part produces. This is $E^2 = \vec p^2c^2 + m_e^2c^4$ under $E =hf_{\mathrm{frq}}$, $\vec p =h\,2\pi\vec\nu_\Phi$, and it is the form used by the companion solutions article and by the parent Dirac article. Here $\nu_{\Phi}=\frac{p}{h}$ is the momentum wave number.
+with $\vec\nu_\Phi^2$ the Euclidean square $\nu_{x}^2+\nu_{y}^2+\nu_{z}^2$, which is what the norm of a vector part produces. This is $E^2 = \vec p^2c^2 + m_e^2c^4$ under $E =hf_{\mathrm{frq}}$, $\vec p =h\,\vec\nu_\Phi$, and it is the form used by the companion solutions article and by the parent Dirac article. Here $\nu_{\Phi}=\frac{p}{h}$ is the momentum wave number.
 
 **Antiparticle.** The two frequency branches are exchanged by charge conjugation, and in the quantized interpretation the negative-frequency branch describes the positron. The framework represents the electron and the positron on the same algebraic footing; which branch is called the electron is fixed by the charge convention of the previous section, not by the algebra.
 
@@ -174,7 +174,7 @@ The two are related by an explicit real-linear dictionary, not by an identity of
 The Dirac description yields one celebrated number. Carrying the biquaternion Dirac equation to the non-relativistic regime — the computation is performed in the companion solutions article and its exercise — eliminates the small part and leaves the Pauli equation with the spin term. That term is the Hermitian element
 
 $$
--\frac{ϙ c1/\nu_{m_e}}{2}\,i\,\vec B \in \mathbb{B}_{\Psi} .
+-\frac{ϙ c}{4\pi\nu_{m_e}}\,i\,\vec B \in \mathbb{B}_{\Psi} .
 $$
 
 Writing the coupling as $-\vec\mu\cdot\vec B$ identifies $\vec\mu = (ϙ/m_e)\vec S$, with the spin components $\tilde S_{\Psi,\eta} =\frac{h}{4\pi}i\vec e_\eta$, which is $\vec\mu = g\,(ϙ/2m_e)\vec S$ with
@@ -189,7 +189,7 @@ $$
 \boxed{\;\vec\mu_e = -\frac{e}{m_e}\vec S = -g\,\frac{e}{2m_e}\vec S, \qquad g = 2\;},
 $$
 
-of magnitude one Bohr magneton $\mu_B = ec\dfrac{1}{2\,2\pi\nu_{m_e}} = 9.274010\times10^{-24}$ J T$^{-1}$ when $\vec S$ is aligned with $\vec B$.
+of magnitude one Bohr magneton $\mu_B = ec\dfrac{1}{4\pi\nu_{m_e}} = 9.274010\times10^{-24}$ J T$^{-1}$ when $\vec S$ is aligned with $\vec B$.
 
 Two qualifications belong with the result. First, the derivation is the standard Dirac one, transcribed; the biquaternion form supplies the compact notation and the sector interpretation of the spin coupling as an $\mathbb{B}_{\Psi}$ observable, not an independent derivation. Second, $g=2$ is not an electron-specific number: it holds for any structureless spin-$\tfrac{1}{2}$ field, so it distinguishes the electron from a spin-1 particle but not from a muon.
 
@@ -197,14 +197,14 @@ Two qualifications belong with the result. First, the derivation is the standard
 
 ## Zitterbewegung: The Scale of the Mass, Not a Mark of a Sector
 
-The electron is the particle on which the Zitterbewegung was found. In the framework's own terms, the trembling is the interference of the two frequency branches, with angular frequency $2c\,\nu_t^{\prime}$ and amplitude of order $\dfrac{1}{2\,\nu_{m_e}}$. For the electron at rest these are
+The electron is the particle on which the Zitterbewegung was found. In the framework's own terms, the trembling is the interference of the two frequency branches, with angular frequency $2c\,2\pi\nu_t^{\prime}$ and amplitude of order $\dfrac{1}{4\pi\nu_{m_e}}$. For the electron at rest these are
 
 $$
-\omega_Z = 2c\,2\pi\nu_{m_e} = 1.55269\times10^{2\,1}\ \text{rad s}^{-1},
-\qquad \frac{1/\nu_{m_e}}{2} = 193.1\ \text{fm},
+\omega_Z = 2c\,2\pi\nu_{m_e} = 1.55269\times10^{21}\ \text{rad s}^{-1},
+\qquad \frac{1}{4\pi\nu_{m_e}} = 193.1\ \text{fm},
 $$
 
-half the reduced Compton wavelength $386.2$ fm. These are the standard values, reconfirmed numerically in the companion article on the Zitterbewegung. Here $2\pi\nu_t^{\prime}=\frac{E}{h\,c}$ is the energy length.
+half of one radian of the mass phase, $386.2$ fm. These are the standard values, reconfirmed numerically in the companion article on the Zitterbewegung. Here $\nu_t^{\prime}=\frac{E}{h\,c}$ is the energy length.
 
 The framework's temptation is to read the trembling as the observable face of the complexification — positive- and negative-energy branches being the two sectors. The companion article tests that identification and refutes it. The energy sign is the sign of the eigenvalue of a Hamiltonian whose terms multiply the field on the right, through the action $\tilde Q\mapsto i\tilde Q\vec e_x$, and no element of $\mathbb{B}$ does that by left multiplication, while the sectors are the two signs of the star. The two are also splits of different objects: a family of solutions and the values it takes. What survives is a relation of scale and phase: at rest the trembling frequency is exactly twice the rest-energy sector-rotation frequency $ck_{m_e}$, because the trembling phase is the square of the free-evolution phase. For the electron this means that its rest energy sets both the rate at which the sectors rotate into one another and the frequency of the trembling, without the trembling being an informational-sector effect.
 
@@ -239,7 +239,7 @@ Two facts about products carry the whole structure, and they are stated in words
 | Mass term couples the two chirality values, off-diagonally | Derived | the two-value split; the off-diagonal pair |
 | Two-sided single-equation form | Derived (dictionary) | the real-linear dictionary $F\in\mathbb{B}$; a change of representation, not of physics |
 | Rest-energy phase rotates sectors at $ck_{m_e}$ | Derived | $\exp(-i\theta_{\mathrm{rst}}) = \cos\theta_{\mathrm{rst}}\,e_t - \sin\theta_{\mathrm{rst}}\,(ie_t)$ |
-| Zitterbewegung frequency and amplitude | Derived | two-branch interference; $2c\,\nu_t^{\prime}$, $\dfrac{1}{2\,\nu_{m_e}}$ |
+| Zitterbewegung frequency and amplitude | Derived | two-branch interference; $2c\,2\pi\nu_t^{\prime}$, $\dfrac{1}{4\pi\nu_{m_e}}$ |
 | Mass value $m_e$ | Represented | parameter of the equation |
 | Charge value $e$, sign convention, quantisation | Represented | minimal coupling; no derivation in the framework |
 | Electron/positron labelling | Represented | charge convention; charge conjugation is a symmetry |
@@ -300,9 +300,9 @@ The contraction sums follow from the squares. No index is raised: the summed ind
 
 ## Summary
 
-The electron is the biquaternion Dirac field $\tilde{Ξ}\in\mathbb{B}$: one element whose two chirality parts satisfy the pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_{m_e}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_{m_e}\tilde{Ξ}_{R}$. The mass is the coefficient of the off-diagonal coupling of the two values; the algebra's real structure $\flat={}-{}^{*}$ acts on the two sectors with opposite signs; and the rest-energy phase $\exp(-i\theta_{\mathrm{rst}}) = \cos(r'_t/(1/\nu_{m_e}))e_t - \sin(r'_t/(1/\nu_{m_e}))(ie_t)$ rotates the two sectors into one another at $ck_{m_e}$. The charge is inserted at the gradient by minimal coupling, which for the linear mass pair is exactly gauge covariant; the conserved current then lies in $\mathbb{B}_{\Phi}$, while the static Coulomb field of a point charge is a purely imaginary vector and lies in $\mathbb{B}_{\Psi}$.
+The electron is the biquaternion Dirac field $\tilde{Ξ}\in\mathbb{B}$: one element whose two chirality parts satisfy the pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_{m_e}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_{m_e}\tilde{Ξ}_{R}$. The mass is the coefficient of the off-diagonal coupling of the two values; the algebra's real structure $\flat={}-{}^{*}$ acts on the two sectors with opposite signs; and the rest-energy phase $\exp(-i\theta_{\mathrm{rst}}) = \cos(2\pi\nu_{m_e}r'_t)e_t - \sin(2\pi\nu_{m_e}r'_t)(ie_t)$ rotates the two sectors into one another at $ck_{m_e}$. The charge is inserted at the gradient by minimal coupling, which for the linear mass pair is exactly gauge covariant; the conserved current then lies in $\mathbb{B}_{\Phi}$, while the static Coulomb field of a point charge is a purely imaginary vector and lies in $\mathbb{B}_{\Psi}$.
 
-The framework derives the electron's spin-$\tfrac{1}{2}$ representation content from the unique irreducible action of $\mathbb{B}\cong M_2(\mathbb{C})$ on a complex space of dimension two, and the spin state and observable structure from the state of $\mathbb{B}_{\Psi}$ with the Born pairing; the magnitude $\frac{h}{4\pi}$ is a normalisation. It derives the tree-level gyromagnetic factor $g=2$ from the $1/2m_e$ coefficient produced by eliminating the small part, giving $\vec\mu_e = -(e/m_e)\vec S$ and one Bohr magneton $\mu_B = ec\dfrac{1}{2\,2\pi\nu_{m_e}} = 9.274010\times10^{-24}$ J T$^{-1}$; the anomalous part $a\approx\alpha/2\pi$ is outside the equation. It reproduces the Zitterbewegung at $\omega_Z = 2ck_{m_e} = 1.55269\times10^{21}$ rad s$^{-1}$ and amplitude $\frac{h}{4\pi \,m_{e}\,c}= 193.1$ fm, and the companion article's test shows the trembling is the second harmonic of the sector rotation, not a mark of either sector. It contains the two values of the chirality and the mass term as the chirality-mixing coupling, but not the weak $V-A$ coupling of the left-handed electron.
+The framework derives the electron's spin-$\tfrac{1}{2}$ representation content from the unique irreducible action of $\mathbb{B}\cong M_2(\mathbb{C})$ on a complex space of dimension two, and the spin state and observable structure from the state of $\mathbb{B}_{\Psi}$ with the Born pairing; the magnitude $\frac{h}{4\pi}$ is a normalisation. It derives the tree-level gyromagnetic factor $g=2$ from the $1/2m_e$ coefficient produced by eliminating the small part, giving $\vec\mu_e = -(e/m_e)\vec S$ and one Bohr magneton $\mu_B = ec\dfrac{1}{4\pi\nu_{m_e}} = 9.274010\times10^{-24}$ J T$^{-1}$; the anomalous part $a\approx\alpha/2\pi$ is outside the equation. It reproduces the Zitterbewegung at $\omega_Z = 2ck_{m_e} = 1.55269\times10^{21}$ rad s$^{-1}$ and amplitude $\frac{h}{4\pi \,m_{e}\,c}= 193.1$ fm, and the companion article's test shows the trembling is the second harmonic of the sector rotation, not a mark of either sector. It contains the two values of the chirality and the mass term as the chirality-mixing coupling, but not the weak $V-A$ coupling of the left-handed electron.
 
 The electron's data are not confined to either sector: state-like and field-strength-like data are $\mathbb{B}_{\Psi}$, current is $\mathbb{B}_{\Phi}$, the real structure $\flat$ acts on the two sectors with opposite signs while the mass term couples the two chirality values, and the rest-energy phase rotates the sectors into one another. What the framework cannot supply is the electron's mass, its charge, its anomalous moment, its empirical test, and any reason to single it out among spin-$\tfrac{1}{2}$ fields. Those are the labelled gaps, and they are not closed by the notation.
 
@@ -330,9 +330,9 @@ The electron's data are not confined to either sector: state-like and field-stre
 | $\tilde{F} = iϙ\vec u_x/(4\pi\sqrt{\epsilon}\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|^2)$ | Coulomb field of a point charge, in $\mathbb{B}_{\Psi}$; $\vec u_x$ the radial unit vector |
 | $\tilde\Upsilon_{\Phi} = i(\omega/c)\,e_t + 2\pi\vec\nu_\Phi$ | Four-wavevector |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign weights of the $\mathbb{B}_{\Phi}$ frame; metric in the closing section |
-| $m_e$, $e$, $\frac{h}{2\pi}$, $c$ | Electron mass, elementary charge, reduced Planck constant, speed of light |
+| $m_e$, $e$, $\frac{h}{2\pi}$, $c$ | Electron mass, elementary charge, the action of one radian of phase, speed of light |
 | $\mathcal{N}F = (i\partial/\partial r'_t+\vec\nabla_\Phi)F - 2\pi\nu_{m_e}i\,\overline{F}\,\vec e_z$, $\vec\nabla_\Phi=\sum_\eta\vec e_\eta\partial/\partial R_\eta$ | Two-sided Dirac equation of the dictionary form |
-| $g$, $\mu_B = ec\dfrac{1}{2\,2\pi\nu_{m_e}}$ | Gyromagnetic factor; Bohr magneton |
+| $g$, $\mu_B = ec\dfrac{1}{4\pi\nu_{m_e}}$ | Gyromagnetic factor; Bohr magneton |
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\Gamma = -iR_{\mathrm{axf},\vec e_z}$ | Central chirality grading and its representative; closing section |
 | $L_a$, $R_b$, $T_{a,b}=L_aR_b$ | Left and right multiplication and their basis operator; closing section |
 | $C = -iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_z}$ | Charge-conjugation basis operator; closing section |

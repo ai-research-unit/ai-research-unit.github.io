@@ -12,7 +12,7 @@ What that removes is a partition, not a wave. *The Quantum–Classical Divide in
 
 On the algebra, no. The algebra carries no $\frac{h}{2\pi}$. It carries $\nu_m$, which is $\frac{2\pi m\,c}{h}$. A limit on $\frac{h}{2\pi}$ at fixed mass is a limit on $1/\nu_m$, which deepens the mass term instead of removing it.
 
-The conventions are those of the companions: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, wave-number biquaternion $\tilde\Upsilon_{\Phi}=i\nu_t^{\prime}e_{t}+\vec\nu_{\Phi}$, where $2\pi\nu_t^{\prime}=\frac{E}{h\,c}$, $2\pi\vec\nu_{\Phi}=\frac{\vec p}{h}$ and $-\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=\nu_m^{2}$, the three numbers of *The Three Wavenumbers of a Particle*. Throughout, $\nu_m=\frac{m\,c}{h}$, and $L$ is supplied by the problem.
+The conventions are those of the companions: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, wave-number biquaternion $\tilde\Upsilon_{\Phi}=i\nu_t^{\prime}e_{t}+\vec\nu_{\Phi}$, where $\nu_t^{\prime}=\frac{E}{h\,c}$, $\vec\nu_{\Phi}=\frac{\vec p}{h}$ and $-\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=\nu_m^{2}$, the three numbers of *The Three Wavenumbers of a Particle*. Throughout, $\nu_m=\frac{m\,c}{h}$, and $L$ is supplied by the problem.
 
 What is not new. The corpus has the formal character of the $h\to0$ limit in *Similitudes Between the Poisson Bracket and the Quantum Commutator*, the phase forms in two companions, the divide as a count in a third, and the centre as classical sector in a fourth. Added here: the separation of the limit from the approximation, why the limit must be formal, the criterion as one inverse length, the refusal of $1/\nu_m$, the partition it removes, the phase route, the derivation of the equations of motion, the ordering of the three terms, the mass-order rule for a first-order equation, and the sector in which the limit does not exist. The relativistic side of the same expansion is carried out in the companion *Relativistic Mechanics from the Dirac Wave: The Non-Quantum Limit in Biquaternionic Form*.
 
@@ -165,7 +165,7 @@ Substitute the amplitude and the phase, $\tilde{Ξ}=Ae^{i\theta_{\mathrm{phs}}}\
 Throughout, $\theta_{\mathrm{phs}}:=\frac{2\pi S_{\tilde\Xi}}{h}$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
 
 $$
-\partial_t S_{\tilde\Xi}+\frac{\lvert\vec\nabla_\Phi S_{\tilde\Xi}\rvert^{2}}{2m}+V-\frac{m\,c^{2}}{24\pi^{2}\nu_m^{2}}\frac{\Delta_\Phi A}{A}=0 ,
+\partial_t S_{\tilde\Xi}+\frac{\lvert\vec\nabla_\Phi S_{\tilde\Xi}\rvert^{2}}{2m}+V-\frac{m\,c^{2}}{8\pi^{2}\nu_m^{2}}\frac{\Delta_\Phi A}{A}=0 ,
 \qquad
 \partial_t A^{2}+\vec\nabla_\Phi\cdot\left(\frac{A^{2}\vec\nabla_\Phi S_{\tilde\Xi}}{m}\right)=0 .
 $$
@@ -230,7 +230,7 @@ and the difference is the interference term. Read against the count, that is the
 
 ## Case Checked
 
-The electron at $\beta=0.01$. The mass wave number is $2\pi\nu_m=2.589605\times10^{12}\ \mathrm{m^{-1}}$, so $\lambda_{m}=386.159\ \mathrm{fm}$; the momentum wave number is $2\pi\nu_{\Phi}=2.589735\times10^{10}\ \mathrm{m^{-1}}$.
+The electron at $\beta=0.01$. The mass wave number is $2\pi\nu_m=2.589605\times10^{12}\ \mathrm{m^{-1}}$, so $\frac{1}{2\pi\nu_m}=386.159\ \mathrm{fm}$ and $\lambda_m=2.426\ \mathrm{pm}$; the momentum wave number is $2\pi\nu_{\Phi}=2.589735\times10^{10}\ \mathrm{m^{-1}}$.
 
 | $L$ | $\epsilon$ | $1/(\nu_mL)$ | the limit |
 |---|---|---|---|
@@ -240,7 +240,7 @@ The electron at $\beta=0.01$. The mass wave number is $2\pi\nu_m=2.589605\times1
 
 The checks. The Gaussian ratio agrees with a fourth-order difference of $\frac{1}{\nu_{\Phi}^{2}}\lvert\frac{\Delta_\Phi A}{A}\rvert$ at one hundred values of $x/\sigma$ to $1.4\times10^{-6}$, the sign change included. The tables follow from $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$.
 
-The macroscopic end is true and empty. For the Earth in its orbit, over $L=1\ \mathrm{AU}$, the parameter is $4.0\times10^{-75}$; the phase length reaches the Planck length at $6.52\ \mathrm{kg\,m\,s^{-1}}$, beyond which the criterion holds where the model cannot resolve.
+The macroscopic end is true and empty. For the Earth in its orbit, over $L=1\ \mathrm{AU}$, the parameter is $4.0\times10^{-75}$; one radian of the phase reaches the Planck length at $6.52\ \mathrm{kg\,m\,s^{-1}}$, beyond which the criterion holds where the model cannot resolve.
 
 ## Summary
 
@@ -260,7 +260,7 @@ What remains is one external number, $\epsilon=\frac{1}{2\pi\nu_{\Phi}L}$. When 
 | $\rho=\frac{1}{4\pi^{2}\nu_{\Phi}^{2}}\left\lvert\frac{\Delta_\Phi A}{A}\right\rvert$ | The quantum potential over the kinetic energy; the error of the limit |
 | $N$ | The order kept by the approximation; the limit keeps order $0$ in the phase equation and all orders in the continuity equation |
 | $\epsilon^{N+1}$ | The size of the remainder the approximation drops |
-| $Q=-\frac{m\,c^{2}}{24\pi^{2}\nu_m^{2}}\frac{\Delta_\Phi A}{A}$ | The quantum potential; central, real, and the term the limit drops |
+| $Q=-\frac{m\,c^{2}}{8\pi^{2}\nu_m^{2}}\frac{\Delta_\Phi A}{A}$ | The quantum potential; central, real, and the term the limit drops |
 | $\nu_{\Phi}=\frac{\lvert\vec p\rvert}{h}$, $\nu_m=\frac{m\,c}{h}$ | The momentum and mass wave numbers; $\frac{h}{2\pi}$ is the product $\frac{h}{2\pi}$ |
 | $\beta=\lvert\vec v\rvert/c$ | The parameter of the other limit, internal to $\tilde V_{\Phi}$ |
 

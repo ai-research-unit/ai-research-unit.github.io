@@ -95,11 +95,11 @@ The table. Every row is $\lambda\gamma\left(ic\,e_{t}+\vec v\right)$, truncated 
 |---|---|---|---|---|
 | $\tilde V_{\Phi}$ | $1$ | $\gamma\left(ic\,e_{t}+\vec v\right)$ | $ic\left(1+\frac{\beta^{2}}{2}\right)e_{t}+\vec v$ | $\frac{3}{8}ic\,\beta^{4}e_{t}+\frac{\beta^{2}}{2}\vec v$ |
 | $\tilde P_{\Phi}$ | $m$ | $i\frac{E}{c}e_{t}+\vec p$ | $imc\left(1+\frac{\beta^{2}}{2}\right)e_{t}+m\vec v$ | $\frac{3}{8}imc\,\beta^{4}e_{t}+\frac{\beta^{2}}{2}m\vec v$ |
-| $\tilde\Upsilon_{\Phi}$ | $\nu_m/c$ | $ik'_{t}e_{t}+\vec\nu_{\Phi}$ | $i\nu_m\left(1+\frac{\beta^{2}}{2}\right)e_{t}+\nu_m\vec\beta$ | $\frac{3}{8}i\nu_m\beta^{4}e_{t}+\frac{\beta^{2}}{2}\nu_m\vec\beta$ |
+| $\tilde\Upsilon_{\Phi}$ | $\nu_m/c$ | $i\nu'_{t}e_{t}+\vec\nu_{\Phi}$ | $i\nu_m\left(1+\frac{\beta^{2}}{2}\right)e_{t}+\nu_m\vec\beta$ | $\frac{3}{8}i\nu_m\beta^{4}e_{t}+\frac{\beta^{2}}{2}\nu_m\vec\beta$ |
 | $\tilde J_{\Phi}$ | $\rho_{0}$ | $ic\rho\,e_{t}+\vec j$ | $ic\rho_{0}\left(1+\frac{\beta^{2}}{2}\right)e_{t}+\rho_{0}\vec v$ | $\frac{3}{8}ic\rho_{0}\beta^{4}e_{t}+\frac{\beta^{2}}{2}\rho_{0}\vec v$ |
 | $\tilde A_{\Phi}$ | $a'_{t,0}/c$ | $ia'_{t}e_{t}+\vec A$ | $ia'_{t,0}\left(1+\frac{\beta^{2}}{2}\right)e_{t}+a'_{t,0}\frac{\vec v}{c}$ | $\frac{3}{8}ia'_{t,0}\beta^{4}e_{t}+\frac{\beta^{2}}{2}a'_{t,0}\frac{\vec v}{c}$ |
 
-with $\vec\beta=\vec v/c$, $\nu_m=\frac{mc}{h}$, $k'_{t}=\frac{2\pi E}{h\,c}$, $2\pi\vec\nu_{\Phi}=\frac{\vec p}{h}$, $E=\gamma mc^{2}$, $\vec p=\gamma m\vec v$, $\rho$ the charge density of $\tilde J_{\Phi}$ and $\tilde A_{\Phi}=ia'_{t}e_{t}+\vec A$, the coefficient $a'_{t,0}$ being its value at rest. The readings of the three wave numbers are the subject of *The Three Wavenumbers of a Particle*. The first row is the base case; the second is its scale; the last three are the same statement in wave numbers, in a charge density and in a potential.
+with $\vec\beta=\vec v/c$, $\nu_m=\frac{mc}{h}$, $\nu'_{t}=\frac{E}{h\,c}$, $\vec\nu_{\Phi}=\frac{\vec p}{h}$, $E=\gamma mc^{2}$, $\vec p=\gamma m\vec v$, $\rho$ the charge density of $\tilde J_{\Phi}$ and $\tilde A_{\Phi}=ia'_{t}e_{t}+\vec A$, the coefficient $a'_{t,0}$ being its value at rest. The readings of the three wave numbers are the subject of *The Three Wavenumbers of a Particle*. The first row is the base case; the second is its scale; the last three are the same statement in wave numbers, in a charge density and in a potential.
 
 The energy and the momentum. The row for $\tilde P_{\Phi}$ reads off as
 
@@ -191,7 +191,7 @@ The scale attaches once. Every element of the family $\tilde X_{\Phi}=\lambda\ti
 | $\tilde X_{\Phi} = \lambda\tilde V_{\Phi}$ | The family; $\lambda$ is the one scale, real and state-independent |
 | $E=\gamma mc^{2}$, $\vec p=\gamma m\vec v$ | Energy and momentum; the components of $\tilde P_{\Phi}=m\tilde V_{\Phi}$ |
 | $\mathcal{E} = E-mc^{2} = \left(\gamma-1\right)mc^{2}$ | Excess energy; equal to $\frac{1}{2}mv^{2}$ after truncation |
-| $\nu_m=\frac{mc}{h}$, $k'_{t}=\frac{2\pi E}{h\,c}$, $2\pi\vec\nu_{\Phi}=\frac{\vec p}{h}$ | The three wave numbers of $\tilde\Upsilon_{\Phi}=\left(\nu_m/c\right)\tilde V_{\Phi}$ |
+| $\nu_m=\frac{mc}{h}$, $\nu'_{t}=\frac{E}{h\,c}$, $\vec\nu_{\Phi}=\frac{\vec p}{h}$ | The three wave numbers of $\tilde\Upsilon_{\Phi}=\left(\nu_m/c\right)\tilde V_{\Phi}$ |
 | $\rho=\gamma\rho_{0}$, $\vec j=\rho\vec v$ | Charge density and current of $\tilde J_{\Phi}=\rho_{0}\tilde V_{\Phi}$ |
 | $\theta_{\mathrm{rpd}} = \operatorname{artanh}\beta$ | Rapidity; the additive parameter of the boost |
 | $r'_{t} = c\,t$ | Material time |

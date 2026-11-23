@@ -89,17 +89,17 @@ $$
 $$
 the derivatives act as numbers: $\partial/\partial R_t \to -\frac{i}{c}(-i\omega) = -\omega/c$ and $\partial/\partial R_\eta \to i \nu_{\Phi\eta}$, so
 $$
--\partial^2/\partial {r^{\prime}_t}^2 \to \frac{\omega^2}{c^2}, \qquad \Delta_\Phi \to -2\pi\vec\nu_\Phi^2,
+-\partial^2/\partial {r^{\prime}_t}^2 \to \frac{\omega^2}{c^2}, \qquad \Delta_\Phi \to -4\pi^{2}\nu_{\Phi}^{2},
 \qquad
-\Box_\Phi \to \frac{\omega^2}{c^2} - 2\pi\vec\nu_\Phi^2 .
+\Box_\Phi \to \frac{\omega^2}{c^2} - 4\pi^{2}\nu_{\Phi}^{2} .
 $$
-The symbol was checked by finite differences on such a wave, with the numerical value of $\Box_\Phi\tilde{Ξ}$ agreeing with $(\omega^2/c^2 - \vec\nu_\Phi^2)\tilde{Ξ}$ to the accuracy of the difference scheme. The zero set of the symbol, $\omega^2 = c^4\pi\vec\nu_\Phi^2$, is the light cone, which in this algebra is the zero-divisor cone of the biquaternion norm; the mass-shell condition $\Box_\Phi \to 4\pi^{2}\nu_m^{2}$ is the shifted cone. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
+The symbol was checked by finite differences on such a wave, with the numerical value of $\Box_\Phi\tilde{Ξ}$ agreeing with $(\omega^2/c^2 - \vec\nu_\Phi^2)\tilde{Ξ}$ to the accuracy of the difference scheme. The zero set of the symbol, $\omega^2 = c^{2}\,4\pi^{2}\nu_{\Phi}^{2}$, is the light cone, which in this algebra is the zero-divisor cone of the biquaternion norm; the mass-shell condition $\Box_\Phi \to 4\pi^{2}\nu_m^{2}$ is the shifted cone. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 The sign convention deserves a paragraph of its own, because it is the series' most common false alarm. With $\partial/\partial R_t = -i\partial/\partial r'_t$, the operator above is $\Box_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2$, and the physical mass equation is
 $$
 \left(\Box_\Phi - 4\pi^{2}\nu_m^{2}\right)\tilde{Ξ} = 0 ,
 $$
-whose symbol reproduces $\omega^2 = c^4\pi\vec\nu_\Phi^2 + c^2\,4\pi^{2}\nu_m^{2}$. The companion article *Exercise: Chirality and the Weyl Spinors* carries $\frac{h}{2\pi}$ and works with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box_\Phi = -\partial^2/\partial {r'_{t}}^2 + \vec\nabla_\Phi^2$; its mass equation is $(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde{Ξ} = 0$, the same equation as here and as in every other companion. Throughout this article $\Box_\Phi$ means the series convention above and the mass term is $-\nu_m^{2}$ with $\nu_m=\frac{mc}{h}$.
+whose symbol reproduces $\omega^2 = c^{2}\,4\pi^{2}\nu_{\Phi}^{2} + c^2\,4\pi^{2}\nu_m^{2}$. The companion article *Exercise: Chirality and the Weyl Spinors* carries $\frac{h}{2\pi}$ and works with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box_\Phi = -\partial^2/\partial {r'_{t}}^2 + \vec\nabla_\Phi^2$; its mass equation is $(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde{Ξ} = 0$, the same equation as here and as in every other companion. Throughout this article $\Box_\Phi$ means the series convention above and the mass term is $-\nu_m^{2}$ with $\nu_m=\frac{mc}{h}$.
 
 ### Self-adjointness
 
@@ -177,9 +177,9 @@ G_{\mathrm{inv}}(\tilde R_\Phi) = \frac{1}{4\pi^2\rho^2} ,
 \qquad
 -\Box_\Phi\,G_{\mathrm{inv}} = \delta^{(4)}(\tilde R_\Phi)\;}.
 $$
-The coefficient is fixed by the distributional identity $\Delta_\Phi\,\rho^{2-d} = -(d-2)\frac{2\pi^{d/2}}{\Gamma(d/2)}\delta^{(d)}$ at $d = 4$, which gives $\Delta_\Phi\rho^{-2} = -4\pi^2\delta^{(4)}$. The identity was verified independently here by parts against a radial Gaussian: the integral $\int G_{\mathrm{inv}}\,(-\Delta_\Phi f)\,d^4r$ evaluates to $f(0)$ with the coefficient $1/(4\pi^2)$, to four decimal places on a two-million-point radial grid. In the Fourier variable $k = (k_4,2\pi\vec\nu_\Phi)$ conjugate to the $i r'_t$ coordinate, $\Box_\Phi \to -k_4^2 - 2\pi\vec\nu_\Phi^2$ and
+The coefficient is fixed by the distributional identity $\Delta_\Phi\,\rho^{2-d} = -(d-2)\frac{2\pi^{d/2}}{\Gamma(d/2)}\delta^{(d)}$ at $d = 4$, which gives $\Delta_\Phi\rho^{-2} = -4\pi^2\delta^{(4)}$. The identity was verified independently here by parts against a radial Gaussian: the integral $\int G_{\mathrm{inv}}\,(-\Delta_\Phi f)\,d^4r$ evaluates to $f(0)$ with the coefficient $1/(4\pi^2)$, to four decimal places on a two-million-point radial grid. In the Fourier variable $k = (k_4,2\pi\vec\nu_\Phi)$ conjugate to the $i r'_t$ coordinate, $\Box_\Phi \to -k_4^2 - 4\pi^{2}\nu_{\Phi}^{2}$ and
 $$
-G_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + 2\pi\vec\nu_\Phi^2} ,
+G_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + 4\pi^{2}\nu_{\Phi}^{2}} ,
 $$
 the four-dimensional Coulomb kernel.
 
@@ -241,22 +241,22 @@ Adding the mass term shifts the operator by a central scalar,
 $$
 \Box_\Phi - 4\pi^{2}\nu_m^{2} , \qquad \nu_m=\frac{mc}{h} ,
 $$
-and the defining equation becomes $(\Box_\Phi - 4\pi^{2}\nu_m^{2})G = -\delta$. In the $i r'_t$ variables the shifted operator is Helmholtz's, $-\Delta_\Phi + \nu_m^{2}$, and its invariant fundamental solution is the four-dimensional Yukawa kernel
+and the defining equation becomes $(\Box_\Phi - 4\pi^{2}\nu_m^{2})G = -\delta$. In the $i r'_t$ variables the shifted operator is Helmholtz's, $-\Delta_\Phi + 4\pi^{2}\nu_m^{2}$, and its invariant fundamental solution is the four-dimensional Yukawa kernel
 $$
 \boxed{\;
-G^{(1/\nu_m)}_{\mathrm{inv}}(\tilde R_\Phi) = \frac{\nu_m}{4\pi^2\rho}\,\mathrm{Ki}_{1}(\rho\,\nu_m) ,
+G^{(1/(2\pi\nu_m))}_{\mathrm{inv}}(\tilde R_\Phi) = \frac{\nu_m}{2\pi\rho}\,\mathrm{Ki}_{1}(2\pi\rho\,\nu_m) ,
 \qquad
-\left(-\Delta_\Phi + \nu_m^{2}\right) G^{(1/\nu_m)}_{\mathrm{inv}} = \delta^{(4)}(\tilde R_\Phi)\;},
+\left(-\Delta_\Phi + 4\pi^{2}\nu_m^{2}\right) G^{(1/(2\pi\nu_m))}_{\mathrm{inv}} = \delta^{(4)}(\tilde R_\Phi)\;},
 $$
 with $K_1$ the modified Bessel function; its Fourier transform is
 $$
-G^{(1/\nu_m)}_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + \vec\nu_\Phi^2 + \nu_m^{2}} .
+G^{(1/(2\pi\nu_m))}_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + 4\pi^{2}\vec\nu_\Phi^2 + 4\pi^{2}\nu_m^{2}} .
 $$
-The short-distance behaviour is the massless kernel, $G^{(1/\nu_m)}_{\mathrm{inv}} \to 1/(4\pi^2\rho^2)$ as $\rho\,\nu_m \to 0$, and the large-distance behaviour is exponentially damped, $G^{(1/\nu_m)}_{\mathrm{inv}} \sim \frac{\nu_m^{1/2}}{2(2\pi)^{3/2}\rho^{3/2}}\exp(-\rho\,\nu_m)$: a mass screens. The retarded and advanced kernels acquire support inside the cone rather than on it, the sharp light-cone delta acquiring a tail in the Bessel functions; the closed form of the inside-cone part is the standard one and is cited rather than re-derived. The massless limit returns the delta on the cone, and the biquaternion content of the massive case is simply that the mass term is central, hence commutes with the algebra, and shifts the symbol by a constant without changing the sector structure.
+The short-distance behaviour is the massless kernel, $G^{(1/(2\pi\nu_m))}_{\mathrm{inv}} \to 1/(4\pi^2\rho^2)$ as $2\pi\rho\,\nu_m \to 0$, and the large-distance behaviour is exponentially damped, $G^{(1/(2\pi\nu_m))}_{\mathrm{inv}} \sim \frac{(2\pi\nu_m)^{1/2}}{2(2\pi)^{3/2}\rho^{3/2}}\exp(-2\pi\rho\,\nu_m)$: a mass screens. The retarded and advanced kernels acquire support inside the cone rather than on it, the sharp light-cone delta acquiring a tail in the Bessel functions; the closed form of the inside-cone part is the standard one and is cited rather than re-derived. The massless limit returns the delta on the cone, and the biquaternion content of the massive case is simply that the mass term is central, hence commutes with the algebra, and shifts the symbol by a constant without changing the sector structure.
 
 The mass shell is the symbol condition
 $$
-\langle\tilde P_{\Phi}\rangle_{\natural} = -\!\left(\frac{\omega^2}{c^2} - 2\pi\vec\nu_\Phi^2\right)\Big|_{\text{on shell}} = -4\pi^{2}\nu_m^{2} ,
+\langle\tilde P_{\Phi}\rangle_{\natural} = -\!\left(\frac{\omega^2}{c^2} - 4\pi^{2}\nu_{\Phi}^{2}\right)\Big|_{\text{on shell}} = -4\pi^{2}\nu_m^{2} ,
 $$
 which was checked on a random on-shell four-momentum $K = i(\omega/c)e_t + 2\pi\vec\nu_\Phi$ in $\mathbb{B}_{\Phi}$, the biquaternion norm returning $-\nu_m^{2}$ exactly. Off shell the operator is invertible on the algebra; on the mass shell the symbol vanishes on the zero-divisor cone of the relevant complex momentum, which is the algebraic origin of the propagation and of the rank drop that the massless limit will exhibit.
 
@@ -420,7 +420,7 @@ G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta\!\left(r'_t + R\right) ,
 $$
 obtained from the light-cone delta with Jacobian $|dg/dr'_t| = 2R$ and selected by the time boundary condition; the Jacobian and the off-cone annihilation of the kernel were verified numerically, and their difference $\mathcal{G}_{\mathrm{PJ}} = G_{\mathrm{ret}} - G_{\mathrm{adv}}$ is the commutator function. The causal kernel is $G_F = (4\pi^2)^{-1}(\rho^2 - i\epsilon)^{-1}$, whose Wick rotation is $G_{\mathrm{inv}}$.
 
-The massive operator $\Box_\Phi - 4\pi^{2}\nu_m^{2}$ has the invariant kernel $\frac{\nu_m}{4\pi^2\rho}\mathrm{Ki}_{1}(\rho\,\nu_m)$, with the massless kernel as its short-distance limit and exponential screening at large distance, and a causal kernel with support inside the cone. The first-order operator has a biquaternion-valued kernel,
+The massive operator $\Box_\Phi - 4\pi^{2}\nu_m^{2}$ has the invariant kernel $\frac{\nu_m}{2\pi\rho}\mathrm{Ki}_{1}(2\pi\rho\,\nu_m)$, with the massless kernel as its short-distance limit and exponential screening at large distance, and a causal kernel with support inside the cone. The first-order operator has a biquaternion-valued kernel,
 $$
 \tilde{G}_{\Phi,\tilde\nabla_\Phi} = (\tilde\nabla_\Phi)^{\natural}G_{\Box_\Phi} \in \mathbb{B}_{\Phi} ,
 \qquad
@@ -440,7 +440,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 |---|---|
 | $\tilde\nabla_\Phi = \sum_{\imath} e_{\imath}\partial/\partial R_{\imath}$ | Biquaternionic gradient, $\partial/\partial R_t = \partial/\partial R_t = -i\partial/\partial r'_t$ |
 | $(\tilde\nabla_\Phi)^{\natural} = \sum_{\imath} e_{\imath}^{*}\partial/\partial R_{\imath}$ | Quaternion-conjugate gradient, $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_\eta\,\vec e_\eta\partial/\partial R_\eta$ |
-| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Series d'Alembertian; central scalar; $\Box_\Phi \to \omega^2/c^2 - 2\pi\vec\nu_\Phi^2$ |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Series d'Alembertian; central scalar; $\Box_\Phi \to \omega^2/c^2 - 4\pi^{2}\nu_{\Phi}^{2}$ |
 | $\tilde\nabla_\Phi^{*} = -(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi^{*} = \Box_\Phi$ | Adjoints under $\langle\tilde{F},\tilde Q\rangle = \int2\,\mathrm{Sc}(\tilde{F}^{*}\tilde Q)$ |
 | $\Box_\Phi^\flat = -\Box_\Phi$, $G_{\Box,\Phi}^\flat = -G_{\Box,\Phi}$, $\tilde{G}_{\Phi,\tilde\nabla_\Phi}^\flat = \tilde{G}_{\Phi,\tilde\nabla_\Phi}$ | Conjugation action on the operator and the kernels: ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ fix a real scalar and $\flat$ negates it; the conjugations preserve the sectors, multiplication by $i$ exchanges them, $i\tilde{G}_{\Phi,\tilde\nabla_\Phi} \in \mathbb{B}_{\Psi}$ |
 | $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material four-position |
@@ -450,7 +450,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | $G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta(r'_t + R)$ | Advanced kernel; $\Box_\Phi G_{\mathrm{adv}} = -\delta$ |
 | $\mathcal{G}_{\mathrm{PJ}} = G_{\mathrm{ret}} - G_{\mathrm{adv}}$ | Pauli–Jordan commutator function; $\Box_\Phi\mathcal{G}_{\mathrm{PJ}} = 0$ |
 | $G_F = \frac{1}{4\pi^2}\frac{1}{\rho^2 - i\epsilon}$ | Causal (Feynman) kernel; Wick-rotates to $G_{\mathrm{inv}}$ |
-| $G^{(1/\nu_m)}_{\mathrm{inv}} = \frac{\nu_m}{4\pi^2\rho}\mathrm{Ki}_{1}(\rho\,\nu_m)$ | Massive invariant kernel; the label $1/\nu_m$ names the massive case, whose coefficient is $\nu_m=\frac{h}{2\pi mc}$ |
+| $G^{(1/(2\pi\nu_m))}_{\mathrm{inv}} = \frac{\nu_m}{2\pi\rho}\mathrm{Ki}_{1}(2\pi\rho\,\nu_m)$ | Massive invariant kernel; the label $1/\nu_m$ names the massive case, whose coefficient is $\nu_m=\frac{h}{2\pi mc}$ |
 | $\tilde{G}_{\Phi,\tilde\nabla_\Phi} = (\tilde\nabla_\Phi)^{\natural}G_{\Box,\Phi} \in \mathbb{B}_{\Phi}$ | First-order kernel; $\tilde\nabla_\Phi\tilde{G}_{\Phi,\tilde\nabla_\Phi} = -\delta$ |
 | $\tilde\nabla_\Phi + \kappa$, $\kappa \in \mathbb{C}$ | The shifted gradient, written out; the glyph is never extended |
 | $(\tilde\nabla_\Phi+\kappa)((\tilde\nabla_\Phi)^{\natural}+\kappa) = \Box_\Phi - 2i\kappa\,e_t\partial/\partial r'_t + \kappa^2$ | Square of the shifted gradient; symbol $(\omega/c - \kappa)^2 - \|\vec\nu_\Phi\|^2$ |

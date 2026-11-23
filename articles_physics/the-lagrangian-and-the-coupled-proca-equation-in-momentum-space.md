@@ -23,11 +23,11 @@ The algebra, the products, the two forms, the invertibles and the sectors are th
 $$
 \tilde\nabla_{\mathrm{gco},\Phi,\imath}\longmapsto i\pi_{\imath} ,
 \qquad
-\pi_{\imath}=h\,2\pi\nu_{\imath}-q A_{\imath} ,
+\pi_{\imath}=h\nu_{\imath}-q A_{\imath} ,
 \qquad
 2\pi\nu_t'=\frac{\omega}{c} ,
 \qquad
-k^{2}=2\pi\nu_t'^{2}-2\pi\vec\nu_\Phi^{2}.
+k^{2}=4\pi^{2}\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}.
 $$
 
 The parent's action is quoted once and not re-derived:
@@ -102,13 +102,13 @@ The variation at a mode cannot see a boundary condition, a topological charge or
 
 ### Zero, Pole and the On-Shell Action
 
-The coupled Proca mode action is $\mathcal F+\mathcal M$ with $\mathcal F=\tfrac12[\pi A]^{2}$ and $\mathcal M=\tfrac124\pi^{2}\nu_m^{2}A^{\dagger}A$, and $\pi_{\imath}=h\,2\pi\nu_{\imath}-qA_{\imath}$. Its stationarity is the coupled symbol, so the kernel of the form is the symbol again; what differs from the scalar case is that **the mass term makes the form positive on the transverse directions and indefinite on the longitudinal one**, so the vanishing of the form is one condition with a different character on each subspace.
+The coupled Proca mode action is $\mathcal F+\mathcal M$ with $\mathcal F=\tfrac12[\pi A]^{2}$ and $\mathcal M=\tfrac124\pi^{2}\nu_m^{2}A^{\dagger}A$, and $\pi_{\imath}=h\nu_{\imath}-qA_{\imath}$. Its stationarity is the coupled symbol, so the kernel of the form is the symbol again; what differs from the scalar case is that **the mass term makes the form positive on the transverse directions and indefinite on the longitudinal one**, so the vanishing of the form is one condition with a different character on each subspace.
 
 The propagator at the wave number is the form's inverse, and the inverse fails exactly where the form is singular. For the Proca field the singularity is at the mass shell and nowhere else, because the mass term removes the longitudinal degeneracy that the massless form has: the determinant is $\nu_m^{2}$ times the transverse determinant, so the only zeros are the two mass-shell branches. That is the precise content of the article's observation that the two terms have different algebraic characters.
 
 The on-shell action vanishes, and here that is a stronger statement. On a solution the amplitude is a kernel vector, so $\mathcal F+\mathcal M=0$; but on shell $\mathcal F=-\mathcal M$ term by term, because the mass term is what the gradient term contributes at the pole. The mode action is zero because the two halves cancel, not because each is zero, and the cancellation is the Proca field's own signature.
 
-At a constant connection the shift $\pi_{\imath}=h\,2\pi\nu_{\imath}-qA_{\imath}$ moves the zero exactly as in the scalar case: the mass-shell locus is translated, not deformed. The mass does not move, which is why the coupled article's section on the charge and the energy says that the charge has no mass and the energy has mass-squared.
+At a constant connection the shift $\pi_{\imath}=h\nu_{\imath}-qA_{\imath}$ moves the zero exactly as in the scalar case: the mass-shell locus is translated, not deformed. The mass does not move, which is why the coupled article's section on the charge and the energy says that the charge has no mass and the energy has mass-squared.
 
 It does not claim that a zero at negative frequency is a negative energy. The transform's two branches are the article's Legendre section, and the sign distinction belongs there. Zero and pole are statements about the propagator; the branch is a statement about the transform.
 
@@ -239,7 +239,7 @@ Whether the two-valued inversion has a reading in the currents. The charge is li
 
 ## Summary
 
-At a wave number the coupled Proca action is $\mathcal{F}+\mathcal{M}=\tfrac12[\,\pi A\,]^{2}+\tfrac124\pi^{2}\nu_m^{2}A^{\dagger}A$ with $\pi_{\imath}=h\,2\pi\nu_{\imath}-q A_{\imath}$, and its stationarity is the coupled symbol.
+At a wave number the coupled Proca action is $\mathcal{F}+\mathcal{M}=\tfrac12[\,\pi A\,]^{2}+\tfrac124\pi^{2}\nu_m^{2}A^{\dagger}A$ with $\pi_{\imath}=h\nu_{\imath}-q A_{\imath}$, and its stationarity is the coupled symbol.
 
 The two terms have different algebraic characters and transform differently under a constant phase. $\mathcal{M}$ is sesquilinear and does not move: $0.169050$ at $\alpha=0,\,0.7,\,1.9,\,3.1$. $\mathcal{F}$ is bilinear and rotates at twice the angle: the ratio's argument is $1.400000$, $-2.483185$, $-0.083185$, which is $2\alpha$ modulo $2\pi$, while its modulus stays at $0.158799$. Invariance holds only at $\alpha\in\{0,\pi\}$, which is the parent's "only when the phase's square is one" as a table.
 
@@ -253,7 +253,7 @@ The charge carries no mass and the energy carries $\nu_m^{2}$: the charge's symb
 
 | Symbol | Meaning |
 | --- | --- |
-| $\pi_{\imath}=h\,2\pi\nu_{\imath}-q A_{\imath}$ | The shifted four-momentum |
+| $\pi_{\imath}=h\nu_{\imath}-q A_{\imath}$ | The shifted four-momentum |
 | $\varkappa$ | The coupling |
 | $\nu_m=\frac{mc}{h}$ | The mass wave number |
 | $[\,\pi A\,]=\pi_t a_t'+\vec\pi\cdot\vec a$ | The shifted Lorenz form of the amplitude |

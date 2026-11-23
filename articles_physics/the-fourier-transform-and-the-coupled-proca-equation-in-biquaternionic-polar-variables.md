@@ -21,11 +21,11 @@ The algebra, the products, the two forms, the invertibles and the sectors are th
 $$
 \tilde\nabla_{\mathrm{gco},\Phi,\imath}\longmapsto i\pi_{\imath} ,
 \qquad
-\pi_{\imath}=h\,2\pi\nu_{\imath}-q A_{\imath} ,
+\pi_{\imath}=h\nu_{\imath}-q A_{\imath} ,
 \qquad
 2\pi\nu_t'=\frac{\omega}{c} ,
 \qquad
-k^{2}=2\pi\nu_t'^{2}-2\pi\vec\nu_\Phi^{2}.
+k^{2}=4\pi^{2}\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}.
 $$
 
 The coupled word is the parent's:
@@ -164,7 +164,7 @@ The gauge transformation is the phase coordinate's motion, and on the symbol it 
 
 | Symbol | Meaning |
 | --- | --- |
-| $\pi_{\imath}=h\,2\pi\nu_{\imath}-q A_{\imath}$ | The shifted four-momentum; the symbol's argument |
+| $\pi_{\imath}=h\nu_{\imath}-q A_{\imath}$ | The shifted four-momentum; the symbol's argument |
 | $\varkappa$ | The coupling |
 | $\varrho,\ \theta_{\mathrm{pha}},\ \theta_{\mathrm{rpd}},\ \hat u_{\mathrm b},\ \phi_{\mathrm{rot}},\ \hat n_{\mathrm{ax}}$ | Scale, phase, rapidity, boost axis, rotor angle, rotor axis |
 | $\sigma_{\mathrm{gco}}=-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F-\pi_{\imath}\pi_{\jmath}$ | The coupled symbol; Hermitian, complex |

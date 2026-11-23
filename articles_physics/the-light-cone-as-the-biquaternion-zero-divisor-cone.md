@@ -166,7 +166,7 @@ Now let $\tilde P_{\Phi}$ be a four-wavevector, meaning an element of $\mathbb{B
 $$
 \tilde P_{\Phi} = i\,\frac{\omega}{c}\,e_t + 2\pi\vec\nu_\Phi,
 \qquad
-\langle\tilde P_{\Phi}\rangle_{\natural} = -\frac{\omega^2}{c^2} + 2\pi\vec\nu_\Phi^2 .
+\langle\tilde P_{\Phi}\rangle_{\natural} = -\frac{\omega^2}{c^2} + 4\pi^{2}\nu_{\Phi}^{2} .
 $$
 
 For a plane wave $Ξ = f(s)$ with $s = \mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = -\omega r'_t/c + 2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives
@@ -182,7 +182,7 @@ so that
 $$
 \Box_\Phi f(s) = \left[(\partial/\partial R_t\,s)^2 + \sum_{\imath\in\{x,r_y,r_z\}}(\partial/\partial R_{\imath} s)^2\right] \frac{d^2f}{ds^2}(s)
 + \bigl(\Box_\Phi s\bigr) \frac{df}{ds}(s)
-= \left[-\frac{\omega^2}{c^2} + 2\pi\vec\nu_\Phi^2\right] \frac{d^2f}{ds^2}(s)
+= \left[-\frac{\omega^2}{c^2} + 4\pi^{2}\nu_{\Phi}^{2}\right] \frac{d^2f}{ds^2}(s)
 = \langle\tilde P_{\Phi}\rangle_{\natural}\,\frac{d^2f}{ds^2}(s),
 $$
 
@@ -316,7 +316,7 @@ The light cone is the set on which elements of the biquaternion algebra cease to
 | $\tilde{Q}^2 = 2Q_t\tilde{Q}$ | Non-pure zero-divisor identity |
 | $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Gradient, conjugate gradient, d'Alembertian |
 | $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + 2\pi\vec\nu_\Phi$ | Four-wavevector, $\mathbb{B}_{\Phi}$ |
-| $\langle\tilde P_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + 2\pi\vec\nu_\Phi^2$ | Null condition $\Leftrightarrow$ dispersionless wave |
+| $\langle\tilde P_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + 4\pi^{2}\nu_{\Phi}^{2}$ | Null condition $\Leftrightarrow$ dispersionless wave |
 | $\tilde{U}\tilde{U}^{\natural} = e_t$ | Lorentz rotor (unit norm) |
 | $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Rotor conjugation; preserves the cone |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

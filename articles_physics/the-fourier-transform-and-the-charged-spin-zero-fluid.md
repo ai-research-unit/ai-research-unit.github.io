@@ -42,7 +42,7 @@ $$
 \qquad
 E=\frac{h}{2\pi} c\,2\pi\nu_t',
 \qquad
-\vec p=h\,2\pi\vec\nu_\Phi .
+\vec p=h\,\vec\nu_\Phi .
 $$
 
 The check is exact and it is a check of an identity, not of an approximation. With lengths in units of $1/\nu_m$, momenta in units of $mc$, and $\varkappa=0.7$, the residual of the display above at $a_t'=0$, $0.4$, $1.0$ and $1.5$ was $0.0$ at every one of the sampled momenta.

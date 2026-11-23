@@ -72,7 +72,7 @@ A check of the sign in the chart. The invariant $\mathcal E=-\frac{h}{2\pi}\part
 
 The bracket is a number at each time. $\partial_{t'}\theta_{\mathrm{pha}}$ is a function of $t'$, and its product with $\frac{h}{2\pi}$ is the local frequency of the field. The symbol is that number read at one frequency, and the reading is faithful only when the number does not vary.
 
-The exact case is the constant bracket. For a plane wave the bracket is constant, the symbol exists, and the equation reduces to the algebraic relation $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}=\lvert h\,2\pi\vec\nu_{\Phi}-q\vec A\rvert^{2}/(2m)$. Nothing is approximated, and the reduction is exact because the coefficient is constant.
+The exact case is the constant bracket. For a plane wave the bracket is constant, the symbol exists, and the equation reduces to the algebraic relation $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}=\lvert h\,\vec\nu_{\Phi}-q\vec A\rvert^{2}/(2m)$. Nothing is approximated, and the reduction is exact because the coefficient is constant.
 
 **The varying case has no symbol.** An invertible element whose phase is $\theta=\omega_0t'+\tfrac12\alpha t'^{2}$ has a bracket $\omega_0+\alpha t'$ that varies, and its transform is not supported at one frequency. On a grid of sixty-four points the effective number of modes $1/\sum_jp_j^{2}$ was $1.00$ for an integer tone, $5.64$ at $\alpha=1$ and $26.20$ at $\alpha=4$. The spread grows with the chirp and the symbol does not exist for any of them.
 
@@ -96,7 +96,7 @@ The two rates in the chart's letters. The phase runs at $-\big(h_t-ϙ\omicron_{\
 
 The numbers. With $\lvert\vec h_\Psi\rvert=0.616441$ the free gap is $1.232882$; with $ϙ\vec A=(0.35,0.25,0)$ it is $1.503329$; with $ϙ\omicron_{\mathrm{pot}}=0.4$ alone it stays $1.232882$ and the phase's rate moves by $-0.400000$. The gap is a vector-potential effect and the translation is a scalar-potential effect.
 
-The invariant reading. The two eigenvalues are $\mathcal E_0\pm\lvert\vec\pi_0\rvert$ for a mode, with $\mathcal E_0=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $\vec\pi_0=h\,2\pi\vec\nu_{\Phi}-q\vec A$. So the pair is a function of the two invariants, and the chart's two rates are functions of the two invariants. Gauge transformations move neither.
+The invariant reading. The two eigenvalues are $\mathcal E_0\pm\lvert\vec\pi_0\rvert$ for a mode, with $\mathcal E_0=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $\vec\pi_0=h\,\vec\nu_{\Phi}-q\vec A$. So the pair is a function of the two invariants, and the chart's two rates are functions of the two invariants. Gauge transformations move neither.
 
 What the pair does not carry. It does not carry the rotor's axis, which the vector potential shifts. The gap is read and the axis is frame data, exactly as in the free polar companion.
 

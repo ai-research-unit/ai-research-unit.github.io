@@ -141,10 +141,10 @@ $$
 \tag{8}
 $$
 
-with inversion by $\mathcal{F}(w)(-x)$ and the differentiation rule $\mathcal{F}(\vec\nabla_\Phi w)(2\pi\vec\nu_\Phi) = 2\pi 2\pi i\vec\nu_\Phi\,\mathcal{F}(w)(2\pi\vec\nu_\Phi)$ (*Biquaternion Continuous Harmonic Analysis*, *The Gradient*). Applying (8) to the equation $DΞ = \mp i\partial/\partial r'_tΞ$ of the kernel, using $\nu_{\Phi x}\vec e_x + \nu_{\Phi y}\vec e_y + \nu_{\Phi z}\vec e_z = \vec\nu_\Phi$ for the frequency vector, gives the linear equation
+with inversion by $\mathcal{F}(w)(-x)$ and the differentiation rule $\mathcal{F}(\vec\nabla_\Phi w)(2\pi\vec\nu_\Phi) = 4\pi^{2}i\vec\nu_\Phi\,\mathcal{F}(w)(2\pi\vec\nu_\Phi)$ (*Biquaternion Continuous Harmonic Analysis*, *The Gradient*). Applying (8) to the equation $DΞ = \mp i\partial/\partial r'_tΞ$ of the kernel, using $\nu_{\Phi x}\vec e_x + \nu_{\Phi y}\vec e_y + \nu_{\Phi z}\vec e_z = \vec\nu_\Phi$ for the frequency vector, gives the linear equation
 
 $$
-2\pi 2\pi i\vec\nu_\Phi\,\mathcal{F}(Ξ_\pm)(2\pi\vec\nu_\Phi,r'_t) \pm i\partial/\partial r'_t \mathcal{F}(Ξ_\pm)(2\pi\vec\nu_\Phi,r'_t) = 0.
+4\pi^{2}i\vec\nu_\Phi\,\mathcal{F}(Ξ_\pm)(2\pi\vec\nu_\Phi,r'_t) \pm i\partial/\partial r'_t \mathcal{F}(Ξ_\pm)(2\pi\vec\nu_\Phi,r'_t) = 0.
 $$
 
 ### The Unit-Modulus Kernel

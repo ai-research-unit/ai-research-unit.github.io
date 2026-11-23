@@ -140,7 +140,7 @@ $$
 $$
 This is the Jacobian the exercise warns about: the factor $1/(2R)$ is what turns the invariant coefficient $1/(2\pi)$ into the radial coefficient $1/(4\pi R)$. Dropping it — writing the radial kernel as $\frac{1}{2\pi}\delta(r'_t-R)$, or as $\frac{1}{2\pi R}\delta(r'_t-R)$, or as a coefficient without the $R$ in the denominator — gives a kernel that fails in part (a). The $\frac{du}{dg}$ term does not cancel, except for the middle form, whose $\frac{du}{dg}$ term does cancel but which produces twice the unit point source. The conversion was checked numerically for several pairs $(R,c)$ by smearing the invariant delta against test functions.
 
-**(c) The coefficient from the Fourier representation.** The defining equation in Fourier space is algebraic. With the transform convention $\delta^{(4)}(\tilde{Q}) = \int \frac{d^32\pi\nu_{\Phi}}{(2\pi)^3}\frac{d\omega}{2\pi}\,\exp(i\theta_{\mathrm{pwp}})$ and the symbol $\omega^2/c^2 - \lvert\vec\nu_\Phi\rvert^{2}$ from part (a), the equation $(\omega^2/c^2 - \lvert2\pi\vec\nu_\Phi\rvert^{2})G = -1$ gives
+**(c) The coefficient from the Fourier representation.** The defining equation in Fourier space is algebraic. With the transform convention $\delta^{(4)}(\tilde{Q}) = \int d^{3}\nu_{\Phi}\frac{d\omega}{2\pi}\,\exp(i\theta_{\mathrm{pwp}})$ and the symbol $\omega^2/c^2 - \lvert\vec\nu_\Phi\rvert^{2}$ from part (a), the equation $(\omega^2/c^2 - \lvert2\pi\vec\nu_\Phi\rvert^{2})G = -1$ gives
 $$
 G(\vec\nu_\Phi,\omega) = \frac{c^2}{c^2 \lvert\vec\nu_\Phi\rvert^{2} - \omega^2},
 \qquad

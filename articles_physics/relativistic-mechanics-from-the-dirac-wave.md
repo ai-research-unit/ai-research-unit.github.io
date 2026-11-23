@@ -36,7 +36,7 @@ $$
 
 so the gradient acts, to leading order, as multiplication by $2\pi i\tilde\Upsilon_{\Phi}$, with $\tilde\Upsilon_{\Phi}=\frac{\tilde P_{\Phi}}{h}$ the element of *The Three Wavenumbers of a Particle*. Its $e_{t}$ entry is real and its vector part imaginary, as the display shows. The limit is the statement that this term dominates.
 
-What a $k$ may stand for, and nothing else. Three wave numbers occur in this article, and each divides $\frac{h}{2\pi}$ out of a mass, a momentum or an energy: $\nu_m=\frac{m\,c}{h}$, $2\pi\vec\nu_{\Phi}=\frac{\vec p}{h}$, and the temporal one $\frac{\omega}{c}=\frac{2\pi E}{h\,c}$, which occurs once, in §*Case Checked*. No fourth use is made of one. The rewriting $\frac{2\pi}{h}=2\pi\nu_m/(m\,c)$ is available, and the companion uses it for the phase; it is not used here, because the mass cancels in that ratio for every $m$, so nothing is absorbed into the $\nu_m$ and the wave number would be decoration over a bare $\frac{h}{2\pi}$. A wave number appears below only where a mass, a momentum or an energy waits to be absorbed by it. The one place where the source's writing is quoted is the charge coupling, and §*The Gauge Field, and the Lorentz Force* says what the cancellation carries there.
+What a $k$ may stand for, and nothing else. Three wave numbers occur in this article, and each divides $\frac{h}{2\pi}$ out of a mass, a momentum or an energy: $\nu_m=\frac{m\,c}{h}$, $\vec\nu_{\Phi}=\frac{\vec p}{h}$, and the temporal one $\frac{\omega}{c}=\frac{2\pi E}{h\,c}$, which occurs once, in §*Case Checked*. No fourth use is made of one. The rewriting $\frac{2\pi}{h}=2\pi\nu_m/(m\,c)$ is available, and the companion uses it for the phase; it is not used here, because the mass cancels in that ratio for every $m$, so nothing is absorbed into the $\nu_m$ and the wave number would be decoration over a bare $\frac{h}{2\pi}$. A wave number appears below only where a mass, a momentum or an energy waits to be absorbed by it. The one place where the source's writing is quoted is the charge coupling, and §*The Gauge Field, and the Lorentz Force* says what the cancellation carries there.
 
 ## Order Zero: the Mass Shell
 
@@ -143,7 +143,7 @@ The other order is the companion's. Subtracting the rest phase first gives the n
 
 ## Case Checked
 
-The electron at $\beta=0.01$. $2\pi\nu_m=2.589605\times10^{12}\ \mathrm{m^{-1}}$, $\lambda_{m}=386.159\ \mathrm{fm}$, $mc^{2}=511.00\ \mathrm{keV}$, and $\gamma=1.0000500$, $\gamma-1=5.0004\times10^{-5}$.
+The electron at $\beta=0.01$. $2\pi\nu_m=2.589605\times10^{12}\ \mathrm{m^{-1}}$, $\frac{1}{2\pi\nu_m}=386.159\ \mathrm{fm}$ (the wavelength is $\lambda_m=2.426\ \mathrm{pm}$), $mc^{2}=511.00\ \mathrm{keV}$, and $\gamma=1.0000500$, $\gamma-1=5.0004\times10^{-5}$.
 
 | quantity | relativistic | Newtonian | ratio, Newtonian to relativistic |
 |---|---|---|---|
@@ -170,7 +170,7 @@ The mass is recovered rather than derived: $\nu_m$ carried it. The spin is absen
 |---|---|
 | $\tilde\Xi=A\exp\!\left(i\theta_{\mathrm{phs}}\right)\xi$ | The wave in amplitude and phase; $A>0$ real, $S_{\tilde\Xi}$ the action of the field, $\xi$ slowly varying; the companion writes the exponent $\frac{\nu_miS_{\tilde\Xi}}{m\,c}$, which is the same number |
 | $\epsilon=\frac{1}{2\pi\nu_{\Phi}L}=\frac{h}{2\pi pL}$ | The parameter of the limit; $L$ the length over which $A$ varies |
-| $\nu_m=\frac{m\,c}{h}$ | The mass wave number; the reciprocal of the reduced Compton wavelength |
+| $\nu_m=\frac{m\,c}{h}$ | The mass wave number; the reciprocal of the Compton wavelength |
 | $E=-\partial_{t}S_{\tilde\Xi}$, $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$ | Energy and momentum read off the phase |
 | $\Pi_{t}=\partial_{t}S_{\tilde\Xi}+ϙ\phi$, $\vec\pi=\vec\nabla_\Phi S_{\tilde\Xi}-ϙ\vec A$ | The canonical and the kinetic momentum, minimally coupled |
 | $\mathcal{E}=-\Pi_{t}=E-ϙ\phi$ | The kinetic energy; $\vec v=c^{2}\vec\pi/\mathcal{E}$ |

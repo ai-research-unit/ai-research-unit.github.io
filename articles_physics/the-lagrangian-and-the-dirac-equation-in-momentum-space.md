@@ -125,7 +125,7 @@ $$
 =\langle 2\pi i\tilde\Upsilon_\Phi\rangle_\natural
 =k^{2},
 \qquad
-k^{2}=2\pi\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2},
+k^{2}=4\pi^{2}\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2},
 $$
 
 where both minus signs are $i^{2}$ and the middle step is the norm's order-independence. So the second variation of the action at a mode is the central scalar
@@ -228,7 +228,7 @@ The variational output is the zero of that scalar and the free propagator is pro
 | $2\pi i\tilde\Upsilon_\Phi$, $2\pi i\tilde\Upsilon_\Phi^{\natural}$ | The symbols of the gradient and its conjugate; Hermitian |
 | $\mathrm{Sc}(\tilde A^{*}2\pi i\tilde\Upsilon_\Phi\tilde A)$ | The momentum-space kinetic bracket; real for every $\tilde A$ |
 | $\langle 2\pi i\tilde\Upsilon_\Phi\rangle_\natural=k^{2}$ | The symbol's norm; central, real, equal to the interval |
-| $k^{2}=2\pi\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}$ | The interval in wave numbers |
+| $k^{2}=4\pi^{2}\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}$ | The interval in wave numbers |
 | $\langle 2\pi i\tilde\Upsilon_\Phi\rangle_\natural-\nu_m^{2}$ | The second variation at a mode; one central scalar |
 | $\langle 2\pi i\tilde\Upsilon_\Phi-2\pi\nu_m\rangle_\natural=k^{2}+4\pi\nu_m2\pi\nu_t'+4\pi^{2}\nu_m^{2}$ | The wrong object; the mass inside the norm |
 | $\langle\tilde\Upsilon_\Phi\rangle_\natural+\nu_m^{2}=-(k^{2}-\nu_m^{2})$ | The propagator's denominator; the pole |

@@ -74,7 +74,7 @@ The quadratic form of the theory is the biquaternion norm. The material four-wav
 
 $$
 \tilde\Upsilon_{\Phi}=\frac{\tilde P_{\Phi}}{h}
-=\frac{2\pi}{h}\,\tilde P_{\Phi}
+=\frac{1}{h}\tilde P_{\Phi}
 =i\,\nu_t^{\prime}\,e_t+\vec\nu_\Phi\in\mathbb{B}_{\Phi},
 \qquad
 \tilde\Upsilon_{\Phi}^{\natural}=i\,\nu_t^{\prime}\,e_t-\vec\nu_\Phi,
@@ -117,7 +117,7 @@ The scalar case has one feature the two parent cases do not. Because the field i
 
 ## The Mode Expansion
 
-The field equation is linear, so the general solution is a superposition of plane waves. With $E_{\vec p}=+c\sqrt{\vec p^{\,2}+m^{2}c^{2}}$ and $p\cdot x=\frac{h}{2\pi}\left(2\pi\nu_t^{\prime}r'_t-2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right)=-\frac{h}{2\pi}\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_\Phi^{\natural})$, the quantized field expands as
+The field equation is linear, so the general solution is a superposition of plane waves. With $E_{\vec p}=+c\sqrt{\vec p^{\,2}+m^{2}c^{2}}$ and $p\cdot x=\frac{h}{2\pi}\left(2\pi\nu_t^{\prime}r'_t-2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right)=-h\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_\Phi^{\natural})$, the quantized field expands as
 
 $$
 \boxed{\;\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}\,\sqrt{\frac{h c}{4\pi E_{\vec p}}}
@@ -295,7 +295,7 @@ The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian |
 | $\tilde{Ξ}=\xi\,e_t$, $\xi=(\xi_1+i\xi_2)/\sqrt2$ | Scalar field, valued in the centre; real components |
 | $\mathcal{L}=-\,\mathrm{Sc}[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})]-4\pi^{2}\nu_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | Scalar Lagrangian density |
-| $1/\nu_m$ | The mass length, $\frac{h}{2\pi mc}$ |
+| $1/(2\pi\nu_m)$ | The mass length, $\frac{h}{2\pi mc}$ |
 | $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$, $\pi^\dagger=\partial\xi/\partial r'_t$ | Conjugate momenta; Legendre transform regular |
 | $\tilde\Upsilon_{\Phi}=i\,\nu_t^{\prime}e_t+\vec\nu_\Phi=\frac{\tilde P_{\Phi}}{h}$, $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=-\nu_t^{\prime\,2}+\nu_{\Phi}^{2}=-\nu_m^{2}$ | Material four-wavevector and its norm, the mass shell |
 | $\exp(\pm i\theta_{\mathrm{pwp}})$, $\delta\tilde R_{\Phi}$ | Central plane-wave phase; the separation element of the commutator |

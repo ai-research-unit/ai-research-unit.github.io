@@ -125,7 +125,7 @@ With $\rho_{\mathrm{num}}=\rho_{0}\exp(-r^{2}/(2\sigma^{2}))$ in one dimension,
 $$
 Q_{\mathrm{qnt}}(0)=\frac{h^{2}}{16\pi^{2}m\sigma^{2}},
 \qquad
-\frac{p_{\mathrm{qnt}}(0)}{w_{\mathrm{fl}}}=\frac{1}{44\pi^{2}\nu_m^{2}\sigma^{2}},
+\frac{p_{\mathrm{qnt}}(0)}{w_{\mathrm{fl}}}=\frac{1}{16\pi^{2}\nu_m^{2}\sigma^{2}},
 $$
 
 and in three dimensions the central value is three times larger, $Q_{\mathrm{qnt}}(0)=3\frac{h^{2}}{4\pi^{2}}/(4m\sigma^{2})$, because the Laplacian has three terms. The factor $\tfrac14$ in one dimension and $\tfrac34$ in three are the whole coefficient of the correction, so a reader who wants the size of the effect at a given width has a number and not an order of magnitude. The letter $\sigma$ is the width of the density as it appears in the exponent above, and not the amplitude's: the density falls by $1/e$ at $r=\sqrt2\,\sigma$, so the amplitude's width is $\sqrt2\,\sigma$. [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) writes the same state as $\rho_{\mathrm{num}}=A^{2}\exp(-r^{2}/\sigma_{\mathrm{qst}}^{2})$, whose $\sigma_{\mathrm{qst}}$ is this $\sigma$ times $\sqrt2$, and its central coefficient $1/(2m\sigma_{\mathrm{qst}}^{2})$ is this article's $1/(4m\sigma^{2})$ with the substitution. The two agree, and a reader who equates the two letters without the $\sqrt2$ sees a factor two that is a convention and not a disagreement.

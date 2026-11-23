@@ -303,7 +303,7 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 | $A_{\imath}$ | Complex connection coefficients (central, abelian) |
 | $\Gamma$ | Real scalar gauge function |
 | $\lambda = \exp(i\theta_{\mathrm{gau}})$ | Local central phase |
-| $ϙ,\frac{h}{2\pi}, \kappa =\frac{2\pi ϙ}{h}$ | Charge, reduced Planck constant, coupling |
+| $ϙ,\frac{h}{2\pi}, \kappa =\frac{2\pi ϙ}{h}$ | Charge, the action of one radian of phase, coupling |
 | $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Gauge transformation of the connection |
 | $D_{\imath} = \partial/\partial R_{\imath} + i\kappa A_{\imath}$ | Covariant derivative |
 | $\tilde{Ξ} = \xi\,e_t \in \mathbb{B}_{C}$ | Complex central scalar field |

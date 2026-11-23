@@ -46,7 +46,7 @@ $$
 
 because the substitution turns $\partial^2/\partial R_t^2$ into $-\partial^2/\partial x_0^2$ and leaves the three spatial derivatives alone. This is the form the rest of the article uses.
 
-Throughout, $c$ is the speed of light in the medium and $\frac{h}{2\pi}$ the reduced Planck constant. The mass enters as the length $\nu_m=\frac{mc}{h}$, and its reciprocal $\nu_m=\frac{mc}{h}$ is the coefficient of the pair.
+Throughout, $c$ is the speed of light in the medium and $\frac{h}{2\pi}$ the action of one radian of phase. The mass enters as the wave number $\nu_m=\frac{mc}{h}$, and that number is the coefficient of the pair.
 
 ## The Operator and Its Symbol
 
@@ -90,7 +90,7 @@ $$
 E^2=\vec p^{\,2}c^2+m^2c^4 ,
 $$
 
-with $2\pi\vec\nu_\Phi=\vec p\,\frac{2\pi}{h}$. Here $\nu_{\Phi}=\frac{p}{h}$ and $2\pi\nu_t^{\prime}=\frac{E}{h\,c}$ are the momentum and energy wave numbers.
+with $2\pi\vec\nu_\Phi=\vec p\,\frac{2\pi}{h}$. Here $\nu_{\Phi}=\frac{p}{h}$ and $\nu_t^{\prime}=\frac{E}{h\,c}$ are the momentum and energy wave numbers.
 
 The symbol of $\Box_\Phi$ is the interval of the wave covector, and the mass shell is that symbol set to $\nu_m^{2}$. The symbol of the gradient is a zero divisor on exactly the same set: left multiplication by $-2\pi i\tilde\Upsilon_{\Phi}$ is invertible off the cone and has rank two on it. The equation $\tilde\nabla_\Phi\tilde{Ξ}=0$ therefore has a nonzero plane-wave solution exactly where the massless Klein–Gordon equation does, and it halves the solution space there, as §*What the Root Does Not Carry* records.
 
@@ -289,7 +289,7 @@ A field whose value is one complex number has no first-order equation: the four 
 | $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate, the second factor of $\Box_\Phi$ |
 | $\Box_\Phi$ | d'Alembertian; its Lorentz form is derived in §*The Equation* |
 | $c$ | The speed of light in the medium |
-| $1/\nu_m$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $\nu_m=\frac{mc}{h}$ is the inverse reduced Compton wavelength |
+| $1/(2\pi\nu_m)$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $2\pi\nu_m=\frac{2\pi mc}{h}$ is the angular mass wave number |
 | $\nu_{\Phi,\imath}$ | The wave covector of a plane wave |
 | $\omega=-\vec e_z$ | The pseudoscalar of the algebra, $\omega^2=-e_t$ |
 | $-2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi$ | The symbol of the gradient, an element of $\mathbb{B}$ |

@@ -150,7 +150,7 @@ with $\tilde A_0=i\,a'_t\,e_t+\vec a$ and $a'_t$, $\vec a$ real. The gradient ac
 **The two conditions.** The Klein–Gordon reduction gives the dispersion relation
 
 $$
-\frac{\omega^2}{c^2}-2\pi\vec\nu_\Phi^2=4\pi^{2}\nu_m^2 ,
+\frac{\omega^2}{c^2}-4\pi^{2}\nu_{\Phi}^{2}=4\pi^{2}\nu_m^2 ,
 $$
 
 and the Lorenz condition fixes the time component of the amplitude,
@@ -194,7 +194,7 @@ $$
 N\bigl((ie_t+\vec e_z)+(ie_t+\vec e_x)\bigr)=N\bigl(2ie_t+\vec e_x+\vec e_z\bigr)=-4+2=-2 ,
 $$
 
-which is timelike. So a superposition of modes passes through the cone, and its degenerate set is a family of surfaces in spacetime. A static solution reaches the apex at its nodes: the potential $i\,a'_t(\vec r)e_t$ with $(\Delta_\Phi-\nu_m^2)a'_t=0$ satisfies the Lorenz condition identically and the Klein–Gordon equation, hence the Proca equation, and it is degenerate on the surface where $a'_t$ vanishes.
+which is timelike. So a superposition of modes passes through the cone, and its degenerate set is a family of surfaces in spacetime. A static solution reaches the apex at its nodes: the potential $i\,a'_t(\vec r)e_t$ with $(\Delta_\Phi-4\pi^{2}\nu_m^2)a'_t=0$ satisfies the Lorenz condition identically and the Klein–Gordon equation, hence the Proca equation, and it is degenerate on the surface where $a'_t$ vanishes.
 
 **The branch a plane wave uses.** A real plane wave's amplitude is spacelike, so its values are spacelike off the nodes: the chart uses the spacelike branch, and the timelike branch is left to other solutions. A cosine wave with a timelike amplitude satisfies the scale equation and not the Lorenz condition, whose value on that wave is $\sin\theta_{\mathrm{pwp}}(\vec\nu_\Phi\cdot\vec a-\frac{\omega}{c}a'_t)$; no timelike amplitude makes that vanish, because $\lvert\vec\nu_\Phi\cdot\vec a\rvert$ is bounded by $\frac{\omega}{c}\lvert\vec a\rvert$ and that is less than $\frac{\omega}{c}\lvert a'_t\rvert$.
 

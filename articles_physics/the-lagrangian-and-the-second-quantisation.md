@@ -53,7 +53,7 @@ is the Peierls bracket: the difference of the two Green functions is the classic
 The hand check for the scalar. For $\mathcal{D}=\Box_\Phi-4\pi^{2}\nu_m^{2}$ the difference of the Green functions is the Pauli–Jordan function,
 
 $$
-G(x,y)=\int\frac{\mathrm{d}^{3}k}{(2\pi)^{3}}\;\frac{\sin\bigl(\omega_k\,\Delta r'^{0}/c\bigr)}{\omega_k}\,e^{2\pi i\vec\nu_{\Phi}\cdot(\vec r-\vec r')},
+G(x,y)=\int\mathrm{d}^{3}\nu_{\Phi}\;\frac{\sin\bigl(\omega_k\,\Delta r'^{0}/c\bigr)}{\omega_k}\,e^{2\pi i\vec\nu_{\Phi}\cdot(\vec r-\vec r')},
 \qquad
 \omega_k=c\sqrt{k^{2}+4\pi^{2}\nu_m^{2}},
 $$

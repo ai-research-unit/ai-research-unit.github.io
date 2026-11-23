@@ -59,15 +59,15 @@ The honest summary is this: "the biquaternion vacuum" is not a biquaternion. For
 
 **From the mode expansion.** The free Maxwell potential expands in four covariant polarisations,
 $$
-A_{\imath}(x)=\int\!\frac{d^{3}2\pi\nu_{\Phi}}{(2\pi)^3}\sqrt{\frac{c}{2\omega_k}}\sum_{r=0}^{3}
+A_{\imath}(x)=\int\!d^{3}\nu_{\Phi}\sqrt{\frac{c}{2\omega_k}}\sum_{r=0}^{3}
 \Big(a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi)\,\epsilon^{(r)}_{\imath}(2\pi\vec\nu_\Phi)\,\exp(-ik\cdot x)
 +a_{\mathrm{fop},r}^{\dagger}(2\pi\vec\nu_\Phi)\,\epsilon^{(r)*}_{\imath}(2\pi\vec\nu_\Phi)\,\exp(+ik\cdot x)\Big),
 \qquad
-\big[a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec\nu_2)\big]=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\,\delta^{(3)}(2\pi\vec\nu_\Phi-\vec\nu_2),
+\big[a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec\nu_2)\big]=\sigma_{\mathrm{met},r}\,\delta_{rs}\,\delta^{(3)}(\vec\nu_\Phi-\vec\nu_2),
 $$
 with $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, $\omega_k=c\lvert2\pi\vec\nu_\Phi\rvert$ an angular frequency for the massless field, and $k\cdot x=2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega_k r'_t/c$. The normal-ordered Hamiltonian is
 $$
-:\!H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}2\pi\nu_{\Phi}}{(2\pi)^3}\,\sigma_{\mathrm{met},r}\,hf_{\mathrm{frq},k}\,a_{\mathrm{fop},r}^{\dagger}(2\pi\vec\nu_\Phi)a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi),
+:\!H\!:\,=\sum_{r=0}^{3}\int\!d^{3}\nu_{\Phi}\,\sigma_{\mathrm{met},r}\,hf_{\mathrm{frq},k}\,a_{\mathrm{fop},r}^{\dagger}(2\pi\vec\nu_\Phi)a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi),
 $$
 and the constant discarded in passing to the normal-ordered form is the zero-point energy.
 
@@ -77,7 +77,7 @@ $$
 $$
 the zero-point constant of the covariant field is that of **two** transverse modes, $hf_{\mathrm{frq},k}$ per mode, and the free vacuum energy is the quartically divergent integral
 $$
-E_0=\sum_{r=0}^{3}\sigma_{\mathrm{met},r}\sum_{\text{modes}}\tfrac12hf_{\mathrm{frq},k}=2\,V\!\int\!\frac{d^{3}2\pi\nu_{\Phi}}{(2\pi)^3}\,\tfrac12\frac{h}{2\pi}\,c\lvert2\pi\vec\nu_\Phi\rvert
+E_0=\sum_{r=0}^{3}\sigma_{\mathrm{met},r}\sum_{\text{modes}}\tfrac12hf_{\mathrm{frq},k}=2\,V\!\int\!d^{3}\nu_{\Phi}\,\tfrac12\frac{h}{2\pi}\,c\lvert2\pi\vec\nu_\Phi\rvert
 \;\xrightarrow[\ \Lambda\ ]{}\;\frac{h\,c\,\Lambda^{4}}{16\pi \,\pi^{2}}\,V .
 $$
 The coefficient is the free-space density for two polarisations; the divergence is quartic and proportional to the volume $V$. This is the biquaternion transcription of the standard fact that the electromagnetic zero-point energy diverges as the fourth power of the cutoff. The Dirac parent is the mirror case: there the normal-ordering constant is *negative*,
@@ -170,8 +170,8 @@ The second route uses the heat kernel rather than the mode sum directly, and it 
 
 **The heat kernel.** For the Dirichlet-type problem the heat kernel per unit area is
 $$
-G_{\mathrm{prop}}(r'_t)=\sum_{n=1}^{\infty}\int\!\frac{d^{2}k_\perp}{(2\pi)^2}\,
-\exp(-r'_t(\vec\nu_\perp^{2}+(\pi n/a)^{2}))
+G_{\mathrm{prop}}(r'_t)=\sum_{n=1}^{\infty}\int\!d^{2}\nu_\perp\,
+\exp(-r'_t(4\pi^{2}\vec\nu_\perp^{2}+(\pi n/a)^{2}))
 =\frac{1}{4\pi r'_t}\sum_{n=1}^{\infty}\exp(-(\pi n/a)^{2}r'_t),
 $$
 and the free-space heat kernel, which is its $a\to\infty$ limit, is

@@ -31,7 +31,7 @@ $$
 \text{a plane wave }e^{i(2\pi\vec\nu_{\Phi}\cdot\vec r-\omega t')}.
 $$
 
-The wave number is $2\pi\vec\nu_{\Phi}=\frac{\vec p}{h}$ and the frequency is $\omega=\frac{2\pi E}{h}$, so no new symbol is introduced and no fourth use is made of a wave number. Time is $t'$ and $\frac{h}{2\pi}$ is written explicitly.
+The wave number is $\vec\nu_{\Phi}=\frac{\vec p}{h}$ and the frequency is $\omega=\frac{2\pi E}{h}$, so no new symbol is introduced and no fourth use is made of a wave number. Time is $t'$ and $\frac{h}{2\pi}$ is written explicitly.
 
 ## The Mode, and the One Bracket It Occupies
 
@@ -186,9 +186,9 @@ The momentum of a mode lives in the phase bracket and the quantum data live in t
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The central field, in its word |
 | $a$ | The complex amplitude of a mode |
-| $2\pi\vec\nu_{\Phi}=\frac{\vec p}{h}$, $\omega=\frac{2\pi E}{h}$ | The label of a mode |
+| $\vec\nu_{\Phi}=\frac{\vec p}{h}$, $\omega=\frac{2\pi E}{h}$ | The label of a mode |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | The density; constant at a mode |
-| $\vec v=\vec\nabla_\Phi S/m=h\,2\pi\vec\nu_{\Phi}/m$ | The velocity; constant at a mode |
+| $\vec v=\vec\nabla_\Phi S/m=h\,\vec\nu_{\Phi}/m$ | The velocity; constant at a mode |
 | $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | The quantum potential; zero at a mode |
 | $\sigma^{Q}_{ij}=\frac{h^{2}}{16\pi^{2}m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | The quantum stress; zero at a mode |
 | $2\sqrt{\rho_1\rho_2}\cos(\theta_1-\theta_2)$ | The interference term of a superposition |

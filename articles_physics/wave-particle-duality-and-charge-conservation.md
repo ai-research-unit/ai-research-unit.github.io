@@ -75,13 +75,13 @@ A word on the name, because the corpus uses the same word for another space. Wha
 The conjugate wave-number element is in the cokernel at every frequency point. Set
 
 $$
-M=\tilde\Upsilon_\Phi^\natural=i\,2\pi\nu_t^{\prime}e_t-2\pi\vec\nu_\Phi .
+M=\tilde\Upsilon_\Phi^\natural=i\,\nu_t^{\prime}e_t-\vec\nu_\Phi .
 $$
 
 Then $\tilde\Upsilon_\Phi^\natural\,\tilde\Upsilon_\Phi$ is the quaternion norm, which is central, and
 
 $$
-\mathrm{Vect}\bigl(\tilde\Upsilon_\Phi^\natural\,2\pi i\tilde\Upsilon_\Phi\bigr)=i\,\mathrm{Vect}\bigl(\tilde\Upsilon_\Phi^\natural\tilde\Upsilon_\Phi\bigr)=0 ,
+\mathrm{Vect}\bigl(\tilde\Upsilon_\Phi^\natural\,i\tilde\Upsilon_\Phi\bigr)=i\,\mathrm{Vect}\bigl(\tilde\Upsilon_\Phi^\natural\tilde\Upsilon_\Phi\bigr)=0 ,
 $$
 
 because $\tilde\Upsilon_\Phi^\natural\tilde\Upsilon_\Phi=-\nu_t^{\prime\,2}+\nu_{\Phi}^{2}$ is a scalar multiple of $e_t$. So $\tilde\Upsilon_\Phi^\natural$ lies in the space of §*The cokernel is a space of multipliers* at every point of the domain.
@@ -89,7 +89,7 @@ because $\tilde\Upsilon_\Phi^\natural\tilde\Upsilon_\Phi=-\nu_t^{\prime\,2}+\nu_
 The functional it defines is the one the corpus already knows. For a pure $\tilde F$,
 
 $$
-\mathrm{Sc}\bigl(\tilde\Upsilon_\Phi^\natural\,2\pi i\tilde\Upsilon_\Phi\tilde F\bigr)=i\bigl(-4\pi^{2}\nu_t^{\prime\,2}+4\pi^{2}\nu_{\Phi}^{2}\bigr)\mathrm{Sc}(\tilde F)=0 ,
+\mathrm{Sc}\bigl(\tilde\Upsilon_\Phi^\natural\,i\tilde\Upsilon_\Phi\tilde F\bigr)=i\bigl(-\nu_t^{\prime\,2}+\nu_{\Phi}^{2}\bigr)\mathrm{Sc}(\tilde F)=0 ,
 $$
 
 since $\mathrm{Sc}(\tilde F)=0$. The vanishing is not a property of the particular frequency point. It is a property of the shape of the equation: a central multiplier preserves purity, and the functional reads the scalar part, which a pure element does not have.

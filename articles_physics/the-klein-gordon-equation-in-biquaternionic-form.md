@@ -80,7 +80,7 @@ $$
 \tilde\nabla_\Phi\tilde Q_1 = 2\pi\nu_m\tilde Q_2, \qquad \tilde\nabla_\Phi\tilde Q_2 = 2\pi\nu_m\tilde Q_1
 $$
 
-is the parent of the Dirac equation (the idempotent superposition of the two fields), of the Proca equation and of the Maxwell equation, as set out in *The Dirac Equation in Biquaternionic Form*, *The Proca Equation: Massive Spin 1 in Biquaternionic Form* and *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*; the second-order equation of the family, obtained by eliminating the auxiliary field, is the Klein–Gordon equation of this article. What the family adds here is the placement: the equation below is not an isolated second-order equation but a member of the one classical family, its spin-0 label being the restriction of the pair to scalar fields. The coefficient on the right is the reciprocal mass wave number, $\nu_m=\frac{m\,c}{h}$, because $\tilde\nabla_\Phi$ carries an inverse length; writing $m$ in place of that reciprocal means the same thing, since $m=m$.
+is the parent of the Dirac equation (the idempotent superposition of the two fields), of the Proca equation and of the Maxwell equation, as set out in *The Dirac Equation in Biquaternionic Form*, *The Proca Equation: Massive Spin 1 in Biquaternionic Form* and *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*; the second-order equation of the family, obtained by eliminating the auxiliary field, is the Klein–Gordon equation of this article. What the family adds here is the placement: the equation below is not an isolated second-order equation but a member of the one classical family, its spin-0 label being the restriction of the pair to scalar fields. The coefficient on the right is the reciprocal mass wave number, $\nu_m=\frac{m\,c}{h}$, because $\tilde\nabla_\Phi$ carries an inverse length.
 
 **The scalar restriction, in a remark.** With $\tilde Q_1=A_0e_t$ and $\tilde Q_2=be_t$ the first equation forces $A_0$ to have no vector gradient, so $A_0$, and with it $b$, depends on $i r'_t$ alone and the pair collapses to $\left(\partial^2/\partial R_t^2 - 4\pi^{2}\nu_m^{2}\right)A_0 = 0$. That is the degenerate form Gsponer and Hurni record for the spin-zero case, and the word is literal: a scalar field whose gradient must be scalar cannot vary in space, so this member of the family is one-dimensional. The corpus's field does vary in space, and its equation, $\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)A_0 = 0$, is the same elimination applied to a pair that carries one gradient of each kind.
 
@@ -318,7 +318,7 @@ The cancellation is identical, not asymptotic, and no solution is lost: $f$ has 
 
 Two properties of $f$ matter later. It is a central scalar, so it commutes with the quaternion units, acts on the four coefficients alike, and preserves each sector: $f\chi_{\Psi}\in\mathbb{B}_{\Psi}$ and $f\chi_{\Phi}\in\mathbb{B}_{\Phi}$. And $f^{*} = f^{-1}$, so the Hermitian norm $2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ is unchanged. It is therefore not multiplication by $i$, which exchanges the sectors, and not complex conjugation, which reverses the frequency.
 
-The one quantity that does change is the conserved density, because the density is quadratic and carries a derivative. With $\tilde\Xi = f\chi$, $\frac{\partial}{\partial r'_t}(f\chi) = f\left(\frac{\partial\chi}{\partial r'_t} - i\nu_m\chi\right)$. Substituting in the definition of $\rho$, the terms carrying $\partial\chi$ reproduce $\rho[\chi]$, and the terms carrying $\nu_m$ combine to $-2i\nu_m\lvert\chi\rvert^{2}$, which the prefactor $i/(2\nu_m)$ turns into $+\lvert\chi\rvert^{2}$; hence
+The one quantity that does change is the conserved density, because the density is quadratic and carries a derivative. With $\tilde\Xi = f\chi$, $\frac{\partial}{\partial r'_t}(f\chi) = f\left(\frac{\partial\chi}{\partial r'_t} - 2\pi i\nu_m\chi\right)$. Substituting in the definition of $\rho$, the terms carrying $\partial\chi$ reproduce $\rho[\chi]$, and the terms carrying $\nu_m$ combine to $-4\pi i\nu_m\lvert\chi\rvert^{2}$, which the prefactor $i/(4\pi\nu_m)$ turns into $+\lvert\chi\rvert^{2}$; hence
 
 $$
 \rho\left[f\chi\right] = \rho\left[\chi\right] + \lvert\chi\rvert^{2}.
@@ -333,15 +333,15 @@ The added term is the density the rest mode carries by itself. The sign rule is 
 **The general result, applied.** The solutions are superpositions of the plane waves of §*Plane Waves and the Dispersion Relation*,
 
 $$
-\tilde\Xi \propto \exp\left(2\pi i\left(\vec\nu_\Phi\cdot\vec r - \nu_t^{\prime}s\right)\right),
+\tilde\Xi \propto \exp\left(2\pi i\left(\vec\nu_\Phi\cdot\vec r - \nu_t^{\prime}r'_t\right)\right),
 \qquad
 \nu_t^{\prime} = \sqrt{\nu_{\Phi}^{2}+\nu_m^{2}} .
 $$
 
-The envelope $\chi$ of the previous section carries the excess wave number instead of the full one, since $e^{-i\nu_t^{\prime}s}=f\,e^{-i\theta_{\mathrm{pwt}}}$ with $f$ the rest-mass phase. The expansion of the wavenumbers article then gives
+The envelope $\chi$ of the previous section carries the excess wave number instead of the full one, since $e^{-2\pi i\nu_t^{\prime}r'_t}=f\,\chi$ with $f$ the rest-mass phase and $\chi=\exp(-2\pi i\Omega r'_t)$. The expansion of the wavenumbers article then gives
 
 $$
-\Omega = \frac{\pi\nu_{\Phi}^{2}}{\nu_m}-\frac{\pi\nu_{\Phi}^{4}}{4\nu_m^{3}}+\cdots ,
+\Omega = \frac{\nu_{\Phi}^{2}}{2\nu_m}-\frac{\nu_{\Phi}^{4}}{8\nu_m^{3}}+\cdots ,
 $$
 
 with the parameter $\Omega/(2\nu_m)$ and the relative error $-\Omega/(2\nu_m+\Omega)$ tabulated there. Keeping the leading term, and converting with $\nu_m = \frac{m\,c}{h}$,
@@ -349,7 +349,7 @@ with the parameter $\Omega/(2\nu_m)$ and the relative error $-\Omega/(2\nu_m+\Om
 $$
 \Omega = \frac{\nu_{\Phi}^{2}}{2\nu_m},
 \qquad
- \frac{h}{2\pi} c\,\Omega = \frac{h^{2}\nu_{\Phi}^{2}}{2m} = \frac{p^{2}}{2m},
+ h\,c\,\Omega = \frac{h^{2}\nu_{\Phi}^{2}}{2m} = \frac{p^{2}}{2m},
 $$
 
 which is the non-relativistic kinetic energy. That is the entire use of the general result. Nothing is re-derived here, and no further expansion is made.
@@ -360,10 +360,10 @@ $$
 -\frac{1}{4\pi\nu_m}\,\Delta_\Phi\chi
 = -\frac{1}{4\pi\nu_m}\left(-4\pi^{2}\nu_{\Phi}^{2}\right)\chi
 = \frac{\pi\nu_{\Phi}^{2}}{\nu_m}\,\chi
-= \Omega\chi ,
+= 2\pi\Omega\chi ,
 $$
 
-and the plane waves are complete, so the first-order relation $\frac{\partial\chi}{\partial r'_t}=-i\Omega\chi$ of the wavenumbers article holds between operators:
+and the plane waves are complete, so the first-order relation $\frac{\partial\chi}{\partial r'_t}=-2\pi i\Omega\chi$ of the wavenumbers article holds between operators:
 
 $$
 i\,\frac{\partial\chi}{\partial r'_t} = -\frac{1}{4\pi\nu_m}\,\Delta_\Phi\chi .
@@ -463,7 +463,7 @@ One exception to the obstruction is imported from the literature and kept separa
 | $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$ | Conservation law |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the scalar pairing |
 | $1/(2\pi\nu_m)$ | The mass length, $\frac{h}{2\pi mc}$; the coefficient $\nu_m=\frac{m\,c}{h}$ is its reciprocal |
-| $f = \exp(-i\theta_{\mathrm{rst}})$, $r'_t = c\,t'$ | Rest-mass phase; the zero-momentum solution, $\Box_\Phi f = \nu_m^{2}f$, $\lvert f\rvert=1$, $f^{*}=f^{-1}$ |
+| $f = \exp(-i\theta_{\mathrm{rst}})$, $r'_t = c\,t'$ | Rest-mass phase; the zero-momentum solution, $\Box_\Phi f = 4\pi^{2}\nu_m^{2}f$, $\lvert f\rvert=1$, $f^{*}=f^{-1}$ |
 | $\omega_m = \frac{2\pi mc^{2}}{h}= 2\pi c\,\nu_m$ | Rest-energy frequency of the field |
 | $\chi = e^{i\theta_{\mathrm{rst}}}\tilde\Xi$, $r'_t=c\,t'$ | Field with the rest-mass phase divided out; the envelope |
 | $\Omega = \nu_t^{\prime}-\nu_m$ | Excess time wave number; $\Omega = \sqrt{\nu_{\Phi}^{2}+\nu_m^{2}}-\nu_m = \nu_{\Phi}^{2}/2\nu_m+\cdots$ |

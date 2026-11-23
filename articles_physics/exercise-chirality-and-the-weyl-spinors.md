@@ -74,7 +74,7 @@ $$
 \langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 \qquad(\vec p^2=|\vec p|^2),
 $$
 
-i.e. $E^2 = \vec p^2c^2 + m^2c^4$. Here $\nu_{\Phi}=\frac{p}{h}$ and $2\pi\nu_t^{\prime}=\frac{E}{h\,c}$ are the momentum and energy wave numbers.
+i.e. $E^2 = \vec p^2c^2 + m^2c^4$. Here $\nu_{\Phi}=\frac{p}{h}$ and $\nu_t^{\prime}=\frac{E}{h\,c}$ are the momentum and energy wave numbers.
 
 **The second Dirac equation.** Two equations carry the name, and they must not be read as one. The pair above is the **one-sided** form of the equation: both gradients act by left multiplication, the field is one element, and the mass is the coupling between the two values. The **two-sided** form of the equation is a single field equation on $F\in\mathbb{B}$, Kravchenko's form,
 

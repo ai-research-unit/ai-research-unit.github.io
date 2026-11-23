@@ -197,9 +197,9 @@ The centrality of the mass is the structural point to carry forward. The compani
 
 On a plane-wave field $\tilde{Ξ} = \tilde{Ξ}_0\exp(i\theta_{\mathrm{pwp}})$ the Lagrangian's variation returns the mass shell as the symbol condition of the operator article,
 $$
-\Box_\Phi \to  \frac{\omega^2}{c^2} - 2\pi\vec\nu_\Phi^2 = (2\pi\nu_m)^{2} ,
+\Box_\Phi \to  \frac{\omega^2}{c^2} - 4\pi^{2}\nu_{\Phi}^{2} = (2\pi\nu_m)^{2} ,
 \qquad
-\omega^2 = c^4\pi\vec\nu_\Phi^2 + (2\pi\nu_m)^{2}c^2 ,
+\omega^2 = c^{2}\,4\pi^{2}\nu_{\Phi}^{2} + (2\pi\nu_m)^{2}c^2 ,
 $$
 the standard relativistic dispersion relation. The check was made on the symbol directly: acting with $\Box_\Phi$ on the plane wave and dividing by the wave function returns $\omega^2/c^2 - \vec\nu_\Phi^2$ to the accuracy of the difference scheme, and the mass shell is the level set $(\nu_m)^{2}$ of that symbol. In biquaternion-norm language the mass shell is the statement that the four-momentum's norm is $-m^2c^2$,
 $$
@@ -209,7 +209,7 @@ which is the field-theoretic counterpart of the particle's $\langle\tilde{P}_{\P
 
 Here $\theta_{\mathrm{pwp}}:=2\pi\vec\nu_\Phi\cdot\vec r-\omega r'_t/c\in\mathbb{R}$ is the plane-wave angle: $\omega$ and $\vec\nu_\Phi$ are real, so the exponent is $i$ times a real number and the wave form is $\exp(i\theta_{\mathrm{pwp}})$ wherever it is quoted.
 
-Three features of the sign structure are worth extracting. The kinetic term enters with a minus sign, which is what makes the on-shell energy positive; the mass term enters with a minus sign and a plus in the equation, so that the mass shell is $\omega^2 = c^4\pi\vec\nu_\Phi^2 + (2\pi\nu_m)^{2}c^2$; and the whole Lagrangian is real, because $\mathcal{L}$ is built from the Hermitian pairing and the biquaternion norm. Changing the relative sign of the two terms would change the equation to $(\Box_\Phi + (2\pi\nu_m)^{2})\tilde{Ξ} = 0$, a different equation, whose mass shell would be $\omega^2 = c^4\pi\vec\nu_\Phi^2 - (2\pi\nu_m)^{2}c^2$ rather than the physical one.
+Three features of the sign structure are worth extracting. The kinetic term enters with a minus sign, which is what makes the on-shell energy positive; the mass term enters with a minus sign and a plus in the equation, so that the mass shell is $\omega^2 = c^{2}\,4\pi^{2}\nu_{\Phi}^{2} + (2\pi\nu_m)^{2}c^2$; and the whole Lagrangian is real, because $\mathcal{L}$ is built from the Hermitian pairing and the biquaternion norm. Changing the relative sign of the two terms would change the equation to $(\Box_\Phi + (2\pi\nu_m)^{2})\tilde{Ξ} = 0$, a different equation, whose mass shell would be $\omega^2 = c^{2}\,4\pi^{2}\nu_{\Phi}^{2} - (2\pi\nu_m)^{2}c^2$ rather than the physical one.
 
 ### The Maxwell action
 

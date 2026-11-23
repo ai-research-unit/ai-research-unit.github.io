@@ -126,7 +126,7 @@ Let $\tilde{Ξ}$ be a solution of the field equation of §*The Two Dirac Equatio
 $$
 \boxed{\;
 \bar{\tilde{Ξ}}\,i\,e_{\imath}\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\imath)}
-=\frac{i}{2\,2\pi\nu_m}\Big(\bar{\tilde{Ξ}}\,\partial_{\imath}\tilde{Ξ}-\overline{\partial_{\imath}\tilde{Ξ}}\,\tilde{Ξ}\Big)
+=\frac{i}{4\pi\nu_m}\Big(\bar{\tilde{Ξ}}\,\partial_{\imath}\tilde{Ξ}-\overline{\partial_{\imath}\tilde{Ξ}}\,\tilde{Ξ}\Big)
 +\frac{1}{2\pi\nu_m}\sum_{\jmath}\varepsilon_{\jmath}\,\partial_{\jmath}\Big(\bar{\tilde{Ξ}}\,\Sigma_{\imath\jmath}\tilde{Ξ}\Big)\;}
 $$
 
@@ -162,7 +162,7 @@ $$
 The weight collapses the sum, because $\varepsilon_{\jmath}\varepsilon_{\imath}\delta_{\imath\jmath}$ is $\varepsilon_{\imath}^2=1$ at ${\jmath}=\mu$ and $0$ otherwise, so only the term ${\jmath}=\mu$ survives and the coefficient of the convection bracket is the same $-i$ for all four components. The bivector part is a total derivative because $\Sigma_{\imath\jmath}$ is a constant action and is antisymmetric in its two indices: the derivative of the bilinear is the sum of the two bivector pieces, one with the derivative on each factor. Dividing by $2m$,
 
 $$
-j_{\imath}=\frac{i}{2\,2\pi\nu_m}\Big(\bar{\tilde{Ξ}}\,\partial_{\imath}\tilde{Ξ}-\overline{\partial_{\imath}\tilde{Ξ}}\,\tilde{Ξ}\Big)
+j_{\imath}=\frac{i}{4\pi\nu_m}\Big(\bar{\tilde{Ξ}}\,\partial_{\imath}\tilde{Ξ}-\overline{\partial_{\imath}\tilde{Ξ}}\,\tilde{Ξ}\Big)
 +\frac{1}{2\pi\nu_m}\sum_{\jmath}\varepsilon_{\jmath}\,\partial_{\jmath}\Big(\bar{\tilde{Ξ}}\,\Sigma_{\imath\jmath}\tilde{Ξ}\Big),
 $$
 
@@ -281,8 +281,8 @@ The identification of the second term with the spin density is not a metaphor. I
 Contract the spin term with the photon field. The interaction is $-\sum_{\imath}\varepsilon_{\imath} A_{\imath} j_{\imath}$, and the spin-dependent part contributes, up to a total divergence,
 
 $$
--\frac{e}{2\,2\pi\nu_m}\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath}\,\partial_{\jmath}  A_{\imath}\,\bar{\tilde{Ξ}}\,\Sigma_{\jmath\imath}\tilde{Ξ}
-= -\frac{e}{2\,2\pi\nu_m}\cdot\tfrac12\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath}\,F_{\imath\jmath}\,\bar{\tilde{Ξ}}\,\Sigma_{\imath\jmath}\tilde{Ξ},
+-\frac{e}{4\pi\nu_m}\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath}\,\partial_{\jmath}  A_{\imath}\,\bar{\tilde{Ξ}}\,\Sigma_{\jmath\imath}\tilde{Ξ}
+= -\frac{e}{4\pi\nu_m}\cdot\tfrac12\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath}\,F_{\imath\jmath}\,\bar{\tilde{Ξ}}\,\Sigma_{\imath\jmath}\tilde{Ξ},
 $$
 
 which is an effective **Pauli moment term**, of the form $-\frac{e}{2\,\nu_m}\vec B\cdot\vec S$ with $\vec S$ the spin density of the previous subsection. Its coefficient is the Dirac value $g=2$. The companion article on the anomalous magnetic moment writes the vertex as
@@ -429,7 +429,7 @@ The Gordon decomposition splits the on-shell current of the field as
 
 $$
 \bar{\tilde{Ξ}}\,i\,e_{\imath}\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\imath)}
-=\frac{i}{2\,2\pi\nu_m}\Big(\bar{\tilde{Ξ}}\,\partial_{\imath}\tilde{Ξ}-\overline{\partial_{\imath}\tilde{Ξ}}\,\tilde{Ξ}\Big)
+=\frac{i}{4\pi\nu_m}\Big(\bar{\tilde{Ξ}}\,\partial_{\imath}\tilde{Ξ}-\overline{\partial_{\imath}\tilde{Ξ}}\,\tilde{Ξ}\Big)
 +\frac{1}{2\pi\nu_m}\sum_{\jmath}\varepsilon_{\jmath}\,\partial_{\jmath}\Big(\bar{\tilde{Ξ}}\,\Sigma_{\imath\jmath}\tilde{Ξ}\Big),
 $$
 

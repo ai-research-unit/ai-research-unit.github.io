@@ -29,7 +29,7 @@ $$
 \qquad
 2\pi\nu_t'=\frac{\omega}{c},
 \qquad
-k^{2}=2\pi\nu_t'^{2}-2\pi\vec\nu_\Phi^{2}.
+k^{2}=4\pi^{2}\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}.
 $$
 
 The potential and its Lorenz form. The potential is $\tilde A_\Phi=i\,a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, and on a mode its two invariants are the four-vector $(a_t',\vec a)$ and the divergence. Write
@@ -94,7 +94,7 @@ with the eigenvalue list $\{m^{2},m^{2},m^{2},-\nu_m^{2}\}$. The check is direct
 | $\sqrt{0.63}$ | $0$ | $\{-0.49,0,0,0\}$ | $0$ | $0$ |
 | $1.6$ | $+1.93$ | $\{-0.49,1.93,1.93,1.93\}$ | $-3.52263793$ | $-3.52263793$ |
 
-The wave vector is $2\pi\vec\nu_\Phi=(0.3,0.2,0.1)$ throughout and $2\pi\nu_m=0.7$, so $4\pi^{2}\nu_m^{2}=0.49$ and $2\pi\vec\nu_\Phi^{2}=0.14$.
+The wave vector is $2\pi\vec\nu_\Phi=(0.3,0.2,0.1)$ throughout and $2\pi\nu_m=0.7$, so $4\pi^{2}\nu_m^{2}=0.49$ and $4\pi^{2}\nu_{\Phi}^{2}=0.14$.
 
 The cubic factor is the three polarisations and the linear factor is the longitudinal direction. A matrix whose eigenvalues are $\{m^{2},m^{2},m^{2},-\nu_m^{2}\}$ says exactly that: three directions scale with the Klein–Gordon symbol and one does not. The parent's "four components minus one constraint leaves three" is this multiplicity, and what the article adds is that the factor the constraint removes is the linear one.
 
@@ -211,7 +211,7 @@ The spin-one content is not located in the symbol. The angular-momentum current'
 
 ## Summary
 
-The Proca operator's symbol, in the four-component reading, is $\sigma_{\imath\jmath}=(k^{2}-4\pi^{2}\nu_m^{2})\delta_{\imath\jmath}-2\pi\nu_{\imath} 2\pi\nu_{\jmath}$ with $k^{2}=2\pi\nu_t'^{2}-2\pi\vec\nu_\Phi^{2}$ and $2\pi\nu_t'=\omega/c$. Its eigenvalues are $\{k^{2}-\nu_m^{2},k^{2}-\nu_m^{2},k^{2}-\nu_m^{2},-\nu_m^{2}\}$ and its determinant is $-\nu_m^{2}(k^{2}-\nu_m^{2})^{3}$, verified against direct evaluation at $2\pi\nu_t'=0.5$, $\sqrt{0.63}$ and $1.6$ with $2\pi\nu_m=0.7$.
+The Proca operator's symbol, in the four-component reading, is $\sigma_{\imath\jmath}=(k^{2}-4\pi^{2}\nu_m^{2})\delta_{\imath\jmath}-2\pi\nu_{\imath} 2\pi\nu_{\jmath}$ with $k^{2}=4\pi^{2}\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}$ and $2\pi\nu_t'=\omega/c$. Its eigenvalues are $\{k^{2}-\nu_m^{2},k^{2}-\nu_m^{2},k^{2}-\nu_m^{2},-\nu_m^{2}\}$ and its determinant is $-\nu_m^{2}(k^{2}-\nu_m^{2})^{3}$, verified against direct evaluation at $2\pi\nu_t'=0.5$, $\sqrt{0.63}$ and $1.6$ with $2\pi\nu_m=0.7$.
 
 Off the mass shell the rank is four, the kernel is empty, and the symbol is invertible with smallest singular value $0.191$. On the shell the rank is one, the kernel is three-dimensional, and it is the Lorenz plane: the three null vectors satisfy $[kA]=0$ to $3\times10^{-17}$. The wave number itself is an eigenvector with eigenvalue $-\nu_m^{2}$, verified to $1.1\times10^{-16}$, so the longitudinal amplitude is multiplied rather than annihilated. That is why the massive field has three polarisations and not two.
 
@@ -224,7 +224,7 @@ The massless limit is a failure of invertibility: $\lvert\det\sigma\rvert$ falls
 | Symbol | Meaning |
 | --- | --- |
 | $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | The four-wave number; $2\pi\nu_t'=\omega/c$ |
-| $k^{2}=2\pi\nu_t'^{2}-2\pi\vec\nu_\Phi^{2}$ | The interval in wave numbers; the Klein–Gordon symbol |
+| $k^{2}=4\pi^{2}\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}$ | The interval in wave numbers; the Klein–Gordon symbol |
 | $\nu_m=\frac{mc}{h}$ | The mass wave number; $4\pi^{2}\nu_m^{2}=0.49$ at $2\pi\nu_m=0.7$ |
 | $\tilde A_\Phi=i\,a_t'e_t+\vec A$ | The potential; $(a_t',\vec a)$ its four-vector amplitude |
 | $[kA]=2\pi\nu_t'a_t'-2\pi\vec\nu_\Phi\cdot\vec a$ | The Lorenz form of the amplitude; symbol of $S$ up to $-i$ |

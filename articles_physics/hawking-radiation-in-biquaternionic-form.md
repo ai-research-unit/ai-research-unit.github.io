@@ -8,7 +8,7 @@ $$
 T =\frac{h\,\kappa}{4\pi \,\pi\,c\,k_{B}},
 $$
 
-where $\kappa$ is the **surface gravity** of the horizon and $\frac{h}{2\pi}$, $c$, $k_B$ are the reduced Planck constant, the speed of light, and the Boltzmann constant. For the Schwarzschild horizon $\kappa=c^4/(4GM)$, so
+where $\kappa$ is the **surface gravity** of the horizon and $\frac{h}{2\pi}$ is the action of one radian of phase, $c$ the speed of light and $k_B$ the Boltzmann constant. For the Schwarzschild horizon $\kappa=c^4/(4GM)$, so
 
 $$
 T_{\mathrm H} =\frac{h\,c^{3}}{16\pi \,\pi\,G\,M\,k_{B}},

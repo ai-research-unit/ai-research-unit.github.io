@@ -90,7 +90,7 @@ and Pauli exclusion is the algebraic identity $(a_{\mathrm{fop},r}^{\dagger}(\ve
 
 $$
 \big[a_{\mathrm{fop},r}(\vec\nu_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec\nu_2)\big]
-=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\,\delta^{(3)}(\vec\nu_\Phi-\vec\nu_2),
+=\sigma_{\mathrm{met},r}\,\delta_{rs}\,\delta^{(3)}(\vec\nu_\Phi-\vec\nu_2),
 \qquad
 (\sigma_{\mathrm{met},0},\sigma_{\mathrm{met},1},\sigma_{\mathrm{met},2},\sigma_{\mathrm{met},3})=(-1,+1,+1,+1),
 $$
@@ -98,7 +98,7 @@ $$
 and all other commutators vanishing. The timelike mode has negative norm; the physical subspace is defined by the subsidiary condition and carries the two transverse polarizations with positive norm. The physical photon number is the transverse sum
 
 $$
-N_\gamma=\sum_{\lambda=1}^{2}\int\!\frac{d^32\pi\nu_{\Phi}}{(2\pi)^3}a_{\mathrm{fop},\lambda}^{\dagger} a_{\mathrm{fop},\lambda},
+N_\gamma=\sum_{\lambda=1}^{2}\int\!d^{3}\nu_{\Phi}a_{\mathrm{fop},\lambda}^{\dagger} a_{\mathrm{fop},\lambda},
 $$
 
 which is non-negative on the physical subspace. The negative-norm states that the timelike mode builds are removed by the subsidiary condition; on the physical subspace the number operator is the transverse sum above.

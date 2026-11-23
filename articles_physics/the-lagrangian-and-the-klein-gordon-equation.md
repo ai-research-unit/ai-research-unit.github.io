@@ -24,7 +24,7 @@ Two boundaries are stated first, because both are ways of overclaiming.
 
 **The two settings, and a correction to the Schrödinger case.** For the Schrödinger equation the corpus distinguishes a constant coefficient (an ordinary differential equation in time, with a closed-form exponential for its solution) from an operator coefficient (a partial differential equation). The Klein–Gordon equation has no constant-coefficient ordinary case: every member of the family is a field equation, because the operator carries the spatial Laplacian whatever the mass term is. The distinction therefore survives only in a weaker form, between a constant mass wave number and a coefficient that varies in space and time, and §*The Two Settings* states it in that form. The closed-form exponential does not disappear; it moves to the conjugate pair, where it exists for the constant coefficient and only there.
 
-**What survives, and at what size.** One ordinary differential equation does exist for every $\vec\nu_\Phi$: on a Fourier mode of fixed wave vector the conjugate pair of §*Aside: The Conjugate Pair* obeys a $2\times2$ system with constant coefficients and a closed-form block. What does not exist is an ODE for the field, because a general field is a superposition of modes with different $k'_t$ and no single exponential propagates all of them. The distinction is the one the Schrödinger article draws, moved from the field to the mode.
+**What survives, and at what size.** One ordinary differential equation does exist for every $\vec\nu_\Phi$: on a Fourier mode of fixed wave vector the conjugate pair of §*Aside: The Conjugate Pair* obeys a $2\times2$ system with constant coefficients and a closed-form block. What does not exist is an ODE for the field, because a general field is a superposition of modes with different $\nu'_t$ and no single exponential propagates all of them. The distinction is the one the Schrödinger article draws, moved from the field to the mode.
 
 The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Klein–Gordon equation in its element form.
 
@@ -32,7 +32,7 @@ The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the act
 
 **The conventions are restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace and $\mathbb{B}_{\Phi}$ the anti-Hermitian one. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The measure is $\mathrm{d}^{4}x=\mathrm{d}r'_t\,\mathrm{d}r_x\,\mathrm{d}r_y\,\mathrm{d}r_z$ with $r'_t=c\,t'$, so the material time is a length and no $c$ appears beside a temporal derivative. The four-position is $\tilde R_\Phi=i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Each symbol is defined where it first appears, and all of them are collected in §*Summary of Notation*.
 
-**The d'Alembertian, and the dispersion relation it fixes.** The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial r_\eta$ with $R_t=i r'_t$, and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ on the material sector. On a plane wave $\exp\big(-i(\omega r'_t/c-\vec\nu_\Phi\cdot\vec r)\big)$ the operator returns $\omega^{2}-c^{2}\nu_{\Phi}^{2}$ times the wave, so the equation requires $\omega^{2}=c^{2}\,4\pi^{2}\nu_{\Phi}^{2}+c^{2}\,4\pi^{2}\nu_m^{2}$. That is the parent's dispersion relation, and it fixes the sign of the mass term in the action below.
+**The d'Alembertian, and the dispersion relation it fixes.** The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial r_\eta$ with $R_t=i r'_t$, and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ on the material sector. On a plane wave $\exp\big(-i(\omega r'_t/c-2\pi\vec\nu_\Phi\cdot\vec r)\big)$ the operator returns $\omega^{2}-c^{2}\,4\pi^{2}\nu_{\Phi}^{2}$ times the wave, so the equation requires $\omega^{2}=c^{2}\,4\pi^{2}\nu_{\Phi}^{2}+c^{2}\,4\pi^{2}\nu_m^{2}$. That is the parent's dispersion relation, and it fixes the sign of the mass term in the action below.
 ## The Action in Element Form
 
 The action is
@@ -60,13 +60,13 @@ $$
 
 as an element of $\mathbb{B}$, which is eight real equations. The step is exact for every variation: the two kinetic halves are conjugates, so their sum is twice a real part, and the integration by parts moves the derivatives onto the bracket without a boundary term for a variation of compact support.
 
-**The three signs, from one plane wave.** Write the action with coefficients $(a,b,c)$ in front of the temporal kinetic, the spatial kinetic and the mass term. Its Euler–Lagrange equation is $-a\,\partial^{2}_{r'^{2}_t}\tilde\Xi-b\,\Delta_\Phi\tilde\Xi-c\,4\pi^{2}\nu_m^{2}\tilde\Xi=0$. On a mode $\tilde\Xi_0\exp(i(\vec\nu_\Phi\cdot\vec r-k'_t r'_t))$ the bracket becomes $\big(a k'^{2}_t+b \nu_{\Phi}^{2}-c \nu_m^{2}\big)\tilde\Xi$, so the mode condition is
+**The three signs, from one plane wave.** Write the action with coefficients $(a,b,c)$ in front of the temporal kinetic, the spatial kinetic and the mass term. Its Euler–Lagrange equation is $-a\,\partial^{2}_{r'^{2}_t}\tilde\Xi-b\,\Delta_\Phi\tilde\Xi-c\,4\pi^{2}\nu_m^{2}\tilde\Xi=0$. On a mode $\tilde\Xi_0\exp(i(\vec\nu_\Phi\cdot\vec r-2\pi\nu'_t r'_t))$ the bracket becomes $\big(a \nu_t^{\prime\,2}+b \nu_{\Phi}^{2}-c \nu_m^{2}\big)\tilde\Xi$, so the mode condition is
 
 $$
-a\,k'^{2}_t+b\,4\pi^{2}\nu_{\Phi}^{2}=c\,4\pi^{2}\nu_m^{2}.
+a\,\nu_t^{\prime\,2}+b\,\nu_{\Phi}^{2}=c\,\nu_m^{2}.
 $$
 
-The convention fixed in §*Conventions* is $\Box_\Phi=\Delta_\Phi-\partial^{2}_{r'^{2}_t}$, so the equation must read $k'^{2}_t-4\pi^{2}\nu_{\Phi}^{2}=+4\pi^{2}\nu_m^{2}$, and the coefficients are $(a,b,c)=(1,-1,1)$: the temporal term with a plus, the spatial term with a minus, the mass term with a minus. Each choice fails on its own: $c=-1$ gives $k'^{2}_t-4\pi^{2}\nu_{\Phi}^{2}=-4\pi^{2}\nu_m^{2}$, the wrong branch of the hyperbola, spacelike where the physical branch is timelike; $b=+1$ gives $k'^{2}_t+4\pi^{2}\nu_{\Phi}^{2}=4\pi^{2}\nu_m^{2}$, which forces $k'^{2}_t<\nu_m^{2}$ and makes the spatial gradient a negative contribution to the energy; and $a=-1$ gives $-k'^{2}_t-4\pi^{2}\nu_{\Phi}^{2}=4\pi^{2}\nu_m^{2}$, which has no real solution at all. The minus on the mass term is also what makes the potential energy positive, and that is the same statement as the branch being the physical one.
+The convention fixed in §*Conventions* is $\Box_\Phi=\Delta_\Phi-\partial^{2}_{r'^{2}_t}$, so the equation must read $\nu_t^{\prime\,2}-\nu_{\Phi}^{2}=+\nu_m^{2}$, and the coefficients are $(a,b,c)=(1,-1,1)$: the temporal term with a plus, the spatial term with a minus, the mass term with a minus. Each choice fails on its own: $c=-1$ gives $\nu_t^{\prime\,2}-\nu_{\Phi}^{2}=-\nu_m^{2}$, the wrong branch of the hyperbola, spacelike where the physical branch is timelike; $b=+1$ gives $\nu_t^{\prime\,2}+\nu_{\Phi}^{2}=\nu_m^{2}$, which forces $\nu_t^{\prime\,2}<\nu_m^{2}$ and makes the spatial gradient a negative contribution to the energy; and $a=-1$ gives $-\nu_t^{\prime\,2}-\nu_{\Phi}^{2}=\nu_m^{2}$, which has no real solution at all. The minus on the mass term is also what makes the potential energy positive, and that is the same statement as the branch being the physical one.
 
 **No factor of one half.** The overall normalization is a convention and this article fixes it once: the action above has no $\tfrac12$, so the charge and the energy below carry the constants written and no others. A factor of $\tfrac12$ in front of $S$ multiplies every Noether current by $\tfrac12$ and changes no equation.
 
@@ -197,11 +197,11 @@ $$
 
 which vanishes on every solution. The identity is exact off shell: its right side is the equation contracted with $\tilde\Xi^{*}$ and projected on the scalar part, so it is zero exactly when the bracket is.
 
-**Where the factor comes from.** On the positive-frequency mode $\Xi_t=A\exp(-ik'_t r'_t)$ the derivative is $\partial_{r'_t}\Xi_t=-ik'_t\Xi_t$ with $k'_t=\omega/c$, so $i(\partial_{r'_t}\Xi_t)^{*}\Xi_t=-k'_t\lvert A\rvert^{2}$ and the temporal component is $j_{r'_t}=-2k'_t\lvert A\rvert^{2}$. The parent's density on the same mode is
+**Where the factor comes from.** On the positive-frequency mode $\Xi_t=A\exp(-2\pi i\nu'_t r'_t)$ the derivative is $\partial_{r'_t}\Xi_t=-2\pi i\nu'_t\Xi_t$ with $2\pi\nu'_t=\omega/c$, so $i(\partial_{r'_t}\Xi_t)^{*}\Xi_t=-2\pi\nu'_t\lvert A\rvert^{2}$ and the temporal component is $j_{r'_t}=-4\pi\nu'_t\lvert A\rvert^{2}$. The parent's density on the same mode is
 
 $$
 \rho_{\mathrm{chg}}=\frac{i}{4\pi\nu_m}\big(\Xi_t^{*}\partial_{r'_t}\Xi_t-\Xi_t\partial_{r'_t}\Xi_t^{*}\big)
-=\frac{i}{4\pi\nu_m}\left(-2ik'_t\right)\lvert A\rvert^{2}=\frac{k'_t}{2\pi\nu_m}\lvert A\rvert^{2},
+=\frac{i}{4\pi\nu_m}\left(-4\pi i\nu'_t\right)\lvert A\rvert^{2}=\frac{\nu'_t}{\nu_m}\lvert A\rvert^{2},
 $$
 
 so the ratio is exactly $-2\nu_m$ and the two normalisations account for it: the current here is twice the real part of one product, and the parent's density carries the factor $i/(2\nu_m)$.
@@ -312,7 +312,7 @@ The second-order structure appears in the variational principle as the conjugate
 | $S,\ \mathcal{L}$ | Action and Lagrangian density |
 | $\Pi_\Xi=(\partial_{r'_t}\tilde\Xi)^{*}$ | Conjugate momentum, the second element of the pair |
 | $H$ | Hamiltonian, the energy of the pair |
-| $k'_t=\sqrt{4\pi^{2}\nu_{\Phi}^{2}+4\pi^{2}\nu_m^{2}}$ | Temporal wave number of a free mode, in one length unit |
+| $\nu'_t=\sqrt{\nu_{\Phi}^{2}+\nu_m^{2}}$ | Temporal wave number of a free mode, in one length unit |
 | $j_{r'_t},\ j_\eta$ | Noether current of the phase symmetry |
 | $\rho_{\mathrm{chg}}$ | The parent's charge density; $j_{r'_t}=-4\pi\nu_m\rho_{\mathrm{chg}}$ |
 | $E_{\mathrm{nrg}}$ | Noether charge of time translation; non-negative |
@@ -348,16 +348,16 @@ $$
 
 **Why there is no second writing of the element.** The parent's Schrödinger article has two writings of one equation, with $\tilde H_\Psi$ and with $-i\tilde H_\Psi$, and both are linear in the field. The Klein–Gordon operator admits no such pair, and the parent says why in §*The Lanczos Family and the Spin-0 Member*: a first-order operator $\tilde\nabla_\Phi+\tilde F$ squares to $\Box_\Phi+(\tilde F,\tilde F)+2i(\tilde F,\vec\nabla_\Phi)$, and the cross term cannot be removed while the mass is kept. The first-order readings that do exist are two and neither is a rewriting of one element: the conjugate pair above, which doubles the state, and the spinor square root of the Dirac article, which doubles the carrier. The two doublings are different in kind. The pair keeps one element per coefficient and adds its rate, so the carrier is unchanged and the state space doubles. The root keeps one datum per coefficient and enlarges the carrier to a minimal left ideal and its conjugate, so the number of data per coefficient is unchanged. A second writing of the same element would be neither. The variational principle displays the first of them, since $\Pi_\Xi$ is a second element and the pair $(\tilde\Xi,\Pi_\Xi)$ is the pair the equation needs.
 
-**The closed form.** For a constant $\nu_m$ and a constant coefficient the pair propagates in closed form. On a plane-wave component of wave vector $\vec\nu_\Phi$ the pair obeys $\partial_{r'_t}\tilde\Xi=\Pi_\Xi$ and $\partial_{r'_t}\Pi_\Xi=-(\kappa^{2}+4\pi^{2}\nu_m^{2})\tilde\Xi$ with $\kappa^{2}=4\pi^{2}\nu_{\Phi}^{2}$, so with $k'_t=\sqrt{\kappa^{2}+4\pi^{2}\nu_m^{2}}$,
+**The closed form.** For a constant $\nu_m$ and a constant coefficient the pair propagates in closed form. On a plane-wave component of wave vector $\vec\nu_\Phi$ the pair obeys $\partial_{r'_t}\tilde\Xi=\Pi_\Xi$ and $\partial_{r'_t}\Pi_\Xi=-(\kappa^{2}+4\pi^{2}\nu_m^{2})\tilde\Xi$ with $\kappa^{2}=4\pi^{2}\nu_{\Phi}^{2}$, so with $2\pi\nu'_t=\sqrt{\kappa^{2}+4\pi^{2}\nu_m^{2}}$,
 
 $$
 \begin{pmatrix}\tilde\Xi(r'_t)\\ \Pi_\Xi(r'_t)\end{pmatrix}
 =
-\begin{pmatrix}\cos(k'_t r'_t) & \sin(k'_t r'_t)/k'_t\\ -k'_t\sin(k'_t r'_t) & \cos(k'_t r'_t)\end{pmatrix}
+\begin{pmatrix}\cos(2\pi\nu'_t r'_t) & \sin(2\pi\nu'_t r'_t)/(2\pi\nu'_t)\\ -2\pi\nu'_t\sin(2\pi\nu'_t r'_t) & \cos(2\pi\nu'_t r'_t)\end{pmatrix}
 \begin{pmatrix}\tilde\Xi(0)\\ \Pi_\Xi(0)\end{pmatrix},
 $$
 
-which is the parent's two frequency branches $e^{\pm i k'_t r'_t}$ recombined into a real block. The single element alone has no such closed form, and that is the precise sense in which the second-order equation needs the doubling.
+which is the parent's two frequency branches $e^{\pm 2\pi i\nu'_t r'_t}$ recombined into a real block. The single element alone has no such closed form, and that is the precise sense in which the second-order equation needs the doubling.
 
 ## Verification
 

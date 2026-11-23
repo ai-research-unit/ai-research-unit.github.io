@@ -37,7 +37,7 @@ $$
 $$
 and, for a nonzero field, these force the dispersion relation
 $$
-2\pi\vec\nu_\Phi^2 = \omega^2\epsilon\mu = \frac{\omega^2}{c^2}
+4\pi^{2}\nu_{\Phi}^{2} = \omega^2\epsilon\mu = \frac{\omega^2}{c^2}
 $$
 and then $\vec H_0 = Z^{-1}\,\vec u_\Phi\times\vec E_0$, with $\vec u_\Phi = 2\pi\vec\nu_\Phi/|2\pi\vec\nu_\Phi|$. The amplitude satisfies $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$, the two normalised halves $i\sqrt{\epsilon}\,\vec E_0$ and $-\sqrt{\mu}\,\vec H_0$ have equal magnitude, and the field-strength amplitude is null,
 $$
@@ -167,7 +167,7 @@ Since $\tilde{F}_0$ is a pure vector, $\tilde{F}_0^2 = -\vec F_0\cdot\vec F_0 = 
 
 **Solution (b).** The four-wavevector is null as well. Its biquaternion norm is
 $$
-\langle\tilde P_{\Phi}\rangle_{\natural} = \left(\frac{i\omega}{c}\right)^2 + 2\pi\vec\nu_\Phi^2 = -\frac{\omega^2}{c^2} + 4\pi^{2}\nu_{\Phi}^2 = 0
+\langle\tilde P_{\Phi}\rangle_{\natural} = \left(\frac{i\omega}{c}\right)^2 + 4\pi^{2}\nu_{\Phi}^{2} = -\frac{\omega^2}{c^2} + 4\pi^{2}\nu_{\Phi}^2 = 0
 $$
 by the dispersion relation of Problem 1. So $\tilde P_{\Phi}$ is a nonzero null element, hence a zero divisor, and Problem 1 established that
 $$

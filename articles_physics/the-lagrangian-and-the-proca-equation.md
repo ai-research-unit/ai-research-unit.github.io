@@ -162,7 +162,7 @@ symmetric term by term: the improvement was needed to symmetrise the canonical f
 - **Positive energy.** The energy density is $\tfrac12(\epsilon\vec E^2+\vec B^2/\mu)+\tfrac12\nu_m^2\bigl((a'_t)^2+\vec A^2\bigr)$, positive for the sign of the action used here.
 - **Trace.** $T_{\imath\imath}=-4\pi^{2}\nu_m^2\langle\tilde A_\Phi\rangle_\natural$ **exactly**: the field terms give $-F^2+F^2$ because $\delta_{\imath\imath}=4$ in four dimensions, and the mass term gives $\nu_m^2(A^2-2A^2)$. The trace therefore vanishes if and only if the local four-vector is lightlike.
 
-**The numerical checks.** On the plane wave of the section below, with $k'^2_t=2\pi\vec\nu_\Phi^2+4\pi^{2}\nu_m^2$ and the Lorenz condition satisfied, the divergence $\partial_{\jmath} T_{\imath\jmath}$ vanishes at the level of $10^{-5}$, which is the accuracy of the difference scheme, and the trace equals $-\nu_m^2\langle\tilde A_\Phi\rangle_\natural$ to machine precision ($0$ in the difference of the two sides). The two checks separate what the algebra asserts from what the equation supplies: the trace is an algebraic identity, the conservation is the equation of motion.
+**The numerical checks.** On the plane wave of the section below, with $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$ and the Lorenz condition satisfied, the divergence $\partial_{\jmath} T_{\imath\jmath}$ vanishes at the level of $10^{-5}$, which is the accuracy of the difference scheme, and the trace equals $-\nu_m^2\langle\tilde A_\Phi\rangle_\natural$ to machine precision ($0$ in the difference of the two sides). The two checks separate what the algebra asserts from what the equation supplies: the trace is an algebraic identity, the conservation is the equation of motion.
 
 **The closed form of Article 1 is the same object.** Article 1 records the current and the tensor in closed form in the algebra's letters — the Gsponer–Hurni expressions, completed by reversal. The display above is their component reading, and the reversal completion of Article 1 is the statement that the index form is already symmetric: a part added to its own reversal is reversal-even, and a symmetric two-index object is exactly that. The two writings are therefore one object, and a reader who compares them is comparing the algebra's letters with the components, not two tensors.
 
@@ -217,7 +217,7 @@ The divergence of the equation forces the Lorenz condition, and the variational 
 | $\mathcal{L}$ | Lagrangian density |
 | $T_{\imath\jmath}$ | Symmetric energy–momentum tensor |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
-| $\theta_{\mathrm{pwp}}=k'_t r'_t-2\pi\vec\nu_\Phi\cdot\vec r$ | Plane-wave phase |
+| $\theta_{\mathrm{pwp}}=2\pi\nu'_t r'_t-2\pi\vec\nu_\Phi\cdot\vec r$ | Plane-wave phase |
 
 ## Further Reading
 
@@ -235,7 +235,7 @@ The divergence of the equation forces the Lorenz condition, and the variational 
 
 ## Aside: Exact Solutions and What They Show
 
-**Plane waves.** With $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$ and $\theta_{\mathrm{pwp}}=k'_t r'_t-2\pi\vec\nu_\Phi\cdot\vec r$, the equation requires the dispersion relation $k'^2_t=2\pi\vec\nu_\Phi^2+4\pi^{2}\nu_m^2$ and the Lorenz condition requires the amplitude relation $a'_{t,0}=2\pi\vec\nu_\Phi\cdot\vec A_0/k'_t$. Three amplitude directions survive at each wavevector: two transverse and one longitudinal. These are the parent's modes, and the action adds only that they extremize it.
+**Plane waves.** With $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$ and $\theta_{\mathrm{pwp}}=2\pi\nu'_t r'_t-2\pi\vec\nu_\Phi\cdot\vec r$, the equation requires the dispersion relation $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$ and the Lorenz condition requires the amplitude relation $a'_{t,0}=\vec\nu_\Phi\cdot\vec A_0/\nu'_t$. Three amplitude directions survive at each wavevector: two transverse and one longitudinal. These are the parent's modes, and the action adds only that they extremize it.
 
 **A toroidal family.** Because the action implies the Lorenz condition and hence the componentwise Klein–Gordon equation, solutions can be built from scalar ones. Take a real scalar $\psi$ with $(\Box_\Phi-4\pi^{2}\nu_m^2)\psi=0$ and set
 
@@ -243,6 +243,6 @@ $$
 \vec A=\vec\nabla_\Phi\psi\times\vec r ,\qquad a'_t=0 .
 $$
 
-Then $\vec\nabla_\Phi\cdot\vec A=\vec r\cdot(\vec\nabla_\Phi\times\nabla\psi)-\vec\nabla_\Phi\psi\cdot(\vec\nabla_\Phi\times\vec r)=0$, so the Lorenz condition holds identically, and $\Box_\Phi\vec A=\vec\nabla_\Phi(\Box_\Phi\psi)\times\vec r=4\pi^{2}\nu_m^2\vec A$ because the curl of a gradient vanishes and $\vec r$ is static. This is an exact non-plane solution: with $\psi=j_0(\kappa r)\cos(k'_t r'_t)$ and $\kappa^2=k'^2_t-4\pi^{2}\nu_m^2$ it is a spherical, toroidal-vector field. The identity is verified by finite differences at the level of $10^{-7}$ on a smooth configuration, which is the accuracy of the difference scheme. The family is the corpus's first exact Proca solution that is not a superposition of plane waves.
+Then $\vec\nabla_\Phi\cdot\vec A=\vec r\cdot(\vec\nabla_\Phi\times\nabla\psi)-\vec\nabla_\Phi\psi\cdot(\vec\nabla_\Phi\times\vec r)=0$, so the Lorenz condition holds identically, and $\Box_\Phi\vec A=\vec\nabla_\Phi(\Box_\Phi\psi)\times\vec r=4\pi^{2}\nu_m^2\vec A$ because the curl of a gradient vanishes and $\vec r$ is static. This is an exact non-plane solution: with $\psi=j_0(\kappa r)\cos(2\pi\nu'_t r'_t)$ and $\kappa^2=4\pi^{2}\nu_t^{\prime\,2}-4\pi^{2}\nu_m^2$ it is a spherical, toroidal-vector field. The identity is verified by finite differences at the level of $10^{-7}$ on a smooth configuration, which is the accuracy of the difference scheme. The family is the corpus's first exact Proca solution that is not a superposition of plane waves.
 
 **No pure-gradient solution.** Take $\tilde A_\Phi=(\tilde\nabla_\Phi)\Gamma$ for a real scalar $\Gamma$. Then $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}(\tilde\nabla_\Phi)\Gamma)=+\Box_\Phi\Gamma$ — the composition of the gradient with its conjugate is the d'Alembertian with a plus sign, since the two time derivatives each carry an $i$ and the two spatial ones do not — so the Lorenz condition forces $\Box_\Phi\Gamma=0$; the equation then forces $4\pi^{2}\nu_m^2(\tilde\nabla_\Phi)\Gamma=0$, that is, $\Gamma$ constant and the field zero. So the massive theory admits no non-trivial pure-gradient solution. This is the variational form of "there is no gauge freedom": in the massless theory the pure gradients are exactly the gauge orbit, and here the orbit has collapsed to a point. The statement is exact and needs no approximation.

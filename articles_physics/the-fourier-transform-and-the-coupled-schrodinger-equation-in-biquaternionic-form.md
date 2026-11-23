@@ -53,7 +53,7 @@ $$
 so the symbol is the parent's dispersion relation written as a function,
 
 $$
-\sigma_{\mathrm{gco}}(\omega,2\pi\vec\nu_{\Phi})=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}-\frac{1}{2m}\big\lvert h\,2\pi\vec\nu_{\Phi}-q\vec A\big\rvert^{2}.
+\sigma_{\mathrm{gco}}(\omega,2\pi\vec\nu_{\Phi})=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}-\frac{1}{2m}\big\lvert h\,\vec\nu_{\Phi}-q\vec A\big\rvert^{2}.
 $$
 
 It is scalar because the operator is central and second order in space. The kinetic operator is a sum of squares of central first-order operators, so its symbol is the corresponding sum of squares of numbers. The vector structure of the algebra does not appear, and the four coefficients obey four copies of one scalar equation.
@@ -66,13 +66,13 @@ $$
 
 so the symbol is $\sigma_{\mathrm{gco}}(\omega)=hf_{\mathrm{frq}}\,e_t-\tilde H^{\mathrm{gco}}_\Psi$, and the determinant is $\big((hf_{\mathrm{frq}}-h_t+ϙ\omicron_{\mathrm{pot}})^{2}-\lvert\vec h_\Psi-q\vec A\rvert^{2}\big)^{2}$. The element survives because the free Hamiltonian had a vector part, and the connection shifts that part by the vector potential.
 
-The two settings do not compete. The operator setting's scalar symbol is the symbol of the differential operator; the constant setting's element symbol is the symbol of the ordinary differential equation. They coincide on a plane wave of a constant Hamiltonian with $\vec h_\Psi=h\,2\pi\vec\nu_\Phi$, which is the statement that the two settings agree where both are defined.
+The two settings do not compete. The operator setting's scalar symbol is the symbol of the differential operator; the constant setting's element symbol is the symbol of the ordinary differential equation. They coincide on a plane wave of a constant Hamiltonian with $\vec h_\Psi=h\,\vec\nu_\Phi$, which is the statement that the two settings agree where both are defined.
 
 Which symbol carries which finding. The translation identity of §*The Symbol Is the Free One With Two Translations* is the operator setting's. The gap of §*The Curvature Is Invariant and the Gap Moves* is the constant setting's. The article keeps them apart and says so at each step, because a sentence that mixes them is a sentence about neither.
 
 ## The Symbol Is the Free One With Two Translations
 
-The identity. With $\sigma_{\mathrm{free}}(\omega,2\pi\vec\nu_{\Phi})=hf_{\mathrm{frq}}-\lvert h\,2\pi\vec\nu_{\Phi}\rvert^{2}/(2m)$,
+The identity. With $\sigma_{\mathrm{free}}(\omega,2\pi\vec\nu_{\Phi})=hf_{\mathrm{frq}}-\lvert h\,\vec\nu_{\Phi}\rvert^{2}/(2m)$,
 
 $$
 \sigma_{\mathrm{gco}}(\omega,\vec\nu_{\Phi})=\sigma_{\mathrm{free}}\Big(\omega+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h},\;\vec\nu_{\Phi}+\frac{ϙ\vec A}{h}\Big).
@@ -146,7 +146,7 @@ The ranks are the free ranks. The symbol is invertible off the zeros, has rank t
 
 The degenerate case moves as one number. For $\vec h_\Psi=0$ and $\vec A=0$ the pair collapses to the single value $h_t-ϙ\omicron_{\mathrm{pot}}$, and the gap is zero. A scalar potential shifts the collapse point and does not open a gap, which is the statement that an electric potential cannot create structure.
 
-The pole set is a function of the two invariants. $\mathcal E=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $\vec\pi=h\,2\pi\vec\nu_{\Phi}-q\vec A$ are the only combinations that appear, so the zero set is a locus in the space of invariants. Gauge transformations move the coordinates and not the locus, and that sentence is the whole of this section's content.
+The pole set is a function of the two invariants. $\mathcal E=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $\vec\pi=h\,\vec\nu_{\Phi}-q\vec A$ are the only combinations that appear, so the zero set is a locus in the space of invariants. Gauge transformations move the coordinates and not the locus, and that sentence is the whole of this section's content.
 
 What the spacing is not. It is not a mass. The gap of the free Schrödinger symbol is $2\lvert\vec h_\Psi\rvert$, which is twice a momentum and not a mass; the mass appears as the curvature. The article keeps the two words apart, because a second-order equation's shell is a mass and a first-order equation's gap is a rate.
 
@@ -180,7 +180,7 @@ The fourth is the field strength's second-order effect. The curvature in the wav
 
 ## Summary
 
-The coupled symbol is the free symbol at a shifted argument. In the operator setting, $\sigma_{\mathrm{gco}}(\omega,2\pi\vec\nu_{\Phi})=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}-\lvert h\,2\pi\vec\nu_{\Phi}-q\vec A\rvert^{2}/(2m)$ equals $\sigma_{\mathrm{free}}(\omega+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h},\vec\nu_{\Phi}-\frac{q\vec A}{h})$, verified over one hundred draws with zero residual. The sign of the frequency shift is plus, because the parent's temporal slot carries $i \frac{h}{2\pi}\partial_{t'}+ϙ\omicron_{\mathrm{pot}}$, and the opposite sign would differ by $2ϙ\omicron_{\mathrm{pot}}$.
+The coupled symbol is the free symbol at a shifted argument. In the operator setting, $\sigma_{\mathrm{gco}}(\omega,2\pi\vec\nu_{\Phi})=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}-\lvert h\,\vec\nu_{\Phi}-q\vec A\rvert^{2}/(2m)$ equals $\sigma_{\mathrm{free}}(\omega+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h},\vec\nu_{\Phi}-\frac{q\vec A}{h})$, verified over one hundred draws with zero residual. The sign of the frequency shift is plus, because the parent's temporal slot carries $i \frac{h}{2\pi}\partial_{t'}+ϙ\omicron_{\mathrm{pot}}$, and the opposite sign would differ by $2ϙ\omicron_{\mathrm{pot}}$.
 
 The curvature in the wave vector is $-\frac{h^{2}}{4\pi^{2}}/m=-0.588235$, the same with no connection, with $\vec A$ and with $2\vec A$. The gap in the constant setting is $2\lvert\vec h_\Psi-q\vec A\rvert$: $1.232882$ free and $1.503329$ with $ϙ\vec A=(0.35,0.25,0)$, while $ϙ\omicron_{\mathrm{pot}}=0.4$ alone left the gap at $1.232883$ and moved the symbol by $-0.360000$. The scalar potential translates the pair and the vector potential separates it, and the effective mass is the bare mass.
 

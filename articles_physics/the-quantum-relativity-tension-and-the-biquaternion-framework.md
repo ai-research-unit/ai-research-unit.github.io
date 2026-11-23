@@ -245,7 +245,7 @@ Three interpretations cut across the difficulties. The arrow of process is the s
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Electromagnetic field-strength bivector, in $\mathrm{span}_\mathbb{R}\{\vec e_\eta,i\vec e_\eta\}$, in neither sector |
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit algebra of Programme 4 |
 | $c$, $c_0$ | Speed of light in the medium, $c=1/\sqrt{\epsilon\mu}$, and its vacuum value |
-| $\frac{h}{2\pi}$ | Reduced Planck constant (in the path-integral weight $\exp(i\theta_{\mathrm{act}})$) |
+| $\frac{h}{2\pi}$ | The action of one radian of phase (in the path-integral weight $\exp(i\theta_{\mathrm{act}})$) |
 | $i r'_t$ | Material time coordinate (local $c=1/\sqrt{\epsilon\mu}$) |
 
 ## Further Reading

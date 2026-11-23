@@ -59,7 +59,7 @@ $$
 S_{\mathrm{cl}}=\int\mathrm{d}^{4}x\;\varrho^{2}\Bigl[\Bigl(\partial_{r'_{t}}S+\frac{q\omicron_{\mathrm{pot}}}{c}\Bigr)^{2}-\lvert\vec\pi\rvert^{2}-m^{2}c^{2}\Bigr]
 $$
 
-with $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ and $m^{2}c^{2}=\frac{h^{2}}{4\pi^{2}}4\pi^{2}\nu_m^{2}$; the bracket's first factor is $-\mathcal E/c$.
+with $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ and $m^{2}c^{2}=h^{2}\nu_m^{2}$; the bracket's first factor is $-\mathcal E/c$.
 
 The action is degenerate in the scale. No term carries a derivative of $\varrho$, so the scale's variation is algebraic and its momentum vanishes. The scale is a Lagrange multiplier of one constraint, and the constraint is the mechanical mass shell.
 

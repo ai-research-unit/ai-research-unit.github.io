@@ -205,7 +205,7 @@ Every number below is recorded in both languages, the algebra and a display of t
 
 *At generic lightlike momenta*: the nullity is six, the four-dimensional space of pure-gauge modes $\tilde{Ξ}_{\imath}\propto\partial/\partial x_{\imath}\epsilon$ is a subspace, the divergence vanishes on the whole solution space, the trace does not, and adjoining the trace leaves four. The trace values of the solutions span a space of dimension two, which is the space of trace shifts the gauge transformation produces.
 
-*In the algebra*: the trace map has rank four on the sixteen complex components. On a null momentum the symbol of the gradient, $i h\,\tilde\Upsilon_{\Phi}=-h\,\nu_t^{\prime}\,e_t+i h\,\vec\nu_\Phi$, is a zero divisor. The null condition is its quaternion norm, $-\frac{h^{2}}{4\pi^{2}}\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=\frac{h^{2}}{4\pi^{2}}\bigl(\nu_t^{\prime\,2}-\lvert\vec\nu_\Phi\rvert^{2}\bigr)=0$, which is $\nu_t^{\prime\,2}=\lvert\vec\nu_\Phi\rvert^{2}$, that is $\varpi^{2}=c^{2}\,2\pi\vec\nu_\Phi^{\,2}$ at $\nu_m=0$, and not $\nu_t^{\prime\,2}=-\lvert\vec\nu_\Phi\rvert^{2}$. Then left multiplication by $i h\,\tilde\Upsilon_{\Phi}$ has rank two and a two-dimensional kernel, checked on four independent null momenta. On a non-null momentum the same left multiplication has rank four and no kernel. That kernel is where the two helicities live, and it is the algebraic reason the massless count is the count it is.
+*In the algebra*: the trace map has rank four on the sixteen complex components. On a null momentum the symbol of the gradient, $i h\,\tilde\Upsilon_{\Phi}=-h\,\nu_t^{\prime}\,e_t+i h\,\vec\nu_\Phi$, is a zero divisor. The null condition is its quaternion norm, $-\frac{h^{2}}{4\pi^{2}}\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=\frac{h^{2}}{4\pi^{2}}\bigl(\nu_t^{\prime\,2}-\lvert\vec\nu_\Phi\rvert^{2}\bigr)=0$, which is $\nu_t^{\prime\,2}=\lvert\vec\nu_\Phi\rvert^{2}$, that is $\varpi^{2}=c^{2}\,4\pi^{2}\nu_{\Phi}^{2}$ at $\nu_m=0$, and not $\nu_t^{\prime\,2}=-\lvert\vec\nu_\Phi\rvert^{2}$. Then left multiplication by $i h\,\tilde\Upsilon_{\Phi}$ has rank two and a two-dimensional kernel, checked on four independent null momenta. On a non-null momentum the same left multiplication has rank four and no kernel. That kernel is where the two helicities live, and it is the algebraic reason the massless count is the count it is.
 
 *The transverse map.* The map $T$ of §*The Transverse Condition on the Vector Index* was checked on fifty generic families of three components: it is unchanged by a second application to $3\times10^{-16}$, it annihilates every longitudinal family $\tilde\xi_k=\vec e_\eta\tilde\zeta$, it fixes every family with $\sum_\eta\vec e_\eta\tilde\xi_k=0$, and its rank over the vector index is two.
 
@@ -257,9 +257,9 @@ $$
 $$
 with $\tilde Q=x_0e_t+\sum_\eta x_\eta\vec e_\eta$ the coordinate element and $\tilde P_{\Phi}=p_0e_t+\sum_\eta p_\eta\vec e_\eta$ its conjugate momentum, the Dirac equation on the component requires $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ in the normalization of the companion Dirac article, that is,
 $$
-\frac{\varpi^2}{c^2} - 2\pi\vec\nu_\Phi^2 = 4\pi^{2}\nu_m^{2},
+\frac{\varpi^2}{c^2} - 4\pi^{2}\nu_{\Phi}^{2} = 4\pi^{2}\nu_m^{2},
 \qquad\text{i.e.}\qquad
-\varpi^2 = c^4\pi\vec\nu_\Phi^2 + c^2\,4\pi^{2}\nu_m^{2},
+\varpi^2 = c^{2}\,4\pi^{2}\nu_{\Phi}^{2} + c^2\,4\pi^{2}\nu_m^{2},
 $$
 the same physical massive shell as the Proca field. The trace constraint and the subsidiary conditions then reduce the sixteen components to the four states of the quartet, with the three-momentum on the shell. The dispersion relation is therefore common to the massive spin-one and spin-$\tfrac32$ fields, as it must be: the mass shell is a property of the representation's Casimir and not of the index structure. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 

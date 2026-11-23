@@ -323,7 +323,7 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $\tilde R_\Phi$, $\tilde\Upsilon_{\Phi}$ | Four-position and four-wavevector, in $\mathbb{B}_{\Phi}$ (cited) |
 | $\langle\tilde{Q}\rangle_{\natural}$ | Biquaternion norm (cited) |
 | $\Box_\Phi$ | The d'Alembertian in the material reading, central and scalar (cited) |
-| $c$, $\frac{h}{2\pi}$, $m$ | Speed of light in the medium, reduced Planck constant, mass |
+| $c$, $\frac{h}{2\pi}$, $m$ | Speed of light in the medium, the action of one radian of phase, mass |
 
 ## Further Reading
 

@@ -141,7 +141,7 @@ $$
 \boxed{\;\kappa\le \nu_m,\qquad\text{with equality exactly at }\nu_t^{\prime}=0\;}
 $$
 
-and the decay length of the asymptotic tail $1/(2\pi\kappa)$ cannot be shorter than $1/(2\pi\nu_m)=\frac{h}{2\pi mc}$. **The tail of a bound state of this equation cannot fall off faster than one reduced Compton wavelength, and the bound is saturated at zero frequency.** The statement is about the tail and not about the support: a wavefunction has structure inside the well that may be narrower than that, and only its exponential fall-off is bounded. For the electron that length is $3.8616\times10^{-13}\ \mathrm{m}$.
+and the decay length of the asymptotic tail $1/(2\pi\kappa)$ cannot be shorter than $1/(2\pi\nu_m)=\frac{h}{2\pi mc}$. **The tail of a bound state of this equation cannot fall off faster than one radian of the mass phase, and the bound is saturated at zero frequency.** The statement is about the tail and not about the support: a wavefunction has structure inside the well that may be narrower than that, and only its exponential fall-off is bounded. For the electron that length is $3.8616\times10^{-13}\ \mathrm{m}$.
 
 This is the strongest statement the position makes, and it is not a statement about a potential. No well, however deep, can push a bound position off the circle, and no well can push it past $\kappa=\nu_m$ without the frequency ceasing to be real. A would-be state that needs $\kappa>\nu_m$ does not become a tighter bound state; it leaves the real-frequency slice altogether and lands in the third row of the table, where nothing is stationary. The ceiling is therefore a statement about the equation, not about the well.
 
@@ -204,7 +204,7 @@ $$
 which is the reciprocal of the transmission amplitude up to a phase, and whose zeros are the poles of $S$. At $\eta=10$ the zeros fall in both positions, and none of them is an approximation:
 
 | the zero | $2\pi\nu_{\Phi}a$ | $E/V_0$ | $\lvert\Im E\rvert/V_0$ | $\Gamma/V_0$ | $Q$ |
-|---|---|---|---|---|
+|---|---|---|---|---|---|
 | bound, first | $1.92693\,i$ | $-0.0371$ | — | — | $\infty$ |
 | bound, second | $6.41057\,i$ | $-0.4110$ | — | — | $\infty$ |
 | bound, third | $8.54684\,i$ | $-0.7305$ | — | — | $\infty$ |
@@ -237,7 +237,7 @@ $$
 \Im \nu_{\mathrm{s}}=\frac{\Re \nu_{\Phi}\,\Im \nu_{\Phi}}{\nu_m}=-\frac{\Re\nu_{\Phi}\,\alpha}{2\pi\nu_m},
 $$
 
-so $\Gamma=2\frac{h}{2\pi} c\,\Re\nu_{\Phi}\,\alpha/\nu_m=2\frac{h}{2\pi} v\alpha$ with $v=h\,\Re\nu_{\Phi}/m$. The width is twice the momentum times the attenuation, which is the statement that a wave attenuated by $e^{-\alpha x}$ loses its probability over a length $1/(2\alpha)$, and the two forms are the same because $\nu_{\mathrm{s}}=\nu_{\Phi}^{2}/(2\nu_m)$ is a polynomial in $\nu_{\Phi}$. Verified on the table's first resonance: $\Gamma=2(7.21923)(2.29987)$ in units of $\frac{h^{2}}{4\pi^{2}}/(ma^{2})$ and $\lvert\Im(ka)^{2}\rvert$ agree to a relative difference of exactly zero, as they must, since $\Im(k^{2})=2\Re \nu_{\Phi}\,\Im \nu_{\Phi}$ identically, and dividing by $\eta^{2}=100$ gives the table's $\Gamma/V_0=0.6641$, which is twice its $\lvert\Im E\rvert/V_0=0.3321$.
+so $\Gamma=2\frac{h}{2\pi} c\,\Re\nu_{\Phi}\,\alpha/\nu_m=2\frac{h}{2\pi} v\alpha$ with $v=h\,\Re\nu_{\Phi}/m$. The width is twice the momentum times the attenuation, which is the statement that a wave attenuated by $e^{-\alpha x}$ loses its probability over a length $1/(2\alpha)$, and the two forms are the same because $\nu_{\mathrm{s}}=\nu_{\Phi}^{2}/(2\nu_m)$ is a polynomial in $\nu_{\Phi}$. Verified on the table's first resonance: $\Gamma=2(7.21923)(2.29987)$ in units of $\frac{h^{2}}{4\pi^{2}}/(ma^{2})$ and $\lvert\Im(2\pi\nu_{\Phi}a)^{2}\rvert$ agree to a relative difference of exactly zero, as they must, since $\Im\bigl((2\pi\nu_{\Phi})^{2}\bigr)=8\pi^{2}\Re\nu_{\Phi}\,\Im\nu_{\Phi}$ identically, and dividing by $\eta^{2}=100$ gives the table's $\Gamma/V_0=0.6641$, which is twice its $\lvert\Im E\rvert/V_0=0.3321$.
 
 In the relativistic variable the second form holds to first order, and the order is measured. With $\nu_t^{\prime}=\sqrt{\nu_{\Phi}^{2}+\nu_m^{2}}$ the chain rule gives $\Im \nu_t^{\prime}\approx(\Re \nu_{\Phi}/\nu_t^{\prime\,0})\Im \nu_{\Phi}$, hence $\Gamma\approx2\frac{h}{2\pi} v_g\alpha$ with $v_g=c\Re \nu_{\Phi}/\nu_t^{\prime\,0}$. At $\nu_{\Phi}=\nu_m$ and $\alpha=10^{-2}$ the exact imaginary part is $-7.071156\times10^{-3}$ against the first-order $-7.071068\times10^{-3}$, a relative difference of $1.25\times10^{-5}$; at $\alpha=10^{-3}$ the same quotient is $1.25\times10^{-7}$ and at $10^{-4}$ it is $1.25\times10^{-9}$. The error falls as $\alpha^{2}$, which is what a second-order term should do, and the exact form is the one without a small parameter.
 
@@ -317,7 +317,7 @@ One zero, three positions. The zero set of the symbol is the graph $\nu_{\Phi}^{
 
 Two questions, and one combination that cannot occur. A real frequency forces a real momentum squared, so no mode oscillates in time while being neither a plane wave nor an exponential in space. The consequence is the theorem about decay: with real parameters the zero is real or purely imaginary and never genuinely complex, so a decaying position needs a medium or a continuum. A purely imaginary frequency is reachable and holds nothing stationary; it is where the second position goes when its localisation would need $\kappa>\nu_m$.
 
-The bound positions lie on a circle of radius $\nu_m$. Verified to $2.2\times10^{-16}$ over twelve depths of a Klein–Gordon well, the circle says that the decay constant is bounded by the mass wave number and that the bound is saturated at zero frequency. So the tail of a bound state cannot fall off faster than one reduced Compton wavelength, which is a statement about the equation and not about the well. The Galilean symbol replaces the circle by a parabola and destroys the ceiling, and hydrogen realises the ceiling exactly at $\mathfrak Z\alpha=1$, the endpoint of the corpus's exact spectrum.
+The bound positions lie on a circle of radius $\nu_m$. Verified to $2.2\times10^{-16}$ over twelve depths of a Klein–Gordon well, the circle says that the decay constant is bounded by the mass wave number and that the bound is saturated at zero frequency. So the tail of a bound state cannot fall off faster than one radian of the mass phase, which is a statement about the equation and not about the well. The Galilean symbol replaces the circle by a parabola and destroys the ceiling, and hydrogen realises the ceiling exactly at $\mathfrak Z\alpha=1$, the endpoint of the corpus's exact spectrum.
 
 The resonance is the same zero off the axis. A determinant with the reflection symmetry $D(-\overline{\nu_{\Phi}})=\overline{D(\nu_{\Phi})}$ has its bound zeros on the fixed locus and its resonance zeros in pairs across it; one well of $\eta=10$ has four of the first and a ladder of the second, all zeros of one analytic function. The retarded condition selects the decaying member, and that selection is the choice of sheet the corpus's unstable-state article describes, seen here as a choice between two positions of one zero rather than between two sheets of one pole.
 
@@ -333,7 +333,7 @@ The partition is a partition of the centre. The symbol is central, so its zero i
 | $\sigma_{\mathrm{s}}$ | the Schrödinger symbol, $\nu_{\mathrm{s}}-\nu_{\Phi}^{2}/(2\nu_m)$; affine in the energy |
 | $\nu_t^{\prime}$ | the energy wave number, $\frac{E}{h\,c}$; the frequency of a mode |
 | $\nu_{\Phi}^{2}$ | the quadratic invariant $\vec\nu_\Phi\cdot\vec\nu_\Phi$, complex bilinear and not a modulus squared |
-| $\nu_{\mathrm{s}}$ | the energy above rest, $\nu_t^{\prime}-\nu_m=(E-mc^{2})\frac{2\pi}{h\,c}$ |
+| $\nu_{\mathrm{s}}$ | the energy above rest, $\nu_t^{\prime}-\nu_m=(E-mc^{2})\frac{1}{h\,c}$ |
 | $\nu_m$ | the mass wave number, $\frac{m\,c}{h}$; the radius of the circle, and the ceiling on $\kappa$ |
 | $\vec\kappa$ | the decay vector, $\vec\nu_\Phi=i\vec\kappa$, with $\kappa=\sqrt{-\nu_{\Phi}^{2}}>0$ in the bound position |
 | $\eta$ | the well strength, $\frac{2\pi a\sqrt{2mV_0}}{h}$; dimensionless, and the count of bound zeros is $\lfloor\eta/\pi\rfloor+1$ |

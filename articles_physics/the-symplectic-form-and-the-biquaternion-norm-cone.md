@@ -279,14 +279,14 @@ which is the Minkowski interval; its zero set $\langle\tilde R_\Phi\rangle_{\nat
 The same computation identifies the characteristic cone of the d'Alembertian. For a plane-wave biquaternion $\tilde P_{\Phi}=\frac{i\omega}{c}e_t+2\pi\vec\nu_\Phi$, the biquaternion norm is
 
 $$
-\boxed{\;\langle\tilde P_{\Phi}\rangle_{\natural}=-\frac{\omega^2}{c^2}+2\pi\vec\nu_\Phi^2\;},
+\boxed{\;\langle\tilde P_{\Phi}\rangle_{\natural}=-\frac{\omega^2}{c^2}+4\pi^{2}\nu_{\Phi}^{2}\;},
 $$
 
-and $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ is the dispersion relation $\omega^2/c^2=2\pi\vec\nu_\Phi^2$ of the wave equation $\Box_\Phi\tilde{Ξ}=0$. On a plane wave of frequency $\omega$ and wave vector $\vec\nu_\Phi$, whose wave biquaternion is $\tilde P_{\Phi}=\frac{i\omega}{c}e_t+2\pi\vec\nu_\Phi$, the operator $\Box_\Phi=\partial^2/\partial R_t^2+\Delta_\Phi$ acts as the eigenvalue
+and $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ is the dispersion relation $\omega^2/c^2=4\pi^{2}\nu_{\Phi}^{2}$ of the wave equation $\Box_\Phi\tilde{Ξ}=0$. On a plane wave of frequency $\omega$ and wave vector $\vec\nu_\Phi$, whose wave biquaternion is $\tilde P_{\Phi}=\frac{i\omega}{c}e_t+2\pi\vec\nu_\Phi$, the operator $\Box_\Phi=\partial^2/\partial R_t^2+\Delta_\Phi$ acts as the eigenvalue
 
 $$
 (iK_0)^2+(2\pi i\vec\nu_\Phi)^2
-=-\left(K_0^2+2\pi\vec\nu_\Phi^2\right)=-\langle\tilde P_{\Phi}\rangle_{\natural}=\frac{\omega^2}{c^2}-2\pi\vec\nu_\Phi^2,
+=-\left(K_0^2+4\pi^{2}\nu_{\Phi}^{2}\right)=-\langle\tilde P_{\Phi}\rangle_{\natural}=\frac{\omega^2}{c^2}-4\pi^{2}\nu_{\Phi}^{2},
 \qquad K_0=\frac{i\omega}{c},
 $$
 

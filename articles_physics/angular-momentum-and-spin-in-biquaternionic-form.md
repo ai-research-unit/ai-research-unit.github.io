@@ -18,7 +18,7 @@ $$
 \mathsf{M}_2(i \vec e_\eta) = \sigma_\eta, \qquad \mathsf{M}_2\bigl(h_t e_t + i \sum_\eta h_\eta \vec e_\eta\bigr) = h_t I_2 + \sum_\eta h_\eta \sigma_\eta .
 $$
 
-The scalar imaginary is $i$, the quaternion basis satisfies $e_t=1$, $\vec e_\eta^2=-e_t$, and $\vec e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmath\lambda}\,\vec e_\lambda$ for ${\imath}\neq\jmath$. The reduced Planck constant $\frac{h}{2\pi}$ is written explicitly; the algebra literature often measures the action in units of $\frac{h}{2\pi}$, and the commutation relation quoted in the scope, $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=i\epsilon_{ij\eta}L_{\mathrm{orb},\eta}$, is the form of the relations below with the action in units of $\frac{h}{2\pi}$.
+The scalar imaginary is $i$, the quaternion basis satisfies $e_t=1$, $\vec e_\eta^2=-e_t$, and $\vec e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmath\lambda}\,\vec e_\lambda$ for ${\imath}\neq\jmath$. The action of one radian of phase, $\frac{h}{2\pi}$, is written explicitly; the algebra literature often measures the action in units of $\frac{h}{2\pi}$, and the commutation relation quoted in the scope, $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=i\epsilon_{ij\eta}L_{\mathrm{orb},\eta}$, is the form of the relations below with the action in units of $\frac{h}{2\pi}$.
 
 ## The Angular-Momentum Algebra
 

@@ -147,7 +147,7 @@ Setting each symbol to zero with $\vec A=0$ gives
 $$
 \text{(E2)}\qquad \bigl(2\pi\nu_t'-c_t\bigr)^{2}=\lvert\vec\kappa\rvert^{2}+4\pi^{2}\nu_m^{2},
 \qquad\qquad
-\text{(E1)}\qquad 2\pi\nu_t'^{2}=\lvert\vec\kappa\rvert^{2}+4\pi^{2}\nu_m^{2}+c_t^{2}.
+\text{(E1)}\qquad (2\pi\nu_t')^{2}=\lvert\vec\kappa\rvert^{2}+4\pi^{2}\nu_m^{2}+c_t^{2}.
 $$
 
 The first is the parent's $(\omega-c_t)^{2}-\lvert\vec\kappa\rvert^{2}-4\pi^{2}\nu_m^{2}=0$, the second its $\omega^{2}-\lvert\vec\kappa\rvert^{2}-4\pi^{2}\nu_m^{2}-c_t^{2}=0$, with $\omega$ standing for $\nu_t'$ in the parent's letters. Both displays in the parent are correct, and no transposition of a real and an imaginary part is needed to read them.
@@ -233,7 +233,7 @@ The parent's measured complex symbol, $-8.8876+1.86i$, is reproduced exactly by 
 | $a_\eta=\frac{2\pi ϙ}{h}A_\eta$ | The reduced vector potential, real |
 | $\nu_m=\frac{mc}{h}$ | The mass wave number |
 | (E2), the squared reading | $\sum_{\imath}(\sigma_{\imath}+c_{\imath})^{2}$; shell $(2\pi\nu_t'-c_t)^{2}=\lvert\vec\kappa\rvert^{2}+4\pi^{2}\nu_m^{2}$ |
-| (E1), the paired reading | $\sum_{\imath}(\sigma_{\imath}-\bar c_{\imath})(\sigma_{\imath}+c_{\imath})$; shell $2\pi\nu_t'^{2}=\lvert\vec\kappa\rvert^{2}+4\pi^{2}\nu_m^{2}+c_t^{2}$ |
+| (E1), the paired reading | $\sum_{\imath}(\sigma_{\imath}-\bar c_{\imath})(\sigma_{\imath}+c_{\imath})$; shell $(2\pi\nu_t')^{2}=\lvert\vec\kappa\rvert^{2}+4\pi^{2}\nu_m^{2}+c_t^{2}$ |
 | $2c_t(c_t-\nu_t')$ | The difference of the two symbols; real, first order in the potential |
 | $\tilde F=i[D_{\imath},D_{\jmath}]$ | The field strength; a multiplication by $\frac{2\pi iϙ}{h}F_{\imath\jmath}$ |
 | $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ | The mechanical wave number, $\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$ |

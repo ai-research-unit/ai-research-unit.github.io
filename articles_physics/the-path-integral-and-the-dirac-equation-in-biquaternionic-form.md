@@ -48,7 +48,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\,e^{-i\theta_{\mathrm{pwp}}} = 2\pi i\tilde\Upsilon_{\Phi}^{\natural}\,e^{-i\theta_{\mathrm{pwp}}},
 $$
 
-a derived form: the time derivative of the phase is $-ik_{t}^{\prime}$ and the spatial derivative $+ik_k$, the two coordinates of $\tilde\Upsilon_{\Phi}$ and nothing else, with $2\pi\nu_t^{\prime}=\frac{p_0}{h}=\frac{E}{h\,c}$ and $\nu_{\Phi\eta}=\frac{p_\eta}{h}$; on the material sector the time derivative of the gradient is read with $\partial/\partial R_t = -i\,\partial/\partial x_0$ (*Operator and Calculus Conventions*, §*The Gradient*). The product of the two symbols is the symbol of the d'Alembertian,
+a derived form: the time derivative of the phase is $-ik_{t}^{\prime}$ and the spatial derivative $+ik_k$, the two coordinates of $\tilde\Upsilon_{\Phi}$ and nothing else, with $\nu_t^{\prime}=\frac{p_0}{h}=\frac{E}{h\,c}$ and $\nu_{\Phi\eta}=\frac{p_\eta}{h}$; on the material sector the time derivative of the gradient is read with $\partial/\partial R_t = -i\,\partial/\partial x_0$ (*Operator and Calculus Conventions*, §*The Gradient*). The product of the two symbols is the symbol of the d'Alembertian,
 
 $$
 2\pi i\tilde\Upsilon_{\Phi}\,2\pi i\tilde\Upsilon_{\Phi}^{\natural} = -\langle\tilde\Upsilon_{\Phi}\rangle_{\natural} = -\frac{(2\pi)^{2} N}{h^{2}} .
@@ -147,8 +147,8 @@ $$
 \mathcal{G}_F(x,x_2) = \int_0^\infty dT\int_{x(0)=x}^{x(T)=x_2}\mathcal{D}x(\tau)\;
 \exp(i\theta_{\mathrm{act}}),
 \qquad
-S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_{\imath}\frac{dR_{\imath}}{d\tau}\frac{dR_{\imath}}{d\tau} - \frac{h^{2}}{4\pi^{2}}4\pi^{2}\nu_m^{2}\right),
-\qquad  \frac{h^{2}}{4\pi^{2}}4\pi^{2}\nu_m^{2}=m^{2}c^{2},
+S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_{\imath}\frac{dR_{\imath}}{d\tau}\frac{dR_{\imath}}{d\tau} - h^{2}\nu_m^{2}\right),
+\qquad  h^{2}\nu_m^{2}=m^{2}c^{2},
 $$
 
 up to the standard normalisation of the measure and the einbein gauge choice. The tangent is read in the complex coordinate, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, so that for a straight worldline
@@ -180,12 +180,12 @@ where the $i\epsilon$ prescription makes the $T$-integral converge at large $T$.
 
 $$
 \mathcal{G}_F(x,x_2) = \int_0^\infty dT\;\mathcal{N}(T)\;
-\exp\left(-\frac{i}{h}\left[\frac{(x-x_2)^2}{4T} + \frac{h^{2}}{4\pi^{2}}4\pi^{2}\nu_m^{2} T\right]\right),
+\exp\left(-\frac{i}{h}\left[\frac{(x-x_2)^2}{4T} + h^{2}\nu_m^{2} T\right]\right),
 $$
 
 with $\mathcal{N}(T)$ the standard Gaussian normalisation $\propto T^{-2}$, whose precise constant depends on the measure convention and is not needed below. Three features of this expression carry the physics.
 
-- The proper time $T$ is the Schwinger parameter, and the exponent is the classical action of a relativistic free particle, $\frac{(x-x_2)^2}{4T}$ being the kinetic term and $\frac{h^{2}}{4\pi^{2}}4\pi^{2}\nu_m^{2}T=m^{2}c^{2}T$ the mass term, both in units of action; the path integral over $x(\tau)$ is the statement that the exponent is extremised by a straight line, with the fluctuations around it producing the prefactor.
+- The proper time $T$ is the Schwinger parameter, and the exponent is the classical action of a relativistic free particle, $\frac{(x-x_2)^2}{4T}$ being the kinetic term and $h^{2}\nu_m^{2}T=m^{2}c^{2}T$ the mass term, both in units of action; the path integral over $x(\tau)$ is the statement that the exponent is extremised by a straight line, with the fluctuations around it producing the prefactor.
 - The mass is a constant in the exponent. There is no spin and no algebra-valued weight: $\mathcal{G}_F$ is a scalar, and it obeys $(\Box_\Phi - 4\pi^{2}\nu_m^{2})\mathcal{G}_F = i\delta^{(4)}$ up to the measure convention.
 - The first-order structure enters only through the differential prefactor. The Dirac propagator is obtained by applying $\left(\tilde\nabla_\Phi + 2\pi\nu_m\right)$ to $\mathcal{G}_F$, which is why the spin is invisible until that operation is performed.
 
@@ -360,7 +360,7 @@ $$
 depends on the worldline only through its image, the auxiliary field $e(\tau)$ (the einbein) transforming as a density; the parameter $\tau$ has no physical meaning. In the path integral one does not fix $e$ but integrates over it, and the integral over the constant modes of $e$ is precisely the proper-time integral: writing $e(\tau) = T$ for the constant mode, the other modes can be gauged to zero and divide out the volume of the reparametrisation group, and the action becomes
 
 $$
-S = \frac{1}{4T}\int_0^1 \sum_{\imath}\frac{dR_{\imath}}{d\tau}\frac{dR_{\imath}}{d\tau}\,d\tau - \frac{h^{2}}{4\pi^{2}}4\pi^{2}\nu_m^{2} T ,
+S = \frac{1}{4T}\int_0^1 \sum_{\imath}\frac{dR_{\imath}}{d\tau}\frac{dR_{\imath}}{d\tau}\,d\tau - h^{2}\nu_m^{2} T ,
 $$
 
 which is the proper-time exponent of the previous sections, with $T$ identified as the total proper time. The fluctuations of the material trajectory about the straight line — equivalently, in the Fourier form used above, the four-dimensional Gaussian integral over $p$ — produce the $T^{-2}$ prefactor $\mathcal{N}(T)$ of the free kernel.
@@ -489,7 +489,7 @@ In the biquaternion framework, a single odd variable is not an element of the al
 | $\tilde{P}_{\Phi} = ip_0e_t+\vec p$ | Four-momentum element, $\langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = N$ |
 | $N = -p_0^{2}+p_1^{2}+p_2^{2}+p_3^{2}$ | Mass-shell scalar of the momentum, with $p_0 = E/c$ |
 | $i\tilde{P}_{\Phi}$, $i\tilde{P}_{\Phi}^{\natural}$ | Symbols of $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ on a plane wave |
-| $1/\nu_m$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $\nu_m=\frac{mc}{h}$ is the mass parameter |
+| $1/(2\pi\nu_m)$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $\nu_m=\frac{mc}{h}$ is the mass parameter |
 | $\tilde{Ξ}$, $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The field and its two parts, one per letter of the pair |
 | $\mathcal S_L$, $\mathcal S_R$ | Dirac propagator and its two components, the two lines with a source |
 | $\mathcal{G}_F(x-x_2)$ | Scalar (Klein–Gordon) Feynman propagator, $\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\mathcal{G}_F = i\delta^{(4)}$ |

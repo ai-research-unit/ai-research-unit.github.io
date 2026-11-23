@@ -317,7 +317,7 @@ $$
 \mu_B = \frac{e c1/\nu_{m_e}}{2} = 9.274010\times10^{-24}\ \text{J T}^{-1},
 $$
 
-Here $1/\nu_{m_e}=\frac{h}{2\pi m_ec}$ is the electron mass length.
+Here $1/(2\pi\nu_{m_e})=\frac{h}{2\pi m_ec}$ is the electron mass length.
 
 per unit spin for the electron.
 
@@ -394,7 +394,7 @@ The gyromagnetic ratio is $\gamma = g\,ϙ/2m$, with $g = 1$ for a convective mom
 | $\vec\mu(r'_t) = \tilde u_L\vec\mu(0)\tilde u_L^{*}$ | Precession as rotor conjugation |
 | $E = -\vec\mu\cdot\vec B = \mathrm{Sc}(\vec\mu\vec B)$ | Magnetic energy |
 | $\vec\tau = \vec\mu\times\vec B = \mathrm{Vect}(\vec\mu\vec B)$ | Magnetic torque |
-| $\mu_B = ec\dfrac{1}{2\,2\pi\nu_{m_e}}$ | Bohr magneton |
+| $\mu_B = ec\dfrac{1}{4\pi\nu_{m_e}}$ | Bohr magneton |
 
 ## Further Reading
 

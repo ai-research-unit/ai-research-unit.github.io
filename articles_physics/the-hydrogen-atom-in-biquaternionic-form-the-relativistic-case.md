@@ -336,7 +336,7 @@ in which the small part carries the momentum of the large one. **The small part 
 Generate the small functions from the large ones by the action that stands in that relation. In the framework's terms the gradient's vector part, scaled by $c/\nu_m/2c$, is
 
 $$
-\dfrac{1}{2\,2\pi\nu_m}\sum_\eta \vec e_\eta\,\frac{\partial}{\partial x_\eta}
+\dfrac{1}{4\pi\nu_m}\sum_\eta \vec e_\eta\,\frac{\partial}{\partial x_\eta}
 = \frac{i}{2mc}\sum_\eta p_\eta\vec e_\eta ,
 $$
 

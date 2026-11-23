@@ -319,7 +319,7 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $\tilde P_{\Phi}=\frac{h}{2\pi}\,(i\omega/c\,e_t+2\pi\vec\nu_\Phi)$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=-\nu_m^{2}$, equivalently $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^{2}c^{2}$, is the mass shell |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
-| $1/\nu_m$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $\nu_m=\frac{mc}{h}$ is the mass parameter |
+| $1/(2\pi\nu_m)$ | The mass length, $\frac{h}{2\pi mc}$; its reciprocal $\nu_m=\frac{mc}{h}$ is the mass parameter |
 | $\Omega_{\vec\nu_\Phi}=\sqrt{\nu_{\Phi}^{2}+\nu_m^{2}}=\nu_t^{\prime}$ | On-shell frequency, an inverse length: the temporal wave number |
 | $S[\tilde{Ξ}]$ | Klein–Gordon action, central scalar |
 | $S_E[\tilde{Ξ}]$ | Euclidean action, $\ge0$ for $\nu_m^{2}\ge0$ |

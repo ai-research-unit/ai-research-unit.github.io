@@ -30,25 +30,25 @@ The conventions are those of the two companion articles. The algebra is $\mathbb
 $$
 \tilde A_\Phi=\Bigl(i\,a'_t\,e_t+\vec A_0\Bigr)\cos\theta_{\mathrm{pwp}},
 \qquad
-\theta_{\mathrm{pwp}}=k'_t r'_t-2\pi\vec\nu_\Phi\cdot\vec r,
+\theta_{\mathrm{pwp}}=2\pi\nu'_t r'_t-2\pi\vec\nu_\Phi\cdot\vec r,
 \qquad
-a'_t=\frac{2\pi\vec\nu_\Phi\cdot\vec A_0}{k'_t},
+a'_t=\frac{\vec\nu_\Phi\cdot\vec A_0}{\nu'_t},
 $$
 
-with the dispersion relation $k'^2_t=\lvert2\pi\vec\nu_\Phi\rvert^{2}+4\pi^{2}\nu_m^2$. The vector amplitude $\vec A_0$ has three real components, and the scalar amplitude is determined by them. So the solution space at a fixed wavevector is three-dimensional, and the three directions are the three polarizations. In frequency units, $\omega=ck'_t$ and the dispersion relation is $\omega^2=c^2\,4\pi^{2}\nu_{\Phi}^{2}+c^2\,4\pi^{2}\nu_m^2$.
+with the dispersion relation $\nu_t^{\prime\,2}=\nu_{\Phi}^{2}+\nu_m^{2}$. The vector amplitude $\vec A_0$ has three real components, and the scalar amplitude is determined by them. So the solution space at a fixed wavevector is three-dimensional, and the three directions are the three polarizations. In frequency units, $\omega=2\pi c\nu'_t$ and the dispersion relation is $\omega^2=c^2\,4\pi^{2}\nu_{\Phi}^{2}+c^2\,4\pi^{2}\nu_m^2$.
 
 **The two transverse states and the longitudinal one.** Choose the circular basis of the plane transverse to $\hat \nu_{\Phi}$,
 
 $$
 \varepsilon_{\mathrm{fop},\pm}=\frac{\hat e_1\pm i\hat e_2}{\sqrt2},
 \qquad
-\hat 2\pi\nu_{\Phi}\times\varepsilon_{\mathrm{fop},\pm}=\mp i\,\varepsilon_{\mathrm{fop},\pm},
+\hat\nu_{\Phi}\times\varepsilon_{\mathrm{fop},\pm}=\mp i\,\varepsilon_{\mathrm{fop},\pm},
 $$
 
 with $\hat e_1,\hat e_2$ orthonormal and both orthogonal to $\hat \nu_{\Phi}$. These two are the helicity eigenstates: a rotation about $\hat \nu_{\Phi}$ by an angle multiplies them by $e^{\mp i\omicron_{\mathrm{pot}}}$. The third direction is $\hat \nu_{\Phi}$ itself, and it is the longitudinal state, with helicity zero. In the circular basis every vector amplitude decomposes as
 
 $$
-\vec A_0=A_+\,\varepsilon_{\mathrm{fop},+}+A_-\,\varepsilon_{\mathrm{fop},-}+A_L\,\hat 2\pi\nu_{\Phi} ,
+\vec A_0=A_+\,\varepsilon_{\mathrm{fop},+}+A_-\,\varepsilon_{\mathrm{fop},-}+A_L\,\hat\nu_{\Phi} ,
 $$
 
 and all three coefficients are free: this is the whole difference from the massless case, where the Lorenz condition degenerates into the statement $\vec\nu_\Phi\cdot\vec A_0=0$ and removes $A_L$.
@@ -64,7 +64,7 @@ $$
 so that $\vec B=-i\sigma(2\pi\nu_{\Phi}/\omega)\vec E$ with $\sigma=\pm1$ the helicity, and the longitudinal amplitude gives
 
 $$
-\vec E=\frac{4\pi^{2}\nu_m^2}{\omega}\,A_L\,\hat 2\pi\nu_{\Phi}\,\sin\theta_{\mathrm{pwp}},
+\vec E=\frac{4\pi^{2}\nu_m^2}{\omega}\,A_L\,\hat\nu_{\Phi}\,\sin\theta_{\mathrm{pwp}},
 \qquad
 \vec B=0 .
 $$
@@ -99,7 +99,7 @@ $$
 with the upper sign for $\sigma=+1$, where the two weights are $1+ck_\Phi/\omega$ and $1-ck_\Phi/\omega$. For the longitudinal state $\vec B=0$ and
 
 $$
-\vec N=\vec N^*=\vec E=\frac{4\pi^{2}\nu_m^2}{\omega}A_L\hat 2\pi\nu_{\Phi}\sin\theta_{\mathrm{pwp}} .
+\vec N=\vec N^*=\vec E=\frac{4\pi^{2}\nu_m^2}{\omega}A_L\hat\nu_{\Phi}\sin\theta_{\mathrm{pwp}} .
 $$
 
 **Three statements follow, and they are the article's technical content.**
@@ -200,7 +200,7 @@ The origin of the count is the difference of carriers. The potential is a four-v
 | $\vec N=\vec E+ic\vec B$, $\vec N^*=\vec E-ic\vec B$ | Riemann–Silberstein coordinates of the two halves |
 | $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$ | Hodge dual, $\star^2=-1$, $\star\tilde F=-i\tilde F$ |
 | $\tilde\Pi_{\mathrm{id},sd,asd}=\tfrac12(1\pm i\star)$ | Projectors onto the self-dual and anti-self-dual halves |
-| $\varepsilon_{\mathrm{fop},\pm}$ | Circular polarization vectors, $\hat 2\pi\nu_{\Phi}\times\varepsilon_\pm=\mp i\varepsilon_\pm$ |
+| $\varepsilon_{\mathrm{fop},\pm}$ | Circular polarization vectors, $\hat\nu_{\Phi}\times\varepsilon_\pm=\mp i\varepsilon_\pm$ |
 | $A_+,A_-,A_L$ | Amplitudes of the two circular and the longitudinal states |
 | $I_1=\vec E^2-c^2\vec B^2$, $I_2=\vec E\cdot\vec B$ | The two field invariants |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |

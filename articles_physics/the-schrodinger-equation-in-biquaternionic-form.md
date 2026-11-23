@@ -176,7 +176,7 @@ $$
 \tilde{Ξ}(r'_t) \in \mathbb{B}\;},
 $$
 
-where $i$ is the scalar imaginary and $\frac{h}{2\pi}$ is the reduced Planck constant. Because $i$ is central, $i\tilde H_\Psi=\tilde H_\Psi i$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}$ is an algebra, $\tilde H_\Psi\tilde{Ξ}\in\mathbb{B}$ for constant $\tilde H_\Psi$: the equation is consistent in the carrier, and no ideal is needed for the consistency. A coefficient containing $\vec\nabla_\Phi$ differentiates the coefficients of $\tilde{Ξ}$ and multiplies no element on the left, so it changes nothing about the carrier.
+where $i$ is the scalar imaginary and $\frac{h}{2\pi}$ is the action of one radian of phase. Because $i$ is central, $i\tilde H_\Psi=\tilde H_\Psi i$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}$ is an algebra, $\tilde H_\Psi\tilde{Ξ}\in\mathbb{B}$ for constant $\tilde H_\Psi$: the equation is consistent in the carrier, and no ideal is needed for the consistency. A coefficient containing $\vec\nabla_\Phi$ differentiates the coefficients of $\tilde{Ξ}$ and multiplies no element on the left, so it changes nothing about the carrier.
 
 **Solution.** Since $-i\tilde H_\Psi = -i h_t\,e_t + \vec h_\Psi$ and the scalar and vector parts commute,
 
@@ -335,7 +335,7 @@ The uniqueness of $i$ up to sign is what makes both writings available simultane
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_{\imath}^2 = -e_t$ |
 | $i$ | Scalar imaginary, central, $i^2 = -e_t$ |
-| $\frac{h}{2\pi}$ | Reduced Planck constant; the constant of the equation, $i \frac{h}{2\pi}\,c\,\partial/\partial r'_t\tilde\Xi=\tilde H_\Psi\tilde\Xi$ |
+| $\frac{h}{2\pi}$ | The action of one radian of phase; the constant of the equation, $i \frac{h}{2\pi}\,c\,\partial/\partial r'_t\tilde\Xi=\tilde H_\Psi\tilde\Xi$ |
 | $\mathbb{B}_{C}$ | Complex subspace $\operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$; the centre |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (observables): $i \frac{h}{2\pi}\,c\,\partial/\partial r'_t\tilde{Ξ} = \tilde H_\Psi\tilde{Ξ}$ has $\tilde H_\Psi \in \mathbb{B}_{\Psi}$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators, the material sector): the generator is $-\frac{2\pi i\tilde H_\Psi}{h\,c}\in\mathbb{B}_{\Phi}$ |

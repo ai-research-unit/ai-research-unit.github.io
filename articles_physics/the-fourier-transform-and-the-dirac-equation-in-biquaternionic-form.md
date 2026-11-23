@@ -91,7 +91,7 @@ $$
 where $\hat n$ is a real unit vector on the cone. The defect of idempotency is the interval, in closed form:
 
 $$
-\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}=-\frac{2\pi\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}}{42\pi\nu_t'^{2}}\,e_t .
+\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}=-\frac{\nu_t'^{2}-\nu_{\Phi}^{2}}{4\nu_t'^{2}}\,e_t .
 $$
 
 The computation is one line from the identity above, and the check covered five random null momenta: $\lvert\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}\rvert$ came out at most $5.6\times10^{-17}$, $\lvert2\,\mathrm{Sc}\,\tilde\Pi_{\mathrm{id}}-1\rvert$ at most $1.1\times10^{-16}$, and the same defect formula held off the cone to $2.8\times10^{-17}$ at five further momenta. One off-cone instance, $2\pi\nu_t'=1$ and $2\pi\nu_{\Phi}=0.7$, gives a defect of $0.1275$.
@@ -203,7 +203,7 @@ The transform preserves the Hermitian form, by Plancherel, and breaks the quater
 | $\mathcal{D}(\tilde\Upsilon_\Phi)$ | The pair's symbol; every entry Hermitian |
 | $\tilde\Upsilon_\Phi^{2}-2i\nu_t'\tilde\Upsilon_\Phi=(\nu_t'^{2}-\nu_{\Phi}^{2})e_t$ | The identity that holds on the light cone only |
 | $\tilde\Pi_{\mathrm{id}}=\tilde\Upsilon_\Phi/(2i2\pi\nu_t')=\tfrac12(e_t-i\hat n\cdot\vec e)$ | The idempotent of a null momentum; rank one |
-| $\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}=-\frac{2\pi\nu_t'^{2}-4\pi^{2}\nu_{\Phi}^{2}}{42\pi\nu_t'^{2}}e_t$ | The defect off the cone; the interval |
+| $\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}=-\frac{\nu_t'^{2}-\nu_{\Phi}^{2}}{4\nu_t'^{2}}e_t$ | The defect off the cone; the interval |
 | $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\hat n\cdot\vec e)$ | The two orthogonal projectors; $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$ |
 | $\tilde\Upsilon_\Phi=2i\nu_t'\tilde\Pi_{\mathrm{id},-}$, $\tilde\Upsilon_\Phi^{\natural}=2i\nu_t'\tilde\Pi_{\mathrm{id},+}$ | The two massless members |
 | $\int\mathrm{Sc}(f^{*}g)$ | The Hermitian form; preserved by the transform |

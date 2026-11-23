@@ -226,7 +226,7 @@ Three quantities of the companion are removed: the normalisation of the four-vel
 | $\vec\omega=\vec\nabla_\Phi\times\vec v$ | Vorticity; zero identically |
 | $\mathcal{T}:\tilde\Xi(t')\mapsto\tilde\Xi^{*}(-t')$ | The anti-linear time reversal |
 | $\Delta_\Phi$, $\vec\nabla_\Phi$ | Laplacian and gradient on the material sector |
-| $\frac{h}{2\pi}$, $m$ | Reduced Planck constant, mass |
+| $\frac{h}{2\pi}$, $m$ | The action of one radian of phase, mass |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
 ## Further Reading
