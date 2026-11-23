@@ -220,21 +220,21 @@ $$
 \mathrm{div}\,\vec{E} = 4\pi\rho, \qquad
 \mathrm{div}\,\vec{B} = 0, \qquad
 \mathrm{rot}\,\vec{E} = -\partial/\partial r'_t\vec{B}, \qquad
-\mathrm{rot}\,\vec{B} = 4\pi\vec{\jmath} + \partial/\partial r'_t\vec{E},
+\mathrm{rot}\,\vec{B} = 4\pi\vec j + \partial/\partial r'_t\vec{E},
 \tag{12}
 $$
 
-with the compatibility condition $\mathrm{div}\,\vec{\jmath} + \partial/\partial r'_t\rho = 0$, which is not an external constraint but the consistency condition the system carries. Its Proposition 12 states that $(\vec{E}, \vec{B})$ solves (12) if and only if the **biquaternionic field** $\vec{\xi} = \vec{E} + i\vec{B}$ satisfies
+with the compatibility condition $\mathrm{div}\,\vec j + \partial/\partial r'_t\rho = 0$, which is not an external constraint but the consistency condition the system carries. Its Proposition 12 states that $(\vec{E}, \vec{B})$ solves (12) if and only if the **biquaternionic field** $\vec{\xi} = \vec{E} + i\vec{B}$ satisfies
 
 $$
-(D - i\partial/\partial r'_t)\vec{\xi} = -4\pi(\rho - i\vec{\jmath}).
+(D - i\partial/\partial r'_t)\vec{\xi} = -4\pi(\rho - i\vec j).
 \tag{13}
 $$
 
-This is the corpus's single equation, and the identification is exact. The corpus's field-strength biquaternion is $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, which in vacuum is $\tilde{F} = i\sqrt{\epsilon_0}\,\vec E - \sqrt{\mu_0}\,\vec H$; with the magnetic field quoted in units of $\vec E/c$, a change of unit for one quantity and not a setting of $c$, it reads $\tilde{F} = \sqrt{\epsilon_0}\,(i\vec E - \vec B) = i\sqrt{\epsilon_0}\,(\vec E + i\vec B)$. The corpus's dual field strength (*Maxwell's Equations in the Biquaternionic Formulation*, Summary of Notation) is therefore $-i\tilde{F} = \sqrt{\epsilon_0}\,(\vec E + i\vec B)$, so the source's $\vec{\xi}$ is the corpus's dual field strength up to the constant $\sqrt{\epsilon_0}$, which drops out of the comparison of (13) and (14). With $\tilde\nabla_\Phi = D - i\partial/\partial r'_t$ and $\sqrt{\mu}\,\tilde{J}_{\Phi} = i\rho + \vec{\jmath}$ in vacuum, the corpus's equation $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ becomes
+This is the corpus's single equation, and the identification is exact. The corpus's field-strength biquaternion is $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, which in vacuum is $\tilde{F} = i\sqrt{\epsilon_0}\,\vec E - \sqrt{\mu_0}\,\vec H$; with the magnetic field quoted in units of $\vec E/c$, a change of unit for one quantity and not a setting of $c$, it reads $\tilde{F} = \sqrt{\epsilon_0}\,(i\vec E - \vec B) = i\sqrt{\epsilon_0}\,(\vec E + i\vec B)$. The corpus's dual field strength (*Maxwell's Equations in the Biquaternionic Formulation*, Summary of Notation) is therefore $-i\tilde{F} = \sqrt{\epsilon_0}\,(\vec E + i\vec B)$, so the source's $\vec{\xi}$ is the corpus's dual field strength up to the constant $\sqrt{\epsilon_0}$, which drops out of the comparison of (13) and (14). With $\tilde\nabla_\Phi = D - i\partial/\partial r'_t$ and $\sqrt{\mu}\,\tilde{J}_{\Phi} = i\rho + \vec j$ in vacuum, the corpus's equation $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ becomes
 
 $$
--i\,\tilde\nabla_\Phi\tilde F = -(\rho - i\vec{\jmath}), \qquad \text{that is} \qquad (D - i\partial/\partial r'_t)\tilde F = -i(\rho - i\vec{\jmath}).
+-i\,\tilde\nabla_\Phi\tilde F = -(\rho - i\vec j), \qquad \text{that is} \qquad (D - i\partial/\partial r'_t)\tilde F = -i(\rho - i\vec j).
 \tag{14}
 $$
 
@@ -245,13 +245,13 @@ Comparison of (13) and (14) shows that the source's Proposition 12 and the corpu
 The source's constructive step is to push the source through the right inverse and then remove the scalar part. From (11) with the lower sign,
 
 $$
-(D - i\partial/\partial r'_t) L_{\mathcal{C}}R_{-}\bigl[-4\pi i(\rho - i\vec{\jmath})\bigr] = -4\pi(\rho - i\vec{\jmath}),
+(D - i\partial/\partial r'_t) L_{\mathcal{C}}R_{-}\bigl[-4\pi i(\rho - i\vec j)\bigr] = -4\pi(\rho - i\vec j),
 $$
 
-so the transform is a particular solution of (13). It carries a scalar part $g_0 = \mathrm{Sc}\,L_{\mathcal{C}}R_{-}[-4\pi i(\rho - i\vec{\jmath})]$; by Corollary 11 and the compatibility condition, $g_0$ solves the wave equation, so by (7) the combination $g_0 - \mathcal{V}[g_0]$ lies in the kernel of $D - i\partial/\partial r'_t$. Subtracting it cancels the scalar part and leaves
+so the transform is a particular solution of (13). It carries a scalar part $g_0 = \mathrm{Sc}\,L_{\mathcal{C}}R_{-}[-4\pi i(\rho - i\vec j)]$; by Corollary 11 and the compatibility condition, $g_0$ solves the wave equation, so by (7) the combination $g_0 - \mathcal{V}[g_0]$ lies in the kernel of $D - i\partial/\partial r'_t$. Subtracting it cancels the scalar part and leaves
 
 $$
-\boxed{\;\vec{\xi} = \mathrm{Vec}\,L_{\mathcal{C}}R_{-}\bigl[-4\pi i(\rho - i\vec{\jmath})\bigr] + \mathcal{V}[g_0]\;},
+\boxed{\;\vec{\xi} = \mathrm{Vec}\,L_{\mathcal{C}}R_{-}\bigl[-4\pi i(\rho - i\vec j)\bigr] + \mathcal{V}[g_0]\;},
 \tag{15}
 $$
 
@@ -272,15 +272,15 @@ $$
 \mathrm{div}\,\vec{E} = \frac{\rho}{\epsilon}, \qquad
 \mathrm{div}\,\vec{B} = 0, \qquad
 \mathrm{rot}\,\vec{E} = -\partial/\partial r'_t\vec{B}, \qquad
-\mathrm{rot}\,\vec{B} = \mu\vec{\jmath} + \epsilon\,\partial/\partial r'_t\vec{E},
+\mathrm{rot}\,\vec{B} = \mu\vec j + \epsilon\,\partial/\partial r'_t\vec{E},
 \tag{17}
 $$
 
-reduced to a single equation of the form $(D - i\partial/\partial r'_t)Ξ = -\tilde{Ξ}$ with $c = 1/\sqrt{\epsilon\mu}$, solved with $\lambda = \sqrt{\epsilon\mu}$. **The constants of this section were not verified, and as extracted they do not all agree with the standard SI forms.** The extraction of the system (17) shows the ampèrian equation as $\mathrm{rot}\,\vec{B} = \mu\vec{\jmath} + \epsilon\,\partial/\partial r'_t\vec{E}$, whereas the standard SI form in terms of $\vec{B}$ is $\mathrm{rot}\,\vec{B} = \mu\vec{\jmath} + \mu\epsilon\,\partial/\partial r'_t\vec{E}$, the form that follows from $\mathrm{rot}\,\vec{H} = \vec{\jmath} + \partial/\partial r'_t\vec{D}$ with $\vec{B} = \mu\vec{H}$, $\vec{D} = \epsilon\vec{E}$; the factor $\mu$ is either dropped in the extraction or absent in the source, and it changes both the biquaternionic field that cancels the curl terms and the compatibility condition. The condition the source prints, $\mathrm{div}\,\vec{\jmath} + \sqrt{\epsilon\mu}\,\partial/\partial r'_t\rho = 0$, does not reduce to the plain conservation law $\mathrm{div}\,\vec{\jmath} + \partial/\partial r'_t\rho = 0$ under either interpretation of (17), which is a second sign that the printed constants could not be read faithfully. What this section contributes is its **structure** — a single equation $(D - i\partial/\partial r'_t)Ξ = -\tilde{Ξ}$ with the parameter $\lambda = \sqrt{\epsilon\mu}$ — and that structure should be re-derived from the published text before any constant from it is quoted.
+reduced to a single equation of the form $(D - i\partial/\partial r'_t)Ξ = -\tilde{Ξ}$ with $c = 1/\sqrt{\epsilon\mu}$, solved with $\lambda = \sqrt{\epsilon\mu}$. **The constants of this section were not verified, and as extracted they do not all agree with the standard SI forms.** The extraction of the system (17) shows the ampèrian equation as $\mathrm{rot}\,\vec{B} = \mu\vec j + \epsilon\,\partial/\partial r'_t\vec{E}$, whereas the standard SI form in terms of $\vec{B}$ is $\mathrm{rot}\,\vec{B} = \mu\vec j + \mu\epsilon\,\partial/\partial r'_t\vec{E}$, the form that follows from $\mathrm{rot}\,\vec{H} = \vec j + \partial/\partial r'_t\vec{D}$ with $\vec{B} = \mu\vec{H}$, $\vec{D} = \epsilon\vec{E}$; the factor $\mu$ is either dropped in the extraction or absent in the source, and it changes both the biquaternionic field that cancels the curl terms and the compatibility condition. The condition the source prints, $\mathrm{div}\,\vec j + \sqrt{\epsilon\mu}\,\partial/\partial r'_t\rho = 0$, does not reduce to the plain conservation law $\mathrm{div}\,\vec j + \partial/\partial r'_t\rho = 0$ under either interpretation of (17), which is a second sign that the printed constants could not be read faithfully. What this section contributes is its **structure** — a single equation $(D - i\partial/\partial r'_t)Ξ = -\tilde{Ξ}$ with the parameter $\lambda = \sqrt{\epsilon\mu}$ — and that structure should be re-derived from the published text before any constant from it is quoted.
 
 ## What Is Verified and What Is Not
 
-**Not verified, and flagged.** (i) The object called a **fundamental solution**. Its defining equation in the source, $(D \pm i\partial/\partial r'_t)Ξ_\pm = 0$ for $x \neq 0$, $r'_t \neq 0$, is the **homogeneous** equation in the punctured domain; a fundamental solution in the classical sense carries $\delta$ on the right. The object whose Fourier transform is (9) is the **kernel of the right inverse**, and the inverse is correctly defined directly by (10) and proved in (11); a fundamental solution with a $\delta$ on the right is not exhibited. (ii) The declaration $Ξ_\pm \in L^1(\mathbb{R}^3 \times (0,\infty))$ **cannot** be reconciled with (9): by the Riemann–Lebesgue lemma the space Fourier transform of an $L^1$ function tends to $0$ at infinity, whereas (9) has modulus $1$ for every $\vec k_\Phi$. The two statements are inconsistent, and it is (9), not the $L^1$ claim, that the proof of the right inverse uses. (iii) The exact hypotheses and normalisations of **Theorems 13 and 16** were read only through the extracted running text, whose display is garbled; the *structure* recorded in (15) — right inverse, then completion by $g_0 - \mathcal{V}[g_0]$ — is verified, but the printed leading factors, the pairing of $\mathrm{Re}$ and $\mathrm{Im}$ with $\mathrm{Vec}$, and the definition of $g_0$ should be checked against the published version before they are quoted. (iv) The constants of the SI homogeneous-medium section: as extracted, the system (17) and the condition the source prints with it are not mutually consistent — the ampèrian equation lacks the factor $\mu$ of the standard B-form, and the printed compatibility condition does not reduce to $\mathrm{div}\,\vec{\jmath} + \partial/\partial r'_t\rho = 0$ under either interpretation — so the exact field combination and the normalisation of that section were left unverified. Only its structure (a single equation with $\lambda = \sqrt{\epsilon\mu}$) is recorded.
+**Not verified, and flagged.** (i) The object called a **fundamental solution**. Its defining equation in the source, $(D \pm i\partial/\partial r'_t)Ξ_\pm = 0$ for $x \neq 0$, $r'_t \neq 0$, is the **homogeneous** equation in the punctured domain; a fundamental solution in the classical sense carries $\delta$ on the right. The object whose Fourier transform is (9) is the **kernel of the right inverse**, and the inverse is correctly defined directly by (10) and proved in (11); a fundamental solution with a $\delta$ on the right is not exhibited. (ii) The declaration $Ξ_\pm \in L^1(\mathbb{R}^3 \times (0,\infty))$ **cannot** be reconciled with (9): by the Riemann–Lebesgue lemma the space Fourier transform of an $L^1$ function tends to $0$ at infinity, whereas (9) has modulus $1$ for every $\vec k_\Phi$. The two statements are inconsistent, and it is (9), not the $L^1$ claim, that the proof of the right inverse uses. (iii) The exact hypotheses and normalisations of **Theorems 13 and 16** were read only through the extracted running text, whose display is garbled; the *structure* recorded in (15) — right inverse, then completion by $g_0 - \mathcal{V}[g_0]$ — is verified, but the printed leading factors, the pairing of $\mathrm{Re}$ and $\mathrm{Im}$ with $\mathrm{Vec}$, and the definition of $g_0$ should be checked against the published version before they are quoted. (iv) The constants of the SI homogeneous-medium section: as extracted, the system (17) and the condition the source prints with it are not mutually consistent — the ampèrian equation lacks the factor $\mu$ of the standard B-form, and the printed compatibility condition does not reduce to $\mathrm{div}\,\vec j + \partial/\partial r'_t\rho = 0$ under either interpretation — so the exact field combination and the normalisation of that section were left unverified. Only its structure (a single equation with $\lambda = \sqrt{\epsilon\mu}$) is recorded.
 
 **What the source does not do.** It does not solve a boundary-value problem: the domain is fixed, the transform is taken by zero extension, and the right inverse is global. It does not treat an inhomogeneous or chiral medium: the homogeneous medium enters only through the single constant $\lambda = \sqrt{\epsilon\mu}$, so the dispersive and magnetoelectric content of *Electromagnetism in Media — The Local Complex Structure at Work* is untouched. It does not quantise, and it makes no claim about the **physical interpretation** of the parabolic operators beyond their use as a computational route. Its stated aim is analytical efficiency, and its result should be read as a method, not as a physical model.
 
@@ -307,7 +307,7 @@ The source's wave-operator factorisation $-\Delta_\Phi + \partial^2/\partial {r'
 | $\vec k_\Phi$ | Frequency three-vector, read as the pure quaternion $k_{\Phi x}\vec e_x + k_{\Phi y}\vec e_y + k_{\Phi z}\vec e_z$ |
 | $Ξ_\pm$ | The source's kernel, $\mathcal{F}(Ξ_\pm)(\vec k_\Phi,r'_t) = \exp(\mp 2\pi \vec k_\Phi r'_t)$ |
 | $L_{\mathcal{C}}R_{\pm}$, $L_{\mathcal{C}}R_{\pm,\lambda}$ | Parabolic Teodorescu transform (10) and its $\lambda$-scaled form (16) |
-| $\vec{E}, \vec{B}, \rho, \vec{\jmath}$ | Electric field, magnetic field, charge density, current density |
+| $\vec{E}, \vec{B}, \rho, \vec j$ | Electric field, magnetic field, charge density, current density |
 | $\vec{\xi} = \vec{E} + i\vec{B}$ | Biquaternionic field of the source; the corpus's dual field strength $-i\tilde F$ |
 | $\tilde{F}, \tilde J_{\Phi}, \tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}, \Box_\Phi$ | Corpus field-strength biquaternion, four-current, biquaternionic gradient, its conjugate, d'Alembertian |
 | $\epsilon, \mu, c = 1/\sqrt{\epsilon\mu}$ | Permittivity, permeability, speed of light in the medium (SI section) |

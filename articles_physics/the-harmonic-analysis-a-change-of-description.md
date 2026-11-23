@@ -304,7 +304,7 @@ The truncation is the algebraic form of a critical point. A flow that is a polyn
 
 The Tomita operator is the star. By definition $S(\Lambda\zeta)=\Lambda^{*}\zeta$ for $\Lambda=L_{\tilde{Q}}$, and the definite adjoint of a left multiplication is $L_{\tilde{Q}^{*}}$, so $S(\tilde{Q})=\tilde{Q}^{*}$. It is antilinear, involutive and antiunitary, with $\langle S\tilde{Q}_1,S\tilde{Q}_2\rangle=\overline{\langle\tilde{Q}_1,\tilde{Q}_2\rangle}$ and $\lVert S\tilde{Q}_1\rVert=\lVert\tilde{Q}_1\rVert$; both identities are exact in the eight real dimensions, measured at $0$ to machine precision.
 
-The modular operator is the identity and the modular flow is trivial. Since $S$ is antiunitary, its polar decomposition is $S=\jmath$ with $\Delta_\Phi=S^{*}S=\mathrm{id}$, so $\sigma_t(\Lambda)=\Lambda$ for every $t$. The modular conjugation exchanges the sides, $\jmath L_{\tilde{Q}}\jmath=R_{\tilde{Q}^{*}}$, which is the definite shadow of the indefinite identity $(L_{\tilde{Q}})^{\dagger}=R_{\bar{\tilde{Q}}}$.
+The modular operator is the identity and the modular flow is trivial. Since $S$ is antiunitary, its polar decomposition is $S=\gimel_{\mathrm{mod}}$ with $\Delta_\Phi=S^{*}S=\mathrm{id}$, so $\sigma_t(\Lambda)=\Lambda$ for every $t$. The modular conjugation exchanges the sides, $\gimel_{\mathrm{mod}} L_{\tilde{Q}}\gimel_{\mathrm{mod}}=R_{\tilde{Q}^{*}}$, which is the definite shadow of the indefinite identity $(L_{\tilde{Q}})^{\dagger}=R_{\bar{\tilde{Q}}}$.
 
 ### Why the Flow Is Trivial
 
@@ -314,7 +314,7 @@ The flow collapses because the vector state of the unit is the trace. $\omega(L_
 
 On the canonical Krein space the operator is not definable. The indefinite adjoint of a left multiplication is a right multiplication, $(L_{\tilde{Q}})^{\dagger}=R_{\bar{\tilde{Q}}}$, which lies in the image only for central $\tilde{Q}$. The left regular image is therefore not closed under the indefinite adjoint, so it is not a Krein–von Neumann algebra, and the map $\tilde{Q}\mapsto\tilde{Q}^{\dagger}$ leaves the algebra. The smallest Krein–von Neumann envelope is $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}\cong M_4(\mathbb{C})$, of complex dimension sixteen, and it has no separating vector: for every $\zeta\neq0$ there is a non-zero $T$ with $T\zeta=0$. So the envelope carries no modular pair either.
 
-The twisted symmetries work and the modular conjugation does not commute with them. For $J'=R_c$ with $c^{*}=c$ and $c^{2}=e_t$ the image is a $J'$-algebra with $S'={}^{*}$ and $\Delta_\Phi'=\mathrm{id}$, but the modular conjugation must commute with the fundamental symmetry, and $\jmath'J'(\tilde{Q})=c\tilde{Q}^{*}$ against $J'\jmath'(\tilde{Q})=\tilde{Q}^{*}c$, which agree only for central $c$. The definite theory is available, the indefinite one is available only in the definite case, and the gap is a commutator.
+The twisted symmetries work and the modular conjugation does not commute with them. For $J'=R_c$ with $c^{*}=c$ and $c^{2}=e_t$ the image is a $J'$-algebra with $S'={}^{*}$ and $\Delta_\Phi'=\mathrm{id}$, but the modular conjugation must commute with the fundamental symmetry, and $\gimel_{\mathrm{mod}}'J'(\tilde{Q})=c\tilde{Q}^{*}$ against $J'\gimel_{\mathrm{mod}}'(\tilde{Q})=\tilde{Q}^{*}c$, which agree only for central $c$. The definite theory is available, the indefinite one is available only in the definite case, and the gap is a commutator.
 
 ## The Interpretations
 
@@ -447,7 +447,7 @@ Eight readings, each with a boundary. The kernel is the clock, the frequency its
 | the transverse frame | $\digamma_{\mathrm{trv}},\eta$ | $R\digamma_{\mathrm{trv}}=\eta$, $\digamma_{\mathrm{trv}} R=-\eta$, $\eta R=\digamma_{\mathrm{trv}}$ |
 | the two placements | $R'=\pm R$ | the two-sided kernels that fix a part |
 | the exponential type | $2\pi\rho$ | $\rho$ the distance of the nearest pole from the real axis |
-| the Tomita operator | $S$ | the star, with $\Delta_\Phi=\mathrm{id}$ and $\jmath=S$ |
+| the Tomita operator | $S$ | the star, with $\Delta_\Phi=\mathrm{id}$ and $\gimel_{\mathrm{mod}}=S$ |
 | the Krein envelope | $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$ | $M_4(\mathbb{C})$, complex dimension sixteen |
 
 ## Further Reading

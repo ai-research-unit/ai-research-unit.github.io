@@ -80,7 +80,7 @@ are both $\mathbb{C}$-antilinear algebra involutions; the fixed set of $\rho_1$ 
 
 From $\mathbb{H}$ and the complexification, four conjugations are obtained. Only two of them are supplied by the base; the other two are derived.
 
-**Quaternion conjugation.** Extend the standard involution of $\mathbb{H}$ complex-linearly ($\bar{\imath}=i$):
+**Quaternion conjugation.** Extend the standard involution of $\mathbb{H}$ complex-linearly ($\bar{i}=i$):
 
 $$
 \tilde Q_1^{\natural}=Q_te_t-Q_{1x}\vec e_x-Q_{1y}\vec e_y-Q_{1z}\vec e_z.
