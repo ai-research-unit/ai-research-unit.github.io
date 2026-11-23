@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Audit SI — Repair Progress — Biquaternion Universe</title>
-  <meta name="description" content="Baseline (measured 2026-11-23, before any edit): M-eV 5/3, E-eV 634/68, L-nonm 80/17, T-nons 4/1, M-nonkg 2/1, union 75.">
+  <title>Audit SI: Progress — Biquaternion Universe</title>
+  <meta name="description" content="Status. All 75 articles of §5 of the audit are repaired. The final scan reports M-eV 0/0, E-eV 6 lines in 2 files, L-nonm 0/0, T-nons 0/0, M-nonkg 0/0…">
   <link rel="stylesheet" href="../../assets/css/base.css">
   <link rel="stylesheet" href="../../assets/css/layout.css">
   <link rel="stylesheet" href="../../assets/css/article.css">
@@ -69,94 +69,741 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="audit-si-repair-progress">Audit SI — Repair Progress</h1>
-<p>Baseline (measured 2026-11-23, before any edit): M-eV 5/3, E-eV 634/68, L-nonm 80/17, T-nons 4/1, M-nonkg 2/1, union 75.</p>
+        <h1 id="audit-si-progress"><strong>Audit SI: Progress</strong></h1>
+<p><em>Status.</em> All 75 articles of §5 of <a href="audit-SI.md">the audit</a> are repaired. The final scan reports M-eV 0/0, E-eV 6 lines in 2 files, L-nonm 0/0, T-nons 0/0, M-nonkg 0/0, union 2 files. The six residual lines are refusal quotes, listed below with their reasons; each of the two files is a doctrine article that names the refused spelling in order to forbid it.</p>
+<p><strong>Method.</strong> Every converted number was computed in python from the exact 2019 constants, never by hand: $1\ \mathrm{eV}=1.602\,176\,634\times10^{-19}\ \mathrm{J}$, $1\ \mathrm{GeV}/c^{2}=1.782\,661\,921\times10^{-27}\ \mathrm{kg}$, $1\ \mathrm{fm}=10^{-15}\ \mathrm{m}$, $1\ \mathrm{ps}=10^{-12}\ \mathrm{s}$, $T=E/k_B$ with $k_B=1.380\,649\times10^{-23}\ \mathrm{J\,K^{-1}}$. The article's own precision was kept. Each repair was gated by the §4 scan, run from the repository root after the article was finished, and no article was left with a table that mixes kilograms and electronvolts.</p>
+<p><strong>The note.</strong> No article carries a per-article units note. The rule is stated once, in <em>Physics Units and Common Elements Conventions</em>, whose doctrine sentence already names the seven base units, the derived units and the refusal of any unit whose definition contains a constant, and whose tables print $c$, $h$, $k_B$ and $e$ at their exact values. The sentence that §6 of the audit asked for in every article was withdrawn on review: repeated in seventy-odd articles it was boilerplate, and it said nothing that the article's own numbers do not say.</p>
+<h2 id="the-articles">The Articles</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>#</th>
 <th>article</th>
-<th>lines repaired</th>
-<th>before (file classes)</th>
-<th>after</th>
-<th>union</th>
+<th>lines in §5</th>
+<th>classes</th>
+<th>lines cleared</th>
+<th>residual</th>
+<th>gate</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td><code>the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form</code></td>
-<td>8</td>
-<td>M-eV 3, E-eV 2</td>
-<td>clean</td>
-<td>74</td>
-</tr>
-<tr>
-<td>2</td>
-<td><code>energy-and-information-four-conservation-laws-from-one-identity</code></td>
-<td>10</td>
-<td>M-eV 1, E-eV 10</td>
-<td>clean</td>
-<td>73</td>
-</tr>
-<tr>
-<td>3</td>
-<td><code>exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation</code></td>
-<td>1</td>
-<td>M-eV 1, E-eV 1</td>
-<td>clean</td>
-<td>72</td>
-</tr>
-<tr>
-<td>4</td>
-<td><code>meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test</code></td>
-<td>21</td>
-<td>T-nons 4, E-eV 8</td>
-<td>clean</td>
-<td>71</td>
-</tr>
-<tr>
-<td>5</td>
 <td><code>the-three-wavenumbers-of-a-particle</code></td>
 <td>86</td>
-<td>E-eV 45, L-nonm 39, M-nonkg 2</td>
+<td>45 eV, 39 len, 2 g</td>
+<td>86</td>
+<td>0</td>
 <td>clean</td>
-<td>70</td>
 </tr>
 <tr>
-<td>6</td>
-<td><code>the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure</code></td>
+<td><code>hadron-structure-from-qcd-the-bound-state-problem</code></td>
+<td>47</td>
+<td>47 eV</td>
+<td>47</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-landau-pole-triviality-and-vacuum-stability</code></td>
+<td>43</td>
+<td>43 eV</td>
+<td>43</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-hierarchy-problem-and-naturalness</code></td>
+<td>40</td>
+<td>40 eV</td>
+<td>40</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>asymptotic-freedom-and-the-running-of-the-strong-coupling</code></td>
 <td>29</td>
-<td>L-nonm 17, E-eV 7</td>
+<td>29 eV</td>
+<td>29</td>
+<td>0</td>
 <td>clean</td>
-<td>69</td>
 </tr>
 <tr>
-<td>7</td>
-<td><code>causal-dissipative-hydrodynamics-in-biquaternionic-form</code></td>
-<td>3</td>
-<td>L-nonm 3</td>
+<td><code>electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses</code></td>
+<td>27</td>
+<td>27 eV</td>
+<td>27</td>
+<td>0</td>
 <td>clean</td>
-<td>68</td>
 </tr>
 <tr>
+<td><code>the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure</code></td>
+<td>27</td>
+<td>10 eV, 17 len</td>
+<td>27</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron</code></td>
+<td>27</td>
+<td>26 eV, 1 len</td>
+<td>27</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>jets-the-qcd-cross-section-and-the-infrared-structure</code></td>
+<td>25</td>
+<td>25 eV</td>
+<td>25</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>exercise-the-relativistic-kinematics-of-a-two-body-decay</code></td>
+<td>22</td>
+<td>22 eV</td>
+<td>22</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-excitation-ladder-theory-of-flavour</code></td>
+<td>20</td>
+<td>20 eV</td>
+<td>20</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>vacuum-value-normalization-energy-mass-wave-number-and-length</code></td>
+<td>20</td>
+<td>19 eV, 1 len</td>
+<td>18</td>
+<td>2 legal</td>
+<td>gate passes</td>
+</tr>
+<tr>
+<td><code>the-pmns-matrix-and-lepton-mixing</code></td>
+<td>19</td>
+<td>18 eV, 1 len</td>
+<td>19</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation</code></td>
+<td>17</td>
+<td>17 eV</td>
+<td>17</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-standard-model-content-quantum-numbers-and-the-nineteen-parameters</code></td>
+<td>15</td>
+<td>15 eV</td>
+<td>15</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-scalar-sector-and-the-leptoquark-bounds</code></td>
+<td>13</td>
+<td>13 eV</td>
+<td>13</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>electroweak-precision-observables-the-oblique-parameters-s-t-u</code></td>
+<td>12</td>
+<td>12 eV</td>
+<td>12</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test</code></td>
+<td>12</td>
+<td>8 eV, 4 time</td>
+<td>12</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form</code></td>
+<td>12</td>
+<td>12 eV</td>
+<td>12</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>energy-and-information-four-conservation-laws-from-one-identity</code></td>
+<td>11</td>
+<td>10 eV, 1 eV/c2</td>
+<td>11</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form</code></td>
+<td>11</td>
+<td>11 eV</td>
+<td>11</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-one-coupling-that-returns-the-standard-model</code></td>
+<td>10</td>
+<td>10 eV</td>
+<td>10</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>particle-classification-three-grids-one-name-in-every-cell</code></td>
+<td>9</td>
+<td>9 eV</td>
+<td>9</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-parton-model-and-deep-inelastic-scattering</code></td>
+<td>9</td>
+<td>9 eV</td>
+<td>9</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem</code></td>
 <td>8</td>
+<td>8 eV</td>
+<td>8</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form</code></td>
+<td>8</td>
+<td>8 eV</td>
+<td>8</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>exercise-four-momentum-conservation-in-a-collision</code></td>
+<td>7</td>
+<td>7 eV</td>
+<td>7</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>physics-units-and-common-elements-conventions</code></td>
+<td>7</td>
+<td>4 eV, 3 len</td>
+<td>3</td>
+<td>4 legal</td>
+<td>gate passes</td>
+</tr>
+<tr>
+<td><code>the-w-and-z-bosons-in-biquaternionic-form</code></td>
+<td>7</td>
+<td>7 eV</td>
+<td>7</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton</code></td>
+<td>6</td>
+<td>6 eV</td>
+<td>6</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form</code></td>
+<td>6</td>
+<td>6 eV</td>
+<td>6</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-parameter-count-as-the-measure-of-the-frameworks-boundary</code></td>
+<td>6</td>
+<td>6 eV</td>
+<td>6</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-weak-interaction-in-biquaternionic-form</code></td>
+<td>6</td>
+<td>6 eV</td>
+<td>6</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>an-introduction-to-flavour</code></td>
+<td>5</td>
+<td>5 eV</td>
+<td>5</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form</code></td>
+<td>5</td>
+<td>5 eV</td>
+<td>5</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-four-colours-left-right-model</code></td>
+<td>5</td>
+<td>5 eV</td>
+<td>5</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-non-quantum-limit-of-the-biquaternion-model</code></td>
+<td>5</td>
+<td>5 len</td>
+<td>5</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form</code></td>
+<td>5</td>
+<td>2 eV, 3 eV/c2</td>
+<td>5</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-weinberg-angle-and-the-three-neutral-states</code></td>
+<td>5</td>
+<td>5 eV</td>
+<td>5</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
 <td><code>spin-hydrodynamics-in-biquaternionic-form</code></td>
 <td>4</td>
-<td>L-nonm 2, E-eV 2</td>
+<td>2 eV, 2 len</td>
+<td>4</td>
+<td>0</td>
 <td>clean</td>
-<td>67</td>
 </tr>
 <tr>
-<td>9-18</td>
-<td><code>relativistic-mechanics-from-the-dirac-wave</code>, <code>the-dirac-equation-in-biquaternionic-polar-variables</code>, <code>the-double-slit-experiment-in-biquaternionic-form</code>, <code>the-electron-in-biquaternionic-form</code>, <code>the-quantum-classical-divide-in-the-biquaternion-framework</code>, <code>wave-particle-duality-and-the-fourier-transform</code>, <code>the-relativistic-exchange-of-information-and-clock-synchronisation-in-biquaternionic-form</code>, <code>the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation</code>, <code>the-non-quantum-limit-of-the-biquaternion-model</code>, <code>the-pmns-matrix-and-lepton-mixing</code></td>
-<td>27</td>
-<td>L-nonm 11, E-eV 22</td>
+<td><code>the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant</code></td>
+<td>4</td>
+<td>4 eV</td>
+<td>4</td>
+<td>0</td>
 <td>clean</td>
-<td>59</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-higgs-field</code></td>
+<td>4</td>
+<td>4 eV</td>
+<td>4</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-weak-interaction</code></td>
+<td>4</td>
+<td>4 eV</td>
+<td>4</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-proton-in-biquaternionic-form</code></td>
+<td>4</td>
+<td>4 eV</td>
+<td>4</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>causal-dissipative-hydrodynamics-in-biquaternionic-form</code></td>
+<td>3</td>
+<td>3 len</td>
+<td>3</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-standard-model-and-the-lagrangian-four-sectors-in-one-expression</code></td>
+<td>3</td>
+<td>3 eV</td>
+<td>3</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>ai-physics-review</code></td>
+<td>2</td>
+<td>2 eV</td>
+<td>2</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>dirac-matter-graphene-dirac-cones-and-topological-insulators-in-biquaternionic-form</code></td>
+<td>2</td>
+<td>2 eV</td>
+<td>2</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation</code></td>
+<td>2</td>
+<td>1 eV, 1 eV/c2</td>
+<td>2</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>maxwells-theory-on-non-commutative-spaces-and-quaternions</code></td>
+<td>2</td>
+<td>2 eV</td>
+<td>2</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>moller-scattering-in-biquaternionic-form</code></td>
+<td>2</td>
+<td>2 eV</td>
+<td>2</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>relativistic-mechanics-from-the-dirac-wave</code></td>
+<td>2</td>
+<td>1 eV, 1 len</td>
+<td>2</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-breaking-chain-and-the-boson-spectrum</code></td>
+<td>2</td>
+<td>2 eV</td>
+<td>2</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-electron-in-biquaternionic-form</code></td>
+<td>2</td>
+<td>1 eV, 1 len</td>
+<td>2</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules</code></td>
+<td>2</td>
+<td>2 eV</td>
+<td>2</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-nonlinear-sigma-model</code></td>
+<td>2</td>
+<td>2 eV</td>
+<td>2</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-w-and-z-bosons</code></td>
+<td>2</td>
+<td>2 eV</td>
+<td>2</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-neutron-in-biquaternionic-form</code></td>
+<td>2</td>
+<td>2 eV</td>
+<td>2</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form</code></td>
+<td>2</td>
+<td>2 eV</td>
+<td>2</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation</code></td>
+<td>2</td>
+<td>1 eV, 1 len</td>
+<td>2</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-two-fluid-model-in-biquaternionic-form</code></td>
+<td>2</td>
+<td>2 eV</td>
+<td>2</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>thomson-and-compton-scattering-the-biquaternion-polarization-algebra</code></td>
+<td>2</td>
+<td>2 eV</td>
+<td>2</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>bhabha-scattering-in-biquaternionic-form</code></td>
+<td>1</td>
+<td>1 eV</td>
+<td>1</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>introduction-to-the-biquaternion-universe</code></td>
+<td>1</td>
+<td>1 eV</td>
+<td>1</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>landau-levels-in-biquaternionic-form</code></td>
+<td>1</td>
+<td>1 eV</td>
+<td>1</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-dirac-equation-in-biquaternionic-polar-variables</code></td>
+<td>1</td>
+<td>1 len</td>
+<td>1</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-double-slit-experiment-in-biquaternionic-form</code></td>
+<td>1</td>
+<td>1 len</td>
+<td>1</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-empirical-status-of-the-biquaternion-framework</code></td>
+<td>1</td>
+<td>1 eV</td>
+<td>1</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case</code></td>
+<td>1</td>
+<td>1 eV</td>
+<td>1</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-non-relativistic-limit-of-relativistic-mechanics-in-biquaternionic-form</code></td>
+<td>1</td>
+<td>1 eV</td>
+<td>1</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-nonlinear-sigma-model-in-biquaternionic-form</code></td>
+<td>1</td>
+<td>1 eV</td>
+<td>1</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-quantum-classical-divide-in-the-biquaternion-framework</code></td>
+<td>1</td>
+<td>1 len</td>
+<td>1</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>the-relativistic-exchange-of-information-and-clock-synchronisation-in-biquaternionic-form</code></td>
+<td>1</td>
+<td>1 len</td>
+<td>1</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>wave-particle-duality-and-the-fourier-transform</code></td>
+<td>1</td>
+<td>1 len</td>
+<td>1</td>
+<td>0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><code>zitterbewegung-in-biquaternionic-form</code></td>
+<td>1</td>
+<td>1 eV</td>
+<td>1</td>
+<td>0</td>
+<td>clean</td>
 </tr>
 </tbody>
 </table></div>
+<p>Total deviating lines in the worklist: 725. Lines cleared: 719. Residual: 6.</p>
+<h2 id="the-residual-lines-and-why-each-is-legal">The Residual Lines, and Why Each Is Legal</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>file</th>
+<th>line</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>physics-units-and-common-elements-conventions</code></td>
+<td>72</td>
+<td>the definition $1\ \mathrm{eV}=1.602\,176\,634\times10^{-19}\ \mathrm{J}$ and the femtometre, printed inside the sentence that refuses both</td>
+</tr>
+<tr>
+<td><code>physics-units-and-common-elements-conventions</code></td>
+<td>74</td>
+<td>the bare mass the paragraph refuses, $m=0.511\ \mathrm{MeV}$, quoted to be marked a defect</td>
+</tr>
+<tr>
+<td><code>physics-units-and-common-elements-conventions</code></td>
+<td>78</td>
+<td>the root in an energy unit, $\sqrt{m_e}=0.714\,842\ \mathrm{MeV}^{1/2}$, quoted as the refused spelling</td>
+</tr>
+<tr>
+<td><code>physics-units-and-common-elements-conventions</code></td>
+<td>128</td>
+<td>the same refused mass, quoted once more in the paragraph that states the legal writing beside it</td>
+</tr>
+<tr>
+<td><code>vacuum-value-normalization-energy-mass-wave-number-and-length</code></td>
+<td>13</td>
+<td>the prose that names the bare number of MeV as the $c=1$ declaration</td>
+</tr>
+<tr>
+<td><code>vacuum-value-normalization-energy-mass-wave-number-and-length</code></td>
+<td>204</td>
+<td>rule 5 of the doctrine, quoting $\sqrt{m_e}=0.714\,842\ \mathrm{MeV}^{1/2}$ as the refused form</td>
+</tr>
+</tbody>
+</table></div>
+<p>Every other electronvolt, femtometre, picosecond and gram in the corpus is gone.</p>
+<h2 id="the-review-pass">The Review Pass</h2>
+<p>After the worklist closed, every conversion was re-checked against the exact constants and against the article's own neighbouring numbers. Ten defects were found and repaired. None of them shows in the §4 scan, whose classes were already at zero: each is a wrong number, a wrong derived unit or a wrong symbol, which is where a unit repair hides its errors.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>defect</th>
+<th>repair</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-w-and-z-bosons-in-biquaternionic-form</code></td>
+<td>the $M_W$ and $M_Z$ uncertainties had been converted with the exponent of the mass, $2.1\times10^{-28}$ and $3.7\times10^{-29}$ kg</td>
+<td>$2.1\times10^{-29}$ and $3.7\times10^{-30}$ kg</td>
+</tr>
+<tr>
+<td><code>the-parameter-count-as-the-measure-of-the-frameworks-boundary</code></td>
+<td>the Higgs mass read $2.2303\times10^{-25}$ kg, off the §3 value in the fourth figure</td>
+<td>$2.2299\times10^{-25}$ kg</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-weak-interaction</code></td>
+<td>the Fermi constant read $1.86874\times10^{-15}$ J$^{-2}$, which multiplies by $1.602\times10^{-10}$ instead of dividing by its square, and carried a stray <code>$$</code></td>
+<td>$4.544\times10^{14}$ J$^{-2}$</td>
+</tr>
+<tr>
+<td><code>subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form</code></td>
+<td>an energy symbol carried a mass unit, $m_ec^{2}=9.11\times10^{-31}$ kg</td>
+<td>$m_e=9.11\times10^{-31}$ kg, twice</td>
+</tr>
+<tr>
+<td><code>the-non-relativistic-limit-of-relativistic-mechanics-in-biquaternionic-form</code></td>
+<td>the energy table had been converted as MeV when the numbers are eV, so every cell was $10^{6}$ too large and the table contradicted its own $mc^{2}=8.187\times10^{-14}$ J</td>
+<td>the four rows recomputed from the electronvolt values, $8.1875\times10^{-14}$ J at $\beta=0.01$</td>
+</tr>
+<tr>
+<td><code>what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron</code></td>
+<td>three cross-sections in cm$^{2}$ and one in picobarns, the §6 table's own example among them</td>
+<td>$4\times10^{-37}$, $2.6\times10^{-51}$ and $2.6\times10^{-51}$ m$^{2}$, and the ratio display below them</td>
+</tr>
+<tr>
+<td><code>thomson-and-compton-scattering-the-biquaternion-polarization-algebra</code></td>
+<td>the Thomson cross-section in barns, and a stray <code>\;}</code> in the display</td>
+<td>$6.6524587\times10^{-29}$ m$^{2}$, four places</td>
+</tr>
+<tr>
+<td><code>the-weak-interaction-in-biquaternionic-form</code></td>
+<td>the muon lifetime in microseconds and in $\mu\mathrm{s}$</td>
+<td>$2.1873\times10^{-6}$ and $2.1969811\times10^{-6}$ s</td>
+</tr>
+<tr>
+<td><code>moller-scattering-in-biquaternionic-form</code></td>
+<td>a product written in the unit "kg J" with a number that belongs to GeV$^{2}$</td>
+<td>$m_ec^{2}E_{\mathrm{beam}}\sim2.6\times10^{-22}$ J$^{2}$</td>
+</tr>
+<tr>
+<td><code>the-three-wavenumbers-of-a-particle</code></td>
+<td>a length in $\mu\mathrm{m}$</td>
+<td>$1\times10^{-6}$ m</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Outside the worklist, repaired too.</strong> Two prefixed units survived in physics articles that §5 does not list, because no scan class covers them. They were repaired on the same rule. $29.79$ km/s and $30$ km/s in <em>The Lorentz Transformation as a Biquaternionic Rotation</em> became $2.979\times10^{4}$ and $3.0\times10^{4}$ m s$^{-1}$; $42.577$ MHz T$^{-1}$ and $28.025$ GHz T$^{-1}$ in <em>Larmor Precession and the Classical Magnetic Moment</em> became $4.2577\times10^{7}$ and $2.8025\times10^{10}$ s$^{-1}$ T$^{-1}$, with the $1$ T frequency written $2.6752\times10^{8}$ s$^{-1}$. Arcseconds remain in the Lorentz article: angle is not one of the quantities §1 lists, and the second is defined by a frequency rather than by an angle.</p>
+<h2 id="what-the-repair-changed-beyond-the-unit-token">What the Repair Changed Beyond the Unit Token</h2>
+<ul>
+<li><strong>Temperatures</strong> in the sphaleron and excitation-ladder articles became kelvin through $T=E/k_B$, and the Boltzmann-suppressed exponent was written $E/(k_BT)$ so that it stays a number.</li>
+<li><strong>Squared units</strong>: $\mathrm{GeV}^{2}$ became $\mathrm{kg}^{2}$ or $\mathrm{J}^{2}$ according to whether the quantity was a mass squared or an energy squared, and $\mathrm{GeV}^{-2}$ in the Fermi coupling became $\mathrm{J}^{-2}$ with the value $4.544\times10^{14}$.</li>
+<li><strong>Energy densities</strong>: $\mathrm{GeV}^{4}$ in the vacuum-energy displays became $\mathrm{J\,m^{-3}}$.</li>
+<li><strong>Doctrine</strong>: <em>Physics Units and Common Elements Conventions</em> now refuses the electronvolt for an energy as well as for a mass, and <em>Vacuum Value Normalization</em> rule 2 was rewritten from "an energy may be quoted in electronvolts" to "an energy is written in joules"; its $hc$ is $1.986\,445\,86\times10^{-25}\ \mathrm{J\,m}$.</li>
+<li><strong>Tables</strong> were converted cell by cell where the unit stood in the header: the $Z$ partial widths of the Weinberg article, the relativistic energy table of the non-relativistic-limit article, and the lepton masses of the excitation ladder.</li>
+</ul>
       </div>
     </main>
   </div>
