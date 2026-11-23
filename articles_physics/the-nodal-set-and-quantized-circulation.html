@@ -85,9 +85,9 @@ action, so its curl vanishes wherever the action exists. The second is Stokes' t
 <p>$$
 \tilde V_{\Phi}=\frac{\tilde\nabla_\Phi S_{\tilde\Xi}}{m},
 \qquad
-v_{\Phi,\mu}=\frac{1}{m}\frac{\partial S_{\tilde\Xi}}{\partial R_\mu},
+v_{\Phi,\imath}=\frac{1}{m}\frac{\partial S_{\tilde\Xi}}{\partial R_{\imath}},
 \qquad
-\omega_{\mu\nu}=\frac{\partial v_{\Phi,\nu}}{\partial R_\mu}-\frac{\partial v_{\Phi,\mu}}{\partial R_\nu}=0 .
+\omega_{\imath\jmath}=\frac{\partial v_{\Phi,\jmath}}{\partial R_{\imath}}-\frac{\partial v_{\Phi,\imath}}{\partial R_{\jmath}}=0 .
 $$</p>
 <p>The vanishing is a statement about mixed partial derivatives and it needs nothing from the field equation: any twice differentiable action gives it. What it needs is that the action exist, and the action exists wherever the amplitude is non-zero, because it is defined by</p>
 <p>$$
@@ -249,7 +249,7 @@ $$</p>
 <p>Under a gauge transformation the field multiplies by a unit central element and the winding is unchanged for a single-valued transformation. Take $\tilde\Xi\mapsto\tilde\Xi\,e^{i\theta_{\mathrm{gau}}(r)}e_t$ with $\chi$ a single-valued function. Then the phase is shifted by $\frac{h}{2\pi}\chi$, the circulation around a loop gains $\frac{h}{2\pi}\oint\nabla\chi\cdot d\vec l=0$, and $n$ is unchanged. A transformation with a multivalued $\chi$ is not a gauge transformation of the field on the loop: it changes the field's value at each point and it changes $n$. So the charge is gauge invariant under the gauge group of single-valued transformations, and it classifies the field's configurations rather than being a redundant label.</p>
 <p><strong>The node is where the gauge coordinate has no value, not where the field has no value.</strong> That is why the node is a defect of the description and a feature of the state at the same time: the field is a perfectly good element of the algebra there — zero for the central scalar field — and it is the polar decomposition, and with it the phase, that fails.</p>
 <h2 id="the-cone-with-an-example-that-is-not-zero">The Cone, with an Example That Is Not Zero</h2>
-<p><strong>For a field of general value the node can sit on the cone away from the apex, and the Dirac sector exhibits it.</strong> The quaternionic norm is the sum of the squares of the four coefficients, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, and it vanishes on the complex null cone of the algebra. The central scalar field has one non-zero coefficient, so it can vanish only at the apex. An element with two coefficients can do better:</p>
+<p><strong>For a field of general value the node can sit on the cone away from the apex, and the Dirac sector exhibits it.</strong> The quaternionic norm is the sum of the squares of the four coefficients, $\langle\tilde Q\rangle_{\natural}=\sum_{\imath} Q_{\imath}^{2}$, and it vanishes on the complex null cone of the algebra. The central scalar field has one non-zero coefficient, so it can vanish only at the apex. An element with two coefficients can do better:</p>
 <p>$$
 \tilde Q=\tfrac{1}{2}\bigl(e_t+i\vec e_x\bigr),
 \qquad
@@ -314,7 +314,7 @@ $$</p>
 <td>The phase angle, dimensionless</td>
 </tr>
 <tr>
-<td>$\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$</td>
+<td>$\langle\tilde Q\rangle_{\natural}=\sum_{\imath} Q_{\imath}^{2}$</td>
 <td>Quaternionic norm, vanishing on the cone</td>
 </tr>
 <tr>
@@ -322,11 +322,11 @@ $$</p>
 <td>Four-velocity of the scalar flow</td>
 </tr>
 <tr>
-<td>$v_{\Phi,\mu}$</td>
+<td>$v_{\Phi,\imath}$</td>
 <td>Its components, index low</td>
 </tr>
 <tr>
-<td>$\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$</td>
+<td>$\omega_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath}$</td>
 <td>Vorticity 2-form</td>
 </tr>
 <tr>
@@ -382,11 +382,11 @@ $$</p>
 <td>D'Alembertian of the material sector</td>
 </tr>
 <tr>
-<td>$\delta_{\mu\nu}$</td>
+<td>$\delta_{\imath\jmath}$</td>
 <td>The one metric, all coefficients $+1$; indices stay low</td>
 </tr>
 <tr>
-<td>$\varepsilon_\mu$</td>
+<td>$\varepsilon_{\imath}$</td>
 <td>Sign weight, $+1$ temporal and $-1$ spatial</td>
 </tr>
 <tr>

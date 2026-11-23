@@ -99,7 +99,7 @@ l\cdot m = l\cdot\bar m = n\cdot m = n\cdot\bar m = 0,
 $$</p>
 <p>where $\cdot$ is the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ of the material sector, the interval, extended $\mathbb{C}$-bilinearly to $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_{\Phi}$. This is the normalization appropriate to the inertia $(3,1)$ with $\varepsilon=(1,-1,-1,-1)$ that the read list uses; with the opposite metrical convention one takes $l\cdot n = +1$ and $m\cdot\bar m = -1$. Fixed once here, the convention (1) is held throughout.</p>
 <p>Two features of (1) are worth naming because they are the source of most sign errors in this subject. First, the tetrad is <strong>not</strong> an orthonormal frame: its legs are null, so the metric in tetrad components is off-diagonal, and the completeness relation that inverts (1) carries the off-diagonal signs. Second, $l$ and $n$ are real four-vectors while $m$ and $\bar m$ are complex conjugates; the tetrad is a basis of the complexified material sector, of complex dimension four, not of the real $\mathbb{B}_{\Phi}$.</p>
-<p>The tetrad legs are labelled in the order $(e_1, e_2, e_3, e_4) = (l, n, m, \bar m)$ when a tetrad index is needed. Greek letters $\mu,\nu,\dots$ run over the coordinate directions of the material sector, and tetrad indices $a,b,\dots$ over the four legs. The components of a leg in the tetrad carry the same low index, $l_a, n_a, m_a, \bar m_a$, and every contraction over tetrad or spinor indices is written as an explicit sum.</p>
+<p>The tetrad legs are labelled in the order $(e_1, e_2, e_3, e_4) = (l, n, m, \bar m)$ when a tetrad index is needed. Greek letters ${\imath},\jmath,\dots$ run over the coordinate directions of the material sector, and tetrad indices $a,b,\dots$ over the four legs. The components of a leg in the tetrad carry the same low index, $l_a, n_a, m_a, \bar m_a$, and every contraction over tetrad or spinor indices is written as an explicit sum.</p>
 <h2 id="the-null-tetrad-as-a-frame-of-zero-divisors">The Null Tetrad as a Frame of Zero Divisors</h2>
 <p>The framework's criterion for a zero divisor is a statement about the biquaternion norm: $N$-degeneracy. A nonzero biquaternion $\tilde Q$ is a zero divisor if and only if it is $N$-degenerate, $\langle\tilde Q\rangle_{\natural}=0$, and under the isomorphism $\mathsf{M}_2$ the nonzero zero divisors are exactly the rank-one matrices (<em>N-Regularity and N-Degeneracy in the Biquaternion Algebra</em>, §<em>The Zero Divisors</em>). Restricted to the material sector, $\langle\tilde Q\rangle_{\natural} = -c^2(r'_t)^2+r_x^2+r_y^2+r_z^2$, so a nonzero element of $\mathbb{B}_{\Phi}$ is a zero divisor exactly when its four-vector is null. The Newman–Penrose construction asks for four null vectors; the framework has a name for them already.</p>
 <p>Take the tetrad</p>
@@ -219,13 +219,13 @@ $$</p>
 \tilde{Q} = -\langle \tilde{Q},l\rangle_{\natural}\,n - \langle \tilde{Q},n\rangle_{\natural}\,l + \langle \tilde{Q},m\rangle_{\natural}\,\bar m + \langle \tilde{Q},\bar m\rangle_{\natural}\,m ,
 \tag{6}
 $$</p>
-<p>and, writing $l_\mu,n_\mu,m_\mu,\bar m_\mu$ for the components of the legs in the orthonormal coordinate basis of the material sector, the interval's coefficients are</p>
+<p>and, writing $l_{\imath},n_{\imath},m_\mu,\bar m_\mu$ for the components of the legs in the orthonormal coordinate basis of the material sector, the interval's coefficients are</p>
 <p>$$
-\boxed{\;g_{\mu\nu} = -l_\mu n_\nu - n_\mu l_\nu + m_\mu\bar m_\nu + \bar m_\mu m_\nu\;}.
+\boxed{\;g_{\imath\jmath} = -l_{\imath} n_{\jmath} - n_{\imath} l_{\jmath} + m_\mu\bar m_{\jmath} + \bar m_\mu m_{\jmath}\;}.
 \tag{7}
 $$</p>
 <p>Substituting (2), the right-hand side of (7) reproduces the interval $-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2$: the four zero divisors rebuild the material-sector interval, and its one minus is the square of the $i$ in $Q_t=i q'_t$. No other input is used. Both (6) and (7) were recomputed symbolically; (6) was checked on a general element $\tilde{Q}$ with all four coefficients arbitrary, and (7) on the explicit legs.</p>
-<p>Equation (7) is the null-tetrad counterpart of the frame relation $g_{\mu\nu} = \langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}$ of the parent article. There the frame was orthonormal and its legs lay in $\mathbb{B}_{\Phi}$; here the frame is null and complex, and its legs are zero divisors. At each point the two are related by the local Lorentz transformation that carries one basis to the other, so the parent's remark — that the algebra supplies the local Lorentz group and the home of the frame, but not the frame itself — applies here verbatim.</p>
+<p>Equation (7) is the null-tetrad counterpart of the frame relation $g_{\imath\jmath} = \langle\tilde E_{\Phi,\imath},\tilde E_{\Phi,\jmath}\rangle_{\natural}$ of the parent article. There the frame was orthonormal and its legs lay in $\mathbb{B}_{\Phi}$; here the frame is null and complex, and its legs are zero divisors. At each point the two are related by the local Lorentz transformation that carries one basis to the other, so the parent's remark — that the algebra supplies the local Lorentz group and the home of the frame, but not the frame itself — applies here verbatim.</p>
 <h2 id="the-spinor-dyad-behind-the-tetrad">The Spinor Dyad Behind the Tetrad</h2>
 <p>Equation (3) also exhibits the tetrad's spinorial origin. Writing the two column spinors</p>
 <p>$$
@@ -249,7 +249,7 @@ $$</p>
 $$</p>
 <p>Metric compatibility, $\nabla_a(e_b\cdot e_c)=0$, gives $\Gamma_{abc}+\Gamma_{acb}=0$, so the coefficients are antisymmetric in the last two tetrad indices. For each $a$ this is a $4\times4$ antisymmetric matrix with six independent entries, the connection being real, so $\Gamma_{abc}$ has $4\times6=24$ real independent components — that is, <strong>twelve complex</strong> ones. These twelve complex numbers, written in the standard names, are the <strong>spin coefficients</strong>:</p>
 <p>$$
-\kappa,\ \sigma,\ \rho,\ \tau; \qquad \pi,\ \lambda,\ \mu,\ \nu; \qquad \varepsilon,\ \gamma,\ \beta,\ \alpha .
+\kappa,\ \sigma,\ \rho,\ \tau; \qquad \pi,\ \lambda,\ \mu,\ \jmath; \qquad \varepsilon,\ \gamma,\ \beta,\ \alpha .
 $$</p>
 <p>The first four are the contractions of $\vec\nabla_\Phi l$ with the tetrad legs,</p>
 <p>$$
@@ -468,7 +468,7 @@ $$</p>
 <td>connection coefficients in the tetrad</td>
 </tr>
 <tr>
-<td>$\kappa,\sigma,\rho,\tau,\pi,\lambda,\mu,\nu,\varepsilon,\gamma,\beta,\alpha$</td>
+<td>$\kappa,\sigma,\rho,\tau,\pi,\lambda,\imath,\jmath,\varepsilon,\gamma,\beta,\alpha$</td>
 <td>the twelve spin coefficients</td>
 </tr>
 <tr>

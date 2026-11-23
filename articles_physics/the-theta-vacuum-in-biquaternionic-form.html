@@ -77,7 +77,7 @@ $$
 $$
 weighted by a phase $\exp(i\theta_{\mathrm{vac}} Ϙ)$ built from the <strong>topological angle</strong> $\theta_{\mathrm{vac}}$. The phase is precisely the exponential of the topological term
 $$
-S_{\mathrm{vac}} = \frac{\theta_{\mathrm{vac}}}{16\pi^2}\int d^4r\;\mathrm{tr}\big(\sum_{\mu,\nu}F_{\mu\nu}\tilde F_{\mu\nu}\big) = \theta_{\mathrm{vac}}\,Ϙ ,
+S_{\mathrm{vac}} = \frac{\theta_{\mathrm{vac}}}{16\pi^2}\int d^4r\;\mathrm{tr}\big(\sum_{\imath,\jmath}F_{\imath\jmath}\tilde F_{\imath\jmath}\big) = \theta_{\mathrm{vac}}\,Ϙ ,
 $$
 whose integrand is a total derivative, whose integral is an integer $Ϙ$, and which therefore contributes to the action only through the sectors. The construction is standard (Callan, Dashen, and Gross 1976; Jackiw and Rebbi 1976; 't Hooft 1976), and the angle is periodic, $\theta_{\mathrm{vac}}\sim\theta_{\mathrm{vac}}+2\pi$, because the phase is.</p>
 <p>Here $\theta_{\mathrm{vac}}$ is the vacuum angle: it multiplies the integer topological charge, so it is real.</p>
@@ -111,12 +111,12 @@ $$
 and in biquaternion form the corresponding density is $\mathrm{Sc}(\tilde F\star\tilde F)$, with $\star$ the Hodge dual obeying $\star^2=-1$ on two-forms. The density is a level-1 scalar read with the plain form, so the topological charge is a real number and not a biquaternion: this is the same scalar extraction that makes every action in the series a number.</p>
 <p><strong>The non-abelian charge.</strong> For a non-abelian connection the charge is the second Chern number,
 $$
-Ϙ = \frac{1}{16\pi^2}\int d^4r\;\mathrm{tr}\big(\sum_{\mu,\nu}F_{\mu\nu}\tilde F_{\mu\nu}\big) \in\mathbb{Z},
+Ϙ = \frac{1}{16\pi^2}\int d^4r\;\mathrm{tr}\big(\sum_{\imath,\jmath}F_{\imath\jmath}\tilde F_{\imath\jmath}\big) \in\mathbb{Z},
 $$
-with $F_{\mu\nu}$ the components of the curvature and the trace over the gauge index. That gauge trace is written $\mathrm{tr}$, lower case, to distinguish it from the framework's own scalar pairing $\mathrm{Tr}$; it is the same object <em>Instantons and Solitons in Biquaternionic Form</em> writes with the capital symbol, so the two articles' charges agree. In the framework's notation the curvature is $\mathcal{F}=\tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar e_\mu e_\nu$, and the density is the trace of the product of $\mathcal{F}$ with its dual; the integral is an integer for a configuration that is pure gauge at infinity. This is standard (Belavin, Polyakov, Schwarz, and Tyupkin 1975; 't Hooft 1976), and the instanton article computes the explicit configuration and the value $Ϙ=1$ for the one-instanton solution. That value is inherited here.</p>
+with $F_{\imath\jmath}$ the components of the curvature and the trace over the gauge index. That gauge trace is written $\mathrm{tr}$, lower case, to distinguish it from the framework's own scalar pairing $\mathrm{Tr}$; it is the same object <em>Instantons and Solitons in Biquaternionic Form</em> writes with the capital symbol, so the two articles' charges agree. In the framework's notation the curvature is $\mathcal{F}=\tfrac12\sum_{\imath\jmath}F_{\imath\jmath}\bar e_{\imath} e_{\jmath}$, and the density is the trace of the product of $\mathcal{F}$ with its dual; the integral is an integer for a configuration that is pure gauge at infinity. This is standard (Belavin, Polyakov, Schwarz, and Tyupkin 1975; 't Hooft 1976), and the instanton article computes the explicit configuration and the value $Ϙ=1$ for the one-instanton solution. That value is inherited here.</p>
 <p><strong>The $\theta_{\mathrm{vac}}$ term.</strong> The topological term is
 $$
-S_{\mathrm{vac}} = \frac{\theta_{\mathrm{vac}}}{16\pi^2}\int d^4r\;\mathrm{tr}\big(\sum_{\mu,\nu}F_{\mu\nu}\tilde F_{\mu\nu}\big) = \theta_{\mathrm{vac}}\,Ϙ ,
+S_{\mathrm{vac}} = \frac{\theta_{\mathrm{vac}}}{16\pi^2}\int d^4r\;\mathrm{tr}\big(\sum_{\imath,\jmath}F_{\imath\jmath}\tilde F_{\imath\jmath}\big) = \theta_{\mathrm{vac}}\,Ϙ ,
 $$
 a total derivative term that does not affect the equations of motion in any sector of fixed $Ϙ$ but weights the sectors relative to one another in the path integral. It is this weighting, and only this weighting, that the $\theta_{\mathrm{vac}}$ vacuum encodes. The term is P- and T-odd, and it is the unique marginal operator built from the gauge fields that is a total derivative and does not change the perturbative theory.</p>
 <p><strong>Why the framework's contribution is only the value space.</strong> Nothing in the construction of $Ϙ$ or $S_{\mathrm{vac}}$ uses a biquaternion-specific fact: the charge is a standard topological invariant, the dual is the standard Hodge dual, and the trace is the standard gauge trace. What the framework can supply is (i) the space in which the <em>phase</em> lives, which is its centre, and (ii) the statement that the determinant whose phase the angle is has a phase only when the operator is non-central. Both are taken up in the next two sections.</p>
@@ -174,7 +174,7 @@ has a strictly positive determinant and no phase. The two are the framework's ce
 $$
 Ϙ = \mathrm{ind}\,\mathcal{D}_+ = \dim\ker\mathcal{D}_+-\dim\ker\mathcal{D}_- ,
 $$
-computed by the Atiyah–Singer theorem as $\frac{1}{8\pi^2}\int\mathrm{tr}(F\wedge F)$, the second Chern number, on a four-dimensional manifold without boundary; since $\mathrm{tr}(F\wedge F)=\tfrac12\,\mathrm{tr}(\sum_{\mu,\nu}F_{\mu\nu}\tilde F_{\mu\nu})\,d^4r$, this is the same number as the previous section's $\frac{1}{16\pi^2}\int d^4r\,\mathrm{tr}(F\tilde F)$. Read in the framework, this says that the <em>sector label</em> $Ϙ$ is a <strong>central integer</strong> — an element of $\mathbb{Z}e_t$ — and together with the previous section's result that the weighting $\exp(i\theta_{\mathrm{vac}} Ϙ)$ is a <strong>central phase</strong>, the two ingredients of the $\theta_{\mathrm{vac}}$ vacuum both lie in the centre:
+computed by the Atiyah–Singer theorem as $\frac{1}{8\pi^2}\int\mathrm{tr}(F\wedge F)$, the second Chern number, on a four-dimensional manifold without boundary; since $\mathrm{tr}(F\wedge F)=\tfrac12\,\mathrm{tr}(\sum_{\imath,\jmath}F_{\imath\jmath}\tilde F_{\imath\jmath})\,d^4r$, this is the same number as the previous section's $\frac{1}{16\pi^2}\int d^4r\,\mathrm{tr}(F\tilde F)$. Read in the framework, this says that the <em>sector label</em> $Ϙ$ is a <strong>central integer</strong> — an element of $\mathbb{Z}e_t$ — and together with the previous section's result that the weighting $\exp(i\theta_{\mathrm{vac}} Ϙ)$ is a <strong>central phase</strong>, the two ingredients of the $\theta_{\mathrm{vac}}$ vacuum both lie in the centre:
 $$
 \boxed{\;Ϙ\in\mathbb{Z}\,e_t\subset\mathbb{B}_{C} ,
 \qquad
@@ -225,7 +225,7 @@ at small $\theta_{\mathrm{vac}}$, so that a nonzero $\xi$ is what makes $\theta_
 <li>The topological charge's integrality, the one-instanton value $Ϙ=1$, and the second Chern number.</li>
 <li>The periodicity of $\theta_{\mathrm{vac}}$, the invariant combination $\bar\theta_{\mathrm{vac}}=\theta_{\mathrm{vac}}+\arg\det M$, the strong-CP problem, and the axion as a relaxation mechanism.</li>
 <li>The eta invariant and the phase of a determinant family; the parity and time-reversal properties of $F\tilde F$.</li>
-<li>The index theorem $\mathrm{ind}\,\mathcal{D}_+=\frac{1}{8\pi^2}\int\mathrm{tr}(F\wedge F)$, equivalently $\frac{1}{16\pi^2}\int d^4r\,\mathrm{tr}(\sum_{\mu,\nu}F_{\mu\nu}\tilde F_{\mu\nu})$; the Atiyah–Patodi–Singer boundary correction and the eta invariant; spectral flow as the charge difference.</li>
+<li>The index theorem $\mathrm{ind}\,\mathcal{D}_+=\frac{1}{8\pi^2}\int\mathrm{tr}(F\wedge F)$, equivalently $\frac{1}{16\pi^2}\int d^4r\,\mathrm{tr}(\sum_{\imath,\jmath}F_{\imath\jmath}\tilde F_{\imath\jmath})$; the Atiyah–Patodi–Singer boundary correction and the eta invariant; spectral flow as the charge difference.</li>
 <li>The $\theta_{\mathrm{vac}}$-dependent partition function $Z(\theta_{\mathrm{vac}})=\sum_Ϙ \exp(i\theta_{\mathrm{vac}} Ϙ)Z_Ϙ$; the topological susceptibility $\xi$ and the small-$\theta_{\mathrm{vac}}$ effective action; the role of $\xi$ in the axial-symmetry Goldstone mass.</li>
 </ul>
 <p><strong>Interpretation.</strong></p>
@@ -242,7 +242,7 @@ at small $\theta_{\mathrm{vac}}$, so that a nonzero $\xi$ is what makes $\theta_
 <h2 id="summary">Summary</h2>
 <p>The $\theta_{\mathrm{vac}}$ vacuum in biquaternionic form is the standard superposition of topological sectors with the framework's value space for the angle. The topological term is
 $$
-S_{\mathrm{vac}} = \frac{\theta_{\mathrm{vac}}}{16\pi^2}\int d^4r\;\mathrm{tr}\big(\sum_{\mu,\nu}F_{\mu\nu}\tilde F_{\mu\nu}\big) = \theta_{\mathrm{vac}}\,Ϙ ,
+S_{\mathrm{vac}} = \frac{\theta_{\mathrm{vac}}}{16\pi^2}\int d^4r\;\mathrm{tr}\big(\sum_{\imath,\jmath}F_{\imath\jmath}\tilde F_{\imath\jmath}\big) = \theta_{\mathrm{vac}}\,Ϙ ,
 \qquad Ϙ\in\mathbb{Z},
 $$
 its abelian density is $\mathrm{Sc}(\tilde F\star\tilde F)=I_2=\vec E\cdot\vec B$, and the dual obeys $\star^2=-1$; the instanton article supplies the configurations and the integrality, inherited here. The vacuum is $|\theta_{\mathrm{vac}}\rangle=\sum_Ϙ \exp(i\theta_{\mathrm{vac}} Ϙ)|Ϙ\rangle$, and the weighting $\exp(i\theta_{\mathrm{vac}} Ϙ)e_t$ is a <strong>central $*$-unitary</strong> of $\mathbb{B}_{C}$, commuting with every quaternion unit, every Lorentz rotor, every module component, and both sectors. The framework therefore supplies the angle's value space — its centre — and shows that the $\theta_{\mathrm{vac}}$ vacuum does not disturb the sector structure. The angle is the <strong>phase</strong> of a determinant, and a determinant has a phase only for a <strong>non-central</strong> operator, as the toy families $\mathcal{D}(\lambda)$ (phase $\pi$) and $\mathcal{C}(\lambda)$ (phase $0$) exhibit; the conformal anomaly of the previous article is the modulus interpretation of the same object. The topology, the integrality, the periodicity, the strong-CP problem, and the eta invariant are standard and transcribed.</p>
@@ -273,7 +273,7 @@ its abelian density is $\mathrm{Sc}(\tilde F\star\tilde F)=I_2=\vec E\cdot\vec B
 </tr>
 <tr>
 <td>$Ϙ$</td>
-<td>Topological charge, $\frac{1}{16\pi^2}\int d^4r\,\mathrm{tr}(\sum_{\mu,\nu}F_{\mu\nu}\tilde F_{\mu\nu})\in\mathbb{Z}$; equals the second Chern number $\frac{1}{8\pi^2}\int\mathrm{tr}(F\wedge F)$</td>
+<td>Topological charge, $\frac{1}{16\pi^2}\int d^4r\,\mathrm{tr}(\sum_{\imath,\jmath}F_{\imath\jmath}\tilde F_{\imath\jmath})\in\mathbb{Z}$; equals the second Chern number $\frac{1}{8\pi^2}\int\mathrm{tr}(F\wedge F)$</td>
 </tr>
 <tr>
 <td>$\mathrm{tr}$</td>
@@ -292,7 +292,7 @@ its abelian density is $\mathrm{Sc}(\tilde F\star\tilde F)=I_2=\vec E\cdot\vec B
 <td>$\theta_{\mathrm{vac}}$ vacuum; central weighting</td>
 </tr>
 <tr>
-<td>$\mathcal{F}=\tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar e_\mu e_\nu$</td>
+<td>$\mathcal{F}=\tfrac12\sum_{\imath\jmath}F_{\imath\jmath}\bar e_{\imath} e_{\jmath}$</td>
 <td>Non-abelian curvature in biquaternion form</td>
 </tr>
 <tr>

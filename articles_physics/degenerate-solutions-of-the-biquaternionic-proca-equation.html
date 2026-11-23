@@ -79,7 +79,7 @@
 <p>The third is that <strong>the field strength sits in the other sector</strong>. The field strength is a pure vector, so it has zero trace, and a pure vector's square is a scalar; the cone of its carrier is therefore entirely $\Sigma_{00}$, and $\Sigma_{01}$ does not meet that carrier at all. The two objects of the Proca field carry one sector each. The trace decides, and the trace is the one number the two carriers cannot share.</p>
 <p>The fourth is that <strong>the plane-wave amplitude is strictly spacelike</strong>. For a plane wave the norm of the amplitude is a transverse part plus a longitudinal part weighted by $k_m^2c^2/\omega^2$, a sum of two non-negative terms. It vanishes only when the transverse part vanishes and the longitudinal part is absent or the mass is zero. So no massive plane wave has a lightlike amplitude: a real massive wave is degenerate exactly at its nodes, and at zero mass the longitudinal mode is lightlike everywhere, where its field strength vanishes. Degenerate values are therefore a nodal or a superposition phenomenon, and not a property of a single amplitude.</p>
 <p><strong>A note on the sector names.</strong> The subscripts of $\Sigma_{01}$ and $\Sigma_{00}$ are the corpus's two predicates, $N=0$ and $B^2\neq0$, and not a count of anything. The Dirac article fixes the notation, and this article uses it unchanged.</p>
-<p>The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_\mu^2=-e_t$ and central scalar imaginary $i$; the material sector is $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and the vector part is $\mathbb{B}_V=\mathrm{span}_\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$; the quaternionic norm is $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$, real on $\mathbb{B}_\Phi$; the gradient is $\tilde\nabla_\Phi$ with conjugate $(\tilde\nabla_\Phi)^{\natural}$ and $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; and $k_m=\frac{2\pi mc}{h}$.</p>
+<p>The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_{\imath}^2=-e_t$ and central scalar imaginary $i$; the material sector is $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and the vector part is $\mathbb{B}_V=\mathrm{span}_\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$; the quaternionic norm is $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$, real on $\mathbb{B}_\Phi$; the gradient is $\tilde\nabla_\Phi$ with conjugate $(\tilde\nabla_\Phi)^{\natural}$ and $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; and $k_m=\frac{2\pi mc}{h}$.</p>
 <h2 id="the-equation-and-the-field">The Equation and the Field</h2>
 <p><strong>The equation.</strong> The Proca equation is the single biquaternion equation</p>
 <p>$$
@@ -95,11 +95,11 @@ $$</p>
 $$</p>
 <p>which is real, and which is the Minkowski square of the four-vector $(a'_t,\vec A)$. Write $\tilde F=f_x\vec e_x+f_y\vec e_y+f_z\vec e_z$ with complex coefficients. Then</p>
 <p>$$
-\langle\tilde F\rangle_\natural=\sum_\mu f_\mu^2 ,
+\langle\tilde F\rangle_\natural=\sum_{\imath} f_{\imath}^2 ,
 $$</p>
 <p>which is complex in general, and which is $-F^2$ because a pure vector satisfies $\tilde F^{\natural}=-\tilde F$.</p>
 <p><strong>Definition.</strong> A field is <strong>degenerate</strong> at a point when its norm vanishes there; it is degenerate when the condition holds at every point of its domain. For the potential that is the light cone of field values; for the field strength it is $\tilde F^2=0$.</p>
-<p><strong>A reading of the definition.</strong> The norm that decides degeneracy is the quaternionic one, $\langle\cdot\rangle_\natural$. The definite form $\langle\cdot\rangle_*=\sum_\mu\lvert Q_\mu\rvert^2$ measures the size and never vanishes off the apex. A degenerate field has a size and no $\natural$ norm, and the two statements are not in conflict: they are two different forms, and only the indefinite one has a cone.</p>
+<p><strong>A reading of the definition.</strong> The norm that decides degeneracy is the quaternionic one, $\langle\cdot\rangle_\natural$. The definite form $\langle\cdot\rangle_*=\sum_{\imath}\lvert Q_{\imath}\rvert^2$ measures the size and never vanishes off the apex. A degenerate field has a size and no $\natural$ norm, and the two statements are not in conflict: they are two different forms, and only the indefinite one has a cone.</p>
 <h2 id="the-lightlike-set-of-the-potential">The Lightlike Set of the Potential</h2>
 <p><strong>The intersection.</strong> The degenerate potentials are the elements of</p>
 <p>$$
@@ -137,7 +137,7 @@ $$</p>
 <p><strong>The field strength's carrier.</strong> The vector part has six real dimensions and its norm is complex, so its cone is two real equations on six and has dimension four. Its codimension is two, as in the full algebra, and for the same reason: the carrier is complex.</p>
 <p><strong>The field strength's sector.</strong> On the cone of $\mathbb{B}_V$ a field strength satisfies $\tilde F^2=0$; if it does not vanish it is therefore in $\Sigma_{00}$. It cannot be in $\Sigma_{01}$:</p>
 <p><em>Proposition.</em> $\Sigma_{01}\cap\mathbb{B}_V=\{0\}$.</p>
-<p><em>Proof.</em> Let $\tilde F$ be a pure vector and suppose $\tilde F^2=\lambda\tilde F$ with $\lambda\neq0$. A pure vector squares to a scalar, because the cross terms $\vec e_\mu\vec e_\nu+\vec e_\nu\vec e_\mu$ vanish for $\mu\neq\nu$; and $\lambda\tilde F$ is a pure vector. A scalar equal to a pure vector vanishes, so $\lambda\tilde F=0$, and since $\lambda\neq0$ the field vanishes.</p>
+<p><em>Proof.</em> Let $\tilde F$ be a pure vector and suppose $\tilde F^2=\lambda\tilde F$ with $\lambda\neq0$. A pure vector squares to a scalar, because the cross terms $\vec e_{\imath}\vec e_{\jmath}+\vec e_{\jmath}\vec e_{\imath}$ vanish for ${\imath}\neq\jmath$; and $\lambda\tilde F$ is a pure vector. A scalar equal to a pure vector vanishes, so $\lambda\tilde F=0$, and since $\lambda\neq0$ the field vanishes.</p>
 <p><strong>The trace decides.</strong> The two results above are one result read twice. The sector is fixed by the trace: $\Sigma_{01}$ needs $\lambda=2Q_t\neq0$ and $\Sigma_{00}$ needs a vanishing trace. The material sector's trace is $2i\,a'_t$, which is non-zero for every non-zero lightlike potential; the vector part's trace is zero identically, because a pure vector has no scalar component. So each carrier can hold exactly one of the two sectors, and which one is decided before any field is chosen.</p>
 <p>The table collects the comparison.</p>
 <div class="table-scroll"><table>
@@ -162,7 +162,7 @@ $$</p>
 <tr>
 <td>norm</td>
 <td>$-(a'_t)^2+\vec A^2$, real</td>
-<td>$\sum_\mu f_\mu^2$, complex</td>
+<td>$\sum_{\imath} f_{\imath}^2$, complex</td>
 </tr>
 <tr>
 <td>cone, in equations</td>
@@ -182,7 +182,7 @@ $$</p>
 <tr>
 <td>$B^2$</td>
 <td>$\vec A^2$</td>
-<td>$\sum_\mu f_\mu^2$</td>
+<td>$\sum_{\imath} f_{\imath}^2$</td>
 </tr>
 <tr>
 <td>sector of the cone</td>
@@ -313,7 +313,7 @@ $$</p>
 <td>Quaternionic norm; real on $\mathbb{B}_\Phi$</td>
 </tr>
 <tr>
-<td>$\langle\tilde Q\rangle_*=\sum_\mu\lvert Q_\mu\rvert^2$</td>
+<td>$\langle\tilde Q\rangle_*=\sum_{\imath}\lvert Q_{\imath}\rvert^2$</td>
 <td>Definite norm; the size, never zero off the apex</td>
 </tr>
 <tr>

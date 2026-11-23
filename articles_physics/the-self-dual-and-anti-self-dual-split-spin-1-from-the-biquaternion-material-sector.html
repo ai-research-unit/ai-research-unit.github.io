@@ -83,7 +83,7 @@ $$</p>
 \tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A, \qquad
 \tilde{F} = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} - \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
 $$</p>
-<p>with $\vec H$ the magnetic field and $\vec B = \mu\vec H$ the magnetic induction, and $c = 1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The normalization of the potential is the one for which the two expressions for $\tilde{F}$ in the display agree, a constant multiple of $\tilde{A}_{\Phi}$ being absorbed in it; the field strength itself is fixed unambiguously by the tensor formula $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$, as the companion field-strength article records. The Lorentz rotor acts by conjugation, $\tilde{Q}\mapsto\tilde{U}_{\mathrm{lor}}\tilde{Q}\tilde{U}_{\mathrm{lor}}^{*}$, and the material interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i q'_t$.</p>
+<p>with $\vec H$ the magnetic field and $\vec B = \mu\vec H$ the magnetic induction, and $c = 1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The normalization of the potential is the one for which the two expressions for $\tilde{F}$ in the display agree, a constant multiple of $\tilde{A}_{\Phi}$ being absorbed in it; the field strength itself is fixed unambiguously by the tensor formula $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath}$, as the companion field-strength article records. The Lorentz rotor acts by conjugation, $\tilde{Q}\mapsto\tilde{U}_{\mathrm{lor}}\tilde{Q}\tilde{U}_{\mathrm{lor}}^{*}$, and the material interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i q'_t$.</p>
 <p>The companion articles, and what each supplies, are the following.</p>
 <ul>
 <li><em>The Field-Strength Biquaternion and Its Invariants</em>, for the field-strength biquaternion, the Hodge dual and the field invariants.</li>
@@ -107,7 +107,7 @@ $$</p>
 <p>The dimension count is worth recording because it is the whole content of the split. A real two-form has six real components, which is the same as a complex three-vector; the complexification of the two-form space doubles it to six complex components, and the Hodge dual, whose square is $-1$, separates those six complex components into two three-dimensional complex eigenspaces. The two eigenspaces are the two summands $(1,0)$ and $(0,1)$, and the real two-form is the real form on which the two halves are conjugate.</p>
 <h2 id="the-carrier-inside-the-algebra">The Carrier Inside the Algebra</h2>
 <h3 id="the-vector-part-is-the-bivector-space">The vector part is the bivector space</h3>
-<p>An element of $\mathbb{B}$ is written in components as $\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$ with $Q_\mu \in \mathbb{C}$. The <strong>vector part</strong> is the space of elements with vanishing scalar part,</p>
+<p>An element of $\mathbb{B}$ is written in components as $\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$ with $Q_{\imath} \in \mathbb{C}$. The <strong>vector part</strong> is the space of elements with vanishing scalar part,</p>
 <p>$$
 \mathbb{B}_{V} = \{\,Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z\,\},
 $$</p>
@@ -166,7 +166,7 @@ $$</p>
 <p>$$
 \star\tilde{F} = -i\tilde{F} = \tilde{F}(-i),
 $$</p>
-<p>the scalar imaginary being central, so that left and right multiplication agree. The statement is intrinsic: no Clifford generator, no gamma matrix (no basis operator $T_{\mu\nu}$), and no choice of representation enters. The Hodge dual of the framework's field strength is the scalar imaginary acting on the vector part of the algebra.</p>
+<p>the scalar imaginary being central, so that left and right multiplication agree. The statement is intrinsic: no Clifford generator, no gamma matrix (no basis operator $T_{\imath\jmath}$), and no choice of representation enters. The Hodge dual of the framework's field strength is the scalar imaginary acting on the vector part of the algebra.</p>
 <h2 id="the-self-dual-and-anti-self-dual-split">The Self-Dual and Anti-Self-Dual Split</h2>
 <h3 id="projectors">Projectors</h3>
 <p>Because $\star^2 = -1$, the dual is a complex structure on the real vector part. On its complexification, described in the paragraph after the next, it has the eigenvalues $\pm i$, and the projectors onto the two eigenspaces are</p>
@@ -222,7 +222,7 @@ $$</p>
 <p>so that the antisymmetric tensor is <strong>pure</strong> integer spin. This is the algebraic content of the statement that the vector potential carries a scalar admixture while the field strength does not, and it is the reason the self-dual split is the natural home of spin one in the framework: it separates the two pure spin-one multiplets from one another, and it leaves no scalar behind.</p>
 <h3 id="the-triplet-in-the-algebras-letters">The triplet in the algebra's letters</h3>
 <p>The count is realised concretely, and the realisation is the one constructed in the maths article <a href="../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html">From the Spin to the Carriers and the Closures</a>, §<em>The Anti-Hermitian Space</em>.</p>
-<p>The rotation algebra inside $\mathbb{B}$ is the real span of the three pure quaternions, $\mathfrak{g}=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, with bracket $[\vec e_\mu,\vec e_\nu]=2\epsilon_{\mu\nu\lambda}\vec e_\lambda$. Its Hermitian normalisation is $\tilde S_k=\tfrac12 i\vec e_k$, with $[\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k$ and $\tilde S_k^{*}=\tilde S_k$. The factor $i$ is the only difference between the two normalisations.</p>
+<p>The rotation algebra inside $\mathbb{B}$ is the real span of the three pure quaternions, $\mathfrak{g}=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, with bracket $[\vec e_{\imath},\vec e_{\jmath}]=2\epsilon_{\imath\jmath\lambda}\vec e_\lambda$. Its Hermitian normalisation is $\tilde S_k=\tfrac12 i\vec e_k$, with $[\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k$ and $\tilde S_k^{*}=\tilde S_k$. The factor $i$ is the only difference between the two normalisations.</p>
 <p>The carrier is the vector part itself, of complex dimension three, with the adjoint action $\tilde{Q}\mapsto[\tilde S_k,\tilde{Q}]$. A weight basis is</p>
 <p>$$
 v_+=\vec e_x+i\vec e_y,\qquad v_0=\vec e_z,\qquad v_-=\vec e_x-i\vec e_y,

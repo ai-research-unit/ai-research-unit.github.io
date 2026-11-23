@@ -82,9 +82,9 @@
 </ol>
 <p><strong>The operators, fixed once.</strong> Every derivative in this exercise is the biquaternionic gradient</p>
 <p>$$
-\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},
+\tilde\nabla_\Phi=\sum_{\imath\in\{t,x,y,z\}}e_{\imath}\frac{\partial}{\partial R_{\imath}},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
+(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath\in\{t,x,y,z\}}\varepsilon_{\imath} e_{\imath}\frac{\partial}{\partial R_{\imath}},
 \qquad
 \varepsilon=(1,-1,-1,-1),
 $$</p>
@@ -100,7 +100,7 @@ $$</p>
 \qquad
 \Box_\Phi=\Delta_\Phi-\frac{\partial^2}{\partial {r'_t}^2},
 $$</p>
-<p>and the pure part of the gradient is written $D_3=\sum_\eta\vec e_\eta\partial/\partial r_\eta$. Minimal coupling shifts each derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-\frac{2\pi iqA_{\mu}}{h}$, and with it the gradient:</p>
+<p>and the pure part of the gradient is written $D_3=\sum_\eta\vec e_\eta\partial/\partial r_\eta$. Minimal coupling shifts each derivative, $\partial/\partial R_{\imath}\to\partial/\partial R_{\imath}-\frac{2\pi iqA_{\imath}}{h}$, and with it the gradient:</p>
 <p>$$
 \tilde\nabla_\Phi\longmapsto\tilde\nabla_\Phi-\frac{2\pi i\,q}{h}\tilde A_{\Phi},
 \qquad
@@ -267,10 +267,10 @@ $$</p>
 <h2 id="problem-2-minimal-substitution-the-electromagnetic-terms-and-math199">Problem 2: Minimal substitution, the electromagnetic terms, and $g=2$</h2>
 <p><strong>Statement.</strong> Carry out the minimal substitution, evaluate the electromagnetic terms it generates, and verify the gyromagnetic factor $g=2$ together with the biquaternion form of the spin term.</p>
 <p><strong>Solution.</strong></p>
-<p><em>Step 1: the substitution.</em> The minimal coupling of this exercise is a shift of every derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-\frac{2\pi iqA_{\mu}}{h}$; on the gradient it is $\tilde\nabla_\Phi\to\tilde\nabla_\Phi-\frac{2\pi i\,q\,\tilde{A}_{\Phi}}{h}$, with $A_\mu=(Ξ,-\vec A)$ in this mostly-minus metric, so that $\tilde A_{\Phi}=Ξ e_t-\vec A$. The time component gives</p>
+<p><em>Step 1: the substitution.</em> The minimal coupling of this exercise is a shift of every derivative, $\partial/\partial R_{\imath}\to\partial/\partial R_{\imath}-\frac{2\pi iqA_{\imath}}{h}$; on the gradient it is $\tilde\nabla_\Phi\to\tilde\nabla_\Phi-\frac{2\pi i\,q\,\tilde{A}_{\Phi}}{h}$, with $A_{\imath}=(Ξ,-\vec A)$ in this mostly-minus metric, so that $\tilde A_{\Phi}=Ξ e_t-\vec A$. The time component gives</p>
 <p>$$i\,\frac{h}{2\pi}\,c\frac{\partial}{\partial  r'_t}\ \longrightarrow\ i\,\frac{h}{2\pi}\,c\frac{\partial}{\partial  r'_t}-qΞ ,
 $$</p>
-<p>and the spatial components give $\vec\pi=p-q\vec A$, that is the pure part of the gradient becomes $D_3^A$ with $\sum_\eta\vec e_\eta\pi_\eta=-i\,\frac{h}{2\pi}\,D_{3}^{A}$. The electrostatic energy is collected in $V=qΞ$. The sign of the coupling is tied to the metric and to the convention for $A_\mu$; the mostly-plus convention often writes the opposite sign. Within this article the statement above is used throughout.</p>
+<p>and the spatial components give $\vec\pi=p-q\vec A$, that is the pure part of the gradient becomes $D_3^A$ with $\sum_\eta\vec e_\eta\pi_\eta=-i\,\frac{h}{2\pi}\,D_{3}^{A}$. The electrostatic energy is collected in $V=qΞ$. The sign of the coupling is tied to the metric and to the convention for $A_{\imath}$; the mostly-plus convention often writes the opposite sign. Within this article the statement above is used throughout.</p>
 <p><em>Step 2: the commutator of the kinetic momenta.</em> With $p=-i\,\frac{h}{2\pi}\nabla$ and $\vec\nabla_\Phi=\sum_\eta\vec e_\eta\partial/\partial r_\eta$ the pure part of the gradient,</p>
 <p>$$
 [\pi_i,\pi_j]=-q\bigl([p_i,A_j]+[A_i,p_j]\bigr)

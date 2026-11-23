@@ -140,7 +140,7 @@ $$</p>
 \frac{\partial w_{\mathrm{fl}}}{\partial r'_t}+\frac{1}{c}\vec\nabla_\Phi\cdot\vec S_{\mathrm P}=0
 \qquad\text{on shell},
 $$</p>
-<p>which is the content of the imported statement $\sum_\mu\partial T_{\mu\nu}/\partial R_\mu=0$ at $\nu=t$, read in the real coordinates. The first two entries are the ones the element keeps.</p>
+<p>which is the content of the imported statement $\sum_{\imath}\partial T_{\imath\jmath}/\partial R_{\imath}=0$ at ${\jmath}=t$, read in the real coordinates. The first two entries are the ones the element keeps.</p>
 <h3 id="the-polar-components">The polar components</h3>
 <p><strong>The element's two entries separate into an amplitude part and a phase part.</strong> The central field has two real components, $\xi_1=\lVert\tilde\Xi\rVert\cos\theta_{\mathrm{phs}}$ and $\xi_2=\lVert\tilde\Xi\rVert\sin\theta_{\mathrm{phs}}$ with $\theta_{\mathrm{phs}}=\frac{2\pi S_{\tilde\Xi}}{h}$. The energy density is the sum of the two, and the cross terms cancel:</p>
 <p>$$
@@ -187,20 +187,20 @@ $$</p>
 <h3 id="the-amplitude-stress-and-its-trace">The amplitude stress and its trace</h3>
 <p><strong>The quantum potential is the trace of the amplitude's second-derivative tensor.</strong> Define</p>
 <p>$$
-\mathcal{Q}_{\mu\nu}=-\frac{h^{2}}{8\pi^{2}m}\frac{1}{\lVert\tilde\Xi\rVert}\frac{\partial^{2}\lVert\tilde\Xi\rVert}{\partial R_\mu\partial R_\nu},
+\mathcal{Q}_{\imath\jmath}=-\frac{h^{2}}{8\pi^{2}m}\frac{1}{\lVert\tilde\Xi\rVert}\frac{\partial^{2}\lVert\tilde\Xi\rVert}{\partial R_{\imath}\partial R_{\jmath}},
 \qquad
-Q_{\mathrm{qnt}}=\sum_\mu\mathcal{Q}_{\mu\mu},
+Q_{\mathrm{qnt}}=\sum_{\imath}\mathcal{Q}_{\imath\imath},
 $$</p>
-<p>the sum running over the four directions because the metric is $\delta_{\mu\nu}$ and the index stays low. The tensor is the stress the amplitude itself carries: it is symmetric, it is built from the amplitude and its second derivatives, and its trace is the quantum potential. The identification is exact and needs no expansion.</p>
-<p>The trace is a divergence plus a square. With $u=\ln\lVert\tilde\Xi\rVert$, so that $\partial_\mu\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert=\partial_\mu u$,</p>
+<p>the sum running over the four directions because the metric is $\delta_{\imath\jmath}$ and the index stays low. The tensor is the stress the amplitude itself carries: it is symmetric, it is built from the amplitude and its second derivatives, and its trace is the quantum potential. The identification is exact and needs no expansion.</p>
+<p>The trace is a divergence plus a square. With $u=\ln\lVert\tilde\Xi\rVert$, so that $\partial_{\imath}\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert=\partial_{\imath} u$,</p>
 <p>$$
 \frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}=\Box_\Phi u+(\partial u)^{2},
 \qquad
 (\partial u)^{2}=\lvert\nabla u\rvert^{2}-\left(\frac{\partial u}{\partial r'_t}\right)^{2},
 $$</p>
-<p>and since $\sum_\mu\partial_\mu(\partial_\mu u)=\Box_\Phi u$,</p>
+<p>and since $\sum_{\imath}\partial_{\imath}(\partial_{\imath} u)=\Box_\Phi u$,</p>
 <p>$$
-Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\left[\sum_\mu\frac{\partial}{\partial R_\mu}\left(\frac{1}{\lVert\tilde\Xi\rVert}\frac{\partial\lVert\tilde\Xi\rVert}{\partial R_\mu}\right)+(\partial u)^{2}\right].
+Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\left[\sum_{\imath}\frac{\partial}{\partial R_{\imath}}\left(\frac{1}{\lVert\tilde\Xi\rVert}\frac{\partial\lVert\tilde\Xi\rVert}{\partial R_{\imath}}\right)+(\partial u)^{2}\right].
 $$</p>
 <p>The first term is a total divergence of the amplitude's own gradient over the amplitude, which is the divergence of the amplitude stress divided by the amplitude. The second is the square of the logarithmic gradient, and it is what remains when the divergence is removed. This is the sense in which the quantum potential is a divergence: it is the divergence of the amplitude's gradient, plus the term that the divergence leaves behind. The identity is the same as the logarithmic identity of <a href="the-klein-gordon-equation-in-biquaternionic-polar-variables.html">The Klein–Gordon Equation in Biquaternionic Polar Variables</a>, written now with the divergence displayed rather than suppressed.</p>
 <h3 id="the-divergence-of-the-quantum-stress-is-the-quantum-force">The divergence of the quantum stress is the quantum force</h3>
@@ -288,7 +288,7 @@ $$</p>
 <p><strong>Not claimed.</strong> The quantum stress is not claimed to be a thermal pressure, and no equation of state is claimed to exist for it at a point. The claim is the negative one of §<em>What the Quantum Stress Is Not</em> and the positive one of §<em>The quantum energy is positive in the total</em>: an indefinite density whose integral is a positive square. Nor is the element claimed to be conserved off shell: the divergence vanishes on shell only, and the source that appears off shell is the field equation's residual.</p>
 <h2 id="summary">Summary</h2>
 <p>The stress element of the biquaternion scalar field is $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+(i/c)\vec S_{\mathrm P}$, Hermitian, with the energy density in its scalar part and the energy flux in its vector part. It carries four of the ten components of the symmetric tensor, which is all that thermodynamics needs; the full tensor is the bigeneral bilinear of the cited Noether article. Its quaternionic norm is $w_{\mathrm{fl}}^{2}-\lvert\vec S_{\mathrm P}\rvert^{2}/c^{2}$, so positivity of the norm is the dominant-energy condition, and a massless traveling wave saturates it and lies on the zero-divisor cone. Its scalar divergence is $-i[\partial w_{\mathrm{fl}}/\partial r'_t+(1/c)\vec\nabla_\Phi\cdot\vec S_{\mathrm P}]$, and the bracket vanishes on shell: the energy law, the continuity equation and the imaginary part of the Klein–Gordon equation are one equation.</p>
-<p>In amplitude and phase the two entries separate into an amplitude-gradient piece, an imported classical piece and a quantum piece, the last being $\rho_{\mathrm{num}}Q_{\mathrm{qnt}}$ with $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$. The quantum potential is the trace of the amplitude's second-derivative tensor, $\mathcal{Q}_{\mu\nu}=-(\frac{h^{2}}{4\pi^{2}}/2m)\partial_\mu\partial_\nu\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$. The force it exerts is the divergence of a second stress, $\sigma_{j\eta}=(\frac{h^{2}}{4\pi^{2}}/4m)[\partial_j\partial_\eta\rho_{\mathrm{num}}-\partial_j\rho_{\mathrm{num}}\partial_\eta\rho_{\mathrm{num}}/\rho_{\mathrm{num}}]$, with $\partial_\eta\sigma_{j\eta}=-\rho_{\mathrm{num}}\partial_jQ_{\mathrm{qnt}}$; for a Gaussian $\sigma_{j\eta}=-(\frac{h^{2}}{4\pi^{2}}/2m\sigma^{2})\rho_{\mathrm{num}}\delta_{j\eta}$, isotropic and negative, and the identity then holds exactly. The trace of $\mathcal{Q}$ is a total divergence of the amplitude's gradient plus the square of the logarithmic gradient. Integrated over a static localised state the divergence drops and the square remains, so the total quantum energy is $\tfrac{h^{2}}{8\pi^{2}m}\int\rho_{\mathrm{num}}\lvert\nabla u\rvert^{2}d^{3}r=\tfrac{h^{2}}{32\pi^{2}m}\int\rho_{\mathrm{num}}\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}d^{3}r$; the check on a Gaussian, in units of $\frac{h^{2}}{4\pi^{2}}/m$, gave $5.646281$ against a closed form of $5.646284$.</p>
+<p>In amplitude and phase the two entries separate into an amplitude-gradient piece, an imported classical piece and a quantum piece, the last being $\rho_{\mathrm{num}}Q_{\mathrm{qnt}}$ with $Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$. The quantum potential is the trace of the amplitude's second-derivative tensor, $\mathcal{Q}_{\imath\jmath}=-(\frac{h^{2}}{4\pi^{2}}/2m)\partial_{\imath}\partial_{\jmath}\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$. The force it exerts is the divergence of a second stress, $\sigma_{j\eta}=(\frac{h^{2}}{4\pi^{2}}/4m)[\partial_j\partial_\eta\rho_{\mathrm{num}}-\partial_j\rho_{\mathrm{num}}\partial_\eta\rho_{\mathrm{num}}/\rho_{\mathrm{num}}]$, with $\partial_\eta\sigma_{j\eta}=-\rho_{\mathrm{num}}\partial_jQ_{\mathrm{qnt}}$; for a Gaussian $\sigma_{j\eta}=-(\frac{h^{2}}{4\pi^{2}}/2m\sigma^{2})\rho_{\mathrm{num}}\delta_{j\eta}$, isotropic and negative, and the identity then holds exactly. The trace of $\mathcal{Q}$ is a total divergence of the amplitude's gradient plus the square of the logarithmic gradient. Integrated over a static localised state the divergence drops and the square remains, so the total quantum energy is $\tfrac{h^{2}}{8\pi^{2}m}\int\rho_{\mathrm{num}}\lvert\nabla u\rvert^{2}d^{3}r=\tfrac{h^{2}}{32\pi^{2}m}\int\rho_{\mathrm{num}}\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}d^{3}r$; the check on a Gaussian, in units of $\frac{h^{2}}{4\pi^{2}}/m$, gave $5.646281$ against a closed form of $5.646284$.</p>
 <p>The quantum stress is not a thermal pressure. It does not depend on the temperature, it is not the derivative of a free energy with respect to a volume, its pointwise density has either sign, it is anisotropic, and it depends on second derivatives of the density at the event and so cannot close a local equation of state except as a gradient expansion. Those negatives are what the following articles must respect when they write $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -316,7 +316,7 @@ $$</p>
 <td>Material (anti-Hermitian) and informational (Hermitian) sectors</td>
 </tr>
 <tr>
-<td>$\delta_{\mu\nu}$</td>
+<td>$\delta_{\imath\jmath}$</td>
 <td>The one metric, all four coefficients $+1$; the index stays low</td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ $$</p>
 <td>Quantum part of the energy density</td>
 </tr>
 <tr>
-<td>$\mathcal{Q}_{\mu\nu}=-\frac{h^{2}}{8\pi^{2}m}\frac{1}{\lVert\tilde\Xi\rVert}\frac{\partial^{2}\lVert\tilde\Xi\rVert}{\partial R_\mu\partial R_\nu}$</td>
+<td>$\mathcal{Q}_{\imath\jmath}=-\frac{h^{2}}{8\pi^{2}m}\frac{1}{\lVert\tilde\Xi\rVert}\frac{\partial^{2}\lVert\tilde\Xi\rVert}{\partial R_{\imath}\partial R_{\jmath}}$</td>
 <td>Amplitude stress, whose trace is $Q_{\mathrm{qnt}}$</td>
 </tr>
 <tr>

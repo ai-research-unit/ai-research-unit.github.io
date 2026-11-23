@@ -409,11 +409,11 @@ $$</p>
 \qquad
 \vec{\mu}:=\frac{\mathrm{grad}\sqrt{\mu}}{\sqrt{\mu}}=\frac{1}{2}\frac{\mathrm{grad}\,\mu}{\mu},
 $$</p>
-<p>and $\ell_\epsilon:=\mathrm{grad}\,\epsilon/\epsilon=2\vec{\epsilon}$, with $\ell_\mu$ defined the same way. Combining the two divergence equations with the two curl equations gives the pair</p>
+<p>and $\ell_\epsilon:=\mathrm{grad}\,\epsilon/\epsilon=2\vec{\epsilon}$, with $\ell_{\imath}$ defined the same way. Combining the two divergence equations with the two curl equations gives the pair</p>
 <p>$$
 D\,\vec E=\langle \ell_\epsilon,\vec E\rangle-\mu\,\partial/\partial r'_t\,\vec H-\frac{\rho}{\epsilon},
 \qquad
-D\,\vec H=\langle \ell_\mu,\vec H\rangle+\epsilon\,\partial/\partial r'_t\,\vec E+\vec J,
+D\,\vec H=\langle \ell_{\imath},\vec H\rangle+\epsilon\,\partial/\partial r'_t\,\vec E+\vec J,
 $$</p>
 <p>and the scalar-product identity turns each of them into a gradient-corrected operator. For the electric field, adding $\vec{\epsilon}\,\vec E$ and using $\langle \ell_\epsilon,\vec E\rangle=-(\vec{\epsilon}\,\vec E+\vec E\,\vec{\epsilon})$,</p>
 <p>$$
@@ -423,7 +423,7 @@ $$</p>
 <p>and for the magnetic field</p>
 <p>$$
 D\,\vec H+\vec{\mu}\,\vec H
-=-\tfrac{1}{2}\,\vec H\,\ell_\mu+\epsilon\,\partial/\partial r'_t\,\vec E+\vec J,
+=-\tfrac{1}{2}\,\vec H\,\ell_{\imath}+\epsilon\,\partial/\partial r'_t\,\vec E+\vec J,
 $$</p>
 <p>where the coefficient stands on the <strong>left</strong> of the field as written, while the two corrections on the right-hand sides are <strong>right</strong> products. The order is not cosmetic: exchanging $\vec E\ell_\epsilon$ for $\ell_\epsilon\vec E$ changes the remainder by $2\,\vec E\times \ell_\epsilon$.</p>
 <p><strong>The reformulation.</strong> The carrier identity with $\xi=\sqrt{\epsilon}$ says that $\frac{1}{\sqrt{\epsilon}}D(\sqrt{\epsilon}\vec E)=D\vec E+\vec{\epsilon}\,\vec E$, and with $\xi=\sqrt{\mu}$ the analogous statement holds for $\vec H$. Introducing the normalised fields and the medium speed,</p>
@@ -602,7 +602,7 @@ $$</p>
 \qquad
 r=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| .
 $$</p>
-<p>The authors remark that it is not clear how to obtain this result directly for the Maxwell operators $\mathcal{D}_{\vec{\mu}}$ and $\mathcal{D}_{\vec{\epsilon}}$ by other known methods.</p>
+<p>The authors remark that it is not clear how to obtain this result directly for the Maxwell operators $\mathcal{D}_{\vec{\imath}}$ and $\mathcal{D}_{\vec{\epsilon}}$ by other known methods.</p>
 <p><strong>The recipe is the chiral recipe; the kernel is not the chiral kernel.</strong> The bracketed factor has already appeared in this article, and it is worth saying exactly how far the resemblance goes. The fundamental solution of the chiral operator in <em>A Chiral Medium: One Quaternionic Equation</em> is</p>
 <p>$$
 \mathcal{K}_{\pm\alpha}=-(D\mp\alpha)\,\mathrm{Sd}_{\pm\alpha},
@@ -767,7 +767,7 @@ the gradient becomes $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\vec e_x\,\pa
 <p><strong>Plane waves can survive the non-linearity.</strong> In the deformed vacuum a plane wave still solves the field equations exactly. So "plane wave" does not imply a linear theory, and the use of plane waves elsewhere in the corpus as a probe of the linear regime carries that qualification. What fails is the superposition principle, not the plane-wave Ansatz.</p>
 <p><strong>An energy density exists only if the constitutive map is integrable.</strong> For a non-linear medium the combination $\vec E\cdot\delta\vec D+\vec H\cdot\delta\vec B$ must be an exact one-form, and when it is, the energy density is fixed by it; the deformed vacuum is such a case, and the energy density it gives is quoted in that article. A linear medium satisfies the condition trivially, which is why this article has never had to state it, and the Brillouin energy of the dispersive case is the same requirement with the frequency carried inside the constitutive map. A non-linear medium whose constitutive map is not integrable would have <strong>no</strong> energy density, which is a real restriction on which non-linear media are physical and not a technicality.</p>
 <h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
-<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>The AXF Matrices: Axis-Free, Integer Entries</em>, §<em>Why the Pauli and the Gamma Displays Are Refused</em>. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.</p>
+<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>The AXF Matrices: Axis-Free, Integer Entries</em>, §<em>Why the Pauli and the Gamma Displays Are Refused</em>. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, and the frame is named on the coordinate.</p>
 <p>Every two-sided action in this article has been written out as a product, $a\,\tilde{Ξ}\,b$, with the side carried by position. The fermion articles of the corpus write the same operators as products of Dirac gammas. The two descriptions are related by a fixed dictionary and not by a change of algebra, and this section states the dictionary once so that a reader can move between them. Afterwards it is dropped: outside this section the article contains no gamma.</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, which is the algebra the basis operators already generate. One basis operator per gamma,</p>
 <p>$$
@@ -787,7 +787,7 @@ $$</p>
 $$</p>
 <p>Basis operators compose by composing their factors, $L_aR_b\,L_cR_d=L_{ac}R_{db}$, and in that product the four satisfy the basis operator relation of the Minkowski metric while the fifth closes the frame on the chirality basis operator,</p>
 <p>$$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,
+\{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,
 \qquad
 \varepsilon=(1,-1,-1,-1),
 $$</p>
@@ -801,7 +801,7 @@ $$</p>
 <p><strong>One-sided and two-sided, in this frame.</strong> The two Dirac equations of the section <em>Arbitrary Inhomogeneous Media</em> separate here into the two kinds of basis operator the algebra allows. The chiral pair acts by left multiplication only, so each of its members is a single one-sided basis operator, and the grading that separates the halves is the basis operator $\gamma_5$; this is the sense in which that equation's dividing line is chirality. Kravchenko's equation is a left basis operator together with a right multiplication in the mass term, $(\tilde\nabla_\Phi)^{\natural}$ acting from the left and $\vec e_z$ from the right, hence the two-sided basis operator $L_{(\tilde\nabla_\Phi)^{\natural}}$ with the mass term carried by $R_{\mathrm{pau},\vec e_z}$. The distinction drawn in words in the inhomogeneous section is thus, in the printing, the distinction between $L$ and $LR$.</p>
 <p><strong>The chirality basis operator and the central grading.</strong> $\gamma_5$ is the basis operator of the chirality operator: $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ on the Dirac module, which acts on the algebra alone as $-iR_{\mathrm{pau},\vec e_z}$, the basis operator the chiral-fermion articles write as $\xi$. The central grading of the complexified algebra — the difference of its two central idempotents, whose square is $e_t$ — is a different object: $\gamma_5$ represents it on the module, and the two must not be identified as elements of the algebra.</p>
 <p><strong>Why the basis operators stay primary.</strong> The dictionary is complex-linear, and the two real forms behind it are not the same: over $\mathbb{R}$ the gamma products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, while the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. The biquaternion algebra is the complex one, so both readings are available in it, but only the basis operators are defined without a choice of frame. The article keeps the basis operators for that reason, and uses the gammas as the frame in which the fermion articles are written.</p>
-<p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
+<p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
 <p>Electromagnetism in a material medium is developed here as the general case, with the vacuum as its limit. The constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$ supply the two parameters of a homogeneous medium, which may be taken as the speed $c=1/\sqrt{\epsilon\mu}$ and the impedance $Z=\sqrt{\mu/\epsilon}$, or equivalently as $\epsilon=1/(cZ)$ and $\mu=Z/c$.</p>
 <p>The medium enters the biquaternionic structure in two places and nowhere else. First, through the conversion $r'_t=c\,t'$ that sets the temporal slot, the gradient being $\partial/\partial R_t=-i\partial/\partial r'_t=-(i/c)\partial/\partial t'$, so that the map from the physical second to the imaginary scalar direction of $\mathbb{B}$ carries the local conversion $c$; this is the sense in which the complex structure is local, the algebra being fixed while its embedding in physical time is not. Second, through the normalisations $\sqrt{\epsilon},\sqrt{\mu}$ of the field strength and the corresponding $1/\sqrt{\epsilon},\sqrt{\mu}$ of the source biquaternion
@@ -1000,7 +1000,7 @@ and this is built by the same constructive recipe as the causal kernel of the ch
 <td>Half-gradients of the two medium parameters</td>
 </tr>
 <tr>
-<td>$\ell_\epsilon=\mathrm{grad}\,\epsilon/\epsilon=2\vec{\epsilon}$, $\ell_\mu$ likewise</td>
+<td>$\ell_\epsilon=\mathrm{grad}\,\epsilon/\epsilon=2\vec{\epsilon}$, $\ell_{\imath}$ likewise</td>
 <td>Full gradients of the two medium parameters, twice the half-gradients</td>
 </tr>
 <tr>

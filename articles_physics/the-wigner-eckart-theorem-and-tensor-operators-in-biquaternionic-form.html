@@ -76,15 +76,15 @@
 <p>The rest of the article is the standard theory, honestly labelled as such. The definition of a tensor operator, the Wigner–Eckart theorem, the selection rules, and the reduced-matrix-element technology are imported from the representation theory of the rotation group and are cited as standard. What the framework supplies is the arena — $\mathbb{B}$ and its tensor powers — the rank-$0$ and rank-$1$ tensor operators as algebra elements, the matrix realisation through $Ξ$, and the pairing formula that turns the reduced matrix elements into traces. The article therefore follows the pattern of the coupling article: it derives what is algebraic and transcribes what is standard, keeping the two separated.</p>
 <p>The article is organised as follows. The next section defines tensor operators and fixes the spherical convention. The section after that works out the adjoint action and exhibits the algebra's own rank-$1$ tensor operator. The Wigner–Eckart theorem is then stated, with the selection rules and the reduced matrix element. Its content is verified explicitly in the coupled two-spin space, where the Clebsch–Gordan coefficients are known, and the reduced matrix elements of the one-particle and total spin operators are computed. Two families of examples follow: vector operators, including the corollary that within a multiplet a vector operator is proportional to the angular momentum, and rank-two operators, including the quadrupole built from the coupling of two vector operators. A short section records the trace form, and a closing section separates the algebraic from the imported content.</p>
 <h2 id="tensor-operators-definition-and-conventions">Tensor Operators: Definition and Conventions</h2>
-<p>An <strong>irreducible tensor operator of rank $k$</strong> is a family $T^{(k)}_\mu$, $\mu=-k,-k+1,\dots,k$, of operators acting on the rotation multiplets, satisfying</p>
+<p>An <strong>irreducible tensor operator of rank $k$</strong> is a family $T^{(k)}_{\imath}$, $\mu=-k,-k+1,\dots,k$, of operators acting on the rotation multiplets, satisfying</p>
 <p>$$
-[\tilde S_{\Psi,\mathrm{tot},3},T^{(k)}_\mu]=\frac{h}{2\pi}\,\mu\,T_{\mu}^{(k)},\qquad
-[\tilde S_{\Psi,\mathrm{tot},\pm},T^{(k)}_\mu]=\frac{h}{2\pi}\sqrt{(k\mp \mu)(k\pm \mu+1)}\;T^{(k)}_{\mu\pm1},
+[\tilde S_{\Psi,\mathrm{tot},3},T^{(k)}_{\imath}]=\frac{h}{2\pi}\,\mu\,T_{\imath}^{(k)},\qquad
+[\tilde S_{\Psi,\mathrm{tot},\pm},T^{(k)}_{\imath}]=\frac{h}{2\pi}\sqrt{(k\mp \mu)(k\pm \mu+1)}\;T^{(k)}_{\imath\pm1},
 $$</p>
 <p>with $\tilde S_{\Psi,\mathrm{tot},\pm}=\tilde S_{\Psi,\mathrm{tot},1}\pm i\tilde S_{\Psi,\mathrm{tot},2}$ and the square roots vanishing when the target index lies outside the range $-k,\dots,k$. The definition is equivalent to the rotation law</p>
 <p>$$
-\tilde U(R)\,T^{(k)}_\mu\,\tilde U(R)^\dagger
-=\sum_{\mu_2=-k}^{k}\mathcal{D}^{(k)}_{\mu_2\mu}(R)\,T^{(k)}_{\mu_2},
+\tilde U(R)\,T^{(k)}_{\imath}\,\tilde U(R)^\dagger
+=\sum_{\imath_2=-k}^{k}\mathcal{D}^{(k)}_{\imath_2\imath}(R)\,T^{(k)}_{\imath_2},
 \qquad
 \tilde U(R)=\exp\!\left(-\frac{2\pi i}{h}\theta\,\vec u_\Phi\tilde S_{\Psi,\mathrm{tot},\eta}\right),
 $$</p>
@@ -98,7 +98,7 @@ $$</p>
 <p>Two remarks on the framework belong here. First, a tensor operator need not be an element of $\mathbb{B}$: the definition constrains only the commutators with the angular momenta, and any operator with the right transformation law qualifies, whether it lives in the algebra, in a tensor power of it, or in the module. Second, the rank is not a property of a single operator but of a family; what is characteristic of the framework is how many ranks it can carry inside a single factor, and that question is answered by the adjoint action in the next section.</p>
 <h2 id="the-adjoint-action-the-algebras-own-tensor-operator">The Adjoint Action: The Algebra's Own Tensor Operator</h2>
 <h3 id="the-derivation">The derivation</h3>
-<p>Write a general element of $\mathbb{B}$ in components, $\tilde Q=Q_te_t+Q_\eta\vec e_\eta$ with $Q_\mu\in\mathbb{C}$; a Hermitian element has $Q_t\in\mathbb{R}$ and $Q_\eta=i v_\eta$ with $v_k\in\mathbb{R}$, so that</p>
+<p>Write a general element of $\mathbb{B}$ in components, $\tilde Q=Q_te_t+Q_\eta\vec e_\eta$ with $Q_{\imath}\in\mathbb{C}$; a Hermitian element has $Q_t\in\mathbb{R}$ and $Q_\eta=i v_\eta$ with $v_k\in\mathbb{R}$, so that</p>
 <p>$$
 \tilde H_\Psi=h_t\,e_t+i v_\eta\vec e_\eta,\qquad h_t,v_\eta\in\mathbb{R}.
 $$</p>
@@ -139,15 +139,15 @@ $$</p>
 <p>with $R\in SO(3)$ the rotation matrix associated with the unit quaternion. This is the same statement as the rotor realisation of rotations in the companion article <em>Angular Momentum and Spin in Biquaternionic Form</em>, read as a statement about tensor operators: the adjoint action on $\mathbb{B}$ is the direct sum of a rank-$0$ and a rank-$1$ representation, $\mathbb{B}=\mathbb{C}e_t\oplus W$ with $W\cong V_1$ spanned by $i\vec e_x,i\vec e_y,i\vec e_z$.</p>
 <p>The immediate consequence is a <strong>ceiling inside the algebra</strong>. The adjoint action of the spin algebra on $\mathbb{B}$ contains only ranks $0$ and $1$. A tensor operator of rank $k\ge2$ that is an element of a single factor of $\mathbb{B}$ does not exist; rank-$2$ operators require a product of two vector operators, hence a tensor power of the algebra, and the construction is given below. This is the tensor-operator face of the module-theoretic statement that $\mathbb{B}$ has no irreducible representation of dimension greater than two.</p>
 <h2 id="the-wignereckart-theorem">The Wigner–Eckart Theorem</h2>
-<p>Let $T^{(k)}_\mu$ be an irreducible tensor operator of rank $k$, and let $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ be the angular-momentum multiplets of a rotation-invariant system. Then the <strong>Wigner–Eckart theorem</strong> states that</p>
+<p>Let $T^{(k)}_{\imath}$ be an irreducible tensor operator of rank $k$, and let $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ be the angular-momentum multiplets of a rotation-invariant system. Then the <strong>Wigner–Eckart theorem</strong> states that</p>
 <p>$$
-\boxed{\;\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_\mu|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle
+\boxed{\;\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_{\imath}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle
 =\langle s_{\mathrm{tot}},s_{\mathrm{tot},z};k,\mu|s_{\mathrm{fin}},s_{\mathrm{fin},z}\rangle\;\langle s_{\mathrm{fin}}\,\|T^{(k)}\|\,s_{\mathrm{tot}}\rangle\;},
 $$</p>
 <p>where the first factor is the Clebsch–Gordan coefficient of the coupling $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle\otimes|kq\rangle\to|s_{\mathrm{fin}},s_{\mathrm{fin},z}\rangle$ and the second is the <strong>reduced matrix element</strong>, a number that depends on $s_{\mathrm{tot}},s_{\mathrm{fin}},k$ and on the operator but not on $s_{\mathrm{tot},z},s_{\mathrm{fin},z},\mu$. The conventions are those of the companion problem of the coupling: the Clebsch–Gordan coefficients satisfy the Condon–Shortley phase convention, and the reduced matrix element is defined by the equation above.</p>
 <p>The content of the theorem is the factorisation. The dependence on the magnetic quantum numbers is carried entirely by the Clebsch–Gordan coefficient, which is pure geometry; all the dynamics of the operator is compressed into one number per triple $(s_{\mathrm{fin}},k,s_{\mathrm{tot}})$. Equivalently: <strong>for fixed $s_{\mathrm{fin}},k,s_{\mathrm{tot}}$ the ratios</strong></p>
 <p>$$
-\frac{\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_\mu|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle}{\langle s_{\mathrm{tot}},s_{\mathrm{tot},z};k,\mu|s_{\mathrm{fin}},s_{\mathrm{fin},z}\rangle}
+\frac{\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_{\imath}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle}{\langle s_{\mathrm{tot}},s_{\mathrm{tot},z};k,\mu|s_{\mathrm{fin}},s_{\mathrm{fin},z}\rangle}
 \quad\text{(denominator nonzero)}
 $$</p>
 <p>are equal for every choice of $(s_{\mathrm{tot},z},\mu,s_{\mathrm{fin},z})$ permitted by the selection rules.</p>
@@ -161,7 +161,7 @@ $$</p>
 <h2 id="verification-in-the-coupled-two-spin-space">Verification in the Coupled Two-Spin Space</h2>
 <p>The theorem can be checked against explicit matrices in the two-qubit space, where the coupled multiplets are the triplet $s_{\mathrm{tot}}=1$ and the singlet $s_{\mathrm{tot}}=0$ and the Clebsch–Gordan coefficients are known. The operator used is</p>
 <p>$$
-T^{(1)}_\mu=\tilde S_{\Psi,\mu}^{(1)} ,
+T^{(1)}_{\imath}=\tilde S_{\Psi,\imath}^{(1)} ,
 $$</p>
 <p>the one-particle spin of the first factor, which is a vector operator under the <strong>total</strong> spin because</p>
 <p>$$
@@ -203,11 +203,11 @@ $$</p>
 </tbody>
 </table></div>
 <p>In every row the ratio is independent of $(s_{\mathrm{tot},z},\mu,s_{\mathrm{fin},z})$, which is the theorem. The third row uses the trivial coupling coefficient $\langle 0,0;1,\mu|1,\mu\rangle=1$.</p>
-<p>The same computation for the <strong>total</strong> spin $T^{(1)}_\mu=\tilde S_{\Psi,\mu}$ gives a single reduced matrix element,</p>
+<p>The same computation for the <strong>total</strong> spin $T^{(1)}_{\imath}=\tilde S_{\Psi,\imath}$ gives a single reduced matrix element,</p>
 <p>$$
 \langle  1\,\|\tilde S_{\Psi}\|\,1\rangle=\sqrt2\,\frac{h}{2\pi},
 $$</p>
-<p>whose ratio to the one-particle value $\frac{h}{2\pi \sqrt2}$ is $2$: the total spin is twice the symmetric part of the one-particle spin, exactly as $\tilde S_{\Psi,\mu}=\tilde S_{\Psi,\mu}^{(1)}+\tilde S_{\Psi,\mu}^{(2)}$ and the two terms contribute equally in the symmetric sector. All three columns are consistent with the theorem and would be impossible if the Clebsch–Gordan factorisation failed.</p>
+<p>whose ratio to the one-particle value $\frac{h}{2\pi \sqrt2}$ is $2$: the total spin is twice the symmetric part of the one-particle spin, exactly as $\tilde S_{\Psi,\imath}=\tilde S_{\Psi,\imath}^{(1)}+\tilde S_{\Psi,\imath}^{(2)}$ and the two terms contribute equally in the symmetric sector. All three columns are consistent with the theorem and would be impossible if the Clebsch–Gordan factorisation failed.</p>
 <p>A last check of the theorem's content is the vanishing of matrix elements that the selection rules permit. For the one-particle operator the $(1,0)$ and $(0,1)$ entries above are nonzero, so no accidental vanishing occurs here; but a rank-$2$ operator built from the same material has no matrix element connecting $s_{\mathrm{fin}}=1$ to $s_{\mathrm{tot}}=0$, because the triangle condition $|1-2|\le s_{\mathrm{fin}}\le3$ excludes $s_{\mathrm{fin}}=0$. The selection rules, not the dynamics, decide which triples can be nonzero.</p>
 <h3 id="a-self-contained-example-the-adjoint-multiplet">A self-contained example: the adjoint multiplet</h3>
 <p>The two-qubit check uses the tensor product. There is also an example entirely inside a single factor, and it uses the vector operator of the previous section. On the traceless part $W=\mathrm{span}_\mathbb{C}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ the adjoint action is itself the angular momentum of the adjoint representation,</p>
@@ -223,14 +223,14 @@ $$</p>
 <p>$$
 \langle  1\|\,\mathrm{ad}_{ie}\,\|1\rangle=\frac{2\pi 2}{h}\,\langle  1\|\tilde S_{\Psi,\mathrm{adj}}\|1\rangle=\frac{2\pi 2}{h}\cdot\sqrt2\,h=12.57\sqrt2 .
 $$</p>
-<p>A direct evaluation in the basis of eigenvectors of $\mathrm{ad}_{\tilde S_{\Psi,3}}$, with the spherical components $(\tilde U_{\mathrm{gen}})^{(1)}_{\mu}$ of the previous section and the $1\otimes1$ Clebsch–Gordan coefficients, confirms that the ratio of every matrix element to its Clebsch–Gordan coefficient takes the constant value $2\sqrt2$ in the Condon–Shortley $m$-basis of the adjoint multiplet; a different phase convention for the $|n_{\mathrm{mag}}\rangle$ would flip signs while leaving the modulus fixed. This is the framework's own worked example of the theorem: the operator and the multiplet lie inside the algebra and its adjoint action, and only the Clebsch–Gordan coefficients are imported.</p>
+<p>A direct evaluation in the basis of eigenvectors of $\mathrm{ad}_{\tilde S_{\Psi,3}}$, with the spherical components $(\tilde U_{\mathrm{gen}})^{(1)}_{\imath}$ of the previous section and the $1\otimes1$ Clebsch–Gordan coefficients, confirms that the ratio of every matrix element to its Clebsch–Gordan coefficient takes the constant value $2\sqrt2$ in the Condon–Shortley $m$-basis of the adjoint multiplet; a different phase convention for the $|n_{\mathrm{mag}}\rangle$ would flip signs while leaving the modulus fixed. This is the framework's own worked example of the theorem: the operator and the multiplet lie inside the algebra and its adjoint action, and only the Clebsch–Gordan coefficients are imported.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="vector-operators-and-the-angular-momentum-corollary">Vector operators and the angular-momentum corollary</h3>
-<p>The simplest vector operator in the framework is the spin itself. On the triplet of the two-spin system the reduced matrix element is $\sqrt2\,\frac{h}{2\pi}$, computed above; on the fundamental module of a single factor, $\tilde S_{\Psi,\mu}^{(1)}$ has reduced element $\frac{h}{2\pi \sqrt2}$ when regarded as an operator on the coupled space.</p>
+<p>The simplest vector operator in the framework is the spin itself. On the triplet of the two-spin system the reduced matrix element is $\sqrt2\,\frac{h}{2\pi}$, computed above; on the fundamental module of a single factor, $\tilde S_{\Psi,\imath}^{(1)}$ has reduced element $\frac{h}{2\pi \sqrt2}$ when regarded as an operator on the coupled space.</p>
 <p>A corollary of the theorem covers all vector operators at once. For $k=1$ and $s_{\mathrm{fin}}=s_{\mathrm{tot}}$, the matrix elements of any two vector operators are proportional to the same Clebsch–Gordan coefficients, so their matrix elements are proportional to one another:</p>
 <p>$$
-\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|\tilde U_{\mathrm{gen},\mu}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle
-=c_{s_{\mathrm{tot}}}\,\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|\tilde S_{\Psi,\mathrm{tot},\mu}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle,
+\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|\tilde U_{\mathrm{gen},\imath}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle
+=c_{s_{\mathrm{tot}}}\,\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|\tilde S_{\Psi,\mathrm{tot},\imath}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle,
 \qquad
 c_{s_{\mathrm{tot}}}=\frac{\langle s_{\mathrm{tot}}\|\tilde U_{\mathrm{gen}}\|s_{\mathrm{tot}}\rangle}{\langle s_{\mathrm{tot}}\|\tilde S_{\Psi,\mathrm{tot}}\|s_{\mathrm{tot}}\rangle},
 $$</p>
@@ -238,19 +238,19 @@ $$</p>
 <h3 id="rank-two-operators-and-the-quadrupole">Rank-two operators and the quadrupole</h3>
 <p>Rank-$2$ tensor operators are built by coupling two rank-$1$ operators with the Clebsch–Gordan coefficients of the coupling $1\otimes1\to2$:</p>
 <p>$$
-T^{(2)}_\mu=\sum_{\mu_1+\mu_2=\mu}\langle 1,\mu_1;1,\mu_2|2,\mu\rangle\,\tilde A_{\Phi,\mu_1}\tilde Q_{1,\mu_2} .
+T^{(2)}_{\imath}=\sum_{\imath_1+\imath_2=\imath}\langle 1,\mu_1;1,\mu_2|2,\mu\rangle\,\tilde A_{\Phi,\imath_1}\tilde Q_{1,\imath_2} .
 $$</p>
-<p>Because the coupling coefficients satisfy the same recursions as the states, the resulting family satisfies the rank-$2$ commutation relations. This was checked explicitly: with $\tilde A_{\Phi}=\tilde S_{\Psi}^{(1)}$ (the one-particle spherical vector on the two-spin space) and with the $1\otimes1$ coefficients of the companion problem, the five operators $T^{(2)}_\mu$, $\mu=-2,\dots,2$, satisfy</p>
+<p>Because the coupling coefficients satisfy the same recursions as the states, the resulting family satisfies the rank-$2$ commutation relations. This was checked explicitly: with $\tilde A_{\Phi}=\tilde S_{\Psi}^{(1)}$ (the one-particle spherical vector on the two-spin space) and with the $1\otimes1$ coefficients of the companion problem, the five operators $T^{(2)}_{\imath}$, $\mu=-2,\dots,2$, satisfy</p>
 <p>$$
-[\tilde S_{\Psi,3},T^{(2)}_\mu]=\frac{h}{2\pi}\,\mu\,T_{\mu}^{(2)},\qquad
-[\tilde S_{\Psi,\pm},T^{(2)}_\mu]=\frac{h}{2\pi}\sqrt{(2\mp \mu)(2\pm \mu+1)}\,T^{(2)}_{\mu\pm1},
+[\tilde S_{\Psi,3},T^{(2)}_{\imath}]=\frac{h}{2\pi}\,\mu\,T_{\imath}^{(2)},\qquad
+[\tilde S_{\Psi,\pm},T^{(2)}_{\imath}]=\frac{h}{2\pi}\sqrt{(2\mp \mu)(2\pm \mu+1)}\,T^{(2)}_{\imath\pm1},
 $$</p>
 <p>as required. The same construction with the total spin $\tilde S_{\Psi}$ gives the <strong>quadrupole operator</strong>, whose $\mu=0$ component is</p>
 <p>$$
 \boxed{\;T^{(2)}_0=\tfrac{1}{\sqrt6}\left(2\tilde S_{\Psi,0}\tilde S_{\Psi,0}+\tilde S_{\Psi,+1}\tilde S_{\Psi,-1}+\tilde S_{\Psi,-1}\tilde S_{\Psi,+1}\right)
 =\tfrac{1}{\sqrt6}\left(3\tilde S_{\Psi,3}^2-\tilde S_{\Psi}^2\right)\;},
 $$</p>
-<p>using $\tilde S_{\Psi,+1}\tilde S_{\Psi,-1}+\tilde S_{\Psi,-1}\tilde S_{\Psi,+1}=-(\tilde S_{\Psi,1}^2+\tilde S_{\Psi,2}^2)$ and $\tilde S_{\Psi,1}^2+\tilde S_{\Psi,2}^2=\tilde S_{\Psi}^2-\tilde S_{\Psi,3}^2$, where $\tilde S_{\Psi,\mu}$ denotes the spherical component of order $\mu$ and $\tilde S_{\Psi,\eta}$ the Cartesian component along axis $k$. On a coherent state pointing at polar angle $\theta$ — an eigenstate of the adjoint rotation with $\langle\vec S\rangle=\vec u$ — its expectation is</p>
+<p>using $\tilde S_{\Psi,+1}\tilde S_{\Psi,-1}+\tilde S_{\Psi,-1}\tilde S_{\Psi,+1}=-(\tilde S_{\Psi,1}^2+\tilde S_{\Psi,2}^2)$ and $\tilde S_{\Psi,1}^2+\tilde S_{\Psi,2}^2=\tilde S_{\Psi}^2-\tilde S_{\Psi,3}^2$, where $\tilde S_{\Psi,\imath}$ denotes the spherical component of order $\mu$ and $\tilde S_{\Psi,\eta}$ the Cartesian component along axis $k$. On a coherent state pointing at polar angle $\theta$ — an eigenstate of the adjoint rotation with $\langle\vec S\rangle=\vec u$ — its expectation is</p>
 <p>$$
 \langle \vec u|\,\tfrac{1}{\sqrt6}\left(3\tilde S_{\Psi,3}^2-\tilde S_{\Psi}^2\right)|\vec u\rangle
 =\tfrac{1}{\sqrt6}\,P_2(\cos\theta),\qquad
@@ -263,7 +263,7 @@ $$</p>
 <p>$$
 2\,\mathrm{Sc}\left(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi\right),
 $$</p>
-<p>the pairing formula of the companion articles. A matrix element $\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_\mu|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ is the trace of $T^{(k)}_\mu$ against the matrix unit $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|$, and the reduced matrix element is therefore a trace once a normalisation is chosen. The orthogonality and completeness of the Clebsch–Gordan coefficients used in the theorem are the trace-orthogonality of the coupled idempotents of the two-spin problem, written in components.</p>
+<p>the pairing formula of the companion articles. A matrix element $\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_{\imath}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ is the trace of $T^{(k)}_{\imath}$ against the matrix unit $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|$, and the reduced matrix element is therefore a trace once a normalisation is chosen. The orthogonality and completeness of the Clebsch–Gordan coefficients used in the theorem are the trace-orthogonality of the coupled idempotents of the two-spin problem, written in components.</p>
 <p>The pairing has one practical consequence worth stating. Because the reduced matrix element is $m$-independent, it can be extracted from any single nonzero matrix element; the pairing formula then gives it as a trace, avoiding the need to fix a basis of the multiplet. In the framework this is the natural way to state the theorem, since the trace of the image and the scalar part carry the same invariant pairing, differing by the dimension, and it keeps the reduction on the algebraic side of the ledger. The price is that the Clebsch–Gordan coefficients remain imported: the trace gives the reduced element, but the geometric factor is still the rotation group's.</p>
 <h2 id="what-is-algebraic-and-what-is-imported">What Is Algebraic and What Is Imported</h2>
 <p><strong>Imported.</strong> The definition of an irreducible tensor operator and its equivalence to the rotation law; the Wigner–Eckart theorem and its proof; the selection rules; the reduced-matrix-element technology; the vector-model corollary; and the Clebsch–Gordan coefficients used to build rank-$2$ operators. These are standard results of the representation theory of the rotation group and are cited as such.</p>
@@ -273,10 +273,10 @@ $$</p>
 <p>The Wigner–Eckart theorem in the biquaternion framework is the standard factorisation of the matrix elements of an irreducible tensor operator into a Clebsch–Gordan coefficient and a reduced matrix element, applied to operators that may be elements of $\mathbb{B}$, of its tensor powers, or of the module.</p>
 <p>The article established the following.</p>
 <ul>
-<li><strong>Tensor operators.</strong> An irreducible tensor operator of rank $k$ is a family $T^{(k)}_\mu$, $\mu=-k,\dots,k$, with $[\tilde S_{\Psi,\mathrm{tot},3},T^{(k)}_\mu]=\frac{h}{2\pi}\,\mu\,T_{\mu}^{(k)}$ and $[\tilde S_{\Psi,\mathrm{tot},\pm},T^{(k)}_\mu]=\frac{h}{2\pi}\sqrt{(k\mp \mu)(k\pm \mu+1)}T^{(k)}_{\mu\pm1}$; a vector operator is the case $k=1$, with spherical components $T^{(1)}_0=T_3$, $T^{(1)}_{\pm1}=\mp\tfrac{1}{\sqrt2}(T_1\pm iT_2)$.</li>
+<li><strong>Tensor operators.</strong> An irreducible tensor operator of rank $k$ is a family $T^{(k)}_{\imath}$, $\mu=-k,\dots,k$, with $[\tilde S_{\Psi,\mathrm{tot},3},T^{(k)}_{\imath}]=\frac{h}{2\pi}\,\mu\,T_{\imath}^{(k)}$ and $[\tilde S_{\Psi,\mathrm{tot},\pm},T^{(k)}_{\imath}]=\frac{h}{2\pi}\sqrt{(k\mp \mu)(k\pm \mu+1)}T^{(k)}_{\imath\pm1}$; a vector operator is the case $k=1$, with spherical components $T^{(1)}_0=T_3$, $T^{(1)}_{\pm1}=\mp\tfrac{1}{\sqrt2}(T_1\pm iT_2)$.</li>
 <li><strong>The algebra's own tensor operator.</strong> The adjoint action $x\mapsto[\tilde S_{\Psi,i},x]$ is a derivation; on the imaginary units $[\tilde S_{\Psi,i},i\vec e_\eta]=i^{2}\,\frac{h}{2\pi}\,\epsilon_{i\eta l}\,\vec e_{l}$, so $\tilde U_{\mathrm{gen},\eta}=i\vec e_\eta$ is a rank-$1$ tensor operator with $(\tilde U_{\mathrm{gen}})^{(1)}_{\pm1}=\mp\frac{2\pi \sqrt2}{h}\tilde S_{\Psi,\pm}$. A Hermitian element splits as $\tilde H_\Psi=h_t\,e_t+iv_k\vec e_\eta$, a rank-$0$ plus a rank-$1$ piece, and $\mathbb{B}=\mathbb{C}e_t\oplus W$ with $W\cong V_1$ under the adjoint action.</li>
 <li><strong>The ceiling.</strong> A single factor of $\mathbb{B}$ carries only tensor operators of ranks $0$ and $1$; rank $k\ge2$ requires a product of $k$ vector operators, hence a tensor power of the algebra.</li>
-<li><strong>The theorem.</strong> $\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_\mu|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle_{*}=\langle s_{\mathrm{tot}},s_{\mathrm{tot},z};k,\mu|s_{\mathrm{fin}},s_{\mathrm{fin},z}\rangle\langle s_{\mathrm{fin}}\|T^{(k)}\|s_{\mathrm{tot}}\rangle$, with selection rules $s_{\mathrm{fin},z}=s_{\mathrm{tot},z}+\mu$ and $|s_{\mathrm{tot}}-k|\le s_{\mathrm{fin}}\le s_{\mathrm{tot}}+k$; for $k=0$ it reduces to Schur's lemma for the trivial representation.</li>
+<li><strong>The theorem.</strong> $\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_{\imath}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle_{*}=\langle s_{\mathrm{tot}},s_{\mathrm{tot},z};k,\mu|s_{\mathrm{fin}},s_{\mathrm{fin},z}\rangle\langle s_{\mathrm{fin}}\|T^{(k)}\|s_{\mathrm{tot}}\rangle$, with selection rules $s_{\mathrm{fin},z}=s_{\mathrm{tot},z}+\mu$ and $|s_{\mathrm{tot}}-k|\le s_{\mathrm{fin}}\le s_{\mathrm{tot}}+k$; for $k=0$ it reduces to Schur's lemma for the trivial representation.</li>
 <li><strong>Verification.</strong> For the one-particle spin as a vector operator under the total spin, the ratios of matrix elements to Clebsch–Gordan coefficients are $+1/\sqrt2$, $-\sqrt3/2$ and $+1/2$ for $(s_{\mathrm{fin}},s_{\mathrm{tot}})=(1,1),(0,1),(1,0)$ in units of $\frac{h}{2\pi}$, independent of $(s_{\mathrm{tot},z},\mu,s_{\mathrm{fin},z})$ in each case; for the total spin on the triplet the reduced matrix element is $\sqrt2\,\frac{h}{2\pi}$. For the algebra's own vector operator $i\vec e_\eta$ acting on the adjoint multiplet $W$, $\mathrm{ad}_{i\vec e_\eta}a=\frac{2\pi 2}{h}\tilde S_{\Psi,\mathrm{adj},\eta}$ and the reduced matrix element is $2\sqrt2$ in units of $\frac{h}{2\pi}$.</li>
 <li><strong>Examples.</strong> Within a multiplet a vector operator is proportional to $\tilde S_{\Psi,\mathrm{tot}}$, with the constant fixed by the ratio of reduced matrix elements; coupling two vector operators by the $1\otimes1\to2$ coefficients produces a rank-$2$ tensor operator, whose $\mu=0$ member for the spin is the quadrupole $\tfrac{1}{\sqrt6}(3\tilde S_{\Psi,3}^2-\tilde S_{\Psi}^2)$, with coherent-state expectation $\tfrac{1}{\sqrt6}P_2(\cos\theta)$.</li>
 </ul>
@@ -290,7 +290,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$T^{(k)}_\mu$</td>
+<td>$T^{(k)}_{\imath}$</td>
 <td>Irreducible tensor operator of rank $k$, component $\mu$</td>
 </tr>
 <tr>
@@ -298,19 +298,19 @@ $$</p>
 <td>Scalar operator</td>
 </tr>
 <tr>
-<td>$\tilde U_{\mathrm{gen},\mu}=T^{(1)}_\mu$</td>
+<td>$\tilde U_{\mathrm{gen},\imath}=T^{(1)}_{\imath}$</td>
 <td>Vector operator and its spherical components</td>
 </tr>
 <tr>
-<td>$[\tilde S_{\Psi,\mathrm{tot},3},T^{(k)}_\mu]=\frac{h}{2\pi}\,\mu\,T_{\mu}^{(k)}$</td>
+<td>$[\tilde S_{\Psi,\mathrm{tot},3},T^{(k)}_{\imath}]=\frac{h}{2\pi}\,\mu\,T_{\imath}^{(k)}$</td>
 <td>Weight condition</td>
 </tr>
 <tr>
-<td>$[\tilde S_{\Psi,\mathrm{tot},\pm},T^{(k)}_\mu]=\frac{h}{2\pi}\sqrt{(k\mp \mu)(k\pm \mu+1)}T^{(k)}_{\mu\pm1}$</td>
+<td>$[\tilde S_{\Psi,\mathrm{tot},\pm},T^{(k)}_{\imath}]=\frac{h}{2\pi}\sqrt{(k\mp \mu)(k\pm \mu+1)}T^{(k)}_{\imath\pm1}$</td>
 <td>Ladder condition</td>
 </tr>
 <tr>
-<td>$\mathcal{D}^{(k)}_{\mu_2\mu}(R)$</td>
+<td>$\mathcal{D}^{(k)}_{\imath_2\imath}(R)$</td>
 <td>Rotation matrix of spin $k$</td>
 </tr>
 <tr>
@@ -326,7 +326,7 @@ $$</p>
 <td>Its spherical components</td>
 </tr>
 <tr>
-<td>$\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_\mu|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$</td>
+<td>$\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_{\imath}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$</td>
 <td>Matrix element</td>
 </tr>
 <tr>

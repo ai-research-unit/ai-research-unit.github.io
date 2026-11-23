@@ -80,14 +80,14 @@ $$</p>
 <p>The boundary is the <strong>zero-divisor cone</strong>. The reciprocity therefore says that the states of maximal information — the states in which an arbitrarily small change of the Bloch radius is detected with arbitrarily high precision — are exactly the pure states, that is, the non-invertible elements of the algebra. The analytic singularity of the logarithm used in the companion article <em>Coarse-Graining and the Biquaternion Entropy Functional</em>, the vanishing of the biquaternion norm, and the divergence of the Fisher information are three descriptions of the same locus.</p>
 <p>The article proceeds as follows. First the biquaternion norm is set down as a quadratic form on states, together with the Hermitian pairing and the Hilbert–Schmidt distance that it induces. Then the classical Fisher information is defined and evaluated for two families: the <strong>spectral family</strong>, whose distribution is the pair of eigenvalues of the state, and the <strong>measurement family</strong> obtained by reading the state along a fixed axis. The spectral family gives the metric $g_{ij} = \vec{u_s}_i\vec{u_s}_j/(1-|\vec s_{\Psi}|^2)$, of rank one, whose nonzero eigenvalue is the reciprocal of the biquaternion norm; the measurement family gives the general formula. The Fisher information is then identified as the Hessian of the relative entropy, and the Fisher–Rao geometry of the Bloch ball is worked out. The article closes with the bound supplied by the quantum Fisher information, cited from the standard literature and assigned to the sibling quantum category, and with a statement of what the framework derives and what it imports.</p>
 <p>The treatment is <strong>classical</strong>. The Fisher information used here is the classical one of a family of probability distributions, and the distributions are the outcomes of a fixed classical measurement on the state. The quantum Fisher information appears only at the end, as the upper bound over all measurements; it is a standard result, it is cited as such, and its biquaternion development belongs to the sibling quantum category rather than here.</p>
-<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$; the scalar imaginary is $i$ and is central; the informational sector is the Hermitian subspace $\mathbb{B}_{\Psi}$ and the material sector is the anti-Hermitian subspace $\mathbb{B}_{\Phi}$; the reduction is $2\,\mathrm{Sc}(\tilde{Q}) = 2Q_t$, with $2\,\mathrm{Sc}(e_t) = 2$; and a state is $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ with $|\vec s_{\Psi}|\le 1$.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_{\imath}^2 = -e_t$; the scalar imaginary is $i$ and is central; the informational sector is the Hermitian subspace $\mathbb{B}_{\Psi}$ and the material sector is the anti-Hermitian subspace $\mathbb{B}_{\Phi}$; the reduction is $2\,\mathrm{Sc}(\tilde{Q}) = 2Q_t$, with $2\,\mathrm{Sc}(e_t) = 2$; and a state is $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ with $|\vec s_{\Psi}|\le 1$.</p>
 <h2 id="the-biquaternion-norm-on-states">The Biquaternion Norm on States</h2>
 <h3 id="the-state-and-its-quadratic-form">The State and Its Quadratic Form</h3>
 <p>A state of the informational sector is</p>
 <p>$$
 \tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\left(e_t + i\,\vec s_{\Psi}\right), \qquad \vec s_{\Psi} \in \mathbb{R}^3, \quad |\vec s_{\Psi}| \le 1 ,
 $$</p>
-<p>with $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = 1$ and purity $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1+|\vec s_{\Psi}|^2)$. Its biquaternion norm is the quadratic form $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ evaluated on it,</p>
+<p>with $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = 1$ and purity $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1+|\vec s_{\Psi}|^2)$. Its biquaternion norm is the quadratic form $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$ evaluated on it,</p>
 <p>$$
 \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}\left(1 - |\vec s_{\Psi}|^2\right)e_t .
 $$</p>
@@ -279,7 +279,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion basis, $\vec e_\mu^2 = -e_t$</td>
+<td>Quaternion basis, $\vec e_{\imath}^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -294,7 +294,7 @@ $$</p>
 <td>Doubled scalar part, $2\,\mathrm{Sc}(e_t)=2$</td>
 </tr>
 <tr>
-<td>$\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
+<td>$\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>

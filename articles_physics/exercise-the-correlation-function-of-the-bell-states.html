@@ -237,7 +237,7 @@ $$</p>
 </table></div>
 <p><em>Idempotency.</em> The square of $\tilde\Pi_{\mathrm{id},\epsilon}$ is</p>
 <p>$$
-\tilde\Pi_{\mathrm{id},\epsilon}^2 = \frac{1}{16}\sum_{\mu,\mu_2\in\{t,x,y,z\}}\epsilon_\mu\epsilon_{\mu_2}\,(e_\mu e_{\mu_2})\otimes(e_\mu e_{\mu_2}),
+\tilde\Pi_{\mathrm{id},\epsilon}^2 = \frac{1}{16}\sum_{\imath,\imath_2\in\{t,x,y,z\}}\epsilon_{\imath}\epsilon_{\imath_2}\,(e_{\imath} e_{\imath_2})\otimes(e_{\imath} e_{\imath_2}),
 $$</p>
 <p>with $\epsilon_t \equiv 1$. We group the sixteen pairs $(m,m_2)$ into three classes.</p>
 <p><strong>Diagonal pairs $m = m_2$.</strong> For $m = 0$, $e_t e_t = e_t$; for $m = 1, 2, 3$, $e_m e_m = -e_t$. In all four cases the tensor product $(e_m e_m)\otimes(e_m e_m)$ equals $e_t\otimes e_t$, with coefficient $\epsilon_m^2 = 1$. Contribution: $4\,e_t\otimes e_t$.</p>
@@ -269,21 +269,21 @@ $$</p>
 <h3 id="step-3-computing-the-pairing-for-each-bell-state">Step 3: Computing the pairing for each Bell state</h3>
 <p>We compute the pairing term by term. Multiplying $\tilde\Pi_{\mathrm{id},\epsilon}$ by $\tilde{H}_{\Psi,ab}$,</p>
 <p>$$
-\tilde\Pi_{\mathrm{id},\epsilon}\tilde{H}_{\Psi,ab} = \frac{1}{4}\sum_{\mu\in\{t,x,y,z\}}\epsilon_\mu\,(e_\mu \cdot i\vec u_x)\otimes(e_\mu \cdot i\vec u_y),
+\tilde\Pi_{\mathrm{id},\epsilon}\tilde{H}_{\Psi,ab} = \frac{1}{4}\sum_{\imath\in\{t,x,y,z\}}\epsilon_{\imath}\,(e_{\imath} \cdot i\vec u_x)\otimes(e_{\imath} \cdot i\vec u_y),
 $$</p>
 <p>with $\epsilon_t \equiv 1$.</p>
 <p><strong>Term $m = t$.</strong> The pairing is $4\,\mathrm{Sc}(i\vec u_x)\,\mathrm{Sc}(i\vec u_y) = 0$, because the scalar part of $i\vec u_x$ vanishes.</p>
 <p><strong>Terms $m \in \{x,y,z\}$.</strong> We have</p>
 <p>$$
-e_\mu\cdot i\vec u_x = i\,e_\mu \vec u_x = i\left(-a_\mu e_t + \text{vector}\right),
+e_{\imath}\cdot i\vec u_x = i\,e_{\imath} \vec u_x = i\left(-a_{\imath} e_t + \text{vector}\right),
 $$</p>
-<p>using $e_\mu \vec u_x = -a_\mu e_t + \sum_{\eta \neq \mu} a_\eta e_\mu \vec e_\eta$. The scalar part is $-i a_\mu$, and similarly $\mathrm{Sc}(e_\mu\cdot i\vec u_y) = -i b_\mu$. The product of the two scalar parts is</p>
+<p>using $e_{\imath} \vec u_x = -a_{\imath} e_t + \sum_{\eta \neq \imath} a_\eta e_{\imath} \vec e_\eta$. The scalar part is $-i a_{\imath}$, and similarly $\mathrm{Sc}(e_{\imath}\cdot i\vec u_y) = -i b_{\imath}$. The product of the two scalar parts is</p>
 <p>$$
-(-i a_\mu)(-i b_\mu) = i^2\, a_\mu b_\mu = -a_\mu b_\mu.
+(-i a_{\imath})(-i b_{\imath}) = i^2\, a_{\imath} b_{\imath} = -a_{\imath} b_{\imath}.
 $$</p>
 <p><strong>Assembly.</strong> Substituting, the factor $\frac14$ carried by the product and the factor $4$ carried by the pairing cancel,</p>
 <p>$$
-E(\vec u_x, \vec u_y) = \sum_{\mu\in\{x,y,z\}}\epsilon_\mu\,(-a_\mu b_\mu) = -\sum_{\mu\in\{x,y,z\}}\epsilon_\mu\,a_\mu b_\mu.
+E(\vec u_x, \vec u_y) = \sum_{\imath\in\{x,y,z\}}\epsilon_{\imath}\,(-a_{\imath} b_{\imath}) = -\sum_{\imath\in\{x,y,z\}}\epsilon_{\imath}\,a_{\imath} b_{\imath}.
 $$</p>
 <p>So the correlation function is</p>
 <p>$$

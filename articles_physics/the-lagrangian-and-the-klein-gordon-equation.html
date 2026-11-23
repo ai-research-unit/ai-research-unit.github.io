@@ -79,7 +79,7 @@
 \qquad
 k_m=\frac{2\pi mc}{h},
 $$</p>
-<p>with $\tilde\Xi=\Xi_t e_t+\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z$ one element of $\mathbb{B}$ and four complex coefficients. The operator is central with real coefficients, so the one biquaternion equation is the four complex equations $\left(\Box_\Phi-k_m^{2}\right)\Xi_\mu=0$, one per coefficient. The present article asks which action has this equation as its Euler–Lagrange equation, and what the symmetries of that action give.</p>
+<p>with $\tilde\Xi=\Xi_t e_t+\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z$ one element of $\mathbb{B}$ and four complex coefficients. The operator is central with real coefficients, so the one biquaternion equation is the four complex equations $\left(\Box_\Phi-k_m^{2}\right)\Xi_{\imath}=0$, one per coefficient. The present article asks which action has this equation as its Euler–Lagrange equation, and what the symmetries of that action give.</p>
 <p>The answer has four parts. One action has the equation as its Euler–Lagrange equation. Its two continuous symmetries give the charge and the energy, and a third gives the stress. The action separates exactly into four scalar actions, one per coefficient, so the biquaternion form adds no coupling that the scalar form does not have. And the kinetic term of that action is the Hermitian bilinear $\mathrm{Sc}(\cdot^{*}\cdot)$, not the quaternionic bilinear $\mathrm{Sc}(\cdot^{\natural}\cdot)$; the second is complex and indefinite, and the difference is the first computation of the article.</p>
 <p>Two boundaries are stated first, because both are ways of overclaiming.</p>
 <p><strong>This is the element-form variational principle.</strong> The field is the element $\tilde\Xi$ and the variation is over that element. The polar variational principle, in which the scale, the angle and the six frame parameters are the variables, is the companion article <em>The Lagrangian and the Klein–Gordon Equation in Polar Variables</em>. The two actions are the same functional written in two coordinate systems, and the two articles differ in what can be computed in each.</p>
@@ -88,14 +88,14 @@ $$</p>
 <p><strong>What survives, and at what size.</strong> One ordinary differential equation does exist for every $\vec k_\Phi$: on a Fourier mode of fixed wave vector the conjugate pair of §<em>Aside: The Conjugate Pair</em> obeys a $2\times2$ system with constant coefficients and a closed-form block. What does not exist is an ODE for the field, because a general field is a superposition of modes with different $k'_t$ and no single exponential propagates all of them. The distinction is the one the Schrödinger article draws, moved from the field to the mode.</p>
 <p>The formalism is that of <em>The Lagrangian and Hamiltonian Mechanics</em>, and the action principle is that of <em>The Lagrangian and the Non-Quantum Limit: The Action Principle</em>; this article applies the principle to the Klein–Gordon equation in its element form.</p>
 <h2 id="conventions">Conventions</h2>
-<p><strong>The conventions are restated here so that every sign below is checkable from this page alone.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace and $\mathbb{B}_{\Phi}$ the anti-Hermitian one. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The measure is $\mathrm{d}^{4}x=\mathrm{d}r'_t\,\mathrm{d}r_x\,\mathrm{d}r_y\,\mathrm{d}r_z$ with $r'_t=c\,t'$, so the material time is a length and no $c$ appears beside a temporal derivative. The four-position is $\tilde R_\Phi=i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Each symbol is defined where it first appears, and all of them are collected in §<em>Summary of Notation</em>.</p>
+<p><strong>The conventions are restated here so that every sign below is checkable from this page alone.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace and $\mathbb{B}_{\Phi}$ the anti-Hermitian one. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The measure is $\mathrm{d}^{4}x=\mathrm{d}r'_t\,\mathrm{d}r_x\,\mathrm{d}r_y\,\mathrm{d}r_z$ with $r'_t=c\,t'$, so the material time is a length and no $c$ appears beside a temporal derivative. The four-position is $\tilde R_\Phi=i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Each symbol is defined where it first appears, and all of them are collected in §<em>Summary of Notation</em>.</p>
 <p><strong>The d'Alembertian, and the dispersion relation it fixes.</strong> The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial r_\eta$ with $R_t=i r'_t$, and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ on the material sector. On a plane wave $\exp\big(-i(\omega r'_t/c-\vec k_\Phi\cdot\vec r)\big)$ the operator returns $\omega^{2}-c^{2}k_\Phi^{2}$ times the wave, so the equation requires $\omega^{2}=c^{2}k_\Phi^{2}+c^{2}k_m^{2}$. That is the parent's dispersion relation, and it fixes the sign of the mass term in the action below.</p>
 <h2 id="the-action-in-element-form">The Action in Element Form</h2>
 <p>The action is</p>
 <p>$$
 S[\tilde\Xi,\tilde\Xi^{*}]=\int\mathrm{d}^{4}x\;\mathrm{Sc}\Big[(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi-\sum_{\eta}(\partial_{r_\eta}\tilde\Xi)^{*}\partial_{r_\eta}\tilde\Xi-k_m^{2}\tilde\Xi^{*}\tilde\Xi\Big].
 $$</p>
-<p>The signs are written out in the display, and that is deliberate. A compact form $\mathrm{Sc}\big[(\partial_\mu\tilde\Xi)^{*}(\partial_\mu\tilde\Xi)-k_m^{2}\tilde\Xi^{*}\tilde\Xi\big]$ would need the temporal slot raised, and this corpus raises no index; the compact form therefore hides the metric in a symbol, and the article writes the two halves apart instead. The reason is the one already met: the Hermitian conjugation carries the central $i$ with it, so $(\partial_{R_t}\tilde\Xi)^{*}\partial_{R_t}\tilde\Xi=(+i)(-i)(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi$ is the temporal term with a plus, and the four-slot contraction over $R$ gives $+\lvert\partial_{r'_t}\tilde\Xi\rvert^{2}+\sum_\eta\lvert\partial_{r_\eta}\tilde\Xi\rvert^{2}$ with no relative sign. The relative sign of the two terms is therefore a property of the metric, not of the conjugation, and it is stated in the display rather than hidden in a symbol. Three properties of the action are now checked.</p>
+<p>The signs are written out in the display, and that is deliberate. A compact form $\mathrm{Sc}\big[(\partial_{\imath}\tilde\Xi)^{*}(\partial_{\imath}\tilde\Xi)-k_m^{2}\tilde\Xi^{*}\tilde\Xi\big]$ would need the temporal slot raised, and this corpus raises no index; the compact form therefore hides the metric in a symbol, and the article writes the two halves apart instead. The reason is the one already met: the Hermitian conjugation carries the central $i$ with it, so $(\partial_{R_t}\tilde\Xi)^{*}\partial_{R_t}\tilde\Xi=(+i)(-i)(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi$ is the temporal term with a plus, and the four-slot contraction over $R$ gives $+\lvert\partial_{r'_t}\tilde\Xi\rvert^{2}+\sum_\eta\lvert\partial_{r_\eta}\tilde\Xi\rvert^{2}$ with no relative sign. The relative sign of the two terms is therefore a property of the metric, not of the conjugation, and it is stated in the display rather than hidden in a symbol. Three properties of the action are now checked.</p>
 <p><strong>The variation.</strong></p>
 <p>Vary $\tilde\Xi$ and treat $\tilde\Xi^{*}$ as independent, which is legitimate over $\mathbb{C}$ and is the standard device for a first-order-in-the-conjugate action. The two kinetic terms are complex conjugates, $\mathrm{Sc}(A^{*}B)=\big(\mathrm{Sc}(B^{*}A)\big)^{*}$, so they sum to twice the real part, and after one integration by parts</p>
 <p>$$
@@ -113,24 +113,24 @@ a\,k'^{2}_t+b\,k_\Phi^{2}=c\,k_m^{2}.
 $$</p>
 <p>The convention fixed in §<em>Conventions</em> is $\Box_\Phi=\Delta_\Phi-\partial^{2}_{r'^{2}_t}$, so the equation must read $k'^{2}_t-k_\Phi^{2}=+k_m^{2}$, and the coefficients are $(a,b,c)=(1,-1,1)$: the temporal term with a plus, the spatial term with a minus, the mass term with a minus. Each choice fails on its own: $c=-1$ gives $k'^{2}_t-k_\Phi^{2}=-k_m^{2}$, the wrong branch of the hyperbola, spacelike where the physical branch is timelike; $b=+1$ gives $k'^{2}_t+k_\Phi^{2}=k_m^{2}$, which forces $k'^{2}_t<k_m^{2}$ and makes the spatial gradient a negative contribution to the energy; and $a=-1$ gives $-k'^{2}_t-k_\Phi^{2}=k_m^{2}$, which has no real solution at all. The minus on the mass term is also what makes the potential energy positive, and that is the same statement as the branch being the physical one.</p>
 <p><strong>No factor of one half.</strong> The overall normalization is a convention and this article fixes it once: the action above has no $\tfrac12$, so the charge and the energy below carry the constants written and no others. A factor of $\tfrac12$ in front of $S$ multiplies every Noether current by $\tfrac12$ and changes no equation.</p>
-<p><strong>The pairing. The two pairings, stated once.</strong> The bilinear $\mathrm{Sc}(A^{*}B)$ is the Hermitian form and the bilinear $\mathrm{Sc}(A^{\natural}B)$ is the quaternionic one. They agree on real coefficients and differ on complex ones, and the difference is not cosmetic. For $A=\sum_\mu a_\mu e_\mu$ with $a_\mu$ complex,</p>
+<p><strong>The pairing. The two pairings, stated once.</strong> The bilinear $\mathrm{Sc}(A^{*}B)$ is the Hermitian form and the bilinear $\mathrm{Sc}(A^{\natural}B)$ is the quaternionic one. They agree on real coefficients and differ on complex ones, and the difference is not cosmetic. For $A=\sum_{\imath} a_{\imath} e_{\imath}$ with $a_{\imath}$ complex,</p>
 <p>$$
-\mathrm{Sc}(A^{*}A)=\sum_{\mu}\lvert a_\mu\rvert^{2},
+\mathrm{Sc}(A^{*}A)=\sum_{\imath}\lvert a_{\imath}\rvert^{2},
 \qquad
-\mathrm{Sc}(A^{\natural}A)=\sum_{\mu}a_\mu^{2},
+\mathrm{Sc}(A^{\natural}A)=\sum_{\imath}a_{\imath}^{2},
 $$</p>
-<p>the first real and equal to the Hermitian norm, the second complex in general. The two expressions are checked by the one computation $\vec e_\mu^{*}\vec e_\mu=-\vec e_\mu^{2}=e_t$ for a spatial unit and $\vec e_\mu^{\natural}\vec e_\mu=+\vec e_t$, the two signs of the two conjugations. The first sum is a sum of squares of moduli; the second is a sum of squares of complex numbers, whose real part is $\sum_\mu(u_\mu^{2}-v_\mu^{2})$ for $a_\mu=u_\mu+i v_\mu$ and is negative whenever the imaginary parts dominate.</p>
+<p>the first real and equal to the Hermitian norm, the second complex in general. The two expressions are checked by the one computation $\vec e_{\imath}^{*}\vec e_{\imath}=-\vec e_{\imath}^{2}=e_t$ for a spatial unit and $\vec e_{\imath}^{\natural}\vec e_{\imath}=+\vec e_t$, the two signs of the two conjugations. The first sum is a sum of squares of moduli; the second is a sum of squares of complex numbers, whose real part is $\sum_{\imath}(u_{\imath}^{2}-v_{\imath}^{2})$ for $a_{\imath}=u_{\imath}+i v_{\imath}$ and is negative whenever the imaginary parts dominate.</p>
 <p><strong>The second pairing fails in two ways worth separating, and the quaternionic reading of it is the reason it is tried.</strong></p>
 <p><strong>It is not real.</strong> For $\partial_{r'_t}\tilde\Xi=(1+i)e_t$ at one event, $\mathrm{Sc}(A^{\natural}A)=(1+i)^{2}=2i$, whose real part is zero while the field's rate of change is not. A Lagrangian that vanishes on a nonzero rate of change is not a Lagrangian for that rate of change.</p>
 <p><strong>Its real part is not positive.</strong> For $A=(1+i)e_t$ and $A'=(1-i)e_t$ the two values $2i$ and $-2i$ differ only in sign, so no choice of overall sign makes $\mathrm{Re}\,\mathrm{Sc}(A^{\natural}A)$ a sum of squares. The kinetic energy of the resulting theory would be indefinite already for one coefficient, before any interaction is added and before the spatial part is counted.</p>
-<p><strong>Why the quaternionic reading looks right, and why it is unavailable here.</strong> For a field with real quaternionic coefficients the two readings coincide, $a_\mu^{2}=\lvert a_\mu\rvert^{2}$, and $\mathrm{Sc}(A^{\natural}A)$ is then a genuine sum of squares. The Klein–Gordon field of this corpus has complex coefficients: it is $\mathbb{C}^{4}$-valued, and the parent's scalar case is the one complex coefficient $\Xi_t$. With four complex coefficients the equality $a^{2}=\lvert a\rvert^{2}$ fails for every coefficient whose phase is not $0$ or $\pi$, which is almost every field. The Hermitian pairing is the one that survives, and it is also the pairing the parent uses for the density, $\rho_{\mathrm{num}}=\mathrm{Sc}(\tilde\Xi\tilde\Xi^{*})=\sum_\mu\lvert\Xi_\mu\rvert^{2}$.</p>
+<p><strong>Why the quaternionic reading looks right, and why it is unavailable here.</strong> For a field with real quaternionic coefficients the two readings coincide, $a_{\imath}^{2}=\lvert a_{\imath}\rvert^{2}$, and $\mathrm{Sc}(A^{\natural}A)$ is then a genuine sum of squares. The Klein–Gordon field of this corpus has complex coefficients: it is $\mathbb{C}^{4}$-valued, and the parent's scalar case is the one complex coefficient $\Xi_t$. With four complex coefficients the equality $a^{2}=\lvert a\rvert^{2}$ fails for every coefficient whose phase is not $0$ or $\pi$, which is almost every field. The Hermitian pairing is the one that survives, and it is also the pairing the parent uses for the density, $\rho_{\mathrm{num}}=\mathrm{Sc}(\tilde\Xi\tilde\Xi^{*})=\sum_{\imath}\lvert\Xi_{\imath}\rvert^{2}$.</p>
 <p><strong>What the pairing does not decide.</strong> It fixes the density's reality and nothing about the potential. Which potentials are admissible is the selection rule, and it is read on the potential's type and not on the pairing's (§<em>The Structural Consequence: Four Scalar Actions</em>).</p>
-<p><strong>The type of the coefficient. The kinetic term is real.</strong> Every term of the display has the form $\mathrm{Sc}(A^{*}A)$ with $A$ one of the derivatives, and $\mathrm{Sc}(A^{*}A)=\sum_\mu\lvert a_\mu\rvert^{2}$ is real and non-negative. The kinetic part of the Lagrangian is the difference of two such sums, real term by term. Its temporal part is positive and its spatial part enters with a minus, which is the metric and not an ambiguity: a boost of the four-gradient reverses one sign and not the other.</p>
+<p><strong>The type of the coefficient. The kinetic term is real.</strong> Every term of the display has the form $\mathrm{Sc}(A^{*}A)$ with $A$ one of the derivatives, and $\mathrm{Sc}(A^{*}A)=\sum_{\imath}\lvert a_{\imath}\rvert^{2}$ is real and non-negative. The kinetic part of the Lagrangian is the difference of two such sums, real term by term. Its temporal part is positive and its spatial part enters with a minus, which is the metric and not an ambiguity: a boost of the four-gradient reverses one sign and not the other.</p>
 <p><strong>The potential term is real.</strong> Write the coefficient as $\tilde M\in\mathbb{B}_{\Psi}$, Hermitian, with $\tilde M=k_m^{2}e_t$ for the free field. Then</p>
 <p>$$
 (\tilde\Xi^{*}\tilde M\tilde\Xi)^{*}=\tilde\Xi^{*}\tilde M^{*}\tilde\Xi=\tilde\Xi^{*}\tilde M\tilde\Xi,
 $$</p>
-<p>using $(\tilde\Xi^{*})^{*}=\tilde\Xi$ and $\tilde M^{*}=\tilde M$. So the density is Hermitian, and a Hermitian element has a real scalar part, because $\mathbb{B}_{\Psi}$ is the real-linear span of $e_t$ and $i\vec e_\eta$. The potential density is therefore real for every Hermitian coefficient, central or not. With $\tilde M=k_m^{2}e_t$ it is $k_m^{2}\sum_\mu\lvert\Xi_\mu\rvert^{2}$, and the action is real.</p>
+<p>using $(\tilde\Xi^{*})^{*}=\tilde\Xi$ and $\tilde M^{*}=\tilde M$. So the density is Hermitian, and a Hermitian element has a real scalar part, because $\mathbb{B}_{\Psi}$ is the real-linear span of $e_t$ and $i\vec e_\eta$. The potential density is therefore real for every Hermitian coefficient, central or not. With $\tilde M=k_m^{2}e_t$ it is $k_m^{2}\sum_{\imath}\lvert\Xi_{\imath}\rvert^{2}$, and the action is real.</p>
 <p><strong>The selection rule. Not at issue here.</strong> The potential is $\tilde M=k_m^{2}e_t$, central and Hermitian at once, so both sectors pass the test and no sector is excluded. The general potential is the momentum article's subject.</p>
 <p><strong>What reality does not buy. Not at issue here.</strong> The article claims that the density is real and positive; the gap between a real action and a real spectrum opens only where the potential is a free element, which is the momentum reading.</p>
 <h3 id="the-two-settings">The Two Settings</h3>
@@ -150,7 +150,7 @@ $$</p>
 $$</p>
 <p>with the spatial second derivative carrying the plus that the metric sign and the minus in the action cancel, and with $\Delta_\Phi=\sum_\eta\partial_\eta^{2}$.</p>
 <p><strong>The boundary term.</strong> On a region whose boundary is held fixed, $\delta\tilde\Xi^{*}=0$ there and the surface term vanishes; on a region that extends to infinity the flux is killed by the fall-off of a solution. The two sentences are the whole of the boundary discussion, and the corpus uses the second.</p>
-<p><strong>The equation is recovered, not assumed.</strong> The bracket is $\bigl(\Box_\Phi-k_m^{2}\bigr)\tilde\Xi$ with $\Box_\Phi=\Delta_\Phi-\partial_t^{2}$. Stationarity for every $\delta\tilde\Xi^{*}$ forces the bracket to vanish: if it did not, choosing $\delta\tilde\Xi^{*}$ equal to the bracket itself would make $\mathrm{Sc}(\delta\tilde\Xi^{*}\cdot\text{bracket})=\sum_\mu\lvert\text{bracket}_\mu\rvert^{2}>0$. Hence</p>
+<p><strong>The equation is recovered, not assumed.</strong> The bracket is $\bigl(\Box_\Phi-k_m^{2}\bigr)\tilde\Xi$ with $\Box_\Phi=\Delta_\Phi-\partial_t^{2}$. Stationarity for every $\delta\tilde\Xi^{*}$ forces the bracket to vanish: if it did not, choosing $\delta\tilde\Xi^{*}$ equal to the bracket itself would make $\mathrm{Sc}(\delta\tilde\Xi^{*}\cdot\text{bracket})=\sum_{\imath}\lvert\text{bracket}_{\imath}\rvert^{2}>0$. Hence</p>
 <p>$$
 \bigl(\Box_\Phi-k_m^{2}\bigr)\tilde\Xi=0,
 $$</p>
@@ -162,19 +162,19 @@ $$</p>
 <p><strong>What the section does not claim.</strong> It does not claim the theory is trivial, only that its action imposes no relation among the canonical variables. The four scalar actions of the structural consequence inherit that property one by one, which is why the separation into components costs no constraint anywhere.</p>
 <h2 id="the-structural-consequence-four-scalar-actions">The Structural Consequence: Four Scalar Actions</h2>
 <p><strong>The spin-zero action is one scalar action.</strong> The field is central, so the Lagrangian is the ordinary complex scalar Lagrangian and the sum below has one term. The separation that follows is exact on the whole algebra, and it is recorded because it is what the restriction rules out: four terms with no cross term are four independent fields, each with its own density, its own charge and its own action, and the carrier admits one.</p>
-<p><strong>The separation.</strong> By $\mathrm{Sc}(A^{*}A)=\sum_\mu\lvert a_\mu\rvert^{2}$ applied to $A=\partial\tilde\Xi$, and by the same identity applied to $\tilde\Xi$ itself, every term of the Lagrangian is a sum over the four coefficients,</p>
+<p><strong>The separation.</strong> By $\mathrm{Sc}(A^{*}A)=\sum_{\imath}\lvert a_{\imath}\rvert^{2}$ applied to $A=\partial\tilde\Xi$, and by the same identity applied to $\tilde\Xi$ itself, every term of the Lagrangian is a sum over the four coefficients,</p>
 <p>$$
-\mathrm{Sc}\big[(\partial\tilde\Xi)^{*}\partial\tilde\Xi\big]=\sum_{\mu}\partial\Xi_\mu^{*}\,\partial\Xi_\mu,
+\mathrm{Sc}\big[(\partial\tilde\Xi)^{*}\partial\tilde\Xi\big]=\sum_{\imath}\partial\Xi_{\imath}^{*}\,\partial\Xi_{\imath},
 \qquad
-\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\sum_{\mu}\lvert\Xi_\mu\rvert^{2},
+\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\sum_{\imath}\lvert\Xi_{\imath}\rvert^{2},
 $$</p>
 <p>with the metric signs of the display above understood in each summand. Hence</p>
 <p>$$
-S[\tilde\Xi]=\sum_{\mu}S[\Xi_\mu],
+S[\tilde\Xi]=\sum_{\imath}S[\Xi_{\imath}],
 $$</p>
-<p>where $S$ on the right is the scalar action of one complex coefficient. There are no cross terms, because the four units are orthogonal for the Hermitian pairing and every off-diagonal product $\vec e_\mu^{*}\vec e_\nu$ with $\mu\neq\nu$ is a spatial unit and has no scalar part.</p>
+<p>where $S$ on the right is the scalar action of one complex coefficient. There are no cross terms, because the four units are orthogonal for the Hermitian pairing and every off-diagonal product $\vec e_{\imath}^{*}\vec e_{\jmath}$ with ${\imath}\neq\jmath$ is a spatial unit and has no scalar part.</p>
 <p><strong>What follows for the equation.</strong> On the centre there is one coefficient, one action and one solution set $S$. On the whole algebra the four coefficients are independent and the solution space is $\mathbb{C}^{4}\otimes_{\mathbb{C}}S$, which is four fields; the parent's §<em>A value outside the centre, and the four equations</em> is the same statement read on the equation. The variational form adds the reason: the independence is the orthogonality of the four units under the pairing, so no choice of coefficients can produce a coupling that the Lagrangian does not contain.</p>
-<p><strong>What breaks it.</strong> A non-central Hermitian coefficient $\tilde M$ in the potential term does couple the coefficients. Left multiplication by $\tilde M$ is a real-linear map of $\mathbb{B}$, Hermitian for the $\mathrm{Sc}$ pairing when $\tilde M$ is Hermitian, so the potential term is still real, but it is now a Hermitian $4\times4$ matrix in the basis $e_\mu$ rather than four numbers. The equation keeps its form, $\left(\Box_\Phi-\tilde M\right)\tilde\Xi=0$, and the four copies become four coupled channels. For a constant $\tilde M$ the plane-wave problem becomes the eigenvalue problem $(\omega^{2}-c^{2}k_\Phi^{2})\tilde\Xi_0=\tilde M\tilde\Xi_0$, whose four branches are the four eigenvalues. The free field is the case in which $\tilde M$ is central and the branches coincide.</p>
+<p><strong>What breaks it.</strong> A non-central Hermitian coefficient $\tilde M$ in the potential term does couple the coefficients. Left multiplication by $\tilde M$ is a real-linear map of $\mathbb{B}$, Hermitian for the $\mathrm{Sc}$ pairing when $\tilde M$ is Hermitian, so the potential term is still real, but it is now a Hermitian $4\times4$ matrix in the basis $e_{\imath}$ rather than four numbers. The equation keeps its form, $\left(\Box_\Phi-\tilde M\right)\tilde\Xi=0$, and the four copies become four coupled channels. For a constant $\tilde M$ the plane-wave problem becomes the eigenvalue problem $(\omega^{2}-c^{2}k_\Phi^{2})\tilde\Xi_0=\tilde M\tilde\Xi_0$, whose four branches are the four eigenvalues. The free field is the case in which $\tilde M$ is central and the branches coincide.</p>
 <h2 id="the-noether-currents">The Noether Currents</h2>
 <p>Three symmetries are treated, and for each the transformation, the current and the check of conservation are stated.</p>
 <h3 id="the-phase-symmetry-the-charge">The phase symmetry: the charge</h3>
@@ -212,16 +212,16 @@ $$</p>
 <h3 id="space-translations-and-rotations-the-stress">Space translations and rotations: the stress</h3>
 <p>The remaining symmetries are the three translations $r_\eta\mapsto r_\eta+\epsilon_\eta$ and the three rotations of the spatial axes. Their Noether currents are the components of one tensor,</p>
 <p>$$
-T_{\mu\nu}=\mathrm{Sc}\big[(\partial_\mu\tilde\Xi)^{*}\partial_\nu\tilde\Xi+(\partial_\nu\tilde\Xi)^{*}\partial_\mu\tilde\Xi\big]-\eta_{\mu\nu}\mathcal{L},
+T_{\imath\jmath}=\mathrm{Sc}\big[(\partial_{\imath}\tilde\Xi)^{*}\partial_{\jmath}\tilde\Xi+(\partial_{\jmath}\tilde\Xi)^{*}\partial_{\imath}\tilde\Xi\big]-\eta_{\imath\jmath}\mathcal{L},
 $$</p>
 <p>with $\eta$ the metric of the display in §<em>The Action in Element Form</em>, $\mathcal{L}$ the Lagrangian density, and the index pair read with that metric.</p>
-<p><strong>Where the tensor comes from.</strong> The Lagrangian depends on $\tilde\Xi$ and its first derivatives and on no coordinate, so it is invariant under $r_\mu\mapsto r_\mu+\epsilon_\mu$ with constant $\epsilon_\mu$, and the Noether current of that translation is</p>
+<p><strong>Where the tensor comes from.</strong> The Lagrangian depends on $\tilde\Xi$ and its first derivatives and on no coordinate, so it is invariant under $r_{\imath}\mapsto r_{\imath}+\epsilon_{\imath}$ with constant $\epsilon_{\imath}$, and the Noether current of that translation is</p>
 <p>$$
-T_{\mu\nu}=\mathrm{Sc}\big[(\partial_\mu\tilde\Xi)^{*}\partial_\nu\tilde\Xi+(\partial_\nu\tilde\Xi)^{*}\partial_\mu\tilde\Xi\big]-\delta_{\mu\nu}\mathcal{L},
+T_{\imath\jmath}=\mathrm{Sc}\big[(\partial_{\imath}\tilde\Xi)^{*}\partial_{\jmath}\tilde\Xi+(\partial_{\jmath}\tilde\Xi)^{*}\partial_{\imath}\tilde\Xi\big]-\delta_{\imath\jmath}\mathcal{L},
 $$</p>
 <p>which is the display above with one index lowered. The two halves appear symmetrically because the Lagrangian is a real bilinear of the pair $(\tilde\Xi,\tilde\Xi^{*})$ and each half contributes one product. Its divergence is</p>
 <p>$$
-\sum_\mu\partial_\mu T_{\mu\nu}=-2\,\mathrm{Re}\,\mathrm{Sc}\big[(\partial_\nu\tilde\Xi)^{*}\left(\Box_\Phi-k_m^{2}\right)\tilde\Xi\big],
+\sum_{\imath}\partial_{\imath} T_{\imath\jmath}=-2\,\mathrm{Re}\,\mathrm{Sc}\big[(\partial_{\jmath}\tilde\Xi)^{*}\left(\Box_\Phi-k_m^{2}\right)\tilde\Xi\big],
 $$</p>
 <p>which vanishes on solutions, so conservation of the stress is the equation and nothing else, exactly as for the charge. The improvement term and the trace belong to <em>The Quantum Stress Tensor of the Biquaternion Scalar Field</em>; the variational statement is that no separate construction is needed, since the tensor is the current of the four translations of the action.</p>
 <p><strong>What is not here.</strong> There is no spin current. The Klein–Gordon field of this article carries no spin index, the action has no spin term, and a spin current built from it would be a current of a symmetry the action does not have. The spin current of the Dirac field belongs to the Dirac article.</p>
@@ -239,7 +239,7 @@ $$</p>
 <p>$$
 S=\int\mathrm{d}^{4}x\;\mathrm{Sc}\Big[(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi-\sum_{\eta}(\partial_{r_\eta}\tilde\Xi)^{*}\partial_{r_\eta}\tilde\Xi-k_m^{2}\tilde\Xi^{*}\tilde\Xi\Big],
 $$</p>
-<p>and its variation returns $\left(\Box_\Phi-k_m^{2}\right)\tilde\Xi=0$ in eight real components. The pairing is the Hermitian one, $\mathrm{Sc}(\cdot^{*}\cdot)$, because $\mathrm{Sc}(A^{*}A)=\sum_\mu\lvert a_\mu\rvert^{2}$ is real and non-negative while $\mathrm{Sc}(A^{\natural}A)=\sum_\mu a_\mu^{2}$ is complex and its real part is indefinite; the two agree only for real quaternionic coefficients, and the Klein–Gordon field has complex ones.</p>
+<p>and its variation returns $\left(\Box_\Phi-k_m^{2}\right)\tilde\Xi=0$ in eight real components. The pairing is the Hermitian one, $\mathrm{Sc}(\cdot^{*}\cdot)$, because $\mathrm{Sc}(A^{*}A)=\sum_{\imath}\lvert a_{\imath}\rvert^{2}$ is real and non-negative while $\mathrm{Sc}(A^{\natural}A)=\sum_{\imath} a_{\imath}^{2}$ is complex and its real part is indefinite; the two agree only for real quaternionic coefficients, and the Klein–Gordon field has complex ones.</p>
 <p>The action on a value that leaves the centre is the sum of four scalar actions, one per coefficient, with no cross term, because the four units are orthogonal for the pairing. The independence of the four coefficients is therefore a property of the Lagrangian and not only of the equation, and on the centre the sum has one term. A non-central Hermitian coefficient couples them, and then the four branches are the four eigenvalues of one Hermitian matrix.</p>
 <p>The phase symmetry gives the charge, whose density is $j_{r'_t}=-2k_m\rho_{\mathrm{chg}}$, proportional to the parent's with a constant that is a normalization and a sign that is the action's. The charge is indefinite: it flips between the two frequency branches. Time translation gives the energy, which is non-negative on both branches, and the contrast between the two is the content of the parent's two defects read as one. Space translations and rotations give the stress tensor, which is the current of the four translations and needs no separate construction.</p>
 <p>The second-order structure appears in the variational principle as the conjugate pair. The momentum is the conjugate of the field, the first-order action is the Legendre transform, and its equations are $\partial_{r'_t}\tilde\Xi=\Pi_\Xi$ and $\partial_{r'_t}\Pi_\Xi=\Delta_\Phi\tilde\Xi-k_m^{2}\tilde\Xi$. The closed-form exponential survives only there, as the real $2\times2$ block of a constant coefficient, and not on the element alone. There is no counterpart of the Schrödinger equation's two writings, because the operator does not factor over the algebra: the two first-order readings available are the conjugate pair and the spinor square root, and each doubles something.</p>
@@ -258,7 +258,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t=1,\ \vec e_x,\vec e_y,\vec e_z$</td>
-<td>Quaternion basis, $\vec e_\mu^{2}=-e_t$</td>
+<td>Quaternion basis, $\vec e_{\imath}^{2}=-e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -297,12 +297,12 @@ $$</p>
 <td>Material time, a length</td>
 </tr>
 <tr>
-<td>$\tilde\Xi=\sum_\mu\Xi_\mu e_\mu$</td>
+<td>$\tilde\Xi=\sum_{\imath}\Xi_{\imath} e_{\imath}$</td>
 <td>The Klein–Gordon field, four complex coefficients</td>
 </tr>
 <tr>
-<td>$\Xi_\mu$</td>
-<td>Coefficient of $e_\mu$; the four are independent in the free theory</td>
+<td>$\Xi_{\imath}$</td>
+<td>Coefficient of $e_{\imath}$; the four are independent in the free theory</td>
 </tr>
 <tr>
 <td>$k_m=\frac{2\pi mc}{h}$</td>
@@ -341,15 +341,15 @@ $$</p>
 <td>Noether charge of time translation; non-negative</td>
 </tr>
 <tr>
-<td>$T_{\mu\nu}$</td>
+<td>$T_{\imath\jmath}$</td>
 <td>Stress tensor, the current of translations and rotations</td>
 </tr>
 <tr>
-<td>$\mathrm{Sc}(A^{*}A)=\sum_\mu\lvert a_\mu\rvert^{2}$</td>
+<td>$\mathrm{Sc}(A^{*}A)=\sum_{\imath}\lvert a_{\imath}\rvert^{2}$</td>
 <td>Hermitian bilinear; real and non-negative</td>
 </tr>
 <tr>
-<td>$\mathrm{Sc}(A^{\natural}A)=\sum_\mu a_\mu^{2}$</td>
+<td>$\mathrm{Sc}(A^{\natural}A)=\sum_{\imath} a_{\imath}^{2}$</td>
 <td>Quaternionic bilinear; complex in general</td>
 </tr>
 </tbody>
@@ -385,7 +385,7 @@ $$</p>
 <h2 id="verification">Verification</h2>
 <p><strong>The variation.</strong> The difference quotient of the action was compared with $2\,\mathrm{Re}\int\mathrm{Sc}[\delta\tilde\Xi^{*}(\Box_\Phi-k_m^{2})\tilde\Xi]$ on a periodic grid with a random biquaternion field and a random complex variation, and the two agreed to ten significant figures. The step is also exact on paper: the kinetic halves are conjugates and the boundary term of the integration by parts vanishes for a variation of compact support.</p>
 <p><strong>The reality of the action.</strong> The imaginary part of $S$ vanished identically on every field tried, which is the numerical form of the statement that both terms are Hermitian and that $\mathrm{Sc}$ of a Hermitian element is real.</p>
-<p><strong>The current.</strong> The identity $\sum_\mu\partial_\mu j_\mu=-2\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}(\Box_\Phi-k_m^{2})\tilde\Xi]$ was checked off shell on a grid with four modes, where the two sides agreed to $10^{-13}$ at every point, and on an exact solution, where the divergence was zero to machine precision. The ratio $j_{r'_t}/\rho_{\mathrm{chg}}=-2k_m$ was checked on the mode $\omega=2$, $k_x=1$, $k_m=\sqrt3$ in one length unit, where it came out $-2\sqrt3$ and the derivation of §<em>The Noether Currents</em> explains why.</p>
+<p><strong>The current.</strong> The identity $\sum_{\imath}\partial_{\imath} j_{\imath}=-2\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}(\Box_\Phi-k_m^{2})\tilde\Xi]$ was checked off shell on a grid with four modes, where the two sides agreed to $10^{-13}$ at every point, and on an exact solution, where the divergence was zero to machine precision. The ratio $j_{r'_t}/\rho_{\mathrm{chg}}=-2k_m$ was checked on the mode $\omega=2$, $k_x=1$, $k_m=\sqrt3$ in one length unit, where it came out $-2\sqrt3$ and the derivation of §<em>The Noether Currents</em> explains why.</p>
 <p><strong>The stress.</strong> On the exact plane wave the combination $\partial_{r'_t}T_{00}+\sum_\eta\partial_{r_\eta}T_{0\eta}$ vanished at the level of the finite-difference truncation, which is the numerical form of the divergence identity above.</p>
 <p><strong>The signs.</strong> A cosine of each sign of $\omega$ was substituted into $\Box_\Phi\tilde\Xi-k_m^{2}\tilde\Xi$ on the case $\omega=2$, $k_x=1$, $k_m=\sqrt3$, and both branches solved the equation, which is the check that the coefficient $(1,-1,1)$ of §<em>The Action in Element Form</em> is right and the wrong choices of sign are wrong.</p>
       </div>

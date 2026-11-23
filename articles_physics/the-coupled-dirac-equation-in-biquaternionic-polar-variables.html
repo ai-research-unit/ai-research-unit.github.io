@@ -97,13 +97,13 @@ $$</p>
 <p>Differentiate the word and divide by it, as the parent does, and add the connection. Because $\tilde A_\Phi$ is central per component, the two operations commute with the split.</p>
 <p>The logarithmic derivative, coupled.</p>
 <p>$$
-\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi
-=\tilde\Xi^{-1}\frac{\partial\tilde\Xi}{\partial R_\mu}+\frac{2\pi i\,ϙ}{h}A_\mu
-=\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}
-+i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
-+\frac{2\pi i\,ϙ}{h}A_\mu
-+\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu}\Bigr)\tilde u_{\mathrm r}
-+\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_\mu}.
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi
+=\tilde\Xi^{-1}\frac{\partial\tilde\Xi}{\partial R_{\imath}}+\frac{2\pi i\,ϙ}{h}A_{\imath}
+=\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_{\imath}}
++i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_{\imath}}
++\frac{2\pi i\,ϙ}{h}A_{\imath}
++\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_{\imath}}\Bigr)\tilde u_{\mathrm r}
++\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_{\imath}}.
 $$</p>
 <p>The added term is one central complex number per component, and the four terms after it are the parent's four brackets unchanged in form.</p>
 <p>Which brackets the connection touches. Decompose the added term with $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$. Its temporal slot is $\frac{2\pi iϙ}{h}A_t$, a central imaginary number; its spatial slots are $\frac{2\pi iϙ}{h}A_\eta\vec e_\eta$, which are Hermitian vector parts because $i$ times a real vector is Hermitian. Hence</p>
@@ -124,22 +124,22 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tfrac12\partial_\mu\ln \varrho^{2}$</td>
+<td>$\tfrac12\partial_{\imath}\ln \varrho^{2}$</td>
 <td>real central scalar</td>
 <td>none</td>
 </tr>
 <tr>
-<td>$i\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi iϙ}{h}A_\mu$</td>
+<td>$i\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi iϙ}{h}A_{\imath}$</td>
 <td>central imaginary</td>
 <td>the whole temporal slot of $\frac{2\pi iϙ}{h}\tilde A_\Phi$</td>
 </tr>
 <tr>
-<td>$\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$</td>
+<td>$\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$</td>
 <td>Hermitian</td>
 <td>the whole spatial slot of $\frac{2\pi iϙ}{h}\tilde A_\Phi$</td>
 </tr>
 <tr>
-<td>$\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$</td>
+<td>$\tilde u_{\mathrm r}^{-1}\partial_{\imath}\tilde u_{\mathrm r}$</td>
 <td>real vector part</td>
 <td>none</td>
 </tr>
@@ -151,9 +151,9 @@ $$</p>
 <p>The phase gradient is the four-momentum, and the coupling shifts it.</p>
 <p>The gradient, with the connection. Adding the temporal slot of $\frac{2\pi iϙ}{h}\tilde A_\Phi$ to the phase bracket gives</p>
 <p>$$
-i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}+\frac{2\pi i\,ϙ}{h}A_\mu
-=i\frac{\partial}{\partial R_\mu}\Bigl(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda\Bigr)
-\qquad\text{whenever}\qquad A_\mu=\frac{\partial\Lambda}{\partial R_\mu},
+i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_{\imath}}+\frac{2\pi i\,ϙ}{h}A_{\imath}
+=i\frac{\partial}{\partial R_{\imath}}\Bigl(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda\Bigr)
+\qquad\text{whenever}\qquad A_{\imath}=\frac{\partial\Lambda}{\partial R_{\imath}},
 $$</p>
 <p>so a pure-gauge potential is absorbed by a reparameterisation of the angle and by nothing else. That is the polar statement of gauge invariance, and it is a statement about the <em>angle</em> and not about the field.</p>
 <p>The momentum. With $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ and $E=-\frac{h}{2\pi} c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$ the free reading, the coupled reading is</p>
@@ -217,7 +217,7 @@ $$</p>
 $$</p>
 <p>The invariant is the curvature. Define $\tilde F:=\tilde\nabla_\Phi^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$ restricted to its vector part; the operator identity of the covariant-derivative article gives</p>
 <p>$$
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F,
 $$</p>
 <p>and $\tilde F$ is unchanged by the transformation, since a gradient can be absorbed and a field strength cannot. In the abelian case $\tilde F$ is the Maxwell biquaternion of <em>Maxwell's Equations in the Biquaternionic Formulation</em>.</p>
 <p>What the chart's invariants are, in one list. The radius $\varrho$; the rapidity $\theta_{\mathrm{rpd}}$ and the axis $\vec u_{\mathrm b}$; the rotor angle $\theta_{\mathrm{axr}}$ and its axis; the covariant wavevector $\tilde K_{\Phi,\mathrm{gco}}$; and the curvature $\tilde F$. The angle $\theta_{\mathrm{pha}}$ is a coordinate and not an invariant, and its gauge class is the physical statement.</p>
@@ -324,11 +324,11 @@ $$</p>
 <td>Four-vector factor; $\tilde K_{\Phi,\mathrm{gco}}=ik_m\mathcal B_\Psi$</td>
 </tr>
 <tr>
-<td>$i\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi iϙ}{h}A_\mu$</td>
+<td>$i\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi iϙ}{h}A_{\imath}$</td>
 <td>The coupled phase bracket</td>
 </tr>
 <tr>
-<td>$\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$</td>
+<td>$\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$</td>
 <td>The boost bracket; receives the Hermitian slot</td>
 </tr>
 <tr>

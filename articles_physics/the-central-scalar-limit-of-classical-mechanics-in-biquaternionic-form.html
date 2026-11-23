@@ -87,7 +87,7 @@
 ie_t\mathbb{R} \;\oplus\; \operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\} \;\subset\; \mathbb{B}_{\Phi} ,
 $$</p>
 <p>that is, one scalar direction for time and three real vector directions for space. This is the algebra's realization of $\mathbb{R} \times \mathbb{R}^3$, and it is the setting of every classical problem in this subcategory.</p>
-<p>The scalar direction is the imaginary $ie_t$, so the time coordinate appears as the imaginary scalar $i r'_{t}$; the spatial directions are the real $\vec e_\mu$, so the position is a real pure quaternion. The velocity, acceleration, momentum and force are then all real pure quaternions,</p>
+<p>The scalar direction is the imaginary $ie_t$, so the time coordinate appears as the imaginary scalar $i r'_{t}$; the spatial directions are the real $\vec e_{\imath}$, so the position is a real pure quaternion. The velocity, acceleration, momentum and force are then all real pure quaternions,</p>
 <p>$$
 \vec v = d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt', \qquad \vec a = d^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{t'}^2, \qquad \vec p = m\vec v, \qquad \vec F = m\vec a ,
 $$</p>
@@ -104,7 +104,7 @@ $$</p>
 <p>$$
 T = -\tfrac12 m\,\vec v^2 = \tfrac12 m\,\langle \vec v\rangle_{\natural} = \tfrac12 m|\vec v|^2 e_t ,
 $$</p>
-<p>which is the biquaternion norm of the velocity, up to the mass. The sign is the same algebraic fact — $\vec e_\mu^2 = -e_t$ — that gives the real three-space its Euclidean-square norm and the material sector its Lorentzian sign pattern. In the central-scalar limit, where the velocities are small and the vectors are real, the biquaternion norm of a vector is its positive Euclidean square, and the kinetic energy is a positive central scalar.</p>
+<p>which is the biquaternion norm of the velocity, up to the mass. The sign is the same algebraic fact — $\vec e_{\imath}^2 = -e_t$ — that gives the real three-space its Euclidean-square norm and the material sector its Lorentzian sign pattern. In the central-scalar limit, where the velocities are small and the vectors are real, the biquaternion norm of a vector is its positive Euclidean square, and the kinetic energy is a positive central scalar.</p>
 <h2 id="the-definition-of-the-central-scalar-limit">The Definition of the Central-Scalar Limit</h2>
 <p>The conditions of the introduction can be stated as a restriction on the algebra elements a problem is allowed to use. A classical central-force problem in the limit is specified by:</p>
 <ul>
@@ -201,7 +201,7 @@ $$</p>
 <h3 id="rotations">Rotations</h3>
 <p>The rotations of the real three-space are the adjoint actions of the unit real quaternions $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u$, acting by $\vec a \mapsto R\vec aR^{*}$. The group is $SU(2)$, the double cover of $SO(3)$, and its Lie algebra is the three-dimensional real space $\operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\}$ closed under the commutator, since</p>
 <p>$$
-[\vec e_\mu, \vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda .
+[\vec e_{\imath}, \vec e_{\jmath}] = 2\epsilon_{\imath\jmath\lambda}\vec e_\lambda .
 $$</p>
 <p>The rotation generators are the real vector directions themselves, up to the factor of two, and this is the vector part of the material sector. The biquaternion algebra thus carries the rotation algebra in the same subspace that carries the position and momentum: the rotations and the rotated objects share the three real directions, and the rotations act on the objects by conjugation.</p>
 <h3 id="the-bracket-algebra-of-angular-momentum">The Bracket Algebra of Angular Momentum</h3>
@@ -235,7 +235,7 @@ $$</p>
 \frac{d^2u}{d\theta^2} + u = -\frac{F(1/u)}{mh^2u^2}, \qquad u = \frac{1}{r}, \quad h = \frac{L}{m},
 $$</p>
 <p>whose inverse-square solution is the conic section $r = p/(1 + e\cos(\theta-\theta_0))$ with $p = L^2/(m\kappa)$.</p>
-<p>The rotations are the unit real quaternions acting by $\vec a \mapsto R\vec aR^{*}$, with Lie algebra $[\vec e_\mu,\vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda$ in the real three-space; the components of $\vec L$ satisfy $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}L_{\mathrm{orb},\eta}$ under the Poisson bracket, which is a phase-space operation and is not the quaternion commutator. The limit excludes internal vectors (spin), noncentral scalars, and noncentral vector couplings; those structures are the subjects of the sibling subcategories.</p>
+<p>The rotations are the unit real quaternions acting by $\vec a \mapsto R\vec aR^{*}$, with Lie algebra $[\vec e_{\imath},\vec e_{\jmath}] = 2\epsilon_{\imath\jmath\lambda}\vec e_\lambda$ in the real three-space; the components of $\vec L$ satisfy $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}L_{\mathrm{orb},\eta}$ under the Poisson bracket, which is a phase-space operation and is not the quaternion commutator. The limit excludes internal vectors (spin), noncentral scalars, and noncentral vector couplings; those structures are the subjects of the sibling subcategories.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -251,7 +251,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$</td>
+<td>Quaternion basis, $\vec e_{\imath}^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = \epsilon_{\imath\jmath\lambda}\vec e_\lambda$ $(\imath\neq\jmath)$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -322,7 +322,7 @@ $$</p>
 <td>Rotation rotor; $\vec a\mapsto R\vec aR^{*}$</td>
 </tr>
 <tr>
-<td>$[\vec e_\mu,\vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda$</td>
+<td>$[\vec e_{\imath},\vec e_{\jmath}] = 2\epsilon_{\imath\jmath\lambda}\vec e_\lambda$</td>
 <td>Rotation algebra in the real three-space</td>
 </tr>
 <tr>

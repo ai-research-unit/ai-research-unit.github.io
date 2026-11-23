@@ -82,12 +82,12 @@
 <p>$$
 \tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z,
 $$</p>
-<p>with complex coefficients, $e_t = 1$, $\vec e_x^2 = \vec e_y^2 = \vec e_z^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$ and its cyclic permutations, and $\vec e_\mu \vec e_\nu = -\vec e_\nu \vec e_\mu$ for $\mu \neq \nu$. Two facts carry the whole framework.</p>
+<p>with complex coefficients, $e_t = 1$, $\vec e_x^2 = \vec e_y^2 = \vec e_z^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$ and its cyclic permutations, and $\vec e_{\imath} \vec e_{\jmath} = -\vec e_{\jmath} \vec e_{\imath}$ for ${\imath} \neq \jmath$. Two facts carry the whole framework.</p>
 <ul>
-<li><strong>The scalar imaginary $i$ is central.</strong> It satisfies $i^2 = -1$ and commutes with every element; it is not one of the units $\vec e_\mu$. There is one algebra here, and its two roles — the imaginary unit of the coefficients and the quaternion units of the directions — cannot be exchanged.</li>
+<li><strong>The scalar imaginary $i$ is central.</strong> It satisfies $i^2 = -1$ and commutes with every element; it is not one of the units $\vec e_{\imath}$. There is one algebra here, and its two roles — the imaginary unit of the coefficients and the quaternion units of the directions — cannot be exchanged.</li>
 <li><strong>As a complex algebra, $\mathbb{B}$ is the $2\times 2$ complex matrices.</strong> One isomorphism is fixed once and for all, the corpus's <em>matrix element representation</em> $\mathsf{M}_2$: $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix}$, $\mathsf{M}_2(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, $\mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}$ — that is, $-i$ times the Pauli matrices — extended over $\mathbb{C}$ by $\mathsf{M}_2(i\tilde{Q})=i\,\mathsf{M}_2(\tilde{Q})$. Consequently $\mathbb{B}$ is associative, complex, and not a division algebra: it has zero divisors. $\mathsf{M}_2$ carries the algebra's structures across exactly: $\mathsf{M}_2(\tilde Q_1\tilde Q_2)=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2)$, $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$, $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$. Two useful corollaries: every identity below is an identity about matrices, and this is not quaternionic quantum mechanics — no one-sided or non-commutative-scalar modification enters, so no quaternionic deviation from ordinary quantum mechanics is to be expected.</li>
 </ul>
-<p>Each coefficient splits once and for all as $Q_\mu = q_\mu + iq'_\mu$ with $q_\mu, q'_\mu$ real. The prime marks the slot that carries the $i$: it is a bookkeeping rule and not a physical label. Which of the four parameters is a time is decided by the sector, not by the prime.</p>
+<p>Each coefficient splits once and for all as $Q_{\imath} = q_{\imath} + iq'_{\imath}$ with $q_{\imath}, q'_{\imath}$ real. The prime marks the slot that carries the $i$: it is a bookkeeping rule and not a physical label. Which of the four parameters is a time is decided by the sector, not by the prime.</p>
 <h3 id="the-two-sectors">The two sectors</h3>
 <p>Take the Hermitian conjugation, the coefficient-wise complex conjugate with the three vector coefficients negated:</p>
 <p>$$
@@ -115,9 +115,9 @@ $$</p>
 <h4 id="the-hermitian-form-the-probability-weight">The Hermitian form: the probability weight</h4>
 <p>The form. The Hermitian form applies the identity to the first slot and the Hermitian conjugation to the second,</p>
 <p>$$
-\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_\mu Q_{1\mu}\bar Q_{2\mu}=Q_{1t}\bar Q_{2t}+Q_{1x}\bar Q_{2x}+Q_{1y}\bar Q_{2y}+Q_{1z}\bar Q_{2z}.
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_{\imath} Q_{1\imath}\bar Q_{2\imath}=Q_{1t}\bar Q_{2t}+Q_{1x}\bar Q_{2x}+Q_{1y}\bar Q_{2y}+Q_{1z}\bar Q_{2z}.
 $$</p>
-<p>It is positive definite on the whole algebra, $\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$. The star is the Hermitian conjugation and is not decoration: without it the form is indefinite, as the plain form is on $\mathbb{B}_{\Phi}$.</p>
+<p>It is positive definite on the whole algebra, $\langle\tilde Q,\tilde Q\rangle_{*}=\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$. The star is the Hermitian conjugation and is not decoration: without it the form is indefinite, as the plain form is on $\mathbb{B}_{\Phi}$.</p>
 <p>The scalar part. $\mathrm{Sc}$ is the coefficient of $e_t$. It is defined on $\mathbb{B}$ before any matrix is chosen, and it turns the product into a number. No representation enters.</p>
 <p>The restriction to $\mathbb{B}_{\Psi}$. An element of the sector is $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $h_t,\vec h_\Psi$ real, so $\tilde H_\Psi^{*}=\tilde H_\Psi$. The Hermitian form therefore equals the plain form there,</p>
 <p>$$
@@ -125,7 +125,7 @@ $$</p>
 $$</p>
 <p>the three minus signs of the bilinear expansion being cancelled by $i^2=-1$ from the imaginary coefficients. The plain form is the restriction, not a second pairing.</p>
 <p>The two sign patterns. The Hermitian form has inertia $(4,0)$ on the whole algebra. The plain form has inertia $(4,0)$ on $\mathbb{B}_{\Psi}$ and $(0,4)$ on $\mathbb{B}_{\Phi}$; it is definite on each sector and indefinite on the algebra.</p>
-<p>Which of the four norms. The convention names four algebraic norms: the plain norm $\langle\tilde Q\rangle=\mathrm{Sc}(\tilde Q^2)$, the quaternionic norm $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural$, called the biquaternion norm elsewhere in the corpus, the Hermitian norm $\langle\tilde Q\rangle_*=\sum_\mu\lvert Q_\mu\rvert^2$, and the Krein norm $\langle\tilde Q\rangle_{\natural*}=\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$. The weight above is none of them: it is the normalised Hermitian form, a pairing, not a quadratic form. On $\mathbb{B}_{\Psi}$ the plain and Hermitian norms coincide at $h_t^2+\lvert\vec h_\Psi\rvert^2$, and the quaternionic and Krein norms coincide at $h_t^2-\lvert\vec h_\Psi\rvert^2$; only the first pair is positive definite. The normalisation $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$ is linear and is not a norm condition.</p>
+<p>Which of the four norms. The convention names four algebraic norms: the plain norm $\langle\tilde Q\rangle=\mathrm{Sc}(\tilde Q^2)$, the quaternionic norm $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural$, called the biquaternion norm elsewhere in the corpus, the Hermitian norm $\langle\tilde Q\rangle_*=\sum_{\imath}\lvert Q_{\imath}\rvert^2$, and the Krein norm $\langle\tilde Q\rangle_{\natural*}=\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$. The weight above is none of them: it is the normalised Hermitian form, a pairing, not a quadratic form. On $\mathbb{B}_{\Psi}$ the plain and Hermitian norms coincide at $h_t^2+\lvert\vec h_\Psi\rvert^2$, and the quaternionic and Krein norms coincide at $h_t^2-\lvert\vec h_\Psi\rvert^2$; only the first pair is positive definite. The normalisation $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$ is linear and is not a norm condition.</p>
 <p>The normalisation. The idempotents along a unit vector $\vec u$ are $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec u)$. They satisfy $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$ and $\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\pm})=\tfrac12$. A state is a convex combination of the two idempotents along its axis, so</p>
 <p>$$
 \mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12,\qquad\text{that is}\qquad \langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12.
@@ -443,7 +443,7 @@ $$</p>
 </tr>
 <tr>
 <td>The biquaternion norm</td>
-<td>$\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; real on each sector, of inertia $(3,1)$ on $\mathbb{B}_{\Phi}$ and $(1,3)$ on $\mathbb{B}_{\Psi}$; multiplicative</td>
+<td>$\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$; real on each sector, of inertia $(3,1)$ on $\mathbb{B}_{\Phi}$ and $(1,3)$ on $\mathbb{B}_{\Psi}$; multiplicative</td>
 </tr>
 <tr>
 <td>The matrix dictionary</td>
@@ -535,7 +535,7 @@ $$</p>
 </tr>
 <tr>
 <td>The Bochner theorem for the biquaternion transform</td>
-<td>Bochner's theorem consumes two properties of the character — multiplicativity under the group law, and unitarity — and one of the pairing — that the quadratic form carries the conjugation in its second slot. In $\mathbb{B}$ the kernel is an exponential of a root $\rho$ of $-1$, so two of the ingredients become choices, and the corpus answers the question that forces: the positivity the theorem needs is that of the Hermitian form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, the probability form of the framework. The character $\xi_\omega=\cos(2\pi\langle\omega,r_x\rangle)e_t-\sin(2\pi\langle\omega,r_x\rangle)\rho$ is multiplicative for every root, since the difference of frequencies always reassembles as a product; it is $*$-unitary for the Hermitian conjugation, $\xi_\omega^{*}=\xi_\omega^{-1}$, exactly when $\rho^{*}=-\rho$, and that holds exactly for the degenerate roots — the central imaginary $\rho=\pm i$ and the unit pure real quaternions. For those roots the quadratic form $Q=\sum_{k,l}A_kG(\omega_k-\omega_l)A_l^{*}$ factorises as the integral of the positive element $ZZ^{*}$, so the transform of a positive measure is positive definite: the central root reproduces the classical theorem componentwise, $G=\xi_{\mathrm{scl}} e_t$, and the pure real roots reproduce the quaternion theorem, the two textbook positivity theorems now obtained from the same Hermitian form. For a non-degenerate root, $\rho=b\mu+d\nu i$ with $\mu\perp\nu$ unit real and $b^{2}-d^{2}=1$, unitarity fails and positivity with it, with the witness $\rho=2\vec e_x+\sqrt{3}\,i\vec e_z$. The failure the corpus records at the central coefficient $i$ is a different statement: it tests the bilinear norm $\langle\cdot\rangle_{\natural}$, for which $\langle i\rangle_{\natural}=-1$ for every root, and it belongs to the metric and not to the probability. The two statements are true together and are not the same statement. Proved from the definitions.</td>
+<td>Bochner's theorem consumes two properties of the character — multiplicativity under the group law, and unitarity — and one of the pairing — that the quadratic form carries the conjugation in its second slot. In $\mathbb{B}$ the kernel is an exponential of a root $\rho$ of $-1$, so two of the ingredients become choices, and the corpus answers the question that forces: the positivity the theorem needs is that of the Hermitian form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, the probability form of the framework. The character $\xi_\omega=\cos(2\pi\langle\omega,r_x\rangle)e_t-\sin(2\pi\langle\omega,r_x\rangle)\rho$ is multiplicative for every root, since the difference of frequencies always reassembles as a product; it is $*$-unitary for the Hermitian conjugation, $\xi_\omega^{*}=\xi_\omega^{-1}$, exactly when $\rho^{*}=-\rho$, and that holds exactly for the degenerate roots — the central imaginary $\rho=\pm i$ and the unit pure real quaternions. For those roots the quadratic form $Q=\sum_{k,l}A_kG(\omega_k-\omega_l)A_l^{*}$ factorises as the integral of the positive element $ZZ^{*}$, so the transform of a positive measure is positive definite: the central root reproduces the classical theorem componentwise, $G=\xi_{\mathrm{scl}} e_t$, and the pure real roots reproduce the quaternion theorem, the two textbook positivity theorems now obtained from the same Hermitian form. For a non-degenerate root, $\rho=b\mu+d\jmath i$ with $\mu\perp\jmath$ unit real and $b^{2}-d^{2}=1$, unitarity fails and positivity with it, with the witness $\rho=2\vec e_x+\sqrt{3}\,i\vec e_z$. The failure the corpus records at the central coefficient $i$ is a different statement: it tests the bilinear norm $\langle\cdot\rangle_{\natural}$, for which $\langle i\rangle_{\natural}=-1$ for every root, and it belongs to the metric and not to the probability. The two statements are true together and are not the same statement. Proved from the definitions.</td>
 </tr>
 </tbody>
 </table></div>
@@ -562,7 +562,7 @@ $$</p>
 <h2 id="common-misreadings">Common Misreadings</h2>
 <ol>
 <li>The material sector is the anti-Hermitian one. The more familiar convention would take the Hermitian subspace as the physical one. Here it is the other way round, and the reason is stated above: the four-vectors must multiply, the readings must be real.</li>
-<li>The prime marks the $i$, not the sector. The primed parameter is the one attached to $ie_\mu$: a rule about the coefficients and not a label of a subspace. The crossing it produces is the point. In $\mathbb{B}_{\Phi}$ the $i$ sits on the scalar, so the material time is the primed scalar slot, $i r'_t = iq'_t$; in $\mathbb{B}_{\Psi}$ it sits on the vector, so the informational positions are the primed slots, $i(h'_{x}\,\vec e_x+h'_{y}\,\vec e_y+h'_{z}\,\vec e_z)$. That one crossing is what makes the two sectors mirror images.</li>
+<li>The prime marks the $i$, not the sector. The primed parameter is the one attached to $ie_{\imath}$: a rule about the coefficients and not a label of a subspace. The crossing it produces is the point. In $\mathbb{B}_{\Phi}$ the $i$ sits on the scalar, so the material time is the primed scalar slot, $i r'_t = iq'_t$; in $\mathbb{B}_{\Psi}$ it sits on the vector, so the informational positions are the primed slots, $i(h'_{x}\,\vec e_x+h'_{y}\,\vec e_y+h'_{z}\,\vec e_z)$. That one crossing is what makes the two sectors mirror images.</li>
 <li>The material time enters as an imaginary coefficient and the informational time as a real one. $i r'_t$ against $h_t$. The minus of the metric comes from $i^2 = -1$ in $i r'_t$ and from nowhere else.</li>
 <li>Two forms, two jobs, never conflated. The Hermitian form $\langle\cdot,\cdot\rangle_{*}$ answers the probability question: it is real and positive definite on the whole algebra, and it does not multiply. On $\mathbb{B}_{\Psi}$ it equals the plain form $\langle\cdot,\cdot\rangle$, which is the reading used for the sector computations, while the Born weight keeps the star. The quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ answers the interval question on $\mathbb{B}_{\Phi}$: it is indefinite, it multiplies, and its zero set is the light cone. In particular $\langle\tilde{Q}\rangle_{\natural} = 0$ does not mean $\tilde{Q} = 0$. A state is normalised by the linear condition $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$, equivalently $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$, never by the quadratic norm.</li>
 <li>The interval is the biquaternion norm, not the square. $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$; the bare $\tilde{Q}^2$ is not a scalar and is not the interval.</li>
@@ -597,15 +597,15 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Basis; $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = -\vec e_\nu \vec e_\mu$, $\vec e_x \vec e_y = \vec e_z$</td>
+<td>Basis; $\vec e_{\imath}^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = -\vec e_{\jmath} \vec e_{\imath}$, $\vec e_x \vec e_y = \vec e_z$</td>
 </tr>
 <tr>
 <td>$i$</td>
 <td>Central scalar imaginary, $i^2 = -1$; $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
-<td>$\tilde{Q} = \sum_\mu Q_\mu e_\mu$</td>
-<td>Element with complex coefficients $Q_\mu = q_\mu + iq'_\mu$; the prime marks the slot carrying $i$</td>
+<td>$\tilde{Q} = \sum_{\imath} Q_{\imath} e_{\imath}$</td>
+<td>Element with complex coefficients $Q_{\imath} = q_{\imath} + iq'_{\imath}$; the prime marks the slot carrying $i$</td>
 </tr>
 <tr>
 <td>$\mathrm{Sc}$</td>
@@ -628,7 +628,7 @@ $$</p>
 <td>Informational sector: real scalar, imaginary vector, $h_t\,e_t+i(h'_{x}\,\vec e_x+h'_{y}\,\vec e_y+h'_{z}\,\vec e_z)$</td>
 </tr>
 <tr>
-<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2) = \sum_\mu\varepsilon_\mu Q_{1\mu}Q_{2\mu}$, $\varepsilon = (1,-1,-1,-1)$</td>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2) = \sum_{\imath}\varepsilon_{\imath} Q_{1\imath}Q_{2\imath}$, $\varepsilon = (1,-1,-1,-1)$</td>
 <td>The plain form: $\mathbb{C}$-bilinear, defined with no matrix, not multiplicative; the restriction of the Hermitian form to $\mathbb{B}_{\Psi}$, where its normalised value against the unit is the Born weight</td>
 </tr>
 <tr>
@@ -636,11 +636,11 @@ $$</p>
 <td>The diagonal of the plain form, which the corpus also calls the plain norm: inertia $(4,0)$ on $\mathbb{B}_{\Psi}$, $(0,4)$ on $\mathbb{B}_{\Phi}$. Quadratic, so it does not normalise states; it is not the biquaternion norm</td>
 </tr>
 <tr>
-<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2) = \sum_\mu Q_{1\mu}Q_{2\mu}$</td>
-<td>The general quaternionic bilinear form; its diagonal is the biquaternion norm, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$: complex in general, real of inertia $(3,1)$ on $\mathbb{B}_{\Phi}$ and $(1,3)$ on $\mathbb{B}_{\Psi}$, multiplicative; the interval; the norm of the framework</td>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2) = \sum_{\imath} Q_{1\imath}Q_{2\imath}$</td>
+<td>The general quaternionic bilinear form; its diagonal is the biquaternion norm, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\imath} Q_{\imath}^2$: complex in general, real of inertia $(3,1)$ on $\mathbb{B}_{\Phi}$ and $(1,3)$ on $\mathbb{B}_{\Psi}$, multiplicative; the interval; the norm of the framework</td>
 </tr>
 <tr>
-<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_\mu Q_{1\mu}\bar{Q}_{2\mu}$</td>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_{\imath} Q_{1\imath}\bar{Q}_{2\imath}$</td>
 <td>The Hermitian form, the probability pairing: real, positive definite on the whole algebra, not multiplicative; it equals the plain form on $\mathbb{B}_{\Psi}$ and minus it on $\mathbb{B}_{\Phi}$, so the plain form is its restriction to the sector</td>
 </tr>
 <tr>

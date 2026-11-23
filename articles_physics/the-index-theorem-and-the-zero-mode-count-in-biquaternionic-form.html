@@ -89,15 +89,15 @@
 </ul>
 <h2 id="the-dirac-operator-and-its-index">The Dirac Operator and Its Index</h2>
 <p><strong>Notation.</strong> The imaginary unit has $i^2=-1$, and it is the only imaginary unit in the article. Where two of them meet in a product they are reduced before the formula is read. A field is an element of $\mathbb{B}$, and an action on it is a multiplication, written $a\tilde{Ξ}$ when it acts from the left and $\tilde{Ξ} b$ when it acts from the right; the side is read from the position, and no letter names it. The letter $R$ labels a representation, on $\tilde D_R$, $T(R)$ and $\mathrm{Tr}_R$; the same letter as a subscript on a field is the chirality value of the section below.</p>
-<p><strong>Frame.</strong> Displays are read in the $\mathbb{B}$ frame of <em>Frame and Metric Conventions</em>, with the four complex coordinates $Q_\mu$ and the positive-definite metric that frame carries. The index is a property of an elliptic operator on a Riemannian manifold, and this is the frame whose flat slice is Euclidean.</p>
+<p><strong>Frame.</strong> Displays are read in the $\mathbb{B}$ frame of <em>Frame and Metric Conventions</em>, with the four complex coordinates $Q_{\imath}$ and the positive-definite metric that frame carries. The index is a property of an elliptic operator on a Riemannian manifold, and this is the frame whose flat slice is Euclidean.</p>
 <p><strong>The gradient.</strong> The derivative of the article is the biquaternionic gradient of <em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>,</p>
 <p>$$
-\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu}
+\tilde\nabla_\Phi=\sum_{\imath\in\{t,x,y,z\}}e_{\imath}\frac{\partial}{\partial R_{\imath}}
 =e_t\frac{\partial}{\partial R_t}+\vec e_x\frac{\partial}{\partial R_x}+\vec e_y\frac{\partial}{\partial R_y}+\vec e_z\frac{\partial}{\partial R_z},
 $$</p>
 <p>with its quaternion conjugate and the scalar d'Alembertian</p>
 <p>$$
-(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
+(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath\in\{t,x,y,z\}}\varepsilon_{\imath} e_{\imath}\frac{\partial}{\partial R_{\imath}},
 \qquad
 \Box_\Phi=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\bigr)
 =\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi ,
@@ -107,20 +107,20 @@ $$</p>
 <p>Each term is a left multiplication by one frame unit. The symbol is the same sum with the derivative replaced by the covector component, so it is an element of the algebra and not an array.</p>
 <p><strong>The operator.</strong> The twisted Dirac operator in the representation $R$ is the gauge-covariant gradient</p>
 <p>$$
-\tilde D_R=\sum_{\mu}e_\mu D_\mu,\qquad
-D_\mu\tilde{Ξ}=\frac{\partial\tilde{Ξ}}{\partial R_\mu}+i\kappa\,\mathcal A_\mu\tilde{Ξ},
+\tilde D_R=\sum_{\imath}e_{\imath} D_{\imath},\qquad
+D_{\imath}\tilde{Ξ}=\frac{\partial\tilde{Ξ}}{\partial R_{\imath}}+i\kappa\,\mathcal A_{\imath}\tilde{Ξ},
 $$</p>
-<p>with the sum over $\mu\in\{t,x,y,z\}$ and the connection $\mathcal A_\mu$ valued in the gauge algebra, multiplying the field from the left. The components are those of the gauge-covariant derivative of <em>Algebra and Element Conventions</em>, and</p>
+<p>with the sum over $\mu\in\{t,x,y,z\}$ and the connection $\mathcal A_{\imath}$ valued in the gauge algebra, multiplying the field from the left. The components are those of the gauge-covariant derivative of <em>Algebra and Element Conventions</em>, and</p>
 <p>$$
-[D_\mu,D_\nu]\tilde{Ξ}=i\kappa\,F_{\mu\nu}\tilde{Ξ},\qquad
-F_{\mu\nu}=\frac{\partial\mathcal A_\nu}{\partial R_\mu}-\frac{\partial\mathcal A_\mu}{\partial R_\nu}+i\kappa[\mathcal A_\mu,\mathcal A_\nu].
+[D_{\imath},D_{\jmath}]\tilde{Ξ}=i\kappa\,F_{\imath\jmath}\tilde{Ξ},\qquad
+F_{\imath\jmath}=\frac{\partial\mathcal A_{\jmath}}{\partial R_{\imath}}-\frac{\partial\mathcal A_{\imath}}{\partial R_{\jmath}}+i\kappa[\mathcal A_{\imath},\mathcal A_{\jmath}].
 $$</p>
-<p><strong>The symbol, and the square.</strong> The principal symbol at a covector $\zeta$ is the left multiplication by $\sum_\mu\zeta_\mu e_\mu$. That element is invertible for every real $\zeta\neq0$, because its norm is $\sum_\mu\zeta_\mu^2$ and that is nonzero; so the operator is elliptic, and on a closed manifold its kernel and cokernel are finite-dimensional. The square of the symbol is not a multiple of the identity,</p>
+<p><strong>The symbol, and the square.</strong> The principal symbol at a covector $\zeta$ is the left multiplication by $\sum_{\imath}\zeta_{\imath} e_{\imath}$. That element is invertible for every real $\zeta\neq0$, because its norm is $\sum_{\imath}\zeta_{\imath}^2$ and that is nonzero; so the operator is elliptic, and on a closed manifold its kernel and cokernel are finite-dimensional. The square of the symbol is not a multiple of the identity,</p>
 <p>$$
-\Bigl(\sum_\mu\zeta_\mu e_\mu\Bigr)^2=\zeta_t^2-\sum_\eta\zeta_k^2+2\zeta_t\sum_\eta\zeta_k\vec e_\eta ,
+\Bigl(\sum_{\imath}\zeta_{\imath} e_{\imath}\Bigr)^2=\zeta_t^2-\sum_\eta\zeta_k^2+2\zeta_t\sum_\eta\zeta_k\vec e_\eta ,
 $$</p>
 <p>because $e_t$ commutes with the three spatial units, so the mixed time–space terms add; the three spatial units anticommute, so their mixed terms vanish; and each spatial square is $-e_t$, which gives the negative sum. Ellipticity needs the invertibility of the symbol and not of its square, so the vector term changes nothing.</p>
-<p>The square of the operator is not scalar either. What is scalar is the composition with the conjugate, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\Box_\Phi$, and on the material sector that reads $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. The connection enters through the commutator $[D_\mu,D_\nu]$, and for the pure-gauge connection $\mathcal A_\mu=(i\kappa)^{-1}u^{-1}\partial u/\partial R_\mu$ the covariant derivative is a conjugation of the free one, $D_\mu\tilde{Ξ}=u^{-1}\partial(u\tilde{Ξ})/\partial R_\mu$.</p>
+<p>The square of the operator is not scalar either. What is scalar is the composition with the conjugate, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\Box_\Phi$, and on the material sector that reads $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. The connection enters through the commutator $[D_{\imath},D_{\jmath}]$, and for the pure-gauge connection $\mathcal A_{\imath}=(i\kappa)^{-1}u^{-1}\partial u/\partial R_{\imath}$ the covariant derivative is a conjugation of the free one, $D_{\imath}\tilde{Ξ}=u^{-1}\partial(u\tilde{Ξ})/\partial R_{\imath}$.</p>
 <p><strong>The first order, and the mass.</strong> The free equation is first order and carries one field, $\tilde\nabla_\Phi\tilde{Ξ}=0$. The massive equation is the chiral pair</p>
 <p>$$
 \tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
@@ -192,7 +192,7 @@ $$</p>
 <p>a surface integral over the three-sphere at infinity. The coefficient $\tfrac23 i\kappa$ is the one that makes the identity exact: the derivative of the cubic term contributes $3\cdot\tfrac23 i\kappa=2i\kappa$ times $\mathrm{Tr}(d\mathcal A\wedge\mathcal A\wedge\mathcal A)$, which is the cross term of $\mathrm{Tr}(F\wedge F)$, and the quartic term $\mathrm{Tr}(\mathcal A^4)$ vanishes — the trace is cyclic and the wedge is graded antisymmetric, so moving one of the four factors past the other three multiplies the term by the sign of a four-cycle, and that sign is $-1$. The index theorem's integral and the instanton's charge are therefore the same integral, computed in two ways: as the integral of the index density over the bulk, and as the Chern–Simons flux through the boundary. They agree in the defining representation, and differ by the Dynkin factor $2T(R)$ otherwise.</p>
 <p>In the abelian case the density collapses to the framework's second invariant. Every index in these displays is written low and the four labels are summed explicitly. The alternating symbol is the orientation density: in the Lorentzian ordering $(Q_t,Q_x,Q_y,Q_z)$ it is fixed by $\epsilon_{0123}=+1$, and in the Euclidean ordering $(x_4,x_1,x_2,x_3)$ by $\epsilon_{4123}=+1$; no index is raised, so no metric sign enters it. With the components $F_{0\eta}=iE_\eta/c$ and $F_{j\eta}=\epsilon_{j\eta l}B_l$ in the Lorentzian case, and $F_{4\eta}=E_\eta$ and $F_{j\eta}=\epsilon_{j\eta l}B_l$ in the Euclidean one, the contraction reads</p>
 <p>$$
-\frac14\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
+\frac14\sum_{\imath,\jmath,\rho,\sigma}\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}
 =
 \begin{cases}
 \dfrac{2i}{c}\,I_2 & (\text{Lorentzian}),\\[2mm]
@@ -279,16 +279,16 @@ $$</p>
 <td>Laplacian in the three vector coordinates</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_\Phi=\sum_\mu e_\mu\,\partial/\partial R_\mu$</td>
-<td>Biquaternionic gradient, acting from the left; $(\tilde\nabla_\Phi)^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$</td>
+<td>$\tilde\nabla_\Phi=\sum_{\imath} e_{\imath}\,\partial/\partial R_{\imath}$</td>
+<td>Biquaternionic gradient, acting from the left; $(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath}\varepsilon_{\imath} e_{\imath}\,\partial/\partial R_{\imath}$</td>
 </tr>
 <tr>
-<td>$\tilde D_R=\sum_\mu e_\mu D_\mu$</td>
+<td>$\tilde D_R=\sum_{\imath} e_{\imath} D_{\imath}$</td>
 <td>Twisted Dirac operator in the representation $R$; the gauge-covariant gradient</td>
 </tr>
 <tr>
-<td>$D_\mu=\partial/\partial R_\mu+i\kappa\,\mathcal A_\mu$</td>
-<td>Covariant derivative; $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$</td>
+<td>$D_{\imath}=\partial/\partial R_{\imath}+i\kappa\,\mathcal A_{\imath}$</td>
+<td>Covariant derivative; $[D_{\imath},D_{\jmath}]=i\kappa F_{\imath\jmath}$</td>
 </tr>
 <tr>
 <td>$\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$</td>
@@ -335,8 +335,8 @@ $$</p>
 <td>Field-strength two-form</td>
 </tr>
 <tr>
-<td>$F_{\mu\nu}=\partial/\partial R_\mu\,\mathcal A_\nu-\partial/\partial R_\nu\,\mathcal A_\mu+i\kappa[\mathcal A_\mu,\mathcal A_\nu]$</td>
-<td>Its components; $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$</td>
+<td>$F_{\imath\jmath}=\partial/\partial R_{\imath}\,\mathcal A_{\jmath}-\partial/\partial R_{\jmath}\,\mathcal A_{\imath}+i\kappa[\mathcal A_{\imath},\mathcal A_{\jmath}]$</td>
+<td>Its components; $[D_{\imath},D_{\jmath}]=i\kappa F_{\imath\jmath}$</td>
 </tr>
 <tr>
 <td>$Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$</td>
@@ -355,7 +355,7 @@ $$</p>
 <td>Framework's second invariant; index density in the abelian case</td>
 </tr>
 <tr>
-<td>$\epsilon_{\mu\nu\rho\sigma}$</td>
+<td>$\epsilon_{\imath\jmath\rho\sigma}$</td>
 <td>Alternating symbol, orientation density, written all-low; $\epsilon_{0123}=+1$ Lorentzian, $\epsilon_{4123}=+1$ Euclidean</td>
 </tr>
 <tr>

@@ -168,13 +168,13 @@ $$\tilde{Ϛ}_{\Psi}\,\longmapsto\frac{\exp(i\theta_{\mathrm{act}})\tilde{Ξ}\,\t
 <p>The three facts above arrange themselves into a chain that is worth stating separately, and labelling for what it is. The exponent of the phase is an element of the <strong>material sector</strong> $\mathbb{B}_{\Phi}$; the phase itself is an element of the <strong>centre</strong> $\mathbb{B}_{C}$; the amplitude it produces is central; and the state built from the amplitude, $\tilde{Ϛ}_{\Psi}=\tilde{Ξ}\tilde{Ξ}^{\dagger}$, is an element of the <strong>informational sector</strong> $\mathbb{B}_{\Psi}$. The path integral's phase is thus the point at which a quantity defined along a material-sector trajectory (the action, $\int \mathrm{Lag}\,dr'_t$) is converted, through the central complex structure, into an amplitude that yields an informational-sector state.</p>
 <p>That chain is a structural interpretation of the algebra, not a derivation of anything. The algebra does not say that the action <em>must</em> be a real scalar; it says that if the action is a real scalar, its phase is central and its exponent lies in $\mathbb{B}_{\Phi}$.</p>
 <h2 id="why-the-central-imaginary-and-not-a-quaternion-unit">Why the Central Imaginary, and Not a Quaternion Unit</h2>
-<p>The phase could be written with any root of $-1$ in place of $i$. The alternatives among the real roots are the non-central ones: the unit pure real quaternions $\vec u$, of which the quaternion units $\vec e_\mu$ are the coordinate cases. Writing the phase with such a root $J$ gives, per path, the element $\exp(\frac{2\pi J\,S}{h})$, a unit real quaternion when $J=\vec u$; and the three reasons the Schrödinger article gave for rejecting $J$ in the state-vector equation apply here as well.</p>
+<p>The phase could be written with any root of $-1$ in place of $i$. The alternatives among the real roots are the non-central ones: the unit pure real quaternions $\vec u$, of which the quaternion units $\vec e_{\imath}$ are the coordinate cases. Writing the phase with such a root $J$ gives, per path, the element $\exp(\frac{2\pi J\,S}{h})$, a unit real quaternion when $J=\vec u$; and the three reasons the Schrödinger article gave for rejecting $J$ in the state-vector equation apply here as well.</p>
 <p><strong>The generator need not be anti-Hermitian.</strong> Taking $J\tilde H_\Psi$ in place of $i\tilde H_\Psi$ changes the generator of the flow from $-\frac{2\pi i\,H}{h}$ (anti-Hermitian, hence norm-preserving) to $-\frac{2\pi J\,\tilde{H}_{\Psi}}{h}$, which is anti-Hermitian only if $J$ commutes with $\tilde H_\Psi$. With $J=\vec e_z$ and $\tilde H_\Psi=i\vec e_x$ one has, using $\vec e_z \vec e_x=\vec e_y$,
 $$J\tilde H_\Psi=\vec e_z(i\vec e_x)=i\,\vec e_y,$$
 which is Hermitian, not anti-Hermitian, since $(i\vec e_y)^{*}=i\vec e_y$. The flow $\exp(-\frac{2\pi r'_{t}\,J\,\tilde{H}_{\Psi}}{h})$ is then not $*$-unitary; at $r'_t=\frac{\pi\,h}{4\pi}$ its exponent is $-\tfrac{i\pi}{2}\vec e_y$ and
 $$\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}=\exp(-i\pi \vec e_y)=\cosh(\pi)\,e_t-i\sinh(\pi)\,\vec e_y\neq e_t,$$
 so the norm is not preserved. A path integral built on this phase would not reproduce a $*$-unitary evolution.</p>
-<p><strong>The phase is not a global phase.</strong> Even where a fixed non-central root gives a $*$-unitary one-parameter group — as $J=\vec e_z$ does — the phase it produces is not shared by the two spin components. Under the isomorphism $\vec e_\mu\mapsto-i\sigma_\mu$ of the companion articles, the phase $\exp(\vec e_z\theta_{\mathrm{rat}})$ of the rotation by $\theta_{\mathrm{rat}}$ about that axis, a real angle, maps to
+<p><strong>The phase is not a global phase.</strong> Even where a fixed non-central root gives a $*$-unitary one-parameter group — as $J=\vec e_z$ does — the phase it produces is not shared by the two spin components. Under the isomorphism $\vec e_{\imath}\mapsto-i\sigma_{\imath}$ of the companion articles, the phase $\exp(\vec e_z\theta_{\mathrm{rat}})$ of the rotation by $\theta_{\mathrm{rat}}$ about that axis, a real angle, maps to
 $$\exp(\vec e_z\theta_{\mathrm{rat}})\;\longmapsto\;\cos\theta_{\mathrm{rat}}\,I_2-i\sin\theta_{\mathrm{rat}}\,\sigma_3=\operatorname{diag}\!\big(\exp(-i\theta_{\mathrm{rat}}),\,\exp(+i\theta_{\mathrm{rat}})\big),$$
 so it multiplies the two components by opposite phases. It is a <strong>relative</strong> phase, that is, a spin rotation, not the single global phase a path is supposed to contribute. A genuinely global phase must be central.</p>
 <p><strong>The choice is extra input.</strong> The central imaginary is supplied by the algebra: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains $\mathbb{C}$ by construction, and within the centre the roots of $-1$ are exactly $\pm i$. A real non-central root is a point of the Bloch sphere, and using one fixes a preferred spin axis that the algebra does not supply. The same observation is made by Adler's quaternionic quantum physics, where a complex structure must be chosen as additional input.</p>
@@ -328,7 +328,7 @@ one factor of the square root of the metric determinant per spatial slice. This 
 </tr>
 <tr>
 <td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
-<td>Quaternion basis, $\vec e_\mu^2=-e_t$</td>
+<td>Quaternion basis, $\vec e_{\imath}^2=-e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -436,7 +436,7 @@ one factor of the square root of the metric determinant per spatial slice. This 
 </tr>
 <tr>
 <td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$</td>
-<td>the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$</td>
+<td>the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$</td>
 </tr>
 </tbody>
 </table></div>

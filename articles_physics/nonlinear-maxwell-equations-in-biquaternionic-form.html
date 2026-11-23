@@ -79,7 +79,7 @@
 <h2 id="the-algebra-and-the-field">The Algebra and the Field</h2>
 <h3 id="the-basis-and-the-corpus-dictionary">The Basis, and the Corpus Dictionary</h3>
 <p>The paper uses the scalar–vector form. A biquaternion is a pair</p>
-<p><strong>Frame.</strong> Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial R_\mu$.</p>
+<p><strong>Frame.</strong> Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial R_{\imath}$.</p>
 <p>$$
 \mathcal{B} = (s, \vec q), \qquad s \in \mathbb{C}, \quad \vec q \in \mathbb{C}^3,
 $$</p>
@@ -93,12 +93,12 @@ $$</p>
 <p>$$
 \vec e_x^2 = \vec e_y^2 = \vec e_z^2 = +e_t, \qquad \vec e_x \vec e_y = -\vec e_y \vec e_x = i\vec e_z,
 $$</p>
-<p>so that in general $\vec e_\mu \vec e_\nu = \delta_{\mu\nu}e_t + i\varepsilon_{\mu\nu\lambda}\vec e_\lambda$. <strong>This is not the corpus's basis.</strong> The corpus's quaternion units satisfy $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \varepsilon_{\mu\nu\lambda}\vec e_\lambda$. The two are related by</p>
+<p>so that in general $\vec e_{\imath} \vec e_{\jmath} = \delta_{\imath\jmath}e_t + i\varepsilon_{\imath\jmath\lambda}\vec e_\lambda$. <strong>This is not the corpus's basis.</strong> The corpus's quaternion units satisfy $\vec e_{\imath}^2 = -e_t$ and $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \varepsilon_{\imath\jmath\lambda}\vec e_\lambda$. The two are related by</p>
 <p>$$
-\vec e_\mu^{\text{source}} = i\,\vec e_\mu^{\text{corpus}},
+\vec e_{\imath}^{\text{source}} = i\,\vec e_{\imath}^{\text{corpus}},
 $$</p>
 <p>which is the replacement that turns Hamilton's rule into the paper's: on vectors, the paper's product is the Pauli product $\vec q_x\cdot\vec q_y + i\,\vec q_x\times\vec q_y$, with <strong>both</strong> the dot and the cross term of opposite sign to the corpus's Hamilton product. The same convention and the same caution are recorded in <em>The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</em>, and the reader is referred there for the worked comparison. Two consequences matter here.</p>
-<p><strong>The dictionary.</strong> An element the paper writes as $(s,\vec q)$ is the corpus's element $(s, i\vec q)$. So the paper's vector coefficients $E_\mu$ enter the corpus's vector slots as $iE_\mu$. The paper's $\vec e_x, \vec e_y, \vec e_z$ are the corpus's $i\vec e_x, i\vec e_y, i\vec e_z$ — that is, the basis $e_t, x, y, z$ with $x = i\vec e_x$ and so on, whose vector units square to $+e_t$, which is the basis of <em>The Element and Operator Representations</em>.</p>
+<p><strong>The dictionary.</strong> An element the paper writes as $(s,\vec q)$ is the corpus's element $(s, i\vec q)$. So the paper's vector coefficients $E_{\imath}$ enter the corpus's vector slots as $iE_{\imath}$. The paper's $\vec e_x, \vec e_y, \vec e_z$ are the corpus's $i\vec e_x, i\vec e_y, i\vec e_z$ — that is, the basis $e_t, x, y, z$ with $x = i\vec e_x$ and so on, whose vector units square to $+e_t$, which is the basis of <em>The Element and Operator Representations</em>.</p>
 <p><strong>The norm.</strong> The paper's square modulus, $\mathcal{B}\bar{\mathcal{B}} = s^2 - \vec q^2$, is <strong>indefinite</strong> in this basis: the "$*$-unitary" biquaternions, $\mathcal{B}\bar{\mathcal{B}} = 1$, are those with $s^2 - \lvert\vec q\rvert^2 = 1$, not those on a sphere. In the corpus's Hamilton basis the same expression would read $s^2 + \lvert\vec q\rvert^2$, because the vector units square to $-e_t$ there; the sign is the dictionary's, and the caution is repeated here because the paper's Lorentz group is built on the indefinite form.</p>
 <p>The algebra is $\mathbb{C}\otimes\mathbb{H}$, isomorphic to the $2\times2$ complex matrices and therefore carrying zero divisors; the corpus's <em>N-Regularity and N-Degeneracy in the Biquaternion Algebra</em>, §<em>The Zero Divisors</em> and <em>The Null Cone</em> treat them, and the null field $F^2 = 0$ of the twisting section is one of them.</p>
 <h3 id="the-field-and-the-lorentz-action">The Field, and the Lorentz Action</h3>
@@ -142,7 +142,7 @@ $$</p>
 \tag{3.11, 3.12}
 $$</p>
 <p>which the paper expands into a two-line vector form, its (3.13), and then into the four-equation form of its (3.14). Here $D = (\partial/\partial r'_t, \vec\nabla_\Phi)$ is the gradient biquaternion and $DF$ is its product on the left with $F$, its (3.8) and (3.9) giving the left and right actions. The paper states in the same place that (3.11), (3.12) and (3.13) are each equivalent to (3.14), which is the component form; the later sections cite the same equation as (3.11), (3.13) and (3.14) interchangeably, and the numbers are reproduced here as the paper prints them rather than regularised.</p>
-<p>This is the whole content of the derivation: one conservation law, one quadratic form, one gradient. The corpus's own <em>Exercise: The Electromagnetic Energy–Momentum Tensor</em> obtains the four-divergence balance $\sum_\mu\varepsilon_\mu\,\partial T_{\mu\nu}/\partial R_\mu = -f_\nu$ from the field-strength bilinear; the paper's route is the same balance written as a biquaternion and set to zero, and the two sections are companion interpretations of the same law.</p>
+<p>This is the whole content of the derivation: one conservation law, one quadratic form, one gradient. The corpus's own <em>Exercise: The Electromagnetic Energy–Momentum Tensor</em> obtains the four-divergence balance $\sum_{\imath}\varepsilon_{\imath}\,\partial T_{\imath\jmath}/\partial R_{\imath} = -f_{\jmath}$ from the field-strength bilinear; the paper's route is the same balance written as a biquaternion and set to zero, and the two sections are companion interpretations of the same law.</p>
 <h3 id="the-four-equations-in-three-forms">The Four Equations, in Three Forms</h3>
 <p>Every version of the system that the paper writes down was recomputed against the identity $\mathrm{Re}\{F^{*}DF\} = 0$ on the same $100$ random field configurations. All agree to the floating-point floor:</p>
 <div class="table-scroll"><table>
@@ -347,8 +347,8 @@ $$</p>
 <td>Sound; the correction is forced by associativity and matches the sibling article's equation (1)</td>
 </tr>
 <tr>
-<td>Basis (14.27), $\vec e_\mu^2 = +e_t$; dictionary to the corpus's basis</td>
-<td>Exact; $\vec e_\mu^{\text{source}} = i\vec e_\mu^{\text{corpus}}$, so a source triple $\vec q$ is the corpus triple $i\vec q$</td>
+<td>Basis (14.27), $\vec e_{\imath}^2 = +e_t$; dictionary to the corpus's basis</td>
+<td>Exact; $\vec e_{\imath}^{\text{source}} = i\vec e_{\imath}^{\text{corpus}}$, so a source triple $\vec q$ is the corpus triple $i\vec q$</td>
 </tr>
 <tr>
 <td>$Z_2 = U^{*}ZU$ preserves ${r'_{t}}^2 - \lvert\vec r\rvert^2$</td>
@@ -455,10 +455,10 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>The paper's units, with $\vec e_\mu^2 = +e_t$ and $\vec e_\mu \vec e_\nu = \delta_{\mu\nu}e_t + i\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; not the corpus's basis</td>
+<td>The paper's units, with $\vec e_{\imath}^2 = +e_t$ and $\vec e_{\imath} \vec e_{\jmath} = \delta_{\imath\jmath}e_t + i\varepsilon_{\imath\jmath\lambda}\vec e_\lambda$; not the corpus's basis</td>
 </tr>
 <tr>
-<td>$\vec e_\mu^{\text{source}} = i\vec e_\mu^{\text{corpus}}$</td>
+<td>$\vec e_{\imath}^{\text{source}} = i\vec e_{\imath}^{\text{corpus}}$</td>
 <td>Dictionary to the corpus's Hamilton basis; a source triple $\vec q$ is the corpus triple $i\vec q$</td>
 </tr>
 <tr>

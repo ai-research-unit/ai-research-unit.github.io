@@ -168,7 +168,7 @@ $$</p>
 <p>The regimes. On the four sectors the operators have rank $4$ with a doubled spectrum, rank $4$ with a Jordan block, rank $2$, and rank $2$ with a square-zero image; the two-sided operator replaces $\lambda_i$ by $\lambda_i\bar\lambda_j$ and drops to rank $1$ on the cone.</p>
 <h2 id="the-ambient-space">The Ambient Space</h2>
 <p>The operator space is the algebra's endomorphism algebra. A complex-linear map $F:\mathbb{B}\to\mathbb{B}$ is determined by its values on the four units, so it is a $4\times4$ complex matrix, and the space of such maps has complex dimension sixteen. Written as an algebra under composition it is the full matrix algebra $M_4(\mathbb{C})$.</p>
-<p>The sixteen products are a basis. For a basis $e_\mu$ of the algebra, the sixteen operators $T_{e_\mu,e_\nu}$ are linearly independent, hence a basis of the sixteen-dimensional operator space. The proof is cleanest in a basis of matrix units $E_{jk}$, where</p>
+<p>The sixteen products are a basis. For a basis $e_{\imath}$ of the algebra, the sixteen operators $T_{e_{\imath},e_{\jmath}}$ are linearly independent, hence a basis of the sixteen-dimensional operator space. The proof is cleanest in a basis of matrix units $E_{jk}$, where</p>
 <p>$$
 T_{E_{jk},E_{l\,n_{\mathrm{idx}}}}(E_{rs})=\delta_{kr}\delta_{ls}E_{j\,n_{\mathrm{idx}}},
 $$</p>
@@ -249,7 +249,7 @@ T_{\tilde Q,\tilde P}T_{\tilde R,\tilde S}=T_{\tilde Q\tilde R,\tilde S\tilde P}
 $$</p>
 <p>The set is closed under composition and is closed under no other operation. The composition law is the two laws of the one-sided families read at once: the first parameter multiplies as a representation, the second as an anti-representation.</p>
 <p>Not a subspace. The sum of two two-sided operators is two-sided only in degenerate cases. The sum $T_{\tilde Q,\tilde P}+T_{\tilde R,\tilde S}$ collapses to a single product exactly when the coefficient matrix of the sum has rank one, and for a generic sum it has rank two. So the two-sided set is a cone: closed under multiplication by a scalar and under composition, and not under addition.</p>
-<p><strong>The generation theorem.</strong> The sixteen products $T_{e_\mu,e_\nu}$ are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. Hence every endomorphism of the algebra is a finite sum of two-sided operators, and the two-sided set generates the operator space as a linear space. The two statements belong together and they are not in tension: the cone is not a subspace, and it spans the space.</p>
+<p><strong>The generation theorem.</strong> The sixteen products $T_{e_{\imath},e_{\jmath}}$ are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. Hence every endomorphism of the algebra is a finite sum of two-sided operators, and the two-sided set generates the operator space as a linear space. The two statements belong together and they are not in tension: the cone is not a subspace, and it spans the space.</p>
 <p>The rank. A two-sided operator multiplies the image of one factor by the other, so its rank is bounded by the two ranks. The exact formula in the two-dimensional model is a product,</p>
 <p>$$
 \operatorname{rank}T_{\tilde Q,\tilde P}=\operatorname{rank}(A)\operatorname{rank}(B),
@@ -271,9 +271,9 @@ $$</p>
 <p>so $T_{\tilde Q,\tilde P}^{\approx}=T_{\tilde P,\tilde Q}$. The one-sided families are exchanged by the same operation: $L_{\tilde Q}^{\approx}=R_{\tilde Q}$.</p>
 <h2 id="the-length">The Length</h2>
 <p>Why a number is needed. The rank of an operator measures the size of its image. It does not measure how many products are needed. Two operators of the same rank can need one term and four.</p>
-<p>The coefficient matrix. Relative to the basis $T_{e_\mu,e_\nu}$, an endomorphism $F$ has a coefficient matrix $c(F)$, a $4\times4$ matrix of complex numbers:</p>
+<p>The coefficient matrix. Relative to the basis $T_{e_{\imath},e_{\jmath}}$, an endomorphism $F$ has a coefficient matrix $c(F)$, a $4\times4$ matrix of complex numbers:</p>
 <p>$$
-F=\sum_{\mu,\nu}c(F)_{\mu\nu}\,T_{e_\mu,e_\nu}.
+F=\sum_{\imath,\jmath}c(F)_{\imath\jmath}\,T_{e_{\imath},e_{\jmath}}.
 $$</p>
 <p>The length theorem. The least number of two-sided operators whose sum is $F$ is the rank of $c(F)$:</p>
 <p>$$
@@ -717,7 +717,7 @@ $$</p>
 <tr>
 <td>the coefficient matrix</td>
 <td>$c(F)$</td>
-<td>the coordinates of $F$ in the basis $T_{e_\mu,e_\nu}$</td>
+<td>the coordinates of $F$ in the basis $T_{e_{\imath},e_{\jmath}}$</td>
 </tr>
 <tr>
 <td>the length</td>
