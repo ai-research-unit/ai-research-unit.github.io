@@ -60,10 +60,12 @@ We collect the mode operators that the parents supply, because the rest of the a
 **Fermionic (Dirac).** The field expands as
 
 $$
-\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}\sum_{r=1}^{2}
+\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}A_{\vec p}\sum_{r=1}^{2}
 \Big[a_{\mathrm{fop},r}(\vec p)w^{(r)}(\vec p)\exp(-i\theta_{\mathrm{pwp}})
 +b_{\mathrm{fop},r}^{\dagger}(\vec p)v^{(r)}(\vec p)\exp(+i\theta_{\mathrm{pwp}})\Big],
 $$
+
+where $A_{\vec p}^{2}=\frac{h c}{4\pi E_{\vec p}}$, a length: the mode amplitude is named through its square, because a root of the mode energy is a half power of the base units.
 
 Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 

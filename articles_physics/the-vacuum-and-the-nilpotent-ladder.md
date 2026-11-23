@@ -477,7 +477,7 @@ $$
 \arg\digamma_{\mathrm{scl}}\ \text{is the duality angle}.
 $$
 
-The modulus is the amplitude because the Hermitian norm of the field is proportional to it. For a null field $\lVert\tilde F\rVert^{2}=\lvert\vec E\rvert^{2}+c^{2}\lvert\vec B\rvert^{2}=2\lvert\vec E\rvert^{2}$, so the modulus and the amplitude differ by the fixed factor $\sqrt{2\epsilon}$.
+The modulus is the amplitude because the Hermitian norm of the field is proportional to it. For a null field $\lVert\tilde F\rVert^{2}=\lvert\vec E\rvert^{2}+c^{2}\lvert\vec B\rvert^{2}=2\lvert\vec E\rvert^{2}$, so the modulus and the amplitude differ by the fixed factor $2\epsilon$, written as it stands and not as a root: $\lvert\digamma_{\mathrm{scl}}\rvert^{2}=\lVert\tilde F\rVert^{2}/(2\epsilon)$, because the root of the permittivity is a half power of the base units.
 
 The phase turns $\vec E$ into $\vec B$ and back.
 

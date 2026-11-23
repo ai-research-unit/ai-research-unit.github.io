@@ -19,10 +19,13 @@ The term has a classical name and the map has a classical range. The stress that
 The forward map writes the complex amplitude as a modulus and a phase. With
 
 $$
-\psi=\sqrt{\rho_{\mathrm{num}}}\,e^{i\Phi/\sigma_{\mathrm{dsp}}},
+\psi=n_{\mathrm{num}}\,e^{i\Phi/\sigma_{\mathrm{dsp}}},
 \qquad
 \vec v=\vec\nabla_\Phi\Phi ,
 $$
+
+**The density amplitude.** The modulus of the field is the amplitude $n_{\mathrm{num}}$, defined by its square, $n_{\mathrm{num}}^{2}=\rho_{\mathrm{num}}$, and $n_0$ likewise with $n_0^{2}=\rho_0$: a root of a density is a half power of the base units and is never printed.
+
 
 where $\Phi$ is the velocity potential and $\sigma_{\mathrm{dsp}}$ the dispersion constant of the wave equation, the linear equation
 
@@ -41,7 +44,7 @@ and the real part is the Hamilton–Jacobi equation with a second-gradient term,
 $$
 \partial_{t'}\Phi+\frac{\lvert\nabla\Phi\rvert^{2}}{2}+V_{\mathrm{ext}}+Q_{\mathrm{kor}}=0,
 \qquad
-Q_{\mathrm{kor}}=-\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\frac{\Delta_\Phi\sqrt{\rho_{\mathrm{num}}}}{\sqrt{\rho_{\mathrm{num}}}} .
+Q_{\mathrm{kor}}=-\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\frac{\Delta_\Phin_{\mathrm{num}}}{n_{\mathrm{num}}} .
 $$
 
 Taking the gradient of the second gives the acceleration law of a pressureless fluid, with $-\vec\nabla_\Phi Q_{\mathrm{kor}}$ as its only acceleration.
@@ -60,7 +63,7 @@ The phase is not an action, and the velocity potential is the right variable. A 
 
 ## The Reverse Map
 
-The inverse is written on the same two variables, and its output is fixed by one derivative. Given a barotropic irrotational inviscid flow, define $\psi=\sqrt{\rho_{\mathrm{num}}}\exp(i\Phi/\sigma_{\mathrm{dsp}})$ with $\vec v=\vec\nabla_\Phi\Phi$. The continuity equation is already the imaginary part. The Euler equation becomes the real part if and only if the pressure force is the gradient of a function of the density, and the function is fixed by
+The inverse is written on the same two variables, and its output is fixed by one derivative. Given a barotropic irrotational inviscid flow, define $\psi=n_{\mathrm{num}}\exp(i\Phi/\sigma_{\mathrm{dsp}})$ with $\vec v=\vec\nabla_\Phi\Phi$. The continuity equation is already the imaginary part. The Euler equation becomes the real part if and only if the pressure force is the gradient of a function of the density, and the function is fixed by
 
 $$
 \frac{\mathrm{d}V}{\mathrm{d}\rho_{\mathrm{num}}}=\frac{1}{\rho_{\mathrm{mass}}}\frac{\mathrm{d}p_{\mathrm{th}}}{\mathrm{d}\rho_{\mathrm{num}}},
@@ -80,7 +83,7 @@ The relation $\mathrm{d}p_{\mathrm{th}}=\rho_{\mathrm{mass}}\mathrm{d}V$ is the 
 
 So the pressure law and the nonlinear term are the same function, written twice. That is the article's content in one sentence, and it is the reason the output of the map cannot be linear while the fluid has a pressure: a non-constant $V$ is a non-constant coefficient multiplying $\psi$, and a coefficient that depends on $\lvert\psi\rvert^{2}$ is a nonlinearity.
 
-The formula and the equivalence are two different objects, and the distinction carries the article. The formula $\psi=\sqrt{\rho_{\mathrm{num}}}\,e^{i\Phi/\sigma_{\mathrm{dsp}}}$ is defined on every barotropic irrotational inviscid flow: it is three lines and no hypothesis beyond the existence of the two variables. What is *not* available on every such flow is the equivalence — the statement that $\psi$ obeys a local wave equation. That holds on the image of the forward map and nowhere else, and the next section characterises the image.
+The formula and the equivalence are two different objects, and the distinction carries the article. The formula $\psi=n_{\mathrm{num}}\,e^{i\Phi/\sigma_{\mathrm{dsp}}}$ is defined on every barotropic irrotational inviscid flow: it is three lines and no hypothesis beyond the existence of the two variables. What is *not* available on every such flow is the equivalence — the statement that $\psi$ obeys a local wave equation. That holds on the image of the forward map and nowhere else, and the next section characterises the image.
 
 ## What Class the Map Is Defined On
 
@@ -118,7 +121,7 @@ It passes the velocity test, the inviscid test and the force test. Its curl vani
 
 So the flow is irrotational, inviscid, and its pressure force is a gradient, and it is still not barotropic in the constitutive sense. The density does not vary and the pressure does, so no law $p_{\mathrm{th}}(\rho_{\mathrm{num}})$ reproduces that field, and the map's $V(\rho_{\mathrm{num}})$ does not exist for it.
 
-The inversion can nevertheless be performed, and its output is one residual. With $\alpha_{\mathrm{src}}=Q_{\mathrm{src}}/(4\pi\sigma_{\mathrm{dsp}})$ the amplitude is $\psi=\sqrt{\rho_0}\,e^{-i\alpha_{\mathrm{src}}/r}$. Since $-\alpha_{\mathrm{src}}/r$ is harmonic and $\lvert\nabla(-\alpha_{\mathrm{src}}/r)\rvert^{2}=\alpha_{\mathrm{src}}^{2}/r^{4}$,
+The inversion can nevertheless be performed, and its output is one residual. With $\alpha_{\mathrm{src}}=Q_{\mathrm{src}}/(4\pi\sigma_{\mathrm{dsp}})$ the amplitude is $\psi=n_0\,e^{-i\alpha_{\mathrm{src}}/r}$. Since $-\alpha_{\mathrm{src}}/r$ is harmonic and $\lvert\nabla(-\alpha_{\mathrm{src}}/r)\rvert^{2}=\alpha_{\mathrm{src}}^{2}/r^{4}$,
 
 $$
 \Delta_\Phi\psi=-\frac{\alpha_{\mathrm{src}}^{2}}{r^{4}}\,\psi ,
@@ -230,7 +233,7 @@ So the article's claim is a statement about the first row, and the second row is
 
 ## What Is Established and What Is Interpretation
 
-Established. That the flow $\vec v=Q_{\mathrm{src}}\vec e_r/(4\pi r^{2})$ is irrotational, inviscid and gradient-forced, and that its inversion gives $\Delta_\Phi\psi=-\alpha_{\mathrm{src}}^{2}\psi/r^{4}$, by differentiation, so that the three conditions are insufficient. That the formula of the map is defined on every barotropic irrotational inviscid flow while the equivalence holds only on the image. That $V=h$ is the specific enthalpy and is fixed up to a constant. That the forward map splits the linear equation into the continuity equation and a Hamilton–Jacobi equation with the term $Q_{\mathrm{kor}}=-\sigma_{\mathrm{dsp}}^{2}\Delta_\Phi\sqrt{\rho_{\mathrm{num}}}/(2\sqrt{\rho_{\mathrm{num}}})$, by expansion. That the reverse map's nonlinear term is fixed by $\mathrm{d}V/\mathrm{d}\rho_{\mathrm{num}}=\mathrm{d}p_{\mathrm{th}}/(\rho_{\mathrm{mass}}\mathrm{d}\rho_{\mathrm{num}})$, and that the polytropic families follow by integration. That $V$ is constant exactly when $p_{\mathrm{th}}$ is, so the linear case is the pressureless one. That no combination of the fluid's data has the dimension of the dispersion constant.
+Established. That the flow $\vec v=Q_{\mathrm{src}}\vec e_r/(4\pi r^{2})$ is irrotational, inviscid and gradient-forced, and that its inversion gives $\Delta_\Phi\psi=-\alpha_{\mathrm{src}}^{2}\psi/r^{4}$, by differentiation, so that the three conditions are insufficient. That the formula of the map is defined on every barotropic irrotational inviscid flow while the equivalence holds only on the image. That $V=h$ is the specific enthalpy and is fixed up to a constant. That the forward map splits the linear equation into the continuity equation and a Hamilton–Jacobi equation with the term $Q_{\mathrm{kor}}=-\sigma_{\mathrm{dsp}}^{2}\Delta_\Phin_{\mathrm{num}}/(2n_{\mathrm{num}})$, by expansion. That the reverse map's nonlinear term is fixed by $\mathrm{d}V/\mathrm{d}\rho_{\mathrm{num}}=\mathrm{d}p_{\mathrm{th}}/(\rho_{\mathrm{mass}}\mathrm{d}\rho_{\mathrm{num}})$, and that the polytropic families follow by integration. That $V$ is constant exactly when $p_{\mathrm{th}}$ is, so the linear case is the pressureless one. That no combination of the fluid's data has the dimension of the dispersion constant.
 
 Interpretation. That the equivalence on the image rather than the formula on all fluids is the right reading of the one-way correspondence. That the second-gradient term is the term the wave equation contributes and the fluid does not is exact as an identity; that this identity *explains* the direction of the correspondence is the programme's step. That the free equation is the pressureless member is a theorem on the map's family, and calling its fluid "the pressureless second-gradient fluid" is a reading of that theorem.
 
@@ -238,7 +241,7 @@ Not claimed. It is not claimed that no other map exists between a fluid and a wa
 
 ## Summary
 
-The forward map writes $\psi=\sqrt{\rho_{\mathrm{num}}}e^{i\Phi/\sigma_{\mathrm{dsp}}}$ and splits a linear wave equation into the continuity equation and a Hamilton–Jacobi equation carrying the second-gradient term $Q_{\mathrm{kor}}$. It is exact away from the surfaces on which the density vanishes.
+The forward map writes $\psi=n_{\mathrm{num}}e^{i\Phi/\sigma_{\mathrm{dsp}}}$ and splits a linear wave equation into the continuity equation and a Hamilton–Jacobi equation carrying the second-gradient term $Q_{\mathrm{kor}}$. It is exact away from the surfaces on which the density vanishes.
 
 The reverse map builds $\psi$ from a barotropic irrotational inviscid flow, and its nonlinear term is fixed by $\mathrm{d}p_{\mathrm{th}}=\rho_{\mathrm{mass}}\mathrm{d}V$. The pressure law and the nonlinearity are one function.
 
@@ -260,11 +263,11 @@ The term the image carries is a Korteweg stress and not a pressure, which is why
 
 | Symbol | Meaning |
 | --- | --- |
-| $\psi=\sqrt{\rho_{\mathrm{num}}}e^{i\Phi/\sigma_{\mathrm{dsp}}}$ | Complex amplitude of the map |
+| $\psi=n_{\mathrm{num}}e^{i\Phi/\sigma_{\mathrm{dsp}}}$ | Complex amplitude of the map |
 | $\rho_{\mathrm{num}}=\lvert\psi\rvert^{2}$ | Number density |
 | $\Phi$ | Velocity potential; $\vec v=\vec\nabla_\Phi\Phi$ |
 | $\sigma_{\mathrm{dsp}}$ | Dispersion constant of the wave equation; a length squared over a time |
-| $Q_{\mathrm{kor}}=-\sigma_{\mathrm{dsp}}^{2}\Delta_\Phi\sqrt{\rho_{\mathrm{num}}}/(2\sqrt{\rho_{\mathrm{num}}})$ | Second-gradient term of the image |
+| $Q_{\mathrm{kor}}=-\sigma_{\mathrm{dsp}}^{2}\Delta_\Phin_{\mathrm{num}}/(2n_{\mathrm{num}})$ | Second-gradient term of the image |
 | $V(\rho_{\mathrm{num}})$ | Nonlinear term of the reverse map |
 | $\mathrm{d}p_{\mathrm{th}}=\rho_{\mathrm{mass}}\mathrm{d}V$ | The map's Gibbs–Duhem relation |
 | $V=h$ | Specific enthalpy |

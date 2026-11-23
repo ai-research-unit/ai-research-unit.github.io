@@ -54,8 +54,10 @@ The last point is the decisive one: the hole theory is a correct but redundant b
 The reinterpretation of the negative branch is usually credited to Furry and Oppenheimer (1934), who showed that positron processes follow from the second-quantized electron field without a sea, and to Stückelberg (1941) and Feynman (1948), who made the picture systematic: a negative-frequency solution propagating forward in time is the same as a positive-frequency antiparticle propagating backward in time. The field operator is expanded as
 
 $$
-\boxed{\;\tilde{Ξ}_{\mathrm{fop}}(x) = \sum_r\int\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}\left[a_{\mathrm{fop},r}(\vec p)\,w^{(r)}(\vec p)\exp(-i\theta_{\mathrm{pwp}}) + b_{\mathrm{fop},r}^{\dagger}(\vec p)\,v^{(r)}(\vec p)\exp(+i\theta_{\mathrm{pwp}})\right]\;},
+\boxed{\;\tilde{Ξ}_{\mathrm{fop}}(x) = \sum_r\int\frac{d^3p}{h^{3}}A_{\vec p}\left[a_{\mathrm{fop},r}(\vec p)\,w^{(r)}(\vec p)\exp(-i\theta_{\mathrm{pwp}}) + b_{\mathrm{fop},r}^{\dagger}(\vec p)\,v^{(r)}(\vec p)\exp(+i\theta_{\mathrm{pwp}})\right]\;},
 $$
+
+where $A_{\vec p}^{2}=\frac{h c}{4\pi E_{\vec p}}$, a length: the mode amplitude is named through its square, because a root of the mode energy is a half power of the base units.
 
 Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 

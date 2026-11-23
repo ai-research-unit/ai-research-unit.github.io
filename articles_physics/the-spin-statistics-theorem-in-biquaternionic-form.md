@@ -122,10 +122,12 @@ The operator-level content of the theorem is a computation with the parents' fre
 The field is the element-valued map $\tilde{Ξ}_{\mathrm{fop}}:\mathbb{R}^{1,3}\to\mathbb{B}$ of *Canonical Quantization of the Biquaternion Dirac Field*, with the mode expansion
 
 $$
-\tilde{Ξ}_{\mathrm{fop}}(X,r'_t)=\int\!\frac{d^3p}{h^{3}}\,\sqrt{\frac{h c}{4\pi E_{\vec p}}}
+\tilde{Ξ}_{\mathrm{fop}}(X,r'_t)=\int\!\frac{d^3p}{h^{3}}\,A_{\vec p}
 \sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{+}^{(r)}(\vec p)\,\exp(-i\theta_{\mathrm{pwp}})
 +b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{-}^{(r)}(\vec p)\,\exp(+i\theta_{\mathrm{pwp}})\Big],
 $$
+
+where $A_{\vec p}^{2}=\frac{h c}{4\pi E_{\vec p}}$, a length: the mode amplitude is named through its square, because a root of the mode energy is a half power of the base units.
 
 Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 

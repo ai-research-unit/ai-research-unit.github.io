@@ -777,12 +777,12 @@ Using $\zeta(0)=-\tfrac12$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}=-\tfrac12\l
 
 $$
 \left.\frac{d\zeta_{\mathcal J}}{ds}\right|_{s=0}=\left(-\ln m+2\ln\frac{T}{\pi}\right)\zeta(0)+2\left.\frac{d\zeta}{ds}\right|_{s=0}
-=\ln\frac{\sqrt m}{2T},
+=\tfrac12\ln\frac{m}{m_0}-\ln\frac{2T}{T_0},
 \qquad
-\det\mathcal{J}=\frac{2T}{\sqrt m}\;\propto\;T ,
+\frac{\det\mathcal{J}(T)}{\det\mathcal{J}(T_0)}=\frac{T}{T_0}\;\propto\;T ,
 $$
 
-per real component. The determinant is therefore **linear** in $T$, and the fluctuation factor — its inverse square root — falls as $T^{-1/2}$ per real component. That is the standard free-particle van Vleck factor: the free propagator's prefactor in one dimension is $\sqrt{m/(2\,\pi\,i\,\frac{h}{2\pi}\,T)}\propto  T^{-1/2}$. The free path has no conjugate points, and there is no Maslov phase. The computation is the standard one; the biquaternion formulation contributes the observation that the second variation is the Hessian of the biquaternion norm, so the classical stability problem and the biquaternion-norm geometry are the same problem.
+per real component, with $m_0=1\ \mathrm{kg}$ and $T_0$ the reference length: the determinant is quoted against that reference because the regularised determinant carries a dimension and only the ratio is a number. The determinant is therefore **linear** in $T$, and the fluctuation factor — its inverse square root — falls as the inverse square root of $T$ per real component. That is the standard free-particle van Vleck factor: the free propagator's prefactor in one dimension is $\sqrt{m\,c\big/\big(2\,\pi\,i\,\frac{h}{2\pi}\,T\big)}$, a reciprocal length that falls as the inverse square root of $T$ (the $c$ belongs there because $T$ is a length and not a time; without it the radicand is not a squared reciprocal length). The free path has no conjugate points, and there is no Maslov phase. The computation is the standard one; the biquaternion formulation contributes the observation that the second variation is the Hessian of the biquaternion norm, so the classical stability problem and the biquaternion-norm geometry are the same problem.
 
 ### Rotor Paths and the Geometric Phase of the Sum
 

@@ -249,18 +249,22 @@ The last pair is an operator identity and not a statement about solutions: the f
 Quantization consists in replacing the constant coefficients of the classical expansion by operators:
 
 $$
-\boxed{\;\tilde{Ξ}_{\mathrm{fop}}(X,r'_t)=\int\!\frac{d^3p}{h^{3}}\,\sqrt{\frac{h c}{4\pi E_{\vec p}}}
+\boxed{\;\tilde{Ξ}_{\mathrm{fop}}(X,r'_t)=\int\!\frac{d^3p}{h^{3}}\,A_{\vec p}
 \sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{+}^{(r)}(\vec p)\,\exp(-i\theta_{\mathrm{pwp}})
 +b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{-}^{(r)}(\vec p)\,\exp(+i\theta_{\mathrm{pwp}})\Big]\;}.
 $$
 
+where $A_{\vec p}^{2}=\frac{h c}{4\pi E_{\vec p}}$, a length: the mode amplitude is named through its square, because a root of the mode energy is a half power of the base units.
+
 The field and its adjoint,
 
 $$
-\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(Y,r'_t)=\int\!d^{3}\nu_{\Phi}\,\sqrt{\frac{h c}{4\pi E_{2\pi\vec\nu_\Phi}}}
+\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(Y,r'_t)=\int\!d^{3}\nu_{\Phi}\,A_{2\pi\vec\nu_\Phi}
 \sum_{s=1}^{2}\Big[a_{\mathrm{fop},s}^{\dagger}(2\pi\vec\nu_\Phi)\,\tilde{Ξ}_{+}^{(s)*}(2\pi\vec\nu_\Phi)\,\exp(+ik\cdot r_y)
 +b_{\mathrm{fop},s}(2\pi\vec\nu_\Phi)\,\tilde{Ξ}_{-}^{(s)*}(2\pi\vec\nu_\Phi)\,\exp(-ik\cdot r_y)\Big],
 $$
+
+where $A_{2\pi\vec\nu_\Phi}^{2}=\frac{h c}{4\pi E_{2\pi\vec\nu_\Phi}}$, a length: the mode amplitude is named through its square, because a root of the mode energy is a half power of the base units.
 
 with $k\cdot r_y:=E_{2\pi\vec\nu_\Phi}r'_t-2\pi\vec\nu_\Phi\cdot Y$, together define the operator-valued field. The **annihilation** operators $a_{\mathrm{fop},r}(\vec p)$ multiply the positive-frequency solutions, and the **creation** operators $b_{\mathrm{fop},r}^{\dagger}(\vec p)$ multiply the negative-frequency solutions. The attribution of a creation operator to the negative-frequency branch is the operator form of the reinterpretation of the Dirac sea: the modes of "negative frequency" are the antiparticles of positive energy.
 
@@ -526,7 +530,7 @@ with all other equal-time anticommutators vanishing; anticommutation rather than
 The field expands in the plane-wave solutions established by the parent article,
 
 $$
-\tilde{Ξ}_{\mathrm{fop}}(X,r'_t)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}\sum_r
+\tilde{Ξ}_{\mathrm{fop}}(X,r'_t)=\int\!\frac{d^3p}{h^{3}}A_{\vec p}\sum_r
 \Big[a_{\mathrm{fop},r}(\vec p)\tilde{Ξ}_{+}^{(r)}(\vec p)\exp(-i\theta_{\mathrm{pwp}})+b_{\mathrm{fop},r}^{\dagger}(\vec p)\tilde{Ξ}_{-}^{(r)}(\vec p)\exp(+i\theta_{\mathrm{pwp}})\Big],
 $$
 

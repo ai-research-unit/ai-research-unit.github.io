@@ -54,13 +54,13 @@ The corpus's own algebra gives an independent warning. The biquaternion algebra 
 Take the square root of the mass ratios, with rung 1 as the unit. Writing
 
 $$
-a_i:=\sqrt{\frac{m_i}{m_1}},
+\rho_i:=\frac{m_i}{m_1},
 $$
 
-so that $a_1=1$ and no unit appears anywhere, the charged leptons give
+the ratio has $\rho_1=1$ and carries no unit anywhere. The ladder's variable is its root, $\sqrt{\rho_i}$, and the charged leptons give
 
 $$
-a_2=14.379,\qquad a_3=58.968 .
+\sqrt{\rho_2}=14.379,\qquad \sqrt{\rho_3}=58.968 .
 $$
 
 The steps in the square root grow where the steps in mass shrank:
@@ -83,11 +83,11 @@ The consecutive mass ratios fall by $12.3$; the steps in the square root grow by
 
 No column is constant, so the ladder is not an equal-spacing tower in any of these variables. That is the honest reading, and it moves the question from the spacing to the count.
 
-**The square root has a name in the coupling sector.** The mass of a fermion is its Yukawa coupling to the vacuum value, $y_f=\sqrt2\,m_f/v$, so the square root of a mass is the square root of a coupling and nothing more. The ratios above are the ratios $a_i=\sqrt{y_i/y_1}$, dimensionless, and no wave equation enters their definition. The variable is chosen because the two steps are then in a constant ratio; that is a property of the measured spectrum and not a derivation.
+**The square root has a name in the coupling sector.** The mass of a fermion is its Yukawa coupling to the vacuum value, $y_f=\sqrt2\,m_f/v$, so the square root of a mass is the square root of a coupling times the constant $\sqrt{v/\sqrt2}$. The ratios above are the ratios $\sqrt{\rho_i}=\sqrt{y_i/y_1}$, dimensionless, and no wave equation enters their definition. The variable is chosen because the two steps are then in a constant ratio; that is a property of the measured spectrum and not a derivation.
 
 ## Koide's Relation, Stated
 
-Koide's relation, stated in 1981 for the charged leptons and not derived since, is a statement about two mass ratios and nothing else. Dividing the printed form, a sum of masses over the square of a sum of their roots, by $m_1$ leaves the masses together, since every mass appears once above and its root once below, and what remains is two numbers. Writing
+Koide's relation, stated in 1981 for the charged leptons and not derived since, is a statement about two mass ratios and nothing else. Dividing numerator and denominator by $m_1$, which is the square of $\sqrt{m_1}$, turns every mass into a ratio to $m_1$ and every root into the root of that ratio; what remains is a function of two numbers. Writing
 
 $$
 \rho_2:=\frac{m_2}{m_1},\qquad \rho_3:=\frac{m_3}{m_1},
@@ -113,13 +113,13 @@ With the PDG masses $m_e=0.510\,998\,95$ MeV, $m_\mu=105.658\,375\,5$ MeV and $m
 
 The measured $Q$ falls below $\tfrac23$ by $6.2\times10^{-6}$ in absolute value, which is $9.2$ parts per million of $\tfrac23$, on two measured ratios. Nothing in the display carries a unit: every quantity in it is a quotient of two masses, which is why the choice of mass unit or mass standard cancels.
 
-**Why it is stated here.** The variable of this article is the square root of the mass ratio, $a_i=\sqrt{\rho_i}$ with $a_1=1$, so Koide's ratio is written in the ladder's own variable:
+**Why it is stated here.** The variable of this article is the square root of the mass ratio, $\sqrt{\rho_i}$ with $\rho_1=1$, so Koide's ratio is written in the ladder's own variable:
 
 $$
-Q=\frac{1+a_2^{2}+a_3^{2}}{(1+a_2+a_3)^{2}}=\frac13\left(1+\left(\frac{\sigma_a}{\bar a}\right)^{2}\right),
+Q=\frac{1+\rho_2+\rho_3}{(1+\sqrt{\rho_2}+\sqrt{\rho_3})^{2}}=\frac13\left(1+\left(\frac{\sigma}{\mu}\right)^{2}\right),
 $$
 
-with $\bar a$ the mean of the three $a_i$ and $\sigma_a$ their standard deviation. The bracket is an identity and not a fit, so $Q=\tfrac23$ is exactly the statement $\sigma_a/\bar a=1$: the three roots are as spread as their own mean. The measured spread is $0.999\,990\,8$, not $1$ by $9\times10^{-6}$, and the same number read as an angle, $\arccos\left(1/\sqrt{3Q}\right)$, is $44.9997^{\circ}$.
+with $\mu$ the mean of the three $\sqrt{\rho_i}$ and $\sigma$ their standard deviation. The bracket is an identity and not a fit, so $Q=\tfrac23$ is exactly the statement $\sigma/\mu=1$: the three roots are as spread as their own mean. The measured spread is $0.999\,990\,8$, not $1$ by $9\times10^{-6}$, and the same number read as an angle, $\arccos\left(1/\sqrt{3Q}\right)$, is $44.9997^{\circ}$.
 
 **Why it is not evidence for the ladder.** The ladder sets an interval between neighbouring rungs and places no condition on a combination of the three masses, so Koide's relation is neither derived here nor used here. It is a measured arithmetic on three numbers, and the corpus records it as one. The numeral $\tfrac23$ also appears in the model as a trace ratio of one to three, in [Charge Quantisation from the Fourth Colour](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html), and the two are not the same statement: one is a dimension of a representation and the other a ratio of masses. That they coincide in value is recorded and not explained.
 
@@ -240,18 +240,17 @@ Every number below was recomputed from the measured masses before it was written
 | the thermal ratio at $2.97\times10^{13}$ K | $e^{-(m_\tau-m_e)c^2/k_BT}$ | $0.500$ |
 | the width ratio against the fifth power | $1.3486\times10^{6}$ against $1.3451\times10^{6}$ | agrees to 0.26 per cent |
 | Koide's ratio | $(1+206.768\,28+3477.228\,28)/(1+14.379\,44+58.968\,03)^{2}$ | $0.666\,660\,51$ against $2/3$ |
-| Koide's spread | $\sigma_a/\bar a$ from $a_i=\sqrt{\rho_i}$ | $0.999\,990\,8$ |
+| Koide's spread | $\sigma/\mu$ from $\sqrt{\rho_i}$ | $0.999\,990\,8$ |
 | Koide's angle | $\arccos(1/\sqrt{3Q})$ | $44.9997^{\circ}$ |
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\rho_i$ | the mass ratio $m_i/m_1$; $\rho_1=1$, $\rho_2=206.768\,28$, $\rho_3=3477.228\,28$ |
-| $a_i$ | the root $\sqrt{\rho_i}$; $a_1=1$, $a_2=14.379\,44$, $a_3=58.968\,03$ |
+| $\rho_i$ | the mass ratio of rung $i$ to rung 1; $\rho_1=1$, $\rho_2=206.768\,28$, $\rho_3=3477.228\,28$ |
+| $\sqrt{\rho_i}$ | the root of that ratio, the ladder's variable; $1$, $14.379\,44$, $58.968\,03$ |
 | $Q$ | Koide's ratio, $(1+\rho_2+\rho_3)/(1+\sqrt{\rho_2}+\sqrt{\rho_3})^{2}$, measured $0.666\,660\,51$ |
-| $\rho_i=m_i/m_1$ | the mass ratio of rung $i$ to rung 1; $\rho_2=206.768\,28$, $\rho_3=3477.228\,28$ |
-| $a_i=\sqrt{\rho_i}$ | the square root of that ratio, the ladder's variable; $a_1=1$, $a_2=14.379\,44$, $a_3=58.968\,03$ |
+| $\mu$, $\sigma$ | the mean and the standard deviation of the three roots $\sqrt{\rho_i}$; $\sigma/\mu=1$ is Koide |
 | the rung count | three for every tower, measured and not derived |
 | $i=1,2,3$ | the rung index |
 | rung | a level of combined excitation, a pole with a mass |

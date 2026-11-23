@@ -238,42 +238,41 @@ $$
 where the linear term vanishes because $x_{\mathrm{cl}}$ is stationary. The leading contribution to the integral is the phase $\exp(\frac{2\pi iS_{\mathrm{cl}}}{h})$ times the Gaussian integral over the fluctuations, giving the **van Vleck determinant** formula
 
 $$
-\boxed{\;G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})\;\approx\;\frac{1}{\sqrt{2\,\pi\,i\,\frac{h}{2\pi}}}\,
-\sqrt{\Big|\det\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_i\,\partial x_f}\Big|}\;
+\boxed{\;G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})\;\approx\;
+\sqrt{\frac{\Big|\det\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_i\,\partial x_f}\Big|}{2\,\pi\,i\,\frac{h}{2\pi}}}\;
 \exp(\frac{2\pi iS_{\mathrm{cl}}}{h})\;},
 $$
 
 with the Maslov index supplying a phase $\exp(-i\pi\digamma_{\mathrm{msl}}/2)$ at each conjugate point (caustic), where the determinant vanishes. The next correction comes from the cubic term in the expansion and is of order $\frac{h}{2\pi}$ relative to the leading term; it is the first term that feels the anharmonicity of the action, and it is not pursued here.
 
-For the free particle $S_{\mathrm{cl}}=m\,c\,(x_f-x_i)^2/(2T)$ and $\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f=-m\,c/T$, so the van Vleck factor is $\frac{1}{\sqrt{2\pi i \frac{h}{2\pi}}}\sqrt{m\,c/T}=\big(\frac{2\pi\nu_m}{2\,\pi\,i\,T}\big)^{1/2}$ and the semiclassical kernel is the exact kernel. A quadratic action is semiclassically exact; the free particle and the harmonic oscillator are the two elementary cases.
+For the free particle $S_{\mathrm{cl}}=m\,c\,(x_f-x_i)^2/(2T)$ and $\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f=-m\,c/T$, so the van Vleck factor is $\sqrt{\frac{m\,c/T}{2\pi i \frac{h}{2\pi}}}=\big(\frac{2\pi\nu_m}{2\,\pi\,i\,T}\big)^{1/2}$, a reciprocal length written under one root, and the semiclassical kernel is the exact kernel. A quadratic action is semiclassically exact; the free particle and the harmonic oscillator are the two elementary cases.
 
 **The phase.** The stationary-phase factor $\exp(\frac{2\pi iS_{\mathrm{cl}}}{h})$ is a **central $*$-unitary** element of $\mathbb{B}_{C}$, for the same reason the phase of an individual path is: the classical action is still a real scalar, its exponent is still a purely imaginary scalar in $\mathbb{B}_{\Phi}$, and the phase is still central. The classical limit changes which paths contribute; it does not change the sector of the phase.
 
 **The prefactor.** The determinant is built from the second variation $\delta^2S$, a real symmetric quadratic form — an ordinary real object, not an element of the algebra. Written out,
 
-$$\frac{1}{\sqrt{2\,\pi\,i\,\frac{h}{2\pi}}}\sqrt{\big|\det\nolimits\delta^2S\big|}
-=\frac{A_{\mathrm{wkb}}}{\sqrt{2\,\pi\,i\,\frac{h}{2\pi}}},
+$$P^{2}=\frac{\big|\det\nolimits\delta^2S\big|}{2\,\pi\,i\,\frac{h}{2\pi}},
 \qquad
-A_{\mathrm{wkb}}=\sqrt{\big|\det\nolimits\delta^2S\big|},
+P=\frac{1}{\text{length}} ,
 $$
 
-so the semiclassical prefactor is the **WKB amplitude** divided by the central $\sqrt{2\,\pi\,i\,\frac{h}{2\pi}}$. This is the amplitude that the companion article *The Non-Quantum Limit of the Free Schrödinger Equation* writes as the modulus of the wave function; the van Vleck determinant is its multidimensional transport, and the statement that it is the WKB amplitude is the content of that article's continuity equation.
+so the semiclassical prefactor is a single amplitude $P$ whose square is the WKB determinant over $2\,\pi\,i\,\frac{h}{2\pi}$; the two roots of the older writing are one root of a squared reciprocal length, and no half power is printed. This is the amplitude that the companion article *The Non-Quantum Limit of the Free Schrödinger Equation* writes as the modulus of the wave function; the van Vleck determinant is its multidimensional transport, and the statement that it is the WKB amplitude is the content of that article's continuity equation.
 
-Both factors are central — the phase is central, and the prefactor is a real number over the central $\sqrt{2\,\pi\,i\,\frac{h}{2\pi}}$ — so the semiclassical kernel is central:
+Both factors are central — the phase is central, and the square of the prefactor is central — so the semiclassical kernel is central:
 
 $$
 K\;\approx\;\mathcal{K}\,e_t,\qquad \mathcal{K}\in\mathbb{C},
 $$
 
-with no non-central element anywhere, exactly as for the full kernel. Under the Wick rotation of the previous section, $\sqrt{2\,\pi\,i\,\frac{h}{2\pi}}$ becomes $\sqrt{2\,\pi\,\frac{h}{2\pi}}$ and the prefactor becomes real and positive, while the unit-circle phase becomes the decaying weight.
+with no non-central element anywhere, exactly as for the full kernel. Under the Wick rotation of the previous section the radicand $2\,\pi\,i\,\frac{h}{2\pi}$ becomes $2\,\pi\,\frac{h}{2\pi}$, and the prefactor, the root of that radicand, becomes real and positive, while the unit-circle phase becomes the decaying weight.
 
-**What this adds, and where the gap remains.** The algebra supplies the square root $\sqrt{i}$ inside the centre, so the factor $\frac{1}{\sqrt{2\pi i \frac{h}{2\pi}}}$ — and with it the $\pm\pi/2$ phases of the Maslov index — is an operation performed on the central element rather than on a quantity whose imaginary unit has to be chosen. It also makes the reality of the prefactor structural. It does **not** supply the determinant: the second variation is the Hessian of an ordinary real action, and the fluctuations are real displacements in the material sector's configuration space. The fluctuation operator is therefore the same kind of external object as the measure, and the assessment of the next section applies to it unchanged.
+**What this adds, and where the gap remains.** The algebra supplies the square root $\sqrt{i}$ inside the centre, so the normalising amplitude $P$ — and with it the $\pm\pi/2$ phases of the Maslov index — is an operation performed on the central element rather than on a quantity whose imaginary unit has to be chosen. It also makes the reality of the prefactor structural. It does **not** supply the determinant: the second variation is the Hessian of an ordinary real action, and the fluctuations are real displacements in the material sector's configuration space. The fluctuation operator is therefore the same kind of external object as the measure, and the assessment of the next section applies to it unchanged.
 
 ## The Canonical Commutation Relations
 
 The sum over paths integrates over trajectories $r_x(r'_t)$ that are ordinary commuting numbers, and the momentum has no place in it: $r_x(r'_t)$ at each time is a separate integration variable, so there is nothing to order and nothing to commute. Yet the operators of the theory do not commute, $[x,p]=i\,\frac{h}{2\pi}$, and Feynman's observation is that the non-commutativity is present in the path integral even though the integration variables show no sign of it. The mechanism is the one the short-time kernel supplies, and it is worth exhibiting in the framework's terms.
 
-**The trajectories are not differentiable.** Over a step $\varepsilon$ in $r'_t$ the free short-time kernel has width $\sqrt{\frac{\varepsilon}{\nu_m}}$, so a trajectory moves a distance of order $\sqrt{\varepsilon}$, not $\varepsilon$. The quantity
+**The trajectories are not differentiable.** Over a step $\varepsilon$ in $r'_t$ the free short-time kernel has width $\sqrt{\frac{\varepsilon}{\nu_m}}$, so a trajectory moves a distance of order $\sqrt{\varepsilon/\nu_m}$, not $\varepsilon$. The quantity
 $$
 r_x\,dr_x/dr'_t=\lim_{\varepsilon\to0}r_x(r'_t)\frac{r_x(r'_t)-r_x(r'_t-\varepsilon)}{\varepsilon}
 $$
@@ -320,7 +319,7 @@ one factor of the square root of the metric determinant per spatial slice. This 
 - A **location for the phase exponent**. The exponent $\frac{2\pi i\,S}{h}$ lies in the material sector $\mathbb{B}_{\Phi}$, along the same $i r'_t$ direction as the propagator's $i\epsilon$ and the thermal analyticity strip — the same direction the Wick rotation turns real.
 - A **name for the phase generator**. The generator $ie_t$ is the central element that exchanges the two sectors, $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$.
 - A **bridge**. The Wick rotation is exhibited as the transfer $\mathbb{B}_{\Phi}\to\mathbb{B}_{H}$, which is exactly the operation that converts the oscillatory phase into a decaying weight.
-- A **central square root**. The semiclassical prefactor contains $\sqrt{2\,\pi\,i\,\frac{h}{2\pi}}$; the square root is taken inside the centre, so the $\pm\tfrac{\pi}{2}$ phases of the Maslov index are operations on the central $i$ rather than on a quantity whose imaginary unit must first be chosen, and the reality of the prefactor after the Wick rotation is structural.
+- A **central square root**. The semiclassical prefactor is the root of $2\,\pi\,i\,\frac{h}{2\pi}$ times the WKB determinant, and it is printed as the amplitude $P$ whose square is that quotient; the root is taken inside the centre, so the $\pm\tfrac{\pi}{2}$ phases of the Maslov index are operations on the central $i$ rather than on a quantity whose imaginary unit must first be chosen, and the reality of the prefactor after the Wick rotation is structural.
 
 **What remains open in the framework.**
 
@@ -354,7 +353,7 @@ A non-central root $J$ fails as the phase's imaginary unit for the same reasons 
 
 The free kernel $G_{\mathrm{prop},0}=(\frac{2\pi\nu_m}{2\,\pi\,i\,T})^{1/2}\exp(\frac{i\,2\pi\nu_m\,\delta x^{2}}{2\,T})$ is central, its phase the classical action over $\frac{h}{2\pi}$ and its prefactor a function of the central $i$; its composition law was verified to machine precision. The Wick rotation $r'_t\mapsto-i\tau$ gives $S=iS_E$ and hence $\exp(i\theta_{\mathrm{act}})=\exp(-\frac{2\pi S_{E}}{h})$; in the interpretation of the companion article this is the identification $\mathbb{B}_{\Phi}\to\mathbb{B}_{H}$, which turns the unit circle of central phases into the positive real axis of decaying weights. The algebra thus supplies the phase, its sector, and the bridge to the Euclidean form; it does not supply the measure, the action, or the space of paths — the last being a gap it cannot close, because $\mathbb{B}$ is finite-dimensional.
 
-The classical limit by stationary phase is the van Vleck kernel, $K\approx(2\,\pi\,i\,\frac{h}{2\pi})^{-1/2}\big|\det\partial^2 S_{\mathrm{cl}}/\partial x_i\partial x_f\big|^{1/2}\exp(\frac{2\pi iS_{\mathrm{cl}}}{h})$. Its phase is the same central $*$-unitary element as before, and its prefactor is the WKB amplitude $A_{\mathrm{wkb}}=\sqrt{|\det\delta^2S|}$ divided by the central $\sqrt{2\,\pi\,i\,\frac{h}{2\pi}}$, so the semiclassical kernel is central as well. For the free particle it is the exact kernel, with the composition law and the prefactor verified to $8.3\times10^{-17}$ and $2.8\times10^{-17}$ respectively. The algebra supplies the square root of the central $i$ — and with it the Maslov phases — and makes the reality of the prefactor after the Wick rotation structural; the determinant, being the Hessian of an ordinary real action, is not supplied.
+The classical limit by stationary phase is the van Vleck kernel, $K\approx P\,\exp(\frac{2\pi iS_{\mathrm{cl}}}{h})$ with $P^{2}=\big|\det\partial^2 S_{\mathrm{cl}}/\partial x_i\partial x_f\big|\big/(2\,\pi\,i\,\frac{h}{2\pi})$. Its phase is the same central $*$-unitary element as before, and its prefactor is the WKB amplitude $A_{\mathrm{wkb}}=\sqrt{|\det\delta^2S|}$ divided by the central $\sqrt{2\,\pi\,i\,\frac{h}{2\pi}}$, so the semiclassical kernel is central as well. For the free particle it is the exact kernel, with the composition law and the prefactor verified to $8.3\times10^{-17}$ and $2.8\times10^{-17}$ respectively. The algebra supplies the square root of the central $i$ — and with it the Maslov phases — and makes the reality of the prefactor after the Wick rotation structural; the determinant, being the Hessian of an ordinary real action, is not supplied.
 
 The canonical commutator is not visible in the commuting sum over paths, but its right-hand side is: the free trajectory is not differentiable, the forward and backward derivatives of its two-point function differ by the contact term $\frac{1}{\nu_m}$ (checked numerically, independently of the step), and the time order becomes the operator order, giving $[x,p]=i\,\frac{h}{2\pi}$. The algebra supplies $i\,\frac{h}{2\pi}$ as a **central** element of the **material sector** $\mathbb{B}_{\Phi}$ — the same sector as the phase exponent — and not the ordering, which belongs to the operator algebra on the state module. In curved space two further external objects appear: the **operator ordering**, whose ambiguity is the curvature, $[p,[p,g]]=-\frac{h^{2}}{4\pi^{2}}\frac{d^{2}g}{dx^{2}}$ (checked numerically), and the **measure factor** $\prod_x\sqrt g$, one volume element per slice, needed to restore unitarity and of the same class as $\mathcal{D}x$. The algebra supplies the central $i\,\frac{h}{2\pi}$ and the determinant language; it supplies neither the curvature, the ordering, nor the volume element.
 
@@ -377,7 +376,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $G_{\mathrm{prop},0}$ | Free kernel; $G_{\mathrm{prop},0}=\mathcal{K}_0e_t$, $\lvert\mathcal{K}_0\rvert^2=\frac{2\pi\nu_m}{2\,\pi\,T}$ |
 | $S_{\mathrm{cl}}$ | Classical action; stationary point of $S[x]$; phase of the free kernel |
 | $\delta^2S$ | Second variation (Hessian) of the action about $x_{\mathrm{cl}}$ |
-| $\sqrt{\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert}$ | Van Vleck determinant; equals the WKB amplitude $A_{\mathrm{wkb}}$ |
+| $P$, with $P^{2}=\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert\big/(2\,\pi\,i\,\frac{h}{2\pi})$ | Van Vleck amplitude, a reciprocal length; its root form is not printed |
 | $\exp(-i\pi\digamma_{\mathrm{msl}}/2)$ | Maslov phase; $\digamma_{\mathrm{msl}}$ the number of conjugate points (caustics) |
 | $\langle  x_jx_{\imath}\rangle=(\frac{1}{2\pi\nu_m})\min(r'_{t,j},r'_{t,\imath})$ | Free Euclidean two-point function; contact term $\frac{1}{\nu_m}$ |
 | $[x,p]=i\,\frac{h}{2\pi}$ | Canonical commutator; the value $i\,\frac{h}{2\pi}$ is central and in $\mathbb{B}_{\Phi}$ |

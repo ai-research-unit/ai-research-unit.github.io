@@ -55,10 +55,12 @@ The deformation's *axis* is algebraically natural; its *orientation*, which is w
 The companion article quantizes the field on its module; here the same modes are read as elements of $\mathbb{B}$, and the operator-valued field is
 
 $$
-\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}
+\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}A_{\vec p}
 \sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde w^{(r)}(\vec p)\,\exp(-i\theta_{\mathrm{pwp}})
 +b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde v^{(r)}(\vec p)\,\exp(+i\theta_{\mathrm{pwp}})\Big],
 $$
+
+where $A_{\vec p}^{2}=\frac{h c}{4\pi E_{\vec p}}$, a length: the mode amplitude is named through its square, because a root of the mode energy is a half power of the base units.
 
 Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 

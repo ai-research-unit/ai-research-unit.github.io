@@ -568,7 +568,7 @@ so the spacing of the fringes is the distance per radian, magnified by the geome
 
 It is the ruler of a bound orbit. A closed orbit holds a whole number of turns of phase, $r=n/(2\pi\nu_{\Phi})$, so the distance $1/(2\pi\nu_{\Phi})$ is the step of the ladder of bound states. For hydrogen in the ground state the step is the orbit itself, and the quantization is the statement that the orbit is one step long.
 
-It is the coherence length of an ensemble. A thermal ensemble has its wave numbers spread over $\nu_T=\frac{\sqrt{2\pi m k_BT}}{h}$, so the distance over which its phase stays defined is $1/(2\pi\nu_T)$: $6.85\times10^{-10}\ \mathrm{m}$ for the electron at $300\ \mathrm{K}$ and $1.60\times10^{-11}\ \mathrm{m}$ for the neutron. A gas is quantum when the interparticle spacing reaches that distance, and the criterion $n/\nu_T^{3}\sim1$ is the statement that the basis operators of size $1/(2\pi\nu_T)$ have filled the volume.
+It is the coherence length of an ensemble. A thermal ensemble has its wave numbers spread over $\nu_T=\frac{p_T}{h}$, so the distance over which its phase stays defined is $1/(2\pi\nu_T)$: $6.85\times10^{-10}\ \mathrm{m}$ for the electron at $300\ \mathrm{K}$ and $1.60\times10^{-11}\ \mathrm{m}$ for the neutron. A gas is quantum when the interparticle spacing reaches that distance, and the criterion $n/\nu_T^{3}\sim1$ is the statement that the basis operators of size $1/(2\pi\nu_T)$ have filled the volume.
 
 ### Interference and Diffraction
 
@@ -632,7 +632,7 @@ The same count for any potential. A bound state has $\oint\nu_{\Phi}\,dq=n+\tfra
 
 ### Matter Waves at the Crystal
 
-Two numbers worth remembering. A $1.6022\times10^{-17}\ \mathrm{J}$ electron has $\nu_{\Phi}=8.154\times10^{9}\ \mathrm{m^{-1}}$ and an ordinary wavelength of $1.23\times10^{-10}\ \mathrm{m}$. A neutron at $300\ \mathrm{K}$ has the thermal wave number $\nu_T=\frac{\sqrt{2\pi m k_BT}}{h}$, giving $\nu_{\Phi}=9.963\times10^{9}\ \mathrm{m^{-1}}$ and an ordinary wavelength of $1.00\times10^{-10}\ \mathrm{m}$.
+Two numbers worth remembering. A $1.6022\times10^{-17}\ \mathrm{J}$ electron has $\nu_{\Phi}=8.154\times10^{9}\ \mathrm{m^{-1}}$ and an ordinary wavelength of $1.23\times10^{-10}\ \mathrm{m}$. A neutron at $300\ \mathrm{K}$ has the thermal wave number $\nu_T=\frac{p_T}{h}$, giving $\nu_{\Phi}=9.963\times10^{9}\ \mathrm{m^{-1}}$ and an ordinary wavelength of $1.00\times10^{-10}\ \mathrm{m}$.
 
 The crystal spacing matches them. Atomic planes are of order $2\times10^{-10}\ \mathrm{m}$ apart, the same decade as both wavelengths, so a crystal diffracts both electrons and neutrons. The Bragg condition in this notation is $2d\sin\theta=n\lambda=n/\nu_{\Phi}$, which is the textbook form read with $\lambda=1/\nu_{\Phi}$.
 
@@ -640,10 +640,10 @@ Why neutrons and not protons. A proton at $300\ \mathrm{K}$ has a thermal wave n
 
 ### The Thermal Wave Number
 
-Temperature supplies a momentum. A thermal ensemble has $p_T=\sqrt{2\pi mk_BT}$, so
+Temperature supplies a momentum. A thermal ensemble has $p_T$ with $p_T^{2}=2\pi mk_BT$ — the momentum is named through its square, because a root of a mass times an energy is a half power of the base units — so
 
 $$
-\nu_T =\frac{\sqrt{2\pi m k_BT}}{h} .
+\nu_T =\frac{p_T}{h} .
 $$
 
 For the electron at $300\ \mathrm{K}$ this is $2.324\times10^{8}\ \mathrm{m^{-1}}$, with an ordinary wavelength of $4.30\times10^{-9}\ \mathrm{m}$; for the neutron, $9.963\times10^{9}\ \mathrm{m^{-1}}$ and $1.00\times10^{-10}\ \mathrm{m}$.
@@ -1040,7 +1040,7 @@ The history is two relations and one measurement. Compton's shift, $\Delta\lambd
 | $\lambda_C = \frac{1}{\nu_m}$ | The ordinary Compton wavelength, the shift in Compton scattering |
 | $E_c =\frac{2\pi c^{3}\,m^{2}}{h\,e}$ | The pair-creation field, $1.32\times10^{18}\ \mathrm{V\,m^{-1}}$ for the electron |
 | $a_0\,\nu_{m_e} = \frac{1}{2\pi\alpha}=21.81$ | The Bohr radius in wave numbers, and the inverse fine-structure constant over $2\pi$ |
-| $\nu_T =\frac{\sqrt{2\pi m k_BT}}{h}$ | The thermal wave number, whose cube sets the degeneracy criterion $n/\nu_T^{3}\sim1$ |
+| $\nu_T =\frac{p_T}{h}$ | The thermal wave number, whose cube sets the degeneracy criterion $n/\nu_T^{3}\sim1$ |
 | $\frac{h}{2\pi}\,c= 3.161\,527\times10^{-26}\ \mathrm{J\,m}$ | The conversion between an energy and a wave number |
 | $\Omega = \nu_t^{\prime}-\nu_m$ | The excess wave number; the part of the energy wave number above the mass side, $\Omega=\sqrt{\nu_{\Phi}^{2}+\nu_m^{2}}-\nu_m=\nu_{\Phi}^{2}/2\nu_m-\cdots$ |
 | $\nu_{\Phi}^{2}=2\nu_m\Omega+\Omega^{2}$ | The triangle with its origin moved to the mass side; exact, one term linear in the excess and one quadratic |

@@ -196,12 +196,12 @@ all have energy $\frac12hf_{\mathrm{frq},c}$ and angular momentum $L_{\mathrm{or
 The classical counterpart is the cyclotron orbit of radius $\rho=v_\perp/\omega_c$, with $\omega_c$ the cyclotron frequency and $v_\perp$ the transverse velocity. The magnetic length
 
 $$
-\ell_B=\sqrt{\frac{h}{2\pi |ϙ|B}}
+\ell_B^{2}=\frac{h}{2\pi |ϙ|B}
 $$
 
-is the quantum length scale of the problem, the radius of the ground-state orbit in the sense that the ground-state wave function is Gaussian with width $\ell_B$. It is the unique length built from $\frac{h}{2\pi},ϙ,B$; the biquaternion framework records it as a central real scalar built from the same central quantities as $\omega_c$. In the correspondence limit of large quantum numbers the oscillator states become the classical circular orbits of the guiding-centre picture.
+is the quantum length scale of the problem, named through its square because a root of an action over a field strength is a half power of the base units, the radius of the ground-state orbit in the sense that the ground-state wave function is Gaussian with width $\ell_B$. It is the unique length built from $\frac{h}{2\pi},ϙ,B$; the biquaternion framework records it as a central real scalar built from the same central quantities as $\omega_c$. In the correspondence limit of large quantum numbers the oscillator states become the classical circular orbits of the guiding-centre picture.
 
-For orientation, a laboratory field of $1$ T gives, with $\omega_c=|ϙ|B/m$ and $\ell_B=\sqrt{\frac{h}{2\pi \lvert ϙ\rvert B}}$, a magnetic length of $25.66$ nm, a cyclotron frequency of $1.759\times10^{11}$ rad s$^{-1}$, and a cyclotron quantum $hf_{\mathrm{frq},c}=1.86\times10^{-23}$ J, with flux quantum $Ξ_0=h/|ϙ|=4.136\times10^{-15}$ Wb. The three scales are all central real scalars; their values are quoted for the electron charge and mass and were recomputed from the defining formulas.
+For orientation, a laboratory field of $1$ T gives, with $\omega_c=|ϙ|B/m$ and $\ell_B^{2}=\frac{h}{2\pi \lvert ϙ\rvert B}$, a magnetic length of $25.66$ nm, a cyclotron frequency of $1.759\times10^{11}$ rad s$^{-1}$, and a cyclotron quantum $hf_{\mathrm{frq},c}=1.86\times10^{-23}$ J, with flux quantum $Ξ_0=h/|ϙ|=4.136\times10^{-15}$ Wb. The three scales are all central real scalars; their values are quoted for the electron charge and mass and were recomputed from the defining formulas.
 
 ## Degeneracy and the Flux Quantum
 
@@ -273,7 +273,7 @@ $$
 [\tilde\pi_x,\tilde\pi_y]=i\,\frac{h}{2\pi}\,ϙ\,B\,e_t ,
 $$
 
-verified numerically to a relative error below $5\times10^{-11}$. In the Landau gauge $\vec A=(0,Bx,0)$ the problem reduces to a harmonic oscillator of frequency $\omega_c=|ϙ|B/m$ displaced by $x_0=\ell_B^2k\,\mathrm{sgn}(ϙ)$, with magnetic length $\ell_B=\sqrt{\frac{h}{2\pi \lvert ϙ\rvert B}}$, giving the Landau spectrum
+verified numerically to a relative error below $5\times10^{-11}$. In the Landau gauge $\vec A=(0,Bx,0)$ the problem reduces to a harmonic oscillator of frequency $\omega_c=|ϙ|B/m$ displaced by $x_0=\ell_B^2k\,\mathrm{sgn}(ϙ)$, with magnetic length $\ell_B^{2}=\frac{h}{2\pi \lvert ϙ\rvert B}$, giving the Landau spectrum
 
 $$
 E_{n,\nu_{z}}=hf_{\mathrm{frq},c}\left(n+\tfrac12\right)+\frac{h^{2}\,4\pi^{2}\nu_{z}^{2}}{8\pi^{2}\,m}
@@ -297,7 +297,7 @@ Each level is degenerate with multiplicity $N_{\mathrm{scl},\xi}=AB/Ξ_0$, the n
 | $\tilde\pi_{\imath}=(p_{\imath}-ϙA_{\imath})e_t$ | Mechanical momentum; central Hermitian |
 | $[\tilde\pi_{\imath},\tilde\pi_l]=i\,\frac{h}{2\pi}\,ϙ\varepsilon_{k l\,n_{\mathrm{idx}}}B_me_t$ | Central field-strength commutator |
 | $\omega_c=\lvert ϙ\rvert B/m$ | Cyclotron frequency |
-| $\ell_B=\sqrt{\frac{h}{2\pi \lvert\,ϙ\,\rvert\,B}}$ | Magnetic length |
+| $\ell_B$, with $\ell_B^{2}=\frac{h}{2\pi \lvert\,ϙ\,\rvert\,B}$ | Magnetic length; named through its square |
 | $x_0=\ell_B^2 k\,\mathrm{sgn}(ϙ)$ | Oscillator centre; conserved $k$ |
 | $E_n=hf_{\mathrm{frq},c}\,(n+\tfrac12)+\frac{h^{2}\,4\pi^{2}\nu_{z}^{2}}{8\pi^{2}\,m}$ | Landau spectrum |
 | $H_n$ | Hermite polynomials |

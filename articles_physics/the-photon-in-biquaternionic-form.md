@@ -60,8 +60,10 @@ Two structural observations follow from the table. The field-strength-like datum
 The covariant quantization expands the potential in four polarizations,
 
 $$
-A_{\imath}(x) = \int d^{3}\nu_{\Phi}\sqrt{\frac{c}{2\omega_{\mathrm{mode},m}}}\sum_{r=0}^{3}\Bigl(a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi)\,\epsilon^{(r)}_{\imath}(2\pi\vec\nu_\Phi)\,\exp(-ik\cdot x) + a_{\mathrm{fop},r}^{\dagger}(2\pi\vec\nu_\Phi)\,\epsilon^{(r)*}_{\imath}(2\pi\vec\nu_\Phi)\,\exp(+ik\cdot x)\Bigr),
+A_{\imath}(x) = \int d^{3}\nu_{\Phi}A_{\mathrm{mode},m}\sum_{r=0}^{3}\Bigl(a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi)\,\epsilon^{(r)}_{\imath}(2\pi\vec\nu_\Phi)\,\exp(-ik\cdot x) + a_{\mathrm{fop},r}^{\dagger}(2\pi\vec\nu_\Phi)\,\epsilon^{(r)*}_{\imath}(2\pi\vec\nu_\Phi)\,\exp(+ik\cdot x)\Bigr),
 $$
+
+where $A_{\mathrm{mode},m}^{2}=\frac{c}{2\omega_{\mathrm{mode},m}}$, a length: the mode amplitude is named through its square, because a root of a frequency is a half power of the base units.
 
 with $\omega_{\mathrm{mode},m}=c\lvert2\pi\vec\nu_\Phi\rvert$ an angular frequency, $k\cdot x=2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega_{\mathrm{mode},m} r'_t/c$, and $\langle\epsilon^{(r)},\epsilon^{(s)}\rangle_{\natural}=\sigma_{\mathrm{met},r}\delta_{rs}$ with $\sigma_{\mathrm{met},0}=-1$, $\sigma_{\mathrm{met},k}=+1$, the one minus being the square of the $i$ that the time coefficient carries, $Q_t=i q'_t$; the natural form on the four units $e_t,\vec e_x,\vec e_y,\vec e_z$ is $\delta_{\imath\jmath}$. The vectors $\epsilon^{(1)},\epsilon^{(2)}$ are the two real spatial directions transverse to $\vec u_\Phi$, $\epsilon^{(3)}=\vec u_\Phi$ is longitudinal, and $\epsilon^{(0)}$ is timelike.
 

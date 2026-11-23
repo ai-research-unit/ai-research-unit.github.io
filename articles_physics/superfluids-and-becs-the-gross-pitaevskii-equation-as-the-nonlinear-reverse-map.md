@@ -17,10 +17,13 @@ The vocabulary of superfluidity agrees with the block's and the objects do not: 
 The condensate is described by one complex function and its modulus squared is the density. Write
 
 $$
-\psi=\sqrt{\rho_{\mathrm{num}}}\,e^{\frac{2\pi iS}{h}},
+\psi=n_{\mathrm{num}}\,e^{\frac{2\pi iS}{h}},
 \qquad
 \vec v=\frac{1}{m}\vec\nabla_\Phi S ,
 $$
+
+**The density amplitude.** The modulus of the field is the amplitude $n_{\mathrm{num}}$, defined by its square, $n_{\mathrm{num}}^{2}=\rho_{\mathrm{num}}$, and $n_0$ likewise with $n_0^{2}=\rho_0$: a root of a density is a half power of the base units and is never printed.
+
 
 with $\rho_{\mathrm{num}}$ the number density of condensed particles and $\vec v$ the velocity of the condensate's flow. The Gross–Pitaevskii equation is
 
@@ -42,7 +45,7 @@ For a dilute gas of hard spheres, $g=4\pi \frac{h^{2}}{4\pi^{2}}a_{\mathrm{sc}}/
 
 ## Two Exact Solutions
 
-**The uniform condensate fixes the chemical potential and the healing length.** With $\psi=\sqrt{\rho_0}\exp(-i\mu_{\mathrm{chm}}\frac{2\pi t'}{h})$ and $\mu_{\mathrm{chm}}=g\rho_0$, the equation is satisfied identically: the kinetic term vanishes and the two remaining terms cancel. The chemical potential is the interaction energy per particle, and it is the energy cost of adding one particle to the condensate.
+**The uniform condensate fixes the chemical potential and the healing length.** With $\psi=n_0\exp(-i\mu_{\mathrm{chm}}\frac{2\pi t'}{h})$ and $\mu_{\mathrm{chm}}=g\rho_0$, the equation is satisfied identically: the kinetic term vanishes and the two remaining terms cancel. The chemical potential is the interaction energy per particle, and it is the energy cost of adding one particle to the condensate.
 
 A long-wavelength disturbance propagates at the sound speed
 
@@ -128,7 +131,7 @@ The block's denial stands: the sharing is of formulas, not of objects, and the h
 
 | Symbol | Meaning |
 |---|---|
-| $\psi=\sqrt{\rho_{\mathrm{num}}}e^{\frac{2\pi iS}{h}}$ | Order parameter |
+| $\psi=n_{\mathrm{num}}e^{\frac{2\pi iS}{h}}$ | Order parameter |
 | $\rho_{\mathrm{num}},\ \rho_0$ | Number density and its uniform value |
 | $S$ | Action; the phase is $\frac{2\pi S}{h}$ |
 | $\vec v=\vec\nabla_\Phi S/m$ | Condensate velocity |

@@ -120,16 +120,16 @@ The scalar case has one feature the two parent cases do not. Because the field i
 The field equation is linear, so the general solution is a superposition of plane waves. With $E_{\vec p}=+c\sqrt{\vec p^{\,2}+m^{2}c^{2}}$ and $p\cdot x=\frac{h}{2\pi}\left(2\pi\nu_t^{\prime}r'_t-2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right)=-h\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_\Phi^{\natural})$, the quantized field expands as
 
 $$
-\boxed{\;\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}\,\sqrt{\frac{h c}{4\pi E_{\vec p}}}
+\boxed{\;\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}\,A_{\vec p}
 \left(a_{\mathrm{fop},\vec p}\,\exp(-i\theta_{\mathrm{pwp}})+{b_{\mathrm{fop},\vec p}}^\dagger\,\exp(+i\theta_{\mathrm{pwp}})\right)\;},
 $$
 
-Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
+Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one. The amplitude $A_{\vec p}$ is a length fixed by its square, $A_{\vec p}^{2}=\frac{h c}{4\pi E_{\vec p}}$; the root that the standard normalisation prints is a half power of the base units and is not written.
 
 and its adjoint as
 
 $$
-\xi_{\mathrm{fop}}^{\dagger}(x)=\int\!\frac{d^3p}{h^{3}}\,\sqrt{\frac{h c}{4\pi E_{\vec p}}}
+\xi_{\mathrm{fop}}^{\dagger}(x)=\int\!\frac{d^3p}{h^{3}}\,A_{\vec p}
 \left(b_{\mathrm{fop},\vec p}\,\exp(-i\theta_{\mathrm{pwp}})+{a_{\mathrm{fop},\vec p}}^\dagger\,\exp(+i\theta_{\mathrm{pwp}})\right).
 $$
 
@@ -273,7 +273,7 @@ with all other equal-time brackets vanishing; commutation rather than anticommut
 The field expands in the parent's plane waves, written with the wave number itself as the phase,
 
 $$
-\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}
+\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}A_{\vec p}
 \left(a_{\mathrm{fop},\vec p}\exp\!\big(i\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_{\Phi}^{\natural})\big)+{b_{\mathrm{fop},\vec p}}^\dagger \exp\!\big(-i\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_{\Phi}^{\natural})\big)\right),
 $$
 

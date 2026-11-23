@@ -146,12 +146,14 @@ The helicity argument also shows why the massless count is two and not more, and
 In the transverse-traceless gauge the field carries only the two physical modes, and its expansion is
 
 $$
-h_{ij}^{\mathrm{TT}}(x) = \int\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_p}}
+h_{ij}^{\mathrm{TT}}(x) = \int\frac{d^3p}{h^{3}}A_{\vec p}
 \sum_{r=+,\times}\left[
 a_r(\vec p)\,\varepsilon_{r ij}(\vec u_p)\,\exp(-i\theta_{\mathrm{pwp}})
 + a_r^\dagger(\vec p)\,\varepsilon_{r ij}^{*}(\vec u_p)\,\exp(+i\theta_{\mathrm{pwp}})
 \right] ,
 $$
+
+where $A_{\vec p}^{2}=\frac{h c}{4\pi E_p}$, a length: the mode amplitude is named through its square, because a root of the mode energy is a half power of the base units.
 
 Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 

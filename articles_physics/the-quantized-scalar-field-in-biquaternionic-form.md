@@ -40,9 +40,11 @@ The value space of the field is the centre. In the mode expansion
 $$
 \tilde{Ξ}_{\mathrm{fop}}(\tilde R_\Phi)=\xi_{\mathrm{fop}}(r_x)\,e_t,
 \qquad
-\xi_{\mathrm{fop}}(r_x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}
+\xi_{\mathrm{fop}}(r_x)=\int\!\frac{d^3p}{h^{3}}A_{\vec p}
 \left(a_{\mathrm{fop},\vec p}\exp(-i\theta_{\mathrm{pwp}})+{b_{\mathrm{fop},\vec p}}^\dagger \exp(+i\theta_{\mathrm{pwp}})\right),
 $$
+
+where $A_{\vec p}^{2}=\frac{h c}{4\pi E_{\vec p}}$, a length: the mode amplitude is named through its square, because a root of the mode energy is a half power of the base units.
 
 Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
@@ -57,9 +59,9 @@ every coefficient multiplies the central unit $e_t$. Three consequences follow i
 The decomposition of the field into its two exponential branches is the operator form of the two-branch structure of the parent equation. Define
 
 $$
-\xi_{\mathrm{fop}}^{(+)}(x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}\,a_{\mathrm{fop},\vec p}\,\exp(-i\theta_{\mathrm{pwp}}),
+\xi_{\mathrm{fop}}^{(+)}(x)=\int\!\frac{d^3p}{h^{3}}A_{\vec p}\,a_{\mathrm{fop},\vec p}\,\exp(-i\theta_{\mathrm{pwp}}),
 \qquad
-\xi_{\mathrm{fop}}^{(-)}(x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}\,{b_{\mathrm{fop},\vec p}}^\dagger\,\exp(+i\theta_{\mathrm{pwp}}),
+\xi_{\mathrm{fop}}^{(-)}(x)=\int\!\frac{d^3p}{h^{3}}A_{\vec p}\,{b_{\mathrm{fop},\vec p}}^\dagger\,\exp(+i\theta_{\mathrm{pwp}}),
 $$
 
 so that $\xi_{\mathrm{fop}}=\xi_{\mathrm{fop}}^{(+)}+\xi_{\mathrm{fop}}^{(-)}$ and $\xi_{\mathrm{fop}}^{\dagger}=\xi_{\mathrm{fop}}^{(+)\dagger}+\xi_{\mathrm{fop}}^{(-)\dagger}$, with $\xi_{\mathrm{fop}}^{(+)\dagger}$ containing ${a_{\mathrm{fop},\vec p}}^\dagger$ and $\xi_{\mathrm{fop}}^{(-)\dagger}$ containing $b_{\mathrm{fop},\vec p}$. Two facts fix the interpretation.
@@ -99,7 +101,7 @@ and it leaves the commutators and the Hamiltonian invariant. It is an antiunitar
 **The real (neutral) field.** Imposing $\xi_{\mathrm{fop}}^{\dagger}=\xi_{\mathrm{fop}}$ forces $b_{\mathrm{fop},\vec p}=a_{\mathrm{fop},\vec p}$ and reduces the expansion to a single set of modes,
 
 $$
-\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}
+\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}A_{\vec p}
 \left(a_{\mathrm{fop},\vec p}\exp(-i\theta_{\mathrm{pwp}})+{a_{\mathrm{fop},\vec p}}^\dagger \exp(+i\theta_{\mathrm{pwp}})\right),
 $$
 

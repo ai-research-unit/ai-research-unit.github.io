@@ -222,12 +222,14 @@ which is exactly the statement that the total internal angular momentum of a com
 An integer-spin field is quantized with commutators, not anticommutators. The mode expansion carries one oscillator pair for each of the $2s+1$ polarizations at each momentum,
 
 $$
-Ξ_{\mathrm{fop}}(x) = \int\!\frac{d^3p}{h^{3}}\sqrt{\frac{c}{2\omega_{\vec p}}}
+Ξ_{\mathrm{fop}}(x) = \int\!\frac{d^3p}{h^{3}}A_{\nu_\Phi}
 \sum_{r=1}^{2s+1}\left[
 \xi_r(\vec p)\,a_{\mathrm{fop},r}(\vec p)\,\exp(-i\theta_{\mathrm{pwp}})
 + \xi_{r}^{*}(\vec p)\,a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\exp(+i\theta_{\mathrm{pwp}})
 \right],
 $$
+
+where $A_{\nu_\Phi}^{2}=\frac{c}{2\omega_{\vec p}}$, a length: the mode amplitude is named through its square, because a root of a frequency is a half power of the base units.
 
 Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 

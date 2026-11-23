@@ -59,13 +59,14 @@ The honest summary is this: "the biquaternion vacuum" is not a biquaternion. For
 
 **From the mode expansion.** The free Maxwell potential expands in four covariant polarisations,
 $$
-A_{\imath}(x)=\int\!d^{3}\nu_{\Phi}\sqrt{\frac{c}{2\omega_{\mathrm{mode},m}}}\sum_{r=0}^{3}
+A_{\imath}(x)=\int\!d^{3}\nu_{\Phi}A_{\mathrm{mode},m}\sum_{r=0}^{3}
 \Big(a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi)\,\epsilon^{(r)}_{\imath}(2\pi\vec\nu_\Phi)\,\exp(-ik\cdot x)
 +a_{\mathrm{fop},r}^{\dagger}(2\pi\vec\nu_\Phi)\,\epsilon^{(r)*}_{\imath}(2\pi\vec\nu_\Phi)\,\exp(+ik\cdot x)\Big),
 \qquad
 \big[a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec\nu_2)\big]=\sigma_{\mathrm{met},r}\,\delta_{rs}\,\delta^{(3)}(\vec\nu_\Phi-\vec\nu_2),
 $$
-with $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, $\omega_{\mathrm{mode},m}=c\lvert2\pi\vec\nu_\Phi\rvert$ an angular frequency for the massless field, and $k\cdot x=2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega_{\mathrm{mode},m} r'_t/c$. The normal-ordered Hamiltonian is
+
+where $A_{\mathrm{mode},m}^{2}=\frac{c}{2\omega_{\mathrm{mode},m}}$, a length: the mode amplitude is named through its square, because a root of a frequency is a half power of the base units, and $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, $\omega_{\mathrm{mode},m}=c\lvert2\pi\vec\nu_\Phi\rvert$ an angular frequency for the massless field, and $k\cdot x=2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega_{\mathrm{mode},m} r'_t/c$. The normal-ordered Hamiltonian is
 $$
 :\!H\!:\,=\sum_{r=0}^{3}\int\!d^{3}\nu_{\Phi}\,\sigma_{\mathrm{met},r}\,hf_{\mathrm{frq},k}\,a_{\mathrm{fop},r}^{\dagger}(2\pi\vec\nu_\Phi)a_{\mathrm{fop},r}(2\pi\vec\nu_\Phi),
 $$

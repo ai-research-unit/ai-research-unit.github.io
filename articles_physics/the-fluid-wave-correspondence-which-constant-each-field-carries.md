@@ -14,7 +14,7 @@ A viscous potential flow in one dimension is linearisable, exactly, by the Hopfâ
 
 ## The Two Directions
 
-The forward direction is exact and general. Every solution of a linear wave equation gives a fluid by $\psi=\sqrt{\rho_{\mathrm{num}}}e^{\frac{2\pi iS}{h}}$, away from the nodes. The map is a rewriting, it loses nothing, and its only exception is the set where the density vanishes.
+The forward direction is exact and general. Every solution of a linear wave equation gives a fluid by $\psi=n_{\mathrm{num}}e^{\frac{2\pi iS}{h}}$, away from the nodes. The amplitude $n_{\mathrm{num}}$ is defined by its square, $n_{\mathrm{num}}^{2}=\rho_{\mathrm{num}}$, because a root of a density is a half power of the base units and is never printed. The map is a rewriting, it loses nothing, and its only exception is the set where the density vanishes.
 
 The reverse direction is conditional and its output is nonlinear. It is defined on barotropic irrotational inviscid flows that carry the quantum term, and on that class its output is
 
@@ -160,7 +160,7 @@ The block's two denials are one statement: the reading is a re-coordinatisation 
 
 | Symbol | Meaning |
 |---|---|
-| $\psi=\sqrt{\rho_{\mathrm{num}}}e^{\frac{2\pi iS}{h}}$ | Wave function; the field's reading |
+| $\psi=n_{\mathrm{num}}e^{\frac{2\pi iS}{h}}$ | Wave function; the field's reading |
 | $\rho_{\mathrm{num}}$ | Number density |
 | $S$ | Action; the phase is $\frac{2\pi S}{h}$ |
 | $V(\rho_{\mathrm{num}})$ | Nonlinear term of the reverse map |

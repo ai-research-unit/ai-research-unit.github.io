@@ -149,7 +149,7 @@ The numbers.
 
 The four values differ because $\Lambda$ is not one number but one number per flavour number: the same physics written with a different set of active quarks. What is invariant is the coupling at a given scale, and the matching condition is what ties the four together.
 
-The parameter count, stated once. Classical QCD: $g_s$, dimensionless, plus the six quark masses. Quantum QCD: $\Lambda$, dimensionful, plus the six quark masses. The dimensionful parameter and the dimensionless one have swapped; the total count is unchanged, and the theory has lost the ability to be rescaled. That loss is what makes QCD predictive: with no dimensionless free parameter, every dimensionless ratio — the ratio of the proton mass to $\sqrt{\sigma}$ where $\sigma$ is the string tension, the ratio of the $\rho$ mass to the proton mass, the whole hadron spectrum in units of one of them — is a prediction of the theory rather than a fit.
+The parameter count, stated once. Classical QCD: $g_s$, dimensionless, plus the six quark masses. Quantum QCD: $\Lambda$, dimensionful, plus the six quark masses. The dimensionful parameter and the dimensionless one have swapped; the total count is unchanged, and the theory has lost the ability to be rescaled. That loss is what makes QCD predictive: with no dimensionless free parameter, every dimensionless ratio — the squared ratio of the proton mass to the string tension, $m_p^{2}c^{3}/\sigma\hbar$, where $\sigma$ is the string tension, the ratio of the $\rho$ mass to the proton mass, the whole hadron spectrum in units of one of them — is a prediction of the theory rather than a fit.
 
 Where the scale comes from, and the honest answer. Nothing in QCD fixes the value of $\Lambda$. It is $1.4\times10^{-11}\ \mathrm{J}$ because the world is that way; a universe with a different $\Lambda$ would be a different world with the same equations. The number must come from outside — from whatever theory lies above the Planck scale, or from nothing at all — and this corpus has no candidate. That is not a defect of the derivation; it is the correct statement of what a dimensionally transmuted theory can and cannot say.
 
@@ -302,7 +302,7 @@ The framework supplies the sign rule and the colour factors and nothing else. Th
 | $g_s$ | The coupling itself, $\alpha_s=g_s^2/4\pi$; the beta function is written for $g_s$ |
 | $N_c=3$ | Number of colours; enters $b_0$ only through $C_A=N_c$ and the normalisation $T_R=\tfrac12$ |
 | $m_p$ | Proton mass, $1.673\times10^{-27}\ \mathrm{kg}$, the matrix element of the conformal anomaly |
-| $\sigma$ | String tension; $m_p/\sqrt\sigma$ is a pure number the theory predicts |
+| $\sigma$ | String tension; $m_p^{2}c^{3}/\sigma\hbar$ is the pure number the theory predicts, and it is written squared because the root of the tension is a half power of the base units |
 | $\sum_{\imath}\varepsilon_{\imath} T_{\imath\imath}$ | Trace of the energy–momentum tensor, proportional to $G_{a,\imath\jmath}G_{a,\imath\jmath}$ with coefficient $b_0$ |
 | $G_{a,\imath\jmath}$ | Gluon field strength, $a=1,\dots,8$; the operator of the conformal anomaly |
 | $\alpha$ | Fine-structure constant, $\alpha(0)=1/137.036$; used only in the QED contrast |

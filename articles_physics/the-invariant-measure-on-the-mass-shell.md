@@ -186,9 +186,9 @@ There are three standard normalisations, and they differ by powers of $2E$ and $
 |---|---|
 | covariant with $(2\pi)^{3}$ | $\langle\vec p\vert\vec q\rangle=2E_{\vec p}(2\pi)^{3}\delta^{3}(\vec p-\vec q)$ |
 | covariant without $(2\pi)^{3}$ | $\langle\vec p\vert\vec q\rangle=2E_{\vec p}\delta^{3}(\vec p-\vec q)$ |
-| non-relativistic | $\langle\vec p\vert\vec q\rangle=\delta^{3}(\vec p-\vec q)$, with $\sqrt{2E}$ absorbed into the state |
+| non-relativistic | $\langle\vec p\vert\vec q\rangle=\delta^{3}(\vec p-\vec q)$, with the amplitude $N_{\vec p}$ absorbed into the state, $N_{\vec p}^{2}=2E_{\vec p}$ |
 
-The three are related by absorbing $\sqrt{2E}$ into the state's normalisation and by a power of $2\pi$. The block uses the covariant one, because it makes the measure's invariance manifest: the identity operator reads
+The three are related by absorbing the amplitude $N_{\vec p}$ into the state's normalisation, $N_{\vec p}^{2}=2E_{\vec p}$, and by a power of $2\pi$; the root itself is a half power of the base units and is never printed. The block uses the covariant one, because it makes the measure's invariance manifest: the identity operator reads
 
 $$
 1=\int\frac{d^{3}p}{2E_{\vec p}}\,|p\rangle\langle p| ,

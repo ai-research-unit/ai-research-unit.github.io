@@ -193,14 +193,14 @@ The system is quantized by the Dirac procedure. The second-class constraints are
 The field operator is expanded in the three positive-norm polarizations,
 
 $$
-A_{\imath}(x) = \int\!\frac{d^3p}{h^{3}}\sqrt{\frac{c}{2\omega_{\vec p}}}
+A_{\imath}(x) = \int\!\frac{d^3p}{h^{3}}A_{\nu_\Phi}
 \sum_{r=1}^{3}\left[
 \varepsilon_{r\imath}(\vec p)\,a_{\mathrm{fop},r}(\vec p)\,\exp(-i\theta_{\mathrm{pwp}})
 + \varepsilon_{r\imath}^{*}(\vec p)\,a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\exp(+i\theta_{\mathrm{pwp}})
 \right],
 $$
 
-with $p_0=\omega_{\vec p}=\sqrt{\vec p^2+\mu^2}$. The mode operators satisfy the bosonic commutators
+where $A_{\nu_\Phi}^{2}=\frac{c}{2\omega_{\vec p}}$, a length: the mode amplitude is named through its square, because a root of a frequency is a half power of the base units, and $p_0=\omega_{\vec p}=\sqrt{\vec p^2+\mu^2}$. The mode operators satisfy the bosonic commutators
 
 $$
 \left[a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec\nu_\Phi)\right]
