@@ -1,4 +1,4 @@
-# __The Spin-Zero Carrier: the Scalars__
+# __The Spin-Zero Carrier of the Biquaternion Operators: the Scalars__
 
 ## Introduction
 

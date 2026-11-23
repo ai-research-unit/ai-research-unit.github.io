@@ -422,7 +422,7 @@ $$
 \mathfrak{sl}(2,\mathbb{R}):\ (2,1),\qquad \mathfrak{su}(2):\ (0,3).
 $$
 
-The change of sign is the change of the real form, and it is the whole reason the two Lie groups differ in compactness. The three inertias of [The Killing Form of $\mathfrak{sl}_2$ and Its Three Inertias](the-killing-form-of-sl-2-and-its-three-signatures.html) are the three real forms of one complex algebra read in one place; the two rows above are two of those three, the third being $\mathfrak{so}(3,1)$.
+The change of sign is the change of the real form, and it is the whole reason the two Lie groups differ in compactness. The three inertias of [The Killing Form of $\mathfrak{sl}_2$ and Its Three Inertias](the-killing-form-of-sl-2-and-its-three-inertias.html) are the three real forms of one complex algebra read in one place; the two rows above are two of those three, the third being $\mathfrak{so}(3,1)$.
 
 **The ideals.** The ideals of $\mathfrak u(2)$ are $0$, the centre $\mathbb{R}(i e_t)$, $\mathfrak{su}(2)$ and $\mathfrak u(2)$. The argument is the same as for $\mathfrak{gl}(2,\mathbb{R})$, with the centre in place of $\mathbb{R}I$ and the compact simple algebra in place of the split one.
 

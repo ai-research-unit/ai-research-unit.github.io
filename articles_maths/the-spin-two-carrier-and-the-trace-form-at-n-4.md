@@ -121,7 +121,7 @@ The characteristic polynomial on the carrier is the square $(\lambda^{2}-q/4)^{2
 
 ## Further Reading
 
-- [Introduction to the Spin-Two Carrier at $n=4$: the Alternating Square](the-spin-two-carrier-of-m4c.html), for the carrier.
+- [Introduction to the Spin-Two Carrier at $n=4$: the Alternating Square](introduction-to-the-spin-two-carrier-of-m4c.html), for the carrier.
 - [The Spin-Two Carrier and the Rank Strata at $n=4$](the-spin-two-carrier-and-the-rank-strata-at-n-4.html), for the isotropic cone.
 - [The Spin-Three Carrier and the Hermitian Form at $n=4$](the-spin-three-carrier-and-the-hermitian-form-at-n-4.html), for the positive-definite Hermitian form.
 - [The Spin-One Carrier and the Trace Form at $n=4$](the-spin-one-carrier-and-the-trace-form-at-n-4.html), for the comparison.

@@ -122,4 +122,4 @@ The determinant restricted to the symmetric half has inertia $(1,2)$ and cuts it
 - James R. Munkres, *Topology* (Pearson, 2000), for the topology of the cones and their components.
 - [The Topology of $M_2(\mathbb{C})$](the-topology-of-m2c.html), for the ambient topology.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$](the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html), for the halves studied here.
-- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the inertia of the trace form used here.
+- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-inertia-on-the-two-halves-of-m2r.html), for the inertia of the trace form used here.

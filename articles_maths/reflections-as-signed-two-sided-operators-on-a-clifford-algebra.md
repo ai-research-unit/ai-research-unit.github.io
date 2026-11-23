@@ -1,5 +1,5 @@
 
-# __Reflections as Signed The Family of Two-Sided Operators on a Clifford Algebra__
+# __Reflections as Signed Two-Sided Operators on a Clifford Algebra__
 
 ## Introduction
 

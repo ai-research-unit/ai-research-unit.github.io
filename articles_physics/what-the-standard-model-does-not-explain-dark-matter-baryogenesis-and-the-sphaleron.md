@@ -13,7 +13,7 @@ Two of the model's failures are exact and quantitative, and a third — the one 
 The three are different kinds of failure. Dark matter is an inventory failure: the model has no candidate, and the failure cannot be repaired without adding a field. Baryogenesis is a *rate* failure: every ingredient is present, and each is present in the wrong amount. The sphaleron is neither a failure nor a success but the calculation that connects the two — it is what makes $B$ violation real, and it is also what forbids the model from using it.
 
 - The dark matter is $5.36$ times the baryon density, and the model's only dark candidates are excluded: neutrinos by their mass, the Higgs by its lifetime, the neutron by decaying. So the inventory is empty and the failure is structural.
-- The neutral-current bound is the cleanest exclusion in the model. The $Z$ width counts neutrino species: $N_{\nu_{\mathrm{neu}}}=2.9963\pm0.0074$. A fourth generation with a light neutrino is excluded by the same measurement that confirms the first three.
+- The neutral-current bound is the cleanest exclusion in the model. The $Z$ width counts neutrino species: $N_{\xi_{\mathrm{neu}}}=2.9963\pm0.0074$. A fourth generation with a light neutrino is excluded by the same measurement that confirms the first three.
 - The baryon asymmetry is $\digamma_{\mathrm{bau}}=6.1\times10^{-10}$, one baryon per $1.6\times10^{9}$ photons. The Standard Model cannot produce it, and the reason is not that its CP violation is small — it is that $B-L$ is conserved exactly, so from a symmetric start the answer is zero, and not merely small.
 - The sphaleron is at $9.0$ TeV, and its rate is Boltzmann-suppressed: $\exp(-E_{\mathrm{sph}}/T)=10^{-39}$ at $T=100$ GeV and *exactly zero* today. Its physical consequence is a proton lifetime above $10^{160}$ years.
 - The electroweak phase transition is a crossover, not a first-order transition, for any Higgs above about $72$ GeV. At $125.09$ GeV there is no bubble nucleation, hence no departure from equilibrium, hence the third Sakharov condition fails outright.
@@ -49,21 +49,23 @@ Any candidate must have three properties.
 
 The sharpest single measurement is the Bullet Cluster: two galaxy clusters that have passed through each other, with the X-ray gas (baryons) shocked and slowed in the middle while the gravitational mass, reconstructed from lensing, has passed through. The mass-to-light ratio tracks the galaxies and not the gas. That is a direct statement that the dark component is collisionless and the baryonic component is not, and it cannot be reproduced by any modification of gravity that couples to baryons alone.
 
+A mass in this article is a fraction of the vacuum value, $n_i=m_i/m_{\mathrm{vev}}$ with $E_{\mathrm{vev}}=246.22$ GeV; a temperature, an energy and a sphaleron scale stay in electronvolts.
+
 The model's own candidates fail one by one.
 
-| Candidate | Mass | Why it fails |
+| Candidate | $n$ | Why it fails |
 |---|---|---|
-| Neutrinos | $\Sigma m_{\nu_{\mathrm{neu}}}<0.12$ eV | Hot: free-streams out of structures; at most $1.1\%$ of the dark density |
-| Higgs | $125$ GeV | Decays in $10^{-22}$ s |
-| Neutron | $939.6$ MeV | Decays in $880$ s |
+| Neutrinos | $\Sigma n_{\xi_{\mathrm{neu}}}<4.9\times10^{-13}$ | Hot: free-streams out of structures; at most $1.1\%$ of the dark density |
+| Higgs | $0.5080$ | Decays in $10^{-22}$ s |
+| Neutron | $3.816\times10^{-3}$ | Decays in $880$ s |
 | Gluons, photons | $0$ | Massless, and they were in equilibrium |
-| $Z$, $W$ | $91.2$, $80.4$ GeV | Decay in $10^{-25}$ s |
+| $Z$, $W$ | $0.3704$, $0.3265$ | Decay in $10^{-25}$ s |
 | The vacuum | — | Contributes to dark *energy*, not to matter; and with the wrong sign and magnitude |
 
-The neutrino row can be quantified. The cosmological bound on the sum of neutrino masses is $\Sigma m_{\nu_{\mathrm{neu}}}<0.12$ eV, and the relic density is
+The neutrino row can be quantified. The cosmological bound on the sum of neutrino masses is $\Sigma n_{\xi_{\mathrm{neu}}}<4.9\times10^{-13}$, and the relic density is
 
 $$
-\Omega_{\jmath} h^2=\frac{\Sigma m_{\nu_{\mathrm{neu}}}}{93.14\ \mathrm{eV}} ,
+\Omega_{\jmath} h^2=\frac{\Sigma n_{\xi_{\mathrm{neu}}}}{3.783\times10^{-10}} ,
 $$
 
 so at the bound $\Omega_{\jmath} h^2=0.00129$, which is $1.1\%$ of $\Omega_{\mathrm{DM}}h^2$. So [the neutrino article](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) settles the question in the negative with a number: neutrinos are a $1\%$ correction to the dark component and cannot be it. This is also why "hot dark matter" was abandoned in the 1980s — the same calculation, with the same conclusion, before the oscillations were measured.
@@ -75,25 +77,25 @@ The real obstacle is a symmetry problem. Even a new neutral particle is not auto
 The $Z$ boson's invisible width counts the light neutrino species:
 
 $$
-\Gamma_{\mathrm{inv}}=\frac{N_{\nu_{\mathrm{neu}}} G_F M_Z^3}{12\sqrt2\pi}\left(1+\dots\right) ,
+\Gamma_{\mathrm{inv}}=\frac{N_{\xi_{\mathrm{neu}}} G_F M_Z^3}{12\sqrt2\pi}\left(1+\dots\right) ,
 $$
 
 and the fit to the $Z$ line shape gives
 
 $$
-N_{\nu_{\mathrm{neu}}}=2.9963\pm0.0074 .
+N_{\xi_{\mathrm{neu}}}=2.9963\pm0.0074 .
 $$
 
 The reading has two parts.
 
 - Three species are confirmed, to a part in three hundred. This is the strongest single piece of evidence that the generation structure stops at three.
-- A fourth species with $m_{\nu_{\mathrm{neu}}}<M_Z/2=45.6$ GeV is excluded at many standard deviations. So the model cannot be extended by adding a fourth generation with a light neutrino, and any new neutral fermion must either be heavier than half the $Z$ or not couple to it.
+- A fourth species with $n_{\xi_{\mathrm{neu}}}<n_Z/2=0.1852$ is excluded at many standard deviations. So the model cannot be extended by adding a fourth generation with a light neutrino, and any new neutral fermion must either be heavier than half the $Z$ or not couple to it.
 
-This bound closes the simplest door. The obvious way to make dark matter out of the model's own content is to add a fourth generation and let its neutrino be the dark matter. That door is shut twice: by $N_{\nu_{\mathrm{neu}}}$, and by the relic density above — a fourth neutrino of mass up to $45$ GeV would still be relativistic at decoupling if light, and hot if light, and excluded by $N_{\nu_{\mathrm{neu}}}$ if it is in equilibrium.
+This bound closes the simplest door. The obvious way to make dark matter out of the model's own content is to add a fourth generation and let its neutrino be the dark matter. That door is shut twice: by $N_{\xi_{\mathrm{neu}}}$, and by the relic density above — a fourth neutrino with $n_\nu$ up to $0.1828$ would still be relativistic at decoupling if light, and hot if light, and excluded by $N_{\xi_{\mathrm{neu}}}$ if it is in equilibrium.
 
-There is a loophole. $N_{\nu_{\mathrm{neu}}}$ counts species in equilibrium with the $Z$ at $T\sim M_Z$. A particle that decoupled earlier, or never coupled to the $Z$ at all, is invisible to this measurement. So the bound excludes a *class* of candidates — those with full weak interactions — and not the possibility of a new sector. The hidden sector is where the model's extensions have gone, and this is why.
+There is a loophole. $N_{\xi_{\mathrm{neu}}}$ counts species in equilibrium with the $Z$ at $T\sim M_Z$. A particle that decoupled earlier, or never coupled to the $Z$ at all, is invisible to this measurement. So the bound excludes a *class* of candidates — those with full weak interactions — and not the possibility of a new sector. The hidden sector is where the model's extensions have gone, and this is why.
 
-The framework has no position on any of this. $N_{\nu_{\mathrm{neu}}}$ is a measurement of a coupling the framework imports, and the generation count of three is an input it does not explain. [The parameter-count article](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html) recorded the count of generations among the discrete inputs. This article adds only that the count is measured to a part in three hundred, which is a precision the framework has no way to address.
+The framework has no position on any of this. $N_{\xi_{\mathrm{neu}}}$ is a measurement of a coupling the framework imports, and the generation count of three is an input it does not explain. [The parameter-count article](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html) recorded the count of generations among the discrete inputs. This article adds only that the count is measured to a part in three hundred, which is a precision the framework has no way to address.
 
 ## What the Dark Matter Could Be
 
@@ -101,16 +103,16 @@ The standing proposals, with their status.
 
 | Candidate | Mass range | Status | Framework's relation |
 |---|---|---|---|
-| WIMP, a stable weak multiplet | $1$ GeV – $100$ TeV | Not found; direct detection limits exclude the simplest | None: no new multiplet available |
-| Axion | $\mu$eV – meV | Viable; the corpus constructs it | [Constructed](the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html) |
-| Sterile neutrino | keV | Viable; needs a right-handed singlet | [The seesaw article](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html) supplies it |
+| WIMP, a stable weak multiplet | $4\times10^{-3}$ – $4\times10^{2}$ | Not found; direct detection limits exclude the simplest | None: no new multiplet available |
+| Axion | $4\times10^{-12}$ – $4\times10^{-9}$ | Viable; the corpus constructs it | [Constructed](the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html) |
+| Sterile neutrino | $4\times10^{-6}$ | Viable; needs a right-handed singlet | [The seesaw article](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html) supplies it |
 | Hidden sector | Any | Viable but unconstrained | None: no second sector |
 | Primordial black holes | $10^{15}$–$10^{3}\,M_\odot$ | Constrained but not excluded in windows | None: not a particle question |
 
 The direct-detection limits are the reason the WIMP row is nearly closed.
 
 $$
-\sigma_{\mathrm{SI}}<2.6\times10^{-47}\ \mathrm{cm}^2\ \text{at}\ m_\chi\approx30\ \mathrm{GeV} .
+\sigma_{\mathrm{SI}}<2.6\times10^{-47}\ \mathrm{cm}^2\ \text{at}\ n_\chi\approx0.1219 .
 $$
 
 A weak-scale cross-section is of order $4\times10^{-33}$ cm$^2$ — a few picobarns. So the limit is
@@ -210,7 +212,7 @@ Baryogenesis in the Standard Model therefore requires new physics that violates 
 | Leptogenesis | Yes, via Majorana neutrino masses | $10^{9}$–$10^{12}$ GeV |
 | Affleck–Dine | Yes, via a flat direction | $\gtrsim$ TeV |
 
-The framework's contribution is the identity itself. [The anomalies article](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) derives the anomalous divergence from the biquaternionic path integral, and [the Fujikawa article](the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html) constructs it by the measure's non-invariance under the anomalous transformation. So the framework supplies the *mechanism of the anomaly* — the reason a classical conservation law fails — and therefore supplies the only ingredient of baryogenesis that the model has. What it does not supply is any reason for $B-L$ to be violated, since it has no leptoquark and no Majorana mass of its own.
+The framework's contribution is the identity itself. [The anomalies article](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html) derives the anomalous divergence from the biquaternionic path integral, and [the Fujikawa article](the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html) constructs it by the measure's non-invariance under the anomalous transformation. So the framework supplies the *mechanism of the anomaly* — the reason a classical conservation law fails — and therefore supplies the only ingredient of baryogenesis that the model has. What it does not supply is any reason for $B-L$ to be violated, since it has no leptoquark and no Majorana mass of its own.
 
 The link to [the Majorana article](the-majorana-equation-in-biquaternionic-form.html) is direct: the Majorana mass term violates $L$ by two units, hence $B-L$ by two, and is the only $B-L$ violation the corpus can build. So the framework's one available baryogenesis route is leptogenesis, and it is available because a different article needed the Majorana condition for a different reason. That is the same pattern as the axion.
 
@@ -279,10 +281,10 @@ Baryogenesis requires a departure from equilibrium. The Standard Model's candida
 The answer is one number.
 
 $$
-m_H>72\ \mathrm{GeV}\ \Longrightarrow\ \text{the transition is a crossover, not a first-order transition.}
+n_H>0.2924\ \Longrightarrow\ \text{the transition is a crossover, not a first-order transition.}
 $$
 
-The measured $m_H=125.09$ GeV is $74\%$ above that threshold. So the transition is smooth: the expectation value turns on continuously, there are no bubbles, no walls, no supercooling, and no departure from equilibrium at all. The third Sakharov condition fails outright, not marginally.
+The measured $n_H=0.5080$ is $74\%$ above that threshold. So the transition is smooth: the expectation value turns on continuously, there are no bubbles, no walls, no supercooling, and no departure from equilibrium at all. The third Sakharov condition fails outright, not marginally.
 
 The Higgs mass decides it. The transition is first order when the cubic term in the finite-temperature effective potential is strong enough to create a barrier between the symmetric and broken minima. That term is proportional to $g^3T$ from the gauge bosons and to $\digamma_{\mathrm{qtc}}^{3/2}T$ from the scalar; a larger $\digamma_{\mathrm{qtc}}$ raises the barrier at $T=0$ but also makes the transition smoother at finite temperature, and the competition resolves in favour of a crossover once the Higgs is heavier than about $72$–$80$ GeV. At $125$ GeV there is no barrier.
 
@@ -322,7 +324,7 @@ GUT baryogenesis needs a leptoquark, which the ceiling forbids. Affleck–Dine n
 
 The framework supplies four items.
 
-- The anomaly identity. The reason $B$ and $L$ are not conserved — [the anomalies](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) and [Fujikawa](the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html) articles derive the non-invariance of the measure, which is the whole content of $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} j_{B,\imath}\propto F\tilde F$.
+- The anomaly identity. The reason $B$ and $L$ are not conserved — [the anomalies](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html) and [Fujikawa](the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html) articles derive the non-invariance of the measure, which is the whole content of $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} j_{B,\imath}\propto F\tilde F$.
 - The quantisation. [The $\theta$-vacuum article](the-theta-vacuum-in-biquaternionic-form.html) supplies the integer winding number from the biquaternion index, which is what makes $\delta B=3$ discrete.
 - The instanton gas. [The semiclassical article](the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html) supplies the Euclidean sum over sectors, which gives the $\theta$ dependence of the vacuum energy.
 - The Majorana condition, which is the only $B-L$ violation available here, and therefore the only route to leptogenesis.
@@ -339,8 +341,8 @@ The table gives each number the article uses and says whether it was imported or
 | Item | Status |
 |---|---|
 | $\Omega_{\mathrm{DM}}h^2=0.1200$, $\Omega_b h^2=0.02237$, ratio $5.36$ | Imported; ratio computed here |
-| $\Omega_{\jmath} h^2<0.00129$, $1.1\%$ of the dark density | Computed here from $\Sigma m_{\nu_{\mathrm{neu}}}<0.12$ eV |
-| $N_{\nu_{\mathrm{neu}}}=2.9963\pm0.0074$ | Imported |
+| $\Omega_{\jmath} h^2<0.00129$, $1.1\%$ of the dark density | Computed here from $\Sigma n_{\xi_{\mathrm{neu}}}<4.9\times10^{-13}$ |
+| $N_{\xi_{\mathrm{neu}}}=2.9963\pm0.0074$ | Imported |
 | $\sigma_{\mathrm{SI}}<2.6\times10^{-47}$ cm$^2$, $1.5\times10^{14}$ below weak | Imported limit; ratio computed here |
 | $\digamma_{\mathrm{bau}}=6.1\times10^{-10}$ | Imported |
 | $J=3.13\times10^{-5}$ | Computed here from $\digamma_{\mathrm{ckm},12}$, $A$, $\bar\rho$, $\bar\digamma_{\mathrm{bau}}$, $\delta$ |
@@ -350,7 +352,7 @@ The table gives each number the article uses and says whether it was imported or
 | $E_{\mathrm{sph}}=9.0$ TeV, $B=1.90$ | Imported energy; $B$ recomputed here |
 | $\exp(-E_{\mathrm{sph}}/T)=10^{-39}$ at $100$ GeV | Computed here |
 | $\tau_p>10^{160}$ yr | Imported ('t Hooft) |
-| $m_H>72$ GeV gives a crossover; $T_c=159.5$ GeV | Imported; the comparison with $125.09$ computed here |
+| $n_H>0.2924$ gives a crossover; $T_c=159.5$ GeV | Imported; the comparison with $n_H=0.5080$ computed here |
 | $B=28L/79$ | Computed here from the standard conversion factor |
 | A dark matter candidate, the sphaleron, a first-order transition | not available |
 
@@ -358,7 +360,7 @@ The table gives each number the article uses and says whether it was imported or
 
 The Standard Model fails on two of these three subjects exactly, and on the third it succeeds in a way that forbids it from being useful.
 
-The dark matter is $5.36$ times the baryon density, and the model's spectrum is closed: neutrinos are $1.1\%$ of it at the cosmological mass bound, the Higgs decays in $10^{-22}$ s, and the neutron in $880$ s. The neutral-current bound $N_{\nu_{\mathrm{neu}}}=2.9963\pm0.0074$ confirms three species and excludes a fourth with a light neutrino, so the simplest door is shut by the same measurement that opened the model. Direct detection at $2.6\times10^{-47}$ cm$^2$ has pushed the simplest WIMP $1.5\times10^{14}$ below the weak scale. The two candidates the corpus can build — the axion and the sterile neutrino — both arrive as by-products of solving other problems.
+The dark matter is $5.36$ times the baryon density, and the model's spectrum is closed: neutrinos are $1.1\%$ of it at the cosmological mass bound, the Higgs decays in $10^{-22}$ s, and the neutron in $880$ s. The neutral-current bound $N_{\xi_{\mathrm{neu}}}=2.9963\pm0.0074$ confirms three species and excludes a fourth with a light neutrino, so the simplest door is shut by the same measurement that opened the model. Direct detection at $2.6\times10^{-47}$ cm$^2$ has pushed the simplest WIMP $1.5\times10^{14}$ below the weak scale. The two candidates the corpus can build — the axion and the sterile neutrino — both arrive as by-products of solving other problems.
 
 The baryon asymmetry is $\digamma_{\mathrm{bau}}=6.1\times10^{-10}$, one per $1.6\times10^{9}$ photons, and it cannot be an initial condition because inflation erases it. The model satisfies the three Sakharov conditions nominally and fails all three quantitatively: the sphaleron violates $B$, but $B-L$ is conserved exactly, so from $B-L=0$ the answer is zero and not merely small; the CKM phase has $J=3.13\times10^{-5}$ and yields $\digamma_{\mathrm{bau}}\sim10^{-20}$, eleven orders short; and the electroweak transition is a crossover for any Higgs above $72$ GeV, so there is no departure from equilibrium at $125.09$ GeV.
 
@@ -374,7 +376,7 @@ The one route it can build is leptogenesis, with $B=28L/79$, and that route exis
 |---|---|
 | $\Omega_i h^2$ | Density in units of critical density, scaled by $h^2$ |
 | $\digamma_{\mathrm{bau}}$ | Baryon-to-photon ratio, $6.1\times10^{-10}$ |
-| $N_{\nu_{\mathrm{neu}}}$ | Number of light neutrino species, $2.9963\pm0.0074$ |
+| $N_{\xi_{\mathrm{neu}}}$ | Number of light neutrino species, $2.9963\pm0.0074$ |
 | $J$ | Jarlskog invariant, $3.13\times10^{-5}$ |
 | $j_{B,\imath}$, $j_{L,\imath}$ | Baryon and lepton number currents |
 | $F\tilde F$ | Topological charge density |
@@ -390,7 +392,7 @@ The one route it can build is leptogenesis, with $B=28L/79$, and that route exis
 - [The Theta Vacuum in Biquaternionic Form](the-theta-vacuum-in-biquaternionic-form.html). The integer winding number, the central phase, and why $\delta B$ is quantised.
 - [Instantons and Solitons in Biquaternionic Form](instantons-and-solitons-in-biquaternionic-form.html). The self-dual object the framework does host, and the reason the sphaleron is not one.
 - [The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form](the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html). The Euclidean sum that gives the $\theta$ dependence of the vacuum energy.
-- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The anomalous divergence, which is the only Sakharov ingredient the model has.
+- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html). The anomalous divergence, which is the only Sakharov ingredient the model has.
 - [The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form](the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html). The measure's non-invariance, derived.
 - [The ADHM Construction and Biquaternion Instanton Data](the-adhm-construction-and-biquaternion-instanton-data.html). Why the topological data is quaternionic linear data, and why a non-self-dual saddle point has none.
 - [The Majorana Equation in Biquaternionic Form](the-majorana-equation-in-biquaternionic-form.html). The only $B-L$ violation the corpus can build, and hence the only route to leptogenesis.
@@ -398,5 +400,5 @@ The one route it can build is leptogenesis, with $B=28L/79$, and that route exis
 - [The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form](the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html). The corpus's one dark matter candidate that arrives for an independent reason.
 - [The PMNS Matrix and Lepton Mixing](the-pmns-matrix-and-lepton-mixing.html). The two Majorana phases that leptogenesis needs, and why the quark sector's failure does not constrain them.
 - [The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form](the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.html). The object whose finite-temperature behaviour decides whether the transition is first order.
-- [The Landau Pole, Triviality and Vacuum Stability](the-landau-pole-triviality-and-vacuum-stability.html). The quartic at $125$ GeV, which is also what makes the transition a crossover.
+- [The Landau Pole, Triviality and Vacuum Stability](the-landau-pole-triviality-and-vacuum-stability.html). The quartic at $n_H=0.5080$, which is also what makes the transition a crossover.
 - [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html). The discrete inputs — the group, the content, the generation count — and where dark matter and $B-L$ violation would appear if they existed.

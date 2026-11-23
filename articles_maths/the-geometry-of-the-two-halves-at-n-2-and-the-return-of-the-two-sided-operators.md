@@ -119,5 +119,5 @@ The group of two-sided operators has the origin, the rank-one cone and the inver
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (American Mathematical Society, 2001), for symmetric spaces and their geodesics.
 - Barrett O'Neill, *Semi-Riemannian Geometry* (Academic Press, 1983), for Lorentz cones and their null directions.
 - [The Two Halves and the Analysis: Smooth Structures at $n=2$](the-two-halves-and-the-analysis-smooth-structures-at-n-2.html), for the smooth structures used here.
-- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the metric of the halves.
+- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-inertia-on-the-two-halves-of-m2r.html), for the metric of the halves.
 - [The Two-Sided Operators and the Segre Cone at $n=2$](the-two-sided-operators-and-the-segre-cone-at-n-2.html), for the operators whose geometry is described here.

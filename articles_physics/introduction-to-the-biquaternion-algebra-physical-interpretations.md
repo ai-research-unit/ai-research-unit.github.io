@@ -225,8 +225,8 @@
 
 ##### Matrix Operator Representations
 
-- [$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation : Operators](../articles_maths/m2c-h-standard-representation-operators.html)
-- [$M_4(\mathbb{R})_{\mathbb{H}_L}$ Axis-Free Representation : Operators](../articles_maths/m4r-h-l-regular-representation-operators.html)
+- [$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation : Operators](../articles_maths/m2c-h-pauli-representation-operators.html)
+- [$M_4(\mathbb{R})_{\mathbb{H}_L}$ Axis-Free Representation : Operators](../articles_maths/m4r-h-l-axis-free-representation-operators.html)
 
 #### Operators
 
@@ -338,9 +338,9 @@
 
 - [Introduction to the Spin-Half Bispinors Spaces](../articles_maths/the-spin-half-bispinor-spaces.html)
 - [Spinors and Dirac Spinors in the Biquaternion Algebra](../articles_maths/spinors-and-dirac-spinors-in-the-biquaternion-algebra.html)
-- [The Spin-Half Bispinors and N Norm Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-n-norm-regularity.html)
-- [The Spin-Half Bispinors and Spectral Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-spectral-regularity.html)
-- [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity.html)
+- [The Spin-Half Bispinors and N Norm Regularity](../articles_maths/the-spin-half-bispinors-and-n-norm-regularity.html)
+- [The Spin-Half Bispinors and Spectral Regularity](../articles_maths/the-spin-half-bispinors-and-spectral-regularity.html)
+- [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity](../articles_maths/the-spin-half-bispinors-and-the-sectors-of-n-and-spectral-regularity.html)
 
 ##### The Spin-One Anti-Hermitian Subspace
 

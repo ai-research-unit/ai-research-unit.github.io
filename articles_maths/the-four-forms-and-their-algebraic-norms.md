@@ -155,4 +155,4 @@ The matrix space carries four forms: the trace form $\operatorname{tr}(XY)$, ind
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the algebraic norm of a central simple algebra and its multiplicativity.
 - [The Hilbert–Schmidt Form](the-hilbert-schmidt-form.html), for the definite form and the norm used in the bound.
 - [The Killing Form, Its Radical and the Triangular Case](the-killing-form-its-radical-and-the-triangular-case.html), for the second of the four forms.
-- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the first of the four and its inertia.
+- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-inertia-on-the-two-halves.html), for the first of the four and its inertia.

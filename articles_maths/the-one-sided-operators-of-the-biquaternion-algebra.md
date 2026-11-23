@@ -1,4 +1,4 @@
-# __The One-Sided Operators__
+# __The One-Sided Operators of the Biquaternion Algebra__
 
 ## Introduction
 

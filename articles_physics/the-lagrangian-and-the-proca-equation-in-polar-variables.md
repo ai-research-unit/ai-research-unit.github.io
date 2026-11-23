@@ -281,7 +281,7 @@ The chart is a diffeomorphism onto the branch, so its Euler–Lagrange equations
 - [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), for the equation, the Lorenz condition and the polarizations.
 - [Canonical Quantization of the Biquaternion Proca Field](canonical-quantization-of-the-biquaternion-proca-field.html), for the Legendre transform and the constraint structure in the component variables.
 - [The Lagrangian and the Schrödinger Equation in Polar Variables](the-lagrangian-and-the-schrodinger-equation-in-polar-variables.html), for the first-order case, whose constrained structure is the contrast used here.
-- [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane](the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html), for the carrier and the reality obstruction.
+- [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane](the-self-dual-and-anti-self-dual-split-spin-1-from-the-bivector-plane.html), for the carrier and the reality obstruction.
 - [The Third Polarization and the Self-Dual Split of the Massive Field Strength](the-third-polarization-and-the-self-dual-split-of-the-massive-field-strength.html), for the three on-shell parameters.
 - Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter", *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the tensor formulation with unit-vector multipliers.
 - Paul Adrien Maurice Dirac, *Lectures on Quantum Mechanics* (Yeshiva University, 1964), for the constraint analysis and the classification of constraints.

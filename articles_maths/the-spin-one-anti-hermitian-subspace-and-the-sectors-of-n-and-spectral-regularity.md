@@ -401,5 +401,5 @@ closure.
 $\mathbb{R}(ie_t)$.
 - [The Spin-Zero Centre Subspace and the Sectors of N and Spectral Regularity](the-spin-zero-centre-subspace-and-the-sectors-of-n-and-spectral-regularity.html),
 for the same question answered on the centre.
-- [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity](the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity.html),
+- [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity](the-spin-half-bispinors-and-the-sectors-of-n-and-spectral-regularity.html),
 for the same question answered on the plane, the spinor spaces and the bispinor space.

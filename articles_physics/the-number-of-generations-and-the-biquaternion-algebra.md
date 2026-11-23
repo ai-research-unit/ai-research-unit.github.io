@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Standard Model's fermions come in three generations (families), each an identical copy of the same gauge quantum numbers with different masses: $(e,\nu_{\mathrm{neu},e},\mathrm u,d)$, $(\imath,\nu_{\mathrm{neu},\imath},c,s)$, $(\tau,\nu_{\mathrm{neu},\tau},t,b)$. The number of generations is a free parameter of the renormalisable Standard Model — the theory can be written with any number of copies — and it is fixed to three by experiment, chiefly by the measured width of the $Z$ boson, which counts the light neutrino species, and by the observation of the top quark. Why there are three, and whether the number is fixed by some deeper principle, is the flavour puzzle in its counting aspect.
+The Standard Model's fermions come in three generations (families), each an identical copy of the same gauge quantum numbers with different masses: $(e,\xi_{\mathrm{neu},e},\mathrm u,d)$, $(\imath,\xi_{\mathrm{neu},\imath},c,s)$, $(\tau,\xi_{\mathrm{neu},\tau},t,b)$. The number of generations is a free parameter of the renormalisable Standard Model — the theory can be written with any number of copies — and it is fixed to three by experiment, chiefly by the measured width of the $Z$ boson, which counts the light neutrino species, and by the observation of the top quark. Why there are three, and whether the number is fixed by some deeper principle, is the flavour puzzle in its counting aspect.
 
 This article asks what the biquaternion framework says about the number. The answer is short and is stated at the outset.
 
@@ -25,7 +25,7 @@ The framework results used here are those of the companion articles:
 What experiment fixes. The number of light neutrino species is measured from the invisible width of the $Z$ boson,
 
 $$
-N_{\nu_{\mathrm{neu}}} = \frac{\Gamma_{\mathrm{inv}}}{\Gamma_{\mathrm{theor}}(Z\to\nu_{\mathrm{neu}}\bar{\jmath})} = 2.984\pm0.008 ,
+N_{\xi_{\mathrm{neu}}} = \frac{\Gamma_{\mathrm{inv}}}{\Gamma_{\mathrm{theor}}(Z\to\xi_{\mathrm{neu}}\bar{\jmath})} = 2.984\pm0.008 ,
 $$
 
 which excludes a fourth light neutrino at high significance; the direct observation of the top quark completes the third generation, and the absence of a fourth chiral generation follows from the same $Z$ width and from Higgs-boson production rates. The Standard Model therefore has $N_g=3$ experimentally, with no theoretical principle selecting the value.
@@ -142,7 +142,7 @@ The breaking, and the count of parameters. The quark mass matrices and the Yukaw
 | Flavour-group dimension | $2$ | $8$ | $18$ | $2N_g^2$ |
 | Anomaly sums $\sum Y$, $\sum Y^3$, $\sum YT_3^2$ | $0$ | $0$ | $0$ | none |
 | $\dim_{\mathbb{C}}\mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$ | $4$ | $8$ | $12$ | $4N_g$ |
-| $Z$-width count $N_{\nu_{\mathrm{neu}}}$ | — | — | $2.984\pm0.008$ | measurement |
+| $Z$-width count $N_{\xi_{\mathrm{neu}}}$ | — | — | $2.984\pm0.008$ | measurement |
 
 The anomaly rows are zero for every $N_g$, and no row contains a condition that selects three. The only entries that single out the physical value are the measured ones: the $Z$ width and the observation of the top quark.
 
@@ -162,7 +162,7 @@ $$
 
 and the number of phases vanishes for $N_g=1$ and $N_g=2$ and is one for $N_g=3$. CP violation in the quark sector therefore requires $N_g\ge3$, and this was one of the original motivations of the Kobayashi–Maskawa paper. The framework inherits the counting and states it as a consistency condition: a CP-violating quark sector needs at least three generations.
 
-The $Z$ width fixes the light count. The invisible width of the $Z$ counts the light neutrino species; the measured value $N_{\nu_{\mathrm{neu}}}=2.984\pm0.008$ fixes the number of light generations to three. The framework records this as the empirical determination, with the qualification that a fourth generation with a heavy neutrino would evade the $Z$ width and is constrained instead by the Higgs-boson measurements and direct searches. The framework supplies no value for the number and no reason for the count to be three; it states the two experimental facts.
+The $Z$ width fixes the light count. The invisible width of the $Z$ counts the light neutrino species; the measured value $N_{\xi_{\mathrm{neu}}}=2.984\pm0.008$ fixes the number of light generations to three. The framework records this as the empirical determination, with the qualification that a fourth generation with a heavy neutrino would evade the $Z$ width and is constrained instead by the Higgs-boson measurements and direct searches. The framework supplies no value for the number and no reason for the count to be three; it states the two experimental facts.
 
 The unitarity of the mixing matrix. The mixing matrix of the flavour sector is $*$-unitary by the framework's structure as well as by gauge invariance: the flavour transformation on $\mathcal{F}$ is a $*$-unitary $N_g\times N_g$ matrix, and its unitarity is what the companion article on the CKM matrix uses to count the parameters. The framework's flavour operators are $I_{\mathcal{S}_{\mathrm{rep}}}\otimes \tilde Q$ with $\tilde Q$ $*$-unitary, and the counting of angles and phases above is the counting of the $*$-unitary group of $\mathcal{F}$. The generation number enters the flavour predictions only through the dimension of this group.
 
@@ -222,7 +222,7 @@ The mixing follows the hierarchies. The same flavour matrix controls the mixing:
 
 Extending the reality structure. The framework's module carries the antilinear real structure $\mathcal{C}$ (charge conjugation, $\mathcal{C}^2=1$), and the companion articles on the neutrino and the seesaw use it. On the enlarged space $\mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$ the real structure can be extended either as $\mathcal{C}\otimes I_{N_g}$ or as $\mathcal{C}\otimes J$ with $J$ an antilinear involution on the flavour factor; the two give physically different Majorana sectors. The first makes every generation's Majorana structure identical and leaves the flavour factor complex; the second allows the generations to differ in their reality properties — for instance a Dirac neutrino in one generation and a Majorana neutrino in another.
 
-**What this shows about the multiplicity.** The freedom in extending $\mathcal{C}$ is another expression of the multiplicity's independence: the algebra's real structure acts on the module factor, and the flavour factor carries its own, unconstrained, complex structure. The framework supplies the module's $\mathcal{C}$ and leaves the flavour factor's reality structure open, exactly as it leaves its mass matrix open. For the physical spectrum the choice is fixed by the observed neutrino sector — the companion articles on the neutrino and the seesaw take $\mathcal{C}\otimes I$ and the standard $\nu_{\mathrm{neu},R}$ singlet per generation — but the fixing is empirical.
+**What this shows about the multiplicity.** The freedom in extending $\mathcal{C}$ is another expression of the multiplicity's independence: the algebra's real structure acts on the module factor, and the flavour factor carries its own, unconstrained, complex structure. The framework supplies the module's $\mathcal{C}$ and leaves the flavour factor's reality structure open, exactly as it leaves its mass matrix open. For the physical spectrum the choice is fixed by the observed neutrino sector — the companion articles on the neutrino and the seesaw take $\mathcal{C}\otimes I$ and the standard $\xi_{\mathrm{neu},R}$ singlet per generation — but the fixing is empirical.
 
 The generation number and the reality condition. A reality condition can halve a spectrum: the Majorana condition removes half the components of a field. It does not, however, halve the number of generations: applying a Majorana condition generation by generation leaves $N_g$ distinct Majorana fields, and combining pairs leaves Dirac fields. The generation number is untouched by the reality structure, which is a further reason it cannot be fixed by the framework's conjugation data. The point is worth stating because the two halvings — of components and of generations — are easy to confuse, and only the first is a framework operation.
 
@@ -235,7 +235,7 @@ The generation number and the reality condition. A reality condition can halve a
 | The commutant identification of $N_g$ as a multiplicity | **Supplied**; standard semisimple representation theory |
 | The independence of the invariants from $N_g$ | **Supplied**, listed explicitly |
 | The generation-independence of the anomaly conditions | **Supplied** by the anomaly article's per-generation cancellation |
-| The $Z$-width determination $N_{\nu_{\mathrm{neu}}}=2.984\pm0.008$ | **Transcribed**; standard |
+| The $Z$-width determination $N_{\xi_{\mathrm{neu}}}=2.984\pm0.008$ | **Transcribed**; standard |
 | CP violation requiring $N_g\ge3$, and the parameter count $(N_g-1)^2$ | **Transcribed**; standard |
 | A derivation of $N_g=3$ | **Not supplied**; the algebra has no index, no internal space, and no dynamics |
 | An identification of $\vec e_x,\vec e_y,\vec e_z$ with the generations | **Excluded**; the $\vec e_\imath$ transform as a Lorentz vector, the generations do not |
@@ -255,7 +255,7 @@ The generation number and the reality condition. A reality condition can halve a
 
 The biquaternion framework carries the generation index of the Standard Model as a **multiplicity factor**: an $N_g$-generation spectrum is the module $\mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$, on which the algebra $\mathbb{B}$ acts on the module factor and trivially on the multiplicity factor, and the flavour matrices are the operators $I_{\mathcal{S}_{\mathrm{rep}}}\otimes M$ with $M\in M_{N_g}(\mathbb{C})$. The generation number is the dimension of the multiplicity space, equivalently the commutant of the algebra's action. Every structural quantity of the framework is independent of it — $\dim_{\mathbb{R}}\mathbb{B}=8$, $\dim_{\mathbb{R}}\mathbb{B}_{\Psi}=\dim_{\mathbb{R}}\mathbb{B}_{\Phi}=4$, $\dim_{\mathbb{C}}\mathcal{S}_{\mathrm{rep}}=4$, the pairing formula, the real structure, and the sectors all have fixed values — and the anomaly cancellation conditions of the companion article vanish generation by generation, so $N_g$ copies contribute $N_g$ times zero. **The algebra does not fix the number of generations**, because it has no index, no internal space, and no dynamics, and its modules admit any multiplicity.
 
-The constraints that do touch the number are inherited from the Standard Model: the $Z$-boson invisible width measures $N_{\nu_{\mathrm{neu}}}=2.984\pm0.008$, giving three light generations, and the existence of a CP-violating Kobayashi–Maskawa phase requires $N_g\ge3$, since the number of physical mixing phases is $(N_g-1)(N_g-2)/2$ and vanishes for $N_g\le2$; the total number of mixing parameters is $(N_g-1)^2$. The framework's three imaginary units $\vec e_x,\vec e_y,\vec e_z$ are the spatial and $\mathrm{SU}(2)$ directions and transform as a Lorentz vector; they cannot be identified with the three generations, whose labels must be inert under the Lorentz group. One construction outside the algebra is read as producing a three, and it does not derive it: the exceptional groups give either three $SU(3)$ gauge factors (trinification) or three copies of the $\mathbf{27}$ in the decomposition of the $E_8$ adjoint, with the generation content inserted by hand and the chiral embedding closed by Distler and Garibaldi. The three there is read from, or chosen within, a larger structure. The framework accommodates the three observed generations; it does not explain them, and stating that clearly is the article's result.
+The constraints that do touch the number are inherited from the Standard Model: the $Z$-boson invisible width measures $N_{\xi_{\mathrm{neu}}}=2.984\pm0.008$, giving three light generations, and the existence of a CP-violating Kobayashi–Maskawa phase requires $N_g\ge3$, since the number of physical mixing phases is $(N_g-1)(N_g-2)/2$ and vanishes for $N_g\le2$; the total number of mixing parameters is $(N_g-1)^2$. The framework's three imaginary units $\vec e_x,\vec e_y,\vec e_z$ are the spatial and $\mathrm{SU}(2)$ directions and transform as a Lorentz vector; they cannot be identified with the three generations, whose labels must be inert under the Lorentz group. One construction outside the algebra is read as producing a three, and it does not derive it: the exceptional groups give either three $SU(3)$ gauge factors (trinification) or three copies of the $\mathbf{27}$ in the decomposition of the $E_8$ adjoint, with the generation content inserted by hand and the chiral embedding closed by Distler and Garibaldi. The three there is read from, or chosen within, a larger structure. The framework accommodates the three observed generations; it does not explain them, and stating that clearly is the article's result.
 
 ## Summary of Notation
 
@@ -275,7 +275,7 @@ The constraints that do touch the number are inherited from the Standard Model: 
 | $\sum Y=0,\ \sum Y^3=0,\ \sum YT_3^2=0$ | Anomaly conditions, each generation-independent |
 | $\frac{N_g(N_g-1)}{2}$, $\frac{(N_g-1)(N_g-2)}{2}$ | Mixing angles; CP-violating phases |
 | $(N_g-1)^2$ | Total mixing parameters |
-| $N_{\nu_{\mathrm{neu}}}=2.984\pm0.008$ | Light neutrino species from the $Z$ width |
+| $N_{\xi_{\mathrm{neu}}}=2.984\pm0.008$ | Light neutrino species from the $Z$ width |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar-part reading of the plain form, $N_g$-independent |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 

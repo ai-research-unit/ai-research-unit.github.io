@@ -4,11 +4,11 @@
 
 **The question.** The spin-half carrier is the plane of multiples of a rank-one projection and its closures are the minimal left ideals. What is the determinant on these spaces, and is any element of a single ideal N-regular?
 
-**Why it is the same statement.** This is the in-depth matrix reading of [The Spin-Half Bispinors and N Norm Regularity](the-spin-half-bispinor-spaces-and-n-norm-regularity.html). There the norm is $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ and the null plane is $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$; here the norm is $\det A$, the plane is $\mathbb{C}P$ and the ideal is $M_2P$. The statements are the same statements, and only the writing is new.
+**Why it is the same statement.** This is the in-depth matrix reading of [The Spin-Half Bispinors and N Norm Regularity](the-spin-half-bispinors-and-n-norm-regularity.html). There the norm is $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ and the null plane is $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$; here the norm is $\det A$, the plane is $\mathbb{C}P$ and the ideal is $M_2P$. The statements are the same statements, and only the writing is new.
 
 **What the article proves.** In this order. That $\det P=0$ and $\det(Y\!P)=0$ for every $Y$, so the plane and both ideals are null. That the ideals are maximal isotropic, of complex dimension two, half of four. That on the bispinor the determinant is the pairing, $\det(X_++X_-)=2B(X_+,X_-)$. That the pairing is nondegenerate and that the polar form is $\sum_\mu x_\mu y_\mu$ in the coefficient basis. The comparison with the other two carriers.
 
-**What the article does not do.** It does not treat the discriminant on these spaces, which is [The Spin-Half Bispinors and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinor-spaces-and-spectral-regularity-in-m2c.html); it does not treat the four sectors in full, which is [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html).
+**What the article does not do.** It does not treat the discriminant on these spaces, which is [The Spin-Half Bispinors and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinors-and-spectral-regularity-in-m2c.html); it does not treat the four sectors in full, which is [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinors-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html).
 
 **Conventions.** $\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$, so $Q_t=\tfrac12\operatorname{tr}A$ and $N(\tilde Q)=\det A$. The coefficient basis is $(\mathrm I_2,E_x,E_y,E_z)$ with $E_k=-i\sigma_k$ and coefficient tuple $x=(x_0,x_1,x_2,x_3)$. The polar form is $B(X,Y)=\tfrac12(\det(X+Y)-\det X-\det Y)$. The Hermitian form is $\langle X,Y\rangle=\tfrac12\operatorname{tr}(X^{\dagger}Y)$, a different object.
 
@@ -120,8 +120,8 @@ On the bispinor the determinant becomes the pairing, $\det(X_++X_-)=2B(X_+,X_-)$
 
 ## Further Reading
 
-- [The Spin-Half Bispinors and N Norm Regularity](the-spin-half-bispinor-spaces-and-n-norm-regularity.html), for the source's isotropy argument.
+- [The Spin-Half Bispinors and N Norm Regularity](the-spin-half-bispinors-and-n-norm-regularity.html), for the source's isotropy argument.
 - [Introduction to the Spin-Half Bispinors Spaces in $M_2(\mathbb{C})$](the-spin-half-bispinor-spaces-in-m2c.html), for the plane and the ideals.
-- [The Spin-Half Bispinors and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinor-spaces-and-spectral-regularity-in-m2c.html), for the discriminant on the same spaces.
+- [The Spin-Half Bispinors and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinors-and-spectral-regularity-in-m2c.html), for the discriminant on the same spaces.
 - [Spinors and Dirac Spinors in the Biquaternion Algebra in $M_2(\mathbb{C})$](spinors-and-dirac-spinors-in-the-biquaternion-algebra-in-m2c.html), for the Dirac pairing read as the determinant.
 - [The Spin-Zero Centre Subspace and N Norm Regularity in $M_2(\mathbb{C})$](the-spin-zero-centre-subspace-and-n-norm-regularity-in-m2c.html), for the opposite extreme on the centre.

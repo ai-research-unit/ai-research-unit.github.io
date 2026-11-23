@@ -1,4 +1,4 @@
-# __The Quaternionic Structure of the Module: Why $V_{3/2}$ Admits Real Forms__
+# __The Quaternionic Structure of the Module at $n=4$: Why $V_{3/2}$ Admits Real Forms__
 
 ## Introduction
 

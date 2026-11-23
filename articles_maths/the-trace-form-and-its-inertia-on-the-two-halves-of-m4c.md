@@ -145,4 +145,4 @@ In the matrix-unit basis the Gram matrix is a permutation with four fixed points
 - [The Two Halves as Orthogonal Complements at $n=4$](the-two-halves-as-orthogonal-complements-at-n-4.html), for the orthogonality used here.
 - [The Axis-Free Representation of $M_4(\mathbb{C})$](m4c-axis-free-representation.html), for the basis and the transpose.
 - [The Hilbert–Schmidt Form at $n=4$](the-hilbert-schmidt-form-at-n-4.html), for the positive definite companion of this form.
-- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the same computation at order two.
+- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-inertia-on-the-two-halves-of-m2r.html), for the same computation at order two.

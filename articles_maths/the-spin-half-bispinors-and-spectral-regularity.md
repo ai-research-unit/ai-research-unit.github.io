@@ -166,7 +166,7 @@ The square of the vector part on the plane is $-\lambda^{2}/4$, so the plane is 
 ## Further Reading
 
 - [Introduction to the Spin-Half Bispinors Spaces](the-spin-half-bispinor-spaces.html), for the plane, the two spinor spaces and the family of bispinor spaces
-- [The Spin-Half Bispinors and N Norm Regularity](the-spin-half-bispinor-spaces-and-n-norm-regularity.html), for the other predicate on the same spaces
+- [The Spin-Half Bispinors and N Norm Regularity](the-spin-half-bispinors-and-n-norm-regularity.html), for the other predicate on the same spaces
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the definitions of the two predicates and the four sectors
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the sector in which the plane away from the origin lies
 - [The Spectrum](the-spectrum-of-a-biquaternion.html), for the two eigenvalues of an element and the quadratic relation

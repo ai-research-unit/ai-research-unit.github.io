@@ -498,11 +498,11 @@ the norm and not $B^{2}$, so it moves elements between sectors.
 
 - [Introduction to the Spin-Half Bispinors Spaces](the-spin-half-bispinor-spaces.html), for the plane, the two spinor spaces and the family of bispinor
 spaces.
-- [The Spin-Half Bispinors and N Norm Regularity](the-spin-half-bispinor-spaces-and-n-norm-regularity.html), for the nullity of the plane and of
+- [The Spin-Half Bispinors and N Norm Regularity](the-spin-half-bispinors-and-n-norm-regularity.html), for the nullity of the plane and of
 the ideals, and the pairing of the two halves.
-- [The Spin-Half Bispinors and Spectral Regularity](the-spin-half-bispinor-spaces-and-spectral-regularity.html), for the spectrum $\{0,\lambda\}$
+- [The Spin-Half Bispinors and Spectral Regularity](the-spin-half-bispinors-and-spectral-regularity.html), for the spectrum $\{0,\lambda\}$
 of the plane and the degenerate plane inside an ideal.
-- [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity](the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity.html),
+- [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity](the-spin-half-bispinors-and-the-sectors-of-n-and-spectral-regularity.html),
 for the four intersections of the bispinor space with the sectors, with their dimensions.
 - [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the definition of
 spin as a maximal weight, the two identities from which the spectra are read, and the double cover.

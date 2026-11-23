@@ -175,5 +175,5 @@ The Killing form of $\mathfrak{gl}_n$ is $2n\operatorname{tr}(XY)-2\operatorname
 - Karin Erdmann and Mark J. Wildon, *Introduction to Lie Algebras* (Springer, 2006), for the computation of the Killing form from the adjoint matrices.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the inertia of the Killing form and the compact forms.
 - [The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the derivation trace form that the Killing form is.
-- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the inertias that the form inherits.
+- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-inertia-on-the-two-halves.html), for the inertias that the form inherits.
 - [The Antisymmetric Part inside $UT_n$: the Radical as the Commutator](the-antisymmetric-part-inside-utn-the-radical-as-the-commutator.html), for the solvability that makes the triangular form degenerate.

@@ -171,6 +171,6 @@ The trace form $\langle X,Y\rangle=\operatorname{tr}(XY)$ is symmetric, nondegen
 
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the trace, the transpose and the symmetrisation of a matrix.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the trace form of an associative algebra and its invariance.
-- [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric-over-r.html), for the two subspaces and their products.
+- [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric.html), for the two subspaces and their products.
 - [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the trace form and its inertia stated without proof.
-- [$UT_n$ as the Complement of the Antisymmetric Part](utn-as-the-complement-of-the-antisymmetric-part-over-r.html), for a complement that is not orthogonal.
+- [$UT_n$ as the Complement of the Antisymmetric Part](utn-as-the-complement-of-the-antisymmetric-part.html), for a complement that is not orthogonal.

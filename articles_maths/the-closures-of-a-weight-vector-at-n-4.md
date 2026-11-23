@@ -1,4 +1,4 @@
-# __The Closures of a Weight Vector: the Chain from $V_0$ to $V_3$__
+# __The Closures of a Weight Vector at $n=4$: the Chain from $V_0$ to $V_3$__
 
 ## Introduction
 

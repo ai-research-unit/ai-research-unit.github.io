@@ -4,11 +4,11 @@
 
 **The question.** The spin-half family has three levels: the plane, the ideal it generates, and the sum of the two ideals. Which of the four sectors cut by $\det\neq0$ and $\Delta\neq0$ does each level meet?
 
-**Why it is the same statement.** This is the in-depth matrix reading of [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity](the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity.html). The dictionary is $N=\det A$ and $B^2=\det A-\tfrac14(\operatorname{tr}A)^2$; the three levels are $\mathbb{C}P\subset M_2P\subset M_2$. The statements are the same statements, and only the writing is new.
+**Why it is the same statement.** This is the in-depth matrix reading of [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity](the-spin-half-bispinors-and-the-sectors-of-n-and-spectral-regularity.html). The dictionary is $N=\det A$ and $B^2=\det A-\tfrac14(\operatorname{tr}A)^2$; the three levels are $\mathbb{C}P\subset M_2P\subset M_2$. The statements are the same statements, and only the writing is new.
 
 **What the article proves.** In this order. The two predicates and the four sectors in matrix terms. The plane: two sectors, the punctured plane in $\Sigma_{01}$ and the origin in $\Sigma_{00}$. The ideal: the same two sectors, with a real plane of square-zero elements in $\Sigma_{00}$. The bispinor: all four sectors, with explicit matrices and dimensions. That the two indices come from two different places. That the axis is a parameter and the pattern is the same at every axis.
 
-**What the article does not do.** It does not treat the determinant or the discriminant on these spaces one at a time, which are [The Spin-Half Bispinors and N Norm Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinor-spaces-and-n-norm-regularity-in-m2c.html) and [The Spin-Half Bispinors and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinor-spaces-and-spectral-regularity-in-m2c.html); it does not treat the Dirac decomposition of a general element, which is [Spinors and Dirac Spinors in the Biquaternion Algebra in $M_2(\mathbb{C})$](spinors-and-dirac-spinors-in-the-biquaternion-algebra-in-m2c.html).
+**What the article does not do.** It does not treat the determinant or the discriminant on these spaces one at a time, which are [The Spin-Half Bispinors and N Norm Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinors-and-n-norm-regularity-in-m2c.html) and [The Spin-Half Bispinors and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinors-and-spectral-regularity-in-m2c.html); it does not treat the Dirac decomposition of a general element, which is [Spinors and Dirac Spinors in the Biquaternion Algebra in $M_2(\mathbb{C})$](spinors-and-dirac-spinors-in-the-biquaternion-algebra-in-m2c.html).
 
 **Conventions.** $Q_t=\tfrac12\tau$, $N=\det$, $B^2=\det-\tfrac14\tau^2$, $\Delta=-4B^2$. The sector $\Sigma_{ij}$ has $\det\neq0$ for $i=1$ and $\Delta\neq0$ for $j=1$. The axis is a unit complex vector $n$ and $P=\tfrac12(\mathrm I_2+n\cdot\sigma)$.
 
@@ -168,9 +168,9 @@ The first index is the pairing $\det X=2B(X_+,X_-)$ and the second is $\Delta$; 
 
 ## Further Reading
 
-- [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity](the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity.html), for the source's three-level treatment.
+- [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity](the-spin-half-bispinors-and-the-sectors-of-n-and-spectral-regularity.html), for the source's three-level treatment.
 - [Introduction to the Spin-Half Bispinors Spaces in $M_2(\mathbb{C})$](the-spin-half-bispinor-spaces-in-m2c.html), for the definition of the three levels.
-- [The Spin-Half Bispinors and N Norm Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinor-spaces-and-n-norm-regularity-in-m2c.html), for the determinant alone.
-- [The Spin-Half Bispinors and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinor-spaces-and-spectral-regularity-in-m2c.html), for the discriminant alone.
+- [The Spin-Half Bispinors and N Norm Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinors-and-n-norm-regularity-in-m2c.html), for the determinant alone.
+- [The Spin-Half Bispinors and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinors-and-spectral-regularity-in-m2c.html), for the discriminant alone.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the strata inside the sectors.
 - [The Spin-One Anti-Hermitian Subspace and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html), for the same question on the vector part.

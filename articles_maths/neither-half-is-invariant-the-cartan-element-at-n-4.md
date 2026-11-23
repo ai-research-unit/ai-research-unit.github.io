@@ -1,4 +1,4 @@
-# __Neither Half Is Invariant: the Cartan Element Carries $\operatorname{Sym}$ into $\Lambda$__
+# __Neither Half Is Invariant at $n=4$: the Cartan Element Carries $\operatorname{Sym}$ into $\Lambda$__
 
 ## Introduction
 

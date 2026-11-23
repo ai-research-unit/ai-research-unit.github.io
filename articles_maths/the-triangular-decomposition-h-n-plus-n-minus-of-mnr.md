@@ -1,4 +1,4 @@
-# __The Triangular Decomposition $h\oplus n_+\oplus n_-$__
+# __The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_n(\mathbb{R})$__
 
 ## Introduction
 

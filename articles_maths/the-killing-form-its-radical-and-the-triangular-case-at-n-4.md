@@ -147,4 +147,4 @@ On $\mathfrak{so}(4)$ the form is negative definite and the two $\mathfrak{sl}_2
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for the radical, semisimplicity and solvability criteria.
 - [The Killing Form, Its Radical and the Triangular Case](the-killing-form-its-radical-and-the-triangular-case.html), for the same computation at general order.
 - [The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$](the-lie-algebra-skew-4-and-so-4.html), for the two ideals and their brackets.
-- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the form that differs from $K$ by the scalar line.
+- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-inertia-on-the-two-halves-of-m4c.html), for the form that differs from $K$ by the scalar line.

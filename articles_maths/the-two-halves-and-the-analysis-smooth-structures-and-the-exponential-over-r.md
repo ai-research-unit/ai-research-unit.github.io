@@ -1,4 +1,4 @@
-# __The Two Halves and the Analysis: Smooth Structures and the Exponential__
+# __The Two Halves and the Analysis over $\mathbb{R}$: Smooth Structures and the Exponential__
 
 ## Introduction
 

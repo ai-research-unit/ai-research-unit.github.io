@@ -1,4 +1,4 @@
-# __The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form__
+# __The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form over $\mathbb{R}$__
 
 ## Introduction
 
@@ -151,6 +151,6 @@ The derivations of $M_n(\mathbb{R})$ are the maps $D_A(X)=[A,X]$, they satisfy t
 
 - Nathan Jacobson, *Lie Algebras* (Dover, 1979), for the theorem that the derivations of a central simple algebra are inner.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (AMS, 1998), for the derivation algebras of the classical algebras and their involutions.
-- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the invariant form and its signs.
+- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-inertia-on-the-two-halves.html), for the invariant form and its signs.
 - [The Hilbert–Schmidt Form](the-hilbert-schmidt-form.html), for the definite form and its failure of invariance.
 - [The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$](the-lie-algebra-skew-n-and-so-n-over-r.html), for the bracket used in the Leibniz rule.

@@ -1,4 +1,4 @@
-# __The Peirce Decomposition of $\operatorname{Sym}_n$ as a Jordan Algebra__
+# __The Peirce Decomposition of $\operatorname{Sym}_n(\mathbb{R})$ as a Jordan Algebra__
 
 ## Introduction
 

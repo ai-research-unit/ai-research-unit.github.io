@@ -1,4 +1,4 @@
-# __The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$__
+# __The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$ over $\mathbb{R}$__
 
 ## Introduction
 
@@ -150,5 +150,5 @@ The antisymmetric half of $M_n(\mathbb{R})$ with the commutator is the Lie algeb
 - Anthony Knapp, *Lie Groups Beyond an Introduction* (Birkhäuser, 2002), for the classification of the classical real Lie algebras and the Killing form.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (Academic Press, 1978), for the relation between the compact form and the group $\mathrm{SO}(n)$.
 - [The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$](the-four-multiplication-tables-ss-sk-ks-kk-over-r.html), for the product rule $KK\subseteq S\oplus K$ used here.
-- [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric-over-r.html), for the antisymmetric half as a set.
+- [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric.html), for the antisymmetric half as a set.
 - [The Jordan Algebra $\operatorname{Sym}_n(\mathbb{R})$](the-jordan-algebra-sym-n-r.html), for the same half read with the anticommutator instead of the bracket.

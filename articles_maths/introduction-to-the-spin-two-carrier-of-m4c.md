@@ -1,4 +1,4 @@
-# __Introduction to the Spin-Two Carrier at $n=4$: the Alternating Square__
+# __Introduction to the Spin-Two Carrier of $M_4(\mathbb{C})$: the Alternating Square__
 
 ## Introduction
 

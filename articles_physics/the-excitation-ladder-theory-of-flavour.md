@@ -24,7 +24,7 @@ $$
 
 Every operator the model builds from the group is therefore the same operator on every rung, $Q\otimes\mathbb 1_3$ and $T_3\otimes\mathbb 1_3$. No measurement of charge, colour, weak isospin or $B-L$ can distinguish one rung from another. Flavour cannot be a charge, and it must therefore be a quantity a spectrum produces: an energy, a mass, a level spacing.
 
-There is a second reason to expect the rungs of a tower to be ordered rather than equivalent. A level decays only if a lower level exists with the same quantum numbers and enough phase space. Rung 1 is the bottom of its tower, so there is no lower rung to fall to, and it is stable by conservation rather than by accident. This is why $e$, $u$, $d$ and $\nu_{\mathrm{neu},e}$ sit at the top of their rows in the classification article: they are the ground states, and nothing beneath them carries their charges. No new dynamics is needed to stabilise rung 1, and none is claimed.
+There is a second reason to expect the rungs of a tower to be ordered rather than equivalent. A level decays only if a lower level exists with the same quantum numbers and enough phase space. Rung 1 is the bottom of its tower, so there is no lower rung to fall to, and it is stable by conservation rather than by accident. This is why $e$, $u$, $d$ and $\xi_{\mathrm{neu},e}$ sit at the top of their rows in the classification article: they are the ground states, and nothing beneath them carries their charges. No new dynamics is needed to stabilise rung 1, and none is claimed.
 
 One word is used in a fixed sense. A resonance here means a pole of the propagator, not a geometric singularity. A rung is a pole with a real part and, above rung 1, a width.
 
@@ -128,7 +128,7 @@ The bounds agree, and they agree on three:
 
 | bound | value | what it constrains |
 |---|---|---|
-| $Z$ invisible width | $N_{\nu_{\mathrm{neu}}}=2.984\pm0.008$ | light neutrinos with standard couplings |
+| $Z$ invisible width | $N_{\xi_{\mathrm{neu}}}=2.984\pm0.008$ | light neutrinos with standard couplings |
 | big-bang nucleosynthesis | $N_{\mathrm{eff}}\approx3$ at 1 MeV | rungs light and coupled at 1 MeV |
 | $H\to gg$, $H\to\gamma\gamma$ | matches three | families at any mass |
 | direct search | none below about 1 TeV | new charged or coloured states |

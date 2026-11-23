@@ -191,5 +191,5 @@ The transpose and the symplectic map $\sigma_J(X)=-JX^{\mathsf T}J^{-1}$ are the
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the symplectic group and the matrices that satisfy $JX$ symmetric.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the two types of involution and their fixed spaces.
 - [The Involutions of the First Kind: Transpose and Symplectic](the-involutions-of-the-first-kind-transpose-and-symplectic.html), for the classification of the two types.
-- [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric-over-r.html), for the Jordan structure of $\operatorname{Sym}_n$.
+- [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric.html), for the Jordan structure of $\operatorname{Sym}_n$.
 - [The Two Halves as Orthogonal Complements for the Trace Form](the-two-halves-as-orthogonal-complements-for-the-trace-form.html), for the inertia of the trace form on the whole algebra.

@@ -122,4 +122,4 @@ The polar form on the centre is $\lambda\mu$, complex-bilinear and nondegenerate
 - [Introduction to the Spin-Zero Centre Subspace in $M_2(\mathbb{C})$](the-spin-zero-centre-subspace-in-m2c.html), for the carrier, the closure and the trivial action.
 - [The Spin-Zero Centre Subspace and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-zero-centre-subspace-and-spectral-regularity-in-m2c.html), for the other predicate on the same space.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for multiplicativity and the null cone.
-- [The Spin-Half Bispinors and N Norm Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinor-spaces-and-n-norm-regularity-in-m2c.html), for the opposite extreme on the spin-half carrier.
+- [The Spin-Half Bispinors and N Norm Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinors-and-n-norm-regularity-in-m2c.html), for the opposite extreme on the spin-half carrier.

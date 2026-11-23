@@ -1,4 +1,4 @@
-# __The Spin Group via $4\times4$ Real Matrices__
+# __The Spin Group via $4\times4$ Real Matrices in $M_2(\mathbb{C})$__
 
 ## Introduction
 

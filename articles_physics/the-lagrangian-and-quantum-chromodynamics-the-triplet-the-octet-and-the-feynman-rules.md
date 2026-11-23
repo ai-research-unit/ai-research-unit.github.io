@@ -65,7 +65,7 @@ so that $R=2$ below the charm threshold, $10/3$ below the bottom, $11/3$ below t
 
 Counting versus structure. The first three measurements count colour states, and each would move if the count were four: $R$ would be $4\sum_fQ_f^2$ and the $Z$ hadronic width larger by a third, and both are excluded. The fourth measurement does something different. A baryon is a colour singlet, and the only invariant tensor available to build one from $N_c$ triplets is the totally antisymmetric $\epsilon$ of rank $N_c$. The $\mathcal{B}^{++}$ is $uuu$ with $J=3/2$ and zero orbital angular momentum, so its spin–flavour wavefunction is totally symmetric, and Fermi statistics forces its colour wavefunction to be totally antisymmetric. A totally antisymmetric three-index invariant exists only for $N_c=3$. The particle's existence is therefore the statement that the antisymmetriser has exactly three slots.
 
-The empirical status. $N_c=3$ is measured. **No argument in this corpus produces the number**, and [the QCD article](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html) records it as a *no route yet* item, not as a derivation with a missing step.
+The empirical status. $N_c=3$ is measured. **No argument in this corpus produces the number**, and [the QCD article](quantum-chromodynamics-as-the-residual-of-su4.html) records it as a *no route yet* item, not as a derivation with a missing step.
 
 ### The Triplet, the Antitriplet and the Octet
 
@@ -487,7 +487,7 @@ The framework supplies the sign rule and the projectors and nothing else. The gr
 - [SU(3) Representations and the Gell-Mann–Okubo Mass Formula](su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.html). The representation theory behind the decompositions of the section on the triplet and the octet.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The sign rule, and the strong sector in its place among the four.
 - [Gauge Fixing in the Electroweak Theory: $R_\xi$ Gauges, Ghosts and the Goldstone Equivalence Theorem](gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html). The gauge-fixing mechanism that QCD borrows unchanged.
-- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html). The classification that the ledger follows.
+- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html). The classification that the ledger follows.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The colour quantum numbers of the fifteen fields, and $\alpha_s$ among the parameters.
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html). The abelian case, where the structure constants vanish and both self-couplings are absent.
 - [Asymptotic Freedom and the Running of the Strong Force](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). The full one-loop arithmetic behind $b_0$, which this article hands on as $11C_A/3-4T_RN_f/3$.

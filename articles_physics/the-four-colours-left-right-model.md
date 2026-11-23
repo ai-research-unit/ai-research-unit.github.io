@@ -69,7 +69,7 @@ The corpus adopts an extension of the Standard Model. The group it uses to descr
 | | Standard Model | the Four Colours Model | the change |
 |---|---|---|---|
 | gauge generators | $12$ | $21$ | $+9$, a factor $1.75$ — not a rounding error |
-| fermions per family | $15$ | $15$ | none: $\nu_{\mathrm{neu},R}$ is the fourth component of the $\bar{\mathbf4}$, not an addition |
+| fermions per family | $15$ | $15$ | none: $\xi_{\mathrm{neu},R}$ is the fourth component of the $\bar{\mathbf4}$, not an addition |
 | families | $3$ | $3$ | none; no fourth generation |
 | scalars | $4$ real degrees of freedom | $24$: eight and four complex components in a $(\mathbf4,\mathbf1,\mathbf2)$ and a $(\mathbf1,\mathbf2,\mathbf2)$ | a factor $6$, and the sector that genuinely grows |
 | surviving scalars | one Higgs | twelve real: four from the bidoublet, eight from $\Phi$ | $24$ real components against $12$ broken generators, so twelve survive; two neutral states mix, and the lighter is the $125$ GeV candidate |
@@ -84,7 +84,7 @@ A framework has to describe the particles with some group, and the choice is not
 
 It is not a straw position, because it is the corpus's own default. The $541$ articles outside this category are written that way, and so is the electromagnetic category entire: Maxwell's equations are exact at every scale and need no breaking scale to be stated. The particle category is the only place where the question of the group arises at all, and the reasons below are the reasons the answer there is not the Standard Model's group.
 
-What each choice leaves is stated before the reasons. Staying would leave five things unexplained that the model explains without a new field — the values of hypercharge, charge quantisation, the four anomaly cancellations, the existence of $\nu_{\mathrm{neu},R}$, and custodial symmetry — and would leave the algebra's four-dimensional carrier a coincidence. Adopting puts one declaration under load and predicts six states that have not been seen. The reasons are not one-sided, and they are not presented as if they were.
+What each choice leaves is stated before the reasons. Staying would leave five things unexplained that the model explains without a new field — the values of hypercharge, charge quantisation, the four anomaly cancellations, the existence of $\xi_{\mathrm{neu},R}$, and custodial symmetry — and would leave the algebra's four-dimensional carrier a coincidence. Adopting puts one declaration under load and predicts six states that have not been seen. The reasons are not one-sided, and they are not presented as if they were.
 
 The six reasons, in descending order of strength: the empirical, the structural, the compatibility with the algebra, the comparison with the competitors, the explanatory yield, and the falsifiability.
 
@@ -136,13 +136,13 @@ One of the Standard Model's three factors is a structure the algebra can host; a
 
 None of this is a derivation, and the difference matters. The algebra supplies the carrier, the stabiliser, the two-sided product and the traceless diagonal; the model supplies the names of the particles that sit in them, and the identification of the fourth direction with the lepton is declared, not derived. Where the corpus had a four-dimensional complex carrier and needed a group, the model is the group that uses exactly that space — and a group chosen for the space it acts on, rather than a space chosen for the group, is the only kind of match worth anything here. The qualification is stated in *The Carrier Is a Copy*: the group acts on a formal copy of the quartet, because $\mathfrak{su}(4)$ commutes with the Lorentz action only in $\mathfrak{su}(2)$.
 
-**4. The candidates.** It is the best of the four candidates on the corpus's own criteria. $\mathrm{SU}(5)$ puts quarks and leptons in one multiplet, has no $\nu_{\mathrm{neu},R}$, and would need a five-dimensional carrier the algebra does not have.
+**4. The candidates.** It is the best of the four candidates on the corpus's own criteria. $\mathrm{SU}(5)$ puts quarks and leptons in one multiplet, has no $\xi_{\mathrm{neu},R}$, and would need a five-dimensional carrier the algebra does not have.
 
 $\mathrm{SO}(10)$ needs a real answer, because it contains $G_{4LR}$ and its sixteen *is* this sixteen. If the algebra points at $G_{4LR}$ and $G_{4LR}$ sits inside $\mathrm{SO}(10)$, a reader may ask whether the algebra secretly points at $\mathrm{SO}(10)$. Three reasons it does not, and the first is the decisive one. The carrier has four complex dimensions; $\mathrm{SO}(10)$'s smallest spinor is sixteen-dimensional and needs a Clifford module, so the algebra would have to supply a structure it does not have — and "does not have" here is a theorem, not a taste: the corpus uses biquaternions and not octonions or Clifford algebras for a reason, and the reason is that $\mathbb B\cong M_2(\mathbb C)$ has a four-dimensional carrier. Second, $\mathrm{SO}(10)$'s extra twenty-four generators act on a space the algebra's carrier is not, so they would be imported in exactly the way *Why This Group and Not a Larger One* refuses. Third, $\mathrm{SO}(10)$ is rank $5$ and so is $G_{4LR}$, so the rank argument that decides between two candidate groups here does not distinguish them — the rank is evidence that the embedding exists, not evidence that it should be used. The containment is real and it is not an argument: $G_{4LR}\subset\mathrm{SO}(10)$ says the smaller group is available inside the larger one, and the corpus takes the smaller one because the carrier is four-dimensional.
 
 The left–right group is the competitor, and it is a closer call than $\mathrm{SO}(10)$: $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}$ gives the same physics below the scale, with the $\mathrm{U}(1)$ charge put in by hand where the model derives it from a tracelessness condition. *Why This Group and Not a Larger One* states the three refusals, and *The Carrier Is a Copy* states what the comparison requires. This group is what is left when the carrier is four-dimensional, the product is two-sided, and the fourth direction is gauged.
 
-**5. Explanatory yield.** It answers five questions the Standard Model leaves open — given (A), and not for free. Hypercharge stops being an imported number and becomes $Y=T_{3R}+\tfrac12(B-L)$. Charge quantisation stops being an observation about the electron and becomes $\operatorname{tr}_{\mathbf4}(B-L)=3\cdot\tfrac13-1=0$. The four anomaly conditions stop being conditions and become identities. $\nu_{\mathrm{neu},R}$ stops being optional and becomes the fourth component of the $\bar{\mathbf4}$. Custodial symmetry stops being accidental and becomes the diagonal of a gauged pair.
+**5. Explanatory yield.** It answers five questions the Standard Model leaves open — given (A), and not for free. Hypercharge stops being an imported number and becomes $Y=T_{3R}+\tfrac12(B-L)$. Charge quantisation stops being an observation about the electron and becomes $\operatorname{tr}_{\mathbf4}(B-L)=3\cdot\tfrac13-1=0$. The four anomaly conditions stop being conditions and become identities. $\xi_{\mathrm{neu},R}$ stops being optional and becomes the fourth component of the $\bar{\mathbf4}$. Custodial symmetry stops being accidental and becomes the diagonal of a gauged pair.
 
 The qualifier is the same one every time, and it is not a detail. The first two promotions need the eigenvalues of $B-L$ on the quartet, lepton first, to be $(-1,\tfrac13,\tfrac13,\tfrac13)$, and those are fixed by the declaration that the fourth colour is the lepton, not by the group. Without (A) the group still has a traceless diagonal; it does not know which direction is the lepton. So the form of this reason is: five questions are answered given (A), and (A) is the model's one load-bearing declaration. The anomaly cancellation is the one item that is genuinely structural — the sixteen is anomaly-free by construction, as a real multiplet of a complex group must be — but even that is a property of the multiplet the declaration chooses. Five promotions for one assumption, not five for nothing.
 
@@ -186,7 +186,7 @@ $$
 4\cdot2+4\cdot2=16 .
 $$
 
-Read the two terms as the two chiralities. The first holds the left-handed doublet of the quartet — three quark colours and one lepton, each doubled by $SU(2)_L$. The second holds the right-handed partners as singlets of $SU(2)_L$ and doublets of $SU(2)_R$. So $\nu_{\mathrm{neu},R}$ is not added: it is the fourth component of the $\bar{\mathbf 4}$, and it is required the moment the lepton is a colour.
+Read the two terms as the two chiralities. The first holds the left-handed doublet of the quartet — three quark colours and one lepton, each doubled by $SU(2)_L$. The second holds the right-handed partners as singlets of $SU(2)_L$ and doublets of $SU(2)_R$. So $\xi_{\mathrm{neu},R}$ is not added: it is the fourth component of the $\bar{\mathbf 4}$, and it is required the moment the lepton is a colour.
 
 Why the split $15=8+1+6$ is what makes this work. $B-L$ is a generator of the $\mathrm{SU}(4)$, with eigenvalues $(-1,\tfrac13,\tfrac13,\tfrac13)$ on the quartet, in the order $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and $\mathbf 4\to\mathbf 3\oplus\mathbf 1$ under $\mathrm{SU}(3)$. That is exactly the quark–lepton split, and it is (A): the algebra supplies the split $\mathbb C e_t\oplus B_V$, and the declaration says the line is the lepton.
 
@@ -288,7 +288,7 @@ The membership claim is set out once, because it is easy to get wrong. Six of th
 
 Three competitors, and the corpus's reason for each refusal, in one line apiece.
 
-**$\mathrm{SU}(5)$.** Rank four, and its $\mathbf{10}+\bar{\mathbf5}$ has no $\nu_{\mathrm{neu},R}$ and puts quarks and leptons in the same multiplet in a way the algebra's split does not suggest. The corpus's $\mathfrak{su}(4)$ is the carrier's group; $\mathfrak{su}(5)$ would be a group with no carrier in the algebra at all.
+**$\mathrm{SU}(5)$.** Rank four, and its $\mathbf{10}+\bar{\mathbf5}$ has no $\xi_{\mathrm{neu},R}$ and puts quarks and leptons in the same multiplet in a way the algebra's split does not suggest. The corpus's $\mathfrak{su}(4)$ is the carrier's group; $\mathfrak{su}(5)$ would be a group with no carrier in the algebra at all.
 
 **$\mathrm{SO}(10)$.** Rank five, the same rank as $G_{4LR}$, and it contains $G_{4LR}$ — so it is the natural enlargement rather than a competitor. But its spinor is a $\mathbf{16}$ obtained by a Clifford algebra the corpus does not otherwise use, and the rank-five coincidence is not an argument: two rank-five groups contain one another for reasons of dimension, not of structure.
 
@@ -336,7 +336,7 @@ The frame does not make the theory chiral, and no renaming will. The algebra's p
 
 What would count as the algebra supplying it is a one-sided action of the algebra on a chiral spinor module — the corpus's open problem, unchanged. What would be a fake solution, and is refused: writing the sixteen in a single multiplet of a larger group and calling the chirality derived, when the multiplet is real. A real multiplet cannot be chiral, and the sixteen is complex, which is why it works and why the algebra's own carrier, being self-conjugate, cannot supply it.
 
-The consequence for every article downstream is that the wall is quoted, not solved. [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html) says what the larger group moves and what it does not: one of three obstructions, and the one that moves is the dimension.
+The consequence for every article downstream is that the wall is quoted, not solved. [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$](quantum-chromodynamics-as-the-residual-of-su4.html) says what the larger group moves and what it does not: one of three obstructions, and the one that moves is the dimension.
 
 ## The Checks
 
@@ -406,10 +406,10 @@ Every number in this article, run again.
 - [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html). The connection, the curvature and the Yang–Mills action for a group of this size.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The ceiling on the algebra's own compact structure, which *Where Each Factor Comes From* and *The Carrier Is a Copy* meet again.
 - [The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock](the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html). The two-sided action, before it is gauged.
-- [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). What the algebra's own action carries, and what it does not.
+- [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html). What the algebra's own action carries, and what it does not.
 - [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html). The same ceiling read as a statement about unification, in both readings.
 - [Charge Quantisation from the Fourth Colour: One Trace, One Third, and Where the Twenty-One Generators Go](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). The trace that fixes the $B-L$ eigenvalues, and the ledger of where each of the twenty-one generators goes.
-- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html). What the larger group moves of the colour obstruction and what it leaves standing.
+- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html). What the larger group moves of the colour obstruction and what it leaves standing.
 
 **The traps.** Each one is a place where a reader can be misled by a true sentence.
 

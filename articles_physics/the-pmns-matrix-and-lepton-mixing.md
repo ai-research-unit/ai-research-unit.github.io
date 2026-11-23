@@ -20,7 +20,7 @@ The order. The matrix and its placement, then the parameterisation and the count
 The definition. The charged-current interaction in the mass basis carries
 
 $$
-\mathcal{L}_{W}\supset\frac{g}{\sqrt2}\sum_{\imath}\varepsilon_{\imath} W^-_{\imath}\,\bar e_{L}\gamma_{\imath} U_{\mathrm{PMNS}}\,\nu_{\mathrm{neu},L}+\text{h.c.},
+\mathcal{L}_{W}\supset\frac{g}{\sqrt2}\sum_{\imath}\varepsilon_{\imath} W^-_{\imath}\,\bar e_{L}\gamma_{\imath} U_{\mathrm{PMNS}}\,\xi_{\mathrm{neu},L}+\text{h.c.},
 \qquad
 U_{\mathrm{PMNS}}=U_e^{\dagger}U_{\jmath} ,
 $$
@@ -43,7 +43,7 @@ $$
 
 physical parameters — if the neutrinos are Dirac. The $5$, not $6$, is the point. Six field rephasings are available, three on the charged leptons and three on the neutrinos, but the one combination that rephases all six by the *same* phase acts as the identity on $U$ and removes nothing, so five independent rephasings remove five parameters. The usual bookkeeping "$9-3-3+1$" arrives at the same number by subtracting six and adding one back; that is the same arithmetic written so that the compensating phase looks like a repair rather than what it is, the redundancy inside the six.
 
-**What changes when they are Majorana.** A Majorana mass term $\bar\nu_{\mathrm{neu},c}\nu_{\mathrm{neu}}$ is not invariant under an arbitrary rephasing: only the sign is free. Each neutrino field therefore loses one rephasing, and the count rises by two:
+**What changes when they are Majorana.** A Majorana mass term $\bar\xi_{\mathrm{neu},c}\xi_{\mathrm{neu}}$ is not invariant under an arbitrary rephasing: only the sign is free. Each neutrino field therefore loses one rephasing, and the count rises by two:
 
 $$
 4\ \text{Dirac}\quad\longrightarrow\quad 6\ \text{Majorana}
@@ -96,9 +96,9 @@ The magnitudes of the matrix itself, which is what oscillation experiments actua
 
 | | ${\jmath}_1$ | ${\jmath}_2$ | ${\jmath}_3$ |
 |---|---|---|---|
-| $\nu_{\mathrm{neu},e}$ | $0.825$ | $0.544$ | $0.149$ |
-| $\nu_{\mathrm{neu},\imath}$ | $0.312$ | $0.588$ | $0.747$ |
-| $\nu_{\mathrm{neu},\tau}$ | $0.470$ | $0.599$ | $0.648$ |
+| $\xi_{\mathrm{neu},e}$ | $0.825$ | $0.544$ | $0.149$ |
+| $\xi_{\mathrm{neu},\imath}$ | $0.312$ | $0.588$ | $0.747$ |
+| $\xi_{\mathrm{neu},\tau}$ | $0.470$ | $0.599$ | $0.648$ |
 
 Each row and each column has unit norm to the accuracy of three printed digits, and the check is worth making explicit: the matrix was assembled from the four parameters above and $\max\lvert (UU^{\dagger}-1)_{ij}\rvert$ came out at $2.2\times10^{-16}$, which is one unit of double-precision rounding — the matrix is unitary to machine precision, not to a stated tolerance. A mixing matrix that fails this test has a missing or doubled phase.
 
@@ -260,10 +260,10 @@ Why the range matters more than the value. For the normal ordering the three ter
 
 ## CP Violation in the Lepton Sector and Leptogenesis
 
-The asymmetry, in the oscillation channel. For $\nu_{\mathrm{neu},\imath}\to\nu_{\mathrm{neu},e}$ against $\bar\nu_{\mathrm{neu},\imath}\to\bar e$, the difference is proportional to $J$ times a product of three $\sin$ factors:
+The asymmetry, in the oscillation channel. For $\xi_{\mathrm{neu},\imath}\to\xi_{\mathrm{neu},e}$ against $\bar\xi_{\mathrm{neu},\imath}\to\bar e$, the difference is proportional to $J$ times a product of three $\sin$ factors:
 
 $$
-\delta P\equiv P(\nu_{\mathrm{neu},\imath}\to\nu_{\mathrm{neu},e})-P(\bar\nu_{\mathrm{neu},\imath}\to\bar e)=-16J\sin\frac{\delta m^2_{21}L}{4E}\sin\frac{\delta m^2_{31}L}{4E}\sin\frac{\delta m^2_{32}L}{4E} ,
+\delta P\equiv P(\xi_{\mathrm{neu},\imath}\to\xi_{\mathrm{neu},e})-P(\bar\xi_{\mathrm{neu},\imath}\to\bar e)=-16J\sin\frac{\delta m^2_{21}L}{4E}\sin\frac{\delta m^2_{31}L}{4E}\sin\frac{\delta m^2_{32}L}{4E} ,
 $$
 
 and this is an identity, not a parametrisation: it follows from the interference term above with $\sin(2x)=2\sin x\cos x$ and the three-mass-difference closure $\delta m^2_{31}=\delta m^2_{32}+\delta m^2_{21}$. The argument is $\delta m^2L/(4E)$ in all three factors — the same argument the $\sin^2$ term carries — and writing it as $\delta m^2L/(2E)$ as well would square the wrong function. So the asymmetry requires three nonzero mass differences, three nonzero angles, and a phase. All four conditions hold, and the asymmetry is at the per-cent to per-ten-cent level for a well-chosen baseline. That is why the current generation of long-baseline experiments is designed around it.
@@ -363,5 +363,5 @@ The framework supplies the arena and transcribes the rest: no mechanism for the 
 - [The Majorana Equation in Biquaternionic Form](the-majorana-equation-in-biquaternionic-form.html). The equation whose solutions are their own conjugates.
 - [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). The lepton doublet and singlet, and the hypercharge assignment the charged current acts on.
 - [The Theta Vacuum in Biquaternionic Form](the-theta-vacuum-in-biquaternionic-form.html). The vacuum angle, and the phase structure a baryon-number-violating saddle point would have to sit in.
-- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The anomaly conditions the lepton and quark content must satisfy, and where a count of free parameters begins.
+- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html). The anomaly conditions the lepton and quark content must satisfy, and where a count of free parameters begins.
 - [The Parton Model and Deep Inelastic Scattering](the-parton-model-and-deep-inelastic-scattering.html). The convention discipline this article applies to the Majorana-phase normalisation.

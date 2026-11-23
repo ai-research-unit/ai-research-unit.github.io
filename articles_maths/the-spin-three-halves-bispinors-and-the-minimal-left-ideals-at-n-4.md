@@ -1,4 +1,4 @@
-# __The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals__
+# __The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals at $n=4$__
 
 ## Introduction
 

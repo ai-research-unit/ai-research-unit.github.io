@@ -1,4 +1,4 @@
-# __Where the Half-Integers Go__
+# __Where the Half-Integers Go in the Biquaternion Operators__
 
 ## Introduction
 

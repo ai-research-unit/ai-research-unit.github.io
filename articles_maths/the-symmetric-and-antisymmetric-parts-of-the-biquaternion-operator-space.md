@@ -1,4 +1,4 @@
-# __The Symmetric and Antisymmetric Parts of the Operator Space__
+# __The Symmetric and Antisymmetric Parts of the Biquaternion Operator Space__
 
 ## Introduction
 

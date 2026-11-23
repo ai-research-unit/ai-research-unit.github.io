@@ -6,7 +6,7 @@ A carrier, in the sense of this corpus, is a minimal left ideal of an algebra, t
 
 The article proves that absence, shows what the algebra does have — the regular module, which is its own carrier and has no proper submodule — and then shows the carrier the matrix model lends it, the columns of $M_2(\mathbb{C})$, with the spinor as a column and the quaternionic structure that replaces the reality condition. It ends with the two carriers of the complexified block, which the quaternionic structure exchanges, and with the readings of Weyl and of Majorana, which are the two ways of asking for a real subspace of a spinor space and which the quaternionic structure grants only to their sum.
 
-The modules over the algebra are [The Category of Modules over the Quaternion Algebra](the-category-of-modules-over-the-quaternion-algebra.html); the idempotents are [The Peirce Decomposition of the Quaternion Algebra and Its Collapse](the-peirce-decomposition-of-the-quaternion-algebra-and-its-collapse.html); the matrix model is [The M2C-H Standard Representation](m2c-h-standard-representation.html).
+The modules over the algebra are [The Category of Modules over the Quaternion Algebra](the-category-of-modules-over-the-quaternion-algebra.html); the idempotents are [The Peirce Decomposition of the Quaternion Algebra and Its Collapse](the-peirce-decomposition-of-the-quaternion-algebra-and-its-collapse.html); the matrix model is [The M2C-H Standard Representation](m2c-h-pauli-representation.html).
 
 ## A Carrier Is a Minimal Left Ideal
 
@@ -145,5 +145,5 @@ The Weyl reading fails because the chirality projector is invertible, and the Ma
 
 - [The Category of Modules over the Quaternion Algebra](the-category-of-modules-over-the-quaternion-algebra.html) for the module structure that forbids the carrier.
 - [The Peirce Decomposition of the Quaternion Algebra and Its Collapse](the-peirce-decomposition-of-the-quaternion-algebra-and-its-collapse.html) for the idempotents and their absence.
-- [The M2C-H Standard Representation](m2c-h-standard-representation.html) for the matrix model and the columns.
+- [The M2C-H Standard Representation](m2c-h-pauli-representation.html) for the matrix model and the columns.
 - [Spinors and Dirac Spinors in the Biquaternion Algebra](spinors-and-dirac-spinors-in-the-biquaternion-algebra.html) for the carriers of the complexified block and the Dirac reading.

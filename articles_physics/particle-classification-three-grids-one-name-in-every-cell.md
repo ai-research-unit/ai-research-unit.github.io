@@ -51,9 +51,9 @@ That is the one declaration of the frame. Without it the group still has its $4\
 **The two doublets are not the same doublet.** The left index pairs left-handed fields, the right index pairs right-handed fields, and they are two different $\mathrm{SU}(2)$'s acting on two different copies of a two-dimensional space:
 
 $$
-(\nu_{\mathrm{neu},L},e_L),\ (u_L,d_L)\ \text{under }\mathrm{SU}(2)_L ;
+(\xi_{\mathrm{neu},L},e_L),\ (u_L,d_L)\ \text{under }\mathrm{SU}(2)_L ;
 \qquad
-(\nu_{\mathrm{neu},R},e_R),\ (u_R,d_R)\ \text{under }\mathrm{SU}(2)_R .
+(\xi_{\mathrm{neu},R},e_R),\ (u_R,d_R)\ \text{under }\mathrm{SU}(2)_R .
 $$
 
 The quark doublet is the same doublet in three colour copies, so a generation has two doublets per chirality if the colour copies are counted as one orbit.
@@ -212,7 +212,7 @@ $$
 
 | doublet | up-type member | down-type member | colour copies |
 |---|---|---|---|
-| lepton | $\nu_{\mathrm{neu},eL}$ | $e_{L}$ | $1$ |
+| lepton | $\xi_{\mathrm{neu},eL}$ | $e_{L}$ | $1$ |
 | quark | $u_{L}$ | $d_{L}$ | $3$ |
 
 So $\mathrm{SU}(2)_L$ acts on two doublets per generation: one leptonic and one quark, the latter in three colour copies. The $2\times2$ grid above is the same grid for both — what changes is which fermions sit in the two slots.
@@ -239,10 +239,10 @@ $$
 
 | doublet | up-type member | down-type member | colour copies |
 |---|---|---|---|
-| lepton | $\nu_{\mathrm{neu},eR}$ | $e_{R}$ | $1$ |
+| lepton | $\xi_{\mathrm{neu},eR}$ | $e_{R}$ | $1$ |
 | quark | $u_{R}$ | $d_{R}$ | $3$ |
 
-**The right neutrino is not an addition, and the grid says why.** $\nu_{\mathrm{neu},eR}$ sits in the up-type slot of the right doublet because the right doublet is the doublet of the conjugate quartet $\bar{\mathbf 4}$, and the $\bar{\mathbf 4}$ has four components of which one is the lepton. A model that has to add $\nu_{\mathrm{neu},R}$ by hand has no right doublet to put it in.
+**The right neutrino is not an addition, and the grid says why.** $\xi_{\mathrm{neu},eR}$ sits in the up-type slot of the right doublet because the right doublet is the doublet of the conjugate quartet $\bar{\mathbf 4}$, and the $\bar{\mathbf 4}$ has four components of which one is the lepton. A model that has to add $\xi_{\mathrm{neu},R}$ by hand has no right doublet to put it in.
 
 **The two $2\times2$ grids are not the same grid twice.** They are two factors acting on two copies, and on the carrier their generators lie *inside* the $4\times4$ grid rather than beside it: $L_{\vec e_a}$ and $R_{\vec e_a}$ are traceless and skew-adjoint, hence in $\mathfrak{su}(4)$, so the six weak generators form a six-dimensional subalgebra of the fifteen. That is why the frame's $21$ is the dimension of the product group on the declared copy and not the dimension of anything on the carrier. *The Ledger of the Three Grids* states the arithmetic.
 
@@ -332,7 +332,7 @@ The coefficients are not free: $\gamma$ is the unique null direction of the $3\t
 
 | fermion | quartet index | $L$ index | $Q$ | $B-L$ |
 |---|---|---|---|---|
-| $\nu_{\mathrm{neu},eL}$ | $t$ | $\uparrow$ | $0$ | $-1$ |
+| $\xi_{\mathrm{neu},eL}$ | $t$ | $\uparrow$ | $0$ | $-1$ |
 | $e_{L}$ | $t$ | $\downarrow$ | $-1$ | $-1$ |
 | $u^{r}_{L}$ | $r$ | $\uparrow$ | $+\tfrac23$ | $+\tfrac13$ |
 | $d^{r}_{L}$ | $r$ | $\downarrow$ | $-\tfrac13$ | $+\tfrac13$ |
@@ -341,7 +341,7 @@ The coefficients are not free: $\gamma$ is the unique null direction of the $3\t
 | $u^{b}_{L}$ | $b$ | $\uparrow$ | $+\tfrac23$ | $+\tfrac13$ |
 | $d^{b}_{L}$ | $b$ | $\downarrow$ | $-\tfrac13$ | $+\tfrac13$ |
 
-**The right octet: the same four indices times the $R$ grid.** $\nu_{\mathrm{neu},eR}$, $e_R$, $u^{r}_{R}$, $d^{r}_{R}$, $u^{g}_{R}$, $d^{g}_{R}$, $u^{b}_{R}$, $d^{b}_{R}$, with $Q$ and $B-L$ identical to the left octet's rows. What differs is which $2\times2$ grid the doublet index belongs to.
+**The right octet: the same four indices times the $R$ grid.** $\xi_{\mathrm{neu},eR}$, $e_R$, $u^{r}_{R}$, $d^{r}_{R}$, $u^{g}_{R}$, $d^{g}_{R}$, $u^{b}_{R}$, $d^{b}_{R}$, with $Q$ and $B-L$ identical to the left octet's rows. What differs is which $2\times2$ grid the doublet index belongs to.
 
 **Three remarks about the pairing.**
 
@@ -387,8 +387,8 @@ Applied cell by cell, the map keeps the chirality block and the doublet slot, se
 
 | antiparticle state | quartet index | $L$ index | $Q$ | $B-L$ |
 |---|---|---|---|---|
-| $\bar\nu_{\mathrm{neu},eL}$ | $\bar\nu_{\mathrm{neu}}$ | $\uparrow$ | $0$ | $+1$ |
-| $\bar e_{L}$ | $\bar\nu_{\mathrm{neu}}$ | $\downarrow$ | $+1$ | $+1$ |
+| $\bar\xi_{\mathrm{neu},eL}$ | $\bar\xi_{\mathrm{neu}}$ | $\uparrow$ | $0$ | $+1$ |
+| $\bar e_{L}$ | $\bar\xi_{\mathrm{neu}}$ | $\downarrow$ | $+1$ | $+1$ |
 | $\bar u^{\bar r}_{L}$ | $\bar r$ | $\uparrow$ | $-\tfrac23$ | $-\tfrac13$ |
 | $\bar d^{\bar r}_{L}$ | $\bar r$ | $\downarrow$ | $+\tfrac13$ | $-\tfrac13$ |
 | $\bar u^{\bar g}_{L}$ | $\bar g$ | $\uparrow$ | $-\tfrac23$ | $-\tfrac13$ |
@@ -439,7 +439,7 @@ Two consequences follow, and both are already in the corpus without this argumen
 
 The bidoublet is not an option. A fermion mass is the conversion of a cell into its conjugate, so it needs a scalar that carries both weak indices, which is exactly $(\mathbf1,\mathbf2,\mathbf2)$. The scalar sector of [The Scalar Sector and the Leptoquark Bounds](../articles_physics/the-scalar-sector-and-the-leptoquark-bounds.html) is the price of the conjugate grid.
 
-The neutrino is not its own antiparticle here. $B-L$ is gauged and comes from inside $\mathrm{SU}(4)$, so a Majorana mass for $\nu_{\mathrm{neu},R}$ would break a gauged symmetry, and the renormalisable mass is the Dirac mass of the pair $\nu_{\mathrm{neu},L}$ and $\nu_{\mathrm{neu},R}$. That differs from the Standard Model, where a Majorana mass is available because $B-L$ is not gauged, and it is a statement the model makes rather than inherits.
+The neutrino is not its own antiparticle here. $B-L$ is gauged and comes from inside $\mathrm{SU}(4)$, so a Majorana mass for $\xi_{\mathrm{neu},R}$ would break a gauged symmetry, and the renormalisable mass is the Dirac mass of the pair $\xi_{\mathrm{neu},L}$ and $\xi_{\mathrm{neu},R}$. That differs from the Standard Model, where a Majorana mass is available because $B-L$ is not gauged, and it is a statement the model makes rather than inherits.
 
 ### One Naming Convention, Fixed Here
 
@@ -492,7 +492,7 @@ $6+2+2+1+1=12$. The two neutral states mix, so $h^0$ and $H^0$ are interaction e
 
 **Two things the tables do not say, and one the corpus retracted.** Both belong here because this article lists sectors and a list invites the reading that each sector is settled.
 
-- **The frame predicts no mass relation, because it fixes no scalar multiplet.** What is structural is a *count*: one bidoublet puts the down-type quarks and the charged leptons in one Yukawa term, so one matrix serves two sectors and the spectra come out **proportional**. That sentence has no scale in it and no coupling in it. The numerical equalities people write from it — $m_d=m_e$, $m_u=m_{\nu_{\mathrm{neu}}}$ — are the **Pati–Salam literature's published condition, not this model's prediction**, and the corpus quarantines them in [The Coupling Sector of the Four Colours Left–Right Model: A Retired Working Record](../articles_internal/the-coupling-sector-of-the-four-colours-model.html), whose ledger note says so in its first line. Of the four per-generation ratios the literature then checks, two hold and two fail by orders of magnitude ($m_d/m_e=1$ against a measured $9.1$, $m_u/m_{\nu_{\mathrm{neu}}}=1$ against $\sim4\times10^{7}$). **A model that claims no number misses nothing and proves nothing**; that is the trade, and it is the corpus's own verdict on its own coupling sector.
+- **The frame predicts no mass relation, because it fixes no scalar multiplet.** What is structural is a *count*: one bidoublet puts the down-type quarks and the charged leptons in one Yukawa term, so one matrix serves two sectors and the spectra come out **proportional**. That sentence has no scale in it and no coupling in it. The numerical equalities people write from it — $m_d=m_e$, $m_u=m_{\xi_{\mathrm{neu}}}$ — are the **Pati–Salam literature's published condition, not this model's prediction**, and the corpus quarantines them in [The Coupling Sector of the Four Colours Left–Right Model: A Retired Working Record](../articles_internal/the-coupling-sector-of-the-four-colours-model.html), whose ledger note says so in its first line. Of the four per-generation ratios the literature then checks, two hold and two fail by orders of magnitude ($m_d/m_e=1$ against a measured $9.1$, $m_u/m_{\xi_{\mathrm{neu}}}=1$ against $\sim4\times10^{7}$). **A model that claims no number misses nothing and proves nothing**; that is the trade, and it is the corpus's own verdict on its own coupling sector.
 - **Two neutral states is structural; their mixing angle is not.** The bidoublet's eight real components leave two neutral directions after the breaking, and that count is arithmetic. But the angle that rotates them into mass eigenstates is an entry of the potential, so it is scale-bearing and not fixed. **The $125$ GeV state is therefore a mixture of two directions, and *which* mixture is not something the frame decides.**
 
 **The word to avoid is "the Higgs coupling".** This model leaves all three gauge couplings symbolic and predicts none of them; it fixes no scalar multiplet; and the observed state is a mass eigenstate of an unfixed mixing. **So the corpus does not have a coupling claim to patch — it has no coupling claims at all in this sector**, and an article that says "the minimal sector gives $m_d=m_e$" has imported the literature's claim into a model whose ledger refuses it.

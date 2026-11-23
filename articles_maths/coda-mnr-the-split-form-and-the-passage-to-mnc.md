@@ -114,4 +114,4 @@ The real category differs from the complex one in exactly three ways: two conjug
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the real Jordan form, the discriminant and the spectral theorems.
 - [The Split Real Form: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$](the-split-real-form-mnr-inside-mnc.html), for the complexification.
 - [The Involutions of the First Kind: Transpose and Symplectic](the-involutions-of-the-first-kind-transpose-and-symplectic.html), for the first phenomenon.
-- [The Trace Form and Its Indefinite Inertia](the-trace-form-and-its-indefinite-signature.html), for the third phenomenon.
+- [The Trace Form and Its Indefinite Inertia](the-trace-form-and-its-indefinite-inertia.html), for the third phenomenon.

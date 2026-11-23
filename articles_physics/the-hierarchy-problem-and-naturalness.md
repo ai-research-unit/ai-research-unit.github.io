@@ -12,6 +12,8 @@ Three claims are refused at the outset.
 - The framework has no solution. It does not, and section *What the Algebra Says* gives the exact reason.
 - Naturalness is not a theorem. It is a heuristic with one success and at least one conspicuous failure, and section *Naturalness Is Not a Theorem* states both.
 
+**Units.** A mass in this article is a fraction of the vacuum value, $n_i=m_i/m_{\mathrm{vev}}$ with $E_{\mathrm{vev}}=246.22$ GeV. A cutoff, a compositeness scale and a running scale stay in electronvolts: those are energies, and the electronvolt is their unit.
+
 Four claims are then established, each with a number.
 
 - The sensitivity is real and it is quadratic. The one-loop shift is $\delta m_H^2=\frac{\Lambda^2}{16\pi^2}(2.49)$, the coefficient being the sum of a gauge part $0.239$, a top part $1.476$ and a quartic part $0.774$. The top dominates, as it does everywhere in the scalar sector.
@@ -154,13 +156,13 @@ so the shift vanishes exactly when supersymmetry is unbroken. Breaking it at sca
 
 The numbers are these, and there are two problems.
 
-| $m_{\tilde t}$ | $\delta m_H^2$ (GeV$^2$) | $\mathcal{T}_{\mathrm{tune}}$ | $1/\mathcal{T}_{\mathrm{tune}}$ |
+| $n_{\tilde t}$ | $\delta m_H^2$ (GeV$^2$) | $\mathcal{T}_{\mathrm{tune}}$ | $1/\mathcal{T}_{\mathrm{tune}}$ |
 |---|---|---|---|
-| $500$ GeV | $1.40\times10^{4}$ | $0.89$ | $1.12$ |
-| $750$ GeV | $2.72\times10^{4}$ | $1.74$ | $0.58$ |
-| $1$ TeV | $4.30\times10^{4}$ | $2.75$ | $0.36$ |
-| $2$ TeV | $1.20\times10^{5}$ | $7.69$ | $0.13$ |
-| $5$ TeV | $3.24\times10^{5}$ | $20.7$ | $0.048$ |
+| $2.031$ | $1.40\times10^{4}$ | $0.89$ | $1.12$ |
+| $3.046$ | $2.72\times10^{4}$ | $1.74$ | $0.58$ |
+| $4.061$ | $4.30\times10^{4}$ | $2.75$ | $0.36$ |
+| $8.123$ | $1.20\times10^{5}$ | $7.69$ | $0.13$ |
+| $20.31$ | $3.24\times10^{5}$ | $20.7$ | $0.048$ |
 
 So a stop below $1$ TeV keeps the tuning under $30\%$, and a stop at $5$ TeV costs a factor of twenty. The LHC's stop searches reach about $1.2$–$1.3$ TeV in favourable topologies and have found nothing, so the natural region is excluded for the simplest models.
 
@@ -169,10 +171,10 @@ The second problem is independent. In the minimal supersymmetric Standard Model 
 $$
 m_h^2=M_Z^2\cos^2 2\beta
 \quad\Longrightarrow\quad
-m_h\le M_Z=91.2\ \mathrm{GeV}\ \text{at tree level},
+n_h\le n_Z=0.3704\ \text{at tree level},
 $$
 
-against a measured $125.09$ GeV. So the model requires large loop corrections from heavy stops to reach the measured mass, and those corrections are exactly the ones that reintroduce the tuning. The two requirements pull in opposite directions: *raise* $m_h$ needs heavy stops, *naturalness* needs light ones. This tension, not the absence of a discovery by itself, is what has made minimal supersymmetry uncomfortable.
+against a measured $n_h=0.5080$. So the model requires large loop corrections from heavy stops to reach the measured mass, and those corrections are exactly the ones that reintroduce the tuning. The two requirements pull in opposite directions: *raise* $m_h$ needs heavy stops, *naturalness* needs light ones. This tension, not the absence of a discovery by itself, is what has made minimal supersymmetry uncomfortable.
 
 Split supersymmetry survives, with the scalars heavy and the gauginos light. It gives up naturalness for the scalar mass and keeps the gauge-coupling unification and the dark matter candidate. It is a coherent position, and it concedes the point.
 
@@ -232,10 +234,10 @@ and from the table above the sum is $2.489$, which is not zero. The condition wo
 $$
 3y_t^2=0.239+0.774=1.013
 \quad\Longrightarrow\quad
-m_t=143\ \mathrm{GeV},
+n_t=0.5808,
 $$
 
-against a measured $172.7$ GeV. The condition fails by $20\%$ in the mass, that is by $45\%$ in the squared coupling.
+against a measured $n_t=0.7014$. The condition fails by $20\%$ in the mass, that is by $45\%$ in the squared coupling.
 
 The failure is informative. The quadratic terms do not cancel accidentally in the Standard Model, so no hidden mechanism is already present. The condition is also a *fine tuning of a different kind*: one equation on the parameters, not satisfied. A framework that solved the hierarchy problem by a cancellation among Standard Model states would have to explain why this particular combination vanishes, and nothing does.
 
@@ -297,7 +299,7 @@ Five candidates have been weighed.
 | Compositeness | Resonances at $f\lesssim1$ TeV | Not found; $f$ pushed above $1.5$–$2$ TeV |
 | Extra dimensions | Kaluza–Klein states | Not found |
 | Landscape | Nothing | Untestable at colliders |
-| Veltman | $m_t=143$ GeV | Refuted, $m_t=172.7$ GeV |
+| Veltman | $n_t=0.5808$ | Refuted, $n_t=0.7014$ |
 
 The corpus would accept a statement that makes $m_H/v$ a function of quantities already in the nineteen, at the second grade, with a measured consequence. No such statement exists, in the framework or outside it. The question is open, and it is neither to the framework's credit nor to its discredit.
 
@@ -320,11 +322,11 @@ The table gives each item and its provenance.
 | The tuning table, $10^{32}$ at $M_{\mathrm{Pl}}$ | Computed here |
 | $\Lambda_{\mathrm{stable}}=996$ GeV $=8.0\,m_H$ | Computed here |
 | Chiral and gauge protection of fermion and vector masses | Imported |
-| The MSSM bound $m_h\le M_Z$ | Imported; the number $91.2$ GeV quoted |
+| The MSSM bound $n_h\le n_Z$ | Imported; the number $0.3704$ quoted |
 | The stop-tuning table | Computed here |
 | The composite tuning $(f/v)^2$ | Computed here |
 | The landscape argument | Imported; its status assessed here |
-| The Veltman condition and $m_t=143$ GeV | Computed here |
+| The Veltman condition and $n_t=0.5808$ | Computed here |
 | The QCD-versus-electroweak contrast | Framework result, resting on the hadron article |
 | Naturalness as a heuristic, $1$–$1$ | This article's assessment |
 | A mechanism for $m_H/v$ | Not available |
@@ -339,7 +341,7 @@ Radiative stability requires new physics within $8.0$ Higgs masses, that is $996
 
 Fermion and gauge masses are protected because a symmetry forbids the mass term and hence its correction. The scalar has no such symmetry, and that is the whole content of the problem.
 
-Three responses: supersymmetry needs stops below $1$ TeV for $30\%$ tuning, and its tree-level bound $m_h\le91.2$ GeV pulls the other way; compositeness needs $f\lesssim1$ TeV, and its tuning is $(f/v)^2=16.5$ at $f=1$ TeV; the landscape needs no new physics and makes no collider prediction. A fourth, the Veltman condition, is arithmetically refuted: it requires $m_t=143$ GeV against a measured $172.7$.
+Three responses: supersymmetry needs stops below $1$ TeV for $30\%$ tuning, and its tree-level bound $n_h\le0.3704$ pulls the other way; compositeness needs $f\lesssim1$ TeV, and its tuning is $(f/v)^2=16.5$ at $f=1$ TeV; the landscape needs no new physics and makes no collider prediction. A fourth, the Veltman condition, is arithmetically refuted: it requires $m_t=143$ GeV against a measured $172.7$.
 
 The framework has no cutoff — no measure — so the quadratic term cannot be computed in it, and it has no second confining sector and no family of vacua. Its one contribution is the contrast between the two scales: $\Lambda_{\mathrm{QCD}}$ is generated non-perturbatively and $v$ is not, and the tuning is the statement that the electroweak sector has no counterpart of the mechanism the strong sector does have.
 
@@ -358,7 +360,7 @@ Naturalness is a heuristic with one success (GIM) and one failure (weak-scale su
 | $v$ | Higgs expectation value, $246.22$ GeV |
 | $f$ | Compositeness scale |
 | $M_{\mathrm{SUSY}}$, $m_{\tilde t}$ | Supersymmetry breaking scale, stop mass |
-| $M_{\mathrm{Pl}}$ | Planck mass, $1.22\times10^{19}$ GeV |
+| $M_{\mathrm{Pl}}$ | Planck scale, $1.22\times10^{19}$ GeV |
 | $\Lambda_{\mathrm{QCD}}$ | Strong-interaction scale, $\approx195$ MeV |
 
 ## Further Reading

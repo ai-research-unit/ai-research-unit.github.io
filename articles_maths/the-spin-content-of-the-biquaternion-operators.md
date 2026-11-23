@@ -1,4 +1,4 @@
-# __The Spin Content: Spin $\tfrac32$ on the Module and $0,1,2,3$ on the Algebra__
+# __The Spin Content of the Biquaternion Operators: Spin $\tfrac32$ on the Module and $0,1,2,3$ on the Algebra__
 
 ## Introduction
 

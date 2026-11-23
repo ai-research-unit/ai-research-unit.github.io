@@ -356,7 +356,7 @@ with the second in the traceless part; for a fixed axis they reduce to a massive
 ## Further Reading
 
 - [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), for the equation, the implied Lorenz condition, and the three polarizations.
-- [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane](the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html), for the carrier of the integer-spin representations and its complex structure.
+- [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane](the-self-dual-and-anti-self-dual-split-spin-1-from-the-bivector-plane.html), for the carrier of the integer-spin representations and its complex structure.
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), for the word, the four brackets and the logarithmic derivative.
 - [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the scalar case and the Madelung pair that this sector does not have.
 - [Canonical Quantization of the Biquaternion Proca Field](canonical-quantization-of-the-biquaternion-proca-field.html), for the constraint structure and the polarization projector.

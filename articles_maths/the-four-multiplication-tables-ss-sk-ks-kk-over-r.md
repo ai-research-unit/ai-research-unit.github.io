@@ -1,4 +1,4 @@
-# __The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$__
+# __The Four Multiplication Tables over $\mathbb{R}$: $SS$, $SK$, $KS$, $KK$__
 
 ## Introduction
 
@@ -148,5 +148,5 @@ The four tables of the two halves of $M_n(\mathbb{R})$ are the products $SS'$, $
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the two-sided Peirce decomposition and the products between the corners.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the symmetric and antisymmetric decompositions and the trace identities.
 - [The Symmetric and Antisymmetric Parts of a Product](the-symmetric-and-antisymmetric-parts-of-a-product.html), for the projection formulas used here.
-- [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric-over-r.html), for the two halves and their products.
+- [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric.html), for the two halves and their products.
 - [The Two Halves as Orthogonal Complements for the Trace Form](the-two-halves-as-orthogonal-complements-for-the-trace-form.html), for the block structure of the trace form.

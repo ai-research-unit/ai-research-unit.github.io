@@ -31,7 +31,7 @@ Both stand inside the coupling section of the menu, and the section exists for t
 | article | what it claims |
 |---|---|
 | [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html) | the matching at the second threshold, the trace identity behind it, the one scale, the leptoquark floor, the four-decade failure of the unified case, and the Yukawa conditions with their measured comparison |
-| [The Weinberg Angle and the Three Neutral States](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html) | the mixing as a ratio of two strengths, the form the generators fix, and the rotation that makes the photon pure charge |
+| [The Weinberg Angle and the Three Neutral States](the-weinberg-angle-and-the-three-neutral-states.html) | the mixing as a ratio of two strengths, the form the generators fix, and the rotation that makes the photon pure charge |
 
 Nothing in the category may state the first article's equation, and nothing may state the second's measured angle as a prediction of this model. Both are linked from the menu, and neither is duplicated.
 
@@ -114,6 +114,6 @@ The permission has four edges drawn, and the sharpest is the fourth: the low-ene
 ## Further Reading
 
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The single claim, its arithmetic, its failure, and the Yukawa sector under the same test.
-- [The Weinberg Angle and the Three Neutral States](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html). The second claim: the mixing as a ratio, with the form the generators fix.
+- [The Weinberg Angle and the Three Neutral States](the-weinberg-angle-and-the-three-neutral-states.html). The second claim: the mixing as a ratio, with the form the generators fix.
 - [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The frame, stated with every strength a symbol.
 - [The Breaking Chain and the Boson Spectrum: One Flag, Three Scales, Twenty-One Bosons](the-breaking-chain-and-the-boson-spectrum.html). The chain, with the coupling block kept in the coupling article.

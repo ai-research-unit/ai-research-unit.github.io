@@ -136,7 +136,7 @@ The form is invariant under conjugation by $U(4)$ and is the unique invariant in
 ## Further Reading
 
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the Frobenius and operator norms and their comparison.
-- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the indefinite companion.
+- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-inertia-on-the-two-halves-of-m4c.html), for the indefinite companion.
 - [The Axis-Free Representation of $M_4(\mathbb{C})$](m4c-axis-free-representation.html), for the orthonormal basis $T_{\mu\nu}/2$.
 - [The Adjoints and the Polar Decomposition of an Operator at $n=4$](the-adjoints-and-the-polar-decomposition-of-an-operator-at-n-4.html), for the adjoint computed with this form.
 - [The Hilbert–Schmidt Form at $n=2$](the-hilbert-schmidt-form-at-n-2.html), for the same form at order two.

@@ -128,5 +128,5 @@ The four corners are mutually orthogonal, the Hermitian and anti-Hermitian halve
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the Hilbert–Schmidt norm, its inequalities and its comparison with the operator norm.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the entrywise and the trace products on matrix spaces.
 - [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$](the-two-halves-over-c-hermitian-and-anti-hermitian-at-n-2.html), for the two orthogonal halves.
-- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the indefinite form that the Hilbert–Schmidt form replaces.
+- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-inertia-on-the-two-halves-of-m2r.html), for the indefinite form that the Hilbert–Schmidt form replaces.
 - [The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the adjoint action whose adjoint is computed here.

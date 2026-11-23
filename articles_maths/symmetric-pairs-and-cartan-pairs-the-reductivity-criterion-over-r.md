@@ -174,6 +174,6 @@ An involution $\theta$ of a Lie algebra with $\theta^{2}=\mathrm{id}$ splits it 
 
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for symmetric spaces and Cartan pairs.
 - Anthony W. Knapp, *Lie Groups Beyond an Introduction* (Birkhäuser, 2002), for involutions, real forms and the Killing form.
-- [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric-over-r.html), for the two halves and their products.
+- [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric.html), for the two halves and their products.
 - [The Two Halves as Orthogonal Complements for the Trace Form](the-two-halves-as-orthogonal-complements-for-the-trace-form.html), for the inertia of the trace form.
 - [The Triangular Decomposition $h\oplus n_+\oplus n_-$](the-triangular-decomposition-h-n-plus-n-minus-of-mnr.html), for the decomposition that fails the third rule.

@@ -1,4 +1,4 @@
-# __Why the Conjugation Labels Are Integer: the Kernel $\{\pm\mathrm I\}$__
+# __Why the Conjugation Labels Are Integer at $n=4$: the Kernel $\{\pm\mathrm I\}$__
 
 ## Introduction
 

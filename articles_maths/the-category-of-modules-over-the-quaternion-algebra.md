@@ -68,7 +68,7 @@ The comparison objects are the biquaternion block, where the algebra is $M_2(\ma
 
 *Proof.* The same computation with the two sides exchanged, using the isomorphism of the theorem. This is the double centraliser theorem in the smallest non-commutative case, and it is the reason the real dimension four is the whole of the structure: the module has no endomorphism beyond the algebra and no algebra beyond the endomorphisms.
 
-**Remark (the commutant as a real form).** The image of $\mathbb{H}$ in $\mathrm{End}_{\mathbb{R}}(\mathbb{H})$ is a four-dimensional algebra, and its commutant is the same algebra read on the other side up to conjugation. The pair of the two actions is a real form of $M_4(\mathbb{R})$: $\mathbb{H}\otimes\mathbb{H}^{\mathrm{opp}}\cong M_4(\mathbb{R})$, and the two factors are the left and the right multiplications. The tensor decomposition is read in [The 4x4 Left Regular Representation of the Quaternions](m4r-h-l-regular-representation.html).
+**Remark (the commutant as a real form).** The image of $\mathbb{H}$ in $\mathrm{End}_{\mathbb{R}}(\mathbb{H})$ is a four-dimensional algebra, and its commutant is the same algebra read on the other side up to conjugation. The pair of the two actions is a real form of $M_4(\mathbb{R})$: $\mathbb{H}\otimes\mathbb{H}^{\mathrm{opp}}\cong M_4(\mathbb{R})$, and the two factors are the left and the right multiplications. The tensor decomposition is read in [The 4x4 Left Regular Representation of the Quaternions](m4r-h-l-axis-free-representation.html).
 
 ## The Absent Minimal Ideals and the Absent Peirce Carrier
 

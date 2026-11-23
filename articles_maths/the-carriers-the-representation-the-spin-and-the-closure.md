@@ -1,4 +1,4 @@
-# __From the Spin to the Carriers and the Closures__
+# __The Carriers, the Representation, the Spin and the Closure__
 
 ## Introduction
 

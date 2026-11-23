@@ -134,7 +134,7 @@ The statement. The interaction's structure is fixed by the algebra's chirality p
 
 The consequence for the corpus's boundary. This is the one place where a weak-interaction statement is exact in the algebra and not transcribed. The projection is an algebraic operation and the current is an algebra bilinear, so the vertex is carried; the mass and the coupling are not. The article's status is therefore mixed in a precise sense, and the mix is stated rather than hidden.
 
-What the structure predicts. The ratio $\Gamma(\pi\to e\nu_{\mathrm{neu}})/\Gamma(\pi\to\mu\nu_{\mathrm{neu}})=m_e^2/m_\mu^2$ at leading order, the $(1-m_l^2/m_\pi^2)^2$ phase space, and the $m_\mu^5$ scaling of the muon rate. All three are consequences of the $V-A$ vertex and the contact, and all three are confirmed to a few percent.
+What the structure predicts. The ratio $\Gamma(\pi\to e\xi_{\mathrm{neu}})/\Gamma(\pi\to\mu\xi_{\mathrm{neu}})=m_e^2/m_\mu^2$ at leading order, the $(1-m_l^2/m_\pi^2)^2$ phase space, and the $m_\mu^5$ scaling of the muon rate. All three are consequences of the $V-A$ vertex and the contact, and all three are confirmed to a few percent.
 
 **What it does not predict.** The value of $G_F$, the value of $M_W$ and the existence of the neutral current. The first two are measurements, and the third requires the neutral-current action the Møller article treats.
 
@@ -195,4 +195,4 @@ The three findings. The contact is an exact Gaussian elimination followed by a m
 - [The Lagrangian and the W and Z Bosons](the-lagrangian-and-the-w-and-z-bosons.html) — the action the eliminated field belongs to.
 - [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html) — the charged and neutral currents in one action.
 - [Møller Scattering in Biquaternionic Form](moller-scattering-in-biquaternionic-form.html) — the neutral-current counterpart of the elimination.
-- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) — the divergence of the axial current this action gauges.
+- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html) — the divergence of the axial current this action gauges.

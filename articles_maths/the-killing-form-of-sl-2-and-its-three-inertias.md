@@ -124,6 +124,6 @@ On the compact form $\mathfrak{su}(2)$, in the basis $i\sigma_{k}/2$, the form i
 
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Geometric Analysis* (AMS, 2001), for the Killing form, its inertia and the compactness criterion.
 - Anthony W. Knapp, *Lie Groups Beyond an Introduction* (Birkhäuser, 2002), for the real forms of $\mathfrak{sl}_2$ and their Cartan decompositions.
-- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the trace form that the Killing form multiplies by four.
+- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-inertia-on-the-two-halves-of-m2r.html), for the trace form that the Killing form multiplies by four.
 - [The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian](the-lie-algebra-skew-2-one-dimension-hence-abelian.html), for the antisymmetric line on which the form is negative.
 - [The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the adjoint operators whose traces define the form.

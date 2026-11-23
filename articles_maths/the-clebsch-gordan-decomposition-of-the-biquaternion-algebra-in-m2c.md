@@ -16,7 +16,7 @@ and the two-sided action becomes $Y\mapsto UYU^{\dagger}$. The statements are th
 
 **Conventions.** $\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$, so $\operatorname{tr}A=2Q_t$. The coefficient basis is $(\mathrm I_2,-i\sigma_1,-i\sigma_2,-i\sigma_3)$; the coefficient-frame array of an operator is written in that basis. The involution $\natural$ acts on matrices by $A\mapsto\overline{A}$ and on operators by $T\mapsto\natural\circ T\circ\natural$. The inner product is $\langle X,Y\rangle=\tfrac12\operatorname{tr}(X^{\dagger}Y)$.
 
-**Boundaries.** The dictionary is [The Pauli Representation : Operators](m2c-pauli-representation-operators.html). The two sides separately are [Operators Acting on One Side in $M_2(\mathbb{C})$](operators-acting-on-one-side-in-m2c.html) and [Operators Acting on Two Sides in $M_2(\mathbb{C})$](operators-acting-on-two-sides-in-m2c.html). The carriers built on the split are [From the Spin to the Carriers and the Closures in $M_2(\mathbb{C})$](the-carriers-the-representation-the-spin-and-the-closure-in-m2c.html). The $n=2$ spine is [The One-Sided Operators at $n=2$](the-one-sided-operators-at-n-2.html) and [The Two-Sided Operators and the Segre Cone at $n=2$](the-two-sided-operators-and-the-segre-cone-at-n-2.html).
+**Boundaries.** The dictionary is [The Pauli Representation : Operators](m2c-pauli-representation-operators.html). The two sides separately are [Operators Acting on One Side in $M_2(\mathbb{C})$](operators-acting-on-one-side-in-m2c.html) and [Operators Acting on Two Sides in $M_2(\mathbb{C})$](operators-acting-on-two-sides-in-m2c.html). The carriers built on the split are [From the Spin to the Carriers and the Closures in $M_2(\mathbb{C})$](from-the-spin-to-the-carriers-and-the-closures-in-m2c.html). The $n=2$ spine is [The One-Sided Operators at $n=2$](the-one-sided-operators-at-n-2.html) and [The Two-Sided Operators and the Segre Cone at $n=2$](the-two-sided-operators-and-the-segre-cone-at-n-2.html).
 
 **Letters.** $Y$ is a general matrix, $\natural$ the matrix conjugation, $P_0,P_1$ the two projectors, $H_k$ the Hermitian generators, $\mathbf H^2_{\mathrm{tot}}$ the Casimir operator.
 
@@ -151,7 +151,7 @@ No half-integer summand occurs, because the split has only integer labels and th
 ## Further Reading
 
 - [The Clebsch–Gordan Decomposition of the Biquaternion Algebra](the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html), for the source's canonical construction and its remarks on the coefficients.
-- [From the Spin to the Carriers and the Closures in $M_2(\mathbb{C})$](the-carriers-the-representation-the-spin-and-the-closure-in-m2c.html), for the three carriers built on this split.
+- [From the Spin to the Carriers and the Closures in $M_2(\mathbb{C})$](from-the-spin-to-the-carriers-and-the-closures-in-m2c.html), for the three carriers built on this split.
 - [From the Spin Group to the Spin of a Single Rotor in $M_2(\mathbb{C})$](from-the-spin-group-to-the-spin-of-a-single-rotor-in-m2c.html), for the single-slot Casimir $\tfrac34$.
 - [Operators Acting on Two Sides in $M_2(\mathbb{C})$](operators-acting-on-two-sides-in-m2c.html), for the diagonal action whose Casimir this is.
 - [Introduction to the Spin-Half Bispinors Spaces in $M_2(\mathbb{C})$](the-spin-half-bispinor-spaces-in-m2c.html), for the minimal left ideals that realise the factor.

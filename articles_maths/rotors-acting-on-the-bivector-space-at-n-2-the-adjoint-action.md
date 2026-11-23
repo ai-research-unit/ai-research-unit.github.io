@@ -130,4 +130,4 @@ For an orthogonal rotor the two halves are preserved and the antisymmetric line 
 - Richard S. Hamilton, *Harmonic Maps of Manifolds with Boundary* (Springer, 1975), for the low-dimensional identifications of orthogonal groups.
 - [The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover](the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover.html), for the double cover used in the angle statement.
 - [The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the infinitesimal form of the action.
-- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the inertia computation on the two halves.
+- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-inertia-on-the-two-halves-of-m2r.html), for the inertia computation on the two halves.

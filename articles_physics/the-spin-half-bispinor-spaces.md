@@ -37,8 +37,8 @@ Boundaries. The plane, the two closures, the infinity of the family and the corn
 | mathematical content | source article |
 | --- | --- |
 | the idempotent, the plane, the action and the half angle, the failure of invariance, the two closures, the family and the corners | [Introduction to the Spin-Half Bispinors Spaces](../articles_maths/the-spin-half-bispinor-spaces.html) |
-| the nullity of the idempotent, of the plane and of the ideals, the isotropic dimension, the pairing $N=2B$ and its nondegeneracy | [The Spin-Half Bispinors and N Norm Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-n-norm-regularity.html) |
-| the square $B^{2}=-\digamma_{\mathrm{scl}}^{2}/4$ on the plane, the spectrum $\{0,\digamma_{\mathrm{scl}}\}$, the degenerate plane of the ideal and the square-zero elements | [The Spin-Half Bispinors and Spectral Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-spectral-regularity.html) |
+| the nullity of the idempotent, of the plane and of the ideals, the isotropic dimension, the pairing $N=2B$ and its nondegeneracy | [The Spin-Half Bispinors and N Norm Regularity](../articles_maths/the-spin-half-bispinors-and-n-norm-regularity.html) |
+| the square $B^{2}=-\digamma_{\mathrm{scl}}^{2}/4$ on the plane, the spectrum $\{0,\digamma_{\mathrm{scl}}\}$, the degenerate plane of the ideal and the square-zero elements | [The Spin-Half Bispinors and Spectral Regularity](../articles_maths/the-spin-half-bispinors-and-spectral-regularity.html) |
 | the list of three carriers, the criterion of the weight string and the four closure rules | [From the Spin to the Carriers and the Closures](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html) |
 | the idempotents, the minimality of the left ideals and the splitting of the algebra | [The Minimal Left Ideals of the Biquaternion Algebra](../articles_maths/the-minimal-left-ideals-of-the-biquaternion-algebra.html) |
 | the Peirce basis and the parametrisation of the family by the axis | [The Peirce Basis of the Biquaternion Algebra](../articles_maths/the-peirce-basis-of-the-biquaternion-algebra.html) |
@@ -524,8 +524,8 @@ The two ideals are the two spinor chiralities: they are the eigenspaces of $-iR_
 ## Further Reading
 
 - [Introduction to the Spin-Half Bispinors Spaces](../articles_maths/the-spin-half-bispinor-spaces.html), for the plane, the two closures, the family and the corners.
-- [The Spin-Half Bispinors and N Norm Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-n-norm-regularity.html), for the nullity of the idempotent, the plane and the ideals, the isotropic dimension and the pairing.
-- [The Spin-Half Bispinors and Spectral Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-spectral-regularity.html), for the spectrum $\{0,\digamma_{\mathrm{scl}}\}$ and the degenerate plane of the ideal.
+- [The Spin-Half Bispinors and N Norm Regularity](../articles_maths/the-spin-half-bispinors-and-n-norm-regularity.html), for the nullity of the idempotent, the plane and the ideals, the isotropic dimension and the pairing.
+- [The Spin-Half Bispinors and Spectral Regularity](../articles_maths/the-spin-half-bispinors-and-spectral-regularity.html), for the spectrum $\{0,\digamma_{\mathrm{scl}}\}$ and the degenerate plane of the ideal.
 - [The Minimal Left Ideals of the Biquaternion Algebra](../articles_maths/the-minimal-left-ideals-of-the-biquaternion-algebra.html), for the idempotents, the minimality and the splitting.
 - [The Peirce Basis of the Biquaternion Algebra](../articles_maths/the-peirce-basis-of-the-biquaternion-algebra.html), for the basis that parametrises the family.
 - [The One-Sided Action and the Spin Representation](../articles_maths/the-one-sided-action-and-the-spin-representation.html), for the representation and its tensor square.

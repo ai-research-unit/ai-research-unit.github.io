@@ -1,4 +1,4 @@
-# __$UT_n$ as a Linear Model of $\operatorname{Sym}_n$: Same Space, Wrong Product__
+# __$UT_n$ as a Linear Model of $\operatorname{Sym}_n$ over $\mathbb{R}$: Same Space, Wrong Product__
 
 ## Introduction
 
@@ -127,4 +127,4 @@ The symmetrisation $\pi_+(X)=\tfrac12(X+X^{\mathsf T})$ is a linear isomorphism 
 - James E. Humphreys, *Linear Algebraic Groups* (Springer, 1975), for the triangular subalgebras and their automorphism groups.
 - [The Antisymmetric Part inside $UT_n$: the Radical as the Commutator](the-antisymmetric-part-inside-utn-the-radical-as-the-commutator-over-r.html), for the radical and the commutator of the triangular algebra.
 - [The Jordan Algebra $\operatorname{Sym}_n(\mathbb{R})$](the-jordan-algebra-sym-n-r.html), for the product on the other side of the isomorphism.
-- [$UT_n$ as the Complement of the Antisymmetric Part](utn-as-the-complement-of-the-antisymmetric-part-over-r.html), for the space $UT_n$ and its relation to the two halves.
+- [$UT_n$ as the Complement of the Antisymmetric Part](utn-as-the-complement-of-the-antisymmetric-part.html), for the space $UT_n$ and its relation to the two halves.

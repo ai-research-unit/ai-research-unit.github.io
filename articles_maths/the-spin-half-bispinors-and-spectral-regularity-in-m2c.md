@@ -4,11 +4,11 @@
 
 **The question.** The spin-half carrier is a null plane. Is it also spectrally degenerate, and where inside an ideal do the two eigenvalues coincide?
 
-**Why it is the same statement.** This is the in-depth matrix reading of [The Spin-Half Bispinors and Spectral Regularity](the-spin-half-bispinor-spaces-and-spectral-regularity.html). The source's second predicate is $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$; in the display it is $\Delta=\tau^2-4\det=-4B^2\neq0$, and the carrier is $\mathbb{C}P$. The statements are the same statements, and only the writing is new.
+**Why it is the same statement.** This is the in-depth matrix reading of [The Spin-Half Bispinors and Spectral Regularity](the-spin-half-bispinors-and-spectral-regularity.html). The source's second predicate is $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$; in the display it is $\Delta=\tau^2-4\det=-4B^2\neq0$, and the carrier is $\mathbb{C}P$. The statements are the same statements, and only the writing is new.
 
 **What the article proves.** In this order. That $B^2(\lambda P)=-\lambda^2/4$, so the plane is spectrally regular away from the origin. That the spectrum of $\lambda P$ is $\{0,\lambda\}$ and that of $P$ is $\{0,1\}$. That every element of an ideal has spectrum $\{0,\tau\}$, that the degenerate elements are those of trace zero, that they form a complex line, and that they are exactly the square-zero elements. The comparison with the centre and the vector part.
 
-**What the article does not do.** It does not treat the determinant on the same spaces, which is [The Spin-Half Bispinors and N Norm Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinor-spaces-and-n-norm-regularity-in-m2c.html); it does not treat the sector table in full, which is [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html).
+**What the article does not do.** It does not treat the determinant on the same spaces, which is [The Spin-Half Bispinors and N Norm Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinors-and-n-norm-regularity-in-m2c.html); it does not treat the sector table in full, which is [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinors-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html).
 
 **Conventions.** $Q_t=\tfrac12\operatorname{tr}A$, $N=\det A$, $B^2=\det A-\tfrac14(\operatorname{tr}A)^2$, $\Delta=-4B^2$. The eigenvalues are $\lambda_\pm=\tfrac12\tau\pm\tfrac12\sqrt{\Delta}$. The basis of the ideal is $(P,E_2P)$ with $E_2=-i\sigma_2$, and $E_2P$ at the axis $e_3$ is the matrix with the single entry $i$ in position $(2,1)$.
 
@@ -127,8 +127,8 @@ Inside an ideal every element has spectrum $\{0,\tau\}$; the degenerate elements
 
 ## Further Reading
 
-- [The Spin-Half Bispinors and Spectral Regularity](the-spin-half-bispinor-spaces-and-spectral-regularity.html), for the source's eigenvalue computation.
-- [The Spin-Half Bispinors and N Norm Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinor-spaces-and-n-norm-regularity-in-m2c.html), for the determinant on the same spaces.
-- [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html), for the sector table.
+- [The Spin-Half Bispinors and Spectral Regularity](the-spin-half-bispinors-and-spectral-regularity.html), for the source's eigenvalue computation.
+- [The Spin-Half Bispinors and N Norm Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinors-and-n-norm-regularity-in-m2c.html), for the determinant on the same spaces.
+- [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-half-bispinors-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html), for the sector table.
 - [The Spectrum](the-spectrum-of-a-biquaternion.html), for the quadratic relation in the biquaternion algebra.
 - [The Spin-Zero Centre Subspace and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-zero-centre-subspace-and-spectral-regularity-in-m2c.html), for the opposite extreme, where the whole carrier is degenerate.

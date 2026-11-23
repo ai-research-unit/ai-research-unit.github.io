@@ -1,4 +1,4 @@
-# __The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$__
+# __The Parity Rule at $n=4$: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$__
 
 ## Introduction
 
@@ -118,4 +118,4 @@ At order two the same criterion gives $\operatorname{Sym}^{2}V_{1/2}=V_1$ and $\
 - [Neither Half Is Invariant: the Cartan Element Carries $\operatorname{Sym}$ into $\Lambda$](neither-half-is-invariant-the-cartan-element-at-n-4.html), for the halves of the algebra.
 - [The Truncated Rule: the Product of Two Carriers Is Not a Carrier](the-truncated-rule-the-product-of-two-carriers-at-n-4.html), for the products.
 - [The Parity Rule: the Two Squares of the Module](the-parity-rule-the-two-squares-of-the-module.html), for the row at order two.
-- [The Spin-Two Carrier of $M_4(\mathbb{C})$](the-spin-two-carrier-of-m4c.html), for the carrier $V_2$ as the alternating square.
+- [The Spin-Two Carrier of $M_4(\mathbb{C})$](introduction-to-the-spin-two-carrier-of-m4c.html), for the carrier $V_2$ as the alternating square.

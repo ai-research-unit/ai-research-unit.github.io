@@ -127,7 +127,7 @@ The Killing form of $\mathfrak{gl}_n(\mathbb{R})$ is $\operatorname{K}(X,Y)=2n\o
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (Academic Press, 1978), for the Killing form, its invariance and the Cartan criterion.
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for semisimple Lie algebras, radicals and the criterion.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the associative trace form and its relation to the Killing form of a central simple algebra.
-- [The Trace Form and Its Indefinite Inertia](the-trace-form-and-its-indefinite-signature.html), for the trace form and its inertia.
+- [The Trace Form and Its Indefinite Inertia](the-trace-form-and-its-indefinite-inertia.html), for the trace form and its inertia.
 - [The Hilbert–Schmidt Form: Definite but Not Invariant](the-hilbert-schmidt-form-definite-but-not-invariant.html), for the definite form on the same space.
 - [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the algebra, its centre and its two halves.
 - [The Ideals, the Centre and the Simplicity of $M_n(\mathbb{R})$](the-ideals-the-centre-and-the-simplicity-of-mnr.html), for the centre as $\mathbb{R}\mathrm{I}$.

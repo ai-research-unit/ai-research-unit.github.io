@@ -112,18 +112,18 @@ M_{\xi^\pm}^2=\zeta M_W^2 ,
 M_{\xi^0}^2=\zeta M_Z^2 .
 $$
 
-For the measured masses the table reads:
+For the measured masses, quoted as fractions of the vacuum value with $E_{\mathrm{vev}}=246.22$ GeV and $n_W=0.3264$, $n_Z=0.3704$, the table reads:
 
-| $\zeta$ | $M_{\xi^\pm}=\sqrt{\zeta}\,M_W$ | $M_{\xi^0}=\sqrt{\zeta}\,M_Z$ |
+| $\zeta$ | $n_{\xi^\pm}=\sqrt{\zeta}\,n_W$ | $n_{\xi^0}=\sqrt{\zeta}\,n_Z$ |
 |---|---|---|
 | $0$ | $0$ | $0$ |
-| $0.1$ | $25.4$ GeV | $28.8$ GeV |
-| $0.25$ | $40.2$ GeV | $45.6$ GeV |
-| $0.5$ | $56.8$ GeV | $64.5$ GeV |
-| $1$ | $80.4$ GeV | $91.2$ GeV |
-| $2$ | $113.7$ GeV | $129.0$ GeV |
-| $3$ | $139.2$ GeV | $157.9$ GeV |
-| $10$ | $254.2$ GeV | $288.4$ GeV |
+| $0.1$ | $0.1032$ | $0.1170$ |
+| $0.25$ | $0.1633$ | $0.1852$ |
+| $0.5$ | $0.2307$ | $0.2620$ |
+| $1$ | $0.3265$ | $0.3704$ |
+| $2$ | $0.4618$ | $0.5239$ |
+| $3$ | $0.5654$ | $0.6413$ |
+| $10$ | $1.0324$ | $1.1713$ |
 
 At $\zeta=1$ the Goldstone is degenerate with the vector that ate it. $M_{\xi^\pm}=M_W$ and $M_{\xi^0}=M_Z$ exactly, by the definitions of the two masses. This is the Feynman–'t Hooft gauge, and the degeneracy is why it is the gauge in which loop calculations are shortest: the $\zeta$-dependent parts of the gauge and Goldstone propagators have poles at the same place, so they combine into single integrals.
 
@@ -317,17 +317,17 @@ The theorem is the dynamical counterpart of the counting. The count is $12=12$: 
 
 ## The Numbers
 
-$M_W=80.377$ GeV and $M_Z=91.1876$ GeV. The tree-level values from the couplings $g=0.65174$ and $g_{\mathrm Y}=0.3574$, are $80.24$ and $91.51$ GeV; the difference is the radiative correction and is not a gauge effect.
+$n_W=0.3264$ and $n_Z=0.3704$. The tree-level values from the couplings $g=0.65174$ and $g_{\mathrm Y}=0.3574$ are $0.3259$ and $0.3717$; the difference is the radiative correction and is not a gauge effect.
 
 At the three standard gauges the Goldstone and ghost masses are these.
 
 | Gauge | $\zeta$ | $M_{\xi^\pm}=M_{c^\pm}$ | $M_{\xi^0}=M_{c^Z}$ |
 |---|---|---|---|
 | Landau | $0$ | $0$ | $0$ |
-| Feynman–'t Hooft | $1$ | $80.377$ GeV | $91.188$ GeV |
+| Feynman–'t Hooft | $1$ | $0.3264$ | $0.3704$ |
 | Unitary | $\infty$ | $\infty$ | $\infty$ |
 
-Physical pole at $\Pi=M^2$; $\zeta$-pole at $\Pi=\zeta M^2$, shared by the Goldstone and the ghost. At $\zeta=2$ the $\zeta$-pole of the $W$ sector sits at $\Pi=2M_W^2=1.29\times10^{4}$ GeV$^{2}$, that is at $\sqrt2\,M_W=113.7$ GeV, above the physical pole by a factor $\sqrt2$ in mass.
+Physical pole at $\Pi=M^2$; $\zeta$-pole at $\Pi=\zeta M^2$, shared by the Goldstone and the ghost. At $\zeta=2$ the $\zeta$-pole of the $W$ sector sits at $\Pi=2M_W^2$, that is at $\sqrt2\,n_W=0.4618$, above the physical pole by a factor $\sqrt2$ in mass.
 
 The unitarity scale is $\sqrt{8\pi}\,v=1.23$ TeV, and $\sqrt{16\pi}\,v=1.75$ TeV for the bound $\lvert a_0\rvert\le1$. The two differ by $\sqrt2$, which is the difference between the two conventions for the partial-wave bound, and both are quoted in the literature.
 
@@ -382,7 +382,7 @@ The framework realises the gauge-fixing procedure itself, not the selection of a
 | $\omicron_{\mathrm{pot}}$, $h$ | The scalar doublet and the physical scalar left after the Goldstones are eaten |
 | $v$ | $246.22$ GeV, the vacuum expectation value, entering $M_W=gv/2$ |
 | $g$, $g_{\mathrm Y}$ | The $SU(2)_L$ and $\mathrm U(1)_{\mathrm Y}$ couplings |
-| $M_W$, $M_Z$, $M_H$ | $80.377$, $91.1876$ and $125.09$ GeV, the measured boson masses |
+| $n_W$, $n_Z$, $n_H$ | $0.3264$, $0.3704$ and $0.5080$, the measured boson masses as fractions of $m_{\mathrm{vev}}$ |
 | $M_Y$ | $g_{\mathrm Y}v/2$, the hypercharge partner in the unbroken-basis functional |
 | $G_{a}$, $G^Z$, $G^A$ | The gauge-fixing functionals |
 | $B_{a}$ | The Nakanishi–Lautrup auxiliary field |
@@ -406,11 +406,11 @@ The framework realises the gauge-fixing procedure itself, not the selection of a
 - [The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form](the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html). The determinant, the ghost action and the gauge-fixed propagator in the algebra, for the pure-gauge theory this article extends.
 - [BRST Symmetry in Biquaternionic Form](brst-symmetry-in-biquaternionic-form.html). The nilpotent derivation, the gauge-fixing fermion and the cohomology that makes "physical" a well-defined word.
 - [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). The Goldstones, the counting $12=12$ and the unitary gauge whose limit this article writes.
-- [The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html). The couplings and the masses that enter the $\zeta$-pole positions.
+- [The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$](the-weinberg-angle-and-the-three-neutral-states.html). The couplings and the masses that enter the $\zeta$-pole positions.
 - [Canonical Quantization of the Biquaternion Proca Field](canonical-quantization-of-the-biquaternion-proca-field.html). The massive vector's propagator and polarisation sum, which is the $\zeta\to\infty$ limit here.
 - [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html). The running of the couplings that the ghosts and Goldstones enter, and the running of $\zeta$ itself.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The gauge-fixed action as the sum this article separates.
-- [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). The three-way classification the last section uses, and the gauge-fixing row it discharges.
+- [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html). The three-way classification the last section uses, and the gauge-fixing row it discharges.
 
 - [Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$](electroweak-precision-observables-the-oblique-parameters-s-t-u.html). The two-point functions built from the projectors of §*The Propagators and the Three Limits*, and the gauge invariance that fixes their transverse structure.
 - [The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html). The same functional in the unbroken non-abelian case, where the coupling is in the derivative and the ghost sector is the whole of the difference between the classical and the quantum action.

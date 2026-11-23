@@ -167,7 +167,7 @@ The Hilbert–Schmidt form $\langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X
 
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the Frobenius norm, the singular values and the orthogonal group.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the Rayleigh quotients and the comparison of norms on matrices.
-- [The Trace Form and Its Indefinite Inertia](the-trace-form-and-its-indefinite-signature.html), for the invariant form and the inertia $(n(n+1)/2,n(n-1)/2)$.
+- [The Trace Form and Its Indefinite Inertia](the-trace-form-and-its-indefinite-inertia.html), for the invariant form and the inertia $(n(n+1)/2,n(n-1)/2)$.
 - [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the algebra and its matrix units.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric](the-two-halves-over-r-symmetric-and-antisymmetric.html), for the two halves on which the two forms agree and disagree.
 - [The Killing Form, Its Radical and the Centre of $\mathfrak{gl}_n(\mathbb{R})$](the-killing-form-its-radical-and-the-centre-of-gl-n-r.html), for the third form on the same space.

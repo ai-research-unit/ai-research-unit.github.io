@@ -126,4 +126,4 @@ The boundary of the cone is the cone over the two-sphere of rank-one matrices, i
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge University Press, 2010), for the Bloch ball of density matrices.
 - [The Two Halves and Their Topology at $n=2$](the-two-halves-and-their-topology-at-n-2.html), for the cone in its topological setting.
 - [The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents](the-spectral-theorem-the-hermitian-case-and-the-sphere-of-idempotents.html), for the rank-one Hermitian matrices.
-- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the pairing used in self-duality.
+- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-inertia-on-the-two-halves-of-m2r.html), for the pairing used in self-duality.

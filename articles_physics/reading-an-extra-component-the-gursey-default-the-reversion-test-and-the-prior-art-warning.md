@@ -90,7 +90,7 @@ They do not select between plural readings. The default reading says that an ext
 
 **They do not turn a reformulation into a prediction.** A formulation that passes the legitimacy test is well formed; nothing in the test compares it with experiment. The framework's empirical position, stated in [The Empirical Status of the Biquaternion Framework](the-empirical-status-of-the-biquaternion-framework.html), is agreement with the standard theory on every domain developed, and no criterion here changes that.
 
-They do not license a new sector. The Einstein–Mayer instance shows that a scalar sector can be written on paper, not that the framework supplies one. The corpus records the paper route and its verdict side by side, and the article that needs the scalar — [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html) — marks the sector as *no route yet* even while citing the paper route.
+They do not license a new sector. The Einstein–Mayer instance shows that a scalar sector can be written on paper, not that the framework supplies one. The corpus records the paper route and its verdict side by side, and the article that needs the scalar — [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html) — marks the sector as *no route yet* even while citing the paper route.
 
 ## Summary
 
@@ -122,7 +122,7 @@ The worked instance is the promoted mass. The Einstein–Mayer pair replaces one
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the doubling worked on the corpus's own carrier.
 - [The Petiau System and the Quantisation of Mass in Biquaternionic Form](the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form.html), for the derivatively coupled case and its double-periodic waves.
 - [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html), for the sigma-model reading of $E$ and its limits.
-- [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html), for the scalar sector marked *no route yet* alongside the paper route.
+- [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html), for the scalar sector marked *no route yet* alongside the paper route.
 - [The Empirical Status of the Biquaternion Framework](the-empirical-status-of-the-biquaternion-framework.html), for the domain-by-domain agreement that makes the prior-art warning the corpus's default expectation.
 - [Comparison of the Remarkable Subspaces](../articles_maths/comparison-of-the-remarkable-subspaces.html), for the conjugations and their fixed spaces.
 - [The CPT Theorem in Biquaternionic Form](the-cpt-theorem-in-biquaternionic-form.html), for the discrete symmetries the legitimacy test requires.

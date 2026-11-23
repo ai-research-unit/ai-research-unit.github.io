@@ -1,4 +1,4 @@
-# __The Two-Sheeted Cover and the Topology of the Group__
+# __The Two-Sheeted Cover and the Topology of Boosts__
 
 ## Introduction
 

@@ -232,10 +232,10 @@ $$
 hold on the sixteen and fail on the fifteen. The chain is then a sequence of implications rather than a choice:
 
 $$
-\text{gauge }\mathrm{SU}(2)_R\ \Longrightarrow\ \text{gauge }B-L\ \Longrightarrow\ \nu_{\mathrm{neu},R}\ \text{required}\ \Longrightarrow\ \text{matter is sixteen}.
+\text{gauge }\mathrm{SU}(2)_R\ \Longrightarrow\ \text{gauge }B-L\ \Longrightarrow\ \xi_{\mathrm{neu},R}\ \text{required}\ \Longrightarrow\ \text{matter is sixteen}.
 $$
 
-**A theory with half the group is free to be odd, and the observed one is odd.** The arithmetic is in [Anomalies and Anomaly Cancellation](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html), and the count is in the content section below.
+**A theory with half the group is free to be odd, and the observed one is odd.** The arithmetic is in [Anomalies and Anomaly Cancellation](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html), and the count is in the content section below.
 
 **The fourth reason is that the factor is broken, not absent, and hypercharge is its remnant.** The neutral generator of the broken factor survives as a circle and mixes with $B-L$:
 
@@ -247,9 +247,9 @@ $$
 
 | field | $T_{3L}$ | $T_{3R}$ | $B-L$ | $Y=T_{3R}+\tfrac12(B-L)$ | $Q=T_{3L}+Y$ |
 |---|---|---|---|---|---|
-| $\nu_{\mathrm{neu},L}$ | $+\tfrac12$ | $0$ | $-1$ | $-\tfrac12$ | $0$ |
+| $\xi_{\mathrm{neu},L}$ | $+\tfrac12$ | $0$ | $-1$ | $-\tfrac12$ | $0$ |
 | $e_L$ | $-\tfrac12$ | $0$ | $-1$ | $-\tfrac12$ | $-1$ |
-| $\nu_{\mathrm{neu},R}$ | $0$ | $+\tfrac12$ | $-1$ | $0$ | $0$ |
+| $\xi_{\mathrm{neu},R}$ | $0$ | $+\tfrac12$ | $-1$ | $0$ | $0$ |
 | $e_R$ | $0$ | $-\tfrac12$ | $-1$ | $-1$ | $-1$ |
 | $u_L$ | $+\tfrac12$ | $0$ | $+\tfrac13$ | $+\tfrac16$ | $+\tfrac23$ |
 | $d_L$ | $-\tfrac12$ | $0$ | $+\tfrac13$ | $+\tfrac16$ | $-\tfrac13$ |
@@ -457,7 +457,7 @@ No section assumes a Standard Model structure. The three gauge factors are each 
 
 - [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) — the Dirac/Weyl/Majorana distinction, the real-structure interpretation, and the explicit statement that the chiral $SU(2)_L$ assignment is empirical input.
 
-- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html) — the colour gap, the ceiling on the gauge algebra, and the three-way classification this article shares.
+- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html) — the colour gap, the ceiling on the gauge algebra, and the three-way classification this article shares.
 - [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html) — the one-loop non-abelian beta function and the article's own statement that the group, matter, action, and regulator are inputs; the caution against reading a transcription as a derivation.
 - [Modules over the Biquaternion Algebra](../articles_maths/the-category-of-modules-in-the-biquaternion-algebra.html) and [Lie Algebras: A General Introduction](../articles_maths/lie-algebras-a-general-introduction.html) — the module structure and the compact-subalgebra facts behind the ceiling.
 - [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html) and [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the spinor module, the mass term, and the real-structure origin of chirality.

@@ -182,7 +182,7 @@ Four objects live on $M_n(\mathbb{R})$. The trace form $\operatorname{tr}(XY)$ i
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the reduced trace, the reduced norm and the norm form of a central simple algebra.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for norm forms, quaternion algebras and inertias.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the operator norm, the Frobenius norm, the spectral radius and their inequalities.
-- [The Trace Form and Its Indefinite Inertia](the-trace-form-and-its-indefinite-signature.html), for the first row of the table.
+- [The Trace Form and Its Indefinite Inertia](the-trace-form-and-its-indefinite-inertia.html), for the first row of the table.
 - [The Hilbert–Schmidt Form: Definite but Not Invariant](the-hilbert-schmidt-form-definite-but-not-invariant.html), for the second row.
 - [The Killing Form, Its Radical and the Centre of $\mathfrak{gl}_n(\mathbb{R})$](the-killing-form-its-radical-and-the-centre-of-gl-n-r.html), for the third row.
 - [Split-Quaternion Algebra](split-quaternion-algebra.html), for the case $n=2$ and the norm form of inertia $(2,2)$.

@@ -189,6 +189,6 @@ The form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is Hermitian, positive d
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the Hilbert–Schmidt norm, the singular values and the comparison with the operator norm.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the Hilbert–Schmidt inner product and the adjoints of the standard operators.
 - Paul R. Halmos, *A Hilbert Space Problem Book* (Springer, 1982), for the two-sided operators and their adjoints.
-- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the indefinite form that this one replaces.
+- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-inertia-on-the-two-halves.html), for the indefinite form that this one replaces.
 - [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-anti-hermitian.html), for the split that is orthogonal but not definite here.
 - [The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the anti-self-adjointness that fails for this form.

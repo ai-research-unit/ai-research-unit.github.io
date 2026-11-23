@@ -125,7 +125,7 @@ The discriminant is proportional to $\alpha^{2}\beta^{2}(\alpha^{2}-\beta^{2})^{
 
 ## Further Reading
 
-- [Introduction to the Spin-Three Carrier at $n=4$: the Top of the Chain](the-spin-three-carrier-of-m4c.html), for the carrier.
+- [Introduction to the Spin-Three Carrier at $n=4$: the Top of the Chain](introduction-to-the-spin-three-carrier-of-m4c.html), for the carrier.
 - [The Spin-Three Carrier and the Rank Strata at $n=4$](the-spin-three-carrier-and-the-rank-strata-at-n-4.html), for the ranks.
 - [The Spin-Three Carrier and the Hermitian Form at $n=4$](the-spin-three-carrier-and-the-hermitian-form-at-n-4.html), for the Hermitian slice.
 - [The Spin-Two Carrier and the Trace Form at $n=4$](the-spin-two-carrier-and-the-trace-form-at-n-4.html), for the comparison.

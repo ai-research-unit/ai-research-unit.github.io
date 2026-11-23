@@ -1,4 +1,4 @@
-# __The Antisymmetric Part inside $UT_n$: the Radical as the Commutator__
+# __The Antisymmetric Part inside $UT_n$: the Radical as the Commutator over $\mathbb{R}$__
 
 ## Introduction
 
@@ -145,5 +145,5 @@ The upper triangular matrices meet the antisymmetric matrices only at zero, so t
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for the Borel and nilpotent subalgebras and the role of the radical.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the triangular factorisations and the trace of a product.
 - [The Triangular Decomposition $h\oplus n_+\oplus n_-$](the-triangular-decomposition-h-n-plus-n-minus-of-mnr.html), for the three pieces used here.
-- [$UT_n$ as the Complement of the Antisymmetric Part](utn-as-the-complement-of-the-antisymmetric-part-over-r.html), for the splitting $M_n=UT_n\oplus\operatorname{Skew}_n$.
-- [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric-over-r.html), for the half that $UT_n$ misses.
+- [$UT_n$ as the Complement of the Antisymmetric Part](utn-as-the-complement-of-the-antisymmetric-part.html), for the splitting $M_n=UT_n\oplus\operatorname{Skew}_n$.
+- [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric.html), for the half that $UT_n$ misses.

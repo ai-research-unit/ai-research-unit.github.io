@@ -1,4 +1,4 @@
-# __The Positive Cone and Its Boundary__
+# __The Positive Cone and Its Boundary over $\mathbb{R}$__
 
 ## Introduction
 

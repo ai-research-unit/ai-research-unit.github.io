@@ -20,7 +20,9 @@ Three results, and an honest word on novelty. Only the third is this article's o
 
 - The masses are invariants, so they cannot be removed by a change of flavour basis. The characteristic polynomial of $M_f^{\dagger}M_f$ is unchanged by $M_f\mapsto U^{\dagger}M_fV$, so its three coefficients are the only basis-independent content of the matrix. Verified below to $3\times10^{-15}$ over twenty random bi-unitary transformations.
 - CP violation in the quark sector is one number and it is a determinant. The Jarlskog invariant $J=\operatorname{Im}\left(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*}\right)$ is the same for every quartet of indices and for every rephasing, equals $s_{12}s_{23}s_{13}c_{12}c_{23}c_{13}^{2}\sin\delta$, equals twice the area of the unitarity triangle, and is fixed by the two mass matrices alone through $\operatorname{Im}\det\left[H_u,H_d\right]$. Its value, determined from the measured mixing elements, is $3.12\times10^{-5}$.
-- The largest scheme ambiguity in the sector is in the quark masses, and the Higgs width is where it shows. The Higgs width into $b\bar b$ computed with $m_b(m_b)=4.18$ GeV is $4.28$ MeV; computed with $m_b(M_H)\approx2.9$ GeV and the QCD factor it is about $2.49$ MeV; a fit to the measured $H\to b\bar b$ rate gives $2.37$. The factor $1.8$ between the first number and the last is not one effect. The running from $m_b(m_b)$ to $m_b(M_H)$ takes $4.28$ down to $2.07$, a factor $2.07$; the QCD correction at the Higgs scale brings it back up to $2.49$, a factor $1.20$; the reference $2.37$ is a further $1.05$ below that. The three compound to $2.07/1.20\times1.05=1.81$, which is $4.28/2.37$. Calling the whole of it "a running mass" credits one of three factors with the total.
+**Units.** A mass in this article is a fraction of the vacuum value, $n_f=m_f/m_{\mathrm{vev}}$ with $E_{\mathrm{vev}}=246.22$ GeV. Energies, widths and running scales stay in electronvolts. The couplings follow the fractions: the Yukawa is $y_f=\sqrt2\,n_f$, and the Higgs coupling is the fraction itself, $g_{hf\bar f}=n_f$.
+
+- The largest scheme ambiguity is in the quark masses, and the Higgs width is where it shows. The Higgs width into $b\bar b$ computed with $n_b(m_b)=1.698\times10^{-2}$ is $4.28$ MeV; computed with $n_b(M_H)\approx1.18\times10^{-2}$ and the QCD factor it is about $2.49$ MeV; a fit to the measured $H\to b\bar b$ rate gives $2.37$. The factor $1.8$ between the first number and the last is not one effect. The running from $m_b(m_b)$ to $m_b(M_H)$ takes $4.28$ down to $2.07$, a factor $2.07$; the QCD correction at the Higgs scale brings it back up to $2.49$, a factor $1.20$; the reference $2.37$ is a further $1.05$ below that. The three compound to $2.07/1.20\times1.05=1.81$, which is $4.28/2.37$. Calling the whole of it "a running mass" credits one of three factors with the total.
 
 The order. Why no mass term exists; the three matrices and their audit; the mass matrix after breaking; bi-unitary diagonalisation; the two unitary factors; the four mixing parameters; where CP violation lives; the count of thirteen; the spectrum and its unexplained gaps; the Higgs coupling as the sector's test; neutrinos; and the framework's position.
 
@@ -39,9 +41,9 @@ Written out. A term $m\,\bar Q_Ld_R$ is not a singlet, and the arithmetic shows 
 | $m_u\bar Q_Lu_R$ | $Y=-1/6+2/3\neq0$ | $Y_{u}$ with $\tilde\omicron_{\mathrm{hgs}}$ |
 | $m_d\bar Q_Ld_R$ | $Y=-1/6-1/3\neq0$ | $Y_{d}$ with $\omicron_{\mathrm{hgs}}$ |
 | $m_e\bar L_Le_R$ | $Y=+1/2-1\neq0$ | $Y_{e}$ with $\omicron_{\mathrm{hgs}}$ |
-| $m_{\nu_{\mathrm{neu}}}\bar L_L\nu_{\mathrm{neu},R}$ | $Y=+1/2\neq0$; a doublet cannot contract with a singlet | $Y_{\jmath}$ with $\tilde\omicron_{\mathrm{hgs}}$ |
+| $m_{\xi_{\mathrm{neu}}}\bar L_L\xi_{\mathrm{neu},R}$ | $Y=+1/2\neq0$; a doublet cannot contract with a singlet | $Y_{\jmath}$ with $\tilde\omicron_{\mathrm{hgs}}$ |
 
-The last row differs in kind, and not in its quantum numbers. All four fail the same two tests. Every left-handed field here is a doublet and every right-handed one a singlet, so no bare term is an $SU(2)_L$ singlet. And every bare term has non-zero hypercharge — the neutrino's is $+1/2$, since $\bar L_L$ carries $+1/2$ and $\nu_{\mathrm{neu},R}$ carries $0$. What separates the last row is that $\nu_{\mathrm{neu},R}$ is absent from the minimal model: the other three right-handed fields are in the spectrum and their mass terms are forbidden, while the neutrino's mass term is not forbidden so much as unavailable with the field. §*Neutrinos* records what the distinction changes.
+The last row differs in kind, and not in its quantum numbers. All four fail the same two tests. Every left-handed field here is a doublet and every right-handed one a singlet, so no bare term is an $SU(2)_L$ singlet. And every bare term has non-zero hypercharge — the neutrino's is $+1/2$, since $\bar L_L$ carries $+1/2$ and $\xi_{\mathrm{neu},R}$ carries $0$. What separates the last row is that $\xi_{\mathrm{neu},R}$ is absent from the minimal model: the other three right-handed fields are in the spectrum and their mass terms are forbidden, while the neutrino's mass term is not forbidden so much as unavailable with the field. §*Neutrinos* records what the distinction changes.
 
 What the gauge symmetry buys. A mass term is a parameter that would have been arbitrary in the unbroken phase, with no relation to anything. Forbidding it removes three such terms per generation — four if a right-handed neutrino is added — and replaces them with coupling matrices whose *structure* is fixed by the quantum numbers. The price is that the entries are still free, and that is the thirteen.
 
@@ -307,21 +309,21 @@ What the count does not include. Neutrino masses add seven parameters on the Dir
 
 ## The Mass Spectrum and Its Gaps
 
-The couplings. With $y_f=\sqrt2\,m_f/v$ and $v=246.22$ GeV. The last column is the one this article is about, so the two before it carry the scheme and the scale: a mass without them is not a number.
+The couplings. With $y_f=\sqrt2\,n_f$ and $E_{\mathrm{vev}}=246.22$ GeV. The last column is the one this article is about, so the two before it carry the scheme and the scale: a mass without them is not a number.
 
-| Fermion | $m_f$ | Scheme and scale | $y_f=\sqrt2m_f/v$ |
+| Fermion | $n_f=m_f/m_{\mathrm{vev}}$ | Scheme and scale | $y_f=\sqrt2\,n_f$ |
 |---|---|---|---|
-| $e$ | $0.511$ MeV | pole | $2.94\times10^{-6}$ |
-| $\mu$ | $105.7$ MeV | pole | $6.07\times10^{-4}$ |
-| $\tau$ | $1.777$ GeV | pole | $1.02\times10^{-2}$ |
-| $u$ | $2.16$ MeV | $\overline{\mathrm{MS}}$, $2$ GeV | $1.24\times10^{-5}$ |
-| $d$ | $4.67$ MeV | $\overline{\mathrm{MS}}$, $2$ GeV | $2.68\times10^{-5}$ |
-| $s$ | $93.4$ MeV | $\overline{\mathrm{MS}}$, $2$ GeV | $5.36\times10^{-4}$ |
-| $c$ | $1.27$ GeV | $\overline{\mathrm{MS}}$, $m_c$ | $7.29\times10^{-3}$ |
-| $b$ | $4.18$ GeV | $\overline{\mathrm{MS}}$, $m_b$ | $2.40\times10^{-2}$ |
-| $t$ | $172.7$ GeV | pole | $9.92\times10^{-1}$ |
+| $e$ | $2.075\times10^{-6}$ | pole | $2.94\times10^{-6}$ |
+| $\mu$ | $4.293\times10^{-4}$ | pole | $6.07\times10^{-4}$ |
+| $\tau$ | $7.217\times10^{-3}$ | pole | $1.02\times10^{-2}$ |
+| $u$ | $8.773\times10^{-6}$ | $\overline{\mathrm{MS}}$, $2$ GeV | $1.24\times10^{-5}$ |
+| $d$ | $1.897\times10^{-5}$ | $\overline{\mathrm{MS}}$, $2$ GeV | $2.68\times10^{-5}$ |
+| $s$ | $3.793\times10^{-4}$ | $\overline{\mathrm{MS}}$, $2$ GeV | $5.36\times10^{-4}$ |
+| $c$ | $5.158\times10^{-3}$ | $\overline{\mathrm{MS}}$, $m_c$ | $7.29\times10^{-3}$ |
+| $b$ | $1.698\times10^{-2}$ | $\overline{\mathrm{MS}}$, $m_b$ | $2.40\times10^{-2}$ |
+| $t$ | $7.014\times10^{-1}$ | pole | $9.92\times10^{-1}$ |
 
-Three quark conventions in one column, and they are not interchangeable. The light quarks are quoted at $2$ GeV because below the charm threshold that is where the lattice and sum-rule determinations live; the charm and bottom at their own masses, where the running stops being large; the top on shell, because it decays before it hadronises. So $y_b=2.40\times10^{-2}$ here is the coupling at $m_b$, while the $g_{hb\bar b}$ of §*What the Higgs Coupling Makes Testable* is the same coupling at $M_H$, where the mass is $2.9$ GeV, and appears there as $1.18\times10^{-2}$. The ratio is $2.03$, not $\sqrt2$ and not an arithmetic error, and a reader who tries to reconcile the two tables without a scale will not succeed.
+Three quark conventions in one column, and they are not interchangeable. The light quarks are quoted at $2$ GeV because below the charm threshold that is where the lattice and sum-rule determinations live; the charm and bottom at their own masses, where the running stops being large; the top on shell, because it decays before it hadronises. So $y_b=2.40\times10^{-2}$ here is the coupling at $m_b$, while the $g_{hb\bar b}$ of §*What the Higgs Coupling Makes Testable* is the same coupling at $M_H$, where the fraction is $n_b=1.18\times10^{-2}$; the coupling equals the fraction, so the table below prints $1.18\times10^{-2}$. The ratio is $2.03$, not $\sqrt2$ and not an arithmetic error, and a reader who tries to reconcile the two tables without a scale will not succeed.
 
 Two facts in the last column. The top Yukawa is one to within one per cent, and the electron Yukawa is $3\times10^{-6}$. The span is
 
@@ -339,7 +341,7 @@ $$
 \frac{m_e+m_\mu+m_\tau}{\left(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}\right)^{2}}=\frac23 ,
 $$
 
-the Koide relation, and it holds to a relative accuracy of $9\times10^{-6}$ with the PDG charged-lepton masses. The digits should not be read as a measurement: the quantity is a ratio of two sums of order $10^{3}$ MeV and the claim concerns its fifth decimal place, so four-significant-figure input masses cannot resolve it — with the three masses rounded as they are in the table above the agreement degrades to $5\times10^{-5}$. It is written here because it is the sharpest unexplained numerical fact in the sector, and because the corpus's discipline requires that a striking number be reported with its status: the relation is empirical, has no derivation in the Standard Model, and is not a prediction of any part of this article. A reader who takes it as a hint is entitled to; a reader who takes it as established is not.
+the Koide relation, and it holds to a relative accuracy of $9\times10^{-6}$ with the PDG charged-lepton masses. The digits should not be read as a measurement: the quantity is a ratio of two sums whose terms are of order $10^{-2}$ in $n_i$ and the claim concerns its fifth decimal place, so four-significant-figure input masses cannot resolve it — with the three masses rounded as they are in the table above the agreement degrades to $5\times10^{-5}$. It is written here because it is the sharpest unexplained numerical fact in the sector, and because the corpus's discipline requires that a striking number be reported with its status: the relation is empirical, has no derivation in the Standard Model, and is not a prediction of any part of this article. A reader who takes it as a hint is entitled to; a reader who takes it as established is not.
 
 **What the sector does not explain.** Four things, in decreasing order of sharpness: the absolute scale of the masses, which is set by $v$ and is not explained by the sector; the hierarchy, five and a half orders; the pattern of the mixing angles, $0.22$, $0.042$, $0.0037$; and the Koide relation. The sector's role is to make all four exist as parameters of a renormalisable Lagrangian, and to relate the masses to the mixing through one decomposition.
 
@@ -357,9 +359,9 @@ $$
 
 **The proportionality is the sector's prediction.** The Higgs couples to each fermion in proportion to its mass, with no free constant per flavour. The Yukawa matrix that sets the mass also sets the coupling, because both come from the same term. What the couplings measure is therefore the same numbers the masses do — the nine masses, taken in a different way. They are not the thirteen: the four mixing parameters do not enter a Higgs coupling at tree level, because the coupling is diagonal in the mass basis. The flavour structure is invisible to the scalar, and that is itself a testable statement.
 
-The decays. With $\Gamma\left(H\to f\bar f\right)=N_c\,m_f^{2}M_H\beta^{3}/\left(8\pi v^{2}\right)$ and $\beta=\sqrt{1-4m_f^{2}/M_H^{2}}$, and $M_H=125.09$ GeV:
+The decays. With $\Gamma\left(H\to f\bar f\right)=N_c\,m_f^{2}M_H\beta^{3}/\left(8\pi v^{2}\right)$ and $\beta=\sqrt{1-4m_f^{2}/M_H^{2}}$, and $n_H=0.5080$:
 
-| Channel | $g_{hf\bar f}=m_f/v$ | Computed width | Reference value |
+| Channel | $g_{hf\bar f}=n_f$ | Computed width | Reference value |
 |---|---|---|---|
 | $b\bar b$ | $1.18\times10^{-2}$ | $2.49$ MeV | $2.37$ MeV |
 | $\tau^+\tau^-$ | $7.22\times10^{-3}$ | $0.259$ MeV | $0.257$ MeV |
@@ -369,11 +371,11 @@ The last column is not one kind of number, and the header used to say it was. $\
 
 Two conventions sit in one table, and the note belongs here rather than in a footnote. The quark rows carry the next-to-leading QCD factor $1+5.67\alpha_s(M_H)/\pi=1.20$; the $\tau$ row does not, having no strong coupling to run. Evaluated as pure tree level from the same couplings the $b$ width is $2.07$ MeV, not $2.49$, and the $c$ width $0.092$, not $0.110$. A reader reproducing the table from the formula as printed will find the two quark rows about $17$ per cent low and the $\tau$ row already exact, which is the factor and not an error.
 
-The $b$ row is where the scheme enters, and it is the sharpest lesson of the sector. Evaluating the formula with the $\overline{\mathrm{MS}}$ mass at its own scale, $m_b(m_b)=4.18$ GeV, gives $4.28$ MeV, a factor $1.8$ above the measurement. Running the mass to the Higgs scale gives $m_b(M_H)\approx2.9$ GeV and, with the QCD correction factor $1+5.67\alpha_s(M_H)/\pi\approx1.20$ at $\alpha_s(M_H)\approx0.113$, a width of about $2.5$ MeV. The gap between $4.28$ and $2.49$ is not an error in either calculation: it is the running mass, a factor $2.07$, moderated by the QCD correction, a factor $1.20$, and the two compound to $1.7$ — a change of definition and a change of order, not a disagreement. A reader who compares a tree-level Yukawa prediction with a measured width without naming the scale has compared two different statements, which is the same lesson as in *The Weinberg Angle* and *Electroweak Symmetry Breaking*.
+The $b$ row is where the scheme enters, and it is the sharpest lesson of the sector. Evaluating the formula with the $\overline{\mathrm{MS}}$ mass at its own scale, $n_b(m_b)=1.698\times10^{-2}$, gives $4.28$ MeV, a factor $1.8$ above the measurement. Running the mass to the Higgs scale gives $n_b(M_H)\approx1.18\times10^{-2}$ and, with the QCD correction factor $1+5.67\alpha_s(M_H)/\pi\approx1.20$ at $\alpha_s(M_H)\approx0.113$, a width of about $2.5$ MeV. The gap between $4.28$ and $2.49$ is not an error in either calculation: it is the running mass, a factor $2.07$, moderated by the QCD correction, a factor $1.20$, and the two compound to $1.7$ — a change of definition and a change of order, not a disagreement. A reader who compares a tree-level Yukawa prediction with a measured width without naming the scale has compared two different statements, which is the same lesson as in *The Weinberg Angle* and *Electroweak Symmetry Breaking*.
 
-The quark couplings in the table are the masses at the scale of the process, not at their own scale. That is $m_q(M_H)$: $m_b(M_H)\approx2.9$ GeV and $m_c(M_H)\approx0.61$ GeV, the $c$ about half its $\overline{\mathrm{MS}}$ value at its own mass and the $b$ about two thirds of it. Quoting $m_f/v$ with the mass at its own scale instead inflates the $b$ width to $4.28$ MeV and the $c$ width to $0.40$ MeV, and neither number is wrong; each answers a different question.
+The quark couplings in the table are the masses at the scale of the process, not at their own scale. That is $n_q(M_H)$: $n_b(M_H)\approx1.18\times10^{-2}$ and $n_c(M_H)\approx2.48\times10^{-3}$, the $c$ about half its $\overline{\mathrm{MS}}$ value at its own mass and the $b$ about two thirds of it. Quoting $n_f$ with the mass at its own scale instead inflates the $b$ width to $4.28$ MeV and the $c$ width to $0.40$ MeV, and neither number is wrong; each answers a different question.
 
-The lepton row carries no such ambiguity. The running of a lepton mass is electromagnetic only, and from $m_\tau$ to $M_H$ it is $0.7$ per cent: taking the one-loop anomalous dimension $3\alpha/(4\pi)$ over $\ln\left(M_H/m_\tau\right)=4.25$ gives $m_\tau(M_H)=1.764$ GeV against $1.777$ at its own scale. The width goes as the mass squared, so it moves by $1.5$ per cent — a shift that cancels in a comparison at the per-cent level and cannot produce a factor of two. The sector's clean tests are therefore the lepton ones, and its precision tests are the heavy-quark ones, where the running must be controlled.
+The lepton row carries no such ambiguity. The running of a lepton mass is electromagnetic only, and from $m_\tau$ to $M_H$ it is $0.7$ per cent: taking the one-loop anomalous dimension $3\alpha/(4\pi)$ over $\ln\left(M_H/m_\tau\right)=4.25$ gives $n_\tau(M_H)=7.164\times10^{-3}$ against $7.217\times10^{-3}$ at its own scale. The width goes as the mass squared, so it moves by $1.5$ per cent — a shift that cancels in a comparison at the per-cent level and cannot produce a factor of two. The sector's clean tests are therefore the lepton ones, and its precision tests are the heavy-quark ones, where the running must be controlled.
 
 The loop coupling to gluons and photons. The Higgs couples to gluons through a top-quark triangle, so the $gg\to H$ amplitude is fixed by $y_t$ alone. It couples to photons through a top triangle and a $W$ loop that interferes with it destructively, so the $H\to\gamma\gamma$ amplitude is fixed by $y_t$ and by the $W$ coupling together, and by neither alone. The two rates are therefore a test of the top Yukawa at the scale of the loop momentum — at most $M_H/2$, not $m_t$ — and, in the photon channel, of the gauge sector as well. Both agree with the Standard Model at the ten per cent level.
 
@@ -381,9 +383,9 @@ What a deviation would mean. A measured $g_{hf\bar f}$ different from $m_f/v$ wo
 
 ## Neutrinos: the Same Sector with Two New Questions
 
-The two questions. A neutrino mass requires either a right-handed singlet, and then the same Yukawa structure applies, or a Majorana mass term for the left doublet. The second is forbidden twice over: the symmetric pair $\nu_{\mathrm{neu},L}^{T}C\nu_{\mathrm{neu},L}$ carries hypercharge $-1$ — each $\nu_{\mathrm{neu},L}$ has $-\tfrac12$ in the convention $Y=Ϙ-T_3$ that article 1 uses — where a mass term needs $0$, so no gauge-invariant contraction exists, and it has dimension three, so it is not renormalisable either. A scalar triplet of hypercharge $+1$ would supply the missing charge — that is the type-II route — and the dimension-five operator below is the general low-energy statement, with the singlet and the fermion triplet integrated out.
+The two questions. A neutrino mass requires either a right-handed singlet, and then the same Yukawa structure applies, or a Majorana mass term for the left doublet. The second is forbidden twice over: the symmetric pair $\xi_{\mathrm{neu},L}^{T}C\xi_{\mathrm{neu},L}$ carries hypercharge $-1$ — each $\xi_{\mathrm{neu},L}$ has $-\tfrac12$ in the convention $Y=Ϙ-T_3$ that article 1 uses — where a mass term needs $0$, so no gauge-invariant contraction exists, and it has dimension three, so it is not renormalisable either. A scalar triplet of hypercharge $+1$ would supply the missing charge — that is the type-II route — and the dimension-five operator below is the general low-energy statement, with the singlet and the fermion triplet integrated out.
 
-The Dirac route. Add $\nu_{\mathrm{neu},R}$, a singlet of all three groups. Then $Y_{\jmath}$ is a fourth $3\times3$ complex matrix and the analysis of this article repeats verbatim: singular values for the masses, misalignment for the PMNS matrix. The count grows by seven: three masses, three angles, one phase.
+The Dirac route. Add $\xi_{\mathrm{neu},R}$, a singlet of all three groups. Then $Y_{\jmath}$ is a fourth $3\times3$ complex matrix and the analysis of this article repeats verbatim: singular values for the masses, misalignment for the PMNS matrix. The count grows by seven: three masses, three angles, one phase.
 
 The Majorana route. A term $\overline{L_{L,c}}\,\tilde\omicron_{\mathrm{hgs}}^{*}\,\digamma_{\mathrm{yuk}}\,\tilde\omicron_{\mathrm{hgs}}^{\dagger}L_L/M$ is the unique dimension-five operator, and it gives a mass matrix $M_{\jmath}=\digamma_{\mathrm{yuk}} v^{2}/(2M)$ after the breaking. The matrix is symmetric — not by assumption but because the two fermion factors in the operator are the same doublet, so the matrix is its own transpose — and a symmetric matrix has six complex entries and is diagonalised by one unitary; two of the phases cannot be removed by rephasing, so the count grows by nine: three masses, three angles, one Dirac phase and two Majorana phases.
 
@@ -454,12 +456,12 @@ The framework supplies the home of the matrices and not their entries. Its fermi
 | $\theta_{ij}$, $\delta$ | The three mixing angles and the CP phase |
 | $J$ | The Jarlskog invariant, $3.12\times10^{-5}$ in the quark sector |
 | $A$, $\digamma_{\mathrm{ckm},12}$, $\bar\rho$, $\digamma_{\mathrm{wlf}}$ | Wolfenstein parameters, $0.826$, $0.225$, $0.159$, $0.352$ |
-| $v$ | $246.22$ GeV, the vacuum expectation value |
-| $y_f$ | $\sqrt2m_f/v$, the Yukawa coupling |
-| $M_H$ | $125.09$ GeV, the Higgs mass |
+| $E_{\mathrm{vev}}$ | $246.22$ GeV, the vacuum expectation value, denominator of every fraction |
+| $y_f$ | $\sqrt2\,n_f$, the Yukawa coupling; $n_f=m_f/m_{\mathrm{vev}}$ |
+| $n_H$ | $0.5080$, the Higgs mass as a fraction of $m_{\mathrm{vev}}$ |
 | $\beta$, $N_c$ | $\sqrt{1-4m_f^{2}/M_H^{2}}$ and the colour multiplicity, in the width |
-| $g_{hf\bar f}$ | $m_f/v$, the Higgs coupling to the fermion |
-| $Q_L$, $u_R$, $d_R$, $L_L$, $e_R$, $\nu_{\mathrm{neu},R}$ | The quark and lepton multiplets, with the quantum numbers of article 1 |
+| $g_{hf\bar f}$ | $n_f$, the Higgs coupling to the fermion, equal to the fraction |
+| $Q_L$, $u_R$, $d_R$, $L_L$, $e_R$, $\xi_{\mathrm{neu},R}$ | The quark and lepton multiplets, with the quantum numbers of article 1 |
 | $\psi$ | A generic fermion field, standing for any of the six |
 | $\mathcal{S}_{\mathrm{rep}}$, $\mathbb{C}^{N_g}$, $\mathcal F$ | The module and the multiplicity factor of the framework |
 | $N_g$ | The number of generations, three in the observed world |
@@ -482,6 +484,6 @@ The framework supplies the home of the matrices and not their entries. Its fermi
 - [The PMNS Matrix and Lepton Mixing](the-pmns-matrix-and-lepton-mixing.html). The angles, the mass-squared differences and the neutrino spectrum quoted in §*Neutrinos*.
 - [The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form](the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html). The second CP-odd parameter, $\bar\theta$, which this article's $J$ does not constrain.
 - [Meson Mixing, Rare Decays and the Unitarity Triangle as a Closure Test](meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.html). The $\digamma_{\mathrm{wlf}}$ and the triangle angles of §*Where CP Violation Lives*, and the closure test that decides which rounding of them to use.
-- [The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html). The scheme-dependence lesson that §*What the Higgs Coupling Makes Testable* applies to the Higgs width.
+- [The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$](the-weinberg-angle-and-the-three-neutral-states.html). The scheme-dependence lesson that §*What the Higgs Coupling Makes Testable* applies to the Higgs width.
 
 Of the companions this article names, a dedicated article on the flavour puzzle — the pattern of the masses and of the mixings — is not yet in the corpus. [The Hierarchy Problem and Naturalness](the-hierarchy-problem-and-naturalness.html) is not it: that article is about the scalar mass and the quadratic sensitivity, which is a different question from the fermion spectrum. The CKM matrix and CP violation is in the corpus and appears in the list above; the neutrino numbers of §*Neutrinos* are the PMNS article's, quoted here so that the sector stands as one piece.

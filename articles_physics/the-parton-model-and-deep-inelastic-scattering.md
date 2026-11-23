@@ -84,7 +84,7 @@ F_1(x,Q^2)=M\,W_1 ,
 F_2(x,Q^2)=\digamma_{\mathrm{str}}\,W_2 ,
 $$
 
-and the factors of $M$ and ${\jmath}$ are chosen so that both are dimensionless and, in the scaling limit, functions of $x$ alone. A third function $F_3$ exists and is measured with neutrinos; it is parity-odd and requires a weak exchange, which is [the neutral-current article's](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html) territory rather than this one's.
+and the factors of $M$ and ${\jmath}$ are chosen so that both are dimensionless and, in the scaling limit, functions of $x$ alone. A third function $F_3$ exists and is measured with neutrinos; it is parity-odd and requires a weak exchange, which is [the neutral-current article's](the-weinberg-angle-and-the-three-neutral-states.html) territory rather than this one's.
 
 ## Bjorken Scaling
 
@@ -306,10 +306,10 @@ The singlet, which this section has avoided. The measured $F_2$ does not fall at
 Gross–Llewellyn Smith. For neutrino and antineutrino scattering on an isoscalar target, the first moment of the parity-odd structure function is predicted to all orders:
 
 $$
-\int_0^1F_{3,\nu_{\mathrm{neu}} N}(x,Q^2)\,dx=3\left[1-\frac{\alpha_s}{\pi}-c_2\left(\frac{\alpha_s}{\pi}\right)^2-\dots\right] ,
+\int_0^1F_{3,\xi_{\mathrm{neu}} N}(x,Q^2)\,dx=3\left[1-\frac{\alpha_s}{\pi}-c_2\left(\frac{\alpha_s}{\pi}\right)^2-\dots\right] ,
 $$
 
-with $N$ the isoscalar nucleon, and with the leading correction fixed and computable. The moment is of one structure function and not of the neutrino-plus-antineutrino sum: charge conjugation on an isoscalar target gives $F_{3,\bar\nu_{\mathrm{neu}} N}=F_{3,\nu_{\mathrm{neu}} N}$, so either measures the same number and adding them would double the right side against a measurement of $2.50$. The superscript is $N$ and not $p$: the measured target is isoscalar, and it is charge symmetry that lets the proton and neutron densities be combined into one object, so writing the moment for a proton target and the measurement for an isoscalar one would compare two different sums. The prefactor three is the number of valence quarks, that is $N_c$ read as a baryon number, and the correction is the same $\alpha_s$ that runs.
+with $N$ the isoscalar nucleon, and with the leading correction fixed and computable. The moment is of one structure function and not of the neutrino-plus-antineutrino sum: charge conjugation on an isoscalar target gives $F_{3,\bar\xi_{\mathrm{neu}} N}=F_{3,\xi_{\mathrm{neu}} N}$, so either measures the same number and adding them would double the right side against a measurement of $2.50$. The superscript is $N$ and not $p$: the measured target is isoscalar, and it is charge symmetry that lets the proton and neutron densities be combined into one object, so writing the moment for a proton target and the measurement for an isoscalar one would compare two different sums. The prefactor three is the number of valence quarks, that is $N_c$ read as a baryon number, and the correction is the same $\alpha_s$ that runs.
 
 The arithmetic, and the first thing it gets wrong if the scale is not matched. The measured datum is the CCFR first moment, quoted at $Q^2=3$ GeV$^2$ — that is $Q=1.73$ GeV, not $3$ GeV, and the distinction is worth one sentence because the coupling moves by twenty per cent between the two. Interpolating [the running article's](asymptotic-freedom-and-the-running-of-the-strong-coupling.html) one-loop line between its $1.5$ and $2$ GeV entries gives $\alpha_s\approx0.28$ there, and the one-loop prediction is
 
@@ -438,5 +438,5 @@ The framework supplies the null direction, and with it the light-cone decomposit
 - [The Proton in Biquaternionic Form](the-proton-in-biquaternionic-form.html). The spin-$\tfrac12$ carrier, and what the algebra does and does not say about compositeness.
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html). The null direction and the exact unipotent null rotations that the light-cone construction uses.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The reason the constituents are not objects of the algebra.
-- [The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html). The $Z$ exchange that corrects the photon-only cross section, and $F_3$'s parity-odd partner.
+- [The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$](the-weinberg-angle-and-the-three-neutral-states.html). The $Z$ exchange that corrects the photon-only cross section, and $F_3$'s parity-odd partner.
 - [Lattice Gauge Theory and the Biquaternion Path Integral](lattice-gauge-theory-and-the-biquaternion-path-integral.html). The method that computes what the densities can only be fitted to.

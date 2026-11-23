@@ -140,5 +140,5 @@ The symmetric half of $M_n(\mathbb{R})$ with the product $X\circ Y=\tfrac12(XY+Y
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the Jordan identities, formal reality and the Peirce decomposition.
 - Pascual Jordan, John von Neumann and Eugene Wigner, *On an Algebraic Generalization of the Quantum Mechanical Formalism* (Annals of Mathematics, 1934), for the original appearance of the algebra of observables.
 - [The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$](the-four-multiplication-tables-ss-sk-ks-kk-over-r.html), for the products between the halves.
-- [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric-over-r.html), for the symmetric half as a set.
+- [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric.html), for the symmetric half as a set.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the Peirce rules in full.

@@ -46,7 +46,7 @@ it is surjective onto $S^3$, its kernel is the union of the spheres $2\pi kS^2$,
 
 **Theorem (the three names).** The versor group is $SU(2)$ through the standard matrix model, and it is $\mathrm{Sp}(1)$ as the group of the quaternionic unitary $1\times1$ matrices.
 
-*Proof.* In the model of [The M2C-H Standard Representation](m2c-h-standard-representation.html), the image of a versor is a matrix $A$ with $A^*A=I$ and $\det A=N(\tilde u)=1$, so $SU(2)$ contains the image; conversely a matrix of $U(2)$ in the image of the algebra is determined by its first row of length one, which is the image of a versor. The identification with $\mathrm{Sp}(1)$ is the case $n=1$ of the definition of the quaternionic unitary group. Verified by multiplying the matrices of random versors.
+*Proof.* In the model of [The M2C-H Standard Representation](m2c-h-pauli-representation.html), the image of a versor is a matrix $A$ with $A^*A=I$ and $\det A=N(\tilde u)=1$, so $SU(2)$ contains the image; conversely a matrix of $U(2)$ in the image of the algebra is determined by its first row of length one, which is the image of a versor. The identification with $\mathrm{Sp}(1)$ is the case $n=1$ of the definition of the quaternionic unitary group. Verified by multiplying the matrices of random versors.
 
 **Corollary (the centre and the quotient).** The centre of the versor group is $\{\pm e_t\}$, and the quotient is $SO(3)$.
 
@@ -146,6 +146,6 @@ The maximal torus is the circle of the versors of a named axis, and the Weyl gro
 
 - [The Quaternion Group of Invertibles as a Topological Group](the-quaternion-group-of-invertibles-as-a-topological-group.html) for the group of invertibles and its topology.
 - [Quaternion Rotations and Reflections](quaternion-rotations-and-reflections.html) and [Four-Dimensional Rotations](four-dimensional-rotations.html) for the two double covers.
-- [The M2C-H Standard Representation](m2c-h-standard-representation.html) for the matrix model and the identification with $SU(2)$.
+- [The M2C-H Standard Representation](m2c-h-pauli-representation.html) for the matrix model and the identification with $SU(2)$.
 - [The P Isometry Group and Its Cartan Decomposition](the-p-isometry-group-and-its-cartan-decomposition.html) for the indefinite isometry group.
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html) for the complex counterpart.

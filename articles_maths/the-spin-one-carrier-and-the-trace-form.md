@@ -117,7 +117,7 @@ and the Casimir of the module is $j(j+1)=\tfrac{15}{4}$.
 ## Further Reading
 
 - [The Spin-One Carrier: the Adjoint Triplet](the-spin-one-carrier-the-adjoint-triplet.html), for the generators and the brackets on which the form is evaluated
-- [The Trace Form and Its Signature on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the same form at the row of the elements
+- [The Trace Form and Its Signature on the Two Halves](the-trace-form-and-its-inertia-on-the-two-halves.html), for the same form at the row of the elements
 - [The Symmetric and Antisymmetric Parts of the Operator Space](the-symmetric-and-antisymmetric-parts-of-the-biquaternion-operator-space.html), for the form on the whole space and its two squares
 - [The Spin-One Carrier and the Spectral Strata](the-spin-one-carrier-and-the-spectral-strata.html), for the spectrum read with the form in hand
 - [The Adjoints and the Polar Decomposition of an Operator](the-adjoints-and-the-polar-decomposition-of-an-operator.html), for the star and the form as an inner product

@@ -234,4 +234,4 @@ The Hermitian half carries the trace metric $g_A(H,K)=\operatorname{tr}(A^{-1}HA
 - Jürgen Jost, *Riemannian Geometry and Geometric Analysis* (Springer, 2011), for the comparison theorems of nonpositive curvature.
 - [The Positive Cone and Its Boundary](the-positive-cone-and-its-boundary.html), for the cone whose metric is computed here.
 - [The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$](the-two-sided-operators-and-the-segre-cone-of-mnc.html), for the operators which return as isometries.
-- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the form at the identity.
+- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-inertia-on-the-two-halves.html), for the form at the identity.

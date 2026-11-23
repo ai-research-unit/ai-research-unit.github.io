@@ -1,4 +1,4 @@
-# __The Truncated Rule: the Product of Two Carriers Is Not a Carrier__
+# __The Truncated Rule at $n=4$: the Product of Two Carriers Is Not a Carrier__
 
 ## Introduction
 

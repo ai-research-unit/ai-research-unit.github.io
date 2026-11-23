@@ -1,4 +1,4 @@
-# __The Gluon: An Octet Inside the Carrier's Group__
+# __The Gluon: An Octet Outside the Biquaternion Algebra__
 
 ## Introduction
 

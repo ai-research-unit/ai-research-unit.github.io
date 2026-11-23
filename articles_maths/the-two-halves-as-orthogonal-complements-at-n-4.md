@@ -102,7 +102,7 @@ Neither half is an ideal and neither is closed under the product; the symmetric 
 ## Further Reading
 
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for orthogonal projections and the trace inner product.
-- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the inertia computed in the axis-free basis.
+- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-inertia-on-the-two-halves-of-m4c.html), for the inertia computed in the axis-free basis.
 - [The Hilbert–Schmidt Form at $n=4$](the-hilbert-schmidt-form-at-n-4.html), for the definite form and its two orthonormal bases.
 - [The Jordan Algebra $\operatorname{Sym}_4$](the-jordan-algebra-sym-4.html), for the product that the symmetric half does support.
 - [The Two Halves as Orthogonal Complements at $n=2$](the-two-halves-as-orthogonal-complements-at-n-2.html), for the same argument at order two.

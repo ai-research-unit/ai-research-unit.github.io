@@ -167,7 +167,7 @@ In the first branch the sum vanishes identically, because $U$ is the identity an
 | the $\mathbf{15}$ split | traceless on the quartet | singlet contribution $-\tfrac13$ of the triplet, so $U\neq\mathbb 1$ |
 | the two-body rate | $g_4^{4}f_K^{2}m_\mu^{2}m_K/(128\pi M_X^{4})$ at $250$ TeV | $3.5\times10^{-12}$ for $|U_{de}U_{s\imath}|=1$ |
 | the spin sum | $p\!\!/=p\!\!/_e+p\!\!/_{\imath}$, Dirac equations | $m_K^{2}(m_e^{2}+m_\mu^{2})$, helicity suppressed |
-| the normalisation | the same form applied to $K\to\mu\nu_{\mathrm{neu}}$ | $0.63$ against the measured $0.635$ |
+| the normalisation | the same form applied to $K\to\mu\xi_{\mathrm{neu}}$ | $0.63$ against the measured $0.635$ |
 
 ## Distinctions That Are Easy to Lose
 

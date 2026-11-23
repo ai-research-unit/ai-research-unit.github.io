@@ -225,5 +225,5 @@ The positive definite matrices form an open convex pointed cone in the Hermitian
 - Stephen Boyd and Lieven Vandenberghe, *Convex Optimization* (Cambridge, 2004), for the positive semidefinite cone and the barrier functions.
 - Rajendra Bhatia, *Positive Definite Matrices* (Princeton, 2007), for the geometry of the cone.
 - [The Exponential of the Symmetric Part: Stretches and the Positive Cone](the-exponential-of-the-symmetric-part-stretches-and-the-positive-cone.html), for the exponential onto the cone.
-- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the pairing of the self-duality.
+- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-inertia-on-the-two-halves.html), for the pairing of the self-duality.
 - [The Two Halves as Orthogonal Complements](the-two-halves-as-orthogonal-complements.html), for the orthogonality of the Hermitian half and its partner.

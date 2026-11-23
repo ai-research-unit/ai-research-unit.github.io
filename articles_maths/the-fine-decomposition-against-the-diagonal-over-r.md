@@ -1,4 +1,4 @@
-# __The Fine Decomposition against the Diagonal__
+# __The Fine Decomposition against the Diagonal over $\mathbb{R}$__
 
 ## Introduction
 
@@ -163,5 +163,5 @@ The diagonal $h$ has dimension $n$ and the coordinate lines $L_{ij}=\mathbb{R}E_
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for root space decompositions and weights.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for Peirce decompositions relative to a family of idempotents.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the Peirce spaces attached to a complete family.
-- [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric-over-r.html), for the cut made by the transpose.
+- [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric.html), for the cut made by the transpose.
 - [The Triangular Decomposition $h\oplus n_+\oplus n_-$](the-triangular-decomposition-h-n-plus-n-minus-of-mnr.html), for the grouping of the lines by the sign of the weight.

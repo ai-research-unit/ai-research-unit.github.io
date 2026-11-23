@@ -249,7 +249,7 @@ The heavy eigenvalue at $v\to0$ is $0.625\,g^2v_R^2=\tfrac58g^2v_R^2$, and the $
 
 **9.4 The absolute scale.** $v_R$ is bounded from below by the leptoquark bound and from above by nothing in the frame. The spectrum's shape is predicted; its overall size is not.
 
-**9.5 One loop.** These are tree-level relations. The $\rho$ parameter, the $Z$–$W$ mass ratio and the $Z_R$ mass all take radiative corrections, and in a model with a bidoublet the tree-level $\rho=1$ is an alignment statement rather than a theorem. [Custodial Symmetry and the $\rho$ Parameter](custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html) owns that question, and this article does not pre-empt it.
+**9.5 One loop.** These are tree-level relations. The $\rho$ parameter, the $Z$–$W$ mass ratio and the $Z_R$ mass all take radiative corrections, and in a model with a bidoublet the tree-level $\rho=1$ is an alignment statement rather than a theorem. [Custodial Symmetry and the $\rho$ Parameter](custodial-symmetry-and-the-rho-parameter.html) owns that question, and this article does not pre-empt it.
 
 ## What the Chain and the Spectrum Establish
 
@@ -362,8 +362,8 @@ The three neutral states are not three scalars, and not two scalars and a gauge 
 - [The Scalar Sector and the Leptoquark Bounds](the-scalar-sector-and-the-leptoquark-bounds.html). Which fields do this breaking, how many real components they carry, and what their Goldstones require.
 - [The $W$ and $Z$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html). The two light neutral and charged states, before this article mixes them.
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The matching relations, the angle they produce, and the failure that follows.
-- [The Weinberg Angle, the Neutral Current and the $Z$ Coupling](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html). The angle as a ratio of two couplings.
-- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The four hypercharge conditions, which hold identically on the sixteen and are not restated here.
-- [Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form](custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html). The tree-level relation $\rho=1$ that *What Is Robust and What Is Not* does not claim as a theorem.
-- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html). Why colour is a stabiliser at every scale, which is the eight massless rows of *The Twenty-One, Classified*.
+- [The Weinberg Angle, the Neutral Current and the $Z$ Coupling](the-weinberg-angle-and-the-three-neutral-states.html). The angle as a ratio of two couplings.
+- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html). The four hypercharge conditions, which hold identically on the sixteen and are not restated here.
+- [Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form](custodial-symmetry-and-the-rho-parameter.html). The tree-level relation $\rho=1$ that *What Is Robust and What Is Not* does not claim as a theorem.
+- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html). Why colour is a stabiliser at every scale, which is the eight massless rows of *The Twenty-One, Classified*.
 - [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html). The same chain read as an embedding, and the point at which it stops being one.

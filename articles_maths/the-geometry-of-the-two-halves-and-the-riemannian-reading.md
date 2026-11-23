@@ -104,6 +104,6 @@ The trace form gives $M_n(\mathbb{R})$ the structure of a pseudo-Euclidean space
 
 - Sigurdur Helgason, *Differential Geometry, Lie Groups and Symmetric Spaces* (American Mathematical Society, 2001), for bi-invariant metrics, geodesics and curvature on Lie groups.
 - Barrett O'Neill, *Semi-Riemannian Geometry* (Academic Press, 1983), for indefinite metrics, their inertia and their geodesics.
-- [The Trace Form and Its Indefinite Inertia](the-trace-form-and-its-indefinite-signature.html), for the inertia and the orthogonal splitting.
+- [The Trace Form and Its Indefinite Inertia](the-trace-form-and-its-indefinite-inertia.html), for the inertia and the orthogonal splitting.
 - [The Two Halves and the Analysis: Smooth Structures and the Exponential](the-two-halves-and-the-analysis-smooth-structures-and-the-exponential-over-r.html), for the analytic side of the same splitting.
 - [The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{R})$](the-cartan-decomposition-of-glnr.html), for the decomposition used in the last section.

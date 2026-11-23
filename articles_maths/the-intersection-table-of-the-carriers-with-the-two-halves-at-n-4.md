@@ -1,4 +1,4 @@
-# __The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$__
+# __The Intersection Table at $n=4$: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$__
 
 ## Introduction
 

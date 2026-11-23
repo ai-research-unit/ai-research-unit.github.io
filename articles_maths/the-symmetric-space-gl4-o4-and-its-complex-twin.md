@@ -163,6 +163,6 @@ In the axis-free basis the ten symmetric directions are exactly the ten elements
 
 - Sigurdur Helgason, *Differential Geometry, Lie Groups and Symmetric Spaces* (AMS, 2001), for Cartan decompositions, duality and curvature.
 - [Symmetric Pairs and Cartan Pairs: the Reductivity Criterion at $n=4$](symmetric-pairs-and-cartan-pairs-the-reductivity-criterion-at-n-4.html), for the three bracket conditions.
-- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the $(10,6)$ inertia.
+- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-inertia-on-the-two-halves-of-m4c.html), for the $(10,6)$ inertia.
 - [The Symmetric Space $\mathrm{GL}_2/O(2)$ and Its Complex Twin](the-symmetric-space-gl2-o2-and-its-complex-twin.html), for the case at order two.
 - [The Geometry of the Two Halves at $n=4$, and the Return of the Two-Sided Operators](the-geometry-of-the-two-halves-at-n-4-and-the-return-of-the-two-sided-operators.html), for the geometric picture as a whole.

@@ -1,4 +1,4 @@
-# __The Fierz–Kofink Identities and the Classification of Spinors__
+# __The Fierz–Kofink Identities and the Classification of the Spinors of the Operators__
 
 ## Introduction
 

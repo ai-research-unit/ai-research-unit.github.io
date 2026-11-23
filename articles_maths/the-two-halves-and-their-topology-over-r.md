@@ -1,4 +1,4 @@
-# __The Two Halves and Their Topology__
+# __The Two Halves and Their Topology over $\mathbb{R}$__
 
 ## Introduction
 

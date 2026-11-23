@@ -103,7 +103,7 @@ What remains outside is everything dynamical: no equation fixes $a$, no Friedman
 
 ## Further Reading
 
-- [Cosmology in the Biquaternion Framework: The Carried Metric and the Missing Source](cosmology-in-the-biquaternion-framework-the-carried-flrw-metric-and-the-missing-source.html), for the FLRW targets, the rank-two obstruction to the source, and the list of obstacles this article's first item sits in.
+- [Cosmology in the Biquaternion Framework: The Carried Metric and the Missing Source](cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.html), for the FLRW targets, the rank-two obstruction to the source, and the list of obstacles this article's first item sits in.
 - [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the local-scale route, its Ricci-flatness-forces-flatness result, and the comparison the last section uses.
 - [The Gram Matrix as the Only Metric](the-gram-matrix-as-the-only-metric.html), for why the Gram matrix is a congruence and what Sylvester's law does and does not permit.
 - [The Kerr–Schild Sub-class and the Vacuum Wave](the-kerr-schild-sub-class-and-the-vacuum-wave.html), for the other exact class the frame route carries and the vacuum wave the local-scale route cannot.

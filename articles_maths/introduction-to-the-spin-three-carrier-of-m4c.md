@@ -1,4 +1,4 @@
-# __Introduction to the Spin-Three Carrier at $n=4$: the Top of the Chain__
+# __Introduction to the Spin-Three Carrier of $M_4(\mathbb{C})$: the Top of the Chain__
 
 ## Introduction
 

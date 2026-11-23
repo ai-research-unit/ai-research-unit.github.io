@@ -121,7 +121,7 @@ The rank-two elements are the nilpotents of type $[2,2]$ and form the isotropic 
 
 ## Further Reading
 
-- [Introduction to the Spin-Two Carrier at $n=4$: the Alternating Square](the-spin-two-carrier-of-m4c.html), for the carrier.
+- [Introduction to the Spin-Two Carrier at $n=4$: the Alternating Square](introduction-to-the-spin-two-carrier-of-m4c.html), for the carrier.
 - [The Spin-Two Carrier and the Trace Form at $n=4$](the-spin-two-carrier-and-the-trace-form-at-n-4.html), for the form.
 - [The Spin-Three Carrier and the Rank Strata at $n=4$](the-spin-three-carrier-and-the-rank-strata-at-n-4.html), for the septet.
 - [The Spin-One Carrier and the Rank Strata at $n=4$](the-spin-one-carrier-and-the-rank-strata-at-n-4.html), for the triplet.

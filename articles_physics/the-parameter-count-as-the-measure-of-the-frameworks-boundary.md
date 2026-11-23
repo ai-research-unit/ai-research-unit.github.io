@@ -10,7 +10,7 @@ Saying that a framework "does not derive the electron mass" lumps together three
 
 - A value is a principle that returns $m_e=0.511$ MeV. No framework in existence does this for any fermion mass, so the failure is universal and uninformative.
 - A relation is a principle that makes one parameter a function of another, reducing the count by one. This is a weaker claim and a much more interesting one, because it is achievable and because it is falsifiable.
-- A constraint is a principle that forbids a region, such as $\theta_{\mathrm{QCD}}=0$ or $m_{\nu_{\mathrm{neu}}}=0$. Also achievable, and the corpus has two examples.
+- A constraint is a principle that forbids a region, such as $\theta_{\mathrm{QCD}}=0$ or $m_{\xi_{\mathrm{neu}}}=0$. Also achievable, and the corpus has two examples.
 
 Reporting only the first grade would report a failure shared by every competitor. Reporting all three is what makes the count a measure rather than a complaint.
 
@@ -167,7 +167,7 @@ The three counts, assembled:
 |---|---|
 | Values derived | $0$ of $19$ |
 | Relations produced | $0$ |
-| Constraints explained | $2$ of $2$ in scope: $\lvert\theta_{\mathrm{QCD}}\rvert<10^{-10}$ has a mechanism available (the axion), and $m_{\nu_{\mathrm{neu}}}=0$ is *excluded* by oscillation |
+| Constraints explained | $2$ of $2$ in scope: $\lvert\theta_{\mathrm{QCD}}\rvert<10^{-10}$ has a mechanism available (the axion), and $m_{\xi_{\mathrm{neu}}}=0$ is *excluded* by oscillation |
 | Arena supplied | $8$ of $19$ |
 | Own parameters added | $3$ |
 
@@ -351,4 +351,4 @@ Four machines would reduce the count: a spectral principle (ten entries), a scal
 - [Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$](electroweak-precision-observables-the-oblique-parameters-s-t-u.html). How the scalar mass enters a fit, and why $T$ is the parameter that measures the scale hierarchy.
 - [Asymptotic Freedom and the Running of the Strong Force](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). What happens to a coupling at high scale, where the count meets its own consistency conditions.
 - [The Theta Vacuum in Biquaternionic Form](the-theta-vacuum-in-biquaternionic-form.html). Entry 17 constructed, and why its smallness is a separate problem.
-- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The conditions the content must satisfy, which constrain the entries the count does not contain.
+- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html). The conditions the content must satisfy, which constrain the entries the count does not contain.

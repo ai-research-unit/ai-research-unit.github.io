@@ -1,4 +1,4 @@
-# __The Adjoints and the Polar Decomposition of an Operator__
+# __The Adjoints and the Polar Decomposition of an Operator over $\mathbb{R}$__
 
 ## Introduction
 

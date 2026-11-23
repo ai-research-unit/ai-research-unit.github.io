@@ -280,7 +280,7 @@ The Coulomb member of the family is $G=\bar w/(z+r)$, giving $\vec E=-i\vec H=\v
 ## Further Reading
 
 - [The Electromagnetic Energy–Momentum Tensor](exercise-the-electromagnetic-energy-momentum-tensor.html), for the sesquilinear tensor whose scalar part is $2W$ and whose time row is $\tilde\Sigma_{\Psi}$; the comparison in *What the Complex Field Carries* is with that construction.
-- [The Self-Dual and Anti-Self-Dual Split](the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html), for the reality obstruction that forces the potential here to be complex.
+- [The Self-Dual and Anti-Self-Dual Split](the-self-dual-and-anti-self-dual-split-spin-1-from-the-bivector-plane.html), for the reality obstruction that forces the potential here to be complex.
 - [The Algebrodynamical Programme](the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html), for the same construction in the programme's own terms, with the twistor and the nonlinear primary equation.
 - V. V. Kassandrov, "Singular Sources of Maxwell Fields with Self-Quantized Electric Charge", in *Has the Last Word Been Said on Classical Electrodynamics?* (Rinton Press, 2004), 42–66, arXiv:physics/0308045, for the complex self-dual electrodynamics, the complex potential and the superpotential construction recorded here, and the charge-quantisation theorem that the construction inherits.
 - V. V. Kassandrov, "Biquaternion Electrodynamics and the Weyl–Cartan Geometry of Space-Time", *Gravitation & Cosmology* **1** (1995) 216, arXiv:gr-qc/0007027, for the complex potential in the quaternionic setting and the closed-form static solution $f^\pm=(r_x\pm ir_y)/(r\pm r_z)$ that the Coulomb scalar reproduces.

@@ -168,7 +168,7 @@ The norm of the idempotent is zero, and by multiplicativity the norm vanishes on
 ## Further Reading
 
 - [Introduction to the Spin-Half Bispinors Spaces](the-spin-half-bispinor-spaces.html), for the plane, the two spinor spaces and the family of bispinor spaces
-- [The Spin-Half Bispinors and Spectral Regularity](the-spin-half-bispinor-spaces-and-spectral-regularity.html), for the other predicate on the same spaces
+- [The Spin-Half Bispinors and Spectral Regularity](the-spin-half-bispinors-and-spectral-regularity.html), for the other predicate on the same spaces
 - [Primitive Idempotents and Minimal Left Ideals](primitive-idempotents-and-minimal-left-ideals.html), for the idempotents as the generators of the ideals
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, its multiplicativity and its zero locus
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the definitions of the two predicates and the four sectors

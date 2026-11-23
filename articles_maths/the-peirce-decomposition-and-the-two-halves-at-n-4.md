@@ -171,7 +171,7 @@ The two decompositions are transverse. Neither refines the other, their joint re
 ## Further Reading
 
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the Peirce decomposition and its relation to the involution.
-- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the inertia $(10,6)$ that the pieces add to.
+- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-inertia-on-the-two-halves-of-m4c.html), for the inertia $(10,6)$ that the pieces add to.
 - [The Peirce Decomposition of $\operatorname{Sym}_4$ as a Jordan Algebra](the-peirce-decomposition-of-sym-4-as-a-jordan-algebra.html), for the Jordan version of the split.
 - [The Two Halves as Orthogonal Complements at $n=4$](the-two-halves-as-orthogonal-complements-at-n-4.html), for the transpose and the orthogonality.
 - [The Peirce Decomposition and the Corner Recursion of $M_4(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-of-m4c.html), for the recursion that the corner starts.

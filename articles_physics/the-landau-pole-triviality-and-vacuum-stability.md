@@ -4,12 +4,14 @@
 
 The claim. Three questions about the Standard Model's validity at high energy have one common source: the running of $\varpi_{\mathrm{cpl}}$ and of $g_{\mathrm Y}$. Asked separately they look like three separate worries. Asked together they are one calculation, and the three answers have the same shape — a scale, a bound, and a lifetime.
 
+**Units.** A mass in this article is a fraction of the vacuum value, $n_i=m_i/m_{\mathrm{vev}}$ with $E_{\mathrm{vev}}=246.22$ GeV. A cutoff, a running scale and a decay rate stay in electronvolts, because those quantities are energies and the electronvolt is their honest unit. The two are never mixed: a fraction is a pure number, an electronvolt value is an energy.
+
 The three questions.
 
 | Question | Quantity | Answer's form | This article's value |
 |---|---|---|---|
 | Does the theory remain defined at arbitrarily high energy? | $g_{\mathrm Y}(\mu)$ | A pole scale | $1.8\times10^{41}$ GeV |
-| Can a fundamental scalar be both weakly coupled and UV-complete? | $\varpi_{\mathrm{cpl}}(\mu)$ | An upper bound on $m_H$ | $144$ GeV at $M_{\mathrm{Pl}}$ |
+| Can a fundamental scalar be both weakly coupled and UV-complete? | $\varpi_{\mathrm{cpl}}(\mu)$ | An upper bound on $n_H$ | $0.5849$ at the Planck scale |
 | What is the fate of the vacuum we live in? | $\varpi_{\mathrm{cpl}}(\mu)$ | A lifetime | Metastable, $10^{649}$ times the age of the universe |
 
 The standing. Every equation below is standard. The framework's contribution is confined to one section and consists of two structural statements and one gap, and the gap is the more informative of the three.
@@ -17,9 +19,9 @@ The standing. Every equation below is standard. The framework's contribution is 
 The four results.
 
 - The hypercharge Landau pole is at $1.8\times10^{41}$ GeV, which is $1.5\times10^{22}$ Planck masses. So it is not a problem for the Standard Model alone: gravity intervenes $22$ orders of magnitude first. But it is a statement about the *kind* of group $\mathrm{U}(1)_Y$ is, and that statement is structural.
-- Triviality bounds the Higgs mass from above at every cutoff, and at the Planck scale the bound is $144$ GeV. The measured $125.09$ GeV is $86.8\%$ of it. That is a striking saturation and this article refuses to call it a hint.
+- Triviality bounds the Higgs mass from above at every cutoff, and at the Planck scale the bound is $n_H=0.5849$. The measured $n_H=0.5080$ is $86.8\%$ of it. That is a striking saturation and this article refuses to call it a hint.
 - The vacuum is metastable, not unstable, and the distinction is $649$ orders of magnitude. The tunnelling exponent is $S_E\approx1880$ against a threshold of about $440$.
-- We sit $1.39$ GeV above the stability edge, which is $4.6$ standard deviations of the top mass. That is one of the sharpest statements of its kind in the model, and it is a statement about where we are, not about what the theory says.
+- We sit $\Delta n_t=5.65\times10^{-3}$ above the stability edge, which is $4.6$ standard deviations of the top mass. That is one of the sharpest statements of its kind in the model, and it is a statement about where we are, not about what the theory says.
 
 One methodological warning, given early because it governs the whole article. The fate of $\varpi_{\mathrm{cpl}}$ is decided by a difference of terms of order one, so the answer is a *precision* statement: it needs two- and three-loop running and a careful conversion between the pole and $\overline{\mathrm{MS}}$ top mass. A one-loop estimate gets the *sign* right and the *scale* wrong, sometimes by many orders of magnitude. The corpus's rule — never print a number without its order and its scheme — is not a formality here; it is the difference between a correct and an incorrect answer.
 
@@ -61,17 +63,17 @@ $$
 so the pole is where the right-hand side vanishes:
 
 $$
-\ln\frac{\Lambda}{M_Z}=\frac{2\pi}{b_1\,\alpha_{\mathrm Y}(M_Z)}=\frac{6\pi\cdot98.41}{41}=90.48 .
+\ln\frac{\Lambda}{\mu}=\frac{2\pi}{b_1\,\alpha_{\mathrm Y}(\mu)}=\frac{6\pi\cdot98.41}{41}=90.48 .
 $$
 
-With $M_Z=91.19$ GeV, $\Lambda=1.8\times10^{41}$ GeV.
+With $\mu=91.19$ GeV at the $Z$ pole, $\Lambda=1.8\times10^{41}$ GeV.
 
 Where that sits.
 
 | Comparison | Value |
 |---|---|
 | $\Lambda_{\mathrm{Landau}}$ | $1.8\times10^{41}$ GeV |
-| $M_{\mathrm{Pl}}$ | $1.2\times10^{19}$ GeV |
+| Planck scale | $1.2\times10^{19}$ GeV |
 | Ratio | $1.5\times10^{22}$ |
 | In Planck masses | $1.5\times10^{22}\,M_{\mathrm{Pl}}$ |
 
@@ -81,7 +83,7 @@ The coupling along the way, which is the more useful table.
 
 | $\mu$ | $g_{\mathrm Y}$ | Comment |
 |---|---|---|
-| $M_Z=91.19$ GeV | $0.357$ | Input |
+| $91.19$ GeV ($Z$ pole) | $0.357$ | Input |
 | $1$ TeV | $0.362$ | Barely moves |
 | $10^{4}$ GeV | $0.367$ | — |
 | $10^{11}$ GeV | $0.407$ | $14\%$ above the input |
@@ -146,19 +148,19 @@ $$
 
 The bound as a function of cutoff.
 
-| Cutoff $\Lambda$ | $\varpi_{\mathrm{cpl},\max}$ | $m_H$ ceiling | $m_H^{\text{meas}}/m_H^{\max}$ |
+| Cutoff $\Lambda$ | $\varpi_{\mathrm{cpl},\max}$ | $n_H$ ceiling | $n_H^{\text{meas}}/n_H^{\max}$ |
 |---|---|---|---|
-| $1$ TeV | $4.69$ | $754$ GeV | $0.166$ |
-| $10$ TeV | $1.78$ | $464$ GeV | $0.270$ |
-| $10^{6}$ GeV | $0.792$ | $310$ GeV | $0.404$ |
-| $10^{11}$ GeV | $0.332$ | $201$ GeV | $0.624$ |
-| $M_{\mathrm{Pl}}$ | $0.171$ | $144$ GeV | $0.868$ |
+| $1$ TeV | $4.69$ | $3.062$ | $0.166$ |
+| $10$ TeV | $1.78$ | $1.884$ | $0.270$ |
+| $10^{6}$ GeV | $0.792$ | $1.259$ | $0.404$ |
+| $10^{11}$ GeV | $0.332$ | $0.8163$ | $0.624$ |
+| $M_{\mathrm{Pl}}$ | $0.171$ | $0.5849$ | $0.868$ |
 
-The direction of the bound, which is the counter-intuitive part. A *larger* cutoff gives a *tighter* bound. At $1$ TeV a $754$ GeV Higgs is allowed; at the Planck scale only $144$ GeV is. So triviality says: the further the theory is claimed to reach, the lighter the scalar must be.
+The direction of the bound, which is the counter-intuitive part. A *larger* cutoff gives a *tighter* bound. At $1$ TeV a Higgs of $n_H=3.062$ is allowed; at the Planck scale only $n_H=0.5849$ is. So triviality says: the further the theory is claimed to reach, the lighter the scalar must be.
 
 Why it is called triviality. If $\varpi_{\mathrm{cpl}}(v)$ is held fixed while $\Lambda\to\infty$, then $1/\varpi_{\mathrm{cpl}}(\Lambda)\to-\infty$, which means the theory is not defined. The only way to take the cutoff to infinity is $\varpi_{\mathrm{cpl}}(v)\to0$, that is a free field — a trivial theory. Hence: a $\phi^4$ theory in four dimensions is at best an *effective* theory with a finite cutoff. This is a rigorous lattice result, not a perturbative artefact.
 
-The saturation, and the corpus's refusal. The measured $125.09$ GeV is $86.8\%$ of the ceiling at the Planck scale. One can say that the Standard Model is "just barely" a valid effective theory to $M_{\mathrm{Pl}}$. One can also say that any number is some percentage of some bound. The honest statement is the arithmetic: the margin is a factor $1.15$ in mass, and it is not evidence for or against anything. [The naturalness article](the-hierarchy-problem-and-naturalness.html) established the same discipline for tuning; it applies here.
+The saturation, and the corpus's refusal. The measured $n_H=0.5080$ is $86.8\%$ of the ceiling at the Planck scale. One can say that the Standard Model is "just barely" a valid effective theory to $M_{\mathrm{Pl}}$. One can also say that any number is some percentage of some bound. The honest statement is the arithmetic: the margin is a factor $1.15$ in mass, and it is not evidence for or against anything. [The naturalness article](the-hierarchy-problem-and-naturalness.html) established the same discipline for tuning; it applies here.
 
 **What the bound is not.** It is not a bound on the Higgs mass in the real world. If the Higgs is composite, $\varpi_{\mathrm{cpl}}$ is not a fundamental coupling and the argument does not apply. Triviality constrains a *fundamental* scalar, and whether the Higgs is fundamental is open.
 
@@ -201,9 +203,9 @@ Why that makes the answer a precision question.
 
 - The residual is a large fraction of the largest term. $\lvert-4.18\rvert$ is $72\%$ of $\lvert-6y_t^4\rvert$, and the negative term exceeds the sum of the three positive ones by a factor $3.56$. So the sum is not a near-cancellation in the arithmetic sense — but it is a *difference*, and a $20\%$ correction to any one term changes it by $20$ to $35\%$, while the *scale* at which $\varpi_{\mathrm{cpl}}$ reaches zero depends exponentially on the sum.
 - The running of $\beta$ matters as much as $\beta$. $y_t$ falls from $0.991$ at $M_Z$ to $0.42$ at $M_{\mathrm{Pl}}$, so $-6y_t^4$ falls from $-5.81$ to $-0.19$ — a factor of $30$. $\beta_{\varpi_{\mathrm{cpl}}}$ is therefore not the weak-scale number throughout: it shrinks by an order of magnitude, and once $\varpi_{\mathrm{cpl}}$ is small the $+0.25$ gauge term is comparable to what remains of the top term. A one-loop estimate that holds $\beta$ fixed at its weak-scale value gives the wrong crossing scale by many orders of magnitude.
-- The scheme matters. $y_t$ is defined from the top mass, and the pole mass and the $\overline{\mathrm{MS}}$ mass differ by $8$ GeV, which is a $5\%$ change in $y_t$ and a $20\%$ change in $y_t^4$. The instability scale is exponentially sensitive to precisely that.
+- The scheme matters. $y_t$ is defined from the top mass, and the pole mass and the $\overline{\mathrm{MS}}$ mass differ by $\Delta n_t=3.25\times10^{-2}$, which is a $5\%$ change in $y_t$ and a $20\%$ change in $y_t^4$. The instability scale is exponentially sensitive to precisely that.
 
-So the article quotes the higher-order result and labels it. The three-loop computation with $m_h=125.09$ GeV and $m_t=172.69$ GeV gives
+So the article quotes the higher-order result and labels it. The three-loop computation with $n_h=0.5080$ and $n_t=0.7014$ gives
 
 $$
 \varpi_{\mathrm{cpl}}(\mu)=0\ \text{at}\ \mu\approx10^{11}\ \mathrm{GeV},
@@ -249,37 +251,37 @@ The comparison with the age of the universe. The decay rate per unit volume is o
 
 **The reading.** The tunnelling exponent exceeds the threshold by a factor of about $4$, and in a quantity that appears in an exponent that factor becomes $649$ orders of magnitude in the rate. So the vacuum is metastable with an enormous margin. "The electroweak vacuum is unstable" is, taken literally, false; "the electroweak vacuum is not the global minimum" is true; and the difference between the two sentences is $10^{649}$.
 
-What would make it short-lived. A lighter Higgs or a heavier top pushes $\lvert\varpi_{\mathrm{cpl}}\rvert$ at the Planck scale up, so $S_E$ falls. At $\lvert\varpi_{\mathrm{cpl}}\rvert\approx0.06$, $S_E=8\pi^2/(3\times0.06)=439$ and the lifetime is the age of the universe. So the margin is a factor $4.3$ in $\lvert\varpi_{\mathrm{cpl}}(M_{\mathrm{Pl}})\rvert$ — a shift of $0.046$. Since the metastability ceiling sits at $m_t\approx178$ GeV against an edge at $171.3$, that shift corresponds to about $7$ GeV of top mass, which is why the statement is a measurement and not a theorem.
+What would make it short-lived. A lighter Higgs or a heavier top pushes $\lvert\varpi_{\mathrm{cpl}}\rvert$ at the Planck scale up, so $S_E$ falls. At $\lvert\varpi_{\mathrm{cpl}}\rvert\approx0.06$, $S_E=8\pi^2/(3\times0.06)=439$ and the lifetime is the age of the universe. So the margin is a factor $4.3$ in $\lvert\varpi_{\mathrm{cpl}}(M_{\mathrm{Pl}})\rvert$ — a shift of $0.046$. Since the metastability ceiling sits at $n_t\approx0.7229$ against an edge at $0.6957$, that shift corresponds to about $2.84\times10^{-2}$ in $n_t$, which is why the statement is a measurement and not a theorem.
 
 ## The Metastability Window, and Where We Sit
 
-The window in the top mass. For $m_h=125.09$ GeV:
+The window in the top mass. For $n_h=0.5080$:
 
 | Top mass | Status |
 |---|---|
-| $m_t<171.3$ GeV | Absolute stability: $\varpi_{\mathrm{cpl}}>0$ to $M_{\mathrm{Pl}}$ |
-| $171.3<m_t<178$ GeV | Metastable, lifetime exceeding the age |
-| $m_t>178$ GeV | Lifetime shorter than the age: effectively unstable |
+| $n_t<0.6957$ | Absolute stability: $\varpi_{\mathrm{cpl}}>0$ to $M_{\mathrm{Pl}}$ |
+| $0.6957<n_t<0.7229$ | Metastable, lifetime exceeding the age |
+| $n_t>0.7229$ | Lifetime shorter than the age: effectively unstable |
 
 And the measurement:
 
 $$
-m_t=172.69\pm0.30\ \mathrm{GeV},
+n_t=0.7014\pm0.0012,
 \qquad
-m_t-m_t^{\mathrm{crit}}=1.39\ \mathrm{GeV}=4.6\sigma .
+n_t-n_t^{\mathrm{crit}}=5.65\times10^{-3}=4.6\sigma .
 $$
 
-So the vacuum is metastable at four and a half standard deviations. Not marginally, and not by a wide margin either: the measurement sits $1.4$ GeV into a window that is $6.7$ GeV wide.
+So the vacuum is metastable at four and a half standard deviations. Not marginally, and not by a wide margin either: the measurement sits $5.69\times10^{-3}$ into a window that is $2.72\times10^{-2}$ wide.
 
-The same statement in the Higgs mass, which is the more striking form. Solving for the Higgs mass at the stability edge, with $m_t=172.69$ GeV, gives $m_h^{\mathrm{crit}}\approx129.5$ GeV. So
+The same statement in the Higgs mass, which is the more striking form. Solving for the Higgs mass at the stability edge, with $n_t=0.7014$, gives $n_h^{\mathrm{crit}}\approx0.5260$. So
 
 $$
-m_h^{\mathrm{meas}}=125.09\ \mathrm{GeV}=m_h^{\mathrm{crit}}-4.4\ \mathrm{GeV} ,
+n_h^{\mathrm{meas}}=0.5080=n_h^{\mathrm{crit}}-1.79\times10^{-2} ,
 $$
 
-and the triviality ceiling is $144$ GeV. The allowed window for absolute stability to the Planck scale is therefore about $[129.5,\,144]$ GeV, and the measured value sits $4.4$ GeV below it.
+and the triviality ceiling is $n_H=0.5849$. The allowed window for absolute stability to the Planck scale is therefore about $[0.5260,\,0.5849]$, and the measured value sits $1.79\times10^{-2}$ below it.
 
-**The temptation, and the refusal.** The measured Higgs mass sits just below a stability bound and just below a triviality bound, in a window about $15$ GeV wide out of a range spanning five orders of magnitude. It is tempting to read this as selection or design. The corpus records the numbers and declines the inference, for a reason [the naturalness article](the-hierarchy-problem-and-naturalness.html) already gave: the window is a bound from an *assumption* — that the Standard Model holds to $M_{\mathrm{Pl}}$ — and if new physics enters at $10^{11}$ GeV, which is where $\varpi_{\mathrm{cpl}}$ crosses zero, the whole window moves.
+**The temptation, and the refusal.** The measured Higgs mass sits just below a stability bound and just below a triviality bound, in a window about $6.09\times10^{-2}$ wide out of a range spanning five orders of magnitude. It is tempting to read this as selection or design. The corpus records the numbers and declines the inference, for a reason [the naturalness article](the-hierarchy-problem-and-naturalness.html) already gave: the window is a bound from an *assumption* — that the Standard Model holds to $M_{\mathrm{Pl}}$ — and if new physics enters at $10^{11}$ GeV, which is where $\varpi_{\mathrm{cpl}}$ crosses zero, the whole window moves.
 
 The one legitimate inference. The crossing scale $10^{11}$ GeV is below the Planck scale, so the Standard Model *as an effective theory* is self-consistent up to that scale and no further, and new physics between $10^{11}$ and $10^{19}$ GeV is not merely allowed but required to prevent the vacuum from being the wrong one. That is a real constraint on model building, and it is the same constraint that makes the stability statement interesting.
 
@@ -295,7 +297,7 @@ What [the renormalisation-group article](the-renormalization-group-in-biquaterni
 
 | Quantity | Scale | Sector |
 |---|---|---|
-| $m_H$, $v$ | $10^{2}$ GeV | Electroweak |
+| The weak scale, $E_{\mathrm{vev}}$ | $2.46\times10^{2}$ GeV | Electroweak |
 | $\Lambda_{\mathrm{QCD}}$ | $2\times10^{-1}$ GeV | Strong |
 | Instability of $\varpi_{\mathrm{cpl}}$ | $10^{11}$ GeV | Electroweak |
 | $\mathrm{U}(1)_Y$ Landau pole | $1.8\times10^{41}$ GeV | Hypercharge |
@@ -349,15 +351,15 @@ The ledger.
 | $\Lambda_{\mathrm{Landau}}=1.8\times10^{41}$ GeV | **Computed** here |
 | $g_{\mathrm Y}(M_{\mathrm{Pl}})=0.476$ | **Computed** here |
 | $\Lambda_{\mathrm{pole}}(\varpi_{\mathrm{cpl}})=3.4\times10^{24}$ GeV | **Computed** here from $24\varpi_{\mathrm{cpl}}^2$ alone |
-| The triviality ceiling table, $144$ GeV at $M_{\mathrm{Pl}}$ | **Computed** here; the criterion stated |
-| $m_H^{\mathrm{meas}}/m_H^{\max}=0.868$ | **Computed** here |
+| The triviality ceiling table, $n_H=0.5849$ at the Planck scale | **Computed** here; the criterion stated |
+| $n_H^{\mathrm{meas}}/n_H^{\max}=0.868$ | **Computed** here |
 | The three couplings at $M_{\mathrm{Pl}}$, spread $0.028$ | **Computed** here |
 | $\beta_{\varpi_{\mathrm{cpl}}}$ decomposition, sum $-4.13$ | **Computed** here at one loop, convention stated |
 | $\varpi_{\mathrm{cpl}}=0$ at $10^{11}$ GeV, $\varpi_{\mathrm{cpl}}(M_{\mathrm{Pl}})=-0.014$ | **Imported**, three loops; the one-loop value differs and is not printed |
 | $S_E=1880$, margin $10^{649}$ | **Computed** here from the imported $\varpi_{\mathrm{cpl}}$ |
-| $m_t^{\mathrm{crit}}=171.3$ GeV, metastability to $178$ GeV | **Imported** |
-| $1.39$ GeV $=4.6\sigma$ | **Computed** here |
-| $m_h^{\mathrm{crit}}\approx129.5$ GeV, window $[129.5,144]$ | **Imported** edge, window computed here |
+| $n_t^{\mathrm{crit}}=0.6957$, metastability to $0.7229$ | **Imported** |
+| $5.65\times10^{-3}$ in $n_t$, equal to $4.6\sigma$ | **Computed** here |
+| $n_h^{\mathrm{crit}}\approx0.5260$, window $[0.5260,\,0.5849]$ | **Imported** edge, window computed here |
 | The structural origin of $b_1>0$ | **Framework** result |
 | A UV completion, a GUT, a composite Higgs | **Not available**, by the ceiling |
 
@@ -369,7 +371,7 @@ Three questions about the Standard Model's high-energy behaviour share one calcu
 
 The hypercharge coupling grows, because an abelian factor has no self-coupling and therefore no antiscreening: $b_1=+41/6$, and the pole is at $1.8\times10^{41}$ GeV, which is $1.5\times10^{22}$ Planck masses. The pole is never reached, but it is structural — a central factor cannot be UV-complete alone — and it singles out as the framework's weakest coupling the very object the framework supplies most naturally.
 
-The quartic's growth bounds the Higgs mass from above at every cutoff: $754$ GeV at $1$ TeV, $310$ GeV at $10^{6}$ GeV, $144$ GeV at the Planck scale. A larger cutoff gives a tighter bound, and at infinity the theory is free. The measured $125.09$ GeV is $86.8\%$ of the Planck-scale ceiling.
+The quartic's growth bounds the Higgs mass from above at every cutoff: $n_H=3.062$ at $1$ TeV, $1.259$ at $10^{6}$ GeV, $0.5849$ at the Planck scale. A larger cutoff gives a tighter bound, and at infinity the theory is free. The measured $n_H=0.5080$ is $86.8\%$ of the Planck-scale ceiling.
 
 The three gauge couplings almost meet: $0.476$, $0.504$, $0.490$ at $M_{\mathrm{Pl}}$, a spread of $5.7\%$. They do not meet, and the framework cannot complete them, because the ceiling forbids any gauge algebra above dimension four.
 
@@ -377,7 +379,7 @@ The quartic itself turns negative, because $\beta_{\varpi_{\mathrm{cpl}}}$ is a 
 
 The vacuum is metastable, not unstable. The bounce action is $S_E=1880$ against a threshold of about $440$, so $e^{S_E}=10^{816}$ against $H_0^{-4}=10^{167}$: a margin of $10^{649}$.
 
-We sit $1.39$ GeV above the stability edge, that is $4.6\sigma$ in the top mass, and $4.4$ GeV below the equivalent edge in the Higgs mass, in a window $[129.5,\,144]$ GeV wide out of a range spanning five orders of magnitude. The corpus records that and declines the inference, because the window is conditional on the Standard Model holding to the Planck scale, and $\varpi_{\mathrm{cpl}}$ crosses zero eight orders below it.
+We sit $\Delta n_t=5.65\times10^{-3}$ above the stability edge, that is $4.6\sigma$ in the top mass, and $1.79\times10^{-2}$ below the equivalent edge in the Higgs mass, in a window $[0.5260,\,0.5849]$ wide out of a range spanning five orders of magnitude. The corpus records that and declines the inference, because the window is conditional on the Standard Model holding to the Planck scale, and $\varpi_{\mathrm{cpl}}$ crosses zero eight orders below it.
 
 The framework supplies one structural result — the sign of $b_1$ — one regulator, and one observation about its own cutoff being $42$ orders of magnitude too coarse to serve any single sector. It imports the $\beta$ functions, the running, the bounce and the lifetime criterion. On the space of couplings it has nothing to say, and that is a statement about what the algebra is, not about how well it has been used.
 
@@ -393,9 +395,9 @@ The framework supplies one structural result — the sign of $b_1$ — one regul
 | $y_t$ | Top Yukawa, $\sqrt2\,m_t/v=0.991$ |
 | $S_E$ | Euclidean bounce action |
 | $H_0$ | Hubble constant, $1.5\times10^{-42}$ GeV |
-| $m_t^{\mathrm{crit}}$ | Top mass at the stability edge, $171.3$ GeV |
-| $m_h^{\mathrm{crit}}$ | Higgs mass at the stability edge, $\approx129.5$ GeV |
-| $M_{\mathrm{Pl}}$ | Planck mass, $1.22\times10^{19}$ GeV |
+| $n_t^{\mathrm{crit}}$ | Top mass at the stability edge, $0.6957$ |
+| $n_h^{\mathrm{crit}}$ | Higgs mass at the stability edge, $0.5260$ |
+| $M_{\mathrm{Pl}}$ | Planck scale, $1.22\times10^{19}$ GeV |
 
 ## Further Reading
 
@@ -407,4 +409,4 @@ The framework supplies one structural result — the sign of $b_1$ — one regul
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). Why neither a GUT nor a composite Higgs can be built here.
 - [The Path Integral in Biquaternionic Form](the-path-integral-in-biquaternionic-form.html). Why a bounce cannot be computed inside the algebra.
 - [The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form](the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.html). The object whose quartic changes sign, in the framework's language.
-- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The conditions on the matter content that the $\beta$ coefficients inherit.
+- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html). The conditions on the matter content that the $\beta$ coefficients inherit.

@@ -127,7 +127,7 @@ The law of the top weight vector reads: the top weight vector of the carrier of 
 
 ## Further Reading
 
-- [Introduction to the Spin-Three Carrier at $n=4$: the Top of the Chain](the-spin-three-carrier-of-m4c.html), for the carrier.
+- [Introduction to the Spin-Three Carrier at $n=4$: the Top of the Chain](introduction-to-the-spin-three-carrier-of-m4c.html), for the carrier.
 - [The Spin-Three Carrier and the Spectral Strata at $n=4$](the-spin-three-carrier-and-the-spectral-strata-at-n-4.html), for the spectrum.
 - [The Spin-Two Carrier and the Rank Strata at $n=4$](the-spin-two-carrier-and-the-rank-strata-at-n-4.html), for the quintet.
 - [The Spin-One Carrier and the Rank Strata at $n=4$](the-spin-one-carrier-and-the-rank-strata-at-n-4.html), for the triplet.

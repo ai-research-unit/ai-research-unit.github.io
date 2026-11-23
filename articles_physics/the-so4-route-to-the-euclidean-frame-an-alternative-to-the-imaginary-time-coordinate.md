@@ -221,9 +221,9 @@ The $\mathrm{U}(1)$ weights follow from the two line-bundle weights. With $\math
 
 | term | multiplet | $Y$ | $Q$ | particle |
 |---|---|---|---|---|
-| $l^{*}\otimes S_L$ | $\mathbb{C}^2$ | $-1$ | $0,-1$ | $(\nu_{\mathrm{neu},e},e)_L$ |
+| $l^{*}\otimes S_L$ | $\mathbb{C}^2$ | $-1$ | $0,-1$ | $(\xi_{\mathrm{neu},e},e)_L$ |
 | $l^{*}\otimes\mathbb{C}_{-1}$ | $\mathbb{C}$ | $-2$ | $-1$ | $e_R$ |
-| $l^{*}\otimes\mathbb{C}_{+1}$ | $\mathbb{C}$ | $0$ | $0$ | $\nu_{\mathrm{neu},R}$ |
+| $l^{*}\otimes\mathbb{C}_{+1}$ | $\mathbb{C}$ | $0$ | $0$ | $\xi_{\mathrm{neu},R}$ |
 | $(l^\perp)^{*}\otimes S_L$ | $\mathbb{C}^3\otimes\mathbb{C}^2$ | $\tfrac13$ | $\tfrac23,-\tfrac13$ | $(u,d)_L$ |
 | $(l^\perp)^{*}\otimes\mathbb{C}_{-1}$ | $\mathbb{C}^3$ | $-\tfrac23$ | $-\tfrac13$ | $d_R$ |
 | $(l^\perp)^{*}\otimes\mathbb{C}_{+1}$ | $\mathbb{C}^3$ | $\tfrac43$ | $\tfrac23$ | $u_R$ |
@@ -366,10 +366,10 @@ The work the route imposes is a **translation**, under two rules: every translat
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), for $\mathbb{B}_{\Phi}=\mathrm{U}(2)$, for the four constructions that give it, for the stabiliser of $\vec u$ in $\mathrm{SU}(2)$ — the torus that the $\mathrm{U}(2)$ of this article contains — and for the norm-preserving rotors $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R/\mathbb{Z}_2$ with the diagonal as gauge and the axial combination as chirality.
 - [The Hopf Fibration and the Biquaternion Gauge Bundle](the-hopf-fibration-and-the-biquaternion-gauge-bundle.html), for the sphere of unit pure-imaginary quaternions as the base of the Hopf map and as the Bloch sphere — the $S^2$ that is also the space of complex structures.
 - [The ADHM Construction and Biquaternion Instanton Data](the-adhm-construction-and-biquaternion-instanton-data.html), for the fibration $\mathbb{CP}^1\to\mathbb{CP}^3\to S^4$ and the identification of its fibre as the space of complex structures compatible with the quaternionic structure.
-- [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane](the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html), for the split of the complexified field strength, against which the real Euclidean split of this article should be read.
-- [Custodial Symmetry and the Rho Parameter: From Accidental to Gauged](custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html), for the arrangement in which the left action is the full $\mathrm{SU}(2)_L$ and the right action an $\mathrm{SU}(2)_R$ whose $T_3^R$ is the hypercharge, and for the opposite statement about matter — that left multiplication is vector-like.
+- [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane](the-self-dual-and-anti-self-dual-split-spin-1-from-the-bivector-plane.html), for the split of the complexified field strength, against which the real Euclidean split of this article should be read.
+- [Custodial Symmetry and the Rho Parameter: From Accidental to Gauged](custodial-symmetry-and-the-rho-parameter.html), for the arrangement in which the left action is the full $\mathrm{SU}(2)_L$ and the right action an $\mathrm{SU}(2)_R$ whose $T_3^R$ is the hypercharge, and for the opposite statement about matter — that left multiplication is vector-like.
 - [Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html), for the chiral non-abelian matter representation named as what would settle the central obstacle.
-- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html), for "a chiral gauge group, and the spectrum it would constrain" recorded as not supplied.
+- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html), for "a chiral gauge group, and the spectrum it would constrain" recorded as not supplied.
 - [The Higgs Mechanism as an Erasure of Information](the-higgs-mechanism-as-an-erasure-of-information-in-biquaternionic-form.html), for the complex central scalar $\tilde{Ξ}=\xi e_t$ and its degenerate vacuum — the object whose lack of a direction this article's ledger contrasts with the programme's Higgs.
 - [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), [Black-Hole Thermodynamics in Biquaternionic Form](black-hole-thermodynamics-in-biquaternionic-form.html) and [Hawking Radiation in Biquaternionic Form](hawking-radiation-in-biquaternionic-form.html), for the claims that rest on the imaginary time being intrinsic, and which the real-group route denies.
 - [An External Construction of Space from Quaternionic Spinors](an-external-construction-of-space-from-quaternionic-spinors.html), for the form this article follows: an outside construction recorded, recomputed where it can be, and not endorsed.

@@ -82,7 +82,7 @@ The table. The content of one generation, with the charge computed from the two 
 | $d_L$ | $3$ | $2$ | $-1/2$ | $1/6$ | $-1/3$ | $1/3$ |
 | $u_R$ | $3$ | $1$ | $0$ | $2/3$ | $2/3$ | $4/3$ |
 | $d_R$ | $3$ | $1$ | $0$ | $-1/3$ | $-1/3$ | $-2/3$ |
-| $\nu_{\mathrm{neu},L}$ | $1$ | $2$ | $+1/2$ | $-1/2$ | $0$ | $-1$ |
+| $\xi_{\mathrm{neu},L}$ | $1$ | $2$ | $+1/2$ | $-1/2$ | $0$ | $-1$ |
 | $e_L$ | $1$ | $2$ | $-1/2$ | $-1/2$ | $-1$ | $-1$ |
 | $e_R$ | $1$ | $1$ | $0$ | $-1$ | $-1$ | $-2$ |
 
@@ -96,7 +96,7 @@ The charge audit. Recomputing the seven charges from the two labels in exact rat
 
 ## The Anomaly System
 
-Why a chiral theory needs conditions. A gauge symmetry whose left- and right-handed couplings differ can be broken by the quantum measure. The failure is the triangle diagram with three gauge currents, and its coefficient is a sum over the left-handed Weyl fields minus the same sum over the right-handed ones. [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) derives the coefficient, proves the three lemmas below and verifies the conditions on the observed assignment. This article organises the same material as a system to be solved, which that article does not do.
+Why a chiral theory needs conditions. A gauge symmetry whose left- and right-handed couplings differ can be broken by the quantum measure. The failure is the triangle diagram with three gauge currents, and its coefficient is a sum over the left-handed Weyl fields minus the same sum over the right-handed ones. [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html) derives the coefficient, proves the three lemmas below and verifies the conditions on the observed assignment. This article organises the same material as a system to be solved, which that article does not do.
 
 The coefficient. For generators $T_a$ acting on a left-handed Weyl field in the representation $R$,
 
@@ -271,7 +271,7 @@ The neutrino charge. With $Y_L=-\tfrac12$ and $T_3=+\tfrac12$ the neutrino comes
 Three facts about the framework, each established in a companion article.
 
 - The framework's abelian factor is the central phase. The gauge principle of [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) supplies the $*$-unitary part of the centre, which is $\mathrm{U}(1)$, and a charge parameter $ϙ$ that multiplies every coefficient of a state by the same phase.
-- That phase is vector-like. Because the phase acts as a scalar, a state and its partner of the opposite chirality carry the same charge, so the cubic sum is $ϙ^3-ϙ^3=0$ identically, for every state and every charge. [Anomalies and Anomaly Cancellation](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) states this as the algebraic fact that the framework's abelian factor cannot be weak hypercharge.
+- That phase is vector-like. Because the phase acts as a scalar, a state and its partner of the opposite chirality carry the same charge, so the cubic sum is $ϙ^3-ϙ^3=0$ identically, for every state and every charge. [Anomalies and Anomaly Cancellation](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html) states this as the algebraic fact that the framework's abelian factor cannot be weak hypercharge.
 - The framework's compact factor is $SU(2)$ and not $SU(3)$. [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) proves that the algebra's intrinsic compact gauge algebra is $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$, of real dimension four, and that no module of $\mathbb{B}$ carries a colour triplet.
 
 The consequence. The framework reaches the *algebra* of the electroweak group, since $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ is exactly the algebra of $SU(2)_L\times\mathrm{U}(1)_Y$. It does not reach the *assignment*, for two reasons that are worth separating.
@@ -321,11 +321,11 @@ The framework reaches the algebra of the group and not the assignment. Its abeli
 ## Further Reading
 
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The content this assignment is written for, and the charge table the solution reproduces.
-- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The derivation of the triangle coefficient, the three lemmas, and the verification of the conditions on the observed spectrum.
+- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html). The derivation of the triangle coefficient, the three lemmas, and the verification of the conditions on the observed spectrum.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html). The central phase and the charge parameter $ϙ$.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The intrinsic compact algebra $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ and the colour ceiling.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html). Why a central charge cannot be chiral, and the non-central case as the open question.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The covariant derivative and the Yukawa terms whose invariance fixes $Y_{\mathrm{hch}}$.
-- [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). The same boundary in ledger form.
+- [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html). The same boundary in ledger form.
 
 The two companions this article leans on most — [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html), which consumes the count of two continuous parameters and one discrete choice, and [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html), which carries the quantisation argument of §*The Three Labels and the Charge* — are both in the corpus, and both are linked above at the point where they are used.
