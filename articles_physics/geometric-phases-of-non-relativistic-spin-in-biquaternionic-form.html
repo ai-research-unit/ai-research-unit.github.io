@@ -96,13 +96,13 @@
 \qquad\text{so}\qquad
 \tilde{Ξ}(T) = \exp(-i\theta_{\mathrm{dgp}})\,\tilde{Ξ}(0)
 $$</p>
-<p>The dynamical angle $\theta_{\mathrm{dgp}}:=\frac{2\pi 1}{h\,c}E\,T$ is real because the energy, the duration and $\frac{h}{2\pi} c$ are real.</p>
-<p>for an eigenstate of energy $E$. The angle $-\theta_{\mathrm{dgp}}=-\frac{2\pi 1}{h\,c}\int_0^T  E\,dr'_t$ is the <strong>dynamical phase</strong>; it is proportional to the duration, so a longer journey accumulates more of it. For a general state the energy in the exponent is the expectation $\langle\tilde H_\Psi\rangle$, and the same statement holds with $\int_0^T\langle\tilde H_\Psi\rangle\,\frac{2\pi dr'_{t}}{h\,c}$.</p>
+<p>The dynamical angle $\theta_{\mathrm{dgp}}:=\frac{2\pi}{h\,c}E\,T$ is real because the energy, the duration and $\frac{h}{2\pi} c$ are real.</p>
+<p>for an eigenstate of energy $E$. The angle $-\theta_{\mathrm{dgp}}=-\frac{2\pi}{h\,c}\int_0^T  E\,dr'_t$ is the <strong>dynamical phase</strong>; it is proportional to the duration, so a longer journey accumulates more of it. For a general state the energy in the exponent is the expectation $\langle\tilde H_\Psi\rangle$, and the same statement holds with $\int_0^T\langle\tilde H_\Psi\rangle\,\frac{2\pi dr'_{t}}{h\,c}$.</p>
 <p>The dynamical phase is not what this article is about. It is removed by a standard subtraction, and the residue is the geometric part. The subtraction is meaningful because the two parts respond differently to a change of the speed of the journey at fixed geometry: the dynamical phase scales with the duration and the geometric phase does not.</p>
 <h3 id="the-aharonovanandan-phase">The Aharonov–Anandan Phase</h3>
 <p>Let $|\tilde{Ξ}(r'_t)\rangle$ be a normalized solution of the Schrödinger equation that is <strong>cyclic</strong>, $|\tilde{Ξ}(T)\rangle = \exp(i\theta_{\mathrm{pha},\mathrm{tot}})|\tilde{Ξ}(0)\rangle$ for some real $\theta_{\mathrm{pha},\mathrm{tot}}$. Define</p>
 <p>$$
-\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{2\pi 1}{h\,c}\int_0^T\langle\tilde{Ξ}(r'_t)|\tilde H_\Psi(r'_t)|\tilde{Ξ}(r'_t)\rangle\,dr'_t .
+\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{2\pi}{h\,c}\int_0^T\langle\tilde{Ξ}(r'_t)|\tilde H_\Psi(r'_t)|\tilde{Ξ}(r'_t)\rangle\,dr'_t .
 $$</p>
 <p>This is the <strong>Aharonov–Anandan phase</strong>. It is well defined for any cyclic evolution, adiabatic or not; it is invariant under a rephasing of the initial state; and it depends on the curve traced by the state in projective space, not on the speed at which the curve is traversed. In the biquaternion language the two terms are both real numbers built from the Hermitian form, read through the scalar part:</p>
 <p>$$
@@ -149,7 +149,7 @@ $$</p>
 \boxed{\;U(T) = \exp\!\left(+\frac{i}{2}\omega_L T\,\sigma_3\right) = \exp(i\pi\sigma_3) = -I_2\;},
 $$</p>
 <p>so the total phase is $\theta_{\mathrm{pha},\mathrm{tot}} = \pi$ and $\tilde{Ξ}(T) = -\tilde{Ξ}(0)$. The dynamical integral is elementary because $\langle\sigma_3\rangle = \cos\theta_0$ is conserved by the precession:</p>
-<p>$$\frac{2\pi 1}{h\,c}\int_0^T\langle\tilde H_\Psi\rangle\,dr'_t
+<p>$$\frac{2\pi}{h\,c}\int_0^T\langle\tilde H_\Psi\rangle\,dr'_t
 = -\frac{\omega_L}{2}\cos\theta_0\,T = -\pi\cos\theta_0 .
 $$</p>
 <p>Hence the AA phase is</p>
@@ -253,7 +253,7 @@ $$</p>
 \gamma_{\mathrm{geo}} = -\frac{1}{2}\,\theta_{\mathrm{sol}}{}_{\mathrm{sgn}}(\mathcal{C}),
 $$</p>
 <p>one half the oriented solid angle of the curve, negative for the orientation given by the right-hand rule. For a latitude circle at polar angle $\theta_0$ the unsigned solid angle is $\theta_{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$.</p>
-<p>The <strong>Aharonov–Anandan phase</strong> is the exact, non-adiabatic version: for a cyclic evolution, $\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{2\pi 1}{h\,c}\int_0^T\langle\tilde H_\Psi\rangle\,dr'_t$, with all quantities expressed through the Hermitian form, read through the scalar part. For a spin prepared along $\vec u_y$ at angle $\theta_0$ from a fixed field along $\vec u_z$, the exact result is</p>
+<p>The <strong>Aharonov–Anandan phase</strong> is the exact, non-adiabatic version: for a cyclic evolution, $\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{2\pi}{h\,c}\int_0^T\langle\tilde H_\Psi\rangle\,dr'_t$, with all quantities expressed through the Hermitian form, read through the scalar part. For a spin prepared along $\vec u_y$ at angle $\theta_0$ from a fixed field along $\vec u_z$, the exact result is</p>
 <p>$$
 \gamma_{AA} = \pi(1-\cos\theta_0) = \frac{\theta_{\mathrm{sol}}}{2},
 $$</p>
@@ -310,7 +310,7 @@ $$</p>
 <td>Spinor; carries the geometric phase</td>
 </tr>
 <tr>
-<td>$\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{2\pi 1}{h\,c}\int_0^T\langle\tilde H_\Psi\rangle  dr'_t$</td>
+<td>$\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{2\pi}{h\,c}\int_0^T\langle\tilde H_\Psi\rangle  dr'_t$</td>
 <td>Aharonov–Anandan geometric phase</td>
 </tr>
 <tr>
