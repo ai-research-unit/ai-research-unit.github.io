@@ -248,9 +248,9 @@ The highest weight is $3$, so $V_3$ occurs, of dimension seven, and removing its
 
 *Proof.* The square $L_{\vec u}^{2}$ is left multiplication by $\vec u^{2}=-e_t$, so $L_{\vec u}^{2}=-\mathrm{id}$ and every eigenvalue $\lambda$ satisfies $\lambda^{2}=-1$. An eigenvector with a real eigenvalue therefore does not exist, and no real line is carried to itself.
 
-**Theorem (the invariant complex lines).** The invariant complex lines of $L_{\vec u}$ are the minimal left ideals built from the idempotents of the axis, $\mathbb{B}\tilde\Pi_{\pm}(\vec u)$, and they are indexed by the pair $\pm\vec u$.
+**Theorem (the invariant complex lines).** The invariant complex lines of $L_{\vec u}$ are the minimal left ideals built from the idempotents of the axis, $\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u)$, and they are indexed by the pair $\pm\vec u$.
 
-*Proof.* Over the complex numbers the equation $L_{\vec u}^{2}=-\mathrm{id}$ gives the two eigenspaces of the eigenvalues $\pm i$, and each is a two-dimensional space spanned by the elements annihilated by the projectors $\tilde\Pi_{\mp}(\vec u)$ of the axis; the lines inside an eigenspace are the minimal left ideals of that axis. A different axis gives a different pair of idempotents and hence a different pair of eigenspaces.
+*Proof.* Over the complex numbers the equation $L_{\vec u}^{2}=-\mathrm{id}$ gives the two eigenspaces of the eigenvalues $\pm i$, and each is a two-dimensional space spanned by the elements annihilated by the projectors $\tilde\Pi_{\mathrm{id},\mp}(\vec u)$ of the axis; the lines inside an eigenspace are the minimal left ideals of that axis. A different axis gives a different pair of idempotents and hence a different pair of eigenspaces.
 
 **Corollary.** No action of the group marks an axis, and a decomposition of the algebra into two invariant complex subspaces is a choice of a point of the sphere of axes.
 
@@ -342,7 +342,7 @@ The conjugation cuts the algebra as $V_1\oplus V_0$, of dimensions $3+1$, with C
 | $\operatorname{Ad}_{\tilde u}$ | the conjugation by a rotor |
 | $V_{1/2},V_1,V_0$ | the carriers, of dimensions $2,3,1$ |
 | $V_{3/2},V_2,V_3$ | $\operatorname{Sym}^{3}S$ and the two higher carriers, of dimensions $4,5,7$ |
-| $\tilde\Pi_{\pm}(\vec u)$ | the idempotents of the axis, whose minimal left ideals are the invariant lines |
+| $\tilde\Pi_{\mathrm{id},\pm}(\vec u)$ | the idempotents of the axis, whose minimal left ideals are the invariant lines |
 
 ## Further Reading
 

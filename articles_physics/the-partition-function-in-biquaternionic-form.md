@@ -123,7 +123,7 @@ $$
 \tilde{Ϛ}_{\Psi}=\tfrac12\big(e_t+i\vec s_{\Psi}\big),\qquad \vec s_{\Psi}=-\tanh(\beta|\vec h_\Psi|)\,\vec u_\Psi,\qquad |\vec s_{\Psi}|=\tanh(\beta|\vec h_\Psi|)\le 1.
 $$
 
-The thermal state is mixed for every finite $\beta$ and approaches the pure ground state $\tilde\Pi(-\vec u_\Psi)=\tfrac12(e_t-i\vec u_\Psi)$ only as $\beta\to\infty$. Its internal energy is
+The thermal state is mixed for every finite $\beta$ and approaches the pure ground state $\tilde\Pi_{\mathrm{id}}(-\vec u_\Psi)=\tfrac12(e_t-i\vec u_\Psi)$ only as $\beta\to\infty$. Its internal energy is
 
 $$
 E=\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=h_t+\vec s_{\Psi}\cdot\vec h_\Psi=h_t-|\vec h_\Psi|\tanh(\beta|\vec h_\Psi|)

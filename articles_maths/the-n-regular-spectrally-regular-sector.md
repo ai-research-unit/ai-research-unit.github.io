@@ -152,14 +152,14 @@ This is the only sector in which the Peirce decomposition relative to $\tilde Q$
 $$
 \tilde Q=\lambda_+e_++\lambda_-e_-,\qquad \lambda_\pm=Q_t\pm\beta,\quad \beta=iB,
 $$
-is the eigenvalue decomposition of $\tilde Q$. It exists because the minimal polynomial is split and squarefree, and it is unique: the eigenvalues are distinct, so the spectral idempotents are determined by $\tilde Q$. The eigenbasis construction — the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ and the diagonalisation of $L_{\tilde Q}$ — is in §*The Eigenbasis, the Nilpotents, and the Peirce Corners*; the general construction is in *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Eigenbasis*.
+is the eigenvalue decomposition of $\tilde Q$. It exists because the minimal polynomial is split and squarefree, and it is unique: the eigenvalues are distinct, so the spectral idempotents are determined by $\tilde Q$. The eigenbasis construction — the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$ and the diagonalisation of $L_{\tilde Q}$ — is in §*The Eigenbasis, the Nilpotents, and the Peirce Corners*; the general construction is in *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Eigenbasis*.
 
 **Powers, inverse, and the eigenvalue map.** For every polynomial $f\in\mathbb{C}[X]$,
 $$
 f(\tilde Q)=f(\lambda_+)e_++f(\lambda_-)e_-,\qquad
 \tilde Q^{-1}=\lambda_+^{-1}e_++\lambda_-^{-1}e_-,
 $$
-the second because $\lambda_+\lambda_-=N\neq0$; it agrees with $\tilde Q^{\natural}/N$, since $\lambda_-\tilde\Pi_++\lambda_+\tilde\Pi_-=\tilde Q^{\natural}$. The eigenvalue map $\mathbb{B}^\times\to\mathbb{C}^\times\times\mathbb{C}^\times$, $\tilde Q\mapsto(\lambda_+,\lambda_-)$, is surjective, not injective and not a group homomorphism.
+the second because $\lambda_+\lambda_-=N\neq0$; it agrees with $\tilde Q^{\natural}/N$, since $\lambda_-\tilde\Pi_{\mathrm{id},++}\lambda_+\tilde\Pi_{\mathrm{id},-}=\tilde Q^{\natural}$. The eigenvalue map $\mathbb{B}^\times\to\mathbb{C}^\times\times\mathbb{C}^\times$, $\tilde Q\mapsto(\lambda_+,\lambda_-)$, is surjective, not injective and not a group homomorphism.
 
 **Annihilators.** Since $\tilde Q$ is invertible,
 
@@ -194,132 +194,132 @@ and fix a square root $B$ of $B^2$, with $\beta=iB$. Define
 $$
 \vec U=\frac{\vec Q}{B},\qquad
 \vec{Ζ}=-i\vec U=-\frac{i\vec Q}{B},\qquad
-\tilde\Pi_\pm=\frac{e_t\pm\vec{Ζ}}{2},\qquad
+\tilde\Pi_{\mathrm{id},\pm}=\frac{e_t\pm\vec{Ζ}}{2},\qquad
 \lambda_\pm=Q_t\pm \beta.
 $$
 Then
 $$
 \vec{Ζ}^2=e_t,\qquad
-\tilde\Pi_\pm^2=\tilde\Pi_\pm,\qquad
-\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0,\qquad
-\tilde\Pi_++\tilde\Pi_-=e_t,
+\tilde\Pi_{\mathrm{id},\pm}^2=\tilde\Pi_{\mathrm{id},\pm},\qquad
+\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=\tilde\Pi_{\mathrm{id},-}\tilde\Pi_{\mathrm{id},+}=0,\qquad
+\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t,
 $$
 and
 $$
-\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-.
+\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}.
 $$
-The pair $\tilde\Pi_\pm$ is the pair denoted $e_\pm$ in §*The Elements*; the two notations are the same spectral idempotents.
+The pair $\tilde\Pi_{\mathrm{id},\pm}$ is the pair denoted $e_\pm$ in §*The Elements*; the two notations are the same spectral idempotents.
 
-The pair $(\tilde\Pi_+,\tilde\Pi_-)$ is attached to $\tilde Q$: it is the pair of the root $\vec{Ζ}$, not an arbitrary pair of idempotents. The signs are fixed by
+The pair $(\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-})$ is attached to $\tilde Q$: it is the pair of the root $\vec{Ζ}$, not an arbitrary pair of idempotents. The signs are fixed by
 $$
-\vec{Ζ}\tilde\Pi_\pm=\tilde\Pi_\pm\vec{Ζ}=\pm\tilde\Pi_\pm,\qquad
-\tilde Q\tilde\Pi_\pm=\lambda_\pm\tilde\Pi_\pm.
+\vec{Ζ}\tilde\Pi_{\mathrm{id},\pm}=\tilde\Pi_{\mathrm{id},\pm}\vec{Ζ}=\pm\tilde\Pi_{\mathrm{id},\pm},\qquad
+\tilde Q\tilde\Pi_{\mathrm{id},\pm}=\lambda_\pm\tilde\Pi_{\mathrm{id},\pm}.
 $$
-Choosing the negative square root sends $\vec{Ζ}$ to $-\vec{Ζ}$, exchanges $\tilde\Pi_+$ and $\tilde\Pi_-$, and exchanges $\lambda_+$ and $\lambda_-$; the unordered pair and the unordered spectrum are unchanged.
+Choosing the negative square root sends $\vec{Ζ}$ to $-\vec{Ζ}$, exchanges $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$, and exchanges $\lambda_+$ and $\lambda_-$; the unordered pair and the unordered spectrum are unchanged.
 
 ### The Peirce Corners and the Nilpotents
 
 Define the four **Peirce corners**
 $$
-\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t,\qquad s,t\in\{+,-\}.
+\mathbb{B}_{st}=\tilde\Pi_{\mathrm{id},s}\mathbb{B}\tilde\Pi_{\mathrm{id},t},\qquad s,t\in\{+,-\}.
 $$
 Each is one complex line. The two diagonal corners are the lines of the idempotents, and the two mixed corners are square-zero: an element $x\in\mathbb{B}_{st}$ with $s\neq t$ has zero scalar part, because the trace of its image is zero, and its square is zero, because
 $$
-x^2\in\tilde\Pi_s\mathbb{B}\tilde\Pi_t\tilde\Pi_s\mathbb{B}\tilde\Pi_t=0
+x^2\in\tilde\Pi_{\mathrm{id},s}\mathbb{B}\tilde\Pi_{\mathrm{id},t}\tilde\Pi_{\mathrm{id},s}\mathbb{B}\tilde\Pi_{\mathrm{id},t}=0
 \qquad(s\neq t).
 $$
 
 **Construction of the two nilpotents.** Choose a nonzero
 $$
-\vec\Upsilon_+\in\mathbb{B}_{-+}=\tilde\Pi_-\mathbb{B}\tilde\Pi_+.
+\vec\Pi_{\mathrm{nil},+}\in\mathbb{B}_{-+}=\tilde\Pi_{\mathrm{id},-}\mathbb{B}\tilde\Pi_{\mathrm{id},+}.
 $$
 Consider the map
 $$
-\mathbb{B}_{+-}\longrightarrow\mathbb{C}\tilde\Pi_-,\qquad x\longmapsto\vec\Upsilon_+x.
+\mathbb{B}_{+-}\longrightarrow\mathbb{C}\tilde\Pi_{\mathrm{id},-},\qquad x\longmapsto\vec\Pi_{\mathrm{nil},+x}.
 $$
-It is linear between complex lines, and it is nonzero. Otherwise $\vec\Upsilon_+x=0$ for every $x\in\mathbb{B}_{+-}$, hence $\vec\Upsilon_+\tilde\Pi_-\mathbb{B}\tilde\Pi_-=0$, and then $\mathbb{B}\vec\Upsilon_+\mathbb{B}\tilde\Pi_-=0$. But $\vec\Upsilon_+\neq0$, so the two-sided ideal $\mathbb{B}\vec\Upsilon_+\mathbb{B}$ is the whole simple algebra $\mathbb{B}$, and $\mathbb{B}\tilde\Pi_-\neq0$, a contradiction. A nonzero linear map between complex lines is an isomorphism. Hence there is a unique
+It is linear between complex lines, and it is nonzero. Otherwise $\vec\Pi_{\mathrm{nil},+x}=0$ for every $x\in\mathbb{B}_{+-}$, hence $\vec\Pi_{\mathrm{nil},+}\tilde\Pi_{\mathrm{id},-}\mathbb{B}\tilde\Pi_{\mathrm{id},-}=0$, and then $\mathbb{B}\vec\Pi_{\mathrm{nil},+}\mathbb{B}\tilde\Pi_{\mathrm{id},-}=0$. But $\vec\Pi_{\mathrm{nil},+}\neq0$, so the two-sided ideal $\mathbb{B}\vec\Pi_{\mathrm{nil},+}\mathbb{B}$ is the whole simple algebra $\mathbb{B}$, and $\mathbb{B}\tilde\Pi_{\mathrm{id},-}\neq0$, a contradiction. A nonzero linear map between complex lines is an isomorphism. Hence there is a unique
 $$
-\vec\Upsilon_-\in\mathbb{B}_{+-}
+\vec\Pi_{\mathrm{nil},-}\in\mathbb{B}_{+-}
 \qquad\text{with}\qquad
-\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-.
+\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-}.
 $$
-The other product is then forced. It lies in $\mathbb{C}\tilde\Pi_+$, say $\vec\Upsilon_-\vec\Upsilon_+=\alpha\tilde\Pi_+$, and
+The other product is then forced. It lies in $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$, say $\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\alpha\tilde\Pi_{\mathrm{id},+}$, and
 $$
-\vec\Upsilon_+=\tilde\Pi_-\vec\Upsilon_+=\vec\Upsilon_+(\vec\Upsilon_-\vec\Upsilon_+)=\alpha\vec\Upsilon_+\tilde\Pi_+=\alpha\vec\Upsilon_+,
+\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},-}\vec\Pi_{\mathrm{nil},+}=\vec\Pi_{\mathrm{nil},+}(\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+})=\alpha\vec\Pi_{\mathrm{nil},+}\tilde\Pi_{\mathrm{id},+}=\alpha\vec\Pi_{\mathrm{nil},+},
 $$
 so $\alpha=1$. Therefore
 $$
-\boxed{\ \vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\qquad
-\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,\qquad
-\vec\Upsilon_+^2=\vec\Upsilon_-^2=0.\ }
+\boxed{\ \vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-},\qquad
+\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+},\qquad
+\vec\Pi_{\mathrm{nil},+}^2=\vec\Pi_{\mathrm{nil},-}^2=0.\ }
 $$
-**The two-line normalisation.** If one starts from arbitrary nonzero $u\in\mathbb{B}_{-+}$ and $v\in\mathbb{B}_{+-}$, then $uv=c\tilde\Pi_-$ for some $c\neq0$. Choose $\alpha$ with $\alpha^2=c$ and set $\vec\Upsilon_+=u/\alpha$, $\vec\Upsilon_-=v/\alpha$; the argument above applied to $u/\alpha$ and $v/\alpha$ gives $vu=c\tilde\Pi_+$, and the boxed identities hold. This is the same construction read from two arbitrary generators instead of one, and the residual freedom is the reciprocal rescaling of the pair.
+**The two-line normalisation.** If one starts from arbitrary nonzero $u\in\mathbb{B}_{-+}$ and $v\in\mathbb{B}_{+-}$, then $uv=c\tilde\Pi_{\mathrm{id},-}$ for some $c\neq0$. Choose $\alpha$ with $\alpha^2=c$ and set $\vec\Pi_{\mathrm{nil},+}=u/\alpha$, $\vec\Pi_{\mathrm{nil},-}=v/\alpha$; the argument above applied to $u/\alpha$ and $v/\alpha$ gives $vu=c\tilde\Pi_{\mathrm{id},+}$, and the boxed identities hold. This is the same construction read from two arbitrary generators instead of one, and the residual freedom is the reciprocal rescaling of the pair.
 
-The construction from $\vec\Upsilon_+$ alone makes one choice, the nonzero element $\vec\Upsilon_+$ of the line $\mathbb{B}_{-+}$. That choice determines $\vec\Upsilon_-$ uniquely. In that construction no intermediate scalar and no square root enter. A square root appears when the pair is parametrised by two arbitrary generators, as in the two-line normalisation above, or by a transverse vector, as in the closed forms below.
+The construction from $\vec\Pi_{\mathrm{nil},+}$ alone makes one choice, the nonzero element $\vec\Pi_{\mathrm{nil},+}$ of the line $\mathbb{B}_{-+}$. That choice determines $\vec\Pi_{\mathrm{nil},-}$ uniquely. In that construction no intermediate scalar and no square root enter. A square root appears when the pair is parametrised by two arbitrary generators, as in the two-line normalisation above, or by a transverse vector, as in the closed forms below.
 
 The corners and their generators are collected in the table.
 
 | Corner | Definition | Generator |
 |---|---|---|
-| $\mathbb{B}_{++}$ | $\tilde\Pi_+\mathbb{B}\tilde\Pi_+$ | $\tilde\Pi_+$ |
-| $\mathbb{B}_{+-}$ | $\tilde\Pi_+\mathbb{B}\tilde\Pi_-$ | $\vec\Upsilon_-$ |
-| $\mathbb{B}_{-+}$ | $\tilde\Pi_-\mathbb{B}\tilde\Pi_+$ | $\vec\Upsilon_+$ |
-| $\mathbb{B}_{--}$ | $\tilde\Pi_-\mathbb{B}\tilde\Pi_-$ | $\tilde\Pi_-$ |
+| $\mathbb{B}_{++}$ | $\tilde\Pi_{\mathrm{id},+}\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ | $\tilde\Pi_{\mathrm{id},+}$ |
+| $\mathbb{B}_{+-}$ | $\tilde\Pi_{\mathrm{id},+}\mathbb{B}\tilde\Pi_{\mathrm{id},-}$ | $\vec\Pi_{\mathrm{nil},-}$ |
+| $\mathbb{B}_{-+}$ | $\tilde\Pi_{\mathrm{id},-}\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ | $\vec\Pi_{\mathrm{nil},+}$ |
+| $\mathbb{B}_{--}$ | $\tilde\Pi_{\mathrm{id},-}\mathbb{B}\tilde\Pi_{\mathrm{id},-}$ | $\tilde\Pi_{\mathrm{id},-}$ |
 
-**The two signs.** The index is fixed by the left ideal, not by the corner: $\vec\Upsilon_+$ lies in $\mathbb{B}_{-+}$ and, together with $\tilde\Pi_+$, generates $S_+=\mathbb{B}\tilde\Pi_+$; $\vec\Upsilon_-$ lies in $\mathbb{B}_{+-}$ and, together with $\tilde\Pi_-$, generates $S_-=\mathbb{B}\tilde\Pi_-$. Thus
+**The two signs.** The index is fixed by the left ideal, not by the corner: $\vec\Pi_{\mathrm{nil},+}$ lies in $\mathbb{B}_{-+}$ and, together with $\tilde\Pi_{\mathrm{id},+}$, generates $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$; $\vec\Pi_{\mathrm{nil},-}$ lies in $\mathbb{B}_{+-}$ and, together with $\tilde\Pi_{\mathrm{id},-}$, generates $S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}$. Thus
 $$
-S_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,\qquad
-S_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-.
+S_+=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},+},\qquad
+S_-=\mathbb{C}\vec\Pi_{\mathrm{nil},-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-}.
 $$
 
 **Uniqueness up to rescaling.** The pair is determined by the products and squares only up to
 $$
-\vec\Upsilon_+\longmapsto\mu\,\vec\Upsilon_+,\qquad
-\vec\Upsilon_-\longmapsto\mu^{-1}\vec\Upsilon_-,\qquad
+\vec\Pi_{\mathrm{nil},+}\longmapsto\mu\,\vec\Pi_{\mathrm{nil},+},\qquad
+\vec\Pi_{\mathrm{nil},-}\longmapsto\mu^{-1}\vec\Pi_{\mathrm{nil},-},\qquad
 \mu\in\mathbb{C}^{\times},
 $$
-which preserves both products and both squares. Indeed, $\mu^{-1}\vec\Upsilon_-$ is the unique element of $\mathbb{B}_{+-}$ whose product with $\mu\vec\Upsilon_+$ is $\tilde\Pi_-$, so the construction forces $\vec\Upsilon_-'=\mu^{-1}\vec\Upsilon_-$. Conversely every pair with the same products and squares arises this way, because the mixed corners are lines. The construction therefore defines the pair up to this one rescaling, and no further choice enters.
+which preserves both products and both squares. Indeed, $\mu^{-1}\vec\Pi_{\mathrm{nil},-}$ is the unique element of $\mathbb{B}_{+-}$ whose product with $\mu\vec\Pi_{\mathrm{nil},+}$ is $\tilde\Pi_{\mathrm{id},-}$, so the construction forces $\vec\Pi_{\mathrm{nil},-}'=\mu^{-1}\vec\Pi_{\mathrm{nil},-}$. Conversely every pair with the same products and squares arises this way, because the mixed corners are lines. The construction therefore defines the pair up to this one rescaling, and no further choice enters.
 
 **The corner, without a preferred axis.** For every pure biquaternion $\vec X$,
 $$
-\tilde\Pi_-\vec X\tilde\Pi_+=\frac12\left(\vec X_\perp+i\,\vec U\times\vec X\right)
+\tilde\Pi_{\mathrm{id},-}\vec X\tilde\Pi_{\mathrm{id},+}=\frac12\left(\vec X_\perp+i\,\vec U\times\vec X\right)
 =\frac12\left(\vec X-\frac{\vec X\cdot\vec Q}{B^2}\vec Q\right)+\frac{i}{4B}\,[\vec Q,\vec X],
 $$
 $$
-\tilde\Pi_+\vec X\tilde\Pi_-=\frac12\left(\vec X_\perp-i\,\vec U\times\vec X\right)
+\tilde\Pi_{\mathrm{id},+}\vec X\tilde\Pi_{\mathrm{id},-}=\frac12\left(\vec X_\perp-i\,\vec U\times\vec X\right)
 =\frac12\left(\vec X-\frac{\vec X\cdot\vec Q}{B^2}\vec Q\right)-\frac{i}{4B}\,[\vec Q,\vec X],
 $$
 where $\vec X_\perp=\vec X-\dfrac{\vec X\cdot\vec Q}{B^2}\vec Q$. No axis is singled out. When $\vec X_\perp^2\neq0$ both projections are nonzero.
 
 **The two nilpotents from a transverse vector.** Let $\vec X$ be a pure vector with $\vec X_\perp^2\neq0$, and put
 $$
-u_+=\tilde\Pi_-\vec X\tilde\Pi_+,\qquad u_-=\tilde\Pi_+\vec X\tilde\Pi_-.
+u_+=\tilde\Pi_{\mathrm{id},-}\vec X\tilde\Pi_{\mathrm{id},+},\qquad u_-=\tilde\Pi_{\mathrm{id},+}\vec X\tilde\Pi_{\mathrm{id},-}.
 $$
 Then
 $$
-u_+u_-=\vec X_\perp^2\,\tilde\Pi_-,\qquad
-u_-u_+=\vec X_\perp^2\,\tilde\Pi_+,\qquad
+u_+u_-=\vec X_\perp^2\,\tilde\Pi_{\mathrm{id},-},\qquad
+u_-u_+=\vec X_\perp^2\,\tilde\Pi_{\mathrm{id},+},\qquad
 u_\pm^2=0,
 $$
 as the expansion of the two projections shows: the cross terms cancel because $\vec X_\perp\cdot(\vec U\times\vec X_\perp)=0$. Then
 $$
-\vec\Upsilon_\pm=\frac{u_\pm}{\sqrt{\vec X_\perp^2}}
+\vec\Pi_{\mathrm{nil},\pm}=\frac{u_\pm}{\sqrt{\vec X_\perp^2}}
 $$
-satisfy $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$, $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$, $\vec\Upsilon_\pm^2=0$. Every admissible pair arises this way, and two choices of $\vec X$ give pairs differing by the reciprocal rescaling. The scalar is
+satisfy $\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-}$, $\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+}$, $\vec\Pi_{\mathrm{nil},\pm}^2=0$. Every admissible pair arises this way, and two choices of $\vec X$ give pairs differing by the reciprocal rescaling. The scalar is
 $$
 \vec X_\perp^2=\vec X^2+\frac{(\vec X\cdot\vec Q)^2}{B^2}.
 $$
 
-**The transverse unit vector.** If $\vec V$ is a pure unit vector with $\vec V\cdot\vec U=0$, then $\vec V\tilde\Pi_+\in\mathbb{B}_{-+}$ and $\vec V\tilde\Pi_-\in\mathbb{B}_{+-}$, and, up to the reciprocal rescaling,
+**The transverse unit vector.** If $\vec V$ is a pure unit vector with $\vec V\cdot\vec U=0$, then $\vec V\tilde\Pi_{\mathrm{id},+}\in\mathbb{B}_{-+}$ and $\vec V\tilde\Pi_{\mathrm{id},-}\in\mathbb{B}_{+-}$, and, up to the reciprocal rescaling,
 $$
-\vec\Upsilon_+=i\,\vec V\tilde\Pi_+,\qquad
-\vec\Upsilon_-=i\,\vec V\tilde\Pi_-.
+\vec\Pi_{\mathrm{nil},+}=i\,\vec V\tilde\Pi_{\mathrm{id},+},\qquad
+\vec\Pi_{\mathrm{nil},-}=i\,\vec V\tilde\Pi_{\mathrm{id},-}.
 $$
-For $\vec V=\vec e_x$ and $\vec U=\vec e_z$ one has $\vec V\tilde\Pi_+=(\vec e_x+i\vec e_y)/2$ and $\vec V\tilde\Pi_-=(\vec e_x-i\vec e_y)/2$, and direct multiplication, using $\vec V^2=-e_t$, gives
+For $\vec V=\vec e_x$ and $\vec U=\vec e_z$ one has $\vec V\tilde\Pi_{\mathrm{id},+}=(\vec e_x+i\vec e_y)/2$ and $\vec V\tilde\Pi_{\mathrm{id},-}=(\vec e_x-i\vec e_y)/2$, and direct multiplication, using $\vec V^2=-e_t$, gives
 $$
-(\vec V\tilde\Pi_+)(\vec V\tilde\Pi_-)=-\tilde\Pi_-,
+(\vec V\tilde\Pi_{\mathrm{id},+})(\vec V\tilde\Pi_{\mathrm{id},-})=-\tilde\Pi_{\mathrm{id},-},
 \qquad
-(\vec V\tilde\Pi_-)(\vec V\tilde\Pi_+)=-\tilde\Pi_+.
+(\vec V\tilde\Pi_{\mathrm{id},-})(\vec V\tilde\Pi_{\mathrm{id},+})=-\tilde\Pi_{\mathrm{id},+}.
 $$
 A general transverse unit is $\vec V=\lambda\vec e_x+\mu\vec e_y$ with $\lambda^2+\mu^2=1$; the factor $\lambda-i\mu$ cancels in the normalised pair, so the same products hold. The factor $i$ on both generators restores the plus signs. This is the transverse-vector construction with $\vec X=\vec V$ and $\sqrt{\vec V_\perp^2}=i$.
 
@@ -330,17 +330,17 @@ $$
 $$
 Therefore
 $$
-\boxed{\ \vec\Upsilon_\pm=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3B^2}}\ }
+\boxed{\ \vec\Pi_{\mathrm{nil},\pm}=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3B^2}}\ }
 $$
 with $\vec w=\vec e_x+\vec e_y+\vec e_z$ and $\Sigma=Q_x+Q_y+Q_z$. In full coordinates,
 $$
-\vec\Upsilon_\pm=\frac{\Bigl(B-\dfrac{\Sigma Q_x}{B}\pm i(Q_y-Q_z)\Bigr)\vec e_x+\Bigl(B-\dfrac{\Sigma Q_y}{B}\pm i(Q_z-Q_x)\Bigr)\vec e_y+\Bigl(B-\dfrac{\Sigma Q_z}{B}\pm i(Q_x-Q_y)\Bigr)\vec e_z}{2\sqrt{\Sigma^2-3B^2}}.
+\vec\Pi_{\mathrm{nil},\pm}=\frac{\Bigl(B-\dfrac{\Sigma Q_x}{B}\pm i(Q_y-Q_z)\Bigr)\vec e_x+\Bigl(B-\dfrac{\Sigma Q_y}{B}\pm i(Q_z-Q_x)\Bigr)\vec e_y+\Bigl(B-\dfrac{\Sigma Q_z}{B}\pm i(Q_x-Q_y)\Bigr)\vec e_z}{2\sqrt{\Sigma^2-3B^2}}.
 $$
 A permutation of the axes permutes the three components and leaves $B$ and $\Sigma$ unchanged, so the formula is symmetric in $x,y,z$. Expanding the brackets gives
 $$
-\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\qquad
-\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,\qquad
-\vec\Upsilon_\pm^2=0,
+\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-},\qquad
+\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+},\qquad
+\vec\Pi_{\mathrm{nil},\pm}^2=0,
 $$
 and the denominator is
 $$
@@ -355,37 +355,37 @@ $$
 $$
 which for real $\vec Q$ is the line $Q_x=Q_y=Q_z$. On that cone use the axis chart: for $\mu\in\{x,y,z\}$,
 $$
-\vec\Upsilon_\pm=\frac{B\,\vec e_\mu-\dfrac{Q_\mu}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec e_\mu]}{2\sqrt{Q_\mu^2-B^2}},
+\vec\Pi_{\mathrm{nil},\pm}=\frac{B\,\vec e_\mu-\dfrac{Q_\mu}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec e_\mu]}{2\sqrt{Q_\mu^2-B^2}},
 $$
 which is the transverse-vector construction with $\vec X=\vec e_\mu$. The chart with axis $\mu$ is defined when $Q_\mu^2\neq B^2$, that is, when $Q_\nu^2+Q_\rho^2\neq0$ for the two other coordinates. At least one of the three is defined whenever $B\neq0$: if all three failed, then $Q_x^2+Q_y^2=Q_y^2+Q_z^2=Q_z^2+Q_x^2=0$, hence $Q_x^2=Q_y^2=Q_z^2$ and $2Q_x^2=0$, so $B=0$. The charts are the one formula read with $\mu=x,y,z$, and the ones that are defined give pairs differing by the reciprocal rescaling. The symmetric formula off the cone and the axis charts on it cover every $\vec Q$ with $B\neq0$.
 
-**The normalisation.** The symmetric formula off the exceptional cone, the axis chart on it and one fixed branch of the square root are the normalisation of *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Transverse-Vector Construction*: they fix the scale of the pair, and with them the quadruple $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is unique. Without this choice the pair is determined only up to the reciprocal rescaling of the theorem above.
+**The normalisation.** The symmetric formula off the exceptional cone, the axis chart on it and one fixed branch of the square root are the normalisation of *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Transverse-Vector Construction*: they fix the scale of the pair, and with them the quadruple $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$ is unique. Without this choice the pair is determined only up to the reciprocal rescaling of the theorem above.
 
 **Why no formula is axis-free everywhere.** A closed form with no auxiliary vector would be a map $F$ with $F(S\vec Q)=S\,F(\vec Q)$ for every rotation $S$, rational in $\vec Q$ and $B$. By invariant theory the only such maps are $F(\vec Q)=f(B^2)\vec Q$: the invariant tensors are $\delta_{ij}$ and $\epsilon_{ijk}$, and $\epsilon$ cannot build a vector from a single vector. But the corner is transverse to $\vec Q$, so $F$ would vanish. Every explicit generator therefore uses an auxiliary vector: the symmetric formula uses the permutation-invariant $\vec w$, the axis charts use $\vec e_x,\vec e_y,\vec e_z$. The corner line is a spinor line, and a spinor is not a function of $\vec Q$ alone.
 
-**The standard pair.** For the opposite root, $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$, the corner generators of *Peirce Decompositions of the Biquaternion Algebra*, §*The Biquaternion Case*, are
+**The standard pair.** For the opposite root, $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z)$, the corner generators of *Peirce Decompositions of the Biquaternion Algebra*, §*The Biquaternion Case*, are
 $$
-\vec\Upsilon_x=\frac{i\vec e_x-\vec e_y}{2}\in\mathbb{B}_{+-},\qquad
-\vec\Upsilon_y=\frac{i\vec e_x+\vec e_y}{2}\in\mathbb{B}_{-+},
+\vec\Pi_{\mathrm{nil},x}=\frac{i\vec e_x-\vec e_y}{2}\in\mathbb{B}_{+-},\qquad
+\vec\Pi_{\mathrm{nil},y}=\frac{i\vec e_x+\vec e_y}{2}\in\mathbb{B}_{-+},
 $$
-with $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$ and $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$. These are the $\vec\Upsilon_1,\vec\Upsilon_2$ of *Special Element and Peirce Conventions*, §*The Nilpotent Convention*, indexed by direction. The present root is $\vec{Ζ}=-i\vec e_z$ when $Q_z>0$ with the choice $B=Q_z$, which is the negative of that one; the two corner labels and the two idempotent labels are therefore exchanged. In the present indexing
+with $\vec\Pi_{\mathrm{nil},x}\vec\Pi_{\mathrm{nil},y}=\tilde\Pi_{\mathrm{id},+}$ and $\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}=\tilde\Pi_{\mathrm{id},-}$. These are the $\vec\Pi_{\mathrm{nil},1},\vec\Pi_{\mathrm{nil},2}$ of *Special Element and Peirce Conventions*, §*The Nilpotent Convention*, indexed by direction. The present root is $\vec{Ζ}=-i\vec e_z$ when $Q_z>0$ with the choice $B=Q_z$, which is the negative of that one; the two corner labels and the two idempotent labels are therefore exchanged. In the present indexing
 $$
-\vec\Upsilon_+=\vec\Upsilon_x,\qquad \vec\Upsilon_-=\vec\Upsilon_y,
+\vec\Pi_{\mathrm{nil},+}=\vec\Pi_{\mathrm{nil},x},\qquad \vec\Pi_{\mathrm{nil},-}=\vec\Pi_{\mathrm{nil},y},
 $$
-and the products are $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$, $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$, as required.
+and the products are $\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-}$, $\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+}$, as required.
 
 ### The Eigenbasis
 
 The four elements
 $$
-\tilde\Pi_+,\qquad \vec\Upsilon_-,\qquad \vec\Upsilon_+,\qquad \tilde\Pi_-
+\tilde\Pi_{\mathrm{id},+},\qquad \vec\Pi_{\mathrm{nil},-},\qquad \vec\Pi_{\mathrm{nil},+},\qquad \tilde\Pi_{\mathrm{id},-}
 $$
 form a $\mathbb{C}$-basis of $\mathbb{B}$. It is the **eigenbasis of $L_{\tilde Q}$**. In this basis the multiplication by $\tilde Q$ is diagonal:
 $$
-\tilde Q\tilde\Pi_+=\lambda_+\tilde\Pi_+,\qquad
-\tilde Q\vec\Upsilon_-=\lambda_+\vec\Upsilon_-,\qquad
-\tilde Q\vec\Upsilon_+=\lambda_-\vec\Upsilon_+,\qquad
-\tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_-.
+\tilde Q\tilde\Pi_{\mathrm{id},+}=\lambda_+\tilde\Pi_{\mathrm{id},+},\qquad
+\tilde Q\vec\Pi_{\mathrm{nil},-}=\lambda_+\vec\Pi_{\mathrm{nil},-},\qquad
+\tilde Q\vec\Pi_{\mathrm{nil},+}=\lambda_-\vec\Pi_{\mathrm{nil},+},\qquad
+\tilde Q\tilde\Pi_{\mathrm{id},-}=\lambda_-\tilde\Pi_{\mathrm{id},-}.
 $$
 The diagonal values are
 $$
@@ -395,137 +395,137 @@ The reason is the corner rule: an element of $\mathbb{B}_{st}$ has left sign $s$
 
 | Basis element | Corner | Left eigenvalue $L_{\tilde Q}$ | Right eigenvalue $R_{\tilde Q}$ |
 |---|---|---|---|
-| $\tilde\Pi_+$ | $\mathbb{B}_{++}$ | $\lambda_+$ | $\lambda_+$ |
-| $\vec\Upsilon_-$ | $\mathbb{B}_{+-}$ | $\lambda_+$ | $\lambda_-$ |
-| $\vec\Upsilon_+$ | $\mathbb{B}_{-+}$ | $\lambda_-$ | $\lambda_+$ |
-| $\tilde\Pi_-$ | $\mathbb{B}_{--}$ | $\lambda_-$ | $\lambda_-$ |
+| $\tilde\Pi_{\mathrm{id},+}$ | $\mathbb{B}_{++}$ | $\lambda_+$ | $\lambda_+$ |
+| $\vec\Pi_{\mathrm{nil},-}$ | $\mathbb{B}_{+-}$ | $\lambda_+$ | $\lambda_-$ |
+| $\vec\Pi_{\mathrm{nil},+}$ | $\mathbb{B}_{-+}$ | $\lambda_-$ | $\lambda_+$ |
+| $\tilde\Pi_{\mathrm{id},-}$ | $\mathbb{B}_{--}$ | $\lambda_-$ | $\lambda_-$ |
 
 Thus the left action is diagonal with the values $\lambda_+,\lambda_+,\lambda_-,\lambda_-$, and the right action is diagonal with the values $\lambda_+,\lambda_-,\lambda_+,\lambda_-$, in the same basis.
 
 ### The Action of the Four Basis Elements
 
-**In the eigenbasis $\mathcal{B}=(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ the multiplication of the four basis elements is the table, and the left and right actions on the basis are read from it.**
+**In the eigenbasis $\mathcal{B}=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$ the multiplication of the four basis elements is the table, and the left and right actions on the basis are read from it.**
 
 The multiplication is the table.
 
-| $PX$ | $\tilde\Pi_+$ | $\vec\Upsilon_-$ | $\vec\Upsilon_+$ | $\tilde\Pi_-$ |
+| $PX$ | $\tilde\Pi_{\mathrm{id},+}$ | $\vec\Pi_{\mathrm{nil},-}$ | $\vec\Pi_{\mathrm{nil},+}$ | $\tilde\Pi_{\mathrm{id},-}$ |
 |---|---|---|---|---|
-| $\tilde\Pi_+$ | $\tilde\Pi_+$ | $\vec\Upsilon_-$ | $0$ | $0$ |
-| $\vec\Upsilon_-$ | $0$ | $0$ | $\tilde\Pi_+$ | $\vec\Upsilon_-$ |
-| $\vec\Upsilon_+$ | $\vec\Upsilon_+$ | $\tilde\Pi_-$ | $0$ | $0$ |
-| $\tilde\Pi_-$ | $0$ | $0$ | $\vec\Upsilon_+$ | $\tilde\Pi_-$ |
+| $\tilde\Pi_{\mathrm{id},+}$ | $\tilde\Pi_{\mathrm{id},+}$ | $\vec\Pi_{\mathrm{nil},-}$ | $0$ | $0$ |
+| $\vec\Pi_{\mathrm{nil},-}$ | $0$ | $0$ | $\tilde\Pi_{\mathrm{id},+}$ | $\vec\Pi_{\mathrm{nil},-}$ |
+| $\vec\Pi_{\mathrm{nil},+}$ | $\vec\Pi_{\mathrm{nil},+}$ | $\tilde\Pi_{\mathrm{id},-}$ | $0$ | $0$ |
+| $\tilde\Pi_{\mathrm{id},-}$ | $0$ | $0$ | $\vec\Pi_{\mathrm{nil},+}$ | $\tilde\Pi_{\mathrm{id},-}$ |
 
 **The left action.** For $\tilde Q_2\in\mathbb{B}$ write $L_{\tilde Q_2}(X)=\tilde Q_2X$. Reading the table row by row,
 $$
-L_{\tilde\Pi_+}(\tilde\Pi_+)=\tilde\Pi_+,\quad
-L_{\tilde\Pi_+}(\vec\Upsilon_-)=\vec\Upsilon_-,\quad
-L_{\tilde\Pi_+}(\vec\Upsilon_+)=0,\quad
-L_{\tilde\Pi_+}(\tilde\Pi_-)=0,
+L_{\tilde\Pi_{\mathrm{id},+}}(\tilde\Pi_{\mathrm{id},+})=\tilde\Pi_{\mathrm{id},+},\quad
+L_{\tilde\Pi_{\mathrm{id},+}}(\vec\Pi_{\mathrm{nil},-})=\vec\Pi_{\mathrm{nil},-},\quad
+L_{\tilde\Pi_{\mathrm{id},+}}(\vec\Pi_{\mathrm{nil},+})=0,\quad
+L_{\tilde\Pi_{\mathrm{id},+}}(\tilde\Pi_{\mathrm{id},-})=0,
 $$
 $$
-L_{\vec\Upsilon_-}(\tilde\Pi_+)=0,\quad
-L_{\vec\Upsilon_-}(\vec\Upsilon_-)=0,\quad
-L_{\vec\Upsilon_-}(\vec\Upsilon_+)=\tilde\Pi_+,\quad
-L_{\vec\Upsilon_-}(\tilde\Pi_-)=\vec\Upsilon_-,
+L_{\vec\Pi_{\mathrm{nil},-}}(\tilde\Pi_{\mathrm{id},+})=0,\quad
+L_{\vec\Pi_{\mathrm{nil},-}}(\vec\Pi_{\mathrm{nil},-})=0,\quad
+L_{\vec\Pi_{\mathrm{nil},-}}(\vec\Pi_{\mathrm{nil},+})=\tilde\Pi_{\mathrm{id},+},\quad
+L_{\vec\Pi_{\mathrm{nil},-}}(\tilde\Pi_{\mathrm{id},-})=\vec\Pi_{\mathrm{nil},-},
 $$
 $$
-L_{\vec\Upsilon_+}(\tilde\Pi_+)=\vec\Upsilon_+,\quad
-L_{\vec\Upsilon_+}(\vec\Upsilon_-)=\tilde\Pi_-,\quad
-L_{\vec\Upsilon_+}(\vec\Upsilon_+)=0,\quad
-L_{\vec\Upsilon_+}(\tilde\Pi_-)=0,
+L_{\vec\Pi_{\mathrm{nil},+}}(\tilde\Pi_{\mathrm{id},+})=\vec\Pi_{\mathrm{nil},+},\quad
+L_{\vec\Pi_{\mathrm{nil},+}}(\vec\Pi_{\mathrm{nil},-})=\tilde\Pi_{\mathrm{id},-},\quad
+L_{\vec\Pi_{\mathrm{nil},+}}(\vec\Pi_{\mathrm{nil},+})=0,\quad
+L_{\vec\Pi_{\mathrm{nil},+}}(\tilde\Pi_{\mathrm{id},-})=0,
 $$
 $$
-L_{\tilde\Pi_-}(\tilde\Pi_+)=0,\quad
-L_{\tilde\Pi_-}(\vec\Upsilon_-)=0,\quad
-L_{\tilde\Pi_-}(\vec\Upsilon_+)=\vec\Upsilon_+,\quad
-L_{\tilde\Pi_-}(\tilde\Pi_-)=\tilde\Pi_-.
+L_{\tilde\Pi_{\mathrm{id},-}}(\tilde\Pi_{\mathrm{id},+})=0,\quad
+L_{\tilde\Pi_{\mathrm{id},-}}(\vec\Pi_{\mathrm{nil},-})=0,\quad
+L_{\tilde\Pi_{\mathrm{id},-}}(\vec\Pi_{\mathrm{nil},+})=\vec\Pi_{\mathrm{nil},+},\quad
+L_{\tilde\Pi_{\mathrm{id},-}}(\tilde\Pi_{\mathrm{id},-})=\tilde\Pi_{\mathrm{id},-}.
 $$
-The four lists are the Peirce identities read as left multiplication: $\tilde\Pi_+$ keeps the two vectors of $S_+$ and kills $S_-$, $\tilde\Pi_-$ does the reverse, and the two nilpotents exchange the two spinor spaces in the two directions. In particular
+The four lists are the Peirce identities read as left multiplication: $\tilde\Pi_{\mathrm{id},+}$ keeps the two vectors of $S_+$ and kills $S_-$, $\tilde\Pi_{\mathrm{id},-}$ does the reverse, and the two nilpotents exchange the two spinor spaces in the two directions. In particular
 $$
-L_{\tilde\Pi_+}+L_{\tilde\Pi_-}=\mathrm{id},
+L_{\tilde\Pi_{\mathrm{id},+}}+L_{\tilde\Pi_{\mathrm{id},-}}=\mathrm{id},
 \qquad
-L_{\vec\Upsilon_+}L_{\vec\Upsilon_-}=L_{\tilde\Pi_-},
+L_{\vec\Pi_{\mathrm{nil},+}}L_{\vec\Pi_{\mathrm{nil},-}}=L_{\tilde\Pi_{\mathrm{id},-}},
 \qquad
-L_{\vec\Upsilon_-}L_{\vec\Upsilon_+}=L_{\tilde\Pi_+},
+L_{\vec\Pi_{\mathrm{nil},-}}L_{\vec\Pi_{\mathrm{nil},+}}=L_{\tilde\Pi_{\mathrm{id},+}},
 \qquad
-L_{\vec\Upsilon_\pm}^2=0,
+L_{\vec\Pi_{\mathrm{nil},\pm}}^2=0,
 $$
-which are $\tilde\Pi_++\tilde\Pi_-=e_t$, $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$, $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ and $\vec\Upsilon_\pm^2=0$.
+which are $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$, $\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-}$, $\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+}$ and $\vec\Pi_{\mathrm{nil},\pm}^2=0$.
 
 For $\tilde Q$ itself the left action is diagonal,
 $$
-L_{\tilde Q}(\tilde\Pi_+)=\lambda_+\tilde\Pi_+,\quad
-L_{\tilde Q}(\vec\Upsilon_-)=\lambda_+\vec\Upsilon_-,\quad
-L_{\tilde Q}(\vec\Upsilon_+)=\lambda_-\vec\Upsilon_+,\quad
-L_{\tilde Q}(\tilde\Pi_-)=\lambda_-\tilde\Pi_-,
+L_{\tilde Q}(\tilde\Pi_{\mathrm{id},+})=\lambda_+\tilde\Pi_{\mathrm{id},+},\quad
+L_{\tilde Q}(\vec\Pi_{\mathrm{nil},-})=\lambda_+\vec\Pi_{\mathrm{nil},-},\quad
+L_{\tilde Q}(\vec\Pi_{\mathrm{nil},+})=\lambda_-\vec\Pi_{\mathrm{nil},+},\quad
+L_{\tilde Q}(\tilde\Pi_{\mathrm{id},-})=\lambda_-\tilde\Pi_{\mathrm{id},-},
 $$
 with the values $\lambda_+,\lambda_+,\lambda_-,\lambda_-$ on the four basis vectors in the order $\mathcal{B}$. This is the eigenbasis property of the sector: each basis vector is an eigenvector of $L_{\tilde Q}$.
 
 **The right action.** For $R_{\tilde Q_2}(X)=X\tilde Q_2$ the same table read column by column gives
 $$
-R_{\tilde\Pi_+}(\tilde\Pi_+)=\tilde\Pi_+,\quad
-R_{\tilde\Pi_+}(\vec\Upsilon_-)=0,\quad
-R_{\tilde\Pi_+}(\vec\Upsilon_+)=\vec\Upsilon_+,\quad
-R_{\tilde\Pi_+}(\tilde\Pi_-)=0,
+R_{\tilde\Pi_{\mathrm{id},+}}(\tilde\Pi_{\mathrm{id},+})=\tilde\Pi_{\mathrm{id},+},\quad
+R_{\tilde\Pi_{\mathrm{id},+}}(\vec\Pi_{\mathrm{nil},-})=0,\quad
+R_{\tilde\Pi_{\mathrm{id},+}}(\vec\Pi_{\mathrm{nil},+})=\vec\Pi_{\mathrm{nil},+},\quad
+R_{\tilde\Pi_{\mathrm{id},+}}(\tilde\Pi_{\mathrm{id},-})=0,
 $$
 $$
-R_{\vec\Upsilon_-}(\tilde\Pi_+)=\vec\Upsilon_-,\quad
-R_{\vec\Upsilon_-}(\vec\Upsilon_-)=0,\quad
-R_{\vec\Upsilon_-}(\vec\Upsilon_+)=\tilde\Pi_-,\quad
-R_{\vec\Upsilon_-}(\tilde\Pi_-)=0,
+R_{\vec\Pi_{\mathrm{nil},-}}(\tilde\Pi_{\mathrm{id},+})=\vec\Pi_{\mathrm{nil},-},\quad
+R_{\vec\Pi_{\mathrm{nil},-}}(\vec\Pi_{\mathrm{nil},-})=0,\quad
+R_{\vec\Pi_{\mathrm{nil},-}}(\vec\Pi_{\mathrm{nil},+})=\tilde\Pi_{\mathrm{id},-},\quad
+R_{\vec\Pi_{\mathrm{nil},-}}(\tilde\Pi_{\mathrm{id},-})=0,
 $$
 $$
-R_{\vec\Upsilon_+}(\tilde\Pi_+)=0,\quad
-R_{\vec\Upsilon_+}(\vec\Upsilon_-)=\tilde\Pi_+,\quad
-R_{\vec\Upsilon_+}(\vec\Upsilon_+)=0,\quad
-R_{\vec\Upsilon_+}(\tilde\Pi_-)=\vec\Upsilon_+,
+R_{\vec\Pi_{\mathrm{nil},+}}(\tilde\Pi_{\mathrm{id},+})=0,\quad
+R_{\vec\Pi_{\mathrm{nil},+}}(\vec\Pi_{\mathrm{nil},-})=\tilde\Pi_{\mathrm{id},+},\quad
+R_{\vec\Pi_{\mathrm{nil},+}}(\vec\Pi_{\mathrm{nil},+})=0,\quad
+R_{\vec\Pi_{\mathrm{nil},+}}(\tilde\Pi_{\mathrm{id},-})=\vec\Pi_{\mathrm{nil},+},
 $$
 $$
-R_{\tilde\Pi_-}(\tilde\Pi_+)=0,\quad
-R_{\tilde\Pi_-}(\vec\Upsilon_-)=\vec\Upsilon_-,\quad
-R_{\tilde\Pi_-}(\vec\Upsilon_+)=0,\quad
-R_{\tilde\Pi_-}(\tilde\Pi_-)=\tilde\Pi_-,
+R_{\tilde\Pi_{\mathrm{id},-}}(\tilde\Pi_{\mathrm{id},+})=0,\quad
+R_{\tilde\Pi_{\mathrm{id},-}}(\vec\Pi_{\mathrm{nil},-})=\vec\Pi_{\mathrm{nil},-},\quad
+R_{\tilde\Pi_{\mathrm{id},-}}(\vec\Pi_{\mathrm{nil},+})=0,\quad
+R_{\tilde\Pi_{\mathrm{id},-}}(\tilde\Pi_{\mathrm{id},-})=\tilde\Pi_{\mathrm{id},-},
 $$
 and for $\tilde Q$
 $$
-R_{\tilde Q}(\tilde\Pi_+)=\lambda_+\tilde\Pi_+,\quad
-R_{\tilde Q}(\vec\Upsilon_-)=\lambda_-\vec\Upsilon_-,\quad
-R_{\tilde Q}(\vec\Upsilon_+)=\lambda_+\vec\Upsilon_+,\quad
-R_{\tilde Q}(\tilde\Pi_-)=\lambda_-\tilde\Pi_-,
+R_{\tilde Q}(\tilde\Pi_{\mathrm{id},+})=\lambda_+\tilde\Pi_{\mathrm{id},+},\quad
+R_{\tilde Q}(\vec\Pi_{\mathrm{nil},-})=\lambda_-\vec\Pi_{\mathrm{nil},-},\quad
+R_{\tilde Q}(\vec\Pi_{\mathrm{nil},+})=\lambda_+\vec\Pi_{\mathrm{nil},+},\quad
+R_{\tilde Q}(\tilde\Pi_{\mathrm{id},-})=\lambda_-\tilde\Pi_{\mathrm{id},-},
 $$
 with the values $\lambda_+,\lambda_-,\lambda_+,\lambda_-$. The left and right actions do not coincide: $R_{\tilde Q}$ and $L_{\tilde Q}$ agree on an element exactly when the element is central, that is, on $\mathbb{C}e_t$.
 
-**A general element.** For $\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-$ the left action on the basis is
+**A general element.** For $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-}$ the left action on the basis is
 $$
-L_{\tilde Q_2}(\tilde\Pi_+)=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,\qquad
-L_{\tilde Q_2}(\vec\Upsilon_-)=Q_{2,11}\vec\Upsilon_-+Q_{2,21}\tilde\Pi_-,
+L_{\tilde Q_2}(\tilde\Pi_{\mathrm{id},+})=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+},\qquad
+L_{\tilde Q_2}(\vec\Pi_{\mathrm{nil},-})=Q_{2,11}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\tilde\Pi_{\mathrm{id},-},
 $$
 $$
-L_{\tilde Q_2}(\vec\Upsilon_+)=Q_{2,12}\tilde\Pi_++Q_{2,22}\vec\Upsilon_+,\qquad
-L_{\tilde Q_2}(\tilde\Pi_-)=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,
+L_{\tilde Q_2}(\vec\Pi_{\mathrm{nil},+})=Q_{2,12}\tilde\Pi_{\mathrm{id},++Q}_{2,22}\vec\Pi_{\mathrm{nil},+},\qquad
+L_{\tilde Q_2}(\tilde\Pi_{\mathrm{id},-})=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-},
 $$
 and the right action is
 $$
-R_{\tilde Q_2}(\tilde\Pi_+)=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-,\qquad
-R_{\tilde Q_2}(\vec\Upsilon_-)=Q_{2,21}\tilde\Pi_++Q_{2,22}\vec\Upsilon_-,
+R_{\tilde Q_2}(\tilde\Pi_{\mathrm{id},+})=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-},\qquad
+R_{\tilde Q_2}(\vec\Pi_{\mathrm{nil},-})=Q_{2,21}\tilde\Pi_{\mathrm{id},++Q}_{2,22}\vec\Pi_{\mathrm{nil},-},
 $$
 $$
-R_{\tilde Q_2}(\vec\Upsilon_+)=Q_{2,11}\vec\Upsilon_++Q_{2,12}\tilde\Pi_-,\qquad
-R_{\tilde Q_2}(\tilde\Pi_-)=Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-.
+R_{\tilde Q_2}(\vec\Pi_{\mathrm{nil},+})=Q_{2,11}\vec\Pi_{\mathrm{nil},++Q}_{2,12}\tilde\Pi_{\mathrm{id},-},\qquad
+R_{\tilde Q_2}(\tilde\Pi_{\mathrm{id},-})=Q_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-}.
 $$
-The two actions are diagonal exactly on the diagonal subalgebra $\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-$, of which $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ is the member with the prescribed eigenvalues. This is the precise sense in which the Peirce coordinates of $\tilde Q_2=\tilde Q$ are the eigenvalues: $Q_{2,12}=Q_{2,21}=0$ is the condition that both actions be diagonal, and $\tilde Q$ is the member with $Q_{2,11}=\lambda_+$ and $Q_{2,22}=\lambda_-$.
+The two actions are diagonal exactly on the diagonal subalgebra $\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-}$, of which $\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$ is the member with the prescribed eigenvalues. This is the precise sense in which the Peirce coordinates of $\tilde Q_2=\tilde Q$ are the eigenvalues: $Q_{2,12}=Q_{2,21}=0$ is the condition that both actions be diagonal, and $\tilde Q$ is the member with $Q_{2,11}=\lambda_+$ and $Q_{2,22}=\lambda_-$.
 
 **The four elements of the fixed basis.** The coordinates of $e_t,\vec e_x,\vec e_y,\vec e_z$ in $\mathcal{B}$ are read from the expansions. In the standard case, $Q_x=Q_y=0$ with the standard root $i\vec e_z$, that is $B=-Q_z$ and $\lambda_\pm=Q_t\mp iQ_z$, the nilpotents are
 $$
-\vec\Upsilon_-=\frac{i\vec e_x-\vec e_y}{2},\qquad
-\vec\Upsilon_+=\frac{i\vec e_x+\vec e_y}{2},
+\vec\Pi_{\mathrm{nil},-}=\frac{i\vec e_x-\vec e_y}{2},\qquad
+\vec\Pi_{\mathrm{nil},+}=\frac{i\vec e_x+\vec e_y}{2},
 $$
 and
 $$
-e_t=\tilde\Pi_++\tilde\Pi_-,\qquad
-\vec e_x=-i(\vec\Upsilon_-+\vec\Upsilon_+),\qquad
-\vec e_y=\vec\Upsilon_+-\vec\Upsilon_-,\qquad
-\vec e_z=-i\tilde\Pi_++i\tilde\Pi_-.
+e_t=\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-},\qquad
+\vec e_x=-i(\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+}),\qquad
+\vec e_y=\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-},\qquad
+\vec e_z=-i\tilde\Pi_{\mathrm{id},++i}\tilde\Pi_{\mathrm{id},-}.
 $$
 Their coordinates are
 $$
@@ -538,11 +538,11 @@ and the left action of the four on the basis is read from the table. In particul
 
 **A general pure element.** Off the axis the coordinates of $\vec e_x,\vec e_y,\vec e_z$ depend on $\vec Q$. For any pure $\vec X$,
 $$
-\vec X=i\,\frac{\vec X\cdot\vec Q}{B}\,(\tilde\Pi_+-\tilde\Pi_-)+X_{12}\vec\Upsilon_-+X_{21}\vec\Upsilon_+,
+\vec X=i\,\frac{\vec X\cdot\vec Q}{B}\,(\tilde\Pi_{\mathrm{id},+-}\tilde\Pi_{\mathrm{id},-})+X_{12}\vec\Pi_{\mathrm{nil},-+X}_{21}\vec\Pi_{\mathrm{nil},+},
 \qquad
-X_{12}\tilde\Pi_-=\vec\Upsilon_+\vec X\tilde\Pi_-,
+X_{12}\tilde\Pi_{\mathrm{id},-}=\vec\Pi_{\mathrm{nil},+}\vec X\tilde\Pi_{\mathrm{id},-},
 \qquad
-X_{21}\tilde\Pi_+=\vec\Upsilon_-\vec X\tilde\Pi_+,
+X_{21}\tilde\Pi_{\mathrm{id},+}=\vec\Pi_{\mathrm{nil},-}\vec X\tilde\Pi_{\mathrm{id},+},
 $$
 so its coordinates in $\mathcal{B}$ are
 $$
@@ -552,7 +552,7 @@ The standard case is $\vec Q=Q_z\vec e_z$, $B=-Q_z$.
 
 ### The Eigenbasis of Left Multiplication
 
-**A basis of $\mathbb{B}$ is an eigenbasis of $L_{\tilde Q}$ if each of its vectors $b$ satisfies $\tilde Qb=\mu b$ for some scalar $\mu$. The basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is one. It is the normalised Peirce representative: the two idempotents are the spectral idempotents and the two nilpotents are the corner generators whose scale is fixed by the normalisation. As an arbitrary eigenbasis it is not unique, because each eigenspace is two-dimensional; as this representative it is unique with the normalisation fixed.**
+**A basis of $\mathbb{B}$ is an eigenbasis of $L_{\tilde Q}$ if each of its vectors $b$ satisfies $\tilde Qb=\mu b$ for some scalar $\mu$. The basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$ is one. It is the normalised Peirce representative: the two idempotents are the spectral idempotents and the two nilpotents are the corner generators whose scale is fixed by the normalisation. As an arbitrary eigenbasis it is not unique, because each eigenspace is two-dimensional; as this representative it is unique with the normalisation fixed.**
 
 Write
 $$
@@ -560,28 +560,28 @@ L_{\tilde Q}(\tilde Q_2)=\tilde Q\tilde Q_2,\qquad R_{\tilde Q}(\tilde Q_2)=\til
 $$
 An eigenvector of $L_{\tilde Q}$ with eigenvalue $\mu$ is a nonzero element $\tilde Q_2$ with $\tilde Q\tilde Q_2=\mu\tilde Q_2$. The diagonal property of the eigenbasis reads
 $$
-\tilde Q\tilde\Pi_+=\lambda_+\tilde\Pi_+,\qquad
-\tilde Q\vec\Upsilon_-=\lambda_+\vec\Upsilon_-,\qquad
-\tilde Q\vec\Upsilon_+=\lambda_-\vec\Upsilon_+,\qquad
-\tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_-,
+\tilde Q\tilde\Pi_{\mathrm{id},+}=\lambda_+\tilde\Pi_{\mathrm{id},+},\qquad
+\tilde Q\vec\Pi_{\mathrm{nil},-}=\lambda_+\vec\Pi_{\mathrm{nil},-},\qquad
+\tilde Q\vec\Pi_{\mathrm{nil},+}=\lambda_-\vec\Pi_{\mathrm{nil},+},\qquad
+\tilde Q\tilde\Pi_{\mathrm{id},-}=\lambda_-\tilde\Pi_{\mathrm{id},-},
 $$
 so the basis is an eigenbasis; the left action in it is diagonal with the values $\lambda_+,\lambda_+,\lambda_-,\lambda_-$.
 
 **The two eigenspaces.** The eigenspaces are two-dimensional:
 $$
-\ker(L_{\tilde Q}-\lambda_+)=\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-,
+\ker(L_{\tilde Q}-\lambda_+)=\tilde\Pi_{\mathrm{id},+}\mathbb{B}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},-},
 \qquad
-\ker(L_{\tilde Q}-\lambda_-)=\tilde\Pi_-\mathbb{B}=\mathbb{C}\vec\Upsilon_+\oplus\mathbb{C}\tilde\Pi_-.
+\ker(L_{\tilde Q}-\lambda_-)=\tilde\Pi_{\mathrm{id},-}\mathbb{B}=\mathbb{C}\vec\Pi_{\mathrm{nil},+}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-}.
 $$
-These are the two minimal **right** ideals. The basis $(\tilde\Pi_+,\vec\Upsilon_-)$ is a basis of the first, $(\vec\Upsilon_+,\tilde\Pi_-)$ a basis of the second.
+These are the two minimal **right** ideals. The basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-})$ is a basis of the first, $(\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$ a basis of the second.
 
-**Uniqueness.** An arbitrary eigenbasis of $L_{\tilde Q}$ is any pair of bases of these two eigenspaces, so it is not unique. The Peirce basis is the representative singled out by the spectral data: it orders each eigenspace as $(\tilde\Pi_+,\vec\Upsilon_-)$ and $(\vec\Upsilon_+,\tilde\Pi_-)$, the diagonal idempotent first, and the pair $(\vec\Upsilon_+,\vec\Upsilon_-)$ is determined up to the reciprocal rescaling before the normalisation, and the normalisation fixes the scale. This is the precise sense in which $\mathcal{B}(\tilde Q)$ is the eigenbasis of $\tilde Q$: it is the unique normalised Peirce basis, not the unique basis of eigenvectors.
+**Uniqueness.** An arbitrary eigenbasis of $L_{\tilde Q}$ is any pair of bases of these two eigenspaces, so it is not unique. The Peirce basis is the representative singled out by the spectral data: it orders each eigenspace as $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-})$ and $(\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$, the diagonal idempotent first, and the pair $(\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-})$ is determined up to the reciprocal rescaling before the normalisation, and the normalisation fixes the scale. This is the precise sense in which $\mathcal{B}(\tilde Q)$ is the eigenbasis of $\tilde Q$: it is the unique normalised Peirce basis, not the unique basis of eigenvectors.
 
 **The left ideals are eigenspaces of right multiplication.** The two minimal left ideals
 $$
-S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,
+S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},+},
 \qquad
-S_-=\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-
+S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}=\mathbb{C}\vec\Pi_{\mathrm{nil},-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-}
 $$
 are not eigenspaces of $L_{\tilde Q}$: each contains one eigenvector for $\lambda_+$ and one for $\lambda_-$. They are the eigenspaces of $R_{\tilde Q}$,
 $$
@@ -595,26 +595,26 @@ The two readings are compared in the table.
 
 | Operator | Eigenvalue | Eigenspace | Dimension over $\mathbb{C}$ | Basis |
 |---|---|---|---|---|
-| $L_{\tilde Q}$ | $\lambda_+$ | $\tilde\Pi_+\mathbb{B}$ | $2$ | $(\tilde\Pi_+,\vec\Upsilon_-)$ |
-| $L_{\tilde Q}$ | $\lambda_-$ | $\tilde\Pi_-\mathbb{B}$ | $2$ | $(\vec\Upsilon_+,\tilde\Pi_-)$ |
-| $R_{\tilde Q}$ | $\lambda_+$ | $\mathbb{B}\tilde\Pi_+=S_+$ | $2$ | $(\tilde\Pi_+,\vec\Upsilon_+)$ |
-| $R_{\tilde Q}$ | $\lambda_-$ | $\mathbb{B}\tilde\Pi_-=S_-$ | $2$ | $(\vec\Upsilon_-,\tilde\Pi_-)$ |
+| $L_{\tilde Q}$ | $\lambda_+$ | $\tilde\Pi_{\mathrm{id},+}\mathbb{B}$ | $2$ | $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-})$ |
+| $L_{\tilde Q}$ | $\lambda_-$ | $\tilde\Pi_{\mathrm{id},-}\mathbb{B}$ | $2$ | $(\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$ |
+| $R_{\tilde Q}$ | $\lambda_+$ | $\mathbb{B}\tilde\Pi_{\mathrm{id},+}=S_+$ | $2$ | $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ |
+| $R_{\tilde Q}$ | $\lambda_-$ | $\mathbb{B}\tilde\Pi_{\mathrm{id},-}=S_-$ | $2$ | $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ |
 
-**Restriction to one left ideal.** On $S_+$ the operator $L_{\tilde Q}$ has the two distinct eigenvalues $\lambda_+,\lambda_-$, with eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$; on $S_-$ it has the same two eigenvalues, with eigenbasis $(\vec\Upsilon_-,\tilde\Pi_-)$. On each, the eigenvalues are distinct, so the eigenbasis is unique up to two independent scales.
+**Restriction to one left ideal.** On $S_+$ the operator $L_{\tilde Q}$ has the two distinct eigenvalues $\lambda_+,\lambda_-$, with eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$; on $S_-$ it has the same two eigenvalues, with eigenbasis $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$. On each, the eigenvalues are distinct, so the eigenbasis is unique up to two independent scales.
 
-**The eigenprojection and the projector.** The element $\tilde\Pi_+$ is the eigenprojection of the eigenvalue decomposition. The operator $L_{\tilde\Pi_+}$ is the spectral projector onto the $\lambda_+$-eigenspace of $L_{\tilde Q}$: it sends $\tilde Q_2$ to $\tilde\Pi_+\tilde Q_2$, the first Peirce component, and its image is the two-dimensional right ideal $\tilde\Pi_+\mathbb{B}$. The two objects must not be confused: $L_{\tilde\Pi_+}$ is an operator on the four-dimensional algebra, while the spectral projector of the multiplication map is defined on the algebra itself.
+**The eigenprojection and the projector.** The element $\tilde\Pi_{\mathrm{id},+}$ is the eigenprojection of the eigenvalue decomposition. The operator $L_{\tilde\Pi_{\mathrm{id},+}}$ is the spectral projector onto the $\lambda_+$-eigenspace of $L_{\tilde Q}$: it sends $\tilde Q_2$ to $\tilde\Pi_{\mathrm{id},+}\tilde Q_2$, the first Peirce component, and its image is the two-dimensional right ideal $\tilde\Pi_{\mathrm{id},+}\mathbb{B}$. The two objects must not be confused: $L_{\tilde\Pi_{\mathrm{id},+}}$ is an operator on the four-dimensional algebra, while the spectral projector of the multiplication map is defined on the algebra itself.
 
 ## Spinors and the Peirce Index
 
-**A spinor space of $\mathbb{B}$ is a minimal nonzero left ideal. The two spinor spaces are $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$, each a complex plane, and the algebra is their direct sum.** This is the specialisation of §*Spinors and the Peirce Index* of *The Eigenbasis of a Spectrally Regular Biquaternion*.
+**A spinor space of $\mathbb{B}$ is a minimal nonzero left ideal. The two spinor spaces are $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ and $S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}$, each a complex plane, and the algebra is their direct sum.** This is the specialisation of §*Spinors and the Peirce Index* of *The Eigenbasis of a Spectrally Regular Biquaternion*.
 
 ### The Two Spinor Spaces
 
 The two spaces are
 $$
-S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,
+S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},+},
 \qquad
-S_-=\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-,
+S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}=\mathbb{C}\vec\Pi_{\mathrm{nil},-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-},
 $$
 each of complex dimension two, and
 $$
@@ -622,26 +622,26 @@ $$
 $$
 A **spinor of the first Peirce copy** is an element of $S_+$; a **spinor of the second Peirce copy** is an element of $S_-$.
 
-**The module structure.** Left multiplication makes $S_+$ and $S_-$ left $\mathbb{B}$-modules, and each is a complex plane: a spinor has two complex coordinates. The two are isomorphic as left modules: right multiplication by $\vec\Upsilon_-$ maps $S_+$ onto $S_-$, with inverse right multiplication by $\vec\Upsilon_+$, because
+**The module structure.** Left multiplication makes $S_+$ and $S_-$ left $\mathbb{B}$-modules, and each is a complex plane: a spinor has two complex coordinates. The two are isomorphic as left modules: right multiplication by $\vec\Pi_{\mathrm{nil},-}$ maps $S_+$ onto $S_-$, with inverse right multiplication by $\vec\Pi_{\mathrm{nil},+}$, because
 $$
-\tilde\Pi_+\vec\Upsilon_-=\vec\Upsilon_-,\qquad
-\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,
+\tilde\Pi_{\mathrm{id},+}\vec\Pi_{\mathrm{nil},-}=\vec\Pi_{\mathrm{nil},-},\qquad
+\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+},
 \qquad
-\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,
+\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-},
 \qquad
-\tilde\Pi_-\vec\Upsilon_+=\vec\Upsilon_+.
+\tilde\Pi_{\mathrm{id},-}\vec\Pi_{\mathrm{nil},+}=\vec\Pi_{\mathrm{nil},+}.
 $$
 They are nevertheless distinct subspaces of $\mathbb{B}$, and the direct sum is the whole algebra.
 
 ### The Left Action and the Definition of the Peirce Index
 
-In the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$ of $S_+$, a spinor of the first Peirce copy is
+In the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ of $S_+$, a spinor of the first Peirce copy is
 $$
-\zeta_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,\qquad Q_{2,11},Q_{2,21}\in\mathbb{C},
+\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+},\qquad Q_{2,11},Q_{2,21}\in\mathbb{C},
 $$
 with the coordinate pair $(Q_{2,11},Q_{2,21})$, the first column of the matrix model of §*Matrices and the Column Correspondence*. Under left multiplication by $\tilde Q$,
 $$
-\tilde Q\zeta_+=\lambda_+Q_{2,11}\tilde\Pi_++\lambda_-Q_{2,21}\vec\Upsilon_+,
+\tilde Q\zeta_+=\lambda_+Q_{2,11}\tilde\Pi_{\mathrm{id},++}\lambda_-Q_{2,21}\vec\Pi_{\mathrm{nil},+},
 $$
 so the coordinate pair is sent to
 $$
@@ -649,53 +649,53 @@ $$
 $$
 A spinor of the second Peirce copy is an element of $S_-$,
 $$
-\zeta_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,\qquad Q_{2,12},Q_{2,22}\in\mathbb{C}.
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-},\qquad Q_{2,12},Q_{2,22}\in\mathbb{C}.
 $$
-The order of the coefficients follows the eigenbasis $(\vec\Upsilon_-,\tilde\Pi_-)$ of $S_-$, in which the eigenvalues are $(\lambda_+,\lambda_-)$, so the coordinate pair is $(Q_{2,12},Q_{2,22})$, the second column of the matrix model of §*Matrices and the Column Correspondence*, and
+The order of the coefficients follows the eigenbasis $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ of $S_-$, in which the eigenvalues are $(\lambda_+,\lambda_-)$, so the coordinate pair is $(Q_{2,12},Q_{2,22})$, the second column of the matrix model of §*Matrices and the Column Correspondence*, and
 $$
-\tilde Q\zeta_-=\lambda_+Q_{2,12}\vec\Upsilon_-+\lambda_-Q_{2,22}\tilde\Pi_-
+\tilde Q\zeta_-=\lambda_+Q_{2,12}\vec\Pi_{\mathrm{nil},-+}\lambda_-Q_{2,22}\tilde\Pi_{\mathrm{id},-}
 \longmapsto
 (\lambda_+Q_{2,12},\;\lambda_-Q_{2,22}).
 $$
 **Left versus right multiplication.** The diagonal action displayed above is the action of $L_{\tilde Q}$ on each spinor space, and it carries both eigenvalues. The space $S_+$ is not an eigenspace of $L_{\tilde Q}$; it is the $\lambda_+$-eigenspace of the right multiplication $R_{\tilde Q}$, and $S_-$ is the $\lambda_-$-eigenspace. The distinction is the side on which $\tilde Q$ multiplies: $R_{\tilde Q}$ is scalar on each $S_\pm$, while $L_{\tilde Q}$ carries the two eigenvalues on each. This is the content of §*The Eigenbasis of Left Multiplication*.
 
-The basis $(\vec\Upsilon_-,\tilde\Pi_-)$ is part of the definition: writing the two vectors in the other order would exchange the two diagonal values.
+The basis $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ is part of the definition: writing the two vectors in the other order would exchange the two diagonal values.
 
 The two spinor spaces and their coordinates are collected in the table.
 
 | Spinor space | Eigenbasis | Spinor | Coordinates |
 |---|---|---|---|
-| $S_+=\mathbb{B}\tilde\Pi_+$ | $(\tilde\Pi_+,\vec\Upsilon_+)$ | $Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+$ | $(Q_{2,11},Q_{2,21})$, column $1$ |
-| $S_-=\mathbb{B}\tilde\Pi_-$ | $(\vec\Upsilon_-,\tilde\Pi_-)$ | $Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-$ | $(Q_{2,12},Q_{2,22})$, column $2$ |
+| $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ | $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ | $Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+}$ | $(Q_{2,11},Q_{2,21})$, column $1$ |
+| $S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}$ | $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ | $Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-}$ | $(Q_{2,12},Q_{2,22})$, column $2$ |
 
 **A general element is a pair of spinors.** Every $\tilde Q_2\in\mathbb{B}$ splits as
 $$
-\tilde Q_2=\tilde Q_2\tilde\Pi_++\tilde Q_2\tilde\Pi_-,
+\tilde Q_2=\tilde Q_2\tilde\Pi_{\mathrm{id},++}\tilde Q_2\tilde\Pi_{\mathrm{id},-},
 $$
 and the two summands are a spinor of the first Peirce copy and a spinor of the second Peirce copy. In the eigenbasis coordinates they are
 $$
 \tilde Q_2\longmapsto(Q_{2,11},Q_{2,12},Q_{2,21},Q_{2,22}),
 \qquad
-\tilde Q_2\tilde\Pi_+\longmapsto(Q_{2,11},Q_{2,21}),
+\tilde Q_2\tilde\Pi_{\mathrm{id},+}\longmapsto(Q_{2,11},Q_{2,21}),
 \qquad
-\tilde Q_2\tilde\Pi_-\longmapsto(Q_{2,12},Q_{2,22}).
+\tilde Q_2\tilde\Pi_{\mathrm{id},-}\longmapsto(Q_{2,12},Q_{2,22}).
 $$
 A general element is therefore not a spinor: it has one spinor component of each Peirce copy.
 
-**Complex dimensions.** Each spinor has two complex components, hence four real parameters. The two spinor spaces have complex dimension two and real dimension four each, and their direct sum has the complex dimension four and the real dimension eight of $\mathbb{B}$. The label "first" versus "second" is fixed by the convention $\tilde\Pi_+=(e_t+\vec{Ζ})/2$; replacing the square root by its negative, or exchanging the two labels, exchanges the two Peirce copies.
+**Complex dimensions.** Each spinor has two complex components, hence four real parameters. The two spinor spaces have complex dimension two and real dimension four each, and their direct sum has the complex dimension four and the real dimension eight of $\mathbb{B}$. The label "first" versus "second" is fixed by the convention $\tilde\Pi_{\mathrm{id},+}=(e_t+\vec{Ζ})/2$; replacing the square root by its negative, or exchanging the two labels, exchanges the two Peirce copies.
 
 ### Matrices and the Column Correspondence
 
 Fix the assignment
 $$
-\tilde\Pi_+\mapsto E_{11},\qquad
-\vec\Upsilon_-\mapsto E_{12},\qquad
-\vec\Upsilon_+\mapsto E_{21},\qquad
-\tilde\Pi_-\mapsto E_{22},
+\tilde\Pi_{\mathrm{id},+}\mapsto E_{11},\qquad
+\vec\Pi_{\mathrm{nil},-}\mapsto E_{12},\qquad
+\vec\Pi_{\mathrm{nil},+}\mapsto E_{21},\qquad
+\tilde\Pi_{\mathrm{id},-}\mapsto E_{22},
 $$
 where $E_{ij}$ is the matrix unit with $1$ in row $i$ and column $j$. Then every $\tilde Q_2\in\mathbb{B}$ has the unique expansion
 $$
-\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-,
+\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-},
 \qquad Q_{2,ij}\in\mathbb{C},
 $$
 and is represented by
@@ -709,15 +709,15 @@ $$
 
 The two columns are the two spinor spaces:
 $$
-S_+=\mathbb{B}\tilde\Pi_+\longleftrightarrow\operatorname{span}\{E_{11},E_{21}\}=\text{column }1,
+S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}\longleftrightarrow\operatorname{span}\{E_{11},E_{21}\}=\text{column }1,
 \qquad
-S_-=\mathbb{B}\tilde\Pi_-\longleftrightarrow\operatorname{span}\{E_{12},E_{22}\}=\text{column }2.
+S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\operatorname{span}\{E_{12},E_{22}\}=\text{column }2.
 $$
-The first column of $\mathsf M_2^{Q}(\tilde Q_2)$ is the coordinate vector of $\tilde Q_2\tilde\Pi_+$, the second is the coordinate vector of $\tilde Q_2\tilde\Pi_-$.
+The first column of $\mathsf M_2^{Q}(\tilde Q_2)$ is the coordinate vector of $\tilde Q_2\tilde\Pi_{\mathrm{id},+}$, the second is the coordinate vector of $\tilde Q_2\tilde\Pi_{\mathrm{id},-}$.
 
 A spinor of the first Peirce copy
 $$
-\zeta_+=\alpha\tilde\Pi_++\beta\vec\Upsilon_+
+\zeta_+=\alpha\tilde\Pi_{\mathrm{id},++}\beta\vec\Pi_{\mathrm{nil},+}
 \longleftrightarrow
 \begin{pmatrix}\alpha\\\beta\end{pmatrix}
 $$
@@ -727,7 +727,7 @@ $$
 $$
 whose first column is $\zeta_+$ and whose second column is zero. A spinor of the second Peirce copy
 $$
-\zeta_-=\gamma\vec\Upsilon_-+\delta\tilde\Pi_-
+\zeta_-=\gamma\vec\Pi_{\mathrm{nil},-+}\delta\tilde\Pi_{\mathrm{id},-}
 \longleftrightarrow
 \begin{pmatrix}\gamma\\\delta\end{pmatrix}
 $$
@@ -735,7 +735,7 @@ is represented by the matrix
 $$
 \begin{pmatrix}0&\gamma\\0&\delta\end{pmatrix},
 $$
-whose first column is zero and whose second column is $\zeta_-$. The order $(\vec\Upsilon_-,\tilde\Pi_-)$ is the eigenbasis of $S_-$ used above; it is the order in which the diagonal values are $(\lambda_+,\lambda_-)$.
+whose first column is zero and whose second column is $\zeta_-$. The order $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ is the eigenbasis of $S_-$ used above; it is the order in which the diagonal values are $(\lambda_+,\lambda_-)$.
 
 Multiplication by $\tilde Q$ acts on the first column by $\mathsf M_2^{Q}(\tilde Q)$,
 $$
@@ -761,89 +761,89 @@ The eigenbasis data depend on $\tilde Q$ through its root. The comparison is col
 
 | Object | Depends on $\tilde Q$? |
 |---|---|
-| Root $\vec{Ζ}$ and idempotents $\tilde\Pi_\pm$ | yes |
+| Root $\vec{Ζ}$ and idempotents $\tilde\Pi_{\mathrm{id},\pm}$ | yes |
 | Corner lines $\mathbb{B}_{+-},\mathbb{B}_{-+}$ as subspaces | yes |
-| Left ideals $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$ | yes |
-| Pair $(\vec\Upsilon_+,\vec\Upsilon_-)$ | yes, through the root; the residual scale is removed by the normalisation |
+| Left ideals $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ and $S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}$ | yes |
+| Pair $(\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-})$ | yes, through the root; the residual scale is removed by the normalisation |
 | Diagonal values $(\lambda_+,\lambda_-)$ of $L_{\tilde Q}$ | yes |
 | Peirce coordinates of a general element $\tilde Q_2$ | yes |
 
-The eigenbasis is not the standard Peirce basis attached to the fixed root $i\vec e_z$. The two coincide, up to the reciprocal rescaling, exactly when $\vec Q$ is parallel to $\vec e_z$, that is, when $Q_x=Q_y=0$. In that case $\vec{Ζ}=\pm i\vec e_z$, the pair is the standard pair up to the exchange of its two members, and the nilpotents are $\vec\Upsilon_x,\vec\Upsilon_y$, in one order or the other, up to the reciprocal rescaling.
+The eigenbasis is not the standard Peirce basis attached to the fixed root $i\vec e_z$. The two coincide, up to the reciprocal rescaling, exactly when $\vec Q$ is parallel to $\vec e_z$, that is, when $Q_x=Q_y=0$. In that case $\vec{Ζ}=\pm i\vec e_z$, the pair is the standard pair up to the exchange of its two members, and the nilpotents are $\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}$, in one order or the other, up to the reciprocal rescaling.
 
 ## The Eigenbasis Data
 
 Given $\tilde Q$ with $B^2\neq0$, the following data are attached to $\tilde Q$:
 $$
 \vec{Ζ}=-\frac{i\vec Q}{B},\qquad
-\tilde\Pi_\pm=\frac{e_t\pm\vec{Ζ}}{2},\qquad
+\tilde\Pi_{\mathrm{id},\pm}=\frac{e_t\pm\vec{Ζ}}{2},\qquad
 \lambda_\pm=Q_t\pm \beta,
 $$
 $$
-\vec\Upsilon_+\in\mathbb{B}_{-+},\qquad
-\vec\Upsilon_-\in\mathbb{B}_{+-},\qquad
-\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\qquad
-\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,\qquad
-\vec\Upsilon_\pm^2=0,
+\vec\Pi_{\mathrm{nil},+}\in\mathbb{B}_{-+},\qquad
+\vec\Pi_{\mathrm{nil},-}\in\mathbb{B}_{+-},\qquad
+\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-},\qquad
+\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+},\qquad
+\vec\Pi_{\mathrm{nil},\pm}^2=0,
 $$
 with the symmetric closed form
 $$
-\vec\Upsilon_\pm=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3B^2}},
+\vec\Pi_{\mathrm{nil},\pm}=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3B^2}},
 \qquad
 \vec w=\vec e_x+\vec e_y+\vec e_z,\quad \Sigma=Q_x+Q_y+Q_z,
 $$
 valid off the cone $\Sigma^2=3B^2$; on that cone the axis charts
 $$
-\vec\Upsilon_\pm=\frac{B\,\vec e_\mu-\dfrac{Q_\mu}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec e_\mu]}{2\sqrt{Q_\mu^2-B^2}},
+\vec\Pi_{\mathrm{nil},\pm}=\frac{B\,\vec e_\mu-\dfrac{Q_\mu}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec e_\mu]}{2\sqrt{Q_\mu^2-B^2}},
 \qquad \mu=x,y,z,
 $$
 cover the pair, at least one of the three being defined, and the defined readings differ by the reciprocal rescaling.
 $$
-\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\vec\Upsilon_+\oplus\mathbb{C}\tilde\Pi_-,
+\mathbb{B}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},-}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},+}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-},
 $$
 $$
-S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,\qquad
-S_-=\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-,
+S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},+},\qquad
+S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}=\mathbb{C}\vec\Pi_{\mathrm{nil},-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-},
 $$
 and every $\tilde Q_2\in\mathbb{B}$ has the unique expansion
 $$
-\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-,
+\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-},
 \qquad Q_{2,ij}\in\mathbb{C},
 $$
 with $\tilde Q_2=\tilde Q$ having $Q_{2,11}=\lambda_+$, $Q_{2,22}=\lambda_-$ and $Q_{2,12}=Q_{2,21}=0$.
 
 **Diagonal property.**
 $$
-\tilde Q\tilde\Pi_+=\lambda_+\tilde\Pi_+,\qquad
-\tilde Q\vec\Upsilon_-=\lambda_+\vec\Upsilon_-,\qquad
-\tilde Q\vec\Upsilon_+=\lambda_-\vec\Upsilon_+,\qquad
-\tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_-.
+\tilde Q\tilde\Pi_{\mathrm{id},+}=\lambda_+\tilde\Pi_{\mathrm{id},+},\qquad
+\tilde Q\vec\Pi_{\mathrm{nil},-}=\lambda_+\vec\Pi_{\mathrm{nil},-},\qquad
+\tilde Q\vec\Pi_{\mathrm{nil},+}=\lambda_-\vec\Pi_{\mathrm{nil},+},\qquad
+\tilde Q\tilde\Pi_{\mathrm{id},-}=\lambda_-\tilde\Pi_{\mathrm{id},-}.
 $$
 The eigenbasis of $L_{\tilde Q}$ has eigenvalues
 $$
 (\lambda_+,\lambda_+,\lambda_-,\lambda_-).
 $$
-The $\lambda_+$-eigenspace of $L_{\tilde Q}$ is the right ideal $\tilde\Pi_+\mathbb{B}$, with basis $(\tilde\Pi_+,\vec\Upsilon_-)$; the $\lambda_-$-eigenspace is $\tilde\Pi_-\mathbb{B}$, with basis $(\vec\Upsilon_+,\tilde\Pi_-)$. The two left ideals $S_+,S_-$ are the eigenspaces of $R_{\tilde Q}$, with eigenvalues $\lambda_+,\lambda_-$ respectively. On each left ideal the restriction of $L_{\tilde Q}$ has the distinct eigenvalues $(\lambda_+,\lambda_-)$, so the eigenbasis of that restriction is unique up to two independent scales.
+The $\lambda_+$-eigenspace of $L_{\tilde Q}$ is the right ideal $\tilde\Pi_{\mathrm{id},+}\mathbb{B}$, with basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-})$; the $\lambda_-$-eigenspace is $\tilde\Pi_{\mathrm{id},-}\mathbb{B}$, with basis $(\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$. The two left ideals $S_+,S_-$ are the eigenspaces of $R_{\tilde Q}$, with eigenvalues $\lambda_+,\lambda_-$ respectively. On each left ideal the restriction of $L_{\tilde Q}$ has the distinct eigenvalues $(\lambda_+,\lambda_-)$, so the eigenbasis of that restriction is unique up to two independent scales.
 
 **Spinors.**
 A spinor of the first Peirce copy is an element of $S_+$,
 $$
-\zeta_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,
+\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+},
 \qquad (Q_{2,11},Q_{2,21})\in\mathbb{C}^2,
 $$
 and under left multiplication
 $$
-\tilde Q\zeta_+=\lambda_+Q_{2,11}\tilde\Pi_++\lambda_-Q_{2,21}\vec\Upsilon_+,
+\tilde Q\zeta_+=\lambda_+Q_{2,11}\tilde\Pi_{\mathrm{id},++}\lambda_-Q_{2,21}\vec\Pi_{\mathrm{nil},+},
 \qquad\text{that is,}\qquad
 (Q_{2,11},Q_{2,21})\longmapsto(\lambda_+Q_{2,11},\;\lambda_-Q_{2,21}).
 $$
 A spinor of the second Peirce copy is an element of $S_-$,
 $$
-\zeta_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-},
 \qquad (Q_{2,12},Q_{2,22})\in\mathbb{C}^2,
 $$
 and under left multiplication
 $$
-\tilde Q\zeta_-=\lambda_+Q_{2,12}\vec\Upsilon_-+\lambda_-Q_{2,22}\tilde\Pi_-,
+\tilde Q\zeta_-=\lambda_+Q_{2,12}\vec\Pi_{\mathrm{nil},-+}\lambda_-Q_{2,22}\tilde\Pi_{\mathrm{id},-},
 \qquad\text{that is,}\qquad
 (Q_{2,12},Q_{2,22})\longmapsto(\lambda_+Q_{2,12},\;\lambda_-Q_{2,22}).
 $$
@@ -852,10 +852,10 @@ The two spinor spaces are the two Peirce carriers, which here are the two minima
 **Matrices.**
 With
 $$
-\tilde\Pi_+\mapsto E_{11},\qquad
-\vec\Upsilon_-\mapsto E_{12},\qquad
-\vec\Upsilon_+\mapsto E_{21},\qquad
-\tilde\Pi_-\mapsto E_{22},
+\tilde\Pi_{\mathrm{id},+}\mapsto E_{11},\qquad
+\vec\Pi_{\mathrm{nil},-}\mapsto E_{12},\qquad
+\vec\Pi_{\mathrm{nil},+}\mapsto E_{21},\qquad
+\tilde\Pi_{\mathrm{id},-}\mapsto E_{22},
 $$
 a general element has the matrix
 $$
@@ -956,7 +956,7 @@ coincide whenever $Q_t=0$. At a common point of the two cones one has $Q_t=0$ an
 | sector | conditions | elements | spectrum | Peirce decomposition | product |
 |---|---|---|---|---|---|
 | **doubly regular** $\Sigma_{11}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2\neq0$ | $\lambda_+e_++\lambda_-e_-$ with $\lambda_\pm$ distinct and non-zero | $\{\lambda_+,\lambda_-\}$ | exists, unique; both terms non-zero | stays in $\mathbb{B}^\times$; lands in $\Sigma_{11}$ or $\Sigma_{10}$ |
-| **norm-degenerate, spectrally regular** $\Sigma_{01}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2\neq0$ | $c\tilde\Pi$, $\tilde\Pi$ a non-trivial idempotent | $\{c,0\}$ | exists, unique; one term vanishes | stays on $\mathcal N$; all three outcomes |
+| **norm-degenerate, spectrally regular** $\Sigma_{01}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2\neq0$ | $c\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}$ a non-trivial idempotent | $\{c,0\}$ | exists, unique; one term vanishes | stays on $\mathcal N$; all three outcomes |
 | **norm-regular, spectrally degenerate** $\Sigma_{10}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2=0$ | $Q_tu$, $u$ unipotent | $\{Q_t\}$, repeated | fails on $\Sigma_{10}^{\mathrm{J}}$; one-term and non-unique on $\Sigma_{10}^{\mathrm{s}}$ | stays in $\mathbb{B}^\times$; lands in $\Sigma_{10}$ or $\Sigma_{11}$ |
 | **doubly degenerate** $\Sigma_{00}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin | $\{0\}$ | fails off the origin | $0$ or $\Sigma_{01}$ |
 
@@ -973,7 +973,7 @@ $$
 e_\pm=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp}.
 $$
 
-It is unique. The Peirce eigenbasis $(e_+,\vec\Upsilon_-,\vec\Upsilon_+,e_-)$ is unique with the normalisation fixed. Both eigenvalues are non-zero and distinct, and both idempotents are non-trivial. This is the only sector in which all of these hold at once.
+It is unique. The Peirce eigenbasis $(e_+,\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},e_-)$ is unique with the normalisation fixed. Both eigenvalues are non-zero and distinct, and both idempotents are non-trivial. This is the only sector in which all of these hold at once.
 
 **The flow.** The element supplies the pure root $\vec U=\vec Q/B$ of $-1$, and $e^{\theta\tilde Q}=e^{\theta Q_t}W(-\theta,B/2\pi)$, with $W$ the Fourier kernel of *Biquaternion Continuous Harmonic Analysis*, §*The Fourier Kernel*. The Hermitian norm of the flow, $\langle\tilde X\rangle_*=\operatorname{Sc}(\tilde X\tilde X^*)$, is
 
@@ -1002,24 +1002,24 @@ $$
 $$
 
 $$
-\boxed{\ \tilde\Pi_+=\frac12\left(e_t-\frac{i}{B}\vec Q\right)=\frac12 e_t-\frac{iQ_x}{2B}\vec e_x-\frac{iQ_y}{2B}\vec e_y-\frac{iQ_z}{2B}\vec e_z\ }
+\boxed{\ \tilde\Pi_{\mathrm{id},+}=\frac12\left(e_t-\frac{i}{B}\vec Q\right)=\frac12 e_t-\frac{iQ_x}{2B}\vec e_x-\frac{iQ_y}{2B}\vec e_y-\frac{iQ_z}{2B}\vec e_z\ }
 $$
 
 $$
-\boxed{\ \tilde\Pi_-=\frac12\left(e_t+\frac{i}{B}\vec Q\right)=\frac12 e_t+\frac{iQ_x}{2B}\vec e_x+\frac{iQ_y}{2B}\vec e_y+\frac{iQ_z}{2B}\vec e_z\ }
+\boxed{\ \tilde\Pi_{\mathrm{id},-}=\frac12\left(e_t+\frac{i}{B}\vec Q\right)=\frac12 e_t+\frac{iQ_x}{2B}\vec e_x+\frac{iQ_y}{2B}\vec e_y+\frac{iQ_z}{2B}\vec e_z\ }
 $$
 
 **The two nilpotents.** Put $\vec w=\vec e_x+\vec e_y+\vec e_z$ and $\Sigma=Q_x+Q_y+Q_z$. Away from the exceptional cone $\Sigma^2=3B^2$, they are
 
 $$
-\boxed{\ \vec\Upsilon_+=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q+\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3B^2}}\ }
+\boxed{\ \vec\Pi_{\mathrm{nil},+}=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q+\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3B^2}}\ }
 $$
 
 $$
-\boxed{\ \vec\Upsilon_-=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q-\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3B^2}}\ }
+\boxed{\ \vec\Pi_{\mathrm{nil},-}=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q-\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3B^2}}\ }
 $$
 
-with the normalisation $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ and $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ for one fixed square root; on the exceptional cone the axis charts replace the symmetric formula.
+with the normalisation $\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-}$ and $\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+}$ for one fixed square root; on the exceptional cone the axis charts replace the symmetric formula.
 
 **The two eigenvalues.**
 
@@ -1033,19 +1033,19 @@ $$
 
 with $\lambda_++\lambda_-=2Q_t$ and $\lambda_+\lambda_-=\langle\tilde Q\rangle_{\natural}$.
 
-**The element.** In the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$,
+**The element.** In the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$,
 
 $$
-\boxed{\ \tilde Q=\lambda_+\tilde\Pi_++0\cdot\vec\Upsilon_-+0\cdot\vec\Upsilon_++\lambda_-\tilde\Pi_-\ }
+\boxed{\ \tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++0}\cdot\vec\Pi_{\mathrm{nil},-+0}\cdot\vec\Pi_{\mathrm{nil},++}\lambda_-\tilde\Pi_{\mathrm{id},-}\ }
 $$
 
 $$
-\boxed{\ \tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-
+\boxed{\ \tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}
 =\frac{\lambda_++\lambda_-}{2}e_t+\frac{\lambda_+-\lambda_-}{2}\vec{Ζ}
 =Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z\ }
 $$
 
-with $\vec{Ζ}=-i\vec Q/B$. The eigenvalues weight the operator, not the element: in this basis $L_{\tilde Q}$ has the diagonal values $\lambda_+,\lambda_+,\lambda_-,\lambda_-$, and $R_{\tilde Q}$ the values $\lambda_+,\lambda_-,\lambda_+,\lambda_-$. The sum weighted by them, $\lambda_+\tilde\Pi_++\lambda_+\vec\Upsilon_-+\lambda_-\vec\Upsilon_++\lambda_-\tilde\Pi_-$, is not $\tilde Q$.
+with $\vec{Ζ}=-i\vec Q/B$. The eigenvalues weight the operator, not the element: in this basis $L_{\tilde Q}$ has the diagonal values $\lambda_+,\lambda_+,\lambda_-,\lambda_-$, and $R_{\tilde Q}$ the values $\lambda_+,\lambda_-,\lambda_+,\lambda_-$. The sum weighted by them, $\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_+\vec\Pi_{\mathrm{nil},-+}\lambda_-\vec\Pi_{\mathrm{nil},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$, is not $\tilde Q$.
 
 ## Summary
 
@@ -1076,7 +1076,7 @@ The sector is the generic sector. It is the set of invertibles with distinct non
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
 | $\mathbb{B}^\times=\{N\neq0\}$ | the group of invertibles |
 | $\lambda_\pm=Q_t\pm\beta$, $\beta=iB$ | the two eigenvalues |
-| $e_\pm=\tilde\Pi_\pm$ | the spectral idempotents, unique; the same pair in both notations |
+| $e_\pm=\tilde\Pi_{\mathrm{id},\pm}$ | the spectral idempotents, unique; the same pair in both notations |
 | $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{N}$ | the modulus |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication, both bijective on the sector |
 

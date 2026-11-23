@@ -5,7 +5,7 @@
 
 The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$ carries four linear involutions, and each of them splits $\mathbb{B}_{\mathrm{spl}}$ into a fixed space and an anti-fixed space. Four of the resulting spaces — the split complex subspace, the quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace — are the distinguished real subspaces of the algebra and are the subject of the four single-subspace articles. This article treats the smallest of them, the **split complex subspace** $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, on its own: its definition, its basis, its algebra structure, the restriction of the split-biquaternion norm to it, its idempotents and zero divisors, the action of the four involutions upon it, and its intersections with the other subspaces. The companions are *Split-Biquaternion Quaternion Subspace*, *Split-Biquaternion Hermitian Subspace* and *Split-Biquaternion Anti-Hermitian Subspace*; their relations with one another are collected in *Split-Biquaternion Relations Between Subspaces*, and the involutions themselves in *Split-Biquaternion Involution Lattice*.
 
-The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article, the split complex algebra $\mathbb{C}_{\mathrm{spl}}$ from the article on split complex algebra, and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. The two idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ are assumed known.
+The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article, the split complex algebra $\mathbb{C}_{\mathrm{spl}}$ from the article on split complex algebra, and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. The two idempotents $\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_{\mathrm{id},2} = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ are assumed known.
 
 Throughout, elements are written $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{C}_{\mathrm{spl}}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$.
 
@@ -59,11 +59,11 @@ The subspace therefore has two descriptions: it is the fixed space of quaternion
 
 **Proof.** For two central elements, $(Q_{1t} e_t)(Q_{2t} e_t) = (Q_{1t} Q_{2t}) e_t$, which lies in the subspace; commutativity is the commutativity of $\mathbb{C}_{\mathrm{spl}}$; and the displayed map is a bijective ring homomorphism because $e_t$ is the unit.
 
-The subspace is a **subalgebra**, and it is one of the two subalgebras among the four distinguished subspaces, the other being the quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$. It is the only **commutative** one. Unlike the biquaternion centre, however, it is **not a field**: the split complex algebra is not a division algebra, having the zero divisors $\tilde\Pi_1$ and $\tilde\Pi_2$. As a real algebra it is $\mathbb{R} \oplus \mathbb{R}$ through the idempotent basis, and its group of invertibles is the four open quadrants of the plane, not the punctured plane.
+The subspace is a **subalgebra**, and it is one of the two subalgebras among the four distinguished subspaces, the other being the quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$. It is the only **commutative** one. Unlike the biquaternion centre, however, it is **not a field**: the split complex algebra is not a division algebra, having the zero divisors $\tilde\Pi_{\mathrm{id},1}$ and $\tilde\Pi_{\mathrm{id},2}$. As a real algebra it is $\mathbb{R} \oplus \mathbb{R}$ through the idempotent basis, and its group of invertibles is the four open quadrants of the plane, not the punctured plane.
 
 ### Ideals
 
-Being the centre, $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ acts on $\mathbb{B}_{\mathrm{spl}}$ by scalar extension: $\mathbb{B}_{\mathrm{spl}}$ has $\mathbb{C}_{\mathrm{spl}}$-basis $e_t, \vec e_x, \vec e_y, \vec e_z$. The subspace is not a proper two-sided ideal of $\mathbb{B}_{\mathrm{spl}}$; the two coordinate lines $\mathbb{R} \tilde\Pi_1$ and $\mathbb{R} \tilde\Pi_2$ inside it are two-sided ideals of the subalgebra $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, and they are the intersections with the centre of the minimal ideals $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$ of the algebra. The ideal theory of the algebra is developed in *Split-Biquaternion Ideals and Peirce Decomposition*, and that of the centre is the ideal theory of $\mathbb{R} \oplus \mathbb{R}$.
+Being the centre, $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ acts on $\mathbb{B}_{\mathrm{spl}}$ by scalar extension: $\mathbb{B}_{\mathrm{spl}}$ has $\mathbb{C}_{\mathrm{spl}}$-basis $e_t, \vec e_x, \vec e_y, \vec e_z$. The subspace is not a proper two-sided ideal of $\mathbb{B}_{\mathrm{spl}}$; the two coordinate lines $\mathbb{R} \tilde\Pi_{\mathrm{id},1}$ and $\mathbb{R} \tilde\Pi_{\mathrm{id},2}$ inside it are two-sided ideals of the subalgebra $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, and they are the intersections with the centre of the minimal ideals $\mathbb{H} \tilde\Pi_{\mathrm{id},1}$ and $\mathbb{H} \tilde\Pi_{\mathrm{id},2}$ of the algebra. The ideal theory of the algebra is developed in *Split-Biquaternion Ideals and Peirce Decomposition*, and that of the centre is the ideal theory of $\mathbb{R} \oplus \mathbb{R}$.
 
 ### Multiplication Tables
 
@@ -89,7 +89,7 @@ $$
 
 **Proof.** $\tilde{Q}^{\natural} = \tilde{Q}$ on the subspace, so $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^2 = Q_t^2 e_t$, read as the split complex scalar $Q_t^2$.
 
-Two features are worth isolating. First, $\langle\cdot\rangle_{\natural}$ takes **split complex** values on the subspace: writing $Q_t = q_t + j q'_t$, one has $Q_t^2 = (q_t^2 + q'^2_0) + 2 j q_t q'_t$, real on the lines $q'_t = 0$ and $q_t = 0$ separately but not in general. Second, the real restriction in the basis $e_t, j$ has the matrix $\operatorname{diag}(1, 1)$ on the real part and $2 q_t q'_t$ on the split-imaginary part, so the associated quadratic form is **not** definite: this is the form $\langle\cdot\rangle_{\natural}$ restricted to the two-dimensional centre, and its isotropic lines are the light lines $Q_t = a \tilde\Pi_{1,2}$.
+Two features are worth isolating. First, $\langle\cdot\rangle_{\natural}$ takes **split complex** values on the subspace: writing $Q_t = q_t + j q'_t$, one has $Q_t^2 = (q_t^2 + q'^2_0) + 2 j q_t q'_t$, real on the lines $q'_t = 0$ and $q_t = 0$ separately but not in general. Second, the real restriction in the basis $e_t, j$ has the matrix $\operatorname{diag}(1, 1)$ on the real part and $2 q_t q'_t$ on the split-imaginary part, so the associated quadratic form is **not** definite: this is the form $\langle\cdot\rangle_{\natural}$ restricted to the two-dimensional centre, and its isotropic lines are the light lines $Q_t = a \tilde\Pi_{\mathrm{id},1,2}$.
 
 ### Invertibles and Zero Divisors
 
@@ -107,13 +107,13 @@ The inverse is $\tilde{Q}^{-1} = Q_t^{-1} e_t = \dfrac{\bar{Q_t}}{Q_t \bar{Q_t}}
 
 $$
 \boxed{\;
-\mathbb{R} \tilde\Pi_1 \cup \mathbb{R} \tilde\Pi_2, \qquad \tilde\Pi_1 = \tfrac{1}{2}(1 + j), \quad \tilde\Pi_2 = \tfrac{1}{2}(1 - j)
+\mathbb{R} \tilde\Pi_{\mathrm{id},1} \cup \mathbb{R} \tilde\Pi_{\mathrm{id},2}, \qquad \tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + j), \quad \tilde\Pi_{\mathrm{id},2} = \tfrac{1}{2}(1 - j)
 \;},
 $$
 
 and the annihilator of each light line is the other.
 
-**Proof.** A split complex number $Q_t = q_t + j q'_t$ is a zero divisor exactly when $q_t^2 = q'^2_0$, that is $q_t = \pm q'_t$, which is the union of the lines $\mathbb{R}(1 + j) = \mathbb{R} \tilde\Pi_1$ and $\mathbb{R}(1 - j) = \mathbb{R} \tilde\Pi_2$. Since $\tilde\Pi_1 \tilde\Pi_2 = 0$, each line annihilates the other.
+**Proof.** A split complex number $Q_t = q_t + j q'_t$ is a zero divisor exactly when $q_t^2 = q'^2_0$, that is $q_t = \pm q'_t$, which is the union of the lines $\mathbb{R}(1 + j) = \mathbb{R} \tilde\Pi_{\mathrm{id},1}$ and $\mathbb{R}(1 - j) = \mathbb{R} \tilde\Pi_{\mathrm{id},2}$. Since $\tilde\Pi_{\mathrm{id},1} \tilde\Pi_{\mathrm{id},2} = 0$, each line annihilates the other.
 
 This is the first sharp difference from the biquaternion centre: there the split-biquaternion norm vanished only at the origin and the subspace was a field, whereas here the split-biquaternion norm degenerates on two lines and the subspace is only a product of fields.
 
@@ -122,12 +122,12 @@ This is the first sharp difference from the biquaternion centre: there the split
 **Proposition.** The idempotents of $\mathbb{B}_{\mathrm{spl}}$ all lie in the split complex subspace, and they are exactly
 
 $$
-0, \qquad \tilde\Pi_1, \qquad \tilde\Pi_2, \qquad 1.
+0, \qquad \tilde\Pi_{\mathrm{id},1}, \qquad \tilde\Pi_{\mathrm{id},2}, \qquad 1.
 $$
 
-**Proof.** Solve $Q_t^2 = Q_t$ in $\mathbb{C}_{\mathrm{spl}}$. In the idempotent basis $Q_t = \lambda_+ \tilde\Pi_1 + \lambda_- \tilde\Pi_2$, so $Q_t^2 = \lambda_+^2 \tilde\Pi_1 + \lambda_-^2 \tilde\Pi_2$; the equation holds exactly when $\lambda_+, \lambda_- \in \{0, 1\}$. The four combinations are $0, \tilde\Pi_1, \tilde\Pi_2, 1$. Every idempotent of $\mathbb{B}_{\mathrm{spl}}$ is one of these, as proved in *Split-Biquaternion Idempotents and Projections*.
+**Proof.** Solve $Q_t^2 = Q_t$ in $\mathbb{C}_{\mathrm{spl}}$. In the idempotent basis $Q_t = \lambda_+ \tilde\Pi_{\mathrm{id},1} + \lambda_- \tilde\Pi_{\mathrm{id},2}$, so $Q_t^2 = \lambda_+^2 \tilde\Pi_{\mathrm{id},1} + \lambda_-^2 \tilde\Pi_{\mathrm{id},2}$; the equation holds exactly when $\lambda_+, \lambda_- \in \{0, 1\}$. The four combinations are $0, \tilde\Pi_{\mathrm{id},1}, \tilde\Pi_{\mathrm{id},2}, 1$. Every idempotent of $\mathbb{B}_{\mathrm{spl}}$ is one of these, as proved in *Split-Biquaternion Idempotents and Projections*.
 
-The idempotents $\tilde\Pi_1$ and $\tilde\Pi_2$ are the two nontrivial ones, they are orthogonal and primitive, and they lie in the centre — unlike the biquaternion case, where the nontrivial idempotents are noncentral and lie outside the centre. Since they are central, the decomposition $\mathbb{B}_{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$ generated by them is a decomposition into two-sided ideals. The idempotents are the only nonzero elements of the light lines that are idempotent; the remaining points of each light line are nilpotent-free zero divisors, and there are no nilpotents in the centre.
+The idempotents $\tilde\Pi_{\mathrm{id},1}$ and $\tilde\Pi_{\mathrm{id},2}$ are the two nontrivial ones, they are orthogonal and primitive, and they lie in the centre — unlike the biquaternion case, where the nontrivial idempotents are noncentral and lie outside the centre. Since they are central, the decomposition $\mathbb{B}_{\mathrm{spl}} = \mathbb{H} \tilde\Pi_{\mathrm{id},1} \oplus \mathbb{H} \tilde\Pi_{\mathrm{id},2}$ generated by them is a decomposition into two-sided ideals. The idempotents are the only nonzero elements of the light lines that are idempotent; the remaining points of each light line are nilpotent-free zero divisors, and there are no nilpotents in the centre.
 
 ## The Four Involutions on It
 
@@ -140,7 +140,7 @@ Each of the four involutions preserves the condition $Q_x = Q_y = Q_z = 0$, so t
 | ${}^{*}$ | $\bar{Q_t} e_t$ | $\operatorname{diag}(1, -1)$ |
 | ${}^{\flat}$ | $-\bar{Q_t} e_t$ | $\operatorname{diag}(-1, 1)$ |
 
-Quaternion conjugation fixes the subspace pointwise — it is the defining involution — and Hermitian conjugation agrees with split complex conjugation there, because ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and ${}^{\natural}$ acts as the identity. Split complex conjugation acts as the exchange $j \mapsto -j$, the non-trivial involution of $\mathbb{C}_{\mathrm{spl}}$, and anti-Hermitian conjugation is its negative. So of the four involutions only ${}^{\natural}$ acts trivially on the centre, and $\bar{\cdot}$ is the one that swaps the two light lines $\mathbb{R} \tilde\Pi_1$ and $\mathbb{R} \tilde\Pi_2$.
+Quaternion conjugation fixes the subspace pointwise — it is the defining involution — and Hermitian conjugation agrees with split complex conjugation there, because ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and ${}^{\natural}$ acts as the identity. Split complex conjugation acts as the exchange $j \mapsto -j$, the non-trivial involution of $\mathbb{C}_{\mathrm{spl}}$, and anti-Hermitian conjugation is its negative. So of the four involutions only ${}^{\natural}$ acts trivially on the centre, and $\bar{\cdot}$ is the one that swaps the two light lines $\mathbb{R} \tilde\Pi_{\mathrm{id},1}$ and $\mathbb{R} \tilde\Pi_{\mathrm{id},2}$.
 
 ## Relations to the Other Subspaces
 
@@ -172,7 +172,7 @@ $$
 The image of $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ is therefore the set $\mathbb{R} \oplus \mathbb{R}$ of pairs of real scalars, the centre of $\mathbb{H} \oplus \mathbb{H}$. The split-biquaternion norm has the matching description
 
 $$
-\langle Q_t e_t\rangle_{\natural} = (Q_t^+)^2 \tilde\Pi_1 + (Q_t^-)^2 \tilde\Pi_2,
+\langle Q_t e_t\rangle_{\natural} = (Q_t^+)^2 \tilde\Pi_{\mathrm{id},1} + (Q_t^-)^2 \tilde\Pi_{\mathrm{id},2},
 $$
 
 the pair of squares of the two real scalars. The two light lines are the loci $Q_t^- = 0$ and $Q_t^+ = 0$, so the split-biquaternion norm degenerates on the coordinate axes of the pair, exactly as the two-dimensional split complex plane requires.
@@ -193,7 +193,7 @@ As the fixed space of quaternion conjugation, the centre is the axis of that inv
 
 ## Summary
 
-The split complex subspace $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ is the fixed space of quaternion conjugation, the set of elements $\tilde{Q} = Q_t e_t$ with vanishing vector part; it is a real vector space of dimension $2$ with basis $e_t, j$. It coincides with the centre of the algebra, is a commutative subalgebra isomorphic to the split complex algebra $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$, and is one of the two subalgebras among the four distinguished subspaces. It is **not** a field: the split-biquaternion norm restricts to $N = Q_t^2$, which is split-complex-valued and degenerates on the two light lines $\mathbb{R} \tilde\Pi_{1,2}$, and these are exactly the zero divisors of the subspace, each annihilating the other. The invertibles are the elements with $Q_t$ invertible in $\mathbb{C}_{\mathrm{spl}}$, that is $Q_t = q_t + j q'_t$ with $q_t^2 \neq q'^2_0$, and the inverse is $Q_t^{-1} e_t = (q_t - j q'_t)/(q_t^2 - q'^2_0)\, e_t$. All four idempotents $0, \tilde\Pi_1, \tilde\Pi_2, 1$ of the algebra lie in the subspace, unlike the biquaternion case, where the nontrivial idempotents are noncentral. Of the four involutions, quaternion conjugation fixes the subspace pointwise, split complex and Hermitian conjugations act by $j \mapsto -j$ and swap the two light lines, and anti-Hermitian conjugation is the negative of that. The subspace meets the vector subspace only at the origin and meets both the quaternion and Hermitian subspaces in $\mathbb{R}$, the anti-Hermitian subspace in $j\mathbb{R}$, so it is the direct sum of the two coordinate blocks $\mathbb{R}$ and $j\mathbb{R}$.
+The split complex subspace $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ is the fixed space of quaternion conjugation, the set of elements $\tilde{Q} = Q_t e_t$ with vanishing vector part; it is a real vector space of dimension $2$ with basis $e_t, j$. It coincides with the centre of the algebra, is a commutative subalgebra isomorphic to the split complex algebra $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$, and is one of the two subalgebras among the four distinguished subspaces. It is **not** a field: the split-biquaternion norm restricts to $N = Q_t^2$, which is split-complex-valued and degenerates on the two light lines $\mathbb{R} \tilde\Pi_{\mathrm{id},1,2}$, and these are exactly the zero divisors of the subspace, each annihilating the other. The invertibles are the elements with $Q_t$ invertible in $\mathbb{C}_{\mathrm{spl}}$, that is $Q_t = q_t + j q'_t$ with $q_t^2 \neq q'^2_0$, and the inverse is $Q_t^{-1} e_t = (q_t - j q'_t)/(q_t^2 - q'^2_0)\, e_t$. All four idempotents $0, \tilde\Pi_{\mathrm{id},1}, \tilde\Pi_{\mathrm{id},2}, 1$ of the algebra lie in the subspace, unlike the biquaternion case, where the nontrivial idempotents are noncentral. Of the four involutions, quaternion conjugation fixes the subspace pointwise, split complex and Hermitian conjugations act by $j \mapsto -j$ and swap the two light lines, and anti-Hermitian conjugation is the negative of that. The subspace meets the vector subspace only at the origin and meets both the quaternion and Hermitian subspaces in $\mathbb{R}$, the anti-Hermitian subspace in $j\mathbb{R}$, so it is the direct sum of the two coordinate blocks $\mathbb{R}$ and $j\mathbb{R}$.
 
 ## Summary of Notation
 
@@ -203,7 +203,7 @@ The split complex subspace $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$
 | $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ | General element, $Q_\mu \in \mathbb{C}_{\mathrm{spl}}$ |
 | $Q_\mu = q_\mu + j q'_\mu$ | Real and split-imaginary parts of a coefficient |
 | $j$ | Split complex unit, central, $j^2 = +1$ |
-| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents, giving the light lines $\mathbb{R} \tilde\Pi_{1,2}$ |
+| $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents, giving the light lines $\mathbb{R} \tilde\Pi_{\mathrm{id},1,2}$ |
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | Split complex subspace, the centre, fixed space of ${}^{\natural}$ |
 | $\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ | Vector subspace, the anti-fixed space of ${}^{\natural}$, $\dim 6$ |
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}, \mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Quaternion, Hermitian, anti-Hermitian subspaces |

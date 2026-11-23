@@ -339,26 +339,26 @@ and the coefficients $Q_\mu Q_{2\nu}$ of a two-sided operator are the same sixte
 
 **The two idempotents.** The standard pair is
 $$
-\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
-\tilde\Pi_+^2=\tilde\Pi_+,\quad \tilde\Pi_-^2=\tilde\Pi_-,\quad \tilde\Pi_+\tilde\Pi_-=0,\quad \tilde\Pi_++\tilde\Pi_-=e_t,
+\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z),\qquad
+\tilde\Pi_{\mathrm{id},+}^2=\tilde\Pi_{\mathrm{id},+},\quad \tilde\Pi_{\mathrm{id},-}^2=\tilde\Pi_{\mathrm{id},-},\quad \tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0,\quad \tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t,
 $$
 and its two mixed units are
 $$
-\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y),\qquad
-\vec\Upsilon_\pm^2=0,\quad \vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\quad \vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+ .
+\vec\Pi_{\mathrm{nil},\pm}=\tfrac12(i\vec e_x\pm\vec e_y),\qquad
+\vec\Pi_{\mathrm{nil},\pm}^2=0,\quad \vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-},\quad \vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+} .
 $$
-So $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ is a Peirce basis, and the frame is that basis in that order: the two elements of $\mathbb{B}\tilde\Pi_+$ first and those of $\mathbb{B}\tilde\Pi_-$ second. The Peirce convention fixes no family (*Special Element and Peirce Conventions*, §*The Biquaternion Peirce Convention*); the choice here is not a preferred pair, it is the frame this display is written in, and the corpus calls it the canonical frame.
+So $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ is a Peirce basis, and the frame is that basis in that order: the two elements of $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ first and those of $\mathbb{B}\tilde\Pi_{\mathrm{id},-}$ second. The Peirce convention fixes no family (*Special Element and Peirce Conventions*, §*The Biquaternion Peirce Convention*); the choice here is not a preferred pair, it is the frame this display is written in, and the corpus calls it the canonical frame.
 
 **The frame vectors over the basis.** Written in the coefficient basis, the four frame vectors are
 $$
-\tilde\Pi_+=\tfrac12\bigl(e_t+i\vec e_z\bigr),\qquad
-\vec\Upsilon_+=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),\qquad
-\vec\Upsilon_-=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\qquad
-\tilde\Pi_-=\tfrac12\bigl(e_t-i\vec e_z\bigr),
+\tilde\Pi_{\mathrm{id},+}=\tfrac12\bigl(e_t+i\vec e_z\bigr),\qquad
+\vec\Pi_{\mathrm{nil},+}=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),\qquad
+\vec\Pi_{\mathrm{nil},-}=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\qquad
+\tilde\Pi_{\mathrm{id},-}=\tfrac12\bigl(e_t-i\vec e_z\bigr),
 $$
 so each is a combination of two units and the switch is two $2\times2$ blocks, as §*The Switch Between the Two Frames* writes it out.
 
-**The root, and the broken symmetry.** The frame singles out the direction $i\vec e_z$ through $\tilde\Pi_\pm$, and the two mixed units pair $\vec e_x$ with $\vec e_y$ and leave $\vec e_z$ in the idempotents. That is the price of the block: the axis-free frame has no root and no block, and this frame has both.
+**The root, and the broken symmetry.** The frame singles out the direction $i\vec e_z$ through $\tilde\Pi_{\mathrm{id},\pm}$, and the two mixed units pair $\vec e_x$ with $\vec e_y$ and leave $\vec e_z$ in the idempotents. That is the price of the block: the axis-free frame has no root and no block, and this frame has both.
 
 ### The Two Tensor Factors
 
@@ -411,9 +411,9 @@ $$
 
 **The four right matrices.** Right multiplication is the transpose of left multiplication in the exchanged frame. Let $\mathsf P$ be the linear involution of the carrier that fixes the two idempotents and exchanges the two mixed Peirce units,
 $$
-\mathsf P\tilde\Pi_\pm=\tilde\Pi_\pm,\qquad
-\mathsf P\vec\Upsilon_+=\vec\Upsilon_-,\qquad
-\mathsf P\vec\Upsilon_-=\vec\Upsilon_+,
+\mathsf P\tilde\Pi_{\mathrm{id},\pm}=\tilde\Pi_{\mathrm{id},\pm},\qquad
+\mathsf P\vec\Pi_{\mathrm{nil},+}=\vec\Pi_{\mathrm{nil},-},\qquad
+\mathsf P\vec\Pi_{\mathrm{nil},-}=\vec\Pi_{\mathrm{nil},+},
 $$
 the permutation of the second and third canonical coordinates. Its matrix there is
 $$
@@ -568,7 +568,7 @@ The four left matrices, the four right matrices and the sixteen basis operators 
 $$
 C_{\Pi}=\tfrac12\begin{pmatrix}1&0&0&1\\0&i&i&0\\0&1&-1&0\\i&0&0&-i\end{pmatrix},
 $$
-the columns being $\tilde\Pi_+$, $\vec\Upsilon_+$, $\vec\Upsilon_-$, $\tilde\Pi_-$ in the order $(e_t,\vec e_x,\vec e_y,\vec e_z)$. Then for every element and every side,
+the columns being $\tilde\Pi_{\mathrm{id},+}$, $\vec\Pi_{\mathrm{nil},+}$, $\vec\Pi_{\mathrm{nil},-}$, $\tilde\Pi_{\mathrm{id},-}$ in the order $(e_t,\vec e_x,\vec e_y,\vec e_z)$. Then for every element and every side,
 $$
 \boxed{\;L_{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,L(\tilde Q)\,C_{\Pi}^{-1},\qquad
 R_{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,R(\tilde Q)\,C_{\Pi}^{-1}\;}
@@ -921,7 +921,7 @@ Q_z&Q_y&-Q_x&Q_t
 $$
 Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{axf}}=D(L_{\mathrm{axf}})^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$, its transpose is the conjugation, and its sixteen products are real. Nothing is chosen but the basis the algebra already carries.
 
-**The Pauli representation comes second.** Its frame is the Peirce basis $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ of the standard pair, and in it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right one $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf P L(\tilde Q)^{\mathsf T}\mathsf P^{-1}$. The four left matrices $L_{\mathrm{pau},e_\mu}$, the four right matrices $R_{\mathrm{pau},e_\nu}$ and the sixteen basis operators $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ are written out, and the basis operators are the Clifford algebra: $e_\mu\otimes e_{\mathrm{opp},\nu}\mapsto L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame operators span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})$. Five basis operators are the gamma matrices, written in this frame and in the axis-free one. The basis operators are the matrices of the sixteen basis two-sided operators $e_\mu[\,]e_\nu$, so one table of them serves the two-sided family, the enveloping algebra and the Clifford algebra at once.
+**The Pauli representation comes second.** Its frame is the Peirce basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ of the standard pair, and in it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right one $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf P L(\tilde Q)^{\mathsf T}\mathsf P^{-1}$. The four left matrices $L_{\mathrm{pau},e_\mu}$, the four right matrices $R_{\mathrm{pau},e_\nu}$ and the sixteen basis operators $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ are written out, and the basis operators are the Clifford algebra: $e_\mu\otimes e_{\mathrm{opp},\nu}\mapsto L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame operators span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})$. Five basis operators are the gamma matrices, written in this frame and in the axis-free one. The basis operators are the matrices of the sixteen basis two-sided operators $e_\mu[\,]e_\nu$, so one table of them serves the two-sided family, the enveloping algebra and the Clifford algebra at once.
 
 **The switch comes between them, and belongs to both.** It is $C_{\Pi}$ and its inverse, of determinant $-\tfrac14$ and normalisation $C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12\mathrm I_4$, with $L_{\mathrm{axf}}=C_{\Pi}LC_{\Pi}^{-1}$ and $R_{\mathrm{axf}}=C_{\Pi}RC_{\Pi}^{-1}$. It is two $2\times2$ blocks, it carries the eight unit matrices and the sixteen basis operators, and it leaves the trace $4Q_t$ and the determinant $\langle\tilde Q\rangle_{\natural}^2$ alone.
 
@@ -940,13 +940,13 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 | $D=\operatorname{diag}(1,-1,-1,-1)$ | The stitch of the axis-free frame, $R_{\mathrm{axf}}=D(L_{\mathrm{axf}})^{\mathsf T}D$; the Gram matrix of $\operatorname{Sc}(XY)$ there |
 | $L_{\mathrm{pau}}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ | The left regular matrix in the Peirce frame, written $L(\tilde Q)$ |
 | $R(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf P L(\tilde Q)^{\mathsf T}\mathsf P^{-1}$ | The right regular matrix in the Peirce frame |
-| $\mathsf P$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
+| $\mathsf P$ | The exchange of $\vec\Pi_{\mathrm{nil},+}$ and $\vec\Pi_{\mathrm{nil},-}$ fixing $\tilde\Pi_{\mathrm{id},\pm}$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
 | $L_{\mathrm{pau},e_\mu}=\mathsf M_{4L}(e_\mu)$, $R_{\mathrm{pau},e_\mu}=\mathsf M_{4R}(e_\mu)$ | The four left and the four right matrices; $R_{\mathrm{pau},e_\nu}=\mathsf P {L_{\mathrm{pau},e_\nu}}^{\mathsf T}\mathsf P^{-1}$ |
 | $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ | The sixteen basis operators; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
 | $L_{e_\mu}R_{e_\nu}=e_\mu[\,]e_\nu$ | The basis operator, which is the matrix of the basis two-sided operator $X\mapsto e_\mu Xe_\nu$ |
 | $c(T)$, $\ell(T)=\operatorname{rank}c(T)$ | The coefficient array of an operator $T$ in the sixteen basis operators, and its length; $c(L_{\tilde Q}R_{\tilde Q_2})=QQ_2^{\mathsf T}$ |
 | $C_{\Pi}$ | The change of frame, $L_{\mathrm{axf}}=C_{\Pi}LC_{\Pi}^{-1}$ and $R_{\mathrm{axf}}=C_{\Pi}RC_{\Pi}^{-1}$; $\det C_{\Pi}=-\tfrac14$, $C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}$ |
-| $\tilde\Pi_\pm$, $\vec\Upsilon_\pm$ | The standard pair and its two mixed units, which fix the Peirce frame |
+| $\tilde\Pi_{\mathrm{id},\pm}$, $\vec\Pi_{\mathrm{nil},\pm}$ | The standard pair and its two mixed units, which fix the Peirce frame |
 | $iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}$, $iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}$, $iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}$, $iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}$, $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ | The five basis operators of the frame, timelike, three spatial, chirality; the gammas |
 | $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_t}$, $\iota_{\mathrm{Cl}}(i)=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ |
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | The isomorphism of the element; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |

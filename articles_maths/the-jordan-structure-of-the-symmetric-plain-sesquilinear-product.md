@@ -86,7 +86,7 @@ with equality only at $\tilde Q=0$. The cone of squares is the ray $\mathbb{R}_{
 
 **Proposition (the idempotents).** The idempotents are $0$ and $e_t$.
 
-*Proof.* The equation reads $\lVert\tilde \Pi\rVert^{2}e_t=\tilde \Pi$, so $\tilde \Pi=\lambda e_t$ with $\lvert\lambda\rvert^2=\lambda$, that is $\lambda\in\{0,1\}$. Verified by solving the conditions in the coefficient basis.
+*Proof.* The equation reads $\lVert\tilde\Pi_{\mathrm{id}}\rVert^{2}e_t=\tilde\Pi_{\mathrm{id}}$, so $\tilde\Pi_{\mathrm{id}}=\lambda e_t$ with $\lvert\lambda\rvert^2=\lambda$, that is $\lambda\in\{0,1\}$. Verified by solving the conditions in the coefficient basis.
 
 **Theorem (the Peirce decomposition).** At $e_t$ the multiplication operator has the eigenvalues $1,0,0,0$, with
 $$

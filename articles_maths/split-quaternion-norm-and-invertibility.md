@@ -5,7 +5,7 @@
 
 This article studies the split-quaternion norm, its isotropy, and the invertibility theory it determines. It proves the criterion that an element is invertible exactly when its split-quaternion norm does not vanish, shows that no positive-definite form on the algebra is multiplicative, describes the group of invertibles, classifies the elements, and describes how the invertible elements are distributed among the distinguished subspaces.
 
-The split-quaternion algebra, its basis, its conjugation ${}^{\natural}$, its split-quaternion norm $\langle\cdot\rangle_{\natural}$, its idempotents $\tilde\pi_{1,2}$ and its subspaces $S$, $V$, $\mathbb{C}_{\mathrm{spl},2}$, $\mathbb{C}_{\mathrm{spl},3}$ are assumed from *Split-Quaternion Algebra* and are not redefined. The zero divisor set is treated separately in *Split-Quaternion Zero Divisors*, and the roots of $-1$ in *Split-Quaternion Roots of Minus One*. Nothing physical is invoked.
+The split-quaternion algebra, its basis, its conjugation ${}^{\natural}$, its split-quaternion norm $\langle\cdot\rangle_{\natural}$, its idempotents $\tilde\pi_{\mathrm{id},1,2}$ and its subspaces $S$, $V$, $\mathbb{C}_{\mathrm{spl},2}$, $\mathbb{C}_{\mathrm{spl},3}$ are assumed from *Split-Quaternion Algebra* and are not redefined. The zero divisor set is treated separately in *Split-Quaternion Zero Divisors*, and the roots of $-1$ in *Split-Quaternion Roots of Minus One*. Nothing physical is invoked.
 
 ## The Split-Quaternion Norm
 
@@ -233,13 +233,13 @@ The invertible elements are those with $q_t^2 \neq q_y^2$; the non-invertible no
 
 ### The Minimal Left and Right Ideals
 
-On the two minimal left ideals $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2}$, every element is a zero divisor or zero.
+On the two minimal left ideals $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{\mathrm{id},1,2}$, every element is a zero divisor or zero.
 
-**Proposition.** For every $\tilde q \in \mathbb{H}_{\mathrm{spl}}$, $\langle\tilde q\tilde\pi_{1,2}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}\langle\tilde\pi_{1,2}\rangle_{\natural} = 0$. Hence $\mathbb{H}_{\mathrm{spl}} \tilde\pi_1$ and $\mathbb{H}_{\mathrm{spl}} \tilde\pi_2$ are **totally isotropic**: they contain no invertible element other than the origin. The same statement holds for the two minimal right ideals $\tilde\pi_1 \mathbb{H}_{\mathrm{spl}}$ and $\tilde\pi_2 \mathbb{H}_{\mathrm{spl}}$.
+**Proposition.** For every $\tilde q \in \mathbb{H}_{\mathrm{spl}}$, $\langle\tilde q\tilde\pi_{\mathrm{id},1,2}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}\langle\tilde\pi_{\mathrm{id},1,2}\rangle_{\natural} = 0$. Hence $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{\mathrm{id},1}$ and $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{\mathrm{id},2}$ are **totally isotropic**: they contain no invertible element other than the origin. The same statement holds for the two minimal right ideals $\tilde\pi_{\mathrm{id},1} \mathbb{H}_{\mathrm{spl}}$ and $\tilde\pi_{\mathrm{id},2} \mathbb{H}_{\mathrm{spl}}$.
 
-**Proof.** $\langle\tilde\pi_{1,2}\rangle_{\natural} = \tfrac14 \langle 1 \pm \vec e_y\rangle_{\natural} = \tfrac14(1 - 1) = 0$, and multiplicativity gives $\langle\tilde q\tilde\pi_{1,2}\rangle_{\natural} = \langle\tilde q\rangle_{\natural} \cdot 0 = 0$.
+**Proof.** $\langle\tilde\pi_{\mathrm{id},1,2}\rangle_{\natural} = \tfrac14 \langle 1 \pm \vec e_y\rangle_{\natural} = \tfrac14(1 - 1) = 0$, and multiplicativity gives $\langle\tilde q\tilde\pi_{\mathrm{id},1,2}\rangle_{\natural} = \langle\tilde q\rangle_{\natural} \cdot 0 = 0$.
 
-So each of the four two-dimensional subspaces $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{spl}}$ consists entirely of zero divisors together with the origin.
+So each of the four two-dimensional subspaces $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{\mathrm{id},1,2}$, $\tilde\pi_{\mathrm{id},1,2} \mathbb{H}_{\mathrm{spl}}$ consists entirely of zero divisors together with the origin.
 
 ### Summary of the Distribution
 
@@ -249,7 +249,7 @@ So each of the four two-dimensional subspaces $\mathbb{H}_{\mathrm{spl}} \tilde\
 | $V$ | $3$ | $q_x^2 - q_y^2 - q_z^2$, inertia $(2,1)$ | the null cone $q_x^2 = q_y^2 + q_z^2$ |
 | $\mathbb{C}_{\mathrm{spl},2}$ | $2$ | $q_t^2 - q_y^2$, inertia $(1,1)$ | $\mathbb{R}(1 \pm \vec e_y) \setminus \{0\}$ |
 | $\mathbb{C}_{\mathrm{spl},3}$ | $2$ | $q_t^2 - q_z^2$, inertia $(1,1)$ | $\mathbb{R}(1 \pm \vec e_z) \setminus \{0\}$ |
-| $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{spl}}$ | $2$ | identically $0$ | the whole subspace minus the origin |
+| $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{\mathrm{id},1,2}$, $\tilde\pi_{\mathrm{id},1,2} \mathbb{H}_{\mathrm{spl}}$ | $2$ | identically $0$ | the whole subspace minus the origin |
 
 The invertible elements are the complement of the null cone $\{\langle\tilde q\rangle_{\natural} = 0\}$, an open dense set of full measure. They form two connected components, $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$.
 
@@ -269,7 +269,7 @@ The split-quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 
 
 A nonzero element is invertible exactly when $\langle\tilde q\rangle_{\natural} \neq 0$, and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$; it is a zero divisor exactly when $\langle\tilde q\rangle_{\natural} = 0$. The group of invertibles is $\{\langle\tilde q\rangle_{\natural} \neq 0\}$, the norm-one subgroup is $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\} \cong \mathrm{SL}_2(\mathbb{R})$, and $\{\langle\tilde q\rangle_{\natural} = \pm 1\} = \mathrm{U} \sqcup (-\mathrm{U})$ has two components. The invertibles form the two connected components $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$.
 
-No positive-definite form on $\mathbb{H}_{\mathrm{spl}}$ is multiplicative, since $(1+\vec e_y)(1-\vec e_y)=0$ with both factors nonzero. The Euclidean norm carries the topology, being submultiplicative up to $\sqrt2$, and the split-quaternion norm carries invertibility; the two jobs cannot be fused. The classification of the elements is a dichotomy plus the zero element: invertible, or zero divisor, or zero; there is no further class, because the split-quaternion norm takes values in the field $\mathbb{R}$. The invertible elements are distributed as follows: all nonzero scalars are invertible; in $V$ the invertibles are the spacelike and timelike vectors and the zero divisors are the null cone; in each split-complex subalgebra the units avoid the two isotropic lines; and the four minimal ideals $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{spl}}$ are totally isotropic. In the eight-dimensional $\mathbb{B}_{\mathrm{spl}}$ the norm takes values in a ring with zero divisors, and the corresponding classification has a genuinely third nonzero class; that system is treated later under Split-Biquaternions.
+No positive-definite form on $\mathbb{H}_{\mathrm{spl}}$ is multiplicative, since $(1+\vec e_y)(1-\vec e_y)=0$ with both factors nonzero. The Euclidean norm carries the topology, being submultiplicative up to $\sqrt2$, and the split-quaternion norm carries invertibility; the two jobs cannot be fused. The classification of the elements is a dichotomy plus the zero element: invertible, or zero divisor, or zero; there is no further class, because the split-quaternion norm takes values in the field $\mathbb{R}$. The invertible elements are distributed as follows: all nonzero scalars are invertible; in $V$ the invertibles are the spacelike and timelike vectors and the zero divisors are the null cone; in each split-complex subalgebra the units avoid the two isotropic lines; and the four minimal ideals $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{\mathrm{id},1,2}$, $\tilde\pi_{\mathrm{id},1,2} \mathbb{H}_{\mathrm{spl}}$ are totally isotropic. In the eight-dimensional $\mathbb{B}_{\mathrm{spl}}$ the norm takes values in a ring with zero divisors, and the corresponding classification has a genuinely third nonzero class; that system is treated later under Split-Biquaternions.
 
 ## Summary of Notation
 
@@ -285,7 +285,7 @@ No positive-definite form on $\mathbb{H}_{\mathrm{spl}}$ is multiplicative, sinc
 | $\{\langle\tilde q\rangle_{\natural} = \pm 1\}$ | the two split-quaternion norm levels, $\mathrm{U}$ and $-\mathrm{U}$ | this article |
 | $P = \{\langle\tilde q\rangle_{\natural} > 0\}$, $Q = \{\langle\tilde q\rangle_{\natural} < 0\}$ | the two components of the invertibles | this article |
 | $S$, $V$, $\mathbb{C}_{\mathrm{spl},2}$, $\mathbb{C}_{\mathrm{spl},3}$ | the scalar, vector and split-complex subspaces | *Split-Quaternion Algebra* |
-| $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$ | the non-central idempotents | *Split-Quaternion Algebra* |
+| $\tilde\pi_{\mathrm{id},1,2} = \tfrac12(1 \pm \vec e_y)$ | the non-central idempotents | *Split-Quaternion Algebra* |
 | spacelike, timelike, lightlike | the sign of $\langle\cdot\rangle_{\natural}$ on $V$ | this article |
 | $\mathbb{H}$ | the real quaternions | *Quaternion Algebra* |
 | $\mathbb{B}_{\mathrm{spl}}$ | the split-biquaternions, a later Part V system | *The Number Systems as Clifford Algebras* |

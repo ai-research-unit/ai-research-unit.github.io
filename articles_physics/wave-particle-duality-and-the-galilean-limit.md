@@ -30,7 +30,7 @@ This is a complex number and not an element of $\mathbb{B}$, and the reason is o
 
 Left multiplication by $\sigma$ is invertible when $\sigma\ne0$ and zero when $\sigma=0$. There is no third case and no intermediate dimension. The graded ranks of the two preceding articles — three off the light cone and two on it — belong to $L_{i\tilde K_\Phi}$, which is not scalar. The second-order symbol has rank four on the whole algebra the moment it is non-zero, and rank zero on the set where it vanishes:
 
-| Frequency point | $L_{i\tilde K_\Phi}$ on $\mathbb{B}_{V}$ | $L_{i\tilde K_\Phi}$ on $\mathbb{B}\tilde\Pi$ | $L_{\sigma_{\mathcal{P}}}$ on $\mathbb{B}$ | $L_{\sigma_{\mathcal{P}}}$ on $\mathbb{B}\tilde\Pi$ |
+| Frequency point | $L_{i\tilde K_\Phi}$ on $\mathbb{B}_{V}$ | $L_{i\tilde K_\Phi}$ on $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ | $L_{\sigma_{\mathcal{P}}}$ on $\mathbb{B}$ | $L_{\sigma_{\mathcal{P}}}$ on $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ |
 |---|---|---|---|---|
 | neither surface: $k_{t}^{\prime}\ne k_{\Phi}$ and $\sigma_{\mathcal{P}}\ne0$ | 3 | 2 | 4 | 2 |
 | light cone, $k_{t}^{\prime}=k_{\Phi}$ | 2 | 1 | 4 | 2 |
@@ -247,7 +247,7 @@ The missing datum is the negative-frequency amplitude. It is not that the amplit
 
 ### What happens to the graded rank
 
-Left multiplication by $\sigma_{\mathrm{s}}$ on the module $\mathbb{B}\tilde\Pi$ is invertible exactly when $\sigma_{\mathrm{s}}\ne0$, and then it has the module's dimension; it is zero exactly on the paraboloid. With the module two complex-dimensional, the rank is two off the paraboloid and zero on it, and the cokernel is zero and two respectively:
+Left multiplication by $\sigma_{\mathrm{s}}$ on the module $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ is invertible exactly when $\sigma_{\mathrm{s}}\ne0$, and then it has the module's dimension; it is zero exactly on the paraboloid. With the module two complex-dimensional, the rank is two off the paraboloid and zero on it, and the cokernel is zero and two respectively:
 
 | Frequency point | rank of $L_{\sigma_{\mathrm{s}}}$ | $\dim\ker$ | $\dim\operatorname{coker}$ |
 |---|---|---|---|
@@ -315,7 +315,7 @@ Everything here is at one wave number in a homogeneous medium, as in the two pre
 
 The region of validity is $\lvert k_{\mathrm{s}}\rvert\ll2k_m$, not $c\to\infty$. Setting $c\to\infty$ would contradict the Maxwell equations that supply $k_m$, as *The Non-Relativistic Limit of Relativistic Mechanics in Biquaternionic Form* says. The limit is taken on the state: the excess of the energy over rest is small compared with twice the rest energy, and the truncation error is exactly $\frac{\gamma-1}{2}$ relative. At $\beta=0.01$ that is $2.5\times10^{-5}$; at $\beta=0.1$ it is $2.5\times10^{-3}$; at $\beta=0.5$ it is $7.7\times10^{-2}$ and the word approximation has stopped being useful.
 
-The dimension two quoted for the module is the two of $\mathbb{B}\tilde\Pi\cong\mathbb{C}^{2}$, which is the spin-$\tfrac{1}{2}$ module of *The Schrödinger Equation in Biquaternionic Form*. A scalar wave function gives dimension one and a different table; every statement about the rank is a statement about the module, and the article says so where it uses one.
+The dimension two quoted for the module is the two of $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong\mathbb{C}^{2}$, which is the spin-$\tfrac{1}{2}$ module of *The Schrödinger Equation in Biquaternionic Form*. A scalar wave function gives dimension one and a different table; every statement about the rank is a statement about the module, and the article says so where it uses one.
 
 The article shows that the reduced equation has one sheet and one datum. It does not show that a relativistic antiparticle is absent from nature, and it does not need to: what it shows is that the reduced description has no room for one, which is a statement about the description and not about the world.
 
@@ -345,7 +345,7 @@ The condition on the source is homogeneous in either variable, and the symbol is
 | $\vec\beta_b$ | the boost velocity in units of $c$; its square enters the boost law with the coefficient $\frac{1}{2}k_m$ |
 | $a$, $c$, $d$ | the coefficients of $k_{\mathrm{s}}$, $k_{\Phi}^{2}$ and the constant in a trial symbol; invariance forces $a=-2ck_m$ and leaves $d$ free |
 | $\lambda$ | the scaling parameter that tests homogeneity |
-| $\mathbb{B}\tilde\Pi$ | the state module, $\cong\mathbb{C}^{2}$; the domain on which the rank statements are made |
+| $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ | the state module, $\cong\mathbb{C}^{2}$; the domain on which the rank statements are made |
 | $k_{\mathrm{s},\pm}$ | the two roots, $-k_m\pm\sqrt{k_m^{2}+k_{\Phi}^{2}}$ |
 | $\rho$, $\vec J$ | the charge density and the current density of $\tilde J_\Phi=ic\rho\,e_t+\vec J$ |
 

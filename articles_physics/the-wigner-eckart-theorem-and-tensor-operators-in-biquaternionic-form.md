@@ -248,10 +248,10 @@ The general lesson is the one the counting predicts: the product of two rank-$1$
 
 ## The Pairing and the Born Rule
 
-The matrix elements of a tensor operator can be extracted from traces, which is the form in which the framework's Born rule is stated. For a state idempotent $\tilde\Pi$ and an observable $\tilde H_\Psi$,
+The matrix elements of a tensor operator can be extracted from traces, which is the form in which the framework's Born rule is stated. For a state idempotent $\tilde\Pi_{\mathrm{id}}$ and an observable $\tilde H_\Psi$,
 
 $$
-2\,\mathrm{Sc}\left(\tilde\Pi\tilde H_\Psi\right),
+2\,\mathrm{Sc}\left(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi\right),
 $$
 
 the pairing formula of the companion articles. A matrix element $\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_\mu|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ is the trace of $T^{(k)}_\mu$ against the matrix unit $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|$, and the reduced matrix element is therefore a trace once a normalisation is chosen. The orthogonality and completeness of the Clebsch–Gordan coefficients used in the theorem are the trace-orthogonality of the coupled idempotents of the two-spin problem, written in components.
@@ -296,7 +296,7 @@ The article established the following.
 | $\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_\mu|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ | Matrix element |
 | $\langle s_{\mathrm{fin}}\|T^{(k)}\|s_{\mathrm{tot}}\rangle$ | Reduced matrix element |
 | $\langle s_{\mathrm{tot}},s_{\mathrm{tot},z};k,\mu|s_{\mathrm{fin}},s_{\mathrm{fin},z}\rangle$ | Clebsch–Gordan coefficient (Condon–Shortley) |
-| $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi)=2\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ | Scalar-part reading at normalisation (Born rule) |
+| $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi)=2\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$ | Scalar-part reading at normalisation (Born rule) |
 
 ## Further Reading
 

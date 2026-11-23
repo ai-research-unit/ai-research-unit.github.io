@@ -97,13 +97,13 @@ A superselection structure in its algebraic form requires the sectors to be the 
 $$
 \tilde{Q}_1, \tilde{Q}_2\in\mathbb{B}_{\Psi} \ \Longrightarrow\ (\tilde{Q}_1\tilde{Q}_2)^{*} = \tilde{Q}_2\tilde{Q}_1 = \tilde{Q}_1\tilde{Q}_2 \iff [\tilde{Q}_1,\tilde{Q}_2] = 0 ,
 $$
-and the idempotents provide an elementary counterexample. For the two pure-state idempotents $\tilde\Pi(\vec u) = \tfrac12(e_t+i\vec u)$ and $\tilde\Pi(\vec u_\nu) = \tfrac12(e_t+i\vec u_\nu)$ with $\vec u\cdot\vec u_\nu = 0$,
+and the idempotents provide an elementary counterexample. For the two pure-state idempotents $\tilde\Pi_{\mathrm{id}}(\vec u) = \tfrac12(e_t+i\vec u)$ and $\tilde\Pi_{\mathrm{id}}(\vec u_\nu) = \tfrac12(e_t+i\vec u_\nu)$ with $\vec u\cdot\vec u_\nu = 0$,
 $$
-4\,\tilde\Pi(\vec u)\tilde\Pi(\vec u_\nu) = e_t + i(\vec u+\vec u_\nu) - (i\vec u)(i\vec u_\nu),
+4\,\tilde\Pi_{\mathrm{id}}(\vec u)\tilde\Pi_{\mathrm{id}}(\vec u_\nu) = e_t + i(\vec u+\vec u_\nu) - (i\vec u)(i\vec u_\nu),
 $$
 whose Hermitian conjugate differs: the commutator is
 $$
-[\tilde\Pi(\vec u),\,\tilde\Pi(\vec u_\nu)] = -\tfrac12\,\vec u\times\vec u_\nu,
+[\tilde\Pi_{\mathrm{id}}(\vec u),\,\tilde\Pi_{\mathrm{id}}(\vec u_\nu)] = -\tfrac12\,\vec u\times\vec u_\nu,
 $$
 a non-zero element of the anti-Hermitian sector. The product of two informational elements is therefore not informational; it has a material component. Equivalently,
 $$

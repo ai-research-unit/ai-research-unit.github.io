@@ -88,7 +88,7 @@ with no temporal part and no dependence on $r'_{1t}$ or $r'_{2t}$. The temporal 
 
 For a momentum $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ the eigenvalues are $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)$, the two frequencies are $\nu_\pm=mc\,e^{\pm\theta_{\mathrm{rpd}}}$ for a massive momentum, and the product is the mass squared.
 
-The eigenprojectors lie in the other sector. They are $\tilde\Pi_\pm=\frac12(e_t\mp i\vec u_p)$, Hermitian idempotents, so $\tilde\Pi_\pm\in\mathbb{B}_{\Psi}$ although $\tilde P_{\Phi}\in\mathbb{B}_{\Phi}$. The decomposition of a material element is written with informational idempotents.
+The eigenprojectors lie in the other sector. They are $\tilde\Pi_{\mathrm{id},\pm}=\frac12(e_t\mp i\vec u_p)$, Hermitian idempotents, so $\tilde\Pi_{\mathrm{id},\pm}\in\mathbb{B}_{\Psi}$ although $\tilde P_{\Phi}\in\mathbb{B}_{\Phi}$. The decomposition of a material element is written with informational idempotents.
 
 Two null sets coincide here and nowhere else. On the sector the K norm is minus the algebraic norm, so lightlike and massless are one equation. That coincidence is *The K Norm and the Indefinite Structure*, §*The Six Restrictions*, and it is used here as a boundary rather than reproved.
 
@@ -390,32 +390,32 @@ The two cases are the exceptional point and the massless point, and they are not
 **The eigenprojectors are Hermitian idempotents and they are not material.** With $\vec u_p=\vec p/\lvert\vec p\rvert$,
 
 $$
-\tilde\Pi_\pm=\frac12\bigl(e_t\mp i\vec u_p\bigr),
+\tilde\Pi_{\mathrm{id},\pm}=\frac12\bigl(e_t\mp i\vec u_p\bigr),
 \qquad
-\tilde\Pi_\pm^{2}=\tilde\Pi_\pm,
+\tilde\Pi_{\mathrm{id},\pm}^{2}=\tilde\Pi_{\mathrm{id},\pm},
 \qquad
-\tilde\Pi_\pm^{*}=\tilde\Pi_\pm,
+\tilde\Pi_{\mathrm{id},\pm}^{*}=\tilde\Pi_{\mathrm{id},\pm},
 \qquad
-\tilde\Pi_++\tilde\Pi_-=e_t,
+\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t,
 \qquad
-\tilde\Pi_+\tilde\Pi_-=0,
+\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0,
 $$
 
-and the element reconstructs as $\tilde P_{\Phi}=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$. The projectors satisfy $\tilde P_{\Phi}\tilde\Pi_\pm=\lambda_\pm\tilde\Pi_\pm$, so they are right eigenprojectors, and the reconstruction is exact.
+and the element reconstructs as $\tilde P_{\Phi}=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$. The projectors satisfy $\tilde P_{\Phi}\tilde\Pi_{\mathrm{id},\pm}=\lambda_\pm\tilde\Pi_{\mathrm{id},\pm}$, so they are right eigenprojectors, and the reconstruction is exact.
 
 Each projector is a null element, and that is the whole point of the display. A pure state is a null element of the algebra, so the two pieces into which a massive momentum splits are lightlike. The momentum is not null; its two spectral components are. The mass is the product of the two eigenvalues, which are scalars, and the null set is not closed under addition: the sum of two null elements need not be null, and that is why a massive momentum can be written as a sum of two lightlike pieces.
 
-The projectors lie in the informational sector while the momentum lies in the material one. Two statements are involved and only the second is specific to this element. First, there is no non-zero anti-Hermitian idempotent: if $\tilde\Pi^{2}=\tilde\Pi$ and $\tilde\Pi^{*}=-\tilde\Pi$, then $\tilde\Pi^{*}=(\tilde\Pi^{2})^{*}=\tilde\Pi^{*}\tilde\Pi^{*}=\tilde\Pi$, so $\tilde\Pi=0$. The projectors therefore cannot be material. Second, they are exactly the Hermitian ones, because the spectral projectors of a semisimple element are polynomials in it,
+The projectors lie in the informational sector while the momentum lies in the material one. Two statements are involved and only the second is specific to this element. First, there is no non-zero anti-Hermitian idempotent: if $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$ and $\tilde\Pi_{\mathrm{id}}^{*}=-\tilde\Pi_{\mathrm{id}}$, then $\tilde\Pi_{\mathrm{id}}^{*}=(\tilde\Pi_{\mathrm{id}}^{2})^{*}=\tilde\Pi_{\mathrm{id}}^{*}\tilde\Pi_{\mathrm{id}}^{*}=\tilde\Pi_{\mathrm{id}}$, so $\tilde\Pi_{\mathrm{id}}=0$. The projectors therefore cannot be material. Second, they are exactly the Hermitian ones, because the spectral projectors of a semisimple element are polynomials in it,
 
 $$
-\tilde\Pi_\pm=\frac{\tilde P_{\Phi}-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp},
+\tilde\Pi_{\mathrm{id},\pm}=\frac{\tilde P_{\Phi}-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp},
 $$
 
 and the interpolation of the two imaginary eigenvalues returns $\frac12(e_t\mp i\vec u_p)$. Non-Hermitian idempotents do exist in the algebra: for a real unit $\vec u$ and a null complex unit vector $\hat w$ orthogonal to it, $\tfrac12(e_t+i\vec u-\hat w)$ is idempotent and not Hermitian. They are simply not the spectral projectors of this element. The modes of a four-vector are therefore states, and the sector that carries the vector does not carry its own decomposition.
 
 The spectral decomposition is the one operation of this entry that leaves the sector and re-enters it. The element is material, the projectors are informational, the eigenvalues are imaginary scalars, and the reconstruction is a sum of informational elements with imaginary coefficients whose result is material. That is the algebra's version of the statement that a mode decomposition is a change of description and not a change of object.
 
-The eigenprojectors are also the idempotents of the Peirce decomposition of the momentum. The pair $\{\tilde\Pi_+,\tilde\Pi_-\}$ is a complete set of orthogonal idempotents, so it defines a Peirce decomposition of the algebra relative to the momentum, with $\tilde P_{\Phi}$ acting as $\lambda_+$ on the first Peirce space and $\lambda_-$ on the second. The statement and its proofs are *The Biquaternion Eigenvalue Decomposition*; the entry uses only the pair and the two eigenvalues.
+The eigenprojectors are also the idempotents of the Peirce decomposition of the momentum. The pair $\{\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-}\}$ is a complete set of orthogonal idempotents, so it defines a Peirce decomposition of the algebra relative to the momentum, with $\tilde P_{\Phi}$ acting as $\lambda_+$ on the first Peirce space and $\lambda_-$ on the second. The statement and its proofs are *The Biquaternion Eigenvalue Decomposition*; the entry uses only the pair and the two eigenvalues.
 
 ## The Seven Four-Vectors
 
@@ -497,9 +497,9 @@ Boundary. The reading names roles. It does not claim that every observable is a 
 
 Read: the eigenprojector display and the idempotent argument of §*The Spectrum of a Biquaternion*.
 
-The two spectral projectors of a momentum are Hermitian idempotents, so they lie in the informational half. The momentum lies in the material half. The decomposition $\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ therefore writes a material element as a combination of informational ones with imaginary coefficients.
+The two spectral projectors of a momentum are Hermitian idempotents, so they lie in the informational half. The momentum lies in the material half. The decomposition $\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$ therefore writes a material element as a combination of informational ones with imaginary coefficients.
 
-An idempotent cannot be anti-Hermitian. If $\tilde\Pi^{2}=\tilde\Pi$ and $\tilde\Pi^{*}=-\tilde\Pi$, then $\tilde\Pi^{*}=(\tilde\Pi^{2})^{*}=\tilde\Pi^{*}\tilde\Pi^{*}=\tilde\Pi$, hence $\tilde\Pi=0$. There is therefore no material idempotent and no decomposition of a four-vector inside its own sector. The projectors that do occur are the Hermitian ones, obtained as the interpolation of the element at its two eigenvalues; the algebra also contains non-Hermitian idempotents, which are not the spectral projectors of anything in this entry.
+An idempotent cannot be anti-Hermitian. If $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$ and $\tilde\Pi_{\mathrm{id}}^{*}=-\tilde\Pi_{\mathrm{id}}$, then $\tilde\Pi_{\mathrm{id}}^{*}=(\tilde\Pi_{\mathrm{id}}^{2})^{*}=\tilde\Pi_{\mathrm{id}}^{*}\tilde\Pi_{\mathrm{id}}^{*}=\tilde\Pi_{\mathrm{id}}$, hence $\tilde\Pi_{\mathrm{id}}=0$. There is therefore no material idempotent and no decomposition of a four-vector inside its own sector. The projectors that do occur are the Hermitian ones, obtained as the interpolation of the element at its two eigenvalues; the algebra also contains non-Hermitian idempotents, which are not the spectral projectors of anything in this entry.
 
 The modes are null elements. A pure state is a null element, and the projectors of a massive momentum are pure states. The two pieces of a massive momentum are lightlike even though the momentum is not, which is why the mass can be a product of two lightlike eigenvalues while the momentum is timelike.
 
@@ -625,7 +625,7 @@ The sector is a chart and the informational sector is the other chart. The ident
 | the group | $\mathbb{B}^{\times}_{1}/\{\pm e_t\}\cong SO^{+}(1,3)$, $\mathbb{B}^{\times}_{1}\cong\mathrm{Spin}(1,3)$ |
 | the factorisation | $\tilde U=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, boost informational, rotation material |
 | the spectrum | $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)$; $\nu_\pm=mc\,e^{\pm\theta_{\mathrm{rpd}}}$; $\nu_+\nu_-=m^{2}c^{2}$ |
-| the projectors | $\tilde\Pi_\pm=\tfrac12(e_t\mp i\vec u_p)$, Hermitian idempotents, null elements, in $\mathbb{B}_{\Psi}$ |
+| the projectors | $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\mp i\vec u_p)$, Hermitian idempotents, null elements, in $\mathbb{B}_{\Psi}$ |
 | the degeneracies | $\vec p=0$: repeated eigenvalue; $E/c=\lvert\vec p\rvert$: null element, one zero eigenvalue |
 | the null set | the zero-divisor cone, real dimension three, apex excluded from the divisors |
 | the multiplicativity | $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$, so causal character composes |
@@ -648,7 +648,7 @@ The sector is a chart and the informational sector is the other chart. The ident
 | the rapidity | $\theta_{\mathrm{rpd}}$ | $\tanh\theta_{\mathrm{rpd}}=\lvert\vec p\rvert c/E$ |
 | the eigenvalues | $\lambda_\pm$ | $i(E/c\pm\lvert\vec p\rvert)$ |
 | the frequencies | $\nu_\pm$ | $\lambda_\pm/i=mc\,e^{\pm\theta_{\mathrm{rpd}}}$ |
-| the projectors | $\tilde\Pi_\pm$ | $\tfrac12(e_t\mp i\vec u_p)$, Hermitian idempotents |
+| the projectors | $\tilde\Pi_{\mathrm{id},\pm}$ | $\tfrac12(e_t\mp i\vec u_p)$, Hermitian idempotents |
 | the four-velocity | $\tilde V_{\Phi}$ | $i\gamma c\,e_t+\gamma\vec v$, norm $-c^{2}$ |
 | the four-momentum | $\tilde P_{\Phi}$ | $i\frac{E}{c}e_t+\vec p$, norm $-m^{2}c^{2}$ |
 | the four-wavevector | $\tilde K_{\Phi}$ | $i\frac{\omega}{c}e_t+\vec k_\Phi$, norm zero for light |

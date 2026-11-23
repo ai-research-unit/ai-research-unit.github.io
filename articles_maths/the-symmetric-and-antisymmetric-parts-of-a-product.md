@@ -137,7 +137,7 @@ $$
 
 the inertia $(3,1)$ of *The Two Halves as Orthogonal Complements* written on the four coordinates.
 
-**The biquaternion reading makes the split visible in one product.** The Peirce idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ are symmetric, so a product of two of them has a symmetric part given by the Jordan product and an antisymmetric part given by the bracket, and the bracket of the two idempotents is $\tfrac12[\tilde{Ζ},\cdot]$ read on the frame. The companion nilpotents $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ are neither symmetric nor antisymmetric, so they contribute to both halves of every product they enter, which is the algebraic form of the statement that a mixed corner is not stable under the transpose.
+**The biquaternion reading makes the split visible in one product.** The Peirce idempotents $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ are symmetric, so a product of two of them has a symmetric part given by the Jordan product and an antisymmetric part given by the bracket, and the bracket of the two idempotents is $\tfrac12[\tilde{Ζ},\cdot]$ read on the frame. The companion nilpotents $\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil},-+}$ are neither symmetric nor antisymmetric, so they contribute to both halves of every product they enter, which is the algebraic form of the statement that a mixed corner is not stable under the transpose.
 
 ## Summary
 

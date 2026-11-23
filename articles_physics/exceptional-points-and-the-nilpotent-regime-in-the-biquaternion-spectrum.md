@@ -48,7 +48,7 @@ A real vector part has $(\vec Q,\vec Q)=\sum_\eta Q_\eta^2$, which vanishes only
 Let $\vec Q\neq0$ and $B=0$. The eigenvalues are both $Q_t$. The eigenprojection formula of the non-degenerate regime is
 
 $$
-\tilde\Pi_\pm=\frac12\left(e_t\pm\vec{Ζ}\right),
+\tilde\Pi_{\mathrm{id},\pm}=\frac12\left(e_t\pm\vec{Ζ}\right),
 \qquad
 \vec{Ζ}=-\frac{i\vec Q}{B},
 \qquad
@@ -62,21 +62,21 @@ The element is a single Jordan block. In the matrix model,
 $$
 \boxed{\;\mathsf M_2(\tilde Q)\sim
 \begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}
-=Q_tI_2+\mathsf M_2(\tilde\nu),
+=Q_tI_2+\mathsf M_2(\tilde\pi_{\mathrm{nil}}),
 \qquad
-\mathsf M_2(\tilde\nu)=\begin{pmatrix}0&1\\0&0\end{pmatrix},
+\mathsf M_2(\tilde\pi_{\mathrm{nil}})=\begin{pmatrix}0&1\\0&0\end{pmatrix},
 \qquad
-\mathsf M_2(\tilde\nu)^2=0\;}.
+\mathsf M_2(\tilde\pi_{\mathrm{nil}})^2=0\;}.
 $$
 
 The two normal forms are separated by the scalar part.
 
 | Case | Condition | Normal form | Unit? | Exponential |
 | --- | --- | --- | --- | --- |
-| Invertible Jordan | $B=0$, $\vec Q\neq0$, $Q_t\neq0$ | $Q_t e_t+\tilde\nu$, $\tilde\nu^2=0$ | yes | $e^{Q_t}(e_t+\tilde\nu)$ |
-| Nilpotent | $B=0$, $\vec Q\neq0$, $Q_t=0$ | $\tilde\nu$, $\tilde\nu^2=0$ | no | $e_t+\tilde\nu$ |
+| Invertible Jordan | $B=0$, $\vec Q\neq0$, $Q_t\neq0$ | $Q_t e_t+\tilde\pi_{\mathrm{nil}}$, $\tilde\pi_{\mathrm{nil}}^2=0$ | yes | $e^{Q_t}(e_t+\tilde\pi_{\mathrm{nil}})$ |
+| Nilpotent | $B=0$, $\vec Q\neq0$, $Q_t=0$ | $\tilde\pi_{\mathrm{nil}}$, $\tilde\pi_{\mathrm{nil}}^2=0$ | no | $e_t+\tilde\pi_{\mathrm{nil}}$ |
 
-The second row is the sharp one. The element $\tilde\nu$ is a nonzero zero divisor, yet $\exp(\tilde\nu)=e_t+\tilde\nu$ is invertible, with inverse $e_t-\tilde\nu$. The exponential of a nilpotent is unipotent, and the unipotent line $h_t\mapsto e_t+t\tilde\nu$ is a line of invertibles whose tangent at the identity is a zero divisor. The zero divisor is the velocity of the line, not a point of it.
+The second row is the sharp one. The element $\tilde\pi_{\mathrm{nil}}$ is a nonzero zero divisor, yet $\exp(\tilde\pi_{\mathrm{nil}})=e_t+\tilde\pi_{\mathrm{nil}}$ is invertible, with inverse $e_t-\tilde\pi_{\mathrm{nil}}$. The exponential of a nilpotent is unipotent, and the unipotent line $h_t\mapsto e_t+t\tilde\pi_{\mathrm{nil}}$ is a line of invertibles whose tangent at the identity is a zero divisor. The zero divisor is the velocity of the line, not a point of it.
 
 The logarithm exists in the first row and fails in the second. In the invertible row,
 
@@ -130,11 +130,11 @@ The diabolic case is the scalar vertex of *The Eigenbasis of a Spectrally Regula
 ## Physical Readings
 
 - **The exceptional point is a coalescence of two modes.** The two eigenvalues meet and the two eigenstates become one. The reading is the standard one of non-Hermitian physics: two resonances of an open system are tuned until they coincide, and beyond the point the two branches exchange character.
-- **The Jordan block is a one-way coupling.** The matrix $Q_tI_2+\mathsf M_2(\tilde\nu)$ has one eigenvector; the nilpotent $\mathsf M_2(\tilde\nu)$ maps the missing direction onto the surviving one. The reading is a mode that decays into another with no return, the algebraic skeleton of a unidirectional coupling.
+- **The Jordan block is a one-way coupling.** The matrix $Q_tI_2+\mathsf M_2(\tilde\pi_{\mathrm{nil}})$ has one eigenvector; the nilpotent $\mathsf M_2(\tilde\pi_{\mathrm{nil}})$ maps the missing direction onto the surviving one. The reading is a mode that decays into another with no return, the algebraic skeleton of a unidirectional coupling.
 - **The square-root splitting is the measured mark.** A perturbation $\epsilon$ produces a frequency splitting $\propto\sqrt{\epsilon}$, and the two branches are the two sides of one square root. The reading is the standard interpolation of an exceptional-point sensor, and it is a statement about the family, not about the point alone.
 - **The nilpotent is not a particle.** $\vec Q$ with $\vec Q^2=0$ is the complex isotropic model of a lightlike direction, not a four-momentum, and not a real lightlike displacement either, since that has $Q_t\neq0$ and lies in $\Sigma_{01}$; the photon of the massless spectrum is a complex multiple of an idempotent, not a nilpotent. The nilpotent stratum of the cone is the other boundary stratum, and the two must not be identified.
 - **The unipotent line is a reversible motion with a zero-divisor velocity.** $\exp(tN)=e_t+tN$ is invertible for every finite $t$. The reading is that a reversible process can have a non-invertible infinitesimal generator in the limit, and the algebra keeps the two apart.
-- **A repeated root is a pole of order two, and the transform is where pole order lives.** The resolvent of the normal form $Q_tI_2+\mathsf M_2(\tilde\nu)$ is $(z-Q_t)^{-1}I_2+(z-Q_t)^{-2}N$, while the diabolic normal form $Q_tI_2$ gives only the first term. Inverting the frequency transform,
+- **A repeated root is a pole of order two, and the transform is where pole order lives.** The resolvent of the normal form $Q_tI_2+\mathsf M_2(\tilde\pi_{\mathrm{nil}})$ is $(z-Q_t)^{-1}I_2+(z-Q_t)^{-2}N$, while the diabolic normal form $Q_tI_2$ gives only the first term. Inverting the frequency transform,
 
 $$
 \frac{1}{2\pi i}\oint\frac{\exp(i\theta_{\mathrm{frt}})e^{\kappa_{\mathrm{dmp}}t}}{(\zeta-Q_t)^{2}}\,d\zeta=i\,t\,\exp(iQ_t t),\qquad \theta_{\mathrm{frt}}=\operatorname{Re}\zeta\,t,\ \kappa_{\mathrm{dmp}}=-\operatorname{Im}\zeta,
@@ -157,8 +157,8 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 - The spectrum of $\tilde Q=Q_te_t+\vec Q$ degenerates exactly when $B^2=(\vec Q,\vec Q)=0$.
 - The scalar part separates a diabolic point ($\vec Q=0$, semisimple) from an exceptional point ($\vec Q\neq0$, a Jordan block).
 - At an exceptional point the two eigenvalues coalesce, the eigenprojections diverge, and the centraliser contains no nontrivial idempotent pair.
-- The invertible Jordan normal form is $Q_t e_t+\tilde\nu$ with $\tilde\nu^2=0$ and $Q_t\neq0$; the nilpotent normal form is $\tilde\nu$ with $\tilde\nu^2=0$ and $Q_t=0$.
-- The exponential is $\exp(Q_te_t+\vec Q)=e^{Q_t}(e_t+\vec Q)$; in particular $\exp(\tilde\nu)=e_t+\tilde\nu$ is invertible although $\tilde\nu$ is a zero divisor.
+- The invertible Jordan normal form is $Q_t e_t+\tilde\pi_{\mathrm{nil}}$ with $\tilde\pi_{\mathrm{nil}}^2=0$ and $Q_t\neq0$; the nilpotent normal form is $\tilde\pi_{\mathrm{nil}}$ with $\tilde\pi_{\mathrm{nil}}^2=0$ and $Q_t=0$.
+- The exponential is $\exp(Q_te_t+\vec Q)=e^{Q_t}(e_t+\vec Q)$; in particular $\exp(\tilde\pi_{\mathrm{nil}})=e_t+\tilde\pi_{\mathrm{nil}}$ is invertible although $\tilde\pi_{\mathrm{nil}}$ is a zero divisor.
 - A linear perturbation splits the eigenvalues as $\sqrt{\epsilon}$ for a generic direction; the law belongs to the family, not to the point.
 - No exceptional point exists for a real vector part or for a Hermitian element; the phenomenon needs complex coefficients.
 - A diabolic point is a degeneracy with a diagonalisable block, an exceptional point a degeneracy with a Jordan block; only the second lies in the Jordan regime.
@@ -174,8 +174,8 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
 | $\mathcal{D}_{\mathrm{disc}}=-4B^2$ | the discriminant of the characteristic polynomial |
 | $\vec{Ζ}=-i\vec Q/B$ | the pure root of $+1$ of the non-degenerate regime, defined for $B\neq0$ |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ | the eigenprojections, defined for $B\neq0$ |
-| $\tilde\nu$ | a nonzero nilpotent, $\tilde\nu^2=0$ |
+| $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\vec{Ζ})$ | the eigenprojections, defined for $B\neq0$ |
+| $\tilde\pi_{\mathrm{nil}}$ | a nonzero nilpotent, $\tilde\pi_{\mathrm{nil}}^2=0$ |
 
 ## Further Reading
 

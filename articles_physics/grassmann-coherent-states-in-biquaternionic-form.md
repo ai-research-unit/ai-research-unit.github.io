@@ -177,7 +177,7 @@ a top-form element of the Grassmann algebra. The operator is even, its symbol is
 
 ## The Biquaternion Reading
 
-**The labels extend the algebra; the states do not.** The variable $\varkappa$ is not a biquaternion. It is an odd generator adjoined to the algebra, and the algebra's role in the construction is in the coefficients — the two-dimensional one-particle space $S=\mathbb{B}\tilde\Pi_+$ of the Fock-space article is a biquaternion module, and the analytic representation above is its realization as "polynomials of degree at most one". The coherent state as a *vector* is not a physical state: it has a component along the one-particle space with an odd weight, so it lies in the Grassmann-extended module and its components do not have a definite fermion number. The density matrix it defines,
+**The labels extend the algebra; the states do not.** The variable $\varkappa$ is not a biquaternion. It is an odd generator adjoined to the algebra, and the algebra's role in the construction is in the coefficients — the two-dimensional one-particle space $S=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ of the Fock-space article is a biquaternion module, and the analytic representation above is its realization as "polynomials of degree at most one". The coherent state as a *vector* is not a physical state: it has a component along the one-particle space with an odd weight, so it lies in the Grassmann-extended module and its components do not have a definite fermion number. The density matrix it defines,
 
 $$
 \rho_\varkappa=|\varkappa\rangle\langle\varkappa| ,

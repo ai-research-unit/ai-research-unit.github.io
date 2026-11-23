@@ -25,23 +25,23 @@ and consequently $\tilde Q^2$ is again a zero divisor, on the same complex line 
 **Theorem (the two kinds).** Every $\tilde Q\in\mathscr{Z}$ is exactly one of the following.
 
 1. **Square-zero**: $\tilde Q^2=0$, equivalently $Q_t=0$. These are the pure vectors with $(\vec Q,\vec Q)=0$.
-2. **Idempotent-like**: $\tilde Q=\tau\tilde\Pi$ with $\tau\in\mathbb{C}\setminus\{0\}$ and $\tilde\Pi$ a primitive idempotent; here $Q_t=\tau/2$, and $\tilde Q^2=\tau\tilde Q$.
+2. **Idempotent-like**: $\tilde Q=\tau\tilde\Pi_{\mathrm{id}}$ with $\tau\in\mathbb{C}\setminus\{0\}$ and $\tilde\Pi_{\mathrm{id}}$ a primitive idempotent; here $Q_t=\tau/2$, and $\tilde Q^2=\tau\tilde Q$.
 
-**Proof.** The matrix $\mathsf{M}_2(\tilde Q)$ is rank one, so its spectrum is $\{0,\tau\}$ with $\tau=\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$. If $\tau=0$ the matrix is nilpotent of trace and determinant zero, hence its square is zero, so $\tilde Q^2=0$; conversely $\tilde Q^2=0$ forces $N=0$ and $2Q_t\tilde Q=0$, so $Q_t=0$ because $\tilde Q\neq0$. If $\tau\neq0$ the matrix is diagonalisable with eigenvalues $\tau,0$, so $\mathsf{M}_2(\tilde Q)=\tau P$ with $P$ a rank-one idempotent, and transporting along the isomorphism $\mathsf{M}_2$ gives $\tilde Q=\tau\tilde\Pi$ for a rank-one idempotent $\tilde\Pi$ of the algebra; conversely such an element has norm $\tau^2\langle\tilde\Pi\rangle_{\natural}=0$ and is non-zero.
+**Proof.** The matrix $\mathsf{M}_2(\tilde Q)$ is rank one, so its spectrum is $\{0,\tau\}$ with $\tau=\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$. If $\tau=0$ the matrix is nilpotent of trace and determinant zero, hence its square is zero, so $\tilde Q^2=0$; conversely $\tilde Q^2=0$ forces $N=0$ and $2Q_t\tilde Q=0$, so $Q_t=0$ because $\tilde Q\neq0$. If $\tau\neq0$ the matrix is diagonalisable with eigenvalues $\tau,0$, so $\mathsf{M}_2(\tilde Q)=\tau P$ with $P$ a rank-one idempotent, and transporting along the isomorphism $\mathsf{M}_2$ gives $\tilde Q=\tau\tilde\Pi_{\mathrm{id}}$ for a rank-one idempotent $\tilde\Pi_{\mathrm{id}}$ of the algebra; conversely such an element has norm $\tau^2\langle\tilde\Pi_{\mathrm{id}}\rangle_{\natural}=0$ and is non-zero.
 
 **Remark (the pure square-zero elements).** The square-zero elements form the cone $\{\vec Q : (\vec Q,\vec Q)=0\}\subset\mathbb{B}_{V}$, the isotropic cone of the general plain bilinear form $\vec Q\cdot\vec Q$ on $\mathbb{C}^3$, and they are precisely the non-zero critical points at which $\mathsf{M}_2(\tilde Q)$ is nilpotent. The example $\tilde Q=\vec e_x+i\vec e_y$ of *The Biquaternion Quadratic Map and Its Julia Sets* is one of them.
 
 ## The Dynamics on the Cone
 
-**Theorem (the affine dynamics of the cone and its lines).** Let $\tilde\Pi$ be a primitive idempotent and let $\tilde Q=\lambda\tilde\Pi$, $\lambda\in\mathbb{C}$. Then under $F_{\tilde Q_2}$ with central parameter $\tilde Q_2=Ce_t$,
+**Theorem (the affine dynamics of the cone and its lines).** Let $\tilde\Pi_{\mathrm{id}}$ be a primitive idempotent and let $\tilde Q=\lambda\tilde\Pi_{\mathrm{id}}$, $\lambda\in\mathbb{C}$. Then under $F_{\tilde Q_2}$ with central parameter $\tilde Q_2=Ce_t$,
 
 $$
-\boxed{\;F_{\tilde Q_2}(\lambda\tilde\Pi)=\lambda^2\tilde\Pi+C e_t\;},
+\boxed{\;F_{\tilde Q_2}(\lambda\tilde\Pi_{\mathrm{id}})=\lambda^2\tilde\Pi_{\mathrm{id}}+C e_t\;},
 $$
 
-so the orbit leaves the line unless $C=0$; for $C=0$ the line $\mathbb{C}\tilde\Pi$ is invariant and the restriction is the complex map $\lambda\mapsto\lambda^2$ on the coordinate. For the pure square-zero elements and $C=0$, the orbit reaches $0$ in one step.
+so the orbit leaves the line unless $C=0$; for $C=0$ the line $\mathbb{C}\tilde\Pi_{\mathrm{id}}$ is invariant and the restriction is the complex map $\lambda\mapsto\lambda^2$ on the coordinate. For the pure square-zero elements and $C=0$, the orbit reaches $0$ in one step.
 
-**Proof.** $\tilde\Pi^2=\tilde\Pi$ gives $(\lambda\tilde\Pi)^2=\lambda^2\tilde\Pi$; adding $Ce_t$ leaves the line $\mathbb{C}\tilde\Pi$ exactly when $C=0$. For a square-zero $\tilde Q$, $\tilde Q^2=0$ and $F_0(\tilde Q)=0$.
+**Proof.** $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$ gives $(\lambda\tilde\Pi_{\mathrm{id}})^2=\lambda^2\tilde\Pi_{\mathrm{id}}$; adding $Ce_t$ leaves the line $\mathbb{C}\tilde\Pi_{\mathrm{id}}$ exactly when $C=0$. For a square-zero $\tilde Q$, $\tilde Q^2=0$ and $F_0(\tilde Q)=0$.
 
 **Remark ($\tilde Q_2=0$, the cone as a union of invariant lines).** For the parameter zero the cone is a union of complex lines through the origin, each mapped into itself with the square on the coordinate, and the induced map on the projective surface of lines is the identity. **The cone carries a foliation by invariant lines on which the dynamics is the scalar square**, and this is the only part of the biquaternion dynamics that is completely understood.
 
@@ -59,13 +59,13 @@ and its two parts are the **zero-divisor part** $J_{\tilde Q_2}\cap\mathscr{Z}$ 
 
 The name records that on $\Sigma(\mathbb{B})$ the derivative of $F_{\tilde Q_2}$ is singular, so the local dynamics is not locally invertible and the Julia set there is not a complex manifold; every quantitative statement about the fractal — the escape radius, the Green's function, the dimension — needs a separate argument on the singular set.
 
-**Theorem (the idempotent manifold lies on the Julia set of the parameter zero).** For $\tilde Q_2=0$, every idempotent $\tilde\Pi$ lies in $J_0$. The idempotents form the smooth complex surface $\{\tilde\Pi^2=\tilde\Pi\}$ inside the cone $\mathscr{Z}$, and hence
+**Theorem (the idempotent manifold lies on the Julia set of the parameter zero).** For $\tilde Q_2=0$, every idempotent $\tilde\Pi_{\mathrm{id}}$ lies in $J_0$. The idempotents form the smooth complex surface $\{\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}\}$ inside the cone $\mathscr{Z}$, and hence
 
 $$
-\boxed{\;\{\tilde\Pi : \tilde\Pi^2=\tilde\Pi\}\subset J_0\cap\mathscr{Z}=\Sigma_0\cap\mathscr{Z}\;}.
+\boxed{\;\{\tilde\Pi_{\mathrm{id}} : \tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}\}\subset J_0\cap\mathscr{Z}=\Sigma_0\cap\mathscr{Z}\;}.
 $$
 
-**Proof.** An idempotent is a fixed point, $F_0(\tilde\Pi)=\tilde\Pi$, and its matrix has spectrum $\{0,1\}$ with distinct eigenvalues, so $\rho(\mathsf{M}_2(\tilde\Pi))=1$ and $\mathsf{M}_2(\tilde\Pi)$ is diagonalisable; hence $\tilde\Pi\in\mathcal K_0$ by the corollary on the parameter zero of *The Biquaternion Quadratic Map and Its Julia Sets*. For $\lambda>1$ the element $\lambda\tilde\Pi$ has $\rho=\lambda>1$ and lies outside $\mathcal K_0$, while $\lambda\tilde\Pi\to\tilde\Pi$ as $\lambda\to1$. So every neighbourhood of $\tilde\Pi$ meets the complement of $\mathcal K_0$, and $\tilde\Pi\in\partial\mathcal K_0=J_0$. The variety of idempotents is the orbit of a single rank-one idempotent under the group of invertibles, hence smooth of complex dimension two, and it is contained in the cone by $\langle\tilde\Pi\rangle_{\natural}=0$ for an idempotent.
+**Proof.** An idempotent is a fixed point, $F_0(\tilde\Pi_{\mathrm{id}})=\tilde\Pi_{\mathrm{id}}$, and its matrix has spectrum $\{0,1\}$ with distinct eigenvalues, so $\rho(\mathsf{M}_2(\tilde\Pi_{\mathrm{id}}))=1$ and $\mathsf{M}_2(\tilde\Pi_{\mathrm{id}})$ is diagonalisable; hence $\tilde\Pi_{\mathrm{id}}\in\mathcal K_0$ by the corollary on the parameter zero of *The Biquaternion Quadratic Map and Its Julia Sets*. For $\lambda>1$ the element $\lambda\tilde\Pi_{\mathrm{id}}$ has $\rho=\lambda>1$ and lies outside $\mathcal K_0$, while $\lambda\tilde\Pi_{\mathrm{id}}\to\tilde\Pi_{\mathrm{id}}$ as $\lambda\to1$. So every neighbourhood of $\tilde\Pi_{\mathrm{id}}$ meets the complement of $\mathcal K_0$, and $\tilde\Pi_{\mathrm{id}}\in\partial\mathcal K_0=J_0$. The variety of idempotents is the orbit of a single rank-one idempotent under the group of invertibles, hence smooth of complex dimension two, and it is contained in the cone by $\langle\tilde\Pi_{\mathrm{id}}\rangle_{\natural}=0$ for an idempotent.
 
 **Corollary (the singular Julia set is not small).** $\Sigma_0$ contains a complex surface, so it is not a curve and not a countable set; in particular no statement that the singular part is negligible for the dimension can be true without qualification.
 
@@ -108,7 +108,7 @@ Every zero divisor of the biquaternion algebra satisfies $\tilde Q^2=2Q_t\tilde 
 | $\mathbb{B}_{V}=\{Q_t=0\}$ | the vector part, the pure subspace |
 | $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathbb{B}_{V}$ | the critical set of $F_{\tilde Q_2}$ |
 | $\Sigma_{\tilde Q_2}=J_{\tilde Q_2}\cap\Sigma(\mathbb{B})$ | the singular Julia set |
-| $\tilde\Pi$ | an idempotent, $\tilde\Pi^2=\tilde\Pi$ |
+| $\tilde\Pi_{\mathrm{id}}$ | an idempotent, $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$ |
 | $\tau=2Q_t$ | the non-zero eigenvalue of $\mathsf{M}_2(\tilde Q)$ on the cone |
 | $\rho(\mathsf{M}_2(\tilde Q))$ | the spectral radius |
 | $d$, $k$ | the algebraic degree and the complex dimension of the model |

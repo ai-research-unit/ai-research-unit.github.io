@@ -175,7 +175,7 @@ The constraint row deserves a note. The framework does not *explain* why $\theta
 
 ## One Unit and Eighteen Ratios
 
-A parameter count is only meaningful once units are fixed. With $\hbar=c=1$ the model has one dimensionful unit, and choosing it removes one parameter from the physical content:
+A parameter count is only meaningful once units are fixed. The model\'s parameters carry a single dimensionful scale, and choosing the unit of that scale removes one parameter from the physical content:
 
 $$
 19\ \text{parameters}-1\ \text{unit}=18\ \text{dimensionless numbers}.

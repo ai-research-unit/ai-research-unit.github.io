@@ -208,7 +208,7 @@ so the cross term takes the value $\tfrac34$ on the vector part and $-\tfrac14$ 
 
 **The apparent conflict.** The series gives two summands and this subsection lists three carriers: $0$, $\tfrac12$ and $1$. Both counts are right, and they count different things.
 
-**The resolution.** A summand is a subspace of the algebra; a factor is not. The algebra holds $V_{1}$ and $V_{0}$ as subspaces, canonically, by the two projectors. The spin-$\tfrac12$ carrier is the slot $S$, and $S$ is not a subspace of $S\otimes S^{*}$: it is one of the two things being multiplied. To see a spinor inside the algebra one must choose a minimal left ideal, that is an idempotent $\tilde\Pi_{+}=\tfrac12(e_t+i\vec u_{\mathrm{r}})$, and then $\mathbb{C}\tilde\Pi_{+}$ carries $V_{1/2}$ under left multiplication. The ideal is a realization, not a summand, and the axis in it is a choice.
+**The resolution.** A summand is a subspace of the algebra; a factor is not. The algebra holds $V_{1}$ and $V_{0}$ as subspaces, canonically, by the two projectors. The spin-$\tfrac12$ carrier is the slot $S$, and $S$ is not a subspace of $S\otimes S^{*}$: it is one of the two things being multiplied. To see a spinor inside the algebra one must choose a minimal left ideal, that is an idempotent $\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec u_{\mathrm{r}})$, and then $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ carries $V_{1/2}$ under left multiplication. The ideal is a realization, not a summand, and the axis in it is a choice.
 
 **The three carries, stated exactly.** $V_{0}$ is canonical and one-dimensional, and it is the centre. $V_{1}$ is canonical and three-dimensional, and it is the vector part. $V_{1/2}$ is canonical as a factor and not as a subspace: it is realized by any minimal left ideal, and the family of realizations is a family of axes. So the two integer carriers are data of the algebra and the half-integer carrier is data of the algebra plus a choice.
 
@@ -279,7 +279,7 @@ The two summands are subspaces of the algebra and the half-integer carrier is a 
 | $\natural\tilde X=a\,e_t-\vec v$ | the conjugation on $\tilde X=a\,e_t+\vec v$ |
 | $P_{0}=\tfrac12(\mathrm{id}+\natural)$, $P_{1}=\tfrac12(\mathrm{id}-\natural)$ | the Clebsch–Gordan projectors |
 | $\mathfrak{k}$, $\mathbb{C}\mathfrak{k}$ | the real vector part $\mathbb{R}\vec e_{x}\oplus\mathbb{R}\vec e_{y}\oplus\mathbb{R}\vec e_{z}$, and its complexification |
-| $\tilde\Pi_{+}=\tfrac12(e_t+i\vec u_{\mathrm{r}})$ | the idempotent that realizes the slot as a minimal left ideal |
+| $\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec u_{\mathrm{r}})$ | the idempotent that realizes the slot as a minimal left ideal |
 
 ## Further Reading
 

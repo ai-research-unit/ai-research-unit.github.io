@@ -5,7 +5,7 @@
 
 This article determines the solutions of the equation $\tilde\zeta^2 = -1$ in the split-quaternion algebra. It proves that the solutions are exactly the elements of the vector subspace of unit norm, identifies them with the complex structures of the plane, proves that they form a single conjugacy class and describes them as a homogeneous space, relates them to the idempotents and to the zero divisors, and compares the result with the quaternion case.
 
-The split-quaternion algebra, its basis, its vector subspace $V$, its central product $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$, its idempotents $\tilde\pi_{1,2}$ and its conjugation are assumed from *Split-Quaternion Algebra*; the metrical reading of $\langle\cdot\rangle_{\natural}$ is in *Split-Quaternion Norm and Invertibility*. The criterion that the invertibles are the elements with $N \neq 0$ and the description of the zero divisors are assumed from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in *Split-Quaternions and Hyperbolic Geometry*, and the double cover of the Lorentz group that acts on it in *Split-Quaternion Rotations and the Lorentz Group*. Nothing physical is invoked.
+The split-quaternion algebra, its basis, its vector subspace $V$, its central product $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$, its idempotents $\tilde\pi_{\mathrm{id},1,2}$ and its conjugation are assumed from *Split-Quaternion Algebra*; the metrical reading of $\langle\cdot\rangle_{\natural}$ is in *Split-Quaternion Norm and Invertibility*. The criterion that the invertibles are the elements with $N \neq 0$ and the description of the zero divisors are assumed from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in *Split-Quaternions and Hyperbolic Geometry*, and the double cover of the Lorentz group that acts on it in *Split-Quaternion Rotations and the Lorentz Group*. Nothing physical is invoked.
 
 ## The Equation and the Reduction to the Vector Subspace
 
@@ -124,36 +124,36 @@ The companion equation clarifies the role of the two signs.
 **Theorem (The Idempotents Come from the Roots of $+1$).** Let $\eta \in V$ be a solution of $\eta^2 = 1$. Then
 
 $$
-\tilde\pi_+ = \tfrac{1}{2}(1 + \eta), \qquad \tilde\pi_- = \tfrac{1}{2}(1 - \eta)
+\tilde\pi_{\mathrm{id},+} = \tfrac{1}{2}(1 + \eta), \qquad \tilde\pi_{\mathrm{id},-} = \tfrac{1}{2}(1 - \eta)
 $$
 
-are idempotents with $\tilde\pi_+ + \tilde\pi_- = 1$ and $\tilde\pi_+ \tilde\pi_- = 0$, and they are zero divisors. The idempotents $\tilde\pi_{1,2}$ of (*Split-Quaternion Algebra*, §*The Idempotents*) are the case $\eta = \vec e_y$. Conversely every non-scalar idempotent of $\mathbb{H}_{\mathrm{spl}}$ is of this form for a unique root $\eta$ of $+1$ in $V$, and the correspondence between non-scalar idempotents and the roots of $+1$ in $V$ is a bijection.
+are idempotents with $\tilde\pi_{\mathrm{id},+} + \tilde\pi_{\mathrm{id},-} = 1$ and $\tilde\pi_{\mathrm{id},+} \tilde\pi_{\mathrm{id},-} = 0$, and they are zero divisors. The idempotents $\tilde\pi_{\mathrm{id},1,2}$ of (*Split-Quaternion Algebra*, §*The Idempotents*) are the case $\eta = \vec e_y$. Conversely every non-scalar idempotent of $\mathbb{H}_{\mathrm{spl}}$ is of this form for a unique root $\eta$ of $+1$ in $V$, and the correspondence between non-scalar idempotents and the roots of $+1$ in $V$ is a bijection.
 
-**Proof.** The identities are the same computation as for $\tilde\pi_{1,2}$: $\big(\tfrac12(1\pm\eta)\big)^2 = \tfrac14(1 \pm 2\eta + \eta^2) = \tfrac12(1\pm\eta)$, and the products and the sum follow from $\eta^2=1$. The product that decides the zero divisor is
+**Proof.** The identities are the same computation as for $\tilde\pi_{\mathrm{id},1,2}$: $\big(\tfrac12(1\pm\eta)\big)^2 = \tfrac14(1 \pm 2\eta + \eta^2) = \tfrac12(1\pm\eta)$, and the products and the sum follow from $\eta^2=1$. The product that decides the zero divisor is
 
 $$
 \Big(\tfrac12(1+\eta)\Big)\overline{\Big(\tfrac12(1+\eta)\Big)} = \tfrac14(1+\eta)(1-\eta) = \tfrac14(1-\eta^2) = 0,
 $$
 
-so the idempotent is a zero divisor, and the same holds for $\tilde\pi_-$.
+so the idempotent is a zero divisor, and the same holds for $\tilde\pi_{\mathrm{id},-}$.
 
-For the converse, let $\tilde\pi$ be a non-scalar idempotent, and write $\tilde\pi = \tfrac12 + u$ with $u \in V$. From $\tilde\pi^2 = \tilde\pi$ one gets $u^2 = \tfrac14$, so $\langle u\rangle_{\natural} = -\tfrac14$ and $u \neq 0$; putting $\eta = 2u$ gives $\eta \in V$, $\eta^2 = 1$ and $\langle \eta\rangle_{\natural} = -1$, so $\eta$ is a root of $+1$ in $V$ and $\tilde\pi = \tfrac12(1 + \eta)$, with $\eta = 2\tilde\pi - 1$ determined by $\tilde\pi$. Also $\tilde\pi^{\natural} = \tfrac12 - u = 1 - \tilde\pi$. Put $\eta = 2\tilde\pi - 1$. Then
+For the converse, let $\tilde\pi_{\mathrm{id}}$ be a non-scalar idempotent, and write $\tilde\pi_{\mathrm{id}} = \tfrac12 + u$ with $u \in V$. From $\tilde\pi_{\mathrm{id}}^2 = \tilde\pi_{\mathrm{id}}$ one gets $u^2 = \tfrac14$, so $\langle u\rangle_{\natural} = -\tfrac14$ and $u \neq 0$; putting $\eta = 2u$ gives $\eta \in V$, $\eta^2 = 1$ and $\langle \eta\rangle_{\natural} = -1$, so $\eta$ is a root of $+1$ in $V$ and $\tilde\pi_{\mathrm{id}} = \tfrac12(1 + \eta)$, with $\eta = 2\tilde\pi_{\mathrm{id}} - 1$ determined by $\tilde\pi_{\mathrm{id}}$. Also $\tilde\pi_{\mathrm{id}}^{\natural} = \tfrac12 - u = 1 - \tilde\pi_{\mathrm{id}}$. Put $\eta = 2\tilde\pi_{\mathrm{id}} - 1$. Then
 
 $$
-\bar{\eta} = 2\tilde\pi^{\natural} - 1 = 2(1 - \tilde\pi) - 1 = 1 - 2\tilde\pi = -\eta,
+\bar{\eta} = 2\tilde\pi_{\mathrm{id}}^{\natural} - 1 = 2(1 - \tilde\pi_{\mathrm{id}}) - 1 = 1 - 2\tilde\pi_{\mathrm{id}} = -\eta,
 $$
 
-so $\eta$ lies in the $-1$ eigenspace of the conjugation, which is $V$; and $\eta^2 = 4\tilde\pi^2 - 4\tilde\pi + 1 = 1$. The element $\tilde\pi$ is recovered from $\eta$ as $\tfrac12(1+\eta)$, so the correspondence is bijective.
+so $\eta$ lies in the $-1$ eigenspace of the conjugation, which is $V$; and $\eta^2 = 4\tilde\pi_{\mathrm{id}}^2 - 4\tilde\pi_{\mathrm{id}} + 1 = 1$. The element $\tilde\pi_{\mathrm{id}}$ is recovered from $\eta$ as $\tfrac12(1+\eta)$, so the correspondence is bijective.
 
 ### The Roots Are Not Zero Divisors
 
-**Theorem (Disjointness and Generation).** No solution of $\tilde\zeta^2 = -1$ is a zero divisor. However, every solution generates a zero divisor by multiplication by an idempotent: for each solution $\tilde\zeta$ and each idempotent $\tilde\pi$ of a root of $+1$, the product $\tilde\zeta\tilde\pi$ is a nonzero zero divisor, since
+**Theorem (Disjointness and Generation).** No solution of $\tilde\zeta^2 = -1$ is a zero divisor. However, every solution generates a zero divisor by multiplication by an idempotent: for each solution $\tilde\zeta$ and each idempotent $\tilde\pi_{\mathrm{id}}$ of a root of $+1$, the product $\tilde\zeta\tilde\pi_{\mathrm{id}}$ is a nonzero zero divisor, since
 
 $$
-\langle\tilde\zeta\tilde\pi\rangle_{\natural} = \langle\tilde\zeta\rangle_{\natural} \langle\tilde\pi\rangle_{\natural} = 1 \cdot 0 = 0 .
+\langle\tilde\zeta\tilde\pi_{\mathrm{id}}\rangle_{\natural} = \langle\tilde\zeta\rangle_{\natural} \langle\tilde\pi_{\mathrm{id}}\rangle_{\natural} = 1 \cdot 0 = 0 .
 $$
 
-**Proof.** $\langle\tilde\zeta\rangle_{\natural} = 1 \neq 0$, so $\tilde\zeta$ is invertible and not a zero divisor, by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*. The product $\tilde\zeta\tilde\pi$ is nonzero because $\tilde\zeta$ is invertible and $\tilde\pi \neq 0$, and its split-quaternion norm is zero by multiplicativity and the vanishing of $\langle\tilde\pi\rangle_{\natural}$.
+**Proof.** $\langle\tilde\zeta\rangle_{\natural} = 1 \neq 0$, so $\tilde\zeta$ is invertible and not a zero divisor, by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*. The product $\tilde\zeta\tilde\pi_{\mathrm{id}}$ is nonzero because $\tilde\zeta$ is invertible and $\tilde\pi_{\mathrm{id}} \neq 0$, and its split-quaternion norm is zero by multiplicativity and the vanishing of $\langle\tilde\pi_{\mathrm{id}}\rangle_{\natural}$.
 
 The picture is therefore the following. The roots of $+1$ in $V$ form the level set $N = -1$ and produce the idempotents, which are zero divisors and split the algebra; the roots of $-1$ form the level set $N = 1$, produce the copies of $\mathbb{C}$, and are invertible. The two loci are disjoint level sets in the same three-dimensional space $V$, one cut out by $N = -1$ and one by $N = 1$.
 
@@ -186,7 +186,7 @@ Each solution is a vector of the vector subspace with $\operatorname{Sc} = 0$ an
 
 The solutions form a single conjugacy class, the class of $\vec e_x$; the stabiliser of $\vec e_x$ is its centraliser $\mathbb{C}^{\times}$, so the root set is the homogeneous space ${\mathbb{H}_{\mathrm{spl}}}^{\times}/\mathbb{C}^{\times}$, of real dimension two. The group $U \cong \mathrm{SL}_2(\mathbb{R})$ acts with two orbits, the two components, and each component is a copy of the hyperbolic plane $\mathrm{SL}_2(\mathbb{R})/SO(2)$.
 
-The roots of $+1$ play the companion role: they are $\pm 1$ together with the level set $N = -1$ in $V$, and each non-central root of $+1$ produces the idempotents $\tfrac12(1 \pm \eta)$, which are zero divisors; the idempotents $\tilde\pi_{1,2}$ are the case $\eta = \vec e_y$. Every solution of $\tilde\zeta^2 = -1$ generates a zero divisor by multiplication with an idempotent, although it is not itself one. In the quaternion case the solution set is the compact connected two-dimensional set and the homogeneous space is $Sp(1)/\mathrm{U}(1)$; the biquaternion case is a later system of Part V, named and pointed forward.
+The roots of $+1$ play the companion role: they are $\pm 1$ together with the level set $N = -1$ in $V$, and each non-central root of $+1$ produces the idempotents $\tfrac12(1 \pm \eta)$, which are zero divisors; the idempotents $\tilde\pi_{\mathrm{id},1,2}$ are the case $\eta = \vec e_y$. Every solution of $\tilde\zeta^2 = -1$ generates a zero divisor by multiplication with an idempotent, although it is not itself one. In the quaternion case the solution set is the compact connected two-dimensional set and the homogeneous space is $Sp(1)/\mathrm{U}(1)$; the biquaternion case is a later system of Part V, named and pointed forward.
 
 ## Summary of Notation
 

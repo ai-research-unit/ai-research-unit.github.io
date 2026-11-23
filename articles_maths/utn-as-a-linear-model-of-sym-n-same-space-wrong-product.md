@@ -110,7 +110,7 @@ so the isomorphism is the identity on the diagonal and halves the off-diagonal u
 
 **The products are compared on one example.** Take $U=E_{12}$ and $V=E_{12}$, so that $UV=0$. Then $S(UV)=0$, while $S(U)\circ S(V)=\tfrac14\sigma_1\circ\sigma_1=\tfrac14\mathrm{I}\neq0$. So the product of the images is nonzero although the image of the product is zero, and the failure is a factor of a quarter of the identity.
 
-**The biquaternion reading names the two structures.** The idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ are a basis of the diagonal of $\operatorname{Sym}_2$, and the corner $\mathbb{B}_{+-}$ is the off-diagonal line, so $S$ identifies the corner with the off-diagonal symmetric line. The two companion nilpotents $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ are the two directions of that corner, and their product is the idempotent $\tilde\Pi_+$: an associative product with no Jordan counterpart, which is exactly the failure that the article measures.
+**The biquaternion reading names the two structures.** The idempotents $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ are a basis of the diagonal of $\operatorname{Sym}_2$, and the corner $\mathbb{B}_{+-}$ is the off-diagonal line, so $S$ identifies the corner with the off-diagonal symmetric line. The two companion nilpotents $\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil},-+}$ are the two directions of that corner, and their product is the idempotent $\tilde\Pi_{\mathrm{id},+}$: an associative product with no Jordan counterpart, which is exactly the failure that the article measures.
 
 ## Summary
 

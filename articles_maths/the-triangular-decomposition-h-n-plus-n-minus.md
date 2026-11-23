@@ -136,7 +136,7 @@ So the two nilpotent summands are abelian, each of dimension $1$, and their brac
 
 **The four Peirce lines of the coordinate flag are the three summands split once more.** The lines $\mathbb{C}E_{11}$ and $\mathbb{C}E_{22}$ make up the diagonal, and $n_+$ and $n_-$ are the two off-diagonal lines. So the triangular decomposition is the Peirce decomposition of *The Fine Decomposition against the Diagonal* with the four lines collected by the sign of the weight, and at $n=2$ no line is lost in the collecting.
 
-**The biquaternion frame uses the opposite grouping.** The idempotents $\tilde\Pi_\pm$ lie in the diagonal, the two companion nilpotents $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ lie one in $n_+$ and one in $n_-$ at the coordinate flag, and the gauge rescales the pair reciprocally. The grouping of the frame is by the two corners, not by the sign of the root, and the difference between the two groupings is the difference between the Peirce reading and the triangular one.
+**The biquaternion frame uses the opposite grouping.** The idempotents $\tilde\Pi_{\mathrm{id},\pm}$ lie in the diagonal, the two companion nilpotents $\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil},-+}$ lie one in $n_+$ and one in $n_-$ at the coordinate flag, and the gauge rescales the pair reciprocally. The grouping of the frame is by the two corners, not by the sign of the root, and the difference between the two groupings is the difference between the Peirce reading and the triangular one.
 
 ## Summary
 

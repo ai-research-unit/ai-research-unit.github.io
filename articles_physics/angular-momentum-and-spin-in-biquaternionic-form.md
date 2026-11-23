@@ -175,10 +175,10 @@ The three cases are collected in the following table, together with the ladder c
 
 Here $\sigma_\pm = \tfrac{1}{2}(\sigma_1 \pm i\sigma_2)$ are the standard raising and lowering matrices. The elements $\tilde S_{\Psi,\eta}$ lie in $\mathbb{B}_{\Psi}$ and are Hermitian. The ladder operators do **not**: $\tilde S_{\Psi,\pm}^{*} = \tilde S_{\Psi,\mp}$, so they are neither Hermitian nor in $\mathbb{B}_{\Psi}$; they lie in the full algebra $\mathbb{B}$. They are also invariant, up to sign, under quaternion conjugation, $\tilde S_{\Psi,\pm}^{\natural} = -\tilde S_{\Psi,\pm}$.
 
-The pure spin states are the idempotents $\tilde\Pi(\pm\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ with $\vec u$ a unit pure real quaternion, and they are the eigenstates of the spin along $\vec u$:
+The pure spin states are the idempotents $\tilde\Pi_{\mathrm{id}}(\pm\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ with $\vec u$ a unit pure real quaternion, and they are the eigenstates of the spin along $\vec u$:
 
 $$
-\sum_\eta  \vec u_\eta \tilde{S}_{\Psi,\eta}\, \tilde\Pi(\pm\vec u) = \pm\frac{\hbar}{2}\, \tilde\Pi(\pm\vec u) .
+\sum_\eta  \vec u_\eta \tilde{S}_{\Psi,\eta}\, \tilde\Pi_{\mathrm{id}}(\pm\vec u) = \pm\frac{\hbar}{2}\, \tilde\Pi_{\mathrm{id}}(\pm\vec u) .
 $$
 
 This is the content of the parent article, expressed in the notation needed below.
@@ -381,7 +381,7 @@ It is useful to separate the two kinds of result that the article contains.
 - The spin commutation relations $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=i\,\hbar\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\eta}$ follow from the quaternion product rule $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$, the square $\vec e_\eta^2=-e_t$, and $i^2=-1$; the Hermiticity of $i\vec e_\eta$ is what places the observables in $\mathbb{B}_{\Psi}$.
 - The commutator of two Hermitian observables is $-2(\vec h_\Psi\times\vec k_\Phi)$, a pure real quaternion in $\mathbb{B}_{\Phi}\cap\mathbb{B}_{H}$: the commutator of observables is a rotation generator.
 - The pure-spin Casimir $\tilde S_{\Psi}^2=\frac{3\,\hbar^{2}}{4}e_t$ is a central element of $\mathbb{B}$, and its value $\hbar^{2}\,s\,(s+1)$ with $s=\tfrac12$ follows from $(i\vec e_\eta)^2=+e_t$.
-- The spin eigenstates are the idempotents $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, and $\sum_\eta \vec u_\eta\tilde S_{\Psi,\eta}$ has eigenvalues $\pm\frac{\hbar}{2}$ on them.
+- The spin eigenstates are the idempotents $\tilde\Pi_{\mathrm{id}}(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, and $\sum_\eta \vec u_\eta\tilde S_{\Psi,\eta}$ has eigenvalues $\pm\frac{\hbar}{2}$ on them.
 - The spin ladder operators are nilpotent and null in the biquaternion norm, $\tilde S_{\Psi,\pm}^2=0$ and $\langle\tilde S_{\Psi,\pm}\rangle_{\natural}=0$: they are zero divisors of the algebra.
 - Orbital operators occupy the central scalar slot $e_t$ and spin operators the vector slots $i\vec e_\eta$, an algebraic distinction between external and internal degrees of freedom.
 - As a module over $\mathbb{B}$, the algebra affords only $s=0$ and $s=\tfrac12$; the $s=1$ vector representation appears through the adjoint action on the imaginary quaternions, and higher spins require tensor products.
@@ -427,7 +427,7 @@ The spin ladder operators are nilpotent and null in the biquaternion norm, and h
 | $\tilde S_{\Psi,\mathrm{tot}}^2=\sum_\eta\tilde S_{\Psi,\mathrm{tot},\eta}^2$ | Casimir operator, eigenvalue $\hbar^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)$ |
 | $[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}]=i\,\hbar\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\mathrm{tot},\eta}$ | Angular-momentum algebra |
 | $\tilde u(\theta_{\mathrm{rat}},\vec u)=\cos\tfrac{\theta_{\mathrm{rat}}}{2}e_t+\sin\tfrac{\theta_{\mathrm{rat}}}{2}\sum_\eta \vec u_\eta\vec e_\eta$ | Rotation rotor (unit real quaternion) |
-| $\tilde\Pi(\pm\vec u)=\tfrac{1}{2}(e_t\pm i\vec u)$ | Spin eigenstates (idempotents) |
+| $\tilde\Pi_{\mathrm{id}}(\pm\vec u)=\tfrac{1}{2}(e_t\pm i\vec u)$ | Spin eigenstates (idempotents) |
 | $s_{\mathrm{tot}},s_{\mathrm{tot},z}$; $l,l_z$; $s,s_z$ | Total, orbital, and spin quantum numbers |
 | $\langle l,l_z;\tfrac12,s_z|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ | Clebsch–Gordan coefficients (Condon–Shortley phase) |
 

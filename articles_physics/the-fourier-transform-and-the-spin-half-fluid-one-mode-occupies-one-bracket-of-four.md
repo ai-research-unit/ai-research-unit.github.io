@@ -87,7 +87,7 @@ The magnetisation current of a mode is the divergence of a constant bilinear, so
 
 The fluid article's vorticity 2-form is the antisymmetrised gradient of the frame element, and a constant frame has none. So a mode is irrotational and the question is what a superposition does.
 
-The measurement. On a grid of sixty-four events with $m=c=\hbar=1$, one mode at $\vec k_\Phi=(0.6,0)$ gave $\max\lvert\nabla\times\vec v\rvert=3.8\times10^{-17}$ — machine zero. Two modes at $\vec k_\Phi=(0.6,0)$ and $(0.6,\Delta_\Phi)$, amplitudes $1.0$ and $0.8$, same spin, gave
+The measurement. On a grid of sixty-four events with lengths in units of $1/k_m$ and momenta in units of $mc$, one mode at $\vec k_\Phi=(0.6,0)$ gave $\max\lvert\nabla\times\vec v\rvert=3.8\times10^{-17}$ — machine zero. Two modes at $\vec k_\Phi=(0.6,0)$ and $(0.6,\Delta_\Phi)$, amplitudes $1.0$ and $0.8$, same spin, gave
 
 | $\Delta_\Phi$ | $\max\lvert\nabla\times\vec v\rvert$ | the density's range |
 | --- | --- | --- |

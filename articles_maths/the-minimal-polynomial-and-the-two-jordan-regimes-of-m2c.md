@@ -61,7 +61,7 @@ $$
 
 **Proof.** Each is conjugate to $E_{12}$ by the theorem, and conjugacy is transitive. This is where the dimension pays: at order three the nilpotent orbits are two, indexed by the partitions $3$ and $2+1$, while at order two only the partition $2$ survives.
 
-**The companion pairs.** The two matrices $\begin{pmatrix}0&1\\ 0&0\end{pmatrix}$ and $\begin{pmatrix}0&0\\ 1&0\end{pmatrix}$ are conjugate by the swap of the two basis vectors, which is $\begin{pmatrix}0&1\\ 1&0\end{pmatrix}$ of square $I$ and determinant $-1$. In the biquaternion language these are $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$, and the conjugating swap is one point of the gauge of *The Companion Nilpotents of the Biquaternion Algebra*.
+**The companion pairs.** The two matrices $\begin{pmatrix}0&1\\ 0&0\end{pmatrix}$ and $\begin{pmatrix}0&0\\ 1&0\end{pmatrix}$ are conjugate by the swap of the two basis vectors, which is $\begin{pmatrix}0&1\\ 1&0\end{pmatrix}$ of square $I$ and determinant $-1$. In the biquaternion language these are $\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil},-+}$, and the conjugating swap is one point of the gauge of *The Companion Nilpotents of the Biquaternion Algebra*.
 
 ## The Jordan–Chevalley Decomposition
 
@@ -144,4 +144,4 @@ The Jordan–Chevalley decomposition is $A=\tfrac12(\operatorname{tr}A)I+A_{0}$,
 - James E. Humphreys, *Linear Algebraic Groups* (Springer, 1975), for the Jordan–Chevalley decomposition and its uniqueness.
 - [The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$](the-element-rank-trace-determinant-characteristic-polynomial-at-n-2.html), for the traceless part and the discriminant.
 - [The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two](the-elementary-symmetric-functions-trace-and-determinant-in-dimension-two.html), for the Jacobian and the invariant ring.
-- [The Companion Nilpotents of the Biquaternion Algebra](the-companion-nilpotents-of-the-biquaternion-algebra.html), for the pair $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ that the two nilpotent units represent.
+- [The Companion Nilpotents of the Biquaternion Algebra](the-companion-nilpotents-of-the-biquaternion-algebra.html), for the pair $\vec\Pi_{\mathrm{nil},+-},\vec\Pi_{\mathrm{nil},-+}$ that the two nilpotent units represent.

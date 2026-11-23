@@ -29,7 +29,7 @@ The companion articles supply the pieces:
 
 The state space of two qubits is the tensor product $\mathbb{B}\otimes\mathbb{B}$, isomorphic to $M_4(\mathbb{C})$ as a complex algebra, with the tensor trace $\mathrm{Tr}\bigl(\mathsf M_2(x)\otimes\mathsf M_2(y)\bigr) = \mathrm{Tr}_\mathbb{B}\mathsf M_2(x)\mathrm{Tr}_\mathbb{B}\mathsf M_2(y)$. A pure two-qubit state is a rank-one idempotent,
 $$
-\tilde\Pi = |\tilde{Ξ}\rangle\langle\tilde{Ξ}| \quad\text{with}\quad |\tilde{Ξ}\rangle\in S\otimes S,
+\tilde\Pi_{\mathrm{id}} = |\tilde{Ξ}\rangle\langle\tilde{Ξ}| \quad\text{with}\quad |\tilde{Ξ}\rangle\in S\otimes S,
 $$
 and the reduced state of the first qubit is the **partial trace**
 $$
@@ -37,11 +37,11 @@ $$
 $$
 extended linearly. On the singlet,
 $$
-\tilde\Pi_{\mathrm{singlet}} = \tfrac14\bigl(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\bigr),
+\tilde\Pi_{\mathrm{id,singlet}} = \tfrac14\bigl(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\bigr),
 $$
 the partial trace kills the traceless tensor terms and returns the maximally mixed state,
 $$
-\mathrm{Tr}_2\bigl(\tilde\Pi_{\mathrm{singlet}}\bigr) = \tfrac12 e_t ,
+\mathrm{Tr}_2\bigl(\tilde\Pi_{\mathrm{id,singlet}}\bigr) = \tfrac12 e_t ,
 $$
 whose von Neumann entropy is $\log 2$: the mixedness of the reduced state is the algebraic residue of the entanglement of the joint state.
 
@@ -57,7 +57,7 @@ C(|\tilde{Ξ}\rangle) = \bigl|\langle\tilde{Ξ}|\,\tilde{\mathcal S}\,|\tilde{Ξ
 $$
 vanishing on product states and equal to $1$ on the Bell states; for a mixed state $\tilde{Ϛ}_{\Psi}$ it is $C(\tilde{Ϛ}_{\Psi}) = \max(0,\lambda_1-\lambda_2-\lambda_3-\lambda_4)$, where $\lambda_1\geq\lambda_2\geq\lambda_3\geq\lambda_4$ are the square roots of the eigenvalues of the Hermitian positive-semidefinite matrix $\tilde{Ϛ}_{\Psi}^{1/2}\,\tilde{\mathcal S}\tilde{Ϛ}_{\Psi}^{*}\tilde{\mathcal S}\,\tilde{Ϛ}_{\Psi}^{1/2}$.
 
-**Entanglement entropy.** For a pure joint state it is the von Neumann entropy of either reduced state, $E = S(\mathrm{Tr}_2\tilde\Pi) = -s_1^2\log s_1^2 - s_2^2\log s_2^2$, and it is a function of the single invariant $s_1^2$. For mixed joint states the partial-trace entropy is a marginal entropy and not an entanglement measure, as the companion exercise records; the concurrence is used for mixed states below.
+**Entanglement entropy.** For a pure joint state it is the von Neumann entropy of either reduced state, $E = S(\mathrm{Tr}_2\tilde\Pi_{\mathrm{id}}) = -s_1^2\log s_1^2 - s_2^2\log s_2^2$, and it is a function of the single invariant $s_1^2$. For mixed joint states the partial-trace entropy is a marginal entropy and not an entanglement measure, as the companion exercise records; the concurrence is used for mixed states below.
 
 The framework inherits all three unchanged: they are computed from the trace and the tensor product, and the algebra's normalised Hermitian form, read through the trace, is the Born weight. The relativistic question is what the unit-norm group does to them.
 
@@ -80,7 +80,7 @@ This is the standard action of the Lorentz group on definite-momentum one-partic
 The spin state is therefore transformed by a **local $*$-unitary** $\tilde U_{\mathrm{Wig},1}\otimes\tilde U_{\mathrm{Wig},2}$. Local unitaries preserve every entanglement measure:
 $$
 \boxed{\;C\bigl((\tilde U_{\mathrm{Wig},1}\otimes\tilde U_{\mathrm{Wig},2})|\xi\rangle\bigr) = C(|\xi\rangle), \qquad
-S\bigl(\mathrm{Tr}_2\,\tilde\Pi_{(\tilde U_{\mathrm{Wig},1}\otimes\tilde U_{\mathrm{Wig},2})\xi}\bigr) = S\bigl(\mathrm{Tr}_2\,\tilde\Pi_{\xi}\bigr)\;},
+S\bigl(\mathrm{Tr}_2\,\tilde\Pi_{\mathrm{id},(\tilde U_{\mathrm{Wig},1}\otimes\tilde U_{\mathrm{Wig},2})\xi}\bigr) = S\bigl(\mathrm{Tr}_2\,\tilde\Pi_{\mathrm{id},\xi}\bigr)\;},
 $$
 because $\tilde U_{\mathrm{Wig},1}\otimes\tilde U_{\mathrm{Wig},2}$ preserves the tensor product structure and the Hermitian pairing, and because the Schmidt coefficients are the singular values of the coefficient matrix, which a pair of unitaries leaves unchanged. Hence:
 
@@ -319,10 +319,10 @@ The same channel is produced by a gravitational potential, and there the branch 
 |---|---|
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit algebra |
 | $\mathrm{Tr}_2$ | Partial trace over the second factor |
-| $\tilde\Pi_{\mathrm{singlet}} = \tfrac14\bigl(e_t\otimes e_t+\sum_{\eta=x,y,z}\vec e_\eta\otimes \vec e_\eta\bigr)$ | Singlet idempotent |
+| $\tilde\Pi_{\mathrm{id,singlet}} = \tfrac14\bigl(e_t\otimes e_t+\sum_{\eta=x,y,z}\vec e_\eta\otimes \vec e_\eta\bigr)$ | Singlet idempotent |
 | $s_1,s_2$ | Schmidt coefficients, $s_1^2+s_2^2=1$ |
 | $C(|\tilde{Ξ}\rangle) = \bigl|\langle\tilde{Ξ}|\,\tilde{\mathcal S}\,|\tilde{Ξ}^*\rangle\bigr|$ | Concurrence, spin flip $\tilde{\mathcal S}=(i\sigma_2)\otimes(i\sigma_2)$ |
-| $E = S(\mathrm{Tr}_2\tilde\Pi)$ | Entanglement entropy of a pure state |
+| $E = S(\mathrm{Tr}_2\tilde\Pi_{\mathrm{id}})$ | Entanglement entropy of a pure state |
 | $\tilde{V}_{\Phi,j}$ | Four-velocity of particle $j$, $\langle\tilde{V}_{\Phi,j}\rangle_{\natural} = -c^2$ |
 | $\tilde U_{\mathrm{Wig}}(\tilde U_{\mathrm{lor}},\tilde{V}_{\Phi}) = \tilde U_{\mathrm{lor},\tilde{V}_{\Phi,\mathrm{out}}}\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor},\tilde{V}_{\Phi}}{}^{-1}\in SU(2)$ | Wigner rotation, $\tilde V_{\Phi,\mathrm{out}}=\tilde U_{\mathrm{lor}}\tilde V_{\Phi}\tilde U_{\mathrm{lor}}{}^{*}$ |
 | $\tilde U_{\mathrm{Wig},j,i}$ | Wigner rotation of particle $j$ in momentum branch $i$ |

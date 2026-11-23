@@ -74,9 +74,9 @@ so the image of the diagonal is the ray $\mathbb{R}_{\geq0}e_t$ and the square c
 
 **Proposition (the idempotents).** The idempotents are $0$ and $e_t$.
 
-*Proof.* $\tilde\Pi\bullet_{\natural}\tilde\Pi=N(\tilde\Pi)e_t=\tilde\Pi$ forces $\tilde\Pi=\lambda e_t$ with $\lambda^2=\lambda$. Verified by solving the quadratic conditions in the coefficient basis.
+*Proof.* $\tilde\Pi_{\mathrm{id}}\bullet_{\natural}\tilde\Pi_{\mathrm{id}}=N(\tilde\Pi_{\mathrm{id}})e_t=\tilde\Pi_{\mathrm{id}}$ forces $\tilde\Pi_{\mathrm{id}}=\lambda e_t$ with $\lambda^2=\lambda$. Verified by solving the quadratic conditions in the coefficient basis.
 
-**Theorem (the Peirce spaces and the failed rule).** At $\tilde\Pi=e_t$ the multiplication operator has the eigenvalues $1,0,0,0$, with
+**Theorem (the Peirce spaces and the failed rule).** At $\tilde\Pi_{\mathrm{id}}=e_t$ the multiplication operator has the eigenvalues $1,0,0,0$, with
 $$
 J_1(e_t)=\mathbb{R}e_t,\qquad J_0(e_t)=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z=\mathbb{R}^3 ,
 $$
@@ -171,7 +171,7 @@ The trace form is the quaternion form, positive definite, with radical $\{0\}$ a
 | $\langle\cdot,\cdot\rangle_{\natural}$ | its value, $q_{1t}q_{2t}+(\vec q_1,\vec q_2)$ |
 | $N(\tilde q)$ | the quaternion norm |
 | $L_{\tilde X}$, $U(\tilde X)$ | the multiplication operator and the quadratic representation |
-| $J_\lambda(\tilde\Pi)$ | the Peirce space of the idempotent $\tilde\Pi$ |
+| $J_\lambda(\tilde\Pi_{\mathrm{id}})$ | the Peirce space of the idempotent $\tilde\Pi_{\mathrm{id}}$ |
 | $D$ | the Jordan defect |
 
 ## Further Reading

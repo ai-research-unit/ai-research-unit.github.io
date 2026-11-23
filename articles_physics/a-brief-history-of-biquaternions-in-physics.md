@@ -138,7 +138,7 @@ $$
 \tilde{Q} \;\longmapsto\; \tilde U\,\tilde{Q}\,\tilde U^{*} .
 $$
 
-These are the facts that make the history intelligible. The algebra of Hamilton's complex quaternions *is* the algebra of the Pauli matrices; the group of unit biquaternions *is* the Lorentz double cover; the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u)$ in $\mathbb{B}_{\Psi}$ are the pure states of a two-state system, with $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ the reduction formula on which the Born rule is written in the algebra (see the companion article *The Informational Sector: States, Observables and Probability*). None of these identifications was known to Hamilton.
+These are the facts that make the history intelligible. The algebra of Hamilton's complex quaternions *is* the algebra of the Pauli matrices; the group of unit biquaternions *is* the Lorentz double cover; the idempotents $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(e_t \pm i\vec u)$ in $\mathbb{B}_{\Psi}$ are the pure states of a two-state system, with $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ the reduction formula on which the Born rule is written in the algebra (see the companion article *The Informational Sector: States, Observables and Probability*). None of these identifications was known to Hamilton.
 
 ## Clifford's Rotors: Position, Lines, and Screws
 
@@ -316,7 +316,7 @@ The word "rotor" is Clifford's, coined in 1873 for a quantity having position â€
 | $\mathbb{B} \cong M_2(\mathbb{C}) \cong Cl_{3,0}(\mathbb{R})$ | Pauli algebra; $\mathsf{M}_2(\vec e_\eta) = -i\sigma_\eta$ |
 | $SL(2,\mathbb{C}) = \{\tilde U : \tilde U\tilde U^{\natural} = e_t\}$ | Unit-norm biquaternions; Lorentz double cover |
 | $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$ | Rotor conjugation on $\mathbb{B}_{\Phi}$ |
-| $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state of $\mathbb{B}_{\Psi}$) |
+| $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state of $\mathbb{B}_{\Psi}$) |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Scalar-part reading at normalisation (Born rule) |
 | $\vec E + ic\vec B$ | Riemannâ€“Silberstein vector (Silberstein, 1907) |
 | $j$ | Split-complex unit, $j^{2} = +1$ (Clifford's twist $\omega$) |

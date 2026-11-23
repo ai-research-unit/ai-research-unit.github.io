@@ -6,7 +6,7 @@ The **weak interaction** is the interaction that changes flavour. A neutron beco
 
 This article treats the process level, and not the bosons. The companion *The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form* settles what the framework reaches for the carriers — the Proca kinematics, the charges as eigenvalues of the adjoint action, the neutral mixing, the self-couplings — and states plainly that it stops at the chiral coupling. The present article starts there, asks what the framework has for the **current** itself and for the contact built from two of them, and answers in the three categories the corpus uses.
 
-- **Established, and derived below.** On the Dirac module the vector vertex $\Gamma_\mu$ and the axial vertex $\Gamma_\mu\xi$ are each a single basis operator. Their combination $\Gamma_\mu(g_V-g_A\xi)$ is again a single basis operator, with a right multiplier that is the sum of the two, $g_Vi\vec e_x-g_A\vec e_y$ in the time component and $g_Vi\vec e_y+g_A\vec e_x$ in a spatial one, and the square of the whole operator is $(g_V^2-g_A^2)\Gamma_\mu^2$. It follows that the chiral vertex is **nilpotent exactly at $|g_A|=|g_V|$**, that is exactly for the two chiral mixtures $V-A$ and $V+A$, and invertible for every other pair of weights; and that at $g_A=+g_V$ and $g_A=-g_V$ the right multiplier is exactly $2\vec\Upsilon_1$ and $2\vec\Upsilon_2$, the two standard Peirce nilpotents of the algebra. The $V-A$ structure, which the Standard Model takes as input, is therefore one of the only two weight assignments that make the weak vertex a **null** element, the other being $V+A$, which differs from it only in the sign of the axial half; and the framework states the same identity that the Dirac matrices satisfy.
+- **Established, and derived below.** On the Dirac module the vector vertex $\Gamma_\mu$ and the axial vertex $\Gamma_\mu\xi$ are each a single basis operator. Their combination $\Gamma_\mu(g_V-g_A\xi)$ is again a single basis operator, with a right multiplier that is the sum of the two, $g_Vi\vec e_x-g_A\vec e_y$ in the time component and $g_Vi\vec e_y+g_A\vec e_x$ in a spatial one, and the square of the whole operator is $(g_V^2-g_A^2)\Gamma_\mu^2$. It follows that the chiral vertex is **nilpotent exactly at $|g_A|=|g_V|$**, that is exactly for the two chiral mixtures $V-A$ and $V+A$, and invertible for every other pair of weights; and that at $g_A=+g_V$ and $g_A=-g_V$ the right multiplier is exactly $2\vec\Pi_{\mathrm{nil},1}$ and $2\vec\Pi_{\mathrm{nil},2}$, the two standard Peirce nilpotents of the algebra. The $V-A$ structure, which the Standard Model takes as input, is therefore one of the only two weight assignments that make the weak vertex a **null** element, the other being $V+A$, which differs from it only in the sign of the axial half; and the framework states the same identity that the Dirac matrices satisfy.
 - **Transcribed, and recomputed here.** The contact coefficient, $G_{\mathrm F}/\sqrt2=g^2/(8M_W^2)$; the contact's accuracy at low momentum transfer; the muon lifetime, $2.1873$ microseconds at the tree level against the measured $2.1969811$; and the ratio of the two pion decay rates, $1.2833\times10^{-4}$ at the tree level against the measured $1.2300\times10^{-4}$, the difference being the radiative correction. These are standard results, and the framework neither improves nor spoils them.
 - **Not supplied, and left visible as a gap.** The framework does not derive the coupling, does not select the left-handed half, has no generation structure and no mixing matrix, and its own gauge group, the $*$-unitary part of the centre, acts as a scalar and is therefore vector-like on the module, a chiral gauge group requiring a non-central action that *Chiral Fermions in the Biquaternion Framework* records as the gap. The algebra supplies the *shape* of the vertex and not the *strength* with which nature uses it.
 
@@ -85,24 +85,24 @@ whose two terms share the same left multiplier and differ only in the right one,
 
 ### The multiplier table
 
-Normalising the right multiplier to the Peirce element $\vec\Upsilon_1=\tfrac12(i\vec e_x-\vec e_y)$ for the left-handed projector and to $\vec\Upsilon_2=\tfrac12(i\vec e_x+\vec e_y)$ for the right-handed one, the left multipliers come out as the informational-sector frame, with one sign flip between the two chiralities.
+Normalising the right multiplier to the Peirce element $\vec\Pi_{\mathrm{nil},1}=\tfrac12(i\vec e_x-\vec e_y)$ for the left-handed projector and to $\vec\Pi_{\mathrm{nil},2}=\tfrac12(i\vec e_x+\vec e_y)$ for the right-handed one, the left multipliers come out as the informational-sector frame, with one sign flip between the two chiralities.
 
 | Vertex | Basis operator form | Left multiplier | Right multiplier |
 |---|---|---|---|
-| $\Gamma_tP_L$ | $L_{e_t}R_{\vec\Upsilon_1}$ | $e_t$ | $\vec\Upsilon_1$ |
-| $\Gamma_xP_L$ | $L_{-i\vec e_x}R_{\vec\Upsilon_1}$ | $-i\vec e_x$ | $\vec\Upsilon_1$ |
-| $\Gamma_yP_L$ | $L_{-i\vec e_y}R_{\vec\Upsilon_1}$ | $-i\vec e_y$ | $\vec\Upsilon_1$ |
-| $\Gamma_zP_L$ | $L_{-i\vec e_z}R_{\vec\Upsilon_1}$ | $-i\vec e_z$ | $\vec\Upsilon_1$ |
-| $\Gamma_tP_R$ | $L_{e_t}R_{\vec\Upsilon_2}$ | $e_t$ | $\vec\Upsilon_2$ |
-| $\Gamma_xP_R$ | $L_{+i\vec e_x}R_{\vec\Upsilon_2}$ | $+i\vec e_x$ | $\vec\Upsilon_2$ |
-| $\Gamma_yP_R$ | $L_{+i\vec e_y}R_{\vec\Upsilon_2}$ | $+i\vec e_y$ | $\vec\Upsilon_2$ |
-| $\Gamma_zP_R$ | $L_{+i\vec e_z}R_{\vec\Upsilon_2}$ | $+i\vec e_z$ | $\vec\Upsilon_2$ |
+| $\Gamma_tP_L$ | $L_{e_t}R_{\vec\Pi_{\mathrm{nil},1}}$ | $e_t$ | $\vec\Pi_{\mathrm{nil},1}$ |
+| $\Gamma_xP_L$ | $L_{-i\vec e_x}R_{\vec\Pi_{\mathrm{nil},1}}$ | $-i\vec e_x$ | $\vec\Pi_{\mathrm{nil},1}$ |
+| $\Gamma_yP_L$ | $L_{-i\vec e_y}R_{\vec\Pi_{\mathrm{nil},1}}$ | $-i\vec e_y$ | $\vec\Pi_{\mathrm{nil},1}$ |
+| $\Gamma_zP_L$ | $L_{-i\vec e_z}R_{\vec\Pi_{\mathrm{nil},1}}$ | $-i\vec e_z$ | $\vec\Pi_{\mathrm{nil},1}$ |
+| $\Gamma_tP_R$ | $L_{e_t}R_{\vec\Pi_{\mathrm{nil},2}}$ | $e_t$ | $\vec\Pi_{\mathrm{nil},2}$ |
+| $\Gamma_xP_R$ | $L_{+i\vec e_x}R_{\vec\Pi_{\mathrm{nil},2}}$ | $+i\vec e_x$ | $\vec\Pi_{\mathrm{nil},2}$ |
+| $\Gamma_yP_R$ | $L_{+i\vec e_y}R_{\vec\Pi_{\mathrm{nil},2}}$ | $+i\vec e_y$ | $\vec\Pi_{\mathrm{nil},2}$ |
+| $\Gamma_zP_R$ | $L_{+i\vec e_z}R_{\vec\Pi_{\mathrm{nil},2}}$ | $+i\vec e_z$ | $\vec\Pi_{\mathrm{nil},2}$ |
 
 Every left multiplier in the table lies in the informational sector $\mathbb{B}_{\Psi}=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, and every right multiplier is one of the two Peirce nilpotents, which lie on the null cone and in neither sector. The normalisation is not unique: $(a,b)$ and $(\lambda a,b/\lambda)$ give the same basis operator, so the entries are fixed by the stated choice of right multiplier, and a different choice rescales the left column without changing any statement about the right one. What the table says is that the chiral weak vertex is a basis operator of **mixed type** — an element of the informational sector on the left and a null element on the right — and that the two chiralities differ only in the sign of the left multiplier.
 
 ### The square identity
 
-The square of a basis operator is the basis operator of the squares, $L_aR_b\,L_aR_b=L_{a^2}R_{b^2}$, because applying $\tilde{Ξ}\mapsto a\tilde{Ξ} b$ twice gives $a^2\tilde{Ξ} b^2$. For the chiral vertex the right multiplier is $\vec\Upsilon_1$ or $\vec\Upsilon_2$, and both square to zero, so the square vanishes. For general weights the right multiplier is $b=g_Vi\vec e_x-g_A\vec e_y$ in the time component, whose square is
+The square of a basis operator is the basis operator of the squares, $L_aR_b\,L_aR_b=L_{a^2}R_{b^2}$, because applying $\tilde{Ξ}\mapsto a\tilde{Ξ} b$ twice gives $a^2\tilde{Ξ} b^2$. For the chiral vertex the right multiplier is $\vec\Pi_{\mathrm{nil},1}$ or $\vec\Pi_{\mathrm{nil},2}$, and both square to zero, so the square vanishes. For general weights the right multiplier is $b=g_Vi\vec e_x-g_A\vec e_y$ in the time component, whose square is
 
 $$
 (g_Vi\vec e_x-g_A\vec e_y)^2=-g_V^2\vec e_x^2+g_A^2\vec e_y^2=g_V^2-g_A^2 ,
@@ -133,12 +133,12 @@ verified for all sixteen pairs $(\mu,\nu)$ and likewise for $P_R$. The index pla
 The two nilpotents are not independent. Their sum and their product were verified,
 
 $$
-\vec\Upsilon_1+\vec\Upsilon_2=i\vec e_x,\qquad
-\vec\Upsilon_1\vec\Upsilon_2=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\qquad
-\tilde\Pi_+^2=\tilde\Pi_+ ,
+\vec\Pi_{\mathrm{nil},1+}\vec\Pi_{\mathrm{nil},2}=i\vec e_x,\qquad
+\vec\Pi_{\mathrm{nil},1}\vec\Pi_{\mathrm{nil},2}=\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z),\qquad
+\tilde\Pi_{\mathrm{id},+}^2=\tilde\Pi_{\mathrm{id},+} ,
 $$
 
-with $\tilde\Pi_+$ Hermitian. The product of the two right multipliers, in the normalisation of the table, is therefore an idempotent of the algebra, and the idempotent is the pure state that the companion article on the informational sector uses as the first basis vector of the spinor module. The computation is the matrix-unit relation already recorded in *The Newman–Penrose Formalism in Biquaternionic Form*, reached here from the vertex rather than from the spinor basis. It is stated as an algebraic fact and given no dynamical reading.
+with $\tilde\Pi_{\mathrm{id},+}$ Hermitian. The product of the two right multipliers, in the normalisation of the table, is therefore an idempotent of the algebra, and the idempotent is the pure state that the companion article on the informational sector uses as the first basis vector of the spinor module. The computation is the matrix-unit relation already recorded in *The Newman–Penrose Formalism in Biquaternionic Form*, reached here from the vertex rather than from the spinor basis. It is stated as an algebraic fact and given no dynamical reading.
 
 ## The Neutral Current Is Not Null
 
@@ -158,7 +158,7 @@ The observation is worth recording because it sharpens what "chiral" means in th
 
 ### Parity reverses the axial weight
 
-The framework's parity operation reverses the three spatial directions and fixes time; on the Dirac module it is the internal factor $\eta_P=iR_{\vec e_x}$, which satisfies $\eta_PP_R=P_L\eta_P$ and so exchanges the two projectors, as *The Reflection and the Rotation in Biquaternionic Form* establishes. In the algebra the exchange is arithmetic on one unit: conjugation by $R_{\vec e_x}$ sends $\vec e_x\vec\Upsilon_1\vec e_x=-\vec\Upsilon_2$ and $\vec e_x\vec\Upsilon_2\vec e_x=-\vec\Upsilon_1$, hence $\eta_P\xi\eta_P=-\xi$, and each basis operator $L_aR_{\vec\Upsilon_1}$ becomes $L_aR_{\vec\Upsilon_2}$ with the left multiplier untouched. On a vertex of weights $(g_V,g_A)$ the effect is
+The framework's parity operation reverses the three spatial directions and fixes time; on the Dirac module it is the internal factor $\eta_P=iR_{\vec e_x}$, which satisfies $\eta_PP_R=P_L\eta_P$ and so exchanges the two projectors, as *The Reflection and the Rotation in Biquaternionic Form* establishes. In the algebra the exchange is arithmetic on one unit: conjugation by $R_{\vec e_x}$ sends $\vec e_x\vec\Pi_{\mathrm{nil},1}\vec e_x=-\vec\Pi_{\mathrm{nil},2}$ and $\vec e_x\vec\Pi_{\mathrm{nil},2}\vec e_x=-\vec\Pi_{\mathrm{nil},1}$, hence $\eta_P\xi\eta_P=-\xi$, and each basis operator $L_aR_{\vec\Pi_{\mathrm{nil},1}}$ becomes $L_aR_{\vec\Pi_{\mathrm{nil},2}}$ with the left multiplier untouched. On a vertex of weights $(g_V,g_A)$ the effect is
 
 $$
 \eta_P\,\Gamma_t(g_V-g_A\xi)\,\eta_P=\Gamma_t(g_V+g_A\xi),
@@ -192,7 +192,7 @@ The rule above is worth separating from two claims it does not make. It does not
 | The axial vertex as a basis operator | **Supplied.** $\Gamma_\mu\xi$, a basis operator with a non-nilpotent multiplier |
 | The chiral vertex as a single basis operator | **Supplied.** The multiplier table, verified exactly |
 | Nilpotency of the chiral vertex | **Supplied.** $(g_V^2-g_A^2)\Gamma_\mu^2$, zero at $|g_A|=|g_V|$ only |
-| The Peirce pair as the right multipliers | **Supplied.** $\vec\Upsilon_1$ for $L$, $\vec\Upsilon_2$ for $R$ |
+| The Peirce pair as the right multipliers | **Supplied.** $\vec\Pi_{\mathrm{nil},1}$ for $L$, $\vec\Pi_{\mathrm{nil},2}$ for $R$ |
 | Maximal parity violation | **Supplied.** The null condition is $|g_A|=|g_V|$ |
 | The contact coefficient $G_{\mathrm F}/\sqrt2=g^2/(8M_W^2)$ | **Transcribed.** Standard input |
 | The muon lifetime and the pion ratio | **Transcribed and recomputed.** $2.1873$ $\mu$s and $1.2833\times10^{-4}$ |
@@ -204,7 +204,7 @@ The rule above is worth separating from two claims it does not make. It does not
 
 The rows from the coupling downward are the ones that decide the article's verdict. The framework's account of the weak interaction is an account of the **shape of the vertex**, and it is exact: the chiral vertex is one basis operator, its multipliers are named, and its nilpotency is a theorem. What it does not have is any reason for nature to have used that shape with a specific strength, or to have used it on the left half only. The shape is algebraic; the strength and the asymmetry are inputs.
 
-One construction would change that, and the article names it without claiming it. The obstruction that *Chiral Fermions in the Biquaternion Framework* proves is that the framework's own gauge group is the $*$-unitary part of the centre, and a central element acts as a scalar, so the canonically available abelian sector is vector-like; a chiral group needs a **non-central** action. The companion article on the $SO(4)$ route records a proposal of exactly that shape, the separate gauging of the two factors of the basis operator $L_aR_b$, and is careful about its status there: the ceiling's obstruction is stated for left multiplication, so it does not apply to $L_aR_b$ as stated, but the anomaly conditions, the mass selection rule and the charge operator would all have to be redone, and none of that is done. This article adds only a word about what the table above does and does not supply. Its right multipliers are not invertible, $\vec\Upsilon_a^2=0$, and a nilpotent cannot be the value of a group element near the identity, so the table describes a vertex and not a symmetry. What it does show is the shape such a construction would need: a non-central factor on the right and an informational one on the left.
+One construction would change that, and the article names it without claiming it. The obstruction that *Chiral Fermions in the Biquaternion Framework* proves is that the framework's own gauge group is the $*$-unitary part of the centre, and a central element acts as a scalar, so the canonically available abelian sector is vector-like; a chiral group needs a **non-central** action. The companion article on the $SO(4)$ route records a proposal of exactly that shape, the separate gauging of the two factors of the basis operator $L_aR_b$, and is careful about its status there: the ceiling's obstruction is stated for left multiplication, so it does not apply to $L_aR_b$ as stated, but the anomaly conditions, the mass selection rule and the charge operator would all have to be redone, and none of that is done. This article adds only a word about what the table above does and does not supply. Its right multipliers are not invertible, $\vec\Pi_{\mathrm{nil},a}^2=0$, and a nilpotent cannot be the value of a group element near the identity, so the table describes a vertex and not a symmetry. What it does show is the shape such a construction would need: a non-central factor on the right and an informational one on the left.
 
 ## Summary
 
@@ -232,8 +232,8 @@ What the framework does not supply is the coupling, the scale, the selection of 
 | $\Gamma_t=iR_{\vec e_x}$, $\Gamma_\eta=iL_{\vec e_\eta}R_{\vec e_y}$ | Frame basis operators, $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ |
 | $\xi=-iR_{\vec e_z}$ | Chirality basis operator, $\xi^2=I_4$, the image of $\gamma_5$ |
 | $P_L=\tfrac12(I_4-\xi)$, $P_R=\tfrac12(I_4+\xi)$ | Chiral projectors, $P_LP_R=0$ |
-| $\vec\Upsilon_1=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_2=\tfrac12(i\vec e_x+\vec e_y)$ | Peirce nilpotents, $\vec\Upsilon_a^2=0$; they are the canonical frame's $\vec\Upsilon_-$ and $\vec\Upsilon_+$ |
-| $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)=\vec\Upsilon_1\vec\Upsilon_2$ | Hermitian idempotent of the algebra |
+| $\vec\Pi_{\mathrm{nil},1}=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Pi_{\mathrm{nil},2}=\tfrac12(i\vec e_x+\vec e_y)$ | Peirce nilpotents, $\vec\Pi_{\mathrm{nil},a}^2=0$; they are the canonical frame's $\vec\Pi_{\mathrm{nil},-}$ and $\vec\Pi_{\mathrm{nil},+}$ |
+| $\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z)=\vec\Pi_{\mathrm{nil},1}\vec\Pi_{\mathrm{nil},2}$ | Hermitian idempotent of the algebra |
 | $\Gamma_\mu(g_V-g_A\xi)$ | Chiral vertex of weights $g_V,g_A$; $g_A=+g_V$ is $V-A$ |
 | $\big(\Gamma_\mu(g_V-g_A\xi)\big)^2=\varepsilon_\mu(g_V^2-g_A^2)I_4$ | Square identity; nilpotent iff $\lvert g_A\rvert=\lvert g_V\rvert$ |
 | $J^{+}_\mu=\tilde{Ξ}_{\mathrm u}^{\dagger}iR_{\vec e_x}\Gamma_\mu(1-\xi)\tilde{Ξ}_{\mathrm d}$ | Charged current, $V-A$, the case $g_A=+g_V$ |

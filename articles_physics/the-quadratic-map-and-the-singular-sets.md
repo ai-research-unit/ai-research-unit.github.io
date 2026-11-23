@@ -241,7 +241,7 @@ The two loci. The connectedness locus is the set of parameters whose Julia set i
 
 The central slice is the classical theory. For a central parameter the orbit of the origin is $q_n(0)e_t$, so the critical-orbit locus cut by the centre is the complex Mandelbrot set under $C\mapsto Ce_t$; and the filled set of the slice is the complex filled set read on the two eigenvalues. Verified: the eigenvalue reduction holds on one hundred diagonalisable elements for five iterations, and the criterion of the previous section agrees with iteration on one hundred random elements.
 
-The two loci on the idempotent plane. A parameter in the idempotent plane $\tilde C=C_1\tilde\Pi+C_2\tilde\Pi'$ makes the plane invariant, and on it the family is the pair of complex maps $\omega\mapsto\omega^{2}+C_1$ and $\omega\mapsto\omega^{2}+C_2$; so the critical-orbit locus meets the plane in the product $\mathcal M\times\mathcal M$ of two copies of the complex Mandelbrot set. The parameter locus has a slice on which it is exactly known, and the slice is the one on which the algebra is commutative.
+The two loci on the idempotent plane. A parameter in the idempotent plane $\tilde C=C_1\tilde\Pi_{\mathrm{id}}+C_2\tilde\Pi_{\mathrm{id}}'$ makes the plane invariant, and on it the family is the pair of complex maps $\omega\mapsto\omega^{2}+C_1$ and $\omega\mapsto\omega^{2}+C_2$; so the critical-orbit locus meets the plane in the product $\mathcal M\times\mathcal M$ of two copies of the complex Mandelbrot set. The parameter locus has a slice on which it is exactly known, and the slice is the one on which the algebra is commutative.
 
 The physics of the locus is the physics of a source. The parameter $\tilde C$ is the only term that is not built from the state, so the locus is the set of sources for which the state does not run away. Read as a bound-state condition it is a condition on the source and not on the energy, and the previous sections have shown why: no energy bound exists, because the cone defeats every radius. The entry does not claim that the biquaternion Mandelbrot set is a physical region; it claims that it is the parameter locus of a rule whose singular set the corpus already interprets.
 
@@ -255,7 +255,7 @@ $$
 
 verified to $3.6\times10^{-15}$ on one hundred random elements. The off-diagonal entries are multiplied by the trace $a+d=2Q_t$, and the off-diagonal product $bc$ enters the diagonal entries as a parameter.
 
-Corollary (the diagonal plane). The elements whose vector part lies along $\vec e_z$ have diagonal matrices and form the commutative plane $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ of the idempotent decomposition. The plane is invariant exactly when the parameter lies in it, and then the map is the pair of independent complex maps on the two entries. Verified: for a point of the plane and a parameter of the plane the off-diagonal part of the image is zero to machine precision on one hundred samples, and for a point of the plane and a generic parameter the off-diagonal part of the image equals that of the parameter exactly.
+Corollary (the diagonal plane). The elements whose vector part lies along $\vec e_z$ have diagonal matrices and form the commutative plane $W_{\tilde\Pi_{\mathrm{id}}}=\mathbb{C}\tilde\Pi_{\mathrm{id}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}'$ of the idempotent decomposition. The plane is invariant exactly when the parameter lies in it, and then the map is the pair of independent complex maps on the two entries. Verified: for a point of the plane and a parameter of the plane the off-diagonal part of the image is zero to machine precision on one hundred samples, and for a point of the plane and a generic parameter the off-diagonal part of the image equals that of the parameter exactly.
 
 The split fractal is a product, and the product is the massless case. On the plane the filled set is $K_{C_1}\times K_{C_2}$, the boundary is the boundary of that product, and the Hausdorff dimension of the slice is the maximum of the two sums of a boundary dimension and a filled dimension. Two halves, two complex dynamics, no coupling. Off the plane the coupling is the trace acting on the off-diagonal pair and the off-diagonal product acting on the diagonal pair, and no product of two one-variable fractals describes the result.
 
@@ -271,7 +271,7 @@ A slice is an intersection with a subspace, and a subspace is a frame. The slice
 |---|---|---|---|
 | the centre | $Ce_t$, $C\in\mathbb{C}$ | the complex quadratic map | the identity direction, one complex number per step |
 | the real quaternion subspace | $q\in\mathbb{H}$ | the quaternion quadratic map | the real form, the frame of a rotation |
-| the idempotent plane | $C_1\tilde\Pi+C_2\tilde\Pi'$ | two independent complex maps | the chiral basis, the diagonal model |
+| the idempotent plane | $C_1\tilde\Pi_{\mathrm{id}}+C_2\tilde\Pi_{\mathrm{id}}'$ | two independent complex maps | the chiral basis, the diagonal model |
 | the real slice | real coefficients | the real quadratic family | the fixed point set of the coefficient conjugation |
 
 The filled set does not depend on the slice and the fractal does. Boundedness is a set-theoretic property of the algebra and is independent of any norm and any subspace; the shape of the intersection depends on the subspace, because the intersection of a set with different subspaces is different. A slice is what an observer sees, and the observer is a choice of subalgebra. The entry takes the phrase seriously and refuses to let it do more work than it can: the choice of a slice is a choice of frame, and a frame is not an observable.
@@ -285,7 +285,7 @@ The exact values at the parameter zero. $\dim_H\mathcal K_0=8$, because the fill
 The slices. The central slice has the dimension of the complex Julia set, and the idempotent-plane slice has the dimension
 
 $$
-\dim_H\bigl(J_{\tilde C}\cap W_{\tilde\Pi}\bigr)=\max\bigl(\dim_HJ_{C_1}+\dim_HK_{C_2},\ \dim_HK_{C_1}+\dim_HJ_{C_2}\bigr),
+\dim_H\bigl(J_{\tilde C}\cap W_{\tilde\Pi_{\mathrm{id}}}\bigr)=\max\bigl(\dim_HJ_{C_1}+\dim_HK_{C_2},\ \dim_HK_{C_1}+\dim_HJ_{C_2}\bigr),
 $$
 
 the maximum of the two products of a boundary and a filled set, which is the dimension of the boundary of a product.
@@ -358,7 +358,7 @@ The biquaternion quadratic map is a discrete rule on the algebra and not a flow:
 | $\tilde{Ϛ}_{\Psi}=\tfrac12e_t+i\vec w$ | a state, $\lvert\vec w\rvert\le\tfrac12$ |
 | $R_\delta$ | the conditional escape radius |
 | $G_{\tilde C}$ | the Green's function, the discrete Lyapunov exponent |
-| $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ | the idempotent plane, the chiral-diagonal slice |
+| $W_{\tilde\Pi_{\mathrm{id}}}=\mathbb{C}\tilde\Pi_{\mathrm{id}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}'$ | the idempotent plane, the chiral-diagonal slice |
 | $\alpha=\dim_HK_C$ | the dimension of a complex filled Julia set |
 
 ## Further Reading

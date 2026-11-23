@@ -189,7 +189,7 @@ which were recomputed at $n=2$. So the operator space is a sixteen-dimensional c
 **In the Peirce frame the multiplication operators are diagonal or nilpotent.** Multiplication by a diagonal element acts on each corner by a scalar, and multiplication by a corner element maps one corner to the other; so
 
 $$
-L_{\tilde\Pi_+}\,|\,\mathbb{B}_{+-}=\mathrm{id},\qquad L_{\tilde\Pi_+}\,|\,\mathbb{B}_{-+}=0,
+L_{\tilde\Pi_{\mathrm{id},+}}\,|\,\mathbb{B}_{+-}=\mathrm{id},\qquad L_{\tilde\Pi_{\mathrm{id},+}}\,|\,\mathbb{B}_{-+}=0,
 $$
 
 which was verified numerically for the four corners. So the corners are the eigenspaces of the multiplication operators, and the Peirce decomposition of the biquaternion algebra is the diagonalisation of those operators.

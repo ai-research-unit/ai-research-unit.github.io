@@ -12,7 +12,7 @@ and asks when the transformed operators again obey the canonical (anti)commutati
 
 The answer has a clean shape, and it is mostly a restriction.
 
-- **Established, and recomputed below.** For a **single fermionic mode** the biquaternion algebra contains the ladder and the transformation, and the canonical conditions can be imposed exactly. Writing $\vec b = \alpha\vec\Upsilon_x + \beta\vec\Upsilon_y$ with $\alpha,\beta\in\mathbb{C}$, the two canonical anticommutators are
+- **Established, and recomputed below.** For a **single fermionic mode** the biquaternion algebra contains the ladder and the transformation, and the canonical conditions can be imposed exactly. Writing $\vec b = \alpha\vec\Pi_{\mathrm{nil},x} + \beta\vec\Pi_{\mathrm{nil},y}$ with $\alpha,\beta\in\mathbb{C}$, the two canonical anticommutators are
 $$
 \big\{\vec b,\vec b^{*}\big\} = \big(|\alpha|^2+|\beta|^2\big)e_t ,
 \qquad
@@ -24,7 +24,7 @@ $$
 \qquad\text{and}\qquad
 \alpha\beta = 0 ,
 $$
-whose solutions are: a phase, $\vec b = \exp(i\vartheta_{\mathrm{par}})\vec\Upsilon_x$; or the particle–hole exchange, $\vec b = \exp(i\vartheta_{\mathrm{par}})\vec\Upsilon_y$.
+whose solutions are: a phase, $\vec b = \exp(i\vartheta_{\mathrm{par}})\vec\Pi_{\mathrm{nil},x}$; or the particle–hole exchange, $\vec b = \exp(i\vartheta_{\mathrm{par}})\vec\Pi_{\mathrm{nil},y}$.
 - **Established (algebra).** The single-mode Bogoliubov group of $\mathbb{B}$ is therefore the orthogonal group
 $$
 O(2) = \mathrm{U}(1)\rtimes\mathbb{Z}_2 ,
@@ -70,34 +70,34 @@ For bosons the same structure holds with the symplectic group in place of the or
 
 ## The One-Mode Transformation Inside the Algebra
 
-Now specialize to $n=1$ and to the one-mode algebra of $\mathbb{B}$. The transformed ladder is no longer an abstract Fock operator but an element of the algebra; being a combination of the two pure nilpotents, it is pure and carries the arrow, $\vec b$, with no tilde. The most general complex-linear transformation of the pair $(\vec\Upsilon_x,\vec\Upsilon_y)$ is
+Now specialize to $n=1$ and to the one-mode algebra of $\mathbb{B}$. The transformed ladder is no longer an abstract Fock operator but an element of the algebra; being a combination of the two pure nilpotents, it is pure and carries the arrow, $\vec b$, with no tilde. The most general complex-linear transformation of the pair $(\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y})$ is
 $$
-\vec b = \alpha\,\vec\Upsilon_x + \beta\,\vec\Upsilon_y ,
+\vec b = \alpha\,\vec\Pi_{\mathrm{nil},x} + \beta\,\vec\Pi_{\mathrm{nil},y} ,
 \qquad
 \alpha,\beta\in\mathbb{C},
 $$
 whose Hermitian conjugate is
 $$
-\vec b^{*} = \beta^*\vec\Upsilon_x + \alpha^*\vec\Upsilon_y .
+\vec b^{*} = \beta^*\vec\Pi_{\mathrm{nil},x} + \alpha^*\vec\Pi_{\mathrm{nil},y} .
 $$
 This is the $n=1$ instance of the general parametrization, and both $\vec b$ and $\vec b^{*}$ are elements of $\mathbb{B}$ for every $\alpha,\beta$.
 
-**The Majorana pair of the mode.** The two Hermitian combinations $m_{\mathrm{fop},1}=\vec\Upsilon_x+\vec\Upsilon_y=i\vec e_x$ and $m_{\mathrm{fop},2}=-i(\vec\Upsilon_x-\vec\Upsilon_y)=i\vec e_y$ obey $\{m_{\mathrm{fop},\eta},m_{\mathrm{fop},l}\}=2\delta_{\eta l}e_t$ for $k,l=1,2$, so they are the one-mode instance of the Majorana operators of the previous section. Both are left multiplications by an invertible element, $L_a\tilde{Ξ}=a\tilde{Ξ}$ with $a$ of norm one, hence the basis operators $m_{\mathrm{fop},1}=iL_x$ and $m_{\mathrm{fop},2}=iL_y$; for $n\ge2$ the Majorana operators are operators of the mode algebra, which the algebra $\mathbb{B}$ does not contain.
+**The Majorana pair of the mode.** The two Hermitian combinations $m_{\mathrm{fop},1}=\vec\Pi_{\mathrm{nil},x+}\vec\Pi_{\mathrm{nil},y}=i\vec e_x$ and $m_{\mathrm{fop},2}=-i(\vec\Pi_{\mathrm{nil},x-}\vec\Pi_{\mathrm{nil},y})=i\vec e_y$ obey $\{m_{\mathrm{fop},\eta},m_{\mathrm{fop},l}\}=2\delta_{\eta l}e_t$ for $k,l=1,2$, so they are the one-mode instance of the Majorana operators of the previous section. Both are left multiplications by an invertible element, $L_a\tilde{Ξ}=a\tilde{Ξ}$ with $a$ of norm one, hence the basis operators $m_{\mathrm{fop},1}=iL_x$ and $m_{\mathrm{fop},2}=iL_y$; for $n\ge2$ the Majorana operators are operators of the mode algebra, which the algebra $\mathbb{B}$ does not contain.
 
-**The first anticommutator.** Using $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ and $\{\vec\Upsilon_x,\vec\Upsilon_x\}=\{\vec\Upsilon_y,\vec\Upsilon_y\}=0$,
+**The first anticommutator.** Using $\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\}=e_t$ and $\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},x}\}=\{\vec\Pi_{\mathrm{nil},y},\vec\Pi_{\mathrm{nil},y}\}=0$,
 $$
 \big\{\vec b,\vec b^{*}\big\}
-= |\alpha|^2\big\{\vec\Upsilon_x,\vec\Upsilon_y\big\}
-+ |\beta|^2\big\{\vec\Upsilon_y,\vec\Upsilon_x\big\}
+= |\alpha|^2\big\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\big\}
++ |\beta|^2\big\{\vec\Pi_{\mathrm{nil},y},\vec\Pi_{\mathrm{nil},x}\big\}
 = \big(|\alpha|^2+|\beta|^2\big)\,e_t .
 $$
-The two cross terms vanish because they are proportional to $\vec\Upsilon_x^2$ and $(\vec\Upsilon_y)^2$. Nothing constrains $(\alpha,\beta)$ except normalization, so **every** normalized pair gives a transformation preserving the anticommutator between $\vec b$ and its conjugate.
+The two cross terms vanish because they are proportional to $\vec\Pi_{\mathrm{nil},x}^2$ and $(\vec\Pi_{\mathrm{nil},y})^2$. Nothing constrains $(\alpha,\beta)$ except normalization, so **every** normalized pair gives a transformation preserving the anticommutator between $\vec b$ and its conjugate.
 
 **The second anticommutator.** The remaining canonical condition is where the restriction lies:
 $$
 \boxed{\;\big\{\vec b,\vec b\big\}
-= 2\alpha\beta\,\vec\Upsilon_x\vec\Upsilon_y + 2\alpha\beta\,\vec\Upsilon_y\vec\Upsilon_x
-= 2\alpha\beta\,\big\{\vec\Upsilon_x,\vec\Upsilon_y\big\}
+= 2\alpha\beta\,\vec\Pi_{\mathrm{nil},x}\vec\Pi_{\mathrm{nil},y} + 2\alpha\beta\,\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}
+= 2\alpha\beta\,\big\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\big\}
 = 2\alpha\beta\,e_t\;}.
 $$
 The cross terms here do *not* vanish: they combine into the full anticommutator, which is the identity. So
@@ -117,33 +117,33 @@ Solving $|\alpha|^2+|\beta|^2=1$ and $\alpha\beta=0$ gives exactly two branches.
 
 **Branch 1, phases: $\beta=0$, $|\alpha|=1$.** Then
 $$
-\vec b = \exp(i\vartheta_{\mathrm{par}})\,\vec\Upsilon_x ,
+\vec b = \exp(i\vartheta_{\mathrm{par}})\,\vec\Pi_{\mathrm{nil},x} ,
 \qquad
-\vec b^{*} = \exp(-i\vartheta_{\mathrm{par}})\,\vec\Upsilon_y ,
+\vec b^{*} = \exp(-i\vartheta_{\mathrm{par}})\,\vec\Pi_{\mathrm{nil},y} ,
 \qquad
 \vartheta_{\mathrm{par}}\in[0,2\pi) .
 $$
 This is an **inner** automorphism of $\mathbb{B}$, but the implementing $*$-unitary is not central: it is the gauge $*$-unitary generated by the number operator,
 $$
-\tilde Q_{\mathrm{par},\vartheta} = \exp(-i\vartheta_{\mathrm{par}}\tilde\Pi_-) = e_t + \big(\exp(-i\vartheta_{\mathrm{par}})-1\big)\tilde\Pi_-,
+\tilde Q_{\mathrm{par},\vartheta} = \exp(-i\vartheta_{\mathrm{par}}\tilde\Pi_{\mathrm{id},-}) = e_t + \big(\exp(-i\vartheta_{\mathrm{par}})-1\big)\tilde\Pi_{\mathrm{id},-},
 \qquad
-\tilde Q_{\mathrm{par},\vartheta}\,\vec\Upsilon_x\,\tilde Q_{\vartheta_{\mathrm{par}}}^{-1} = \exp(i\vartheta_{\mathrm{par}})\vec\Upsilon_x,
+\tilde Q_{\mathrm{par},\vartheta}\,\vec\Pi_{\mathrm{nil},x}\,\tilde Q_{\vartheta_{\mathrm{par}}}^{-1} = \exp(i\vartheta_{\mathrm{par}})\vec\Pi_{\mathrm{nil},x},
 \qquad
-\tilde Q_{\mathrm{par},\vartheta}\,\vec\Upsilon_y\,\tilde Q_{\vartheta_{\mathrm{par}}}^{-1} = \exp(-i\vartheta_{\mathrm{par}})\vec\Upsilon_y ,
+\tilde Q_{\mathrm{par},\vartheta}\,\vec\Pi_{\mathrm{nil},y}\,\tilde Q_{\vartheta_{\mathrm{par}}}^{-1} = \exp(-i\vartheta_{\mathrm{par}})\vec\Pi_{\mathrm{nil},y} ,
 $$
-where the closed form uses $\tilde\Pi_-^2=\tilde\Pi_-$. The element $\tilde Q_{\mathrm{par},\vartheta}$ is $*$-unitary and lies in $\mathbb{B}$, and it is non-central: it does not commute with $\vec\Upsilon_x$ or $\vec\Upsilon_y$. This is the $\mathrm{U}(1)$ **gauge** symmetry of the single mode, written as an algebra element.
+where the closed form uses $\tilde\Pi_{\mathrm{id},-}^2=\tilde\Pi_{\mathrm{id},-}$. The element $\tilde Q_{\mathrm{par},\vartheta}$ is $*$-unitary and lies in $\mathbb{B}$, and it is non-central: it does not commute with $\vec\Pi_{\mathrm{nil},x}$ or $\vec\Pi_{\mathrm{nil},y}$. This is the $\mathrm{U}(1)$ **gauge** symmetry of the single mode, written as an algebra element.
 
 **Branch 2, particle–hole exchange: $\alpha=0$, $|\beta|=1$.** Then
 $$
-\vec b = \exp(i\vartheta_{\mathrm{par}})\,\vec\Upsilon_y ,
+\vec b = \exp(i\vartheta_{\mathrm{par}})\,\vec\Pi_{\mathrm{nil},y} ,
 \qquad
-\vec b^{*} = \exp(-i\vartheta_{\mathrm{par}})\,\vec\Upsilon_x .
+\vec b^{*} = \exp(-i\vartheta_{\mathrm{par}})\,\vec\Pi_{\mathrm{nil},x} .
 $$
 This exchanges the two ladder operators, which is the Hermitian conjugation of the pair up to a phase; it maps the vacuum idempotent to its complement,
 $$
-\vec\Upsilon_y \leftrightarrow \vec\Upsilon_x,
+\vec\Pi_{\mathrm{nil},y} \leftrightarrow \vec\Pi_{\mathrm{nil},x},
 \qquad
-\tilde\Pi_+ = e_t-\tilde\Pi_- \;\longmapsto\; \tilde\Pi_-,
+\tilde\Pi_{\mathrm{id},+} = e_t-\tilde\Pi_{\mathrm{id},-} \;\longmapsto\; \tilde\Pi_{\mathrm{id},-},
 $$
 The particle–hole branch is the reflection, the $\mathbb{Z}_2$ of the group.
 
@@ -159,11 +159,11 @@ The group-theoretic statement is worth restating physically. Fermionic squeezing
 
 Both branches act geometrically on the state space, and the action is the action of the group of invertibles of $\mathbb{B}$.
 
-**Phases are the gauge symmetry of the mode.** A phase $\vec\Upsilon_x\mapsto \exp(i\vartheta_{\mathrm{par}})\vec\Upsilon_x$ is conjugation by $\tilde Q_{\mathrm{par},\vartheta}=\exp(-i\vartheta_{\mathrm{par}}\tilde\Pi_-)$, which commutes with the number operator and therefore fixes it and both idempotents:
+**Phases are the gauge symmetry of the mode.** A phase $\vec\Pi_{\mathrm{nil},x}\mapsto \exp(i\vartheta_{\mathrm{par}})\vec\Pi_{\mathrm{nil},x}$ is conjugation by $\tilde Q_{\mathrm{par},\vartheta}=\exp(-i\vartheta_{\mathrm{par}}\tilde\Pi_{\mathrm{id},-})$, which commutes with the number operator and therefore fixes it and both idempotents:
 $$
-\tilde Q_{\mathrm{par},\vartheta}\,\tilde\Pi_-\,\tilde Q_{\vartheta_{\mathrm{par}}}^{-1} = \tilde\Pi_-,
+\tilde Q_{\mathrm{par},\vartheta}\,\tilde\Pi_{\mathrm{id},-}\,\tilde Q_{\vartheta_{\mathrm{par}}}^{-1} = \tilde\Pi_{\mathrm{id},-},
 \qquad
-\tilde Q_{\mathrm{par},\vartheta}\,\tilde\Pi(\pm \vec e_z)\,\tilde Q_{\vartheta_{\mathrm{par}}}^{-1} = \tilde\Pi(\pm \vec e_z),
+\tilde Q_{\mathrm{par},\vartheta}\,\tilde\Pi_{\mathrm{id}}(\pm \vec e_z)\,\tilde Q_{\vartheta_{\mathrm{par}}}^{-1} = \tilde\Pi_{\mathrm{id}}(\pm \vec e_z),
 \qquad
 \tilde Q_{\mathrm{par},\vartheta}\,(i\vec e_z)\,\tilde Q_{\vartheta_{\mathrm{par}}}^{-1} = i\vec e_z .
 $$
@@ -217,23 +217,23 @@ The transformations above are the canonical transformations that diagonalize qua
 
 A general quadratic fermionic Hamiltonian on one mode has the form
 $$
-\tilde H_\Psi = A\,\vec\Upsilon_y\vec\Upsilon_x + \tfrac12\big(\mathcal{G}_{\mathrm{gap}}^*\vec\Upsilon_x\vec\Upsilon_x + \mathcal{G}_{\mathrm{gap}}\,\vec\Upsilon_y\vec\Upsilon_y\big) + B\,e_t ,
+\tilde H_\Psi = A\,\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x} + \tfrac12\big(\mathcal{G}_{\mathrm{gap}}^*\vec\Pi_{\mathrm{nil},x}\vec\Pi_{\mathrm{nil},x} + \mathcal{G}_{\mathrm{gap}}\,\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},y}\big) + B\,e_t ,
 \qquad A\in\mathbb{R},\ \mathcal{G}_{\mathrm{gap}}\in\mathbb{C},
 $$
-with the pairing term $\mathcal{G}_{\mathrm{gap}}$ the BCS gap. The Hermitian single-mode quadratic terms are generated by $e_t$, $\tilde\Pi_-$, and the two pairing elements $\vec\Upsilon_x^2=(\vec\Upsilon_y)^2=0$; the last vanish identically, so on **one** mode the gap term is zero and the Hamiltonian is automatically diagonal:
+with the pairing term $\mathcal{G}_{\mathrm{gap}}$ the BCS gap. The Hermitian single-mode quadratic terms are generated by $e_t$, $\tilde\Pi_{\mathrm{id},-}$, and the two pairing elements $\vec\Pi_{\mathrm{nil},x}^2=(\vec\Pi_{\mathrm{nil},y})^2=0$; the last vanish identically, so on **one** mode the gap term is zero and the Hamiltonian is automatically diagonal:
 $$
-\tilde H_\Psi = A\,\tilde\Pi_- + B\,e_t .
+\tilde H_\Psi = A\,\tilde\Pi_{\mathrm{id},-} + B\,e_t .
 $$
 Hence a single biquaternion mode is always its own eigenmode; there is no one-mode Bogoliubov rotation to perform and no gap to open. The gap requires a second mode, in agreement with the coset analysis. On two modes the pairing term is nonzero and the diagonalization is the standard BCS transformation; it is diagonalized by the two-mode Bogoliubov transformation with coefficients $(u,v)$ satisfying $|u|^2+|v|^2=1$, which is exactly the many-mode coset element. The biquaternion algebra contains the diagonal one-mode case and nothing more.
 
-This is a small but genuine structural statement. In the framework the one-mode number operator $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ is a projector, so its eigenvalues are $0$ and $1$ and the one-mode Hamiltonian $A\tilde\Pi_-+Be_t$ has the two levels $B$ and $A+B$. There is no room for a squeezed ground state. The ground state is $\tilde\Pi_+$ or $\tilde\Pi_-$ according to the sign of $A$, and it is a minimal idempotent in either case, chosen by the sign of the one-mode energy — the finite-dimensional instance of the statement that the vacuum is selected by the dynamics.
+This is a small but genuine structural statement. In the framework the one-mode number operator $\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec e_z)$ is a projector, so its eigenvalues are $0$ and $1$ and the one-mode Hamiltonian $A\tilde\Pi_{\mathrm{id},-+Be}_t$ has the two levels $B$ and $A+B$. There is no room for a squeezed ground state. The ground state is $\tilde\Pi_{\mathrm{id},+}$ or $\tilde\Pi_{\mathrm{id},-}$ according to the sign of $A$, and it is a minimal idempotent in either case, chosen by the sign of the one-mode energy — the finite-dimensional instance of the statement that the vacuum is selected by the dynamics.
 
 ## What Is Established and What Is Interpretation
 
 **Established (algebra).**
-- The one-mode canonical conditions are $|\alpha|^2+|\beta|^2=1$ and $\alpha\beta=0$, computed directly from $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ and $\vec\Upsilon_x^2=0$; equivalently $\{\vec b,\vec b^{*}\}=(|\alpha|^2+|\beta|^2)e_t$ and $\{\vec b,\vec b\}=2\alpha\beta e_t$.
+- The one-mode canonical conditions are $|\alpha|^2+|\beta|^2=1$ and $\alpha\beta=0$, computed directly from $\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\}=e_t$ and $\vec\Pi_{\mathrm{nil},x}^2=0$; equivalently $\{\vec b,\vec b^{*}\}=(|\alpha|^2+|\beta|^2)e_t$ and $\{\vec b,\vec b\}=2\alpha\beta e_t$.
 - The one-mode Bogoliubov group is $O(2)=\mathrm{U}(1)\rtimes\mathbb{Z}_2$: the inner gauge phases and the particle–hole exchange. There is no continuous one-mode squeezing; the coset $O(2)/\mathrm{U}(1)$ is the two-point set $\{$identity, particle–hole$\}$.
-- The one-mode quadratic Hamiltonian is automatically diagonal, $\tilde H_\Psi=A\tilde\Pi_-+Be_t$, because the pairing elements vanish.
+- The one-mode quadratic Hamiltonian is automatically diagonal, $\tilde H_\Psi=A\tilde\Pi_{\mathrm{id},-+Be}_t$, because the pairing elements vanish.
 
 **Standard, and transcribed.**
 - The general Bogoliubov transformation, the canonical conditions $uu^\dagger+vv^\dagger=I$, $uv^T+vu^T=0$, the Majorana form, the groups $O(2n)$, $\mathrm{U}(n)$ and the squeezing cosets, and their dimensions $n(n-1)$ and $n(n+1)$.
@@ -248,13 +248,13 @@ This is a small but genuine structural statement. In the framework the one-mode 
 
 ## Summary
 
-For a single fermionic mode the biquaternion algebra contains the Bogoliubov transformation and decides it completely. Writing $\vec b=\alpha\vec\Upsilon_x+\beta\vec\Upsilon_y$,
+For a single fermionic mode the biquaternion algebra contains the Bogoliubov transformation and decides it completely. Writing $\vec b=\alpha\vec\Pi_{\mathrm{nil},x+}\beta\vec\Pi_{\mathrm{nil},y}$,
 $$
 \boxed{\;\big\{\vec b,\vec b^{*}\big\}=\big(|\alpha|^2+|\beta|^2\big)e_t,
 \qquad
 \big\{\vec b,\vec b\big\}=2\alpha\beta\,e_t\;},
 $$
-so the canonical conditions are $|\alpha|^2+|\beta|^2=1$ and $\alpha\beta=0$. The solutions are the phases $\vec b=\exp(i\vartheta_{\mathrm{par}})\vec\Upsilon_x$, an inner automorphism generated by the number operator, and the particle–hole exchange $\vec b=\exp(i\vartheta_{\mathrm{par}})\vec\Upsilon_y$, which swaps the vacuum idempotent with the number idempotent. The one-mode Bogoliubov group is $O(2)=\mathrm{U}(1)\rtimes\mathbb{Z}_2$, with the Fock-preserving subgroup the $\mathrm{U}(1)$ of phases and the discrete coset $O(2)/\mathrm{U}(1)$; there is **no continuous squeezing**, and the one-mode quadratic Hamiltonian is automatically diagonal, $\tilde H_\Psi=A\tilde\Pi_-+Be_t$, because the one-mode pairing elements vanish.
+so the canonical conditions are $|\alpha|^2+|\beta|^2=1$ and $\alpha\beta=0$. The solutions are the phases $\vec b=\exp(i\vartheta_{\mathrm{par}})\vec\Pi_{\mathrm{nil},x}$, an inner automorphism generated by the number operator, and the particle–hole exchange $\vec b=\exp(i\vartheta_{\mathrm{par}})\vec\Pi_{\mathrm{nil},y}$, which swaps the vacuum idempotent with the number idempotent. The one-mode Bogoliubov group is $O(2)=\mathrm{U}(1)\rtimes\mathbb{Z}_2$, with the Fock-preserving subgroup the $\mathrm{U}(1)$ of phases and the discrete coset $O(2)/\mathrm{U}(1)$; there is **no continuous squeezing**, and the one-mode quadratic Hamiltonian is automatically diagonal, $\tilde H_\Psi=A\tilde\Pi_{\mathrm{id},-+Be}_t$, because the one-mode pairing elements vanish.
 
 Fermionic squeezing requires at least two modes. For $n$ modes the Bogoliubov group is $O(2n)$ (fermions) or $Sp(2n,\mathbb{R})$ (bosons), the Fock-preserving subgroup is $\mathrm{U}(n)$, and the squeezing coset has dimension $n(n-1)$ or $n(n+1)$. The thermal transformations of the Unruh and Hawking calculations have $v\ne0$ and lie in that coset; they are many-mode objects, not inner automorphisms of $\mathbb{B}$, and, in the field limit, the two vacua they relate need not be unitarily equivalent. The biquaternion algebra holds one mode; the squeezing lives in the module.
 
@@ -264,11 +264,11 @@ Fermionic squeezing requires at least two modes. For $n$ modes the Bogoliubov gr
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
-| $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | Single-mode ladder |
+| $\vec\Pi_{\mathrm{nil},x}=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Pi_{\mathrm{nil},y}=\tfrac12(i\vec e_x+\vec e_y)$ | Single-mode ladder |
 | $a_{\mathrm{fop}}$, $b_{\mathrm{fop}}$ | Abstract ladder and its Bogoliubov transform, $b_{\mathrm{fop}}=u\,a_{\mathrm{fop}}+v\,a_{\mathrm{fop}}^{\dagger}$ |
-| $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z)$ | Number operator |
-| $\tilde\Pi(\pm \vec e_z)=\tfrac12(e_t\pm i\vec e_z)$ | Vacuum and occupied idempotents |
-| $\vec b=\alpha\vec\Upsilon_x+\beta\vec\Upsilon_y$ | One-mode Bogoliubov transformation |
+| $\tilde\Pi_{\mathrm{id},-}=\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}=\tfrac12(e_t-i\vec e_z)$ | Number operator |
+| $\tilde\Pi_{\mathrm{id}}(\pm \vec e_z)=\tfrac12(e_t\pm i\vec e_z)$ | Vacuum and occupied idempotents |
+| $\vec b=\alpha\vec\Pi_{\mathrm{nil},x+}\beta\vec\Pi_{\mathrm{nil},y}$ | One-mode Bogoliubov transformation |
 | $|\alpha|^2+|\beta|^2=1$, $\alpha\beta=0$ | One-mode canonical conditions |
 | $\{\vec b,\vec b^{*}\}=(|\alpha|^2+|\beta|^2)e_t$ | First anticommutator (always normalized) |
 | $\{\vec b,\vec b\}=2\alpha\beta e_t$ | Second anticommutator (forces $\alpha\beta=0$) |
@@ -278,7 +278,7 @@ Fermionic squeezing requires at least two modes. For $n$ modes the Bogoliubov gr
 | $O(2n)$, $\mathrm{U}(n)$, $O(2n)/\mathrm{U}(n)$ | Bogoliubov group, Fock subgroup, squeezing coset (discrete at $n=1$) |
 | $n(n-1)$, $n(n+1)$ | Squeezing-coset dimensions (fermion, boson) |
 | $|u|^2=(1+\exp(-\beta\omega))^{-1}$, $|v|^2=(\exp(\beta\omega)+1)^{-1}$ | Thermal fermionic coefficients |
-| $\tilde H_\Psi=A\tilde\Pi_-+Be_t$ | One-mode quadratic Hamiltonian (automatically diagonal) |
+| $\tilde H_\Psi=A\tilde\Pi_{\mathrm{id},-+Be}_t$ | One-mode quadratic Hamiltonian (automatically diagonal) |
 
 ## Further Reading
 

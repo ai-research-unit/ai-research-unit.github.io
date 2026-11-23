@@ -183,7 +183,7 @@ $$
 \vec\nabla_\Phi\rho + \partial/\partial\tau\,\vec J - i\,\mathrm{rot}\,\vec J = 0,
 $$
 
-which is the scalar and vector part of $D^-\tilde J_{\Phi,\mathrm{eg}} = 0$, and whose characteristic equation — read off the three-vector part, the scalar part being a constraint on the divergence — is $\nu_t(\nu_t^2 - c^2\|\vec\nu\|^2) = 0$: the two speeds $\nu_t = \pm c\|\vec\nu\|$ together with the **simple** null root $\nu_t = 0$, so the characteristic cone is Maxwell's and the stationary surfaces are characteristic. The jump conditions across a front $F_\tau$ with unit normal $\vec m$ follow from the distributional form of the system:
+which is the scalar and vector part of $D^-\tilde J_{\Phi,\mathrm{eg}} = 0$, and whose characteristic equation — read off the three-vector part, the scalar part being a constraint on the divergence — is $\nu_t(\nu_t^2 - c^2\|\vec u_{\mathrm{sh}}\|^2) = 0$: the two speeds $\nu_t = \pm c\|\vec u_{\mathrm{sh}}\|$ together with the **simple** null root $\nu_t = 0$, so the characteristic cone is Maxwell's and the stationary surfaces are characteristic. The jump conditions across a front $F_\tau$ with unit normal $\vec m$ follow from the distributional form of the system:
 
 $$
 [\rho]_{F_\tau} = \big(\vec m, [\vec J]_{F_\tau}\big),

@@ -72,7 +72,7 @@ and positivity plus the trace condition give exactly
 $$
 \tilde{Ϛ}_{\Psi}\ \text{a state}\iff |\vec s_{\Psi}|\le1 .
 $$
-The state is **pure** on the Bloch sphere $|\vec s_{\Psi}|=1$, where $\tilde{Ϛ}_{\Psi}=\tilde\Pi(\vec u_s)=\tfrac12(e_t+i\vec u_s)$ is a minimal idempotent and $\tilde{Ϛ}_{\Psi}^2=\tilde{Ϛ}_{\Psi}$; it is **faithful** on the open Bloch ball $|\vec s_{\Psi}|<1$, where both eigenvalues are positive; and it is the **trace state** at $\vec s_{\Psi}=0$, where $\tilde{Ϛ}_{\Psi}=\tfrac12e_t$ and $\omega$ is the normalized algebra trace.
+The state is **pure** on the Bloch sphere $|\vec s_{\Psi}|=1$, where $\tilde{Ϛ}_{\Psi}=\tilde\Pi_{\mathrm{id}}(\vec u_s)=\tfrac12(e_t+i\vec u_s)$ is a minimal idempotent and $\tilde{Ϛ}_{\Psi}^2=\tilde{Ϛ}_{\Psi}$; it is **faithful** on the open Bloch ball $|\vec s_{\Psi}|<1$, where both eigenvalues are positive; and it is the **trace state** at $\vec s_{\Psi}=0$, where $\tilde{Ϛ}_{\Psi}=\tfrac12e_t$ and $\omega$ is the normalized algebra trace.
 
 The parameter is a genuine superposition coordinate: $\vec s_{\Psi}$ is the Bloch vector of the state in the basis of the Pauli matrices, and a generic state has all three components nonzero. The computations below are performed on such generic vectors.
 
@@ -143,12 +143,12 @@ S\big(\tfrac12e_t\big\|\tilde{Ϛ}_{\Psi,2}\big)=-\tfrac12\log\big(1-|\vec s|^2\b
 $$
 the relative entropy of the trace state from $\tilde{Ϛ}_{\Psi,2}$, which is finite for every faithful $\tilde{Ϛ}_{\Psi,2}$ and tends to $+\infty$ only as $\tilde{Ϛ}_{\Psi,2}$ itself approaches the pure boundary. If $|\vec s_{\Psi}|\to1$ with $|\vec s|<1$ the expression tends to the finite limit
 $$
-S\big(\tilde\Pi(\vec u_s)\big\|\tilde{Ϛ}_{\Psi,2}\big)
+S\big(\tilde\Pi_{\mathrm{id}}(\vec u_s)\big\|\tilde{Ϛ}_{\Psi,2}\big)
 =-\tfrac12\log\frac{1-|\vec s|^2}{4}
 -\mathrm{artanh}\big(|\vec s|\big)\cos\gamma_{rs},
 \qquad \cos\gamma_{rs}=\vec u_s\cdot\vec u_s,
 $$
-which is the direct computation $-2\,\mathrm{Sc}(\tilde\Pi(\vec u_s)\log\tilde{Ϛ}_{\Psi,2})$ in the pure case: the entropy of a pure state vanishes, and the whole value is the cross term.
+which is the direct computation $-2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}(\vec u_s)\log\tilde{Ϛ}_{\Psi,2})$ in the pure case: the entropy of a pure state vanishes, and the whole value is the cross term.
 
 ### Verification on Generic Superpositions
 
@@ -269,7 +269,7 @@ The framework-specific feature is the boundary. The logarithm is an element of $
 | $\cos\gamma=\vec s_{\Psi}\cdot\vec s/(|\vec s_{\Psi}||\vec s|)$ | Bloch-vector angle |
 | $\mathcal{M}_{\omega,\xi_{\mathrm{alt}}}$ | Araki relative modular operator |
 | $\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ | Biquaternion logarithm of a faithful state |
-| $|0\rangle\langle0|=\tilde\Pi_1$ | Vacuum idempotent (pure state) |
+| $|0\rangle\langle0|=\tilde\Pi_{\mathrm{id},1}$ | Vacuum idempotent (pure state) |
 | $\tfrac12 e_t$ | Trace state (maximally mixed) |
 
 ## Further Reading

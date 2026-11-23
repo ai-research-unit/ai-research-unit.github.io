@@ -6,7 +6,7 @@
 
 The article defines the idempotents by interpolation at the two eigenvalues, proves the four identities that characterise them, exhibits the involution $\rho_{+}-\rho_{-}$ as the normalised shift of the matrix, writes the idempotents in the trace and the determinant through the discriminant, and identifies them with the spectral projectors of the resolvent. It assumes *The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two* and *The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$*, and it defers the general spectral theory to *The Spectrum of a $2\times2$ Matrix*.
 
-On the biquaternion side the same pair is $\tilde\Pi_{\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ in *The Square Roots of One and the Idempotents of the Biquaternion Algebra* and *The Peirce Basis of the Biquaternion Algebra*, and the translation is the one of *$M_2(\mathbb{C})$ Pauli Representation*.
+On the biquaternion side the same pair is $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ in *The Square Roots of One and the Idempotents of the Biquaternion Algebra* and *The Peirce Basis of the Biquaternion Algebra*, and the translation is the one of *$M_2(\mathbb{C})$ Pauli Representation*.
 
 ## The Interpolation Problem
 
@@ -116,9 +116,9 @@ $$
 
 ## The Corpus Translation
 
-**Proposition.** Under the matrix model the pair $\rho_{\pm}$ is the pair $\tilde\Pi_{\pm}$, and the involution $\zeta$ is the root of one $\tilde{Ζ}$.
+**Proposition.** Under the matrix model the pair $\rho_{\pm}$ is the pair $\tilde\Pi_{\mathrm{id},\pm}$, and the involution $\zeta$ is the root of one $\tilde{Ζ}$.
 
-**Proof.** The corpus defines $\tilde\Pi_{\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ with $\tilde{Ζ}^{2}=e_t$, which is the pair of identities proved above for $\rho_{\pm}$ and $\zeta$.
+**Proof.** The corpus defines $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ with $\tilde{Ζ}^{2}=e_t$, which is the pair of identities proved above for $\rho_{\pm}$ and $\zeta$.
 
 **Corollary.** The reconstruction $X=\tfrac12(\operatorname{tr}X)I+\tfrac12\sqrt{\Delta}\,\zeta$ is the corpus's polar form of the element in its root and its modulus.
 
@@ -128,7 +128,7 @@ $$
 
 A two-by-two matrix with two distinct eigenvalues has the Lagrange idempotents $\rho_{\pm}=\ell_{\pm}(X)$, the unique polynomials of degree one in $X$ taking the values $1$ and $0$ at the two eigenvalues. They satisfy $\rho_{+}+\rho_{-}=I$, $\rho_{+}\rho_{-}=0$, $\rho_{\pm}^{2}=\rho_{\pm}$ and $X=\lambda_{+}\rho_{+}+\lambda_{-}\rho_{-}$, each has rank one and trace one, and their difference is the involution $\zeta=(2X-tI)/\sqrt{\Delta}$ with $\rho_{\pm}=\tfrac12(I\pm\zeta)$.
 
-The pair exists exactly where the discriminant $\Delta=t^{2}-4\delta$ is nonzero, and the same objects are the spectral projectors of the resolvent, the residues at the two poles. On the biquaternion side the pair is $\tilde\Pi_{\pm}$ and the involution is the root of one $\tilde{Ζ}$.
+The pair exists exactly where the discriminant $\Delta=t^{2}-4\delta$ is nonzero, and the same objects are the spectral projectors of the resolvent, the residues at the two poles. On the biquaternion side the pair is $\tilde\Pi_{\mathrm{id},\pm}$ and the involution is the root of one $\tilde{Ζ}$.
 
 ## Summary of Notation
 

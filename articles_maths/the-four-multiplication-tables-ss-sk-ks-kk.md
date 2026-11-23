@@ -157,7 +157,7 @@ $$
 
 with $a$ the coefficient of $\mathrm{I}$, so the mixed entry of the product table is $\theta'(b\sigma_3-c\sigma_1)+\theta'aJ$, a sum of one vector in each half. Both identities were verified numerically, and the second shows that the anticommutator of a symmetric matrix with $J$ sees only the scalar part of the symmetric matrix.
 
-**The biquaternion reading names the four entries.** The idempotents $\tilde\Pi_\pm$ are symmetric and the corners $\mathbb{B}_{+-}$, $\mathbb{B}_{-+}$ are mixed, so a product of two corner elements uses the $KS$ and $SK$ rows, and a product of two idempotents uses the $SS$ row. The companion nilpotents $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ satisfy $\vec\Upsilon_{-+}=\vec\Upsilon_{+-}^{*}$ and $\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_+$, which is a $KS$ product whose two halves are the idempotent and the bracket; the normalisation is the statement that one of the two halves is fixed by the gauge.
+**The biquaternion reading names the four entries.** The idempotents $\tilde\Pi_{\mathrm{id},\pm}$ are symmetric and the corners $\mathbb{B}_{+-}$, $\mathbb{B}_{-+}$ are mixed, so a product of two corner elements uses the $KS$ and $SK$ rows, and a product of two idempotents uses the $SS$ row. The companion nilpotents $\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil},-+}$ satisfy $\vec\Pi_{\mathrm{nil},-+}=\vec\Pi_{\mathrm{nil},+-}^{*}$ and $\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}=\tilde\Pi_{\mathrm{id},+}$, which is a $KS$ product whose two halves are the idempotent and the bracket; the normalisation is the statement that one of the two halves is fixed by the gauge.
 
 ## Summary
 

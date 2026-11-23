@@ -454,24 +454,24 @@ The sector is connected, and it is not simply connected; the loop $t\mapsto e_t+
 **Proposition (the normal form).** Every $\tilde Q\in\Sigma_{10}$ has a unique writing
 
 $$
-\boxed{\tilde Q=Q_t\bigl(e_t+\vec\Upsilon\bigr)},
+\boxed{\tilde Q=Q_t\bigl(e_t+\vec\Pi_{\mathrm{nil}}\bigr)},
 \qquad
-\vec\Upsilon^2=0,
+\vec\Pi_{\mathrm{nil}}^2=0,
 \qquad
 Q_t\neq0,
 $$
 
-with $Q_t$ the scalar part and $\vec\Upsilon$ the vector part divided by $Q_t$.
+with $Q_t$ the scalar part and $\vec\Pi_{\mathrm{nil}}$ the vector part divided by $Q_t$.
 
-*Proof.* Since $B^2=0$ the vector part is null, $\vec Q^2=-B^2=0$. Since $N=Q_t^2+B^2=Q_t^2$ and $N\neq0$, the scalar part is nonzero. Put $\vec\Upsilon=\vec Q/Q_t$; then $\vec\Upsilon^2=\vec Q^2/Q_t^2=0$, and $\tilde Q=Q_te_t+\vec Q=Q_t(e_t+\vec\Upsilon)$. The writing is unique because $Q_t$ is the scalar part.
+*Proof.* Since $B^2=0$ the vector part is null, $\vec Q^2=-B^2=0$. Since $N=Q_t^2+B^2=Q_t^2$ and $N\neq0$, the scalar part is nonzero. Put $\vec\Pi_{\mathrm{nil}}=\vec Q/Q_t$; then $\vec\Pi_{\mathrm{nil}}^2=\vec Q^2/Q_t^2=0$, and $\tilde Q=Q_te_t+\vec Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$. The writing is unique because $Q_t$ is the scalar part.
 
-The element is a scalar multiple of a unipotent element. The unipotent factor $e_t+\vec\Upsilon$ has norm one, because
+The element is a scalar multiple of a unipotent element. The unipotent factor $e_t+\vec\Pi_{\mathrm{nil}}$ has norm one, because
 
 $$
-\langle e_t+\vec\Upsilon\rangle_{\natural}=1+\vec\Upsilon^2=1,
+\langle e_t+\vec\Pi_{\mathrm{nil}}\rangle_{\natural}=1+\vec\Pi_{\mathrm{nil}}^2=1,
 $$
 
-and it is invertible, with inverse $e_t-\vec\Upsilon$.
+and it is invertible, with inverse $e_t-\vec\Pi_{\mathrm{nil}}$.
 
 ### The Unit Factor at the Wall
 
@@ -479,8 +479,8 @@ The modulus is the principal square root of $N=Q_t^2$. Since $Q_t^2$ has the two
 
 $$
 \tilde U=\frac{\tilde Q}{\varrho\,e^{i\theta_{\mathrm{pha}}}}
-=\frac{Q_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}}\bigl(e_t+\vec\Upsilon\bigr)
-=\varepsilon\bigl(e_t+\vec\Upsilon\bigr),
+=\frac{Q_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}}\bigl(e_t+\vec\Pi_{\mathrm{nil}}\bigr)
+=\varepsilon\bigl(e_t+\vec\Pi_{\mathrm{nil}}\bigr),
 \qquad
 \varepsilon=\frac{Q_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}}=\pm1.
 $$
@@ -644,27 +644,27 @@ $$
 
 ### The Boxes at the Wall
 
-The general boxes are stated for every invertible element. On the wall the normal form $\tilde Q=Q_t(e_t+\vec\Upsilon)$ evaluates them in closed shape, and the theorem below is that evaluation.
+The general boxes are stated for every invertible element. On the wall the normal form $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ evaluates them in closed shape, and the theorem below is that evaluation.
 
-**Setting.** Use the normal form of §*The Domain*, $\tilde Q=Q_t(e_t+\vec\Upsilon)$, and write
+**Setting.** Use the normal form of §*The Domain*, $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$, and write
 
 $$
-\vec\Upsilon=\vec A+i\vec B,\qquad \vec A,\vec B\in\mathbb R^3,\qquad a=\lVert\vec A\rVert.
+\vec\Pi_{\mathrm{nil}}=\vec A+i\vec B,\qquad \vec A,\vec B\in\mathbb R^3,\qquad a=\lVert\vec A\rVert.
 $$
 
-Since $\vec\Upsilon^2=0$, one has $\vec A\cdot\vec B=0$ and $\lVert\vec A\rVert=\lVert\vec B\rVert=a$. In terms of the coordinates, write $Q_t=q_t+iq'_t$ and $Q_j=q_j+iq'_j$ for $j=x,y,z$, with the eight coefficients real, and put $\vec q=(q_x,q_y,q_z)$ and $\vec q'=(q'_x,q'_y,q'_z)$. Then
+Since $\vec\Pi_{\mathrm{nil}}^2=0$, one has $\vec A\cdot\vec B=0$ and $\lVert\vec A\rVert=\lVert\vec B\rVert=a$. In terms of the coordinates, write $Q_t=q_t+iq'_t$ and $Q_j=q_j+iq'_j$ for $j=x,y,z$, with the eight coefficients real, and put $\vec q=(q_x,q_y,q_z)$ and $\vec q'=(q'_x,q'_y,q'_z)$. Then
 
 $$
 \vec A=\frac{q_t\,\vec q+q'_t\,\vec q'}{q_t^2+q_t'^2},\qquad
 \vec B=\frac{q_t\,\vec q'-q'_t\,\vec q}{q_t^2+q_t'^2},
 $$
 
-since $Q_t^{-1}=(q_t-iq'_t)/(q_t^2+q_t'^2)$ and $\vec\Upsilon=\vec Q\,Q_t^{-1}$.
+since $Q_t^{-1}=(q_t-iq'_t)/(q_t^2+q_t'^2)$ and $\vec\Pi_{\mathrm{nil}}=\vec Q\,Q_t^{-1}$.
 
 **Theorem (the word and its seven data).** On the Jordan part $a>0$, every $\tilde Q$ of the sector is
 
 $$
-\boxed{\;\tilde Q=Q_t(e_t+\vec\Upsilon)=\varrho e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+\boxed{\;\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})=\varrho e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
 =\varrho e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)\;}
 $$
 
@@ -705,32 +705,32 @@ $$
 \tilde U_{\mathrm b}=\sqrt{1+a^2}\,e_t+\frac{i}{\sqrt{1+a^2}}\bigl(\vec B+\vec A\times\vec B\bigr)\;}
 $$
 
-On the scalar line $a=0$ one has $\vec\Upsilon=0$, $\theta_{\mathrm{rpd}}=0$, and $\theta_{\mathrm{axr}}=0$ if $\varepsilon=+1$, $\theta_{\mathrm{axr}}=2\pi$ if $\varepsilon=-1$; both axes are arbitrary.
+On the scalar line $a=0$ one has $\vec\Pi_{\mathrm{nil}}=0$, $\theta_{\mathrm{rpd}}=0$, and $\theta_{\mathrm{axr}}=0$ if $\varepsilon=+1$, $\theta_{\mathrm{axr}}=2\pi$ if $\varepsilon=-1$; both axes are arbitrary.
 
 *Proof.*
 
 **The modulus and the sign.** Since $N=Q_t^2$, the modulus satisfies $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=Q_t^2$, hence $\varrho\,e^{i\theta_{\mathrm{pha}}}=\pm Q_t$. The principal branch selects the sign displayed, and $\varrho=|\varrho\,e^{i\theta_{\mathrm{pha}}}|=|Q_t|$, $\varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$. Writing $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho e^{i\theta_{\mathrm{pha}}}$ gives $\theta_{\mathrm{pha}}=\arg(\varrho\,e^{i\theta_{\mathrm{pha}}})$, with the principal argument in $(-\pi,\pi]$; since $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varepsilon Q_t$, this is the box for $\theta_{\mathrm{pha}}$.
 
-**The structure of $\vec\Upsilon$.** With $\vec\Upsilon=\vec A+i\vec B$,
+**The structure of $\vec\Pi_{\mathrm{nil}}$.** With $\vec\Pi_{\mathrm{nil}}=\vec A+i\vec B$,
 
 $$
-\vec\Upsilon^2=\vec A^2-\vec B^2+2i\vec A\cdot\vec B
+\vec\Pi_{\mathrm{nil}}^2=\vec A^2-\vec B^2+2i\vec A\cdot\vec B
 =\bigl(\lVert\vec B\rVert^2-\lVert\vec A\rVert^2\bigr)+2i\vec A\cdot\vec B,
 $$
 
-because $\vec A^2=-\lVert\vec A\rVert^2$ and $\vec B^2=-\lVert\vec B\rVert^2$ for real vectors. The vanishing of $\vec\Upsilon^2$ gives $\lVert\vec A\rVert=\lVert\vec B\rVert=a$ and $\vec A\cdot\vec B=0$.
+because $\vec A^2=-\lVert\vec A\rVert^2$ and $\vec B^2=-\lVert\vec B\rVert^2$ for real vectors. The vanishing of $\vec\Pi_{\mathrm{nil}}^2$ gives $\lVert\vec A\rVert=\lVert\vec B\rVert=a$ and $\vec A\cdot\vec B=0$.
 
-**The product $\tilde U\tilde U^*$.** The unit factor is $\tilde U=\varepsilon(e_t+\vec\Upsilon)$ and its star conjugate is $\tilde U^*=\varepsilon(e_t-\bar{\vec\Upsilon})$. Hence
-
-$$
-\tilde U\tilde U^*=(e_t+\vec\Upsilon)(e_t-\bar{\vec\Upsilon})
-=e_t+\vec\Upsilon-\bar{\vec\Upsilon}-\vec\Upsilon\bar{\vec\Upsilon}.
-$$
-
-Now $\vec\Upsilon-\bar{\vec\Upsilon}=2i\vec B$, and, using $\vec A\cdot\vec B=0$ and $\lVert\vec A\rVert=\lVert\vec B\rVert=a$,
+**The product $\tilde U\tilde U^*$.** The unit factor is $\tilde U=\varepsilon(e_t+\vec\Pi_{\mathrm{nil}})$ and its star conjugate is $\tilde U^*=\varepsilon(e_t-\bar{\vec\Pi_{\mathrm{nil}}})$. Hence
 
 $$
-\vec\Upsilon\bar{\vec\Upsilon}
+\tilde U\tilde U^*=(e_t+\vec\Pi_{\mathrm{nil}})(e_t-\bar{\vec\Pi_{\mathrm{nil}}})
+=e_t+\vec\Pi_{\mathrm{nil}}-\bar{\vec\Pi_{\mathrm{nil}}}-\vec\Pi_{\mathrm{nil}}\bar{\vec\Pi_{\mathrm{nil}}}.
+$$
+
+Now $\vec\Pi_{\mathrm{nil}}-\bar{\vec\Pi_{\mathrm{nil}}}=2i\vec B$, and, using $\vec A\cdot\vec B=0$ and $\lVert\vec A\rVert=\lVert\vec B\rVert=a$,
+
+$$
+\vec\Pi_{\mathrm{nil}}\bar{\vec\Pi_{\mathrm{nil}}}
 =(\vec A+i\vec B)(\vec A-i\vec B)
 =-2a^2-2i\,\vec A\times\vec B.
 $$
@@ -773,7 +773,7 @@ $$
 \tilde U_{\mathrm b}\tilde u_{\mathrm r}
 =(c\,e_t+iw)\,\varepsilon\,\frac{e_t+\vec A}{c}
 =\varepsilon\bigl(e_t+\vec A+i\vec B\bigr)
-=\varepsilon(e_t+\vec\Upsilon)=\tilde U.
+=\varepsilon(e_t+\vec\Pi_{\mathrm{nil}})=\tilde U.
 $$
 
 By the uniqueness of the complete polar decomposition, this is the rotor, and the box for $\tilde u_{\mathrm r}$ follows.
@@ -785,7 +785,7 @@ $$
 =\varepsilon\,\frac{\vec A}{a}.
 $$
 
-**The scalar line.** If $a=0$ then $\vec B=0$ and $\vec A=0$, so $\vec\Upsilon=0$ and $\tilde Q=Q_te_t$. Then $\theta_{\mathrm{rpd}}=0$, and the rotor is $\varepsilon e_t$, that is, $\theta_{\mathrm{axr}}=0$ for $\varepsilon=+1$ and $\theta_{\mathrm{axr}}=2\pi$ for $\varepsilon=-1$. Both axes are arbitrary.
+**The scalar line.** If $a=0$ then $\vec B=0$ and $\vec A=0$, so $\vec\Pi_{\mathrm{nil}}=0$ and $\tilde Q=Q_te_t$. Then $\theta_{\mathrm{rpd}}=0$, and the rotor is $\varepsilon e_t$, that is, $\theta_{\mathrm{axr}}=0$ for $\varepsilon=+1$ and $\theta_{\mathrm{axr}}=2\pi$ for $\varepsilon=-1$. Both axes are arbitrary.
 
 **Check.** For
 
@@ -815,7 +815,7 @@ Let $\tilde Q\in\Sigma_{11}$, and fix a square root $B$ of $B^2$. Define
 $$
 \vec{Ζ}=-i\frac{\vec Q}{B},
 \qquad
-\tilde\Pi_\pm=\frac{e_t\pm\vec{Ζ}}{2},
+\tilde\Pi_{\mathrm{id},\pm}=\frac{e_t\pm\vec{Ζ}}{2},
 \qquad
 \lambda_\pm=Q_t\pm iB.
 $$
@@ -826,20 +826,20 @@ $$
 \vec{Ζ}^2=e_t,
 $$
 
-the two elements $\tilde\Pi_\pm$ are complementary idempotents,
+the two elements $\tilde\Pi_{\mathrm{id},\pm}$ are complementary idempotents,
 
 $$
-\tilde\Pi_\pm^2=\tilde\Pi_\pm,
+\tilde\Pi_{\mathrm{id},\pm}^2=\tilde\Pi_{\mathrm{id},\pm},
 \qquad
-\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0,
+\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=\tilde\Pi_{\mathrm{id},-}\tilde\Pi_{\mathrm{id},+}=0,
 \qquad
-\tilde\Pi_++\tilde\Pi_-=e_t,
+\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t,
 $$
 
 and
 
 $$
-\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-.
+\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}.
 $$
 
 The eigenvalues are distinct and nonzero, and the idempotents are the spectral projections.
@@ -853,20 +853,20 @@ $$
 The idempotent identities follow from $\vec{Ζ}^2=e_t$ and the commutation of $\vec{Ζ}$ with itself. The spectral decomposition is checked by expanding the right-hand side:
 
 $$
-\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-
+\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}
 =\frac{\lambda_++\lambda_-}{2}e_t+\frac{\lambda_+-\lambda_-}{2}\vec{Ζ}
 =Q_te_t+iB\vec{Ζ}
 =Q_te_t+\vec Q.
 $$
 
-The two signs of $B$ exchange $\vec{Ζ}$ with $-\vec{Ζ}$, $\tilde\Pi_+$ with $\tilde\Pi_-$, and $\lambda_+$ with $\lambda_-$; the unordered pair is unchanged. The element is semisimple, its minimal polynomial is $X^2-2Q_tX+N$, and its centraliser is $\mathbb{C}[\tilde Q]\cong\mathbb{C}\oplus\mathbb{C}$.
+The two signs of $B$ exchange $\vec{Ζ}$ with $-\vec{Ζ}$, $\tilde\Pi_{\mathrm{id},+}$ with $\tilde\Pi_{\mathrm{id},-}$, and $\lambda_+$ with $\lambda_-$; the unordered pair is unchanged. The element is semisimple, its minimal polynomial is $X^2-2Q_tX+N$, and its centraliser is $\mathbb{C}[\tilde Q]\cong\mathbb{C}\oplus\mathbb{C}$.
 
 ### The Unit Factor on the Eigenlines
 
 Since $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ and $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is central,
 
 $$
-\tilde U=\mu_+\tilde\Pi_++\mu_-\tilde\Pi_-,
+\tilde U=\mu_+\tilde\Pi_{\mathrm{id},++}\mu_-\tilde\Pi_{\mathrm{id},-},
 \qquad
 \mu_\pm=\frac{\lambda_\pm}{\varrho\,e^{i\theta_{\mathrm{pha}}}}.
 $$
@@ -1022,7 +1022,7 @@ The comparison is a count of real data.
 |---|---|---|
 | $N$, $B^2$ | $4$ | $\varrho,\theta_{\mathrm{pha}},U_t$ |
 | spectrum $\{\lambda_+,\lambda_-\}$ | $4$ | the same, in spectral form |
-| eigenprojectors $\tilde\Pi_\pm$ | $4$ | the eigenlines; the polar axes only in the normal case |
+| eigenprojectors $\tilde\Pi_{\mathrm{id},\pm}$ | $4$ | the eigenlines; the polar axes only in the normal case |
 | word $(\varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ | $8$ | the element |
 
 The spectrum and the eigenprojectors together determine the element. The polar word is another eight data. The two parametrizations share the four data $(\varrho,\theta_{\mathrm{pha}},U_t)$; the spectrum determines the remaining data only in the normal case, where the eigenprojectors are the polar axes. In the non-normal case the eigenprojectors do not determine the polar axes, and the spectrum does not determine the two angles.
@@ -1053,11 +1053,11 @@ $$
 \boxed{\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0}.
 $$
 
-*Proof.* By the normal form, $\tilde U=\varepsilon(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$. Its scalar part is $\varepsilon$, and
+*Proof.* By the normal form, $\tilde U=\varepsilon(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}^2=0$. Its scalar part is $\varepsilon$, and
 
 $$
 \bigl(\tilde U-\varepsilon e_t\bigr)^2
-=\varepsilon^2\vec\Upsilon^2=0.
+=\varepsilon^2\vec\Pi_{\mathrm{nil}}^2=0.
 $$
 
 The scalar part of the component form is $c_{\mathrm b}c_{\mathrm r}-i s_{\mathrm b}s_{\mathrm r}c$. It equals the real number $\varepsilon$, so its imaginary part vanishes, which gives the second equation, and its real part gives the first.
@@ -1086,7 +1086,7 @@ $$
 
 Conversely, every choice of $\theta_{\mathrm{axr}}\in(0,\pi)\cup(\pi,2\pi)$, of $\vec u_{\mathrm b}\in S^2$ and of $\vec u_{\mathrm r}$ in the great circle orthogonal to $\vec u_{\mathrm b}$, with $\theta_{\mathrm{rpd}}$ defined by the displayed relation, gives a word of an element of the Jordan part.
 
-*Proof.* On the Jordan part $\vec\Upsilon\neq0$, so $\tilde U\neq\varepsilon e_t$. If $\theta_{\mathrm{rpd}}=0$ then $c_{\mathrm b}=1$ and the first constraint gives $c_{\mathrm r}=\pm1$, so $\theta_{\mathrm{axr}}\in\{0,2\pi\}$ and the component form is $\tilde U=\pm e_t$, a contradiction. Hence $\theta_{\mathrm{rpd}}>0$ and $s_{\mathrm b}>0$. If $\theta_{\mathrm{axr}}=0$ or $2\pi$ then $s_{\mathrm r}=0$ and the component form is again scalar. If $\theta_{\mathrm{axr}}=\pi$ then $c_{\mathrm r}=0$, and the first constraint gives $0=\pm1$, impossible. Hence $\theta_{\mathrm{axr}}\notin\{0,\pi,2\pi\}$ and $s_{\mathrm r}>0$. The second constraint then forces $c=0$. The first gives $|c_{\mathrm b}c_{\mathrm r}|=1$, which is the displayed relation, and the sign of $c_{\mathrm r}$ is the sign of $\varepsilon$. The converse is a direct substitution: with orthogonal axes and the relation, the scalar part is $\varepsilon$ and the vector part is null, so the unit factor is unipotent and the element lies in the Jordan part.
+*Proof.* On the Jordan part $\vec\Pi_{\mathrm{nil}}\neq0$, so $\tilde U\neq\varepsilon e_t$. If $\theta_{\mathrm{rpd}}=0$ then $c_{\mathrm b}=1$ and the first constraint gives $c_{\mathrm r}=\pm1$, so $\theta_{\mathrm{axr}}\in\{0,2\pi\}$ and the component form is $\tilde U=\pm e_t$, a contradiction. Hence $\theta_{\mathrm{rpd}}>0$ and $s_{\mathrm b}>0$. If $\theta_{\mathrm{axr}}=0$ or $2\pi$ then $s_{\mathrm r}=0$ and the component form is again scalar. If $\theta_{\mathrm{axr}}=\pi$ then $c_{\mathrm r}=0$, and the first constraint gives $0=\pm1$, impossible. Hence $\theta_{\mathrm{axr}}\notin\{0,\pi,2\pi\}$ and $s_{\mathrm r}>0$. The second constraint then forces $c=0$. The first gives $|c_{\mathrm b}c_{\mathrm r}|=1$, which is the displayed relation, and the sign of $c_{\mathrm r}$ is the sign of $\varepsilon$. The converse is a direct substitution: with orthogonal axes and the relation, the scalar part is $\varepsilon$ and the vector part is null, so the unit factor is unipotent and the element lies in the Jordan part.
 
 The frame is therefore orthogonal, and one of the two angles is a function of the other. The independent data of the unipotent factor are one angle and a frame: $\theta_{\mathrm{axr}}$ (one real number), $\vec u_{\mathrm b}$ (two), and $\vec u_{\mathrm r}$ in the orthogonal circle (one), which is four real dimensions, the dimension of the punctured nilpotent cone.
 
@@ -1109,9 +1109,9 @@ with $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\v
 
 $$
 \boxed{\;
-\tilde Q=Q_t\Bigl(e_t+\vec\Upsilon\Bigr),
+\tilde Q=Q_t\Bigl(e_t+\vec\Pi_{\mathrm{nil}}\Bigr),
 \qquad
-\vec\Upsilon=i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}
+\vec\Pi_{\mathrm{nil}}=i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}
 +\tan\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}
 +i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}\;\vec u_{\mathrm b}\times\vec u_{\mathrm r}.
 \;}
@@ -1130,26 +1130,26 @@ i s_{\mathrm b}s_{\mathrm r}
 =i\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}.
 $$
 
-The vector part of the unit factor is $\varepsilon$ times the bracket, and $\tilde U=\varepsilon(e_t+\vec\Upsilon)$, so the bracket is $\vec\Upsilon$; hence $\tilde Q=Q_t(e_t+\vec\Upsilon)$. On the scalar line $\tan\frac{\theta_{\mathrm{axr}}}{2}=\tanh\frac{\theta_{\mathrm{rpd}}}{2}=0$, and the same display reduces to $Q_te_t$.
+The vector part of the unit factor is $\varepsilon$ times the bracket, and $\tilde U=\varepsilon(e_t+\vec\Pi_{\mathrm{nil}})$, so the bracket is $\vec\Pi_{\mathrm{nil}}$; hence $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$. On the scalar line $\tan\frac{\theta_{\mathrm{axr}}}{2}=\tanh\frac{\theta_{\mathrm{rpd}}}{2}=0$, and the same display reduces to $Q_te_t$.
 
 The formula is the exact shape of the sector. The complex number $Q_t$ carries the scale and the phase; the rest is a unipotent written in the frame. The vector part is automatically null: with the three orthogonal directions, its square is
 
 $$
-\vec\Upsilon^2=\tanh^2\frac{\theta_{\mathrm{rpd}}}{2}-\tan^2\frac{\theta_{\mathrm{axr}}}{2}
+\vec\Pi_{\mathrm{nil}}^2=\tanh^2\frac{\theta_{\mathrm{rpd}}}{2}-\tan^2\frac{\theta_{\mathrm{axr}}}{2}
 +\tanh^2\frac{\theta_{\mathrm{rpd}}}{2}\tan^2\frac{\theta_{\mathrm{axr}}}{2},
 $$
 
 which vanishes by $|\cos\frac{\theta_{\mathrm{axr}}}{2}|=1/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$. The cross term carries the plus sign because its coefficient is imaginary.
 
-**Remark (the scalar factor).** The unit factor depends only on $\theta_{\mathrm{axr}}$ and the frame, not on $Q_t$. Changing $Q_t$ by a nonzero complex number changes the scale and the phase, and possibly the sign $\varepsilon$, but leaves $\vec\Upsilon$ unchanged. The sector is the product of the scalar line $\mathbb{C}^{\times}$ with the punctured nilpotent cone; the frame and the two angles are functions of the second factor alone, and the sign is carried by the first.
+**Remark (the scalar factor).** The unit factor depends only on $\theta_{\mathrm{axr}}$ and the frame, not on $Q_t$. Changing $Q_t$ by a nonzero complex number changes the scale and the phase, and possibly the sign $\varepsilon$, but leaves $\vec\Pi_{\mathrm{nil}}$ unchanged. The sector is the product of the scalar line $\mathbb{C}^{\times}$ with the punctured nilpotent cone; the frame and the two angles are functions of the second factor alone, and the sign is carried by the first.
 
 ## The Two Strata
 
-The wall splits into two strata. The scalar line is the set $\vec\Upsilon=0$; the Jordan part is its complement in $\Sigma_{10}$, where $\vec\Upsilon\neq0$ and the element is defective. The word takes a different shape on each, and it degenerates on neither.
+The wall splits into two strata. The scalar line is the set $\vec\Pi_{\mathrm{nil}}=0$; the Jordan part is its complement in $\Sigma_{10}$, where $\vec\Pi_{\mathrm{nil}}\neq0$ and the element is defective. The word takes a different shape on each, and it degenerates on neither.
 
 ### The Scalar Line
 
-On the scalar line $\vec\Upsilon=0$, the element is $Q_te_t$, the unit factor is $\varepsilon e_t$, and
+On the scalar line $\vec\Pi_{\mathrm{nil}}=0$, the element is $Q_te_t$, the unit factor is $\varepsilon e_t$, and
 
 $$
 \theta_{\mathrm{rpd}}=0,
@@ -1170,7 +1170,7 @@ The sign $\varepsilon$ is fixed by the branch: if $\varrho\,e^{i\theta_{\mathrm{
 
 ### The Jordan Part
 
-On the Jordan part $\vec\Upsilon\neq0$, the element is defective: its minimal polynomial is $(X-Q_t)^2$, its geometric multiplicity is one, and it has no eigenbasis. The word has
+On the Jordan part $\vec\Pi_{\mathrm{nil}}\neq0$, the element is defective: its minimal polynomial is $(X-Q_t)^2$, its geometric multiplicity is one, and it has no eigenbasis. The word has
 
 $$
 \theta_{\mathrm{rpd}}>0,
@@ -1183,10 +1183,10 @@ $$
 and the two possible signs of $\cos\frac{\theta_{\mathrm{axr}}}{2}$ are the two values of $\varepsilon$. The word is
 
 $$
-\tilde Q=Q_t\Bigl(e_t+\vec\Upsilon(\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})\Bigr),
+\tilde Q=Q_t\Bigl(e_t+\vec\Pi_{\mathrm{nil}}(\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})\Bigr),
 $$
 
-with $\vec\Upsilon$ as in the closed form and $\theta_{\mathrm{rpd}}$ determined by $\theta_{\mathrm{axr}}$. The data are
+with $\vec\Pi_{\mathrm{nil}}$ as in the closed form and $\theta_{\mathrm{rpd}}$ determined by $\theta_{\mathrm{axr}}$. The data are
 
 $$
 \underbrace{2}_{Q_t}
@@ -1198,7 +1198,7 @@ $$
 
 the real dimension of the sector. The rapidity and the sign are functions of the angle.
 
-The Jordan part is unbounded: as $\theta_{\mathrm{axr}}\to\pi$, $\theta_{\mathrm{rpd}}\to\infty$ and $|\vec\Upsilon|\to\infty$. The value $\theta_{\mathrm{axr}}=\pi$ is not attained, because it would force $c_{\mathrm r}=0$ and violate the scalar constraint.
+The Jordan part is unbounded: as $\theta_{\mathrm{axr}}\to\pi$, $\theta_{\mathrm{rpd}}\to\infty$ and $|\vec\Pi_{\mathrm{nil}}|\to\infty$. The value $\theta_{\mathrm{axr}}=\pi$ is not attained, because it would force $c_{\mathrm r}=0$ and violate the scalar constraint.
 
 ### The Chart of the Wall
 
@@ -1225,18 +1225,18 @@ The coordinate map is
 $$
 (Q_t,\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})
 \longmapsto
-Q_t\Bigl(e_t+\vec\Upsilon(\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})\Bigr),
+Q_t\Bigl(e_t+\vec\Pi_{\mathrm{nil}}(\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})\Bigr),
 $$
 
 from $\mathbb{C}^{\times}\times\bigl((0,\pi)\cup(\pi,2\pi)\bigr)\times US^2$ to the Jordan part, where $US^2=\{(\vec u_{\mathrm b},\vec u_{\mathrm r}):\lvert\vec u_{\mathrm b}\rvert=\lvert\vec u_{\mathrm r}\rvert=1,\ \vec u_{\mathrm b}\perp\vec u_{\mathrm r}\}$ is the unit tangent bundle of the sphere. It is a bijection onto the Jordan part; the scalar line is the common limit $\theta_{\mathrm{axr}}\to0$ and $\theta_{\mathrm{axr}}\to2\pi$, where the frame is free.
 
 The coordinate lines are three families:
 
-- the **scalar line** $Q_t\mapsto Q_t(e_t+\vec\Upsilon)$, a complex plane with the origin removed;
-- the **angle line** $\theta_{\mathrm{axr}}\mapsto Q_t(e_t+\vec\Upsilon(\theta_{\mathrm{axr}},\ldots))$, a non-compact curve from the scalar line to infinity, with $\theta_{\mathrm{rpd}}$ growing as $\theta_{\mathrm{axr}}\to\pi$;
-- the **frame sphere** $(\vec u_{\mathrm b},\vec u_{\mathrm r})\mapsto Q_t(e_t+\vec\Upsilon)$, a circle bundle over $S^2$.
+- the **scalar line** $Q_t\mapsto Q_t(e_t+\vec\Pi_{\mathrm{nil}})$, a complex plane with the origin removed;
+- the **angle line** $\theta_{\mathrm{axr}}\mapsto Q_t(e_t+\vec\Pi_{\mathrm{nil}}(\theta_{\mathrm{axr}},\ldots))$, a non-compact curve from the scalar line to infinity, with $\theta_{\mathrm{rpd}}$ growing as $\theta_{\mathrm{axr}}\to\pi$;
+- the **frame sphere** $(\vec u_{\mathrm b},\vec u_{\mathrm r})\mapsto Q_t(e_t+\vec\Pi_{\mathrm{nil}})$, a circle bundle over $S^2$.
 
-The sector retracts onto the scalar line, because the nilpotent part can be contracted to zero along $\vec\Upsilon\mapsto(1-t)\vec\Upsilon$, which stays null. Hence $\Sigma_{10}$ is connected and $\pi_1(\Sigma_{10})=\mathbb{Z}$, carried by the phase of $Q_t$.
+The sector retracts onto the scalar line, because the nilpotent part can be contracted to zero along $\vec\Pi_{\mathrm{nil}}\mapsto(1-t)\vec\Pi_{\mathrm{nil}}$, which stays null. Hence $\Sigma_{10}$ is connected and $\pi_1(\Sigma_{10})=\mathbb{Z}$, carried by the phase of $Q_t$.
 
 ## The Group of Invertibles
 
@@ -1430,10 +1430,10 @@ The word is a section of that map, not of the exponential. It is a global coordi
 
 The special feature of the sector is that the true logarithm is not a transcendental object: the unipotent factor has a truncated logarithm.
 
-**Theorem (the exact logarithm).** For $\tilde Q=Q_t(e_t+\vec\Upsilon)\in\Sigma_{10}$,
+**Theorem (the exact logarithm).** For $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})\in\Sigma_{10}$,
 
 $$
-\boxed{\operatorname{Log}\tilde Q=\log Q_t+\vec\Upsilon},
+\boxed{\operatorname{Log}\tilde Q=\log Q_t+\vec\Pi_{\mathrm{nil}}},
 $$
 
 where $\log Q_t$ is any logarithm of the nonzero complex number $Q_t$ and the principal choice is $\ln|Q_t|+i\arg Q_t$. The right-hand side is exact, with no series and no correction.
@@ -1441,18 +1441,18 @@ where $\log Q_t$ is any logarithm of the nonzero complex number $Q_t$ and the pr
 *Proof.* The exponential of a nilpotent element truncates:
 
 $$
-\exp(\vec\Upsilon)=e_t+\vec\Upsilon,
+\exp(\vec\Pi_{\mathrm{nil}})=e_t+\vec\Pi_{\mathrm{nil}},
 $$
 
-because $\vec\Upsilon^2=0$. The scalar $Q_t$ commutes with $\vec\Upsilon$, so
+because $\vec\Pi_{\mathrm{nil}}^2=0$. The scalar $Q_t$ commutes with $\vec\Pi_{\mathrm{nil}}$, so
 
 $$
-\exp(\log Q_t+\vec\Upsilon)=Q_t(e_t+\vec\Upsilon)=\tilde Q.
+\exp(\log Q_t+\vec\Pi_{\mathrm{nil}})=Q_t(e_t+\vec\Pi_{\mathrm{nil}})=\tilde Q.
 $$
 
 The logarithm is the sum of the scalar logarithm and the nilpotent vector part. The period $2\pi ik\,e_t$ can be added to the scalar logarithm, and no other ambiguity is present on the Jordan part: the logarithm is unique modulo the central periods, because the nilpotent part is fixed by $\tilde Q$.
 
-The operator form of this single exponent is in §*The Exponential at the Wall* of *One-Sided Operators on the N-Regular Sector* and of *Two-Sided Operators on the N-Regular Sector*: the exponential of the left multiplication is the shear $\exp(L_{\tilde Q})=e^{Q_t}(I+Q_tL_{\vec\Upsilon})$, and the two-sided operator is the null rotation $\mathrm{Sd}_{\tilde Q}=|Q_t|^2e^{A+B}$.
+The operator form of this single exponent is in §*The Exponential at the Wall* of *One-Sided Operators on the N-Regular Sector* and of *Two-Sided Operators on the N-Regular Sector*: the exponential of the left multiplication is the shear $\exp(L_{\tilde Q})=e^{Q_t}(I+Q_tL_{\vec\Pi_{\mathrm{nil}}})$, and the two-sided operator is the null rotation $\mathrm{Sd}_{\tilde Q}=|Q_t|^2e^{A+B}$.
 
 ### The Formal Exponent and the Defect at the Wall
 
@@ -1465,10 +1465,10 @@ $$
 It is not the logarithm. The true logarithm is
 
 $$
-\operatorname{Log}\tilde Q=\ln \varrho+i\theta_{\mathrm{pha}}+i\pi\frac{1-\varepsilon}{2}+\vec\Upsilon,
+\operatorname{Log}\tilde Q=\ln \varrho+i\theta_{\mathrm{pha}}+i\pi\frac{1-\varepsilon}{2}+\vec\Pi_{\mathrm{nil}},
 $$
 
-because $Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$ with $\operatorname{Log}\tilde U=\vec\Upsilon+i\pi\frac{1-\varepsilon}{2}$, so $\operatorname{Log}\tilde Q=\log\varrho\,e^{i\theta_{\mathrm{pha}}}+\operatorname{Log}\tilde U$; equivalently, $\log Q_t=\log\varrho\,e^{i\theta_{\mathrm{pha}}}+i\pi\frac{1-\varepsilon}{2}$ and the unipotent part adds $\vec\Upsilon$. The **log defect** is therefore explicit:
+because $Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$ with $\operatorname{Log}\tilde U=\vec\Pi_{\mathrm{nil}}+i\pi\frac{1-\varepsilon}{2}$, so $\operatorname{Log}\tilde Q=\log\varrho\,e^{i\theta_{\mathrm{pha}}}+\operatorname{Log}\tilde U$; equivalently, $\log Q_t=\log\varrho\,e^{i\theta_{\mathrm{pha}}}+i\pi\frac{1-\varepsilon}{2}$ and the unipotent part adds $\vec\Pi_{\mathrm{nil}}$. The **log defect** is therefore explicit:
 
 $$
 \boxed{\;
@@ -1528,21 +1528,21 @@ The second row is the Thomas–Wigner rotation. The third is the statement that 
 The sector is closed under inversion:
 
 $$
-\tilde Q^{-1}=Q_t^{-1}\bigl(e_t-\vec\Upsilon\bigr).
+\tilde Q^{-1}=Q_t^{-1}\bigl(e_t-\vec\Pi_{\mathrm{nil}}\bigr).
 $$
 
 It is not closed under multiplication. The product of two elements is
 
 $$
 \tilde Q_1\tilde Q_2
-=Q_{t1}Q_{t2}\bigl(e_t+\vec\Upsilon_1\bigr)\bigl(e_t+\vec\Upsilon_2\bigr)
-=Q_{t1}Q_{t2}\bigl(e_t+\vec\Upsilon_1+\vec\Upsilon_2+\vec\Upsilon_1\vec\Upsilon_2\bigr).
+=Q_{t1}Q_{t2}\bigl(e_t+\vec\Pi_{\mathrm{nil},1}\bigr)\bigl(e_t+\vec\Pi_{\mathrm{nil},2}\bigr)
+=Q_{t1}Q_{t2}\bigl(e_t+\vec\Pi_{\mathrm{nil},1+}\vec\Pi_{\mathrm{nil},2+}\vec\Pi_{\mathrm{nil},1}\vec\Pi_{\mathrm{nil},2}\bigr).
 $$
 
 Let
 
 $$
-\sigma=\vec\Upsilon_1\cdot\vec\Upsilon_2.
+\sigma=\vec\Pi_{\mathrm{nil},1}\cdot\vec\Pi_{\mathrm{nil},2}.
 $$
 
 The scalar part of the product is $Q_{t1}Q_{t2}(1-\sigma)$, and the product has norm one, so its vector form is
@@ -1553,7 +1553,7 @@ $$
 
 The product lies in $\Sigma_{10}$ exactly when $\sigma=0$ or $\sigma=2$; otherwise it lies in $\Sigma_{11}$.
 
-*Proof.* Write the product as $Q_{t1}Q_{t2}W$, with $W=(1+\vec\Upsilon_1)(1+\vec\Upsilon_2)$. The scalar part of $W$ is $1-\vec\Upsilon_1\cdot\vec\Upsilon_2=1-\sigma$, because the dot part of $\vec\Upsilon_1\vec\Upsilon_2$ is $-\vec\Upsilon_1\cdot\vec\Upsilon_2$ and the cross part is a pure vector. The norm of $W$ is one, because it is the product of two unipotent elements of norm one. An element of norm one with scalar part $1-\sigma$ has vector form $1-(1-\sigma)^2=\sigma(2-\sigma)$; the central scalar $Q_{t1}Q_{t2}$ multiplies the vector form by $(Q_{t1}Q_{t2})^2$.
+*Proof.* Write the product as $Q_{t1}Q_{t2}W$, with $W=(1+\vec\Pi_{\mathrm{nil},1})(1+\vec\Pi_{\mathrm{nil},2})$. The scalar part of $W$ is $1-\vec\Pi_{\mathrm{nil},1}\cdot\vec\Pi_{\mathrm{nil},2}=1-\sigma$, because the dot part of $\vec\Pi_{\mathrm{nil},1}\vec\Pi_{\mathrm{nil},2}$ is $-\vec\Pi_{\mathrm{nil},1}\cdot\vec\Pi_{\mathrm{nil},2}$ and the cross part is a pure vector. The norm of $W$ is one, because it is the product of two unipotent elements of norm one. An element of norm one with scalar part $1-\sigma$ has vector form $1-(1-\sigma)^2=\sigma(2-\sigma)$; the central scalar $Q_{t1}Q_{t2}$ multiplies the vector form by $(Q_{t1}Q_{t2})^2$.
 
 **Example.** Take $u_1=e_t+\vec e_x+i\vec e_y$ and $u_2=e_t+\vec e_y+i\vec e_z$. Then $\sigma=i$, and
 
@@ -1628,12 +1628,12 @@ The two scales of the matrix are $\varrho e^{\theta_{\mathrm{rpd}}/2}$ and $\var
 
 ### The Picture at the Wall
 
-On the Jordan part, $\mathsf M(\vec\Upsilon)$ is a nonzero nilpotent matrix, so
+On the Jordan part, $\mathsf M(\vec\Pi_{\mathrm{nil}})$ is a nonzero nilpotent matrix, so
 
 $$
 \mathsf M(\tilde Q)=Q_t\bigl(I+\mathcal N\bigr),
 \qquad
-\mathcal N=\mathsf M(\vec\Upsilon),
+\mathcal N=\mathsf M(\vec\Pi_{\mathrm{nil}}),
 \qquad
 \mathcal N^2=0,
 \qquad
@@ -1823,7 +1823,7 @@ $$
 and $B\to0$ while $\vec Q\to\vec Q_0\neq0$ on the spectral cone, so $|\vec{Ζ}|\to\infty$. The idempotents
 
 $$
-\tilde\Pi_\pm=\frac{e_t\pm\vec{Ζ}}{2}
+\tilde\Pi_{\mathrm{id},\pm}=\frac{e_t\pm\vec{Ζ}}{2}
 $$
 
 diverge, and the spectral decomposition has no limit. The eigenvalues $\lambda_\pm=Q_t\pm iB$ coalesce, the minimal polynomial becomes a square, and the element becomes defective.
@@ -1842,15 +1842,15 @@ The wall $\Sigma_{10}$ is closed under inversion but not under multiplication. I
 
 ### The Nilpotent Stratum
 
-As $Q_t\to0$ with $\vec\Upsilon$ fixed, the element tends to zero and the modulus tends to zero. The unit factor does not degenerate:
+As $Q_t\to0$ with $\vec\Pi_{\mathrm{nil}}$ fixed, the element tends to zero and the modulus tends to zero. The unit factor does not degenerate:
 
 $$
-\tilde U=\varepsilon\bigl(e_t+\vec\Upsilon\bigr)
+\tilde U=\varepsilon\bigl(e_t+\vec\Pi_{\mathrm{nil}}\bigr)
 $$
 
 is independent of $Q_t$. The scale collapses, the phase follows the argument of $Q_t$, and the unipotent shape survives. This is the structural difference from the regular sector, where the rapidity diverges as the modulus vanishes. In $\Sigma_{10}$ the modulus is the scalar part, and the only thing that vanishes is the scalar.
 
-A nonzero nilpotent of $\Sigma_{00}$ is reached by letting $Q_t\to0$ and $\vec\Upsilon\to\infty$ at the rate $Q_t\vec\Upsilon\to\vec N$ with $\vec N^2=0$. The unit factor diverges, the word parameters leave every bounded set, and the limit is the nilpotent. The sector is not compact, and the angle $\theta_{\mathrm{axr}}\to\pi$ is the direction in which it is unbounded.
+A nonzero nilpotent of $\Sigma_{00}$ is reached by letting $Q_t\to0$ and $\vec\Pi_{\mathrm{nil}}\to\infty$ at the rate $Q_t\vec\Pi_{\mathrm{nil}}\to\vec N$ with $\vec N^2=0$. The unit factor diverges, the word parameters leave every bounded set, and the limit is the nilpotent. The sector is not compact, and the angle $\theta_{\mathrm{axr}}\to\pi$ is the direction in which it is unbounded.
 
 ### The Spectral Wall From Inside
 
@@ -1858,7 +1858,7 @@ Seen from $\Sigma_{11}$, the locus $B^2=0$ is a wall: the word converges to the 
 
 | Approach | Locus | What happens |
 |---|---|---|
-| nilpotent stratum | $N=0$, $B^2=0$ | $Q_t\to0$; the unit factor survives if $\vec\Upsilon$ is fixed; the scale vanishes |
+| nilpotent stratum | $N=0$, $B^2=0$ | $Q_t\to0$; the unit factor survives if $\vec\Pi_{\mathrm{nil}}$ is fixed; the scale vanishes |
 | spectral wall from $\Sigma_{11}$ | $B^2=0$, $N\neq0$ | the word converges; the eigenbasis diverges |
 
 ## Summary
@@ -1884,22 +1884,22 @@ The complete polar decomposition of an $\natural$-regular biquaternion is the mo
 | closed forms | $\tilde U_{\mathrm b}=(\tilde U\tilde U^{*}+e_t)/\sqrt{2(1+s)}$, $\tilde u_{\mathrm r}=\bigl((2s+1)e_t-\tilde U\tilde U^{*}\bigr)\tilde U/\sqrt{2(1+s)}$ |
 | component form | $\tilde U=(c_{\mathrm b}c_{\mathrm r}-is_{\mathrm b}s_{\mathrm r}c)e_t+is_{\mathrm b}c_{\mathrm r}\vec u_{\mathrm b}+c_{\mathrm b}s_{\mathrm r}\vec u_{\mathrm r}+is_{\mathrm b}s_{\mathrm r}\vec u_{\mathrm b}\times\vec u_{\mathrm r}$ |
 | eigenvalues | $\lambda_\pm=Q_t\pm iB$ |
-| eigenbasis | $\vec{Ζ}=-i\vec Q/B$, $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ |
+| eigenbasis | $\vec{Ζ}=-i\vec Q/B$, $\tilde\Pi_{\mathrm{id},\pm}=\frac12(e_t\pm\vec{Ζ})$ |
 | unit-factor eigenvalues | $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})=U_t\pm i\sqrt{1-U_t^2}$ |
 | normal case | $\mu_\pm=e^{\mp\theta_{\mathrm{rpd}}/2}e^{\pm i\theta_{\mathrm{axr}}/2}$, axes $\pm i\vec{Ζ}$ |
 | normal criterion | $\vec Q\times\overline{\vec Q}=0$ |
 | spectral wall | $B^2=0\iff U_t=\pm1$ |
 | explicit data | §*The Result in Terms of the Coordinates*: boxes for $\varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\tilde U_{\mathrm b},\tilde u_{\mathrm r},\theta_{\mathrm{axr}},\vec u_{\mathrm r}$ |
 | domain, wall | $N\neq0$, $B^2=0$ |
-| normal form | $\tilde Q=Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon^2=0$ |
-| unit factor, wall | $\tilde U=\varepsilon(e_t+\vec\Upsilon)$, $\varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$ |
+| normal form | $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$, $\vec\Pi_{\mathrm{nil}}^2=0$ |
+| unit factor, wall | $\tilde U=\varepsilon(e_t+\vec\Pi_{\mathrm{nil}})$, $\varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$ |
 | scalar constraint | $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon$ |
 | axis constraint | $\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$ |
 | Jordan part | $\theta_{\mathrm{rpd}}>0$, $\theta_{\mathrm{axr}}\notin\{0,\pi,2\pi\}$, $\vec u_{\mathrm b}\perp\vec u_{\mathrm r}$ |
 | angle relation | $\bigl|\cos\frac{\theta_{\mathrm{axr}}}{2}\bigr|=1/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ |
 | closed form, wall | $\tilde Q=Q_t\bigl(e_t+i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\tan\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}+i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm b}\times\vec u_{\mathrm r}\bigr)$ |
-| exact logarithm | $\operatorname{Log}\tilde Q=\log Q_t+\vec\Upsilon$ |
-| product criterion | $B^2(\tilde Q_1\tilde Q_2)=Q_{t1}^2Q_{t2}^2\sigma(2-\sigma)$, $s=\vec\Upsilon_1\cdot\vec\Upsilon_2$ |
+| exact logarithm | $\operatorname{Log}\tilde Q=\log Q_t+\vec\Pi_{\mathrm{nil}}$ |
+| product criterion | $B^2(\tilde Q_1\tilde Q_2)=Q_{t1}^2Q_{t2}^2\sigma(2-\sigma)$, $s=\vec\Pi_{\mathrm{nil},1}\cdot\vec\Pi_{\mathrm{nil},2}$ |
 | dimension, wall | $6$: $Q_t$ (2), angles (2), frame (3), angle relation (1) |
 
 ### The Comparison
@@ -1925,7 +1925,7 @@ The four statements to carry away are these. On the $\natural$-regular set the g
 - In the non-normal case the spectrum determines the eigenvalues of the unit factor but not the rapidity, the rotor angle or the axes. The polar word carries four real data that the spectrum does not.
 - On the wall the unit factor is $\pm$unipotent: its two eigenvalues coincide, its minimal polynomial is a square, and it has no eigenbasis. The word still exists, with four real data: the scalar part, one angle and a frame.
 - On the wall the scalar part of the unit factor is $\pm1$. This one complex equation ties the two angles, $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\pm1$, and on the Jordan part it forces the two axes to be orthogonal.
-- The true logarithm on the wall is exact and truncated, $\log Q_t+\vec\Upsilon$. The formal exponent is not a logarithm: the log defect is the cross term plus the nonlinear terms of the two angles.
+- The true logarithm on the wall is exact and truncated, $\log Q_t+\vec\Pi_{\mathrm{nil}}$. The formal exponent is not a logarithm: the log defect is the cross term plus the nonlinear terms of the two angles.
 - The word is continuous across the spectral wall; the eigenbasis is not. This is the precise sense in which the polar decomposition is a decomposition of the group and the spectral decomposition is a decomposition of the element.
 
 ## Summary of Notation
@@ -1964,7 +1964,7 @@ The four statements to carry away are these. On the $\natural$-regular set the g
 | $\vec u_{\mathrm b},\vec u_{\mathrm r}$ | the two axes |
 | $c=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ | the cosine between the axes |
 | $\vec{Ζ}=-i\vec Q/B$ | the root of one carried by the element |
-| $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ | the spectral idempotents |
+| $\tilde\Pi_{\mathrm{id},\pm}=\frac12(e_t\pm\vec{Ζ})$ | the spectral idempotents |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues |
 | $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | the eigenvalues of the unit factor |
 | $\tilde H,\tilde K$ | the Cartan pair |
@@ -1976,13 +1976,13 @@ The four statements to carry away are these. On the $\natural$-regular set the g
 | $C,S$ | the half-angle numerators, $\cosh\frac{\theta_{\mathrm{rpd}}}{2}=C/\sqrt{|N|}$, $\sinh\frac{\theta_{\mathrm{rpd}}}{2}=S/\sqrt{|N|}$ |
 | $\mathrm{Vect}\tilde X$ | the vector part of $\tilde X$ |
 | $\Sigma_{10}$ | the N-regular, spectrally degenerate sector |
-| $\vec\Upsilon=\vec Q/Q_t$ | the nilpotent direction on the wall, $\vec\Upsilon^2=0$ |
-| $\vec A=\operatorname{Re}\vec\Upsilon$, $\vec B=\operatorname{Im}\vec\Upsilon$ | the real and imaginary parts, $\vec A\cdot\vec B=0$ |
+| $\vec\Pi_{\mathrm{nil}}=\vec Q/Q_t$ | the nilpotent direction on the wall, $\vec\Pi_{\mathrm{nil}}^2=0$ |
+| $\vec A=\operatorname{Re}\vec\Pi_{\mathrm{nil}}$, $\vec B=\operatorname{Im}\vec\Pi_{\mathrm{nil}}$ | the real and imaginary parts, $\vec A\cdot\vec B=0$ |
 | $a=\lVert\vec A\rVert=\lVert\vec B\rVert$ | the common length on the wall |
 | $\varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$ | the sign of the unit factor on the wall |
 | $Q_\mu=q_\mu+iq'_\mu$ | the eight real coordinates |
 | $\vec q=(q_x,q_y,q_z)$, $\vec q'=(q'_x,q'_y,q'_z)$ | the real and imaginary vector coordinates |
-| $\sigma=\vec\Upsilon_1\cdot\vec\Upsilon_2$ | the invariant of a product on the wall |
+| $\sigma=\vec\Pi_{\mathrm{nil},1}\cdot\vec\Pi_{\mathrm{nil},2}$ | the invariant of a product on the wall |
 | $a,b$ | the real and imaginary parts of $\langle\tilde Q\rangle_{\natural}$ in the branch formula of §*The Two Factors* |
 
 ## Further Reading

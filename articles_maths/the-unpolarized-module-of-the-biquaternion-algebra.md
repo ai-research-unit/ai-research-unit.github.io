@@ -214,7 +214,7 @@ The absence of a splitting costs the Weyl projectors, the $2+2$ partial trace an
 | $\Pi_\pm$ | the Peirce idempotents $\tfrac12(e_t\pm i\vec e_z)$ |
 | $S_\pm=\mathbb{B}\Pi_\pm$ | the two Peirce planes, each a copy of $S$ |
 | $\vec{Ζ}=i\vec e_z$ | the root whose halves are $\Pi_\pm$ |
-| $\mathcal{P}$ | the Peirce frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ of the Pauli display |
+| $\mathcal{P}$ | the Peirce frame $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ of the Pauli display |
 | $V_\Pi$ | the two-dimensional submodule $\mathbb{B}\Pi=\{\tilde X:\tilde X\Pi=\tilde X\}$, determined by the line $\ker\Pi$ |
 | $[X]_{\mathcal{F}}$, $[X]_{\mathrm{pau}}$ | the coefficient column in a frame, the $2\times2$ array in the Pauli display |
 | $X_\Pi=\tilde X\Pi$ | the component of $\tilde X$ in the direction of $\Pi$; the idempotent always appears |

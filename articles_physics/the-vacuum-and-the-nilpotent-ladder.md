@@ -12,7 +12,7 @@ Both predicates are false, and this is the only stratum of which that is true. T
 
 The first claim is that the failure is total and simultaneous. Invertibility, the eigenbasis, the Peirce decomposition attached to the element, the spectral decomposition, the polar word and the logarithm all fail here, and they fail for one reason: the element is square zero. Nothing about this stratum is a partial failure, and nothing about it is a failure of the algebra. The algebra keeps working; it is the element that has collapsed.
 
-The second claim is that the collapse is not an absence of structure. A square-zero element still carries a flag $0\subset\mathbb{C}\vec\Upsilon\subset\ker L_{\tilde Q}\subset\mathbb{B}$, still has a Jordan block, still generates a flow, and still has a left and a right annihilator. The structure is thinner than on the other three strata and it is not empty. What is lost is the spectrum, not the geometry.
+The second claim is that the collapse is not an absence of structure. A square-zero element still carries a flag $0\subset\mathbb{C}\vec\Pi_{\mathrm{nil}}\subset\ker L_{\tilde Q}\subset\mathbb{B}$, still has a Jordan block, still generates a flow, and still has a left and a right annihilator. The structure is thinner than on the other three strata and it is not empty. What is lost is the spectrum, not the geometry.
 
 The third claim is that the origin is the one point of the stratum that is not a nilpotent. The zero element is square zero and semisimple; every other element of the stratum is square zero and defective. So the stratum mixes a single semisimple point with a four-real-dimensional family of defective ones, and the semisimple point is the apex of both cones. That is why the reading of the origin is a separate reading from the reading of the nilpotent.
 
@@ -73,9 +73,9 @@ The origin is the only element that is square zero without being a nilpotent of 
 Off the origin the element is a pure isotropic vector, and it is defective.
 
 $$
-\vec\Upsilon=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad
+\vec\Pi_{\mathrm{nil}}=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad
 Q_x^{2}+Q_y^{2}+Q_z^{2}=0,\qquad
-\vec\Upsilon^{2}=0 .
+\vec\Pi_{\mathrm{nil}}^{2}=0 .
 $$
 
 Its spectrum is $\{0\}$ and its minimal polynomial is $X^{2}$. A minimal polynomial of degree two over a spectrum of one point is the definition of a defect: the element is a single Jordan block of size two, the eigenspace does not span, and no eigenbasis exists.
@@ -83,7 +83,7 @@ Its spectrum is $\{0\}$ and its minimal polynomial is $X^{2}$. A minimal polynom
 Its centraliser is the dual numbers.
 
 $$
-\mathbb{C}[\vec\Upsilon]=\{a\,e_t+b\,\vec\Upsilon\}\cong\mathbb{C}[\varepsilon]/(\varepsilon^{2}),
+\mathbb{C}[\vec\Pi_{\mathrm{nil}}]=\{a\,e_t+b\,\vec\Pi_{\mathrm{nil}}\}\cong\mathbb{C}[\varepsilon]/(\varepsilon^{2}),
 $$
 
 so its only idempotents are $0$ and $e_t$, and no non-trivial idempotent commutes with the element. That is the sharpest single contrast with the massless stratum, where the centraliser was $\mathbb{C}\oplus\mathbb{C}$ and carried four idempotents.
@@ -122,7 +122,7 @@ The exponential truncates after one term.
 $$
 e^{\theta\tilde Q}=e_t+\theta\tilde Q,\qquad
 N\bigl(e^{\theta\tilde Q}\bigr)=1,\qquad
-\bigl\langle e^{\theta\tilde Q}\bigr\rangle_{*}=1+\theta^{2}\lVert\vec\Upsilon\rVert^{2}.
+\bigl\langle e^{\theta\tilde Q}\bigr\rangle_{*}=1+\theta^{2}\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2}.
 $$
 
 The flow is a shear and not a rotation. Its matrix is unipotent: every eigenvalue is $1$, the determinant is $1$, and the matrix is not the identity. The Hermitian norm grows without bound in $\theta$, polynomially and not exponentially. So the element generates a flow that is invertible at every parameter and that is never a bounded one.
@@ -134,7 +134,7 @@ No nilpotent is an exponential. The norm of every exponential is $e^{2X_t}$ and 
 The stratum is not closed under multiplication, and where the product goes is decided by one scalar.
 
 $$
-\vec\Upsilon_2\vec\Upsilon=-\vec\Upsilon_2\cdot\vec\Upsilon+\vec\Upsilon_2\times\vec\Upsilon,
+\vec\Pi_{\mathrm{nil},2}\vec\Pi_{\mathrm{nil}}=-\vec\Pi_{\mathrm{nil},2}\cdot\vec\Pi_{\mathrm{nil}}+\vec\Pi_{\mathrm{nil},2}\times\vec\Pi_{\mathrm{nil}},
 \qquad
 \Sigma_{00}\cdot\Sigma_{00}\subseteq\{0\}\cup\Sigma_{01}.
 $$
@@ -146,16 +146,16 @@ The product is zero exactly when the two isotropic vectors are proportional, and
 The physical reading of the nilpotent needs a pair.
 
 $$
-\vec\Upsilon_x=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\qquad
-\vec\Upsilon_y=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),\qquad
-\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t .
+\vec\Pi_{\mathrm{nil},x}=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\qquad
+\vec\Pi_{\mathrm{nil},y}=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),\qquad
+\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\}=e_t .
 $$
 
 Their products are the two rungs.
 
 $$
-\tilde\Pi_{+}=\vec\Upsilon_x\vec\Upsilon_y=\tfrac12\bigl(e_t+i\vec e_z\bigr),\qquad
-\tilde\Pi_{-}=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12\bigl(e_t-i\vec e_z\bigr),
+\tilde\Pi_{\mathrm{id},+}=\vec\Pi_{\mathrm{nil},x}\vec\Pi_{\mathrm{nil},y}=\tfrac12\bigl(e_t+i\vec e_z\bigr),\qquad
+\tilde\Pi_{\mathrm{id},-}=\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}=\tfrac12\bigl(e_t-i\vec e_z\bigr),
 $$
 
 and the rungs are not in the stratum. They are Hermitian, idempotent, and of vector square $-\tfrac14$, so they lie in the massless stratum. The ladder straddles the two degenerate strata: its operators are here and its states are next door.
@@ -236,10 +236,10 @@ The ideal is generated by two squares. The point set is the reduced variety and 
 Off the apex the element is a pure isotropic vector.
 
 $$
-\tilde Q=\vec\Upsilon,\qquad
-\vec\Upsilon=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad
-\vec\Upsilon^{2}=0,\qquad
-\vec\Upsilon\neq0 .
+\tilde Q=\vec\Pi_{\mathrm{nil}},\qquad
+\vec\Pi_{\mathrm{nil}}=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad
+\vec\Pi_{\mathrm{nil}}^{2}=0,\qquad
+\vec\Pi_{\mathrm{nil}}\neq0 .
 $$
 
 The spectrum is one point and the minimal polynomial is its square.
@@ -255,7 +255,7 @@ A minimal polynomial of degree two with a single root is a defect, and it is the
 The centraliser is thin.
 
 $$
-\mathbb{C}[\vec\Upsilon]=\{a\,e_t+b\,\vec\Upsilon\ :\ a,b\in\mathbb{C}\}\cong\mathbb{C}[\varepsilon]/(\varepsilon^{2}).
+\mathbb{C}[\vec\Pi_{\mathrm{nil}}]=\{a\,e_t+b\,\vec\Pi_{\mathrm{nil}}\ :\ a,b\in\mathbb{C}\}\cong\mathbb{C}[\varepsilon]/(\varepsilon^{2}).
 $$
 
 And it holds no idempotent but the two trivial ones. Solving $a^{2}=a$ and $2ab=b$ gives $(a,b)=(0,0)$ and $(a,b)=(1,0)$. So the centraliser's idempotents are $0$ and $e_t$, and the element commutes with no rung. Computed: no random element in one hundred draws commuted with a nilpotent, and no primitive idempotent in fifty draws did.
@@ -298,7 +298,7 @@ So both roots that the regular construction divides by do not exist. The massles
 What survives is a flag.
 
 $$
-0\subset\mathbb{C}\vec\Upsilon\subset\ker L_{\tilde Q}\subset\mathbb{B},
+0\subset\mathbb{C}\vec\Pi_{\mathrm{nil}}\subset\ker L_{\tilde Q}\subset\mathbb{B},
 \qquad
 \dim_{\mathbb{C}}\ker L_{\tilde Q}=2 .
 $$
@@ -383,9 +383,9 @@ The Hermitian norm grows polynomially and without bound.
 $$
 \bigl\langle e^{\theta\tilde Q}\bigr\rangle_{*}
 =\operatorname{Sc}\bigl(e^{\theta\tilde Q}\,(e^{\theta\tilde Q})^{*}\bigr)
-=1+\theta^{2}\lVert\vec\Upsilon\rVert^{2},
+=1+\theta^{2}\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2},
 \qquad
-\lVert\vec\Upsilon\rVert^{2}=\sum_k\lvert\Upsilon_k\rvert^{2},
+\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2}=\sum_k\lvert\Pi_{\mathrm{nil},k}\rvert^{2},
 $$
 
 checked to $1.8\times10^{-15}$ over fifty elements. The norm is a quadratic polynomial in the parameter with a positive quadratic coefficient, so the flow is invertible at every $\theta$ — its quaternionic norm is one — and it is never a bounded unit. The two notions of unit separate here, and this is the stratum where they separate furthest: **the quaternionic norm is constant and the Hermitian norm is unbounded.**
@@ -496,13 +496,13 @@ The field straddles the two elementary sectors, which is why the stratum's readi
 A single nilpotent is a direction and not yet a state, and the pair is what makes the state.
 
 $$
-\vec\Upsilon_x=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\qquad
-\vec\Upsilon_y=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),
+\vec\Pi_{\mathrm{nil},x}=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\qquad
+\vec\Pi_{\mathrm{nil},y}=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),
 $$
 
 $$
-\vec\Upsilon_x^{2}=\vec\Upsilon_y^{2}=0,\qquad
-\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t,
+\vec\Pi_{\mathrm{nil},x}^{2}=\vec\Pi_{\mathrm{nil},y}^{2}=0,\qquad
+\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\}=e_t,
 $$
 
 with the anticommutator exact. The two elements are nilpotents of the stratum, they are not proportional, and their symmetrised product is the identity.
@@ -510,14 +510,14 @@ with the anticommutator exact. The two elements are nilpotents of the stratum, t
 Their products are the two rungs.
 
 $$
-\tilde\Pi_{+}=\vec\Upsilon_x\vec\Upsilon_y=\tfrac12\bigl(e_t+i\vec e_z\bigr),\qquad
-\tilde\Pi_{-}=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12\bigl(e_t-i\vec e_z\bigr),
+\tilde\Pi_{\mathrm{id},+}=\vec\Pi_{\mathrm{nil},x}\vec\Pi_{\mathrm{nil},y}=\tfrac12\bigl(e_t+i\vec e_z\bigr),\qquad
+\tilde\Pi_{\mathrm{id},-}=\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}=\tfrac12\bigl(e_t-i\vec e_z\bigr),
 $$
 
 $$
-\tilde\Pi_{\pm}^{2}=\tilde\Pi_{\pm},\qquad
-\tilde\Pi_{+}\tilde\Pi_{-}=\tilde\Pi_{-}\tilde\Pi_{+}=0,\qquad
-\tilde\Pi_{+}+\tilde\Pi_{-}=e_t,
+\tilde\Pi_{\mathrm{id},\pm}^{2}=\tilde\Pi_{\mathrm{id},\pm},\qquad
+\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=\tilde\Pi_{\mathrm{id},-}\tilde\Pi_{\mathrm{id},+}=0,\qquad
+\tilde\Pi_{\mathrm{id},+}+\tilde\Pi_{\mathrm{id},-}=e_t,
 $$
 
 and the rungs are Hermitian. All of these held with zero residual. The two products are not equal, because the multiplication is not commutative, so the order of the pair matters and the two rungs are the two orders.
@@ -525,8 +525,8 @@ and the rungs are Hermitian. All of these held with zero residual. The two produ
 The rungs are in the other degenerate stratum.
 
 $$
-N(\tilde\Pi_{\pm})=0,\qquad
-B^{2}(\tilde\Pi_{\pm})=-\tfrac14,
+N(\tilde\Pi_{\mathrm{id},\pm})=0,\qquad
+B^{2}(\tilde\Pi_{\mathrm{id},\pm})=-\tfrac14,
 $$
 
 so an idempotent is null and spectrally regular, and the ladder straddles the two degenerate strata. Its operators are in $\Sigma_{00}$ and its states are in $\Sigma_{01}$, which is the same straddling the massless entry recorded from the other side.
@@ -535,18 +535,18 @@ The two sides of the multiplication sort the pair differently.
 
 | product | value | product | value |
 | --- | --- | --- | --- |
-| $\vec\Upsilon_y\tilde\Pi_{+}$ | $\vec\Upsilon_y$ | $\tilde\Pi_{+}\vec\Upsilon_y$ | $0$ |
-| $\vec\Upsilon_x\tilde\Pi_{+}$ | $0$ | $\tilde\Pi_{+}\vec\Upsilon_x$ | $\vec\Upsilon_x$ |
-| $\vec\Upsilon_x\tilde\Pi_{-}$ | $\vec\Upsilon_x$ | $\tilde\Pi_{-}\vec\Upsilon_x$ | $0$ |
-| $\vec\Upsilon_y\tilde\Pi_{-}$ | $0$ | $\tilde\Pi_{-}\vec\Upsilon_y$ | $\vec\Upsilon_y$ |
+| $\vec\Pi_{\mathrm{nil},y}\tilde\Pi_{\mathrm{id},+}$ | $\vec\Pi_{\mathrm{nil},y}$ | $\tilde\Pi_{\mathrm{id},+}\vec\Pi_{\mathrm{nil},y}$ | $0$ |
+| $\vec\Pi_{\mathrm{nil},x}\tilde\Pi_{\mathrm{id},+}$ | $0$ | $\tilde\Pi_{\mathrm{id},+}\vec\Pi_{\mathrm{nil},x}$ | $\vec\Pi_{\mathrm{nil},x}$ |
+| $\vec\Pi_{\mathrm{nil},x}\tilde\Pi_{\mathrm{id},-}$ | $\vec\Pi_{\mathrm{nil},x}$ | $\tilde\Pi_{\mathrm{id},-}\vec\Pi_{\mathrm{nil},x}$ | $0$ |
+| $\vec\Pi_{\mathrm{nil},y}\tilde\Pi_{\mathrm{id},-}$ | $0$ | $\tilde\Pi_{\mathrm{id},-}\vec\Pi_{\mathrm{nil},y}$ | $\vec\Pi_{\mathrm{nil},y}$ |
 
 Right multiplication by a rung returns one nilpotent and kills the other; left multiplication returns the other and kills the first. The two readings of the same rung are therefore opposite, and the exactness of the eight products is what makes the pair a ladder rather than two unrelated operators.
 
 **There are two rungs and no third.**
 
 $$
-\operatorname{Sc}\tilde\Pi_{\pm}=\tfrac12,\qquad
-\tilde\Pi_{+}+\tilde\Pi_{-}=e_t,\qquad
+\operatorname{Sc}\tilde\Pi_{\mathrm{id},\pm}=\tfrac12,\qquad
+\tilde\Pi_{\mathrm{id},+}+\tilde\Pi_{\mathrm{id},-}=e_t,\qquad
 \operatorname{Sc}e_t=1,
 $$
 
@@ -696,7 +696,7 @@ The reading is one sentence long and it is worth keeping separate from the deriv
 
 What the reading does not do is derive anything. The Pauli principle is a statement about the antisymmetry of a many-particle state, and the stratum supplies neither a many-particle space nor a sign. What it supplies is the algebraic shape that a two-rung ladder has, and the shape is the reason the ladder can be read as a mode at all.
 
-The contrast with the idempotent is exact and it is the sharpest pair in the section. An idempotent has $\tilde\Pi^{2}=\tilde\Pi$: applying it twice changes nothing, and it is a state. A nilpotent has $\tilde Q^{2}=0$: applying it twice gives nothing, and it is a transition. **The two classes meet only at zero, and the ladder is the product that passes from one class to the other.**
+The contrast with the idempotent is exact and it is the sharpest pair in the section. An idempotent has $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$: applying it twice changes nothing, and it is a state. A nilpotent has $\tilde Q^{2}=0$: applying it twice gives nothing, and it is a transition. **The two classes meet only at zero, and the ladder is the product that passes from one class to the other.**
 
 The boundary. *Exclusion* is a reading of the square zero. Statistics, anticommutation relations and the spin-statistics theorem are not in the stratum, and §*The Limits* repeats the point.
 
@@ -714,7 +714,7 @@ The boundary. The statement is about the linear map on the algebra. It is not a 
 
 ### I.10.aw — The Flow Is a Shear, Not a Rotation
 
-Read: $e^{\theta\tilde Q}=e_t+\theta\tilde Q$, with every eigenvalue $1$, norm $1$, and $\langle e^{\theta\tilde Q}\rangle_{*}=1+\theta^{2}\lVert\vec\Upsilon\rVert^{2}$.
+Read: $e^{\theta\tilde Q}=e_t+\theta\tilde Q$, with every eigenvalue $1$, norm $1$, and $\langle e^{\theta\tilde Q}\rangle_{*}=1+\theta^{2}\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2}$.
 
 The one-parameter group generated by a nilpotent is unipotent. It fixes every direction of its own plane, shifts the rest by a multiple of the parameter, and has no scale and no angle. The Hermitian norm grows as a quadratic polynomial, so the group is invertible at every parameter and is never a bounded one.
 
@@ -766,7 +766,7 @@ The boundary. The sector is not a theory of radiation, not an equation of motion
 
 ### I.10.ba — The Ladder Needs a Pair
 
-Read: $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ with both nilpotent, and $\tilde\Pi_{\pm}=\vec\Upsilon_x\vec\Upsilon_y$, $\vec\Upsilon_y\vec\Upsilon_x$ the two rungs.
+Read: $\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\}=e_t$ with both nilpotent, and $\tilde\Pi_{\mathrm{id},\pm}=\vec\Pi_{\mathrm{nil},x}\vec\Pi_{\mathrm{nil},y}$, $\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}$ the two rungs.
 
 One nilpotent is a direction and two are a system. The single element is square zero, has no state attached to it, and its operator's image is its kernel. The pair anticommutes to the identity, and the two orders of the product are the two orthogonal Hermitian rungs. Nothing is added to the algebra between the one and the two: the pair is a choice of two directions inside the same stratum.
 
@@ -778,7 +778,7 @@ The boundary. The pair is a pair of elements and not a pair of particles. *Fermi
 
 ### I.10.bb — Two Rungs and No Third
 
-Read: $\operatorname{Sc}\tilde\Pi_{\pm}=\tfrac12$ for every primitive idempotent, and $\tilde\Pi_{+}+\tilde\Pi_{-}=e_t$.
+Read: $\operatorname{Sc}\tilde\Pi_{\mathrm{id},\pm}=\tfrac12$ for every primitive idempotent, and $\tilde\Pi_{\mathrm{id},+}+\tilde\Pi_{\mathrm{id},-}=e_t$.
 
 The trace caps the ladder at two. Every primitive idempotent of the algebra has scalar part one half, and a family of orthogonal ones summing to the identity must therefore have exactly two members. The cap is the dimension of the module, and the module here has dimension two.
 
@@ -842,19 +842,19 @@ The four strata are strata of one algebra and not four algebras. The partition i
 | the centraliser | the dual numbers $\mathbb{C}[\varepsilon]/(\varepsilon^{2})$; no idempotent beyond $0$ and $e_t$ |
 | the Peirce data | adapted idempotent $e$, the element in the mixed corner, block $J_2(0)$; no Peirce data relative to the element |
 | the eigenbasis | both normalisations undefined, $Q_t=0$ and $B=0$; no eigenbasis |
-| the flag | $0\subset\mathbb{C}\vec\Upsilon\subset\ker L_{\tilde Q}\subset\mathbb{B}$, of length two |
+| the flag | $0\subset\mathbb{C}\vec\Pi_{\mathrm{nil}}\subset\ker L_{\tilde Q}\subset\mathbb{B}$, of length two |
 | the operator | $L^{2}=R^{2}=0$, rank $2$, two blocks $J_2(0)$, trace and determinant zero |
 | image and kernel | $\operatorname{im}L=\ker L=\tilde Q\mathbb{B}$, a minimal right ideal; the plane killed is the plane reached |
 | the two annihilators | $\ker L\cap\ker R=\mathbb{C}\tilde Q$; exchanged by the conjugation |
 | the exponential | $e^{\theta\tilde Q}=e_t+\theta\tilde Q$ exactly; unipotent; determinant $1$; trace $4$ |
-| the Hermitian norm | $1+\theta^{2}\lVert\vec\Upsilon\rVert^{2}$; an invertible element at every parameter and never a bounded one |
+| the Hermitian norm | $1+\theta^{2}\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2}$; an invertible element at every parameter and never a bounded one |
 | no logarithm | $N(e^{X})=e^{2X_t}\neq0$; the stratum is disjoint from the image of the exponential |
-| the products | $\operatorname{Sc}(\vec\Upsilon_2\vec\Upsilon)=-\vec\Upsilon_2\cdot\vec\Upsilon$, $B^{2}(\vec\Upsilon_2\vec\Upsilon)=-(\vec\Upsilon_2\cdot\vec\Upsilon)^{2}$; the product lies in $\{0\}\cup\Sigma_{01}$ |
+| the products | $\operatorname{Sc}(\vec\Pi_{\mathrm{nil},2}\vec\Pi_{\mathrm{nil}})=-\vec\Pi_{\mathrm{nil},2}\cdot\vec\Pi_{\mathrm{nil}}$, $B^{2}(\vec\Pi_{\mathrm{nil},2}\vec\Pi_{\mathrm{nil}})=-(\vec\Pi_{\mathrm{nil},2}\cdot\vec\Pi_{\mathrm{nil}})^{2}$; the product lies in $\{0\}\cup\Sigma_{01}$ |
 | the null field | $\tilde F^{2}=\epsilon(I_1+2icI_2)e_t$; $\tilde F^{2}=0$ exactly when $\lvert\vec E\rvert=c\lvert\vec B\rvert$ and $\vec E\cdot\vec B=0$ |
 | the count | six real data minus two conditions; amplitude, direction, polarisation |
 | the scale | modulus is the amplitude; argument is the duality angle $\vec E\mapsto\vec E\cos\varphi-c\vec B\sin\varphi$ |
-| the ladder | $\vec\Upsilon_x,\vec\Upsilon_y$ nilpotent with $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$; rungs $\tilde\Pi_{\pm}$ in $\Sigma_{01}$ |
-| the rung count | $\operatorname{Sc}\tilde\Pi_{\pm}=\tfrac12$; at most two orthogonal idempotents sum to $e_t$ |
+| the ladder | $\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}$ nilpotent with $\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\}=e_t$; rungs $\tilde\Pi_{\mathrm{id},\pm}$ in $\Sigma_{01}$ |
+| the rung count | $\operatorname{Sc}\tilde\Pi_{\mathrm{id},\pm}=\tfrac12$; at most two orthogonal idempotents sum to $e_t$ |
 | the material share | $\Sigma_{00}\cap\mathbb{B}_{\Phi}=\{0\}$; the apex and nothing else |
 | the informational share | $\Sigma_{00}\cap\mathbb{B}_{\Psi}=\{0\}$ |
 | the ideals | $\Sigma_{00}\cap S_{\pm}=\mathbb{C}(\vec e_x\mp i\vec e_y)$, a line in each |
@@ -869,9 +869,9 @@ The four strata are strata of one algebra and not four algebras. The partition i
 | $N$, $B^{2}$ | the quaternionic norm $Q_t^{2}+B^{2}$ and the vector square $Q_x^{2}+Q_y^{2}+Q_z^{2}$ |
 | $\Sigma_{00}$, $\Sigma_{01}$, $\Sigma_{10}$, $\Sigma_{11}$ | the four strata, by the truth values of $N=0$ and $B^{2}=0$ |
 | $\mathcal N$, $\mathcal S$ | the null cone and the spectral-degeneracy cone |
-| $\vec\Upsilon$ | a non-zero nilpotent of the stratum |
-| $\vec\Upsilon_x$, $\vec\Upsilon_y$ | the canonical ladder pair, with the anticommutator $e_t$ |
-| $\tilde\Pi_{\pm}$ | the two Hermitian rungs $\tfrac12(e_t\pm i\vec e_z)$ |
+| $\vec\Pi_{\mathrm{nil}}$ | a non-zero nilpotent of the stratum |
+| $\vec\Pi_{\mathrm{nil},x}$, $\vec\Pi_{\mathrm{nil},y}$ | the canonical ladder pair, with the anticommutator $e_t$ |
+| $\tilde\Pi_{\mathrm{id},\pm}$ | the two Hermitian rungs $\tfrac12(e_t\pm i\vec e_z)$ |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication by $\tilde Q$ |
 | $\natural$ | the conjugation $\tilde Q\mapsto\tilde Q^{*}$ followed by the negation, an algebra anti-automorphism |
 | $\langle\cdot\rangle_{*}$ | the Hermitian norm $\operatorname{Sc}(XX^{*})$ |

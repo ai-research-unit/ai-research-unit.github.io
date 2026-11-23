@@ -32,13 +32,13 @@ $$
 
 (ii) $B^2=0$ and $Q_t\neq0$;
 
-(iii) $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $Q_t\in\mathbb{C}^\times$ and $\vec\Upsilon$ a pure nilpotent, $\vec\Upsilon^2=0$;
+(iii) $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with $Q_t\in\mathbb{C}^\times$ and $\vec\Pi_{\mathrm{nil}}$ a pure nilpotent, $\vec\Pi_{\mathrm{nil}}^2=0$;
 
 (iv) $\tilde Q=Q_tu$ with $Q_t\in\mathbb{C}^\times$ and $u$ a unipotent element, $(u-e_t)^2=0$;
 
 (v) $\tilde Q$ is invertible whose two eigenvalues coincide at $Q_t$.
 
-*Proof.* (i) $\iff$ (ii): on $B^2=0$ one has $\langle\tilde Q\rangle_{\natural}=Q_t^2$, so $\langle\tilde Q\rangle_{\natural}\neq0$ exactly when $Q_t\neq0$. (ii) $\iff$ (iii): the vector part is pure, and $\vec Q^2=-B^2e_t=0$, so $\vec\Upsilon=\vec Q$ is nilpotent; conversely $B^2=0$ follows from $\vec\Upsilon^2=0$. (iii) $\iff$ (iv): $u=e_t+\vec\Upsilon$ has $u-e_t$ nilpotent, and conversely. (ii) $\iff$ (v): with $B^2=0$ the characteristic polynomial is $X^2-2Q_tX+Q_t^2=(X-Q_t)^2$, so both eigenvalues are $Q_t$; and $\langle\tilde Q\rangle_{\natural}=Q_t^2\neq0$ makes $\tilde Q$ an invertible element.
+*Proof.* (i) $\iff$ (ii): on $B^2=0$ one has $\langle\tilde Q\rangle_{\natural}=Q_t^2$, so $\langle\tilde Q\rangle_{\natural}\neq0$ exactly when $Q_t\neq0$. (ii) $\iff$ (iii): the vector part is pure, and $\vec Q^2=-B^2e_t=0$, so $\vec\Pi_{\mathrm{nil}}=\vec Q$ is nilpotent; conversely $B^2=0$ follows from $\vec\Pi_{\mathrm{nil}}^2=0$. (iii) $\iff$ (iv): $u=e_t+\vec\Pi_{\mathrm{nil}}$ has $u-e_t$ nilpotent, and conversely. (ii) $\iff$ (v): with $B^2=0$ the characteristic polynomial is $X^2-2Q_tX+Q_t^2=(X-Q_t)^2$, so both eigenvalues are $Q_t$; and $\langle\tilde Q\rangle_{\natural}=Q_t^2\neq0$ makes $\tilde Q$ an invertible element.
 
 **Corollary (positive characterisation).** The sector is the non-zero complex cone over the unipotent variety:
 
@@ -61,7 +61,7 @@ The pair $(Q_t,u)$ is determined by $\tilde Q$: the scalar part gives $Q_t$, and
 **Parametrisation.** The map
 
 $$
-\mathbb{C}^\times\times\{\vec\Upsilon\in\mathbb{C}^3:\vec\Upsilon^2=0\}\longrightarrow\Sigma_{10},\qquad (Q_t,\vec\Upsilon)\mapsto Q_t(e_t+\vec\Upsilon)
+\mathbb{C}^\times\times\{\vec\Pi_{\mathrm{nil}}\in\mathbb{C}^3:\vec\Pi_{\mathrm{nil}}^2=0\}\longrightarrow\Sigma_{10},\qquad (Q_t,\vec\Pi_{\mathrm{nil}})\mapsto Q_t(e_t+\vec\Pi_{\mathrm{nil}})
 $$
 
 is a bijection. The pure nilpotent cone is the cone over a smooth conic in $\mathbb{P}^2$, of complex dimension $2$ and real dimension $4$; the $\mathbb{C}^\times$ factor adds $2$ real dimensions. The count is $2+4=6$, in agreement with the theorem.
@@ -84,10 +84,10 @@ This split is the spectral refinement of the sector: the scalar and Jordan strat
 
 **Definition.** $\Sigma_{10}^{\mathrm{s}}=\{\tilde Q=Q_te_t\ :\ Q_t\in\mathbb{C}^\times\}$.
 
-**Properties.** These elements are central and semisimple, with minimal polynomial $X-Q_t$, not $(X-Q_t)^2$: the eigenvalue is repeated but the element is diagonalisable. The centraliser is all of $\mathbb{B}$, and every idempotent commutes with $\tilde Q$. The spectral idempotent is $e_t$ itself, and it is unique; what is **not unique** is its refinement: every orthogonal pair $\tilde\Pi_1+\tilde\Pi_2=e_t$ gives
+**Properties.** These elements are central and semisimple, with minimal polynomial $X-Q_t$, not $(X-Q_t)^2$: the eigenvalue is repeated but the element is diagonalisable. The centraliser is all of $\mathbb{B}$, and every idempotent commutes with $\tilde Q$. The spectral idempotent is $e_t$ itself, and it is unique; what is **not unique** is its refinement: every orthogonal pair $\tilde\Pi_{\mathrm{id},1+}\tilde\Pi_{\mathrm{id},2}=e_t$ gives
 
 $$
-\tilde Q=Q_t\tilde\Pi_1+Q_t\tilde\Pi_2
+\tilde Q=Q_t\tilde\Pi_{\mathrm{id},1+Q}_t\tilde\Pi_{\mathrm{id},2}
 $$
 
 with the same coefficient on both terms, and the pair is not determined by $\tilde Q$. The canonical Peirce decomposition attached to $\tilde Q$ has the **one-term** form $\tilde Q=Q_te_t$; every two-term refinement is non-unique.
@@ -96,40 +96,40 @@ This is the sharpest warning in the arrangement: $\mathcal S$ is not the locus o
 
 ### The Jordan part
 
-**Definition.** $\Sigma_{10}^{\mathrm{J}}=\{\tilde Q=Q_te_t+\vec\Upsilon\ :\ Q_t\in\mathbb{C}^\times,\ \vec\Upsilon\neq0,\ \vec\Upsilon^2=0\}$.
+**Definition.** $\Sigma_{10}^{\mathrm{J}}=\{\tilde Q=Q_te_t+\vec\Pi_{\mathrm{nil}}\ :\ Q_t\in\mathbb{C}^\times,\ \vec\Pi_{\mathrm{nil}}\neq0,\ \vec\Pi_{\mathrm{nil}}^2=0\}$.
 
-**Properties.** These elements are defective. From $(\tilde Q-Q_te_t)^2=\vec\Upsilon^2=0$ and $\tilde Q\neq Q_te_t$, the minimal polynomial is $(X-Q_t)^2$: a single Jordan block of size two with eigenvalue $Q_t$.
+**Properties.** These elements are defective. From $(\tilde Q-Q_te_t)^2=\vec\Pi_{\mathrm{nil}}^2=0$ and $\tilde Q\neq Q_te_t$, the minimal polynomial is $(X-Q_t)^2$: a single Jordan block of size two with eigenvalue $Q_t$.
 
-**Centraliser.** An element $X=x_0e_t+\vec x$ commutes with $\tilde Q$ exactly when $\vec x\times\vec\Upsilon=0$, that is, exactly when $\vec x$ is a multiple of $\vec\Upsilon$. The centraliser is therefore the plane
+**Centraliser.** An element $X=x_0e_t+\vec x$ commutes with $\tilde Q$ exactly when $\vec x\times\vec\Pi_{\mathrm{nil}}=0$, that is, exactly when $\vec x$ is a multiple of $\vec\Pi_{\mathrm{nil}}$. The centraliser is therefore the plane
 
 $$
-\mathbb{C}[\tilde Q]=\{a e_t+b\vec\Upsilon\ :\ a,b\in\mathbb{C}\}\cong\mathbb{C}[\varepsilon]/(\varepsilon^2),
+\mathbb{C}[\tilde Q]=\{a e_t+b\vec\Pi_{\mathrm{nil}}\ :\ a,b\in\mathbb{C}\}\cong\mathbb{C}[\varepsilon]/(\varepsilon^2),
 $$
 
 the dual numbers. Its only idempotents are $0$ and $e_t$: from $a^2=a$ and $2ab=b$ one obtains $(a,b)=(0,0)$ or $(1,0)$. Hence **no non-trivial idempotent commutes with $\tilde Q$**, and $\tilde Q$ admits **no non-trivial Peirce decomposition attached to it**.
 
-**Peirce form.** A non-zero nilpotent generates a minimal left ideal, so there is an idempotent $e$ with $\vec\Upsilon=e\vec\Upsilon(e_t-e)$. Relative to that $e$ the Peirce form of $\tilde Q$ is diagonal plus off-diagonal:
+**Peirce form.** A non-zero nilpotent generates a minimal left ideal, so there is an idempotent $e$ with $\vec\Pi_{\mathrm{nil}}=e\vec\Pi_{\mathrm{nil}}(e_t-e)$. Relative to that $e$ the Peirce form of $\tilde Q$ is diagonal plus off-diagonal:
 
 $$
 e\tilde Qe=Q_te,\qquad
-e\tilde Q(e_t-e)=\vec\Upsilon,\qquad
+e\tilde Q(e_t-e)=\vec\Pi_{\mathrm{nil}},\qquad
 (e_t-e)\tilde Qe=0,\qquad
 (e_t-e)\tilde Q(e_t-e)=Q_t(e_t-e).
 $$
 
 The semisimple part $Q_te_t$ is diagonal and the nilpotent part sits wholly in one mixed corner. This is the closest available structure to a spectral decomposition, and it is not one: the off-diagonal component does not vanish.
 
-**The spectral decomposition.** It exists only on the scalar line, and only in the one-term form $\tilde Q=Q_te_t$; the two-projector refinement is non-unique. On the Jordan part it fails: the only idempotents in the centraliser are $0$ and $e_t$, so no pair of non-trivial orthogonal idempotents summing to $e_t$ is attached to $\tilde Q$. There is no eigenbasis either: the eigenspace of $L_{\tilde Q}$ for $Q_t$ is the left annihilator of $\vec\Upsilon$, a complex plane of dimension $2$, and a basis of eigenvectors would need four independent vectors in it.
+**The spectral decomposition.** It exists only on the scalar line, and only in the one-term form $\tilde Q=Q_te_t$; the two-projector refinement is non-unique. On the Jordan part it fails: the only idempotents in the centraliser are $0$ and $e_t$, so no pair of non-trivial orthogonal idempotents summing to $e_t$ is attached to $\tilde Q$. There is no eigenbasis either: the eigenspace of $L_{\tilde Q}$ for $Q_t$ is the left annihilator of $\vec\Pi_{\mathrm{nil}}$, a complex plane of dimension $2$, and a basis of eigenvectors would need four independent vectors in it.
 
-**Powers and inverse.** From $(\tilde Q-Q_te_t)^2=\vec\Upsilon^2=0$, for $n\geq1$,
+**Powers and inverse.** From $(\tilde Q-Q_te_t)^2=\vec\Pi_{\mathrm{nil}}^2=0$, for $n\geq1$,
 $$
-\tilde Q^n=Q_t^ne_t+nQ_t^{n-1}\vec\Upsilon,\qquad
-\tilde Q^{-1}=\frac{1}{Q_t}e_t-\frac{1}{Q_t^2}\vec\Upsilon.
+\tilde Q^n=Q_t^ne_t+nQ_t^{n-1}\vec\Pi_{\mathrm{nil}},\qquad
+\tilde Q^{-1}=\frac{1}{Q_t}e_t-\frac{1}{Q_t^2}\vec\Pi_{\mathrm{nil}}.
 $$
 
 ### The split
 
-$\Sigma_{10}^{\mathrm{s}}$ is a closed complex submanifold of the sector, of complex dimension $1$; its complement $\Sigma_{10}^{\mathrm{J}}$ is open and dense, of complex dimension $3$. The scalar part is central and semisimple, the Jordan part is regular in the sense $\vec Q\neq0$ and defective. The union is the whole sector, and the two pieces meet only in the limit: a sequence of Jordan elements with $\vec\Upsilon\to0$ converges to a point of the scalar line.
+$\Sigma_{10}^{\mathrm{s}}$ is a closed complex submanifold of the sector, of complex dimension $1$; its complement $\Sigma_{10}^{\mathrm{J}}$ is open and dense, of complex dimension $3$. The scalar part is central and semisimple, the Jordan part is regular in the sense $\vec Q\neq0$ and defective. The union is the whole sector, and the two pieces meet only in the limit: a sequence of Jordan elements with $\vec\Pi_{\mathrm{nil}}\to0$ converges to a point of the scalar line.
 
 ## Peirce Data
 
@@ -146,22 +146,22 @@ f\tilde Qe=0,\qquad
 f\tilde Qf=Q_tf,
 $$
 
-and the Peirce matrix is $Q_tI$ in every Peirce basis. The spectral decomposition has one term, $\tilde Q=Q_te_t$; a two-term refinement $Q_t\tilde\Pi_1+Q_t\tilde\Pi_2$ exists for every orthogonal pair summing to $e_t$ and is not determined by $\tilde Q$. The Peirce data therefore see a repeated eigenvalue as a repeated diagonal entry, and the freedom of the refinement as the freedom of the Peirce pair.
+and the Peirce matrix is $Q_tI$ in every Peirce basis. The spectral decomposition has one term, $\tilde Q=Q_te_t$; a two-term refinement $Q_t\tilde\Pi_{\mathrm{id},1+Q}_t\tilde\Pi_{\mathrm{id},2}$ exists for every orthogonal pair summing to $e_t$ and is not determined by $\tilde Q$. The Peirce data therefore see a repeated eigenvalue as a repeated diagonal entry, and the freedom of the refinement as the freedom of the Peirce pair.
 
 ### Peirce data on the Jordan part
 
-Let $\tilde Q=Q_te_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$, $\vec\Upsilon\neq0$ and $Q_t\neq0$. Its centraliser is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Upsilon\}$, the dual numbers, whose only idempotents are $0$ and $e_t$. Hence no non-trivial idempotent commutes with $\tilde Q$ and there is no non-trivial Peirce decomposition attached to $\tilde Q$.
+Let $\tilde Q=Q_te_t+\vec\Pi_{\mathrm{nil}}$ with $\vec\Pi_{\mathrm{nil}}^2=0$, $\vec\Pi_{\mathrm{nil}}\neq0$ and $Q_t\neq0$. Its centraliser is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Pi_{\mathrm{nil}}\}$, the dual numbers, whose only idempotents are $0$ and $e_t$. Hence no non-trivial idempotent commutes with $\tilde Q$ and there is no non-trivial Peirce decomposition attached to $\tilde Q$.
 
-A non-zero nilpotent generates a minimal left ideal, so there is an idempotent $e$ with $\vec\Upsilon=e\vec\Upsilon(e_t-e)$. With $f=e_t-e$ the Peirce form is
+A non-zero nilpotent generates a minimal left ideal, so there is an idempotent $e$ with $\vec\Pi_{\mathrm{nil}}=e\vec\Pi_{\mathrm{nil}}(e_t-e)$. With $f=e_t-e$ the Peirce form is
 
 $$
 e\tilde Qe=Q_te,\qquad
-e\tilde Qf=\vec\Upsilon,\qquad
+e\tilde Qf=\vec\Pi_{\mathrm{nil}},\qquad
 f\tilde Qe=0,\qquad
 f\tilde Qf=Q_tf.
 $$
 
-The semisimple part is diagonal and the nilpotent part lies in one mixed corner; in the corner coordinates fixed by $(e,\vec\Upsilon)$ and $(f,\vec X)$, where $\vec X$ spans $f\mathbb{B}e$, the Peirce matrix of $\tilde Q$ is the single block
+The semisimple part is diagonal and the nilpotent part lies in one mixed corner; in the corner coordinates fixed by $(e,\vec\Pi_{\mathrm{nil}})$ and $(f,\vec X)$, where $\vec X$ spans $f\mathbb{B}e$, the Peirce matrix of $\tilde Q$ is the single block
 
 $$
 \begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}=J_2(Q_t).
@@ -187,13 +187,13 @@ $$
 
 and the product of two elements of the sector can lie in $\Sigma_{10}^{\mathrm{s}}$, can lie in $\Sigma_{10}^{\mathrm{J}}$, and can lie in $\Sigma_{11}$.
 
-*Witnesses.* Write $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$. Then
+*Witnesses.* Write $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}^2=0$. Then
 
 $$
-\tilde Q^2=Q_t^2(e_t+2\vec\Upsilon+\vec\Upsilon^2)=Q_t^2(e_t+2\vec\Upsilon),
+\tilde Q^2=Q_t^2(e_t+2\vec\Pi_{\mathrm{nil}}+\vec\Pi_{\mathrm{nil}}^2)=Q_t^2(e_t+2\vec\Pi_{\mathrm{nil}}),
 $$
 
-whose vector part squares to $4Q_t^2\vec\Upsilon^2=0$ and whose norm is $Q_t^4\neq0$: the square lies in $\Sigma_{10}$, and in $\Sigma_{10}^{\mathrm{J}}$ when $\vec\Upsilon\neq0$. For the scalar line, $Q_te_t\cdot Q'_te_t=QQ'_te_t\in\Sigma_{10}^{\mathrm{s}}$. For the exit to $\Sigma_{11}$, take
+whose vector part squares to $4Q_t^2\vec\Pi_{\mathrm{nil}}^2=0$ and whose norm is $Q_t^4\neq0$: the square lies in $\Sigma_{10}$, and in $\Sigma_{10}^{\mathrm{J}}$ when $\vec\Pi_{\mathrm{nil}}\neq0$. For the scalar line, $Q_te_t\cdot Q'_te_t=QQ'_te_t\in\Sigma_{10}^{\mathrm{s}}$. For the exit to $\Sigma_{11}$, take
 
 $$
 \tilde Q_2=e_t+\vec e_x+i\vec e_y,\qquad \tilde Q=e_t+i\vec e_x+\vec e_y,
@@ -211,11 +211,11 @@ with $B^2=4+4i\neq0$ and $\langle\tilde Q\rangle_{\natural}=1$. So the product l
 
 $$
 \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}}
-=\frac{Q_t-\vec\Upsilon}{Q_t^2}
-=\frac{1}{Q_t}(e_t-\vec\Upsilon).
+=\frac{Q_t-\vec\Pi_{\mathrm{nil}}}{Q_t^2}
+=\frac{1}{Q_t}(e_t-\vec\Pi_{\mathrm{nil}}).
 $$
 
-The element $-\vec\Upsilon$ is again nilpotent, so $\tilde Q^{-1}\in\Sigma_{10}$; it lies in the scalar line exactly when $\tilde Q$ does.
+The element $-\vec\Pi_{\mathrm{nil}}$ is again nilpotent, so $\tilde Q^{-1}\in\Sigma_{10}$; it lies in the scalar line exactly when $\tilde Q$ does.
 
 **Consequence.** The sector is **closed under inversion and not closed under multiplication**. It is a symmetric subset of the group of invertibles, not a subgroup. The only part of it closed under both is the punctured scalar line $\Sigma_{10}^{\mathrm{s}}$, a subgroup isomorphic to $\mathbb{C}^\times$.
 
@@ -253,7 +253,7 @@ a single Jordan block with eigenvalue $1$, and the identity $e_t$ itself, a semi
 | sector | conditions | elements | spectrum | Peirce decomposition | product |
 |---|---|---|---|---|---|
 | **doubly regular** $\Sigma_{11}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2\neq0$ | units with distinct eigenvalues | $\{\lambda_+,\lambda_-\}$, distinct, non-zero | exists, unique | stays in $\mathbb{B}^\times$; can land in $\Sigma_{10}$ |
-| **$\natural$-degenerate, spectrally regular** $\Sigma_{01}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2\neq0$ | $c\tilde\Pi$, $\tilde\Pi$ a non-trivial idempotent | $\{c,0\}$ | exists, unique | stays on $\mathcal N$; all three outcomes |
+| **$\natural$-degenerate, spectrally regular** $\Sigma_{01}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2\neq0$ | $c\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}$ a non-trivial idempotent | $\{c,0\}$ | exists, unique | stays on $\mathcal N$; all three outcomes |
 | **$\natural$-regular, spectrally degenerate** $\Sigma_{10}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2=0$ | $Q_tu$, $u$ unipotent | $\{Q_t\}$, repeated | no canonical one on $\Sigma_{10}^{\mathrm{J}}$; one-term and non-unique on $\Sigma_{10}^{\mathrm{s}}$ | stays in $\mathbb{B}^\times$; can land in $\Sigma_{11}$ |
 | **doubly degenerate** $\Sigma_{00}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin | $\{0\}$ | no canonical one off the origin | $0$ or $\Sigma_{01}$ |
 
@@ -290,13 +290,13 @@ which is polynomial in $\theta$; it grows even when $Q_t$ is purely imaginary. T
 The nilpotent generator is the vector part,
 
 $$
-\boxed{\ \vec\Upsilon=\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad \vec\Upsilon^2=0,\qquad Q_t\neq0\ }
+\boxed{\ \vec\Pi_{\mathrm{nil}}=\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad \vec\Pi_{\mathrm{nil}}^2=0,\qquad Q_t\neq0\ }
 $$
 
-Choose an idempotent $e$ with $\vec\Upsilon=e\vec\Upsilon(e_t-e)$, put $f=e_t-e$, and let $\vec X$ span the opposite mixed corner $f\mathbb{B}e$. The four Peirce generators of the pair $(e,f)$ are $e,\vec\Upsilon,\vec X,f$, and the Peirce form is
+Choose an idempotent $e$ with $\vec\Pi_{\mathrm{nil}}=e\vec\Pi_{\mathrm{nil}}(e_t-e)$, put $f=e_t-e$, and let $\vec X$ span the opposite mixed corner $f\mathbb{B}e$. The four Peirce generators of the pair $(e,f)$ are $e,\vec\Pi_{\mathrm{nil}},\vec X,f$, and the Peirce form is
 
 $$
-\boxed{\ e\tilde Qe=Q_t\,e,\qquad e\tilde Qf=\vec\Upsilon,\qquad f\tilde Qe=0,\qquad f\tilde Qf=Q_t\,f\ }
+\boxed{\ e\tilde Qe=Q_t\,e,\qquad e\tilde Qf=\vec\Pi_{\mathrm{nil}},\qquad f\tilde Qe=0,\qquad f\tilde Qf=Q_t\,f\ }
 $$
 
 The eigenvalue is repeated:
@@ -305,18 +305,18 @@ $$
 \boxed{\ \lambda=Q_t\ \text{with multiplicity }2,\qquad \lambda^2=\langle\tilde Q\rangle_{\natural}\ }
 $$
 
-On $\mathbb{B}$, the operators $L_{\tilde Q}$ and $R_{\tilde Q}$ have the single eigenvalue $Q_t$, of multiplicity four. There is no Q-adapted root, and no eigenbasis off the scalar line, because $B=0$. On the scalar line every basis diagonalises $L_{\tilde Q}$, but the two eigenvalues coincide and no spectral pair is singled out. In the Peirce basis $(e,\vec\Upsilon,\vec X,f)$ relative to the pair $(e,f)$ the element is the sum
+On $\mathbb{B}$, the operators $L_{\tilde Q}$ and $R_{\tilde Q}$ have the single eigenvalue $Q_t$, of multiplicity four. There is no Q-adapted root, and no eigenbasis off the scalar line, because $B=0$. On the scalar line every basis diagonalises $L_{\tilde Q}$, but the two eigenvalues coincide and no spectral pair is singled out. In the Peirce basis $(e,\vec\Pi_{\mathrm{nil}},\vec X,f)$ relative to the pair $(e,f)$ the element is the sum
 
 $$
-\boxed{\ \tilde Q=Q_t\,e+1\cdot\vec\Upsilon+0\cdot\vec X+Q_t\,f\ }
+\boxed{\ \tilde Q=Q_t\,e+1\cdot\vec\Pi_{\mathrm{nil}}+0\cdot\vec X+Q_t\,f\ }
 $$
 
-The diagonal entries carry the eigenvalue $Q_t$; the nilpotent generator is the off-diagonal term, and its coefficient $1$ is a normalisation, not an eigenvalue. The pair $(e,f)$ is not unique, but the displayed sum does not depend on the choice, because $e+f=e_t$ and $\vec\Upsilon=\tilde Q-Q_t e_t$. On the scalar line $\vec\Upsilon=0$ the element is $\tilde Q=Q_te_t$, and the sum collapses to $Q_t\,e+Q_t\,f$.
+The diagonal entries carry the eigenvalue $Q_t$; the nilpotent generator is the off-diagonal term, and its coefficient $1$ is a normalisation, not an eigenvalue. The pair $(e,f)$ is not unique, but the displayed sum does not depend on the choice, because $e+f=e_t$ and $\vec\Pi_{\mathrm{nil}}=\tilde Q-Q_t e_t$. On the scalar line $\vec\Pi_{\mathrm{nil}}=0$ the element is $\tilde Q=Q_te_t$, and the sum collapses to $Q_t\,e+Q_t\,f$.
 
 **The standard representative.** The pair $(e,f)$ and the corner vector $\vec X$ are not functions of $\tilde Q$: they are a gauge, and the Peirce form above is the invariant statement. For the standard element
 
 $$
-\boxed{\ \tilde Q=Q_te_t+c(\vec e_x+i\vec e_y),\qquad \vec\Upsilon=c(\vec e_x+i\vec e_y),\qquad c\neq0\ }
+\boxed{\ \tilde Q=Q_te_t+c(\vec e_x+i\vec e_y),\qquad \vec\Pi_{\mathrm{nil}}=c(\vec e_x+i\vec e_y),\qquad c\neq0\ }
 $$
 
 one choice of gauge is
@@ -333,14 +333,14 @@ $$
 \boxed{\ \vec X=\frac12(\vec e_x-i\vec e_y),\qquad \vec X\in f\mathbb{B}e,\quad \vec X^2=0\ }
 $$
 
-reproduces the Peirce form and the sum: $e\tilde Qe=Q_te$, $e\tilde Qf=\vec\Upsilon$, $f\tilde Qe=0$, $f\tilde Qf=Q_tf$, and $\tilde Q=Q_te+\vec\Upsilon+Q_tf$.
+reproduces the Peirce form and the sum: $e\tilde Qe=Q_te$, $e\tilde Qf=\vec\Pi_{\mathrm{nil}}$, $f\tilde Qe=0$, $f\tilde Qf=Q_tf$, and $\tilde Q=Q_te+\vec\Pi_{\mathrm{nil}}+Q_tf$.
 
 ## Summary
 
 | question | answer |
 |---|---|
 | definition | $\Sigma_{10}=\{N\neq0,\ B^2=0\}$ |
-| descriptions | $\mathcal S\setminus\mathcal N$; $Q_t\neq0$ on $\mathcal S$; $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$; $Q_tu$ with $u$ unipotent; unit with spectrum $\{Q_t\}$ |
+| descriptions | $\mathcal S\setminus\mathcal N$; $Q_t\neq0$ on $\mathcal S$; $Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}^2=0$; $Q_tu$ with $u$ unipotent; unit with spectrum $\{Q_t\}$ |
 | geometry | Zariski-open in $\mathcal S$; complex cone of complex dimension $3$ and real dimension $6$; connected; contains the punctured scalar line, the singular locus of $\mathcal S$ |
 | regimes | $\Sigma_{10}^{\mathrm{s}}$: scalar, semisimple, non-unique spectral idempotents, dimension $1$, closed; $\Sigma_{10}^{\mathrm{J}}$: Jordan, defective, dual-number centraliser, dimension $3$, open dense |
 | Peirce decomposition | the spectral pair fails on the Jordan part; there the Hermitian form selects a canonical pair and a Jordan basis (see *The Jordan Basis of a Spectrally Degenerate Biquaternion*); one-term and non-unique on the scalar line |
@@ -360,9 +360,9 @@ The sector is the unipotent sector. It is the non-zero scalar cone over the unip
 | $\mathcal N=\{N=0\}$ | the null cone of the quaternionic norm |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
 | $\Sigma_{10}^{\mathrm{s}}=\mathbb{C}^\times e_t$ | the scalar line |
-| $\Sigma_{10}^{\mathrm{J}}$ | the Jordan part, $\vec\Upsilon\neq0$ |
-| $\vec\Upsilon$ | a pure nilpotent, $\vec\Upsilon^2=0$ |
-| $u=e_t+\vec\Upsilon$ | a unipotent element, $(u-e_t)^2=0$ |
+| $\Sigma_{10}^{\mathrm{J}}$ | the Jordan part, $\vec\Pi_{\mathrm{nil}}\neq0$ |
+| $\vec\Pi_{\mathrm{nil}}$ | a pure nilpotent, $\vec\Pi_{\mathrm{nil}}^2=0$ |
+| $u=e_t+\vec\Pi_{\mathrm{nil}}$ | a unipotent element, $(u-e_t)^2=0$ |
 | $Q_t$ | the scalar part, non-zero on the sector |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication, both invertible on the sector |
 

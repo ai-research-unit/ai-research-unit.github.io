@@ -56,12 +56,12 @@ A nontrivial idempotent $p$ satisfies $p(1-p) = 0$, so $R = Rp \oplus R(1-p)$ is
 |---|---|---|---|
 | a module $M$ over $R$ | a single idempotent $p$ | $M = pM \oplus (1-p)M$ | *Modules* |
 | an algebra $A$ | a single idempotent $p$ | $A = pAp \oplus pA(1-p) \oplus (1-p)Ap \oplus (1-p)A(1-p)$ | *Peirce Decompositions of the Biquaternion Algebra* |
-| $\mathbb{B} \cong M_2(\mathbb{C})$ | $\tilde\Pi_1 = E_{11}$, $\tilde\Pi_2 = E_{22}$ | the four one-dimensional corners | *Peirce Decompositions of the Biquaternion Algebra* |
+| $\mathbb{B} \cong M_2(\mathbb{C})$ | $\tilde\Pi_{\mathrm{id},1} = E_{11}$, $\tilde\Pi_{\mathrm{id},2} = E_{22}$ | the four one-dimensional corners | *Peirce Decompositions of the Biquaternion Algebra* |
 | $M_2(\mathbb{R})$ | $E_{11}, E_{22}$ | the column decomposition of $\mathbb{R}^2$ | *Matrix Algebras* |
 | $R \times S$ | $(1,0)$, $(0,1)$ | the two components | *Examples of Rings and Fields* |
 | a group algebra $k[G]$ | the idempotents of the group | $k[G] = \bigoplus p_i k[G] p_i \oplus \text{off-diagonal}$ | *Group Algebras* |
 
-The Peirce decomposition relative to a complete orthogonal family of idempotents $p_1 + \cdots + p_n = 1$ writes a module as $M = \bigoplus_i p_i M$ and an algebra as the direct sum of the corner algebras $p_i A p_j$. The biquaternion case is the corpus's worked example: with $\tilde\Pi_1 = E_{11}$ and $\tilde\Pi_2 = E_{22}$ the four corners are one-dimensional over $\mathbb{C}$, and the off-diagonal ones are spanned by the nilpotents $\vec\Upsilon_1$ and $\vec\Upsilon_2$, as recorded in *Peirce Decompositions of the Biquaternion Algebra*.
+The Peirce decomposition relative to a complete orthogonal family of idempotents $p_1 + \cdots + p_n = 1$ writes a module as $M = \bigoplus_i p_i M$ and an algebra as the direct sum of the corner algebras $p_i A p_j$. The biquaternion case is the corpus's worked example: with $\tilde\Pi_{\mathrm{id},1} = E_{11}$ and $\tilde\Pi_{\mathrm{id},2} = E_{22}$ the four corners are one-dimensional over $\mathbb{C}$, and the off-diagonal ones are spanned by the nilpotents $\vec\Pi_{\mathrm{nil},1}$ and $\vec\Pi_{\mathrm{nil},2}$, as recorded in *Peirce Decompositions of the Biquaternion Algebra*.
 
 ## The von Neumann Regular Rings
 
@@ -112,9 +112,9 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | Symbol | Meaning |
 |---|---|
 | $p$ | An idempotent, $p^2 = p$ |
-| $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ in $\mathbb{C}_{\mathrm{spl}}$, $\tilde\Pi_{1,2}$ in $\mathbb{B}_{\mathrm{spl}}$ | The idempotents of the split-complex numbers and the split-biquaternions |
+| $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ in $\mathbb{C}_{\mathrm{spl}}$, $\tilde\Pi_{\mathrm{id},1,2}$ in $\mathbb{B}_{\mathrm{spl}}$ | The idempotents of the split-complex numbers and the split-biquaternions |
 | $1$, written $e_t$ in the quaternion layers | The identity, the trivial idempotent |
-| $\tilde\Pi_1 = E_{11}$, $\tilde\Pi_2 = E_{22}$ | Orthogonal matrix-unit idempotents, $\tilde\Pi_1 + \tilde\Pi_2 = 1$ |
+| $\tilde\Pi_{\mathrm{id},1} = E_{11}$, $\tilde\Pi_{\mathrm{id},2} = E_{22}$ | Orthogonal matrix-unit idempotents, $\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2} = 1$ |
 | $x, y$ | The nilpotent off-diagonal elements of the Peirce corners |
 | $p_i A p_j$ | A Peirce corner of the algebra $A$ |
 | $\omega(n)$ | The number of distinct primes dividing $n$ |

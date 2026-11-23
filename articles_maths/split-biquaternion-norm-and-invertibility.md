@@ -5,7 +5,7 @@
 
 This article studies the split-biquaternion norm of the algebra and the invertibility of its elements. It follows the article on split biquaternion algebra, which defined the algebra, its four conjugations, and its four fixed-point subspaces. The goal here is to define the four forms and the four norms of the layer — the plain, the quaternionic, the Hermitian and the Krein — to establish the criterion for invertibility, and to describe the group of invertibles. The split-biquaternion norm is the quaternionic norm of the layer, and it is the one that decides invertibility.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{C}_{\mathrm{spl}}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$. The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding article, together with its four conjugations, its four fixed-point subspaces, and its three decompositions.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{C}_{\mathrm{spl}}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_{\mathrm{id},2} = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$. The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding article, together with its four conjugations, its four fixed-point subspaces, and its three decompositions.
 
 Throughout, a split biquaternion is written
 
@@ -15,13 +15,13 @@ $$
 
 The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \vec Q$, where $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_t} e_t + \bar{\vec Q}$, where $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$.
 
-The idempotents of the split complex algebra are denoted $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
+The idempotents of the split complex algebra are denoted $\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_{\mathrm{id},2} = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
 $$
-\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_{\mathrm{id},1} + \tilde{Q}_- \tilde\Pi_{\mathrm{id},2},
 $$
 
-with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$ ordinary quaternions.
+with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{\mathrm{id},1,2} \in \mathbb{H}$ ordinary quaternions.
 
 **The four forms follow the corpus** (*Algebra and Element Conventions*): each is
 
@@ -89,10 +89,10 @@ $$
 
 ### The Split-Biquaternion Norm in the Idempotent Basis
 
-In the idempotent basis, the split-biquaternion norm takes a particularly simple form. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ with $\tilde{Q}_\pm \in \mathbb{H}$,
+In the idempotent basis, the split-biquaternion norm takes a particularly simple form. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_{\mathrm{id},1} + \tilde{Q}_- \tilde\Pi_{\mathrm{id},2}$ with $\tilde{Q}_\pm \in \mathbb{H}$,
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q}_+\rangle_{\natural} \tilde\Pi_1 + \langle\tilde{Q}_-\rangle_{\natural} \tilde\Pi_2,
+\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q}_+\rangle_{\natural} \tilde\Pi_{\mathrm{id},1} + \langle\tilde{Q}_-\rangle_{\natural} \tilde\Pi_{\mathrm{id},2},
 $$
 
 where $\langle\tilde{Q}_\pm\rangle_{\natural} = \tilde{Q}_\pm \tilde{Q}^{\natural}_\pm$ is the ordinary quaternion norm of $\tilde{Q}_\pm$, which is a non-negative real number.
@@ -315,7 +315,7 @@ $$
 
 so $\langle\tilde Q_1\rangle_{\natural}$ is invertible in $\mathbb{C}_{\mathrm{spl}}$, with inverse $\langle\tilde Q_1^{-1}\rangle_{\natural}$.
 
-**Remark.** The hypothesis is not simply $\tilde{Q} \neq 0$, nor $\langle\tilde{Q}\rangle_{\natural} \neq 0$, which is the same thing by anisotropy. For $\tilde{Q} = \tilde\Pi_1$ one has $\langle\tilde{Q}\rangle_{\natural} = \tilde\Pi_1$, a nonzero zero divisor of $\mathbb{C}_{\mathrm{spl}}$, and $\tilde\Pi_1$ is a zero divisor of $\mathbb{B}_{\mathrm{spl}}$, since $\tilde\Pi_1 \tilde\Pi_2 = 0$.
+**Remark.** The hypothesis is not simply $\tilde{Q} \neq 0$, nor $\langle\tilde{Q}\rangle_{\natural} \neq 0$, which is the same thing by anisotropy. For $\tilde{Q} = \tilde\Pi_{\mathrm{id},1}$ one has $\langle\tilde{Q}\rangle_{\natural} = \tilde\Pi_{\mathrm{id},1}$, a nonzero zero divisor of $\mathbb{C}_{\mathrm{spl}}$, and $\tilde\Pi_{\mathrm{id},1}$ is a zero divisor of $\mathbb{B}_{\mathrm{spl}}$, since $\tilde\Pi_{\mathrm{id},1} \tilde\Pi_{\mathrm{id},2} = 0$.
 
 ### The Inverse Formula
 
@@ -329,10 +329,10 @@ This is the split biquaternion analogue of the formula $\tilde q^{-1} = \tilde q
 
 ### The Criterion in the Idempotent Basis
 
-The invertibility criterion takes a particularly simple form in the idempotent basis. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ with $\tilde{Q}_\pm \in \mathbb{H}$,
+The invertibility criterion takes a particularly simple form in the idempotent basis. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_{\mathrm{id},1} + \tilde{Q}_- \tilde\Pi_{\mathrm{id},2}$ with $\tilde{Q}_\pm \in \mathbb{H}$,
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q}_+\rangle_{\natural} \tilde\Pi_1 + \langle\tilde{Q}_-\rangle_{\natural} \tilde\Pi_2.
+\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q}_+\rangle_{\natural} \tilde\Pi_{\mathrm{id},1} + \langle\tilde{Q}_-\rangle_{\natural} \tilde\Pi_{\mathrm{id},2}.
 $$
 
 Since $\langle\tilde{Q}_\pm\rangle_{\natural}$ are non-negative real numbers, $\langle\tilde{Q}\rangle_{\natural}$ is invertible in $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ if and only if both of its components are nonzero:
@@ -341,7 +341,7 @@ $$
 \langle\tilde{Q}_+\rangle_{\natural} \neq 0 \quad \text{and} \quad \langle\tilde{Q}_-\rangle_{\natural} \neq 0.
 $$
 
-Mere non-vanishing of $\langle\tilde{Q}\rangle_{\natural}$ would require only one component to be nonzero, and that is not sufficient, as the example $\tilde{Q} = \tilde\Pi_1$ above shows. Since $\mathbb{H}$ is a division algebra, $\langle\tilde{Q}_\pm\rangle_{\natural} \neq 0$ if and only if $\tilde{Q}_\pm \neq 0$. So the invertibility criterion is
+Mere non-vanishing of $\langle\tilde{Q}\rangle_{\natural}$ would require only one component to be nonzero, and that is not sufficient, as the example $\tilde{Q} = \tilde\Pi_{\mathrm{id},1}$ above shows. Since $\mathbb{H}$ is a division algebra, $\langle\tilde{Q}_\pm\rangle_{\natural} \neq 0$ if and only if $\tilde{Q}_\pm \neq 0$. So the invertibility criterion is
 
 $$
 \tilde{Q} \text{ is invertible} \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
@@ -361,13 +361,13 @@ $$
 
 requires $\langle\tilde{Q}\rangle_{\natural}$ to be invertible in $\mathbb{C}_{\mathrm{spl}}$, not merely nonzero: since $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors, when $\tilde{Q}$ is a zero divisor the value $\langle\tilde{Q}\rangle_{\natural}$ is a nonzero zero divisor of $\mathbb{C}_{\mathrm{spl}}$ and $\langle\tilde{Q}\rangle_{\natural}^{-1}$ does not exist.
 
-In the idempotent basis the inverse of an invertible element of $\mathbb{C}_{\mathrm{spl}}$ is computed componentwise. Writing $\langle\tilde{Q}\rangle_{\natural} = N_+ \tilde\Pi_1 + N_- \tilde\Pi_2$ with $N_\pm = \langle\tilde{Q}_\pm\rangle_{\natural} \in \mathbb{R}$,
+In the idempotent basis the inverse of an invertible element of $\mathbb{C}_{\mathrm{spl}}$ is computed componentwise. Writing $\langle\tilde{Q}\rangle_{\natural} = N_+ \tilde\Pi_{\mathrm{id},1} + N_- \tilde\Pi_{\mathrm{id},2}$ with $N_\pm = \langle\tilde{Q}_\pm\rangle_{\natural} \in \mathbb{R}$,
 
 $$
-\langle\tilde{Q}\rangle_{\natural}^{-1} = \frac{\tilde\Pi_1}{N_+} + \frac{\tilde\Pi_2}{N_-} = \frac{\langle\tilde{Q}\rangle_{\natural}^*}{\Delta(\tilde{Q})},
+\langle\tilde{Q}\rangle_{\natural}^{-1} = \frac{\tilde\Pi_{\mathrm{id},1}}{N_+} + \frac{\tilde\Pi_{\mathrm{id},2}}{N_-} = \frac{\langle\tilde{Q}\rangle_{\natural}^*}{\Delta(\tilde{Q})},
 $$
 
-where $\langle\tilde{Q}\rangle_{\natural}^* = N_- \tilde\Pi_1 + N_+ \tilde\Pi_2$ is the split complex conjugate of $\langle\tilde{Q}\rangle_{\natural}$. Substituting into $\tilde{Q}^{-1} = \tilde{Q}^{\natural} \langle\tilde{Q}\rangle_{\natural}^{-1}$ expresses the inverse through the **reduced norm**
+where $\langle\tilde{Q}\rangle_{\natural}^* = N_- \tilde\Pi_{\mathrm{id},1} + N_+ \tilde\Pi_{\mathrm{id},2}$ is the split complex conjugate of $\langle\tilde{Q}\rangle_{\natural}$. Substituting into $\tilde{Q}^{-1} = \tilde{Q}^{\natural} \langle\tilde{Q}\rangle_{\natural}^{-1}$ expresses the inverse through the **reduced norm**
 
 $$
 \Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^* \in \mathbb{R},
@@ -403,7 +403,7 @@ $$
 \tilde{Q} \tilde{Q}^{\natural} = 8 e_t, \qquad \tilde{Q}^{-1} = \tfrac{1}{8} \tilde{Q}^{\natural} = \tfrac{1}{8}\big(1 - 2 \vec e_x - \vec e_y\big) + \tfrac{j}{8}\big(1 + \vec e_y\big).
 $$
 
-The criterion is not the naive one $\langle\tilde{Q}\rangle_{\natural} \neq 0$. For $\tilde\Pi_1$ one has $\langle\tilde\Pi_1\rangle_{\natural} = \tilde\Pi_1 \neq 0$, yet $\tilde\Pi_1$ is a zero divisor, because $\tilde\Pi_1$ is a nonzero non-invertible of $\mathbb{C}_{\mathrm{spl}}$ and so does not lie in ${\mathbb{C}_{\mathrm{spl}}}^\times$. In the idempotent basis $\langle\tilde{Q}_+\rangle_{\natural} = \langle\tilde{Q}_-\rangle_{\natural} = 8$, so $\langle\tilde{Q}\rangle_{\natural} = 8\tilde\Pi_1 + 8\tilde\Pi_2 = 8$, matching the direct computation.
+The criterion is not the naive one $\langle\tilde{Q}\rangle_{\natural} \neq 0$. For $\tilde\Pi_{\mathrm{id},1}$ one has $\langle\tilde\Pi_{\mathrm{id},1}\rangle_{\natural} = \tilde\Pi_{\mathrm{id},1} \neq 0$, yet $\tilde\Pi_{\mathrm{id},1}$ is a zero divisor, because $\tilde\Pi_{\mathrm{id},1}$ is a nonzero non-invertible of $\mathbb{C}_{\mathrm{spl}}$ and so does not lie in ${\mathbb{C}_{\mathrm{spl}}}^\times$. In the idempotent basis $\langle\tilde{Q}_+\rangle_{\natural} = \langle\tilde{Q}_-\rangle_{\natural} = 8$, so $\langle\tilde{Q}\rangle_{\natural} = 8\tilde\Pi_{\mathrm{id},1} + 8\tilde\Pi_{\mathrm{id},2} = 8$, matching the direct computation.
 
 ### Corollaries
 
@@ -606,9 +606,9 @@ The zero divisors themselves are studied in the article on split biquaternion ze
 | $\|\tilde{Q}\| = \sqrt{\sum_\mu (q_\mu^2 + q'^2_\mu)}$ | Euclidean norm |
 | $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | Inverse |
 | ${\mathbb{B}_{\mathrm{spl}}}^\times$ | Group of invertibles |
-| $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
-| $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
-| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |
+| $\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
+| $\tilde\Pi_{\mathrm{id},2} = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
+| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{\mathrm{id},1,2}$ | Idempotent components |
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | Split complex subspace |
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | Quaternion subspace |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace |

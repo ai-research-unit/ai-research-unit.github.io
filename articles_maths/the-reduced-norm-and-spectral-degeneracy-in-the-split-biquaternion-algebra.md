@@ -6,20 +6,20 @@ The split-biquaternion algebra $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\m
 
 This article compares these invariants. Spectral regularity forces $\Delta\neq0$, but $\Delta\neq0$ does not force spectral regularity. Hence the sector "reduced-norm-degenerate, spectrally regular" is empty, while its opposite is not: a vanishing reduced norm forces a whole half to vanish, and a vanishing half is scalar, hence spectrally degenerate. The biquaternion algebra differs: its norm is a sum, not a product, and its Hermitian idempotents are norm-degenerate with simple spectra.
 
-**Conventions.** The split complex unit is $j$, with $j^2=1$, and the idempotents are $\tilde\Pi_{1,2}=\tfrac12(1\pm j)$. An element is $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$ with $Q_\pm=t_\pm+\vec q_\pm$, $t_\pm\in\mathbb{R}$, $\vec q_\pm=\sum_k q_{\pm k}\vec e_k$, and $|\vec q_\pm|^2=\sum_k q_{\pm k}^2$. The quaternion norm is $|Q_\pm|^2=t_\pm^2+|\vec q_\pm|^2$. The split-biquaternion norm is $\langle\tilde Q\rangle_{\natural}=|Q_+|^2\tilde\Pi_1+|Q_-|^2\tilde\Pi_2=\sum_\mu Q_\mu^2$, where $Q_\mu$ are the coefficients in the basis $e_\mu$. The reduced norm is $\Delta=|Q_+|^2|Q_-|^2=\langle\tilde Q\rangle_{\natural}\langle\tilde Q\rangle_{\natural}^{*}$. The spectral classification is *[Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html)*; the sectors are *[The Three Sectors of the Split-Biquaternion Algebra](the-three-sectors-of-the-split-biquaternion-algebra.html)*; the algebra and norm are *[Split-Biquaternion Algebra](split-biquaternion-algebra.html)* and *[Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html)*.
+**Conventions.** The split complex unit is $j$, with $j^2=1$, and the idempotents are $\tilde\Pi_{\mathrm{id},1,2}=\tfrac12(1\pm j)$. An element is $\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}_-\tilde\Pi_{\mathrm{id},2}$ with $Q_\pm=t_\pm+\vec q_\pm$, $t_\pm\in\mathbb{R}$, $\vec q_\pm=\sum_k q_{\pm k}\vec e_k$, and $|\vec q_\pm|^2=\sum_k q_{\pm k}^2$. The quaternion norm is $|Q_\pm|^2=t_\pm^2+|\vec q_\pm|^2$. The split-biquaternion norm is $\langle\tilde Q\rangle_{\natural}=|Q_+|^2\tilde\Pi_{\mathrm{id},1+}|Q_-|^2\tilde\Pi_{\mathrm{id},2}=\sum_\mu Q_\mu^2$, where $Q_\mu$ are the coefficients in the basis $e_\mu$. The reduced norm is $\Delta=|Q_+|^2|Q_-|^2=\langle\tilde Q\rangle_{\natural}\langle\tilde Q\rangle_{\natural}^{*}$. The spectral classification is *[Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html)*; the sectors are *[The Three Sectors of the Split-Biquaternion Algebra](the-three-sectors-of-the-split-biquaternion-algebra.html)*; the algebra and norm are *[Split-Biquaternion Algebra](split-biquaternion-algebra.html)* and *[Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html)*.
 
 ## The Reduced Norm and the Component Invariants
 
 ### Definitions and Identities
 
-**Lemma (the norm in the idempotent basis).** For $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$,
+**Lemma (the norm in the idempotent basis).** For $\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}_-\tilde\Pi_{\mathrm{id},2}$,
 
 $$
-\langle\tilde Q\rangle_{\natural}=|Q_+|^2\tilde\Pi_1+|Q_-|^2\tilde\Pi_2
+\langle\tilde Q\rangle_{\natural}=|Q_+|^2\tilde\Pi_{\mathrm{id},1+}|Q_-|^2\tilde\Pi_{\mathrm{id},2}
 =\sum_{\mu=t,x,y,z}Q_\mu^2.
 $$
 
-*Proof.* Write $Q_\mu=a_\mu+jb_\mu$ with $a_\mu,b_\mu\in\mathbb{R}$. Since $a_\mu+jb_\mu=(a_\mu+b_\mu)\tilde\Pi_1+(a_\mu-b_\mu)\tilde\Pi_2$, the coefficient of $\tilde\Pi_1$ in $\sum_\mu Q_\mu^2$ is $\sum_\mu(a_\mu+b_\mu)^2$ and the coefficient of $\tilde\Pi_2$ is $\sum_\mu(a_\mu-b_\mu)^2$. Now $a_\mu=(q_{+\mu}+q_{-\mu})/2$ and $b_\mu=(q_{+\mu}-q_{-\mu})/2$, so
+*Proof.* Write $Q_\mu=a_\mu+jb_\mu$ with $a_\mu,b_\mu\in\mathbb{R}$. Since $a_\mu+jb_\mu=(a_\mu+b_\mu)\tilde\Pi_{\mathrm{id},1+}(a_\mu-b_\mu)\tilde\Pi_{\mathrm{id},2}$, the coefficient of $\tilde\Pi_{\mathrm{id},1}$ in $\sum_\mu Q_\mu^2$ is $\sum_\mu(a_\mu+b_\mu)^2$ and the coefficient of $\tilde\Pi_{\mathrm{id},2}$ is $\sum_\mu(a_\mu-b_\mu)^2$. Now $a_\mu=(q_{+\mu}+q_{-\mu})/2$ and $b_\mu=(q_{+\mu}-q_{-\mu})/2$, so
 
 $$
 \sum_\mu(a_\mu+b_\mu)^2=\sum_\mu q_{+\mu}^2=|Q_+|^2,
@@ -185,7 +185,7 @@ $$
 
 Since $E^2=E$ and $E\neq0,1$, its minimal polynomial is $X(X-1)$, so the spectrum $\{0,1\}$ is simple. Thus $E$ is norm-degenerate and spectrally regular: it lies in the biquaternion $\Sigma_{01}$, the sector that is empty in the split algebra. These idempotents are non-central, form a two-sphere, and are rank-one projections in the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$.
 
-A sum can cancel: $Q_t^2$ and $B^2$ can be opposite non-zero complex numbers, whereas a product of non-negative reals needs a zero factor. And $\mathbb{B}_{\mathrm{spl}}$ has only the four central idempotents $0,\tilde\Pi_1,\tilde\Pi_2,1$, because each division algebra has only $0$ and $1$; a non-zero idempotent of the split algebra has a zero half. The biquaternion matrix algebra has non-central idempotents, and the Hermitian ones are the witnesses the split algebra cannot produce.
+A sum can cancel: $Q_t^2$ and $B^2$ can be opposite non-zero complex numbers, whereas a product of non-negative reals needs a zero factor. And $\mathbb{B}_{\mathrm{spl}}$ has only the four central idempotents $0,\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2},1$, because each division algebra has only $0$ and $1$; a non-zero idempotent of the split algebra has a zero half. The biquaternion matrix algebra has non-central idempotents, and the Hermitian ones are the witnesses the split algebra cannot produce.
 
 ## Summary
 
@@ -200,11 +200,11 @@ The biquaternion algebra has a sum, not a product. Its Hermitian idempotents $\t
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ | Split-biquaternion algebra |
-| $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$ | Idempotent decomposition |
+| $\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}_-\tilde\Pi_{\mathrm{id},2}$ | Idempotent decomposition |
 | $Q_\pm=t_\pm+\vec q_\pm$ | A half |
 | $\lvert Q_\pm\rvert^2=t_\pm^2+\lvert\vec q_\pm\rvert^2$ | Quaternion norm of a half |
 | $\lvert\vec q_\pm\rvert^2$ | Component invariant, the squared vector part |
-| $\langle\tilde Q\rangle_{\natural}=\lvert Q_+\rvert^2\tilde\Pi_1+\lvert Q_-\rvert^2\tilde\Pi_2$ | Split-biquaternion norm |
+| $\langle\tilde Q\rangle_{\natural}=\lvert Q_+\rvert^2\tilde\Pi_{\mathrm{id},1+}\lvert Q_-\rvert^2\tilde\Pi_{\mathrm{id},2}$ | Split-biquaternion norm |
 | $\Delta=\lvert Q_+\rvert^2\lvert Q_-\rvert^2=\langle\tilde Q\rangle_{\natural}\langle\tilde Q\rangle_{\natural}^{*}$ | Reduced norm |
 | $\Sigma_{01}=\{\Delta=0,\ \text{spectrally regular}\}$ | The empty mixed sector |
 | $\Sigma_{10}=\{\Delta\neq0,\ \text{spectrally degenerate}\}$ | The non-empty mixed sector |

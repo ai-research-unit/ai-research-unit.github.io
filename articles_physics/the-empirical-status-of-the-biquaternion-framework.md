@@ -286,7 +286,7 @@ The main result is therefore negative, and meant to be: the framework currently 
 | $c=1/\sqrt{\epsilon\mu}$ | Local speed of light in the medium |
 | $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Vacuum speed of light |
 | $\tilde\nabla_\Phi$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, d'Alembertian |
-| $\tilde\Pi_{1,2}=\tfrac12(e_t\pm i\vec{u})$ | Idempotent (pure state) |
+| $\tilde\Pi_{\mathrm{id},1,2}=\tfrac12(e_t\pm i\vec{u})$ | Idempotent (pure state) |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian element (observable) |
 | $\mathbb{B}\cong M_2(\mathbb{C})$ | The algebra is the standard complex $2\times2$ algebra |
 | $SL(2,\mathbb{C})$ | Unit-norm biquaternions (Lorentz double cover) |

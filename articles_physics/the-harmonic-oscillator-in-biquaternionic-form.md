@@ -119,9 +119,9 @@ A single mode has an infinite-dimensional state space, and $\mathbb{B}\cong M_2(
 The part that is, is the two-level truncation. Restrict the mode to the span of its two lowest levels, and replace the ladder operators by their finite-dimensional images
 
 $$
-\vec\Upsilon_x=|0\rangle\langle1|=\tfrac12(i\vec e_x-\vec e_y),\qquad
-\vec\Upsilon_y=|1\rangle\langle0|=\tfrac12(i\vec e_x+\vec e_y),\qquad
-\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=|1\rangle_{*}\langle1|=\tfrac12(e_t-i\vec e_z).
+\vec\Pi_{\mathrm{nil},x}=|0\rangle\langle1|=\tfrac12(i\vec e_x-\vec e_y),\qquad
+\vec\Pi_{\mathrm{nil},y}=|1\rangle\langle0|=\tfrac12(i\vec e_x+\vec e_y),\qquad
+\tilde\Pi_{\mathrm{id},-}=\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}=|1\rangle_{*}\langle1|=\tfrac12(e_t-i\vec e_z).
 $$
 
 These are the ladder operators and the lower-state idempotent of the parent articles: the truncation is exactly the two-state system, as expected from $\mathbb{B}\cong M_2(\mathbb{C})$.
@@ -129,13 +129,13 @@ These are the ladder operators and the lower-state idempotent of the parent arti
 The truncation is not faithful to the oscillator, and the failures are diagnostic. The commutator is
 
 $$
-\boxed{\;[\vec\Upsilon_x,\vec\Upsilon_y]=\sigma_3=i\vec e_z\neq e_t\;},
+\boxed{\;[\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}]=\sigma_3=i\vec e_z\neq e_t\;},
 $$
 
 so the canonical relation fails by the boundary terms of the truncation. The number operator is an idempotent, not an operator with an integer spectrum. And the squeeze generator,
 
 $$
-\vec\Upsilon_x^{\dagger 2}-\vec\Upsilon_x^2=0,
+\vec\Pi_{\mathrm{nil},x}^{\dagger 2}-\vec\Pi_{\mathrm{nil},x}^2=0,
 $$
 
 vanishes identically, because a two-level truncation cannot represent a two-photon process. So the one operation that most clearly distinguishes an oscillator from a two-state system, squeezing, is invisible in the biquaternion truncation. Whatever "the biquaternion form of the harmonic oscillator" means, it cannot mean two oscillators in the two sectors; at two levels, it cannot mean even one squeezed oscillator.
@@ -145,17 +145,17 @@ vanishes identically, because a two-level truncation cannot represent a two-phot
 If the sectors do not carry two oscillators, they do carry the oscillator's raising and lowering structure in a precise sense. Consider the truncation ladder operators above. Their Hermitian and anti-Hermitian parts are
 
 $$
-\vec\Upsilon_x=\underbrace{\tfrac12 i\vec e_x}_{\in\,\mathbb{B}_{\Psi}}\;\underbrace{-\tfrac12 \vec e_y}_{\in\,\mathbb{B}_{\Phi}},\qquad
-\vec\Upsilon_y=\underbrace{\tfrac12 i\vec e_x}_{\in\,\mathbb{B}_{\Psi}}\;\underbrace{+\tfrac12 \vec e_y}_{\in\,\mathbb{B}_{\Phi}}.
+\vec\Pi_{\mathrm{nil},x}=\underbrace{\tfrac12 i\vec e_x}_{\in\,\mathbb{B}_{\Psi}}\;\underbrace{-\tfrac12 \vec e_y}_{\in\,\mathbb{B}_{\Phi}},\qquad
+\vec\Pi_{\mathrm{nil},y}=\underbrace{\tfrac12 i\vec e_x}_{\in\,\mathbb{B}_{\Psi}}\;\underbrace{+\tfrac12 \vec e_y}_{\in\,\mathbb{B}_{\Phi}}.
 $$
 
 Each of these ladder operators is the sum of one $\mathbb{B}_{\Psi}$ element and one $\mathbb{B}_{\Phi}$ element of equal magnitude, and conjugation flips the sign of the $\mathbb{B}_{\Phi}$ part while leaving the $\mathbb{B}_{\Psi}$ part fixed. The general complex amplitude has the same shape, though not necessarily the same weights: $a=\tilde{Q}_1+i\tilde{Q}_2$ has $\mathbb{B}_{\Psi}$ part $\tilde{Q}_1$ and $\mathbb{B}_{\Phi}$ part $i\tilde{Q}_2$, and $a^\dagger=\tilde{Q}_1-i\tilde{Q}_2$ differs from $a$ only in the sign of the $\mathbb{B}_{\Phi}$ part. Raising and lowering operators are therefore, exactly, the elements with both sector components nonzero: they sit off the sector axis, and the ladder sits at equal distance from both sectors. This is the precise version of the claim that the raising and lowering structure "lives between" the sectors, and it is correct.
 
-Two further properties are inherited from the algebra and worth recording. First, the ladder operators are nilpotent and null, $\vec\Upsilon_x^2=0$ and $\langle \vec\Upsilon_x\rangle_{\natural}=\vec\Upsilon_x a^{\natural}_{\mathrm{tr}}=0$, so they lie on the biquaternion-norm cone; this is the same zero-divisor cone that is the light cone of $\mathbb{B}_{\Phi}$ and the boundary of the state space in $\mathbb{B}_{\Psi}$, and it is established for the ladder operators in the angular-momentum article, so we do not rederive it. Second, the $\mathbb{B}_{\Phi}$ part of the amplitude is a generator, not an observable: it is $i$ times the Hermitian quadrature $\tilde{Q}_2$, and the factor of $i$ that turns $\tilde{Q}_2$ into a generator is the same factor that exchanges the sectors.
+Two further properties are inherited from the algebra and worth recording. First, the ladder operators are nilpotent and null, $\vec\Pi_{\mathrm{nil},x}^2=0$ and $\langle \vec\Pi_{\mathrm{nil},x}\rangle_{\natural}=\vec\Pi_{\mathrm{nil},x} a^{\natural}_{\mathrm{tr}}=0$, so they lie on the biquaternion-norm cone; this is the same zero-divisor cone that is the light cone of $\mathbb{B}_{\Phi}$ and the boundary of the state space in $\mathbb{B}_{\Psi}$, and it is established for the ladder operators in the angular-momentum article, so we do not rederive it. Second, the $\mathbb{B}_{\Phi}$ part of the amplitude is a generator, not an observable: it is $i$ times the Hermitian quadrature $\tilde{Q}_2$, and the factor of $i$ that turns $\tilde{Q}_2$ into a generator is the same factor that exchanges the sectors.
 
 ## The Phase Is the Sector Exchange
 
-The oscillator's phase, the $\mathrm{U}(1)$ that multiplies the amplitude by $\exp(-i\theta_{\mathrm{cen}})$, is generated by the number operator. In the truncation, $[\tilde\Pi_-,\vec\Upsilon_x]=-\vec\Upsilon_x$, so the phase acts as $\vec\Upsilon_x\mapsto \exp(-i\theta_{\mathrm{cen}})\vec\Upsilon_x$. The generator of the phase is $i\tilde\Pi_-$, which is $i$ times an $\mathbb{B}_{\Psi}$ element and hence lies in $\mathbb{B}_{\Phi}$; the global phase is generated by $ie_t$, also in $\mathbb{B}_{\Phi}$.
+The oscillator's phase, the $\mathrm{U}(1)$ that multiplies the amplitude by $\exp(-i\theta_{\mathrm{cen}})$, is generated by the number operator. In the truncation, $[\tilde\Pi_{\mathrm{id},-},\vec\Pi_{\mathrm{nil},x}]=-\vec\Pi_{\mathrm{nil},x}$, so the phase acts as $\vec\Pi_{\mathrm{nil},x}\mapsto \exp(-i\theta_{\mathrm{cen}})\vec\Pi_{\mathrm{nil},x}$. The generator of the phase is $i\tilde\Pi_{\mathrm{id},-}$, which is $i$ times an $\mathbb{B}_{\Psi}$ element and hence lies in $\mathbb{B}_{\Phi}$; the global phase is generated by $ie_t$, also in $\mathbb{B}_{\Phi}$.
 
 Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
@@ -198,7 +198,7 @@ Two cautions belong with this result. First, the boost acts on $\mathbb{B}_{\Phi
 
 The exercise settles the two-sector claim and separates what the algebra adds from what it merely restates.
 
-**Familiar, rewritten.** The oscillator's ladder, quadratures, number operator, and energy are the standard ones. The finite-dimensional part that lives in $\mathbb{B}$ is the two-level truncation, which is the two-state system of the parent articles; its dynamics is the standard $*$-unitary precession, its Born rule is $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ for a state $\tilde\Pi$, and its canonical commutator fails by boundary terms as it does in any finite truncation. None of this is new.
+**Familiar, rewritten.** The oscillator's ladder, quadratures, number operator, and energy are the standard ones. The finite-dimensional part that lives in $\mathbb{B}$ is the two-level truncation, which is the two-state system of the parent articles; its dynamics is the standard $*$-unitary precession, its Born rule is $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$ for a state $\tilde\Pi_{\mathrm{id}}$, and its canonical commutator fails by boundary terms as it does in any finite truncation. None of this is new.
 
 **Structurally new or newly visible.**
 
@@ -232,10 +232,10 @@ The two-sector interpretation of the oscillator is therefore formal, not a pair 
 | $a,a^\dagger$ | Ladder operators, straddling $\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ |
 | $a^\dagger a$ | Number operator |
 | $\tilde{Q}_{\mathrm{osc},1},\tilde{Q}_{\mathrm{osc},2},\tilde{Q}_{\mathrm{osc},3}$ | Quadratic generators (squeezes and phase), $[\tilde{Q}_{\mathrm{osc},1},\tilde{Q}_{\mathrm{osc},2}]=2i\tilde{Q}_{\mathrm{osc},3}$ |
-| $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ | Truncated lowering operator |
-| $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Truncated number operator (idempotent) |
+| $\vec\Pi_{\mathrm{nil},x}=\tfrac12(i\vec e_x-\vec e_y)$ | Truncated lowering operator |
+| $\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec e_z)$ | Truncated number operator (idempotent) |
 | $\\tilde U_{\\Psi,\\mathrm b}=\\cosh\\frac\\theta_{\\mathrm{rpd}}2\,e_t+i\\sinh\\frac\\theta_{\\mathrm{rpd}}2\,\\vec u_{\\mathrm b}$ | Boost rotor in $\mathbb{B}_{\Psi}$ |
-| $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$ | Idempotent (pure state) |
+| $\tilde\Pi_{\mathrm{id}}(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$ | Idempotent (pure state) |
 | $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ | Sector exchange by the scalar imaginary |
 
 ## Further Reading

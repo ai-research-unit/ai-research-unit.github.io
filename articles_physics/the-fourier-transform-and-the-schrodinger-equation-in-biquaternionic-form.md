@@ -131,7 +131,7 @@ The dimension count says the same. The symbol is one element times one number: f
 
 What the determinant is even in. $\det\sigma(\omega)$ is a quadratic in $(\hbar\omega-h_t)^{2}$, so it is even about $\omega=h_t/\hbar$ and not about zero. A change of the sign of the frequency is not a symmetry of the symbol unless $h_t=0$.
 
-The numbers. With $h_t=0.4$, $\lvert\vec h_\Psi\rvert=0.616441$ and $\hbar=1$ the zeros are at $\omega=-0.2164$ and $\omega=1.0164$. At $\omega=1.2$ the elementary determinant is $0.2600$ and at $\omega=-1.2$ it is $2.1800$; the symbol's determinant, being its square, is $0.0676$ at the first and $4.7524$ at the second, a ratio of $70.3$. The two frequencies are not images of one another, and the asymmetry is the mass term's.
+The numbers. With $h_t=0.4$, $\lvert\vec h_\Psi\rvert=0.616441$ and the frequency in units of $k_m c$ the zeros are at $\omega=-0.2164$ and $\omega=1.0164$. At $\omega=1.2$ the elementary determinant is $0.2600$ and at $\omega=-1.2$ it is $2.1800$; the symbol's determinant, being its square, is $0.0676$ at the first and $4.7524$ at the second, a ratio of $70.3$. The two frequencies are not images of one another, and the asymmetry is the mass term's.
 
 The second-order equations are even. The Klein–Gordon and Dirac determinants are functions of $N$, so their zero sets are invariant under $\omega\mapsto-\omega$. That invariance is what makes a negative-frequency mode a solution of the same equation with the same $|p|$, and it is the kinematic half of the antiparticle statement.
 

@@ -283,11 +283,11 @@ $$
 \{\tilde Z:\tilde Z\tilde Z^{*}=0\}=\{0\}.
 $$
 
-The cone appears one power further out. For the sesquilinear product the left-nested powers are $\tilde Q^{\star k}=\tilde Q(\tilde Q^{*})^{k-1}$, and the nilpotents are the elements of index three: $\tilde\Upsilon^{\star3}=0$ exactly when $\tilde\Upsilon$ is pure with isotropic vector part, which is the parent's nilpotent cone. The nilpotent squares to nothing in the parent and squares to a pure state here:
+The cone appears one power further out. For the sesquilinear product the left-nested powers are $\tilde Q^{\star k}=\tilde Q(\tilde Q^{*})^{k-1}$, and the nilpotents are the elements of index three: $\tilde\Pi_{\mathrm{nil}}^{\star3}=0$ exactly when $\tilde\Pi_{\mathrm{nil}}$ is pure with isotropic vector part, which is the parent's nilpotent cone. The nilpotent squares to nothing in the parent and squares to a pure state here:
 
 $$
-\tilde\Upsilon=\vec e_x+i\vec e_y,\qquad
-\tilde\Upsilon\tilde\Upsilon^{*}=2e_t+2i\vec e_z\ \ (\text{rank one, positive}).
+\tilde\Pi_{\mathrm{nil}}=\vec e_x+i\vec e_y,\qquad
+\tilde\Pi_{\mathrm{nil}}\tilde\Pi_{\mathrm{nil}}^{*}=2e_t+2i\vec e_z\ \ (\text{rank one, positive}).
 $$
 
 The physical reading is a division of labour between two products. The composition product owns the phase, the frequency and the differential calculus; the probability product owns the weight, the state and the rank. A theory that tries to read a phase off the probability product looks for a square root of $-1$ that the product does not possess.
@@ -422,27 +422,27 @@ The boundary. The twelve are the operations of the complex space. A real form ca
 
 ### I.6.m — In the Gauge Band an Idempotent Is Invertible
 
-Read: the equation $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ is relative to the product, so the word *idempotent* names a different set in each band; and in one of them the elements of that set are invertible.
+Read: the equation $\tilde\Pi_{\mathrm{id}}\star\tilde\Pi_{\mathrm{id}}=\tilde\Pi_{\mathrm{id}}$ is relative to the product, so the word *idempotent* names a different set in each band; and in one of them the elements of that set are invertible.
 
 The family is displaced, and the displacement is the reason. For the quaternionic sesquilinear product the idempotents beyond the trivial pair are not the Hermitian ones at all. They are
 
 $$
-\tilde\Pi_d=-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u,\qquad(\vec u,\vec u)=1,
+\tilde\Pi_{\mathrm{id},d}=-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u,\qquad(\vec u,\vec u)=1,
 $$
 
-which is $\tilde\Pi_d^{\natural}\tilde\Pi_d^{*}=\tilde\Pi_d$: its two conjugates coincide, $\tilde\Pi_d^{\natural}=\tilde\Pi_d^{*}=-\tfrac12e_t-\tfrac{\sqrt3}{2}\vec u$, and the square of that element is $\tilde\Pi_d$ itself. The family is written about the point $-\tfrac12e_t$ and not about $\tfrac12e_t$, and it lies in the real quaternion layer $\mathbb{B}_{H}$.
+which is $\tilde\Pi_{\mathrm{id},d}^{\natural}\tilde\Pi_{\mathrm{id},d}^{*}=\tilde\Pi_{\mathrm{id},d}$: its two conjugates coincide, $\tilde\Pi_{\mathrm{id},d}^{\natural}=\tilde\Pi_{\mathrm{id},d}^{*}=-\tfrac12e_t-\tfrac{\sqrt3}{2}\vec u$, and the square of that element is $\tilde\Pi_{\mathrm{id},d}$ itself. The family is written about the point $-\tfrac12e_t$ and not about $\tfrac12e_t$, and it lies in the real quaternion layer $\mathbb{B}_{H}$.
 
 Its elements are invertible in the algebra. The plain square is the conjugate, not the element itself,
 
 $$
-\tilde\Pi_d^{2}=-\tfrac12e_t-\tfrac{\sqrt3}{2}\vec u=\tilde\Pi_d^{\natural},
+\tilde\Pi_{\mathrm{id},d}^{2}=-\tfrac12e_t-\tfrac{\sqrt3}{2}\vec u=\tilde\Pi_{\mathrm{id},d}^{\natural},
 \qquad
-\tilde\Pi_d\tilde\Pi_d^{\natural}=e_t,
+\tilde\Pi_{\mathrm{id},d}\tilde\Pi_{\mathrm{id},d}^{\natural}=e_t,
 $$
 
-so $\tilde\Pi_d$ has inverse $\tilde\Pi_d^{\natural}$ and is not a zero divisor. The physical reading is the one this entry is built to give: an idempotent is an outcome only in the plain band, and the implication *idempotent, therefore irreversible* is a statement about that band and not about the algebra. In the gauge band the projection is reversible, and a reader who carries the vocabulary across the bands carries a falsehood with it.
+so $\tilde\Pi_{\mathrm{id},d}$ has inverse $\tilde\Pi_{\mathrm{id},d}^{\natural}$ and is not a zero divisor. The physical reading is the one this entry is built to give: an idempotent is an outcome only in the plain band, and the implication *idempotent, therefore irreversible* is a statement about that band and not about the algebra. In the gauge band the projection is reversible, and a reader who carries the vocabulary across the bands carries a falsehood with it.
 
-The pair reading fails in the same band. The complement $e_t-\tilde\Pi_d=\tfrac32e_t-\tfrac{\sqrt3}{2}\vec u$ is not an idempotent of that product, so there is no complete orthogonal pair and no resolution of the unit into two outcomes. Only the plain band and the general plain sesquilinear band carry a complementation that preserves their family, which is why the two-outcome reading is made in I.6.b and I.6.d and nowhere else.
+The pair reading fails in the same band. The complement $e_t-\tilde\Pi_{\mathrm{id},d}=\tfrac32e_t-\tfrac{\sqrt3}{2}\vec u$ is not an idempotent of that product, so there is no complete orthogonal pair and no resolution of the unit into two outcomes. Only the plain band and the general plain sesquilinear band carry a complementation that preserves their family, which is why the two-outcome reading is made in I.6.b and I.6.d and nowhere else.
 
 The boundary. The statement is a statement about solution sets, and it is why the twelve rows of the root table cannot be read by one vocabulary. It derives no gauge theory and says nothing about whether a physical projection may be reversible; it says that in this band the algebra does not force the question.
 

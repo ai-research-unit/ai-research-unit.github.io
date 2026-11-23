@@ -376,7 +376,7 @@ The one-sided operators.
 | $\Sigma_{11}$ | $4$ | $\lambda_+,\lambda_-$, each twice | diagonal | $\mathbb{B}$ |
 | $\Sigma_{10}$ | $4$ | $Q_t$, algebraic multiplicity $4$ | diagonal on the scalar line, $J_2\oplus J_2$ on the Jordan line | $\mathbb{B}$ |
 | $\Sigma_{01}$ | $2$ | $c,0$, multiplicities $2,2$ | diagonal | the isotropic plane $\tilde Q\mathbb{B}$ |
-| $\Sigma_{00}$ | $2$ | $0$, algebraic multiplicity $4$ | $J_2(0)\oplus J_2(0)$ | $\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_+$ |
+| $\Sigma_{00}$ | $2$ | $0$, algebraic multiplicity $4$ | $J_2(0)\oplus J_2(0)$ | $\mathbb{C}\tilde\pi_{\mathrm{nil}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ |
 
 The two-sided operators.
 
@@ -385,7 +385,7 @@ The two-sided operators.
 | $\Sigma_{11}$ | $4$ | $\lambda_i\bar\lambda_j$ | semisimple | $\mathbb{B}$ |
 | $\Sigma_{10}$ | $4$ | $\lvert Q_t\rvert^{2}$, multiplicity $4$ | diagonal on the scalar line, $J_3\oplus J_1$ on the Jordan line | $\mathbb{B}$ |
 | $\Sigma_{01}$ | $1$ | $\lvert c\rvert^{2},0$ | diagonal | the null line $\mathbb{C}P$ |
-| $\Sigma_{00}$ | $1$ | $0$ | $J_2(0)\oplus0\oplus0$ | the null line $\mathbb{C}\tilde\Pi_+$ |
+| $\Sigma_{00}$ | $1$ | $0$ | $J_2(0)\oplus0\oplus0$ | the null line $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ |
 
 **Reading the two tables.** Along a row, the rank drops when the norm vanishes and the Jordan type leaves the semisimple case when the vector part squares to zero. Along a column, the eigenvalues become the four products $\lambda_i\bar\lambda_j$: the scale survives as its square, the phase cancels, and the pair of eigenvalues of the element becomes a quartet on the regular sectors and a doubled pair on the degenerate ones. The four rows are the four regimes of one action, and the two tables are the whole of the sector theory of the operators.
 
@@ -418,20 +418,20 @@ The reading. A frame is an element modulo a phase, and a change of frame is the 
 
 ### I.13.b — The Operator Is a Measurement
 
-The object. For an idempotent $\tilde\Pi$ the two-sided operator
+The object. For an idempotent $\tilde\Pi_{\mathrm{id}}$ the two-sided operator
 
 $$
-T_{\tilde\Pi,\tilde\Pi}(\tilde X)=\tilde\Pi\tilde X\tilde\Pi
+T_{\tilde\Pi_{\mathrm{id}},\tilde\Pi_{\mathrm{id}}}(\tilde X)=\tilde\Pi_{\mathrm{id}}\tilde X\tilde\Pi_{\mathrm{id}}
 $$
 
-has rank one and image the single line $\mathbb{C}\tilde\Pi$ on the cone.
+has rank one and image the single line $\mathbb{C}\tilde\Pi_{\mathrm{id}}$ on the cone.
 
-The warrant. On the sector $\Sigma_{01}$ the element is $\tilde\Pi$ itself, the rank is one by the table of §*The Sectors of an Operator*, and the image is the line spanned by the idempotent. The square of the operator is itself, $T_{\tilde\Pi,\tilde\Pi}^{2}=T_{\tilde\Pi^{2},\tilde\Pi^{2}}=T_{\tilde\Pi,\tilde\Pi}$, so it is a projection of the operator space onto a one-dimensional image.
+The warrant. On the sector $\Sigma_{01}$ the element is $\tilde\Pi_{\mathrm{id}}$ itself, the rank is one by the table of §*The Sectors of an Operator*, and the image is the line spanned by the idempotent. The square of the operator is itself, $T_{\tilde\Pi_{\mathrm{id}},\tilde\Pi_{\mathrm{id}}}^{2}=T_{\tilde\Pi_{\mathrm{id}}^{2},\tilde\Pi_{\mathrm{id}}^{2}}=T_{\tilde\Pi_{\mathrm{id}},\tilde\Pi_{\mathrm{id}}}$, so it is a projection of the operator space onto a one-dimensional image.
 
 The reading. A measurement of a sharp effect collapses the algebra to a single ray, and the collapse is a rank drop from four to one. The two outcomes of a complete measurement give two such operators, and their sum
 
 $$
-\tilde X\longmapsto\tilde\Pi\tilde X\tilde\Pi+\tilde\Pi_{\perp}\tilde X\tilde\Pi_{\perp}
+\tilde X\longmapsto\tilde\Pi_{\mathrm{id}}\tilde X\tilde\Pi_{\mathrm{id}}+\tilde\Pi_{\mathrm{id},\perp}\tilde X\tilde\Pi_{\mathrm{id},\perp}
 $$
 
 is again a projection of the operator space, of rank two. That sum is a two-sided operator of length two. The measurement of a complete family is therefore not one product: it is a sum of products, and its length is the number of outcomes. The post-measurement state itself is not supplied by the interval and is not claimed here.
@@ -462,15 +462,15 @@ The reading. The word *chirality* is used in this corpus for the side of an acti
 
 ### I.13.e — The Two Values Are the Two Ideals
 
-The object. For the two idempotents $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ on a real unit axis, the images of the one-sided operators are the two minimal left ideals
+The object. For the two idempotents $\tilde\Pi_{\mathrm{id},\pm}(\vec u)=\tfrac12(e_t\pm i\vec u)$ on a real unit axis, the images of the one-sided operators are the two minimal left ideals
 
 $$
-L_{\tilde\Pi_\pm}(\mathbb{B})=\mathbb{B}\tilde\Pi_\pm=S_\pm,\qquad
+L_{\tilde\Pi_{\mathrm{id},\pm}}(\mathbb{B})=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}=S_\pm,\qquad
 \dim_{\mathbb{C}}S_\pm=2,\qquad
 \mathbb{B}=S_+\oplus S_- .
 $$
 
-The warrant. The image of a left multiplication is the left ideal of the element, and the ideal of a minimal idempotent is minimal. Each has complex dimension two and the two are complementary, since $\tilde\Pi_++\tilde\Pi_-=e_t$ and $\tilde\Pi_+\tilde\Pi_-=0$.
+The warrant. The image of a left multiplication is the left ideal of the element, and the ideal of a minimal idempotent is minimal. Each has complex dimension two and the two are complementary, since $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$ and $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$.
 
 The reading. A value is a space that a projector selects, and the selection is the one-sided operator of that projector; the words are *spinor chirality* for the value and *operator chirality* for the side of the operator that cuts it. A state of a given value is an element of that ideal. The axis is a parameter of the family and not a datum of the algebra, so the two values of this construction are exchanged by a rotation and carry no invariant label. What physics calls left and right must therefore be supplied by an interaction and not by the algebra, which is the standard position and is a theorem here.
 
@@ -602,8 +602,8 @@ One operator, three tasks. A change of frame when the second slot holds the inve
 | the element's eigenvalues | $\lambda_\pm$ | $Q_t\pm iB$ on $\Sigma_{11}$ |
 | the informational sector | $\mathbb{B}_{\Psi}$ | the Hermitian half, $\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |
 | the material sector | $\mathbb{B}_{\Phi}$ | the anti-Hermitian half, $\mathrm{span}_{\mathbb{R}}\{i e_t,\vec e_x,\vec e_y,\vec e_z\}$ |
-| the idempotents | $\tilde\Pi_\pm(\vec u)$ | $\tfrac12(e_t\pm i\vec u)$ on a real unit axis |
-| the minimal left ideals | $S_\pm$ | $\mathbb{B}\tilde\Pi_\pm$, complex dimension $2$ |
+| the idempotents | $\tilde\Pi_{\mathrm{id},\pm}(\vec u)$ | $\tfrac12(e_t\pm i\vec u)$ on a real unit axis |
+| the minimal left ideals | $S_\pm$ | $\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$, complex dimension $2$ |
 | the derivation | $\mathrm{ad}_{\tilde G}$ | $L_{\tilde G}-R_{\tilde G}$ |
 
 ## Further Reading

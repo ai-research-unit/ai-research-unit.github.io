@@ -4,7 +4,7 @@
 
 The double-slit experiment is the minimal experiment in which a quantum amplitude is the **sum of two alternatives**. A particle reaches a screen point by either slit, the two routes contribute two amplitudes, and the intensity at the screen is the squared modulus of their sum. The cross term is the interference pattern; closing one slit removes it. Everything that is strange and everything that is ordinary about quantum amplitudes is visible in this one arrangement.
 
-This article asks what the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ says about the double slit, and what it does not. The read list has already settled the three objects the question depends on. *The Path Integral in Biquaternionic Form* identifies the symbol $i$ of the phase $\exp(i\theta_{\mathrm{act}})$ with the **central scalar imaginary**, places the exponent $\frac{i\,S}{\hbar}$ in the material sector $\mathbb{B}_{\Phi}$, and records that only *relative* phases of paths are observable. *The Schrödinger Equation in Biquaternionic Form* identifies the wave function not with an element of $\mathbb{B}_{\Psi}$ but with a **spinor in a Peirce carrier**, a minimal left ideal here, $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$, and shows that the same central $i$ is the complex structure of that module. *Quantum Physics in Biquaternionic Form* supplies the states, observables, Born rule, and measurement rule for the corresponding qubit. Two further articles of the series carry the geometry the double slit turns out to use: *The Bloch Ball as the Normalised Slice of the Future Light Cone* identifies the state space with a slice of the biquaternion-norm cone, and *Decoherence as Idempotent Projection* describes the destruction of coherence as an algebraic channel. This article assembles these into the canonical interference experiment.
+This article asks what the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ says about the double slit, and what it does not. The read list has already settled the three objects the question depends on. *The Path Integral in Biquaternionic Form* identifies the symbol $i$ of the phase $\exp(i\theta_{\mathrm{act}})$ with the **central scalar imaginary**, places the exponent $\frac{i\,S}{\hbar}$ in the material sector $\mathbb{B}_{\Phi}$, and records that only *relative* phases of paths are observable. *The Schrödinger Equation in Biquaternionic Form* identifies the wave function not with an element of $\mathbb{B}_{\Psi}$ but with a **spinor in a Peirce carrier**, a minimal left ideal here, $\mathbb{B}\tilde\Pi_{\mathrm{id}} \cong \mathbb{C}^2$, and shows that the same central $i$ is the complex structure of that module. *Quantum Physics in Biquaternionic Form* supplies the states, observables, Born rule, and measurement rule for the corresponding qubit. Two further articles of the series carry the geometry the double slit turns out to use: *The Bloch Ball as the Normalised Slice of the Future Light Cone* identifies the state space with a slice of the biquaternion-norm cone, and *Decoherence as Idempotent Projection* describes the destruction of coherence as an algebraic channel. This article assembles these into the canonical interference experiment.
 
 Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
@@ -77,10 +77,10 @@ Two remarks keep this section honest.
 The two slits define a **which-path** degree of freedom with exactly two alternatives. In the framework it is a qubit, and its state is an element of $\mathbb{B}_{\Psi}$. Choose a unit pure real quaternion $\vec{u}$ to name the path axis; the two alternatives are the idempotents
 
 $$
-\tilde\Pi_{1,2}(\vec{u}) = \tfrac12\bigl(e_t \pm i\vec{u}\bigr),
+\tilde\Pi_{\mathrm{id},1,2}(\vec{u}) = \tfrac12\bigl(e_t \pm i\vec{u}\bigr),
 $$
 
-with $\tilde\Pi_1 + \tilde\Pi_2 = e_t$ and $\tilde\Pi_1 \tilde\Pi_2 = 0$. The which-path state is
+with $\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2} = e_t$ and $\tilde\Pi_{\mathrm{id},1} \tilde\Pi_{\mathrm{id},2} = 0$. The which-path state is
 
 $$
 \tilde{Ϛ}_{\Psi} = \tfrac12\bigl(e_t + i\vec s_{\Psi}\bigr), \qquad |\vec s_{\Psi}| \le 1,
@@ -160,12 +160,12 @@ Half-filled fringes and a mixed which-path state are the same fact, and it is a 
 
 The framework describes the destruction of the fringes by the same algebraic operations it uses for any measurement.
 
-**Selective detection.** A projective measurement of the path observable — the Hermitian element whose idempotents are $\tilde\Pi_{1,2}(\vec{u})$ — has the Born probabilities $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12(1 \pm s_\parallel)$, with the trace reading at normalisation and post-measurement states $\tilde{Ϛ}_{\Psi,2} = \tilde\Pi_{1,2}(\vec{u})$. The equatorial component is annihilated: $\vec s_{\Psi,2} = \pm\vec u_s$, so $V = 0$. Whether the particle was recorded at slit one or slit two, the interference is gone.
+**Selective detection.** A projective measurement of the path observable — the Hermitian element whose idempotents are $\tilde\Pi_{\mathrm{id},1,2}(\vec{u})$ — has the Born probabilities $p_\pm = \langle\tilde\Pi_{\mathrm{id},1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1,2}\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12(1 \pm s_\parallel)$, with the trace reading at normalisation and post-measurement states $\tilde{Ϛ}_{\Psi,2} = \tilde\Pi_{\mathrm{id},1,2}(\vec{u})$. The equatorial component is annihilated: $\vec s_{\Psi,2} = \pm\vec u_s$, so $V = 0$. Whether the particle was recorded at slit one or slit two, the interference is gone.
 
 **Non-selective detection.** If the which-path record is not read, the operation is the dephasing channel along $\vec{u}$ of *Decoherence as Idempotent Projection*. At full strength ($p = 1$),
 
 $$
-\tilde{Ϛ}_{\Psi} \;\longmapsto\; p_+\,\tilde\Pi_1(\vec{u}) + p_-\,\tilde\Pi_2(\vec{u}),
+\tilde{Ϛ}_{\Psi} \;\longmapsto\; p_+\,\tilde\Pi_{\mathrm{id},1}(\vec{u}) + p_-\,\tilde\Pi_{\mathrm{id},2}(\vec{u}),
 $$
 
 which preserves the populations and destroys the coherence; again $\vec s_{\Psi,\perp} = 0$ and $V = 0$. At partial strength $p \in (0,1)$ the equatorial component is scaled by $1-p$, so
@@ -179,7 +179,7 @@ a reduced contrast rather than a vanished one. The channel is a contractive, inf
 Two structural points, both inherited and neither resolved here.
 
 - **Which direction is measured is an input.** The path axis $\vec{u}$ is the pointer direction; the decoherence article records that the framework represents the *consequence* of a system–environment coupling — the channel and its fixed subalgebra — but contains no coupling dynamics from which $\vec{u}$ could be derived. The double slit does not change this: the algebra will kill the coherence along any axis one names, and it does not name the axis.
-- **Which outcome is realised is not supplied.** Full dephasing yields the mixture $p_+\tilde\Pi_1 + p_-\tilde\Pi_2$; the *measurement-problem article* shows that the mixture and the single outcome are different objects, and that no change of notation makes the outcome a function of the state. The double slit exhibits both facts at once: the fringes disappear when the paths are distinguished, and the formalism says which record was *made* only probabilistically.
+- **Which outcome is realised is not supplied.** Full dephasing yields the mixture $p_+\tilde\Pi_{\mathrm{id},1} + p_-\tilde\Pi_{\mathrm{id},2}$; the *measurement-problem article* shows that the mixture and the single outcome are different objects, and that no change of notation makes the outcome a function of the state. The double slit exhibits both facts at once: the fringes disappear when the paths are distinguished, and the formalism says which record was *made* only probabilistically.
 
 ## The Phase Root: Central, or Not
 
@@ -218,7 +218,7 @@ The framework's grounds for the central root therefore lie where the Schrödinge
 
 ## Spinor-Valued Routes and Spin-Dependent Fringes
 
-When the two routes can be distinguished by an internal state, the amplitudes are spinors $\tilde{Ξ}_{1}, \tilde{Ξ}_{2} \in \mathbb{B}\tilde\Pi$ and the total amplitude is their sum, $\tilde{Ξ} = \tilde{Ξ}_{1} + \tilde{Ξ}_{2}$. The Schrödinger article's Hermitian norm gives
+When the two routes can be distinguished by an internal state, the amplitudes are spinors $\tilde{Ξ}_{1}, \tilde{Ξ}_{2} \in \mathbb{B}\tilde\Pi_{\mathrm{id}}$ and the total amplitude is their sum, $\tilde{Ξ} = \tilde{Ξ}_{1} + \tilde{Ξ}_{2}$. The Schrödinger article's Hermitian norm gives
 
 $$
 I = 2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ}) = 2\,\mathrm{Sc}(\tilde{Ξ}_{1}^{\dagger}\tilde{Ξ}_{1}) + 2\,\mathrm{Sc}(\tilde{Ξ}_{2}^{\dagger}\tilde{Ξ}_{2}) + 4\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Ξ}_{1}^{\dagger}\tilde{Ξ}_{2}),
@@ -320,18 +320,18 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 | $I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta$ | Two-path intensity |
 | $d, D, \lambda, k_\Phi = 2\pi/\lambda$ | Slit separation, screen distance, wavelength, wavenumber |
 | $\vec{u}$ | Unit pure real quaternion; path (pointer) axis |
-| $\tilde\Pi_{1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$ | Which-path idempotents |
+| $\tilde\Pi_{\mathrm{id},1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$ | Which-path idempotents |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi})$ | Which-path state |
 | $s_\parallel = \vec{u}\cdot\vec s_{\Psi}$, $\vec s_{\Psi,\perp}$ | Polar (predictability) and equatorial (coherence) parts |
 | $V = |\vec s_{\Psi,\perp}| = 2|\rho_{12}|$ | Fringe visibility |
 | $P = |s_\parallel| = |\rho_{11}-\rho_{22}|$ | Path predictability |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-|\vec s_{\Psi}|^2)e_t$ |
 | $V^2 + P^2 = |\vec s_{\Psi}|^2 \le 1$ | Visibility–predictability (duality) bound = cone condition |
-| $\tilde{Ξ} = \tilde{Ξ}_{1} + \tilde{Ξ}_{2} \in \mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ | Spinor-valued two-route amplitude |
+| $\tilde{Ξ} = \tilde{Ξ}_{1} + \tilde{Ξ}_{2} \in \mathbb{B}\tilde\Pi_{\mathrm{id}} \cong \mathbb{C}^2$ | Spinor-valued two-route amplitude |
 | $s$, $2\,\mathrm{Sc}(s^\dagger s)=1$ | Normalised spinor; the phase of the amplitude |
 | $\langle s_1,s_2\rangle_{*} = 2\,\mathrm{Sc}(s_1^\dagger s_2)$ | Module inner product; spin overlap |
 | $\exp(\frac{\vec u\,S}{\hbar})$ | Non-central phase; a spin rotation |
-| $2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ | Born weight at normalisation |
+| $2\langle\tilde\Pi_{\mathrm{id}},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$ | Born weight at normalisation |
 | $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ | The scalar imaginary exchanges the sectors |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

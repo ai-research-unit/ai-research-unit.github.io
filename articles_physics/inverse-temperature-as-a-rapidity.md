@@ -122,7 +122,7 @@ The test of the qualifier is a tilt. Boost along the axis and the additive law h
 
 ### The bound is one point of the boundary
 
-**No finite rapidity gives $\lvert z\rvert=1$, so no finite temperature is zero.** $z=-\tanh\Theta$ is strictly inside $(-1,1)$ for every real $\Theta$, and the boundary is approached only as $\lvert\Theta\rvert\to\infty$. In the state coordinate that boundary is the pure state $\tilde\Pi(-\vec u_\Psi)$; in the temperature coordinate it is $T=0$; in the radius coordinate it is $r=1$.
+**No finite rapidity gives $\lvert z\rvert=1$, so no finite temperature is zero.** $z=-\tanh\Theta$ is strictly inside $(-1,1)$ for every real $\Theta$, and the boundary is approached only as $\lvert\Theta\rvert\to\infty$. In the state coordinate that boundary is the pure state $\tilde\Pi_{\mathrm{id}}(-\vec u_\Psi)$; in the temperature coordinate it is $T=0$; in the radius coordinate it is $r=1$.
 
 The kinematic statement is the same sentence with other words. A velocity is $v=\tanh\theta$, it is strictly below one for every finite $\theta$, and the light-like value is approached only as $\theta\to\infty$. Since $r=\tanh\Theta$ and $v=\tanh\theta$ are the same function of their respective rapidities, the two bounds are one bound: the boundary of the ball is the light cone of the thermal family, and the third law and the speed limit are one statement about the range of a rapidity.
 

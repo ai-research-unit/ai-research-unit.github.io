@@ -154,17 +154,17 @@ the scalar imaginary being central, so that left and right multiplication agree.
 Because $\star^2 = -1$, the dual is a complex structure on the real vector part. On its complexification, described in the paragraph after the next, it has the eigenvalues $\pm i$, and the projectors onto the two eigenspaces are
 
 $$
-\tilde\Pi_{sd,asd} = \tfrac12\left(1 \pm i\,\star\right), \qquad
-\star \tilde\Pi_{sd,asd} = \mp i\,\tilde\Pi_{sd,asd}.
+\tilde\Pi_{\mathrm{id},sd,asd} = \tfrac12\left(1 \pm i\,\star\right), \qquad
+\star \tilde\Pi_{\mathrm{id},sd,asd} = \mp i\,\tilde\Pi_{\mathrm{id},sd,asd}.
 $$
 
 They are idempotent and orthogonal,
 
 $$
-\tilde\Pi_{sd}^2 = \tilde\Pi_{sd}, \qquad \tilde\Pi_{asd}^2 = \tilde\Pi_{asd}, \qquad \tilde\Pi_{sd}\tilde\Pi_{asd} = \tilde\Pi_{asd}\tilde\Pi_{sd} = 0, \qquad \tilde\Pi_{sd} + \tilde\Pi_{asd} = 1,
+\tilde\Pi_{\mathrm{id},sd}^2 = \tilde\Pi_{\mathrm{id},sd}, \qquad \tilde\Pi_{\mathrm{id},asd}^2 = \tilde\Pi_{\mathrm{id},asd}, \qquad \tilde\Pi_{\mathrm{id},sd}\tilde\Pi_{\mathrm{id},asd} = \tilde\Pi_{\mathrm{id},asd}\tilde\Pi_{\mathrm{id},sd} = 0, \qquad \tilde\Pi_{\mathrm{id},sd} + \tilde\Pi_{\mathrm{id},asd} = 1,
 $$
 
-and they decompose the complexified vector part into two three-dimensional complex spaces. Following the companion article's convention, the $\tilde\Pi_{sd}$ space, on which $\star = -i$, is the **self-dual** half, and the $\tilde\Pi_{asd}$ space, on which $\star = +i$, is the **anti-self-dual** half. Each is a copy of the representation $(1,0)$, respectively $(0,1)$, of the Lorentz group.
+and they decompose the complexified vector part into two three-dimensional complex spaces. Following the companion article's convention, the $\tilde\Pi_{\mathrm{id},sd}$ space, on which $\star = -i$, is the **self-dual** half, and the $\tilde\Pi_{\mathrm{id},asd}$ space, on which $\star = +i$, is the **anti-self-dual** half. Each is a copy of the representation $(1,0)$, respectively $(0,1)$, of the Lorentz group.
 
 The subtlety is that the real vector part is already complex, with the scalar imaginary supplying its complex structure. On $\mathbb{B}_{V}$ itself the dual is therefore the scalar $-i$, every element carries that one eigenvalue, and the split is invisible. The complexification that the projectors require is a second, external complexification: one allows coefficients in a new unit, the $i$ of the projectors, which is distinct from the algebra's $i$ in $\star\tilde{F}=-i\tilde{F}$, so that the complexified vector part is $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_{V}$, of complex dimension six. On it the two eigenvalues are $\pm i$, each with eigenspace of complex dimension three, and these are the two halves above. The real field strength is a real form of this six-dimensional space: it is an element of the vector part, and the biquaternion that the framework assigns to it carries the self-dual coordinate. Concretely, with the two combinations
 
@@ -194,7 +194,7 @@ For a general complexified two-form, written as the sum of a self-dual and an an
 
 $$
 \boxed{\;\tilde{F}_{\mathbb{C}} = \tilde{F}_{+} + \tilde{F}_{-}, \qquad
-\tilde{F}_{+} = \tilde\Pi_{sd}\tilde{F}_{\mathbb{C}} = \tfrac12\left(\tilde{F}_{\mathbb{C}} + i\,\star\tilde{F}_{\mathbb{C}}\right), \qquad
+\tilde{F}_{+} = \tilde\Pi_{\mathrm{id},sd}\tilde{F}_{\mathbb{C}} = \tfrac12\left(\tilde{F}_{\mathbb{C}} + i\,\star\tilde{F}_{\mathbb{C}}\right), \qquad
 \tilde{F}_{-} = \tfrac12\left(\tilde{F}_{\mathbb{C}} - i\,\star\tilde{F}_{\mathbb{C}}\right)\;},
 $$
 
@@ -312,7 +312,7 @@ The general statement that these observations point to — that the algebra's ow
 
 A real field strength is never an eigenform of the dual, and the reason is a count. With $\vec E$ and $\vec B$ real, the condition $\vec E\pm ic\vec B=0$ separates into $\vec E=0$ and $\vec B=0$: six real equations on six real components, whose only solution is the zero field. Nullness is a different condition and does not help: $\vec N\cdot\vec N=0$ is one complex equation, met by a real field when $\vec E\cdot\vec B=0$ and $\lvert\vec E\rvert=c\lvert\vec B\rvert$, and it neither implies duality purity nor follows from it. Nothing is lost by this, because a real field is always the real part of a duality-pure complex field — $\vec N=\vec E+ic\vec B$ is that field — and that is the step by which the programme's complex solutions return to real physics.
 
-The consequence for the split is a statement about what has been decomposed. The projectors $\tilde\Pi_{sd,asd}$ act on the complexified vector part, so the two halves are the halves of a **complex** field. A real field strength lies in neither half, and the two halves appear separately only after complexification, as the two circular polarizations of a plane wave. The split is therefore a decomposition and never a condition that a real field could be asked to satisfy.
+The consequence for the split is a statement about what has been decomposed. The projectors $\tilde\Pi_{\mathrm{id},sd,asd}$ act on the complexified vector part, so the two halves are the halves of a **complex** field. A real field strength lies in neither half, and the two halves appear separately only after complexification, as the two circular polarizations of a plane wave. The split is therefore a decomposition and never a condition that a real field could be asked to satisfy.
 
 Any scheme that imposes self-duality as an equation must consequently take its field outside the material sector $\mathbb{B}_{\Phi}$. The external algebrodynamical programme does exactly this: its field is $\mathbb{C}$-valued throughout, the duality-purity condition $\vec N=0$ — the anti-self-dual sign in this article's naming — is imposed on that complex field, and the ordinary real field is read off from it by $\Im\vec H=\Re\vec E$, $\Im\vec E=-\Re\vec H$. The Coulomb solution of *The Algebrodynamical Programme* shows the pattern ($\vec E$ real, $\vec H$ purely imaginary) and *The Complex Potential of a Self-Dual Maxwell Field* states the general relation with the potential that generates it. No result of that programme transfers to the corpus's real Maxwell field without this step, and the step is a change of carrier, not a gauge choice.
 
@@ -326,7 +326,7 @@ $$
 \star\tilde{F} = -i\,\tilde{F},
 $$
 
-that is, as minus left multiplication by the scalar imaginary; equivalently $\star = -i$ on the Riemann–Silberstein vector $\vec N = \vec E+ic\vec B$. Since $\star^2 = -1$, its projectors $\tilde\Pi_{sd,asd} = \tfrac12(1\pm i\star)$ decompose the complexified vector part into two three-dimensional complex spaces, the self-dual and anti-self-dual halves, which are the representations $(1,0)$ and $(0,1)$ and are preserved by every Lorentz transformation because the boost acts complex-linearly on $\vec N$. A real field strength is a real form of this space: its field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec N$ carries the self-dual coordinate $\vec N = \vec E+ic\vec B$, on which $\star = -i$, and the anti-self-dual coordinate is the combination $\vec N^* = \vec E-ic\vec B$ carried by $\bar{\tilde{F}}$, on which $\star = +i$.
+that is, as minus left multiplication by the scalar imaginary; equivalently $\star = -i$ on the Riemann–Silberstein vector $\vec N = \vec E+ic\vec B$. Since $\star^2 = -1$, its projectors $\tilde\Pi_{\mathrm{id},sd,asd} = \tfrac12(1\pm i\star)$ decompose the complexified vector part into two three-dimensional complex spaces, the self-dual and anti-self-dual halves, which are the representations $(1,0)$ and $(0,1)$ and are preserved by every Lorentz transformation because the boost acts complex-linearly on $\vec N$. A real field strength is a real form of this space: its field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec N$ carries the self-dual coordinate $\vec N = \vec E+ic\vec B$, on which $\star = -i$, and the anti-self-dual coordinate is the combination $\vec N^* = \vec E-ic\vec B$ carried by $\bar{\tilde{F}}$, on which $\star = +i$.
 
 The split is pure integer spin. The self-dual half is the symmetric square of the defining module, $\mathrm{sym}^2(S)\cong(1,0)$, of complex dimension three; the anti-self-dual half is $\mathrm{sym}^2(\bar{S})\cong(0,1)$. In the algebra's letters the triplet is the adjoint module: the vector part $\mathbb{B}_{V}$ with the weights $+1,0,-1$ of $\mathrm{ad}_{\tilde S_3}$, Casimir $2$, and nilpotent highest-weight vector $\vec e_x+i\vec e_y$. The scalar of the adjoint is the centre, with Casimir $0$, and the two together are $\mathcal{V}_0\oplus\mathcal{V}_2$. Under duality rotation the two halves acquire opposite phases, and for a plane wave they are exactly the two helicities: $\vec E+ic\vec B$ carries helicity $+1$ and $\vec E-ic\vec B$ helicity $-1$. It is a split of the complexified field and not of a physical one: a real field strength is an eigenform of neither half, and is recovered from one of them by taking a real part. The carrier of all of this is the vector part of the algebra, which is not a module over $\mathbb{B}$ but a representation carried by conjugation and by tensor products of the defining module; that distinction is the boundary of the algebra's native spin content, and it is drawn in the final article of the subcategory.
 
@@ -352,7 +352,7 @@ The split is pure integer spin. The self-dual half is the symmetric square of th
 | $\vec N = \vec E+ic\vec B$ | Riemann–Silberstein vector, $\tilde{F}=i\sqrt{\epsilon}\,\vec N$ |
 | $I_1 = \vec E^2-c^2\vec B^2$, $I_2 = \vec E\cdot\vec B$ | The two field invariants, real and imaginary parts of $\vec N\cdot\vec N = I_1+2icI_2$ |
 | $\star$ | Hodge dual, $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$, $\star^2=-1$, $\star\tilde{F}=-i\tilde{F}$ |
-| $\tilde\Pi_{sd,asd} = \tfrac12(1\pm i\star)$ | Projectors onto the self-dual ($\star=-i$) and anti-self-dual ($\star=+i$) halves |
+| $\tilde\Pi_{\mathrm{id},sd,asd} = \tfrac12(1\pm i\star)$ | Projectors onto the self-dual ($\star=-i$) and anti-self-dual ($\star=+i$) halves |
 | $\vec E\pm ic\vec B=0$ | Duality-purity; unavailable to a real field, where it forces $\vec E=\vec B=0$ |
 | $(1,0)$, $(0,1)$ | The two three-dimensional complex Lorentz representations |
 | $S$ | Defining (spinor) module, $\mathrm{sym}^2(S)\cong(1,0)$ |

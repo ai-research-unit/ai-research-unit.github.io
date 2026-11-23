@@ -397,7 +397,7 @@ $$
 
 ## The Peirce Dictionary
 
-**The Peirce basis.** Let $P_0=\tilde\Pi_+$, $P_1=\vec\Upsilon_y$, $P_2=\vec\Upsilon_x$, $P_3=\tilde\Pi_-$, the four Peirce elements of *The Polarized Module of the Biquaternion Algebra*, in the order $(t,x,y,z)$ of the coefficient basis.
+**The Peirce basis.** Let $P_0=\tilde\Pi_{\mathrm{id},+}$, $P_1=\vec\Pi_{\mathrm{nil},y}$, $P_2=\vec\Pi_{\mathrm{nil},x}$, $P_3=\tilde\Pi_{\mathrm{id},-}$, the four Peirce elements of *The Polarized Module of the Biquaternion Algebra*, in the order $(t,x,y,z)$ of the coefficient basis.
 
 **Theorem.** In the Peirce basis the sixteen products $L_{\mathrm{pau},P_i}R_{\mathrm{pau},P_j}$ are exactly the sixteen matrix units, with coefficient $+1$:
 $$

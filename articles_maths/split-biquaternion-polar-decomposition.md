@@ -25,14 +25,14 @@ The article is the fourth and last of the series on the polar decompositions of 
 
 The conventions and the symbols are those of *Split-Biquaternion Algebra* and of the corpus (*Algebra and Element Conventions*); the symbols this article uses are collected in §*Summary of Notation*.
 
-The unit real quaternions are $Sp(1) = \{\tilde q \in \mathbb{H} : \tilde q\tilde q^{\natural} = 1\}$, so the rotor is a pair of them, $\tilde{U} = \tilde u_+\tilde\Pi_1+\tilde u_-\tilde\Pi_2$ with $\tilde u_\pm \in Sp(1)$, in the unit sphere $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$, the pairs of unit real quaternions. The isomorphism $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ and the idempotent decomposition are used throughout. No physics is invoked.
+The unit real quaternions are $Sp(1) = \{\tilde q \in \mathbb{H} : \tilde q\tilde q^{\natural} = 1\}$, so the rotor is a pair of them, $\tilde{U} = \tilde u_+\tilde\Pi_{\mathrm{id},1+}\tilde u_-\tilde\Pi_{\mathrm{id},2}$ with $\tilde u_\pm \in Sp(1)$, in the unit sphere $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$, the pairs of unit real quaternions. The isomorphism $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ and the idempotent decomposition are used throughout. No physics is invoked.
 
 ## The Word as Exponentials
 
 The word $\tilde Q = \lambda\,\exp(j\tau)\,\tilde U$ is a product of three exponentials, the scale, the central hyperbolic phase and the rotor:
 
 $$
-\tilde Q = \exp(\ln\lambda)\,\exp(j\tau)\,\exp\bigl(\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2\bigr) , \qquad \lambda = \sqrt{\varrho_+\varrho_-} > 0 , \qquad \tau = \tfrac{1}{2}\ln\frac{\varrho_+}{\varrho_-} ,
+\tilde Q = \exp(\ln\lambda)\,\exp(j\tau)\,\exp\bigl(\tfrac{\theta_+}{2}\mu_+\tilde\Pi_{\mathrm{id},1} + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_{\mathrm{id},2}\bigr) , \qquad \lambda = \sqrt{\varrho_+\varrho_-} > 0 , \qquad \tau = \tfrac{1}{2}\ln\frac{\varrho_+}{\varrho_-} ,
 $$
 
 with $\varrho_\pm = \lvert \tilde q\pm \tilde q'\rvert$ the idempotent components of the split complex modulus, and $\theta_\pm$ the two rotation angles about the unit pure real quaternions $\mu_\pm$, the two points of the axis sphere $\mathcal{A}$ of unit vectors of $\mathbb{R}^3$.
@@ -41,15 +41,15 @@ with $\varrho_\pm = \lvert \tilde q\pm \tilde q'\rvert$ the idempotent component
 |---|---|---|---|---|---|---|---|---|
 | 1 | $\lambda$ | scale | $1$ | $\exp(\ln\lambda)$ | hyperbolic | $\lambda$ | $\lambda = \sqrt{\varrho_+\varrho_-} > 0$ | $e_t$ |
 | 2 | $\exp(j\tau)$ | central hyperbolic phase | $1$ | $\exp(j\tau)$ | hyperbolic | $\cosh\tau + j\sinh\tau$ | $\tau = \tfrac12\ln(\varrho_+/\varrho_-) \in \mathbb{R}$ | $j$ |
-| 3 | $\tilde U$ | rotor | $3$ | $\exp\bigl(\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2\bigr)$ | trigonometric | $\tilde u_+\tilde\Pi_1 + \tilde u_-\tilde\Pi_2$, with $\tilde u_\pm = \cos\tfrac{\theta_\pm}{2} + \mu_\pm\sin\tfrac{\theta_\pm}{2}$ | $\theta_\pm \in [0,2\pi]$, $\mu_\pm \in \mathcal{A}$ | $\mu_+\tilde\Pi_1 + \mu_-\tilde\Pi_2$ |
+| 3 | $\tilde U$ | rotor | $3$ | $\exp\bigl(\tfrac{\theta_+}{2}\mu_+\tilde\Pi_{\mathrm{id},1} + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_{\mathrm{id},2}\bigr)$ | trigonometric | $\tilde u_+\tilde\Pi_{\mathrm{id},1} + \tilde u_-\tilde\Pi_{\mathrm{id},2}$, with $\tilde u_\pm = \cos\tfrac{\theta_\pm}{2} + \mu_\pm\sin\tfrac{\theta_\pm}{2}$ | $\theta_\pm \in [0,2\pi]$, $\mu_\pm \in \mathcal{A}$ | $\mu_+\tilde\Pi_{\mathrm{id},1} + \mu_-\tilde\Pi_{\mathrm{id},2}$ |
 
-The exponent of the scale is the real number $\ln\lambda$, whose root is $e_t$ of square $+e_t$, the hyperbolic row; the exponent of the phase is $j\tau$, whose root $j$ has square $+e_t$, again the hyperbolic row; the exponent of the rotor is $\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1+\tfrac{\theta_-}{2}\mu_-\tilde\Pi_2$, whose root $\mu_+\tilde\Pi_1+\mu_-\tilde\Pi_2$ has square $-e_t$, the trigonometric row. The three factors commute pairwise — the scale and the phase are central, and the two halves of the rotor act in the two idempotents — so the word is order-free, unlike the biquaternion word, and the three exponentials **amalgamate into one**:
+The exponent of the scale is the real number $\ln\lambda$, whose root is $e_t$ of square $+e_t$, the hyperbolic row; the exponent of the phase is $j\tau$, whose root $j$ has square $+e_t$, again the hyperbolic row; the exponent of the rotor is $\tfrac{\theta_+}{2}\mu_+\tilde\Pi_{\mathrm{id},1+}\tfrac{\theta_-}{2}\mu_-\tilde\Pi_{\mathrm{id},2}$, whose root $\mu_+\tilde\Pi_{\mathrm{id},1+}\mu_-\tilde\Pi_{\mathrm{id},2}$ has square $-e_t$, the trigonometric row. The three factors commute pairwise — the scale and the phase are central, and the two halves of the rotor act in the two idempotents — so the word is order-free, unlike the biquaternion word, and the three exponentials **amalgamate into one**:
 
 $$
-\tilde Q = \exp\bigl(\ln\lambda + j\tau + \tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2\bigr) .
+\tilde Q = \exp\bigl(\ln\lambda + j\tau + \tfrac{\theta_+}{2}\mu_+\tilde\Pi_{\mathrm{id},1} + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_{\mathrm{id},2}\bigr) .
 $$
 
-The two non-central pieces $\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1$ and $\tfrac{\theta_-}{2}\mu_-\tilde\Pi_2$ have vanishing bracket, since each is absorbed by its own idempotent, and there is no boost exponent here to obstruct the sum; this is the commutativity that the biquaternion word lacks. The writing holds on the elements with $\lambda\neq0$; at $\lambda = 0$ the element is a zero divisor and the exponent $\ln\lambda$ does not exist, although the polar decomposition still holds there with a degenerate rotor, as the sections on the domain and on the zero divisors record.
+The two non-central pieces $\tfrac{\theta_+}{2}\mu_+\tilde\Pi_{\mathrm{id},1}$ and $\tfrac{\theta_-}{2}\mu_-\tilde\Pi_{\mathrm{id},2}$ have vanishing bracket, since each is absorbed by its own idempotent, and there is no boost exponent here to obstruct the sum; this is the commutativity that the biquaternion word lacks. The writing holds on the elements with $\lambda\neq0$; at $\lambda = 0$ the element is a zero divisor and the exponent $\ln\lambda$ does not exist, although the polar decomposition still holds there with a degenerate rotor, as the sections on the domain and on the zero divisors record.
 
 ## Why Two Factors
 
@@ -57,7 +57,7 @@ The two non-central pieces $\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1$ and $\tfrac{\th
 
 The centre of $\mathbb{B}_{\mathrm{spl}}$ is $\mathbb{C}_{\mathrm{spl}}$, the split complex scalars: an element commutes with every element of the algebra exactly when it lies in the span of $e_t$ and $j$. A central factor may therefore be moved through the other factors of a product without changing it, and every central direction of the group of invertibles is a free one-parameter factor of any decomposition. The centre is not a field here but the split complex ring, and its group of positive units is
 $$
-\mathbb{C}_{\mathrm{spl},>0} = \left\{\varrho_+\tilde\Pi_1 + \varrho_-\tilde\Pi_2 : \varrho_+,\varrho_->0\right\} \cong \mathbb{R}_{>0}\times\mathbb{R}_{>0} ,
+\mathbb{C}_{\mathrm{spl},>0} = \left\{\varrho_+\tilde\Pi_{\mathrm{id},1} + \varrho_-\tilde\Pi_{\mathrm{id},2} : \varrho_+,\varrho_->0\right\} \cong \mathbb{R}_{>0}\times\mathbb{R}_{>0} ,
 $$
 the product of two rays, the two component magnitudes $\varrho_+$ and $\varrho_-$ of the representation, whose geometric mean and whose half-log-ratio are the scale and the hyperbolic phase. The central group of invertibles therefore contains a non-compact factor, the hyperbola $\exp(j\tau) = \cosh\tau + j\sinh\tau$, and this is the structural difference from the biquaternion algebra: there the centre is the complex field, whose group of invertibles is the compact circle, and the centre contributes the compact phase alone.
 
@@ -66,16 +66,16 @@ the product of two rays, the two component magnitudes $\varrho_+$ and $\varrho_-
 The split complex unit satisfies $j^2 = +1$, so the element
 
 $$
-\tilde\Pi_1 = \tfrac12(1+j), \qquad \tilde\Pi_2 = \tfrac12(1-j)
+\tilde\Pi_{\mathrm{id},1} = \tfrac12(1+j), \qquad \tilde\Pi_{\mathrm{id},2} = \tfrac12(1-j)
 $$
 
-is idempotent: $\tilde\Pi_{1,2}^2 = \tfrac14(1\pm2j+j^2) = \tfrac12(1\pm j) = \tilde\Pi_{1,2}$. They are orthogonal, $\tilde\Pi_1\tilde\Pi_2 = 0$, and they sum to $e_t$. Writing a split biquaternion as $\tilde{Q} = \tilde q + j\tilde q'$ with $\tilde q,\tilde q'\in\mathbb{H}$ the quaternion and split-quaternion parts, its two **idempotent components** are
+is idempotent: $\tilde\Pi_{\mathrm{id},1,2}^2 = \tfrac14(1\pm2j+j^2) = \tfrac12(1\pm j) = \tilde\Pi_{\mathrm{id},1,2}$. They are orthogonal, $\tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2} = 0$, and they sum to $e_t$. Writing a split biquaternion as $\tilde{Q} = \tilde q + j\tilde q'$ with $\tilde q,\tilde q'\in\mathbb{H}$ the quaternion and split-quaternion parts, its two **idempotent components** are
 
 $$
-\tilde{Q}_+ = \tilde{Q}\,\tilde\Pi_1 = \tilde\Pi_1\left(\tilde q+\tilde q'\right), \qquad \tilde{Q}_- = \tilde{Q}\,\tilde\Pi_2 = \tilde\Pi_2\left(\tilde q-\tilde q'\right),
+\tilde{Q}_+ = \tilde{Q}\,\tilde\Pi_{\mathrm{id},1} = \tilde\Pi_{\mathrm{id},1}\left(\tilde q+\tilde q'\right), \qquad \tilde{Q}_- = \tilde{Q}\,\tilde\Pi_{\mathrm{id},2} = \tilde\Pi_{\mathrm{id},2}\left(\tilde q-\tilde q'\right),
 $$
 
-and the element is recovered from them by $\tilde{Q} = \tilde{Q}_+ + \tilde{Q}_-$, since $\tilde\Pi_1+\tilde\Pi_2 = e_t$. The map $\tilde{Q}\mapsto(\tilde{Q}_+,\tilde{Q}_-)$ is the algebra isomorphism $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ of the corpus, and the two components are the two copies. Multiplication is componentwise, so every algebraic question about a split biquaternion is a question about the pair. This split is the counterpart of the Hermitian and anti-Hermitian halves of the biquaternion algebra: there the algebra is split by the involution ${}^{*}$ into the fixed and the anti-fixed space, here by the central idempotents into two two-sided ideals, and the involution ${}^{*}$ is what exchanges the two halves.
+and the element is recovered from them by $\tilde{Q} = \tilde{Q}_+ + \tilde{Q}_-$, since $\tilde\Pi_{\mathrm{id},1+}\tilde\Pi_{\mathrm{id},2} = e_t$. The map $\tilde{Q}\mapsto(\tilde{Q}_+,\tilde{Q}_-)$ is the algebra isomorphism $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ of the corpus, and the two components are the two copies. Multiplication is componentwise, so every algebraic question about a split biquaternion is a question about the pair. This split is the counterpart of the Hermitian and anti-Hermitian halves of the biquaternion algebra: there the algebra is split by the involution ${}^{*}$ into the fixed and the anti-fixed space, here by the central idempotents into two two-sided ideals, and the involution ${}^{*}$ is what exchanges the two halves.
 
 ### The Split-Biquaternion Norm and the Zero Divisors
 
@@ -88,7 +88,7 @@ $$
 a split complex number, central and multiplicative. In the component form,
 
 $$
-{\langle\tilde{Q}\rangle_{\natural}}_+\tilde\Pi_1 + {\langle\tilde{Q}\rangle_{\natural}}_-\tilde\Pi_2 , \qquad {\langle\tilde{Q}\rangle_{\natural}}_{\pm} = \left|\tilde{Q}_{\pm}\right|^2 = \left|\tilde q\pm \tilde q'\right|^2 ,
+{\langle\tilde{Q}\rangle_{\natural}}_+\tilde\Pi_{\mathrm{id},1} + {\langle\tilde{Q}\rangle_{\natural}}_-\tilde\Pi_{\mathrm{id},2} , \qquad {\langle\tilde{Q}\rangle_{\natural}}_{\pm} = \left|\tilde{Q}_{\pm}\right|^2 = \left|\tilde q\pm \tilde q'\right|^2 ,
 $$
 
 where the last quantities are the ordinary quaternion norms of the two components; this is the identity
@@ -105,7 +105,7 @@ $$
 
 and the split-biquaternion norm does not detect the zero divisors. This is the sharpest structural difference from the biquaternion algebra, where the norm is complex and vanishes on a cone of codimension two, and it is the reason the polar decomposition of this article has no null cone to fail on.
 
-The zero divisors are instead the elements with a vanishing idempotent component. If $\tilde{Q}_+ = 0$ and $\tilde{Q}\neq0$ then $\tilde{Q} = \tilde{Q}_-$ is annihilated on the right by $\tilde\Pi_1$, since $\tilde{Q}\tilde\Pi_1 = \tilde{Q}_+\tilde\Pi_1 = 0$; and dually for $\tilde{Q}_- = 0$. The invertible elements are exactly those with both components nonzero, and the group of invertibles is
+The zero divisors are instead the elements with a vanishing idempotent component. If $\tilde{Q}_+ = 0$ and $\tilde{Q}\neq0$ then $\tilde{Q} = \tilde{Q}_-$ is annihilated on the right by $\tilde\Pi_{\mathrm{id},1}$, since $\tilde{Q}\tilde\Pi_{\mathrm{id},1} = \tilde{Q}_+\tilde\Pi_{\mathrm{id},1} = 0$; and dually for $\tilde{Q}_- = 0$. The invertible elements are exactly those with both components nonzero, and the group of invertibles is
 
 $$
 {\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times}\times\mathbb{H}^{\times} \cong \left(\mathbb{R}_{>0}\times Sp(1)\right)^2 ,
@@ -125,7 +125,7 @@ and the last form exhibits the group as a central non-compact factor times a com
 $$
 \mathbb{C}_{\mathrm{spl},>0}\times\left(\mathrm{Sp}(1)\times\mathrm{Sp}(1)\right)\longrightarrow{\mathbb{B}_{\mathrm{spl}}}^{\times} ,
 $$
-and it is a bijection, not merely a factorisation of manifolds: if $M_{\mathrm{mod}}\tilde{U} = M_{\mathrm{mod}}'\tilde{U}'$ then $M_{\mathrm{mod}}^{-1}M_{\mathrm{mod}}' = \tilde{U}\tilde{U}'^{-1}$ lies in the intersection of $\mathbb{C}_{\mathrm{spl},>0}$ with the unit sphere, which is $\{e_t\}$ — a central element $\varrho_+\tilde\Pi_1 + \varrho_-\tilde\Pi_2$ has norm $\varrho_+^2\tilde\Pi_1 + \varrho_-^2\tilde\Pi_2$, equal to $e_t$ with non-negative components only when $\varrho_+ = \varrho_- = 1$ — so that $M_{\mathrm{mod}} = M_{\mathrm{mod}}'$ and $\tilde{U} = \tilde{U}'$. This is the point at which the split biquaternion case is simpler than the biquaternion case, where the corresponding multiplication map on $\mathbb{C}^*\times SL(2,\mathbb{C})$ is two-to-one, the two preimages differing by the sign of the modulus and of the $*$-unitary factor, and the branch $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ is what removes the doubling.
+and it is a bijection, not merely a factorisation of manifolds: if $M_{\mathrm{mod}}\tilde{U} = M_{\mathrm{mod}}'\tilde{U}'$ then $M_{\mathrm{mod}}^{-1}M_{\mathrm{mod}}' = \tilde{U}\tilde{U}'^{-1}$ lies in the intersection of $\mathbb{C}_{\mathrm{spl},>0}$ with the unit sphere, which is $\{e_t\}$ — a central element $\varrho_+\tilde\Pi_{\mathrm{id},1} + \varrho_-\tilde\Pi_{\mathrm{id},2}$ has norm $\varrho_+^2\tilde\Pi_{\mathrm{id},1} + \varrho_-^2\tilde\Pi_{\mathrm{id},2}$, equal to $e_t$ with non-negative components only when $\varrho_+ = \varrho_- = 1$ — so that $M_{\mathrm{mod}} = M_{\mathrm{mod}}'$ and $\tilde{U} = \tilde{U}'$. This is the point at which the split biquaternion case is simpler than the biquaternion case, where the corresponding multiplication map on $\mathbb{C}^*\times SL(2,\mathbb{C})$ is two-to-one, the two preimages differing by the sign of the modulus and of the $*$-unitary factor, and the branch $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ is what removes the doubling.
 
 The Lie algebra of the group of invertibles is $\mathbb{R}^2\oplus\mathrm{SU}(2)\oplus\mathrm{SU}(2)$: the abelian summand $\mathbb{R}^2$ is central and non-compact, and the two $\mathrm{SU}(2)$ summands are compact, one for each half. The correct statement of what the centrality of $\mathbb{R}^2$ implies is not that every non-compact one-parameter subgroup is central, which is false: the generator $e_t + \vec e_x$ of the group of invertibles's Lie algebra has a central component and a non-central one, and the subgroup it generates,
 $$
@@ -159,7 +159,7 @@ M_{\mathrm{mod}}\,\tilde{U} = \tilde{U}\,M_{\mathrm{mod}}
 $$
 exactly, in exact arithmetic because $M_{\mathrm{mod}}$ is central and to machine precision in the recomputation, where over three thousand random elements the largest coefficient difference of the two products was $8.9\times10^{-16}$. The rotor is non-central — its two halves are unit quaternions and the pair acts on the algebra by the two-sided action of the rotations section — but its non-centrality does not obstruct the reordering, because its partner in the word is central. The two halves of the rotor also commute with one another, and exactly so, because they lie in the two ideals:
 $$
-\left(\tilde u_+\tilde\Pi_1\right)\left(\tilde u_-\tilde\Pi_2\right) = \tilde u_+\tilde u_-\,\tilde\Pi_1\tilde\Pi_2 = 0 = \tilde u_-\tilde u_+\,\tilde\Pi_2\tilde\Pi_1 = \left(\tilde u_-\tilde\Pi_2\right)\left(\tilde u_+\tilde\Pi_1\right) .
+\left(\tilde u_+\tilde\Pi_{\mathrm{id},1}\right)\left(\tilde u_-\tilde\Pi_{\mathrm{id},2}\right) = \tilde u_+\tilde u_-\,\tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2} = 0 = \tilde u_-\tilde u_+\,\tilde\Pi_{\mathrm{id},2}\tilde\Pi_{\mathrm{id},1} = \left(\tilde u_-\tilde\Pi_{\mathrm{id},2}\right)\left(\tilde u_+\tilde\Pi_{\mathrm{id},1}\right) .
 $$
 So the representation may be written in any order of its three commuting exponentials — the scale, the hyperbolic phase and the rotor — and the rotor may be written as the product of its halves in either order. The condition that makes a word order-free is not that every factor be central but that the factors commute pairwise, and here they do. This is the second structural consequence of the empty boost slot: the biquaternion word is ordered because one of its factors is Hermitian positive and non-central, and this algebra has no such factor.
 
@@ -177,7 +177,7 @@ $$
 Both components of the split-biquaternion norm are non-negative reals, so both square roots exist and are the unique non-negative ones, and the modulus is
 
 $$
-M_{\mathrm{mod}} = \varrho_+\tilde\Pi_1 + \varrho_-\tilde\Pi_2 = \tfrac12\left(\varrho_++\varrho_-\right) + \tfrac12\left(\varrho_+-\varrho_-\right)j ,
+M_{\mathrm{mod}} = \varrho_+\tilde\Pi_{\mathrm{id},1} + \varrho_-\tilde\Pi_{\mathrm{id},2} = \tfrac12\left(\varrho_++\varrho_-\right) + \tfrac12\left(\varrho_+-\varrho_-\right)j ,
 $$
 
 whose square is the split-biquaternion norm, $M_{\mathrm{mod}}^2 = \langle\tilde{Q}\rangle_{\natural}$, by construction.
@@ -217,7 +217,7 @@ $$
 so that
 
 $$
-\lambda\,\exp(j\tau) = \lambda\left(\cosh\tau + j\sinh\tau\right) = \varrho_+\tilde\Pi_1 + \varrho_-\tilde\Pi_2 = M_{\mathrm{mod}} ,
+\lambda\,\exp(j\tau) = \lambda\left(\cosh\tau + j\sinh\tau\right) = \varrho_+\tilde\Pi_{\mathrm{id},1} + \varrho_-\tilde\Pi_{\mathrm{id},2} = M_{\mathrm{mod}} ,
 $$
 
 by the identities $\lambda\cosh\tau = \tfrac12(\varrho_++\varrho_-)$ and $\lambda\sinh\tau = \tfrac12(\varrho_+-\varrho_-)$, which are immediate from the definitions. The pair $(\lambda,\tau)$ is determined by $M_{\mathrm{mod}}$ and determines it, and the map is a group isomorphism
@@ -237,7 +237,7 @@ Both factors of the modulus are central, and the second is not compact. In the b
 The phase factor is the hyperbola rather than the circle, and in components it is a pair of reciprocal dilations:
 
 $$
-\exp(j\tau) = \cosh\tau + j\sinh\tau = \exp(\tau)\tilde\Pi_1 + \exp(-\tau)\tilde\Pi_2 ,
+\exp(j\tau) = \cosh\tau + j\sinh\tau = \exp(\tau)\tilde\Pi_{\mathrm{id},1} + \exp(-\tau)\tilde\Pi_{\mathrm{id},2} ,
 $$
 
 so the hyperbolic phase multiplies one half by $\exp(\tau)$ and the other by $\exp(-\tau)$, while the scale multiplies both halves by the same $\lambda$. The two factors of the modulus are therefore the two independent dilations of the two halves, and the factorisation of $M_{\mathrm{mod}}$ into a scale and a phase is the statement that an arbitrary pair of positive dilations is a common dilation times a reciprocal pair. The hyperbolic phase is the algebra's boost-like one-parameter group: it is one-dimensional and non-compact, it acts on the whole algebra by dilation of the two halves, and because it is central it produces no second-order effect of the kind a non-central boost produces. The Thomas-Wigner rotation of the biquaternion case requires two non-commuting non-central boosts, and this algebra has no non-central non-compact factor to supply them.
@@ -255,10 +255,10 @@ $$
 defined when the corresponding component of $\tilde{Q}$ is nonzero, and of quaternion norm one, since $|\tilde q\pm \tilde q'| = \varrho_\pm$. Collecting them in the algebra,
 
 $$
-\tilde{U} = \tilde u_+\tilde\Pi_1 + \tilde u_-\tilde\Pi_2 ,
+\tilde{U} = \tilde u_+\tilde\Pi_{\mathrm{id},1} + \tilde u_-\tilde\Pi_{\mathrm{id},2} ,
 $$
 
-which is an element of the unit sphere: $\langle\tilde{U}\rangle_{\natural} = |\tilde u_+|^2\tilde\Pi_1 + |\tilde u_-|^2\tilde\Pi_2 = \tilde\Pi_1 + \tilde\Pi_2 = e_t$, and every element of the unit sphere arises this way, so
+which is an element of the unit sphere: $\langle\tilde{U}\rangle_{\natural} = |\tilde u_+|^2\tilde\Pi_{\mathrm{id},1} + |\tilde u_-|^2\tilde\Pi_{\mathrm{id},2} = \tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2} = e_t$, and every element of the unit sphere arises this way, so
 
 $$
 \left\{\tilde{U} : \langle\tilde{U}\rangle_{\natural} = e_t\right\} = \mathrm{Sp}(1)\times\mathrm{Sp}(1) ,
@@ -279,10 +279,10 @@ $$
 with $\mu_\pm$ a unit pure real quaternion; the rotation angle is unique, the axis is unique whenever $\sin\tfrac{\theta_\pm}{2}\neq0$, and the data degenerate exactly at the two central points $\tilde u_\pm = \pm e_t$, where the axis is arbitrary and the rotation angle is $0$ or $2\pi$. In the algebra the same statement reads
 
 $$
-\tilde{U} = \exp\left(\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2\right) ,
+\tilde{U} = \exp\left(\tfrac{\theta_+}{2}\mu_+\tilde\Pi_{\mathrm{id},1} + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_{\mathrm{id},2}\right) ,
 $$
 
-and the argument is an element of the Lie algebra of the group of invertibles: the rotor is the exponential of an element of the compact part, and with the modulus it makes the polar decomposition a single exponential, as the section on the exponential form shows. The two rotation angles are real, unlike the complex angle of the biquaternion Hamilton form; the angle data of the rotor is a pair of real numbers and not a split complex number. The axis of each half is a unit pure quaternion, so $\mu_+\tilde\Pi_1 + \mu_-\tilde\Pi_2$ is a root of $-e_t$ in the algebra, and the axes of the rotor are exactly the four-dimensional family $\mathcal{A}\times\mathcal{A}$ classified in *Split-Biquaternion Roots of Minus One*. Over three thousand random rotors the reconstruction $\tilde{U} = \exp(\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2)$ had largest coefficient residual $4.3\times10^{-15}$.
+and the argument is an element of the Lie algebra of the group of invertibles: the rotor is the exponential of an element of the compact part, and with the modulus it makes the polar decomposition a single exponential, as the section on the exponential form shows. The two rotation angles are real, unlike the complex angle of the biquaternion Hamilton form; the angle data of the rotor is a pair of real numbers and not a split complex number. The axis of each half is a unit pure quaternion, so $\mu_+\tilde\Pi_{\mathrm{id},1} + \mu_-\tilde\Pi_{\mathrm{id},2}$ is a root of $-e_t$ in the algebra, and the axes of the rotor are exactly the four-dimensional family $\mathcal{A}\times\mathcal{A}$ classified in *Split-Biquaternion Roots of Minus One*. Over three thousand random rotors the reconstruction $\tilde{U} = \exp(\tfrac{\theta_+}{2}\mu_+\tilde\Pi_{\mathrm{id},1} + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_{\mathrm{id},2})$ had largest coefficient residual $4.3\times10^{-15}$.
 
 ### The Rotor Is the Compact Factor
 
@@ -310,23 +310,23 @@ and the modulus $M_{\mathrm{mod}}$ is unique: it is the componentwise non-negati
 
 ### Existence
 
-For any $\tilde{Q}$, put $\varrho_\pm = |\tilde q\pm \tilde q'|$ and $M_{\mathrm{mod}} = \varrho_+\tilde\Pi_1+\varrho_-\tilde\Pi_2$, and define $\tilde{U}$ by
+For any $\tilde{Q}$, put $\varrho_\pm = |\tilde q\pm \tilde q'|$ and $M_{\mathrm{mod}} = \varrho_+\tilde\Pi_{\mathrm{id},1+}\varrho_-\tilde\Pi_{\mathrm{id},2}$, and define $\tilde{U}$ by
 
 $$
 \tilde u_\pm = \frac{\tilde q\pm \tilde q'}{\varrho_\pm} \quad\text{when } \varrho_\pm\neq0, \qquad \tilde u_\pm\ \text{arbitrary in } Sp(1) \text{ otherwise},
 $$
 
-with the sign convention $\tilde q+\tilde q'$ for $\tilde u_+$ and $\tilde q-\tilde q'$ for $\tilde u_-$. Then, using $\tilde\Pi_1^2 = \tilde\Pi_1$, $\tilde\Pi_2^2 = \tilde\Pi_2$ and $\tilde\Pi_1\tilde\Pi_2 = \tilde\Pi_2\tilde\Pi_1 = 0$,
+with the sign convention $\tilde q+\tilde q'$ for $\tilde u_+$ and $\tilde q-\tilde q'$ for $\tilde u_-$. Then, using $\tilde\Pi_{\mathrm{id},1}^2 = \tilde\Pi_{\mathrm{id},1}$, $\tilde\Pi_{\mathrm{id},2}^2 = \tilde\Pi_{\mathrm{id},2}$ and $\tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2} = \tilde\Pi_{\mathrm{id},2}\tilde\Pi_{\mathrm{id},1} = 0$,
 
 $$
-M_{\mathrm{mod}}\tilde{U} = \left(\varrho_+\tilde\Pi_1+\varrho_-\tilde\Pi_2\right)\left(\tilde u_+\tilde\Pi_1+\tilde u_-\tilde\Pi_2\right) = \varrho_+\tilde u_+\tilde\Pi_1 + \varrho_-\tilde u_-\tilde\Pi_2 = \left(\tilde q+\tilde q'\right)\tilde\Pi_1 + \left(\tilde q-\tilde q'\right)\tilde\Pi_2 = \tilde{Q},
+M_{\mathrm{mod}}\tilde{U} = \left(\varrho_+\tilde\Pi_{\mathrm{id},1+}\varrho_-\tilde\Pi_{\mathrm{id},2}\right)\left(\tilde u_+\tilde\Pi_{\mathrm{id},1+}\tilde u_-\tilde\Pi_{\mathrm{id},2}\right) = \varrho_+\tilde u_+\tilde\Pi_{\mathrm{id},1} + \varrho_-\tilde u_-\tilde\Pi_{\mathrm{id},2} = \left(\tilde q+\tilde q'\right)\tilde\Pi_{\mathrm{id},1} + \left(\tilde q-\tilde q'\right)\tilde\Pi_{\mathrm{id},2} = \tilde{Q},
 $$
 
 which is the claim. The verification was also carried out numerically on two thousand random elements, with worst defect $8.9\times10^{-16}$ in the reconstruction and $2.1\times10^{-14}$ in the identity ${\langle\tilde{Q}\rangle_{\natural}}_\pm = \varrho_\pm^2$.
 
 ### Uniqueness
 
-The modulus is unique because each $\varrho_\pm$ is the unique non-negative square root of the non-negative real ${\langle\tilde{Q}\rangle_{\natural}}_\pm$, and $\langle\tilde{Q}\rangle_{\natural}$ is determined by $\tilde{Q}$. The rotor is unique when both components of $\tilde{Q}$ are nonzero, because then both $\varrho_\pm$ are nonzero and $\tilde u_\pm$ is forced to be $(\tilde q\pm \tilde q')/\varrho_\pm$. When $\tilde{Q}_+ = 0$, the element carries no information about $\tilde u_+$, and $\tilde{U}$ is determined only in its $\tilde\Pi_2$ factor; the verification of the non-uniqueness is the computation $M_{\mathrm{mod}}\tilde{U} = \varrho_-\tilde u_-\tilde\Pi_2 = \tilde{Q}$ for every choice of $\tilde u_+$, which was checked numerically for three different choices on the zero divisor $\tfrac12(1+\vec e_x)(1+j)$.
+The modulus is unique because each $\varrho_\pm$ is the unique non-negative square root of the non-negative real ${\langle\tilde{Q}\rangle_{\natural}}_\pm$, and $\langle\tilde{Q}\rangle_{\natural}$ is determined by $\tilde{Q}$. The rotor is unique when both components of $\tilde{Q}$ are nonzero, because then both $\varrho_\pm$ are nonzero and $\tilde u_\pm$ is forced to be $(\tilde q\pm \tilde q')/\varrho_\pm$. When $\tilde{Q}_+ = 0$, the element carries no information about $\tilde u_+$, and $\tilde{U}$ is determined only in its $\tilde\Pi_{\mathrm{id},2}$ factor; the verification of the non-uniqueness is the computation $M_{\mathrm{mod}}\tilde{U} = \varrho_-\tilde u_-\tilde\Pi_{\mathrm{id},2} = \tilde{Q}$ for every choice of $\tilde u_+$, which was checked numerically for three different choices on the zero divisor $\tfrac12(1+\vec e_x)(1+j)$.
 
 ### The Domain and the Zero Divisors
 
@@ -340,9 +340,9 @@ Given $\tilde{Q} = \tilde q + j\tilde q'$:
 
 1. Form the two quaternion parts $\tilde q+\tilde q'$ and $\tilde q-\tilde q'$.
 2. Compute the two non-negative real moduli $\varrho_+ = |\tilde q+\tilde q'|$ and $\varrho_- = |\tilde q-\tilde q'|$.
-3. The modulus is $M_{\mathrm{mod}} = \varrho_+\tilde\Pi_1 + \varrho_-\tilde\Pi_2 = \tfrac12(\varrho_++\varrho_-) + \tfrac12(\varrho_+-\varrho_-)j$, and it satisfies $M_{\mathrm{mod}}^2 = \langle\tilde{Q}\rangle_{\natural}$.
+3. The modulus is $M_{\mathrm{mod}} = \varrho_+\tilde\Pi_{\mathrm{id},1} + \varrho_-\tilde\Pi_{\mathrm{id},2} = \tfrac12(\varrho_++\varrho_-) + \tfrac12(\varrho_+-\varrho_-)j$, and it satisfies $M_{\mathrm{mod}}^2 = \langle\tilde{Q}\rangle_{\natural}$.
 4. When both moduli are positive, the scale is $\lambda = \sqrt{\varrho_+\varrho_-}$ and the hyperbolic phase angle is $\tau = \tfrac12\ln(\varrho_+/\varrho_-)$.
-5. The rotor is $\tilde{U} = \tilde u_+\tilde\Pi_1 + \tilde u_-\tilde\Pi_2$ with $\tilde u_\pm = (\tilde q\pm \tilde q')/\varrho_\pm$ when $\varrho_\pm\neq0$, and any unit quaternion in the factors whose modulus vanishes.
+5. The rotor is $\tilde{U} = \tilde u_+\tilde\Pi_{\mathrm{id},1} + \tilde u_-\tilde\Pi_{\mathrm{id},2}$ with $\tilde u_\pm = (\tilde q\pm \tilde q')/\varrho_\pm$ when $\varrho_\pm\neq0$, and any unit quaternion in the factors whose modulus vanishes.
 
 No branch choice is required at any step, and the first four steps determine the output uniquely; only step five leaves the freedom described in the theorem, and only on the zero divisors.
 
@@ -382,7 +382,7 @@ $$
 
 and the identities $\lambda\cosh\tau = 2.288245611$, $\lambda\sinh\tau = 0.874032049$ recover the modulus.
 
-The rotor is $\tilde{U} = \tilde u_+\tilde\Pi_1+\tilde u_-\tilde\Pi_2$ with
+The rotor is $\tilde{U} = \tilde u_+\tilde\Pi_{\mathrm{id},1+}\tilde u_-\tilde\Pi_{\mathrm{id},2}$ with
 
 $$
 \tilde u_+ = \frac{3e_t+\vec e_x}{\sqrt{10}} = 0.948683298\,e_t + 0.316227766\,\vec e_x, \qquad \tilde u_- = -\frac{e_t+\vec e_x}{\sqrt{2}} = -0.707106781\,e_t - 0.707106781\,\vec e_x ,
@@ -393,7 +393,7 @@ which is $\tilde{U} = \left(0.120788258 - 0.195439508\,\vec e_x\right) + j\left(
 In exponential form, by the theorem of the section on the exponential form, the same element is
 
 $$
-\tilde{Q} = \exp\left(\ln\lambda + j\tau + \tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2\right) ,
+\tilde{Q} = \exp\left(\ln\lambda + j\tau + \tfrac{\theta_+}{2}\mu_+\tilde\Pi_{\mathrm{id},1} + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_{\mathrm{id},2}\right) ,
 $$
 
 with $\ln\lambda = 0.748933068$, $\tau = 0.402359478$, the rotation angle $\theta_+ = 0.643501108$ about the axis $\mu_+ = \vec e_x$, and the rotation angle $\theta_- = 4.712388980 = \tfrac32\pi$ about the axis $\mu_- = -\vec e_x$; the single exponential reproduces $\tilde{Q}$ to $4.4\times10^{-16}$.
@@ -403,7 +403,7 @@ with $\ln\lambda = 0.748933068$, $\tau = 0.402359478$, the rotation angle $\thet
 Take $\tilde{Q} = j$. Then $\tilde q = 0$ and $\tilde q' = e_t$, so $\tilde q\pm \tilde q' = \pm e_t$, $\varrho_+ = \varrho_- = 1$, $M_{\mathrm{mod}} = e_t$, $\lambda = 1$, $\tau = 0$ and
 
 $$
-\tilde{U} = e_t\tilde\Pi_1 - e_t\tilde\Pi_2 = \tilde\Pi_1 - \tilde\Pi_2 = j ,
+\tilde{U} = e_t\tilde\Pi_{\mathrm{id},1} - e_t\tilde\Pi_{\mathrm{id},2} = \tilde\Pi_{\mathrm{id},1} - \tilde\Pi_{\mathrm{id},2} = j ,
 $$
 
 so the decomposition is $\tilde{Q} = \tilde{U}$: the element is already a rotor, with modulus one, no scale and no phase. This is the analogue of the observation in the biquaternion case that a Lorentz rotor is already in polar form, and here it holds for every element of the unit sphere, because the unit sphere of the algebra is $SU(2)$ itself. The steps of the algorithm reproduce it at once: $\langle\tilde{Q}\rangle_{\natural} = e_t$, $M_{\mathrm{mod}} = e_t$, $\tilde q+\tilde q' = e_t$, $\tilde q-\tilde q' = -e_t$, so $\tilde u_+ = e_t$ and $\tilde u_- = -e_t$.
@@ -434,7 +434,7 @@ which is the exact analogue of the biquaternion scale $\varrho = \sqrt{|\langle\
 The hyperbolic phase is central, non-compact and one-dimensional, and it is the factor that replaces the biquaternion boost. In components it multiplies the two halves by reciprocal factors,
 
 $$
-\exp(j\tau) = \exp(\tau)\tilde\Pi_1 + \exp(-\tau)\tilde\Pi_2 ,
+\exp(j\tau) = \exp(\tau)\tilde\Pi_{\mathrm{id},1} + \exp(-\tau)\tilde\Pi_{\mathrm{id},2} ,
 $$
 
 so it dilates one half by $\exp(\tau)$ and contracts the other by $\exp(-\tau)$; with the scale it completes the pair of independent dilations. It is determined by the ratio of the component moduli, $\tau = \tfrac12\ln(\varrho_+/\varrho_-)$, and it vanishes exactly when the two component moduli are equal, which is the condition $\langle \tilde q,\tilde q'\rangle = 0$ on the quaternion parts. Its non-compactness is the non-compactness of the algebra, and its centrality is why it acts on every element in the same way: a dilation of the halves has no axis to rotate and no sector to single out.
@@ -453,7 +453,7 @@ $$
 \tilde{Q} = \tilde{U} , \qquad \langle\tilde{Q}\rangle_{\natural} = e_t .
 $$
 
-The element is its own rotor: the unit sphere of the algebra is $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ itself, of dimension six, and every element of it is already in polar form. This is the case in which the two factors of the decomposition are one, and it is the case the rotation theory of the companion article uses, in which a rotation of $\mathbb{R}^4$ is written by a pair of unit quaternions alone. The element $j = \tilde\Pi_1 - \tilde\Pi_2$ of the second example above is the least trivial illustration, its two halves being $e_t$ and $-e_t$, and the sign of the second half is the whole of its content.
+The element is its own rotor: the unit sphere of the algebra is $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ itself, of dimension six, and every element of it is already in polar form. This is the case in which the two factors of the decomposition are one, and it is the case the rotation theory of the companion article uses, in which a rotation of $\mathbb{R}^4$ is written by a pair of unit quaternions alone. The element $j = \tilde\Pi_{\mathrm{id},1} - \tilde\Pi_{\mathrm{id},2}$ of the second example above is the least trivial illustration, its two halves being $e_t$ and $-e_t$, and the sign of the second half is the whole of its content.
 
 ### The Central Elements
 
@@ -463,17 +463,17 @@ $$
 \varrho_+ = |a+b|, \qquad \varrho_- = |a-b|, \qquad \tilde u_+ = \operatorname{sgn}(a+b)\,e_t, \qquad \tilde u_- = \operatorname{sgn}(a-b)\,e_t ,
 $$
 
-and the rotor is one of the four central elements $\pm \tilde\Pi_1\pm \tilde\Pi_2$, all of norm $e_t$. The rotor is trivial, $\tilde{U} = e_t$, exactly when $a+b$ and $a-b$ are both positive, and then the element is its modulus alone. The element
+and the rotor is one of the four central elements $\pm \tilde\Pi_{\mathrm{id},1}\pm \tilde\Pi_{\mathrm{id},2}$, all of norm $e_t$. The rotor is trivial, $\tilde{U} = e_t$, exactly when $a+b$ and $a-b$ are both positive, and then the element is its modulus alone. The element
 
 $$
-\tilde{Q} = 2\tilde\Pi_1 + \tilde\Pi_2 = \tfrac32e_t + \tfrac12j
+\tilde{Q} = 2\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2} = \tfrac32e_t + \tfrac12j
 $$
 
 is of this kind: $\varrho_+ = 2$, $\varrho_- = 1$, $M_{\mathrm{mod}} = 1.5 + 0.5j$, $\lambda = \sqrt2 = 1.414213562$, $\tau = \tfrac12\ln2 = 0.346573590$ and $\tilde{U} = e_t$. Its decomposition is by the modulus alone, and it is the sharpest illustration of the empty boost slot: the only non-compact factors of the algebra are central, and this element exhibits one of them at a point where it commutes with everything and does nothing to the rotor.
 
 ### The Real Quaternions
 
-If $\tilde{Q} = \tilde q\in\mathbb{H}$, that is $\tilde q' = 0$, then $\tilde q\pm \tilde q' = \tilde q$, so $\varrho_+ = \varrho_- = |\tilde q|$, $M_{\mathrm{mod}} = |\tilde q|e_t$, $\lambda = |\tilde q|$, $\tau = 0$ and $\tilde{U} = (\tilde q/|\tilde q|)\tilde\Pi_1 + (\tilde q/|\tilde q|)\tilde\Pi_2$, which is the diagonal element $(\tilde u_{\mathrm r},\tilde u_{\mathrm r})$ with $\tilde u_{\mathrm r} = \tilde q/|\tilde q|$. The polar decomposition of a real quaternion is therefore the quaternion polar decomposition itself, with the same unit factor in both halves: the modulus is the real number $|\tilde q|$ written as the central element $|\tilde q|e_t$, and the rotor is the diagonal element $\tilde u_{\mathrm r}\,\tilde\Pi_1 + \tilde u_{\mathrm r}\,\tilde\Pi_2$. The two factors of the present decomposition agree term by term with the two factors of the quaternion polar form of the companion article *Modulus–Unit Polar Decomposition of Quaternions*. The two-sided $SU(2)$ contains the diagonal $\mathrm{Sp}(1)$ as the locus of the real quaternions, and a real quaternion carries no hyperbolic phase, its two component moduli being equal.
+If $\tilde{Q} = \tilde q\in\mathbb{H}$, that is $\tilde q' = 0$, then $\tilde q\pm \tilde q' = \tilde q$, so $\varrho_+ = \varrho_- = |\tilde q|$, $M_{\mathrm{mod}} = |\tilde q|e_t$, $\lambda = |\tilde q|$, $\tau = 0$ and $\tilde{U} = (\tilde q/|\tilde q|)\tilde\Pi_{\mathrm{id},1} + (\tilde q/|\tilde q|)\tilde\Pi_{\mathrm{id},2}$, which is the diagonal element $(\tilde u_{\mathrm r},\tilde u_{\mathrm r})$ with $\tilde u_{\mathrm r} = \tilde q/|\tilde q|$. The polar decomposition of a real quaternion is therefore the quaternion polar decomposition itself, with the same unit factor in both halves: the modulus is the real number $|\tilde q|$ written as the central element $|\tilde q|e_t$, and the rotor is the diagonal element $\tilde u_{\mathrm r}\,\tilde\Pi_{\mathrm{id},1} + \tilde u_{\mathrm r}\,\tilde\Pi_{\mathrm{id},2}$. The two factors of the present decomposition agree term by term with the two factors of the quaternion polar form of the companion article *Modulus–Unit Polar Decomposition of Quaternions*. The two-sided $SU(2)$ contains the diagonal $\mathrm{Sp}(1)$ as the locus of the real quaternions, and a real quaternion carries no hyperbolic phase, its two component moduli being equal.
 
 ### The Zero Divisors
 
@@ -494,10 +494,10 @@ $$
 so that $\tilde q = \tilde q' = \tfrac12(1+\vec e_x)$ and the second idempotent component vanishes: $\tilde q-\tilde q' = 0$. Then
 
 $$
-\varrho_+ = \left|1+\vec e_x\right| = \sqrt2, \qquad \varrho_- = 0, \qquad M_{\mathrm{mod}} = \sqrt2\,\tilde\Pi_1 = 0.707106781 + 0.707106781\,j ,
+\varrho_+ = \left|1+\vec e_x\right| = \sqrt2, \qquad \varrho_- = 0, \qquad M_{\mathrm{mod}} = \sqrt2\,\tilde\Pi_{\mathrm{id},1} = 0.707106781 + 0.707106781\,j ,
 $$
 
-and the rotor has $\tilde u_+ = (1+\vec e_x)/\sqrt2$ in its $\tilde\Pi_1$ factor and an arbitrary unit quaternion in its $\tilde\Pi_2$ factor: for $\tilde u_- = e_t$, $\tilde u_- = \vec e_x$ and $\tilde u_- = 0.6e_t+0.8\vec e_x$ the product $M_{\mathrm{mod}}\tilde{U}$ is the same element $\tilde{Q}$ in all three cases, to $5.6\times10^{-17}$. The element is a zero divisor and not a nilpotent one: its square is $\vec e_x(1+j) = 2\vec e_x\tilde\Pi_1$, since $\left(1+\vec e_x\right)^2 = 2\vec e_x$, and it is the vanishing component of the modulus, not any nilpotency, that makes the rotor free.
+and the rotor has $\tilde u_+ = (1+\vec e_x)/\sqrt2$ in its $\tilde\Pi_{\mathrm{id},1}$ factor and an arbitrary unit quaternion in its $\tilde\Pi_{\mathrm{id},2}$ factor: for $\tilde u_- = e_t$, $\tilde u_- = \vec e_x$ and $\tilde u_- = 0.6e_t+0.8\vec e_x$ the product $M_{\mathrm{mod}}\tilde{U}$ is the same element $\tilde{Q}$ in all three cases, to $5.6\times10^{-17}$. The element is a zero divisor and not a nilpotent one: its square is $\vec e_x(1+j) = 2\vec e_x\tilde\Pi_{\mathrm{id},1}$, since $\left(1+\vec e_x\right)^2 = 2\vec e_x$, and it is the vanishing component of the modulus, not any nilpotency, that makes the rotor free.
 
 ### The Zero Element
 
@@ -512,21 +512,21 @@ The four conjugations act on the pair $(\tilde q,\tilde q')$ as follows: ${}^{\n
 On the polar data the first three act as follows. Quaternion conjugation fixes the modulus — $M_{\mathrm{mod}}$ has real components, so $\bar M_{\mathrm{mod}} = M_{\mathrm{mod}}$ — and inverts each half of the rotor,
 
 $$
-\tilde{Q}^{\natural} = M_{\mathrm{mod}}\,\tilde{U}^{\natural} , \qquad \tilde{U}^{\natural} = \tilde u_+^{-1}\tilde\Pi_1 + \tilde u_-^{-1}\tilde\Pi_2 = \left(\cos\tfrac{\theta_+}{2} - \mu_+\sin\tfrac{\theta_+}{2}\right)\tilde\Pi_1 + \left(\cos\tfrac{\theta_-}{2} - \mu_-\sin\tfrac{\theta_-}{2}\right)\tilde\Pi_2 ,
+\tilde{Q}^{\natural} = M_{\mathrm{mod}}\,\tilde{U}^{\natural} , \qquad \tilde{U}^{\natural} = \tilde u_+^{-1}\tilde\Pi_{\mathrm{id},1} + \tilde u_-^{-1}\tilde\Pi_{\mathrm{id},2} = \left(\cos\tfrac{\theta_+}{2} - \mu_+\sin\tfrac{\theta_+}{2}\right)\tilde\Pi_{\mathrm{id},1} + \left(\cos\tfrac{\theta_-}{2} - \mu_-\sin\tfrac{\theta_-}{2}\right)\tilde\Pi_{\mathrm{id},2} ,
 $$
 
 so it reverses both angles and keeps both axes. The split complex conjugation exchanges the two halves of every factor,
 
 $$
 \boxed{\;
-\bar{\tilde{Q}} = \bar M_{\mathrm{mod}}\bar{\tilde{U}} , \qquad \bar M_{\mathrm{mod}} = \varrho_-\tilde\Pi_1 + \varrho_+\tilde\Pi_2 , \qquad \bar{\tilde{U}} = \tilde u_-\tilde\Pi_1 + \tilde u_+\tilde\Pi_2
+\bar{\tilde{Q}} = \bar M_{\mathrm{mod}}\bar{\tilde{U}} , \qquad \bar M_{\mathrm{mod}} = \varrho_-\tilde\Pi_{\mathrm{id},1} + \varrho_+\tilde\Pi_{\mathrm{id},2} , \qquad \bar{\tilde{U}} = \tilde u_-\tilde\Pi_{\mathrm{id},1} + \tilde u_+\tilde\Pi_{\mathrm{id},2}
 \;},
 $$
 
 so it exchanges the two component moduli, sends $\tau$ to $-\tau$, keeps $\lambda$, and exchanges the halves of the rotor. The Hermitian conjugation does both,
 
 $$
-\tilde{Q}^{*} = \bar M_{\mathrm{mod}}\,\tilde{U}^{*} , \qquad \tilde{U}^{*} = \tilde u_-^{-1}\tilde\Pi_1 + \tilde u_+^{-1}\tilde\Pi_2 ,
+\tilde{Q}^{*} = \bar M_{\mathrm{mod}}\,\tilde{U}^{*} , \qquad \tilde{U}^{*} = \tilde u_-^{-1}\tilde\Pi_{\mathrm{id},1} + \tilde u_+^{-1}\tilde\Pi_{\mathrm{id},2} ,
 $$
 
 reversing both angles and exchanging the halves. Where the biquaternion article records the behaviour of the phase, the boost and the rotor under the same four maps, the data here are correspondingly shorter: the modulus can only have its halves exchanged, and the rotor can only have its halves exchanged or its angles reversed.
@@ -554,7 +554,7 @@ the two differing by $3.086161$ in the largest coefficient. The failure is a pro
 The exponential is computed componentwise, because the algebra is a direct sum:
 
 $$
-\exp\tilde{Q} = \left(\exp\tilde{Q}_+\right)\tilde\Pi_1 + \left(\exp\tilde{Q}_-\right)\tilde\Pi_2 , \qquad \exp\tilde{Q}_\pm = \exp\left(\tilde q\pm \tilde q'\right) ,
+\exp\tilde{Q} = \left(\exp\tilde{Q}_+\right)\tilde\Pi_{\mathrm{id},1} + \left(\exp\tilde{Q}_-\right)\tilde\Pi_{\mathrm{id},2} , \qquad \exp\tilde{Q}_\pm = \exp\left(\tilde q\pm \tilde q'\right) ,
 $$
 
 each component being an ordinary quaternion exponential. Writing $\tilde{Q} = Q_te_t + \vec Q$ with the split complex scalar part $Q_t$ and the vector part $\vec Q = \sum_kQ_k\vec e_k$, the scalar part is central and the vector part satisfies
@@ -594,27 +594,27 @@ $$
 and it is this factor that carries the boost-like direction. A worked instance of the split case, which also shows how little the splitness of $\theta^2$ costs, is
 
 $$
-\vec Q = \vec e_x + j\vec e_x = 2\vec e_x\tilde\Pi_1 , \qquad \theta^2 = 4\tilde\Pi_1 + 0\cdot \tilde\Pi_2 , \qquad \theta = 2\tilde\Pi_1 , \qquad \exp(\vec Q) = \exp(2\vec e_x)\tilde\Pi_1 + \tilde\Pi_2 ,
+\vec Q = \vec e_x + j\vec e_x = 2\vec e_x\tilde\Pi_{\mathrm{id},1} , \qquad \theta^2 = 4\tilde\Pi_{\mathrm{id},1} + 0\cdot \tilde\Pi_{\mathrm{id},2} , \qquad \theta = 2\tilde\Pi_{\mathrm{id},1} , \qquad \exp(\vec Q) = \exp(2\vec e_x)\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2} ,
 $$
 
 with $\exp(2\vec e_x) = \cos2 + \sin2\,\vec e_x = -0.416146837 + 0.909297427\,\vec e_x$. The vector part $\vec Q$ here is a zero divisor, and its exponential is not: the exponential misses the zero divisors, which is the subject of the last subsection below.
 
 ### The Nilpotent Case
 
-It is worth recording the case that a reader may expect and that does not occur. For a vector part, $\vec Q^2 = 0$ forces $\vec Q = 0$, because the components of $\theta^2$ are sums of squares and vanish only when every $Q_k$ does; consequently the identity $\exp(\vec Q) = e_t + \vec Q$ holds only at $\vec Q = 0$. More generally the algebra has no non-zero nilpotent element of any kind, because it is the direct sum $\mathbb{H}\oplus\mathbb{H}$ of two division algebras and a nilpotent of the sum has a nilpotent component in each summand; in the recomputation the smallest ratio $|\tilde{Q}^2|/|\tilde{Q}|$ over four thousand random non-zero elements was $0.754$. The zero divisors are not nilpotent: the witness of the previous subsection has square $-4\tilde\Pi_1$, and the zero divisor witness $\tfrac12(1+\vec e_x)(1+j)$ has square $\vec e_x(1+j)$, both of them non-zero.
+It is worth recording the case that a reader may expect and that does not occur. For a vector part, $\vec Q^2 = 0$ forces $\vec Q = 0$, because the components of $\theta^2$ are sums of squares and vanish only when every $Q_k$ does; consequently the identity $\exp(\vec Q) = e_t + \vec Q$ holds only at $\vec Q = 0$. More generally the algebra has no non-zero nilpotent element of any kind, because it is the direct sum $\mathbb{H}\oplus\mathbb{H}$ of two division algebras and a nilpotent of the sum has a nilpotent component in each summand; in the recomputation the smallest ratio $|\tilde{Q}^2|/|\tilde{Q}|$ over four thousand random non-zero elements was $0.754$. The zero divisors are not nilpotent: the witness of the previous subsection has square $-4\tilde\Pi_{\mathrm{id},1}$, and the zero divisor witness $\tfrac12(1+\vec e_x)(1+j)$ has square $\vec e_x(1+j)$, both of them non-zero.
 
 ### The Logarithm
 
 The logarithm is defined componentwise in the same way,
 
 $$
-\log\tilde{Q} = \left(\log\tilde{Q}_+\right)\tilde\Pi_1 + \left(\log\tilde{Q}_-\right)\tilde\Pi_2 ,
+\log\tilde{Q} = \left(\log\tilde{Q}_+\right)\tilde\Pi_{\mathrm{id},1} + \left(\log\tilde{Q}_-\right)\tilde\Pi_{\mathrm{id},2} ,
 $$
 
 with the ordinary quaternion logarithm: for $\tilde q = \varrho\tilde u_{\mathrm r}$ with $\varrho>0$ and a unit quaternion $\tilde u_{\mathrm r} = \cos\tfrac{\theta}{2} + \mu\sin\tfrac{\theta}{2}$, $\theta\in[0,2\pi]$, the logarithm is $\log\tilde q = \ln \varrho + \tfrac{\theta}{2}\mu$. It is defined exactly on the invertible elements, the complement of the zero divisors, because the quaternion logarithm is defined on $\mathbb{H}\setminus\{0\}$. It is a relation and not a function: the rotation angle of a unit quaternion is determined modulo $2\pi$, and at the two central points of each half the axis is arbitrary, so that
 
 $$
-\exp\left(2\pi k\,\mu \tilde\Pi_1\right) = e_t \quad\text{for every invertible element pure }\mu\text{ and every }k\in\mathbb{Z} , \qquad \exp\left(\ln \varrho + \pi\mu\right) = -\varrho ,
+\exp\left(2\pi k\,\mu \tilde\Pi_{\mathrm{id},1}\right) = e_t \quad\text{for every invertible element pure }\mu\text{ and every }k\in\mathbb{Z} , \qquad \exp\left(\ln \varrho + \pi\mu\right) = -\varrho ,
 $$
 
 both verified to machine precision. The fibre of the exponential over $e_t$ accordingly contains a two-sphere of directions at every non-zero multiple of $2\pi$. The polar decomposition fixes a representative of the logarithm by $\lambda>0$ and $\theta_\pm\in[0,2\pi]$, the branch that the algorithm uses, and it is the only branch choice in the article.
@@ -625,11 +625,11 @@ both verified to machine precision. The fibre of the exponential over $e_t$ acco
 
 $$
 \boxed{\;
-\tilde{Q} = \exp\left(\ln\lambda + j\tau + \tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2\right)
+\tilde{Q} = \exp\left(\ln\lambda + j\tau + \tfrac{\theta_+}{2}\mu_+\tilde\Pi_{\mathrm{id},1} + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_{\mathrm{id},2}\right)
 \;},
 $$
 
-whose argument is the sum of the argument of the modulus, $\log M_{\mathrm{mod}} = \ln\lambda + j\tau$, and the argument of the rotor, $\log\tilde{U} = \tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2$.
+whose argument is the sum of the argument of the modulus, $\log M_{\mathrm{mod}} = \ln\lambda + j\tau$, and the argument of the rotor, $\log\tilde{U} = \tfrac{\theta_+}{2}\mu_+\tilde\Pi_{\mathrm{id},1} + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_{\mathrm{id},2}$.
 
 **Proof.** The two summands commute, the first being central and the second lying in the compact part, so the exponential of the sum is the product of the exponentials and the product is $M_{\mathrm{mod}}\tilde{U} = \tilde{Q}$. If both components of $\tilde{Q}$ are non-zero then $\varrho_\pm>0$, both quaternion logarithms exist, and the argument is defined; if a component vanishes then $\tilde{Q}$ is a zero divisor, and no exponential has a vanishing component, because $\left|\exp\tilde q\right| = \exp(q_t)>0$ for every quaternion $\tilde q$.
 
@@ -675,7 +675,7 @@ In $\mathbb{B}_{\mathrm{spl}}$ the split-biquaternion norm is split complex and 
 Every split biquaternion $\tilde{Q} = \tilde q + j\tilde q'$, with $\tilde q,\tilde q'\in\mathbb{H}$, has a polar decomposition
 
 $$
-\tilde{Q} = M_{\mathrm{mod}}\,\tilde{U} , \qquad M_{\mathrm{mod}} = \varrho_+\tilde\Pi_1 + \varrho_-\tilde\Pi_2 , \qquad \varrho_\pm = \left|\tilde q\pm \tilde q'\right| \ge 0, \qquad \tilde{U} = \tilde u_+\tilde\Pi_1 + \tilde u_-\tilde\Pi_2 ,
+\tilde{Q} = M_{\mathrm{mod}}\,\tilde{U} , \qquad M_{\mathrm{mod}} = \varrho_+\tilde\Pi_{\mathrm{id},1} + \varrho_-\tilde\Pi_{\mathrm{id},2} , \qquad \varrho_\pm = \left|\tilde q\pm \tilde q'\right| \ge 0, \qquad \tilde{U} = \tilde u_+\tilde\Pi_{\mathrm{id},1} + \tilde u_-\tilde\Pi_{\mathrm{id},2} ,
 $$
 
 with $\tilde u_\pm\in Sp(1)$, in which the modulus $M_{\mathrm{mod}}$ is the componentwise non-negative square root of the split-biquaternion norm and satisfies $M_{\mathrm{mod}}^2 = \langle\tilde{Q}\rangle_{\natural}$, and the rotor lies in the unit sphere $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$, of dimension six. The modulus is unique and needs no branch; the rotor is unique exactly when $\tilde{Q}$ is invertible, and on the zero divisors its vanishing-component factor is free. When both components of the modulus are positive, the modulus factors as $M_{\mathrm{mod}} = \lambda \exp(j\tau)$ with the scale $\lambda = \sqrt{\varrho_+\varrho_-}$ and the hyperbolic phase $\tau = \tfrac12\ln(\varrho_+/\varrho_-)$; on the zero divisors $\lambda = 0$ and $\tau$ diverges, which is the sense in which a zero divisor has no scale. Among the four algebras of the series, $\mathbb{B}_{\mathrm{spl}}$ is the one whose polar decomposition has no boost, whose phase factor is hyperbolic rather than elliptic, whose rotor is the largest, and whose domain is the whole algebra.
@@ -684,7 +684,7 @@ The two factors commute, so the order of the product is not part of the statemen
 
 The four conjugations act on the decomposition by exchanging the halves of the modulus and of the rotor or by reversing the two rotor angles; of the four, three pass through the exponential, and the flat conjugation $\flat = -{}^{*}$ does not, satisfying $(\exp\tilde{Q})^{\flat} = -\exp(\tilde{Q}^{*})$ in place of $\exp(\tilde{Q}^{\flat})$.
 
-The representation also has an exponential form. The exponential of an element with split complex scalar part $Q_t$ and vector part $\vec Q$ is $\exp\tilde{Q} = \exp(Q_t)(\cos\theta\,e_t + (\sin\theta/\theta)\vec Q)$ with $\theta^2 = \sum_kQ_k^2$, a split complex number whose two components are non-negative, so that no hyperbolic case occurs for the vector part; and every invertible element is the exponential of a single element, $\tilde{Q} = \exp(\ln\lambda + j\tau + \theta_+\mu_+\tilde\Pi_1 + \theta_-\mu_-\tilde\Pi_2)$, which is the polar decomposition written as one exponential. The exponential is surjective exactly onto the invertible elements and misses the zero divisors.
+The representation also has an exponential form. The exponential of an element with split complex scalar part $Q_t$ and vector part $\vec Q$ is $\exp\tilde{Q} = \exp(Q_t)(\cos\theta\,e_t + (\sin\theta/\theta)\vec Q)$ with $\theta^2 = \sum_kQ_k^2$, a split complex number whose two components are non-negative, so that no hyperbolic case occurs for the vector part; and every invertible element is the exponential of a single element, $\tilde{Q} = \exp(\ln\lambda + j\tau + \theta_+\mu_+\tilde\Pi_{\mathrm{id},1} + \theta_-\mu_-\tilde\Pi_{\mathrm{id},2})$, which is the polar decomposition written as one exponential. The exponential is surjective exactly onto the invertible elements and misses the zero divisors.
 
 ## Summary of Notation
 
@@ -692,15 +692,15 @@ The representation also has an exponential form. The exponential of an element w
 |---|---|
 | $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | the split biquaternion algebra, real dimension eight |
 | $j$ | the split complex unit, $j^2 = +1$, central |
-| $\tilde\Pi_{1,2} = \tfrac12(1\pm j)$ | the idempotents, $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_1+\tilde\Pi_2 = e_t$ |
+| $\tilde\Pi_{\mathrm{id},1,2} = \tfrac12(1\pm j)$ | the idempotents, $\tilde\Pi_{\mathrm{id},1,2}^2 = \tilde\Pi_{\mathrm{id},1,2}$, $\tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2} = 0$, $\tilde\Pi_{\mathrm{id},1+}\tilde\Pi_{\mathrm{id},2} = e_t$ |
 | $\tilde{Q} = \tilde q + j\tilde q'$ | the quaternion and split-quaternion parts of an element |
-| $\tilde{Q}_\pm = \tilde{Q}\tilde\Pi_{1,2} = \tilde\Pi_{1,2}(\tilde q\pm \tilde q')$ | the idempotent components |
+| $\tilde{Q}_\pm = \tilde{Q}\tilde\Pi_{\mathrm{id},1,2} = \tilde\Pi_{\mathrm{id},1,2}(\tilde q\pm \tilde q')$ | the idempotent components |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | the split-biquaternion norm, split complex, anisotropic |
 | ${\langle\tilde{Q}\rangle_{\natural}}_\pm = \varrho_\pm^2$ | the two non-negative components of the split-biquaternion norm |
-| $M_{\mathrm{mod}} = \varrho_+\tilde\Pi_1+\varrho_-\tilde\Pi_2$ | the modulus, the componentwise non-negative square root |
+| $M_{\mathrm{mod}} = \varrho_+\tilde\Pi_{\mathrm{id},1+}\varrho_-\tilde\Pi_{\mathrm{id},2}$ | the modulus, the componentwise non-negative square root |
 | $\lambda = \sqrt{\varrho_+\varrho_-}$ | the scale, a positive real except on the zero divisors |
 | $\tau = \tfrac12\ln(\varrho_+/\varrho_-)$ | the hyperbolic phase angle |
-| $\tilde{U} = \tilde u_+\tilde\Pi_1+\tilde u_-\tilde\Pi_2$ | the rotor, $\tilde u_\pm\in Sp(1)$, an element of the unit sphere |
+| $\tilde{U} = \tilde u_+\tilde\Pi_{\mathrm{id},1+}\tilde u_-\tilde\Pi_{\mathrm{id},2}$ | the rotor, $\tilde u_\pm\in Sp(1)$, an element of the unit sphere |
 | $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ | the unit sphere and $SU(2)$, the pairs of unit real quaternions, dimension six, compact |
 | $\theta_\pm\in[0,2\pi]$, $\mu_\pm$ | the rotation angle and unit axis of the two halves of the rotor, $\tilde u_\pm = \cos\tfrac{\theta_\pm}{2} + \mu_\pm\sin\tfrac{\theta_\pm}{2}$ |
 | $\exp$, $\log$ | the exponential and the logarithm, componentwise on the two halves, $\log$ defined exactly on the invertible elements |

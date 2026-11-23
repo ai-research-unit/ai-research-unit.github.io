@@ -13,7 +13,7 @@ $$
 $$
 each copy isomorphic to the biquaternion algebra. Where $\mathrm{Cl}(2)$ is simple, $\mathrm{Cl}(3)$ is not; where $\mathrm{Cl}(2)$ has a single family of minimal left ideals, $\mathrm{Cl}(3)$ has two, and the two are interchanged by the parity automorphism $\vec e_\mu\mapsto -\vec e_\mu$ and distinguished by the sign of the volume element. That pair is the algebraic content of the two **chiralities** of the four-dimensional spinor representation, and it is the reason the algebra is of interest to the physics of the left-right symmetric extension of the Standard Model, treated in *Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions*.
 
-The article is the Clifford entry of the split biquaternion system, the higher rung of the pair whose lower rung is *Biquaternion Versors and the Orthogonal Group*. The split biquaternion algebra, its conjugations, its idempotents $\tilde\Pi_{1,2}=\tfrac12(1\pm j)$ and its isomorphism $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ are *Split-Biquaternion Algebra* and *Split-Biquaternion Ideals and Peirce Decomposition*; the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, its idempotents and its off-diagonal elements are *Introduction to the Algebra of Biquaternions* and *Peirce Decompositions of the Biquaternion Algebra*, and its minimal left ideals are *The Polarized Module of the Biquaternion Algebra*; the complex Clifford algebra $\mathrm{Cl}(2)\cong\mathbb{C}\mathrm{l}_2\cong\mathbb{B}$, its volume element and its grade structure are *Biquaternion Versors and the Orthogonal Group*; and the maximal totally isotropic subspace, the ladder operators and the charge operator are *Peirce Carriers and Inner Conjugation*.
+The article is the Clifford entry of the split biquaternion system, the higher rung of the pair whose lower rung is *Biquaternion Versors and the Orthogonal Group*. The split biquaternion algebra, its conjugations, its idempotents $\tilde\Pi_{\mathrm{id},1,2}=\tfrac12(1\pm j)$ and its isomorphism $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ are *Split-Biquaternion Algebra* and *Split-Biquaternion Ideals and Peirce Decomposition*; the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, its idempotents and its off-diagonal elements are *Introduction to the Algebra of Biquaternions* and *Peirce Decompositions of the Biquaternion Algebra*, and its minimal left ideals are *The Polarized Module of the Biquaternion Algebra*; the complex Clifford algebra $\mathrm{Cl}(2)\cong\mathbb{C}\mathrm{l}_2\cong\mathbb{B}$, its volume element and its grade structure are *Biquaternion Versors and the Orthogonal Group*; and the maximal totally isotropic subspace, the ladder operators and the charge operator are *Peirce Carriers and Inner Conjugation*.
 
 ## The Algebra and Its Generators
 
@@ -92,14 +92,14 @@ $$
 
 *Proof.* Because $\Pi_{1,2}$ are central, the left, right and two-sided ideals they generate agree; the summands are simple matrix algebras and have no proper nonzero ideal, so no further ideals occur. The lattice is then the diamond, as in *Split-Biquaternion Ideals and Peirce Decomposition*.
 
-**Theorem (the two summands are the two halves).** The idempotents $\Pi_{1,2}$ of $\mathrm{Cl}(3)$ coincide, with the indices reversed, with the split biquaternion idempotents $\tilde\Pi_{1,2}=\tfrac12(1\mp j)$ of $\mathbb{B}_{\mathrm{spl}}$ promoted to the complexification, and the central splitting is the complexification of the splitting of the split biquaternion algebra:
+**Theorem (the two summands are the two halves).** The idempotents $\Pi_{1,2}$ of $\mathrm{Cl}(3)$ coincide, with the indices reversed, with the split biquaternion idempotents $\tilde\Pi_{\mathrm{id},1,2}=\tfrac12(1\mp j)$ of $\mathbb{B}_{\mathrm{spl}}$ promoted to the complexification, and the central splitting is the complexification of the splitting of the split biquaternion algebra:
 $$
 \boxed{\;
-\mathrm{Cl}(3) = \mathbb{C}\otimes_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_1\bigr) \oplus \mathbb{C}\otimes_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_2\bigr) \cong \mathbb{B}\oplus\mathbb{B}
+\mathrm{Cl}(3) = \mathbb{C}\otimes_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_{\mathrm{id},1}\bigr) \oplus \mathbb{C}\otimes_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_{\mathrm{id},2}\bigr) \cong \mathbb{B}\oplus\mathbb{B}
 \;}.
 $$
 
-*Proof.* With $\omega=-j$ one has $\Pi_x=\tfrac12(1-j)=\tilde\Pi_2$ and $\Pi_y=\tfrac12(1+j)=\tilde\Pi_1$. The two-sided ideals $\mathbb{H}\tilde\Pi_{1,2}\cong\mathbb{H}$ of *Split-Biquaternion Ideals and Peirce Decomposition* complexify to $\mathbb{B}\cong\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$.
+*Proof.* With $\omega=-j$ one has $\Pi_x=\tfrac12(1-j)=\tilde\Pi_{\mathrm{id},2}$ and $\Pi_y=\tfrac12(1+j)=\tilde\Pi_{\mathrm{id},1}$. The two-sided ideals $\mathbb{H}\tilde\Pi_{\mathrm{id},1,2}\cong\mathbb{H}$ of *Split-Biquaternion Ideals and Peirce Decomposition* complexify to $\mathbb{B}\cong\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$.
 
 **Theorem (the parity automorphism).** The map
 $$
@@ -228,7 +228,7 @@ into two copies of the biquaternion algebra, each of complex dimension $4$, so t
 | $iE_\mu$ | Hermitian rescaled generators, $(iE_\mu)^{\dagger}=iE_\mu$, $\{iE_\mu,iE_\nu\}=2\delta_{\mu\nu}$ |
 | $\dagger$ | Hermitian adjoint, $E_\mu^{\dagger}=-E_\mu$, $i^{\dagger}=-i$ |
 | $\omega=E_1E_2E_3=-j$ | Volume element, central, self-adjoint, $\omega^2=1$ |
-| $\Pi_x = \tilde\Pi_2 = \tfrac12(1+\omega)$, $\Pi_y = \tilde\Pi_1 = \tfrac12(1-\omega)$ | Central idempotents, complete and orthogonal |
+| $\Pi_x = \tilde\Pi_{\mathrm{id},2} = \tfrac12(1+\omega)$, $\Pi_y = \tilde\Pi_{\mathrm{id},1} = \tfrac12(1-\omega)$ | Central idempotents, complete and orthogonal |
 | $\mathrm{Cl}(3)\Pi_{1,2}$ | The two simple summands, each ${}\cong\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\sigma:E_\mu\mapsto-E_\mu$ | Parity (grading) automorphism, interchanges the summands |
 | $\alpha=\tfrac12(E_1+iE_2)$ | Isotropic (ladder) element, $\alpha^2=0$ |

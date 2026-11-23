@@ -130,7 +130,7 @@ so the group is the circle and the algebra is the tangent line at the identity. 
 
 **The identification with $\Lambda^{2}\mathbb{R}^{2}$ is an isomorphism of one-dimensional spaces.** There is one basis two-vector $e_1\wedge e_2$, and it maps to $E_{12}-E_{21}=J$. So the whole exterior square is the line of the rotation, and the statement that the bracket vanishes is the statement that $\Lambda^{2}$ of a two-dimensional space has no decomposable products left to bracket with.
 
-**The biquaternion reading is the statement that the rotation direction is one line.** In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the antisymmetric part is the line $\mathbb{C}J$, and the idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ are symmetric. The rotation direction is therefore the unique complement of the Jordan algebra $\operatorname{Sym}_2$ inside $M_2(\mathbb{C})$, and the pair $(\operatorname{Sym}_2,\mathbb{R}J)$ is the smallest symmetric pair of the category.
+**The biquaternion reading is the statement that the rotation direction is one line.** In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the antisymmetric part is the line $\mathbb{C}J$, and the idempotents $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ are symmetric. The rotation direction is therefore the unique complement of the Jordan algebra $\operatorname{Sym}_2$ inside $M_2(\mathbb{C})$, and the pair $(\operatorname{Sym}_2,\mathbb{R}J)$ is the smallest symmetric pair of the category.
 
 ## Summary
 

@@ -168,7 +168,7 @@ and the matrices of the representation have size the spinor dimension. The compu
 
 **At $n=3$ the even part is the quaternions and the rotor is a unit quaternion.** The even part is spanned by $1$ and the three bivectors $e_2e_3,e_3e_1,e_1e_2$, which satisfy the quaternion relations, so $Cl^{0}(3)\cong\mathbb{H}$ and the rotors are the unit quaternions; the sandwich action is the conjugation of a pure quaternion, and the vector space is the space of pure quaternions. The computation confirms the sandwich identity at $n=3$, and it shows that the double cover of the previous article is the double cover of the unit quaternions over the rotations.
 
-**The biquaternion reading is the complexified quaternion algebra.** The even part of $Cl(3)$ complexified is $M_2(\mathbb{C})$, so the rotors of the biquaternion frame are the complex unit quaternions, and the idempotents $\tilde\Pi_\pm$ project onto the two lines of the spinor module. The computation confirms the two-dimensional spinor module at $n=2$, and it is the reason the frame is built from a single root of one: the root is a rotor, and its two signs are the two signs of the spinor.
+**The biquaternion reading is the complexified quaternion algebra.** The even part of $Cl(3)$ complexified is $M_2(\mathbb{C})$, so the rotors of the biquaternion frame are the complex unit quaternions, and the idempotents $\tilde\Pi_{\mathrm{id},\pm}$ project onto the two lines of the spinor module. The computation confirms the two-dimensional spinor module at $n=2$, and it is the reason the frame is built from a single root of one: the root is a rotor, and its two signs are the two signs of the spinor.
 
 ## Summary
 

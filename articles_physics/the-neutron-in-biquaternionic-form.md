@@ -39,7 +39,7 @@ $$
 \tilde{Ξ}_{p}=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}, \qquad \tilde{Ξ}_{n}=\left(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma\right)i\vec{\tau},
 $$
 
-with $\sigma=\tilde\Pi_+(\vec\nu)$ and $\bar\sigma=\tilde\Pi_-(\vec\nu)=e_t-\tilde\Pi_+(\vec\nu)$ the two complementary states along the unit direction $\vec\nu$, of zero product, $\sigma\bar\sigma=0$, and $\vec{\tau}$ a unit direction orthogonal to $\vec{\nu}$.
+with $\sigma=\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm{ls}})$ and $\bar\sigma=\tilde\Pi_{\mathrm{id},-}(\vec u_{\mathrm{ls}})=e_t-\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm{ls}})$ the two complementary states along the unit direction $\vec u_{\mathrm{ls}}$, of zero product, $\sigma\bar\sigma=0$, and $\vec{\tau}$ a unit direction orthogonal to $\vec u_{\mathrm{ls}}$.
 
 The group that preserves both forms is Nishijima's two-parameter group $G_N=\sigma\exp(i\theta_{\mathrm{cen}})+\bar\sigma\exp(i\theta_{\mathrm{axr}})$, acting by right multiplication. Because the two states are complementary and of zero product, each term picks up its own phase and the other term dies,
 
@@ -49,7 +49,7 @@ $$
 \tilde{Ξ}_{n}\,G_N=e^{i\theta_{\mathrm{axr}}}\tilde Q_1\bar{\sigma}-e^{i\theta_{\mathrm{cen}}}\tilde Q_2^{*}\sigma ,
 $$
 
-so the second superposition is preserved up to the same two phases before the trailing $i\vec{\tau}$ is applied. Equivalently, $\exp(-\vec{\nu}\theta_{\mathrm{cen}})\sigma=\sigma\exp(i\theta_{\mathrm{cen}})$ and $\exp(+\vec{\nu}\theta_{\mathrm{axr}})\bar{\sigma}=\bar{\sigma}\exp(i\theta_{\mathrm{axr}})$, since $\vec{\nu}^{2}=-e_t$ gives $\exp(\pm\vec{\nu}\theta)=\cos\theta\pm\vec{\nu}\sin\theta$. Each of the two states therefore carries its own abelian phase, and with it its own charge, while the form of both superpositions is unchanged.
+so the second superposition is preserved up to the same two phases before the trailing $i\vec{\tau}$ is applied. Equivalently, $\exp(-\vec u_{\mathrm{ls}}\theta_{\mathrm{cen}})\sigma=\sigma\exp(i\theta_{\mathrm{cen}})$ and $\exp(+\vec u_{\mathrm{ls}}\theta_{\mathrm{axr}})\bar{\sigma}=\bar{\sigma}\exp(i\theta_{\mathrm{axr}})$, since $\vec u_{\mathrm{ls}}^{2}=-e_t$ gives $\exp(\pm\vec u_{\mathrm{ls}}\theta)=\cos\theta\pm\vec u_{\mathrm{ls}}\sin\theta$. Each of the two states therefore carries its own abelian phase, and with it its own charge, while the form of both superpositions is unchanged.
 
 A price is paid. The two parameters are independent on the superpositions, but the common mass links the two Lanczos fields. Read on those fields, the re-phasing is $\tilde Q_1\mapsto e^{i\theta_{\mathrm{cen}}}\tilde Q_1$ and $\tilde Q_2\mapsto e^{-i\theta_{\mathrm{axr}}}\tilde Q_2$, the minus sign coming from the conjugation in $\tilde{Ξ}_{p}$ and $\tilde{Ξ}_{n}$. The first Lanczos equation then becomes $\tilde\nabla_\Phi\bigl(e^{i\theta_{\mathrm{cen}}}\tilde Q_1\bigr)=m\,e^{-i\theta_{\mathrm{axr}}}\tilde Q_2$, which is the original equation only when $\theta_{\mathrm{cen}}+\theta_{\mathrm{axr}}=0$. So the doubled system with $m\neq0$ is invariant on that one line of the $(\theta_{\mathrm{cen}},\theta_{\mathrm{axr}})$ plane, and the orthogonal combination is a symmetry of the superpositions' *form* alone. Two independent phases and one common mass therefore stand together only as a kinematic statement, which is the same phenomenon the charge section records below: a mass term, being a link between the two values, breaks the relative phase.
 
@@ -96,7 +96,7 @@ $$
 b \;=\; \tfrac{ϙ_L+ϙ_R}{2}\,e_t+\tfrac{i}{2}\left(ϙ_L-ϙ_R\right)\vec e_z \;\in\; \mathbb{B}_{\Psi} ,
 $$
 
-a derived form: $b=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$, the two chirality states at the axis of the previous section. The element $b$ is Hermitian; it is central only in the vector-like case $ϙ_L=ϙ_R$, where the action is also a left multiplication. That is why the parent's left-multiplied connection arises exactly for a vector-like fermion. The covariant derivative and its curvature carry the same element,
+a derived form: $b=ϙ_L\tilde\Pi_{\mathrm{id},+}(\vec e_z)+ϙ_R\tilde\Pi_{\mathrm{id},-}(\vec e_z)$, the two chirality states at the axis of the previous section. The element $b$ is Hermitian; it is central only in the vector-like case $ϙ_L=ϙ_R$, where the action is also a left multiplication. That is why the parent's left-multiplied connection arises exactly for a vector-like fermion. The covariant derivative and its curvature carry the same element,
 
 $$
 D_\mu\tilde{Ξ}=\frac{\partial\tilde{Ξ}}{\partial R_\mu}+\frac{i}{\hbar}A_\mu\,\tilde{Ξ} b,
@@ -167,7 +167,7 @@ The article's finding is best stated as a ledger, in the manner of the electron 
 |---|---|---|
 | Spin-$\tfrac12$ representation content (generic) | Derived (framework), not neutron-specific | the element $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ of $\mathbb{B}$; the left multiplications act on each part with weights $\pm\tfrac12$ |
 | Free Dirac kinematics, mass-shell relation | Derived (framework) | biquaternion Dirac equation, one-sided chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_n}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_n}\tilde{Ξ}_{R}$ |
-| Neutrality constraint $\tilde{Ξ} b=0$ and its kernel | Derived (framework) | the charge $b=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$; no nonzero neutral element unless one charge vanishes |
+| Neutrality constraint $\tilde{Ξ} b=0$ and its kernel | Derived (framework) | the charge $b=ϙ_L\tilde\Pi_{\mathrm{id},+}(\vec e_z)+ϙ_R\tilde\Pi_{\mathrm{id},-}(\vec e_z)$; no nonzero neutral element unless one charge vanishes |
 | Mass value $m_n$ | Represented | parameter of the equation; not derived |
 | Charge value $0$ | Represented | a constraint/parameter; not derived from quark charges |
 | The identification "*this* field is the neutron" | Represented | the inserted mass and charge |
@@ -255,7 +255,7 @@ The neutron is an electrically neutral spin-$\tfrac12$ baryon, and in the biquat
 
 That representation is generic: the algebra carries any structureless spin-$\tfrac12$ field by the same two values, and the spin-$\tfrac12$ it supplies is a representation, not a construction from constituents.
 
-The charge multiplies the two values by $ϙ_L$ and $ϙ_R$; the two rules are one right multiplication by the element $b=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)\in\mathbb{B}_{\Psi}$. The neutrality constraint $\tilde{Ξ} b=0$ has a nonzero solution only if one value is uncoupled ($ϙ_L=0$ or $ϙ_R=0$), and, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the neutral element carries one value alone; the massive pair then forces it to vanish, so it is massless in the Dirac pair, and whether it can carry a mass depends on a Majorana-type coupling on the algebra's real structure $\flat$, whose interpretation is open.
+The charge multiplies the two values by $ϙ_L$ and $ϙ_R$; the two rules are one right multiplication by the element $b=ϙ_L\tilde\Pi_{\mathrm{id},+}(\vec e_z)+ϙ_R\tilde\Pi_{\mathrm{id},-}(\vec e_z)\in\mathbb{B}_{\Psi}$. The neutrality constraint $\tilde{Ξ} b=0$ has a nonzero solution only if one value is uncoupled ($ϙ_L=0$ or $ϙ_R=0$), and, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the neutral element carries one value alone; the massive pair then forces it to vanish, so it is massless in the Dirac pair, and whether it can carry a mass depends on a Majorana-type coupling on the algebra's real structure $\flat$, whose interpretation is open.
 
 The framework does have a Fock space, so a neutral many-particle **state** is not ruled out in principle. But no neutral **bound composite** is expressible: there is no colour, no confinement, no binding, and no selection rule fixing three constituents. The neutrality is therefore stateable as a constraint on unfixed charges but not derived, and manufacturing it from the standard quark charges would be an import.
 
@@ -274,13 +274,13 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $\Box_\Phi$ | The d'Alembertian in the material reading, the quaternionic norm of the gradient |
 | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The field, an element of $\mathbb{B}$; $\tilde{Ξ}_{L}$ the value L, $\tilde{Ξ}_{R}$ the value R, at the axis $\vec e_z$ |
 | $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$ | The algebra's real structure |
-| $\tilde\Pi_\pm(\vec e_z)$ | The two states at the axis; $\tilde\Pi_+$ the L state, $\tilde\Pi_-$ the R state |
-| $b=ϙ_L\tilde\Pi_++ϙ_R\tilde\Pi_-=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z$ | The charge element, in $\mathbb{B}_{\Psi}$; the charge is the right multiplication by $b$ |
+| $\tilde\Pi_{\mathrm{id},\pm}(\vec e_z)$ | The two states at the axis; $\tilde\Pi_{\mathrm{id},+}$ the L state, $\tilde\Pi_{\mathrm{id},-}$ the R state |
+| $b=ϙ_L\tilde\Pi_{\mathrm{id},++}ϙ_R\tilde\Pi_{\mathrm{id},-}=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z$ | The charge element, in $\mathbb{B}_{\Psi}$; the charge is the right multiplication by $b$ |
 | $D_\mu\tilde{Ξ}=\partial\tilde{Ξ}/\partial R_\mu+\frac{i}{\hbar}A_\mu\tilde{Ξ} b$ | Covariant derivative of the chiral charge; the curvature is $\frac{i}{\hbar}F_{\mu\nu}\tilde{Ξ} b$ |
 | $\tilde{Ξ} b=0$ | Neutrality constraint; no nonzero solution unless $ϙ_L=0$ or $ϙ_R=0$ |
 | $(i\partial/\partial r'_t+\vec\nabla_\Phi)F-k_{m_n} i\,\bar F\,\vec e_z=0$ | Kravchenko's two-sided equation, $F\in\mathbb{B}$; the bar is the coefficientwise conjugation |
 | $\gamma_\mu[\mathbb{B}_{\Phi}]$, $\gamma_5$ | The gamma frame of the legacy section; used only in §*The Legacy Pauli Gamma Formulation* |
-| $G_N = \sigma\exp(i\theta_{\mathrm{cen}})+\bar{\sigma}\exp(i\theta_{\mathrm{axr}})$, $\sigma=\tilde\Pi_+(\vec\nu)$ | Nishijima's two-parameter group of the doubled Lanczos system |
+| $G_N = \sigma\exp(i\theta_{\mathrm{cen}})+\bar{\sigma}\exp(i\theta_{\mathrm{axr}})$, $\sigma=\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm{ls}})$ | Nishijima's two-parameter group of the doubled Lanczos system |
 | $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Maximal compact algebra in $\mathbb{B}$; dimension $4$ |
 | $m_n$, $\mu_n = -1.9130427\,\mu_N$ | Neutron mass (input) and measured magnetic moment (outside) |
 | $SU(3)$, quark | Standard-model notation, not framework objects |

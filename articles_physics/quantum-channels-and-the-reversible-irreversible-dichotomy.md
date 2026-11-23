@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *Quantum Physics in Biquaternionic Form* developed the qubit in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$: states and observables are elements of the Hermitian subspace $\mathbb{B}_{\Psi}$; reversible evolution is rotor conjugation $\tilde{Ϛ}_{\Psi} \mapsto \tilde Q\tilde{Ϛ}_{\Psi}\tilde Q^{*}$ by a $*$-unitary biquaternion; measurement is the two-sided operation $\tilde{Ϛ}_{\Psi} \mapsto \tilde\Pi\tilde{Ϛ}_{\Psi}\tilde\Pi$. It listed the dynamics of *open* systems — dissipation, decoherence, and the Lindblad equation — among its open questions.
+The companion article *Quantum Physics in Biquaternionic Form* developed the qubit in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$: states and observables are elements of the Hermitian subspace $\mathbb{B}_{\Psi}$; reversible evolution is rotor conjugation $\tilde{Ϛ}_{\Psi} \mapsto \tilde Q\tilde{Ϛ}_{\Psi}\tilde Q^{*}$ by a $*$-unitary biquaternion; measurement is the two-sided operation $\tilde{Ϛ}_{\Psi} \mapsto \tilde\Pi_{\mathrm{id}}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id}}$. It listed the dynamics of *open* systems — dissipation, decoherence, and the Lindblad equation — among its open questions.
 
 This article takes up that question. Its subject is the **general state map** on $\mathbb{B}_{\Psi}$: the most general process carrying a state of the informational sector to a state of the informational sector — in quantum information theory, a **quantum channel** or **quantum operation**. We develop the requirements that define it — linearity, complete positivity, and trace preservation — in the biquaternion language, and then examine the **reversible/irreversible dichotomy** they produce.
 
@@ -18,7 +18,7 @@ The conventions are those of the companion articles: the quaternion basis $e_t =
 
 ## The State Space and the Plain Form
 
-A state of the informational sector is an element $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ of $\mathbb{B}_{\Psi}$ with $\vec s_{\Psi} \in \mathbb{R}^3$, positive if and only if $|\vec s_{\Psi}| \leq 1$. The states form the Bloch ball, whose boundary is the set of pure states; these are exactly the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$, with $\vec u$ a unit pure real quaternion. Every state is normalised by the Hermitian form, $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$, that is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$.
+A state of the informational sector is an element $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ of $\mathbb{B}_{\Psi}$ with $\vec s_{\Psi} \in \mathbb{R}^3$, positive if and only if $|\vec s_{\Psi}| \leq 1$. The states form the Bloch ball, whose boundary is the set of pure states; these are exactly the idempotents $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$, with $\vec u$ a unit pure real quaternion. Every state is normalised by the Hermitian form, $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$, that is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$.
 
 An observable is a general Hermitian element $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$, and the **Hermitian form**
 
@@ -193,28 +193,28 @@ with $\tilde H_\Psi \in \mathbb{B}_{\Psi}$ Hermitian, the jump operators $\tilde
 
 ### Definition and Kraus Form
 
-Dephasing destroys the phase coherence between the two eigenstates of a chosen direction without changing their populations. Let $\vec u$ be a unit pure real quaternion and $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$, $\tilde\Pi_2(\vec u) = \tfrac{1}{2}(e_t - i\vec u)$ the complementary idempotents along $\vec u$. For $p \in [0,1]$, the **dephasing channel** along $\vec u$ is
+Dephasing destroys the phase coherence between the two eigenstates of a chosen direction without changing their populations. Let $\vec u$ be a unit pure real quaternion and $\tilde\Pi_{\mathrm{id},1}(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$, $\tilde\Pi_{\mathrm{id},2}(\vec u) = \tfrac{1}{2}(e_t - i\vec u)$ the complementary idempotents along $\vec u$. For $p \in [0,1]$, the **dephasing channel** along $\vec u$ is
 
 $$
 \boxed{\;Ξ_{\mathrm{deph},p}(\tilde{Ϛ}_{\Psi})
 = (1-p)\,\tilde{Ϛ}_{\Psi}
-+ p\left(\tilde\Pi_1\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_2\right)\;}.
++ p\left(\tilde\Pi_{\mathrm{id},1}\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2}\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{id},2}\right)\;}.
 $$
 
-It is completely positive and trace preserving with the three Kraus operators $\tilde M_{\mathrm{kraus},0} = \sqrt{1-p}\,e_t$, $\tilde M_{\mathrm{kraus},1} = \sqrt{p}\,\tilde\Pi_1(\vec u)$, $\tilde M_{\mathrm{kraus},2} = \sqrt{p}\,\tilde\Pi_2(\vec u)$: because the idempotents are Hermitian, $\tilde M_{\mathrm{kraus},1}^{*}\tilde M_{\mathrm{kraus},1} + \tilde M_{\mathrm{kraus},2}^{*}\tilde M_{\mathrm{kraus},2} = p(\tilde\Pi_1 + \tilde\Pi_2) = p\,e_t$, and the normalization sums to $(1-p)e_t + p\,e_t = e_t$.
+It is completely positive and trace preserving with the three Kraus operators $\tilde M_{\mathrm{kraus},0} = \sqrt{1-p}\,e_t$, $\tilde M_{\mathrm{kraus},1} = \sqrt{p}\,\tilde\Pi_{\mathrm{id},1}(\vec u)$, $\tilde M_{\mathrm{kraus},2} = \sqrt{p}\,\tilde\Pi_{\mathrm{id},2}(\vec u)$: because the idempotents are Hermitian, $\tilde M_{\mathrm{kraus},1}^{*}\tilde M_{\mathrm{kraus},1} + \tilde M_{\mathrm{kraus},2}^{*}\tilde M_{\mathrm{kraus},2} = p(\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2}) = p\,e_t$, and the normalization sums to $(1-p)e_t + p\,e_t = e_t$.
 
 ### The Bloch Vector Formula
 
-Put $\alpha = i\vec u$, so that $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \alpha)$ with $\alpha^{*} = \alpha$ and $\alpha^2 = e_t$. A direct expansion gives
+Put $\alpha = i\vec u$, so that $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(e_t \pm \alpha)$ with $\alpha^{*} = \alpha$ and $\alpha^2 = e_t$. A direct expansion gives
 
 $$
-\tilde\Pi_1\,\tilde{Q}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{Q}\,\tilde\Pi_2 = \tfrac{1}{2}\left(\tilde{Q} + \alpha\,\tilde{Q}\,\alpha\right),
+\tilde\Pi_{\mathrm{id},1}\,\tilde{Q}\,\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2}\,\tilde{Q}\,\tilde\Pi_{\mathrm{id},2} = \tfrac{1}{2}\left(\tilde{Q} + \alpha\,\tilde{Q}\,\alpha\right),
 $$
 
 since the cross terms cancel between the two idempotents. For a state $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$, the elementary products are $\alpha\,e_t\,\alpha = \alpha^2 = e_t$ and $\alpha\,(i\vec s_{\Psi})\,\alpha = -i\,\vec u\,\vec s_{\Psi}\,\vec u = -i(\vec s_{\Psi} - 2(\vec u\cdot\vec s_{\Psi})\vec u)$, using $\vec u\,\vec s_{\Psi}\,\vec u = \vec s_{\Psi} - 2(\vec u\cdot\vec s_{\Psi})\vec u$. Combining,
 
 $$
-\tilde\Pi_1\tilde{Ϛ}_{\Psi}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}_{\Psi}\tilde\Pi_2
+\tilde\Pi_{\mathrm{id},1}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id},2}
 = \tfrac{1}{2}\left(e_t + i(\vec u\cdot\vec s_{\Psi})\,\vec u\right),
 $$
 
@@ -233,9 +233,9 @@ The transverse components of the Bloch vector are multiplied by $1-p$, while the
 At $p = 0$ the channel is the identity, a reversible $*$-unitary evolution. At $p = 1$ it is **full dephasing**, $Ξ_{\mathrm{deph},1}(\tilde{Ϛ}_{\Psi}) = \tfrac{1}{2}(e_t + i(\vec u\cdot\vec s_{\Psi})\vec u)$, whose image is the diameter of the Bloch ball along $\vec u$; it is idempotent, $(Ξ_{\mathrm{deph},1})^2 = Ξ_{\mathrm{deph},1}$, and non-$*$-unitary. Full dephasing is **measure-and-forget**: measuring $\alpha = i\vec u$ and discarding the outcome leaves the average state
 
 $$
-p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 = Ξ_{\mathrm{deph},1}(\tilde{Ϛ}_{\Psi}),
+p_+\,\tilde\Pi_{\mathrm{id},1} + p_-\,\tilde\Pi_{\mathrm{id},2} = Ξ_{\mathrm{deph},1}(\tilde{Ϛ}_{\Psi}),
 \qquad
-p_\pm = \frac{2\langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}}{2\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \frac{2\,\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}_{\Psi})}{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \tfrac{1}{2}\left(1 \pm \vec u\cdot\vec s_{\Psi}\right),
+p_\pm = \frac{2\langle\tilde\Pi_{\mathrm{id},1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}}{2\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \frac{2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1,2}\tilde{Ϛ}_{\Psi})}{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \tfrac{1}{2}\left(1 \pm \vec u\cdot\vec s_{\Psi}\right),
 $$
 
 as a direct computation confirms. The star is inert on $\mathbb{B}_{\Psi}$, and the scalar part of the product is real and non-negative there, so $p_\pm\in[0,1]$. The three-Kraus form shows that $Ξ_{\mathrm{deph},p}$ is a convex mixture, with weight $p$, of this measurement channel and the identity; since the identity is reversible and full dephasing is not, the channel set is convex with its reversible elements among its extreme points.
@@ -325,7 +325,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ | State of the informational sector |
 | $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ | Observable / Hamiltonian |
-| $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotents (pure states) |
+| $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotents (pure states) |
 | $2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)$ | Born weight at normalisation |
 | $Ξ(\tilde{Ϛ}_{\Psi}) = \sum_l \tilde M_{\mathrm{kraus},l}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},l}^{*}$ | Kraus representation of a channel |
 | $\sum_l \tilde M_{\mathrm{kraus},l}^{*}\tilde M_{\mathrm{kraus},l} = e_t$ | Trace-preservation condition |

@@ -22,7 +22,7 @@ The second objection is that the two lists of dimensions are a bookkeeping muddl
 
 The third objection is that a match between three algebraic labels and the observed spins is a prediction. It is not, and the mathematics does not make it. The algebra supplies the set $\{0,\tfrac12,1\}$; it does not say which particle carries which spin, and it does not say why the list is realised. The entry states the match, states its boundary, and does not lean on it.
 
-The letters. The algebra is $\mathbb{B}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_k^{2}=-e_t$, the central imaginary is $i$ with $i^{2}=-e_t$, and an element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu$ complex. The star is ${}^{*}$, the natural conjugation is ${}^{\natural}$, and the norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$. The vector part is $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$; the centre is $\mathbb{B}_C=\mathbb{C}e_t$; the sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$. At a unit real axis $\vec u$ the idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u)$, the plane is $\Sigma=\mathbb{C}\tilde\Pi_+$, and the ideals are $S_\pm=\mathbb{B}\tilde\Pi_\pm$. The generator is $A=\tfrac12\vec u$ and the rotor is $\tilde u=\cos\tfrac\theta2\,e_t+\sin\tfrac\theta2\,\vec u$. A representation is $\rho_{\mathrm{rep}}$, a weight is $\lambda$, the spin is $s$, and the quadratic element is $C=\sum_k\tilde S_k^{2}$ with $\tilde S_k=\tfrac12 i\vec e_k$.
+The letters. The algebra is $\mathbb{B}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_k^{2}=-e_t$, the central imaginary is $i$ with $i^{2}=-e_t$, and an element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu$ complex. The star is ${}^{*}$, the natural conjugation is ${}^{\natural}$, and the norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$. The vector part is $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$; the centre is $\mathbb{B}_C=\mathbb{C}e_t$; the sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$. At a unit real axis $\vec u$ the idempotents are $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec u)$, the plane is $\Sigma=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$, and the ideals are $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$. The generator is $A=\tfrac12\vec u$ and the rotor is $\tilde u=\cos\tfrac\theta2\,e_t+\sin\tfrac\theta2\,\vec u$. A representation is $\rho_{\mathrm{rep}}$, a weight is $\lambda$, the spin is $s$, and the quadratic element is $C=\sum_k\tilde S_k^{2}$ with $\tilde S_k=\tfrac12 i\vec e_k$.
 
 Boundaries. The definition, the classification, the criterion, the quadratic element and the four closure rules are the mathematics' *From the Spin to the Carriers and the Closures*; $SU(2)$ and the two derivations of the spins are *The Spin Group via $4\times4$ Real Matrices*, *From the Spin Group to the Spin of a Single Rotor* and *The Clebsch–Gordan Decomposition of the Biquaternion Algebra*; the module theory behind the count is *The Category of Modules in the Biquaternion Algebra*; the Peirce basis and the corners are *The Peirce Decomposition of the Biquaternion Algebra*; the idempotents and their conjugacy are *The Square Roots of One and the Idempotents of the Biquaternion Algebra*; the polar form of the norm that carries the completeness proof is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the averaging argument for compact groups is *Representations of Groups*. The three carriers are read one at a time in the three entries that follow this one, *Introduction to the Spin-Zero Centre Subspace*, *Introduction to the Spin-Half Bispinors Spaces* and *Introduction to the Spin-One Anti-Hermitian Subspace*. The reading of the carrier by a field equation is *The Klein–Gordon Equation in Biquaternionic Form*, *The Dirac Equation in Biquaternionic Form* and *The Proca Equation: Massive Spin 1 in Biquaternionic Form*. No dynamics, no action principle, no mass value and no quantum postulate appear below.
 
@@ -48,9 +48,9 @@ The definition. A carrier is a nonzero real subspace of $\mathbb{B}$ that is inv
 
 The route. The three spins come from $SU(2)$ alone, before any subspace is named. One rotor: on the quaternion layer the left-regular generators satisfy $L_k^2=-\mathrm{I}_4$ and $[L_x,L_y]=2L_z$, so the Casimir is $-3\,\mathrm{I}_4$, and $s(s+1)=\tfrac34$ gives $s=\tfrac12$. A pair acting on two sides: each factor carries $\tfrac12$, the addition rule gives $\tfrac12\otimes\tfrac12=0\oplus1$, and the total Casimir on the two-sided carrier has the spectrum $\{0,-2,-2,-2\}$. So $0$, $\tfrac12$ and $1$ are fixed first, and the subspaces are read afterwards.
 
-The three carriers. The line $\mathbb{R}e_t$, of real dimension $1$, under the trivial action, with weight $0$ and spin $0$. The plane $\Sigma=\mathbb{C}\tilde\Pi_+(\vec u)$, of real dimension $2$, under left multiplication by the circle about $\vec u$, with weights $\pm\tfrac12$ and spin $\tfrac12$. The vector part $\mathfrak{k}$, of real dimension $3$, under the conjugation, with weights $\pm1,0$ and spin $1$. The dimensions are $1,2,3$ and the identity $2s+1=\dim_\mathbb{R}$ holds in the three cases.
+The three carriers. The line $\mathbb{R}e_t$, of real dimension $1$, under the trivial action, with weight $0$ and spin $0$. The plane $\Sigma=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u)$, of real dimension $2$, under left multiplication by the circle about $\vec u$, with weights $\pm\tfrac12$ and spin $\tfrac12$. The vector part $\mathfrak{k}$, of real dimension $3$, under the conjugation, with weights $\pm1,0$ and spin $1$. The dimensions are $1,2,3$ and the identity $2s+1=\dim_\mathbb{R}$ holds in the three cases.
 
-The mechanism. Two identities carry every computation: $\vec u\tilde\Pi_+(\vec u)=-i\tilde\Pi_+(\vec u)$, and $[\tfrac12\vec u,\vec v]=\vec u\times\vec v$ for $\vec v\in\mathfrak{k}$. The first gives the scalar $-\tfrac i2$ on the plane, the second gives the cross product on the vector part. The commutator consumes the axis twice and the multiplication consumes it once, and that is the factor of two between the two spectra.
+The mechanism. Two identities carry every computation: $\vec u\tilde\Pi_{\mathrm{id},+}(\vec u)=-i\tilde\Pi_{\mathrm{id},+}(\vec u)$, and $[\tfrac12\vec u,\vec v]=\vec u\times\vec v$ for $\vec v\in\mathfrak{k}$. The first gives the scalar $-\tfrac i2$ on the plane, the second gives the cross product on the vector part. The commutator consumes the axis twice and the multiplication consumes it once, and that is the factor of two between the two spectra.
 
 The criterion. A weight string that is simple and spaced by one is the string of an irreducible module, of complex dimension $2s+1$, where $s$ is its largest value. The three strings $\{0\}$, $\{\pm\tfrac12\}$ and $\{\pm1,0\}$ pass the test, so the three carriers are irreducible; a repeated weight is a direct sum, which is what the whole algebra shows, since its string is $\pm\tfrac12$ with multiplicity two.
 
@@ -88,7 +88,7 @@ The three actions and the three carriers. Three representations occur, and each 
 
 The **trivial action** on the real line $\mathbb{R}e_t$: the conjugation fixes $e_t$, since $ue_tu^{*}=e_t$ for every invertible element, so the line is fixed pointwise and the operator of the generator is zero.
 
-The **spinor action** on the plane $\Sigma=\mathbb{C}\tilde\Pi_+(\vec u)$: left multiplication, restricted to the circle of rotors about the axis $\vec u$. It acts on the plane by a phase of half the angle, which is where the half-integer weight comes from.
+The **spinor action** on the plane $\Sigma=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u)$: left multiplication, restricted to the circle of rotors about the axis $\vec u$. It acts on the plane by a phase of half the angle, which is where the half-integer weight comes from.
 
 The **adjoint action** on the vector part $\mathfrak{k}$: the conjugation by the whole group of invertibles, which preserves $\mathfrak{k}$ and preserves the form, so it is a homomorphism onto $SO(\mathfrak{k})$ with kernel $\{\pm e_t\}$.
 
@@ -171,7 +171,7 @@ The three carriers are stated in the order of their spins, $0$, $\tfrac12$, $1$,
 | carrier | $\dim_\mathbb{R}$ | action | $\rho_{\mathrm{rep}}(A(\vec u))$ | weights | $s$ | $2s+1$ | full turn |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | fixed line $\mathbb{R}e_t$ | $1$ | trivial | $0$ | $\{0\}$ | $0$ | $1$ | $+1$ |
-| spinor plane $\Sigma=\mathbb{C}\tilde\Pi_+$ | $2$ | $L$ on the circle about $\vec u$ | the scalar $-\tfrac i2$ | $\{\pm\tfrac12\}$ | $\tfrac12$ | $2$ | $-1$ |
+| spinor plane $\Sigma=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ | $2$ | $L$ on the circle about $\vec u$ | the scalar $-\tfrac i2$ | $\{\pm\tfrac12\}$ | $\tfrac12$ | $2$ | $-1$ |
 | vector part $\mathfrak{k}$ | $3$ | $\mathrm{Ad}$ of the invertibles | $\vec u\times$ | $\{\pm1,0\}$ | $1$ | $3$ | $+1$ |
 
 ### The Fixed Line
@@ -180,17 +180,17 @@ The line is $\mathbb{R}e_t$. The conjugation fixes it pointwise, because $e_t$ i
 
 ### The Spinor Plane
 
-The plane is $\Sigma=\mathbb{C}\tilde\Pi_+(\vec u)=\mathbb{R}\{\tilde\Pi_+,\,i\tilde\Pi_+\}$, where $\tilde\Pi_+=\tfrac12(e_t+i\vec u)$ is the idempotent of the axis. It lies in the left ideal $S_+=\mathbb{B}\tilde\Pi_+$, so every left multiplication carries it into $S_+$ and not necessarily into itself.
+The plane is $\Sigma=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u)=\mathbb{R}\{\tilde\Pi_{\mathrm{id},+},\,i\tilde\Pi_{\mathrm{id},+}\}$, where $\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec u)$ is the idempotent of the axis. It lies in the left ideal $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$, so every left multiplication carries it into $S_+$ and not necessarily into itself.
 
-The action is one line of algebra. The axis commutes with the idempotent, since the idempotent is a polynomial in it, and $\vec u\tilde\Pi_+=\tfrac12(\vec u+i\vec u^{2})=\tfrac12(\vec u-ie_t)=-i\tilde\Pi_+$. So the rotor multiplies the plane by a phase of half its angle,
+The action is one line of algebra. The axis commutes with the idempotent, since the idempotent is a polynomial in it, and $\vec u\tilde\Pi_{\mathrm{id},+}=\tfrac12(\vec u+i\vec u^{2})=\tfrac12(\vec u-ie_t)=-i\tilde\Pi_{\mathrm{id},+}$. So the rotor multiplies the plane by a phase of half its angle,
 
 $$
-\tilde u\,\tilde\Pi_+(\vec u)=\Bigl(\cos\tfrac\theta2-i\sin\tfrac\theta2\Bigr)\tilde\Pi_+(\vec u)=e^{-i\theta/2}\,\tilde\Pi_+(\vec u).
+\tilde u\,\tilde\Pi_{\mathrm{id},+}(\vec u)=\Bigl(\cos\tfrac\theta2-i\sin\tfrac\theta2\Bigr)\tilde\Pi_{\mathrm{id},+}(\vec u)=e^{-i\theta/2}\,\tilde\Pi_{\mathrm{id},+}(\vec u).
 $$
 
 The half angle is therefore not a convention and not an insertion: it is what the identity gives. The operator of the generator is the scalar $-\tfrac i2$, and as a real operator on two real dimensions its eigenvalues are $-\tfrac i2$ and $+\tfrac i2$. The spectrum is $\{\pm\tfrac12\}$, the dimension two, the spin $\tfrac12$, and a full turn has operator $-1$.
 
-**The plane is not invariant under the whole group.** Left multiplication by the transverse axis sends $\tilde\Pi_+(\vec u)$ out of $\Sigma(\vec u)$, and the plane is carried by the circle of rotations about its own axis and by no larger group. This is the failure that the closure repairs, and the repair is forced: the smallest real subspace that contains the plane and is invariant under all left multiplications has real dimension four, and it is $S_+$.
+**The plane is not invariant under the whole group.** Left multiplication by the transverse axis sends $\tilde\Pi_{\mathrm{id},+}(\vec u)$ out of $\Sigma(\vec u)$, and the plane is carried by the circle of rotations about its own axis and by no larger group. This is the failure that the closure repairs, and the repair is forced: the smallest real subspace that contains the plane and is invariant under all left multiplications has real dimension four, and it is $S_+$.
 
 ### The Vector Part
 
@@ -235,11 +235,11 @@ A carrier is a module and a field takes values in a subspace. The passage from o
 
 ### The First Repair: Invariance
 
-The failure. No real subspace of $\mathbb{B}$ of dimension two is invariant under the whole rotation group. The plane is invariant under the rotations about its axis and under no others: the transverse axis is an element whose left multiplication carries $\tilde\Pi_+(\vec u)$ out of $\Sigma(\vec u)$.
+The failure. No real subspace of $\mathbb{B}$ of dimension two is invariant under the whole rotation group. The plane is invariant under the rotations about its axis and under no others: the transverse axis is an element whose left multiplication carries $\tilde\Pi_{\mathrm{id},+}(\vec u)$ out of $\Sigma(\vec u)$.
 
 The measurement. The residual of $L_{\vec w}\Sigma$ on $\Sigma$ for an invertible element $\vec w$ perpendicular to the axis is $2.24$ in the Euclidean norm on the eight real coordinates, over one hundred random axes, so the failure is not marginal. The dimension of the real span of $L_X\Sigma$ over a basis of the algebra is $4$ in every trial, and that span is $S_+$, which is closed under every left multiplication.
 
-The repair. The smallest invariant real subspace containing the plane is the minimal left ideal $S_+=\mathbb{B}\tilde\Pi_+$. The step is not a convenience and not a supply of $i$ either: the plane is a complex line already and multiplication by $i$ acts inside it. What the plane lacks is the transverse direction, and the repair adds it. The step is inside the ideal, from one complex line to two, and it costs two real dimensions.
+The repair. The smallest invariant real subspace containing the plane is the minimal left ideal $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$. The step is not a convenience and not a supply of $i$ either: the plane is a complex line already and multiplication by $i$ acts inside it. What the plane lacks is the transverse direction, and the repair adds it. The step is inside the ideal, from one complex line to two, and it costs two real dimensions.
 
 The reading. The field equation of a half-integer field is a left multiplication, and a subspace survives an arbitrary left multiplication only if it is a left ideal. The plane therefore cannot be the space a spin-half field takes values in, and the reason is not that the plane is too small for the spin but that it is too small for the equation. This is the precise sense in which a field takes values in a closure: the closure is the smallest space that the equation cannot push it out of.
 
@@ -279,13 +279,13 @@ The reading. The closure adds one degree of freedom and it is the phase. A real 
 
 ### The Spinor Space
 
-The carrier is the spinor plane and the closure is the spinor space $S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec u_2\tilde\Pi_+\}$, of real dimension four and complex dimension two. It is a minimal left ideal: no nonzero left subspace of it is invariant. It carries the same carrier as the plane, with weights $\pm\tfrac12$, and the step adds the transverse direction.
+The carrier is the spinor plane and the closure is the spinor space $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\{\tilde\Pi_{\mathrm{id},+},\vec u_2\tilde\Pi_{\mathrm{id},+}\}$, of real dimension four and complex dimension two. It is a minimal left ideal: no nonzero left subspace of it is invariant. It carries the same carrier as the plane, with weights $\pm\tfrac12$, and the step adds the transverse direction.
 
 The reading. The closure adds the state the equation reaches. The plane is the set of values a spinor can have at a point in a basis of one complex line; the ideal is the set of values it can have when the equation is allowed to multiply by anything. The two differ by one complex direction, and that direction is not a second spin: it is the same spin, in the other basis vector of the module.
 
 ### The Bispinor Spaces
 
-The complementary idempotent $\tilde\Pi_-=\tfrac12(e_t-i\vec u)=e_t-\tilde\Pi_+$ gives a second ideal $S_-=\mathbb{B}\tilde\Pi_-$, of the same dimension, and the sum is direct, $\mathbb{B}=S_+\oplus S_-$. Each axis therefore produces a **bispinor space**: the algebra read through the Peirce basis of that axis, that is, the pair of ideals and their sum.
+The complementary idempotent $\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec u)=e_t-\tilde\Pi_{\mathrm{id},+}$ gives a second ideal $S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}$, of the same dimension, and the sum is direct, $\mathbb{B}=S_+\oplus S_-$. Each axis therefore produces a **bispinor space**: the algebra read through the Peirce basis of that axis, that is, the pair of ideals and their sum.
 
 The family. There is one bispinor space per Peirce basis, so there are as many as there are unit axes, and two axes that differ by a sign give the same unordered pair, so the family is indexed by the real projective plane. As sets the members coincide, because each of them is $\mathbb{B}$; what varies is the splitting. The family is therefore a family of decompositions of one space and not a family of subspaces of it, and the naming keeps that apart: a spinor space is a subspace, and a bispinor space is the whole space together with a splitting.
 
@@ -404,9 +404,9 @@ The three closures are not a decomposition. The carriers are one algebra read th
 | $\mathbb{B}_\Psi$, $\mathbb{B}_\Phi$ | the Hermitian and anti-Hermitian sectors, the second being the material sector |
 | $\vec u$ | a unit real axis |
 | $\theta$ | the rotation angle, twice the angle of the rotor |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u)$ | the idempotents of the axis, a Peirce basis |
-| $\Sigma=\mathbb{C}\tilde\Pi_+$ | the spinor plane, real dimension $2$ |
-| $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the spinor spaces, real dimension $4$ |
+| $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec u)$ | the idempotents of the axis, a Peirce basis |
+| $\Sigma=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ | the spinor plane, real dimension $2$ |
+| $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | the spinor spaces, real dimension $4$ |
 | $\mathbb{H}$ | the quaternion layer, $\mathbb{R}e_t\oplus\mathfrak{k}$, real dimension $4$ |
 | $L_k$, $R_k$ | left and right multiplication by $\vec e_k$, real $4\times4$ operators |
 | $A_k=\tfrac12\vec e_k$, $A_k'=\tfrac12R_{\vec e_k}$ | the halved generators of the two sides |

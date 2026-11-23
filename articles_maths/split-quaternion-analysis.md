@@ -123,7 +123,7 @@ which is the zero divisor set of the algebra in the vector subspace.
 
 **Corollary (No Identity Theorem).** Two convergent power series that agree on an open set need not agree on their common domain; the identity theorem fails.
 
-**Proof.** The algebra has zero divisors, so a nonzero element can act as zero on a factor: if $\tilde\nu \neq 0$ has $\tilde\nu^2 = 0$, then the function $\tilde q \mapsto \tilde\nu(\tilde q - q_t)$ vanishes on the set $\tilde q - q_t \in \tilde\nu\mathbb{H}_{\mathrm{spl}}$, which contains a point but not an open set, while $\tilde q \mapsto \tilde\nu(\tilde q-q_t)^2$ vanishes on a larger set; the standard connectedness argument of the identity theorem requires a product ring with no nilpotents. The failure is the nilpotent phenomenon of *Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*.
+**Proof.** The algebra has zero divisors, so a nonzero element can act as zero on a factor: if $\tilde\pi_{\mathrm{nil}} \neq 0$ has $\tilde\pi_{\mathrm{nil}}^2 = 0$, then the function $\tilde q \mapsto \tilde\pi_{\mathrm{nil}}(\tilde q - q_t)$ vanishes on the set $\tilde q - q_t \in \tilde\pi_{\mathrm{nil}}\mathbb{H}_{\mathrm{spl}}$, which contains a point but not an open set, while $\tilde q \mapsto \tilde\pi_{\mathrm{nil}}(\tilde q-q_t)^2$ vanishes on a larger set; the standard connectedness argument of the identity theorem requires a product ring with no nilpotents. The failure is the nilpotent phenomenon of *Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*.
 
 ## Singularities
 
@@ -147,32 +147,32 @@ which blows up as the denominator tends to zero, and the limit depends on the di
 
 The idempotents of the algebra give coordinates in which the algebraic operations become explicit, and they turn the calculus into a coordinatewise calculus.
 
-**Definition.** With $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$, the **Peirce coordinates** of $\tilde q$ are
+**Definition.** With $\tilde\pi_{\mathrm{id},1,2} = \tfrac12(1 \pm \vec e_y)$, the **Peirce coordinates** of $\tilde q$ are
 
 $$
-\tilde q = \sum_{\epsilon,\eta \in \{+,-\}} \tilde\pi_\epsilon\, \tilde q\, \tilde\pi_\eta,
+\tilde q = \sum_{\epsilon,\eta \in \{+,-\}} \tilde\pi_{\mathrm{id},\epsilon}\, \tilde q\, \tilde\pi_{\mathrm{id},\eta},
 $$
 
-and the four components $\tilde\pi_\epsilon \tilde q \tilde\pi_\eta$ are one-dimensional real subspaces.
+and the four components $\tilde\pi_{\mathrm{id},\epsilon} \tilde q \tilde\pi_{\mathrm{id},\eta}$ are one-dimensional real subspaces.
 
 **Theorem (The Peirce Coordinates Are the Matrix Entries of the Adapted Model).** The map
 
 $$
-\tilde q \longmapsto \big(\tilde\pi_1\tilde q\tilde\pi_1,\ \tilde\pi_1\tilde q\tilde\pi_2,\ \tilde\pi_2\tilde q\tilde\pi_1,\ \tilde\pi_2\tilde q\tilde\pi_2\big)
+\tilde q \longmapsto \big(\tilde\pi_{\mathrm{id},1}\tilde q\tilde\pi_{\mathrm{id},1},\ \tilde\pi_{\mathrm{id},1}\tilde q\tilde\pi_{\mathrm{id},2},\ \tilde\pi_{\mathrm{id},2}\tilde q\tilde\pi_{\mathrm{id},1},\ \tilde\pi_{\mathrm{id},2}\tilde q\tilde\pi_{\mathrm{id},2}\big)
 $$
 
 is a linear isomorphism of $\mathbb{H}_{\mathrm{spl}}$ with the four lines, and the components multiply as the matrix units: for any $\tilde q_1, \tilde q_2$,
 
 $$
-(\tilde\pi_\epsilon \tilde q_1 \tilde\pi_\eta)(\tilde\pi_{\eta'} \tilde q_2 \tilde\pi_{\epsilon'}) = 0 \quad \text{unless } \eta = \eta',
+(\tilde\pi_{\mathrm{id},\epsilon} \tilde q_1 \tilde\pi_{\mathrm{id},\eta})(\tilde\pi_{\mathrm{id},\eta'} \tilde q_2 \tilde\pi_{\mathrm{id},\epsilon'}) = 0 \quad \text{unless } \eta = \eta',
 $$
 
-and, when $\eta = \eta'$, the product is $\tilde\pi_\epsilon (\tilde q_1 \tilde\pi_\eta \tilde q_2) \tilde\pi_{\epsilon'}$, which lies in the line $\tilde\pi_\epsilon\mathbb{H}_{\mathrm{spl}}\tilde\pi_{\epsilon'}$. The coordinates are therefore a presentation of the algebra as a matrix algebra.
+and, when $\eta = \eta'$, the product is $\tilde\pi_{\mathrm{id},\epsilon} (\tilde q_1 \tilde\pi_{\mathrm{id},\eta} \tilde q_2) \tilde\pi_{\mathrm{id},\epsilon'}$, which lies in the line $\tilde\pi_{\mathrm{id},\epsilon}\mathbb{H}_{\mathrm{spl}}\tilde\pi_{\mathrm{id},\epsilon'}$. The coordinates are therefore a presentation of the algebra as a matrix algebra.
 
 Written in the basis $1, \vec e_x, \vec e_y, \vec e_z$, the four components of $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ are
 
 $$
-\tilde\pi_1\tilde q\tilde\pi_1 = (q_t+q_y)\,\tilde\pi_1, \qquad \tilde\pi_2\tilde q\tilde\pi_2 = (q_t-q_y)\,\tilde\pi_2, \qquad \tilde\pi_1\tilde q\tilde\pi_2 = \tfrac{q_x-q_z}{2}(\vec e_x-\vec e_z), \qquad \tilde\pi_2\tilde q\tilde\pi_1 = \tfrac{q_x+q_z}{2}(\vec e_x+\vec e_z).
+\tilde\pi_{\mathrm{id},1}\tilde q\tilde\pi_{\mathrm{id},1} = (q_t+q_y)\,\tilde\pi_{\mathrm{id},1}, \qquad \tilde\pi_{\mathrm{id},2}\tilde q\tilde\pi_{\mathrm{id},2} = (q_t-q_y)\,\tilde\pi_{\mathrm{id},2}, \qquad \tilde\pi_{\mathrm{id},1}\tilde q\tilde\pi_{\mathrm{id},2} = \tfrac{q_x-q_z}{2}(\vec e_x-\vec e_z), \qquad \tilde\pi_{\mathrm{id},2}\tilde q\tilde\pi_{\mathrm{id},1} = \tfrac{q_x+q_z}{2}(\vec e_x+\vec e_z).
 $$
 
 The Peirce coordinates of an element are the four numbers
@@ -181,9 +181,9 @@ $$
 (q_t+q_y,\ q_t-q_y,\ q_x-q_z,\ q_x+q_z),
 $$
 
-which are the two eigenvalues of the diagonal projections, $\tilde\pi_1\tilde q\tilde\pi_1 = (q_t+q_y)\tilde\pi_1$ and $\tilde\pi_2\tilde q\tilde\pi_2 = (q_t-q_y)\tilde\pi_2$, together with the two off-diagonal corner coefficients $q_x-q_z$ and $q_x+q_z$; they are a linear change of the standard coordinates $(q_t,q_x,q_y,q_z)$.
+which are the two eigenvalues of the diagonal projections, $\tilde\pi_{\mathrm{id},1}\tilde q\tilde\pi_{\mathrm{id},1} = (q_t+q_y)\tilde\pi_{\mathrm{id},1}$ and $\tilde\pi_{\mathrm{id},2}\tilde q\tilde\pi_{\mathrm{id},2} = (q_t-q_y)\tilde\pi_{\mathrm{id},2}$, together with the two off-diagonal corner coefficients $q_x-q_z$ and $q_x+q_z$; they are a linear change of the standard coordinates $(q_t,q_x,q_y,q_z)$.
 
-**Proof.** The decomposition of the identity $1 = \tilde\pi_1 + \tilde\pi_2$ with $\tilde\pi_1\tilde\pi_2 = \tilde\pi_2\tilde\pi_1 = 0$ gives the direct sum, and the dimension count gives one dimension per Peirce space; the vanishing of the mixed products is $\tilde\pi_\eta \tilde\pi_{\eta'} = 0$ for $\eta \neq \eta'$. The displayed components are read off the multiplication table: $\tilde\pi_1\tilde\pi_1 = \tilde\pi_1$, $\tilde\pi_{1,2} \vec e_y \tilde\pi_{1,2} = \pm \tilde\pi_{1,2}$, $\tilde\pi_1\vec e_x\tilde\pi_1 = \tilde\pi_1\vec e_z\tilde\pi_1 = \tilde\pi_2\vec e_x\tilde\pi_2 = \tilde\pi_2\vec e_z\tilde\pi_2 = 0$, $\tilde\pi_1\vec e_x\tilde\pi_2 = \tfrac12(\vec e_x-\vec e_z)$, $\tilde\pi_1\vec e_z\tilde\pi_2 = -\tfrac12(\vec e_x-\vec e_z)$, $\tilde\pi_2\vec e_x\tilde\pi_1 = \tilde\pi_2\vec e_z\tilde\pi_1 = \tfrac12(\vec e_x+\vec e_z)$. The Peirce coordinates are read off the multiplication table, and they are a linear change of the standard coordinates.
+**Proof.** The decomposition of the identity $1 = \tilde\pi_{\mathrm{id},1} + \tilde\pi_{\mathrm{id},2}$ with $\tilde\pi_{\mathrm{id},1}\tilde\pi_{\mathrm{id},2} = \tilde\pi_{\mathrm{id},2}\tilde\pi_{\mathrm{id},1} = 0$ gives the direct sum, and the dimension count gives one dimension per Peirce space; the vanishing of the mixed products is $\tilde\pi_{\mathrm{id},\eta} \tilde\pi_{\mathrm{id},\eta'} = 0$ for $\eta \neq \eta'$. The displayed components are read off the multiplication table: $\tilde\pi_{\mathrm{id},1}\tilde\pi_{\mathrm{id},1} = \tilde\pi_{\mathrm{id},1}$, $\tilde\pi_{\mathrm{id},1,2} \vec e_y \tilde\pi_{\mathrm{id},1,2} = \pm \tilde\pi_{\mathrm{id},1,2}$, $\tilde\pi_{\mathrm{id},1}\vec e_x\tilde\pi_{\mathrm{id},1} = \tilde\pi_{\mathrm{id},1}\vec e_z\tilde\pi_{\mathrm{id},1} = \tilde\pi_{\mathrm{id},2}\vec e_x\tilde\pi_{\mathrm{id},2} = \tilde\pi_{\mathrm{id},2}\vec e_z\tilde\pi_{\mathrm{id},2} = 0$, $\tilde\pi_{\mathrm{id},1}\vec e_x\tilde\pi_{\mathrm{id},2} = \tfrac12(\vec e_x-\vec e_z)$, $\tilde\pi_{\mathrm{id},1}\vec e_z\tilde\pi_{\mathrm{id},2} = -\tfrac12(\vec e_x-\vec e_z)$, $\tilde\pi_{\mathrm{id},2}\vec e_x\tilde\pi_{\mathrm{id},1} = \tilde\pi_{\mathrm{id},2}\vec e_z\tilde\pi_{\mathrm{id},1} = \tfrac12(\vec e_x+\vec e_z)$. The Peirce coordinates are read off the multiplication table, and they are a linear change of the standard coordinates.
 
 **Corollary (Partial Derivatives and Smoothness).** A function $f$ of the split-quaternion variable is smooth in the sense of this article exactly when its four Peirce components are smooth functions of the four Peirce coordinates; the partial derivatives with respect to the Peirce coordinates are the components of the derivative, and every operator of the preceding section is a first-order operator with constant coefficients in these coordinates.
 

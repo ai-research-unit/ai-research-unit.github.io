@@ -14,7 +14,7 @@ The second is an **excitation**: one quantum occupying such a mode, the state $a
 
 The answer has two parts, and the parts should be separated before any algebra is written.
 
-1. **The occupation state is in $\mathbb{B}_{\Psi}$, and this can be checked.** For one fermionic mode the occupation-number operator $\tilde\Pi_-=a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}$ and the density matrix $\tilde{Ϛ}_{\Psi}$ of the mode are Hermitian elements of $\mathbb{B}$, and they lie in $\mathbb{B}_{\Psi}$ exactly. This is the assertion that "the informational sector carries the state", stated in the only form in which it is true.
+1. **The occupation state is in $\mathbb{B}_{\Psi}$, and this can be checked.** For one fermionic mode the occupation-number operator $\tilde\Pi_{\mathrm{id},-}=a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}$ and the density matrix $\tilde{Ϛ}_{\Psi}$ of the mode are Hermitian elements of $\mathbb{B}$, and they lie in $\mathbb{B}_{\Psi}$ exactly. This is the assertion that "the informational sector carries the state", stated in the only form in which it is true.
 
 2. **The mode function is not in $\mathbb{B}_{\Psi}$.** A mode function is a definite solution: one element of the space of solutions of the free equation. That solution space is a module over $\mathbb{B}$ (the spinor module, for the Dirac field) or, for the Maxwell potential and its polarizations, a subspace of the material sector $\mathbb{B}_{\Phi}$. The only spinor of the Dirac solution space that is Hermitian is the Hermitian idempotent itself, a one-dimensional ray.
 
@@ -28,14 +28,14 @@ $$
 \mathbb{B}_{\Psi}=\{\tilde Q:\tilde Q^{*}=\tilde Q\}=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
 
-with $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the reduction is normalised by $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)=2Q_{1,t}Q_{2,t}$, so that $2\,\mathrm{Sc}(e_t)=2$. The **spinor module** is the Peirce carrier $\mathbb{B}\tilde\Pi_+$, which is the minimal left ideal here, with
+with $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the reduction is normalised by $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)=2Q_{1,t}Q_{2,t}$, so that $2\,\mathrm{Sc}(e_t)=2$. The **spinor module** is the Peirce carrier $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$, which is the minimal left ideal here, with
 
 $$
-\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\qquad \tilde\Pi_-=\tfrac12(e_t-i\vec e_z),\qquad
-\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y),\qquad \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y),
+\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z),\qquad \tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec e_z),\qquad
+\vec\Pi_{\mathrm{nil},x}=\tfrac12(i\vec e_x-\vec e_y),\qquad \vec\Pi_{\mathrm{nil},y}=\tfrac12(i\vec e_x+\vec e_y),
 $$
 
-and basis $\{\tilde\Pi_+,\vec\Upsilon_y\}$ for $\mathbb{B}\tilde\Pi_+$, where the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents; the matrix-unit relations $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$, $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$, $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$ hold. The field expansion, the mode operators, and the Fock construction are those of the companion quantization and Fock-space articles and are not rederived here.
+and basis $\{\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},y}\}$ for $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$, where the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$ are its two associated idempotents; the matrix-unit relations $\vec\Pi_{\mathrm{nil},x}\vec\Pi_{\mathrm{nil},y}=\tilde\Pi_{\mathrm{id},+}$, $\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}=\tilde\Pi_{\mathrm{id},-}$, $\vec\Pi_{\mathrm{nil},x}^2=\vec\Pi_{\mathrm{nil},y}^2=0$ hold. The field expansion, the mode operators, and the Fock construction are those of the companion quantization and Fock-space articles and are not rederived here.
 
 ## The Mode Function Is a Definite Solution
 
@@ -49,7 +49,7 @@ $$
 
 with the mode operators and spinors of the parent article. Each term of the expansion is a **mode function**: the positive-frequency mode functions are $w^{(r)}(\vec p)\exp(-i\theta_{\mathrm{pwp}})$ and the negative-frequency ones $v^{(r)}(\vec p)\exp(+i\theta_{\mathrm{pwp}})$. Three labels specify a mode function completely — the momentum $\vec p$, the spin index $r$, and the sign of the frequency — and the mode function is a solution of the free equation with those labels.
 
-The word *definite* in "definite solution" means that the mode function is a single element of the solution space, not a general superposition. The general solution is the integral over all modes; a mode function is one basis vector of that integral. In the biquaternion interpretation of the parent article, a mode function is the module representative of a biquaternion plane wave $\tilde{Ξ}_{0}\exp(\tilde P_{\Phi}\tilde{Q})$: the four-wavevector $\tilde P_{\Phi}=\hbar\,(i\omega/c\,e_t+\vec k_\Phi)$ is an element of the material sector $\mathbb{B}_{\Phi}$ (it appears in the table of four-vectors of *The Material Sector: Four-Vectors, Interval and Lorentz Action*), and the amplitude $\tilde{Ξ}_{0}$ is a spinor, i.e. an element of the module $\mathbb{B}\tilde\Pi_+$. Both pieces are therefore objects attached to the material sector and to the module. Neither is an element of the Hermitian subspace $\mathbb{B}_{\Psi}$.
+The word *definite* in "definite solution" means that the mode function is a single element of the solution space, not a general superposition. The general solution is the integral over all modes; a mode function is one basis vector of that integral. In the biquaternion interpretation of the parent article, a mode function is the module representative of a biquaternion plane wave $\tilde{Ξ}_{0}\exp(\tilde P_{\Phi}\tilde{Q})$: the four-wavevector $\tilde P_{\Phi}=\hbar\,(i\omega/c\,e_t+\vec k_\Phi)$ is an element of the material sector $\mathbb{B}_{\Phi}$ (it appears in the table of four-vectors of *The Material Sector: Four-Vectors, Interval and Lorentz Action*), and the amplitude $\tilde{Ξ}_{0}$ is a spinor, i.e. an element of the module $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$. Both pieces are therefore objects attached to the material sector and to the module. Neither is an element of the Hermitian subspace $\mathbb{B}_{\Psi}$.
 
 The Maxwell case is structurally the same and algebraically simpler. The one-particle space at fixed momentum is the space of transverse polarization amplitudes, two real dimensions, and the companion photon article identifies the polarization directions with the plane in $\mathrm{Vect}(\mathbb{B}_{\Phi})$ orthogonal to the propagation direction $\vec u_\Phi$. The mode function of the potential, $\varepsilon_\mu(\vec k_\Phi)\exp(-ik\cdot x)$, is a four-vector with a definite **linear** polarization; its polarization vector is then a direction in $\mathbb{B}_{\Phi}$. Again the definite solution lives on the material side. The photon article states the structural reason: the polarization directions are real spatial vectors and sit in the material sector, while the helicity operator is represented by the Hermitian element $i\vec u_\Phi$ of $\mathbb{B}_{\Psi}$ and is an *observable* of the mode, not the mode function itself.
 
@@ -74,25 +74,25 @@ counts the quanta, with $[N,a_{\mathrm{fop},r}^{\dagger}]=+a_{\mathrm{fop},r}^{\
 For a single fermionic mode this can be reduced to an object of the finite-dimensional algebra, because $\mathbb{B}\cong M_2(\mathbb{C})$ is exactly the operator algebra of one fermionic mode. The parent Fock-space article exhibits the ladder operators in the algebra as the matrix units
 
 $$
-\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y),\qquad
-\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y),
+\vec\Pi_{\mathrm{nil},x}=\tfrac12(i\vec e_x-\vec e_y),\qquad
+\vec\Pi_{\mathrm{nil},y}=\tfrac12(i\vec e_x+\vec e_y),
 $$
 
-which satisfy $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ and $\vec\Upsilon_x^2=(\vec\Upsilon_y)^2=0$. The occupation-number operator of the single mode is then
+which satisfy $\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\}=e_t$ and $\vec\Pi_{\mathrm{nil},x}^2=(\vec\Pi_{\mathrm{nil},y})^2=0$. The occupation-number operator of the single mode is then
 
 $$
-\boxed{\;\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z)\;},
+\boxed{\;\tilde\Pi_{\mathrm{id},-}=\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}=\tfrac12(e_t-i\vec e_z)\;},
 $$
 
 and the vacuum idempotent is its complement
 
 $$
-e_t-\tilde\Pi_-=\vec\Upsilon_x\,\vec\Upsilon_y=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z).
+e_t-\tilde\Pi_{\mathrm{id},-}=\vec\Pi_{\mathrm{nil},x}\,\vec\Pi_{\mathrm{nil},y}=\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z).
 $$
 
 These are the one-mode operators of the Fock-space and harmonic-oscillator articles, written in the module realization of this article.
 
-Two remarks about the operators are needed before the sector question is posed. First, the **excitation operator is not Hermitian**: $\vec\Upsilon_y=\vec\Upsilon_x^{*}\neq\vec\Upsilon_x$ and $\vec\Upsilon_y\neq-\vec\Upsilon_x$, since $\vec\Upsilon_x$ has the Hermitian part $\tfrac12 i\vec e_x$ and the anti-Hermitian part $-\tfrac12 \vec e_y$, so it lies in neither sector. Creation and annihilation operators are not observables, and no sector claim about them is being made. What lies in a sector is the number operator $\tilde\Pi_-$, which is Hermitian, and the state, which is Hermitian and positive. Second, the number operator is an **idempotent**: $\tilde\Pi_-^2=\tilde\Pi_-$ and $\tilde\Pi_-^{*}=\tilde\Pi_-$. It is a Hermitian idempotent, and it is the operator form of the occupation "one". The pair $\{e_t-\tilde\Pi_-,\tilde\Pi_-\}$ is the pair of orthogonal idempotents $\tilde\Pi_+,\tilde\Pi_-$ whose Peirce decomposition splits the spinor module into its two components.
+Two remarks about the operators are needed before the sector question is posed. First, the **excitation operator is not Hermitian**: $\vec\Pi_{\mathrm{nil},y}=\vec\Pi_{\mathrm{nil},x}^{*}\neq\vec\Pi_{\mathrm{nil},x}$ and $\vec\Pi_{\mathrm{nil},y}\neq-\vec\Pi_{\mathrm{nil},x}$, since $\vec\Pi_{\mathrm{nil},x}$ has the Hermitian part $\tfrac12 i\vec e_x$ and the anti-Hermitian part $-\tfrac12 \vec e_y$, so it lies in neither sector. Creation and annihilation operators are not observables, and no sector claim about them is being made. What lies in a sector is the number operator $\tilde\Pi_{\mathrm{id},-}$, which is Hermitian, and the state, which is Hermitian and positive. Second, the number operator is an **idempotent**: $\tilde\Pi_{\mathrm{id},-}^2=\tilde\Pi_{\mathrm{id},-}$ and $\tilde\Pi_{\mathrm{id},-}^{*}=\tilde\Pi_{\mathrm{id},-}$. It is a Hermitian idempotent, and it is the operator form of the occupation "one". The pair $\{e_t-\tilde\Pi_{\mathrm{id},-},\tilde\Pi_{\mathrm{id},-}\}$ is the pair of orthogonal idempotents $\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-}$ whose Peirce decomposition splits the spinor module into its two components.
 
 ## Three Objects, Three Homes
 
@@ -100,9 +100,9 @@ The phrase "an excitation and its state" packs three different objects together,
 
 | Object | Definition | Algebraic home |
 |---|---|---|
-| Mode function | A definite solution $w^{(r)}(\vec p)\exp(-i\theta_{\mathrm{pwp}})$ | Spinor module $\mathbb{B}\tilde\Pi_+$ (Dirac); $\mathrm{Vect}(\mathbb{B}_{\Phi})$ (Maxwell polarization) |
-| Excitation operator | $\vec\Upsilon_y$ (or $a_{\mathrm{fop},r}^{\dagger}(\vec p)$) | Neither $\mathbb{B}_{\Psi}$ nor $\mathbb{B}_{\Phi}$; not Hermitian |
-| Occupation state | $\vert n\rangle$, or the density matrix $\tilde{Ϛ}_{\Psi}$ | State vector: the module; density matrix and $\tilde\Pi_-$: $\mathbb{B}_{\Psi}$ (one fermionic mode) |
+| Mode function | A definite solution $w^{(r)}(\vec p)\exp(-i\theta_{\mathrm{pwp}})$ | Spinor module $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ (Dirac); $\mathrm{Vect}(\mathbb{B}_{\Phi})$ (Maxwell polarization) |
+| Excitation operator | $\vec\Pi_{\mathrm{nil},y}$ (or $a_{\mathrm{fop},r}^{\dagger}(\vec p)$) | Neither $\mathbb{B}_{\Psi}$ nor $\mathbb{B}_{\Phi}$; not Hermitian |
+| Occupation state | $\vert n\rangle$, or the density matrix $\tilde{Ϛ}_{\Psi}$ | State vector: the module; density matrix and $\tilde\Pi_{\mathrm{id},-}$: $\mathbb{B}_{\Psi}$ (one fermionic mode) |
 
 The third row is the assertion that needs care. The **state vector** $|\tilde{Ξ}\rangle=\alpha|0\rangle+\beta|1\rangle$ of one mode is an element of the two-dimensional occupation Hilbert space, which is the fundamental module $S\cong\mathbb{C}^2$, not the algebra; it is not an element of $\mathbb{B}_{\Psi}$. It is the **density matrix**
 
@@ -110,15 +110,15 @@ $$
 \tilde{Ϛ}_{\Psi}=\tfrac12\big(e_t+i\vec s_{\Psi}\big),\qquad \vec s_{\Psi}\in\mathbb{R}^3,\quad |\vec s_{\Psi}|\leq 1,
 $$
 
-of the mode, and the occupation-number observable $\tilde\Pi_-$, that are elements of the algebra, and they are elements of $\mathbb{B}_{\Psi}$. So the precise interpretation of "the informational sector carries the state" is: it carries the *state as a density matrix*, not the *state as a vector*, and it carries the observables. This is the distinction the ontology companion draws when it says that the state is an element of $\mathbb{B}_{\Psi}$: the object meant there is the density matrix, and the same article records that the algebra does not decide the interpretation of that element.
+of the mode, and the occupation-number observable $\tilde\Pi_{\mathrm{id},-}$, that are elements of the algebra, and they are elements of $\mathbb{B}_{\Psi}$. So the precise interpretation of "the informational sector carries the state" is: it carries the *state as a density matrix*, not the *state as a vector*, and it carries the observables. This is the distinction the ontology companion draws when it says that the state is an element of $\mathbb{B}_{\Psi}$: the object meant there is the density matrix, and the same article records that the algebra does not decide the interpretation of that element.
 
 ## What Is Asserted to Lie in $\mathbb{B}_{\Psi}$, and Its Verification
 
 The assertions to be checked are now explicit.
 
-**A1. The occupation-number operator is in $\mathbb{B}_{\Psi}$.** With $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, compute $\tilde\Pi_-^{*}=\tfrac12(e_t^\dagger+(-i\vec e_z)^{*})=\tfrac12(e_t-i\vec e_z)=\tilde\Pi_-$, so $\tilde\Pi_-\in\mathbb{B}_{\Psi}$. Its square is $\tilde\Pi_-^2=\tfrac14(e_t-i\vec e_z)^2=\tfrac14(e_t^2-2i\vec e_z+(i\vec e_z)^2)=\tfrac14(e_t-2i\vec e_z+e_t)=\tfrac12(e_t-i\vec e_z)=\tilde\Pi_-$, using $(i\vec e_z)^2=e_t$. So the number operator is a Hermitian idempotent — the pure-state idempotent of the occupied state — and it lies in $\mathbb{B}_{\Psi}$.
+**A1. The occupation-number operator is in $\mathbb{B}_{\Psi}$.** With $\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec e_z)$, compute $\tilde\Pi_{\mathrm{id},-}^{*}=\tfrac12(e_t^\dagger+(-i\vec e_z)^{*})=\tfrac12(e_t-i\vec e_z)=\tilde\Pi_{\mathrm{id},-}$, so $\tilde\Pi_{\mathrm{id},-}\in\mathbb{B}_{\Psi}$. Its square is $\tilde\Pi_{\mathrm{id},-}^2=\tfrac14(e_t-i\vec e_z)^2=\tfrac14(e_t^2-2i\vec e_z+(i\vec e_z)^2)=\tfrac14(e_t-2i\vec e_z+e_t)=\tfrac12(e_t-i\vec e_z)=\tilde\Pi_{\mathrm{id},-}$, using $(i\vec e_z)^2=e_t$. So the number operator is a Hermitian idempotent — the pure-state idempotent of the occupied state — and it lies in $\mathbb{B}_{\Psi}$.
 
-**A2. The vacuum idempotent is in $\mathbb{B}_{\Psi}$.** The complement $e_t-\tilde\Pi_-=\tfrac12(e_t+i\vec e_z)=\tilde\Pi_+$ is Hermitian and idempotent by the same computation, so $\tilde\Pi_+\in\mathbb{B}_{\Psi}$. More generally $\tfrac12(e_t+i\vec u)$ is Hermitian, idempotent, and of trace one for every invertible element pure quaternion $\vec u$. These are the pure-state idempotents of *The Informational Sector: States, Observables and Probability*, and the single-mode occupation basis is exactly this pair.
+**A2. The vacuum idempotent is in $\mathbb{B}_{\Psi}$.** The complement $e_t-\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t+i\vec e_z)=\tilde\Pi_{\mathrm{id},+}$ is Hermitian and idempotent by the same computation, so $\tilde\Pi_{\mathrm{id},+}\in\mathbb{B}_{\Psi}$. More generally $\tfrac12(e_t+i\vec u)$ is Hermitian, idempotent, and of trace one for every invertible element pure quaternion $\vec u$. These are the pure-state idempotents of *The Informational Sector: States, Observables and Probability*, and the single-mode occupation basis is exactly this pair.
 
 **A3. The density matrix of the mode is in $\mathbb{B}_{\Psi}$.** For $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $\vec s_{\Psi}\in\mathbb{R}^3$, the scalar part is real and the vector part is purely imaginary, so $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ by the definition of the sector. Direct computation gives
 $$
@@ -128,16 +128,16 @@ $$
 $$
 and the eigenvalues are $\lambda_\pm=\tfrac12(1\pm|\vec s_{\Psi}|)$, so positivity is exactly $|\vec s_{\Psi}|\leq1$. The set of such $\tilde{Ϛ}_{\Psi}$ is the Bloch ball, a three-dimensional subset of the four-dimensional real space $\mathbb{B}_{\Psi}$.
 
-**A4. The ladder operators are not in either sector.** For $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ one has $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)\neq\vec\Upsilon_x$, and $\vec\Upsilon_y\neq-\vec\Upsilon_x$; splitting into Hermitian and anti-Hermitian parts,
+**A4. The ladder operators are not in either sector.** For $\vec\Pi_{\mathrm{nil},x}=\tfrac12(i\vec e_x-\vec e_y)$ one has $\vec\Pi_{\mathrm{nil},y}=\tfrac12(i\vec e_x+\vec e_y)\neq\vec\Pi_{\mathrm{nil},x}$, and $\vec\Pi_{\mathrm{nil},y}\neq-\vec\Pi_{\mathrm{nil},x}$; splitting into Hermitian and anti-Hermitian parts,
 $$
-\vec\Upsilon_x=\tfrac12 i\vec e_x+\big(-\tfrac12 \vec e_y\big),\qquad
-\vec\Upsilon_y=\tfrac12 i\vec e_x+\tfrac12 \vec e_y,
+\vec\Pi_{\mathrm{nil},x}=\tfrac12 i\vec e_x+\big(-\tfrac12 \vec e_y\big),\qquad
+\vec\Pi_{\mathrm{nil},y}=\tfrac12 i\vec e_x+\tfrac12 \vec e_y,
 $$
 with the first term of each in $\mathbb{B}_{\Psi}$ and the second in $\mathbb{B}_{\Phi}$. So the excitation operator is a sum of one element of each sector and is an element of neither. This is not a defect; it is the statement that raising and lowering are not observables.
 
-**A5. The canonical relation holds once, and in the fermionic form.** The matrix-unit relations give $\{\vec\Upsilon_x,\vec\Upsilon_y\}=\vec\Upsilon_x\vec\Upsilon_y+\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_++\tilde\Pi_-=e_t$, $\vec\Upsilon_x^2=0$, $(\vec\Upsilon_y)^2=0$, and $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x$. The bosonic relation $[\vec\Upsilon_x,\vec\Upsilon_y]=e_t$ cannot hold for any pair in $\mathbb{B}$, because the scalar part of a commutator vanishes while $2\,\mathrm{Sc}(e_t)=2$; this is the obstruction recorded in the Fock-space and photon articles and is not reopened here.
+**A5. The canonical relation holds once, and in the fermionic form.** The matrix-unit relations give $\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\}=\vec\Pi_{\mathrm{nil},x}\vec\Pi_{\mathrm{nil},y+}\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}=\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$, $\vec\Pi_{\mathrm{nil},x}^2=0$, $(\vec\Pi_{\mathrm{nil},y})^2=0$, and $\tilde\Pi_{\mathrm{id},-}=\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}$. The bosonic relation $[\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}]=e_t$ cannot hold for any pair in $\mathbb{B}$, because the scalar part of a commutator vanishes while $2\,\mathrm{Sc}(e_t)=2$; this is the obstruction recorded in the Fock-space and photon articles and is not reopened here.
 
-Two points about the reach of A1–A3 belong immediately after them. First, the assertions are about **one mode**. Both $\vec\Upsilon_x,\vec\Upsilon_y$ and the Peirce idempotents are attached to a single pair of orthogonal idempotents and to a single mode; there is no second pair commuting with the first in the four-dimensional algebra, hence no second fermionic mode. Second, the assertions are about the **density matrix** and the **number operator**, not about the state vector. The state vector is in the module, and the module is not $\mathbb{B}_{\Psi}$: the two are different subspaces of $\mathbb{B}$ that meet in a ray. The next section makes that intersection precise.
+Two points about the reach of A1–A3 belong immediately after them. First, the assertions are about **one mode**. Both $\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}$ and the Peirce idempotents are attached to a single pair of orthogonal idempotents and to a single mode; there is no second pair commuting with the first in the four-dimensional algebra, hence no second fermionic mode. Second, the assertions are about the **density matrix** and the **number operator**, not about the state vector. The state vector is in the module, and the module is not $\mathbb{B}_{\Psi}$: the two are different subspaces of $\mathbb{B}$ that meet in a ray. The next section makes that intersection precise.
 
 ## In What Sense $\mathbb{B}_{\Psi}$ Is a Hilbert Space
 
@@ -156,7 +156,7 @@ The sector claim becomes quantitative when the dimensions are counted on the two
 
 On the **excitation** side, the occupation space of one fermionic mode is two-dimensional over $\mathbb{C}$ (the states $|0\rangle$ and $|1\rangle$), hence four-dimensional over $\mathbb{R}$. The operators on that space are the $2\times2$ complex matrices, of which the Hermitian ones form $\mathbb{B}_{\Psi}$, of four real dimensions; the density matrices are the positive unit-weight elements, a three-dimensional ball. For one bosonic mode the occupation space is instead the whole of $\ell^2(\mathbb{N})$, infinite-dimensional, and the operator space is infinite-dimensional as well.
 
-On the **mode-function** side, the space of positive-frequency solutions of the Dirac equation at fixed momentum is the two-dimensional complex spinor module, again four real dimensions; it is the module $\mathbb{B}\tilde\Pi_+$, whose intersection with $\mathbb{B}_{\Psi}$ is the single real line $\mathbb{R}\tilde\Pi_+$, as computed below. A single definite mode function is one vector of this space, a complex ray.
+On the **mode-function** side, the space of positive-frequency solutions of the Dirac equation at fixed momentum is the two-dimensional complex spinor module, again four real dimensions; it is the module $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$, whose intersection with $\mathbb{B}_{\Psi}$ is the single real line $\mathbb{R}\tilde\Pi_{\mathrm{id},+}$, as computed below. A single definite mode function is one vector of this space, a complex ray.
 
 The counts are summarised in the table. Dimensions are over $\mathbb{R}$ except where marked.
 
@@ -164,8 +164,8 @@ The counts are summarised in the table. Dimensions are over $\mathbb{R}$ except 
 |---|---|---|
 | $\mathbb{B}_{\Psi}$ (Hermitian elements) | $4$ | the sector |
 | $\mathbb{B}_{\Phi}$ (anti-Hermitian elements) | $4$ | the sector |
-| Spinor module $\mathbb{B}\tilde\Pi_+$ (one-particle solutions at fixed $\vec p$, Dirac) | $4$ | module |
-| $\mathbb{B}\tilde\Pi_+\cap\mathbb{B}_{\Psi}$ | $1$ (the ray $\mathbb{R}\tilde\Pi_+$) | overlap |
+| Spinor module $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ (one-particle solutions at fixed $\vec p$, Dirac) | $4$ | module |
+| $\mathbb{B}\tilde\Pi_{\mathrm{id},+}\cap\mathbb{B}_{\Psi}$ | $1$ (the ray $\mathbb{R}\tilde\Pi_{\mathrm{id},+}$) | overlap |
 | Occupation space, one fermionic mode | $4$ | module $\cong\mathbb{C}^2$ |
 | Occupation space, one bosonic mode | $\infty$ | $\ell^2(\mathbb{N})$ |
 | Hermitian operators on one fermionic mode | $4$ | $\mathbb{B}_{\Psi}$ |
@@ -185,7 +185,7 @@ The mismatch is a real finding and is stated as one. It does not contradict the 
 
 The counting is only half the structural statement; the other half is the exact location of the definite solution, and it is not $\mathbb{B}_{\Psi}$.
 
-The spinor module is realized inside the algebra as the Peirce carrier $\mathbb{B}\tilde\Pi_+$, which is the minimal left ideal here, with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and basis $\{\tilde\Pi_+,\vec\Upsilon_y\}$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$. A general spinor is therefore $\tilde{Ξ}=\tilde{Ξ}_{1}\tilde\Pi_++\tilde{Ξ}_{2}\vec\Upsilon_y$ with $\tilde{Ξ}_{1},\tilde{Ξ}_{2}\in\mathbb{C}$, a four-real-dimensional space. Its Hermitian conjugate is $\tilde{Ξ}^*=\overline{\tilde{Ξ}_{1}}\,\tilde\Pi_++\overline{\tilde{Ξ}_{2}}\,\vec\Upsilon_x$, using $\vec\Upsilon_y^{*}=\vec\Upsilon_x$ and $\tilde\Pi_+^\dagger=\tilde\Pi_+$. The condition $\tilde{Ξ}^*=\tilde{Ξ}$ forces, comparing coefficients in the independent directions $\tilde\Pi_+,\vec\Upsilon_x,\vec\Upsilon_y$,
+The spinor module is realized inside the algebra as the Peirce carrier $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$, which is the minimal left ideal here, with $\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z)$ and basis $\{\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},y}\}$, $\vec\Pi_{\mathrm{nil},y}=\tfrac12(i\vec e_x+\vec e_y)$. A general spinor is therefore $\tilde{Ξ}=\tilde{Ξ}_{1}\tilde\Pi_{\mathrm{id},++}\tilde{Ξ}_{2}\vec\Pi_{\mathrm{nil},y}$ with $\tilde{Ξ}_{1},\tilde{Ξ}_{2}\in\mathbb{C}$, a four-real-dimensional space. Its Hermitian conjugate is $\tilde{Ξ}^*=\overline{\tilde{Ξ}_{1}}\,\tilde\Pi_{\mathrm{id},++}\overline{\tilde{Ξ}_{2}}\,\vec\Pi_{\mathrm{nil},x}$, using $\vec\Pi_{\mathrm{nil},y}^{*}=\vec\Pi_{\mathrm{nil},x}$ and $\tilde\Pi_{\mathrm{id},+}^\dagger=\tilde\Pi_{\mathrm{id},+}$. The condition $\tilde{Ξ}^*=\tilde{Ξ}$ forces, comparing coefficients in the independent directions $\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}$,
 
 $$
 \tilde{Ξ}_{2}=0\qquad\text{and}\qquad \tilde{Ξ}_{1}=\overline{\tilde{Ξ}_{1}}\ \ (\tilde{Ξ}_{1}\in\mathbb{R}).
@@ -194,20 +194,20 @@ $$
 So the intersection of the definite-solution space with the informational sector is
 
 $$
-\boxed{\;\mathbb{B}\tilde\Pi_+\cap\mathbb{B}_{\Psi}=\mathbb{R}\,\tilde\Pi_+\;},
+\boxed{\;\mathbb{B}\tilde\Pi_{\mathrm{id},+}\cap\mathbb{B}_{\Psi}=\mathbb{R}\,\tilde\Pi_{\mathrm{id},+}\;},
 $$
 
-a single real line, spanned by the idempotent itself. This was checked directly on real, imaginary, and generic complex $(\tilde{Ξ}_{1},\tilde{Ξ}_{2})$: the only Hermitian spinors are the real multiples of $\tilde\Pi_+$. The upshot is sharp: away from the idempotent ray, a mode function is not an element of $\mathbb{B}_{\Psi}$, and the representable definite solution that is Hermitian is exactly the pure state whose density matrix is $\tilde\Pi_+$.
+a single real line, spanned by the idempotent itself. This was checked directly on real, imaginary, and generic complex $(\tilde{Ξ}_{1},\tilde{Ξ}_{2})$: the only Hermitian spinors are the real multiples of $\tilde\Pi_{\mathrm{id},+}$. The upshot is sharp: away from the idempotent ray, a mode function is not an element of $\mathbb{B}_{\Psi}$, and the representable definite solution that is Hermitian is exactly the pure state whose density matrix is $\tilde\Pi_{\mathrm{id},+}$.
 
 The Maxwell case is the same conclusion with a different home. The polarization vector of a **linearly polarized** mode function is a real spatial direction in $\mathrm{Vect}(\mathbb{B}_{\Phi})$ orthogonal to $\vec u_\Phi$, so it is in the material sector; the helicity observable, by contrast, is the Hermitian element $i\vec u_\Phi\in\mathbb{B}_{\Psi}$. Once more the definite solution is material and the operator is informational. The division is consistent across the two fields: the *solution* is on the configuration side (the module, or $\mathbb{B}_{\Phi}$ for vectors), and the *operator* is on the Hermitian side.
 
-There is an interpretation of the mode function that belongs here as an interpretation and not as a result. Within the two-level truncation of one mode, the occupation axis and the phase axis are not independent structures: the states with definite occupation are the poles of the Bloch ball, where the density matrix is the idempotent $\tilde\Pi_+$ or $\tilde\Pi_-$, and a definite-phase superposition sits on the equator, where the density matrix has a non-zero vector part — precisely the part that the partition-function article shows the trace discards. On that interpretation, the mode function's definite phase and the excitation's definite number are two complementary axes of the same qubit in $\mathbb{B}_{\Psi}$. The interpretation has two caveats and is offered subject to them: it holds only in the two-level truncation, which the count above shows is the only truncation the algebra supports, and for a fermionic mode the "definite-phase solution" is a Grassmann-valued coherent state, so the identification of a classical definite solution with an ordinary quantum state is not literal. Whether the phase of a definite solution is exactly the coherent (equatorial) axis of the single-mode qubit is left open.
+There is an interpretation of the mode function that belongs here as an interpretation and not as a result. Within the two-level truncation of one mode, the occupation axis and the phase axis are not independent structures: the states with definite occupation are the poles of the Bloch ball, where the density matrix is the idempotent $\tilde\Pi_{\mathrm{id},+}$ or $\tilde\Pi_{\mathrm{id},-}$, and a definite-phase superposition sits on the equator, where the density matrix has a non-zero vector part — precisely the part that the partition-function article shows the trace discards. On that interpretation, the mode function's definite phase and the excitation's definite number are two complementary axes of the same qubit in $\mathbb{B}_{\Psi}$. The interpretation has two caveats and is offered subject to them: it holds only in the two-level truncation, which the count above shows is the only truncation the algebra supports, and for a fermionic mode the "definite-phase solution" is a Grassmann-valued coherent state, so the identification of a classical definite solution with an ordinary quantum state is not literal. Whether the phase of a definite solution is exactly the coherent (equatorial) axis of the single-mode qubit is left open.
 
 ## Summary
 
-An excitation and a mode function are different objects and the biquaternion framework gives them different homes. A mode function is a definite solution of the free equation, one basis vector of the one-particle solution space; for the Dirac field that space is the spinor module $\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$, and for the Maxwell potential the polarization is a direction of the material sector $\mathbb{B}_{\Phi}$. An excitation is an occupation: the state $|1_{\vec p,r}\rangle$ and the number operator $N$. Its occupation-number operator $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ and its density matrix $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ are Hermitian elements of $\mathbb{B}$, and they lie in $\mathbb{B}_{\Psi}$ exactly; the excitation operator $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$, which is not Hermitian, lies in neither sector. "The informational sector carries the state" is therefore true of the state as a density matrix and of the observables, and false of the state vector, which lives in the module.
+An excitation and a mode function are different objects and the biquaternion framework gives them different homes. A mode function is a definite solution of the free equation, one basis vector of the one-particle solution space; for the Dirac field that space is the spinor module $\mathbb{B}\tilde\Pi_{\mathrm{id},+}\cong\mathbb{C}^2$, and for the Maxwell potential the polarization is a direction of the material sector $\mathbb{B}_{\Phi}$. An excitation is an occupation: the state $|1_{\vec p,r}\rangle$ and the number operator $N$. Its occupation-number operator $\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec e_z)$ and its density matrix $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ are Hermitian elements of $\mathbb{B}$, and they lie in $\mathbb{B}_{\Psi}$ exactly; the excitation operator $\vec\Pi_{\mathrm{nil},y}=\tfrac12(i\vec e_x+\vec e_y)$, which is not Hermitian, lies in neither sector. "The informational sector carries the state" is therefore true of the state as a density matrix and of the observables, and false of the state vector, which lives in the module.
 
-The mode function is not in $\mathbb{B}_{\Psi}$: the solution space meets the sector in the single real ray $\mathbb{B}\tilde\Pi_+\cap\mathbb{B}_{\Psi}=\mathbb{R}\tilde\Pi_+$, so away from the idempotent a definite solution is not Hermitian. The definite solution is on the configuration side and the occupation is on the informational side, which is exactly the division the words express.
+The mode function is not in $\mathbb{B}_{\Psi}$: the solution space meets the sector in the single real ray $\mathbb{B}\tilde\Pi_{\mathrm{id},+}\cap\mathbb{B}_{\Psi}=\mathbb{R}\tilde\Pi_{\mathrm{id},+}$, so away from the idempotent a definite solution is not Hermitian. The definite solution is on the configuration side and the occupation is on the informational side, which is exactly the division the words express.
 
 $\mathbb{B}_{\Psi}$ is a four-dimensional real Hilbert space under the Hermitian pairing and not a complex vector space, not an associative subalgebra, and not a Hilbert space under the biquaternion norm, which is indefinite of inertia $(1,3)$. The degrees of freedom close for exactly one fermionic mode — four real dimensions of operators, three of states — and fail beyond it: two fermionic modes require sixteen dimensions and a bosonic mode infinitely many. The sector is the home of the state of one fermionic mode, precisely and verifiably, and the mismatch for more is left visible as the bound on that home rather than absorbed into the prose.
 
@@ -222,13 +222,13 @@ $\mathbb{B}_{\Psi}$ is a four-dimensional real Hilbert space under the Hermitian
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector, $\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |
 | $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar-part reading of the plain form; $2\,\mathrm{Sc}(e_t)=2$ |
-| $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Orthogonal idempotents, Peirce idempotents; $i\vec e_z$ is a root of $+1$ |
-| $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | Matrix units, $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$, $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$, $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$ |
-| $\mathbb{B}\tilde\Pi_+=\{ \tilde{Ξ}_{1}\tilde\Pi_++\tilde{Ξ}_{2}\vec\Upsilon_y\}$ | Spinor module (one-particle solutions), $\mathbb{B}\tilde\Pi_+\cap\mathbb{B}_{\Psi}=\mathbb{R}\tilde\Pi_+$ |
+| $\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z)$, $\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec e_z)$ | Orthogonal idempotents, Peirce idempotents; $i\vec e_z$ is a root of $+1$ |
+| $\vec\Pi_{\mathrm{nil},x}=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Pi_{\mathrm{nil},y}=\tfrac12(i\vec e_x+\vec e_y)$ | Matrix units, $\vec\Pi_{\mathrm{nil},x}\vec\Pi_{\mathrm{nil},y}=\tilde\Pi_{\mathrm{id},+}$, $\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}=\tilde\Pi_{\mathrm{id},-}$, $\vec\Pi_{\mathrm{nil},x}^2=\vec\Pi_{\mathrm{nil},y}^2=0$ |
+| $\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\{ \tilde{Ξ}_{1}\tilde\Pi_{\mathrm{id},++}\tilde{Ξ}_{2}\vec\Pi_{\mathrm{nil},y}\}$ | Spinor module (one-particle solutions), $\mathbb{B}\tilde\Pi_{\mathrm{id},+}\cap\mathbb{B}_{\Psi}=\mathbb{R}\tilde\Pi_{\mathrm{id},+}$ |
 | $w^{(r)}(\vec p)\exp(-i\theta_{\mathrm{pwp}})$, $v^{(r)}(\vec p)\exp(+i\theta_{\mathrm{pwp}})$ | Mode functions (positive/negative frequency) |
 | $a_{\mathrm{fop},r}^{\dagger}(\vec p)$, $a_{\mathrm{fop},r}(\vec p)$ | Excitation (creation) and annihilation operators |
-| $\vec\Upsilon_x=x$, $\vec\Upsilon_y=y$ | One-mode ladder operators in $\mathbb{B}$ |
-| $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z)$ | Occupation-number operator (idempotent, in $\mathbb{B}_{\Psi}$) |
+| $\vec\Pi_{\mathrm{nil},x}=x$, $\vec\Pi_{\mathrm{nil},y}=y$ | One-mode ladder operators in $\mathbb{B}$ |
+| $\tilde\Pi_{\mathrm{id},-}=\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}=\tfrac12(e_t-i\vec e_z)$ | Occupation-number operator (idempotent, in $\mathbb{B}_{\Psi}$) |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$, $|\vec s_{\Psi}|\leq1$ | Density matrix of one mode (Bloch ball $\subset\mathbb{B}_{\Psi}$) |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Biquaternion norm; inertia $(1,3)$ on $\mathbb{B}_{\Psi}$ |
 | $\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})$ | Hilbert–Schmidt pairing on $\mathbb{B}_{\Psi}$ (positive definite) |

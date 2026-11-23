@@ -78,7 +78,7 @@ $$
 \|P\|_{HS}=\sqrt{r},
 $$
 
-which is the statement that the idempotents of rank $r$ lie on the sphere of radius $\sqrt r$ inside the Hilbert space. At $n=2$ the idempotents $\tilde\Pi_\pm$ have norm $1$, and the two other idempotents of the frame have the same norm.
+which is the statement that the idempotents of rank $r$ lie on the sphere of radius $\sqrt r$ inside the Hilbert space. At $n=2$ the idempotents $\tilde\Pi_{\mathrm{id},\pm}$ have norm $1$, and the two other idempotents of the frame have the same norm.
 
 ## Unitary Invariance and the Failure of Full Invariance
 

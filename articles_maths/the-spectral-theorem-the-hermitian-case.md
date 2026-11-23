@@ -188,13 +188,13 @@ and the eigenvectors are at the angle $\theta$ with $\tan2\theta=\frac{2b}{a-d}$
 
 **The sign of the determinant decides the type.** Since $\lambda_+\lambda_-=\det S$ and $\lambda_++\lambda_-=\operatorname{tr}S$, the symmetric matrix is positive definite exactly when $\operatorname{tr}S>0$ and $\det S>0$, which is the $n=2$ description of the cone as the interior of a quadrant in the $(a,d)$-plane for each $b$.
 
-**The biquaternion reading gives the spectral projections as idempotents.** With $\tilde\Pi_\pm=\tfrac12(\mathrm{I}\pm\tilde{Ζ})$ and $\tilde{Ζ}$ any traceless Hermitian matrix of square $\mathrm{I}$, the spectral resolution reads
+**The biquaternion reading gives the spectral projections as idempotents.** With $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(\mathrm{I}\pm\tilde{Ζ})$ and $\tilde{Ζ}$ any traceless Hermitian matrix of square $\mathrm{I}$, the spectral resolution reads
 
 $$
-S=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-,
+S=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-},
 $$
 
-so the two spectral projections are exactly the idempotent pair of the biquaternion frame, with $e_t=\tilde\Pi_++\tilde\Pi_-$ and $\tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-$. So the spectral theorem at $n=2$ is the statement that every Hermitian biquaternion is a real combination of the two idempotents of a frame, which is the reality condition of *The Peirce Decomposition of the Biquaternion Algebra*.
+so the two spectral projections are exactly the idempotent pair of the biquaternion frame, with $e_t=\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}$ and $\tilde{Ζ}=\tilde\Pi_{\mathrm{id},+-}\tilde\Pi_{\mathrm{id},-}$. So the spectral theorem at $n=2$ is the statement that every Hermitian biquaternion is a real combination of the two idempotents of a frame, which is the reality condition of *The Peirce Decomposition of the Biquaternion Algebra*.
 
 ## Summary
 

@@ -151,12 +151,12 @@ A separate input, often blurred with masslessness, is the transversality of the 
 The null element has a second face, and it is the one that connects the material and informational sectors. For a null four-momentum $\tilde{P}_{\Phi}=i(E/c)e_t+\vec p$ with $\vec u=\vec p/|\vec p|$,
 
 $$
-\boxed{\ \tilde{P}_{\Phi} \;=\; 2i\,\frac{E}{c}\,\tilde\Pi(-\vec u)\ },
+\boxed{\ \tilde{P}_{\Phi} \;=\; 2i\,\frac{E}{c}\,\tilde\Pi_{\mathrm{id}}(-\vec u)\ },
 \qquad
-\tilde\Pi(\vec u) \;=\; \tfrac{1}{2}\left(e_t + i\vec u\right),
+\tilde\Pi_{\mathrm{id}}(\vec u) \;=\; \tfrac{1}{2}\left(e_t + i\vec u\right),
 $$
 
-an imaginary multiple of an idempotent of the informational sector. The idempotent satisfies $\tilde\Pi^2=\tilde\Pi$, is Hermitian, and has norm zero, so the null four-momentum is a scalar multiple of a **rank-one Hermitian idempotent**.
+an imaginary multiple of an idempotent of the informational sector. The idempotent satisfies $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$, is Hermitian, and has norm zero, so the null four-momentum is a scalar multiple of a **rank-one Hermitian idempotent**.
 
 This is what makes the identification "the photon's four-momentum is a zero divisor" more than a restatement of $E=c|\vec p|$. The null momentum is, up to the factor $2iE/c$, a **pure state** of the informational sector: the flagpole interpretation of the companion article *The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation*, where the null direction and the idempotent are two faces of one object. The photon's lightlike momentum and a rank-one pure-state idempotent are the same element read in two sectors.
 
@@ -226,8 +226,8 @@ The cone does not derive masslessness. The mass enters as a single free real sca
 | $\tilde P_{\Phi}=i\frac{\omega}{c}e_t+\vec k_\Phi$ | Four-wavevector; $\langle\tilde P_{\Phi}\rangle_{\natural}=0\Leftrightarrow\omega=c\lvert\vec k_\Phi\rvert$ |
 | $\tilde U\tilde U^{\natural}=e_t$ | Lorentz rotor (unit norm) |
 | $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ | Rotor conjugation; $\langle\cdot\rangle_{\natural}$ invariant, so the cone and $c$ are frame-independent |
-| $\tilde\Pi(\vec u)=\tfrac{1}{2}(e_t+i\vec u)$ | Idempotent of $\mathbb{B}_{\Psi}$; $\tilde\Pi^2=\tilde\Pi$, $\langle\tilde\Pi\rangle_{\natural}=0$ |
-| $\tilde{P}_{\Phi}=2i\frac{E}{c}\tilde\Pi(-\vec u)$, $\vec u=\vec p/\lvert\vec p\rvert$ | The null momentum as a scaled Hermitian idempotent |
+| $\tilde\Pi_{\mathrm{id}}(\vec u)=\tfrac{1}{2}(e_t+i\vec u)$ | Idempotent of $\mathbb{B}_{\Psi}$; $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$, $\langle\tilde\Pi_{\mathrm{id}}\rangle_{\natural}=0$ |
+| $\tilde{P}_{\Phi}=2i\frac{E}{c}\tilde\Pi_{\mathrm{id}}(-\vec u)$, $\vec u=\vec p/\lvert\vec p\rvert$ | The null momentum as a scaled Hermitian idempotent |
 | $\langle\lambda\tilde{Q}\rangle_{\natural}=\lambda^2\langle\tilde{Q}\rangle_{\natural}$ | Homogeneity; the cone is scale-invariant, so no mass scale is native |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\mathcal{Z}=\{\tilde{Q}\neq0 : \langle\tilde{Q}\rangle_{\natural}=0\}$ | Zero-divisor set |

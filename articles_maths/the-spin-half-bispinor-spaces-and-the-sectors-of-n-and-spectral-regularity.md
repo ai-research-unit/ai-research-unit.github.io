@@ -2,8 +2,8 @@
 
 ## Introduction
 
-The spin-half carrier is the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$, of real dimension $2$. Its two closures
-are the spinor spaces $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm(\vec u_{\mathrm r})$, of real dimension $4$, and their sum, a bispinor space,
+The spin-half carrier is the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$, of real dimension $2$. Its two closures
+are the spinor spaces $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})$, of real dimension $4$, and their sum, a bispinor space,
 which as a set is the whole algebra.
 
 This article places all three levels in the four sectors cut by the two predicates $N\neq0$ and $B^{2}\neq0$. The three levels answer differently,
@@ -66,10 +66,10 @@ The lemma settles the plane and the spinor spaces at one stroke, since both lie 
 
 ## The Carrier: The Plane and the Sectors
 
-**The plane and its coordinates.** The idempotent of the axis is $\tilde\Pi_+(\vec u_{\mathrm r})=\tfrac12(e_t+i\vec u_{\mathrm r})$, and the plane is
+**The plane and its coordinates.** The idempotent of the axis is $\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\tfrac12(e_t+i\vec u_{\mathrm r})$, and the plane is
 
 $$
-\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})=\{\lambda\tilde\Pi_+(\vec u_{\mathrm r}):\lambda\in\mathbb{C}\},
+\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\{\lambda\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r}):\lambda\in\mathbb{C}\},
 $$
 
 of real dimension $2$. Its scalar coordinate is $Q_t=\lambda/2$.
@@ -77,7 +77,7 @@ of real dimension $2$. Its scalar coordinate is $Q_t=\lambda/2$.
 **Theorem (the norm vanishes on the plane).** For every complex $\lambda$,
 
 $$
-N\bigl(\lambda\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=\lambda^{2}N\bigl(\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=0 .
+N\bigl(\lambda\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=\lambda^{2}N\bigl(\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=0 .
 $$
 
 *Proof.* The norm is multiplicative and the idempotent has norm $\tfrac14(1-\lvert\vec u_{\mathrm r}\rvert^{2})=0$, the axis being of unit length.
@@ -85,7 +85,7 @@ $$
 **Theorem (the square of the vector part on the plane).** For every complex $\lambda$,
 
 $$
-B^{2}\bigl(\lambda\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=-\tfrac14\lambda^{2}=-Q_t^{2}.
+B^{2}\bigl(\lambda\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=-\tfrac14\lambda^{2}=-Q_t^{2}.
 $$
 
 *Proof.* The coordinates are $Q_t=\tfrac12\lambda$ and $Q_k=\tfrac i2\lambda u_k$, so the sum of the vector squares is $-\tfrac14\lambda^{2}$ times
@@ -112,7 +112,7 @@ vanishes misses both. The plane misses the whole of the regular part of the alge
 **Theorem.** The intersection with the sector is the plane minus its origin:
 
 $$
-\Sigma(\vec u_{\mathrm r})\cap\Sigma_{01}=\{\lambda\tilde\Pi_+(\vec u_{\mathrm r}):\lambda\neq0\}.
+\Sigma(\vec u_{\mathrm r})\cap\Sigma_{01}=\{\lambda\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r}):\lambda\neq0\}.
 $$
 
 *Proof.* On the plane $N=0$, so the first index is $0$ and the sector is decided by the second. The value is $B^{2}=-\lambda^{2}/4$, which vanishes
@@ -140,16 +140,16 @@ the spectral-degenerate cone. The two cones meet the plane in a line and in a po
 |---|---|---|---|
 | $\Sigma_{11}$ | impossible, $N=0$ | $\varnothing$ | — |
 | $\Sigma_{10}$ | impossible, $N=0$ | $\varnothing$ | — |
-| $\Sigma_{01}$ | $\lambda\neq0$ | $\mathbb{C}^{\times}\tilde\Pi_+$ | $2$ |
+| $\Sigma_{01}$ | $\lambda\neq0$ | $\mathbb{C}^{\times}\tilde\Pi_{\mathrm{id},+}$ | $2$ |
 | $\Sigma_{00}$ | $\lambda=0$ | $\{0\}$ | $0$ |
 
 ## The First Closure: The Spinor Space and the Sectors
 
-**The space and its coordinates.** The spinor space is $S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_+(\vec u_{\mathrm r})$, of real dimension $4$,
-with the complex basis $\tilde\Pi_+$ and $\vec u_2\tilde\Pi_+$. An element is
+**The space and its coordinates.** The spinor space is $S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$, of real dimension $4$,
+with the complex basis $\tilde\Pi_{\mathrm{id},+}$ and $\vec u_2\tilde\Pi_{\mathrm{id},+}$. An element is
 
 $$
-Y=\alpha\tilde\Pi_+(\vec u_{\mathrm r})+\beta\,\vec u_2\tilde\Pi_+(\vec u_{\mathrm r}),
+Y=\alpha\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})+\beta\,\vec u_2\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r}),
 $$
 
 with $\alpha,\beta$ complex, and its scalar coordinate is $Q_t(Y)=\alpha/2$. The second spinor space $S_-(\vec u_{\mathrm r})$ is the same space at the
@@ -161,7 +161,7 @@ $$
 N(Y)=0,\qquad B^{2}(Y)=-Q_t(Y)^{2}.
 $$
 
-*Proof.* The space is $\mathbb{B}\tilde\Pi_+$, the norm is multiplicative and $N(\tilde\Pi_+)=0$, so the norm vanishes. For the second display, the two
+*Proof.* The space is $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$, the norm is multiplicative and $N(\tilde\Pi_{\mathrm{id},+})=0$, so the norm vanishes. For the second display, the two
 eigenvalues have product $N(Y)=0$ and sum $2Q_t(Y)$, so they are $0$ and $2Q_t(Y)$; the discriminant identity
 $(\lambda_1-\lambda_2)^{2}=-4B^{2}$ then reads $4Q_t(Y)^{2}=-4B^{2}(Y)$, whence $B^{2}=-Q_t^{2}$.
 
@@ -194,7 +194,7 @@ $$
 
 *Proof.* On the ideal $N=0$ and $B^{2}=-Q_t^{2}$, so the second index is $1$ exactly when $Q_t\neq0$.
 
-**Corollary (what the sector adds).** The part of the ideal in $\Sigma_{01}$ is the complement of the complex line $\mathbb{C}\vec u_2\tilde\Pi_+$,
+**Corollary (what the sector adds).** The part of the ideal in $\Sigma_{01}$ is the complement of the complex line $\mathbb{C}\vec u_2\tilde\Pi_{\mathrm{id},+}$,
 which is a real plane, and it is non-empty and open in the ideal.
 
 ### The Sector $\Sigma_{00}$
@@ -205,11 +205,11 @@ $$
 S_+(\vec u_{\mathrm r})\cap\Sigma_{00}=\mathbb{C}\bigl(\vec u_2-i\vec u_3\bigr),
 $$
 
-of real dimension $2$. The basis element $\vec u_2\tilde\Pi_+(\vec u_{\mathrm r})$ equals $\tfrac12(\vec u_2-i\vec u_3)$, so its complex
+of real dimension $2$. The basis element $\vec u_2\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ equals $\tfrac12(\vec u_2-i\vec u_3)$, so its complex
 multiples are the complex multiples of $\vec u_2-i\vec u_3$.
 
 *Proof.* By the display of the previous theorem the intersection is the set $Q_t=0$, that is $\alpha=0$. And the second basis element satisfies
-$\vec u_2\tilde\Pi_+(\vec u_{\mathrm r})=\tfrac12(\vec u_2-i\vec u_3)$, whose scalar coordinate is zero, so the complex multiples of that
+$\vec u_2\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\tfrac12(\vec u_2-i\vec u_3)$, whose scalar coordinate is zero, so the complex multiples of that
 element are exactly the set.
 
 **Theorem (the degenerate part is the square-zero part).** For an element $Y$ of the ideal,
@@ -280,7 +280,7 @@ It is of real dimension $6$, and it consists of invertible elements with a repea
 *Proof.* The first index is $1$ and the second is $0$ by the two conditions, and $N\neq0$ is the invertibility condition. On $B^{2}=0$ the two eigenvalues
 coincide, by the criterion of the spectral predicate.
 
-**Witness.** The identity $e_t$ has $N=1$ and $B^{2}=0$, and its components are the two idempotents, which pair to $\tfrac12$. So $e_t=\tilde\Pi_++\tilde\Pi_-$
+**Witness.** The identity $e_t$ has $N=1$ and $B^{2}=0$, and its components are the two idempotents, which pair to $\tfrac12$. So $e_t=\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}$
 is the simplest element of the sector, and it is the element on which the first index survives and the second fails.
 
 ### The Sector $\Sigma_{01}$
@@ -295,7 +295,7 @@ It is of real dimension $6$ and it contains the punctured plane and the two idea
 
 *Proof.* The first index is $0$ by the vanishing of the pairing and the second is $1$ by the non-vanishing of $B^{2}$.
 
-**Witness.** The idempotent $\tilde\Pi_+$ has $N=0$ and $B^{2}=-\tfrac14$, so it lies in the sector, and it is one of its two pure components.
+**Witness.** The idempotent $\tilde\Pi_{\mathrm{id},+}$ has $N=0$ and $B^{2}=-\tfrac14$, so it lies in the sector, and it is one of its two pure components.
 
 ### The Sector $\Sigma_{00}$
 
@@ -327,11 +327,11 @@ generator of the degenerate plane of the ideal and a member of the sector of the
 the vanishing or the non-vanishing of $B^{2}$. Neither index refers to the other, and the four combinations are the four sectors.
 
 **Why the pairing alone is not enough.** A reader might expect the norm to decide the sector, since it decides invertibility. It decides one of the
-two indices only, and the other is free. The elements $\tilde\Pi_+$ and $\vec u_2-i\vec u_3$ have the same first index, both being null, and
+two indices only, and the other is free. The elements $\tilde\Pi_{\mathrm{id},+}$ and $\vec u_2-i\vec u_3$ have the same first index, both being null, and
 different second indices, $-\tfrac14$ and $0$. The elements $e_t$ and $e_t+2\vec e_x$ have the same first index, both being invertible, and different
 second indices, $0$ and $4$. Neither index is a function of the other.
 
-**The pairing at the carrier.** On the plane the two components are $\lambda\tilde\Pi_+$ and $0$, so the pairing vanishes and the norm vanishes with
+**The pairing at the carrier.** On the plane the two components are $\lambda\tilde\Pi_{\mathrm{id},+}$ and $0$, so the pairing vanishes and the norm vanishes with
 it. The plane is the case in which one of the two components is absent, and the bispinor read is the case in which both are present.
 
 ## The Axis Does Not Matter
@@ -340,7 +340,7 @@ it. The plane is the case in which one of the two components is absent, and the 
 $\operatorname{Ad}_u(\vec u_{\mathrm r})=\vec u_{\mathrm r}'$. Then
 
 $$
-\operatorname{Ad}_u\bigl(\tilde\Pi_\pm(\vec u_{\mathrm r})\bigr)=\tilde\Pi_\pm(\vec u_{\mathrm r}'),\qquad
+\operatorname{Ad}_u\bigl(\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})\bigr)=\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r}'),\qquad
 \operatorname{Ad}_u\bigl(S_\pm(\vec u_{\mathrm r})\bigr)=S_\pm(\vec u_{\mathrm r}'),
 $$
 
@@ -361,7 +361,7 @@ first closure exists.
 
 | level | dimension over $\mathbb{R}$ | sectors met | $\Sigma_{11}$ | $\Sigma_{10}$ | $\Sigma_{01}$ | $\Sigma_{00}$ |
 |---|---|---|---|---|---|---|
-| plane $\Sigma$ | $2$ | two | $\varnothing$ | $\varnothing$ | $\mathbb{C}^{\times}\tilde\Pi_+$ | $\{0\}$ |
+| plane $\Sigma$ | $2$ | two | $\varnothing$ | $\varnothing$ | $\mathbb{C}^{\times}\tilde\Pi_{\mathrm{id},+}$ | $\{0\}$ |
 | spinor space $S_+$ | $4$ | two | $\varnothing$ | $\varnothing$ | $Q_t\neq0$ | $\mathbb{C}(\vec u_2-i\vec u_3)$ |
 | bispinor space $\mathbb{B}$ | $8$ | four | open dense | $B^{2}=0$, pairing nonzero | null minus apex | nilpotent cone |
 
@@ -413,9 +413,9 @@ axis.
 | $\mathcal N$, $\mathcal S$ | the null cone and the spectral-degenerate cone |
 | $\Sigma_{ij}$ | the sector with $N\neq0$ for $i=1$ and $B^{2}\neq0$ for $j=1$ |
 | $\vec u_{\mathrm r}$, $\vec u_2,\vec u_3$ | a unit real axis and an oriented orthonormal pair completing it |
-| $\tilde\Pi_\pm(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | the two idempotents of the axis |
-| $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$ | the spinor plane, the carrier, real dimension $2$ |
-| $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm(\vec u_{\mathrm r})$ | the spinor spaces, real dimension $4$ |
+| $\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | the two idempotents of the axis |
+| $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ | the spinor plane, the carrier, real dimension $2$ |
+| $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})$ | the spinor spaces, real dimension $4$ |
 | $\mathbb{B}=S_+\oplus S_-$ | a bispinor space, real dimension $8$ |
 | $\vec u_2-i\vec u_3$ | the square-zero element spanning the degenerate plane of the ideal |
 | $\alpha,\beta$ | the coordinates of an element of the ideal |

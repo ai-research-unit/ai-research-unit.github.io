@@ -83,7 +83,7 @@ The right side is the interval: it vanishes exactly where the norm $\tilde K_\Ph
 Divide by the temporal part and the wave-number element becomes a projector. Put
 
 $$
-\tilde\Pi=\frac{\tilde K_\Phi}{2ik_t'}=\tfrac12\bigl(e_t-i\hat n\cdot\vec e\bigr),
+\tilde\Pi_{\mathrm{id}}=\frac{\tilde K_\Phi}{2ik_t'}=\tfrac12\bigl(e_t-i\hat n\cdot\vec e\bigr),
 \qquad
 \hat n=\frac{\vec k_\Phi}{k_t'},
 $$
@@ -91,10 +91,10 @@ $$
 where $\hat n$ is a real unit vector on the cone. The defect of idempotency is the interval, in closed form:
 
 $$
-\tilde\Pi^{2}-\tilde\Pi=-\frac{k_t'^{2}-k_\Phi^{2}}{4k_t'^{2}}\,e_t .
+\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}=-\frac{k_t'^{2}-k_\Phi^{2}}{4k_t'^{2}}\,e_t .
 $$
 
-The computation is one line from the identity above, and the check covered five random null momenta: $\lvert\tilde\Pi^{2}-\tilde\Pi\rvert$ came out at most $5.6\times10^{-17}$, $\lvert2\,\mathrm{Sc}\,\tilde\Pi-1\rvert$ at most $1.1\times10^{-16}$, and the same defect formula held off the cone to $2.8\times10^{-17}$ at five further momenta. One off-cone instance, $k_t'=1$ and $k_\Phi=0.7$, gives a defect of $0.1275$.
+The computation is one line from the identity above, and the check covered five random null momenta: $\lvert\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}\rvert$ came out at most $5.6\times10^{-17}$, $\lvert2\,\mathrm{Sc}\,\tilde\Pi_{\mathrm{id}}-1\rvert$ at most $1.1\times10^{-16}$, and the same defect formula held off the cone to $2.8\times10^{-17}$ at five further momenta. One off-cone instance, $k_t'=1$ and $k_\Phi=0.7$, gives a defect of $0.1275$.
 
 **A defect that is a central multiple of $e_t$ is the sharpest form the statement can take.** Off the cone the object is not a projector by an amount that is exactly the interval over four times the frequency squared. On the cone it is a projector of trace one, hence of rank one: a single surviving direction, and no more.
 
@@ -103,30 +103,30 @@ The computation is one line from the identity above, and the check covered five 
 The other sign of $\hat n$ is the other projector, and the two are orthogonal.
 
 $$
-\tilde\Pi_{\pm}=\tfrac12\bigl(e_t\pm i\hat n\cdot\vec e\bigr),
+\tilde\Pi_{\mathrm{id},\pm}=\tfrac12\bigl(e_t\pm i\hat n\cdot\vec e\bigr),
 \qquad
-\tilde\Pi_+\tilde\Pi_-=0,
+\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0,
 \qquad
-\tilde\Pi_++\tilde\Pi_-=e_t ,
+\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t ,
 $$
 
 with the product checked at $5.6\times10^{-17}$ over the same five momenta. The pair is complete: two rank-one projectors, orthogonal, summing to the identity. **The sign of the momentum's direction is the only discrete data the cone carries**, and this is the form in which the massless equation's two sides appear.
 
 ### The Generalisation of a Corpus Display
 
-*Degenerate Solutions of the Biquaternionic Dirac Equation* writes a null four-vector of the material sector as $i\kappa e_t+\kappa\vec n=2i\kappa\,\tilde\Pi(-\vec n)$, for a real unit $\vec n$ and a real $\kappa$, where $\tilde\Pi(\pm\vec n)=\tfrac12(e_t\pm i\vec n)$ is that article's name for the two projectors written $\tilde\Pi_\pm$ here. That display is the case $\kappa=k_t'$ of the projector above. What the present section adds is the converse: the light cone is not merely a locus where such a display can be written, it is exactly the locus where the divided wave-number element is idempotent, and the defect off the cone is the interval.
+*Degenerate Solutions of the Biquaternionic Dirac Equation* writes a null four-vector of the material sector as $i\kappa e_t+\kappa\vec n=2i\kappa\,\tilde\Pi_{\mathrm{id}}(-\vec n)$, for a real unit $\vec n$ and a real $\kappa$, where $\tilde\Pi_{\mathrm{id}}(\pm\vec n)=\tfrac12(e_t\pm i\vec n)$ is that article's name for the two projectors written $\tilde\Pi_{\mathrm{id},\pm}$ here. That display is the case $\kappa=k_t'$ of the projector above. What the present section adds is the converse: the light cone is not merely a locus where such a display can be written, it is exactly the locus where the divided wave-number element is idempotent, and the defect off the cone is the interval.
 
 ### The Two Massless Ideals
 
 The two members of the pair annihilate the two complementary ideals. With $\hat n$ the direction of $\vec k_\Phi$,
 
 $$
-\tilde K_\Phi=2ik_t'\,\tilde\Pi_-,
+\tilde K_\Phi=2ik_t'\,\tilde\Pi_{\mathrm{id},-},
 \qquad
-\tilde K_\Phi^{\natural}=2ik_t'\,\tilde\Pi_+ ,
+\tilde K_\Phi^{\natural}=2ik_t'\,\tilde\Pi_{\mathrm{id},+} ,
 $$
 
-so the massless member $i\tilde K_\Phi\,w=0$ is $\tilde\Pi_-w=0$, whose solutions are $w=\tilde\Pi_+\,u$ for arbitrary $u$; and the conjugate member has the mirror statement. The check covered four null momenta: $\lvert i\tilde K_\Phi\,(\tilde\Pi_+u)\rvert$ came out at most $1.2\times10^{-16}$ and $\lvert i\tilde K_\Phi^{\natural}(\tilde\Pi_-u)\rvert$ at most $2.5\times10^{-16}$, while the control $\lvert i\tilde K_\Phi(\tilde\Pi_-u)\rvert$ was $2.01$.
+so the massless member $i\tilde K_\Phi\,w=0$ is $\tilde\Pi_{\mathrm{id},-w}=0$, whose solutions are $w=\tilde\Pi_{\mathrm{id},+}\,u$ for arbitrary $u$; and the conjugate member has the mirror statement. The check covered four null momenta: $\lvert i\tilde K_\Phi\,(\tilde\Pi_{\mathrm{id},+u})\rvert$ came out at most $1.2\times10^{-16}$ and $\lvert i\tilde K_\Phi^{\natural}(\tilde\Pi_{\mathrm{id},-u})\rvert$ at most $2.5\times10^{-16}$, while the control $\lvert i\tilde K_\Phi(\tilde\Pi_{\mathrm{id},-u})\rvert$ was $2.01$.
 
 The two solution spaces are the two complementary minimal left ideals of the algebra, and the sign of the momentum's direction selects which member gets which. The parent's warning about values is not in play here: a value is a right ideal, and the kernel of a left multiplication by a projector is a left ideal. These are different objects, and the article states the ideal that the kernel actually is.
 
@@ -176,7 +176,7 @@ This is why the corpus says the interval is the symbol. A quadratic form that ca
 
 Constant coefficients. The symbol is a constant element of $\mathbb{B}$ only where the operator's coefficients are constant. The mass is constant, so the free Dirac equation transforms exactly, and every display above is exact. With a potential the symbol depends on the position, the transform of the equation is a convolution, and the algebraic reading stops. *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* and *The Coupled Dirac Equation in Biquaternionic Form* are where that case is treated, and nothing here anticipates them.
 
-The transform's image is $\mathbb{B}$-valued, and the sector statements are about coefficients. This is the denial of the introduction, repeated where it is used: the projector $\tilde\Pi$ is an element of $\mathbb{B}$ built from the symbol's coefficients, and it is not a statement that the field's values have moved to another sector.
+The transform's image is $\mathbb{B}$-valued, and the sector statements are about coefficients. This is the denial of the introduction, repeated where it is used: the projector $\tilde\Pi_{\mathrm{id}}$ is an element of $\mathbb{B}$ built from the symbol's coefficients, and it is not a statement that the field's values have moved to another sector.
 
 The transform's existence. Plancherel holds for a root with $\rho^{*}=-\rho$, which the central imaginary satisfies; the constant and the sign of the exponent are convention, as *Derivatives, Fields and Transforms* records. No display above depends on either choice, because every one of them is an identity of elements.
 
@@ -202,10 +202,10 @@ The transform preserves the Hermitian form, by Plancherel, and breaks the quater
 | $i\tilde K_\Phi$ | The symbol of the gradient; Hermitian, in $\mathbb{B}_\Psi$ |
 | $\mathcal{D}(\tilde K_\Phi)$ | The pair's symbol; every entry Hermitian |
 | $\tilde K_\Phi^{2}-2ik_t'\tilde K_\Phi=(k_t'^{2}-k_\Phi^{2})e_t$ | The identity that holds on the light cone only |
-| $\tilde\Pi=\tilde K_\Phi/(2ik_t')=\tfrac12(e_t-i\hat n\cdot\vec e)$ | The idempotent of a null momentum; rank one |
-| $\tilde\Pi^{2}-\tilde\Pi=-\frac{k_t'^{2}-k_\Phi^{2}}{4k_t'^{2}}e_t$ | The defect off the cone; the interval |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\hat n\cdot\vec e)$ | The two orthogonal projectors; $\tilde\Pi_+\tilde\Pi_-=0$ |
-| $\tilde K_\Phi=2ik_t'\tilde\Pi_-$, $\tilde K_\Phi^{\natural}=2ik_t'\tilde\Pi_+$ | The two massless members |
+| $\tilde\Pi_{\mathrm{id}}=\tilde K_\Phi/(2ik_t')=\tfrac12(e_t-i\hat n\cdot\vec e)$ | The idempotent of a null momentum; rank one |
+| $\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}=-\frac{k_t'^{2}-k_\Phi^{2}}{4k_t'^{2}}e_t$ | The defect off the cone; the interval |
+| $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\hat n\cdot\vec e)$ | The two orthogonal projectors; $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$ |
+| $\tilde K_\Phi=2ik_t'\tilde\Pi_{\mathrm{id},-}$, $\tilde K_\Phi^{\natural}=2ik_t'\tilde\Pi_{\mathrm{id},+}$ | The two massless members |
 | $\int\mathrm{Sc}(f^{*}g)$ | The Hermitian form; preserved by the transform |
 | $\mathrm{Sc}(ff^{\natural})=\sum_\alpha c_\alpha^{2}$ | The quaternionic norm's scalar part; not preserved |
 | $\sum_k\hat c_k^{2}=\sum_nc_nc_{-n}$ | What the transform makes of it; the reflected overlap |

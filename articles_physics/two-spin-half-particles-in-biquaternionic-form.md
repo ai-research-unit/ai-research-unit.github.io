@@ -42,10 +42,10 @@ The isomorphism used throughout sends $e_\mu\otimes e_\nu$ to $\mathsf{M}_2(e_\m
 A state of the pair is a Hermitian, positive element of $\mathbb{B}\otimes\mathbb{B}$ with $\mathrm{Sc}=2^{-2}$ (unit weight, $4\,\mathrm{Sc}=1$ in the $4\times4$ image), and an observable is a Hermitian element. The pure product states are the idempotents
 
 $$
-\tilde\Pi(\vec u_m)\otimes \tilde\Pi(\vec u)=\tfrac{1}{4}\left(e_t\otimes e_t+i\vec u_{m,\eta}\vec e_\eta\otimes e_t+i e_t\otimes\vec u_le_l-\vec u_{m,\eta}\vec u_l\,\vec e_\eta\otimes e_l\right),
+\tilde\Pi_{\mathrm{id}}(\vec u_m)\otimes \tilde\Pi_{\mathrm{id}}(\vec u)=\tfrac{1}{4}\left(e_t\otimes e_t+i\vec u_{m,\eta}\vec e_\eta\otimes e_t+i e_t\otimes\vec u_le_l-\vec u_{m,\eta}\vec u_l\,\vec e_\eta\otimes e_l\right),
 $$
 
-where $\tilde\Pi(\vec u_m)=\tfrac12(e_t+i\vec u_{m,\eta}\vec e_\eta)$ is a one-particle idempotent. The **partial scalar parts** are
+where $\tilde\Pi_{\mathrm{id}}(\vec u_m)=\tfrac12(e_t+i\vec u_{m,\eta}\vec e_\eta)$ is a one-particle idempotent. The **partial scalar parts** are
 
 $$
 \mathrm{Sc}_2(x\otimes y)=x\,\mathrm{Sc}(y),\qquad
@@ -128,21 +128,21 @@ The first follows from $(\vec e_\eta\otimes \vec e_\eta)^2=\vec e_\eta^2\otimes 
 Because $F$ is a Hermitian involution, its spectral projectors are
 
 $$
-\tilde\Pi_{\mathrm{sym}}=\tfrac{1}{2}\left(e_t\otimes e_t+F\right)=\tfrac{1}{4}\left(3\,e_t\otimes e_t-\sum_{\eta=1}^{3}\vec e_\eta\otimes \vec e_\eta\right),
+\tilde\Pi_{\mathrm{id,sym}}=\tfrac{1}{2}\left(e_t\otimes e_t+F\right)=\tfrac{1}{4}\left(3\,e_t\otimes e_t-\sum_{\eta=1}^{3}\vec e_\eta\otimes \vec e_\eta\right),
 $$
 
 $$
-\tilde\Pi_{\mathrm{asym}}=\tfrac{1}{2}\left(e_t\otimes e_t-F\right)=\tfrac{1}{4}\left(e_t\otimes e_t+\sum_{\eta=1}^{3}\vec e_\eta\otimes \vec e_\eta\right).
+\tilde\Pi_{\mathrm{id,asym}}=\tfrac{1}{2}\left(e_t\otimes e_t-F\right)=\tfrac{1}{4}\left(e_t\otimes e_t+\sum_{\eta=1}^{3}\vec e_\eta\otimes \vec e_\eta\right).
 $$
 
 They are Hermitian idempotents, orthogonal, and complete:
 
 $$
-\tilde\Pi_{\mathrm{sym}}^2=\tilde\Pi_{\mathrm{sym}},\quad \tilde\Pi_{\mathrm{asym}}^2=\tilde\Pi_{\mathrm{asym}},\quad
-\tilde\Pi_{\mathrm{sym}}\tilde\Pi_{\mathrm{asym}}=0,\quad \tilde\Pi_{\mathrm{sym}}+\tilde\Pi_{\mathrm{asym}}=e_t\otimes e_t ,
+\tilde\Pi_{\mathrm{id,sym}}^2=\tilde\Pi_{\mathrm{id,sym}},\quad \tilde\Pi_{\mathrm{id,asym}}^2=\tilde\Pi_{\mathrm{id,asym}},\quad
+\tilde\Pi_{\mathrm{id,sym}}\tilde\Pi_{\mathrm{id,asym}}=0,\quad \tilde\Pi_{\mathrm{id,sym}}+\tilde\Pi_{\mathrm{id,asym}}=e_t\otimes e_t ,
 $$
 
-with $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{sym}})=3$, $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{asym}})=1$ and $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{sym}}\tilde\Pi_{\mathrm{asym}})=0$. They are the projectors onto the symmetric and antisymmetric parts of the tensor square of the fundamental module, that is, onto the $s_{\mathrm{tot}}=1$ and $s_{\mathrm{tot}}=0$ coupled subspaces. The antisymmetric idempotent is the singlet idempotent of the companion article *Exercise: Two Spins in the Singlet State*, written there as $\tilde\Pi_{\mathrm{singlet}}$.
+with $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id,sym}})=3$, $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id,asym}})=1$ and $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id,sym}}\tilde\Pi_{\mathrm{id,asym}})=0$. They are the projectors onto the symmetric and antisymmetric parts of the tensor square of the fundamental module, that is, onto the $s_{\mathrm{tot}}=1$ and $s_{\mathrm{tot}}=0$ coupled subspaces. The antisymmetric idempotent is the singlet idempotent of the companion article *Exercise: Two Spins in the Singlet State*, written there as $\tilde\Pi_{\mathrm{id,singlet}}$.
 
 The total Casimir now follows in closed form. Substituting the coupling term,
 
@@ -151,59 +151,59 @@ $$
 =\hbar^{2}\left(e_t\otimes e_t+F\right)\;},
 $$
 
-the central term being the sum of the two one-factor Casimirs $\left(\tilde S_{\Psi}^{(a)}\right)^2=\frac{3\,\hbar^{2}}{4}e_t\otimes e_t$; equivalently, since $e_t\otimes e_t+F=2\tilde\Pi_{\mathrm{sym}}$,
+the central term being the sum of the two one-factor Casimirs $\left(\tilde S_{\Psi}^{(a)}\right)^2=\frac{3\,\hbar^{2}}{4}e_t\otimes e_t$; equivalently, since $e_t\otimes e_t+F=2\tilde\Pi_{\mathrm{id,sym}}$,
 
 $$
-\tilde S_{\Psi,\mathrm{tot}}^2=2\,\hbar^{2}\,\tilde{\Pi}_{\mathrm{sym}}+0\cdot \tilde\Pi_{\mathrm{asym}} .
+\tilde S_{\Psi,\mathrm{tot}}^2=2\,\hbar^{2}\,\tilde\Pi_{\mathrm{id,sym}}+0\cdot \tilde\Pi_{\mathrm{id,asym}} .
 $$
 
 The coupled idempotents are exactly the spectral projectors of the total Casimir. This is why the coupling problem of two fundamental modules closes algebraically: the interaction term, the Casimir, and the idempotents are all functions of the single element $F$.
 
 ## The Four Coupled States as Idempotents
 
-The spectral decomposition of $F$ has two eigenvalues, $+1$ on the triplet and $-1$ on the singlet. To separate the triplet into its three states one diagonalises $\tilde S_{\Psi,\mathrm{tot},3}$ within the symmetric subspace, whose spectral projectors are $\tilde\Pi_+\otimes \tilde\Pi_+$, $\tilde\Pi_-\otimes \tilde\Pi_-$, and their complement in $\tilde\Pi_{\mathrm{sym}}$. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. With
+The spectral decomposition of $F$ has two eigenvalues, $+1$ on the triplet and $-1$ on the singlet. To separate the triplet into its three states one diagonalises $\tilde S_{\Psi,\mathrm{tot},3}$ within the symmetric subspace, whose spectral projectors are $\tilde\Pi_{\mathrm{id},+}\otimes \tilde\Pi_{\mathrm{id},+}$, $\tilde\Pi_{\mathrm{id},-}\otimes \tilde\Pi_{\mathrm{id},-}$, and their complement in $\tilde\Pi_{\mathrm{id,sym}}$. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$ are its two associated idempotents. With
 
 $$
-\tilde\Pi_\pm=\tfrac{1}{2}\left(e_t\pm i\vec e_z\right),
+\tilde\Pi_{\mathrm{id},\pm}=\tfrac{1}{2}\left(e_t\pm i\vec e_z\right),
 $$
 
 the four coupled idempotents are
 
 $$
-\tilde\Pi_{1,1}=\tilde\Pi_+\otimes \tilde\Pi_+,\qquad
-\tilde\Pi_{1,-1}=\tilde\Pi_-\otimes \tilde\Pi_-,\qquad
-\tilde\Pi_{1,0}=\tilde\Pi_{\mathrm{sym}}-\tilde\Pi_{1,1}-\tilde\Pi_{1,-1},\qquad
-\tilde\Pi_{0,0}=\tilde\Pi_{\mathrm{asym}} .
+\tilde\Pi_{\mathrm{id},1,1}=\tilde\Pi_{\mathrm{id},+}\otimes \tilde\Pi_{\mathrm{id},+},\qquad
+\tilde\Pi_{\mathrm{id},1,-1}=\tilde\Pi_{\mathrm{id},-}\otimes \tilde\Pi_{\mathrm{id},-},\qquad
+\tilde\Pi_{\mathrm{id},1,0}=\tilde\Pi_{\mathrm{id,sym}}-\tilde\Pi_{\mathrm{id},1,1}-\tilde\Pi_{\mathrm{id},1,-1},\qquad
+\tilde\Pi_{\mathrm{id},0,0}=\tilde\Pi_{\mathrm{id,asym}} .
 $$
 
 Each is a Hermitian idempotent of unit weight, they are mutually orthogonal, and they resolve the identity:
 
 $$
-\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},r_z}}\tilde\Pi_{s'_{\mathrm{tot}},s'_{\mathrm{tot},r_z}}=\delta_{s_{\mathrm{tot}}s'_{\mathrm{tot}}}\delta_{s_{\mathrm{tot},r_z}s'_{\mathrm{tot},r_z}}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},r_z}},\qquad
-\sum_{s_{\mathrm{tot}},s_{\mathrm{tot},r_z}}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},r_z}}=e_t\otimes e_t .
+\tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},r_z}}\tilde\Pi_{\mathrm{id},s'_{\mathrm{tot}},s'_{\mathrm{tot},r_z}}=\delta_{s_{\mathrm{tot}}s'_{\mathrm{tot}}}\delta_{s_{\mathrm{tot},r_z}s'_{\mathrm{tot},r_z}}\tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},r_z}},\qquad
+\sum_{s_{\mathrm{tot}},s_{\mathrm{tot},r_z}}\tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},r_z}}=e_t\otimes e_t .
 $$
 
 Explicitly, in the tensor basis,
 
 $$
-\tilde\Pi_{1,1}=\tfrac14\left(e_t\otimes e_t+i\vec e_z\otimes e_t+ie_t\otimes \vec e_z-\vec e_z\otimes \vec e_z\right),
+\tilde\Pi_{\mathrm{id},1,1}=\tfrac14\left(e_t\otimes e_t+i\vec e_z\otimes e_t+ie_t\otimes \vec e_z-\vec e_z\otimes \vec e_z\right),
 \qquad
-\tilde\Pi_{1,-1}=\tfrac14\left(e_t\otimes e_t-i\vec e_z\otimes e_t-ie_t\otimes \vec e_z-\vec e_z\otimes \vec e_z\right),
+\tilde\Pi_{\mathrm{id},1,-1}=\tfrac14\left(e_t\otimes e_t-i\vec e_z\otimes e_t-ie_t\otimes \vec e_z-\vec e_z\otimes \vec e_z\right),
 $$
 
 while the two remaining members are of diagonal form,
 
 $$
-\tilde\Pi_{1,0}=\tfrac{1}{4}\left(e_t\otimes e_t-\vec e_x\otimes \vec e_x-\vec e_y\otimes \vec e_y+\vec e_z\otimes \vec e_z\right),
+\tilde\Pi_{\mathrm{id},1,0}=\tfrac{1}{4}\left(e_t\otimes e_t-\vec e_x\otimes \vec e_x-\vec e_y\otimes \vec e_y+\vec e_z\otimes \vec e_z\right),
 $$
 
 $$
-\tilde\Pi_{0,0}=\tfrac{1}{4}\left(e_t\otimes e_t+\vec e_x\otimes \vec e_x+\vec e_y\otimes \vec e_y+\vec e_z\otimes \vec e_z\right).
+\tilde\Pi_{\mathrm{id},0,0}=\tfrac{1}{4}\left(e_t\otimes e_t+\vec e_x\otimes \vec e_x+\vec e_y\otimes \vec e_y+\vec e_z\otimes \vec e_z\right).
 $$
 
-The two are of the diagonal form $\tfrac14\sum_\mu\epsilon_\mu e_\mu\otimes e_\mu$ with $\epsilon_0=1$ and $\epsilon_1\epsilon_2\epsilon_3=+1$: they are two of the four Bell idempotents of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, namely those with $\epsilon=(-1,-1,+1)$ and $\epsilon=(+1,+1,+1)$. The states $\tilde\Pi_{1,\pm1}$ are single product idempotents and are not of diagonal form. The coupled basis and the Bell basis are two idempotent bases of the same algebra and are related by a Hadamard change of basis, discussed below.
+The two are of the diagonal form $\tfrac14\sum_\mu\epsilon_\mu e_\mu\otimes e_\mu$ with $\epsilon_0=1$ and $\epsilon_1\epsilon_2\epsilon_3=+1$: they are two of the four Bell idempotents of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, namely those with $\epsilon=(-1,-1,+1)$ and $\epsilon=(+1,+1,+1)$. The states $\tilde\Pi_{\mathrm{id},1,\pm1}$ are single product idempotents and are not of diagonal form. The coupled basis and the Bell basis are two idempotent bases of the same algebra and are related by a Hadamard change of basis, discussed below.
 
-**Remark.** The sign pattern $\epsilon=(-1,-1,+1)$ of $\tilde\Pi_{1,0}$ is also the pattern of an invertible element of the underlying quaternion order. The one-particle element
+**Remark.** The sign pattern $\epsilon=(-1,-1,+1)$ of $\tilde\Pi_{\mathrm{id},1,0}$ is also the pattern of an invertible element of the underlying quaternion order. The one-particle element
 
 $$
 Q=\tfrac12(e_t-\vec e_x-\vec e_y+\vec e_z)
@@ -214,12 +214,12 @@ is invertible in the Hurwitz order and has order six, with $Q^2=-Q^*$ and $Q^3=-
 The action of the total spin operators is the expected one. On the idempotents the diagonal operators act by multiplication,
 
 $$
-\tilde S_{\Psi,\mathrm{tot},3}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar\,s_{\mathrm{tot},z}\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}},\qquad
-\tilde S_{\Psi,\mathrm{tot}}^2\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}},\qquad
-\tilde S_{\Psi,\mathrm{tot},\pm} \tilde\Pi_{\mathrm{asym}}=0 ,
+\tilde S_{\Psi,\mathrm{tot},3}\tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar\,s_{\mathrm{tot},z}\,\tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},z}},\qquad
+\tilde S_{\Psi,\mathrm{tot}}^2\tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)\,\tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},z}},\qquad
+\tilde S_{\Psi,\mathrm{tot},\pm} \tilde\Pi_{\mathrm{id,asym}}=0 ,
 $$
 
-while the ladder operators move between the states, $\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}$ being the idempotent of $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$:
+while the ladder operators move between the states, $\tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},z}}$ being the idempotent of $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$:
 
 $$
 \tilde S_{\Psi,+}|1,-1\rangle=\hbar\sqrt2\,|1,0\rangle,\qquad
@@ -235,7 +235,7 @@ which is the standard triplet ladder in algebraic form. The last relation is the
 The exchange operator exchanges the two factors. On a product idempotent,
 
 $$
-F\,(\tilde\Pi(\vec u_m)\otimes \tilde\Pi(\vec u))F=\tilde\Pi(\vec u)\otimes \tilde\Pi(\vec u_m),
+F\,(\tilde\Pi_{\mathrm{id}}(\vec u_m)\otimes \tilde\Pi_{\mathrm{id}}(\vec u))F=\tilde\Pi_{\mathrm{id}}(\vec u)\otimes \tilde\Pi_{\mathrm{id}}(\vec u_m),
 $$
 
 and on the product basis vectors, under $\mathsf{M}_2\otimes\mathsf{M}_2$, it acts as the swap $|a\rangle|b\rangle\mapsto|b\rangle|a\rangle$. It therefore commutes with the total spin operators,
@@ -249,13 +249,13 @@ which is immediate from the closed form of the coupling term and which can also 
 The singlet is antisymmetric under exchange and the triplet members are symmetric:
 
 $$
-F\,\tilde\Pi_{\mathrm{asym}}=-\tilde\Pi_{\mathrm{asym}},\qquad F\,\tilde\Pi_{\mathrm{sym}}=+\tilde\Pi_{\mathrm{sym}},\qquad
-F\,\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=(-1)^{1-s_{\mathrm{tot}}}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}} .
+F\,\tilde\Pi_{\mathrm{id,asym}}=-\tilde\Pi_{\mathrm{id,asym}},\qquad F\,\tilde\Pi_{\mathrm{id,sym}}=+\tilde\Pi_{\mathrm{id,sym}},\qquad
+F\,\tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},z}}=(-1)^{1-s_{\mathrm{tot}}}\tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},z}} .
 $$
 
 The factor $(-1)^{1-s_{\mathrm{tot}}}$ is the two-particle instance of the general rule $(-1)^{s_1+s_2-s_{\mathrm{tot}}}$ for the exchange symmetry of a coupled multiplet: for two spin-$\tfrac12$ objects the singlet is antisymmetric, and this is what makes it the unique state of vanishing total spin.
 
-Two further algebraic properties of the coupled idempotents are worth recording, because they connect the exchange structure to the zero divisors of the algebra. The ladder operators are nilpotent, and the idempotents they connect are zero divisors of $\mathbb{B}\otimes\mathbb{B}$: for any two distinct coupled idempotents $\tilde\Pi,\tilde\Pi_{\mathrm{other}}$ one has $\tilde\Pi\,\tilde\Pi_{\mathrm{other}}=0$ with both factors nonzero, so each is a zero divisor, and the singlet $\tilde\Pi_{\mathrm{asym}}$ in particular satisfies $\tilde\Pi_{\mathrm{asym}}(e_t\otimes e_t-\tilde\Pi_{\mathrm{asym}})=0$. The singlet is at once the antisymmetric idempotent, the state of vanishing total spin, and a zero divisor of the two-qubit algebra.
+Two further algebraic properties of the coupled idempotents are worth recording, because they connect the exchange structure to the zero divisors of the algebra. The ladder operators are nilpotent, and the idempotents they connect are zero divisors of $\mathbb{B}\otimes\mathbb{B}$: for any two distinct coupled idempotents $\tilde\Pi_{\mathrm{id}},\tilde\Pi_{\mathrm{id,other}}$ one has $\tilde\Pi_{\mathrm{id}}\,\tilde\Pi_{\mathrm{id,other}}=0$ with both factors nonzero, so each is a zero divisor, and the singlet $\tilde\Pi_{\mathrm{id,asym}}$ in particular satisfies $\tilde\Pi_{\mathrm{id,asym}}(e_t\otimes e_t-\tilde\Pi_{\mathrm{id,asym}})=0$. The singlet is at once the antisymmetric idempotent, the state of vanishing total spin, and a zero divisor of the two-qubit algebra.
 
 ## The Heisenberg Coupling
 
@@ -273,11 +273,11 @@ $$
 =-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{2}\,F+\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}\,e_t\otimes e_t .
 $$
 
-This is a Hermitian element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ — a legitimate observable — and its spectral decomposition is immediate from that of $F$, on using $F=\tilde\Pi_{\mathrm{sym}}-\tilde\Pi_{\mathrm{asym}}$ and $e_t\otimes e_t=\tilde\Pi_{\mathrm{sym}}+\tilde\Pi_{\mathrm{asym}}$:
+This is a Hermitian element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ — a legitimate observable — and its spectral decomposition is immediate from that of $F$, on using $F=\tilde\Pi_{\mathrm{id,sym}}-\tilde\Pi_{\mathrm{id,asym}}$ and $e_t\otimes e_t=\tilde\Pi_{\mathrm{id,sym}}+\tilde\Pi_{\mathrm{id,asym}}$:
 
 $$
-\tilde H_\Psi=-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{2}\left(\tilde\Pi_{\mathrm{sym}}-\tilde\Pi_{\mathrm{asym}}\right)+\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}\left(\tilde\Pi_{\mathrm{sym}}+\tilde\Pi_{\mathrm{asym}}\right)
-=-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}\,\tilde\Pi_{\mathrm{sym}}+\frac{3\,\hbar^{2}\,J_{\mathrm{ex}}}{4}\,\tilde\Pi_{\mathrm{asym}} .
+\tilde H_\Psi=-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{2}\left(\tilde\Pi_{\mathrm{id,sym}}-\tilde\Pi_{\mathrm{id,asym}}\right)+\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}\left(\tilde\Pi_{\mathrm{id,sym}}+\tilde\Pi_{\mathrm{id,asym}}\right)
+=-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}\,\tilde\Pi_{\mathrm{id,sym}}+\frac{3\,\hbar^{2}\,J_{\mathrm{ex}}}{4}\,\tilde\Pi_{\mathrm{id,asym}} .
 $$
 
 The eigenvalues are therefore
@@ -309,30 +309,30 @@ gives $\sum_\eta\tilde S_{\Psi,\eta}^{(1)}\tilde S_{\Psi,\eta}^{(2)}=\tfrac12\le
 The coupled states are not all of the same kind, and the reduction makes the distinction algebraic. For the two outer triplet members, which are product idempotents,
 
 $$
-2\,\mathrm{Sc}_2\!\left(\tilde\Pi_{1,1}\right)=2\,\mathrm{Sc}_2\!\left(\tilde\Pi_+\otimes \tilde\Pi_+\right)=\tilde\Pi_+\,2\,\mathrm{Sc}(\tilde\Pi_+)=\tilde\Pi_+ ,
+2\,\mathrm{Sc}_2\!\left(\tilde\Pi_{\mathrm{id},1,1}\right)=2\,\mathrm{Sc}_2\!\left(\tilde\Pi_{\mathrm{id},+}\otimes \tilde\Pi_{\mathrm{id},+}\right)=\tilde\Pi_{\mathrm{id},+}\,2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},+})=\tilde\Pi_{\mathrm{id},+} ,
 $$
 
-since $2\,\mathrm{Sc}(\tilde\Pi_\pm)=\mathrm{Sc}(e_t)=\tfrac12\cdot2=1$. So the reduced state of $\tilde\Pi_{1,1}$ is the pure state $\tilde\Pi_+$; the same holds for $\tilde\Pi_{1,-1}$ with $\tilde\Pi_-$.
+since $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\pm})=\mathrm{Sc}(e_t)=\tfrac12\cdot2=1$. So the reduced state of $\tilde\Pi_{\mathrm{id},1,1}$ is the pure state $\tilde\Pi_{\mathrm{id},+}$; the same holds for $\tilde\Pi_{\mathrm{id},1,-1}$ with $\tilde\Pi_{\mathrm{id},-}$.
 
-For the two diagonal-form idempotents the computation is a single line. Because $\tilde\Pi_{1,0}$ and $\tilde\Pi_{0,0}$ are sums of diagonal tensor terms,
+For the two diagonal-form idempotents the computation is a single line. Because $\tilde\Pi_{\mathrm{id},1,0}$ and $\tilde\Pi_{\mathrm{id},0,0}$ are sums of diagonal tensor terms,
 
 $$
-2\,\mathrm{Sc}_2\!\left(\tilde\Pi_{1,0}\right)=\tfrac{1}{4}\left(2\,\mathrm{Sc}(e_t)e_t+\sum_{\eta=1}^{3}\epsilon_\eta\,2\,\mathrm{Sc}(\vec e_\eta)\vec e_\eta\right)=\tfrac{1}{4}\cdot 2\,e_t=\tfrac{1}{2}\,e_t ,
+2\,\mathrm{Sc}_2\!\left(\tilde\Pi_{\mathrm{id},1,0}\right)=\tfrac{1}{4}\left(2\,\mathrm{Sc}(e_t)e_t+\sum_{\eta=1}^{3}\epsilon_\eta\,2\,\mathrm{Sc}(\vec e_\eta)\vec e_\eta\right)=\tfrac{1}{4}\cdot 2\,e_t=\tfrac{1}{2}\,e_t ,
 $$
 
-and likewise $2\,\mathrm{Sc}_2(\tilde\Pi_{0,0})=2\,\mathrm{Sc}_1(\tilde\Pi_{0,0})=\tfrac12 e_t$ and $2\,\mathrm{Sc}_1(\tilde\Pi_{1,0})=\tfrac12 e_t$. The reduced state of both $\tilde\Pi_{1,0}$ and $\tilde\Pi_{0,0}$ is the **maximally mixed** state of the one-particle system, the centre of the Bloch ball, of purity
+and likewise $2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{id},0,0})=2\,\mathrm{Sc}_1(\tilde\Pi_{\mathrm{id},0,0})=\tfrac12 e_t$ and $2\,\mathrm{Sc}_1(\tilde\Pi_{\mathrm{id},1,0})=\tfrac12 e_t$. The reduced state of both $\tilde\Pi_{\mathrm{id},1,0}$ and $\tilde\Pi_{\mathrm{id},0,0}$ is the **maximally mixed** state of the one-particle system, the centre of the Bloch ball, of purity
 
 $$
 2\,\mathrm{Sc}\!\left(\tfrac{1}{2}e_t\cdot\tfrac{1}{2}e_t\right)=\tfrac{1}{4}\,2\,\mathrm{Sc}(e_t)=\tfrac12 .
 $$
 
-The three triplet members therefore fall into two classes: $\tilde\Pi_{1,\pm1}$ are product states with pure reduced states, while $\tilde\Pi_{1,0}$ is a correlated state with maximally mixed reduced states, exactly like the singlet $\tilde\Pi_{0,0}$. The middle triplet state and the singlet share the same reduced data and differ only in their correlations; this is the algebraic content of the statement that the reduced density matrix does not determine the state of a composite. The informational interpretation of these correlations — their entropy, their discord, their use as a resource — belongs to the informational subcategory and is not taken up here.
+The three triplet members therefore fall into two classes: $\tilde\Pi_{\mathrm{id},1,\pm1}$ are product states with pure reduced states, while $\tilde\Pi_{\mathrm{id},1,0}$ is a correlated state with maximally mixed reduced states, exactly like the singlet $\tilde\Pi_{\mathrm{id},0,0}$. The middle triplet state and the singlet share the same reduced data and differ only in their correlations; this is the algebraic content of the statement that the reduced density matrix does not determine the state of a composite. The informational interpretation of these correlations — their entropy, their discord, their use as a resource — belongs to the informational subcategory and is not taken up here.
 
 ## Relation to the Bell Basis
 
 The coupled idempotents and the four Bell idempotents are two orthogonal families of minimal idempotents resolving the identity of $\mathbb{B}\otimes\mathbb{B}$; they are two idempotent bases in the sense of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, related by a $*$-unitary change of basis.
 
-The singlet belongs to both bases: $\tilde\Pi_{0,0}=\tilde\Pi_{\epsilon}$ with $\epsilon=(+1,+1,+1)$, which is the singlet idempotent $\tilde\Pi_{\mathrm{singlet}}$ of the companion articles. The middle triplet member $\tilde\Pi_{1,0}$ is the Bell idempotent with $\epsilon=(-1,-1,+1)$, the state $|\tilde{Ξ}^+\rangle$. The two remaining Bell idempotents are the idempotents associated with the states $\tfrac{1}{\sqrt2}\left(|\!\uparrow\uparrow\rangle\pm|\!\downarrow\downarrow\rangle\right)$, they involve off-diagonal matrix units linking the extreme product states, and are not members of the coupled multiplet.
+The singlet belongs to both bases: $\tilde\Pi_{\mathrm{id},0,0}=\tilde\Pi_{\mathrm{id},\epsilon}$ with $\epsilon=(+1,+1,+1)$, which is the singlet idempotent $\tilde\Pi_{\mathrm{id,singlet}}$ of the companion articles. The middle triplet member $\tilde\Pi_{\mathrm{id},1,0}$ is the Bell idempotent with $\epsilon=(-1,-1,+1)$, the state $|\tilde{Ξ}^+\rangle$. The two remaining Bell idempotents are the idempotents associated with the states $\tfrac{1}{\sqrt2}\left(|\!\uparrow\uparrow\rangle\pm|\!\downarrow\downarrow\rangle\right)$, they involve off-diagonal matrix units linking the extreme product states, and are not members of the coupled multiplet.
 
 The two bases are distinguished by what they diagonalise. The coupled basis diagonalises the total Casimir $\tilde S_{\Psi,\mathrm{tot}}^2$ and the total $\tilde S_{\Psi,\mathrm{tot},3}$. The Bell basis diagonalises the two commuting involutions
 
@@ -356,7 +356,7 @@ $$
 Q=\tfrac{1}{2}(1-\vec e_x-\vec e_y+\vec e_z)
 $$
 
-as one particle of a singlet, reading the pair $\{Q,Q^*\}$ as one singlet and $\{-Q,-Q^*\}$ as another, and saying that each generator "contains complete information about the whole system". The quaternion itself is exactly what the source says it is. Its powers are $Q^2=-Q^*$, $Q^3=-e_t$, $Q^4=-Q$, $Q^5=Q^*$, $Q^6=e_t$, so $Q$ generates a cyclic group of order six in $Sp(1)$ — the preimage of the order-three rotation group — and the rotation angle is $2\pi/3$ for both $Q$ and $Q^*$, with a common axis line and opposite senses. That group-theoretic content belongs to *Quaternion Orders and Finite Groups of Invertibles*. What fails is the identification with a state. Read as a two-qubit vector in the basis order $|00\rangle,|01\rangle,|10\rangle,|11\rangle$, the quaternion has components $(c_1,c_2,c_3,c_4)=\tfrac12(1,-1,-1,1)$, and the product-state test $c_1c_4=c_2c_3$ holds: $\tfrac12\cdot\tfrac12=\tfrac14=(-\tfrac12)(-\tfrac12)$. Its concurrence is zero, and it represents the product state $\tfrac12(|\!\uparrow\rangle-|\!\downarrow\rangle)\otimes(|\!\uparrow\rangle-|\!\downarrow\rangle)$, not the antisymmetric singlet $\tilde\Pi_{0,0}$ of this article. The $4\times4$ matrix argument of the source is the left regular representation of the quaternion — its action on $\mathbb{H}\cong\mathbb{R}^4$ — and its non-factorisation is a property of the multiplication operator, not of the Schmidt rank of the vector. The contrast between a state vector in $\mathbb{C}^4\cong\mathbb{B}$ and a state operator in $\mathbb{B}\otimes\mathbb{B}$ is set out in *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*.
+as one particle of a singlet, reading the pair $\{Q,Q^*\}$ as one singlet and $\{-Q,-Q^*\}$ as another, and saying that each generator "contains complete information about the whole system". The quaternion itself is exactly what the source says it is. Its powers are $Q^2=-Q^*$, $Q^3=-e_t$, $Q^4=-Q$, $Q^5=Q^*$, $Q^6=e_t$, so $Q$ generates a cyclic group of order six in $Sp(1)$ — the preimage of the order-three rotation group — and the rotation angle is $2\pi/3$ for both $Q$ and $Q^*$, with a common axis line and opposite senses. That group-theoretic content belongs to *Quaternion Orders and Finite Groups of Invertibles*. What fails is the identification with a state. Read as a two-qubit vector in the basis order $|00\rangle,|01\rangle,|10\rangle,|11\rangle$, the quaternion has components $(c_1,c_2,c_3,c_4)=\tfrac12(1,-1,-1,1)$, and the product-state test $c_1c_4=c_2c_3$ holds: $\tfrac12\cdot\tfrac12=\tfrac14=(-\tfrac12)(-\tfrac12)$. Its concurrence is zero, and it represents the product state $\tfrac12(|\!\uparrow\rangle-|\!\downarrow\rangle)\otimes(|\!\uparrow\rangle-|\!\downarrow\rangle)$, not the antisymmetric singlet $\tilde\Pi_{\mathrm{id},0,0}$ of this article. The $4\times4$ matrix argument of the source is the left regular representation of the quaternion — its action on $\mathbb{H}\cong\mathbb{R}^4$ — and its non-factorisation is a property of the multiplication operator, not of the Schmidt rank of the vector. The contrast between a state vector in $\mathbb{C}^4\cong\mathbb{B}$ and a state operator in $\mathbb{B}\otimes\mathbb{B}$ is set out in *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*.
 
 ## Summary
 
@@ -365,14 +365,14 @@ Two spin-$\tfrac12$ particles in the biquaternion framework are described by the
 The article established the following.
 
 - **Total spin and its Casimir.** $[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}]=i\,\hbar\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\mathrm{tot},\eta}$, and
-  $$\tilde S_{\Psi,\mathrm{tot}}^2=\hbar^{2}\left(e_t\otimes e_t+F\right)=2\,\hbar^{2}\,\tilde{\Pi}_{\mathrm{sym}},$$
+  $$\tilde S_{\Psi,\mathrm{tot}}^2=\hbar^{2}\left(e_t\otimes e_t+F\right)=2\,\hbar^{2}\,\tilde\Pi_{\mathrm{id,sym}},$$
   where $F=\tfrac12(e_t\otimes e_t-\sum_\eta \vec e_\eta\otimes \vec e_\eta)$ is the exchange operator.
 - **The coupling term.** $\sum_\eta\tilde S_{\Psi,\eta}^{(1)}\tilde S_{\Psi,\eta}^{(2)}=\frac{\hbar^{2}}{2}F-\frac{\hbar^{2}}{4}e_t\otimes e_t$, so the interaction between the two spins is carried by the exchange operator; equivalently $[F,\tilde S_{\Psi,\mathrm{tot},\eta}]=0$, whence $F$ is central in the coupled rotation algebra.
-- **The coupled idempotents.** $\tilde\Pi_{\mathrm{sym}}=\tfrac14(3e_t\otimes e_t-\sum_\eta \vec e_\eta\otimes \vec e_\eta)$ of $4\,\mathrm{Sc}=3$ and $\tilde\Pi_{\mathrm{asym}}=\tfrac14(e_t\otimes e_t+\sum_\eta \vec e_\eta\otimes \vec e_\eta)$ of $4\,\mathrm{Sc}=1$, Hermitian, orthogonal, complete; they are the $\pm1$ spectral projectors of $F$ and the spectral projectors of $\tilde S_{\Psi,\mathrm{tot}}^2$, with $\tilde S_{\Psi,\mathrm{tot}}^2=2\,\hbar^{2}\,\tilde{\Pi}_{\mathrm{sym}}$.
-- **The four coupled idempotents.** $\tilde\Pi_{1,\pm1}=\tilde\Pi_\pm\otimes \tilde\Pi_\pm$, $\tilde\Pi_{1,0}=\tilde\Pi_{\mathrm{sym}}-\tilde\Pi_{1,1}-\tilde\Pi_{1,-1}$, $\tilde\Pi_{0,0}=\tilde\Pi_{\mathrm{asym}}$; they are minimal Hermitian idempotents of unit weight resolving the identity, and the total spin acts on them by $\tilde S_{\Psi,\mathrm{tot},3}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar\,s_{\mathrm{tot},z}\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}$, $\tilde S_{\Psi,\mathrm{tot}}^2\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}$, $\tilde S_{\Psi,\mathrm{tot},\pm} \tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar\sqrt{(s_{\mathrm{tot}}\mp s_{\mathrm{tot},z})(s_{\mathrm{tot}}\pm s_{\mathrm{tot},z}+1)}\,|s_{\mathrm{tot}},s_{\mathrm{tot},z}\pm1\rangle\langle  s_{\mathrm{tot}},s_{\mathrm{tot},z}|$.
-- **Exchange symmetry.** $F \tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=(-1)^{1-s_{\mathrm{tot}}}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}$: the singlet is antisymmetric, the triplet symmetric; the singlet is annihilated by the total ladder operators and is a zero divisor of the two-qubit algebra.
+- **The coupled idempotents.** $\tilde\Pi_{\mathrm{id,sym}}=\tfrac14(3e_t\otimes e_t-\sum_\eta \vec e_\eta\otimes \vec e_\eta)$ of $4\,\mathrm{Sc}=3$ and $\tilde\Pi_{\mathrm{id,asym}}=\tfrac14(e_t\otimes e_t+\sum_\eta \vec e_\eta\otimes \vec e_\eta)$ of $4\,\mathrm{Sc}=1$, Hermitian, orthogonal, complete; they are the $\pm1$ spectral projectors of $F$ and the spectral projectors of $\tilde S_{\Psi,\mathrm{tot}}^2$, with $\tilde S_{\Psi,\mathrm{tot}}^2=2\,\hbar^{2}\,\tilde\Pi_{\mathrm{id,sym}}$.
+- **The four coupled idempotents.** $\tilde\Pi_{\mathrm{id},1,\pm1}=\tilde\Pi_{\mathrm{id},\pm}\otimes \tilde\Pi_{\mathrm{id},\pm}$, $\tilde\Pi_{\mathrm{id},1,0}=\tilde\Pi_{\mathrm{id,sym}}-\tilde\Pi_{\mathrm{id},1,1}-\tilde\Pi_{\mathrm{id},1,-1}$, $\tilde\Pi_{\mathrm{id},0,0}=\tilde\Pi_{\mathrm{id,asym}}$; they are minimal Hermitian idempotents of unit weight resolving the identity, and the total spin acts on them by $\tilde S_{\Psi,\mathrm{tot},3}\tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar\,s_{\mathrm{tot},z}\,\tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},z}}$, $\tilde S_{\Psi,\mathrm{tot}}^2\tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)\,\tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},z}}$, $\tilde S_{\Psi,\mathrm{tot},\pm} \tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar\sqrt{(s_{\mathrm{tot}}\mp s_{\mathrm{tot},z})(s_{\mathrm{tot}}\pm s_{\mathrm{tot},z}+1)}\,|s_{\mathrm{tot}},s_{\mathrm{tot},z}\pm1\rangle\langle  s_{\mathrm{tot}},s_{\mathrm{tot},z}|$.
+- **Exchange symmetry.** $F \tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},z}}=(-1)^{1-s_{\mathrm{tot}}}\tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},z}}$: the singlet is antisymmetric, the triplet symmetric; the singlet is annihilated by the total ladder operators and is a zero divisor of the two-qubit algebra.
 - **The Heisenberg coupling.** For $\tilde H_\Psi=-J_{\mathrm{ex}}\sum_\eta\tilde S_{\Psi,\eta}^{(1)}\tilde S_{\Psi,\eta}^{(2)}$, the eigenvalues are $-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}$ on the triplet and $+\frac{3\,\hbar^{2}\,J_{\mathrm{ex}}}{4}$ on the singlet, with splitting $\hbar^{2}\,J_{\mathrm{ex}}$; the Hamiltonian is the algebra element $\tilde H_\Psi=-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{2}F+\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}e_t\otimes e_t$.
-- **Reduced states.** $2\,\mathrm{Sc}_2(\tilde\Pi_{1,\pm1})=\tilde\Pi_\pm$ are pure; $2\,\mathrm{Sc}_2(\tilde\Pi_{1,0})=2\,\mathrm{Sc}_2(\tilde\Pi_{0,0})=\tfrac12 e_t$ are maximally mixed. The middle triplet member and the singlet are indistinguishable by their reduced states.
+- **Reduced states.** $2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{id},1,\pm1})=\tilde\Pi_{\mathrm{id},\pm}$ are pure; $2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{id},1,0})=2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{id},0,0})=\tfrac12 e_t$ are maximally mixed. The middle triplet member and the singlet are indistinguishable by their reduced states.
 - **Two idempotent bases.** The coupled basis and the Bell basis are two orthogonal families of minimal idempotents of the same algebra, sharing the singlet and related by a Hadamard rotation.
 
 All of this is a statement about $\mathbb{B}\otimes\mathbb{B}$; it presupposes the tensor-product composition rule, which the framework assumes rather than derives.
@@ -388,10 +388,10 @@ All of this is a statement about $\mathbb{B}\otimes\mathbb{B}$; it presupposes t
 | $\tilde S_{\Psi,\eta}^{(1)}=\tilde S_{\Psi,\eta}\otimes e_t,\ \tilde S_{\Psi,\eta}^{(2)}=e_t\otimes\tilde S_{\Psi,\eta}$ | Factor spin operators |
 | $\tilde S_{\Psi,\mathrm{tot},\eta}=\tilde S_{\Psi,\eta}^{(1)}+\tilde S_{\Psi,\eta}^{(2)}$ | Total spin |
 | $\tilde S_{\Psi,\mathrm{tot},\pm}=\tilde S_{\Psi,\mathrm{tot},1}\pm i\tilde S_{\Psi,\mathrm{tot},2}$ | Total ladder operators |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | One-particle idempotents |
+| $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z)$ | One-particle idempotents |
 | $F=\tfrac12(e_t\otimes e_t-\sum_\eta \vec e_\eta\otimes \vec e_\eta)$ | Exchange operator |
-| $\tilde\Pi_{\mathrm{sym}},\tilde\Pi_{\mathrm{asym}}$ | Triplet and singlet idempotents |
-| $\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}$ | Coupled idempotents, $s_{\mathrm{tot}}\in\{1,0\}$ |
+| $\tilde\Pi_{\mathrm{id,sym}},\tilde\Pi_{\mathrm{id,asym}}$ | Triplet and singlet idempotents |
+| $\tilde\Pi_{\mathrm{id},s_{\mathrm{tot}},s_{\mathrm{tot},z}}$ | Coupled idempotents, $s_{\mathrm{tot}}\in\{1,0\}$ |
 | $\tilde H_\Psi=-J_{\mathrm{ex}}\sum_\eta\tilde S_{\Psi,\eta}^{(1)}\tilde S_{\Psi,\eta}^{(2)}$ | Heisenberg coupling |
 | $J_{\mathrm{ex}}$ | Exchange constant (ferromagnetic $J_{\mathrm{ex}}>0$) |
 | $\mathsf{M}_2(e_t)=I_2,\ \mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$ | Matrix isomorphism |

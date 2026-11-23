@@ -193,7 +193,7 @@ Let the ensemble be two orthogonal pure states with equal weights,
 
 $$
 p_0 = p_1 = \tfrac12, \qquad
-\tilde{Ϛ}_{\Psi,0} = \tilde\Pi_1(\vec u_z), \qquad \tilde{Ϛ}_{\Psi,1} = \tilde\Pi_2(\vec u_z) .
+\tilde{Ϛ}_{\Psi,0} = \tilde\Pi_{\mathrm{id},1}(\vec u_z), \qquad \tilde{Ϛ}_{\Psi,1} = \tilde\Pi_{\mathrm{id},2}(\vec u_z) .
 $$
 
 The average state is $\tilde{Ϛ}_{\Psi}^{\natural} = \tfrac12 e_t$, with Bloch vector $\bar{\vec s_{\Psi}} = 0$ and biquaternion norm $\tfrac14 e_t$, so
@@ -202,7 +202,7 @@ $$
 \xi = S(\tfrac12 e_t) = \log 2 .
 $$
 
-The projective measurement in the basis $\{\tilde\Pi_{1,2}(\vec u_z)\}$ gives $p(y|x) = \delta_{xy}$, a noiseless channel, so $I(X:Y) = \log 2 = H(X)$. The bound is saturated: $I_{\mathrm{acc}} = \xi = \log2$. This is the maximal value for a qubit, and it is attained exactly when the ensemble is an orthogonal decomposition with weights equal to the probabilities of a projective measurement.
+The projective measurement in the basis $\{\tilde\Pi_{\mathrm{id},1,2}(\vec u_z)\}$ gives $p(y|x) = \delta_{xy}$, a noiseless channel, so $I(X:Y) = \log 2 = H(X)$. The bound is saturated: $I_{\mathrm{acc}} = \xi = \log2$. This is the maximal value for a qubit, and it is attained exactly when the ensemble is an orthogonal decomposition with weights equal to the probabilities of a projective measurement.
 
 ### Two non-orthogonal pure states
 

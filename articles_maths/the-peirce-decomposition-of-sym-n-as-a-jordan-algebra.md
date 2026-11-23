@@ -145,7 +145,7 @@ $$
 
 and the multiplication rules read $\sigma_1\circ\sigma_1=\mathrm{I}=E+(\mathrm{I}-E)\in J_1\oplus J_0$, $E\circ\sigma_1=\tfrac12\sigma_1\in J_{1/2}$ and $E\circ(\mathrm{I}-E)=0$. The three identities were verified on the Pauli matrices, and they are the smallest instance of the six rules.
 
-**The biquaternion reading identifies the three lines with the corners.** The idempotent $E=\tilde\Pi_+$ spans the corner $\mathbb{B}_{++}$, its complement $\mathrm{I}-E=\tilde\Pi_-$ spans $\mathbb{B}_{--}$, and the middle line $\sigma_1$ is the sum of the two mixed corners $\mathbb{B}_{+-}$ and $\mathbb{B}_{-+}$ under the symmetry. So the Jordan Peirce decomposition is the Peirce decomposition of the algebra with the two mixed corners identified, which is the exact sense in which the Jordan structure is the quotient of the associative one by the symmetry.
+**The biquaternion reading identifies the three lines with the corners.** The idempotent $E=\tilde\Pi_{\mathrm{id},+}$ spans the corner $\mathbb{B}_{++}$, its complement $\mathrm{I}-E=\tilde\Pi_{\mathrm{id},-}$ spans $\mathbb{B}_{--}$, and the middle line $\sigma_1$ is the sum of the two mixed corners $\mathbb{B}_{+-}$ and $\mathbb{B}_{-+}$ under the symmetry. So the Jordan Peirce decomposition is the Peirce decomposition of the algebra with the two mixed corners identified, which is the exact sense in which the Jordan structure is the quotient of the associative one by the symmetry.
 
 ## Summary
 

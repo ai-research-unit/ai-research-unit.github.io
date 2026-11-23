@@ -6,20 +6,20 @@ The state space of the qubit is a ball, and the geometry of its boundary is the 
 
 The result is a division of labour between the two forms, and it is worth stating before any algebra is written.
 
-- The **Hermitian form** (the plain form on $\mathbb{B}_{\Psi}$) fixes the *transition probability*. On pure states the normalised form gives $2\langle\tilde\Pi(\vec{u}_1),\tilde\Pi(\vec{u}_2)\rangle_{*} = \tfrac12(1+\vec{u}_1\cdot\vec{u}_2) = \cos^2(\theta/2)$, the squared overlap of the corresponding rays.
+- The **Hermitian form** (the plain form on $\mathbb{B}_{\Psi}$) fixes the *transition probability*. On pure states the normalised form gives $2\langle\tilde\Pi_{\mathrm{id}}(\vec{u}_1),\tilde\Pi_{\mathrm{id}}(\vec{u}_2)\rangle_{*} = \tfrac12(1+\vec{u}_1\cdot\vec{u}_2) = \cos^2(\theta/2)$, the squared overlap of the corresponding rays.
 - The **biquaternion norm** fixes the *metric*. It vanishes identically on the pure states, so it cannot itself be a metric there; what it gives is the line element at second order, and the result is
 
 $$
-ds^2_{\mathrm{FS}} \;=\; -\,\langle\delta\tilde\Pi\rangle_{\natural}\Big|_{\text{tangential}} \;=\; \tfrac14\,\bigl|d\vec{u}\bigr|^2 \;=\; \tfrac14\left(d\theta^2+\sin^2\theta\,d{\theta_{\mathrm{azm}}}^2\right),
+ds^2_{\mathrm{FS}} \;=\; -\,\langle\delta\tilde\Pi_{\mathrm{id}}\rangle_{\natural}\Big|_{\text{tangential}} \;=\; \tfrac14\,\bigl|d\vec{u}\bigr|^2 \;=\; \tfrac14\left(d\theta^2+\sin^2\theta\,d{\theta_{\mathrm{azm}}}^2\right),
 $$
 
 the Fubini–Study line element of $\mathbb{P}^1(\mathbb{C})$, equal to one quarter of the round metric of the Bloch sphere. The factor $\tfrac14$ is the spinorial factor: it is the square of the ratio between the angle on the ray space and the angle on the Bloch sphere, that ratio being the half-angle $\tfrac12$ of the double cover $SU(2)\to SO(3)$.
 
 Three further results complete the picture. The Fubini–Study metric is **Kähler**: its complex structure is the central scalar imaginary $i$ acting on the state module, and its symplectic form is, up to a factor, the scalar part of the algebra commutator,
 $$
-\omega \;=\; -\,i\,\mathrm{Sc}\!\left(\tilde\Pi\,[\delta_1\tilde\Pi,\delta_2\tilde\Pi]\right) \;=\; \tfrac14\,\vec{u}\cdot(\delta_1\vec{u}\times\delta_2\vec{u}).
+\omega \;=\; -\,i\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{id}}\,[\delta_1\tilde\Pi_{\mathrm{id}},\delta_2\tilde\Pi_{\mathrm{id}}]\right) \;=\; \tfrac14\,\vec{u}\cdot(\delta_1\vec{u}\times\delta_2\vec{u}).
 $$
-The **geodesic distance** is $d_{\mathrm{FS}}(\tilde\Pi_1,\tilde\Pi_2) = \arccos\lvert\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\rvert = \theta/2$, so that the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* is the sine of the Fubini–Study distance, $D = \sin d_{\mathrm{FS}}$. And on the interior the metric is the **Bures metric**, whose boundary restriction is the Fubini–Study metric; the flat quadratic form $-\tfrac14|d\vec s_{\Psi}|^2$ that the biquaternion norm also supplies is *not* that interior metric, so the biquaternion norm gives the boundary exactly and the flat geometry everywhere, but not the metrically distinguished interior.
+The **geodesic distance** is $d_{\mathrm{FS}}(\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2}) = \arccos\lvert\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\rvert = \theta/2$, so that the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* is the sine of the Fubini–Study distance, $D = \sin d_{\mathrm{FS}}$. And on the interior the metric is the **Bures metric**, whose boundary restriction is the Fubini–Study metric; the flat quadratic form $-\tfrac14|d\vec s_{\Psi}|^2$ that the biquaternion norm also supplies is *not* that interior metric, so the biquaternion norm gives the boundary exactly and the flat geometry everywhere, but not the metrically distinguished interior.
 
 The article proceeds as follows. The state space and its two forms are recalled; the pure states are identified with the rays of the state module and with the points of $\mathbb{P}^1(\mathbb{C})$; the transition probability is computed from the normalised Hermitian form; the Fubini–Study line element is computed from the biquaternion norm in two independent ways, from the Hermitian idempotent displacement and from the spinor, and the two agree; the complex structure and the Kähler form are exhibited; geodesics and distances are collected; and the Bures extension and the limits of the algebra's own contribution are stated. What the article does not do is the informational interpretation of the same geometry, which belongs to the informational articles, and the spin-specific interpretations, which belong to the spin articles.
 
@@ -60,21 +60,21 @@ $$
 $$
 so a boundary state is an idempotent with $2\,\mathrm{Sc}=1$ (normalised in the $2\times2$ image) and, in the matrix model, a rank-one projection. Writing it as
 $$
-\tilde\Pi(\vec{u})=\tfrac12\bigl(e_t+i\vec{u}\bigr),\qquad |\vec{u}|=1 ,
+\tilde\Pi_{\mathrm{id}}(\vec{u})=\tfrac12\bigl(e_t+i\vec{u}\bigr),\qquad |\vec{u}|=1 ,
 $$
-the map $\vec{u}\mapsto\tilde\Pi(\vec{u})$ is a bijection from the unit sphere $S^2=\{\vec{u}\in\mathbb{R}^3\}$ to the pure states, and $\tilde\Pi(\vec{u})$ and $\tilde\Pi(-\vec{u})=e_t-\tilde\Pi(\vec{u})$ are complementary orthogonal projections.
+the map $\vec{u}\mapsto\tilde\Pi_{\mathrm{id}}(\vec{u})$ is a bijection from the unit sphere $S^2=\{\vec{u}\in\mathbb{R}^3\}$ to the pure states, and $\tilde\Pi_{\mathrm{id}}(\vec{u})$ and $\tilde\Pi_{\mathrm{id}}(-\vec{u})=e_t-\tilde\Pi_{\mathrm{id}}(\vec{u})$ are complementary orthogonal projections.
 
 The pure states have a second, independent parametrization, and the agreement of the two is what makes the projective geometry available. The **state module** is the minimal left ideal
 $$
-\mathbb{B}\tilde\Pi_+=\{\tilde{Ξ}_{1}\,\tilde\Pi_++\tilde{Ξ}_{2}\,r_y:\ \tilde{Ξ}_{1},\tilde{Ξ}_{2}\in\mathbb{C}\}\cong\mathbb{C}^2,
+\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\{\tilde{Ξ}_{1}\,\tilde\Pi_{\mathrm{id},++}\tilde{Ξ}_{2}\,r_y:\ \tilde{Ξ}_{1},\tilde{Ξ}_{2}\in\mathbb{C}\}\cong\mathbb{C}^2,
 \qquad
-\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),
+\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z),
 $$
 
-Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
+Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$ are its two associated idempotents.
 and its rays $[\tilde{Ξ}]=\mathbb{C}\tilde{Ξ}$ constitute the projective line $\mathbb{P}^1(\mathbb{C})$. To a nonzero spinor $\tilde{Ξ}$ attach the rank-one element
 $$
-\tilde\Pi_{\mathrm{sp}}=\frac{\tilde{Ξ}\,\tilde{Ξ}^{\dagger}}{2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})} .
+\tilde\Pi_{\mathrm{id,sp}}=\frac{\tilde{Ξ}\,\tilde{Ξ}^{\dagger}}{2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})} .
 $$
 $$
 \mathbb{P}^1(\mathbb{C})\ \cong\ S^2\ \cong\ \{\text{pure states}\},
@@ -85,36 +85,36 @@ $$
 $$
 and the physical equivalence of $\tilde{Ξ}$ and $\exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$ is the statement that the phase direction is the fiber of the Hopf map $S^3\to S^2$. The **central scalar imaginary** $i$ supplies that phase: it is central, so left multiplication by $i$ commutes with the left action of $\mathbb{B}$ on the module and gives the module its complex structure. The phase $\mathrm{U}(1)$ is a central subgroup, and the quotient by it is the passage from spinors to rays.
 
-Two remarks fix the roles. First, the complex structure used here lives on the **state module** $\mathbb{B}\tilde\Pi_+$, not on $\mathbb{B}_{\Psi}$: multiplication by $i$ exchanges the sectors, $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$, so it is not an operator on the state space. The projective structure is that of the module, and it descends to the boundary of the ball. Second, the pure states are the extreme points of the ball, so the boundary is not merely a convenient subset: it is the set on which the geometry is specified by the algebra's *quadratic* form rather than by the trace.
+Two remarks fix the roles. First, the complex structure used here lives on the **state module** $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$, not on $\mathbb{B}_{\Psi}$: multiplication by $i$ exchanges the sectors, $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$, so it is not an operator on the state space. The projective structure is that of the module, and it descends to the boundary of the ball. Second, the pure states are the extreme points of the ball, so the boundary is not merely a convenient subset: it is the set on which the geometry is specified by the algebra's *quadratic* form rather than by the trace.
 
 ## The Transition Probability from the Hermitian Form
 
 The Hermitian form gives the overlap of two pure states. From the idempotent form and the quaternion product of pure real quaternions, which reads $\vec{u}_1\vec{u}_2=-\vec{u}_1\cdot\vec{u}_2+\vec{u}_1\times\vec{u}_2$,
 $$
-\tilde\Pi(\vec{u}_1)\tilde\Pi(\vec{u}_2)
+\tilde\Pi_{\mathrm{id}}(\vec{u}_1)\tilde\Pi_{\mathrm{id}}(\vec{u}_2)
 =\tfrac14\bigl(e_t+i\vec{u}_1\bigr)\bigl(e_t+i\vec{u}_2\bigr)
 =\tfrac14\Bigl(\bigl(1+\vec{u}_1\cdot\vec{u}_2\bigr)e_t+i(\vec{u}_1+\vec{u}_2)-\vec{u}_1\times\vec{u}_2\Bigr).
 $$
 The Hermitian form keeps only the scalar part,
 $$
-\boxed{\ 2\,\langle\tilde\Pi(\vec{u}_1),\tilde\Pi(\vec{u}_2)\rangle_{*}=\tfrac12\bigl(1+\vec{u}_1\cdot\vec{u}_2\bigr)=\cos^2\frac{\theta}{2},\ }
+\boxed{\ 2\,\langle\tilde\Pi_{\mathrm{id}}(\vec{u}_1),\tilde\Pi_{\mathrm{id}}(\vec{u}_2)\rangle_{*}=\tfrac12\bigl(1+\vec{u}_1\cdot\vec{u}_2\bigr)=\cos^2\frac{\theta}{2},\ }
 $$
 where $\theta$ is the angle between the two Bloch vectors. This is the transition probability of the two pure states, the squared overlap $\lvert\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\rvert^2$, read as the normalised Hermitian form of the algebra. On the matrix side it is $\lvert\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\rvert^2$ with the normalized spinors of the preceding section, and the identification is exact:
 $$
-\lvert\langle\tilde{Ξ}(\vec{u}_1)|\tilde{Ξ}(\vec{u}_2)\rangle\rvert^2=2\langle\tilde\Pi(\vec{u}_1),\tilde\Pi(\vec{u}_2)\rangle_{*} .
+\lvert\langle\tilde{Ξ}(\vec{u}_1)|\tilde{Ξ}(\vec{u}_2)\rangle\rvert^2=2\langle\tilde\Pi_{\mathrm{id}}(\vec{u}_1),\tilde\Pi_{\mathrm{id}}(\vec{u}_2)\rangle_{*} .
 $$
 
 Two checks fix the normalization. For $\vec{u}_2=\vec{u}_1$ the normalised form is $1$, the pairing itself being $\tfrac12$, as it must be for a probability; for $\vec{u}_2=-\vec{u}_1$ it is $0$, the orthogonal case; for $\vec{u}_2\perp\vec{u}_1$ it is $\tfrac12$, the unbiased case. The quantity is invariant under the whole $*$-unitary group, because conjugation by a $*$-unitary preserves the Hermitian form and therefore its value, and it is the only non-constant $*$-unitary-invariant two-point function of the boundary that is bilinear in the two Hermitian idempotents. It is therefore the contribution of the Hermitian form to the geometry, and it is a *probability*, not a distance: the distance is the angle whose cosine-square it is.
 
 The companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* records the complementary boundary identity for the trace distance,
 $$
-D\bigl(\tilde\Pi(\vec{u}_1),\tilde\Pi(\vec{u}_2)\bigr)=\tfrac12\bigl|\vec{u}_1-\vec{u}_2\bigr|=\sin\frac{\theta}{2},
+D\bigl(\tilde\Pi_{\mathrm{id}}(\vec{u}_1),\tilde\Pi_{\mathrm{id}}(\vec{u}_2)\bigr)=\tfrac12\bigl|\vec{u}_1-\vec{u}_2\bigr|=\sin\frac{\theta}{2},
 \qquad
-D^2+2\langle\tilde\Pi_1,\tilde\Pi_2\rangle_{*}=1 ,
+D^2+2\langle\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2}\rangle_{*}=1 ,
 $$
 so that the trace distance and the transition probability carry the same information on the boundary. The Fubini–Study distance introduced in the next section is the remaining side of the same triangle of equivalent data,
 $$
-d_{\mathrm{FS}}=\frac{\theta}{2}=\arcsin D=\arccos\sqrt{2\langle\tilde\Pi_1,\tilde\Pi_2\rangle_{*}} .
+d_{\mathrm{FS}}=\frac{\theta}{2}=\arcsin D=\arccos\sqrt{2\langle\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2}\rangle_{*}} .
 $$
 
 ## The Fubini–Study Line Element from the Biquaternion Norm
@@ -123,13 +123,13 @@ The biquaternion norm vanishes on the pure states, so it assigns them a *length*
 
 ### The Hermitian idempotent variation
 
-Differentiate the idempotent along the boundary. Since $\tilde\Pi(\vec{u})=\tfrac12(e_t+i\vec{u})$,
+Differentiate the idempotent along the boundary. Since $\tilde\Pi_{\mathrm{id}}(\vec{u})=\tfrac12(e_t+i\vec{u})$,
 $$
-\delta\tilde\Pi=\tfrac12\,i\,\delta\vec{u},\qquad \vec{u}\cdot\delta\vec{u}=0 ,
+\delta\tilde\Pi_{\mathrm{id}}=\tfrac12\,i\,\delta\vec{u},\qquad \vec{u}\cdot\delta\vec{u}=0 ,
 $$
-the tangency condition being the differentiation of $|\vec{u}|^2=1$. The displacement is Hermitian, $\delta\tilde\Pi\in\mathbb{B}_{\Psi}$, with vanishing scalar part. Compute the biquaternion norm of the displacement, using that $\overline{\delta\vec{u}}=-\delta\vec{u}$ for a pure real quaternion and that $(\delta\vec{u})^2=-|\delta\vec{u}|^2e_t$:
+the tangency condition being the differentiation of $|\vec{u}|^2=1$. The displacement is Hermitian, $\delta\tilde\Pi_{\mathrm{id}}\in\mathbb{B}_{\Psi}$, with vanishing scalar part. Compute the biquaternion norm of the displacement, using that $\overline{\delta\vec{u}}=-\delta\vec{u}$ for a pure real quaternion and that $(\delta\vec{u})^2=-|\delta\vec{u}|^2e_t$:
 $$
-\langle\delta\tilde\Pi\rangle_{\natural}
+\langle\delta\tilde\Pi_{\mathrm{id}}\rangle_{\natural}
 =\Bigl(\tfrac12 i\,\delta\vec{u}\Bigr)\overline{\Bigl(\tfrac12 i\,\delta\vec{u}\Bigr)}
 =\Bigl(\tfrac12 i\,\delta\vec{u}\Bigr)\Bigl(\tfrac12 i\,\overline{\delta\vec{u}}\Bigr)
 =\Bigl(\tfrac12 i\,\delta\vec{u}\Bigr)\Bigl(-\tfrac12 i\,\delta\vec{u}\Bigr)
@@ -140,7 +140,7 @@ $$
 
 The scalar coefficient is **negative**, so the biquaternion norm is negative on tangential displacements; the metric is the negative of the form on those directions, and the Fubini–Study line element is
 $$
-ds^2_{\mathrm{FS}}=-\,\langle\delta\tilde\Pi\rangle_{\natural}\Big|_{\vec{u}\cdot\delta\vec{u}=0}
+ds^2_{\mathrm{FS}}=-\,\langle\delta\tilde\Pi_{\mathrm{id}}\rangle_{\natural}\Big|_{\vec{u}\cdot\delta\vec{u}=0}
 =\tfrac14\,|d\vec{u}|^2 .
 $$
 With $\vec{u}=(\sin\theta\cos\theta_{\mathrm{azm}},\sin\theta\sin\theta_{\mathrm{azm}},\cos\theta)$ this is
@@ -149,23 +149,23 @@ $$
 $$
 The round metric of the unit Bloch sphere is $d\Omega^2=d\theta^2+\sin^2\theta\,d{\theta_{\mathrm{azm}}}^2$, so the Fubini–Study metric of the pure states is one quarter of the round metric of the sphere on which the states are drawn. Equivalently, the pure-state manifold is a round sphere of radius $\tfrac12$ with the Fubini–Study normalization, and its total area is $\pi$.
 
-The sign convention in $-\langle\delta\tilde\Pi\rangle_{\natural}$ deserves a word, because the biquaternion norm itself is indefinite and no sign choice can be avoided. On the tangential directions of the boundary the quadratic form is negative, $\langle\delta\tilde\Pi\rangle_{\natural}=-\tfrac14|\delta\vec{u}|^2e_t$, as the computation shows; the same displacement written in the $(1,3)$ coordinates of $\mathbb{B}_{\Psi}$ has negative spatial norm, and the two statements agree. The minus sign in $ds^2_{\mathrm{FS}}=-\langle\delta\tilde\Pi\rangle_{\natural}$ converts the algebra's $(1,3)$ normalization to the positive normalization of a length. This is the precise sense in which the biquaternion norm, though indefinite, *does* contain the Fubini–Study metric: the metric is the negative of the form evaluated on the null boundary's tangential directions.
+The sign convention in $-\langle\delta\tilde\Pi_{\mathrm{id}}\rangle_{\natural}$ deserves a word, because the biquaternion norm itself is indefinite and no sign choice can be avoided. On the tangential directions of the boundary the quadratic form is negative, $\langle\delta\tilde\Pi_{\mathrm{id}}\rangle_{\natural}=-\tfrac14|\delta\vec{u}|^2e_t$, as the computation shows; the same displacement written in the $(1,3)$ coordinates of $\mathbb{B}_{\Psi}$ has negative spatial norm, and the two statements agree. The minus sign in $ds^2_{\mathrm{FS}}=-\langle\delta\tilde\Pi_{\mathrm{id}}\rangle_{\natural}$ converts the algebra's $(1,3)$ normalization to the positive normalization of a length. This is the precise sense in which the biquaternion norm, though indefinite, *does* contain the Fubini–Study metric: the metric is the negative of the form evaluated on the null boundary's tangential directions.
 
 ### The spinor computation
 
 The second derivation uses the spinor directly and confirms the first. Let
 $$
-\tilde{Ξ}(\theta,\theta_{\mathrm{azm}})=\cos\tfrac{\theta}{2}\,\tilde\Pi_++\sin\tfrac{\theta}{2}\,\exp(i\theta_{\mathrm{azm}})\,y
+\tilde{Ξ}(\theta,\theta_{\mathrm{azm}})=\cos\tfrac{\theta}{2}\,\tilde\Pi_{\mathrm{id},++}\sin\tfrac{\theta}{2}\,\exp(i\theta_{\mathrm{azm}})\,y
 $$
-be a normalized spinor, $2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})=1$, equivalently $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{*}=\tfrac12$, with $\tilde\Pi_{\mathrm{sp}}=\tilde{Ξ}\tilde{Ξ}^{\dagger}$. The Fubini–Study line element of the ray space is
+be a normalized spinor, $2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})=1$, equivalently $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{*}=\tfrac12$, with $\tilde\Pi_{\mathrm{id,sp}}=\tilde{Ξ}\tilde{Ξ}^{\dagger}$. The Fubini–Study line element of the ray space is
 $$
 ds^2_{\mathrm{FS}}=2\,\mathrm{Sc}\!\left(d\tilde{Ξ}^{\dagger}\,d\tilde{Ξ}\right)-\Bigl|2\,\mathrm{Sc}\!\left(\tilde{Ξ}^{\dagger} d\tilde{Ξ}\right)\Bigr|^2 ,
 $$
 the second term removing the phase direction. With
 $$
-d\tilde{Ξ}=\Bigl(-\tfrac12\sin\tfrac{\theta}{2}\,d\theta\Bigr)\tilde\Pi_++\exp(i\theta_{\mathrm{azm}})\Bigl(\tfrac12\cos\tfrac{\theta}{2}\,d\theta+i\sin\tfrac{\theta}{2}\,d\theta_{\mathrm{azm}}\Bigr)y ,
+d\tilde{Ξ}=\Bigl(-\tfrac12\sin\tfrac{\theta}{2}\,d\theta\Bigr)\tilde\Pi_{\mathrm{id},++}\exp(i\theta_{\mathrm{azm}})\Bigl(\tfrac12\cos\tfrac{\theta}{2}\,d\theta+i\sin\tfrac{\theta}{2}\,d\theta_{\mathrm{azm}}\Bigr)y ,
 $$
-from which $\partial/\partial\theta_{\mathrm{azm}}\,\tilde{Ξ}=i\,\exp(i\theta_{\mathrm{azm}})\sin\tfrac{\theta}{2}\,r_y$. Using the normalization $2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})=1$ and the matrix-unit relations $\tilde\Pi_+^2=\tilde\Pi_+$, $y^2=x^2=0$, $xy=\tilde\Pi_+$, $yx=e_t-\tilde\Pi_+$ with $y^{*}=x$, the four first derivatives are
+from which $\partial/\partial\theta_{\mathrm{azm}}\,\tilde{Ξ}=i\,\exp(i\theta_{\mathrm{azm}})\sin\tfrac{\theta}{2}\,r_y$. Using the normalization $2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})=1$ and the matrix-unit relations $\tilde\Pi_{\mathrm{id},+}^2=\tilde\Pi_{\mathrm{id},+}$, $y^2=x^2=0$, $xy=\tilde\Pi_{\mathrm{id},+}$, $yx=e_t-\tilde\Pi_{\mathrm{id},+}$ with $y^{*}=x$, the four first derivatives are
 $$
 2\,\mathrm{Sc}\!\left(\tilde{Ξ}^{\dagger}\partial/\partial\theta\,\tilde{Ξ}\right)=0,
 \qquad
@@ -232,14 +232,14 @@ $$
 $$
 the area of the sphere of radius $\tfrac12$, as stated above.
 
-**The commutator expression.** The symplectic form can be written entirely inside the algebra, without the intermediate Bloch vector. For tangential displacements $\delta_1\tilde\Pi=\tfrac12 i\,\delta_1\vec{u}$ and $\delta_2\tilde\Pi=\tfrac12 i\,\delta_2\vec{u}$, the commutator of the displacements is a pure real quaternion, and the scalar part of the Hermitian idempotent times that commutator is purely imaginary. One computes
+**The commutator expression.** The symplectic form can be written entirely inside the algebra, without the intermediate Bloch vector. For tangential displacements $\delta_1\tilde\Pi_{\mathrm{id}}=\tfrac12 i\,\delta_1\vec{u}$ and $\delta_2\tilde\Pi_{\mathrm{id}}=\tfrac12 i\,\delta_2\vec{u}$, the commutator of the displacements is a pure real quaternion, and the scalar part of the Hermitian idempotent times that commutator is purely imaginary. One computes
 $$
-2\,\mathrm{Sc}\!\left(\tilde\Pi\,[\delta_1\tilde\Pi,\delta_2\tilde\Pi]\right)
+2\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{id}}\,[\delta_1\tilde\Pi_{\mathrm{id}},\delta_2\tilde\Pi_{\mathrm{id}}]\right)
 =\tfrac12\, i\;\vec{u}\cdot(\delta_1\vec{u}\times\delta_2\vec{u}),
 $$
 so that
 $$
-\boxed{\ \omega(\delta_1,\delta_2)=-\,i\,\mathrm{Sc}\!\left(\tilde\Pi\,[\delta_1\tilde\Pi,\delta_2\tilde\Pi]\right)=\tfrac14\,\vec{u}\cdot(\delta_1\vec{u}\times\delta_2\vec{u}),\ }
+\boxed{\ \omega(\delta_1,\delta_2)=-\,i\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{id}}\,[\delta_1\tilde\Pi_{\mathrm{id}},\delta_2\tilde\Pi_{\mathrm{id}}]\right)=\tfrac14\,\vec{u}\cdot(\delta_1\vec{u}\times\delta_2\vec{u}),\ }
 $$
 This is the algebraic face of the Kähler form: it is built from the plain form, the product, and the Hermitian conjugation, with no metric input beyond the normalization $\mathrm{Sc}(e_t)=1$. The imaginary unit $i$ appears because the commutator of two Hermitian displacements is anti-Hermitian, so its scalar part is imaginary; the factor $i$ converts it to the real two-form.
 
@@ -259,21 +259,21 @@ The metric determines distances, and the distances carry the same information as
 
 **The geodesic distance.** The geodesics of the round sphere of radius $\tfrac12$ are its great circles, so the Fubini–Study geodesic distance between two pure states is the arc length along the shorter great circle,
 $$
-d_{\mathrm{FS}}\bigl(\tilde\Pi(\vec{u}_1),\tilde\Pi(\vec{u}_2)\bigr)=\tfrac12\,\theta=\arccos\lvert\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\rvert ,
+d_{\mathrm{FS}}\bigl(\tilde\Pi_{\mathrm{id}}(\vec{u}_1),\tilde\Pi_{\mathrm{id}}(\vec{u}_2)\bigr)=\tfrac12\,\theta=\arccos\lvert\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\rvert ,
 $$
 where $\theta$ is the angle between $\vec{u}_1$ and $\vec{u}_2$ and $\lvert\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\rvert=\cos(\theta/2)$ is the overlap of the normalized spinors of the two rays. Three checks: for coincident rays, $\theta=0$ and $d_{\mathrm{FS}}=0$; for orthogonal rays, $\theta=\pi$ and $d_{\mathrm{FS}}=\pi/2$, the **maximal** distance; and the diameter of the pure-state manifold is $\pi/2$, not $\pi$, because the antipodal point of $\vec{u}_1$ corresponds to the orthogonal complement of the ray, not to the same ray with reversed phase.
 
 **The equivalent data on the boundary.** The three boundary quantities are monotone functions of one another, and the identities relating them are the content of the geometry:
 $$
-\boxed{\;2\langle\tilde\Pi(\vec{u}_1),\tilde\Pi(\vec{u}_2)\rangle_{*}=\cos^2 d_{\mathrm{FS}},
+\boxed{\;2\langle\tilde\Pi_{\mathrm{id}}(\vec{u}_1),\tilde\Pi_{\mathrm{id}}(\vec{u}_2)\rangle_{*}=\cos^2 d_{\mathrm{FS}},
 \qquad
-D\bigl(\tilde\Pi(\vec{u}_1),\tilde\Pi(\vec{u}_2)\bigr)=\sin d_{\mathrm{FS}},
+D\bigl(\tilde\Pi_{\mathrm{id}}(\vec{u}_1),\tilde\Pi_{\mathrm{id}}(\vec{u}_2)\bigr)=\sin d_{\mathrm{FS}},
 \qquad
-d_{\mathrm{FS}}=\arccos\sqrt{2\langle\tilde\Pi_1,\tilde\Pi_2\rangle_{*}}=\arcsin D\;}.
+d_{\mathrm{FS}}=\arccos\sqrt{2\langle\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2}\rangle_{*}}=\arcsin D\;}.
 $$
-The first is the plain form, the second the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States*, and the third the Fubini–Study distance. They are not three independent geometries but one: the plain form gives the squared cosine, the trace distance gives the sine, and the Fubini–Study distance is the angle. The complementarity identity $D^2+2\langle\tilde\Pi_1,\tilde\Pi_2\rangle_{*}=1$ of the exercise article is the Pythagorean identity of the same triangle.
+The first is the plain form, the second the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States*, and the third the Fubini–Study distance. They are not three independent geometries but one: the plain form gives the squared cosine, the trace distance gives the sine, and the Fubini–Study distance is the angle. The complementarity identity $D^2+2\langle\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2}\rangle_{*}=1$ of the exercise article is the Pythagorean identity of the same triangle.
 
-**Uniqueness and invariance.** The $*$-unitary group $\mathrm{U}(2)$ acts transitively on the rays, and its image $SO(3)$ acts transitively on the boundary sphere. Any metric on the boundary that is invariant under this action is a multiple of the round metric, so the algebra's own symmetry group fixes the Fubini–Study metric **up to scale**. The scale is then fixed by the normalised Hermitian form, through the identification of the transition probability with $\cos^2 d_{\mathrm{FS}}$; equivalently, by the requirement that the line element be $-\langle\delta\tilde\Pi\rangle_{\natural}$, whose normalization is $\mathrm{Sc}(e_t)=1$. This is a two-step determination worth naming: the symmetry fixes the metric up to a constant, and the normalisation fixes the constant. Neither step imports a geometric posit beyond the algebra's two forms.
+**Uniqueness and invariance.** The $*$-unitary group $\mathrm{U}(2)$ acts transitively on the rays, and its image $SO(3)$ acts transitively on the boundary sphere. Any metric on the boundary that is invariant under this action is a multiple of the round metric, so the algebra's own symmetry group fixes the Fubini–Study metric **up to scale**. The scale is then fixed by the normalised Hermitian form, through the identification of the transition probability with $\cos^2 d_{\mathrm{FS}}$; equivalently, by the requirement that the line element be $-\langle\delta\tilde\Pi_{\mathrm{id}}\rangle_{\natural}$, whose normalization is $\mathrm{Sc}(e_t)=1$. This is a two-step determination worth naming: the symmetry fixes the metric up to a constant, and the normalisation fixes the constant. Neither step imports a geometric posit beyond the algebra's two forms.
 
 **Units.** The line element has been written so that $\vec{u}$ is a unit vector, i.e. the Bloch vector is measured in units in which the ball has radius one. If the physical Bloch vector is measured with a radius $r_0$ — for instance $r_0=\frac{\hbar}{2}$ for a spin — then the metric is multiplied by $r_0^2$ and the distance by $r_0$; the dimensionless statements above are the ones fixed by the algebra, and the physical conversion is a separate posit, like the identification of $\vec{u}$ with a direction in space.
 
@@ -332,11 +332,11 @@ It is worth recording the boundary of the claim. What the article derives from t
 
 Five statements summarize the result, and two of them are limitations that a reader should not blur.
 
-1. **The Fubini–Study metric is the second variation of the biquaternion norm on the null boundary.** This is the central identity: the biquaternion norm vanishes on the pure states, and its negative on tangential displacements is the line element, $ds^2_{\mathrm{FS}}=-\langle\delta\tilde\Pi\rangle_{\natural}$. The biquaternion norm is therefore not idle on the state space even though it vanishes on the pure states; it is the metric generator.
+1. **The Fubini–Study metric is the second variation of the biquaternion norm on the null boundary.** This is the central identity: the biquaternion norm vanishes on the pure states, and its negative on tangential displacements is the line element, $ds^2_{\mathrm{FS}}=-\langle\delta\tilde\Pi_{\mathrm{id}}\rangle_{\natural}$. The biquaternion norm is therefore not idle on the state space even though it vanishes on the pure states; it is the metric generator.
 
-2. **The Hermitian form supplies the probability, not the distance.** The transition probability $2\langle\tilde\Pi_1,\tilde\Pi_2\rangle_{*}$ is the two-point function of the Hermitian form, and the Fubini–Study distance is its arccosine-square-root. The two forms divide the geometry between them: the Hermitian form gives the overlap, the biquaternion norm gives the length, and the Kähler structure relates them.
+2. **The Hermitian form supplies the probability, not the distance.** The transition probability $2\langle\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2}\rangle_{*}$ is the two-point function of the Hermitian form, and the Fubini–Study distance is its arccosine-square-root. The two forms divide the geometry between them: the Hermitian form gives the overlap, the biquaternion norm gives the length, and the Kähler structure relates them.
 
-3. **The geometry is that of the state *module*, descended to the state space.** The complex structure, the Hopf fibration and the projective line belong to the module $\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$; the metric descends to the boundary of $\mathbb{B}_{\Psi}$ through the bilinear map $\tilde{Ξ}\mapsto\tilde{Ξ}\tilde{Ξ}^{\dagger}$. The complex structure does **not** live on $\mathbb{B}_{\Psi}$, where multiplication by $i$ exchanges the two sectors; treating $\mathbb{B}_{\Psi}$ itself as a complex vector space is the characteristic error that this separation avoids.
+3. **The geometry is that of the state *module*, descended to the state space.** The complex structure, the Hopf fibration and the projective line belong to the module $\mathbb{B}\tilde\Pi_{\mathrm{id},+}\cong\mathbb{C}^2$; the metric descends to the boundary of $\mathbb{B}_{\Psi}$ through the bilinear map $\tilde{Ξ}\mapsto\tilde{Ξ}\tilde{Ξ}^{\dagger}$. The complex structure does **not** live on $\mathbb{B}_{\Psi}$, where multiplication by $i$ exchanges the two sectors; treating $\mathbb{B}_{\Psi}$ itself as a complex vector space is the characteristic error that this separation avoids.
 
 4. **The interior metric is imported.** The Bures metric of the mixed states is the standard monotone metric of quantum information theory. The algebra determines its boundary value and its value at the centre, and it determines the flat alternative that it is not; it does not determine the interpolation. The interpolation, once imported, is the hemisphere of radius $\tfrac12$ whose equator is the pure-state sphere, recorded above in closed form; writing it down does not make it algebraic, and the algebra's reach is unchanged. This is a limit on the algebra's reach, not a defect of the derivation, and it is stated to prevent an overclaim.
 
@@ -344,13 +344,13 @@ Five statements summarize the result, and two of them are limitations that a rea
 
 ## Summary
 
-The state space of the biquaternion framework is the normalised hyperplane of the future cone of the biquaternion norm, and its geometry is determined by the framework's two forms. The normalised Hermitian form fixes the transition probability of two pure states, $2\langle\tilde\Pi(\vec{u}_1),\tilde\Pi(\vec{u}_2)\rangle_{*}=\cos^2(\theta/2)$. The biquaternion norm, though it vanishes on the pure states, fixes the metric through its second variation there, and the resulting line element is the Fubini–Study metric,
+The state space of the biquaternion framework is the normalised hyperplane of the future cone of the biquaternion norm, and its geometry is determined by the framework's two forms. The normalised Hermitian form fixes the transition probability of two pure states, $2\langle\tilde\Pi_{\mathrm{id}}(\vec{u}_1),\tilde\Pi_{\mathrm{id}}(\vec{u}_2)\rangle_{*}=\cos^2(\theta/2)$. The biquaternion norm, though it vanishes on the pure states, fixes the metric through its second variation there, and the resulting line element is the Fubini–Study metric,
 
 $$
-\boxed{\;ds^2_{\mathrm{FS}}=-\langle\delta\tilde\Pi\rangle_{\natural}\Big|_{\text{tangential}}=\tfrac14\left(d\theta^2+\sin^2\theta\,d{\theta_{\mathrm{azm}}}^2\right)\;},
+\boxed{\;ds^2_{\mathrm{FS}}=-\langle\delta\tilde\Pi_{\mathrm{id}}\rangle_{\natural}\Big|_{\text{tangential}}=\tfrac14\left(d\theta^2+\sin^2\theta\,d{\theta_{\mathrm{azm}}}^2\right)\;},
 $$
 
-one quarter of the round metric of the Bloch sphere. The factor $\tfrac14$ is the square of the double-cover ratio $SU(2)\to SO(3)$. The metric is Kähler, with complex structure $J(v)=\vec{u}\times v$ supplied by the algebra commutator and symplectic form $\omega=-\,i\,\mathrm{Sc}(\tilde\Pi[\delta_1\tilde\Pi,\delta_2\tilde\Pi])=\tfrac14\mu\cdot(\delta_1\mu\times\delta_2\mu)$; the Kähler potential is $\log(1+|w|^2)$ in the stereographic coordinate. The geodesic distance is $d_{\mathrm{FS}}=\theta/2=\arccos\lvert\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\rvert$, so that the transition probability is $\cos^2 d_{\mathrm{FS}}$ and the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* is $\sin d_{\mathrm{FS}}$.
+one quarter of the round metric of the Bloch sphere. The factor $\tfrac14$ is the square of the double-cover ratio $SU(2)\to SO(3)$. The metric is Kähler, with complex structure $J(v)=\vec{u}\times v$ supplied by the algebra commutator and symplectic form $\omega=-\,i\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}[\delta_1\tilde\Pi_{\mathrm{id}},\delta_2\tilde\Pi_{\mathrm{id}}])=\tfrac14\mu\cdot(\delta_1\mu\times\delta_2\mu)$; the Kähler potential is $\log(1+|w|^2)$ in the stereographic coordinate. The geodesic distance is $d_{\mathrm{FS}}=\theta/2=\arccos\lvert\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\rvert$, so that the transition probability is $\cos^2 d_{\mathrm{FS}}$ and the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* is $\sin d_{\mathrm{FS}}$.
 
 The interior of the ball carries the standard Bures metric, whose boundary restriction is the Fubini–Study metric and whose value at the maximally mixed state agrees with the flat metric $-\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\tfrac14|d\vec s_{\Psi}|^2$ that the biquaternion norm supplies everywhere. The biquaternion norm therefore gives the pure-state geometry exactly, and the flat geometry everywhere, but not the interpolating mixed-state metric; that interpolation is a standard statistical import, and the article says so rather than claiming it. What the algebra determines — the probability, the metric on the boundary, the Kähler structure, and the boundary metric's uniqueness up to a scale fixed by the normalisation — it determines completely; what it does not determine it leaves named.
 
@@ -366,10 +366,10 @@ The interior of the ball carries the standard Bures metric, whose boundary restr
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace, $\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ | State, $|\vec s_{\Psi}|\leq1$ |
-| $\tilde\Pi(\vec{u})=\tfrac12(e_t+i\vec{u})$ | Pure state (idempotent), $|\vec{u}|=1$ |
-| $\mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | State module, $\cong\mathbb{C}^2$ |
+| $\tilde\Pi_{\mathrm{id}}(\vec{u})=\tfrac12(e_t+i\vec{u})$ | Pure state (idempotent), $|\vec{u}|=1$ |
+| $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$, $\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z)$ | State module, $\cong\mathbb{C}^2$ |
 | $\tilde{Ξ}$, $\lvert\tilde{Ξ}\rangle_{*}$ | Spinor in the state module |
-| $2\langle\tilde\Pi_1,\tilde\Pi_2\rangle_{*}$ | Transition probability of two pure states |
+| $2\langle\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2}\rangle_{*}$ | Transition probability of two pure states |
 | $\theta$ | Angle between $\vec{u}_1$ and $\vec{u}_2$ |
 | $d_{\mathrm{FS}}=\theta/2$ | Fubini–Study distance |
 | $ds^2_{\mathrm{FS}}=\tfrac14(d\theta^2+\sin^2\theta\,d{\theta_{\mathrm{azm}}}^2)$ | Fubini–Study line element |
@@ -386,7 +386,7 @@ The interior of the ball carries the standard Bures metric, whose boundary restr
 
 **The state space.** [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) states the results that this article derives — the forms on the sector, the ball as the unit slice, the Fubini–Study metric as a quarter of the sphere, the commutator as the complex structure — and carries the Born weight around them.
 
-**The module.** [The Modules: What the Algebra Acts On](the-modules-what-the-algebra-acts-on.html) constructs the state module $\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$ in which the spinor computation is carried out, with its two ideals, its ladder and its gauge.
+**The module.** [The Modules: What the Algebra Acts On](the-modules-what-the-algebra-acts-on.html) constructs the state module $\mathbb{B}\tilde\Pi_{\mathrm{id},+}\cong\mathbb{C}^2$ in which the spinor computation is carried out, with its two ideals, its ladder and its gauge.
 
 - S. Kobayashi and K. Nomizu, *Foundations of Differential Geometry, Vol. II* (Wiley, 1969), for the Fubini–Study metric on complex projective space, its Kähler structure, and its holomorphic sectional curvature.
 - I. Bengtsson and K. Życzkowski, *Geometry of Quantum States: An Introduction to Quantum Entanglement* (Cambridge University Press, 2nd ed., 2017), for the Bloch ball, the Fubini–Study and Bures metrics, and their monotonicity properties.

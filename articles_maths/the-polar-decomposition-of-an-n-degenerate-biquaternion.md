@@ -162,7 +162,7 @@ $$
 \Sigma_{01}=\{\langle\tilde Q\rangle_{\natural}=0,\ B^{2}\neq0\},\qquad B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}.
 $$
 
-It is *The N-Degenerate, Spectrally Regular Sector*. The characteristic polynomial is $X^{2}-2Q_tX$, with the two distinct roots $0$ and $2Q_t\neq0$, and the element has the spectral decomposition $\tilde Q=c\,\tilde\Pi$ with $c\neq0$ and $\tilde\Pi$ an idempotent different from $0$ and $e_t$. The idempotent need not be Hermitian. The Hermitian factor is positive semidefinite of rank one, the isometry factor is a partial isometry of rank one, and both are computed by the formulas above.
+It is *The N-Degenerate, Spectrally Regular Sector*. The characteristic polynomial is $X^{2}-2Q_tX$, with the two distinct roots $0$ and $2Q_t\neq0$, and the element has the spectral decomposition $\tilde Q=c\,\tilde\Pi_{\mathrm{id}}$ with $c\neq0$ and $\tilde\Pi_{\mathrm{id}}$ an idempotent different from $0$ and $e_t$. The idempotent need not be Hermitian. The Hermitian factor is positive semidefinite of rank one, the isometry factor is a partial isometry of rank one, and both are computed by the formulas above.
 
 ### The sector $\Sigma_{00}$
 

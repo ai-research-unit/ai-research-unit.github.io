@@ -4,7 +4,7 @@
 
 **The question.** Which subspaces of $M_2(\mathbb{C})$ of real dimensions $2$, $4$ and $8$ carry the action with weights $\pm\tfrac12$, and why is the family infinite?
 
-**Why it is the same statement.** This is the in-depth matrix reading of [Introduction to the Spin-Half Bispinors Spaces](the-spin-half-bispinor-spaces.html). The source's plane $\mathbb{C}\tilde\Pi_+$, its spinor spaces $\mathbb{B}\tilde\Pi_\pm$ and its bispinor space become
+**Why it is the same statement.** This is the in-depth matrix reading of [Introduction to the Spin-Half Bispinors Spaces](the-spin-half-bispinor-spaces.html). The source's plane $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$, its spinor spaces $\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ and its bispinor space become
 $$
 \mathbb{C}P\subset M_2(\mathbb{C})P\subset M_2(\mathbb{C})=M_2P\oplus M_2P_{\perp},
 $$

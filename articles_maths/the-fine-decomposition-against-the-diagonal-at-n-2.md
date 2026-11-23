@@ -78,7 +78,7 @@ and the product of two lines filling a chain is onto: $A_{kl}A_{lm}=A_{km}$.
 
 **Proof.** $E_{kl}E_{mn}$ sends $e_{n}$ to $e_{l}$ and then to $e_{k}$, which is $\delta_{ln}e_{k}$; the two indices inside must match.
 
-**The biquaternion reading.** The four lines are the four corners $\mathbb{B}_{++},\mathbb{B}_{+-},\mathbb{B}_{-+},\mathbb{B}_{--}$ of the corpus, each of real dimension $2$ because the biquaternion algebra is over $\mathbb{R}$ and each corner is a complex line read as a real plane. The companion nilpotents $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ are the two off-diagonal units: that is *The Companion Nilpotents of the Biquaternion Algebra*.
+**The biquaternion reading.** The four lines are the four corners $\mathbb{B}_{++},\mathbb{B}_{+-},\mathbb{B}_{-+},\mathbb{B}_{--}$ of the corpus, each of real dimension $2$ because the biquaternion algebra is over $\mathbb{R}$ and each corner is a complex line read as a real plane. The companion nilpotents $\vec\Pi_{\mathrm{nil},+-},\vec\Pi_{\mathrm{nil},-+}$ are the two off-diagonal units: that is *The Companion Nilpotents of the Biquaternion Algebra*.
 
 ## The Trace and the Determinant in Corner Coordinates
 

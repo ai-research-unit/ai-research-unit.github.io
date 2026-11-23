@@ -314,15 +314,15 @@ The diagonal of this matrix carries $Q_t$ and $Q_z$. The off-diagonal carries $Q
 The reason is the construction, not the algebra. The two-dimensional image is left multiplication read on a minimal left ideal, and the ideal is built from an idempotent. The idempotents used are the Peirce idempotents of the root $\vec{Ζ}=i\vec e_z$,
 
 $$
-\tilde\Pi_\pm=\tfrac12\bigl(e_t\pm i\vec e_z\bigr),
+\tilde\Pi_{\mathrm{id},\pm}=\tfrac12\bigl(e_t\pm i\vec e_z\bigr),
 $$
 
-with $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$. The carrier of the image is $\mathbb{B}\tilde\Pi_+$, of complex dimension two, and the matrix of $\vec e_z$ on that carrier is diagonal because $\vec e_z$ built the carrier.
+with $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$ and $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$. The carrier of the image is $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$, of complex dimension two, and the matrix of $\vec e_z$ on that carrier is diagonal because $\vec e_z$ built the carrier.
 
 The computation is one line. Multiply the idempotent by the unit:
 
 $$
-\tilde\Pi_+\vec e_z=\tfrac12\bigl(\vec e_z+i\vec e_z^2\bigr)=\tfrac12\bigl(\vec e_z-i e_t\bigr)=-i\,\tfrac12\bigl(e_t+i\vec e_z\bigr)=-i\tilde\Pi_+.
+\tilde\Pi_{\mathrm{id},+}\vec e_z=\tfrac12\bigl(\vec e_z+i\vec e_z^2\bigr)=\tfrac12\bigl(\vec e_z-i e_t\bigr)=-i\,\tfrac12\bigl(e_t+i\vec e_z\bigr)=-i\tilde\Pi_{\mathrm{id},+}.
 $$
 
 So $\vec e_z$ acts on the ideal as the scalar $-i$, and its array is $-i\sigma_3$: diagonal, with the two eigenvalues $-i$ and $+i$ in the two slots. The other two units permute the two slots, so their arrays are off-diagonal. The root $i\vec e_z$ is the datum the display consumes, and the diagonal of $\sigma_3$ is its footprint.
@@ -379,19 +379,19 @@ The direction does not stay in the triplet. It is inherited by every constructio
 
 The root. The Peirce frame is the frame of the root $\vec{Ζ}=i\vec e_z$, of square $e_t$. The root is the choice, named or not.
 
-The idempotents. $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$. The unit appears inside both, with opposite signs.
+The idempotents. $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z)$. The unit appears inside both, with opposite signs.
 
-The mixed units. $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$. The two remaining spatial units are consumed here, and consumed in an order: $\vec e_x$ multiplied by $i$ comes first, $\vec e_y$ second. The pair $(\vec e_x,\vec e_y)$ is no longer a set; it is an ordered pair, and its orientation is part of the frame.
+The mixed units. $\vec\Pi_{\mathrm{nil},\pm}=\tfrac12(i\vec e_x\pm\vec e_y)$. The two remaining spatial units are consumed here, and consumed in an order: $\vec e_x$ multiplied by $i$ comes first, $\vec e_y$ second. The pair $(\vec e_x,\vec e_y)$ is no longer a set; it is an ordered pair, and its orientation is part of the frame.
 
-The Peirce decomposition. The four components are read in the order $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$, which is a second choice, independent of the first: the two middle slots can be exchanged.
+The Peirce decomposition. The four components are read in the order $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$, which is a second choice, independent of the first: the two middle slots can be exchanged.
 
-The adapted basis and its scale. The mixed units are defined only up to $\vec\Upsilon_+\mapsto\lambda\vec\Upsilon_+$ and $\vec\Upsilon_-\mapsto\lambda^{-1}\vec\Upsilon_-$, so the frame carries a free nonzero scalar as well. The scale is harmless for the algebra and fatal for a display that pretends to be unique.
+The adapted basis and its scale. The mixed units are defined only up to $\vec\Pi_{\mathrm{nil},+}\mapsto\lambda\vec\Pi_{\mathrm{nil},+}$ and $\vec\Pi_{\mathrm{nil},-}\mapsto\lambda^{-1}\vec\Pi_{\mathrm{nil},-}$, so the frame carries a free nonzero scalar as well. The scale is harmless for the algebra and fatal for a display that pretends to be unique.
 
-The minimal left ideal. $\mathbb{B}\tilde\Pi_+$ is the two-dimensional carrier of the older literature. It is built from the unit, and it is the idempotent of the unit that selects it.
+The minimal left ideal. $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ is the two-dimensional carrier of the older literature. It is built from the unit, and it is the idempotent of the unit that selects it.
 
-The projector and the block split. The projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{B}_{\Phi}])$ has rank two and its range is the ideal $\mathbb{B}\tilde\Pi_+$. The four-dimensional array is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$: two identical blocks, and the split of the array is the split of the ideal, written twice.
+The projector and the block split. The projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{B}_{\Phi}])$ has rank two and its range is the ideal $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$. The four-dimensional array is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$: two identical blocks, and the split of the array is the split of the ideal, written twice.
 
-The two-component column, and the spinor. A column of two components is an element of the ideal written in the basis $(\tilde\Pi_+,i\tilde\Pi_+)$, and the spinor of the older literature is that column. This is a consequence of the frame and not of the algebra: a state is an element of $\mathbb{B}$, which needs no ideal, no column and no frame, and it becomes a column only after the ideal has been chosen. The column is the most consequential item of the list, because a whole literature is written in it.
+The two-component column, and the spinor. A column of two components is an element of the ideal written in the basis $(\tilde\Pi_{\mathrm{id},+},i\tilde\Pi_{\mathrm{id},+})$, and the spinor of the older literature is that column. This is a consequence of the frame and not of the algebra: a state is an element of $\mathbb{B}$, which needs no ideal, no column and no frame, and it becomes a column only after the ideal has been chosen. The column is the most consequential item of the list, because a whole literature is written in it.
 
 The gamma frame. In the five gammas the unit $\vec e_y$ is the common right multiplier of the spatial three, and $\vec e_z$ is the axis of the fifth basis operator. Neither fact is stated anywhere on a page that prints the five matrices.
 
@@ -406,8 +406,8 @@ The sentences. "The third member is the diagonal one." "The upper half of the co
 | object | the direction it carries | what happens on a relabelling of the spatial units |
 |---|---|---|
 | the root $i\vec e_z$ | the unit $\vec e_z$ | the root becomes another root |
-| the idempotents $\tilde\Pi_\pm$ | the unit $\vec e_z$, twice, with opposite signs | the idempotents change |
-| the mixed units $\vec\Upsilon_\pm$ | the ordered pair $(\vec e_x,\vec e_y)$ | the pair changes, and the orientation with it |
+| the idempotents $\tilde\Pi_{\mathrm{id},\pm}$ | the unit $\vec e_z$, twice, with opposite signs | the idempotents change |
+| the mixed units $\vec\Pi_{\mathrm{nil},\pm}$ | the ordered pair $(\vec e_x,\vec e_y)$ | the pair changes, and the orientation with it |
 | the Peirce decomposition | the order of the four components | the two middle slots exchange |
 | the minimal left ideal | the idempotent of the unit | a different ideal |
 | the two-component column, and the spinor | the basis of that ideal | a different column |
@@ -482,7 +482,7 @@ The two standard displays are the two ways of spending that one allowance. The D
 
 The fifth basis operator is $i$ times a real signed permutation with zeros on the whole diagonal in $\mathrm{axf}$, and it is $\operatorname{diag}(-1,-1,1,1)$ in the Pauli display. Its eigenvalues are $\pm1$ in both, its square is the identity in both, and its trace is zero in both. What changes is whether the array splits into two blocks, and the split is the Peirce split of the same unit.
 
-The projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{B}_{\Phi}])$ is $\operatorname{diag}(1,1,0,0)$ and the projector $\tfrac12(\mathrm I+\gamma_5[\mathbb{B}_{\Phi}])$ is $\operatorname{diag}(0,0,1,1)$, both of rank two. Their ranges are the two left ideals of the frame: the eigenvalue $-1$ holds on $\mathbb{B}\tilde\Pi_+$ and the eigenvalue $+1$ on $\mathbb{B}\tilde\Pi_-$, as verified on both ideals. So the block, the left ideal, the two-component column and the projector are one object seen four times, and one choice of unit produces all four.
+The projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{B}_{\Phi}])$ is $\operatorname{diag}(1,1,0,0)$ and the projector $\tfrac12(\mathrm I+\gamma_5[\mathbb{B}_{\Phi}])$ is $\operatorname{diag}(0,0,1,1)$, both of rank two. Their ranges are the two left ideals of the frame: the eigenvalue $-1$ holds on $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ and the eigenvalue $+1$ on $\mathbb{B}\tilde\Pi_{\mathrm{id},-}$, as verified on both ideals. So the block, the left ideal, the two-component column and the projector are one object seen four times, and one choice of unit produces all four.
 
 The three basis operators $-iR_{\vec e_x}$, $-iR_{\vec e_y}$ and $-iR_{\vec e_z}$ are conjugate to one another, and the conjugation is implemented by an operator of the algebra. For $s$ the quarter-turn versor about $\vec e_y$, the conjugation $L_sR_{s^{-1}}$ carries $\vec e_z$ to $\vec e_x$ and carries $-iR_{\vec e_z}$ to $-iR_{\vec e_x}$ exactly. So the choice of which spatial unit carries the fifth basis operator is a labelling, and every labelling gives a split of the same kind. Only one of the three is diagonal in the display, and it is the one the frame was built on.
 
@@ -666,7 +666,7 @@ The three passes need a table, and one table serves all three. Each row gives th
 | Pauli or gamma name | object | $\mathrm{axf}$ array | action |
 |---|---|---|---|
 | the identity $\mathrm I_4$ | $L_{e_t}R_{e_t}$ | $\mathrm I_4$ | $\tilde{Ξ}\mapsto\tilde{Ξ}$ |
-| the image $\mathsf M_2(\tilde Q)$ | the left action on $\mathbb{B}\tilde\Pi_+$ | $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ | the action read on one ideal |
+| the image $\mathsf M_2(\tilde Q)$ | the left action on $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ | $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ | the action read on one ideal |
 | $\gamma_0[\mathbb{B}_{\Phi}]$ | $iR_{\vec e_x}$ | $iR_{\mathrm{axf},\vec e_x}$ | $\tilde{Ξ}\mapsto i\tilde{Ξ}\vec e_x$ |
 | $\gamma_\eta[\mathbb{B}_{\Phi}]$ | $iL_{\vec e_\eta}R_{\vec e_y}$ | $iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y}$ | $\tilde{Ξ}\mapsto i\vec e_\eta\tilde{Ξ}\vec e_y$ |
 | $\gamma_5[\mathbb{B}_{\Phi}]$ | $-iR_{\vec e_z}$ | $-iR_{\mathrm{axf},\vec e_z}$ | $\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$ |
@@ -681,7 +681,7 @@ The last row is the one that has no action, and that is the honest answer: the a
 The two displays are related by one matrix. With the Peirce vectors as columns,
 
 $$
-C_{\Pi}=\bigl(\tilde\Pi_+\ \ \vec\Upsilon_+\ \ \vec\Upsilon_-\ \ \tilde\Pi_-\bigr),\qquad
+C_{\Pi}=\bigl(\tilde\Pi_{\mathrm{id},+}\ \ \vec\Pi_{\mathrm{nil},+}\ \ \vec\Pi_{\mathrm{nil},-}\ \ \tilde\Pi_{\mathrm{id},-}\bigr),\qquad
 L_{\mathrm{pau}}(\tilde Q)=C_{\Pi}^{-1}L_{\mathrm{axf}}(\tilde Q)\,C_{\Pi},
 $$
 

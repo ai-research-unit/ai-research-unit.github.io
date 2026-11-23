@@ -4,7 +4,7 @@
 
 **The subject.** The carrier of the left action of $\mathbb{B}$ is four complex dimensional and splits into two planes in many ways and canonically in none; *The Unpolarized Module of the Biquaternion Algebra* established that, and this article makes one choice and reads what the choice yields. A **polarization** of the carrier is a pair of distinct points of its projective line, that is an unordered pair of complementary minimal left ideals. Once such a pair is named, the carrier is the direct sum of two submodules of dimension two, each carrying a copy of the simple module $S$, and every statement the corpus makes about a spinor, a Weyl component or a Peirce coordinate is written in this chart.
 
-**What the choice buys.** The two halves are left ideals, they are minimal, and every minimal left ideal is one of their kind: $\mathbb{B}\tilde\Pi$ for a primitive idempotent $\tilde\Pi$. The algebra is their direct sum as a left module, and the whole family of minimal left ideals is a projective line, so the choice made here is one point of a family and not a structure of the algebra. Inside one half the Peirce family splits the space canonically into a diagonal line and a mixed line; a Peirce basis chooses a generator of the mixed line and gives the adapted coordinates; the gauge is the freedom that remains; the ladder is left multiplication by the mixed units; and the intrinsic data of a single spinor are the diagonal coefficient and the element of the mixed line.
+**What the choice buys.** The two halves are left ideals, they are minimal, and every minimal left ideal is one of their kind: $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ for a primitive idempotent $\tilde\Pi_{\mathrm{id}}$. The algebra is their direct sum as a left module, and the whole family of minimal left ideals is a projective line, so the choice made here is one point of a family and not a structure of the algebra. Inside one half the Peirce family splits the space canonically into a diagonal line and a mixed line; a Peirce basis chooses a generator of the mixed line and gives the adapted coordinates; the gauge is the freedom that remains; the ladder is left multiplication by the mixed units; and the intrinsic data of a single spinor are the diagonal coefficient and the element of the mixed line.
 
 **What the choice costs.** The choice is a point of a projective line, so a statement proved in it is a statement about the point until its invariance is shown, and a change of point destroys exactly the statements that are not invariant. The cost is paid once and stated here rather than in each section: the adapted bases, the coordinates and the gauge are chart data.
 
@@ -12,7 +12,7 @@
 
 **Boundaries.** The regular module, its left and right actions, its two-sided ideals and the embedding of the ideals among the subspaces are *The Regular Module in the Biquaternion Algebra*; the carrier with no point chosen, the projective line of all polarizations, the trace form and the conjugate pair are *The Unpolarized Module of the Biquaternion Algebra*; the one point that the Pauli display chooses silently, and the tensor notation it brings, are *The Pauli Module of the Biquaternion Algebra*; the classification of all modules is *The Category of Modules in the Biquaternion Algebra*. The family of idempotents and the four Peirce lines are *The Peirce Decomposition of the Biquaternion Algebra*; the choice of one element in each line is *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*; right multiplication as an operator is *Operator Chirality on the Biquaternion Algebra*.
 
-**Conventions.** The algebra and the notation are those of *The Unpolarized Module of the Biquaternion Algebra*, §*Introduction*: $\mathbb{B}$ with basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, the central $i$, and $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ the standard pair of a complete family. The word *spinor* is the name of an element of one of the two carriers and carries no physical claim.
+**Conventions.** The algebra and the notation are those of *The Unpolarized Module of the Biquaternion Algebra*, §*Introduction*: $\mathbb{B}$ with basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, the central $i$, and $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z)$ the standard pair of a complete family. The word *spinor* is the name of an element of one of the two carriers and carries no physical claim.
 
 ## The Two Minimal Left Ideals
 
@@ -20,27 +20,27 @@
 
 A **minimal left ideal** is a nonzero left ideal containing no nonzero proper left ideal.
 
-The two spinor spaces $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$ are left ideals, because $\mathbb{B}S_\pm=\mathbb{B}\mathbb{B}\tilde\Pi_\pm=\mathbb{B}\tilde\Pi_\pm=S_\pm$. Their sum is direct by §*The Two Spinor Spaces* below, so
+The two spinor spaces $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ and $S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}$ are left ideals, because $\mathbb{B}S_\pm=\mathbb{B}\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}=S_\pm$. Their sum is direct by §*The Two Spinor Spaces* below, so
 
 $$
-\mathbb{B}=S_+\oplus S_-=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-
+\mathbb{B}=S_+\oplus S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{B}\tilde\Pi_{\mathrm{id},-}
 $$
 
 as a left module. Each summand has complex dimension two and real dimension four.
 
 **Minimality.** Let $0\neq J\subseteq S_+$ be a left ideal. In the $M_2(\mathbb{C})$ model $S_+$ is the first column, and a nonzero element of the column has a nonzero entry. Left multiplication by a matrix unit selects that entry and produces $E_{11}$ or $E_{21}$, so the ideal generated by the element is the whole column. Hence $J=S_+$, and $S_+$ is minimal. The same argument with the second column gives $S_-$.
 
-The minimality is the primitive character of the pair. A nonzero idempotent is primitive when it is not a sum of two nonzero orthogonal idempotents, and in a finite-dimensional semisimple algebra the left ideal generated by a primitive idempotent is minimal (*Primitive Idempotents and Minimal Left Ideals*, §*The division ring criterion*). The idempotents $\tilde\Pi_+,\tilde\Pi_-$ are primitive by *The Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Classification of the Idempotents*.
+The minimality is the primitive character of the pair. A nonzero idempotent is primitive when it is not a sum of two nonzero orthogonal idempotents, and in a finite-dimensional semisimple algebra the left ideal generated by a primitive idempotent is minimal (*Primitive Idempotents and Minimal Left Ideals*, §*The division ring criterion*). The idempotents $\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-}$ are primitive by *The Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Classification of the Idempotents*.
 
 ## All Minimal Left Ideals
 
-**Every left ideal is a direct sum of minimal left ideals, every minimal left ideal is $\mathbb{B}\tilde\Pi$ for a primitive idempotent $\tilde\Pi$, and all are isomorphic.**
+**Every left ideal is a direct sum of minimal left ideals, every minimal left ideal is $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ for a primitive idempotent $\tilde\Pi_{\mathrm{id}}$, and all are isomorphic.**
 
 Over $\mathbb{C}$ the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is semisimple (*The Regular Module in the Biquaternion Algebra*, §*Artinian, Semisimple, and Length Two*), so every left ideal is a direct sum of minimal ones (*Simple and Semisimple Modules*, §*Semisimple Algebras and Wedderburn–Artin*).
 
-Every minimal left ideal is of the form $\mathbb{B}\tilde\Pi$ for a primitive idempotent $\tilde\Pi$ (*Primitive Idempotents and Minimal Left Ideals*). The examples are $S_+$ and $S_-$ above.
+Every minimal left ideal is of the form $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ for a primitive idempotent $\tilde\Pi_{\mathrm{id}}$ (*Primitive Idempotents and Minimal Left Ideals*). The examples are $S_+$ and $S_-$ above.
 
-All minimal left ideals are isomorphic as left $\mathbb{B}$-modules. A general one is $\mathbb{B}\tilde\Pi$ with $\tilde\Pi$ a primitive idempotent, and $\tilde\Pi$ is the image of $\tilde\Pi_+$ under an inner automorphism of $\mathbb{B}$ (*The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*, §*Systems of Matrix Units*), which carries $\mathbb{B}\tilde\Pi_+$ to $\mathbb{B}\tilde\Pi$. There is therefore one isomorphism class of simple left modules and, dually, one of simple right modules.
+All minimal left ideals are isomorphic as left $\mathbb{B}$-modules. A general one is $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ with $\tilde\Pi_{\mathrm{id}}$ a primitive idempotent, and $\tilde\Pi_{\mathrm{id}}$ is the image of $\tilde\Pi_{\mathrm{id},+}$ under an inner automorphism of $\mathbb{B}$ (*The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*, §*Systems of Matrix Units*), which carries $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ to $\mathbb{B}\tilde\Pi_{\mathrm{id}}$. There is therefore one isomorphism class of simple left modules and, dually, one of simple right modules.
 
 Being nonzero proper one-sided ideals, none is two-sided; this is the abundance of one-sided ideals that the simplicity of *The Regular Module in the Biquaternion Algebra*, §*The Two-Sided Ideals* permits.
 
@@ -48,10 +48,10 @@ Being nonzero proper one-sided ideals, none is two-sided; this is the abundance 
 
 **The simple module is $\mathbb{C}^2$, the central imaginary acts on it as the scalar $i$, and its endomorphisms are the complex scalars.**
 
-With the basis $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ the left module $S_+$ is $\mathbb{C}^2$ and the central element $i$ acts as the scalar $i$:
+With the basis $\mathcal{C}_+=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ the left module $S_+$ is $\mathbb{C}^2$ and the central element $i$ acts as the scalar $i$:
 
 $$
-i\,(\alpha\tilde\Pi_++\beta\vec\Upsilon_+)=(i\alpha)\tilde\Pi_++(i\beta)\vec\Upsilon_+ .
+i\,(\alpha\tilde\Pi_{\mathrm{id},++}\beta\vec\Pi_{\mathrm{nil},+})=(i\alpha)\tilde\Pi_{\mathrm{id},++}(i\beta)\vec\Pi_{\mathrm{nil},+} .
 $$
 
 So the simple module underlying each minimal left ideal is the standard two-dimensional one, with $i$ acting by the identity matrix.
@@ -63,7 +63,7 @@ By Schur's lemma the endomorphisms of the simple module are the scalars, $\opera
 **Definition.** The two **spinor spaces** of the family are
 
 $$
-S_{+}=\mathbb{B}\tilde\Pi_{+},\qquad S_{-}=\mathbb{B}\tilde\Pi_{-}.
+S_{+}=\mathbb{B}\tilde\Pi_{\mathrm{id},+},\qquad S_{-}=\mathbb{B}\tilde\Pi_{\mathrm{id},-}.
 $$
 
 They are the two Peirce columns of the family: $S_{+}=\mathbb{B}_{++}\oplus\mathbb{B}_{-+}$ and $S_{-}=\mathbb{B}_{+-}\oplus\mathbb{B}_{--}$.
@@ -73,92 +73,92 @@ They are the two Peirce columns of the family: $S_{+}=\mathbb{B}_{++}\oplus\math
 **Proof.** Every $\tilde Q\in\mathbb{B}$ is
 
 $$
-\tilde Q=\tilde Q(\tilde\Pi_{+}+\tilde\Pi_{-})=\tilde Q\tilde\Pi_{+}+\tilde Q\tilde\Pi_{-}\in S_{+}+S_{-}.
+\tilde Q=\tilde Q(\tilde\Pi_{\mathrm{id},+}+\tilde\Pi_{\mathrm{id},-})=\tilde Q\tilde\Pi_{\mathrm{id},+}+\tilde Q\tilde\Pi_{\mathrm{id},-}\in S_{+}+S_{-}.
 $$
 
-If $\zeta\in S_{+}\cap S_{-}$, then $\zeta=\eta_{+}\tilde\Pi_{+}=\eta_{-}\tilde\Pi_{-}$; multiplying on the right by $\tilde\Pi_{+}$ gives $\zeta=\eta_{+}\tilde\Pi_{+}=\eta_{-}\tilde\Pi_{-}\tilde\Pi_{+}=0$. So the sum is direct.
+If $\zeta\in S_{+}\cap S_{-}$, then $\zeta=\eta_{+}\tilde\Pi_{\mathrm{id},+}=\eta_{-}\tilde\Pi_{\mathrm{id},-}$; multiplying on the right by $\tilde\Pi_{\mathrm{id},+}$ gives $\zeta=\eta_{+}\tilde\Pi_{\mathrm{id},+}=\eta_{-}\tilde\Pi_{\mathrm{id},-}\tilde\Pi_{\mathrm{id},+}=0$. So the sum is direct.
 
-**The left action.** Left multiplication by any $\tilde Q\in\mathbb{B}$ preserves each $S_{\pm}$, because $\tilde Q(\zeta\tilde\Pi_{\pm})=(\tilde Q\zeta)\tilde\Pi_{\pm}$. This is the action of the algebra on the spinor spaces. It is the algebra product.
+**The left action.** Left multiplication by any $\tilde Q\in\mathbb{B}$ preserves each $S_{\pm}$, because $\tilde Q(\zeta\tilde\Pi_{\mathrm{id},\pm})=(\tilde Q\zeta)\tilde\Pi_{\mathrm{id},\pm}$. This is the action of the algebra on the spinor spaces. It is the algebra product.
 
 ## The Canonical Splitting
 
 **Proposition.** The family splits each spinor space into a diagonal line and a mixed line:
 
 $$
-S_{+}=\mathbb{C}\tilde\Pi_{+}\oplus\mathbb{B}_{-+},\qquad
-S_{-}=\mathbb{B}_{+-}\oplus\mathbb{C}\tilde\Pi_{-}.
+S_{+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{B}_{-+},\qquad
+S_{-}=\mathbb{B}_{+-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-}.
 $$
 
-**Proof.** For $\psi_{+}\in S_{+}$, insert $\tilde\Pi_{+}+\tilde\Pi_{-}=e_{t}$ on the left:
+**Proof.** For $\psi_{+}\in S_{+}$, insert $\tilde\Pi_{\mathrm{id},+}+\tilde\Pi_{\mathrm{id},-}=e_{t}$ on the left:
 
 $$
-\psi_{+}=(\tilde\Pi_{+}+\tilde\Pi_{-})\psi_{+}=\tilde\Pi_{+}\psi_{+}+\tilde\Pi_{-}\psi_{+}.
+\psi_{+}=(\tilde\Pi_{\mathrm{id},+}+\tilde\Pi_{\mathrm{id},-})\psi_{+}=\tilde\Pi_{\mathrm{id},+}\psi_{+}+\tilde\Pi_{\mathrm{id},-}\psi_{+}.
 $$
 
-The first term lies in $\mathbb{B}_{++}=\mathbb{C}\tilde\Pi_{+}$ and the second in $\mathbb{B}_{-+}$. The sum is direct because the two lines have different left indices. The proof for $S_{-}$ is the same with the signs exchanged.
+The first term lies in $\mathbb{B}_{++}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ and the second in $\mathbb{B}_{-+}$. The sum is direct because the two lines have different left indices. The proof for $S_{-}$ is the same with the signs exchanged.
 
 **The intrinsic form of a spinor.** Every positive spinor has a unique form
 
 $$
-\psi_{+}=a\tilde\Pi_{+}+\nu_{+},\qquad a\in\mathbb{C},\quad \nu_{+}\in\mathbb{B}_{-+},
+\psi_{+}=a\tilde\Pi_{\mathrm{id},+}+\nu_{+},\qquad a\in\mathbb{C},\quad \nu_{+}\in\mathbb{B}_{-+},
 $$
 
 and every negative spinor has a unique form
 
 $$
-\psi_{-}=\nu_{-}+d\tilde\Pi_{-},\qquad \nu_{-}\in\mathbb{B}_{+-},\quad d\in\mathbb{C}.
+\psi_{-}=\nu_{-}+d\tilde\Pi_{\mathrm{id},-},\qquad \nu_{-}\in\mathbb{B}_{+-},\quad d\in\mathbb{C}.
 $$
 
-The coefficient $a$ is the scalar such that $\tilde\Pi_{+}\psi_{+}=a\tilde\Pi_{+}$, and $\nu_{+}=\psi_{+}-a\tilde\Pi_{+}$ is the nilpotent part. The coefficient $d$ is the scalar such that $\tilde\Pi_{-}\psi_{-}=d\tilde\Pi_{-}$, and $\nu_{-}=\psi_{-}-d\tilde\Pi_{-}$ is the nilpotent part. The coefficients and the elements $\nu_{\pm}$ are intrinsic; the coordinates of $\nu_{\pm}$ in a chosen mixed line are not.
+The coefficient $a$ is the scalar such that $\tilde\Pi_{\mathrm{id},+}\psi_{+}=a\tilde\Pi_{\mathrm{id},+}$, and $\nu_{+}=\psi_{+}-a\tilde\Pi_{\mathrm{id},+}$ is the nilpotent part. The coefficient $d$ is the scalar such that $\tilde\Pi_{\mathrm{id},-}\psi_{-}=d\tilde\Pi_{\mathrm{id},-}$, and $\nu_{-}=\psi_{-}-d\tilde\Pi_{\mathrm{id},-}$ is the nilpotent part. The coefficients and the elements $\nu_{\pm}$ are intrinsic; the coordinates of $\nu_{\pm}$ in a chosen mixed line are not.
 
-**The adapted bases.** A Peirce basis $\tilde\Pi_{+},\vec\Upsilon_{+-},\vec\Upsilon_{-+},\tilde\Pi_{-}$ gives the bases
+**The adapted bases.** A Peirce basis $\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+-},\vec\Pi_{\mathrm{nil},-+},\tilde\Pi_{\mathrm{id},-}$ gives the bases
 
 $$
-(\tilde\Pi_{+},\vec\Upsilon_{-+})\ \text{of}\ S_{+},\qquad
-(\vec\Upsilon_{+-},\tilde\Pi_{-})\ \text{of}\ S_{-}.
+(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-+})\ \text{of}\ S_{+},\qquad
+(\vec\Pi_{\mathrm{nil},+-},\tilde\Pi_{\mathrm{id},-})\ \text{of}\ S_{-}.
 $$
 
 In these bases,
 
 $$
-\psi_{+}=a\tilde\Pi_{+}+c\vec\Upsilon_{-+},\qquad
-\psi_{-}=b\vec\Upsilon_{+-}+d\tilde\Pi_{-}.
+\psi_{+}=a\tilde\Pi_{\mathrm{id},+}+c\vec\Pi_{\mathrm{nil},-+},\qquad
+\psi_{-}=b\vec\Pi_{\mathrm{nil},+-}+d\tilde\Pi_{\mathrm{id},-}.
 $$
 
 The numbers $a,c$ and $b,d$ are the Peirce coordinates of the two spinors in the adapted basis. The basis is not canonical; the family is.
 
 ## The Ladder
 
-**Proposition.** Let $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ be the mixed units of a Peirce basis. Left multiplication by $\vec\Upsilon_{+-}$ maps $S_{+}$ onto $\mathbb{C}\tilde\Pi_{+}$ and annihilates $\mathbb{C}\tilde\Pi_{+}$; left multiplication by $\vec\Upsilon_{-+}$ maps $S_{+}$ onto $\mathbb{B}_{-+}$ and annihilates $\mathbb{B}_{-+}$. On coordinates,
+**Proposition.** Let $\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil},-+}$ be the mixed units of a Peirce basis. Left multiplication by $\vec\Pi_{\mathrm{nil},+-}$ maps $S_{+}$ onto $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ and annihilates $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$; left multiplication by $\vec\Pi_{\mathrm{nil},-+}$ maps $S_{+}$ onto $\mathbb{B}_{-+}$ and annihilates $\mathbb{B}_{-+}$. On coordinates,
 
 $$
-\vec\Upsilon_{+-}\psi_{+}=\vec\Upsilon_{+-}(a\tilde\Pi_{+}+c\vec\Upsilon_{-+})=c\tilde\Pi_{+},
+\vec\Pi_{\mathrm{nil},+-}\psi_{+}=\vec\Pi_{\mathrm{nil},+-}(a\tilde\Pi_{\mathrm{id},+}+c\vec\Pi_{\mathrm{nil},-+})=c\tilde\Pi_{\mathrm{id},+},
 $$
 
 $$
-\vec\Upsilon_{-+}\psi_{+}=\vec\Upsilon_{-+}(a\tilde\Pi_{+}+c\vec\Upsilon_{-+})=a\vec\Upsilon_{-+}.
+\vec\Pi_{\mathrm{nil},-+}\psi_{+}=\vec\Pi_{\mathrm{nil},-+}(a\tilde\Pi_{\mathrm{id},+}+c\vec\Pi_{\mathrm{nil},-+})=a\vec\Pi_{\mathrm{nil},-+}.
 $$
 
-**Proof.** The corner rule gives $\vec\Upsilon_{+-}\tilde\Pi_{+}=0$, $\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_{+}$, $\vec\Upsilon_{-+}\tilde\Pi_{+}=\vec\Upsilon_{-+}$ and $\vec\Upsilon_{-+}\vec\Upsilon_{-+}=0$. The two displayed formulas follow.
+**Proof.** The corner rule gives $\vec\Pi_{\mathrm{nil},+-}\tilde\Pi_{\mathrm{id},+}=0$, $\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}=\tilde\Pi_{\mathrm{id},+}$, $\vec\Pi_{\mathrm{nil},-+}\tilde\Pi_{\mathrm{id},+}=\vec\Pi_{\mathrm{nil},-+}$ and $\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},-+}=0$. The two displayed formulas follow.
 
 **The composites are the projections.** Using the products of the basis,
 
 $$
-\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_{-},\qquad
-\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_{+}.
+\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}=\tilde\Pi_{\mathrm{id},-},\qquad
+\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}=\tilde\Pi_{\mathrm{id},+}.
 $$
 
-Therefore left multiplication by $\vec\Upsilon_{-+}\vec\Upsilon_{+-}$ is the projection of $S_{+}$ onto $\mathbb{B}_{-+}$, and left multiplication by $\vec\Upsilon_{+-}\vec\Upsilon_{-+}$ is the projection of $S_{+}$ onto $\mathbb{C}\tilde\Pi_{+}$. Each composite is idempotent; neither is the identity on $S_{+}$. The two maps are the two steps of the ladder.
+Therefore left multiplication by $\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}$ is the projection of $S_{+}$ onto $\mathbb{B}_{-+}$, and left multiplication by $\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}$ is the projection of $S_{+}$ onto $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$. Each composite is idempotent; neither is the identity on $S_{+}$. The two maps are the two steps of the ladder.
 
-**The normalization is the gauge.** Without the product normalization, the two maps are defined only up to reciprocal scale: if $\vec\Upsilon_{+-}$ is replaced by $\lambda\vec\Upsilon_{+-}$, the first map is multiplied by $\lambda$ and the second by $\lambda^{-1}$. The ladder is therefore canonical on the family and gauge-dependent on the basis, as it must be.
+**The normalization is the gauge.** Without the product normalization, the two maps are defined only up to reciprocal scale: if $\vec\Pi_{\mathrm{nil},+-}$ is replaced by $\lambda\vec\Pi_{\mathrm{nil},+-}$, the first map is multiplied by $\lambda$ and the second by $\lambda^{-1}$. The ladder is therefore canonical on the family and gauge-dependent on the basis, as it must be.
 
 ## The Gauge
 
 **The action on coordinates.** Under the basis change of *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*,
 
 $$
-\vec\Upsilon'_{+-}=t^{-1}\vec\Upsilon_{+-},\qquad
-\vec\Upsilon'_{-+}=t\vec\Upsilon_{-+},\qquad t\in\mathbb{C}^{\times},
+\vec\Pi_{\mathrm{nil}}'_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
+\vec\Pi_{\mathrm{nil}}'_{-+}=t\vec\Pi_{\mathrm{nil},-+},\qquad t\in\mathbb{C}^{\times},
 $$
 
 the coordinates transform by
@@ -171,7 +171,7 @@ The diagonal coefficients are gauge-invariant; the mixed coefficients carry the 
 
 **The gauge is not a symmetry of the spinor.** The gauge is a change of basis of the same family. It does not move the spinor in the algebra; it moves the coordinate description. A statement about a spinor is gauge-covariant when it is independent of $t$.
 
-**The Hermitian gauge.** If the family and the basis are Hermitian, $\tilde\Pi_{\pm}^{*}=\tilde\Pi_{\pm}$ and $\vec\Upsilon_{-+}=\vec\Upsilon_{+-}^{*}$, then the allowed gauge is $|t|=1$. The Hermitian norm of a positive spinor is
+**The Hermitian gauge.** If the family and the basis are Hermitian, $\tilde\Pi_{\mathrm{id},\pm}^{*}=\tilde\Pi_{\mathrm{id},\pm}$ and $\vec\Pi_{\mathrm{nil},-+}=\vec\Pi_{\mathrm{nil},+-}^{*}$, then the allowed gauge is $|t|=1$. The Hermitian norm of a positive spinor is
 
 $$
 \mathrm{Sc}(\psi_{+}\psi_{+}^{*})
@@ -192,40 +192,40 @@ The formulas are invariant under the circle $|t|=1$. They are positive definite 
 **The intrinsic data.** Fix the family. The canonical splitting of §*The Canonical Splitting* gives, for a positive spinor,
 
 $$
-\psi_{+}=a\tilde\Pi_{+}+\nu_{+},\qquad
+\psi_{+}=a\tilde\Pi_{\mathrm{id},+}+\nu_{+},\qquad
 a\in\mathbb{C},\quad \nu_{+}\in\mathbb{B}_{-+},
 $$
 
-with $a$ and $\nu_{+}$ intrinsic. The coordinate $c$ in a chosen basis is not intrinsic: $\nu_{+}=c\vec\Upsilon_{-+}$ and $c$ is multiplied by $t^{-1}$ under the gauge.
+with $a$ and $\nu_{+}$ intrinsic. The coordinate $c$ in a chosen basis is not intrinsic: $\nu_{+}=c\vec\Pi_{\mathrm{nil},-+}$ and $c$ is multiplied by $t^{-1}$ under the gauge.
 
 **The invariant conditions.** The following conditions are independent of the basis:
 
 - $a=0$: the spinor is a nilpotent, $\psi_{+}=\nu_{+}$.
-- $\nu_{+}=0$: the spinor is pure, $\psi_{+}=a\tilde\Pi_{+}$.
+- $\nu_{+}=0$: the spinor is pure, $\psi_{+}=a\tilde\Pi_{\mathrm{id},+}$.
 - $a=0$ and $\nu_{+}=0$: the spinor is zero.
 - $a\ne0$: the spinor has a nonzero diagonal part; the ratio $c/a$ is a coordinate on the mixed line and is not invariant, since it is multiplied by $t^{-1}$.
 
 **What is not invariant.** The pair $(a,c)$ is not invariant; only $a$ and the element $\nu_{+}$ are. The vanishing of $c$ is invariant, because $c=0$ exactly when $\nu_{+}=0$; the value of a nonzero $c$ is not. In the Hermitian gauge the norm $\frac12(|a|^{2}+|c|^{2})$ is invariant; it is not an invariant of the gauge $\mathbb{C}^{\times}$ without the Hermitian condition.
 
-**The negative spinor.** The same statements hold for $\psi_{-}=\nu_{-}+d\tilde\Pi_{-}$, with $d$ and $\nu_{-}$ intrinsic and $b$ gauge-dependent: $b'=tb$.
+**The negative spinor.** The same statements hold for $\psi_{-}=\nu_{-}+d\tilde\Pi_{\mathrm{id},-}$, with $d$ and $\nu_{-}$ intrinsic and $b$ gauge-dependent: $b'=tb$.
 
 ## The Peirce Index
 
 **Right multiplication by the idempotents.** For $\psi_{+}\in S_{+}$,
 
 $$
-\psi_{+}\tilde\Pi_{+}=\psi_{+},\qquad
-\psi_{+}\tilde\Pi_{-}=0.
+\psi_{+}\tilde\Pi_{\mathrm{id},+}=\psi_{+},\qquad
+\psi_{+}\tilde\Pi_{\mathrm{id},-}=0.
 $$
 
 For $\psi_{-}\in S_{-}$,
 
 $$
-\psi_{-}\tilde\Pi_{-}=\psi_{-},\qquad
-\psi_{-}\tilde\Pi_{+}=0.
+\psi_{-}\tilde\Pi_{\mathrm{id},-}=\psi_{-},\qquad
+\psi_{-}\tilde\Pi_{\mathrm{id},+}=0.
 $$
 
-So $S_{+}$ is the image of right multiplication by $\tilde\Pi_{+}$ and the kernel of right multiplication by $\tilde\Pi_{-}$, and $S_{-}$ is the reverse.
+So $S_{+}$ is the image of right multiplication by $\tilde\Pi_{\mathrm{id},+}$ and the kernel of right multiplication by $\tilde\Pi_{\mathrm{id},-}$, and $S_{-}$ is the reverse.
 
 **The index is the right index.** The two spinor spaces are the two values of the right Peirce index. The index is a label of the space, not the value of an operator: it is the idempotent that acts as the identity on the right. The diagonal coefficient $a$ or $d$ and the mixed coordinate $c$ or $b$ are read in that space.
 
@@ -234,42 +234,42 @@ So $S_{+}$ is the image of right multiplication by $\tilde\Pi_{+}$ and the kerne
 **Preservation of a spinor space.** Right multiplication by $\tilde Q\in\mathbb{B}$ sends $S_{+}$ into $S_{+}$ exactly when
 
 $$
-\tilde\Pi_{+}\tilde Q\tilde\Pi_{-}=0,
+\tilde\Pi_{\mathrm{id},+}\tilde Q\tilde\Pi_{\mathrm{id},-}=0,
 $$
 
-which in the basis is $Q_{+-}=0$. It sends $S_{-}$ into $S_{-}$ exactly when $\tilde\Pi_{-}\tilde Q\tilde\Pi_{+}=0$, which is $Q_{-+}=0$.
+which in the basis is $Q_{+-}=0$. It sends $S_{-}$ into $S_{-}$ exactly when $\tilde\Pi_{\mathrm{id},-}\tilde Q\tilde\Pi_{\mathrm{id},+}=0$, which is $Q_{-+}=0$.
 
-**Proof.** For $\zeta=\eta\tilde\Pi_{+}\in S_{+}$, $\zeta\tilde Q=\eta\tilde\Pi_{+}\tilde Q$. This lies in $S_{+}$ exactly when $\tilde\Pi_{+}\tilde Q=\tilde\Pi_{+}\tilde Q\tilde\Pi_{+}$, that is when $\tilde\Pi_{+}\tilde Q\tilde\Pi_{-}=0$. The basis expansion gives $\tilde\Pi_{+}\tilde Q\tilde\Pi_{-}=Q_{+-}\vec\Upsilon_{+-}$, so the condition is $Q_{+-}=0$. The proof for $S_{-}$ is the same with the signs exchanged.
+**Proof.** For $\zeta=\eta\tilde\Pi_{\mathrm{id},+}\in S_{+}$, $\zeta\tilde Q=\eta\tilde\Pi_{\mathrm{id},+}\tilde Q$. This lies in $S_{+}$ exactly when $\tilde\Pi_{\mathrm{id},+}\tilde Q=\tilde\Pi_{\mathrm{id},+}\tilde Q\tilde\Pi_{\mathrm{id},+}$, that is when $\tilde\Pi_{\mathrm{id},+}\tilde Q\tilde\Pi_{\mathrm{id},-}=0$. The basis expansion gives $\tilde\Pi_{\mathrm{id},+}\tilde Q\tilde\Pi_{\mathrm{id},-}=Q_{+-}\vec\Pi_{\mathrm{nil},+-}$, so the condition is $Q_{+-}=0$. The proof for $S_{-}$ is the same with the signs exchanged.
 
-**The exchange by the mixed units.** Right multiplication by $\vec\Upsilon_{+-}$ sends $S_{+}$ onto $S_{-}$ and kills $S_{-}$; right multiplication by $\vec\Upsilon_{-+}$ sends $S_{-}$ onto $S_{+}$ and kills $S_{+}$:
+**The exchange by the mixed units.** Right multiplication by $\vec\Pi_{\mathrm{nil},+-}$ sends $S_{+}$ onto $S_{-}$ and kills $S_{-}$; right multiplication by $\vec\Pi_{\mathrm{nil},-+}$ sends $S_{-}$ onto $S_{+}$ and kills $S_{+}$:
 
 $$
-\zeta\in S_{+}\longmapsto\zeta\vec\Upsilon_{+-}\in S_{-},\qquad
-\eta\in S_{-}\longmapsto\eta\vec\Upsilon_{-+}\in S_{+}.
+\zeta\in S_{+}\longmapsto\zeta\vec\Pi_{\mathrm{nil},+-}\in S_{-},\qquad
+\eta\in S_{-}\longmapsto\eta\vec\Pi_{\mathrm{nil},-+}\in S_{+}.
 $$
 
 On the coordinates,
 
 $$
-(a\tilde\Pi_{+}+c\vec\Upsilon_{-+})\vec\Upsilon_{+-}=a\vec\Upsilon_{+-}+c\tilde\Pi_{-},
+(a\tilde\Pi_{\mathrm{id},+}+c\vec\Pi_{\mathrm{nil},-+})\vec\Pi_{\mathrm{nil},+-}=a\vec\Pi_{\mathrm{nil},+-}+c\tilde\Pi_{\mathrm{id},-},
 $$
 
 $$
-(b\vec\Upsilon_{+-}+d\tilde\Pi_{-})\vec\Upsilon_{-+}=b\tilde\Pi_{+}+d\vec\Upsilon_{-+}.
+(b\vec\Pi_{\mathrm{nil},+-}+d\tilde\Pi_{\mathrm{id},-})\vec\Pi_{\mathrm{nil},-+}=b\tilde\Pi_{\mathrm{id},+}+d\vec\Pi_{\mathrm{nil},-+}.
 $$
 
 Each map is an isomorphism of the two complex planes, and the two maps are inverse:
 
 $$
-(\zeta\vec\Upsilon_{+-})\vec\Upsilon_{-+}=\zeta\tilde\Pi_{+}=\zeta,\qquad
-(\eta\vec\Upsilon_{-+})\vec\Upsilon_{+-}=\eta\tilde\Pi_{-}=\eta.
+(\zeta\vec\Pi_{\mathrm{nil},+-})\vec\Pi_{\mathrm{nil},-+}=\zeta\tilde\Pi_{\mathrm{id},+}=\zeta,\qquad
+(\eta\vec\Pi_{\mathrm{nil},-+})\vec\Pi_{\mathrm{nil},+-}=\eta\tilde\Pi_{\mathrm{id},-}=\eta.
 $$
 
 Each map is square-zero, because the unit kills the space it maps onto:
 
 $$
-\zeta\vec\Upsilon_{+-}\vec\Upsilon_{+-}=0,\qquad
-\eta\vec\Upsilon_{-+}\vec\Upsilon_{-+}=0.
+\zeta\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},+-}=0,\qquad
+\eta\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},-+}=0.
 $$
 
 The exchange depends on the basis: under the gauge the first map is multiplied by $t^{-1}$ and the second by $t$.
@@ -277,12 +277,12 @@ The exchange depends on the basis: under the gauge the first map is multiplied b
 **The star does not exchange the spaces.** If the family is Hermitian, then
 
 $$
-S_{+}^{*}=(\mathbb{B}\tilde\Pi_{+})^{*}=\tilde\Pi_{+}\mathbb{B},
+S_{+}^{*}=(\mathbb{B}\tilde\Pi_{\mathrm{id},+})^{*}=\tilde\Pi_{\mathrm{id},+}\mathbb{B},
 $$
 
-the right Peirce row of $\tilde\Pi_{+}$, not $S_{-}=\mathbb{B}\tilde\Pi_{-}$. The two spaces are different subspaces: the row contains $\mathbb{B}_{++}\oplus\mathbb{B}_{+-}$ and $S_{-}$ contains $\mathbb{B}_{+-}\oplus\mathbb{B}_{--}$. They share the mixed line $\mathbb{B}_{+-}$ but are not equal. Chirality belongs to the left grouping, not to the involution.
+the right Peirce row of $\tilde\Pi_{\mathrm{id},+}$, not $S_{-}=\mathbb{B}\tilde\Pi_{\mathrm{id},-}$. The two spaces are different subspaces: the row contains $\mathbb{B}_{++}\oplus\mathbb{B}_{+-}$ and $S_{-}$ contains $\mathbb{B}_{+-}\oplus\mathbb{B}_{--}$. They share the mixed line $\mathbb{B}_{+-}$ but are not equal. Chirality belongs to the left grouping, not to the involution.
 
-**The row is the co-spinor space.** The row $\chi\in\tilde\Pi_{+}\mathbb{B}$ acts on the spinor $\psi\in S_{+}$ by the product $\chi\psi$, which lands in $\tilde\Pi_{+}\mathbb{B}\tilde\Pi_{+}=\mathbb{C}\tilde\Pi_{+}$; the coefficient is a bilinear form with no conjugation, and it is the scalar part of the product in the other order. The products $\psi\chi$ in turn fill the null cone, and the two strata of the cone are the two positions of the line $[\psi]$ relative to the hyperplane $\ker\chi$. The reading is *The N-Degenerate Sector*, §*Geometry*.
+**The row is the co-spinor space.** The row $\chi\in\tilde\Pi_{\mathrm{id},+}\mathbb{B}$ acts on the spinor $\psi\in S_{+}$ by the product $\chi\psi$, which lands in $\tilde\Pi_{\mathrm{id},+}\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$; the coefficient is a bilinear form with no conjugation, and it is the scalar part of the product in the other order. The products $\psi\chi$ in turn fill the null cone, and the two strata of the cone are the two positions of the line $[\psi]$ relative to the hyperplane $\ker\chi$. The reading is *The N-Degenerate Sector*, §*Geometry*.
 
 ## What the Spinor Is Not
 
@@ -297,27 +297,27 @@ the right Peirce row of $\tilde\Pi_{+}$, not $S_{-}=\mathbb{B}\tilde\Pi_{-}$. Th
 For the standard family
 
 $$
-\tilde\Pi_{+}=\frac{e_{t}+i\vec e_{z}}{2},\qquad
-\tilde\Pi_{-}=\frac{e_{t}-i\vec e_{z}}{2},
+\tilde\Pi_{\mathrm{id},+}=\frac{e_{t}+i\vec e_{z}}{2},\qquad
+\tilde\Pi_{\mathrm{id},-}=\frac{e_{t}-i\vec e_{z}}{2},
 $$
 
 with the standard mixed units
 
 $$
-\vec\Upsilon_{+-}=\frac{i\vec e_{x}-\vec e_{y}}{2},\qquad
-\vec\Upsilon_{-+}=\frac{i\vec e_{x}+\vec e_{y}}{2},
+\vec\Pi_{\mathrm{nil},+-}=\frac{i\vec e_{x}-\vec e_{y}}{2},\qquad
+\vec\Pi_{\mathrm{nil},-+}=\frac{i\vec e_{x}+\vec e_{y}}{2},
 $$
 
 a positive spinor is
 
 $$
-\psi_{+}=a\tilde\Pi_{+}+c\vec\Upsilon_{-+},
+\psi_{+}=a\tilde\Pi_{\mathrm{id},+}+c\vec\Pi_{\mathrm{nil},-+},
 $$
 
 and a negative spinor is
 
 $$
-\psi_{-}=b\vec\Upsilon_{+-}+d\tilde\Pi_{-}.
+\psi_{-}=b\vec\Pi_{\mathrm{nil},+-}+d\tilde\Pi_{\mathrm{id},-}.
 $$
 
 The gauge acts by
@@ -329,15 +329,15 @@ $$
 The ladder is
 
 $$
-\vec\Upsilon_{+-}\psi_{+}=c\tilde\Pi_{+},\qquad
-\vec\Upsilon_{-+}\psi_{+}=a\vec\Upsilon_{-+}.
+\vec\Pi_{\mathrm{nil},+-}\psi_{+}=c\tilde\Pi_{\mathrm{id},+},\qquad
+\vec\Pi_{\mathrm{nil},-+}\psi_{+}=a\vec\Pi_{\mathrm{nil},-+}.
 $$
 
 The Peirce index is
 
 $$
-\psi_{+}\tilde\Pi_{+}=\psi_{+},\qquad
-\psi_{+}\tilde\Pi_{-}=0,
+\psi_{+}\tilde\Pi_{\mathrm{id},+}=\psi_{+},\qquad
+\psi_{+}\tilde\Pi_{\mathrm{id},-}=0,
 $$
 
 and the reverse for $\psi_{-}$. In the Hermitian standard basis the norms are
@@ -349,9 +349,9 @@ $$
 
 ## Summary
 
-The two spinor spaces $S_\pm=\mathbb{B}\tilde\Pi_\pm$ are the two Peirce carriers, and in this algebra they are the two minimal left ideals, of complex dimension two; the algebra is their direct sum as a left module, $\mathbb{B}=S_+\oplus S_-$. Every left ideal is a direct sum of minimal left ideals, every minimal left ideal is $\mathbb{B}\tilde\Pi$ for a primitive idempotent, and all of them are isomorphic to the simple module $\mathbb{C}^2$, on which $i$ acts as the scalar $i$. The family of them is a projective line, so the pair of points that this article fixes is a choice and not a structure.
+The two spinor spaces $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ are the two Peirce carriers, and in this algebra they are the two minimal left ideals, of complex dimension two; the algebra is their direct sum as a left module, $\mathbb{B}=S_+\oplus S_-$. Every left ideal is a direct sum of minimal left ideals, every minimal left ideal is $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ for a primitive idempotent, and all of them are isomorphic to the simple module $\mathbb{C}^2$, on which $i$ acts as the scalar $i$. The family of them is a projective line, so the pair of points that this article fixes is a choice and not a structure.
 
-A spinor is an element of one of the two spaces. The family splits each space canonically into a diagonal line and a mixed line, $S_{+}=\mathbb{C}\tilde\Pi_{+}\oplus\mathbb{B}_{-+}$ and $S_{-}=\mathbb{B}_{+-}\oplus\mathbb{C}\tilde\Pi_{-}$. A Peirce basis chooses a generator of the mixed line and gives the adapted coordinates; the gauge is the reciprocal scaling of the two mixed units. The ladder is left multiplication by the mixed units, and its composites are the two projections. The intrinsic data of a single spinor are the diagonal coefficient and the element of the mixed line; the mixed coordinate is gauge-dependent. The Peirce index is the right index. Right multiplication preserves a spinor space under a corner condition and exchanges the two spaces by the mixed units; the star does not exchange them.
+A spinor is an element of one of the two spaces. The family splits each space canonically into a diagonal line and a mixed line, $S_{+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{B}_{-+}$ and $S_{-}=\mathbb{B}_{+-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-}$. A Peirce basis chooses a generator of the mixed line and gives the adapted coordinates; the gauge is the reciprocal scaling of the two mixed units. The ladder is left multiplication by the mixed units, and its composites are the two projections. The intrinsic data of a single spinor are the diagonal coefficient and the element of the mixed line; the mixed coordinate is gauge-dependent. The Peirce index is the right index. Right multiplication preserves a spinor space under a corner condition and exchanges the two spaces by the mixed units; the star does not exchange them.
 
 The index that the choice supplies is a copy index and not a chirality: the two halves are isomorphic, so no observation inside the algebra distinguishes them, and the pair is moved by the automorphisms of the module. Chirality is carried by the conjugate pair and by the basis operator $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, not by this splitting.
 
@@ -359,16 +359,16 @@ The index that the choice supplies is a copy index and not a chirality: the two 
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}\tilde\Pi$ | the minimal left ideal of the primitive idempotent $\tilde\Pi$ |
-| $S_{\pm}=\mathbb{B}\tilde\Pi_{\pm}$ | the two Peirce carriers, the minimal left ideals, the spinor spaces |
+| $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ | the minimal left ideal of the primitive idempotent $\tilde\Pi_{\mathrm{id}}$ |
+| $S_{\pm}=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | the two Peirce carriers, the minimal left ideals, the spinor spaces |
 | $\psi_{\pm}$ | a spinor of the corresponding space |
-| $\tilde\Pi_{\pm}$ | the idempotents of the family |
-| $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ | the mixed units of a basis |
+| $\tilde\Pi_{\mathrm{id},\pm}$ | the idempotents of the family |
+| $\vec\Pi_{\mathrm{nil},+-},\vec\Pi_{\mathrm{nil},-+}$ | the mixed units of a basis |
 | $\mathcal{C}_\pm$ | the couple of Peirce vectors spanning $S_\pm$ |
 | $a,c$ | the coordinates of a positive spinor |
 | $b,d$ | the coordinates of a negative spinor |
 | $t$ | the gauge parameter, with $\lvert t\rvert=1$ in the Hermitian case |
-| $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ | the four Peirce lines |
+| $\mathbb{B}_{st}=\tilde\Pi_{\mathrm{id},s}\mathbb{B}\tilde\Pi_{\mathrm{id},t}$ | the four Peirce lines |
 
 ## Further Reading
 

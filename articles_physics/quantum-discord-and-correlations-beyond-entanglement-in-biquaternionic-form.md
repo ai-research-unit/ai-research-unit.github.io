@@ -14,7 +14,7 @@ $$
 and the classical mutual information is
 
 $$
-J(A|B) = S(\tilde{Ϛ}_{\Psi,A}) - S\bigl(\tilde{Ϛ}_{\Psi,A|\{\tilde{\Pi}_k\}}\bigr),
+J(A|B) = S(\tilde{Ϛ}_{\Psi,A}) - S\bigl(\tilde{Ϛ}_{\Psi,A|\{\tilde\Pi_{\mathrm{id},k}\}}\bigr),
 $$
 
 where the conditional entropy is that of the post-measurement state of $A$ after a projective measurement on $B$; the **discord** is $D(A|B) = I(A:B)-J(A|B)$, maximized over measurements in the definition of $J$.
@@ -22,7 +22,7 @@ where the conditional entropy is that of the post-measurement state of $A$ after
 The framework's most useful contribution here is a compact parametrization. The states diagonal in the Bell idempotent basis,
 
 $$
-\tilde{Ϛ}_{\Psi,AB} = \sum_\epsilon p_\epsilon\,\tilde\Pi_\epsilon ,
+\tilde{Ϛ}_{\Psi,AB} = \sum_\epsilon p_\epsilon\,\tilde\Pi_{\mathrm{id},\epsilon} ,
 \qquad p_\epsilon\geq0, \quad \sum_\epsilon p_\epsilon = 1,
 $$
 
@@ -52,14 +52,14 @@ non-negative by subadditivity of the entropy. It is symmetric in $A$ and $B$ and
 
 ### The Bell-diagonal family
 
-The four Bell idempotents $\tilde\Pi_\epsilon$ of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* form an idempotent basis of the two-qubit algebra, with $\tilde\Pi_\epsilon P_{\epsilon_{\mathrm o}} = \delta_{\epsilon\epsilon_{\mathrm o}}\tilde\Pi_\epsilon$ and $\sum_\epsilon \tilde\Pi_\epsilon = e_t\otimes e_t$. The **Bell-diagonal states** are the convex combinations
+The four Bell idempotents $\tilde\Pi_{\mathrm{id},\epsilon}$ of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* form an idempotent basis of the two-qubit algebra, with $\tilde\Pi_{\mathrm{id},\epsilon} P_{\epsilon_{\mathrm o}} = \delta_{\epsilon\epsilon_{\mathrm o}}\tilde\Pi_{\mathrm{id},\epsilon}$ and $\sum_\epsilon \tilde\Pi_{\mathrm{id},\epsilon} = e_t\otimes e_t$. The **Bell-diagonal states** are the convex combinations
 
 $$
-\tilde{Ϛ}_{\Psi,AB} = \sum_\epsilon p_\epsilon\,\tilde\Pi_\epsilon ,
+\tilde{Ϛ}_{\Psi,AB} = \sum_\epsilon p_\epsilon\,\tilde\Pi_{\mathrm{id},\epsilon} ,
 \qquad p_\epsilon\geq0, \qquad \sum_\epsilon p_\epsilon = 1 .
 $$
 
-Each $\tilde\Pi_\epsilon$ is the joint spectral idempotent of the stabilizer pair $S_1 = -\vec e_x\otimes \vec e_x$ and $S_3 = -\vec e_z\otimes \vec e_z$, with $S_1\tilde\Pi_\epsilon = -\epsilon_1 \tilde\Pi_\epsilon$ and $S_3\tilde\Pi_\epsilon = -\epsilon_3 \tilde\Pi_\epsilon$. The same family is parametrized by the three correlation coefficients
+Each $\tilde\Pi_{\mathrm{id},\epsilon}$ is the joint spectral idempotent of the stabilizer pair $S_1 = -\vec e_x\otimes \vec e_x$ and $S_3 = -\vec e_z\otimes \vec e_z$, with $S_1\tilde\Pi_{\mathrm{id},\epsilon} = -\epsilon_1 \tilde\Pi_{\mathrm{id},\epsilon}$ and $S_3\tilde\Pi_{\mathrm{id},\epsilon} = -\epsilon_3 \tilde\Pi_{\mathrm{id},\epsilon}$. The same family is parametrized by the three correlation coefficients
 
 $$
 c_j = 4\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi,AB}\,\tilde{H}_{\Psi,j}\bigr),
@@ -83,7 +83,7 @@ $$
 \qquad S(\tilde{Ϛ}_{\Psi,A}) = S(\tilde{Ϛ}_{\Psi,B}) = 1\ \text{bit},
 $$
 
-because the scalar part of every $i\vec e_\eta$ vanishes. The eigenvalues, computed from the action of the stabilizers on the $\tilde\Pi_\epsilon$, are $\tfrac14(1-\sum_j c_j\epsilon_j)$, so
+because the scalar part of every $i\vec e_\eta$ vanishes. The eigenvalues, computed from the action of the stabilizers on the $\tilde\Pi_{\mathrm{id},\epsilon}$, are $\tfrac14(1-\sum_j c_j\epsilon_j)$, so
 
 $$
 \boxed{\;S(\tilde{Ϛ}_{\Psi,AB}) = -\sum_\epsilon \tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr)\log_2\tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr),
@@ -100,21 +100,21 @@ For Bell-diagonal states the quantum mutual information is thus a function of th
 To extract classical information from a bipartite quantum state one must measure. A projective measurement on $B$ along a direction $\vec u$ has idempotents
 
 $$
-\tilde{\Pi}_{1,2} = \tfrac12\bigl(e_t \pm i\vec u\bigr) \quad\text{on }B,
+\tilde\Pi_{\mathrm{id},1,2} = \tfrac12\bigl(e_t \pm i\vec u\bigr) \quad\text{on }B,
 \qquad
- e_t\otimes\tilde{\Pi}_{1,2} \ \text{on } AB ,
+ e_t\otimes\tilde\Pi_{\mathrm{id},1,2} \ \text{on } AB ,
 $$
 
-with outcomes of probability $p_\pm = 4\,\mathrm{Sc}[(e_t\otimes\tilde{\Pi}_{1,2})\tilde{Ϛ}_{\Psi,AB}]$ at normalisation, and conditional states of $A$
+with outcomes of probability $p_\pm = 4\,\mathrm{Sc}[(e_t\otimes\tilde\Pi_{\mathrm{id},1,2})\tilde{Ϛ}_{\Psi,AB}]$ at normalisation, and conditional states of $A$
 
 $$
-\tilde{Ϛ}_{\Psi,A|\pm} = \frac{2\,\mathrm{Sc}_B\bigl[(e_t\otimes\tilde{\Pi}_{1,2})\tilde{Ϛ}_{\Psi,AB}(e_t\otimes\tilde{\Pi}_{1,2})\bigr]}{p_\pm}.
+\tilde{Ϛ}_{\Psi,A|\pm} = \frac{2\,\mathrm{Sc}_B\bigl[(e_t\otimes\tilde\Pi_{\mathrm{id},1,2})\tilde{Ϛ}_{\Psi,AB}(e_t\otimes\tilde\Pi_{\mathrm{id},1,2})\bigr]}{p_\pm}.
 $$
 
-The conditional entropy of $A$ given the measurement is $S(A|\{\tilde{\Pi}\}) = \sum_\pm p_\pm S(\tilde{Ϛ}_{\Psi,A|\pm})$, and the **classical mutual information** extractable by that measurement is
+The conditional entropy of $A$ given the measurement is $S(A|\{\tilde\Pi_{\mathrm{id}}\}) = \sum_\pm p_\pm S(\tilde{Ϛ}_{\Psi,A|\pm})$, and the **classical mutual information** extractable by that measurement is
 
 $$
-J(A|B)_{\vec u} = S(\tilde{Ϛ}_{\Psi,A}) - S\bigl(A|\{\tilde{\Pi}\}\bigr),
+J(A|B)_{\vec u} = S(\tilde{Ϛ}_{\Psi,A}) - S\bigl(A|\{\tilde\Pi_{\mathrm{id}}\}\bigr),
 $$
 
 the information about $A$ gained by measuring $B$. The **quantum discord** is
@@ -123,7 +123,7 @@ $$
 D(A|B) = I(A:B) - \max_{\vec u} J(A|B)_{\vec u} .
 $$
 
-By construction $D(A|B)\geq0$, because the measurement defines a channel on $B$ and the data-processing inequality bounds $J$ by $I$. Discord vanishes exactly for the states for which some measurement on $B$ extracts all of the mutual information, i.e. the **quantum-classical states** $\tilde{Ϛ}_{\Psi,AB} = \sum_\eta p_\eta\,\tilde{Ϛ}_{\Psi,A}^{(k)}\otimes\tilde{\Pi}_k$.
+By construction $D(A|B)\geq0$, because the measurement defines a channel on $B$ and the data-processing inequality bounds $J$ by $I$. Discord vanishes exactly for the states for which some measurement on $B$ extracts all of the mutual information, i.e. the **quantum-classical states** $\tilde{Ϛ}_{\Psi,AB} = \sum_\eta p_\eta\,\tilde{Ϛ}_{\Psi,A}^{(k)}\otimes\tilde\Pi_{\mathrm{id},k}$.
 
 ### Asymmetry
 
@@ -134,7 +134,7 @@ The measurement is performed on one side only, so $J(A|B)$ and $J(B|A)$ need not
 For Bell-diagonal states the calculation is explicit. A measurement of the coordinate $i\vec e_j$ on $B$ has the two outcomes with equal probability $\tfrac12$, and it leaves $A$ in the conditional states
 
 $$
-\tilde{Ϛ}_{\Psi,A|\pm} = 2\,\mathrm{Sc}_B\bigl[(e_t\otimes\tilde{\Pi}_{j,\pm})\tilde{Ϛ}_{\Psi,AB}\bigr]\Big/\tfrac12
+\tilde{Ϛ}_{\Psi,A|\pm} = 2\,\mathrm{Sc}_B\bigl[(e_t\otimes\tilde\Pi_{\mathrm{id},j,\pm})\tilde{Ϛ}_{\Psi,AB}\bigr]\Big/\tfrac12
 = \tfrac{1}{2}\bigl(e_t \pm c_j\,i\vec e_j\bigr),
 $$
 
@@ -246,10 +246,10 @@ D(A|B) = I(A:B) - \max_{\vec u} J(A|B)_{\vec u},
 \qquad
 I(A:B) = S(\tilde{Ϛ}_{\Psi,A})+S(\tilde{Ϛ}_{\Psi,B})-S(\tilde{Ϛ}_{\Psi,AB}),
 \qquad
-J(A|B)_{\vec u} = S(\tilde{Ϛ}_{\Psi,A}) - S\bigl(A\,|\,\{\tilde{\Pi}\}\bigr).
+J(A|B)_{\vec u} = S(\tilde{Ϛ}_{\Psi,A}) - S\bigl(A\,|\,\{\tilde\Pi_{\mathrm{id}}\}\bigr).
 $$
 
-In the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$ the Bell-diagonal states $\tilde{Ϛ}_{\Psi,AB} = \sum_\epsilon p_\epsilon \tilde\Pi_\epsilon$ are parametrized by the three readings of the plain form
+In the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$ the Bell-diagonal states $\tilde{Ϛ}_{\Psi,AB} = \sum_\epsilon p_\epsilon \tilde\Pi_{\mathrm{id},\epsilon}$ are parametrized by the three readings of the plain form
 
 $$
 c_j = 4\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi,AB}\,\tilde{H}_{\Psi,j}\bigr), \qquad \tilde{H}_{\Psi,j} = -\vec e_j\otimes\vec e_j ,
@@ -266,12 +266,12 @@ with marginals $\tilde{Ϛ}_{\Psi,A} = \tilde{Ϛ}_{\Psi,B} = \tfrac12 e_t$ and en
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit algebra, module dimension four |
 | $\mathbb{B}_{\Psi}^{\otimes2}$ | Two-qubit Hermitian subspace (states) |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion units; central imaginary |
-| $\tilde\Pi_\epsilon$ | Bell idempotents (idempotent basis) |
+| $\tilde\Pi_{\mathrm{id},\epsilon}$ | Bell idempotents (idempotent basis) |
 | $\tilde{Ϛ}_{\Psi,A} = 2\,\mathrm{Sc}_B\tilde{Ϛ}_{\Psi,AB}$, $\tilde{Ϛ}_{\Psi,B} = 2\,\mathrm{Sc}_A\tilde{Ϛ}_{\Psi,AB}$ | Marginal states |
 | $S(\tilde{Ϛ}_{\Psi}) = -2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log_2\tilde{Ϛ}_{\Psi})$ | Von Neumann entropy (bits) |
 | $I(A:B) = S(\tilde{Ϛ}_{\Psi,A})+S(\tilde{Ϛ}_{\Psi,B})-S(\tilde{Ϛ}_{\Psi,AB})$ | Quantum mutual information |
-| $\tilde{\Pi}_{1,2} = \tfrac12(e_t\pm i\vec u)$ | Projective measurement on $B$ |
-| $J(A|B) = S(\tilde{Ϛ}_{\Psi,A})-S(A|\{\tilde{\Pi}\})$ | Classical mutual information |
+| $\tilde\Pi_{\mathrm{id},1,2} = \tfrac12(e_t\pm i\vec u)$ | Projective measurement on $B$ |
+| $J(A|B) = S(\tilde{Ϛ}_{\Psi,A})-S(A|\{\tilde\Pi_{\mathrm{id}}\})$ | Classical mutual information |
 | $D(A|B) = I(A:B)-\max J(A|B)$ | Quantum discord |
 | $c_j = 4\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,AB}\tilde{H}_{\Psi,j}^{*})$ | Correlation coefficients |
 | $\tilde{H}_{\Psi,j} = -\vec e_j\otimes\vec e_j$ | Tensor-product observables |

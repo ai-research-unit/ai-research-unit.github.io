@@ -86,13 +86,13 @@ $$
 In the biquaternion framework, a pure spin state is an **idempotent** of the Hermitian subspace $\mathbb{B}_{\Psi}$, of the form
 
 $$
-\tilde\Pi(\vec u) = \tfrac{1}{2}\left(e_t + i\vec u\right),
+\tilde\Pi_{\mathrm{id}}(\vec u) = \tfrac{1}{2}\left(e_t + i\vec u\right),
 $$
 
 where $\vec u$ is a unit pure real quaternion. The spin-up state along $z$ corresponds to
 
 $$
-\tilde\Pi_z = \tfrac{1}{2}\left(e_t + i \vec e_z\right).
+\tilde\Pi_{\mathrm{id},z} = \tfrac{1}{2}\left(e_t + i \vec e_z\right).
 $$
 
 ### Step 2: The idempotents along the measurement directions
@@ -100,7 +100,7 @@ $$
 The idempotents for the spin-up states along the two measurement directions are
 
 $$
-\tilde\Pi_{\vec u_x} = \tfrac{1}{2}\left(e_t + i\vec u_x\right), \qquad \tilde\Pi_{\vec u_y} = \tfrac{1}{2}\left(e_t + i\vec u_y\right),
+\tilde\Pi_{\mathrm{id},\vec u_x} = \tfrac{1}{2}\left(e_t + i\vec u_x\right), \qquad \tilde\Pi_{\mathrm{id},\vec u_y} = \tfrac{1}{2}\left(e_t + i\vec u_y\right),
 $$
 
 with $\vec u_x = \sin\theta_1\, \vec e_x + \cos\theta_1\, \vec e_z$ and $\vec u_y = \sin\theta_2\, \vec e_x + \cos\theta_2\, \vec e_z$ as unit pure real quaternions.
@@ -110,40 +110,40 @@ with $\vec u_x = \sin\theta_1\, \vec e_x + \cos\theta_1\, \vec e_z$ and $\vec u_
 The joint probability of the two measurements both yielding spin-up is the product of the two normalised Hermitian forms, each with its scalar reading taken last:
 
 $$
-p(+,+) = \frac{\langle\tilde\Pi_{\vec u_x},\tilde\Pi_z\rangle_{*}}{\langle\tilde\Pi_z,e_t\rangle_{*}} \cdot \frac{\langle\tilde\Pi_{\vec u_y},\tilde\Pi_{\vec u_x}\rangle_{*}}{\langle\tilde\Pi_{\vec u_x},e_t\rangle_{*}}.
+p(+,+) = \frac{\langle\tilde\Pi_{\mathrm{id},\vec u_x},\tilde\Pi_{\mathrm{id},z}\rangle_{*}}{\langle\tilde\Pi_{\mathrm{id},z},e_t\rangle_{*}} \cdot \frac{\langle\tilde\Pi_{\mathrm{id},\vec u_y},\tilde\Pi_{\mathrm{id},\vec u_x}\rangle_{*}}{\langle\tilde\Pi_{\mathrm{id},\vec u_x},e_t\rangle_{*}}.
 $$
 
 **First factor.** From Exercise: Measuring Spin Along an Arbitrary Direction, the first factor is
 
 $$
-\frac{\langle\tilde\Pi_{\vec u_x},\tilde\Pi_z\rangle_{*}}{\langle\tilde\Pi_z,e_t\rangle_{*}} = 2\,\mathrm{Sc}\!\left(\tilde\Pi_{\vec u_x} \circ \tilde\Pi_z\right) = \cos^2(\theta_1/2),
+\frac{\langle\tilde\Pi_{\mathrm{id},\vec u_x},\tilde\Pi_{\mathrm{id},z}\rangle_{*}}{\langle\tilde\Pi_{\mathrm{id},z},e_t\rangle_{*}} = 2\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{id},\vec u_x} \circ \tilde\Pi_{\mathrm{id},z}\right) = \cos^2(\theta_1/2),
 $$
 
-whose scalar-part reading is $2\,\mathrm{Sc}(\tilde\Pi_{\vec u_x}\circ\tilde\Pi_z)$.
+whose scalar-part reading is $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\vec u_x}\circ\tilde\Pi_{\mathrm{id},z})$.
 
-**Second factor.** Computing the product $\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}$,
+**Second factor.** Computing the product $\tilde\Pi_{\mathrm{id},\vec u_y} \circ \tilde\Pi_{\mathrm{id},\vec u_x}$,
 
 $$
-\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x} = \tfrac{1}{4}\left(e_t + i\vec u_y\right)\left(e_t + i\vec u_x\right) = \tfrac{1}{4}\left[e_t + i\vec u_x + i\vec u_y - \vec u_y \vec u_x\right].
+\tilde\Pi_{\mathrm{id},\vec u_y} \circ \tilde\Pi_{\mathrm{id},\vec u_x} = \tfrac{1}{4}\left(e_t + i\vec u_y\right)\left(e_t + i\vec u_x\right) = \tfrac{1}{4}\left[e_t + i\vec u_x + i\vec u_y - \vec u_y \vec u_x\right].
 $$
 
 For pure real quaternions, the product is $\vec u_y \vec u_x = -\vec u_y \cdot \vec u_x\, e_t + \vec u_y \times \vec u_x$. Substituting,
 
 $$
-\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x} = \tfrac{1}{4}\left[\bigl(1 + \vec u_y \cdot \vec u_x\bigr) e_t + i\vec u_x + i\vec u_y - \vec u_y \times \vec u_x\right].
+\tilde\Pi_{\mathrm{id},\vec u_y} \circ \tilde\Pi_{\mathrm{id},\vec u_x} = \tfrac{1}{4}\left[\bigl(1 + \vec u_y \cdot \vec u_x\bigr) e_t + i\vec u_x + i\vec u_y - \vec u_y \times \vec u_x\right].
 $$
 
 The scalar part (coefficient of $e_t$) is $\tfrac{1}{4}(1 + \vec u_y \cdot \vec u_x)$; the other terms $i\vec u_x$, $i\vec u_y$, and $\vec u_y \times \vec u_x$ are vector terms with vanishing coefficient of $e_t$. Therefore
 
 $$
-2\,\mathrm{Sc}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right) = 2 \cdot \tfrac{1}{4}\left(1 + \vec u_y \cdot \vec u_x\right) = \tfrac{1}{2}\left(1 + \vec u_y \cdot \vec u_x\right).
+2\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{id},\vec u_y} \circ \tilde\Pi_{\mathrm{id},\vec u_x}\right) = 2 \cdot \tfrac{1}{4}\left(1 + \vec u_y \cdot \vec u_x\right) = \tfrac{1}{2}\left(1 + \vec u_y \cdot \vec u_x\right).
 $$
-whose scalar-part reading is $2\,\mathrm{Sc}(\tilde\Pi_{\vec u_y}\circ\tilde\Pi_{\vec u_x})$.
+whose scalar-part reading is $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\vec u_y}\circ\tilde\Pi_{\mathrm{id},\vec u_x})$.
 
 Since both $\vec u_x$ and $\vec u_y$ lie in the $xz$-plane, the scalar product is $\vec u_y \cdot \vec u_x = \cos(\theta_2 - \theta_1)$, and the second factor is
 
 $$
-\boxed{\;2\,\mathrm{Sc}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right) = \tfrac{1}{2}\left(1 + \cos(\theta_2 - \theta_1)\right) = \cos^2\bigl((\theta_2 - \theta_1)/2\bigr)\;}.
+\boxed{\;2\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{id},\vec u_y} \circ \tilde\Pi_{\mathrm{id},\vec u_x}\right) = \tfrac{1}{2}\left(1 + \cos(\theta_2 - \theta_1)\right) = \cos^2\bigl((\theta_2 - \theta_1)/2\bigr)\;}.
 $$
 
 ### Step 4: The result
@@ -197,12 +197,12 @@ These agree with the physical expectation: a measurement along a direction $\vec
 **1. The normalised Hermitian form applies to successive measurements.** The joint probability of two successive measurements is a **product of two normalised Hermitian forms**, each read through the trace last:
 
 $$
-p(+,+) = \frac{\langle\tilde\Pi_{\vec u_x},\tilde\Pi_z\rangle_{*}}{\langle\tilde\Pi_z,e_t\rangle_{*}} \cdot \frac{\langle\tilde\Pi_{\vec u_y},\tilde\Pi_{\vec u_x}\rangle_{*}}{\langle\tilde\Pi_{\vec u_x},e_t\rangle_{*}}.
+p(+,+) = \frac{\langle\tilde\Pi_{\mathrm{id},\vec u_x},\tilde\Pi_{\mathrm{id},z}\rangle_{*}}{\langle\tilde\Pi_{\mathrm{id},z},e_t\rangle_{*}} \cdot \frac{\langle\tilde\Pi_{\mathrm{id},\vec u_y},\tilde\Pi_{\mathrm{id},\vec u_x}\rangle_{*}}{\langle\tilde\Pi_{\mathrm{id},\vec u_x},e_t\rangle_{*}}.
 $$
 
 The first factor is the Born rule for the initial measurement; the second factor is the Born rule for the conditional measurement. Both use the same Hermitian form on $\mathbb{B}_{\Psi}$, whose trace reading is the final step at normalisation.
 
-**2. Measurement is a projection onto an idempotent.** After the first measurement, the state is not the original $\tilde\Pi_z$ but the new idempotent $\tilde\Pi_{\vec u_x}$. This is the algebraic content of the "state update" or "collapse" rule. The biquaternion framework expresses this as a **change of the idempotent**: from $\tilde\Pi_z$ to $\tilde\Pi_{\vec u_x}$.
+**2. Measurement is a projection onto an idempotent.** After the first measurement, the state is not the original $\tilde\Pi_{\mathrm{id},z}$ but the new idempotent $\tilde\Pi_{\mathrm{id},\vec u_x}$. This is the algebraic content of the "state update" or "collapse" rule. The biquaternion framework expresses this as a **change of the idempotent**: from $\tilde\Pi_{\mathrm{id},z}$ to $\tilde\Pi_{\mathrm{id},\vec u_x}$.
 
 
 **4. The geometry enters through the algebra.** The angle between the measurement directions enters through the scalar product $\vec u_y \cdot \vec u_x = \cos(\theta_2 - \theta_1)$, which appears in the pairing formula through the product $\vec u_y \vec u_x$. The Bloch sphere geometry is encoded in the multiplication rules of the algebra.
@@ -238,10 +238,10 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
-| $\tilde\Pi_z = \tfrac{1}{2}(e_t + i\vec e_z)$ | Spin-up state along $z$ |
-| $\tilde\Pi_{n_k} = \tfrac{1}{2}(e_t + i\vec u_\eta)$ | Idempotent along direction $\vec u_\eta$ |
+| $\tilde\Pi_{\mathrm{id},z} = \tfrac{1}{2}(e_t + i\vec e_z)$ | Spin-up state along $z$ |
+| $\tilde\Pi_{\mathrm{id},n_k} = \tfrac{1}{2}(e_t + i\vec u_\eta)$ | Idempotent along direction $\vec u_\eta$ |
 | $\vec u_\eta = \sin\theta_\eta\,\vec e_x + \cos\theta_\eta\,\vec e_z$ | Unit vector for the $k$-th direction |
-| $2\,\mathrm{Sc}(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x})$ | Transition probability between idempotents |
+| $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\vec u_y} \circ \tilde\Pi_{\mathrm{id},\vec u_x})$ | Transition probability between idempotents |
 
 ## Further Reading
 

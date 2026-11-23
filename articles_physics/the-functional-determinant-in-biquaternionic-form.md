@@ -47,7 +47,7 @@ $$
 \qquad
 \log\det S^{(2)} = \sum_n \log\lambda_n = \mathrm{Tr}\log S^{(2)} ,
 $$
-the second equality making sense on the principal branch. The operator acts on the module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ per mode, so each $\lambda_n$ is a two-fold object: the module contributes two complex dimensions, and the determinant is taken over both.
+the second equality making sense on the principal branch. The operator acts on the module $\mathbb{B}\tilde\Pi_{\mathrm{id}}(\vec u)\cong\mathbb{C}^2$ per mode, so each $\lambda_n$ is a two-fold object: the module contributes two complex dimensions, and the determinant is taken over both.
 
 **The central case.** If $S^{(2)}=\kappa\,e_t$ is a central scalar (for instance the free kinetic operator at a given mode, $\kappa=N(\tilde Q_{\Phi})-N(\tilde P_{\Phi})=N(\tilde Q_{\Phi})+m^{2}\,c^{2}=\mathcal{M}(\tilde Q_{\Phi})$, whose Lorentzian continuation differs from the action's operator $\Box_\Phi-k_m^{2}$ only by the overall sign that the module's even dimension absorbs), then on the module it is multiplication by $\kappa$ on $\mathbb{C}^2$, and
 $$

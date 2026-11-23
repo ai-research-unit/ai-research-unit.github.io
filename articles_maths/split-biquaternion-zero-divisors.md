@@ -5,7 +5,7 @@
 
 This article studies the zero divisors of the split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$. It follows the article on split biquaternion norm and invertibility, which established the criterion for invertibility and the three-way classification of the elements of $\mathbb{B}_{\mathrm{spl}}$. The goal here is to characterize the zero divisors, to describe their structure, and to compare them with the zero divisors of the split complex algebra and of the biquaternion algebra.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{C}_{\mathrm{spl}}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$. The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding articles, together with its four conjugations, its four fixed-point subspaces, and its three decompositions. The split-biquaternion norm, its idempotent-basis form, and the reduced norm are used from *Split-Biquaternion Norm and Invertibility*.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{C}_{\mathrm{spl}}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_{\mathrm{id},2} = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$. The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding articles, together with its four conjugations, its four fixed-point subspaces, and its three decompositions. The split-biquaternion norm, its idempotent-basis form, and the reduced norm are used from *Split-Biquaternion Norm and Invertibility*.
 
 Throughout, a split biquaternion is written
 
@@ -15,13 +15,13 @@ $$
 
 The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \vec Q$, where $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_t} e_t + \bar{\vec Q}$, where $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$.
 
-The idempotents of the split complex algebra are $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
+The idempotents of the split complex algebra are $\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_{\mathrm{id},2} = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
 $$
-\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_{\mathrm{id},1} + \tilde{Q}_- \tilde\Pi_{\mathrm{id},2},
 $$
 
-with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$ ordinary quaternions.
+with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{\mathrm{id},1,2} \in \mathbb{H}$ ordinary quaternions.
 
 ## Definition and Criterion
 
@@ -45,13 +45,13 @@ $$
 \;}.
 $$
 
-**Proof.** In the idempotent basis the product is $\tilde{Q}_1 \tilde{Q}_2 = \tilde{Q}_{1+} \tilde{Q}_{2+} \tilde\Pi_1 + \tilde{Q}_{1-} \tilde{Q}_{2-} \tilde\Pi_2$, so $\tilde{Q}_1 \tilde{Q}_2 = 0$ if and only if $\tilde{Q}_{1+} \tilde{Q}_{2+} = 0$ and $\tilde{Q}_{1-} \tilde{Q}_{2-} = 0$. If $\tilde{Q}_{1+} = 0$ and $\tilde{Q}_1 \neq 0$, then $\tilde{Q}_{1-} \neq 0$, and $\tilde{Q}_2 = \tilde\Pi_1 \neq 0$ satisfies $\tilde{Q}_1 \tilde{Q}_2 = 0$, so $\tilde{Q}_1$ is a zero divisor. Conversely, if $\tilde{Q}_1 \tilde{Q}_2 = 0$ with $\tilde{Q}_2 \neq 0$, then $\tilde{Q}_{2+} \neq 0$ or $\tilde{Q}_{2-} \neq 0$; in the first case $\tilde{Q}_{1+} \tilde{Q}_{2+} = 0$ with $\tilde{Q}_{2+} \neq 0$ forces $\tilde{Q}_{1+} = 0$, since $\mathbb{H}$ is a division algebra, and in the second case $\tilde{Q}_{1-} = 0$.
+**Proof.** In the idempotent basis the product is $\tilde{Q}_1 \tilde{Q}_2 = \tilde{Q}_{1+} \tilde{Q}_{2+} \tilde\Pi_{\mathrm{id},1} + \tilde{Q}_{1-} \tilde{Q}_{2-} \tilde\Pi_{\mathrm{id},2}$, so $\tilde{Q}_1 \tilde{Q}_2 = 0$ if and only if $\tilde{Q}_{1+} \tilde{Q}_{2+} = 0$ and $\tilde{Q}_{1-} \tilde{Q}_{2-} = 0$. If $\tilde{Q}_{1+} = 0$ and $\tilde{Q}_1 \neq 0$, then $\tilde{Q}_{1-} \neq 0$, and $\tilde{Q}_2 = \tilde\Pi_{\mathrm{id},1} \neq 0$ satisfies $\tilde{Q}_1 \tilde{Q}_2 = 0$, so $\tilde{Q}_1$ is a zero divisor. Conversely, if $\tilde{Q}_1 \tilde{Q}_2 = 0$ with $\tilde{Q}_2 \neq 0$, then $\tilde{Q}_{2+} \neq 0$ or $\tilde{Q}_{2-} \neq 0$; in the first case $\tilde{Q}_{1+} \tilde{Q}_{2+} = 0$ with $\tilde{Q}_{2+} \neq 0$ forces $\tilde{Q}_{1+} = 0$, since $\mathbb{H}$ is a division algebra, and in the second case $\tilde{Q}_{1-} = 0$.
 
 **Remark.** The split-biquaternion norm is not the criterion: it is anisotropic, so $\langle\tilde{Q}\rangle_{\natural} = 0$ forces $\tilde{Q} = 0$ (this is proved in *Split-Biquaternion Norm and Invertibility*). The zero divisor condition is **linear** in the idempotent basis.
 
 ### The Criterion in the Idempotent Basis
 
-In the idempotent basis the criterion is simply the vanishing of one component. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ with $\tilde{Q}_\pm \in \mathbb{H}$,
+In the idempotent basis the criterion is simply the vanishing of one component. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_{\mathrm{id},1} + \tilde{Q}_- \tilde\Pi_{\mathrm{id},2}$ with $\tilde{Q}_\pm \in \mathbb{H}$,
 
 $$
 \tilde{Q} \text{ is a zero divisor} \iff \tilde{Q} \neq 0 \text{ and } (\tilde{Q}_+ = 0 \text{ or } \tilde{Q}_- = 0).
@@ -77,7 +77,7 @@ $$
 
 Each of these is a **four-dimensional real linear subspace** of $\mathbb{B}_{\mathrm{spl}}$.
 
-**$Z_+$.** An element of $Z_+$ satisfies $\tilde{Q} \tilde\Pi_1 = 0$, i.e., $\tilde{Q}(1 + j) = 0$. Writing $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu \in \mathbb{C}_{\mathrm{spl}}$, the condition is that each coefficient $Q_\mu$ is a split complex multiple of $1 - j$. Since the ideal generated by $1 - j$ in $\mathbb{C}_{\mathrm{spl}}$ is the one-dimensional real subspace $\mathbb{R}(1 - j)$, the condition is
+**$Z_+$.** An element of $Z_+$ satisfies $\tilde{Q} \tilde\Pi_{\mathrm{id},1} = 0$, i.e., $\tilde{Q}(1 + j) = 0$. Writing $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu \in \mathbb{C}_{\mathrm{spl}}$, the condition is that each coefficient $Q_\mu$ is a split complex multiple of $1 - j$. Since the ideal generated by $1 - j$ in $\mathbb{C}_{\mathrm{spl}}$ is the one-dimensional real subspace $\mathbb{R}(1 - j)$, the condition is
 
 $$
 Q_\mu = t_\mu (1 - j), \qquad t_\mu \in \mathbb{R}.
@@ -85,7 +85,7 @@ $$
 
 There are four real parameters $t_0, t_1, t_2, t_3$, so $Z_+$ is four-dimensional. It is isomorphic to $\mathbb{H}$ via the map $\tilde{Q} \mapsto (t_0, t_1, t_2, t_3)$.
 
-**$Z_-$.** An element of $Z_-$ satisfies $\tilde{Q} \tilde\Pi_2 = 0$, i.e., $\tilde{Q}(1 - j) = 0$. The condition is that each coefficient $Q_\mu$ is a split complex multiple of $1 + j$:
+**$Z_-$.** An element of $Z_-$ satisfies $\tilde{Q} \tilde\Pi_{\mathrm{id},2} = 0$, i.e., $\tilde{Q}(1 - j) = 0$. The condition is that each coefficient $Q_\mu$ is a split complex multiple of $1 + j$:
 
 $$
 Q_\mu = s_\mu (1 + j), \qquad s_\mu \in \mathbb{R}.
@@ -203,7 +203,7 @@ In $\mathbb{B}$, the zero divisors split into nilpotents (pure case) and complex
 Indeed, if $\tilde{Q} \in Z_+$ with $\tilde{Q} \neq 0$, then $\tilde{Q}_+ = 0$ and $\tilde{Q}_- \neq 0$, so
 
 $$
-\tilde{Q}^2 = \tilde{Q}_-^2 \tilde\Pi_2,
+\tilde{Q}^2 = \tilde{Q}_-^2 \tilde\Pi_{\mathrm{id},2},
 $$
 
 which is nonzero because $\tilde{Q}_- \neq 0$ and $\mathbb{H}$ is a division algebra. So $\tilde{Q}^2 \neq 0$, and $\tilde{Q}$ is not nilpotent.
@@ -259,14 +259,14 @@ In all cases, the zero divisors lie in the two subspaces $Z_+$ and $Z_-$, and th
 
 Each of $Z_+$ and $Z_-$ is a **left ideal** and a **right ideal** of $\mathbb{B}_{\mathrm{spl}}$. Indeed:
 
-- If $\tilde{Q}_1 \in Z_+$ and $\tilde{Q}_2 \in \mathbb{B}_{\mathrm{spl}}$, then $(\tilde{Q}_1 \tilde{Q}_2) \tilde\Pi_1 = \tilde{Q}_1 (\tilde{Q}_2 \tilde\Pi_1) = \tilde{Q}_1 \tilde\Pi_1 \tilde{Q}_{2+} = 0 \cdot \tilde{Q}_{2+} = 0$, so $\tilde{Q}_1 \tilde{Q}_2 \in Z_+$. So $Z_+$ is a right ideal.
-- Similarly, $(\tilde{Q}_2 \tilde{Q}_1) \tilde\Pi_1 = \tilde{Q}_2 (\tilde{Q}_1 \tilde\Pi_1) = 0$, so $\tilde{Q}_2 \tilde{Q}_1 \in Z_+$. So $Z_+$ is a left ideal.
+- If $\tilde{Q}_1 \in Z_+$ and $\tilde{Q}_2 \in \mathbb{B}_{\mathrm{spl}}$, then $(\tilde{Q}_1 \tilde{Q}_2) \tilde\Pi_{\mathrm{id},1} = \tilde{Q}_1 (\tilde{Q}_2 \tilde\Pi_{\mathrm{id},1}) = \tilde{Q}_1 \tilde\Pi_{\mathrm{id},1} \tilde{Q}_{2+} = 0 \cdot \tilde{Q}_{2+} = 0$, so $\tilde{Q}_1 \tilde{Q}_2 \in Z_+$. So $Z_+$ is a right ideal.
+- Similarly, $(\tilde{Q}_2 \tilde{Q}_1) \tilde\Pi_{\mathrm{id},1} = \tilde{Q}_2 (\tilde{Q}_1 \tilde\Pi_{\mathrm{id},1}) = 0$, so $\tilde{Q}_2 \tilde{Q}_1 \in Z_+$. So $Z_+$ is a left ideal.
 
-So $Z_+$ and $Z_-$ are two-sided ideals of $\mathbb{B}_{\mathrm{spl}}$. This is the algebraic content of the idempotent decomposition: the two ideals $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$ are the two summands of the semisimple algebra.
+So $Z_+$ and $Z_-$ are two-sided ideals of $\mathbb{B}_{\mathrm{spl}}$. This is the algebraic content of the idempotent decomposition: the two ideals $\mathbb{H} \tilde\Pi_{\mathrm{id},1}$ and $\mathbb{H} \tilde\Pi_{\mathrm{id},2}$ are the two summands of the semisimple algebra.
 
 ### The Idempotents
 
-The idempotents of $\mathbb{B}_{\mathrm{spl}}$ are the elements $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$. In the idempotent basis, an element $\tilde Q = \tilde Q_+ \tilde\Pi_1 + \tilde Q_- \tilde\Pi_2$ is idempotent if and only if
+The idempotents of $\mathbb{B}_{\mathrm{spl}}$ are the elements $\tilde\Pi_{\mathrm{id}}$ with $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$. In the idempotent basis, an element $\tilde Q = \tilde Q_+ \tilde\Pi_{\mathrm{id},1} + \tilde Q_- \tilde\Pi_{\mathrm{id},2}$ is idempotent if and only if
 
 $$
 \tilde Q_+^2 = \tilde Q_+, \qquad \tilde Q_-^2 = \tilde Q_-.
@@ -275,19 +275,19 @@ $$
 In the quaternion algebra $\mathbb{H}$, the idempotents are only $0$ and $1$. So the idempotents of $\mathbb{B}_{\mathrm{spl}}$ are the four elements
 
 $$
-0, \qquad \tilde\Pi_1, \qquad \tilde\Pi_2, \qquad \tilde\Pi_1 + \tilde\Pi_2 = 1.
+0, \qquad \tilde\Pi_{\mathrm{id},1}, \qquad \tilde\Pi_{\mathrm{id},2}, \qquad \tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2} = 1.
 $$
 
-These are the only idempotents. The two nontrivial idempotents $\tilde\Pi_1$ and $\tilde\Pi_2$ are the ones associated with the two ideals $Z_-$ and $Z_+$ respectively (note the reversal: $\tilde\Pi_1$ is annihilated by $Z_+$, i.e., $\tilde\Pi_1 \in Z_-$).
+These are the only idempotents. The two nontrivial idempotents $\tilde\Pi_{\mathrm{id},1}$ and $\tilde\Pi_{\mathrm{id},2}$ are the ones associated with the two ideals $Z_-$ and $Z_+$ respectively (note the reversal: $\tilde\Pi_{\mathrm{id},1}$ is annihilated by $Z_+$, i.e., $\tilde\Pi_{\mathrm{id},1} \in Z_-$).
 
-Each of the idempotents $\tilde\Pi_1$ and $\tilde\Pi_2$ is a zero divisor, because $\tilde\Pi_1 \tilde\Pi_2 = 0$ with both $\tilde\Pi_1$ and $\tilde\Pi_2$ nonzero.
+Each of the idempotents $\tilde\Pi_{\mathrm{id},1}$ and $\tilde\Pi_{\mathrm{id},2}$ is a zero divisor, because $\tilde\Pi_{\mathrm{id},1} \tilde\Pi_{\mathrm{id},2} = 0$ with both $\tilde\Pi_{\mathrm{id},1}$ and $\tilde\Pi_{\mathrm{id},2}$ nonzero.
 
 ### The Annihilators
 
 For an element $\tilde{Q}_1 \in Z_+$ (i.e., $\tilde{Q}_{1+} = 0$), the left annihilator is
 
 $$
-\{\tilde{Q}_2 : \tilde{Q}_2 \tilde{Q}_1 = 0\} = \{\tilde{Q}_2 : \tilde{Q}_2 \tilde{Q}_{1-} \tilde\Pi_2 = 0\} = \{\tilde{Q}_2 : \tilde{Q}_{2-} \tilde{Q}_{1-} = 0\}.
+\{\tilde{Q}_2 : \tilde{Q}_2 \tilde{Q}_1 = 0\} = \{\tilde{Q}_2 : \tilde{Q}_2 \tilde{Q}_{1-} \tilde\Pi_{\mathrm{id},2} = 0\} = \{\tilde{Q}_2 : \tilde{Q}_{2-} \tilde{Q}_{1-} = 0\}.
 $$
 
 Since $\mathbb{H}$ is a division algebra and $\tilde{Q}_{1-} \neq 0$ (unless $\tilde{Q}_1 = 0$), the condition is $\tilde{Q}_{2-} = 0$, i.e., $\tilde{Q}_2 \in Z_-$. So the left annihilator of a nonzero element of $Z_+$ is $Z_-$ itself.
@@ -295,12 +295,12 @@ Since $\mathbb{H}$ is a division algebra and $\tilde{Q}_{1-} \neq 0$ (unless $\t
 Similarly, the right annihilator of a nonzero element of $Z_+$ is $Z_-$. If $\tilde{Q}_1 \in Z_+$ with $\tilde{Q}_1 \neq 0$, then $\tilde{Q}_{1+} = 0$ and $\tilde{Q}_{1-} \neq 0$, and the product $\tilde{Q}_1 \tilde{Q}_2$ in the idempotent basis is
 
 $$
-\tilde{Q}_1 \tilde{Q}_2 = \tilde{Q}_{1+} \tilde{Q}_{2+} \tilde\Pi_1 + \tilde{Q}_{1-} \tilde{Q}_{2-} \tilde\Pi_2 = \tilde{Q}_{1-} \tilde{Q}_{2-} \tilde\Pi_2.
+\tilde{Q}_1 \tilde{Q}_2 = \tilde{Q}_{1+} \tilde{Q}_{2+} \tilde\Pi_{\mathrm{id},1} + \tilde{Q}_{1-} \tilde{Q}_{2-} \tilde\Pi_{\mathrm{id},2} = \tilde{Q}_{1-} \tilde{Q}_{2-} \tilde\Pi_{\mathrm{id},2}.
 $$
 
 So $\tilde{Q}_1 \tilde{Q}_2 = 0$ if and only if $\tilde{Q}_{1-} \tilde{Q}_{2-} = 0$, which (since $\mathbb{H}$ is a division algebra and $\tilde{Q}_{1-} \neq 0$) is equivalent to $\tilde{Q}_{2-} = 0$, i.e., $\tilde{Q}_2 \in Z_-$.
 
-So the annihilator of a nonzero element of $Z_+$ is $Z_-$ on both sides: the two annihilators agree, and they are the other component of the zero divisor set, not the component containing the element. Indeed $\tilde\Pi_1 \in Z_-$ annihilates every element of $Z_+$, while the elements of $Z_+$ do not annihilate one another.
+So the annihilator of a nonzero element of $Z_+$ is $Z_-$ on both sides: the two annihilators agree, and they are the other component of the zero divisor set, not the component containing the element. Indeed $\tilde\Pi_{\mathrm{id},1} \in Z_-$ annihilates every element of $Z_+$, while the elements of $Z_+$ do not annihilate one another.
 
 By symmetry, the annihilator of a nonzero element of $Z_-$ is $Z_+$ on both sides.
 
@@ -310,7 +310,7 @@ The union $Z_+ \cup Z_-$ is a real algebraic variety: it is the union of the two
 
 ### The Set Is Not Defined by the Split-Biquaternion Norm
 
-The zero divisor set is not detected by the split-biquaternion norm: the split-biquaternion norm $\langle\cdot\rangle_{\natural}$ is anisotropic, so $\langle\tilde{Q}\rangle_{\natural} = 0$ forces $\tilde{Q} = 0$ and the zero divisor set is not the null set of $\langle\cdot\rangle_{\natural}$. The reason is that $\langle\cdot\rangle_{\natural}$ takes values in $\mathbb{C}_{\mathrm{spl}}$, which is not a field: the element $\tilde{Q} = \tilde\Pi_1$ has $\langle\tilde{Q}\rangle_{\natural} = \tilde\Pi_1$, a nonzero zero divisor of $\mathbb{C}_{\mathrm{spl}}$, yet $\tilde{Q}\tilde\Pi_2 = 0$ makes $\tilde{Q}$ a zero divisor of $\mathbb{B}_{\mathrm{spl}}$. The defining form of the set, the reduced norm, and the proof of the anisotropy are in *Split-Biquaternion Norm and Invertibility*.
+The zero divisor set is not detected by the split-biquaternion norm: the split-biquaternion norm $\langle\cdot\rangle_{\natural}$ is anisotropic, so $\langle\tilde{Q}\rangle_{\natural} = 0$ forces $\tilde{Q} = 0$ and the zero divisor set is not the null set of $\langle\cdot\rangle_{\natural}$. The reason is that $\langle\cdot\rangle_{\natural}$ takes values in $\mathbb{C}_{\mathrm{spl}}$, which is not a field: the element $\tilde{Q} = \tilde\Pi_{\mathrm{id},1}$ has $\langle\tilde{Q}\rangle_{\natural} = \tilde\Pi_{\mathrm{id},1}$, a nonzero zero divisor of $\mathbb{C}_{\mathrm{spl}}$, yet $\tilde{Q}\tilde\Pi_{\mathrm{id},2} = 0$ makes $\tilde{Q}$ a zero divisor of $\mathbb{B}_{\mathrm{spl}}$. The defining form of the set, the reduced norm, and the proof of the anisotropy are in *Split-Biquaternion Norm and Invertibility*.
 
 ### The Set Is Not a Quadric
 
@@ -322,7 +322,7 @@ The zero divisors of the split biquaternion algebra are the nonzero elements wit
 $$
 \tilde{Q} \text{ is a zero divisor} \iff \tilde{Q} \neq 0 \text{ and } (\tilde{Q}_+ = 0 \text{ or } \tilde{Q}_- = 0).
 $$
-The condition is **linear** in the idempotent basis, and the zero divisor set is the union of the two four-dimensional real subspaces $Z_+$ and $Z_-$, which meet only at the origin. Each is a two-sided ideal of $\mathbb{B}_{\mathrm{spl}}$, and the annihilator of a nonzero element of one component is the other component on both sides. The only idempotents are $0$, $\tilde\Pi_1$, $\tilde\Pi_2$, and $e_t$; the two nontrivial ones are zero divisors, and there are no nonzero nilpotents.
+The condition is **linear** in the idempotent basis, and the zero divisor set is the union of the two four-dimensional real subspaces $Z_+$ and $Z_-$, which meet only at the origin. Each is a two-sided ideal of $\mathbb{B}_{\mathrm{spl}}$, and the annihilator of a nonzero element of one component is the other component on both sides. The only idempotents are $0$, $\tilde\Pi_{\mathrm{id},1}$, $\tilde\Pi_{\mathrm{id},2}$, and $e_t$; the two nontrivial ones are zero divisors, and there are no nonzero nilpotents.
 
 The criterion is not the vanishing of the split-biquaternion norm. The split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ is anisotropic, so it vanishes only at the origin and does not detect the zero divisors; the detecting quantity is the **reduced norm**
 $$
@@ -339,9 +339,9 @@ The union $Z_+ \cup Z_-$ is a reducible real algebraic variety with two irreduci
 | $\mathbb{B}_{\mathrm{spl}}$ | Split biquaternion algebra |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | General split biquaternion |
 | $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient |
-| $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
-| $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
-| $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ | Idempotent decomposition |
+| $\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
+| $\tilde\Pi_{\mathrm{id},2} = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
+| $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_{\mathrm{id},1} + \tilde{Q}_- \tilde\Pi_{\mathrm{id},2}$ | Idempotent decomposition |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Split-Biquaternion norm |
 | $\langle\tilde{Q}_\pm\rangle_{\natural}$ | Ordinary quaternion norm of an idempotent component |
 | $\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$ | Reduced norm |

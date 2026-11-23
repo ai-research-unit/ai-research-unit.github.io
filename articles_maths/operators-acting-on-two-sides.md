@@ -149,7 +149,7 @@ In particular every complex-linear operator of $\mathbb{B}$ is a finite sum of t
 **The algebra's matrix units.** In the Peirce frame, write
 
 $$
-U_{11}=\tilde\Pi_+,\qquad U_{12}=\vec\Upsilon_-,\qquad U_{21}=\vec\Upsilon_+,\qquad U_{22}=\tilde\Pi_- .
+U_{11}=\tilde\Pi_{\mathrm{id},+},\qquad U_{12}=\vec\Pi_{\mathrm{nil},-},\qquad U_{21}=\vec\Pi_{\mathrm{nil},+},\qquad U_{22}=\tilde\Pi_{\mathrm{id},-} .
 $$
 
 The four elements satisfy
@@ -158,7 +158,7 @@ $$
 U_{ij}U_{kl}=\delta_{jk}U_{il},
 $$
 
-the multiplication table of the matrix units of $M_2(\mathbb{C})$, by *The Polarized Module of the Biquaternion Algebra*, §*Systems of Matrix Units*. The order of the indices is the matrix order: the first index is the row, the second the column, and $U_{12}=\vec\Upsilon_-$ and $U_{21}=\vec\Upsilon_+$ are the two mixed units in that order.
+the multiplication table of the matrix units of $M_2(\mathbb{C})$, by *The Polarized Module of the Biquaternion Algebra*, §*Systems of Matrix Units*. The order of the indices is the matrix order: the first index is the row, the second the column, and $U_{12}=\vec\Pi_{\mathrm{nil},-}$ and $U_{21}=\vec\Pi_{\mathrm{nil},+}$ are the two mixed units in that order.
 
 **The elementary operators.** For fixed $i,j,k,l$, the operator $U_{ij}[\,]U_{kl}$ acts on the basis element $U_{mn}$ by
 

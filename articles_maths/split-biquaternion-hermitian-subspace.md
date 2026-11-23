@@ -148,7 +148,7 @@ So the isotropic cone of the Hermitian form is **not** the zero divisor set: eve
 
 **Proof.** Let $\tilde{Q} = q_t e_t + j\vec q$ satisfy $\tilde{Q}^2 = \tilde{Q}$. Comparing with the square formula, $2 q_t \vec q = \vec q$ and $q_t^2 - |\vec q|^2 = q_t$. If $\vec q = 0$, then $q_t \in \{0, 1\}$. If $\vec q \neq 0$, then $q_t = \tfrac{1}{2}$ and $q_t^2 - |\vec q|^2 = q_t$ gives $|\vec q|^2 = -\tfrac{1}{4}$, impossible.
 
-The nontrivial idempotents $\tilde\Pi_1$ and $\tilde\Pi_2$ of $\mathbb{B}_{\mathrm{spl}}$ are **not** Hermitian, since $\tilde\Pi_1^{*} = \tilde\Pi_2$; they lie in the split complex subspace, not in $\mathbb{B}_{\Psi}$. This is the opposite of the biquaternion situation, where the nontrivial idempotents are Hermitian and lie in $\mathbb{B}_{\Psi}$; the reason is again that there is no central scalar imaginary here.
+The nontrivial idempotents $\tilde\Pi_{\mathrm{id},1}$ and $\tilde\Pi_{\mathrm{id},2}$ of $\mathbb{B}_{\mathrm{spl}}$ are **not** Hermitian, since $\tilde\Pi_{\mathrm{id},1}^{*} = \tilde\Pi_{\mathrm{id},2}$; they lie in the split complex subspace, not in $\mathbb{B}_{\Psi}$. This is the opposite of the biquaternion situation, where the nontrivial idempotents are Hermitian and lie in $\mathbb{B}_{\Psi}$; the reason is again that there is no central scalar imaginary here.
 
 ## The Image in the Two Halves
 

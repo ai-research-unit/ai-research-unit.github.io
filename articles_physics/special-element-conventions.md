@@ -29,11 +29,26 @@ The phase gate of the gate articles is a rotation about $\vec e_z$, a non-centra
 
 ## The Special Elements: Root, Idempotent and Nilpotent
 
-The special glyphs are notational. A root $\tilde{Ζ}$, an idempotent $\tilde\Pi$ or a nilpotent $\tilde\nu$ is not a different kind of object from a generic $\tilde Q$: the glyph records what the element is known to be, at the point of use.
+The special glyphs are notational. A root $\tilde{Ζ}$, an idempotent $\tilde\Pi_{\mathrm{id}}$ or a nilpotent $\tilde\pi_{\mathrm{nil}}$ is not a different kind of object from a generic $\tilde Q$: the glyph records what the element is known to be, at the point of use.
+
+### The Potent Tag
+
+The idempotent and the nilpotent are the two ends of one Peirce structure, and the tag says which end. The **potent family** is the idempotents and the nilpotents together, and a member carries its kind as the first word of its subscript: $\mathrm{id}$ for the idempotent, $\mathrm{nil}$ for the nilpotent. The case and the accent stay the letter's, as §*The Idempotent Convention* and §*The Nilpotent Convention* fix them: the tilde marks the quaternion and biquaternion layers and nobody else, the capital marks the algebras with a complex or quaternionic factor, and the tilde-free layers write the plain capital.
+
+| layer | idempotent | nilpotent |
+|---|---|---|
+| $\mathbb{B}$, $\mathbb{B}_{\mathrm{spl}}$ | $\tilde\Pi_{\mathrm{id}}$ | $\tilde\Pi_{\mathrm{nil}}$ |
+| $\mathbb{H}$, $\mathbb{H}_{\mathrm{spl}}$ | $\tilde\pi_{\mathrm{id}}$ | $\tilde\pi_{\mathrm{nil}}$ |
+| $\mathbb{C}$, $\mathbb{C}_{\mathrm{dln}}$ | $\Pi_{\mathrm{id}}$ | $\Pi_{\mathrm{nil}}$ |
+| $\mathbb{C}_{\mathrm{spl}}$, reduced $\mathbb{B}$ | $\Pi_{\mathrm{id},\pm}$ | $\Pi_{\mathrm{nil}}$ |
+
+The tilde is the mark of the quaternion and biquaternion layers and it is written nowhere else. The complex, split-complex and dual layers carry the plain capital in both kinds, $\Pi_{\mathrm{id}}$ and $\Pi_{\mathrm{nil}}$, and the reduced biquaternion layer writes the plain capital with the sign pair, $\Pi_{\mathrm{id},\pm}$ and $\Pi_{\mathrm{nil}}$. The capital separates the nilpotent of those layers from the lower-case nilpotent of the quaternion layers, and the prose names the layer; the tilde never does that work on a tilde-free layer.
+
+The **roots are outside the family** in this pass and keep the glyphs of §*The Root Convention*. A pure member carries the arrow and no tilde, by §*The Centre and the Vector Subspace* of *Algebra and Element Conventions*, so the pure nilpotent is $\vec\Pi_{\mathrm{nil}}$ or $\vec\pi_{\mathrm{nil}}$; an idempotent has no pure form, and no arrowed idempotent exists. The subscript is read sector, kind, sign, index, so a member of a sign pair is $\tilde\Pi_{\mathrm{id},+}$ and a numbered member is $\tilde\Pi_{\mathrm{id},1}$, and a role label in upright roman is merged with the kind, $\tilde\Pi_{\mathrm{id,sym}}$.
 
 ### The Root Convention
 
-The roots carry a symbol of their own, beside the idempotent $\tilde{\Pi}$ (§*The Idempotent Convention*) and the nilpotent $\tilde{\nu}$ (§*The Nilpotent Convention*): the **root glyph**, in the two cases.
+The roots carry a symbol of their own, beside the idempotent $\tilde\Pi_{\mathrm{id}}$ (§*The Idempotent Convention*) and the nilpotent $\tilde\pi_{\mathrm{nil}}$ (§*The Nilpotent Convention*): the **root glyph**, in the two cases.
 
 A **root of $1$** of the algebra is an element $\tilde{Ζ}$ with $\tilde{Ζ}^2 = 1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde{Ζ}^2 = \lambda e_t$. The roots of the three central values $-1, 0, +1$ are those of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general root is that of *The Square Roots of a General Element in the Biquaternion Algebra*; the roots the series uses are the roots of $1$.
 
@@ -60,55 +75,55 @@ The root glyph is therefore split by the case rule, and the split is the reason 
 
 The convention of *The Elements and their Coefficients* fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the series uses it throughout.
 
-An **idempotent** of the algebra is an element $\tilde{\Pi}$ with $\tilde{\Pi}^2 = \tilde{\Pi}$. An idempotent fixed by the star, $\tilde{\Pi}^{*} = \tilde{\Pi}$, is a **Hermitian idempotent**, and the rank-one Hermitian idempotents of $\mathbb{B}_{\Psi}$ are the **pure states** of the informational sector.
+An **idempotent** of the algebra is an element $\tilde\Pi_{\mathrm{id}}$ with $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$. An idempotent fixed by the star, $\tilde\Pi_{\mathrm{id}}^{*} = \tilde\Pi_{\mathrm{id}}$, is a **Hermitian idempotent**, and the rank-one Hermitian idempotents of $\mathbb{B}_{\Psi}$ are the **pure states** of the informational sector.
 
-The case rule splits the glyph, as it does in the mathematical corpus. The idempotents of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde{\Pi}$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde{\pi}$; those of the complex and dual layers carry the plain capital, $\Pi$, no tilde being written where there is no quaternionic factor; those of the split-complex and reduced biquaternion layers write the complete pair with the signs, $\Pi_\pm$. The series works in $\mathbb{B}$ and writes $\tilde{\Pi}$ throughout; the other glyphs are the mathematical corpus's, and the layer fixes the glyph.
+The case rule splits the glyph, as it does in the mathematical corpus. The idempotents of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde\Pi_{\mathrm{id}}$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde\pi_{\mathrm{id}}$; those of the complex and dual layers carry the plain capital, $\Pi_{\mathrm{id}}$, no tilde being written where there is no quaternionic factor; those of the split-complex and reduced biquaternion layers write the complete pair with the signs, $\Pi_{\mathrm{id},\pm}$. The series works in $\mathbb{B}$ and writes $\tilde\Pi_{\mathrm{id}}$ throughout; the other glyphs are the mathematical corpus's, and the layer fixes the glyph.
 
-A non-zero idempotent $\tilde{\Pi}$ generates the **minimal left ideal** $\mathbb{B}\tilde{\Pi}$, which is the state module of the companion articles; the standard pair, the classification of the idempotents, the polarisation identity, the Peirce decomposition, the matrix units and the projective geometry of the pure states are those of *The Square Roots of One and the Idempotents of the Biquaternion Algebra* and its companions in the mathematical corpus.
+A non-zero idempotent $\tilde\Pi_{\mathrm{id}}$ generates the **minimal left ideal** $\mathbb{B}\tilde\Pi_{\mathrm{id}}$, which is the state module of the companion articles; the standard pair, the classification of the idempotents, the polarisation identity, the Peirce decomposition, the matrix units and the projective geometry of the pure states are those of *The Square Roots of One and the Idempotents of the Biquaternion Algebra* and its companions in the mathematical corpus.
 
-The coordinates carry the letter of the idempotent: in $\mathbb{B}$ the idempotent is $\tilde{\Pi} = \Pi_te_t + \Pi_x\vec e_x + \Pi_y\vec e_y + \Pi_z\vec e_z$ with $\Pi_\mu = \pi_\mu + i\pi'_\mu$, its scalar part $\Pi_t$ and its vector part $\vec\Pi = \vec\pi + i\vec\pi'$; in $\mathbb{H}$ it is $\tilde\pi = \pi_te_t + \pi_x\vec e_x + \pi_y\vec e_y + \pi_z\vec e_z$ with real $\pi_\mu$.
+The coordinates carry the letter of the idempotent: in $\mathbb{B}$ the idempotent is $\tilde\Pi_{\mathrm{id}} = \Pi_{\mathrm{id},t}e_t + \Pi_{\mathrm{id},x}\vec e_x + \Pi_{\mathrm{id},y}\vec e_y + \Pi_{\mathrm{id},z}\vec e_z$ with $\Pi_{\mathrm{id},\mu} = \pi_{\mathrm{id},\mu} + i\pi'_{\mathrm{id},\mu}$, its scalar part $\Pi_{\mathrm{id},t}$ and its vector part $\vec\Pi = \vec\pi + i\vec\pi'$, the untagged arrow of a coordinate vector and not an element; in $\mathbb{H}$ it is $\tilde\pi_{\mathrm{id}} = \pi_{\mathrm{id},t}e_t + \pi_{\mathrm{id},x}\vec e_x + \pi_{\mathrm{id},y}\vec e_y + \pi_{\mathrm{id},z}\vec e_z$ with real $\pi_{\mathrm{id},\mu}$.
 
-It is allowed to add subscripts when several idempotents are used. The subscript of an idempotent is numeric when it counts and a role label when it names, but for the two members of a complete sign pair. A pair is $\tilde{\Pi}_1, \tilde{\Pi}_2$; a second pair in the same statement takes the next numbers, $\tilde{\Pi}_3, \tilde{\Pi}_4$; and a family indexed by a direction is written with its argument, $\tilde{\Pi}_{1,2}(\vec u)$. When a pair is complete, $\tilde{\Pi}_+ + \tilde{\Pi}_- = e_t$, its two members may be written $\tilde{\Pi}_+$ and $\tilde{\Pi}_-$: the subscript $+$ names the member attached to $+1$ and the subscript $-$ the member attached to $-1$. A pair that is not complete may be numbered, labelled or signed as the statement requires. A role label is written in upright roman, as for a unit element.
+It is allowed to add subscripts when several idempotents are used. The subscript of an idempotent is numeric when it counts and a role label when it names, but for the two members of a complete sign pair. A pair is $\tilde\Pi_{\mathrm{id},1}, \tilde\Pi_{\mathrm{id},2}$; a second pair in the same statement takes the next numbers, $\tilde\Pi_{\mathrm{id},3}, \tilde\Pi_{\mathrm{id},4}$; and a family indexed by a direction is written with its argument, $\tilde\Pi_{\mathrm{id},1,2}(\vec u)$. When a pair is complete, $\tilde\Pi_{\mathrm{id},+} + \tilde\Pi_{\mathrm{id},-} = e_t$, its two members may be written $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$: the subscript $+$ names the member attached to $+1$ and the subscript $-$ the member attached to $-1$. A pair that is not complete may be numbered, labelled or signed as the statement requires. A role label is written in upright roman, as for a unit element.
 
 The idempotent glyph is therefore split by the case rule, and the split is the reason the convention is stated:
 
 | Symbol | Role |
 |---|---|
-| $\Pi$ | An idempotent of the complex or dual layer, where no tilde is written |
-| $\Pi_\pm$ | A complete sign pair of idempotents of the split-complex or reduced biquaternion layer, where no tilde is written |
-| $\tilde{\pi}$ | An idempotent of the quaternion or split-quaternion layer, in the mathematical corpus |
-| $\tilde{\Pi}$ | An idempotent or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde{\Pi}$ it generates |
+| $\Pi_{\mathrm{id}}$ | An idempotent of the complex or dual layer, where no tilde is written |
+| $\Pi_{\mathrm{id},\pm}$ | A complete sign pair of idempotents of the split-complex or reduced biquaternion layer, where no tilde is written |
+| $\tilde\pi_{\mathrm{id}}$ | An idempotent of the quaternion or split-quaternion layer, in the mathematical corpus |
+| $\tilde\Pi_{\mathrm{id}}$ | An idempotent or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ it generates |
 
 ### The Nilpotent Convention
 
-The nilpotents carry a symbol of their own, beside the idempotent $\tilde{\Pi}$ (§*The Idempotent Convention*): the lower-case $\tilde{\nu}$ of the quaternion and split-quaternion layers and the upper-case $\tilde{\Upsilon}$ of the biquaternion and split-biquaternion layers. **The capital is an upsilon and not a $Y$.**
+The nilpotents carry a symbol of their own, beside the idempotent $\tilde\Pi_{\mathrm{id}}$ (§*The Idempotent Convention*): the lower-case $\tilde\pi_{\mathrm{nil}}$ of the quaternion and split-quaternion layers and the upper-case $\tilde\Pi_{\mathrm{nil}}$ of the biquaternion and split-biquaternion layers. The two cases are the two layers of the potent family, and the kind is carried by the tag of §*The Potent Tag*.
 
-A **nilpotent** of the algebra is an element $\tilde{\nu}$ whose square vanishes,
+A **nilpotent** of the algebra is an element $\tilde\pi_{\mathrm{nil}}$ whose square vanishes,
 
 $$
-\tilde{\nu}^2 = 0 .
+\tilde\pi_{\mathrm{nil}}^2 = 0 .
 $$
 
-**The square is read in a named product**, the algebra product unless the statement names another, as in the mathematical corpus (*Special Element and Peirce Conventions*, §*The Nilpotent Convention*), and the class is relative to the product. A nilpotent is never a Hermitian idempotent, a Hermitian nilpotent being zero, and it is never a state; the nilpotent is the partner of the idempotent in a minimal left ideal, $\mathbb{B}\vec{\Upsilon}_2 = \mathbb{B}\tilde{\Pi}_1$.
+**The square is read in a named product**, the algebra product unless the statement names another, as in the mathematical corpus (*Special Element and Peirce Conventions*, §*The Nilpotent Convention*), and the class is relative to the product. A nilpotent is never a Hermitian idempotent, a Hermitian nilpotent being zero, and it is never a state; the nilpotent is the partner of the idempotent in a minimal left ideal, $\mathbb{B}\vec\Pi_{\mathrm{nil},2} = \mathbb{B}\tilde\Pi_{\mathrm{id},1}$.
 
-The coordinates carry the letter of the nilpotent: in $\mathbb{B}$ the nilpotent is $\tilde{\Upsilon} = \Upsilon_te_t + \Upsilon_x\vec e_x + \Upsilon_y\vec e_y + \Upsilon_z\vec e_z$ with $\Upsilon_\mu = \nu_\mu + i\nu'_\mu$, its scalar part $\Upsilon_t$ and its vector part $\vec\Upsilon = \vec\nu + i\vec\nu'$; in $\mathbb{H}$ it is $\tilde\nu = \nu_te_t + \nu_x\vec e_x + \nu_y\vec e_y + \nu_z\vec e_z$ with real $\nu_\mu$.
+The coordinates carry the letter of the nilpotent: in $\mathbb{B}$ the nilpotent is $\tilde\Pi_{\mathrm{nil}} = \Pi_{\mathrm{nil},t}e_t + \Pi_{\mathrm{nil},x}\vec e_x + \Pi_{\mathrm{nil},y}\vec e_y + \Pi_{\mathrm{nil},z}\vec e_z$ with $\Pi_{\mathrm{nil},\mu} = \pi_{\mathrm{nil},\mu} + i\pi'_{\mathrm{nil},\mu}$, its scalar part $\Pi_{\mathrm{nil},t}$ and its vector part $\vec\Pi_{\mathrm{nil}} = \vec\pi_{\mathrm{nil}} + i\vec\pi_{\mathrm{nil}}'$; in $\mathbb{H}$ it is $\tilde\pi_{\mathrm{nil}} = \pi_{\mathrm{nil},t}e_t + \pi_{\mathrm{nil},x}\vec e_x + \pi_{\mathrm{nil},y}\vec e_y + \pi_{\mathrm{nil},z}\vec e_z$ with real $\pi_{\mathrm{nil},\mu}$.
 
-It is allowed to add subscripts when several nilpotents are used. The subscript of a nilpotent is numeric when it counts and a role label when it names, as for the idempotents apart from their complete sign pair: where more than one occurs a pair is $\tilde{\nu}_1, \tilde{\nu}_2$, a second pair in the same statement takes the next numbers, and where a nilpotent plays a named role it carries the role in upright roman as its subscript. A sign is a subscript where the statement needs one.
+It is allowed to add subscripts when several nilpotents are used. The subscript of a nilpotent is numeric when it counts and a role label when it names, as for the idempotents apart from their complete sign pair: where more than one occurs a pair is $\tilde\pi_{\mathrm{nil},1}, \tilde\pi_{\mathrm{nil},2}$, a second pair in the same statement takes the next numbers, and where a nilpotent plays a named role it carries the role in upright roman as its subscript. A sign is a subscript where the statement needs one.
 
 The nilpotents have no classification of the idempotent kind and no sphere of pure states; which set the square-zero elements form depends on the product. The nilpotents of a state module are those of *The Biquaternion Vacuum as a Minimal Idempotent*, and the spin-down state of *Spin-1/2 Quantum Physics in Biquaternionic Form* is a nilpotent of the ideal of that vacuum.
 
-The nilpotent glyph is therefore split by the case rule, and the split is the reason the convention is stated:
+The nilpotent glyph is one letter in two cases, the capital $\Pi$ and the lower-case $\pi$, with the tilde where the layer carries one and the kind in the subscript:
 
 | Symbol | Role |
 |---|---|
-| $\Upsilon$ | A nilpotent of the complex, split-complex or dual layer, where no tilde is written |
-| $\tilde{\nu}$ | A nilpotent of the quaternion or split-quaternion layer |
-| $\tilde{\Upsilon}$ | A nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde{\Upsilon}$ it generates |
-| $\vec{\Upsilon}$, $\vec{\nu}$ | A pure nilpotent, written with the arrow and without the tilde by the priority rule of *Algebra and Element Conventions*, §*The Centre and the Vector Subspace* |
+| $\tilde\Pi_{\mathrm{nil}}$ | A nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Pi_{\mathrm{nil}}$ it generates |
+| $\Pi_{\mathrm{nil}}$ | A nilpotent of the complex, split-complex or dual layer, with the plain capital and no tilde |
+| $\tilde\pi_{\mathrm{nil}}$ | A nilpotent of the quaternion or split-quaternion layer |
+| $\vec\Pi_{\mathrm{nil}}$, $\vec\pi_{\mathrm{nil}}$ | A pure nilpotent, written with the arrow and without the tilde by the priority rule of *Algebra and Element Conventions*, §*The Centre and the Vector Subspace* |
 
-The standard pair of nilpotents is $\vec{\Upsilon}_1$ and $\vec{\Upsilon}_2$, the off-diagonal Peirce units of *Peirce Decompositions of the Biquaternion Algebra* exchanged by the star. The truncated ladder of *The Biquaternion Vacuum as a Minimal Idempotent* and of the Fock, vacuum and matrix-representation articles is this pair: those articles write it $\vec{\Upsilon}_1$ and $\vec{\Upsilon}_2$ wherever the algebra element is meant, and keep the ladder letters for the abstract operators.
+The standard pair of nilpotents is $\vec\Pi_{\mathrm{nil},1}$ and $\vec\Pi_{\mathrm{nil},2}$, the off-diagonal Peirce units of *Peirce Decompositions of the Biquaternion Algebra* exchanged by the star. The truncated ladder of *The Biquaternion Vacuum as a Minimal Idempotent* and of the Fock, vacuum and matrix-representation articles is this pair: those articles write it $\vec\Pi_{\mathrm{nil},1}$ and $\vec\Pi_{\mathrm{nil},2}$ wherever the algebra element is meant, and keep the ladder letters for the abstract operators.
 
-**The standard pair carries the arrow, not the tilde.** The two Peirce units are pure, $\vec{\Upsilon}_1 = \tfrac12(i\vec e_x - \vec e_y)$ and $\vec{\Upsilon}_2 = \tfrac12(i\vec e_x + \vec e_y)$, with no scalar part, so by *Algebra and Element Conventions*, §*The Centre and the Vector Subspace* the arrow takes priority over the tilde and the tilde is dropped; the pair is written $\vec{\Upsilon}_1, \vec{\Upsilon}_2$ and never $\tilde{\Upsilon}_1, \tilde{\Upsilon}_2$. The tilde is kept for the general nilpotent $\tilde{\Upsilon}$, which may carry a scalar part and is not pure.
+**The standard pair carries the arrow, not the tilde.** The two Peirce units are pure, $\vec\Pi_{\mathrm{nil},1} = \tfrac12(i\vec e_x - \vec e_y)$ and $\vec\Pi_{\mathrm{nil},2} = \tfrac12(i\vec e_x + \vec e_y)$, with no scalar part, so by *Algebra and Element Conventions*, §*The Centre and the Vector Subspace* the arrow takes priority over the tilde and the tilde is dropped; the pair is written $\vec\Pi_{\mathrm{nil},1}, \vec\Pi_{\mathrm{nil},2}$ and never $\tilde\Pi_{\mathrm{nil},1}, \tilde\Pi_{\mathrm{nil},2}$. The tilde is kept for the general nilpotent $\tilde\Pi_{\mathrm{nil}}$, which may carry a scalar part and is not pure.
 
 ### The Chirality Convention
 
@@ -142,17 +157,17 @@ a scalar label and not a vector. The definition is the dimension of the carrier'
 
 **Definition (elementary spinor).** An **elementary spinor** is an element of a complex two-dimensional space on which the left multiplications act irreducibly with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta_{\mathrm{cen}}$ about $\vec u$ multiplies it by $\exp(-\frac{i\,\theta_{\mathrm{cen}}\,\vec u\,\vec S}{\hbar})$. In $\mathbb{B}$ the carrier is a minimal left ideal,
 $$
-S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u),\qquad \tilde\Pi_\pm(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
+S_\pm(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u),\qquad \tilde\Pi_{\mathrm{id},\pm}(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
 $$
-with $\vec u$ a unit real vector; each is of complex dimension two and of spin $\tfrac12$, and the axis $\vec u$ is part of the datum. An element of $S_+(\vec u)$ is $d_0\tilde\Pi_+(\vec u)+d_1\nu(\vec u)$ with $d_0,d_1\in\mathbb{C}$, so an elementary spinor is a pair of complex numbers in a chosen carrier.
+with $\vec u$ a unit real vector; each is of complex dimension two and of spin $\tfrac12$, and the axis $\vec u$ is part of the datum. An element of $S_+(\vec u)$ is $d_0\tilde\Pi_{\mathrm{id},+}(\vec u)+d_1\nu(\vec u)$ with $d_0,d_1\in\mathbb{C}$, so an elementary spinor is a pair of complex numbers in a chosen carrier.
 
 **Definition (Dirac spinor).** A **Dirac spinor** is an element $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ of $\mathbb{B}$, the two parts being its two components in the decomposition of $\mathbb{B}$ into minimal left ideals,
 $$
-\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u),\qquad \tilde\Pi_\pm(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
+\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u),\qquad \tilde\Pi_{\mathrm{id},\pm}(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
 $$
 for a declared unit imaginary direction $\vec u$, and each part is an elementary spinor of complex dimension two. Every element of the algebra is a Dirac spinor and only the zero element has both parts zero, so the definition costs one declared axis and nothing else.
 
-The two parts carry the chirality letters. The decomposition is the decomposition into the two values of the chirality: the basis operator $-iR_{\vec u}$ of §*The Chirality Convention* is $-1$ on $S_+(\vec u)$ and $+1$ on $S_-(\vec u)$, so $\tilde{Ξ}_{L}\in S_+(\vec u)$ is the $L$ part and $\tilde{Ξ}_{R}\in S_-(\vec u)$ the $R$ part, and at $\vec u=\vec e_z$ the basis operator is $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$. Exchanging the two letters is the substitution $\vec u\mapsto-\vec u$, because $\tilde\Pi_+(\vec u)=\tilde\Pi_-(-\vec u)$: the pair is unordered, and the definition orders it only to name the two parts.
+The two parts carry the chirality letters. The decomposition is the decomposition into the two values of the chirality: the basis operator $-iR_{\vec u}$ of §*The Chirality Convention* is $-1$ on $S_+(\vec u)$ and $+1$ on $S_-(\vec u)$, so $\tilde{Ξ}_{L}\in S_+(\vec u)$ is the $L$ part and $\tilde{Ξ}_{R}\in S_-(\vec u)$ the $R$ part, and at $\vec u=\vec e_z$ the basis operator is $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$. Exchanging the two letters is the substitution $\vec u\mapsto-\vec u$, because $\tilde\Pi_{\mathrm{id},+}(\vec u)=\tilde\Pi_{\mathrm{id},-}(-\vec u)$: the pair is unordered, and the definition orders it only to name the two parts.
 
 A column is a writing, not a definition. A column of two components is an elementary spinor written in a chosen carrier, and a column of four is a Dirac spinor written in a matrix model, one pair per part. The count $4=2\times2$ multiplies the spin dimension by the number of parts, and the two factors have different origins. Neither column is a second definition, and the definitions need no Clifford relation, no gamma basis operator and no extra rotation triple.
 
@@ -160,13 +175,13 @@ A column is a writing, not a definition. A column of two components is an elemen
 
 Multiplication by $i$ is one map. On the centre it is the global phase; on the complex space sector it is the duality rotation; on the real and imaginary halves it is the Wick rotation, and on the two sectors it is the material–informational exchange. The generator satisfies $(ie_t)^2=-e_t$, and the group $\exp(i\theta_{\mathrm{cen}})e_t$ of the centre interpolates between the four values. The map is a rotation and not a projection, a collapse or a measurement, and it acts through the centre rather than through the quaternion directions.
 
-The special glyphs are notational: a root $\tilde{Ζ}$, an idempotent $\tilde\Pi$ and a nilpotent $\tilde\nu$ or $\tilde\Upsilon$ are generic elements whose glyph records what they are known to be. A root is a root in the product the statement names; an idempotent squares to itself; a nilpotent squares to zero. The case rule applies to each, the coordinates carry the letter of the glyph, and several occurrences take subscripts by the rule of *Index and Notation Conventions*. The standard Peirce pair carries the arrow and not the tilde, because its members are pure.
+The special glyphs are notational: a root $\tilde{Ζ}$, an idempotent $\tilde\Pi_{\mathrm{id}}$ and a nilpotent $\tilde\pi_{\mathrm{nil}}$ or $\tilde\Pi_{\mathrm{nil}}$ are generic elements whose glyph records what they are known to be. A root is a root in the product the statement names; an idempotent squares to itself; a nilpotent squares to zero. The case rule applies to each, the coordinates carry the letter of the glyph, and several occurrences take subscripts by the rule of *Index and Notation Conventions*. The standard Peirce pair carries the arrow and not the tilde, because its members are pure.
 
 Chirality is the side on which an operator multiplies, and not an element of the algebra: the left slot, the right slot, or both. The basis operator that shows it on a frame is the fifth basis operator, $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, a pure right multiplier and hence an example of the right slot, $i$ times the product of the four basis operators of the frame, of spectrum $+1,+1,-1,-1$ on the elements. The subscript of an element takes the two values $L$ and $R$, read from that basis operator and from the declared frame. The central form of the chirality is the sign of the double, and a Peirce sign is neither the basis operator nor its central form.
 
 Spin is defined once, on a carrier: it is the largest eigenvalue of $\vec u\cdot\vec S$ in units of $\hbar$, a scalar in $\tfrac12\mathbb{Z}_{\ge0}$ that does not depend on the axis, and physically it is the intrinsic angular momentum of a particle, with $\tilde S_{\Psi}^2=\hbar^{2}\,s\,(s+1)$, $\tilde S_{\Psi,z}=\hbar\,s_{z}$ and helicity in the massless case. The algebra supplies the rotation action and the weights of its generator; it supplies neither the one-particle space nor the unit $\hbar$.
 
-An elementary spinor is an element of a carrier, a minimal left ideal $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ of complex dimension two with weights $\pm\tfrac12$; a Dirac spinor is an element $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ of $\mathbb{B}$, its two parts being the components in $\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u)$ for a declared axis $\vec u$. The two parts are the two values of the chirality, $\tilde{Ξ}_{L}$ in $S_+$ and $\tilde{Ξ}_{R}$ in $S_-$, and a column of two or of four components is a carrier element written in a basis and not a second definition.
+An elementary spinor is an element of a carrier, a minimal left ideal $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u)$ of complex dimension two with weights $\pm\tfrac12$; a Dirac spinor is an element $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ of $\mathbb{B}$, its two parts being the components in $\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u)$ for a declared axis $\vec u$. The two parts are the two values of the chirality, $\tilde{Ξ}_{L}$ in $S_+$ and $\tilde{Ξ}_{R}$ in $S_-$, and a column of two or of four components is a carrier element written in a basis and not a second definition.
 
 ## Summary of Notation
 
@@ -174,17 +189,18 @@ An elementary spinor is an element of a carrier, a minimal left ideal $S_\pm(\ve
 |---|---|
 | $i\,\cdot$ | One central complex-linear map; its restrictions are the global phase, the duality rotation, the Wick rotation and the sector exchange |
 | $\tilde{Ζ}$ | A root, $\tilde{Ζ}^2=e_t$ in the product the statement names |
-| $\tilde\Pi$ | An idempotent, $\tilde\Pi^2=\tilde\Pi$; in the reduced layer written $\Pi_\pm$ |
-| $\tilde\nu$, $\tilde\Upsilon$ | A nilpotent, $\tilde\nu^2=0$; the biquaternion layer writes $\tilde\Upsilon$ |
-| $\vec\Upsilon_1,\vec\Upsilon_2$ | The standard Peirce pair, $\tfrac12(i\vec e_x\mp\vec e_y)$, pure and written with the arrow |
+| $\tilde\Pi_{\mathrm{id}}$ | An idempotent, $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$; in the reduced layer written $\Pi_{\mathrm{id},\pm}$ |
+| $\Pi_{\mathrm{nil}}$ | A nilpotent of the complex, split-complex or dual layer, $\Pi_{\mathrm{nil}}^2=0$, written with the plain capital and no tilde |
+| $\tilde\Pi_{\mathrm{nil}}$, $\tilde\pi_{\mathrm{nil}}$ | A nilpotent, $\tilde\Pi_{\mathrm{nil}}^2=0$; the capital in the biquaternion and split-biquaternion layers, the lower case in the quaternion and split-quaternion layers |
+| $\vec\Pi_{\mathrm{nil},1},\vec\Pi_{\mathrm{nil},2}$ | The standard Peirce pair, $\tfrac12(i\vec e_x\mp\vec e_y)$, pure and written with the arrow |
 | $s$, $s_z$ | Spin and its projection, $\tilde S_{\Psi}^2=\hbar^{2}\,s\,(s+1)$ and $\tilde S_{\Psi,z}=\hbar\,s_{z}$; $s_{\mathrm{tot},z}$ for a total |
 | left slot, right slot, both slots | Operator chirality: the side on which an operator multiplies, read from the basis operator |
 | $\mathsf{V}_{\mathrm{vol}}$ | The chirality basis operator of a frame, $-iR_{\vec e_z}$ in the axis-free frame, a pure right multiplier; the gamma display writes it $\gamma_5$ |
 | $\tilde Q_L$, $\tilde Q_R$ | The two parts of an element named by the subscript; the value is returned by the chirality basis operator |
 | $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$ | The generator of the rotation algebra |
 | $\vec S$ | The generator read as one vector, $\vec u\cdot\vec S=u_\eta\tilde S_{\Psi,\eta}$; pure, so arrowed and without the tilde |
-| $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | An elementary spinor's carrier, a minimal left ideal of complex dimension two |
-| $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ | The idempotents of the two carriers, at the declared axis $\vec u$ |
+| $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u)$ | An elementary spinor's carrier, a minimal left ideal of complex dimension two |
+| $\tilde\Pi_{\mathrm{id},\pm}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | The idempotents of the two carriers, at the declared axis $\vec u$ |
 | $\tilde{Ξ}$, $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | A Dirac spinor and its two parts, the $L$ part in $S_+$ and the $R$ part in $S_-$ |
 
 ## Further Reading

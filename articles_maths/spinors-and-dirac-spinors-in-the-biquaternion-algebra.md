@@ -5,8 +5,8 @@
 The word spinor names three different objects in this algebra, and the three are the three levels of one chain: a carrier, the closure of that
 carrier, and the sum of two copies of the closure. The conventions of this section give each level a name, and the article fixes them.
 
-A **spinor** is an element of the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$, of real dimension $2$. A **spinor
-space** is the first closure $S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_+(\vec u_{\mathrm r})$, of real dimension $4$. A **Dirac spinor** is an
+A **spinor** is an element of the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$, of real dimension $2$. A **spinor
+space** is the first closure $S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$, of real dimension $4$. A **Dirac spinor** is an
 element of a bispinor space, the second closure $\mathbb{B}=S_+\oplus S_-$, of real dimension $8$. The three levels are nested,
 $\Sigma\subset S_+\subset\mathbb{B}$, and each is the closure of the one before.
 
@@ -74,16 +74,16 @@ $i,j\in\{0,1\}$ the sector $\Sigma_{ij}$ is the set of elements with $N\neq0$ if
 **Definition (the idempotent of the axis).** For a unit real axis $\vec u_{\mathrm r}$,
 
 $$
-\tilde\Pi_\pm(\vec u_{\mathrm r})=\tfrac12\bigl(e_t\pm i\vec u_{\mathrm r}\bigr),
+\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})=\tfrac12\bigl(e_t\pm i\vec u_{\mathrm r}\bigr),
 $$
 
-so that $\tilde\Pi_\pm^{2}=\tilde\Pi_\pm$, $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$.
+so that $\tilde\Pi_{\mathrm{id},\pm}^{2}=\tilde\Pi_{\mathrm{id},\pm}$, $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$ and $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$.
 
 **Definition (the three levels).**
 
 $$
-\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r}),\qquad
-S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm(\vec u_{\mathrm r}),\qquad
+\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r}),\qquad
+S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r}),\qquad
 \mathbb{B}=S_+(\vec u_{\mathrm r})\oplus S_-(\vec u_{\mathrm r}).
 $$
 
@@ -98,8 +98,8 @@ summands of the direct sum. The dimensions are computed in the table below.
 
 | level | space | $\dim_{\mathbb{R}}$ | $\dim_{\mathbb{C}}$ | generator |
 |---|---|---|---|---|
-| spinor | $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+$ | $2$ | $1$ | the idempotent $\tilde\Pi_+$ |
-| spinor space | $S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_+$ | $4$ | $2$ | $\tilde\Pi_+$ and $\vec u_2\tilde\Pi_+$ |
+| spinor | $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ | $2$ | $1$ | the idempotent $\tilde\Pi_{\mathrm{id},+}$ |
+| spinor space | $S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ | $4$ | $2$ | $\tilde\Pi_{\mathrm{id},+}$ and $\vec u_2\tilde\Pi_{\mathrm{id},+}$ |
 | Dirac spinor | $\mathbb{B}=S_+\oplus S_-$ | $8$ | $4$ | both ideals together |
 
 **Remark (why the plane is the carrier and the ideal is its closure).** The plane is invariant under the rotations about its own axis only, and the
@@ -111,7 +111,7 @@ plane is what makes the object irreducible, and the two properties are not the s
 **Definition (the generator).** The spin generators are $\tilde S_k=\tfrac12 i\vec e_k$, and the generator of the axis is
 $\vec u_{\mathrm r}\cdot\vec S=\tfrac12 i\vec u_{\mathrm r}$.
 
-**Theorem (the axis identity).** $\vec u_{\mathrm r}\,\tilde\Pi_\pm(\vec u_{\mathrm r})=\mp i\,\tilde\Pi_\pm(\vec u_{\mathrm r})$.
+**Theorem (the axis identity).** $\vec u_{\mathrm r}\,\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})=\mp i\,\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})$.
 
 *Proof.* The product is $\tfrac12(\vec u_{\mathrm r}+i\vec u_{\mathrm r}^{2})=\tfrac12(\vec u_{\mathrm r}-ie_t)$, which equals
 $-i\cdot\tfrac12(e_t+i\vec u_{\mathrm r})$; the other sign is the same computation at $-\vec u_{\mathrm r}$.
@@ -119,22 +119,22 @@ $-i\cdot\tfrac12(e_t+i\vec u_{\mathrm r})$; the other sign is the same computati
 **Theorem (the weights).** On the plane the generator acts as the number $+\tfrac12$:
 
 $$
-\bigl(\tfrac12 i\vec u_{\mathrm r}\bigr)\tilde\Pi_+(\vec u_{\mathrm r})=\tfrac12\tilde\Pi_+(\vec u_{\mathrm r}).
+\bigl(\tfrac12 i\vec u_{\mathrm r}\bigr)\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\tfrac12\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r}).
 $$
 
 On the ideal the generator has the two eigenvalues $+\tfrac12$ and $-\tfrac12$, each once. The $-\tfrac12$ vector of $S_+(\vec u_{\mathrm r})$ is the
 companion nilpotent
 
 $$
-\nu(\vec u_{\mathrm r})=\tilde\Pi_-(\vec u_{\mathrm r})\,\vec u_2\,\tilde\Pi_+(\vec u_{\mathrm r}),
+\nu(\vec u_{\mathrm r})=\tilde\Pi_{\mathrm{id},-}(\vec u_{\mathrm r})\,\vec u_2\,\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r}),
 $$
 
 which is square-zero. At $\vec u_{\mathrm r}=\vec e_z$ it is $\nu=\tfrac12(i\vec e_x+\vec e_y)$.
 
-*Proof.* The first display follows from the axis identity, which gives $\tfrac12 i\vec u_{\mathrm r}\tilde\Pi_+=\tfrac12\tilde\Pi_+$, and the second
-sign from the same identity at $\tilde\Pi_-$. For $\nu$: it is one-dimensional because it lies in the corner $\tilde\Pi_-\mathbb{B}\tilde\Pi_+$, and
-every element of that corner satisfies $\nu=\tilde\Pi_-\nu$, whence $\tfrac12 i\vec u_{\mathrm r}\nu=-\tfrac12\nu$; and
-$\nu^{2}=\tilde\Pi_-\vec u_2\tilde\Pi_+\tilde\Pi_-\vec u_2\tilde\Pi_+=0$ because $\tilde\Pi_+\tilde\Pi_-=0$.
+*Proof.* The first display follows from the axis identity, which gives $\tfrac12 i\vec u_{\mathrm r}\tilde\Pi_{\mathrm{id},+}=\tfrac12\tilde\Pi_{\mathrm{id},+}$, and the second
+sign from the same identity at $\tilde\Pi_{\mathrm{id},-}$. For $\nu$: it is one-dimensional because it lies in the corner $\tilde\Pi_{\mathrm{id},-}\mathbb{B}\tilde\Pi_{\mathrm{id},+}$, and
+every element of that corner satisfies $\nu=\tilde\Pi_{\mathrm{id},-}\nu$, whence $\tfrac12 i\vec u_{\mathrm r}\nu=-\tfrac12\nu$; and
+$\nu^{2}=\tilde\Pi_{\mathrm{id},-}\vec u_2\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}\vec u_2\tilde\Pi_{\mathrm{id},+}=0$ because $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$.
 
 **Corollary (the weight string and the dimension).** The string of the ideal is $(+\tfrac12,-\tfrac12)$, of length $2$, and
 
@@ -157,12 +157,12 @@ full angle $\theta$ and returns it to itself at $\theta=2\pi$.
 **Theorem (a spinor is null).** For every complex $\lambda$,
 
 $$
-N\bigl(\lambda\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=0,\qquad B^{2}\bigl(\lambda\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=-\tfrac14\lambda^{2}.
+N\bigl(\lambda\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=0,\qquad B^{2}\bigl(\lambda\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=-\tfrac14\lambda^{2}.
 $$
 
 With $Q_t=\lambda/2$ the scalar coordinate of the spinor, the second display reads $B^{2}=-Q_t^{2}$.
 
-*Proof.* The norm is multiplicative and $N(\tilde\Pi_+)=\tfrac14(1-\lvert\vec u_{\mathrm r}\rvert^{2})=0$. For the second display, the eigenvalues
+*Proof.* The norm is multiplicative and $N(\tilde\Pi_{\mathrm{id},+})=\tfrac14(1-\lvert\vec u_{\mathrm r}\rvert^{2})=0$. For the second display, the eigenvalues
 sum to $2Q_t=\lambda$ and their product is $N=0$, so they are $0$ and $\lambda$; the discriminant identity then reads $\lambda^{2}=-4B^{2}$, whence
 $B^{2}=-\lambda^{2}/4$.
 
@@ -176,13 +176,13 @@ $\Sigma_{11}$ or in $\Sigma_{10}$.
 **Theorem.** The punctured plane lies in the sector:
 
 $$
-\Sigma(\vec u_{\mathrm r})\cap\Sigma_{01}=\{\lambda\tilde\Pi_+(\vec u_{\mathrm r}):\lambda\neq0\}.
+\Sigma(\vec u_{\mathrm r})\cap\Sigma_{01}=\{\lambda\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r}):\lambda\neq0\}.
 $$
 
 *Proof.* On the plane $N=0$, so the first index is zero, and $B^{2}=-\lambda^{2}/4$ is nonzero exactly for $\lambda\neq0$.
 
 **Corollary (the spectrum of a spinor).** For $\lambda\neq0$ the spectrum is $\{0,\lambda\}$, with distinct eigenvalues, and the eigenvector of the
-eigenvalue $\lambda$ is the spinor itself, since $\tilde\Pi_+^{2}=\tilde\Pi_+$.
+eigenvalue $\lambda$ is the spinor itself, since $\tilde\Pi_{\mathrm{id},+}^{2}=\tilde\Pi_{\mathrm{id},+}$.
 
 ### The Sector $\Sigma_{00}$
 
@@ -196,20 +196,20 @@ eigenvalue $\lambda$ is the spinor itself, since $\tilde\Pi_+^{2}=\tilde\Pi_+$.
 |---|---|---|
 | $\Sigma_{11}$ | impossible, $N=0$ | $\varnothing$ |
 | $\Sigma_{10}$ | impossible, $N=0$ | $\varnothing$ |
-| $\Sigma_{01}$ | $\lambda\neq0$ | $\mathbb{C}^{\times}\tilde\Pi_+(\vec u_{\mathrm r})$ |
+| $\Sigma_{01}$ | $\lambda\neq0$ | $\mathbb{C}^{\times}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ |
 | $\Sigma_{00}$ | $\lambda=0$ | $\{0\}$ |
 
 **Remark (the spinor against the vector).** A carrier of spin $1$ is the vector part, on which $N=B^{2}=\lvert\vec v\rvert^{2}$ and every nonzero
 element is invertible; a carrier of spin $\tfrac12$ is the plane, on which $N=0$ and no nonzero element is invertible. The difference is not an
-accident of the axis: $N(\tilde\Pi_+)=\tfrac14(1-\lvert\vec u_{\mathrm r}\rvert^{2})$ cancels exactly because the axis is a real unit vector, so
+accident of the axis: $N(\tilde\Pi_{\mathrm{id},+})=\tfrac14(1-\lvert\vec u_{\mathrm r}\rvert^{2})$ cancels exactly because the axis is a real unit vector, so
 the vanishing is the geometry of the axis and not a coincidence of a frame.
 
 ## The Spinor Space and Its Two Planes
 
-**The coordinates.** In the basis $(\tilde\Pi_+(\vec u_{\mathrm r}),\vec u_2\tilde\Pi_+(\vec u_{\mathrm r}))$ an element of the spinor space is
+**The coordinates.** In the basis $(\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r}),\vec u_2\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r}))$ an element of the spinor space is
 
 $$
-Y=\alpha\tilde\Pi_+(\vec u_{\mathrm r})+\beta\,\vec u_2\tilde\Pi_+(\vec u_{\mathrm r}),
+Y=\alpha\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})+\beta\,\vec u_2\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r}),
 $$
 
 with $\alpha,\beta$ complex, and its scalar coordinate is $Q_t(Y)=\alpha/2$.
@@ -222,7 +222,7 @@ $$
 
 So the ideal meets $\Sigma_{01}$ where $\alpha\neq0$ and $\Sigma_{00}$ where $\alpha=0$, and it meets the two regular sectors nowhere.
 
-*Proof.* The ideal is $\mathbb{B}\tilde\Pi_+$ and the norm is multiplicative, so the norm vanishes. The spectrum of $Y$ is $\{0,2Q_t(Y)\}$ by the
+*Proof.* The ideal is $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ and the norm is multiplicative, so the norm vanishes. The spectrum of $Y$ is $\{0,2Q_t(Y)\}$ by the
 quadratic relation $Y^{2}-2Q_t(Y)Y+N(Y)e_t=0$ together with $N(Y)=0$, so the difference of the two eigenvalues is $-2Q_t(Y)$ and $B^{2}=-Q_t^{2}$.
 
 ### The Sector $\Sigma_{01}$
@@ -240,12 +240,12 @@ $$
 **Theorem (the doubly degenerate part of the ideal is a real plane).**
 
 $$
-S_+(\vec u_{\mathrm r})\cap\Sigma_{00}=\mathbb{C}\bigl(\vec u_2-i\vec u_3\bigr)=\mathbb{C}\,\vec u_2\tilde\Pi_+(\vec u_{\mathrm r}),
+S_+(\vec u_{\mathrm r})\cap\Sigma_{00}=\mathbb{C}\bigl(\vec u_2-i\vec u_3\bigr)=\mathbb{C}\,\vec u_2\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r}),
 $$
 
 of real dimension $2$.
 
-*Proof.* The condition is $\alpha=0$, that is $Q_t=0$. And $\vec u_2\tilde\Pi_+(\vec u_{\mathrm r})=\tfrac12(\vec u_2-i\vec u_3)$, whose scalar
+*Proof.* The condition is $\alpha=0$, that is $Q_t=0$. And $\vec u_2\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\tfrac12(\vec u_2-i\vec u_3)$, whose scalar
 coordinate vanishes.
 
 **Theorem (the doubly degenerate part is the square-zero part).** For an element $Y$ of the ideal,
@@ -275,7 +275,7 @@ a spinor space.
 **Theorem (the parts exhaust the algebra).** Every element of $\mathbb{B}$ is a Dirac spinor at every axis, and only the zero element has both parts
 zero. The four complex coordinates of an element are two pairs, one pair per part.
 
-*Proof.* $\tilde\Pi_+$ and $\tilde\Pi_-$ are orthogonal idempotents summing to $e_t$, so $\mathbb{B}=S_+\oplus S_-$ and the decomposition is unique.
+*Proof.* $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$ are orthogonal idempotents summing to $e_t$, so $\mathbb{B}=S_+\oplus S_-$ and the decomposition is unique.
 The count $4=2+2$ is the sum $\dim_{\mathbb{C}}S_++\dim_{\mathbb{C}}S_-$.
 
 **Theorem (the norm of a Dirac spinor is the pairing of the parts).** $N(X)=2B(X_+,X_-)$.
@@ -322,7 +322,7 @@ of real dimension $6$: the invertible elements whose two eigenvalues coincide.
 *Proof.* The conditions are a non-vanishing pairing and a vanishing $B^{2}$, and the vanishing of $B^{2}$ is the coincidence of the two eigenvalues by
 the criterion of the spectral predicate.
 
-**Witness.** $X=e_t=\tilde\Pi_++\tilde\Pi_-$ has $N=1$ and $B^{2}=0$, and its two parts pair to $\tfrac12$.
+**Witness.** $X=e_t=\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}$ has $N=1$ and $B^{2}=0$, and its two parts pair to $\tfrac12$.
 
 ### The Sector $\Sigma_{01}$
 
@@ -336,7 +336,7 @@ of real dimension $6$. It contains the punctured plane of each ideal and the two
 
 *Proof.* The pairing vanishes and $B^{2}$ does not.
 
-**Witness.** $X=\tilde\Pi_+(\vec u_{\mathrm r})$ has $N=0$ and $B^{2}=-\tfrac14$.
+**Witness.** $X=\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ has $N=0$ and $B^{2}=-\tfrac14$.
 
 ### The Sector $\Sigma_{00}$
 
@@ -358,7 +358,7 @@ of real dimension $4$.
 |---|---|---|---|---|
 | $\Sigma_{11}$ | $\neq0$ | $\neq0$ | $e_t+2\vec e_x$ | $8$ |
 | $\Sigma_{10}$ | $\neq0$ | $=0$ | $e_t$ | $6$ |
-| $\Sigma_{01}$ | $=0$ | $\neq0$ | $\tilde\Pi_+(\vec u_{\mathrm r})$ | $6$ |
+| $\Sigma_{01}$ | $=0$ | $\neq0$ | $\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ | $6$ |
 | $\Sigma_{00}$ | $=0$ | $=0$ | $\vec u_2-i\vec u_3$ | $4$ |
 
 **Corollary (a Dirac spinor is invertible exactly when its parts pair).** By $N(X)=2B(X_+,X_-)$, the element $X$ is invertible if and only if
@@ -379,7 +379,7 @@ element of the algebra. Then the right multiplication $X\mapsto X\vec v$ is left
 $S_-(\vec u_{\mathrm r})$ and $S_-(\vec u_{\mathrm r})$ bijectively onto $S_+(\vec u_{\mathrm r})$, and satisfies $(X\vec v)\vec v=-X$ on the
 whole algebra.
 
-*Proof.* Left-linearity: $(aX)\vec v=a(X\vec v)$. The product $\tilde\Pi_+(\vec u_{\mathrm r})\vec v$ equals
+*Proof.* Left-linearity: $(aX)\vec v=a(X\vec v)$. The product $\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\vec v$ equals
 $\tfrac12(\vec v+i\vec u_{\mathrm r}\vec v)$, and $\vec u_{\mathrm r}\vec v=-\vec v\vec u_{\mathrm r}$ at a perpendicular pair, so the product is a
 nonzero element of the ideal $S_-(\vec u_{\mathrm r})$; hence $S_+(\vec u_{\mathrm r})\vec v\subseteq S_-(\vec u_{\mathrm r})$. The map is injective
 because $\vec v$ is invertible, with $\vec v^{-1}=-\vec v$, and the two ideals have the same real dimension $4$, so the image is the whole of
@@ -394,29 +394,29 @@ is two-dimensional and repeats.
 space of dimension $1$.
 
 *Proof.* A right multiplication $X\mapsto XM$ carries $S_+(\vec u_{\mathrm r})$ into $S_-(\vec u_{\mathrm r})$ exactly when
-$\tilde\Pi_+M\tilde\Pi_+=0$: the image is $\mathbb{B}\tilde\Pi_+M$, which lies in $\mathbb{B}\tilde\Pi_-$ exactly when
-$\tilde\Pi_+M=\tilde\Pi_+M\tilde\Pi_-$. On the four corners of the algebra at the axis this condition kills the corner
-$\tilde\Pi_+\mathbb{B}\tilde\Pi_+$ and nothing else, so the multipliers that give such a map form a complex vector space of dimension $3$. Two of
-them give the same map exactly when their difference is annihilated on the left by $\tilde\Pi_+$, that is exactly when the difference lies in
-$\tilde\Pi_-\mathbb{B}$, of complex dimension $2$. The maps form a space of dimension $3-2=1$, and each of them is the map $X\mapsto XE$ attached to
-a single element $E$ of the corner $\tilde\Pi_+\mathbb{B}\tilde\Pi_-$.
+$\tilde\Pi_{\mathrm{id},+M}\tilde\Pi_{\mathrm{id},+}=0$: the image is $\mathbb{B}\tilde\Pi_{\mathrm{id},+M}$, which lies in $\mathbb{B}\tilde\Pi_{\mathrm{id},-}$ exactly when
+$\tilde\Pi_{\mathrm{id},+M}=\tilde\Pi_{\mathrm{id},+M}\tilde\Pi_{\mathrm{id},-}$. On the four corners of the algebra at the axis this condition kills the corner
+$\tilde\Pi_{\mathrm{id},+}\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ and nothing else, so the multipliers that give such a map form a complex vector space of dimension $3$. Two of
+them give the same map exactly when their difference is annihilated on the left by $\tilde\Pi_{\mathrm{id},+}$, that is exactly when the difference lies in
+$\tilde\Pi_{\mathrm{id},-}\mathbb{B}$, of complex dimension $2$. The maps form a space of dimension $3-2=1$, and each of them is the map $X\mapsto XE$ attached to
+a single element $E$ of the corner $\tilde\Pi_{\mathrm{id},+}\mathbb{B}\tilde\Pi_{\mathrm{id},-}$.
 
 **Corollary (the multiplier is one corner element, and the perpendicular axes differ by a phase).** The maps are exactly the maps $X\mapsto XE$ with
-$E$ in the corner $\tilde\Pi_+(\vec u_{\mathrm r})\mathbb{B}\tilde\Pi_-(\vec u_{\mathrm r})$, a complex line, and the correspondence is bijective. A
-perpendicular real unit vector gives $E=\tilde\Pi_+(\vec u_{\mathrm r})\vec v$, and for $\vec v=\cos\varphi\,\vec u_2+\sin\varphi\,\vec u_3$
+$E$ in the corner $\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\mathbb{B}\tilde\Pi_{\mathrm{id},-}(\vec u_{\mathrm r})$, a complex line, and the correspondence is bijective. A
+perpendicular real unit vector gives $E=\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\vec v$, and for $\vec v=\cos\varphi\,\vec u_2+\sin\varphi\,\vec u_3$
 that corner element runs once round the circle of elements of modulus one. So the perpendicular real axes carry the phase of the exchange, and not a
 direction of it.
 
 **Remark (the exchange preserves the norm and not the spectral predicate).** Since $N(X\vec v)=N(X)N(\vec v)=N(X)$ at a real unit vector, the exchange
 preserves invertibility and carries the null cone to itself. It does not preserve $B^{2}$, and it is therefore not an automorphism of the sector
 structure. At $\vec u_{\mathrm r}=\vec e_z$ and $\vec v=\vec e_x$ the element $e_t$ has $B^{2}=0$ and its image $\vec e_x$ has $B^{2}=1$, so
-$\Sigma_{10}$ is carried to $\Sigma_{11}$; and $\tilde\Pi_+(\vec e_z)$ has $B^{2}=-\tfrac14$ and goes to an element with $B^{2}=0$, so
+$\Sigma_{10}$ is carried to $\Sigma_{11}$; and $\tilde\Pi_{\mathrm{id},+}(\vec e_z)$ has $B^{2}=-\tfrac14$ and goes to an element with $B^{2}=0$, so
 $\Sigma_{01}$ is carried to $\Sigma_{00}$. The sector of a Dirac spinor is not an invariant of the exchange; only the first index is.
 
 ## The Axis Is a Parameter of the Family
 
 **Theorem (the conjugation carries one axis to another).** Let $u$ be a unitary element with $\operatorname{Ad}_u(\vec u_{\mathrm r})=\vec u_{\mathrm r}'$. Then
-$\operatorname{Ad}_u$ carries $\tilde\Pi_\pm(\vec u_{\mathrm r})$ to $\tilde\Pi_\pm(\vec u_{\mathrm r}')$, the plane to the plane, each ideal to the
+$\operatorname{Ad}_u$ carries $\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})$ to $\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r}')$, the plane to the plane, each ideal to the
 corresponding ideal, and each of the four sectors to itself.
 
 *Proof.* The conjugation by a unitary element is an automorphism of the algebra; it carries $\vec u_{\mathrm r}$ to $\vec u_{\mathrm r}'$ and hence
@@ -430,7 +430,7 @@ projective plane.
 
 **Remark (the axis is the only datum the definitions cost).** The weight, the dimension, the pairing, the sector of each level and the exchange are
 the same at every axis. What the axis fixes is which two summands are called the parts; the substitution $\vec u_{\mathrm r}\mapsto-\vec u_{\mathrm r}$
-swaps them, since $\tilde\Pi_+(\vec u_{\mathrm r})=\tilde\Pi_-(-\vec u_{\mathrm r})$. So the pair is unordered and the ordering is a name.
+swaps them, since $\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\tilde\Pi_{\mathrm{id},-}(-\vec u_{\mathrm r})$. So the pair is unordered and the ordering is a name.
 
 ## What the Definitions Do Not Use
 
@@ -454,8 +454,8 @@ whole content is carried by the two idempotents, the generator and the two predi
 
 ## Summary
 
-The three levels are the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$ of real dimension $2$, the spinor space
-$S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_+(\vec u_{\mathrm r})$ of real dimension $4$, and the bispinor space $\mathbb{B}=S_+\oplus S_-$ of real
+The three levels are the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ of real dimension $2$, the spinor space
+$S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ of real dimension $4$, and the bispinor space $\mathbb{B}=S_+\oplus S_-$ of real
 dimension $8$, nested in that order. The generator $\tfrac12 i\vec u_{\mathrm r}$ acts on the plane as $+\tfrac12$ and on the ideal with the two
 weights $\pm\tfrac12$, so $2s+1=2$; the rotation through $\theta$ is the left multiplication by
 $\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_{\mathrm r}$, which returns the spinor with the opposite sign at a full turn.
@@ -464,7 +464,7 @@ The sector question has one answer on the plane and on the ideal and another on 
 $\Sigma_{01}$ away from the origin and in $\Sigma_{00}$ at it, and the doubly degenerate part of the ideal is the real plane
 $\mathbb{C}(\vec u_2-i\vec u_3)$ of square-zero elements. A Dirac spinor lies in any of the four sectors, because its norm is the pairing of its two
 parts, $N(X)=2B(X_+,X_-)$, so the first index asks whether the parts pair and the second whether $B^{2}$ survives; the witnesses are
-$e_t+2\vec e_x$, $e_t$, $\tilde\Pi_+$ and $\vec u_2-i\vec u_3$.
+$e_t+2\vec e_x$, $e_t$, $\tilde\Pi_{\mathrm{id},+}$ and $\vec u_2-i\vec u_3$.
 
 The two parts are exchanged on the right, by a real unit vector perpendicular to the axis, which is left-linear and squares to $-1$; no left
 multiplication crosses. The pair is therefore one spinor space taken twice, the exchanges form a complex line spanned by the corner element of the
@@ -484,12 +484,12 @@ the norm and not $B^{2}$, so it moves elements between sectors.
 | $N-B^{2}=Q_t^{2}$ | the difference of the two conditions |
 | $\Sigma_{ij}$ | the sector with $N\neq0$ for $i=1$ and $B^{2}\neq0$ for $j=1$ |
 | $\vec u_{\mathrm r}$, $\vec u_2,\vec u_3$ | a unit real axis and an oriented orthonormal pair completing it |
-| $\tilde\Pi_\pm(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | the idempotents of the axis |
-| $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$ | the plane, a spinor, real dimension $2$; the letter takes the axis as argument, while a sector $\Sigma_{ij}$ takes subscripts |
-| $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm(\vec u_{\mathrm r})$ | the spinor spaces, real dimension $4$ |
+| $\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | the idempotents of the axis |
+| $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ | the plane, a spinor, real dimension $2$; the letter takes the axis as argument, while a sector $\Sigma_{ij}$ takes subscripts |
+| $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})$ | the spinor spaces, real dimension $4$ |
 | $\mathbb{B}=S_+\oplus S_-$ | a bispinor space, real dimension $8$ |
 | $\tilde S_k=\tfrac12 i\vec e_k$ | the spin generators, $\vec u_{\mathrm r}\cdot\vec S=\tfrac12 i\vec u_{\mathrm r}$ |
-| $\nu(\vec u_{\mathrm r})=\tilde\Pi_-\vec u_2\tilde\Pi_+$ | the companion nilpotent, the $-\tfrac12$ vector of the ideal |
+| $\nu(\vec u_{\mathrm r})=\tilde\Pi_{\mathrm{id},-}\vec u_2\tilde\Pi_{\mathrm{id},+}$ | the companion nilpotent, the $-\tfrac12$ vector of the ideal |
 | $\vec u_2-i\vec u_3$ | the square-zero element spanning the doubly degenerate plane of the ideal |
 | $X=X_++X_-$ | a Dirac spinor and its two parts |
 | $Q_t=\tfrac12\lambda$ | the scalar coordinate of a spinor |

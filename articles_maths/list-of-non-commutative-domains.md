@@ -80,7 +80,7 @@ A division ring is a domain in which every nonzero element is invertible; the cl
 |---|---|---|
 | $M_n(\mathbb{R})$, $n \geq 2$ | the matrix units $E_{11}E_{22} = 0$ | *Matrix Algebras* |
 | $\mathbb{B}$, the biquaternions | nilpotent elements; not a division ring | *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* |
-| $\mathbb{B}_{\mathrm{spl}}$, the split-biquaternions | the idempotents $\tilde\Pi_{1,2}$ satisfy $\tilde\Pi_1\tilde\Pi_2 = 0$ | *Split-Biquaternion Zero Divisors* |
+| $\mathbb{B}_{\mathrm{spl}}$, the split-biquaternions | the idempotents $\tilde\Pi_{\mathrm{id},1,2}$ satisfy $\tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2} = 0$ | *Split-Biquaternion Zero Divisors* |
 | $k[C_2]$ over a field of characteristic $\neq 2$ | $k[C_2] \cong k \times k$ | *Examples of Rings and Fields* |
 | $\mathbb{C}_{\mathrm{spl}}$, the split-complex numbers | $\Pi_1\Pi_2 = 0$; commutative, so an integral-domain failure | *Split-Complex Algebra* |
 | $\mathbb{C}_{\mathrm{dln}}$, the dual numbers | $\varepsilon$ is a nonzero nilpotent | *Dual-Numbers Algebra* |

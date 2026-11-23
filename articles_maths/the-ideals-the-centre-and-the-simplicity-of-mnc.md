@@ -104,7 +104,7 @@ five in all, each verified as an ideal by closure under multiplication by the si
 
 **At $n=2$ the ideal structure is the smallest nontrivial one.** The algebra has two two-sided ideals, the centre is the line $\mathbb{C}\mathrm{I}$, the minimal left ideals are the two columns of dimension $2$, and the derivations form a space of dimension $3$. The count $3$ is the dimension of $\mathfrak{sl}_2$, the Lie algebra that acts by commutator, and $3=n^{2}-1$ is the first value of the general dimension.
 
-**The two columns are the two halves of the Peirce decomposition.** With the idempotents $\tilde\Pi_\pm$ of *The Peirce Decomposition of the Biquaternion Algebra*, the left ideals are $M_2\tilde\Pi_+$ and $M_2\tilde\Pi_-$, each of dimension $2$ and each the sum of two Peirce lines. Their intersection is $0$ and their sum is the algebra, but the sum is not direct as algebras: the mixed lines belong to neither, so the decomposition into columns is a decomposition of the space only.
+**The two columns are the two halves of the Peirce decomposition.** With the idempotents $\tilde\Pi_{\mathrm{id},\pm}$ of *The Peirce Decomposition of the Biquaternion Algebra*, the left ideals are $M_2\tilde\Pi_{\mathrm{id},+}$ and $M_2\tilde\Pi_{\mathrm{id},-}$, each of dimension $2$ and each the sum of two Peirce lines. Their intersection is $0$ and their sum is the algebra, but the sum is not direct as algebras: the mixed lines belong to neither, so the decomposition into columns is a decomposition of the space only.
 
 ## Summary
 

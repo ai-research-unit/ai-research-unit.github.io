@@ -118,10 +118,10 @@ is positive and satisfies $F_{\tilde Q_2}^*\gamma_{\tilde Q_2}=16\,\gamma_{\tild
 
 **Remark (sixteen is not the branch count).** The multiplier $16$ is the algebraic degree raised to the complex dimension, and it is the multiplier of the current, not the mass of a probability measure. The square map has four inverse branches generically, not sixteen (*The Square Roots of a General Element in the Biquaternion Algebra*), so the entropy suggested by the branches is $2\log2$, not $4\log2$. **The discrepancy between $16$ and $4$ is the measure-theoretic form of the mass loss at the cone, and it is the precise sense in which the several-variable theorem does not globalise.** The normalised equilibrium measure of the biquaternion map is therefore conditional: it exists on the regular part, it is not known to extend across the cone, and its entropy, where it exists, is expected to be $2\log2$.
 
-**Theorem (the product form on the idempotent plane).** Let $\tilde\Pi$ be a primitive idempotent, $\tilde\Pi'$ the complementary primitive idempotent, $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ the idempotent plane, and $\tilde Q_2=C_1\tilde\Pi+C_2\tilde\Pi'$ a parameter in that plane. Then the equilibrium measure of the restriction is the product
+**Theorem (the product form on the idempotent plane).** Let $\tilde\Pi_{\mathrm{id}}$ be a primitive idempotent, $\tilde\Pi_{\mathrm{id}}'$ the complementary primitive idempotent, $W_{\tilde\Pi_{\mathrm{id}}}=\mathbb{C}\tilde\Pi_{\mathrm{id}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}'$ the idempotent plane, and $\tilde Q_2=C_1\tilde\Pi_{\mathrm{id}}+C_2\tilde\Pi_{\mathrm{id}}'$ a parameter in that plane. Then the equilibrium measure of the restriction is the product
 
 $$
-\boxed{\;\mu_{\tilde Q_2}\big|_{W_{\tilde\Pi}}=\mu_{C_1}\otimes\mu_{C_2}\;}
+\boxed{\;\mu_{\tilde Q_2}\big|_{W_{\tilde\Pi_{\mathrm{id}}}}=\mu_{C_1}\otimes\mu_{C_2}\;}
 $$
 
 of the two one-variable equilibrium measures of $\omega\mapsto\omega^2+C_j$, and its entropy is $2\log2$.
@@ -159,7 +159,7 @@ For a non-central parameter the general pluripotential theory does not apply unc
 | $\mu_{\tilde Q_2}$ | the equilibrium measure, where it exists |
 | $\mu_C$ | the one-variable equilibrium measure of $\omega\mapsto\omega^2+C$ |
 | $k=4$, $d=2$ | the complex dimension and the algebraic degree |
-| $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ | the idempotent plane |
+| $W_{\tilde\Pi_{\mathrm{id}}}=\mathbb{C}\tilde\Pi_{\mathrm{id}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}'$ | the idempotent plane |
 
 ## Further Reading
 

@@ -45,7 +45,7 @@ A second objection is that a decomposition that forgets the phase and the rotati
 - Every element has the pair $\tilde Q=\tilde Q_H\tilde Q_0$, with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry; the pair is unique and exists at $0$.
 - The amplitude is the closed element $\tilde Q_H=a e_t+i\vec W/(2a)$, with $2a^{2}=\langle\tilde Q\rangle_{*}+\lvert\langle\tilde Q\rangle_{\natural}\rvert$; it is the unique square root of $\tilde Q\tilde Q^{*}$ in the cone.
 - The amplitude carries the whole H-norm and the modulus of the whole N-norm: $H(\tilde Q_H)=H(\tilde Q)$ and $N(\tilde Q_H)=\lvert N(\tilde Q)\rvert$, the second being real and non-negative.
-- The frame carries the two ideals: $\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_{\mathrm f}(\tilde Q)$ and $\tilde Q_0^{*}\tilde Q_0=\tilde\Pi_{\mathrm i}(\tilde Q)$.
+- The frame carries the two ideals: $\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_{\mathrm{id},\mathrm f}(\tilde Q)$ and $\tilde Q_0^{*}\tilde Q_0=\tilde\Pi_{\mathrm{id},\mathrm i}(\tilde Q)$.
 - The H-norm is invariant under both-sided $*$-unitary multiplication, and the group of elements that leave it invariant is exactly the $*$-unitary group; $H$ is the only positive definite form with this property, up to a scale.
 - Off the cone the frame has $H(\tilde Q_0)=1$; on the cone it has $H(\tilde Q_0)=\tfrac12$; in general $H(\tilde Q_0)$ is half the rank of the frame.
 - The amplitude is continuous everywhere and the frame is discontinuous on the null cone and at the origin; no choice of Moore–Penrose inverse removes the jump.
@@ -83,7 +83,7 @@ Two numbers and one direction carry the amplitude. The scale $a$ and the length 
 
 The amplitude lies in the informational sector. It is Hermitian, so it is an element of $\mathbb{B}_{\Psi}$, whatever sector $\tilde Q$ belonged to. This is the first structural fact of the entry: the polar decomposition is not a split of the element into two parts of the same kind. It is a split into a Hermitian part and a residual part, and the Hermitian part is the one the algebra's positivity is defined on.
 
-Uniqueness needs the two ideals and would not hold without them. The pair is characterised by four conditions: $\tilde Q_H$ lies in the cone, $\tilde Q=\tilde Q_H\tilde Q_0$, $\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_{\mathrm f}(\tilde Q)$, and $\tilde Q_H\mathbb{B}=\tilde Q\mathbb{B}$. The two counterexamples of the mathematical article are worth carrying, because each fails exactly one condition and both are built on the same null element $\tilde\Pi_{\vec u}$. With $\tilde Q_H'=e_t$ and $\tilde Q_0'=\tilde\Pi_{\vec u}$ the product is right but the amplitude generates the whole algebra rather than the minimal left ideal that the element generates. With $\tilde Q_H'=\tilde\Pi_{\vec u}$ and $\tilde Q_0'=e_t$ the product is right and the amplitudes agree, but the frame is the identity and its final projection is not the line. The first counterexample fixes the amplitude by its ideal; the second fixes the frame by its projection.
+Uniqueness needs the two ideals and would not hold without them. The pair is characterised by four conditions: $\tilde Q_H$ lies in the cone, $\tilde Q=\tilde Q_H\tilde Q_0$, $\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_{\mathrm{id},\mathrm f}(\tilde Q)$, and $\tilde Q_H\mathbb{B}=\tilde Q\mathbb{B}$. The two counterexamples of the mathematical article are worth carrying, because each fails exactly one condition and both are built on the same null element $\tilde\Pi_{\mathrm{id},\vec u}$. With $\tilde Q_H'=e_t$ and $\tilde Q_0'=\tilde\Pi_{\mathrm{id},\vec u}$ the product is right but the amplitude generates the whole algebra rather than the minimal left ideal that the element generates. With $\tilde Q_H'=\tilde\Pi_{\mathrm{id},\vec u}$ and $\tilde Q_0'=e_t$ the product is right and the amplitudes agree, but the frame is the identity and its final projection is not the line. The first counterexample fixes the amplitude by its ideal; the second fixes the frame by its projection.
 
 The two factors are continuous in different ways, and the difference is the physics. The amplitude is continuous on the whole algebra. The frame is not: along a family that approaches the cone the frame tends to the identity, while its value on the cone is the rank-one projection onto the line. At the origin the frame falls to $0$ while its limit along $\tilde Q=\epsilon e_t$ is $e_t$.
 
@@ -126,8 +126,8 @@ The amplitude of the second element is worth reading once. $\tilde Q=e_t+\vec e_
 
 $$
 \tilde Q_0\tilde Q_0^{*}\tilde Q_0=\tilde Q_0,\qquad
-\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_{\mathrm f}(\tilde Q),\qquad
-\tilde Q_0^{*}\tilde Q_0=\tilde\Pi_{\mathrm i}(\tilde Q).
+\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_{\mathrm{id},\mathrm f}(\tilde Q),\qquad
+\tilde Q_0^{*}\tilde Q_0=\tilde\Pi_{\mathrm{id},\mathrm i}(\tilde Q).
 $$
 
 Two projections, one on each side, and they are the two ideals of $\tilde Q$. The right ideal that $\tilde Q$ generates is the final projection; the left ideal is the initial one. Nothing of the size of $\tilde Q$ survives in either: a projection is an idempotent, and an idempotent has no scale.
@@ -190,13 +190,13 @@ A change of frame conjugates the amplitude and leaves it in the cone; a change o
 On the null cone the pair collapses to a projection and a rescaling.
 
 $$
-\tilde Q_H=2a\,\tilde\Pi_{\vec u},\qquad
+\tilde Q_H=2a\,\tilde\Pi_{\mathrm{id},\vec u},\qquad
 \tilde Q_0=\frac{\tilde Q}{2a},\qquad
 \vec u=\frac{\vec W}{\lvert\vec W\rvert},\qquad
 2a=\sqrt{2H(\tilde Q)} .
 $$
 
-The amplitude is twice the scale times a minimal projection and the frame is the element divided by the same scale. The frame is not a projection: it is a rank-one partial isometry with the element's own direction. Its final projection is $\tilde\Pi_{\vec u}$ and its initial projection is the corresponding projection on the other side.
+The amplitude is twice the scale times a minimal projection and the frame is the element divided by the same scale. The frame is not a projection: it is a rank-one partial isometry with the element's own direction. Its final projection is $\tilde\Pi_{\mathrm{id},\vec u}$ and its initial projection is the corresponding projection on the other side.
 
 The two factors behave differently as the cone is approached.
 
@@ -207,7 +207,7 @@ $$
 \tilde Q_0=e_t\quad(\epsilon>0),
 $$
 
-and at $\epsilon=0$ the element is $\tfrac{1}{\sqrt2}(e_t+i\vec u)$, with $\tilde Q_H=\tilde Q$ and $\tilde Q_0=\tilde\Pi_{\vec u}$.
+and at $\epsilon=0$ the element is $\tfrac{1}{\sqrt2}(e_t+i\vec u)$, with $\tilde Q_H=\tilde Q$ and $\tilde Q_0=\tilde\Pi_{\mathrm{id},\vec u}$.
 
 The amplitude has a limit and the frame has a jump. The amplitude's limit along the family is the element itself, which is Hermitian and positive semidefinite with one vanishing spectral value. The frame's limit is the identity, and its value is the projection. The two differ by exactly the rank, and the rank is not continuous.
 
@@ -342,7 +342,7 @@ This is why the amplitude is the right object for a state and the wrong object f
 **The H-norm is not multiplicative.** The cleanest counterexample is an element of the null cone,
 
 $$
-\tilde Q=e_t+i\vec e_z=2\tilde\Pi_{\vec e_z},\qquad
+\tilde Q=e_t+i\vec e_z=2\tilde\Pi_{\mathrm{id},\vec e_z},\qquad
 \tilde Q^{2}=2\tilde Q,\qquad
 H(\tilde Q)=2,\qquad
 H\bigl(\tilde Q^{2}\bigr)=8 .
@@ -364,12 +364,12 @@ The constant is attained, and the witness is short. Take
 
 $$
 \tilde Q_1=(-1+i)\vec e_x+(-1-i)\vec e_y,\qquad
-\tilde Q_2=e_t-i\vec e_z=2\tilde\Pi_{-\vec e_z},
+\tilde Q_2=e_t-i\vec e_z=2\tilde\Pi_{\mathrm{id},-\vec e_z},
 $$
 
 so that $H(\tilde Q_1)=4$, $H(\tilde Q_2)=2$, and $\tilde Q_1\tilde Q_2=(-2+2i)\vec e_x+(-2-2i)\vec e_y$ with $H=16$. The ratio is exactly $2$, and no larger ratio was found in a search over three hundred thousand pairs of small Gaussian-integer elements.
 
-The excess is the normalisation of a pure state. The factor $2$ is $\tfrac{1}{H(\tilde\Pi_{\vec u})}$, because a minimal projection has H-norm $\tfrac12$. An amplitude is not an algebra norm; it is a norm that agrees with composition only up to the normalisation of the states it is made of.
+The excess is the normalisation of a pure state. The factor $2$ is $\tfrac{1}{H(\tilde\Pi_{\mathrm{id},\vec u})}$, because a minimal projection has H-norm $\tfrac12$. An amplitude is not an algebra norm; it is a norm that agrees with composition only up to the normalisation of the states it is made of.
 
 The H-norm is also blind to the sector. $\tilde Q$ and $i\tilde Q$ have the same H-norm and lie in opposite sectors, so the norm cannot say which sector an element belongs to. The sector is a datum of the interval and of the Krein form, and it is invisible to the weight.
 
@@ -559,7 +559,7 @@ The three statements to carry away are these. The Hermitian norm is the only mea
 | $\tilde Q_H$ | the amplitude, Hermitian positive semidefinite |
 | $\tilde Q_0$ | the frame, a partial isometry, $*$-unitary off the cone |
 | $\tilde Q_H^{+}$ | the Moore–Penrose inverse of the amplitude |
-| $\tilde\Pi_{\mathrm f}(\tilde Q)$, $\tilde\Pi_{\mathrm i}(\tilde Q)$ | the final and initial projections, the two ideals of $\tilde Q$ |
+| $\tilde\Pi_{\mathrm{id},\mathrm f}(\tilde Q)$, $\tilde\Pi_{\mathrm{id},\mathrm i}(\tilde Q)$ | the final and initial projections, the two ideals of $\tilde Q$ |
 | $a$, $\vec W$ | the scale and the real vector part of $\tilde Q\tilde Q^{*}$ |
 | $\sigma_1\ge\sigma_2\ge0$ | the two singular values, the square roots of the spectral values of $\tilde Q\tilde Q^{*}$ |
 | $\varrho$, $\Xi$ | the scale and the rapidity of the polar word, $\varrho^{2}=\lvert N\rvert$ and $\sigma_{1,2}=\varrho e^{\pm\Xi/2}$ |

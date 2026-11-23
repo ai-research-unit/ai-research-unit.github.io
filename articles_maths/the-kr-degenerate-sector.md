@@ -141,14 +141,14 @@ that is, the union of the complex lines $\mathbb{C}(e_t+i\vec u)$. These are exa
 **Theorem (the idempotents).** For $\vec u\in S^2$ the element
 
 $$
-\tilde\Pi_{\vec u}=\tfrac12(e_t+i\vec u)
+\tilde\Pi_{\mathrm{id},\vec u}=\tfrac12(e_t+i\vec u)
 $$
 
-is an idempotent, $\tilde\Pi_{\vec u}^2=\tilde\Pi_{\vec u}$, with complementary idempotent $\tilde\Pi_{-\vec u}=\tfrac12(e_t-i\vec u)$, and
+is an idempotent, $\tilde\Pi_{\mathrm{id},\vec u}^2=\tilde\Pi_{\mathrm{id},\vec u}$, with complementary idempotent $\tilde\Pi_{\mathrm{id},-\vec u}=\tfrac12(e_t-i\vec u)$, and
 
 $$
-\tilde\Pi_{\vec u}+\tilde\Pi_{-\vec u}=e_t,\qquad
-\tilde\Pi_{\vec u}\tilde\Pi_{-\vec u}=0 .
+\tilde\Pi_{\mathrm{id},\vec u}+\tilde\Pi_{\mathrm{id},-\vec u}=e_t,\qquad
+\tilde\Pi_{\mathrm{id},\vec u}\tilde\Pi_{\mathrm{id},-\vec u}=0 .
 $$
 
 The line $\mathbb{C}(e_t+i\vec u)$ is the line of the idempotent, and it is a minimal left ideal.
@@ -288,7 +288,7 @@ The sector is the light cone of the Krein form. It is a single orbit of the isom
 | $S^5$ | the unit sphere of $\mathbb{C}^3$ |
 | $iS^2$ | the set of pure imaginary unit vectors, $B^2=-1$ |
 | $\mathbb{C}(e_t+i\vec u)$, $\vec u\in S^2$ | the doubly null Peirce lines |
-| $\tilde\Pi_{\vec u}=\tfrac12(e_t+i\vec u)$ | the Hermitian idempotent of the Peirce line |
+| $\tilde\Pi_{\mathrm{id},\vec u}=\tfrac12(e_t+i\vec u)$ | the Hermitian idempotent of the Peirce line |
 | $\mathrm{Sd}_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ | the two-sided operator |
 
 ## Further Reading

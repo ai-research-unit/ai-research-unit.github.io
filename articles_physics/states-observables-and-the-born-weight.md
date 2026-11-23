@@ -207,8 +207,8 @@ An observable is an element of the sector, and its spectrum is two real numbers.
 
 $$
 \tilde H_\Psi=h_t\,e_t+i\vec h_\Psi
-=\bigl(h_t+\lvert\vec h_\Psi\rvert\bigr)\tilde\Pi_1(\vec u_\Psi)
-+\bigl(h_t-\lvert\vec h_\Psi\rvert\bigr)\tilde\Pi_2(\vec u_\Psi),
+=\bigl(h_t+\lvert\vec h_\Psi\rvert\bigr)\tilde\Pi_{\mathrm{id},1}(\vec u_\Psi)
++\bigl(h_t-\lvert\vec h_\Psi\rvert\bigr)\tilde\Pi_{\mathrm{id},2}(\vec u_\Psi),
 \qquad
 \vec u_\Psi=\frac{\vec h_\Psi}{\lvert\vec h_\Psi\rvert},
 $$
@@ -216,13 +216,13 @@ $$
 with the two idempotents of the axis
 
 $$
-\tilde\Pi_{1,2}(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
+\tilde\Pi_{\mathrm{id},1,2}(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
 \qquad
-\tilde\Pi_1+\tilde\Pi_2=e_t,
+\tilde\Pi_{\mathrm{id},1+}\tilde\Pi_{\mathrm{id},2}=e_t,
 \qquad
-\tilde\Pi_1\tilde\Pi_2=0,
+\tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2}=0,
 \qquad
-\tilde\Pi_{1,2}^{2}=\tilde\Pi_{1,2}.
+\tilde\Pi_{\mathrm{id},1,2}^{2}=\tilde\Pi_{\mathrm{id},1,2}.
 $$
 
 The two eigenvalues are $\lambda_\pm=h_t\pm\lvert\vec h_\Psi\rvert$. The display is not a construction: it is an identity, and it is the spectral theorem for this sector. The proof is one multiplication, and it uses the one algebraic accident of the sector,
@@ -233,7 +233,7 @@ $$
 
 so that $i\vec u$ is a root of $+e_t$ and the two halves of the axis are idempotents.
 
-The idempotents are the measurement axes, and they are one family. The family $\{\tilde\Pi_1(\vec u)\}$ is a two-sphere: one idempotent for each unit direction, with $\tilde\Pi_1(-\vec u)=\tilde\Pi_2(\vec u)$. The axis is a parameter and not a datum of the algebra, so an observable is an axis together with two numbers, and the algebra supplies no axis of its own. A physical statement that names a direction is using the direction as a parameter; a physical statement that names no direction cannot be about a measurement.
+The idempotents are the measurement axes, and they are one family. The family $\{\tilde\Pi_{\mathrm{id},1}(\vec u)\}$ is a two-sphere: one idempotent for each unit direction, with $\tilde\Pi_{\mathrm{id},1}(-\vec u)=\tilde\Pi_{\mathrm{id},2}(\vec u)$. The axis is a parameter and not a datum of the algebra, so an observable is an axis together with two numbers, and the algebra supplies no axis of its own. A physical statement that names a direction is using the direction as a parameter; a physical statement that names no direction cannot be about a measurement.
 
 The identity is the degenerate observable. At $\vec h_\Psi=0$ the element is $h_te_t$, central, and the two eigenvalues coincide at $h_t$. The spectral decomposition then fails to determine an axis: every idempotent family gives the same element. The degenerate case is not a defect of the formula but the statement that an observable proportional to the unit carries no direction, and a measurement of it produces the same number in every state. The vector part is what a measurement discriminates, and the scalar part is what it adds to every outcome.
 
@@ -278,7 +278,7 @@ The normalisation is one real condition, the positivity is one inequality, and t
 The eigenvalues are the radius and the sign of the radius. The eigenvalue formula of the previous section, applied at $h_t=\tfrac12$ and $\lvert\vec h_\Psi\rvert=\tfrac12\lvert\vec s_{\Psi}\rvert$, gives
 
 $$
-\tilde{Ϛ}_\Psi=\frac{1+r}{2}\,\tilde\Pi_1(\vec u_s)+\frac{1-r}{2}\,\tilde\Pi_2(\vec u_s),
+\tilde{Ϛ}_\Psi=\frac{1+r}{2}\,\tilde\Pi_{\mathrm{id},1}(\vec u_s)+\frac{1-r}{2}\,\tilde\Pi_{\mathrm{id},2}(\vec u_s),
 \qquad
 r=\lvert\vec s_{\Psi}\rvert,
 \qquad
@@ -287,7 +287,7 @@ $$
 
 so the spectrum of a state is $\tfrac12(1\pm r)$. Both eigenvalues are non-negative exactly when $r\le1$, and their sum is one. The state's two eigenvalues therefore carry one number between them, and that number is the radius.
 
-The boundary is the pure states and it is a sphere. At $r=1$ one eigenvalue is one and the other is zero, the state is an idempotent, and the idempotents of the sector are exactly the elements $\tilde\Pi_1(\vec u)$ of the two-sphere. At $r=0$ the state is $\tfrac12 e_t$, both eigenvalues are $\tfrac12$, and no measurement prefers either outcome. Between them the state is mixed, and the direction $\vec u_s$ is the axis along which the state is most definite: the outcome along that axis has probability $\tfrac12(1+r)$, which decreases with the mixedness.
+The boundary is the pure states and it is a sphere. At $r=1$ one eigenvalue is one and the other is zero, the state is an idempotent, and the idempotents of the sector are exactly the elements $\tilde\Pi_{\mathrm{id},1}(\vec u)$ of the two-sphere. At $r=0$ the state is $\tfrac12 e_t$, both eigenvalues are $\tfrac12$, and no measurement prefers either outcome. Between them the state is mixed, and the direction $\vec u_s$ is the axis along which the state is most definite: the outcome along that axis has probability $\tfrac12(1+r)$, which decreases with the mixedness.
 
 Purity is twice the Hermitian norm. The scalar part of the square of the state is the standard measure, and in the sector it is the Hermitian form twice,
 
@@ -374,10 +374,10 @@ $$
 
 whose scalar part is $\tfrac12(h_t-\vec s_{\Psi}\cdot\vec h_\Psi)$; and the star in the numerator is the identity on the sector, so the numerator is $\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde H_\Psi)$ and the denominator is $\mathrm{Sc}(\tilde{Ϛ}_\Psi)=\tfrac12$. The quotient is $h_t+\vec s_{\Psi}\cdot\vec h_\Psi$. The sign that appears in the product and disappears in the quotient is the sign of the cross-product term, and it cancels because the term is a real pure quaternion with no scalar part.
 
-A measurement along an axis is the case of two idempotents. For the observable $\tilde\Pi_1(\vec u)=\tfrac12(e_t+i\vec u)$, whose eigenvalues are one and zero and whose axis is $\vec u$, the weight is
+A measurement along an axis is the case of two idempotents. For the observable $\tilde\Pi_{\mathrm{id},1}(\vec u)=\tfrac12(e_t+i\vec u)$, whose eigenvalues are one and zero and whose axis is $\vec u$, the weight is
 
 $$
-p_+=\frac{\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_1(\vec u)\bigr)}{\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\bigr)}
+p_+=\frac{\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_{\mathrm{id},1}(\vec u)\bigr)}{\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\bigr)}
 =\tfrac12\bigl(1+\vec u\cdot\vec s_{\Psi}\bigr),
 \qquad
 p_-=\tfrac12\bigl(1-\vec u\cdot\vec s_{\Psi}\bigr),
@@ -385,7 +385,7 @@ p_-=\tfrac12\bigl(1-\vec u\cdot\vec s_{\Psi}\bigr),
 p_++p_-=1 .
 $$
 
-The two weights add to one because the two idempotents add to the unit, $\tilde\Pi_1+\tilde\Pi_2=e_t$, and the pairing is linear in its first slot. This is the analyser transmission law: the fraction of a beam transmitted by an analyser along $\vec u$ when the preparation is along $\vec s_{\Psi}$.
+The two weights add to one because the two idempotents add to the unit, $\tilde\Pi_{\mathrm{id},1+}\tilde\Pi_{\mathrm{id},2}=e_t$, and the pairing is linear in its first slot. This is the analyser transmission law: the fraction of a beam transmitted by an analyser along $\vec u$ when the preparation is along $\vec s_{\Psi}$.
 
 Written in the angle between the two axes it is the half-angle law. With $\vec u\cdot\vec s_{\Psi}=r\cos\theta$, where $\theta$ is the angle between the measurement axis and the state's axis,
 
@@ -448,7 +448,7 @@ $$
 
 The two inequalities are the two conditions $\tilde{\mathcal E}_{\Psi}\ge0$ and $e_t-\tilde{\mathcal E}_{\Psi}\ge0$, each of them the cone condition of the observable section applied to one of the two elements. The interval is a double cone with apexes at zero and at the unit, and its widest cross-section is at $a=\tfrac12$.
 
-The projections are the extreme points. At $a=\tfrac12$ and $\lvert\vec w\rvert=\tfrac12$ the effect is $\tilde\Pi_1(\vec u)=\tfrac12(e_t+i\vec u)$, an idempotent, and no idempotent lies in the interior of the interval. The interval is therefore the convex hull of the projections plus the two endpoints, and the projections are the measurements with a definite outcome. The effect algebra of the sector is the interval of its own order, and the projection lattice is the two-sphere of axes together with zero and the unit.
+The projections are the extreme points. At $a=\tfrac12$ and $\lvert\vec w\rvert=\tfrac12$ the effect is $\tilde\Pi_{\mathrm{id},1}(\vec u)=\tfrac12(e_t+i\vec u)$, an idempotent, and no idempotent lies in the interior of the interval. The interval is therefore the convex hull of the projections plus the two endpoints, and the projections are the measurements with a definite outcome. The effect algebra of the sector is the interval of its own order, and the projection lattice is the two-sphere of axes together with zero and the unit.
 
 A general resolution of the unit is a measurement. A finite family $\{\tilde{\mathcal E}_{\Psi,k}\}$ with $\tilde{\mathcal E}_{\Psi,k}\ge0$ and $\sum_k\tilde{\mathcal E}_{\Psi,k}=e_t$ is a POVM, and the weight of the $k$-th outcome is
 
@@ -483,7 +483,7 @@ which vanishes exactly at the endpoint. The number $\eta$ is the sharpness of th
 Three outcomes show that the projection lattice is not the whole story. With three unit vectors $\vec u_0,\vec u_1,\vec u_2$ at $120^\circ$ apart, so that $\vec u_0+\vec u_1+\vec u_2=0$, the three effects
 
 $$
-\tilde{\mathcal E}_{\Psi,k}=\tfrac13\bigl(e_t+i\vec u_k\bigr)=\tfrac23\,\tilde\Pi_1(\vec u_k),
+\tilde{\mathcal E}_{\Psi,k}=\tfrac13\bigl(e_t+i\vec u_k\bigr)=\tfrac23\,\tilde\Pi_{\mathrm{id},1}(\vec u_k),
 \qquad
 k=0,1,2,
 $$
@@ -501,15 +501,15 @@ The boundary carries two metric structures, and both come from the algebra. The 
 The transition probability is the Hermitian pairing of two idempotents. For two pure states on the axes $\vec u_1$ and $\vec u_2$,
 
 $$
-2\,\mathrm{Sc}\bigl(\tilde\Pi_1(\vec u_1)\tilde\Pi_1(\vec u_2)\bigr)=\tfrac12\bigl(1+\vec u_1\cdot\vec u_2\bigr)=\cos^{2}\frac{\theta}{2},
+2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id},1}(\vec u_1)\tilde\Pi_{\mathrm{id},1}(\vec u_2)\bigr)=\tfrac12\bigl(1+\vec u_1\cdot\vec u_2\bigr)=\cos^{2}\frac{\theta}{2},
 $$
 
 with $\theta$ the angle between the axes. The pairing is symmetric in the two states and it is bounded between zero and one, so it is the squared overlap of the two rays, and the half-angle is the double cover again.
 
-The line element is the quaternionic norm of a displacement, and that is why the factor is a quarter. The norm vanishes on a pure state, so it cannot be a metric there; what it measures is the second-order displacement of the state along the sphere. For a tangential displacement $\delta\tilde\Pi=\tfrac12 i\,\delta\vec u$, orthogonal displacements adding in quadrature,
+The line element is the quaternionic norm of a displacement, and that is why the factor is a quarter. The norm vanishes on a pure state, so it cannot be a metric there; what it measures is the second-order displacement of the state along the sphere. For a tangential displacement $\delta\tilde\Pi_{\mathrm{id}}=\tfrac12 i\,\delta\vec u$, orthogonal displacements adding in quadrature,
 
 $$
-ds^{2}=-\langle\delta\tilde\Pi\rangle_{\natural}\Big|_{\text{tangential}}
+ds^{2}=-\langle\delta\tilde\Pi_{\mathrm{id}}\rangle_{\natural}\Big|_{\text{tangential}}
 =\tfrac14\lvert d\vec u\rvert^{2}
 =\tfrac14\bigl(d\theta^{2}+\sin^{2}\theta\,d\theta_{\mathrm{azm}}^{2}\bigr),
 $$
@@ -525,7 +525,7 @@ $$
 satisfies $J^{2}=-1$ on the tangent plane, so it is an almost-complex structure, and it is integrable because the sphere is a projective line. It is the algebra's own antisymmetric product, restricted to the boundary. The metric is invariant under it and the associated two-form is
 
 $$
-\omega(\delta_1,\delta_2)=-\,i\,\mathrm{Sc}\bigl(\tilde\Pi\,[\delta_1\tilde\Pi,\delta_2\tilde\Pi]\bigr)
+\omega(\delta_1,\delta_2)=-\,i\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id}}\,[\delta_1\tilde\Pi_{\mathrm{id}},\delta_2\tilde\Pi_{\mathrm{id}}]\bigr)
 =\tfrac14\,\vec u\cdot(\delta_1\vec u\times\delta_2\vec u)
 =\tfrac14\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}} .
 $$
@@ -543,7 +543,7 @@ The distances are the same information as the probabilities. The geodesic distan
 $$
 d_{\mathrm{FS}}=\arccos\bigl\lvert\cos\tfrac{\theta}{2}\bigr\rvert=\frac{\theta}{2},
 \qquad
-D\bigl(\tilde\Pi_1(\vec u_1),\tilde\Pi_1(\vec u_2)\bigr)=\sin d_{\mathrm{FS}} .
+D\bigl(\tilde\Pi_{\mathrm{id},1}(\vec u_1),\tilde\Pi_{\mathrm{id},1}(\vec u_2)\bigr)=\sin d_{\mathrm{FS}} .
 $$
 
 Two pure states at a right angle on the sphere are therefore at a Fubini–Study distance of $\pi/4$ and at a trace distance of $1/\sqrt{2}$, and orthogonal states are at a distance of $\pi/2$ and trace distance one. **The geometry and the statistics are the same numbers in two parametrisations.**
@@ -701,7 +701,7 @@ The correspondence explains the asymmetry of the two preserved groups. The mater
 
 ### I.12.m — The State Is a Ray and Not a Vector
 
-Read: the state $\tilde{Ϛ}_\Psi=\tfrac12(e_t+i\vec s_{\Psi})$, the idempotents $\tilde\Pi_1(\vec u)$, and the Bloch vector $\vec s_{\Psi}=-\vec v/c$.
+Read: the state $\tilde{Ϛ}_\Psi=\tfrac12(e_t+i\vec s_{\Psi})$, the idempotents $\tilde\Pi_{\mathrm{id},1}(\vec u)$, and the Bloch vector $\vec s_{\Psi}=-\vec v/c$.
 
 The two objects that the standard formalism calls a state are different here, and only one of them is in this sector. A state vector is an element of the spinor module; the state of this entry is an element of the sector. The map between them is the rank-one construction, $\xi\mapsto\xi\xi^{*}$, and it is not injective: two spinors that differ by a central phase give the same idempotent. The phase is the one thing the map loses, and it is lost because it is central.
 
@@ -713,7 +713,7 @@ Boundary. The entry does not construct the spinor module, does not state which s
 
 ### I.12.n — A Pure State Is a Null Element
 
-Read: $N(\tilde\Pi_{1,2})=0$, $2\,\mathrm{Sc}(\tilde\Pi_{1,2})=1$, and the zero-divisor cone.
+Read: $N(\tilde\Pi_{\mathrm{id},1,2})=0$, $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1,2})=1$, and the zero-divisor cone.
 
 The state of maximal information has zero weight in the sector's own form. The idempotents are null, $N=0$, so the pure states are exactly the elements of the sector that the quaternionic norm cannot see. The form that measures the interval of an event annihilates the state of a completely known system, and it does so at the same time as the scalar part takes its value $\tfrac12$. The two facts are compatible because the two forms are different.
 
@@ -811,7 +811,7 @@ Boundary. The metric statement is exact on the pure states. On the interior the 
 
 ### I.12.v — The Commutator Is an Area
 
-Read: $J_{\vec u}(v)=\tfrac12[\vec u,v]$, $\omega=-i\operatorname{Sc}(\tilde\Pi[\delta_1\tilde\Pi,\delta_2\tilde\Pi])$, and the total area $\pi$.
+Read: $J_{\vec u}(v)=\tfrac12[\vec u,v]$, $\omega=-i\operatorname{Sc}(\tilde\Pi_{\mathrm{id}}[\delta_1\tilde\Pi_{\mathrm{id}},\delta_2\tilde\Pi_{\mathrm{id}}])$, and the total area $\pi$.
 
 The antisymmetric product of the algebra is the complex structure of the state space. On the sphere of pure states, the commutator with the state's own axis is a rotation by a right angle in the tangent plane, and it squares to minus the identity. The algebra's bracket is therefore not only the measure of non-commutation; at a state it is the operation that turns a displacement into an orthogonal one.
 
@@ -907,7 +907,7 @@ The two entries of this section are one statement about one cone. A particle of 
 | the observable | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | real weight, real direction |
 | the spectrum | $\lambda_\pm$ | $h_t\pm\lvert\vec h_\Psi\rvert$ |
 | the axis | $\vec u_\Psi$ | $\vec h_\Psi/\lvert\vec h_\Psi\rvert$ |
-| the idempotent | $\tilde\Pi_{1,2}(\vec u)$ | $\tfrac12(e_t\pm i\vec u)$, pure state on the axis $\vec u$ |
+| the idempotent | $\tilde\Pi_{\mathrm{id},1,2}(\vec u)$ | $\tfrac12(e_t\pm i\vec u)$, pure state on the axis $\vec u$ |
 | the state | $\tilde{Ϛ}_\Psi=\tfrac12(e_t+i\vec s_{\Psi})$ | positive, unit weight, $\lvert\vec s_{\Psi}\rvert\le1$ |
 | the Bloch radius | $r$ | $\lvert\vec s_{\Psi}\rvert$, the mixedness, $\tanh\rho$ |
 | the rapidity of the state | $\rho$ | $\mathrm{artanh}\,r$ |

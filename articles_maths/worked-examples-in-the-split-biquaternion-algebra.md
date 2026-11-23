@@ -5,7 +5,7 @@
 
 This article is the computational companion to the article on the split biquaternion algebra. Its purpose is to display, on explicit elements, every construction that the algebraic articles state in general: the basis products, the four involutions and their fixed-point subspaces, the idempotents and the two minimal left ideals, explicit zero-divisor pairs, the four conjugations acting on a concrete element, and the realisation of the two quaternion halves.
 
-The treatment is purely mathematical. Every number is recomputed before it is asserted, and the model used for the calculations is stated: a split biquaternion $\tilde{Q} = \tilde q + j \tilde q'$ with $\tilde q, \tilde q' \in \mathbb{H}$ is written as the pair of real quaternions $(\tilde q, \tilde q')$, with multiplication $(\tilde q_1, \tilde q'_1)(\tilde q_2, \tilde q'_2) = (\tilde q_1\tilde q_2 + \tilde q'_1\tilde q'_2,\ \tilde q_1\tilde q'_2 + \tilde q'_1\tilde q_2)$. No physics is invoked. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra, and the split complex algebra $\mathbb{C}_{\mathrm{spl}}$ from the article on split complex algebra, with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$.
+The treatment is purely mathematical. Every number is recomputed before it is asserted, and the model used for the calculations is stated: a split biquaternion $\tilde{Q} = \tilde q + j \tilde q'$ with $\tilde q, \tilde q' \in \mathbb{H}$ is written as the pair of real quaternions $(\tilde q, \tilde q')$, with multiplication $(\tilde q_1, \tilde q'_1)(\tilde q_2, \tilde q'_2) = (\tilde q_1\tilde q_2 + \tilde q'_1\tilde q'_2,\ \tilde q_1\tilde q'_2 + \tilde q'_1\tilde q_2)$. No physics is invoked. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra, and the split complex algebra $\mathbb{C}_{\mathrm{spl}}$ from the article on split complex algebra, with its idempotents $\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_{\mathrm{id},2} = \tfrac{1}{2}(1 - j)$.
 
 Throughout,
 $$
@@ -48,16 +48,16 @@ $$
 \;}.
 $$
 
-This can be verified either from the scalar-vector formula, using $Q_t = 1 + j$, $\vec Q = 2 \vec e_x + (1 - j) \vec e_y$, or from the idempotent components: since $\tilde\Pi_1^2 = \tilde\Pi_1$, $\tilde\Pi_2^2 = \tilde\Pi_2$ and $\tilde\Pi_1 \tilde\Pi_2 = 0$,
+This can be verified either from the scalar-vector formula, using $Q_t = 1 + j$, $\vec Q = 2 \vec e_x + (1 - j) \vec e_y$, or from the idempotent components: since $\tilde\Pi_{\mathrm{id},1}^2 = \tilde\Pi_{\mathrm{id},1}$, $\tilde\Pi_{\mathrm{id},2}^2 = \tilde\Pi_{\mathrm{id},2}$ and $\tilde\Pi_{\mathrm{id},1} \tilde\Pi_{\mathrm{id},2} = 0$,
 
 $$
-\tilde{Q}^2 = \tilde{Q}_+^2 \tilde\Pi_1 + \tilde{Q}_-^2 \tilde\Pi_2,
+\tilde{Q}^2 = \tilde{Q}_+^2 \tilde\Pi_{\mathrm{id},1} + \tilde{Q}_-^2 \tilde\Pi_{\mathrm{id},2},
 $$
 
 with $\tilde{Q}_+^2 = (2 + 2 \vec e_x)^2 = 4 + 8 \vec e_x + 4 \vec e_x^2 = 8 \vec e_x$ and $\tilde{Q}_-^2 = (2 \vec e_x + 2 \vec e_y)^2 = 4 \vec e_x^2 + 4(\vec e_x \vec e_y + \vec e_y \vec e_x) + 4 \vec e_y^2 = -8$, the cross terms cancelling. Reassembling,
 
 $$
-(8 \vec e_x) \tilde\Pi_1 + (-8) \tilde\Pi_2 = 4 \vec e_x (1 + j) - 4 (1 - j) = (-4 + 4 \vec e_x) + j (4 + 4 \vec e_x),
+(8 \vec e_x) \tilde\Pi_{\mathrm{id},1} + (-8) \tilde\Pi_{\mathrm{id},2} = 4 \vec e_x (1 + j) - 4 (1 - j) = (-4 + 4 \vec e_x) + j (4 + 4 \vec e_x),
 $$
 
 which agrees with the value above. The agreement of the two routes illustrates the role of the idempotent decomposition as the computational shortcut of the algebra.
@@ -82,7 +82,7 @@ $$
 \tilde q = 1 + 2 \vec e_x + \vec e_y, \qquad \tilde q' = 1 - \vec e_y.
 $$
 
-The idempotent components are $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} = (\tilde q \pm \tilde q') \tilde\Pi_{1,2}$, and since $\tilde q + \tilde q' = 2 + 2 \vec e_x$ and $\tilde q - \tilde q' = 2 \vec e_x + 2 \vec e_y$,
+The idempotent components are $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{\mathrm{id},1,2} = (\tilde q \pm \tilde q') \tilde\Pi_{\mathrm{id},1,2}$, and since $\tilde q + \tilde q' = 2 + 2 \vec e_x$ and $\tilde q - \tilde q' = 2 \vec e_x + 2 \vec e_y$,
 
 $$
 \tilde{Q}_+ = 2 + 2 \vec e_x, \qquad \tilde{Q}_- = 2 \vec e_x + 2 \vec e_y.
@@ -134,34 +134,34 @@ The four projections do not sum to $\tilde{Q}$: the four subspaces overlap — f
 
 ## The Idempotents and the Two Minimal Left Ideals
 
-The idempotents of $\mathbb{B}_{\mathrm{spl}}$ are $0, \tilde\Pi_1, \tilde\Pi_2, 1$, with
+The idempotents of $\mathbb{B}_{\mathrm{spl}}$ are $0, \tilde\Pi_{\mathrm{id},1}, \tilde\Pi_{\mathrm{id},2}, 1$, with
 
 $$
-\tilde\Pi_1 = \tfrac{1}{2}(1 + j), \qquad \tilde\Pi_2 = \tfrac{1}{2}(1 - j), \qquad \tilde\Pi_1 \tilde\Pi_2 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = 1.
+\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + j), \qquad \tilde\Pi_{\mathrm{id},2} = \tfrac{1}{2}(1 - j), \qquad \tilde\Pi_{\mathrm{id},1} \tilde\Pi_{\mathrm{id},2} = 0, \qquad \tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2} = 1.
 $$
 
 They are central and primitive, and they give the idempotent decomposition
 
 $$
 \boxed{\;
-\mathbb{B}_{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2, \qquad \mathbb{H} \tilde\Pi_{1,2} = \{ \tilde{Q} \tilde\Pi_{1,2} : \tilde{Q} \in \mathbb{B}_{\mathrm{spl}} \} \cong \mathbb{H}
+\mathbb{B}_{\mathrm{spl}} = \mathbb{H} \tilde\Pi_{\mathrm{id},1} \oplus \mathbb{H} \tilde\Pi_{\mathrm{id},2}, \qquad \mathbb{H} \tilde\Pi_{\mathrm{id},1,2} = \{ \tilde{Q} \tilde\Pi_{\mathrm{id},1,2} : \tilde{Q} \in \mathbb{B}_{\mathrm{spl}} \} \cong \mathbb{H}
 \;},
 $$
 
 into the two minimal left ideals, each of real dimension $4$. On the concrete element the decomposition reads
 
 $$
-\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2 = (2 + 2 \vec e_x) \tilde\Pi_1 + (2 \vec e_x + 2 \vec e_y) \tilde\Pi_2.
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_{\mathrm{id},1} + \tilde{Q}_- \tilde\Pi_{\mathrm{id},2} = (2 + 2 \vec e_x) \tilde\Pi_{\mathrm{id},1} + (2 \vec e_x + 2 \vec e_y) \tilde\Pi_{\mathrm{id},2}.
 $$
 
-Because $\tilde\Pi_{1,2}$ are central, $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$ are two-sided ideals as well: they are the two quaternion halves of the algebra.
+Because $\tilde\Pi_{\mathrm{id},1,2}$ are central, $\mathbb{H} \tilde\Pi_{\mathrm{id},1}$ and $\mathbb{H} \tilde\Pi_{\mathrm{id},2}$ are two-sided ideals as well: they are the two quaternion halves of the algebra.
 
 ## Explicit Zero Divisors
 
-The simplest zero-divisor pair is the idempotent pair $\tilde\Pi_1 \tilde\Pi_2 = 0$, with both factors nonzero. A less trivial pair is obtained by taking an element of one half and an element of the other:
+The simplest zero-divisor pair is the idempotent pair $\tilde\Pi_{\mathrm{id},1} \tilde\Pi_{\mathrm{id},2} = 0$, with both factors nonzero. A less trivial pair is obtained by taking an element of one half and an element of the other:
 
 $$
-\tilde{Q}_1 = \vec e_x \tilde\Pi_2, \qquad \tilde{Q}_2 = (1 + \vec e_y) \tilde\Pi_1.
+\tilde{Q}_1 = \vec e_x \tilde\Pi_{\mathrm{id},2}, \qquad \tilde{Q}_2 = (1 + \vec e_y) \tilde\Pi_{\mathrm{id},1}.
 $$
 
 In developed form,
@@ -170,15 +170,15 @@ $$
 \tilde{Q}_1 = \tfrac{1}{2} \vec e_x (1 - j) = \tfrac{1}{2} \vec e_x - \tfrac{1}{2} j \vec e_x, \qquad \tilde{Q}_2 = \tfrac{1}{2}(1 + \vec e_y)(1 + j) = \tfrac{1}{2}(1 + j) + \tfrac{1}{2}(1 + j) \vec e_y.
 $$
 
-Since $\tilde\Pi_2 \tilde\Pi_1 = 0$ and $\vec e_x (1 + \vec e_y) = \vec e_x + \vec e_x \vec e_y = \vec e_x + \vec e_z$ is a quaternion,
+Since $\tilde\Pi_{\mathrm{id},2} \tilde\Pi_{\mathrm{id},1} = 0$ and $\vec e_x (1 + \vec e_y) = \vec e_x + \vec e_x \vec e_y = \vec e_x + \vec e_z$ is a quaternion,
 
 $$
 \boxed{\;
-\tilde{Q}_1 \tilde{Q}_2 = \vec e_x (1 + \vec e_y) \tilde\Pi_2 \tilde\Pi_1 = 0
+\tilde{Q}_1 \tilde{Q}_2 = \vec e_x (1 + \vec e_y) \tilde\Pi_{\mathrm{id},2} \tilde\Pi_{\mathrm{id},1} = 0
 \;},
 $$
 
-while neither $\tilde{Q}_1$ nor $\tilde{Q}_2$ is zero. The pair therefore exhibits an explicit zero divisor, and it shows the general shape of the zero divisor set: the zero divisors of $\mathbb{B}_{\mathrm{spl}}$ are exactly the elements with $\tilde{Q}_+ = 0$ or $\tilde{Q}_- = 0$, that is, the union of the two halves $\mathbb{H} \tilde\Pi_2 \cup \mathbb{H} \tilde\Pi_1$. The classification is developed in *Split-Biquaternion Zero Divisors*.
+while neither $\tilde{Q}_1$ nor $\tilde{Q}_2$ is zero. The pair therefore exhibits an explicit zero divisor, and it shows the general shape of the zero divisor set: the zero divisors of $\mathbb{B}_{\mathrm{spl}}$ are exactly the elements with $\tilde{Q}_+ = 0$ or $\tilde{Q}_- = 0$, that is, the union of the two halves $\mathbb{H} \tilde\Pi_{\mathrm{id},2} \cup \mathbb{H} \tilde\Pi_{\mathrm{id},1}$. The classification is developed in *Split-Biquaternion Zero Divisors*.
 
 ## The Two Quaternion Halves Realised
 
@@ -204,7 +204,7 @@ $$
 \tilde{Q} = (1 + j) + 2 \vec e_x + (1 - j) \vec e_y
 $$
 
-the four conjugations act as $\tilde{Q}^{\natural} = (1 + j) - 2 \vec e_x - (1 - j) \vec e_y$, $\bar{\tilde{Q}} = (1 - j) + 2 \vec e_x + (1 + j) \vec e_y$, $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ and $\tilde{Q}^\flat = -\tilde{Q}^{*}$; the four fixed-point subspaces $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ have dimensions $2, 4, 4, 4$ and overlap, so their projections do not sum to the element. The idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ are central and primitive and give the two minimal left ideals $\mathbb{H} \tilde\Pi_{1,2}$; the element decomposes as $\tilde{Q} = (2 + 2 \vec e_x) \tilde\Pi_1 + (2 \vec e_x + 2 \vec e_y) \tilde\Pi_2$ with both components nonzero. An explicit zero-divisor pair is $\tilde{Q}_1 = \vec e_x \tilde\Pi_2$ and $\tilde{Q}_2 = (1 + \vec e_y) \tilde\Pi_1$, with $\tilde{Q}_1 \tilde{Q}_2 = 0$. The isomorphism $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) = (2 + 2 \vec e_x, 2 \vec e_x + 2 \vec e_y)$ realises the two quaternion halves, and the square $\tilde{Q}^2 = (-4 + 4 \vec e_x) + j(4 + 4 \vec e_x)$ agrees whether computed from the product formula or from the idempotent components.
+the four conjugations act as $\tilde{Q}^{\natural} = (1 + j) - 2 \vec e_x - (1 - j) \vec e_y$, $\bar{\tilde{Q}} = (1 - j) + 2 \vec e_x + (1 + j) \vec e_y$, $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ and $\tilde{Q}^\flat = -\tilde{Q}^{*}$; the four fixed-point subspaces $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ have dimensions $2, 4, 4, 4$ and overlap, so their projections do not sum to the element. The idempotents $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(1 \pm j)$ are central and primitive and give the two minimal left ideals $\mathbb{H} \tilde\Pi_{\mathrm{id},1,2}$; the element decomposes as $\tilde{Q} = (2 + 2 \vec e_x) \tilde\Pi_{\mathrm{id},1} + (2 \vec e_x + 2 \vec e_y) \tilde\Pi_{\mathrm{id},2}$ with both components nonzero. An explicit zero-divisor pair is $\tilde{Q}_1 = \vec e_x \tilde\Pi_{\mathrm{id},2}$ and $\tilde{Q}_2 = (1 + \vec e_y) \tilde\Pi_{\mathrm{id},1}$, with $\tilde{Q}_1 \tilde{Q}_2 = 0$. The isomorphism $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) = (2 + 2 \vec e_x, 2 \vec e_x + 2 \vec e_y)$ realises the two quaternion halves, and the square $\tilde{Q}^2 = (-4 + 4 \vec e_x) + j(4 + 4 \vec e_x)$ agrees whether computed from the product formula or from the idempotent components.
 
 ## Summary of Notation
 
@@ -213,12 +213,12 @@ the four conjugations act as $\tilde{Q}^{\natural} = (1 + j) - 2 \vec e_x - (1 -
 | $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ | Split biquaternion algebra, $\cong \mathbb{H} \oplus \mathbb{H}$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $j$ | Split complex unit, central, $j^2 = +1$ |
-| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | The idempotents, $\tilde\Pi_1 + \tilde\Pi_2 = 1$ |
+| $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(1 \pm j)$ | The idempotents, $\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2} = 1$ |
 | $\tilde{Q} = \tilde q + j \tilde q'$ | Concrete element, $\tilde q, \tilde q' \in \mathbb{H}$ |
-| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components in $\mathbb{H}$ |
+| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{\mathrm{id},1,2}$ | Idempotent components in $\mathbb{H}$ |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}, \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}, \mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | The four involution fixed-point subspaces |
-| $\mathbb{H} \tilde\Pi_{1,2}$ | The two minimal left ideals, each $\cong \mathbb{H}$ |
+| $\mathbb{H} \tilde\Pi_{\mathrm{id},1,2}$ | The two minimal left ideals, each $\cong \mathbb{H}$ |
 | $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Idempotent-decomposition isomorphism |
 
 ## Further Reading

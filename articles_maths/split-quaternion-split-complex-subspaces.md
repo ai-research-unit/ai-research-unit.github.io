@@ -7,7 +7,7 @@ The split-quaternion algebra $\mathbb{H}_{\mathrm{spl}}$ contains two copies of 
 
 The split-complex subspaces are the split-quaternion analogues of the **centre** of the biquaternion algebra: in $\mathbb{B}$ the commutative, idempotent-bearing subalgebra is the centre $\mathbb{C}$, which is central. In $\mathbb{H}_{\mathrm{spl}}$ the commutative, idempotent-bearing subalgebras are **not** central — the centre is only the scalar line $\mathbb{R}\cdot 1$ — so the module structure they give is a twisted one, and the contrast is the point of the article.
 
-The article gives the two subalgebras, their bases, dimensions and defining conditions; their idempotents, which are exactly the standard idempotents $\tilde\pi_{1,2}$ for the first plane; the zero divisors they carry; the module structure of the algebra over each, with the twisted multiplication; and the comparison with the centre of $\mathbb{B}$. It closes with examples.
+The article gives the two subalgebras, their bases, dimensions and defining conditions; their idempotents, which are exactly the standard idempotents $\tilde\pi_{\mathrm{id},1,2}$ for the first plane; the zero divisors they carry; the module structure of the algebra over each, with the twisted multiplication; and the comparison with the centre of $\mathbb{B}$. It closes with examples.
 
 ## Definition and Basis
 
@@ -39,18 +39,18 @@ The two subalgebras together with the definite plane $\mathbb{R}[\vec e_x] = \op
 Each split-complex subalgebra is isomorphic to $\mathbb{R} \oplus \mathbb{R}$ and therefore has exactly four idempotents: $0, 1$ and the two nontrivial ones $\tfrac{1}{2}(1 \pm j)$. In $\mathbb{H}_{\mathrm{spl}}$ this gives
 
 $$
-\mathbb{C}_{\mathrm{spl},2}: \quad \tilde\pi_1 = \tfrac{1}{2}(1 + \vec e_y), \quad \tilde\pi_2 = \tfrac{1}{2}(1 - \vec e_y),
+\mathbb{C}_{\mathrm{spl},2}: \quad \tilde\pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + \vec e_y), \quad \tilde\pi_{\mathrm{id},2} = \tfrac{1}{2}(1 - \vec e_y),
 $$
 
 $$
 \mathbb{C}_{\mathrm{spl},3}: \quad v_+ = \tfrac{1}{2}(1 + \vec e_z), \quad v_- = \tfrac{1}{2}(1 - \vec e_z).
 $$
 
-The idempotents $\tilde\pi_{1,2}$ of the first plane are exactly the **standard idempotents** of the algebra, and the companion article *Split-Quaternion Idempotents and Projections* develops them; the pair $v_\pm$ plays the same role inside $\mathbb{C}_{\mathrm{spl},3}$. In either plane the two idempotents are orthogonal and complete, $\tilde\pi_1\tilde\pi_2 = v_+v_- = 0$ and $\tilde\pi_1 + \tilde\pi_2 = v_+ + v_- = 1$, and both have norm zero, $\langle\tilde\pi_{1,2}\rangle_{\natural} = \langle v_\pm\rangle_{\natural} = 0$. Within its own plane each idempotent is central, because the plane is commutative; but it is not central in $\mathbb{H}_{\mathrm{spl}}$, since $\vec e_x \tilde\pi_1 = \tfrac{1}{2}(\vec e_x + \vec e_z) \neq \tfrac{1}{2}(\vec e_x - \vec e_z) = \tilde\pi_1 \vec e_x$.
+The idempotents $\tilde\pi_{\mathrm{id},1,2}$ of the first plane are exactly the **standard idempotents** of the algebra, and the companion article *Split-Quaternion Idempotents and Projections* develops them; the pair $v_\pm$ plays the same role inside $\mathbb{C}_{\mathrm{spl},3}$. In either plane the two idempotents are orthogonal and complete, $\tilde\pi_{\mathrm{id},1}\tilde\pi_{\mathrm{id},2} = v_+v_- = 0$ and $\tilde\pi_{\mathrm{id},1} + \tilde\pi_{\mathrm{id},2} = v_+ + v_- = 1$, and both have norm zero, $\langle\tilde\pi_{\mathrm{id},1,2}\rangle_{\natural} = \langle v_\pm\rangle_{\natural} = 0$. Within its own plane each idempotent is central, because the plane is commutative; but it is not central in $\mathbb{H}_{\mathrm{spl}}$, since $\vec e_x \tilde\pi_{\mathrm{id},1} = \tfrac{1}{2}(\vec e_x + \vec e_z) \neq \tfrac{1}{2}(\vec e_x - \vec e_z) = \tilde\pi_{\mathrm{id},1} \vec e_x$.
 
 ### Subalgebra, Commutativity, Ring Structure
 
-As abstract rings, $\mathbb{C}_{\mathrm{spl},2} \cong \mathbb{C}_{\mathrm{spl},3} \cong \mathbb{R} \oplus \mathbb{R}$: the map sending $q_t + q_y \vec e_y$ to the pair $(q_t + q_y, q_t - q_y)$ is a ring isomorphism, inverse to $(r, s) \mapsto \tfrac{1}{2}(r+s) + \tfrac{1}{2}(r-s) \vec e_y$. Hence each split-complex subspace is a product of two copies of the field $\mathbb{R}$; it has exactly two maximal ideals, the kernels of the two projections, which are the spans of the idempotents $\tilde\pi_{1,2}$. Neither subspace is a field, and each has zero divisors.
+As abstract rings, $\mathbb{C}_{\mathrm{spl},2} \cong \mathbb{C}_{\mathrm{spl},3} \cong \mathbb{R} \oplus \mathbb{R}$: the map sending $q_t + q_y \vec e_y$ to the pair $(q_t + q_y, q_t - q_y)$ is a ring isomorphism, inverse to $(r, s) \mapsto \tfrac{1}{2}(r+s) + \tfrac{1}{2}(r-s) \vec e_y$. Hence each split-complex subspace is a product of two copies of the field $\mathbb{R}$; it has exactly two maximal ideals, the kernels of the two projections, which are the spans of the idempotents $\tilde\pi_{\mathrm{id},1,2}$. Neither subspace is a field, and each has zero divisors.
 
 ### Multiplication Tables
 
@@ -114,10 +114,10 @@ on which $q_t = \pm q_y$; every nonzero element of these lines is a zero divisor
 Each plane is the span of two orthogonal idempotents. In $\mathbb{C}_{\mathrm{spl},2} = \operatorname{span}\{1, \vec e_y\}$ the element $\vec e_y$ is an involution, $\vec e_y^2 = +1$, with eigenvectors $1 \pm \vec e_y$ and eigenvalues $\pm 1$; in $\mathbb{C}_{\mathrm{spl},3} = \operatorname{span}\{1, \vec e_z\}$ the element $\vec e_z$ is an involution with eigenvectors $1 \pm \vec e_z$. Hence each plane is the direct sum of the two idempotent lines,
 
 $$
-\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm \vec e_y) \in \mathbb{C}_{\mathrm{spl},2}, \qquad v_\pm = \tfrac{1}{2}(1 \pm \vec e_z) \in \mathbb{C}_{\mathrm{spl},3},
+\tilde\pi_{\mathrm{id},1,2} = \tfrac{1}{2}(1 \pm \vec e_y) \in \mathbb{C}_{\mathrm{spl},2}, \qquad v_\pm = \tfrac{1}{2}(1 \pm \vec e_z) \in \mathbb{C}_{\mathrm{spl},3},
 $$
 
-with $\tilde\pi_1 + \tilde\pi_2 = 1$, $\tilde\pi_1 \tilde\pi_2 = 0$ and $v_+ + v_- = 1$, $v_+ v_- = 0$. Each plane carries its own splitting of the identity, the first along the $\vec e_y$-eigenlines and the second along the $\vec e_z$-eigenlines, and each is a copy of $\mathbb{R} \oplus \mathbb{R}$; the two planes are the two distinct embeddings of the split-complex algebra that contain the scalar line.
+with $\tilde\pi_{\mathrm{id},1} + \tilde\pi_{\mathrm{id},2} = 1$, $\tilde\pi_{\mathrm{id},1} \tilde\pi_{\mathrm{id},2} = 0$ and $v_+ + v_- = 1$, $v_+ v_- = 0$. Each plane carries its own splitting of the identity, the first along the $\vec e_y$-eigenlines and the second along the $\vec e_z$-eigenlines, and each is a copy of $\mathbb{R} \oplus \mathbb{R}$; the two planes are the two distinct embeddings of the split-complex algebra that contain the scalar line.
 
 ## The Involutions on Them
 
@@ -129,7 +129,7 @@ Both subalgebras are invariant under the two algebra maps that fix the scalar li
 | principal $\alpha$ | $1 \mapsto 1$, $\vec e_y \mapsto -\vec e_y$ | $1 \mapsto 1$, $\vec e_z \mapsto \vec e_z$ |
 | reversal $\rho$ | $1 \mapsto 1$, $\vec e_y \mapsto \vec e_y$ | $1 \mapsto 1$, $\vec e_z \mapsto -\vec e_z$ |
 
-On $\mathbb{C}_{\mathrm{spl},2}$ the conjugation and the principal involution agree and are the nontrivial involution of the split-complex plane, while the reversal is the identity there; on $\mathbb{C}_{\mathrm{spl},3}$ it is the conjugation and the reversal that agree, while the principal involution is the identity. In both planes the nontrivial involution swaps the two idempotents, $\tilde\pi_1 \leftrightarrow \tilde\pi_2$ and $v_+ \leftrightarrow v_-$, and swaps the two isotropic lines.
+On $\mathbb{C}_{\mathrm{spl},2}$ the conjugation and the principal involution agree and are the nontrivial involution of the split-complex plane, while the reversal is the identity there; on $\mathbb{C}_{\mathrm{spl},3}$ it is the conjugation and the reversal that agree, while the principal involution is the identity. In both planes the nontrivial involution swaps the two idempotents, $\tilde\pi_{\mathrm{id},1} \leftrightarrow \tilde\pi_{\mathrm{id},2}$ and $v_+ \leftrightarrow v_-$, and swaps the two isotropic lines.
 
 ## Relations to the Other Subspaces
 
@@ -150,11 +150,11 @@ Together with the scalar line and the vector line complements, the two split-com
 
 ## Comparison With the Centre of $\mathbb{B}$
 
-The biquaternion algebra $\mathbb{B}$ is a $\mathbb{C}$-algebra: its centre $\mathbb{C} = \operatorname{span}\{1, i\}$ is a field and is central, and $\mathbb{B}$ is a free module of rank $4$ over it. The centre of $\mathbb{H}_{\mathrm{spl}}$, by contrast, is only the one-dimensional scalar line $S = \mathbb{R}\cdot 1$, which is a field but too small to make the algebra an algebra over it in a non-trivial way. The subalgebras that bear the split-complex structure, $\mathbb{C}_{\mathrm{spl},2}$ and $\mathbb{C}_{\mathrm{spl},3}$, are commutative but **not** central; this is the precise sense in which the split-complex situation is the "non-central analogue" of the centre of $\mathbb{B}$. The centre of $\mathbb{B}$ is a field, so it has no idempotents other than $0$ and $1$; the split-complex planes are products $\mathbb{R} \oplus \mathbb{R}$, so they carry the nontrivial idempotents $\tilde\pi_{1,2}$ and $v_\pm$. The centre of $\mathbb{B}$ is developed in *Subspaces and Decompositions*; the split-complex subalgebras are developed here.
+The biquaternion algebra $\mathbb{B}$ is a $\mathbb{C}$-algebra: its centre $\mathbb{C} = \operatorname{span}\{1, i\}$ is a field and is central, and $\mathbb{B}$ is a free module of rank $4$ over it. The centre of $\mathbb{H}_{\mathrm{spl}}$, by contrast, is only the one-dimensional scalar line $S = \mathbb{R}\cdot 1$, which is a field but too small to make the algebra an algebra over it in a non-trivial way. The subalgebras that bear the split-complex structure, $\mathbb{C}_{\mathrm{spl},2}$ and $\mathbb{C}_{\mathrm{spl},3}$, are commutative but **not** central; this is the precise sense in which the split-complex situation is the "non-central analogue" of the centre of $\mathbb{B}$. The centre of $\mathbb{B}$ is a field, so it has no idempotents other than $0$ and $1$; the split-complex planes are products $\mathbb{R} \oplus \mathbb{R}$, so they carry the nontrivial idempotents $\tilde\pi_{\mathrm{id},1,2}$ and $v_\pm$. The centre of $\mathbb{B}$ is developed in *Subspaces and Decompositions*; the split-complex subalgebras are developed here.
 
 ## Examples
 
-**Example (an idempotent of the first plane).** For $\tilde\pi_1 = \tfrac{1}{2}(1 + \vec e_y)$ one has $\tilde\pi_1^2 = \tilde\pi_1$, with $\vec e_y \tilde\pi_1 = \tilde\pi_1$ and $\tilde\pi_2 \tilde\pi_1 = 0$; $\langle\tilde\pi_1\rangle_{\natural} = 0$, and $\tilde\pi_1$ is a zero divisor in $\mathbb{C}_{\mathrm{spl},2}$ with $\tilde\pi_1 \tilde\pi_2 = 0$.
+**Example (an idempotent of the first plane).** For $\tilde\pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + \vec e_y)$ one has $\tilde\pi_{\mathrm{id},1}^2 = \tilde\pi_{\mathrm{id},1}$, with $\vec e_y \tilde\pi_{\mathrm{id},1} = \tilde\pi_{\mathrm{id},1}$ and $\tilde\pi_{\mathrm{id},2} \tilde\pi_{\mathrm{id},1} = 0$; $\langle\tilde\pi_{\mathrm{id},1}\rangle_{\natural} = 0$, and $\tilde\pi_{\mathrm{id},1}$ is a zero divisor in $\mathbb{C}_{\mathrm{spl},2}$ with $\tilde\pi_{\mathrm{id},1} \tilde\pi_{\mathrm{id},2} = 0$.
 
 **Example (an invertible element of the second plane).** For $\tilde q = 2 + \vec e_z$, the split-quaternion norm is $N = 4 - 1 = 3$, so $\tilde q$ is invertible with inverse $(2 - \vec e_z)/3$.
 
@@ -166,7 +166,7 @@ The biquaternion algebra $\mathbb{B}$ is a $\mathbb{C}$-algebra: its centre $\ma
 
 The split-quaternion algebra contains two commutative subalgebras $\mathbb{C}_{\mathrm{spl},2} = \operatorname{span}\{1,\vec e_y\}$ and $\mathbb{C}_{\mathrm{spl},3} = \operatorname{span}\{1,\vec e_z\}$, each isomorphic to the split-complex numbers $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$. They meet the scalar line in $\mathbb{R}\cdot 1$, meet the vector subspace in $\mathbb{R} \vec e_y$ and $\mathbb{R} \vec e_z$, and span together the three-dimensional space $\operatorname{span}\{1,\vec e_y,\vec e_z\}$.
 
-The idempotents of $\mathbb{C}_{\mathrm{spl},2}$ are the standard idempotents $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm \vec e_y)$, and those of $\mathbb{C}_{\mathrm{spl},3}$ are $v_\pm = \tfrac{1}{2}(1 \pm \vec e_z)$; in each plane they are central within the plane but not in the algebra. The split-quaternion norm restricts to $q_t^2 - q_y^2$ and $q_t^2 - q_z^2$, of inertia $(1,1)$, and the zero divisors of each plane are the nonzero elements of its two isotropic lines $\mathbb{R}(1\pm \vec e_y)$ and $\mathbb{R}(1\pm \vec e_z)$. The algebra is a free rank-$2$ module over each plane, with the **twisted** multiplication in which the anticommuting generator acts through the conjugation of the coefficient plane; because the planes are not central, the structure is a module and not an algebra structure. This is the non-central analogue of the centre of the biquaternion algebra, which is central and a field and therefore carries no nontrivial idempotents.
+The idempotents of $\mathbb{C}_{\mathrm{spl},2}$ are the standard idempotents $\tilde\pi_{\mathrm{id},1,2} = \tfrac{1}{2}(1 \pm \vec e_y)$, and those of $\mathbb{C}_{\mathrm{spl},3}$ are $v_\pm = \tfrac{1}{2}(1 \pm \vec e_z)$; in each plane they are central within the plane but not in the algebra. The split-quaternion norm restricts to $q_t^2 - q_y^2$ and $q_t^2 - q_z^2$, of inertia $(1,1)$, and the zero divisors of each plane are the nonzero elements of its two isotropic lines $\mathbb{R}(1\pm \vec e_y)$ and $\mathbb{R}(1\pm \vec e_z)$. The algebra is a free rank-$2$ module over each plane, with the **twisted** multiplication in which the anticommuting generator acts through the conjugation of the coefficient plane; because the planes are not central, the structure is a module and not an algebra structure. This is the non-central analogue of the centre of the biquaternion algebra, which is central and a field and therefore carries no nontrivial idempotents.
 
 ## Summary of Notation
 
@@ -176,7 +176,7 @@ The idempotents of $\mathbb{C}_{\mathrm{spl},2}$ are the standard idempotents $\
 | $\mathbb{C}_{\mathrm{spl}}$ | the split-complex numbers, $\mathbb{R}[j]/(j^2-1) \cong \mathbb{R}\oplus\mathbb{R}$ | *Split-Complex Algebra* |
 | $\mathbb{C}_{\mathrm{spl},2} = \operatorname{span}\{1,\vec e_y\}$ | the first split-complex subspace | this article |
 | $\mathbb{C}_{\mathrm{spl},3} = \operatorname{span}\{1,\vec e_z\}$ | the second split-complex subspace | this article |
-| $\tilde\pi_{1,2} = \tfrac{1}{2}(1\pm \vec e_y)$ | the idempotents of $\mathbb{C}_{\mathrm{spl},2}$ (standard idempotents) | *Split-Quaternion Idempotents and Projections* |
+| $\tilde\pi_{\mathrm{id},1,2} = \tfrac{1}{2}(1\pm \vec e_y)$ | the idempotents of $\mathbb{C}_{\mathrm{spl},2}$ (standard idempotents) | *Split-Quaternion Idempotents and Projections* |
 | $v_\pm = \tfrac{1}{2}(1\pm \vec e_z)$ | the idempotents of $\mathbb{C}_{\mathrm{spl},3}$ | this article |
 | $\Pi_{1,2} = \tfrac{1}{2}(1\pm j)$ | the idempotents of the abstract $\mathbb{C}_{\mathrm{spl}}$ | *Split-Complex Algebra* |
 | $S = \mathbb{R}\cdot 1$, $V$ | the scalar and vector subspaces | *Split-Quaternion Scalar and Vector Subspaces* |

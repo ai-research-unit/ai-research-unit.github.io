@@ -59,8 +59,8 @@ and with $B^{2}\neq0$ if $j=1$ and $B^{2}=0$ if $j=0$.
 | $\Sigma_{00}$ | $N=0$, $B^{2}=0$ | doubly degenerate |
 
 **Definition (the strata of $\Sigma_{10}$).** The sector $\Sigma_{10}$ splits into the **scalar stratum**
-$\Sigma_{10}^{\mathrm{s}}=\{Q_te_t:Q_t\in\mathbb{C}^{\times}\}$ and the **Jordan stratum**, whose elements are $Q_t(e_t+\vec\Upsilon)$ with
-$\vec\Upsilon$ a nonzero pure nilpotent.
+$\Sigma_{10}^{\mathrm{s}}=\{Q_te_t:Q_t\in\mathbb{C}^{\times}\}$ and the **Jordan stratum**, whose elements are $Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with
+$\vec\Pi_{\mathrm{nil}}$ a nonzero pure nilpotent.
 
 **Definition (the two spaces).** The carrier is
 

@@ -16,7 +16,7 @@ The corpus studies, for each algebra of the ladder, the classes of element singl
 
 This article does not restate the proofs of those articles. It records the **relations among the classes**, which no single article owns, and the order cone of squares, which is the image of the square map and the order that the algebra carries.
 
-**The results.** The elements of $\mathbb{C}_{\mathrm{spl}}$ fall into the three disjoint classes: the invertibles, the zero element, and the zero divisors. The idempotents are the four elements $0,1,\Pi_{+},\Pi_{-}$; the nontrivial ones are the primitive zero divisors, and $0$ is an idempotent but not a zero divisor. There are no nonzero nilpotents, so the nilpotent class is empty; the square-zero elements are exactly $\{0\}$, which is the root of $0$ and is not a nilpotent under the corpus convention. The roots of $+1$ are the four elements $\pm1,\pm j$, all units; the roots of $-1$ are empty; the roots of a general element exist exactly on the forward cone $\mathcal{C}=\{q\ge|q'|\}$, with four, two, one or no roots according to the position in the cone. The forward cone is a pointed closed convex cone, the image of the square map, and the order it defines is compatible with addition and with multiplication by elements of the cone.
+**The results.** The elements of $\mathbb{C}_{\mathrm{spl}}$ fall into the three disjoint classes: the invertibles, the zero element, and the zero divisors. The idempotents are the four elements $0,1,\Pi_{\mathrm{id},+},\Pi_{\mathrm{id},-}$; the nontrivial ones are the primitive zero divisors, and $0$ is an idempotent but not a zero divisor. There are no nonzero nilpotents, so the nilpotent class is empty; the square-zero elements are exactly $\{0\}$, which is the root of $0$ and is not a nilpotent under the corpus convention. The roots of $+1$ are the four elements $\pm1,\pm j$, all units; the roots of $-1$ are empty; the roots of a general element exist exactly on the forward cone $\mathcal{C}=\{q\ge|q'|\}$, with four, two, one or no roots according to the position in the cone. The forward cone is a pointed closed convex cone, the image of the square map, and the order it defines is compatible with addition and with multiplication by elements of the cone.
 
 ## The Classes and Their Articles
 
@@ -25,15 +25,15 @@ This article does not restate the proofs of those articles. It records the **rel
 | class | defining equation or condition | set in $\mathbb{C}_{\mathrm{spl}}$ | article |
 |---|---|---|---|
 | units | $QB=1$ soluble | $\{Q_{+}Q_{-}\neq0\}$ | *Norm and Invertibility in the General Split-Complex Algebra* |
-| zero divisors | $Q\neq0$, $QB=0$ with $B\neq0$ | $\mathbb{R}^{\times}\Pi_{+}\cup\mathbb{R}^{\times}\Pi_{-}$ | *Zero Divisors of the Split-Complex Algebra* |
+| zero divisors | $Q\neq0$, $QB=0$ with $B\neq0$ | $\mathbb{R}^{\times}\Pi_{\mathrm{id},+}\cup\mathbb{R}^{\times}\Pi_{\mathrm{id},-}$ | *Zero Divisors of the Split-Complex Algebra* |
 | annihilators | $\{B:QB=0\}$ | $\{0\}$ off $\mathcal{N}$, the opposite line on $\mathcal{N}\setminus\{0\}$, and $\mathbb{C}_{\mathrm{spl}}$ at $0$ | *Annihilators of the Split-Complex Algebra* |
-| idempotents | $\Pi^{2}=\Pi$ | $\{0,1,\Pi_{+},\Pi_{-}\}$ | *Square Roots of One and the Idempotents of the Split-Complex Algebra* |
+| idempotents | $\Pi_{\mathrm{id}}^{2}=\Pi_{\mathrm{id}}$ | $\{0,1,\Pi_{\mathrm{id},+},\Pi_{\mathrm{id},-}\}$ | *Square Roots of One and the Idempotents of the Split-Complex Algebra* |
 | roots of $+1$ | $Ζ^{2}=1$ | $\{1,-1,j,-j\}$ | *Square Roots of One and the Idempotents of the Split-Complex Algebra* |
 | roots of $0$ | $Ζ^{2}=0$ | $\{0\}$ | *Square Roots of Zero and the Nilpotents of the Split-Complex Algebra* |
-| nilpotents | $\Upsilon\neq0$, $\Upsilon^{n}=0$ | $\varnothing$ | *Square Roots of Zero and the Nilpotents of the Split-Complex Algebra* |
+| nilpotents | $\Pi_{\mathrm{nil}}\neq0$, $\Pi_{\mathrm{nil}}^{n}=0$ | $\varnothing$ | *Square Roots of Zero and the Nilpotents of the Split-Complex Algebra* |
 | roots of $-1$ | $Ζ^{2}=-1$ | $\varnothing$ | *Square Roots of One and the Idempotents of the Split-Complex Algebra* |
-| roots of a general $Q$ | $Ζ^{2}=Q$ | $\varepsilon_{+}\sqrt{Q_{+}}\Pi_{+}+\varepsilon_{-}\sqrt{Q_{-}}\Pi_{-}$ over the real signs; nonempty exactly when $Q_{+},Q_{-}\ge0$ | *Square Roots of a General Element in the Split-Complex Algebra* |
-| ideals | additive subgroups closed under multiplication | $0$, $\mathbb{R}\Pi_{+}$, $\mathbb{R}\Pi_{-}$, $\mathbb{C}_{\mathrm{spl}}$ | *Ideals and Peirce Decomposition of the Split-Complex Algebra* |
+| roots of a general $Q$ | $Ζ^{2}=Q$ | $\varepsilon_{+}\sqrt{Q_{+}}\Pi_{\mathrm{id},+}+\varepsilon_{-}\sqrt{Q_{-}}\Pi_{\mathrm{id},-}$ over the real signs; nonempty exactly when $Q_{+},Q_{-}\ge0$ | *Square Roots of a General Element in the Split-Complex Algebra* |
+| ideals | additive subgroups closed under multiplication | $0$, $\mathbb{R}\Pi_{\mathrm{id},+}$, $\mathbb{R}\Pi_{\mathrm{id},-}$, $\mathbb{C}_{\mathrm{spl}}$ | *Ideals and Peirce Decomposition of the Split-Complex Algebra* |
 
 ## The Inclusions and the Disjointness
 
@@ -49,15 +49,15 @@ For $Q\in\mathbb{C}_{\mathrm{spl}}$ exactly one of the following holds:
 
 **Proof.** This is the three-way classification of *Norm and Invertibility in the General Split-Complex Algebra*, read in the idempotent coordinates.
 
-So the invertibles and the zero divisors do not meet, and the origin is neither. The non-invertibles are the origin and the zero divisors; they do not form an ideal, because $\Pi_{+}+\Pi_{-}=1$.
+So the invertibles and the zero divisors do not meet, and the origin is neither. The non-invertibles are the origin and the zero divisors; they do not form an ideal, because $\Pi_{\mathrm{id},+}+\Pi_{\mathrm{id},-}=1$.
 
 ### The Idempotents
 
-The idempotents are $0,1,\Pi_{+},\Pi_{-}$. Their intersections with the three classes are:
+The idempotents are $0,1,\Pi_{\mathrm{id},+},\Pi_{\mathrm{id},-}$. Their intersections with the three classes are:
 
 - $1$ is invertible;
 - $0$ is the zero element;
-- $\Pi_{+}$ and $\Pi_{-}$ are zero divisors.
+- $\Pi_{\mathrm{id},+}$ and $\Pi_{\mathrm{id},-}$ are zero divisors.
 
 The two nontrivial idempotents are the **primitive** zero divisors: every zero divisor is a nonzero real multiple of one of them. The origin is an idempotent, because $0^{2}=0$, and it is not a zero divisor, because the definition excludes it.
 
@@ -86,7 +86,7 @@ The two algebraic norms see different classes, and the difference is the source 
 | norm | value | vanishing set | class it decides |
 |---|---|---|---|
 | $\langle Q\rangle=Q^{2}$ | $\mathbb{C}_{\mathrm{spl}}$-valued | $\{0\}$ | none; it does not decide invertibility |
-| $\langle Q\rangle_{*}=Q\bar Q$ | real, inertia $(1,1)$ | $\mathcal{N}=\mathbb{R}\Pi_{+}\cup\mathbb{R}\Pi_{-}$ | the invertibles (value $\neq0$) and the null cone (value $0$); the zero divisors are the punctured cone |
+| $\langle Q\rangle_{*}=Q\bar Q$ | real, inertia $(1,1)$ | $\mathcal{N}=\mathbb{R}\Pi_{\mathrm{id},+}\cup\mathbb{R}\Pi_{\mathrm{id},-}$ | the invertibles (value $\neq0$) and the null cone (value $0$); the zero divisors are the punctured cone |
 
 The first norm is anisotropic and sees only the origin; the second is indefinite and sees the null cone. The zero divisors are $\mathcal{N}\setminus\{0\}$, the invertibles are the complement of $\mathcal{N}$, and the origin is the only element that lies on neither side of the dichotomy.
 
@@ -96,10 +96,10 @@ The first norm is anisotropic and sees only the origin; the second is indefinite
 
 ### The Image of the Square
 
-For $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ one has
+For $Q=Q_{+}\Pi_{\mathrm{id},+}+Q_{-}\Pi_{\mathrm{id},-}$ one has
 
 $$
-Q^{2}=Q_{+}^{2}\Pi_{+}+Q_{-}^{2}\Pi_{-}.
+Q^{2}=Q_{+}^{2}\Pi_{\mathrm{id},+}+Q_{-}^{2}\Pi_{\mathrm{id},-}.
 $$
 
 The two coordinates of a square are squares of real numbers, hence non-negative, and every non-negative pair is attained by choosing $Q_{\pm}=\pm\sqrt{\cdot}$. Therefore
@@ -114,7 +114,7 @@ $$
 q\ge|q'| .
 $$
 
-The set is the closed cone of angle $90^{\circ}$ between the two null lines $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$, containing the positive real axis. It is the **forward cone** of the split-complex plane.
+The set is the closed cone of angle $90^{\circ}$ between the two null lines $\mathbb{R}\Pi_{\mathrm{id},+}$ and $\mathbb{R}\Pi_{\mathrm{id},-}$, containing the positive real axis. It is the **forward cone** of the split-complex plane.
 
 ### The Cone Is Pointed, Convex and Closed
 
@@ -136,7 +136,7 @@ $$
 
 **Proof.** The order is the componentwise order of $\mathbb{R}^{2}$ transported by the isomorphism $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\oplus\mathbb{R}$, so the first two properties are the componentwise order of the plane. For the third, the idempotent coordinates of a product are the products of the coordinates, and the product of two non-negative reals is non-negative.
 
-The order is not total: $\Pi_{+}$ and $\Pi_{-}$ are incomparable, since their difference $j$ has coordinates $(1,-1)$ and neither $j$ nor $-j$ lies in $\mathcal{C}$.
+The order is not total: $\Pi_{\mathrm{id},+}$ and $\Pi_{\mathrm{id},-}$ are incomparable, since their difference $j$ has coordinates $(1,-1)$ and neither $j$ nor $-j$ lies in $\mathcal{C}$.
 
 ### The Square and the Order
 
@@ -144,7 +144,7 @@ The order is not total: $\Pi_{+}$ and $\Pi_{-}$ are incomparable, since their di
 
 **Proof.** In the idempotent coordinates, $0\le Q_{\pm}\le B_{\pm}$ gives $Q_{\pm}^{2}\le B_{\pm}^{2}$.
 
-**Corollary.** A radicand $Q$ has a square root exactly when $Q\succeq0$; the square root is unique in $\mathcal{C}$, namely $\sqrt{Q_{+}}\,\Pi_{+}+\sqrt{Q_{-}}\,\Pi_{-}$, and the four roots of an interior radicand are the independent sign choices in the two idempotent coordinates.
+**Corollary.** A radicand $Q$ has a square root exactly when $Q\succeq0$; the square root is unique in $\mathcal{C}$, namely $\sqrt{Q_{+}}\,\Pi_{\mathrm{id},+}+\sqrt{Q_{-}}\,\Pi_{\mathrm{id},-}$, and the four roots of an interior radicand are the independent sign choices in the two idempotent coordinates.
 
 The order cone is therefore the exact domain of the square-root problem: the forward cone is the image of the square, the set of radicands that have a root, and the order that the algebra carries. The boundary of the cone is the non-negative part of the null cone of the zero divisors, and the interior is the set of invertibles that are squares.
 
@@ -173,7 +173,7 @@ The value $+1$ has the four roots because the non-central unit $j$ is a root of 
 
 ## Summary
 
-The classes of element of the split-complex algebra are indexed by the articles of the block: the invertibles and the criterion of invertibility by the general norm article, the plain norm by the other, the annihilators by the annihilator article, the roots and the idempotents by the two central-value articles, the general roots by the square-root article, and the ideals by the Peirce article. The invertibles, the zero element and the zero divisors are the three disjoint classes of the plain product; the idempotents are $0,1,\Pi_{+},\Pi_{-}$, with the two nontrivial ones the primitive zero divisors; there are no nonzero nilpotents and the square-zero elements are $\{0\}$; the roots of $+1$ are the four units $\pm1,\pm j$; the roots of $-1$ are empty.
+The classes of element of the split-complex algebra are indexed by the articles of the block: the invertibles and the criterion of invertibility by the general norm article, the plain norm by the other, the annihilators by the annihilator article, the roots and the idempotents by the two central-value articles, the general roots by the square-root article, and the ideals by the Peirce article. The invertibles, the zero element and the zero divisors are the three disjoint classes of the plain product; the idempotents are $0,1,\Pi_{\mathrm{id},+},\Pi_{\mathrm{id},-}$, with the two nontrivial ones the primitive zero divisors; there are no nonzero nilpotents and the square-zero elements are $\{0\}$; the roots of $+1$ are the four units $\pm1,\pm j$; the roots of $-1$ are empty.
 
 The order cone of squares is the forward cone
 
@@ -190,8 +190,8 @@ the image of the square map, a pointed closed convex cone. It defines the compon
 | $\mathbb{C}_{\mathrm{spl}}$ | Split complex algebra |
 | $Q=q+jq'$ | General split complex number |
 | $Q_{\pm}=q\pm q'$ | Idempotent coordinates |
-| $\Pi_{\pm}=\tfrac12(1\pm j)$ | Idempotents |
-| $\mathcal{N}=\mathbb{R}\Pi_{+}\cup\mathbb{R}\Pi_{-}$ | Null cone |
+| $\Pi_{\mathrm{id},\pm}=\tfrac12(1\pm j)$ | Idempotents |
+| $\mathcal{N}=\mathbb{R}\Pi_{\mathrm{id},+}\cup\mathbb{R}\Pi_{\mathrm{id},-}$ | Null cone |
 | $\mathcal{Z}=\mathcal{N}\setminus\{0\}$ | Zero-divisor set |
 | $\mathcal{C}=\{Q:Q_{+}\ge0,Q_{-}\ge0\}=\{q\ge|q'|\}$ | Forward cone, the image of the square |
 | $Q\succeq B\iff Q-B\in\mathcal{C}$ | The order of the forward cone |

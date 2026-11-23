@@ -124,7 +124,7 @@ of real dimension $1$. The imaginary unit line of the centre is the fixed direct
 
 ## Why the Subspace Is Not a Peirce Corner
 
-**The test.** The centre is not one of the four Peirce corners of a basis. A corner is a set $\tilde\Pi_\epsilon\mathbb{B}\tilde\Pi_\delta$ for a pair of idempotents of one axis, of real dimension $2$, and its elements have a product that is not central.
+**The test.** The centre is not one of the four Peirce corners of a basis. A corner is a set $\tilde\Pi_{\mathrm{id},\epsilon}\mathbb{B}\tilde\Pi_{\mathrm{id},\delta}$ for a pair of idempotents of one axis, of real dimension $2$, and its elements have a product that is not central.
 
 **The reason.** A corner is a space of products, and the centre is a space of fixed points. The two are different constructions, and they coincide in no case: a corner of real dimension $2$ contains an element with a non-central product, while every element of the centre has a central product.
 

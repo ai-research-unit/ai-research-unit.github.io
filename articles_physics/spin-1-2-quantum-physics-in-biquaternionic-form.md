@@ -70,7 +70,7 @@ $$
 The state space is the spinor space $\mathbb{C}^2$, and the spin states are the eigenstates of $\vec S\cdot\vec u$ for a unit vector $\vec u$. The spin-up and spin-down projectors along the direction $\vec u$ are
 
 $$
-\tilde\Pi_{1,2}^{\vec u} = \frac{1}{2}\left(I_2 \pm \vec u\cdot\boldsymbol{\sigma}\right).
+\tilde\Pi_{\mathrm{id},1,2}^{\vec u} = \frac{1}{2}\left(I_2 \pm \vec u\cdot\boldsymbol{\sigma}\right).
 $$
 
 These are Hermitian, idempotent, and of trace 1. They are the pure-state projectors of the spin system.
@@ -158,24 +158,24 @@ The idempotents of $\mathbb{B}_{\Psi}$ are the pure-state idempotents of the spi
 **Statement.** The idempotents of $\mathbb{B}_{\Psi}$ are exactly the elements
 
 $$
-\tilde\Pi_{1,2} = \tfrac{1}{2}\left(e_t \pm \vec u i\right),
+\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}\left(e_t \pm \vec u i\right),
 $$
 
 where $\vec u = u_x \vec e_x + u_y \vec e_y + u_z \vec e_z$ is a unit pure real quaternion, $u_x^2 + u_y^2 + u_z^2 = 1$.
 
-Properties. Each such $\tilde\Pi_{1,2}$ satisfies:
+Properties. Each such $\tilde\Pi_{\mathrm{id},1,2}$ satisfies:
 
-1. Hermitian: $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$, since $\tilde\Pi_{1,2} \in \mathbb{B}_{\Psi}$.
-2. Idempotent: $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$.
-3. Normalised: $\langle\tilde\Pi_{1,2},e_t\rangle_{*} = \tfrac12\langle e_t\rangle$ (the reduction reads this as $2\,\mathrm{Sc}(\tilde\Pi_{1,2}) = 2\,\mathrm{Sc}(\tilde\Pi_{1,2}) = 1$).
-4. Rank one: in the matrix representation, $\tilde\Pi_{1,2}$ maps to a rank-1 projection matrix.
+1. Hermitian: $\tilde\Pi_{\mathrm{id},1,2}^{*} = \tilde\Pi_{\mathrm{id},1,2}$, since $\tilde\Pi_{\mathrm{id},1,2} \in \mathbb{B}_{\Psi}$.
+2. Idempotent: $\tilde\Pi_{\mathrm{id},1,2}^2 = \tilde\Pi_{\mathrm{id},1,2}$.
+3. Normalised: $\langle\tilde\Pi_{\mathrm{id},1,2},e_t\rangle_{*} = \tfrac12\langle e_t\rangle$ (the reduction reads this as $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1,2}) = 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1,2}) = 1$).
+4. Rank one: in the matrix representation, $\tilde\Pi_{\mathrm{id},1,2}$ maps to a rank-1 projection matrix.
 
 Proof. The idempotent form follows from the classification in article 4: every idempotent of $\mathbb{B}$ is $\tfrac{1}{2}(e_t \pm \tilde{Ζ} i)$ with $\tilde{Ζ}$ a root of $-1$. The idempotents in $\mathbb{B}_{\Psi}$ correspond to the "real roots" $\tilde{Ζ} = \pm \vec u$ with $\vec u$ a unit pure real quaternion. The Hermitian, idempotent and normalisation properties are direct computations (article 3).
 
-Identification with spin projectors. Under the isomorphism, $\tilde\Pi_{1,2}$ maps to
+Identification with spin projectors. Under the isomorphism, $\tilde\Pi_{\mathrm{id},1,2}$ maps to
 
 $$
-\tilde\Pi_{1,2} \mapsto \frac{1}{2}\left(I_2 \pm u_x\sigma_1 \pm u_y\sigma_2 \pm u_z\sigma_3\right) = \frac{1}{2}\left(I_2 \pm \vec u\cdot\boldsymbol{\sigma}\right).
+\tilde\Pi_{\mathrm{id},1,2} \mapsto \frac{1}{2}\left(I_2 \pm u_x\sigma_1 \pm u_y\sigma_2 \pm u_z\sigma_3\right) = \frac{1}{2}\left(I_2 \pm \vec u\cdot\boldsymbol{\sigma}\right).
 $$
 
 This is exactly the spin projector $|\pm\vec u\rangle\langle\pm\vec u|$ onto the spin-up or spin-down state along the direction $\vec u$.
@@ -186,28 +186,28 @@ So every spin-1/2 pure state corresponds to exactly one idempotent of $\mathbb{B
 
 The expectation value of an observable in a state is given by the normalised Hermitian form.
 
-**Statement.** For an idempotent $\tilde\Pi \in \mathbb{B}_{\Psi}$ (a pure state) and a Hermitian element $\tilde H_\Psi \in \mathbb{B}_{\Psi}$ (an observable), the quantity
+**Statement.** For an idempotent $\tilde\Pi_{\mathrm{id}} \in \mathbb{B}_{\Psi}$ (a pure state) and a Hermitian element $\tilde H_\Psi \in \mathbb{B}_{\Psi}$ (an observable), the quantity
 
 $$
-\boxed{\;\langle \tilde H_\Psi \rangle_{\tilde\Pi} = \frac{\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}} = 2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})\;}
+\boxed{\;\langle \tilde H_\Psi \rangle_{\tilde\Pi_{\mathrm{id}}} = \frac{\langle\tilde\Pi_{\mathrm{id}},\tilde H_\Psi\rangle_{*}}{\langle\tilde\Pi_{\mathrm{id}},e_t\rangle_{*}} = 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})\;}
 $$
 
-is real and is the Born-rule expectation value of $\tilde H_\Psi$ in the state $\tilde\Pi$; in the $2\times2$ image it reads $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$.
+is real and is the Born-rule expectation value of $\tilde H_\Psi$ in the state $\tilde\Pi_{\mathrm{id}}$; in the $2\times2$ image it reads $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*}) = 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$.
 
-Proof. Under the isomorphism, $\tilde\Pi$ maps to the projector $|\tilde{Ξ}\rangle\langle\tilde{Ξ}|$ and $\tilde H_\Psi$ maps to the Hermitian matrix $H$. The Hermitian form $\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ maps to $\mathrm{Sc}(|\tilde{Ξ}\rangle\langle\tilde{Ξ}| H) = \tfrac12\langle\tilde{Ξ}|H|\tilde{Ξ}\rangle$; dividing by $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ gives $\langle\tilde{Ξ}|H|\tilde{Ξ}\rangle$, which is the standard Born-rule expectation. The biquaternion expression $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ is the same quantity, and the reduction formula is its $2\times2$ reading.
+Proof. Under the isomorphism, $\tilde\Pi_{\mathrm{id}}$ maps to the projector $|\tilde{Ξ}\rangle\langle\tilde{Ξ}|$ and $\tilde H_\Psi$ maps to the Hermitian matrix $H$. The Hermitian form $\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$ maps to $\mathrm{Sc}(|\tilde{Ξ}\rangle\langle\tilde{Ξ}| H) = \tfrac12\langle\tilde{Ξ}|H|\tilde{Ξ}\rangle$; dividing by $\langle\tilde\Pi_{\mathrm{id}},e_t\rangle_{*}=\tfrac12$ gives $\langle\tilde{Ξ}|H|\tilde{Ξ}\rangle$, which is the standard Born-rule expectation. The biquaternion expression $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$ is the same quantity, and the reduction formula is its $2\times2$ reading.
 
 ### Example
 
-Take $\vec u = \vec e_z$, so that $\tilde\Pi_+ = \tfrac{1}{2}(e_t + \vec e_z i)$ corresponds to the spin-up state along the $z$ axis; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and $\tilde\Pi_+$ with its complement $\tilde\Pi_- = \tfrac{1}{2}(e_t - \vec e_z i)$ are its two associated idempotents. Let $\tilde H_\Psi = i \vec e_x$ (the spin observable along the $x$ axis). Then
+Take $\vec u = \vec e_z$, so that $\tilde\Pi_{\mathrm{id},+} = \tfrac{1}{2}(e_t + \vec e_z i)$ corresponds to the spin-up state along the $z$ axis; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and $\tilde\Pi_{\mathrm{id},+}$ with its complement $\tilde\Pi_{\mathrm{id},-} = \tfrac{1}{2}(e_t - \vec e_z i)$ are its two associated idempotents. Let $\tilde H_\Psi = i \vec e_x$ (the spin observable along the $x$ axis). Then
 
 $$
-\tilde\Pi_+ \tilde H_\Psi = \tfrac{1}{2}(e_t + \vec e_z i)(i\vec e_x) = \tfrac{1}{2}(i\vec e_x + \vec e_z i \cdot i \vec e_x) = \tfrac{1}{2}(i\vec e_x - \vec e_z \vec e_x) = \tfrac{1}{2}(i\vec e_x - \vec e_y).
+\tilde\Pi_{\mathrm{id},+} \tilde H_\Psi = \tfrac{1}{2}(e_t + \vec e_z i)(i\vec e_x) = \tfrac{1}{2}(i\vec e_x + \vec e_z i \cdot i \vec e_x) = \tfrac{1}{2}(i\vec e_x - \vec e_z \vec e_x) = \tfrac{1}{2}(i\vec e_x - \vec e_y).
 $$
 
-Dividing by $\langle\tilde\Pi_+,e_t\rangle_{*}=\tfrac12$, i.e. taking twice the scalar part:
+Dividing by $\langle\tilde\Pi_{\mathrm{id},+},e_t\rangle_{*}=\tfrac12$, i.e. taking twice the scalar part:
 
 $$
-2\,\mathrm{Sc}(\tilde\Pi_+ \tilde H_\Psi^{*}) = 2 \cdot 0 = 0,
+2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},+} \tilde H_\Psi^{*}) = 2 \cdot 0 = 0,
 $$
 
 which is the correct expectation $\langle \uparrow_z | S_x | \uparrow_z \rangle = 0$.
@@ -215,13 +215,13 @@ which is the correct expectation $\langle \uparrow_z | S_x | \uparrow_z \rangle 
 Take instead $\tilde H_\Psi = i\vec e_z$ (the spin observable along the $z$ axis):
 
 $$
-\tilde\Pi_+ \tilde H_\Psi = \tfrac{1}{2}(e_t + \vec e_z i)(i\vec e_z) = \tfrac{1}{2}(i\vec e_z + \vec e_z i \cdot i\vec e_z) = \tfrac{1}{2}(i\vec e_z - \vec e_z \vec e_z) = \tfrac{1}{2}(i\vec e_z + e_t).
+\tilde\Pi_{\mathrm{id},+} \tilde H_\Psi = \tfrac{1}{2}(e_t + \vec e_z i)(i\vec e_z) = \tfrac{1}{2}(i\vec e_z + \vec e_z i \cdot i\vec e_z) = \tfrac{1}{2}(i\vec e_z - \vec e_z \vec e_z) = \tfrac{1}{2}(i\vec e_z + e_t).
 $$
 
-Dividing by $\langle\tilde\Pi_+,e_t\rangle_{*}=\tfrac12$, i.e. taking twice the scalar part:
+Dividing by $\langle\tilde\Pi_{\mathrm{id},+},e_t\rangle_{*}=\tfrac12$, i.e. taking twice the scalar part:
 
 $$
-2\,\mathrm{Sc}(\tilde\Pi_+ \tilde H_\Psi^{*}) = 2 \cdot \tfrac{1}{2} = 1,
+2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},+} \tilde H_\Psi^{*}) = 2 \cdot \tfrac{1}{2} = 1,
 $$
 
 which is the correct expectation $\langle \uparrow_z | S_z | \uparrow_z \rangle$ (up to the factor $\frac{\hbar}{2}$, which is absorbed in the normalization).
@@ -343,7 +343,7 @@ We can now make a precise statement about what the biquaternion framework contai
 
 2. The pure states. The idempotents of $\mathbb{B}_{\Psi}$ are the rank-1 idempotents, i.e., the pure states of a spin-1/2 system.
 
-3. The Born rule. The normalised Hermitian form $\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}$ is the Born-rule expectation; in the $2\times2$ image it reads $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$.
+3. The Born rule. The normalised Hermitian form $\langle\tilde\Pi_{\mathrm{id}},\tilde H_\Psi\rangle_{*}/\langle\tilde\Pi_{\mathrm{id}},e_t\rangle_{*}$ is the Born-rule expectation; in the $2\times2$ image it reads $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*}) = 2\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$.
 
 4. The spin rotation group. The $SU(2)$ subgroup of unit-norm biquaternions acts as the spin rotation group.
 
@@ -393,7 +393,7 @@ These questions are open.
 
 ## Summary
 
-The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ contains the complete algebraic structure of a two-state quantum system, which is the spin-1/2 system. Under the isomorphism, the Hermitian subspace $\mathbb{B}_{\Psi}$ corresponds to the space of Hermitian operators on $\mathbb{C}^2$, which are the observables of a spin-1/2 particle. The idempotents of $\mathbb{B}_{\Psi}$, of the form $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \vec u i)$ for a unit pure quaternion $\vec u$, correspond to the rank-1 idempotents, i.e., the pure spin states. The normalised Hermitian form $\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}$ is the Born rule; its $2\times2$ reading is the reduction formula $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$.
+The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ contains the complete algebraic structure of a two-state quantum system, which is the spin-1/2 system. Under the isomorphism, the Hermitian subspace $\mathbb{B}_{\Psi}$ corresponds to the space of Hermitian operators on $\mathbb{C}^2$, which are the observables of a spin-1/2 particle. The idempotents of $\mathbb{B}_{\Psi}$, of the form $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(e_t \pm \vec u i)$ for a unit pure quaternion $\vec u$, correspond to the rank-1 idempotents, i.e., the pure spin states. The normalised Hermitian form $\langle\tilde\Pi_{\mathrm{id}},\tilde H_\Psi\rangle_{*}/\langle\tilde\Pi_{\mathrm{id}},e_t\rangle_{*}$ is the Born rule; its $2\times2$ reading is the reduction formula $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*}) = 2\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$.
 
 The spin rotation group $SU(2)$ is realized in the biquaternion framework as the group of unit-norm biquaternions with real vector part. The full Lorentz group $SL(2,\mathbb{C})$ is realized as the group of unit-norm biquaternions in general, and the Hermitian elements of $\mathbb{B}_{\Psi}$ generate the boosts.
 
@@ -411,9 +411,9 @@ The identification is not an analogy. It is the same mathematics, expressed in t
 | $e_t, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\sigma_1, \sigma_2, \sigma_3$ | Pauli matrices |
-| $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \vec u i)$ | Idempotent (pure spin state) |
+| $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(e_t \pm \vec u i)$ | Idempotent (pure spin state) |
 | $\tilde H_\Psi = h_t e_t + ih_\mu \vec e_\mu$ | Hermitian element (observable) |
-| $\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*} = 2\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ | Born-rule expectation value; scalar-part image $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ |
+| $\langle\tilde\Pi_{\mathrm{id}},\tilde H_\Psi\rangle_{*}/\langle\tilde\Pi_{\mathrm{id}},e_t\rangle_{*} = 2\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$ | Born-rule expectation value; scalar-part image $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$ |
 | $SU(2)$ | Spin rotation group |
 | $SL(2,\mathbb{C})$ | Lorentz group (double cover) |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L},\ (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | Biquaternionic Dirac equation (linear chiral pair) |

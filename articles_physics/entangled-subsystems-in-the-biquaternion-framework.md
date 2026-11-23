@@ -17,7 +17,7 @@ The conventions are those of the companion articles. The biquaternion algebra is
 In the standard formulation, the singlet state is a single vector $|\tilde{Ξ}^-\rangle$ in $\mathbb{C}^2\otimes\mathbb{C}^2$. In the biquaternion formulation, it is a single idempotent of the tensor product:
 
 $$
-\boxed{\;\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right)\;}.
+\boxed{\;\tilde\Pi_{\mathrm{id,singlet}} = \tfrac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right)\;}.
 $$
 
 This is the same object viewed in a different language, but the language matters for how the correlations are read. The singlet is not a pair of systems that then has to be correlated; it is one element of the tensor-product algebra, and its correlations are built into the tensor-product terms $\vec e_\mu\otimes \vec e_\mu$. There is no pair of "two separate things" whose correlation has to be explained; the algebraic object itself is not separable.
@@ -26,7 +26,7 @@ The same is true in Hilbert-space language, since $|\tilde{Ξ}^-\rangle$ is also
 
 ### The singlet as one whole
 
-The language of the preceding paragraph is not only a figure of speech, and it has a precise counterpart in a collective set theory. In classical mereology the whole is primitive and the parts are what a division of the whole produces; a whole has many divisions, and two different divisions do not give two different objects. The singlet is exactly of this kind. It is one algebraic object, the idempotent $\tilde\Pi_{\mathrm{singlet}}$, and the two subsystems appear only when the object is divided, whether by the reduction, by a local projector, or by a change of tensor basis. The divisions differ in their factors and agree in their whole, which is what the mereological language asserts of the parts of an object.
+The language of the preceding paragraph is not only a figure of speech, and it has a precise counterpart in a collective set theory. In classical mereology the whole is primitive and the parts are what a division of the whole produces; a whole has many divisions, and two different divisions do not give two different objects. The singlet is exactly of this kind. It is one algebraic object, the idempotent $\tilde\Pi_{\mathrm{id,singlet}}$, and the two subsystems appear only when the object is divided, whether by the reduction, by a local projector, or by a change of tensor basis. The divisions differ in their factors and agree in their whole, which is what the mereological language asserts of the parts of an object.
 
 Two features of the framework acquire, in this language, the status of definitions rather than of facts. The first is that the entanglement belongs to the whole and not to either division: the reduced state $\tfrac12 e_t$ is the same for the two subsystems, and the correlations are carried by the tensor-product terms of the whole. The second is that the singlet is not a pair of systems that happen to be correlated. The pairing is the tensor product, and the tensor product is the division; the state and its divisibility are the same datum. The mathematics of this interpretation is *Mereology and Collective Set Theory*, where the whole-first construction, the division relation and the passage between a division and its factors are developed for their own sake; the interpretation itself is a **physical interpretation** and is not developed further here.
 
@@ -53,7 +53,7 @@ is maximally entangled for every $\theta_{\mathrm{pha}}$, whereas the twelve pat
 The state of one subsystem is obtained by tracing out the other:
 
 $$
-\boxed{\;\rho_1 = 2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t\;}.
+\boxed{\;\rho_1 = 2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{id,singlet}}) = \tfrac{1}{2}e_t\;}.
 $$
 
 This is the maximally mixed state of a qubit, at the centre of the Bloch ball. Its purity is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}^2) = \tfrac{1}{2}$ and its von Neumann entropy is $\log 2$. In the biquaternion formulation, this mixedness is read off directly. The singlet contains no terms of the form $\vec e_\mu\otimes e_t$ with $\mu \in \{x,y,z\}$, and the entangled terms $\vec e_\mu\otimes \vec e_\mu$ with $\mu \in \{x,y,z\}$ have vanishing scalar part in the second factor: $2\,\mathrm{Sc}_2(\vec e_\mu\otimes \vec e_\mu) = \vec e_\mu\,2\,\mathrm{Sc}(\vec e_\mu) = 0$. So the reduction keeps only the $e_t\otimes e_t$ term and produces the scalar-only element $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic shadow of the entanglement of the joint state.
@@ -63,7 +63,7 @@ This is the maximally mixed state of a qubit, at the centre of the Bloch ball. I
 The spin correlation function, computed in full in *Exercise: The Correlation Function of the Bell States*, is
 
 $$
-\boxed{\;E(\vec u_a, \vec u_b) = \frac{\langle\tilde\Pi_{\mathrm{singlet}},(i\vec u_a)\otimes(i\vec u_b)\rangle_{*}}{\langle\tilde\Pi_{\mathrm{singlet}},e_t\otimes e_t\rangle_{*}} = \frac{\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ((i\vec u_a)\otimes(i\vec u_b))\right)}{\mathrm{Sc}(\tilde\Pi_{\mathrm{singlet}})} = -\vec u_a\cdot\vec u_b\;}.
+\boxed{\;E(\vec u_a, \vec u_b) = \frac{\langle\tilde\Pi_{\mathrm{id,singlet}},(i\vec u_a)\otimes(i\vec u_b)\rangle_{*}}{\langle\tilde\Pi_{\mathrm{id,singlet}},e_t\otimes e_t\rangle_{*}} = \frac{\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{id,singlet}}\circ((i\vec u_a)\otimes(i\vec u_b))\right)}{\mathrm{Sc}(\tilde\Pi_{\mathrm{id,singlet}})} = -\vec u_a\cdot\vec u_b\;}.
 $$
 
 Here $\circ$ denotes the product in $\mathbb{B}\otimes\mathbb{B}$. This is the tensor-product Hermitian form between the state idempotent and the correlation observable, whose scalar-part reading is the last step, the two factors of $4$ cancelling at normalisation. It is the same algebraic operation — the Hermitian form, with the scalar part read last — that gives the Born rule for a single qubit. The correlation function is not a separate postulate; it is the natural pairing between two elements of the tensor-product algebra.
@@ -73,22 +73,22 @@ Here $\circ$ denotes the product in $\mathbb{B}\otimes\mathbb{B}$. This is the t
 The phenomenon of EPR steering — that measuring one particle's spin determines the conditional state of the other — has a particularly clean form in the biquaternion language. Suppose Alice measures particle 1 along $\vec u_a$ and obtains the outcome $+$. The unnormalized post-measurement joint state is
 
 $$
-\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr)\circ \tilde\Pi_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr),
+\bigl(\tilde\Pi_{\mathrm{id}}(\vec u_a)\otimes e_t\bigr)\circ \tilde\Pi_{\mathrm{id,singlet}}\circ\bigl(\tilde\Pi_{\mathrm{id}}(\vec u_a)\otimes e_t\bigr),
 $$
 
-where $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$. Computing directly, using $\tilde\Pi(\vec u_a)\,\vec e_\mu\,\tilde\Pi(\vec u_a) = \tfrac{1}{2}a_\mu(\vec u_a - ie_t)$ for $\mu\in\{x,y,z\}$ and $\vec u_a - ie_t = -2i\tilde\Pi(\vec u_a)$, gives
+where $\tilde\Pi_{\mathrm{id}}(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$. Computing directly, using $\tilde\Pi_{\mathrm{id}}(\vec u_a)\,\vec e_\mu\,\tilde\Pi_{\mathrm{id}}(\vec u_a) = \tfrac{1}{2}a_\mu(\vec u_a - ie_t)$ for $\mu\in\{x,y,z\}$ and $\vec u_a - ie_t = -2i\tilde\Pi_{\mathrm{id}}(\vec u_a)$, gives
 
 $$
-\boxed{\;\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr)\circ \tilde\Pi_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr) = \tfrac{1}{2}\,\tilde\Pi(\vec u_a)\otimes \tilde\Pi(-\vec u_a)\;},
+\boxed{\;\bigl(\tilde\Pi_{\mathrm{id}}(\vec u_a)\otimes e_t\bigr)\circ \tilde\Pi_{\mathrm{id,singlet}}\circ\bigl(\tilde\Pi_{\mathrm{id}}(\vec u_a)\otimes e_t\bigr) = \tfrac{1}{2}\,\tilde\Pi_{\mathrm{id}}(\vec u_a)\otimes \tilde\Pi_{\mathrm{id}}(-\vec u_a)\;},
 $$
 
-where $\tilde\Pi(-\vec u_a) = \tfrac{1}{2}(e_t - i\vec u_a)$. The normalized post-measurement state is therefore the product state
+where $\tilde\Pi_{\mathrm{id}}(-\vec u_a) = \tfrac{1}{2}(e_t - i\vec u_a)$. The normalized post-measurement state is therefore the product state
 
 $$
-\tilde\Pi(\vec u_a)\otimes \tilde\Pi(-\vec u_a).
+\tilde\Pi_{\mathrm{id}}(\vec u_a)\otimes \tilde\Pi_{\mathrm{id}}(-\vec u_a).
 $$
 
-The joint state is now a product: particle 1 is in the pure idempotent $\tilde\Pi(\vec u_a)$, and particle 2 is in the pure idempotent $\tilde\Pi(-\vec u_a)$ — spin-down along the direction Alice chose to measure, irrespective of any distance between the particles.
+The joint state is now a product: particle 1 is in the pure idempotent $\tilde\Pi_{\mathrm{id}}(\vec u_a)$, and particle 2 is in the pure idempotent $\tilde\Pi_{\mathrm{id}}(-\vec u_a)$ — spin-down along the direction Alice chose to measure, irrespective of any distance between the particles.
 
 This is the biquaternion expression of EPR steering. The collapse of the joint state under a local projector factorizes the joint idempotent into a product of idempotents, one on each factor. The "spooky" character is that the direction $\vec u_a$ chosen by Alice appears in the conditional state of particle 2; the "non-spooky" character is that this is a *conditional* statement, not a signal, because the unconditional reduced state of particle 2 is unchanged.
 
@@ -135,7 +135,7 @@ The measurement problem is the fact that standard quantum physics has two kinds 
 The biquaternion framework has something structural to offer here. In standard quantum physics, $*$-unitary evolution and projective collapse are different postulates, governing different types of process. In the biquaternion framework, both are properties of *acting elements* of the algebra:
 
 - **$*$-Unitary elements** $\tilde Q$ satisfy $\tilde Q\tilde Q^{*} = e_t$ and generate reversible evolution by rotor conjugation.
-- **Idempotent elements** $\tilde\Pi$ satisfy $\tilde\Pi^2 = \tilde\Pi$ and generate irreversible projection by the two-sided operation.
+- **Idempotent elements** $\tilde\Pi_{\mathrm{id}}$ satisfy $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$ and generate irreversible projection by the two-sided operation.
 
 The reversible/irreversible dichotomy is not an additional postulate; it is the algebraic dichotomy between two classes of elements of one algebra. This is a genuine reframing: the measurement problem is no longer "two incompatible dynamics glued together" but "one algebra with two classes of elements."
 
@@ -165,7 +165,7 @@ The framework has something to say here, and the development is extensive enough
 In the framework's language, this is the algebraic dichotomy between
 
 $$
-\tilde\Pi_A \otimes \tilde\Pi_B \quad (\text{quantum}) \qquad \text{and} \qquad \tilde Q_A \otimes \tilde\Pi_B \quad (\text{classical}),
+\tilde\Pi_{\mathrm{id},A} \otimes \tilde\Pi_{\mathrm{id},B} \quad (\text{quantum}) \qquad \text{and} \qquad \tilde Q_A \otimes \tilde\Pi_{\mathrm{id},B} \quad (\text{classical}),
 $$
 
 which is the same reversible/irreversible dichotomy that the framework already uses to distinguish evolution from measurement (see *The measurement problem* of this list).
@@ -182,7 +182,7 @@ Collecting the observations above, the biquaternion framework makes the followin
 
 **3. The reduced state's mixedness is the algebraic shadow of entanglement.** The reduction of the singlet produces $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic residue of the entanglement of the joint state.
 
-**4. Steering is a factorization of the joint idempotent.** A local projector applied to the singlet produces a product state $\tilde\Pi(\vec u_a)\otimes \tilde\Pi(-\vec u_a)$, with the second factor determined by Alice's choice of direction. This is the biquaternion form of EPR steering.
+**4. Steering is a factorization of the joint idempotent.** A local projector applied to the singlet produces a product state $\tilde\Pi_{\mathrm{id}}(\vec u_a)\otimes \tilde\Pi_{\mathrm{id}}(-\vec u_a)$, with the second factor determined by Alice's choice of direction. This is the biquaternion form of EPR steering.
 
 **5. No-signaling is cyclicity of the scalar part.** The invariance of the reduced state under local unitaries is the cyclicity of the scalar part applied to the reduction.
 
@@ -260,13 +260,13 @@ The honest position is this. The framework makes certain structural features of 
 | $\mathbb{B}\otimes\mathbb{B}$ | Two-qubit tensor product, $\cong M_4(\mathbb{C})$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_\mu \vec e_\mu\otimes \vec e_\mu)$ | Singlet idempotent |
-| $\tilde\Pi(\pm\vec u_a) = \tfrac{1}{2}(e_t \pm i\vec u_a)$ | Single-qubit idempotents along $\vec u_a$ |
+| $\tilde\Pi_{\mathrm{id,singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_\mu \vec e_\mu\otimes \vec e_\mu)$ | Singlet idempotent |
+| $\tilde\Pi_{\mathrm{id}}(\pm\vec u_a) = \tfrac{1}{2}(e_t \pm i\vec u_a)$ | Single-qubit idempotents along $\vec u_a$ |
 | $\mathrm{Sc}_2(a\otimes b) = a\,\mathrm{Sc}(b)$ | Partial scalar part over the second factor; the reduction is $2\,\mathrm{Sc}_2$ |
-| $\tilde{Ϛ}_{\Psi,1} = 2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t$ | Reduced state of particle 1 |
-| $E(\vec u_a, \vec u_b) = \langle\tilde\Pi_{\mathrm{singlet}},(i\vec u_a)\otimes(i\vec u_b)\rangle_{*}/\langle\tilde\Pi_{\mathrm{singlet}},e_t\otimes e_t\rangle_{*} = 4\,\mathrm{Sc}(\cdots)$ | Correlation function (scalar part at normalisation) |
+| $\tilde{Ϛ}_{\Psi,1} = 2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{id,singlet}}) = \tfrac{1}{2}e_t$ | Reduced state of particle 1 |
+| $E(\vec u_a, \vec u_b) = \langle\tilde\Pi_{\mathrm{id,singlet}},(i\vec u_a)\otimes(i\vec u_b)\rangle_{*}/\langle\tilde\Pi_{\mathrm{id,singlet}},e_t\otimes e_t\rangle_{*} = 4\,\mathrm{Sc}(\cdots)$ | Correlation function (scalar part at normalisation) |
 | $\tilde Q\tilde Q^{*} = e_t$ | $*$-Unitary element (reversible evolution) |
-| $\tilde\Pi^2 = \tilde\Pi$ | Idempotent element (irreversible projection) |
+| $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$ | Idempotent element (irreversible projection) |
 | $\mathrm{Sc}(x\otimes y) = \mathrm{Sc}(x)\cdot\mathrm{Sc}(y)$ | Tensor-product scalar part; a contraction pays $4$ |
 | $2\sqrt{2}$ | Tsirelson bound for the CHSH combination |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

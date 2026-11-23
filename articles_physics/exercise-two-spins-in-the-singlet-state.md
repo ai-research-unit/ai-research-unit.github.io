@@ -39,13 +39,13 @@ It is a **maximally entangled** state: it cannot be written as a product $|\tild
 The projector onto spin-up along $\vec u_a$ for particle 1 is
 
 $$
-\tilde\Pi(\vec u_a) = \frac{1}{2}\left(I + \vec u_a\cdot\boldsymbol{\sigma}\right),
+\tilde\Pi_{\mathrm{id}}(\vec u_a) = \frac{1}{2}\left(I + \vec u_a\cdot\boldsymbol{\sigma}\right),
 $$
 
 and similarly for particle 2 along $\vec u_b$. The joint measurement operator is the tensor product
 
 $$
-P_{++}(\vec u_a,\vec u_b) = \tilde\Pi(\vec u_a)\otimes \tilde\Pi(\vec u_b) = \frac{1}{4}\left(I + \vec u_a\cdot\boldsymbol{\sigma}_1\right)\otimes\left(I + \vec u_b\cdot\boldsymbol{\sigma}_2\right),
+P_{++}(\vec u_a,\vec u_b) = \tilde\Pi_{\mathrm{id}}(\vec u_a)\otimes \tilde\Pi_{\mathrm{id}}(\vec u_b) = \frac{1}{4}\left(I + \vec u_a\cdot\boldsymbol{\sigma}_1\right)\otimes\left(I + \vec u_b\cdot\boldsymbol{\sigma}_2\right),
 $$
 
 where $\boldsymbol{\sigma}_1 = \boldsymbol{\sigma}\otimes I$ acts on particle 1, and $\boldsymbol{\sigma}_2 = I\otimes\boldsymbol{\sigma}$ acts on particle 2.
@@ -95,18 +95,18 @@ $$
 
 ### Step 1: The state
 
-In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{B}_{\Psi}$, of the form $\tilde\Pi(\vec u_m) = \tfrac{1}{2}(e_t + i\vec u_m)$. For a **two-qubit system**, the state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, and a two-qubit pure state is an idempotent of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$.
+In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{B}_{\Psi}$, of the form $\tilde\Pi_{\mathrm{id}}(\vec u_m) = \tfrac{1}{2}(e_t + i\vec u_m)$. For a **two-qubit system**, the state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, and a two-qubit pure state is an idempotent of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$.
 
 The singlet state corresponds to the idempotent
 
 $$
-\boxed{\;\tilde\Pi_{\mathrm{singlet}} = \frac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right)\;}.
+\boxed{\;\tilde\Pi_{\mathrm{id,singlet}} = \frac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right)\;}.
 $$
 
 *Idempotency.* Using $(x\otimes y)\circ(z\otimes w) = (x\circ z)\otimes(y\circ w)$ and the quaternion multiplication rules,
 
 $$
-\tilde\Pi_{\mathrm{singlet}}\circ \tilde\Pi_{\mathrm{singlet}} = \frac{1}{16}\sum_{\mu,\nu\in\{t,x,y,z\}}(e_\mu\circ \vec e_\nu)\otimes(e_\mu\circ \vec e_\nu).
+\tilde\Pi_{\mathrm{id,singlet}}\circ \tilde\Pi_{\mathrm{id,singlet}} = \frac{1}{16}\sum_{\mu,\nu\in\{t,x,y,z\}}(e_\mu\circ \vec e_\nu)\otimes(e_\mu\circ \vec e_\nu).
 $$
 
 For the diagonal pairs $\mu = \nu$, the product $e_\mu\circ e_\mu$ equals $e_t$ for $\mu = t$ and $-e_t$ for $\mu\in\{x,y,z\}$. In both cases the tensor product $(e_\mu\circ e_\mu)\otimes(e_\mu\circ e_\mu)$ equals $e_t\otimes e_t$, so the four diagonal terms contribute $4\,e_t\otimes e_t$ in total.
@@ -120,17 +120,17 @@ $$
 Combining the diagonal and off-diagonal contributions,
 
 $$
-\tilde\Pi_{\mathrm{singlet}}\circ \tilde\Pi_{\mathrm{singlet}} = \frac{1}{16}\cdot 4\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right) = \tilde\Pi_{\mathrm{singlet}}.
+\tilde\Pi_{\mathrm{id,singlet}}\circ \tilde\Pi_{\mathrm{id,singlet}} = \frac{1}{16}\cdot 4\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right) = \tilde\Pi_{\mathrm{id,singlet}}.
 $$
 
-*Contraction.* The contraction is $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{singlet}}) = \frac{1}{4}\sum_{\mu\in\{t,x,y,z\}}\bigl(2\,\mathrm{Sc}(e_\mu)\bigr)^2$. Each $2\,\mathrm{Sc}(e_\mu)$ is $2$ for $\mu = t$ (since $\mathrm{Sc}(e_t) = 1$) and $0$ for $\mu\in\{x,y,z\}$ (since the scalar part of a pure quaternion vanishes). So the sum is $4$, and $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{singlet}}) = \frac{1}{4}\cdot 4 = 1$.
+*Contraction.* The contraction is $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id,singlet}}) = \frac{1}{4}\sum_{\mu\in\{t,x,y,z\}}\bigl(2\,\mathrm{Sc}(e_\mu)\bigr)^2$. Each $2\,\mathrm{Sc}(e_\mu)$ is $2$ for $\mu = t$ (since $\mathrm{Sc}(e_t) = 1$) and $0$ for $\mu\in\{x,y,z\}$ (since the scalar part of a pure quaternion vanishes). So the sum is $4$, and $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id,singlet}}) = \frac{1}{4}\cdot 4 = 1$.
 
 ### Step 2: The measurement operators
 
-The single-qubit pure-state idempotent for spin-up along $\vec u_a$ is $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$. The joint measurement operator is the tensor product
+The single-qubit pure-state idempotent for spin-up along $\vec u_a$ is $\tilde\Pi_{\mathrm{id}}(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$. The joint measurement operator is the tensor product
 
 $$
-\tilde\Pi_{++}(\vec u_a,\vec u_b) = \tilde\Pi(\vec u_a)\otimes \tilde\Pi(\vec u_b) = \frac{1}{4}\left(e_t + i\vec u_a\right)\otimes\left(e_t + i\vec u_b\right).
+\tilde\Pi_{\mathrm{id},++}(\vec u_a,\vec u_b) = \tilde\Pi_{\mathrm{id}}(\vec u_a)\otimes \tilde\Pi_{\mathrm{id}}(\vec u_b) = \frac{1}{4}\left(e_t + i\vec u_a\right)\otimes\left(e_t + i\vec u_b\right).
 $$
 
 ### Step 3: The probability
@@ -138,13 +138,13 @@ $$
 The joint probability is the contraction formula on $\mathbb{B}\otimes\mathbb{B}$:
 
 $$
-p(+,+) = 4\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ \tilde\Pi_{++}(\vec u_a,\vec u_b)\right).
+p(+,+) = 4\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{id,singlet}}\circ \tilde\Pi_{\mathrm{id},++}(\vec u_a,\vec u_b)\right).
 $$
 
 Computing the product,
 
 $$
-\tilde\Pi_{\mathrm{singlet}}\circ \tilde\Pi_{++} = \frac{1}{16}\sum_{\mu\in\{t,x,y,z\}}\left[e_\mu(e_t + i\vec u_a)\right]\otimes\left[e_\mu(e_t + i\vec u_b)\right].
+\tilde\Pi_{\mathrm{id,singlet}}\circ \tilde\Pi_{\mathrm{id},++} = \frac{1}{16}\sum_{\mu\in\{t,x,y,z\}}\left[e_\mu(e_t + i\vec u_a)\right]\otimes\left[e_\mu(e_t + i\vec u_b)\right].
 $$
 
 Applying the tensor-product scalar part,
@@ -205,17 +205,17 @@ These agree with the physical expectation: the singlet state is perfectly anti-c
 
 ## What the Biquaternion Solution Illustrates
 
-**1. Entanglement as a non-product state.** The singlet state $\tilde\Pi_{\mathrm{singlet}}$ is an element of $\mathbb{B}\otimes\mathbb{B}$ that is **not** of the form $\tilde\Pi_1\otimes\tilde\Pi_2$ for any single-qubit idempotents $\tilde\Pi_1, \tilde\Pi_2$. This is the algebraic content of entanglement: the joint state is not a product of the two subsystems' states.
+**1. Entanglement as a non-product state.** The singlet state $\tilde\Pi_{\mathrm{id,singlet}}$ is an element of $\mathbb{B}\otimes\mathbb{B}$ that is **not** of the form $\tilde\Pi_{\mathrm{id},1}\otimes\tilde\Pi_{\mathrm{id},2}$ for any single-qubit idempotents $\tilde\Pi_{\mathrm{id},1}, \tilde\Pi_{\mathrm{id},2}$. This is the algebraic content of entanglement: the joint state is not a product of the two subsystems' states.
 
 **2. The contraction formula generalizes to two qubits.** The joint probability is
 
 $$
-p(+,+) = 4\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ \tilde\Pi_{++}(\vec u_a,\vec u_b)\right),
+p(+,+) = 4\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{id,singlet}}\circ \tilde\Pi_{\mathrm{id},++}(\vec u_a,\vec u_b)\right),
 $$
 
 the natural pairing between the joint state and the joint measurement operator. The contraction factorises over the two factors, $4\,\mathrm{Sc}(x\otimes y) = 2\,\mathrm{Sc}(x)\cdot 2\,\mathrm{Sc}(y)$.
 
-**3. The correlations arise from the tensor-product structure.** The single-qubit idempotents $\tilde\Pi(\vec u_a)$ and $\tilde\Pi(\vec u_b)$ are independent, but the joint state $\tilde\Pi_{\mathrm{singlet}}$ is entangled. The correlation $\vec u_a\cdot\vec u_b$ enters through the cross terms $\sum_\eta \vec e_\eta\otimes \vec e_\eta$ in the singlet idempotent, which couple the two qubits.
+**3. The correlations arise from the tensor-product structure.** The single-qubit idempotents $\tilde\Pi_{\mathrm{id}}(\vec u_a)$ and $\tilde\Pi_{\mathrm{id}}(\vec u_b)$ are independent, but the joint state $\tilde\Pi_{\mathrm{id,singlet}}$ is entangled. The correlation $\vec u_a\cdot\vec u_b$ enters through the cross terms $\sum_\eta \vec e_\eta\otimes \vec e_\eta$ in the singlet idempotent, which couple the two qubits.
 
 **4. The geometry enters through the algebra.** The angle $\theta$ enters through the scalar product $\vec u_a\cdot\vec u_b$, which appears in the contraction formula through the products $\vec e_\nu\vec u_a$ and $\vec e_\nu\vec u_b$. The Bloch sphere geometry of each qubit is thus combined into the joint probability through the algebra of $\mathbb{B}\otimes\mathbb{B}$.
 
@@ -254,9 +254,9 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
 | $|\tilde{Ξ}^-\rangle$ | Singlet state |
-| $\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_\eta \vec e_\eta\otimes \vec e_\eta)$ | Singlet idempotent |
-| $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$ | Single-qubit idempotent |
-| $\tilde\Pi_{++}(\vec u_a,\vec u_b) = \tilde\Pi(\vec u_a)\otimes \tilde\Pi(\vec u_b)$ | Joint idempotent |
+| $\tilde\Pi_{\mathrm{id,singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_\eta \vec e_\eta\otimes \vec e_\eta)$ | Singlet idempotent |
+| $\tilde\Pi_{\mathrm{id}}(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$ | Single-qubit idempotent |
+| $\tilde\Pi_{\mathrm{id},++}(\vec u_a,\vec u_b) = \tilde\Pi_{\mathrm{id}}(\vec u_a)\otimes \tilde\Pi_{\mathrm{id}}(\vec u_b)$ | Joint idempotent |
 | $\mathrm{Sc}(x\otimes y) = \mathrm{Sc}(x)\cdot\mathrm{Sc}(y)$ | Scalar part on the tensor product; a contraction carries $4$ |
 
 ## Further Reading

@@ -4,7 +4,7 @@
 
 An N-regular biquaternion $\tilde Q$ carries two decompositions. The **eigenvalue decomposition** splits the element into two idempotents with two eigenvalues. The **complete polar decomposition** splits the unit factor into a boost and a rotor, and multiplies the result by the modulus. The word it writes is the complete polar decomposition. This article states the dictionary between the two, and states what the dictionary becomes on the wall $B^2=0$, where the second eigenvalue disappears.
 
-The two readings depend on the invariant $B^2=Q_x^2+Q_y^2+Q_z^2$ differently. Off the wall the eigenvalues $\lambda_\pm=Q_t\pm iB$ are distinct, the eigenprojections $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ exist, and they depend on the element. There the eigenvalues fix the modulus and the phase, and the two eigenvalues of the unit factor; the eigenprojections carry the remaining polar data. On the wall the two eigenvalues coalesce at $Q_t$, the eigenprojections diverge, and no eigenbasis exists. The spectral reading does not vanish; it collapses to a Jordan chain, and the spectrum fixes only two numbers, the scalar part $Q_t$ and the sign $\varepsilon$ of the unit factor.
+The two readings depend on the invariant $B^2=Q_x^2+Q_y^2+Q_z^2$ differently. Off the wall the eigenvalues $\lambda_\pm=Q_t\pm iB$ are distinct, the eigenprojections $\tilde\Pi_{\mathrm{id},\pm}=\frac12(e_t\pm\vec{Ζ})$ exist, and they depend on the element. There the eigenvalues fix the modulus and the phase, and the two eigenvalues of the unit factor; the eigenprojections carry the remaining polar data. On the wall the two eigenvalues coalesce at $Q_t$, the eigenprojections diverge, and no eigenbasis exists. The spectral reading does not vanish; it collapses to a Jordan chain, and the spectrum fixes only two numbers, the scalar part $Q_t$ and the sign $\varepsilon$ of the unit factor.
 
 The dictionary is therefore one dictionary with two shapes. Off the wall it is a two-step map: eigenvalues first, eigenprojections second. On the wall the first step collapses to $Q_t\mapsto(Q_t,\varepsilon)$ and the second step carries everything else. The constant part, across the wall, is the scalar factor $\varrho e^{i\theta_{\mathrm{pha}}}$: it is read from the reduced product in both cases, because $\lambda_+\lambda_-=N$ off the wall and $N=Q_t^2$ on it.
 
@@ -26,14 +26,14 @@ $$
 The eigenvalues are distinct exactly when $Q_x^2+Q_y^2+Q_z^2\neq0$. In that case
 
 $$
-\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-,
+\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-},
 \qquad
-\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ}),
+\tilde\Pi_{\mathrm{id},\pm}=\frac12(e_t\pm\vec{Ζ}),
 \qquad
 \vec{Ζ}=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2},
 $$
 
-with $\tilde\Pi_\pm$ primitive, orthogonal and complete, but noncentral. They depend on $\tilde Q$: they are the two idempotents of the pure root $\vec{Ζ}$, and $\vec{Ζ}=\tilde\Pi_+-\tilde\Pi_-$. These are the statements of *The Spectrum of a Biquaternion*, §*The Spectral Criterion* and §*The Spectral Decomposition*.
+with $\tilde\Pi_{\mathrm{id},\pm}$ primitive, orthogonal and complete, but noncentral. They depend on $\tilde Q$: they are the two idempotents of the pure root $\vec{Ζ}$, and $\vec{Ζ}=\tilde\Pi_{\mathrm{id},+-}\tilde\Pi_{\mathrm{id},-}$. These are the statements of *The Spectrum of a Biquaternion*, §*The Spectral Criterion* and §*The Spectral Decomposition*.
 
 | Spectral item | Value |
 |---|---|
@@ -41,8 +41,8 @@ with $\tilde\Pi_\pm$ primitive, orthogonal and complete, but noncentral. They de
 | Sum | $\lambda_++\lambda_-=2Q_t$ |
 | Product | $\lambda_+\lambda_-=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ |
 | Distinctness | $\lambda_+\neq\lambda_-\iff Q_x^2+Q_y^2+Q_z^2\neq0$ |
-| Eigenprojections | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$, $\vec{Ζ}=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ |
-| Decomposition | $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ in the distinct case |
+| Eigenprojections | $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\vec{Ζ})$, $\vec{Ζ}=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ |
+| Decomposition | $\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$ in the distinct case |
 
 ### The Complete Polar Decomposition
 
@@ -161,14 +161,14 @@ $$
 because $\tilde U\tilde U^{\natural}=e_t$. In the distinct case, the unit factor has the spectral decomposition
 
 $$
-\tilde U=\Bigl(U_t+i\bigl(\vec U\cdot\vec U\bigr)^{1/2}\Bigr)\tilde\Pi_+
-+\Bigl(U_t-i\bigl(\vec U\cdot\vec U\bigr)^{1/2}\Bigr)\tilde\Pi_-,
+\tilde U=\Bigl(U_t+i\bigl(\vec U\cdot\vec U\bigr)^{1/2}\Bigr)\tilde\Pi_{\mathrm{id},+}
++\Bigl(U_t-i\bigl(\vec U\cdot\vec U\bigr)^{1/2}\Bigr)\tilde\Pi_{\mathrm{id},-},
 $$
 
 with
 
 $$
-\tilde\Pi_\pm=
+\tilde\Pi_{\mathrm{id},\pm}=
 \frac{\tilde U-\bigl(U_t\mp i(\vec U\cdot\vec U)^{1/2}\bigr)e_t}
 {\pm2i\bigl(\vec U\cdot\vec U\bigr)^{1/2}},
 $$
@@ -179,10 +179,10 @@ The table records the two levels.
 
 | Object | Eigenvalue decomposition | Polar reading |
 |---|---|---|
-| $\tilde Q$ | $\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ | $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
-| $\tilde U=\tilde Q/(\varrho e^{i\theta_{\mathrm{pha}}})$ | $\bigl(U_t+i(\vec U\cdot\vec U)^{1/2}\bigr)\tilde\Pi_++\bigl(U_t-i(\vec U\cdot\vec U)^{1/2}\bigr)\tilde\Pi_-$ | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
+| $\tilde Q$ | $\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$ | $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
+| $\tilde U=\tilde Q/(\varrho e^{i\theta_{\mathrm{pha}}})$ | $\bigl(U_t+i(\vec U\cdot\vec U)^{1/2}\bigr)\tilde\Pi_{\mathrm{id},++}\bigl(U_t-i(\vec U\cdot\vec U)^{1/2}\bigr)\tilde\Pi_{\mathrm{id},-}$ | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
 | Eigenvalues | $\lambda_\pm=\varrho e^{i\theta_{\mathrm{pha}}}\bigl(U_t\pm i(\vec U\cdot\vec U)^{1/2}\bigr)$ | from the boost and the rotor |
-| Eigenprojections | $\tilde\Pi_\pm$ | the spectral data of $\tilde U$ |
+| Eigenprojections | $\tilde\Pi_{\mathrm{id},\pm}$ | the spectral data of $\tilde U$ |
 | Sum | $\lambda_++\lambda_-=2\varrho e^{i\theta_{\mathrm{pha}}}\operatorname{Sc}\tilde U$ | $2\varrho e^{i\theta_{\mathrm{pha}}}\operatorname{Sc}\tilde U$ |
 
 ### The Scalar Part of the Unit Factor
@@ -226,14 +226,14 @@ The formula is the exact obstruction to reading the complete polar decomposition
 | $\vec U\cdot\vec U=1-U_t^2$ | the same | yes |
 | $\theta_{\mathrm{rpd}}/2$, $\theta_{\mathrm{axr}}/2$, $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ separately | the unit factor | no: one real degree of freedom |
 | $\vec u_{\mathrm b},\vec u_{\mathrm r}$ | the unit factor | no: the directions are not in $\operatorname{Sc}\tilde U$ |
-| $\tilde\Pi_\pm$ | $\vec U$ | no: independent spectral data |
+| $\tilde\Pi_{\mathrm{id},\pm}$ | $\vec U$ | no: independent spectral data |
 
 ### The Eigenprojections
 
 The eigenprojections of $\tilde Q$ are those of the unit factor:
 
 $$
-\tilde\Pi_\pm
+\tilde\Pi_{\mathrm{id},\pm}
 =\frac{\tilde U-\bigl(U_t\mp i(\vec U\cdot\vec U)^{1/2}\bigr)e_t}
 {\pm2i\bigl(\vec U\cdot\vec U\bigr)^{1/2}}
 =\frac12(e_t\pm\vec{Ζ}),
@@ -246,14 +246,14 @@ where $U_x,U_y,U_z$ are the vector coefficients of $\tilde U$. The formula requi
 
 The two decompositions see the unit factor in two different ways:
 
-* the **eigenvalue decomposition** sees it through the two eigenvalues $U_t\pm i(\vec U\cdot\vec U)^{1/2}$ and the two eigenprojections $\tilde\Pi_\pm$; the eigenvalues give $U_t$ and $D=(\vec U\cdot\vec U)^{1/2}$, and the eigenprojections give the eigendirections;
+* the **eigenvalue decomposition** sees it through the two eigenvalues $U_t\pm i(\vec U\cdot\vec U)^{1/2}$ and the two eigenprojections $\tilde\Pi_{\mathrm{id},\pm}$; the eigenvalues give $U_t$ and $D=(\vec U\cdot\vec U)^{1/2}$, and the eigenprojections give the eigendirections;
 * the **Cartan decomposition** sees it through the rapidity $\theta_{\mathrm{rpd}}$, the angle $\theta_{\mathrm{axr}}$ and the two axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$.
 
 Both are six real parameters: the two eigenvalues of $\tilde U$ are two complex numbers of product one, hence two real; an eigenprojection is four real; and $\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}}$ with two unit vectors are six real. The dictionary between them is nonlinear and is the content of the scalar-part formula and of the eigenprojector formula. The next subsections record its two directions in full; the two extreme cases follow.
 
 ### The Polar Factors from the Spectral Data
 
-The spectral data are the two eigenvalues $\lambda_\pm$ and the two eigenprojections $\tilde\Pi_\pm$. The polar word is recovered in five steps.
+The spectral data are the two eigenvalues $\lambda_\pm$ and the two eigenprojections $\tilde\Pi_{\mathrm{id},\pm}$. The polar word is recovered in five steps.
 
 **Step 1: the scalar factor.** The product of the eigenvalues fixes the principal square root:
 
@@ -271,10 +271,10 @@ with the square root in the branch $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tf
 
 $$
 \tilde U=\frac{\tilde Q}{\varrho e^{i\theta_{\mathrm{pha}}}}
-=\frac{\lambda_+}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_+
-+\frac{\lambda_-}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_-
-=\Bigl(U_t+i\bigl(\vec U\cdot\vec U\bigr)^{1/2}\Bigr)\tilde\Pi_+
-+\Bigl(U_t-i\bigl(\vec U\cdot\vec U\bigr)^{1/2}\Bigr)\tilde\Pi_- .
+=\frac{\lambda_+}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_{\mathrm{id},+}
++\frac{\lambda_-}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_{\mathrm{id},-}
+=\Bigl(U_t+i\bigl(\vec U\cdot\vec U\bigr)^{1/2}\Bigr)\tilde\Pi_{\mathrm{id},+}
++\Bigl(U_t-i\bigl(\vec U\cdot\vec U\bigr)^{1/2}\Bigr)\tilde\Pi_{\mathrm{id},-} .
 $$
 
 The middle expression is the definition scaled by the central factor; the last is the spectral decomposition of $\tilde U$. The eigenprojections are those of $\tilde Q$, so the two spectral data determine $\tilde U$ completely.
@@ -337,7 +337,7 @@ with the square-root branches chosen so that the two vectors are real and of uni
 | Step | Input | Formula | Output |
 |---|---|---|---|
 | 1 | $\lambda_\pm$ | $\varrho e^{i\theta_{\mathrm{pha}}}=(\lambda_+\lambda_-)^{1/2}$ | scale and phase |
-| 2 | $\lambda_\pm,\tilde\Pi_\pm$ | $\tilde U=\dfrac{\lambda_+}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_+ +\dfrac{\lambda_-}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_-$ | unit factor |
+| 2 | $\lambda_\pm,\tilde\Pi_{\mathrm{id},\pm}$ | $\tilde U=\dfrac{\lambda_+}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_{\mathrm{id},+} +\dfrac{\lambda_-}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_{\mathrm{id},-}$ | unit factor |
 | 3 | $\tilde U$ | $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ | boost and rotor |
 | 4 | $\tilde U_{\mathrm b}$ | $\theta_{\mathrm{rpd}}=2\operatorname{arcosh}(\operatorname{Sc}\tilde U_{\mathrm b})$, $\vec u_{\mathrm b}=\operatorname{Vect}\tilde U_{\mathrm b}/(i\sinh(\theta_{\mathrm{rpd}}/2))$ | rapidity and boost axis |
 | 5 | $\tilde u_{\mathrm r}$ | $\theta_{\mathrm{axr}}=2\arccos(\operatorname{Sc}\tilde u_{\mathrm r})$, $\vec u_{\mathrm r}=\operatorname{Vect}\tilde u_{\mathrm r}/\sin(\theta_{\mathrm{axr}}/2)$ | rotor angle and rotor axis |
@@ -361,8 +361,8 @@ The first line exhibits the boost on the idempotents $\tfrac12(e_t\pm i\vec u_{\
 |---|---|---|---|
 | $\tilde U_{\mathrm b}$ | $\exp\bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)$ | $e^{\theta_{\mathrm{rpd}}/2}\frac{e_t+i\vec u_{\mathrm b}}{2}+e^{-\theta_{\mathrm{rpd}}/2}\frac{e_t-i\vec u_{\mathrm b}}{2}$ | $e^{\theta_{\mathrm{rpd}}/2},e^{-\theta_{\mathrm{rpd}}/2}$ |
 | $\tilde u_{\mathrm r}$ | $\exp\bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)$ | $e^{-i\theta_{\mathrm{axr}}/2}\frac{e_t+i\vec u_{\mathrm r}}{2}+e^{i\theta_{\mathrm{axr}}/2}\frac{e_t-i\vec u_{\mathrm r}}{2}$ | $e^{-i\theta_{\mathrm{axr}}/2},e^{i\theta_{\mathrm{axr}}/2}$ |
-| $\tilde U$ | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\bigl(U_t+iD\bigr)\tilde\Pi_++\bigl(U_t-iD\bigr)\tilde\Pi_-$ | $U_t\pm iD$ |
-| $\tilde Q$ | $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U$ | $\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ | $\lambda_\pm$ |
+| $\tilde U$ | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\bigl(U_t+iD\bigr)\tilde\Pi_{\mathrm{id},++}\bigl(U_t-iD\bigr)\tilde\Pi_{\mathrm{id},-}$ | $U_t\pm iD$ |
+| $\tilde Q$ | $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U$ | $\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$ | $\lambda_\pm$ |
 
 where $D=(\vec U\cdot\vec U)^{1/2}$. The unit factor is not generally the exponential of the sum of the two exponents: the product of the two exponentials is the exponential of the sum only when the axes commute or one of the angles vanishes. This is the spectral reason the four factors do not merge.
 
@@ -400,14 +400,14 @@ $$
 \qquad
 \vec{Ζ}=-i\frac{\vec U}{\bigl(\vec U\cdot\vec U\bigr)^{1/2}},
 \qquad
-\tilde\Pi_\pm=\frac12\bigl(e_t\pm\vec{Ζ}\bigr),
+\tilde\Pi_{\mathrm{id},\pm}=\frac12\bigl(e_t\pm\vec{Ζ}\bigr),
 $$
 
 and
 
 $$
 \tilde Q=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U
-=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_- .
+=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-} .
 $$
 
 This is the inverse of the chain of the preceding subsection. The consistency check is the product:
@@ -432,8 +432,8 @@ The denominator $(\vec U\cdot\vec U)^{1/2}$ is the only obstruction: when it van
 |---|---|---|---|
 | $\lambda_+\lambda_-$ | scale and phase | $\varrho e^{i\theta_{\mathrm{pha}}}=(\lambda_+\lambda_-)^{1/2}$ | — |
 | $\lambda_\pm/(\varrho e^{i\theta_{\mathrm{pha}}})$ | the two eigenvalues of $\tilde U$ | $U_t\pm i(\vec U\cdot\vec U)^{1/2}$ | one real degree in $\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}},\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ and three in the pair of axes |
-| $\tilde\Pi_\pm$, equivalently $\vec{Ζ}$ | the eigendirections of $\tilde U$ | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ | the two axis directions separately |
-| $\lambda_\pm$ and $\tilde\Pi_\pm$ | the whole unit factor | $\tilde U=\dfrac{\lambda_+}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_+ +\dfrac{\lambda_-}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_-$ | — |
+| $\tilde\Pi_{\mathrm{id},\pm}$, equivalently $\vec{Ζ}$ | the eigendirections of $\tilde U$ | $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\vec{Ζ})$ | the two axis directions separately |
+| $\lambda_\pm$ and $\tilde\Pi_{\mathrm{id},\pm}$ | the whole unit factor | $\tilde U=\dfrac{\lambda_+}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_{\mathrm{id},+} +\dfrac{\lambda_-}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_{\mathrm{id},-}$ | — |
 | $\tilde U$ | boost and rotor | $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ | — |
 | $\tilde U_{\mathrm b}$ | rapidity and boost axis | $\theta_{\mathrm{rpd}}=2\operatorname{arcosh}(\operatorname{Sc}\tilde U_{\mathrm b})$, $\vec u_{\mathrm b}=\operatorname{Vect}\tilde U_{\mathrm b}/(i\sinh(\theta_{\mathrm{rpd}}/2))$ | axis if $\theta_{\mathrm{rpd}}=0$ |
 | $\tilde u_{\mathrm r}$ | rotor angle and rotor axis | $\theta_{\mathrm{axr}}=2\arccos(\operatorname{Sc}\tilde u_{\mathrm r})$, $\vec u_{\mathrm r}=\operatorname{Vect}\tilde u_{\mathrm r}/\sin(\theta_{\mathrm{axr}}/2)$ | axis if $\theta_{\mathrm{axr}}\in\{0,2\pi\}$ |
@@ -524,14 +524,14 @@ The spectral data and the polar data carry different real information.
 |---|---|---|
 | domain | $N\neq0$, $B^2=0$ | the same |
 | decomposition of | the element $\tilde Q$ | the unit factor $\tilde U$ |
-| factors | $Q_te_t+\vec\Upsilon$, a scalar and a nilpotent | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, positive times $*$-unitary |
+| factors | $Q_te_t+\vec\Pi_{\mathrm{nil}}$, a scalar and a nilpotent | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, positive times $*$-unitary |
 | eigenvalues | $Q_t$, double | $\varepsilon$, double for $\tilde U$; $e^{\pm\theta_{\mathrm{rpd}}/2}$ and $e^{\pm i\theta_{\mathrm{axr}}/2}$ for the factors |
 | basis | a Jordan chain, not unique | an orthogonal frame $\vec u_{\mathrm b}\perp\vec u_{\mathrm r}$, up to degeneracies |
-| real data | $Q_t$ (2) and $\vec\Upsilon$ (4) | $\varrho,\theta_{\mathrm{pha}}$ (2), $\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}}$ (2), frame (2), relation (1) |
+| real data | $Q_t$ (2) and $\vec\Pi_{\mathrm{nil}}$ (4) | $\varrho,\theta_{\mathrm{pha}}$ (2), $\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}}$ (2), frame (2), relation (1) |
 | what the spectrum fixes | $Q_t$ and $\varepsilon$ | $\varrho,\theta_{\mathrm{pha}},\varepsilon$ |
 | survives $B^2\to0$ | the Jordan chain does | the word does |
 
-The spectrum fixes only the scalar $Q_t$ and the sign $\varepsilon$. It does not fix the rapidity, the rotor angle or the two axes. The nilpotent $\vec\Upsilon$ fixes the word, because the element is fixed and the word is unique up to the axis degeneracies; but the passage from $\vec\Upsilon$ to $(\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})$ is nonlinear. The Jordan chain and the polar frame are two different bases of the same two-dimensional complex space, and neither is determined by the other without extra choices.
+The spectrum fixes only the scalar $Q_t$ and the sign $\varepsilon$. It does not fix the rapidity, the rotor angle or the two axes. The nilpotent $\vec\Pi_{\mathrm{nil}}$ fixes the word, because the element is fixed and the word is unique up to the axis degeneracies; but the passage from $\vec\Pi_{\mathrm{nil}}$ to $(\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})$ is nonlinear. The Jordan chain and the polar frame are two different bases of the same two-dimensional complex space, and neither is determined by the other without extra choices.
 
 ## The Regimes
 
@@ -539,7 +539,7 @@ The spectral regimes and the polar status fit together as follows.
 
 | Regime | Condition | Spectral data | Polar data |
 |---|---|---|---|
-| Distinct interior | $Q_x^2+Q_y^2+Q_z^2\neq0$, $Q_t^2+Q_x^2+Q_y^2+Q_z^2\neq0$ | $\lambda_\pm$ distinct, nonzero; $\tilde\Pi_\pm$ variable | $\varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}}$, axes; unique up to degeneracies |
+| Distinct interior | $Q_x^2+Q_y^2+Q_z^2\neq0$, $Q_t^2+Q_x^2+Q_y^2+Q_z^2\neq0$ | $\lambda_\pm$ distinct, nonzero; $\tilde\Pi_{\mathrm{id},\pm}$ variable | $\varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}}$, axes; unique up to degeneracies |
 | Zero divisor | $Q_x^2+Q_y^2+Q_z^2\neq0$, $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$ | $\lambda_\pm$ distinct, one zero; rank one | none: boundary of the polar domain |
 | Scalar | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q=0$, $Q_t\neq0$ | $\lambda_\pm=Q_t$; one-term decomposition | $\varrho=\lvert Q_t\rvert$, $\theta_{\mathrm{rpd}}=0$, $\theta_{\mathrm{axr}}\in\{0,2\pi\}$, $\theta_{\mathrm{pha}}$ from the branch; axes undefined |
 | Jordan | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$, $Q_t\neq0$ | $\lambda_\pm=Q_t$; no two-term decomposition | exists; $\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}}$ and axes from the Cartan decomposition |
@@ -551,9 +551,9 @@ The spectral regimes and the polar status fit together as follows.
 For $Q_x^2+Q_y^2+Q_z^2\neq0$ and $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$, the eigenvalues are distinct and one of them vanishes. The eigenprojections are well defined, and
 
 $$
-\tilde Q=\lambda_+\tilde\Pi_+
+\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},+}
 \qquad\text{or}\qquad
-\tilde Q=\lambda_-\tilde\Pi_-,
+\tilde Q=\lambda_-\tilde\Pi_{\mathrm{id},-},
 $$
 
 a nonzero complex multiple of a minimal idempotent. The spectral decomposition exists and is rank one. The polar decomposition does not: the modulus vanishes, $\varrho=0$, and the rapidity diverges. The zero-divisor set is the boundary of the polar domain, and its two components are read in §*The Boundary*.
@@ -607,16 +607,16 @@ On the wall the two eigenvalues coalesce and the eigenprojections diverge. What 
 
 ### The Spectral Problem at the Wall
 
-**Proposition (one eigenvalue, no eigenbasis).** Let $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$ and $\vec\Upsilon\neq0$. Then $\tilde Q$ has the single eigenvalue $Q_t$, and it has no eigenbasis.
+**Proposition (one eigenvalue, no eigenbasis).** Let $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}^2=0$ and $\vec\Pi_{\mathrm{nil}}\neq0$. Then $\tilde Q$ has the single eigenvalue $Q_t$, and it has no eigenbasis.
 
-*Proof.* The characteristic polynomial of $\tilde Q$ is $(X-Q_t)^2$, because $\vec\Upsilon$ is nilpotent. If a basis of eigenvectors existed, the matrix of $\tilde Q$ in that basis would be the scalar matrix $Q_tI$, so $\tilde Q=Q_te_t$ and $\vec\Upsilon=0$.
+*Proof.* The characteristic polynomial of $\tilde Q$ is $(X-Q_t)^2$, because $\vec\Pi_{\mathrm{nil}}$ is nilpotent. If a basis of eigenvectors existed, the matrix of $\tilde Q$ in that basis would be the scalar matrix $Q_tI$, so $\tilde Q=Q_te_t$ and $\vec\Pi_{\mathrm{nil}}=0$.
 
 The eigenvalue is $Q_t$, of algebraic multiplicity two and geometric multiplicity one. In the matrix model
 
 $$
 \mathsf M(\tilde Q)=Q_t\bigl(I+N\bigr),
 \qquad
-N=\mathsf M(\vec\Upsilon),
+N=\mathsf M(\vec\Pi_{\mathrm{nil}}),
 \qquad
 N^2=0,
 \qquad
@@ -625,16 +625,16 @@ $$
 
 the matrix is $Q_t$ times a single unipotent Jordan block. The eigenline is $\ker N$; it is one complex line, not a basis.
 
-The scalar line $\vec\Upsilon=0$ is the exception. There $\tilde Q=Q_te_t$ is central, every basis is an eigenbasis, and the polar word is central. The rest of the article concerns the Jordan part $\vec\Upsilon\neq0$.
+The scalar line $\vec\Pi_{\mathrm{nil}}=0$ is the exception. There $\tilde Q=Q_te_t$ is central, every basis is an eigenbasis, and the polar word is central. The rest of the article concerns the Jordan part $\vec\Pi_{\mathrm{nil}}\neq0$.
 
 ### The Jordan Basis
 
-**Proposition (the Jordan chain).** Let $\vec\Upsilon\neq0$ with $\vec\Upsilon^2=0$. There are elements $\zeta,\eta$ with
+**Proposition (the Jordan chain).** Let $\vec\Pi_{\mathrm{nil}}\neq0$ with $\vec\Pi_{\mathrm{nil}}^2=0$. There are elements $\zeta,\eta$ with
 
 $$
-\vec\Upsilon\zeta=0,
+\vec\Pi_{\mathrm{nil}}\zeta=0,
 \qquad
-\vec\Upsilon\eta=\zeta,
+\vec\Pi_{\mathrm{nil}}\eta=\zeta,
 $$
 
 and $(\zeta,\eta)$ is a basis. In that basis the matrix of $\tilde Q$ is
@@ -651,14 +651,14 @@ $$
 
 *Proof.* In the matrix model choose $v\in\operatorname{im}N$ with $v\neq0$. Since $N^2=0$, $v\in\ker N$. Choose $w$ with $Nw=v$. Then $v\neq0$ and $w\notin\ker N$, so $(v,w)$ is a basis. The matrix of $N$ in that basis has first column $0$ and second column $v$, which is the nilpotent Jordan block.
 
-The chain is not unique for the product alone. The vector $\zeta$ is determined up to a nonzero scalar, and $\eta$ is determined up to $\eta\mapsto\eta+c\zeta$. The Jordan basis is therefore a spectral object of the element, but not a canonical one from the product alone; the definite Hermitian form selects one chain, with $\zeta=\vec Q$ and $\eta=\tilde\Pi_-=\vec Q^*\vec Q/(2\langle\vec Q\rangle_*)$, in *The Jordan Basis of a Spectrally Degenerate Biquaternion*. It is a basis of the generalized eigenspace, not a polar frame.
+The chain is not unique for the product alone. The vector $\zeta$ is determined up to a nonzero scalar, and $\eta$ is determined up to $\eta\mapsto\eta+c\zeta$. The Jordan basis is therefore a spectral object of the element, but not a canonical one from the product alone; the definite Hermitian form selects one chain, with $\zeta=\vec Q$ and $\eta=\tilde\Pi_{\mathrm{id},-}=\vec Q^*\vec Q/(2\langle\vec Q\rangle_*)$, in *The Jordan Basis of a Spectrally Degenerate Biquaternion*. It is a basis of the generalized eigenspace, not a polar frame.
 
 ### The Polar Word and the Jordan Flag
 
 The unit factor is a polynomial in $\tilde Q$,
 
 $$
-\tilde U=\varepsilon\bigl(e_t+\vec\Upsilon\bigr)=\frac{\tilde Q}{Q_t},
+\tilde U=\varepsilon\bigl(e_t+\vec\Pi_{\mathrm{nil}}\bigr)=\frac{\tilde Q}{Q_t},
 $$
 
 so it preserves the Jordan flag $\mathbb{C}\zeta\subset\mathbb{C}^2$. In the Jordan basis its matrix is the unipotent block
@@ -689,7 +689,7 @@ This is the precise sense in which the Jordan reading and the polar reading are 
 
 The exponential of $\mathbb{B}$ is not injective. Its kernel is the set of exponents that exponentiate to the identity; by *Biquaternion Elementary Functions*, §*The Exponential*, it consists of the diagonalisable elements whose eigenvalues lie in $2\pi i\mathbb{Z}$, and it is not a subgroup. In spectral terms:
 
-* in the distinct case, the logarithms of an invertible element are $\operatorname{Log}\tilde Q+2\pi i(m\tilde\Pi_++n\tilde\Pi_-)$, a copy of $\mathbb{Z}^2$;
+* in the distinct case, the logarithms of an invertible element are $\operatorname{Log}\tilde Q+2\pi i(m\tilde\Pi_{\mathrm{id},++n}\tilde\Pi_{\mathrm{id},-})$, a copy of $\mathbb{Z}^2$;
 * in the scalar case, the logarithms are the translate $\operatorname{Log}Q_t\,e_t+\ker\exp$ of the whole kernel by the scalar logarithm, because every kernel element may be added;
 * in the Jordan case, the logarithm is discrete, one point for each choice of the scalar logarithm;
 * on the zero-divisor and nilpotent boundary there is no logarithm.
@@ -728,10 +728,10 @@ The polar domain is the complement of the null cone $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$.
 
 | Stratum | Condition | Spectral data | Form | Polar limit |
 |---|---|---|---|---|
-| Idempotent | $Q_x^2+Q_y^2+Q_z^2\neq0$, $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$ | $\lambda_+\neq\lambda_-$, one zero | $\tilde Q=\lambda_\sigma\tilde\Pi_\sigma$, a complex multiple of a minimal idempotent | $\varrho\to0$, $\theta_{\mathrm{rpd}}\to\infty$, $\varrho e^{\theta_{\mathrm{rpd}}/2}\to R$ |
+| Idempotent | $Q_x^2+Q_y^2+Q_z^2\neq0$, $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$ | $\lambda_+\neq\lambda_-$, one zero | $\tilde Q=\lambda_\sigma\tilde\Pi_{\mathrm{id},\sigma}$, a complex multiple of a minimal idempotent | $\varrho\to0$, $\theta_{\mathrm{rpd}}\to\infty$, $\varrho e^{\theta_{\mathrm{rpd}}/2}\to R$ |
 | Nilpotent | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$, $Q_t=0$ | $\lambda_+=\lambda_-=0$, no eigenprojection | $\tilde Q=\vec Q$, $\vec Q^2=0$ | the same limit with the rotor anticommuting with the boost axis |
 
-For the idempotent stratum, the eigenprojection is well defined, and the element is a nonzero complex multiple of $\tilde\Pi_\sigma=\tfrac12(e_t+\sigma\vec{Ζ})$; the other eigenvalue is zero. For the nilpotent stratum, $Q_x^2+Q_y^2+Q_z^2=0$ and the eigenprojection formula fails, because the inverse square root $\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ is undefined; the element is a pure nilpotent. The classification of the minimal idempotents and the Peirce decomposition are those of *The Square Roots of One and the Idempotents of the Biquaternion Algebra* and *Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*; they are not repeated here.
+For the idempotent stratum, the eigenprojection is well defined, and the element is a nonzero complex multiple of $\tilde\Pi_{\mathrm{id},\sigma}=\tfrac12(e_t+\sigma\vec{Ζ})$; the other eigenvalue is zero. For the nilpotent stratum, $Q_x^2+Q_y^2+Q_z^2=0$ and the eigenprojection formula fails, because the inverse square root $\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ is undefined; the element is a pure nilpotent. The classification of the minimal idempotents and the Peirce decomposition are those of *The Square Roots of One and the Idempotents of the Biquaternion Algebra* and *Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*; they are not repeated here.
 
 The polar word reaches the boundary with $\varrho\to0$ and $\theta_{\mathrm{rpd}}\to\infty$ at the rate $\varrho e^{\theta_{\mathrm{rpd}}/2}\to R$ with $0<R<\infty$. The limit is
 
@@ -746,7 +746,7 @@ which is a nonzero complex multiple of a minimal idempotent when $\tilde u_{\mat
 Seen from the regular sector $\Sigma_{11}$, the locus $B^2=0$ is the wall at which the two eigenvalues $\lambda_\pm=Q_t\pm iB$ coalesce. The eigenprojectors
 
 $$
-\tilde\Pi_\pm=\frac12\bigl(e_t\mp i\vec Q/B\bigr)
+\tilde\Pi_{\mathrm{id},\pm}=\frac12\bigl(e_t\mp i\vec Q/B\bigr)
 $$
 
 diverge as $B\to0$, because $\vec Q/B$ diverges. Their sum is $e_t$, which remains finite. The eigenbasis has no limit. The polar word has a limit, and the limit is the word of this article; this is the convergence of §*The Boundary* above, and it is proved in *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Two Walls*.
@@ -882,7 +882,7 @@ $$
 \tilde Q=e_t+\vec e_x+i\vec e_y.
 $$
 
-Then $Q_t=1$, $\vec\Upsilon=\vec e_x+i\vec e_y$, $\vec\Upsilon^2=0$, $N=1$, $\varrho\,e^{i\theta_{\mathrm{pha}}}=1$, $\varrho=1$, $\theta_{\mathrm{pha}}=0$ and $\varepsilon=1$. The word is
+Then $Q_t=1$, $\vec\Pi_{\mathrm{nil}}=\vec e_x+i\vec e_y$, $\vec\Pi_{\mathrm{nil}}^2=0$, $N=1$, $\varrho\,e^{i\theta_{\mathrm{pha}}}=1$, $\varrho=1$, $\theta_{\mathrm{pha}}=0$ and $\varepsilon=1$. The word is
 
 $$
 \theta_{\mathrm{rpd}}=2\operatorname{arcosh}\sqrt2,
@@ -905,7 +905,7 @@ $$
 In the matrix model,
 
 $$
-N=\mathsf M(\vec\Upsilon)=
+N=\mathsf M(\vec\Pi_{\mathrm{nil}})=
 \begin{pmatrix}
 0 & -2i\\
 0 & 0
@@ -966,7 +966,7 @@ which is the unipotent block. The example shows the two readings side by side: t
 For a biquaternion unit $\tilde Q=Q_te_t+\vec Q$ with distinct eigenvalues, the eigenvalue decomposition and the complete polar decomposition are related by
 
 $$
-\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-
+\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}
 =\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r},
 \qquad
 \lambda_\pm=\varrho e^{i\theta_{\mathrm{pha}}}\Bigl(U_t\pm i\bigl(\vec U\cdot\vec U\bigr)^{1/2}\Bigr),
@@ -996,8 +996,8 @@ The eigenvalues determine the scalar factor $\varrho e^{i\theta_{\mathrm{pha}}}$
 | Scalar part | $\operatorname{Sc}\tilde U=\dfrac{\lambda_++\lambda_-}{2\varrho e^{i\theta_{\mathrm{pha}}}}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}-i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta_{\mathrm{axr}}}{2}$ |
 | Product | $\lambda_+\lambda_-=Q_t^2+Q_x^2+Q_y^2+Q_z^2=\varrho^2e^{2i\theta_{\mathrm{pha}}}$ |
 | Sum | $\lambda_++\lambda_-=2\varrho e^{i\theta_{\mathrm{pha}}}\operatorname{Sc}\tilde U$ |
-| Eigenprojections | $\tilde\Pi_\pm=\dfrac{\tilde U-\bigl(U_t\mp i(\vec U\cdot\vec U)^{1/2}\bigr)e_t}{\pm2i(\vec U\cdot\vec U)^{1/2}}$ |
-| Polar factors from spectrum | $\tilde U=\dfrac{\lambda_+}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_++\dfrac{\lambda_-}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_-$, then $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ |
+| Eigenprojections | $\tilde\Pi_{\mathrm{id},\pm}=\dfrac{\tilde U-\bigl(U_t\mp i(\vec U\cdot\vec U)^{1/2}\bigr)e_t}{\pm2i(\vec U\cdot\vec U)^{1/2}}$ |
+| Polar factors from spectrum | $\tilde U=\dfrac{\lambda_+}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_{\mathrm{id},++}\dfrac{\lambda_-}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_{\mathrm{id},-}$, then $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ |
 | Formal exponent | $\tilde Q_{\log}=\ln \varrho+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$; its exponential is $\tilde Q$ only when the axes commute or one angle vanishes |
 | Parallel axes | $\lambda_\pm=\varrho e^{i\theta_{\mathrm{pha}}}e^{\pm i\theta_{\mathrm{axr}}/2\mp\theta_{\mathrm{rpd}}/2}$ for $\vec u_{\mathrm b}=\vec u_{\mathrm r}$; the signs of $\theta_{\mathrm{axr}}$ are exchanged for $\vec u_{\mathrm b}=-\vec u_{\mathrm r}$ |
 | General axes | one real degree of freedom in $\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}},\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ beyond $\lambda_\pm$; the axes carry the rest |
@@ -1008,11 +1008,11 @@ The eigenvalues determine the scalar factor $\varrho e^{i\theta_{\mathrm{pha}}}$
 | Zero element | spectral, not polar |
 | Jordan elements | polar, not spectral |
 | Nilpotent elements | no polar word, no spectrum |
-| Exponential on eigenprojections | a true logarithm acts by $\lambda_\pm\tilde\Pi_\pm$; the polar exponent does so when the axes commute or one angle vanishes |
+| Exponential on eigenprojections | a true logarithm acts by $\lambda_\pm\tilde\Pi_{\mathrm{id},\pm}$; the polar exponent does so when the axes commute or one angle vanishes |
 | Polar word | a section of the word map, not of the exponential |
 | spectrum, wall | one eigenvalue $Q_t$, algebraic multiplicity two, geometric multiplicity one |
 | eigenbasis, wall | none on the Jordan part; every basis on the scalar line |
-| replacement | a Jordan chain $\zeta,\eta$ with $\vec\Upsilon\zeta=0$ and $\vec\Upsilon\eta=\zeta$ |
+| replacement | a Jordan chain $\zeta,\eta$ with $\vec\Pi_{\mathrm{nil}}\zeta=0$ and $\vec\Pi_{\mathrm{nil}}\eta=\zeta$ |
 | matrix form, wall | $Q_t\begin{pmatrix}1&1\\0&1\end{pmatrix}$ in the chain |
 | polar factors, wall | $\tilde U_{\mathrm b}$ and $\tilde u_{\mathrm r}$ do not preserve the chain in general |
 | factor eigenvalues | $e^{\pm\theta_{\mathrm{rpd}}/2}$ and $e^{\pm i\theta_{\mathrm{axr}}/2}$; the product has the double eigenvalue $\varepsilon$ |
@@ -1028,10 +1028,10 @@ The table compares the three relation articles; in the split-complex column, $\s
 | Feature | Split-complex | Reduced biquaternion | Biquaternion |
 |---|---|---|---|
 | Eigenvalues | $\lambda_\pm=q\pm q'$ | $\lambda_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ | $\lambda_\pm=Q_t\pm i\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2}$ |
-| Eigenprojections | fixed $\Pi_\pm$ | fixed $\Pi_\pm$ | variable $\tilde\Pi_\pm$ |
+| Eigenprojections | fixed $\Pi_\pm$ | fixed $\Pi_\pm$ | variable $\tilde\Pi_{\mathrm{id},\pm}$ |
 | Polar parameters | $\varrho,\theta_{\mathrm{rpd}},\epsilon$ | $\varrho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}$ | $\varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r}$ |
 | Eigenvalues from polar data | $\sigma_\pm \varrho e^{\pm\theta_{\mathrm{rpd}}}$ | $\varrho e^{i\theta_{\mathrm{pha}}}e^{\pm(\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}})}$ | $\varrho e^{i\theta_{\mathrm{pha}}}\bigl(U_t\pm i(\vec U\cdot\vec U)^{1/2}\bigr)$ |
-| Polar factors from spectrum | $\varrho$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\theta_{\mathrm{rpd}} j}=e^{\theta_{\mathrm{rpd}}}\Pi_++e^{-\theta_{\mathrm{rpd}}}\Pi_-$ | $\breve M_{\mathrm{mod}}=\varrho_+\Pi_++\varrho_-\Pi_-$, $u=e^{i\theta_+}\Pi_++e^{i\theta_-}\Pi_-$ | $\tilde U=\dfrac{\lambda_+}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_++\dfrac{\lambda_-}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_-$, $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ |
+| Polar factors from spectrum | $\varrho$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\theta_{\mathrm{rpd}} j}=e^{\theta_{\mathrm{rpd}}}\Pi_++e^{-\theta_{\mathrm{rpd}}}\Pi_-$ | $\breve M_{\mathrm{mod}}=\varrho_+\Pi_++\varrho_-\Pi_-$, $u=e^{i\theta_+}\Pi_++e^{i\theta_-}\Pi_-$ | $\tilde U=\dfrac{\lambda_+}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_{\mathrm{id},++}\dfrac{\lambda_-}{\varrho e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_{\mathrm{id},-}$, $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ |
 | Discrete data | $\epsilon\in(\mathbb{Z}/2)^2$ | lattice $\Lambda$ in $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ | none |
 | Polar domain | $q^2-q'^2\neq0$ | $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2\neq0$ |
 | Spectral domain | all $Q$ | all $\breve Q$ | $Q_x^2+Q_y^2+Q_z^2\neq0$, or $\vec Q=0$ |
@@ -1056,7 +1056,7 @@ Read down a column for one algebra and across a row for one concept. The first t
 | $\tilde Q=Q_te_t+\vec Q$ | a biquaternion |
 | $Q_x^2+Q_y^2+Q_z^2$ | the square of the vector part |
 | $\lambda_\pm=Q_t\pm i\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2}$ | the eigenvalues |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ | the eigenprojections |
+| $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\vec{Ζ})$ | the eigenprojections |
 | $\vec{Ζ}=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ | the pure root of $+1$ |
 | $Q_t^2+Q_x^2+Q_y^2+Q_z^2=\lambda_+\lambda_-$ | the reduced product |
 | $\varrho=\bigl\lvert Q_t^2+Q_x^2+Q_y^2+Q_z^2\bigr\rvert^{1/2}$ | the scale |
@@ -1071,9 +1071,9 @@ Read down a column for one algebra and across a row for one concept. The first t
 | $\operatorname{Sc}$, $\operatorname{Vect}$ | scalar part, vector part |
 | $\operatorname{Arg}$ | the principal argument in $(-\pi,\pi]$ |
 | $\Sigma_{10}$ | the N-regular, spectrally degenerate sector |
-| $\vec\Upsilon=\vec Q/Q_t$ | the null vector of the normal form, $\vec\Upsilon^2=0$ |
+| $\vec\Pi_{\mathrm{nil}}=\vec Q/Q_t$ | the null vector of the normal form, $\vec\Pi_{\mathrm{nil}}^2=0$ |
 | $\varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$ | the sign of the scalar part of the unit factor |
-| $\zeta,\eta$ | a Jordan chain, $\vec\Upsilon\zeta=0$, $\vec\Upsilon\eta=\zeta$ |
+| $\zeta,\eta$ | a Jordan chain, $\vec\Pi_{\mathrm{nil}}\zeta=0$, $\vec\Pi_{\mathrm{nil}}\eta=\zeta$ |
 
 ## Further Reading
 

@@ -4,7 +4,7 @@
 
 Two predicates cut the split-biquaternion algebra $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ into four sectors: the reduced norm $\Delta=|Q_+|^2|Q_-|^2$ is zero or non-zero, and the reduced characteristic polynomial $p_{\tilde Q}=p_+p_-$ has a repeated root or not. The four sectors are the **sectors** $\Sigma_{ij}$, with $i=1$ for $\Delta\neq0$ and $j=1$ for spectral regularity. Three of them are non-empty; the fourth, $\Sigma_{01}$, is empty. This article defines the sectors, proves that three are non-empty and one is empty, and describes each one with its dimension and closure. The spectral criterion is *[Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html)*; the comparison is *[The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra](the-reduced-norm-and-spectral-degeneracy-in-the-split-biquaternion-algebra.html)*.
 
-**Conventions.** The split complex unit is $j$, with $j^2=1$, and $\tilde\Pi_{1,2}=\tfrac12(1\pm j)$. An element is $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$ with $Q_\pm=t_\pm+\vec q_\pm$, $t_\pm\in\mathbb{R}$, $\vec q_\pm=\sum_k q_{\pm k}\vec e_k$, $|\vec q_\pm|^2=\sum_k q_{\pm k}^2$, and $|Q_\pm|^2=t_\pm^2+|\vec q_\pm|^2$. The reduced norm is $\Delta=|Q_+|^2|Q_-|^2$. The spectrum is $\{t_+\pm i|\vec q_+|\}\cup\{t_-\pm i|\vec q_-|\}$, and a repeated root occurs exactly when $\vec q_+=0$, or $\vec q_-=0$, or $t_+=t_-$ and $|\vec q_+|=|\vec q_-|$. The algebra is *[Split-Biquaternion Algebra](split-biquaternion-algebra.html)*; the norm and zero divisors are *[Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html)* and *[Split-Biquaternion Zero Divisors](split-biquaternion-zero-divisors.html)*.
+**Conventions.** The split complex unit is $j$, with $j^2=1$, and $\tilde\Pi_{\mathrm{id},1,2}=\tfrac12(1\pm j)$. An element is $\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}_-\tilde\Pi_{\mathrm{id},2}$ with $Q_\pm=t_\pm+\vec q_\pm$, $t_\pm\in\mathbb{R}$, $\vec q_\pm=\sum_k q_{\pm k}\vec e_k$, $|\vec q_\pm|^2=\sum_k q_{\pm k}^2$, and $|Q_\pm|^2=t_\pm^2+|\vec q_\pm|^2$. The reduced norm is $\Delta=|Q_+|^2|Q_-|^2$. The spectrum is $\{t_+\pm i|\vec q_+|\}\cup\{t_-\pm i|\vec q_-|\}$, and a repeated root occurs exactly when $\vec q_+=0$, or $\vec q_-=0$, or $t_+=t_-$ and $|\vec q_+|=|\vec q_-|$. The algebra is *[Split-Biquaternion Algebra](split-biquaternion-algebra.html)*; the norm and zero divisors are *[Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html)* and *[Split-Biquaternion Zero Divisors](split-biquaternion-zero-divisors.html)*.
 
 ## The Sectors
 
@@ -172,7 +172,7 @@ The dimensions are $8$, $6$ and $4$. $\Sigma_{11}$ is open and dense; $\Sigma_{1
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ | Split-biquaternion algebra |
-| $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$ | Idempotent decomposition |
+| $\tilde Q=Q_+\tilde\Pi_{\mathrm{id},1+Q}_-\tilde\Pi_{\mathrm{id},2}$ | Idempotent decomposition |
 | $Q_\pm=t_\pm+\vec q_\pm$ | A half |
 | $\Delta=\lvert Q_+\rvert^2\lvert Q_-\rvert^2$ | Reduced norm |
 | $\Sigma_{ij}$ | Sector with reduced-norm index $i$ and spectral index $j$ |

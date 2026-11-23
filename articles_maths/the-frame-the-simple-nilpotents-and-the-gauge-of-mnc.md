@@ -157,7 +157,7 @@ $$
 N_1=E_{12},\qquad N_1^{\mathsf T}=E_{21} .
 $$
 
-These are the two companion nilpotents of *The Companion Nilpotents of the Biquaternion Algebra*, written in the frame. They satisfy $N_1^{2}=(N_1^{\mathsf T})^{2}=0$, $N_1N_1^{\mathsf T}=P_1$ and $N_1^{\mathsf T}N_1=P_2$. The last two identities are the biquaternion relations $\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_+$ and $\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_-$, and the general rule behind them is $E_{kl}E_{lk}=E_{kk}$.
+These are the two companion nilpotents of *The Companion Nilpotents of the Biquaternion Algebra*, written in the frame. They satisfy $N_1^{2}=(N_1^{\mathsf T})^{2}=0$, $N_1N_1^{\mathsf T}=P_1$ and $N_1^{\mathsf T}N_1=P_2$. The last two identities are the biquaternion relations $\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}=\tilde\Pi_{\mathrm{id},+}$ and $\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}=\tilde\Pi_{\mathrm{id},-}$, and the general rule behind them is $E_{kl}E_{lk}=E_{kk}$.
 
 **The basis is the choice of one of the two elements.** Choosing $N_1$ fixes $N_1^{\mathsf T}$ by the normalisation, which is the bijection of *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*, §*Existence: The Nilpotent Route*. The gauge is the reciprocal rescaling $N_1\mapsto\lambda N_1$, $N_1^{\mathsf T}\mapsto\lambda^{-1}N_1^{\mathsf T}$, and it is the whole freedom.
 
@@ -239,7 +239,7 @@ An adapted frame $(v_1,\dots,v_n)$ gives the matrix units $E_{kl}=v_k\ell_l$, wi
 - [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-mnc.html), for the root that fixes the flag.
 - [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-of-mnc.html), for the corners that the invertibles span.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion frame and the parameter $\lambda$.
-- [The Companion Nilpotents of the Biquaternion Algebra](the-companion-nilpotents-of-the-biquaternion-algebra.html), for the pair $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ that is $N_1,N_1^{\mathsf T}$ at $n=2$.
+- [The Companion Nilpotents of the Biquaternion Algebra](the-companion-nilpotents-of-the-biquaternion-algebra.html), for the pair $\vec\Pi_{\mathrm{nil},+-},\vec\Pi_{\mathrm{nil},-+}$ that is $N_1,N_1^{\mathsf T}$ at $n=2$.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html), the case $n=3$.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), the case $n=4$.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), the case $n=5$.

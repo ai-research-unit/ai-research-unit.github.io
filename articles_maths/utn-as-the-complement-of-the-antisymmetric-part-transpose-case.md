@@ -108,7 +108,7 @@ so it reads one entry of the matrix and forgets the other three, and its kernel 
 
 **The two complements are the two readings of the same three-dimensional space.** The symmetric half is spanned by $\mathrm{I},\sigma_1,\sigma_3$ and the triangular algebra by $\mathrm{I},E_{12},\sigma_3$; both are three-dimensional, both meet $\operatorname{Skew}_2$ in zero, and they share the diagonal. The change from one to the other is the shear that replaces $\sigma_1$ by $E_{12}$, and that shear is the difference between $\tfrac12(A-A^{\mathsf T})$ and $\pi(A)$.
 
-**The biquaternion frame sits in the antisymmetric side at $n=2$ only through one line.** The idempotents $\tilde\Pi_\pm$ are symmetric, the companion nilpotents are triangular at the coordinate flag, and the rotation $J$ is the single antisymmetric direction. The frame therefore uses the symmetric half for its idempotents and the triangular side for its nilpotents, and the two complements of this article are exactly the two pieces it borrows.
+**The biquaternion frame sits in the antisymmetric side at $n=2$ only through one line.** The idempotents $\tilde\Pi_{\mathrm{id},\pm}$ are symmetric, the companion nilpotents are triangular at the coordinate flag, and the rotation $J$ is the single antisymmetric direction. The frame therefore uses the symmetric half for its idempotents and the triangular side for its nilpotents, and the two complements of this article are exactly the two pieces it borrows.
 
 ## Summary
 

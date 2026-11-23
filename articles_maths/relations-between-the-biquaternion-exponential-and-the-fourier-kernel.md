@@ -27,7 +27,7 @@ e^{\theta\tilde Q}=e^{\theta Q_t}\,W\!\left(-\theta,\frac{B}{2\pi}\right)
 =e^{\theta Q_t}\bigl(\cos(B\theta)\,e_t+i\sin(B\theta)\,\tilde{Ζ}\bigr).
 $$
 
-The root is pure, the scalar $i$ carries the sign, and the idempotents are the standard pair $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$. The eigenvalues are the exponents of the two characters, the eigenbasis is a Fourier basis, and the spectral idempotents are the algebraic projections onto the two frequency components. The kernel article has to fix $\tilde{Ζ}$ by hand because the algebra has no preferred root; a regular element supplies one, and this is the precise sense in which the two theories meet.
+The root is pure, the scalar $i$ carries the sign, and the idempotents are the standard pair $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$. The eigenvalues are the exponents of the two characters, the eigenbasis is a Fourier basis, and the spectral idempotents are the algebraic projections onto the two frequency components. The kernel article has to fix $\tilde{Ζ}$ by hand because the algebra has no preferred root; a regular element supplies one, and this is the precise sense in which the two theories meet.
 
 **The root of $1$ is the whole gain.** A root of $-1$ hides the sign inside the element, and every statement then carries a factor of $i$ that has to be tracked. Here the element carries only the square $e_t$, the sign sits in the scalar, and three results fall out without a case distinction: the idempotent pair is $\tfrac12(e_t\pm\tilde{Ζ})$ with no $i$, the transverse eigenvectors are $\tfrac12(\nu\pm\zeta)$ with no $i$ and no nilpotent, and the isometry criterion of the transform is exactly the normality criterion of the flow. What was a parametrised conic is a dichotomy, and what was a nilpotent pair is a pair of ordinary eigenvectors.
 
@@ -46,7 +46,7 @@ The article proves the bridge, the kernel identity, the two unitarity criteria a
 | The Fourier reading of the normalised Peirce basis | [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), §*The Fourier Reading of the Basis* |
 | The truncated exponential on the spectral cone | [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), §*Multiplication, Inversion, and the Exponential* |
 | The characteristic polynomial, the eigenvalues $Q_t\pm iB$ and the spectral criterion | [The Spectrum](the-spectrum-of-a-biquaternion.html), §*The Spectral Criterion* |
-| The idempotents $\tilde\Pi_\pm$, the eigenspaces and the normalised Peirce basis | [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), §*The Eigenbasis* |
+| The idempotents $\tilde\Pi_{\mathrm{id},\pm}$, the eigenspaces and the normalised Peirce basis | [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), §*The Eigenbasis* |
 | Normality, the Hermitian projectors and the orthogonal spectral resolution | [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Hermitian Case* |
 | The Fourier kernel, the root-adapted basis and the factorization into complex transforms | [Biquaternion Continuous Harmonic Analysis](biquaternion-continuous-harmonic-analysis.html), §*The Fourier Kernel* and §*Factorization into Complex Fourier Transforms* |
 | The expansion of every biquaternion in the eigenbasis | [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), §*Expansion of Every Biquaternion* |
@@ -135,33 +135,33 @@ $$
 The eigenvalues are central, so they are ordinary complex numbers. The noncommutativity of $\mathbb{B}$ does not make the frequencies operator-valued: the two frequency components are scalar characters of the flow. The idempotents are the Lagrange idempotents of the two eigenvalues, and in the root of $1$ they take the standard form
 
 $$
-\tilde\Pi_\pm=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp}
+\tilde\Pi_{\mathrm{id},\pm}=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp}
 =\frac12\bigl(e_t\pm\tilde{Ζ}\bigr),
 $$
 
 the second expression following from $\tilde Q-\lambda_\mp e_t=iB\tilde{Ζ}\pm iB e_t$ and $\lambda_+-\lambda_-=2iB$. They satisfy
 
 $$
-\tilde\Pi_\pm^2=\tilde\Pi_\pm,
+\tilde\Pi_{\mathrm{id},\pm}^2=\tilde\Pi_{\mathrm{id},\pm},
 \qquad
-\tilde\Pi_+\tilde\Pi_-=0,
+\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0,
 \qquad
-\tilde\Pi_++\tilde\Pi_-=e_t,
+\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t,
 \qquad
-\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_- .
+\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-} .
 $$
 
-No factor of $i$ enters the idempotents, and no sign has to be watched: $\tilde\Pi_+$ is the projection on the eigenvalue $Q_t+iB$ and $\tilde\Pi_-$ on $Q_t-iB$, and the root is their difference, $\tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-$.
+No factor of $i$ enters the idempotents, and no sign has to be watched: $\tilde\Pi_{\mathrm{id},+}$ is the projection on the eigenvalue $Q_t+iB$ and $\tilde\Pi_{\mathrm{id},-}$ on $Q_t-iB$, and the root is their difference, $\tilde{Ζ}=\tilde\Pi_{\mathrm{id},+-}\tilde\Pi_{\mathrm{id},-}$.
 
 The spectral form of the exponential is therefore
 
 $$
 e^{\theta\tilde Q}
-=e^{\theta\lambda_+}\tilde\Pi_++e^{\theta\lambda_-}\tilde\Pi_-
-=e^{\theta Q_t}\bigl(e^{iB\theta}\tilde\Pi_++e^{-iB\theta}\tilde\Pi_-\bigr).
+=e^{\theta\lambda_+}\tilde\Pi_{\mathrm{id},++e}^{\theta\lambda_-}\tilde\Pi_{\mathrm{id},-}
+=e^{\theta Q_t}\bigl(e^{iB\theta}\tilde\Pi_{\mathrm{id},++e}^{-iB\theta}\tilde\Pi_{\mathrm{id},-}\bigr).
 $$
 
-The two terms are the two **characters** of the flow: on the eigenspace $E_\pm=\tilde\Pi_\pm\mathbb{B}$ left multiplication by $e^{\theta\tilde Q}$ is the scalar character $\theta\mapsto e^{\theta\lambda_\pm}$. The two frequencies coincide exactly when $B=0$: that is the spectral cone, treated in §*The Cone*. The gap is $\lambda_+-\lambda_-=2iB$, central, and purely imaginary exactly when $B$ is real.
+The two terms are the two **characters** of the flow: on the eigenspace $E_\pm=\tilde\Pi_{\mathrm{id},\pm}\mathbb{B}$ left multiplication by $e^{\theta\tilde Q}$ is the scalar character $\theta\mapsto e^{\theta\lambda_\pm}$. The two frequencies coincide exactly when $B=0$: that is the spectral cone, treated in §*The Cone*. The gap is $\lambda_+-\lambda_-=2iB$, central, and purely imaginary exactly when $B$ is real.
 
 ### The Kernel Identity
 
@@ -183,11 +183,11 @@ $$
 
 and $\exp(iB\theta\tilde{Ζ})=\cos(B\theta)e_t+i\sin(B\theta)\tilde{Ζ}$ because $(iB\theta\tilde{Ζ})^{2}=-B^{2}\theta^{2}e_t$. Multiplying by $e^{\theta Q_t}$ and comparing with the closed form of §*The Exponential* gives the identity. The second form follows because $W(t,-\omega)=W(-t,\omega)$.
 
-**In Peirce coordinates the identity is two lines.** Substituting the Peirce form of the kernel, $W(t,\omega)=e^{-2\pi i\omega t}\tilde\Pi_++e^{2\pi i\omega t}\tilde\Pi_-$, and the Peirce form of the flow, the identity becomes
+**In Peirce coordinates the identity is two lines.** Substituting the Peirce form of the kernel, $W(t,\omega)=e^{-2\pi i\omega t}\tilde\Pi_{\mathrm{id},++e}^{2\pi i\omega t}\tilde\Pi_{\mathrm{id},-}$, and the Peirce form of the flow, the identity becomes
 
 $$
-e^{\theta(Q_t+iB)}\,\tilde\Pi_+ + e^{\theta(Q_t-iB)}\,\tilde\Pi_-
-= e^{\theta Q_t}\left(e^{iB\theta}\,\tilde\Pi_+ + e^{-iB\theta}\,\tilde\Pi_-\right),
+e^{\theta(Q_t+iB)}\,\tilde\Pi_{\mathrm{id},+} + e^{\theta(Q_t-iB)}\,\tilde\Pi_{\mathrm{id},-}
+= e^{\theta Q_t}\left(e^{iB\theta}\,\tilde\Pi_{\mathrm{id},+} + e^{-iB\theta}\,\tilde\Pi_{\mathrm{id},-}\right),
 $$
 
 which is the same identity twice on the two ideals, with the frequencies $B/2\pi$ and $-B/2\pi$. The root drops out of the computation entirely, and what remains is the classical statement that the two characters of a complex flow of one frequency are the kernel read at that frequency and its negative.
@@ -205,8 +205,8 @@ The dictionary is collected in one table.
 | frequency $B/2\pi$ | frequency $\omega$ |
 | root $\tilde{Ζ}=-i\vec Q/B$ | root $\tilde{Ζ}$ of $1$ |
 | eigenvalue $\lambda_\pm=Q_t\pm iB$ | character exponent |
-| idempotent $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ | algebraic projection onto one frequency component |
-| eigenspace $E_\pm=\tilde\Pi_\pm\mathbb{B}$ | one of the two invariant planes |
+| idempotent $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ | algebraic projection onto one frequency component |
+| eigenspace $E_\pm=\tilde\Pi_{\mathrm{id},\pm}\mathbb{B}$ | one of the two invariant planes |
 | $\cos(B\theta)e_t+i\sin(B\theta)\tilde{Ζ}$ | $W(t,\omega)$ |
 
 The table is a dictionary and not an identification of two objects. The flow is one element's one-parameter group; the kernel is the generating function of a transform. The identity says that the first is a value of the second, and that the value carries the element's own root and rate.
@@ -228,20 +228,20 @@ where the pairing is the complex bilinear form of the vector part and the last i
 **Proposition 2 (the eigenbasis in the Fourier basis).** In the notation above,
 
 $$
-\tilde{Ζ}\tilde\Pi_\pm=\pm\tilde\Pi_\pm,
+\tilde{Ζ}\tilde\Pi_{\mathrm{id},\pm}=\pm\tilde\Pi_{\mathrm{id},\pm},
 \qquad
 \tilde{Ζ}u_\pm=\pm u_\pm,
 \qquad
 u_\pm=\frac12(\nu\pm\zeta),
 $$
 
-and $(\tilde\Pi_+,u_+,u_-,\tilde\Pi_-)$ is a basis of $\mathbb{B}$ in which $L_{\tilde Q}$ is diagonal, with the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.
+and $(\tilde\Pi_{\mathrm{id},+},u_+,u_-,\tilde\Pi_{\mathrm{id},-})$ is a basis of $\mathbb{B}$ in which $L_{\tilde Q}$ is diagonal, with the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.
 
 *Proof.* The first identity is $\tilde{Ζ}(e_t\pm\tilde{Ζ})/2=(\tilde{Ζ}\pm e_t)/2=\pm(e_t\pm\tilde{Ζ})/2$. The second is $\tilde{Ζ}(\nu\pm\zeta)/2=(\zeta\pm\nu)/2=\pm(\nu\pm\zeta)/2$, using $\tilde{Ζ}\nu=\zeta$ and $\tilde{Ζ}\zeta=\nu$. The two vectors of the first block are independent, the two of the second block are independent, and the two planes are complementary because $(e_t,\tilde{Ζ},\nu,\zeta)$ is a basis (*Biquaternion Continuous Harmonic Analysis*, §*The Change of Basis*); so the four are a basis. Left multiplication by $\tilde Q$ is $Q_t\,\mathrm{id}+iB\,L_{\tilde{Ζ}}$, which gives the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.
 
 **The eigenvectors are not nilpotent.** The old parameter, a root of $-1$, put the two transverse eigenvectors at the eigenvalues $\pm i$ and made them a nilpotent pair; the root of $1$ puts them at $\pm1$, so they are ordinary eigenvectors of a diagonalisable operator. The four lines are determined up to the reciprocal rescaling $(\mu,\mu^{-1})$ of *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Transverse-Vector Construction*, and the normalisation of that article fixes $\mu$; the pair above is one representative. The idempotents and the four lines are the same.
 
-**The two cuts are transverse.** The Fourier factorization cuts $\mathbb{B}$ into the two planes $\operatorname{span}\{e_t,\tilde{Ζ}\}$ and $\operatorname{span}\{\nu,\zeta\}$, each of which carries both signs of the eigenvalue. The spectral decomposition cuts it into the two eigenspaces $E_+=\operatorname{span}\{\tilde\Pi_+,u_+\}$ and $E_-=\operatorname{span}\{u_-,\tilde\Pi_-\}$, each of which takes one line from each plane. Neither cut refines the other. The Fourier factorization keeps the two blocks and applies an ordinary complex transform to each; the spectral decomposition regroups the four lines by eigenvalue. The first computes the transform of a function, the second the flow of one element, and both use the same root.
+**The two cuts are transverse.** The Fourier factorization cuts $\mathbb{B}$ into the two planes $\operatorname{span}\{e_t,\tilde{Ζ}\}$ and $\operatorname{span}\{\nu,\zeta\}$, each of which carries both signs of the eigenvalue. The spectral decomposition cuts it into the two eigenspaces $E_+=\operatorname{span}\{\tilde\Pi_{\mathrm{id},+},u_+\}$ and $E_-=\operatorname{span}\{u_-,\tilde\Pi_{\mathrm{id},-}\}$, each of which takes one line from each plane. Neither cut refines the other. The Fourier factorization keeps the two blocks and applies an ordinary complex transform to each; the spectral decomposition regroups the four lines by eigenvalue. The first computes the transform of a function, the second the flow of one element, and both use the same root.
 
 ### Which Frequency
 
@@ -310,7 +310,7 @@ The normality theorem is that of *The Biquaternion Eigenvalue Decomposition*, §
 - $\vec Q\times\overline{\vec Q}=0$, with the complex bilinear cross product;
 - $\operatorname{Re}\vec Q$ and $\operatorname{Im}\vec Q$ are parallel;
 - the root $\tilde{Ζ}=-i\vec Q/B$ is Hermitian;
-- $\tilde\Pi_\pm$ are Hermitian;
+- $\tilde\Pi_{\mathrm{id},\pm}$ are Hermitian;
 - $E_+$ and $E_-$ are orthogonal for the Hermitian form.
 
 The criterion involves the vector part alone. The scalar part is free, and this is the first source of confusion: a normal element can have any complex rate $Q_t$.
@@ -394,7 +394,7 @@ The cone carries three normal forms, those of *The Jordan Basis of a Spectrally 
 | --- | --- | --- | --- | --- |
 | scalar | $Q_te_t$ | $e^{\theta Q_t}e_t$ | none | every basis, none canonical |
 | nilpotent | $\vec N$, $\vec N^2=0$ | $e_t+\theta\vec N$ | none | none |
-| unipotent | $Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon^2=0$ | $e^{\theta Q_t}(e_t+\theta Q_t\vec\Upsilon)$ | none | none |
+| unipotent | $Q_t(e_t+\vec\Pi_{\mathrm{nil}})$, $\vec\Pi_{\mathrm{nil}}^2=0$ | $e^{\theta Q_t}(e_t+\theta Q_t\vec\Pi_{\mathrm{nil}})$ | none | none |
 
 The scalar stratum is a central character with no direction. The nilpotent stratum is a null translation with no rate. The unipotent stratum is a scaled null translation: a rate and a shear, with no frequency. None of the three has a root of $1$, and none has an oscillatory character.
 
@@ -454,7 +454,7 @@ e^{\theta\tilde Q}
 =e^{\theta Q_t}W\!\left(-\theta,\frac{B}{2\pi}\right).
 $$
 
-The root of $1$ is what makes the dictionary exact. The idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ carry no scalar, the eigenvalues $\lambda_\pm=Q_t\pm iB$ are the character exponents, and the eigenbasis is diagonal in blocks of two. The Fourier factorization keeps the two invariant planes; the spectral decomposition regroups their four lines by eigenvalue; the two cuts are transverse.
+The root of $1$ is what makes the dictionary exact. The idempotents $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ carry no scalar, the eigenvalues $\lambda_\pm=Q_t\pm iB$ are the character exponents, and the eigenbasis is diagonal in blocks of two. The Fourier factorization keeps the two invariant planes; the spectral decomposition regroups their four lines by eigenvalue; the two cuts are transverse.
 
 The normality of the element, the Hermiticity of the root and the existence of an orthogonal eigenbasis are one condition, and it is the condition under which the transform of *Biquaternion Continuous Harmonic Analysis* is an isometry. Unitarity is stronger, and it is the condition $\tilde Q^*=-\tilde Q$. The norm of the flow is $\lvert e^{\theta Q_t}\rvert^{2}(\lvert\cos B\theta\rvert^{2}+\lvert\sin B\theta\rvert^{2}\lVert\tilde{Ζ}\rVert^{2})$, the deficit $\lVert\tilde{Ζ}\rVert^{2}-1$ is an amplitude and not a rate, and on the cone the root disappears while the closed form of the flow survives.
 
@@ -470,8 +470,8 @@ The normality of the element, the Hermiticity of the root and the existence of a
 | $\vec{Ζ}$ | a pure root of $1$, $(\vec{Ζ},\vec{Ζ})=-1$ |
 | $\vec p, \vec p'$ | the real and imaginary parts of $\vec{Ζ}=\vec p+i\vec p'$ |
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues, central |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ | the two spectral idempotents |
-| $E_\pm=\tilde\Pi_\pm\mathbb{B}$ | the two eigenspaces |
+| $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ | the two spectral idempotents |
+| $E_\pm=\tilde\Pi_{\mathrm{id},\pm}\mathbb{B}$ | the two eigenspaces |
 | $W(t,\omega)=\exp(-2\pi i\tilde{Ζ}\omega t)$ | the biquaternion Fourier kernel |
 | $\nu, \zeta$, $u_\pm=\tfrac12(\nu\pm\zeta)$ | the transverse basis of the root |
 | $\lVert\tilde{Ζ}\rVert^2$ | the Euclidean square of the root, $\ge1$ |

@@ -115,37 +115,37 @@ The contrast with the Dirac field is exact and should be set beside it. There th
 
 ## The Constraints in Biquaternion Notation
 
-The two constraints have a compact form in the notation of the companion articles. Let $\tilde{\pi}$ be the biquaternion whose components are the canonical momenta conjugate to $\tilde{A}_{\Phi}$:
+The two constraints have a compact form in the notation of the companion articles. Let $\tilde\pi_{\mathrm{id}}$ be the biquaternion whose components are the canonical momenta conjugate to $\tilde{A}_{\Phi}$:
 
 $$
-\tilde{\pi}=\pi_0e_t+\vec\pi,\qquad \pi_0=0,\qquad \vec\pi=-i\vec E.
+\tilde\pi_{\mathrm{id}}=\pi_0e_t+\vec\pi,\qquad \pi_0=0,\qquad \vec\pi=-i\vec E.
 $$
 
-Then $\pi_0=0$ is the statement that the **scalar part** of $\tilde{\pi}$ vanishes,
+Then $\pi_0=0$ is the statement that the **scalar part** of $\tilde\pi_{\mathrm{id}}$ vanishes,
 
 $$
-\mathrm{Sc}(\tilde{\pi})\approx0,
+\mathrm{Sc}(\tilde\pi_{\mathrm{id}})\approx0,
 $$
 
 and Gauss's law is a scalar-part condition as well. A direct computation of the quaternion product gives
 
 $$
-\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{\pi}\right)=\partial/\partial R_t\,\pi_0+\mathrm{div}\,\vec\pi,
+\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde\pi_{\mathrm{id}}\right)=\partial/\partial R_t\,\pi_0+\mathrm{div}\,\vec\pi,
 $$
 
 so that on the constraint surface, where $\pi_0\approx0$,
 
 $$
-\boxed{\;\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{\pi}\right)\approx0\;}.
+\boxed{\;\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde\pi_{\mathrm{id}}\right)\approx0\;}.
 $$
 
-The two constraints are therefore the scalar parts of $\tilde{\pi}$ and of $(\tilde\nabla_\Phi)^{\natural}\tilde{\pi}$. This is the same shape as the **integrability condition** of the companion article, $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})=0$, which expresses charge conservation; Gauss's law and charge conservation are written with the same operator. That is a genuine feature of the notation: the constraint is not an extra object appended to the algebra but a scalar-part projection that already appears in it.
+The two constraints are therefore the scalar parts of $\tilde\pi_{\mathrm{id}}$ and of $(\tilde\nabla_\Phi)^{\natural}\tilde\pi_{\mathrm{id}}$. This is the same shape as the **integrability condition** of the companion article, $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})=0$, which expresses charge conservation; Gauss's law and charge conservation are written with the same operator. That is a genuine feature of the notation: the constraint is not an extra object appended to the algebra but a scalar-part projection that already appears in it.
 
 The gauge freedom, correspondingly, is the freedom to add $\tilde\nabla_\Phi\Gamma$ to $\tilde{A}_{\Phi}$; it lives in the scalar direction of the material sector, and $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ is its field. The physical field strength is the **vector part** of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$, invariant under the transformation, and the framework's own account says the scalar part is not physical.
 
 Two points about this interpretation must be kept separate.
 
-The first is a **structural observation**, and it is suggestive but convention-dependent. The potential $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ has an imaginary scalar part and a real vector part: it is an element of the material sector $\mathbb{B}_{\Phi}$. The conjugate momentum $\tilde{\pi}$ has a vanishing (real) scalar part and a purely imaginary vector part: in the $i r'_t$ convention it is an element of the complementary sector $\mathbb{B}_{\Psi}$. The canonical pair thus straddles the two sectors that the framework distinguishes as material and informational — the same pairing of "configuration" and "operator" that the article on $\mathbb{B}_{\Psi}$ describes for its action on $\mathbb{B}_{\Phi}$. Whether this is a meaningful statement about the algebra or a consequence of writing the momentum with the $i r'_t$ derivative is not decided here, and it is recorded as an open question. In a real-time formulation the momentum of the same theory is real, and the placement reverses; the physical content is unchanged.
+The first is a **structural observation**, and it is suggestive but convention-dependent. The potential $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ has an imaginary scalar part and a real vector part: it is an element of the material sector $\mathbb{B}_{\Phi}$. The conjugate momentum $\tilde\pi_{\mathrm{id}}$ has a vanishing (real) scalar part and a purely imaginary vector part: in the $i r'_t$ convention it is an element of the complementary sector $\mathbb{B}_{\Psi}$. The canonical pair thus straddles the two sectors that the framework distinguishes as material and informational — the same pairing of "configuration" and "operator" that the article on $\mathbb{B}_{\Psi}$ describes for its action on $\mathbb{B}_{\Phi}$. Whether this is a meaningful statement about the algebra or a consequence of writing the momentum with the $i r'_t$ derivative is not decided here, and it is recorded as an open question. In a real-time formulation the momentum of the same theory is real, and the placement reverses; the physical content is unchanged.
 
 The second is the **finding**. Nothing in the algebra selects a gauge. The gauge-invariant content of the theory is a functional of $\tilde{F}$ alone, and $\tilde{F}$ is invariant under every gauge transformation; so no gauge-invariant functional of $\tilde{A}_{\Phi}$ — no biquaternion norm, no trace, no conjugation built from the basis and $i$ — can break the degeneracy, because any such functional is a function of $\tilde{F}$. The Lorenz condition $S=0$ is available and is the framework's covariant choice, but the companion article itself declines to make it physical, and the algebra offers no principle that prefers it to $A_0=0$ (the temporal gauge) or to any other. The gauge must be fixed from outside the algebra. This is the sense in which the biquaternion framework cannot quantize Maxwell "automatically".
 
@@ -238,7 +238,7 @@ The verdict is therefore not a ranking. **Maxwell is a transcription of standard
 - **The intrinsic Lagrangian and pairings.** The parent Dirac article records that the $\mathbb{B}$-intrinsic Lagrangian and conjugate momentum are not fixed by the algebra. The same is true here, and more sharply, because the natural variable $\tilde{F}$ has no canonical partner at all. Whether a real-scalar Lagrangian built from the trace and norm pairings reproduces the standard constraint structure is not shown.
 - **The biquaternion Fock space.** Whether there is a Fock space native to $\mathbb{B}$, rather than the exterior (fermionic) or symmetric (bosonic) algebra of a module's solution space, is the subject of the planned companion article on the Fock space.
 - **The photon.** Whether the two transverse polarizations have a native meaning in the algebra — for instance, in the vector part of the material sector — is the subject of the planned article on the photon.
-- **The sector straddle.** Whether $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$ and $\tilde{\pi}\in\mathbb{B}_{\Psi}$ has algebraic content or is a convention effect is undecided.
+- **The sector straddle.** Whether $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$ and $\tilde\pi_{\mathrm{id}}\in\mathbb{B}_{\Psi}$ has algebraic content or is a convention effect is undecided.
 - **The vacuum energy.** As in the Dirac case, whether the algebra singles out a regularization or a geometric meaning for the zero-point energy is open.
 - **Empirical content.** Whether any of this yields a prediction distinguishing it from standard quantum electrodynamics is the unanswered framework-level question.
 
@@ -246,7 +246,7 @@ The verdict is therefore not a ranking. **Maxwell is a transcription of standard
 
 The biquaternion Maxwell equation $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ is first order, and its natural variable $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ is gauge invariant; its real and imaginary parts separate the homogeneous and the inhomogeneous Maxwell equations. But $\tilde{F}$ has no canonical partner, and no local Lagrangian in four dimensions produces the field equation by varying $\tilde{F}$ alone. Canonical quantization must therefore return to the potential $\tilde{A}_{\Phi}$, and with it the gauge freedom $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, whose field is $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ with $S_2=S-\Box_\Phi\Gamma$.
 
-The Legendre transform is singular. The conjugate momenta are $\pi_\mu=-F_{t\mu}$, so $\pi_0\approx0$ is primary and Gauss's law $\mathrm{div}\,\vec\pi\approx0$ is secondary; both are **first class** and generate gauge transformations. The phase-space count $8-2\times2=4$ gives two field degrees of freedom. In the notation of the companion articles the constraints are $\mathrm{Sc}(\tilde{\pi})\approx0$ and $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{\pi})\approx0$, the same scalar-part shape as the charge-conservation condition $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})=0$.
+The Legendre transform is singular. The conjugate momenta are $\pi_\mu=-F_{t\mu}$, so $\pi_0\approx0$ is primary and Gauss's law $\mathrm{div}\,\vec\pi\approx0$ is secondary; both are **first class** and generate gauge transformations. The phase-space count $8-2\times2=4$ gives two field degrees of freedom. In the notation of the companion articles the constraints are $\mathrm{Sc}(\tilde\pi_{\mathrm{id}})\approx0$ and $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\pi_{\mathrm{id}})\approx0$, the same scalar-part shape as the charge-conservation condition $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})=0$.
 
 Covariant quantization is Gupta–Bleuler: four polarizations with commutators $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\sigma_{\mathrm{met},r}\delta_{rs}(2\pi\hbar)^3\delta^{(3)}$, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, so the timelike mode has negative norm; the subsidiary condition $(a_{\mathrm{fop},0}-a_{\mathrm{fop},3})|\tilde{Ξ}\rangle=0$ leaves the zero-norm combination $a_{\mathrm{fop},0}^{\dagger}-a_{\mathrm{fop},3}^{\dagger}$, which decouples, and the physical subspace has positive-definite norm and exactly the two transverse polarizations, with $\sum_{\lambda=1}^2\epsilon_i^{(\lambda)}\epsilon_j^{(\lambda)}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$. By comparison a real scalar field has one mode, no constraint, and positive norm. The two-polarization count follows from the gauge symmetry, not from the number of components.
 
@@ -273,8 +273,8 @@ The extension is a transcription of standard canonical quantization into the fra
 | $\delta_{\mu\nu}$ | Unit metric, all four coefficients $+1$; $\sum_{\mu,\nu}\delta_{\mu\nu}Q_\mu Q_\nu$ is the biquaternion norm on $\mathbb{B}_{\Phi}$, with $Q_t=i q'_t$ |
 | $\mathcal{L}=-\tfrac14 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}$ | Maxwell Lagrangian density (potential formulation) |
 | $\pi_\mu=\partial\mathcal{L}/\partial(\partial/\partial R_t A_\mu)=-F_{t\mu}$ | Conjugate momenta: $\pi_0\approx0$, $\vec\pi=-i\vec E$ |
-| $\tilde{\pi}=\pi_0e_t+\vec\pi$ | Momentum biquaternion |
-| $\mathrm{Sc}(\tilde{\pi})\approx0$, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{\pi})\approx0$ | Primary and Gauss-law constraints, both first class |
+| $\tilde\pi_{\mathrm{id}}=\pi_0e_t+\vec\pi$ | Momentum biquaternion |
+| $\mathrm{Sc}(\tilde\pi_{\mathrm{id}})\approx0$, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\pi_{\mathrm{id}})\approx0$ | Primary and Gauss-law constraints, both first class |
 | $A_\mu$, $\epsilon^{(r)}_\mu$, $a_{\mathrm{fop},r},a_{\mathrm{fop},r}^{\dagger}$ | Quantized potential, polarization vectors, mode operators |
 | $[a_{\mathrm{fop},r}(\vec k_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)]=\sigma_{\mathrm{met},r}\delta_{rs}(2\pi\hbar)^3\delta^{(3)}$ | Mode commutator, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ |
 | $(a_{\mathrm{fop},0}-a_{\mathrm{fop},3})\lvert\tilde{Ξ}\rangle=0$ | Gupta–Bleuler subsidiary condition (momentum along $\vec e_z$) |

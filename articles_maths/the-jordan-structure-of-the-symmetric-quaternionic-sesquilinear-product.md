@@ -84,7 +84,7 @@ $$
 
 **Proposition (the idempotents).** The idempotents of the algebra are $0$ and $e_t$.
 
-*Proof.* $\tilde \Pi^2=\tilde \Pi$ with $\tilde \Pi$ Hermitian forces $\vec s=0$ and $t^2=t$ by the previous section, so $\tilde \Pi\in\{0,e_t\}$; a Newton iteration from three hundred random complex starting points converged to $0$ in every case, and $e_t$ is an idempotent since $e_t^{\natural}e_t^{*}=e_t$.
+*Proof.* $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$ with $\tilde\Pi_{\mathrm{id}}$ Hermitian forces $\vec s=0$ and $t^2=t$ by the previous section, so $\tilde\Pi_{\mathrm{id}}\in\{0,e_t\}$; a Newton iteration from three hundred random complex starting points converged to $0$ in every case, and $e_t$ is an idempotent since $e_t^{\natural}e_t^{*}=e_t$.
 
 **Theorem (the operator at the unit is the Hermitian involution).** The multiplication operator at $e_t$ is
 $$

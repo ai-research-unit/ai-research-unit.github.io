@@ -77,13 +77,13 @@ $$
 In the biquaternion framework, a pure spin state is an **idempotent** of the Hermitian subspace $\mathbb{B}_{\Psi}$, of the form
 
 $$
-\tilde\Pi(\vec u) = \tfrac{1}{2}\left(e_t + i\vec u\right),
+\tilde\Pi_{\mathrm{id}}(\vec u) = \tfrac{1}{2}\left(e_t + i\vec u\right),
 $$
 
 where $\vec u$ is a unit pure real quaternion (a unit vector in $\mathbb{R}^3$). The spin-up state along $z$ corresponds to
 
 $$
-\tilde\Pi_z = \tfrac{1}{2}\left(e_t + i \vec e_z\right).
+\tilde\Pi_{\mathrm{id},z} = \tfrac{1}{2}\left(e_t + i \vec e_z\right).
 $$
 
 ### Step 2: The measurement operator
@@ -99,7 +99,7 @@ $$
 The idempotent of the eigenstate of $\tilde H_\Psi =\frac{\hbar}{2}i\vec u_x$ with eigenvalue $+\frac{\hbar}{2}$ is
 
 $$
-\tilde\Pi_n = \tfrac{1}{2}\left(e_t + i\vec u_x\right).
+\tilde\Pi_{\mathrm{id},n} = \tfrac{1}{2}\left(e_t + i\vec u_x\right).
 $$
 
 ### Step 4: The probability
@@ -107,7 +107,7 @@ $$
 The probability of finding the particle spin-up along $\vec u_x$, given that it was prepared spin-up along $z$, is given by the **normalised Hermitian form**, with the trace as its final reading at normalisation:
 
 $$
-p_+ = \frac{\langle\tilde\Pi_n,\tilde\Pi_z\rangle_{*}}{\langle\tilde\Pi_z,e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde\Pi_n\circ\tilde\Pi_z^{*})}{\mathrm{Sc}(\tilde\Pi_z)} = \frac{\mathrm{Sc}(\tilde\Pi_n\circ\tilde\Pi_z)}{\mathrm{Sc}(\tilde\Pi_z)} = \frac{2\,\mathrm{Sc}(\tilde\Pi_n\circ\tilde\Pi_z)}{2\,\mathrm{Sc}(\tilde\Pi_z)} = 2\,\mathrm{Sc}\!\left(\tilde\Pi_n \circ \tilde\Pi_z\right),
+p_+ = \frac{\langle\tilde\Pi_{\mathrm{id},n},\tilde\Pi_{\mathrm{id},z}\rangle_{*}}{\langle\tilde\Pi_{\mathrm{id},z},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde\Pi_{\mathrm{id},n}\circ\tilde\Pi_{\mathrm{id},z}^{*})}{\mathrm{Sc}(\tilde\Pi_{\mathrm{id},z})} = \frac{\mathrm{Sc}(\tilde\Pi_{\mathrm{id},n}\circ\tilde\Pi_{\mathrm{id},z})}{\mathrm{Sc}(\tilde\Pi_{\mathrm{id},z})} = \frac{2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},n}\circ\tilde\Pi_{\mathrm{id},z})}{2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},z})} = 2\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{id},n} \circ \tilde\Pi_{\mathrm{id},z}\right),
 $$
 
 where $\circ$ is the biquaternion product.
@@ -115,7 +115,7 @@ where $\circ$ is the biquaternion product.
 Computing the product:
 
 $$
-\tilde\Pi_n \circ \tilde\Pi_z = \tfrac{1}{4}\left(e_t + i\vec u_x\right)\left(e_t + i \vec e_z\right) = \tfrac{1}{4}\left[e_t + i \vec e_z + i\vec u_x - \vec u_x\,\vec e_z\right].
+\tilde\Pi_{\mathrm{id},n} \circ \tilde\Pi_{\mathrm{id},z} = \tfrac{1}{4}\left(e_t + i\vec u_x\right)\left(e_t + i \vec e_z\right) = \tfrac{1}{4}\left[e_t + i \vec e_z + i\vec u_x - \vec u_x\,\vec e_z\right].
 $$
 
 Evaluating $\vec u_x\,\vec e_z$, using $\vec u_x = \sin\theta\, \vec e_x + \cos\theta\, \vec e_z$ and the quaternion product rules $\vec e_x \vec e_z = -\vec e_y$, $\vec e_z \vec e_z = -e_t$:
@@ -127,7 +127,7 @@ $$
 Substituting:
 
 $$
-\tilde\Pi_n \circ \tilde\Pi_z = \tfrac{1}{4}\left[e_t + i \vec e_z + i\vec u_x + \sin\theta\, \vec e_y + \cos\theta\, e_t\right].
+\tilde\Pi_{\mathrm{id},n} \circ \tilde\Pi_{\mathrm{id},z} = \tfrac{1}{4}\left[e_t + i \vec e_z + i\vec u_x + \sin\theta\, \vec e_y + \cos\theta\, e_t\right].
 $$
 
 The scalar part (coefficient of $e_t$) is $\tfrac{1}{4}\left(1 + \cos\theta\right)$; the other terms $i \vec e_z$, $i\vec u_x$, and $\sin\theta\, \vec e_y$ are vector terms with vanishing coefficient of $e_t$.
@@ -150,15 +150,15 @@ These agree with the physical expectation.
 
 ## What the Biquaternion Solution Illustrates
 
-**1. States and observables are elements of the same subspace.** The state $\tilde\Pi_z$ and the outcome idempotent $\tilde\Pi_n$ are both idempotents of $\mathbb{B}_{\Psi}$. The entire calculation involves only the algebra of the biquaternion units and the extraction of the scalar part.
+**1. States and observables are elements of the same subspace.** The state $\tilde\Pi_{\mathrm{id},z}$ and the outcome idempotent $\tilde\Pi_{\mathrm{id},n}$ are both idempotents of $\mathbb{B}_{\Psi}$. The entire calculation involves only the algebra of the biquaternion units and the extraction of the scalar part.
 
-**2. The Born rule is the normalised Hermitian form.** The probability is $p_+ = \langle\tilde\Pi_n,\tilde\Pi_z\rangle_{*}/\langle\tilde\Pi_z,e_t\rangle_{*} = \mathrm{Sc}(\tilde\Pi_n\tilde\Pi_z^{*})/\mathrm{Sc}(\tilde\Pi_z)$; on $\mathbb{B}_{\Psi}$ the star is inert, so this is $\mathrm{Sc}(\tilde\Pi_n\tilde\Pi_z)/\mathrm{Sc}(\tilde\Pi_z)$, and with the normalisation $2\,\mathrm{Sc}(\tilde\Pi_z)=1$ it reads $p_+ = 2\,\mathrm{Sc}(\tilde\Pi_n\tilde\Pi_z)$, the scalar part of the product being real and non-negative there. This is not an additional postulate: it is the natural pairing between two elements of the algebra, given by the Hermitian form. It is the same formula as $p_+ = \operatorname{tr}(\rho_n \rho_z)$ for density matrices, applied to the idempotents that represent the pure states.
+**2. The Born rule is the normalised Hermitian form.** The probability is $p_+ = \langle\tilde\Pi_{\mathrm{id},n},\tilde\Pi_{\mathrm{id},z}\rangle_{*}/\langle\tilde\Pi_{\mathrm{id},z},e_t\rangle_{*} = \mathrm{Sc}(\tilde\Pi_{\mathrm{id},n}\tilde\Pi_{\mathrm{id},z}^{*})/\mathrm{Sc}(\tilde\Pi_{\mathrm{id},z})$; on $\mathbb{B}_{\Psi}$ the star is inert, so this is $\mathrm{Sc}(\tilde\Pi_{\mathrm{id},n}\tilde\Pi_{\mathrm{id},z})/\mathrm{Sc}(\tilde\Pi_{\mathrm{id},z})$, and with the normalisation $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},z})=1$ it reads $p_+ = 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},n}\tilde\Pi_{\mathrm{id},z})$, the scalar part of the product being real and non-negative there. This is not an additional postulate: it is the natural pairing between two elements of the algebra, given by the Hermitian form. It is the same formula as $p_+ = \operatorname{tr}(\rho_n \rho_z)$ for density matrices, applied to the idempotents that represent the pure states.
 
 **3. No complex vectors are needed.** In the standard solution, the calculation involves complex column vectors and their inner product. In the biquaternion solution, it involves only the algebra of $\mathbb{B}$: products of quaternion units, extraction of the scalar part, and the normalisation of the scalar part. The complex structure is absorbed into the scalar imaginary $i$ of the algebra.
 
 **4. The geometry enters through the algebra.** The angle $\theta$ enters through the unit vector $\vec u_x = \sin\theta\, \vec e_x + \cos\theta\, \vec e_z$ that parametrizes the measurement direction. The result depends on $\theta$ only through the scalar product $\vec u_x\cdot \vec e_z = \cos\theta$, which appears in the Hermitian form through the product $\vec u_x\,\vec e_z$. The geometry of the Bloch sphere is encoded in the multiplication rules of the algebra.
 
-**5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the idempotent $\tilde\Pi(\vec u_x) = \tfrac{1}{2}(e_t + i\vec u_x)$ corresponds exactly to the rank-one projector $\tfrac{1}{2}(I + \vec u_x\cdot\boldsymbol{\sigma})$. But seeing the same result emerge from the algebra is a useful sanity check on the biquaternion framework.
+**5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the idempotent $\tilde\Pi_{\mathrm{id}}(\vec u_x) = \tfrac{1}{2}(e_t + i\vec u_x)$ corresponds exactly to the rank-one projector $\tfrac{1}{2}(I + \vec u_x\cdot\boldsymbol{\sigma})$. But seeing the same result emerge from the algebra is a useful sanity check on the biquaternion framework.
 
 ## Extension: The Expectation Value of the Spin
 
@@ -172,18 +172,18 @@ $$
 
 ### Biquaternion formulation
 
-The observable is $\tilde H_\Psi =\frac{\hbar}{2} i\vec u_x$ and the state is $\tilde\Pi_z = \tfrac{1}{2}(e_t + i \vec e_z)$. The expectation value is given by the normalised Hermitian form, with the trace reading last:
+The observable is $\tilde H_\Psi =\frac{\hbar}{2} i\vec u_x$ and the state is $\tilde\Pi_{\mathrm{id},z} = \tfrac{1}{2}(e_t + i \vec e_z)$. The expectation value is given by the normalised Hermitian form, with the trace reading last:
 
 $$
-\langle \tilde H_\Psi\rangle_{\tilde\Pi_z} = \frac{\langle\tilde\Pi_z,\tilde H_\Psi\rangle_{*}}{\langle\tilde\Pi_z,e_t\rangle_{*}} = 2\,\mathrm{Sc}(\tilde\Pi_z \circ \tilde H_\Psi).
+\langle \tilde H_\Psi\rangle_{\tilde\Pi_{\mathrm{id},z}} = \frac{\langle\tilde\Pi_{\mathrm{id},z},\tilde H_\Psi\rangle_{*}}{\langle\tilde\Pi_{\mathrm{id},z},e_t\rangle_{*}} = 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},z} \circ \tilde H_\Psi).
 $$
 
-which is already the doubled scalar part $2\,\mathrm{Sc}(\tilde\Pi_z\circ\tilde H_\Psi)$, the star being inert and that scalar part real.
+which is already the doubled scalar part $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},z}\circ\tilde H_\Psi)$, the star being inert and that scalar part real.
 
 Computing the product:
 
 $$
-\tilde\Pi_z \circ  \tilde H_\Psi = \tfrac{1}{2}\frac{\hbar\,(e_t + i \vec e_z)}{2} i\vec u_x =\frac{\hbar}{4}\left(i\vec u_x - \vec e_z \vec u_x\right).
+\tilde\Pi_{\mathrm{id},z} \circ  \tilde H_\Psi = \tfrac{1}{2}\frac{\hbar\,(e_t + i \vec e_z)}{2} i\vec u_x =\frac{\hbar}{4}\left(i\vec u_x - \vec e_z \vec u_x\right).
 $$
 
 Evaluating $\vec e_z \vec u_x$, using $\vec e_z \vec e_x = \vec e_y$ and $\vec e_z \vec e_z = -e_t$:
@@ -195,13 +195,13 @@ $$
 Substituting:
 
 $$
-\tilde\Pi_z \circ  \tilde H_\Psi =\frac{\hbar}{4}\left(i\vec u_x - \sin\theta\, \vec e_y + \cos\theta\, e_t\right).
+\tilde\Pi_{\mathrm{id},z} \circ  \tilde H_\Psi =\frac{\hbar}{4}\left(i\vec u_x - \sin\theta\, \vec e_y + \cos\theta\, e_t\right).
 $$
 
 The scalar part is $\frac{\hbar}{4}\cos\theta$. Therefore
 
 $$
-\boxed{\;\langle  \tilde H_\Psi\rangle_{\tilde\Pi_z}  =\frac{\hbar}{2}\cos\theta =\frac{\hbar}{2}\cos\theta\;}.
+\boxed{\;\langle  \tilde H_\Psi\rangle_{\tilde\Pi_{\mathrm{id},z}}  =\frac{\hbar}{2}\cos\theta =\frac{\hbar}{2}\cos\theta\;}.
 $$
 
 Both formulations give the same result.
@@ -212,7 +212,7 @@ We have solved a simple exercise in quantum physics — the probability of measu
 
 In the **standard formulation**, the solution proceeds through ket vectors, Pauli matrices, and the Born rule in the form $p_+ = |\langle +n | +z\rangle_{*}|^2$, giving $p_+ = \cos^2(\theta/2) = (1 + \cos\theta)/2$.
 
-In the **biquaternion formulation**, the solution proceeds through the idempotents of $\mathbb{B}_{\Psi}$ and the normalised Hermitian form $p_+=\langle\tilde\Pi_n,\tilde\Pi_z\rangle_{*}/\langle\tilde\Pi_z,e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_n\circ\tilde\Pi_z^{*})/\mathrm{Sc}(\tilde\Pi_z)$, which is $2\,\mathrm{Sc}(\tilde\Pi_n\circ\tilde\Pi_z)$ at normalisation, giving the same result.
+In the **biquaternion formulation**, the solution proceeds through the idempotents of $\mathbb{B}_{\Psi}$ and the normalised Hermitian form $p_+=\langle\tilde\Pi_{\mathrm{id},n},\tilde\Pi_{\mathrm{id},z}\rangle_{*}/\langle\tilde\Pi_{\mathrm{id},z},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{\mathrm{id},n}\circ\tilde\Pi_{\mathrm{id},z}^{*})/\mathrm{Sc}(\tilde\Pi_{\mathrm{id},z})$, which is $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},n}\circ\tilde\Pi_{\mathrm{id},z})$ at normalisation, giving the same result.
 
 The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the qubit: states and observables are elements of the same subspace, the Born rule is the natural pairing given by the trace, and the geometry of the Bloch sphere is encoded in the multiplication rules of the algebra.
 
@@ -226,10 +226,10 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
-| $\tilde\Pi(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$ | Pure-state idempotent |
+| $\tilde\Pi_{\mathrm{id}}(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$ | Pure-state idempotent |
 | $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ | Hermitian element (observable) |
 | $\operatorname{tr}\mathsf M_2(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Matrix trace of the image of an element |
-| $p_+ = 2\langle\tilde\Pi_n,\tilde\Pi_z\rangle_{*} = 2\,\mathrm{Sc}(\tilde\Pi_n \circ \tilde\Pi_z)$ | Born rule in biquaternion form |
+| $p_+ = 2\langle\tilde\Pi_{\mathrm{id},n},\tilde\Pi_{\mathrm{id},z}\rangle_{*} = 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},n} \circ \tilde\Pi_{\mathrm{id},z})$ | Born rule in biquaternion form |
 
 ## Further Reading
 

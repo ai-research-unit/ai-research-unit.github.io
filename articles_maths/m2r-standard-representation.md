@@ -147,11 +147,11 @@ The four lines carry the whole non-commutativity of the algebra. The scalar line
 
 **The image.** The image of $\mathsf{M}_2$ is all of $M_2(\mathbb{R})$. This is the structural difference from the quaternion category, where the image is a proper subspace: for $\mathbb{H}$ inside $M_2(\mathbb{C})$ the image has real dimension four in eight, and the missing four dimensions are the ones a matrix model of the quaternions can never reach. Here nothing is missing, and consequently every matrix statement about a split quaternion is a statement about the algebra and conversely.
 
-**The four corners.** Take the idempotent $\tilde\pi_+=\tfrac12(e_t+\vec e_y)$, its complement $\tilde\pi_-=\tfrac12(e_t-\vec e_y)$, and the four Peirce corners $A_{\epsilon\delta}=\tilde\pi_\epsilon A\tilde\pi_\delta$. In the model they are the four matrix units of the basis of lines $L_\pm=\operatorname{span}(1,\pm1)$, with
+**The four corners.** Take the idempotent $\tilde\pi_{\mathrm{id},+}=\tfrac12(e_t+\vec e_y)$, its complement $\tilde\pi_{\mathrm{id},-}=\tfrac12(e_t-\vec e_y)$, and the four Peirce corners $A_{\epsilon\delta}=\tilde\pi_{\mathrm{id},\epsilon} A\tilde\pi_{\mathrm{id},\delta}$. In the model they are the four matrix units of the basis of lines $L_\pm=\operatorname{span}(1,\pm1)$, with
 
 $$
-\mathsf{M}_2(\tilde\pi_+)=\tfrac12\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad
-\mathsf{M}_2(\tilde\pi_-)=\tfrac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix},
+\mathsf{M}_2(\tilde\pi_{\mathrm{id},+})=\tfrac12\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad
+\mathsf{M}_2(\tilde\pi_{\mathrm{id},-})=\tfrac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix},
 $$
 
 $$
@@ -243,7 +243,7 @@ P_\pm=\frac{\mathsf{M}_2(\tilde q)-\lambda_\mp I}{\lambda_+-\lambda_-},
 P_+^2=P_+,\quad P_-^2=P_-,\quad P_+P_-=0,\quad P_++P_-=I,
 $$
 
-and they are rank-one, of trace one and determinant zero. They are the images of the two idempotents of the algebra constructed by the halving map: if $\tilde\zeta^2=e_t$ then $\tilde\pi=\tfrac12(e_t+\tilde\zeta)$ is idempotent, and every nontrivial idempotent arises this way from a pure root of one, $\tilde\zeta=\vec v$ with $\langle\vec v\rangle_{\natural}=-1$. In the model the condition is $\det P=0$ with $\operatorname{tr}P=1$ and $P^2=P$, which is the same thing.
+and they are rank-one, of trace one and determinant zero. They are the images of the two idempotents of the algebra constructed by the halving map: if $\tilde\zeta^2=e_t$ then $\tilde\pi_{\mathrm{id}}=\tfrac12(e_t+\tilde\zeta)$ is idempotent, and every nontrivial idempotent arises this way from a pure root of one, $\tilde\zeta=\vec v$ with $\langle\vec v\rangle_{\natural}=-1$. In the model the condition is $\det P=0$ with $\operatorname{tr}P=1$ and $P^2=P$, which is the same thing.
 
 **The idempotent hyperboloid.** The pure roots of one satisfy $v_x^2-v_y^2-v_z^2=-1$, that is $v_y^2+v_z^2=v_x^2+1$, a connected one-sheeted hyperboloid inside $V$. Its image under the halving map is the connected two-dimensional family of nontrivial idempotents, and the model carries it to the connected family of rank-one projections of trace one.
 
@@ -367,8 +367,8 @@ the Möbius transformation of the projective line, and the point $t=-d/c$ is sen
 | $\langle\tilde q\rangle_{\natural}$ | the split-quaternion norm $q_t^2+q_x^2-q_y^2-q_z^2$ | *Split-Quaternion Norm and Invertibility* |
 | $\tilde q^{\natural}$ | the conjugation $q_t-q_x\vec e_x-q_y\vec e_y-q_z\vec e_z$ | *Split-Quaternion Subspaces and the Involutions* |
 | $L_{\tilde q},R_{\tilde q}$ | left and right multiplication, $4\times4$ matrices | this article |
-| $\tilde\pi_\pm$ | the idempotents $\tfrac12(e_t\pm\vec e_y)$ | this article |
-| $A_{\epsilon\delta}$ | the Peirce corner $\tilde\pi_\epsilon A\tilde\pi_\delta$ | this article |
+| $\tilde\pi_{\mathrm{id},\pm}$ | the idempotents $\tfrac12(e_t\pm\vec e_y)$ | this article |
+| $A_{\epsilon\delta}$ | the Peirce corner $\tilde\pi_{\mathrm{id},\epsilon} A\tilde\pi_{\mathrm{id},\delta}$ | this article |
 | $\mathfrak{sl}_2(\mathbb{R})$ | the traceless part $\mathsf{M}_2(V)$ | this article |
 | $\mathbb{P}^1(\mathbb{R})$ | the space of lines of $\mathbb{R}^2$, the set of minimal left ideals | this article |
 | $E_{ij}$ | the matrix units of $M_2(\mathbb{R})$ | this article |

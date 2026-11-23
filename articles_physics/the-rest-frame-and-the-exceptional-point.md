@@ -12,7 +12,7 @@ The predicates are the ones the partition entry named. The norm $N$ asks whether
 
 The first claim is that invertibility and spectral separation are independent. An element here is invertible — it has an inverse, it generates a flow, it admits a logarithm and a polar decomposition — and it has no second eigenvalue. Everything the algebra does with units it still does here; what fails is the one operation that needs two distinct eigenvalues, namely the eigenbasis.
 
-The second claim is that this stratum has two faces and the predicates cannot see the difference. The scalar line $\tilde Q=Q_te_t$ is semisimple: the eigenvalue is repeated and the element is diagonalisable. The Jordan part $\tilde Q=Q_te_t+\vec\Upsilon$ with $\vec\Upsilon^{2}=0$ is defective: the eigenvalue is repeated and the element is a single Jordan block. Both satisfy $N\neq0$ and $B^{2}=0$. The split is by the minimal polynomial, and it is the one place in the arrangement where a sector's own interior matters more than its boundary.
+The second claim is that this stratum has two faces and the predicates cannot see the difference. The scalar line $\tilde Q=Q_te_t$ is semisimple: the eigenvalue is repeated and the element is diagonalisable. The Jordan part $\tilde Q=Q_te_t+\vec\Pi_{\mathrm{nil}}$ with $\vec\Pi_{\mathrm{nil}}^{2}=0$ is defective: the eigenvalue is repeated and the element is a single Jordan block. Both satisfy $N\neq0$ and $B^{2}=0$. The split is by the minimal polynomial, and it is the one place in the arrangement where a sector's own interior matters more than its boundary.
 
 The third claim is that the scalar line is exactly the centre of the algebra. The semisimple face of the stratum is the centre minus the origin, and not a slice chosen inside it. The consequence is sharp: on the scalar line left multiplication is a scalar operator with a four-dimensional eigenspace, so no basis is preferred, and the frame is not a function of the element.
 
@@ -55,7 +55,7 @@ $$
 \mathcal N=\{N=0\}.
 $$
 
-An element of the stratum is: An invertible element with $B^{2}=0$; an element with $B^{2}=0$ and a non-zero scalar part; a scalar times a unipotent, $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$; a non-zero complex multiple of a unipotent element; and an invertible element whose two eigenvalues coincide at $Q_t$.
+An element of the stratum is: An invertible element with $B^{2}=0$; an element with $B^{2}=0$ and a non-zero scalar part; a scalar times a unipotent, $Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}^{2}=0$; a non-zero complex multiple of a unipotent element; and an invertible element whose two eigenvalues coincide at $Q_t$.
 
 The dimension drops by two from the open stratum. The stratum has complex dimension three and real dimension six, against four and eight for $\Sigma_{11}$. It is Zariski-open inside the cone $\mathcal S$, it is connected, and it is a cone with its apex removed.
 
@@ -74,7 +74,7 @@ The stratum splits by the vector part.
 $$
 \Sigma_{10}=\Sigma_{10}^{\mathrm{s}}\sqcup\Sigma_{10}^{\mathrm{J}},\qquad
 \Sigma_{10}^{\mathrm{s}}=\{Q_te_t\},\qquad
-\Sigma_{10}^{\mathrm{J}}=\{Q_te_t+\vec\Upsilon,\ \vec\Upsilon\neq0\}.
+\Sigma_{10}^{\mathrm{J}}=\{Q_te_t+\vec\Pi_{\mathrm{nil}},\ \vec\Pi_{\mathrm{nil}}\neq0\}.
 $$
 
 | regime | dimension | minimal polynomial | centraliser | spectral idempotent |
@@ -84,7 +84,7 @@ $$
 
 **The split is invisible to the two predicates.** Both faces have $N\neq0$ and $B^{2}=0$, so no truth value separates them. What separates them is the minimal polynomial: for the scalar line it is linear, for the Jordan part it is the square of a linear factor.
 
-The scalar line is closed in the stratum and the Jordan part is open and dense in it. A sequence of Jordan elements with $\vec\Upsilon\to0$ converges to a point of the scalar line, and the limit is not in the Jordan part.
+The scalar line is closed in the stratum and the Jordan part is open and dense in it. A sequence of Jordan elements with $\vec\Pi_{\mathrm{nil}}\to0$ converges to a point of the scalar line, and the limit is not in the Jordan part.
 
 ### The Centre Is the Scalar Line
 
@@ -95,7 +95,7 @@ $$
 \mathbb{B}_{C}=\mathbb{C}e_t .
 $$
 
-The identification is two-sided. Every non-zero central element has $B^{2}=0$ and $N=Q_t^{2}\neq0$, so every one of them is in the stratum; and every element of the scalar line is central. The Jordan part is disjoint from the centre because $\vec\Upsilon\neq0$ is not central. So the stratum's two faces separate along the carrier, and the carrier holds the semisimple face and none of the defective one.
+The identification is two-sided. Every non-zero central element has $B^{2}=0$ and $N=Q_t^{2}\neq0$, so every one of them is in the stratum; and every element of the scalar line is central. The Jordan part is disjoint from the centre because $\vec\Pi_{\mathrm{nil}}\neq0$ is not central. So the stratum's two faces separate along the carrier, and the carrier holds the semisimple face and none of the defective one.
 
 Left multiplication on the centre is a scalar operator. For $\tilde Q=Q_te_t$ the operator $L_{\tilde Q}$ is $Q_t$ times the identity on a four-dimensional space, so its eigenspace is the whole algebra. In any Peirce basis the matrix is $Q_tI$, so $L_{\tilde Q}-Q_tI$ has rank zero and its kernel is the whole algebra.
 
@@ -104,8 +104,8 @@ Left multiplication on the centre is a scalar operator. For $\tilde Q=Q_te_t$ th
 On the Jordan part the centraliser is a plane, and it is the dual numbers.
 
 $$
-\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Upsilon\}=\mathbb{C}[\varepsilon]/(\varepsilon^{2}),\qquad
-[X,\tilde Q]=0\iff \vec x\times\vec\Upsilon=0 .
+\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Pi_{\mathrm{nil}}\}=\mathbb{C}[\varepsilon]/(\varepsilon^{2}),\qquad
+[X,\tilde Q]=0\iff \vec x\times\vec\Pi_{\mathrm{nil}}=0 .
 $$
 
 The plane contains two idempotents and no more. From $a^{2}=a$ and $2ab=b$ one gets $(a,b)=(0,0)$ or $(1,0)$. So $0$ and $e_t$ are the only idempotents commuting with $\tilde Q$, and no non-trivial pair summing to $e_t$ is attached to the element.
@@ -118,7 +118,7 @@ A chosen idempotent gives a Peirce form and a block.
 
 $$
 e\tilde Qe=Q_te,\qquad
-e\tilde Qf=\vec\Upsilon,\qquad
+e\tilde Qf=\vec\Pi_{\mathrm{nil}},\qquad
 f\tilde Qe=0,\qquad
 f\tilde Qf=Q_tf,\qquad f=e_t-e,
 $$
@@ -129,7 +129,7 @@ $$
 \mathsf M^{Q}=\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}=J_2(Q_t).
 $$
 
-The $1$ is a normalisation, not an eigenvalue. It is the coefficient of $\vec\Upsilon$ in the sum $\tilde Q=Q_te+1\cdot\vec\Upsilon+0\cdot\vec X+Q_tf$, and it can be changed by rescaling the corner generator while the element stays fixed.
+The $1$ is a normalisation, not an eigenvalue. It is the coefficient of $\vec\Pi_{\mathrm{nil}}$ in the sum $\tilde Q=Q_te+1\cdot\vec\Pi_{\mathrm{nil}}+0\cdot\vec X+Q_tf$, and it can be changed by rescaling the corner generator while the element stays fixed.
 
 The form is gauge-invariant and the gauge is real. The pair $(e,f)$ and the corner vector $\vec X$ are not functions of $\tilde Q$; the four products above are. Over forty random conjugations by invertibles of norm one, the transported Peirce form closed to $5.1\times10^{-14}$.
 
@@ -138,8 +138,8 @@ The form is gauge-invariant and the gauge is real. The pair $(e,f)$ and the corn
 The power is a two-term formula with a coefficient that counts.
 
 $$
-\tilde Q^{n}=Q_t^{n}e_t+nQ_t^{n-1}\vec\Upsilon,\qquad
-\tilde Q^{-1}=\frac{1}{Q_t}e_t-\frac{1}{Q_t^{2}}\vec\Upsilon .
+\tilde Q^{n}=Q_t^{n}e_t+nQ_t^{n-1}\vec\Pi_{\mathrm{nil}},\qquad
+\tilde Q^{-1}=\frac{1}{Q_t}e_t-\frac{1}{Q_t^{2}}\vec\Pi_{\mathrm{nil}} .
 $$
 
 The inverse stays in the stratum and the power stays in the stratum. The inverse has the same nilpotent direction and the reciprocal scalar part; the $n$-th power has the same direction and coefficient $n$. Checked to $8.0\times10^{-14}$ at $n=10$ for the power and to $5.6\times10^{-17}$ for the inverse.
@@ -147,7 +147,7 @@ The inverse stays in the stratum and the power stays in the stratum. The inverse
 The flow stays and the product leaves. The exponential is the truncated kernel
 
 $$
-e^{\theta\tilde Q}=e^{\theta Q_t}\left(e_t+\theta\vec\Upsilon\right),
+e^{\theta\tilde Q}=e^{\theta Q_t}\left(e_t+\theta\vec\Pi_{\mathrm{nil}}\right),
 $$
 
 which is in the stratum for every $\theta$; but a product of two elements of the Jordan part with different nilpotent directions is generically in $\Sigma_{11}$.
@@ -203,16 +203,16 @@ On the Jordan part both gradients are non-zero and they are proportional only if
 | predicate | $N\neq0$, $B^{2}=0$ | the two invariants |
 | cone difference | $\mathcal S\setminus\mathcal N$ | the position among the strata |
 | scalar part | $Q_t\neq0$ on $\mathcal S$ | the eigenvalue |
-| unipotent form | $Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon^{2}=0$ | the defect and its direction |
+| unipotent form | $Q_t(e_t+\vec\Pi_{\mathrm{nil}})$, $\vec\Pi_{\mathrm{nil}}^{2}=0$ | the defect and its direction |
 | unit with one eigenvalue | spectrum $\{Q_t\}$ with multiplicity two | the spectral type |
 
-The five descriptions are equivalent and each names a different datum. The pair $(Q_t,\vec\Upsilon)$ is determined by the element — the scalar part gives $Q_t$ and the vector part gives $\vec\Upsilon$ — so the unipotent form is a bijection and not a parametrisation with a kernel.
+The five descriptions are equivalent and each names a different datum. The pair $(Q_t,\vec\Pi_{\mathrm{nil}})$ is determined by the element — the scalar part gives $Q_t$ and the vector part gives $\vec\Pi_{\mathrm{nil}}$ — so the unipotent form is a bijection and not a parametrisation with a kernel.
 
 The bijection is between the stratum and a product.
 
 $$
-\mathbb{C}^{\times}\times\{\vec\Upsilon\in\mathbb{C}^{3}:\vec\Upsilon^{2}=0\}\longrightarrow\Sigma_{10},\qquad
-(Q_t,\vec\Upsilon)\mapsto Q_t(e_t+\vec\Upsilon).
+\mathbb{C}^{\times}\times\{\vec\Pi_{\mathrm{nil}}\in\mathbb{C}^{3}:\vec\Pi_{\mathrm{nil}}^{2}=0\}\longrightarrow\Sigma_{10},\qquad
+(Q_t,\vec\Pi_{\mathrm{nil}})\mapsto Q_t(e_t+\vec\Pi_{\mathrm{nil}}).
 $$
 
 The second factor is the isotropic cone in $\mathbb{C}^{3}$, of complex dimension two, and the first factor is a punctured complex line, of dimension one. The count is three, and it is the count the geometry gives.
@@ -305,9 +305,9 @@ so the line is closed under multiplication and inversion, and it is a subgroup o
 Every complete pair of idempotents gives a two-term writing with equal coefficients.
 
 $$
-\tilde Q=Q_t\tilde\Pi_1+Q_t\tilde\Pi_2,\qquad
-\tilde\Pi_1+\tilde\Pi_2=e_t,\qquad
-\tilde\Pi_1\tilde\Pi_2=0,
+\tilde Q=Q_t\tilde\Pi_{\mathrm{id},1+Q}_t\tilde\Pi_{\mathrm{id},2},\qquad
+\tilde\Pi_{\mathrm{id},1+}\tilde\Pi_{\mathrm{id},2}=e_t,\qquad
+\tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2}=0,
 $$
 
 and the pair is not determined by $\tilde Q$. The canonical Peirce decomposition attached to the element has one term, $\tilde Q=Q_te_t$; every two-term refinement is a choice.
@@ -361,38 +361,38 @@ The limit is continuous in the element and discontinuous in the frame. As $\vec 
 Off the scalar line the element is defective.
 
 $$
-\tilde Q=Q_te_t+\vec\Upsilon,\qquad
-\vec\Upsilon^{2}=0,\qquad
-\vec\Upsilon\neq0,\qquad
+\tilde Q=Q_te_t+\vec\Pi_{\mathrm{nil}},\qquad
+\vec\Pi_{\mathrm{nil}}^{2}=0,\qquad
+\vec\Pi_{\mathrm{nil}}\neq0,\qquad
 p_{\tilde Q}(X)=(X-Q_t)^{2}.
 $$
 
 The minimal polynomial is the square of a linear factor and the element is not that factor. So the element is a single Jordan block of size two: one eigenvalue, one eigendirection, and no diagonal form.
 
-**The defect is a direction and not a magnitude.** Whether the element is defective depends on one thing only, namely whether $\vec\Upsilon$ vanishes; the size of $\vec\Upsilon$ is a datum of the element and not of its type. Two elements with the same scalar part and different defects are different elements of the same spectral type, and the type is decided by a vanishing. A quantity whose type is decided by whether it vanishes is a direction: the algebra distinguishes the line and does not distinguish the points along it.
+**The defect is a direction and not a magnitude.** Whether the element is defective depends on one thing only, namely whether $\vec\Pi_{\mathrm{nil}}$ vanishes; the size of $\vec\Pi_{\mathrm{nil}}$ is a datum of the element and not of its type. Two elements with the same scalar part and different defects are different elements of the same spectral type, and the type is decided by a vanishing. A quantity whose type is decided by whether it vanishes is a direction: the algebra distinguishes the line and does not distinguish the points along it.
 
-The defect is not visible to the norm. $N=Q_t^{2}$ does not depend on $\vec\Upsilon$ at all. An element of the Jordan part and the scalar element with the same scalar part have the same norm, the same eigenvalue, the same inverse's norm, and different minimal polynomials.
+The defect is not visible to the norm. $N=Q_t^{2}$ does not depend on $\vec\Pi_{\mathrm{nil}}$ at all. An element of the Jordan part and the scalar element with the same scalar part have the same norm, the same eigenvalue, the same inverse's norm, and different minimal polynomials.
 
 ### What Commutes With It: the Dual Numbers
 
 The centraliser is the plane spanned by the element and the unit, and it is the dual numbers.
 
 $$
-\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Upsilon\}\cong\mathbb{C}[\varepsilon]/(\varepsilon^{2}),\qquad
+\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Pi_{\mathrm{nil}}\}\cong\mathbb{C}[\varepsilon]/(\varepsilon^{2}),\qquad
 \varepsilon^{2}=0 .
 $$
 
 The computation is one cross product. For $X=x_0e_t+\vec x$,
 
 $$
-[X,\tilde Q]=2\,\vec x\times\vec\Upsilon,
+[X,\tilde Q]=2\,\vec x\times\vec\Pi_{\mathrm{nil}},
 $$
 
-so $X$ commutes with $\tilde Q$ exactly when $\vec x$ is a multiple of $\vec\Upsilon$. The centraliser is two-dimensional over $\mathbb{C}$ instead of four.
+so $X$ commutes with $\tilde Q$ exactly when $\vec x$ is a multiple of $\vec\Pi_{\mathrm{nil}}$. The centraliser is two-dimensional over $\mathbb{C}$ instead of four.
 
 A dual-number algebra has two idempotents. Solving $a^{2}=a$ and $2ab=b$ gives $(0,0)$ and $(1,0)$: the zero and the unit. There is no non-trivial idempotent in the centraliser, so there is no non-trivial Peirce decomposition attached to the element, and there is no spectral decomposition. This is the failure, stated exactly: the decomposition needs two idempotents that commute with the element, and the supply is exhausted by $0$ and $e_t$.
 
-The nilpotent is carried by the vector part, and the vector part is what the stratum constrains. $\vec\Upsilon$ is a pure vector with $\vec\Upsilon^{2}=0$, so it is a nilpotent of index two; its direction is a point of the punctured isotropic cone, which is the second factor of the parameter space in §*Five Descriptions of One Condition*.
+The nilpotent is carried by the vector part, and the vector part is what the stratum constrains. $\vec\Pi_{\mathrm{nil}}$ is a pure vector with $\vec\Pi_{\mathrm{nil}}^{2}=0$, so it is a nilpotent of index two; its direction is a point of the punctured isotropic cone, which is the second factor of the parameter space in §*Five Descriptions of One Condition*.
 
 ### The Peirce Form and the Block
 
@@ -400,12 +400,12 @@ A Peirce decomposition still exists; it is only not attached to the element.
 
 $$
 e\tilde Qe=Q_te,\qquad
-e\tilde Qf=\vec\Upsilon,\qquad
+e\tilde Qf=\vec\Pi_{\mathrm{nil}},\qquad
 f\tilde Qe=0,\qquad
 f\tilde Qf=Q_tf,
 $$
 
-with $e$ an idempotent satisfying $\vec\Upsilon=e\vec\Upsilon f$ and $f=e_t-e$. In these coordinates
+with $e$ an idempotent satisfying $\vec\Pi_{\mathrm{nil}}=e\vec\Pi_{\mathrm{nil}} f$ and $f=e_t-e$. In these coordinates
 
 $$
 \mathsf M^{Q}=\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}=J_2(Q_t).
@@ -424,17 +424,17 @@ f=\frac{1}{2}(e_t-i\vec e_z),\qquad
 \vec X=\frac{1}{2}(\vec e_x-i\vec e_y),
 $$
 
-and the four products close to zero remainder. Every other non-zero isotropic direction is this one transported by a unit of norm one, which is what the conjugation check confirms; the size of $\vec\Upsilon$ travels with the element and not with the direction.
+and the four products close to zero remainder. Every other non-zero isotropic direction is this one transported by a unit of norm one, which is what the conjugation check confirms; the size of $\vec\Pi_{\mathrm{nil}}$ travels with the element and not with the direction.
 
 ### The Flag, Not the Basis
 
 What survives when the eigenbasis fails is a flag.
 
 $$
-\{0\}\subset\mathbb{C}\vec\Upsilon\subset\ker L_{\vec\Upsilon}\subset\mathbb{B},
+\{0\}\subset\mathbb{C}\vec\Pi_{\mathrm{nil}}\subset\ker L_{\vec\Pi_{\mathrm{nil}}}\subset\mathbb{B},
 $$
 
-with $\vec\Upsilon$ spanning the line and the kernel a plane. The line is invariant under the flow, the plane is invariant, and there is no canonical complement of the line inside the plane.
+with $\vec\Pi_{\mathrm{nil}}$ spanning the line and the kernel a plane. The line is invariant under the flow, the plane is invariant, and there is no canonical complement of the line inside the plane.
 
 The flag is the invariant and the splitting of the flag is a choice. A Peirce pair $(e,f)$ chooses a complement of the line, and a change of pair changes the complement; the flag itself does not depend on the choice. This is the exact replacement for the eigenbasis: one nested pair of subspaces instead of four independent eigenvectors.
 
@@ -452,7 +452,7 @@ B^{2}=0\ \Longrightarrow\ B=0\ \Longrightarrow\
 \lambda_+=\lambda_-=Q_t .
 $$
 
-What survives is the sign of the defect, and the two signs are two elements rather than one element in two names. $Q_t(e_t+\vec\Upsilon)$ and $Q_t(e_t-\vec\Upsilon)$ differ; neither is a relabelling of the other, each has its own adapted pair, and each has the block $J_2(Q_t)$ relative to that pair. So the freedom that the open stratum spent on exchanging two labels is spent here on nothing, and the sign that remains is the sign of a direction on a line.
+What survives is the sign of the defect, and the two signs are two elements rather than one element in two names. $Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ and $Q_t(e_t-\vec\Pi_{\mathrm{nil}})$ differ; neither is a relabelling of the other, each has its own adapted pair, and each has the block $J_2(Q_t)$ relative to that pair. So the freedom that the open stratum spent on exchanging two labels is spent here on nothing, and the sign that remains is the sign of a direction on a line.
 
 The reading is that a parity needs two eigenvalues and a direction needs only one. The exchange of labels is a symmetry of a two-term writing; when the writing collapses to one term the symmetry has no object, and the object that replaces it is the sign of the nilpotent, which is a direction on a line and not a permutation of two lines.
 
@@ -470,12 +470,12 @@ The defect is in the eigenvalue and not in the invertibility. This is the point 
 The nilpotent part, by contrast, does have a kernel.
 
 $$
-\ker L_{\vec\Upsilon}=\{X:\vec\Upsilon X=0\},\qquad
-\dim_{\mathbb{C}}\ker L_{\vec\Upsilon}=2,\qquad
-L_{\vec\Upsilon}^{2}=0,
+\ker L_{\vec\Pi_{\mathrm{nil}}}=\{X:\vec\Pi_{\mathrm{nil}} X=0\},\qquad
+\dim_{\mathbb{C}}\ker L_{\vec\Pi_{\mathrm{nil}}}=2,\qquad
+L_{\vec\Pi_{\mathrm{nil}}}^{2}=0,
 $$
 
-and the same holds on the right. So $L_{\tilde Q}=Q_t\mathrm{id}+L_{\vec\Upsilon}$ is a scalar plus a square-zero map of rank two: one eigenvalue, four-dimensional space, two Jordan blocks of size two.
+and the same holds on the right. So $L_{\tilde Q}=Q_t\mathrm{id}+L_{\vec\Pi_{\mathrm{nil}}}$ is a scalar plus a square-zero map of rank two: one eigenvalue, four-dimensional space, two Jordan blocks of size two.
 
 ### No Joint Eigenbasis
 
@@ -489,9 +489,9 @@ $$
 On the Jordan part the eigenvalue is one number, so both operators are $Q_t$ on their common eigenspace, and that common eigenspace is one line:
 
 $$
-\dim_{\mathbb{C}}\bigl(\ker(L_{\vec\Upsilon})\cap\ker(R_{\vec\Upsilon})\bigr)=1,
+\dim_{\mathbb{C}}\bigl(\ker(L_{\vec\Pi_{\mathrm{nil}}})\cap\ker(R_{\vec\Pi_{\mathrm{nil}}})\bigr)=1,
 \qquad
-\ker L_{\vec\Upsilon}\cap\ker R_{\vec\Upsilon}=\mathbb{C}\vec\Upsilon .
+\ker L_{\vec\Pi_{\mathrm{nil}}}\cap\ker R_{\vec\Pi_{\mathrm{nil}}}=\mathbb{C}\vec\Pi_{\mathrm{nil}} .
 $$
 
 A basis of four joint eigenvectors does not exist, because there is one joint eigenvector. The eigenspaces have dimension two each and their intersection has dimension one; four independent vectors cannot be found in a plane, and the joint condition cuts the plane to a line. The numerical check gives the two dimensions as $2$ and $2$ and the intersection as $1$.
@@ -505,7 +505,7 @@ The reading is precise: the two-sided structure is a spectrum with a frame, and 
 The powers are polynomial in the power and linear in the defect.
 
 $$
-\tilde Q^{n}=Q_t^{n}e_t+nQ_t^{n-1}\vec\Upsilon,\qquad n\ge1 .
+\tilde Q^{n}=Q_t^{n}e_t+nQ_t^{n-1}\vec\Pi_{\mathrm{nil}},\qquad n\ge1 .
 $$
 
 The coefficient $n$ is the rung index and not an eigenvalue. It counts how many times the defect has been applied, and it is the same $n$ that appears in a Jordan chain. Checked at $n=2,3,4,7,10$; the error at $n=10$ was $8.0\times10^{-14}$.
@@ -513,7 +513,7 @@ The coefficient $n$ is the rung index and not an eigenvalue. It counts how many 
 Squaring keeps the stratum and doubles the coefficient.
 
 $$
-\tilde Q^{2}=Q_t^{2}e_t+2Q_t\vec\Upsilon,\qquad
+\tilde Q^{2}=Q_t^{2}e_t+2Q_t\vec\Pi_{\mathrm{nil}},\qquad
 B^{2}(\tilde Q^{2})=0,\qquad
 N(\tilde Q^{2})=Q_t^{4}=N(\tilde Q)^{2}.
 $$
@@ -525,7 +525,7 @@ The stratum is closed under powers and under the flow, and it is not closed unde
 The inverse is a two-term formula with a second-order coefficient.
 
 $$
-\tilde Q^{-1}=Q_t^{-1}e_t-Q_t^{-2}\vec\Upsilon .
+\tilde Q^{-1}=Q_t^{-1}e_t-Q_t^{-2}\vec\Pi_{\mathrm{nil}} .
 $$
 
 The two terms have different orders in the scalar part. The diagonal term is of order $Q_t^{-1}$ and the nilpotent term of order $Q_t^{-2}$, so as a function of the scalar part the inverse has a double pole at $Q_t=0$, and the residue of the second-order term is the defect itself.
@@ -546,7 +546,7 @@ with $\lvert B^{2}(\tilde Q^{-1})\rvert<3\times10^{-17}$, $\lvert N(\tilde Q^{-1
 Two elements with the same nilpotent direction multiply inside the stratum.
 
 $$
-(Q_te_t+\vec\Upsilon)(Q'_te_t+\vec\Upsilon)=QQ'_te_t+(Q_t+Q'_t)\vec\Upsilon .
+(Q_te_t+\vec\Pi_{\mathrm{nil}})(Q'_te_t+\vec\Pi_{\mathrm{nil}})=QQ'_te_t+(Q_t+Q'_t)\vec\Pi_{\mathrm{nil}} .
 $$
 
 Two elements with different directions do not.
@@ -570,7 +570,7 @@ with $B^{2}(\tilde Q_2)=B^{2}(\tilde Q)=0$, $N(\tilde Q_2)=N(\tilde Q)=1$, and $
 The exponential of an element of the stratum is in the stratum for every parameter.
 
 $$
-e^{\theta\tilde Q}=e^{\theta Q_t}\left(e_t+\theta\vec\Upsilon\right),\qquad
+e^{\theta\tilde Q}=e^{\theta Q_t}\left(e_t+\theta\vec\Pi_{\mathrm{nil}}\right),\qquad
 B^{2}\bigl(e^{\theta\tilde Q}\bigr)=0,\qquad
 N\bigl(e^{\theta\tilde Q}\bigr)=e^{2\theta Q_t}\neq0 .
 $$
@@ -586,8 +586,8 @@ So the stratum is flow-invariant and not product-invariant. A one-parameter grou
 There is no root on the stratum, and the exponential says so.
 
 $$
-e^{\theta\tilde Q}=e^{\theta Q_t}\left(e_t+\theta\vec\Upsilon\right)
-=e^{\theta Q_t}e_t+\theta e^{\theta Q_t}\vec\Upsilon .
+e^{\theta\tilde Q}=e^{\theta Q_t}\left(e_t+\theta\vec\Pi_{\mathrm{nil}}\right)
+=e^{\theta Q_t}e_t+\theta e^{\theta Q_t}\vec\Pi_{\mathrm{nil}} .
 $$
 
 The kernel is not oscillatory. On the open stratum the root $\vec U=\vec Q/B$ exists and the exponential is a rotation by the angle $B\theta$ about that axis. Here $B=0$, the root is undefined, the axis is undefined, and the second term grows linearly in $\theta$ instead of turning.
@@ -602,16 +602,16 @@ The Fourier reading degenerates with the root. A Fourier basis attached to an el
 
 $$
 \bigl\langle e^{\theta\tilde Q}\bigr\rangle_{*}
-=\lvert e^{\theta Q_t}\rvert^{2}\left(1+\lvert\theta\rvert^{2}\lVert\vec\Upsilon\rVert^{2}\right),
+=\lvert e^{\theta Q_t}\rvert^{2}\left(1+\lvert\theta\rvert^{2}\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2}\right),
 \qquad
-\lVert\vec\Upsilon\rVert^{2}=\sum_k\lvert\Upsilon_k\rvert^{2}\ge0 .
+\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2}=\sum_k\lvert\Pi_{\mathrm{nil},k}\rvert^{2}\ge0 .
 $$
 
-The parenthesis is exact and its form is the statement. With $Q_t=2i$ and $\vec\Upsilon=\vec e_x+i\vec e_y$, so that $\lVert\vec\Upsilon\rVert^{2}=2$, the computed values at $\theta=0.5,1,2,4,8$ were $1.5$, $3$, $9$, $33$, $129$, and the formula $1+2\theta^{2}$ reproduces each of them exactly. For a complex scalar part the same parenthesis multiplies $\lvert e^{\theta Q_t}\rvert^{2}$, and the agreement held to $10^{-13}$ at $\theta=8$ where the norm is $1.4\times10^{11}$.
+The parenthesis is exact and its form is the statement. With $Q_t=2i$ and $\vec\Pi_{\mathrm{nil}}=\vec e_x+i\vec e_y$, so that $\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2}=2$, the computed values at $\theta=0.5,1,2,4,8$ were $1.5$, $3$, $9$, $33$, $129$, and the formula $1+2\theta^{2}$ reproduces each of them exactly. For a complex scalar part the same parenthesis multiplies $\lvert e^{\theta Q_t}\rvert^{2}$, and the agreement held to $10^{-13}$ at $\theta=8$ where the norm is $1.4\times10^{11}$.
 
 The growth is polynomial, and it is polynomial even when the scalar part is imaginary. For $Q_t=2i$ the first factor is a pure phase of modulus one and the norm still grows as $1+2\theta^{2}$: the defect alone is a source of growth, and it needs no real part and no non-normality.
 
-On a material element the growth cannot occur. A material element has $B^{2}=\lvert\vec p\rvert^{2}$, which is zero only at $\vec p=0$, and there $\vec\Upsilon=0$ and the parenthesis is $1$. So the polynomial growth is a property of complexified elements only.
+On a material element the growth cannot occur. A material element has $B^{2}=\lvert\vec p\rvert^{2}$, which is zero only at $\vec p=0$, and there $\vec\Pi_{\mathrm{nil}}=0$ and the parenthesis is $1$. So the polynomial growth is a property of complexified elements only.
 
 ### Two Sources of Non-Unitarity
 
@@ -620,7 +620,7 @@ The open stratum and this one fail unitarity for different reasons.
 | stratum | source of growth | form of the growth |
 | --- | --- | --- |
 | $\Sigma_{11}$, complex eigenvalue | non-normality, $\lVert\vec U\rVert^{2}>1$ | exponential in the parameter |
-| $\Sigma_{10}$, Jordan part | defect, $\vec\Upsilon\neq0$ | polynomial, quadratic in the parameter |
+| $\Sigma_{10}$, Jordan part | defect, $\vec\Pi_{\mathrm{nil}}\neq0$ | polynomial, quadratic in the parameter |
 
 The first is a tilted axis and the second is a coalesced one. On the open stratum the growth comes from the axis of the element not being aligned with its Hermitian adjoint's; the exponent is $\lVert\vec U\rVert^{2}$ and it is strictly greater than one. Here the axis does not exist and the growth comes from a term that is linear in the parameter, so the norm is a polynomial of degree two in $\theta$ and never exponential.
 
@@ -674,8 +674,8 @@ The vertex is fixed by every rotation and reached by exactly one boost from ever
 The Jordan part has no real representative, and the reason is the isotropy condition.
 
 $$
-\vec\Upsilon^{2}=0,\qquad \vec\Upsilon\neq0,\qquad
-\vec\Upsilon=\vec p\ \text{real}\ \Longrightarrow\ \lvert\vec p\rvert^{2}=0\ \Longrightarrow\ \vec p=0 .
+\vec\Pi_{\mathrm{nil}}^{2}=0,\qquad \vec\Pi_{\mathrm{nil}}\neq0,\qquad
+\vec\Pi_{\mathrm{nil}}=\vec p\ \text{real}\ \Longrightarrow\ \lvert\vec p\rvert^{2}=0\ \Longrightarrow\ \vec p=0 .
 $$
 
 **So a defective element is a complexified momentum whose spatial part is non-zero and has vanishing square.** In the four-momentum chart that is a momentum whose spatial square vanishes while the spatial vector does not: the mass-shell equation, solved off the real slice.
@@ -691,7 +691,7 @@ The three carriers meet the stratum in three different ways.
 | carrier | dimension | invariant on it | intersection with $\Sigma_{10}$ |
 | --- | --- | --- | --- |
 | the centre $\mathbb{C}e_t$ | $2$ real | $B^{2}=0$ everywhere, $N=Q_t^{2}$ | the whole punctured line $\mathbb{C}^{\times}e_t$ |
-| the ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | $4$ real | $N=0$ everywhere | empty |
+| the ideals $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | $4$ real | $N=0$ everywhere | empty |
 | the material sector $\mathbb{B}_{\Phi}$ | $4$ real | both vary | the real line $\{i\,q'_te_t\}$ |
 
 The centre is the semisimple face and not a part of it. The identification is exact in both directions, and it is the only one of the three intersections that is a whole carrier.
@@ -777,7 +777,7 @@ The boundary. The statement is about the element. A module can carry a two-dimen
 
 ### I.10.ac — The Exceptional Point Is Where the Eigenbasis Disappears
 
-Read: $\vec\Upsilon^{2}=0$, $\vec\Upsilon\neq0$, and the eigenspaces $\ker L_{\vec\Upsilon}$ of dimension two with a one-dimensional intersection.
+Read: $\vec\Pi_{\mathrm{nil}}^{2}=0$, $\vec\Pi_{\mathrm{nil}}\neq0$, and the eigenspaces $\ker L_{\vec\Pi_{\mathrm{nil}}}$ of dimension two with a one-dimensional intersection.
 
 The minimal polynomial is a square; the centraliser is the dual numbers; the two eigenspaces of the one-sided actions have dimension two each and intersect in one line; the Peirce matrix is a single block.
 
@@ -785,10 +785,10 @@ The operational mark is the splitting law.
 
 $$
 \Delta_\Phi=\lambda_+-\lambda_-=2i\sqrt{B^{2}},\qquad
-B^{2}(\tilde Q+\varepsilon\tilde X)=2\varepsilon\,\tilde X\cdot\vec\Upsilon+\varepsilon^{2}B^{2}(\tilde X),
+B^{2}(\tilde Q+\varepsilon\tilde X)=2\varepsilon\,\tilde X\cdot\vec\Pi_{\mathrm{nil}}+\varepsilon^{2}B^{2}(\tilde X),
 $$
 
-where $\tilde X\cdot\vec\Upsilon=\sum_kX_k\Upsilon_k$ is the bilinear form. So the splitting is the square root of a linear function of the parameter, and it is linear only for a perturbation with $\tilde X\cdot\vec\Upsilon=0$, that is one tangent to the isotropic cone. Computed on $\tilde Q=1.3e_t+\vec e_x+i\vec e_y$: the generic perturbation $\varepsilon\vec e_x$ gave splittings $2.836\times10^{-1}$, $2.828\times10^{-2}$, $2.828\times10^{-3}$ at $\varepsilon=10^{-2},10^{-4},10^{-6}$, against the predicted $2\sqrt{2\varepsilon+\varepsilon^{2}}$; the tangential perturbation $\varepsilon\vec e_z$ gave $2.000\times10^{-2}$, $2.000\times10^{-4}$, $2.000\times10^{-6}$, against $2\varepsilon$.
+where $\tilde X\cdot\vec\Pi_{\mathrm{nil}}=\sum_kX_k\Pi_{\mathrm{nil},k}$ is the bilinear form. So the splitting is the square root of a linear function of the parameter, and it is linear only for a perturbation with $\tilde X\cdot\vec\Pi_{\mathrm{nil}}=0$, that is one tangent to the isotropic cone. Computed on $\tilde Q=1.3e_t+\vec e_x+i\vec e_y$: the generic perturbation $\varepsilon\vec e_x$ gave splittings $2.836\times10^{-1}$, $2.828\times10^{-2}$, $2.828\times10^{-3}$ at $\varepsilon=10^{-2},10^{-4},10^{-6}$, against the predicted $2\sqrt{2\varepsilon+\varepsilon^{2}}$; the tangential perturbation $\varepsilon\vec e_z$ gave $2.000\times10^{-2}$, $2.000\times10^{-4}$, $2.000\times10^{-6}$, against $2\varepsilon$.
 
 The reading is that the exceptional point is a property of the spectrum and not of the size of anything. The square-root law is a consequence of the eigenvalue map being a square root of $B^{2}$, and it is the same statement as the loss of the eigenbasis. A quantity that responds to the square root of a perturbation is responding to a defect.
 
@@ -796,19 +796,19 @@ The boundary. The reading identifies a defective element with the object usually
 
 ### I.10.ad — The Defect Is a Shear, and the Unipotent Is a Null Rotation
 
-Read: $\tilde Q=Q_t(e_t+\vec\Upsilon/Q_t)$ with $(\vec\Upsilon/Q_t)^{2}=0$.
+Read: $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}}/Q_t)$ with $(\vec\Pi_{\mathrm{nil}}/Q_t)^{2}=0$.
 
-The element is a scale times a unipotent. The unipotent preserves the flag and moves along it: it fixes the line $\mathbb{C}\vec\Upsilon$ and the plane containing it, and it translates inside the plane. That is a null rotation and not a rotation.
+The element is a scale times a unipotent. The unipotent preserves the flag and moves along it: it fixes the line $\mathbb{C}\vec\Pi_{\mathrm{nil}}$ and the plane containing it, and it translates inside the plane. That is a null rotation and not a rotation.
 
 The reading is a rate with a shear. A rotation has an axis and an angle; a null rotation has a flag and a magnitude of translation. So a defective element does not say *turn this much about that direction*; it says *push along this direction, and preserve the direction while pushing*.
 
-The exponential shows the shear directly. $e^{\theta\tilde Q}=e^{\theta Q_t}(e_t+\theta\vec\Upsilon)$: the scalar part is transported and the defect is transported and displaced by $\theta$. There is no angle anywhere in the formula, and the displacement is unbounded.
+The exponential shows the shear directly. $e^{\theta\tilde Q}=e^{\theta Q_t}(e_t+\theta\vec\Pi_{\mathrm{nil}})$: the scalar part is transported and the defect is transported and displaced by $\theta$. There is no angle anywhere in the formula, and the displacement is unbounded.
 
 The boundary. The word *shear* is a reading of the unipotent factor. No metric is used, and no deformation of a material body is implied.
 
 ### I.10.ae — The Repeated Eigenvalue Is the Critical Damping
 
-Read: $e^{\theta\tilde Q}=e^{\theta Q_t}(e_t+\theta\vec\Upsilon)$, a rate times a factor linear in the parameter.
+Read: $e^{\theta\tilde Q}=e^{\theta Q_t}(e_t+\theta\vec\Pi_{\mathrm{nil}})$, a rate times a factor linear in the parameter.
 
 The form $(a+b\theta)e^{\lambda\theta}$ is the solution of a critically damped equation. A second-order linear equation with a repeated characteristic root produces exactly this: an exponential multiplied by a linear function, and the linear term is what distinguishes the critical case from the underdamped and overdamped ones.
 
@@ -820,7 +820,7 @@ The boundary. The reading is of the form of the exponential. It supplies no equa
 
 ### I.10.af — The Double Pole Is the Defective Response
 
-Read: $\tilde Q^{-1}=Q_t^{-1}e_t-Q_t^{-2}\vec\Upsilon$.
+Read: $\tilde Q^{-1}=Q_t^{-1}e_t-Q_t^{-2}\vec\Pi_{\mathrm{nil}}$.
 
 The two orders are the two halves of the element. The scalar part inverts to first order and the defect to second; as a function of the scalar part the inverse has a double pole, and the coefficient of the second-order term is the defect itself.
 
@@ -832,9 +832,9 @@ The boundary. The reading is algebraic. It says what the pole structure of a rat
 
 ### I.10.ag — Growth Without a Real Part: the Defect Is a Second Source of Non-Unitarity
 
-Read: $\langle e^{\theta\tilde Q}\rangle_{*}=\lvert e^{\theta Q_t}\rvert^{2}(1+\lvert\theta\rvert^{2}\lVert\vec\Upsilon\rVert^{2})$.
+Read: $\langle e^{\theta\tilde Q}\rangle_{*}=\lvert e^{\theta Q_t}\rvert^{2}(1+\lvert\theta\rvert^{2}\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2})$.
 
-Two strata, two mechanisms, two shapes. On $\Sigma_{11}$ the growth is exponential in the parameter, and its rate is set by the misalignment of the axis with its Hermitian adjoint, measured by $\lVert\vec U\rVert^{2}>1$. On $\Sigma_{10}$ the growth is $1+\lvert\theta\rvert^{2}\lVert\vec\Upsilon\rVert^{2}$, quadratic, with no exponential in it anywhere.
+Two strata, two mechanisms, two shapes. On $\Sigma_{11}$ the growth is exponential in the parameter, and its rate is set by the misalignment of the axis with its Hermitian adjoint, measured by $\lVert\vec U\rVert^{2}>1$. On $\Sigma_{10}$ the growth is $1+\lvert\theta\rvert^{2}\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2}$, quadratic, with no exponential in it anywhere.
 
 The first is a tilted axis and the second is a coalesced one. On the open stratum the growth is exponential in the parameter and its rate is set by the misalignment of the axis and its Hermitian adjoint; here there is no axis, the growth is quadratic, and its rate is set by the size of the defect.
 
@@ -882,9 +882,9 @@ The numerical checks are checks of identities, not of the reading. Every identit
 - The scalar line is exactly the centre minus the origin: $L_{\tilde Q}=R_{\tilde Q}=Q_t\mathrm{id}$, the eigenspace is the whole algebra, and every two-term writing is non-unique.
 - On the Jordan part the centraliser is the dual numbers, its only idempotents are $0$ and $e_t$, and no non-trivial Peirce decomposition is attached to the element.
 - A chosen idempotent gives the Peirce block $J_2(Q_t)$; the flag is the invariant and the splitting of the flag is the gauge.
-- The one-sided eigenspaces have dimension two each and their joint eigenspace is the line $\mathbb{C}\vec\Upsilon$: no joint eigenbasis exists.
-- The powers are $Q_t^{n}e_t+nQ_t^{n-1}\vec\Upsilon$, the inverse is $Q_t^{-1}e_t-Q_t^{-2}\vec\Upsilon$, and the inverse has a double pole in the scalar part.
-- The flow stays in the stratum for every parameter and is $e^{\theta Q_t}(e_t+\theta\vec\Upsilon)$; the Hermitian norm is $\lvert e^{\theta Q_t}\rvert^{2}(1+\lvert\theta\rvert^{2}\lVert\vec\Upsilon\rVert^{2})$.
+- The one-sided eigenspaces have dimension two each and their joint eigenspace is the line $\mathbb{C}\vec\Pi_{\mathrm{nil}}$: no joint eigenbasis exists.
+- The powers are $Q_t^{n}e_t+nQ_t^{n-1}\vec\Pi_{\mathrm{nil}}$, the inverse is $Q_t^{-1}e_t-Q_t^{-2}\vec\Pi_{\mathrm{nil}}$, and the inverse has a double pole in the scalar part.
+- The flow stays in the stratum for every parameter and is $e^{\theta Q_t}(e_t+\theta\vec\Pi_{\mathrm{nil}})$; the Hermitian norm is $\lvert e^{\theta Q_t}\rvert^{2}(1+\lvert\theta\rvert^{2}\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2})$.
 - The stratum is closed under powers and under the flow, and not under products: $480$ of $500$ random pairs left it, and pairs sharing a direction never did.
 - The material part of the stratum is the punctured real scalar line; the mass shell meets it at $\pm imc\,e_t$, and the exceptional point has no material representative.
 - The stratum has the polar word and lacks the eigenbasis, which is the exact complement of the massless stratum.
@@ -905,19 +905,19 @@ The rest frame is a scalar operator, so the frame is not a function of the momen
 | --- | --- |
 | $\Sigma_{10}=\{N\neq0,\ B^{2}=0\}$ | the stratum, the third of the five parts of the section |
 | $\Sigma_{10}^{\mathrm{s}}=\mathbb{C}^{\times}e_t$ | the scalar line, the semisimple face |
-| $\Sigma_{10}^{\mathrm{J}}$ | the Jordan part, $\vec\Upsilon^{2}=0$, $\vec\Upsilon\neq0$ |
+| $\Sigma_{10}^{\mathrm{J}}$ | the Jordan part, $\vec\Pi_{\mathrm{nil}}^{2}=0$, $\vec\Pi_{\mathrm{nil}}\neq0$ |
 | $Q_t$ | the scalar part, the repeated eigenvalue |
-| $\vec\Upsilon=\vec Q$ | the defect, a pure nilpotent |
-| $u=e_t+\vec\Upsilon$ | the unipotent element, $(u-e_t)^{2}=0$ |
+| $\vec\Pi_{\mathrm{nil}}=\vec Q$ | the defect, a pure nilpotent |
+| $u=e_t+\vec\Pi_{\mathrm{nil}}$ | the unipotent element, $(u-e_t)^{2}=0$ |
 | $N=Q_t^{2}$ | the norm on the stratum |
 | $\Delta_\Phi=-4B^{2}$ | the discriminant of the characteristic polynomial |
 | $e,f=e_t-e$ | a Peirce pair adapted to the defect |
 | $\mathsf M^{Q}=J_2(Q_t)$ | the Peirce block of the element |
 | $\mathbb{C}[\tilde Q]\cong\mathbb{C}[\varepsilon]/(\varepsilon^{2})$ | the dual-number centraliser |
-| $\tilde Q^{n}=Q_t^{n}e_t+nQ_t^{n-1}\vec\Upsilon$ | the powers |
-| $\tilde Q^{-1}=Q_t^{-1}e_t-Q_t^{-2}\vec\Upsilon$ | the inverse, with a double pole |
+| $\tilde Q^{n}=Q_t^{n}e_t+nQ_t^{n-1}\vec\Pi_{\mathrm{nil}}$ | the powers |
+| $\tilde Q^{-1}=Q_t^{-1}e_t-Q_t^{-2}\vec\Pi_{\mathrm{nil}}$ | the inverse, with a double pole |
 | $\langle\tilde X\rangle_{*}=\operatorname{Sc}(\tilde X\tilde X^{*})$ | the Hermitian norm |
-| $\lVert\vec\Upsilon\rVert^{2}=\sum_k\lvert\Upsilon_k\rvert^{2}$ | the size of the defect in the Hermitian norm |
+| $\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2}=\sum_k\lvert\Pi_{\mathrm{nil},k}\rvert^{2}$ | the size of the defect in the Hermitian norm |
 | $\tilde P_\Phi=i\frac{E}{c}e_t+\vec p$ | a material four-momentum, $B^{2}=\lvert\vec p\rvert^{2}$ |
 | $i\,mc\,e_t$ | the rest frame, $Q_t=\pm imc$ on the mass shell |
 

@@ -222,15 +222,15 @@ $$
 
 This is the exponential form used below: real operator, real exponent, no $i$ in the display. The Hermitian element of the corpus is $\tilde S(\vec u_{\mathrm r})=\tfrac12 i\vec u_{\mathrm r}\cdot\vec e=iA$, and the two forms agree, since $-i\theta_{\mathrm{axr}}\tilde S=\theta_{\mathrm{axr}}A$.
 
-**The two identities.** Every computation below follows from two identities, and from nothing else. At a unit real axis $\vec u_{\mathrm r}$ and its idempotent $\tilde\Pi_+(\vec u_{\mathrm r})$,
+**The two identities.** Every computation below follows from two identities, and from nothing else. At a unit real axis $\vec u_{\mathrm r}$ and its idempotent $\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$,
 
 $$
-\vec u_{\mathrm r}\tilde\Pi_+(\vec u_{\mathrm r})=\tilde\Pi_+(\vec u_{\mathrm r})\vec u_{\mathrm r}=-i\tilde\Pi_+(\vec u_{\mathrm r}),
+\vec u_{\mathrm r}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\vec u_{\mathrm r}=-i\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r}),
 \qquad
 [\tfrac12\vec u_{\mathrm r},\vec v]=\vec u_{\mathrm r}\times\vec v\quad(\vec v\in\mathfrak{k}).
 $$
 
-The first holds in one line: $\tilde\Pi_+$ is a polynomial in $\vec u_{\mathrm r}$, so the two commute, and $\vec u_{\mathrm r}\tilde\Pi_+=\tfrac12\bigl(\vec u_{\mathrm r}+i\vec u_{\mathrm r}^2\bigr)=\tfrac12\bigl(\vec u_{\mathrm r}-ie_t\bigr)=-i\tilde\Pi_+$. The second is the quaternion product rule $\vec u\vec v=-\vec u\cdot\vec v+\vec u\times\vec v$, applied to the difference $\vec u\vec v-\vec v\vec u$. Both are identities at the general axis: no coordinate is chosen, and no array is printed. The two display the whole method — the axis multiplied into the idempotent gives the scalar $-i$, and the commutator with the axis gives the cross product. One carrier is read from the first, the other from the second.
+The first holds in one line: $\tilde\Pi_{\mathrm{id},+}$ is a polynomial in $\vec u_{\mathrm r}$, so the two commute, and $\vec u_{\mathrm r}\tilde\Pi_{\mathrm{id},+}=\tfrac12\bigl(\vec u_{\mathrm r}+i\vec u_{\mathrm r}^2\bigr)=\tfrac12\bigl(\vec u_{\mathrm r}-ie_t\bigr)=-i\tilde\Pi_{\mathrm{id},+}$. The second is the quaternion product rule $\vec u\vec v=-\vec u\cdot\vec v+\vec u\times\vec v$, applied to the difference $\vec u\vec v-\vec v\vec u$. Both are identities at the general axis: no coordinate is chosen, and no array is printed. The two display the whole method — the axis multiplied into the idempotent gives the scalar $-i$, and the commutator with the axis gives the cross product. One carrier is read from the first, the other from the second.
 
 **Definition (weights and spectrum).** Let $W$ be a carrier with action $\varrho$ on the real space $V_W$. The **weights** of $W$ are the real numbers $\lambda$ such that $i\lambda$ is an eigenvalue of $\varrho(A(\vec u_{\mathrm r}))$ on $V_W$, each counted with its multiplicity. The **spectrum** is the list of weights.
 
@@ -491,21 +491,21 @@ This is the carrier of $s=\tfrac12$. Its weights are $\pm\tfrac12$, matching the
 **The subspace.** Fix a unit real axis $\vec u_{\mathrm r}$ and the idempotent
 
 $$
-\tilde\Pi_+(\vec u_{\mathrm r})=\tfrac12\bigl(e_t+i\vec u_{\mathrm r}\bigr),\qquad \tilde\Pi_+^2=\tilde\Pi_+ .
+\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\tfrac12\bigl(e_t+i\vec u_{\mathrm r}\bigr),\qquad \tilde\Pi_{\mathrm{id},+}^2=\tilde\Pi_{\mathrm{id},+} .
 $$
 
 The plane is the complex line spanned by it, read as a real plane:
 
 $$
-\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})=\mathbb{R}\bigl\{\tilde\Pi_+,\ i\tilde\Pi_+\bigr\},
+\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\mathbb{R}\bigl\{\tilde\Pi_{\mathrm{id},+},\ i\tilde\Pi_{\mathrm{id},+}\bigr\},
 $$
 
-of real dimension $2$, with the real basis $p_1=\tilde\Pi_+(\vec u_{\mathrm r})$ and $p_2=i\tilde\Pi_+(\vec u_{\mathrm r})$. The plane lies in the left ideal $S_+=\mathbb{B}\tilde\Pi_+$, so $L_X\Sigma\subseteq S_+$ for every $X$, and it carries the one-sided action. The axis is a parameter of the family and not a datum of the algebra.
+of real dimension $2$, with the real basis $p_1=\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ and $p_2=i\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$. The plane lies in the left ideal $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$, so $L_X\Sigma\subseteq S_+$ for every $X$, and it carries the one-sided action. The axis is a parameter of the family and not a datum of the algebra.
 
-**The action.** Left multiplication, $\varrho_{\mathrm{def}}(X)=L_X$. On the plane the rotor acts by a phase of half its angle, and this is where the half-integer arises. By the first identity, $\vec u_{\mathrm r}\tilde\Pi_+=-i\tilde\Pi_+$, so for the rotor $\tilde u_{\mathrm r}=\cos\tfrac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}$,
+**The action.** Left multiplication, $\varrho_{\mathrm{def}}(X)=L_X$. On the plane the rotor acts by a phase of half its angle, and this is where the half-integer arises. By the first identity, $\vec u_{\mathrm r}\tilde\Pi_{\mathrm{id},+}=-i\tilde\Pi_{\mathrm{id},+}$, so for the rotor $\tilde u_{\mathrm r}=\cos\tfrac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}$,
 
 $$
-\tilde u_{\mathrm r}\tilde\Pi_+(\vec u_{\mathrm r})=\Bigl(\cos\tfrac{\theta_{\mathrm{axr}}}{2}-i\sin\tfrac{\theta_{\mathrm{axr}}}{2}\Bigr)\tilde\Pi_+(\vec u_{\mathrm r})=e^{-i\theta_{\mathrm{axr}}/2}\,\tilde\Pi_+(\vec u_{\mathrm r}).
+\tilde u_{\mathrm r}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\Bigl(\cos\tfrac{\theta_{\mathrm{axr}}}{2}-i\sin\tfrac{\theta_{\mathrm{axr}}}{2}\Bigr)\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=e^{-i\theta_{\mathrm{axr}}/2}\,\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r}).
 $$
 
 The rotor multiplies the plane by the phase $e^{-i\theta_{\mathrm{axr}}/2}$, at every axis and by one line of algebra: the half angle is not inserted, it is what the identity gives.
@@ -516,7 +516,7 @@ The rotor multiplies the plane by the phase $e^{-i\theta_{\mathrm{axr}}/2}$, at 
 
 **Dimension, spin, full turn.** $\dim_\mathbb{R}=2$, $s=\tfrac12$, and $2s+1=2$. The full turn is $\theta_{\mathrm{axr}}=2\pi$, and the rotor acts by $e^{-i\pi}=-1$: a full rotation of space is a half turn of the plane. The sign is $-1$, and here it is visible in the plane itself, without any complexification.
 
-**Remark (the plane is not invariant under the full group).** The plane is carried by the rotations about its own axis and by no others: left multiplication by the transverse axis $\vec u_2$ sends $\tilde\Pi_+(\vec u_{\mathrm r})$ out of $\Sigma(\vec u_{\mathrm r})$, and the smallest real subspace of $\mathbb{B}$ that contains $\Sigma$ and is invariant under the whole group has real dimension $4$. The carrier is therefore a carrier for the circle of rotations about the axis. Why this is so, and what it costs, is *The Closure of a Carrier*.
+**Remark (the plane is not invariant under the full group).** The plane is carried by the rotations about its own axis and by no others: left multiplication by the transverse axis $\vec u_2$ sends $\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ out of $\Sigma(\vec u_{\mathrm r})$, and the smallest real subspace of $\mathbb{B}$ that contains $\Sigma$ and is invariant under the whole group has real dimension $4$. The carrier is therefore a carrier for the circle of rotations about the axis. Why this is so, and what it costs, is *The Closure of a Carrier*.
 
 ### The Vector Part
 
@@ -550,7 +550,7 @@ Two other decompositions of the algebra exist, in two different categories, and 
 
 From the star, $\mathbb{B}=\mathbb{B}_\Phi\oplus\mathbb{B}_\Psi$, the anti-Hermitian and Hermitian halves, of real dimensions $4+4=8$; the first contains the vector part.
 
-From the idempotent, $\mathbb{B}=S_+\oplus S_-$ as left modules, where $S_\pm=\mathbb{B}\tilde\Pi_\pm$, and each summand has real dimension $4$.
+From the idempotent, $\mathbb{B}=S_+\oplus S_-$ as left modules, where $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$, and each summand has real dimension $4$.
 
 The spinor plane occurs in neither as a summand: it is a complex line inside $S_+$, and not a left module over the whole algebra. The line, the plane and the vector part are three carriers, not three summands.
 
@@ -672,15 +672,15 @@ $$
 
 **The two conjugations.** The natural conjugation is used once, and everything it does is the Clebsch–Gordan split: it is complex-linear and involutive, so its two projectors split the algebra into two canonical summands. The star is used in the closures, where it is the involution of the anti-Hermitian space, and its conjugate-linearity is what makes that split a split of real spaces and not of complex ones.
 
-**The complex structure.** $i$ is used twice: it is what the first closure adjoins, and it is what the idempotent $\tilde\Pi_+$ contains. No carrier is defined by means of it, and the weights are real numbers throughout.
+**The complex structure.** $i$ is used twice: it is what the first closure adjoins, and it is what the idempotent $\tilde\Pi_{\mathrm{id},+}$ contains. No carrier is defined by means of it, and the weights are real numbers throughout.
 
 **The norm.** The norm is used three times. It identifies the rotor as an invertible element, $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$. It gives the pure part its positive definite form, which is what makes $SO(\mathfrak{k})$ a group of rotations. And its polar form $\beta$ is the invariant form of *Three and No More*, where it does the work that the trace form does in a treatment by arrays. The spectra, the spin and the sign of the full turn use the product, the star and the commutator only.
 
-**No array.** No argument array is used, and no basis is fixed. The two identities $\vec u_{\mathrm r}\tilde\Pi_+=-i\tilde\Pi_+$ and $[\tfrac12\vec u_{\mathrm r},\vec v]=\vec u_{\mathrm r}\times\vec v$ carry every computation, and the spectra are read from the scalar action on the plane and from the exhibited eigenvectors on the vector part. A display in a fixed frame would have introduced the axis into statements that do not contain one.
+**No array.** No argument array is used, and no basis is fixed. The two identities $\vec u_{\mathrm r}\tilde\Pi_{\mathrm{id},+}=-i\tilde\Pi_{\mathrm{id},+}$ and $[\tfrac12\vec u_{\mathrm r},\vec v]=\vec u_{\mathrm r}\times\vec v$ carry every computation, and the spectra are read from the scalar action on the plane and from the exhibited eigenvectors on the vector part. A display in a fixed frame would have introduced the axis into statements that do not contain one.
 
 **What is read from an element.** Only the scalar part and the vector part are used, read off the coefficients. No pairing of the algebra with itself is needed for the spectra, and no invariant of a linear operator is taken; the spectra are read from the action of the axis and from eigenvectors that are written out. The one pairing used in this article is the polar form $\beta$ of the norm, and it is used once, in *Three and No More*.
 
-**Regularity.** No decomposition into regular and degenerate parts is assumed. The idempotent is degenerate by construction, since $\tilde\Pi_+\ne e_t$, and the plane is built from it. The construction therefore does not assume that the algebra is a division algebra: $\mathbb{B}$ is not one, and the existence of a nontrivial idempotent is exactly the failure.
+**Regularity.** No decomposition into regular and degenerate parts is assumed. The idempotent is degenerate by construction, since $\tilde\Pi_{\mathrm{id},+}\ne e_t$, and the plane is built from it. The construction therefore does not assume that the algebra is a division algebra: $\mathbb{B}$ is not one, and the existence of a nontrivial idempotent is exactly the failure.
 
 **The classification.** The statement that there are three carriers and no more is proved in *Three and No More*, from the polar form of the norm and from the compactness of the group of invertibles. It is not quoted, and the proof writes no array.
 
@@ -715,29 +715,29 @@ The closures are read in the order of the spins: the spin $0$ line closes to the
 
 ### The Bispinor Spaces
 
-**The first step, and why it is forced.** No real subspace of $\mathbb{B}$ of dimension $2$ is invariant under the whole rotation group. The plane $\Sigma$ is invariant under the rotations about its axis and under no others, and the smallest real subspace containing it and invariant under all of them has dimension $4$, which is $S_+=\mathbb{B}\tilde\Pi_+$.
+**The first step, and why it is forced.** No real subspace of $\mathbb{B}$ of dimension $2$ is invariant under the whole rotation group. The plane $\Sigma$ is invariant under the rotations about its axis and under no others, and the smallest real subspace containing it and invariant under all of them has dimension $4$, which is $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$.
 
-*Proof.* The plane is the complex line $\mathbb{C}\tilde\Pi_+$. For an element $X$ whose product $X\tilde\Pi_+$ is not a complex multiple of $\tilde\Pi_+$, the space $L_X\Sigma$ is not contained in $\Sigma$, and the transverse axis $\vec u_2$ is such an element. The real span of $\Sigma$ and $L_{\vec u_2}\Sigma$ is $S_+$, of real dimension $4$, and $S_+$ is closed under every $L_X$ and under $L_{iX}$. Hence the smallest invariant real subspace containing the plane is $S_+$.
+*Proof.* The plane is the complex line $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$. For an element $X$ whose product $X\tilde\Pi_{\mathrm{id},+}$ is not a complex multiple of $\tilde\Pi_{\mathrm{id},+}$, the space $L_X\Sigma$ is not contained in $\Sigma$, and the transverse axis $\vec u_2$ is such an element. The real span of $\Sigma$ and $L_{\vec u_2}\Sigma$ is $S_+$, of real dimension $4$, and $S_+$ is closed under every $L_X$ and under $L_{iX}$. Hence the smallest invariant real subspace containing the plane is $S_+$.
 
 So the first closure is not a convenience, and it is not a matter of supplying $i$ either: the plane is a complex line already, and multiplication by $i$ acts inside it. What the plane lacks is the transverse direction. The image of the plane under left multiplication by the transverse axis, $L_{\vec u_2}\Sigma$, is a second complex line, and the real span of the two is $S_+$. The step is a step inside the ideal, from one complex line to two, and it adds two real dimensions.
 
-**The spinor space.** $S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec u_2\tilde\Pi_+\}$, of real dimension $4$ and complex dimension $2$. It is a minimal left ideal: no nonzero left subspace of it is invariant. It carries the spinor carrier, with weights $\pm\tfrac12$ and $s=\tfrac12$.
+**The spinor space.** $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\{\tilde\Pi_{\mathrm{id},+},\vec u_2\tilde\Pi_{\mathrm{id},+}\}$, of real dimension $4$ and complex dimension $2$. It is a minimal left ideal: no nonzero left subspace of it is invariant. It carries the spinor carrier, with weights $\pm\tfrac12$ and $s=\tfrac12$.
 
-**The second step.** The complementary idempotent $\tilde\Pi_-(\vec u_{\mathrm r})=\tfrac12(e_t-i\vec u_{\mathrm r})=e_t-\tilde\Pi_+$ gives a second ideal $S_-=\mathbb{B}\tilde\Pi_-$, also of real dimension $4$, and
+**The second step.** The complementary idempotent $\tilde\Pi_{\mathrm{id},-}(\vec u_{\mathrm r})=\tfrac12(e_t-i\vec u_{\mathrm r})=e_t-\tilde\Pi_{\mathrm{id},+}$ gives a second ideal $S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}$, also of real dimension $4$, and
 
 $$
 \mathbb{B}=S_+\oplus S_-,\qquad 4+4=8 .
 $$
 
-The two idempotents satisfy $\tilde\Pi_\pm^2=\tilde\Pi_\pm$ and $\tilde\Pi_+\tilde\Pi_-=0$, so they form a **Peirce basis** and the sum is direct. Each axis therefore produces a **bispinor space**: the algebra $\mathbb{B}$ read through the Peirce basis of that axis, that is, the pair of spinor spaces and their sum.
+The two idempotents satisfy $\tilde\Pi_{\mathrm{id},\pm}^2=\tilde\Pi_{\mathrm{id},\pm}$ and $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$, so they form a **Peirce basis** and the sum is direct. Each axis therefore produces a **bispinor space**: the algebra $\mathbb{B}$ read through the Peirce basis of that axis, that is, the pair of spinor spaces and their sum.
 
-**The four corners.** Each summand splits further. The four Peirce corners $\tilde\Pi_\epsilon\mathbb{B}\tilde\Pi_\delta$ with $\epsilon,\delta\in\{+,-\}$ have real dimension $2$ each, and the two spinor spaces are their grouping two by two.
+**The four corners.** Each summand splits further. The four Peirce corners $\tilde\Pi_{\mathrm{id},\epsilon}\mathbb{B}\tilde\Pi_{\mathrm{id},\delta}$ with $\epsilon,\delta\in\{+,-\}$ have real dimension $2$ each, and the two spinor spaces are their grouping two by two.
 
-**The family, and why the plural.** There is one bispinor space per Peirce basis, so there are infinitely many: one for each unit real axis, and two axes that differ by a sign give the same unordered pair, so the family is indexed by the real projective plane. For two distinct axes the spinor spaces differ, since each contains its own idempotent. The sum does not move, $\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-=\mathbb{B}$ for every axis.
+**The family, and why the plural.** There is one bispinor space per Peirce basis, so there are infinitely many: one for each unit real axis, and two axes that differ by a sign give the same unordered pair, so the family is indexed by the real projective plane. For two distinct axes the spinor spaces differ, since each contains its own idempotent. The sum does not move, $\mathbb{B}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{B}\tilde\Pi_{\mathrm{id},-}=\mathbb{B}$ for every axis.
 
 As sets the members of this family coincide, because each of them is $\mathbb{B}$. What varies is the splitting. The family is therefore a family of decompositions of one space and not a family of subspaces of it, and the naming keeps that apart: the spinor spaces are subspaces, and a bispinor space is the whole space together with a Peirce basis. A subspace is a subset, a bispinor space is a subset and a splitting, and the count of the first is two per axis while the count of the second is one per axis.
 
-**The two idempotents and the two conjugations.** The idempotents are exchanged by the natural conjugation, $\tilde\Pi_+^{\natural}=\tilde\Pi_-$, and each is fixed by the star, since $(i\vec u_{\mathrm r})^{*}=i\vec u_{\mathrm r}$ at a real axis. The two **ideals** are exchanged by neither, and indeed they cannot be: each is a left ideal, and the natural conjugation carries a left ideal to a right ideal.
+**The two idempotents and the two conjugations.** The idempotents are exchanged by the natural conjugation, $\tilde\Pi_{\mathrm{id},+}^{\natural}=\tilde\Pi_{\mathrm{id},-}$, and each is fixed by the star, since $(i\vec u_{\mathrm r})^{*}=i\vec u_{\mathrm r}$ at a real axis. The two **ideals** are exchanged by neither, and indeed they cannot be: each is a left ideal, and the natural conjugation carries a left ideal to a right ideal.
 
 ### The Anti-Hermitian Space
 
@@ -826,9 +826,9 @@ The same identity shows that the anticommutator runs the other way, $\{X,Y\}^{*}
 | $\tilde S(\vec u_{\mathrm r})=iA$ | the Hermitian element of the corpus |
 | $\beta$ | the polar form of the norm, invariant and non-degenerate |
 | $C=\sum_k\tilde S_k^{2}$ | the quadratic element, equal to $\tfrac34e_t$ |
-| $\tilde\Pi_\pm(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | the two idempotents of the axis, a Peirce basis |
-| $\Sigma=\mathbb{C}\tilde\Pi_+$ | the spinor plane, dimension $2$ over $\mathbb{R}$ |
-| $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the spinor spaces, dimension $4$ over $\mathbb{R}$ |
+| $\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | the two idempotents of the axis, a Peirce basis |
+| $\Sigma=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ | the spinor plane, dimension $2$ over $\mathbb{R}$ |
+| $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | the spinor spaces, dimension $4$ over $\mathbb{R}$ |
 | $\varrho$ | a representation of the action on a carrier |
 | $\lambda$, $s$ | a weight, and the spin, the largest weight |
 
@@ -864,12 +864,12 @@ Everything below uses the two identities of *The Rotation Action*, at a general 
 
 **The line.** $\varrho(A)=0$ on $\mathbb{R}e_t$, so the spectrum is $\{0\}$.
 
-**The plane.** By the first identity, $\vec u_{\mathrm r}\tilde\Pi_+(\vec u_{\mathrm r})=-i\tilde\Pi_+(\vec u_{\mathrm r})$ and therefore
+**The plane.** By the first identity, $\vec u_{\mathrm r}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=-i\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ and therefore
 
 $$
-L_{A(\vec u_{\mathrm r})}\tilde\Pi_+(\vec u_{\mathrm r})=\tfrac12\vec u_{\mathrm r}\tilde\Pi_+(\vec u_{\mathrm r})=-\tfrac i2\,\tilde\Pi_+(\vec u_{\mathrm r}),
+L_{A(\vec u_{\mathrm r})}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\tfrac12\vec u_{\mathrm r}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=-\tfrac i2\,\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r}),
 \qquad
-L_{A(\vec u_{\mathrm r})}\bigl(i\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=-\tfrac i2\,i\tilde\Pi_+(\vec u_{\mathrm r}).
+L_{A(\vec u_{\mathrm r})}\bigl(i\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=-\tfrac i2\,i\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r}).
 $$
 
 So the operator is the complex scalar $-\tfrac i2$ on the whole plane, and on the two real dimensions its eigenvalues are the scalar and its conjugate, $-\tfrac i2$ and $+\tfrac i2$. The weights are $\pm\tfrac12$. The half angle follows in the same line: multiplying by the rotor gives the phase $e^{-i\theta_{\mathrm{axr}}/2}$, whose exponent at $\theta_{\mathrm{axr}}=2\pi$ is $-i\pi$.
@@ -888,7 +888,7 @@ The eigenvalues are $-i,+i,0$ on the complexification of $\mathfrak{k}$, so the 
 
 **The full turns.** Exponentiating the three operators at $\theta_{\mathrm{axr}}=2\pi$: on the line, $\varrho(2\pi A)=e_t$ acts as $+1$; on the plane, the phase is $e^{-i\pi}=-1$, so the operator is $-\mathrm{id}$ on the two real dimensions, a half turn; on the vector part, $\exp(2\pi\,\vec u_{\mathrm r}\times)$ is the identity, because the cross product is a quarter turn and four quarter turns are a full turn.
 
-**The invariance of the plane.** For a rotor $\tilde u_{\mathrm r}$ of the same axis, the product $\tilde u_{\mathrm r}\tilde\Pi_+(\vec u_{\mathrm r})=e^{-i\theta_{\mathrm{axr}}/2}\tilde\Pi_+(\vec u_{\mathrm r})$ is a complex multiple of the idempotent, so the plane is preserved. For the transverse axis it is not: $\vec u_2\tilde\Pi_+(\vec u_{\mathrm r})$ is not a complex multiple of $\tilde\Pi_+(\vec u_{\mathrm r})$, since it has a component in the direction $\vec u_3\tilde\Pi_+$, and the two together span $S_+$.
+**The invariance of the plane.** For a rotor $\tilde u_{\mathrm r}$ of the same axis, the product $\tilde u_{\mathrm r}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=e^{-i\theta_{\mathrm{axr}}/2}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ is a complex multiple of the idempotent, so the plane is preserved. For the transverse axis it is not: $\vec u_2\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ is not a complex multiple of $\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$, since it has a component in the direction $\vec u_3\tilde\Pi_{\mathrm{id},+}$, and the two together span $S_+$.
 
 ### A.4 The Correction on the Conjugation
 

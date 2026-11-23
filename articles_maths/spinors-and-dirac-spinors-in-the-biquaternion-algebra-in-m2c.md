@@ -42,7 +42,7 @@ of real dimensions $2,4,8$, and the two predicates are $\det A$ and $\Delta=-4B^
 $$
 (S\cdot n)P=+\tfrac12P,\qquad (S\cdot n)P_{\perp}=-\tfrac12P_{\perp},
 $$
-verified exactly. This is the matrix form of $\vec u\tilde\Pi_\pm=\mp i\tilde\Pi_\pm$, because $S\cdot n$ times $i$ is $\tfrac i2n\cdot\sigma$ and $n\cdot\sigma P=P$.
+verified exactly. This is the matrix form of $\vec u\tilde\Pi_{\mathrm{id},\pm}=\mp i\tilde\Pi_{\mathrm{id},\pm}$, because $S\cdot n$ times $i$ is $\tfrac i2n\cdot\sigma$ and $n\cdot\sigma P=P$.
 
 **The companion nilpotent.** In the corner $P_{\perp}M_2P$,
 $$

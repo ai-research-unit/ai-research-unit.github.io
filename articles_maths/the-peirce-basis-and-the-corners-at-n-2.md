@@ -20,9 +20,9 @@ It defers the frame in general dimension to *The Frame, the Simple Nilpotents an
 
 **Proof.** The rank of an idempotent is the dimension of its image, and a matrix of full rank is invertible and conjugates the images.
 
-**The frame is the matrix form of the corpus's root of one.** The corpus builds the frame from a root $\tilde{Ζ}$ of the identity and the pair $\tilde\Pi_{\pm}=\tfrac12(e_t\pm\tilde{Ζ})$; on the matrix side the root is the involution $\zeta$ of *Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum* and the pair is $\rho_{\pm}$.
+**The frame is the matrix form of the corpus's root of one.** The corpus builds the frame from a root $\tilde{Ζ}$ of the identity and the pair $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$; on the matrix side the root is the involution $\zeta$ of *Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum* and the pair is $\rho_{\pm}$.
 
-**Proof.** The identities $\tilde{Ζ}^{2}=e_t$ and $\tilde\Pi_{\pm}^{2}=\tilde\Pi_{\pm}$ are the identities $\zeta^{2}=I$ and $\rho_{\pm}^{2}=\rho_{\pm}$ proved there.
+**Proof.** The identities $\tilde{Ζ}^{2}=e_t$ and $\tilde\Pi_{\mathrm{id},\pm}^{2}=\tilde\Pi_{\mathrm{id},\pm}$ are the identities $\zeta^{2}=I$ and $\rho_{\pm}^{2}=\rho_{\pm}$ proved there.
 
 ## The Nilpotent Pair
 

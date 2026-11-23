@@ -14,7 +14,7 @@ so the equation $\langle\tilde{Q}\rangle_{\natural} = 0$ is exactly the equation
 
 Three threads are developed below.
 
-- **The algebraic criterion.** A nonzero biquaternion has vanishing biquaternion norm if and only if it is a zero divisor, and the zero divisors split into two families — the **nilpotents**, whose scalar part vanishes and whose square is zero, written $\tilde\Upsilon$ where the nilpotency is the point (§*The Nilpotent Convention* of *Special Element Conventions*), and the **idempotent multiples**, whose scalar part does not. The cone of the material sector is made of the second family, and that is the family that generates the algebra's minimal ideals.
+- **The algebraic criterion.** A nonzero biquaternion has vanishing biquaternion norm if and only if it is a zero divisor, and the zero divisors split into two families — the **nilpotents**, whose scalar part vanishes and whose square is zero, written $\tilde\Pi_{\mathrm{nil}}$ where the nilpotency is the point (§*The Nilpotent Convention* of *Special Element Conventions*), and the **idempotent multiples**, whose scalar part does not. The cone of the material sector is made of the second family, and that is the family that generates the algebra's minimal ideals.
 - **The cone in the remarkable subspaces.** The complex scalar line and the real-quaternion subspace are division algebras and contain no zero divisors. The two Hermitian-type subspaces $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ each contain a cone, and the $\mathbb{B}_{\Phi}$ cone is the physical light cone.
 - **The cone as the locus of propagation.** The d'Alembertian is the biquaternion norm of the gradient, $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and a four-wavevector $\tilde P_{\Phi}$ is null exactly when $\langle\tilde P_{\Phi}\rangle_{\natural} = \langle\tilde P_{\Phi},\tilde P_{\Phi}\rangle_{\natural} = 0$. For such a $\tilde P_{\Phi}$ every function of the phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = \langle\tilde P_{\Phi},\tilde{Q}\rangle_{\natural}$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion. The light cone is where the biquaternion norm degenerates, the wave operator factorizes, and signals travel at $c$.
 
@@ -85,24 +85,24 @@ using $e_t^2 = e_t$, the cross term $2\vec w$, and $\vec w^2 = +e_t$. Hence a no
 $$
 \boxed{\; \tilde{Q}^2 = 2Q_t\,\tilde{Q} \;}
 \qquad\Longleftrightarrow\qquad
-\tilde\Pi := \frac{\tilde{Q}}{2Q_t}\ \text{ is idempotent, }\ \tilde\Pi^2 = \tilde\Pi,\quad \tilde\Pi\neq 0 .
+\tilde\Pi_{\mathrm{id}} := \frac{\tilde{Q}}{2Q_t}\ \text{ is idempotent, }\ \tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}},\quad \tilde\Pi_{\mathrm{id}}\neq 0 .
 $$
 
 The nonzero complex multiples of idempotents are therefore exactly the non-pure zero divisors. The standard idempotent is
 
 $$
-\tilde\Pi(\vec u) = \tfrac12\left(e_t + i\vec u\right),
+\tilde\Pi_{\mathrm{id}}(\vec u) = \tfrac12\left(e_t + i\vec u\right),
 \qquad
 \vec u = u_x\vec e_x + u_y\vec e_y + u_z\vec e_z,\quad \vec u\cdot\vec u = 1 ,
 $$
 
-for which $\langle\tilde\Pi\rangle_{\natural} = \tfrac14(1 - (i\vec u)^2) = \tfrac14(1 - \vec u\cdot\vec u) = 0$ and $\tilde\Pi^2 = \tilde\Pi$, using $(i\vec u)^2 = +\vec u\cdot\vec u$ and $\vec u\cdot\vec u=1$. The verification is one line in explicit quaternion arithmetic:
+for which $\langle\tilde\Pi_{\mathrm{id}}\rangle_{\natural} = \tfrac14(1 - (i\vec u)^2) = \tfrac14(1 - \vec u\cdot\vec u) = 0$ and $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$, using $(i\vec u)^2 = +\vec u\cdot\vec u$ and $\vec u\cdot\vec u=1$. The verification is one line in explicit quaternion arithmetic:
 
 $$
-\tilde\Pi^2 = \tfrac14\left(e_t + 2i\vec u + (i\vec u)^2\right)
+\tilde\Pi_{\mathrm{id}}^2 = \tfrac14\left(e_t + 2i\vec u + (i\vec u)^2\right)
 = \tfrac14\left(e_t + 2i\vec u - \vec u\vec u\right)
 = \tfrac14\left(e_t + 2i\vec u + e_t\right)
-= \tilde\Pi .
+= \tilde\Pi_{\mathrm{id}} .
 $$
 
 The two families are disjoint, because the vanishing of the scalar part is what separates them, and they exhaust the zero divisors. The set $\mathcal{Z}$ is the union of the nilpotent cone and the cone of idempotent multiples — a single complex cone of complex dimension three, stratified by the vanishing of $Q_t$.
@@ -140,9 +140,9 @@ $$
 The vanishing locus is the light cone of Minkowski space. For a nonzero null element with $r'_t\neq 0$, writing $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z = r'_t\vec u_x$ with $\vec u_x$ a real unit vector gives
 
 $$
-\tilde R_\Phi = i r'_t\left(e_t - i\vec u_x\right) = 2i r'_t\,\tilde\Pi(-\vec u_x),
+\tilde R_\Phi = i r'_t\left(e_t - i\vec u_x\right) = 2i r'_t\,\tilde\Pi_{\mathrm{id}}(-\vec u_x),
 \qquad
-\tilde\Pi(-\vec u_x) = \tfrac12\left(e_t - i\vec u_x\right),
+\tilde\Pi_{\mathrm{id}}(-\vec u_x) = \tfrac12\left(e_t - i\vec u_x\right),
 $$
 
 so every future (or past) null point of the real material slice is a real multiple of an idempotent: the material cone is the non-pure family, realized over the reals. The apex $\tilde R_\Phi = 0$ is excluded from $\mathcal{Z}$ by the definition, since it is not a zero divisor. The real pure case would require $\langle r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rangle_{\natural} =r_x^2+r_y^2+r_z^2 = 0$ with $(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\neq 0$ and real, which is impossible; the nilpotent family on the material cone therefore needs complex spatial components, and the real cone is entirely of the idempotent type.
@@ -194,7 +194,7 @@ $$
 \langle\tilde P_{\Phi}\rangle_{\natural} = 0 .
 $$
 
-A four-wavevector supports a dispersionless wave precisely when it is null, and the null condition is the zero-divisor condition: $\tilde P_{\Phi}\in\mathcal{Z}$. The wave travels at the speed $c$ because $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ reads $\omega = c|\vec k_\Phi|$, and it is the biquaternion norm of the wavevector, not a separate postulate, that fixes $c$ as the propagation speed. Equivalently, the lightlike $\tilde P_{\Phi} = i(\omega/c)e_t + \vec k_\Phi$ with $\omega = c|\vec k_\Phi|$ has the form $i(\omega/c)(e_t - i\vec u_\Phi) = 2i(\omega/c)\tilde\Pi(-\vec u_\Phi)$, an idempotent multiple, so the null wavevectors are exactly the non-pure zero divisors of the material sector, in parallel with the null positions of the previous section.
+A four-wavevector supports a dispersionless wave precisely when it is null, and the null condition is the zero-divisor condition: $\tilde P_{\Phi}\in\mathcal{Z}$. The wave travels at the speed $c$ because $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ reads $\omega = c|\vec k_\Phi|$, and it is the biquaternion norm of the wavevector, not a separate postulate, that fixes $c$ as the propagation speed. Equivalently, the lightlike $\tilde P_{\Phi} = i(\omega/c)e_t + \vec k_\Phi$ with $\omega = c|\vec k_\Phi|$ has the form $i(\omega/c)(e_t - i\vec u_\Phi) = 2i(\omega/c)\tilde\Pi_{\mathrm{id}}(-\vec u_\Phi)$, an idempotent multiple, so the null wavevectors are exactly the non-pure zero divisors of the material sector, in parallel with the null positions of the previous section.
 
 A superposition of three such modes checks the cancellation explicitly. Let
 $$
@@ -294,7 +294,7 @@ $$
 \langle\tilde R_\Phi\rangle_{\natural} = -{r'_{t}}^2 +r_x^2+r_y^2+r_z^2 ,
 $$
 
-so $\mathcal{Z}$ meets the material sector exactly in the light cone $|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c|r'_t|$, and every nonzero real null point is a real multiple of an idempotent $\tilde\Pi(-\vec u_x) = \tfrac12(e_t - i\vec u_x)$. The division subalgebras $\mathbb{B}_{C}$ and $\mathbb{B}_{H}$ contain no zero divisors; the cones in the two Hermitian-type sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the two real faces of $\mathcal{Z}$, of which the material one is the physical light cone.
+so $\mathcal{Z}$ meets the material sector exactly in the light cone $|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c|r'_t|$, and every nonzero real null point is a real multiple of an idempotent $\tilde\Pi_{\mathrm{id}}(-\vec u_x) = \tfrac12(e_t - i\vec u_x)$. The division subalgebras $\mathbb{B}_{C}$ and $\mathbb{B}_{H}$ contain no zero divisors; the cones in the two Hermitian-type sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the two real faces of $\mathcal{Z}$, of which the material one is the physical light cone.
 
 The cone is also the locus of propagation. Because $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is the biquaternion norm of the gradient, a four-wavevector $\tilde P_{\Phi}$ satisfies $\Box_\Phi f(\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})) = \langle\tilde P_{\Phi}\rangle_{\natural}\frac{d^2f}{ds^2}$ for every smooth $f$; the wave equation holds for every such phase precisely when $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$, which is $\omega = c|\vec k_\Phi|$ and the zero-divisor condition on $\tilde P_{\Phi}$. The cone is invariant under rotor conjugation because the biquaternion norm is multiplicative, and its three physical guises — the massless shell in momentum space, the null field in field space, and the dispersionless wavevector in wave space — are one algebraic locus.
 
@@ -312,7 +312,7 @@ The light cone is the set on which elements of the biquaternion algebra cease to
 | $\mathbb{B}_{C}, \mathbb{B}_{H}$ | Division subalgebras: complex scalar line (centre); real quaternions |
 | $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate, $\mathbb{B}_{\Phi}$ |
 | $\langle\tilde{Q}\rangle_{\natural} = -{r'_{t}}^2 +r_x^2+r_y^2+r_z^2$ | Interval; zero set is the light cone |
-| $\tilde\Pi(\vec u) = \tfrac12(e_t + i\vec u)$ | Idempotent; $N=0$, $\tilde\Pi^2=\tilde\Pi$ |
+| $\tilde\Pi_{\mathrm{id}}(\vec u) = \tfrac12(e_t + i\vec u)$ | Idempotent; $N=0$, $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$ |
 | $\tilde{Q}^2 = 2Q_t\tilde{Q}$ | Non-pure zero-divisor identity |
 | $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Gradient, conjugate gradient, d'Alembertian |
 | $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k_\Phi$ | Four-wavevector, $\mathbb{B}_{\Phi}$ |

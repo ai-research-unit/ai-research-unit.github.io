@@ -10,9 +10,9 @@ $$
 
 The two predicates are the ones the partition entry named, and here they give opposite answers. The norm fails: the element is a zero divisor, it has no inverse, and it lies on the wall of the group of invertibles. The vector square holds: the two eigenvalues are distinct, the eigenbasis exists, and the Peirce decomposition attached to the element is unique.
 
-Every element of the stratum is a non-zero complex multiple of a primitive idempotent, $\tilde Q=\kappa\tilde\Pi$ with $\kappa=2Q_t\neq0$; every spectral description survives because the two eigenvalues $\kappa$ and $0$ are distinct; and every description that needs a magnitude fails, because the magnitude is zero. One predicate is false and the other is true, and the descriptions divide exactly along that line.
+Every element of the stratum is a non-zero complex multiple of a primitive idempotent, $\tilde Q=\kappa\tilde\Pi_{\mathrm{id}}$ with $\kappa=2Q_t\neq0$; every spectral description survives because the two eigenvalues $\kappa$ and $0$ are distinct; and every description that needs a magnitude fails, because the magnitude is zero. One predicate is false and the other is true, and the descriptions divide exactly along that line.
 
-On a null line no modulus is available, so the usual normalisation $\tilde Q/\sqrt N$ has no value. It is replaced by $\tilde\Pi=\tilde Q/(2Q_t)$, and the replacement is canonical: each null line that is not a nilpotent line contains exactly one idempotent. So the stratum carries a section of its own projectivisation, and the section is not a choice.
+On a null line no modulus is available, so the usual normalisation $\tilde Q/\sqrt N$ has no value. It is replaced by $\tilde\Pi_{\mathrm{id}}=\tilde Q/(2Q_t)$, and the replacement is canonical: each null line that is not a nilpotent line contains exactly one idempotent. So the stratum carries a section of its own projectivisation, and the section is not a choice.
 
 The idempotent is the direction, the coefficient is a complex scale, and the stratum is a $\mathbb{C}^{\times}$-bundle over the null quadric with the nilpotent conic removed. On the material slice the base is the celestial sphere and the fibre is the energy. There is no third datum, and nothing inside a direction is distinguished.
 
@@ -61,16 +61,16 @@ Five descriptions coincide. An element of the stratum is: a null element with no
 
 The dimension is three complex and six real, the same as the spectral stratum and one less than the open stratum in each count. The stratum is Zariski-open and dense in the null cone, smooth, connected, and a cone with its apex removed.
 
-Over sixty random null elements, built as $Q_t(e_t+\vec\zeta)$ with $\vec\zeta^{2}=e_t$, the norm vanished to $5.2\times10^{-14}$ and the idempotent $\tilde\Pi=\tilde Q/(2Q_t)$ satisfied $\tilde\Pi^{2}=\tilde\Pi$ to $2.0\times10^{-15}$.
+Over sixty random null elements, built as $Q_t(e_t+\vec\zeta)$ with $\vec\zeta^{2}=e_t$, the norm vanished to $5.2\times10^{-14}$ and the idempotent $\tilde\Pi_{\mathrm{id}}=\tilde Q/(2Q_t)$ satisfied $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$ to $2.0\times10^{-15}$.
 
 ### The Idempotent
 
 The element is a scale times a primitive idempotent, and both factors are determined by the element.
 
 $$
-\tilde Q=\kappa\,\tilde\Pi,\qquad
+\tilde Q=\kappa\,\tilde\Pi_{\mathrm{id}},\qquad
 \kappa=2Q_t,\qquad
-\tilde\Pi=\frac{\tilde Q}{2Q_t}=\frac{1}{2}\left(e_t+\vec\zeta\right),\qquad
+\tilde\Pi_{\mathrm{id}}=\frac{\tilde Q}{2Q_t}=\frac{1}{2}\left(e_t+\vec\zeta\right),\qquad
 \vec\zeta=\frac{\vec Q}{Q_t},\qquad
 \vec\zeta^{2}=e_t .
 $$
@@ -78,12 +78,12 @@ $$
 The idempotent has trace one half in the scalar part and norm zero.
 
 $$
-\operatorname{Sc}\tilde\Pi=\tfrac12,\qquad
-N(\tilde\Pi)=0,\qquad
-B^{2}(\tilde\Pi)=-\tfrac14 .
+\operatorname{Sc}\tilde\Pi_{\mathrm{id}}=\tfrac12,\qquad
+N(\tilde\Pi_{\mathrm{id}})=0,\qquad
+B^{2}(\tilde\Pi_{\mathrm{id}})=-\tfrac14 .
 $$
 
-Each null line contains exactly one idempotent. On the line $\mathbb{C}\tilde\Pi$ the equation $(\lambda\tilde\Pi)^{2}=\lambda\tilde\Pi$ reduces to $\lambda^{2}=\lambda$, whose solutions are $0$ and $1$. Computed: $\lambda=2$ misses idempotence by $1.55$ and $\lambda=i$ by $1.10$.
+Each null line contains exactly one idempotent. On the line $\mathbb{C}\tilde\Pi_{\mathrm{id}}$ the equation $(\lambda\tilde\Pi_{\mathrm{id}})^{2}=\lambda\tilde\Pi_{\mathrm{id}}$ reduces to $\lambda^{2}=\lambda$, whose solutions are $0$ and $1$. Computed: $\lambda=2$ misses idempotence by $1.55$ and $\lambda=i$ by $1.10$.
 
 ### The Description That Survives
 
@@ -91,12 +91,12 @@ The spectrum is $\{\kappa,0\}$ with distinct roots, so every spectral object exi
 
 $$
 p_{\tilde Q}(X)=X(X-\kappa),\qquad
-e_{+}=\tilde\Pi,\qquad
-e_{-}=e_t-\tilde\Pi,\qquad
+e_{+}=\tilde\Pi_{\mathrm{id}},\qquad
+e_{-}=e_t-\tilde\Pi_{\mathrm{id}},\qquad
 \tilde Q=\kappa\,e_{+}+0\cdot e_{-}.
 $$
 
-The two spectral idempotents are both in the stratum, and they are orthogonal. So the identity decomposes into two null idempotents: $e_t=\tilde\Pi+\tilde\Pi'$ with $N=1$, $N(\tilde\Pi)=N(\tilde\Pi')=0$.
+The two spectral idempotents are both in the stratum, and they are orthogonal. So the identity decomposes into two null idempotents: $e_t=\tilde\Pi_{\mathrm{id}}+\tilde\Pi_{\mathrm{id}}'$ with $N=1$, $N(\tilde\Pi_{\mathrm{id}})=N(\tilde\Pi_{\mathrm{id}}')=0$.
 
 The powers are linear in the element.
 
@@ -148,9 +148,9 @@ $$
 The two kernels are different planes that meet in one line.
 
 $$
-\ker L_{\tilde Q}=\mathbb{C}\vec\Upsilon_{+}\oplus\mathbb{C}\tilde\Pi',\qquad
-\ker R_{\tilde Q}=\mathbb{C}\vec\Upsilon_{-}\oplus\mathbb{C}\tilde\Pi',\qquad
-\ker L_{\tilde Q}\cap\ker R_{\tilde Q}=\mathbb{C}\tilde\Pi' .
+\ker L_{\tilde Q}=\mathbb{C}\vec\Pi_{\mathrm{nil},+}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}',\qquad
+\ker R_{\tilde Q}=\mathbb{C}\vec\Pi_{\mathrm{nil},-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}',\qquad
+\ker L_{\tilde Q}\cap\ker R_{\tilde Q}=\mathbb{C}\tilde\Pi_{\mathrm{id}}' .
 $$
 
 Computed: both ranks are two, the sum of the two kernels is three-dimensional, and the intersection is one-dimensional.
@@ -179,7 +179,7 @@ $$
 =\left\{i\frac{E}{c}\left(e_t+\vec n\right)\ :\ E\neq0,\ \lvert\vec n\rvert=1\right\},
 $$
 
-a cone of real dimension three inside a stratum of real dimension six. The idempotent is $\tilde\Pi=\tfrac12(e_t-i\vec n)$, and it is Hermitian.
+a cone of real dimension three inside a stratum of real dimension six. The idempotent is $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t-i\vec n)$, and it is Hermitian.
 
 **The sum of two null momenta is massive unless they are parallel.**
 
@@ -228,10 +228,10 @@ and they are proportional only if $Q_t=0$ or $\vec Q=0$, neither of which holds 
 | predicate | $N=0$, $B^{2}\neq0$ | the two invariants |
 | cone difference | $\mathcal N\setminus\mathcal S$ | the position among the strata |
 | scalar part | $Q_t\neq0$ on $\mathcal N$ | the eigenvalue sum, half of it |
-| idempotent form | $\kappa\tilde\Pi$, $\tilde\Pi^{2}=\tilde\Pi$, $\tilde\Pi\neq0,e_t$ | the direction and the scale |
+| idempotent form | $\kappa\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}\neq0,e_t$ | the direction and the scale |
 | spectrum | $\{\kappa,0\}$, $\kappa\neq0$ | the spectral type |
 
-The descriptions are equivalent and each names a different datum. The pair $(\kappa,\tilde\Pi)$ is determined by the element, and the element by the pair, so the correspondence is a bijection and not a parametrisation with a kernel. That matters for what follows: there is no gauge freedom in the decomposition of a null element, and the only freedom is the freedom to describe the same element twice.
+The descriptions are equivalent and each names a different datum. The pair $(\kappa,\tilde\Pi_{\mathrm{id}})$ is determined by the element, and the element by the pair, so the correspondence is a bijection and not a parametrisation with a kernel. That matters for what follows: there is no gauge freedom in the decomposition of a null element, and the only freedom is the freedom to describe the same element twice.
 
 The second description is the one that survives every later test. An element of the stratum is a scaled projector, and the projection is primitive: it is not a sum of two non-zero orthogonal idempotents. Everything in §*The Description That Survives* is a consequence of primitivity, and everything in §*The Description That Fails* is a consequence of the scale being a scale of a null object.
 
@@ -242,16 +242,16 @@ The stratum is the total space of a punctured-line bundle.
 $$
 \mathbb{C}^{\times}\times\{\text{primitive idempotents}\}\longrightarrow\Sigma_{01},
 \qquad
-(\kappa,\tilde\Pi)\mapsto\kappa\tilde\Pi .
+(\kappa,\tilde\Pi_{\mathrm{id}})\mapsto\kappa\tilde\Pi_{\mathrm{id}} .
 $$
 
-The base is a smooth affine quadric with two points removed. A primitive idempotent is $\tilde\Pi=\tfrac12(e_t+\vec Z)$ with $\vec Z^{2}=e_t$, a root of $+1$; a root that is a pure vector has $\vec Z=\vec\zeta\in\mathbb{C}^{3}$ with
+The base is a smooth affine quadric with two points removed. A primitive idempotent is $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+\vec Z)$ with $\vec Z^{2}=e_t$, a root of $+1$; a root that is a pure vector has $\vec Z=\vec\zeta\in\mathbb{C}^{3}$ with
 
 $$
 \zeta_x^{2}+\zeta_y^{2}+\zeta_z^{2}=-1,
 $$
 
-which is an affine quadric of complex dimension two. The two roots that are not pure vectors are the central ones $\vec Z=\pm e_t$, which give $\tilde\Pi=e_t$ and $\tilde\Pi=0$; they are the two points removed. After removing them and multiplying by $\mathbb{C}^{\times}$ the count is $2+1=3$ complex and $4+2=6$ real.
+which is an affine quadric of complex dimension two. The two roots that are not pure vectors are the central ones $\vec Z=\pm e_t$, which give $\tilde\Pi_{\mathrm{id}}=e_t$ and $\tilde\Pi_{\mathrm{id}}=0$; they are the two points removed. After removing them and multiplying by $\mathbb{C}^{\times}$ the count is $2+1=3$ complex and $4+2=6$ real.
 
 The base is the complexified celestial sphere. The Hermitian idempotents are $\vec\zeta=i\vec n$ with $\vec n\in S^{2}$, and they form a two-sphere inside the quadric, since $(i\vec n)^{2}=e_t$ for every real unit $\vec n$. So the real directions sit in the complex directions as the real slice of the quadric, and the rest of the quadric is the complexification.
 
@@ -285,33 +285,33 @@ The stratum lies on the boundary of the group of invertibles. A path in $\Sigma_
 The element factors, and the factorisation is unique.
 
 $$
-\tilde Q=\kappa\tilde\Pi,\qquad
+\tilde Q=\kappa\tilde\Pi_{\mathrm{id}},\qquad
 \kappa=2Q_t,\qquad
-\tilde\Pi=\frac{\tilde Q}{\kappa},\qquad
-\tilde\Pi^{2}=\tilde\Pi .
+\tilde\Pi_{\mathrm{id}}=\frac{\tilde Q}{\kappa},\qquad
+\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}} .
 $$
 
-The identity $\tilde Q^{2}=(Q_t^{2}-B^{2})e_t+2Q_t\vec Q$ becomes $\tilde Q^{2}=2Q_t^{2}e_t+2Q_t\vec Q=2Q_t\tilde Q$ after substituting $B^{2}=-Q_t^{2}$; dividing by $4Q_t^{2}$ gives $\tilde\Pi^{2}=\tilde\Pi$.
+The identity $\tilde Q^{2}=(Q_t^{2}-B^{2})e_t+2Q_t\vec Q$ becomes $\tilde Q^{2}=2Q_t^{2}e_t+2Q_t\vec Q=2Q_t\tilde Q$ after substituting $B^{2}=-Q_t^{2}$; dividing by $4Q_t^{2}$ gives $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$.
 
 **The direction is a root of $+1$ and not an isotropic vector.** The vector part of a null element is not isotropic: $\vec\zeta=\vec Q/Q_t$ satisfies $\vec\zeta^{2}=e_t$, which in components is $\zeta_x^{2}+\zeta_y^{2}+\zeta_z^{2}=-1$, so its vector square is $B^{2}(\vec\zeta)=-1$ and not zero. This is the opposite of the previous stratum, where the vector part was isotropic and the scalar part was arbitrary. The two mixed strata divide the null directions of the algebra between them: one carries the isotropic vectors, the other the roots of $+1$.
 
 The idempotent is a projector of trace one half and norm zero.
 
 $$
-\operatorname{Sc}\tilde\Pi=\tfrac12,\qquad
-N(\tilde\Pi)=0,\qquad
-B^{2}(\tilde\Pi)=-\tfrac14,\qquad
-\operatorname{Sc}\tilde\Pi'=\tfrac12,\qquad
-N(\tilde\Pi')=0 .
+\operatorname{Sc}\tilde\Pi_{\mathrm{id}}=\tfrac12,\qquad
+N(\tilde\Pi_{\mathrm{id}})=0,\qquad
+B^{2}(\tilde\Pi_{\mathrm{id}})=-\tfrac14,\qquad
+\operatorname{Sc}\tilde\Pi_{\mathrm{id}}'=\tfrac12,\qquad
+N(\tilde\Pi_{\mathrm{id}}')=0 .
 $$
 
 The two idempotents of the pair are both null, and their sum is invertible.
 
 $$
-e_t=\tilde\Pi+\tilde\Pi',\qquad
+e_t=\tilde\Pi_{\mathrm{id}}+\tilde\Pi_{\mathrm{id}}',\qquad
 N(e_t)=1,\qquad
-N(\tilde\Pi)=N(\tilde\Pi')=0,\qquad
-\tilde\Pi\tilde\Pi'=0 .
+N(\tilde\Pi_{\mathrm{id}})=N(\tilde\Pi_{\mathrm{id}}')=0,\qquad
+\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}'=0 .
 $$
 
 So the identity of the algebra is the sum of two null idempotents, and neither summand is degenerate in the spectral sense. The null cone contains the pieces of an invertible element and not the unit; that is the whole difference between this stratum and the open one.
@@ -320,12 +320,12 @@ So the identity of the algebra is the sum of two null idempotents, and neither s
 
 The two invariants measure different things, and the idempotent separates them.
 
-| quantity | value on $\tilde\Pi$ | what it measures |
+| quantity | value on $\tilde\Pi_{\mathrm{id}}$ | what it measures |
 | --- | --- | --- |
-| $\operatorname{Sc}\tilde\Pi$ | $\tfrac12$ | the weight, half the trace in the matrix model |
-| $N(\tilde\Pi)$ | $0$ | the multiplicative invariant |
-| $B^{2}(\tilde\Pi)$ | $-\tfrac14$ | the discriminant, the separation of the modes |
-| $\operatorname{rank}\tilde\Pi$ | $1$ | the primitivity, in the matrix model |
+| $\operatorname{Sc}\tilde\Pi_{\mathrm{id}}$ | $\tfrac12$ | the weight, half the trace in the matrix model |
+| $N(\tilde\Pi_{\mathrm{id}})$ | $0$ | the multiplicative invariant |
+| $B^{2}(\tilde\Pi_{\mathrm{id}})$ | $-\tfrac14$ | the discriminant, the separation of the modes |
+| $\operatorname{rank}\tilde\Pi_{\mathrm{id}}$ | $1$ | the primitivity, in the matrix model |
 
 In the matrix model the idempotent is a rank-one projector with trace one. Its image is one-dimensional, its kernel is three-dimensional, and its determinant vanishes. So the four numbers are one number and one rank: the projector is normalised by its trace and annihilated by its determinant.
 
@@ -340,7 +340,7 @@ $$
 \tilde Q\longmapsto\frac{\tilde Q}{2Q_t}\quad\text{succeeds}.
 $$
 
-The replacement is not a convention, because it is unique. On the line $\mathbb{C}\tilde\Pi$ the idempotence condition is $\lambda^{2}=\lambda$, so the only idempotents on the line are $0$ and $\tilde\Pi$ itself; the value $\lambda=1$ is forced, and the induced map on the projectivisation is a section. Computed: $\lambda=2$ misses idempotence by $1.55$ and $\lambda=i$ by $1.10$, so neither a real rescaling nor a phase rescaling preserves the normalisation.
+The replacement is not a convention, because it is unique. On the line $\mathbb{C}\tilde\Pi_{\mathrm{id}}$ the idempotence condition is $\lambda^{2}=\lambda$, so the only idempotents on the line are $0$ and $\tilde\Pi_{\mathrm{id}}$ itself; the value $\lambda=1$ is forced, and the induced map on the projectivisation is a section. Computed: $\lambda=2$ misses idempotence by $1.55$ and $\lambda=i$ by $1.10$, so neither a real rescaling nor a phase rescaling preserves the normalisation.
 
 So the phase of the coefficient is a datum and not a gauge. A reader who is used to scaling a spinor by a phase will expect the ray to be indifferent to it. The algebra says the opposite: the ray is a projective class, and the idempotent is the canonical representative of the class, so any change of the representative is a change of the element and not a change of description.
 
@@ -351,7 +351,7 @@ The same statement read forwards is that null lines split into two kinds. A line
 The direction fixes the spectral data and the scale fixes the eigenvalue.
 
 $$
-\tilde\Pi\ \text{fixed}\ \Longrightarrow\ e_\pm,\ \vec\zeta,\ \text{the Peirce pair, the kernels fixed};\qquad
+\tilde\Pi_{\mathrm{id}}\ \text{fixed}\ \Longrightarrow\ e_\pm,\ \vec\zeta,\ \text{the Peirce pair, the kernels fixed};\qquad
 \kappa\ \text{fixed}\ \Longrightarrow\ \text{the eigenvalue fixed}.
 $$
 
@@ -403,9 +403,9 @@ L_{\tilde Q}\big|_{\text{eigenbasis}}=\operatorname{diag}(\kappa,\kappa,0,0),\qq
 R_{\tilde Q}\big|_{\text{eigenbasis}}=\operatorname{diag}(\kappa,0,\kappa,0).
 $$
 
-Four joint eigenvectors exist. The element commutes with itself, so $L_{\tilde Q}$ and $R_{\tilde Q}$ commute; the four basis vectors $\tilde\Pi$, $\vec\Upsilon_{-}$, $\vec\Upsilon_{+}$, $\tilde\Pi'$ are simultaneous eigenvectors with the pairs $(\kappa,\kappa)$, $(\kappa,0)$, $(0,\kappa)$, $(0,0)$. Computed: the commutator was $2.8\times10^{-16}$, both operators were diagonalisable with spectra $\{\kappa,\kappa,0,0\}$, and each had rank two.
+Four joint eigenvectors exist. The element commutes with itself, so $L_{\tilde Q}$ and $R_{\tilde Q}$ commute; the four basis vectors $\tilde\Pi_{\mathrm{id}}$, $\vec\Pi_{\mathrm{nil},-}$, $\vec\Pi_{\mathrm{nil},+}$, $\tilde\Pi_{\mathrm{id}}'$ are simultaneous eigenvectors with the pairs $(\kappa,\kappa)$, $(\kappa,0)$, $(0,\kappa)$, $(0,0)$. Computed: the commutator was $2.8\times10^{-16}$, both operators were diagonalisable with spectra $\{\kappa,\kappa,0,0\}$, and each had rank two.
 
-The right eigenvalue is the Peirce index. It is $\kappa$ on the spinor space $S_{+}=\mathbb{B}\tilde\Pi$ and zero on $S_{-}=\mathbb{B}\tilde\Pi'$. So the two spinor spaces are distinguished by the right action and not by the left: the left action gives each of them the same spectrum, and the right action separates them.
+The right eigenvalue is the Peirce index. It is $\kappa$ on the spinor space $S_{+}=\mathbb{B}\tilde\Pi_{\mathrm{id}}$ and zero on $S_{-}=\mathbb{B}\tilde\Pi_{\mathrm{id}}'$. So the two spinor spaces are distinguished by the right action and not by the left: the left action gives each of them the same spectrum, and the right action separates them.
 
 This is the sharpest contrast with the previous stratum. There the two eigenvalues coincided, the centraliser was the dual numbers, and the joint eigenspace was one line. Here the eigenvalues are distinct, the centraliser is $\mathbb{C}\oplus\mathbb{C}$, and there are four joint eigenvectors. Both strata are degenerate in one predicate; only one of them is degenerate in its eigenstructure.
 
@@ -414,7 +414,7 @@ This is the sharpest contrast with the previous stratum. There the two eigenvalu
 The centraliser is the span of the two idempotents.
 
 $$
-\mathbb{C}[\tilde Q]=\{a\tilde\Pi+b\tilde\Pi'\}\cong\mathbb{C}\oplus\mathbb{C},
+\mathbb{C}[\tilde Q]=\{a\tilde\Pi_{\mathrm{id}}+b\tilde\Pi_{\mathrm{id}}'\}\cong\mathbb{C}\oplus\mathbb{C},
 \qquad
 \dim_{\mathbb{C}}\mathbb{C}[\tilde Q]=2 .
 $$
@@ -422,10 +422,10 @@ $$
 It contains exactly four idempotents.
 
 $$
-0,\qquad e_t,\qquad \tilde\Pi,\qquad \tilde\Pi' .
+0,\qquad e_t,\qquad \tilde\Pi_{\mathrm{id}},\qquad \tilde\Pi_{\mathrm{id}}' .
 $$
 
-Solving $a^{2}=a$ and $2ab+b^{2}=b$ gives $(a,b)\in\{(0,0),(1,0),(0,1),(1,-1)\}$, and the fourth pair gives $\tilde\Pi'=e_t-\tilde\Pi$. All four were checked to $1.9\times10^{-16}$, and no random element commuted with $\tilde Q$ in two hundred draws.
+Solving $a^{2}=a$ and $2ab+b^{2}=b$ gives $(a,b)\in\{(0,0),(1,0),(0,1),(1,-1)\}$, and the fourth pair gives $\tilde\Pi_{\mathrm{id}}'=e_t-\tilde\Pi_{\mathrm{id}}$. All four were checked to $1.9\times10^{-16}$, and no random element commuted with $\tilde Q$ in two hundred draws.
 
 A four-idempotent centraliser is what a two-point spectrum gives. A dual-number centraliser has two; a $\mathbb{C}\oplus\mathbb{C}$ has four; the whole algebra has infinitely many. So the count of idempotents in the centraliser is a rough measure of how much of the spectrum is alive, and the three strata order as two, four and infinitely many.
 
@@ -444,7 +444,7 @@ There is no growth in the power. The previous stratum had a defect that accumula
 The functional calculus is evaluation at two points.
 
 $$
-f(\tilde Q)=f(\kappa)\tilde\Pi+f(0)\tilde\Pi',
+f(\tilde Q)=f(\kappa)\tilde\Pi_{\mathrm{id}}+f(0)\tilde\Pi_{\mathrm{id}}',
 $$
 
 which is the two-term writing read as an algebra homomorphism. It is the exact analogue of the open stratum's $f(\lambda_+)e_+ + f(\lambda_-)e_-$, with one of the two values fixed at zero.
@@ -478,7 +478,7 @@ $$
 
 The vanishing of the norm is the vanishing of the product with the conjugate. That is one line and it is the exact statement: $N(\tilde Q)=0$ means $\tilde Q\tilde Q^{\natural}=0$, so the conjugate is a non-zero element that the element annihilates. In a division algebra this cannot happen; here it happens on a cone of real dimension six.
 
-The left multiplication is onto, not invertible. Its image is the right ideal $\tilde\Pi\mathbb{B}$, of complex dimension two, and its kernel is the plane $\mathbb{C}\vec\Upsilon_{+}\oplus\mathbb{C}\tilde\Pi'$. So the element maps a four-dimensional algebra onto a two-dimensional ideal and kills a two-dimensional ideal, and the count adds up: $2+2=4$.
+The left multiplication is onto, not invertible. Its image is the right ideal $\tilde\Pi_{\mathrm{id}}\mathbb{B}$, of complex dimension two, and its kernel is the plane $\mathbb{C}\vec\Pi_{\mathrm{nil},+}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}'$. So the element maps a four-dimensional algebra onto a two-dimensional ideal and kills a two-dimensional ideal, and the count adds up: $2+2=4$.
 
 ### No Logarithm
 
@@ -542,21 +542,21 @@ That combination is the entry's central structural fact. The flow needs a root a
 Left and right multiplication have different kernels.
 
 $$
-\ker L_{\tilde Q}=\mathbb{C}\vec\Upsilon_{+}\oplus\mathbb{C}\tilde\Pi',\qquad
-\ker R_{\tilde Q}=\mathbb{C}\vec\Upsilon_{-}\oplus\mathbb{C}\tilde\Pi',
+\ker L_{\tilde Q}=\mathbb{C}\vec\Pi_{\mathrm{nil},+}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}',\qquad
+\ker R_{\tilde Q}=\mathbb{C}\vec\Pi_{\mathrm{nil},-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}',
 $$
 
-where $\vec\Upsilon_{+}\in S_{+}$ and $\vec\Upsilon_{-}\in S_{-}$ are the Peirce nilpotents of the pair. Each kernel is a complex plane, and the two are distinct: the left action kills the nilpotent of $S_{+}$, the right action kills the nilpotent of $S_{-}$, and only the frozen line $\mathbb{C}\tilde\Pi'$ is common.
+where $\vec\Pi_{\mathrm{nil},+}\in S_{+}$ and $\vec\Pi_{\mathrm{nil},-}\in S_{-}$ are the Peirce nilpotents of the pair. Each kernel is a complex plane, and the two are distinct: the left action kills the nilpotent of $S_{+}$, the right action kills the nilpotent of $S_{-}$, and only the frozen line $\mathbb{C}\tilde\Pi_{\mathrm{id}}'$ is common.
 
 The shared line is the frozen mode.
 
 $$
-\ker L_{\tilde Q}\cap\ker R_{\tilde Q}=\mathbb{C}\tilde\Pi'.
+\ker L_{\tilde Q}\cap\ker R_{\tilde Q}=\mathbb{C}\tilde\Pi_{\mathrm{id}}'.
 $$
 
-Computed: both kernels are two-dimensional, their sum is three-dimensional, and their intersection is one-dimensional. The line is spanned by $\tilde\Pi'$, the idempotent of the zero eigenvalue, which satisfies $\tilde\Pi'\tilde Q=\tilde Q\tilde\Pi'=0$.
+Computed: both kernels are two-dimensional, their sum is three-dimensional, and their intersection is one-dimensional. The line is spanned by $\tilde\Pi_{\mathrm{id}}'$, the idempotent of the zero eigenvalue, which satisfies $\tilde\Pi_{\mathrm{id}}'\tilde Q=\tilde Q\tilde\Pi_{\mathrm{id}}'=0$.
 
-So the two one-sided readings lose different information. The left action annihilates the plane $\mathbb{C}\vec\Upsilon_{+}\oplus\mathbb{C}\tilde\Pi'$; the right action annihilates $\mathbb{C}\vec\Upsilon_{-}\oplus\mathbb{C}\tilde\Pi'$. Only the frozen line is lost on both sides, and everything else that is lost is lost on one side only.
+So the two one-sided readings lose different information. The left action annihilates the plane $\mathbb{C}\vec\Pi_{\mathrm{nil},+}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}'$; the right action annihilates $\mathbb{C}\vec\Pi_{\mathrm{nil},-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}'$. Only the frozen line is lost on both sides, and everything else that is lost is lost on one side only.
 
 The element itself is in neither kernel. $\tilde Q^{2}=\kappa\tilde Q\neq0$, so the element is not annihilated by itself on either side; it is annihilated by its conjugate, which is a different element of the stratum. That is the exact shape of a zero divisor: the annihilator is not the element but its mirror.
 
@@ -565,9 +565,9 @@ The element itself is in neither kernel. $\tilde Q^{2}=\kappa\tilde Q\neq0$, so 
 The two spinor spaces are the minimal left ideals.
 
 $$
-S_{+}=\mathbb{B}\tilde\Pi=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\vec\Upsilon_{+},
+S_{+}=\mathbb{B}\tilde\Pi_{\mathrm{id}}=\mathbb{C}\tilde\Pi_{\mathrm{id}}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},+},
 \qquad
-S_{-}=\mathbb{B}\tilde\Pi'=\mathbb{C}\vec\Upsilon_{-}\oplus\mathbb{C}\tilde\Pi',
+S_{-}=\mathbb{B}\tilde\Pi_{\mathrm{id}}'=\mathbb{C}\vec\Pi_{\mathrm{nil},-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}',
 \qquad
 \mathbb{B}=S_{+}\oplus S_{-}.
 $$
@@ -602,14 +602,14 @@ All three outcomes occur, and the two exceptional ones need special pairs.
 
 | outcome | witness | what the pair has to be |
 | --- | --- | --- |
-| in the stratum | $\tilde\Pi_{+}^{2}=\tilde\Pi_{+}$ | any non-orthogonal pair whose product is idempotent up to scale |
-| the origin | $\tilde\Pi_{+}\tilde\Pi_{-}=0$ | orthogonal idempotents |
-| the nilpotent stratum | $\tilde\Pi_{+}\tilde\Pi'=bE_{12}$ | a complementary pair with one corner turned on |
+| in the stratum | $\tilde\Pi_{\mathrm{id},+}^{2}=\tilde\Pi_{\mathrm{id},+}$ | any non-orthogonal pair whose product is idempotent up to scale |
+| the origin | $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$ | orthogonal idempotents |
+| the nilpotent stratum | $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id}}'=bE_{12}$ | a complementary pair with one corner turned on |
 
-The third witness is the interesting one. With $\tilde\Pi'=\tilde\Pi_{-}+bE_{12}$ for $b\neq0$, which is again a primitive idempotent, the product is
+The third witness is the interesting one. With $\tilde\Pi_{\mathrm{id}}'=\tilde\Pi_{\mathrm{id},-}+bE_{12}$ for $b\neq0$, which is again a primitive idempotent, the product is
 
 $$
-\tilde\Pi_{+}\tilde\Pi'=bE_{12}=\frac{b}{2}\left(\vec e_x+i\vec e_y\right),
+\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id}}'=bE_{12}=\frac{b}{2}\left(\vec e_x+i\vec e_y\right),
 $$
 
 a non-zero nilpotent of index two: $N=0$, $B^{2}=0$, and the square vanishes. Computed for $b=1.7$: the product had $N=0$, $B^{2}=0$ and square zero, while both factors were idempotents of norm zero.
@@ -661,9 +661,9 @@ A momentum costs one real equation because its norm is real on the material slic
 The idempotent is the Hermitian projector along the direction.
 
 $$
-\tilde\Pi=\frac{\tilde P_\Phi}{2Q_t}=\frac{1}{2}\left(e_t-i\vec n\right),\qquad
-\tilde\Pi^{*}=\tilde\Pi,\qquad
-\tilde\Pi^{2}=\tilde\Pi
+\tilde\Pi_{\mathrm{id}}=\frac{\tilde P_\Phi}{2Q_t}=\frac{1}{2}\left(e_t-i\vec n\right),\qquad
+\tilde\Pi_{\mathrm{id}}^{*}=\tilde\Pi_{\mathrm{id}},\qquad
+\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}
 $$
 
 for every real unit $\vec n$, checked to machine zero. So the material idempotents are a two-sphere inside the complex quadric, and the two-sphere is the celestial sphere of the momentum.
@@ -703,12 +703,12 @@ The spectrum on the material slice is $\{2iE/c,\,0\}$.
 $$
 \lambda_{+}=2i\frac{E}{c},\qquad
 \lambda_{-}=0,\qquad
-\tilde P_\Phi=2i\frac{E}{c}\,\tilde\Pi .
+\tilde P_\Phi=2i\frac{E}{c}\,\tilde\Pi_{\mathrm{id}} .
 $$
 
 The non-zero eigenvalue is the light-cone frequency and the zero eigenvalue is the frozen mode. The spectral writing has two terms, the first non-zero and the second zero, and the second idempotent is present and non-trivial.
 
-The element is anti-Hermitian and the idempotent is Hermitian. $\tilde P_\Phi^{*}=-\tilde P_\Phi$ on the material slice, while $\tilde\Pi^{*}=\tilde\Pi$. So the momentum is an imaginary multiple of a projector, and the projector is the object with unit trace. The pair is the algebraic form of the statement that a state is a projector and a momentum is a weight.
+The element is anti-Hermitian and the idempotent is Hermitian. $\tilde P_\Phi^{*}=-\tilde P_\Phi$ on the material slice, while $\tilde\Pi_{\mathrm{id}}^{*}=\tilde\Pi_{\mathrm{id}}$. So the momentum is an imaginary multiple of a projector, and the projector is the object with unit trace. The pair is the algebraic form of the statement that a state is a projector and a momentum is a weight.
 
 ### The Sum of Two Rays
 
@@ -743,7 +743,7 @@ The three carriers meet the stratum in three different ways, and one of them is 
 | carrier | dimension | invariant on it | intersection with $\Sigma_{01}$ |
 | --- | --- | --- | --- |
 | the centre $\mathbb{C}e_t$ | $2$ real | $B^{2}=0$, $N=q_t^{2}$ | empty |
-| the ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | $4$ real | $N=0$ everywhere, $B^{2}=-q_t^{2}$ | the whole carrier minus the line $q_t=0$ |
+| the ideals $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | $4$ real | $N=0$ everywhere, $B^{2}=-q_t^{2}$ | the whole carrier minus the line $q_t=0$ |
 | the material sector $\mathbb{B}_{\Phi}$ | $4$ real | both vary | the light cone minus the apex, real dimension three |
 
 **The centre is empty, and the emptiness is exact.** On the centre $N=q_t^{2}$, which vanishes only at the apex, and the apex is in the doubly degenerate stratum. So the light cone of the first carrier is a single point: a null scalar amplitude is the zero amplitude. The reading is that a scale and a phase are not a direction, and the stratum's content is a direction.
@@ -767,7 +767,7 @@ $$
 
 whose scalar piece is a line inside the centre and whose vector piece is $i$ times the spin-one space. Recording it would list the centre and the spin-one space a second time, and the spin content would not change. The representative is $\mathbb{B}_{\Phi}$ because the material dictionary lands there: a four-momentum $i(E/c)e_t+\vec p$ has an imaginary scalar part and a real vector part, so it is anti-Hermitian and not Hermitian.
 
-The material share of a carrier is one direction. $\mathbb{B}_{\Phi}\cap S_{\pm}=\mathbb{R}\,i\tilde\Pi_{\pm}$, which has $N=0$ and $B^{2}=\tfrac14$, so it is a null four-vector along the frame's third axis. So the material light rays meet the spinor carrier in exactly one direction, the one the frame already names, and every other material ray lies in a different carrier.
+The material share of a carrier is one direction. $\mathbb{B}_{\Phi}\cap S_{\pm}=\mathbb{R}\,i\tilde\Pi_{\mathrm{id},\pm}$, which has $N=0$ and $B^{2}=\tfrac14$, so it is a null four-vector along the frame's third axis. So the material light rays meet the spinor carrier in exactly one direction, the one the frame already names, and every other material ray lies in a different carrier.
 
 ## The Interpretations
 
@@ -785,7 +785,7 @@ The boundary. The reading is of the spectrum. A zero eigenvalue in this algebra 
 
 ### I.10.aj — Normalise by the Weight When the Norm Is Gone
 
-Read: $\tilde\Pi=\tilde Q/(2Q_t)$, $\operatorname{Sc}\tilde\Pi=\tfrac12$, $N(\tilde\Pi)=0$, and the uniqueness of the idempotent on each null line.
+Read: $\tilde\Pi_{\mathrm{id}}=\tilde Q/(2Q_t)$, $\operatorname{Sc}\tilde\Pi_{\mathrm{id}}=\tfrac12$, $N(\tilde\Pi_{\mathrm{id}})=0$, and the uniqueness of the idempotent on each null line.
 
 A normalisation needs a scale, and the modulus is not the only available scale. The inverse of the norm does not exist here; the inverse of the scalar part does, and it lands exactly on the idempotent. So the canonical representative of a null line is the projector, and every null line with a non-zero scalar part has exactly one.
 
@@ -799,7 +799,7 @@ The boundary. The word *weight* is a reading of the scalar part. Off the materia
 
 ### I.10.ak — Unit Weight and Norm Zero: the Norm Is Not a Probability
 
-Read: $\operatorname{Sc}\tilde\Pi=\tfrac12$, $N(\tilde\Pi)=0$, $\operatorname{rank}\tilde\Pi=1$.
+Read: $\operatorname{Sc}\tilde\Pi_{\mathrm{id}}=\tfrac12$, $N(\tilde\Pi_{\mathrm{id}})=0$, $\operatorname{rank}\tilde\Pi_{\mathrm{id}}=1$.
 
 An element can have unit weight and zero norm. In the matrix model the idempotent is a rank-one projector with trace one; its norm, which is its determinant, vanishes. So the two invariants answer two questions: the trace counts dimensions, the norm multiplies.
 
@@ -847,9 +847,9 @@ The boundary. The celestial sphere is the base of the material slice only. Over 
 
 ### I.10.ao — Two Losses, Not One
 
-Read: $\ker L_{\tilde Q}\neq\ker R_{\tilde Q}$, with intersection the frozen line $\mathbb{C}\tilde\Pi'$.
+Read: $\ker L_{\tilde Q}\neq\ker R_{\tilde Q}$, with intersection the frozen line $\mathbb{C}\tilde\Pi_{\mathrm{id}}'$.
 
-The element annihilates two different planes. The left action kills $\mathbb{C}\vec\Upsilon_{+}\oplus\mathbb{C}\tilde\Pi'$; the right action kills $\mathbb{C}\vec\Upsilon_{-}\oplus\mathbb{C}\tilde\Pi'$. Only the frozen line is killed by both, so the two one-sided readings lose different things and agree on one thing.
+The element annihilates two different planes. The left action kills $\mathbb{C}\vec\Pi_{\mathrm{nil},+}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}'$; the right action kills $\mathbb{C}\vec\Pi_{\mathrm{nil},-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}'$. Only the frozen line is killed by both, so the two one-sided readings lose different things and agree on one thing.
 
 The reading is that a rank-one element is a filter with two faces. Multiplication by the element projects onto a plane and annihilates a plane, and the plane it annihilates depends on the side on which the product is taken. So a state passing through the element on the left loses one set of components and a state passing on the right loses another.
 
@@ -877,7 +877,7 @@ Every element of a minimal left ideal has zero norm. So the norm cannot grade a 
 
 The reading is that the norm is not a norm on spinor space. A spinor is graded by the right action, which is $\kappa$ on $S_+$ and zero on $S_-$, and by the Peirce index. The left action and the norm agree on everything and distinguish nothing inside a carrier.
 
-The material case makes the statement concrete. The material share of a carrier is one real direction, $\mathbb{R}\,i\tilde\Pi_\pm$, a null four-vector along the frame's third axis. So a material spinor is null by construction, and the frame's axis is the only direction in which a material spinor can point.
+The material case makes the statement concrete. The material share of a carrier is one real direction, $\mathbb{R}\,i\tilde\Pi_{\mathrm{id},\pm}$, a null four-vector along the frame's third axis. So a material spinor is null by construction, and the frame's axis is the only direction in which a material spinor can point.
 
 The boundary. The statement is about the algebra's own norm and not about a spinor inner product used in a quantum theory. A different form on a module can be definite; the algebra's norm is not that form.
 
@@ -897,7 +897,7 @@ The boundary. The reading is about a limit of elements in the algebra. It does n
 
 **The massless reading needs the material slice.** *Massless* names the part of the stratum that the material sector reaches, where $N$ is the interval and $B^{2}$ is the momentum squared. In the full algebra the stratum is the null cone minus the spectral cone, and $Q_t$ is a complex number with no energy reading.
 
-The idempotent is a state only after a choice of form. On the material slice $\tilde\Pi$ is Hermitian, rank one and of unit trace, which is what a state is in the matrix model. Over the complex algebra a primitive idempotent need not be Hermitian, and then it is a null flag and not a state. The entry does not claim that every element of the stratum is a state.
+The idempotent is a state only after a choice of form. On the material slice $\tilde\Pi_{\mathrm{id}}$ is Hermitian, rank one and of unit trace, which is what a state is in the matrix model. Over the complex algebra a primitive idempotent need not be Hermitian, and then it is a null flag and not a state. The entry does not claim that every element of the stratum is a state.
 
 The zero eigenvalue is not an empty mode and not a second particle. It is one eigenvalue of one element, with its own idempotent and its own line in both annihilators. A count of eigenvalues is a count of spectral data, not of particles.
 
@@ -916,13 +916,13 @@ The numerical checks are checks of identities. Every identity was verified on at
 ## Summary
 
 - $\Sigma_{01}=\{N=0,\ B^{2}\neq0\}$ is the null cone minus the spectral cone: zero divisors with two distinct eigenvalues, of complex dimension three and real dimension six, smooth, connected, dense in the cone, with the apex removed and the nilpotent directions as its boundary.
-- Every element is a non-zero multiple of a primitive idempotent, $\tilde Q=\kappa\tilde\Pi$ with $\kappa=2Q_t$, and the pair $(\kappa,\tilde\Pi)$ is determined by the element.
+- Every element is a non-zero multiple of a primitive idempotent, $\tilde Q=\kappa\tilde\Pi_{\mathrm{id}}$ with $\kappa=2Q_t$, and the pair $(\kappa,\tilde\Pi_{\mathrm{id}})$ is determined by the element.
 - The idempotent has scalar part $\tfrac12$, norm zero and vector square $-\tfrac14$: trace one and determinant zero in the matrix model.
 - Each null line with non-zero scalar part contains exactly one idempotent, so the stratum carries a canonical section of its own projectivisation: the trace normalises what the norm cannot.
 - The stratum is a $\mathbb{C}^{\times}$-bundle over the affine quadric $\vec\zeta^{2}=e_t$ minus two points; on the material slice the base is the celestial sphere and the fibre is the energy.
 - The spectral description survives in full: distinct eigenvalues $\{\kappa,0\}$, unique spectral idempotents, a two-term writing with a zero coefficient, a unique Peirce form $\operatorname{diag}(\kappa,0)$, four joint eigenvectors, a four-idempotent centraliser, and linear powers.
 - The polar description fails in full: the modulus is zero, there is no inverse, no logarithm, no polar decomposition, and the flow leaves the cone at once.
-- The two one-sided operators are $\kappa$ times projections of rank two, with distinct kernels meeting in the line $\mathbb{C}\tilde\Pi'$.
+- The two one-sided operators are $\kappa$ times projections of rank two, with distinct kernels meeting in the line $\mathbb{C}\tilde\Pi_{\mathrm{id}}'$.
 - The product of two null elements is always null, with three outcomes; the sum is null only on a hypersurface.
 - The material part is the light cone minus the apex, of real dimension three; the two frequencies are $2iE/c$ and $0$; the idempotent is the Hermitian projector along the direction.
 - Two null momenta sum to a massive element unless they are parallel: $m^{2}c^{4}=2E_1E_2(1-\cos\theta)$.
@@ -946,20 +946,20 @@ The two mixed strata fail in opposite descriptions. The previous one keeps the m
 | $\mathcal N$ | the null cone, the wall of invertibility |
 | $\mathcal S$ | the spectral cone, the wall of separation |
 | $\kappa=2Q_t$ | the scale, the non-zero eigenvalue, fixed by the element |
-| $\tilde\Pi=\tilde Q/(2Q_t)$ | the primitive idempotent, the direction |
-| $\tilde\Pi'=e_t-\tilde\Pi$ | its complement, the idempotent of the zero eigenvalue |
+| $\tilde\Pi_{\mathrm{id}}=\tilde Q/(2Q_t)$ | the primitive idempotent, the direction |
+| $\tilde\Pi_{\mathrm{id}}'=e_t-\tilde\Pi_{\mathrm{id}}$ | its complement, the idempotent of the zero eigenvalue |
 | $\vec\zeta=\vec Q/Q_t$ | the root of $+1$ attached to the direction, $\vec\zeta^{2}=e_t$ |
-| $e_+=\tilde\Pi,\ e_-=\tilde\Pi'$ | the two spectral idempotents |
+| $e_+=\tilde\Pi_{\mathrm{id}},\ e_-=\tilde\Pi_{\mathrm{id}}'$ | the two spectral idempotents |
 | $\mathsf M^{Q}=\operatorname{diag}(\kappa,0)$ | the Peirce form of the element |
 | $L_{\tilde Q}^{2}=\kappa L_{\tilde Q}$ | the one-sided operators are scaled projections |
-| $\ker L_{\tilde Q},\ \ker R_{\tilde Q}$ | the two annihilator planes, meeting in $\mathbb{C}\tilde\Pi'$ |
-| $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the spinor spaces, minimal left ideals, entirely null |
+| $\ker L_{\tilde Q},\ \ker R_{\tilde Q}$ | the two annihilator planes, meeting in $\mathbb{C}\tilde\Pi_{\mathrm{id}}'$ |
+| $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | the spinor spaces, minimal left ideals, entirely null |
 | $E_{12}=(\vec e_x+i\vec e_y)/2$ | the corner nilpotent, whose product is in $\Sigma_{00}$ |
 | $\vec U=\vec Q/B$ | the axis of the flow, $\vec U^{2}=e_t$ |
 | $\langle\tilde X\rangle_{*}=\operatorname{Sc}(\tilde X\tilde X^{*})$ | the Hermitian norm |
 | $\lVert\vec U\rVert^{2}=\sum_k\lvert U_k\rvert^{2}$ | the size of the axis, one on the material slice |
 | $\tilde P_\Phi=i\frac{E}{c}e_t+\vec p$ | a material momentum, null when $\lvert\vec p\rvert=\lvert E\rvert/c$ |
-| $\tilde\Pi=\tfrac12(e_t-i\vec n)$ | the material idempotent, Hermitian, along the direction $\vec n$ |
+| $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t-i\vec n)$ | the material idempotent, Hermitian, along the direction $\vec n$ |
 
 ## Further Reading
 

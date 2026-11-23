@@ -219,7 +219,7 @@ Eleven objects are routinely offered as the home of chirality. Each is a genuine
 | Object | What it is | Why it is not the label |
 | --- | --- | --- |
 | a root | an element $\tilde Z$ with $\tilde Z^2=e_t$ | the label uses no element |
-| an idempotent | an element with $\tilde\Pi^2=\tilde\Pi$ | a condition on an element, not on an operator |
+| an idempotent | an element with $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$ | a condition on an element, not on an operator |
 | a Peirce decomposition | four lines cut by two idempotents | the label's four cases are not lines of the algebra |
 | a Peirce basis | a basis of the algebra | a basis is a display; the images exist before one is declared |
 | a spectrum | the list $+1,+1,-1,-1$ of one operator | a list of numbers is a consequence of a chosen basis operator |
@@ -230,7 +230,7 @@ Eleven objects are routinely offered as the home of chirality. Each is a genuine
 | a matrix unit of $M_4(\mathbb{C})$ | a basis element $E_{ij}$ of a display | the basis operator is a sum of four of them, and the display is not the algebra |
 | the basis operator itself | one right multiplier $-iR_u$ | an example of the right slot, and an example is not the definition |
 
-A **root** is an element $\tilde Z$ with $\tilde Z^2=e_t$, and it is what a Peirce decomposition is built from. It enters after the label, not before: the label depends on $L$ and $R$, which the multiplication supplies, while a root is a further choice made when a splitting of the algebra is wanted. An **idempotent** is a condition on an element, $\tilde\Pi^2=\tilde\Pi$; the label is a condition on an operator, a membership, and the two conditions have different shapes and different carriers.
+A **root** is an element $\tilde Z$ with $\tilde Z^2=e_t$, and it is what a Peirce decomposition is built from. It enters after the label, not before: the label depends on $L$ and $R$, which the multiplication supplies, while a root is a further choice made when a splitting of the algebra is wanted. An **idempotent** is a condition on an element, $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$; the label is a condition on an operator, a membership, and the two conditions have different shapes and different carriers.
 
 A **spectrum** is offered in the same way, and it is the offer a physicist is likeliest to accept: chirality is said to be the pair of eigenvalues $+1$ and $-1$. The pair is a theorem about the basis operator, and the theorem needs two hypotheses, $u^2=-e_t$ and $\operatorname{Sc}u=0$. A theorem with hypotheses about a chosen element cannot be the definition of a label that needs no element. The comparison of shapes settles it: the label has four cases and a spectrum is a finite list of numbers in $\mathbb{C}$; a list cannot carry four cases, and two of the four have no spectrum at all. What the spectrum does supply is the balance, two of each sign, and that balance is why the basis operator is usable as a projector once it has been chosen.
 
@@ -264,7 +264,7 @@ u v+v u=0\quad\Longrightarrow\quad P_R\,R_v\,P_L=R_v\,P_L\quad\text{and}\quad P_
 $$
 since $R_vR_u=R_{uv}$ and $R_uR_v=R_{vu}$. So the transport of a letter is a right-slot operation and never a left-slot one, and the two questions *which side is the operator* and *does the operator move a letter* are answered by different memberships of the operator. An operator of the left slot keeps every letter; an operator of the right slot keeps or exchanges according to one anticommutator; a central scalar keeps them all.
 
-The one genuine contact between the two theories is an identity, and it should be stated as an identity rather than as a coincidence of arrays. For a traceless $u$ with $u^2=-e_t$ the projector $\tfrac12(\mathrm I+iR_u)$ is idempotent of rank two, and its image is a minimal left ideal. It is at once the Peirce projector $R(\tilde\Pi)$ of the idempotent $\tilde\Pi=\tfrac12(e_t+iu)$ and the spectral projector of $-iR_u$ onto its eigenvalue $-1$. It holds for every such $u$, because both readings are built from the same element, and that is the reason it holds. What must not be inferred from it is that the two notions are one. The Peirce projector is a subspace chosen by an idempotent. The spectral projector is one of the two spectral projectors of the single operator $-iR_u$. They agree here because $u$ was chosen to make them agree.
+The one genuine contact between the two theories is an identity, and it should be stated as an identity rather than as a coincidence of arrays. For a traceless $u$ with $u^2=-e_t$ the projector $\tfrac12(\mathrm I+iR_u)$ is idempotent of rank two, and its image is a minimal left ideal. It is at once the Peirce projector $R(\tilde\Pi_{\mathrm{id}})$ of the idempotent $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+iu)$ and the spectral projector of $-iR_u$ onto its eigenvalue $-1$. It holds for every such $u$, because both readings are built from the same element, and that is the reason it holds. What must not be inferred from it is that the two notions are one. The Peirce projector is a subspace chosen by an idempotent. The spectral projector is one of the two spectral projectors of the single operator $-iR_u$. They agree here because $u$ was chosen to make them agree.
 
 ## Why the Slot Label Is Not a Grading
 

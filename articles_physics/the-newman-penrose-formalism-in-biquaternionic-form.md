@@ -91,28 +91,28 @@ where $E_{ij}$ has $1$ in position $(i,j)$ and $0$ elsewhere. Each image has ran
 Equation (3) is the precise sense in which the null tetrad is native to the algebra. Up to the common factor $\sqrt2\,i$, the Newman–Penrose tetrad **is** the matrix-unit basis of $\mathbb{B}\cong M_2(\mathbb{C})$. The spinor-module article already names that basis:
 
 $$
-\tilde\Pi_1 = \tfrac12(e_t+i\vec e_z), \quad \tilde\Pi_2 = \tfrac12(e_t-i\vec e_z), \quad \vec\Upsilon_1 = \tfrac12(i\vec e_x-\vec e_y), \quad \vec\Upsilon_2 = \tfrac12(i\vec e_x+\vec e_y),
+\tilde\Pi_{\mathrm{id},1} = \tfrac12(e_t+i\vec e_z), \quad \tilde\Pi_{\mathrm{id},2} = \tfrac12(e_t-i\vec e_z), \quad \vec\Pi_{\mathrm{nil},1} = \tfrac12(i\vec e_x-\vec e_y), \quad \vec\Pi_{\mathrm{nil},2} = \tfrac12(i\vec e_x+\vec e_y),
 $$
 
-with $\mathsf{M}_2(\tilde\Pi_1)=E_{11}$, $\mathsf{M}_2(\tilde\Pi_2)=E_{22}$, $\mathsf{M}_2(x)=E_{12}$, $\mathsf{M}_2(y)=E_{21}$, and with $\tilde\Pi_1,\tilde\Pi_2$ the primitive orthogonal idempotents: $\tilde\Pi_1^2=\tilde\Pi_1$, $\tilde\Pi_2^2=\tilde\Pi_2$, $\tilde\Pi_1\tilde\Pi_2=\tilde\Pi_2\tilde\Pi_1=0$. Therefore
+with $\mathsf{M}_2(\tilde\Pi_{\mathrm{id},1})=E_{11}$, $\mathsf{M}_2(\tilde\Pi_{\mathrm{id},2})=E_{22}$, $\mathsf{M}_2(x)=E_{12}$, $\mathsf{M}_2(y)=E_{21}$, and with $\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2}$ the primitive orthogonal idempotents: $\tilde\Pi_{\mathrm{id},1}^2=\tilde\Pi_{\mathrm{id},1}$, $\tilde\Pi_{\mathrm{id},2}^2=\tilde\Pi_{\mathrm{id},2}$, $\tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2}=\tilde\Pi_{\mathrm{id},2}\tilde\Pi_{\mathrm{id},1}=0$. Therefore
 
 $$
-\boxed{\;l = \sqrt2\,i\,\tilde\Pi_1, \qquad n = \sqrt2\,i\,\tilde\Pi_2, \qquad m = \sqrt2\,i\,x, \qquad \bar m = \sqrt2\,i\,y\;}.
+\boxed{\;l = \sqrt2\,i\,\tilde\Pi_{\mathrm{id},1}, \qquad n = \sqrt2\,i\,\tilde\Pi_{\mathrm{id},2}, \qquad m = \sqrt2\,i\,x, \qquad \bar m = \sqrt2\,i\,y\;}.
 \tag{4}
 $$
 
 The two real null directions are the two primitive idempotents, and the complex pair is the off-diagonal pair. The tetrad is the Peirce decomposition of the algebra read as a null frame: the "physical" content of the tetrad — two real null directions — is exactly the idempotent content of $\mathbb{B}$.
 
-The inner products (1) now follow from (4) and the pairing formula $\langle \tilde Q_1,\tilde Q_2\rangle_{\natural} = \mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$. Because $\bar{\tilde\Pi}_2 = \tilde\Pi_1$ and $\tilde\Pi_1^2=\tilde\Pi_1$,
+The inner products (1) now follow from (4) and the pairing formula $\langle \tilde Q_1,\tilde Q_2\rangle_{\natural} = \mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$. Because $\bar{\tilde\Pi_{\mathrm{id}}}_2 = \tilde\Pi_{\mathrm{id},1}$ and $\tilde\Pi_{\mathrm{id},1}^2=\tilde\Pi_{\mathrm{id},1}$,
 
 $$
-\langle l,n\rangle_{\natural} = (\sqrt2\,i)^2\,\mathrm{Sc}(\tilde\Pi_1\,\bar{\tilde\Pi}_2) = -2\,\mathrm{Sc}(\tilde\Pi_1^2) = -1 ,
+\langle l,n\rangle_{\natural} = (\sqrt2\,i)^2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1}\,\bar{\tilde\Pi_{\mathrm{id}}}_2) = -2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1}^2) = -1 ,
 $$
 
-and because $\bar{\vec\Upsilon_2} = -\vec\Upsilon_2$ and $\vec\Upsilon_1\vec\Upsilon_2 = \tilde\Pi_1$ in the matrix-unit relations,
+and because $\bar{\vec\Pi_{\mathrm{nil},2}} = -\vec\Pi_{\mathrm{nil},2}$ and $\vec\Pi_{\mathrm{nil},1}\vec\Pi_{\mathrm{nil},2} = \tilde\Pi_{\mathrm{id},1}$ in the matrix-unit relations,
 
 $$
-\langle m,\bar m\rangle_{\natural} = (\sqrt2\,i)^2\,\mathrm{Sc}(\vec\Upsilon_1\,\bar{\vec\Upsilon_2}) = 2\,\mathrm{Sc}(\vec\Upsilon_1\vec\Upsilon_2) = 2\,\mathrm{Sc}(\tilde\Pi_1) = +1 .
+\langle m,\bar m\rangle_{\natural} = (\sqrt2\,i)^2\,\mathrm{Sc}(\vec\Pi_{\mathrm{nil},1}\,\bar{\vec\Pi_{\mathrm{nil},2}}) = 2\,\mathrm{Sc}(\vec\Pi_{\mathrm{nil},1}\vec\Pi_{\mathrm{nil},2}) = 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1}) = +1 .
 $$
 
 The subscript is $\natural$ and not $*$: the form is the symmetric bilinear one, and the Hermitian form of the same letters is a different object, with $\langle l,l\rangle_{*}=+1$ and $\langle l,n\rangle_{*}=0$. Only the bilinear form is a metric, and only the bilinear form gives (1).
@@ -135,7 +135,7 @@ The metric is off-diagonal because the basis is null; there is no orthonormal fr
 
 ## What the Four Corners Multiply To
 
-Equation (4) says the tetrad is the matrix-unit basis. The matrix-unit basis has a multiplication table, and the table is the part of the identification the article has so far not used. Writing $\sigma=\sqrt2\,i$ so that $l=\sigma\tilde\Pi_1$, $n=\sigma\tilde\Pi_2$, $m=\sigma x$, $\bar m=\sigma y$, and multiplying in $\mathbb{B}$ as in $M_2(\mathbb{C})$,
+Equation (4) says the tetrad is the matrix-unit basis. The matrix-unit basis has a multiplication table, and the table is the part of the identification the article has so far not used. Writing $\sigma=\sqrt2\,i$ so that $l=\sigma\tilde\Pi_{\mathrm{id},1}$, $n=\sigma\tilde\Pi_{\mathrm{id},2}$, $m=\sigma x$, $\bar m=\sigma y$, and multiplying in $\mathbb{B}$ as in $M_2(\mathbb{C})$,
 
 $$
 l^{2}=\sigma l,\quad n^{2}=\sigma n,\quad ln=nl=0,\quad m^{2}=\bar m^{2}=0,
@@ -153,9 +153,9 @@ Three lines of it are worth reading physically, because each is a statement abou
 
 **$ln=nl=0$: the two real null directions annihilate each other.** The two real legs are zero divisors of one another, not merely zero divisors each on its own. A null plane is a square-zero ideal, and the plane spanned by $l$ and $n$ is the simplest instance: any combination of them squares to zero, because the cross terms vanish in both orders.
 
-**$m\bar m=\sigma l$ and $\bar mm=\sigma n$: the transverse pair multiplies into the longitudinal direction.** The complex legs are the nilpotents whose product is the idempotent, which is the corner rule $\vec\Upsilon_1\vec\Upsilon_2=\tilde\Pi_1$ of the companion maths article, carried into the physics normalisation. A reader who knows only that the four legs are null will not guess this; it is a property of the *particular* four null directions, and it is why the tetrad closes rather than merely spanning.
+**$m\bar m=\sigma l$ and $\bar mm=\sigma n$: the transverse pair multiplies into the longitudinal direction.** The complex legs are the nilpotents whose product is the idempotent, which is the corner rule $\vec\Pi_{\mathrm{nil},1}\vec\Pi_{\mathrm{nil},2}=\tilde\Pi_{\mathrm{id},1}$ of the companion maths article, carried into the physics normalisation. A reader who knows only that the four legs are null will not guess this; it is a property of the *particular* four null directions, and it is why the tetrad closes rather than merely spanning.
 
-**$lm=\sigma m$ while $ml=0$: the algebra is not commutative, and the torsion-free null geometry is not either.** Left multiplication by $l$ keeps $m$; right multiplication kills it. That asymmetry is the matrix-unit rule $\tilde\Pi_1 x = x$, $x\tilde\Pi_1=0$ read in NP letters, and it is the algebraic reason the twelve spin coefficients split into two triples of different weight rather than one sextet.
+**$lm=\sigma m$ while $ml=0$: the algebra is not commutative, and the torsion-free null geometry is not either.** Left multiplication by $l$ keeps $m$; right multiplication kills it. That asymmetry is the matrix-unit rule $\tilde\Pi_{\mathrm{id},1} x = x$, $x\tilde\Pi_{\mathrm{id},1}=0$ read in NP letters, and it is the algebraic reason the twelve spin coefficients split into two triples of different weight rather than one sextet.
 
 ## Why a Null Basis and Not an Orthonormal One
 
@@ -164,19 +164,19 @@ The numbers in (5) invite the question the framing has not answered: why does th
 On the four Peirce corners the bilinear form is block-antidiagonal. It pairs the two idempotent corners with each other and the two nilpotent corners with each other, and vanishes on every other combination:
 
 $$
-\langle\tilde\Pi_1,\tilde\Pi_2\rangle_{\natural}=\tfrac12,\qquad
-\langle\vec\Upsilon_1,\vec\Upsilon_2\rangle_{\natural}=-\tfrac12,\qquad
-\langle\tilde\Pi_1,\vec\Upsilon_1\rangle_{\natural}=\langle\tilde\Pi_1,\vec\Upsilon_2\rangle_{\natural}=0,\qquad
-\langle\tilde\Pi_1\rangle_{\natural}=\langle\vec\Upsilon_1\rangle_{\natural}=0 .
+\langle\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2}\rangle_{\natural}=\tfrac12,\qquad
+\langle\vec\Pi_{\mathrm{nil},1},\vec\Pi_{\mathrm{nil},2}\rangle_{\natural}=-\tfrac12,\qquad
+\langle\tilde\Pi_{\mathrm{id},1},\vec\Pi_{\mathrm{nil},1}\rangle_{\natural}=\langle\tilde\Pi_{\mathrm{id},1},\vec\Pi_{\mathrm{nil},2}\rangle_{\natural}=0,\qquad
+\langle\tilde\Pi_{\mathrm{id},1}\rangle_{\natural}=\langle\vec\Pi_{\mathrm{nil},1}\rangle_{\natural}=0 .
 $$
 
-So the metric on the Peirce grading is two hyperbolic planes: one spanned by $(\tilde\Pi_1,\tilde\Pi_2)$ and one by $(\vec\Upsilon_1,\vec\Upsilon_2)$. The corners are the eigenspaces of an idempotent, the form is a duality between complementary corners, and a duality between complementary eigenspaces forces a null basis — it cannot be diagonalised in the corner basis, because each corner is isotropic. That is the structural reason a null tetrad exists at all, and it is stronger than the observation that four null vectors can be found: **the algebra's multiplication basis is null for its own norm, by construction.**
+So the metric on the Peirce grading is two hyperbolic planes: one spanned by $(\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2})$ and one by $(\vec\Pi_{\mathrm{nil},1},\vec\Pi_{\mathrm{nil},2})$. The corners are the eigenspaces of an idempotent, the form is a duality between complementary corners, and a duality between complementary eigenspaces forces a null basis — it cannot be diagonalised in the corner basis, because each corner is isotropic. That is the structural reason a null tetrad exists at all, and it is stronger than the observation that four null vectors can be found: **the algebra's multiplication basis is null for its own norm, by construction.**
 
 ## The Trace Separates Idempotents from Nilpotents
 
 Four arbitrary null directions do not make a Peirce basis. The separation is a trace, and it costs one line.
 
-The four corners carry traces $\mathrm{tr}\,\tilde\Pi_1=\mathrm{tr}\,\tilde\Pi_2=1$ and $\mathrm{tr}\,\vec\Upsilon_1=\mathrm{tr}\,\vec\Upsilon_2=0$; in the matrix image these are the traces of $E_{11},E_{22},E_{12},E_{21}$. So the trace splits the tetrad into two legs of weight one and two legs of weight zero, and the split is invariant: no change of basis inside the algebra moves a trace-one element to trace zero. Equivalently, the corner condition is
+The four corners carry traces $\mathrm{tr}\,\tilde\Pi_{\mathrm{id},1}=\mathrm{tr}\,\tilde\Pi_{\mathrm{id},2}=1$ and $\mathrm{tr}\,\vec\Pi_{\mathrm{nil},1}=\mathrm{tr}\,\vec\Pi_{\mathrm{nil},2}=0$; in the matrix image these are the traces of $E_{11},E_{22},E_{12},E_{21}$. So the trace splits the tetrad into two legs of weight one and two legs of weight zero, and the split is invariant: no change of basis inside the algebra moves a trace-one element to trace zero. Equivalently, the corner condition is
 
 $$
 \tilde Q^{2}=\sigma\tilde Q \iff \tilde Q \text{ is a scaled idempotent},\qquad
@@ -192,10 +192,10 @@ This is what rules out four arbitrary null directions. Given four null vectors, 
 The idempotents have a shape, and the shape is the sphere. Every primitive idempotent of $\mathbb{B}$ is
 
 $$
-\tilde\Pi=\tfrac12\bigl(e_t+i\vec u\bigr),\qquad \vec u\in S^{2},
+\tilde\Pi_{\mathrm{id}}=\tfrac12\bigl(e_t+i\vec u\bigr),\qquad \vec u\in S^{2},
 $$
 
-and $\tilde\Pi^{2}=\tilde\Pi$, $\mathrm{tr}\,\tilde\Pi=1$, $\mathrm{rank}\,\tilde\Pi=1$ hold for every unit $\vec u$; this was checked on three directions, including a non-axis one. So the idempotents are a two-sphere, the transverse direction is a circle, and a Peirce basis is a point of $S^{2}\times S^{1}$ — axis and transverse phase. The full null tetrad has six parameters, so the Peirce bases form a three-dimensional slice inside the six-dimensional space of tetrads.
+and $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$, $\mathrm{tr}\,\tilde\Pi_{\mathrm{id}}=1$, $\mathrm{rank}\,\tilde\Pi_{\mathrm{id}}=1$ hold for every unit $\vec u$; this was checked on three directions, including a non-axis one. So the idempotents are a two-sphere, the transverse direction is a circle, and a Peirce basis is a point of $S^{2}\times S^{1}$ — axis and transverse phase. The full null tetrad has six parameters, so the Peirce bases form a three-dimensional slice inside the six-dimensional space of tetrads.
 
 The cone statement follows, and the article has so far only cited it. The null cone $\mathcal N=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\}$, with the origin adjoined, is exactly the zero-divisor set; it has real dimension six, and its link on the Euclidean seven-sphere is
 
@@ -209,7 +209,7 @@ by *The Topology of the Zero-Divisor Cone*. Read against the previous paragraph,
 
 The tetrad is often described as informational, because the idempotents are. That is half true and the half that is false matters.
 
-The idempotents are Hermitian: $\tilde\Pi^{*}=\tilde\Pi$, so they lie in $\mathbb{B}_{\Psi}$. The nilpotents do not: $\vec\Upsilon_1^{*}=\vec\Upsilon_2$ and $\vec\Upsilon_2^{*}=\vec\Upsilon_1$, so star exchanges them and neither is an eigenvector. The tetrad legs are material: on the explicit legs, $\star l=-l$, $\star n=-n$, $\star m=-\bar m$, $\star\bar m=-m$, so $l$ and $n$ have star eigenvalue $-1$ and lie in $\mathbb{B}_{\Phi}$, while $m$ and $\bar m$ lie in neither sector and are exchanged by star up to sign.
+The idempotents are Hermitian: $\tilde\Pi_{\mathrm{id}}^{*}=\tilde\Pi_{\mathrm{id}}$, so they lie in $\mathbb{B}_{\Psi}$. The nilpotents do not: $\vec\Pi_{\mathrm{nil},1}^{*}=\vec\Pi_{\mathrm{nil},2}$ and $\vec\Pi_{\mathrm{nil},2}^{*}=\vec\Pi_{\mathrm{nil},1}$, so star exchanges them and neither is an eigenvector. The tetrad legs are material: on the explicit legs, $\star l=-l$, $\star n=-n$, $\star m=-\bar m$, $\star\bar m=-m$, so $l$ and $n$ have star eigenvalue $-1$ and lie in $\mathbb{B}_{\Phi}$, while $m$ and $\bar m$ lie in neither sector and are exchanged by star up to sign.
 
 The factor $\sqrt2\,i$ is therefore doing work. A projector is Hermitian; multiplying by $i$ makes it anti-Hermitian; the tetrad leg is material precisely because of that factor. **The same $i$ that makes a boost generator Hermitian in the derivative article makes a projector into a real light ray.** Without it there is no real null vector anywhere in the construction, and a version of the tetrad written with Hermitian projectors would be a complex null frame with no real legs at all.
 
@@ -217,7 +217,7 @@ The factor $\sqrt2\,i$ is therefore doing work. A projector is Hermitian; multip
 
 The statement "the tetrad **is** the Peirce basis, up to $\sqrt2\,i$" needs one qualification, and the qualification is a boost.
 
-A Peirce basis has three parameters, the tetrad has six. Three Lorentz parameters therefore take a tetrad off the Peirce slice, and the simplest is the boost along the axis. Under $l\mapsto A l$, $n\mapsto A^{-1}n$ with real $A$, the leg $l=\sigma\tilde\Pi_1$ becomes $(A\sigma)\tilde\Pi_1$ and $n$ becomes $(A^{-1}\sigma)\tilde\Pi_2$: each leg alone is still a scaled idempotent, but the common factor $\sigma$ is gone. The identification holds in the **unit-boost gauge**, in which the two real legs share one normalisation, and $\sigma$ is that normalisation rather than an invariant.
+A Peirce basis has three parameters, the tetrad has six. Three Lorentz parameters therefore take a tetrad off the Peirce slice, and the simplest is the boost along the axis. Under $l\mapsto A l$, $n\mapsto A^{-1}n$ with real $A$, the leg $l=\sigma\tilde\Pi_{\mathrm{id},1}$ becomes $(A\sigma)\tilde\Pi_{\mathrm{id},1}$ and $n$ becomes $(A^{-1}\sigma)\tilde\Pi_{\mathrm{id},2}$: each leg alone is still a scaled idempotent, but the common factor $\sigma$ is gone. The identification holds in the **unit-boost gauge**, in which the two real legs share one normalisation, and $\sigma$ is that normalisation rather than an invariant.
 
 This costs a sentence and prevents an overclaim. The correct statement is that the null tetrad is the Peirce basis in the gauge where the two real legs have opposite and equal normalisation; in any other gauge it is the Peirce basis rescaled leg by leg, which is still a statement about the algebra but no longer a statement about a single $\sigma$.
 
@@ -405,7 +405,7 @@ The framework does not derive the classification, and it does not need to: the c
 
 The construction separates cleanly into what is native to $\mathbb{B}$ and what is transcribed.
 
-**Native to the algebra.** The four null legs, as zero divisors and as rank-one matrices; the identity (4) that the tetrad is $\sqrt2\,i$ times the matrix-unit basis, with the two real null directions equal to the two primitive idempotents $\tilde\Pi_1,\tilde\Pi_2$; the multiplication table of the four legs, in which the two real directions annihilate each other and the two nilpotents multiply into the idempotents; the block-antidiagonal pairing on the Peirce grading, which is the structural reason a null basis and not an orthonormal one appears; the trace criterion that separates the idempotent corners from the nilpotent ones; the sphere of idempotents $\tfrac12(e_t+i\vec u)$, $\vec u\in S^{2}$, and the identification of the link of the null cone with $S^{2}\times S^{3}$; the spinor dyad and its symplectic normalization; the inner products (1) and the interval (7); the bivector subspace $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ in which a connection takes its values; the spinor module $S$ and its symmetric power $\mathrm{sym}^4 S$ in which the Weyl scalars take their values; and the boost weights (12), which follow from the weights of $\mathrm{sym}^4 S$. The mapping of the null tetrad onto the zero divisors is exact, with no residual mismatch: every leg is a zero divisor, every leg is rank one, and the four together span $\mathbb{B}$. In particular, the null structure of the Newman–Penrose tetrad maps onto the framework's zero-divisor structure cleanly, and no gap is reported here.
+**Native to the algebra.** The four null legs, as zero divisors and as rank-one matrices; the identity (4) that the tetrad is $\sqrt2\,i$ times the matrix-unit basis, with the two real null directions equal to the two primitive idempotents $\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2}$; the multiplication table of the four legs, in which the two real directions annihilate each other and the two nilpotents multiply into the idempotents; the block-antidiagonal pairing on the Peirce grading, which is the structural reason a null basis and not an orthonormal one appears; the trace criterion that separates the idempotent corners from the nilpotent ones; the sphere of idempotents $\tfrac12(e_t+i\vec u)$, $\vec u\in S^{2}$, and the identification of the link of the null cone with $S^{2}\times S^{3}$; the spinor dyad and its symplectic normalization; the inner products (1) and the interval (7); the bivector subspace $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ in which a connection takes its values; the spinor module $S$ and its symmetric power $\mathrm{sym}^4 S$ in which the Weyl scalars take their values; and the boost weights (12), which follow from the weights of $\mathrm{sym}^4 S$. The mapping of the null tetrad onto the zero divisors is exact, with no residual mismatch: every leg is a zero divisor, every leg is rank one, and the four together span $\mathbb{B}$. In particular, the null structure of the Newman–Penrose tetrad maps onto the framework's zero-divisor structure cleanly, and no gap is reported here.
 
 **Not native to the algebra.** Three items, in increasing order of severity. First, the **connection**: the spin coefficients exist once a metric-compatible connection is chosen, but the algebra does not select one. The parent article records the same for the frame, and it is the reason the spin coefficients are described here as components of a $\mathbb{B}$-valued 1-form rather than as objects the algebra produces. Second, the **curvature**: the Weyl tensor is a rank-four object outside $\mathbb{B}$, and the five scalars are its components in $\mathrm{sym}^4 S$. The algebra says what an element of $\mathrm{sym}^4 S$ is, but nothing in the algebra determines which element a spacetime produces. The gravity articles already record this as open, and it remains open; this article has made the statement of the gap precise by naming the object that is missing. Third, the **dynamics and the global structure**: there are no field equations here, so the algebra cannot say which Petrov types occur, and the construction is pointwise and linear, so it carries no topological or asymptotic information. The peeling behaviour of the scalars along a null direction, for instance, is a statement about a limit and lies outside the algebra.
 
@@ -415,7 +415,7 @@ The construction separates cleanly into what is native to $\mathbb{B}$ and what 
 
 The Newman–Penrose formalism and the biquaternion framework meet at the null vector. This article has shown that the meeting is exact at the level of the tetrad: the four legs of a null tetrad are the four zero divisors that the algebra already distinguishes, and up to the common factor $\sqrt2\,i$ they are the matrix-unit basis of $\mathbb{B}\cong M_2(\mathbb{C})$, with the two real null directions equal to the two primitive idempotents. The inner products $l\cdot n=-1$ and $m\cdot\bar m=+1$, the off-diagonal tetrad metric, and the reconstruction of the interval $-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2$ from the tetrad were all recomputed, and the construction was checked on a dyad chosen for the check rather than on the basis dyad that suggested it.
 
-The identification is then used rather than merely stated. Multiplying the four legs gives a table homogeneous of degree one in $\sigma=\sqrt2\,i$, in which $ln=nl=0$ — the two real null directions annihilate each other — and $m\bar m=\sigma l$, $\bar mm=\sigma n$ — the nilpotent pair multiplies into the idempotent pair. The bilinear form on the Peirce corners is block-antidiagonal, two hyperbolic planes, which is why the algebra's multiplication basis is null for its own norm and an orthonormal frame is the thing that is *not* native. The trace separates the corners, $\mathrm{tr}\,\tilde\Pi=1$ against $\mathrm{tr}\,\vec\Upsilon=0$, so four arbitrary null directions are not a Peirce basis; nilpotence is its own condition, $Q_t=0$ together with vanishing norm, checked on two thousand random elements. The primitive idempotents sweep a two-sphere, $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u\in S^{2}$, and the link of the null cone is $S^{2}\times S^{3}$, so the fibre of a null frame field is that link. On the sector question the article corrects itself: the projector is Hermitian and informational, but the leg is material, $\star l=-l$, and it is the factor $\sqrt2\,i$ that carries the projector out of $\mathbb{B}_{\Psi}$ into $\mathbb{B}_{\Phi}$ — the same $i$ that makes a boost generator Hermitian makes a projector into a light ray. The identification holds in the unit-boost gauge: a boost along the axis scales $l$ and $n$ by reciprocal factors and destroys the common $\sigma$, so the tetrad is the Peirce basis in that gauge and a leg-by-leg rescaling of it in any other.
+The identification is then used rather than merely stated. Multiplying the four legs gives a table homogeneous of degree one in $\sigma=\sqrt2\,i$, in which $ln=nl=0$ — the two real null directions annihilate each other — and $m\bar m=\sigma l$, $\bar mm=\sigma n$ — the nilpotent pair multiplies into the idempotent pair. The bilinear form on the Peirce corners is block-antidiagonal, two hyperbolic planes, which is why the algebra's multiplication basis is null for its own norm and an orthonormal frame is the thing that is *not* native. The trace separates the corners, $\mathrm{tr}\,\tilde\Pi_{\mathrm{id}}=1$ against $\mathrm{tr}\,\vec\Pi_{\mathrm{nil}}=0$, so four arbitrary null directions are not a Peirce basis; nilpotence is its own condition, $Q_t=0$ together with vanishing norm, checked on two thousand random elements. The primitive idempotents sweep a two-sphere, $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+i\vec u)$ with $\vec u\in S^{2}$, and the link of the null cone is $S^{2}\times S^{3}$, so the fibre of a null frame field is that link. On the sector question the article corrects itself: the projector is Hermitian and informational, but the leg is material, $\star l=-l$, and it is the factor $\sqrt2\,i$ that carries the projector out of $\mathbb{B}_{\Psi}$ into $\mathbb{B}_{\Phi}$ — the same $i$ that makes a boost generator Hermitian makes a projector into a light ray. The identification holds in the unit-boost gauge: a boost along the axis scales $l$ and $n$ by reciprocal factors and destroys the common $\sigma$, so the tetrad is the Peirce basis in that gauge and a leg-by-leg rescaling of it in any other.
 
 The two objects the tetrad is used to express are hosted but not generated. The twelve spin coefficients are the components in the null basis of an $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$-valued — hence $\mathbb{B}$-valued — connection; the count $4\times6=24$ real $=12$ complex was derived twice, once from the antisymmetry of the connection coefficients and once from the dimension of the scalar-free subspace. The five Weyl scalars are the components of the self-dual Weyl spinor $\tilde{Ξ}_{ABCD}\in\mathrm{sym}^4 S$; the count $10=5$ complex was verified by exhibiting the ten-dimensional space of Weyl tensors and computing the rank of the map to the five scalars to be ten over $\mathbb{R}$. The boost weights $\tilde{Ξ}_{k}\mapsto A^{2-k}\exp(i(2-k)\theta_{\mathrm{cen}})\tilde{Ξ}_{k}$ were recomputed for all five scalars, and the Petrov classification was exhibited as the multiplicity pattern of the roots of the binary quartic in $\mathrm{sym}^4 S$, with the canonical vanishing patterns stated together with the convention on which they depend.
 
@@ -435,10 +435,10 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 | $S$, $\bar S$ | spinor module and its conjugate, $S\cong\mathbb{C}^2$ |
 | $\mathrm{sym}^4 S$ | self-dual Weyl spinors, complex dimension $5$ |
 | $o,o'$ | normalized spinor dyad, $\varepsilon(o,o')=1$ |
-| $\tilde\Pi_1,\tilde\Pi_2,\vec\Upsilon_1,\vec\Upsilon_2$ | matrix units $E_{11},E_{22},E_{12},E_{21}$ in $\mathbb{B}$ |
+| $\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2},\vec\Pi_{\mathrm{nil},1},\vec\Pi_{\mathrm{nil},2}$ | matrix units $E_{11},E_{22},E_{12},E_{21}$ in $\mathbb{B}$ |
 | $E_{ij}$ | matrix with $1$ in position $(i,j)$ |
 | $l,n,m,\bar m$ | null tetrad legs; $l,n$ real and material ($\star l=-l$), $m,\bar m$ exchanged by star; components $l_a,n_a,m_a,\bar m_a$ |
-| $\sigma=\sqrt2\,i$ | the common normalisation, $l=\sigma\tilde\Pi_1$, $n=\sigma\tilde\Pi_2$, $m=\sigma x$, $\bar m=\sigma y$; the multiplication table is linear in it |
+| $\sigma=\sqrt2\,i$ | the common normalisation, $l=\sigma\tilde\Pi_{\mathrm{id},1}$, $n=\sigma\tilde\Pi_{\mathrm{id},2}$, $m=\sigma x$, $\bar m=\sigma y$; the multiplication table is linear in it |
 | $\mathcal N=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\}$ | the null cone, equal to the zero-divisor set with the origin; real dimension six, link $S^{2}\times S^{3}$ |
 | $g_{ab}[\mathrm{NP}]$ | tetrad metric, off-diagonal, (5) |
 | $\varepsilon(o,o')$ | symplectic pairing of the spinor module |
@@ -456,7 +456,7 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 - [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the frame field and the curvature bivector.
 - [Linearized Gravity in Biquaternionic Form](linearized-gravity-in-biquaternionic-form.html), for the Weyl tensor and the self-dual and anti-self-dual bivectors recorded there as an open problem.
 - [Gravitational Waves in Biquaternionic Form](gravitational-waves-in-biquaternionic-form.html), for the null wave vector and the component count $10\to6\to2$ that the null tetrad is used to organise.
-- [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the spinor module $S$, the matrix units $\tilde\Pi_1,\tilde\Pi_2,x,y$, the symplectic form, and the left and right actions on which the dyad construction rests.
+- [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the spinor module $S$, the matrix units $\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2},x,y$, the symplectic form, and the left and right actions on which the dyad construction rests.
 - [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](../articles_maths/the-forms-the-norms-and-the-singular-set-of-m4c.html), and [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the rank-one description, the factorization of null biquaternions into mixed spinors, and the link $S^{2}\times S^{3}$.
 - [The Companion Nilpotents of the Biquaternion Algebra](../articles_maths/the-companion-nilpotents-of-the-biquaternion-algebra.html), for the corner decomposition of the algebra into matrix units, the square-zero off-diagonal corners, and the multiplication table on which this article's table is the physics normalisation.
 - [The Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/the-square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the nilpotency criterion $Q_t=0$ with vanishing norm that separates the nilpotent legs from the idempotent ones.

@@ -10,11 +10,11 @@
 
 **The concrete setting.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. The left ideal is
 $$
-S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,
+S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},+},
 \qquad
-\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\quad\vec\Upsilon_+=\tfrac12(i\vec e_x+\vec e_y),
+\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z),\quad\vec\Pi_{\mathrm{nil},+}=\tfrac12(i\vec e_x+\vec e_y),
 $$
-and in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$ left multiplication by $\tilde Q$ has the matrix
+and in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ left multiplication by $\tilde Q$ has the matrix
 $$
 A=\mathsf M_2(\tilde Q)=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix},\qquad
 P_\pm=Q_t\mp iQ_z,\quad X_\pm=-iQ_x\pm Q_y,
@@ -80,7 +80,7 @@ A^{\natural}A=N(\tilde Q)\mathrm I_2,\qquad \tfrac12\operatorname{Tr}(A^{\natura
 $$
 the first because $\operatorname{adj}A\,A=\det A\,\mathrm I_2$ and $\det A=N$, the second because the trace of a scalar matrix is twice the scalar. The quaternionic norm is therefore the determinant, read as a trace word, and it is also an eigenvalue of $A^{\natural}A$.
 
-**The other two.** The entrywise conjugate costs the congruence $\sigma_2$ because the two Peirce coordinates $P_\pm$ and $X_\pm$ are complex-linear combinations of the coefficients with the imaginary unit in them: conjugating the coefficients does not conjugate the entries. The adjoint costs nothing because the two frame vectors $\tilde\Pi_+$ and $\vec\Upsilon_+$ are orthogonal for the Hermitian form and have the same norm $\tfrac12$, as §*The Stitch Between the Left and the Right* of *$M_2(\mathbb{C})$ Pauli Representation* computes.
+**The other two.** The entrywise conjugate costs the congruence $\sigma_2$ because the two Peirce coordinates $P_\pm$ and $X_\pm$ are complex-linear combinations of the coefficients with the imaginary unit in them: conjugating the coefficients does not conjugate the entries. The adjoint costs nothing because the two frame vectors $\tilde\Pi_{\mathrm{id},+}$ and $\vec\Pi_{\mathrm{nil},+}$ are orthogonal for the Hermitian form and have the same norm $\tfrac12$, as §*The Stitch Between the Left and the Right* of *$M_2(\mathbb{C})$ Pauli Representation* computes.
 
 **The two compositions.** The three conjugations compose to three words,
 $$
@@ -115,7 +115,7 @@ $$
 $$
 as §*The Product* of *$M_2(\mathbb{C})$ Pauli Representation* computes. The reflection $\varrho$ is not the quaternion conjugation and not the identity, and the value is not $2P$ and not $2N$. This is the element-size shadow of the missing mixed trace: at the $4\times4$ size the same product of the two families gives $4Q_{1t}Q_{2t}$, and one block cannot separate the two tensor factors that produce it.
 
-**The two sides do not commute.** At this size the left action lives on $S_+$ and the right action on $T_+$, two different planes, so no statement $A_1A_2^{\mathsf T}=A_2^{\mathsf T}A_1$ holds and none is expected. The companion article exhibits the failure on $\vec\Upsilon_+$. At the $4\times4$ size the two actions live on one space and commute, and the difference is the content of §*What the Element Size Gives*.
+**The two sides do not commute.** At this size the left action lives on $S_+$ and the right action on $T_+$, two different planes, so no statement $A_1A_2^{\mathsf T}=A_2^{\mathsf T}A_1$ holds and none is expected. The companion article exhibits the failure on $\vec\Pi_{\mathrm{nil},+}$. At the $4\times4$ size the two actions live on one space and commute, and the difference is the content of §*What the Element Size Gives*.
 
 ## The Symmetric and the Antisymmetric Part
 
@@ -226,7 +226,7 @@ H=\tfrac12\operatorname{Tr}\bigl((Q_{1t}\mathrm I_2-iW_1)(\overline{Q_{2t}}\math
 $$
 and the four reduce to the four coordinate expressions $Q_{1t}Q_{2t}\mp(\vec Q_1,\vec Q_2)$ and their conjugates by $\operatorname{Tr}W_1W_2=2(\vec Q_1,\vec Q_2)$ and $\operatorname{Tr}\mathrm I_2=2$. The signs of the four rows are the four ways of signing the vector part, which is the content of the table of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, read as a trace.
 
-**The four Gram matrices on the plane.** The Gram matrix of a form in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$ is the array of its values on the two vectors, and the four arrays are
+**The four Gram matrices on the plane.** The Gram matrix of a form in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ is the array of its values on the two vectors, and the four arrays are
 $$
 [P]_{S_+}=\begin{pmatrix}\tfrac12&0\\0&0\end{pmatrix},\qquad
 [N]_{S_+}=\begin{pmatrix}0&0\\0&0\end{pmatrix},\qquad
@@ -235,7 +235,7 @@ $$
 $$
 They are computed from the four words on the two vectors, or equivalently as the top-left blocks of the four Gram matrices of the $4\times4$ article.
 
-**Three of the four degenerate on the plane.** The plain form vanishes on $\vec\Upsilon_+$, the quaternionic form vanishes on both vectors, and the Krein form vanishes on $\tilde\Pi_+$. The reason is the coordinates of the two frame vectors: $\tilde\Pi_+$ has $Q_t=\tfrac12$ and $Q_z=\tfrac i2$, and $\vec\Upsilon_+$ has $Q_x=\tfrac i2$ and $Q_y=\tfrac12$. Then $P(\vec\Upsilon_+)=0-(\tfrac i2)^2-(\tfrac12)^2=0$, while $N(\tilde\Pi_+)=\tfrac14+(\tfrac i2)^2=0$ and $N(\vec\Upsilon_+)=(\tfrac i2)^2+(\tfrac12)^2=0$. Both frame vectors are therefore null for the quaternionic form, the first through the scalar part and the second through the vector part, and $\mathrm{Kr}(\tilde\Pi_+)=\tfrac14-\tfrac14=0$ with $\mathrm{Kr}(\vec\Upsilon_+)=-\tfrac14-\tfrac14=-\tfrac12$.
+**Three of the four degenerate on the plane.** The plain form vanishes on $\vec\Pi_{\mathrm{nil},+}$, the quaternionic form vanishes on both vectors, and the Krein form vanishes on $\tilde\Pi_{\mathrm{id},+}$. The reason is the coordinates of the two frame vectors: $\tilde\Pi_{\mathrm{id},+}$ has $Q_t=\tfrac12$ and $Q_z=\tfrac i2$, and $\vec\Pi_{\mathrm{nil},+}$ has $Q_x=\tfrac i2$ and $Q_y=\tfrac12$. Then $P(\vec\Pi_{\mathrm{nil},+})=0-(\tfrac i2)^2-(\tfrac12)^2=0$, while $N(\tilde\Pi_{\mathrm{id},+})=\tfrac14+(\tfrac i2)^2=0$ and $N(\vec\Pi_{\mathrm{nil},+})=(\tfrac i2)^2+(\tfrac12)^2=0$. Both frame vectors are therefore null for the quaternionic form, the first through the scalar part and the second through the vector part, and $\mathrm{Kr}(\tilde\Pi_{\mathrm{id},+})=\tfrac14-\tfrac14=0$ with $\mathrm{Kr}(\vec\Pi_{\mathrm{nil},+})=-\tfrac14-\tfrac14=-\tfrac12$.
 
 **What that means.** The plane $S_+$ carries one non-degenerate form, the Hermitian one, and it carries it as the scalar $\tfrac12$ times the identity. The other three are read on the plane as trace words of block products, not as Gram matrices of a form on the plane. This is the sharp form of the statement that the block is the compression of the action and not a representation of the forms: a form on the algebra needs two elements, and one plane holds one of the two, so three of the four restrictions degenerate.
 
@@ -426,7 +426,7 @@ The plane carries one non-degenerate form and three degenerate restrictions: $[H
 
 | Symbol | Meaning |
 |---|---|
-| $S_+$ | the left ideal $\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+$, the plane of the block |
+| $S_+$ | the left ideal $\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},+}$, the plane of the block |
 | $A_a$ | $\mathsf M_2(\tilde Q_a)$, the block of $\tilde Q_a$, $a=1,2$ |
 | $A_a^{\natural}$ | $\sigma_2A_a^{\mathsf T}\sigma_2=\operatorname{adj}A_a$, the quaternion conjugate |
 | $A_a^{c}$ | $\sigma_2\overline{A_a}\sigma_2$, the coefficient conjugate |
@@ -440,7 +440,7 @@ The plane carries one non-degenerate form and three degenerate restrictions: $[H
 | $\tilde Q_1\bullet_*\tilde Q_2$, $\tilde Q_1\wedge_*\tilde Q_2$ | the plain sesquilinear pair |
 | $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | the quaternionic sesquilinear pair |
 | $P$, $N$, $H$, $\mathrm{Kr}$ | the plain, quaternionic, Hermitian and Krein forms and norms |
-| $[\,\cdot\,]_{S_+}$ | the Gram matrix of a form in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$ |
+| $[\,\cdot\,]_{S_+}$ | the Gram matrix of a form in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ |
 
 ## Further Reading
 

@@ -4,7 +4,7 @@
 
 **The question.** The algebra $M_2(\mathbb{C})$ is four complex dimensional. Which subspaces of it carry which spins, under which action, and how does each carrier close into a subspace of the algebra?
 
-**Why it is the same statement.** This is the in-depth matrix reading of [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html). The source's three carriers are the fixed line $\mathbb{R}e_t$, the spinor plane $\Sigma=\mathbb{C}\tilde\Pi_+$ and the vector part $\mathfrak{k}$; under $A=\mathsf M_2(\tilde Q)$ they become
+**Why it is the same statement.** This is the in-depth matrix reading of [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html). The source's three carriers are the fixed line $\mathbb{R}e_t$, the spinor plane $\Sigma=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ and the vector part $\mathfrak{k}$; under $A=\mathsf M_2(\tilde Q)$ they become
 $$
 \mathbb{R}\mathrm I_2,\qquad \mathbb{C}P\ (P\ \text{a rank-one projection}),\qquad \mathfrak{su}(2)=\operatorname{span}_\mathbb{R}\{-i\sigma_k\},
 $$

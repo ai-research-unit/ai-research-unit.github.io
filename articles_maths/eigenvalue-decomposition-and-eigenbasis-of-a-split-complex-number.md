@@ -750,7 +750,7 @@ The Peirce decomposition relative to $\Pi_+$ has corners $\mathbb{C}_{\mathrm{sp
 
 ### Comparison with the Neighbouring Cases
 
-The table compares the decomposition across the three algebras; in the biquaternion column, the distinct case is $Q_x^2+Q_y^2+Q_z^2\neq0$, $\vec{Ζ}=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$, and $\vec\Upsilon_\pm$ are the two nilpotents of the eigenbasis, one in each mixed corner.
+The table compares the decomposition across the three algebras; in the biquaternion column, the distinct case is $Q_x^2+Q_y^2+Q_z^2\neq0$, $\vec{Ζ}=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$, and $\vec\Pi_{\mathrm{nil},\pm}$ are the two nilpotents of the eigenbasis, one in each mixed corner.
 
 | Feature | Split-complex | Reduced biquaternion | Biquaternion |
 |---|---|---|---|
@@ -758,14 +758,14 @@ The table compares the decomposition across the three algebras; in the biquatern
 | Element | $Q=q+jq'$ | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | $\tilde Q=Q_te_t+\vec Q$ |
 | Eigenvalues | $\lambda_\pm=q\pm q'$ | $\lambda_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ | $\lambda_\pm=Q_t\pm i\sqrt{Q_x^2+Q_y^2+Q_z^2}$ |
 | Distinctness | $q'\neq0$ | $Q_{\blacktriangledown}\neq0$ | $Q_x^2+Q_y^2+Q_z^2\neq0$ |
-| Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$ | $\Pi_\pm=\tfrac12(1\pm j)$ | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ |
+| Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$ | $\Pi_\pm=\tfrac12(1\pm j)$ | $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\vec{Ζ})$ |
 | Eigenprojections depend on the element? | no | no | yes |
 | Eigenprojections central? | yes | yes | no |
-| Peirce decomposition | $\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ | $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ | $\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-$ plus two mixed square-zero lines |
-| Eigenbasis | $(\Pi_+,\Pi_-)$; eigenvalues $\lambda_+,\lambda_-$ | $(\Pi_+,\Pi_-)$; eigenvalues $\lambda_+,\lambda_-$ | $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$; eigenvalues $\lambda_+,\lambda_+,\lambda_-,\lambda_-$ |
+| Peirce decomposition | $\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ | $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ | $\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-}$ plus two mixed square-zero lines |
+| Eigenbasis | $(\Pi_+,\Pi_-)$; eigenvalues $\lambda_+,\lambda_-$ | $(\Pi_+,\Pi_-)$; eigenvalues $\lambda_+,\lambda_-$ | $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$; eigenvalues $\lambda_+,\lambda_+,\lambda_-,\lambda_-$ |
 | Coordinates of a general element in the eigenbasis | $(a_1,a_2)$ | $(A_1,A_2)$ | $(a_{11},a_{12},a_{21},a_{22})$ |
-| Nilpotents in the eigenbasis | none | none | $\vec\Upsilon_\pm$ in the two mixed corners |
-| Spinor spaces | $S_\pm=\mathbb{R}\Pi_\pm$, real lines | $S_\pm=\mathbb{C}\Pi_\pm$, complex lines | $S_\pm=\mathbb{B}\tilde\Pi_\pm\cong\mathbb{C}^2$, complex planes |
+| Nilpotents in the eigenbasis | none | none | $\vec\Pi_{\mathrm{nil},\pm}$ in the two mixed corners |
+| Spinor spaces | $S_\pm=\mathbb{R}\Pi_\pm$, real lines | $S_\pm=\mathbb{C}\Pi_\pm$, complex lines | $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}\cong\mathbb{C}^2$, complex planes |
 | Spinor coordinates | one real coefficient per Peirce copy | one complex coefficient per Peirce copy | two complex coefficients per Peirce copy |
 | Action of $Q$ on a spinor | scalar: $\lambda_+$ on $S_+$, $\lambda_-$ on $S_-$ | scalar: $\lambda_+$ on $S_+$, $\lambda_-$ on $S_-$ | $\lambda_+$ on the first coordinate, $\lambda_-$ on the second |
 | Group of invertibles | $\cong\mathbb{R}^\times\times\mathbb{R}^\times$ | $\cong\mathbb{C}^\times\times\mathbb{C}^\times$ | $\mathbb{B}^\times$; eigenvalue map surjective, not injective, not a homomorphism |

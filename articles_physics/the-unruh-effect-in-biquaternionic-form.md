@@ -320,20 +320,20 @@ $$
 
 with the boost factor equal to the element itself. The rapidity is twice the Hamilton angle of that factor, and the complete polar decomposition has no other content. The horizon is not a value of this word; it is the boundary of the chart in which the word is written.
 
-**The scale collapse.** Write the rotor on the two idempotents of its axis, $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_x)$:
+**The scale collapse.** Write the rotor on the two idempotents of its axis, $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_x)$:
 
 $$
-\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=e^{\theta_{\mathrm{rpd}}/2}\,\tilde\Pi_+ + e^{-\theta_{\mathrm{rpd}}/2}\,\tilde\Pi_- .
+\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=e^{\theta_{\mathrm{rpd}}/2}\,\tilde\Pi_{\mathrm{id},+} + e^{-\theta_{\mathrm{rpd}}/2}\,\tilde\Pi_{\mathrm{id},-} .
 $$
 
 At finite $\theta_{\mathrm{rpd}}$ both terms are nonzero. As $\theta_{\mathrm{rpd}}\to\infty$ the second vanishes and the first diverges, so the rotor has no limit in the algebra. The **renormalised** rotor does:
 
 $$
-e^{-\theta_{\mathrm{rpd}}/2}\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})\longrightarrow\tilde\Pi_+,
+e^{-\theta_{\mathrm{rpd}}/2}\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})\longrightarrow\tilde\Pi_{\mathrm{id},+},
 \qquad \theta_{\mathrm{rpd}}\to\infty,
 $$
 
-with the error $e^{-\theta_{\mathrm{rpd}}}/2$ on each coefficient. The limit is a Hermitian idempotent and therefore a null element, $\langle\tilde\Pi_+\rangle_{\natural}=0$. This is the boundary value computed in *The Massless Limit as a Boundary Value of the Polar Word*, §*The Limit at Infinite Rapidity*: the scale $\varrho=e^{-\theta_{\mathrm{rpd}}/2}$ collapses, the rapidity diverges, and the direction $e_t+i\vec e_x$ survives.
+with the error $e^{-\theta_{\mathrm{rpd}}}/2$ on each coefficient. The limit is a Hermitian idempotent and therefore a null element, $\langle\tilde\Pi_{\mathrm{id},+}\rangle_{\natural}=0$. This is the boundary value computed in *The Massless Limit as a Boundary Value of the Polar Word*, §*The Limit at Infinite Rapidity*: the scale $\varrho=e^{-\theta_{\mathrm{rpd}}/2}$ collapses, the rapidity diverges, and the direction $e_t+i\vec e_x$ survives.
 
 **The rate.** The rapidity is not a free parameter along the orbit; it is the Rindler time. On the orbit $\rho=\text{const}$ the proper time is $\tau=\rho\eta/c$, and a boost by $\theta_{\mathrm{rpd}}$ advances $\eta$ by $\theta_{\mathrm{rpd}}$, so
 
@@ -345,7 +345,7 @@ the proper acceleration. This is the statement of the preceding section read on 
 
 **The reading.** The horizon is the boundary of the polar chart, not a point of the algebra. The boost is invertible at every finite rapidity; the limit that reaches the horizon is a null idempotent, and the physical frame there is lightlike. The word supplies three things and no more: the two-term splitting that makes the collapse visible, the identification of the rapidity rate with the proper acceleration, and the period $2\pi$ of the imaginary angle that fixes the temperature. It does not supply the horizon geometry, the two-point function, or the thermal interpretation; those are the preceding sections' inputs.
 
-**The boundary.** Do not read the limit as a Lorentz transformation. $\tilde\Pi_+$ is not invertible and does not act as a frame change; it is the boundary value of a family of frames none of which is lightlike. The divergence is in the chart, not in the algebra: every finite-rapidity rotor is a regular Hermitian unit. This is the distinction the massless-limit article draws between a value of the word and a boundary value of its family.
+**The boundary.** Do not read the limit as a Lorentz transformation. $\tilde\Pi_{\mathrm{id},+}$ is not invertible and does not act as a frame change; it is the boundary value of a family of frames none of which is lightlike. The divergence is in the chart, not in the algebra: every finite-rapidity rotor is a regular Hermitian unit. This is the distinction the massless-limit article draws between a value of the word and a boundary value of its family.
 
 ## What the Biquaternion Framework Adds, and What It Transcribes
 
@@ -438,7 +438,7 @@ The framework supplies the algebraic home: the horizon as the zero-divisor cone,
 | $\zeta=r_x\partial/\partial r'_t+r'_t\partial/\partial r_x$ | Boost Killing vector, $\zeta=\partial/\partial\eta$ |
 | $\xi=a\zeta$ | Redshift-normalized boost; $\kappa=a$ its surface gravity |
 | $\kappa$ | Surface gravity of the boost horizon |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_x)$ | Idempotents of the boost axis; the horizon limit of the renormalised rotor is $\tilde\Pi_+$ |
+| $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_x)$ | Idempotents of the boost axis; the horizon limit of the renormalised rotor is $\tilde\Pi_{\mathrm{id},+}$ |
 | $d\theta_{\mathrm{rpd}}/d\tau=a$ | Rapidity rate along the orbit, with $c$ carried; the redshifted rate is $\kappa$ |
 | $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ | Boost generator (Hermitian) |
 | $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec e_x$ | Boost rotor (Hermitian, unit norm) |

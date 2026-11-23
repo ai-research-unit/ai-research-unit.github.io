@@ -6,11 +6,11 @@ A quantum system whose Hamiltonian is varied slowly around a closed loop in a pa
 
 The phase is computed by two routes. The first integrates the **Berry connection** $\mathcal{A}$ — a $\mathrm{U}(1)$ connection on the parameter space — around the loop; the second integrates the **Berry curvature** $\mathcal{F} = d\mathcal{A}$ over a surface that the loop bounds. Both routes are used below and checked against one another on an explicit example, because their agreement is the content of the statement that the phase is geometric.
 
-This article carries that construction into the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles, and asks what the algebra contributes. The read-list notation is inherited unchanged: the algebra $\mathbb{B}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the scalar imaginary $i$; the fixed-point subspaces $\mathbb{B}_{\Psi}$ (Hermitian, the informational sector), $\mathbb{B}_{\Phi}$ (anti-Hermitian, the material sector), $\mathbb{B}_{H}$ (real quaternions), and $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the centre); the Hermitian observable $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$; the idempotent $\tilde\Pi_{1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$; the spinor $\tilde{Ξ}$ in a minimal left ideal $\mathbb{B}\tilde\Pi$ of the state module; and the scalar part $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ of the Hermitian pairing.
+This article carries that construction into the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles, and asks what the algebra contributes. The read-list notation is inherited unchanged: the algebra $\mathbb{B}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the scalar imaginary $i$; the fixed-point subspaces $\mathbb{B}_{\Psi}$ (Hermitian, the informational sector), $\mathbb{B}_{\Phi}$ (anti-Hermitian, the material sector), $\mathbb{B}_{H}$ (real quaternions), and $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the centre); the Hermitian observable $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$; the idempotent $\tilde\Pi_{\mathrm{id},1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$; the spinor $\tilde{Ξ}$ in a minimal left ideal $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ of the state module; and the scalar part $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ of the Hermitian pairing.
 
 The article's findings are stated here in advance, so that the reader can hold them against the text.
 
-1. **The Berry connection is not visible in the state of $\mathbb{B}_{\Psi}$.** The instantaneous eigenstate of a Hermitian Hamiltonian is an idempotent $\tilde\Pi_{1,2}(\vec u_\Psi)$, but $2\,\mathrm{Sc}(\tilde\Pi\,\partial/\partial R_\mu\tilde\Pi) = 0$ identically, so no Berry connection can be built from the idempotent alone. The connection lives on the **spinor** $\tilde{Ξ}$ of the state module, and its definition uses the same Hermitian form, read through the scalar part, that gives the Born rule. This is the framework's sharpest statement about the Berry phase: the phase is carried by the spinor, which the Bloch-ball state discards.
+1. **The Berry connection is not visible in the state of $\mathbb{B}_{\Psi}$.** The instantaneous eigenstate of a Hermitian Hamiltonian is an idempotent $\tilde\Pi_{\mathrm{id},1,2}(\vec u_\Psi)$, but $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\,\partial/\partial R_\mu\tilde\Pi_{\mathrm{id}}) = 0$ identically, so no Berry connection can be built from the idempotent alone. The connection lives on the **spinor** $\tilde{Ξ}$ of the state module, and its definition uses the same Hermitian form, read through the scalar part, that gives the Born rule. This is the framework's sharpest statement about the Berry phase: the phase is carried by the spinor, which the Bloch-ball state discards.
 2. **The connection is a $\mathrm{U}(1)$ gauge connection on parameter space**, transforming as $\mathcal{A} \mapsto \mathcal{A} - d\alpha$ under a rephasing of the eigenstate, with curvature $\mathcal{F} = d\mathcal{A}$. Its structure group is the $*$-unitary part of the centre $\mathbb{B}_{C}$ — the same $\mathrm{U}(1)$ that *The Gauge Principle in Biquaternionic Form* attaches to the algebra.
 3. **The two routes agree** on spin-1/2 in a slowly rotating field: the line integral of the connection and the surface integral of the curvature both give $-\theta_{\mathrm{sol}}/2$, where $\theta_{\mathrm{sol}}$ is the solid angle subtended by the loop, for every loop in a one-parameter family.
 4. **The curvature is quantised only on a closed surface.** The cap flux $-\pi(1-\cos\theta_0)$ is continuous in the loop; only the integral over the closed Bloch sphere is quantised, giving the Chern number $\mp 1$ for the two bands, whose sum is zero. The closed surface must avoid the degeneracy point, which is where the gap closes.
@@ -61,16 +61,16 @@ $$
 which under the isomorphism $e_t \mapsto I$, $\vec e_\mu \mapsto -i_{\mathrm{mat}}\sigma_\mu$ (where $i_{\mathrm{mat}}$ is the matrix imaginary, the image of the scalar imaginary $i$) maps to the standard spin Hamiltonian $\tfrac12\vec R\cdot\boldsymbol{\sigma}$. Its spectral decomposition is the one inherited from the parent article,
 
 $$
-\tilde H_\Psi = \tfrac{R}{2}\,\tilde\Pi_1(\vec u_R) - \tfrac{R}{2}\,\tilde\Pi_2(\vec u_R) ,
+\tilde H_\Psi = \tfrac{R}{2}\,\tilde\Pi_{\mathrm{id},1}(\vec u_R) - \tfrac{R}{2}\,\tilde\Pi_{\mathrm{id},2}(\vec u_R) ,
 \qquad
-\tilde\Pi_{1,2}(\vec u_R) = \tfrac12\bigl(e_t \pm i\vec u_R\bigr) ,
+\tilde\Pi_{\mathrm{id},1,2}(\vec u_R) = \tfrac12\bigl(e_t \pm i\vec u_R\bigr) ,
 \qquad
 \vec u_R = \vec R/R ,
 $$
 
 with $R = |\vec R|$. The eigenvalues are $\pm R/2$, so the **gap is $\mathcal{G}_{\mathrm{gap}} = R$**, and it closes exactly at $\vec R = 0$. Both the spectral decomposition and the eigenvalue formula are verified below by direct biquaternion multiplication.
 
-**Parameter space.** The eigenstate $\tilde\Pi_{1,2}(\vec u_R)$ depends on $\vec R$ only through the unit direction $\vec u_R$, and on the scalar part $h_t$ not at all (the parent article shows that a central phase cancels from the state). The magnitude $R$ sets the gap but not the eigenstate. The parameter space that matters is therefore the unit sphere
+**Parameter space.** The eigenstate $\tilde\Pi_{\mathrm{id},1,2}(\vec u_R)$ depends on $\vec R$ only through the unit direction $\vec u_R$, and on the scalar part $h_t$ not at all (the parent article shows that a central phase cancels from the state). The magnitude $R$ sets the gap but not the eigenstate. The parameter space that matters is therefore the unit sphere
 
 $$
 \mathcal{P} = \{\vec u_R \in \mathbb{R}^3 : |\vec u_R| = 1\} = S^2 ,
@@ -80,26 +80,26 @@ which is exactly the **Bloch sphere** of pure states of $\mathbb{B}_{\Psi}$. Thi
 
 ## The Eigenstate Is a Spinor, Not an Idempotent
 
-The instantaneous eigenstate of $\tilde H_\Psi = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{1,2}(\vec u_R)$. It is natural to try to build the Berry connection out of it. One cannot, and the reason is worth stating as a lemma, because it is the first place the framework's two notions of "state" separate.
+The instantaneous eigenstate of $\tilde H_\Psi = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{\mathrm{id},1,2}(\vec u_R)$. It is natural to try to build the Berry connection out of it. One cannot, and the reason is worth stating as a lemma, because it is the first place the framework's two notions of "state" separate.
 
-**Lemma (the idempotent is blind to the connection).** Let $\tilde\Pi(\lambda)$ be a smooth family of idempotents with $2\,\mathrm{Sc}(\tilde\Pi) = 1$. Then
+**Lemma (the idempotent is blind to the connection).** Let $\tilde\Pi_{\mathrm{id}}(\lambda)$ be a smooth family of idempotents with $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}) = 1$. Then
 
 $$
-2\,\mathrm{Sc}\!\left(\tilde\Pi\,\partial/\partial R_\mu\tilde\Pi\right) = 0
+2\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{id}}\,\partial/\partial R_\mu\tilde\Pi_{\mathrm{id}}\right) = 0
 \qquad\text{for every parameter } \lambda_\mu .
 $$
 
-**Proof.** Since $\tilde\Pi^2 = \tilde\Pi$, differentiating gives $\partial/\partial R_\mu\tilde\Pi = (\partial/\partial R_\mu\tilde\Pi)\tilde\Pi + \tilde\Pi(\partial/\partial R_\mu\tilde\Pi)$. Taking the scalar part and using cyclicity of $\mathrm{Sc}$ on $\mathbb{B}$,
+**Proof.** Since $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$, differentiating gives $\partial/\partial R_\mu\tilde\Pi_{\mathrm{id}} = (\partial/\partial R_\mu\tilde\Pi_{\mathrm{id}})\tilde\Pi_{\mathrm{id}} + \tilde\Pi_{\mathrm{id}}(\partial/\partial R_\mu\tilde\Pi_{\mathrm{id}})$. Taking the scalar part and using cyclicity of $\mathrm{Sc}$ on $\mathbb{B}$,
 
 $$
-2\,\mathrm{Sc}(\partial/\partial R_\mu\tilde\Pi) = 4\,\mathrm{Sc}\!\left(\tilde\Pi\,\partial/\partial R_\mu\tilde\Pi\right).
+2\,\mathrm{Sc}(\partial/\partial R_\mu\tilde\Pi_{\mathrm{id}}) = 4\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{id}}\,\partial/\partial R_\mu\tilde\Pi_{\mathrm{id}}\right).
 $$
 
-But $2\,\mathrm{Sc}(\tilde\Pi) = 1$ is constant, so $2\,\mathrm{Sc}(\partial/\partial R_\mu\tilde\Pi) = 0$, and hence $2\,\mathrm{Sc}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$.
+But $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}) = 1$ is constant, so $2\,\mathrm{Sc}(\partial/\partial R_\mu\tilde\Pi_{\mathrm{id}}) = 0$, and hence $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\partial/\partial R_\mu\tilde\Pi_{\mathrm{id}}) = 0$.
 
-The lemma is not special to the qubit: it is the algebraic statement that a rank-one Hermitian idempotent carries no phase information. For the idempotent $\tilde\Pi_1(\vec u_R) = \tfrac12(e_t + i\vec u_R)$ it can also be checked directly, since $\partial/\partial R_\mu\tilde\Pi_1 = \tfrac12 i\,\partial/\partial R_\mu\vec u_R$ and $\mathrm{Sc}\bigl((e_t + i\vec u_R)\,\partial/\partial R_\mu\vec u_R\bigr) = \mathrm{Sc}(\partial/\partial R_\mu\vec u_R) + i\,\mathrm{Sc}(\vec u_R\,\partial/\partial R_\mu\vec u_R) = 0$, using $\vec u_R\cdot\partial/\partial R_\mu\vec u_R = 0$ from $|\vec u_R| = 1$. Both the general proof and the direct computation return zero.
+The lemma is not special to the qubit: it is the algebraic statement that a rank-one Hermitian idempotent carries no phase information. For the idempotent $\tilde\Pi_{\mathrm{id},1}(\vec u_R) = \tfrac12(e_t + i\vec u_R)$ it can also be checked directly, since $\partial/\partial R_\mu\tilde\Pi_{\mathrm{id},1} = \tfrac12 i\,\partial/\partial R_\mu\vec u_R$ and $\mathrm{Sc}\bigl((e_t + i\vec u_R)\,\partial/\partial R_\mu\vec u_R\bigr) = \mathrm{Sc}(\partial/\partial R_\mu\vec u_R) + i\,\mathrm{Sc}(\vec u_R\,\partial/\partial R_\mu\vec u_R) = 0$, using $\vec u_R\cdot\partial/\partial R_\mu\vec u_R = 0$ from $|\vec u_R| = 1$. Both the general proof and the direct computation return zero.
 
-The carrier of the Berry connection is therefore the **spinor** of the state module, not the density matrix. In the minimal left ideal $\mathbb{B}\tilde\Pi_3$ generated by $\tilde\Pi_3 = \tfrac12(e_t + i\vec e_z)$, the spin-up eigenstate of $\tfrac12 i\vec R$ is
+The carrier of the Berry connection is therefore the **spinor** of the state module, not the density matrix. In the minimal left ideal $\mathbb{B}\tilde\Pi_{\mathrm{id},3}$ generated by $\tilde\Pi_{\mathrm{id},3} = \tfrac12(e_t + i\vec e_z)$, the spin-up eigenstate of $\tfrac12 i\vec R$ is
 
 $$
 \tilde{Ξ}_{+}(\theta,\theta_{\mathrm{azm}}) = \cos\tfrac{\theta}{2}\,E_{11} + \exp(i\theta_{\mathrm{azm}})\sin\tfrac{\theta}{2}\,E_{21}
@@ -112,14 +112,14 @@ where $\vec u_R = (\sin\theta\cos\theta_{\mathrm{azm}}, \sin\theta\sin\theta_{\m
 **The bilinear relation.** The two notions of state are related by
 
 $$
-\tilde\Pi_1(\vec u_R) = \frac{\tilde{Ξ}_{+}(\theta,\theta_{\mathrm{azm}})\,\tilde{Ξ}_{+}(\theta,\theta_{\mathrm{azm}})^\dagger}{2\,\mathrm{Sc}\!\left(\tilde{Ξ}_{+}^{\dagger}\tilde{Ξ}_{+}\right)} ,
+\tilde\Pi_{\mathrm{id},1}(\vec u_R) = \frac{\tilde{Ξ}_{+}(\theta,\theta_{\mathrm{azm}})\,\tilde{Ξ}_{+}(\theta,\theta_{\mathrm{azm}})^\dagger}{2\,\mathrm{Sc}\!\left(\tilde{Ξ}_{+}^{\dagger}\tilde{Ξ}_{+}\right)} ,
 $$
 
 which is the parent article's $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}\tilde{Ξ}^{\dagger}/2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$. The density matrix forgets the phase of $\tilde{Ξ}_{+}$; the lemma says precisely that this forgotten phase is what the Berry connection measures. So the Berry phase is a property of the **state module** of the framework, not of the Bloch ball.
 
 ## The Berry Connection in Biquaternion Form
 
-With the spinor in hand, the connection is defined by the plain form of the framework, read as the Hermitian pairing. For a normalized spinor $\tilde{Ξ}(R) \in \mathbb{B}\tilde\Pi$ depending smoothly on the parameters,
+With the spinor in hand, the connection is defined by the plain form of the framework, read as the Hermitian pairing. For a normalized spinor $\tilde{Ξ}(R) \in \mathbb{B}\tilde\Pi_{\mathrm{id}}$ depending smoothly on the parameters,
 
 $$
 \boxed{\;
@@ -216,7 +216,7 @@ $$
 
 The left-hand route integrates the connection; the right-hand route integrates the curvature. Both are used on the example below, and their agreement is what the phrase "the phase is the flux of the curvature" means. The smoothness qualification is not cosmetic: on the sphere the connection has a Dirac-string singularity in any single coordinate patch, and the surface must be chosen in a patch where the connection is regular. The next section exhibits this explicitly, because it is also the mechanism by which the $2\pi$ ambiguity of the previous section appears.
 
-It is worth recording that the curvature is a **local** object while the connection is not. The lemma of the previous section says that the curvature cannot be written as $\mathrm{Sc}(\tilde\Pi\,d\tilde\Pi)$ either — like the connection, it requires the spinor. What the idempotent loses is the connection; what it never had is the phase.
+It is worth recording that the curvature is a **local** object while the connection is not. The lemma of the previous section says that the curvature cannot be written as $\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\,d\tilde\Pi_{\mathrm{id}})$ either — like the connection, it requires the spinor. What the idempotent loses is the connection; what it never had is the phase.
 
 ## The Two-Level Example: Spin-1/2 in a Slowly Rotating Field
 
@@ -292,7 +292,7 @@ $$
 
 giving $\gamma_- = +\theta_{\mathrm{sol}}/2$. In the gauge adapted to the south pole the same band has $\mathcal{A}_{\theta_{\mathrm{azm}}}^{(-)} = -\cos^2(\theta/2)$, which differs from the first by exactly $1$. Around the equator loop the two expressions give phases differing by $2\pi$: $+\pi$ against $-\pi$. Both are legitimate local descriptions of the same band, they differ by the non-single-valued phase $\exp(-i\theta_{\mathrm{azm}})$ on the overlap, and they define the same curvature, $+\tfrac12\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$. The physical content is the pair of statements $\gamma_- - \gamma_+ = \theta_{\mathrm{sol}}$ and $\gamma_\pm$ defined modulo $2\pi$; stating either phase as a single absolute real number requires choosing a patch, and the choice is not physical. This is the first trap of the introduction, made concrete.
 
-**What was checked, and on what case.** The spinor normalization $2\,\mathrm{Sc}(\tilde{Ξ}_{+}^{\dagger}\tilde{Ξ}_{+}) = 1$; the reproduction $\tilde{Ξ}_{+}\tilde{Ξ}_{+}^{\dagger} = \tilde\Pi_1(\vec u_R)$ of the idempotent; the eigenvalue equation $\tilde H_\Psi\tilde{Ξ}_{+} = \tfrac{R}{2}\tilde{Ξ}_{+}$; the spectral decomposition $\tilde H_\Psi = \tfrac{R}{2}\tilde\Pi_1 - \tfrac{R}{2}\tilde\Pi_2$; the connection components above; the curvature; the two routes and their agreement on the five loops; the speed independence on a non-uniform reparametrization; and the $2\pi$ shift between the two patches of the spin-down band. All were recomputed in exact arithmetic from the quaternion multiplication rules, and the two-route agreement was in addition recomputed independently by numerical quadrature. No formula in this article rests on a single case chosen to fit it.
+**What was checked, and on what case.** The spinor normalization $2\,\mathrm{Sc}(\tilde{Ξ}_{+}^{\dagger}\tilde{Ξ}_{+}) = 1$; the reproduction $\tilde{Ξ}_{+}\tilde{Ξ}_{+}^{\dagger} = \tilde\Pi_{\mathrm{id},1}(\vec u_R)$ of the idempotent; the eigenvalue equation $\tilde H_\Psi\tilde{Ξ}_{+} = \tfrac{R}{2}\tilde{Ξ}_{+}$; the spectral decomposition $\tilde H_\Psi = \tfrac{R}{2}\tilde\Pi_{\mathrm{id},1} - \tfrac{R}{2}\tilde\Pi_{\mathrm{id},2}$; the connection components above; the curvature; the two routes and their agreement on the five loops; the speed independence on a non-uniform reparametrization; and the $2\pi$ shift between the two patches of the spin-down band. All were recomputed in exact arithmetic from the quaternion multiplication rules, and the two-route agreement was in addition recomputed independently by numerical quadrature. No formula in this article rests on a single case chosen to fit it.
 
 ## Quantisation on a Closed Surface
 
@@ -374,7 +374,7 @@ So the eigenbundle of a two-band Hamiltonian over the Bloch sphere exists becaus
 
 ## Degenerate Levels and the Abelian Case
 
-Every phase computed so far is a single real number modulo $2\pi$. That is the **abelian** case, and it holds because the traversed level is non-degenerate: the two eigenvalues $\lambda_\pm = h_t \pm |\vec h_\Psi|$ of the Hamiltonian are distinct, the eigen-idempotents $\tilde\Pi_{1,2}(\vec u_\Psi)$ are rank one, and the adiabatic evolution acquires one phase, not a matrix of phases. The general adiabatic theorem for a degenerate level replaces the connection by a matrix-valued one-form and the phase by a $*$-unitary matrix on the degenerate subspace; that is the non-abelian, or Wilczek–Zee, case, and it is a genuinely different object.
+Every phase computed so far is a single real number modulo $2\pi$. That is the **abelian** case, and it holds because the traversed level is non-degenerate: the two eigenvalues $\lambda_\pm = h_t \pm |\vec h_\Psi|$ of the Hamiltonian are distinct, the eigen-idempotents $\tilde\Pi_{\mathrm{id},1,2}(\vec u_\Psi)$ are rank one, and the adiabatic evolution acquires one phase, not a matrix of phases. The general adiabatic theorem for a degenerate level replaces the connection by a matrix-valued one-form and the phase by a $*$-unitary matrix on the degenerate subspace; that is the non-abelian, or Wilczek–Zee, case, and it is a genuinely different object.
 
 **Which case is available here.** For a single-qubit Hamiltonian the degeneracy condition is $h_t + |\vec h_\Psi| = h_t - |\vec h_\Psi|$, i.e. $|\vec h_\Psi| = 0$, i.e. $\vec h_\Psi = 0$. So the only degenerate Hamiltonian in $\mathbb{B}_{\Psi}$ is a multiple of the identity, $\tilde H_\Psi = h_t e_t$, for which the two levels coincide and the eigen-idempotents are not defined at all. That is the same point at which the gap closes and the adiabatic theorem fails. There is therefore **no level of multiplicity greater than one** in a single-qubit framework: degeneracy and gap closing coincide, and the abelian case is the only case. The non-abelian Berry phase requires a level of dimension greater than one separated from the rest of the spectrum, which in this framework means at least three levels, hence at least $\mathbb{B}^{\otimes n}$ for $n \geq 2$. The parent article leaves the tensor product $\mathbb{B}^{\otimes_\mathbb{C} n} \cong M_{2^n}(\mathbb{C})$ as an open question, so the non-abelian case is out of reach of the present article and is recorded as a gap rather than approximated.
 
@@ -396,10 +396,10 @@ and under the isomorphism this is the standard expression $i\langle\tilde{Ξ}|\p
 
 What the framework does supply, beyond the rewriting, is a set of structural placements.
 
-- **The parameter space is the state space.** For the two-level Hamiltonian the effective parameter space is the Bloch sphere $S^2$, which is the manifold of idempotents $\tilde\Pi_1(\vec{u})$ of $\mathbb{B}_{\Psi}$ — the pure states of the informational sector. The Berry connection is thus a connection on a bundle over the space of pure states, and the Chern number is a property of that space's topology. This is a genuine placement: the framework names both the state space and the parameter space as the same canonical object.
-- **One pairing for the Born rule and the connection.** Both $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ and $\mathcal{A}_\mu$ are built from the Hermitian form of the state module, read through the scalar part; the framework makes it visible that the Born rule and the Berry connection are two interpretations of one bilinear form.
+- **The parameter space is the state space.** For the two-level Hamiltonian the effective parameter space is the Bloch sphere $S^2$, which is the manifold of idempotents $\tilde\Pi_{\mathrm{id},1}(\vec{u})$ of $\mathbb{B}_{\Psi}$ — the pure states of the informational sector. The Berry connection is thus a connection on a bundle over the space of pure states, and the Chern number is a property of that space's topology. This is a genuine placement: the framework names both the state space and the parameter space as the same canonical object.
+- **One pairing for the Born rule and the connection.** Both $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$ and $\mathcal{A}_\mu$ are built from the Hermitian form of the state module, read through the scalar part; the framework makes it visible that the Born rule and the Berry connection are two interpretations of one bilinear form.
 - **The structure group is already in the algebra.** The $\mathrm{U}(1)$ of the Berry phase is the $*$-unitary part of the centre $\mathbb{B}_{C}$ — the same group, in the same algebra, that the gauge-principle article attaches to electromagnetism. The framework does not have to be supplied with a phase group; it has one.
-- **The connection requires the spinor, not the density matrix.** The lemma $2\,\mathrm{Sc}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ is the cleanest form of the statement that the geometric phase is a property of the state vector's phase, not of the Bloch-ball point. The framework forces the distinction between the spinor and the idempotent that the algebraic formulation otherwise leaves implicit.
+- **The connection requires the spinor, not the density matrix.** The lemma $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\partial/\partial R_\mu\tilde\Pi_{\mathrm{id}}) = 0$ is the cleanest form of the statement that the geometric phase is a property of the state vector's phase, not of the Bloch-ball point. The framework forces the distinction between the spinor and the idempotent that the algebraic formulation otherwise leaves implicit.
 - **The same scalar imaginary.** The $i$ in $\mathcal{A} = i\langle\tilde{Ξ}|d\tilde{Ξ}\rangle$ is the central scalar imaginary that also appears in $i r'_t$, in the gauge phase $\exp(i\theta_{\mathrm{gau}})$, and as the complex structure of the state module. The gauge-principle article flagged the shared generator as possibly vacuous because the phase is central; the Berry connection adds a third appearance without resolving the question. It is recorded as an observation, not a result.
 - **The classical counterpart is the same holonomy.** Hannay's angle is the classical counterpart of the Berry phase, and *Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form* derives it on the coadjoint orbit of a classical spin, where the angle is the accumulated twist of the rotor about the direction and the loop is the cycle of the slowly varied parameters. The quantum statement here and the classical statement there are one geometric fact on two state spaces: the Bloch sphere of $\mathbb{B}_{\Psi}$ and the orbit of a pure quaternion. The factor $\tfrac12$ of the half-solid-angle rule appears in both, and for the same reason — the rotor covers the rotation twice.
 
@@ -431,7 +431,7 @@ is a **Lorentz invariant** — the argument of an invariant is invariant — and
 
 The Berry phase is the geometric phase acquired by an adiabatic eigenstate around a closed loop in parameter space. It is computed by two equivalent routes, the line integral of the **Berry connection** and the surface integral of the **Berry curvature**, and it is defined modulo $2\pi$ because a rephasing of the eigenstate is a gauge transformation.
 
-In the biquaternion framework the instantaneous eigenstate of $\tilde H_\Psi = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{1,2}(\vec u_R)$, but the idempotent is **blind** to the connection: $2\,\mathrm{Sc}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ identically. The connection is carried by the **spinor** $\tilde{Ξ}$ of the Peirce carrier $\mathbb{B}\tilde\Pi$, a minimal left ideal here, and is defined by the Hermitian form of the state module, read through the scalar part,
+In the biquaternion framework the instantaneous eigenstate of $\tilde H_\Psi = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{\mathrm{id},1,2}(\vec u_R)$, but the idempotent is **blind** to the connection: $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\partial/\partial R_\mu\tilde\Pi_{\mathrm{id}}) = 0$ identically. The connection is carried by the **spinor** $\tilde{Ξ}$ of the Peirce carrier $\mathbb{B}\tilde\Pi_{\mathrm{id}}$, a minimal left ideal here, and is defined by the Hermitian form of the state module, read through the scalar part,
 
 $$
 \mathcal{A}_\mu = i\,\frac{\mathrm{Sc}\!\left(\tilde{Ξ}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}\right)}{\mathrm{Sc}\!\left(\tilde{Ξ}^{\dagger}\tilde{Ξ}\right)} ,
@@ -459,9 +459,9 @@ The level is non-degenerate throughout, so the phase is abelian; the non-abelian
 | $\mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Hermitian (informational) and anti-Hermitian (material) sectors |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ | Hermitian Hamiltonian (observable) |
-| $\tilde\Pi_{1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$ | Idempotent (pure state / eigen-idempotent) |
+| $\tilde\Pi_{\mathrm{id},1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$ | Idempotent (pure state / eigen-idempotent) |
 | $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Scalar part of the Hermitian pairing (Born rule and the connection) |
-| $\mathbb{B}\tilde\Pi$ | Minimal left ideal; the state module of spinors $\tilde{Ξ}$ |
+| $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ | Minimal left ideal; the state module of spinors $\tilde{Ξ}$ |
 | $\tilde{Ξ}_{\pm}$ | Normalized instantaneous eigen-spinor |
 | $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}\tilde{Ξ}^{\dagger}/2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$ | Density matrix associated to a spinor |
 | $\vec R$, $R = \lvert\vec R\rvert$, $\vec u_R$ | Parameter vector, its magnitude, its direction; $\vec u_R \in S^2$ |

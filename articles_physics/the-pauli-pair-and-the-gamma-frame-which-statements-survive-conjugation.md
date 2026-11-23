@@ -37,11 +37,11 @@ the condition is $a_x^2+a_y^2+a_z^2=-1$, one complex equation in three unknowns:
 The standard root is $\vec\Xi=i\vec e_z$, with
 
 $$
-\tilde\Pi_\pm=\tfrac12\bigl(e_t\pm i\vec e_z\bigr),\qquad
-\vec\Upsilon_\pm=\tfrac12\bigl(i\vec e_x\pm\vec e_y\bigr),
+\tilde\Pi_{\mathrm{id},\pm}=\tfrac12\bigl(e_t\pm i\vec e_z\bigr),\qquad
+\vec\Pi_{\mathrm{nil},\pm}=\tfrac12\bigl(i\vec e_x\pm\vec e_y\bigr),
 $$
 
-and the order $\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$.
+and the order $\mathcal{P}=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$.
 
 In that frame the sixteen matrices are monomial, unitary, of determinant one, with entries in $\mathbb{Z}[i]$. The display is a tensor product,
 
@@ -119,7 +119,7 @@ $$
 One matrix carries the Peirce frame onto the axis-free one.
 
 $$
-C_{\Pi}=\bigl(\tilde\Pi_+\ \ \vec\Upsilon_+\ \ \vec\Upsilon_-\ \ \tilde\Pi_-\bigr)
+C_{\Pi}=\bigl(\tilde\Pi_{\mathrm{id},+}\ \ \vec\Pi_{\mathrm{nil},+}\ \ \vec\Pi_{\mathrm{nil},-}\ \ \tilde\Pi_{\mathrm{id},-}\bigr)
 =\frac12
 \begin{pmatrix}
 1&0&0&1\\
@@ -131,7 +131,7 @@ i&0&0&-i
 L_{\mathrm{pau}}(\tilde Q)=C_{\Pi}^{-1}L_{\mathrm{axf}}(\tilde Q)\,C_{\Pi},
 $$
 
-with $\det C_{\Pi}=-\tfrac14$ and $C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}$. The switch is two independent $2\times2$ Hadamard blocks and it mixes no direction: one block joins $\{e_t,\vec e_z\}$ to $\{\tilde\Pi_+,\tilde\Pi_-\}$, the other joins $\{\vec e_x,\vec e_y\}$ to $\{\vec\Upsilon_+,\vec\Upsilon_-\}$.
+with $\det C_{\Pi}=-\tfrac14$ and $C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}$. The switch is two independent $2\times2$ Hadamard blocks and it mixes no direction: one block joins $\{e_t,\vec e_z\}$ to $\{\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-}\}$, the other joins $\{\vec e_x,\vec e_y\}$ to $\{\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-}\}$.
 
 Every invariant survives the change. Products, anticommutators, traces, determinants, spectra, ranks and the eigenvalue count are the same on both sides, which is why the correspondence between two articles written in different displays is a sentence and not a computation.
 
@@ -227,7 +227,7 @@ $$
 J=i\vec e_x,\qquad J^{2}=e_t,\qquad \mathsf M_2(J)=\sigma_1,\qquad R_J(\tilde Q)=\tilde QJ ,
 $$
 
-and $R_J$ exchanges the two columns with $R_J^{2}=\mathrm I$. The coupling element has to be invertible, because the mass is a bijection between the copies: one coefficient in each direction. A nilpotent cannot serve. For $\vec\Upsilon_x$ the matrix is $E_{21}$, the right multiplication carries the first column into the second and annihilates the second, and the map has rank two and no inverse. That is a one-way copy flip, not a mass.
+and $R_J$ exchanges the two columns with $R_J^{2}=\mathrm I$. The coupling element has to be invertible, because the mass is a bijection between the copies: one coefficient in each direction. A nilpotent cannot serve. For $\vec\Pi_{\mathrm{nil},x}$ the matrix is $E_{21}$, the right multiplication carries the first column into the second and annihilates the second, and the map has rank two and no inverse. That is a one-way copy flip, not a mass.
 
 The boundary. The statement is structural: it says which kind of action can couple the two copies, and it says that the coupling element must be off the cone. It does not give the coupling a value, and it does not produce a mass spectrum. The magnitude of the mass is an input, and the algebra is scale-free.
 
@@ -345,8 +345,8 @@ The gamma section is a dictionary and not a derivation. The five operators are i
 | $\mathsf M_2(\tilde Q)$ | the compressed image in $M_2(\mathbb{C})$ |
 | $L(\tilde Q)$, $R(\tilde Q)$ | the left and right matrices in the Peirce frame, in $M_4(\mathbb{C})$ |
 | $\vec Z$, $\vec\Xi$ | a root of the unit, $\vec Z^2=e_t$; and the standard root $i\vec e_z$ |
-| $\tilde\Pi_\pm$, $\vec\Upsilon_\pm$ | the idempotents and the nilpotents of the root |
-| $\mathcal{P}$ | the Peirce order $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ |
+| $\tilde\Pi_{\mathrm{id},\pm}$, $\vec\Pi_{\mathrm{nil},\pm}$ | the idempotents and the nilpotents of the root |
+| $\mathcal{P}$ | the Peirce order $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ |
 | $\mathsf P$ | the swap matrix of the stitch, $\mathsf P^2=\mathrm I_4$ |
 | $\sigma_1,\sigma_2,\sigma_3$ | the Pauli matrices |
 | $\varepsilon=i\sigma_2$ | the conjugating matrix of the transpose at size two |

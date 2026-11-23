@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Temperature enters the informational sector as a parameter of a state, and the parameter has the dimensions of an inverse energy. In units with $c=1$ an inverse energy is a time, and in units with $\hbar=1$ it is also an inverse frequency. The article takes that dimensional statement seriously and shows that it is structural: $\beta$ is the circumference of a circle, and the circle is an orbit of the algebra's compact flow.
+Temperature enters the informational sector as a parameter of a state, and the parameter has the dimensions of an inverse energy. Multiplied by $\hbar$, an inverse energy is a time, which is the inverse frequency it is read as below. The article takes that dimensional statement seriously and shows that it is structural: $\beta$ is the circumference of a circle, and the circle is an orbit of the algebra's compact flow.
 
 Three exact statements carry the reading.
 
@@ -86,7 +86,7 @@ Where the circle is absent. For a boost the generator is a pure vector and the e
 
 ## Inverse Temperature Is an Inverse Time
 
-**The dimensional statement is the structural one.** $\beta$ has units of inverse energy; with $c=1$ that is a time, and with $\hbar=1$ it is an inverse frequency. The article's claim is that this is not a unit coincidence but the length of the orbit computed above: $\beta=\tau_{\mathrm{per}}/\hbar$ at the scale set by the gap. Temperature is a frequency, $k_BT=\hbar\omega$, and the thermal circle is the orbit whose period is that frequency's inverse.
+**The dimensional statement is the structural one.** $\beta$ has units of inverse energy, so $\beta\hbar$ is a time. The article's claim is that this is not a unit coincidence but the length of the orbit computed above: $\beta=\tau_{\mathrm{per}}/\hbar$ at the scale set by the gap. Temperature is a frequency, $k_BT=\hbar\omega$, and the thermal circle is the orbit whose period is that frequency's inverse.
 
 Two limits, and they are the two ends of the ball.
 
@@ -114,7 +114,7 @@ The thermal state is the congruence of the centre by $e^{-\beta\tilde H/2}$, so 
 | symbol | meaning |
 | --- | --- |
 | $\beta$
-| the inverse temperature; $\beta\hbar$ is the circumference, and $\beta$ is a length in units with $\hbar=1$ |
+| the inverse temperature; $\beta\hbar$ is the circumference |
 | $\tilde H$ | the Hermitian Hamiltonian of the informational sector |
 | $\lambda_1\ge\lambda_2$, $\omega=\lambda_1-\lambda_2$ | the two energies and their gap |
 | $Z=\operatorname{tr}e^{-\beta\tilde H}=2\cosh\frac{\beta\omega}{2}$ | the partition function |

@@ -34,7 +34,7 @@ $$
 On the quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ this is the quaternion Cauchy–Riemann operator of Fueter's theory; on the full algebra it acts coefficientwise, and on the idempotent decomposition it splits as
 
 $$
-\tilde\nabla_\Phi F_{\mathrm{fn}} = \left(\tilde\nabla_\Phi F_{\mathrm{fn},+}\right)\tilde\Pi_1 + \left(\tilde\nabla_\Phi F_{\mathrm{fn},-}\right)\tilde\Pi_2 ,
+\tilde\nabla_\Phi F_{\mathrm{fn}} = \left(\tilde\nabla_\Phi F_{\mathrm{fn},+}\right)\tilde\Pi_{\mathrm{id},1} + \left(\tilde\nabla_\Phi F_{\mathrm{fn},-}\right)\tilde\Pi_{\mathrm{id},2} ,
 $$
 
 where on the right $\tilde\nabla_\Phi$ is the quaternion operator acting on each idempotent component.
@@ -109,7 +109,7 @@ The converse fails: $Q_t$ is harmonic but $\tilde\nabla_\Phi Q_t = e_t \neq 0$. 
 
 In the complex theory the variable ranges over a field and every nonzero element is invertible; in the split biquaternion algebra this fails, and every failure of the complex analogy on the full algebra is traceable to the zero divisors.
 
-**The inverse is local.** The naive quotient $\tilde{Q}_1/\tilde{Q}_2 = \tilde{Q}_1\tilde{Q}_2^{\natural}\langle\tilde{Q}_2\rangle_{\natural}^{-1}$ requires $\langle\tilde{Q}_2\rangle_{\natural}$ to be an invertible element of $\mathbb{C}_{\mathrm{spl}}$, that is requires $\tilde{Q}_2$ to lie off the zero divisor locus $Z = \mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2$, the union of the two four-dimensional ideals. On $Z$ there is no inverse and no difference quotient, and since $Z$ has dimension four rather than being a hypersurface, the naive definition of differentiability with respect to the variable fails on a positive-dimensional set. This is the reason the standard definition of regularity uses four real variables rather than one algebra variable, exactly as in the biquaternion case.
+**The inverse is local.** The naive quotient $\tilde{Q}_1/\tilde{Q}_2 = \tilde{Q}_1\tilde{Q}_2^{\natural}\langle\tilde{Q}_2\rangle_{\natural}^{-1}$ requires $\langle\tilde{Q}_2\rangle_{\natural}$ to be an invertible element of $\mathbb{C}_{\mathrm{spl}}$, that is requires $\tilde{Q}_2$ to lie off the zero divisor locus $Z = \mathbb{H}\tilde\Pi_{\mathrm{id},1}\cup\mathbb{H}\tilde\Pi_{\mathrm{id},2}$, the union of the two four-dimensional ideals. On $Z$ there is no inverse and no difference quotient, and since $Z$ has dimension four rather than being a hypersurface, the naive definition of differentiability with respect to the variable fails on a positive-dimensional set. This is the reason the standard definition of regularity uses four real variables rather than one algebra variable, exactly as in the biquaternion case.
 
 **The kernel is local.** The Cauchy kernel $G_{\mathrm{fn}} = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ is defined off the origin, but its regularity rests on the identity $\tilde{Q}^{\natural}\tilde{Q} = \|\tilde{Q}\|^2 e_t$ which holds only where the coefficients are real. On the full algebra, where $\langle\tilde{Q}\rangle_{\natural}$ is split complex, the corresponding homogeneous kernel is $\tilde{Q}^{\natural}\langle\tilde{Q}\rangle_{\natural}^{-1}$ up to a power, and it is undefined on the zero divisor locus; on an indefinite subspace it is not a fundamental solution, and the characteristic set of the operator is the null cone there.
 
@@ -140,7 +140,7 @@ The split biquaternion Cauchy–Riemann operator $\tilde\nabla_\Phi = \sum_\mu e
 | $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$ | Left-regular (monogenic) condition |
 | $G_{\mathrm{fn}} = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ | Cauchy kernel on the quaternion subspace |
 | $\|\tilde{Q}\|^2 = \sum_\mu(q_\mu^2+q'^2_\mu)$ | Euclidean norm squared |
-| $Z = \mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2$ | Zero divisor locus |
+| $Z = \mathbb{H}\tilde\Pi_{\mathrm{id},1}\cup\mathbb{H}\tilde\Pi_{\mathrm{id},2}$ | Zero divisor locus |
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | Quaternion subspace, a division algebra |
 
 ## Further Reading

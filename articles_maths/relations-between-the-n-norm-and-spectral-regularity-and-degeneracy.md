@@ -150,18 +150,18 @@ has $B^2=4\neq0$. The cone $\mathcal S$ is a discriminant locus attached to the 
 
 | sector | conditions | spectrum | normal form | norm | minimal polynomial |
 |---|---|---|---|---|---|
-| $\Sigma_{11}$ | $N\neq0$, $B^2\neq0$ | $\{\lambda_+,\lambda_-\}$, distinct and non-zero | $\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$, both terms non-zero | $\lambda_+\lambda_-\neq0$ | $p_{\tilde Q}$, squarefree |
+| $\Sigma_{11}$ | $N\neq0$, $B^2\neq0$ | $\{\lambda_+,\lambda_-\}$, distinct and non-zero | $\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$, both terms non-zero | $\lambda_+\lambda_-\neq0$ | $p_{\tilde Q}$, squarefree |
 | $\Sigma_{10}$ | $N\neq0$, $B^2=0$ | $\{Q_t\}$, $Q_t\neq0$ | $Q_te_t$ on $\Sigma_{10}^{\mathrm{s}}$; $Q_tu$ with $u\neq e_t$ unipotent on $\Sigma_{10}^{\mathrm{J}}$ | $Q_t^2\neq0$ | $X-Q_t$ or $(X-Q_t)^2$ |
-| $\Sigma_{01}$ | $N=0$, $B^2\neq0$ | $\{c,0\}$, $c\neq0$ | $c\tilde\Pi$, $\tilde\Pi$ a non-trivial idempotent | $0$ | $p_{\tilde Q}$, squarefree |
+| $\Sigma_{01}$ | $N=0$, $B^2\neq0$ | $\{c,0\}$, $c\neq0$ | $c\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}$ a non-trivial idempotent | $0$ | $p_{\tilde Q}$, squarefree |
 | $\Sigma_{00}$ | $N=0$, $B^2=0$ | $\{0\}$ | $0$ or a non-zero nilpotent of index two | $0$ | $X$ or $X^2$ |
 
 **Remark (the two mixed sectors).** $\Sigma_{10}$ and $\Sigma_{01}$ are the independence witnesses: $\Sigma_{10}$ is invertible with no eigenbasis, $\Sigma_{01}$ is a zero divisor with a full one. Neither cone contains the other, and these are the sectors that show it.
 
-**Theorem (the norm does not separate the strata).** Let $Q_t\neq0$ and let $\vec\Upsilon\neq0$ with $\vec\Upsilon^2=0$. The scalar $Q_te_t$ and the Jordan element $Q_te_t+\vec\Upsilon$ have the same norm $Q_t^2$, the same trace $2Q_t$, and therefore the same characteristic polynomial $(X-Q_t)^2$. Their minimal polynomials are $X-Q_t$ and $(X-Q_t)^2$. At the other degenerate sector the same happens: the origin and a non-zero nilpotent share the norm $0$, the trace $0$ and the characteristic polynomial $X^2$, and differ in the minimal polynomial, $X$ against $X^2$.
+**Theorem (the norm does not separate the strata).** Let $Q_t\neq0$ and let $\vec\Pi_{\mathrm{nil}}\neq0$ with $\vec\Pi_{\mathrm{nil}}^2=0$. The scalar $Q_te_t$ and the Jordan element $Q_te_t+\vec\Pi_{\mathrm{nil}}$ have the same norm $Q_t^2$, the same trace $2Q_t$, and therefore the same characteristic polynomial $(X-Q_t)^2$. Their minimal polynomials are $X-Q_t$ and $(X-Q_t)^2$. At the other degenerate sector the same happens: the origin and a non-zero nilpotent share the norm $0$, the trace $0$ and the characteristic polynomial $X^2$, and differ in the minimal polynomial, $X$ against $X^2$.
 
-*Proof.* The element $\vec\Upsilon$ is pure and square-zero, so $N(Q_te_t+\vec\Upsilon)=Q_t^2$ and the scalar part is $Q_t$. The scalar satisfies $\tilde Q-Q_te_t=0$; the Jordan element satisfies $(\tilde Q-Q_te_t)^2=0$ and $\tilde Q-Q_te_t\neq0$. The nilpotent case is the same computation at $Q_t=0$.
+*Proof.* The element $\vec\Pi_{\mathrm{nil}}$ is pure and square-zero, so $N(Q_te_t+\vec\Pi_{\mathrm{nil}})=Q_t^2$ and the scalar part is $Q_t$. The scalar satisfies $\tilde Q-Q_te_t=0$; the Jordan element satisfies $(\tilde Q-Q_te_t)^2=0$ and $\tilde Q-Q_te_t\neq0$. The nilpotent case is the same computation at $Q_t=0$.
 
-**Corollary (the norm does not see the strata).** At fixed $Q_t$ the scalar $Q_te_t$ and the Jordan element $Q_te_t+\vec\Upsilon$ have the same norm, and the origin and every non-zero nilpotent have norm $0$. The norm therefore cannot distinguish the scalar line from the Jordan part, nor the origin from the non-zero nilpotents.
+**Corollary (the norm does not see the strata).** At fixed $Q_t$ the scalar $Q_te_t$ and the Jordan element $Q_te_t+\vec\Pi_{\mathrm{nil}}$ have the same norm, and the origin and every non-zero nilpotent have norm $0$. The norm therefore cannot distinguish the scalar line from the Jordan part, nor the origin from the non-zero nilpotents.
 
 ## The Chain of Invariants
 
@@ -190,14 +190,14 @@ The count is of degeneration types, not of values: the characteristic polynomial
 **Definition (two-term spectral decomposition).** A **two-term spectral decomposition** of $\tilde Q$ is a writing
 
 $$
-\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-,\qquad \lambda_+\neq\lambda_-,
+\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-},\qquad \lambda_+\neq\lambda_-,
 $$
 
-with $\tilde\Pi_\pm$ orthogonal idempotents, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$.
+with $\tilde\Pi_{\mathrm{id},\pm}$ orthogonal idempotents, $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=\tilde\Pi_{\mathrm{id},-}\tilde\Pi_{\mathrm{id},+}=0$ and $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$.
 
 **Theorem (the eigenbasis follows the discriminant).**
 
-(i) On $\Sigma_{11}\cup\Sigma_{01}$ there is a unique two-term spectral decomposition, with non-trivial idempotents $\tilde\Pi_\pm=(\tilde Q-\lambda_\mp e_t)/(\lambda_\pm-\lambda_\mp)$.
+(i) On $\Sigma_{11}\cup\Sigma_{01}$ there is a unique two-term spectral decomposition, with non-trivial idempotents $\tilde\Pi_{\mathrm{id},\pm}=(\tilde Q-\lambda_\mp e_t)/(\lambda_\pm-\lambda_\mp)$.
 (ii) On $\Sigma_{10}^{\mathrm{s}}$ the element is scalar and the decomposition has one term.
 (iii) On $\Sigma_{10}^{\mathrm{J}}$ no non-trivial idempotent commutes with $\tilde Q$, so there is no two-term decomposition.
 (iv) On $\Sigma_{00}$ the same holds off the origin; at the origin only the trivial one-term writing $0=0\cdot e_t$ exists.
@@ -309,7 +309,7 @@ The two decompositions follow the two conditions. The eigenbasis follows the dis
 | $\Sigma_{11},\Sigma_{10},\Sigma_{01},\Sigma_{00}$ | the four sectors of the two predicates |
 | $\Sigma_{10}^{\mathrm{s}},\Sigma_{10}^{\mathrm{J}}$ | the scalar and Jordan strata of $\Sigma_{10}$ |
 | $\varrho\,e^{i\theta_{\mathrm{pha}}},\tilde U$ | the modulus and the unit factor, $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$ with $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=\langle\tilde Q\rangle_{\natural}$ and $\langle\tilde U\rangle_{\natural}=1$ |
-| $\vec\Upsilon$ | a non-zero pure nilpotent, $\vec\Upsilon^2=0$ |
+| $\vec\Pi_{\mathrm{nil}}$ | a non-zero pure nilpotent, $\vec\Pi_{\mathrm{nil}}^2=0$ |
 | $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$ | left multiplication; rank $4$ on the invertibles, $2$ on the non-zero null elements, $0$ at the origin |
 | $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the two-sided operator, singular exactly on $\mathcal N$ |
 | $\mathrm{ad}_{\tilde Q}(\tilde X)=\tilde Q\tilde X-\tilde X\tilde Q$ | the inner derivation, nilpotent exactly on $\mathcal S$ |

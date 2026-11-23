@@ -52,7 +52,7 @@ $$
 \;},
 $$
 
-the two summands being the two columns $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$.
+the two summands being the two columns $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ and $\mathbb{B}\tilde\Pi_{\mathrm{id},-}$.
 
 *Proof.* The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and artinian, hence semisimple; over a semisimple ring every module is a direct sum of simple modules, every module is projective, and there is a single simple module up to isomorphism. The decomposition of the regular module is the Peirce decomposition read column by column, and freeness of rank one is the basis $e_t$.
 
@@ -173,10 +173,10 @@ which for $W=S^{\oplus k}$ holds exactly when $k$ is even. The obstruction to de
 **Remark (the minimal left ideals and the lines of $S$).** The minimal left ideals of $\mathbb{B}$ are the two-dimensional subspaces
 
 $$
-L_\ell=\{\tilde Q:\tilde Q\text{ vanishes on }\ell\},\qquad \ell=\ker\tilde\Pi \text{ a line in } S,
+L_\ell=\{\tilde Q:\tilde Q\text{ vanishes on }\ell\},\qquad \ell=\ker\tilde\Pi_{\mathrm{id}} \text{ a line in } S,
 $$
 
-one for each kernel line, so the family of minimal left ideals is a projective line; the two summands of the regular module correspond to the two points $\ker\tilde\Pi_\pm$, and the general element of the family is $\mathbb{B}\tilde\Pi$ for a rank-one idempotent $\tilde\Pi$ with kernel $\ell$. The image line is not this parameter: it indexes the minimal *right* ideals $\tilde\Pi\mathbb{B}=\{\tilde Q:\operatorname{im}\tilde Q\subseteq\operatorname{im}\tilde\Pi\}$, and the two criteria are not interchangeable, as §*The Projective Line and the Möbius Action* sets out. The classification is that of *The Polarized Module of the Biquaternion Algebra*; the reading here is that these are the simple submodules of the regular module.
+one for each kernel line, so the family of minimal left ideals is a projective line; the two summands of the regular module correspond to the two points $\ker\tilde\Pi_{\mathrm{id},\pm}$, and the general element of the family is $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ for a rank-one idempotent $\tilde\Pi_{\mathrm{id}}$ with kernel $\ell$. The image line is not this parameter: it indexes the minimal *right* ideals $\tilde\Pi_{\mathrm{id}}\mathbb{B}=\{\tilde Q:\operatorname{im}\tilde Q\subseteq\operatorname{im}\tilde\Pi_{\mathrm{id}}\}$, and the two criteria are not interchangeable, as §*The Projective Line and the Möbius Action* sets out. The classification is that of *The Polarized Module of the Biquaternion Algebra*; the reading here is that these are the simple submodules of the regular module.
 
 ### Von Neumann regular and self-injective
 
@@ -197,7 +197,7 @@ Over $\mathbb{C}$, every left ideal of the simple artinian algebra $\mathbb{B}$ 
 | Left ideal | Form | Dimension over $\mathbb{C}$ | Minimal | Maximal |
 |---|---|---|---|---|
 | $0$ | $0$ | $0$ | no | no |
-| minimal | $\mathbb{B}\tilde\Pi$, $\tilde\Pi$ primitive | $2$ | yes | yes |
+| minimal | $\mathbb{B}\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}$ primitive | $2$ | yes | yes |
 | $\mathbb{B}$ | $\mathbb{B}$ | $4$ | no | no |
 
 The minimal left ideals form the middle layer of the lattice,
@@ -214,24 +214,24 @@ The parameter space deserves a caution. In the Wedderburn–Artin decomposition 
 
 **The middle layer of the lattice is the projective line of the defining module, the invertibles act on it by left multiplication, and in a chart the action is the Möbius action of $PGL_2(\mathbb{C})$.**
 
-**The parametrisation.** Let $S\cong\mathbb{C}^2$ be the defining module and $\mathbb{P}(S)$ its projective line. A rank-one idempotent determines two lines, its kernel and its image, and the left and the right families are indexed by different ones of them, so the convention has to keep them apart. Write $\tilde\Pi=w\lambda$ with $\lambda w=e_t$; the rows of $\tilde\Pi$ are multiples of $\lambda$, so
+**The parametrisation.** Let $S\cong\mathbb{C}^2$ be the defining module and $\mathbb{P}(S)$ its projective line. A rank-one idempotent determines two lines, its kernel and its image, and the left and the right families are indexed by different ones of them, so the convention has to keep them apart. Write $\tilde\Pi_{\mathrm{id}}=w\lambda$ with $\lambda w=e_t$; the rows of $\tilde\Pi_{\mathrm{id}}$ are multiples of $\lambda$, so
 
 $$
-\mathbb{B}\tilde\Pi=\{v\lambda:v\in S\}=\{\tilde Q:\ker\tilde\Pi\subseteq\ker\tilde Q\},
+\mathbb{B}\tilde\Pi_{\mathrm{id}}=\{v\lambda:v\in S\}=\{\tilde Q:\ker\tilde\Pi_{\mathrm{id}}\subseteq\ker\tilde Q\},
 $$
 
-which is a **left** ideal, indexed by the kernel line $\ker\tilde\Pi=\ker\lambda$; while
+which is a **left** ideal, indexed by the kernel line $\ker\tilde\Pi_{\mathrm{id}}=\ker\lambda$; while
 
 $$
-\tilde\Pi\mathbb{B}=\{w\mu:\mu\in S^*\}=\{\tilde Q:\operatorname{im}\tilde Q\subseteq\operatorname{im}\tilde\Pi\},
+\tilde\Pi_{\mathrm{id}}\mathbb{B}=\{w\mu:\mu\in S^*\}=\{\tilde Q:\operatorname{im}\tilde Q\subseteq\operatorname{im}\tilde\Pi_{\mathrm{id}}\},
 $$
 
 which is a **right** ideal, indexed by the image line. Two rank-one idempotents with the same kernel generate the same left ideal, and two with the same image generate the same right ideal; the criteria are not interchangeable, and applying the image criterion to the left ideals is the standard error. Each assignment is a bijection onto its own family, so both lattices have middle layer $\mathbb{P}(S)$:
 
 $$
-\ell\longmapsto\mathbb{B}\tilde\Pi_\ell\ (\ell=\ker\tilde\Pi_\ell),
+\ell\longmapsto\mathbb{B}\tilde\Pi_{\mathrm{id},\ell}\ (\ell=\ker\tilde\Pi_{\mathrm{id},\ell}),
 \qquad
-L\longmapsto\tilde\Pi_L\mathbb{B}\ (L=\operatorname{im}\tilde\Pi_L).
+L\longmapsto\tilde\Pi_{\mathrm{id},L}\mathbb{B}\ (L=\operatorname{im}\tilde\Pi_{\mathrm{id},L}).
 $$
 
 Every minimal one-sided ideal is generated by a primitive idempotent, hence is one of these. Choosing a basis of $S$ identifies $\mathbb{P}(S)$ with $\mathbb{P}^1(\mathbb{C})$, the parametrisation of §*The Lattice of Left Ideals*.
@@ -242,7 +242,7 @@ $$
 \tilde Q\cdot L=L\,\tilde Q^{-1}.
 $$
 
-Right multiplication by an invertible element is an automorphism of the left module $\mathbb{B}$, so it carries minimal left ideals to minimal left ideals. On the parameter it is the natural action on lines: for $L=\mathbb{B}\tilde\Pi$ with $\ker\tilde\Pi=\ell$ one has $L\tilde Q^{-1}=\mathbb{B}(\tilde\Pi\tilde Q^{-1})$ and $\ker(\tilde\Pi\tilde Q^{-1})=\tilde Q\ell$. Left multiplication cannot serve as the action, because $\tilde Q\,\mathbb{B}\tilde\Pi=\mathbb{B}\tilde\Pi$ for every invertible $\tilde Q$: it fixes every left ideal setwise, and the parametrisation would be trivial. In the model the action is that of the matrix $P=\mathsf M_2(\tilde Q)$ on the lines of $\mathbb{C}^2$,
+Right multiplication by an invertible element is an automorphism of the left module $\mathbb{B}$, so it carries minimal left ideals to minimal left ideals. On the parameter it is the natural action on lines: for $L=\mathbb{B}\tilde\Pi_{\mathrm{id}}$ with $\ker\tilde\Pi_{\mathrm{id}}=\ell$ one has $L\tilde Q^{-1}=\mathbb{B}(\tilde\Pi_{\mathrm{id}}\tilde Q^{-1})$ and $\ker(\tilde\Pi_{\mathrm{id}}\tilde Q^{-1})=\tilde Q\ell$. Left multiplication cannot serve as the action, because $\tilde Q\,\mathbb{B}\tilde\Pi_{\mathrm{id}}=\mathbb{B}\tilde\Pi_{\mathrm{id}}$ for every invertible $\tilde Q$: it fixes every left ideal setwise, and the parametrisation would be trivial. In the model the action is that of the matrix $P=\mathsf M_2(\tilde Q)$ on the lines of $\mathbb{C}^2$,
 
 $$
 \tilde Q\cdot[\zeta]=[P\zeta].
@@ -254,7 +254,7 @@ $$
 \mathbb{B}^\times/\mathbb{C}^\times e_t\cong PGL_2(\mathbb{C})\cong\operatorname{Aut}_{\mathbb{C}}(\mathbb{B}),
 $$
 
-the last isomorphism being that of *Biquaternion Automorphisms and Derivations*. On idempotents the action reads $\tilde\Pi\mapsto\tilde Q\tilde\Pi\tilde Q^{-1}$, which is the conjugation action of the automorphism group; the two descriptions agree because $\mathbb{B}\tilde\Pi\tilde Q^{-1}=\mathbb{B}(\tilde Q\tilde\Pi\tilde Q^{-1})$, using $\mathbb{B}\tilde Q=\mathbb{B}$.
+the last isomorphism being that of *Biquaternion Automorphisms and Derivations*. On idempotents the action reads $\tilde\Pi_{\mathrm{id}}\mapsto\tilde Q\tilde\Pi_{\mathrm{id}}\tilde Q^{-1}$, which is the conjugation action of the automorphism group; the two descriptions agree because $\mathbb{B}\tilde\Pi_{\mathrm{id}}\tilde Q^{-1}=\mathbb{B}(\tilde Q\tilde\Pi_{\mathrm{id}}\tilde Q^{-1})$, using $\mathbb{B}\tilde Q=\mathbb{B}$.
 
 **The chart and the Möbius formula.** Write a line by the column $\zeta=(z,1)^{\mathsf T}$, with $z=\zeta_1/\zeta_2$, and let $P=\begin{pmatrix}a&b\\c&d\end{pmatrix}$. Then
 
@@ -264,7 +264,7 @@ P\zeta=\begin{pmatrix}az+b\\ cz+d\end{pmatrix},
 z'=\frac{az+b}{cz+d},
 $$
 
-which is the Möbius transformation attached to $P$. A nonzero scalar multiple of $P$ gives the same transformation, so the formula depends only on the class $[P]\in PGL_2(\mathbb{C})$, and composition of transformations is multiplication of matrices. In this chart the idempotent $\tilde\Pi_+$ sits at $z=0$ and $\tilde\Pi_-$ at $z=\infty$, since $\ker\tilde\Pi_+=\operatorname{span}(e_2)$ and $\ker\tilde\Pi_-=\operatorname{span}(e_1)$; the point at infinity is the line of the first basis vector.
+which is the Möbius transformation attached to $P$. A nonzero scalar multiple of $P$ gives the same transformation, so the formula depends only on the class $[P]\in PGL_2(\mathbb{C})$, and composition of transformations is multiplication of matrices. In this chart the idempotent $\tilde\Pi_{\mathrm{id},+}$ sits at $z=0$ and $\tilde\Pi_{\mathrm{id},-}$ at $z=\infty$, since $\ker\tilde\Pi_{\mathrm{id},+}=\operatorname{span}(e_2)$ and $\ker\tilde\Pi_{\mathrm{id},-}=\operatorname{span}(e_1)$; the point at infinity is the line of the first basis vector.
 
 **Transitivity and stabilisers.** The action is transitive, since any line can be sent to any other by an invertible matrix, and it is simply transitive on ordered triples of distinct points. The stabiliser of $z=0$ is the set of matrices with $b=0$,
 

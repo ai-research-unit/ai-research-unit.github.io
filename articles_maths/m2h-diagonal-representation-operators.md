@@ -18,7 +18,7 @@
 
 **The carrier.** The algebra acts on itself by left and right multiplications, and the two modules are the same module of rank two over $\mathbb{H}$,
 $$
-\mathbb{B}_{\mathrm{spl}}=\mathbb{H}\tilde\Pi_{1}\oplus\mathbb{H}\tilde\Pi_{2}\cong\mathbb{H}^{2},
+\mathbb{B}_{\mathrm{spl}}=\mathbb{H}\tilde\Pi_{\mathrm{id},1}\oplus\mathbb{H}\tilde\Pi_{\mathrm{id},2}\cong\mathbb{H}^{2},
 $$
 with basis $(1,j)$ over $\mathbb{H}$. The real dimension is eight and the quaternionic dimension is two.
 
@@ -38,7 +38,7 @@ with basis $(1,j)$ over $\mathbb{H}$. The real dimension is eight and the quater
 
 **The block diagonal part.** The left multiplications, the right multiplications and the two-sided operators are all block diagonal, so they lie in
 $$
-\mathrm{End}_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_{1}\bigr)\oplus\mathrm{End}_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_{2}\bigr)\subset M_{8}(\mathbb{R}),
+\mathrm{End}_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_{\mathrm{id},1}\bigr)\oplus\mathrm{End}_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_{\mathrm{id},2}\bigr)\subset M_{8}(\mathbb{R}),
 $$
 of dimension thirty-two, which is the ambient of the category and not the whole of $M_{8}(\mathbb{R})$. The off-diagonal corner is not merely unreachable from the family: it is unreachable from the span.
 
@@ -110,7 +110,7 @@ is the product of the two quaternionic cones, each of real dimension seven insid
 $$
 \tilde Q_{+}=0\ \text{or}\ \tilde Q_{2+}=0,\qquad\text{and}\qquad \tilde Q_{-}=0\ \text{or}\ \tilde Q_{2-}=0,
 $$
-so the zero operator is attained by nonzero pairs — $\tilde Q=\tilde\Pi_{1}$ and $\tilde Q_2=\tilde\Pi_{2}$, for example — and the three other combinations of the two idempotents. The zero set of the map $(\tilde Q,\tilde Q_2)\mapsto L_{\tilde Q}R_{\tilde Q_2}$ is therefore a union of four products, of real dimension $4+8=12$ each, and the pairs that achieve the zero operator are the ones that the length discussion below must count.
+so the zero operator is attained by nonzero pairs — $\tilde Q=\tilde\Pi_{\mathrm{id},1}$ and $\tilde Q_2=\tilde\Pi_{\mathrm{id},2}$, for example — and the three other combinations of the two idempotents. The zero set of the map $(\tilde Q,\tilde Q_2)\mapsto L_{\tilde Q}R_{\tilde Q_2}$ is therefore a union of four products, of real dimension $4+8=12$ each, and the pairs that achieve the zero operator are the ones that the length discussion below must count.
 
 **The invertibles.** The operators of the family that are invertible are those with both blocks nonzero, that is
 $$

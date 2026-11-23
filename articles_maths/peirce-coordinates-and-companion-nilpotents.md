@@ -77,7 +77,7 @@ $$
 
 | algebra | $e$ | $D=eAe$ | $\dim_k A_{-+}$ | $s$ |
 |---|---|---|---|---|
-| $\mathbb{B}=M_2(\mathbb{C})$ | $\tilde\Pi_+$ | $\mathbb{C}$ | $1$ | $1$ |
+| $\mathbb{B}=M_2(\mathbb{C})$ | $\tilde\Pi_{\mathrm{id},+}$ | $\mathbb{C}$ | $1$ | $1$ |
 | $M_2(k)$ | $E_{11}$ | $k$ | $1$ | $1$ |
 | $M_3(k)$ | $E_{11}$ | $k$ | $2$ | $2$ |
 | $M_3(k)$ | $E_{11}+E_{22}$ | $M_2(k)$ | $2$ | $1$ |
@@ -171,13 +171,13 @@ $$
 
 *Proof.* Expand $x\zeta=x(ed_0)+\sum_i x(\nu_id_i)=(xe)d_0+\sum_i(x\nu_i)d_i$ by associativity, substitute the two expansions, and collect the coefficients of $e$ and of the $\nu_j$.
 
-**Example (the biquaternion).** Let $A=\mathbb{B}$, $e=\tilde\Pi_+$, $f=\tilde\Pi_-$, $\nu_1=\vec\Upsilon_y$. Then $D=\mathbb{C}\tilde\Pi_+\cong\mathbb{C}$ and
+**Example (the biquaternion).** Let $A=\mathbb{B}$, $e=\tilde\Pi_{\mathrm{id},+}$, $f=\tilde\Pi_{\mathrm{id},-}$, $\nu_1=\vec\Pi_{\mathrm{nil},y}$. Then $D=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\cong\mathbb{C}$ and
 
 $$
-C(\tilde\Pi_+)=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_y .
+C(\tilde\Pi_{\mathrm{id},+})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},y} .
 $$
 
-For $x=a\tilde\Pi_+ + b\vec\Upsilon_x + c\vec\Upsilon_y + d\tilde\Pi_-$ one has $x\tilde\Pi_+=a\tilde\Pi_+ + c\vec\Upsilon_y$ and $x\vec\Upsilon_y=b\tilde\Pi_+ + d\vec\Upsilon_y$, so the Peirce matrix is
+For $x=a\tilde\Pi_{\mathrm{id},+} + b\vec\Pi_{\mathrm{nil},x} + c\vec\Pi_{\mathrm{nil},y} + d\tilde\Pi_{\mathrm{id},-}$ one has $x\tilde\Pi_{\mathrm{id},+}=a\tilde\Pi_{\mathrm{id},+} + c\vec\Pi_{\mathrm{nil},y}$ and $x\vec\Pi_{\mathrm{nil},y}=b\tilde\Pi_{\mathrm{id},+} + d\vec\Pi_{\mathrm{nil},y}$, so the Peirce matrix is
 
 $$
 P(x)=\begin{pmatrix}a&b\\ c&d\end{pmatrix}.

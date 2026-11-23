@@ -167,7 +167,7 @@ with $\sigma_\pm>0$ the singular values. The computation confirms the identity a
 **In the Peirce frame the diagonal factor is the pair of corner stretches.** For the biquaternion algebra the diagonal positive matrices are
 
 $$
-\Sigma=\sigma_+\tilde\Pi_++\sigma_-\tilde\Pi_-,
+\Sigma=\sigma_+\tilde\Pi_{\mathrm{id},++}\sigma_-\tilde\Pi_{\mathrm{id},-},
 $$
 
 so the middle factor is the pair of stretches of *The Exponential of the Symmetric Part: Stretches and the Positive Cone*, one per corner. The computation confirms the identity for diagonal elements, and it shows that the rank of the pair is two and the two corner stretches are its coordinates.

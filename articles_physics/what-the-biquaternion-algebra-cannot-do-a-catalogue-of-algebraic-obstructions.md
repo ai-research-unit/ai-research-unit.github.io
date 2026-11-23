@@ -98,11 +98,11 @@ so the solutions are exactly $0$ and $e_t$. A direct sum decomposition would nee
 
 **Statement.** The radical of the biquaternion norm is non-trivial: there are non-zero $\tilde{Q}$ with $\langle\tilde{Q}\rangle_{\natural}=0$, and every null element is orthogonal to itself in the associated bilinear form. In particular the whole pure-state boundary is null.
 
-**Proof.** For a unit direction $\vec u$ the pure state $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ has $\tilde\Pi^{\natural}(\vec u)=e_t-\tilde\Pi(\vec u)$ and hence
+**Proof.** For a unit direction $\vec u$ the pure state $\tilde\Pi_{\mathrm{id}}(\vec u)=\tfrac12(e_t+i\vec u)$ has $\tilde\Pi_{\mathrm{id}}^{\natural}(\vec u)=e_t-\tilde\Pi_{\mathrm{id}}(\vec u)$ and hence
 $$
-\bigl\langle\tilde\Pi(\vec u)\bigr\rangle_{\natural}=\tilde\Pi(\vec u)\,\tilde\Pi^{\natural}(\vec u)=\tfrac14(e_t+i\vec u)(e_t-i\vec u)=\tfrac14\bigl(e_t+\vec u^2\bigr)=0
+\bigl\langle\tilde\Pi_{\mathrm{id}}(\vec u)\bigr\rangle_{\natural}=\tilde\Pi_{\mathrm{id}}(\vec u)\,\tilde\Pi_{\mathrm{id}}^{\natural}(\vec u)=\tfrac14(e_t+i\vec u)(e_t-i\vec u)=\tfrac14\bigl(e_t+\vec u^2\bigr)=0
 $$
-for every $\vec u$ while $\tilde\Pi(\vec u)\neq0$; indeed the defining property $\tilde\Pi^2=\tilde\Pi$ together with $\tilde\Pi\tilde\Pi^{\natural}=0$ characterises the boundary of the state space. Likewise $e_t\pm i\vec e_\eta$ are null non-zero elements for $\eta=x,y,z$, since $\langle e_t\pm i\vec e_\eta\rangle_{\natural}=(1-1)e_t=0$.
+for every $\vec u$ while $\tilde\Pi_{\mathrm{id}}(\vec u)\neq0$; indeed the defining property $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$ together with $\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}^{\natural}=0$ characterises the boundary of the state space. Likewise $e_t\pm i\vec e_\eta$ are null non-zero elements for $\eta=x,y,z$, since $\langle e_t\pm i\vec e_\eta\rangle_{\natural}=(1-1)e_t=0$.
 
 **Consequence.** The state space is the boundary of the cone of a degenerate quadratic form. One cannot speak of the "length" of a state; the metric must be obtained as the second variation on the null boundary, and not from the form's value.
 
@@ -156,11 +156,11 @@ for every $\vec u$ while $\tilde\Pi(\vec u)\neq0$; indeed the defining property 
 
 **Proof.** The two complementary pure states of a direction satisfy
 $$
-\tilde\Pi(\vec u)\,\bigl(e_t-\tilde\Pi(\vec u)\bigr)=0
+\tilde\Pi_{\mathrm{id}}(\vec u)\,\bigl(e_t-\tilde\Pi_{\mathrm{id}}(\vec u)\bigr)=0
 $$
 for every invertible $\vec u$, with both factors non-zero. An element is invertible exactly when $\langle\tilde{Q}\rangle_{\natural}\neq0$, and the zero divisors are the elements of vanishing norm.
 
-**Consequence.** The *pure* states are precisely the singular states: a pure state $\tilde\Pi$ satisfies $\tilde\Pi\tilde\Pi^{\natural}=0$, hence $\langle\tilde\Pi\rangle_{\natural}=0$ and it is a zero divisor, while a mixed state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $|\vec s_{\Psi}|<1$ has $\tilde{Ϛ}_{\Psi}\tilde{Ϛ}_{\Psi}^{\natural}=\tfrac14(1-s^2)e_t\neq0$, so $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\neq0$, and is invertible. The multiplicative group of the algebra, $\mathbb{B}^\times=\{\tilde{Q}:\langle\tilde{Q}\rangle_{\natural}\neq0\}$, therefore contains every mixed state and excludes every pure one, and statements requiring invertibility of a pure state are meaningless in this framework.
+**Consequence.** The *pure* states are precisely the singular states: a pure state $\tilde\Pi_{\mathrm{id}}$ satisfies $\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}^{\natural}=0$, hence $\langle\tilde\Pi_{\mathrm{id}}\rangle_{\natural}=0$ and it is a zero divisor, while a mixed state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $|\vec s_{\Psi}|<1$ has $\tilde{Ϛ}_{\Psi}\tilde{Ϛ}_{\Psi}^{\natural}=\tfrac14(1-s^2)e_t\neq0$, so $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\neq0$, and is invertible. The multiplicative group of the algebra, $\mathbb{B}^\times=\{\tilde{Q}:\langle\tilde{Q}\rangle_{\natural}\neq0\}$, therefore contains every mixed state and excludes every pure one, and statements requiring invertibility of a pure state are meaningless in this framework.
 
 **Remedy.** None is needed; the structure is that of a simple algebra, and the relevant group for transformations is $\mathbb{B}^\times$, acting on the elements by multiplication. The point of recording the obstruction is that "the quaternions are a division algebra" does not survive complexification, and the biquaternion algebra must not be used as if it did.
 
@@ -443,7 +443,7 @@ Each obstruction is proved from the defining relations and is stated with its co
 | $2\,\mathrm{Sc}(\tilde{Q})=2Q_t$ | Doubled scalar part, $2\,\mathrm{Sc}(e_t)=2$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\mathbb{B}^{\times}=\{\tilde{Q}:\langle\tilde{Q}\rangle_{\natural}\neq0\}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | Hermitian form, positive definite with $\langle e_t\rangle_{*}=1$ |
-| $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ | Pure state of the declared direction $\vec u$, null under $\langle\cdot\rangle_{\natural}$ |
+| $\tilde\Pi_{\mathrm{id}}(\vec u)=\tfrac12(e_t+i\vec u)$ | Pure state of the declared direction $\vec u$, null under $\langle\cdot\rangle_{\natural}$ |
 | $\mathbb{A}_{\vec u}=\mathbb{C}e_t\oplus\mathbb{C}(i\vec u)$ | Maximal commutative subalgebra |
 | $\tilde{Q}_L$, $\tilde{Q}_R$ | The two parts of an element, the values $-1$ and $+1$ of the chirality of the declared direction; left multiplication keeps the letter |
 | $\mathrm{U}(2)$ | Norm-preserving ($*$-unitary) group |

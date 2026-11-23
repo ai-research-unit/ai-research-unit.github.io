@@ -64,7 +64,7 @@ and the zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$. The 
 
 ### The Wall of the State Space
 
-**The same cone bounds the pure states.** The zero-divisor cone has a second physical interpretation on the informational sector $\mathbb{B}_{\Psi}$. There the unit-weight slice of the positive cone is the Bloch ball, its boundary is the set of pure states, and every pure state is a zero divisor: the pure-state idempotents satisfy $\langle\tilde\Pi\rangle_{\natural}=0$ on the Bloch sphere. The cone is thus the wall of reversibility on $\mathbb{B}_{\Phi}$, and on $\mathbb{B}_{\Psi}$ it meets the positive cone in the cone over the pure states; its intersection with the unit-weight slice is the Bloch sphere.
+**The same cone bounds the pure states.** The zero-divisor cone has a second physical interpretation on the informational sector $\mathbb{B}_{\Psi}$. There the unit-weight slice of the positive cone is the Bloch ball, its boundary is the set of pure states, and every pure state is a zero divisor: the pure-state idempotents satisfy $\langle\tilde\Pi_{\mathrm{id}}\rangle_{\natural}=0$ on the Bloch sphere. The cone is thus the wall of reversibility on $\mathbb{B}_{\Phi}$, and on $\mathbb{B}_{\Psi}$ it meets the positive cone in the cone over the pure states; its intersection with the unit-weight slice is the Bloch sphere.
 
 **The boundary of the interpretation.** The two interpretations are of one set and not of one physical object. On $\mathbb{B}_{\Phi}$ the cone is the light cone; on $\mathbb{B}_{\Psi}$ its unit-weight slice is the boundary of the state space. The identification requires the cut by the sector, and the algebra alone does not say which interpretation applies.
 

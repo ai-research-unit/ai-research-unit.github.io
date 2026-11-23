@@ -96,13 +96,13 @@ the complex Mandelbrot set.
 
 The reduction is not special to the centre: every two-dimensional commutative subalgebra cut out by an idempotent gives the same phenomenon, with two independent complex parameters.
 
-**Theorem (the idempotent plane).** Let $\tilde\Pi$ be a primitive idempotent of $\mathbb{B}$ and let $\tilde\Pi'=e_t-\tilde\Pi$ be its complement, so that $\tilde\Pi\tilde\Pi'=\tilde\Pi'\tilde\Pi=0$ and $\tilde\Pi+\tilde\Pi'=e_t$. The plane
+**Theorem (the idempotent plane).** Let $\tilde\Pi_{\mathrm{id}}$ be a primitive idempotent of $\mathbb{B}$ and let $\tilde\Pi_{\mathrm{id}}'=e_t-\tilde\Pi_{\mathrm{id}}$ be its complement, so that $\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}'=\tilde\Pi_{\mathrm{id}}'\tilde\Pi_{\mathrm{id}}=0$ and $\tilde\Pi_{\mathrm{id}}+\tilde\Pi_{\mathrm{id}}'=e_t$. The plane
 
 $$
-W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'
+W_{\tilde\Pi_{\mathrm{id}}}=\mathbb{C}\tilde\Pi_{\mathrm{id}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}'
 $$
 
-is a commutative subalgebra isomorphic to $\mathbb{C}\oplus\mathbb{C}$ by $A\tilde\Pi+B\tilde\Pi'\mapsto(A,B)$; the product there is coordinatewise, and for a parameter $\tilde Q_2=C_1\tilde\Pi+C_2\tilde\Pi'$ the restriction of $F_{\tilde Q_2}$ to $W_{\tilde\Pi}$ is the pair of commuting complex quadratic maps
+is a commutative subalgebra isomorphic to $\mathbb{C}\oplus\mathbb{C}$ by $A\tilde\Pi_{\mathrm{id}}+B\tilde\Pi_{\mathrm{id}}'\mapsto(A,B)$; the product there is coordinatewise, and for a parameter $\tilde Q_2=C_1\tilde\Pi_{\mathrm{id}}+C_2\tilde\Pi_{\mathrm{id}}'$ the restriction of $F_{\tilde Q_2}$ to $W_{\tilde\Pi_{\mathrm{id}}}$ is the pair of commuting complex quadratic maps
 
 $$
 (A,B)\longmapsto(A^2+C_1,\;B^2+C_2).
@@ -111,12 +111,12 @@ $$
 Hence
 
 $$
-\boxed{\;W_{\tilde\Pi}\cap\mathcal K_{\tilde Q_2}=K_{C_1}\times K_{C_2}, \qquad W_{\tilde\Pi}\cap\mathcal C=\{C_1\in\mathcal M\}\times\{C_2\in\mathcal M\}\;},
+\boxed{\;W_{\tilde\Pi_{\mathrm{id}}}\cap\mathcal K_{\tilde Q_2}=K_{C_1}\times K_{C_2}, \qquad W_{\tilde\Pi_{\mathrm{id}}}\cap\mathcal C=\{C_1\in\mathcal M\}\times\{C_2\in\mathcal M\}\;},
 $$
 
 and the critical-orbit locus of the plane is the product $\mathcal M\times\mathcal M$. The general plain bilinear product therefore gives the **intersection** of the two conditions, not their union.
 
-**Proof.** $\tilde\Pi^2=\tilde\Pi$, $\tilde\Pi'^2=\tilde\Pi'$ and $\tilde\Pi\tilde\Pi'=0$ give $(A\tilde\Pi+B\tilde\Pi')^2=A^2\tilde\Pi+B^2\tilde\Pi'$, and the parameter splits the same way; the two coordinates do not interact, so the orbit is the pair of complex orbits and both must be bounded.
+**Proof.** $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}'^2=\tilde\Pi_{\mathrm{id}}'$ and $\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}'=0$ give $(A\tilde\Pi_{\mathrm{id}}+B\tilde\Pi_{\mathrm{id}}')^2=A^2\tilde\Pi_{\mathrm{id}}+B^2\tilde\Pi_{\mathrm{id}}'$, and the parameter splits the same way; the two coordinates do not interact, so the orbit is the pair of complex orbits and both must be bounded.
 
 **Remark (the choice of product and the shape of the locus).** On the diagonal subalgebra the complex bilinear product has no cross term, so the locus is a product; a product that mixes the two coordinates would couple the two iterations, and the locus would be neither a product nor a union but a genuinely two-variable object. **The phrase "intersection or union of two lower-dimensional loci" is exact only where the algebra splits; where it does not, no such description holds.** The comparison of the four general products is *The Four General Products and Their Relations over the Biquaternion Algebra*.
 
@@ -156,8 +156,8 @@ The connectedness locus $\mathcal B$ and the critical-orbit locus $\mathcal C$ a
 | $\sigma_1\ge\sigma_2$ | the singular values of $\mathsf{M}_2(\tilde Q)$; $\delta=\sigma_2/\sigma_1$ |
 | $R_\delta$ | the conditional escape radius at condition $\delta$ |
 | $\|\cdot\|$, $\langle \cdot\rangle_*^{1/2}$ | the Euclidean norm on $\mathbb{B}$ and the Frobenius norm on $M_2(\mathbb{C})$ |
-| $\tilde\Pi$, $\tilde\Pi'=e_t-\tilde\Pi$ | a primitive idempotent and its complement |
-| $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ | the commutative idempotent plane |
+| $\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}'=e_t-\tilde\Pi_{\mathrm{id}}$ | a primitive idempotent and its complement |
+| $W_{\tilde\Pi_{\mathrm{id}}}=\mathbb{C}\tilde\Pi_{\mathrm{id}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}'$ | the commutative idempotent plane |
 | $G$ | the group of involutions |
 
 ## Further Reading

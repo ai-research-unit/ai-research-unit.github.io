@@ -190,33 +190,33 @@ The last clause is the subject of the next section: a complex isometry can excha
 The eigenbasis of the left multiplication is that of *The N-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*. For $\tilde Q$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}\neq0$, put
 $$
 \vec U=\frac{\vec Q}{B},\qquad \vec{Ζ}=-i\vec U,\qquad
-\tilde\Pi_\pm=\frac{e_t\pm\vec{Ζ}}{2},\qquad
+\tilde\Pi_{\mathrm{id},\pm}=\frac{e_t\pm\vec{Ζ}}{2},\qquad
 \lambda_\pm=Q_t\pm iB .
 $$
 Choose the nilpotents
 $$
-\vec\Upsilon_+\in\mathbb{B}_{-+}=\tilde\Pi_-\mathbb{B}\tilde\Pi_+,\qquad
-\vec\Upsilon_-\in\mathbb{B}_{+-}=\tilde\Pi_+\mathbb{B}\tilde\Pi_-,
+\vec\Pi_{\mathrm{nil},+}\in\mathbb{B}_{-+}=\tilde\Pi_{\mathrm{id},-}\mathbb{B}\tilde\Pi_{\mathrm{id},+},\qquad
+\vec\Pi_{\mathrm{nil},-}\in\mathbb{B}_{+-}=\tilde\Pi_{\mathrm{id},+}\mathbb{B}\tilde\Pi_{\mathrm{id},-},
 $$
 normalised by
 $$
-\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\qquad
-\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,\qquad
-\vec\Upsilon_\pm^{2}=0 .
+\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-},\qquad
+\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+},\qquad
+\vec\Pi_{\mathrm{nil},\pm}^{2}=0 .
 $$
-Then the four basis elements $\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-$ are eigenvectors of $L_{\tilde Q}$:
+Then the four basis elements $\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-}$ are eigenvectors of $L_{\tilde Q}$:
 $$
-\tilde Q\tilde\Pi_+=\lambda_+\tilde\Pi_+,\qquad
-\tilde Q\vec\Upsilon_-=\lambda_+\vec\Upsilon_-,\qquad
-\tilde Q\vec\Upsilon_+=\lambda_-\vec\Upsilon_+,\qquad
-\tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_- .
+\tilde Q\tilde\Pi_{\mathrm{id},+}=\lambda_+\tilde\Pi_{\mathrm{id},+},\qquad
+\tilde Q\vec\Pi_{\mathrm{nil},-}=\lambda_+\vec\Pi_{\mathrm{nil},-},\qquad
+\tilde Q\vec\Pi_{\mathrm{nil},+}=\lambda_-\vec\Pi_{\mathrm{nil},+},\qquad
+\tilde Q\tilde\Pi_{\mathrm{id},-}=\lambda_-\tilde\Pi_{\mathrm{id},-} .
 $$
 In this ordered basis,
 $$
 [L_{\tilde Q}]=\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-).
 $$
 
-The two values are distinct exactly when $B\neq0$. In that case the $\lambda_+$-eigenspace is the two-dimensional right ideal $\tilde\Pi_+\mathbb{B}$, with basis $(\tilde\Pi_+,\vec\Upsilon_-)$, and the $\lambda_-$-eigenspace is $\tilde\Pi_-\mathbb{B}$, with basis $(\vec\Upsilon_+,\tilde\Pi_-)$.
+The two values are distinct exactly when $B\neq0$. In that case the $\lambda_+$-eigenspace is the two-dimensional right ideal $\tilde\Pi_{\mathrm{id},+}\mathbb{B}$, with basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-})$, and the $\lambda_-$-eigenspace is $\tilde\Pi_{\mathrm{id},-}\mathbb{B}$, with basis $(\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$.
 
 When $B=0$ the construction is unavailable: there is no eigenbasis singled out by $\tilde Q$, the two nilpotents are not defined from $\tilde Q$, and $L_{\tilde Q}$ is not diagonal in any Peirce basis. This is the degenerate case of *The Spectrum of a Biquaternion*, §*The Degenerate Case: The Spectral-Degenerate Cone*.
 
@@ -224,17 +224,17 @@ When $B=0$ the construction is unavailable: there is no eigenbasis singled out b
 
 The two **spinor spaces** are the Peirce carriers, which here are the minimal left ideals,
 $$
-S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,
+S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},+},
 \qquad
-S_-=\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-,
+S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}=\mathbb{C}\vec\Pi_{\mathrm{nil},-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-},
 \qquad
 \mathbb{B}=S_+\oplus S_- .
 $$
-A spinor of the first Peirce copy is an element of $S_+$; a spinor of the second Peirce copy is an element of $S_-$. In the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$ of $S_+$,
+A spinor of the first Peirce copy is an element of $S_+$; a spinor of the second Peirce copy is an element of $S_-$. In the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ of $S_+$,
 $$
-\zeta_+=\alpha\,\tilde\Pi_++\beta\,\vec\Upsilon_+,
+\zeta_+=\alpha\,\tilde\Pi_{\mathrm{id},++}\beta\,\vec\Pi_{\mathrm{nil},+},
 \qquad
-\tilde Q\zeta_+=\lambda_+\alpha\,\tilde\Pi_++\lambda_-\beta\,\vec\Upsilon_+,
+\tilde Q\zeta_+=\lambda_+\alpha\,\tilde\Pi_{\mathrm{id},++}\lambda_-\beta\,\vec\Pi_{\mathrm{nil},+},
 $$
 so
 $$
@@ -242,11 +242,11 @@ $$
 \begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}
 \begin{pmatrix}\alpha\\ \beta\end{pmatrix}.
 $$
-In the eigenbasis $(\vec\Upsilon_-,\tilde\Pi_-)$ of $S_-$,
+In the eigenbasis $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ of $S_-$,
 $$
-\zeta_-=\gamma\,\vec\Upsilon_-+\delta\,\tilde\Pi_-,
+\zeta_-=\gamma\,\vec\Pi_{\mathrm{nil},-+}\delta\,\tilde\Pi_{\mathrm{id},-},
 \qquad
-\tilde Q\zeta_-=\lambda_+\gamma\,\vec\Upsilon_-+\lambda_-\delta\,\tilde\Pi_-,
+\tilde Q\zeta_-=\lambda_+\gamma\,\vec\Pi_{\mathrm{nil},-+}\lambda_-\delta\,\tilde\Pi_{\mathrm{id},-},
 $$
 and the same matrix appears:
 $$
@@ -259,16 +259,16 @@ $$
 \boxed{\;[L_{\tilde Q}]=\begin{pmatrix}\Delta&0\\0&\Delta\end{pmatrix},
 \qquad \Delta=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\; }.
 $$
-The one-sided operator therefore acts by the **same** diagonal matrix on the two spinor spaces and never mixes the two Peirce copies. The two copies are not an accident of notation: $S_+$ and $S_-$ are distinct minimal left ideals, and left multiplication preserves each of them separately. Neither $S_+$ nor $S_-$ is an eigenspace of $L_{\tilde Q}$: each carries both eigenvalues, and the eigenspaces of $L_{\tilde Q}$ are the right ideals $\tilde\Pi_\pm\mathbb{B}$ of §*The Eigenbasis*.
+The one-sided operator therefore acts by the **same** diagonal matrix on the two spinor spaces and never mixes the two Peirce copies. The two copies are not an accident of notation: $S_+$ and $S_-$ are distinct minimal left ideals, and left multiplication preserves each of them separately. Neither $S_+$ nor $S_-$ is an eigenspace of $L_{\tilde Q}$: each carries both eigenvalues, and the eigenspaces of $L_{\tilde Q}$ are the right ideals $\tilde\Pi_{\mathrm{id},\pm}\mathbb{B}$ of §*The Eigenbasis*.
 
 **The label is the Peirce index.** The words first and second copy name the two Peirce components $S_+$ and $S_-$; they are a copy label, not a Lorentz chirality. Both components carry the same spinor representation, and the two Lorentz chiralities are the two tensor slots of §*The Weight Relation and the Two Copies*.
 
 In the eigenbasis matrix model $\mathsf M^{\tilde Q}$ — not the Pauli model $\mathsf M_2$ of §*Conventions* — with
 $$
-\tilde\Pi_+\mapsto E_{11},\quad
-\vec\Upsilon_-\mapsto E_{12},\quad
-\vec\Upsilon_+\mapsto E_{21},\quad
-\tilde\Pi_-\mapsto E_{22},
+\tilde\Pi_{\mathrm{id},+}\mapsto E_{11},\quad
+\vec\Pi_{\mathrm{nil},-}\mapsto E_{12},\quad
+\vec\Pi_{\mathrm{nil},+}\mapsto E_{21},\quad
+\tilde\Pi_{\mathrm{id},-}\mapsto E_{22},
 $$
 the first column is $S_+$ and the second column is $S_-$:
 $$
@@ -785,35 +785,35 @@ The following table collects the comparison. The rank is the complex rank of the
 
 ## The Wall $B^{2}=0$: the Unipotent Case
 
-The second condition $B^{2}=0$ is the wall inside the N-regular sector. Off the wall the element has two distinct eigenvalues and the operators are semisimple. On the wall the element is $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$, the operators are a scalar times a unipotent operator, and the Jordan type leaves the semisimple case. Nothing else changes: the operators remain invertible, of rank four, with the whole algebra as image and zero as kernel.
+The second condition $B^{2}=0$ is the wall inside the N-regular sector. Off the wall the element has two distinct eigenvalues and the operators are semisimple. On the wall the element is $Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}^{2}=0$, the operators are a scalar times a unipotent operator, and the Jordan type leaves the semisimple case. Nothing else changes: the operators remain invertible, of rank four, with the whole algebra as image and zero as kernel.
 
-The scalar line $\vec\Upsilon=0$ is the case $\tilde Q=Q_t e_t$. The operator is $Q_t\,\mathrm{id}$, with the single eigenvalue $Q_t$ of algebraic and geometric multiplicity four and Jordan type $1+1+1+1$; that case needs no separate treatment, and the sections below describe the Jordan part $\vec\Upsilon\neq0$.
+The scalar line $\vec\Pi_{\mathrm{nil}}=0$ is the case $\tilde Q=Q_t e_t$. The operator is $Q_t\,\mathrm{id}$, with the single eigenvalue $Q_t$ of algebraic and geometric multiplicity four and Jordan type $1+1+1+1$; that case needs no separate treatment, and the sections below describe the Jordan part $\vec\Pi_{\mathrm{nil}}\neq0$.
 
 ### The Jordan Structure
 
 Let
 
 $$
-\tilde Q=Q_t\bigl(e_t+\vec\Upsilon\bigr),
+\tilde Q=Q_t\bigl(e_t+\vec\Pi_{\mathrm{nil}}\bigr),
 \qquad
-\vec\Upsilon^2=0,
+\vec\Pi_{\mathrm{nil}}^2=0,
 \qquad
-\vec\Upsilon\neq0.
+\vec\Pi_{\mathrm{nil}}\neq0.
 $$
 
 Then
 
 $$
-L_{\tilde Q}=Q_t\bigl(I+L_{\vec\Upsilon}\bigr),
+L_{\tilde Q}=Q_t\bigl(I+L_{\vec\Pi_{\mathrm{nil}}}\bigr),
 \qquad
-L_{\vec\Upsilon}^2=0,
+L_{\vec\Pi_{\mathrm{nil}}}^2=0,
 \qquad
-L_{\vec\Upsilon}\neq0.
+L_{\vec\Pi_{\mathrm{nil}}}\neq0.
 $$
 
-**Proposition (the two blocks).** The operator $L_{\vec\Upsilon}$ has rank two and kernel of dimension two. The operator $L_{\tilde Q}$ has the single eigenvalue $Q_t$, minimal polynomial $(X-Q_t)^2$, geometric multiplicity two and two Jordan blocks of size two. The same statements hold for $R_{\tilde Q}$.
+**Proposition (the two blocks).** The operator $L_{\vec\Pi_{\mathrm{nil}}}$ has rank two and kernel of dimension two. The operator $L_{\tilde Q}$ has the single eigenvalue $Q_t$, minimal polynomial $(X-Q_t)^2$, geometric multiplicity two and two Jordan blocks of size two. The same statements hold for $R_{\tilde Q}$.
 
-*Proof.* The image of $L_{\vec\Upsilon}$ is the left ideal $\mathbb{B}\vec\Upsilon$, of complex dimension two because $\vec\Upsilon\neq0$ and $\vec\Upsilon^2=0$; the kernel is the right annihilator of $\vec\Upsilon$, also of complex dimension two. The square is zero, so the image lies in the kernel and both have dimension two. A nilpotent of index two on a four-dimensional space with rank two has two blocks of size two. Adding the scalar $Q_t$ shifts the eigenvalue and preserves the blocks.
+*Proof.* The image of $L_{\vec\Pi_{\mathrm{nil}}}$ is the left ideal $\mathbb{B}\vec\Pi_{\mathrm{nil}}$, of complex dimension two because $\vec\Pi_{\mathrm{nil}}\neq0$ and $\vec\Pi_{\mathrm{nil}}^2=0$; the kernel is the right annihilator of $\vec\Pi_{\mathrm{nil}}$, also of complex dimension two. The square is zero, so the image lies in the kernel and both have dimension two. A nilpotent of index two on a four-dimensional space with rank two has two blocks of size two. Adding the scalar $Q_t$ shifts the eigenvalue and preserves the blocks.
 
 The determinant and the trace follow from the matrix model:
 
@@ -838,7 +838,7 @@ Their product is the left multiplication by the unit factor,
 $$
 L_{\tilde U}=L_{\tilde U_{\mathrm b}}\circ L_{\tilde u_{\mathrm r}},
 \qquad
-\tilde U=\varepsilon\bigl(e_t+\vec\Upsilon\bigr).
+\tilde U=\varepsilon\bigl(e_t+\vec\Pi_{\mathrm{nil}}\bigr).
 $$
 
 The product is unipotent up to $\varepsilon$, while the two factors are not. This is the one-sided form of the Cartan phenomenon: the operator $L_{\tilde U}$ has a double eigenvalue and two Jordan blocks, and its two polar factors are left multiplications by a positive element and a rotor, each with distinct eigenvalues.
@@ -860,7 +860,7 @@ Their product is the left multiplication by the unit factor,
 $$
 L_{\tilde U}=L_{\tilde U_{\mathrm b}}\circ L_{\tilde u_{\mathrm r}},
 \qquad
-\tilde U=\varepsilon\bigl(e_t+\vec\Upsilon\bigr).
+\tilde U=\varepsilon\bigl(e_t+\vec\Pi_{\mathrm{nil}}\bigr).
 $$
 
 The product is unipotent up to $\varepsilon$, while the two factors are not. This is the one-sided form of the Cartan phenomenon: the operator $L_{\tilde U}$ has a double eigenvalue and two Jordan blocks, and its two polar factors are left multiplications by a positive element and a rotor, each with distinct eigenvalues.
@@ -869,18 +869,18 @@ The one-sided operator therefore sees the defect more directly than the element.
 
 ### The Exponential at the Wall
 
-On the wall the element is $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$, so the operator is $Q_t(I+L_{\vec\Upsilon})$ with $L_{\vec\Upsilon}^{2}=0$, and its exponential is a shear:
+On the wall the element is $Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}^{2}=0$, so the operator is $Q_t(I+L_{\vec\Pi_{\mathrm{nil}}})$ with $L_{\vec\Pi_{\mathrm{nil}}}^{2}=0$, and its exponential is a shear:
 $$
 \boxed{\;\exp\bigl(tL_{\tilde Q}\bigr)
-=e^{tQ_t}\bigl(I+tQ_t\,L_{\vec\Upsilon}\bigr)\;}
+=e^{tQ_t}\bigl(I+tQ_t\,L_{\vec\Pi_{\mathrm{nil}}}\bigr)\;}
 $$
-for every complex $t$. In particular $\exp L_{\tilde Q}=e^{Q_t}(I+Q_tL_{\vec\Upsilon})$.
+for every complex $t$. In particular $\exp L_{\tilde Q}=e^{Q_t}(I+Q_tL_{\vec\Pi_{\mathrm{nil}}})$.
 
-*Proof.* $L_{\tilde Q}=Q_t(I+L_{\vec\Upsilon})$ and $L_{\vec\Upsilon}^{2}=L_{\vec\Upsilon^{2}}=0$. The two terms commute, being polynomials in $L_{\vec\Upsilon}$, so the exponential is $e^{tQ_t}\exp(tQ_tL_{\vec\Upsilon})$, and the second factor truncates at degree one.
+*Proof.* $L_{\tilde Q}=Q_t(I+L_{\vec\Pi_{\mathrm{nil}}})$ and $L_{\vec\Pi_{\mathrm{nil}}}^{2}=L_{\vec\Pi_{\mathrm{nil}}^{2}}=0$. The two terms commute, being polynomials in $L_{\vec\Pi_{\mathrm{nil}}}$, so the exponential is $e^{tQ_t}\exp(tQ_tL_{\vec\Pi_{\mathrm{nil}}})$, and the second factor truncates at degree one.
 
 **The group is a line of shears.** It moves the identity along the nilpotent direction and stops at degree one; it has no period and carries no angle. The polar angles are in the factors: $L_{\tilde U_{\mathrm b}}$ has the eigenvalues $e^{\pm\theta_{\mathrm{rpd}}/2}$, each twice, and $L_{\tilde u_{\mathrm r}}$ has $e^{\pm i\theta_{\mathrm{axr}}/2}$, each twice. Their product has the single eigenvalue $Q_t$, with two Jordan blocks of size two, and its spectrum carries no angle at all. In the regular sector the eigenvalues of $L_{\tilde Q}$ are $\varrho\,e^{i\theta_{\mathrm{pha}}}\mu_\pm$ with $\mu_\pm=U_t\pm i\sqrt{1-U_t^{2}}$ and $U_t=\operatorname{Sc}\tilde U$; at the wall $U_t\to\varepsilon$ and both eigenvalues tend to $\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon=Q_t$.
 
-**The two angles are locked.** The wall removes neither factor; it removes two real degrees of freedom. Write $\vec\Upsilon=\vec A+i\vec B$ with $\vec A$ and $\vec B$ real, so that $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$. The regular word carries two independent exponents, $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$, about two independent axes. At the wall the exact exponent is $\vec\Upsilon$ itself, and the formal sum of the two factor exponents differs from it by the log defect of *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Formal Exponent and the Defect at the Wall*, whose cross term $i\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r}$ is non-zero because the axes are orthogonal. What the wall leaves is a pair of constraints between the two factors:
+**The two angles are locked.** The wall removes neither factor; it removes two real degrees of freedom. Write $\vec\Pi_{\mathrm{nil}}=\vec A+i\vec B$ with $\vec A$ and $\vec B$ real, so that $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$. The regular word carries two independent exponents, $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$, about two independent axes. At the wall the exact exponent is $\vec\Pi_{\mathrm{nil}}$ itself, and the formal sum of the two factor exponents differs from it by the log defect of *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Formal Exponent and the Defect at the Wall*, whose cross term $i\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r}$ is non-zero because the axes are orthogonal. What the wall leaves is a pair of constraints between the two factors:
 $$
 \boxed{\;\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0,\qquad
 \varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}=\sinh\frac{\theta_{\mathrm{rpd}}}{2}=a.\;}
@@ -888,7 +888,7 @@ $$
 
 *Proof.* From the coordinate boxes of *The Complete Polar Decomposition of an N-Regular Biquaternion*, $\cosh\frac{\theta_{\mathrm{rpd}}}{2}=\sqrt{1+a^2}$, $\sinh\frac{\theta_{\mathrm{rpd}}}{2}=a$, $\lvert\cos\frac{\theta_{\mathrm{axr}}}{2}\rvert=1/\sqrt{1+a^2}$ and $\sin\frac{\theta_{\mathrm{axr}}}{2}=a/\sqrt{1+a^2}$. Hence $\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}=a=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$. The axes are $\vec u_{\mathrm b}\propto\vec B+\vec A\times\vec B$ and $\vec u_{\mathrm r}=\varepsilon\vec A/a$. The vectors $\vec B$ and $\vec A\times\vec B$ are both orthogonal to $\vec A$, because $\vec A\cdot\vec B=0$, so $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$.
 
-**One slot against two.** At the wall the spinor exponent is $\vec\Upsilon$, carried by the left slot, and the vector exponent of the two-sided operator is $\vec\Upsilon$ in the left slot plus $\vec\Upsilon^{*}$ in the right. That is the wall form of the doubling: the scalar part appears once per slot, which is why the modulus is $Q_t$ in the one-sided reading and $\lvert Q_t\rvert^{2}$ in the two-sided one, and not a doubled exponent.
+**One slot against two.** At the wall the spinor exponent is $\vec\Pi_{\mathrm{nil}}$, carried by the left slot, and the vector exponent of the two-sided operator is $\vec\Pi_{\mathrm{nil}}$ in the left slot plus $\vec\Pi_{\mathrm{nil}}^{*}$ in the right. That is the wall form of the doubling: the scalar part appears once per slot, which is why the modulus is $Q_t$ in the one-sided reading and $\lvert Q_t\rvert^{2}$ in the two-sided one, and not a doubled exponent.
 
 ### Worked Example
 
@@ -903,7 +903,7 @@ i & 0 & 1 & -1\\
 0 & -i & 1 & 1
 \end{pmatrix},
 \qquad
-\mathsf M(L_{\vec\Upsilon})=
+\mathsf M(L_{\vec\Pi_{\mathrm{nil}}})=
 \begin{pmatrix}
 0 & -1 & -i & 0\\
 1 & 0 & 0 & i\\
@@ -912,7 +912,7 @@ i & 0 & 0 & -1\\
 \end{pmatrix}.
 $$
 
-The second matrix squares to zero and has rank two. The first is the identity plus the second, so it has the single eigenvalue $1$, two Jordan blocks of size two, determinant $1$ and trace $4$. The exponential is $e^{t}\bigl(I+t\,\mathsf M(L_{\vec\Upsilon})\bigr)$: the identity plus $t$ times the nilpotent part, multiplied by $e^{t}$, and at $t=1$ it is $e$ times the unipotent matrix above, as §*The Exponential at the Wall* requires.
+The second matrix squares to zero and has rank two. The first is the identity plus the second, so it has the single eigenvalue $1$, two Jordan blocks of size two, determinant $1$ and trace $4$. The exponential is $e^{t}\bigl(I+t\,\mathsf M(L_{\vec\Pi_{\mathrm{nil}}})\bigr)$: the identity plus $t$ times the nilpotent part, multiplied by $e^{t}$, and at $t=1$ it is $e$ times the unipotent matrix above, as §*The Exponential at the Wall* requires.
 
 The polar factors are left multiplications by
 
@@ -926,19 +926,19 @@ Their left multiplication matrices are not unipotent. Their product is the unipo
 
 ### The Image and the Kernel of the Nilpotent Part
 
-Because $\tilde Q$ is invertible, $L_{\tilde Q}$ is invertible: its image is the whole algebra and its kernel is zero. The interesting image and kernel are those of $L_{\vec\Upsilon}$, not of $L_{\tilde Q}$.
+Because $\tilde Q$ is invertible, $L_{\tilde Q}$ is invertible: its image is the whole algebra and its kernel is zero. The interesting image and kernel are those of $L_{\vec\Pi_{\mathrm{nil}}}$, not of $L_{\tilde Q}$.
 
-The image of $L_{\vec\Upsilon}$ is the left ideal generated by $\vec\Upsilon$,
+The image of $L_{\vec\Pi_{\mathrm{nil}}}$ is the left ideal generated by $\vec\Pi_{\mathrm{nil}}$,
 
 $$
-\operatorname{im}L_{\vec\Upsilon}=\mathbb{B}\vec\Upsilon
-=\mathbb{C}\{\vec\Upsilon,\vec\Upsilon\vec e_x,\vec\Upsilon\vec e_y,\vec\Upsilon\vec e_z\},
+\operatorname{im}L_{\vec\Pi_{\mathrm{nil}}}=\mathbb{B}\vec\Pi_{\mathrm{nil}}
+=\mathbb{C}\{\vec\Pi_{\mathrm{nil}},\vec\Pi_{\mathrm{nil}}\vec e_x,\vec\Pi_{\mathrm{nil}}\vec e_y,\vec\Pi_{\mathrm{nil}}\vec e_z\},
 $$
 
 of dimension two. The kernel is the right annihilator
 
 $$
-\ker L_{\vec\Upsilon}=\{\tilde X:\vec\Upsilon\tilde X=0\},
+\ker L_{\vec\Pi_{\mathrm{nil}}}=\{\tilde X:\vec\Pi_{\mathrm{nil}}\tilde X=0\},
 $$
 
 also of dimension two. The kernel is the generalized eigenspace of $L_{\tilde Q}$ at $Q_t$; the image is the left ideal inside it. The Jordan blocks live on a complement to the kernel.
@@ -1008,7 +1008,7 @@ The scale acts as $\varrho$, not $\varrho^{2}$. The phase acts as $\exp(i\theta_
 
 Off the wall the exponential has the eigenvalues $e^{t\lambda_\pm}$, each twice, the determinant $\exp(4tQ_t)$ and the trace $4e^{tQ_t}\cos(tB)$.
 
-On the wall $B^{2}=0$ the element is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $L_{\tilde Q}=Q_t(I+L_{\vec\Upsilon})$ with $L_{\vec\Upsilon}^{2}=0$. The operator has the single eigenvalue $Q_t$, minimal polynomial $(X-Q_t)^{2}$, rank two for $L_{\vec\Upsilon}$, geometric multiplicity two and two Jordan blocks of size two, with $\det_{\mathbb{C}}L_{\tilde Q}=Q_t^{4}$ and $\operatorname{tr}L_{\tilde Q}=4Q_t$. The polar factors $L_{\tilde U_{\mathrm b}}$ and $L_{\tilde u_{\mathrm r}}$ are not unipotent; their product is. The image of $L_{\vec\Upsilon}$ is the left ideal $\mathbb{B}\vec\Upsilon$ and its kernel is the right annihilator, both of complex dimension two. Its exponential is the shear $\exp(tL_{\tilde Q})=e^{tQ_t}(I+tQ_tL_{\vec\Upsilon})$, with no period and no angle, while the polar angles survive in the factors and are locked by $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$ and $\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}=\sinh\frac{\theta_{\mathrm{rpd}}}{2}=a$.
+On the wall $B^{2}=0$ the element is $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ and $L_{\tilde Q}=Q_t(I+L_{\vec\Pi_{\mathrm{nil}}})$ with $L_{\vec\Pi_{\mathrm{nil}}}^{2}=0$. The operator has the single eigenvalue $Q_t$, minimal polynomial $(X-Q_t)^{2}$, rank two for $L_{\vec\Pi_{\mathrm{nil}}}$, geometric multiplicity two and two Jordan blocks of size two, with $\det_{\mathbb{C}}L_{\tilde Q}=Q_t^{4}$ and $\operatorname{tr}L_{\tilde Q}=4Q_t$. The polar factors $L_{\tilde U_{\mathrm b}}$ and $L_{\tilde u_{\mathrm r}}$ are not unipotent; their product is. The image of $L_{\vec\Pi_{\mathrm{nil}}}$ is the left ideal $\mathbb{B}\vec\Pi_{\mathrm{nil}}$ and its kernel is the right annihilator, both of complex dimension two. Its exponential is the shear $\exp(tL_{\tilde Q})=e^{tQ_t}(I+tQ_tL_{\vec\Pi_{\mathrm{nil}}})$, with no period and no angle, while the polar angles survive in the factors and are locked by $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$ and $\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}=\sinh\frac{\theta_{\mathrm{rpd}}}{2}=a$.
 
 In the eigenbasis the left multiplication is diagonal,
 $$
@@ -1016,7 +1016,7 @@ $$
 \qquad
 \lambda_\pm=Q_t\pm iB .
 $$
-The two spinor spaces $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$ are the two Peirce copies. On each, with the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$ or $(\vec\Upsilon_-,\tilde\Pi_-)$, the operator is the same matrix
+The two spinor spaces $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ and $S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}$ are the two Peirce copies. On each, with the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ or $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$, the operator is the same matrix
 $$
 \Delta=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
 $$
@@ -1045,15 +1045,15 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$ | the unit real quaternion rotor |
 | $D_{\tilde Q},O_{\tilde Q}$ | the symmetrized and antisymmetrized multiplication blocks |
 | $\lambda_\pm=Q_t\pm iB$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the two eigenvalues of $L_{\tilde Q}$ |
-| $\tilde\Pi_\pm,\vec\Upsilon_\pm$ | the eigenprojections and the normalised nilpotents of the eigenbasis |
-| $S_+=\mathbb{B}\tilde\Pi_+$, $S_-=\mathbb{B}\tilde\Pi_-$ | the two spinor spaces (Peirce copy), the Peirce carriers (minimal left ideals here) |
+| $\tilde\Pi_{\mathrm{id},\pm},\vec\Pi_{\mathrm{nil},\pm}$ | the eigenprojections and the normalised nilpotents of the eigenbasis |
+| $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$, $S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}$ | the two spinor spaces (Peirce copy), the Peirce carriers (minimal left ideals here) |
 | $\Delta=\operatorname{diag}(\lambda_+,\lambda_-)$ | the common spinor matrix on $S_+$ and $S_-$ |
 | $S,S^{*}$ | the spinor space $\mathbb{C}^{2}$ and its dual, with $\mathbb{B}\cong S\otimes S^{*}$ |
 | $\Delta_{\mathrm{rep}},\bar\Delta_{\mathrm{rep}}$ | the defining representation on $S$ and its conjugate |
 | $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | the eigenvalues of the unit factor, the pair on one spinor slot |
 | $\mathsf M^{\tilde Q}$ | the eigenbasis matrix model, not the Pauli model $\mathsf M_2$ |
-| $\vec\Upsilon=\vec A+i\vec B$, $a$ | the null vector on the wall, $\lvert\vec A\rvert=\lvert\vec B\rvert=a$, $\vec A\cdot\vec B=0$ |
-| $L_{\vec\Upsilon}$ | the left multiplication by the null vector, $L_{\vec\Upsilon}^{2}=0$ |
+| $\vec\Pi_{\mathrm{nil}}=\vec A+i\vec B$, $a$ | the null vector on the wall, $\lvert\vec A\rvert=\lvert\vec B\rvert=a$, $\vec A\cdot\vec B=0$ |
+| $L_{\vec\Pi_{\mathrm{nil}}}$ | the left multiplication by the null vector, $L_{\vec\Pi_{\mathrm{nil}}}^{2}=0$ |
 | $J=L_i=R_i$ | the pure central phase of $\pi/2$, the complex structure |
 | $g$ | the Minkowski form, $\langle\tilde Q\rangle_{\natural}$ on $\mathbb{B}_{\Psi}$ and $-\langle\tilde Q\rangle_{\natural}$ on $\mathbb{B}_{\Phi}$ |
 | $GL(2,\mathbb{C})$ | the image of the one-sided action on the invertibles |

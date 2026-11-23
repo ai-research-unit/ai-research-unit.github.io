@@ -19,13 +19,13 @@ $$
 
 The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \vec Q$, where $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_t} e_t + \vec Q^*$, with $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$. The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.
 
-The idempotents of the split complex algebra are $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
+The idempotents of the split complex algebra are $\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_{\mathrm{id},2} = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
 $$
-\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_{\mathrm{id},1} + \tilde{Q}_- \tilde\Pi_{\mathrm{id},2},
 $$
 
-with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$ ordinary quaternions.
+with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{\mathrm{id},1,2} \in \mathbb{H}$ ordinary quaternions.
 
 ## The Metric Structure of $\mathbb{B}_{\mathrm{spl}}$
 
@@ -408,10 +408,10 @@ This contains terms that couple the four components of $\tilde{S}$ to the partia
 
 ### The Operators in the Idempotent Basis
 
-Because the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, the differential operators can be expressed in the idempotent basis. For a function $F_{\mathrm{fn}} = F_{\mathrm{fn},+} \tilde\Pi_1 + F_{\mathrm{fn},-} \tilde\Pi_2$ with $F_{\mathrm{fn},\pm} \in \mathbb{H}$, the gradient acts componentwise:
+Because the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, the differential operators can be expressed in the idempotent basis. For a function $F_{\mathrm{fn}} = F_{\mathrm{fn},+} \tilde\Pi_{\mathrm{id},1} + F_{\mathrm{fn},-} \tilde\Pi_{\mathrm{id},2}$ with $F_{\mathrm{fn},\pm} \in \mathbb{H}$, the gradient acts componentwise:
 
 $$
-\tilde\nabla_\Phi F_{\mathrm{fn}} = (\tilde\nabla_\Phi F_{\mathrm{fn},+}) \tilde\Pi_1 + (\tilde\nabla_\Phi F_{\mathrm{fn},-}) \tilde\Pi_2,
+\tilde\nabla_\Phi F_{\mathrm{fn}} = (\tilde\nabla_\Phi F_{\mathrm{fn},+}) \tilde\Pi_{\mathrm{id},1} + (\tilde\nabla_\Phi F_{\mathrm{fn},-}) \tilde\Pi_{\mathrm{id},2},
 $$
 
 where $\tilde\nabla_\Phi$ on the right is the quaternion gradient acting on each component. The d'Alembertian and the convective derivative act in the same way.
@@ -452,7 +452,7 @@ $$
 \{\tilde{Ζ} \in \mathbb{B}_{\mathrm{spl}} : \tilde{Ζ}^2 = -1\} \cong \mathbb{S}^2 \times \mathbb{S}^2.
 $$
 
-The isomorphism is given by $\tilde{Ζ} \mapsto (\mu_+, \mu_-)$, where $\tilde{Ζ} = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2$ and $\mu_\pm$ are unit pure real quaternions.
+The isomorphism is given by $\tilde{Ζ} \mapsto (\mu_+, \mu_-)$, where $\tilde{Ζ} = \mu_+ \tilde\Pi_{\mathrm{id},1} + \mu_- \tilde\Pi_{\mathrm{id},2}$ and $\mu_\pm$ are unit pure real quaternions.
 
 The parametrisation $\tilde{Ζ} \mapsto (\mu_+, \mu_-)$ is a regular parametrisation: its differential has rank $4$ everywhere, because the two-sphere is a manifold and the parametrisation is a product of the two identity maps. So the root set of $-1$ in $\mathbb{B}_{\mathrm{spl}}$ is a compact four-dimensional embedded submanifold, isomorphic to $\mathbb{S}^2 \times \mathbb{S}^2$. The proof of regularity uses the derivative, and for that reason the manifold statement is placed here in the analysis rather than in the algebraic article *Split-Biquaternion Roots of Minus One*, where the root set is determined only as a set.
 
@@ -506,13 +506,13 @@ The specialization to specific four-dimensional subspaces, including the quatern
 | $\mathbb{B}_{\mathrm{spl}}$ | Split biquaternion algebra, $\mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $j$ | Split complex unit, central, $j^2 = +1$ |
-| $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$, $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ | Idempotents of $\mathbb{C}_{\mathrm{spl}}$ |
+| $\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + j)$, $\tilde\Pi_{\mathrm{id},2} = \tfrac{1}{2}(1 - j)$ | Idempotents of $\mathbb{C}_{\mathrm{spl}}$ |
 | $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ | General split biquaternion |
 | $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient |
 | $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ | Split vector part |
 | $\tilde{Q}^{\natural}, \bar{\tilde{Q}}, \tilde{Q}^{*}, \tilde{Q}^\flat$ | The four conjugations |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
-| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |
+| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{\mathrm{id},1,2}$ | Idempotent components |
 | $\|\tilde{Q}\|$ | Euclidean norm on $\mathbb{B}_{\mathrm{spl}} \cong \mathbb{R}^8$ |
 | $d(\tilde Q_1, \tilde Q_2) = \|\tilde Q_1 - \tilde Q_2\|$ | Distance |
 | $V$ | A four-dimensional real subspace, coordinates $Q_t, Q_x, Q_y, Q_z$ |

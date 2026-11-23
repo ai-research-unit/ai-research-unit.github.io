@@ -45,7 +45,7 @@ The two structures give two lists:
 
 | structure | carriers | dimensions | spins |
 |---|---|---|---|
-| left multiplication | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | $2$ | $\tfrac12$ |
+| left multiplication | $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | $2$ | $\tfrac12$ |
 | conjugation | $Z=\mathbb{C}e_t$ | $1$ | $0$ |
 | conjugation | $V=\ker\operatorname{tr}$ | $3$ | $1$ |
 
@@ -67,44 +67,44 @@ The spin-half carrier occurs twice, as the two Peirce planes; it is one isomorph
 
 ## The Spinor: Spin One Half
 
-**The carrier.** The Peirce plane $S_+=\mathbb{B}\tilde\Pi_+$ has complex dimension two, with basis $(\tilde\Pi_+,\vec\Upsilon_{-+})$. The second plane $S_-$ is a second copy, module-isomorphic and Hilbert-orthogonal.
+**The carrier.** The Peirce plane $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ has complex dimension two, with basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-+})$. The second plane $S_-$ is a second copy, module-isomorphic and Hilbert-orthogonal.
 
 **The operators.** With $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$,
 
 $$
 \tilde S_{\Psi}^2=\tfrac34\hbar^{2}\,e_{t},\qquad
-\tilde S_{\Psi,3}\tilde\Pi_+=\frac{\hbar}{2}\tilde\Pi_+,\qquad
-\tilde S_{\Psi,3}\vec\Upsilon_{-+}=-\frac{\hbar}{2}\vec\Upsilon_{-+}.
+\tilde S_{\Psi,3}\tilde\Pi_{\mathrm{id},+}=\frac{\hbar}{2}\tilde\Pi_{\mathrm{id},+},\qquad
+\tilde S_{\Psi,3}\vec\Pi_{\mathrm{nil},-+}=-\frac{\hbar}{2}\vec\Pi_{\mathrm{nil},-+}.
 $$
 
 The ladder operators are the nilpotent mixed units
 
 $$
-\vec\Upsilon_{+-}=\tfrac12(i\vec e_x-\vec e_y),\qquad
-\vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y),
+\vec\Pi_{\mathrm{nil},+-}=\tfrac12(i\vec e_x-\vec e_y),\qquad
+\vec\Pi_{\mathrm{nil},-+}=\tfrac12(i\vec e_x+\vec e_y),
 $$
 
-with $\tilde S_{\Psi,+}=\hbar\,\vec \Upsilon_{+-}$, $\tilde S_{\Psi,-}=\hbar\,\vec \Upsilon_{-+}$ and $\tilde S_{\Psi,\pm}^2=0$. In *Spin and the Three Elementary Carriers* the same units are written $\vec\Upsilon_{+-}=\vec\Upsilon_x$ and $\vec\Upsilon_{-+}=\vec\Upsilon_y$.
+with $\tilde S_{\Psi,+}=\hbar\,\vec\Pi_{\mathrm{nil},+-}$, $\tilde S_{\Psi,-}=\hbar\,\vec\Pi_{\mathrm{nil},-+}$ and $\tilde S_{\Psi,\pm}^2=0$. In *Spin and the Three Elementary Carriers* the same units are written $\vec\Pi_{\mathrm{nil},+-}=\vec\Pi_{\mathrm{nil},x}$ and $\vec\Pi_{\mathrm{nil},-+}=\vec\Pi_{\mathrm{nil},y}$.
 
 **The copies at an axis.** For a unit real pure quaternion $\vec u$, the idempotents
 
 $$
-\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)
+\tilde\Pi_{\mathrm{id},\pm}(\vec u)=\tfrac12(e_t\pm i\vec u)
 $$
 
-generate the minimal left ideals $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$, each a copy of the carrier. The planes $S_\pm$ above are the case $\vec u=\vec e_z$.
+generate the minimal left ideals $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u)$, each a copy of the carrier. The planes $S_\pm$ above are the case $\vec u=\vec e_z$.
 
-**The states in a copy.** In the left action, $\tilde\Pi_+(\vec u)$ is the state of weight $+\frac{\hbar}{2}$ in $S_+(\vec u)$,
+**The states in a copy.** In the left action, $\tilde\Pi_{\mathrm{id},+}(\vec u)$ is the state of weight $+\frac{\hbar}{2}$ in $S_+(\vec u)$,
 
 $$
-(\vec u\cdot\tilde S_{\Psi})\,\tilde\Pi_+(\vec u)=+\frac{\hbar}{2}\,\tilde\Pi_+(\vec u),
+(\vec u\cdot\tilde S_{\Psi})\,\tilde\Pi_{\mathrm{id},+}(\vec u)=+\frac{\hbar}{2}\,\tilde\Pi_{\mathrm{id},+}(\vec u),
 $$
 
-and $\tilde\Pi_-(\vec u)$ is the state of weight $-\frac{\hbar}{2}$ in $S_-(\vec u)$. The state of weight $-\frac{\hbar}{2}$ in $S_+$ is its nilpotent basis vector, not an idempotent.
+and $\tilde\Pi_{\mathrm{id},-}(\vec u)$ is the state of weight $-\frac{\hbar}{2}$ in $S_-(\vec u)$. The state of weight $-\frac{\hbar}{2}$ in $S_+$ is its nilpotent basis vector, not an idempotent.
 
 **The two outcomes.** The two idempotents are the two outcomes of a measurement along $\vec u$: pure states of the algebra, not two vectors of one module. The axis is the measurement direction, and the two outcomes are its two signs.
 
-**The double cover.** A $2\pi$ rotation is multiplication by $-e_t$, which acts as $-\operatorname{id}$ on every copy $S_\pm(\vec u)$: a state returns to itself only up to sign. This is the spinor sign and the source of the half-integer class. The sign belongs to the module action, not to the idempotent: conjugation by the rotor carries $\tilde\Pi_+(\vec u)$ to $\tilde\Pi_+(\vec u')$ with no sign.
+**The double cover.** A $2\pi$ rotation is multiplication by $-e_t$, which acts as $-\operatorname{id}$ on every copy $S_\pm(\vec u)$: a state returns to itself only up to sign. This is the spinor sign and the source of the half-integer class. The sign belongs to the module action, not to the idempotent: conjugation by the rotor carries $\tilde\Pi_{\mathrm{id},+}(\vec u)$ to $\tilde\Pi_{\mathrm{id},+}(\vec u')$ with no sign.
 
 **The physical interpretation.** The electron, the quarks and the leptons. The same carrier, with the Hermitian form of the second slot, is the defining module of the relativistic qubit: two states, a Bloch sphere of axes, and the same double cover.
 
@@ -226,10 +226,10 @@ The physical interpretation is the scalar, the spinor and the vector, and the ob
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The biquaternion algebra |
 | $Z=\mathbb{C}e_t$ | The centre, the spin-zero carrier |
 | $V=\ker\operatorname{tr}$ | The traceless part, the spin-one carrier |
-| $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | The two Peirce planes, the spin-half carrier |
-| $\tilde\Pi_\pm(\vec u)$ | The idempotents along the axis $\vec u$ |
-| $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | The copy of the carrier at the axis $\vec u$ |
-| $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ | The nilpotent mixed units |
+| $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | The two Peirce planes, the spin-half carrier |
+| $\tilde\Pi_{\mathrm{id},\pm}(\vec u)$ | The idempotents along the axis $\vec u$ |
+| $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u)$ | The copy of the carrier at the axis $\vec u$ |
+| $\vec\Pi_{\mathrm{nil},+-},\vec\Pi_{\mathrm{nil},-+}$ | The nilpotent mixed units |
 | $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$ | The spin-half operators |
 | $\tilde S_{\Psi,\mathrm{adj},\eta}=\frac{\hbar}{2}\mathrm{ad}_{i\vec e_\eta}a$ | The spin-one generators |
 | $C=\tilde S_{\Psi,\mathrm{adj}}^2$ | The Casimir, $\sum_\eta(\tilde S_{\Psi,\mathrm{adj},\eta})^2$ |

@@ -45,7 +45,7 @@ E=\hbar c\,k_t',
 \vec p=\hbar\vec k_\Phi .
 $$
 
-The check is exact and it is a check of an identity, not of an approximation. With $m=c=\hbar=1$ and $\varkappa=0.7$, the residual of the display above at $a_t'=0$, $0.4$, $1.0$ and $1.5$ was $0.0$ at every one of the sampled momenta.
+The check is exact and it is a check of an identity, not of an approximation. With lengths in units of $1/k_m$, momenta in units of $mc$, and $\varkappa=0.7$, the residual of the display above at $a_t'=0$, $0.4$, $1.0$ and $1.5$ was $0.0$ at every one of the sampled momenta.
 
 **The support is a hyperboloid of the same radius, centred at $(-\varkappa c a_t',-\varkappa\vec A)$.** So the potential does to the support exactly what a translation of the chart does to a figure: it moves it and does not deform it. A shift of a variable cannot change a radius, which is the free companion's one-line reason and is the whole of this section, and the displacement of the lowest branch is $\varkappa c\,a_t'$ linearly.
 

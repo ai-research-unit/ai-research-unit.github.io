@@ -23,7 +23,7 @@ $$
 \tilde{Q}_+ = \sum_{\mu\in\{t,x,y,z\}} (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_{\mu\in\{t,x,y,z\}} (q_\mu - q'_\mu) e_\mu.
 $$
 
-The idempotent decomposition is $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$, with $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$.
+The idempotent decomposition is $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_{\mathrm{id},1} + \tilde{Q}_- \tilde\Pi_{\mathrm{id},2}$, with $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(1 \pm j)$.
 
 **Notation.** To avoid collision with the standard basis $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ and with the split complex unit $j$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the article on split biquaternion roots of minus one.
 
@@ -171,16 +171,16 @@ $$
 
 ### The Idempotent Decomposition of the Transform
 
-The transform decomposes in the idempotent basis. Writing $f(t) = f_+(t) \tilde\Pi_1 + f_-(t) \tilde\Pi_2$ and using the fact that the kernel is the same in both components,
+The transform decomposes in the idempotent basis. Writing $f(t) = f_+(t) \tilde\Pi_{\mathrm{id},1} + f_-(t) \tilde\Pi_{\mathrm{id},2}$ and using the fact that the kernel is the same in both components,
 
 $$
-F(\omega) = \left(\int_{-\infty}^{\infty} W(t, \omega) f_+(t) \, dt\right) \tilde\Pi_1 + \left(\int_{-\infty}^{\infty} W(t, \omega) f_-(t) \, dt\right) \tilde\Pi_2.
+F(\omega) = \left(\int_{-\infty}^{\infty} W(t, \omega) f_+(t) \, dt\right) \tilde\Pi_{\mathrm{id},1} + \left(\int_{-\infty}^{\infty} W(t, \omega) f_-(t) \, dt\right) \tilde\Pi_{\mathrm{id},2}.
 $$
 
 So the transform is the pair of the **quaternion Fourier transforms** of the two idempotent components:
 
 $$
-F(\omega) = F_+(\omega) \tilde\Pi_1 + F_-(\omega) \tilde\Pi_2,
+F(\omega) = F_+(\omega) \tilde\Pi_{\mathrm{id},1} + F_-(\omega) \tilde\Pi_{\mathrm{id},2},
 $$
 
 where $F_\pm(\omega) = \int_{-\infty}^{\infty} W(t, \omega) f_\pm(t) \, dt$ is the quaternion Fourier transform of the component $f_\pm$.
@@ -355,10 +355,10 @@ The general principle is that the continuous Fourier transform **diagonalizes th
 
 ### The Operators in the Idempotent Basis
 
-In the idempotent basis, the differential operators act componentwise on the two idempotent components. For a function $F_{\mathrm{fn}} = F_{\mathrm{fn},+} \tilde\Pi_1 + F_{\mathrm{fn},-} \tilde\Pi_2$ with $F_{\mathrm{fn},\pm} \in \mathbb{H}$, the gradient acts as
+In the idempotent basis, the differential operators act componentwise on the two idempotent components. For a function $F_{\mathrm{fn}} = F_{\mathrm{fn},+} \tilde\Pi_{\mathrm{id},1} + F_{\mathrm{fn},-} \tilde\Pi_{\mathrm{id},2}$ with $F_{\mathrm{fn},\pm} \in \mathbb{H}$, the gradient acts as
 
 $$
-\tilde\nabla_\Phi F_{\mathrm{fn}} = (\tilde\nabla_\Phi F_{\mathrm{fn},+}) \tilde\Pi_1 + (\tilde\nabla_\Phi F_{\mathrm{fn},-}) \tilde\Pi_2,
+\tilde\nabla_\Phi F_{\mathrm{fn}} = (\tilde\nabla_\Phi F_{\mathrm{fn},+}) \tilde\Pi_{\mathrm{id},1} + (\tilde\nabla_\Phi F_{\mathrm{fn},-}) \tilde\Pi_{\mathrm{id},2},
 $$
 
 where $\tilde\nabla_\Phi$ on the right is the quaternion gradient acting on each component. The d'Alembertian and the convective derivative act in the same way. So the split biquaternion analysis is the quaternion analysis applied to each of the two idempotent components separately, and the Fourier transform diagonalizes the operators in each component.
@@ -446,9 +446,9 @@ The key simplification relative to the biquaternion case is the **idempotent dec
 | $\mathbb{B}_{\mathrm{spl}}$ | Split biquaternion algebra, $\mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $j$ | Split complex unit, central, $j^2 = +1$ |
-| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{C}_{\mathrm{spl}}$ |
+| $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{C}_{\mathrm{spl}}$ |
 | $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
-| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |
+| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{\mathrm{id},1,2}$ | Idempotent components |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $\rho$ | A root of $-1$ in $\mathbb{H}$, $\rho^2 = -1$ |
 | $K_\rho(\vec Q)$ | Split biquaternion Fourier kernel |

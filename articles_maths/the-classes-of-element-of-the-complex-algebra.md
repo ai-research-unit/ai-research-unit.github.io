@@ -20,23 +20,23 @@ The article is a consolidation, not a translation. On $\mathbb{C}$ the classes a
 
 ## The Idempotents
 
-**Definition.** An element $\Pi$ is an **idempotent** of a product when $\Pi^{2}=\Pi$ in that product, the zero element being counted.
+**Definition.** An element $\Pi_{\mathrm{id}}$ is an **idempotent** of a product when $\Pi_{\mathrm{id}}^{2}=\Pi_{\mathrm{id}}$ in that product, the zero element being counted.
 
 **Theorem.** In either product the idempotents of $\mathbb{C}$ are $0$ and $1$, and no more.
 
-**Proof.** For the plain product, $\Pi^{2}=\Pi$ reads $\Pi(\Pi-1)=0$; the field has no zero divisor, so $\Pi=0$ or $\Pi=1$. For the sesquilinear product, $\Pi\bar\Pi=\Pi$; if $\Pi=0$ this holds, and if $\Pi\neq0$ it gives $\bar\Pi=1$, that is $\Pi=1$, which is idempotent.
+**Proof.** For the plain product, $\Pi_{\mathrm{id}}^{2}=\Pi_{\mathrm{id}}$ reads $\Pi_{\mathrm{id}}(\Pi_{\mathrm{id}}-1)=0$; the field has no zero divisor, so $\Pi_{\mathrm{id}}=0$ or $\Pi_{\mathrm{id}}=1$. For the sesquilinear product, $\Pi_{\mathrm{id}}\bar\Pi_{\mathrm{id}}=\Pi_{\mathrm{id}}$; if $\Pi_{\mathrm{id}}=0$ this holds, and if $\Pi_{\mathrm{id}}\neq0$ it gives $\bar\Pi_{\mathrm{id}}=1$, that is $\Pi_{\mathrm{id}}=1$, which is idempotent.
 
-**Remark (the degenerate Peirce decomposition).** The Peirce decomposition of an algebra with respect to an idempotent $\Pi$ separates the two corner pieces $\Pi\mathbb{C}\Pi$ and the two mixed pieces; here the only nonzero idempotent is $1$, for which the corner is $\mathbb{C}$ itself and both mixed pieces vanish. The decomposition is therefore trivial, and there are no minimal left ideals off the two obvious corner pieces.
+**Remark (the degenerate Peirce decomposition).** The Peirce decomposition of an algebra with respect to an idempotent $\Pi_{\mathrm{id}}$ separates the two corner pieces $\Pi_{\mathrm{id}}\mathbb{C}\Pi_{\mathrm{id}}$ and the two mixed pieces; here the only nonzero idempotent is $1$, for which the corner is $\mathbb{C}$ itself and both mixed pieces vanish. The decomposition is therefore trivial, and there are no minimal left ideals off the two obvious corner pieces.
 
 ## The Nilpotents
 
-**Definition.** A nonzero element $\Upsilon$ is a **nilpotent** when some power of it vanishes. Over a field the square already suffices, since $\Upsilon^{n}=0$ with $n$ least factors as $\Upsilon\cdot\Upsilon^{n-1}=0$ and forces $\Upsilon^{n-1}=0$; the theorem below is proved for $\Upsilon^{2}=0$.
+**Definition.** A nonzero element $\Pi_{\mathrm{nil}}$ is a **nilpotent** when some power of it vanishes. Over a field the square already suffices, since $\Pi_{\mathrm{nil}}^{n}=0$ with $n$ least factors as $\Pi_{\mathrm{nil}}\cdot\Pi_{\mathrm{nil}}^{n-1}=0$ and forces $\Pi_{\mathrm{nil}}^{n-1}=0$; the theorem below is proved for $\Pi_{\mathrm{nil}}^{2}=0$.
 
-**Theorem.** In either product the only element of $\mathbb{C}$ with $\Upsilon^{2}=0$ is $0$.
+**Theorem.** In either product the only element of $\mathbb{C}$ with $\Pi_{\mathrm{nil}}^{2}=0$ is $0$.
 
-**Proof.** For the plain product, $\Upsilon^{2}=0=\Upsilon\cdot\Upsilon$ forces $\Upsilon=0$ by the absence of zero divisors. For the sesquilinear product, $\Upsilon\bar\Upsilon=(u^{2}+u'^{2})$, where $\Upsilon=u+iu'$, and a sum of two real squares vanishes only at $u=u'=0$.
+**Proof.** For the plain product, $\Pi_{\mathrm{nil}}^{2}=0=\Pi_{\mathrm{nil}}\cdot\Pi_{\mathrm{nil}}$ forces $\Pi_{\mathrm{nil}}=0$ by the absence of zero divisors. For the sesquilinear product, $\Pi_{\mathrm{nil}}\bar\Pi_{\mathrm{nil}}=(u^{2}+u'^{2})$, where $\Pi_{\mathrm{nil}}=u+iu'$, and a sum of two real squares vanishes only at $u=u'=0$.
 
-**Remark.** The second computation is also the reason the sesquilinear square of an element is a non-negative real, the value $\langle\Upsilon\rangle_{*}$ of the definite algebraic norm; the square-zero set of the sesquilinear product is the origin alone.
+**Remark.** The second computation is also the reason the sesquilinear square of an element is a non-negative real, the value $\langle\Pi_{\mathrm{nil}}\rangle_{*}$ of the definite algebraic norm; the square-zero set of the sesquilinear product is the origin alone.
 
 ## The Roots of the Distinguished Values
 
@@ -89,9 +89,9 @@ Read on the complex field, these classes of element are the classes of a field. 
 | $Q_1=q_1+iq'_1$, $Q_2=q_2+iq'_2$ | two complex elements, with the real coordinates $q_1,q'_1$ and $q_2,q'_2$ |
 | $\bar Q_1=q_1-iq'_1$ | the complex conjugation, the base involution; ${}^{*}=\bar{\cdot}$ |
 | $Q_1Q_2$, $Q_1\bar Q_2$ | the general plain bilinear and the general plain sesquilinear product |
-| $\Pi$ | an idempotent, with no tilde in the complex layer |
-| $\Upsilon$ | a nilpotent, with no tilde in the complex layer |
-| $Ζ$ | a root of a central value, with no tilde in the complex layer |
+| $\Pi_{\mathrm{id}}$ | an idempotent of the complex layer, a capital with no tilde |
+| $\Pi_{\mathrm{nil}}$ | a nilpotent of the complex layer, a capital with no tilde |
+| $Ζ$ | a root of a central value, a capital with no tilde |
 
 ## Further Reading
 

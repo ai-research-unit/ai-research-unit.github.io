@@ -5,7 +5,7 @@
 
 This article introduces the split biquaternion algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real vector subspaces that arise from the quaternion conjugation.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{C}_{\mathrm{spl}}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{C}_{\mathrm{spl}}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_{\mathrm{id},2} = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$.
 
 Throughout this article, the quaternion basis is written $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, and the split complex unit is written $j$, with $j^2 = +1$. The unit $j$ commutes with the quaternion units: $j e_\mu = e_\mu j$ for $\mu = 0, 1, 2, 3$.
 
@@ -74,29 +74,29 @@ The isomorphism is given by the **idempotent decomposition**, which is the most 
 Define the idempotents
 
 $$
-\tilde\Pi_1 = \tfrac{1}{2}(1 + j), \qquad \tilde\Pi_2 = \tfrac{1}{2}(1 - j).
+\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + j), \qquad \tilde\Pi_{\mathrm{id},2} = \tfrac{1}{2}(1 - j).
 $$
 
 They satisfy
 
 $$
-\tilde\Pi_1^2 = \tilde\Pi_1, \qquad \tilde\Pi_2^2 = \tilde\Pi_2, \qquad \tilde\Pi_1 \tilde\Pi_2 = \tilde\Pi_2 \tilde\Pi_1 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = 1.
+\tilde\Pi_{\mathrm{id},1}^2 = \tilde\Pi_{\mathrm{id},1}, \qquad \tilde\Pi_{\mathrm{id},2}^2 = \tilde\Pi_{\mathrm{id},2}, \qquad \tilde\Pi_{\mathrm{id},1} \tilde\Pi_{\mathrm{id},2} = \tilde\Pi_{\mathrm{id},2} \tilde\Pi_{\mathrm{id},1} = 0, \qquad \tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2} = 1.
 $$
 
 Every split biquaternion is written uniquely in the idempotent basis as
 
 $$
-\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_{\mathrm{id},1} + \tilde{Q}_- \tilde\Pi_{\mathrm{id},2},
 $$
 
 where $\tilde{Q}_\pm \in \mathbb{H}$ are ordinary quaternions, given by
 
 $$
-\tilde{Q}_+ = \tilde{Q} \tilde\Pi_1 = Q_t' + Q_x' \vec e_x + Q_y' \vec e_y + Q_z' \vec e_z,
+\tilde{Q}_+ = \tilde{Q} \tilde\Pi_{\mathrm{id},1} = Q_t' + Q_x' \vec e_x + Q_y' \vec e_y + Q_z' \vec e_z,
 $$
 
 $$
-\tilde{Q}_- = \tilde{Q} \tilde\Pi_2 = Q_t'' + Q_x'' \vec e_x + Q_y'' \vec e_y + Q_z'' \vec e_z,
+\tilde{Q}_- = \tilde{Q} \tilde\Pi_{\mathrm{id},2} = Q_t'' + Q_x'' \vec e_x + Q_y'' \vec e_y + Q_z'' \vec e_z,
 $$
 
 with real coefficients $Q_\mu', Q_\mu'' \in \mathbb{R}$.
@@ -111,7 +111,7 @@ $$
 
 is an algebra isomorphism, where the multiplication on $\mathbb{H} \oplus \mathbb{H}$ is componentwise. This is the **idempotent decomposition** of the split biquaternion algebra.
 
-The isomorphism is the reason the algebra is semisimple. It is not simple, because the two summands $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$ are nontrivial two-sided ideals.
+The isomorphism is the reason the algebra is semisimple. It is not simple, because the two summands $\mathbb{H} \tilde\Pi_{\mathrm{id},1}$ and $\mathbb{H} \tilde\Pi_{\mathrm{id},2}$ are nontrivial two-sided ideals.
 
 ### The Clifford Structure
 
@@ -150,9 +150,9 @@ $$
 E_1E_2E_3 = j^3(\vec e_x \vec e_y)\vec e_z = j\,\vec e_z \vec e_z = -j,
 $$
 
-which is central with square $+1$; the Clifford idempotents $\tfrac12(1 \pm E_1E_2E_3) = \tfrac12(1 \mp j)$ are the idempotents $\tilde\Pi_{1,2}$ of the idempotent decomposition, with the index reversed.
+which is central with square $+1$; the Clifford idempotents $\tfrac12(1 \pm E_1E_2E_3) = \tfrac12(1 \mp j)$ are the idempotents $\tilde\Pi_{\mathrm{id},1,2}$ of the idempotent decomposition, with the index reversed.
 
-*Proof.* The monomials are the eight elements $\tilde\Pi_{1,2}$ times the quaternion basis and are independent; the product is immediate from $j^2=1$, $\vec e_x \vec e_y=\vec e_z$ and $\vec e_z^2=-1$.
+*Proof.* The monomials are the eight elements $\tilde\Pi_{\mathrm{id},1,2}$ times the quaternion basis and are independent; the product is immediate from $j^2=1$, $\vec e_x \vec e_y=\vec e_z$ and $\vec e_z^2=-1$.
 
 **Proposition (the complexification).** The complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathrm{spl}}$ is the complex Clifford algebra
 
@@ -365,18 +365,18 @@ The idempotent decomposition is the second natural decomposition of $\mathbb{B}_
 Every split biquaternion is written uniquely as
 
 $$
-\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_{\mathrm{id},1} + \tilde{Q}_- \tilde\Pi_{\mathrm{id},2},
 $$
 
-where $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ are the idempotents, and $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$.
+where $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(1 \pm j)$ are the idempotents, and $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{\mathrm{id},1,2} \in \mathbb{H}$.
 
 This gives the direct sum decomposition
 
 $$
-\mathbb{B}_{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2,
+\mathbb{B}_{\mathrm{spl}} = \mathbb{H} \tilde\Pi_{\mathrm{id},1} \oplus \mathbb{H} \tilde\Pi_{\mathrm{id},2},
 $$
 
-where $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$ are the two ideals of $\mathbb{B}_{\mathrm{spl}}$, each isomorphic to $\mathbb{H}$. Both are real vector spaces of dimension 4, and their direct sum is the full algebra $\mathbb{B}_{\mathrm{spl}}$ of real dimension 8.
+where $\mathbb{H} \tilde\Pi_{\mathrm{id},1}$ and $\mathbb{H} \tilde\Pi_{\mathrm{id},2}$ are the two ideals of $\mathbb{B}_{\mathrm{spl}}$, each isomorphic to $\mathbb{H}$. Both are real vector spaces of dimension 4, and their direct sum is the full algebra $\mathbb{B}_{\mathrm{spl}}$ of real dimension 8.
 
 The isomorphism
 
@@ -412,7 +412,7 @@ where $\mathbb{B}_{\Psi}$ is the Hermitian subspace and $\mathbb{B}_{\Phi}$ is t
 
 The quaternion decomposition $\mathbb{B}_{\mathrm{spl}} = \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \oplus j \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ and the Hermitian decomposition $\mathbb{B}_{\mathrm{spl}} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ are two different decompositions of the same eight-dimensional real vector space. They are associated with two different involutions: the quaternion decomposition is associated with the split complex conjugation $\bar{\cdot}$, and the Hermitian decomposition is associated with the Hermitian conjugation ${}^{*}$.
 
-The two decompositions are related by multiplication by the split complex unit $j$, which maps $\mathbb{B}_{\Psi}$ to $\mathbb{B}_{\Phi}$ and vice versa. The idempotent decomposition is a third decomposition, associated with the idempotents $\tilde\Pi_{1,2}$, and it is the one that reveals the semisimple structure of the algebra.
+The two decompositions are related by multiplication by the split complex unit $j$, which maps $\mathbb{B}_{\Psi}$ to $\mathbb{B}_{\Phi}$ and vice versa. The idempotent decomposition is a third decomposition, associated with the idempotents $\tilde\Pi_{\mathrm{id},1,2}$, and it is the one that reveals the semisimple structure of the algebra.
 
 ## The Lie Algebra Structure
 
@@ -428,11 +428,11 @@ The Lie algebra structure of $\mathbb{B}_{\mathrm{spl}}$ is the direct sum of tw
 
 The split biquaternion algebra is the tensor product $\mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ of the split complex algebra and the quaternion algebra. It is an eight-dimensional real algebra, non-commutative and associative, with zero divisors. It is not a division algebra, and it is not simple, but it is semisimple.
 
-The algebra is isomorphic to the direct sum $\mathbb{H} \oplus \mathbb{H}$ via the idempotent decomposition $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$, where $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ are the idempotents of the split complex algebra. This is the most important structural fact about the algebra.
+The algebra is isomorphic to the direct sum $\mathbb{H} \oplus \mathbb{H}$ via the idempotent decomposition $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_{\mathrm{id},1} + \tilde{Q}_- \tilde\Pi_{\mathrm{id},2}$, where $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(1 \pm j)$ are the idempotents of the split complex algebra. This is the most important structural fact about the algebra.
 
 There are four conjugations: quaternion conjugation, split complex conjugation, Hermitian conjugation, and anti-Hermitian conjugation. Each has a fixed-point set, which is a four-dimensional real subspace (or two-dimensional in the case of the split complex subspace). The four subspaces are the split complex subspace, the quaternion subspace, the Hermitian subspace, and the anti-Hermitian subspace.
 
-There are three natural decompositions of the algebra: the quaternion decomposition $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \oplus j \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, the idempotent decomposition $\mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$, and the Hermitian decomposition $\mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$.
+There are three natural decompositions of the algebra: the quaternion decomposition $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \oplus j \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, the idempotent decomposition $\mathbb{H} \tilde\Pi_{\mathrm{id},1} \oplus \mathbb{H} \tilde\Pi_{\mathrm{id},2}$, and the Hermitian decomposition $\mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$.
 
 The four forms of the layer — the plain, the quaternionic, the Hermitian and the Krein — the four norms they carry, and the Euclidean norm are a form and a distance; they are developed in *Split-Biquaternion Norm and Invertibility*, where the invertibility criterion and the group of invertibles are also established.
 
@@ -446,8 +446,8 @@ The four forms of the layer — the plain, the quaternionic, the Hermitian and t
 | $e_t = 1$ | Identity |
 | $\vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\mu^2 = -e_t$ |
 | $j$ | Split complex unit, $j^2 = +1$, commutes with $e_\mu$ |
-| $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
-| $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
+| $\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
+| $\tilde\Pi_{\mathrm{id},2} = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | General split biquaternion |
 | $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient |
 | $Q_t$ | Split scalar part |
@@ -461,8 +461,8 @@ The four forms of the layer — the plain, the quaternionic, the Hermitian and t
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace |
 | $\tilde{Q}_{\mathrm{H}}, \tilde{Q}_{\mathrm{A}}$ | Hermitian and anti-Hermitian parts of $\tilde{Q}$ |
-| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components of $\tilde{Q}$, in $\mathbb{H}$ |
-| $\mathbb{H} \tilde\Pi_1, \mathbb{H} \tilde\Pi_2$ | Idempotent ideals |
+| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{\mathrm{id},1,2}$ | Idempotent components of $\tilde{Q}$, in $\mathbb{H}$ |
+| $\mathbb{H} \tilde\Pi_{\mathrm{id},1}, \mathbb{H} \tilde\Pi_{\mathrm{id},2}$ | Idempotent ideals |
 
 ## Further Reading
 

@@ -46,7 +46,7 @@
 
 **The real form.** At $n=2$ the module is $\mathbb{C}^2=V_{1/2}$, and the algebra is $M_2\cong V_1\oplus V_0$. The biquaternion series reads both through a real structure: the algebra over $\mathbb{R}$ has the four-dimensional space $\mathbb{B}$, and the spinor plane and the bispinor space are real subspaces of it, and they are visible inside the algebra because the algebra is only four-real-dimensional.
 
-**Why half-integers appear there.** The real algebra $\mathbb{B}$ acts on itself by left multiplication, and the left ideal $\mathbb{B}\tilde\Pi_+$ is a real subspace of the algebra isomorphic to the spinor module. So at $n=2$ the module *is* a subspace of the algebra over $\mathbb{R}$: the left ideals are inside the algebra.
+**Why half-integers appear there.** The real algebra $\mathbb{B}$ acts on itself by left multiplication, and the left ideal $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ is a real subspace of the algebra isomorphic to the spinor module. So at $n=2$ the module *is* a subspace of the algebra over $\mathbb{R}$: the left ideals are inside the algebra.
 
 **The general-$n$ statement.** For $n\ge3$ no left ideal of $M_n$ is a minimal carrier of the principal copy: the minimal left ideals are the spaces $M_nP$ for a rank-one idempotent $P$, of complex dimension $n$, and their module structure is the defining module, not a subspace of the carrier list.
 

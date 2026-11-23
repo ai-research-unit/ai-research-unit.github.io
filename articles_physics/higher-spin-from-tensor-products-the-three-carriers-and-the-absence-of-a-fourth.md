@@ -73,7 +73,7 @@ Two consequences are immediate and both matter. The multiplicity space $\mathrm{
 | carrier | set | action | spin | invariant |
 |---|---|---|---|---|
 | the centre | $\mathbb{B}_{C}=\mathbb{C}e_t$ | conjugation; fixed | $0$ | $B^2=0$ |
-| the ideals | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | left multiplication | $\tfrac12$ | $N=0$ |
+| the ideals | $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | left multiplication | $\tfrac12$ | $N=0$ |
 | the material sector | $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathfrak{k}$ | conjugation | $1$ on $\mathfrak{k}$ | none |
 
 **The catalogue.** The centre is the fixed line of the adjoint action. The ideals are the minimal left ideals, two complex dimensions each, and left multiplication acts on them irreducibly. The material sector is the anti-Hermitian subspace, four real dimensions, and under conjugation it splits into the fixed line $\mathbb{R}(ie_t)$ and the three-dimensional $\mathfrak{k}$, which is the vector representation.
@@ -344,7 +344,7 @@ The completeness of the catalogue is therefore a statement about the base algebr
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Central scalar imaginary, the algebra's central phase |
 | $\mathbb{B}_{C}=\{Q_te_t\}$ | Centre, the spin-zero carrier |
-| $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | Minimal left ideals, the spin-$\tfrac12$ carriers |
+| $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | Minimal left ideals, the spin-$\tfrac12$ carriers |
 | $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathfrak{k}$ | Material sector, the spin-one carrier on $\mathfrak{k}$ |
 | $S$ | Defining (spinor) module, $\dim_\mathbb{C}S=2$, $S|_{SU(2)}=\tfrac12$ |
 | $S^{\oplus k}$ | General module; every module is of this form |

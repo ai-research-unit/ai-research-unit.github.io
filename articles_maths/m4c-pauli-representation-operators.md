@@ -18,9 +18,9 @@
 
 **Conventions.** The basis is $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The frame is the standard Peirce frame
 $$
-\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-),\qquad
-\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
-\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y),
+\mathcal{P}=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-}),\qquad
+\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z),\qquad
+\vec\Pi_{\mathrm{nil},\pm}=\tfrac12(i\vec e_x\pm\vec e_y),
 $$
 and a matrix written without a superscript is in this frame. The coefficient coordinates are $(t,x,y,z)$. The quaternionic norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the determinant of $\mathsf M_2(\tilde Q)$, the quaternion conjugate is $\tilde Q^{\natural}=Q_t-\vec Q$, and the Hermitian conjugate is $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$. The $2\times2$ model is $\mathsf M_2(\tilde Q)$, with
 $$
@@ -230,7 +230,7 @@ L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}=
 i&0&0&0
 \end{pmatrix},
 $$
-whose first column is the coordinate column of $\vec e_x\tilde\Pi_+\vec e_y=i\tilde\Pi_-$. The entry is the check that the family rule and the exchange agree.
+whose first column is the coordinate column of $\vec e_x\tilde\Pi_{\mathrm{id},+}\vec e_y=i\tilde\Pi_{\mathrm{id},-}$. The entry is the check that the family rule and the exchange agree.
 
 **The basis.** The sixteen matrices are linearly independent and span $M_4(\mathbb{C})$, by the orthogonality theorem of §*Orthogonality* and the dimension count. The span of the products is the whole algebra: the generation theorem of *Operators Acting on Two Sides*, §*The Sixteen Products as a Basis*, read in this frame. The expansion of a general matrix in this basis is unique, and the coefficient matrix is the subject of §*The Cone of Products*.
 
@@ -446,7 +446,7 @@ so $c=\mathsf Cc'\mathsf C^{\mathsf T}$ by linear independence of the sixteen. (
 
 **The two displays of the corpus.** The sixteen of the coefficient basis are $C_{\Pi}L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}C_{\Pi}^{-1}$, the same four units in the same order, so the abstract basis is common, only the display moves, the coefficient matrix is literally unchanged, and the two operator articles compute one number. The congruence answers a different question: what happens when the sixteen are built from another basis of *elements*, for instance from the four Peirce elements themselves. That basis is not orthogonal, so the extraction $\tfrac14\operatorname{Tr}(T^{\dagger}M)$ no longer applies to it and the dual basis must be used; the rank, and with it the length, is unchanged by (iii).
 
-**An array is not an operator.** The same array read in two frames names two different operators, and the lengths can differ. The array $E_{11}$ has length one here and four in the coefficient basis. Both statements are true. Here $E_{11}$ is the projector onto $\tilde\Pi_+$ along the other three frame vectors, a single product; there it is $X\mapsto\operatorname{Sc}(X)e_t$, which keeps the scalar coordinate and discards the vector part, and no sum of fewer than four products produces it. The two operators are conjugates of one another, and each keeps its length in every frame. So "the length of a matrix" means "the length of the operator whose display it is in the frame at hand", and no array has a length on its own.
+**An array is not an operator.** The same array read in two frames names two different operators, and the lengths can differ. The array $E_{11}$ has length one here and four in the coefficient basis. Both statements are true. Here $E_{11}$ is the projector onto $\tilde\Pi_{\mathrm{id},+}$ along the other three frame vectors, a single product; there it is $X\mapsto\operatorname{Sc}(X)e_t$, which keeps the scalar coordinate and discards the vector part, and no sum of fewer than four products produces it. The two operators are conjugates of one another, and each keeps its length in every frame. So "the length of a matrix" means "the length of the operator whose display it is in the frame at hand", and no array has a length on its own.
 
 **What the invariance buys.** The stratum $\{\ell\le r\}$ is cut by the $(r+1)$-minors of $c$, and a vanishing condition on minors of a congruence is basis-free. The cone $\{\ell\le1\}$ is one subvariety of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ and not two, the stratification by length is frame-free, and the length is an invariant of the endomorphism rather than of the display.
 
@@ -852,7 +852,7 @@ In one line: every two-sided operator is a single product of one left and one ri
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | the biquaternion algebra, $\dim_{\mathbb{C}}=4$ |
-| $\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ | the standard Peirce frame |
+| $\mathcal{P}=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ | the standard Peirce frame |
 | $\mathsf P$ | the permutation of the second and third coordinates; $R(\tilde Q)=\mathsf P L(\tilde Q)^{\mathsf T}\mathsf P^{-1}$ |
 | $L(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ | the left matrix |
 | $R(\tilde Q_2)=\mathsf M_2(\tilde Q_2)^{\mathsf T}\otimes\mathrm I_2$ | the right matrix |

@@ -303,7 +303,9 @@ A subscript is written with the underscore, `_`, inside the math delimiters, and
 
 **An angular-momentum total takes the role subscript, and its projection the axis.** A spin label is $s$ with projection $s_z$; the total of an orbital and a spin part, or of several spins, is $s_{\mathrm{tot}}$ with projection $s_{\mathrm{tot},z}$. The generator is $\tilde S_k=\tfrac12i\vec e_k$; the tilde marks the operator and keeps it distinct from the simple module $S$ and its minimal left ideals $S_\pm(\vec u)$. The total generator carries the role subscript and the vector index: $\tilde S_{\mathrm{tot},k}=L_k\otimes1+1\otimes\tilde S_k$ on a coupled module, and the vector index $k$ follows the role. The subscript $k$ is the vector index; the projection is the scalar weight, the eigenvalue of the third component on $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$, and it names the axis $z$ of the measurement and no vector index. The role is repeated in the projection so that $s_{1z}$, $s_{2z}$ and $s_{\mathrm{tot},z}$ are told apart without the context. The role and the axis share one pair of braces, $s_{\mathrm{tot},z}$, with a comma between them. The letter $j$ is the hyperbolic unit in the biquaternion corpus and does not label a spin there; the letter $m$ is an index.
 
-**A sign is a subscript where the statement needs one**, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$, as in $\tilde\Pi_+$ and $\tilde\Pi_-$. In the reduced biquaternion layer the sign belongs to the idempotent pair and to its coordinates, $\Pi_\pm$, $Q_{+}$ and $Q_{-}$, the two basis coordinates carrying the triangles, $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$, and a numbered element putting its number first in either case, $Q_{1+}$ and $Q_{1\blacktriangle}$; the element they build is $\breve Q$. The sign is read with the glyph, and no identity is implied between the pairs: $\tilde Q_\pm$ names the two quaternionic components of a split-biquaternion, $\vec Q_\pm$ their vector parts, and $Q_\pm$ the idempotent coordinates of $\breve Q$.
+**A sign is a subscript where the statement needs one**, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$, as in $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$. In the reduced biquaternion layer the sign belongs to the idempotent pair and to its coordinates, $\Pi_{\mathrm{id},\pm}$, $Q_{+}$ and $Q_{-}$, the two basis coordinates carrying the triangles, $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$, and a numbered element putting its number first in either case, $Q_{1+}$ and $Q_{1\blacktriangle}$; the element they build is $\breve Q$. The sign is read with the glyph, and no identity is implied between the pairs: $\tilde Q_\pm$ names the two quaternionic components of a split-biquaternion, $\vec Q_\pm$ their vector parts, and $Q_\pm$ the idempotent coordinates of $\breve Q$.
+
+The kind of a potent element is the first word of its subscript, after the sector label and before the sign: $\tilde\Pi_{\mathrm{id},\Phi,\mathrm{id}}$ and $\tilde\Pi_{\mathrm{id},+}$. The tag is part of the subscript and takes no separator, so $\tilde\Pi_{\mathrm{id},1,2}(\vec u)$ carries one subscript of four words; a site whose subscript does not begin with $\mathrm{id}$ or $\mathrm{nil}$ is either a missed site or a new one, and it is checked before it is added.
 
 The forms a subscript takes are these.
 
@@ -312,7 +314,7 @@ The forms a subscript takes are these.
 | a digit | $\tilde Q_1$, $\tilde Q_2$ |
 | a letter | $Q_k$, $Q_\mu$ |
 | two indices | $Q_{ab}$ |
-| a sign | $\tilde\Pi_\pm$ |
+| a sign | $\tilde\Pi_{\mathrm{id},\pm}$ |
 | an upright word | $\mathbb{B}_{\mathrm{red}}$, $\tilde U_{\mathrm b}$ |
 | a grouped expression | $Q_{n+1}$ |
 
@@ -363,7 +365,7 @@ ${}_{\Box_\Phi}$, ${}_{\blacktriangle}$, ${}_{\blacktriangledown}$, ${}_{\Diamon
 ${}_{\natural}$, ${}_{\sharp}$, ${}_{\checkmark}$, ${}_{\maltese}$, ${}_{\blacklozenge}$
 
 **Letters.** ${}_{\text{\AE}}$, ${}_{\text{\O}}$, ${}_{\text{\ss}}$, ${}_{\text{\ae}}$, ${}_{\eth}$, ${}_{\text{\o}}$, ${}_{\text{\i}}$, ${}_{\text{\OE}}$, ${}_{\text{\oe}}$, ${}_{\text{\j}}$,
-${}_{\Gamma}$, ${}_{\Delta_\Phi}$, ${}_{\Theta}$, ${}_{\Lambda}$, ${}_{Ζ}$, ${}_{\Pi}$, ${}_{\Sigma}$, ${}_{\Upsilon}$, ${}_{\Phi}$, ${}_{\Psi}$,
+${}_{\Gamma}$, ${}_{\Delta_\Phi}$, ${}_{\Theta}$, ${}_{\Lambda}$, ${}_{Ζ}$, ${}_{\Pi_{\mathrm{id}}}$, ${}_{\Sigma}$, ${}_{\Upsilon}$, ${}_{\Phi}$, ${}_{\Psi}$,
 ${}_{\Omega}$, ${}_{\alpha}$, ${}_{\beta}$, ${}_{\gamma}$, ${}_{\delta}$, ${}_{\varepsilon}$, ${}_{\omega}$, ${}_{\eta}$, ${}_{\theta}$, ${}_{\iota}$,
 ${}_{\kappa}$, ${}_{\lambda}$, ${}_{\mu}$, ${}_{\nu}$, ${}_{\zeta}$, ${}_{\omicron}$, ${}_{\pi}$, ${}_{\rho}$, ${}_{\varsigma}$, ${}_{\sigma}$,
 ${}_{\tau}$, ${}_{\upsilon}$, ${}_{\varphi}$, ${}_{\chi}$, ${}_{\psi}$, ${}_{\omega}$, ${}_{\vartheta}$, ${}_{\phi}$, ${}_{\varpi}$, ${}_{\digamma}$,
@@ -408,6 +410,8 @@ The corpus has a small number of working conventions that are not mathematical.
 **The word "interval".** Two different objects share the word, and the corpus keeps them apart. In the mathematical corpus an **interval** is an order-theoretic or lattice object: a convex subset of a linearly ordered set, the interval $[a,b]=\{x:a\le x\le b\}$ of a lattice or of a poset of effects, defined by the order and not by a form. In the physical corpus the **interval** is the value of the quadratic form, $\langle\tilde Q\rangle_{\natural}=-\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2$ on the material sector, defined by the form and not by an order. A statement about the sign of the interval is therefore never a statement about a lattice interval, and a lattice interval is never the line element; where the two senses could meet, the corpus writes *the form value* or *the quadratic form* for the physical one.
 
 **The letter $\iota$ is not used in Part VI.** Every article registered under *Part VI : Synthetic Studies* of `maths.md` writes no $\iota$, in any spelling. The letter is not reserved there and names no object of those studies: a comparison with a Clifford algebra is written by its values or by the words "the Clifford image", an interior product as the pairing $\omega(X_f,\,\cdot\,)=df$, and an inner automorphism in words. A display in Part VI that introduces $\iota$ is defective.
+
+**The symbol $\hbar$ is not the deformation parameter.** The reduced Planck constant is written $\hbar$ and nothing else in the mathematical corpus: it occurs only where a physical phase is meant, $\theta_{\mathrm{phs}}=S/\hbar$ and $\exp(-iH\varepsilon/\hbar)$. The formal parameter of a star product, of a Weyl quantisation $\mathrm{Op}^w$ and of the semiclassical calculus is a different object, dimensionless and not the Planck constant, and it is written $h_{\mathrm{def}}$. The two are never the same letter, and an article that writes the star-product parameter as $\hbar$ has borrowed the Planck constant for a quantity that carries no action.
 
 ## LaTeX and Typesetting
 

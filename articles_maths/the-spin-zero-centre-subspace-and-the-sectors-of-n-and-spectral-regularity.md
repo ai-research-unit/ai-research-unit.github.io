@@ -57,7 +57,7 @@ and with $B^{2}\neq0$ if $j=1$ and $B^{2}=0$ if $j=0$. The four sectors partitio
 
 **Definition (the strata of $\Sigma_{10}$).** The sector $\Sigma_{10}$ splits into the **scalar stratum**
 $\Sigma_{10}^{\mathrm{s}}=\{Q_te_t:Q_t\in\mathbb{C}^{\times}\}$ and the **Jordan stratum**
-$\Sigma_{10}^{\mathrm{J}}=\{Q_t(e_t+\vec\Upsilon):Q_t\in\mathbb{C}^{\times},\ \vec\Upsilon\neq0,\ \vec\Upsilon^{2}=0\}$. The two strata are
+$\Sigma_{10}^{\mathrm{J}}=\{Q_t(e_t+\vec\Pi_{\mathrm{nil}}):Q_t\in\mathbb{C}^{\times},\ \vec\Pi_{\mathrm{nil}}\neq0,\ \vec\Pi_{\mathrm{nil}}^{2}=0\}$. The two strata are
 separated by the minimal polynomial, which is $X-Q_t$ on the first and $(X-Q_t)^{2}$ on the second.
 
 ## The Centre and the Two Predicates
@@ -206,7 +206,7 @@ zero, and the difference between them is the larger of the two.
 | carrier | $Q_t$ | $N$ | $B^{2}$ | $N-B^{2}$ |
 |---|---|---|---|---|
 | centre $\mathbb{C}e_t$ | $\lambda$ | $\lambda^{2}$ | $0$ | $\lambda^{2}$ |
-| plane $\mathbb{C}\tilde\Pi_+$ | $\lambda/2$ | $0$ | $-\lambda^{2}/4$ | $\lambda^{2}/4$ |
+| plane $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ | $\lambda/2$ | $0$ | $-\lambda^{2}/4$ | $\lambda^{2}/4$ |
 | vector part $\mathfrak{k}$ | $0$ | $\lvert\vec v\rvert^{2}$ | $\lvert\vec v\rvert^{2}$ | $0$ |
 
 **Corollary (the difference measures the distance of the two predicates).** On the centre the two predicates share no common factor, in the sense
@@ -246,7 +246,7 @@ element is therefore a property of the element alone, and no representative can 
 | carrier | sectors met | the part in $\Sigma_{11}$ | in $\Sigma_{10}$ | the part in $\Sigma_{01}$ | in $\Sigma_{00}$ |
 |---|---|---|---|---|---|
 | centre $\mathbb{C}e_t$ | two | $\varnothing$ | $\mathbb{C}^{\times}e_t$ | $\varnothing$ | $\{0\}$ |
-| plane $\mathbb{C}\tilde\Pi_+$ | two | $\varnothing$ | $\varnothing$ | $\mathbb{C}^{\times}\tilde\Pi_+$ | $\{0\}$ |
+| plane $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ | two | $\varnothing$ | $\varnothing$ | $\mathbb{C}^{\times}\tilde\Pi_{\mathrm{id},+}$ | $\{0\}$ |
 | vector part $\mathfrak{k}$ | two | $\mathfrak{k}\setminus\{0\}$ | $\varnothing$ | $\varnothing$ | $\{0\}$ |
 
 **Remark (the pattern of the three).** Each carrier meets exactly two sectors. The three regular sectors receive one carrier each, so no two carriers
@@ -306,7 +306,7 @@ three meet only in the origin of $\Sigma_{00}$.
 | $\Sigma_{10}^{\mathrm{s}},\Sigma_{10}^{\mathrm{J}}$ | the scalar and the Jordan strata of $\Sigma_{10}$ |
 | $\mathbb{C}e_t$ | the centre, the closure of the carrier, real dimension $2$ |
 | $\mathbb{R}e_t$ | the carrier of spin $0$, real dimension $1$ |
-| $\vec\Upsilon$ | a nonzero pure nilpotent, $\vec\Upsilon^{2}=0$ |
+| $\vec\Pi_{\mathrm{nil}}$ | a nonzero pure nilpotent, $\vec\Pi_{\mathrm{nil}}^{2}=0$ |
 | $u$ | a unitary element, $uu^{*}=e_t$ |
 
 ## Further Reading

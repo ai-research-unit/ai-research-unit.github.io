@@ -171,7 +171,7 @@ $$
 The product of two unipotents leaves its regime, and its type is decided by one number.
 
 $$
-T=U_1U_2,\qquad U_i=e_t+\vec\Upsilon_i,\qquad \vec\Upsilon_i^{2}=0,\qquad s=\vec\Upsilon_1\cdot\vec\Upsilon_2,
+T=U_1U_2,\qquad U_i=e_t+\vec\Pi_{\mathrm{nil},i},\qquad \vec\Pi_{\mathrm{nil},i}^{2}=0,\qquad s=\vec\Pi_{\mathrm{nil},1}\cdot\vec\Pi_{\mathrm{nil},2},
 $$
 
 $$
@@ -262,7 +262,7 @@ $\Sigma_{10}$ is the set of invertibles whose two eigenvalues have merged. The g
 
 The scalar line is the semisimple face. The element is $Q_te_t$: one eigenvalue, repeated, and every basis is an eigenbasis. On the material slice this is the rest frame, the only frame in which the momentum is purely temporal.
 
-The Jordan part is the defective face. The element is $Q_te_t+\vec\Upsilon$ with $\vec\Upsilon$ a non-zero pure nilpotent: one eigenvalue, one eigendirection, a single Jordan block, and no eigenbasis at all. Its reading is the exceptional point of a non-Hermitian operator, where two eigenvalues and two eigendirections have coalesced.
+The Jordan part is the defective face. The element is $Q_te_t+\vec\Pi_{\mathrm{nil}}$ with $\vec\Pi_{\mathrm{nil}}$ a non-zero pure nilpotent: one eigenvalue, one eigendirection, a single Jordan block, and no eigenbasis at all. Its reading is the exceptional point of a non-Hermitian operator, where two eigenvalues and two eigendirections have coalesced.
 
 The two faces have the same norm and the same characteristic polynomial. They differ in the minimal polynomial, which is $X-Q_t$ on the line and $(X-Q_t)^{2}$ on the Jordan part. That is the sharpest statement in the entry: no function of the spectrum separates them.
 
@@ -271,7 +271,7 @@ The two faces have the same norm and the same characteristic polynomial. They di
 $\Sigma_{01}$ is the set of null elements with two distinct eigenvalues. The gradient of $N$ does not vanish there, so the regime is a manifold of real dimension six, and the element is a non-zero multiple of a non-trivial idempotent.
 
 $$
-N(\tilde Q)=0,\quad B^{2}\neq0\quad\Longrightarrow\quad \tilde Q=\kappa\tilde\Pi,\qquad \kappa=2Q_t\neq0,\qquad \tilde\Pi^{2}=\tilde\Pi .
+N(\tilde Q)=0,\quad B^{2}\neq0\quad\Longrightarrow\quad \tilde Q=\kappa\tilde\Pi_{\mathrm{id}},\qquad \kappa=2Q_t\neq0,\qquad \tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}} .
 $$
 
 The spectrum is $\{\kappa,0\}$ and one eigenvalue is zero. So the element has a unique two-term decomposition with one coefficient zero, an eigenbasis, no inverse, and no polar decomposition: a modulus would need a square root of zero.
@@ -283,7 +283,7 @@ The physical name is the light ray. On the material slice the regime is the ligh
 $\Sigma_{00}$ is the set of square-zero elements, and it is the common boundary of the other three.
 
 $$
-\tilde Q^{2}=0\iff \tilde Q\in\Sigma_{00},\qquad \Sigma_{00}=\{0\}\cup\{\vec\Upsilon:\vec\Upsilon\neq0,\ \vec\Upsilon^{2}=0\}.
+\tilde Q^{2}=0\iff \tilde Q\in\Sigma_{00},\qquad \Sigma_{00}=\{0\}\cup\{\vec\Pi_{\mathrm{nil}}:\vec\Pi_{\mathrm{nil}}\neq0,\ \vec\Pi_{\mathrm{nil}}^{2}=0\}.
 $$
 
 Off the origin the element is a pure nilpotent, and the origin is the only semisimple point. The minimal polynomial is $X^{2}$ off the origin and $X$ at it, and the two share the norm, the trace and the characteristic polynomial.
@@ -358,7 +358,7 @@ Read downward, information is lost and lost irreversibly. The norm forgets the s
 | characteristic polynomial | $4$ | the four regimes | the two faces of $\Sigma_{10}$ and of $\Sigma_{00}$ |
 | minimal polynomial | $6$ | the six strata | nothing |
 
-The failure of the norm is a theorem and not an oversight. For $Q_t\neq0$ and a non-zero pure nilpotent $\vec\Upsilon$, the scalar $Q_te_t$ and the Jordan element $Q_te_t+\vec\Upsilon$ have the same norm $Q_t^{2}$, the same trace $2Q_t$, and therefore the same characteristic polynomial $(X-Q_t)^{2}$. Their minimal polynomials are $X-Q_t$ and $(X-Q_t)^{2}$.
+The failure of the norm is a theorem and not an oversight. For $Q_t\neq0$ and a non-zero pure nilpotent $\vec\Pi_{\mathrm{nil}}$, the scalar $Q_te_t$ and the Jordan element $Q_te_t+\vec\Pi_{\mathrm{nil}}$ have the same norm $Q_t^{2}$, the same trace $2Q_t$, and therefore the same characteristic polynomial $(X-Q_t)^{2}$. Their minimal polynomials are $X-Q_t$ and $(X-Q_t)^{2}$.
 
 The same computation at the origin gives the second pair. The origin and every non-zero nilpotent have norm zero, trace zero and characteristic polynomial $X^{2}$. Their minimal polynomials are $X$ and $X^{2}$.
 
@@ -370,10 +370,10 @@ The chain also fixes what the partition is not. A finer classification exists, b
 
 **The spectral decomposition follows the discriminant and the polar decomposition follows the norm.**
 
-The spectral side. On $\Sigma_{11}$ and on $\Sigma_{01}$ there is a unique writing $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ with orthogonal idempotents summing to $e_t$, and the idempotents are
+The spectral side. On $\Sigma_{11}$ and on $\Sigma_{01}$ there is a unique writing $\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$ with orthogonal idempotents summing to $e_t$, and the idempotents are
 
 $$
-\tilde\Pi_\pm=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp}.
+\tilde\Pi_{\mathrm{id},\pm}=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp}.
 $$
 
 On the punctured scalar line the writing collapses to one term. On the Jordan part no non-trivial idempotent commutes with the element, so no two-term writing exists. On the non-zero nilpotents the same failure occurs, and at the origin the trivial one-term writing $0=0\cdot e_t$ exists.
@@ -418,16 +418,16 @@ so the operator whose singularity marks the massless wall is the operator that m
 
 ## Two Unipotent Motions
 
-A unipotent is $U=e_t+\vec\Upsilon$ with $\vec\Upsilon$ a non-zero pure nilpotent: a unit of norm one, with the double eigenvalue $1$ and no eigenbasis. It is the shear of the algebra, and it lies in one of the two strata of the spectral wall.
+A unipotent is $U=e_t+\vec\Pi_{\mathrm{nil}}$ with $\vec\Pi_{\mathrm{nil}}$ a non-zero pure nilpotent: a unit of norm one, with the double eigenvalue $1$ and no eigenbasis. It is the shear of the algebra, and it lies in one of the two strata of the spectral wall.
 
 The product of two of them stays in the norm-one slice and leaves the wall.
 
 $$
-T=U_1U_2=e_t+\vec\Upsilon_1+\vec\Upsilon_2+\vec\Upsilon_1\vec\Upsilon_2,\qquad \operatorname{Tr}T=2+t,\qquad \det T=1,
+T=U_1U_2=e_t+\vec\Pi_{\mathrm{nil},1+}\vec\Pi_{\mathrm{nil},2+}\vec\Pi_{\mathrm{nil},1}\vec\Pi_{\mathrm{nil},2},\qquad \operatorname{Tr}T=2+t,\qquad \det T=1,
 $$
 
 $$
-p_T(\lambda)=\lambda^{2}-(2+t)\lambda+1,\qquad t=2\,\mathrm{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=-2s,\qquad s=\vec\Upsilon_1\cdot\vec\Upsilon_2 .
+p_T(\lambda)=\lambda^{2}-(2+t)\lambda+1,\qquad t=2\,\mathrm{Sc}(\vec\Pi_{\mathrm{nil},1}\vec\Pi_{\mathrm{nil},2})=-2s,\qquad s=\vec\Pi_{\mathrm{nil},1}\cdot\vec\Pi_{\mathrm{nil},2} .
 $$
 
 So the product is described by one complex number, and the criterion is one equation.
@@ -436,7 +436,7 @@ $$
 Q_t(T)=1+\frac{t}{2}=1-s,\qquad B^{2}(T)=-\frac{t(t+4)}{4}=s(2-s).
 $$
 
-The product is regular exactly when $s\notin\{0,2\}$. At $s=0$ the single eigenvalue is $1$: the product is $e_t$ when $\vec\Upsilon_2=-\vec\Upsilon_1$ and a non-trivial unipotent otherwise. At $s=2$ the single eigenvalue is $-1$ and the product is $-e_t$ times a non-trivial unipotent. The element $-e_t$ itself cannot occur, because a unipotent has scalar part one.
+The product is regular exactly when $s\notin\{0,2\}$. At $s=0$ the single eigenvalue is $1$: the product is $e_t$ when $\vec\Pi_{\mathrm{nil},2}=-\vec\Pi_{\mathrm{nil},1}$ and a non-trivial unipotent otherwise. At $s=2$ the single eigenvalue is $-1$ and the product is $-e_t$ times a non-trivial unipotent. The element $-e_t$ itself cannot occur, because a unipotent has scalar part one.
 
 On the regular set the type is decided by the interval and not by the sign.
 
@@ -455,8 +455,8 @@ The warning is worth a sentence of its own. A positive pairing does not mean the
 Two pairings of the same nilpotent give the two regular types.
 
 $$
-\vec\Upsilon_1=\frac{i}{2}\vec e_x-\frac{1}{2}\vec e_y,\qquad
-\vec\Upsilon_2=-\frac{i}{2}\vec e_x-\frac{1}{2}\vec e_y,\qquad s=\frac{1}{2} .
+\vec\Pi_{\mathrm{nil},1}=\frac{i}{2}\vec e_x-\frac{1}{2}\vec e_y,\qquad
+\vec\Pi_{\mathrm{nil},2}=-\frac{i}{2}\vec e_x-\frac{1}{2}\vec e_y,\qquad s=\frac{1}{2} .
 $$
 
 Both are pure nilpotents, the pairing is one half, and the product is
@@ -470,7 +470,7 @@ which is elliptic: the eigenvalues are the sixth roots of unity.
 Replacing the second nilpotent by its negative gives the other type.
 
 $$
-\vec\Upsilon_3=-\vec\Upsilon_2,\qquad s=-\frac{1}{2},\qquad Q_t=\frac{3}{2},\qquad B^{2}=-\frac{5}{4},\qquad \lambda_\pm=\frac{3\pm\sqrt{5}}{2},
+\vec\Pi_{\mathrm{nil},3}=-\vec\Pi_{\mathrm{nil},2},\qquad s=-\frac{1}{2},\qquad Q_t=\frac{3}{2},\qquad B^{2}=-\frac{5}{4},\qquad \lambda_\pm=\frac{3\pm\sqrt{5}}{2},
 $$
 
 which is hyperbolic: real, reciprocal and positive. The two products differ only in the pairing of the two nilpotent parts, and that difference is the difference between a rotation and a boost.
@@ -529,7 +529,7 @@ The boundary. Typicality in the algebra is not typicality in nature. A physical 
 
 Read: the two witnesses $e_t+i\vec e_x$ and $e_t+\vec e_x+i\vec e_y$, one in each mixed regime.
 
-One element is null and has a full eigenbasis; the other is invertible and has none. The first is $2\tilde\Pi$ for a non-trivial idempotent, so its spectrum is $\{2,0\}$ and its spectral decomposition is unique. The second satisfies $(\tilde Q-e_t)^{2}=0$ with $\tilde Q\neq e_t$, so its minimal polynomial has degree two and no non-trivial idempotent commutes with it.
+One element is null and has a full eigenbasis; the other is invertible and has none. The first is $2\tilde\Pi_{\mathrm{id}}$ for a non-trivial idempotent, so its spectrum is $\{2,0\}$ and its spectral decomposition is unique. The second satisfies $(\tilde Q-e_t)^{2}=0$ with $\tilde Q\neq e_t$, so its minimal polynomial has degree two and no non-trivial idempotent commutes with it.
 
 The physical interpretation is that having a mass and having a mode basis are different achievements. A massless element can be perfectly resolvable into two modes, and a massive element can be a single defective block. Neither property is a consequence of the other, and neither is a proxy for the other.
 
@@ -551,7 +551,7 @@ The boundary. The statement is first order. At second order the two invariants s
 
 ### I.10.f — The Norm Is Blind to the Defect
 
-Read: $Q_te_t$ and $Q_te_t+\vec\Upsilon$ have the same norm, the same trace and the same characteristic polynomial, and different minimal polynomials.
+Read: $Q_te_t$ and $Q_te_t+\vec\Pi_{\mathrm{nil}}$ have the same norm, the same trace and the same characteristic polynomial, and different minimal polynomials.
 
 The two elements are indistinguishable by any function of the spectrum. They differ in one bit: whether the element is a scalar or a single Jordan block. That bit is not in the norm and not in the characteristic polynomial.
 
@@ -605,7 +605,7 @@ The boundary. The identity is algebraic and it says nothing about a dynamics. Th
 
 ### I.10.j — Two One-Mode Motions Compose into a Two-Mode One
 
-Read: $U_1U_2$ with $U_i=e_t+\vec\Upsilon_i$, both defective, and $B^{2}(U_1U_2)=s(2-s)$.
+Read: $U_1U_2$ with $U_i=e_t+\vec\Pi_{\mathrm{nil},i}$, both defective, and $B^{2}(U_1U_2)=s(2-s)$.
 
 The defect is not inherited. Two elements of the spectral wall compose into an element off it whenever $s\notin\{0,2\}$, and the product is invertible with two distinct eigenvalues.
 
@@ -696,9 +696,9 @@ The three statements to carry away are these. The partition is by two independen
 | $\mathcal S=\{B^{2}=0\}$ | the spectral-degenerate cone, the wall of separation |
 | $\Sigma_{ij}$ | the regime with $N\neq0$ iff $i=1$ and $B^{2}\neq0$ iff $j=1$ |
 | $\Sigma_{10}^{\mathrm{s}}$, $\Sigma_{10}^{\mathrm{J}}$ | the scalar line and the Jordan part |
-| $\vec\Upsilon$ | a non-zero pure nilpotent, $\vec\Upsilon^{2}=0$ |
-| $U=e_t+\vec\Upsilon$ | a unipotent: a unit of norm one with the double eigenvalue $1$ |
-| $s=\vec\Upsilon_1\cdot\vec\Upsilon_2$ | the pairing of two nilpotent parts, with $t=-2s$ |
+| $\vec\Pi_{\mathrm{nil}}$ | a non-zero pure nilpotent, $\vec\Pi_{\mathrm{nil}}^{2}=0$ |
+| $U=e_t+\vec\Pi_{\mathrm{nil}}$ | a unipotent: a unit of norm one with the double eigenvalue $1$ |
+| $s=\vec\Pi_{\mathrm{nil},1}\cdot\vec\Pi_{\mathrm{nil},2}$ | the pairing of two nilpotent parts, with $t=-2s$ |
 | $L_{\tilde Q}$ | left multiplication, of rank $4$, $2$ or $0$ |
 | $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the sandwich, singular exactly on $\mathcal N$ |
 | $\mathrm{ad}_{\tilde Q}$ | the inner derivation, nilpotent exactly on $\mathcal S$ |

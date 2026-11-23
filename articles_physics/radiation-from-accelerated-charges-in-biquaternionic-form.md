@@ -222,7 +222,7 @@ $$
 iR\,e_t+\vec R = 2i\zeta\,B\,\sigma\,B^+ .
 $$
 
-This is the source's displayed relation for its separation $X - Z$. The product exhibits the two facts established separately in the retarded-null section: the separation is a zero divisor because it is built from the idempotent $\sigma$ and the invertible spinor $B$, and its magnitude is the invariant retarded distance $\zeta$, not the coordinate distance $R$. The source takes its direction vector $\vec\nu$ from the charge to the observation point, which reverses the overall sign of the relation as printed; the corpus fixes the sign by the direction of $\vec u$ stated above, so that the coefficient of the idempotent is $+2i\zeta$.
+This is the source's displayed relation for its separation $X - Z$. The product exhibits the two facts established separately in the retarded-null section: the separation is a zero divisor because it is built from the idempotent $\sigma$ and the invertible spinor $B$, and its magnitude is the invariant retarded distance $\zeta$, not the coordinate distance $R$. The source takes its direction vector $\vec u_{\mathrm{rad}}$ from the charge to the observation point, which reverses the overall sign of the relation as printed; the corpus fixes the sign by the direction of $\vec u$ stated above, so that the coefficient of the idempotent is $+2i\zeta$.
 
 **The four-acceleration.** In the same variables the four-acceleration of the charge is the boost conjugate of its value in the instantaneous rest frame,
 

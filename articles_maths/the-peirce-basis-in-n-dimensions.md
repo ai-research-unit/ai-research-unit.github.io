@@ -113,7 +113,7 @@ A Peirce basis is exactly such a system: the definition of §*The Definition* an
 
 *Proof.* By the Skolem–Noether theorem every automorphism of $M_{n}(\mathbb{C})$ is inner, so it is enough to compare each system with the standard one. The data $(v_{k})$, $(\ell_{k})$ of §*Existence* give $E_{kl}=v_{k}\ell_{l}$; two bases $v$ and $v'$ of $\mathbb{C}^{n}$ differ by an invertible $U$ with $Uv_{k}=v'_{k}$, and then $UE_{kl}U^{-1}=v'_{k}\ell'_{l}=E'_{kl}$. If $U$ and $U'$ both carry the system to the same one, then $U^{-1}U'$ commutes with every $E_{kl}$, hence with the whole algebra, since the invertibles span it, so it is a scalar. The conjugating unit is therefore unique up to the centre.
 
-**The biquaternion instance.** At $n=2$ the four elements $\tilde\Pi_{+},\vec\Upsilon_{+-},\vec\Upsilon_{-+},\tilde\Pi_{-}$ are a system of $2\times2$ matrix units, and the theorem above is the one proved in *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*, §*Systems of Matrix Units*. There the two proofs differ in style only: the biquaternion article conjugates into $M_{2}(\mathbb{C})$ and uses that every automorphism of $M_{2}(\mathbb{C})$ is inner, which is the same Skolem–Noether step.
+**The biquaternion instance.** At $n=2$ the four elements $\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+-},\vec\Pi_{\mathrm{nil},-+},\tilde\Pi_{\mathrm{id},-}$ are a system of $2\times2$ matrix units, and the theorem above is the one proved in *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*, §*Systems of Matrix Units*. There the two proofs differ in style only: the biquaternion article conjugates into $M_{2}(\mathbb{C})$ and uses that every automorphism of $M_{2}(\mathbb{C})$ is inner, which is the same Skolem–Noether step.
 
 ## Dimensions and the Projective Count
 
@@ -177,7 +177,7 @@ A Peirce basis is a choice of one nonzero element in each Peirce line, with $E_{
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for matrix units and the matrix product of coordinates.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the lines and their multiplication.
 - [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the case $n=2$ of §*Systems of Matrix Units*.
-- [The Companion Nilpotents of the Biquaternion Algebra](the-companion-nilpotents-of-the-biquaternion-algebra.html), for the normalised pair $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$.
+- [The Companion Nilpotents of the Biquaternion Algebra](the-companion-nilpotents-of-the-biquaternion-algebra.html), for the normalised pair $\vec\Pi_{\mathrm{nil},+-},\vec\Pi_{\mathrm{nil},-+}$.
 - [Spinors as Peirce Coordinates in $n$ Dimensions](spinors-as-peirce-coordinates-in-n-dimensions.html), for the rows of the coordinate array.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the frame and the nilpotents.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m3c.html), for the orbit–stabiliser count at $n=3$.

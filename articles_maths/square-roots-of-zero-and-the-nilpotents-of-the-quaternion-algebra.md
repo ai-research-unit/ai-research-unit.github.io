@@ -96,14 +96,14 @@ and the two coefficients cannot vanish together off the origin — the vector te
 
 ### The Definition
 
-**Definition (nilpotent of a product).** Let $\star$ be a product on $\mathbb{H}$; a **square-zero element** of $\star$ is an element $\tilde q$ with $\tilde q^{\star2}=0$, and a **nilpotent of $\star$** is a **nonzero** element $\tilde\nu$ with $\tilde\nu^{\star k}=0$ for some $k\geq1$. The least such $k$ is the **index of nilpotency**, and an element is of **index two** when its square vanishes while it does not. The element $0$ is a square-zero element and is not a nilpotent.
+**Definition (nilpotent of a product).** Let $\star$ be a product on $\mathbb{H}$; a **square-zero element** of $\star$ is an element $\tilde q$ with $\tilde q^{\star2}=0$, and a **nilpotent of $\star$** is a **nonzero** element $\tilde\pi_{\mathrm{nil}}$ with $\tilde\pi_{\mathrm{nil}}^{\star k}=0$ for some $k\geq1$. The least such $k$ is the **index of nilpotency**, and an element is of **index two** when its square vanishes while it does not. The element $0$ is a square-zero element and is not a nilpotent.
 
 The equation names a product, and the notion is relative to it; throughout this article the product is the quaternion product, the multiplication of the algebra, and the square is the square. The general definition, with the index of nilpotency and the square-zero element, is *Algebras: A General Introduction*, ; the square-zero set and the nilpotent class are kept apart below, and the relation between them is stated in both readings.
 
 The quaternion conjugation preserves square-zero elements, being multiplicative and carrying a vanishing square to a vanishing square,
 
 $$
-(\tilde\nu^{\natural})^2=(\tilde\nu^2)^{\natural}=0,
+(\tilde\pi_{\mathrm{nil}}^{\natural})^2=(\tilde\pi_{\mathrm{nil}}^2)^{\natural}=0,
 $$
 
 Were the class not empty, it would be a conjugation-stable class; as it is, the statement is vacuous and is recorded for the form of the definition.
@@ -138,15 +138,15 @@ The set of square-zero elements is $\{0\}$, so the **nilpotent cone is the empty
 
 ### The Nilpotents and the Zero Divisors
 
-**Proposition (a square-zero element is a zero divisor with itself).** If $\tilde\nu$ is a nonzero square-zero element then
+**Proposition (a square-zero element is a zero divisor with itself).** If $\tilde\pi_{\mathrm{nil}}$ is a nonzero square-zero element then
 
 $$
-\tilde\nu\tilde\nu=0
+\tilde\pi_{\mathrm{nil}}\tilde\pi_{\mathrm{nil}}=0
 $$
 
-on both sides, so $\tilde\nu$ is a two-sided zero divisor, with itself as annihilating partner.
+on both sides, so $\tilde\pi_{\mathrm{nil}}$ is a two-sided zero divisor, with itself as annihilating partner.
 
-*Proof.* The relation $\tilde\nu^2=0$ is the product of $\tilde\nu$ with itself, on either side.
+*Proof.* The relation $\tilde\pi_{\mathrm{nil}}^2=0$ is the product of $\tilde\pi_{\mathrm{nil}}$ with itself, on either side.
 
 Over $\mathbb{R}$ the proposition has no instance, because there is no nonzero square-zero element, and it is stated to locate the class against the empty zero-divisor set: a nonzero nilpotent would be a zero divisor, the zero-divisor set is empty (*Zero Divisors of the Quaternion Algebra*), and the nilpotent class is therefore empty. The two emptinesses are the same emptiness seen from two sides. In the complexified block the relation runs the other way, and the nonzero nilpotents are exactly the pure family of the zero-divisor cone.
 
@@ -195,7 +195,7 @@ The nilpotent class is empty: there is no nilpotent cone, the set of square-zero
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\nu^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $\tilde q=q_te_t+\vec q$ | General element, scalar part $q_t$, vector part $\vec q$ |
 | $\langle\tilde q\rangle_{\natural}=q_t^2+\lvert\vec q\rvert^2$ | Quaternion norm, positive definite |
-| $\tilde\nu$ | A nilpotent, a nonzero element of vanishing square |
+| $\tilde\pi_{\mathrm{nil}}$ | A nilpotent, a nonzero element of vanishing square |
 | $\tilde q^2=0$ | The square-zero equation |
 | $\Sigma_0=\{0\}$ | The roots of $0$, the origin alone |
 | $\{0\}$ | The square-zero set of the algebra |

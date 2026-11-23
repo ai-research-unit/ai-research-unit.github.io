@@ -15,7 +15,7 @@ The angle is $\theta_{\mathrm{spa}}=\vec k_\Phi\cdot\vec r$, the spatial part of
 
 The article's claim is a claim about what is written in the letters, not about new physics. The transform, its normalisation, its marginals, its negativity and its $\hbar$-expansion are all standard. What the corpus supplies is a definition in which the Wigner object is an element and not a matrix, and a reading of its two parts as the two quadratures of one angle. The article states both and is explicit about which is which.
 
-Where the standard function already lives in the corpus. [The Bell Inequality for Continuous Variables in Biquaternionic Form](the-bell-inequality-for-continuous-variables-in-biquaternionic-form.html) uses the $x$–$p$ Wigner function of a two-mode squeezed state, in the normalisation in which one mode has $\int W\,d^{2}\alpha=\tfrac12$ and the vacuum is $\pi^{-1}\exp(-2\lvert\alpha\rvert^{2})$. That is the same function this article defines, in a phase-space variable $\alpha$ that absorbs the mass and the frequency; the corpus's normalisation there is the one in which $d^{2}\alpha=dq\,dp/2$ with $\hbar=1$. This article keeps $\hbar$ explicit and uses the three-dimensional normalisation $\int d^{3}p\,\tilde W_\Xi=\rho_{\mathrm{num}}$, which is the normalisation the fluid articles need. The relation between the two normalisations is a constant and is recorded in the notation table.
+Where the standard function already lives in the corpus. [The Bell Inequality for Continuous Variables in Biquaternionic Form](the-bell-inequality-for-continuous-variables-in-biquaternionic-form.html) uses the $x$–$p$ Wigner function of a two-mode squeezed state, in the normalisation in which one mode has $\int W\,d^{2}\alpha=\tfrac12$ and the vacuum is $\pi^{-1}\exp(-2\lvert\alpha\rvert^{2})$. That is the same function this article defines, in a phase-space variable $\alpha$ that absorbs the mass and the frequency; the corpus's normalisation there is the one in which $d^{2}\alpha=dq\,dp/(2\hbar)$. This article keeps $\hbar$ explicit and uses the three-dimensional normalisation $\int d^{3}p\,\tilde W_\Xi=\rho_{\mathrm{num}}$, which is the normalisation the fluid articles need. The relation between the two normalisations is a constant and is recorded in the notation table.
 
 ## The Standard Function, Stated First
 
@@ -159,7 +159,7 @@ which is the four-current with the $i$ where the corpus's letters put it. A read
 
 ### The check
 
-The marginals were checked numerically on a Gaussian packet, and the residuals are of the order of the grid error. With $\hbar=1$, position width $\sigma=0.5$, mean position $x_0=0.3$ and mean momentum $p_0=1.7$, on a grid of $241$ positions, $301$ momenta and $2001$ relative coordinates spanning $\lvert s\rvert\le10$:
+The marginals were checked numerically on a Gaussian packet, and the residuals are of the order of the grid error. With the position in units of $1/k_m$ and the momentum in units of $mc$, position width $\sigma=0.5$, mean position $x_0=0.3$ and mean momentum $p_0=1.7$, on a grid of $241$ positions, $301$ momenta and $2001$ relative coordinates spanning $\lvert s\rvert\le10$:
 
 | quantity | value |
 |---|---|
@@ -261,7 +261,7 @@ The identity is exact for the Gaussian only. For a general state the second mome
 
 ### The numbers
 
-Both statements were checked numerically on the Gaussian used for the marginal table. With $\hbar=1$, $\sigma=0.5$ and $m=1$:
+Both statements were checked numerically on the Gaussian used for the marginal table. With the position in units of $1/k_m$, $\sigma=0.5$:
 
 | quantity | value |
 |---|---|

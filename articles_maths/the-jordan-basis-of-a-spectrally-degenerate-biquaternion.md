@@ -16,15 +16,15 @@ $$
 
 This article studies that sector and the spectral basis it carries. On the complement $B^2\neq0$ the two eigenvalues are distinct, and *The Eigenbasis of a Spectrally Regular Biquaternion* builds an eigenbasis. On $\mathcal S$ they coincide; on its defective part no eigenbasis exists, because the eigenspace has complex dimension two and four eigenvectors cannot be found. The root $\vec{Ζ}=-i\vec Q/B$ of the regular construction diverges at $B=0$, and the two spectral idempotents have no limit.
 
-The sector is not without a basis. Off the scalar line the element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$ and $\vec Q\neq0$, and the **flag** replaces the root. It selects a complete orthogonal pair of idempotents $\tilde\Pi_\pm$, and with them the two corner generators $\vec\Upsilon_\pm$; the pair is chosen, and the Jordan form does not depend on the choice. The quadruple
+The sector is not without a basis. Off the scalar line the element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$ and $\vec Q\neq0$, and the **flag** replaces the root. It selects a complete orthogonal pair of idempotents $\tilde\Pi_{\mathrm{id},\pm}$, and with them the two corner generators $\vec\Pi_{\mathrm{nil},\pm}$; the pair is chosen, and the Jordan form does not depend on the choice. The quadruple
 
 $$
-\mathcal{J}(\tilde Q)=(\vec\Upsilon_-,\ \tilde\Pi_-,\ \tilde\Pi_+,\ \vec\Upsilon_+),
+\mathcal{J}(\tilde Q)=(\vec\Pi_{\mathrm{nil},-},\ \tilde\Pi_{\mathrm{id},-},\ \tilde\Pi_{\mathrm{id},+},\ \vec\Pi_{\mathrm{nil},+}),
 $$
 
 listed chain by chain, is then a basis of the algebra, a **Jordan basis**, in which left multiplication by $\tilde Q$ is $\operatorname{diag}(J_2(Q_t),J_2(Q_t))$ and right multiplication is the same two blocks with the other pairing. Every biquaternion has a unique expansion in it, and the coordinate model sends $\tilde Q$ to the single block $J_2(Q_t)$. The construction is the degenerate twin of the eigenbasis: it covers the two defective strata at once, and it does not depend on the scalar part.
 
-**Place among the Peirce decompositions.** This article is the degenerate particular case of *Peirce Decompositions of the Biquaternion Algebra*. That article attaches a Peirce basis to any complete orthogonal pair of idempotents, and shows that the four basis vectors split into the two couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, on which left multiplication acts by the same Peirce matrix. Here the pair is an adapted frame of §*The Frame on the Sector*: complete, orthogonal and primitive, so the four corners and the basis are the general Peirce data. What is special is the matrix of the element: $\mathsf M_{\tilde\Pi}(\tilde Q)=J_2(Q_t)$, so each couple is a Jordan chain rather than a pair of eigenvectors. The reciprocal $\mathbb{C}^\times$ of the general theory is fixed here by $\vec\Upsilon_-=\vec Q$, not by a normalisation convention.
+**Place among the Peirce decompositions.** This article is the degenerate particular case of *Peirce Decompositions of the Biquaternion Algebra*. That article attaches a Peirce basis to any complete orthogonal pair of idempotents, and shows that the four basis vectors split into the two couples $\mathcal{C}_+=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ and $\mathcal{C}_-=(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$, on which left multiplication acts by the same Peirce matrix. Here the pair is an adapted frame of §*The Frame on the Sector*: complete, orthogonal and primitive, so the four corners and the basis are the general Peirce data. What is special is the matrix of the element: $\mathsf M_{\tilde\Pi_{\mathrm{id}}}(\tilde Q)=J_2(Q_t)$, so each couple is a Jordan chain rather than a pair of eigenvectors. The reciprocal $\mathbb{C}^\times$ of the general theory is fixed here by $\vec\Pi_{\mathrm{nil},-}=\vec Q$, not by a normalisation convention.
 
 The sector is the union of two sectors of the four-sector arrangement,
 
@@ -133,9 +133,9 @@ the **scalar**, **nilpotent** and **unipotent** strata. The union $\mathcal S^{\
 |---|---|---|---|---|---|---|
 | **scalar** | $\vec Q=0$ | $Q_te_t$ | $X-Q_t$ | $4$, or $0$ at the origin | $\mathbb{B}$ | $Q_t^2$ |
 | **nilpotent** | $\vec Q\neq0$, $Q_t=0$ | $\vec Q$, with $\vec Q^2=0$ | $X^2$ | $2$ | $\mathbb{C}[\vec Q]$ | $0$ |
-| **unipotent** | $\vec Q\neq0$, $Q_t\neq0$ | $Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon=\vec Q/Q_t$ | $(X-Q_t)^2$ | $4$ | $\mathbb{C}[\vec Q]$ | $Q_t^2$ |
+| **unipotent** | $\vec Q\neq0$, $Q_t\neq0$ | $Q_t(e_t+\vec\Pi_{\mathrm{nil}})$, $\vec\Pi_{\mathrm{nil}}=\vec Q/Q_t$ | $(X-Q_t)^2$ | $4$ | $\mathbb{C}[\vec Q]$ | $Q_t^2$ |
 
-*Proof.* The scalar stratum is immediate: the element is central, with the stated minimal polynomial, and left multiplication is $Q_t\,\mathrm{id}$, of rank $4$, or zero at the origin. On the other two strata $\vec Q^2=0$ and $\vec Q\neq0$, so $\tilde Q-Q_te_t$ is non-zero with square zero; the minimal polynomial is $(X-Q_t)^2$ and the centraliser is that of $\vec Q$, the dual numbers $\mathbb{C}[\vec Q]=\{ae_t+b\vec Q\}$, of complex dimension two. On the nilpotent stratum the element is a non-zero square-zero element, not an invertible element, and its minimal polynomial is $X^2$; on the unipotent stratum $u=e_t+\vec\Upsilon$ is unipotent, so $\tilde Q=Q_tu$ is invertible with inverse $Q_t^{-1}(e_t-\vec\Upsilon)$. Left multiplication by a non-zero square-zero element has image contained in its kernel, and both spaces have complex dimension two, so the rank is two; on the invertibles the rank is four. ∎
+*Proof.* The scalar stratum is immediate: the element is central, with the stated minimal polynomial, and left multiplication is $Q_t\,\mathrm{id}$, of rank $4$, or zero at the origin. On the other two strata $\vec Q^2=0$ and $\vec Q\neq0$, so $\tilde Q-Q_te_t$ is non-zero with square zero; the minimal polynomial is $(X-Q_t)^2$ and the centraliser is that of $\vec Q$, the dual numbers $\mathbb{C}[\vec Q]=\{ae_t+b\vec Q\}$, of complex dimension two. On the nilpotent stratum the element is a non-zero square-zero element, not an invertible element, and its minimal polynomial is $X^2$; on the unipotent stratum $u=e_t+\vec\Pi_{\mathrm{nil}}$ is unipotent, so $\tilde Q=Q_tu$ is invertible with inverse $Q_t^{-1}(e_t-\vec\Pi_{\mathrm{nil}})$. Left multiplication by a non-zero square-zero element has image contained in its kernel, and both spaces have complex dimension two, so the rank is two; on the invertibles the rank is four. ∎
 
 **Corollary (the spectral behaviour).** The spectral data are collected in the table.
 
@@ -149,7 +149,7 @@ the **scalar**, **nilpotent** and **unipotent** strata. The union $\mathcal S^{\
 
 **Proposition (similarity).** Under the inner automorphisms of $\mathbb{B}$ each stratum is a union of orbits indexed by the scalar part: the scalar stratum has one orbit for each $Q_t\in\mathbb{C}$, the unipotent stratum has one orbit for each $Q_t\in\mathbb{C}^\times$, and the nilpotent stratum is a single orbit. The origin is its own orbit.
 
-*Proof.* The scalar part is invariant under every automorphism, since automorphisms fix the centre. On the scalar stratum the element is central, so its orbit is a point. On the unipotent stratum, $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$ and $\vec\Upsilon\neq0$; the group $\mathrm{PGL}_2(\mathbb{C})$ acts transitively on the non-zero square-zero elements, by the matrix picture below, so all unipotents with the same $Q_t$ are conjugate. The same argument applies to the nilpotent stratum with $Q_t=0$; the origin is fixed. ∎
+*Proof.* The scalar part is invariant under every automorphism, since automorphisms fix the centre. On the scalar stratum the element is central, so its orbit is a point. On the unipotent stratum, $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}^2=0$ and $\vec\Pi_{\mathrm{nil}}\neq0$; the group $\mathrm{PGL}_2(\mathbb{C})$ acts transitively on the non-zero square-zero elements, by the matrix picture below, so all unipotents with the same $Q_t$ are conjugate. The same argument applies to the nilpotent stratum with $Q_t=0$; the origin is fixed. ∎
 
 **Remark (three strata, two halves).** The determinant split and the stratum split do not agree on the sector. The scalar stratum straddles the two halves: the origin lies in $\Sigma_{00}$, while every other point $Q_te_t$, $Q_t\neq0$, lies in $\Sigma_{10}$. The unipotent stratum is exactly $\Sigma_{10}\setminus\mathbb{C}^\times e_t$, and the nilpotent stratum is exactly $\Sigma_{00}\setminus\{0\}$. Thus
 
@@ -225,19 +225,19 @@ of complex dimension two: the image is the kernel, and the quotient $\mathbb{B}/
 
 ### The Chosen Frame
 
-A **frame adapted to $\vec Q$** is a complete orthogonal pair $\tilde\Pi_+,\tilde\Pi_-$ with
+A **frame adapted to $\vec Q$** is a complete orthogonal pair $\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-}$ with
 
 $$
-\tilde\Pi_+\vec Q=\vec Q,\qquad \vec Q\tilde\Pi_-=\vec Q,\qquad \tilde\Pi_-\vec Q=\vec Q\tilde\Pi_+=0.
+\tilde\Pi_{\mathrm{id},+}\vec Q=\vec Q,\qquad \vec Q\tilde\Pi_{\mathrm{id},-}=\vec Q,\qquad \tilde\Pi_{\mathrm{id},-}\vec Q=\vec Q\tilde\Pi_{\mathrm{id},+}=0.
 $$
 
-Such a pair exists: choose a complement of $\mathbb{C}\vec Q$ in $\ker L_{\vec Q}$, let $\tilde\Pi_+$ be the projection onto $\mathbb{C}\vec Q$ along that complement, and put $\tilde\Pi_-=e_t-\tilde\Pi_+$.
+Such a pair exists: choose a complement of $\mathbb{C}\vec Q$ in $\ker L_{\vec Q}$, let $\tilde\Pi_{\mathrm{id},+}$ be the projection onto $\mathbb{C}\vec Q$ along that complement, and put $\tilde\Pi_{\mathrm{id},-}=e_t-\tilde\Pi_{\mathrm{id},+}$.
 
 **Proposition.** Every adapted pair is complete and orthogonal, and $\vec Q\in\mathbb{B}_{+-}$.
 
-*Proof.* The identities give $\tilde\Pi_+\vec Q=\vec Q$ and $\tilde\Pi_-\vec Q=0$, so $\vec Q=\tilde\Pi_+\vec Q\tilde\Pi_-$ lies in the corner $\mathbb{B}_{+-}$; completeness and orthogonality are the definition of the pair. ∎
+*Proof.* The identities give $\tilde\Pi_{\mathrm{id},+}\vec Q=\vec Q$ and $\tilde\Pi_{\mathrm{id},-}\vec Q=0$, so $\vec Q=\tilde\Pi_{\mathrm{id},+}\vec Q\tilde\Pi_{\mathrm{id},-}$ lies in the corner $\mathbb{B}_{+-}$; completeness and orthogonality are the definition of the pair. ∎
 
-**Remark (the choice is real).** The complement is not determined by $\vec Q$: two complements differ by a linear map from $\mathbb{C}\vec Q$ to the complement, and the idempotents differ by the affine family $\tilde\Pi_+(b)=\tilde\Pi_+ + b\vec Q$, $b\in\mathbb{C}$, with $\tilde\Pi_-(b)=e_t-\tilde\Pi_+(b)$. The Jordan form below is independent of $b$; the frame is not. No canonical value of $b$ is claimed for the product alone. The definite Hermitian form selects one, and it is constructed in the next subsection.
+**Remark (the choice is real).** The complement is not determined by $\vec Q$: two complements differ by a linear map from $\mathbb{C}\vec Q$ to the complement, and the idempotents differ by the affine family $\tilde\Pi_{\mathrm{id},+}(b)=\tilde\Pi_{\mathrm{id},+} + b\vec Q$, $b\in\mathbb{C}$, with $\tilde\Pi_{\mathrm{id},-}(b)=e_t-\tilde\Pi_{\mathrm{id},+}(b)$. The Jordan form below is independent of $b$; the frame is not. No canonical value of $b$ is claimed for the product alone. The definite Hermitian form selects one, and it is constructed in the next subsection.
 
 **Remark (not a limit).** The idempotents are not the limits of the regular spectral idempotents $(e_t\pm\vec{Ζ})/2$, which diverge as $B\to0$. They are a new pair, attached to the flag of $\vec Q$ and to the chosen complement.
 
@@ -245,28 +245,28 @@ Such a pair exists: choose a complement of $\mathbb{C}\vec Q$ in $\ker L_{\vec Q
 
 **The definite Hermitian form selects one value of $b$.** The form is $\langle X,Y\rangle_*=\operatorname{Sc}(XY^*)$ of *Product and Form Conventions*, §*The Form Convention*, and $\langle\vec Q\rangle_*=\sum\lvert Q_k\rvert^2>0$ on the sector off the scalar line.
 
-**Theorem (the canonical pair).** Put $\vec\Upsilon_-=\vec Q$ and
+**Theorem (the canonical pair).** Put $\vec\Pi_{\mathrm{nil},-}=\vec Q$ and
 
 $$
-\tilde\Pi_+=\frac{\vec Q\vec Q^*}{2\langle\vec Q\rangle_*},\qquad
-\tilde\Pi_-=\frac{\vec Q^*\vec Q}{2\langle\vec Q\rangle_*},\qquad
-\vec\Upsilon_+=\frac{\vec Q^*}{2\langle\vec Q\rangle_*}.
+\tilde\Pi_{\mathrm{id},+}=\frac{\vec Q\vec Q^*}{2\langle\vec Q\rangle_*},\qquad
+\tilde\Pi_{\mathrm{id},-}=\frac{\vec Q^*\vec Q}{2\langle\vec Q\rangle_*},\qquad
+\vec\Pi_{\mathrm{nil},+}=\frac{\vec Q^*}{2\langle\vec Q\rangle_*}.
 $$
 
-Then $\tilde\Pi_\pm$ are the **support idempotents**: Hermitian idempotents with $\tilde\Pi_+\tilde\Pi_-=0$, $\tilde\Pi_++\tilde\Pi_-=e_t$, and
+Then $\tilde\Pi_{\mathrm{id},\pm}$ are the **support idempotents**: Hermitian idempotents with $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$, $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$, and
 
 $$
-\tilde\Pi_+\vec Q=\vec Q,\qquad
-\vec Q\tilde\Pi_-=\vec Q,\qquad
-\vec Q\vec\Upsilon_+=\tilde\Pi_+,\qquad
-\vec\Upsilon_+\vec Q=\tilde\Pi_-.
+\tilde\Pi_{\mathrm{id},+}\vec Q=\vec Q,\qquad
+\vec Q\tilde\Pi_{\mathrm{id},-}=\vec Q,\qquad
+\vec Q\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+},\qquad
+\vec\Pi_{\mathrm{nil},+}\vec Q=\tilde\Pi_{\mathrm{id},-}.
 $$
 
 *Proof.* In the fixed model $Q=\mathsf M_2(\vec Q)$ is a rank-one nilpotent with singular value $s=\sqrt{2\langle\vec Q\rangle_*}$, so $Q=suv^\dagger$ with $u,v$ orthonormal. The Frobenius norm gives $s^2=2\operatorname{Sc}(Q^\dagger Q)=2\langle\vec Q\rangle_*$. The four elements are the images of $uu^\dagger$, $suv^\dagger$, $s^{-1}vu^\dagger$ and $vv^\dagger$, and the identities are the matrix-unit identities. ∎
 
-**Corollary (uniqueness).** The canonical pair is the value $b=0$ of the affine family. Every adapted pair is $\tilde\Pi_+(b)=\tilde\Pi_+ + b\vec Q$ with $\tilde\Pi_-(b)=\tilde\Pi_- - b\vec Q$, and the pair is Hermitian exactly when $b=0$.
+**Corollary (uniqueness).** The canonical pair is the value $b=0$ of the affine family. Every adapted pair is $\tilde\Pi_{\mathrm{id},+}(b)=\tilde\Pi_{\mathrm{id},+} + b\vec Q$ with $\tilde\Pi_{\mathrm{id},-}(b)=\tilde\Pi_{\mathrm{id},-} - b\vec Q$, and the pair is Hermitian exactly when $b=0$.
 
-*Proof.* If $\tilde\Pi_+(b)$ is Hermitian, then $\bar b\vec Q^*=b\vec Q$. If $b\neq0$, then $\vec Q^*=\mu\vec Q$ with $\lvert\mu\rvert=1$, hence $\vec Q^*\vec Q=\mu\vec Q^2=0$, contrary to $\vec Q^*\vec Q$ being a nonzero projection. Hence $b=0$. ∎
+*Proof.* If $\tilde\Pi_{\mathrm{id},+}(b)$ is Hermitian, then $\bar b\vec Q^*=b\vec Q$. If $b\neq0$, then $\vec Q^*=\mu\vec Q$ with $\lvert\mu\rvert=1$, hence $\vec Q^*\vec Q=\mu\vec Q^2=0$, contrary to $\vec Q^*\vec Q$ being a nonzero projection. Hence $b=0$. ∎
 
 **Remark (the matrix form).** The pair is the SVD frame of the nilpotent. The Jordanising matrix, its determinant and its freedom are in *The Jordan Basis of a Spectrally Degenerate Biquaternion*.
 
@@ -279,7 +279,7 @@ $$
 **Definition (corners).** For $s,t\in\{+,-\}$ put
 
 $$
-\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t=\{\tilde Q_2:\ \tilde\Pi_s\tilde Q_2=\tilde Q_2,\ \tilde Q_2\tilde\Pi_t=\tilde Q_2\}.
+\mathbb{B}_{st}=\tilde\Pi_{\mathrm{id},s}\mathbb{B}\tilde\Pi_{\mathrm{id},t}=\{\tilde Q_2:\ \tilde\Pi_{\mathrm{id},s}\tilde Q_2=\tilde Q_2,\ \tilde Q_2\tilde\Pi_{\mathrm{id},t}=\tilde Q_2\}.
 $$
 
 The corner rule is
@@ -297,36 +297,36 @@ $$
 The diagonal corners are spanned by the idempotents,
 
 $$
-\mathbb{B}_{++}=\mathbb{C}\tilde\Pi_+,\qquad
-\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_-,
+\mathbb{B}_{++}=\mathbb{C}\tilde\Pi_{\mathrm{id},+},\qquad
+\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_{\mathrm{id},-},
 $$
 
 and the mixed corners by the generators of the next subsection,
 
 $$
-\mathbb{B}_{+-}=\mathbb{C}\vec\Upsilon_-,\qquad
-\mathbb{B}_{-+}=\mathbb{C}\vec\Upsilon_+.
+\mathbb{B}_{+-}=\mathbb{C}\vec\Pi_{\mathrm{nil},-},\qquad
+\mathbb{B}_{-+}=\mathbb{C}\vec\Pi_{\mathrm{nil},+}.
 $$
 
-The proposition of the preceding section places the vector part in the first mixed corner: $\tilde\Pi_+\vec Q=\vec Q$ and $\vec Q\tilde\Pi_-=\vec Q$, so $\vec Q\in\mathbb{B}_{+-}$.
+The proposition of the preceding section places the vector part in the first mixed corner: $\tilde\Pi_{\mathrm{id},+}\vec Q=\vec Q$ and $\vec Q\tilde\Pi_{\mathrm{id},-}=\vec Q$, so $\vec Q\in\mathbb{B}_{+-}$.
 
 ### The Jordan Pair
 
-**Definition (the pair).** Put $\vec\Upsilon_-=\vec Q$. Left multiplication by $\vec Q$ is an isomorphism from $\mathbb{B}_{-+}$ onto $\mathbb{B}_{++}=\mathbb{C}\tilde\Pi_+$, so there is a unique $\vec\Upsilon_+\in\mathbb{B}_{-+}$ with $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$.
+**Definition (the pair).** Put $\vec\Pi_{\mathrm{nil},-}=\vec Q$. Left multiplication by $\vec Q$ is an isomorphism from $\mathbb{B}_{-+}$ onto $\mathbb{B}_{++}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$, so there is a unique $\vec\Pi_{\mathrm{nil},+}\in\mathbb{B}_{-+}$ with $\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+}$.
 
 **Theorem (the pair).** The two elements satisfy
 
 $$
-\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,\qquad
-\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\qquad
-\vec\Upsilon_\pm^2=0,
+\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+},\qquad
+\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-},\qquad
+\vec\Pi_{\mathrm{nil},\pm}^2=0,
 $$
 
-and they are the unique pair with these properties and with $\vec\Upsilon_-=\vec Q$.
+and they are the unique pair with these properties and with $\vec\Pi_{\mathrm{nil},-}=\vec Q$.
 
-*Proof.* The products are the proposition, and the square of $\vec\Upsilon_-$ is $\vec Q^2=0$. The square of $\vec\Upsilon_+$ vanishes because the star preserves the cone. For uniqueness, let $\vec\Upsilon$ lie in $\mathbb{B}_{-+}$ with $\vec Q\vec\Upsilon=\tilde\Pi_+$. Then $\vec Q(\vec\Upsilon-\vec\Upsilon_+)=0$, and the difference lies in the corner. Left multiplication by $\vec Q$ is injective on $\mathbb{B}_{-+}$: it sends the generator $\vec\Upsilon_+$ to $\tilde\Pi_+\neq0$, and a non-zero linear map between lines is injective. Hence $\vec\Upsilon=\vec\Upsilon_+$. ∎
+*Proof.* The products are the proposition, and the square of $\vec\Pi_{\mathrm{nil},-}$ is $\vec Q^2=0$. The square of $\vec\Pi_{\mathrm{nil},+}$ vanishes because the star preserves the cone. For uniqueness, let $\vec\Pi_{\mathrm{nil}}$ lie in $\mathbb{B}_{-+}$ with $\vec Q\vec\Pi_{\mathrm{nil}}=\tilde\Pi_{\mathrm{id},+}$. Then $\vec Q(\vec\Pi_{\mathrm{nil}}-\vec\Pi_{\mathrm{nil},+})=0$, and the difference lies in the corner. Left multiplication by $\vec Q$ is injective on $\mathbb{B}_{-+}$: it sends the generator $\vec\Pi_{\mathrm{nil},+}$ to $\tilde\Pi_{\mathrm{id},+}\neq0$, and a non-zero linear map between lines is injective. Hence $\vec\Pi_{\mathrm{nil}}=\vec\Pi_{\mathrm{nil},+}$. ∎
 
-**Remark (the scale is fixed by the element).** In the regular case the admissible pair is determined only up to the reciprocal rescaling $\vec\Upsilon_+\mapsto\mu\vec\Upsilon_+$, $\vec\Upsilon_-\mapsto\mu^{-1}\vec\Upsilon_-$. The rescaling is still an automorphism of the pair here, but only one representative has $\vec\Upsilon_-=\vec Q$. The condition that the element itself be a basis vector, $\tilde Q=Q_te_t+1\cdot\vec\Upsilon_-$, fixes $\mu=1$. The normalisation is the one of the Jordan block: the superdiagonal entry is one.
+**Remark (the scale is fixed by the element).** In the regular case the admissible pair is determined only up to the reciprocal rescaling $\vec\Pi_{\mathrm{nil},+}\mapsto\mu\vec\Pi_{\mathrm{nil},+}$, $\vec\Pi_{\mathrm{nil},-}\mapsto\mu^{-1}\vec\Pi_{\mathrm{nil},-}$. The rescaling is still an automorphism of the pair here, but only one representative has $\vec\Pi_{\mathrm{nil},-}=\vec Q$. The condition that the element itself be a basis vector, $\tilde Q=Q_te_t+1\cdot\vec\Pi_{\mathrm{nil},-}$, fixes $\mu=1$. The normalisation is the one of the Jordan block: the superdiagonal entry is one.
 
 ## The Jordan Basis
 
@@ -337,10 +337,10 @@ and they are the unique pair with these properties and with $\vec\Upsilon_-=\vec
 **Definition (the Jordan basis).** For a spectrally degenerate $\tilde Q$ with $\vec Q\neq0$, the **Jordan basis** is
 
 $$
-\mathcal{J}(\tilde Q)=(\vec\Upsilon_-,\ \tilde\Pi_-,\ \tilde\Pi_+,\ \vec\Upsilon_+).
+\mathcal{J}(\tilde Q)=(\vec\Pi_{\mathrm{nil},-},\ \tilde\Pi_{\mathrm{id},-},\ \tilde\Pi_{\mathrm{id},+},\ \vec\Pi_{\mathrm{nil},+}).
 $$
 
-The vectors are listed chain by chain. The corner order, used for the multiplication table and for the coordinate model, is the same four vectors in the order $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$. The four vectors are determined by the frame; their corner labels are canonical, and the order of the two chains is a convention.
+The vectors are listed chain by chain. The corner order, used for the multiplication table and for the coordinate model, is the same four vectors in the order $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$. The four vectors are determined by the frame; their corner labels are canonical, and the order of the two chains is a convention.
 
 **Theorem (basis and Jordan form).** The four vectors are non-zero and lie in the four corners, in the corner order $\mathbb{B}_{++},\mathbb{B}_{+-},\mathbb{B}_{-+},\mathbb{B}_{--}$ respectively. They form a basis of $\mathbb{B}$. Put
 
@@ -369,25 +369,25 @@ $$
 *Proof.* The corners are lines and their direct sum is $\mathbb{B}$, so one non-zero vector in each forms a basis. The actions are
 
 $$
-\tilde Q\tilde\Pi_+=Q_t\tilde\Pi_+,\qquad
-\tilde Q\vec\Upsilon_-=Q_t\vec\Upsilon_-,
+\tilde Q\tilde\Pi_{\mathrm{id},+}=Q_t\tilde\Pi_{\mathrm{id},+},\qquad
+\tilde Q\vec\Pi_{\mathrm{nil},-}=Q_t\vec\Pi_{\mathrm{nil},-},
 $$
 
 $$
-\tilde Q\tilde\Pi_-=Q_t\tilde\Pi_-+\vec\Upsilon_-,\qquad
-\tilde Q\vec\Upsilon_+=Q_t\vec\Upsilon_++\tilde\Pi_+.
+\tilde Q\tilde\Pi_{\mathrm{id},-}=Q_t\tilde\Pi_{\mathrm{id},-+}\vec\Pi_{\mathrm{nil},-},\qquad
+\tilde Q\vec\Pi_{\mathrm{nil},+}=Q_t\vec\Pi_{\mathrm{nil},++}\tilde\Pi_{\mathrm{id},+}.
 $$
 
 The first pair is diagonal, and the second pair gives the superdiagonal entry one in each chain. ∎
 
 The multiplication of the four basis vectors is the table. The row is the left factor and the column is the right factor.
 
-| product | $\tilde\Pi_+$ | $\vec\Upsilon_-$ | $\vec\Upsilon_+$ | $\tilde\Pi_-$ |
+| product | $\tilde\Pi_{\mathrm{id},+}$ | $\vec\Pi_{\mathrm{nil},-}$ | $\vec\Pi_{\mathrm{nil},+}$ | $\tilde\Pi_{\mathrm{id},-}$ |
 |---|---|---|---|---|
-| $\tilde\Pi_+$ | $\tilde\Pi_+$ | $\vec\Upsilon_-$ | $0$ | $0$ |
-| $\vec\Upsilon_-$ | $0$ | $0$ | $\tilde\Pi_+$ | $\vec\Upsilon_-$ |
-| $\vec\Upsilon_+$ | $\vec\Upsilon_+$ | $\tilde\Pi_-$ | $0$ | $0$ |
-| $\tilde\Pi_-$ | $0$ | $0$ | $\vec\Upsilon_+$ | $\tilde\Pi_-$ |
+| $\tilde\Pi_{\mathrm{id},+}$ | $\tilde\Pi_{\mathrm{id},+}$ | $\vec\Pi_{\mathrm{nil},-}$ | $0$ | $0$ |
+| $\vec\Pi_{\mathrm{nil},-}$ | $0$ | $0$ | $\tilde\Pi_{\mathrm{id},+}$ | $\vec\Pi_{\mathrm{nil},-}$ |
+| $\vec\Pi_{\mathrm{nil},+}$ | $\vec\Pi_{\mathrm{nil},+}$ | $\tilde\Pi_{\mathrm{id},-}$ | $0$ | $0$ |
+| $\tilde\Pi_{\mathrm{id},-}$ | $0$ | $0$ | $\vec\Pi_{\mathrm{nil},+}$ | $\tilde\Pi_{\mathrm{id},-}$ |
 
 The table is the one of the eigenbasis, unchanged: in both cases the four vectors are the matrix units. What changes is the element expanded in the basis, not the multiplication of the basis.
 
@@ -405,33 +405,33 @@ Q_t&0&1&0\\
 \end{pmatrix}.
 $$
 
-In the order $(\vec\Upsilon_-,\tilde\Pi_+,\tilde\Pi_-,\vec\Upsilon_+)$ it is $\operatorname{diag}(J_2(Q_t),J_2(Q_t))$.
+In the order $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-},\vec\Pi_{\mathrm{nil},+})$ it is $\operatorname{diag}(J_2(Q_t),J_2(Q_t))$.
 
 *Proof.* The actions are
 
 $$
-\tilde\Pi_+\tilde Q=Q_t\tilde\Pi_++\vec\Upsilon_-,\qquad
-\vec\Upsilon_-\tilde Q=Q_t\vec\Upsilon_-,
+\tilde\Pi_{\mathrm{id},+}\tilde Q=Q_t\tilde\Pi_{\mathrm{id},++}\vec\Pi_{\mathrm{nil},-},\qquad
+\vec\Pi_{\mathrm{nil},-}\tilde Q=Q_t\vec\Pi_{\mathrm{nil},-},
 $$
 
 $$
-\vec\Upsilon_+\tilde Q=Q_t\vec\Upsilon_++\tilde\Pi_-,\qquad
-\tilde\Pi_-\tilde Q=Q_t\tilde\Pi_-.
+\vec\Pi_{\mathrm{nil},+}\tilde Q=Q_t\vec\Pi_{\mathrm{nil},++}\tilde\Pi_{\mathrm{id},-},\qquad
+\tilde\Pi_{\mathrm{id},-}\tilde Q=Q_t\tilde\Pi_{\mathrm{id},-}.
 $$
 
-The two chains are $(\vec\Upsilon_-,\tilde\Pi_+)$ and $(\tilde\Pi_-,\vec\Upsilon_+)$. ∎
+The two chains are $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},+})$ and $(\tilde\Pi_{\mathrm{id},-},\vec\Pi_{\mathrm{nil},+})$. ∎
 
-**Remark (no simultaneous Jordan basis).** If one basis put both $L_{\tilde Q}$ and $R_{\tilde Q}$ in Jordan form, both would be $\operatorname{diag}(J_2(Q_t),J_2(Q_t))$, since the Jordan form of a single eigenvalue with two blocks of size two is unique, hence $L_{\tilde Q}=R_{\tilde Q}$. But $L_{\tilde Q}\tilde\Pi_+=Q_t\tilde\Pi_+$ while $R_{\tilde Q}\tilde\Pi_+=Q_t\tilde\Pi_++\vec\Upsilon_-$. The two actions have different chain pairings and no common Jordan form.
+**Remark (no simultaneous Jordan basis).** If one basis put both $L_{\tilde Q}$ and $R_{\tilde Q}$ in Jordan form, both would be $\operatorname{diag}(J_2(Q_t),J_2(Q_t))$, since the Jordan form of a single eigenvalue with two blocks of size two is unique, hence $L_{\tilde Q}=R_{\tilde Q}$. But $L_{\tilde Q}\tilde\Pi_{\mathrm{id},+}=Q_t\tilde\Pi_{\mathrm{id},+}$ while $R_{\tilde Q}\tilde\Pi_{\mathrm{id},+}=Q_t\tilde\Pi_{\mathrm{id},++}\vec\Pi_{\mathrm{nil},-}$. The two actions have different chain pairings and no common Jordan form.
 
 ### The 2×2 Matrix Model
 
 Assign the four vectors, in the corner order, to the matrix units by
 
 $$
-\mathsf M_2^{\tilde Q}(\tilde\Pi_+)=E_{11},\quad
-\mathsf M_2^{\tilde Q}(\vec\Upsilon_-)=E_{12},\quad
-\mathsf M_2^{\tilde Q}(\vec\Upsilon_+)=E_{21},\quad
-\mathsf M_2^{\tilde Q}(\tilde\Pi_-)=E_{22}.
+\mathsf M_2^{\tilde Q}(\tilde\Pi_{\mathrm{id},+})=E_{11},\quad
+\mathsf M_2^{\tilde Q}(\vec\Pi_{\mathrm{nil},-})=E_{12},\quad
+\mathsf M_2^{\tilde Q}(\vec\Pi_{\mathrm{nil},+})=E_{21},\quad
+\mathsf M_2^{\tilde Q}(\tilde\Pi_{\mathrm{id},-})=E_{22}.
 $$
 
 The assignment is an algebra isomorphism onto $M_2(\mathbb{C})$, because the table above is the matrix-unit table. In it,
@@ -453,7 +453,7 @@ $$
 **Theorem (expansion).** Every $\tilde X\in\mathbb{B}$ has a unique expansion
 
 $$
-\tilde X=X_{11}\tilde\Pi_++X_{12}\vec\Upsilon_-+X_{21}\vec\Upsilon_++X_{22}\tilde\Pi_-,
+\tilde X=X_{11}\tilde\Pi_{\mathrm{id},++X}_{12}\vec\Pi_{\mathrm{nil},-+X}_{21}\vec\Pi_{\mathrm{nil},++X}_{22}\tilde\Pi_{\mathrm{id},-},
 $$
 
 and the map $\tilde X\mapsto\mathsf M_2^{\tilde Q}(\tilde X)$ is an algebra isomorphism onto $M_2(\mathbb{C})$.
@@ -479,29 +479,29 @@ $$
 Then $Q_t=1$, $\vec Q=\vec e_x+i\vec e_y$, $\vec Q^2=0$. The adapted frame is
 
 $$
-\tilde\Pi_+=\frac12(e_t+i\vec e_z),\qquad
-\tilde\Pi_-=\frac12(e_t-i\vec e_z),
+\tilde\Pi_{\mathrm{id},+}=\frac12(e_t+i\vec e_z),\qquad
+\tilde\Pi_{\mathrm{id},-}=\frac12(e_t-i\vec e_z),
 $$
 
 $$
-\vec\Upsilon_-=\vec e_x+i\vec e_y,\qquad
-\vec\Upsilon_+=\frac14(-\vec e_x+i\vec e_y).
+\vec\Pi_{\mathrm{nil},-}=\vec e_x+i\vec e_y,\qquad
+\vec\Pi_{\mathrm{nil},+}=\frac14(-\vec e_x+i\vec e_y).
 $$
 
 The checks are
 
 $$
-\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,\qquad
-\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,
+\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+},\qquad
+\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-},
 $$
 
 and
 
 $$
-\tilde Q=\tilde\Pi_++\vec\Upsilon_-+\tilde\Pi_-.
+\tilde Q=\tilde\Pi_{\mathrm{id},++}\vec\Pi_{\mathrm{nil},-+}\tilde\Pi_{\mathrm{id},-}.
 $$
 
-In the chain order $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$,
+In the chain order $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$,
 
 $$
 L_{\tilde Q}=\operatorname{diag}\left(\begin{pmatrix}1&1\\0&1\end{pmatrix},\begin{pmatrix}1&1\\0&1\end{pmatrix}\right),
@@ -517,14 +517,14 @@ and in the coordinate model $\mathsf M_2^{\tilde Q}(\tilde Q)=\begin{pmatrix}1&1
 2. The Jordan basis of $a\tilde Q$ is obtained from $\mathcal{J}(\tilde Q)$ by
 
 $$
-\tilde\Pi_\pm\longmapsto\tilde\Pi_\pm,\qquad
-\vec\Upsilon_-\longmapsto a\vec\Upsilon_-,\qquad
-\vec\Upsilon_+\longmapsto a^{-1}\vec\Upsilon_+,
+\tilde\Pi_{\mathrm{id},\pm}\longmapsto\tilde\Pi_{\mathrm{id},\pm},\qquad
+\vec\Pi_{\mathrm{nil},-}\longmapsto a\vec\Pi_{\mathrm{nil},-},\qquad
+\vec\Pi_{\mathrm{nil},+}\longmapsto a^{-1}\vec\Pi_{\mathrm{nil},+},
 $$
 
 and $\mathsf M_2^{\tilde Q}(a\tilde Q)=J_2(aQ_t)$.
 
-*Proof.* The vector part of $\tilde Q+be_t$ is $\vec Q$. For $a\tilde Q$ the vector part is $a\vec Q$; the flag is unchanged, so the idempotents are unchanged and the generators scale as stated. In the rescaled basis the element is $aQ_te_t+a\Upsilon_-$, whose coefficient on $\vec\Upsilon_-'$ is one, so its matrix is $J_2(aQ_t)$. ∎
+*Proof.* The vector part of $\tilde Q+be_t$ is $\vec Q$. For $a\tilde Q$ the vector part is $a\vec Q$; the flag is unchanged, so the idempotents are unchanged and the generators scale as stated. In the rescaled basis the element is $aQ_te_t+a\vec\Pi_{\mathrm{nil},-}$, whose coefficient on $\vec\Pi_{\mathrm{nil},-}'$ is one, so its matrix is $J_2(aQ_t)$. ∎
 
 ## The Frame Attached to the Vector Part
 
@@ -532,15 +532,15 @@ and $\mathsf M_2^{\tilde Q}(a\tilde Q)=J_2(aQ_t)$.
 
 **Proposition (dependence).** Let $\lambda\in\mathbb{C}^\times$.
 
-1. The idempotents are unchanged under $\vec Q\mapsto\lambda\vec Q$: $\tilde\Pi_\pm(\lambda\vec Q)=\tilde\Pi_\pm(\vec Q)$.
+1. The idempotents are unchanged under $\vec Q\mapsto\lambda\vec Q$: $\tilde\Pi_{\mathrm{id},\pm}(\lambda\vec Q)=\tilde\Pi_{\mathrm{id},\pm}(\vec Q)$.
 2. The generators are homogeneous of degrees $\pm1$:
 
 $$
-\vec\Upsilon_-(\lambda\vec Q)=\lambda\vec\Upsilon_-(\vec Q),\qquad
-\vec\Upsilon_+(\lambda\vec Q)=\lambda^{-1}\vec\Upsilon_+(\vec Q).
+\vec\Pi_{\mathrm{nil},-}(\lambda\vec Q)=\lambda\vec\Pi_{\mathrm{nil},-}(\vec Q),\qquad
+\vec\Pi_{\mathrm{nil},+}(\lambda\vec Q)=\lambda^{-1}\vec\Pi_{\mathrm{nil},+}(\vec Q).
 $$
 
-*Proof.* The line $\mathbb{C}\vec Q$ and the chosen complement are unchanged, so the idempotents are unchanged. The generator $\vec\Upsilon_-=\vec Q$ scales by $\lambda$, and the relation $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ forces $\vec\Upsilon_+$ to scale by $\lambda^{-1}$. ∎
+*Proof.* The line $\mathbb{C}\vec Q$ and the chosen complement are unchanged, so the idempotents are unchanged. The generator $\vec\Pi_{\mathrm{nil},-}=\vec Q$ scales by $\lambda$, and the relation $\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+}$ forces $\vec\Pi_{\mathrm{nil},+}$ to scale by $\lambda^{-1}$. ∎
 
 **Remark (comparison with the eigenbasis).** The eigenbasis of the regular case is attached to the direction $[\vec Q]\in\mathbb{P}^2$; the eigenvalues move affinely with the element and the basis does not move. Here the idempotents are attached to the direction, and the two chain vectors are not: the chain carries the scale of the vector part. The price of the normal form $J_2$ is that its superdiagonal entry one is a scale, and that scale is the scale of $\vec Q$.
 
@@ -560,24 +560,24 @@ A general inner automorphism need not preserve the chosen frame, and the image o
 
 **The two minimal left ideals are the two Jordan blocks of the left action, and the right action distinguishes them only partly.**
 
-The general statement is in *The Polarized Module of the Biquaternion Algebra*, §*The Left Action on a Couple*: the four Peirce vectors split into the couples, and left multiplication acts on each couple by the same matrix. Here that matrix is $J_2(Q_t)$, so each couple is a single Jordan chain. The eigenline in $\mathcal{C}_+$ is $\mathbb{C}\tilde\Pi_+$ and the eigenline in $\mathcal{C}_-$ is $\mathbb{C}\vec\Upsilon_-=\mathbb{C}\vec Q$; the two lines span the two-dimensional eigenspace.
+The general statement is in *The Polarized Module of the Biquaternion Algebra*, §*The Left Action on a Couple*: the four Peirce vectors split into the couples, and left multiplication acts on each couple by the same matrix. Here that matrix is $J_2(Q_t)$, so each couple is a single Jordan chain. The eigenline in $\mathcal{C}_+$ is $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ and the eigenline in $\mathcal{C}_-$ is $\mathbb{C}\vec\Pi_{\mathrm{nil},-}=\mathbb{C}\vec Q$; the two lines span the two-dimensional eigenspace.
 
-**Definition (the spinor spaces).** Put $S_\pm=\mathbb{B}\tilde\Pi_\pm$, the two Peirce carriers, here the two minimal left ideals.
+**Definition (the spinor spaces).** Put $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$, the two Peirce carriers, here the two minimal left ideals.
 
-**Proposition (the splitting).** $S_+=\operatorname{span}\{\tilde\Pi_+,\vec\Upsilon_+\}$ and $S_-=\operatorname{span}\{\vec\Upsilon_-,\tilde\Pi_-\}$, and $\mathbb{B}=S_+\oplus S_-$.
+**Proposition (the splitting).** $S_+=\operatorname{span}\{\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+}\}$ and $S_-=\operatorname{span}\{\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-}\}$, and $\mathbb{B}=S_+\oplus S_-$.
 
-*Proof.* The products of the table give $\tilde\Pi_+\tilde\Pi_+=\tilde\Pi_+$, $\vec\Upsilon_+\tilde\Pi_+=\vec\Upsilon_+$, and $\vec\Upsilon_-\tilde\Pi_+=\tilde\Pi_-\tilde\Pi_+=0$; the other side is the same. ∎
+*Proof.* The products of the table give $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},+}=\tilde\Pi_{\mathrm{id},+}$, $\vec\Pi_{\mathrm{nil},+}\tilde\Pi_{\mathrm{id},+}=\vec\Pi_{\mathrm{nil},+}$, and $\vec\Pi_{\mathrm{nil},-}\tilde\Pi_{\mathrm{id},+}=\tilde\Pi_{\mathrm{id},-}\tilde\Pi_{\mathrm{id},+}=0$; the other side is the same. ∎
 
 **Theorem (the actions on the spinor spaces).** Each $S_\pm$ is invariant under $L_{\tilde Q}$, and $L_{\tilde Q}$ acts on each as one Jordan block $J_2(Q_t)$. The right action preserves $S_-$ and is scalar there, $R_{\tilde Q}|_{S_-}=Q_t\,\mathrm{id}$, but it does not preserve $S_+$:
 
 $$
-R_{\tilde Q}(\tilde\Pi_+)=Q_t\tilde\Pi_++\vec\Upsilon_-,\qquad
-R_{\tilde Q}(\vec\Upsilon_+)=Q_t\vec\Upsilon_++\tilde\Pi_-.
+R_{\tilde Q}(\tilde\Pi_{\mathrm{id},+})=Q_t\tilde\Pi_{\mathrm{id},++}\vec\Pi_{\mathrm{nil},-},\qquad
+R_{\tilde Q}(\vec\Pi_{\mathrm{nil},+})=Q_t\vec\Pi_{\mathrm{nil},++}\tilde\Pi_{\mathrm{id},-}.
 $$
 
 In particular the two Peirce copies are the two blocks of the left action, and the right action mixes $S_+$ into $S_++S_-$.
 
-*Proof.* The left action is the theorem of §*The Basis and the Left Action* read on the two chains $(\tilde\Pi_+,\vec\Upsilon_+)$ and $(\vec\Upsilon_-,\tilde\Pi_-)$. The right action is computed in the table. ∎
+*Proof.* The left action is the theorem of §*The Basis and the Left Action* read on the two chains $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ and $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$. The right action is computed in the table. ∎
 
 **Remark (why the two copies are not two values).** The index $\pm$ of $S_\pm$ is a copy index: the two spaces are isomorphic, and no left multiplication tells them apart. A sector does not grade this pair either, since the theorem shows that $R_{\tilde Q}$ carries $S_+$ into $S_++S_-$ and is scalar only on $S_-$; a right multiplier therefore does not preserve the two copies. The pair is not the operator chirality of *Operator Chirality on the Biquaternion Algebra*: the label there is the side on which an operator multiplies, and the two values of a sector are its two eigenspaces on a carrier, which are not these two copies.
 
@@ -585,10 +585,10 @@ The four labels are collected in the table.
 
 | vector | corner | left ideal | $L_{\tilde Q}$ | $R_{\tilde Q}$ |
 |---|---|---|---|---|
-| $\tilde\Pi_+$ | $\mathbb{B}_{++}$ | $S_+$ | $Q_t\tilde\Pi_+$ | $Q_t\tilde\Pi_++\vec\Upsilon_-$ |
-| $\vec\Upsilon_-$ | $\mathbb{B}_{+-}$ | $S_-$ | $Q_t\vec\Upsilon_-$ | $Q_t\vec\Upsilon_-$ |
-| $\vec\Upsilon_+$ | $\mathbb{B}_{-+}$ | $S_+$ | $Q_t\vec\Upsilon_++\tilde\Pi_+$ | $Q_t\vec\Upsilon_++\tilde\Pi_-$ |
-| $\tilde\Pi_-$ | $\mathbb{B}_{--}$ | $S_-$ | $Q_t\tilde\Pi_-+\vec\Upsilon_-$ | $Q_t\tilde\Pi_-$ |
+| $\tilde\Pi_{\mathrm{id},+}$ | $\mathbb{B}_{++}$ | $S_+$ | $Q_t\tilde\Pi_{\mathrm{id},+}$ | $Q_t\tilde\Pi_{\mathrm{id},++}\vec\Pi_{\mathrm{nil},-}$ |
+| $\vec\Pi_{\mathrm{nil},-}$ | $\mathbb{B}_{+-}$ | $S_-$ | $Q_t\vec\Pi_{\mathrm{nil},-}$ | $Q_t\vec\Pi_{\mathrm{nil},-}$ |
+| $\vec\Pi_{\mathrm{nil},+}$ | $\mathbb{B}_{-+}$ | $S_+$ | $Q_t\vec\Pi_{\mathrm{nil},++}\tilde\Pi_{\mathrm{id},+}$ | $Q_t\vec\Pi_{\mathrm{nil},++}\tilde\Pi_{\mathrm{id},-}$ |
+| $\tilde\Pi_{\mathrm{id},-}$ | $\mathbb{B}_{--}$ | $S_-$ | $Q_t\tilde\Pi_{\mathrm{id},-+}\vec\Pi_{\mathrm{nil},-}$ | $Q_t\tilde\Pi_{\mathrm{id},-}$ |
 
 **Remark (the Peirce index).** In the regular case right multiplication is scalar on each $S_\pm$, and the Peirce index is a right-multiplication label. Here it is not: $S_-$ is an eigenspace of $R_{\tilde Q}$, but $S_+$ is not invariant, and its image carries a $Q_t$ part in $S_+$ and a nilpotent part in $S_-$. The Peirce index survives as the label of the two minimal left ideals and of the two blocks of the left action.
 
@@ -598,7 +598,7 @@ The four labels are collected in the table.
 
 **Proposition (scalars and inverses).** The sector is closed under multiplication by complex scalars. Its unit half $\Sigma_{10}$ is closed under inversion, with the inverse of the corollary of §*The Norm inside the Sector*, and the inverse of a unipotent is unipotent.
 
-*Proof.* $B^2(\lambda\tilde Q)=\lambda^2B^2(\tilde Q)$, so the cone is closed under scalar multiplication. For $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $Q_t\neq0$ and $\vec\Upsilon^2=0$, the inverse is $Q_t^{-1}(e_t-\vec\Upsilon)$, whose vector part $-\vec\Upsilon$ is again square-zero and whose scalar part is non-zero. ∎
+*Proof.* $B^2(\lambda\tilde Q)=\lambda^2B^2(\tilde Q)$, so the cone is closed under scalar multiplication. For $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with $Q_t\neq0$ and $\vec\Pi_{\mathrm{nil}}^2=0$, the inverse is $Q_t^{-1}(e_t-\vec\Pi_{\mathrm{nil}})$, whose vector part $-\vec\Pi_{\mathrm{nil}}$ is again square-zero and whose scalar part is non-zero. ∎
 
 **Proposition (the two failures of closure).** The sector is closed under neither addition nor multiplication.
 
@@ -671,35 +671,35 @@ The four sectors are collected in the table.
 
 **The Peirce construction needs a complete orthogonal pair and nothing else. The two companion articles obtain the pair from one element, and the Peirce matrix of that element records the difference.**
 
-Fix a complete orthogonal pair $\tilde\Pi_+,\tilde\Pi_-$ and normalised generators $\vec\Upsilon_-\in\mathbb{B}_{+-}$ and $\vec\Upsilon_+\in\mathbb{B}_{-+}$, with $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ and $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ (§*The Peirce Decompositions*). The four vectors
+Fix a complete orthogonal pair $\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-}$ and normalised generators $\vec\Pi_{\mathrm{nil},-}\in\mathbb{B}_{+-}$ and $\vec\Pi_{\mathrm{nil},+}\in\mathbb{B}_{-+}$, with $\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+}$ and $\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-}$ (§*The Peirce Decompositions*). The four vectors
 
 $$
-\mathcal{P}=(\tilde\Pi_+,\ \vec\Upsilon_-,\ \vec\Upsilon_+,\ \tilde\Pi_-)
+\mathcal{P}=(\tilde\Pi_{\mathrm{id},+},\ \vec\Pi_{\mathrm{nil},-},\ \vec\Pi_{\mathrm{nil},+},\ \tilde\Pi_{\mathrm{id},-})
 $$
 
-are a basis of $\mathbb{B}$, unique up to the reciprocal rescaling $(\mu,\mu^{-1})$ of the two mixed generators. For $\tilde Q_2\in\mathbb{B}$, let $\mathsf M_{\tilde\Pi}(\tilde Q_2)=(p_{ij})$ be its Peirce matrix in this basis, so that $\tilde Q_2=p_{11}\tilde\Pi_++p_{12}\vec\Upsilon_-+p_{21}\vec\Upsilon_++p_{22}\tilde\Pi_-$. For the standard pair $\mathsf M_{\tilde\Pi}$ is the model $\mathsf M_2$ of §*The Peirce Coordinates and the Matrix Model*.
+are a basis of $\mathbb{B}$, unique up to the reciprocal rescaling $(\mu,\mu^{-1})$ of the two mixed generators. For $\tilde Q_2\in\mathbb{B}$, let $\mathsf M_{\tilde\Pi_{\mathrm{id}}}(\tilde Q_2)=(p_{ij})$ be its Peirce matrix in this basis, so that $\tilde Q_2=p_{11}\tilde\Pi_{\mathrm{id},++p}_{12}\vec\Pi_{\mathrm{nil},-+p}_{21}\vec\Pi_{\mathrm{nil},++p}_{22}\tilde\Pi_{\mathrm{id},-}$. For the standard pair $\mathsf M_{\tilde\Pi_{\mathrm{id}}}$ is the model $\mathsf M_2$ of §*The Peirce Coordinates and the Matrix Model*.
 
-Both sector articles use a basis of this shape. They differ only in the pair, and the pair is visible in the matrix of the element. Write $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and put $B^2=Q_x^2+Q_y^2+Q_z^2$. Write $S_\pm=\mathbb{B}\tilde\Pi_\pm$ for the two minimal left ideals, and split the four basis vectors into the couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$.
+Both sector articles use a basis of this shape. They differ only in the pair, and the pair is visible in the matrix of the element. Write $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and put $B^2=Q_x^2+Q_y^2+Q_z^2$. Write $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ for the two minimal left ideals, and split the four basis vectors into the couples $\mathcal{C}_+=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ and $\mathcal{C}_-=(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$.
 
 | | general Peirce | spectrally regular, $B^2\neq0$ | spectrally degenerate, $B^2=0$, $\vec Q\neq0$ |
 |---|---|---|---|
-| pair | any complete orthogonal pair | the spectral pair $\tilde\Pi_\pm=(e_t\pm\vec{Ζ})/2$, $\vec{Ζ}=-i\vec Q/B$ | a chosen adapted pair $\tilde\Pi_+,\tilde\Pi_-$ |
-| relation to $\tilde Q$ | none required | $[\tilde\Pi_\pm,\tilde Q]=0$ | $\tilde Q\tilde\Pi_+=Q_t\tilde\Pi_+$, $\tilde\Pi_+\tilde Q=Q_t\tilde\Pi_++\vec\Upsilon_-$ |
-| Peirce matrix $\mathsf M_{\tilde\Pi}(\tilde Q)$ | any matrix, with trace $2Q_t$ | $\operatorname{diag}(\lambda_+,\lambda_-)$ | $J_2(Q_t)$ |
+| pair | any complete orthogonal pair | the spectral pair $\tilde\Pi_{\mathrm{id},\pm}=(e_t\pm\vec{Ζ})/2$, $\vec{Ζ}=-i\vec Q/B$ | a chosen adapted pair $\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-}$ |
+| relation to $\tilde Q$ | none required | $[\tilde\Pi_{\mathrm{id},\pm},\tilde Q]=0$ | $\tilde Q\tilde\Pi_{\mathrm{id},+}=Q_t\tilde\Pi_{\mathrm{id},+}$, $\tilde\Pi_{\mathrm{id},+}\tilde Q=Q_t\tilde\Pi_{\mathrm{id},++}\vec\Pi_{\mathrm{nil},-}$ |
+| Peirce matrix $\mathsf M_{\tilde\Pi_{\mathrm{id}}}(\tilde Q)$ | any matrix, with trace $2Q_t$ | $\operatorname{diag}(\lambda_+,\lambda_-)$ | $J_2(Q_t)$ |
 | each couple | two spinors | two eigenvectors | a Jordan chain |
 | right action | mixes the couples in general | scalar on $S_+$ and on $S_-$ | scalar on $S_-$, mixes $S_+$ |
 | basis | a normalised Peirce basis | the eigenbasis $\mathcal{B}(\tilde Q)$ | the Jordan basis $\mathcal{J}(\tilde Q)$ |
-| scale | reciprocal $\mathbb{C}^\times$ | fixed by the normalisation | fixed by $\vec\Upsilon_-=\vec Q$ |
+| scale | reciprocal $\mathbb{C}^\times$ | fixed by the normalisation | fixed by $\vec\Pi_{\mathrm{nil},-}=\vec Q$ |
 
 Here $\lambda_\pm=Q_t\pm iB$ are the two eigenvalues, $J_2(Q_t)=\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}$ is the Jordan block of the repeated eigenvalue.
 
 **The rigidity applies to all three columns.** By §*Systems of Matrix Units* of *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*, every pair of primitive orthogonal idempotents summing to $e_t$ is the image of the standard pair under an inner automorphism. The pairs are therefore conjugate, and the three columns are not three decompositions of different kinds: what changes from one column to the next is the position of the element in the decomposition, not the decomposition itself. The regular pair commutes with $\tilde Q$; the support pair does not; on the scalar line every pair commutes.
 
-**The regular case.** For $B^2\neq0$ the pair is the spectral pair of $\tilde Q$. It satisfies $[\tilde\Pi_\pm,\tilde Q]=0$, so $\mathsf M_{\tilde\Pi}(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-)$ and each couple is a pair of eigenvectors. The basis $\mathcal{P}$ is the eigenbasis $\mathcal{B}(\tilde Q)$ of *The Eigenbasis of a Spectrally Regular Biquaternion*; the reciprocal freedom is fixed there by the normalisation of the mixed generators.
+**The regular case.** For $B^2\neq0$ the pair is the spectral pair of $\tilde Q$. It satisfies $[\tilde\Pi_{\mathrm{id},\pm},\tilde Q]=0$, so $\mathsf M_{\tilde\Pi_{\mathrm{id}}}(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-)$ and each couple is a pair of eigenvectors. The basis $\mathcal{P}$ is the eigenbasis $\mathcal{B}(\tilde Q)$ of *The Eigenbasis of a Spectrally Regular Biquaternion*; the reciprocal freedom is fixed there by the normalisation of the mixed generators.
 
-**The degenerate case.** For $B^2=0$ and $\vec Q\neq0$ the root is gone, and an adapted frame supplies the pair. The pair is still complete, orthogonal and primitive, so the four corners and the basis are the general Peirce data. What changes is the Peirce matrix: $\mathsf M_{\tilde\Pi}(\tilde Q)=J_2(Q_t)$, with $\tilde Q\tilde\Pi_+=Q_t\tilde\Pi_+$ and $\tilde\Pi_+\tilde Q=Q_t\tilde\Pi_++\vec\Upsilon_-$. Each couple is a single Jordan chain rather than a pair of eigenvectors. The basis is the Jordan basis $\mathcal{J}(\tilde Q)$ of §*The Jordan Basis*; the reciprocal freedom is fixed there by $\vec\Upsilon_-=\vec Q$.
+**The degenerate case.** For $B^2=0$ and $\vec Q\neq0$ the root is gone, and an adapted frame supplies the pair. The pair is still complete, orthogonal and primitive, so the four corners and the basis are the general Peirce data. What changes is the Peirce matrix: $\mathsf M_{\tilde\Pi_{\mathrm{id}}}(\tilde Q)=J_2(Q_t)$, with $\tilde Q\tilde\Pi_{\mathrm{id},+}=Q_t\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},+}\tilde Q=Q_t\tilde\Pi_{\mathrm{id},++}\vec\Pi_{\mathrm{nil},-}$. Each couple is a single Jordan chain rather than a pair of eigenvectors. The basis is the Jordan basis $\mathcal{J}(\tilde Q)$ of §*The Jordan Basis*; the reciprocal freedom is fixed there by $\vec\Pi_{\mathrm{nil},-}=\vec Q$.
 
-**The scalar line.** For $\vec Q=0$ the element is $\tilde Q=Q_te_t$ and central. Every pair commutes with it, $\mathsf M_{\tilde\Pi}(\tilde Q)=Q_tI$, and every couple is a pair of eigenvectors. No pair is distinguished and no basis is canonical: every basis of $\mathbb{B}$ is an eigenbasis.
+**The scalar line.** For $\vec Q=0$ the element is $\tilde Q=Q_te_t$ and central. Every pair commutes with it, $\mathsf M_{\tilde\Pi_{\mathrm{id}}}(\tilde Q)=Q_tI$, and every couple is a pair of eigenvectors. No pair is distinguished and no basis is canonical: every basis of $\mathbb{B}$ is an eigenbasis.
 
 
 ## Summary
@@ -715,8 +715,8 @@ The two constructions are compared in the table.
 | | regular, $B^2\neq0$ | degenerate, $B^2=0$, $\vec Q\neq0$ |
 |---|---|---|
 | root | $\vec{Ζ}=-i\vec Q/B$, with $\vec{Ζ}^2=e_t$ | none |
-| idempotents | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ | the canonical pair of §*The Canonical Frame* |
-| generators | a pair, up to reciprocal rescaling, then one normalisation | $\vec\Upsilon_-=\vec Q$, and $\vec\Upsilon_+$ is the unique element with $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ |
+| idempotents | $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\vec{Ζ})$ | the canonical pair of §*The Canonical Frame* |
+| generators | a pair, up to reciprocal rescaling, then one normalisation | $\vec\Pi_{\mathrm{nil},-}=\vec Q$, and $\vec\Pi_{\mathrm{nil},+}$ is the unique element with $\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+}$ |
 | left action | $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ | $J_2(Q_t)\oplus J_2(Q_t)$ |
 | right action | $\operatorname{diag}(\lambda_+,\lambda_-,\lambda_+,\lambda_-)$ | $J_2(Q_t)\oplus J_2(Q_t)$, other pairing |
 | coordinate matrix | $\operatorname{diag}(\lambda_+,\lambda_-)$ | $J_2(Q_t)$ |
@@ -746,9 +746,9 @@ The Jordan basis is not the limit of the eigenbasis. The spectral idempotents di
 | $\mathsf{M}_2(\tilde Q)$ | the $2\times2$ matrix model, with $\det\mathsf{M}_2(\tilde Q)=Q_t^2+B^2$ |
 | $J_2(Q_t)$ | the Jordan block of the defective strata |
 | $\mathbb{C}[\vec Q]=\{ae_t+b\vec Q\}$ | the dual numbers, the centraliser of a defective element |
-| $\tilde\Pi_\pm$ | the idempotents of an adapted frame; the canonical pair is $\vec Q\vec Q^*/(2\langle\vec Q\rangle_*)$ and $\vec Q^*\vec Q/(2\langle\vec Q\rangle_*)$ |
-| $\vec\Upsilon_-=\vec Q$, $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ | the generators of the mixed corners, unique given the frame |
-| $\mathcal{J}(\tilde Q)=(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)$ | the Jordan basis, chain by chain; the corner order is $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ |
+| $\tilde\Pi_{\mathrm{id},\pm}$ | the idempotents of an adapted frame; the canonical pair is $\vec Q\vec Q^*/(2\langle\vec Q\rangle_*)$ and $\vec Q^*\vec Q/(2\langle\vec Q\rangle_*)$ |
+| $\vec\Pi_{\mathrm{nil},-}=\vec Q$, $\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+}$ | the generators of the mixed corners, unique given the frame |
+| $\mathcal{J}(\tilde Q)=(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-},\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ | the Jordan basis, chain by chain; the corner order is $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$ |
 | $\mathsf M_2^{\tilde Q}$ | the coordinate model of the Jordan basis, with $\mathsf M_2^{\tilde Q}(\tilde Q)=J_2(Q_t)$ |
 | $\vec{Ζ}=-i\vec Q/B$ | the root of the regular sector, undefined on $\mathcal S$ |
 

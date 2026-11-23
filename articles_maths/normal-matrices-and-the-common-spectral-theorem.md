@@ -142,7 +142,7 @@ where $x=\tfrac12(a-d)$, $y=b$ and $z=c$ are the entries of the traceless part $
 
 **The diagonal case and the two real halves are the simplest solutions.** A diagonal matrix has $y=z=0$ and is normal; a real symmetric one has $z=y$ and $x$ real, so the second condition reads $x(y+y)=2xy$ and holds; a real antisymmetric one has $z=-y$ and $x=0$ and holds too. So the two real halves and the real diagonal sit inside the normal variety, and the two conditions measure the complex directions beyond them.
 
-**The biquaternion reading names the two parameters.** The spectrum of a biquaternion is the pair of roots of $t^{2}-st+q$ with $s$ the scalar part and $q$ the norm, and the matrix is normal exactly when the two roots are real (Hermitian case) or conjugate imaginary (anti-Hermitian case) in the frame of the idempotents $\tilde\Pi_\pm$. So the biquaternion algebra has the two halves as its two normal slices: the Hermitian slice through the idempotents and the anti-Hermitian slice through the companion nilpotents, meeting in the identity.
+**The biquaternion reading names the two parameters.** The spectrum of a biquaternion is the pair of roots of $t^{2}-st+q$ with $s$ the scalar part and $q$ the norm, and the matrix is normal exactly when the two roots are real (Hermitian case) or conjugate imaginary (anti-Hermitian case) in the frame of the idempotents $\tilde\Pi_{\mathrm{id},\pm}$. So the biquaternion algebra has the two halves as its two normal slices: the Hermitian slice through the idempotents and the anti-Hermitian slice through the companion nilpotents, meeting in the identity.
 
 ## Summary
 

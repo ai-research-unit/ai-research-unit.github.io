@@ -88,14 +88,14 @@ and the cone of squares of the Hermitian subspace is the whole line $\mathbb{R}e
 
 **Proposition (the idempotents).** The idempotents of the algebra are $0$ and $e_t$.
 
-*Proof.* The equation $\tilde \Pi\bullet_{\natural}\tilde \Pi=\tilde \Pi$ reads $N(\tilde \Pi)e_t=\tilde \Pi$, so $\tilde \Pi=\lambda e_t$ with $\lambda^2=\lambda$, that is $\lambda\in\{0,1\}$. Verified by solving the quadratic conditions in the coefficient basis.
+*Proof.* The equation $\tilde\Pi_{\mathrm{id}}\bullet_{\natural}\tilde\Pi_{\mathrm{id}}=\tilde\Pi_{\mathrm{id}}$ reads $N(\tilde\Pi_{\mathrm{id}})e_t=\tilde\Pi_{\mathrm{id}}$, so $\tilde\Pi_{\mathrm{id}}=\lambda e_t$ with $\lambda^2=\lambda$, that is $\lambda\in\{0,1\}$. Verified by solving the quadratic conditions in the coefficient basis.
 
-**Theorem (the Peirce decomposition is trivial).** At $\tilde \Pi=e_t$ the multiplication operator $L(e_t)$ has the eigenvalues $1,0,0,0$, with
+**Theorem (the Peirce decomposition is trivial).** At $\tilde\Pi_{\mathrm{id}}=e_t$ the multiplication operator $L(e_t)$ has the eigenvalues $1,0,0,0$, with
 $$
 \mathbb{B}_{1}=\mathbb{C}e_t,\qquad \mathbb{B}_{0}=\mathbb{B}_{V}=\mathbb{C}\vec e_x\oplus\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z .
 $$
 
-*Proof.* $L(e_t)\tilde Q=\langle e_t,\tilde Q\rangle_{\natural}e_t=Q_te_t$, whose matrix in the coefficient basis has rank one, with the spectrum displayed. The eigenspaces are computed exactly; at $\tilde \Pi=0$ the operator vanishes and the decomposition is $\mathbb{B}_0=\mathbb{B}$.
+*Proof.* $L(e_t)\tilde Q=\langle e_t,\tilde Q\rangle_{\natural}e_t=Q_te_t$, whose matrix in the coefficient basis has rank one, with the spectrum displayed. The eigenspaces are computed exactly; at $\tilde\Pi_{\mathrm{id}}=0$ the operator vanishes and the decomposition is $\mathbb{B}_0=\mathbb{B}$.
 
 **Proposition (the Peirce rules, one of which fails).** With the two spaces as above,
 $$

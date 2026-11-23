@@ -240,9 +240,9 @@ The doubly null stratum is the union of the Peirce lines, and each line carries 
 $$
 \mathcal K_{\mathrm d}\setminus\{0\}=\bigcup_{\vec u\in S^{2}}\mathbb{C}(e_t+i\vec u),
 \qquad
-\tilde\Pi_{\vec u}=\tfrac12\bigl(e_t+i\vec u\bigr),
+\tilde\Pi_{\mathrm{id},\vec u}=\tfrac12\bigl(e_t+i\vec u\bigr),
 \qquad
-\tilde\Pi_{\vec u}^{2}=\tilde\Pi_{\vec u}.
+\tilde\Pi_{\mathrm{id},\vec u}^{2}=\tilde\Pi_{\mathrm{id},\vec u}.
 $$
 
 The two strata are separated by the algebraic norm and by nothing else. On $\mathcal K_{\mathrm u}$ the algebraic norm takes every non-zero complex value, so the stratum is a cone of invertibles. On $\mathcal K_{\mathrm d}$ it vanishes identically, so the punctured stratum is a set of zero divisors. The K value is zero on both, which is the precise sense in which the metric partition cannot see the difference.
@@ -255,10 +255,10 @@ $$
 
 So a spectral subdivision of the doubly null stratum would have nothing to subdivide. Every point of the stratum is spectrally regular, and the only spectrally degenerate point of the stratum is the origin, which lies in it as its apex and in no line.
 
-**No non-zero null element is nilpotent, and the two cones meet only at the apex of one of them.** A nilpotent has $Q_t=0$, and the null set off the origin has $Q_t\neq0$. The nilpotent cone is a different four-dimensional cone, and it lies entirely in the open negative region of the K norm: for a pure isotropic vector $\vec\Upsilon\neq0$,
+**No non-zero null element is nilpotent, and the two cones meet only at the apex of one of them.** A nilpotent has $Q_t=0$, and the null set off the origin has $Q_t\neq0$. The nilpotent cone is a different four-dimensional cone, and it lies entirely in the open negative region of the K norm: for a pure isotropic vector $\vec\Pi_{\mathrm{nil}}\neq0$,
 
 $$
-\mathrm{Kr}(\vec\Upsilon)=-\lVert\vec\Upsilon\rVert^{2}<0 .
+\mathrm{Kr}(\vec\Pi_{\mathrm{nil}})=-\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2}<0 .
 $$
 
 The products of null elements do not stay null, and the three possible outcomes all occur.
@@ -649,7 +649,7 @@ The two sectors are charts and not subalgebras with a physics of their own. The 
 | the cone | $P_K=\{\lvert Q_t\rvert\ge\lVert\vec Q\rVert\}$; closed and star-shaped, neither convex nor pointed |
 | the transitivity | $\mathrm{U}(1,3)$ acts transitively on $\mathcal K\setminus\{0\}$ |
 | the doubly null set | $\mathcal K_{\mathrm d}=\mathbb{C}^{\times}\cdot(e_t+iS^{2})$, dimension $4$, the union of the Peirce lines $\mathbb{C}(e_t+i\vec u)$ |
-| the doubly null element | $\tilde\Pi_{\vec u}=\tfrac12(e_t+i\vec u)$, an idempotent; spectrally regular, $B^{2}=-Q_t^{2}\neq0$ |
+| the doubly null element | $\tilde\Pi_{\mathrm{id},\vec u}=\tfrac12(e_t+i\vec u)$, an idempotent; spectrally regular, $B^{2}=-Q_t^{2}\neq0$ |
 | the isotropic units | $\mathcal K_{\mathrm u}$, dimension $7$, open and dense in $\mathcal K$; $N$ takes every non-zero value there |
 | positive implies invertible | no positive element is a zero divisor; every zero divisor has $\mathrm{Kr}\le0$, with equality on $\mathcal K_{\mathrm d}$ |
 | the converses | fail: $e_t+2\vec e_x$ negative unit, $e_t+\vec e_x$ null unit, $\vec e_x+i\vec e_y$ negative zero divisor |
@@ -690,7 +690,7 @@ The two sectors are charts and not subalgebras with a physics of their own. The 
 | the Krein cone | $P_K$ | $\{\mathrm{Kr}\ge0\}$ |
 | the distortion | $W$ | the vector part over the scalar part, of norm $<1$ on the positive region |
 | the rapidity | $\Xi$ | $\lVert W\rVert=\tanh\Xi$ |
-| the Peirce idempotent | $\tilde\Pi_{\vec u}$ | $\tfrac12(e_t+i\vec u)$ for a real unit $\vec u$ |
+| the Peirce idempotent | $\tilde\Pi_{\mathrm{id},\vec u}$ | $\tfrac12(e_t+i\vec u)$ for a real unit $\vec u$ |
 | the isometry group | $\mathrm{U}(1,3)$ | the group preserving the form, real dimension $16$ |
 | the K adjoint | $T^{\dagger}$ | $JT^{*}J$ |
 | the two-sided operator | $\mathrm{Sd}_{\tilde Q}$ | $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{*}$ |

@@ -111,7 +111,7 @@ $$
 \Bigl(\;i\bigl(k_t'+\tfrac{ϙ}{\hbar}a_t\bigr),\;\; k_x+\tfrac{ϙ}{\hbar}a_x,\;\; k_y+\tfrac{ϙ}{\hbar}a_y,\;\; k_z+\tfrac{ϙ}{\hbar}a_z \;\Bigr),
 $$
 
-so the element is $\frac{i}{\hbar}\tilde P'_\Phi$ with $\tilde P'_\Phi$ the kinetic four-momentum, and the identity holds component by component with residual $0.0\times10^{0}$, checked over one hundred draws with $ϙ=0.9$, $\hbar=1$ and random momenta and connections.
+so the element is $\frac{i}{\hbar}\tilde P'_\Phi$ with $\tilde P'_\Phi$ the kinetic four-momentum, and the identity holds component by component with residual $0.0\times10^{0}$, checked over one hundred draws with the charge at $0.9\,ϙ$ and random momenta and connections.
 
 The functional $\mathcal{Q}$ depends on the momentum only through the element $\tilde K_{\Phi,\mathrm{gco}}$, so
 

@@ -116,7 +116,7 @@ Each is a complex subspace of $\mathbb{B}$.
 
 **The annihilators are not a line.** In the middle case each annihilator has complex dimension two, one complex dimension for each row or column. The kernel of a rank-one matrix acting on the right is a two-dimensional space of matrices, not a line of vectors.
 
-**The two annihilators differ.** They coincide at the invertibles and at the zero element, and they differ for a general zero divisor. At $\tilde Q=\tilde\Pi_+$ the left annihilator is the space of matrices with first column zero and the right annihilator the space of matrices with first row zero: the matrix unit $E_{21}$ lies in the second and not in the first. The two words are therefore kept apart: the name of an annihilator records the side on which the argument stands, which is opposite to the side of the multiplication.
+**The two annihilators differ.** They coincide at the invertibles and at the zero element, and they differ for a general zero divisor. At $\tilde Q=\tilde\Pi_{\mathrm{id},+}$ the left annihilator is the space of matrices with first column zero and the right annihilator the space of matrices with first row zero: the matrix unit $E_{21}$ lies in the second and not in the first. The two words are therefore kept apart: the name of an annihilator records the side on which the argument stands, which is opposite to the side of the multiplication.
 
 ### The Two Ideals
 
@@ -195,10 +195,10 @@ The two families are not related by a conjugation that keeps the parameter, beca
 **Definition.** The **exchange** is the linear involution of $\mathbb{B}$ that fixes the two idempotents and exchanges the two mixed Peirce units:
 
 $$
-S\tilde\Pi_\pm=\tilde\Pi_\pm,\qquad S\vec\Upsilon_+=\vec\Upsilon_-,\qquad S\vec\Upsilon_-=\vec\Upsilon_+ .
+S\tilde\Pi_{\mathrm{id},\pm}=\tilde\Pi_{\mathrm{id},\pm},\qquad S\vec\Pi_{\mathrm{nil},+}=\vec\Pi_{\mathrm{nil},-},\qquad S\vec\Pi_{\mathrm{nil},-}=\vec\Pi_{\mathrm{nil},+} .
 $$
 
-**The two displays.** In the Peirce frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ the matrix of $S$ is the permutation of the second and third coordinates,
+**The two displays.** In the Peirce frame $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ the matrix of $S$ is the permutation of the second and third coordinates,
 
 $$
 S=\begin{pmatrix}1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1\end{pmatrix},
@@ -214,14 +214,14 @@ which fixes $e_t,\vec e_x,\vec e_z$ and negates $\vec e_y$.
 
 **The glyph.** The matrix articles and *Matrix Representations Conventions* write the same involution $\mathsf P$, and call it the exchange; the letter $S$ is kept here because $P$ is the letter of the plain norm in *Product and Form Conventions*, and because the article needs one glyph for the operator and another for its two displays.
 
-**The invariants.** $S^2=\mathrm{id}$, $S^{\mathsf T}=S=S^{-1}$, $\operatorname{tr}S=2$ and $\det S=-1$. The trace is the complex dimension of the fixed space, the span of $\tilde\Pi_+$ and $\tilde\Pi_-$; the determinant is $-1$ because the two mixed coordinates are exchanged.
+**The invariants.** $S^2=\mathrm{id}$, $S^{\mathsf T}=S=S^{-1}$, $\operatorname{tr}S=2$ and $\det S=-1$. The trace is the complex dimension of the fixed space, the span of $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$; the determinant is $-1$ because the two mixed coordinates are exchanged.
 
 ### The Flip of the Two Mixed Units
 
 **The tensor reading.** In the Peirce frame the carrier is the tensor product of the two Peirce columns,
 
 $$
-\tilde\Pi_+=e_1\otimes e_1,\quad \vec\Upsilon_+=e_2\otimes e_1,\quad \vec\Upsilon_-=e_1\otimes e_2,\quad \tilde\Pi_-=e_2\otimes e_2,
+\tilde\Pi_{\mathrm{id},+}=e_1\otimes e_1,\quad \vec\Pi_{\mathrm{nil},+}=e_2\otimes e_1,\quad \vec\Pi_{\mathrm{nil},-}=e_1\otimes e_2,\quad \tilde\Pi_{\mathrm{id},-}=e_2\otimes e_2,
 $$
 
 and $S$ is the flip of the two factors: it fixes $e_1\otimes e_1$ and $e_2\otimes e_2$ and exchanges $e_1\otimes e_2$ with $e_2\otimes e_1$. The two mixed units are exactly the two off-diagonal tensor basis elements, and the exchange of the two mixed units is the flip. The name of the operator records the two elements it moves.
@@ -378,23 +378,23 @@ of complex dimensions $1$, $4$ (twice, incomparable), $7$ and $16$. Beyond the c
 
 ## A Worked Example at a Zero Divisor
 
-**The element.** Take $\tilde Q=\tilde\Pi_+$, the idempotent whose matrix is $E_{11}$ in the Peirce frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. Its norm is zero and it is not the zero element, so every statement of the article is in its middle case.
+**The element.** Take $\tilde Q=\tilde\Pi_{\mathrm{id},+}$, the idempotent whose matrix is $E_{11}$ in the Peirce frame $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$. Its norm is zero and it is not the zero element, so every statement of the article is in its middle case.
 
 **The two matrices.** Left multiplication by $E_{11}$ keeps the first row of $X$ and kills the second; right multiplication keeps the first column and kills the second. In the Peirce frame,
 
 $$
-[L_{\tilde\Pi_+}]=\operatorname{diag}(1,0,1,0),\qquad [R_{\tilde\Pi_+}]=\operatorname{diag}(1,1,0,0).
+[L_{\tilde\Pi_{\mathrm{id},+}}]=\operatorname{diag}(1,0,1,0),\qquad [R_{\tilde\Pi_{\mathrm{id},+}}]=\operatorname{diag}(1,1,0,0).
 $$
 
-Both are diagonal and their diagonals differ, so the two operators agree on $\tilde\Pi_+$ and on no other basis element.
+Both are diagonal and their diagonals differ, so the two operators agree on $\tilde\Pi_{\mathrm{id},+}$ and on no other basis element.
 
-**The kernels and the images.** The kernel of the left operator is the space of matrices with first row zero, $\operatorname{span}\{\vec\Upsilon_+,\tilde\Pi_-\}$, and its image is the right ideal $\tilde\Pi_+\mathbb{B}$ of the matrices whose only possible nonzero row is the first, $\operatorname{span}\{\tilde\Pi_+,\vec\Upsilon_-\}$. The kernel of the right operator is the space of matrices with first column zero, $\operatorname{span}\{\vec\Upsilon_-,\tilde\Pi_-\}$, and its image is the left ideal $\operatorname{span}\{\tilde\Pi_+,\vec\Upsilon_+\}=\mathbb{B}\tilde\Pi_+$.
+**The kernels and the images.** The kernel of the left operator is the space of matrices with first row zero, $\operatorname{span}\{\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-}\}$, and its image is the right ideal $\tilde\Pi_{\mathrm{id},+}\mathbb{B}$ of the matrices whose only possible nonzero row is the first, $\operatorname{span}\{\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-}\}$. The kernel of the right operator is the space of matrices with first column zero, $\operatorname{span}\{\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-}\}$, and its image is the left ideal $\operatorname{span}\{\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+}\}=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$.
 
-**The two kernels differ.** The mixed unit $\vec\Upsilon_+$ is in the kernel of the left operator, because $\tilde\Pi_+\vec\Upsilon_+=0$, and it is not in the kernel of the right operator, because $\vec\Upsilon_+\tilde\Pi_+=\vec\Upsilon_+$. This is the example of §*The Two Annihilators* in the Peirce frame instead of the matrix frame, and it shows that the two annihilators are different subspaces of the same complex dimension two.
+**The two kernels differ.** The mixed unit $\vec\Pi_{\mathrm{nil},+}$ is in the kernel of the left operator, because $\tilde\Pi_{\mathrm{id},+}\vec\Pi_{\mathrm{nil},+}=0$, and it is not in the kernel of the right operator, because $\vec\Pi_{\mathrm{nil},+}\tilde\Pi_{\mathrm{id},+}=\vec\Pi_{\mathrm{nil},+}$. This is the example of §*The Two Annihilators* in the Peirce frame instead of the matrix frame, and it shows that the two annihilators are different subspaces of the same complex dimension two.
 
-**The rank and the inverse.** Both matrices have rank $2$ and determinant $0$, consistent with $\operatorname{rank}=2$ and $\langle\tilde\Pi_+\rangle_{\natural}=0$; nullity and rank add to $4$ on each side. Neither operator is invertible, and neither has an inverse in its family, because the element is not invertible.
+**The rank and the inverse.** Both matrices have rank $2$ and determinant $0$, consistent with $\operatorname{rank}=2$ and $\langle\tilde\Pi_{\mathrm{id},+}\rangle_{\natural}=0$; nullity and rank add to $4$ on each side. Neither operator is invertible, and neither has an inverse in its family, because the element is not invertible.
 
-**The exchange on the example.** The element is fixed by $S$, so the conjugation of §*What the Exchange Does to the Families* reads $SL_{\tilde\Pi_+}S^{-1}=R_{\tilde\Pi_+}$. On the matrices the same statement is the exchange of the second and third diagonal entries: $S\operatorname{diag}(1,0,1,0)S^{-1}=\operatorname{diag}(1,1,0,0)$, which is the transpose identity of §*The Matrix Identity $R_{\mathrm{pau}}(\tilde Q)=\mathsf P\,L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf P^{-1}$* on a diagonal matrix.
+**The exchange on the example.** The element is fixed by $S$, so the conjugation of §*What the Exchange Does to the Families* reads $SL_{\tilde\Pi_{\mathrm{id},+}}S^{-1}=R_{\tilde\Pi_{\mathrm{id},+}}$. On the matrices the same statement is the exchange of the second and third diagonal entries: $S\operatorname{diag}(1,0,1,0)S^{-1}=\operatorname{diag}(1,1,0,0)$, which is the transpose identity of §*The Matrix Identity $R_{\mathrm{pau}}(\tilde Q)=\mathsf P\,L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf P^{-1}$* on a diagonal matrix.
 
 ## Summary
 
@@ -418,7 +418,7 @@ The two families commute element by element, $L_{\tilde Q}R_{\tilde Q_2}=R_{\til
 | $\operatorname{Ann}_r(\tilde Q)$, $\operatorname{Ann}_l(\tilde Q)$ | The right and the left annihilators, the kernels of $L$ and $R$ |
 | $\tilde Q\mathbb{B}$, $\mathbb{B}\tilde Q$ | The right and the left ideals, the images of $L$ and $R$ |
 | $\operatorname{rank}L_{\tilde Q}=\operatorname{rank}R_{\tilde Q}$ | $4$, $2$ or $0$ according to the three cases |
-| $S$ | The exchange, fixing $\tilde\Pi_\pm$ and swapping $\vec\Upsilon_\pm$; $\operatorname{diag}(1,1,-1,1)$ in the coefficient frame |
+| $S$ | The exchange, fixing $\tilde\Pi_{\mathrm{id},\pm}$ and swapping $\vec\Pi_{\mathrm{nil},\pm}$; $\operatorname{diag}(1,1,-1,1)$ in the coefficient frame |
 | $R_{\mathrm{pau}}(\tilde Q)=\mathsf P\,L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf P^{-1}$ | The exchange, in the Peirce frame |
 | $SL_{\tilde Q}S^{-1}=R_{S\tilde Q}$ | The conjugation of the two families |
 | $\mathcal{S}'$ | The commutant of the set $\mathcal{S}$ |

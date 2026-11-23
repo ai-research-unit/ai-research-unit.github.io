@@ -289,7 +289,7 @@ On a pure element the scalar square $Q_{2t}^{2}$ drops out of the criterion, whi
 | structure | the nilpotents | the complex multiples of the nontrivial idempotents |
 | real dimension | $4$ | $6$ |
 
-The square of a pure zero divisor vanishes because $\tilde Q_2^{2}=-(Q_{2x}^{2}+Q_{2y}^{2}+Q_{2z}^{2})e_t=0$; the square of a non-pure one satisfies $\tilde Q_2^{2}=2Q_{2t}\tilde Q_2-\mathrm{Norm}(\tilde Q_2)e_t=2Q_{2t}\tilde Q_2$, and the element $\tilde\Pi=\tilde Q_2/(2Q_{2t})$ is then a nontrivial idempotent of the plain product. The two families are read in the remarkable subspaces in *Subspaces and Decompositions*: the pure ones fill the nilpotent cone of the vector subspace, the non-pure ones the double cones of the two Hermitian subspaces, and a generic point of the cone lies in none of the remarkable subspaces.
+The square of a pure zero divisor vanishes because $\tilde Q_2^{2}=-(Q_{2x}^{2}+Q_{2y}^{2}+Q_{2z}^{2})e_t=0$; the square of a non-pure one satisfies $\tilde Q_2^{2}=2Q_{2t}\tilde Q_2-\mathrm{Norm}(\tilde Q_2)e_t=2Q_{2t}\tilde Q_2$, and the element $\tilde\Pi_{\mathrm{id}}=\tilde Q_2/(2Q_{2t})$ is then a nontrivial idempotent of the plain product. The two families are read in the remarkable subspaces in *Subspaces and Decompositions*: the pure ones fill the nilpotent cone of the vector subspace, the non-pure ones the double cones of the two Hermitian subspaces, and a generic point of the cone lies in none of the remarkable subspaces.
 
 ## The Cone in the Wider Mathematics
 

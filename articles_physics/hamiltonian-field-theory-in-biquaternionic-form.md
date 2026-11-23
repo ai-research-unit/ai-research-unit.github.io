@@ -116,10 +116,10 @@ time-independent, the statement that the flux of the companion stress–energy a
 The field is central-valued, $\tilde{Ξ}=\xi e_t$, and its conjugate momentum is central-valued for the same reason: the momentum field is obtained from the field by a central operation, so it lives in the centre. Writing
 
 $$
-\tilde\Pi=\pi e_t\in\mathbb{B}_{C},
+\tilde\Pi_{\mathrm{id}}=\pi e_t\in\mathbb{B}_{C},
 $$
 
-the pair $(\tilde{Ξ},\tilde\Pi)$ is the field-theoretic analogue of the pair $(\tilde q,\tilde p)$ of the finite-dimensional article, with one difference that is worth stating: $\tilde q$ was a real quaternion in $\mathbb{B}_{H}$ and $\tilde p$ its conjugate momentum in the same subspace, while $\tilde{Ξ}$ and $\tilde\Pi$ are central, in $\mathbb{B}_{C}$. The value space is smaller because the spin of the field is zero. A field that carried a spinor index would take its values in the spinor module, and its conjugate momentum would carry the same index; the central scalar is the case in which the index is absent, and in that case the momentum field is a second complex number at each point rather than a second biquaternion.
+the pair $(\tilde{Ξ},\tilde\Pi_{\mathrm{id}})$ is the field-theoretic analogue of the pair $(\tilde q,\tilde p)$ of the finite-dimensional article, with one difference that is worth stating: $\tilde q$ was a real quaternion in $\mathbb{B}_{H}$ and $\tilde p$ its conjugate momentum in the same subspace, while $\tilde{Ξ}$ and $\tilde\Pi_{\mathrm{id}}$ are central, in $\mathbb{B}_{C}$. The value space is smaller because the spin of the field is zero. A field that carried a spinor index would take its values in the spinor module, and its conjugate momentum would carry the same index; the central scalar is the case in which the index is absent, and in that case the momentum field is a second complex number at each point rather than a second biquaternion.
 
 ### The Hamiltonian Density as a Hermitian Bilinear
 
@@ -148,7 +148,7 @@ The static limit makes the arrangement visible. For a time-independent field the
 
 ### The Brackets in the Algebra
 
-The canonical bracket is read in the algebra as the scalar part of a pairing. Since $\xi$ and $\pi$ are the coefficients of central elements, the bracket of the algebra's central directions is the bracket of the two complex numbers, and the field bracket above is its integral over space. The biquaternion content of the brackets is therefore not a new bracket but the **sector bookkeeping** of the fields being bracketed: $\tilde{Ξ}\in\mathbb{B}_{C}$ while its gradient is not, and the momentum $\tilde\Pi$ is central whereas the momentum of a bivector-valued field would lie in $\mathbb{B}_{\Phi}$ or $\mathbb{B}_{\Psi}$. The scalar field brackets with itself in the centre, and this is the classical face of the fact, recorded by the quantization article, that the scalar field's canonical structure is taken over from the classical theory without modification.
+The canonical bracket is read in the algebra as the scalar part of a pairing. Since $\xi$ and $\pi$ are the coefficients of central elements, the bracket of the algebra's central directions is the bracket of the two complex numbers, and the field bracket above is its integral over space. The biquaternion content of the brackets is therefore not a new bracket but the **sector bookkeeping** of the fields being bracketed: $\tilde{Ξ}\in\mathbb{B}_{C}$ while its gradient is not, and the momentum $\tilde\Pi_{\mathrm{id}}$ is central whereas the momentum of a bivector-valued field would lie in $\mathbb{B}_{\Phi}$ or $\mathbb{B}_{\Psi}$. The scalar field brackets with itself in the centre, and this is the classical face of the fact, recorded by the quantization article, that the scalar field's canonical structure is taken over from the classical theory without modification.
 
 ## The Sector Reading of the Hamiltonian Density
 
@@ -216,7 +216,7 @@ The formalism is the instantaneous one. The covariant formalism treats the four 
 | $\mathcal{L}=|\partial\xi/\partial r'_t|^2-|\vec\nabla_\Phi\xi|^2-k_m^{2}|\xi|^2$ | The Lagrangian density, the sign fixed by *Noether's Theorem in Biquaternionic Form* |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the inverse reduced Compton wavelength, the mass parameter of the Klein–Gordon equation |
 | $\pi=\partial\mathcal{L}/\partial\left(\partial\xi/\partial r'_t\right)=\left(\partial\xi/\partial r'_t\right)^{\,*}$ | The conjugate momentum field, and $\pi^\dagger=\partial\xi/\partial r'_t$ its conjugate |
-| $\tilde\Pi=\pi\,e_t\in\mathbb{B}_{C}$ | The conjugate momentum field as a central biquaternion |
+| $\tilde\Pi_{\mathrm{id}}=\pi\,e_t\in\mathbb{B}_{C}$ | The conjugate momentum field as a central biquaternion |
 | $\mathcal{H}=\pi\partial\xi/\partial r'_t+\pi^\dagger\left(\partial\xi/\partial r'_t\right)^{\,*}-\mathcal{L}$ | The Hamiltonian density; it is $|\partial\xi/\partial r'_t|^2+|\vec\nabla_\Phi\xi|^2+k_m^{2}|\xi|^2$ and equals the energy density $T_{00}$ |
 | $H=\int\mathcal{H}\,d^3r$ | The total Hamiltonian |
 | $\mathcal{H}=\mathrm{Sc}[(\tilde\nabla_\Phi\tilde{Ξ})^{*}(\tilde\nabla_\Phi\tilde{Ξ})]+k_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | The Hamiltonian density as the sum of two Hermitian forms |

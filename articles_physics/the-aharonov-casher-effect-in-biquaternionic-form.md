@@ -18,7 +18,7 @@ This article treats the AC effect in the biquaternion algebra $\mathbb{B} = \mat
 4. **The AC effect and the AB effect are electric–magnetic duals.** The AB phase is $\frac{ϙ}{\hbar}\oint\vec A\cdot d\vec r$ for a charge; the AC phase is $\frac{1}{\hbar\,c^{2}}\oint(\vec E\times\vec\mu)\cdot d\vec r$ for a dipole. The electric dipole analogue is the He–McKellar–Wilkens phase.
 5. **The phase is measurable and has been measured.** Neutron interferometry, atom interferometry and electron interferometry all exhibit the AC phase; orders of magnitude are given below.
 
-The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, with $\mathbf e=(\vec e_x,\vec e_y,\vec e_z)$ the vector of quaternion units, and the reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
+The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, with $\mathbf e=(\vec e_x,\vec e_y,\vec e_z)$ the vector of quaternion units, and the reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 The companion articles supply the pieces:
 - Companion article *The Path Integral in Biquaternionic Form*, for the phase from the action and the Lagrangian route.

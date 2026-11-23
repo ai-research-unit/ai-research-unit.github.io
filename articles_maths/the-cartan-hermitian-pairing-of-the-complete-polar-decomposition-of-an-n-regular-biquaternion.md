@@ -413,9 +413,9 @@ with $\mathsf M(\tilde H)$ positive definite of determinant $\varrho^2$ and $\ma
 The element is unipotent up to its scalar. Let
 
 $$
-\tilde U=\frac{\tilde Q}{\varrho\,e^{i\theta_{\mathrm{pha}}}}=\varepsilon\bigl(e_t+\vec\Upsilon\bigr),
+\tilde U=\frac{\tilde Q}{\varrho\,e^{i\theta_{\mathrm{pha}}}}=\varepsilon\bigl(e_t+\vec\Pi_{\mathrm{nil}}\bigr),
 \qquad
-\vec\Upsilon^2=0,
+\vec\Pi_{\mathrm{nil}}^2=0,
 \qquad
 \varepsilon=\frac{Q_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}}=\pm1.
 $$
@@ -423,13 +423,13 @@ $$
 Then
 
 $$
-\bigl(\tilde U-\varepsilon e_t\bigr)^2=\vec\Upsilon^2=0,
+\bigl(\tilde U-\varepsilon e_t\bigr)^2=\vec\Pi_{\mathrm{nil}}^2=0,
 $$
 
 so $\tilde U$ is $\varepsilon$ times a unipotent element. The product of the Cartan factors is
 
 $$
-\tilde H\tilde V=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U=Q_t\bigl(e_t+\vec\Upsilon\bigr),
+\tilde H\tilde V=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U=Q_t\bigl(e_t+\vec\Pi_{\mathrm{nil}}\bigr),
 $$
 
 which is $Q_t$ times a unipotent element. This is the sector condition in the pairing.
@@ -446,8 +446,8 @@ The sign $\varepsilon$ is the scalar part of the unit factor. It is the only dis
 
 | Case | $\operatorname{Sc}\tilde U$ | $\tilde H$ | $\tilde V$ | $\tilde H\tilde V$ |
 |---|---|---|---|---|
-| positive | $+1$ | $\varrho\tilde U_{\mathrm b}$ | $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ | $Q_t(e_t+\vec\Upsilon)$ |
-| negative | $-1$ | $\varrho\tilde U_{\mathrm b}$ | $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ | $Q_t(e_t+\vec\Upsilon)$ |
+| positive | $+1$ | $\varrho\tilde U_{\mathrm b}$ | $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ | $Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ |
+| negative | $-1$ | $\varrho\tilde U_{\mathrm b}$ | $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ | $Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ |
 
 The factors have the same shape in both cases; the sign is carried by the scalar $Q_t$ and by the branch of $\varrho\,e^{i\theta_{\mathrm{pha}}}$. The pairing does not need a separate sign convention.
 
@@ -582,7 +582,7 @@ The pairing is Hermitian because the exponents of its factors lie in the two inv
 | factorization | $\tilde Q=\tilde H\tilde V$ |
 | positive factor | $\tilde H=\varrho\tilde U_{\mathrm b}$, norm $\varrho^2$ |
 | $*$-unitary factor | $\tilde V=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$, norm $e^{2i\theta_{\mathrm{pha}}}$ |
-| product | $\tilde H\tilde V=Q_t(e_t+\vec\Upsilon)$, unipotent up to $Q_t$ |
+| product | $\tilde H\tilde V=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$, unipotent up to $Q_t$ |
 | factor eigenvalues | $\varrho e^{\pm\theta_{\mathrm{rpd}}/2}$ and $e^{i(\theta_{\mathrm{pha}}\pm\theta_{\mathrm{axr}}/2)}$ |
 | product eigenvalue | $\varepsilon$, double |
 | commutator | nonzero on the Jordan part |

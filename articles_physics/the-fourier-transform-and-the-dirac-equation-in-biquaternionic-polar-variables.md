@@ -86,7 +86,7 @@ For one mode the momentum-space object is a point and a density. A free solution
 
 The mode's own word has four factors, and they are constants. The amplitude $\tilde\Xi_{0}$ can be written in the complete polar decomposition like any other $N$-regular element, and its scale, angle, rapidity and rotor are numbers of the mode. None of them depends on the wave number, because there is only one wave number per mode. So the four factors have not been traded for four momentum-space functions; they have become four constants attached to a point.
 
-What is momentum-dependent is the support and its direction. The support point $\tilde K_\Phi$ carries the frequency and the wave vector. Its direction $\hat n=\vec k_\Phi/k_t'$ is the only other data the point carries, and on the massless shell it is the data that divides the cone into the two idempotents: $\tilde\Pi_\pm=\tfrac12(e_t\pm i\hat n\cdot\vec e)$. *The Fourier Transform and the Dirac Equation in Biquaternionic Form* proves that these are the two massless ideals, and the sign of $\hat n$ is what selects between them.
+What is momentum-dependent is the support and its direction. The support point $\tilde K_\Phi$ carries the frequency and the wave vector. Its direction $\hat n=\vec k_\Phi/k_t'$ is the only other data the point carries, and on the massless shell it is the data that divides the cone into the two idempotents: $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\hat n\cdot\vec e)$. *The Fourier Transform and the Dirac Equation in Biquaternionic Form* proves that these are the two massless ideals, and the sign of $\hat n$ is what selects between them.
 
 So the four factors become one label, one direction and two signs. The label is the four-momentum, the direction is its unit vector, and the two signs are the sign of the frequency, which selects the branch, and the sign of $\hat n$, which selects the idempotent. The word's eight parameters have become a point, a direction and two discrete signs, and the amplitude's four constants are not momentum-space structures at all.
 
@@ -134,7 +134,7 @@ The amplitude's own word has four factors, and they are constants of the mode, b
 | $\mathcal{F}[e^{i\theta}f](\omega)=\hat f(\omega-\vec\nabla_\Phi\theta)$ | A phase is a translation of the support |
 | $\mathcal{F}[fg]=\mathcal{F}[f]*\mathcal{F}[g]$ | The transform of a product is a convolution |
 | $\hat n=\vec k_\Phi/k_t'$ | The direction of the support point |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\hat n\cdot\vec e)$ | The two idempotents the direction selects on the cone |
+| $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\hat n\cdot\vec e)$ | The two idempotents the direction selects on the cone |
 | $p_{\theta_{\mathrm{pha}}}=\hbar c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The Legendre momentum of the angle; not the Fourier variable |
 | $\vec p_{\mathrm{spin}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$ | The rotor's Legendre momentum; zero at rest |
 

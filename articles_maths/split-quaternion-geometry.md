@@ -164,7 +164,7 @@ Every distinguished subspace of the algebra inherits a form, and the inherited f
 | $\mathbb{R}[\vec e_x] = \operatorname{span}\{1,\vec e_x\}$ | $q_t^2 + q_x^2$ | definite; a copy of the complex plane as a metric plane |
 | $\mathbb{C}_{\mathrm{spl},2} = \operatorname{span}\{1,\vec e_y\}$ | $q_t^2 - q_y^2$, inertia $(1,1)$ | two null lines, $\mathbb{R}(1\pm \vec e_y)$; the unit hyperbola $q_t^2 - q_y^2 = 1$ |
 | $\mathbb{C}_{\mathrm{spl},3} = \operatorname{span}\{1,\vec e_z\}$ | $q_t^2 - q_z^2$, inertia $(1,1)$ | two null lines, $\mathbb{R}(1\pm \vec e_z)$ |
-| $\mathbb{H}_{\mathrm{spl}}\tilde\pi_{1,2}$, $\tilde\pi_{1,2}\mathbb{H}_{\mathrm{spl}}$ | identically zero | isotropic planes, ruling the quadric |
+| $\mathbb{H}_{\mathrm{spl}}\tilde\pi_{\mathrm{id},1,2}$, $\tilde\pi_{\mathrm{id},1,2}\mathbb{H}_{\mathrm{spl}}$ | identically zero | isotropic planes, ruling the quadric |
 
 **Theorem (The Two-Dimensional Geometries).** On each split-complex subalgebra the inherited form has inertia $(1,1)$; the null lines are the lines $\mathbb{R}(1\pm \vec e_y)$ and $\mathbb{R}(1\pm \vec e_z)$, and they are the two isotropic lines of the subalgebra. The isometry group of the subalgebra form is the group $O(1,1)$ of hyperbolic rotations, acting on the hyperbola $q_t^2 - q_y^2 = 1$ with two orbits, the two branches; the distance on a branch is the logarithm of the ratio of the two coordinates in the null basis. The subalgebra $\mathbb{R}[\vec e_x]$ is definite, its form is positive definite, and its geometry is Euclidean; its unit circle is the compact group $SO(2)$ of the elliptic subgroup of *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups*.
 

@@ -18,7 +18,7 @@ The third claim is that there are exactly three pairings because there are exact
 
 The fourth claim is that normality is the condition under which the split into rate and frame is itself splittable. In general the two polar factors do not commute with the element, so they are not diagonal in its eigenbasis, and the eigenbasis is not a polar basis. The spectrum still determines the eigenvalues of the unit factor and stops there: it gives one complex equation for three real unknowns. Exactly on the normal set the two frames coincide and the word collapses to a single exponential. The gap is measurable and the mathematics measures it: for one worked element the normal-case formula would give a rapidity of $1.466$ where the true rapidity is $1.763$.
 
-The fifth claim is that the degenerate sector is not a limit case but a rigid structure. On $B^{2}=0$ with $N\neq0$ the unit factor is $\pm$unipotent, its two angles are tied by one equation, its two axes are orthogonal, and the closed form reduces the four word parameters to one complex number, one angle and a frame. The logarithm is exact and truncated: $\operatorname{Log}\tilde Q=\log Q_t+\vec\Upsilon$ with $\vec\Upsilon^{2}=0$. This is the flow that cannot be split, and the impossibility is algebraic rather than numerical.
+The fifth claim is that the degenerate sector is not a limit case but a rigid structure. On $B^{2}=0$ with $N\neq0$ the unit factor is $\pm$unipotent, its two angles are tied by one equation, its two axes are orthogonal, and the closed form reduces the four word parameters to one complex number, one angle and a frame. The logarithm is exact and truncated: $\operatorname{Log}\tilde Q=\log Q_t+\vec\Pi_{\mathrm{nil}}$ with $\vec\Pi_{\mathrm{nil}}^{2}=0$. This is the flow that cannot be split, and the impossibility is algebraic rather than numerical.
 
 The sixth claim is that one slot carries half the angle and two slots carry the full angle. A one-sided operator is a representation, so its exponential is the exponential of the element, and its eigenvalues are $\lambda_\pm=Q_t\pm iB$ twice each. The two-sided operator is quadratic, its exponential is not the exponential of an element, and its eigenvalues are the four products $\lambda_i\bar\lambda_j$. The spinor therefore sees $e^{\pm\theta/2}$ and the vector sees $e^{\pm\theta}$, and the factor two between them is the whole of the bookkeeping that separates the two actions. The mathematics states it as a doubling rule with three cases, one for each kind of generator.
 
@@ -65,7 +65,7 @@ The normal case. The two polar factors commute with $\tilde Q$ exactly when $\ti
 
 The non-normal gap. The spectrum determines $\{\varrho,\theta_{\mathrm{pha}},U_t\}$ and stops. The rapidity, the angle and the axes are three further unknowns for one complex equation, and the worked example exhibits two different words with the same spectrum.
 
-The rigid sector. On $\Sigma_{10}$ the normal form is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$, the unit factor is $\varepsilon(e_t+\vec\Upsilon)$, the angles satisfy $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\varepsilon$, the axes are orthogonal on the Jordan part, and the closed form reduces the four parameters to one complex number, one angle and a frame.
+The rigid sector. On $\Sigma_{10}$ the normal form is $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}^{2}=0$, the unit factor is $\varepsilon(e_t+\vec\Pi_{\mathrm{nil}})$, the angles satisfy $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\varepsilon$, the axes are orthogonal on the Jordan part, and the closed form reduces the four parameters to one complex number, one angle and a frame.
 
 The three pairings. Quaternion: $\tilde Q=\tilde q\exp(i\tilde\Theta)$ with $\tilde q=\varrho\tilde u_{\mathrm r}$ a real quaternion. Hamilton: $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\vec U\Theta)$ with $\varrho\,e^{i\theta_{\mathrm{pha}}}$ central and $\vec U$ a root of $-e_t$. Cartan: $\tilde Q=\tilde Q_H\tilde Q_0$ with $\tilde Q_H^{2}=\tilde Q\tilde Q^{*}$ Hermitian positive and $\tilde Q_0$ $*$-unitary.
 
@@ -189,17 +189,17 @@ The count of real data makes the gap structural. The spectrum and the eigenproje
 On $\Sigma_{10}$ the element is a scalar times a unipotent. Since $B^{2}=0$ the vector part is null, and since $N=Q_t^{2}+B^{2}\neq0$ the scalar part is nonzero. Hence
 
 $$
-\tilde Q=Q_t\bigl(e_t+\vec\Upsilon\bigr),\qquad \vec\Upsilon=\vec Q/Q_t,\qquad \vec\Upsilon^{2}=0,
+\tilde Q=Q_t\bigl(e_t+\vec\Pi_{\mathrm{nil}}\bigr),\qquad \vec\Pi_{\mathrm{nil}}=\vec Q/Q_t,\qquad \vec\Pi_{\mathrm{nil}}^{2}=0,
 $$
 
-and the writing is unique because $Q_t$ is the scalar part. The unipotent factor has norm one and inverse $e_t-\vec\Upsilon$, so every element of the sector is invertible.
+and the writing is unique because $Q_t$ is the scalar part. The unipotent factor has norm one and inverse $e_t-\vec\Pi_{\mathrm{nil}}$, so every element of the sector is invertible.
 
-The sector splits into two strata. The scalar line $\vec\Upsilon=0$ is the set of nonzero complex scalars, closed in the sector and of measure zero. The Jordan part $\vec\Upsilon\neq0$ is open and dense, with minimal polynomial $(X-Q_t)^{2}$ and geometric multiplicity one. The two strata are the two possible Jordan forms of an element with a single eigenvalue.
+The sector splits into two strata. The scalar line $\vec\Pi_{\mathrm{nil}}=0$ is the set of nonzero complex scalars, closed in the sector and of measure zero. The Jordan part $\vec\Pi_{\mathrm{nil}}\neq0$ is open and dense, with minimal polynomial $(X-Q_t)^{2}$ and geometric multiplicity one. The two strata are the two possible Jordan forms of an element with a single eigenvalue.
 
 The unit factor is $\pm$unipotent. With $\varrho\,e^{i\theta_{\mathrm{pha}}}=\pm Q_t$ the principal square root,
 
 $$
-\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\varepsilon\bigl(e_t+\vec\Upsilon\bigr),\qquad \varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1,
+\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\varepsilon\bigl(e_t+\vec\Pi_{\mathrm{nil}}\bigr),\qquad \varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1,
 $$
 
 so the unit factor is unipotent up to a sign and the sign is the only trace of the scalar part that survives in it. Its scalar part is exactly $\varepsilon$.
@@ -238,19 +238,19 @@ $$
 
 The complex number $Q_t$ carries the scale and the phase; the bracket is a unipotent written in an orthogonal frame, and it is automatically null because the three coefficients satisfy $\tanh^{2}-\tan^{2}+\tanh^{2}\tan^{2}=0$ under the locking relation. The cross term carries the plus sign because its coefficient is imaginary.
 
-The scalar factor and the frame are independent. Changing $Q_t$ changes the scale, the phase and possibly the sign, and leaves $\vec\Upsilon$ untouched. The sector is therefore the product of the scalar line with the punctured nilpotent cone, and the frame and the angles are functions of the second factor alone.
+The scalar factor and the frame are independent. Changing $Q_t$ changes the scale, the phase and possibly the sign, and leaves $\vec\Pi_{\mathrm{nil}}$ untouched. The sector is therefore the product of the scalar line with the punctured nilpotent cone, and the frame and the angles are functions of the second factor alone.
 
-The logarithm is exact and truncated. Because $\vec\Upsilon^{2}=0$,
+The logarithm is exact and truncated. Because $\vec\Pi_{\mathrm{nil}}^{2}=0$,
 
 $$
-\operatorname{Log}\tilde Q=\log Q_t+\vec\Upsilon,
+\operatorname{Log}\tilde Q=\log Q_t+\vec\Pi_{\mathrm{nil}},
 $$
 
-and the exponential inverts it: $\exp(Q_t(e_t+\vec\Upsilon))=e^{Q_t}(e_t+Q_t\vec\Upsilon)$, verified on nilpotent elements to $2.8\times10^{-15}$. The sum of the four word exponents is not a logarithm, because the boost and the rotor do not commute; the log defect is the cross term plus the nonlinear terms.
+and the exponential inverts it: $\exp(Q_t(e_t+\vec\Pi_{\mathrm{nil}}))=e^{Q_t}(e_t+Q_t\vec\Pi_{\mathrm{nil}})$, verified on nilpotent elements to $2.8\times10^{-15}$. The sum of the four word exponents is not a logarithm, because the boost and the rotor do not commute; the log defect is the cross term plus the nonlinear terms.
 
 ### What Is Lost
 
-There is no eigenbasis. The minimal polynomial is a square, the geometric multiplicity is one, and the two eigenvalues coincide. The root $\vec Z=-i\vec Q/B$ does not exist because $B=0$, and the idempotents do not exist either. What replaces them is the pair $(Q_t,\vec\Upsilon)$, which is a Jordan datum and not a spectral one.
+There is no eigenbasis. The minimal polynomial is a square, the geometric multiplicity is one, and the two eigenvalues coincide. The root $\vec Z=-i\vec Q/B$ does not exist because $B=0$, and the idempotents do not exist either. What replaces them is the pair $(Q_t,\vec\Pi_{\mathrm{nil}})$, which is a Jordan datum and not a spectral one.
 
 The flow is a polynomial and not a periodic function. On the cone the exponentiation truncates at first order, so a one-parameter family generated by a nilpotent element grows linearly in the parameter and never returns. A flow that never returns has no period and no frequency, which is the same statement as the absence of a root. The degenerate sector is therefore not a small perturbation of the regular one: the two regimes differ in kind, and the difference is visible in the series.
 
@@ -500,7 +500,7 @@ The limit. The construction needs the real part of the element invertible, so it
 
 ### III.3.f — The Degenerate Case Is the Flow That Cannot Be Split
 
-The object. $\Sigma_{10}$ with the normal form $Q_t(e_t+\vec\Upsilon)$, the locking identity and the orthogonal frame.
+The object. $\Sigma_{10}$ with the normal form $Q_t(e_t+\vec\Pi_{\mathrm{nil}})$, the locking identity and the orthogonal frame.
 
 The warrant. The minimal polynomial is a square, the eigenvalues coincide, the root does not exist, and the two angles of the word satisfy one equation instead of being free.
 
@@ -582,7 +582,7 @@ Eight readings, each with a boundary. The word is a flow split into rate and fra
 | the eigenvalues | $\lambda_\pm$ | $Q_t\pm iB$, distinct and nonzero on $\Sigma_{11}$ |
 | the regular sector | $\Sigma_{11}$ | $N\neq0$ and $B^{2}\neq0$ |
 | the degenerate sector | $\Sigma_{10}$ | $N\neq0$ and $B^{2}=0$ |
-| the null vector | $\vec\Upsilon$ | $\vec Q/Q_t$ on $\Sigma_{10}$, with $\vec\Upsilon^{2}=0$ |
+| the null vector | $\vec\Pi_{\mathrm{nil}}$ | $\vec Q/Q_t$ on $\Sigma_{10}$, with $\vec\Pi_{\mathrm{nil}}^{2}=0$ |
 | the sign | $\varepsilon$ | $Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$ on $\Sigma_{10}$ |
 | the quaternion modulus | $\tilde q$ | $\varrho\tilde u_{\mathrm r}$, a real quaternion |
 | the Hamilton axis | $\vec U$ | $\vec Q/B$, a root of $-e_t$ |

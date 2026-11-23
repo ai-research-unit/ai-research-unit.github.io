@@ -203,7 +203,7 @@ a_0=-\tfrac12\log\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=-\tfrac12\log\tfrac{
 $$
 with $\vec a=(-0.335401,-0.447202,0.223601)$. The direction $\vec s_{\Psi}$ is deliberately neither an axis of the basis nor the thermal direction. For this state the KMS relation was evaluated at several real $r'_t$ with generic $\tilde{Q}_3,\tilde Q_1$: $F_{AB}(r'_t+i)$ agrees with $\omega(\sigma_{-r'_t}(B)A)$ and with $F_{BA}(-r'_t)$ to machine precision, and the flow identities hold to the same order.
 
-A second, physical case ties the construction to the parent article and to *The Partition Function in Biquaternionic Form*. For the single fermionic mode of the Fock-space article, with $\tilde H_\Psi=\omega\tilde\Pi_-$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde{Ϛ}_{\Psi}=\mathrm{diag}(0.746494,0.253506)$ in the $\vec e_z$ basis (the occupied mode second, so that $\tilde\Pi_-\mapsto\mathrm{diag}(0,1)$), and
+A second, physical case ties the construction to the parent article and to *The Partition Function in Biquaternionic Form*. For the single fermionic mode of the Fock-space article, with $\tilde H_\Psi=\omega\tilde\Pi_{\mathrm{id},-}$ and $\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec e_z)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde{Ϛ}_{\Psi}=\mathrm{diag}(0.746494,0.253506)$ in the $\vec e_z$ basis (the occupied mode second, so that $\tilde\Pi_{\mathrm{id},-}\mapsto\mathrm{diag}(0,1)$), and
 $$
 \tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\mathrm{diag}(0.292368,1.372368)=\beta\tilde H_\Psi+(\log Z)e_t,
 $$
@@ -328,7 +328,7 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 - Companion article [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), for the KMS condition, the imaginary-time strip, and the modular Hamiltonian $H_{\mathrm{modular}}=-\log\rho$.
 - Companion article [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the Hermitian subspace, the pairing formula, and states as elements of $\mathbb{B}_{\Psi}$.
 - Companion article [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the Gibbs state and $H_{\mathrm{modular}}=\beta H+\log Z\,e_t$.
-- Companion article [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the single fermionic mode, $\tilde\Pi_-$, and the parity $(-1)^F$.
+- Companion article [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the single fermionic mode, $\tilde\Pi_{\mathrm{id},-}$, and the parity $(-1)^F$.
 - Companion article [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the algebra and its two sectors.
 - Companion article [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the material sector and the four-vectors.
 - Companion article [Interpretation of the Wick Rotation in the Biquaternion Universe](interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html), for the $i$-exchange between the sectors.

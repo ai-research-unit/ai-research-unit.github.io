@@ -70,7 +70,7 @@ $$
 =-c^{2}
 $$
 
-at a mode, by the display above and by nothing else. The check on the two modes $(\vec k_\Phi,k_t')=(0.7,1.220656)$ and $(0.3,1.044031)$, with $m=c=\hbar=1$, gave $\langle\tilde V_\Phi\rangle_{\natural}=-1.000000$ in both cases.
+at a mode, by the display above and by nothing else. The check on the two modes $(\vec k_\Phi,k_t')=(0.7,1.220656)$ and $(0.3,1.044031)$, with lengths in units of $1/k_m$ and momenta in units of $mc$, gave $\langle\tilde V_\Phi\rangle_{\natural}=-1.000000$ in both cases.
 
 So the companion's qualification is a statement about how many modes are present. The velocity is invertible wherever the local word is a single mode, and the failure of the unit is the measure of the local admixture. That is what $Q_{\mathrm{qnt}}$ is, in the momentum-space reading: a measure of the distance between the local field and a single point of the shell.
 

@@ -76,7 +76,7 @@ The two eigenvalues of $\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*}$ are 
 
 **A real scalar, $\tilde m_{\mathrm{fld}}=s e_t$.** Then $\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*}=s^2 e_t$, a central element, and both eigenvalues equal $s^2$: the doublet is **degenerate**, the two particles have equal mass $|s|$, and the operator $\tilde m_{\mathrm{fld}}$ is a scalar in disguise. This is the case the source reads as the **proton–neutron** doublet, with the equal-mass pair of the isospin multiplet.
 
-**A Hermitian idempotent, $\tilde m_{\mathrm{fld}}=\tilde{\Pi}$.** Then $\tilde m_{\mathrm{fld}}^{*}=\tilde m_{\mathrm{fld}}$ and $\tilde m_{\mathrm{fld}}^2=\tilde m_{\mathrm{fld}}$, so $\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*}=\tilde m_{\mathrm{fld}}$, an idempotent of rank one: its eigenvalues are $1$ and $0$. The doublet is **split**, one mode massive and one massless. This is the case the source reads as the **electron–neutrino** doublet — the charged fermion and its massless partner.
+**A Hermitian idempotent, $\tilde m_{\mathrm{fld}}=\tilde\Pi_{\mathrm{id}}$.** Then $\tilde m_{\mathrm{fld}}^{*}=\tilde m_{\mathrm{fld}}$ and $\tilde m_{\mathrm{fld}}^2=\tilde m_{\mathrm{fld}}$, so $\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*}=\tilde m_{\mathrm{fld}}$, an idempotent of rank one: its eigenvalues are $1$ and $0$. The doublet is **split**, one mode massive and one massless. This is the case the source reads as the **electron–neutrino** doublet — the charged fermion and its massless partner.
 
 **A singular biquaternion, $\langle\tilde m_{\mathrm{fld}}\rangle_{\natural} = \langle\tilde m_{\mathrm{fld}},\tilde m_{\mathrm{fld}}\rangle_{\natural}=0$.** Then $\det\mathsf{M}_2(\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*})=|\langle\tilde m_{\mathrm{fld}}\rangle_{\natural}|^2=0$, so at least one eigenvalue vanishes: **a singular mass field always leaves a massless mode**, whatever else it does. The identity $\det\mathsf{M}_2(\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*})=|\langle\tilde m_{\mathrm{fld}}\rangle_{\natural}|^2$ is the determinant of the matrix of the mass operator, and it is verified here; the vanishing of the norm is exactly the condition the idempotent case realises. The corpus's example $\tilde m_{\mathrm{fld}}=\vec e_x+i\vec e_y$ is singular, $\langle \vec e_x+i\vec e_y\rangle_{\natural}=1+i^2=0$, and its two mass-squareds are $4$ and $0$ — one massive mode and the electron–neutrino skeleton, checked directly.
 
@@ -85,7 +85,7 @@ The three cases are collected in one table.
 | mass field $\tilde m_{\mathrm{fld}}$ | $\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*}$ | mass-squareds | reading |
 |---|---|---|---|
 | real scalar $s e_t$ | $s^2 e_t$ | $s^2,\ s^2$ | degenerate doublet (proton–neutron) |
-| Hermitian idempotent $\tilde{\Pi}$ | $\tilde{\Pi}$ | $1,\ 0$ | split doublet (electron–neutrino) |
+| Hermitian idempotent $\tilde\Pi_{\mathrm{id}}$ | $\tilde\Pi_{\mathrm{id}}$ | $1,\ 0$ | split doublet (electron–neutrino) |
 | singular, $\langle\tilde m_{\mathrm{fld}}\rangle_{\natural}=0$ | rank-deficient | $\lambda,\ 0$ | one massless mode |
 | general | Hermitian, positive | $m_1^2,\ m_2^2$ | a massive doublet |
 
@@ -241,7 +241,7 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | $\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*},\ \tilde m_{\mathrm{fld}}^{*}\tilde m_{\mathrm{fld}}$ | Mass-squared operators of $\tilde Q_1$ and $\tilde Q_2$ |
 | $\det\mathsf{M}_2(\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*})=|\langle\tilde m_{\mathrm{fld}}\rangle_{\natural}|^2$ | Determinant identity; vanishing forces a massless mode |
 | $\sigma=\tfrac12(e_t+i\vec u_\nu)$ | Idempotent (nullquat), $\sigma^2=\sigma$, $\langle \sigma\rangle_{\natural}=0$ |
-| $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | Hermitian idempotents; mass eigenvalues $1,0$ |
+| $\tilde\Pi_{\mathrm{id},1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | Hermitian idempotents; mass eigenvalues $1,0$ |
 | $\vec e_x+i\vec e_y$ | Singular mass field; mass-squareds $4,0$ |
 | $\mathrm{sn}(z,k),\ \mathrm{cn}(z,k)$ | Jacobi elliptic functions of modulus $k$ |
 | $k\in[0,1]$ | Modulus; $k=0$ de Broglie, $k=1$ soliton |

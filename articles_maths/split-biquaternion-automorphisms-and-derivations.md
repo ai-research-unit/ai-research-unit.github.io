@@ -5,7 +5,7 @@
 
 The **split biquaternion algebra** is $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$, an eight-dimensional real algebra isomorphic to $\mathbb{H} \oplus \mathbb{H}$. It carries two structures distinguished by the ground ring: over the split complex algebra $\mathbb{C}_{\mathrm{spl}}$ it is a free $\mathbb{C}_{\mathrm{spl}}$-algebra of rank $4$, and over $\mathbb{R}$ the same set is an eight-dimensional real algebra. This article describes its algebra **automorphisms** and its **derivations**, over each ground structure, and compares them with the biquaternion case. The algebra and its decomposition are used from *Split-Biquaternion Algebra* and *Split-Biquaternion Ideals and Peirce Decomposition*; the split complex unit and the idempotents are those of *Split-Complex Algebra*.
 
-We use the conventions of the split biquaternion algebra: the basis $\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ with $\vec e_k^2 = -e_t$; the central split complex unit $j$ with $j^2 = +1$; the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$; the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian); and the four distinguished subspaces $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$. A general element is $\tilde{Q} = \tilde q + j\tilde q'$ with $\tilde q, \tilde q' \in \mathbb{H}$.
+We use the conventions of the split biquaternion algebra: the basis $\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ with $\vec e_k^2 = -e_t$; the central split complex unit $j$ with $j^2 = +1$; the idempotents $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(1 \pm j)$; the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian); and the four distinguished subspaces $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$. A general element is $\tilde{Q} = \tilde q + j\tilde q'$ with $\tilde q, \tilde q' \in \mathbb{H}$.
 
 No physics is invoked and no new results are claimed. Everything below is the standard structure theory of a product of two quaternion algebras.
 
@@ -13,7 +13,7 @@ No physics is invoked and no new results are claimed. Everything below is the st
 
 Two structural facts govern the whole article.
 
-**The centre.** The centre of $\mathbb{B}_{\mathrm{spl}}$ is $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} = \mathbb{C}_{\mathrm{spl}} e_t = \mathrm{span}_{\mathbb{R}}\{e_t, je_t\}$, a real two-dimensional algebra isomorphic to $\mathbb{C}_{\mathrm{spl}}$, with the idempotents $\tilde\Pi_{1,2}$ as its two nontrivial idempotents. Hence $\mathbb{B}_{\mathrm{spl}}$ is **not** central over $\mathbb{R}$: its centre is strictly larger than $\mathbb{R}e_t$.
+**The centre.** The centre of $\mathbb{B}_{\mathrm{spl}}$ is $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} = \mathbb{C}_{\mathrm{spl}} e_t = \mathrm{span}_{\mathbb{R}}\{e_t, je_t\}$, a real two-dimensional algebra isomorphic to $\mathbb{C}_{\mathrm{spl}}$, with the idempotents $\tilde\Pi_{\mathrm{id},1,2}$ as its two nontrivial idempotents. Hence $\mathbb{B}_{\mathrm{spl}}$ is **not** central over $\mathbb{R}$: its centre is strictly larger than $\mathbb{R}e_t$.
 
 **The two halves.** The algebra is a product of two copies of the quaternion division algebra, $\mathbb{B}_{\mathrm{spl}} \cong \mathbb{H} \oplus \mathbb{H}$, the isomorphism sending $\tilde{Q}$ to the pair $(\tilde{Q}_+, \tilde{Q}_-)$ of its idempotent components. It is **semisimple but not simple**: the two factors are its minimal two-sided ideals. Every automorphism and every derivation must respect this splitting, up to the one permutation that interchanges the two factors.
 
@@ -25,7 +25,7 @@ Throughout this section the ground ring is $\mathbb{C}_{\mathrm{spl}}$, and an a
 
 **Theorem.** $\mathrm{Aut}_{\mathbb{C}_{\mathrm{spl}}}(\mathbb{B}_{\mathrm{spl}}) \cong SO(3) \times SO(3)$.
 
-**Proof.** A $\mathbb{C}_{\mathrm{spl}}$-linear automorphism fixes the centre $\mathbb{C}_{\mathrm{spl}}$ pointwise, hence fixes the idempotents $\tilde\Pi_{1,2}$ and preserves each of the two factors $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$. On each factor it is an $\mathbb{R}$-algebra automorphism of $\mathbb{H}$, and every such automorphism is inner, by the Skolem–Noether theorem for the division algebra $\mathbb{H}$: it is $\operatorname{Ad}_{u}(\tilde q) = u \tilde q u^{-1}$ for some $u \in \mathbb{H}^\times$, depending only on $u$ modulo the central scalars $\mathbb{R}^\times$. Thus the automorphisms of the first factor form $\mathbb{H}^\times / \mathbb{R}^\times \cong S^3/\{\pm 1\} = SO(3)$, and likewise for the second, giving the product.
+**Proof.** A $\mathbb{C}_{\mathrm{spl}}$-linear automorphism fixes the centre $\mathbb{C}_{\mathrm{spl}}$ pointwise, hence fixes the idempotents $\tilde\Pi_{\mathrm{id},1,2}$ and preserves each of the two factors $\mathbb{H} \tilde\Pi_{\mathrm{id},1}$ and $\mathbb{H} \tilde\Pi_{\mathrm{id},2}$. On each factor it is an $\mathbb{R}$-algebra automorphism of $\mathbb{H}$, and every such automorphism is inner, by the Skolem–Noether theorem for the division algebra $\mathbb{H}$: it is $\operatorname{Ad}_{u}(\tilde q) = u \tilde q u^{-1}$ for some $u \in \mathbb{H}^\times$, depending only on $u$ modulo the central scalars $\mathbb{R}^\times$. Thus the automorphisms of the first factor form $\mathbb{H}^\times / \mathbb{R}^\times \cong S^3/\{\pm 1\} = SO(3)$, and likewise for the second, giving the product.
 
 **Corollary.** As a Lie group, $\mathrm{Aut}_{\mathbb{C}_{\mathrm{spl}}}(\mathbb{B}_{\mathrm{spl}})$ has dimension $6$ and is connected and compact.
 
@@ -35,13 +35,13 @@ Throughout this section the ground ring is $\mathbb{C}_{\mathrm{spl}}$, and an a
 
 Now the ground ring is $\mathbb{R}$, so automorphisms need only be $\mathbb{R}$-linear, and the group is strictly larger.
 
-**Automorphisms preserve the centre.** If $\sigma$ is an $\mathbb{R}$-algebra automorphism and $A$ is central then $\sigma(A)$ is central, so $\sigma$ restricts to an $\mathbb{R}$-algebra automorphism of $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cong \mathbb{C}_{\mathrm{spl}}$. Since $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ has exactly two $\mathbb{R}$-algebra automorphisms, the identity and the swap $\tilde\Pi_1 \leftrightarrow \tilde\Pi_2$, restriction gives a homomorphism
+**Automorphisms preserve the centre.** If $\sigma$ is an $\mathbb{R}$-algebra automorphism and $A$ is central then $\sigma(A)$ is central, so $\sigma$ restricts to an $\mathbb{R}$-algebra automorphism of $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cong \mathbb{C}_{\mathrm{spl}}$. Since $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ has exactly two $\mathbb{R}$-algebra automorphisms, the identity and the swap $\tilde\Pi_{\mathrm{id},1} \leftrightarrow \tilde\Pi_{\mathrm{id},2}$, restriction gives a homomorphism
 
 $$
 \rho : \mathrm{Aut}_{\mathbb{R}}(\mathbb{B}_{\mathrm{spl}}) \longrightarrow \mathrm{Aut}_{\mathbb{R}}(\mathbb{C}_{\mathrm{spl}}) \cong \mathbb{Z}/2 .
 $$
 
-**The kernel is the $\mathbb{C}_{\mathrm{spl}}$-linear part.** An automorphism lies in $\ker\rho$ exactly when it fixes the centre pointwise, equivalently when it fixes $\tilde\Pi_1$ and $\tilde\Pi_2$ and so preserves each factor. Hence $\ker\rho = \mathrm{Aut}_{\mathbb{C}_{\mathrm{spl}}}(\mathbb{B}_{\mathrm{spl}}) \cong SO(3)\times SO(3)$, the group of the previous section, consisting of the inner automorphisms.
+**The kernel is the $\mathbb{C}_{\mathrm{spl}}$-linear part.** An automorphism lies in $\ker\rho$ exactly when it fixes the centre pointwise, equivalently when it fixes $\tilde\Pi_{\mathrm{id},1}$ and $\tilde\Pi_{\mathrm{id},2}$ and so preserves each factor. Hence $\ker\rho = \mathrm{Aut}_{\mathbb{C}_{\mathrm{spl}}}(\mathbb{B}_{\mathrm{spl}}) \cong SO(3)\times SO(3)$, the group of the previous section, consisting of the inner automorphisms.
 
 **The swap coset.** The map
 
@@ -83,7 +83,7 @@ $$
 
 **Theorem.** $\mathrm{Der}(\mathbb{B}_{\mathrm{spl}}) \cong \mathrm{SO}(3) \oplus \mathrm{SO}(3) \cong \mathrm{SO}(4)$, a real Lie algebra of dimension $6$, and every derivation is inner.
 
-**Proof.** A derivation $D$ fixes each central idempotent: from $D(\tilde\Pi_1) = D(\tilde\Pi_1^2) = \tilde\Pi_1D(\tilde\Pi_1) + D(\tilde\Pi_1)\tilde\Pi_1$ and the centrality of $D(\tilde\Pi_1)$ one obtains $D(\tilde\Pi_1) = 0$, and similarly $D(\tilde\Pi_2) = 0$. Hence $D$ kills no element of the form $\tilde Q_+ \tilde\Pi_1$ into the other factor and, by the Leibniz rule, preserves the splitting; so $D$ acts as a derivation of $\mathbb{H}$ on the first factor and one on the second, and
+**Proof.** A derivation $D$ fixes each central idempotent: from $D(\tilde\Pi_{\mathrm{id},1}) = D(\tilde\Pi_{\mathrm{id},1}^2) = \tilde\Pi_{\mathrm{id},1D}(\tilde\Pi_{\mathrm{id},1}) + D(\tilde\Pi_{\mathrm{id},1})\tilde\Pi_{\mathrm{id},1}$ and the centrality of $D(\tilde\Pi_{\mathrm{id},1})$ one obtains $D(\tilde\Pi_{\mathrm{id},1}) = 0$, and similarly $D(\tilde\Pi_{\mathrm{id},2}) = 0$. Hence $D$ kills no element of the form $\tilde Q_+ \tilde\Pi_{\mathrm{id},1}$ into the other factor and, by the Leibniz rule, preserves the splitting; so $D$ acts as a derivation of $\mathbb{H}$ on the first factor and one on the second, and
 
 $$
 \mathrm{Der}(\mathbb{B}_{\mathrm{spl}}) \cong \mathrm{Der}(\mathbb{H}) \oplus \mathrm{Der}(\mathbb{H}) .
@@ -106,7 +106,7 @@ an isomorphism of Lie algebras because $[\mathrm{ad}_a,\mathrm{ad}_b] = \mathrm{
 **An explicit basis.** The derivations $A_k = \tfrac{1}{2}\mathrm{ad}_{\vec e_k}$, $k = 1,2,3$, act on the two factors simultaneously, each as $\mathrm{ad}_{\vec e_k}$, and satisfy $[A_1,A_2] = A_3$ together with its cyclic permutations; the companion derivations $\tfrac{1}{2}\mathrm{ad}_{j\vec e_k}$ act with opposite signs on the two factors. Their combinations
 
 $$
-D_k^{+} = \tfrac{1}{2}\left(A_k + \tfrac{1}{2}\mathrm{ad}_{j\vec e_k}\right) = \tfrac{1}{2}\mathrm{ad}_{\vec e_k \tilde\Pi_1}, \qquad D_k^{-} = \tfrac{1}{2}\left(A_k - \tfrac{1}{2}\mathrm{ad}_{j\vec e_k}\right) = \tfrac{1}{2}\mathrm{ad}_{\vec e_k \tilde\Pi_2}
+D_k^{+} = \tfrac{1}{2}\left(A_k + \tfrac{1}{2}\mathrm{ad}_{j\vec e_k}\right) = \tfrac{1}{2}\mathrm{ad}_{\vec e_k \tilde\Pi_{\mathrm{id},1}}, \qquad D_k^{-} = \tfrac{1}{2}\left(A_k - \tfrac{1}{2}\mathrm{ad}_{j\vec e_k}\right) = \tfrac{1}{2}\mathrm{ad}_{\vec e_k \tilde\Pi_{\mathrm{id},2}}
 $$
 
 act on the first and on the second factor respectively and vanish on the other, and each triple satisfies $[D_1^{\pm},D_2^{\pm}] = D_3^{\pm}$ together with its cyclic permutations. The six elements $D_k^{\pm}$ are linearly independent and form a real basis of the six-dimensional derivation algebra.
@@ -117,9 +117,9 @@ act on the first and on the second factor respectively and vanish on the other, 
 
 **An inner automorphism.** For $u = \vec e_x$ in the first factor, $\sigma(\tilde Q_+,\tilde Q_-) = (\vec e_x \tilde Q_+ \vec e_x^{-1}, \tilde Q_-)$ has $\vec e_x^{-1} = -\vec e_x$, so it fixes $\vec e_x$ and reverses the signs of $\vec e_y$ and $\vec e_z$ in the first factor while leaving the second untouched: $\sigma(\vec e_y,0) = (-\vec e_y,0)$, $\sigma(\vec e_z,0) = (-\vec e_z,0)$.
 
-**A derivation.** Take $D = D_3^{+} = \tfrac{1}{2}\mathrm{ad}_{\vec e_z \tilde\Pi_1}$, acting on the first factor alone. Its exponential acts by $\exp(tD)(\vec e_x,0) = (\cos t\,\vec e_x + \sin t\,\vec e_y, 0)$, matching $A(\exp(t\vec e_z/2),0)$; the second factor is fixed, because $\mathrm{ad}_{\vec e_z\tilde\Pi_1}$ acts as zero there.
+**A derivation.** Take $D = D_3^{+} = \tfrac{1}{2}\mathrm{ad}_{\vec e_z \tilde\Pi_{\mathrm{id},1}}$, acting on the first factor alone. Its exponential acts by $\exp(tD)(\vec e_x,0) = (\cos t\,\vec e_x + \sin t\,\vec e_y, 0)$, matching $A(\exp(t\vec e_z/2),0)$; the second factor is fixed, because $\mathrm{ad}_{\vec e_z\tilde\Pi_{\mathrm{id},1}}$ acts as zero there.
 
-**A derivation that mixes nothing.** Any $a = a_+ \tilde\Pi_1 + a_- \tilde\Pi_2$ gives the pair $\mathrm{ad}_a = (\mathrm{ad}_{a_+}, \mathrm{ad}_{a_-})$, and $\mathrm{ad}_a$ depends only on $a$ modulo the centre: adding a central element changes neither component.
+**A derivation that mixes nothing.** Any $a = a_+ \tilde\Pi_{\mathrm{id},1} + a_- \tilde\Pi_{\mathrm{id},2}$ gives the pair $\mathrm{ad}_a = (\mathrm{ad}_{a_+}, \mathrm{ad}_{a_-})$, and $\mathrm{ad}_a$ depends only on $a$ modulo the centre: adding a central element changes neither component.
 
 ## Summary
 
@@ -132,7 +132,7 @@ The split biquaternion algebra is the product $\mathbb{H} \oplus \mathbb{H}$ of 
 | $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H} \cong \mathbb{H}\oplus\mathbb{H}$ | Split biquaternion algebra; product of two quaternion algebras |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Algebra basis, $e_t = 1$, $\vec e_k^2 = -e_t$ |
 | $j$ | Central split complex unit, $j^2 = +1$ |
-| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1\pm j)$ | Central idempotents, the two factors |
+| $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(1\pm j)$ | Central idempotents, the two factors |
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} = \mathrm{span}_{\mathbb{R}}\{e_t, je_t\}$ | Centre of the algebra |
 | $\tilde{Q} \mapsto (\tilde{Q}_+,\tilde{Q}_-)$ | Isomorphism to $\mathbb{H}\oplus\mathbb{H}$ |
 | ${}^{\natural}, \bar\cdot, {}^{*}, {}^{\flat}$ | Quaternion, split complex, Hermitian, anti-Hermitian conjugations |
@@ -141,7 +141,7 @@ The split biquaternion algebra is the product $\mathbb{H} \oplus \mathbb{H}$ of 
 | $c(\tilde{Q}) = \bar{\tilde{Q}}$ | Factor swap, the outer real automorphism |
 | $\mathrm{Der}(\mathbb{B}_{\mathrm{spl}}) = \mathrm{Der}_{\mathbb{C}_{\mathrm{spl}}}(\mathbb{B}_{\mathrm{spl}}) \cong \mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$ | Derivation algebra |
 | $\mathrm{ad}_a(\tilde Q) = a\tilde Q - \tilde Q a$ | Inner derivation |
-| $D_k^{\pm} = \tfrac{1}{2}\mathrm{ad}_{\vec e_k \tilde\Pi_{1,2}}$ | Derivation basis: $D_k^{+}$ acts on the first factor, $D_k^{-}$ on the second, $[D_1^{\pm},D_2^{\pm}]=D_3^{\pm}$ |
+| $D_k^{\pm} = \tfrac{1}{2}\mathrm{ad}_{\vec e_k \tilde\Pi_{\mathrm{id},1,2}}$ | Derivation basis: $D_k^{+}$ acts on the first factor, $D_k^{-}$ on the second, $[D_1^{\pm},D_2^{\pm}]=D_3^{\pm}$ |
 
 ## Further Reading
 

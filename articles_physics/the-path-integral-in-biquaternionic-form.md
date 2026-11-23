@@ -130,7 +130,7 @@ Because each phase factor is central, it commutes with every element of $\mathbb
 $$G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})=\mathcal{K}\,e_t,\qquad \mathcal{K}\in\mathbb{C},$$
 a complex number times the identity. It is not a general biquaternion.
 
-2. **The phase multiplies every spinor component equally.** In the state module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ of the Schrödinger article, a central phase acts as the same scalar on both components, $\exp(i\theta_{\mathrm{act}})\tilde{Ξ}$. A non-central phase would mix or relatively phase the components; a central one does not.
+2. **The phase multiplies every spinor component equally.** In the state module $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong\mathbb{C}^2$ of the Schrödinger article, a central phase acts as the same scalar on both components, $\exp(i\theta_{\mathrm{act}})\tilde{Ξ}$. A non-central phase would mix or relatively phase the components; a central one does not.
 
 3. **The overall phase cancels in the state.** With $\tilde{Ξ}\mapsto  \exp(i\theta_{\mathrm{act}})\tilde{Ξ}$ and $\tilde{Ϛ}_{\Psi}=\tilde{Ξ}\tilde{Ξ}^{\dagger}/2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})\in\mathbb{B}_{\Psi}$, centrality gives
 $$\tilde{Ϛ}_{\Psi}\,\longmapsto\frac{\exp(i\theta_{\mathrm{act}})\tilde{Ξ}\,\tilde{Ξ}^{\dagger} \exp(-i\theta_{\mathrm{act}})}{2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})}=\tilde{Ϛ}_{\Psi},$$
@@ -384,7 +384,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $[p,[p,g]]=-\hbar^{2}\frac{d^{2}g}{dx^{2}}$ | Operator-ordering ambiguity; proportional to the curvature |
 | $\prod_x\sqrt{g(x)}$ | Curved-space measure factor; one volume element per slice |
 | $\tilde{Ϛ}_{\Psi}=\tilde{Ξ}\tilde{Ξ}^{\dagger}/2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$ | State from a spinor; global phase cancels |
-| $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}$ | Scalar-part reading at normalisation (Born rule) |
+| $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*}) = 2\langle\tilde\Pi_{\mathrm{id}},\tilde H_\Psi\rangle_{*}$ | Scalar-part reading at normalisation (Born rule) |
 | $r'_t\mapsto-i\tau$ | Wick rotation |
 | $S=iS_E$ | Action under the Wick rotation |
 | $\exp(i\theta_{\mathrm{act}})=\exp(-\frac{S_{E}}{\hbar})$ | Oscillatory phase becomes decaying weight |

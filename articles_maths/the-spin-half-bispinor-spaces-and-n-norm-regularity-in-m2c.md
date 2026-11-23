@@ -4,7 +4,7 @@
 
 **The question.** The spin-half carrier is the plane of multiples of a rank-one projection and its closures are the minimal left ideals. What is the determinant on these spaces, and is any element of a single ideal N-regular?
 
-**Why it is the same statement.** This is the in-depth matrix reading of [The Spin-Half Bispinors and N Norm Regularity](the-spin-half-bispinor-spaces-and-n-norm-regularity.html). There the norm is $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ and the null plane is $\mathbb{C}\tilde\Pi_+$; here the norm is $\det A$, the plane is $\mathbb{C}P$ and the ideal is $M_2P$. The statements are the same statements, and only the writing is new.
+**Why it is the same statement.** This is the in-depth matrix reading of [The Spin-Half Bispinors and N Norm Regularity](the-spin-half-bispinor-spaces-and-n-norm-regularity.html). There the norm is $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ and the null plane is $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$; here the norm is $\det A$, the plane is $\mathbb{C}P$ and the ideal is $M_2P$. The statements are the same statements, and only the writing is new.
 
 **What the article proves.** In this order. That $\det P=0$ and $\det(Y\!P)=0$ for every $Y$, so the plane and both ideals are null. That the ideals are maximal isotropic, of complex dimension two, half of four. That on the bispinor the determinant is the pairing, $\det(X_++X_-)=2B(X_+,X_-)$. That the pairing is nondegenerate and that the polar form is $\sum_\mu x_\mu y_\mu$ in the coefficient basis. The comparison with the other two carriers.
 

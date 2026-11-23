@@ -21,7 +21,7 @@ for the helicity state carried by $\vec E$, and the same two numbers with the ro
 
 **What this article does not claim.** It does not claim that the split fails, or that the massive field needs a different carrier. The split is a decomposition of the complexified field strength, it is exact for every field, and it is the correct home of the integer-spin representations. What the article claims is narrower and sharper: the split resolves the two circular polarizations and does not resolve the third, so the three states are **not** a $2+1$ split of the two chiral halves. The third state lives in the direction the split leaves out, and any programme that treats self-duality as a condition on a massive field is imposing the vanishing of a combination that is not there.
 
-The conventions are those of the two companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; the field strength is $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H\in\mathbb{B}_V$ with $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$; the Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$; the Hodge dual is $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$ with $\star^2=-1$ and $\star\tilde F=-i\tilde F$; the projectors are $\tilde\Pi_{sd,asd}=\tfrac12(1\pm i\star)$; and the mass is $k_m=mc/\hbar$ with the dispersion relation $\omega^2=c^2\lvert\vec k_\Phi\rvert^{2}+c^2k_m^2$. Where the wavevector's magnitude is written $k_\Phi$, it means $\lvert\vec k_\Phi\rvert$.
+The conventions are those of the two companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; the field strength is $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H\in\mathbb{B}_V$ with $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$; the Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$; the Hodge dual is $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$ with $\star^2=-1$ and $\star\tilde F=-i\tilde F$; the projectors are $\tilde\Pi_{\mathrm{id},sd,asd}=\tfrac12(1\pm i\star)$; and the mass is $k_m=mc/\hbar$ with the dispersion relation $\omega^2=c^2\lvert\vec k_\Phi\rvert^{2}+c^2k_m^2$. Where the wavevector's magnitude is written $k_\Phi$, it means $\lvert\vec k_\Phi\rvert$.
 
 ## The Three States at a Wavevector
 
@@ -118,7 +118,7 @@ $$
 
 using $\omega^2-c^2k_\Phi^{2}=c^2k_m^2$ in the last form. The ratio is positive and less than one, tends to zero as $k_m\to0$ at fixed $k_\Phi$, and tends to one as $k_\Phi\to0$ at fixed $k_m$. In the massless limit the smaller weight vanishes and the mode becomes pure: for $\sigma=+1$ the coordinate $\vec N^*$ goes to zero and the field is self-dual; for $\sigma=-1$ the coordinate $\vec N$ goes to zero and the field is anti-self-dual. That is exactly the companion article's statement, recovered as the endpoint of a one-parameter family. The parameter is the mass.
 
-**The same three statements in the algebra's letters.** The two chiral coordinates are the two projections: on the complexified field strength the dual acts by $-i$ on $\vec N$ and by $+i$ on $\vec N^*$, which is what $\star\tilde F=-i\tilde F$ says on the self-dual side and $\tilde\Pi_{sd,asd}=\tfrac12(1\pm i\star)$ makes explicit. For a real mode the two coordinates are not independent: they are $\vec N^*=\lambda\vec N$ with the real $\lambda$, the reciprocal of the ratio above for the opposite helicity. So the mode's pair of coordinates is $(1,\lambda)$, and the statement "the mode is self-dual" is $\lambda=0$ while "it is anti-self-dual" is $\lambda=\infty$. Neither holds at any finite mass, and both are limits as $k_m\to0$. The massive mode is a definite mixture, with the mixing angle fixed by the mass and the wavevector and by nothing else — not by the amplitude, not by the polarization, since the two helicities carry reciprocal mixing ratios.
+**The same three statements in the algebra's letters.** The two chiral coordinates are the two projections: on the complexified field strength the dual acts by $-i$ on $\vec N$ and by $+i$ on $\vec N^*$, which is what $\star\tilde F=-i\tilde F$ says on the self-dual side and $\tilde\Pi_{\mathrm{id},sd,asd}=\tfrac12(1\pm i\star)$ makes explicit. For a real mode the two coordinates are not independent: they are $\vec N^*=\lambda\vec N$ with the real $\lambda$, the reciprocal of the ratio above for the opposite helicity. So the mode's pair of coordinates is $(1,\lambda)$, and the statement "the mode is self-dual" is $\lambda=0$ while "it is anti-self-dual" is $\lambda=\infty$. Neither holds at any finite mass, and both are limits as $k_m\to0$. The massive mode is a definite mixture, with the mixing angle fixed by the mass and the wavevector and by nothing else — not by the amplitude, not by the polarization, since the two helicities carry reciprocal mixing ratios.
 
 ## The Third State in the Split
 
@@ -141,7 +141,7 @@ The companion article states the obstruction in the massless case: a real field 
 
 **Quantified, because the impurity has a size.** The ratio $\rho=(1-ck_\Phi/\omega)/(1+ck_\Phi/\omega)$ is the measure. It is $\rho=0$ exactly at $k_m=0$, it is $\rho=\tfrac13$ at $\omega=2ck_\Phi$ (that is, $k_m^2=3k_\Phi^{2}$), and it tends to one as $k_\Phi\to0$. So the answer to "how self-dual is a massive mode" is: not at all, and the amount by which it fails is a function of the mass and the wavevector alone, independent of the amplitude and of the polarization (the two helicities have the reciprocal ratios $\rho$ and $1/\rho$, so the pair of values is fixed by the mass and the wavevector alone).
 
-**What follows for any programme that imposes self-duality.** A condition $\tilde\Pi_{asd}\tilde F=0$ on a massive field is $\tfrac12(1-ck_\Phi/\omega)\tilde F=0$, which for $k_m>0$ forces $\tilde F=0$: the condition has no non-trivial solution. So the massive field cannot be made self-dual by any choice of mode, and a scheme that requires it is requiring the field to vanish. The companion article's remark that such schemes take the field outside the material sector is the same statement from the other side: outside the material sector the field is complex and $\vec N=0$ is a condition on a complex object, not on a real one.
+**What follows for any programme that imposes self-duality.** A condition $\tilde\Pi_{\mathrm{id},asd}\tilde F=0$ on a massive field is $\tfrac12(1-ck_\Phi/\omega)\tilde F=0$, which for $k_m>0$ forces $\tilde F=0$: the condition has no non-trivial solution. So the massive field cannot be made self-dual by any choice of mode, and a scheme that requires it is requiring the field to vanish. The companion article's remark that such schemes take the field outside the material sector is the same statement from the other side: outside the material sector the field is complex and $\vec N=0$ is a condition on a complex object, not on a real one.
 
 ## The Rest Frame
 
@@ -174,7 +174,7 @@ The companion article states the obstruction in the massless case: a real field 
 A massive plane wave has three amplitude directions: two circular, with helicity $\pm1$, and one longitudinal, with helicity zero. The self-dual split resolves the two circular ones exactly — they are its two halves, the representations $(1,0)$ and $(0,1)$ — and it resolves nothing of the third, because both of its halves are transverse and the third is the axis they are transverse to. In the algebra the projectors act on a massive mode by rescaling rather than annihilating,
 
 $$
-\tilde\Pi_{sd,asd}\tilde F=\tfrac12\Bigl(1\pm\frac{ck_\Phi}{\omega}\Bigr)\tilde F ,
+\tilde\Pi_{\mathrm{id},sd,asd}\tilde F=\tfrac12\Bigl(1\pm\frac{ck_\Phi}{\omega}\Bigr)\tilde F ,
 $$
 
 so the mode is in neither eigenspace, and the Riemann–Silberstein coordinates are $\vec N=(1+\sigma ck_\Phi/\omega)\vec E$ and $\vec N^*=(1-\sigma ck_\Phi/\omega)\vec E$: both nonzero, parallel, with a real ratio
@@ -199,7 +199,7 @@ The origin of the count is the difference of carriers. The potential is a four-v
 | $\vec B=\mu\vec H$, $c=1/\sqrt{\epsilon\mu}$ | Magnetic induction and speed of light in the medium |
 | $\vec N=\vec E+ic\vec B$, $\vec N^*=\vec E-ic\vec B$ | Riemann–Silberstein coordinates of the two halves |
 | $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$ | Hodge dual, $\star^2=-1$, $\star\tilde F=-i\tilde F$ |
-| $\tilde\Pi_{sd,asd}=\tfrac12(1\pm i\star)$ | Projectors onto the self-dual and anti-self-dual halves |
+| $\tilde\Pi_{\mathrm{id},sd,asd}=\tfrac12(1\pm i\star)$ | Projectors onto the self-dual and anti-self-dual halves |
 | $\varepsilon_{\mathrm{fop},\pm}$ | Circular polarization vectors, $\hat k_\Phi\times\varepsilon_\pm=\mp i\varepsilon_\pm$ |
 | $A_+,A_-,A_L$ | Amplitudes of the two circular and the longitudinal states |
 | $I_1=\vec E^2-c^2\vec B^2$, $I_2=\vec E\cdot\vec B$ | The two field invariants |

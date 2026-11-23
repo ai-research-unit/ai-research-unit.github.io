@@ -396,7 +396,7 @@ The three carriers. The two predicates cut the algebra into four regions, and th
 | carrier | subspace | $\dim_\mathbb{R}$ | action | weights | spin | region away from the origin |
 | --- | --- | --- | --- | --- | --- | --- |
 | the centre | $\mathbb{C}e_t$ | $2$ | adjoint, trivial | $0$ | $0$ | $\Sigma_{10}$ |
-| the plane | $\mathbb{C}\tilde\Pi_+(\vec u)$ | $2$ | left multiplication | $\pm\tfrac12$ | $\tfrac12$ | $\Sigma_{01}$ |
+| the plane | $\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u)$ | $2$ | left multiplication | $\pm\tfrac12$ | $\tfrac12$ | $\Sigma_{01}$ |
 | the triple | $\mathfrak{k}$ | $3$ | adjoint | $\pm1,0$ | $1$ | $\Sigma_{11}$ |
 
 Why the assignment is forced. The centre has $B^{2}=0$ identically, so no point of it can be in a region with $B^{2}\neq0$. The plane has $N=0$ identically, so no point of it can be in a region with $N\neq0$. The triple has both quantities positive at every nonzero point, so it is contained in $\Sigma_{11}$ and in no other. The three assignments follow from the two identities $B^{2}=0$ on the centre and $N=0$ on the plane, and from no further computation.
@@ -503,7 +503,7 @@ The readings. Spin one is the adjoint representation, so the carrier is the alge
 | $C(\vec u)=\vec u\times$ | the adjoint operator of the generator on the triple |
 | $\varepsilon_+,\varepsilon_-,\varepsilon_0$ | the weight basis, circular and longitudinal |
 | $\tilde S_3=i[\tfrac12\vec u,\ \cdot\ ]$ | the Hermitian weight operator |
-| $\tilde\Pi_\pm(\vec u)$ | the idempotents $\tfrac12(e_t\pm i\vec u)$ |
+| $\tilde\Pi_{\mathrm{id},\pm}(\vec u)$ | the idempotents $\tfrac12(e_t\pm i\vec u)$ |
 | $\operatorname{Ad}_U(X)=UXU^{*}$ | the action of a Lorentz rotor of unit norm |
 | $\tilde U_{\mathrm b}$ | a boost rotor, $\cosh\tfrac{\phi}{2}e_t+i\sinh\tfrac{\phi}{2}\vec u_{\mathrm b}$ |
 | $\theta,\ \phi$ | the rotation angle and the boost rapidity |

@@ -14,13 +14,13 @@ with the same block $A$ twice on the diagonal of $L$ and $A^{\mathsf T}$ twice o
 
 **The left and the right.** The left/right split survives, but not as two commuting families on one space. The left action on the left ideal
 $$
-S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+
+S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},+}
 $$
-has matrix $A$ in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$. The right action on the right ideal
+has matrix $A$ in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$. The right action on the right ideal
 $$
-T_+=\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-
+T_+=\tilde\Pi_{\mathrm{id},+}\mathbb{B}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},-}
 $$
-has matrix $A^{\mathsf T}$ in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$. The two matrices are transposes, and the transpose is the stitch. The two actions live on two different planes, so there is no statement that $A$ and $A^{\mathsf T}$ commute.
+has matrix $A^{\mathsf T}$ in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-})$. The two matrices are transposes, and the transpose is the stitch. The two actions live on two different planes, so there is no statement that $A$ and $A^{\mathsf T}$ commute.
 
 **What is kept and what is lost.** The root, the two idempotents, the Peirce frame, the two ideals, the left and right matrices, the stitch, the product, the trace, the determinant and the six subspaces all compress. The axis-free basis switch of the $4\times4$ article does not: the $2\times2$ model is already the matrix-unit frame, so the surviving switch is the identity. The sign matrix of the axis-free basis stitch and the swap matrix of the Peirce stitch are invisible on one block; the swap only exchanges the two nilpotent labels. The commutation of the two $4\times4$ families and the mixed trace $4Q_{1t}Q_{2t}$ do not compress, because they are statements about the two tensor factors at once.
 
@@ -30,11 +30,11 @@ has matrix $A^{\mathsf T}$ in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$. The two 
 
 The standard pair and the mixed units are
 $$
-\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
-\vec\Upsilon_+=\tfrac12(i\vec e_x+\vec e_y),\qquad
-\vec\Upsilon_-=\tfrac12(i\vec e_x-\vec e_y).
+\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z),\qquad
+\vec\Pi_{\mathrm{nil},+}=\tfrac12(i\vec e_x+\vec e_y),\qquad
+\vec\Pi_{\mathrm{nil},-}=\tfrac12(i\vec e_x-\vec e_y).
 $$
-The labels of the Peirce-coordinates article are $\vec\Upsilon_x=\vec\Upsilon_-$ and $\vec\Upsilon_y=\vec\Upsilon_+$. The matrix units are $E_{ij}$, $\operatorname{Tr}$ is the $2\times2$ trace, and the Pauli matrices are the three arrays fixed in §*The Two Tensor Factors* of *Matrix Representations Conventions*,
+The labels of the Peirce-coordinates article are $\vec\Pi_{\mathrm{nil},x}=\vec\Pi_{\mathrm{nil},-}$ and $\vec\Pi_{\mathrm{nil},y}=\vec\Pi_{\mathrm{nil},+}$. The matrix units are $E_{ij}$, $\operatorname{Tr}$ is the $2\times2$ trace, and the Pauli matrices are the three arrays fixed in §*The Two Tensor Factors* of *Matrix Representations Conventions*,
 $$
 \sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
 \sigma_2=\begin{pmatrix}0&-i\\ i&0\end{pmatrix},\qquad
@@ -58,30 +58,30 @@ $$
 $$
 The two idempotents are the two spectral projections of the root,
 $$
-\tilde\Pi_\pm=\frac{e_t\pm\vec{Ζ}}{2}=\tfrac12(e_t\pm i\vec e_z),
+\tilde\Pi_{\mathrm{id},\pm}=\frac{e_t\pm\vec{Ζ}}{2}=\tfrac12(e_t\pm i\vec e_z),
 $$
 with
 $$
-\tilde\Pi_+^2=\tilde\Pi_+,\qquad
-\tilde\Pi_-^2=\tilde\Pi_-,\qquad
-\tilde\Pi_+\tilde\Pi_-=0,\qquad
-\tilde\Pi_++\tilde\Pi_-=e_t,\qquad
-\tilde\Pi_+-\tilde\Pi_-=\vec{Ζ} .
+\tilde\Pi_{\mathrm{id},+}^2=\tilde\Pi_{\mathrm{id},+},\qquad
+\tilde\Pi_{\mathrm{id},-}^2=\tilde\Pi_{\mathrm{id},-},\qquad
+\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0,\qquad
+\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t,\qquad
+\tilde\Pi_{\mathrm{id},+-}\tilde\Pi_{\mathrm{id},-}=\vec{Ζ} .
 $$
 The root is not central, and the choice of the $z$ direction is a genuine choice.
 
 **The images.** The compression sends the root and the two idempotents to the grading matrix and the two coordinate projections:
 $$
 \mathsf M_2(\vec{Ζ})=\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
-\mathsf M_2(\tilde\Pi_+)=E_{11}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
-\mathsf M_2(\tilde\Pi_-)=E_{22}=\begin{pmatrix}0&0\\0&1\end{pmatrix}.
+\mathsf M_2(\tilde\Pi_{\mathrm{id},+})=E_{11}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
+\mathsf M_2(\tilde\Pi_{\mathrm{id},-})=E_{22}=\begin{pmatrix}0&0\\0&1\end{pmatrix}.
 $$
 The Peirce decomposition is therefore the spectral decomposition of $\sigma_3$: the abstract pair becomes the row/column pair of $\mathbb{C}^2$. This is the first sense in which the $2\times2$ model is the compressed Pauli representation.
 
 **The two planes.** Put
 $$
-S_\pm=\mathbb{B}\tilde\Pi_\pm,\qquad
-T_\pm=\tilde\Pi_\pm\mathbb{B}.
+S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm},\qquad
+T_\pm=\tilde\Pi_{\mathrm{id},\pm}\mathbb{B}.
 $$
 The $S_\pm$ are the minimal left ideals, the $T_\pm$ are the minimal right ideals, and
 $$
@@ -99,36 +99,36 @@ as in *The Polarized Module of the Biquaternion Algebra*, §*The Two Spinor Spac
 
 **The frame.** The standard Peirce frame is the ordered basis
 $$
-\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-),
+\mathcal{P}=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-}),
 \qquad
-\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y).
+\vec\Pi_{\mathrm{nil},\pm}=\tfrac12(i\vec e_x\pm\vec e_y).
 $$
 The multiplication table is
 $$
-\tilde\Pi_+\tilde\Pi_+=\tilde\Pi_+,\qquad
-\tilde\Pi_-\tilde\Pi_-=\tilde\Pi_-,\qquad
-\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0,
+\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},+}=\tilde\Pi_{\mathrm{id},+},\qquad
+\tilde\Pi_{\mathrm{id},-}\tilde\Pi_{\mathrm{id},-}=\tilde\Pi_{\mathrm{id},-},\qquad
+\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=\tilde\Pi_{\mathrm{id},-}\tilde\Pi_{\mathrm{id},+}=0,
 $$
 $$
-\tilde\Pi_+\vec\Upsilon_-=\vec\Upsilon_-,\qquad
-\tilde\Pi_-\vec\Upsilon_+=\vec\Upsilon_+,\qquad
-\tilde\Pi_+\vec\Upsilon_+=\tilde\Pi_-\vec\Upsilon_-=0,
+\tilde\Pi_{\mathrm{id},+}\vec\Pi_{\mathrm{nil},-}=\vec\Pi_{\mathrm{nil},-},\qquad
+\tilde\Pi_{\mathrm{id},-}\vec\Pi_{\mathrm{nil},+}=\vec\Pi_{\mathrm{nil},+},\qquad
+\tilde\Pi_{\mathrm{id},+}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},-}\vec\Pi_{\mathrm{nil},-}=0,
 $$
 $$
-\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\qquad
-\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,\qquad
-\vec\Upsilon_+^2=\vec\Upsilon_-^2=0,
+\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-},\qquad
+\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+},\qquad
+\vec\Pi_{\mathrm{nil},+}^2=\vec\Pi_{\mathrm{nil},-}^2=0,
 $$
 $$
-\vec\Upsilon_+\tilde\Pi_+=\vec\Upsilon_+,\qquad
-\vec\Upsilon_-\tilde\Pi_-=\vec\Upsilon_-,\qquad
-\vec\Upsilon_+\tilde\Pi_-=\vec\Upsilon_-\tilde\Pi_+=0 .
+\vec\Pi_{\mathrm{nil},+}\tilde\Pi_{\mathrm{id},+}=\vec\Pi_{\mathrm{nil},+},\qquad
+\vec\Pi_{\mathrm{nil},-}\tilde\Pi_{\mathrm{id},-}=\vec\Pi_{\mathrm{nil},-},\qquad
+\vec\Pi_{\mathrm{nil},+}\tilde\Pi_{\mathrm{id},-}=\vec\Pi_{\mathrm{nil},-}\tilde\Pi_{\mathrm{id},+}=0 .
 $$
 The two mixed units are nilpotent, and each pair multiplies to one of the idempotents.
 
 **The coordinates.** An element written in the frame is
 $$
-\tilde Q=P_+\tilde\Pi_++X_+\vec\Upsilon_++X_-\vec\Upsilon_-+P_-\tilde\Pi_-,
+\tilde Q=P_+\tilde\Pi_{\mathrm{id},++X}_+\vec\Pi_{\mathrm{nil},++X}_-\vec\Pi_{\mathrm{nil},-+P}_-\tilde\Pi_{\mathrm{id},-},
 \qquad P_\pm,X_\pm\in\mathbb{C},
 $$
 with
@@ -146,43 +146,43 @@ This is the coordinate identity, read in the standard pair.
 
 **The matrix-unit order.** The second order is
 $$
-\mathcal{P}'=(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-).
+\mathcal{P}'=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-}).
 $$
 The images of the four frame vectors are the four matrix units:
 $$
-\mathsf M_2(\tilde\Pi_+)=E_{11},\qquad
-\mathsf M_2(\vec\Upsilon_-)=E_{12},\qquad
-\mathsf M_2(\vec\Upsilon_+)=E_{21},\qquad
-\mathsf M_2(\tilde\Pi_-)=E_{22}.
+\mathsf M_2(\tilde\Pi_{\mathrm{id},+})=E_{11},\qquad
+\mathsf M_2(\vec\Pi_{\mathrm{nil},-})=E_{12},\qquad
+\mathsf M_2(\vec\Pi_{\mathrm{nil},+})=E_{21},\qquad
+\mathsf M_2(\tilde\Pi_{\mathrm{id},-})=E_{22}.
 $$
 In the order $\mathcal{P}$ the images are $(E_{11},E_{21},E_{12},E_{22})$; in the order $\mathcal{P}'$ they are $(E_{11},E_{12},E_{21},E_{22})$, the standard matrix-unit order. The two orders differ by the swap of the two nilpotents,
 $$
-\vec\Upsilon_+\longleftrightarrow\vec\Upsilon_-,
+\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\vec\Pi_{\mathrm{nil},-},
 $$
 which is the swap $\mathsf P$ of the $4\times4$ stitch. This is the only frame exchange that survives the compression.
 
 **The two ideal bases.** The left ideals and the right ideals have the bases
 $$
-S_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,\qquad
-S_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-,
+S_+=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},+},\qquad
+S_-=\mathbb{C}\vec\Pi_{\mathrm{nil},-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-},
 $$
 $$
-T_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-,\qquad
-T_-=\mathbb{C}\vec\Upsilon_+\oplus\mathbb{C}\tilde\Pi_-.
+T_+=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},-},\qquad
+T_-=\mathbb{C}\vec\Pi_{\mathrm{nil},+}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-}.
 $$
 The left bases are the two pairs of $\mathcal{P}$; the right bases are the two pairs of $\mathcal{P}'$. This is the origin of the transpose: the left matrix is read in the $\mathcal{P}$ pairing, the right matrix in the $\mathcal{P}'$ pairing, and the two pairings differ by the exchange of the nilpotents.
 
 ## The Left and Right Matrices
 
-**The left matrix.** On $S_+$, in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, left multiplication by $\tilde Q$ has the matrix $A$. On $S_-$, in the basis $(\vec\Upsilon_-,\tilde\Pi_-)$, it has the same matrix. The two columns in the first basis are
+**The left matrix.** On $S_+$, in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$, left multiplication by $\tilde Q$ has the matrix $A$. On $S_-$, in the basis $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$, it has the same matrix. The two columns in the first basis are
 $$
-\tilde Q\tilde\Pi_+=P_+\tilde\Pi_++X_+\vec\Upsilon_+,\qquad
-\tilde Q\vec\Upsilon_+=X_-\tilde\Pi_++P_-\vec\Upsilon_+,
+\tilde Q\tilde\Pi_{\mathrm{id},+}=P_+\tilde\Pi_{\mathrm{id},++X}_+\vec\Pi_{\mathrm{nil},+},\qquad
+\tilde Q\vec\Pi_{\mathrm{nil},+}=X_-\tilde\Pi_{\mathrm{id},++P}_-\vec\Pi_{\mathrm{nil},+},
 $$
 and the two columns in the second are
 $$
-\tilde Q\vec\Upsilon_-=P_+\vec\Upsilon_-+X_+\tilde\Pi_-,\qquad
-\tilde Q\tilde\Pi_-=X_-\vec\Upsilon_-+P_-\tilde\Pi_- .
+\tilde Q\vec\Pi_{\mathrm{nil},-}=P_+\vec\Pi_{\mathrm{nil},-+X}_+\tilde\Pi_{\mathrm{id},-},\qquad
+\tilde Q\tilde\Pi_{\mathrm{id},-}=X_-\vec\Pi_{\mathrm{nil},-+P}_-\tilde\Pi_{\mathrm{id},-} .
 $$
 In both bases the columns are $(P_+,X_+)$ and $(X_-,P_-)$, so
 $$
@@ -190,15 +190,15 @@ L(\tilde Q)=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix}=A.
 $$
 The computation in the first basis is the left action on a couple; the second basis repeats it.
 
-**The right matrix.** On $T_+$, in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$, right multiplication by $\tilde Q$ has the matrix $A^{\mathsf T}$. On $T_-$, in the basis $(\vec\Upsilon_+,\tilde\Pi_-)$, it has the same matrix. The two columns in the first basis are
+**The right matrix.** On $T_+$, in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-})$, right multiplication by $\tilde Q$ has the matrix $A^{\mathsf T}$. On $T_-$, in the basis $(\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$, it has the same matrix. The two columns in the first basis are
 $$
-\tilde\Pi_+\tilde Q=P_+\tilde\Pi_++X_-\vec\Upsilon_-,\qquad
-\vec\Upsilon_-\tilde Q=X_+\tilde\Pi_++P_-\vec\Upsilon_-,
+\tilde\Pi_{\mathrm{id},+}\tilde Q=P_+\tilde\Pi_{\mathrm{id},++X}_-\vec\Pi_{\mathrm{nil},-},\qquad
+\vec\Pi_{\mathrm{nil},-}\tilde Q=X_+\tilde\Pi_{\mathrm{id},++P}_-\vec\Pi_{\mathrm{nil},-},
 $$
 and the two columns in the second are
 $$
-\vec\Upsilon_+\tilde Q=P_+\vec\Upsilon_++X_-\tilde\Pi_-,\qquad
-\tilde\Pi_-\tilde Q=X_+\vec\Upsilon_++P_-\tilde\Pi_- .
+\vec\Pi_{\mathrm{nil},+}\tilde Q=P_+\vec\Pi_{\mathrm{nil},++X}_-\tilde\Pi_{\mathrm{id},-},\qquad
+\tilde\Pi_{\mathrm{id},-}\tilde Q=X_+\vec\Pi_{\mathrm{nil},++P}_-\tilde\Pi_{\mathrm{id},-} .
 $$
 In both bases the columns are $(P_+,X_-)$ and $(X_+,P_-)$, so
 $$
@@ -222,7 +222,7 @@ $$
 
 **A note on the element.** The matrix $A$ is the matrix of the element itself, not a regular matrix on a larger space. The left action is the multiplication by $A$ on the column space of the left ideal; the right action is the multiplication by $A^{\mathsf T}$ on the row space of the right ideal. There is no ambient $4\times4$ space in the compressed model, and the two actions are not two operators on one space.
 
-**Against the $4\times4$ article.** There the same two matrices are §*The Left Family* and §*The Right Family*, displayed as the Kronecker products $\mathrm I_2\otimes A$ and $A^{\mathsf T}\otimes\mathrm I_2$. The compression keeps the block and drops the identity factor. The two bases used above are the two columns of that repeated block: the first block acts on $(\tilde\Pi_+,\vec\Upsilon_+)$, the second on $(\vec\Upsilon_-,\tilde\Pi_-)$, and the two orders $\mathcal{P}$ and $\mathcal{P}'$ of §*The Peirce Basis and the Two Orders* differ by the swap of the two nilpotents.
+**Against the $4\times4$ article.** There the same two matrices are §*The Left Family* and §*The Right Family*, displayed as the Kronecker products $\mathrm I_2\otimes A$ and $A^{\mathsf T}\otimes\mathrm I_2$. The compression keeps the block and drops the identity factor. The two bases used above are the two columns of that repeated block: the first block acts on $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$, the second on $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$, and the two orders $\mathcal{P}$ and $\mathcal{P}'$ of §*The Peirce Basis and the Two Orders* differ by the swap of the two nilpotents.
 
 ## The Images of the Four Units
 
@@ -305,7 +305,7 @@ X_+\longleftrightarrow X_- .
 $$
 The transpose is the exchange of the two nilpotent coordinates, with the two idempotent coordinates fixed.
 
-**Why the transpose.** The left ideal is a space of columns: the first column of $A$ is the image of $\tilde\Pi_+$, the second the image of $\vec\Upsilon_+$. The right ideal is a space of rows: the first row of $A$ is the image of $\tilde\Pi_+$, the second the image of $\vec\Upsilon_-$. Writing a row as a column transposes the matrix. The two bases differ by the exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$, and the exchange of the two nilpotents is exactly the exchange of the row index and the column index.
+**Why the transpose.** The left ideal is a space of columns: the first column of $A$ is the image of $\tilde\Pi_{\mathrm{id},+}$, the second the image of $\vec\Pi_{\mathrm{nil},+}$. The right ideal is a space of rows: the first row of $A$ is the image of $\tilde\Pi_{\mathrm{id},+}$, the second the image of $\vec\Pi_{\mathrm{nil},-}$. Writing a row as a column transposes the matrix. The two bases differ by the exchange of $\vec\Pi_{\mathrm{nil},+}$ and $\vec\Pi_{\mathrm{nil},-}$, and the exchange of the two nilpotents is exactly the exchange of the row index and the column index.
 
 **Against the $4\times4$ article.** There the stitch is
 $$
@@ -398,7 +398,7 @@ C_{\Pi}=\frac12\begin{pmatrix}1&0&0&1\\0&i&i&0\\0&1&-1&0\\i&0&0&-i\end{pmatrix},
 \qquad
 \det C_{\Pi}=-\tfrac14 .
 $$
-The matrix $C_{\Pi}$ mixes the two Peirce pairs: its columns are the four frame vectors, and the compression keeps one pair, so $C_{\Pi}$ has no $2\times2$ image. The $2\times2$ model is already in the matrix-unit frame: $\mathsf M_2(\tilde Q)$ is the matrix of the left action in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, and its transpose is the matrix of the right action in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$. The switch of the compressed model is the identity. The only surviving exchange is the swap of the two nilpotents, $\mathcal{P}\leftrightarrow\mathcal{P}'$, which is what makes the right block the transpose of the left; that transpose is already the stitch.
+The matrix $C_{\Pi}$ mixes the two Peirce pairs: its columns are the four frame vectors, and the compression keeps one pair, so $C_{\Pi}$ has no $2\times2$ image. The $2\times2$ model is already in the matrix-unit frame: $\mathsf M_2(\tilde Q)$ is the matrix of the left action in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$, and its transpose is the matrix of the right action in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-})$. The switch of the compressed model is the identity. The only surviving exchange is the swap of the two nilpotents, $\mathcal{P}\leftrightarrow\mathcal{P}'$, which is what makes the right block the transpose of the left; that transpose is already the stitch.
 
 **What does not compress.** The two $4\times4$ families commute, $L(\tilde Q_1)R(\tilde Q_2)=R(\tilde Q_2)L(\tilde Q_1)$, because they act on the two tensor factors. The two $2\times2$ matrices need not commute, and they are not operators on one space. The mixed trace
 $$
@@ -424,7 +424,7 @@ R(\tilde Q^{-1})=R(\tilde Q)^{-1}.
 $$
 The reversal is the reversal of the order of the factors in the product $X\tilde Q$.
 
-**No commutation.** The matrices $A$ and $A^{\mathsf T}$ need not commute. For $\tilde Q=\vec\Upsilon_+$,
+**No commutation.** The matrices $A$ and $A^{\mathsf T}$ need not commute. For $\tilde Q=\vec\Pi_{\mathrm{nil},+}$,
 $$
 A=E_{21}=\begin{pmatrix}0&0\\1&0\end{pmatrix},\qquad
 A^{\mathsf T}=E_{12}=\begin{pmatrix}0&1\\0&0\end{pmatrix},
@@ -812,7 +812,7 @@ of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector spli
 
 The $2\times2$ Pauli representation is the compression of the $4\times4$ one, and its continuation at the element size. The left regular matrix is $\mathrm I_2\otimes A$ and the right regular matrix is $A^{\mathsf T}\otimes\mathrm I_2$; the block $A=\mathsf M_2(\tilde Q)$ occurs twice in the left and the block $A^{\mathsf T}$ occurs twice in the right, and the second block is a copy. Keeping one block gives the $2\times2$ model.
 
-The left/right split survives on two different planes. The left action on $S_+=\mathbb{B}\tilde\Pi_+$, in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, has matrix $A$; the right action on $T_+=\tilde\Pi_+\mathbb{B}$, in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$, has matrix $A^{\mathsf T}$. The stitch is the transpose. The two matrices need not commute, because they are not operators on one space.
+The left/right split survives on two different planes. The left action on $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$, in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$, has matrix $A$; the right action on $T_+=\tilde\Pi_{\mathrm{id},+}\mathbb{B}$, in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-})$, has matrix $A^{\mathsf T}$. The stitch is the transpose. The two matrices need not commute, because they are not operators on one space.
 
 The compression keeps the product, the trace, the determinant and the six subspaces. The normal forms of this article are entry-size statements: the spectral projectors $\rho_\pm$ and the diagonalising matrix $\mathsf C_Q$ of the element, the adjugate and the inverse, and the four norms, each of them the $2\times2$ form of a $4\times4$ object. The left product is multiplicative, the right product is anti-multiplicative, the trace is $2Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}$, and the eigenvalues are $Q_t\pm iB$, each once. The $4\times4$ quantities are the doubled ones: trace $4Q_t$, determinant $\langle\tilde Q\rangle_{\natural}^2$, each eigenvalue twice, rank twice. The axis-free basis switch does not compress: the $2\times2$ model is already the matrix-unit frame, and the switch is the identity. The only surviving exchange is the swap of the two nilpotents, which is what makes the right block the transpose of the left.
 
@@ -825,12 +825,12 @@ The compression keeps the product, the trace, the determinant and the six subspa
 | $\tilde Q=Q_te_t+\vec Q$ | an element, $Q_\mu=q_\mu+iq'_\mu$ |
 | $B^2$, $\langle\tilde Q\rangle_{\natural}$ | $Q_x^2+Q_y^2+Q_z^2$ and $Q_t^2+B^2$ |
 | $\vec{Ζ}=i\vec e_z$ | the root, $\vec{Ζ}^2=e_t$ |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | the standard idempotents |
-| $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$ | the standard nilpotents |
-| $\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ | the Peirce frame |
-| $\mathcal{P}'=(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ | the matrix-unit order |
-| $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the minimal left ideals |
-| $T_\pm=\tilde\Pi_\pm\mathbb{B}$ | the minimal right ideals |
+| $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z)$ | the standard idempotents |
+| $\vec\Pi_{\mathrm{nil},\pm}=\tfrac12(i\vec e_x\pm\vec e_y)$ | the standard nilpotents |
+| $\mathcal{P}=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ | the Peirce frame |
+| $\mathcal{P}'=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$ | the matrix-unit order |
+| $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | the minimal left ideals |
+| $T_\pm=\tilde\Pi_{\mathrm{id},\pm}\mathbb{B}$ | the minimal right ideals |
 | $P_\pm,X_\pm$ | the Peirce coordinates |
 | $A=\mathsf M_2(\tilde Q)=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix}$ | the $2\times2$ image |
 | $L(\tilde Q)=A$, $R(\tilde Q)=A^{\mathsf T}$ | the left and right matrices |

@@ -49,13 +49,13 @@ $$
 
 Its minimal polynomial is $X-Q_t$, of degree one, so the matrix is derogatory and $C(\tilde Q)\neq\mathbb{C}[\tilde Q]$: the polynomial algebra is the scalar line itself, of complex dimension one, while the centraliser has dimension four. The double centraliser is the centre, not the element: the central element carries no information.
 
-**Third case: spectrally degenerate and non-central, $B^2=0$ and $\vec Q\neq0$.** Write $\tilde Q=Q_te_t+\vec\Upsilon$ with $\vec\Upsilon=\vec Q\neq0$ and $\vec\Upsilon^2=0$. The minimal polynomial is $(X-Q_t)^2$, of degree two, so the matrix is again nonderogatory, and
+**Third case: spectrally degenerate and non-central, $B^2=0$ and $\vec Q\neq0$.** Write $\tilde Q=Q_te_t+\vec\Pi_{\mathrm{nil}}$ with $\vec\Pi_{\mathrm{nil}}=\vec Q\neq0$ and $\vec\Pi_{\mathrm{nil}}^2=0$. The minimal polynomial is $(X-Q_t)^2$, of degree two, so the matrix is again nonderogatory, and
 
 $$
 C(\tilde Q)=\mathbb{C}[\tilde Q]\cong\mathbb{C}[X]/((X-Q_t)^2)\cong\mathbb{C}[\varepsilon]/(\varepsilon^2),
 $$
 
-the **dual numbers**, of complex dimension two. The isomorphism sends $\varepsilon$ to $\vec\Upsilon=\tilde Q-Q_te_t$.
+the **dual numbers**, of complex dimension two. The isomorphism sends $\varepsilon$ to $\vec\Pi_{\mathrm{nil}}=\tilde Q-Q_te_t$.
 
 The three cases are exhaustive: either $B^2\neq0$, or $B^2=0$ and $\vec Q$ is zero or non-zero. In both non-central cases the centraliser is two-dimensional, and the type is decided by the discriminant: $\mathbb{C}\times\mathbb{C}$ off the cone, the dual numbers on it. The central case is the whole algebra.
 
@@ -83,14 +83,14 @@ The double centraliser is the algebra-side statement of the module classificatio
 
 The centraliser is what makes the semisimple–nilpotent split unique.
 
-Let $\tilde Q=\tilde Q_s+\vec\Upsilon$ with $\tilde Q_s$ semisimple, $\vec\Upsilon$ nilpotent and $\tilde Q_s\vec\Upsilon=\vec\Upsilon\tilde Q_s$. Both $\tilde Q_s$ and $\vec\Upsilon$ are polynomials in $\tilde Q$ by the Chinese-remainder construction on the two eigenvalues, and $\vec\Upsilon$ has zero constant term; hence both lie in $\mathbb{C}[\tilde Q]=C(\tilde Q)$. The centraliser is commutative, so any two such decompositions commute, and their semisimple and nilpotent parts agree by the uniqueness of the Jordan decomposition in a commutative algebra.
+Let $\tilde Q=\tilde Q_s+\vec\Pi_{\mathrm{nil}}$ with $\tilde Q_s$ semisimple, $\vec\Pi_{\mathrm{nil}}$ nilpotent and $\tilde Q_s\vec\Pi_{\mathrm{nil}}=\vec\Pi_{\mathrm{nil}}\tilde Q_s$. Both $\tilde Q_s$ and $\vec\Pi_{\mathrm{nil}}$ are polynomials in $\tilde Q$ by the Chinese-remainder construction on the two eigenvalues, and $\vec\Pi_{\mathrm{nil}}$ has zero constant term; hence both lie in $\mathbb{C}[\tilde Q]=C(\tilde Q)$. The centraliser is commutative, so any two such decompositions commute, and their semisimple and nilpotent parts agree by the uniqueness of the Jordan decomposition in a commutative algebra.
 
 The two explicit cases are these.
 
-- $B^2\neq0$: $\tilde Q$ is semisimple already, so $\tilde Q_s=\tilde Q$ and $\vec\Upsilon=0$.
-- $B^2=0$: $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$, so $\tilde Q_s=Q_te_t$ and $\vec\Upsilon=\vec Q$. This covers both halves of the cone; at the centre $\vec Q=0$ and the nilpotent part vanishes.
+- $B^2\neq0$: $\tilde Q$ is semisimple already, so $\tilde Q_s=\tilde Q$ and $\vec\Pi_{\mathrm{nil}}=0$.
+- $B^2=0$: $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$, so $\tilde Q_s=Q_te_t$ and $\vec\Pi_{\mathrm{nil}}=\vec Q$. This covers both halves of the cone; at the centre $\vec Q=0$ and the nilpotent part vanishes.
 
-The four types of the split — scalar, semisimple, Jordan, nilpotent — are the four positions of $(\tilde Q_s,\vec\Upsilon)$ in these two cases. They are stated, with the corner pattern, in *The Semisimple–Nilpotent Split of a Biquaternion*.
+The four types of the split — scalar, semisimple, Jordan, nilpotent — are the four positions of $(\tilde Q_s,\vec\Pi_{\mathrm{nil}})$ in these two cases. They are stated, with the corner pattern, in *The Semisimple–Nilpotent Split of a Biquaternion*.
 
 ## Summary
 

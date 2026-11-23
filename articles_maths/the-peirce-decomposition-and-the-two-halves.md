@@ -123,18 +123,18 @@ so the square lands in the symmetric half, in the negative part of the cone. So 
 **At $n=2$ with $r=1$ the six pieces are all one-dimensional.** The corners are
 
 $$
-C_{++}=\mathbb{R}\tilde\Pi_+,\qquad C_{--}=\mathbb{R}\tilde\Pi_-,\qquad C_{+-}=\mathbb{R}u,\qquad C_{-+}=\mathbb{R}v,
+C_{++}=\mathbb{R}\tilde\Pi_{\mathrm{id},+},\qquad C_{--}=\mathbb{R}\tilde\Pi_{\mathrm{id},-},\qquad C_{+-}=\mathbb{R}u,\qquad C_{-+}=\mathbb{R}v,
 $$
 
-with $u$ and $v$ the two companion nilpotents, and the four dimensions add to $4=n^{2}$. The symmetric parts are $\mathbb{R}\tilde\Pi_+$, $\mathbb{R}\tilde\Pi_-$, $\mathbb{R}(u+v)$ and the antisymmetric part is $\mathbb{R}(u-v)$, which is one-dimensional and is the rotation line.
+with $u$ and $v$ the two companion nilpotents, and the four dimensions add to $4=n^{2}$. The symmetric parts are $\mathbb{R}\tilde\Pi_{\mathrm{id},+}$, $\mathbb{R}\tilde\Pi_{\mathrm{id},-}$, $\mathbb{R}(u+v)$ and the antisymmetric part is $\mathbb{R}(u-v)$, which is one-dimensional and is the rotation line.
 
-**The identification of the symmetric part is the Pauli computation.** With $\tilde\Pi_\pm=\tfrac12(\mathrm{I}\pm\sigma_3)$ and the nilpotents proportional to $\sigma_1\pm i\sigma_2$,
+**The identification of the symmetric part is the Pauli computation.** With $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(\mathrm{I}\pm\sigma_3)$ and the nilpotents proportional to $\sigma_1\pm i\sigma_2$,
 
 $$
 u+v\propto\sigma_1\ \text{(symmetric)},\qquad u-v\propto i\sigma_2\ \text{(antisymmetric)},
 $$
 
-so the two mixed corners produce the symmetric mixing and the antisymmetric difference, and the whole algebra is $\operatorname{Sym}_2\oplus\operatorname{Skew}_2$ with dimensions $3+1$. The computation confirms that $u+v$ is symmetric and $u-v$ is antisymmetric when the frame is normalised so that $v=u^{\mathsf T}$ and $uv=\tilde\Pi_+$.
+so the two mixed corners produce the symmetric mixing and the antisymmetric difference, and the whole algebra is $\operatorname{Sym}_2\oplus\operatorname{Skew}_2$ with dimensions $3+1$. The computation confirms that $u+v$ is symmetric and $u-v$ is antisymmetric when the frame is normalised so that $v=u^{\mathsf T}$ and $uv=\tilde\Pi_{\mathrm{id},+}$.
 
 **The biquaternion frame is the common refinement.** The four corners $\mathbb{B}_{++}$, $\mathbb{B}_{+-}$, $\mathbb{B}_{-+}$ and $\mathbb{B}_{--}$ are the four Peirce pieces, and the split into halves collects them as $\mathbb{B}_{++}\oplus\mathbb{B}_{--}\oplus(\mathbb{B}_{+-}\oplus\mathbb{B}_{-+})^{s}$ against $(\mathbb{B}_{+-}\oplus\mathbb{B}_{-+})^{a}$. So the biquaternion Peirce basis and the symmetric-antisymmetric split are the two decompositions of the article, and their crossing is the four-term count of the frame.
 

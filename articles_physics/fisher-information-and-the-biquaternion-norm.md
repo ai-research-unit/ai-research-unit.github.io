@@ -115,10 +115,10 @@ and the finite distance along a path is the integral of $ds$. The metric is inva
 
 ### The Spectral Family
 
-The state carries a natural classical distribution: its two eigenvalues in its own basis. Write $\vec u_s = \vec s_{\Psi}/|\vec s_{\Psi}|$ for a state with $\vec s_{\Psi}\neq0$ and let $\tilde\Pi_{1,2}(\vec u_s)$ be the corresponding idempotents, so that
+The state carries a natural classical distribution: its two eigenvalues in its own basis. Write $\vec u_s = \vec s_{\Psi}/|\vec s_{\Psi}|$ for a state with $\vec s_{\Psi}\neq0$ and let $\tilde\Pi_{\mathrm{id},1,2}(\vec u_s)$ be the corresponding idempotents, so that
 
 $$
-\tilde{Ϛ}_{\Psi} = \lambda_+\tilde\Pi_1(\vec u_s) + \lambda_-\tilde\Pi_2(\vec u_s), \qquad
+\tilde{Ϛ}_{\Psi} = \lambda_+\tilde\Pi_{\mathrm{id},1}(\vec u_s) + \lambda_-\tilde\Pi_{\mathrm{id},2}(\vec u_s), \qquad
 \lambda_\pm = \tfrac{1}{2}\left(1\pm|\vec s_{\Psi}|\right).
 $$
 
@@ -142,7 +142,7 @@ $$
 \boxed{\;F_s(s) = \frac{1}{1-s^2} = \frac{1}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}\;}.
 $$
 
-**The Fisher information of the spectral family is the reciprocal of the biquaternion norm.** This is the central identity of the article, and it is a statement about the algebra: the denominator $1-s^2$ is the scalar part of the biquaternion norm of the state, read from $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}(1-s^2)e_t$, so the whole expression is a function of the state's quadratic invariant. The evaluation is elementary and was checked on the interior superposition $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(\tilde\Pi_1(\vec e_x)+\tilde\Pi_1(\vec e_y))$, where $r^2 = \tfrac{1}{2}$, $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{8}e_t$, and both sides give $2$.
+**The Fisher information of the spectral family is the reciprocal of the biquaternion norm.** This is the central identity of the article, and it is a statement about the algebra: the denominator $1-s^2$ is the scalar part of the biquaternion norm of the state, read from $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}(1-s^2)e_t$, so the whole expression is a function of the state's quadratic invariant. The evaluation is elementary and was checked on the interior superposition $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(\tilde\Pi_{\mathrm{id},1}(\vec e_x)+\tilde\Pi_{\mathrm{id},1}(\vec e_y))$, where $r^2 = \tfrac{1}{2}$, $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{8}e_t$, and both sides give $2$.
 
 ### The Information Metric of the Sector
 
@@ -273,7 +273,7 @@ The bound also explains the rank-one degeneracy of the classical metric from the
 
 ## What Is Derived and What Is Imported
 
-**Derived from the algebra.** The biquaternion norm of a difference, $\langle\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2}\rangle_{\natural} = -\tfrac{1}{4}|\vec s_{\Psi}-\vec s|^2 e_t$, and its equivalence with the trace-pairing distance; the spectral decomposition of the state and the eigenvalue pair $(\lambda_+,\lambda_-)$; the Fisher information of the spectral family, $F_s = 1/(1-s^2)$; the identification of that denominator with the biquaternion-norm defect, $F_s = 1/(4\,\mathrm{Sc}\,\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural})$; the rank-one information metric $g_{ij} = \vec{u_s}_i\vec{u_s}_j/(1-s^2)$; the general measurement formula; and the Fisher–Rao distance $\arcsin s$ with the finite boundary distance $\pi/2$. All of these are worked out in the basis and, where numerical, checked on the interior superposition $\tfrac{1}{2}(\tilde\Pi_1(\vec e_x)+\tilde\Pi_1(\vec e_y))$ rather than on a pure state.
+**Derived from the algebra.** The biquaternion norm of a difference, $\langle\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2}\rangle_{\natural} = -\tfrac{1}{4}|\vec s_{\Psi}-\vec s|^2 e_t$, and its equivalence with the trace-pairing distance; the spectral decomposition of the state and the eigenvalue pair $(\lambda_+,\lambda_-)$; the Fisher information of the spectral family, $F_s = 1/(1-s^2)$; the identification of that denominator with the biquaternion-norm defect, $F_s = 1/(4\,\mathrm{Sc}\,\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural})$; the rank-one information metric $g_{ij} = \vec{u_s}_i\vec{u_s}_j/(1-s^2)$; the general measurement formula; and the Fisher–Rao distance $\arcsin s$ with the finite boundary distance $\pi/2$. All of these are worked out in the basis and, where numerical, checked on the interior superposition $\tfrac{1}{2}(\tilde\Pi_{\mathrm{id},1}(\vec e_x)+\tilde\Pi_{\mathrm{id},1}(\vec e_y))$ rather than on a pure state.
 
 **Imported from standard mathematics and physics.** The definition of the classical Fisher information and its reparametrisation invariance; the Cramér–Rao bound; the theorem that the Fisher information is the Hessian of the relative entropy; the Braunstein–Caves bound and the formula for the quantum Fisher information of a pure-state family, with the symmetric-logarithmic-derivative normalization $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}L^2)$ and the factor of four that relates it to the Bures metric of the standard geometry; and the Bures and Fubini–Study metrics. Each is transcribed as standard.
 

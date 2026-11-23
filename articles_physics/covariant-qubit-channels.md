@@ -100,7 +100,7 @@ The semigroup law is inherited, not reproved. $\mathcal E_{\lambda_1}\circ\mathc
 
 ## The Staircase of Choi Ranks
 
-The price of abandoning multiplicativity is counted by the Choi rank, and the count is the size of the environment. The Choi rank is the minimal number of Kraus operators, and by Stinespring it is also the minimal environment dimension in a dilation $\mathcal E(\tilde{Ϛ})=\operatorname{tr}_E\bigl(\tilde W(\tilde{Ϛ}\otimes\tilde\Pi_0)\tilde W^{*}\bigr)$.
+The price of abandoning multiplicativity is counted by the Choi rank, and the count is the size of the environment. The Choi rank is the minimal number of Kraus operators, and by Stinespring it is also the minimal environment dimension in a dilation $\mathcal E(\tilde{Ϛ})=\operatorname{tr}_E\bigl(\tilde W(\tilde{Ϛ}\otimes\tilde\Pi_{\mathrm{id},0})\tilde W^{*}\bigr)$.
 
 | channel | Choi rank | minimal dilated algebra | real dimension |
 | --- | --- | --- | --- |

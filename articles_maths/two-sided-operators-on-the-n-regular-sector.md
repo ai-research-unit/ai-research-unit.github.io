@@ -541,11 +541,11 @@ so the form is multiplied by $\varrho^{4}$ and the volume by $\varrho^{8}$; the 
 
 ## The Wall $B^{2}=0$: the Unipotent Case
 
-On the wall the element is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$, and the operator is a positive scalar times a unipotent operator: $\mathrm{Sd}_{\tilde Q}=\lvert Q_t\rvert^{2}\,\mathrm{Sd}_{\tilde Q_0}$ with $\tilde Q_0=e_t+\vec\Upsilon$. The scalar is $\lvert Q_t\rvert^{2}$, not $Q_t^{2}$, because the operator carries the Hermitian conjugate on the right. The scalar line $\vec\Upsilon=0$ is the case $\mathrm{Sd}_{\tilde Q}=\lvert Q_t\rvert^{2}\mathrm{id}$, with geometric multiplicity four and Jordan type $1+1+1+1$; the sections below describe the Jordan part $\vec\Upsilon\neq0$.
+On the wall the element is $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}^{2}=0$, and the operator is a positive scalar times a unipotent operator: $\mathrm{Sd}_{\tilde Q}=\lvert Q_t\rvert^{2}\,\mathrm{Sd}_{\tilde Q_0}$ with $\tilde Q_0=e_t+\vec\Pi_{\mathrm{nil}}$. The scalar is $\lvert Q_t\rvert^{2}$, not $Q_t^{2}$, because the operator carries the Hermitian conjugate on the right. The scalar line $\vec\Pi_{\mathrm{nil}}=0$ is the case $\mathrm{Sd}_{\tilde Q}=\lvert Q_t\rvert^{2}\mathrm{id}$, with geometric multiplicity four and Jordan type $1+1+1+1$; the sections below describe the Jordan part $\vec\Pi_{\mathrm{nil}}\neq0$.
 
 ### The Unipotent Operator
 
-Let $A=L_{\vec\Upsilon}$ and $B=R_{\vec\Upsilon^{*}}$, the left multiplication by $\vec\Upsilon$ and the right multiplication by $\vec\Upsilon^{*}$. They commute, and
+Let $A=L_{\vec\Pi_{\mathrm{nil}}}$ and $B=R_{\vec\Pi_{\mathrm{nil}}^{*}}$, the left multiplication by $\vec\Pi_{\mathrm{nil}}$ and the right multiplication by $\vec\Pi_{\mathrm{nil}}^{*}$. They commute, and
 
 $$
 A^2=0,
@@ -571,7 +571,7 @@ $$
 \mathsf N^3=3AB(A+B)=0,
 $$
 
-because $A^2=B^2=0$. The rank of $A$ is two, and the rank of $B$ is two; their product $AB$ has rank one because the image of $B$ is the right ideal $\vec\Upsilon^{*}\mathbb{B}$ and the kernel of $A$ is the right annihilator of $\vec\Upsilon$, whose intersection with that image is one complex line. Hence $\operatorname{rank}\mathsf N=2$ and $\operatorname{rank}\mathsf N^2=1$. A nilpotent on a four-dimensional space with $\mathsf N^3=0$ and $\operatorname{rank}\mathsf N^2=1$ has one block of size three and one of size one.
+because $A^2=B^2=0$. The rank of $A$ is two, and the rank of $B$ is two; their product $AB$ has rank one because the image of $B$ is the right ideal $\vec\Pi_{\mathrm{nil}}^{*}\mathbb{B}$ and the kernel of $A$ is the right annihilator of $\vec\Pi_{\mathrm{nil}}$, whose intersection with that image is one complex line. Hence $\operatorname{rank}\mathsf N=2$ and $\operatorname{rank}\mathsf N^2=1$. A nilpotent on a four-dimensional space with $\mathsf N^3=0$ and $\operatorname{rank}\mathsf N^2=1$ has one block of size three and one of size one.
 
 Consequently $\mathrm{Sd}_{\tilde Q}$ has the single eigenvalue $|Q_t|^2$, with one $3\times3$ Jordan block and one $1\times1$ block. Its determinant is
 
@@ -585,9 +585,9 @@ The fixed subspace of $\mathrm{Sd}_{\tilde U}$ is two-dimensional. It is not the
 
 ### The Exponential at the Wall
 
-**The exponent of the two-sided operator.** Write $\vec\Upsilon=\vec A+i\vec B$ with $\vec A$ and $\vec B$ real, so that $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$, and put $P=L_{\vec\Upsilon}$ and $Q=R_{\vec\Upsilon^{*}}$, the two operators called $A$ and $B$ in §*The Unipotent Operator*. They commute and square to zero. Since $\tilde U=e^{\vec\Upsilon}$ and $\tilde U^{*}=e^{\vec\Upsilon^{*}}$,
+**The exponent of the two-sided operator.** Write $\vec\Pi_{\mathrm{nil}}=\vec A+i\vec B$ with $\vec A$ and $\vec B$ real, so that $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$, and put $P=L_{\vec\Pi_{\mathrm{nil}}}$ and $Q=R_{\vec\Pi_{\mathrm{nil}}^{*}}$, the two operators called $A$ and $B$ in §*The Unipotent Operator*. They commute and square to zero. Since $\tilde U=e^{\vec\Pi_{\mathrm{nil}}}$ and $\tilde U^{*}=e^{\vec\Pi_{\mathrm{nil}}^{*}}$,
 $$
-\mathrm{Sd}_{\tilde U}=L_{e^{\vec\Upsilon}}\circ R_{e^{\vec\Upsilon^{*}}}=e^{P}e^{Q}=e^{P+Q},
+\mathrm{Sd}_{\tilde U}=L_{e^{\vec\Pi_{\mathrm{nil}}}}\circ R_{e^{\vec\Pi_{\mathrm{nil}}^{*}}}=e^{P}e^{Q}=e^{P+Q},
 $$
 and $(P+Q)^2=2PQ$ and $(P+Q)^3=0$, as §*The Unipotent Operator* proves. Hence
 $$
@@ -606,9 +606,9 @@ for every complex $t$.
 
 *Proof.* $\mathrm{Sd}_{\tilde Q}=\lvert Q_t\rvert^{2}(I+\mathsf N)$, and $I$ commutes with $\mathsf N$; hence the exponential is $e^{t\lvert Q_t\rvert^{2}}\exp(t\lvert Q_t\rvert^{2}\mathsf N)$, and the second factor truncates at $\mathsf N^3=0$.
 
-**A null rotation.** On $\mathbb{B}_{\Phi}$ the factor $\tilde U$ has norm one, so $\mathrm{Sd}_{\tilde U}$ preserves the Minkowski form $\langle X\rangle_{\natural}$; the path $\mathrm{Sd}_{e^{t\vec\Upsilon}}$, $0\le t\le1$, connects it to the identity, so it is a proper orthochronous Lorentz transformation. Its single eigenvalue is $1$, and its Jordan form is one block of size three and one of size one. A Lorentz transformation of that type is a **null rotation** (a parabolic element): it fixes a null direction and shears the two transverse directions. The exponential displays the finite shear as $I+s\mathsf N+\frac{s^2}{2}\mathsf N^2$ with $s=t\lvert Q_t\rvert^2$. It contains no rotation angle and no rapidity; the two are locked to the single null parameter $a$, with $\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}=\sinh\frac{\theta_{\mathrm{rpd}}}{2}=a$. The modulus scales the shear, and the phase cancels.
+**A null rotation.** On $\mathbb{B}_{\Phi}$ the factor $\tilde U$ has norm one, so $\mathrm{Sd}_{\tilde U}$ preserves the Minkowski form $\langle X\rangle_{\natural}$; the path $\mathrm{Sd}_{e^{t\vec\Pi_{\mathrm{nil}}}}$, $0\le t\le1$, connects it to the identity, so it is a proper orthochronous Lorentz transformation. Its single eigenvalue is $1$, and its Jordan form is one block of size three and one of size one. A Lorentz transformation of that type is a **null rotation** (a parabolic element): it fixes a null direction and shears the two transverse directions. The exponential displays the finite shear as $I+s\mathsf N+\frac{s^2}{2}\mathsf N^2$ with $s=t\lvert Q_t\rvert^2$. It contains no rotation angle and no rapidity; the two are locked to the single null parameter $a$, with $\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}=\sinh\frac{\theta_{\mathrm{rpd}}}{2}=a$. The modulus scales the shear, and the phase cancels.
 
-**The rate is the square of the one-sided rate.** The two-sided operator carries $\vec\Upsilon$ in its left slot and $\vec\Upsilon^{*}$ in its right slot, so the scalar $Q_t$ appears once on each side and the modulus is squared; the one-sided operator carries the left slot only. This is the wall form of the doubling rule: on a vector the two slots add their exponents, and at the wall they add $\vec\Upsilon$ and $\vec\Upsilon^{*}$.
+**The rate is the square of the one-sided rate.** The two-sided operator carries $\vec\Pi_{\mathrm{nil}}$ in its left slot and $\vec\Pi_{\mathrm{nil}}^{*}$ in its right slot, so the scalar $Q_t$ appears once on each side and the modulus is squared; the one-sided operator carries the left slot only. This is the wall form of the doubling rule: on a vector the two slots add their exponents, and at the wall they add $\vec\Pi_{\mathrm{nil}}$ and $\vec\Pi_{\mathrm{nil}}^{*}$.
 
 
 ### The Polar Decomposition of the Two-Sided Operator
@@ -642,29 +642,29 @@ The fixed subspace is $\ker\mathsf N$, of dimension two. Put $\vec c=\vec A\time
 *Proof.* From $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$,
 
 $$
-\Upsilon\vec A=-a^2-i\vec A\times\vec B=\vec A\bar\Upsilon,\qquad
-\bar\Upsilon^2=0,
+\vec\Pi_{\mathrm{nil}}\vec A=-a^2-i\vec A\times\vec B=\vec A\vec\Pi_{\mathrm{nil}}^{*},\qquad
+{\vec\Pi_{\mathrm{nil}}^{*}}^{2}=0,
 $$
 
 and
 
 $$
-\Upsilon\vec c=-\vec B+i\vec A,\qquad
-\vec c\bar\Upsilon=\vec B+i\vec A.
+\vec\Pi_{\mathrm{nil}}\vec c=-\vec B+i\vec A,\qquad
+\vec c\vec\Pi_{\mathrm{nil}}^{*}=\vec B+i\vec A.
 $$
 
-Hence $\Upsilon X=\Upsilon+i\Upsilon\vec c=0$ and $X\bar\Upsilon=\bar\Upsilon+i\vec c\bar\Upsilon=0$. Therefore
+Hence $\vec\Pi_{\mathrm{nil}} X=\vec\Pi_{\mathrm{nil}}+i\vec\Pi_{\mathrm{nil}}\vec c=0$ and $X\vec\Pi_{\mathrm{nil}}^{*}=\vec\Pi_{\mathrm{nil}}^{*}+i\vec c\vec\Pi_{\mathrm{nil}}^{*}=0$. Therefore
 
 $$
 \mathrm{Sd}_{\tilde U}(\vec A)
-=\vec A+\Upsilon\vec A-\vec A\bar\Upsilon-\Upsilon\vec A\bar\Upsilon=\vec A,
+=\vec A+\vec\Pi_{\mathrm{nil}}\vec A-\vec A\vec\Pi_{\mathrm{nil}}^{*}-\vec\Pi_{\mathrm{nil}}\vec A\vec\Pi_{\mathrm{nil}}^{*}=\vec A,
 $$
 
-because the two middle terms are equal and cancel, and $\Upsilon\vec A\bar\Upsilon=\vec A\bar\Upsilon^2=0$; and
+because the two middle terms are equal and cancel, and $\vec\Pi_{\mathrm{nil}}\vec A\vec\Pi_{\mathrm{nil}}^{*}=\vec A{\vec\Pi_{\mathrm{nil}}^{*}}^{2}=0$; and
 
 $$
 \mathrm{Sd}_{\tilde U}(X)
-=X+\Upsilon X-X\bar\Upsilon-\Upsilon X\bar\Upsilon=X.
+=X+\vec\Pi_{\mathrm{nil}} X-X\vec\Pi_{\mathrm{nil}}^{*}-\vec\Pi_{\mathrm{nil}} X\vec\Pi_{\mathrm{nil}}^{*}=X.
 $$
 
 The vector $\vec A$ has zero scalar part and $X$ has scalar part one, so they are independent. Since $\ker\mathsf N$ is two-dimensional, they span it.
@@ -759,7 +759,7 @@ The phase is the one factor that the two-sided operator does not see. It is visi
 
 Off the wall the exponential is diagonalisable, with the eigenvalues $e^{t\lambda_i\bar\lambda_j}$, and its determinant is $\exp(4t\lvert Q_t\rvert^{2})$.
 
-On the wall $B^{2}=0$ the element is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $\mathrm{Sd}_{\tilde Q}=\lvert Q_t\rvert^{2}\mathrm{Sd}_{e_t+\vec\Upsilon}$. The exponential is $\exp(t\mathrm{Sd}_{\tilde Q})=e^{t\lvert Q_t\rvert^{2}}\bigl(I+t\lvert Q_t\rvert^{2}\mathsf N+\tfrac{t^{2}\lvert Q_t\rvert^{4}}{2}\mathsf N^{2}\bigr)$, a null rotation with the single eigenvalue $1$. The nilpotent part $\mathsf N=\mathrm{Sd}_{e_t+\vec\Upsilon}-I=A+B+AB$, with $A=L_{\vec\Upsilon}$ and $B=R_{\vec\Upsilon^{*}}$, satisfies $\mathsf N^{2}=2AB$, $\mathsf N^{3}=0$, $\operatorname{rank}\mathsf N=2$ and $\operatorname{rank}\mathsf N^{2}=1$: one Jordan block of size three and one of size one, eigenvalue $\lvert Q_t\rvert^{2}$, determinant $\lvert Q_t\rvert^{8}$. The fixed subspace is two-dimensional, spanned by the spacelike vector $\vec A$ and the null vector $e_t+i\vec c$ with $\vec c=\vec A\times\vec B/a^{2}$. The two spinor slots coalesce into the Jordan chain.
+On the wall $B^{2}=0$ the element is $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ and $\mathrm{Sd}_{\tilde Q}=\lvert Q_t\rvert^{2}\mathrm{Sd}_{e_t+\vec\Pi_{\mathrm{nil}}}$. The exponential is $\exp(t\mathrm{Sd}_{\tilde Q})=e^{t\lvert Q_t\rvert^{2}}\bigl(I+t\lvert Q_t\rvert^{2}\mathsf N+\tfrac{t^{2}\lvert Q_t\rvert^{4}}{2}\mathsf N^{2}\bigr)$, a null rotation with the single eigenvalue $1$. The nilpotent part $\mathsf N=\mathrm{Sd}_{e_t+\vec\Pi_{\mathrm{nil}}}-I=A+B+AB$, with $A=L_{\vec\Pi_{\mathrm{nil}}}$ and $B=R_{\vec\Pi_{\mathrm{nil}}^{*}}$, satisfies $\mathsf N^{2}=2AB$, $\mathsf N^{3}=0$, $\operatorname{rank}\mathsf N=2$ and $\operatorname{rank}\mathsf N^{2}=1$: one Jordan block of size three and one of size one, eigenvalue $\lvert Q_t\rvert^{2}$, determinant $\lvert Q_t\rvert^{8}$. The fixed subspace is two-dimensional, spanned by the spacelike vector $\vec A$ and the null vector $e_t+i\vec c$ with $\vec c=\vec A\times\vec B/a^{2}$. The two spinor slots coalesce into the Jordan chain.
 
 ## Summary of Notation
 
@@ -786,7 +786,7 @@ On the wall $B^{2}=0$ the element is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $\math
 | $\Delta_{\mathrm{rep}},\bar\Delta_{\mathrm{rep}}$ | the defining representation on $S$ and its conjugate |
 | $A$ in the doubling rule | the generator of the factor, $\mathrm{Sd}_F(\tilde X)=\exp(tA)\tilde X\exp(tA^{*})$ |
 | $\mathsf M^{\tilde Q}$ | the eigenbasis matrix model, not the Pauli model $\mathsf M_2$ |
-| $\tilde\Pi_\pm$, $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the eigenprojections and the two left ideals of the one-sided reading (Peirce index) |
+| $\tilde\Pi_{\mathrm{id},\pm}$, $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | the eigenprojections and the two left ideals of the one-sided reading (Peirce index) |
 | $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$ | the rapidity and the rotation angle |
 | $B_\pm$ | the $4\times4$ matrices of the boost on $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ |
 | $\mathsf R(\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ | the Rodrigues rotation matrix of the rotor |

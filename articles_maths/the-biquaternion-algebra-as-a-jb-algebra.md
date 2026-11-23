@@ -119,13 +119,13 @@ $$
 
 *Proof.* The state space is the base of the cone, cut by the hyperplane $2\mathrm{Sc}=1$. A point of a base is extreme exactly when the ray through it is an extreme ray of the cone, which is the elementary part of the Choquet theory of *Cones, Extremal Rays and the Choquet Theory*. The extreme rays of the cone of squares of $H_2(\mathbb{C})$ are the rays of the rank-one positive semidefinite matrices, because a positive semidefinite matrix of rank at least two is a sum of two non-proportional positive semidefinite matrices. The rank-one elements of trace one are therefore the extreme points, and those are $\tfrac12(e_t+i\vec u)$ with $\lvert\vec u\rvert=1$: the idempotents of $H_2(\mathbb{C})$ are $0$, $e_t$ and the rank-one elements, and a rank-one idempotent of trace one has that form. Verified on one hundred unit vectors, the idempotency residual being $1.1\times10^{-16}$ and the trace one.
 
-**The defect of an idempotent candidate is a scalar.** For $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\lvert\vec u\rvert$ not one,
+**The defect of an idempotent candidate is a scalar.** For $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+i\vec u)$ with $\lvert\vec u\rvert$ not one,
 $$
-\tilde\Pi^{2}-\tilde\Pi=\tfrac14\bigl(\lvert\vec u\rvert^{2}-1\bigr)e_t ,
+\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}=\tfrac14\bigl(\lvert\vec u\rvert^{2}-1\bigr)e_t ,
 $$
 verified on one hundred vectors to $6.7\times10^{-16}$, so the failure of idempotency is a central scalar and the sphere $\lvert\vec u\rvert=1$ is exactly the idempotent locus.
 
-**The Born weight is a positive functional.** For a pure state $\tilde\Pi$ and a state $\tilde\rho$ the number $2\mathrm{Sc}(\tilde\Pi\tilde\rho)$ is the pairing at a pair of elements of the cone, hence non-negative and at most one by the normalisations. The reading of that number as a probability is the programme's step and not a theorem of the algebra; the algebra supplies the positive functional and the extreme point, which is what the reading needs.
+**The Born weight is a positive functional.** For a pure state $\tilde\Pi_{\mathrm{id}}$ and a state $\tilde\rho$ the number $2\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde\rho)$ is the pairing at a pair of elements of the cone, hence non-negative and at most one by the normalisations. The reading of that number as a probability is the programme's step and not a theorem of the algebra; the algebra supplies the positive functional and the extreme point, which is what the reading needs.
 
 ## The Functional Calculus
 
@@ -133,25 +133,25 @@ verified on one hundred vectors to $6.7\times10^{-16}$, so the failure of idempo
 $$
 \lambda_\pm=t\pm\lvert\vec s\rvert ,
 \qquad
-\tilde\Pi_\pm=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_+ -\lambda_-},
+\tilde\Pi_{\mathrm{id},\pm}=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_+ -\lambda_-},
 $$
 the second display being a definition for $\lvert\vec s\rvert\neq0$.
 
-**Proposition.** $\tilde\Pi_\pm$ are Hermitian idempotents with $\tilde\Pi_+ + \tilde\Pi_- = e_t$, $\tilde\Pi_+\bullet\tilde\Pi_-=0$, and $\tilde Q=\lambda_+\tilde\Pi_+ + \lambda_-\tilde\Pi_-$. They are the rank-one idempotents
+**Proposition.** $\tilde\Pi_{\mathrm{id},\pm}$ are Hermitian idempotents with $\tilde\Pi_{\mathrm{id},+} + \tilde\Pi_{\mathrm{id},-} = e_t$, $\tilde\Pi_{\mathrm{id},+}\bullet\tilde\Pi_{\mathrm{id},-}=0$, and $\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},+} + \lambda_-\tilde\Pi_{\mathrm{id},-}$. They are the rank-one idempotents
 $$
-\tilde\Pi_\pm=\tfrac12\Bigl(e_t\pm i\,\frac{\vec s}{\lvert\vec s\rvert}\Bigr),
+\tilde\Pi_{\mathrm{id},\pm}=\tfrac12\Bigl(e_t\pm i\,\frac{\vec s}{\lvert\vec s\rvert}\Bigr),
 $$
 and they are the spectral projectors of the matrix display.
 
-*Proof.* Both are polynomials in $\tilde Q$, so they commute with it and multiply as $\tilde\Pi_\pm^2=\tilde\Pi_\pm$ and $\tilde\Pi_+\tilde\Pi_-=0$ by the Cayley–Hamilton identity $\tilde Q^2-2t\tilde Q+\bigl(t^2-\lvert\vec s\rvert^2\bigr)e_t=0$ of *The Jordan Structure of the Symmetric Plain Product*, §*The Peirce Theory*. The second display is the expansion of the first, and it is Hermitian because $\vec s/\lvert\vec s\rvert$ is real. Verified on one hundred elements, the largest residuals being $2.2\times10^{-16}$ for idempotency, $2.2\times10^{-16}$ for the sum against $e_t$ and $6.7\times10^{-16}$ for the resolution.
+*Proof.* Both are polynomials in $\tilde Q$, so they commute with it and multiply as $\tilde\Pi_{\mathrm{id},\pm}^2=\tilde\Pi_{\mathrm{id},\pm}$ and $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$ by the Cayley–Hamilton identity $\tilde Q^2-2t\tilde Q+\bigl(t^2-\lvert\vec s\rvert^2\bigr)e_t=0$ of *The Jordan Structure of the Symmetric Plain Product*, §*The Peirce Theory*. The second display is the expansion of the first, and it is Hermitian because $\vec s/\lvert\vec s\rvert$ is real. Verified on one hundred elements, the largest residuals being $2.2\times10^{-16}$ for idempotency, $2.2\times10^{-16}$ for the sum against $e_t$ and $6.7\times10^{-16}$ for the resolution.
 
 **Consequence (the functional calculus).** For any function $f$ defined on the two-point spectrum,
 $$
-f(\tilde Q)=f(\lambda_+)\tilde\Pi_+ + f(\lambda_-)\tilde\Pi_- ,
+f(\tilde Q)=f(\lambda_+)\tilde\Pi_{\mathrm{id},+} + f(\lambda_-)\tilde\Pi_{\mathrm{id},-} ,
 $$
-which is the holomorphic functional calculus of the algebra, closed because there are only two points to interpolate. Three cases carry the corpus's work. The modulus is $\lvert\tilde Q\rvert=\lvert\lambda_+\rvert\tilde\Pi_+ + \lvert\lambda_-\rvert\tilde\Pi_-$, non-negative in the order, and it carries the same order-unit norm as $\tilde Q$, since $\lVert\tilde Q\rVert_u=\max(\lvert\lambda_+\rvert,\lvert\lambda_-\rvert)$ is already a spectral maximum. The sign is $\operatorname{sgn}\tilde Q=\operatorname{sgn}(\lambda_+)\tilde\Pi_+ + \operatorname{sgn}(\lambda_-)\tilde\Pi_-$, a symmetry of the algebra, and the pair reconstructs the element, $\tilde Q=\lvert\tilde Q\rvert\operatorname{sgn}\tilde Q$, verified to $8.9\times10^{-16}$; the special case in which the two eigenvalues straddle zero is the one in which the sign is the reflection $\tilde\Pi_+ - \tilde\Pi_-$. And the cone reads spectrally: $\tilde Q\in C$ exactly when both eigenvalues are non-negative, so $C$ is the set of elements with non-negative spectrum, which is the general statement that the cone of squares of a formally real algebra is its spectral non-negative set.
+which is the holomorphic functional calculus of the algebra, closed because there are only two points to interpolate. Three cases carry the corpus's work. The modulus is $\lvert\tilde Q\rvert=\lvert\lambda_+\rvert\tilde\Pi_{\mathrm{id},+} + \lvert\lambda_-\rvert\tilde\Pi_{\mathrm{id},-}$, non-negative in the order, and it carries the same order-unit norm as $\tilde Q$, since $\lVert\tilde Q\rVert_u=\max(\lvert\lambda_+\rvert,\lvert\lambda_-\rvert)$ is already a spectral maximum. The sign is $\operatorname{sgn}\tilde Q=\operatorname{sgn}(\lambda_+)\tilde\Pi_{\mathrm{id},+} + \operatorname{sgn}(\lambda_-)\tilde\Pi_{\mathrm{id},-}$, a symmetry of the algebra, and the pair reconstructs the element, $\tilde Q=\lvert\tilde Q\rvert\operatorname{sgn}\tilde Q$, verified to $8.9\times10^{-16}$; the special case in which the two eigenvalues straddle zero is the one in which the sign is the reflection $\tilde\Pi_{\mathrm{id},+} - \tilde\Pi_{\mathrm{id},-}$. And the cone reads spectrally: $\tilde Q\in C$ exactly when both eigenvalues are non-negative, so $C$ is the set of elements with non-negative spectrum, which is the general statement that the cone of squares of a formally real algebra is its spectral non-negative set.
 
-**The corpus's spectral theorem is this display.** *The Biquaternion Eigenvalue Decomposition* reaches the same two projectors from the Clifford grading, by way of the pure root and the normality criterion, and its Hermitian projectors $\tfrac12(1\pm\vec Z)$ are $\tilde\Pi_\pm$ at $\vec Z=i\vec s/\lvert\vec s\rvert$. The two derivations agree because the degree is two: a unital algebra of degree two has a spectral theorem that is an affine formula, and the Clifford machinery is doing the interpolation implicitly. What the Jordan reading adds is the converse half, that the formula belongs to the algebra and not to the display, so it survives every change of representation of the four-dimensional algebra.
+**The corpus's spectral theorem is this display.** *The Biquaternion Eigenvalue Decomposition* reaches the same two projectors from the Clifford grading, by way of the pure root and the normality criterion, and its Hermitian projectors $\tfrac12(1\pm\vec Z)$ are $\tilde\Pi_{\mathrm{id},\pm}$ at $\vec Z=i\vec s/\lvert\vec s\rvert$. The two derivations agree because the degree is two: a unital algebra of degree two has a spectral theorem that is an affine formula, and the Clifford machinery is doing the interpolation implicitly. What the Jordan reading adds is the converse half, that the formula belongs to the algebra and not to the display, so it survives every change of representation of the four-dimensional algebra.
 
 ## The Three Axioms
 
@@ -188,7 +188,7 @@ Completeness is automatic in dimension four. The three inequalities were also ch
 
 **The self-adjoint part is the JB-algebra of the previous section**, which is the general relation between the two classes and not a coincidence of this example.
 
-**The Euclidean norm is not a JB\*-norm.** The corpus's topological norm is $\lVert\tilde Q\rVert=\sqrt{H(\tilde Q)}$, and with it the axiom fails. At $\tilde Q=e_t+i\vec u$ with $\lvert\vec u\rvert=1$ the display has eigenvalues $2$ and $0$, so its cube is $8\tilde\Pi$ at the rank-one idempotent $\tilde\Pi$; then $H(\tilde Q)=2$ and $H\bigl(U_{\tilde Q}\tilde Q^{*}\bigr)=H(8\tilde\Pi)=32$, so $\sqrt{H\bigl(U_{\tilde Q}\tilde Q^{*}\bigr)}=4\sqrt2$ against $\bigl(\sqrt{H(\tilde Q)}\bigr)^{3}=2\sqrt2$. The axiom was also checked on one hundred random elements, failing in every case. The star is an isometry for the Euclidean norm, so that condition holds; the product inequality does not, and it fails on random pairs, the largest excess over two thousand trials being $2.7$. The Euclidean norm is the square root of a quadratic form on the coefficient space, and it is not a norm of the algebra: it lacks the spectral character that ties the norm to the cone.
+**The Euclidean norm is not a JB\*-norm.** The corpus's topological norm is $\lVert\tilde Q\rVert=\sqrt{H(\tilde Q)}$, and with it the axiom fails. At $\tilde Q=e_t+i\vec u$ with $\lvert\vec u\rvert=1$ the display has eigenvalues $2$ and $0$, so its cube is $8\tilde\Pi_{\mathrm{id}}$ at the rank-one idempotent $\tilde\Pi_{\mathrm{id}}$; then $H(\tilde Q)=2$ and $H\bigl(U_{\tilde Q}\tilde Q^{*}\bigr)=H(8\tilde\Pi_{\mathrm{id}})=32$, so $\sqrt{H\bigl(U_{\tilde Q}\tilde Q^{*}\bigr)}=4\sqrt2$ against $\bigl(\sqrt{H(\tilde Q)}\bigr)^{3}=2\sqrt2$. The axiom was also checked on one hundred random elements, failing in every case. The star is an isometry for the Euclidean norm, so that condition holds; the product inequality does not, and it fails on random pairs, the largest excess over two thousand trials being $2.7$. The Euclidean norm is the square root of a quadratic form on the coefficient space, and it is not a norm of the algebra: it lacks the spectral character that ties the norm to the cone.
 
 **The consequence for the corpus.** No statement of the corpus that uses $\lVert\cdot\rVert$ as the Euclidean norm is a statement about the JB-algebra, and no statement about the JB-algebra may be read in the Euclidean norm. The two norms are different objects on the same space, and the sections above use the order-unit norm while saying so.
 
@@ -291,7 +291,7 @@ The light cone is the zero set of the determinant on the material sector, and it
 | $U_{\tilde Q}$ | the quadratic representation, $U_{\tilde Q}\tilde P=\tilde Q\tilde P\tilde Q$ |
 | $\{x,y,z\}$ | the Jordan triple product, complex-bilinear |
 | $\{x,y,z\}_{\mathrm{C}^{*}}$ | the C\*-triple product, conjugate-linear in the middle slot |
-| $\tilde\Pi=\tfrac12(e_t+i\vec u)$ | a rank-one idempotent, a pure state at $\lvert\vec u\rvert=1$ |
+| $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+i\vec u)$ | a rank-one idempotent, a pure state at $\lvert\vec u\rvert=1$ |
 | $H_2(\mathbb{C})\cong JSpin_3$ | the two names of the algebra |
 
 ## Further Reading

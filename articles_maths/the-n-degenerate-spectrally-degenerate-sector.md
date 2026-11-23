@@ -64,7 +64,7 @@ whose reduction is $(Q_t,\ B)$: the point set is the same, and the sector is a c
 
 ## The Elements
 
-Let $\tilde Q\in\Sigma_{00}$ with $\tilde Q\neq0$, so $\tilde Q=\vec\Upsilon$ is a pure nilpotent of index two.
+Let $\tilde Q\in\Sigma_{00}$ with $\tilde Q\neq0$, so $\tilde Q=\vec\Pi_{\mathrm{nil}}$ is a pure nilpotent of index two.
 
 **Annihilators.** In the plain product, the left and right annihilators
 
@@ -95,7 +95,7 @@ $$
 \mathbb{C}[\tilde Q]=\{a e_t+b\tilde Q\ :\ a,b\in\mathbb{C}\}.
 $$
 
-Indeed, an element $X=x_0e_t+\vec x$ commutes with $\tilde Q=\vec\Upsilon$ exactly when $\vec x\times\vec\Upsilon=0$, that is, exactly when $\vec x$ is a multiple of $\vec\Upsilon$. Its only idempotents are $0$ and $e_t$: from $a^2=a$ and $2ab=b$ one obtains $(a,b)=(0,0)$ or $(1,0)$. Hence **no non-trivial idempotent commutes with $\tilde Q$**, and $\tilde Q$ admits no Peirce decomposition attached to it.
+Indeed, an element $X=x_0e_t+\vec x$ commutes with $\tilde Q=\vec\Pi_{\mathrm{nil}}$ exactly when $\vec x\times\vec\Pi_{\mathrm{nil}}=0$, that is, exactly when $\vec x$ is a multiple of $\vec\Pi_{\mathrm{nil}}$. Its only idempotents are $0$ and $e_t$: from $a^2=a$ and $2ab=b$ one obtains $(a,b)=(0,0)$ or $(1,0)$. Hence **no non-trivial idempotent commutes with $\tilde Q$**, and $\tilde Q$ admits no Peirce decomposition attached to it.
 
 **Peirce form.** Let $e$ be an idempotent with $\tilde Q=e\tilde Q(e_t-e)$; such an idempotent exists because $\tilde Q$ generates a minimal left ideal. Then $e\tilde Q=\tilde Q$ and $\tilde Qe=0$; with $f=e_t-e$, the Peirce form is purely off-diagonal:
 
@@ -113,18 +113,18 @@ So $\tilde Q$ lies wholly in the mixed corner $\mathbb{B}_{+-}$ of that pair. No
 
 **Off the origin the Peirce form is purely off-diagonal and no Peirce decomposition relative to $\tilde Q$ exists. At the origin every idempotent commutes with $\tilde Q$ and the Peirce matrix is zero.**
 
-Let $\tilde Q=\vec\Upsilon$ with $\vec\Upsilon^2=0$ and $\vec\Upsilon\neq0$. Its centraliser is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Upsilon\}$, whose only idempotents are $0$ and $e_t$. Hence no non-trivial idempotent commutes with $\tilde Q$, and there is no Peirce decomposition relative to $\tilde Q$.
+Let $\tilde Q=\vec\Pi_{\mathrm{nil}}$ with $\vec\Pi_{\mathrm{nil}}^2=0$ and $\vec\Pi_{\mathrm{nil}}\neq0$. Its centraliser is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Pi_{\mathrm{nil}}\}$, whose only idempotents are $0$ and $e_t$. Hence no non-trivial idempotent commutes with $\tilde Q$, and there is no Peirce decomposition relative to $\tilde Q$.
 
-A non-zero nilpotent generates a minimal left ideal, so there is an idempotent $e$ with $\vec\Upsilon=e\vec\Upsilon(e_t-e)$. With $f=e_t-e$ the Peirce form is
+A non-zero nilpotent generates a minimal left ideal, so there is an idempotent $e$ with $\vec\Pi_{\mathrm{nil}}=e\vec\Pi_{\mathrm{nil}}(e_t-e)$. With $f=e_t-e$ the Peirce form is
 
 $$
 e\tilde Qe=0,\qquad
-e\tilde Qf=\vec\Upsilon,\qquad
+e\tilde Qf=\vec\Pi_{\mathrm{nil}},\qquad
 f\tilde Qe=0,\qquad
 f\tilde Qf=0.
 $$
 
-The element lies wholly in the mixed corner $\mathbb{B}_{+-}$ of that pair; by the argument of §*The Elements* no Peirce decomposition relative to $\tilde Q$ can exist. In the corner coordinates fixed by $(e,\vec\Upsilon)$ and $(f,\vec X)$, where $\vec X$ spans $f\mathbb{B}e$, the Peirce matrix is the single nilpotent block
+The element lies wholly in the mixed corner $\mathbb{B}_{+-}$ of that pair; by the argument of §*The Elements* no Peirce decomposition relative to $\tilde Q$ can exist. In the corner coordinates fixed by $(e,\vec\Pi_{\mathrm{nil}})$ and $(f,\vec X)$, where $\vec X$ spans $f\mathbb{B}e$, the Peirce matrix is the single nilpotent block
 
 $$
 \begin{pmatrix}0&1\\0&0\end{pmatrix}=J_2(0).
@@ -194,7 +194,7 @@ and they agree wherever $Q_t=0$, that is, on all of $\Sigma_{00}$. At the origin
 | sector | conditions | elements | Peirce decomposition | product |
 |---|---|---|---|---|
 | **doubly regular** $\Sigma_{11}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2\neq0$ | units with distinct eigenvalues | exists, unique | $\langle\tilde Q\rangle_{\natural}\neq0$ preserved; can land in $\Sigma_{10}$ |
-| **norm-degenerate, spectrally regular** $\Sigma_{01}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2\neq0$ | $2Q_t\tilde\Pi$ with $\tilde\Pi$ a non-trivial idempotent and $Q_t\neq0$; spectrum $\{0,2Q_t\}$ | exists, unique | $\langle\tilde Q\rangle_{\natural}=0$ preserved; can land in $\Sigma_{00}$ |
+| **norm-degenerate, spectrally regular** $\Sigma_{01}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2\neq0$ | $2Q_t\tilde\Pi_{\mathrm{id}}$ with $\tilde\Pi_{\mathrm{id}}$ a non-trivial idempotent and $Q_t\neq0$; spectrum $\{0,2Q_t\}$ | exists, unique | $\langle\tilde Q\rangle_{\natural}=0$ preserved; can land in $\Sigma_{00}$ |
 | **norm-regular, spectrally degenerate** $\Sigma_{10}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2=0$ | units with a repeated eigenvalue, plus the scalar line minus $0$; spectrum $\{Q_t\}$ | the spectral pair fails off the scalar line; a canonical Jordan pair exists; one term on the scalar line | $\langle\tilde Q\rangle_{\natural}\neq0$ preserved; can land in $\Sigma_{11}$ |
 | **doubly degenerate** $\Sigma_{00}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin; spectrum $\{0\}$ | the spectral pair fails off the origin; a canonical Jordan pair exists off the origin | $0$ or $\Sigma_{01}$ |
 
@@ -251,10 +251,10 @@ polynomial in $\theta$; the flow is never oscillatory, and no Fourier basis is a
 For $\tilde Q\neq0$ the nilpotent generator is the element itself,
 
 $$
-\boxed{\ \vec\Upsilon=\tilde Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad \vec\Upsilon^2=0\ }
+\boxed{\ \vec\Pi_{\mathrm{nil}}=\tilde Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad \vec\Pi_{\mathrm{nil}}^2=0\ }
 $$
 
-Choose an idempotent $e$ with $\tilde Q=e\tilde Q(e_t-e)$, put $f=e_t-e$, and let $\vec X$ span $f\mathbb{B}e$. The four Peirce generators of the pair $(e,f)$ are $e,\vec\Upsilon,\vec X,f$, and the Peirce form is
+Choose an idempotent $e$ with $\tilde Q=e\tilde Q(e_t-e)$, put $f=e_t-e$, and let $\vec X$ span $f\mathbb{B}e$. The four Peirce generators of the pair $(e,f)$ are $e,\vec\Pi_{\mathrm{nil}},\vec X,f$, and the Peirce form is
 
 $$
 \boxed{\ e\tilde Qe=0,\qquad e\tilde Qf=\tilde Q,\qquad f\tilde Qe=0,\qquad f\tilde Qf=0\ }
@@ -266,10 +266,10 @@ $$
 \boxed{\ \lambda=0\ \text{with multiplicity }2,\qquad \langle\tilde Q\rangle_{\natural}=B^2(\tilde Q)=0\ }
 $$
 
-On $\mathbb{B}$, the operators $L_{\tilde Q}$ and $R_{\tilde Q}$ have the single eigenvalue $0$, of multiplicity four. There is no eigenbasis off the origin. In the Peirce basis $(e,\vec\Upsilon,\vec X,f)$ relative to the pair $(e,f)$ the element is the sum
+On $\mathbb{B}$, the operators $L_{\tilde Q}$ and $R_{\tilde Q}$ have the single eigenvalue $0$, of multiplicity four. There is no eigenbasis off the origin. In the Peirce basis $(e,\vec\Pi_{\mathrm{nil}},\vec X,f)$ relative to the pair $(e,f)$ the element is the sum
 
 $$
-\boxed{\ \tilde Q=0\cdot e+1\cdot\vec\Upsilon+0\cdot\vec X+0\cdot f\ }
+\boxed{\ \tilde Q=0\cdot e+1\cdot\vec\Pi_{\mathrm{nil}}+0\cdot\vec X+0\cdot f\ }
 $$
 
 The only eigenvalue is $0$; the coefficient $1$ of the nilpotent is a normalisation, not an eigenvalue. The pair $(e,f)$ is not unique, but the displayed sum does not depend on the choice, because $e+f=e_t$ and $\tilde Q$ itself is the nilpotent generator. At the origin $\tilde Q=0$, and the nilpotent generator vanishes.
@@ -277,7 +277,7 @@ The only eigenvalue is $0$; the coefficient $1$ of the nilpotent is a normalisat
 **The standard nilpotent.** The pair $(e,f)$ and the corner vector $\vec X$ are not functions of $\tilde Q$: they are a gauge, and the Peirce form above is the invariant statement. For
 
 $$
-\boxed{\ \tilde Q=\vec\Upsilon=c(\vec e_x+i\vec e_y),\qquad c\neq0\ }
+\boxed{\ \tilde Q=\vec\Pi_{\mathrm{nil}}=c(\vec e_x+i\vec e_y),\qquad c\neq0\ }
 $$
 
 one choice of gauge is
@@ -323,7 +323,7 @@ The sector is the doubly degenerate sector: the set of square-zero elements, the
 | $\mathcal{N}=\{N=0\}$ | the null cone of the quaternionic norm |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
 | $\mathcal{N}_{\mathrm p}$ | the pure stratum of the null cone, $\Sigma_{00}\setminus\{0\}$ |
-| $\vec\Upsilon$ | a non-zero pure vector with $\vec\Upsilon^2=0$ |
+| $\vec\Pi_{\mathrm{nil}}$ | a non-zero pure vector with $\vec\Pi_{\mathrm{nil}}^2=0$ |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication |
 | $A(\tilde Q)=\ker L_{\tilde Q}$ | the left annihilator, a right ideal |
 | $B(\tilde Q)=\ker R_{\tilde Q}$ | the right annihilator, a left ideal |

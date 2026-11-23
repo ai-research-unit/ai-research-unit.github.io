@@ -65,7 +65,7 @@ The self-duality is what makes the Hermitian form the natural pairing of measure
 
 ### Extremal rays and the pure states
 
-The extreme rays of $C_+$ are the rays through the rank-one Hermitian idempotents $\tilde\Pi_1(\vec u) = \tfrac12(e_t+i\vec u)$ and their positive multiples; every positive element is a non-negative combination of these. On the normalised slice — the intersection of $C_+$ with the affine hyperplane $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = 1$ — the extreme points are exactly the pure states. This is the cone-theoretic statement of the fact, developed in the companion articles, that the Bloch ball is the normalised slice of the cone and its boundary is the set of idempotents. The normalized states are a section of the cone, and the pure states are its extreme rays.
+The extreme rays of $C_+$ are the rays through the rank-one Hermitian idempotents $\tilde\Pi_{\mathrm{id},1}(\vec u) = \tfrac12(e_t+i\vec u)$ and their positive multiples; every positive element is a non-negative combination of these. On the normalised slice — the intersection of $C_+$ with the affine hyperplane $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = 1$ — the extreme points are exactly the pure states. This is the cone-theoretic statement of the fact, developed in the companion articles, that the Bloch ball is the normalised slice of the cone and its boundary is the set of idempotents. The normalized states are a section of the cone, and the pure states are its extreme rays.
 
 ## Effects
 
@@ -99,7 +99,7 @@ $$
 \boxed{\;\tilde{\mathcal E}_{\Psi}^2 = \tilde{\mathcal E}_{\Psi} \quad\Longleftrightarrow\quad \tilde{\mathcal E}_{\Psi}\in\mathrm{ext}[0,e_t]\;},
 $$
 
-i.e. the elements $a_t = 1$ with $|\vec a|=0$ (the identity) and $a_t = \tfrac12$ with $|\vec a| = \tfrac12$ (the rank-one Hermitian idempotents). A **projective measurement** uses only these extreme effects; a general measurement uses interior effects, which are convex combinations $\tilde{\mathcal E}_{\Psi} = t\tilde\Pi_1 + (1-t)\tilde\Pi_2$ of orthogonal idempotents. An interior effect is a "soft" outcome: it responds partially to both alternatives, which is exactly what allows a measurement to have more outcomes than the dimension.
+i.e. the elements $a_t = 1$ with $|\vec a|=0$ (the identity) and $a_t = \tfrac12$ with $|\vec a| = \tfrac12$ (the rank-one Hermitian idempotents). A **projective measurement** uses only these extreme effects; a general measurement uses interior effects, which are convex combinations $\tilde{\mathcal E}_{\Psi} = t\tilde\Pi_{\mathrm{id},1} + (1-t)\tilde\Pi_{\mathrm{id},2}$ of orthogonal idempotents. An interior effect is a "soft" outcome: it responds partially to both alternatives, which is exactly what allows a measurement to have more outcomes than the dimension.
 
 ### The Born rule for effects
 
@@ -111,7 +111,7 @@ p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde{\mathcal E}_{\Psi}\rangle_{*}}{\langle\t
 =\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{\mathcal E}_{\Psi})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}\in[0,1],
 $$
 
-because $\tilde{Ϛ}_{\Psi}\geq0$, $\tilde{\mathcal E}_{\Psi}\geq0$ make the pairing non-negative, and $\tilde{\mathcal E}_{\Psi}\leq e_t$ gives $p\leq1$. This is the Born rule in its general form; the projective case is $\tilde{\mathcal E}_{\Psi} = \tilde\Pi$, and then the same ratio is the usual probability of an eigenspace.
+because $\tilde{Ϛ}_{\Psi}\geq0$, $\tilde{\mathcal E}_{\Psi}\geq0$ make the pairing non-negative, and $\tilde{\mathcal E}_{\Psi}\leq e_t$ gives $p\leq1$. This is the Born rule in its general form; the projective case is $\tilde{\mathcal E}_{\Psi} = \tilde\Pi_{\mathrm{id}}$, and then the same ratio is the usual probability of an eigenspace.
 
 The value is read at normalisation. Since $2\,\mathrm{Sc}(e_t)=2$ and $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$, the ratio is
 
@@ -177,7 +177,7 @@ The effect is the squared strength conjugated by the backaction. Its eigenvalues
 
 Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
-The strata are the strata of the effect body. A **sharp** effect is $\tilde{\mathcal E}_{\Psi,y}=\tilde\Pi$; then $\tilde M_{\mathrm{kraus},y}=\tilde\Pi$, $\tilde H_{\Psi,\mathrm{pos},y}=\tilde\Pi$ and $\tilde Q_{\mathrm{p},y}=\tilde\Pi$, and the amplitude is a zero divisor on the null cone. A **soft rank-one** effect is $\tilde{\mathcal E}_{\Psi,y}=\lambda\tilde\Pi$ with $0<\lambda<1$; then $\tilde M_{\mathrm{kraus},y}=\sqrt{\lambda}\,\tilde\Pi$, $\tilde H_{\Psi,\mathrm{pos},y}=\sqrt{\lambda}\,\tilde\Pi$ and $\tilde Q_{\mathrm{p},y}=\tilde\Pi$, and the amplitude is again null, although the effect is on the boundary of the cone and not at an extreme point. A **full-rank** effect is $\tilde{\mathcal E}_{\Psi,y}>0$; then $\tilde M_{\mathrm{kraus},y}$ is invertible, $\tilde H_{\Psi,\mathrm{pos},y}$ is positive definite, $\tilde Q_{\mathrm{p},y}$ is $*$-unitary, and the effect lies in the interior of the effect body. The extreme points of the body are $0$, $e_t$ and the rank-one projectors; the polar form reaches the interior through invertible amplitudes. The null cone of the amplitude is therefore the rank-one boundary of the effect cone, not only the sharp set. The companion article *The Polar Decomposition of a Kraus Operator* works the examples and gives the measurement reading.
+The strata are the strata of the effect body. A **sharp** effect is $\tilde{\mathcal E}_{\Psi,y}=\tilde\Pi_{\mathrm{id}}$; then $\tilde M_{\mathrm{kraus},y}=\tilde\Pi_{\mathrm{id}}$, $\tilde H_{\Psi,\mathrm{pos},y}=\tilde\Pi_{\mathrm{id}}$ and $\tilde Q_{\mathrm{p},y}=\tilde\Pi_{\mathrm{id}}$, and the amplitude is a zero divisor on the null cone. A **soft rank-one** effect is $\tilde{\mathcal E}_{\Psi,y}=\lambda\tilde\Pi_{\mathrm{id}}$ with $0<\lambda<1$; then $\tilde M_{\mathrm{kraus},y}=\sqrt{\lambda}\,\tilde\Pi_{\mathrm{id}}$, $\tilde H_{\Psi,\mathrm{pos},y}=\sqrt{\lambda}\,\tilde\Pi_{\mathrm{id}}$ and $\tilde Q_{\mathrm{p},y}=\tilde\Pi_{\mathrm{id}}$, and the amplitude is again null, although the effect is on the boundary of the cone and not at an extreme point. A **full-rank** effect is $\tilde{\mathcal E}_{\Psi,y}>0$; then $\tilde M_{\mathrm{kraus},y}$ is invertible, $\tilde H_{\Psi,\mathrm{pos},y}$ is positive definite, $\tilde Q_{\mathrm{p},y}$ is $*$-unitary, and the effect lies in the interior of the effect body. The extreme points of the body are $0$, $e_t$ and the rank-one projectors; the polar form reaches the interior through invertible amplitudes. The null cone of the amplitude is therefore the rank-one boundary of the effect cone, not only the sharp set. The companion article *The Polar Decomposition of a Kraus Operator* works the examples and gives the measurement reading.
 
 ### Naimark dilation
 
@@ -193,19 +193,19 @@ This is **Naimark's dilation theorem**, the measurement analogue of Stinespring'
 
 ### The trine POVM
 
-Let $\vec u_\eta$, $\eta=1,2,3$, be three unit vectors in the equatorial plane at $120^\circ$ from one another, so that $\sum_\eta\vec u_\eta = 0$ and $\sum_\eta\tilde\Pi_1(\vec u_\eta) = \tfrac32 e_t$. Define
+Let $\vec u_\eta$, $\eta=1,2,3$, be three unit vectors in the equatorial plane at $120^\circ$ from one another, so that $\sum_\eta\vec u_\eta = 0$ and $\sum_\eta\tilde\Pi_{\mathrm{id},1}(\vec u_\eta) = \tfrac32 e_t$. Define
 
 $$
-\tilde{\mathcal E}_{\Psi,k} = \tfrac{2}{3}\,\tilde\Pi_1(\vec u_\eta), \qquad \eta = 1, 2, 3 .
+\tilde{\mathcal E}_{\Psi,k} = \tfrac{2}{3}\,\tilde\Pi_{\mathrm{id},1}(\vec u_\eta), \qquad \eta = 1, 2, 3 .
 $$
 
 Each $\tilde{\mathcal E}_{\Psi,k}$ is an effect — its coefficients are $a_t = \tfrac13$ and $|\vec a| = \tfrac13$, on the boundary of the interval — and they resolve the identity:
 
 $$
-\sum_{\eta=1}^{3}\tilde{\mathcal E}_{\Psi,k} = \tfrac{2}{3}\sum_{\eta=1}^{3}\tilde\Pi_1(\vec u_\eta) = \tfrac{2}{3}\cdot\tfrac{3}{2}e_t = e_t .
+\sum_{\eta=1}^{3}\tilde{\mathcal E}_{\Psi,k} = \tfrac{2}{3}\sum_{\eta=1}^{3}\tilde\Pi_{\mathrm{id},1}(\vec u_\eta) = \tfrac{2}{3}\cdot\tfrac{3}{2}e_t = e_t .
 $$
 
-The trine POVM has three outcomes, which no projective measurement of a qubit can have. For the three equally likely states $\tilde{Ϛ}_{\Psi,\eta} = \tilde\Pi_1(\vec u_\eta)$, the probability of correctly identifying the state is
+The trine POVM has three outcomes, which no projective measurement of a qubit can have. For the three equally likely states $\tilde{Ϛ}_{\Psi,\eta} = \tilde\Pi_{\mathrm{id},1}(\vec u_\eta)$, the probability of correctly identifying the state is
 
 $$
 P_{\mathrm{succ}} = \frac{1}{3}\sum_{\eta=1}^{3}2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\eta}\tilde{\mathcal E}_{\Psi,k}^{*})
@@ -220,19 +220,19 @@ since $\tilde{Ϛ}_{\Psi,\eta}^2 = \tilde{Ϛ}_{\Psi,\eta}$ and $2\,\mathrm{Sc}(\t
 Let two non-orthogonal pure states have overlap $c = |\langle\tilde{Ξ}_{0}|\tilde{Ξ}_{1}\rangle|\in(0,1)$. A **projective** measurement of a qubit has two outcomes, each of which responds to both states, so neither outcome can certify which state was prepared. A POVM with three effects can:
 
 $$
-\tilde{\mathcal E}_{\Psi,0} = \frac{1}{1+c}\,\tilde\Pi\bigl(\tilde{Ξ}_{1}^{\perp}\bigr), \qquad
-\tilde{\mathcal E}_{\Psi,1} = \frac{1}{1+c}\,\tilde\Pi\bigl(\tilde{Ξ}_{0}^{\perp}\bigr), \qquad
+\tilde{\mathcal E}_{\Psi,0} = \frac{1}{1+c}\,\tilde\Pi_{\mathrm{id}}\bigl(\tilde{Ξ}_{1}^{\perp}\bigr), \qquad
+\tilde{\mathcal E}_{\Psi,1} = \frac{1}{1+c}\,\tilde\Pi_{\mathrm{id}}\bigl(\tilde{Ξ}_{0}^{\perp}\bigr), \qquad
 \tilde{\mathcal E}_{\Psi,?} = e_t-\tilde{\mathcal E}_{\Psi,0}-\tilde{\mathcal E}_{\Psi,1} ,
 $$
 
-where $\tilde\Pi(\tilde{Ξ}^{\perp})$ is the idempotent orthogonal to $|\tilde{Ξ}\rangle$. The effect $\tilde{\mathcal E}_{\Psi,0}$ annihilates $|\tilde{Ξ}_{1}\rangle$, so the outcome $0$ certifies $|\tilde{Ξ}_{0}\rangle$; symmetrically for outcome $1$; and outcome $?$ is inconclusive. The resolution holds because the largest eigenvalue of $\tilde{\mathcal E}_{\Psi,0}+\tilde{\mathcal E}_{\Psi,1}$ is $1$ at this normalization, and the success probability for equal priors is
+where $\tilde\Pi_{\mathrm{id}}(\tilde{Ξ}^{\perp})$ is the idempotent orthogonal to $|\tilde{Ξ}\rangle$. The effect $\tilde{\mathcal E}_{\Psi,0}$ annihilates $|\tilde{Ξ}_{1}\rangle$, so the outcome $0$ certifies $|\tilde{Ξ}_{0}\rangle$; symmetrically for outcome $1$; and outcome $?$ is inconclusive. The resolution holds because the largest eigenvalue of $\tilde{\mathcal E}_{\Psi,0}+\tilde{\mathcal E}_{\Psi,1}$ is $1$ at this normalization, and the success probability for equal priors is
 
 $$
 P_{\mathrm{succ}} = \mathrm{Sc}(\tilde{Ϛ}_{\Psi,0}\tilde{\mathcal E}_{\Psi,0}^{*}) + \mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}\tilde{\mathcal E}_{\Psi,1}^{*})
 = \tfrac12(1-c)+\tfrac12(1-c) = 1-c ,
 $$
 
-which is the standard Ivanovic–Dieks–Peres value. Unambiguous discrimination is thus possible exactly with a non-projective measurement, and its failure probability is the overlap. In the algebra the construction uses three effects, each of them a scaled idempotent of rank one and therefore on the boundary of the cone: the two conclusive outcomes are the idempotents orthogonal to the state they exclude, and the inconclusive outcome — the scaled idempotent $\tilde{\mathcal E}_{\Psi,?} = \frac{2c}{1+c}\tilde\Pi(\vec u_m)$ for a suitable direction $\vec u_m$ — is the effect that makes the resolution complete.
+which is the standard Ivanovic–Dieks–Peres value. Unambiguous discrimination is thus possible exactly with a non-projective measurement, and its failure probability is the overlap. In the algebra the construction uses three effects, each of them a scaled idempotent of rank one and therefore on the boundary of the cone: the two conclusive outcomes are the idempotents orthogonal to the state they exclude, and the inconclusive outcome — the scaled idempotent $\tilde{\mathcal E}_{\Psi,?} = \frac{2c}{1+c}\tilde\Pi_{\mathrm{id}}(\vec u_m)$ for a suitable direction $\vec u_m$ — is the effect that makes the resolution complete.
 
 ## The Positive Cone and the Meaning of a Measurement
 
@@ -306,7 +306,7 @@ and the cone is self-dual with respect to the Hermitian form, $2\langle\tilde H_
 | $\tilde{\mathcal E}_{\Psi,y}=\tilde Q_{\mathrm{p},y}^{*}\tilde H_{\Psi,\mathrm{pos},y}^{2}\tilde Q_{\mathrm{p},y}$ | Effect as the backaction-conjugated squared strength |
 | $\tilde{Ϛ}_{\Psi,y} = \tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}/p_y$ | Post-measurement state |
 | $\tilde{\mathcal E}_{\Psi,y} = V^\dagger\tilde{F}_yV$ | Naimark dilation |
-| $\tilde{\mathcal E}_{\Psi,k} = \tfrac23\tilde\Pi_1(\vec u_\eta)$ | Trine POVM |
+| $\tilde{\mathcal E}_{\Psi,k} = \tfrac23\tilde\Pi_{\mathrm{id},1}(\vec u_\eta)$ | Trine POVM |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading

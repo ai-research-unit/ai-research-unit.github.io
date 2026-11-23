@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The spin-half carrier is the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$, and its closures are the two spinor spaces and their sum. This article computes the second predicate on all of them, and the answer is the opposite of the answer for the norm.
+The spin-half carrier is the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$, and its closures are the two spinor spaces and their sum. This article computes the second predicate on all of them, and the answer is the opposite of the answer for the norm.
 
 On the plane the norm vanishes everywhere and the two eigenvalues are separated everywhere except at the origin. The plane is a null plane and a spectrally regular plane at the same time. This is the sharpest single statement in the group of articles: it shows that the two predicates are independent, that neither implies the other, and that a carrier can sit at one extreme for one of them and at the other extreme for the other.
 
@@ -31,7 +31,7 @@ with $B$ a fixed square root of $B^{2}$. The element is **spectrally regular** w
 **Theorem (the square of the vector part).** For every complex $\lambda$,
 
 $$
-B^{2}\bigl(\lambda\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=-\tfrac14\lambda^{2}.
+B^{2}\bigl(\lambda\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=-\tfrac14\lambda^{2}.
 $$
 
 *Proof.* The coordinates are $Q_t=\tfrac12\lambda$ and $Q_k=\tfrac i2\lambda u_k$, so
@@ -49,7 +49,7 @@ $$
 **Theorem (the spectrum of an element of the plane).** For $\lambda\neq0$,
 
 $$
-\operatorname{spec}\bigl(\lambda\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=\{0,\lambda\},
+\operatorname{spec}\bigl(\lambda\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=\{0,\lambda\},
 $$
 
 and the two eigenvalues are distinct.
@@ -62,7 +62,7 @@ and the two eigenvalues are distinct.
 
 ## The Idempotent
 
-**Theorem.** $\operatorname{spec}\bigl(\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=\{0,1\}$.
+**Theorem.** $\operatorname{spec}\bigl(\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=\{0,1\}$.
 
 *Proof.* The coordinate is $Q_t=\tfrac12$, so the eigenvalues are $\tfrac12\pm\tfrac12$.
 
@@ -86,10 +86,10 @@ $$
 Q_t(Y)=0 .
 $$
 
-**Theorem (the degenerate locus is a real plane).** In the complex basis $\tilde\Pi_+$ and $\vec u_2\tilde\Pi_+$ of the spinor space, the scalar coordinate is the coefficient of the first basis element, since
+**Theorem (the degenerate locus is a real plane).** In the complex basis $\tilde\Pi_{\mathrm{id},+}$ and $\vec u_2\tilde\Pi_{\mathrm{id},+}$ of the spinor space, the scalar coordinate is the coefficient of the first basis element, since
 
 $$
-\vec u_2\tilde\Pi_+(\vec u_{\mathrm r})=\tfrac12\bigl(\vec u_2-i\vec u_3\bigr),\qquad Q_t\bigl(\tfrac12(\vec u_2-i\vec u_3)\bigr)=0 .
+\vec u_2\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\tfrac12\bigl(\vec u_2-i\vec u_3\bigr),\qquad Q_t\bigl(\tfrac12(\vec u_2-i\vec u_3)\bigr)=0 .
 $$
 
 So the degenerate elements are the complex multiples of $\vec u_2-i\vec u_3$, a real plane:
@@ -98,7 +98,7 @@ $$
 S_+(\vec u_{\mathrm r})\cap\mathcal S=\mathbb{C}\bigl(\vec u_2-i\vec u_3\bigr),\qquad \dim_\mathbb{R}=2 .
 $$
 
-*Proof.* The first display uses $\vec u_2\vec u_{\mathrm r}=-\vec u_3$, which follows from the multiplication of the pure units. The coefficient of $\tilde\Pi_+$ in $\alpha\tilde\Pi_++\beta\vec u_2\tilde\Pi_+$ is $\alpha$, and $Q_t$ reads half of it, so $Q_t=0$ is $\alpha=0$.
+*Proof.* The first display uses $\vec u_2\vec u_{\mathrm r}=-\vec u_3$, which follows from the multiplication of the pure units. The coefficient of $\tilde\Pi_{\mathrm{id},+}$ in $\alpha\tilde\Pi_{\mathrm{id},++}\beta\vec u_2\tilde\Pi_{\mathrm{id},+}$ is $\alpha$, and $Q_t$ reads half of it, so $Q_t=0$ is $\alpha=0$.
 
 **Theorem (the degenerate elements are the square-zero elements).** For $Y$ in the spinor space,
 
@@ -108,7 +108,7 @@ $$
 
 *Proof.* On the spinor space the quadratic relation reduces to $Y^{2}=2Q_t(Y)Y$, since the norm vanishes. If $Q_t(Y)=0$ then $Y^{2}=0$. Conversely if $Y^{2}=0$ and $Y\neq0$ then $2Q_t(Y)Y=0$, so $Q_t(Y)=0$.
 
-**Remark (the plane is not the degenerate locus).** The degenerate locus of the spinor space is a real plane, and it is not the carrier. The carrier is $\mathbb{C}\tilde\Pi_+$, spanned by the idempotent; the degenerate locus is $\mathbb{C}(\vec u_2-i\vec u_3)$, spanned by a square-zero element. The two planes meet only at the origin, since the two spanning elements are not proportional: one has $Q_t=\tfrac12$ and the other $Q_t=0$.
+**Remark (the plane is not the degenerate locus).** The degenerate locus of the spinor space is a real plane, and it is not the carrier. The carrier is $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$, spanned by the idempotent; the degenerate locus is $\mathbb{C}(\vec u_2-i\vec u_3)$, spanned by a square-zero element. The two planes meet only at the origin, since the two spanning elements are not proportional: one has $Q_t=\tfrac12$ and the other $Q_t=0$.
 
 **Remark (one plane per axis, one degenerate plane per axis).** The two planes move with the axis, and the degenerate plane of one axis is the carrier plane of no axis, since its generator is not an idempotent. The family of carriers and the family of degenerate planes are two different families, both indexed by the axis.
 
@@ -130,7 +130,7 @@ $$
 
 ## Summary
 
-The square of the vector part on the plane is $-\lambda^{2}/4$, so the plane is spectrally regular at every point except the origin, while its norm vanishes everywhere. The spectrum of $\lambda\tilde\Pi_+$ is $\{0,\lambda\}$, and the idempotent itself has spectrum $\{0,1\}$. Inside the spinor space every element has spectrum $\{0,2Q_t\}$, the degenerate elements are those with vanishing scalar coordinate, they form the real plane $\mathbb{C}(\vec u_2-i\vec u_3)$, and they are exactly the elements whose square vanishes. The plane away from the origin lies in the sector $\Sigma_{01}$: null and spectrally regular.
+The square of the vector part on the plane is $-\lambda^{2}/4$, so the plane is spectrally regular at every point except the origin, while its norm vanishes everywhere. The spectrum of $\lambda\tilde\Pi_{\mathrm{id},+}$ is $\{0,\lambda\}$, and the idempotent itself has spectrum $\{0,1\}$. Inside the spinor space every element has spectrum $\{0,2Q_t\}$, the degenerate elements are those with vanishing scalar coordinate, they form the real plane $\mathbb{C}(\vec u_2-i\vec u_3)$, and they are exactly the elements whose square vanishes. The plane away from the origin lies in the sector $\Sigma_{01}$: null and spectrally regular.
 
 ## The Boxed Summary
 
@@ -157,9 +157,9 @@ The square of the vector part on the plane is $-\lambda^{2}/4$, so the plane is 
 | $\lambda_{\pm}=Q_t\pm iB$ | the two eigenvalues of an element |
 | spectral-regular | $B^{2}\neq0$ |
 | $\mathcal S=\{B^{2}=0\}$ | the spectral-degenerate cone |
-| $\tilde\Pi_\pm(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | the two idempotents of the axis |
-| $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+$ | the spinor plane, the carrier |
-| $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm$ | the spinor spaces |
+| $\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | the two idempotents of the axis |
+| $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ | the spinor plane, the carrier |
+| $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | the spinor spaces |
 | $\vec u_2-i\vec u_3$ | the square-zero element spanning the degenerate plane of $S_+$ |
 | $\Sigma_{ij}$ | the sector with $N\neq0$ for $i=1$ and $B^{2}\neq0$ for $j=1$ |
 

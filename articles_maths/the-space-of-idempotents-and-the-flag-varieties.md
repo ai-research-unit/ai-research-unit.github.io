@@ -193,7 +193,7 @@ which was confirmed at $n=2$ by the dimension count. So the space of rank one pr
 **The Peirce idempotents of the biquaternion algebra are a pair of antipodal projections.** The pair
 
 $$
-\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})
+\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})
 $$
 
 is a complete set of Hermitian idempotents of rank one, so the pair is a point of the flag variety and a diameter of the two-sphere. The computation confirms the two relations and the Hermiticity at $n=2$, and it shows that the freedom of one reciprocal rescaling mentioned in the biquaternion articles does not move the pair, since the pair is fixed by the root $\tilde{Ζ}$ alone.
@@ -208,7 +208,7 @@ so the oblique projections form a four-dimensional family around the two-sphere 
 
 ## Summary
 
-An idempotent is the same datum as a splitting $V=\operatorname{im}e\oplus\ker e$, its trace is its rank, and the group acts transitively on the idempotents of a fixed rank $k$ with the Levi subgroup $\mathrm{GL}_k\times\mathrm{GL}_{n-k}$ as stabiliser, so the stratum is the complex manifold of dimension $2k(n-k)$ and real dimension $4k(n-k)$. The Hermitian idempotents are the orthogonal projections, they form the real slice of half the dimension, and their space is the Grassmannian $G(k,n)=\mathrm{U}(n)/(\mathrm{U}(k)\times\mathrm{U}(n-k))$ of real dimension $2k(n-k)$; a complete set of idempotents is the same datum as a flag, and the complete flag variety has real dimension $n(n-1)$. The Peirce corners of the algebra are the blocks of the stratum, with dimensions $k^{2},k(n-k),(n-k)k,(n-k)^{2}$, and at $n=2$ the rank one projections form a two-sphere whose diameter is the pair $\tilde\Pi_\pm$.
+An idempotent is the same datum as a splitting $V=\operatorname{im}e\oplus\ker e$, its trace is its rank, and the group acts transitively on the idempotents of a fixed rank $k$ with the Levi subgroup $\mathrm{GL}_k\times\mathrm{GL}_{n-k}$ as stabiliser, so the stratum is the complex manifold of dimension $2k(n-k)$ and real dimension $4k(n-k)$. The Hermitian idempotents are the orthogonal projections, they form the real slice of half the dimension, and their space is the Grassmannian $G(k,n)=\mathrm{U}(n)/(\mathrm{U}(k)\times\mathrm{U}(n-k))$ of real dimension $2k(n-k)$; a complete set of idempotents is the same datum as a flag, and the complete flag variety has real dimension $n(n-1)$. The Peirce corners of the algebra are the blocks of the stratum, with dimensions $k^{2},k(n-k),(n-k)k,(n-k)^{2}$, and at $n=2$ the rank one projections form a two-sphere whose diameter is the pair $\tilde\Pi_{\mathrm{id},\pm}$.
 
 ## Summary of Notation
 

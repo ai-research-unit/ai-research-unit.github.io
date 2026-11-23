@@ -20,10 +20,10 @@ $$
 \vec{Ζ}=i\vec e_z,\qquad \vec{Ζ}^2=e_t,\qquad \vec{Ζ}^{\natural}=\vec{Ζ} ,
 $$
 
-which is Hermitian, scalar-free and of square $e_t$. It gives the two idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})=\tfrac12(e_t\pm i\vec e_z)$ and the two mixed units $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$, and the four together are the Peirce frame
+which is Hermitian, scalar-free and of square $e_t$. It gives the two idempotents $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\vec{Ζ})=\tfrac12(e_t\pm i\vec e_z)$ and the two mixed units $\vec\Pi_{\mathrm{nil},\pm}=\tfrac12(i\vec e_x\pm\vec e_y)$, and the four together are the Peirce frame
 
 $$
-\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-).
+\mathcal{P}=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-}).
 $$
 
 Nothing else enters. The root fixes the frame, the frame fixes the display, and every property the display shows is a property of the root first.
@@ -50,7 +50,7 @@ $$
 \mathsf M_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
 $$
 
-**The spectator factor.** The matrix $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ acts on the second tensor factor and leaves the first untouched. The carrier therefore arrives already split, $V=(\mathbb{C}e_1\otimes\mathbb{C}^2)\oplus(\mathbb{C}e_2\otimes\mathbb{C}^2)$, the two blocks of the display, and the split is invisible to left multiplication: no element of $\mathbb{B}$ carries one summand into the other, because every element acts as the identity on the index that separates them. The index is not bookkeeping. It is the Peirce index: the frame of the display is $\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$, the one the root $\vec{Ζ}=i\vec e_z$ generates, and the two summands are $S_+$ and $S_-$. The factorization is the root, moved into the display, and the display has nothing left to choose.
+**The spectator factor.** The matrix $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ acts on the second tensor factor and leaves the first untouched. The carrier therefore arrives already split, $V=(\mathbb{C}e_1\otimes\mathbb{C}^2)\oplus(\mathbb{C}e_2\otimes\mathbb{C}^2)$, the two blocks of the display, and the split is invisible to left multiplication: no element of $\mathbb{B}$ carries one summand into the other, because every element acts as the identity on the index that separates them. The index is not bookkeeping. It is the Peirce index: the frame of the display is $\mathcal{P}=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$, the one the root $\vec{Ζ}=i\vec e_z$ generates, and the two summands are $S_+$ and $S_-$. The factorization is the root, moved into the display, and the display has nothing left to choose.
 
 **Why this is the source of the illusion.** A splitting that no left multiplication can see looks like a property of the algebra. It is not: it is a property of the display, and it is the only splitting the display has. Every statement proved in the Pauli frame about "the two components" is a statement about the root that built the frame, until it is shown to be invariant, and the invariance is exactly what a change of root destroys.
 
@@ -58,7 +58,7 @@ $$
 
 ## What the Display Is Not
 
-**The two slots are the Peirce index.** The first tensor factor is untouched by the left action, and the index that separates the two slots is the Peirce plane index of the root. The two summands are $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$, each a copy of $S$, and the display's "two components" are those two copies. The index is therefore a **copy index**: it distinguishes the halves, and nothing inside the algebra distinguishes the halves from any other pair of halves, because an automorphism of the module moves the root and carries the pair with it.
+**The two slots are the Peirce index.** The first tensor factor is untouched by the left action, and the index that separates the two slots is the Peirce plane index of the root. The two summands are $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ and $S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}$, each a copy of $S$, and the display's "two components" are those two copies. The index is therefore a **copy index**: it distinguishes the halves, and nothing inside the algebra distinguishes the halves from any other pair of halves, because an automorphism of the module moves the root and carries the pair with it.
 
 **It is not the chirality.** Chirality is a side; the basis operator that grades the conjugate pair is $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, a pure right multiplier, and its eigenspaces on the Dirac module $\Delta$ are $S$ and $S^{\mathrm{c}}$, which are not isomorphic over $\mathbb{R}$. The display's two slots are both of type $S$; the pair $(S_+,S_-)$ is a polarization and the pair $(S,S^{\mathrm{c}})$ is a chirality, and the projective-line argument of *The Unpolarized Module of the Biquaternion Algebra* is exactly the statement that no change of frame turns the first into the second.
 
@@ -70,21 +70,21 @@ $$
 
 ## Summary
 
-The Pauli frame is generated by the single root $\vec{Ζ}=i\vec e_z$, which gives the idempotents $\tilde\Pi_\pm$ and the mixed units $\vec\Upsilon_\pm$ and hence the Peirce frame $\mathcal{P}$. In that frame the left action is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$, the carrier arrives as $\mathbb{C}^2\otimes\mathbb{C}^2$, and one tensor factor is untouched by the algebra: the display polarizes the carrier for free. Nothing in the algebra prefers the root, because $\mathrm{SU}(2)$ moves the unit vectors transitively, so the free splitting is a property of the display and not of the module.
+The Pauli frame is generated by the single root $\vec{Ζ}=i\vec e_z$, which gives the idempotents $\tilde\Pi_{\mathrm{id},\pm}$ and the mixed units $\vec\Pi_{\mathrm{nil},\pm}$ and hence the Peirce frame $\mathcal{P}$. In that frame the left action is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$, the carrier arrives as $\mathbb{C}^2\otimes\mathbb{C}^2$, and one tensor factor is untouched by the algebra: the display polarizes the carrier for free. Nothing in the algebra prefers the root, because $\mathrm{SU}(2)$ moves the unit vectors transitively, so the free splitting is a property of the display and not of the module.
 
-The two slots of the display are the two Peirce planes $S_\pm=\mathbb{B}\tilde\Pi_\pm$, both copies of $S$; the index that separates them is a copy index. It is not the chirality, which is the conjugate pair graded by the basis operator $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$ with eigenspaces $S$ and $S^{\mathrm{c}}$. The two objects coincide on the same two slots of the display, because it is $\operatorname{diag}(-I_2,I_2)$ in the Peirce frame, and the coincidence of display is not a coincidence of object. A statement about the slots is a statement about the root until it is shown invariant, and the test of invariance is the change of root.
+The two slots of the display are the two Peirce planes $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$, both copies of $S$; the index that separates them is a copy index. It is not the chirality, which is the conjugate pair graded by the basis operator $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$ with eigenspaces $S$ and $S^{\mathrm{c}}$. The two objects coincide on the same two slots of the display, because it is $\operatorname{diag}(-I_2,I_2)$ in the Peirce frame, and the coincidence of display is not a coincidence of object. A statement about the slots is a statement about the root until it is shown invariant, and the test of invariance is the change of root.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\vec{Ζ}=i\vec e_z$ | the root of $e_t$ that generates the Pauli frame, $\vec{Ζ}^2=e_t$ |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | the two Peirce idempotents of the root |
-| $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$ | the two mixed units of the frame |
-| $\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ | the Peirce frame, the frame of the display |
+| $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z)$ | the two Peirce idempotents of the root |
+| $\vec\Pi_{\mathrm{nil},\pm}=\tfrac12(i\vec e_x\pm\vec e_y)$ | the two mixed units of the frame |
+| $\mathcal{P}=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ | the Peirce frame, the frame of the display |
 | $\mathsf M_2(\tilde Q)$ | the $2\times2$ matrix of the element, of which $L_{\mathrm{pau}}$ is two copies |
 | $L_{\mathrm{pau}}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ | the left action in the Pauli frame |
-| $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two slots of the display, the two Peirce planes, both copies of $S$ |
+| $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | the two slots of the display, the two Peirce planes, both copies of $S$ |
 | $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$ | the chirality operator, $\operatorname{diag}(-I_2,I_2)$ in the display; on $V$ its eigenspaces are the two slots, on $\Delta$ they are $S$ and $S^{\mathrm{c}}$ |
 | $\mathsf P$ | the switch of the frame, the pure swap in the Pauli display |
 

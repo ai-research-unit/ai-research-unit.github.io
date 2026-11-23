@@ -105,7 +105,7 @@ $$
 
 a symmetric and an antisymmetric line. The one positive root is $\alpha_{12}$, its vector is the simple nilpotent $N_1=E_{12}$, and the count $n-1=1$ is the number of gauge parameters.
 
-**The biquaternion frame is the grading plus the gauge.** The idempotents $\tilde\Pi_\pm$ are the two diagonal weight lines, the companion nilpotents $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ are the two off-diagonal weight lines, and the freedom of a frame is the freedom of choosing a vector in each line, which is the gauge $(\mathbb{C}^{\times})^{n-1}$ of *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*. At $n=2$ that is one complex parameter, the reciprocal rescaling of the two nilpotents.
+**The biquaternion frame is the grading plus the gauge.** The idempotents $\tilde\Pi_{\mathrm{id},\pm}$ are the two diagonal weight lines, the companion nilpotents $\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil},-+}$ are the two off-diagonal weight lines, and the freedom of a frame is the freedom of choosing a vector in each line, which is the gauge $(\mathbb{C}^{\times})^{n-1}$ of *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*. At $n=2$ that is one complex parameter, the reciprocal rescaling of the two nilpotents.
 
 ## Summary
 

@@ -92,13 +92,13 @@ $$
 In the biquaternion framework, a pure spin state is an **idempotent** of the Hermitian subspace $\mathbb{B}_{\Psi}$, of the form
 
 $$
-\tilde\Pi(\vec u_m) = \tfrac{1}{2}\left(e_t + i\vec u_m\right),
+\tilde\Pi_{\mathrm{id}}(\vec u_m) = \tfrac{1}{2}\left(e_t + i\vec u_m\right),
 $$
 
 where $\vec u_m$ is a unit pure real quaternion. The spin-up state along $x$ corresponds to $\vec u_m = \vec e_x$, giving
 
 $$
-\tilde\Pi_x = \tfrac{1}{2}\left(e_t + i \vec e_x\right).
+\tilde\Pi_{\mathrm{id},x} = \tfrac{1}{2}\left(e_t + i \vec e_x\right).
 $$
 
 ### Step 2: The Hamiltonian
@@ -124,7 +124,7 @@ where we have used the identity $\exp(\theta\,\vec e_z) = \cos\theta\,e_t + \sin
 The evolved state is
 
 $$
-\tilde{Ϛ}_{\Psi}(r'_t) = \tilde{U}(r'_t)\,\tilde\Pi_x\,\tilde{U}(r'_t)^{*}.
+\tilde{Ϛ}_{\Psi}(r'_t) = \tilde{U}(r'_t)\,\tilde\Pi_{\mathrm{id},x}\,\tilde{U}(r'_t)^{*}.
 $$
 
 Computing the product, using $\tilde{U}(r'_t)^{*} = \tilde{U}^{\natural}(r'_t) = \cos(\omega_L r'_t/(2c))\,e_t + \sin(\omega_L r'_t/(2c))\,\vec e_z$ (since $\tilde{U}$ is a real quaternion), gives
@@ -210,7 +210,7 @@ We have solved a second exercise in quantum physics — the Larmor precession of
 
 In the standard formulation, the solution proceeds through ket vectors, Pauli matrices, the Hamiltonian, the evolution operator, and the expectation value, giving $\langle  S_x\rangle(r'_t) =\frac{\hbar}{2}\cos(\omega_L r'_t/c)$.
 
-In the biquaternion formulation, the solution proceeds through the idempotent $\tilde\Pi_x$, the Hermitian Hamiltonian $\tilde H_\Psi$, the unit-norm evolution biquaternion $\tilde{U}(r'_t)$, the evolved state $\tilde{Ϛ}_{\Psi}(r'_t)$, and the pairing formula, giving the same result.
+In the biquaternion formulation, the solution proceeds through the idempotent $\tilde\Pi_{\mathrm{id},x}$, the Hermitian Hamiltonian $\tilde H_\Psi$, the unit-norm evolution biquaternion $\tilde{U}(r'_t)$, the evolved state $\tilde{Ϛ}_{\Psi}(r'_t)$, and the pairing formula, giving the same result.
 
 The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the evolution: the Hamiltonian is a Hermitian element of $\mathbb{B}_{\Psi}$, the evolution operator is a unit-norm biquaternion, the evolved state is the rotor conjugate of the initial state, and the expectation value is the normalised Hermitian form, read through the trace.
 
@@ -226,7 +226,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
 | $\gamma$ | Gyromagnetic ratio |
 | $\omega_L = \gamma B_0$ | Larmor frequency |
-| $\tilde\Pi_x = \tfrac{1}{2}(e_t + i\vec e_x)$ | Spin-up state along $x$ |
+| $\tilde\Pi_{\mathrm{id},x} = \tfrac{1}{2}(e_t + i\vec e_x)$ | Spin-up state along $x$ |
 | $\tilde{S}_{\Psi,x} =\frac{\hbar}{2} i\vec e_x$ | Spin observable along $x$ |
 | $\tilde H_\Psi = -\frac{\hbar\,\omega_{L}}{2} i\vec e_z$ | Hamiltonian |
 | $\tilde{U}(r'_t) = \exp(-i\theta_{\mathrm{evo}}\sigma_3/2)$ | Evolution biquaternion |

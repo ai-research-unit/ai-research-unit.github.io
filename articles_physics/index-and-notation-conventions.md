@@ -68,7 +68,7 @@ $$
 a_{\mathrm{fop}},\quad b_{\mathrm{fop}},\quad a_{\mathrm{fop}}^{\dagger},\quad b_{\mathrm{fop}}^{\dagger},\quad \tilde{Ξ}_{\mathrm{fop}},\quad N_{\mathrm{fop}},\quad H_{\mathrm{fop}},\quad F_{\mathrm{fop}},\quad Ϙ_{\mathrm{fop}},\quad U_{\mathrm{fop}} .
 $$
 
-The label says exactly one thing — the glyph is not an element, it is an operator on the Fock space — and it is written on nothing else. It is not a general mark of operators: the momentum $\vec p=-i\,\hbar\nabla$ keeps its element glyph and never takes the label, the quadratures $x$ and $p$ of the oscillator are written $x$ and $p$, the spin $S_\eta=\frac{\hbar}{2}\sigma_\eta$ is written $S_\eta$, and the parity, charge-conjugation and time-reversal maps $P$, $C$ and $T$ carry no label. Where a ladder is meant as an element of the algebra it is written with the element's glyph, the truncated pair $\vec\Upsilon_1,\vec\Upsilon_2$, and the abstract ladder operator keeps the label, $a_{\mathrm{fop}}$.
+The label says exactly one thing — the glyph is not an element, it is an operator on the Fock space — and it is written on nothing else. It is not a general mark of operators: the momentum $\vec p=-i\,\hbar\nabla$ keeps its element glyph and never takes the label, the quadratures $x$ and $p$ of the oscillator are written $x$ and $p$, the spin $S_\eta=\frac{\hbar}{2}\sigma_\eta$ is written $S_\eta$, and the parity, charge-conjugation and time-reversal maps $P$, $C$ and $T$ carry no label. Where a ladder is meant as an element of the algebra it is written with the element's glyph, the truncated pair $\vec\Pi_{\mathrm{nil},1},\vec\Pi_{\mathrm{nil},2}$, and the abstract ladder operator keeps the label, $a_{\mathrm{fop}}$.
 
 The dagger is the general adjoint, and it stands in the caret. The dagger is the general adjoint (*Operator and Calculus Conventions*, §*The Operators*) and the label marks the Fock operator, so the two occupy two slots and never compete for one: $(a_{\mathrm{fop}})^{\dagger}$, contracted to $a_{\mathrm{fop}}^{\dagger}$. The dagger alone never says that its glyph is an operator, and the label alone never says that the Fock operator is self-adjoint; the two are read together, so that $a_{\mathrm{fop}}^{\dagger}$ is the adjoint of the ladder and $N_{\mathrm{fop}}$ is written without an adjoint because it is self-adjoint.
 
@@ -112,7 +112,9 @@ The two parts are named by their star. The Hermitian part is $\tilde H_\Psi$, th
 
 An angular-momentum total takes the role subscript, and its projection the axis. A spin label is $s$ with projection $s_z$; the total of an orbital and a spin part, or of several spins, is $s_{\mathrm{tot}}$ with projection $s_{\mathrm{tot},z}$, and the operator is $\tilde S_{\Psi,\mathrm{tot},\eta}=\tilde L_\eta+\tilde S_{\Psi,\eta}$. The subscript $\eta$ is the vector index of the operator, and the three components close on $[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}]=i\,\hbar\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\mathrm{tot},\eta}$. The projection is not a component of the operator: it is the scalar weight, the eigenvalue of $\tilde S_{\Psi,\mathrm{tot},3}$ on $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$, and it names the axis $z$ on which the measurement is made. The role is repeated in the projection so that $s_{1z}$, $s_{2z}$ and $s_{\mathrm{tot},z}$ are told apart without the context; the operator keeps the vector index $k$, and the weight never takes it. The role and the axis share one pair of braces, $s_{\mathrm{tot},z}$, with a comma between them.
 
-A sign is a subscript where the statement needs one, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$, as in $\tilde\Pi_+$ and $\tilde\Pi_-$. In the reduced biquaternion layer the sign belongs to the idempotent pair and to its coordinates, $\Pi_\pm$, $Q_{+}$ and $Q_{-}$, the two basis coordinates carrying the triangles, $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$, and a numbered element putting its number first in either case, $Q_{1+}$ and $Q_{1\blacktriangle}$; the element they build is $\breve Q$. The sign is read with the glyph: $\tilde Q_\pm$ names an element of the sector $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$, while $Q_\pm$ names the idempotent coordinates of $\breve Q$.
+A sign is a subscript where the statement needs one, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$, as in $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$. In the reduced biquaternion layer the sign belongs to the idempotent pair and to its coordinates, $\Pi_{\mathrm{id},\pm}$, $Q_{+}$ and $Q_{-}$, the two basis coordinates carrying the triangles, $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$, and a numbered element putting its number first in either case, $Q_{1+}$ and $Q_{1\blacktriangle}$; the element they build is $\breve Q$. The sign is read with the glyph: $\tilde Q_\pm$ names an element of the sector $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$, while $Q_\pm$ names the idempotent coordinates of $\breve Q$.
+
+The kind of a potent element is the first word of its subscript, after the sector label and before the sign: $\tilde\Pi_{\mathrm{id},\Phi,\mathrm{id}}$ and $\tilde\Pi_{\mathrm{id},+}$. The tag is part of the subscript and takes no separator, so $\tilde\Pi_{\mathrm{id},1,2}(\vec u)$ carries one subscript of four words; a site whose subscript does not begin with $\mathrm{id}$ or $\mathrm{nil}$ is either a missed site or a new one, and it is checked before it is added.
 
 The forms a subscript takes are these.
 
@@ -121,7 +123,7 @@ The forms a subscript takes are these.
 | a digit | $\tilde Q_1$, $\tilde Q_2$ |
 | a letter | $Q_\eta$, $Q_\mu$ |
 | two indices | $Q_{ab}$ |
-| a sign | $\tilde\Pi_\pm$ |
+| a sign | $\tilde\Pi_{\mathrm{id},\pm}$ |
 | an upright word | $\tilde Q_{\mathrm{f}t}$, $\tilde U_{\mathrm r}$ |
 | a grouped expression | $Q_{n+1}$ |
 
@@ -141,7 +143,7 @@ A subscript is written with the underscore and one token. It is a component or a
 | $\mathrm{opp}$ | The opposite algebra, written on an algebra name or on an element that names a tensor factor |
 | $\mathrm{orb}$, $\mathrm{inc}$, $\mathrm{out}$, $\mathrm{lor}$, $\mathrm{rgs}$, $\mathrm{tpl}$, $\mathrm{prm}$, $\mathrm{dfc}$, $\mathrm{obf}$, $\mathrm{adg}$ | The three-letter labels of a construction or a variant, the last six separating two spellings; the index is the mathematical *Index and Notation Conventions*, §*The Three-Letter Labels* |
 | $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | The four general products, written by their two slots and their conjugations, never by a code; with $\bullet$ their symmetric parts and with $\wedge$ their antisymmetric parts, the class carried by the subscript |
-| $Q_{\mathrm{f}t}$, $Q_{n+1}$, $\tilde\Pi_\pm$, $L_{\mathrm{axf},e_\mu}$ | The subscript forms: a label carried with its direction in one field, a grouped expression, a sign, a label first and an index after a comma |
+| $Q_{\mathrm{f}t}$, $Q_{n+1}$, $\tilde\Pi_{\mathrm{id},\pm}$, $L_{\mathrm{axf},e_\mu}$ | The subscript forms: a label carried with its direction in one field, a grouped expression, a sign, a label first and an index after a comma |
 | $s_{\mathrm{tot}}$, $s_{\mathrm{tot},z}$, $\tilde S_{\Psi,\mathrm{tot},\eta}$ | Total angular-momentum label, its projection, and the operator, which carries the vector index $\eta$ |
 
 ## Further Reading

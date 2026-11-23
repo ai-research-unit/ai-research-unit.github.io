@@ -92,7 +92,7 @@ the sum of the spin-$0$ and spin-$1$ characters, with the spin-$2$ character $\x
 The same four-dimensional object is also an algebra, and as an algebra it is simple: $M_2(\mathbb{C})$ has no nontrivial two-sided ideals, and up to isomorphism it has a single irreducible left module, the two-dimensional spinor space $S$, a minimal left ideal,
 
 $$
-S = \mathbb{B}\,\tilde\Pi , \qquad \tilde\Pi^2 = \tilde\Pi \neq 0 , \qquad \dim_{\mathbb{C}} S = 2 ,
+S = \mathbb{B}\,\tilde\Pi_{\mathrm{id}} , \qquad \tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}} \neq 0 , \qquad \dim_{\mathbb{C}} S = 2 ,
 $$
 
 on which the rotation generators act by left multiplication as the spin-$\tfrac12$ representation. The spin-$\tfrac12$ content belongs to the **module**, not to the algebra-as-rotation-module of the previous subsection. The two facts — the algebra is $D^{(0)}\oplus D^{(1)}$ under conjugation, and its irreducible module is spin-$\tfrac12$ — are both true and are not in tension, because they are statements about different actions.
@@ -289,7 +289,7 @@ The finite algebra is finite because it is the local value space; the tower is i
 | $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ | Clebsch–Gordan decomposition |
 | $\vec\nabla_\Phi\vec\nabla_\Phi = -\Delta_\Phi\,e_t$ | The truncated second gradient, in the material chart; $\Delta_\Phi=\sum_\eta\partial^2/\partial r_\eta^2$ |
 | $U(\mathrm{SU}(2))$ | Universal enveloping algebra (infinite-dimensional) |
-| $S = \mathbb{B}\tilde\Pi$ | Peirce carrier: the two-dimensional spinor module, a minimal left ideal here; $\tilde\Pi$ a nonzero idempotent |
+| $S = \mathbb{B}\tilde\Pi_{\mathrm{id}}$ | Peirce carrier: the two-dimensional spinor module, a minimal left ideal here; $\tilde\Pi_{\mathrm{id}}$ a nonzero idempotent |
 | $\mathcal{Q}_{l\,n_{\mathrm{mag}}}$ | Multipole moment (a functional of the source) |
 | $\xi_l(\theta_{\mathrm{rat}})$ | Character of $D^{(l)}$; $\xi_0+\xi_1 = 2+2\cos\theta_{\mathrm{rat}}$, with $\theta_{\mathrm{rat}}$ the rotation angle |
 

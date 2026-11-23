@@ -124,9 +124,9 @@ $$
 P_{+}=\frac{I+H}{2},\qquad P_{-}=\frac{I-H}{2},\qquad H=P_{+}-P_{-}.
 $$
 
-These are exactly the idempotents $\tilde\Pi_\pm=(e_t\pm\tilde{Ζ})/2$ of the biquaternion article, with $H=\tilde{Ζ}$ and $I=e_t$. The root of $+1$ is therefore not a separate principle: it is the order-two case of one root of order $n$.
+These are exactly the idempotents $\tilde\Pi_{\mathrm{id},\pm}=(e_t\pm\tilde{Ζ})/2$ of the biquaternion article, with $H=\tilde{Ζ}$ and $I=e_t$. The root of $+1$ is therefore not a separate principle: it is the order-two case of one root of order $n$.
 
-**The biquaternion article reads the same construction in the same order.** It takes the root of $+1$, obtains the pair $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ by the halving map, and then chooses a nonzero element $u$ of a mixed Peirce line, the partner $v$ being determined by the normalisation $uv=\tilde\Pi_+$. The choice is the basis, its reciprocal rescaling is the gauge parameter $\lambda$ of *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*, and the idempotents do not depend on it. One root, then one gauge point: the primitive data is the root at every $n$, and the biquaternion case $n=2$ needs nothing that the case $n\ge3$ does not.
+**The biquaternion article reads the same construction in the same order.** It takes the root of $+1$, obtains the pair $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ by the halving map, and then chooses a nonzero element $u$ of a mixed Peirce line, the partner $v$ being determined by the normalisation $uv=\tilde\Pi_{\mathrm{id},+}$. The choice is the basis, its reciprocal rescaling is the gauge parameter $\lambda$ of *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*, and the idempotents do not depend on it. One root, then one gauge point: the primitive data is the root at every $n$, and the biquaternion case $n=2$ needs nothing that the case $n\ge3$ does not.
 
 **What changes for $n>2$.** The gauge grows from one parameter to $n-1$, one per simple nilpotent, and the mixed elements are indexed by pairs. The root still produces all $n$ idempotents, and it produces the $n$ eigenlines at once.
 

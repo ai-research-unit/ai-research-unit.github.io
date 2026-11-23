@@ -10,15 +10,15 @@ $$
 \tilde{Ζ}^2=e_t .
 $$
 
-The second is the idempotents of the algebra, the elements $\tilde\Pi$ with $\tilde\Pi^2=\tilde\Pi$. The two subjects are one subject, because the **halving map**
+The second is the idempotents of the algebra, the elements $\tilde\Pi_{\mathrm{id}}$ with $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$. The two subjects are one subject, because the **halving map**
 
 $$
 H(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ}),\qquad \tilde{Ζ}^2=e_t,
 $$
 
-is a bijection from the roots of $+1$ onto the idempotents, with inverse $H^{-1}(\tilde\Pi)=2\tilde\Pi-e_t$. A root carries two idempotents and not one: the halving map picks the member attached to $+1$, and the other is its value at $-\tilde{Ζ}$; with $\tilde\Pi_{+}(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ and $\tilde\Pi_{-}(\tilde{Ζ})=\tfrac12(e_t-\tilde{Ζ})=\tilde\Pi_{+}(-\tilde{Ζ})$, the two are a complete orthogonal pair, $\tilde\Pi_{+}(\tilde{Ζ})+\tilde\Pi_{-}(\tilde{Ζ})=e_t$ and $\tilde\Pi_{+}(\tilde{Ζ})\tilde\Pi_{-}(\tilde{Ζ})=0$, and the root is their difference, $\tilde{Ζ}=\tilde\Pi_{+}(\tilde{Ζ})-\tilde\Pi_{-}(\tilde{Ζ})$. The reason is a two-line computation: if $\tilde{Ζ}^2=e_t$ then $\tilde\Pi^2=\tfrac14(e_t+2\tilde{Ζ}+e_t)=\tilde\Pi$, and if $\tilde\Pi^2=\tilde\Pi$ then $(2\tilde\Pi-e_t)^2=4\tilde\Pi^2-4\tilde\Pi+e_t=e_t$. Every idempotent of the algebra is read through that map, on the roots of $+1$ alone, and the families of idempotents are the families of the roots of $+1$ read through it.
+is a bijection from the roots of $+1$ onto the idempotents, with inverse $H^{-1}(\tilde\Pi_{\mathrm{id}})=2\tilde\Pi_{\mathrm{id}}-e_t$. A root carries two idempotents and not one: the halving map picks the member attached to $+1$, and the other is its value at $-\tilde{Ζ}$; with $\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ and $\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})=\tfrac12(e_t-\tilde{Ζ})=\tilde\Pi_{\mathrm{id},+}(-\tilde{Ζ})$, the two are a complete orthogonal pair, $\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})+\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})=e_t$ and $\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})=0$, and the root is their difference, $\tilde{Ζ}=\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})-\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})$. The reason is a two-line computation: if $\tilde{Ζ}^2=e_t$ then $\tilde\Pi_{\mathrm{id}}^2=\tfrac14(e_t+2\tilde{Ζ}+e_t)=\tilde\Pi_{\mathrm{id}}$, and if $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$ then $(2\tilde\Pi_{\mathrm{id}}-e_t)^2=4\tilde\Pi_{\mathrm{id}}^2-4\tilde\Pi_{\mathrm{id}}+e_t=e_t$. Every idempotent of the algebra is read through that map, on the roots of $+1$ alone, and the families of idempotents are the families of the roots of $+1$ read through it.
 
-**The results.** The roots of $+1$ are the two **trivial roots** $\pm e_t$; the **purely imaginary roots** $\pm i\vec u$ over the real vectors $\vec u$ with $\vec u^2=-e_t$, a two-real-parameter family; and the **non-Hermitian roots** $\vec\zeta+i\vec\zeta'$ with $\vec\zeta\neq0$ and the two real conditions $\zeta_x^2+\zeta_y^2+\zeta_z^2-(\zeta'_x)^2-(\zeta'_y)^2-(\zeta'_z)^2=-1$ and $\zeta_x\zeta'_x+\zeta_y\zeta'_y+\zeta_z\zeta'_z=0$, a four-real-parameter family. There are no others. Every idempotent of the algebra is trivial, $0$ or $e_t$, or of the form $\tilde\Pi=\tfrac12(e_t+\tilde{Ζ})$ with $\tilde{Ζ}$ a root of $+1$; the **trivial roots** give the trivial idempotents, the **purely imaginary roots** give the **non-trivial Hermitian idempotents**, and the **non-Hermitian roots** give a four-real-parameter family of **non-Hermitian idempotents** lying in none of the four four-dimensional remarkable subspaces. Each root carries the two idempotents $\tilde\Pi_{+}(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ and $\tilde\Pi_{-}(\tilde{Ζ})=\tfrac12(e_t-\tilde{Ζ})=e_t-\tilde\Pi_{+}(\tilde{Ζ})$, a complete orthogonal pair whose difference is the root; the class $\{\tilde{Ζ},-\tilde{Ζ}\}$ gives the same unordered pair.
+**The results.** The roots of $+1$ are the two **trivial roots** $\pm e_t$; the **purely imaginary roots** $\pm i\vec u$ over the real vectors $\vec u$ with $\vec u^2=-e_t$, a two-real-parameter family; and the **non-Hermitian roots** $\vec\zeta+i\vec\zeta'$ with $\vec\zeta\neq0$ and the two real conditions $\zeta_x^2+\zeta_y^2+\zeta_z^2-(\zeta'_x)^2-(\zeta'_y)^2-(\zeta'_z)^2=-1$ and $\zeta_x\zeta'_x+\zeta_y\zeta'_y+\zeta_z\zeta'_z=0$, a four-real-parameter family. There are no others. Every idempotent of the algebra is trivial, $0$ or $e_t$, or of the form $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+\tilde{Ζ})$ with $\tilde{Ζ}$ a root of $+1$; the **trivial roots** give the trivial idempotents, the **purely imaginary roots** give the **non-trivial Hermitian idempotents**, and the **non-Hermitian roots** give a four-real-parameter family of **non-Hermitian idempotents** lying in none of the four four-dimensional remarkable subspaces. Each root carries the two idempotents $\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ and $\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})=\tfrac12(e_t-\tilde{Ζ})=e_t-\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})$, a complete orthogonal pair whose difference is the root; the class $\{\tilde{Ζ},-\tilde{Ζ}\}$ gives the same unordered pair.
 
 The following table collects the results at a glance.
 
@@ -31,8 +31,8 @@ The following table collects the results at a glance.
 | Hermitian idempotents | $0,e_t$; $\tfrac12(e_t\pm i\vec u)$, the star fixing them | two isolated, a two-parameter family |
 | Non-Hermitian idempotents | $\tfrac12(e_t+\vec\zeta+i\vec\zeta')$, not fixed by the star | a four-parameter family |
 | Halving map | bijection $H(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ | two-to-one on unordered pairs |
-| Standard pair | $\tilde\Pi_{\pm}=\tfrac12(e_t\pm i\vec e_z)$, orthogonal, complete and primitive | two elements |
-| Zero divisors | every non-trivial idempotent; every non-pure zero divisor is $2Q_t\tilde\Pi$ | two families |
+| Standard pair | $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z)$, orthogonal, complete and primitive | two elements |
+| Zero divisors | every non-trivial idempotent; every non-pure zero divisor is $2Q_t\tilde\Pi_{\mathrm{id}}$ | two families |
 | Involutions | the quaternion conjugation and the bar exchange the standard pair; the star fixes both | three involutions |
 
 The article is algebraic. It does not treat the roots of the general quadratic $\tilde{Ζ}^2=\tilde Q$, which is *The Square Roots of a General Element in the Biquaternion Algebra*; the roots of $0$ and the nilpotents, which are *The Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*; the structure of the zero-divisor set, which is *Zero Divisors and Invertibles in the Biquaternion Algebra*; or the corner decomposition the standard idempotents produce, which is *Peirce Decompositions of the Biquaternion Algebra*. The subsection §*The Roots of Minus One* records how the roots of $-1$ are read off the roots of $+1$; it is a remark, it is used nowhere, and it opens nothing.
@@ -41,7 +41,7 @@ $$
 (\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k},
 $$
 
-and the square of a pure element is $\vec Q^2=-(\vec Q,\vec Q)e_t$. The remarkable subspaces $\mathbb{B}_{C}$, $\mathbb{B}_{V}$, $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are *Subspaces and Decompositions*. A root of a central value is written $\tilde{Ζ}$ (§*The Root Convention* of *Special Element and Peirce Conventions*), an idempotent $\tilde\Pi$ (§*The Idempotent Convention*), the two members of a complete pair with the two signs, $\tilde\Pi_{+}$ and $\tilde\Pi_{-}$, the subscript $+$ naming the member attached to $+1$, and a generic element $\tilde Q$.
+and the square of a pure element is $\vec Q^2=-(\vec Q,\vec Q)e_t$. The remarkable subspaces $\mathbb{B}_{C}$, $\mathbb{B}_{V}$, $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are *Subspaces and Decompositions*. A root of a central value is written $\tilde{Ζ}$ (§*The Root Convention* of *Special Element and Peirce Conventions*), an idempotent $\tilde\Pi_{\mathrm{id}}$ (§*The Idempotent Convention*), the two members of a complete pair with the two signs, $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$, the subscript $+$ naming the member attached to $+1$, and a generic element $\tilde Q$.
 
 The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*, and the general definition of an idempotent, with the orthogonal, complete and primitive families and the Hermitian idempotent, is the same article. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots and idempotents of their own, and they are *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, *Square Roots of One and the Idempotents of the General Quaternionic Algebra* and *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*.
 
@@ -285,37 +285,37 @@ The non-trivial roots therefore lie in the six-real-dimensional vector subspace 
 
 **The idempotents of $\mathbb{B}$ are exactly the trivial idempotents $0,e_t$, the non-trivial Hermitian idempotents $\tfrac12(e_t\pm i\vec u)$, and the non-Hermitian idempotents $\tfrac12(e_t+\vec\zeta+i\vec\zeta')$; the standard pair is orthogonal, complete and primitive, and every idempotent is the image of exactly one root of $+1$ under the halving map.**
 
-The **idempotents** of $\mathbb{B}$ are the elements satisfying $\tilde\Pi^2=\tilde\Pi$, the square being the one of the general plain bilinear product. They correspond to projectors under multiplication, and in $\mathbb{B}$ they do two jobs at once: they classify the non-pure zero divisors, every one of which is a complex multiple of an idempotent; and they are in bijection with the roots of $+1$ through the halving map, each root carrying a complete orthogonal pair, so their classification is the classification of those roots. The definition and the families are the general ones of *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, read here in the general plain bilinear product.
+The **idempotents** of $\mathbb{B}$ are the elements satisfying $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$, the square being the one of the general plain bilinear product. They correspond to projectors under multiplication, and in $\mathbb{B}$ they do two jobs at once: they classify the non-pure zero divisors, every one of which is a complex multiple of an idempotent; and they are in bijection with the roots of $+1$ through the halving map, each root carrying a complete orthogonal pair, so their classification is the classification of those roots. The definition and the families are the general ones of *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, read here in the general plain bilinear product.
 
 ### The Definition
 
-**Definition.** An element $\tilde\Pi$ of $\mathbb{B}$ is an **idempotent of the biquaternion algebra** when
+**Definition.** An element $\tilde\Pi_{\mathrm{id}}$ of $\mathbb{B}$ is an **idempotent of the biquaternion algebra** when
 
 $$
-\tilde\Pi^2=\tilde\Pi .
+\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}} .
 $$
 
 The element $0$ is an idempotent, and so is the unit $e_t$; the two are the **trivial idempotents**. The equation names a product, and the notion is relative to it: throughout this article the product is the general plain bilinear product, the multiplication of the algebra, and another product is named where it is meant. The idempotents of the other three general products are not these; each is the subject of its own article, and the four sets are compared in *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-Two idempotents $\tilde\Pi,\tilde\Pi'$ are **orthogonal** when $\tilde\Pi\tilde\Pi'=\tilde\Pi'\tilde\Pi=0$; a family is **pairwise orthogonal** when its members are pairwise orthogonal, and **complete** when in addition their sum is $e_t$.
+Two idempotents $\tilde\Pi_{\mathrm{id}},\tilde\Pi_{\mathrm{id}}'$ are **orthogonal** when $\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}'=\tilde\Pi_{\mathrm{id}}'\tilde\Pi_{\mathrm{id}}=0$; a family is **pairwise orthogonal** when its members are pairwise orthogonal, and **complete** when in addition their sum is $e_t$.
 
-Idempotents encode direct summands of the algebra: an idempotent $\tilde\Pi$ and its complement $e_t-\tilde\Pi$ split the underlying complex vector space,
+Idempotents encode direct summands of the algebra: an idempotent $\tilde\Pi_{\mathrm{id}}$ and its complement $e_t-\tilde\Pi_{\mathrm{id}}$ split the underlying complex vector space,
 
 $$
-\mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}(e_t-\tilde\Pi),\qquad \mathbb{B}=\tilde\Pi\mathbb{B}\oplus(e_t-\tilde\Pi)\mathbb{B},
+\mathbb{B}=\mathbb{B}\tilde\Pi_{\mathrm{id}}\oplus\mathbb{B}(e_t-\tilde\Pi_{\mathrm{id}}),\qquad \mathbb{B}=\tilde\Pi_{\mathrm{id}}\mathbb{B}\oplus(e_t-\tilde\Pi_{\mathrm{id}})\mathbb{B},
 $$
 
 and every such decomposition arises from an idempotent. A **primitive** idempotent is one that is not a sum of two nonzero orthogonal idempotents. The general statements, with the orthogonal, complete and primitive families, the Hermitian idempotent and the Peirce decomposition, are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ### The Two Idempotents of a Root
 
-**A root $\tilde{Ζ}$ of $+1$ carries the two idempotents $\tilde\Pi_{+}(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ and $\tilde\Pi_{-}(\tilde{Ζ})=\tfrac12(e_t-\tilde{Ζ})=e_t-\tilde\Pi_{+}(\tilde{Ζ})$; they are complete and orthogonal, and their difference is the root.**
+**A root $\tilde{Ζ}$ of $+1$ carries the two idempotents $\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ and $\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})=\tfrac12(e_t-\tilde{Ζ})=e_t-\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})$; they are complete and orthogonal, and their difference is the root.**
 
 **Theorem (the two idempotents of a root).** For a root $\tilde{Ζ}$ of $+1$, the elements
 
 $$
 \boxed{\;
-\tilde\Pi_{+}(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ}),\qquad \tilde\Pi_{-}(\tilde{Ζ})=\tfrac12(e_t-\tilde{Ζ})
+\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ}),\qquad \tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})=\tfrac12(e_t-\tilde{Ζ})
 \;}
 $$
 
@@ -323,23 +323,23 @@ are idempotent, complete and orthogonal; the identities are collected in the tab
 
 | Identity | Value |
 |---|---|
-| $\tilde\Pi_{+}(\tilde{Ζ})^{2}$ | $\tilde\Pi_{+}(\tilde{Ζ})$ |
-| $\tilde\Pi_{-}(\tilde{Ζ})^{2}$ | $\tilde\Pi_{-}(\tilde{Ζ})$ |
-| $\tilde\Pi_{+}(\tilde{Ζ})\tilde\Pi_{-}(\tilde{Ζ})$ | $0$ |
-| $\tilde\Pi_{-}(\tilde{Ζ})\tilde\Pi_{+}(\tilde{Ζ})$ | $0$ |
-| $\tilde\Pi_{+}(\tilde{Ζ})+\tilde\Pi_{-}(\tilde{Ζ})$ | $e_t$ |
-| $\tilde\Pi_{+}(\tilde{Ζ})-\tilde\Pi_{-}(\tilde{Ζ})$ | $\tilde{Ζ}$ |
+| $\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})^{2}$ | $\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})$ |
+| $\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})^{2}$ | $\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})$ |
+| $\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})$ | $0$ |
+| $\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})$ | $0$ |
+| $\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})+\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})$ | $e_t$ |
+| $\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})-\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})$ | $\tilde{Ζ}$ |
 
 **Proof.** The idempotence is the computation
 
 $$
-\tilde\Pi_{+}(\tilde{Ζ})^2=\tfrac14(e_t+\tilde{Ζ})^2=\tfrac14(e_t+2\tilde{Ζ}+\tilde{Ζ}^2)=\tfrac14(2e_t+2\tilde{Ζ})=\tilde\Pi_{+}(\tilde{Ζ}),
+\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})^2=\tfrac14(e_t+\tilde{Ζ})^2=\tfrac14(e_t+2\tilde{Ζ}+\tilde{Ζ}^2)=\tfrac14(2e_t+2\tilde{Ζ})=\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ}),
 $$
 
 and the same computation with $\tilde{Ζ}$ replaced by $-\tilde{Ζ}$ gives the second identity. The sum is $\tfrac12(e_t+\tilde{Ζ})+\tfrac12(e_t-\tilde{Ζ})=e_t$. The product is
 
 $$
-\tilde\Pi_{+}(\tilde{Ζ})\tilde\Pi_{-}(\tilde{Ζ})=\tfrac14(e_t+\tilde{Ζ})(e_t-\tilde{Ζ})=\tfrac14(e_t-\tilde{Ζ}^2)=0,
+\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})=\tfrac14(e_t+\tilde{Ζ})(e_t-\tilde{Ζ})=\tfrac14(e_t-\tilde{Ζ}^2)=0,
 $$
 
 and equally in the other order. The difference is $\tfrac12(e_t+\tilde{Ζ})-\tfrac12(e_t-\tilde{Ζ})=\tilde{Ζ}$.
@@ -350,119 +350,119 @@ The trivial roots give the trivial pairs: the pair of $+e_t$ is $(e_t,0)$ and th
 
 ### The Arithmetic of the Pair
 
-**The pair of a root is complete, $\tilde\Pi_{+} + \tilde\Pi_{-}=e_t$; the root is its difference, $\tilde\Pi_{+} - \tilde\Pi_{-}=\tilde{Ζ}$; the pair is orthogonal, $\tilde\Pi_{+}\tilde\Pi_{-}=\tilde\Pi_{-}\tilde\Pi_{+}=0$; and multiplication by the root is the sign change of the pair, $+1$ on $\tilde\Pi_{+}$ and $-1$ on $\tilde\Pi_{-}$.**
+**The pair of a root is complete, $\tilde\Pi_{\mathrm{id},+} + \tilde\Pi_{\mathrm{id},-}=e_t$; the root is its difference, $\tilde\Pi_{\mathrm{id},+} - \tilde\Pi_{\mathrm{id},-}=\tilde{Ζ}$; the pair is orthogonal, $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=\tilde\Pi_{\mathrm{id},-}\tilde\Pi_{\mathrm{id},+}=0$; and multiplication by the root is the sign change of the pair, $+1$ on $\tilde\Pi_{\mathrm{id},+}$ and $-1$ on $\tilde\Pi_{\mathrm{id},-}$.**
 
-Throughout this section $\tilde{Ζ}$ is a root of $+1$ and $\tilde\Pi_{+}=\tilde\Pi_{+}(\tilde{Ζ})$, $\tilde\Pi_{-}=\tilde\Pi_{-}(\tilde{Ζ})$ its two idempotents, as in §*The Two Idempotents of a Root*.
+Throughout this section $\tilde{Ζ}$ is a root of $+1$ and $\tilde\Pi_{\mathrm{id},+}=\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})$, $\tilde\Pi_{\mathrm{id},-}=\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})$ its two idempotents, as in §*The Two Idempotents of a Root*.
 
 **Addition.** The pair is **complete**: the two idempotents sum to the unit,
 
 $$
-\tilde\Pi_{+} + \tilde\Pi_{-}=\tfrac12(e_t+\tilde{Ζ})+\tfrac12(e_t-\tilde{Ζ})=e_t .
+\tilde\Pi_{\mathrm{id},+} + \tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t+\tilde{Ζ})+\tfrac12(e_t-\tilde{Ζ})=e_t .
 $$
 
 **Subtraction.** The two idempotents differ by the root,
 
 $$
-\tilde\Pi_{+} - \tilde\Pi_{-}=\tfrac12(e_t+\tilde{Ζ})-\tfrac12(e_t-\tilde{Ζ})=\tilde{Ζ},
+\tilde\Pi_{\mathrm{id},+} - \tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t+\tilde{Ζ})-\tfrac12(e_t-\tilde{Ζ})=\tilde{Ζ},
 $$
 
-so that the root is read on the pair as $\tilde{Ζ}=\tilde\Pi_{+} - \tilde\Pi_{-}$, equivalently $\tilde{Ζ}=2\tilde\Pi_{+} - e_t$. Each idempotent is the complement of the other, and replacing the root by $-\tilde{Ζ}$ interchanges them,
+so that the root is read on the pair as $\tilde{Ζ}=\tilde\Pi_{\mathrm{id},+} - \tilde\Pi_{\mathrm{id},-}$, equivalently $\tilde{Ζ}=2\tilde\Pi_{\mathrm{id},+} - e_t$. Each idempotent is the complement of the other, and replacing the root by $-\tilde{Ζ}$ interchanges them,
 
 $$
-\tilde\Pi_{+}(-\tilde{Ζ})=\tilde\Pi_{-}(\tilde{Ζ}),\qquad \tilde\Pi_{-}(-\tilde{Ζ})=\tilde\Pi_{+}(\tilde{Ζ}).
+\tilde\Pi_{\mathrm{id},+}(-\tilde{Ζ})=\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ}),\qquad \tilde\Pi_{\mathrm{id},-}(-\tilde{Ζ})=\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ}).
 $$
 
 **Multiplication.** The pair is **orthogonal**,
 
 $$
-\tilde\Pi_{+}\tilde\Pi_{-}=\tfrac14(e_t+\tilde{Ζ})(e_t-\tilde{Ζ})=\tfrac14(e_t-\tilde{Ζ}^2)=0,
+\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=\tfrac14(e_t+\tilde{Ζ})(e_t-\tilde{Ζ})=\tfrac14(e_t-\tilde{Ζ}^2)=0,
 $$
 
-and equally $\tilde\Pi_{-}\tilde\Pi_{+}=0$. The four products of the pair are collected in the multiplication table.
+and equally $\tilde\Pi_{\mathrm{id},-}\tilde\Pi_{\mathrm{id},+}=0$. The four products of the pair are collected in the multiplication table.
 
-| $\cdot$ | $\tilde\Pi_{+}$ | $\tilde\Pi_{-}$ |
+| $\cdot$ | $\tilde\Pi_{\mathrm{id},+}$ | $\tilde\Pi_{\mathrm{id},-}$ |
 |---|---|---|
-| $\tilde\Pi_{+}$ | $\tilde\Pi_{+}$ | $0$ |
-| $\tilde\Pi_{-}$ | $0$ | $\tilde\Pi_{-}$ |
+| $\tilde\Pi_{\mathrm{id},+}$ | $\tilde\Pi_{\mathrm{id},+}$ | $0$ |
+| $\tilde\Pi_{\mathrm{id},-}$ | $0$ | $\tilde\Pi_{\mathrm{id},-}$ |
 
-so the $\mathbb{C}$-span $\mathbb{C}\tilde\Pi_{+}\oplus\mathbb{C}\tilde\Pi_{-}$ is a commutative subalgebra isomorphic to $\mathbb{C}\times\mathbb{C}$, with the componentwise product $(s\tilde\Pi_{+} + t\tilde\Pi_{-})(s'\tilde\Pi_{+} + t'\tilde\Pi_{-})=ss'\tilde\Pi_{+} + tt'\tilde\Pi_{-}$, and the root is the element $(+1,-1)$ of that algebra.
+so the $\mathbb{C}$-span $\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-}$ is a commutative subalgebra isomorphic to $\mathbb{C}\times\mathbb{C}$, with the componentwise product $(s\tilde\Pi_{\mathrm{id},+} + t\tilde\Pi_{\mathrm{id},-})(s'\tilde\Pi_{\mathrm{id},+} + t'\tilde\Pi_{\mathrm{id},-})=ss'\tilde\Pi_{\mathrm{id},+} + tt'\tilde\Pi_{\mathrm{id},-}$, and the root is the element $(+1,-1)$ of that algebra.
 
 Multiplication by the root is diagonal on the pair. On the left,
 
 $$
-\tilde{Ζ}\tilde\Pi_{+}=\tfrac12(\tilde{Ζ}+\tilde{Ζ}^2)=\tfrac12(e_t+\tilde{Ζ})=\tilde\Pi_{+},\qquad \tilde{Ζ}\tilde\Pi_{-}=\tfrac12(\tilde{Ζ}-\tilde{Ζ}^2)=-\tfrac12(e_t-\tilde{Ζ})=-\tilde\Pi_{-},
+\tilde{Ζ}\tilde\Pi_{\mathrm{id},+}=\tfrac12(\tilde{Ζ}+\tilde{Ζ}^2)=\tfrac12(e_t+\tilde{Ζ})=\tilde\Pi_{\mathrm{id},+},\qquad \tilde{Ζ}\tilde\Pi_{\mathrm{id},-}=\tfrac12(\tilde{Ζ}-\tilde{Ζ}^2)=-\tfrac12(e_t-\tilde{Ζ})=-\tilde\Pi_{\mathrm{id},-},
 $$
 
-and on the right $\tilde\Pi_{+}\tilde{Ζ}=\tilde\Pi_{+}$ and $\tilde\Pi_{-}\tilde{Ζ}=-\tilde\Pi_{-}$. Left multiplication by the root therefore acts by $+1$ on the subspace $\tilde\Pi_{+}\mathbb{B}$ and by $-1$ on $\tilde\Pi_{-}\mathbb{B}$, and right multiplication by the root acts by $+1$ on the subspace $\mathbb{B}\tilde\Pi_{+}$ and by $-1$ on $\mathbb{B}\tilde\Pi_{-}$. Since the pair is complete, every element splits on both sides,
+and on the right $\tilde\Pi_{\mathrm{id},+}\tilde{Ζ}=\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}\tilde{Ζ}=-\tilde\Pi_{\mathrm{id},-}$. Left multiplication by the root therefore acts by $+1$ on the subspace $\tilde\Pi_{\mathrm{id},+}\mathbb{B}$ and by $-1$ on $\tilde\Pi_{\mathrm{id},-}\mathbb{B}$, and right multiplication by the root acts by $+1$ on the subspace $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ and by $-1$ on $\mathbb{B}\tilde\Pi_{\mathrm{id},-}$. Since the pair is complete, every element splits on both sides,
 
 $$
-\mathbb{B}=\tilde\Pi_{+}\mathbb{B}\oplus\tilde\Pi_{-}\mathbb{B},\qquad \mathbb{B}=\mathbb{B}\tilde\Pi_{+}\oplus\mathbb{B}\tilde\Pi_{-},
+\mathbb{B}=\tilde\Pi_{\mathrm{id},+}\mathbb{B}\oplus\tilde\Pi_{\mathrm{id},-}\mathbb{B},\qquad \mathbb{B}=\mathbb{B}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{B}\tilde\Pi_{\mathrm{id},-},
 $$
 
 and these are exactly the signed-space decompositions of the two multiplications; the operator of left multiplication by the root is an involution, its square being the identity because $\tilde{Ζ}^2=e_t$. The action is collected in the table.
 
-| Multiplication by $\tilde{Ζ}$ | On $\tilde\Pi_{+}$ | On $\tilde\Pi_{-}$ |
+| Multiplication by $\tilde{Ζ}$ | On $\tilde\Pi_{\mathrm{id},+}$ | On $\tilde\Pi_{\mathrm{id},-}$ |
 |---|---|---|
 | left | $+1$ | $-1$ |
 | right | $+1$ | $-1$ |
 
 ### The Standard Idempotents
 
-**The algebra carries the standard orthogonal idempotents $\tilde\Pi_{+}=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_{-}=\tfrac12(e_t-i\vec e_z)$, the two idempotents of the root $i\vec e_z$, with $\tilde\Pi_{+}\tilde\Pi_{-}=0$ and $\tilde\Pi_{+} + \tilde\Pi_{-}=e_t$; each is primitive.**
+**The algebra carries the standard orthogonal idempotents $\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec e_z)$, the two idempotents of the root $i\vec e_z$, with $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$ and $\tilde\Pi_{\mathrm{id},+} + \tilde\Pi_{\mathrm{id},-}=e_t$; each is primitive.**
 
 Put
 
 $$
-\tilde\Pi_{+}=\frac{e_t+i\vec e_z}{2},\qquad \tilde\Pi_{-}=\frac{e_t-i\vec e_z}{2}.
+\tilde\Pi_{\mathrm{id},+}=\frac{e_t+i\vec e_z}{2},\qquad \tilde\Pi_{\mathrm{id},-}=\frac{e_t-i\vec e_z}{2}.
 $$
 
-They are the pair of the root $\tilde{Ζ}=i\vec e_z$, that is $\tilde\Pi_{+}=\tilde\Pi_{+}(i\vec e_z)$ and $\tilde\Pi_{-}=\tilde\Pi_{-}(i\vec e_z)$ in the notation of §*The Two Idempotents of a Root*, and $i\vec e_z$ is a root of $+1$, since $(i\vec e_z)^2=i^2\vec e_z^2=(-1)(-1)=e_t$. Hence $\tilde\Pi_{+}^2=\tilde\Pi_{+}$ and $\tilde\Pi_{-}^2=\tilde\Pi_{-}$ by §*The Two Idempotents of a Root*, and
+They are the pair of the root $\tilde{Ζ}=i\vec e_z$, that is $\tilde\Pi_{\mathrm{id},+}=\tilde\Pi_{\mathrm{id},+}(i\vec e_z)$ and $\tilde\Pi_{\mathrm{id},-}=\tilde\Pi_{\mathrm{id},-}(i\vec e_z)$ in the notation of §*The Two Idempotents of a Root*, and $i\vec e_z$ is a root of $+1$, since $(i\vec e_z)^2=i^2\vec e_z^2=(-1)(-1)=e_t$. Hence $\tilde\Pi_{\mathrm{id},+}^2=\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}^2=\tilde\Pi_{\mathrm{id},-}$ by §*The Two Idempotents of a Root*, and
 
 $$
-\tilde\Pi_{+}\tilde\Pi_{-}=\tilde\Pi_{-}\tilde\Pi_{+}=\frac{e_t-(i\vec e_z)^2}{4}=0,\qquad \tilde\Pi_{+} + \tilde\Pi_{-}=e_t .
+\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=\tilde\Pi_{\mathrm{id},-}\tilde\Pi_{\mathrm{id},+}=\frac{e_t-(i\vec e_z)^2}{4}=0,\qquad \tilde\Pi_{\mathrm{id},+} + \tilde\Pi_{\mathrm{id},-}=e_t .
 $$
 
-So $\tilde\Pi_{+}$ and $\tilde\Pi_{-}$ are orthogonal idempotents summing to the unit. They are not central, since $\vec e_x$ anticommutes with $i\vec e_z$ and so does not commute with either. Each is primitive, and these two are the standard idempotents of the algebra. The properties of the pair are collected in the table.
+So $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$ are orthogonal idempotents summing to the unit. They are not central, since $\vec e_x$ anticommutes with $i\vec e_z$ and so does not commute with either. Each is primitive, and these two are the standard idempotents of the algebra. The properties of the pair are collected in the table.
 
-| Property | $\tilde\Pi_{+},\tilde\Pi_{-}$ |
+| Property | $\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-}$ |
 |---|---|
-| Orthogonal | $\tilde\Pi_{+}\tilde\Pi_{-}=\tilde\Pi_{-}\tilde\Pi_{+}=0$ |
-| Complete | $\tilde\Pi_{+}+\tilde\Pi_{-}=e_t$ |
+| Orthogonal | $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=\tilde\Pi_{\mathrm{id},-}\tilde\Pi_{\mathrm{id},+}=0$ |
+| Complete | $\tilde\Pi_{\mathrm{id},+}+\tilde\Pi_{\mathrm{id},-}=e_t$ |
 | Central | no |
 | Primitive | yes |
-| Hermitian idempotent | yes, $\tilde\Pi_{\pm}^{*}=\tilde\Pi_{\pm}$ |
-| Zero divisor | yes, $\tilde\Pi_{+}\tilde\Pi_{-}=0$ |
+| Hermitian idempotent | yes, $\tilde\Pi_{\mathrm{id},\pm}^{*}=\tilde\Pi_{\mathrm{id},\pm}$ |
+| Zero divisor | yes, $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$ |
 
 
 Left multiplication by $\vec e_z$ and by $\vec e_y$ acts on them as
 
 $$
-\vec e_z\tilde\Pi_{+}=-i\tilde\Pi_{+},\qquad \vec e_z\tilde\Pi_{-}=i\tilde\Pi_{-},\qquad \vec e_y\tilde\Pi_{+}=i\vec e_x\tilde\Pi_{+},
+\vec e_z\tilde\Pi_{\mathrm{id},+}=-i\tilde\Pi_{\mathrm{id},+},\qquad \vec e_z\tilde\Pi_{\mathrm{id},-}=i\tilde\Pi_{\mathrm{id},-},\qquad \vec e_y\tilde\Pi_{\mathrm{id},+}=i\vec e_x\tilde\Pi_{\mathrm{id},+},
 $$
 
-the first because $\vec e_z\tilde\Pi_{+}=(\vec e_z+i\vec e_z^2)/2=(\vec e_z-i)/2=-i\tilde\Pi_{+}$, and similarly for $\tilde\Pi_{-}$. The relations reduce the four products $e_\mu\tilde\Pi_{+}$ to $\tilde\Pi_{+}$ and $\vec e_x\tilde\Pi_{+}$, so that $\{\tilde\Pi_{+},\vec e_x\tilde\Pi_{+}\}$ is a $\mathbb{C}$-basis of the subspace $\mathbb{B}\tilde\Pi_{+}$. The two subspaces, their direct-sum decomposition of $\mathbb{B}$, their bases and their structure are *Peirce Decompositions of the Biquaternion Algebra*.
+the first because $\vec e_z\tilde\Pi_{\mathrm{id},+}=(\vec e_z+i\vec e_z^2)/2=(\vec e_z-i)/2=-i\tilde\Pi_{\mathrm{id},+}$, and similarly for $\tilde\Pi_{\mathrm{id},-}$. The relations reduce the four products $e_\mu\tilde\Pi_{\mathrm{id},+}$ to $\tilde\Pi_{\mathrm{id},+}$ and $\vec e_x\tilde\Pi_{\mathrm{id},+}$, so that $\{\tilde\Pi_{\mathrm{id},+},\vec e_x\tilde\Pi_{\mathrm{id},+}\}$ is a $\mathbb{C}$-basis of the subspace $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$. The two subspaces, their direct-sum decomposition of $\mathbb{B}$, their bases and their structure are *Peirce Decompositions of the Biquaternion Algebra*.
 
 ### The Classification of the Idempotents
 
-**Every idempotent of $\mathbb{B}$ is either trivial ($0$ or $e_t$) or of the form $\tilde\Pi=\tfrac12(e_t+\tilde{Ζ})$ with $\tilde{Ζ}^2=e_t$; there are no others.**
+**Every idempotent of $\mathbb{B}$ is either trivial ($0$ or $e_t$) or of the form $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+\tilde{Ζ})$ with $\tilde{Ζ}^2=e_t$; there are no others.**
 
 **Theorem (the idempotents).** Every idempotent of $\mathbb{B}$ is either trivial ($0$ or $e_t$) or of the form
 
 $$
 \boxed{\;
-\tilde\Pi=\tfrac12 e_t+\tfrac12\tilde{Ζ}
+\tilde\Pi_{\mathrm{id}}=\tfrac12 e_t+\tfrac12\tilde{Ζ}
 \;},
 $$
 
 where $\tilde{Ζ}\in\mathbb{B}$ is a root of $+1$, that is $\tilde{Ζ}^2=e_t$. There are no other idempotents in $\mathbb{B}$.
 
-**Proof.** Write $\tilde\Pi=\Pi_te_t+\vec\Pi$ with $\Pi_t\in\mathbb{C}$ and $\vec\Pi$ pure. Then
+**Proof.** Write $\tilde\Pi_{\mathrm{id}}=\Pi_te_t+\vec\Pi$ with $\Pi_t\in\mathbb{C}$ and $\vec\Pi$ pure. Then
 
 $$
-\tilde\Pi^2=\bigl(\Pi_t^2-(\vec\Pi,\vec\Pi)\bigr)e_t+2\Pi_t\vec\Pi,
+\tilde\Pi_{\mathrm{id}}^2=\bigl(\Pi_t^2-(\vec\Pi,\vec\Pi)\bigr)e_t+2\Pi_t\vec\Pi,
 $$
 
-and equating this to $\tilde\Pi=\Pi_te_t+\vec\Pi$ gives the two equations
+and equating this to $\tilde\Pi_{\mathrm{id}}=\Pi_te_t+\vec\Pi$ gives the two equations
 
 $$
 \Pi_t^2-(\vec\Pi,\vec\Pi)=\Pi_t,\qquad 2\Pi_t\vec\Pi=\vec\Pi .
@@ -480,45 +480,45 @@ $$
 (\tilde{Ζ},\tilde{Ζ})=\sum_k(2\Pi_k)^2=4(\vec\Pi,\vec\Pi)=-1,
 $$
 
-so $\tilde{Ζ}^2=-(\tilde{Ζ},\tilde{Ζ})e_t=e_t$: the element $\tilde{Ζ}$ is a root of $+1$, and $\vec\Pi=\tilde{Ζ}/2$, whence $\tilde\Pi=\tfrac12 e_t+\tfrac12\tilde{Ζ}$. The other member of the pair is obtained by replacing $\tilde{Ζ}$ by $-\tilde{Ζ}$, which is again a root of $+1$.
+so $\tilde{Ζ}^2=-(\tilde{Ζ},\tilde{Ζ})e_t=e_t$: the element $\tilde{Ζ}$ is a root of $+1$, and $\vec\Pi=\tilde{Ζ}/2$, whence $\tilde\Pi_{\mathrm{id}}=\tfrac12 e_t+\tfrac12\tilde{Ζ}$. The other member of the pair is obtained by replacing $\tilde{Ζ}$ by $-\tilde{Ζ}$, which is again a root of $+1$.
 
 The trivial idempotents correspond to the trivial roots $\tilde{Ζ}=\pm e_t$: the two elements $\tfrac12(e_t+\tilde{Ζ})$ are then $e_t$ and $0$.
 
 ### The Correspondence with the Roots of One
 
-**The halving map $H(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ is a bijection from the roots of $+1$ onto the idempotents; the pair map $\tilde{Ζ}\mapsto(\tilde\Pi_{+}(\tilde{Ζ}),\tilde\Pi_{-}(\tilde{Ζ}))$ is a bijection from the roots of $+1$ onto the ordered complete orthogonal pairs of idempotents; and the class $\{\tilde{Ζ},-\tilde{Ζ}\}$ gives the same unordered pair.**
+**The halving map $H(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ is a bijection from the roots of $+1$ onto the idempotents; the pair map $\tilde{Ζ}\mapsto(\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ}),\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ}))$ is a bijection from the roots of $+1$ onto the ordered complete orthogonal pairs of idempotents; and the class $\{\tilde{Ζ},-\tilde{Ζ}\}$ gives the same unordered pair.**
 
 **Theorem (the halving map).** The map
 
 $$
 \boxed{\;
-H(\tilde{Ζ})=\tilde\Pi_{+}(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})
+H(\tilde{Ζ})=\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})
 \;}
 $$
 
 is a **bijection** from the set of roots of $+1$ onto the set of idempotents of $\mathbb{B}$.
 
-**Proof.** *Well defined:* if $\tilde{Ζ}^2=e_t$, then $\tilde\Pi_{+}(\tilde{Ζ})^2=\tilde\Pi_{+}(\tilde{Ζ})$ by §*The Two Idempotents of a Root*. *Injective:* $\tilde\Pi_{+}(\tilde{Ζ})=\tilde\Pi_{+}(\tilde{Ζ}')$ gives $\tilde{Ζ}=\tilde{Ζ}'$, since $\tilde{Ζ}=2\tilde\Pi_{+}(\tilde{Ζ})-e_t$. *Surjective:* the classification theorem says every idempotent is $\tfrac12(e_t+\tilde{Ζ})$ or $\tfrac12(e_t-\tilde{Ζ})$ for some root $\tilde{Ζ}$ of $+1$; the first is $\tilde\Pi_{+}(\tilde{Ζ})$, and the second is $\tilde\Pi_{-}(\tilde{Ζ})=\tilde\Pi_{+}(-\tilde{Ζ})$, while $-\tilde{Ζ}$ is again a root of $+1$.
+**Proof.** *Well defined:* if $\tilde{Ζ}^2=e_t$, then $\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})^2=\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})$ by §*The Two Idempotents of a Root*. *Injective:* $\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})=\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ}')$ gives $\tilde{Ζ}=\tilde{Ζ}'$, since $\tilde{Ζ}=2\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})-e_t$. *Surjective:* the classification theorem says every idempotent is $\tfrac12(e_t+\tilde{Ζ})$ or $\tfrac12(e_t-\tilde{Ζ})$ for some root $\tilde{Ζ}$ of $+1$; the first is $\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})$, and the second is $\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})=\tilde\Pi_{\mathrm{id},+}(-\tilde{Ζ})$, while $-\tilde{Ζ}$ is again a root of $+1$.
 
 **Theorem (the pair map).** The map
 
 $$
-\tilde{Ζ}\longmapsto\bigl(\tilde\Pi_{+}(\tilde{Ζ}),\tilde\Pi_{-}(\tilde{Ζ})\bigr)
+\tilde{Ζ}\longmapsto\bigl(\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ}),\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})\bigr)
 $$
 
-is a **bijection** from the set of roots of $+1$ onto the set of ordered pairs $(\tilde\Pi_{+},\tilde\Pi_{-})$ of idempotents that are complete and orthogonal, $\tilde\Pi_{+} + \tilde\Pi_{-}=e_t$ and $\tilde\Pi_{+}\tilde\Pi_{-}=\tilde\Pi_{-}\tilde\Pi_{+}=0$.
+is a **bijection** from the set of roots of $+1$ onto the set of ordered pairs $(\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-})$ of idempotents that are complete and orthogonal, $\tilde\Pi_{\mathrm{id},+} + \tilde\Pi_{\mathrm{id},-}=e_t$ and $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=\tilde\Pi_{\mathrm{id},-}\tilde\Pi_{\mathrm{id},+}=0$.
 
-**Proof.** *Well defined:* the pair of a root is complete and orthogonal by §*The Arithmetic of the Pair*. *Injective:* the root is recovered from the pair, $\tilde{Ζ}=\tilde\Pi_{+} - \tilde\Pi_{-}$, so two roots with the same pair are equal. *Surjective:* an ordered complete orthogonal pair $(\tilde\Pi_{+},\tilde\Pi_{-})$ gives the element $\tilde{Ζ}=\tilde\Pi_{+} - \tilde\Pi_{-}$, and
+**Proof.** *Well defined:* the pair of a root is complete and orthogonal by §*The Arithmetic of the Pair*. *Injective:* the root is recovered from the pair, $\tilde{Ζ}=\tilde\Pi_{\mathrm{id},+} - \tilde\Pi_{\mathrm{id},-}$, so two roots with the same pair are equal. *Surjective:* an ordered complete orthogonal pair $(\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-})$ gives the element $\tilde{Ζ}=\tilde\Pi_{\mathrm{id},+} - \tilde\Pi_{\mathrm{id},-}$, and
 
 $$
-\tilde{Ζ}^2=\tilde\Pi_{+}^2-\tilde\Pi_{+}\tilde\Pi_{-} - \tilde\Pi_{-}\tilde\Pi_{+} + \tilde\Pi_{-}^2=\tilde\Pi_{+} + \tilde\Pi_{-}=e_t,
+\tilde{Ζ}^2=\tilde\Pi_{\mathrm{id},+}^2-\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-} - \tilde\Pi_{\mathrm{id},-}\tilde\Pi_{\mathrm{id},+} + \tilde\Pi_{\mathrm{id},-}^2=\tilde\Pi_{\mathrm{id},+} + \tilde\Pi_{\mathrm{id},-}=e_t,
 $$
 
 so $\tilde{Ζ}$ is a root of $+1$ and the pair is its pair.
 
 The pair map is a bijection, so the idempotent classification and the root classification are the same classification read through it. The three root families and the idempotents they carry correspond as follows.
 
-| Family | Root $\tilde{Ζ}$ | $\tilde\Pi_{+}(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ | $\tilde\Pi_{-}(\tilde{Ζ})=\tfrac12(e_t-\tilde{Ζ})$ | Unordered pair |
+| Family | Root $\tilde{Ζ}$ | $\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ | $\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})=\tfrac12(e_t-\tilde{Ζ})$ | Unordered pair |
 |---|---|---|---|---|
 | Trivial roots | $e_t$ | $e_t$ | $0$ | $\{0,e_t\}$ |
 | Trivial roots | $-e_t$ | $0$ | $e_t$ | $\{0,e_t\}$ |
@@ -527,13 +527,13 @@ The pair map is a bijection, so the idempotent classification and the root class
 
 The signs in a row are correlated, and the third and fourth columns are the two members of the ordered pair.
 
-Consequently the **complementary pairs** $\{\tilde\Pi,e_t-\tilde\Pi\}$ of idempotents, unordered, are in bijection with the roots of $+1$ modulo the sign identification $\tilde{Ζ}\sim-\tilde{Ζ}$, since
+Consequently the **complementary pairs** $\{\tilde\Pi_{\mathrm{id}},e_t-\tilde\Pi_{\mathrm{id}}\}$ of idempotents, unordered, are in bijection with the roots of $+1$ modulo the sign identification $\tilde{Ζ}\sim-\tilde{Ζ}$, since
 
 $$
-\tilde\Pi_{-}(\tilde{Ζ})=\tfrac12(e_t-\tilde{Ζ})=e_t-\tilde\Pi_{+}(\tilde{Ζ})=\tilde\Pi_{+}(-\tilde{Ζ}).
+\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})=\tfrac12(e_t-\tilde{Ζ})=e_t-\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})=\tilde\Pi_{\mathrm{id},+}(-\tilde{Ζ}).
 $$
 
-The inverse of the halving map is $H^{-1}(\tilde\Pi)=2\tilde\Pi-e_t$, and the root is the difference of its pair, $\tilde{Ζ}=\tilde\Pi_{+} - \tilde\Pi_{-}$.
+The inverse of the halving map is $H^{-1}(\tilde\Pi_{\mathrm{id}})=2\tilde\Pi_{\mathrm{id}}-e_t$, and the root is the difference of its pair, $\tilde{Ζ}=\tilde\Pi_{\mathrm{id},+} - \tilde\Pi_{\mathrm{id},-}$.
 
 ### The Families of Idempotents
 
@@ -547,48 +547,48 @@ The idempotents fall into the three following families.
 | Non-trivial Hermitian idempotents | $\tfrac12(e_t\pm i\vec u)$, with $\vec u^2=-e_t$ | two | two-parameter family | $\mathbb{B}_{\Psi}$ | yes |
 | Non-Hermitian idempotents | $\tfrac12(e_t+\vec\zeta+i\vec\zeta')$, with $\vec\zeta\neq0$ and the two real conditions | four | four-parameter family | none of the four four-dimensional subspaces | no |
 
-Since $i\vec u$ is Hermitian for a real vector $\vec u$ with $\vec u^2=-e_t$, these are the non-trivial Hermitian idempotents, and they lie in the Hermitian subspace $\mathbb{B}_{\Psi}$. They are the idempotents attached to the Hermitian elements of the algebra. A Hermitian idempotent satisfies $\tilde\Pi^{*}=\tilde\Pi$, and two idempotents are orthogonal when their product vanishes. For the non-Hermitian root the vector part $\tfrac12(\vec\zeta+i\vec\zeta')$ carries both a nonzero real part $\vec\zeta$ and a nonzero imaginary part $\vec\zeta'$, so the idempotent lies in none of the four four-dimensional subspaces $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. The halving map is a bijection, so the trivial roots give the two isolated trivial idempotents, the purely imaginary roots give the two-real-parameter family of non-trivial Hermitian idempotents, and the non-Hermitian roots give the four-real-parameter family of non-Hermitian idempotents. Every non-trivial idempotent is a zero divisor, as §*Idempotents and the Zero Divisors* shows, so the non-trivial idempotents lie in the zero-divisor set of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, while the trivial idempotents $0$ and $e_t$ are outside it, $e_t$ being an invertible element.
+Since $i\vec u$ is Hermitian for a real vector $\vec u$ with $\vec u^2=-e_t$, these are the non-trivial Hermitian idempotents, and they lie in the Hermitian subspace $\mathbb{B}_{\Psi}$. They are the idempotents attached to the Hermitian elements of the algebra. A Hermitian idempotent satisfies $\tilde\Pi_{\mathrm{id}}^{*}=\tilde\Pi_{\mathrm{id}}$, and two idempotents are orthogonal when their product vanishes. For the non-Hermitian root the vector part $\tfrac12(\vec\zeta+i\vec\zeta')$ carries both a nonzero real part $\vec\zeta$ and a nonzero imaginary part $\vec\zeta'$, so the idempotent lies in none of the four four-dimensional subspaces $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. The halving map is a bijection, so the trivial roots give the two isolated trivial idempotents, the purely imaginary roots give the two-real-parameter family of non-trivial Hermitian idempotents, and the non-Hermitian roots give the four-real-parameter family of non-Hermitian idempotents. Every non-trivial idempotent is a zero divisor, as §*Idempotents and the Zero Divisors* shows, so the non-trivial idempotents lie in the zero-divisor set of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, while the trivial idempotents $0$ and $e_t$ are outside it, $e_t$ being an invertible element.
 
 ### Idempotents and the Zero Divisors
 
-**Every non-trivial idempotent is a zero divisor, and conversely every non-pure zero divisor is the complex multiple $\tilde Q=2Q_t\tilde\Pi$ of a non-trivial idempotent.**
+**Every non-trivial idempotent is a zero divisor, and conversely every non-pure zero divisor is the complex multiple $\tilde Q=2Q_t\tilde\Pi_{\mathrm{id}}$ of a non-trivial idempotent.**
 
 A non-trivial idempotent is a zero divisor, since
 
 $$
-\tilde\Pi(e_t-\tilde\Pi)=\tilde\Pi-\tilde\Pi^2=0,
+\tilde\Pi_{\mathrm{id}}(e_t-\tilde\Pi_{\mathrm{id}})=\tilde\Pi_{\mathrm{id}}-\tilde\Pi_{\mathrm{id}}^2=0,
 $$
 
-and both factors are nonzero unless $\tilde\Pi$ is $0$ or $e_t$. Conversely, every non-pure zero divisor — every zero divisor with $Q_t\neq0$ — is a complex multiple of a non-trivial idempotent,
+and both factors are nonzero unless $\tilde\Pi_{\mathrm{id}}$ is $0$ or $e_t$. Conversely, every non-pure zero divisor — every zero divisor with $Q_t\neq0$ — is a complex multiple of a non-trivial idempotent,
 
 $$
-\tilde Q=2Q_t\tilde\Pi,\qquad \tilde\Pi=\frac{\tilde Q}{2Q_t}.
+\tilde Q=2Q_t\tilde\Pi_{\mathrm{id}},\qquad \tilde\Pi_{\mathrm{id}}=\frac{\tilde Q}{2Q_t}.
 $$
 
-**The two classes meet only at $0$.** If $\tilde\Pi^2=\tilde\Pi$ and $\tilde\Pi^2=0$ then $\tilde\Pi=0$, so no idempotent is a nonzero nilpotent.
+**The two classes meet only at $0$.** If $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$ and $\tilde\Pi_{\mathrm{id}}^2=0$ then $\tilde\Pi_{\mathrm{id}}=0$, so no idempotent is a nonzero nilpotent.
 
 The two kinds of zero divisor are collected in the table.
 
 | Zero divisor | Form | Relation to the idempotents |
 |---|---|---|
-| Non-pure | $\tilde Q=2Q_t\tilde\Pi$, $Q_t\neq0$ | a complex multiple of a non-trivial idempotent |
+| Non-pure | $\tilde Q=2Q_t\tilde\Pi_{\mathrm{id}}$, $Q_t\neq0$ | a complex multiple of a non-trivial idempotent |
 | Pure | separate family | not of this form |
 
 The derivation, from the square relation $\tilde Q^2=2Q_t\tilde Q$ that the non-pure family satisfies, together with the structure of the two families of the zero-divisor set and their distribution among the remarkable subspaces, is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
 
 ### Idempotents and the Involutions
 
-**For the standard pair, the quaternion conjugation and the bar exchange $\tilde\Pi_{+}$ and $\tilde\Pi_{-}$, while the star fixes both.**
+**For the standard pair, the quaternion conjugation and the bar exchange $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$, while the star fixes both.**
 
 The action of the involutions on the idempotents is collected in the table.
 
-| Involution | $0$ | $e_t$ | $\tilde\Pi_{+}$ | $\tilde\Pi_{-}$ |
+| Involution | $0$ | $e_t$ | $\tilde\Pi_{\mathrm{id},+}$ | $\tilde\Pi_{\mathrm{id},-}$ |
 |---|---|---|---|---|
-| quaternion $\tilde Q^{\natural}=Q_t-\vec Q$ | $0$ | $e_t$ | $\tilde\Pi_{-}$ | $\tilde\Pi_{+}$ |
-| bar $\bar{\cdot}$ | $0$ | $e_t$ | $\tilde\Pi_{-}$ | $\tilde\Pi_{+}$ |
-| star $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$ | $0$ | $e_t$ | $\tilde\Pi_{+}$ | $\tilde\Pi_{-}$ |
+| quaternion $\tilde Q^{\natural}=Q_t-\vec Q$ | $0$ | $e_t$ | $\tilde\Pi_{\mathrm{id},-}$ | $\tilde\Pi_{\mathrm{id},+}$ |
+| bar $\bar{\cdot}$ | $0$ | $e_t$ | $\tilde\Pi_{\mathrm{id},-}$ | $\tilde\Pi_{\mathrm{id},+}$ |
+| star $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$ | $0$ | $e_t$ | $\tilde\Pi_{\mathrm{id},+}$ | $\tilde\Pi_{\mathrm{id},-}$ |
 
-The quaternion conjugation changes the sign of the vector part and fixes the central $i$, so it sends $i\vec e_z$ to $-i\vec e_z$ and exchanges the two idempotents. The bar conjugates the complex coefficient $i$ and fixes $\vec e_z$, so it also exchanges them. The star is the composite $\bar{\cdot}\circ{}^{\natural}$, so it fixes each: $\tilde\Pi_{+}^{*}=\tilde\Pi_{+}$ and $\tilde\Pi_{-}^{*}=\tilde\Pi_{-}$. The trivial idempotents $0$ and $e_t$ are fixed by all three. The non-trivial fixed idempotents of the star are the non-trivial Hermitian idempotents of §*The Families of Idempotents*, and the trivial idempotents $0$ and $e_t$ are fixed as well; the quaternion conjugation and the bar exchange the members of the standard pair without preserving the individual idempotent.
+The quaternion conjugation changes the sign of the vector part and fixes the central $i$, so it sends $i\vec e_z$ to $-i\vec e_z$ and exchanges the two idempotents. The bar conjugates the complex coefficient $i$ and fixes $\vec e_z$, so it also exchanges them. The star is the composite $\bar{\cdot}\circ{}^{\natural}$, so it fixes each: $\tilde\Pi_{\mathrm{id},+}^{*}=\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}^{*}=\tilde\Pi_{\mathrm{id},-}$. The trivial idempotents $0$ and $e_t$ are fixed by all three. The non-trivial fixed idempotents of the star are the non-trivial Hermitian idempotents of §*The Families of Idempotents*, and the trivial idempotents $0$ and $e_t$ are fixed as well; the quaternion conjugation and the bar exchange the members of the standard pair without preserving the individual idempotent.
 
 ## The Idempotents in the Six Subspaces
 
@@ -612,10 +612,10 @@ So of the four four-dimensional subspaces, $\mathbb{B}_{\Phi}$ is the one that c
 **The idempotents of the algebra.** Every idempotent of $\mathbb{B}$ is $0$, or $e_t$, or of the form
 
 $$
-\tilde\Pi = \tfrac{1}{2}\left(e_t + \tilde{Ζ} i\right) , \qquad \tilde{Ζ}^2 = -1 ,
+\tilde\Pi_{\mathrm{id}} = \tfrac{1}{2}\left(e_t + \tilde{Ζ} i\right) , \qquad \tilde{Ζ}^2 = -1 ,
 $$
 
-with $\tilde{Ζ}$ a root of minus one; there are no others. Writing the idempotent as $\tilde\Pi = \Pi_te_t + \vec q$, with $\Pi_t$ the scalar part and $\vec q$ the vector part, and using $\vec q^2 = -(\vec q,\vec q)e_t$, the equation $\tilde\Pi^2 = \tilde\Pi$ is the pair
+with $\tilde{Ζ}$ a root of minus one; there are no others. Writing the idempotent as $\tilde\Pi_{\mathrm{id}} = \Pi_te_t + \vec q$, with $\Pi_t$ the scalar part and $\vec q$ the vector part, and using $\vec q^2 = -(\vec q,\vec q)e_t$, the equation $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$ is the pair
 
 $$
 \Pi_t^2 - (\vec q,\vec q) = \Pi_t , \qquad 2\Pi_t\vec q = \vec q .
@@ -625,7 +625,7 @@ $$
 
 **Proof.** Read the two equations of the display above on each subspace, whose elements are enumerated in the sections. The second equation is the one that does the work: it forces $\vec q = 0$ unless the scalar part is exactly $\tfrac{1}{2}$, and the scalar part is real only on the centre and in the Hermitian subspace. *Centre:* $\vec q = 0$ and $\Pi_t^2 = \Pi_t$, so $\Pi_t \in \{0,1\}$. *Vector:* $\Pi_t = 0$, and $2\Pi_t\vec q = \vec q$ gives $\vec q = 0$ directly. *Quaternion:* $\Pi_t = h_0$ real and $\vec q$ a real vector; $2h_0\vec q = \vec q$ gives $\vec q = 0$ or $h_0 = \tfrac{1}{2}$, and $h_0 = \tfrac{1}{2}$ in the first equation gives $(\vec q,\vec q) = -\tfrac{1}{4}$, impossible for a real vector, so $\vec q = 0$ and $h_0 \in \{0,1\}$. *Anti-quaternion:* $\Pi_t$ is purely imaginary and $\vec q$ is real; $2\Pi_t\vec q = \vec q$ forces $\vec q = 0$ since $2\Pi_t \neq 1$, and the first equation then gives $\Pi_t^2 = \Pi_t$ with $\Pi_t$ purely imaginary, so $\Pi_t = 0$. *Hermitian:* $\Pi_t = a_0$ real and $\vec q = i\vec p$ with $\vec p$ real, so $(\vec q,\vec q) = -(\vec p,\vec p)$; the second equation gives $\vec p = 0$ or $a_0 = \tfrac{1}{2}$, and with $\vec p = 0$ the first gives $a_0 \in \{0,1\}$ while with $a_0 = \tfrac{1}{2}$ it gives $(\vec p,\vec p) = \tfrac{1}{4}$. *Anti-Hermitian:* $\Pi_t$ is purely imaginary and $\vec q$ is real; the second equation forces $\vec q = 0$, and the first gives $\Pi_t = 0$.
 
-**Corollary.** The nontrivial idempotents present in the remarkable subspaces are exactly the **Hermitian idempotents** $\tfrac{1}{2}(e_t + i\vec q_a)$, and they all lie in the Hermitian subspace. Each is a zero divisor, since $\tilde\Pi\tilde\Pi^{\natural}=\tfrac{1}{4}(1-(\vec q_a,\vec q_a))e_t=0$; so is its complement, and the two are orthogonal and sum to $e_t$. Every idempotent of the algebra not of this form — every idempotent built on a non-Hermitian root of minus one — lies in none of the remarkable subspaces, its vector part mixing a real and an imaginary direction. So the remarkable subspaces see exactly one nontrivial family of idempotents, in exactly one subspace.
+**Corollary.** The nontrivial idempotents present in the remarkable subspaces are exactly the **Hermitian idempotents** $\tfrac{1}{2}(e_t + i\vec q_a)$, and they all lie in the Hermitian subspace. Each is a zero divisor, since $\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}^{\natural}=\tfrac{1}{4}(1-(\vec q_a,\vec q_a))e_t=0$; so is its complement, and the two are orthogonal and sum to $e_t$. Every idempotent of the algebra not of this form — every idempotent built on a non-Hermitian root of minus one — lies in none of the remarkable subspaces, its vector part mixing a real and an imaginary direction. So the remarkable subspaces see exactly one nontrivial family of idempotents, in exactly one subspace.
 
 ## Summary
 
@@ -637,9 +637,9 @@ $$
 | Idempotents | $0,e_t$; $\tfrac12(e_t\pm i\vec u)$; $\tfrac12(e_t+\vec\zeta+i\vec\zeta')$ with the same conditions |
 | Hermitian idempotents | $0,e_t$; $\tfrac12(e_t\pm i\vec u)$, the star fixing them; two isolated and a two-parameter family |
 | Non-Hermitian idempotents | $\tfrac12(e_t+\vec\zeta+i\vec\zeta')$, a four-parameter family |
-| Halving map | bijection $H(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$, inverse $H^{-1}(\tilde\Pi)=2\tilde\Pi-e_t$ |
-| Standard pair | $\tilde\Pi_{\pm}=\tfrac12(e_t\pm i\vec e_z)$, orthogonal, complete and primitive |
-| Zero divisors | every non-trivial idempotent; every non-pure zero divisor is $2Q_t\tilde\Pi$; the pure ones form a separate family |
+| Halving map | bijection $H(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$, inverse $H^{-1}(\tilde\Pi_{\mathrm{id}})=2\tilde\Pi_{\mathrm{id}}-e_t$ |
+| Standard pair | $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z)$, orthogonal, complete and primitive |
+| Zero divisors | every non-trivial idempotent; every non-pure zero divisor is $2Q_t\tilde\Pi_{\mathrm{id}}$; the pure ones form a separate family |
 | Involutions | the quaternion conjugation and the bar exchange the standard pair; the star fixes both |
 
 The roots of $+1$ in $\mathbb{B}$ are, by the vector–scalar split and the product formula $\tilde{Ζ}^2=(Ζ_t^2-(\vec{Ζ},\vec{Ζ}))e_t+2Ζ_t\vec{Ζ}$:
@@ -650,7 +650,7 @@ The roots of $+1$ in $\mathbb{B}$ are, by the vector–scalar split and the prod
 
 All roots except the trivial ones are pure. Every root of $+1$ is invertible, with $\tilde{Ζ}^{-1}=\tilde{Ζ}$. The roots of $-1$ are read off the roots of $+1$ by the central imaginary, $\tilde{Ζ}\mapsto i\tilde{Ζ}$, a bijection that turns the three families into the two central scalars $\pm i$, the family of pure real roots $\pm\vec u$, and the family $-\vec\zeta'+i\vec\zeta$; the mechanism needs a central scalar of square $-1$ and is not universal.
 
-The idempotents are the trivial elements $0$ and $e_t$ and the elements $\tilde\Pi=\tfrac12(e_t\pm\tilde{Ζ})$ with $\tilde{Ζ}$ a root of $+1$. Each root carries the two idempotents $\tilde\Pi_{+}(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ and $\tilde\Pi_{-}(\tilde{Ζ})=\tfrac12(e_t-\tilde{Ζ})=e_t-\tilde\Pi_{+}(\tilde{Ζ})$, a complete orthogonal pair: their sum is $e_t$, their product is $0$, their difference is the root, and multiplication by the root acts by $+1$ on $\tilde\Pi_{+}$ and $-1$ on $\tilde\Pi_{-}$, so that the pair splits the algebra into the $+1$ and $-1$ spaces of that multiplication. The **halving map** $H(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ is a bijection from the roots of $+1$ onto the idempotents, with inverse $H^{-1}(\tilde\Pi)=2\tilde\Pi-e_t$, and the class $\{\tilde{Ζ},-\tilde{Ζ}\}$ gives the complementary pair $\{\tilde\Pi_{+},\tilde\Pi_{-}\}$. The three families of roots give the trivial idempotents, the non-trivial Hermitian idempotents in $\mathbb{B}_{\Psi}$ (a two-real-parameter family), and the non-Hermitian idempotents, lying in none of the four four-dimensional subspaces (a four-real-parameter family). The standard pair $\tilde\Pi_{+}=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_{-}=\tfrac12(e_t-i\vec e_z)$ is orthogonal, sums to $e_t$, is primitive. An idempotent and its complement split the algebra, $\mathbb{B}=\tilde\Pi\mathbb{B}\oplus(e_t-\tilde\Pi)\mathbb{B}$, the algebraic form of a projector and its complementary projector. Every non-trivial idempotent is a zero divisor, and every non-pure zero divisor is the complex multiple $2Q_t\tilde\Pi$ of a non-trivial idempotent, developed in *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
+The idempotents are the trivial elements $0$ and $e_t$ and the elements $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t\pm\tilde{Ζ})$ with $\tilde{Ζ}$ a root of $+1$. Each root carries the two idempotents $\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ and $\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})=\tfrac12(e_t-\tilde{Ζ})=e_t-\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})$, a complete orthogonal pair: their sum is $e_t$, their product is $0$, their difference is the root, and multiplication by the root acts by $+1$ on $\tilde\Pi_{\mathrm{id},+}$ and $-1$ on $\tilde\Pi_{\mathrm{id},-}$, so that the pair splits the algebra into the $+1$ and $-1$ spaces of that multiplication. The **halving map** $H(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ is a bijection from the roots of $+1$ onto the idempotents, with inverse $H^{-1}(\tilde\Pi_{\mathrm{id}})=2\tilde\Pi_{\mathrm{id}}-e_t$, and the class $\{\tilde{Ζ},-\tilde{Ζ}\}$ gives the complementary pair $\{\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-}\}$. The three families of roots give the trivial idempotents, the non-trivial Hermitian idempotents in $\mathbb{B}_{\Psi}$ (a two-real-parameter family), and the non-Hermitian idempotents, lying in none of the four four-dimensional subspaces (a four-real-parameter family). The standard pair $\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec e_z)$ is orthogonal, sums to $e_t$, is primitive. An idempotent and its complement split the algebra, $\mathbb{B}=\tilde\Pi_{\mathrm{id}}\mathbb{B}\oplus(e_t-\tilde\Pi_{\mathrm{id}})\mathbb{B}$, the algebraic form of a projector and its complementary projector. Every non-trivial idempotent is a zero divisor, and every non-pure zero divisor is the complex multiple $2Q_t\tilde\Pi_{\mathrm{id}}$ of a non-trivial idempotent, developed in *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
 
 ## Summary of Notation
 
@@ -662,14 +662,14 @@ The idempotents are the trivial elements $0$ and $e_t$ and the elements $\tilde\
 | $\tilde{Ζ}$ | A root of $+1$, $\tilde{Ζ}^{2}=e_t$ |
 | $\tilde{Ζ}=Ζ_te_t+\vec{Ζ}$, $\vec{Ζ}=\vec\zeta+i\vec\zeta'$ | The scalar and vector parts of a root; $\vec\zeta,\vec\zeta'$ real pure |
 | $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$ | The complex dot product of two vector parts |
-| $\tilde\Pi$ | An idempotent, $\tilde\Pi^{2}=\tilde\Pi$ |
-| Hermitian idempotent | An idempotent fixed by the star, $\tilde\Pi^{*}=\tilde\Pi$ |
-| $\tilde\Pi_{\pm}=\tfrac12(e_t\pm i\vec e_z)$ | The standard idempotents, the pair of the root $i\vec e_z$ |
-| $\tilde\Pi_{\pm}(\tilde{Ζ})=\tfrac12(e_t\pm\tilde{Ζ})$ | The two idempotents carried by the root $\tilde{Ζ}$ |
-| $\tilde\Pi_{+}(\tilde{Ζ})+\tilde\Pi_{-}(\tilde{Ζ})=e_t$, $\tilde\Pi_{+}(\tilde{Ζ})\tilde\Pi_{-}(\tilde{Ζ})=0$ | Completeness and orthogonality of the pair |
-| $\tilde{Ζ}=\tilde\Pi_{+}(\tilde{Ζ})-\tilde\Pi_{-}(\tilde{Ζ})$ | The root as the difference of its pair |
+| $\tilde\Pi_{\mathrm{id}}$ | An idempotent, $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$ |
+| Hermitian idempotent | An idempotent fixed by the star, $\tilde\Pi_{\mathrm{id}}^{*}=\tilde\Pi_{\mathrm{id}}$ |
+| $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z)$ | The standard idempotents, the pair of the root $i\vec e_z$ |
+| $\tilde\Pi_{\mathrm{id},\pm}(\tilde{Ζ})=\tfrac12(e_t\pm\tilde{Ζ})$ | The two idempotents carried by the root $\tilde{Ζ}$ |
+| $\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})+\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})=e_t$, $\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})=0$ | Completeness and orthogonality of the pair |
+| $\tilde{Ζ}=\tilde\Pi_{\mathrm{id},+}(\tilde{Ζ})-\tilde\Pi_{\mathrm{id},-}(\tilde{Ζ})$ | The root as the difference of its pair |
 | $H(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ | The halving map from the roots of $+1$ to the idempotents |
-| $H^{-1}(\tilde\Pi)=2\tilde\Pi-e_t$ | The inverse halving map |
+| $H^{-1}(\tilde\Pi_{\mathrm{id}})=2\tilde\Pi_{\mathrm{id}}-e_t$ | The inverse halving map |
 | $\tilde Q^{\natural}=Q_t-\vec Q$ | The quaternion conjugation |
 | $\bar{\tilde Q}=\bar Q_t+\bar{\vec Q}$ | The coefficient conjugation, the bar |
 | $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$ | The star involution, the composite of the bar and the quaternion conjugation |

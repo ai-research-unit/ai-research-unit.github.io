@@ -26,7 +26,7 @@ Second, the word "rotor conjugation" is used for the gate action, and it must be
 
 The article is organised as follows. The gate group and its structure are described first. Then the standard single-qubit gate set is exhibited in biquaternion form. Then composition is treated as the algebra product, including the Clifford group. Then multi-qubit gates are built in the tensor-product arena, with the controlled gate, CNOT, CZ, and SWAP. Then a simple circuit — the preparation of a Bell state — is worked through algebraically. Then the reversible gates are contrasted with the irreversible channels of the read list. The article closes with what the reformulation does and does not claim, and with open questions.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for distinct $\mu,\nu$, with $\lambda$ the remaining index; the scalar imaginary is $i$, central and with $i^2 = -1$; the fixed-point subspaces are $\mathbb{B}_{C}$ (the complex subspace, the centre), $\mathbb{B}_{H}$ (the real-quaternion subspace), $\mathbb{B}_{\Psi}$ (Hermitian), and $\mathbb{B}_{\Phi}$ (anti-Hermitian). The doubled scalar part is $2\,\mathrm{Sc}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, and the reduction formula $2\,\mathrm{Sc}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde Q_{\mathrm{Had}})=2\,\mathrm{Sc}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*}) = 2\langle\tilde\Pi,\tilde Q_{\mathrm{Had}}\rangle_{*}$ is the Born rule; the star is inert on $\mathbb{B}_{\Psi}$ and the unstarred trace is real, and non-negative when $\tilde Q_{\mathrm{Had}}\ge0$. The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is the one fixed by the companion article on quantum physics,
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for distinct $\mu,\nu$, with $\lambda$ the remaining index; the scalar imaginary is $i$, central and with $i^2 = -1$; the fixed-point subspaces are $\mathbb{B}_{C}$ (the complex subspace, the centre), $\mathbb{B}_{H}$ (the real-quaternion subspace), $\mathbb{B}_{\Psi}$ (Hermitian), and $\mathbb{B}_{\Phi}$ (anti-Hermitian). The doubled scalar part is $2\,\mathrm{Sc}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, and the reduction formula $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde Q_{\mathrm{Had}}^{*})=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde Q_{\mathrm{Had}})=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde Q_{\mathrm{Had}}^{*}) = 2\langle\tilde\Pi_{\mathrm{id}},\tilde Q_{\mathrm{Had}}\rangle_{*}$ is the Born rule; the star is inert on $\mathbb{B}_{\Psi}$ and the unstarred trace is real, and non-negative when $\tilde Q_{\mathrm{Had}}\ge0$. The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is the one fixed by the companion article on quantum physics,
 
 $$
 e_t \mapsto I_2, \qquad \vec e_x \mapsto -i\sigma_1, \qquad \vec e_y \mapsto -i\sigma_2, \qquad \vec e_z \mapsto -i\sigma_3, \qquad i \mapsto i I_2 ,
@@ -301,26 +301,26 @@ The status of the tensor product is the open question inherited from the compani
 
 ### Controlled Gates
 
-A **controlled gate** is built from the two fundamental objects of the framework: an idempotent on the control factor and a gate on the target factor. Along the control axis $\vec u_{\mathrm r}$, let $\tilde\Pi_{1,2}(\vec u_{\mathrm r}) = \tfrac{1}{2}(e_t \pm i\vec u_{\mathrm r})$ be the complementary idempotents, and let $\tilde Q$ be any single-qubit gate. Define
+A **controlled gate** is built from the two fundamental objects of the framework: an idempotent on the control factor and a gate on the target factor. Along the control axis $\vec u_{\mathrm r}$, let $\tilde\Pi_{\mathrm{id},1,2}(\vec u_{\mathrm r}) = \tfrac{1}{2}(e_t \pm i\vec u_{\mathrm r})$ be the complementary idempotents, and let $\tilde Q$ be any single-qubit gate. Define
 
 $$
-\tilde{Q}_{\tilde Q} = \tilde\Pi_1(\vec u_{\mathrm r})\otimes e_t + \tilde\Pi_2(\vec u_{\mathrm r})\otimes \tilde Q \;\in\; \mathbb{B}\otimes\mathbb{B}.
+\tilde{Q}_{\tilde Q} = \tilde\Pi_{\mathrm{id},1}(\vec u_{\mathrm r})\otimes e_t + \tilde\Pi_{\mathrm{id},2}(\vec u_{\mathrm r})\otimes \tilde Q \;\in\; \mathbb{B}\otimes\mathbb{B}.
 $$
 
 This is a single element of the two-qubit algebra, and it is $*$-unitary:
 
 $$
 \tilde{Q}_{\tilde Q}\tilde{Q}_{\tilde Q}^{*}
-= \tilde\Pi_1^2\otimes e_t + \tilde\Pi_1\tilde\Pi_2\otimes\tilde Q^{*} + \tilde\Pi_2\tilde\Pi_1\otimes\tilde Q + \tilde\Pi_2^2\otimes\tilde Q\tilde Q^{*}
-= (\tilde\Pi_1 + \tilde\Pi_2)\otimes e_t = e_t\otimes e_t ,
+= \tilde\Pi_{\mathrm{id},1}^2\otimes e_t + \tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2}\otimes\tilde Q^{*} + \tilde\Pi_{\mathrm{id},2}\tilde\Pi_{\mathrm{id},1}\otimes\tilde Q + \tilde\Pi_{\mathrm{id},2}^2\otimes\tilde Q\tilde Q^{*}
+= (\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2})\otimes e_t = e_t\otimes e_t ,
 $$
 
-where the cross terms vanish because $\tilde\Pi_1\tilde\Pi_2 = 0$ and the last step uses the resolution of the identity $\tilde\Pi_1 + \tilde\Pi_2 = e_t$ together with $\tilde Q\tilde Q^{*} = e_t$. The same computation with a general single-qubit $\tilde Q$ shows that **any** $*$-unitary target operation is admitted, so the construction defines $\tilde{Q}_{\tilde Q}$ for every gate $\tilde Q$.
+where the cross terms vanish because $\tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2} = 0$ and the last step uses the resolution of the identity $\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2} = e_t$ together with $\tilde Q\tilde Q^{*} = e_t$. The same computation with a general single-qubit $\tilde Q$ shows that **any** $*$-unitary target operation is admitted, so the construction defines $\tilde{Q}_{\tilde Q}$ for every gate $\tilde Q$.
 
 The unitarity of the controlled gate uses exactly two properties: the idempotents are complementary and orthogonal, and the target element is $*$-unitary. It is worth pausing on this, because the same idempotents, used differently, are the operators of an irreversible measurement. The controlled gate is the **coherent** use of an idempotent: the two outcomes are kept, paired with two different target operations, and added inside a single $*$-unitary element. The measurement channel, in contrast, adds the two *conjugated states*,
 
 $$
-\tilde{Ϛ}_{\Psi} \;\longmapsto\; \tilde\Pi_1\tilde{Ϛ}_{\Psi}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}_{\Psi}\tilde\Pi_2 ,
+\tilde{Ϛ}_{\Psi} \;\longmapsto\; \tilde\Pi_{\mathrm{id},1}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id},2} ,
 $$
 
 which is a sum of conjugations and not a single conjugation. This is the algebraic distinction between a reversible gate and an irreversible measurement, and it is taken up again in the section on channels.
@@ -331,8 +331,8 @@ With the control axis $\vec u_z$ — the $|0\rangle/|1\rangle$ basis of the cont
 
 | Gate | Biquaternion representative in $\mathbb{B}\otimes\mathbb{B}$ | Matrix image |
 |---|---|---|
-| $\mathrm{CNOT}$ | $\tilde\Pi_1(\vec u_z)\otimes e_t + \tilde\Pi_2(\vec u_z)\otimes (i \vec e_x)$ | $\lvert 0\rangle\langle 0\rvert\otimes I_2 + \lvert 1\rangle\langle 1\rvert\otimes\sigma_1$ |
-| $\mathrm{CZ}$ | $\tilde\Pi_1(\vec u_z)\otimes e_t + \tilde\Pi_2(\vec u_z)\otimes (i \vec e_z)$ | $\lvert 0\rangle_{*}\langle 0\rvert\otimes I_2 + \lvert 1\rangle\langle 1\rvert\otimes\sigma_3$ |
+| $\mathrm{CNOT}$ | $\tilde\Pi_{\mathrm{id},1}(\vec u_z)\otimes e_t + \tilde\Pi_{\mathrm{id},2}(\vec u_z)\otimes (i \vec e_x)$ | $\lvert 0\rangle\langle 0\rvert\otimes I_2 + \lvert 1\rangle\langle 1\rvert\otimes\sigma_1$ |
+| $\mathrm{CZ}$ | $\tilde\Pi_{\mathrm{id},1}(\vec u_z)\otimes e_t + \tilde\Pi_{\mathrm{id},2}(\vec u_z)\otimes (i \vec e_z)$ | $\lvert 0\rangle_{*}\langle 0\rvert\otimes I_2 + \lvert 1\rangle\langle 1\rvert\otimes\sigma_3$ |
 | $\mathrm{SWAP}$ | $\dfrac{1}{2}\left(e_t\otimes e_t - \vec e_x\otimes \vec e_x - \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z\right)$ | $\tfrac{1}{2}\left(I_4 + \sum_\eta \sigma_\eta\otimes\sigma_\eta\right)$ |
 
 All three were verified to be $*$-unitary, Hermitian, and involutive. The CNOT is the controlled-$X$; the CZ is the controlled-$Z$. The SWAP form follows from the standard identity $\mathrm{SWAP} = \tfrac{1}{2}(I\otimes I + \sum_\eta\sigma_\eta\otimes\sigma_\eta)$ together with $\vec e_\eta\otimes \vec e_\eta = -(i\vec e_\eta)\otimes(i\vec e_\eta) = -\sigma_\eta\otimes\sigma_\eta$ under the isomorphism. The SWAP is not a controlled gate but a permutation of the two factors, and it satisfies the standard factor-exchange relation
@@ -358,13 +358,13 @@ The first is the three-CNOT decomposition of the swap. The second is the conjuga
 The composition law is best seen in a circuit that produces something the algebra names. Consider two qubits prepared in the pure state
 
 $$
-\tilde{Ϛ}_{\Psi,0} = \tilde\Pi_1(\vec u_z)\otimes\tilde\Pi_1(\vec u_z) ,
+\tilde{Ϛ}_{\Psi,0} = \tilde\Pi_{\mathrm{id},1}(\vec u_z)\otimes\tilde\Pi_{\mathrm{id},1}(\vec u_z) ,
 $$
 
 the biquaternion idempotent corresponding to $|00\rangle_{*}$. Apply the Hadamard to the first qubit and then the CNOT with the first qubit as control. As a circuit, the operation is the product
 
 $$
-\tilde Q_{\mathrm{cir}} = \tilde{Q}_{\tilde Q_x}(\tilde Q_{\mathrm{Had}}\otimes e_t), \qquad \tilde{Q}_{\tilde Q_x} = \tilde\Pi_1(\vec u_z)\otimes e_t + \tilde\Pi_2(\vec u_z)\otimes (i \vec e_x),
+\tilde Q_{\mathrm{cir}} = \tilde{Q}_{\tilde Q_x}(\tilde Q_{\mathrm{Had}}\otimes e_t), \qquad \tilde{Q}_{\tilde Q_x} = \tilde\Pi_{\mathrm{id},1}(\vec u_z)\otimes e_t + \tilde\Pi_{\mathrm{id},2}(\vec u_z)\otimes (i \vec e_x),
 $$
 
 and the output state is $\tilde Q_{\mathrm{cir}}\tilde{Ϛ}_{\Psi,0}\tilde Q_{\mathrm{cir}}^{*}$, a single conjugation because $\tilde Q_{\mathrm{cir}}$ is a single gate.
@@ -372,48 +372,48 @@ and the output state is $\tilde Q_{\mathrm{cir}}\tilde{Ϛ}_{\Psi,0}\tilde Q_{\ma
 **Step one: the Hadamard.** Since $\tilde Q_{\mathrm{Had}}$ is Hermitian and $\tilde Q_{\mathrm{Had}}^2 = e_t$, the conjugation of the first factor gives
 
 $$
-\tilde Q_{\mathrm{Had}}\,\tilde\Pi_1(\vec u_z)\,\tilde Q_{\mathrm{Had}} = \tilde\Pi_1(\vec u_x),
+\tilde Q_{\mathrm{Had}}\,\tilde\Pi_{\mathrm{id},1}(\vec u_z)\,\tilde Q_{\mathrm{Had}} = \tilde\Pi_{\mathrm{id},1}(\vec u_x),
 $$
 
 computed directly from the quaternion product. So after the Hadamard the state is
 
 $$
-\left(\tilde Q_{\mathrm{Had}}\otimes e_t\right)\tilde{Ϛ}_{\Psi,0}\left(\tilde Q_{\mathrm{Had}}\otimes e_t\right) = \tilde\Pi_1(\vec u_x)\otimes\tilde\Pi_1(\vec u_z),
+\left(\tilde Q_{\mathrm{Had}}\otimes e_t\right)\tilde{Ϛ}_{\Psi,0}\left(\tilde Q_{\mathrm{Had}}\otimes e_t\right) = \tilde\Pi_{\mathrm{id},1}(\vec u_x)\otimes\tilde\Pi_{\mathrm{id},1}(\vec u_z),
 $$
 
 the product state $|{+}\rangle|0\rangle$.
 
-**Step two: the CNOT.** Write $\tilde\Pi_{\mathrm x} = \tilde\Pi_1(\vec u_x)$ for the control state and $\tilde\Pi_{\mathrm z} = \tilde\Pi_1(\vec u_z)$ for the target state, with $\tilde\Pi_{1,2} = \tilde\Pi_{1,2}(\vec u_z)$ the control idempotents; set $\tilde{Q}_{12} = \tilde{Q}_{\tilde Q_x}$. Since $\tilde{Q}_{12} = \tilde{Q}_{12}^{*}$ and $\tilde{Q}_{12}^2 = e_t\otimes e_t$, conjugation by $\tilde{Q}_{12}$ expands into four terms:
+**Step two: the CNOT.** Write $\tilde\Pi_{\mathrm{id},\mathrm x} = \tilde\Pi_{\mathrm{id},1}(\vec u_x)$ for the control state and $\tilde\Pi_{\mathrm{id},\mathrm z} = \tilde\Pi_{\mathrm{id},1}(\vec u_z)$ for the target state, with $\tilde\Pi_{\mathrm{id},1,2} = \tilde\Pi_{\mathrm{id},1,2}(\vec u_z)$ the control idempotents; set $\tilde{Q}_{12} = \tilde{Q}_{\tilde Q_x}$. Since $\tilde{Q}_{12} = \tilde{Q}_{12}^{*}$ and $\tilde{Q}_{12}^2 = e_t\otimes e_t$, conjugation by $\tilde{Q}_{12}$ expands into four terms:
 
 $$
-\tilde{Q}_{12}(\tilde\Pi_{\mathrm x}\otimes\tilde\Pi_{\mathrm z})\tilde{Q}_{12}
-= \tilde\Pi_1\tilde\Pi_{\mathrm x}\tilde\Pi_1 \otimes \tilde\Pi_{\mathrm z}
-+ \tilde\Pi_1\tilde\Pi_{\mathrm x}\tilde\Pi_2 \otimes \tilde\Pi_{\mathrm z}\,(i\vec e_x)
-+ \tilde\Pi_2\tilde\Pi_{\mathrm x}\tilde\Pi_1 \otimes (i\vec e_x)\,\tilde\Pi_{\mathrm z}
-+ \tilde\Pi_2\tilde\Pi_{\mathrm x}\tilde\Pi_2 \otimes (i\vec e_x)\,\tilde\Pi_{\mathrm z}\,(i\vec e_x).
+\tilde{Q}_{12}(\tilde\Pi_{\mathrm{id},\mathrm x}\otimes\tilde\Pi_{\mathrm{id},\mathrm z})\tilde{Q}_{12}
+= \tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},\mathrm x}\tilde\Pi_{\mathrm{id},1} \otimes \tilde\Pi_{\mathrm{id},\mathrm z}
++ \tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},\mathrm x}\tilde\Pi_{\mathrm{id},2} \otimes \tilde\Pi_{\mathrm{id},\mathrm z}\,(i\vec e_x)
++ \tilde\Pi_{\mathrm{id},2}\tilde\Pi_{\mathrm{id},\mathrm x}\tilde\Pi_{\mathrm{id},1} \otimes (i\vec e_x)\,\tilde\Pi_{\mathrm{id},\mathrm z}
++ \tilde\Pi_{\mathrm{id},2}\tilde\Pi_{\mathrm{id},\mathrm x}\tilde\Pi_{\mathrm{id},2} \otimes (i\vec e_x)\,\tilde\Pi_{\mathrm{id},\mathrm z}\,(i\vec e_x).
 $$
 
-The four idempotents evaluate, using $\tilde\Pi_{1,2}\tilde\Pi_{\mathrm x}\tilde\Pi_{1,2} = \tfrac{1}{2}\tilde\Pi_{1,2}$ (the transition probability $\tfrac{1}{2}(1 + \vec u_z\cdot\vec u_x) = \tfrac12$) and the Peirce components
+The four idempotents evaluate, using $\tilde\Pi_{\mathrm{id},1,2}\tilde\Pi_{\mathrm{id},\mathrm x}\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}\tilde\Pi_{\mathrm{id},1,2}$ (the transition probability $\tfrac{1}{2}(1 + \vec u_z\cdot\vec u_x) = \tfrac12$) and the Peirce components
 
 $$
-\tilde\Pi_1\tilde\Pi_{\mathrm x}\tilde\Pi_2 = \tfrac{1}{4}\left(i\vec e_x - \vec e_y\right),
+\tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},\mathrm x}\tilde\Pi_{\mathrm{id},2} = \tfrac{1}{4}\left(i\vec e_x - \vec e_y\right),
 \qquad
-\tilde\Pi_2\tilde\Pi_{\mathrm x}\tilde\Pi_1 = \tfrac{1}{4}\left(i\vec e_x + \vec e_y\right),
+\tilde\Pi_{\mathrm{id},2}\tilde\Pi_{\mathrm{id},\mathrm x}\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{4}\left(i\vec e_x + \vec e_y\right),
 $$
 
-while the target products are $\tilde\Pi_{\mathrm z}(i\vec e_x) = \tfrac12(i\vec e_x - \vec e_y)$ and $(i\vec e_x)\tilde\Pi_{\mathrm z} = \tfrac12(i\vec e_x + \vec e_y)$, and $(i\vec e_x)\tilde\Pi_{\mathrm z}(i\vec e_x) = \tilde\Pi_2$. Substituting,
+while the target products are $\tilde\Pi_{\mathrm{id},\mathrm z}(i\vec e_x) = \tfrac12(i\vec e_x - \vec e_y)$ and $(i\vec e_x)\tilde\Pi_{\mathrm{id},\mathrm z} = \tfrac12(i\vec e_x + \vec e_y)$, and $(i\vec e_x)\tilde\Pi_{\mathrm{id},\mathrm z}(i\vec e_x) = \tilde\Pi_{\mathrm{id},2}$. Substituting,
 
 $$
-\tilde{Q}_{12}(\tilde\Pi_{\mathrm r_x}\otimes\tilde\Pi_{\mathrm r_z})\tilde{Q}_{12}
+\tilde{Q}_{12}(\tilde\Pi_{\mathrm{id},\mathrm r_x}\otimes\tilde\Pi_{\mathrm{id},\mathrm r_z})\tilde{Q}_{12}
 = \tfrac{1}{4}\left[e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z\right].
 $$
 
-The right-hand side is the **Bell idempotent** $\tilde\Pi_\epsilon$ of the companion article on the Bell basis, with sign pattern $\epsilon = (-1,+1,-1)$, which is the idempotent of $|Ξ^{+}\rangle$. The identification was verified independently by mapping both sides to $M_4(\mathbb{C})$: the biquaternion element equals $\tfrac{1}{2}(|00\rangle+|11\rangle)(\langle 00|+\langle 11|)$.
+The right-hand side is the **Bell idempotent** $\tilde\Pi_{\mathrm{id},\epsilon}$ of the companion article on the Bell basis, with sign pattern $\epsilon = (-1,+1,-1)$, which is the idempotent of $|Ξ^{+}\rangle$. The identification was verified independently by mapping both sides to $M_4(\mathbb{C})$: the biquaternion element equals $\tfrac{1}{2}(|00\rangle+|11\rangle)(\langle 00|+\langle 11|)$.
 
 The whole circuit is thus the single element $\tilde Q_{\mathrm{cir}} = \tilde{Q}_{\tilde Q_x}(\tilde Q_{\mathrm{Had}}\otimes e_t)$ of $\mathbb{B}\otimes\mathbb{B}$, and its output is
 
 $$
-\boxed{\;\tilde Q_{\mathrm{cir}}\left[\tilde\Pi_1(\vec u_z)\otimes\tilde\Pi_1(\vec u_z)\right]\tilde Q_{\mathrm{cir}}^{*}
+\boxed{\;\tilde Q_{\mathrm{cir}}\left[\tilde\Pi_{\mathrm{id},1}(\vec u_z)\otimes\tilde\Pi_{\mathrm{id},1}(\vec u_z)\right]\tilde Q_{\mathrm{cir}}^{*}
 = \tfrac{1}{4}\left[e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z\right]\;}.
 $$
 
@@ -436,7 +436,7 @@ Equivalently, a channel is a gate if and only if it preserves purity, and if and
 **Irreversibility is a sum.** A channel is irreversible precisely when its Kraus rank is at least two, i.e. when it is a *sum* of conjugations rather than one conjugation. The canonical example is **dephasing** along $\vec u_{\mathrm r}$,
 
 $$
-Ξ_{\mathrm{deph},p}(\tilde{Ϛ}_{\Psi}) = (1-p)\tilde{Ϛ}_{\Psi} + p\left(\tilde\Pi_1\tilde{Ϛ}_{\Psi}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}_{\Psi}\tilde\Pi_2\right),
+Ξ_{\mathrm{deph},p}(\tilde{Ϛ}_{\Psi}) = (1-p)\tilde{Ϛ}_{\Psi} + p\left(\tilde\Pi_{\mathrm{id},1}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id},2}\right),
 $$
 
 which acts on the Bloch vector as $\vec s_{\Psi}\mapsto(1-p)\vec s_{\Psi} + p(\vec u_{\mathrm r}\cdot\vec s_{\Psi})\vec u_{\mathrm r}$. Its Bloch matrix is $\operatorname{diag}(1-p,1-p,1)$ in the eigenbasis of $\vec u_{\mathrm r}$, of determinant $(1-p)^2$. A gate acts by a rotation, whose Bloch matrix has determinant $+1$ and is orthogonal; hence for $0<p\leq 1$ the dephasing map **is not a gate**, and no representative of it is a single $*$-unitary conjugation. It is the canonical irreversible channel, and the companion article on decoherence analyses its effect on idempotency in detail.
@@ -444,9 +444,9 @@ which acts on the Bloch vector as $\vec s_{\Psi}\mapsto(1-p)\vec s_{\Psi} + p(\v
 **The same idempotents, used coherently and incoherently.** The sharpest contrast is between two objects built from the same complementary idempotents:
 
 $$
-\tilde{Q}_{\tilde Q} = \tilde\Pi_1\otimes e_t + \tilde\Pi_2\otimes\tilde Q \quad\text{(a gate)},
+\tilde{Q}_{\tilde Q} = \tilde\Pi_{\mathrm{id},1}\otimes e_t + \tilde\Pi_{\mathrm{id},2}\otimes\tilde Q \quad\text{(a gate)},
 \qquad
-Ξ(\tilde{Ϛ}_{\Psi}) = \tilde\Pi_1\tilde{Ϛ}_{\Psi}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}_{\Psi}\tilde\Pi_2 \quad\text{(a channel)}.
+Ξ(\tilde{Ϛ}_{\Psi}) = \tilde\Pi_{\mathrm{id},1}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id},2} \quad\text{(a channel)}.
 $$
 
 In the first, the idempotents sit inside a **single $*$-unitary element** and the sum is over the two control branches; both branches survive, the coherence between them is retained, and the result is reversible. In the second, the state itself is replaced by the sum of its two projected pieces; the coherence between the branches is discarded, the map contracts the Bloch ball, and the result is irreversible. This is the algebraic content of the familiar statement that a controlled gate is a measurement made coherent: the difference is not in the idempotents but in whether the sum is taken inside one element or between two conjugated states. It is the same reversible/irreversible dichotomy the framework already expresses as $*$-unitary versus idempotent acting elements.
@@ -494,7 +494,7 @@ The standard single-qubit gate set has explicit representatives: the Pauli gates
 
 **Composition** is the algebra product: applying $\tilde Q_{\mathrm{gate},1}$ then $\tilde Q_{\mathrm{gate},2}$ gives $\tilde Q_{\mathrm{gate},2}\tilde Q_{\mathrm{gate},1}$, and the whole circuit is a single element whose action is a single conjugation. The Pauli group is the sixteen-element set $\{\pm e_t,\pm ie_t,\pm \vec e_\eta,\pm i\vec e_\eta\}$, and the Clifford group is its normaliser in the gate group; $H$ and $S$ generate it, and its image in $PU(2)$ is the octahedral rotation group of order $24$.
 
-In the **multi-qubit** arena $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$, the controlled gate is $\tilde{Q}_{\tilde Q} = \tilde\Pi_1(\vec u_{\mathrm r})\otimes e_t + \tilde\Pi_2(\vec u_{\mathrm r})\otimes\tilde Q$, $*$-unitary by the complementarity of the idempotents and the unitarity of $\tilde Q$. The CNOT, CZ, and SWAP gates have explicit representatives, and the standard circuit identities hold as algebra identities. A worked circuit — Hadamard then CNOT on two qubits — produces the Bell idempotent $\tfrac14(e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z)$ from a product state by a single conjugation.
+In the **multi-qubit** arena $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$, the controlled gate is $\tilde{Q}_{\tilde Q} = \tilde\Pi_{\mathrm{id},1}(\vec u_{\mathrm r})\otimes e_t + \tilde\Pi_{\mathrm{id},2}(\vec u_{\mathrm r})\otimes\tilde Q$, $*$-unitary by the complementarity of the idempotents and the unitarity of $\tilde Q$. The CNOT, CZ, and SWAP gates have explicit representatives, and the standard circuit identities hold as algebra identities. A worked circuit — Hadamard then CNOT on two qubits — produces the Bell idempotent $\tfrac14(e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z)$ from a product state by a single conjugation.
 
 The **contrast with the irreversible channels** is the Kraus-rank dichotomy. A circuit of gates is a gate, hence reversible; inserting a measurement or a dephasing step makes it a channel of Kraus rank at least two, represented by a *sum* of conjugations rather than one. The controlled gate and the measurement channel use the same idempotents; the difference is whether the sum over the outcomes is taken inside a single $*$-unitary element (coherent, reversible) or between conjugated states (incoherent, irreversible). The reformulation is standard quantum information theory in biquaternion notation: it makes the algebraic location of each circuit ingredient explicit without adding physical content.
 
@@ -510,18 +510,18 @@ The **contrast with the irreversible channels** is the Kraus-rank dichotomy. A c
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ | State of a qubit |
-| $\tilde\Pi_{1,2}(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | Complementary idempotents |
+| $\tilde\Pi_{\mathrm{id},1,2}(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | Complementary idempotents |
 | $\tilde Q\tilde Q^{*}=e_t$ | Gate (matrix-unitary element); $\mathrm{U}(2)$ |
 | $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$ | Lorentz rotor (unit norm); $SL(2,\mathbb{C})$, not a gate |
 | $Ξ_{\tilde Q}(\tilde{Ϛ}_{\Psi})=\tilde Q\tilde{Ϛ}_{\Psi}\tilde Q^{*}$ | Rotor conjugation (gate action) |
-| $2\,\mathrm{Sc}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde Q_{\mathrm{Had}})=2\,\mathrm{Sc}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*}) = 2\langle\tilde\Pi,\tilde Q_{\mathrm{Had}}\rangle_{*}$ | Scalar-part reading at normalisation (Born rule) |
+| $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde Q_{\mathrm{Had}}^{*})=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde Q_{\mathrm{Had}})=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde Q_{\mathrm{Had}}^{*}) = 2\langle\tilde\Pi_{\mathrm{id}},\tilde Q_{\mathrm{Had}}\rangle_{*}$ | Scalar-part reading at normalisation (Born rule) |
 | $\tilde Q_x=i\vec e_x,\ \tilde Q_y=i\vec e_y,\ \tilde Q_z=i\vec e_z$ | Pauli gates |
 | $\tilde Q_{\mathrm{Had}}=\tfrac{i}{\sqrt2}(\vec e_x+\vec e_z)$ | Hadamard gate |
 | $\tilde Q_{\mathrm{ph}}=\tfrac{1}{\sqrt2}(e_t+\vec e_z),\ \tilde Q_{T}=\cos\tfrac{\pi}{8}e_t+\sin\tfrac{\pi}{8}\vec e_z$ | Phase and $T$ gates |
 | $\tilde u_{\mathrm r}(\theta_{\mathrm{axr}})=\cos\tfrac{\theta_{\mathrm{axr}}}{2}e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | General rotation gate |
 | $\mathcal{P}=\{\pm e_t,\pm ie_t,\pm \vec e_\eta,\pm i\vec e_\eta\}$ | Pauli group (16 elements) |
-| $\tilde{Q}_{\tilde Q}=\tilde\Pi_1\otimes e_t+\tilde\Pi_2\otimes\tilde Q$ | Controlled gate |
-| $\mathrm{CNOT}=\tilde\Pi_1(\vec u_z)\otimes e_t+\tilde\Pi_2(\vec u_z)\otimes(i\vec e_x)$ | Controlled-$X$ |
+| $\tilde{Q}_{\tilde Q}=\tilde\Pi_{\mathrm{id},1}\otimes e_t+\tilde\Pi_{\mathrm{id},2}\otimes\tilde Q$ | Controlled gate |
+| $\mathrm{CNOT}=\tilde\Pi_{\mathrm{id},1}(\vec u_z)\otimes e_t+\tilde\Pi_{\mathrm{id},2}(\vec u_z)\otimes(i\vec e_x)$ | Controlled-$X$ |
 | $\mathrm{SWAP}=\tfrac12(e_t\otimes e_t-\sum_\eta \vec e_\eta\otimes \vec e_\eta)$ | Swap gate |
 | $Ξ(\tilde{Ϛ}_{\Psi})=\sum_l\tilde M_{\mathrm{kraus},l}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},l}^{*}$ | Kraus representation of a channel |
 | $Ξ_{\mathrm{deph},p}$ | Dephasing channel (irreversible, not a gate) |

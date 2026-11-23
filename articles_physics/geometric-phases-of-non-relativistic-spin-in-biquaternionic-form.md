@@ -8,14 +8,14 @@ The adiabatic form of the statement — a Hamiltonian transported slowly around 
 
 The findings are stated in advance.
 
-1. **The geometric phase is a holonomy of the spinor, not a property of the idempotent.** The instantaneous state $\tilde\Pi_{1,2}(\vec u_x)$ contains no phase information; the phase is carried by the spinor and is removed by the idempotent. This is the structural fact the Berry article records for the adiabatic connection, and it holds unchanged for the AA phase.
+1. **The geometric phase is a holonomy of the spinor, not a property of the idempotent.** The instantaneous state $\tilde\Pi_{\mathrm{id},1,2}(\vec u_x)$ contains no phase information; the phase is carried by the spinor and is removed by the idempotent. This is the structural fact the Berry article records for the adiabatic connection, and it holds unchanged for the AA phase.
 2. **For spin-1/2 the geometric phase is one half the oriented solid angle, with a sign:** $\gamma_{\mathrm{geo}} = -\tfrac12\theta_{\mathrm{sol}}{}_{\mathrm{sgn}}$, where $\theta_{\mathrm{sol}}{}_{\mathrm{sgn}}$ is the solid angle subtended by the closed curve, counted positive for the orientation given by the right-hand rule about the curve.
 3. **The AA phase is exact for a precessing spin.** A spin prepared along $\vec u_y$ and left in a fixed field along $\vec u_x$ has a Bloch vector that precesses on a cone of half-angle $\theta_0$; over one period the AA phase is $\tfrac12$ of the unsigned solid angle of the cap, with the sign fixed by the sense of precession. This is computed exactly below, with no adiabatic approximation.
 4. **The spinor is double-valued.** A full $2\pi$ rotation of the spin returns the idempotent but sends the spinor to its negative; only after $4\pi$ does the spinor return. The geometric phase of the equator loop is the cleanest instance: the phase is $\pi$ after one period, a sign change, and $2\pi$ (i.e. the identity) after two.
 5. **The holonomy is a rotor.** The accumulated spin evolution is the product of a central phase and conjugation by a unit real quaternion $\tilde{u} = \exp(-\frac{1}{2}\theta_{\mathrm{blc}}\,\vec u_x)$, where $\theta_{\mathrm{blc}}$ is the angle through which the Bloch vector is turned; the central phase and the rotation are the two faces of the same element of $\mathbb{B}$.
 6. **The adiabatic Berry phase is the slow limit of the same holonomy.** Using the rotating-frame effective field of a circularly polarised drive, the AA phase reduces to the solid-angle formula when the drive is slow, with the sign set by the sense of the loop, and it departs from it as the drive speeds up.
 
-The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, the reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)=2Q_{1,t}Q_{2,t}$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\eta\mapsto\sigma_\eta$.
+The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, the reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)=2Q_{1,t}Q_{2,t}$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\eta\mapsto\sigma_\eta$.
 
 The companion articles supply the pieces:
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the adiabatic connection, the curvature and the two-route check.
@@ -140,7 +140,7 @@ Two limits make the formula transparent. At $\theta_0\to0$ the state is the eige
 The sign change $\tilde{Ξ}(T) = -\tilde{Ξ}(0)$ at the equator is not special to the equator: for every $\theta_0$ the spinor after one period differs from the initial spinor by a phase, and at $\theta_0 = \pi/2$ that phase is exactly $\pi$. The general statement is the double-valuedness of the spinor representation of the rotation group: a rotation of the spin by $2\pi$ is the identity on the idempotent,
 
 $$
-\tilde{u}(2\pi)\,\tilde\Pi_{1,2}(\vec u_x)\,\tilde{u}(2\pi)^{*} = \tilde\Pi_{1,2}(\vec u_x),
+\tilde{u}(2\pi)\,\tilde\Pi_{\mathrm{id},1,2}(\vec u_x)\,\tilde{u}(2\pi)^{*} = \tilde\Pi_{\mathrm{id},1,2}(\vec u_x),
 \qquad
 \tilde{u}(2\pi) = \exp(-2\pi \vec e_z/2) = -e_t,
 $$
@@ -153,13 +153,13 @@ The physical consequences are standard: the spinor must be rotated by $4\pi$ to 
 
 ### The Spinor Carries the Phase
 
-The geometric phase is invisible in the density matrix. Write a pure state as $\tilde{Ϛ}_{\Psi} = \tilde\Pi_{1,2}(\vec u_x) = \tfrac12(e_t\pm i\vec u_x)$; the idempotent is quadratic in the spinor,
+The geometric phase is invisible in the density matrix. Write a pure state as $\tilde{Ϛ}_{\Psi} = \tilde\Pi_{\mathrm{id},1,2}(\vec u_x) = \tfrac12(e_t\pm i\vec u_x)$; the idempotent is quadratic in the spinor,
 
 $$
-\tilde\Pi = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})},
+\tilde\Pi_{\mathrm{id}} = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})},
 $$
 
-and a spinor phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$ cancels between $\tilde{Ξ}$ and $\tilde{Ξ}^{\dagger}$. So the state that the Bloch ball records is exactly the object in which the geometric phase is absent. This is the same observation the Berry article makes about the Berry connection — $2\,\mathrm{Sc}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ identically — and it applies verbatim to the AA phase: the phase lives in the spinor, which is the lift of the Bloch vector to the double cover.
+and a spinor phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$ cancels between $\tilde{Ξ}$ and $\tilde{Ξ}^{\dagger}$. So the state that the Bloch ball records is exactly the object in which the geometric phase is absent. This is the same observation the Berry article makes about the Berry connection — $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\partial/\partial R_\mu\tilde\Pi_{\mathrm{id}}) = 0$ identically — and it applies verbatim to the AA phase: the phase lives in the spinor, which is the lift of the Bloch vector to the double cover.
 
 ### The Rotor and Its Two Faces
 
@@ -283,7 +283,7 @@ The geometric phase is carried by the spinor, not by the idempotent: the density
 | $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$ | Spin observable along $\vec e_\eta$ |
 | $\tilde H_\Psi = -\frac{\hbar\,\omega_{L}}{2}i\vec e_z$ | Fixed-field Hamiltonian |
 | $\omega_L = \gamma B$ | Larmor frequency |
-| $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Pure-state idempotent; carries no phase |
+| $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Pure-state idempotent; carries no phase |
 | $\tilde{Ξ}$ | Spinor; carries the geometric phase |
 | $\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{1}{\hbar\,c}\int_0^T\langle\tilde H_\Psi\rangle  dr'_t$ | Aharonov–Anandan geometric phase |
 | $\mathcal{A} = i\langle n|d|n\rangle$ | Berry connection (cited from the Berry article) |

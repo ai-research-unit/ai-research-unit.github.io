@@ -171,19 +171,19 @@ which shows again the absence of a real period in the split directions and the p
 
 **Definition.** For real $\alpha$ and $\tilde q$ in the domain of a branch of the logarithm, the **power** is $\tilde q^\alpha = \exp(\alpha\log \tilde q)$; the **$n$-th roots** are the solutions of $\tilde q_2^n = \tilde q$.
 
-**Theorem (The Split Roots of Unity).** The elements $\tilde\pi_1 + \lambda \tilde\pi_2$ with $\lambda \in \{\pm 1\}$ satisfy
+**Theorem (The Split Roots of Unity).** The elements $\tilde\pi_{\mathrm{id},1} + \lambda \tilde\pi_{\mathrm{id},2}$ with $\lambda \in \{\pm 1\}$ satisfy
 
 $$
-(\tilde\pi_1 + \lambda \tilde\pi_2)^n = \tilde\pi_1 + \lambda^n \tilde\pi_2, \qquad (\lambda = \pm 1),
+(\tilde\pi_{\mathrm{id},1} + \lambda \tilde\pi_{\mathrm{id},2})^n = \tilde\pi_{\mathrm{id},1} + \lambda^n \tilde\pi_{\mathrm{id},2}, \qquad (\lambda = \pm 1),
 $$
 
-so $1$ is a root of unity of every order, while $\vec e_y = \tilde\pi_1 - \tilde\pi_2$ has $\vec e_y^2 = 1$ and is a root of unity of order two; the reflection $\vec e_z$ is likewise of order two. The roots of unity in the elliptic plane are the elements $\cos\theta + \tilde\zeta\sin\theta$ with $\tilde\zeta^2 = -1$ and $\theta$ a rational multiple of $2\pi$, in accordance with the kernel of the exponential.
+so $1$ is a root of unity of every order, while $\vec e_y = \tilde\pi_{\mathrm{id},1} - \tilde\pi_{\mathrm{id},2}$ has $\vec e_y^2 = 1$ and is a root of unity of order two; the reflection $\vec e_z$ is likewise of order two. The roots of unity in the elliptic plane are the elements $\cos\theta + \tilde\zeta\sin\theta$ with $\tilde\zeta^2 = -1$ and $\theta$ a rational multiple of $2\pi$, in accordance with the kernel of the exponential.
 
-**Proof.** The first identity follows from $\tilde\pi_1\tilde\pi_2 = 0$ and $\tilde\pi_{1,2}^2 = \tilde\pi_{1,2}$ by the binomial theorem, the cross terms vanishing. The order-two statements are $\vec e_y^2 = \vec e_z^2 = 1$, and the elliptic elements are the one-parameter subgroups of *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups*.
+**Proof.** The first identity follows from $\tilde\pi_{\mathrm{id},1}\tilde\pi_{\mathrm{id},2} = 0$ and $\tilde\pi_{\mathrm{id},1,2}^2 = \tilde\pi_{\mathrm{id},1,2}$ by the binomial theorem, the cross terms vanishing. The order-two statements are $\vec e_y^2 = \vec e_z^2 = 1$, and the elliptic elements are the one-parameter subgroups of *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups*.
 
-**Corollary (Roots of Unity of Order Two and the Power Functions).** The solutions of $\tilde q_2^2 = 1$ are $\tilde q_2 = \pm 1$ together with the elements $\tilde q_2 = 2\tilde\pi - 1$ for $\tilde\pi$ a nontrivial idempotent; equivalently they are the roots of $+1$ in the vector subspace, the reflections, a two-dimensional family. The power functions inherit the ambiguity of the logarithm: $\tilde q^{1/n}$ is generally multiple-valued, and two values differ by a root of unity.
+**Corollary (Roots of Unity of Order Two and the Power Functions).** The solutions of $\tilde q_2^2 = 1$ are $\tilde q_2 = \pm 1$ together with the elements $\tilde q_2 = 2\tilde\pi_{\mathrm{id}} - 1$ for $\tilde\pi_{\mathrm{id}}$ a nontrivial idempotent; equivalently they are the roots of $+1$ in the vector subspace, the reflections, a two-dimensional family. The power functions inherit the ambiguity of the logarithm: $\tilde q^{1/n}$ is generally multiple-valued, and two values differ by a root of unity.
 
-**Proof.** $\tilde q_2^2 = 1$ is $(\tilde q_2-1)(\tilde q_2+1) = 0$; the minimal polynomial of $\tilde q_2$ divides $(t-1)(t+1)$, so $\tilde q_2$ is semisimple with roots in $\{\pm1\}$; if $\tilde q_2 \neq \pm1$ it has both roots and $\tilde\pi = (\tilde q_2+1)/2$ is a nontrivial idempotent, whose family is two-dimensional as computed in *Split-Quaternion Zero Divisors*, §*Distribution of the Zero Divisors*. The multivaluedness of the power is the multivaluedness of the logarithm of the preceding section.
+**Proof.** $\tilde q_2^2 = 1$ is $(\tilde q_2-1)(\tilde q_2+1) = 0$; the minimal polynomial of $\tilde q_2$ divides $(t-1)(t+1)$, so $\tilde q_2$ is semisimple with roots in $\{\pm1\}$; if $\tilde q_2 \neq \pm1$ it has both roots and $\tilde\pi_{\mathrm{id}} = (\tilde q_2+1)/2$ is a nontrivial idempotent, whose family is two-dimensional as computed in *Split-Quaternion Zero Divisors*, §*Distribution of the Zero Divisors*. The multivaluedness of the power is the multivaluedness of the logarithm of the preceding section.
 
 ## Non-Commutativity and the One-Variable Case
 
@@ -214,13 +214,13 @@ so $1$ is a root of unity of every order, while $\vec e_y = \tilde\pi_1 - \tilde
 | $(\exp \tilde q)^{\natural}$ | $\exp\tilde{q}^{\natural}$ | all $\tilde q$ |
 | $\exp(\tilde q_1+\tilde q_2)$ | $\exp \tilde q_1\exp \tilde q_2$ | if and only if $\tilde q_1 \tilde q_2 = \tilde q_2\tilde q_1$ |
 | $\log(1+v)$ | $v$ | $v$ nilpotent |
-| $(\tilde\pi_1 + \lambda \tilde\pi_2)^n$ | $\tilde\pi_1 + \lambda^n\tilde\pi_2$ | $\lambda = \pm1$ |
+| $(\tilde\pi_{\mathrm{id},1} + \lambda \tilde\pi_{\mathrm{id},2})^n$ | $\tilde\pi_{\mathrm{id},1} + \lambda^n\tilde\pi_{\mathrm{id},2}$ | $\lambda = \pm1$ |
 
 ## Summary
 
 The exponential converges everywhere and factors as $\exp(q_t+v) = \exp(q_t)\exp v$, with $\exp v$ given in closed form by the functions $c_0$ and $c_1$ of the split-quaternion norm of $v$; it is never zero, its split-quaternion norm is $\exp(2\operatorname{Sc}(\tilde q))$, and its image is the set of elements of positive norm whose scalar part exceeds $-\sqrt{N}$ together with the negative scalars, so it is not surjective onto the invertibles. Its kernel is the origin together with the scaled copies $2\pi k\Sigma$ of the sphere of the roots of $-1$; the exponential has a real period along every direction that squares to $-1$ and no real period in the split directions.
 
-The trigonometric and hyperbolic functions are the parity parts of the exponential and reduce on the vector subspace to the classical functions of $\sqrt{|\langle v\rangle_{\natural}|}$, with sine and cosine interchanged with the hyperbolic functions when the sign of the split-quaternion norm changes; the Pythagorean identities hold, the addition formulas hold exactly for commuting arguments and fail otherwise, the failure being the Baker–Campbell–Hausdorff correction. The conjugation and the split-quaternion norm commute with the exponential in the expected way. The logarithm exists on the image of the exponential, that is where the scalar part exceeds $-\sqrt{N}$ or where the element is a negative scalar; it is $v$ on the nilpotents, it is a pair of real logarithms in the split-complex null coordinates, and it is multivalued exactly at the nonzero real scalars and at the elements with $\langle\operatorname{Vec}\tilde q\rangle_{\natural} > 0$, the several values differing by the kernel of the exponential. The roots of unity include the split elements $\tilde\pi_1 + \lambda \tilde\pi_2$ and the elliptic elements; the power functions inherit the ambiguity of the logarithm. The comparison with the quaternion and split-complex cases is by way of the sign pattern of the form only, and identities must not be transported from one system to another.
+The trigonometric and hyperbolic functions are the parity parts of the exponential and reduce on the vector subspace to the classical functions of $\sqrt{|\langle v\rangle_{\natural}|}$, with sine and cosine interchanged with the hyperbolic functions when the sign of the split-quaternion norm changes; the Pythagorean identities hold, the addition formulas hold exactly for commuting arguments and fail otherwise, the failure being the Baker–Campbell–Hausdorff correction. The conjugation and the split-quaternion norm commute with the exponential in the expected way. The logarithm exists on the image of the exponential, that is where the scalar part exceeds $-\sqrt{N}$ or where the element is a negative scalar; it is $v$ on the nilpotents, it is a pair of real logarithms in the split-complex null coordinates, and it is multivalued exactly at the nonzero real scalars and at the elements with $\langle\operatorname{Vec}\tilde q\rangle_{\natural} > 0$, the several values differing by the kernel of the exponential. The roots of unity include the split elements $\tilde\pi_{\mathrm{id},1} + \lambda \tilde\pi_{\mathrm{id},2}$ and the elliptic elements; the power functions inherit the ambiguity of the logarithm. The comparison with the quaternion and split-complex cases is by way of the sign pattern of the form only, and identities must not be transported from one system to another.
 
 ## Summary of Notation
 
@@ -232,7 +232,7 @@ The trigonometric and hyperbolic functions are the parity parts of the exponenti
 | $\cos$, $\sin$, $\cosh$, $\sinh$ | the trigonometric and hyperbolic series | this article |
 | $n_\pm = \tfrac12(1\pm \vec e_y)$ | the null basis of the split-complex plane | *Split-Quaternion Algebra* |
 | $\tilde q^\alpha = \exp(\alpha\log \tilde q)$ | the power function | this article |
-| $\tilde\pi_1 + \lambda \tilde\pi_2$ | the split roots of unity | this article |
+| $\tilde\pi_{\mathrm{id},1} + \lambda \tilde\pi_{\mathrm{id},2}$ | the split roots of unity | this article |
 | BCH | the Baker–Campbell–Hausdorff correction | this article |
 
 ## Further Reading

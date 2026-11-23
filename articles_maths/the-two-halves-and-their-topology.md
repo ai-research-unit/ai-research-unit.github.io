@@ -168,7 +168,7 @@ $$
 \operatorname{Herm}_2=\mathrm{PD}_2\ \sqcup\ \{\text{inertia }(1,1)\}\ \sqcup\ (-\mathrm{PD}_2),
 $$
 
-with the singular set as the common boundary. The computation confirms the three regions at $n=2$ by drawing random Hermitian matrices and reading the inertia, and it shows that the Peirce idempotents $\tilde\Pi_\pm$ sit at the boundary between the regions of inertia $(1,1)$ and the definite ones.
+with the singular set as the common boundary. The computation confirms the three regions at $n=2$ by drawing random Hermitian matrices and reading the inertia, and it shows that the Peirce idempotents $\tilde\Pi_{\mathrm{id},\pm}$ sit at the boundary between the regions of inertia $(1,1)$ and the definite ones.
 
 **The compact half of the two-by-two case fibres over the circle.** Since $\mathrm{SU}(2)\cong S^{3}$ and
 

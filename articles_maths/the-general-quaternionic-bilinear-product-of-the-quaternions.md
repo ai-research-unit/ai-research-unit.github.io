@@ -114,7 +114,7 @@ $$
 
 **Proposition (the two-point set of idempotents).** The idempotents of the quaternionic product are $0$ and $e_t$.
 
-*Proof.* $N(\tilde\Pi)e_t=\tilde\Pi$ forces $\tilde\Pi=\lambda e_t$ with $\lambda^2=\lambda$. Verified by solving the equations in the coefficient basis. The idempotents of the product, and their coincidence with the idempotents of the plain product, are treated in [Square Roots of One and the Idempotents of the Quaternionic Product](square-roots-of-one-and-the-idempotents-of-the-quaternion-algebra.html).
+*Proof.* $N(\tilde\Pi_{\mathrm{id}})e_t=\tilde\Pi_{\mathrm{id}}$ forces $\tilde\Pi_{\mathrm{id}}=\lambda e_t$ with $\lambda^2=\lambda$. Verified by solving the equations in the coefficient basis. The idempotents of the product, and their coincidence with the idempotents of the plain product, are treated in [Square Roots of One and the Idempotents of the Quaternionic Product](square-roots-of-one-and-the-idempotents-of-the-quaternion-algebra.html).
 
 ## The Two Halves of This Product
 

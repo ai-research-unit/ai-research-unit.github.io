@@ -98,11 +98,11 @@ $$
 
 **Proposition.** In the biquaternion language the coarse split is the splitting of the algebra into the four corners $\mathbb{B}_{st}$, and the recursion at order two is the statement that each corner is a copy of the scalars.
 
-**Proof.** The corners $\mathbb{B}_{st}$ are the four products of the idempotent pair $\tilde\Pi_{\pm}$ with the algebra on the two sides, which is the same construction as the four corners here, and each corner is one complex line over the field.
+**Proof.** The corners $\mathbb{B}_{st}$ are the four products of the idempotent pair $\tilde\Pi_{\mathrm{id},\pm}$ with the algebra on the two sides, which is the same construction as the four corners here, and each corner is one complex line over the field.
 
-**Corollary.** The companion nilpotents $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ generate the two mixed corners, and their product is the idempotent of the diagonal corner.
+**Corollary.** The companion nilpotents $\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil},-+}$ generate the two mixed corners, and their product is the idempotent of the diagonal corner.
 
-**Proof.** The companion pair of the corpus is the pair of generators of the mixed corners normalised so that the product is $\tilde\Pi_{+}$, which is the normalisation used here.
+**Proof.** The companion pair of the corpus is the pair of generators of the mixed corners normalised so that the product is $\tilde\Pi_{\mathrm{id},+}$, which is the normalisation used here.
 
 ## What the Decomposition Is Not
 

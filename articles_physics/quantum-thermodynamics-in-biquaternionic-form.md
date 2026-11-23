@@ -57,7 +57,7 @@ $$
 \vec s_{\Psi}=-\tanh(\beta|\vec h_\Psi|)\,\vec u_\Psi.
 $$
 
-Its scalar part is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\beta})=\tfrac12$, so $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\beta})=1$: normalization is itself a statement about the scalar part. The state lies in the Bloch ball, with $|\vec s_{\Psi}|=\tanh(\beta|\vec h_\Psi|)\le1$. It is mixed for every finite $\beta$ and approaches the pure ground state $\tilde{\Pi}(-\vec u_\Psi)=\tfrac12(e_t-i\vec u_\Psi)$ only as $\beta\to\infty$; as $\beta\to0$ it tends to the maximally mixed state $\tfrac12e_t$, the centre of the ball. The Gibbs state is thus a temperature-parametrised path in the Bloch ball from the centre toward the boundary, and thermodynamics is the study of the scalars along that path.
+Its scalar part is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\beta})=\tfrac12$, so $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\beta})=1$: normalization is itself a statement about the scalar part. The state lies in the Bloch ball, with $|\vec s_{\Psi}|=\tanh(\beta|\vec h_\Psi|)\le1$. It is mixed for every finite $\beta$ and approaches the pure ground state $\tilde\Pi_{\mathrm{id}}(-\vec u_\Psi)=\tfrac12(e_t-i\vec u_\Psi)$ only as $\beta\to\infty$; as $\beta\to0$ it tends to the maximally mixed state $\tfrac12e_t$, the centre of the ball. The Gibbs state is thus a temperature-parametrised path in the Bloch ball from the centre toward the boundary, and thermodynamics is the study of the scalars along that path.
 
 ## Thermodynamic Quantities as Functionals of the State
 
@@ -186,7 +186,7 @@ The limits test the signs and the normalizations of the preceding sections, and 
 
 $$
 \vec s_{\Psi}\to-\vec u_\Psi,\qquad
-\tilde{Ϛ}_{\Psi}\to\tilde{\Pi}(-\vec u_\Psi)=\tfrac12\big(e_t-i\vec u_\Psi\big),
+\tilde{Ϛ}_{\Psi}\to\tilde\Pi_{\mathrm{id}}(-\vec u_\Psi)=\tfrac12\big(e_t-i\vec u_\Psi\big),
 $$
 
 the pure ground state, and
@@ -213,7 +213,7 @@ The internal energy tends to the arithmetic mean $h_t$ of the two levels, which 
 
 | Quantity | $\beta\to\infty$ ($T\to0$) | $\beta\to0$ ($T\to\infty$) |
 |---|---|---|
-| $\tilde{Ϛ}_{\Psi}$ | $\tilde{\Pi}(-\vec u_\Psi)$ (pure) | $\tfrac12 e_t$ (maximally mixed) |
+| $\tilde{Ϛ}_{\Psi}$ | $\tilde\Pi_{\mathrm{id}}(-\vec u_\Psi)$ (pure) | $\tfrac12 e_t$ (maximally mixed) |
 | $E$ | $h_t-|\vec h_\Psi|$ | $h_t$ |
 | $S$ | $0$ | $\log 2$ |
 | $F$ | $h_t-|\vec h_\Psi|$ | $-\infty$ |

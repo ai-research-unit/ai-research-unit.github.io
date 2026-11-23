@@ -12,7 +12,7 @@ What is not done. No loop, no renormalisation, no running, no unitarity computat
 
 ## Conventions
 
-The measure is $\mathrm{d}^{4}x$ and $\hbar=c=1$ throughout; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $\partial_\mu\Phi^{\dagger}\partial_\mu\Phi=\sum_\mu\varepsilon_\mu\partial_\mu\Phi^{\dagger}\partial_\mu\Phi$ carries the sign the mostly-minus literature carries. The doublet is a complex two-component column,
+The measure is $\mathrm{d}^{4}x$, with $c$ and $h$ carried; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $\partial_\mu\Phi^{\dagger}\partial_\mu\Phi=\sum_\mu\varepsilon_\mu\partial_\mu\Phi^{\dagger}\partial_\mu\Phi$ carries the sign the mostly-minus literature carries. The doublet is a complex two-component column,
 
 $$
 \Phi=\frac{1}{\sqrt2}\begin{pmatrix}\phi_1+i\phi_2\\ \phi_3+i\phi_4\end{pmatrix},

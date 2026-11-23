@@ -93,35 +93,35 @@ on which the sign pair $(\alpha, \rho)$ is $(+,+)$, $(-,+)$ and $(+,-)$ respecti
 
 ## The Idempotents and the Two Minimal Left Ideals
 
-**Example (the standard idempotents).** With $\tilde\pi_1 = \tfrac{1}{2}(1 + \vec e_y)$ and $\tilde\pi_2 = \tfrac{1}{2}(1 - \vec e_y)$,
+**Example (the standard idempotents).** With $\tilde\pi_{\mathrm{id},1} = \tfrac{1}{2}(1 + \vec e_y)$ and $\tilde\pi_{\mathrm{id},2} = \tfrac{1}{2}(1 - \vec e_y)$,
 
 $$
-\tilde\pi_1^2 = \tfrac{1}{4}(1 + 2\vec e_y + \vec e_y^2) = \tfrac{1}{4}(2 + 2\vec e_y) = \tilde\pi_1,
+\tilde\pi_{\mathrm{id},1}^2 = \tfrac{1}{4}(1 + 2\vec e_y + \vec e_y^2) = \tfrac{1}{4}(2 + 2\vec e_y) = \tilde\pi_{\mathrm{id},1},
 $$
 
-and $\tilde\pi_2^2 = \tilde\pi_2$ likewise. Moreover
+and $\tilde\pi_{\mathrm{id},2}^2 = \tilde\pi_{\mathrm{id},2}$ likewise. Moreover
 
 $$
 \boxed{\;
-\tilde\pi_1 \tilde\pi_2 = \tfrac{1}{4}(1 - \vec e_y^2) = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1, \qquad \langle\tilde\pi_1\rangle_{\natural} = \langle\tilde\pi_2\rangle_{\natural} = 0
+\tilde\pi_{\mathrm{id},1} \tilde\pi_{\mathrm{id},2} = \tfrac{1}{4}(1 - \vec e_y^2) = 0, \qquad \tilde\pi_{\mathrm{id},1} + \tilde\pi_{\mathrm{id},2} = 1, \qquad \langle\tilde\pi_{\mathrm{id},1}\rangle_{\natural} = \langle\tilde\pi_{\mathrm{id},2}\rangle_{\natural} = 0
 \;}.
 $$
 
-They are not central, since $\vec e_x \tilde\pi_1 = \tfrac{1}{2}(\vec e_x + \vec e_z)$ while $\tilde\pi_1 \vec e_x = \tfrac{1}{2}(\vec e_x - \vec e_z)$.
+They are not central, since $\vec e_x \tilde\pi_{\mathrm{id},1} = \tfrac{1}{2}(\vec e_x + \vec e_z)$ while $\tilde\pi_{\mathrm{id},1} \vec e_x = \tfrac{1}{2}(\vec e_x - \vec e_z)$.
 
-**Example (the two minimal left ideals).** The reductions $\vec e_y \tilde\pi_1 = \tilde\pi_1$ and $\vec e_z \tilde\pi_1 = \tfrac{1}{2}(\vec e_z + \vec e_x) = \vec e_x \tilde\pi_1$ give
-
-$$
-\mathbb{H}_{\mathrm{spl}} \tilde\pi_1 = \operatorname{span}\{\tilde\pi_1, \vec e_x \tilde\pi_1\} = \operatorname{span}\big\{\tfrac{1}{2}(1 + \vec e_y),\, \tfrac{1}{2}(\vec e_x + \vec e_z)\big\},
-$$
+**Example (the two minimal left ideals).** The reductions $\vec e_y \tilde\pi_{\mathrm{id},1} = \tilde\pi_{\mathrm{id},1}$ and $\vec e_z \tilde\pi_{\mathrm{id},1} = \tfrac{1}{2}(\vec e_z + \vec e_x) = \vec e_x \tilde\pi_{\mathrm{id},1}$ give
 
 $$
-\mathbb{H}_{\mathrm{spl}} \tilde\pi_2 = \operatorname{span}\{\tilde\pi_2, \vec e_x \tilde\pi_2\} = \operatorname{span}\big\{\tfrac{1}{2}(1 - \vec e_y),\, \tfrac{1}{2}(\vec e_x - \vec e_z)\big\},
+\mathbb{H}_{\mathrm{spl}} \tilde\pi_{\mathrm{id},1} = \operatorname{span}\{\tilde\pi_{\mathrm{id},1}, \vec e_x \tilde\pi_{\mathrm{id},1}\} = \operatorname{span}\big\{\tfrac{1}{2}(1 + \vec e_y),\, \tfrac{1}{2}(\vec e_x + \vec e_z)\big\},
 $$
 
-each of real dimension $2$, with $\mathbb{H}_{\mathrm{spl}} = \mathbb{H}_{\mathrm{spl}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{spl}} \tilde\pi_2$. The four spanning elements are the vectors $\tilde\pi_1$, $\tilde p = \tfrac{1}{2}(\vec e_x+\vec e_z)$, $\tilde\pi_2$, $-\tilde q = \tfrac{1}{2}(\vec e_x-\vec e_z)$ of the matrix-unit basis $\{\tilde\pi_1, \tilde q, \tilde p, \tilde\pi_2\}$ of *Split-Quaternion Ideals and Peirce Decomposition*.
+$$
+\mathbb{H}_{\mathrm{spl}} \tilde\pi_{\mathrm{id},2} = \operatorname{span}\{\tilde\pi_{\mathrm{id},2}, \vec e_x \tilde\pi_{\mathrm{id},2}\} = \operatorname{span}\big\{\tfrac{1}{2}(1 - \vec e_y),\, \tfrac{1}{2}(\vec e_x - \vec e_z)\big\},
+$$
 
-**Example (the split-complex subalgebra).** The idempotents lie in the subalgebra $\operatorname{span}\{1, \vec e_y\} \cong \mathbb{C}_{\mathrm{spl}}$, and in that commutative algebra they are central; in $\mathbb{H}_{\mathrm{spl}}$ they are not, and the decomposition they give is a decomposition of modules and not of algebras, because $\tilde\pi_1 \vec e_z \tilde\pi_2 = \tfrac{1}{2}(\vec e_z - \vec e_x) \neq 0$.
+each of real dimension $2$, with $\mathbb{H}_{\mathrm{spl}} = \mathbb{H}_{\mathrm{spl}} \tilde\pi_{\mathrm{id},1} \oplus \mathbb{H}_{\mathrm{spl}} \tilde\pi_{\mathrm{id},2}$. The four spanning elements are the vectors $\tilde\pi_{\mathrm{id},1}$, $\tilde p = \tfrac{1}{2}(\vec e_x+\vec e_z)$, $\tilde\pi_{\mathrm{id},2}$, $-\tilde q = \tfrac{1}{2}(\vec e_x-\vec e_z)$ of the matrix-unit basis $\{\tilde\pi_{\mathrm{id},1}, \tilde q, \tilde p, \tilde\pi_{\mathrm{id},2}\}$ of *Split-Quaternion Ideals and Peirce Decomposition*.
+
+**Example (the split-complex subalgebra).** The idempotents lie in the subalgebra $\operatorname{span}\{1, \vec e_y\} \cong \mathbb{C}_{\mathrm{spl}}$, and in that commutative algebra they are central; in $\mathbb{H}_{\mathrm{spl}}$ they are not, and the decomposition they give is a decomposition of modules and not of algebras, because $\tilde\pi_{\mathrm{id},1} \vec e_z \tilde\pi_{\mathrm{id},2} = \tfrac{1}{2}(\vec e_z - \vec e_x) \neq 0$.
 
 ## Explicit Zero-Divisor Pairs
 
@@ -143,10 +143,10 @@ so $\vec e_x + \vec e_z$ is a nonzero nilpotent and the pair $(\vec e_x+\vec e_z
 
 Every nilpotent lies in the vector subspace $V$ and on the level set $N = 0$, $q_x^2 = q_y^2 + q_z^2$; the element $1 + \vec e_y$ shows that the zero divisor set is strictly larger than the nilpotent set, since $(1+\vec e_y)^2 = 2(1+\vec e_y) \neq 0$.
 
-**Example (a mixed pair).** The idempotent $\tilde\pi_2$ annihilates $1 + \vec e_y$:
+**Example (a mixed pair).** The idempotent $\tilde\pi_{\mathrm{id},2}$ annihilates $1 + \vec e_y$:
 
 $$
-(1 + \vec e_y) \tilde\pi_2 = 2 \tilde\pi_1 \tilde\pi_2 = 0,
+(1 + \vec e_y) \tilde\pi_{\mathrm{id},2} = 2 \tilde\pi_{\mathrm{id},1} \tilde\pi_{\mathrm{id},2} = 0,
 $$
 
 a pair in which neither factor is a nilpotent.
@@ -180,7 +180,7 @@ The action of an invertible element on the vector subspace by conjugation, the e
 
 The basis products are collected in one table, and the multiplication table determines the algebra. The three involutions — conjugation, the principal involution $\alpha$ and the reversal $\rho$ — are diagonalisable; their individual eigenspaces and their common refinement $\mathbb{R}\cdot 1 \oplus \operatorname{span}\{\vec e_x,\vec e_y\} \oplus \mathbb{R} \vec e_z$ are listed, and the plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ does not split further.
 
-The idempotents $\tilde\pi_{1,2}$ are verified to be orthogonal, complete and of zero norm, and they give the two minimal left ideals $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2} = \operatorname{span}\{\tilde\pi_{1,2}, \vec e_x \tilde\pi_{1,2}\}$. Explicit zero-divisor pairs are $(1+\vec e_y)(1-\vec e_y) = 0$, $(1+\vec e_z)(1-\vec e_z) = 0$, the nilpotent $(\vec e_x+\vec e_z)^2 = 0$, and the mixed pair $(1+\vec e_y)\tilde\pi_2 = 0$. The unit criterion is carried through on four elements: $2+\vec e_x$ (positive norm), $1+\vec e_x+\vec e_y$ (norm one), $\vec e_y$ (negative norm), and the non-invertible $1+\vec e_z$ (zero norm). The action of the group of invertibles on the vector subspace is not worked here; it is the subject of *Split-Quaternion Rotations and the Lorentz Group*.
+The idempotents $\tilde\pi_{\mathrm{id},1,2}$ are verified to be orthogonal, complete and of zero norm, and they give the two minimal left ideals $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{\mathrm{id},1,2} = \operatorname{span}\{\tilde\pi_{\mathrm{id},1,2}, \vec e_x \tilde\pi_{\mathrm{id},1,2}\}$. Explicit zero-divisor pairs are $(1+\vec e_y)(1-\vec e_y) = 0$, $(1+\vec e_z)(1-\vec e_z) = 0$, the nilpotent $(\vec e_x+\vec e_z)^2 = 0$, and the mixed pair $(1+\vec e_y)\tilde\pi_{\mathrm{id},2} = 0$. The unit criterion is carried through on four elements: $2+\vec e_x$ (positive norm), $1+\vec e_x+\vec e_y$ (norm one), $\vec e_y$ (negative norm), and the non-invertible $1+\vec e_z$ (zero norm). The action of the group of invertibles on the vector subspace is not worked here; it is the subject of *Split-Quaternion Rotations and the Lorentz Group*.
 
 ## Summary of Notation
 
@@ -189,8 +189,8 @@ The idempotents $\tilde\pi_{1,2}$ are verified to be orthogonal, complete and of
 | $\mathbb{H}_{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
 | $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | a general split-quaternion | *Split-Quaternion Algebra* |
 | ${}^{\natural}$, $\alpha$, $\rho$ | conjugation, principal involution, reversal | *Split-Quaternion Algebra* |
-| $\tilde\pi_{1,2} = \tfrac{1}{2}(1\pm \vec e_y)$ | the standard idempotents | *Split-Quaternion Idempotents and Projections* |
-| $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2}$ | the two minimal left ideals | *Split-Quaternion Idempotents and Projections* |
+| $\tilde\pi_{\mathrm{id},1,2} = \tfrac{1}{2}(1\pm \vec e_y)$ | the standard idempotents | *Split-Quaternion Idempotents and Projections* |
+| $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{\mathrm{id},1,2}$ | the two minimal left ideals | *Split-Quaternion Idempotents and Projections* |
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the central product, formed and evaluated algebraically | *Split-Quaternion Algebra* |
 | $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ | the inverse of an invertible element | *Split-Quaternion Norm and Invertibility* |
 

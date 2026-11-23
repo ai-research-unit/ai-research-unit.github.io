@@ -97,7 +97,7 @@ $$
 Ϙ=\tfrac{ϙ_L+ϙ_R}{2}\,e_t+\tfrac{i}{2}\left(ϙ_L-ϙ_R\right)\vec e_z\;\in\;\mathbb{B}_{\Psi} ,
 $$
 
-a derived form: $Ϙ=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$, the two chirality states at the axis of the previous section. The element $Ϙ$ is Hermitian, and it is central only in the vector-like case $ϙ_L=ϙ_R$, where the action is also a left multiplication. The covariant derivative carries it,
+a derived form: $Ϙ=ϙ_L\tilde\Pi_{\mathrm{id},+}(\vec e_z)+ϙ_R\tilde\Pi_{\mathrm{id},-}(\vec e_z)$, the two chirality states at the axis of the previous section. The element $Ϙ$ is Hermitian, and it is central only in the vector-like case $ϙ_L=ϙ_R$, where the action is also a left multiplication. The covariant derivative carries it,
 
 $$
 D_\mu\tilde{Ξ}=\frac{\partial\tilde{Ξ}}{\partial R_\mu}+\frac{i}{\hbar}A_\mu\,\tilde{Ξ}Ϙ .
@@ -173,7 +173,7 @@ $$
 \tilde\nabla_\Phi\tilde Q_1=m\tilde Q_2, \qquad \tilde\nabla_\Phi\tilde Q_2=m\tilde Q_1,
 $$
 
-one takes the two superpositions of the companion articles. With $\sigma=\tfrac12(e_t+i\vec{\nu})$ the state along a unit direction $\vec{\nu}$, so that $\sigma^2=\sigma$ because $(i\vec{\nu})^2=i^2\vec{\nu}^2=(-e_t)(-e_t)=e_t$, with $\bar{\sigma}=e_t-\sigma=\tfrac12(e_t-i\vec{\nu})$ its complementary state, of zero product $\sigma\bar{\sigma}=0$, and with $\vec{\tau}$ any unit direction orthogonal to $\vec{\nu}$:
+one takes the two superpositions of the companion articles. With $\sigma=\tfrac12(e_t+i\vec u_{\mathrm{ls}})$ the state along a unit direction $\vec u_{\mathrm{ls}}$, so that $\sigma^2=\sigma$ because $(i\vec u_{\mathrm{ls}})^2=i^2\vec u_{\mathrm{ls}}^2=(-e_t)(-e_t)=e_t$, with $\bar{\sigma}=e_t-\sigma=\tfrac12(e_t-i\vec u_{\mathrm{ls}})$ its complementary state, of zero product $\sigma\bar{\sigma}=0$, and with $\vec{\tau}$ any unit direction orthogonal to $\vec u_{\mathrm{ls}}$:
 
 $$
 \tilde{Ξ}_{p}=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}, \qquad \tilde{Ξ}_{n}=\left(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma\right)i\vec{\tau}.
@@ -348,8 +348,8 @@ What the framework does not supply is everything that makes the proton a proton.
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian in the material reading |
 | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The field, an element of $\mathbb{B}$; $\tilde{Ξ}_{L}$ the value L, $\tilde{Ξ}_{R}$ the value R, at the axis $\vec e_z$ |
 | $\tilde{Ξ}^{\flat}=-\tilde{Ξ}^*$ | The algebra's real structure |
-| $\tilde\Pi_\pm(\vec e_z)$ | The two chirality states at the axis; $\tilde\Pi_+$ the L state, $\tilde\Pi_-$ the R state |
-| $Ϙ=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$ | The charge element, in $\mathbb{B}_{\Psi}$; the charge is the right multiplication by it |
+| $\tilde\Pi_{\mathrm{id},\pm}(\vec e_z)$ | The two chirality states at the axis; $\tilde\Pi_{\mathrm{id},+}$ the L state, $\tilde\Pi_{\mathrm{id},-}$ the R state |
+| $Ϙ=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z=ϙ_L\tilde\Pi_{\mathrm{id},+}(\vec e_z)+ϙ_R\tilde\Pi_{\mathrm{id},-}(\vec e_z)$ | The charge element, in $\mathbb{B}_{\Psi}$; the charge is the right multiplication by it |
 | $D_\mu\tilde{Ξ}=\partial\tilde{Ξ}/\partial R_\mu+\frac{i}{\hbar}A_\mu\tilde{Ξ}Ϙ$ | Covariant derivative of the chiral charge |
 | $ϙ_L, ϙ_R$ | Chiral couplings (real parameters); a massive field forces $ϙ_L=ϙ_R$ |
 | $Ϙ=ϙ\,e_t$, $ϙ_p=+1$ | Vector-like charge element; the proton's value (inserted, not derived) |
@@ -361,7 +361,7 @@ What the framework does not supply is everything that makes the proton a proton.
 | $T_a=\tfrac12 e_a$ | Generators of $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$; $T_a^2=-\tfrac14e_t$, values $\pm\tfrac i2$ |
 | $iT_a=\tfrac12 i e_a\in\mathbb{B}_{\Psi}$ | $(iT_a)^2=+\tfrac14e_t$, values $\pm\tfrac12$; neither is the electric charge |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Inherited state-pairing reading |
-| $G_N=\sigma\exp(i\theta_{\mathrm{cen}})+\bar\sigma\exp(i\theta_{\mathrm{axr}})$, $\sigma=\tilde\Pi_+(\vec\nu)$ | Nishijima's two-parameter group of the doubled Lanczos system |
+| $G_N=\sigma\exp(i\theta_{\mathrm{cen}})+\bar\sigma\exp(i\theta_{\mathrm{axr}})$, $\sigma=\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm{ls}})$ | Nishijima's two-parameter group of the doubled Lanczos system |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 
 ## Further Reading

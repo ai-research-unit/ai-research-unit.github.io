@@ -232,7 +232,7 @@ chosen — in the parent, and independently of the derivation here — to lie ne
 | $\frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde Q_3)|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3]$ (central difference, $h=10^{-6}$) | max error $2.4\times10^{-13}$ |
 | $2\,\mathrm{Sc}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$ | $1.0$ to $10^{-39}$ |
 
-The second state is the single-mode thermal state of the partition-function article, $\tilde H_\Psi=\omega\tilde\Pi_-$ with $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, $\omega=0.9$, $\beta=1.2$. Its modular Hamiltonian is
+The second state is the single-mode thermal state of the partition-function article, $\tilde H_\Psi=\omega\tilde\Pi_{\mathrm{id},-}$ with $\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec e_z)$, $\omega=0.9$, $\beta=1.2$. Its modular Hamiltonian is
 $$
 \tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t,
 \qquad

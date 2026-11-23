@@ -29,7 +29,7 @@ The order follows the dependence. The family letters come first, because the nam
 
 **The letters are actions, not slots.** $L$ names left multiplication and $R$ names right multiplication. The same two letters name the two copies of the algebra in *Matrix Representations Conventions*, §*The 4×4 Regular Representation*, and the convention there holds here: the letter names the action, and a change of frame does not exchange the two actions even where it exchanges the two tensor slots.
 
-**One operator outside the four families carries two glyphs.** The exchange, the involution that fixes $\tilde\Pi_\pm$ and swaps $\vec\Upsilon_\pm$, is written $S$ in *Operators Acting on One Side* and $\mathsf P$ in *Matrix Representations Conventions* and in the three matrix operator articles. The two glyphs name the same operator: $S$ where it is read as an operator of the carrier, $\mathsf P$ where it is read as a matrix. A sentence that meets both writes $S=\mathsf P$ and moves on.
+**One operator outside the four families carries two glyphs.** The exchange, the involution that fixes $\tilde\Pi_{\mathrm{id},\pm}$ and swaps $\vec\Pi_{\mathrm{nil},\pm}$, is written $S$ in *Operators Acting on One Side* and $\mathsf P$ in *Matrix Representations Conventions* and in the three matrix operator articles. The two glyphs name the same operator: $S$ where it is read as an operator of the carrier, $\mathsf P$ where it is read as a matrix. A sentence that meets both writes $S=\mathsf P$ and moves on.
 
 **No fifth letter is implied.** An involution, a change of frame and a derivation also occur in the operator articles, and each carries the letter that its own article gives it. The four marks are the vocabulary of the four families assembled from the multiplication; they do not assert that every operator belongs to one of the four.
 
@@ -140,7 +140,7 @@ The matrix of an operator $F$ in a basis $\mathcal{B}$ is written $[F]_{\mathcal
 
 ### The Change $C_{\Pi}$
 
-The change from the Peirce frame to the coefficient frame is written $C_{\Pi}$. Its columns are the four Peirce elements read in coefficient coordinates; it carries a coordinate column from the Peirce frame to the coefficient frame, and its inverse carries the other way. A display that uses the change writes it with its inverse, $C_{\Pi}[\cdot]C_{\Pi}^{-1}$ or $C_{\Pi}^{-1}[\cdot]C_{\Pi}$, and the side of the inverse is the side of the frame being left. The subscript $\Pi$ records the Peirce frame and is not an index.
+The change from the Peirce frame to the coefficient frame is written $C_{\Pi}$. Its columns are the four Peirce elements read in coefficient coordinates; it carries a coordinate column from the Peirce frame to the coefficient frame, and its inverse carries the other way. A display that uses the change writes it with its inverse, $C_{\Pi}[\cdot]C_{\Pi}^{-1}$ or $C_{\Pi}^{-1}[\cdot]C_{\Pi}$, and the side of the inverse is the side of the frame being left. The subscript $\Pi_{\mathrm{id}}$ records the Peirce frame and is not an index.
 
 **Every display declares its frame.** The coefficient basis and the Peirce frame are both used in the operator articles, and no display inherits a frame from another display or from another article. An entry is read only with the frame that produced it.
 

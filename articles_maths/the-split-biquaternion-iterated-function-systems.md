@@ -8,11 +8,11 @@ The split-biquaternion algebra, its idempotents and its norm are *Split-Biquater
 
 The article owns the operator norm of a split-biquaternion generator, the contraction criterion, the product attractor and the sum of the dimensions, the parity structure of the generator list, and the zero-divisor generators. It does not re-derive the classical theory or the quaternion systems.
 
-**Standing convention.** $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ via $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$, and a left-affine generator is $f_i(\tilde Q)=\tilde Q_{1,i}\tilde Q+\tilde Q_{2,i}$ with $\tilde Q_{1,i}=\tilde Q_{1,i}^+\tilde\Pi_1+\tilde Q_{1,i}^-\tilde\Pi_2$; $\|\cdot\|$ is the Euclidean norm of $\mathbb{R}^8$ and $|\cdot|$ the quaternion modulus.
+**Standing convention.** $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ via $\tilde Q=\tilde Q_+\tilde\Pi_{\mathrm{id},1+}\tilde Q_-\tilde\Pi_{\mathrm{id},2}$, and a left-affine generator is $f_i(\tilde Q)=\tilde Q_{1,i}\tilde Q+\tilde Q_{2,i}$ with $\tilde Q_{1,i}=\tilde Q_{1,i}^+\tilde\Pi_{\mathrm{id},1+}\tilde Q_{1,i}^-\tilde\Pi_{\mathrm{id},2}$; $\|\cdot\|$ is the Euclidean norm of $\mathbb{R}^8$ and $|\cdot|$ the quaternion modulus.
 
 ## The Operator Norm and the Contraction Criterion
 
-**Proposition (the operator norm).** For $\tilde Q_1=\tilde Q_{1,+}\tilde\Pi_1+\tilde Q_{1,-}\tilde\Pi_2$ the operator norm of left multiplication is
+**Proposition (the operator norm).** For $\tilde Q_1=\tilde Q_{1,+}\tilde\Pi_{\mathrm{id},1+}\tilde Q_{1,-}\tilde\Pi_{\mathrm{id},2}$ the operator norm of left multiplication is
 
 $$
 \boxed{\;
@@ -58,9 +58,9 @@ $$
 
 ## Zero-Divisor Generators
 
-**Proposition (a zero divisor can multiply a contraction).** Let $\tilde Q_1=\tilde Q_{1,+}\tilde\Pi_1$ be a zero divisor, so $\tilde Q_{1,-}=0$. Then $\|L_{\tilde Q_1}\|=|\tilde Q_{1,+}|$ and the generator $f(\tilde Q)=\tilde Q_1\tilde Q+\tilde Q_2$ is a contraction whenever $|\tilde Q_{1,+}|<1$, with image contained in the ideal $\mathbb{H}\tilde\Pi_1$.
+**Proposition (a zero divisor can multiply a contraction).** Let $\tilde Q_1=\tilde Q_{1,+}\tilde\Pi_{\mathrm{id},1}$ be a zero divisor, so $\tilde Q_{1,-}=0$. Then $\|L_{\tilde Q_1}\|=|\tilde Q_{1,+}|$ and the generator $f(\tilde Q)=\tilde Q_1\tilde Q+\tilde Q_2$ is a contraction whenever $|\tilde Q_{1,+}|<1$, with image contained in the ideal $\mathbb{H}\tilde\Pi_{\mathrm{id},1}$.
 
-**Proof.** The operator norm formula with $\tilde Q_{1,-}=0$; the image of $L_{\tilde Q_1}$ is contained in $\mathbb{H}\tilde\Pi_1$ because $\tilde Q_{1,-}\tilde Q_-=0$ kills the second component. No invertibility of $\tilde Q_1$ is required for the attractor theorem, which needs only the contraction.
+**Proof.** The operator norm formula with $\tilde Q_{1,-}=0$; the image of $L_{\tilde Q_1}$ is contained in $\mathbb{H}\tilde\Pi_{\mathrm{id},1}$ because $\tilde Q_{1,-}\tilde Q_-=0$ kills the second component. No invertibility of $\tilde Q_1$ is required for the attractor theorem, which needs only the contraction.
 
 **Remark (the contrast with the biquaternion systems).** In the biquaternion algebra a zero-divisor multiplier is a contraction whose image avoids a direction, and the image subspace can be a proper complex subspace; here a zero-divisor multiplier kills one whole idempotent factor, so the attractor of the system is contained in the corresponding ideal and is a copy of a quaternion attractor. **The zero divisors of the split-biquaternion algebra act coordinatewise, and their effect on a system is the loss of one factor, not a collapse of the norm.**
 
@@ -96,7 +96,7 @@ The split-biquaternion iterated function systems reduce to quaternion systems on
 | $K=K^+\times K^-$ | the attractor |
 | $s_\pm$ | the two quaternion similarity dimensions |
 | $s_++s_-$ | the dimension of the split-biquaternion attractor |
-| $\mathbb{H}\tilde\Pi_{1,2}$ | the ideals reached by zero-divisor generators |
+| $\mathbb{H}\tilde\Pi_{\mathrm{id},1,2}$ | the ideals reached by zero-divisor generators |
 
 ## Further Reading
 

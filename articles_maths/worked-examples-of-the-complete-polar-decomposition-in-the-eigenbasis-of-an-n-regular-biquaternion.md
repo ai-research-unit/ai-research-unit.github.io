@@ -23,14 +23,14 @@ $$
 and the eigenprojectors are
 
 $$
-\tilde\Pi_\pm=\frac12\bigl(e_t\pm\vec{Ζ}\bigr),
+\tilde\Pi_{\mathrm{id},\pm}=\frac12\bigl(e_t\pm\vec{Ζ}\bigr),
 \qquad
 \vec{Ζ}=-i\frac{\vec Q}{B},
 \qquad
 \vec{Ζ}^2=-e_t.
 $$
 
-The two projectors are idempotent and orthogonal, $\tilde\Pi_\pm^2=\tilde\Pi_\pm$, $\tilde\Pi_+\tilde\Pi_-=0$, and $\tilde\Pi_++\tilde\Pi_-=e_t$. The eigenvalues of the unit factor $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ are
+The two projectors are idempotent and orthogonal, $\tilde\Pi_{\mathrm{id},\pm}^2=\tilde\Pi_{\mathrm{id},\pm}$, $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$, and $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$. The eigenvalues of the unit factor $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ are
 
 $$
 \mu_\pm=\frac{\lambda_\pm}{\varrho\,e^{i\theta_{\mathrm{pha}}}}.
@@ -97,7 +97,7 @@ $$
 \lambda_-=1.624811-1.300243i,
 $$
 
-with product $N=1$ and sum $2Q_t=2-i$. The eigenprojectors are $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ with the vector above. The unit factor is $\tilde U=\tilde Q$ because $N=1$, so $\mu_\pm=\lambda_\pm$.
+with product $N=1$ and sum $2Q_t=2-i$. The eigenprojectors are $\tilde\Pi_{\mathrm{id},\pm}=\frac12(e_t\pm\vec{Ζ})$ with the vector above. The unit factor is $\tilde U=\tilde Q$ because $N=1$, so $\mu_\pm=\lambda_\pm$.
 
 The polar word has $\varrho=1$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=1.762747174$, $\theta_{\mathrm{axr}}=\frac{\pi}{2}$, $\vec u_{\mathrm b}=\vec e_x$ and $\vec u_{\mathrm r}=(\vec e_x+\vec e_y)/\sqrt2$. The eigenlines are not the axes: $\vec{Ζ}$ is not parallel to $\vec e_x$ or to $(\vec e_x+\vec e_y)/\sqrt2$. The eigenvalues of $\tilde U$ have moduli $0.480534$ and $2.081019$, whose ratio is $4.331$ and whose logarithm is $1.4657$, not the rapidity $1.7627$. This is the spectral gap: the spectrum gives two complex numbers, and the word needs two angles and two axes.
 
@@ -117,7 +117,7 @@ $$
 \lambda_-=1.707107-1.707107i,
 $$
 
-and the eigenprojectors are $\tilde\Pi_\pm=\frac12(e_t\mp i\vec e_x)$. The unit factor is $\tilde U=\tilde Q$ because $N=1$, and its eigenvalues are the same. The polar word has $\varrho=1$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=1.762747174$, $\theta_{\mathrm{axr}}=\frac{\pi}{2}$, and the axes coincide, $\vec u_{\mathrm b}=\vec u_{\mathrm r}=\vec e_x$. In this normal case
+and the eigenprojectors are $\tilde\Pi_{\mathrm{id},\pm}=\frac12(e_t\mp i\vec e_x)$. The unit factor is $\tilde U=\tilde Q$ because $N=1$, and its eigenvalues are the same. The polar word has $\varrho=1$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=1.762747174$, $\theta_{\mathrm{axr}}=\frac{\pi}{2}$, and the axes coincide, $\vec u_{\mathrm b}=\vec u_{\mathrm r}=\vec e_x$. In this normal case
 
 $$
 \mu_\pm=e^{\mp\theta_{\mathrm{rpd}}/2}e^{\pm i\theta_{\mathrm{axr}}/2}
@@ -132,7 +132,7 @@ The wall has one eigenvalue and no eigenbasis. The spectral object is the Jordan
 
 ### The Chain, the Block and the Factors
 
-On the Jordan part the matrix model is $\mathsf M(\tilde Q)=Q_t(I+N)$ with $N=\mathsf M(\vec\Upsilon)$, $N^2=0$ and $N\neq0$. Choose a vector $w$ with $v=Nw\neq0$. Then $v\in\ker N$, and $(v,w)$ is a Jordan chain. In that basis,
+On the Jordan part the matrix model is $\mathsf M(\tilde Q)=Q_t(I+N)$ with $N=\mathsf M(\vec\Pi_{\mathrm{nil}})$, $N^2=0$ and $N\neq0$. Choose a vector $w$ with $v=Nw\neq0$. Then $v\in\ker N$, and $(v,w)$ is a Jordan chain. In that basis,
 
 $$
 \mathsf M_{(v,w)}(\tilde Q)=Q_t
@@ -154,7 +154,7 @@ The polar factors are read in the same basis. The positive factor and the rotor 
 
 ### The Scalar Line
 
-On the scalar line $\vec\Upsilon=0$ and $\tilde Q=Q_te_t$. Every basis is an eigenbasis, and the chain is any basis.
+On the scalar line $\vec\Pi_{\mathrm{nil}}=0$ and $\tilde Q=Q_te_t$. Every basis is an eigenbasis, and the chain is any basis.
 
 | Case | $\tilde Q$ | $Q_t$ | $\varepsilon$ | $\mathsf M(\tilde Q)$ | $\tilde U_{\mathrm b}$ | $\tilde u_{\mathrm r}$ |
 |---|---|---|---|---|---|---|
@@ -168,7 +168,7 @@ The three cases have no Jordan defect. The unit factor is $\pm e_t$, the rapidit
 
 The five cases have the same block, with different scalars and chains.
 
-| Case | $Q_t$ | $N=\mathsf M(\vec\Upsilon)$ | chain $v=Nw$, $w$ | $\mathsf M_{(v,w)}(\tilde Q)$ |
+| Case | $Q_t$ | $N=\mathsf M(\vec\Pi_{\mathrm{nil}})$ | chain $v=Nw$, $w$ | $\mathsf M_{(v,w)}(\tilde Q)$ |
 |---|---|---|---|---|
 | 12 | $1$ | $\begin{pmatrix}0&-2i\\0&0\end{pmatrix}$ | $v=(-2i,0)$, $w=(0,1)$ | $\begin{pmatrix}1&1\\0&1\end{pmatrix}$ |
 | 13 | $1$ | $\begin{pmatrix}\tfrac{1}{\sqrt2}&\tfrac{1}{\sqrt2}-1\\ \tfrac{1}{\sqrt2}+1&-\tfrac{1}{\sqrt2}\end{pmatrix}$ | $v=(\tfrac{1}{\sqrt2},1+\tfrac{1}{\sqrt2})$, $w=(1,0)$ | $\begin{pmatrix}1&1\\0&1\end{pmatrix}$ |
@@ -230,7 +230,7 @@ The entries are the exact forms of the decimals $1.82843,0.585786,1.41421,1$ and
 
 - Off the wall the eigenvalues are distinct and nonzero in every case, and the eigenbasis exists in every case.
 - The eigenprojectors are explicit through $\vec{Ζ}=-i\vec Q/B$; the vector is complex and has square $-e_t$.
-- In the normal cases the eigenlines are the polar axes, and the unit eigenvalues factor into a modulus and a phase. In the non-normal cases the eigenlines are not the axes, and the unit eigenvalues do not determine the rapidity and the rotor angle. The reconstruction $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ is exact in all eight cases, including the non-normal ones.
+- In the normal cases the eigenlines are the polar axes, and the unit eigenvalues factor into a modulus and a phase. In the non-normal cases the eigenlines are not the axes, and the unit eigenvalues do not determine the rapidity and the rotor angle. The reconstruction $\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$ is exact in all eight cases, including the non-normal ones.
 - On the wall the spectral object is a Jordan chain. It is explicit in every case, its vectors are not normalized, and the chain is not unique.
 - On the wall the element and the unit factor are triangular in the chain, and the polar factors are not.
 - The polar factors have distinct eigenvalues $e^{\pm\theta_{\mathrm{rpd}}/2}$ and $e^{\pm i\theta_{\mathrm{axr}}/2}$; the element has the double eigenvalue $Q_t$ and the unit factor has the double eigenvalue $\varepsilon$. The scalar line is the only locus on which the chain and the polar frame can be chosen to agree.
@@ -242,12 +242,12 @@ The entries are the exact forms of the decimals $1.82843,0.585786,1.41421,1$ and
 | Item | Value |
 |---|---|
 | eigenvalues | $\lambda_\pm=Q_t\pm iB$ |
-| eigenprojectors | $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ |
+| eigenprojectors | $\tilde\Pi_{\mathrm{id},\pm}=\frac12(e_t\pm\vec{Ζ})$ |
 | eigenvector | $\vec{Ζ}=-i\vec Q/B$, $\vec{Ζ}^2=-e_t$ |
 | unit eigenvalues | $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ |
 | normal factorisation | $\mu_\pm=e^{\mp\theta_{\mathrm{rpd}}/2}e^{\pm i\theta_{\mathrm{axr}}/2}$ |
 | non-normal gap | the moduli of $\mu_\pm$ need not be $e^{\mp\theta_{\mathrm{rpd}}/2}$ |
-| reconstruction | $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ |
+| reconstruction | $\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$ |
 
 ### The Cases, Off the Wall
 
@@ -294,11 +294,11 @@ The entries are the exact forms of the decimals $1.82843,0.585786,1.41421,1$ and
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | the vector form |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues |
 | $\vec{Ζ}=-i\vec Q/B$ | the eigenvector |
-| $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ | the eigenprojectors |
+| $\tilde\Pi_{\mathrm{id},\pm}=\frac12(e_t\pm\vec{Ζ})$ | the eigenprojectors |
 | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | the modulus |
 | $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | the eigenvalues of the unit factor |
 | $\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}}$ | the rapidity and the rotor angle |
-| $\vec\Upsilon=\vec Q/Q_t$ | the null vector of the normal form |
+| $\vec\Pi_{\mathrm{nil}}=\vec Q/Q_t$ | the null vector of the normal form |
 | $\varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$ | the sign of the unit factor on the wall |
 | $v,w$ | a Jordan chain, $Nw=v$ and $Nv=0$ |
 | $\mathsf M_{(v,w)}$ | the matrix in the basis $(v,w)$ |

@@ -270,7 +270,7 @@ either is a zero divisor.
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde q^{\natural} = \sum_\mu q_\mu^2$ | Quaternion norm, positive definite over $\mathbb{R}$ |
 | $\tilde q\tilde q^{\natural} = 0$ | Algebraic criterion for a zero divisor |
 | $\mathcal{Z} = \varnothing$ | Zero divisor set |
-| $\tilde\Pi^2 = \tilde\Pi$ | Idempotent equation |
+| $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$ | Idempotent equation |
 | $\tilde q^2 = 0$ | Square-zero equation |
 | $\mathbb{R}e_t$ | The centre, the scalar line |
 | $\mathrm{Vect}(\mathbb{H})$ | The vector subspace |

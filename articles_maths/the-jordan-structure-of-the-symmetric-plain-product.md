@@ -103,21 +103,21 @@ so a square has scalar part $T=t^2+\lvert\vec s\rvert^2$ and vector part $i\vec 
 
 ## The Peirce Theory
 
-**Proposition (the idempotents).** The idempotents of the algebra are the solutions of $\tilde \Pi^2=\tilde \Pi$. Besides $0$ and $e_t$ there are the rank-one idempotents
+**Proposition (the idempotents).** The idempotents of the algebra are the solutions of $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$. Besides $0$ and $e_t$ there are the rank-one idempotents
 $$
-\tilde \Pi=\tfrac12\bigl(e_t+i\vec u\bigr),\qquad \tilde \Pi'=\tfrac12\bigl(e_t-i\vec u\bigr),\qquad \lvert\vec u\rvert=1,
+\tilde\Pi_{\mathrm{id}}=\tfrac12\bigl(e_t+i\vec u\bigr),\qquad \tilde\Pi_{\mathrm{id}}'=\tfrac12\bigl(e_t-i\vec u\bigr),\qquad \lvert\vec u\rvert=1,
 $$
-with $\tilde \Pi+\tilde \Pi'=e_t$ and $\tilde \Pi\bullet\tilde \Pi'=0$.
+with $\tilde\Pi_{\mathrm{id}}+\tilde\Pi_{\mathrm{id}}'=e_t$ and $\tilde\Pi_{\mathrm{id}}\bullet\tilde\Pi_{\mathrm{id}}'=0$.
 
-*Proof.* The equation at $\tilde \Pi=\tfrac12(e_t+i\vec u)$ reads $\tfrac14(e_t+2i\vec u-\vec u^2)=\tfrac12(e_t+i\vec u)$, that is $\tfrac14(e_t+2i\vec u+e_t)=\tfrac12(e_t+i\vec u)$. The complement is computed the same way, and the product of the two is $\tfrac14(e_t^2-(i\vec u)^2)=\tfrac14(e_t-e_t)=0$.
+*Proof.* The equation at $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+i\vec u)$ reads $\tfrac14(e_t+2i\vec u-\vec u^2)=\tfrac12(e_t+i\vec u)$, that is $\tfrac14(e_t+2i\vec u+e_t)=\tfrac12(e_t+i\vec u)$. The complement is computed the same way, and the product of the two is $\tfrac14(e_t^2-(i\vec u)^2)=\tfrac14(e_t-e_t)=0$.
 
-**Theorem (the Peirce decomposition).** At $\tilde \Pi=\tfrac12(e_t+i\vec e_x)$ the multiplication operator $L(\tilde \Pi)$ has the eigenvalues $1,\tfrac12,0$ with multiplicities $1,2,1$, and
+**Theorem (the Peirce decomposition).** At $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+i\vec e_x)$ the multiplication operator $L(\tilde\Pi_{\mathrm{id}})$ has the eigenvalues $1,\tfrac12,0$ with multiplicities $1,2,1$, and
 $$
 \mathbb{B}=\mathbb{B}_{1}\oplus\mathbb{B}_{1/2}\oplus\mathbb{B}_{0},\qquad
-\mathbb{B}_{1}=\mathbb{C}\tilde \Pi,\quad \mathbb{B}_{1/2}=\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z,\quad \mathbb{B}_{0}=\mathbb{C}\tilde \Pi'.
+\mathbb{B}_{1}=\mathbb{C}\tilde\Pi_{\mathrm{id}},\quad \mathbb{B}_{1/2}=\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z,\quad \mathbb{B}_{0}=\mathbb{C}\tilde\Pi_{\mathrm{id}}'.
 $$
 
-*Proof.* The matrix of $L(\tilde \Pi)$ in the coefficient basis has the characteristic polynomial $\lambda(\lambda-\tfrac12)^2(\lambda-1)$; the eigenspaces are computed exactly. At $\tilde \Pi=e_t$ the operator is the identity and the decomposition collapses to $\mathbb{B}_1=\mathbb{B}$.
+*Proof.* The matrix of $L(\tilde\Pi_{\mathrm{id}})$ in the coefficient basis has the characteristic polynomial $\lambda(\lambda-\tfrac12)^2(\lambda-1)$; the eigenspaces are computed exactly. At $\tilde\Pi_{\mathrm{id}}=e_t$ the operator is the identity and the decomposition collapses to $\mathbb{B}_1=\mathbb{B}$.
 
 **Proposition (the Peirce rules).** The Peirce spaces multiply as
 
@@ -127,9 +127,9 @@ $$
 | $\mathbb{B}_{1/2}$ | $\mathbb{B}_{1/2}$ | $\mathbb{B}_{1}\oplus\mathbb{B}_{0}$ | $\mathbb{B}_{1/2}$ |
 | $\mathbb{B}_{0}$ | $0$ | $\mathbb{B}_{1/2}$ | $\mathbb{B}_{0}$ |
 
-*Proof.* Six inclusions, each verified on the basis of the three spaces. The vanishing of $\mathbb{B}_1\bullet\mathbb{B}_0$ is $\tilde \Pi\bullet\tilde \Pi'=0$; the inclusion $\mathbb{B}_{1/2}\bullet\mathbb{B}_{1/2}\subset\mathbb{B}_1\oplus\mathbb{B}_0$ is $\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_y\bullet\vec e_z=0$.
+*Proof.* Six inclusions, each verified on the basis of the three spaces. The vanishing of $\mathbb{B}_1\bullet\mathbb{B}_0$ is $\tilde\Pi_{\mathrm{id}}\bullet\tilde\Pi_{\mathrm{id}}'=0$; the inclusion $\mathbb{B}_{1/2}\bullet\mathbb{B}_{1/2}\subset\mathbb{B}_1\oplus\mathbb{B}_0$ is $\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_y\bullet\vec e_z=0$.
 
-**Remark (the three blocks read as population and coherence).** The decomposition carries a reading that the state language of the corpus makes plain. At $\tilde\Pi=\tfrac12(e_t+i\vec u)$ the block $\mathbb{B}_1=\mathbb{C}\tilde\Pi$ is the line of the state, $\mathbb{B}_0=\mathbb{C}\tilde\Pi'$ is the line of the orthogonal state, and $\mathbb{B}_{1/2}$ is the plane of the remaining two directions, the ones that the idempotent moves by one half. In the matrix display the first two are the diagonal rays $\lvert u\rangle\langle u\rvert$ and $\lvert u_\perp\rangle\langle u_\perp\rvert$ and the third is the pair of off-diagonal lines. So $\mathbb{B}_1$ and $\mathbb{B}_0$ are the **populations** of the state and of its complement, and $\mathbb{B}_{1/2}$ is the **coherence plane**. Two of the six Peirce rules are then the algebraic content of decoherence: $\mathbb{B}_{1/2}\bullet\mathbb{B}_{1/2}\subset\mathbb{B}_1\oplus\mathbb{B}_0$ says that a coherence squares into populations, and $\mathbb{B}_1\bullet\mathbb{B}_{1/2}\subset\mathbb{B}_{1/2}$ says that a population never creates one. A map that annihilates $\mathbb{B}_{1/2}$ therefore carries the algebra onto $\mathbb{B}_1\oplus\mathbb{B}_0\cong\mathbb{R}^2$, a two-dimensional Jordan algebra; that image is the classical shadow of the cut, and the channel that produces it is [Decoherence as Idempotent Projection](../articles_physics/decoherence-as-idempotent-projection.html). The eigenvalue $\tfrac12$ of $L(\tilde\Pi)$ on the middle block is the reason the middle block is the one a dephasing channel scales: the annihilating map and the idempotent agree on $\mathbb{B}_1$ and $\mathbb{B}_0$ and differ on $\mathbb{B}_{1/2}$ alone. Multiplicities, rules and the decoherence reading were checked on the basis of the three blocks, the middle-block square landing in $\mathbb{B}_1\oplus\mathbb{B}_0$ to $8.9\times10^{-16}$.
+**Remark (the three blocks read as population and coherence).** The decomposition carries a reading that the state language of the corpus makes plain. At $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+i\vec u)$ the block $\mathbb{B}_1=\mathbb{C}\tilde\Pi_{\mathrm{id}}$ is the line of the state, $\mathbb{B}_0=\mathbb{C}\tilde\Pi_{\mathrm{id}}'$ is the line of the orthogonal state, and $\mathbb{B}_{1/2}$ is the plane of the remaining two directions, the ones that the idempotent moves by one half. In the matrix display the first two are the diagonal rays $\lvert u\rangle\langle u\rvert$ and $\lvert u_\perp\rangle\langle u_\perp\rvert$ and the third is the pair of off-diagonal lines. So $\mathbb{B}_1$ and $\mathbb{B}_0$ are the **populations** of the state and of its complement, and $\mathbb{B}_{1/2}$ is the **coherence plane**. Two of the six Peirce rules are then the algebraic content of decoherence: $\mathbb{B}_{1/2}\bullet\mathbb{B}_{1/2}\subset\mathbb{B}_1\oplus\mathbb{B}_0$ says that a coherence squares into populations, and $\mathbb{B}_1\bullet\mathbb{B}_{1/2}\subset\mathbb{B}_{1/2}$ says that a population never creates one. A map that annihilates $\mathbb{B}_{1/2}$ therefore carries the algebra onto $\mathbb{B}_1\oplus\mathbb{B}_0\cong\mathbb{R}^2$, a two-dimensional Jordan algebra; that image is the classical shadow of the cut, and the channel that produces it is [Decoherence as Idempotent Projection](../articles_physics/decoherence-as-idempotent-projection.html). The eigenvalue $\tfrac12$ of $L(\tilde\Pi_{\mathrm{id}})$ on the middle block is the reason the middle block is the one a dephasing channel scales: the annihilating map and the idempotent agree on $\mathbb{B}_1$ and $\mathbb{B}_0$ and differ on $\mathbb{B}_{1/2}$ alone. Multiplicities, rules and the decoherence reading were checked on the basis of the three blocks, the middle-block square landing in $\mathbb{B}_1\oplus\mathbb{B}_0$ to $8.9\times10^{-16}$.
 
 **Proposition (degree two).** Every Hermitian element $\tilde H=te_t+i\vec s$ satisfies the quadratic equation
 $$
@@ -141,7 +141,7 @@ so the algebra has degree two, with trace $2t$ and determinant $t^2-\lvert\vec s
 
 **Remark (the determinant and the cone).** The cone of squares is the set where the trace is nonnegative and the determinant is nonnegative, which is the standard description of the positive cone of a formally real Jordan algebra of degree two. The two open conditions $t>0$ and $t^2>\lvert\vec s\rvert^2$ define its interior, and the boundary is the zero set of the determinant inside the closed half-space of nonnegative trace.
 
-**Remark (what the decomposition says).** The algebra is a Jordan algebra of degree two in the classical sense: at a rank-one idempotent, the space splits into the line of the idempotent, the two-dimensional part that the idempotent moves by one half, and the line of the complement. The two-dimensional part is $\mathbb{B}_{1/2}$ and it is not the vector subspace: the vector subspace is $\mathbb{B}_{1/2}\oplus\mathbb{C}\vec e_x$, and $\vec e_x=i(\tilde \Pi-\tilde \Pi')$ lies in $\mathbb{B}_1\oplus\mathbb{B}_0$. The Peirce theory of the biquaternion algebra as a whole is [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html).
+**Remark (what the decomposition says).** The algebra is a Jordan algebra of degree two in the classical sense: at a rank-one idempotent, the space splits into the line of the idempotent, the two-dimensional part that the idempotent moves by one half, and the line of the complement. The two-dimensional part is $\mathbb{B}_{1/2}$ and it is not the vector subspace: the vector subspace is $\mathbb{B}_{1/2}\oplus\mathbb{C}\vec e_x$, and $\vec e_x=i(\tilde\Pi_{\mathrm{id}}-\tilde\Pi_{\mathrm{id}}')$ lies in $\mathbb{B}_1\oplus\mathbb{B}_0$. The Peirce theory of the biquaternion algebra as a whole is [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html).
 
 ## The Operators
 
@@ -183,7 +183,7 @@ equals $\tfrac12\bigl(\tilde Q_2\tilde Q_1\tilde Q_3+\tilde Q_3\tilde Q_1\tilde 
 | commutative | yes | yes | no, conjugate | no, conjugate |
 | Jordan identity | yes | no | no | no |
 | defect | $0$ | $1$ | $1$ | $4$ |
-| idempotents | $\tilde \Pi$ of rank one | $0,e_t$ | $0,e_t$ | $\tilde \Pi$ of rank one |
+| idempotents | $\tilde\Pi_{\mathrm{id}}$ of rank one | $0,e_t$ | $0,e_t$ | $\tilde\Pi_{\mathrm{id}}$ of rank one |
 | cone of squares in $\mathbb{B}_{\Psi}$ | $t\geq\lvert\vec s\rvert$ | $\mathbb{R}e_t$ | $\mathbb{R}_{\geq0}e_t$ | $\mathbb{R}e_t$ |
 | spectrum of $L(e_t)$ | $1,1,1,1$ | $1,0,0,0$ | $1,0,0,0$ | $1,-1,-1,-1$ |
 
@@ -210,8 +210,8 @@ The quadratic representation is the two-sided product $U(\tilde Q_1)\tilde Q_2=\
 | $U(\tilde Q_1)=2L(\tilde Q_1)^2-L(\tilde Q_1^2)$ | the quadratic representation |
 | $\{\tilde Q_1,\tilde Q_2,\tilde Q_3\}$ | the Jordan triple product |
 | $\mathbb{B}_{\Psi}$ | the Hermitian subspace, $te_t+i\vec s$ with $t,\vec s$ real |
-| $\tilde \Pi=\tfrac12(e_t+i\vec u)$ | a rank-one idempotent |
-| $\mathbb{B}_{1},\mathbb{B}_{1/2},\mathbb{B}_{0}$ | the Peirce spaces at $\tilde \Pi$ |
+| $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+i\vec u)$ | a rank-one idempotent |
+| $\mathbb{B}_{1},\mathbb{B}_{1/2},\mathbb{B}_{0}$ | the Peirce spaces at $\tilde\Pi_{\mathrm{id}}$ |
 | $D$ | the Jordan defect |
 | $C$ | the cone of squares |
 

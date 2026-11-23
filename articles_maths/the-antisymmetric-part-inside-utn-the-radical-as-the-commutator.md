@@ -114,7 +114,7 @@ $$
 
 Meanwhile $\operatorname{Skew}_3\cong\mathfrak{so}(3)$ has dimension $3$ and is simple, so its commutator is itself. The two three-dimensional pieces therefore behave in opposite ways, which the computation confirms at every step.
 
-**The biquaternion reading at $n=2$ makes the coincidence of radicals visible.** The strictly upper triangular piece $n_+$ is the line $E_{12}$, which is the corner $\mathbb{B}_{+-}$ when the idempotents are taken to be the coordinate projections; the idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ are symmetric, and the nilpotent $\vec\Upsilon_{+-}$ lies in that corner. So the radical of the trace form is the line of the companion nilpotent, and the antisymmetric line $\mathbb{C}J$ is the rotation direction, which is not triangular and does not meet $UT_2$.
+**The biquaternion reading at $n=2$ makes the coincidence of radicals visible.** The strictly upper triangular piece $n_+$ is the line $E_{12}$, which is the corner $\mathbb{B}_{+-}$ when the idempotents are taken to be the coordinate projections; the idempotents $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ are symmetric, and the nilpotent $\vec\Pi_{\mathrm{nil},+-}$ lies in that corner. So the radical of the trace form is the line of the companion nilpotent, and the antisymmetric line $\mathbb{C}J$ is the rotation direction, which is not triangular and does not meet $UT_2$.
 
 ## Summary
 

@@ -92,7 +92,7 @@ $$
 \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=0 .
 $$
 
-This is the **biquaternion-norm cone** of $\mathbb{B}_{\Psi}$, and it is exactly the cone of idempotents: a rank-one idempotent satisfies $\tilde\Pi^2=\tilde\Pi$ and $\langle\tilde\Pi\rangle_{\natural}=0$, and conversely a Hermitian element of the cone with unit trace is a pure state. Normalising $S_0=1$, the cone is
+This is the **biquaternion-norm cone** of $\mathbb{B}_{\Psi}$, and it is exactly the cone of idempotents: a rank-one idempotent satisfies $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$ and $\langle\tilde\Pi_{\mathrm{id}}\rangle_{\natural}=0$, and conversely a Hermitian element of the cone with unit trace is a pure state. Normalising $S_0=1$, the cone is
 
 $$
 S_1^2+S_2^2+S_3^2=1 ,
@@ -113,31 +113,31 @@ The two elementary optical elements, the polarizer and the phase shifter, are in
 **The polarizer.** A polarizer that transmits the polarization $\vec u$ is the rank-one idempotent of $\mathbb{B}_{\Psi}$
 
 $$
-\tilde\Pi_{\vec u} = \tfrac12\left(e_t + i\vec u\right),
+\tilde\Pi_{\mathrm{id},\vec u} = \tfrac12\left(e_t + i\vec u\right),
 \qquad
-\tilde\Pi_{\vec u}^2 = \tilde\Pi_{\vec u},
+\tilde\Pi_{\mathrm{id},\vec u}^2 = \tilde\Pi_{\mathrm{id},\vec u},
 \qquad
-\tilde\Pi_{\vec u}^{\dagger} = \tilde\Pi_{\vec u},
+\tilde\Pi_{\mathrm{id},\vec u}^{\dagger} = \tilde\Pi_{\mathrm{id},\vec u},
 $$
 
 the same element that the wave article identifies as the flagpole of a circular polarization. Its action on the coherence biquaternion is the rank-one projection
 
 $$
-\tilde{Ϛ}_{\Psi} \;\longmapsto\; \tilde\Pi_{\vec u}\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\vec u} = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\vec u}\right)\tilde\Pi_{\vec u},
+\tilde{Ϛ}_{\Psi} \;\longmapsto\; \tilde\Pi_{\mathrm{id},\vec u}\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{id},\vec u} = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{id},\vec u}\right)\tilde\Pi_{\mathrm{id},\vec u},
 $$
 
-which holds because a rank-one idempotent satisfies $\tilde\Pi\tilde{Ϛ}_{\Psi}\tilde\Pi = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi^{*})\tilde\Pi$, the trace reading $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi)$ being the same number at normalisation, the star being inert and the unstarred trace real and non-negative. The result is Malus' law,
+which holds because a rank-one idempotent satisfies $\tilde\Pi_{\mathrm{id}}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id}} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id}}^{*})\tilde\Pi_{\mathrm{id}}$, the trace reading $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id}}^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id}})$ being the same number at normalisation, the star being inert and the unstarred trace real and non-negative. The result is Malus' law,
 
 $$
-2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\vec u}\right) = \tfrac12\left(S_0 + \vec u\cdot\vec S\right),
+2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{id},\vec u}\right) = \tfrac12\left(S_0 + \vec u\cdot\vec S\right),
 $$
 
 so the transmitted intensity follows the cosine of the angle between the polarizer axis and the Stokes vector. The two opposite axes give complementary idempotents,
 
 $$
-\tilde\Pi_{\vec u} + \tilde\Pi_{-\vec u} = e_t,
+\tilde\Pi_{\mathrm{id},\vec u} + \tilde\Pi_{\mathrm{id},-\vec u} = e_t,
 \qquad
-\tilde\Pi_{-\vec u}\,\tilde\Pi_{\vec u} = 0 ,
+\tilde\Pi_{\mathrm{id},-\vec u}\,\tilde\Pi_{\mathrm{id},\vec u} = 0 ,
 $$
 
 which is the algebraic statement that two orthogonal polarizations are mutually exclusive: the idempotent of one annihilates the other. This orthogonality is what makes the Stokes sphere a sphere of states rather than of directions.

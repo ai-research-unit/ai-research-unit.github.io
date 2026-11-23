@@ -4,11 +4,11 @@
 
 This entry reads the second of the three carriers in detail: the spinor plane, the two subspaces that close it, and the two-component object that a fermion carries at each event. The mathematics is one article and its two companions, and its answer is longer than the spin-zero answer for a structural reason. The carrier of spin zero needs one closure and has one. The carrier of spin one half needs two, and it has two: the plane is the carrier, the minimal left ideal is its first closure, and the algebra split by a pair of idempotents is the second. A field with values in the first closure is a Weyl spinor; a field with values in the second is a Dirac spinor. Both closings are the same algebraic step repeated, and the entry keeps them apart because physics uses both.
 
-The first claim is that the carrier is a complex line, of real dimension two. For a unit real axis $\vec u$ the element $\tilde\Pi_+(\vec u)=\tfrac12(e_t+i\vec u)$ is idempotent, its norm vanishes, and the plane $\mathbb{C}\tilde\Pi_+(\vec u)$ is two real dimensional and one complex dimensional. Left multiplication acts on it by the phase $e^{-i\theta/2}$, the weights are $\pm\tfrac12$, the spin is $\tfrac12$, the identity $2s+1=\dim_\mathbb{R}$ reads $2=2$, and a full turn acts as $-\mathrm{id}$. All five statements are verified below to machine precision.
+The first claim is that the carrier is a complex line, of real dimension two. For a unit real axis $\vec u$ the element $\tilde\Pi_{\mathrm{id},+}(\vec u)=\tfrac12(e_t+i\vec u)$ is idempotent, its norm vanishes, and the plane $\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u)$ is two real dimensional and one complex dimensional. Left multiplication acts on it by the phase $e^{-i\theta/2}$, the weights are $\pm\tfrac12$, the spin is $\tfrac12$, the identity $2s+1=\dim_\mathbb{R}$ reads $2=2$, and a full turn acts as $-\mathrm{id}$. All five statements are verified below to machine precision.
 
-The second claim is that the plane is a carrier for one circle and not for the group. Left multiplication by the axis of the plane preserves it; left multiplication by a transverse axis does not, and the image of $\tilde\Pi_+$ lands at distance $\sqrt2/2$ from the plane. This is the one carrier of the three whose invariance fails, and it is why the spin-half case has two closures where the other two have one.
+The second claim is that the plane is a carrier for one circle and not for the group. Left multiplication by the axis of the plane preserves it; left multiplication by a transverse axis does not, and the image of $\tilde\Pi_{\mathrm{id},+}$ lands at distance $\sqrt2/2$ from the plane. This is the one carrier of the three whose invariance fails, and it is why the spin-half case has two closures where the other two have one.
 
-The third claim is that the first closure is a minimal left ideal, of real dimension four. The subspace $\mathbb{B}\tilde\Pi_+(\vec u)$ adds the transverse direction and nothing else, is closed under left multiplication by the whole algebra, has no smaller invariant left subspace, and is null: the norm vanishes on all of it. A field valued in it is a two-component spinor, and the algebra acts on it irreducibly.
+The third claim is that the first closure is a minimal left ideal, of real dimension four. The subspace $\mathbb{B}\tilde\Pi_{\mathrm{id},+}(\vec u)$ adds the transverse direction and nothing else, is closed under left multiplication by the whole algebra, has no smaller invariant left subspace, and is null: the norm vanishes on all of it. A field valued in it is a two-component spinor, and the algebra acts on it irreducibly.
 
 The fourth claim is that the second closure is the algebra split by the pair of idempotents. The two ideals $S_+$ and $S_-$ meet only at zero, each is null, and $\mathbb{B}=S_+\oplus S_-$. A field valued in both is a four-component spinor. The norm on that space is not a norm on either summand: it is the pairing $N(X_++X_-)=2B(X_+,X_-)$, so the invariant length of a bispinor is the pairing of its two chiral halves and of nothing else.
 
@@ -28,7 +28,7 @@ The second objection is that a carrier of real dimension two cannot hold a spino
 
 The third objection is that the axis is a coordinate and the article builds physics on a coordinate. The axis is a coordinate in the sense that it can be rotated, and the entry states exactly that and refuses to make it a datum. What survives the rotation is the structure: every axis gives a plane, an ideal, and a pair; no axis is preferred; and a statement proved at one axis holds at every axis because the group moves one axis to another and carries the whole family with it. The frame enters once, when a value or a chirality is named, and the entry marks that place.
 
-The letters. The algebra is $\mathbb{B}$, real of dimension eight, units $e_t,\vec e_x,\vec e_y,\vec e_z$, with $e_t$ the identity and $\vec e_k^{2}=-e_t$; the central imaginary is $i$; an element is $\tilde Q=Q_te_t+\vec Q$ with complex coefficients. The star ${}^{*}$ is the Hermitian conjugation, the bar $\bar{\cdot}$ the coefficient conjugation, and ${}^{\natural}$ the natural conjugation. The norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ and $B$ is its polar form. A unit real axis is $\vec u$, with $\vec u_2,\vec u_3$ an oriented orthonormal pair completing it; the idempotents are $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$; the plane is $\Sigma(\vec u)=\mathbb{C}\tilde\Pi_+(\vec u)$; the ideals are $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$; the action is left multiplication, $L_X(Y)=XY$. The sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$, and the four sectors of the two predicates are written $\Sigma_{ij}$. A rotor is $\tilde u=\cos\tfrac\theta2e_t+\sin\tfrac\theta2\vec u$, and the spectrum of an element is the pair $\lambda_{\pm}=Q_t\pm iB$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$.
+The letters. The algebra is $\mathbb{B}$, real of dimension eight, units $e_t,\vec e_x,\vec e_y,\vec e_z$, with $e_t$ the identity and $\vec e_k^{2}=-e_t$; the central imaginary is $i$; an element is $\tilde Q=Q_te_t+\vec Q$ with complex coefficients. The star ${}^{*}$ is the Hermitian conjugation, the bar $\bar{\cdot}$ the coefficient conjugation, and ${}^{\natural}$ the natural conjugation. The norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ and $B$ is its polar form. A unit real axis is $\vec u$, with $\vec u_2,\vec u_3$ an oriented orthonormal pair completing it; the idempotents are $\tilde\Pi_{\mathrm{id},\pm}(\vec u)=\tfrac12(e_t\pm i\vec u)$; the plane is $\Sigma(\vec u)=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u)$; the ideals are $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u)$; the action is left multiplication, $L_X(Y)=XY$. The sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$, and the four sectors of the two predicates are written $\Sigma_{ij}$. A rotor is $\tilde u=\cos\tfrac\theta2e_t+\sin\tfrac\theta2\vec u$, and the spectrum of an element is the pair $\lambda_{\pm}=Q_t\pm iB$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$.
 
 Boundaries. The plane, the two closures, the infinity of the family and the corners are *Introduction to the Spin-Half Bispinors Spaces*; the nullity of the idempotent, of the plane and of the ideals, the isotropic dimension and the pairing are *The Spin-Half Bispinors and N Norm Regularity*; the spectrum $\{0,\lambda\}$, the degenerate plane inside the ideal and the square-zero elements are *The Spin-Half Bispinors and Spectral Regularity*; the list of three carriers and the four closure rules are *From the Spin to the Carriers and the Closures*; the idempotents, the minimality and the splitting are *The Minimal Left Ideals of the Biquaternion Algebra*; the parametrisation of the family is *The Peirce Basis of the Biquaternion Algebra*; the one-sided action as a representation is *The One-Sided Action and the Spin Representation*. The physics is read from *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, *The Dirac Equation in Biquaternionic Form*, *Chiral Fermions in the Biquaternion Framework*, *States, Observables and the Born Weight*, *Chirality and the Weyl Spinors*, *The Celestial Sphere of the Null Cone* and *Two Spin-Half Particles*. No dynamics, no mass value and no quantum postulate appear below.
 
@@ -49,21 +49,21 @@ Boundaries. The plane, the two closures, the infinity of the family and the corn
 
 ## The Results in Brief
 
-The carrier. The plane $\Sigma(\vec u)=\mathbb{C}\tilde\Pi_+(\vec u)$, of real dimension $2$ and complex dimension one, with the idempotent of the axis as its generator.
+The carrier. The plane $\Sigma(\vec u)=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u)$, of real dimension $2$ and complex dimension one, with the idempotent of the axis as its generator.
 
-The first closure. The minimal left ideal $S_+(\vec u)=\mathbb{B}\tilde\Pi_+(\vec u)$, of real dimension $4$ and complex dimension two, spanned over $\mathbb{C}$ by $\tilde\Pi_+$ and $\vec u_2\tilde\Pi_+$.
+The first closure. The minimal left ideal $S_+(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},+}(\vec u)$, of real dimension $4$ and complex dimension two, spanned over $\mathbb{C}$ by $\tilde\Pi_{\mathrm{id},+}$ and $\vec u_2\tilde\Pi_{\mathrm{id},+}$.
 
 The second closure. The bispinor space $\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u)$, of real dimension $8$, which as a set is the algebra and as a decomposition is the algebra together with the pair of idempotents.
 
 The action. Left multiplication at every element: $\rho_{\mathrm{rep}}(X)=L_X$, with $L_X(Y)=XY$. It preserves each ideal and does not preserve the plane.
 
-The half angle. $\vec u\tilde\Pi_+=-i\tilde\Pi_+$ and $\tilde u\tilde\Pi_+=e^{-i\theta/2}\tilde\Pi_+$, so the rotor multiplies the plane by a phase and the phase is half the rotation angle.
+The half angle. $\vec u\tilde\Pi_{\mathrm{id},+}=-i\tilde\Pi_{\mathrm{id},+}$ and $\tilde u\tilde\Pi_{\mathrm{id},+}=e^{-i\theta/2}\tilde\Pi_{\mathrm{id},+}$, so the rotor multiplies the plane by a phase and the phase is half the rotation angle.
 
 The two numbers. The weights are $\pm\tfrac12$, the spin is $\tfrac12$, $2s+1=2$ is the dimension of the carrier, and a full turn acts as $-\mathrm{id}$, which is $(-1)^{2s}$.
 
-The norm. $N(\lambda\tilde\Pi_+)=0$ for every $\lambda$; the norm vanishes on the plane and on each ideal, so no element of a single chirality is norm-regular.
+The norm. $N(\lambda\tilde\Pi_{\mathrm{id},+})=0$ for every $\lambda$; the norm vanishes on the plane and on each ideal, so no element of a single chirality is norm-regular.
 
-The spectrum. $B^{2}(\lambda\tilde\Pi_+)=-\lambda^{2}/4$, so the plane is spectrally regular off the origin, with $\operatorname{spec}(\lambda\tilde\Pi_+)=\{0,\lambda\}$ and $\operatorname{spec}(\tilde\Pi_+)=\{0,1\}$.
+The spectrum. $B^{2}(\lambda\tilde\Pi_{\mathrm{id},+})=-\lambda^{2}/4$, so the plane is spectrally regular off the origin, with $\operatorname{spec}(\lambda\tilde\Pi_{\mathrm{id},+})=\{0,\lambda\}$ and $\operatorname{spec}(\tilde\Pi_{\mathrm{id},+})=\{0,1\}$.
 
 The sector. The plane away from the origin is $\Sigma_{01}$: null and spectrally regular. It is the only carrier in that sector.
 
@@ -86,9 +86,9 @@ The mass. A mass term needs both ideals, because a term built from one vanishes 
 The idempotent. For a unit real axis $\vec u$,
 
 $$
-\tilde\Pi_+(\vec u)=\tfrac12\bigl(e_t+i\vec u\bigr),
+\tilde\Pi_{\mathrm{id},+}(\vec u)=\tfrac12\bigl(e_t+i\vec u\bigr),
 \qquad
-\tilde\Pi_+^{2}=\tilde\Pi_+ .
+\tilde\Pi_{\mathrm{id},+}^{2}=\tilde\Pi_{\mathrm{id},+} .
 $$
 
 The square is a one-line computation: $(e_t+i\vec u)^{2}=e_t+2i\vec u-\vec u^{2}=2e_t+2i\vec u$, since $\vec u^{2}=-\lvert\vec u\rvert^{2}e_t=-e_t$, and half of that is the element again. The idempotent is not a matrix, not a column and not a choice of basis: it is one element of the algebra, named by one unit vector.
@@ -96,9 +96,9 @@ The square is a one-line computation: $(e_t+i\vec u)^{2}=e_t+2i\vec u-\vec u^{2}
 The complement. The companion element is
 
 $$
-\tilde\Pi_-(\vec u)=\tfrac12\bigl(e_t-i\vec u\bigr)=e_t-\tilde\Pi_+(\vec u),
+\tilde\Pi_{\mathrm{id},-}(\vec u)=\tfrac12\bigl(e_t-i\vec u\bigr)=e_t-\tilde\Pi_{\mathrm{id},+}(\vec u),
 \qquad
-\tilde\Pi_+\tilde\Pi_-=0 .
+\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0 .
 $$
 
 The product vanishes because the crossed terms cancel and the remaining square is $(e_t+i\vec u)(e_t-i\vec u)=e_t-\vec u^{2}=e_t-e_t=0$, and the product in quarters is $e_t-i\vec u+i\vec u+i^{2}\vec u^{2}=e_t+\vec u^{2}=e_t-e_t=0$. The pair is a Peirce basis: two idempotents, summing to the identity, with vanishing product. The algebra is the sum of the four corners they cut out.
@@ -106,7 +106,7 @@ The product vanishes because the crossed terms cancel and the remaining square i
 The plane. The carrier is the complex line through the idempotent, taken as a real plane:
 
 $$
-\Sigma(\vec u)=\mathbb{C}\tilde\Pi_+(\vec u)=\mathbb{R}\bigl\{\tilde\Pi_+,\;i\tilde\Pi_+\bigr\},
+\Sigma(\vec u)=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u)=\mathbb{R}\bigl\{\tilde\Pi_{\mathrm{id},+},\;i\tilde\Pi_{\mathrm{id},+}\bigr\},
 \qquad
 \dim_\mathbb{R}\Sigma=2,\quad \dim_\mathbb{C}\Sigma=1 .
 $$
@@ -124,18 +124,18 @@ The action is one-sided. This is the difference that matters and it is worth nam
 The half angle. Two identities carry the whole spin content, and both follow from the defining property of the axis rather than from a computation with arrays:
 
 $$
-\vec u\,\tilde\Pi_+(\vec u)=\tfrac12\bigl(\vec u+i\vec u^{2}\bigr)=\tfrac12\bigl(\vec u-ie_t\bigr)=-i\,\tilde\Pi_+(\vec u),
+\vec u\,\tilde\Pi_{\mathrm{id},+}(\vec u)=\tfrac12\bigl(\vec u+i\vec u^{2}\bigr)=\tfrac12\bigl(\vec u-ie_t\bigr)=-i\,\tilde\Pi_{\mathrm{id},+}(\vec u),
 \qquad
-\tilde\Pi_+(\vec u)\,\vec u=-i\,\tilde\Pi_+(\vec u).
+\tilde\Pi_{\mathrm{id},+}(\vec u)\,\vec u=-i\,\tilde\Pi_{\mathrm{id},+}(\vec u).
 $$
 
 The axis multiplies the idempotent by $-i$ from either side. Now let $\tilde u=\cos\tfrac\theta2e_t+\sin\tfrac\theta2\vec u$ be the rotor of angle $\theta$ about the same axis. Its action on the plane is
 
 $$
-\tilde u\,\tilde\Pi_+=\Bigl(\cos\tfrac\theta2-i\sin\tfrac\theta2\Bigr)\tilde\Pi_+=e^{-i\theta/2}\,\tilde\Pi_+ .
+\tilde u\,\tilde\Pi_{\mathrm{id},+}=\Bigl(\cos\tfrac\theta2-i\sin\tfrac\theta2\Bigr)\tilde\Pi_{\mathrm{id},+}=e^{-i\theta/2}\,\tilde\Pi_{\mathrm{id},+} .
 $$
 
-The rotor multiplies the plane by a phase, and the phase is half the angle. Nothing was inserted to produce the half: it is the identity $\vec u\tilde\Pi_+=-i\tilde\Pi_+$ read once. A rotation of the axis by $\theta$ turns the plane by $\theta/2$, and the map from rotations to phases on the plane is two-to-one.
+The rotor multiplies the plane by a phase, and the phase is half the angle. Nothing was inserted to produce the half: it is the identity $\vec u\tilde\Pi_{\mathrm{id},+}=-i\tilde\Pi_{\mathrm{id},+}$ read once. A rotation of the axis by $\theta$ turns the plane by $\theta/2$, and the map from rotations to phases on the plane is two-to-one.
 
 The weights. The generator of rotations about $\vec u$ is $A(\vec u)=\tfrac12\vec u$, and by the identity above it acts on the plane as the complex scalar $-\tfrac i2$. The plane is a complex line, so the operator has one complex eigenvalue, and on the two real dimensions the eigenvalues are that scalar and its conjugate:
 
@@ -148,7 +148,7 @@ The spin is the largest weight, $s=\tfrac12$, and the count $2s+1=2$ is the real
 
 The full turn. At $\theta=2\pi$ the phase is $e^{-i\pi}=-1$, so the operator of a full turn is $-\mathrm{id}$ on the plane while it is $+\mathrm{id}$ on every four-vector. The coefficient is $(-1)^{2s}=-1$. This is the algebraic origin of the statement that a spinor needs two full turns to return to itself, and it is a statement about the action, not about a picture: the operator of $2\pi$ is minus the identity on the carrier and plus the identity on the vector sector, and those are two different operators of the same algebra.
 
-Verification. With the axis $\vec e_z$ the residuals are: $\lVert\tilde\Pi_+^{2}-\tilde\Pi_+\rVert=0$; $\lVert\tilde\Pi_++\tilde\Pi_--e_t\rVert=0$; $\lVert\tilde\Pi_+\tilde\Pi_-\rVert=0$; the rank of $\{\tilde\Pi_+,i\tilde\Pi_+\}$ is $2$; $\lVert\vec u\tilde\Pi_++i\tilde\Pi_+\rVert=0$; the rotor identity holds to $0$ at $\theta=0.9$; and a full turn gives $\lVert\tilde u\tilde\Pi_++\tilde\Pi_+\rVert=8.7\times10^{-17}$. The last number is round-off, not a residual.
+Verification. With the axis $\vec e_z$ the residuals are: $\lVert\tilde\Pi_{\mathrm{id},+}^{2}-\tilde\Pi_{\mathrm{id},+}\rVert=0$; $\lVert\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},--e}_t\rVert=0$; $\lVert\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}\rVert=0$; the rank of $\{\tilde\Pi_{\mathrm{id},+},i\tilde\Pi_{\mathrm{id},+}\}$ is $2$; $\lVert\vec u\tilde\Pi_{\mathrm{id},++i}\tilde\Pi_{\mathrm{id},+}\rVert=0$; the rotor identity holds to $0$ at $\theta=0.9$; and a full turn gives $\lVert\tilde u\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},+}\rVert=8.7\times10^{-17}$. The last number is round-off, not a residual.
 
 **What the plane is not.** The plane is not an ideal. It is a complex line inside the ideal, closed under multiplication by the axis and by every rotor about the axis, and not closed under multiplication by the rest of the algebra. The distinction between the line and the ideal is the distinction between the carrier and the first closure, and the next two sections are about that difference.
 
@@ -157,13 +157,13 @@ Verification. With the axis $\vec e_z$ the residuals are: $\lVert\tilde\Pi_+^{2}
 The failure. Take $\vec u_2$ a unit axis orthogonal to $\vec u$. Then
 
 $$
-\vec u_2\,\tilde\Pi_+(\vec u)=\tfrac12\bigl(\vec u_2+i\vec u_2\vec u\bigr)=\tfrac12\bigl(\vec u_2-i\vec u_3\bigr),
+\vec u_2\,\tilde\Pi_{\mathrm{id},+}(\vec u)=\tfrac12\bigl(\vec u_2+i\vec u_2\vec u\bigr)=\tfrac12\bigl(\vec u_2-i\vec u_3\bigr),
 $$
 
-using $\vec u_2\vec u=-\vec u_3$ for the oriented triple. The result has a component along $\vec u_3$, which is not a complex multiple of $\tilde\Pi_+$ and not even in the span of $\tilde\Pi_+$ and $\vec u_2\tilde\Pi_+$ — the second statement needs the next section, the first is immediate. The distance from the image to the plane is
+using $\vec u_2\vec u=-\vec u_3$ for the oriented triple. The result has a component along $\vec u_3$, which is not a complex multiple of $\tilde\Pi_{\mathrm{id},+}$ and not even in the span of $\tilde\Pi_{\mathrm{id},+}$ and $\vec u_2\tilde\Pi_{\mathrm{id},+}$ — the second statement needs the next section, the first is immediate. The distance from the image to the plane is
 
 $$
-\operatorname{dist}\bigl(\vec u_2\tilde\Pi_+,\Sigma(\vec u)\bigr)=\tfrac{\sqrt2}{2},
+\operatorname{dist}\bigl(\vec u_2\tilde\Pi_{\mathrm{id},+},\Sigma(\vec u)\bigr)=\tfrac{\sqrt2}{2},
 $$
 
 computed as the residual of the best complex multiple: the image has a component $\tfrac12\vec u_2$ that no multiple of $\tfrac12(e_t+i\vec u)$ can reproduce, since a multiple of the idempotent has equal scalar and axis parts.
@@ -181,32 +181,32 @@ The physics of the failure. A preparation direction is not Lorentz invariant. If
 The subspace. The smallest real subspace that contains the plane and is preserved by left multiplication at every element of the algebra is
 
 $$
-S_+(\vec u)=\mathbb{B}\,\tilde\Pi_+(\vec u)=\mathbb{C}\bigl\{\tilde\Pi_+,\;\vec u_2\tilde\Pi_+\bigr\},
+S_+(\vec u)=\mathbb{B}\,\tilde\Pi_{\mathrm{id},+}(\vec u)=\mathbb{C}\bigl\{\tilde\Pi_{\mathrm{id},+},\;\vec u_2\tilde\Pi_{\mathrm{id},+}\bigr\},
 \qquad
 \dim_\mathbb{R}S_+=4,\quad \dim_\mathbb{C}S_+=2 .
 $$
 
-Why those two vectors span it. Expand a general element in the orthonormal quadruple $e_t,\vec u,\vec u_2,\vec u_3$: $\tilde Q=Q_te_t+Q_1\vec u+Q_2\vec u_2+Q_3\vec u_3$. On the right every unit meets $\tilde\Pi_+$, and the four products are fixed by the multiplication of the pure units:
+Why those two vectors span it. Expand a general element in the orthonormal quadruple $e_t,\vec u,\vec u_2,\vec u_3$: $\tilde Q=Q_te_t+Q_1\vec u+Q_2\vec u_2+Q_3\vec u_3$. On the right every unit meets $\tilde\Pi_{\mathrm{id},+}$, and the four products are fixed by the multiplication of the pure units:
 
 $$
-e_t\tilde\Pi_+=\tilde\Pi_+,\qquad
-\vec u\tilde\Pi_+=-i\tilde\Pi_+,\qquad
-\vec u_2\tilde\Pi_+=\tfrac12\bigl(\vec u_2-i\vec u_3\bigr),\qquad
-\vec u_3\tilde\Pi_+=\tfrac12\bigl(\vec u_3+i\vec u_2\bigr).
+e_t\tilde\Pi_{\mathrm{id},+}=\tilde\Pi_{\mathrm{id},+},\qquad
+\vec u\tilde\Pi_{\mathrm{id},+}=-i\tilde\Pi_{\mathrm{id},+},\qquad
+\vec u_2\tilde\Pi_{\mathrm{id},+}=\tfrac12\bigl(\vec u_2-i\vec u_3\bigr),\qquad
+\vec u_3\tilde\Pi_{\mathrm{id},+}=\tfrac12\bigl(\vec u_3+i\vec u_2\bigr).
 $$
 
-The first two are multiples of the idempotent; the last two are $\vec u_2\tilde\Pi_+$ and $i\vec u_2\tilde\Pi_+$ respectively, since $i\vec u_2\tilde\Pi_+=\tfrac12(i\vec u_2+\vec u_3)$ — the same element. So the image of the whole algebra is the complex span of two vectors, and the complex dimension is two.
+The first two are multiples of the idempotent; the last two are $\vec u_2\tilde\Pi_{\mathrm{id},+}$ and $i\vec u_2\tilde\Pi_{\mathrm{id},+}$ respectively, since $i\vec u_2\tilde\Pi_{\mathrm{id},+}=\tfrac12(i\vec u_2+\vec u_3)$ — the same element. So the image of the whole algebra is the complex span of two vectors, and the complex dimension is two.
 
 What the closure adds. Not the complex structure: the plane was already a complex line and multiplication by $i$ acted inside it. The closure adds the transverse direction $\vec u_2$, which is two real dimensions on top of the two of the plane. The natural guess is that a spinor space is a complex line taken twice or a plane given an imaginary unit; both guesses are wrong, and the statement is worth the care because everything downstream depends on it.
 
-Closure. For $Y\in S_+$ and any $X$, the product $XY$ lies in $S_+$ because $Y=Z\tilde\Pi_+$ gives $XY=(XZ)\tilde\Pi_+$. The verification is a residual of $1.1\times10^{-15}$ on random pairs. The map $X\mapsto X\tilde\Pi_+$ is a projection of the algebra onto the ideal, $\bigl(X\tilde\Pi_+\bigr)\tilde\Pi_+=X\tilde\Pi_+$ to $0$: the idempotent projects, and the projection is the algebra's own operation and not an added rule.
+Closure. For $Y\in S_+$ and any $X$, the product $XY$ lies in $S_+$ because $Y=Z\tilde\Pi_{\mathrm{id},+}$ gives $XY=(XZ)\tilde\Pi_{\mathrm{id},+}$. The verification is a residual of $1.1\times10^{-15}$ on random pairs. The map $X\mapsto X\tilde\Pi_{\mathrm{id},+}$ is a projection of the algebra onto the ideal, $\bigl(X\tilde\Pi_{\mathrm{id},+}\bigr)\tilde\Pi_{\mathrm{id},+}=X\tilde\Pi_{\mathrm{id},+}$ to $0$: the idempotent projects, and the projection is the algebra's own operation and not an added rule.
 
 Minimality. No nonzero left subspace of $S_+$ is preserved by the whole algebra. The argument is a dimension count with one input from the structure theory: the algebra is isomorphic to the full algebra of two-by-two complex matrices, its nonzero left ideals are the column ideals, and a column ideal has complex dimension two. A nonzero $Y\in S_+$ generates the left ideal $\mathbb{B}Y$, which is contained in $S_+$ because $S_+$ is a left ideal and contains $Y$; being nonzero it has complex dimension two; and $S_+$ also has complex dimension two, so the two coincide. Hence every nonzero element of the ideal generates the whole ideal, which is the definition of minimality.
 
 Nullity. The norm is multiplicative and the idempotent has norm zero, so for every $X$
 
 $$
-N\bigl(X\tilde\Pi_+(\vec u)\bigr)=N(X)\,N\bigl(\tilde\Pi_+(\vec u)\bigr)=0 .
+N\bigl(X\tilde\Pi_{\mathrm{id},+}(\vec u)\bigr)=N(X)\,N\bigl(\tilde\Pi_{\mathrm{id},+}(\vec u)\bigr)=0 .
 $$
 
 The computation on the idempotent itself is the cancellation that names the case: the coordinates are $Q_t=\tfrac12$ and $Q_k=\tfrac i2u_k$, so the four squares are $\tfrac14$ and three copies of $-\tfrac14u_k^{2}$, and the unit length of the axis makes them sum to zero.
@@ -222,18 +222,18 @@ The interpretation. A field with values in $S_+$ is a two-component spinor in th
 The splitting. The complementary idempotent gives a second ideal of the same dimension, and the two are complementary:
 
 $$
-X=X\tilde\Pi_++X\tilde\Pi_-,\qquad
+X=X\tilde\Pi_{\mathrm{id},++X}\tilde\Pi_{\mathrm{id},-},\qquad
 S_+(\vec u)\cap S_-(\vec u)=\{0\},\qquad
 \mathbb{B}=S_+(\vec u)\oplus S_-(\vec u).
 $$
 
-The directness is one line. If $X$ lies in both, then $X=X\tilde\Pi_+$ and $X=X\tilde\Pi_-$, so $X=X\tilde\Pi_+\tilde\Pi_-=0$ using the vanishing product of the idempotents. The sum is the whole algebra because $\tilde\Pi_++\tilde\Pi_-=e_t$ and every element splits as $X=X\tilde\Pi_++X\tilde\Pi_-$. The rank of eight basis vectors taken four from each ideal is eight, verified; the intersection is zero, verified.
+The directness is one line. If $X$ lies in both, then $X=X\tilde\Pi_{\mathrm{id},+}$ and $X=X\tilde\Pi_{\mathrm{id},-}$, so $X=X\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$ using the vanishing product of the idempotents. The sum is the whole algebra because $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$ and every element splits as $X=X\tilde\Pi_{\mathrm{id},++X}\tilde\Pi_{\mathrm{id},-}$. The rank of eight basis vectors taken four from each ideal is eight, verified; the intersection is zero, verified.
 
 **As a set it is the algebra; as a decomposition it is not.** Each bispinor space is $\mathbb{B}$, so as sets the family has one member. What varies from axis to axis is the splitting, and the two ideals are genuine proper subspaces that move with the axis. A bispinor space is therefore not a subspace of the algebra; it is the algebra together with a Peirce pair. The phrase that keeps this straight is that the object is the algebra *read through* the pair, and the entry uses that read throughout.
 
-The family. The pair is unchanged when the axis is reversed, $\tilde\Pi_+(-\vec u)=\tilde\Pi_-(\vec u)$, so the unordered pair is indexed by the real projective plane and the ordered pair by the sphere. A rotation by $\pi$ about a transverse axis sends $\vec u$ to $-\vec u$ and exchanges the two idempotents; no element of the algebra sends one ideal to the other by left multiplication, since left multiplication preserves every ideal.
+The family. The pair is unchanged when the axis is reversed, $\tilde\Pi_{\mathrm{id},+}(-\vec u)=\tilde\Pi_{\mathrm{id},-}(\vec u)$, so the unordered pair is indexed by the real projective plane and the ordered pair by the sphere. A rotation by $\pi$ about a transverse axis sends $\vec u$ to $-\vec u$ and exchanges the two idempotents; no element of the algebra sends one ideal to the other by left multiplication, since left multiplication preserves every ideal.
 
-The corners. The four Peirce corners $\tilde\Pi_\epsilon\mathbb{B}\tilde\Pi_\delta$ have real dimension two each, and the two ideals are their grouping two by two: $S_+=\tilde\Pi_+\mathbb{B}\tilde\Pi_++\tilde\Pi_+\mathbb{B}\tilde\Pi_-$, and the same for $S_-$. Four corners of two and two ideals of four: the counts agree and the kinds do not, and the entry follows the source in refusing to identify them.
+The corners. The four Peirce corners $\tilde\Pi_{\mathrm{id},\epsilon}\mathbb{B}\tilde\Pi_{\mathrm{id},\delta}$ have real dimension two each, and the two ideals are their grouping two by two: $S_+=\tilde\Pi_{\mathrm{id},+}\mathbb{B}\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},+}\mathbb{B}\tilde\Pi_{\mathrm{id},-}$, and the same for $S_-$. Four corners of two and two ideals of four: the counts agree and the kinds do not, and the entry follows the source in refusing to identify them.
 
 The two steps are different in kind. The first step repairs an invariance: the plane was not preserved by the group, the ideal is. The second step completes a pair: the ideal was one of two, and the algebra is their sum. The first is forced by the requirement that the carrier be a module for the group. The second is forced by nothing; it is the statement that a four-component object is available and that physics uses it.
 
@@ -243,7 +243,7 @@ The physics of the two steps. The first closure is the Weyl spinor: a field of t
 
 Two predicates, two failures. An element carries two independent scalar invariants. The norm $N=Q_t^{2}+\lvert\vec Q\rvert^{2}$ is multiplicative and vanishes on the elements without an inverse; the square of the vector part $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ controls whether the two eigenvalues $Q_t\pm iB$ coincide. An element is norm-regular when $N\neq0$ and spectrally regular when $B^{2}\neq0$. On the carrier the first fails everywhere and the second fails only at the origin.
 
-**The norm on the plane is zero.** By multiplicativity, $N(\lambda\tilde\Pi_+)=\lambda^{2}N(\tilde\Pi_+)=0$ for every complex $\lambda$; the residual over one hundred random values is $7.0\times10^{-16}$ and is round-off. The statement excludes nothing: every element of the plane, including every nonzero one, is norm-degenerate. The plane meets the null cone in its entirety.
+**The norm on the plane is zero.** By multiplicativity, $N(\lambda\tilde\Pi_{\mathrm{id},+})=\lambda^{2}N(\tilde\Pi_{\mathrm{id},+})=0$ for every complex $\lambda$; the residual over one hundred random values is $7.0\times10^{-16}$ and is round-off. The statement excludes nothing: every element of the plane, including every nonzero one, is norm-degenerate. The plane meets the null cone in its entirety.
 
 The norm is mixedness. Let the axis be replaced by an arbitrary real vector $\vec s_{\Psi}$ and put $S_{\vec s}=\tfrac12(e_t+i\vec s_{\Psi})$. This is the general element of the real three-dimensional ball of Hermitian elements of unit trace, which is the state slice of the informational sector. Its norm and its failure to be idempotent are the same quantity:
 
@@ -260,7 +260,7 @@ The scope of the identity. This is a statement about the Hermitian slice and not
 The spectrum on the plane. The square of the vector part is
 
 $$
-B^{2}\bigl(\lambda\tilde\Pi_+(\vec u)\bigr)
+B^{2}\bigl(\lambda\tilde\Pi_{\mathrm{id},+}(\vec u)\bigr)
 =\sum_k\Bigl(\tfrac i2\lambda u_k\Bigr)^{2}
 =-\tfrac14\lambda^{2},
 $$
@@ -268,9 +268,9 @@ $$
 because the three squares of the components of a unit vector sum to one. Residual $0$ over one hundred random $\lambda$. The factor $-\tfrac14$ is invertible, so the plane meets the degenerate cone only at $\lambda=0$: the plane is spectrally regular at every nonzero point, while its norm vanishes at every point. Its spectrum is
 
 $$
-\operatorname{spec}\bigl(\lambda\tilde\Pi_+(\vec u)\bigr)=\{0,\lambda\},
+\operatorname{spec}\bigl(\lambda\tilde\Pi_{\mathrm{id},+}(\vec u)\bigr)=\{0,\lambda\},
 \qquad
-\operatorname{spec}\bigl(\tilde\Pi_+(\vec u)\bigr)=\{0,1\},
+\operatorname{spec}\bigl(\tilde\Pi_{\mathrm{id},+}(\vec u)\bigr)=\{0,1\},
 $$
 
 verified at $\lambda=0.7+0.2i$ and at the idempotent.
@@ -278,7 +278,7 @@ verified at $\lambda=0.7+0.2i$ and at the idempotent.
 The scaled idempotent. The spectrum $\{0,\lambda\}$ has a second statement, shorter and stronger: every nonzero element of the plane satisfies
 
 $$
-X^{2}=\lambda X\qquad\text{for } X=\lambda\tilde\Pi_+(\vec u),
+X^{2}=\lambda X\qquad\text{for } X=\lambda\tilde\Pi_{\mathrm{id},+}(\vec u),
 $$
 
 residual $0$ over one hundred draws. So the plane is the set of rescaled idempotents: every element of the carrier is a nonzero complex multiple of a projector. The idempotent is the case $\lambda=1$, and the scale $\lambda$ is the amplitude. This is the sharpest statement of what the carrier is: not a set of projectors, but the projective line of one projector, which is the same set up to the scale that carries the amplitude.
@@ -290,14 +290,14 @@ N(Y)=0,\qquad \operatorname{spec}\bigl(Y\bigr)=\{0,\,2Q_t(Y)\},
 \qquad B^{2}(Y)=-Q_t(Y)^{2}.
 $$
 
-The last identity is the content: on the ideal the square of the vector part is minus the square of the scalar part, residual $4.6\times10^{-16}$ over one hundred random elements. So the spectral predicate on the ideal reads $Q_t\neq0$, and the degenerate elements are the ones with vanishing scalar coordinate. In the complex basis $\tilde\Pi_+,\vec u_2\tilde\Pi_+$ the scalar coordinate is the first coefficient, since $Q_t(\vec u_2\tilde\Pi_+)=0$, so the degenerate locus is
+The last identity is the content: on the ideal the square of the vector part is minus the square of the scalar part, residual $4.6\times10^{-16}$ over one hundred random elements. So the spectral predicate on the ideal reads $Q_t\neq0$, and the degenerate elements are the ones with vanishing scalar coordinate. In the complex basis $\tilde\Pi_{\mathrm{id},+},\vec u_2\tilde\Pi_{\mathrm{id},+}$ the scalar coordinate is the first coefficient, since $Q_t(\vec u_2\tilde\Pi_{\mathrm{id},+})=0$, so the degenerate locus is
 
 $$
 S_+(\vec u)\cap\mathcal S=\mathbb{C}\bigl(\vec u_2-i\vec u_3\bigr),
 \qquad \dim_\mathbb{R}=2,
 $$
 
-a real plane inside the ideal. Its generator is the element $\vec u_2-i\vec u_3$, which lies in $S_+$ — it is twice $\vec u_2\tilde\Pi_+$ — and which satisfies
+a real plane inside the ideal. Its generator is the element $\vec u_2-i\vec u_3$, which lies in $S_+$ — it is twice $\vec u_2\tilde\Pi_{\mathrm{id},+}$ — and which satisfies
 
 $$
 (\vec u_2-i\vec u_3)^{2}=0,
@@ -305,7 +305,7 @@ $$
 
 residual $0$. The identity is not an accident of the generator: on a null ideal the quadratic relation reduces to $Y^{2}=2Q_t(Y)Y$, so $Y^{2}=0$ exactly when $Q_t(Y)=0$. The square-zero elements and the spectrally degenerate elements are the same set, and both are the plane $\mathbb{C}(\vec u_2-i\vec u_3)$.
 
-Two planes, not one. The degenerate plane is not the carrier. The carrier is $\mathbb{C}\tilde\Pi_+$, spanned by an idempotent with $Q_t=\tfrac12$; the degenerate plane is $\mathbb{C}(\vec u_2-i\vec u_3)$, spanned by a square-zero element with $Q_t=0$. They meet only at the origin, and they move together with the axis without ever coinciding. A reader who conflates them loses the whole distinction between the carrier and its exceptional locus.
+Two planes, not one. The degenerate plane is not the carrier. The carrier is $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$, spanned by an idempotent with $Q_t=\tfrac12$; the degenerate plane is $\mathbb{C}(\vec u_2-i\vec u_3)$, spanned by a square-zero element with $Q_t=0$. They meet only at the origin, and they move together with the axis without ever coinciding. A reader who conflates them loses the whole distinction between the carrier and its exceptional locus.
 
 The exceptional point. The degenerate plane deserves the name used for it in the family: it is where the two eigenvalues coalesce, $0$ and $0$, where the element stops being a rescaled projector and becomes nilpotent, and where the two predicates fail together. In a one-parameter family crossing it, the spectrum closes and reopens, and the element at the crossing has no eigenvector to speak of — the algebraic statement of the coalescence is $Y^{2}=0$ with $Y\neq0$, which is exactly the statement that the spectrum has one value and the element is not a multiple of the identity.
 
@@ -313,11 +313,11 @@ The residual table.
 
 | statement | residual |
 | --- | --- |
-| $N(\lambda\tilde\Pi_+)=0$ | $7.0\times10^{-16}$ |
+| $N(\lambda\tilde\Pi_{\mathrm{id},+})=0$ | $7.0\times10^{-16}$ |
 | $N(S_{\vec s})=\tfrac14(1-\lvert\vec s_{\Psi}\rvert^{2})$ | $0$ |
 | $S_{\vec s}^{2}=S_{\vec s}-N(S_{\vec s})e_t$ | $0$ |
-| $B^{2}(\lambda\tilde\Pi_+)=-\lambda^{2}/4$ | $0$ |
-| $\operatorname{spec}(\lambda\tilde\Pi_+)=\{0,\lambda\}$ | exact |
+| $B^{2}(\lambda\tilde\Pi_{\mathrm{id},+})=-\lambda^{2}/4$ | $0$ |
+| $\operatorname{spec}(\lambda\tilde\Pi_{\mathrm{id},+})=\{0,\lambda\}$ | exact |
 | $X^{2}=\lambda X$ on the plane | $0$ |
 | $B^{2}(Y)=-Q_t(Y)^{2}$ on $S_+$ | $4.6\times10^{-16}$ |
 | $(\vec u_2-i\vec u_3)^{2}=0$ | $0$ |
@@ -329,14 +329,14 @@ Two operators, two splits. Two different maps separate the algebra into two halv
 The first is the coefficient conjugation: the map that sends $i$ to $-i$ and leaves the four units alone. It is an algebra automorphism, since the structure constants of the algebra are real, and it acts on the idempotents by
 
 $$
-\overline{\tilde\Pi_+(\vec u)}=\tilde\Pi_-(\vec u),
+\overline{\tilde\Pi_{\mathrm{id},+}(\vec u)}=\tilde\Pi_{\mathrm{id},-}(\vec u),
 \qquad
-\overline{X\tilde\Pi_+(\vec u)}=\bar X\,\tilde\Pi_-(\vec u)\in S_-(\vec u),
+\overline{X\tilde\Pi_{\mathrm{id},+}(\vec u)}=\bar X\,\tilde\Pi_{\mathrm{id},-}(\vec u)\in S_-(\vec u),
 $$
 
-residuals $0$ and $0$ over one hundred draws. So the bar exchanges the two ideals and exchanges the two halves of every element. The star does not do this, and cannot: it is an antiautomorphism, so it turns a left multiple into a right multiple, and it fixes both idempotents rather than exchanging them, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$ to $0$. The star preserves the set of idempotents and reverses the side; the bar exchanges the two ideals and keeps the side. A statement that requires crossing from one ideal to the other is a statement about the bar.
+residuals $0$ and $0$ over one hundred draws. So the bar exchanges the two ideals and exchanges the two halves of every element. The star does not do this, and cannot: it is an antiautomorphism, so it turns a left multiple into a right multiple, and it fixes both idempotents rather than exchanging them, $\tilde\Pi_{\mathrm{id},\pm}^{*}=\tilde\Pi_{\mathrm{id},\pm}$ to $0$. The star preserves the set of idempotents and reverses the side; the bar exchanges the two ideals and keeps the side. A statement that requires crossing from one ideal to the other is a statement about the bar.
 
-The second is right multiplication by the axis. Since $\tilde\Pi_\pm(\vec u)\vec u=\mp i\tilde\Pi_\pm(\vec u)$, every element of an ideal is an eigenvector of the operator
+The second is right multiplication by the axis. Since $\tilde\Pi_{\mathrm{id},\pm}(\vec u)\vec u=\mp i\tilde\Pi_{\mathrm{id},\pm}(\vec u)$, every element of an ideal is an eigenvector of the operator
 
 $$
 \gamma(\vec u)=-iR_{\vec u},\qquad
@@ -348,7 +348,7 @@ The residuals are $0$ at the axis $\vec e_z$ and $1.1\times10^{-15}$ and $7.1\ti
 
 The relation between the two splits. At the axis $\vec e_z$ the operator $\gamma$ is the one the corpus calls the chirality operator, and its eigenspaces are the two values. So the two ideals *are* the two chiralities at that axis, and at any other axis they are the two chiralities of that axis. What varies is the name and not the object: the axis of the operator is the axis of the ideals, and the value is a frame-dependent label for a member of a family that the algebra already carries.
 
-The projections. The maps $X\mapsto X\tilde\Pi_\pm$ are projections onto the two ideals. They are idempotent as maps, $\bigl(X\tilde\Pi_\pm\bigr)\tilde\Pi_\pm=X\tilde\Pi_\pm$ to $0$, and they annihilate each other's images, since $\tilde\Pi_+\tilde\Pi_-=0$. The sum of the two projections is the identity map on the algebra. In the physicist's notation these are the chiral projections $\psi\mapsto\psi P_\pm$, and the only difference from the textbook is that the projectors are elements of the algebra and the multiplication is the algebra's own.
+The projections. The maps $X\mapsto X\tilde\Pi_{\mathrm{id},\pm}$ are projections onto the two ideals. They are idempotent as maps, $\bigl(X\tilde\Pi_{\mathrm{id},\pm}\bigr)\tilde\Pi_{\mathrm{id},\pm}=X\tilde\Pi_{\mathrm{id},\pm}$ to $0$, and they annihilate each other's images, since $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$. The sum of the two projections is the identity map on the algebra. In the physicist's notation these are the chiral projections $\psi\mapsto\psi P_\pm$, and the only difference from the textbook is that the projectors are elements of the algebra and the multiplication is the algebra's own.
 
 **The correction that has to be stated.** The two ideals are not the two sectors. The star splits the algebra into the anti-Hermitian and Hermitian halves, and that split is a different pair of subspaces: an element of one sector is not a sum of parts of one sector, and the star does not preserve either ideal. Chirality is not the material-informational split, and the two decompositions share no part. The corpus states this as a standing correction and the entry repeats it because the temptation to read the two halves of a spinor as matter and information is strong and wrong.
 
@@ -417,23 +417,23 @@ The family of carriers is the sphere. One axis gives one idempotent and one plan
 The measurement is the Peirce basis. The two idempotents of the axis satisfy
 
 $$
-\tilde\Pi_++\tilde\Pi_-=e_t,
+\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t,
 \qquad
-\tilde\Pi_+\tilde\Pi_-=0 .
+\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0 .
 $$
 
 Read physically, the first is completeness: the two outcomes are exhaustive and their weights sum to one. The second is exclusivity: the two outcomes never both occur. A complete exclusive pair of outcomes is exactly what a two-outcome measurement is, so the Peirce basis of an axis *is* a Stern–Gerlach analyser along that axis, and the algebra supplies the analyser and the algebra supplies the arithmetic of the outcomes in the same two elements.
 
-The Born weight. Let the analyser be $\tilde\Pi_\pm(\vec u)$ and the state $\tfrac12(e_t+i\vec s_{\Psi})$. The normalised pairing of the state with each outcome is
+The Born weight. Let the analyser be $\tilde\Pi_{\mathrm{id},\pm}(\vec u)$ and the state $\tfrac12(e_t+i\vec s_{\Psi})$. The normalised pairing of the state with each outcome is
 
 $$
-p_\pm=\frac{\langle\tilde\Pi_\pm(\vec u),\tfrac12(e_t+i\vec s_{\Psi})\rangle_{*}}{\langle\tfrac12(e_t+i\vec s_{\Psi}),e_t\rangle_{*}}
+p_\pm=\frac{\langle\tilde\Pi_{\mathrm{id},\pm}(\vec u),\tfrac12(e_t+i\vec s_{\Psi})\rangle_{*}}{\langle\tfrac12(e_t+i\vec s_{\Psi}),e_t\rangle_{*}}
 =\tfrac12\bigl(1\pm\vec u\cdot\vec s_{\Psi}\bigr),
 $$
 
 which is the standard formula for a spin-$\tfrac12$ measurement along $\vec u$ of a state polarised along $\vec s_{\Psi}$, and the two weights sum to one by the completeness of the pair. The formula is the archive's and is quoted, not derived here; what the entry adds is its place: the probability is the pairing of the state with an *element of the carrier's own basis*, and the carrier's axis is the analyser's axis.
 
-Amplitude and scale. The plane is the projective line of one projector together with a complex scale, and the scale is the amplitude. A nonzero element of the plane is $\lambda\tilde\Pi_+$, with $\lambda$ a complex number; the state is the idempotent, and the square root of the state is the element. The complex scale is the phase of the field, and the phase is what the action multiplies by $e^{-i\theta/2}$. So the carrier holds the two things a spinor holds: a direction, which is the axis, and a phase, which is the scale.
+Amplitude and scale. The plane is the projective line of one projector together with a complex scale, and the scale is the amplitude. A nonzero element of the plane is $\lambda\tilde\Pi_{\mathrm{id},+}$, with $\lambda$ a complex number; the state is the idempotent, and the square root of the state is the element. The complex scale is the phase of the field, and the phase is what the action multiplies by $e^{-i\theta/2}$. So the carrier holds the two things a spinor holds: a direction, which is the axis, and a phase, which is the scale.
 
 The field and the state. The distinction that the entry keeps throughout is that the field is the element and the state is its image. The informational sector writes the image as $\tilde X\tilde X^{*}$ up to a positive factor, and records as an open question whether the phase of $\tilde X$ is physical. The carrier sits on the field side of that question: left multiplication acts on $\tilde X$ and not on $\tilde X\tilde X^{*}$, the mass pairs $\tilde X$ and not the image, and the double cover is visible on $\tilde X$ and invisible on the image. So the carrier of spin one half is a carrier of fields, and the state space is a separate object that the field maps onto.
 
@@ -451,7 +451,7 @@ The light cone. The degenerate plane of the ideal has a physical name too. Its g
 
 3. The half angle is the fermion sign. The rotor acts as $e^{-i\theta/2}$ and a full turn as $-\mathrm{id}$. Nothing about this is a convention of sign: the factor of two is the map from the group of rotations to the phases on the carrier, and the minus sign at $2\pi$ is its kernel. Every statement about the double cover of the Lorentz group in the corpus is this one line read on a different carrier.
 
-4. The two ideals are the two spinor chiralities. The eigenspaces of $-iR_{\vec u}$ are the two minimal left ideals of the axis, verified to $10^{-15}$ at three axes. A field valued in one ideal is a Weyl field; the projection $\psi\mapsto\psi\tilde\Pi_\pm$ is the chiral projection; and the fact that the operator is a right multiplication while the action is a left multiplication is why chirality and the action commute.
+4. The two ideals are the two spinor chiralities. The eigenspaces of $-iR_{\vec u}$ are the two minimal left ideals of the axis, verified to $10^{-15}$ at three axes. A field valued in one ideal is a Weyl field; the projection $\psi\mapsto\psi\tilde\Pi_{\mathrm{id},\pm}$ is the chiral projection; and the fact that the operator is a right multiplication while the action is a left multiplication is why chirality and the action commute.
 
 5. Mass is the pairing of the two spinor chiralities. The norm on the bispinor is $2B(X_+,X_-)$ and on a single ideal it is zero. So a mass term has to pair the two, and the archive's Dirac pair with the coefficient $k_m$ between the two components is that pairing written as an equation. A massless field can be one ideal; a massive field cannot.
 
@@ -487,11 +487,11 @@ No quantum postulate. The entries of the informational sector supply the weights
 
 ## Summary
 
-The carrier of spin one half is the plane $\Sigma(\vec u)=\mathbb{C}\tilde\Pi_+(\vec u)$, of real dimension two, generated by the idempotent of a unit real axis and acted on by left multiplication. The action is one-sided, the weights are $\pm\tfrac12$, $2s+1=2$ counts the real dimensions of the carrier, and a full turn acts as $-\mathrm{id}$.
+The carrier of spin one half is the plane $\Sigma(\vec u)=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u)$, of real dimension two, generated by the idempotent of a unit real axis and acted on by left multiplication. The action is one-sided, the weights are $\pm\tfrac12$, $2s+1=2$ counts the real dimensions of the carrier, and a full turn acts as $-\mathrm{id}$.
 
-The plane is invariant under the rotations about its own axis and under no others: a transverse axis sends the idempotent to $\tfrac12(\vec u_2-i\vec u_3)$, at distance $\sqrt2/2$ from the plane. The repair is the first closure, the minimal left ideal $S_+=\mathbb{B}\tilde\Pi_+$ of real dimension four, spanned by $\tilde\Pi_+$ and $\vec u_2\tilde\Pi_+$, closed under the whole algebra, with no smaller invariant left subspace, and totally isotropic and maximal. The completion is the second closure, $\mathbb{B}=S_+\oplus S_-$, which as a set is the algebra and as a decomposition is the algebra with a Peirce pair.
+The plane is invariant under the rotations about its own axis and under no others: a transverse axis sends the idempotent to $\tfrac12(\vec u_2-i\vec u_3)$, at distance $\sqrt2/2$ from the plane. The repair is the first closure, the minimal left ideal $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ of real dimension four, spanned by $\tilde\Pi_{\mathrm{id},+}$ and $\vec u_2\tilde\Pi_{\mathrm{id},+}$, closed under the whole algebra, with no smaller invariant left subspace, and totally isotropic and maximal. The completion is the second closure, $\mathbb{B}=S_+\oplus S_-$, which as a set is the algebra and as a decomposition is the algebra with a Peirce pair.
 
-The norm vanishes on the plane and on each ideal; on the state slice it is $\tfrac14(1-\lvert\vec s_{\Psi}\rvert^{2})$, which is the departure from purity, so the nullity of the carrier is the purity of its elements and $S^{2}=S-N e_t$ states it in one line. The spectrum separates instead: $B^{2}=-\lambda^{2}/4$ on the plane, $\operatorname{spec}(\lambda\tilde\Pi_+)=\{0,\lambda\}$, and every element of the plane is a rescaled projector. So the plane away from the origin is $\Sigma_{01}$ and it is the only carrier in that sector.
+The norm vanishes on the plane and on each ideal; on the state slice it is $\tfrac14(1-\lvert\vec s_{\Psi}\rvert^{2})$, which is the departure from purity, so the nullity of the carrier is the purity of its elements and $S^{2}=S-N e_t$ states it in one line. The spectrum separates instead: $B^{2}=-\lambda^{2}/4$ on the plane, $\operatorname{spec}(\lambda\tilde\Pi_{\mathrm{id},+})=\{0,\lambda\}$, and every element of the plane is a rescaled projector. So the plane away from the origin is $\Sigma_{01}$ and it is the only carrier in that sector.
 
 Inside one ideal every element is null, $\operatorname{spec}(Y)=\{0,2Q_t(Y)\}$, and the degenerate elements are the square-zero ones: they form the real plane $\mathbb{C}(\vec u_2-i\vec u_3)$, the exceptional locus of the closure and the spinor of a null direction.
 
@@ -506,9 +506,9 @@ The two ideals are the two spinor chiralities: they are the eigenspaces of $-iR_
 | $\vec u$ | a unit real axis, the parameter of the family |
 | $\vec u_2,\vec u_3$ | an oriented orthonormal pair completing the axis |
 | $\theta$ | the rotation angle, twice the rotor angle |
-| $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ | the two idempotents of the axis, a Peirce basis |
-| $\Sigma(\vec u)=\mathbb{C}\tilde\Pi_+(\vec u)$ | the carrier, $\dim_\mathbb{R}=2$ |
-| $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | the first closure, $\dim_\mathbb{R}=4$ |
+| $\tilde\Pi_{\mathrm{id},\pm}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | the two idempotents of the axis, a Peirce basis |
+| $\Sigma(\vec u)=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u)$ | the carrier, $\dim_\mathbb{R}=2$ |
+| $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u)$ | the first closure, $\dim_\mathbb{R}=4$ |
 | $S_+\oplus S_-=\mathbb{B}$ | the second closure, the bispinor space, $\dim_\mathbb{R}=8$ |
 | $L_X$, $R_X$ | left and right multiplication by $X$ |
 | $\rho_{\mathrm{rep}}$ | the representation $X\mapsto L_X$ on the carrier |

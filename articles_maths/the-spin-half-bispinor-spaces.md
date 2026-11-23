@@ -10,7 +10,7 @@ The family is infinite, and this is the point of the article. There is a plane f
 
 **The question in one line.** Which real subspaces of $\mathbb{B}$ of dimension $2$, $4$ and $8$ carry the action with weights $\pm\tfrac12$.
 
-**The answer in one line.** The plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$, the spinor spaces $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm(\vec u_{\mathrm r})$, and their sum, a bispinor space, which as a set is $\mathbb{B}$.
+**The answer in one line.** The plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$, the spinor spaces $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})$, and their sum, a bispinor space, which as a set is $\mathbb{B}$.
 
 Nothing below is a statement of physics. The elements are written $X,Y$; the units are $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the identity and $\vec e_k^{2}=-e_t$; $*$ is the Hermitian conjugation and ${}^{\natural}$ the natural conjugation; $G=\mathrm{U}(2)$ is the group of unitary elements; and $\vec u_{\mathrm r}$ is a unit real axis, with $\vec u_2,\vec u_3$ an oriented orthonormal pair completing it.
 
@@ -19,17 +19,17 @@ Nothing below is a statement of physics. The elements are written $X,Y$; the uni
 **The idempotent.** For a unit real axis,
 
 $$
-\tilde\Pi_+(\vec u_{\mathrm r})=\tfrac12\bigl(e_t+i\vec u_{\mathrm r}\bigr),
+\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\tfrac12\bigl(e_t+i\vec u_{\mathrm r}\bigr),
 \qquad
-\tilde\Pi_+^2=\tilde\Pi_+ .
+\tilde\Pi_{\mathrm{id},+}^2=\tilde\Pi_{\mathrm{id},+} .
 $$
 
-The element is idempotent because $\vec u_{\mathrm r}^2=-e_t$: the square is $\tfrac14(e_t+2i\vec u_{\mathrm r}-\vec u_{\mathrm r}^2)=\tfrac14(2e_t+2i\vec u_{\mathrm r})=\tilde\Pi_+$. The verification is one line and needs no array.
+The element is idempotent because $\vec u_{\mathrm r}^2=-e_t$: the square is $\tfrac14(e_t+2i\vec u_{\mathrm r}-\vec u_{\mathrm r}^2)=\tfrac14(2e_t+2i\vec u_{\mathrm r})=\tilde\Pi_{\mathrm{id},+}$. The verification is one line and needs no array.
 
 **The plane.** The carrier is the complex line spanned by the idempotent, read as a real plane:
 
 $$
-\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})=\mathbb{R}\bigl\{\tilde\Pi_+,\ i\tilde\Pi_+\bigr\},
+\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\mathbb{R}\bigl\{\tilde\Pi_{\mathrm{id},+},\ i\tilde\Pi_{\mathrm{id},+}\bigr\},
 $$
 
 of real dimension $2$ and complex dimension $1$.
@@ -39,13 +39,13 @@ of real dimension $2$ and complex dimension $1$.
 **The half angle.** The key identity is
 
 $$
-\vec u_{\mathrm r}\tilde\Pi_+(\vec u_{\mathrm r})=\tilde\Pi_+(\vec u_{\mathrm r})\vec u_{\mathrm r}=-i\tilde\Pi_+(\vec u_{\mathrm r}),
+\vec u_{\mathrm r}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\vec u_{\mathrm r}=-i\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r}),
 $$
 
-which follows in one line from the definition, since $\vec u_{\mathrm r}\tilde\Pi_+=\tfrac12(\vec u_{\mathrm r}+i\vec u_{\mathrm r}^2)=\tfrac12(\vec u_{\mathrm r}-ie_t)=-i\tilde\Pi_+$. Then for a rotor of angle $\theta$ about the same axis,
+which follows in one line from the definition, since $\vec u_{\mathrm r}\tilde\Pi_{\mathrm{id},+}=\tfrac12(\vec u_{\mathrm r}+i\vec u_{\mathrm r}^2)=\tfrac12(\vec u_{\mathrm r}-ie_t)=-i\tilde\Pi_{\mathrm{id},+}$. Then for a rotor of angle $\theta$ about the same axis,
 
 $$
-\tilde u_{\mathrm r}\tilde\Pi_+=\bigl(\cos\tfrac{\theta}{2}-i\sin\tfrac{\theta}{2}\bigr)\tilde\Pi_+=e^{-i\theta/2}\,\tilde\Pi_+ .
+\tilde u_{\mathrm r}\tilde\Pi_{\mathrm{id},+}=\bigl(\cos\tfrac{\theta}{2}-i\sin\tfrac{\theta}{2}\bigr)\tilde\Pi_{\mathrm{id},+}=e^{-i\theta/2}\,\tilde\Pi_{\mathrm{id},+} .
 $$
 
 The rotor multiplies the plane by the phase $e^{-i\theta/2}$. The half angle is a consequence of the identity, not an insertion.
@@ -62,13 +62,13 @@ and the spin is the largest weight, $s=\tfrac12$. The identity reads $2s+1=2=\di
 
 ## The Plane Is Not a Carrier for the Whole Group
 
-**The failure.** The plane is invariant under the rotations about its own axis and under no others. Left multiplication by the transverse axis sends $\tilde\Pi_+(\vec u_{\mathrm r})$ out of the plane:
+**The failure.** The plane is invariant under the rotations about its own axis and under no others. Left multiplication by the transverse axis sends $\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ out of the plane:
 
 $$
-\vec u_2\tilde\Pi_+(\vec u_{\mathrm r})\notin\Sigma(\vec u_{\mathrm r}).
+\vec u_2\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\notin\Sigma(\vec u_{\mathrm r}).
 $$
 
-The product has a component along $\vec u_3\tilde\Pi_+$, and that component is not a complex multiple of the idempotent.
+The product has a component along $\vec u_3\tilde\Pi_{\mathrm{id},+}$, and that component is not a complex multiple of the idempotent.
 
 **What this means.** Read strictly, the plane is a carrier for the circle of rotations about its axis, and not for the group. The defect is repaired by the closure, and the repair is the content of the next two sections. This is the one place among the three carriers where the carrier and the group do not match, and it is why the spin-half case has two closures while the other two have one.
 
@@ -77,8 +77,8 @@ The product has a component along $\vec u_3\tilde\Pi_+$, and that component is n
 **The step.** The smallest real subspace containing the plane and invariant under the whole group is
 
 $$
-S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_+(\vec u_{\mathrm r})
-=\mathbb{C}\bigl\{\tilde\Pi_+,\ \vec u_2\tilde\Pi_+\bigr\},
+S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})
+=\mathbb{C}\bigl\{\tilde\Pi_{\mathrm{id},+},\ \vec u_2\tilde\Pi_{\mathrm{id},+}\bigr\},
 $$
 
 of real dimension $4$ and complex dimension $2$. The plane is one complex line of the ideal; the transverse direction gives the second, and the two together are the ideal.
@@ -90,10 +90,10 @@ of real dimension $4$ and complex dimension $2$. The plane is one complex line o
 **The second spinor space.** The complementary idempotent
 
 $$
-\tilde\Pi_-(\vec u_{\mathrm r})=\tfrac12\bigl(e_t-i\vec u_{\mathrm r}\bigr)=e_t-\tilde\Pi_+(\vec u_{\mathrm r})
+\tilde\Pi_{\mathrm{id},-}(\vec u_{\mathrm r})=\tfrac12\bigl(e_t-i\vec u_{\mathrm r}\bigr)=e_t-\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})
 $$
 
-gives a second left ideal $S_-(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_-(\vec u_{\mathrm r})$, also of real dimension $4$. The two idempotents satisfy $\tilde\Pi_+\tilde\Pi_-=0$, so the sum is direct:
+gives a second left ideal $S_-(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},-}(\vec u_{\mathrm r})$, also of real dimension $4$. The two idempotents satisfy $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$, so the sum is direct:
 
 $$
 S_+(\vec u_{\mathrm r})\cap S_-(\vec u_{\mathrm r})=\{0\},
@@ -112,14 +112,14 @@ Both spaces carry the same weights, $\pm\tfrac12$, and the same spin.
 **Why the plural.** There is one bispinor space per Peirce basis, and there is one Peirce basis per unit real axis. Two axes that differ by a sign give the same unordered pair, since
 
 $$
-\tilde\Pi_+\bigl(-\vec u_{\mathrm r}\bigr)=\tilde\Pi_-\bigl(\vec u_{\mathrm r}\bigr),
+\tilde\Pi_{\mathrm{id},+}\bigl(-\vec u_{\mathrm r}\bigr)=\tilde\Pi_{\mathrm{id},-}\bigl(\vec u_{\mathrm r}\bigr),
 $$
 
 so the family is indexed by the real projective plane and it is infinite.
 
 **As sets they coincide.** Each bispinor space is $\mathbb{B}$, so as sets the family has one member. What varies is the splitting: the pairs of spinor spaces differ from axis to axis, since each contains its own idempotent. A bispinor space is not a proper subspace of the algebra; it is the algebra together with a decomposition. The spinor spaces, by contrast, are proper subspaces, and they genuinely differ from axis to axis.
 
-**The corners.** Inside a bispinor space the four Peirce corners $\tilde\Pi_\epsilon\mathbb{B}\tilde\Pi_\delta$, with $\epsilon,\delta\in\{+,-\}$, have real dimension $2$ each, and the two spinor spaces are their grouping two by two. The corner count and the spinor count therefore agree in number and not in kind: four corners of dimension $2$, two spinor spaces of dimension $4$.
+**The corners.** Inside a bispinor space the four Peirce corners $\tilde\Pi_{\mathrm{id},\epsilon}\mathbb{B}\tilde\Pi_{\mathrm{id},\delta}$, with $\epsilon,\delta\in\{+,-\}$, have real dimension $2$ each, and the two spinor spaces are their grouping two by two. The corner count and the spinor count therefore agree in number and not in kind: four corners of dimension $2$, two spinor spaces of dimension $4$.
 
 ## What the Family Teaches
 
@@ -133,7 +133,7 @@ so the family is indexed by the real projective plane and it is infinite.
 
 ## Summary
 
-The spin-half carrier is the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$, of real dimension $2$, with weights $\pm\tfrac12$, spin $\tfrac12$, and a full turn acting as $-1$. The plane is invariant only under the rotations about its own axis. Its first closure is the spinor space $S_+=\mathbb{B}\tilde\Pi_+$, of real dimension $4$, and the second is the bispinor space $\mathbb{B}=S_+\oplus S_-$, of real dimension $8$. Both closures depend on the axis, so the family is infinite and indexed by the real projective plane. As sets the bispinor spaces coincide; as decompositions they differ.
+The spin-half carrier is the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$, of real dimension $2$, with weights $\pm\tfrac12$, spin $\tfrac12$, and a full turn acting as $-1$. The plane is invariant only under the rotations about its own axis. Its first closure is the spinor space $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$, of real dimension $4$, and the second is the bispinor space $\mathbb{B}=S_+\oplus S_-$, of real dimension $8$. Both closures depend on the axis, so the family is infinite and indexed by the real projective plane. As sets the bispinor spaces coincide; as decompositions they differ.
 
 ## Summary of Notation
 
@@ -143,9 +143,9 @@ The spin-half carrier is the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\
 | $\vec u_{\mathrm r}$ | a unit real axis, the parameter of the family |
 | $\vec u_2,\vec u_3$ | an oriented orthonormal pair completing the axis |
 | $\theta$ | the rotation angle, twice the rotor angle |
-| $\tilde\Pi_\pm(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | the two idempotents of the axis, a Peirce basis |
-| $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$ | the spinor plane, $\dim_\mathbb{R}=2$ |
-| $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm(\vec u_{\mathrm r})$ | the spinor spaces, $\dim_\mathbb{R}=4$ |
+| $\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | the two idempotents of the axis, a Peirce basis |
+| $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ | the spinor plane, $\dim_\mathbb{R}=2$ |
+| $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})$ | the spinor spaces, $\dim_\mathbb{R}=4$ |
 | $S_+\oplus S_-=\mathbb{B}$ | a bispinor space, $\dim_\mathbb{R}=8$ |
 | $L_X$, $R_X$ | left and right multiplication by $X$ |
 | $\varrho$ | the representation of the action on the carrier |

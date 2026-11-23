@@ -86,7 +86,7 @@ $$
 \Sigma_{00}=\{N=0,\ B^{2}=0\},
 $$
 
-the first index recording $N\neq0$ and the second $B^{2}\neq0$. On $\Sigma_{11}$ the element is invertible and $\lambda_\pm=Q_t\pm iB$ are the eigenvalues of $\tilde Q$, with $B$ a root of $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. On $\Sigma_{01}$ the element is $\tilde Q=c\tilde\Pi$ with $c=2Q_t\neq0$ and $\tilde\Pi$ a non-trivial idempotent. On $\Sigma_{10}$ it is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$; the scalar line $\vec\Upsilon=0$ is written $\Sigma_{10}^{\mathrm{s}}$, the Jordan part $\vec\Upsilon\neq0$ is $\Sigma_{10}^{\mathrm{J}}$. On $\Sigma_{00}$ it is a non-zero nilpotent $\tilde\nu$, with $\tilde\Pi_\pm$ the canonical Hermitian idempotents and $\tilde\nu=\tilde\Pi_+\tilde\nu\tilde\Pi_-$.
+the first index recording $N\neq0$ and the second $B^{2}\neq0$. On $\Sigma_{11}$ the element is invertible and $\lambda_\pm=Q_t\pm iB$ are the eigenvalues of $\tilde Q$, with $B$ a root of $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. On $\Sigma_{01}$ the element is $\tilde Q=c\tilde\Pi_{\mathrm{id}}$ with $c=2Q_t\neq0$ and $\tilde\Pi_{\mathrm{id}}$ a non-trivial idempotent. On $\Sigma_{10}$ it is $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}^{2}=0$; the scalar line $\vec\Pi_{\mathrm{nil}}=0$ is written $\Sigma_{10}^{\mathrm{s}}$, the Jordan part $\vec\Pi_{\mathrm{nil}}\neq0$ is $\Sigma_{10}^{\mathrm{J}}$. On $\Sigma_{00}$ it is a non-zero nilpotent $\tilde\pi_{\mathrm{nil}}$, with $\tilde\Pi_{\mathrm{id},\pm}$ the canonical Hermitian idempotents and $\tilde\pi_{\mathrm{nil}}=\tilde\Pi_{\mathrm{id},+}\tilde\pi_{\mathrm{nil}}\tilde\Pi_{\mathrm{id},-}$.
 
 **The one-sided operators.**
 
@@ -96,9 +96,9 @@ the first index recording $N\neq0$ and the second $B^{2}\neq0$. On $\Sigma_{11}$
 | $\Sigma_{10}^{\mathrm{s}}$ | $4$ | $Q_t$, algebraic multiplicity $4$, geometric $4$ | diagonal, $\operatorname{diag}(Q_t,Q_t,Q_t,Q_t)$ | $\mathbb{B}$ | $\mathbb{B}$ |
 | $\Sigma_{10}^{\mathrm{J}}$ | $4$ | $Q_t$, algebraic multiplicity $4$, geometric $2$ | $J_2(Q_t)\oplus J_2(Q_t)$ | $\mathbb{B}$ | $\mathbb{B}$ |
 | $\Sigma_{01}$ | $2$ | $c,0$, multiplicities $2,2$ | diagonal, $\operatorname{diag}(c,c,0,0)$ | the totally isotropic plane $\tilde Q\mathbb{B}$ | the totally isotropic plane $\mathbb{B}\tilde Q$ |
-| $\Sigma_{00}$ | $2$ | $0$, algebraic multiplicity $4$, geometric $2$ | $J_2(0)\oplus J_2(0)$ | $\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_+=\ker L_{\tilde\nu}$ | $\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_-=\ker R_{\tilde\nu}$ |
+| $\Sigma_{00}$ | $2$ | $0$, algebraic multiplicity $4$, geometric $2$ | $J_2(0)\oplus J_2(0)$ | $\mathbb{C}\tilde\pi_{\mathrm{nil}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},+}=\ker L_{\tilde\pi_{\mathrm{nil}}}$ | $\mathbb{C}\tilde\pi_{\mathrm{nil}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-}=\ker R_{\tilde\pi_{\mathrm{nil}}}$ |
 
-The two image columns differ on the null strata. On $\Sigma_{01}$ the planes $\tilde Q\mathbb{B}$ and $\mathbb{B}\tilde Q$ are distinct and meet in $\mathbb{C}\tilde\Pi$; on $\Sigma_{00}$ the two planes are distinct and meet in $\mathbb{C}\tilde\nu$. On $\Sigma_{11}$ and $\Sigma_{10}$ both images are the whole algebra.
+The two image columns differ on the null strata. On $\Sigma_{01}$ the planes $\tilde Q\mathbb{B}$ and $\mathbb{B}\tilde Q$ are distinct and meet in $\mathbb{C}\tilde\Pi_{\mathrm{id}}$; on $\Sigma_{00}$ the two planes are distinct and meet in $\mathbb{C}\tilde\pi_{\mathrm{nil}}$. On $\Sigma_{11}$ and $\Sigma_{10}$ both images are the whole algebra.
 
 **The two-sided operator.**
 
@@ -108,7 +108,7 @@ The two image columns differ on the null strata. On $\Sigma_{01}$ the planes $\t
 | $\Sigma_{10}^{\mathrm{s}}$ | $4$ | $\lvert Q_t\rvert^{2}$, algebraic multiplicity $4$, geometric $4$ | diagonal, $\operatorname{diag}(\lvert Q_t\rvert^{2},\lvert Q_t\rvert^{2},\lvert Q_t\rvert^{2},\lvert Q_t\rvert^{2})$ | $\mathbb{B}$ |
 | $\Sigma_{10}^{\mathrm{J}}$ | $4$ | $\lvert Q_t\rvert^{2}$, algebraic multiplicity $4$, geometric $2$ | $J_3(\lvert Q_t\rvert^{2})\oplus J_1(\lvert Q_t\rvert^{2})$ | $\mathbb{B}$ |
 | $\Sigma_{01}$ | $1$ | $\lvert c\rvert^{2},0$, multiplicities $1,3$ | diagonal, $\operatorname{diag}(\lvert c\rvert^{2},0,0,0)$ | the null line $\mathbb{C}P$, $P=\tilde Q\tilde Q^{*}/(4a^{2})$ |
-| $\Sigma_{00}$ | $1$ | $0$, algebraic multiplicity $4$, geometric $3$ | $J_2(0)\oplus0\oplus0$ | the null line $\mathbb{C}\tilde\Pi_+$ |
+| $\Sigma_{00}$ | $1$ | $0$, algebraic multiplicity $4$, geometric $3$ | $J_2(0)\oplus0\oplus0$ | the null line $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ |
 
 The two tables are the whole sector theory in one page. Along each row the rank drops when $N=0$, and the Jordan type leaves the semisimple case when $B^{2}=0$; on the scalar line $\Sigma_{10}^{\mathrm{s}}$ the element is central and the operator is a scalar multiple of the identity, so the defective types belong to the Jordan part alone. Along each column the two-sided operator replaces the one-sided eigenvalue $\lambda_i$ by the product $\lambda_i\bar\lambda_j$, so it loses one factor of the spectrum.
 
@@ -126,9 +126,9 @@ The polar word carries three operators on the algebra: the left multiplication $
 | $B^{2}$ | the vector form $Q_x^{2}+Q_y^{2}+Q_z^{2}$ |
 | $\Sigma_{\varepsilon\eta}$ | $\varepsilon=1$ if $N\neq0$, $\eta=1$ if $B^{2}\neq0$ |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues of $\tilde Q$ on $\Sigma_{11}$ |
-| $\tilde Q=c\tilde\Pi$ | the form of the element on $\Sigma_{01}$ |
-| $\tilde Q=Q_t(e_t+\vec\Upsilon)$ | the form of the element on $\Sigma_{10}$, $\vec\Upsilon^{2}=0$ |
-| $\Sigma_{10}^{\mathrm{s}}$, $\Sigma_{10}^{\mathrm{J}}$ | the scalar line $\vec\Upsilon=0$ and the Jordan part $\vec\Upsilon\neq0$ of $\Sigma_{10}$ |
+| $\tilde Q=c\tilde\Pi_{\mathrm{id}}$ | the form of the element on $\Sigma_{01}$ |
+| $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ | the form of the element on $\Sigma_{10}$, $\vec\Pi_{\mathrm{nil}}^{2}=0$ |
+| $\Sigma_{10}^{\mathrm{s}}$, $\Sigma_{10}^{\mathrm{J}}$ | the scalar line $\vec\Pi_{\mathrm{nil}}=0$ and the Jordan part $\vec\Pi_{\mathrm{nil}}\neq0$ of $\Sigma_{10}$ |
 | $a$ | the half singular value, $\tilde Q=2a\tilde Q_0$ on the null cone |
 
 ## Further Reading

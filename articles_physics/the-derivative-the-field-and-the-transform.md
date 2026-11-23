@@ -88,7 +88,7 @@ $$
 
 an element of $\mathbb{B}$ obtained from four derivatives of the field and the four units. No inverse is taken, no division occurs, and a zero divisor in the field or in the derivative is harmless. The price is that the construction is not the unique derivative of the function: it is one of several first-order conditions that an element-valued function can satisfy, and the others are the subject of §*The Two-Sided Derivative and the Eikonal*.
 
-**It is linear, and it is left multiplication.** For central $\alpha,\beta$ and differentiable fields, $\tilde\nabla_\Phi(\alpha\tilde\Xi+\beta\tilde\Upsilon)=\alpha\tilde\nabla_\Phi\tilde\Xi+\beta\tilde\nabla_\Phi\tilde\Upsilon$, and the derivative is the sum of four left multiplications, one per coordinate,
+**It is linear, and it is left multiplication.** For central $\alpha,\beta$ and differentiable fields, $\tilde\nabla_\Phi(\alpha\tilde\Xi+\beta\tilde\Pi_{\mathrm{nil}})=\alpha\tilde\nabla_\Phi\tilde\Xi+\beta\tilde\nabla_\Phi\tilde\Pi_{\mathrm{nil}}$, and the derivative is the sum of four left multiplications, one per coordinate,
 
 $$
 \tilde\nabla_\Phi\tilde\Xi=\sum_\mu L_{e_\mu}\bigl(\partial_\mu\tilde\Xi\bigr).
@@ -132,7 +132,7 @@ a minus on the time term and a plus on the three space terms.
 
 **There is no root inside the algebra.** A first-order operator $D$ with $D^{2}=\Box_\Phi I$ cannot be built from the four units alone. The algebra is four-dimensional over $\mathbb{C}$, and the attempt fails at the fourth generator: three of them exist inside $\mathbb{B}$, namely $i\vec e_x$, $i\vec e_y$, $i\vec e_z$, which square to $e_t$ and anticommute in pairs, and the fourth has no left multiplication to supply it. The obstruction is the dimension of the minimal module: the Clifford relation $\{\gamma_\mu,\gamma_\nu\}=2\delta_{\mu\nu}I$ needs a carrier of complex dimension four, while a minimal left ideal of $\mathbb{B}$ has complex dimension two.
 
-**What does work.** The root exists in the operator algebra of the regular module, $\operatorname{End}(\mathbb{B})\cong M_4(\mathbb{C})$. The two minimal left ideals $S_{\pm}=\mathbb{B}\tilde\Pi_{\pm}$ are exchanged by an element $u$ with $u^{2}=e_t$, the grading $G=R_{\tilde\Pi_+}-R_{\tilde\Pi_-}$ anticommutes with $R_u$, and the two-sided generators
+**What does work.** The root exists in the operator algebra of the regular module, $\operatorname{End}(\mathbb{B})\cong M_4(\mathbb{C})$. The two minimal left ideals $S_{\pm}=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ are exchanged by an element $u$ with $u^{2}=e_t$, the grading $G=R_{\tilde\Pi_{\mathrm{id},+}}-R_{\tilde\Pi_{\mathrm{id},-}}$ anticommutes with $R_u$, and the two-sided generators
 
 $$
 \gamma^{t}=R_u,\qquad \gamma^{k}=L_{i\vec e_k}G
@@ -263,7 +263,7 @@ while the completed seed is regular by construction: the square completes to the
 
 **The axis.** On $\mathbb{B}_{H}$ the imaginary units form the two-sphere of unit pure imaginary quaternions, every element with nonzero vector part is $\tilde Q=q_t+I\rho$ with $I$ on that sphere, and the slices meet only in the real line. On $\mathbb{B}$ the roots of $-1$ are the larger family $\pm i$, $\pm\mu$ and $b\mu+d\nu i$ with $\mu,\nu$ perpendicular unit pure real quaternions and $b^{2}-d^{2}=1$, which is not a sphere. There is therefore no single imaginary sphere on which to base the theory, and the axial construction must select one root, hence one slice, at a time.
 
-**The reading.** The Fueter extension is the axial completion. A holomorphic function of one complex variable is two real functions of two real variables; its completion is a field on four real dimensions, and the completion operator is the second-order operator of the theory. Three statements follow, and each is a statement about physics as much as about algebra. First, the minimal data of an axially symmetric regular field is one complex function of one complex variable, so the four-dimensional field contains no more information than a two-dimensional one. Second, the reconstruction is unique only modulo the affine seeds, which is exactly what a second-order operator cannot see: a constant and a linear function are invisible to $\Box_\Phi$. Third, the axis is a parameter of the family and not a datum of the algebra, the same way the axis of the idempotents $\tilde\Pi_\pm(\vec u)$ is a parameter. A configuration with an axis is therefore a choice of slice, and a theory that admits every axis at once is a family of theories indexed by a point of the root set.
+**The reading.** The Fueter extension is the axial completion. A holomorphic function of one complex variable is two real functions of two real variables; its completion is a field on four real dimensions, and the completion operator is the second-order operator of the theory. Three statements follow, and each is a statement about physics as much as about algebra. First, the minimal data of an axially symmetric regular field is one complex function of one complex variable, so the four-dimensional field contains no more information than a two-dimensional one. Second, the reconstruction is unique only modulo the affine seeds, which is exactly what a second-order operator cannot see: a constant and a linear function are invisible to $\Box_\Phi$. Third, the axis is a parameter of the family and not a datum of the algebra, the same way the axis of the idempotents $\tilde\Pi_{\mathrm{id},\pm}(\vec u)$ is a parameter. A configuration with an axis is therefore a choice of slice, and a theory that admits every axis at once is a family of theories indexed by a point of the root set.
 
 **What the reading does not say.** It does not say that every physical field is axially symmetric. It says that the axially symmetric ones have one-variable data, and that the completion is unique up to two invisible modes. The general regular field is the $\tilde\nabla_\Phi$-kernel, which is much larger than the axial class and is not obtained from any holomorphic seed by this construction.
 
@@ -345,11 +345,11 @@ $$
 **The logarithm.** In the oscillatory regime the logarithm is
 
 $$
-\tilde Q_{\log}=\mu_+\tilde\Pi_++\mu_-\tilde\Pi_-,
+\tilde Q_{\log}=\mu_+\tilde\Pi_{\mathrm{id},++}\mu_-\tilde\Pi_{\mathrm{id},-},
 \qquad
 \mu_\pm=\operatorname{Log}\lambda_\pm+2\pi ik_\pm,
 \qquad
-\tilde\Pi_\pm=\tfrac12(e_t\mp i\vec U),
+\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\mp i\vec U),
 $$
 
 with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+\pi n\,\vec U:\ m\equiv n\ (\mathrm{mod}\ 2)\}$ as its fibre. The principal branch is single-valued and real-analytic off the walls where an eigenvalue is a negative real number, and no continuous single-valued logarithm exists on all of $\mathbb{B}^{\times}$.
@@ -522,7 +522,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 | the first-order root | $\mathsf D$ | two-sided, with $\mathsf D^{2}=\Box_\Phi I$ |
 | the shift | $c$ | $\mathsf D_\lambda=\mathsf D+c\gamma_5$, $c^{2}=-\lambda$ |
 | the pseudoscalar | $\gamma_5$ | the two-sided generator of the chirality |
-| the chiral halves | $\psi_\pm$ | the two minimal left ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$ |
+| the chiral halves | $\psi_\pm$ | the two minimal left ideals $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ |
 | the group of invertibles | $\mathbb{B}^{\times}$ | real dimension $8$ |
 | the norm-one group | $\mathbb{B}^{\times}_1$ | real dimension $6$, centre $\{\pm e_t\}$ |
 | the unit quaternions | $S^{3}$ | real dimension $3$, the maximal compact subgroup |

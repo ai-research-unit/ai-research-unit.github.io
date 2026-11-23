@@ -94,10 +94,10 @@ $$
 
 The restriction is worth stating plainly: the Proca potential never sits in the nilpotent sector, at any point of any solution. The nilpotent sector is not a rare case here; it is an absent one.
 
-**The idempotent.** The sector's idempotent is $\tilde\Pi=\tilde A_\Phi/\lambda$. On the light cone put $\hat u=\vec A/a'_t$, which is a unit vector because $\lvert\vec A\rvert=\lvert a'_t\rvert$ and which carries the sign of $a'_t$. Then $\tilde A_\Phi=a'_t\,(ie_t+\hat u)$ and $\lambda=2i\,a'_t$, so
+**The idempotent.** The sector's idempotent is $\tilde\Pi_{\mathrm{id}}=\tilde A_\Phi/\lambda$. On the light cone put $\hat u=\vec A/a'_t$, which is a unit vector because $\lvert\vec A\rvert=\lvert a'_t\rvert$ and which carries the sign of $a'_t$. Then $\tilde A_\Phi=a'_t\,(ie_t+\hat u)$ and $\lambda=2i\,a'_t$, so
 
 $$
-\tilde\Pi=\frac{ie_t+\hat u}{2i}=\tfrac12\bigl(e_t-i\hat u\bigr),
+\tilde\Pi_{\mathrm{id}}=\frac{ie_t+\hat u}{2i}=\tfrac12\bigl(e_t-i\hat u\bigr),
 $$
 
 which is Hermitian, idempotent and null. The sector therefore keeps a null direction $\hat u$ and the weight $2i\,a'_t$; the direction is the spatial direction of the potential, and the weight is its scalar part. That is the material-sector form of the Dirac article's "a ray with a direction and a weight".
@@ -292,7 +292,7 @@ Degenerate values of the potential therefore arise from superpositions, which cr
 | $\mathcal N$ | The cone $\langle\tilde Q\rangle_\natural=0$, the zero divisors |
 | $\Sigma_{01}$, $\Sigma_{00}$ | The sectors $Q^2=\lambda Q$ with $\lambda\neq0$, and $Q^2=0$ |
 | $\lambda=2Q_t$ | The non-zero eigenvalue of a $\Sigma_{01}$ element |
-| $\tilde\Pi=\tilde A_\Phi/\lambda$ | The idempotent of a lightlike potential, $\tfrac12(e_t-i\hat u)$ |
+| $\tilde\Pi_{\mathrm{id}}=\tilde A_\Phi/\lambda$ | The idempotent of a lightlike potential, $\tfrac12(e_t-i\hat u)$ |
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | Square of the vector part; $N=Q_t^2+B^2$ |
 | $\tilde P_\Phi=i(\omega/c)e_t+\vec k_\Phi$ | Four-wavevector biquaternion |
 | $\theta_{\mathrm{pwp}}=\omega r'_t/c-\vec k_\Phi\cdot\vec r$ | Plane-wave angle |

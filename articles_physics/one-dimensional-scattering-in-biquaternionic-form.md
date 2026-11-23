@@ -16,7 +16,7 @@ a multiple of the identity, because a scalar potential couples to the scalar slo
 
 The article is organised as follows. The next section writes the equation, reduces it to a scalar problem, and derives the flux from the Hermitian form, read through the trace. The third section sets up the scattering problem, defines the amplitudes and the $S$-matrix, and proves flux conservation. The fourth solves the four standard potentials exactly. The fifth introduces the transfer matrix and its composition law. The sixth gives the biquaternion interpretation of the $S$-matrix, of the absent spin-flip channel, and of the bound states. The seventh states what the algebra adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, and central scalar imaginary $i$; $\mathbb{B}_{\Psi}$ is the Hermitian and $\mathbb{B}_{\Phi}$ the anti-Hermitian subspace; $\mathbb{B}_{C}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ with the isomorphism $\mathsf{M}_2$ sending $e_t\mapsto I_2$ and $\vec e_\eta\mapsto -i\sigma_\eta$; and $2\,\mathrm{Sc}(\tilde H_\Psi)$. The coordinate $x$ is the argument of the field, not an algebraic observable.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, and central scalar imaginary $i$; $\mathbb{B}_{\Psi}$ is the Hermitian and $\mathbb{B}_{\Phi}$ the anti-Hermitian subspace; $\mathbb{B}_{C}$ is the centre; the state module is $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong \mathbb{C}^2$ with the isomorphism $\mathsf{M}_2$ sending $e_t\mapsto I_2$ and $\vec e_\eta\mapsto -i\sigma_\eta$; and $2\,\mathrm{Sc}(\tilde H_\Psi)$. The coordinate $x$ is the argument of the field, not an algebraic observable.
 
 ## The One-Dimensional Biquaternion Schrödinger Equation
 
@@ -30,7 +30,7 @@ H\,\tilde{Ξ} = E\,\tilde{Ξ},
 H = \left[-\frac{\hbar^{2}}{2\,m}\frac{d^2}{dx^2} + V(r_x)\right]e_t = h_t(r_x)\,e_t,
 $$
 
-with $\tilde{Ξ}$ a field taking values in the state module $\mathbb{B}\tilde\Pi$. Since $H$ is central, the equation is componentwise the scalar equation
+with $\tilde{Ξ}$ a field taking values in the state module $\mathbb{B}\tilde\Pi_{\mathrm{id}}$. Since $H$ is central, the equation is componentwise the scalar equation
 
 $$
 -\frac{\hbar^{2}}{2\,m}\frac{d^2\xi_{\mathrm{scl}}}{dx^2}(x) + V(x)\xi_{\mathrm{scl}}(x) = E\,\xi_{\mathrm{scl}}(x)
@@ -442,7 +442,7 @@ The biquaternion content is that the potential couples only to the scalar slot, 
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{C}$ | Centre; the Hamiltonian multiplies $e_t$ |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
-| $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ | State module |
+| $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong \mathbb{C}^2$ | State module |
 | $H = [-\frac{\hbar^{2}}{2\,m}\partial^2/\partial R_x^2 + V(r_x)]e_t$ | Central Hamiltonian |
 | $\tilde{Ξ} = \xi_{\mathrm{scl}}\,\xi$ | Factorised stationary state |
 | $k_{\Phi,j} = \sqrt{2m(E-V_j)}/\hbar$ | Wave vector in region $j$; imaginary when $E<V_j$ |

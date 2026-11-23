@@ -21,16 +21,16 @@ The first two bullets are the one-sided operators; the third is the two-sided op
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The frame is
 $$
-\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-),\qquad
-\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
-\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y).
+\mathcal{P}=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-}),\qquad
+\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z),\qquad
+\vec\Pi_{\mathrm{nil},\pm}=\tfrac12(i\vec e_x\pm\vec e_y).
 $$
 The frame order is the column-major matrix-unit order, with the matrix units $E_{ij}$ satisfying $E_{ij}E_{kl}=\delta_{jk}E_{il}$,
 $$
-\tilde\Pi_+\leftrightarrow E_{11},\quad
-\vec\Upsilon_+\leftrightarrow E_{21},\quad
-\vec\Upsilon_-\leftrightarrow E_{12},\quad
-\tilde\Pi_-\leftrightarrow E_{22},
+\tilde\Pi_{\mathrm{id},+}\leftrightarrow E_{11},\quad
+\vec\Pi_{\mathrm{nil},+}\leftrightarrow E_{21},\quad
+\vec\Pi_{\mathrm{nil},-}\leftrightarrow E_{12},\quad
+\tilde\Pi_{\mathrm{id},-}\leftrightarrow E_{22},
 $$
 so the coordinate column of a $2\times2$ matrix $Y$ is $(y_{11},y_{21},y_{12},y_{22})^{\mathsf T}$. The model is $A=\mathsf M_2(\tilde Q)$ with
 $$
@@ -404,7 +404,7 @@ in the coefficient order $(t,x,y,z)$, of rank four. By the length theorem, four 
 
 ### The Pair Set Is Not a Subspace
 
-**The example.** The operator $L_{\mathrm I_2}R_{\mathrm I_2}+L_{E_{11}}R_{E_{11}}$ is $Y\mapsto Y+y_{11}E_{11}$. Its coefficient matrix is the sum of the two rank-one matrices $[e_t][e_t]^{\mathsf T}$ and $[\tilde\Pi_+][\tilde\Pi_+]^{\mathsf T}$, where the brackets are the coefficient columns, of rank two; the operator is not a pair.
+**The example.** The operator $L_{\mathrm I_2}R_{\mathrm I_2}+L_{E_{11}}R_{E_{11}}$ is $Y\mapsto Y+y_{11}E_{11}$. Its coefficient matrix is the sum of the two rank-one matrices $[e_t][e_t]^{\mathsf T}$ and $[\tilde\Pi_{\mathrm{id},+}][\tilde\Pi_{\mathrm{id},+}]^{\mathsf T}$, where the brackets are the coefficient columns, of rank two; the operator is not a pair.
 
 **The cone.** The pair set is the image of the bilinear map $(A,B)\mapsto B^{\mathsf T}\otimes A$, the cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$. It is closed under composition, by §*Composition*, and not under addition. A sum of two pairs need not be a pair, and up to four pairs may be needed for a general endomorphism.
 
@@ -440,7 +440,7 @@ In one line: one matrix per side, a pair for the product, four pairs for the gen
 
 | Symbol | Meaning |
 |---|---|
-| $\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ | the standard Peirce frame |
+| $\mathcal{P}=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ | the standard Peirce frame |
 | $A=\mathsf M_2(\tilde Q)$, $B=\mathsf M_2(\tilde Q_2)$ | the $2\times2$ matrices of the two elements |
 | $L_A(Y)=AY$ | the left multiplication |
 | $R_B(Y)=YB$ | the right multiplication |

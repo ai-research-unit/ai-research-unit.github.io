@@ -8,7 +8,7 @@ A recent paper by Korolkova, Sánchez-Soto, and Leuchs (arXiv:2405.15692, 2024) 
 
 This article asks a specific question: does the biquaternion framework developed in the companion articles have a natural home for the operational criterion, and if so, does it add anything to it?
 
-The answer to the first part is yes. The framework already distinguishes between two kinds of operation: $*$-unitary elements $\tilde Q$ (with $\tilde Q\tilde Q^{*} = e_t$) generate reversible evolution by rotor conjugation; idempotent elements $\tilde\Pi$ (with $\tilde\Pi^2 = \tilde\Pi$) generate irreversible projection by the two-sided operation. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs — count the idempotents applied to the two partitions — is exactly the framework's reversible/irreversible dichotomy applied to the specific setting of non-separability. The framework gives the criterion an algebraic home.
+The answer to the first part is yes. The framework already distinguishes between two kinds of operation: $*$-unitary elements $\tilde Q$ (with $\tilde Q\tilde Q^{*} = e_t$) generate reversible evolution by rotor conjugation; idempotent elements $\tilde\Pi_{\mathrm{id}}$ (with $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$) generate irreversible projection by the two-sided operation. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs — count the idempotents applied to the two partitions — is exactly the framework's reversible/irreversible dichotomy applied to the specific setting of non-separability. The framework gives the criterion an algebraic home.
 
 The answer to the second part is a qualified **not yet**. The framework expresses the criterion cleanly, and it suggests a structural reason for *why* the criterion works — the material/informational split $\mathbb{B} = \mathbb{B}_{\Phi} \oplus \mathbb{B}_{\Psi}$. But it does not yet predict anything the operational criterion does not already predict, and it does not yet specify the dynamics of the cross-sector coupling that would be needed to make the structural reason a dynamical reason. The framework sharpens the criterion; it does not extend it.
 
@@ -61,9 +61,9 @@ $$
 $$
 The action is reversible. The $*$-unitary element is a rotor in the sense of geometric algebra, and its conjugation action is the algebraic form of a basis change, a mode rotation, a filter, or a sorter.
 
-- **Idempotent elements** $\tilde\Pi \in \mathbb{B}_{\Psi}$ satisfy $\tilde\Pi^2 = \tilde\Pi$ and act on states by the **two-sided operator**:
+- **Idempotent elements** $\tilde\Pi_{\mathrm{id}} \in \mathbb{B}_{\Psi}$ satisfy $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$ and act on states by the **two-sided operator**:
 $$
-\tilde{Ϛ}_{\Psi} \;\longmapsto\; \tilde\Pi\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi.
+\tilde{Ϛ}_{\Psi} \;\longmapsto\; \tilde\Pi_{\mathrm{id}}\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{id}}.
 $$
 The action is irreversible. The idempotent represents a pure state, and its two-sided action is the algebraic form of a projective measurement.
 
@@ -72,21 +72,21 @@ In the companion articles, this dichotomy is presented as a *structural* feature
 **Quantum entanglement: two idempotents.** A bipartite state $\tilde{Ϛ}_{\Psi}$ on $\mathbb{B}\otimes\mathbb{B}$ undergoes two projective measurements, one on each partition. The joint probability of outcomes $i,j$ is
 
 $$
-p(i,j) = \mathrm{Tr}\!\left(\bigl(\tilde\Pi_A^{(i)}\otimes \tilde\Pi_B^{(j)}\bigr)\circ \tilde{Ϛ}_{\Psi}\right),
+p(i,j) = \mathrm{Tr}\!\left(\bigl(\tilde\Pi_{\mathrm{id},A}^{(i)}\otimes \tilde\Pi_{\mathrm{id},B}^{(j)}\bigr)\circ \tilde{Ϛ}_{\Psi}\right),
 $$
 
-where $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are the idempotents corresponding to the measurement outcomes. The joint distribution is the normalised Hermitian form of the state with a **product of two idempotents**, read as the Hermitian pairing. The pattern is exactly the one used in *Exercise: The CHSH Inequality and Tsirelson's Bound*, question 4: the Born rule applied twice, with the joint probability being the tensor-product Hermitian form of the state with the joint idempotent, read as the Hermitian pairing. The result is a **statistical correlation** between the two outcomes.
+where $\tilde\Pi_{\mathrm{id},A}^{(i)}$ and $\tilde\Pi_{\mathrm{id},B}^{(j)}$ are the idempotents corresponding to the measurement outcomes. The joint distribution is the normalised Hermitian form of the state with a **product of two idempotents**, read as the Hermitian pairing. The pattern is exactly the one used in *Exercise: The CHSH Inequality and Tsirelson's Bound*, question 4: the Born rule applied twice, with the joint probability being the tensor-product Hermitian form of the state with the joint idempotent, read as the Hermitian pairing. The result is a **statistical correlation** between the two outcomes.
 
 **Classical non-separability: one idempotent, one $*$-unitary.** A bipartite state $\tilde{Ϛ}_{\Psi}$ on $\mathbb{B}\otimes\mathbb{B}$ undergoes one $*$-unitary filtering operation on partition $A$ and one projective measurement on partition $B$. The conditional probability of outcome $j$ given filter setting $k$ is
 
 $$
-p(j\mid k) = \mathrm{Tr}\!\left(\bigl(e_t\otimes \tilde\Pi_B^{(j)}\bigr)\circ\bigl(\tilde Q_A^{(k)}\otimes e_t\bigr)\circ \tilde{Ϛ}_{\Psi}\circ\bigl(\tilde Q_A^{(k){}^{*}}\otimes e_t\bigr)\right),
+p(j\mid k) = \mathrm{Tr}\!\left(\bigl(e_t\otimes \tilde\Pi_{\mathrm{id},B}^{(j)}\bigr)\circ\bigl(\tilde Q_A^{(k)}\otimes e_t\bigr)\circ \tilde{Ϛ}_{\Psi}\circ\bigl(\tilde Q_A^{(k){}^{*}}\otimes e_t\bigr)\right),
 $$
 
 using the cyclicity of the trace. This is a **single pairing formula**, preceded by a $*$-unitary conjugation. For the classical non-separable states of interest — those in which the excitation is not attached to either partition — the trace over partition $A$ collapses, because $\tilde Q_A^{(k)}$ acts only on $A$ and the trace is cyclic:
 
 $$
-p(j\mid k) = \mathrm{Tr}_{\mathbb{B}}\!\left(\tilde\Pi_B^{(j)}\,\tilde{Ϛ}_{\Psi,B}\right), \qquad \tilde{Ϛ}_{\Psi,B} = \mathrm{Tr}_A \tilde{Ϛ}_{\Psi}.
+p(j\mid k) = \mathrm{Tr}_{\mathbb{B}}\!\left(\tilde\Pi_{\mathrm{id},B}^{(j)}\,\tilde{Ϛ}_{\Psi,B}\right), \qquad \tilde{Ϛ}_{\Psi,B} = \mathrm{Tr}_A \tilde{Ϛ}_{\Psi}.
 $$
 
 The conditional probability is therefore **independent of the filter setting** $k$, and it equals $1$ only when the reduced state $\tilde{Ϛ}_{\Psi,B}$ is pure — which makes $\tilde{Ϛ}_{\Psi}$ separable. The general formula above gives the conditional probability for any state and any pair of operations, but it does not by itself reproduce the deterministic filter-outcome correlation of the classical configuration: that correlation is a feature of the one-idempotent-one-$*$-unitary setup itself, not a consequence of this pairing formula.
@@ -94,12 +94,12 @@ The conditional probability is therefore **independent of the filter setting** $
 The distinction in the framework's notation is therefore:
 
 $$
-\boxed{\;\text{Quantum: } \tilde\Pi_A \otimes \tilde\Pi_B \qquad\qquad \text{Classical: } \tilde Q_A \otimes \tilde\Pi_B\;}.
+\boxed{\;\text{Quantum: } \tilde\Pi_{\mathrm{id},A} \otimes \tilde\Pi_{\mathrm{id},B} \qquad\qquad \text{Classical: } \tilde Q_A \otimes \tilde\Pi_{\mathrm{id},B}\;}.
 $$
 
 Two idempotents, or one idempotent and one $*$-unitary. The framework's reversible/irreversible dichotomy is the operational criterion, stated in the framework's native vocabulary.
 
-This is not a coincidence. It is a structural fact of the algebra: the two kinds of acting element are distinguished by their algebraic properties ($\tilde{U}\tilde{U}^{*} = e_t$ vs. $\tilde\Pi^2 = \tilde\Pi$), and their physical roles (reversible evolution vs. irreversible measurement) follow from these properties. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs is thus the *physical content*, in the setting of non-separability, of an algebraic distinction that the framework already contains.
+This is not a coincidence. It is a structural fact of the algebra: the two kinds of acting element are distinguished by their algebraic properties ($\tilde{U}\tilde{U}^{*} = e_t$ vs. $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$), and their physical roles (reversible evolution vs. irreversible measurement) follow from these properties. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs is thus the *physical content*, in the setting of non-separability, of an algebraic distinction that the framework already contains.
 
 ## The Four Subsets Mapped to the Framework
 
@@ -107,15 +107,15 @@ The paper's Figure 1 partitions non-separable states into nested subsets accordi
 
 ### Subset I: Two objects
 
-Two distinct excitations, one in each partition. The joint state is a non-separable element of $\mathbb{B}_{\Psi}^{(A)} \otimes \mathbb{B}_{\Psi}^{(B)}$, and each factor carries its own excitation structure. Both idempotents $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are physically meaningful, and the joint probability is the tensor-product Hermitian form, read as the Hermitian pairing.
+Two distinct excitations, one in each partition. The joint state is a non-separable element of $\mathbb{B}_{\Psi}^{(A)} \otimes \mathbb{B}_{\Psi}^{(B)}$, and each factor carries its own excitation structure. Both idempotents $\tilde\Pi_{\mathrm{id},A}^{(i)}$ and $\tilde\Pi_{\mathrm{id},B}^{(j)}$ are physically meaningful, and the joint probability is the tensor-product Hermitian form, read as the Hermitian pairing.
 
 The prototypical examples are the two-particle singlet and the two-photon polarization singlet. In the framework, the singlet is the idempotent
 
 $$
-\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right),
+\tilde\Pi_{\mathrm{id,singlet}} = \tfrac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right),
 $$
 
-and the joint probability is the normalised Hermitian form, read as the normalised Hermitian form with $\tilde\Pi_A(\vec a)\otimes \tilde\Pi_B(\vec b)$, read as the Hermitian pairing, where $\vec a$ and $\vec b$ are unit vectors along the two measured directions. This is the case treated in *Exercise: Entanglement Entropy and the Partial Trace*.
+and the joint probability is the normalised Hermitian form, read as the normalised Hermitian form with $\tilde\Pi_{\mathrm{id},A}(\vec a)\otimes \tilde\Pi_{\mathrm{id},B}(\vec b)$, read as the Hermitian pairing, where $\vec a$ and $\vec b$ are unit vectors along the two measured directions. This is the case treated in *Exercise: Entanglement Entropy and the Partial Trace*.
 
 ### Subset IIa: Single excitation split by a beam splitter
 
@@ -139,7 +139,7 @@ The case is a vector light beam with a non-separable structure between its trans
 
 In the framework, the mode functions are **not** states of $\mathbb{B}_{\Psi}$. A mode function is a frame, a basis vector, a degree of freedom; it is not an excitation, and it does not have a canonical sector assignment. A complex field configuration decomposes into a real part (in $\mathbb{B}_{\Phi}$) and an imaginary part (in $\mathbb{B}_{\Psi}$), but the mode function per se is a structural feature of the field, not a state of either sector.
 
-This means only one partition supports an idempotent. The polarization mode carries the excitation, and a projective measurement on polarization is possible: an idempotent $\tilde\Pi_B^{(H)}$ or $\tilde\Pi_B^{(V)}$. The spatial mode does not carry an excitation, and no idempotent acts on it. The operation on the spatial mode is a $*$-unitary filter — a mode sorter, a spatial light modulator, a basis choice — which corresponds to a $*$-unitary element $\tilde Q_A$.
+This means only one partition supports an idempotent. The polarization mode carries the excitation, and a projective measurement on polarization is possible: an idempotent $\tilde\Pi_{\mathrm{id},B}^{(H)}$ or $\tilde\Pi_{\mathrm{id},B}^{(V)}$. The spatial mode does not carry an excitation, and no idempotent acts on it. The operation on the spatial mode is a $*$-unitary filter — a mode sorter, a spatial light modulator, a basis choice — which corresponds to a $*$-unitary element $\tilde Q_A$.
 
 The framework reads this case as classical: one idempotent, one $*$-unitary.
 
@@ -208,12 +208,12 @@ The paper and the framework are complementary. The paper tells us what to look f
 | $\mathbb{B}\otimes\mathbb{B}$ | Two-qubit tensor product, $\cong M_4(\mathbb{C})$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $\tilde\Pi_A^{(i)}, \tilde\Pi_B^{(j)}$ | Idempotents on partitions $A,B$ (measurements) |
+| $\tilde\Pi_{\mathrm{id},A}^{(i)}, \tilde\Pi_{\mathrm{id},B}^{(j)}$ | Idempotents on partitions $A,B$ (measurements) |
 | $\tilde Q_A^{(k)}$ | $*$-Unitary on partition $A$ (filter, sorter, basis choice) |
-| $p(i,j) = \operatorname{Tr}((\tilde\Pi_A^{(i)}\otimes \tilde\Pi_B^{(j)})\circ \tilde{Ϛ}_{\Psi})$ | Joint probability, quantum case (trace reading at normalisation) |
-| $p(j\mid k) = \mathrm{Tr}((e_t\otimes \tilde\Pi_B^{(j)})\circ(\tilde Q_A^{(k)}\otimes e_t)\circ \tilde{Ϛ}_{\Psi}\circ(\tilde Q_A^{(k){}^{*}}\otimes e_t))$ | Conditional probability, classical case |
-| $\tilde\Pi_A \otimes \tilde\Pi_B$ | Quantum: two idempotents, statistical correlation |
-| $\tilde Q_A \otimes \tilde\Pi_B$ | Classical: one idempotent, one $*$-unitary |
+| $p(i,j) = \operatorname{Tr}((\tilde\Pi_{\mathrm{id},A}^{(i)}\otimes \tilde\Pi_{\mathrm{id},B}^{(j)})\circ \tilde{Ϛ}_{\Psi})$ | Joint probability, quantum case (trace reading at normalisation) |
+| $p(j\mid k) = \mathrm{Tr}((e_t\otimes \tilde\Pi_{\mathrm{id},B}^{(j)})\circ(\tilde Q_A^{(k)}\otimes e_t)\circ \tilde{Ϛ}_{\Psi}\circ(\tilde Q_A^{(k){}^{*}}\otimes e_t))$ | Conditional probability, classical case |
+| $\tilde\Pi_{\mathrm{id},A} \otimes \tilde\Pi_{\mathrm{id},B}$ | Quantum: two idempotents, statistical correlation |
+| $\tilde Q_A \otimes \tilde\Pi_{\mathrm{id},B}$ | Classical: one idempotent, one $*$-unitary |
 | $W_{ij} = \langle E_i^* E_j\rangle$ | Coherence matrix (derived element) |
 | Fundamental element | Joint state of $\mathbb{B}_{\Psi}^{\otimes n}$ (quantum) |
 | Derived element | Coherence matrix from a classical field configuration (classical) |

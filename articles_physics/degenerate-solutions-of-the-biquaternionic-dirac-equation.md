@@ -182,14 +182,14 @@ This asymmetry belongs to the sign convention of the pair and not to the physics
 
 ### The Condition and Its Form
 
-The first sector is $\Sigma_{01}=\{\tilde\Xi^{2}=\lambda\tilde\Xi,\ \lambda\neq0\}$. Its spectrum is $\{\lambda,0\}$, the two eigenvalues are distinct, and the minimal polynomial $X(X-\lambda)$ is squarefree. The element is $\lambda$ times a non-trivial idempotent, and the idempotent is $\tilde\Pi=\tilde\Xi/\lambda$.
+The first sector is $\Sigma_{01}=\{\tilde\Xi^{2}=\lambda\tilde\Xi,\ \lambda\neq0\}$. Its spectrum is $\{\lambda,0\}$, the two eigenvalues are distinct, and the minimal polynomial $X(X-\lambda)$ is squarefree. The element is $\lambda$ times a non-trivial idempotent, and the idempotent is $\tilde\Pi_{\mathrm{id}}=\tilde\Xi/\lambda$.
 
 **In components.** With $\vec Z=\vec Q/Q_t$ the element is
 
 $$
-\tilde\Xi=Q_t\bigl(e_t+\vec Z\bigr)=2Q_t\,\tilde\Pi,
+\tilde\Xi=Q_t\bigl(e_t+\vec Z\bigr)=2Q_t\,\tilde\Pi_{\mathrm{id}},
 \qquad
-\tilde\Pi=\tfrac12\bigl(e_t+\vec Z\bigr),
+\tilde\Pi_{\mathrm{id}}=\tfrac12\bigl(e_t+\vec Z\bigr),
 \qquad
 \langle\vec Z\rangle_{\natural}=-1,
 $$
@@ -214,7 +214,7 @@ $$
 A^{-1}=\tfrac12\bigl(e_t+i\sqrt3\,\vec e_z\bigr),
 $$
 
-and the polarization $\tilde\Xi_{0}=\tilde\Pi=\tfrac12(e_t+i\vec e_z)$ gives
+and the polarization $\tilde\Xi_{0}=\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+i\vec e_z)$ gives
 
 $$
 \tilde\Xi_{0,R}=\frac{1+\sqrt3}{4}\bigl(e_t+i\vec e_z\bigr),
@@ -228,7 +228,7 @@ Both components are real multiples of the same idempotent, both have vanishing n
 
 ### What Survives and What Does Not
 
-**The word fails and the state does not.** The polar word of the field is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and its scale is read from the norm, $N=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ with $\rho_{\mathrm{num}}=\varrho^{2}$. On the cone $N=0$, so $\varrho=0$ and the word has no value. What survives is the pair's own data: the idempotent $\tilde\Pi$ and the weight $\lambda$. The idempotent carries a direction and the weight carries a complex number, and neither is read by the word.
+**The word fails and the state does not.** The polar word of the field is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and its scale is read from the norm, $N=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ with $\rho_{\mathrm{num}}=\varrho^{2}$. On the cone $N=0$, so $\varrho=0$ and the word has no value. What survives is the pair's own data: the idempotent $\tilde\Pi_{\mathrm{id}}$ and the weight $\lambda$. The idempotent carries a direction and the weight carries a complex number, and neither is read by the word.
 
 Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
@@ -244,10 +244,10 @@ The polar companion's density is $\rho_{\mathrm{num}}=\varrho^{2}$, a quadratic 
 
 ### The Physical Interpretation
 
-A non-trivial idempotent is a ray. The Hermitian members of the sector, $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$ with $\vec u$ a real unit vector, are the members with real $Q_t$ and imaginary $\vec Z$, and the corpus reads them as the pure states of the spin direction $\vec u$. A null momentum is one of them up to a weight: for a real unit vector $\vec n$ and a real $\kappa$,
+A non-trivial idempotent is a ray. The Hermitian members of the sector, $\tilde\Pi_{\mathrm{id}}(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$ with $\vec u$ a real unit vector, are the members with real $Q_t$ and imaginary $\vec Z$, and the corpus reads them as the pure states of the spin direction $\vec u$. A null momentum is one of them up to a weight: for a real unit vector $\vec n$ and a real $\kappa$,
 
 $$
-i\kappa\,e_t+\kappa\,\vec n=2i\kappa\,\tilde\Pi(-\vec n),
+i\kappa\,e_t+\kappa\,\vec n=2i\kappa\,\tilde\Pi_{\mathrm{id}}(-\vec n),
 $$
 
 so the massless momentum itself sits in this sector, with $\kappa$ its wave number.
@@ -417,7 +417,7 @@ The letters $L$ and $R$ are the pair's two components and are fixed by the equat
 | $\mathcal N=\{N=0\}$ | The cone of zero divisors |
 | $\Sigma_{01}$, $\Sigma_{00}$ | The two non-zero sectors of the cone |
 | $\lambda=2Q_t$ | The non-zero eigenvalue of a $\Sigma_{01}$ element; the companion's $c$ |
-| $\tilde\Pi=\tilde\Xi/\lambda$ | The idempotent of a $\Sigma_{01}$ element |
+| $\tilde\Pi_{\mathrm{id}}=\tilde\Xi/\lambda$ | The idempotent of a $\Sigma_{01}$ element |
 | $A=e_t+(i/k_m)\tilde K_{\Phi}$ | The momentum factor; $\tilde\Xi_{0}=A\tilde\Xi_{0,R}$ |
 | $u$, $R_u$ | A declared scalar-free unit with $u^{2}=-e_t$, and its right multiplier |
 

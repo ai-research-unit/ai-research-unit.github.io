@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The spin-half carrier is the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$, and its closures are the two spinor spaces and their sum. This article computes the $N$ norm on all of them, and the answer is the extreme one.
+The spin-half carrier is the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$, and its closures are the two spinor spaces and their sum. This article computes the $N$ norm on all of them, and the answer is the extreme one.
 
 On the plane the norm vanishes identically. Not at one point, not on a line: at every point. The plane is a null plane, and every element of it is norm-degenerate. The same holds for the whole spinor space that contains it, since the norm is multiplicative and the idempotent has norm zero. So the carrier of spin one half is the one carrier on which the predicate fails everywhere, and the failure is structural rather than accidental.
 
@@ -32,10 +32,10 @@ symmetric and complex-bilinear, so that $N(X+Y)=N(X)+N(Y)+2B(X,Y)$ for all $X,Y$
 
 ## The Norm of the Idempotent
 
-**Theorem.** For the idempotent $\tilde\Pi_+(\vec u_{\mathrm r})=\tfrac12(e_t+i\vec u_{\mathrm r})$,
+**Theorem.** For the idempotent $\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\tfrac12(e_t+i\vec u_{\mathrm r})$,
 
 $$
-N\bigl(\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=\tfrac14\bigl(1-\lvert\vec u_{\mathrm r}\rvert^{2}\bigr)=0 .
+N\bigl(\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=\tfrac14\bigl(1-\lvert\vec u_{\mathrm r}\rvert^{2}\bigr)=0 .
 $$
 
 *Proof.* The coordinates are $Q_t=\tfrac12$ and $Q_k=\tfrac i2 u_k$, so
@@ -53,7 +53,7 @@ and the axis is of unit length.
 **Theorem.** For every complex $\lambda$,
 
 $$
-N\bigl(\lambda\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=\lambda^{2}N\bigl(\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=0 .
+N\bigl(\lambda\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=\lambda^{2}N\bigl(\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=0 .
 $$
 
 **Corollary (every element of the carrier is norm-degenerate).** The intersection of the plane with the null cone is the plane:
@@ -71,10 +71,10 @@ So the carrier of spin one half contains no norm-regular element, and the origin
 **Theorem.** For every element $X$ of the algebra,
 
 $$
-N\bigl(X\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=N(X)\,N\bigl(\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=0 .
+N\bigl(X\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=N(X)\,N\bigl(\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=0 .
 $$
 
-**Corollary.** The spinor space $S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_+(\vec u_{\mathrm r})$ lies in the null cone, and so does $S_-(\vec u_{\mathrm r})$.
+**Corollary.** The spinor space $S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ lies in the null cone, and so does $S_-(\vec u_{\mathrm r})$.
 
 **Remark (the closure does not repair the nullity).** The first closure adds two real dimensions to the plane, and it adds them inside the null cone. This is worth stating because the closure does repair the invariance: the plane is not invariant under the whole group and the spinor space is. The two notions of closure are independent, and here one is repaired and the other is not.
 
@@ -92,7 +92,7 @@ $$
 
 **Corollary (the spinor spaces are maximal).** Each spinor space is isotropic of real dimension $4=\tfrac12\dim_\mathbb{R}\mathbb{B}$, hence maximal. The plane is isotropic of real dimension $2$ and is not maximal; the two extra dimensions of the ideal are what the first closure adds.
 
-**Remark (the three isotropic spaces).** The plane is totally isotropic as well, since $B(\lambda\tilde\Pi_+,\mu\tilde\Pi_+)=\lambda\mu N(\tilde\Pi_+)=0$. What separates the plane from the spinor spaces is not the total isotropy but the dimension: the plane has real dimension $2$ and the spinor spaces $4$, and only the second is maximal.
+**Remark (the three isotropic spaces).** The plane is totally isotropic as well, since $B(\lambda\tilde\Pi_{\mathrm{id},+},\mu\tilde\Pi_{\mathrm{id},+})=\lambda\mu N(\tilde\Pi_{\mathrm{id},+})=0$. What separates the plane from the spinor spaces is not the total isotropy but the dimension: the plane has real dimension $2$ and the spinor spaces $4$, and only the second is maximal.
 
 ## The Bispinor Read
 
@@ -158,9 +158,9 @@ The norm of the idempotent is zero, and by multiplicativity the norm vanishes on
 | $B(X,Y)=\tfrac12\bigl(N(X+Y)-N(X)-N(Y)\bigr)$ | the polar form of the norm |
 | $\mathcal N=\{N=0\}$ | the null cone |
 | norm-regular | $N\neq0$ |
-| $\tilde\Pi_\pm(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | the two idempotents of the axis, a Peirce basis |
-| $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+$ | the spinor plane, $\dim_\mathbb{R}=2$, null |
-| $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm$ | the spinor spaces, $\dim_\mathbb{R}=4$, maximal isotropic |
+| $\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | the two idempotents of the axis, a Peirce basis |
+| $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$ | the spinor plane, $\dim_\mathbb{R}=2$, null |
+| $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | the spinor spaces, $\dim_\mathbb{R}=4$, maximal isotropic |
 | $S_+\oplus S_-=\mathbb{B}$ | a bispinor space, $\dim_\mathbb{R}=8$ |
 | isotropic | $N$ vanishes on the subspace |
 | $\Sigma_{ij}$ | the sector with $N\neq0$ for $i=1$ and $B^{2}\neq0$ for $j=1$ |

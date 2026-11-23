@@ -52,9 +52,9 @@ $$
 carries its position dependence only through the two divergence equations, and on the normalised fields $\vec E_{\mathrm n} := \sqrt{\epsilon}\,\vec E$, $\vec H_{\mathrm n} := \sqrt{\mu}\,\vec H$ it becomes the pair of first-order equations with constant-free leading part,
 
 $$
-D\vec E_{\mathrm n} + \vec E_{\mathrm n}\vec{\nu} = 0, \qquad D\vec H_{\mathrm n} + \vec H_{\mathrm n}\vec{\nu}_2 = 0,
+D\vec E_{\mathrm n} + \vec E_{\mathrm n}\vec G = 0, \qquad D\vec H_{\mathrm n} + \vec H_{\mathrm n}\vec G_2 = 0,
 \qquad
-\vec{\nu} := \frac{\mathrm{grad}\sqrt{\epsilon}}{\sqrt{\epsilon}}, \quad \vec{\nu}_2 := \frac{\mathrm{grad}\sqrt{\mu}}{\sqrt{\mu}} ,
+\vec G := \frac{\mathrm{grad}\sqrt{\epsilon}}{\sqrt{\epsilon}}, \quad \vec G_2 := \frac{\mathrm{grad}\sqrt{\mu}}{\sqrt{\mu}} ,
 $$
 
 which is the **carrier identity** of *Electromagnetism in Media — The Local Complex Structure at Work*, read in the static case, where no time coordinate is present and the operator is the Moisil–Theodorescu operator $D$ alone, in the corpus's normalization $D=i\vec\nabla_\Phi$. The Dirac side has the same shape: the massive equation with an electric potential, and separately with a scalar potential, becomes after the dictionary a first-order equation whose only position dependence is a coefficient multiplying one basis direction, as recorded in *The Dirac Equation in Biquaternionic Form*, §*The Dirac Operator with Potentials in Quaternionic Form*. Matching the two shapes, the 2003 paper concludes that a solution of the Dirac equation with an electric or a scalar potential is a solution of the static Maxwell system of an isotropic inhomogeneous medium, the medium being the potential read as a parameter:
@@ -63,9 +63,9 @@ $$
 \epsilon = \exp(\,2G(r_x)), \qquad G(r_x) = \int g(r_x)\,dr_x ,
 $$
 
-with $g$ the Dirac potential. The identification is a statement about **coefficients** and not about fields: the potential is the logarithmic derivative of the square root of the permittivity, $\vec{\nu} = \mathrm{grad}\,G$, which is checked at once from $\sqrt{\epsilon} = \exp(G)$. What the correspondence does not do is identify the Dirac field with the electromagnetic field — the Dirac biquaternion and the field-strength biquaternion are different objects, and the matching is at the level of the equations they solve, with the restriction $\mathrm{Sc} = 0$ on the Maxwell side. The corpus records it because both ends already exist here, the carrier function of the media article and the potential coupling of the Dirac article, and this is the statement that joins them.
+with $g$ the Dirac potential. The identification is a statement about **coefficients** and not about fields: the potential is the logarithmic derivative of the square root of the permittivity, $\vec G = \mathrm{grad}\,G$, which is checked at once from $\sqrt{\epsilon} = \exp(G)$. What the correspondence does not do is identify the Dirac field with the electromagnetic field — the Dirac biquaternion and the field-strength biquaternion are different objects, and the matching is at the level of the equations they solve, with the restriction $\mathrm{Sc} = 0$ on the Maxwell side. The corpus records it because both ends already exist here, the carrier function of the media article and the potential coupling of the Dirac article, and this is the statement that joins them.
 
-**What is quoted.** The source's own forms of the two reduced operators, for the electric and for the scalar potential, are partly illegible in the scan. What is legible, and what is recorded above, is the shape of the reduction, the normalisation by $\sqrt{\epsilon}$, and the parameter $\epsilon = \exp(2G)$ with $\vec\nu = \mathrm{grad}\,G$; the identification of the potential with an inhomogeneity of that form is the source's statement, carried here as such.
+**What is quoted.** The source's own forms of the two reduced operators, for the electric and for the scalar potential, are partly illegible in the scan. What is legible, and what is recorded above, is the shape of the reduction, the normalisation by $\sqrt{\epsilon}$, and the parameter $\epsilon = \exp(2G)$ with $\vec G = \mathrm{grad}\,G$; the identification of the potential with an inhomogeneity of that form is the source's statement, carried here as such.
 
 ## The Mass Shell as the Condition on the Dirac–Maxwell Correspondence
 
@@ -120,13 +120,13 @@ comparing it with the biquaternion Maxwell equation $\tilde\nabla_\Phi\tilde{F} 
 The corpus's chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\,\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\,\tilde{Ξ}_{R}$ is the same equation in the chiral variables — the second member carries $(\tilde\nabla_\Phi)^{\natural}$ because the field written $L$ is the conjugate of the Lanczos $\tilde{Q}_2$ — and it displays the field split into its two parts, but not the direction that the Lanczos form makes explicit. Lanczos reached the Dirac equation from the pair by a superposition along an arbitrary axis (in the displays of this paragraph the letter $D$ is Lanczos's name for the Dirac field, not the spatial operator $D=i\vec\nabla_\Phi$ of *An Explicit Dictionary with Conjugation in the Mass Term*)
 
 $$
-D = \tilde{Q}_1\tilde{\Pi} + \tilde{Q}_2^{*}\bar{\tilde{\Pi}},
+D = \tilde{Q}_1\tilde\Pi_{\mathrm{id}} + \tilde{Q}_2^{*}\bar{\tilde\Pi_{\mathrm{id}}},
 $$
 
-with $\tilde{\Pi}$ the projection along a unit vector $\vec{\nu}$ and $\bar{\tilde{\Pi}}$ its conjugate — so that one half of $\tilde{Q}_1$ and half of the conjugate of $\tilde{Q}_2$ are carried into the two **different** parts of the field, which is what makes the superposition a field carrying both values and not a field carrying one; the resulting single equation
+with $\tilde\Pi_{\mathrm{id}}$ the projection along a unit vector $\vec u_{\mathrm{sp}}$ and $\bar{\tilde\Pi_{\mathrm{id}}}$ its conjugate — so that one half of $\tilde{Q}_1$ and half of the conjugate of $\tilde{Q}_2$ are carried into the two **different** parts of the field, which is what makes the superposition a field carrying both values and not a field carrying one; the resulting single equation
 
 $$
-\boxed{\;\tilde\nabla_\Phi D = D^{*}i\vec{\nu}\,k_m\;}
+\boxed{\;\tilde\nabla_\Phi D = D^{*}i\vec u_{\mathrm{sp}}\,k_m\;}
 $$
 
 is strictly equivalent to Dirac's equation. The unit vector on the right is the point of the display: it is the **spin quantization axis**, and it shows that Dirac's equation singles out an arbitrary but unique direction in ordinary space. The corpus's pair is written for a fixed frame and does not exhibit the axis; the Lanczos form shows that the axis is carried by the projection itself, and that any unit vector will do. The complex conjugation on the right-hand side is a second such fact: it is what makes the Dirac field **fermionic**, in contrast with the Maxwell and Proca fields, which are bosonic. The superposition is not unique: the source's second and equally covariant combination — Gürsey's, which the isospin reading makes the neutron to the proton — is recorded in *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*; the fermionic character above is what the two share.
@@ -151,7 +151,7 @@ These questions are open.
 
 **Two comparisons, one dictionary and one condition.** A massive Dirac field with an electric or a scalar potential is, after the dictionary, the static sourceless Maxwell system of an isotropic inhomogeneous medium whose permittivity is $\epsilon=\exp(2G)$ with $dG/dr_x=g$, the potential being the logarithmic derivative of $\sqrt\epsilon$; the match is at the level of coefficients and carries the restriction $\mathrm{Sc}=0$ on the Maxwell side. On time-harmonic fields the Dirac pair and the Maxwell pair of a homogeneous medium share one projection identity exactly when $k_\Phi^2=\alpha^2$, and that condition, with $\alpha^2=\frac{E^{2}}{\hbar^{2}\,c^{2}}-k_m^{2}$, is $E^2=\hbar^{2}\,\omega^{2}+m^{2}c^{4}$, the relativistic dispersion relation.
 
-**The Lanczos reading names the shared object.** Lanczos derived the Dirac equation from the coupled system $\tilde\nabla_\Phi\tilde Q_1=\tilde Q_2k_m$, $\tilde\nabla_\Phi\tilde Q_2=\tilde Q_1k_m$, whose first member is Maxwell's equation and whose second is a feedback of strength $k_m$, the mass. The Dirac field obeys the operator in the closed, self-acting way and the Maxwell field in the sourced way. The superposition along an axis, $\tilde\nabla_\Phi D=D^{*}i\vec\nu\,k_m$, adds the spin-quantization axis and the complex conjugation that make the field fermionic, and it is equivalent to Dirac's equation. What remains open is the feedback itself: the framework represents it and does not derive it.
+**The Lanczos reading names the shared object.** Lanczos derived the Dirac equation from the coupled system $\tilde\nabla_\Phi\tilde Q_1=\tilde Q_2k_m$, $\tilde\nabla_\Phi\tilde Q_2=\tilde Q_1k_m$, whose first member is Maxwell's equation and whose second is a feedback of strength $k_m$, the mass. The Dirac field obeys the operator in the closed, self-acting way and the Maxwell field in the sourced way. The superposition along an axis, $\tilde\nabla_\Phi D=D^{*}i\vec u_{\mathrm{sp}}\,k_m$, adds the spin-quantization axis and the complex conjugation that make the field fermionic, and it is equivalent to Dirac's equation. What remains open is the feedback itself: the framework represents it and does not derive it.
 
 ## Summary of Notation
 
@@ -164,13 +164,13 @@ These questions are open.
 | $\tilde F$ | The field-strength biquaternion, the vector part of $\mathbb{B}$ |
 | $\tilde J_\Phi$ | The source biquaternion of the inhomogeneous Maxwell equation |
 | $k_\Phi=\omega\sqrt{\epsilon\mu}$ | The Maxwell wave number of the medium |
-| $\epsilon$, $\mu$, $\vec\nu$ | Permittivity, permeability and the logarithmic derivative $\vec\nu=\mathrm{grad}\sqrt\epsilon/\sqrt\epsilon$ |
+| $\epsilon$, $\mu$, $\vec G$ | Permittivity, permeability and the logarithmic derivative $\vec G=\mathrm{grad}\sqrt\epsilon/\sqrt\epsilon$ |
 | $G(r_x)$, $g(r_x)$ | The Dirac potential as an integral and as its derivative, $\epsilon=\exp(2G)$, $dG/dr_x=g$ |
 | $\alpha$ | The biquaternionic parameter of the shifted amplitude equation, an inverse length |
 | $E$, $p$ | Particle energy and momentum; $E=\hbar\,\omega_D$ and $E=pc$ for the Maxwell wave number |
 | $\tilde Q_1$, $\tilde Q_2$ | Lanczos's two biquaternion fields |
 | $D$ | In §*The Lanczos Route* only, Lanczos's name for the Dirac field, not the spatial operator $D=i\vec\nabla_\Phi$ |
-| $\tilde\Pi$, $\bar{\tilde\Pi}$ | The projection along the unit vector $\vec\nu$ of the Lanczos superposition and its conjugate |
+| $\tilde\Pi_{\mathrm{id}}$, $\bar{\tilde\Pi_{\mathrm{id}}}$ | The projection along the unit vector $\vec u_{\mathrm{sp}}$ of the Lanczos superposition and its conjugate |
 
 ## Further Reading
 
@@ -183,6 +183,6 @@ These questions are open.
 - K. Imaeda, "A new formulation of classical electrodynamics," *Il Nuovo Cimento B* **32** (1976) 138–162, for the quaternionic vacuum Maxwell equation $i\partial/\partial r'_tF+DF=0$, the equation the dictionary reduces to at vanishing mass.
 - C. Lanczos, "Die tensoranalytischen Beziehungen der Diracschen Gleichung," *Zeitschrift für Physik* **57** (1929) 447–473, 474–483, 484–493 (arXiv:physics/0508002, physics/0508012, physics/0508013), for the coupled biquaternion system from which the Dirac equation descends and for the superposition along an axis that produces it.
 - F. Gürsey, "Applications of Quaternions to Field Equations," PhD thesis, University of London, 1950, for the review of Lanczos's quaternionic theory and for the treatment of the scalar, vector, pseudoscalar and pseudovector equations as degenerate cases of it.
-- A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §8, for the interpretation of Lanczos's system as Maxwell's equation with feedback, for the spin-quantization-axis form $\tilde\nabla_\Phi D=mD^{*}i\vec{\nu}$ of the Dirac–Lanczos equation, and for the complex-conjugation origin of the fermionic character.
+- A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §8, for the interpretation of Lanczos's system as Maxwell's equation with feedback, for the spin-quantization-axis form $\tilde\nabla_\Phi D=mD^{*}i\vec u_{\mathrm{sp}}$ of the Dirac–Lanczos equation, and for the complex-conjugation origin of the fermionic character.
 - A. Gsponer and J.-P. Hurni, "Lanczos's Equation to Replace Dirac's Equation?", *Proceedings of the Cornelius Lanczos International Centenary Conference* (SIAM, 1994) 509–512 (arXiv:hep-ph/0112317), for Lanczos's coupled system as "Maxwell's equations with feed-back" and for the second route to Dirac's equation, the reduction by requiring the two fields to be singular quaternions, attributed there to J. Blaton, *Zeitschrift für Physik* **95** (1935) 337–354. Recorded as a claim: four pages, no derivation exhibited, and the title is a question; the arXiv version carries a *Note added in 1996* withdrawing the authors' charge-quantisation mechanism, which is recorded in *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*.
 - V. V. Kravchenko and M. P. Ramirez Tachiquin, "On a quaternionic reformulation of the Dirac equation and its relationship with Maxwell's system," *Bulletin de la Société des Sciences et des Lettres de Łódź* **53** (2003) 101–114, for the correspondence between the massive Dirac equation with an electric or a scalar potential and the static sourceless Maxwell system of an isotropic inhomogeneous medium, with the permittivity $\epsilon=\exp(2G(r_x))$, $dG/dr_x=g$; for the condition $k_\Phi^2=\alpha^2$ under which the massive Dirac field and the time-harmonic Maxwell field share the same projection identity, that condition being the mass shell; and, in the same paper, for the reality of the conjugation-free quaternionic Dirac operator and the current-conservation equation recorded in *The Dirac Equation in Biquaternionic Form*, §*The Conjugation-Free Operator and Its Reality*. The paper's factors $u^{\pm}$ and its explicit action of $A^{-1}$ on $\mathrm{Re}\,F$ are quoted, not reproduced: the available copy is a scan without a text layer.

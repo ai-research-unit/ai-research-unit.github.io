@@ -10,9 +10,9 @@
 
 **The frame and the block.** The frame is the standard Peirce frame
 $$
-\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-),\qquad
-\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
-\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y),
+\mathcal{P}=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-}),\qquad
+\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z),\qquad
+\vec\Pi_{\mathrm{nil},\pm}=\tfrac12(i\vec e_x\pm\vec e_y),
 $$
 and the block of an element is
 $$
@@ -76,7 +76,7 @@ the last two when $\langle\tilde Q\rangle_{\natural}\neq0$, that is when $\det A
 $$
 L_1R_2=R_2L_1,
 $$
-which is the associativity of the algebra read on both sides. It is a statement about four matrices, and it does not compress: at the element size $A$ and $A^{\mathsf T}$ need not commute, as §*The Product* of *$M_2(\mathbb{C})$ Pauli Representation* shows on $\vec\Upsilon_+$.
+which is the associativity of the algebra read on both sides. It is a statement about four matrices, and it does not compress: at the element size $A$ and $A^{\mathsf T}$ need not commute, as §*The Product* of *$M_2(\mathbb{C})$ Pauli Representation* shows on $\vec\Pi_{\mathrm{nil},+}$.
 
 **The mixed trace.** For all $\tilde Q_1,\tilde Q_2$,
 $$
@@ -212,7 +212,7 @@ $$
 [H]_{\mathcal P}=\tfrac12\mathrm I_4,\qquad
 [\mathrm{Kr}]_{\mathcal P}=\tfrac12\begin{pmatrix}0&0&0&1\\0&-1&0&0\\0&0&-1&0\\1&0&0&0\end{pmatrix}.
 $$
-Each is computed from the four words on the four pairs of frame vectors, and each is a half-integer array. The Hermitian one is diagonal, because the frame is orthogonal for $H$ with equal norms $\tfrac12$; the plain one has $\tfrac12$ at the two scalar corners $(\tilde\Pi_+,\tilde\Pi_+)$ and $(\tilde\Pi_-,\tilde\Pi_-)$, zero at the two nilpotent corners, and $\tfrac12$ at the two mixed entries $(\vec\Upsilon_+,\vec\Upsilon_-)$ and $(\vec\Upsilon_-,\vec\Upsilon_+)$, because $\mathrm{Sc}(\tilde\Pi_\pm^2)=\tfrac12$ and $\mathrm{Sc}(\vec\Upsilon_\pm^2)=0$, while $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ has scalar part $\tfrac12$ and $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ the same.
+Each is computed from the four words on the four pairs of frame vectors, and each is a half-integer array. The Hermitian one is diagonal, because the frame is orthogonal for $H$ with equal norms $\tfrac12$; the plain one has $\tfrac12$ at the two scalar corners $(\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},+})$ and $(\tilde\Pi_{\mathrm{id},-},\tilde\Pi_{\mathrm{id},-})$, zero at the two nilpotent corners, and $\tfrac12$ at the two mixed entries $(\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-})$ and $(\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+})$, because $\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\pm}^2)=\tfrac12$ and $\mathrm{Sc}(\vec\Pi_{\mathrm{nil},\pm}^2)=0$, while $\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-}$ has scalar part $\tfrac12$ and $\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+}$ the same.
 
 **The same form in two frames.** The four arrays above are not the four arrays of the axis-free article, which are the sign matrix $\mathrm E$ and the identity. The form is the same function of two elements in the two frames; only the array changes. The rule is the congruence of *Families of Matrix Representations*,
 $$
@@ -390,7 +390,7 @@ The Gram matrices of the four forms in this frame are half-integer arrays, of wh
 
 | Symbol | Meaning |
 |---|---|
-| $\mathcal{P}$ | the standard Peirce frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ |
+| $\mathcal{P}$ | the standard Peirce frame $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ |
 | $A_a$ | $\mathsf M_2(\tilde Q_a)$, the block of $\tilde Q_a$, $a=1,2$ |
 | $A_a^{\natural}$, $A_a^{c}$, $A_a^{*}$ | $\sigma_2A_a^{\mathsf T}\sigma_2$, $\sigma_2\overline{A_a}\sigma_2$, $A_a^{\dagger}$ |
 | $L_a$, $R_a$ | $\mathrm I_2\otimes A_a$ and $A_a^{\mathsf T}\otimes\mathrm I_2$ |

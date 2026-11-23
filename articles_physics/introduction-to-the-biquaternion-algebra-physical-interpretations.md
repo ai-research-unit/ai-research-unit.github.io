@@ -393,7 +393,7 @@
 | $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | the N norm, the form whose vanishing is N degeneracy |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | the material and the informational sectors, the anti-Hermitian and the Hermitian halves |
 | $\tilde{Ϛ}_{\Psi}$ | the state element, Hermitian and normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image) |
-| $\tilde\Pi$ | an idempotent; a rank-one Hermitian idempotent is a pure state |
+| $\tilde\Pi_{\mathrm{id}}$ | an idempotent; a rank-one Hermitian idempotent is a pure state |
 | $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the two-sided operator, the change of frame on the unit-norm slice |
 | $W$ | a carrier: a nonzero real subspace, invariant and irreducible under one of the algebra's own actions |
 | $\mathrm{cl}(W)$ | the closure of the carrier, the real space a field takes values in |

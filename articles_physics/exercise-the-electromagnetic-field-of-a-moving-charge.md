@@ -148,7 +148,7 @@ $$
 \tilde{F} = (\tilde\nabla_\Phi)^{\natural}\frac{g\tilde{V}_{\Phi}/\gamma}{D}
 = \frac{g}{D^2}\left[D\,(\tilde\nabla_\Phi)^{\natural}\!\left(\tilde{V}_{\Phi}/\gamma\right) - \left((\tilde\nabla_\Phi)^{\natural}D\right)\tilde{V}_{\Phi}/\gamma\right].
 $$
-Substituting $(\tilde\nabla_\Phi)^{\natural}\!\left(\tilde{V}_{\Phi}/\gamma\right) = \tilde\Lambda_{\Phi,\mathrm{ret}}\,d\tilde{V}_{\Phi}/\gamma/dt'_{\mathrm{ret}}$ with $d\tilde{V}_{\Phi}/\gamma/dt'_{\mathrm{ret}} = cd\vec\beta/dt'_{\mathrm{ret}}$, and using $D\tilde\Lambda_{\Phi,\mathrm{ret}} = \frac{D}{c\kappa}(-ie_t+\vec u_R) = R(-ie_t+\vec u_R) = -2R\tilde{\mathcal L}_{\Phi,\mathrm{ret}}$, where $\tilde{\mathcal L}_{\Phi,\mathrm{ret}} \equiv \tilde{\mathcal L}_{\Phi}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ is the future null four-vector of the retarded pure state (*The Relativistic Qubit in Biquaternionic Form*),
+Substituting $(\tilde\nabla_\Phi)^{\natural}\!\left(\tilde{V}_{\Phi}/\gamma\right) = \tilde\Lambda_{\Phi,\mathrm{ret}}\,d\tilde{V}_{\Phi}/\gamma/dt'_{\mathrm{ret}}$ with $d\tilde{V}_{\Phi}/\gamma/dt'_{\mathrm{ret}} = cd\vec\beta/dt'_{\mathrm{ret}}$, and using $D\tilde\Lambda_{\Phi,\mathrm{ret}} = \frac{D}{c\kappa}(-ie_t+\vec u_R) = R(-ie_t+\vec u_R) = -2R\tilde{\mathcal L}_{\Phi,\mathrm{ret}}$, where $\tilde{\mathcal L}_{\Phi,\mathrm{ret}} \equiv \tilde{\mathcal L}_{\Phi}(\vec u_R) = i\tilde\Pi_{\mathrm{id}}(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ is the future null four-vector of the retarded pure state (*The Relativistic Qubit in Biquaternionic Form*),
 $$
 \tilde{F} = \frac{g}{D^2}\left[-2R\,\tilde{\mathcal L}_{\Phi,\mathrm{ret}}\,d\vec\beta/dt'_{\mathrm{ret}}
 + \left(\vec u_R-\vec\beta\right)\tilde{V}_{\Phi}/\gamma
@@ -353,7 +353,7 @@ $$
 \qquad
 \tilde{F}_a = \frac{g}{D^2}\left[-2R\,\tilde{\mathcal L}_{\Phi,\mathrm{ret}}d\vec\beta/dt'_{\mathrm{ret}} - \frac{2\,\vec R\cdot\,d\vec\beta/dt'_{\mathrm{ret}}}{c\kappa}\tilde{\mathcal L}_{\Phi,\mathrm{ret}}\tilde{V}_{\Phi}/\gamma\right],
 $$
-with $\tilde{\mathcal L}_{\Phi,\mathrm{ret}} = \tilde{\mathcal L}_{\Phi}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$, $dD_{0}/dt'_{\mathrm{ret}} = -c\left(\vec u_R\cdot\vec\beta-\beta^2\right)$, and $g = \mu ϙ/4\pi$.
+with $\tilde{\mathcal L}_{\Phi,\mathrm{ret}} = \tilde{\mathcal L}_{\Phi}(\vec u_R) = i\tilde\Pi_{\mathrm{id}}(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$, $dD_{0}/dt'_{\mathrm{ret}} = -c\left(\vec u_R\cdot\vec\beta-\beta^2\right)$, and $g = \mu ϙ/4\pi$.
 
 The velocity field falls as $1/R^2$, is of electric type, and is not null: $I_{1,v} = \left(\frac{ϙ}{4\pi\epsilon}\frac{1-\beta^2}{\kappa^2R^2}\right)^2>0$, $I_{2,v}=0$, $\langle\tilde{F}_v\rangle_{\natural}\ne0$. The acceleration field falls as $1/R$, is transverse and null, and is a zero divisor: $\vec u_R\cdot\vec E_a = 0$, $I_{1,a}=I_{2,a}=0$, $\tilde{F}_a^2 = 0$. The two falloffs were verified by holding the retarded configuration fixed and scaling the observation distance, and the far-zone dominance of $\vec E_a$ follows from the one-power difference: the ratio $|\vec E_v|/|\vec E_a|$ falls off as $1/R$. The retarded denominator $\kappa$ and the charge sign were checked on two independent cases, uniform motion (where $\vec E = \vec E_v$) and motion with acceleration (where both parts contribute); $\kappa$ can be less than or greater than $1$ and is not a $\gamma$-factor. Finally, the field is not a four-vector: under a boost it transforms by the similarity $\tilde U_{\Psi,\mathrm b}^{\natural}\tilde{F}\tilde U_{\Psi,\mathrm b}$, not by the rotor conjugation $\tilde U_{\mathrm{lor}}\tilde{F}\tilde U_{\mathrm{lor}}{}^{*}$, and the velocity field is recovered as the boost of the Coulomb field by that law.
 
@@ -387,7 +387,7 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 | $\tilde{V}_{\Phi}/\gamma = ic\,e_t+\vec v(t'_{\mathrm{ret}})$ | Retarded coordinate velocity, the four-velocity divided by $\gamma$ |
 | $iR\,e_t+\vec R$ | Retarded null separation, in $\mathbb{B}_{\Phi}$ |
 | $\tilde\Lambda_{\Phi,\mathrm{ret}} = (\tilde\nabla_\Phi)^{\natural}t'_{\mathrm{ret}} = \frac{1}{c\kappa}(-ie_t+\vec u_R)$ | Gradient of the retarded time (null, hence a zero divisor and not $*$-unitary) |
-| $\tilde{\mathcal L}_{\Phi,\mathrm{ret}} = \tilde{\mathcal L}_{\Phi}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ | Future null four-vector of the retarded pure state; the null factor of $\tilde\Lambda_{\Phi,\mathrm{ret}}$ is $-2\tilde{\mathcal L}_{\Phi,\mathrm{ret}}$ |
+| $\tilde{\mathcal L}_{\Phi,\mathrm{ret}} = \tilde{\mathcal L}_{\Phi}(\vec u_R) = i\tilde\Pi_{\mathrm{id}}(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ | Future null four-vector of the retarded pure state; the null factor of $\tilde\Lambda_{\Phi,\mathrm{ret}}$ is $-2\tilde{\mathcal L}_{\Phi,\mathrm{ret}}$ |
 | $\tilde{F}_v, \tilde{F}_a$ | Velocity and acceleration (radiation) parts of the field |
 | $\vec E_v, \vec E_a$ | Their electric components; $\vec B = \frac{1}{c}\vec u_R\times\vec E$ |
 | $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd},b}}{2}+i\sinh\frac{\theta_{\mathrm{rpd},b}}{2}\vec u$ | Boost rotor; carries lab to the frame moving with $+\vec v_b$ |

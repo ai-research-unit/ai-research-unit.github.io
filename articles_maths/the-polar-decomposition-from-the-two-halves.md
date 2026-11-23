@@ -135,7 +135,7 @@ with the norm the Hilbert–Schmidt norm. The computation confirms the minimum a
 **At $n=2$ the decomposition is a stretch of the two corners and a phase.** In the Peirce frame the stretch is
 
 $$
-P=\sigma_+\tilde\Pi_++\sigma_-\tilde\Pi_-,\qquad \sigma_\pm>0,
+P=\sigma_+\tilde\Pi_{\mathrm{id},++}\sigma_-\tilde\Pi_{\mathrm{id},-},\qquad \sigma_\pm>0,
 $$
 
 and the rotation is a phase times the identity in each corner, so the polar decomposition of a biquaternion is the pair of its corner moduli and the pair of its corner phases. The computation confirms the decomposition at $n=2$, and it shows that the two singular values are the two corner moduli.

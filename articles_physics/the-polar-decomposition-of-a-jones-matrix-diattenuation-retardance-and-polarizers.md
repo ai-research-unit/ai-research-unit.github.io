@@ -93,8 +93,8 @@ The pair is unique once the projections of $\tilde Q_{\mathrm p}$ are fixed to b
 The diattenuator is the factor that transmits the two eigenpolarizations with different amplitudes. Its spectral decomposition is
 
 $$
-\tilde J_{\mathrm{opt},H}=T_1\tilde\Pi_+(\vec u_H)+T_2\tilde\Pi_-(\vec u_H),\qquad
-\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u),\qquad T_1\ge T_2\ge0,
+\tilde J_{\mathrm{opt},H}=T_1\tilde\Pi_{\mathrm{id},+}(\vec u_H)+T_2\tilde\Pi_{\mathrm{id},-}(\vec u_H),\qquad
+\tilde\Pi_{\mathrm{id},\pm}(\vec u)=\tfrac12(e_t\pm i\vec u),\qquad T_1\ge T_2\ge0,
 $$
 
 with orthogonal eigenpolarizations $\vec u_H$ and $-\vec u_H$. The eigenvalues $T_1,T_2$ are the **principal amplitude transmissions**; their squares are the principal intensity transmissions. The mean intensity transmission is $\bar T=\tfrac12(T_1^{2}+T_2^{2})$, and the **diattenuation** is
@@ -127,7 +127,7 @@ The half-angle is the boost-factor convention: the eigenvalues are the exponenti
 The retarder is the $*$-unitary factor. Its spectral decomposition is
 
 $$
-\tilde J_{\mathrm{opt},0}=\exp(i\theta_{\mathrm{pha},1})\tilde\Pi_+(\vec u_U)+\exp(i\theta_{\mathrm{pha},2})\tilde\Pi_-(\vec u_U),
+\tilde J_{\mathrm{opt},0}=\exp(i\theta_{\mathrm{pha},1})\tilde\Pi_{\mathrm{id},+}(\vec u_U)+\exp(i\theta_{\mathrm{pha},2})\tilde\Pi_{\mathrm{id},-}(\vec u_U),
 $$
 
 and the **retardance** is the phase difference
@@ -154,29 +154,29 @@ The rotor is a real quaternion of unit norm, and its eigenvalues are $\exp(\pm i
 
 ## Polarizers and the Cone
 
-An ideal polarizer has a rank-one Jones matrix. In the algebra it is an idempotent, $\tilde J_{\mathrm{opt}}=\tilde\Pi(\vec u)$ up to a scale, and its norm vanishes:
+An ideal polarizer has a rank-one Jones matrix. In the algebra it is an idempotent, $\tilde J_{\mathrm{opt}}=\tilde\Pi_{\mathrm{id}}(\vec u)$ up to a scale, and its norm vanishes:
 
 $$
-\tilde\Pi(\vec u)^{2}=\tilde\Pi(\vec u),\qquad
-\tilde\Pi(\vec u)^{*}=\tilde\Pi(\vec u),\qquad
-\langle\tilde\Pi(\vec u)\rangle_{\natural}=0 .
+\tilde\Pi_{\mathrm{id}}(\vec u)^{2}=\tilde\Pi_{\mathrm{id}}(\vec u),\qquad
+\tilde\Pi_{\mathrm{id}}(\vec u)^{*}=\tilde\Pi_{\mathrm{id}}(\vec u),\qquad
+\langle\tilde\Pi_{\mathrm{id}}(\vec u)\rangle_{\natural}=0 .
 $$
 
-It is a zero divisor: it kills the orthogonal polarization and cannot be inverted. With $\tilde\Pi(\vec u)=\tilde\Pi_+(\vec u)=\tfrac12(e_t+i\vec u)$, the scalar $\tfrac12$ normalisation makes it a pure state of the informational sector, and the same element is read as a polarizer here and as a pure state there.
+It is a zero divisor: it kills the orthogonal polarization and cannot be inverted. With $\tilde\Pi_{\mathrm{id}}(\vec u)=\tilde\Pi_{\mathrm{id},+}(\vec u)=\tfrac12(e_t+i\vec u)$, the scalar $\tfrac12$ normalisation makes it a pure state of the informational sector, and the same element is read as a polarizer here and as a pure state there.
 
 The classical Cartan pair does not exist at the polarizer, because $\tilde J_{\mathrm{opt},H}^{-1}$ does not. The generalized pair does:
 
 $$
-\tilde H_{\Psi,\mathrm{pos}}=\tilde\Pi(\vec u),\qquad
-\tilde Q_{\mathrm p}=\tilde\Pi(\vec u),\qquad
-\tilde J_{\mathrm{opt}}=\tilde\Pi(\vec u)\tilde\Pi(\vec u).
+\tilde H_{\Psi,\mathrm{pos}}=\tilde\Pi_{\mathrm{id}}(\vec u),\qquad
+\tilde Q_{\mathrm p}=\tilde\Pi_{\mathrm{id}}(\vec u),\qquad
+\tilde J_{\mathrm{opt}}=\tilde\Pi_{\mathrm{id}}(\vec u)\tilde\Pi_{\mathrm{id}}(\vec u).
 $$
 
-The positive factor is the final projection and the partial isometry is the same projection; both are rank one. A rank-one element with different input and output rays is $\tilde J_{\mathrm{opt}}=\sigma\lvert f\rangle\langle i\rvert$ with $\sigma>0$ and normalised rays; it has $\tilde H_{\Psi,\mathrm{pos}}=\sigma\tilde\Pi_f$ and $\tilde Q_{\mathrm p}=\lvert f\rangle\langle i\rvert$, a partial isometry from the input ray to the output ray. It is a polarizer along $i$ followed by a $*$-unitary transformation that carries $i$ to $f$, with the amplitude $\sigma$, and the two projections are the two pure states that the element connects.
+The positive factor is the final projection and the partial isometry is the same projection; both are rank one. A rank-one element with different input and output rays is $\tilde J_{\mathrm{opt}}=\sigma\lvert f\rangle\langle i\rvert$ with $\sigma>0$ and normalised rays; it has $\tilde H_{\Psi,\mathrm{pos}}=\sigma\tilde\Pi_{\mathrm{id},f}$ and $\tilde Q_{\mathrm p}=\lvert f\rangle\langle i\rvert$, a partial isometry from the input ray to the output ray. It is a polarizer along $i$ followed by a $*$-unitary transformation that carries $i$ to $f$, with the amplitude $\sigma$, and the two projections are the two pure states that the element connects.
 
 **Absorption is monotone.** The rank of a product cannot exceed the rank of a factor, so a polarizer anywhere in a sequence leaves the output rank one. The light that the polarizer absorbs is not recovered by anything downstream; the subsequent elements can rotate and attenuate the surviving polarization but cannot restore the killed component. This is the optical form of the statement that a zero divisor forgets a direction.
 
-**The optical parameters at the wall.** A polarizer has $D=1$ and no retardance. It is the limit of a diattenuator as $T_2\to0$, and the limit is singular: inside the cone the pair of a Hermitian diattenuator is $(\tilde J_{\mathrm{opt},H},\tilde J_{\mathrm{opt},0})=(\tilde J_{\mathrm{opt}},e_t)$, while at the wall it is $(T_1\tilde\Pi_1,\tilde\Pi_1)$. The $*$-unitary factor jumps from the identity to a projection. The discontinuity is the rank drop, and it is the same discontinuity that the generalized pairing records on the cone.
+**The optical parameters at the wall.** A polarizer has $D=1$ and no retardance. It is the limit of a diattenuator as $T_2\to0$, and the limit is singular: inside the cone the pair of a Hermitian diattenuator is $(\tilde J_{\mathrm{opt},H},\tilde J_{\mathrm{opt},0})=(\tilde J_{\mathrm{opt}},e_t)$, while at the wall it is $(T_1\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},1})$. The $*$-unitary factor jumps from the identity to a projection. The discontinuity is the rank drop, and it is the same discontinuity that the generalized pairing records on the cone.
 
 ## Relation to the Mueller Matrix
 
@@ -260,7 +260,7 @@ $$
 
 The Hermitian positive factor is the **diattenuator**. Its eigenvalues $T_1\ge T_2\ge0$ are the principal amplitude transmissions, its eigenpolarizations are the principal axes, its mean intensity transmission is $\tfrac12(T_1^{2}+T_2^{2})$, and its diattenuation is $D=(T_1^{2}-T_2^{2})/(T_1^{2}+T_2^{2})=\tanh\theta_{\mathrm{rpd}}$, where $\theta_{\mathrm{rpd}}$ is the rapidity of the amplitude read as a boost. The $*$-unitary factor is the **retarder**. Its eigenvalues are $\exp(i\theta_{\mathrm{pha},1,2})$, its eigenpolarizations are the retarder axes, its retardance is $\theta_{\mathrm{rat}}=\theta_{\mathrm{pha},1}-\theta_{\mathrm{pha},2}$, and its central phase is the unobservable global phase; the retardance is twice the exponent angle of the real rotor $\tilde u_{\mathrm r}$ in $\tilde J_{\mathrm{opt},0}=\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r}$.
 
-The polarizer is the boundary case. It is a rank-one element, hence a zero divisor with $\langle\tilde J_{\mathrm{opt}}\rangle_{\natural}=0$, hence non-invertible; the classical pair does not exist, and the generalized pair gives $\tilde H_{\Psi,\mathrm{pos}}=\tilde\Pi_f$ and $\tilde Q_{\mathrm p}=\lvert f\rangle\langle i\rvert$. Its diattenuation is one and its retardance is undefined. The operator-to-state map reads the same structure: for unpolarized input the output state is $\tilde J_{\mathrm{opt}}\tilde J_{\mathrm{opt}}^{*}/2\langle\tilde J_{\mathrm{opt}},\tilde J_{\mathrm{opt}}\rangle_{*}$, its Bloch length is $D$, and its purity is $\tfrac12(1+D^{2})$. A retarder alone leaves that state maximally mixed.
+The polarizer is the boundary case. It is a rank-one element, hence a zero divisor with $\langle\tilde J_{\mathrm{opt}}\rangle_{\natural}=0$, hence non-invertible; the classical pair does not exist, and the generalized pair gives $\tilde H_{\Psi,\mathrm{pos}}=\tilde\Pi_{\mathrm{id},f}$ and $\tilde Q_{\mathrm p}=\lvert f\rangle\langle i\rvert$. Its diattenuation is one and its retardance is undefined. The operator-to-state map reads the same structure: for unpolarized input the output state is $\tilde J_{\mathrm{opt}}\tilde J_{\mathrm{opt}}^{*}/2\langle\tilde J_{\mathrm{opt}},\tilde J_{\mathrm{opt}}\rangle_{*}$, its Bloch length is $D$, and its purity is $\tfrac12(1+D^{2})$. A retarder alone leaves that state maximally mixed.
 
 ## Summary of Notation
 
@@ -278,7 +278,7 @@ The polarizer is the boundary case. It is a rank-one element, hence a zero divis
 | $\theta_{\mathrm{pha}}$ | the central phase of the $*$-unitary factor |
 | $\tilde u_{\mathrm r}$ | the real rotor of the retarder, angle $\theta_{\mathrm{rte}}$ |
 | $\theta_{\mathrm{rte}}:=\theta_{\mathrm{rat}}/2$ | the exponent angle of the rotor, half the retardance |
-| $\tilde\Pi_\pm(\vec u)$ | the spectral projectors $\tfrac12(e_t\pm i\vec u)$; $\tilde\Pi_+$ is the ideal polarizer |
+| $\tilde\Pi_{\mathrm{id},\pm}(\vec u)$ | the spectral projectors $\tfrac12(e_t\pm i\vec u)$; $\tilde\Pi_{\mathrm{id},+}$ is the ideal polarizer |
 | $\langle\tilde J_{\mathrm{opt}}\rangle_{\natural}$ | the biquaternion norm, equal to $\det\mathsf{J}$ |
 
 ## Further Reading

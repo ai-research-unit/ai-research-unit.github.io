@@ -8,49 +8,49 @@ The idempotents, their classification and the bijection with the roots of $-1$ a
 
 The article owns the Peirce decomposition of an element, the identification of the two halves, the diagonal model in which the halves are the two entries of a diagonal matrix, the split fractal and its product structure, and the statement that the full biquaternion fractal is not the product.
 
-**Standing convention.** $\tilde\Pi$ is a primitive idempotent, $\tilde\Pi'=e_t-\tilde\Pi$ its complement, and the four Peirce components of an element $\tilde Q$ are
+**Standing convention.** $\tilde\Pi_{\mathrm{id}}$ is a primitive idempotent, $\tilde\Pi_{\mathrm{id}}'=e_t-\tilde\Pi_{\mathrm{id}}$ its complement, and the four Peirce components of an element $\tilde Q$ are
 
 $$
-\tilde Q_{11}=\tilde\Pi\tilde Q\tilde\Pi,\quad \tilde Q_{12}=\tilde\Pi\tilde Q\tilde\Pi',\quad \tilde Q_{21}=\tilde\Pi'\tilde Q\tilde\Pi,\quad \tilde Q_{22}=\tilde\Pi'\tilde Q\tilde\Pi',
+\tilde Q_{11}=\tilde\Pi_{\mathrm{id}}\tilde Q\tilde\Pi_{\mathrm{id}},\quad \tilde Q_{12}=\tilde\Pi_{\mathrm{id}}\tilde Q\tilde\Pi_{\mathrm{id}}',\quad \tilde Q_{21}=\tilde\Pi_{\mathrm{id}}'\tilde Q\tilde\Pi_{\mathrm{id}},\quad \tilde Q_{22}=\tilde\Pi_{\mathrm{id}}'\tilde Q\tilde\Pi_{\mathrm{id}}',
 $$
 
 so that $\tilde Q=\tilde Q_{11}+\tilde Q_{12}+\tilde Q_{21}+\tilde Q_{22}$. The family is $F_{\tilde Q_3}(\tilde Q)=\tilde Q^2+\tilde Q_3$.
 
 ## The Peirce Components and the Halves
 
-**Proposition (the components are the matrix entries).** Under the matrix realization with the standard idempotents $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the two associated idempotents of the root $i\vec e_z$ of $+1$, $(i\vec e_z)^2=e_t$,
+**Proposition (the components are the matrix entries).** Under the matrix realization with the standard idempotents $\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec e_z)$, the two associated idempotents of the root $i\vec e_z$ of $+1$, $(i\vec e_z)^2=e_t$,
 
 $$
-\mathsf{M}_2(\tilde\Pi_+)=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad \mathsf{M}_2(\tilde\Pi_-)=\begin{pmatrix}0&0\\0&1\end{pmatrix},
+\mathsf{M}_2(\tilde\Pi_{\mathrm{id},+})=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad \mathsf{M}_2(\tilde\Pi_{\mathrm{id},-})=\begin{pmatrix}0&0\\0&1\end{pmatrix},
 $$
 
-and the four Peirce components of $\tilde Q$ with respect to $\tilde\Pi_+$ are the four entries of $\mathsf{M}_2(\tilde Q)$,
+and the four Peirce components of $\tilde Q$ with respect to $\tilde\Pi_{\mathrm{id},+}$ are the four entries of $\mathsf{M}_2(\tilde Q)$,
 
 $$
 \mathsf{M}_2(\tilde Q)=\begin{pmatrix}\mathsf{M}_2(\tilde Q_{11})&\mathsf{M}_2(\tilde Q_{12})\\ \mathsf{M}_2(\tilde Q_{21})&\mathsf{M}_2(\tilde Q_{22})\end{pmatrix} .
 $$
 
-**Proof.** The images of the standard idempotents are computed from $\mathsf{M}_2(\vec e_z)=\left(\begin{smallmatrix}-i&0\\0&i\end{smallmatrix}\right)$: the matrix $\mathsf{M}_2(\tfrac12(e_t+i\vec e_z))=\tfrac12\left(\begin{smallmatrix}1+1&0\\0&1-1\end{smallmatrix}\right)$ is the first matrix unit, and the second is its complement. Then $\mathsf{M}_2(\tilde\Pi\tilde Q\tilde\Pi')$ is the product of the corresponding matrix units, which is the off-diagonal entry.
+**Proof.** The images of the standard idempotents are computed from $\mathsf{M}_2(\vec e_z)=\left(\begin{smallmatrix}-i&0\\0&i\end{smallmatrix}\right)$: the matrix $\mathsf{M}_2(\tfrac12(e_t+i\vec e_z))=\tfrac12\left(\begin{smallmatrix}1+1&0\\0&1-1\end{smallmatrix}\right)$ is the first matrix unit, and the second is its complement. Then $\mathsf{M}_2(\tilde\Pi_{\mathrm{id}}\tilde Q\tilde\Pi_{\mathrm{id}}')$ is the product of the corresponding matrix units, which is the off-diagonal entry.
 
-**Corollary (the two halves and the two couplings).** The elements of the form $A\tilde\Pi+B\tilde\Pi'$ have diagonal matrices $\operatorname{diag}(A,B)$; the elements of the form $A\tilde\Pi+B\tilde\Pi'$ together with the two off-diagonal components describe the generic element. **The two halves are the two diagonal entries; the coupling is the pair of off-diagonal entries.**
+**Corollary (the two halves and the two couplings).** The elements of the form $A\tilde\Pi_{\mathrm{id}}+B\tilde\Pi_{\mathrm{id}}'$ have diagonal matrices $\operatorname{diag}(A,B)$; the elements of the form $A\tilde\Pi_{\mathrm{id}}+B\tilde\Pi_{\mathrm{id}}'$ together with the two off-diagonal components describe the generic element. **The two halves are the two diagonal entries; the coupling is the pair of off-diagonal entries.**
 
 ## The Split Subalgebra and Its Fractal
 
-**Theorem (the split fractal).** Let $\tilde Q_3=C_1\tilde\Pi+C_2\tilde\Pi'$ be a parameter in the idempotent plane $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$. Then $W_{\tilde\Pi}$ is a commutative subalgebra isomorphic to $\mathbb{C}\oplus\mathbb{C}$, the restriction of $F_{\tilde Q_3}$ to it is
+**Theorem (the split fractal).** Let $\tilde Q_3=C_1\tilde\Pi_{\mathrm{id}}+C_2\tilde\Pi_{\mathrm{id}}'$ be a parameter in the idempotent plane $W_{\tilde\Pi_{\mathrm{id}}}=\mathbb{C}\tilde\Pi_{\mathrm{id}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}'$. Then $W_{\tilde\Pi_{\mathrm{id}}}$ is a commutative subalgebra isomorphic to $\mathbb{C}\oplus\mathbb{C}$, the restriction of $F_{\tilde Q_3}$ to it is
 
 $$
-\boxed{\;A\tilde\Pi+B\tilde\Pi'\longmapsto(A^2+C_1)\tilde\Pi+(B^2+C_2)\tilde\Pi'\;},
+\boxed{\;A\tilde\Pi_{\mathrm{id}}+B\tilde\Pi_{\mathrm{id}}'\longmapsto(A^2+C_1)\tilde\Pi_{\mathrm{id}}+(B^2+C_2)\tilde\Pi_{\mathrm{id}}'\;},
 $$
 
 and the restriction of the filled Julia set and the Julia set to the plane are
 
 $$
-\boxed{\;\mathcal K_{\tilde Q_3}\cap W_{\tilde\Pi}=\bigl(K_{C_1}\tilde\Pi\bigr)\oplus\bigl(K_{C_2}\tilde\Pi'\bigr), \qquad J_{\tilde Q_3}\cap W_{\tilde\Pi}=\partial\bigl(K_{C_1}\times K_{C_2}\bigr)\;},
+\boxed{\;\mathcal K_{\tilde Q_3}\cap W_{\tilde\Pi_{\mathrm{id}}}=\bigl(K_{C_1}\tilde\Pi_{\mathrm{id}}\bigr)\oplus\bigl(K_{C_2}\tilde\Pi_{\mathrm{id}}'\bigr), \qquad J_{\tilde Q_3}\cap W_{\tilde\Pi_{\mathrm{id}}}=\partial\bigl(K_{C_1}\times K_{C_2}\bigr)\;},
 $$
 
 the product of two complex filled Julia sets. The **split fractal** is this product, and it is the fractal of the diagonal model.
 
-**Proof.** $\tilde\Pi^2=\tilde\Pi$, $\tilde\Pi'^2=\tilde\Pi'$, $\tilde\Pi\tilde\Pi'=0$ give the coordinatewise product and the split map; the two coordinates do not interact, so the orbit is the pair of complex orbits and the locus is the product. The boundary formula is the boundary of a product.
+**Proof.** $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}'^2=\tilde\Pi_{\mathrm{id}}'$, $\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}'=0$ give the coordinatewise product and the split map; the two coordinates do not interact, so the orbit is the pair of complex orbits and the locus is the product. The boundary formula is the boundary of a product.
 
 **Remark (the diagonal model).** In the model the split fractal is the set of diagonal matrices $\operatorname{diag}(\lambda_1,\lambda_2)$ with $\lambda_j$ in the complex filled Julia set $K_{C_j}$; the parameter is the diagonal matrix $\operatorname{diag}(C_1,C_2)$ and the map is the entrywise square plus the parameter. **The diagonal matrices carry exactly the product of two complex quadratic dynamics, and they are the largest subalgebra on which the biquaternion dynamics is a product.** The off-diagonal entries are zero on the plane and are the coupling off it.
 
@@ -66,9 +66,9 @@ Hence the two diagonal entries evolve by $a\mapsto a^2+bc$ and $d\mapsto cb+d^2$
 
 **Proof.** Direct multiplication of two two-by-two matrices.
 
-**Theorem (the product description is exactly the plane).** The idempotent plane is invariant under $F_{\tilde Q_3}$ if and only if $\tilde Q_3\in W_{\tilde\Pi}$, and in that case the Julia set restricted to the plane is the boundary of $K_{C_1}\times K_{C_2}$. If $\tilde Q_3\notin W_{\tilde\Pi}$ the plane is not invariant and no product $J_{C_1}\times J_{C_2}$ of two complex Julia sets describes $J_{\tilde Q_3}$: the two halves are coupled through the trace and the off-diagonal product.
+**Theorem (the product description is exactly the plane).** The idempotent plane is invariant under $F_{\tilde Q_3}$ if and only if $\tilde Q_3\in W_{\tilde\Pi_{\mathrm{id}}}$, and in that case the Julia set restricted to the plane is the boundary of $K_{C_1}\times K_{C_2}$. If $\tilde Q_3\notin W_{\tilde\Pi_{\mathrm{id}}}$ the plane is not invariant and no product $J_{C_1}\times J_{C_2}$ of two complex Julia sets describes $J_{\tilde Q_3}$: the two halves are coupled through the trace and the off-diagonal product.
 
-**Proof.** $F_{\tilde Q_3}(W_{\tilde\Pi})\subset W_{\tilde\Pi}$ requires the off-diagonal entries of $\tilde Q_3$ to vanish, i.e. $\tilde Q_3\in W_{\tilde\Pi}$; for such a parameter the set is the product by the theorem above. For any other parameter the plane is not invariant, and the entry formula of the previous proposition exhibits the coupling: the diagonal entries of $\mathsf{M}_2(\tilde Q^2)$ contain the off-diagonal product $bc$ and the off-diagonal entries contain the trace $a+d$, so the two halves are not independent and their orbits are not the orbits of a pair of one-variable maps. A set that is a product of two one-variable Julia sets would give independent halves, and no such description is available.
+**Proof.** $F_{\tilde Q_3}(W_{\tilde\Pi_{\mathrm{id}}})\subset W_{\tilde\Pi_{\mathrm{id}}}$ requires the off-diagonal entries of $\tilde Q_3$ to vanish, i.e. $\tilde Q_3\in W_{\tilde\Pi_{\mathrm{id}}}$; for such a parameter the set is the product by the theorem above. For any other parameter the plane is not invariant, and the entry formula of the previous proposition exhibits the coupling: the diagonal entries of $\mathsf{M}_2(\tilde Q^2)$ contain the off-diagonal product $bc$ and the off-diagonal entries contain the trace $a+d$, so the two halves are not independent and their orbits are not the orbits of a pair of one-variable maps. A set that is a product of two one-variable Julia sets would give independent halves, and no such description is available.
 
 **Remark (the reconstruction is obstructed).** The pair of halves is not enough to determine the orbit, because the coupling term $bc$ enters the diagonal dynamics; the reconstruction of the biquaternion fractal from the split fractal therefore fails, and the failure is quantitative: the coupling is bilinear in the off-diagonal entries and can be small in a slice and large in the fractal. **The split fractal is an exact slice and not a decomposition.**
 
@@ -77,18 +77,18 @@ Hence the two diagonal entries evolve by $a\mapsto a^2+bc$ and $d\mapsto cb+d^2$
 **Proposition (the centrality of the split idempotents).** In the split-biquaternion algebra the idempotents
 
 $$
-\tilde\Pi_{3,4}=\tfrac12(e_t\pm j)
+\tilde\Pi_{\mathrm{id},3,4}=\tfrac12(e_t\pm j)
 $$
 
 are **central**, $j$ being the central element with $j^2=1$, and the algebra factors as the direct sum of two ideals,
 
 $$
-\boxed{\;\mathbb{B}_{\mathrm{spl}}=\mathbb{H}\tilde\Pi_3\oplus\mathbb{H}\tilde\Pi_4 , \qquad \mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}\;},
+\boxed{\;\mathbb{B}_{\mathrm{spl}}=\mathbb{H}\tilde\Pi_{\mathrm{id},3}\oplus\mathbb{H}\tilde\Pi_{\mathrm{id},4} , \qquad \mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}\;},
 $$
 
 through central idempotents, so that the decomposition is one of the algebra and of every element and splits the dynamics globally, not on a slice. Then every quadratic map is the pair of two quaternion quadratic maps, the fractal is the product of two quaternion Julia sets, and there is no coupling term. **The biquaternion case is the case of non-central idempotents: the splitting is real but local; the split-biquaternion case is the case of central idempotents: the splitting is global.** The contrast is developed in *The Clifford Decomposition of the Split-Biquaternion Fractals*.
 
-**Proof.** $j$ is central with $j^2=1$, so $\tilde\Pi_{3,4}$ are central idempotents with $\tilde\Pi_3+\tilde\Pi_4=e_t$ and $\tilde\Pi_3\tilde\Pi_4=0$; the Chinese-remainder decomposition of the algebra follows. In $\mathbb{B}$, by contrast, no non-trivial central idempotent exists because the algebra is simple (*Peirce Decompositions of the Biquaternion Algebra*).
+**Proof.** $j$ is central with $j^2=1$, so $\tilde\Pi_{\mathrm{id},3,4}$ are central idempotents with $\tilde\Pi_{\mathrm{id},3+}\tilde\Pi_{\mathrm{id},4}=e_t$ and $\tilde\Pi_{\mathrm{id},3}\tilde\Pi_{\mathrm{id},4}=0$; the Chinese-remainder decomposition of the algebra follows. In $\mathbb{B}$, by contrast, no non-trivial central idempotent exists because the algebra is simple (*Peirce Decompositions of the Biquaternion Algebra*).
 
 ## Summary
 
@@ -98,14 +98,14 @@ The Peirce decomposition of a biquaternion with respect to a primitive idempoten
 
 | symbol | meaning |
 |---|---|
-| $\tilde\Pi$, $\tilde\Pi'=e_t-\tilde\Pi$ | a primitive idempotent and its complement |
-| $\tilde\Pi_+,\tilde\Pi_-$ | the standard idempotents $\tfrac12(e_t\pm i\vec e_z)$ |
+| $\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}'=e_t-\tilde\Pi_{\mathrm{id}}$ | a primitive idempotent and its complement |
+| $\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-}$ | the standard idempotents $\tfrac12(e_t\pm i\vec e_z)$ |
 | $\tilde Q_{11},\tilde Q_{12},\tilde Q_{21},\tilde Q_{22}$ | the four Peirce components |
-| $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ | the idempotent plane |
+| $W_{\tilde\Pi_{\mathrm{id}}}=\mathbb{C}\tilde\Pi_{\mathrm{id}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}'$ | the idempotent plane |
 | $K_{C_1}\times K_{C_2}$ | the split fractal, a product of complex filled Julia sets |
 | $a,b,c,d$ | the four matrix entries |
 | $a+d$ | the trace, the coupling multiplier |
-| $\tilde\Pi_{3,4}=\tfrac12(e_t\pm j)$ | the central idempotents of the split-biquaternion algebra |
+| $\tilde\Pi_{\mathrm{id},3,4}=\tfrac12(e_t\pm j)$ | the central idempotents of the split-biquaternion algebra |
 
 ## Further Reading
 

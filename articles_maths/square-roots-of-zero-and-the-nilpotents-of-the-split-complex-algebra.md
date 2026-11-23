@@ -29,13 +29,13 @@ A **root of $0$** is an element $Ζ\in\mathbb{C}_{\mathrm{spl}}$ with $Ζ^{2}=0$
 Write the root in the idempotent coordinates,
 
 $$
-Ζ=Ζ_{+}\Pi_{+}+Ζ_{-}\Pi_{-},\qquad Ζ_{\pm}=x\pm x',
+Ζ=Ζ_{+}\Pi_{\mathrm{id},+}+Ζ_{-}\Pi_{\mathrm{id},-},\qquad Ζ_{\pm}=x\pm x',
 $$
 
 with $x,x'\in\mathbb{R}$. The square is
 
 $$
-Ζ^{2}=Ζ_{+}^{2}\Pi_{+}+Ζ_{-}^{2}\Pi_{-},
+Ζ^{2}=Ζ_{+}^{2}\Pi_{\mathrm{id},+}+Ζ_{-}^{2}\Pi_{\mathrm{id},-},
 $$
 
 so the equation $Ζ^{2}=0$ is equivalent to the **pair of real equations**
@@ -100,19 +100,19 @@ The word **nilpotent** is defined for a nonzero element in *Definitions for the 
 
 ### The Definition
 
-An element $\Upsilon\in\mathbb{C}_{\mathrm{spl}}$ is **nilpotent** when $\Upsilon\neq0$ and there is an integer $n\ge1$ with
+An element $\Pi_{\mathrm{nil}}\in\mathbb{C}_{\mathrm{spl}}$ is **nilpotent** when $\Pi_{\mathrm{nil}}\neq0$ and there is an integer $n\ge1$ with
 
 $$
-\Upsilon^{n}=0 .
+\Pi_{\mathrm{nil}}^{n}=0 .
 $$
 
-The smallest such $n$ is the **index of nilpotency** of $\Upsilon$. A **square-zero element** is an element $Ζ$ with $Ζ^{2}=0$; the nonzero square-zero elements are exactly the nilpotents of index two.
+The smallest such $n$ is the **index of nilpotency** of $\Pi_{\mathrm{nil}}$. A **square-zero element** is an element $Ζ$ with $Ζ^{2}=0$; the nonzero square-zero elements are exactly the nilpotents of index two.
 
 ### The Criterion
 
 **Theorem (the criterion).** There is **no** nilpotent in $\mathbb{C}_{\mathrm{spl}}$, and the only square-zero element is $0$.
 
-**Proof.** If $\Upsilon^{n}=0$ for some $n\ge1$, write $\Upsilon=\Upsilon_{+}\Pi_{+}+\Upsilon_{-}\Pi_{-}$; then $\Upsilon^{n}=\Upsilon_{+}^{n}\Pi_{+}+\Upsilon_{-}^{n}\Pi_{-}$, so $\Upsilon_{+}^{n}=0$ and $\Upsilon_{-}^{n}=0$. Over $\mathbb{R}$ this gives $\Upsilon_{+}=\Upsilon_{-}=0$, hence $\Upsilon=0$, contrary to the definition of a nilpotent. So there is no nilpotent. If $\Upsilon^{2}=0$ the same computation with $n=2$ gives $\Upsilon=0$.
+**Proof.** If $\Pi_{\mathrm{nil}}^{n}=0$ for some $n\ge1$, write $\Pi_{\mathrm{nil}}=\Pi_{\mathrm{nil},+}\Pi_{\mathrm{id},+}+\Pi_{\mathrm{nil},-}\Pi_{\mathrm{id},-}$; then $\Pi_{\mathrm{nil}}^{n}=\Pi_{\mathrm{nil},+}^{n}\Pi_{\mathrm{id},+}+\Pi_{\mathrm{nil},-}^{n}\Pi_{\mathrm{id},-}$, so $\Pi_{\mathrm{nil},+}^{n}=0$ and $\Pi_{\mathrm{nil},-}^{n}=0$. Over $\mathbb{R}$ this gives $\Pi_{\mathrm{nil},+}=\Pi_{\mathrm{nil},-}=0$, hence $\Pi_{\mathrm{nil}}=0$, contrary to the definition of a nilpotent. So there is no nilpotent. If $\Pi_{\mathrm{nil}}^{2}=0$ the same computation with $n=2$ gives $\Pi_{\mathrm{nil}}=0$.
 
 **Corollary (the algebra is reduced).** The plain algebra has no nonzero nilpotent element.
 
@@ -121,16 +121,16 @@ The smallest such $n$ is the **index of nilpotency** of $\Upsilon$. A **square-z
 The nilpotent cone is the set of square-zero elements,
 
 $$
-\mathcal{N}_{0}=\{\Upsilon:\Upsilon^{2}=0\}=\{0\},
+\mathcal{N}_{0}=\{\Pi_{\mathrm{nil}}:\Pi_{\mathrm{nil}}^{2}=0\}=\{0\},
 $$
 
 of real dimension $0$. It is not a cone in the usual sense: it is the origin, the apex alone, with no ray. The **nonzero nilpotent cone** is empty. In the classification of the elements by the algebraic norm, the origin is the only element of norm $0$ that is not a zero divisor; the zero divisors are the other elements of the null cone, and the nilpotent cone lies at the apex of that null cone.
 
 ### Index Two
 
-**Proposition (index).** There is no element of index two or higher: $\Upsilon^{2}=0$ already forces $\Upsilon=0$.
+**Proposition (index).** There is no element of index two or higher: $\Pi_{\mathrm{nil}}^{2}=0$ already forces $\Pi_{\mathrm{nil}}=0$.
 
-**Proof.** The computation of the criterion with $n=2$ gives $\Upsilon=0$. If one assigns index $1$ to the zero element, then $0$ is the only element with a finite index; no nonzero element has an index.
+**Proof.** The computation of the criterion with $n=2$ gives $\Pi_{\mathrm{nil}}=0$. If one assigns index $1$ to the zero element, then $0$ is the only element with a finite index; no nonzero element has an index.
 
 The statement is the sharp form of the absence: the usual hierarchy of nilpotents of index $2,3,\dots$ is empty at the first step.
 
@@ -146,7 +146,7 @@ The zero divisors are the nonzero elements of the null cone, $\mathcal{Z}=\mathc
 
 **No nilpotent is an idempotent, vacuously; the nilpotent set is empty, and the only square-zero idempotent is the origin, which is not a nilpotent.**
 
-If $\Upsilon$ were both nilpotent and idempotent, then $\Upsilon^{2}=\Upsilon$ and $\Upsilon^{n}=0$ would give $\Upsilon=\Upsilon^{2}=\cdots=\Upsilon^{n}=0$, contradicting $\Upsilon\neq0$. In $\mathbb{C}_{\mathrm{spl}}$ the idempotents are $0,1,\Pi_{+},\Pi_{-}$, and the nilpotent set is empty, so the intersection is empty; the origin is the only element that is a square-zero element and an idempotent, and it is not a nilpotent.
+If $\Pi_{\mathrm{nil}}$ were both nilpotent and idempotent, then $\Pi_{\mathrm{nil}}^{2}=\Pi_{\mathrm{nil}}$ and $\Pi_{\mathrm{nil}}^{n}=0$ would give $\Pi_{\mathrm{nil}}=\Pi_{\mathrm{nil}}^{2}=\cdots=\Pi_{\mathrm{nil}}^{n}=0$, contradicting $\Pi_{\mathrm{nil}}\neq0$. In $\mathbb{C}_{\mathrm{spl}}$ the idempotents are $0,1,\Pi_{\mathrm{id},+},\Pi_{\mathrm{id},-}$, and the nilpotent set is empty, so the intersection is empty; the origin is the only element that is a square-zero element and an idempotent, and it is not a nilpotent.
 
 ### The Conjugation
 
@@ -172,7 +172,7 @@ A nilpotent ideal is an ideal $I$ with $I^{n}=0$ for some $n$; since every nonze
 
 **Every distinguished subspace contains $0$ and no nonzero nilpotent.**
 
-The real line $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, the split imaginary line $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, the two idempotent lines $\mathbb{R}\Pi_{\pm}$, and the whole algebra all have the same square-zero set, $\{0\}$. On the real line, $q^{2}=0$ forces $q=0$; on the imaginary line, $-q'^{2}=0$ forces $q'=0$; on an idempotent line, $(\lambda\Pi_{\pm})^{2}=\lambda^{2}\Pi_{\pm}$, which is zero only at $\lambda=0$. The distribution is the simplest possible: the origin in every subspace and nothing else.
+The real line $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, the split imaginary line $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, the two idempotent lines $\mathbb{R}\Pi_{\mathrm{id},\pm}$, and the whole algebra all have the same square-zero set, $\{0\}$. On the real line, $q^{2}=0$ forces $q=0$; on the imaginary line, $-q'^{2}=0$ forces $q'=0$; on an idempotent line, $(\lambda\Pi_{\mathrm{id},\pm})^{2}=\lambda^{2}\Pi_{\mathrm{id},\pm}$, which is zero only at $\lambda=0$. The distribution is the simplest possible: the origin in every subspace and nothing else.
 
 ## Summary
 
@@ -186,11 +186,11 @@ The result is the sharp contrast with the dual numbers, where $\varepsilon^{2}=0
 |---|---|
 | $\mathbb{C}_{\mathrm{spl}}$ | Split complex algebra |
 | $Ζ$ | A root of $0$, or a square-zero element |
-| $\Upsilon$ | A nilpotent |
+| $\Pi_{\mathrm{nil}}$ | A nilpotent |
 | $\mathcal{N}_{0}=\{Ζ:Ζ^{2}=0\}=\{0\}$ | The nilpotent cone |
 | $\{\text{nilpotents}\}=\varnothing$ | The nilpotent set |
 | $\mathcal{Z}=\mathcal{N}\setminus\{0\}$ | The zero-divisor set, disjoint from the nilpotents |
-| $\Pi_{\pm}=\tfrac12(1\pm j)$ | The idempotents, none nilpotent |
+| $\Pi_{\mathrm{id},\pm}=\tfrac12(1\pm j)$ | The idempotents, none nilpotent |
 | $\mathsf{M}(Q)=\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ | Regular matrix model, square-zero only at $Q=0$ |
 
 ## Further Reading

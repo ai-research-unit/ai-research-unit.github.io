@@ -14,15 +14,15 @@ The element that the exponent needs is $i\tilde{Ζ}$, whose square is $-e_t$; th
 
 **The classification becomes a dichotomy.** The roots of $1$ of the plain product are the central pair $\pm e_t$ and the pure elements $\vec{Ζ}$ with $(\vec{Ζ},\vec{Ζ})=-1$. That is one theorem, quoted below, and its statement contains no condition of the form $b^2-d^2=1$: a root is central or it is pure, and the pure condition is a single complex equation on the vector part.
 
-**The root is a pair of idempotents.** The halving map sends a root to an idempotent and back, and the two members of the pair are $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$. A root of $1$ is therefore a complete pair of orthogonal idempotents, which is an object the corpus uses throughout, and the transform is indexed by that pair rather than by a root picked from a conic.
+**The root is a pair of idempotents.** The halving map sends a root to an idempotent and back, and the two members of the pair are $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$. A root of $1$ is therefore a complete pair of orthogonal idempotents, which is an object the corpus uses throughout, and the transform is indexed by that pair rather than by a root picked from a conic.
 
-**The transform splits into two transforms over the two ideals of the pair.** Because $\tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-$, the kernel is a pair of conjugate unit complex numbers, one attached to each idempotent,
+**The transform splits into two transforms over the two ideals of the pair.** Because $\tilde{Ζ}=\tilde\Pi_{\mathrm{id},+-}\tilde\Pi_{\mathrm{id},-}$, the kernel is a pair of conjugate unit complex numbers, one attached to each idempotent,
 
 $$
-W_N(n,\ell)=e^{-2\pi i n\ell/N}\,\tilde\Pi_+ + e^{+2\pi i n\ell/N}\,\tilde\Pi_- .
+W_N(n,\ell)=e^{-2\pi i n\ell/N}\,\tilde\Pi_{\mathrm{id},+} + e^{+2\pi i n\ell/N}\,\tilde\Pi_{\mathrm{id},-} .
 $$
 
-The two Peirce ideals $\tilde\Pi_+\mathbb{B}$ and $\tilde\Pi_-\mathbb{B}$ are each a complex plane, so the transform is a pair of ordinary complex transforms on those planes, and its factorization into scalar complex transforms is the transform read in the coordinates that the root itself supplies. No change of basis has to be chosen: the root supplies it.
+The two Peirce ideals $\tilde\Pi_{\mathrm{id},+}\mathbb{B}$ and $\tilde\Pi_{\mathrm{id},-}\mathbb{B}$ are each a complex plane, so the transform is a pair of ordinary complex transforms on those planes, and its factorization into scalar complex transforms is the transform read in the coordinates that the root itself supplies. No change of basis has to be chosen: the root supplies it.
 
 The transform pair, the inversion, the factorization and the one-sided convolution theorem are proved here; the Z transform follows, with its rules, table and recurrences.
 
@@ -52,15 +52,15 @@ The scalar imaginary is $i$, which commutes with the quaternion units. The quate
 
 **Definition (the root of one).** An element $\tilde{Ζ}\in\mathbb{B}$ is a **root of $1$** when $\tilde{Ζ}^2=e_t$, the square being taken in the algebra product.
 
-**Theorem (the halving map; quoted).** Let $\tilde\Pi\in\mathbb{B}$ and put $\tilde{Ζ}=2\tilde\Pi-e_t$. Then $\tilde\Pi^{2}=\tilde\Pi$ exactly when $\tilde{Ζ}^{2}=e_t$, and the two maps $\tilde{Ζ}\mapsto\tfrac12(e_t+\tilde{Ζ})$ and $\tilde\Pi\mapsto2\tilde\Pi-e_t$ are inverse to each other. The source is *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Idempotents*.
+**Theorem (the halving map; quoted).** Let $\tilde\Pi_{\mathrm{id}}\in\mathbb{B}$ and put $\tilde{Ζ}=2\tilde\Pi_{\mathrm{id}}-e_t$. Then $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$ exactly when $\tilde{Ζ}^{2}=e_t$, and the two maps $\tilde{Ζ}\mapsto\tfrac12(e_t+\tilde{Ζ})$ and $\tilde\Pi_{\mathrm{id}}\mapsto2\tilde\Pi_{\mathrm{id}}-e_t$ are inverse to each other. The source is *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Idempotents*.
 
 The theorem is the reason the root of $1$ is the right object for a kernel: it is an idempotent read in another coordinate. The pair attached to a root is
 
 $$
-\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ}),\qquad \tilde\Pi_\pm^{2}=\tilde\Pi_\pm,\qquad \tilde\Pi_+\tilde\Pi_-=0,\qquad \tilde\Pi_++\tilde\Pi_-=e_t ,
+\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ}),\qquad \tilde\Pi_{\mathrm{id},\pm}^{2}=\tilde\Pi_{\mathrm{id},\pm},\qquad \tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0,\qquad \tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t ,
 $$
 
-a complete family of orthogonal idempotents in the sense of *Special Element and Peirce Conventions*, §*The General Peirce Convention*, and the root is recovered from the pair as $\tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-$. The two members are exchanged by the sign of the root and by nothing else: the root is the pair, read with a sign.
+a complete family of orthogonal idempotents in the sense of *Special Element and Peirce Conventions*, §*The General Peirce Convention*, and the root is recovered from the pair as $\tilde{Ζ}=\tilde\Pi_{\mathrm{id},+-}\tilde\Pi_{\mathrm{id},-}$. The two members are exchanged by the sign of the root and by nothing else: the root is the pair, read with a sign.
 
 **Remark (the $i$ is a scalar and not an element).** The generator of the kernel is $-2\pi i\tilde{Ζ}/N$; its algebra part is $\tilde{Ζ}$, a root of $1$, and the factor $i$ is the complex scalar that supplies the minus sign. An element whose square is $-e_t$ serves the same purpose and is the same object as $i\tilde{Ζ}$; the convention of this article is to keep the $i$ outside and to name only the root of $1$, so that the classification of the algebra elements used is the classification of the roots of $1$, the dichotomy of §*The Classification*.
 
@@ -104,17 +104,17 @@ A unit element and not $e_t$. So the kernel is of norm one at every root, and wh
 
 ### The Peirce Form of the Kernel
 
-Substituting $\tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-$ in the closed form, or applying the exponential to each idempotent, gives the form the rest of the article uses.
+Substituting $\tilde{Ζ}=\tilde\Pi_{\mathrm{id},+-}\tilde\Pi_{\mathrm{id},-}$ in the closed form, or applying the exponential to each idempotent, gives the form the rest of the article uses.
 
 **Proposition (the Peirce form).** For every $n$ and $\ell$,
 
 $$
-W_N(n, \ell) = e^{-2\pi i n\ell/N}\,\tilde\Pi_+ + e^{+2\pi i n\ell/N}\,\tilde\Pi_- .
+W_N(n, \ell) = e^{-2\pi i n\ell/N}\,\tilde\Pi_{\mathrm{id},+} + e^{+2\pi i n\ell/N}\,\tilde\Pi_{\mathrm{id},-} .
 $$
 
-*Proof.* The two idempotents are orthogonal and their sum is the unit, so the exponential acts on each by the scalar attached to it, $\exp(-2\pi i\theta\tilde{Ζ})\tilde\Pi_\pm=\exp(\mp 2\pi i\theta)\tilde\Pi_\pm$, because $\tilde{Ζ}\tilde\Pi_\pm=\pm\tilde\Pi_\pm$; the two terms add.
+*Proof.* The two idempotents are orthogonal and their sum is the unit, so the exponential acts on each by the scalar attached to it, $\exp(-2\pi i\theta\tilde{Ζ})\tilde\Pi_{\mathrm{id},\pm}=\exp(\mp 2\pi i\theta)\tilde\Pi_{\mathrm{id},\pm}$, because $\tilde{Ζ}\tilde\Pi_{\mathrm{id},\pm}=\pm\tilde\Pi_{\mathrm{id},\pm}$; the two terms add.
 
-Three consequences are read off at once. **The kernel is a pair of conjugate unit complex numbers**, $e^{-2\pi i n\ell/N}$ on the component of $\tilde\Pi_+$ and its conjugate on the component of $\tilde\Pi_-$, which is the form in which the transform factorizes. **The kernel is never a zero divisor**, since each of its two Peirce coordinates is a nonzero complex number: it stays an invertible element and never approaches the null cone, at any root and any index.
+Three consequences are read off at once. **The kernel is a pair of conjugate unit complex numbers**, $e^{-2\pi i n\ell/N}$ on the component of $\tilde\Pi_{\mathrm{id},+}$ and its conjugate on the component of $\tilde\Pi_{\mathrm{id},-}$, which is the form in which the transform factorizes. **The kernel is never a zero divisor**, since each of its two Peirce coordinates is a nonzero complex number: it stays an invertible element and never approaches the null cone, at any root and any index.
 
 ## The Roots of One
 
@@ -138,11 +138,11 @@ The two families are disjoint and exhaustive, so a statement that holds for ever
 
 *Proof.* A pure root has $\vec{Ζ}=\vec p+i\vec p'$ and $\tilde{Ζ}^{*}=\bar{\tilde{Ζ}}^{\natural}=-\bar{\tilde{Ζ}}=-\vec p+i\vec p'$, so the Hermitian condition is $\vec p=0$; the root condition $\vec p^{2}-\vec p'^{2}=-1$ then gives $\lvert\vec p'\rvert=1$. The central roots are fixed by the star.
 
-For these roots the pair is a pair of Hermitian idempotents, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$, that is, a pair of pure states, and the kernel is unitary for the Hermitian form, by §*Definition and the Closed Form* read with the star.
+For these roots the pair is a pair of Hermitian idempotents, $\tilde\Pi_{\mathrm{id},\pm}^{*}=\tilde\Pi_{\mathrm{id},\pm}$, that is, a pair of pure states, and the kernel is unitary for the Hermitian form, by §*Definition and the Closed Form* read with the star.
 
 ### The Sign of the Root
 
-Replacing $\tilde{Ζ}$ by $-\tilde{Ζ}$ exchanges the two members of the Peirce pair, $\tilde\Pi_+\leftrightarrow\tilde\Pi_-$, and conjugates the two coordinates of the kernel:
+Replacing $\tilde{Ζ}$ by $-\tilde{Ζ}$ exchanges the two members of the Peirce pair, $\tilde\Pi_{\mathrm{id},+}\leftrightarrow\tilde\Pi_{\mathrm{id},-}$, and conjugates the two coordinates of the kernel:
 
 $$
 W_N(n, \ell; -\tilde{Ζ}) = \cos\theta\, e_t + i\sin\theta\,\tilde{Ζ} .
@@ -180,13 +180,13 @@ The two are related by conjugation: the natural conjugate of the left-kernel tra
 
 **Theorem (inversion).** For every sequence $f$ and every root of $1$, the inverse formula reproduces $f[n]$. No hypothesis on the samples is needed.
 
-*Proof.* Split the sequence into its left Peirce components, $f[n]=\tilde\Pi_+f[n]+\tilde\Pi_-f[n]$, which is the identity $e_t=\tilde\Pi_++\tilde\Pi_-$ applied on the left. The kernel commutes with the two idempotents and acts on them by the two characters, so the transform is
+*Proof.* Split the sequence into its left Peirce components, $f[n]=\tilde\Pi_{\mathrm{id},+f}[n]+\tilde\Pi_{\mathrm{id},-f}[n]$, which is the identity $e_t=\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}$ applied on the left. The kernel commutes with the two idempotents and acts on them by the two characters, so the transform is
 
 $$
-F[\ell] = \sum_{n=0}^{N-1} e^{-2\pi i n\ell/N}\,\tilde\Pi_+ f[n] + \sum_{n=0}^{N-1} e^{+2\pi i n\ell/N}\,\tilde\Pi_- f[n],
+F[\ell] = \sum_{n=0}^{N-1} e^{-2\pi i n\ell/N}\,\tilde\Pi_{\mathrm{id},+} f[n] + \sum_{n=0}^{N-1} e^{+2\pi i n\ell/N}\,\tilde\Pi_{\mathrm{id},-} f[n],
 $$
 
-a pair of ordinary complex discrete transforms, the second taken at the frequency $-\ell$. Applying the inverse formula, the two sums separate in the same way and each is inverted by the standard orthogonality of the $N$-th roots of unity, giving $\tilde\Pi_+f[n]+\tilde\Pi_-f[n]=f[n]$.
+a pair of ordinary complex discrete transforms, the second taken at the frequency $-\ell$. Applying the inverse formula, the two sums separate in the same way and each is inverted by the standard orthogonality of the $N$-th roots of unity, giving $\tilde\Pi_{\mathrm{id},+f}[n]+\tilde\Pi_{\mathrm{id},-f}[n]=f[n]$.
 
 The orthogonality relation the proof uses is
 
@@ -230,16 +230,16 @@ The symmetry is the biquaternion analogue of the Hermitian symmetry $F[-\ell]=F[
 
 ### The Peirce Coordinates
 
-Let $\tilde{Ζ}$ be the root and $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ its pair. The two left ideals
+Let $\tilde{Ζ}$ be the root and $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ its pair. The two left ideals
 
 $$
-\tilde\Pi_+\mathbb{B}=\{\tilde\Pi_+X : X\in\mathbb{B}\}, \qquad \tilde\Pi_-\mathbb{B}=\{\tilde\Pi_-X : X\in\mathbb{B}\}
+\tilde\Pi_{\mathrm{id},+}\mathbb{B}=\{\tilde\Pi_{\mathrm{id},+X} : X\in\mathbb{B}\}, \qquad \tilde\Pi_{\mathrm{id},-}\mathbb{B}=\{\tilde\Pi_{\mathrm{id},-X} : X\in\mathbb{B}\}
 $$
 
-are complementary, $\mathbb{B}=\tilde\Pi_+\mathbb{B}\oplus\tilde\Pi_-\mathbb{B}$, and each is a complex plane: an idempotent has rank one in the matrix model $\mathbb{B}=M_2(\mathbb{C})$, so each ideal has complex dimension two. Every sequence splits accordingly,
+are complementary, $\mathbb{B}=\tilde\Pi_{\mathrm{id},+}\mathbb{B}\oplus\tilde\Pi_{\mathrm{id},-}\mathbb{B}$, and each is a complex plane: an idempotent has rank one in the matrix model $\mathbb{B}=M_2(\mathbb{C})$, so each ideal has complex dimension two. Every sequence splits accordingly,
 
 $$
-f[n] = f_+[n] + f_-[n], \qquad f_\pm[n] = \tilde\Pi_\pm f[n] \in \tilde\Pi_\pm\mathbb{B},
+f[n] = f_+[n] + f_-[n], \qquad f_\pm[n] = \tilde\Pi_{\mathrm{id},\pm} f[n] \in \tilde\Pi_{\mathrm{id},\pm}\mathbb{B},
 $$
 
 and the split is canonical: it is fixed by the root and by nothing else.
@@ -249,7 +249,7 @@ and the split is canonical: it is fixed by the root and by nothing else.
 Substituting the Peirce form of the kernel and the split of the sequence,
 
 $$
-F[\ell] = \sum_{n=0}^{N-1} \left(e^{-2\pi i n\ell/N}\,\tilde\Pi_+ + e^{+2\pi i n\ell/N}\,\tilde\Pi_-\right)\left(f_+[n]+f_-[n]\right).
+F[\ell] = \sum_{n=0}^{N-1} \left(e^{-2\pi i n\ell/N}\,\tilde\Pi_{\mathrm{id},+} + e^{+2\pi i n\ell/N}\,\tilde\Pi_{\mathrm{id},-}\right)\left(f_+[n]+f_-[n]\right).
 $$
 
 Each of the four products lands in a Peirce plane and the two planes do not mix, so the sum separates into two independent transforms:
@@ -264,7 +264,7 @@ $$
 F[\ell] = F_+[\ell] + F_-[\ell],
 $$
 
-where $F_+$ is the ordinary complex discrete transform of $f_+$ and $F_-$ is the ordinary complex transform of $f_-$ at the negated frequency; the two displays above are the proof, since $f_\pm$ already lies in the image of $\tilde\Pi_\pm$.
+where $F_+$ is the ordinary complex discrete transform of $f_+$ and $F_-$ is the ordinary complex transform of $f_-$ at the negated frequency; the two displays above are the proof, since $f_\pm$ already lies in the image of $\tilde\Pi_{\mathrm{id},\pm}$.
 
 ### The Count
 
@@ -365,7 +365,7 @@ where $W_M$ and $W_N$ are the one-dimensional kernels of lengths $M$ and $N$, ta
 
 ### Factorization
 
-The two-dimensional transform factorizes through the same Peirce pair: writing $f = f_+ + f_-$ with $f_\pm = \tilde\Pi_\pm f$, each component is a $\mathbb{C}^2$-valued array, transformed by the ordinary two-dimensional complex transform, the second at the negated frequency in both indices.
+The two-dimensional transform factorizes through the same Peirce pair: writing $f = f_+ + f_-$ with $f_\pm = \tilde\Pi_{\mathrm{id},\pm} f$, each component is a $\mathbb{C}^2$-valued array, transformed by the ordinary two-dimensional complex transform, the second at the negated frequency in both indices.
 
 ### Separability
 
@@ -417,22 +417,22 @@ $$
 
 So a sequence that grows at most geometrically, $r(f_n) \le \sigma_f^{\,n}$, has terms of seminorm tending to zero as soon as $r(\tilde{Q}) > \sigma_f$, and the Z-transform literature takes the **region of convergence** to be this set, with $\sigma_f$ the **radius of convergence**. Two corrections come from the vanishing of $r$ on the zero divisors.
 
-**Vanishing of the seminorm is not convergence.** The standard idempotent of *The Square Roots of One and the Idempotents of the Biquaternion Algebra* is the one attached to the root $i\vec e_z$ of $+1$: here $(i\vec e_z)^2 = e_t$, and the two idempotents $\tilde\Pi_+ = \tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_- = \tfrac12(e_t-i\vec e_z)$ are its associated idempotents.
+**Vanishing of the seminorm is not convergence.** The standard idempotent of *The Square Roots of One and the Idempotents of the Biquaternion Algebra* is the one attached to the root $i\vec e_z$ of $+1$: here $(i\vec e_z)^2 = e_t$, and the two idempotents $\tilde\Pi_{\mathrm{id},+} = \tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_{\mathrm{id},-} = \tfrac12(e_t-i\vec e_z)$ are its associated idempotents.
 
 $$
-\tilde\Pi_+ = \tfrac12(e_t + i\vec e_z), \qquad \tilde\Pi_+^2 = \tilde\Pi_+, \qquad \langle\tilde\Pi_+\rangle_{\natural} = 0, \qquad r(\tilde\Pi_+) = 0,
+\tilde\Pi_{\mathrm{id},+} = \tfrac12(e_t + i\vec e_z), \qquad \tilde\Pi_{\mathrm{id},+}^2 = \tilde\Pi_{\mathrm{id},+}, \qquad \langle\tilde\Pi_{\mathrm{id},+}\rangle_{\natural} = 0, \qquad r(\tilde\Pi_{\mathrm{id},+}) = 0,
 $$
 
-and its powers are $\tilde\Pi_+^{\,k} = \tilde\Pi_+$ for $k \ge 1$. Multiplicativity of $r$ then gives
+and its powers are $\tilde\Pi_{\mathrm{id},+}^{\,k} = \tilde\Pi_{\mathrm{id},+}$ for $k \ge 1$. Multiplicativity of $r$ then gives
 
 $$
-r(\tilde\Pi_+^{\,k}) = r(\tilde\Pi_+)^k = 0 \qquad\text{for every } k,
+r(\tilde\Pi_{\mathrm{id},+}^{\,k}) = r(\tilde\Pi_{\mathrm{id},+})^k = 0 \qquad\text{for every } k,
 $$
 
-so every term of the geometric series $\sum_k \tilde\Pi_+^{\,k}$ has seminorm zero, while the partial sums
+so every term of the geometric series $\sum_k \tilde\Pi_{\mathrm{id},+}^{\,k}$ has seminorm zero, while the partial sums
 
 $$
-S_K = \sum_{k=0}^{K-1} \tilde\Pi_+^{\,k} = e_t + (K-1)\tilde\Pi_+, \qquad r(S_K) = \sqrt{K},
+S_K = \sum_{k=0}^{K-1} \tilde\Pi_{\mathrm{id},+}^{\,k} = e_t + (K-1)\tilde\Pi_{\mathrm{id},+}, \qquad r(S_K) = \sqrt{K},
 $$
 
 are unbounded in both norms. The point lies inside the claimed region $r(\tilde{Q}) < 1$, and the geometric identity
@@ -441,7 +441,7 @@ $$
 \sum_{k=0}^{\infty} \tilde{Q}^{k} = (e_t - \tilde{Q})^{-1}
 $$
 
-fails there, because $e_t - \tilde\Pi_+ = \tilde\Pi_-$ is the complementary idempotent and is again a zero divisor. The series converges exactly when the powers $\tilde{Q}^k$ tend to zero, equivalently, the algebra being finite-dimensional, when every eigenvalue of $\tilde{Q}$, read in the $2\times2$ complex matrix representation of *$M_2(\mathbb{C})$ Pauli Representation*, has modulus less than one; the sum is then $(e_t - \tilde{Q})^{-1}$, as the identity $(e_t - \tilde{Q})S_K = e_t - \tilde{Q}^K$ shows. The obstruction is the summation and not the multiplication: a finite sum of products is always defined, and only the passage to the limit fails.
+fails there, because $e_t - \tilde\Pi_{\mathrm{id},+} = \tilde\Pi_{\mathrm{id},-}$ is the complementary idempotent and is again a zero divisor. The series converges exactly when the powers $\tilde{Q}^k$ tend to zero, equivalently, the algebra being finite-dimensional, when every eigenvalue of $\tilde{Q}$, read in the $2\times2$ complex matrix representation of *$M_2(\mathbb{C})$ Pauli Representation*, has modulus less than one; the sum is then $(e_t - \tilde{Q})^{-1}$, as the identity $(e_t - \tilde{Q})S_K = e_t - \tilde{Q}^K$ shows. The obstruction is the summation and not the multiplication: a finite sum of products is always defined, and only the passage to the limit fails.
 
 **The seminorm radius is the geometric mean of the eigenvalues.** By the same representation the eigenvalues $\lambda_1, \lambda_2$ of $\tilde{Q}$ satisfy $\lambda_1\lambda_2 = \langle\tilde{Q}\rangle_{\natural}$, so $r(\tilde{Q}) = \sqrt{\lvert\lambda_1\lambda_2\rvert}$ is the geometric mean of their moduli. The region in which the series in $\tilde{Q}^{-1}$ actually converges is governed by the smaller of the two: for a positive real $c$ the series $\sum_k (c\tilde{Q}^{-1})^k$ converges exactly when $c < \min(\lvert\lambda_1\rvert, \lvert\lambda_2\rvert)$. The geometric mean never falls below the minimum, so the region $r(\tilde{Q}) > \sigma_f$ always **contains** the true region and may contain divergent points. For
 
@@ -551,7 +551,7 @@ The price is the vanishing-norm phenomenon of the previous section, which the co
 
 The discrete biquaternion Fourier transform is defined by the kernel $W_N(n, \ell) = \exp(-2\pi i\tilde{Ζ} n\ell/N)$, where $\tilde{Ζ}$ is a root of $1$ in $\mathbb{B}$. The root of $1$ is the parameter, not a root of $-1$: the complex scalar $i$ in the exponent supplies the sign, and the algebra element carries only the square $e_t$.
 
-The root is an idempotent pair. The halving map $\tilde{Ζ}\mapsto\tfrac12(e_t+\tilde{Ζ})$ is a bijection between the roots of $1$ and the idempotents, and the kernel is a pair of conjugate unit complex numbers, one on each Peirce ideal $\tilde\Pi_\pm\mathbb{B}$. The transform is the pair of ordinary complex transforms on those ideals, that is four scalar complex transforms of length $N$, which gives a fast algorithm.
+The root is an idempotent pair. The halving map $\tilde{Ζ}\mapsto\tfrac12(e_t+\tilde{Ζ})$ is a bijection between the roots of $1$ and the idempotents, and the kernel is a pair of conjugate unit complex numbers, one on each Peirce ideal $\tilde\Pi_{\mathrm{id},\pm}\mathbb{B}$. The transform is the pair of ordinary complex transforms on those ideals, that is four scalar complex transforms of length $N$, which gives a fast algorithm.
 
 The transform is invertible at every root and for every sequence, by the orthogonality of the inverse kernel. That inverse is the kernel at the negated frequency index, at every root without exception; it is the natural conjugate for every pure root and the coefficient conjugate at the central roots $\pm e_t$. The conjugate symmetry for real scalar sequences carries the same dichotomy. The convolution theorem holds when the kernel commutes with the samples, in particular at the central root; for a genuine root no frequency-independent convolution reproduces the product of the transforms.
 
@@ -566,8 +566,8 @@ The vanishing norm does not obstruct inversion; it obstructs division, and the s
 | $i$ | the complex scalar imaginary, commuting with the units |
 | $\tilde{Ζ}$ | a root of $1$, $\tilde{Ζ}^{2}=e_t$ |
 | $\vec{Ζ}$ | a pure root of $1$, $(\vec{Ζ},\vec{Ζ})=-1$ |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ | the idempotent pair of the root, $\tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-$ |
-| $\mathbb{B}=\tilde\Pi_+\mathbb{B}\oplus\tilde\Pi_-\mathbb{B}$ | the Peirce decomposition into two complex planes |
+| $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ | the idempotent pair of the root, $\tilde{Ζ}=\tilde\Pi_{\mathrm{id},+-}\tilde\Pi_{\mathrm{id},-}$ |
+| $\mathbb{B}=\tilde\Pi_{\mathrm{id},+}\mathbb{B}\oplus\tilde\Pi_{\mathrm{id},-}\mathbb{B}$ | the Peirce decomposition into two complex planes |
 | $W_N(n,\ell) = \exp(-2\pi i\tilde{Ζ} n\ell/N)$ | the discrete Fourier kernel, placed on the left of $f[n]$ |
 | $\cos\theta\,e_t - i\sin\theta\,\tilde{Ζ}$ | the closed form of the kernel, $\theta=2\pi n\ell/N$ |
 | $W_N(n,-\ell)=W_N(n,\ell)^{-1}$ | the inverse kernel, at every root |

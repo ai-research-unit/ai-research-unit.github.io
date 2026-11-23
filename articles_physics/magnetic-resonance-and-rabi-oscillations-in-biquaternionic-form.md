@@ -14,9 +14,9 @@ This article presents the driven spin-1/2 in the biquaternion algebra $\mathbb{B
    $$
    and the generalized Rabi frequency is its spectral gap, $\Omega = \sqrt{(\omega_0-\omega)^2+\omega_1^2}$.
 4. **Resonance is the vanishing of the longitudinal component.** At $\omega = \omega_0$ the effective field is purely transverse, the effective Hamiltonian is $\propto i\vec e_x$, and the spin precesses about the transverse axis, so the two eigenstates exchange with unit amplitude after a $\pi$-pulse.
-5. **The transition probability is the normalised Hermitian form, read through the scalar part**, $P_\downarrow(r'_t) = 2\,\mathrm{Sc}(\tilde\Pi_2(\vec u_z)\tilde{Ϛ}_{\Psi}(r'_t)^{*})$, and it equals the standard Rabi expression. The whole Rabi problem is thus a single rotor acting on an idempotent, read by the reduction formula.
+5. **The transition probability is the normalised Hermitian form, read through the scalar part**, $P_\downarrow(r'_t) = 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},2}(\vec u_z)\tilde{Ϛ}_{\Psi}(r'_t)^{*})$, and it equals the standard Rabi expression. The whole Rabi problem is thus a single rotor acting on an idempotent, read by the reduction formula.
 
-The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ sends $e_t\mapsto I_2$, $i\vec e_\eta\mapsto\sigma_\eta$.
+The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ sends $e_t\mapsto I_2$, $i\vec e_\eta\mapsto\sigma_\eta$.
 
 The companion articles supply the pieces:
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin operators and the two-level Hamiltonian.
@@ -138,7 +138,7 @@ a purely transverse effective Hamiltonian: the longitudinal component of the eff
 
 ### The Transition Probability
 
-Prepare the spin in the upper eigenstate of the static field, $\tilde{Ϛ}_{\Psi}(0) = \tilde\Pi_1(\vec u_z)$, and ask for the probability of finding it in the lower eigenstate $\tilde\Pi_2(\vec u_z)$ at time $r'_t$. In the rotating frame the state evolves by the static Hamiltonian, so
+Prepare the spin in the upper eigenstate of the static field, $\tilde{Ϛ}_{\Psi}(0) = \tilde\Pi_{\mathrm{id},1}(\vec u_z)$, and ask for the probability of finding it in the lower eigenstate $\tilde\Pi_{\mathrm{id},2}(\vec u_z)$ at time $r'_t$. In the rotating frame the state evolves by the static Hamiltonian, so
 
 $$
 \tilde{Ϛ}_{\Psi,R}(r'_t) = \tilde u_H(r'_t)\,\tilde{Ϛ}_{\Psi}(0)\,\tilde u_H(r'_t)^{*},
@@ -153,10 +153,10 @@ $$
 = \cos\frac{\Omega r'_t}{2\,c}\,e_t - \sin\frac{\Omega r'_t}{2\,c}\;\frac{\omega_1 \vec e_x + \mathcal{G}_{\mathrm{gap}} \vec e_z}{\Omega} .
 $$
 
-The exponent is a real quaternion, so $\tilde u_H\in\mathbb{B}_{H}$ is a rotor and the rotation it generates is a spatial rotation of the Bloch vector about $\vec u_R$ at the rate $\Omega$. The state in the laboratory frame is $\tilde{Ϛ}_{\Psi}(r'_t) = \tilde u_{\mathrm r}(r'_t)\tilde{Ϛ}_{\Psi,R}(r'_t)\tilde u_{\mathrm r}(r'_t)^{*}$, and the transition probability is the normalised Hermitian form, read through the trace with the fixed idempotent $\tilde\Pi_2(\vec u_z)$. Restoring the frame rotor and evaluating the trace gives the standard result
+The exponent is a real quaternion, so $\tilde u_H\in\mathbb{B}_{H}$ is a rotor and the rotation it generates is a spatial rotation of the Bloch vector about $\vec u_R$ at the rate $\Omega$. The state in the laboratory frame is $\tilde{Ϛ}_{\Psi}(r'_t) = \tilde u_{\mathrm r}(r'_t)\tilde{Ϛ}_{\Psi,R}(r'_t)\tilde u_{\mathrm r}(r'_t)^{*}$, and the transition probability is the normalised Hermitian form, read through the trace with the fixed idempotent $\tilde\Pi_{\mathrm{id},2}(\vec u_z)$. Restoring the frame rotor and evaluating the trace gives the standard result
 
 $$
-\boxed{\;P_{\downarrow}(r'_t) = 2\,\mathrm{Sc}\!\left(\tilde\Pi_2(\vec u_z)\,\tilde{Ϛ}_{\Psi}(r'_t)\right)
+\boxed{\;P_{\downarrow}(r'_t) = 2\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{id},2}(\vec u_z)\,\tilde{Ϛ}_{\Psi}(r'_t)\right)
 = \frac{\omega_1^2}{\omega_1^2+\mathcal{G}_{\mathrm{gap}}^2}\,\sin^2\!\left(\frac{\sqrt{\omega_1^2+\mathcal{G}_{\mathrm{gap}}^2}}{2\,c}\,r'_t\right)\;}.
 $$
 
@@ -190,7 +190,7 @@ r'_t = \frac{\pi c}{\omega_1}:\quad P_\downarrow = \sin^2\frac{\pi}{2} = 1,
 r'_t = \frac{\pi c}{2\omega_1}:\quad P_\downarrow = \sin^2\frac{\pi}{4} = \frac12 .
 $$
 
-The first is a $\pi$-pulse: it inverts the spin, carrying $\tilde\Pi_1(\vec u_z)$ to $\tilde\Pi_2(\vec u_z)$ with unit probability. The second is a $\pi/2$-pulse: it prepares the equal coherent superposition. In the algebra these are the statements that the rotor $\tilde u_H(\pi/\omega_1) = -\vec e_x$, a $\pi$-rotation about the effective axis $\vec e_x$, exchanges the two idempotents, and that $\tilde u_H(\pi/2\omega_1)$ carries the pole of the Bloch sphere to its equator. A $\pi/2$-pulse followed by a free Larmor evolution and a second $\pi/2$-pulse is the standard Ramsey interferometer; its fringes are governed by the phase accumulated in the interval, in which a dynamical part and a geometric part can be separated.
+The first is a $\pi$-pulse: it inverts the spin, carrying $\tilde\Pi_{\mathrm{id},1}(\vec u_z)$ to $\tilde\Pi_{\mathrm{id},2}(\vec u_z)$ with unit probability. The second is a $\pi/2$-pulse: it prepares the equal coherent superposition. In the algebra these are the statements that the rotor $\tilde u_H(\pi/\omega_1) = -\vec e_x$, a $\pi$-rotation about the effective axis $\vec e_x$, exchanges the two idempotents, and that $\tilde u_H(\pi/2\omega_1)$ carries the pole of the Bloch sphere to its equator. A $\pi/2$-pulse followed by a free Larmor evolution and a second $\pi/2$-pulse is the standard Ramsey interferometer; its fringes are governed by the phase accumulated in the interval, in which a dynamical part and a geometric part can be separated.
 
 ## The Bloch Picture
 
@@ -252,7 +252,7 @@ $$
 
 The effective Hamiltonian is a spin observable along the unit vector $\vec u_R = (\omega_1 \vec e_x + \mathcal{G}_{\mathrm{gap}} \vec e_z)/\Omega$, with $\mathcal{G}_{\mathrm{gap}} = \omega_0-\omega$ the detuning and $\Omega = \sqrt{\omega_1^2+\mathcal{G}_{\mathrm{gap}}^2}$ the generalized Rabi frequency equal to its spectral gap. Resonance $\omega = \omega_0$ makes $\tilde{H}_{\Psi,R} = -\frac{\hbar\,\omega_{1}}{2}i\vec e_x$ purely transverse, and then the spin precesses about the transverse axis.
 
-The transition probability is the normalised Hermitian form, read through the scalar part $P_\downarrow(r'_t) = 2\,\mathrm{Sc}(\tilde\Pi_2(\vec u_z)\tilde{Ϛ}_{\Psi}(r'_t)^{*})$, and it equals the Rabi formula
+The transition probability is the normalised Hermitian form, read through the scalar part $P_\downarrow(r'_t) = 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},2}(\vec u_z)\tilde{Ϛ}_{\Psi}(r'_t)^{*})$, and it equals the Rabi formula
 
 $$
 P_\downarrow(r'_t) = \frac{\omega_1^2}{\omega_1^2+\mathcal{G}_{\mathrm{gap}}^2}\,\sin^2\!\left(\frac{\Omega r'_t}{2\,c}\right),

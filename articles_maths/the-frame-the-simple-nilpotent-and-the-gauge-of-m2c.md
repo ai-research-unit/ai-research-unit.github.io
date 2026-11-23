@@ -88,9 +88,9 @@ $$
 
 ## The Biquaternion Case
 
-**Proposition.** In the biquaternion language the idempotent is the root of one $\tilde{Ζ}$ read through the pair $\tilde\Pi_{\pm}$, and the simple nilpotent is the companion nilpotent $\vec\Upsilon_{+-}$ with its partner $\vec\Upsilon_{-+}$.
+**Proposition.** In the biquaternion language the idempotent is the root of one $\tilde{Ζ}$ read through the pair $\tilde\Pi_{\mathrm{id},\pm}$, and the simple nilpotent is the companion nilpotent $\vec\Pi_{\mathrm{nil},+-}$ with its partner $\vec\Pi_{\mathrm{nil},-+}$.
 
-**Proof.** The corpus builds the pair $\tilde\Pi_{\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ from the root, which is the idempotent of the frame; and the companion nilpotents are the generators of the mixed corners normalised so that their product is $\tilde\Pi_{+}$.
+**Proof.** The corpus builds the pair $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ from the root, which is the idempotent of the frame; and the companion nilpotents are the generators of the mixed corners normalised so that their product is $\tilde\Pi_{\mathrm{id},+}$.
 
 **Corollary.** The gauge of the corpus is the same one complex parameter, and the normalisation is the same product condition.
 

@@ -58,10 +58,10 @@ The null element $e_t+i\vec u_\Phi$ has a geometric interpretation, due to Penro
 The flagpole is also a **pure state**. The element
 
 $$
-\tilde\Pi = \tfrac12\left(e_t + i\vec u_\Phi\right)
+\tilde\Pi_{\mathrm{id}} = \tfrac12\left(e_t + i\vec u_\Phi\right)
 $$
 
-is idempotent, $\tilde\Pi^2 = \tilde\Pi$, and Hermitian, $\tilde\Pi^{*} = \tilde\Pi$, so it is a Hermitian idempotent; and it is exactly the rank-one idempotent $\tilde\Pi_1(\vec u_\Phi) = \tfrac12(e_t+i\vec u_\Phi)$ of the idempotent convention of *Algebra and Element Conventions*. The square of the un-normalised flagpole is $2\tilde\Pi$ rather than $\tilde\Pi$, which is the sense in which the flagpole is twice a state: the natural normalisation of the null direction carries the factor two that the idempotent removes. The set of null elements is the light cone, and the light cone is the zero-divisor cone (*The Light Cone as the Biquaternion Zero-Divisor Cone*); the flagpole is therefore a null direction that is simultaneously an idempotent of the informational sector, and the two readings — a lightlike vector and a pure state — are the two faces of the same eight parameters.
+is idempotent, $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$, and Hermitian, $\tilde\Pi_{\mathrm{id}}^{*} = \tilde\Pi_{\mathrm{id}}$, so it is a Hermitian idempotent; and it is exactly the rank-one idempotent $\tilde\Pi_{\mathrm{id},1}(\vec u_\Phi) = \tfrac12(e_t+i\vec u_\Phi)$ of the idempotent convention of *Algebra and Element Conventions*. The square of the un-normalised flagpole is $2\tilde\Pi_{\mathrm{id}}$ rather than $\tilde\Pi_{\mathrm{id}}$, which is the sense in which the flagpole is twice a state: the natural normalisation of the null direction carries the factor two that the idempotent removes. The set of null elements is the light cone, and the light cone is the zero-divisor cone (*The Light Cone as the Biquaternion Zero-Divisor Cone*); the flagpole is therefore a null direction that is simultaneously an idempotent of the informational sector, and the two readings — a lightlike vector and a pure state — are the two faces of the same eight parameters.
 
 ## The Boost of the Null Wave Element
 

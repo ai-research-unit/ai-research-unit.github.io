@@ -357,9 +357,9 @@ because $\vec u^2=-e_t$ and $i^2=-e_t$, so both factors are nonzero and both are
 
 ### The Idempotents
 
-**Proposition.** For every real unit vector $\vec u$, the element $\tilde\Pi_+=\tfrac12(e_t+i\vec u)$ is an idempotent, Hermitian, of zero norm, and $\tilde\Pi_-=\tfrac12(e_t-i\vec u)$ is its orthogonal companion, with $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$.
+**Proposition.** For every real unit vector $\vec u$, the element $\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec u)$ is an idempotent, Hermitian, of zero norm, and $\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec u)$ is its orthogonal companion, with $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$ and $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$.
 
-*Proof.* Expanding, $\tilde\Pi_+^2=\tfrac14(e_t+2i\vec u+(i\vec u)^2)=\tfrac14(e_t+2i\vec u+e_t)=\tfrac12(e_t+i\vec u)$, using the centrality of $i$, $(i\vec u)^2=i^2\vec u^2=+e_t$. The Hermitian property is the reality of $\vec u$, and the vanishing of the norm is $\tfrac14(1-(\vec u,\vec u))=0$, the vector being a real unit. The companion statements follow by the change of sign of $i$ and by the identity of the zero divisors above. ∎
+*Proof.* Expanding, $\tilde\Pi_{\mathrm{id},+}^2=\tfrac14(e_t+2i\vec u+(i\vec u)^2)=\tfrac14(e_t+2i\vec u+e_t)=\tfrac12(e_t+i\vec u)$, using the centrality of $i$, $(i\vec u)^2=i^2\vec u^2=+e_t$. The Hermitian property is the reality of $\vec u$, and the vanishing of the norm is $\tfrac14(1-(\vec u,\vec u))=0$, the vector being a real unit. The companion statements follow by the change of sign of $i$ and by the identity of the zero divisors above. ∎
 
 **The check.** The idempotent, Hermitian and null properties held on one hundred random real unit vectors, largest residual $1.1\times10^{-16}$.
 
@@ -495,7 +495,7 @@ Two bits are left over and both are absorbed: the orientation of the three vecto
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ | the quaternionic norm, complex and central |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ | the complex-bilinear form $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$ |
 | $L(\tilde Q)$, $L_x,L_y,L_z$ | left multiplication and its four generators, the axis-free display |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u)$ | the Hermitian idempotents over the real unit vectors |
+| $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec u)$ | the Hermitian idempotents over the real unit vectors |
 
 ## Further Reading
 

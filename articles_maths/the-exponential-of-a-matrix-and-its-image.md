@@ -162,16 +162,16 @@ $$
 
 which was checked on $300$ random exponents, and the matrices $\operatorname{diag}(-1,-1)$ and $\operatorname{diag}(-1,-2)$ fail it. So the exponential at $n=2$ is onto an open part of the identity component and misses the matrices with two negative real eigenvalues.
 
-**The biquaternion reading gives the exponential of the idempotents and of the nilpotents.** Since $\tilde\Pi_\pm^{2}=\tilde\Pi_\pm$,
+**The biquaternion reading gives the exponential of the idempotents and of the nilpotents.** Since $\tilde\Pi_{\mathrm{id},\pm}^{2}=\tilde\Pi_{\mathrm{id},\pm}$,
 
 $$
-e^{t\tilde\Pi_\pm}=\mathrm{I}+(e^{t}-1)\tilde\Pi_\pm,
+e^{t\tilde\Pi_{\mathrm{id},\pm}}=\mathrm{I}+(e^{t}-1)\tilde\Pi_{\mathrm{id},\pm},
 $$
 
-so the idempotents exponentiate to the stretch along their corner, and since $\vec\Upsilon_{+-}^{2}=0$,
+so the idempotents exponentiate to the stretch along their corner, and since $\vec\Pi_{\mathrm{nil},+-}^{2}=0$,
 
 $$
-e^{t\vec\Upsilon_{+-}}=\mathrm{I}+t\vec\Upsilon_{+-},
+e^{t\vec\Pi_{\mathrm{nil},+-}}=\mathrm{I}+t\vec\Pi_{\mathrm{nil},+-},
 $$
 
 the shear along the corner. Both identities were verified numerically, and they are the two elementary cases from which the exponential of the whole biquaternion algebra is built by the polar decomposition.
@@ -191,7 +191,7 @@ The exponential converges absolutely for every matrix, maps into $\mathrm{GL}_n$
 | $2\pi i\mathbb{Z}$ | the lattice of periods |
 | $d\exp_A(H)=e^{A}\sum_m\frac{(-1)^{m}}{(m+1)!}\operatorname{ad}_A^{m}(H)$ | the derivative |
 | $\lambda_i-\lambda_j\notin2\pi i\mathbb{Z}$ | the regularity condition |
-| $e^{t\tilde\Pi_\pm}$, $e^{t\vec\Upsilon_{+-}}$ | the stretch and the shear at $n=2$ |
+| $e^{t\tilde\Pi_{\mathrm{id},\pm}}$, $e^{t\vec\Pi_{\mathrm{nil},+-}}$ | the stretch and the shear at $n=2$ |
 
 ## Further Reading
 

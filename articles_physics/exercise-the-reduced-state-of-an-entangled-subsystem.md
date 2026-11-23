@@ -108,18 +108,18 @@ The reduced state is not pure: it is a mixed state, and it carries the maximum p
 
 ### Step 1: The joint state
 
-In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{B}_{\Psi}$, of the form $\tilde\Pi(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, and the singlet state corresponds to the idempotent
+In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{B}_{\Psi}$, of the form $\tilde\Pi_{\mathrm{id}}(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, and the singlet state corresponds to the idempotent
 
 $$
-\tilde\Pi_{\mathrm{singlet}} = \frac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
+\tilde\Pi_{\mathrm{id,singlet}} = \frac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
 $$
 
 ### Step 2: The reduced state
 
-The state of particle 1 alone is the **partial scalar part** of $\tilde\Pi_{\mathrm{singlet}}$ in the second factor:
+The state of particle 1 alone is the **partial scalar part** of $\tilde\Pi_{\mathrm{id,singlet}}$ in the second factor:
 
 $$
-\tilde{Ϛ}_{\Psi,1} = 2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{singlet}}).
+\tilde{Ϛ}_{\Psi,1} = 2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{id,singlet}}).
 $$
 
 The operator $\mathrm{Sc}_2$ is the scalar part in the second factor, defined on the elementary tensor products by
@@ -205,18 +205,18 @@ $$
 In biquaternion form, the joint state is
 
 $$
-\tilde\Pi_{\mathrm{prod}} = \tilde\Pi_1 \otimes \tilde\Pi_1,
+\tilde\Pi_{\mathrm{id,prod}} = \tilde\Pi_{\mathrm{id},1} \otimes \tilde\Pi_{\mathrm{id},1},
 $$
 
-with $\tilde\Pi_1 = \tfrac{1}{2}(e_t + i\vec e_z)$. Computing the partial scalar part,
+with $\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(e_t + i\vec e_z)$. Computing the partial scalar part,
 
 $$
-\tilde{Ϛ}_{\Psi,\mathrm{prod},1} = 2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{prod}}) = \tilde\Pi_1 \cdot 2\,\mathrm{Sc}(\tilde\Pi_1) = \tilde\Pi_1 \cdot 1 = \tilde\Pi_1,
+\tilde{Ϛ}_{\Psi,\mathrm{prod},1} = 2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{id,prod}}) = \tilde\Pi_{\mathrm{id},1} \cdot 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1}) = \tilde\Pi_{\mathrm{id},1} \cdot 1 = \tilde\Pi_{\mathrm{id},1},
 $$
 
-using $2\,\mathrm{Sc}(\tilde\Pi_1) = 1$ for a normalised idempotent.
+using $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1}) = 1$ for a normalised idempotent.
 
-So the reduced state is the pure state $\tilde\Pi_1 = \tfrac{1}{2}(e_t + i\vec e_z)$, which is an idempotent with Bloch vector $\vec s_{\Psi} = \vec e_z$ and purity $1$. The purity and entropy are
+So the reduced state is the pure state $\tilde\Pi_{\mathrm{id},1} = \tfrac{1}{2}(e_t + i\vec e_z)$, which is an idempotent with Bloch vector $\vec s_{\Psi} = \vec e_z$ and purity $1$. The purity and entropy are
 
 $$
 2\,\mathrm{Sc}((\tilde{Ϛ}_{\Psi,\mathrm{prod},1})^2) = 1, \qquad S(\tilde{Ϛ}_{\Psi,\mathrm{prod},1}) = 0.
@@ -237,7 +237,7 @@ The contrast is the operational mark of entanglement: **product states have pure
 
 **2. The reduced state of an entangled subsystem is mixed.** The biquaternion framework represents pure states as idempotents of $\mathbb{B}_{\Psi}$ and mixed states as general positive elements of unit weight. The reduced state $\frac{1}{2} e_t$ is not idempotent; it is a genuine mixed state, with $\vec s_{\Psi} = 0$.
 
-**3. The entanglement is encoded in the tensor-product structure.** The singlet idempotent $\tilde\Pi_{\mathrm{singlet}}$ has non-trivial components in the tensor-product terms $\vec e_\eta\otimes \vec e_\eta$ with $k \in \{x,y,z\}$, and none of the form $\vec e_\eta\otimes e_t$. The entangled terms are scalar-free in the second factor, so they drop out of the partial trace, and only the $e_t\otimes e_t$ term survives, giving the maximally mixed reduced state. In a product state the terms $\vec e_\eta\otimes e_t$ are present, and they carry the pure reduced state.
+**3. The entanglement is encoded in the tensor-product structure.** The singlet idempotent $\tilde\Pi_{\mathrm{id,singlet}}$ has non-trivial components in the tensor-product terms $\vec e_\eta\otimes \vec e_\eta$ with $k \in \{x,y,z\}$, and none of the form $\vec e_\eta\otimes e_t$. The entangled terms are scalar-free in the second factor, so they drop out of the partial trace, and only the $e_t\otimes e_t$ term survives, giving the maximally mixed reduced state. In a product state the terms $\vec e_\eta\otimes e_t$ are present, and they carry the pure reduced state.
 
 **4. The purity and entropy are natural functions on $\mathbb{B}_{\Psi}$.** Both the purity $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}^2)$ and the entropy $-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}\log\tilde{Ϛ}_{\Psi,1})$ are expressed in terms of the scalar part on $\mathbb{B}$. The reduced state's mixedness is measured by these functions, and for the singlet the reduced state is maximally mixed.
 
@@ -277,9 +277,9 @@ The comparison with a product state — where the reduced state is pure — illu
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $|\tilde{Ξ}^-\rangle$ | Singlet state |
-| $\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_\eta \vec e_\eta\otimes \vec e_\eta)$ | Singlet idempotent |
+| $\tilde\Pi_{\mathrm{id,singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_\eta \vec e_\eta\otimes \vec e_\eta)$ | Singlet idempotent |
 | $\mathrm{Sc}_2(a\otimes b) = a\,\mathrm{Sc}(b)$ | Scalar part in the second factor; the reduction is $2\,\mathrm{Sc}_2$ |
-| $\tilde{Ϛ}_{\Psi,1} = 2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{singlet}})$ | Reduced state of particle 1 |
+| $\tilde{Ϛ}_{\Psi,1} = 2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{id,singlet}})$ | Reduced state of particle 1 |
 | $\frac{1}{2}e_t$ | Maximally mixed state of a qubit |
 | $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}^2)$ | Purity of the reduced state |
 | $S(\tilde{Ϛ}_{\Psi,1}) = -2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}\log\tilde{Ϛ}_{\Psi,1})$ | von Neumann entropy |

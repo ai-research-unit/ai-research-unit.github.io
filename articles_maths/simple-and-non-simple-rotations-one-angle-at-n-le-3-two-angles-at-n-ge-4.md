@@ -128,10 +128,10 @@ of dimension $m=\lfloor n/2\rfloor$. So the angles are a complete set of invaria
 
 **At $n=2$ the single angle is the whole rotation and the class space is a segment.** The rotation by $\theta$ has the class $[\theta]$ with $\theta\in[0,\pi]$, and the two endpoints are the identity and minus the identity. The computation confirms the spectrum and the rank of $Q-\mathrm{I}$, and it shows that the class space of the planar rotation is the segment of the angles.
 
-**In the biquaternion frame the angle is the phase of the rotor.** With $\tilde\Pi_\pm$ the idempotent pair, a planar rotation is
+**In the biquaternion frame the angle is the phase of the rotor.** With $\tilde\Pi_{\mathrm{id},\pm}$ the idempotent pair, a planar rotation is
 
 $$
-Q=\lambda\,\tilde\Pi_++\bar\lambda\,\tilde\Pi_-,\qquad |\lambda|=1,
+Q=\lambda\,\tilde\Pi_{\mathrm{id},++}\bar\lambda\,\tilde\Pi_{\mathrm{id},-},\qquad |\lambda|=1,
 $$
 
 so the single angle is the argument of $\lambda$, and the two signs of the rotor are the two square roots of $\lambda$. The computation confirms the identity, and it exhibits the whole conjugacy class of the planar rotation as the circle of the phases of $\lambda$, which is the segment of the angles read modulo the identification of the endpoints.
@@ -153,7 +153,7 @@ A rotation is simple when it turns one plane and fixes the rest, which is the ca
 | $e^{\pm i\theta_1},e^{\pm i\theta_2}$ | the spectrum of a generic four-space rotation |
 | $\lfloor n/2\rfloor$ | the number of independent angles, the rank |
 | $0\le\theta_m\le\dots\le\theta_1\le\pi$ | the simplex of the conjugacy classes |
-| $Q=\lambda\tilde\Pi_++\bar\lambda\tilde\Pi_-$ | the planar rotation in the biquaternion frame |
+| $Q=\lambda\tilde\Pi_{\mathrm{id},++}\bar\lambda\tilde\Pi_{\mathrm{id},-}$ | the planar rotation in the biquaternion frame |
 
 ## Further Reading
 

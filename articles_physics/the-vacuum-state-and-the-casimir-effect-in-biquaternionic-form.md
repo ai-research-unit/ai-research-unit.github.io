@@ -10,7 +10,7 @@ A second trap is a factor of two. The bookkeeping of polarisations in the covari
 
 The division between what is established and what is interpretation is stated here and kept throughout.
 
-- **Established, and recomputed below.** The one-mode vacuum state of the framework is an idempotent of the informational sector $\mathbb{B}_{\Psi}$, and the reduction formula $2\,\mathrm{Sc}(\tilde\Pi_+\tilde H_\Psi^{*})$ gives vacuum expectation values for one fermionic mode once $\tilde\Pi_+$ is defined below. The zero-point energy of the free Maxwell field is a **central scalar** — a multiple of $e_t$ — so it commutes with everything and is unobservable as a constant, exactly as the harmonic-oscillator article records for the trace part of a Hamiltonian. Its dependence on the plate separation, however, is not constant. The bare mode sum diverges; the spectral-zeta route and the heat-kernel route give, independently,
+- **Established, and recomputed below.** The one-mode vacuum state of the framework is an idempotent of the informational sector $\mathbb{B}_{\Psi}$, and the reduction formula $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},+}\tilde H_\Psi^{*})$ gives vacuum expectation values for one fermionic mode once $\tilde\Pi_{\mathrm{id},+}$ is defined below. The zero-point energy of the free Maxwell field is a **central scalar** — a multiple of $e_t$ — so it commutes with everything and is unobservable as a constant, exactly as the harmonic-oscillator article records for the trace part of a Hamiltonian. Its dependence on the plate separation, however, is not constant. The bare mode sum diverges; the spectral-zeta route and the heat-kernel route give, independently,
 $$
 \boxed{\;\frac{E_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\,\hbar\,c}{720\,a^{3}},\qquad
 \frac{F_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\,\hbar\,c}{240\,a^{4}}\;},
@@ -33,21 +33,21 @@ The question that is specific to the framework is: **is the vacuum state an obje
 
 **The one-mode vacuum is native.** For a single fermionic mode the algebra contains the whole ladder, as *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* establishes. With
 $$
-\vec\Upsilon_x=\tfrac12\big(i\vec e_x-\vec e_y\big),\qquad
-\vec\Upsilon_y=\tfrac12\big(i\vec e_x+\vec e_y\big),\qquad
-\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t,
+\vec\Pi_{\mathrm{nil},x}=\tfrac12\big(i\vec e_x-\vec e_y\big),\qquad
+\vec\Pi_{\mathrm{nil},y}=\tfrac12\big(i\vec e_x+\vec e_y\big),\qquad
+\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\}=e_t,
 $$
 the number operator is the idempotent
 $$
-\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12\big(e_t-i\vec e_z\big)\in\mathbb{B}_{\Psi},
+\tilde\Pi_{\mathrm{id},-}=\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}=\tfrac12\big(e_t-i\vec e_z\big)\in\mathbb{B}_{\Psi},
 $$
 so the **vacuum idempotent** is the complementary one
 $$
-\boxed{\;\vert 0\rangle\langle 0\vert=e_t-\tilde\Pi_-=\tfrac12\big(e_t+i\vec e_z\big)=\tilde\Pi_+\in\mathbb{B}_{\Psi}\;}.
+\boxed{\;\vert 0\rangle\langle 0\vert=e_t-\tilde\Pi_{\mathrm{id},-}=\tfrac12\big(e_t+i\vec e_z\big)=\tilde\Pi_{\mathrm{id},+}\in\mathbb{B}_{\Psi}\;}.
 $$
-Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. The vacuum state is therefore realized, for one mode, as a pure-state idempotent of the informational sector, and the fermion parity is the Hermitian element $(-1)^F=e_t-2\tilde\Pi_-=i\vec e_z$. A vacuum expectation value of an observable $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ is then the pairing formula
+Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$ are its two associated idempotents. The vacuum state is therefore realized, for one mode, as a pure-state idempotent of the informational sector, and the fermion parity is the Hermitian element $(-1)^F=e_t-2\tilde\Pi_{\mathrm{id},-}=i\vec e_z$. A vacuum expectation value of an observable $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ is then the pairing formula
 $$
-\langle\tilde H_\Psi\rangle_{0}=2\,\mathrm{Sc}\big(|0\rangle_{*}\langle 0|\,\tilde H_\Psi\big)=2\,\mathrm{Sc}\big(\tilde\Pi_+\tilde H_\Psi\big),
+\langle\tilde H_\Psi\rangle_{0}=2\,\mathrm{Sc}\big(|0\rangle_{*}\langle 0|\,\tilde H_\Psi\big)=2\,\mathrm{Sc}\big(\tilde\Pi_{\mathrm{id},+}\tilde H_\Psi\big),
 $$
 which is the Born rule of the informational sector specialized to the vacuum. This is the one place where the framework's vacuum is genuinely algebraic rather than transcribed.
 
@@ -257,8 +257,8 @@ Both routes give $-\frac{\pi^{2}\,\hbar\,c}{240\,a^{4}}$, and both were recomput
 
 | Feature | Status in the framework | Where it comes from |
 |---|---|---|
-| Vacuum state (one fermionic mode) | Native | idempotent $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)\in\mathbb{B}_{\Psi}$; pairing formula |
-| Vacuum expectation values (one mode) | Native | $\langle\tilde H_\Psi\rangle_0=2\,\mathrm{Sc}(\tilde\Pi_+\tilde H_\Psi^{*})$ |
+| Vacuum state (one fermionic mode) | Native | idempotent $\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z)\in\mathbb{B}_{\Psi}$; pairing formula |
+| Vacuum expectation values (one mode) | Native | $\langle\tilde H_\Psi\rangle_0=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},+}\tilde H_\Psi^{*})$ |
 | Fermion parity of the vacuum | Native | $(-1)^F=i\vec e_z$ |
 | Zero-point energy as a central scalar | Native (interpretation) | trace part of $\tilde H_\Psi$; commutes |
 | Two physical transverse polarisations | Native | $\vec u_\Phi$-orthogonal plane in $\mathrm{Vect}(\mathbb{B}_{\Phi})$ |
@@ -299,7 +299,7 @@ This suggests, but does not establish, a genuinely biquaternionic route to the f
 
 ## Summary
 
-The **vacuum state** of the biquaternion framework is not a biquaternion. For a **single fermionic mode** it is genuinely algebraic: the vacuum idempotent is $|0\rangle_{*}\langle 0|=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)\in\mathbb{B}_{\Psi}$, and vacuum expectation values are given by the reduction formula $2\,\mathrm{Sc}(\tilde\Pi_+\tilde H_\Psi^{*})$. For a **field** it is the standard Fock vacuum of a module, because the algebra contains no bosonic ladder: no pair in $\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$, since a commutator has vanishing scalar part while $2\,\mathrm{Sc}(e_t)=2$.
+The **vacuum state** of the biquaternion framework is not a biquaternion. For a **single fermionic mode** it is genuinely algebraic: the vacuum idempotent is $|0\rangle_{*}\langle 0|=\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z)\in\mathbb{B}_{\Psi}$, and vacuum expectation values are given by the reduction formula $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},+}\tilde H_\Psi^{*})$. For a **field** it is the standard Fock vacuum of a module, because the algebra contains no bosonic ladder: no pair in $\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$, since a commutator has vanishing scalar part while $2\,\mathrm{Sc}(e_t)=2$.
 
 The **zero-point energy** of the free Maxwell field is a central scalar — the trace part of the Hamiltonian, a multiple of $e_t$ — and is therefore unobservable as a constant, in the same sense as the harmonic oscillator's trace part. Its dependence on the plate separation is what is observable. The bare Casimir mode sum diverges quartically, with cutoff powers $\Lambda^{4}$ and $\Lambda^{2}$ and surface terms; the physical mode-density subtraction cancels the volume divergence and leaves behind only $a$-independent plate self-energies and a finite, $a$-dependent remainder.
 
@@ -325,9 +325,9 @@ Two gaps are left visible. The algebra has no native bosonic ladder, so the phot
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre of the algebra; home of the zero-point scalar |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar-part reading of the plain form; $2\,\mathrm{Sc}(e_t)=2$ |
-| $\vec\Upsilon_x,\vec\Upsilon_y$ | One-mode ladder, $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ |
-| $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | One-mode number operator (idempotent) |
-| $\vert 0\rangle\langle 0\vert=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | One-mode vacuum idempotent (in $\mathbb{B}_{\Psi}$) |
+| $\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}$ | One-mode ladder, $\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\}=e_t$ |
+| $\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec e_z)$ | One-mode number operator (idempotent) |
+| $\vert 0\rangle\langle 0\vert=\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z)$ | One-mode vacuum idempotent (in $\mathbb{B}_{\Psi}$) |
 | $(-1)^F=i\vec e_z$ | Fermion parity (single mode) |
 | $\vert 0\rangle_{*}$ | Field vacuum, degree-zero term of the Fock space |
 | $a_{\mathrm{fop},r},a_{\mathrm{fop},r}^{\dagger}$, $\epsilon^{(r)}_\mu$ | Covariant mode operators and polarization vectors |

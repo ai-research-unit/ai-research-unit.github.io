@@ -546,7 +546,7 @@ The biquaternionic form is the corpus's own statement of Maxwell's equations, de
 **The objection.** In Alexeyeva's account the classical system has three faults: the two vector equations are not connected to the two scalar equations; the resulting system is "of a mixed hyperbolic–elliptic type", which she holds to contradict the wave nature of electromagnetic propagation; and it does not describe the longitudinal electromagnetic waves she takes to be observed. The first two are precise and reproducible. The vector pair's characteristic equation is
 
 $$
-\nu_\tau^2\left(\frac{\nu_\tau^2}{c^2} - \|\vec\nu\|^2\right)^2 = 0,
+\nu_\tau^2\left(\frac{\nu_\tau^2}{c^2} - \|\tilde\Omega\|^2\right)^2 = 0,
 $$
 
 so the vector system is hyperbolic with the light cone for its characteristics, while the scalar pair $\epsilon\,\mathrm{div}\,\vec E = \rho_E$, $\mathrm{div}\,\vec H = 0$ is purely spatial and elliptic; its Coulomb potential solves $\Delta_\Phi \xi_{\mathrm{scp}} = \rho_E$, whose solution decays at infinity, which the author reads as incompatible with propagation. The corpus's own interpretation is the standard one: the vector equations are the **evolution** system and the scalar equations are **constraints** on its initial data, and the two are not meant to be joined by further dynamics. That the constraint sector is elliptic is a feature of the $3+1$ split, not a defect of the four-dimensional equation. The disagreement is one of interpretation, and the corpus records it only because the modification is built on it.

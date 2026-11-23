@@ -324,7 +324,7 @@ $$
 
 **Corollary.** $\mathbb{H}$ has no zero divisors, no nonzero nilpotent and no idempotent other than $0$ and $e_t$.
 
-*Proof.* A zero divisor $\tilde q$ would have a nonzero annihilator, and multiplying $\tilde q\tilde p=0$ by $\tilde q^{\natural}$ gives $\langle\tilde q\rangle_{\natural}\tilde p=0$, hence $\tilde p=0$. A nilpotent has zero norm, because $\langle\tilde q^k\rangle_{\natural}=\langle\tilde q\rangle_{\natural}^{k}$. An idempotent satisfies $\langle\tilde\Pi\rangle_{\natural}=\langle\tilde\Pi^2\rangle_{\natural}=\langle\tilde\Pi\rangle_{\natural}^{2}$, so its norm is $0$ or $1$, and the first case is $\tilde\Pi=0$ while the second forces all three vector coefficients to vanish and $q_t^2=q_t$. ∎
+*Proof.* A zero divisor $\tilde q$ would have a nonzero annihilator, and multiplying $\tilde q\tilde p=0$ by $\tilde q^{\natural}$ gives $\langle\tilde q\rangle_{\natural}\tilde p=0$, hence $\tilde p=0$. A nilpotent has zero norm, because $\langle\tilde q^k\rangle_{\natural}=\langle\tilde q\rangle_{\natural}^{k}$. An idempotent satisfies $\langle\tilde\Pi_{\mathrm{id}}\rangle_{\natural}=\langle\tilde\Pi_{\mathrm{id}}^2\rangle_{\natural}=\langle\tilde\Pi_{\mathrm{id}}\rangle_{\natural}^{2}$, so its norm is $0$ or $1$, and the first case is $\tilde\Pi_{\mathrm{id}}=0$ while the second forces all three vector coefficients to vanish and $q_t^2=q_t$. ∎
 
 **The check.** The inverse identity on one hundred random elements, both sides, gave a largest residual of $2.2\times10^{-16}$; one hundred random real elements were tested against the idempotent equation and none satisfied it, the two solutions of the corollary aside.
 

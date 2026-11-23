@@ -53,23 +53,23 @@ $$
 These are the Riesz projectors of $A$, and they are exactly the matrix images of the biquaternion eigenprojections:
 
 $$
-P_\pm=\mathsf M_2(\tilde\Pi_\pm),
+P_\pm=\mathsf M_2(\tilde\Pi_{\mathrm{id},\pm}),
 \qquad
-\tilde\Pi_\pm=\frac12\left(e_t\pm\vec{Ζ}\right),
+\tilde\Pi_{\mathrm{id},\pm}=\frac12\left(e_t\pm\vec{Ζ}\right),
 \qquad
 \vec{Ζ}=-\frac{i\vec Q}{B}.
 $$
 
-The biquaternion relations $\tilde\Pi_\pm^2=\tilde\Pi_\pm$, $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$ are the same statement as the biorthogonality and the completeness of the two eigenbases. The translation is exact because the matrix model is an isomorphism.
+The biquaternion relations $\tilde\Pi_{\mathrm{id},\pm}^2=\tilde\Pi_{\mathrm{id},\pm}$, $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$ and $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$ are the same statement as the biorthogonality and the completeness of the two eigenbases. The translation is exact because the matrix model is an isomorphism.
 
 | Biorthogonal object | Matrix form | Biquaternion form |
 | --- | --- | --- |
-| right eigenvector | column of $P_\pm$ | a nonzero column of $\mathsf M_2(\tilde\Pi_\pm)$ |
-| left eigenvector | row of $P_\pm$ | a nonzero row of $\mathsf M_2(\tilde\Pi_\pm)$ |
+| right eigenvector | column of $P_\pm$ | a nonzero column of $\mathsf M_2(\tilde\Pi_{\mathrm{id},\pm})$ |
+| left eigenvector | row of $P_\pm$ | a nonzero row of $\mathsf M_2(\tilde\Pi_{\mathrm{id},\pm})$ |
 | pairing | $\ell_\pm^{\dagger}r_\pm=1$, $\ell_+^{\dagger}r_-=0$ | $P_\pm^2=P_\pm$, $P_+P_-=0$ |
-| completeness | $P_++P_-=I_2$ | $\tilde\Pi_++\tilde\Pi_-=e_t$ |
-| spectral writing | $A=\lambda_+P_++\lambda_-P_-$ | $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ |
-| dual family | $P_\pm^{\dagger}$ | $\tilde\Pi_\pm^{*}$ |
+| completeness | $P_++P_-=I_2$ | $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$ |
+| spectral writing | $A=\lambda_+P_++\lambda_-P_-$ | $\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$ |
+| dual family | $P_\pm^{\dagger}$ | $\tilde\Pi_{\mathrm{id},\pm}^{*}$ |
 
 The last row is the whole difference from the Hermitian case. When $P_\pm=P_\pm^{\dagger}$ the dual family is the family itself and the two bases coincide. When it is not, the dual family is a second, different family.
 
@@ -81,13 +81,13 @@ $$
 \operatorname{tr}\left(P_+^{\dagger}P_-\right)\neq0
 $$
 
-in general. In the biquaternion this number is $2\operatorname{Sc}\left(\tilde\Pi_+^{*}\tilde\Pi_-\right)$, and it vanishes exactly when the two idempotents are Hermitian, that is, when $\tilde Q$ is normal.
+in general. In the biquaternion this number is $2\operatorname{Sc}\left(\tilde\Pi_{\mathrm{id},+}^{*}\tilde\Pi_{\mathrm{id},-}\right)$, and it vanishes exactly when the two idempotents are Hermitian, that is, when $\tilde Q$ is normal.
 
 The size of the non-orthogonality is measured by the **Petermann factor**, which the two projectors share,
 
 $$
 \kappa=\operatorname{tr}\left(P_\pm^{\dagger}P_\pm\right)
-=2\operatorname{Sc}\left(\tilde\Pi_\pm^{*}\tilde\Pi_\pm\right).
+=2\operatorname{Sc}\left(\tilde\Pi_{\mathrm{id},\pm}^{*}\tilde\Pi_{\mathrm{id},\pm}\right).
 $$
 
 For a rank-one projector $P=r\ell^{\dagger}/(\ell^{\dagger}r)$,
@@ -104,14 +104,14 @@ $$
 \kappa_+=\kappa_-=\frac{1+\lVert\rho\rVert^2}{2}=1+\frac{\lVert\rho\rVert^2-1}{2}.
 $$
 
-*Proof.* Write $\tilde\Pi_\pm=\tfrac12(e_t\mp i\rho)$, and recall $\rho^*=-\bar\rho$, so $\tilde\Pi_\pm^*=\tfrac12(e_t\mp i\bar\rho)$. Multiplying,
+*Proof.* Write $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\mp i\rho)$, and recall $\rho^*=-\bar\rho$, so $\tilde\Pi_{\mathrm{id},\pm}^*=\tfrac12(e_t\mp i\bar\rho)$. Multiplying,
 
 $$
-\tilde\Pi_\pm^*\tilde\Pi_\pm
+\tilde\Pi_{\mathrm{id},\pm}^*\tilde\Pi_{\mathrm{id},\pm}
 =\tfrac14\left(e_t\mp i(\rho+\bar\rho)-\bar\rho\rho\right).
 $$
 
-The term $\rho+\bar\rho$ is a vector, of zero scalar part. For the last term, $\bar\rho\rho=\sum_{\eta,l}\bar\rho_\eta\rho_le_\eta e_l$, and only $\eta=l$ contributes to the scalar part, with $e_\eta^2=-e_t$; hence $\operatorname{Sc}(\bar\rho\rho)=-\sum_\eta\lvert\rho_\eta\rvert^2=-\lVert\rho\rVert^2$. Therefore $\operatorname{Sc}(\tilde\Pi_\pm^*\tilde\Pi_\pm)=\tfrac14(1+\lVert\rho\rVert^2)$ for either sign. The functional $2\operatorname{Sc}$ is the trace of $\mathbb{B}$, since $2\operatorname{Sc}(XY)=2\operatorname{Sc}(YX)$ and $2\operatorname{Sc}(e_t)=2$; hence the common $\kappa=2\operatorname{Sc}(\tilde\Pi_\pm^*\tilde\Pi_\pm)=\tfrac12(1+\lVert\rho\rVert^2)$.
+The term $\rho+\bar\rho$ is a vector, of zero scalar part. For the last term, $\bar\rho\rho=\sum_{\eta,l}\bar\rho_\eta\rho_le_\eta e_l$, and only $\eta=l$ contributes to the scalar part, with $e_\eta^2=-e_t$; hence $\operatorname{Sc}(\bar\rho\rho)=-\sum_\eta\lvert\rho_\eta\rvert^2=-\lVert\rho\rVert^2$. Therefore $\operatorname{Sc}(\tilde\Pi_{\mathrm{id},\pm}^*\tilde\Pi_{\mathrm{id},\pm})=\tfrac14(1+\lVert\rho\rVert^2)$ for either sign. The functional $2\operatorname{Sc}$ is the trace of $\mathbb{B}$, since $2\operatorname{Sc}(XY)=2\operatorname{Sc}(YX)$ and $2\operatorname{Sc}(e_t)=2$; hence the common $\kappa=2\operatorname{Sc}(\tilde\Pi_{\mathrm{id},\pm}^*\tilde\Pi_{\mathrm{id},\pm})=\tfrac12(1+\lVert\rho\rVert^2)$.
 
 The excess Petermann factor is therefore half the norm deficit $\lVert\rho\rVert^2-1$ of *Relations between the Biquaternion Exponential and the Fourier Kernel*, §*Normality, Unitarity and the Hermitian Norm of the Flow*. The same distance from normality is read twice: as the amplitude $\lVert\rho\rVert^2$ of the oscillating term in the flow, and as the factor $(1+\lVert\rho\rVert^2)/2$ of the projectors. The factor is one exactly when $\lVert\rho\rVert^2=1$, that is exactly when $\rho$ is real, which is the normality criterion of *The Biquaternion Eigenvalue Decomposition*, §*The Hermitian Case*. It is a factor, not a rate: it does not set the growth of the flow, which is carried by $Q_t$ and $B$.
 
@@ -125,14 +125,14 @@ $$
 
 Hence $\kappa\ge1$ is the triangle inequality $\lvert\sum_\eta Q_\eta^2\rvert\le\sum_\eta\lvert Q_\eta\rvert^2$, with equality exactly when the $Q_\eta^2$ have one argument, that is, exactly when $\rho$ is real. This is a second proof of the bound, independent of Cauchy–Schwarz.
 
-The cross term is the same number. From $\tilde\Pi_+^*\tilde\Pi_-=\tfrac14\bigl(e_t+i(\rho-\bar\rho)+\bar\rho\rho\bigr)$ and $\operatorname{Sc}(\bar\rho\rho)=-\lVert\rho\rVert^2$,
+The cross term is the same number. From $\tilde\Pi_{\mathrm{id},+}^*\tilde\Pi_{\mathrm{id},-}=\tfrac14\bigl(e_t+i(\rho-\bar\rho)+\bar\rho\rho\bigr)$ and $\operatorname{Sc}(\bar\rho\rho)=-\lVert\rho\rVert^2$,
 
 $$
-2\operatorname{Sc}\left(\tilde\Pi_+^*\tilde\Pi_-\right)=\tfrac12\left(1-\lVert\rho\rVert^2\right)=1-\kappa
-=2\operatorname{Sc}\left(\tilde\Pi_-^*\tilde\Pi_+\right).
+2\operatorname{Sc}\left(\tilde\Pi_{\mathrm{id},+}^*\tilde\Pi_{\mathrm{id},-}\right)=\tfrac12\left(1-\lVert\rho\rVert^2\right)=1-\kappa
+=2\operatorname{Sc}\left(\tilde\Pi_{\mathrm{id},-}^*\tilde\Pi_{\mathrm{id},+}\right).
 $$
 
-The Gram form on the span of the two projectors, taken in the Hermitian pairing $\langle X,Y\rangle=2\operatorname{Sc}(X^*Y)$, therefore has the value $\kappa$ on the diagonal and $1-\kappa$ off it. It is positive definite with eigenvalues $1$ and $\lVert\rho\rVert^2$: the eigenvalue $1$ is the completeness relation $\tilde\Pi_++\tilde\Pi_-=e_t$, the other is the norm deficit. The projectors are orthogonal exactly when $\kappa=1$; otherwise their overlap $1-\kappa$ is minus the excess.
+The Gram form on the span of the two projectors, taken in the Hermitian pairing $\langle X,Y\rangle=2\operatorname{Sc}(X^*Y)$, therefore has the value $\kappa$ on the diagonal and $1-\kappa$ off it. It is positive definite with eigenvalues $1$ and $\lVert\rho\rVert^2$: the eigenvalue $1$ is the completeness relation $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$, the other is the norm deficit. The projectors are orthogonal exactly when $\kappa=1$; otherwise their overlap $1-\kappa$ is minus the excess.
 
 Near the cone, with $\lVert\vec Q\rVert^2$ fixed and $\lvert B^2\rvert\to0$,
 
@@ -186,16 +186,16 @@ A density matrix is the case in which the whole apparatus collapses. A state $\t
 
 $$
 \boxed{\;p_\pm=\operatorname{tr}\left(\rho_{\mathrm{st}} P_\pm\right)
-=2\operatorname{Sc}\left(\tilde{Ϛ}_{\Psi}\tilde\Pi_\pm\right),
+=2\operatorname{Sc}\left(\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id},\pm}\right),
 \qquad
-\tilde\Pi_\pm=\tilde\Pi_\pm^{*}\;}.
+\tilde\Pi_{\mathrm{id},\pm}=\tilde\Pi_{\mathrm{id},\pm}^{*}\;}.
 $$
 
 The contrast is the conceptual content of the article. The spectral decomposition alone does not give a probability; **normality** gives it. The density matrix is normal by construction, so the Born rule is the orthogonal case of the biorthogonal rule. A non-normal element is not a state: it is an operator, an effective Hamiltonian or a generator, and its biorthogonal weights are a reading of its modes, not the probabilities of a measurement of that element.
 
 | Case | Element | Metric | Weights |
 | --- | --- | --- | --- |
-| quantum state | $\tilde{Ϛ}_{\Psi}$ Hermitian, positive, trace one | $\eta=I$ | $p_\pm=2\operatorname{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\pm)$ |
+| quantum state | $\tilde{Ϛ}_{\Psi}$ Hermitian, positive, trace one | $\eta=I$ | $p_\pm=2\operatorname{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id},\pm})$ |
 | normal observable | $\tilde H_\Psi$ normal, distinct spectrum | $\eta=I$ on the eigenbasis | $p_\pm=\lvert c_\pm\rvert^{2}$ |
 | non-normal operator | $\tilde Q$ with $B\neq0$ | $\eta=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$ | $p_\pm=\lvert c_\pm\rvert^{2}/\langle\tilde{Ξ},\eta\tilde{Ξ}\rangle$ |
 | exceptional point | $B=0$, $\vec Q\neq0$ | no eigenbasis | no rule |
@@ -224,14 +224,14 @@ No dynamics, no arrow of time and no preferred metric are supplied. The article 
 
 ## Summary
 
-- For $B\neq0$ a biquaternion has distinct eigenvalues $\lambda_\pm=Q_t\pm iB$ and a spectral decomposition with idempotents $\tilde\Pi_\pm$.
+- For $B\neq0$ a biquaternion has distinct eigenvalues $\lambda_\pm=Q_t\pm iB$ and a spectral decomposition with idempotents $\tilde\Pi_{\mathrm{id},\pm}$.
 - The idempotents need not be Hermitian; the right and left eigenvectors then form two dual bases, and the projectors are $P_\pm=r_\pm\ell_\pm^{\dagger}$.
-- The biquaternion relations $\tilde\Pi_\pm^2=\tilde\Pi_\pm$, $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$ are the biorthogonality and completeness of the two bases.
-- The two eigendirections are orthogonal as idempotents and non-orthogonal in the Hilbert space; the cross inner product $2\operatorname{Sc}(\tilde\Pi_+^{*}\tilde\Pi_-)$ measures the failure.
-- The Petermann factor $\kappa=2\operatorname{Sc}(\tilde\Pi_\pm^{*}\tilde\Pi_\pm)$ is at least one and equals one exactly when the element is normal.
+- The biquaternion relations $\tilde\Pi_{\mathrm{id},\pm}^2=\tilde\Pi_{\mathrm{id},\pm}$, $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$ and $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$ are the biorthogonality and completeness of the two bases.
+- The two eigendirections are orthogonal as idempotents and non-orthogonal in the Hilbert space; the cross inner product $2\operatorname{Sc}(\tilde\Pi_{\mathrm{id},+}^{*}\tilde\Pi_{\mathrm{id},-})$ measures the failure.
+- The Petermann factor $\kappa=2\operatorname{Sc}(\tilde\Pi_{\mathrm{id},\pm}^{*}\tilde\Pi_{\mathrm{id},\pm})$ is at least one and equals one exactly when the element is normal.
 - The Petermann factor is the norm deficit, $\kappa=(1+\lVert\rho\rVert^2)/2=(\lVert\vec Q\rVert^2+\lvert B^2\rvert)/(2\lvert B^2\rvert)$ with $\rho=\vec Q/B$: the excess $\kappa-1$ is half the deficit $\lVert\rho\rVert^2-1$ of the flow, and the Gram form of the two projectors has eigenvalues $1$ and $\lVert\rho\rVert^2$.
 - The biorthogonal probability rule is $p_\pm=\lvert\ell_\pm^{\dagger}\tilde{Ξ}\rvert^{2}/\langle\tilde{Ξ},\eta\tilde{Ξ}\rangle$ with $\eta=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$; it is not the Born rule unless $\eta=I$.
-- A density matrix is normal, so its eigenprojections are Hermitian and the biorthogonal rule reduces to the Born rule $p_\pm=2\operatorname{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\pm)$.
+- A density matrix is normal, so its eigenprojections are Hermitian and the biorthogonal rule reduces to the Born rule $p_\pm=2\operatorname{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id},\pm})$.
 - At an exceptional point the two bases coalesce and the metric degenerates; the probability rule has no limit there.
 - The algebra supplies the decomposition and the projectors, not the metric, the dynamics or the arrow of time.
 
@@ -244,10 +244,10 @@ No dynamics, no arrow of time and no preferred metric are supplied. The article 
 | $\rho=\vec Q/B$ | the root of $-1$ supplied by the element, $\lVert\rho\rVert^2=\sum_\eta\lvert\rho_\eta\rvert^2$ |
 | $\lVert\vec Q\rVert^2=\sum_\eta\lvert Q_\eta\rvert^2$ | the Euclidean square of the complex vector part |
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ | the eigenprojections, $\vec{Ζ}=-i\vec Q/B$ |
+| $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\vec{Ζ})$ | the eigenprojections, $\vec{Ζ}=-i\vec Q/B$ |
 | $A=\mathsf M_2(\tilde Q)$ | the $2\times2$ matrix image |
 | $r_\pm$, $\ell_\pm$ | right and left eigenvectors, $\ell_\pm^{\dagger}r_\pm=1$ and $\ell_+^{\dagger}r_-=\ell_-^{\dagger}r_+=0$ |
-| $P_\pm=r_\pm\ell_\pm^{\dagger}$ | the spectral projector, $\mathsf M_2(\tilde\Pi_\pm)$ |
+| $P_\pm=r_\pm\ell_\pm^{\dagger}$ | the spectral projector, $\mathsf M_2(\tilde\Pi_{\mathrm{id},\pm})$ |
 | $\kappa$ | the Petermann factor, the same for both projectors, $\operatorname{tr}(P_\pm^{\dagger}P_\pm)=(1+\lVert\rho\rVert^2)/2$ |
 | $\eta=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$ | the metric of the biorthogonal basis |
 | $\tilde{Ϛ}_{\Psi}$ | a density matrix, Hermitian, positive, trace one |

@@ -60,7 +60,7 @@ Two carriers, one angle. For a unit rotor $\tilde u=\cos\tfrac{\varphi}{2}+\sin\
 
 Left multiplication does not rotate the vector part: $L_{\tilde u}$ does not map $\mathfrak{k}$ into itself unless $\tilde u$ is real. The two statements are both true of different maps, and an article that names one and writes the other has written a wrong factor.
 
-**The ideal is a family, and no result depends on the member.** $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm(\vec u_{\mathrm r})$ with $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ depends on the axis $\vec u_{\mathrm r}$, and the algebra contains one such ideal for every point of $S^2$. All minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are isomorphic as left modules, so a result proved for one holds for all, and every display that writes a Peirce basis declares the axis it used.
+**The ideal is a family, and no result depends on the member.** $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})$ with $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ depends on the axis $\vec u_{\mathrm r}$, and the algebra contains one such ideal for every point of $S^2$. All minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are isomorphic as left modules, so a result proved for one holds for all, and every display that writes a Peirce basis declares the axis it used.
 
 The generators. $T_a=\tfrac12\vec e_a$ with $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$, so $[T_a,T_b]=\varepsilon_{abc}T_c$ and $f_{abc}=2\varepsilon_{abc}$ in the $\vec e_a$ basis. The normalisation is not cosmetic: the factor two is the half-angle of the paragraph above, and it is the constant that appears in the three-boson vertex.
 

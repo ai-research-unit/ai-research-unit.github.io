@@ -329,7 +329,7 @@ with $a=\sqrt{H(\tilde Q)/2}$ and $\lvert\vec W\rvert=2a^{2}$. The amplitude is 
 The amplitude is twice a scale times a minimal projection.
 
 $$
-\tilde Q_H=2a\,\tilde\Pi_{\vec u},\qquad
+\tilde Q_H=2a\,\tilde\Pi_{\mathrm{id},\vec u},\qquad
 \vec u=\frac{\vec W}{\lvert\vec W\rvert},
 \qquad
 \tilde Q_0=\frac{\tilde Q}{2a},
@@ -340,7 +340,7 @@ and the frame is the element divided by the same scale. The scale here is not th
 The two invariants of the cone are the two strata.
 
 $$
-\tilde Q=2a\,\tilde\Pi_{\vec u}\quad(Q_t\neq0)
+\tilde Q=2a\,\tilde\Pi_{\mathrm{id},\vec u}\quad(Q_t\neq0)
 \qquad\text{and}\qquad
 \tilde Q=\vec Q\quad(\tilde Q^{2}=0),
 $$

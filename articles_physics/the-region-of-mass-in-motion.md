@@ -96,38 +96,38 @@ Every element of the region carries a Peirce basis in which its own left multipl
 $$
 \vec U=\frac{\vec Q}{B},\qquad
 \vec{Ζ}=-i\vec U,\qquad
-\tilde\Pi_\pm=\frac{e_t\pm\vec{Ζ}}{2},\qquad
+\tilde\Pi_{\mathrm{id},\pm}=\frac{e_t\pm\vec{Ζ}}{2},\qquad
 \vec{Ζ}^{2}=e_t,
 $$
 
-and a pair of nilpotents $\vec\Upsilon_\pm$ in the two mixed corners with
+and a pair of nilpotents $\vec\Pi_{\mathrm{nil},\pm}$ in the two mixed corners with
 
 $$
-\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\qquad
-\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,\qquad
-\vec\Upsilon_\pm^{2}=0.
+\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-},\qquad
+\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+},\qquad
+\vec\Pi_{\mathrm{nil},\pm}^{2}=0.
 $$
 
-The four elements $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ are a basis of $\mathbb{B}$, and
+The four elements $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$ are a basis of $\mathbb{B}$, and
 
 $$
-\tilde Q\tilde\Pi_+=\lambda_+\tilde\Pi_+,\quad
-\tilde Q\vec\Upsilon_-=\lambda_+\vec\Upsilon_-,\quad
-\tilde Q\vec\Upsilon_+=\lambda_-\vec\Upsilon_+,\quad
-\tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_-,
+\tilde Q\tilde\Pi_{\mathrm{id},+}=\lambda_+\tilde\Pi_{\mathrm{id},+},\quad
+\tilde Q\vec\Pi_{\mathrm{nil},-}=\lambda_+\vec\Pi_{\mathrm{nil},-},\quad
+\tilde Q\vec\Pi_{\mathrm{nil},+}=\lambda_-\vec\Pi_{\mathrm{nil},+},\quad
+\tilde Q\tilde\Pi_{\mathrm{id},-}=\lambda_-\tilde\Pi_{\mathrm{id},-},
 $$
 
 so the matrix of left multiplication is $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$. The same basis gives the right multiplication as $\operatorname{diag}(\lambda_+,\lambda_-,\lambda_+,\lambda_-)$.
 
-The basis depends on the element. Its root $\vec{Ζ}$ is built from $\vec Q$, and the corners and the ideals move with it. The pair of nilpotents is unique up to the reciprocal rescaling $\vec\Upsilon_+\mapsto\mu\vec\Upsilon_+$, $\vec\Upsilon_-\mapsto\mu^{-1}\vec\Upsilon_-$, and a normalisation removes that freedom.
+The basis depends on the element. Its root $\vec{Ζ}$ is built from $\vec Q$, and the corners and the ideals move with it. The pair of nilpotents is unique up to the reciprocal rescaling $\vec\Pi_{\mathrm{nil},+}\mapsto\mu\vec\Pi_{\mathrm{nil},+}$, $\vec\Pi_{\mathrm{nil},-}\mapsto\mu^{-1}\vec\Pi_{\mathrm{nil},-}$, and a normalisation removes that freedom.
 
 ### The Two Spinor Spaces
 
 The two minimal left ideals are the two spinor spaces, and each carries both eigenvalues.
 
 $$
-S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,\qquad
-S_-=\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-,\qquad
+S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},+},\qquad
+S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}=\mathbb{C}\vec\Pi_{\mathrm{nil},-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-},\qquad
 \mathbb{B}=S_+\oplus S_-.
 $$
 
@@ -262,11 +262,11 @@ Three exclusions, each by one equation.
 | --- | --- | --- | --- |
 | the scalar line $\mathbb{C}^{\times}e_t$ | $B^{2}=0$ | the spectral wall | its two eigenvalues coincide |
 | the Jordan elements $Q_tu$, $u$ non-trivial unipotent | $B^{2}=0$ | the spectral wall | no eigenbasis exists |
-| the scaled idempotents $c\tilde\Pi$ | $N=0$ | the null wall | not invertible |
+| the scaled idempotents $c\tilde\Pi_{\mathrm{id}}$ | $N=0$ | the null wall | not invertible |
 
 The identity is the first case. $e_t$ is a scalar, so its vector part is zero and the two eigenvalues coincide at $1$. A region that excluded the identity is a region of *changes*, and this is the algebraic reason the region is a symmetric subset and not a subgroup.
 
-The second case is the one that matters for the two-mode picture. A non-trivial unipotent $u=e_t+\vec\Upsilon$ with $\vec\Upsilon^{2}=0$ has the double eigenvalue $1$ and the minimal polynomial $(X-1)^{2}$: it has one eigenvalue and no eigenbasis. It is invertible, and it is on the wall.
+The second case is the one that matters for the two-mode picture. A non-trivial unipotent $u=e_t+\vec\Pi_{\mathrm{nil}}$ with $\vec\Pi_{\mathrm{nil}}^{2}=0$ has the double eigenvalue $1$ and the minimal polynomial $(X-1)^{2}$: it has one eigenvalue and no eigenbasis. It is invertible, and it is on the wall.
 
 ## The Spectrum and the Two Terms
 
@@ -333,21 +333,21 @@ $$
 \vec U=\frac{\vec Q}{B},\qquad
 \vec{Ζ}=-i\vec U=-\frac{i\vec Q}{B},\qquad
 \vec{Ζ}^{2}=e_t,\qquad
-\tilde\Pi_\pm=\frac{e_t\pm\vec{Ζ}}{2}.
+\tilde\Pi_{\mathrm{id},\pm}=\frac{e_t\pm\vec{Ζ}}{2}.
 $$
 
-Then $\tilde\Pi_\pm^{2}=\tilde\Pi_\pm$, $\tilde\Pi_+\tilde\Pi_-=0$, $\tilde\Pi_++\tilde\Pi_-=e_t$, and
+Then $\tilde\Pi_{\mathrm{id},\pm}^{2}=\tilde\Pi_{\mathrm{id},\pm}$, $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$, $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$, and
 
 $$
-\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-,\qquad
-\vec{Ζ}\tilde\Pi_\pm=\tilde\Pi_\pm\vec{Ζ}=\pm\tilde\Pi_\pm.
+\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-},\qquad
+\vec{Ζ}\tilde\Pi_{\mathrm{id},\pm}=\tilde\Pi_{\mathrm{id},\pm}\vec{Ζ}=\pm\tilde\Pi_{\mathrm{id},\pm}.
 $$
 
-The pair $\tilde\Pi_\pm$ is the pair $e_\pm$ of §*The Spectrum and the Two Terms*; the two notations are the same idempotents, and the entry uses $\tilde\Pi$ where the corner structure is in play.
+The pair $\tilde\Pi_{\mathrm{id},\pm}$ is the pair $e_\pm$ of §*The Spectrum and the Two Terms*; the two notations are the same idempotents, and the entry uses $\tilde\Pi_{\mathrm{id}}$ where the corner structure is in play.
 
-This is the corner rule in one line. An element of the corner $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ is multiplied on the left by $Q_t+i\,sB$ and on the right by $Q_t+i\,tB$. So the four corners carry two independent signs, and the four diagonal values of $L_{\tilde Q}$ and of $R_{\tilde Q}$ are those signs evaluated.
+This is the corner rule in one line. An element of the corner $\mathbb{B}_{st}=\tilde\Pi_{\mathrm{id},s}\mathbb{B}\tilde\Pi_{\mathrm{id},t}$ is multiplied on the left by $Q_t+i\,sB$ and on the right by $Q_t+i\,tB$. So the four corners carry two independent signs, and the four diagonal values of $L_{\tilde Q}$ and of $R_{\tilde Q}$ are those signs evaluated.
 
-The other square root exchanges the labels. Replacing $B$ by $-B$ sends $\vec{Ζ}$ to $-\vec{Ζ}$, exchanges $\tilde\Pi_+$ and $\tilde\Pi_-$, and exchanges the two eigenvalues. The unordered pair of idempotents and the unordered spectrum are unchanged. Nothing in the entry depends on the choice, and the entries that follow make it once and keep it.
+The other square root exchanges the labels. Replacing $B$ by $-B$ sends $\vec{Ζ}$ to $-\vec{Ζ}$, exchanges $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$, and exchanges the two eigenvalues. The unordered pair of idempotents and the unordered spectrum are unchanged. Nothing in the entry depends on the choice, and the entries that follow make it once and keep it.
 
 ### The Corners and the Two Nilpotents
 
@@ -357,24 +357,24 @@ $$
 x\in\mathbb{B}_{st},\ s\neq t\ \Longrightarrow\ \operatorname{Sc}x=0,\quad x^{2}=0,
 $$
 
-because $x^{2}\in\tilde\Pi_s\mathbb{B}\tilde\Pi_t\tilde\Pi_s\mathbb{B}\tilde\Pi_t=0$. So the two off-diagonal corners hold nilpotents and only nilpotents.
+because $x^{2}\in\tilde\Pi_{\mathrm{id},s}\mathbb{B}\tilde\Pi_{\mathrm{id},t}\tilde\Pi_{\mathrm{id},s}\mathbb{B}\tilde\Pi_{\mathrm{id},t}=0$. So the two off-diagonal corners hold nilpotents and only nilpotents.
 
-The pair is forced. Choose a non-zero $\vec\Upsilon_+\in\mathbb{B}_{-+}$. Left multiplication by it is a non-zero linear map from the line $\mathbb{B}_{+-}$ to the line $\mathbb{C}\tilde\Pi_-$, hence an isomorphism, so there is a unique $\vec\Upsilon_-\in\mathbb{B}_{+-}$ with $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$. The other product is then forced to be $\tilde\Pi_+$: it lies in the line $\mathbb{C}\tilde\Pi_+$, say $\vec\Upsilon_-\vec\Upsilon_+=\alpha\tilde\Pi_+$, and $\vec\Upsilon_+=\tilde\Pi_-\vec\Upsilon_+=\vec\Upsilon_+(\vec\Upsilon_-\vec\Upsilon_+)=\alpha\vec\Upsilon_+$ forces $\alpha=1$. Hence
+The pair is forced. Choose a non-zero $\vec\Pi_{\mathrm{nil},+}\in\mathbb{B}_{-+}$. Left multiplication by it is a non-zero linear map from the line $\mathbb{B}_{+-}$ to the line $\mathbb{C}\tilde\Pi_{\mathrm{id},-}$, hence an isomorphism, so there is a unique $\vec\Pi_{\mathrm{nil},-}\in\mathbb{B}_{+-}$ with $\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-}$. The other product is then forced to be $\tilde\Pi_{\mathrm{id},+}$: it lies in the line $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$, say $\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\alpha\tilde\Pi_{\mathrm{id},+}$, and $\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},-}\vec\Pi_{\mathrm{nil},+}=\vec\Pi_{\mathrm{nil},+}(\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+})=\alpha\vec\Pi_{\mathrm{nil},+}$ forces $\alpha=1$. Hence
 
 $$
-\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\qquad
-\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,\qquad
-\vec\Upsilon_+^{2}=\vec\Upsilon_-^{2}=0.
+\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-},\qquad
+\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+},\qquad
+\vec\Pi_{\mathrm{nil},+}^{2}=\vec\Pi_{\mathrm{nil},-}^{2}=0.
 $$
 
 The two ideals are spanned by the corners.
 
 $$
-S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,\qquad
-S_-=\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-.
+S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},+},\qquad
+S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}=\mathbb{C}\vec\Pi_{\mathrm{nil},-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-}.
 $$
 
-So the index of a nilpotent is fixed by the *left* ideal it generates and not by the corner it sits in: $\vec\Upsilon_+$ sits in $\mathbb{B}_{-+}$ and generates $S_+$ together with $\tilde\Pi_+$. That is the single most easily misread point in the construction, and it is the reason §*The Two Spinor Spaces* states the left and right actions separately.
+So the index of a nilpotent is fixed by the *left* ideal it generates and not by the corner it sits in: $\vec\Pi_{\mathrm{nil},+}$ sits in $\mathbb{B}_{-+}$ and generates $S_+$ together with $\tilde\Pi_{\mathrm{id},+}$. That is the single most easily misread point in the construction, and it is the reason §*The Two Spinor Spaces* states the left and right actions separately.
 
 Over a hundred elements the corner identities held to $2\times10^{-15}$, with the pair built from a random transverse vector and normalised as in the next subsection.
 
@@ -383,23 +383,23 @@ Over a hundred elements the corner identities held to $2\times10^{-15}$, with th
 The pair is fixed up to one rescaling.
 
 $$
-\vec\Upsilon_+\longmapsto\mu\vec\Upsilon_+,\qquad
-\vec\Upsilon_-\longmapsto\mu^{-1}\vec\Upsilon_-,\qquad
+\vec\Pi_{\mathrm{nil},+}\longmapsto\mu\vec\Pi_{\mathrm{nil},+},\qquad
+\vec\Pi_{\mathrm{nil},-}\longmapsto\mu^{-1}\vec\Pi_{\mathrm{nil},-},\qquad
 \mu\in\mathbb{C}^{\times},
 $$
 
-which preserves both products and both squares. No other freedom exists, because the mixed corners are lines. The construction from $\vec\Upsilon_+$ alone makes one choice and determines the rest; the rescaling appears only when the pair is parametrised by two arbitrary generators.
+which preserves both products and both squares. No other freedom exists, because the mixed corners are lines. The construction from $\vec\Pi_{\mathrm{nil},+}$ alone makes one choice and determines the rest; the rescaling appears only when the pair is parametrised by two arbitrary generators.
 
 A transverse vector gives an explicit pair. For a pure $\vec X$ with $\vec X_\perp^{2}\neq0$, where $\vec X_\perp=\vec X-(\vec X\cdot\vec Q)\vec Q/B^{2}$, put
 
 $$
-u_+=\tilde\Pi_-\vec X\tilde\Pi_+,\qquad
-u_-=\tilde\Pi_+\vec X\tilde\Pi_-,\qquad
-u_+u_-=\vec X_\perp^{2}\,\tilde\Pi_-,\qquad
-u_-u_+=\vec X_\perp^{2}\,\tilde\Pi_+ .
+u_+=\tilde\Pi_{\mathrm{id},-}\vec X\tilde\Pi_{\mathrm{id},+},\qquad
+u_-=\tilde\Pi_{\mathrm{id},+}\vec X\tilde\Pi_{\mathrm{id},-},\qquad
+u_+u_-=\vec X_\perp^{2}\,\tilde\Pi_{\mathrm{id},-},\qquad
+u_-u_+=\vec X_\perp^{2}\,\tilde\Pi_{\mathrm{id},+} .
 $$
 
-Then $\vec\Upsilon_\pm=u_\pm/\sqrt{\vec X_\perp^{2}}$ has the required products and squares. Two choices of $\vec X$ differ by the rescaling.
+Then $\vec\Pi_{\mathrm{nil},\pm}=u_\pm/\sqrt{\vec X_\perp^{2}}$ has the required products and squares. Two choices of $\vec X$ differ by the rescaling.
 
 This is the construction the numerical check used, with $\vec X$ drawn at random and the scalar $\vec X_\perp^{2}$ read off the product. The squares, the cross products, the four diagonal left values and the four diagonal right values all closed to $2\times10^{-15}$.
 
@@ -408,13 +408,13 @@ This is the construction the numerical check used, with $\vec X$ drawn at random
 A closed form exists off one cone.
 
 $$
-\vec\Upsilon_\pm=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^{2}-3B^{2}}},
+\vec\Pi_{\mathrm{nil},\pm}=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^{2}-3B^{2}}},
 \qquad
 \vec w=\vec e_x+\vec e_y+\vec e_z,\qquad
 \Sigma=Q_x+Q_y+Q_z .
 $$
 
-The vector $\vec w$ is the only non-zero vector fixed by every permutation of the axes, so the formula is symmetric in $x,y,z$: a permutation permutes the three components of $\vec\Upsilon_\pm$ and leaves $B$ and $\Sigma$ unchanged.
+The vector $\vec w$ is the only non-zero vector fixed by every permutation of the axes, so the formula is symmetric in $x,y,z$: a permutation permutes the three components of $\vec\Pi_{\mathrm{nil},\pm}$ and leaves $B$ and $\Sigma$ unchanged.
 
 The denominator vanishes on a cone, and there the axis charts take over.
 
@@ -427,7 +427,7 @@ $$
 which for real $\vec Q$ is the line $Q_x=Q_y=Q_z$. On it,
 
 $$
-\vec\Upsilon_\pm=\frac{B\,\vec e_\mu-\dfrac{Q_\mu}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec e_\mu]}{2\sqrt{Q_\mu^{2}-B^{2}}},
+\vec\Pi_{\mathrm{nil},\pm}=\frac{B\,\vec e_\mu-\dfrac{Q_\mu}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec e_\mu]}{2\sqrt{Q_\mu^{2}-B^{2}}},
 \qquad \mu\in\{x,y,z\},
 $$
 
@@ -451,10 +451,10 @@ The eigenbasis data are attached to $\tilde Q$ and are not canonical.
 
 | object | depends on $\tilde Q$? |
 | --- | --- |
-| the root $\vec{Ζ}$ and the idempotents $\tilde\Pi_\pm$ | yes |
+| the root $\vec{Ζ}$ and the idempotents $\tilde\Pi_{\mathrm{id},\pm}$ | yes |
 | the corner lines $\mathbb{B}_{+-},\mathbb{B}_{-+}$ as subspaces | yes |
-| the ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | yes |
-| the pair $(\vec\Upsilon_+,\vec\Upsilon_-)$ | yes, through the root; the residual scale is the normalisation |
+| the ideals $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | yes |
+| the pair $(\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-})$ | yes, through the root; the residual scale is the normalisation |
 | the diagonal values $(\lambda_+,\lambda_-)$ | yes |
 | the Peirce coordinates of a second element | yes |
 
@@ -469,18 +469,18 @@ The dependence is not a defect of the construction. It is the statement that the
 Each minimal left ideal is a complex plane, and the algebra is their direct sum. In the eigenbasis,
 
 $$
-\mathcal{B}=(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-),
+\mathcal{B}=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-}),
 \qquad
-\tilde\Pi_+\mapsto E_{11},\quad
-\vec\Upsilon_-\mapsto E_{12},\quad
-\vec\Upsilon_+\mapsto E_{21},\quad
-\tilde\Pi_-\mapsto E_{22},
+\tilde\Pi_{\mathrm{id},+}\mapsto E_{11},\quad
+\vec\Pi_{\mathrm{nil},-}\mapsto E_{12},\quad
+\vec\Pi_{\mathrm{nil},+}\mapsto E_{21},\quad
+\tilde\Pi_{\mathrm{id},-}\mapsto E_{22},
 $$
 
 every element has one expansion
 
 $$
-\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-,
+\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-},
 $$
 
 and the matrix $\mathsf M_2^{Q}(\tilde Q_2)=(Q_{2,ij})$ has the two ideals as its two columns. The element itself has
@@ -504,7 +504,7 @@ $$
 
 This asymmetry is the whole content of the Peirce index. A spinor of either copy has two components, and the left action mixes neither: it scales the first component by $\lambda_+$ and the second by $\lambda_-$. The two ideals are distinguished by the right action alone, which scales each ideal by one eigenvalue.
 
-The two ideals are isomorphic as left modules. Right multiplication by $\vec\Upsilon_-$ maps $S_+$ onto $S_-$, with inverse right multiplication by $\vec\Upsilon_+$. So there is one simple module here, and the two copies are two embeddings of it. The label *first* versus *second* is a label of the embedding, fixed by the choice $\tilde\Pi_+=(e_t+\vec{Ζ})/2$.
+The two ideals are isomorphic as left modules. Right multiplication by $\vec\Pi_{\mathrm{nil},-}$ maps $S_+$ onto $S_-$, with inverse right multiplication by $\vec\Pi_{\mathrm{nil},+}$. So there is one simple module here, and the two copies are two embeddings of it. The label *first* versus *second* is a label of the embedding, fixed by the choice $\tilde\Pi_{\mathrm{id},+}=(e_t+\vec{Ζ})/2$.
 
 The numerical check of these four statements closed to $2\times10^{-15}$ over a hundred elements: the diagonal left values on all four basis elements, the diagonal right values, and the action on a random spinor of $S_+$.
 
@@ -757,7 +757,7 @@ Only one of the three carriers reaches the region, and the two exclusions are st
 | carrier | dimension | invariant on it | intersection with the region |
 | --- | --- | --- | --- |
 | the centre $\mathbb{C}e_t$ | $2$ real | $B^{2}=0$ at every point | empty |
-| the ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | $4$ real | $N=0$ at every point | empty |
+| the ideals $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | $4$ real | $N=0$ at every point | empty |
 | the material sector $\mathbb{B}_{\Phi}$ | $4$ real | both vary | open dense in the sector |
 
 The centre is excluded by its vector part. Every element of the centre is a scalar, so $B^{2}=0$ identically. No choice of the complex coefficient changes that, and no product inside the centre leaves it.
@@ -941,7 +941,7 @@ The numerical checks are checks of identities, not of the reading. Every identit
 - Its elements are invertible with two distinct non-zero eigenvalues $\lambda_\pm=Q_t\pm iB$, and $N=\lambda_+\lambda_-$, $B^{2}=-(\lambda_+-\lambda_-)^{2}/4$.
 - The two-term writing $\tilde Q=\lambda_+e_++\lambda_-e_-$ is unique and both terms are null; the region is the only stratum where this holds with two non-zero coefficients.
 - The spectrum fixes the invariants and not the element: the fibre is four-dimensional and carries the direction of $\vec Q$.
-- The eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ makes left multiplication $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ and right multiplication $\operatorname{diag}(\lambda_+,\lambda_-,\lambda_+,\lambda_-)$.
+- The eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$ makes left multiplication $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ and right multiplication $\operatorname{diag}(\lambda_+,\lambda_-,\lambda_+,\lambda_-)$.
 - The pair of nilpotents needs an auxiliary direction, because no rotation-natural rational formula exists; the pair is unique up to one complex rescaling.
 - Each minimal left ideal carries both eigenvalues under left multiplication; the Peirce index is the right eigenvalue.
 - The region is inverse-closed and not product-closed: a product lands in the region or on the wall $B^{2}=0$, and squaring leaves the region exactly when $Q_t=0$.
@@ -972,9 +972,9 @@ The mass of a sum is not the sum of the masses. Two massless addends can have a 
 | $B$ | a fixed square root of $B^{2}$ |
 | $e_\pm$ | the spectral idempotents |
 | $\vec{Ζ}=-i\vec Q/B$ | the root of $e_t$ carried by the element |
-| $\tilde\Pi_\pm=(e_t\pm\vec{Ζ})/2$ | the same idempotents in Peirce notation |
-| $\vec\Upsilon_\pm$ | the two corner nilpotents, $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ |
-| $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two minimal left ideals, the spinor spaces |
+| $\tilde\Pi_{\mathrm{id},\pm}=(e_t\pm\vec{Ζ})/2$ | the same idempotents in Peirce notation |
+| $\vec\Pi_{\mathrm{nil},\pm}$ | the two corner nilpotents, $\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-}$ |
+| $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ | the two minimal left ideals, the spinor spaces |
 | $\mathsf M_2^{Q}$ | the matrix of an element in the eigenbasis |
 | $\tilde P_\Phi=i\frac{E}{c}e_t+\vec p$ | a material four-momentum |
 | $\theta_{\mathrm{rpd}}$ | the rapidity, $\cosh\theta_{\mathrm{rpd}}=E/(mc^{2})$ |
