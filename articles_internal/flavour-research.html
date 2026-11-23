@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flavour Research: The Ladder Arithmetic — Biquaternion Universe</title>
-  <meta name="description" content="Status of this note. Every claim below carries one of six tags. The tags are not decoration. A claim tagged [ANSATZ] or [SPECULATION] is work I have done…">
+  <meta name="description" content="Status of this note. Every claim below carries one of seven tags. The tags are not decoration. A claim tagged [ANSATZ] or [SPECULATION] is work I have…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -70,7 +70,7 @@
     <main class="article">
       <div class="article-body">
         <h1 id="flavour-research-the-ladder-arithmetic"><strong>Flavour Research: The Ladder Arithmetic</strong></h1>
-<p><em>Status of this note.</em> Every claim below carries one of six tags. The tags are not decoration. A claim tagged [ANSATZ] or [SPECULATION] is work I have done and do not believe yet, and the note says so where the claim is made rather than in a paragraph at the end. Of the six tags, only the first two carry weight outside this note.</p>
+<p><em>Status of this note.</em> Every claim below carries one of seven tags. The tags are not decoration. A claim tagged [ANSATZ] or [SPECULATION] is work I have done and do not believe yet, and the note says so where the claim is made rather than in a paragraph at the end. Of the six tags, only the first two carry weight outside this note.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -119,7 +119,7 @@
 </table></div>
 <p>The honest summary is that about one sixth of this note is established, one third is algebra, and the remainder is assumption. The previous version did not say which was which, and that was the defect.</p>
 <h2 id="1-the-one-established-relation">1. The One Established Relation</h2>
-<p><strong>[PUBLISHED]</strong> Koide's relation, stated in 1981 for the charged leptons and not derived since, is a statement about two mass ratios. Printed in masses it is a sum of masses over the square of a sum of their roots; dividing top and bottom by $m_1$ leaves the masses together, and what remains is a function of the two ratios. <strong>[MEASURED]</strong> Writing $\rho_i=m_i/m_1$ with $m_1=m_e$, the PDG masses give</p>
+<p><strong>[PUBLISHED]</strong> Koide's relation, stated in 1981 for the charged leptons and not derived since, is a statement about two mass ratios. Printed in masses it is a sum of masses over the square of a sum of their roots; dividing numerator and denominator by $m_1$, the square of $\sqrt{m_1}$, turns every mass into a ratio to $m_1$ and what remains is a function of the two ratios. <strong>[MEASURED]</strong> Writing $\rho_i=m_i/m_1$ with $m_1=m_e$, the PDG masses give</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -206,28 +206,28 @@ $$</p>
 <p><strong>So the relation is a one-off, or it is a rule that quarks violate for a reason nobody has supplied.</strong> Both readings are open and this note keeps both.</p>
 <h2 id="2-exact-algebra">2. Exact Algebra</h2>
 <p>Four statements below are exact. None needs a medium, a spectrum or a dynamics. They are the entire content of the closure language, and stating them plainly is what removes the appearance of derivation.</p>
-<p><strong>2.1 The bound.</strong> <strong>[ALGEBRA]</strong> For positive $m_i$ and $a_i=\sqrt{m_i/m_1}$,</p>
+<p><strong>2.1 The bound.</strong> <strong>[ALGEBRA]</strong> For positive masses and $\rho_i=m_i/m_1$,</p>
 <p>$$
-Q=\frac{\sum a_i^{2}}{\left(\sum a_i\right)^{2}}\le 1,
+Q=\frac{\sum \rho_i}{\left(\sum \sqrt{\rho_i}\right)^{2}}\le 1,
 $$</p>
-<p>by Cauchy–Schwarz, with equality if and only if exactly one $a_i$ is nonzero. The normalisation by $m_1$ is free, since $Q$ is invariant under $a_i\to\lambda a_i$; it is made once here so that $a_1=1$ and nothing below carries a unit.</p>
+<p>by Cauchy–Schwarz, with equality if and only if exactly one $\sqrt{\rho_i}$ is nonzero. The normalisation by $m_1$ is free, since $Q$ is invariant under $\sqrt{\rho_i}\to\lambda \sqrt{\rho_i}$; it is made once here so that $\sqrt{\rho_1}=1$ and nothing below carries a unit.</p>
 <p><strong>2.2 The rung count.</strong> <strong>[ALGEBRA]</strong> Setting $Q=2/N$ in 2.1 gives $N\ge2$. The case $N=2$ requires $Q=1$, hence one massless rung by the equality condition, which is excluded by data. So</p>
 <p>$$
 N\ge3 .
 $$</p>
 <p><strong>This is the only place the closure touches the number of generations, and it is weak: it excludes two and permits any count above two.</strong> It is not a derivation of three, and this note does not present it as one.</p>
-<p><strong>2.3 The variance form.</strong> <strong>[ALGEBRA]</strong> With $\bar a=\frac1N\sum a_i$ and $\operatorname{var}=\frac1N\sum(a_i-\bar a)^{2}$,</p>
+<p><strong>2.3 The variance form.</strong> <strong>[ALGEBRA]</strong> With $\mu=\frac1N\sum \sqrt{\rho_i}$ and $\operatorname{var}=\frac1N\sum(\sqrt{\rho_i}-\mu)^{2}$,</p>
 <p>$$
-Q=\frac{2}{N}\iff\operatorname{var}=\bar a^{2},
+Q=\frac{2}{N}\iff\operatorname{var}=\mu^{2},
 $$</p>
-<p>so the root vector $\vec a$ sits at $45^{\circ}$ to the uniform direction. Measured for the leptons, $\operatorname{var}/\bar a^{2}=0.999\,982$ against $1$, which is 2.1 restated with the same $6\times10^{-6}$.</p>
+<p>so the root vector $\vec r=\left(1,\sqrt{\rho_2},\sqrt{\rho_3}\right)$ sits at $45^{\circ}$ to the uniform direction $\vec u=(1,1,1)$. Measured for the leptons, $\operatorname{var}/\mu^{2}=0.999\,982$ against $1$, which is 2.1 restated with the same $6\times10^{-6}$.</p>
 <p><strong>2.4 The circle.</strong> <strong>[ALGEBRA]</strong> For any $\mu&gt;0$ and any $\theta$,</p>
 <p>$$
-a_i=\mu\left(1+\sqrt2\cos\!\left(\theta+\frac{2\pi i}{3}\right)\right)
+\sqrt{\rho_i}=\mu\left(1+\sqrt2\cos\!\left(\theta+\frac{2\pi i}{3}\right)\right)
 \;\Longrightarrow\;
 Q=\frac{2}{3}\quad\text{identically},
 $$</p>
-<p>because $\sum\cos=0$ and $\sum\cos^{2}=3/2$ for three equally spaced phases. This is exact for every $\theta$ and every $\mu$, and $\mu$ is the mean of the three $a_i$. For the charged leptons $\mu=24.782\,49$ in the normalisation $a_1=1$.</p>
+<p>because $\sum\cos=0$ and $\sum\cos^{2}=3/2$ for three equally spaced phases. This is exact for every $\theta$ and every $\mu$, and $\mu$ is the mean of the three $\sqrt{\rho_i}$. For the charged leptons $\mu=24.782\,49$ in the normalisation $\sqrt{\rho_1}=1$.</p>
 <p><strong>2.4 is the reason this programme is hard to assess, and the note should say it once and plainly: the circle contains no information beyond Koide.</strong> Two parameters, three masses, and one degree of freedom left over; the fit consumes that degree of freedom by construction. <strong>A test that the leptons lie on the circle is a test of $Q=2/3$ and of nothing else.</strong> Any claim that the circle explains or reproduces the closure is a circular claim, and this version of the note does not make it.</p>
 <h2 id="3-the-circle-as-an-ansatz">3. The Circle as an Ansatz</h2>
 <p><strong>[ANSATZ]</strong> The physical hypothesis is not the circle, which is algebra, but the equal spacing of the phases, $2\pi/N$ in $\theta$. Nothing in the corpus derives that spacing. It is an assumption about a medium, and it enters at exactly one place.</p>
@@ -271,7 +271,7 @@ $$</p>
 <h2 id="4-parity-true-inside-the-ansatz-false-as-an-exclusion">4. Parity: True Inside the Ansatz, False as an Exclusion</h2>
 <p><strong>[ALGEBRA, inside the ansatz]</strong> For even $N$ the phases are antipodal in pairs, and $\cos(\theta+\pi)=-\cos\theta$, so</p>
 <p>$$
-a_i+a_{i+N/2}=2\mu
+\sqrt{\rho_i}+\sqrt{\rho_{i+N/2}}=2\mu
 \qquad\text{exactly, for every }\theta .
 $$</p>
 <p>An even count therefore produces masses in degenerate pairs, symmetric about $\mu$ in the root, and so symmetric about $\mu^{2}$ in mass.</p>
@@ -284,15 +284,15 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$a_i/\mu$</td>
+<td>$\sqrt{\rho_i}/\mu$</td>
 <td>$-0.398$, $0.786$, $2.398$, $1.214$</td>
 </tr>
 <tr>
-<td>$a_0+a_2$, in units of $\mu$</td>
+<td>$\sqrt{\rho_0}+\sqrt{\rho_2}$, in units of $\mu$</td>
 <td>$2.000$</td>
 </tr>
 <tr>
-<td>$a_1+a_3$, in units of $\mu$</td>
+<td>$\sqrt{\rho_1}+\sqrt{\rho_3}$, in units of $\mu$</td>
 <td>$2.000$</td>
 </tr>
 <tr>
@@ -309,7 +309,7 @@ $$</p>
 <thead>
 <tr>
 <th>$N$</th>
-<th>$\mu$ with $a_1=1$</th>
+<th>$\mu$ with $\sqrt{\rho_1}=1$</th>
 <th>$\theta$</th>
 <th>worst relative misfit</th>
 <th>extra rungs demanded (MeV)</th>
@@ -681,12 +681,12 @@ $$</p>
 </tr>
 <tr>
 <td>$N=2$</td>
-<td>$Q=1$ forces one $a_i=0$</td>
+<td>$Q=1$ forces one $\sqrt{\rho_i}=0$</td>
 <td>$m=0$</td>
 </tr>
 <tr>
 <td>the variance form</td>
-<td>$\operatorname{var}/\bar a^{2}$ for the leptons</td>
+<td>$\operatorname{var}/\mu^{2}$ for the leptons</td>
 <td>$0.999982$</td>
 </tr>
 <tr>
@@ -721,7 +721,7 @@ $$</p>
 </tr>
 <tr>
 <td>the $N=4$ pair sums</td>
-<td>$a_0+a_2$, $a_1+a_3$</td>
+<td>$\sqrt{\rho_0}+\sqrt{\rho_2}$, $\sqrt{\rho_1}+\sqrt{\rho_3}$</td>
 <td>$2.000$, $2.000$</td>
 </tr>
 <tr>
@@ -731,7 +731,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<h2 id="14-two-coordinates-of-one-vector-foots-angle-math323-and-the-phase-math324">14. Two Coordinates of One Vector: Foot's Angle $45^{\circ}$ and the Phase $2/9$</h2>
+<h2 id="14-two-coordinates-of-one-vector-foots-angle-math325-and-the-phase-math326">14. Two Coordinates of One Vector: Foot's Angle $45^{\circ}$ and the Phase $2/9$</h2>
 <p><em>Scope.</em> This section was added after the note was closed. It answers one question the note left in the air, whether Foot's $45^{\circ}$ and the phase $2/9$ are two facts or one. They are one vector read in polar and azimuthal form. The section changes nothing above it: where it disagrees with §3 or §6, the disagreement is recorded in 14.13 and the earlier text is left standing, so the two readings can be compared.</p>
 <p>The object is Koide's ratio, written in the two mass ratios $\rho_i=m_i/m_1$,</p>
 <p>$$
@@ -741,12 +741,12 @@ $$</p>
 <h3 id="141-the-two-vectors">14.1 The two vectors</h3>
 <p><strong>[PUBLISHED]</strong> R. Foot (hep-ph/9402242, 1994) makes the reading. Put the three square roots at the coordinates of a vector, and put the symmetric direction beside it:</p>
 <p>$$
-\vec a=\left(1,\sqrt{\rho_2},\sqrt{\rho_3}\right),
+\vec r=\left(1,\sqrt{\rho_2},\sqrt{\rho_3}\right),
 \qquad
 \vec u=(1,1,1),
 $$</p>
-<p>with $\rho_i=m_i/m_1$ the mass ratios of §1, so that $a_i=\sqrt{\rho_i}$ and $a_1=1$. Dividing every coordinate by $\sqrt{m_1}$ changes no ratio of lengths and no angle, so the normalisation costs nothing and removes every unit.</p>
-<p>Call $\vec a$ the root vector and $\vec u$ the democratic vector. The name is Foot's: a democratic vector gives the same weight to every rung. Their squared lengths follow from their definitions, and nothing else in the section needs an assumption.</p>
+<p>with $\rho_i=m_i/m_1$ the mass ratios of §1, so that $\sqrt{\rho_1}=1$. Dividing every coordinate by $\sqrt{m_1}$ changes no ratio of lengths and no angle, so the normalisation costs nothing and removes every unit.</p>
+<p>Call $\vec r$ the root vector and $\vec u$ the democratic vector. The name is Foot's: a democratic vector gives the same weight to every rung. Their squared lengths follow from their definitions, and nothing else in the section needs an assumption.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -758,7 +758,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\vec a$</td>
+<td>$\vec r$</td>
 <td>$\left(1,\sqrt{\rho_2},\sqrt{\rho_3}\right)$</td>
 <td>$1+\rho_2+\rho_3$</td>
 <td>$3684.997$</td>
@@ -778,51 +778,51 @@ $$</p>
 <li>The same vector serves all three rungs. That is why the formula is symmetric in the three masses, and why it cannot tell which rung is which.</li>
 </ol>
 <h3 id="142-step-1-the-numerator-is-the-squared-length">14.2 Step 1: the numerator is the squared length</h3>
-<p><strong>[ALGEBRA]</strong> The squared length of $\vec a$ is the sum of the squares of its coordinates, and each coordinate is a square root:</p>
+<p><strong>[ALGEBRA]</strong> The squared length of $\vec r$ is the sum of the squares of its coordinates, and each coordinate is a square root:</p>
 <p>$$
-|\vec a|^{2}=1^{2}+\left(\sqrt{\rho_2}\right)^{2}+\left(\sqrt{\rho_3}\right)^{2}=1+\rho_2+\rho_3 .
+\lVert\vec r\rVert^{2}=1^{2}+\left(\sqrt{\rho_2}\right)^{2}+\left(\sqrt{\rho_3}\right)^{2}=1+\rho_2+\rho_3 .
 $$</p>
-<p>So the numerator of $Q$ is $|\vec a|^{2}$ and nothing else. Three consequences follow at once.</p>
+<p>So the numerator of $Q$ is $\lVert\vec r\rVert^{2}$ and nothing else. Three consequences follow at once.</p>
 <ul>
 <li>The numerator is a norm, so it is positive for any triple of positive masses. $Q$ is positive.</li>
 <li>The numerator is quadratic in the roots. A common rescaling of the three masses rescales it by the same factor as the denominator, which is why 14.4 cancels.</li>
-<li>Numerically, $|\vec a|^{2}=1+206.768\,28+3477.228\,28=3684.997$, and $|\vec a|=60.704\,17$.</li>
+<li>Numerically, $\lVert\vec r\rVert^{2}=1+206.768\,28+3477.228\,28=3684.997$, and $\lVert\vec r\rVert=60.704\,17$.</li>
 </ul>
 <h3 id="143-step-2-the-denominator-is-the-square-of-one-dot-product">14.3 Step 2: the denominator is the square of one dot product</h3>
 <p><strong>[ALGEBRA]</strong> The dot product of the two vectors is one scalar,</p>
 <p>$$
-\vec u\cdot\vec a=1\cdot 1+1\cdot\sqrt{\rho_2}+1\cdot\sqrt{\rho_3}=1+\sqrt{\rho_2}+\sqrt{\rho_3},
+\vec u\cdot\vec r=1\cdot 1+1\cdot\sqrt{\rho_2}+1\cdot\sqrt{\rho_3}=1+\sqrt{\rho_2}+\sqrt{\rho_3},
 $$</p>
 <p>because every component of $\vec u$ equals one. Its square is the denominator of $Q$:</p>
 <p>$$
-\left(\vec u\cdot\vec a\right)^{2}=\left(1+\sqrt{\rho_2}+\sqrt{\rho_3}\right)^{2}.
+\left(\vec u\cdot\vec r\right)^{2}=\left(1+\sqrt{\rho_2}+\sqrt{\rho_3}\right)^{2}.
 $$</p>
 <p>Two remarks, both needed for the next step.</p>
 <ul>
-<li>The dot product is not the length of $\vec a$. It is the length of $\vec a$ times the cosine of the angle to $\vec u$, times $|\vec u|$. The deficit is the cosine, and that is the only place the angle can enter.</li>
-<li>The denominator is the square of a scalar, so it is not $|\vec a|^{2}|\vec u|^{2}$. The two differ by $\cos^{2}\varphi$, and that difference is the whole content of the geometric reading.</li>
+<li>The dot product is not the length of $\vec r$. It is the length of $\vec r$ times the cosine of the angle to $\vec u$, times $\lVert\vec u\rVert$. The deficit is the cosine, and that is the only place the angle can enter.</li>
+<li>The denominator is the square of a scalar, so it is not $\lVert\vec r\rVert^{2}\lVert\vec u\rVert^{2}$. The two differ by $\cos^{2}\varphi$, and that difference is the whole content of the geometric reading.</li>
 </ul>
-<p>For the leptons, $\vec u\cdot\vec a=74.347\,47$ and $\left(\vec u\cdot\vec a\right)^{2}=5527.546$.</p>
+<p>For the leptons, $\vec u\cdot\vec r=74.347\,47$ and $\left(\vec u\cdot\vec r\right)^{2}=5527.546$.</p>
 <h3 id="144-step-3-the-angle-enters-and-the-length-cancels">14.4 Step 3: the angle enters, and the length cancels</h3>
-<p><strong>[ALGEBRA]</strong> Let $\varphi$ be the angle between $\vec a$ and $\vec u$. The definition of the dot product in terms of that angle is</p>
+<p><strong>[ALGEBRA]</strong> Let $\varphi$ be the angle between $\vec r$ and $\vec u$. The definition of the dot product in terms of that angle is</p>
 <p>$$
-\vec u\cdot\vec a=|\vec u|\,|\vec a|\cos\varphi .
+\vec u\cdot\vec r=\lVert\vec u\rVert\,\lVert\vec r\rVert\cos\varphi .
 $$</p>
 <p>Square it:</p>
 <p>$$
-\left(\vec u\cdot\vec a\right)^{2}=|\vec u|^{2}\,|\vec a|^{2}\cos^{2}\varphi .
+\left(\vec u\cdot\vec r\right)^{2}=\lVert\vec u\rVert^{2}\,\lVert\vec r\rVert^{2}\cos^{2}\varphi .
 $$</p>
-<p>Insert $|\vec u|^{2}=3$:</p>
+<p>Insert $\lVert\vec u\rVert^{2}=3$:</p>
 <p>$$
-\left(\vec u\cdot\vec a\right)^{2}=3\,|\vec a|^{2}\cos^{2}\varphi .
+\left(\vec u\cdot\vec r\right)^{2}=3\,\lVert\vec r\rVert^{2}\cos^{2}\varphi .
 $$</p>
-<p>Divide $|\vec a|^{2}$ by that expression. The length appears in the numerator and in the denominator, so it cancels:</p>
+<p>Divide $\lVert\vec r\rVert^{2}$ by that expression. The length appears in the numerator and in the denominator, so it cancels:</p>
 <p>$$
-Q=\frac{|\vec a|^{2}}{\left(\vec u\cdot\vec a\right)^{2}}
-=\frac{|\vec a|^{2}}{3\,|\vec a|^{2}\cos^{2}\varphi}
+Q=\frac{\lVert\vec r\rVert^{2}}{\left(\vec u\cdot\vec r\right)^{2}}
+=\frac{\lVert\vec r\rVert^{2}}{3\,\lVert\vec r\rVert^{2}\cos^{2}\varphi}
 =\frac{1}{3\cos^{2}\varphi}.
 $$</p>
-<p><strong>The cancellation is the entire geometric content.</strong> $Q$ does not depend on how long $\vec a$ is. It depends on the direction of $\vec a$ and on nothing else. Two triples with proportional root vectors have the same $Q$ whatever their masses, and a check on the leptons confirms it: scaling all three masses by $100$ leaves $Q$ at $0.6666605$.</p>
+<p><strong>The cancellation is the entire geometric content.</strong> $Q$ does not depend on how long $\vec r$ is. It depends on the direction of $\vec r$ and on nothing else. Two triples with proportional root vectors have the same $Q$ whatever their masses, and a check on the leptons confirms it: scaling all three masses by $100$ leaves $Q$ at $0.6666605$.</p>
 <p>The inverse form is used everywhere below:</p>
 <p>$$
 \cos\varphi=\frac{1}{\sqrt{3Q}},
@@ -855,19 +855,19 @@ $$</p>
 <tr>
 <td>2</td>
 <td>the coordinates</td>
-<td>$a_i=\sqrt{\rho_i}$</td>
+<td>$\sqrt{\rho_i}$</td>
 <td>$1$, $14.379440$, $58.968028$</td>
 </tr>
 <tr>
 <td>3</td>
 <td>numerator</td>
-<td>$\lVert\vec a\rVert^{2}=1+\rho_2+\rho_3$</td>
+<td>$\lVert\vec r\rVert^{2}=1+\rho_2+\rho_3$</td>
 <td>$3684.997$</td>
 </tr>
 <tr>
 <td>4</td>
 <td>length</td>
-<td>$\lVert\vec a\rVert$</td>
+<td>$\lVert\vec r\rVert$</td>
 <td>$60.70417$</td>
 </tr>
 <tr>
@@ -879,13 +879,13 @@ $$</p>
 <tr>
 <td>6</td>
 <td>dot product</td>
-<td>$\vec u\cdot\vec a=1+\sqrt{\rho_2}+\sqrt{\rho_3}$</td>
+<td>$\vec u\cdot\vec r=1+\sqrt{\rho_2}+\sqrt{\rho_3}$</td>
 <td>$74.34747$</td>
 </tr>
 <tr>
 <td>7</td>
 <td>denominator</td>
-<td>$\left(\vec u\cdot\vec a\right)^{2}$</td>
+<td>$\left(\vec u\cdot\vec r\right)^{2}$</td>
 <td>$5527.546$</td>
 </tr>
 <tr>
@@ -897,7 +897,7 @@ $$</p>
 <tr>
 <td>9</td>
 <td>cosine</td>
-<td>$\vec u\cdot\vec a/(\lVert\vec u\rVert\,\lVert\vec a\rVert)$</td>
+<td>$\vec u\cdot\vec r/(\lVert\vec u\rVert\,\lVert\vec r\rVert)$</td>
 <td>$0.7071100$</td>
 </tr>
 <tr>
@@ -921,19 +921,19 @@ $$</p>
 </tbody>
 </table></div>
 <p>Step 11 is a check and not a new number: $1/(3\times0.5000046)=0.6666605$ reproduces step 8 from the cosine alone.</p>
-<p>A third route passes through the orthogonal split, which 14.7 uses and which is worth writing here because it shows what the angle measures. Separate $\vec a$ into a part along the diagonal and a part orthogonal to it:</p>
+<p>A third route passes through the orthogonal split, which 14.7 uses and which is worth writing here because it shows what the angle measures. Separate $\vec r$ into a part along the diagonal and a part orthogonal to it:</p>
 <p>$$
-\vec a=a_{\parallel}\hat u+\vec v,
+\vec r=r_{\parallel}\hat u+\vec v,
 \qquad
-a_{\parallel}=\hat u\cdot\vec a=\frac{1+\sqrt{\rho_2}+\sqrt{\rho_3}}{\sqrt3}=42.92453,
+r_{\parallel}=\hat u\cdot\vec r=\frac{1+\sqrt{\rho_2}+\sqrt{\rho_3}}{\sqrt3}=42.92453,
 \qquad
 \vec v\cdot\vec u=0 ,
 $$</p>
-<p>with $\hat u=\vec u/\sqrt3$. Then $|\vec v|^{2}=|\vec a|^{2}-a_{\parallel}^{2}=1842.481$ against $a_{\parallel}^{2}=1842.515$, so $|\vec v|=42.92413$ and</p>
+<p>with $\hat u=\vec u/\sqrt3$. Then $\lVert\vec v\rVert^{2}=\lVert\vec r\rVert^{2}-r_{\parallel}^{2}=1842.481$ against $r_{\parallel}^{2}=1842.515$, so $\lVert\vec v\rVert=42.92413$ and</p>
 <p>$$
-\tan\varphi=\frac{|\vec v|}{a_{\parallel}}=0.9999908,
+\tan\varphi=\frac{\lVert\vec v\rVert}{r_{\parallel}}=0.9999908,
 \qquad
-Q=\frac{a_{\parallel}^{2}+|\vec v|^{2}}{3a_{\parallel}^{2}}=\frac{1+\tan^{2}\varphi}{3}=0.6666605 .
+Q=\frac{r_{\parallel}^{2}+\lVert\vec v\rVert^{2}}{3r_{\parallel}^{2}}=\frac{1+\tan^{2}\varphi}{3}=0.6666605 .
 $$</p>
 <p>So the angle is the ratio of the off-diagonal part of the root vector to its diagonal part. Koide is the statement that the two parts have the same length.</p>
 <div class="table-scroll"><table>
@@ -957,13 +957,13 @@ $$</p>
 </tr>
 <tr>
 <td>C, from the split</td>
-<td>$\left(a_{\parallel}^{2}+|\vec v|^{2}\right)/3a_{\parallel}^{2}$</td>
+<td>$\left(r_{\parallel}^{2}+\lVert\vec v\rVert^{2}\right)/3r_{\parallel}^{2}$</td>
 <td>$0.66666051$</td>
 </tr>
 </tbody>
 </table></div>
 <p><strong>Three routes, one number.</strong> The routes compute the same quantity, so their agreement tests the arithmetic and not the physics. It does test that no step was misstated, which is what the table is for.</p>
-<h3 id="146-step-5-the-inverse-and-what-math435-says">14.6 Step 5: the inverse, and what $45^{\circ}$ says</h3>
+<h3 id="146-step-5-the-inverse-and-what-math436-says">14.6 Step 5: the inverse, and what $45^{\circ}$ says</h3>
 <p><strong>[ALGEBRA]</strong> Solving 14.4 for the angle gives $\cos^{2}\varphi=1/(3Q)$, hence $\cos\varphi=1/\sqrt{3Q}$ and $\varphi=\arccos\left(1/\sqrt{3Q}\right)$. For the leptons, $1/(3Q)=0.5000046$, $\cos\varphi=0.7071100$, and $1/\sqrt2=0.7071068$; the difference is $3.2\times10^{-6}$, which is the $Q$ residual carried through a square root. So</p>
 <p>$$
 Q=\frac23\iff\cos^{2}\varphi=\frac12\iff\varphi=45^{\circ}.
@@ -990,17 +990,17 @@ $$</p>
 </tr>
 <tr>
 <td>the vectors</td>
-<td>$|\vec a|^{2}=\tfrac23\left(\vec u\cdot\vec a\right)^{2}$</td>
+<td>$\lVert\vec r\rVert^{2}=\tfrac23\left(\vec u\cdot\vec r\right)^{2}$</td>
 <td>$1883.029$ against $1883.047$</td>
 </tr>
 <tr>
 <td>the parts</td>
-<td>$|\vec v|=a_{\parallel}$</td>
+<td>$\lVert\vec v\rVert=r_{\parallel}$</td>
 <td>$30.68397$ against $30.68425$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The last two carry content. The first is a number; the second is one numeral in one unit; the third fixes the projection on the diagonal relative to the length; the fourth says the off-diagonal part has the length of the diagonal part. <strong>The invariant statement of Koide's $45^{\circ}$ is $|\vec v|=a_{\parallel}$, equivalently $\sigma_a=\bar a$.</strong> In degrees, $45$ is an integer only because of the unit we inherited, and a reading of the relation that rests on the roundness of $45$ rests on the unit.</p>
+<p>The last two carry content. The first is a number; the second is one numeral in one unit; the third fixes the projection on the diagonal relative to the length; the fourth says the off-diagonal part has the length of the diagonal part. <strong>The invariant statement of Koide's $45^{\circ}$ is $\lVert\vec v\rVert=r_{\parallel}$, equivalently $\sigma=\mu$.</strong> In degrees, $45$ is an integer only because of the unit we inherited, and a reading of the relation that rests on the roundness of $45$ rests on the unit.</p>
 <p>Two consequences follow, and the note keeps both.</p>
 <ul>
 <li>$Q$ measures a shape and not a scale, by 14.4. A mechanism that fixes $Q$ must fix a direction in the space of the roots.</li>
@@ -1009,18 +1009,18 @@ $$</p>
 <h3 id="147-the-angle-is-the-variance">14.7 The angle is the variance</h3>
 <p><strong>[ALGEBRA]</strong> The angle of 14.5 has a statistical name. For the three coordinates of $\vec v$,</p>
 <p>$$
-\vec a-\bar a\,\vec u=\vec v,
+\vec r-\mu\,\vec u=\vec v,
 \qquad
-\sigma_a^{2}=\frac13\sum_i\left(a_i-\bar a\right)^{2}=\frac{|\vec v|^{2}}{3},
+\sigma^{2}=\frac13\sum_i\left(\sqrt{\rho_i}-\mu\right)^{2}=\frac{\lVert\vec v\rVert^{2}}{3},
 $$</p>
-<p>because the mean of the three components of $\vec v$ is zero by construction. Dividing by $a_{\parallel}=\sqrt3\,\bar a$,</p>
+<p>because the mean of the three components of $\vec v$ is zero by construction. Dividing by $r_{\parallel}=\sqrt3\,\mu$,</p>
 <p>$$
-\tan\varphi=\frac{|\vec v|}{a_{\parallel}}=\frac{\sqrt3\,\sigma_a}{\sqrt3\,\bar a}=\frac{\sigma_a}{\bar a},
+\tan\varphi=\frac{\lVert\vec v\rVert}{r_{\parallel}}=\frac{\sqrt3\,\sigma}{\sqrt3\,\mu}=\frac{\sigma}{\mu},
 \qquad
 Q=\frac{1+\tan^{2}\varphi}{3}.
 $$</p>
-<p>Measured, $\sigma_a/\bar a=0.9999908$ and $\varphi=44.9997^{\circ}$. This is the warrant that §2.3 asserted without a proof: §2.3 wrote $\operatorname{var}/\bar a^{2}=0.999982$ and said the vector sits at $45^{\circ}$; the identity here is the reason, and the two numbers differ only because one is squared.</p>
-<p>The form is worth keeping because it is scale-free. $\sigma_a/\bar a$ is invariant under $a_i\to\lambda a_i$, so Koide says the three roots are as spread as their own mean. That is the only shape statement the closure makes.</p>
+<p>Measured, $\sigma/\mu=0.9999908$ and $\varphi=44.9997^{\circ}$. This is the warrant that §2.3 asserted without a proof: §2.3 wrote $\operatorname{var}/\mu^{2}=0.999982$ and said the vector sits at $45^{\circ}$; the identity here is the reason, and the two numbers differ only because one is squared.</p>
+<p>The form is worth keeping because it is scale-free. $\sigma/\mu$ is invariant under $\sqrt{\rho_i}\to\lambda \sqrt{\rho_i}$, so Koide says the three roots are as spread as their own mean. That is the only shape statement the closure makes.</p>
 <h3 id="148-the-map-is-one-to-one-so-the-angle-carries-the-coefficient">14.8 The map is one to one, so the angle carries the coefficient</h3>
 <p><strong>[ALGEBRA]</strong> $Q\mapsto\varphi$ is monotone on $[1/3,1]$, as Foot notes, and it is invertible: $\varphi=\arccos(1/\sqrt{3Q})$. Nothing is added by writing the angle, and nothing is lost.</p>
 <div class="table-scroll"><table>
@@ -1084,12 +1084,12 @@ $$</p>
 </table></div>
 <p>The quark sectors sit $2.54^{\circ}$ and $6.20^{\circ}$ outside the closing angle, so they do not close. That is §1's failure written as an angular distance.</p>
 <h3 id="149-the-phase-is-the-azimuth">14.9 The phase is the azimuth</h3>
-<p><strong>[ALGEBRA]</strong> The angle $\varphi$ fixes the direction of $\vec a$ relative to $\vec u$ but not its position around $\vec u$. A second angle is needed, and one representation supplies it. Every triple of roots has exactly one representation</p>
+<p><strong>[ALGEBRA]</strong> The angle $\varphi$ fixes the direction of $\vec r$ relative to $\vec u$ but not its position around $\vec u$. A second angle is needed, and one representation supplies it. Every triple of roots has exactly one representation</p>
 <p>$$
-a_i=\mu+R\cos\left(\delta+\frac{2\pi i}{3}\right),
+\sqrt{\rho_i}=\mu+R\cos\left(\delta+\frac{2\pi i}{3}\right),
 \qquad i=1,2,3,
 $$</p>
-<p>with $\mu=\bar a$ and $R\ge0$. Three parameters, three roots, no assumption: this is a change of coordinates, and it reproduces any triple exactly. Checked on $[1,2,4]$ and on $[1,1,10]$, both to machine precision, and on the leptons with $\mu=24.78249$, $R=35.04741$, $\delta=0.2222296$.</p>
+<p>with $\mu$ the mean of the roots and $R\ge0$. Three parameters, three roots, no assumption: this is a change of coordinates, and it reproduces any triple exactly. Checked on $[1,2,4]$ and on $[1,1,10]$, both to machine precision, and on the leptons with $\mu=24.78249$, $R=35.04741$, $\delta=0.2222296$.</p>
 <p>Two sums carry the whole of the closure in this language, and each is checked at $\delta=0$, where the cosines are $1$, $-1/2$, $-1/2$:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -1114,9 +1114,9 @@ $$</p>
 </table></div>
 <p>With those two, the numerator and the denominator of $Q$ follow in one line each:</p>
 <p>$$
-\sum_i a_i^{2}=3\mu^{2}+\tfrac32 R^{2},
+\sum_i \rho_i=3\mu^{2}+\tfrac32 R^{2},
 \qquad
-\left(\sum_i a_i\right)^{2}=9\mu^{2},
+\left(\sum_i \sqrt{\rho_i}\right)^{2}=9\mu^{2},
 $$</p>
 <p>so</p>
 <p>$$
@@ -1127,7 +1127,7 @@ $$</p>
 Q=\frac23\iff R=\sqrt2\,\mu .
 $$</p>
 <p>The ratio $R/(\sqrt2\mu)$ is $\tan\varphi$ of 14.5, so the radius and the polar angle are one number. The circle of §2.4 is the locus $R=\sqrt2\mu$; the phase is the position on it. That is the exact form of §2.4's sentence "the circle contains no information beyond Koide".</p>
-<h3 id="1410-the-math548-spacing-is-a-projection-not-an-assumption">14.10 The $120^{\circ}$ spacing is a projection, not an assumption</h3>
+<h3 id="1410-the-math549-spacing-is-a-projection-not-an-assumption">14.10 The $120^{\circ}$ spacing is a projection, not an assumption</h3>
 <p><strong>[ALGEBRA]</strong> §3 calls the equal spacing an assumption. At $N=3$ it is not one, and the proof is three lines. Let $\hat e_i$ be the three coordinate axes of $\mathbb R^{3}$ and project each onto the plane orthogonal to $\hat u$:</p>
 <p>$$
 \vec p_i=\hat e_i-\left(\hat e_i\cdot\hat u\right)\hat u
@@ -1137,7 +1137,7 @@ $$</p>
 <p>$$
 \vec p_i\cdot\vec p_j=\delta_{ij}-\tfrac13,
 \qquad
-|\vec p_i|^{2}=\tfrac23 .
+\lVert\vec p_i\rVert^{2}=\tfrac23 .
 $$</p>
 <p>For $i\neq j$ the cosine between the projections is $\left(-\tfrac13\right)/\left(\tfrac23\right)=-\tfrac12$, which is $120^{\circ}$. So the three roots are the components of one vector along three directions forced to be equally spaced. <strong>Nothing else could happen:</strong> the spacing is the dimension of the space, not a choice about it.</p>
 <p>The same construction in $N$ dimensions gives $\cos\theta_{ij}=-1/(N-1)$, hence</p>
@@ -1214,7 +1214,7 @@ $$</p>
 </table></div>
 <p>The closed form is worth writing, because it shows that the phase is a ratio of differences of roots and not a fitted number:</p>
 <p>$$
-\tan\delta=\frac{\sqrt3\left(a_\mu-a_e\right)}{2a_\tau-a_\mu-a_e}
+\tan\delta=\frac{\sqrt3\left(\sqrt{\rho_2}-\sqrt{\rho_1}\right)}{2\sqrt{\rho_3}-\sqrt{\rho_2}-\sqrt{\rho_1}}
 =\frac{\sqrt3\left(14.379440-1\right)}{2(58.968028)-14.379440-1}
 =\frac{23.1739}{102.5566}=0.225962 .
 $$</p>
@@ -1281,7 +1281,7 @@ $$</p>
 <li><strong>They do not explain $2/3$.</strong> The angle is $2/3$; the phase parametrisation is a coordinate change. Both are exact and neither is a mechanism.</li>
 <li><strong>They are not two independent facts.</strong> $\varphi$ and $\delta$ are the polar and azimuthal angles of one vector. A fit to one is a fit to the same three masses as the other.</li>
 <li><strong>$2/9$ is not derived.</strong> No argument here produces it. The corpus's candidates live outside this section: a Green's-function constant $2\pi^{2}/9$ on a $Z_3$-sampled circle, with a free normalisation, and a hypercharge rule $\delta=(1+|Y|)/9$ that fits the leptons and the up quarks and fails its own sum rule. Both are quoted in <code>articles_external/Koide/</code> and neither is adopted.</li>
-<li><strong>$45^{\circ}$ is not fundamental because it is round.</strong> The invariant is $|\vec v|=a_{\parallel}$, equivalently $\sigma_a=\bar a$.</li>
+<li><strong>$45^{\circ}$ is not fundamental because it is round.</strong> The invariant is $\lVert\vec v\rVert=r_{\parallel}$, equivalently $\sigma=\mu$.</li>
 <li><strong>The phase is not evidence of order replacing chaos.</strong> Three numbers to three parameters is a reparametrisation. The only content is that $\delta$ is small and close to a short fraction, and small numbers of that kind are common in fitted triples.</li>
 <li><strong>Neither coordinate fixes the other.</strong> $Q$ is blind to $\delta$ by 14.9, and 14.13 shows that $Q$ does not fix the distance from the node.</li>
 </ol>
@@ -1293,7 +1293,7 @@ $$</p>
 <thead>
 <tr>
 <th>$\delta$</th>
-<th>roots $a_i/\mu$</th>
+<th>roots $\sqrt{\rho_i}/\mu$</th>
 <th>masses at $\mu^{2}m_e=313.84$ MeV</th>
 <th>$Q$</th>
 </tr>
@@ -1320,10 +1320,10 @@ $$</p>
 </tbody>
 </table></div>
 <p>Every row has $Q=2/3$ exactly, and the light rung ranges from zero to $26.9$ MeV. So the node's location is $Q$ and the distance from it is not. The sentence in §12 that retracts "the node distance as a separate finding" therefore retracts too much: the distance is a second coordinate, and it is the phase the note fits in §5 without naming it.</p>
-<p>The positivity window is the same statement from the other side. Requiring $a_i\ge0$ for all three rungs confines $\delta$ to $(-15^{\circ},15^{\circ})$ modulo $120^{\circ}$, whose edges are the nodes. The measured $\delta$ sits $2.267^{\circ}$ inside that boundary.</p>
+<p>The positivity window is the same statement from the other side. Requiring $\sqrt{\rho_i}\ge0$ for all three rungs confines $\delta$ to $(-15^{\circ},15^{\circ})$ modulo $120^{\circ}$, whose edges are the nodes. The measured $\delta$ sits $2.267^{\circ}$ inside that boundary.</p>
 <h3 id="1414-what-the-section-leaves-open">14.14 What the section leaves open</h3>
 <p>The root vector has three coordinates: a scale $\mu$, a polar angle $\varphi$, and an azimuth $\delta$. Koide fixes $\varphi=45^{\circ}$. Nothing in the note fixes $\delta$, and $\delta$ is where the remaining content sits, because $\varphi$ is $Q$ under another name.</p>
-<p>That reframes the target of §11. A mechanism for flavour must produce two numbers and not one: a shape ratio $\sigma_a/\bar a$ equal to $1$, and a phase $\delta$ equal to a short fraction of a radian. The first is a ratio and can come from a projection or an alignment. The second is an angle and needs a boundary condition on a finite tower, which the corpus does not have. The gap named at the end of §10 is therefore unchanged in kind and narrower in statement.</p>
+<p>That reframes the target of §11. A mechanism for flavour must produce two numbers and not one: a shape ratio $\sigma/\mu$ equal to $1$, and a phase $\delta$ equal to a short fraction of a radian. The first is a ratio and can come from a projection or an alignment. The second is an angle and needs a boundary condition on a finite tower, which the corpus does not have. The gap named at the end of §10 is therefore unchanged in kind and narrower in statement.</p>
 <p>One falsifiable shape is worth recording. If any other triple closes, it must appear at $45^{\circ}$ in the table of 14.8, and its phase must be computed in the convention of 14.11. The quark sectors sit at $47.54^{\circ}$ and $51.20^{\circ}$, so they do not close, and their phases are not quoted here because their masses need a stated scale before the number means anything.</p>
 <h3 id="1415-checks-made-inside-this-section">14.15 Checks made inside this section</h3>
 <div class="table-scroll"><table>
@@ -1372,7 +1372,7 @@ $$</p>
 </tr>
 <tr>
 <td>the split</td>
-<td>$a_{\parallel}$ and $|\vec v|$</td>
+<td>$r_{\parallel}$ and $\lVert\vec v\rVert$</td>
 <td>$30.68425$, $30.68397$</td>
 </tr>
 <tr>
@@ -1397,7 +1397,7 @@ $$</p>
 </tr>
 <tr>
 <td>the projection</td>
-<td>$\vec p_i\cdot\vec p_j=-1/3$, $|\vec p_i|^{2}=2/3$</td>
+<td>$\vec p_i\cdot\vec p_j=-1/3$, $\lVert\vec p_i\rVert^{2}=2/3$</td>
 <td>$\cos=-1/2$, $120^{\circ}$</td>
 </tr>
 <tr>
@@ -1407,7 +1407,7 @@ $$</p>
 </tr>
 <tr>
 <td>the closed form for the phase</td>
-<td>$\sqrt3(a_\mu-a_e)/(2a_\tau-a_\mu-a_e)$</td>
+<td>$\sqrt3(\sqrt{\rho_2}-\sqrt{\rho_1})/(2\sqrt{\rho_3}-\sqrt{\rho_2}-\sqrt{\rho_1})$</td>
 <td>$0.22596$, $\delta=0.2222296$</td>
 </tr>
 <tr>
@@ -1417,7 +1417,7 @@ $$</p>
 </tr>
 <tr>
 <td>the counterexample</td>
-<td>$\delta=0$, $\mu=\bar a$</td>
+<td>$\delta=0$, the measured $\mu$</td>
 <td>$26.9$, $26.9$, $1829.2$ MeV, $Q=2/3$</td>
 </tr>
 <tr>
@@ -1427,7 +1427,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<h3 id="1416-is-the-value-math784-an-accident-a-counted-answer">14.16 Is the Value $2/3$ an Accident? A Counted Answer</h3>
+<h3 id="1416-is-the-value-math785-an-accident-a-counted-answer">14.16 Is the Value $2/3$ an Accident? A Counted Answer</h3>
 <p>§10 item 7 records the relation as "a coincidence with a good parametrisation". That verdict is too weak, and this subsection replaces it with a number. The question has an answer, the answer is about one in a thousand, and the standing difficulty is not improbability at all.</p>
 <h4 id="14161-what-has-to-be-counted">14.16.1 What has to be counted</h4>
 <p>Three triples are in the data: the charged leptons and the two quark sectors. One of them closes to six parts in a million and the other two miss by $0.18$ and $0.065$. The claim "accident" says that the closing triple is an unremarkable draw from the space of possible triples. That claim is testable, because the space of triples has a measure.</p>
@@ -1511,7 +1511,7 @@ $$</p>
 </table></div>
 <p><strong>Three is the only count for which the closure value is the middle of its own allowed range.</strong> So the sentence "$Q=2/3$" and the sentence "three rungs" are the same sentence, once the bound is known. This is a sharpening of what the number means; it is not extra evidence, and the section does not count it twice.</p>
 <p>A second exact tie comes from 14.10. The closure value sits at the fraction $1/(N-1)$ of its interval, and the projected spacing of the rung directions has cosine $-1/(N-1)$. The same magnitude appears on both sides, and at $N=3$ both are $1/2$: the coefficient is half way up its range, and the directions are $120^{\circ}$ apart. Table of the first column and table of 14.10 are the same row index.</p>
-<h4 id="14164-what-the-corpus-supplies-at-math850-and-what-it-does-not">14.16.4 What the corpus supplies at $2/3$, and what it does not</h4>
+<h4 id="14164-what-the-corpus-supplies-at-math851-and-what-it-does-not">14.16.4 What the corpus supplies at $2/3$, and what it does not</h4>
 <p>The corpus produces $2/3$ exactly, several times. The list has to be read with care, because the appearances are not all independent, and two of them move with a choice of basis.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -1564,7 +1564,7 @@ $$</p>
 <p>Sources: <a href="../articles_physics/charge-quantisation-from-the-fourth-colour-one-trace-one-third.html">Charge Quantisation from the Fourth Colour: One Trace, One Third, and Where the Twenty-One Generators Go</a>, <a href="../articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model Content</a>, <a href="../articles_physics/the-photon-as-the-unbroken-mixture.html">The Photon as the Unbroken Mixture</a>, and <a href="../articles_physics/the-gluon-an-octet-outside-the-biquaternion-algebra.html">The Gluon: An Octet Outside the Biquaternion Algebra</a>.</p>
 <p><strong>Two honest deductions.</strong> First, the appearances are not six independent sightings. The first, second, third and sixth rows are one fact: the trace $3\cdot\tfrac13-1=0$, which fixes a ratio of $1$ to $3$. The fourth and fifth rows are normalisations and move with a convention, and the photon article says so itself. So the model produces $2/3$ <strong>once</strong>, at the level of a trace ratio, and everything else descends from it or from a basis choice.</p>
 <p>Second, the origin of the trace ratio is a count. Three colours share the quark eigenvalue, so a third is forced, and $2/3$ follows from $2\cdot\tfrac13$. The charge article states the count explicitly: "the denominator is a count ... three is the number of dimensions the algebra supplies for them".</p>
-<h4 id="14165-the-two-values-of-math869-and-the-one-thing-they-do-not-share">14.16.5 The two values of $2/3$, and the one thing they do not share</h4>
+<h4 id="14165-the-two-values-of-math870-and-the-one-thing-they-do-not-share">14.16.5 The two values of $2/3$, and the one thing they do not share</h4>
 <p>Both values descend from three, and the resemblance is real. It is not yet a derivation.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -1587,8 +1587,8 @@ $$</p>
 </tr>
 <tr>
 <td>what fixes it</td>
-<td>the trace $\sum_i\lambda_i=0$ on four states</td>
-<td>the direction of $\vec a$ at the midpoint of its interval</td>
+<td>the trace $\sum_i\lambda_i\sqrt{\rho_i}=0$ on four states</td>
+<td>the direction of $\vec r$ at the midpoint of its interval</td>
 </tr>
 <tr>
 <td>status</td>
@@ -1598,7 +1598,7 @@ $$</p>
 <tr>
 <td>the missing step</td>
 <td>none</td>
-<td>why $\sigma_a=\bar a$</td>
+<td>why $\sigma=\mu$</td>
 </tr>
 </tbody>
 </table></div>
@@ -1609,7 +1609,7 @@ $$</p>
 <li><strong>The value is not an accident.</strong> One in nine hundred after the correction for short fractions, and the closing triple is the only one of three. Confidence: moderate to high.</li>
 <li><strong>The stronger claim, that the model predicts it, is not established.</strong> The model's $2/3$ is a trace ratio of $1$ to $3$; Koide's is a mass ratio. Confidence: certain that the step is missing.</li>
 <li><strong>§10 item 7 is too weak and should be read with this subsection.</strong> "A coincidence with a good parametrisation" was written before the probability was counted. The correct statement is: a three-sigma hit on a value the algebra also produces, whose mechanism is unidentified.</li>
-<li><strong>The number is worth pursuing, and the target is unchanged.</strong> It is 14.14's: a mechanism must give $\sigma_a=\bar a$ and a phase $\delta$. A trace ratio cannot do that by itself, because it carries no mass scale and no spectrum.</li>
+<li><strong>The number is worth pursuing, and the target is unchanged.</strong> It is 14.14's: a mechanism must give $\sigma=\mu$ and a phase $\delta$. A trace ratio cannot do that by itself, because it carries no mass scale and no spectrum.</li>
 </ol>
 <p>Three outcomes would end the reading, and each is a measurement rather than an argument:</p>
 <div class="table-scroll"><table>
@@ -1701,33 +1701,33 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<h2 id="15-increment-the-shifted-koide-math918-and-why-recovering-the-electron-is-not-evidence">15. Increment: The Shifted Koide $(m_2,m_3,m_4)$, and Why Recovering the Electron Is Not Evidence</h2>
+<h2 id="15-increment-the-shifted-koide-math919-and-why-recovering-the-electron-is-not-evidence">15. Increment: The Shifted Koide $(m_2,m_3,m_4)$, and Why Recovering the Electron Is Not Evidence</h2>
 <p><strong>This section is an increment, not a result.</strong> It records one substitution, the algebra it forces, and the two questions the substitution raises. The first question is whether the relation still says anything once shifted; the answer is that it says the same thing twice and nothing more. The second is whether the shifted relation predicts a fourth mass; it does, and the prediction is dead on arrival. The arithmetic is kept because it took an afternoon and it settles both questions.</p>
 <h3 id="151-the-substitution-and-the-quadratic-it-forces">15.1 The substitution, and the quadratic it forces</h3>
 <p><strong>[ALGEBRA]</strong> The relation of §1 is written for the triple $(m_1,m_2,m_3)$. Shift the indices by one rung:</p>
 <p>$$
 Q=\frac{1+\rho_3+\rho_4}{\left(1+\sqrt{\rho_3}+\sqrt{\rho_4}\right)^{2}}=\frac{2}{3},
 \qquad
-\rho_i=\frac{m_i}{m_2},
+\rho_i=\frac{m_i}{m_e},
 \qquad (m_2,m_3,m_4)=(m_\mu,m_\tau,m_4),
 $$</p>
-<p>where the ratios are taken with $m_\mu$ as the unit so that the shifted relation has the same shape as the first one.</p>
-<p><strong>[ALGEBRA]</strong> With $a_i=\sqrt{\rho_i}$, $S=a_2+a_3$ and $T=a_2^{2}+a_3^{2}$, clearing the denominator gives a quadratic in the one unknown $a_4$:</p>
+<p>where every ratio keeps the electron as the unit of §1, so that the shifted triple is the first triple with one index moved along and the numbers below are directly comparable with §1.</p>
+<p><strong>[ALGEBRA]</strong> In the electron units of §1, with $S=\sqrt{\rho_2}+\sqrt{\rho_3}$ and $T=\rho_2+\rho_3$, clearing the denominator gives a quadratic in the one unknown $\sqrt{\rho_4}$:</p>
 <p>$$
-a_4^{2}-4S\,a_4+3T-2S^{2}=0 .
+\rho_4-4S\,\sqrt{\rho_4}+3T-2S^{2}=0 .
 $$</p>
-<p><strong>[ALGEBRA]</strong> Its discriminant is $24S^{2}-12T=12\left(a_2^{2}+4a_2a_3+a_3^{2}\right)$, which is positive for any two positive masses. <strong>So the shifted relation never fails to offer a solution. It always has two real roots, one above the pair and one below it.</strong> That fact is the first sign that the substitution buys nothing: an equation that always has a solution cannot fail, and an equation that cannot fail is not a test.</p>
-<p><strong>[ALGEBRA]</strong> The roots in closed form, with $m_4=a_4^{2}$:</p>
+<p><strong>[ALGEBRA]</strong> Its discriminant is $24S^{2}-12T=12\left(\rho_2+4\sqrt{\rho_2}\sqrt{\rho_3}+\rho_3\right)$, which is positive for any two positive masses. <strong>So the shifted relation never fails to offer a solution. It always has two real roots, one above the pair and one below it.</strong> That fact is the first sign that the substitution buys nothing: an equation that always has a solution cannot fail, and an equation that cannot fail is not a test.</p>
+<p><strong>[ALGEBRA]</strong> The root in closed form:</p>
 <p>$$
-m_4=\left[\,2\left(a_2+a_3\right)\;\pm\;\sqrt{3\left(a_2^{2}+4a_2a_3+a_3^{2}\right)}\,\right]^{2}.
+\rho_4=\left[\,2\left(\sqrt{\rho_2}+\sqrt{\rho_3}\right)\;\pm\;\sqrt{3\left(\rho_2+4\sqrt{\rho_2}\sqrt{\rho_3}+\rho_3\right)}\,\right]^{2}.
 $$</p>
 <h3 id="152-the-two-roots">15.2 The two roots</h3>
-<p><strong>[ALGEBRA applied to data]</strong> With the PDG masses, $a_2=14.379440$ and $a_3=58.968028$:</p>
+<p><strong>[ALGEBRA applied to data]</strong> With the PDG masses, $\sqrt{\rho_2}=14.379440$ and $\sqrt{\rho_3}=58.968028$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>root</th>
-<th>$a_4$</th>
+<th>$\sqrt{\rho_4}$</th>
 <th>$\rho_4$</th>
 <th>what it is</th>
 </tr>
@@ -1756,11 +1756,11 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>predicted $a_1$</td>
+<td>predicted $\sqrt{\rho_1}$</td>
 <td>$0.999650$</td>
 </tr>
 <tr>
-<td>measured $a_1$</td>
+<td>measured $\sqrt{\rho_1}$</td>
 <td>$1$</td>
 </tr>
 <tr>
@@ -1785,9 +1785,9 @@ $$</p>
 <p>$$
 z^{2}-4S z+3T-2S^{2}=0
 \quad\Longleftrightarrow\quad
-\frac{a_2^{2}+a_3^{2}+z^{2}}{\left(a_2+a_3+z\right)^{2}}=\frac{2}{3}.
+\frac{\rho_2+\rho_3+z^{2}}{\left(\sqrt{\rho_2}+\sqrt{\rho_3}+z\right)^{2}}=\frac{2}{3}.
 $$</p>
-<p>The left side is the statement "the pair $(a_2,a_3)$ completes to $z$ with $Q=2/3$"; the right side is "the triple satisfies $Q=2/3$". <strong>They are the same statement.</strong> So the recovery is not evidence <em>additional</em> to the original — but "not additional" is not "empty", and §15.8 corrects a draft of this paragraph that said otherwise. The shared statement is one genuine constraint on three masses, and it is worth what §1 says it is worth. A numerical check confirms the implication runs both ways: over $20\,000$ random triples, the completion never returns the third mass unless $Q=2/3$ holds, and over $2\,000$ constructed triples with $Q=2/3$ it returns it every time.</p>
+<p>The left side is the statement "the pair $(\sqrt{\rho_2},\sqrt{\rho_3})$ completes to $z$ with $Q=2/3$"; the right side is "the triple satisfies $Q=2/3$". <strong>They are the same statement.</strong> So the recovery is not evidence <em>additional</em> to the original — but "not additional" is not "empty", and §15.8 corrects a draft of this paragraph that said otherwise. The shared statement is one genuine constraint on three masses, and it is worth what §1 says it is worth. A numerical check confirms the implication runs both ways: over $20\,000$ random triples, the completion never returns the third mass unless $Q=2/3$ holds, and over $2\,000$ constructed triples with $Q=2/3$ it returns it every time.</p>
 <p><strong>Question 3: is it circular in the vicious sense?</strong> <strong>[ALGEBRA]</strong> Not quite, and the distinction matters. A vicious circle is a test whose input contains its own output. Here the input is two measured masses and the output is a third measured mass that was not used. That is a legitimate consistency check, and it passes. What it is not is an independent one. <strong>A relation with three slots and one identity can be read from any two slots, and every reading is the same reading.</strong></p>
 <p><strong>The counting, stated correctly.</strong> The flavour block has three charged-lepton masses and one relation on them. Two of the three are free at the level of <em>raw data</em>, and one is fixed by the relation. <strong>That is a real reduction of one parameter, and this section must say so plainly: it is the grade-two claim of the corpus, not a null result.</strong> What the shifted reading does not supply is a <em>second</em> constraint. Substitute $(m_2,m_3,m_4)$ and the relation is still one equation on one unknown, because it is the same equation. One constraint can remove one parameter. It cannot remove two, and it cannot be spent twice.</p>
 <p><strong>[ALGEBRA]</strong> If the reader wants the general statement: for $Q=2/N$ and a tower of $N$ rungs, the relation is one equation on $N$ masses, so the tower has $N-1$ free shapes and the relation fixes one. Reading the relation from any pair returns the remaining root, always. That is §2.3 in another coordinate, and it is why §3's table has "predictions beyond $Q$: none".</p>
@@ -1805,22 +1805,22 @@ $$</p>
 <tbody>
 <tr>
 <td>$m_e$</td>
-<td>$-0.01757$</td>
-<td>$+0.0350\%$</td>
+<td>$-0.00879$</td>
+<td>$+0.070\%$</td>
 </tr>
 <tr>
 <td>$m_\mu$</td>
-<td>$-0.18306$</td>
-<td>$+0.0034\%$</td>
+<td>$-0.09153$</td>
+<td>$+0.0068\%$</td>
 </tr>
 <tr>
 <td>$m_\tau$</td>
-<td>$+0.20063$</td>
-<td>$-0.0031\%$</td>
+<td>$+0.10032$</td>
+<td>$-0.0062\%$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>$Q$ is eleven times more sensitive to $m_\tau$ than to $m_e$.</strong> So the same $6.2\times10^{-6}$ shows up as $0.07\%$ when it is charged to the electron and as $0.003\%$ when it is charged to the tau. That is exactly the pair of numbers observed: predicting $m_\tau$ from $(m_e,m_\mu)$ gives $1776.97$ MeV against a measured $1776.86$, a miss of $0.006\%$; predicting $m_e$ from $(m_\mu,m_\tau)$ gives $0.510641$ against $0.510999$, a miss of $0.070\%$.</p>
+<p><strong>$Q$ is eleven times more sensitive to $m_\tau$ than to $m_e$.</strong> So the same $6.2\times10^{-6}$ shows up as $0.070\%$ when it is charged to the electron and as $0.006\%$ when it is charged to the tau. That is exactly the pair of numbers observed: predicting $m_\tau$ from $(m_e,m_\mu)$ gives $1776.97$ MeV against a measured $1776.86$, a miss of $0.006\%$; predicting $m_e$ from $(m_\mu,m_\tau)$ gives $0.510641$ against $0.510999$, a miss of $0.070\%$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -1878,7 +1878,7 @@ $$</p>
 <p>$$
 P(x,y)=2(x+y)+\sqrt{3\left(x^{2}+4xy+y^{2}\right)} .
 $$</p>
-<p><strong>[ALGEBRA]</strong> Iterating from $(a_\mu,a_\tau)$ gives a tower, in GeV:</p>
+<p><strong>[ALGEBRA]</strong> Iterating from $(\sqrt{\rho_2},\sqrt{\rho_3})$ gives a tower, in GeV:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -2006,7 +2006,7 @@ $$</p>
 <h3 id="158-recoverable-is-what-related-means-correcting-the-draft-of-153">15.8 "Recoverable" Is What "Related" Means: correcting the draft of 15.3</h3>
 <p><strong>[ALGEBRA]</strong> An earlier draft of 15.3 said that recovering the electron "adds exactly zero". That sentence was wrong, and it is worth putting the correction in the record rather than editing it away.</p>
 <p><strong>The claim that was wrong.</strong> In physics, three quantities are called related when any one of them is fixed by the other two. That is not a metaphor and not a weakening; it is the definition. If $m_e$ follows from $(m_\mu,m_\tau)$, then the three masses are related. The previous draft used a parameter count to argue the recovery was empty, and the count says the opposite of what I claimed: <strong>one relation on three masses removes one parameter. The removal is the content.</strong></p>
-<p><strong>The stronger form of the point, which the draft missed entirely.</strong> The relation is symmetric in its three arguments, so the triple can be read from any of its three sides, and all three readings return the same three numbers. With $a_4$ chosen to close the $(\mu,\tau)$ pair:</p>
+<p><strong>The stronger form of the point, which the draft missed entirely.</strong> The relation is symmetric in its three arguments, so the triple can be read from any of its three sides, and all three readings return the same three numbers. With $\sqrt{\rho_4}$ chosen to close the $(\mu,\tau)$ pair:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -2021,23 +2021,23 @@ $$</p>
 <td>$(\mu,\tau)$</td>
 <td>$292.3902$</td>
 <td>$0.999650$</td>
-<td>$a_4$, and the electron</td>
+<td>$\sqrt{\rho_4}$, and the electron</td>
 </tr>
 <tr>
 <td>$(\tau,m_4)$</td>
 <td>$1391.0534$</td>
 <td>$14.379440$</td>
-<td>$a_4$, and the muon</td>
+<td>$\sqrt{\rho_4}$, and the muon</td>
 </tr>
 <tr>
 <td>$(m_4,\mu)$</td>
 <td>$1168.1104$</td>
 <td>$58.968028$</td>
-<td>$a_4$, and the tau</td>
+<td>$\sqrt{\rho_4}$, and the tau</td>
 </tr>
 </tbody>
 </table></div>
-<p>The small roots are $a_1=1$, $a_2=14.379440$ and $a_3=58.968028$ to six figures, in the order they were not supplied. <strong>So "reading the relation backwards" is not a second, weaker test. It is the same test seen from another side, which is precisely what a symmetric constraint looks like.</strong> My earlier framing treated the symmetry as a defect. It is the definition of the relation being three-way rather than a formula for one variable.</p>
+<p>The small roots are $\sqrt{\rho_1}=1$, $\sqrt{\rho_2}=14.379440$ and $\sqrt{\rho_3}=58.968028$ to six figures, in the order they were not supplied. <strong>So "reading the relation backwards" is not a second, weaker test. It is the same test seen from another side, which is precisely what a symmetric constraint looks like.</strong> My earlier framing treated the symmetry as a defect. It is the definition of the relation being three-way rather than a formula for one variable.</p>
 <p><strong>[ALGEBRA applied to data]</strong> What the recovery is worth, therefore, is exactly what $Q=2/3$ is worth, no more and no less:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -2096,10 +2096,10 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>So the answer to the question that produced this section is: no, it is not circular, and yes, the three are related.</strong> The draft of 15.3 denied the second half. That denial was the error, and this subsection is the correction.</p>
-<h2 id="16-the-math1095-cosine-three-roots-as-one-circle">16. The $Z_3$ Cosine: Three Roots as One Circle</h2>
+<h2 id="16-the-math1093-cosine-three-roots-as-one-circle">16. The $Z_3$ Cosine: Three Roots as One Circle</h2>
 <p><em>Scope.</em> This section develops the parametrisation</p>
 <p>$$
-a_i=\mu\left(1+\sqrt2\cos\left(\delta+\frac{2\pi i}{3}\right)\right),
+\sqrt{\rho_i}=\mu\left(1+\sqrt2\cos\left(\delta+\frac{2\pi i}{3}\right)\right),
 \qquad i=1,2,3,
 $$</p>
 <p>which §14 used in 14.9 to 14.11 without deriving. Three things change when it is written out. The form is a change of basis and not an assumption. Its two shape parameters are the second and third moments of the roots, which is why Koide fixes one and is blind to the other. And the standard version, with the $\sqrt2$ written inside, is not a general parametrisation at all: it is the Koide surface, with $k=1$ already imposed.</p>
@@ -2109,7 +2109,7 @@ $$</p>
 \sqrt{m_j}=\sqrt{M_f}\left(1+\sqrt2\,k_f\cos\left(\frac{2\pi j}{3}+\delta_f\right)\right),
 \qquad j=1,2,3,
 $$</p>
-<p>with three parameters: the scale $\sqrt{M_f}$, the coefficient $k_f$, and the phase $\delta_f$. Read in this note's variable the same statement is $a_j=\bar a\left(1+\sqrt2\,k_f\cos\left(2\pi j/3+\delta_f\right)\right)$ with $a_j=\sqrt{m_j/m_1}$, and the scale $\sqrt{M_f}$ is what drops out of every ratio; the two forms carry one statement and differ only in where the scale is written. He states the two properties that matter. Any triple needs three parameters, so the form is general. And Koide's relation becomes $\frac13\left(1+k_f^{2}\right)$, so it fixes $k_f$ and is independent of $\delta_f$. The measured values are $k_L=1$ for the leptons, $k_D\approx1.08$ and $k_U\approx1.25$ for the down and up quarks at $2$ GeV, and $k_\nu\le0.81$ for neutrinos.</p>
+<p>with three parameters: the scale $\sqrt{M_f}$, the coefficient $k_f$, and the phase $\delta_f$. Read in this note's variable the same statement is $\sqrt{\rho_j}=\mu\left(1+\sqrt2\,k_f\cos\left(2\pi j/3+\delta_f\right)\right)$ with $\sqrt{\rho_j}=\sqrt{m_j/m_1}$, and the scale $\sqrt{M_f}$ is what drops out of every ratio; the two forms carry one statement and differ only in where the scale is written. He states the two properties that matter. Any triple needs three parameters, so the form is general. And Koide's relation becomes $\frac13\left(1+k_f^{2}\right)$, so it fixes $k_f$ and is independent of $\delta_f$. The measured values are $k_L=1$ for the leptons, $k_D\approx1.08$ and $k_U\approx1.25$ for the down and up quarks at $2$ GeV, and $k_\nu\le0.81$ for neutrinos.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -2123,7 +2123,7 @@ $$</p>
 <tr>
 <td>the scale</td>
 <td>$\mu$</td>
-<td>$\mu=\bar a$</td>
+<td>$\mu$</td>
 <td>same</td>
 </tr>
 <tr>
@@ -2152,32 +2152,32 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>So <strong>$k_f$ is exactly $\tan\varphi$ of 14.4 and exactly $\sigma_a/\bar a$ of 14.7.</strong> The literature's coefficient and this note's angle are one number, and neither paper says so, because neither computes the variance. The form quoted at the head of this section has $k=1$ absorbed into the $\sqrt2$; that is legitimate only because the leptons satisfy it to $10^{-5}$. For the quarks the coefficient is not one and cannot be absorbed.</p>
+<p>So <strong>$k_f$ is exactly $\tan\varphi$ of 14.4 and exactly $\sigma/\mu$ of 14.7.</strong> The literature's coefficient and this note's angle are one number, and neither paper says so, because neither computes the variance. The form quoted at the head of this section has $k=1$ absorbed into the $\sqrt2$; that is legitimate only because the leptons satisfy it to $10^{-5}$. For the quarks the coefficient is not one and cannot be absorbed.</p>
 <h3 id="162-it-is-a-change-of-basis-and-it-is-complete">16.2 It is a change of basis, and it is complete</h3>
 <p><strong>[ALGEBRA]</strong> Three parameters for three roots. The map is invertible and the inverse is explicit:</p>
 <p>$$
-\mu=\bar a,\qquad R=\sqrt{\tfrac23\sum_i\left(a_i-\bar a\right)^{2}}=\sqrt2\,\sigma_a,\qquad
-\tan\delta=\frac{\sqrt3\left(a_2-a_1\right)}{2a_3-a_2-a_1},
+\mu=\frac13\sum_i\sqrt{\rho_i},\qquad R=\sqrt{\tfrac23\sum_i\left(\sqrt{\rho_i}-\mu\right)^{2}}=\sqrt2\,\sigma,\qquad
+\tan\delta=\frac{\sqrt3\left(\sqrt{\rho_2}-\sqrt{\rho_1}\right)}{2\sqrt{\rho_3}-\sqrt{\rho_2}-\sqrt{\rho_1}},
 $$</p>
-<p>with the rungs ordered $a_1&lt;a_2&lt;a_3$ as in 14.11. Checked on $[1,2,4]$ and on $[1,1,10]$ the reconstruction is exact to machine precision, and on the leptons the error is $1.6\times10^{-14}$.</p>
-<p>The reason the form is natural is that it is a discrete Fourier transform. For a function on $Z_3$ the real Fourier basis has exactly three functions, $1$, $\cos$, $\sin$; there is no third distinct mode. So writing three real roots as one constant plus one sinusoid is the only decomposition available, and it is forced rather than chosen. With $\hat a_k=\frac13\sum_{j=0}^{2}a_j e^{-2\pi ijk/3}$ and $(a_0,a_1,a_2)=(a_e,a_\mu,a_\tau)$,</p>
+<p>with the rungs ordered $\sqrt{\rho_1}&lt;\sqrt{\rho_2}&lt;\sqrt{\rho_3}$ as in 14.11. Checked on $[1,2,4]$ and on $[1,1,10]$ the reconstruction is exact to machine precision, and on the leptons the error is $1.6\times10^{-14}$.</p>
+<p>The reason the form is natural is that it is a discrete Fourier transform. For a function on $Z_3$ the real Fourier basis has exactly three functions, $1$, $\cos$, $\sin$; there is no third distinct mode. So writing three real roots as one constant plus one sinusoid is the only decomposition available, and it is forced rather than chosen. Sampling the three roots at $j=0,1,2$ and taking $\hat C_k=\frac13\sum_{j=0}^{2}\sqrt{\rho_j}\,e^{-2\pi ijk/3}$,</p>
 <p>$$
-\hat a_0=\mu,\qquad \left|\hat a_1\right|=\frac{R}{2},\qquad \arg\hat a_1=\delta+\frac{2\pi}{3},
+\hat C_0=\mu,\qquad \left|\hat C_1\right|=\frac{R}{2},\qquad \arg\hat C_1=\delta+\frac{2\pi}{3},
 $$</p>
-<p>verified to ten digits: $\mu=24.782\,489$, $|\hat a_1|=17.523\,705=R/2$, and $\arg\hat a_1=2.316\,6247=\delta+2\pi/3$. The offset $2\pi/3$ is the labelling convention of 14.11 and carries no content.</p>
+<p>verified to ten digits: $\mu=24.782\,489$, $R/2=17.523\,705$, and $\arg\hat C_1=2.316\,6247=\delta+2\pi/3$. The offset $2\pi/3$ is the labelling convention of 14.11 and carries no content.</p>
 <p><strong>So $\mu$ is the mean and $(\frac{R}{2},\delta)$ are the modulus and argument of the first Fourier coefficient of the root vector.</strong> The $2/9$ is the argument of a Fourier mode. This is a sharper statement of 14.9's "$\delta$ is the azimuth", and it is the cleanest form of the claim that $\delta$ is a coordinate.</p>
 <h3 id="163-the-two-shape-parameters-are-the-second-and-third-moments">16.3 The two shape parameters are the second and third moments</h3>
 <p><strong>[ALGEBRA]</strong> Shift to the mean and compute the moments of the three roots:</p>
 <p>$$
-\sum_i\left(a_i-\mu\right)^{2}=\tfrac32R^{2},
+\sum_i\left(\sqrt{\rho_i}-\mu\right)^{2}=\tfrac32R^{2},
 \qquad
-\sum_i\left(a_i-\mu\right)^{3}=\tfrac34R^{3}\cos3\delta .
+\sum_i\left(\sqrt{\rho_i}-\mu\right)^{3}=\tfrac34R^{3}\cos3\delta .
 $$</p>
 <p>Both are verified on the leptons: $1842.481$ against $\frac32R^{2}=1842.481$, and $25373.6$ against $\frac34R^{3}\cos3\delta=25373.6$. Dividing by three,</p>
 <p>$$
-\sigma_a^{2}=\frac{R^{2}}{2},
+\sigma^{2}=\frac{R^{2}}{2},
 \qquad
-\cos3\delta=\frac{4}{3R^{3}}\sum_i\left(a_i-\mu\right)^{3}.
+\cos3\delta=\frac{4}{3R^{3}}\sum_i\left(\sqrt{\rho_i}-\mu\right)^{3}.
 $$</p>
 <p>This is the sentence the whole section turns on. <strong>The coefficient $k$ is the variance of the roots in units of their mean; the phase $\cos3\delta$ is their third moment.</strong> Koide is a statement about the second moment; $\delta$ is the skewness direction, and it is the third moment because a symmetric triple has none.</p>
 <div class="table-scroll"><table>
@@ -2192,29 +2192,29 @@ $$</p>
 <tbody>
 <tr>
 <td>first</td>
-<td>$\sum_i(a_i-\mu)=0$</td>
+<td>$\sum_i(\sqrt{\rho_i}-\mu)=0$</td>
 <td>the definition of $\mu$</td>
 <td>$0$ by construction</td>
 </tr>
 <tr>
 <td>second</td>
-<td>$\sum_i(a_i-\mu)^{2}=\frac32R^{2}$</td>
+<td>$\sum_i(\sqrt{\rho_i}-\mu)^{2}=\frac32R^{2}$</td>
 <td>$k$, hence $Q$</td>
 <td>$1842.481$</td>
 </tr>
 <tr>
 <td>third</td>
-<td>$\sum_i(a_i-\mu)^{3}=\frac34R^{3}\cos3\delta$</td>
+<td>$\sum_i(\sqrt{\rho_i}-\mu)^{3}=\frac34R^{3}\cos3\delta$</td>
 <td>$\cos3\delta$</td>
 <td>$25373.6$</td>
 </tr>
 </tbody>
 </table></div>
 <p>A triple has two shape degrees of freedom, so two moments exhaust it. Nothing else is free, and no fourth relation can be independent of the first three.</p>
-<h3 id="164-koide-is-math1172">16.4 Koide is $k=1$</h3>
-<p><strong>[ALGEBRA]</strong> From $Q=\sum_i a_i^{2}/(\sum_i a_i)^{2}$ and the two sums of 14.9,</p>
+<h3 id="164-koide-is-math1170">16.4 Koide is $k=1$</h3>
+<p><strong>[ALGEBRA]</strong> From $Q=\sum_i \rho_i/(\sum_i \sqrt{\rho_i})^{2}$ and the two sums of 14.9,</p>
 <p>$$
-\sum_i a_i^{2}=3\mu^{2}+\tfrac32R^{2},\qquad \left(\sum_i a_i\right)^{2}=9\mu^{2},
+\sum_i \rho_i=3\mu^{2}+\tfrac32R^{2},\qquad \left(\sum_i \sqrt{\rho_i}\right)^{2}=9\mu^{2},
 $$</p>
 <p>so with $R=\sqrt2\,k\,\mu$,</p>
 <p>$$
@@ -2250,17 +2250,17 @@ $$</p>
 </tbody>
 </table></div>
 <p>And the bound: $Q\le1$ is $k\le\sqrt2$, which is the "mathematically allowed region $0\le k_f\le\sqrt2$" that Ženczykowski quotes. So the ceiling on $Q$ is a ceiling on the coefficient, and 14.4's cone is the surface $k=1$ in the $(\mu,R)$ plane.</p>
-<h3 id="165-the-cubic-whose-roots-are-the-three-math1189">16.5 The cubic whose roots are the three $a_i$</h3>
-<p><strong>[ALGEBRA]</strong> The three roots $a_i$ are the roots of one cubic, and writing it out shows exactly how much the phase can do. Using the three symmetric sums,</p>
+<h3 id="165-the-cubic-whose-roots-are-the-three-math1187">16.5 The cubic whose roots are the three $\sqrt{\rho_i}$</h3>
+<p><strong>[ALGEBRA]</strong> The three roots $\sqrt{\rho_i}$ are the roots of one cubic, and writing it out shows exactly how much the phase can do. Using the three symmetric sums,</p>
 <p>$$
-\prod_i a_i=\mu^{3}-\tfrac34\mu R^{2}+\tfrac14R^{3}\cos3\delta,
+\prod_i \sqrt{\rho_i}=\mu^{3}-\tfrac34\mu R^{2}+\tfrac14R^{3}\cos3\delta,
 $$</p>
 <p>the polynomial is</p>
 <p>$$
 t^{3}-3\mu\,t^{2}+\left(3\mu^{2}-\tfrac34R^{2}\right)t-\left(\mu^{3}-\tfrac34\mu R^{2}+\tfrac14R^{3}\cos3\delta\right)=0 .
 $$</p>
-<p>For the leptons, in the normalisation $a_1=1$, it is $t^{3}-74.347470\,t^{2}+921.274719\,t-847.927249$, and each root evaluates it to order $10^{-11}$.</p>
-<p><strong>$\delta$ enters only through $\cos3\delta$.</strong> So the unordered triple $\{a_1,a_2,a_3\}$ is a function of $(\mu,R,\cos3\delta)$ and of nothing else. The phase has a sixfold ambiguity, and it is the symmetry group of three objects:</p>
+<p>For the leptons, in the normalisation $\sqrt{\rho_1}=1$, it is $t^{3}-74.347467\,t^{2}+921.274652\,t-847.927185$, and each root evaluates it to order $10^{-11}$.</p>
+<p><strong>$\delta$ enters only through $\cos3\delta$.</strong> So the unordered triple $\{\sqrt{\rho_1},\sqrt{\rho_2},\sqrt{\rho_3}\}$ is a function of $(\mu,R,\cos3\delta)$ and of nothing else. The phase has a sixfold ambiguity, and it is the symmetry group of three objects:</p>
 <p>$$
 \delta\sim\pm\delta+\frac{2\pi n}{3},\qquad n=0,1,2,
 $$</p>
@@ -2324,7 +2324,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The lepton row is the relation of §1 restated. The up row is a genuine near-hit at the $0.4\%$ level: $\delta_U$ is $2/27$ to three parts in a thousand, which is what suggests $\delta_L/3$. The down row fails by $26\%$, and it is also the row whose inputs are the least well determined: with the alternative set $d=4.95$, $s=115$ MeV the phase moves to $0.1257$, still far from $4/27$. <strong>So the phase pattern is two for three, and the failure is in the sector with the worst mass measurements.</strong> That is the honest reading, and it is weaker than the relation $Q=2/3$, which is one for one at six parts in a million.</p>
-<h3 id="168-the-one-systematic-attempt-math1270-from-hypercharge">16.8 The one systematic attempt: $\delta$ from hypercharge</h3>
+<h3 id="168-the-one-systematic-attempt-math1268-from-hypercharge">16.8 The one systematic attempt: $\delta$ from hypercharge</h3>
 <p><strong>[PUBLISHED]</strong> Ženczykowski proposes that the phase is fixed by two quantum numbers,</p>
 <p>$$
 \delta\left(I_3=-\tfrac12,Y\right)=\frac{1}{9}\left(1+\left|Y\right|\right),
@@ -2337,7 +2337,7 @@ $$</p>
 <tr>
 <th>fermion</th>
 <th>$I_3$</th>
-<th>$\left|Y\right|$</th>
+<th>$\lvert Y\rvert$</th>
 <th>rule</th>
 <th>value</th>
 </tr>
@@ -2375,7 +2375,7 @@ $$</p>
 </table></div>
 <p>and the sum rule holds exactly: $2/9+0=2/9$ and $2/27+4/27=6/27=2/9$. <strong>So the rule is internally consistent, and it is three for four against the data</strong> — the miss being $\delta_D$, at the $26\%$ of 16.7.</p>
 <p>Two remarks. The rule converts $2/9$ from a fitted fraction into a function of two quantum numbers, which is the strongest attempt in the folder to explain the phase rather than measure it. And it does so without any dynamics: it is a numerology of the Standard Model's own labels, exact for three sectors and wrong for the fourth, and it predicts $\delta_\nu=0$, which the form then forces onto a degenerate neutrino pair.</p>
-<h3 id="169-the-second-relation-math1299-is-not-independent">16.9 The second relation $\kappa=1/486$ is not independent</h3>
+<h3 id="169-the-second-relation-math1297-is-not-independent">16.9 The second relation $\kappa=1/486$ is not independent</h3>
 <p><strong>[ALGEBRA]</strong> Koide's review states a second relation beside the first,</p>
 <p>$$
 \kappa\equiv\frac{\sqrt{m_em_\mu m_\tau}}{\left(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}\right)^{3}}=\frac{\det\Phi}{[\Phi]^{3}}=\frac{1}{2\cdot3^{5}}=\frac{1}{486},
@@ -2426,12 +2426,12 @@ $$</p>
 </tr>
 <tr>
 <td>the Fourier modulus</td>
-<td>$2\lvert\hat a_1\rvert$ against $R$</td>
+<td>$2\lvert\sqrt{\rho_1}/\mu\rvert$ against $R$</td>
 <td>$35.047409$ both</td>
 </tr>
 <tr>
 <td>the Fourier argument</td>
-<td>$\arg\hat a_1$ against $\delta+2\pi/3$</td>
+<td>$\arg\sqrt{\rho_1}/\mu$ against $\delta+2\pi/3$</td>
 <td>$2.3166247$ both</td>
 </tr>
 <tr>
@@ -2446,7 +2446,7 @@ $$</p>
 </tr>
 <tr>
 <td>the variance</td>
-<td>$\sigma_a$ against $R/\sqrt2$</td>
+<td>$\sigma$ against $R/\sqrt2$</td>
 <td>$24.782260$ both</td>
 </tr>
 <tr>
@@ -2501,12 +2501,12 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<h2 id="17-the-general-form-math1396-rungs-and-why-the-phase-is-a-circle-only-at-math1397">17. The General Form: $N$ Rungs, and Why the Phase Is a Circle Only at $N=3$</h2>
-<p><em>Scope.</em> §16 wrote the parametrisation for three roots and said, in passing, that the $Z_3$ cosine is a Fourier transform. This section does the same job for any number of rungs. The general form is not an extrapolation of the $Z_3$ formula: it is the same Fourier decomposition written once, with $N$ in place of $3$, and the $Z_3$ cosine is the special case $N=3$. Two results come out that §16 could not state. The first is that Koide's condition is dimension-free: $\sigma_a=\bar a$ in every $N$, and $2/N$ follows. The second is a reason why $2/9$ exists at all, and why it cannot be generalised.</p>
+<h2 id="17-the-general-form-math1394-rungs-and-why-the-phase-is-a-circle-only-at-math1395">17. The General Form: $N$ Rungs, and Why the Phase Is a Circle Only at $N=3$</h2>
+<p><em>Scope.</em> §16 wrote the parametrisation for three roots and said, in passing, that the $Z_3$ cosine is a Fourier transform. This section does the same job for any number of rungs. The general form is not an extrapolation of the $Z_3$ formula: it is the same Fourier decomposition written once, with $N$ in place of $3$, and the $Z_3$ cosine is the special case $N=3$. Two results come out that §16 could not state. The first is that Koide's condition is dimension-free: $\sigma=\mu$ in every $N$, and $2/N$ follows. The second is a reason why $2/9$ exists at all, and why it cannot be generalised.</p>
 <h3 id="171-the-general-form">17.1 The general form</h3>
-<p><strong>[ALGEBRA]</strong> Write the $N$ roots $a_i=\sqrt{\rho_i}$, $i=0,\dots,N-1$. The real Fourier basis on $Z_N$ has exactly $N$ functions, so the decomposition</p>
+<p><strong>[ALGEBRA]</strong> Write the $N$ roots as $\sqrt{\rho_i}$, $i=0,\dots,N-1$. The real Fourier basis on $Z_N$ has exactly $N$ functions, so the decomposition</p>
 <p>$$
-a_i=\mu+\sum_{r=1}^{\lfloor (N-1)/2\rfloor}R_r\cos\left(\phi_r+\frac{2\pi r i}{N}\right)
+\sqrt{\rho_i}=\mu+\sum_{r=1}^{\lfloor (N-1)/2\rfloor}R_r\cos\left(\phi_r+\frac{2\pi r i}{N}\right)
 \;+\;
 \begin{cases}
 \beta\,(-1)^{i}, &amp; N \text{ even},\\[2pt]
@@ -2522,20 +2522,20 @@ $$</p>
 </ol>
 <p>Normalising the shape out of the radial parameters gives the form that carries the physics:</p>
 <p>$$
-\boxed{\;a_i=\bar a\left(1+k\,n_i\right),\qquad \sum_i n_i=0,\quad \sum_i n_i^{2}=N,\quad k=\frac{\sigma_a}{\bar a}\;}
+\boxed{\;\sqrt{\rho_i}=\mu\left(1+k\,n_i\right),\qquad \sum_i n_i=0,\quad \sum_i n_i^{2}=N,\quad k=\frac{\sigma}{\mu}\;}
 $$</p>
-<p>with $\sigma_a$ the standard deviation of the roots. For $N=3$ this is $\mu\left(1+\sqrt2k\cos\left(\delta+2\pi i/3\right)\right)$ times nothing else, which is 16.1 with the relation between $k$ and $R$ made explicit.</p>
-<h3 id="172-the-proof-of-math1437-in-two-lines-for-every-math1438">17.2 The proof of $Q_N$, in two lines, for every $N$</h3>
-<p><strong>[ALGEBRA]</strong> By the parallel-axis identity, which needs only $\sum_i\left(a_i-\bar a\right)=0$,</p>
+<p>with $\sigma$ the standard deviation of the roots. For $N=3$ this is $\mu\left(1+\sqrt2k\cos\left(\delta+2\pi i/3\right)\right)$ times nothing else, which is 16.1 with the relation between $k$ and $R$ made explicit.</p>
+<h3 id="172-the-proof-of-math1435-in-two-lines-for-every-math1436">17.2 The proof of $Q_N$, in two lines, for every $N$</h3>
+<p><strong>[ALGEBRA]</strong> By the parallel-axis identity, which needs only $\sum_i\left(\sqrt{\rho_i}-\mu\right)=0$,</p>
 <p>$$
-\sum_i a_i^{2}=N\bar a^{2}+\sum_i\left(a_i-\bar a\right)^{2}=N\bar a^{2}\left(1+\frac{\sigma_a^{2}}{\bar a^{2}}\right),
+\sum_i \rho_i=N\mu^{2}+\sum_i\left(\sqrt{\rho_i}-\mu\right)^{2}=N\mu^{2}\left(1+\frac{\sigma^{2}}{\mu^{2}}\right),
 \qquad
-\left(\sum_i a_i\right)^{2}=N^{2}\bar a^{2}.
+\left(\sum_i \sqrt{\rho_i}\right)^{2}=N^{2}\mu^{2}.
 $$</p>
 <p>Therefore</p>
 <p>$$
-Q_N\equiv\frac{\sum_i a_i^{2}}{\left(\sum_i a_i\right)^{2}}=\frac{1}{N}\left(1+k^{2}\right),
-\qquad k=\frac{\sigma_a}{\bar a}=\sqrt{NQ_N-1}.
+Q_N\equiv\frac{\sum_i \rho_i}{\left(\sum_i \sqrt{\rho_i}\right)^{2}}=\frac{1}{N}\left(1+k^{2}\right),
+\qquad k=\frac{\sigma}{\mu}=\sqrt{NQ_N-1}.
 $$</p>
 <p>Verified on $500$ random spectra for each $N$ from $1$ to $7$: the largest relative error is $5\times10^{-16}$.</p>
 <p><strong>This is the general form of Koide's relation, and it is dimension-free.</strong> Everything §14 derived for $N=3$ is the case $N=3$ of one statement.</p>
@@ -2560,8 +2560,8 @@ $$</p>
 </tr>
 <tr>
 <td>variance</td>
-<td>$\sigma_a=\bar a$</td>
-<td>$\sigma_a=\bar a$</td>
+<td>$\sigma=\mu$</td>
+<td>$\sigma=\mu$</td>
 </tr>
 <tr>
 <td>angle to the diagonal</td>
@@ -2576,11 +2576,11 @@ $$</p>
 </tbody>
 </table></div>
 <p>So <strong>Koide's relation is exactly "the spread of the roots equals their mean", and the value $2/N$ is a consequence of the $1/N$ in the normalisation, not a separate fact.</strong> The $2$ in $2/N$ is $k^{2}=1$.</p>
-<h3 id="173-the-bounds-and-why-math1467-cannot-close">17.3 The bounds, and why $N=2$ cannot close</h3>
+<h3 id="173-the-bounds-and-why-math1465-cannot-close">17.3 The bounds, and why $N=2$ cannot close</h3>
 <p><strong>[ALGEBRA]</strong> Two limits bracket the coefficient.</p>
 <ul>
 <li>$k=0$ is the degenerate spectrum, $Q_N=1/N$.</li>
-<li>$k$ is largest when one root carries everything, $a_0\to\infty$ with the other $N-1$ equal. Then $\sigma_a/\bar a\to\sqrt{N-1}$, and $Q_N\to1$.</li>
+<li>$k$ is largest when one root carries everything, $\rho_1\to\infty$ with the other $N-1$ equal. Then $\sigma/\mu\to\sqrt{N-1}$, and $Q_N\to1$.</li>
 </ul>
 <p>$$
 0\le k\le\sqrt{N-1},
@@ -2590,15 +2590,15 @@ $$</p>
 <p>Verified: with $a=(A,1,\dots,1)$ and $A=10^{6}$, $k$ equals $\sqrt{N-1}$ to six digits for $N=2,\dots,7$ — $0.999998$, $1.414209$, $1.732044$, $1.999990$, $2.236055$, $2.449473$. The upper bound on $k$ is the bound $Q\le1$ of 14.4, now for every $N$.</p>
 <p>At $N=2$ the parametrisation is explicit and the closure is empty:</p>
 <p>$$
-a_1=\bar a(1+k),\qquad a_2=\bar a(1-k),\qquad k=\frac{\left|a_1-a_2\right|}{a_1+a_2},
+\sqrt{\rho_1}=\mu(1+k),\qquad \sqrt{\rho_2}=\mu(1-k),\qquad k=\frac{\left|\sqrt{\rho_1}-\sqrt{\rho_2}\right|}{\sqrt{\rho_1}+\sqrt{\rho_2}},
 \qquad Q_2=\frac{1+k^{2}}{2}.
 $$</p>
-<p>So $Q_2=2/2=1$ requires $k=1$ exactly, and $k=1$ means $a_2=0$. Verified: at $k=1$ the roots are $(2\bar a,0)$.</p>
-<p><strong>Hence $Q=2/N$ with all masses strictly positive requires $N\ge3$, and this is a cleaner proof than 2.2's.</strong> The reason is not the arithmetic of $2/N$ but the fact that a two-point set cannot have a spread equal to its mean without losing a member. For $N\ge3$ it can: at the most uniform direction, $k=1$ leaves a smallest root of $0.2929\bar a$ at $N=3$ and $0.5528\bar a$ at $N=6$.</p>
-<h3 id="174-the-closure-is-math1507-in-every-dimension">17.4 The closure is $45^{\circ}$ in every dimension</h3>
-<p><strong>[ALGEBRA]</strong> With $\vec u=(1,\dots,1)$ and $\vec a$ in $N$ dimensions, $\vec u\cdot\vec a=\sqrt{N}\left|\vec a\right|\cos\varphi$, so</p>
+<p>So $Q_2=2/2=1$ requires $k=1$ exactly, and $k=1$ means $\sqrt{\rho_2}=0$. Verified: at $k=1$ the roots are $(2\mu,0)$.</p>
+<p><strong>Hence $Q=2/N$ with all masses strictly positive requires $N\ge3$, and this is a cleaner proof than 2.2's.</strong> The reason is not the arithmetic of $2/N$ but the fact that a two-point set cannot have a spread equal to its mean without losing a member. For $N\ge3$ it can: at the most uniform direction, $k=1$ leaves a smallest root of $0.2929\mu$ at $N=3$ and $0.5528\mu$ at $N=6$.</p>
+<h3 id="174-the-closure-is-math1505-in-every-dimension">17.4 The closure is $45^{\circ}$ in every dimension</h3>
+<p><strong>[ALGEBRA]</strong> With $\vec u=(1,\dots,1)$ and $\vec r$ in $N$ dimensions, $\vec u\cdot\vec r=\sqrt{N}\left|\vec r\right|\cos\varphi$, so</p>
 <p>$$
-Q_N=\frac{\left|\vec a\right|^{2}}{\left(\vec u\cdot\vec a\right)^{2}}=\frac{1}{N\cos^{2}\varphi}.
+Q_N=\frac{\left|\vec r\right|^{2}}{\left(\vec u\cdot\vec r\right)^{2}}=\frac{1}{N\cos^{2}\varphi}.
 $$</p>
 <p>So Foot's angle is not a three-dimensional accident:</p>
 <p>$$
@@ -2607,7 +2607,7 @@ $$</p>
 <p>in every dimension. Verified at the closure point for $N=2,\dots,6$: $Q_N=2/N$ to $10^{-8}$ and $\varphi=45.0000^{\circ}$ each time.</p>
 <p>What changes with $N$ is the <em>range</em> of $\varphi$. It runs from $0$ on the diagonal to $\arccos\left(1/\sqrt N\right)$ in the fully hierarchical limit, which is $45.0000^{\circ}$ at $N=2$, $54.7356^{\circ}$ at $N=3$, $60.0000^{\circ}$ at $N=4$ and tends to $90^{\circ}$. <strong>So $45^{\circ}$ is interior for $N\ge3$ and is the endpoint at $N=2$</strong>, which is a third way to reach 17.3: the closure sits exactly where the two-point spectrum loses a member. The cone 14.4 drew is the locus $\varphi=45^{\circ}$, and it exists in every dimension; the leptons sit on it at $N=3$.</p>
 <h3 id="175-the-first-four-cases-written-out">17.5 The first four cases, written out</h3>
-<p><strong>[ALGEBRA]</strong> The same construction, one line each. Here $a_i=\sqrt{\rho_i}$ and $\bar a$ is their mean.</p>
+<p><strong>[ALGEBRA]</strong> The same construction, one line each. Here the roots are $\sqrt{\rho_i}$ and $\mu$ is their mean.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -2622,7 +2622,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$1$</td>
-<td>$a=\bar a$</td>
+<td>$\sqrt{\rho_1}=\mu$</td>
 <td>$1$</td>
 <td>none</td>
 <td>$1$</td>
@@ -2630,7 +2630,7 @@ $$</p>
 </tr>
 <tr>
 <td>$2$</td>
-<td>$a_i=\bar a\left(1\pm k\right)$</td>
+<td>$\sqrt{\rho_i}=\mu\left(1\pm k\right)$</td>
 <td>$2$</td>
 <td>one number, one sign</td>
 <td>$(1+k^{2})/2$</td>
@@ -2638,7 +2638,7 @@ $$</p>
 </tr>
 <tr>
 <td>$3$</td>
-<td>$a_i=\bar a\left(1+\sqrt2\,k\cos\left(\delta+\tfrac{2\pi i}{3}\right)\right)$</td>
+<td>$\sqrt{\rho_i}=\mu\left(1+\sqrt2\,k\cos\left(\delta+\tfrac{2\pi i}{3}\right)\right)$</td>
 <td>$3$</td>
 <td>a circle</td>
 <td>$(1+k^{2})/3$</td>
@@ -2646,7 +2646,7 @@ $$</p>
 </tr>
 <tr>
 <td>$4$</td>
-<td>$a_i=\bar a+R_1\cos\left(\phi_1+\tfrac{\pi i}{2}\right)+\beta(-1)^{i}$</td>
+<td>$\sqrt{\rho_i}=\mu+R_1\cos\left(\phi_1+\tfrac{\pi i}{2}\right)+\beta(-1)^{i}$</td>
 <td>$4$</td>
 <td>a two-sphere</td>
 <td>$(1+k^{2})/4$</td>
@@ -2655,8 +2655,8 @@ $$</p>
 </tbody>
 </table></div>
 <p>The $N=3$ row is 16.1 exactly. The $N=4$ row is the first case with two independent shape numbers beyond $k$, and it shows why nothing like $2/9$ can be expected there: there is a second angle to be fixed, and no single number plays its role.</p>
-<p>Two exact checks of the table, on constructed spectra. At $N=2$ with $k=0.5$ the roots are $(1.5,0.5)\bar a$ and $Q=0.625=(1+0.25)/2$. At $N=4$ with $\bar a=5$, $R_1=1$, $\phi_1=0.3$, $\beta=0.4$ the roots are $(6.3553,4.3045,4.4447,4.8955)$ and $Q=0.2566000000$ against $(1+k^{2})/4=0.2566000000$ with $k=0.162481$.</p>
-<h3 id="176-the-phase-lives-on-math1576">17.6 The phase lives on $S^{N-2}$</h3>
+<p>Two exact checks of the table, on constructed spectra. At $N=2$ with $k=0.5$ the roots are $(1.5,0.5)\mu$ and $Q=0.625=(1+0.25)/2$. At $N=4$ with $\mu=5$, $R_1=1$, $\phi_1=0.3$, $\beta=0.4$ the roots are $(6.3553,4.3045,4.4447,4.8955)$ and $Q=0.2566000000$ against $(1+k^{2})/4=0.2566000000$ with $k=0.162481$.</p>
+<h3 id="176-the-phase-lives-on-math1574">17.6 The phase lives on $S^{N-2}$</h3>
 <p><strong>[ALGEBRA]</strong> The direction vector $\vec n$ in 17.1 has a zero sum, which puts it in an $(N-1)$-dimensional hyperplane, and a fixed norm, which cuts a sphere there. So it ranges over $S^{N-2}$:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -2761,17 +2761,17 @@ $$</p>
 <tr>
 <td>$N=2$ closure kills a mass</td>
 <td>$k=1$</td>
-<td>roots $(2\bar a,0)$</td>
+<td>roots $(2\mu,0)$</td>
 </tr>
 <tr>
 <td>$N=3$ closure keeps three positive</td>
 <td>$k=1$, most uniform direction</td>
-<td>smallest $0.2929\bar a$</td>
+<td>smallest $0.2929\mu$</td>
 </tr>
 <tr>
 <td>$N=6$ closure keeps six positive</td>
 <td>$k=1$, most uniform direction</td>
-<td>smallest $0.5528\bar a$</td>
+<td>smallest $0.5528\mu$</td>
 </tr>
 <tr>
 <td>$Q_N=1/(N\cos^{2}\varphi)$</td>
@@ -2965,11 +2965,11 @@ $$</p>
 <td>$m_i/m_1$, the mass ratio; $\rho_1=1$, $\rho_2=206.768\,28$, $\rho_3=3477.228\,28$</td>
 </tr>
 <tr>
-<td>$a_i$</td>
-<td>$\sqrt{\rho_i}$, the root of the mass ratio</td>
+<td>$\sqrt{\rho_i}$</td>
+<td>the root of the mass ratio $\rho_i=m_i/m_1$</td>
 </tr>
 <tr>
-<td>$\vec a$</td>
+<td>$\vec r$</td>
 <td>the root vector $(1,\sqrt{\rho_2},\sqrt{\rho_3})$</td>
 </tr>
 <tr>
@@ -2978,11 +2978,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\varphi$</td>
-<td>the angle between $\vec a$ and $\vec u$, 14.1</td>
+<td>the angle between $\vec r$ and $\vec u$, 14.1</td>
 </tr>
 <tr>
-<td>$a_{\parallel}$, $\vec v$</td>
-<td>the parts of $\vec a$ along $\hat u$ and orthogonal to it</td>
+<td>$r_{\parallel}$, $\vec v$</td>
+<td>the parts of $\vec r$ along $\hat u$ and orthogonal to it</td>
 </tr>
 <tr>
 <td>$R$, $\delta$</td>
@@ -2990,11 +2990,11 @@ $$</p>
 </tr>
 <tr>
 <td>$k$</td>
-<td>the coefficient of the $Z_3$ cosine, $k=\sigma_a/\bar a=\sqrt{NQ-1}$, 16.1, 17.2</td>
+<td>the coefficient of the $Z_3$ cosine, $k=\sigma/\mu=\sqrt{NQ-1}$, 16.1, 17.2</td>
 </tr>
 <tr>
-<td>$\sigma_a$, $\bar a$</td>
-<td>the standard deviation and the mean of the $N$ roots</td>
+<td>$\mu$, $\sigma$</td>
+<td>the mean and the standard deviation of the $N$ roots $\sqrt{\rho_i}$</td>
 </tr>
 <tr>
 <td>$Q_N$</td>
@@ -3010,7 +3010,7 @@ $$</p>
 </tr>
 <tr>
 <td>$M$</td>
-<td>the square of the mean root, $\bar a^{2}=614.172$ for the leptons</td>
+<td>the square of the mean root, $\mu^{2}=614.172$ for the leptons</td>
 </tr>
 <tr>
 <td>$\theta$</td>

@@ -158,13 +158,13 @@ $$</p>
 <h2 id="the-mode-expansion">The Mode Expansion</h2>
 <p>The field equation is linear, so the general solution is a superposition of plane waves. With $E_{\vec p}=+c\sqrt{\vec p^{\,2}+m^{2}c^{2}}$ and $p\cdot x=\frac{h}{2\pi}\left(2\pi\nu_t^{\prime}r'_t-2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right)=-h\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_\Phi^{\natural})$, the quantized field expands as</p>
 <p>$$
-\boxed{\;\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}\,\sqrt{\frac{h c}{4\pi E_{\vec p}}}
+\boxed{\;\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}\,A_{\vec p}
 \left(a_{\mathrm{fop},\vec p}\,\exp(-i\theta_{\mathrm{pwp}})+{b_{\mathrm{fop},\vec p}}^\dagger\,\exp(+i\theta_{\mathrm{pwp}})\right)\;},
 $$</p>
-<p>Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.</p>
+<p>Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one. The amplitude $A_{\vec p}$ is a length fixed by its square, $A_{\vec p}^{2}=\frac{h c}{4\pi E_{\vec p}}$; the root that the standard normalisation prints is a half power of the base units and is not written.</p>
 <p>and its adjoint as</p>
 <p>$$
-\xi_{\mathrm{fop}}^{\dagger}(x)=\int\!\frac{d^3p}{h^{3}}\,\sqrt{\frac{h c}{4\pi E_{\vec p}}}
+\xi_{\mathrm{fop}}^{\dagger}(x)=\int\!\frac{d^3p}{h^{3}}\,A_{\vec p}
 \left(b_{\mathrm{fop},\vec p}\,\exp(-i\theta_{\mathrm{pwp}})+{a_{\mathrm{fop},\vec p}}^\dagger\,\exp(+i\theta_{\mathrm{pwp}})\right).
 $$</p>
 <p>The operator $a_{\mathrm{fop},\vec p}$ annihilates a particle of momentum $\vec p$ and $b_{\mathrm{fop},\vec p}$ annihilates an antiparticle; the two branches of the parent equation, distinguished by the sign of the frequency, become the particle and antiparticle branches.</p>
@@ -267,7 +267,7 @@ $$</p>
 <p>with all other equal-time brackets vanishing; commutation rather than anticommutation is forced by the boundedness of the energy, by microcausality, and by positivity of the norm.</p>
 <p>The field expands in the parent's plane waves, written with the wave number itself as the phase,</p>
 <p>$$
-\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}
+\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}A_{\vec p}
 \left(a_{\mathrm{fop},\vec p}\exp\!\big(i\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_{\Phi}^{\natural})\big)+{b_{\mathrm{fop},\vec p}}^\dagger \exp\!\big(-i\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde{R}_{\Phi}^{\natural})\big)\right),
 $$</p>
 <p>the phase being the central unitary built from the material four-wavevector $\tilde\Upsilon_{\Phi}=i\frac{E_{\vec p}}{h c}e_t+\frac{\vec p}{h}$, with $E_{\vec p}$ and $\vec p$ its two coordinates; the mode commutators are $[a_{\mathrm{fop},\vec p},{a_{\mathrm{fop},\vec p^{\,\prime}}}^\dagger]=[b_{\mathrm{fop},\vec p},{b_{\mathrm{fop},2\pi\vec\nu_\Phi}}^\dagger]=h^{3}\delta^{(3)}(\vec p-\vec p^{\,\prime})$ and all others zero, and they reproduce the equal-time relation. The Fock space is the symmetric algebra of the one-particle space. The Hamiltonian is $:\!H\!:=\int\frac{d^3p}{h^{3}}E_{\vec p}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}+b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ after normal ordering, and the normal-ordered charge has particles and antiparticles of opposite sign.</p>

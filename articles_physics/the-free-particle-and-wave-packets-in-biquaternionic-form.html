@@ -180,7 +180,9 @@ $$</p>
 <h3 id="normalisation">Normalisation</h3>
 <p>On a box of side $L$ with periodic boundary conditions, the normalised plane waves are</p>
 <p>$$
-\tilde{Ξ}_{2\pi\vec\nu_\Phi}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{L^3}}\,\exp(\,i\theta_{\mathrm{pwp}})\,\xi,
+\tilde{Ξ}_{2\pi\vec\nu_\Phi}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = N_\Xi\,\exp(\,i\theta_{\mathrm{pwp}})\,\xi,
+\qquad
+N_\Xi^{2}=\frac{1}{L^{3}},
 \qquad
 2\,\mathrm{Sc}(\xi^\dagger\xi) = 1,
 $$</p>
@@ -249,8 +251,10 @@ $$</p>
 $$</p>
 <p>so that $s_0$ is the <strong>density width</strong> (the standard deviation of $|Ξ_0|^2$) and the initial uncertainty product is minimal. The exact free evolution of this packet is</p>
 <p>$$
-Ξ(r_x,r'_t) = \frac{(2\pi s_0^2)^{-1/4}}{\sqrt{A(r'_t)}}\,
+Ξ(r_x,r'_t) = \mathcal{N}(r'_t)\,
 \exp\!\left[-\frac{(r_x - v_0 r'_t)^2}{4s_0^2 A(r'_t)} + 2\pi i\nu_t^{\prime}r_x - \frac{i c 4\pi^{2}\nu_t^{\prime\,2} r'_t}{4\pi\nu_m}\right],
+\qquad
+\mathcal{N}^{2}(r'_t)=\frac{(2\pi s_0^{2})^{-1/2}}{A(r'_t)},
 \qquad
 A(r'_t) = 1 + \frac{i r'_t}{2s_0^2\,2\pi\nu_m},
 \qquad

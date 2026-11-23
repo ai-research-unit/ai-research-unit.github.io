@@ -103,9 +103,10 @@ $$</p>
 <p>$$
 \tilde{Ξ}_{\mathrm{fop}}(\tilde R_\Phi)=\xi_{\mathrm{fop}}(r_x)\,e_t,
 \qquad
-\xi_{\mathrm{fop}}(r_x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}
+\xi_{\mathrm{fop}}(r_x)=\int\!\frac{d^3p}{h^{3}}A_{\vec p}
 \left(a_{\mathrm{fop},\vec p}\exp(-i\theta_{\mathrm{pwp}})+{b_{\mathrm{fop},\vec p}}^\dagger \exp(+i\theta_{\mathrm{pwp}})\right),
 $$</p>
+<p>where $A_{\vec p}^{2}=\frac{h c}{4\pi E_{\vec p}}$, a length: the mode amplitude is named through its square, because a root of the mode energy is a half power of the base units.</p>
 <p>Here $\theta_{\mathrm{pwp}}:=\frac{2\pi p\cdot x}{h}=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.</p>
 <p>every coefficient multiplies the central unit $e_t$. Three consequences follow immediately and are worth stating separately.</p>
 <ul>
@@ -116,9 +117,9 @@ $$</p>
 <h2 id="the-positive-and-negative-frequency-parts">The Positive- and Negative-Frequency Parts</h2>
 <p>The decomposition of the field into its two exponential branches is the operator form of the two-branch structure of the parent equation. Define</p>
 <p>$$
-\xi_{\mathrm{fop}}^{(+)}(x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}\,a_{\mathrm{fop},\vec p}\,\exp(-i\theta_{\mathrm{pwp}}),
+\xi_{\mathrm{fop}}^{(+)}(x)=\int\!\frac{d^3p}{h^{3}}A_{\vec p}\,a_{\mathrm{fop},\vec p}\,\exp(-i\theta_{\mathrm{pwp}}),
 \qquad
-\xi_{\mathrm{fop}}^{(-)}(x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}\,{b_{\mathrm{fop},\vec p}}^\dagger\,\exp(+i\theta_{\mathrm{pwp}}),
+\xi_{\mathrm{fop}}^{(-)}(x)=\int\!\frac{d^3p}{h^{3}}A_{\vec p}\,{b_{\mathrm{fop},\vec p}}^\dagger\,\exp(+i\theta_{\mathrm{pwp}}),
 $$</p>
 <p>so that $\xi_{\mathrm{fop}}=\xi_{\mathrm{fop}}^{(+)}+\xi_{\mathrm{fop}}^{(-)}$ and $\xi_{\mathrm{fop}}^{\dagger}=\xi_{\mathrm{fop}}^{(+)\dagger}+\xi_{\mathrm{fop}}^{(-)\dagger}$, with $\xi_{\mathrm{fop}}^{(+)\dagger}$ containing ${a_{\mathrm{fop},\vec p}}^\dagger$ and $\xi_{\mathrm{fop}}^{(-)\dagger}$ containing $b_{\mathrm{fop},\vec p}$. Two facts fix the interpretation.</p>
 <p><strong>The positive-frequency part annihilates the vacuum.</strong> Because $a_{\mathrm{fop},\vec p}|0\rangle=0$ for every $\vec p$,</p>
@@ -144,7 +145,7 @@ $$</p>
 <p>and it leaves the commutators and the Hamiltonian invariant. It is an antiunitary-or-$*$-unitary operation according to the convention for the mode operators; the corpus's concern is only that it is the map that reverses the charge, and it is the standard one.</p>
 <p><strong>The real (neutral) field.</strong> Imposing $\xi_{\mathrm{fop}}^{\dagger}=\xi_{\mathrm{fop}}$ forces $b_{\mathrm{fop},\vec p}=a_{\mathrm{fop},\vec p}$ and reduces the expansion to a single set of modes,</p>
 <p>$$
-\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}\sqrt{\frac{h c}{4\pi E_{\vec p}}}
+\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{h^{3}}A_{\vec p}
 \left(a_{\mathrm{fop},\vec p}\exp(-i\theta_{\mathrm{pwp}})+{a_{\mathrm{fop},\vec p}}^\dagger \exp(+i\theta_{\mathrm{pwp}})\right),
 $$</p>
 <p>in which the field creates and destroys its own antiparticle. The charge vanishes identically, and the $\mathrm{U}(1)$ symmetry of the complex case is not present. In the framework's terms the real field is a <strong>Hermitian central-valued</strong> operator field, while the complex field is a central-valued field whose conjugate is a distinct operator.</p>

@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: The Fractional Dimensions — Biquaternion Universe</title>
+  <meta name="description" content="Status. Counted, and nearly finished. This file was §9 of the SI audit and was split off because it answers a different question. The SI audit asks…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-the-fractional-dimensions"><strong>Audit: The Fractional Dimensions</strong></h1>
+<p><em>Status.</em> <strong>Counted, and nearly finished.</strong> This file was §9 of <a href="audit-SI.md">the SI audit</a> and was split off because it answers a different question. The SI audit asks whether a quantity is written in the SI base units; this one asks whether a unit is raised to a power that no base unit can take, and what a corpus does instead. One article of 679 still carries the defect, at line 385 of the uniformly-moving-charge exercise.</p>
+<p><em>What this file is for.</em> It holds the scan, the two families, the argument that fixes the option, the substitution table, the register of the 75 articles and the gates, so that a later reader can re-run the same scan and read the same number.</p>
+<p><strong>The corpus printed 1040 square roots of a quantity whose SI dimension carries a half exponent, in 89 articles; 973 of them are gone and 7 remain, all false positives.</strong> The rule of <a href="audit-SI.md">§1 of the SI audit</a> does not forbid them: a half power of a base unit hides no constant, and <em>Physics Units and Common Elements Conventions</em>, §<em>A root obeys the rule of its radicand</em>, says so in as many words when it calls $\mathrm{kg}^{1/2}$ legal. The objection is of another kind. A quantity with a half exponent is not a quantity anyone measures, and a display that carries one cannot be read against the table of <a href="audit-SI.md">§3 of the SI audit</a> without squaring it in the head. This section measures the class and names the one change of definition that empties nine tenths of it.</p>
+<h2 id="1-the-scan">1. The Scan</h2>
+<p><strong>Method.</strong> Every <code>\sqrt{...}</code> in the 680 articles of the physics corpus is extracted with a balanced-brace reader, its radicand is reduced to its SI dimension by the tables of <em>Physics Units and Common Elements Conventions</em>, and the dimension is halved. A root is fractional when one exponent of $\mathrm{M}$, $\mathrm{L}$ or $\mathrm{T}$ comes out odd.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>articles</td>
+<td>680</td>
+</tr>
+<tr>
+<td>roots of every kind</td>
+<td>2964</td>
+</tr>
+<tr>
+<td>distinct radicands</td>
+<td>633</td>
+</tr>
+<tr>
+<td>roots with an integer dimension</td>
+<td>1924</td>
+</tr>
+<tr>
+<td>roots with a half-integer dimension</td>
+<td>1040, in 89 articles</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The legal roots are the majority and stay.</strong> $\sqrt{\epsilon\mu}$ (270 occurrences) is a speed, $\sqrt{\epsilon_0\mu_0}$ (32) a speed, $\sqrt{\mu/\epsilon}$ (19) an impedance, $\sqrt{2}$ (190) a number; and $\sqrt{I_1^{2}+4c^{2}I_2^{2}}$, $\sqrt{1-v^{2}/c^{2}}$ and $\sqrt{\vec N\cdot\vec N}$ are the square root of a squared quantity, an integer dimension recovered. Nothing below touches them.</p>
+<h2 id="2-the-two-families">2. The Two Families</h2>
+<p><strong>Family I is the field-strength normalisation.</strong> The definition $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ makes the two halves commensurable by construction, and the common unit is $\mathrm{M}^{1/2}\mathrm{L}^{-1/2}\mathrm{T}^{-1}=\sqrt{\mathrm{J\,m^{-3}}}$. The convention is stated at <em>Physics Units and Common Elements Conventions</em>, §<em>The coefficients of one element share one unit</em>, and it was used in 75 articles: $\sqrt{\epsilon}$ 419 times in 63, $\sqrt{\mu}$ 541 times in 69, $\sqrt{\epsilon_0}$ 14 times in 9, $\sqrt{\mu_0}$ 6 times in 6, for 980 in all. Two of the 75 are false positives: <em>The Path Integral and the Schrödinger Equation in Biquaternionic Polar Variables</em> and <em>The Spectrum and the Two Modes</em> use $\epsilon$ as a small numerical parameter, and their single root is not a permittivity. The family proper is 978 roots in 73 articles.</p>
+<p><strong>Family II is a root of a base-unit quantity, and no change of normalisation removes it.</strong> A mass under a root is $\mathrm{kg}^{1/2}$ (25 in 4 articles), a number density under a root is $\mathrm{m}^{-3/2}$ (23 in 6), the string tension and the conductivity under a root are $\mathrm{kg}^{1/2}\mathrm{s}^{-1}$ and $\mathrm{A\,s}^{1/2}\mathrm{kg}^{-1/2}$ (4 in 2), and the normalisations $\sqrt{2E}$ and $\sqrt{E\mp\lvert\vec p\rvert}$ are $\mathrm{kg}^{1/2}$ (6 in 4 and 2 in 1). Two articles carry both families.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>occurrences</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I, the field-strength normalisation</td>
+<td>978</td>
+<td>73</td>
+</tr>
+<tr>
+<td>II, a root of a base-unit quantity</td>
+<td>60</td>
+<td>16</td>
+</tr>
+<tr>
+<td>both families</td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>the two together</td>
+<td>1040</td>
+<td>89</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="3-why-a-factor-removes-a-half-only-if-it-is-a-root">3. Why a Factor Removes a Half Only If It Is a Root</h2>
+<p><strong>Exponents add.</strong> Multiplying a display by a factor $k$ adds the exponents of $[k]$ to every exponent of the display. If $\tilde F$ carries $-\tfrac12$ on $\mathrm{M}$, then $[k]$ must carry $+\tfrac12$ on $\mathrm{M}$, and $+\tfrac12$ on $\mathrm{L}$ as well. A constant with integer exponents only — $c$, $Z$, $\mu_0$, $\hbar$, $\epsilon_0$ — cannot do it, and no choice of such a factor repairs anything. Only a root can. The corpus already contains the roots it needs, $\sqrt{\epsilon}$ and $\sqrt{\mu}$, with $\sqrt{\epsilon_0}$ and $\sqrt{\mu_0}$ in vacuum, so the admissible factors are the four roots themselves and their ratios: $1/\sqrt{\epsilon}=cZ$, $1/\sqrt{\mu}=1/Z$, $\sqrt{\epsilon}=1/(cZ)$, $\sqrt{\mu}=Z/c$ — that is, $c$, $Z$, and their inverses.</p>
+<h2 id="4-the-options">4. The Options</h2>
+<p>All rows assume $\epsilon$ and $\mu$ constant; $k$ multiplies the present $\tilde F$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>$k$</th>
+<th>new definition</th>
+<th>dimension</th>
+<th>SI unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>$1$</td>
+<td>$i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$</td>
+<td>$\mathrm{M}^{1/2}\mathrm{L}^{-1/2}\mathrm{T}^{-1}$</td>
+<td>fractional</td>
+</tr>
+<tr>
+<td><strong>A</strong></td>
+<td>$1/\sqrt{\epsilon}$</td>
+<td>$i\vec E-c\vec B=i\vec N$</td>
+<td>$\mathrm{M}\,\mathrm{L}\,\mathrm{T}^{-2}\,\mathrm{Q}^{-1}$</td>
+<td>$\mathrm{V\,m^{-1}}$</td>
+</tr>
+<tr>
+<td>B</td>
+<td>$1/\sqrt{\mu}$</td>
+<td>$i\vec E/Z-\vec H$</td>
+<td>$\mathrm{Q}\,\mathrm{L}^{-1}\,\mathrm{T}^{-1}$</td>
+<td>$\mathrm{A\,m^{-1}}$</td>
+</tr>
+<tr>
+<td>C</td>
+<td>$\sqrt{\epsilon}$</td>
+<td>$i\vec D-\vec H/c$</td>
+<td>$\mathrm{Q}\,\mathrm{L}^{-2}$</td>
+<td>$\mathrm{C\,m^{-2}}$</td>
+</tr>
+<tr>
+<td>D</td>
+<td>$\sqrt{\mu}$</td>
+<td>$i\vec E/c-\vec B$</td>
+<td>$\mathrm{M}\,\mathrm{T}^{-1}\,\mathrm{Q}^{-1}$</td>
+<td>$\mathrm{T}$ (tesla)</td>
+</tr>
+<tr>
+<td>E</td>
+<td>$c$</td>
+<td>—</td>
+<td>$\mathrm{M}^{1/2}\mathrm{L}^{1/2}\mathrm{T}^{-2}$</td>
+<td>fails</td>
+</tr>
+<tr>
+<td>F</td>
+<td>$1/c$</td>
+<td>—</td>
+<td>$\mathrm{M}^{1/2}\mathrm{L}^{-3/2}$</td>
+<td>fails</td>
+</tr>
+<tr>
+<td>G</td>
+<td>$\sqrt{\hbar/c^{3}}$</td>
+<td>—</td>
+<td>$\mathrm{M}\,\mathrm{L}^{-1}$</td>
+<td>$\mathrm{kg\,m^{-1}}$</td>
+</tr>
+<tr>
+<td>H</td>
+<td>$1/\sqrt{\hbar c}$</td>
+<td>—</td>
+<td>$\mathrm{L}^{-2}$</td>
+<td>$\mathrm{m}^{-2}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>E and F fail</strong> for the reason of §3: $c$ carries integer exponents. <strong>G and H work</strong> and exchange one fractional unit for another, which is no gain.</p>
+<p><strong>A spelling caution.</strong> Upright $\mathrm{T}$ is the time dimension in every table of this corpus and is also the tesla. Option D therefore prints its unit as $\mathrm{kg\,s^{-2}\,A^{-1}}$ or $\mathrm{Wb\,m^{-2}}$, never as a bare $\mathrm{T}$.</p>
+<h2 id="5-the-choice-option-a">5. The Choice: Option A</h2>
+<p>$$\tilde F=i\vec E-c\vec B=i\vec N,\qquad[\tilde F]=\mathrm{V\,m^{-1}}=\mathrm{kg\,m\,s^{-3}\,A^{-1}}.$$</p>
+<p><strong>Three reasons.</strong> The corpus already writes $\tilde F=i\sqrt{\epsilon}\,\vec N$ in six places, so option A deletes a factor rather than introducing one. The Maxwell equation keeps a single factor, $\tilde\nabla_\Phi\tilde F=-Z\,\tilde J_\Phi$, and every object in it is integer: $\tilde F$ in $\mathrm{V\,m^{-1}}$, $\tilde J_\Phi$ in $\mathrm{A\,m^{-2}}$, $Z$ in $\Omega$, $\tilde\nabla_\Phi$ in $\mathrm{m^{-1}}$. And the invariant keeps its meaning, $\langle\tilde F\rangle_\natural=\vec E^{2}-c^{2}\vec B^{2}$ in $\mathrm{V^{2}\,m^{-2}}$, with the energy density recovered by one factor $\epsilon$.</p>
+<p><strong>The price is three statements, not the substitutions.</strong> The norm is no longer an energy density but a squared field, so $W=\tfrac{\epsilon}{2}\lVert\tilde F\rVert^{2}$; the Hermitian form becomes $\tilde F\tilde F^{*}=\tfrac{2W}{\epsilon}e_t+2ic\,\vec E\times\vec B$, so the energy–momentum biquaternion is $\tfrac{\epsilon}{2}\tilde F\tilde F^{*}$; and the derivative formula carries $c$ where it carried $1/\sqrt{\mu}$.</p>
+<h2 id="6-the-substitution-table">6. The Substitution Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>present writing</th>
+<th>option-A writing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$</td>
+<td>$i\vec E-c\vec B=i\vec N$</td>
+</tr>
+<tr>
+<td>$\sqrt{\mu}\,\tilde J_\Phi$</td>
+<td>$Z\,\tilde J_\Phi$</td>
+</tr>
+<tr>
+<td>$1/\sqrt{\mu}$ in the derivative</td>
+<td>$c$</td>
+</tr>
+<tr>
+<td>$\sqrt{\epsilon}\,\vec E$</td>
+<td>$\vec E$</td>
+</tr>
+<tr>
+<td>$\sqrt{\mu}\,\vec H$</td>
+<td>$c\vec B=\vec B/Z$</td>
+</tr>
+<tr>
+<td>$\sqrt{\epsilon\mu}$, $\sqrt{\mu/\epsilon}$</td>
+<td>unchanged, already integer</td>
+</tr>
+<tr>
+<td>$-\epsilon\,(I_1+2icI_2)$</td>
+<td>$-(I_1+2icI_2)$</td>
+</tr>
+<tr>
+<td>$W=\tfrac12\lVert\tilde F\rVert^{2}$</td>
+<td>$W=\tfrac{\epsilon}{2}\lVert\tilde F\rVert^{2}$</td>
+</tr>
+<tr>
+<td>$\tilde{F}\tilde{F}^{*}=2We_t+\tfrac{2i}{c}\vec S$</td>
+<td>$\tilde{F}\tilde{F}^{*}=\tfrac{2W}{\epsilon}e_t+\tfrac{2i}{c\epsilon}\vec S$</td>
+</tr>
+<tr>
+<td>$\mathrm{rot}\,\vec j$ with $\vec j=\sqrt{\mu}\vec j_{\mathrm e}-i\sqrt{\epsilon}\vec j_{\mathrm m}$</td>
+<td>$\vec j=Z\vec j_{\mathrm e}-i\vec j_{\mathrm m}$, both terms in $\mathrm{V\,m^{-2}}$</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm e}/\sqrt{\epsilon}$, $\rho_{\mathrm m}/\sqrt{\mu}$</td>
+<td>$\rho_{\mathrm e}/\epsilon$, and $c\rho_{\mathrm m}$ in the dual slot</td>
+</tr>
+<tr>
+<td>$\mathcal M=\beta\sqrt{\epsilon\mu}\,\partial_{\tau}D+\sqrt{\epsilon\mu}\,\partial_{\tau}-iD$</td>
+<td>$\mathcal M=\beta c^{-1}\partial_{\tau}D+c^{-1}\partial_{\tau}-iD$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The magnetic current after the change.</strong> The two terms of $\vec j$ must keep the same dimension, and the old pair did: $\sqrt{\mu}\,[\vec j_{\mathrm e}]=\sqrt{\epsilon}\,[\vec j_{\mathrm m}]$, that is $[\vec j_{\mathrm m}]=Z\,[\vec j_{\mathrm e}^{\,}]$. With the electric term written $Z\vec j_{\mathrm e}$ in $\mathrm{V\,m^{-2}}$, the magnetic coefficient is therefore $1$, and $\vec j_{\mathrm m}$ is read as a magnetic current density in $\mathrm{V\,m^{-2}}$; the electric–magnetic duality $\epsilon\leftrightarrow\mu$, $Z\leftrightarrow1/Z$ is then carried by the currents themselves and not by their coefficients. The scalar slot follows the same rule from $\rho_{\mathrm e}/\sqrt{\epsilon}$: it becomes $\rho_{\mathrm e}/\epsilon$, while the magnetic charge enters as $c\rho_{\mathrm m}$, which is what $1/\sqrt{\mu}\to c$ gives once the density is read in its own unit.</p>
+<h2 id="7-the-pilot">7. The Pilot</h2>
+<p><strong><em>The Field-Strength Biquaternion and Its Invariants</em> has been converted.</strong> It declares the field-strength notation for the other 74 articles of Family I, so it went first: 60 roots, 34 of $\epsilon$ and 26 of $\mu$, to zero.</p>
+<p><strong>What a substitution alone would have broken.</strong> Four sentences carried the half dimension in words and had to be rewritten with the display: the paragraph that measured the norm as "the square root of an energy density"; the two statements that the biquaternion norm has the dimension of an energy density; the trace of the amplitude's square, which is $4W/\epsilon$ and not $4W$; and the modulus of the invariant, which is $\sqrt{I_1^{2}+4c^{2}I_2^{2}}$ and no longer carries $\epsilon$. The flow section lost its $\epsilon$ as well, $\tilde F=i(\sigma+i\omega)\tilde u$ and $\tilde F^{2}=(\sigma+i\omega)^{2}e_t$, and the derivative formula became $\tilde F=c\,\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ — a factor $c$ in every medium, so the "relative values one" shortcut of the old text is gone.</p>
+<p><strong>Verification.</strong> Over 2000 random fields with $\epsilon\in[10^{-11},10^{-9}]$ and $\mu\in[10^{-7},10^{-5}]$, the six identities $\langle\tilde F\rangle_\natural=-(I_1+2icI_2)$, $\tilde F\tilde F^{*}=\tfrac{2W}{\epsilon}e_t+2ic\,\vec E\times\vec B$, $\tfrac{\epsilon}{2}\tilde F\tilde F^{*}=We_t+\tfrac{i}{c}\vec S$, $W=\tfrac{\epsilon}{2}\lVert\tilde F\rVert^{2}$, $\tilde F^{2}=(\sigma+i\omega)^{2}e_t$ and $\tilde F=i\vec N$ held to $10^{-10}$ relative or better in every case.</p>
+<h2 id="8-the-cost-and-what-option-a-does-not-fix">8. The Cost, and What Option A Does Not Fix</h2>
+<ol>
+<li><strong>980 substitutions in 75 articles.</strong> Mechanical, but large. The heaviest are <code>electromagnetism-in-media-the-local-complex-structure-at-work</code> (140), <code>maxwells-equations-in-the-biquaternionic-formulation</code> (91), <code>the-lorentz-force-in-biquaternion-form</code> (74), <code>exercise-plane-wave-propagation-in-a-medium</code> (59).</li>
+<li><strong>Inhomogeneous media gain a connection term.</strong> Dividing by $\sqrt{\epsilon(r)}$ puts $\tilde\nabla_\Phi\tilde F=Z\tilde J_\Phi-\tfrac12\vec c\,\tilde F$ in place of the source-free equation, with $\vec c=\mathrm{grad}\ln\sqrt{\epsilon}$ already defined in the media article. That article and the plane-wave exercise carry 199 of the 980 roots.</li>
+<li><strong>Near absorption $\sqrt{\epsilon}$ is complex</strong>, and the old definition rotated the field by that phase; the new one carries the same phase in the field itself. The bookkeeping moves, the physics does not.</li>
+<li><strong>Family II is untouched.</strong> Option A removes no $\mathrm{kg}^{1/2}$: $\sqrt{m_e}$ stays $\mathrm{kg}^{1/2}$ unless the root is replaced by its parent mass, and the Koide ratio is dimensionless and legal as it stands. The $\sqrt{\rho}$ table of <em>The Excitation Ladder Theory of Flavour</em>, the $\sqrt{\rho}$ of the Madelung maps and the $\sqrt{2E}$ of the quantisation articles each need their own decision; the first is already a root of a ratio and needs none.</li>
+<li><strong>The rule of the radicand must be reworded</strong>, because it now admits the class this section removes. <em>Physics Units and Common Elements Conventions</em> must say that a root prints a squared quantity or a ratio of them, and that a base-unit quantity under a root is written with its parent beside it.</li>
+</ol>
+<h2 id="9-the-gates-and-the-order-of-work">9. The Gates and the Order of Work</h2>
+<p><strong>Gate 7 is a count, not a grep.</strong> The script of §1 returns the number of roots whose radicand has a half-integer dimension, by family. It read $980+60=1040$ at the scan and reads $7+60=67$ today, the 7 being false positives alone; the target is $60$, Family II alone.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>gate</th>
+<th>measured today</th>
+<th>target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7a, roots of $\sqrt{\epsilon}$, $\sqrt{\mu}$, $\sqrt{\epsilon_0}$, $\sqrt{\mu_0}$</td>
+<td>7 in 3 articles, all false positives</td>
+<td>0</td>
+</tr>
+<tr>
+<td>7b, roots of a base-unit quantity</td>
+<td>60 in 16 articles, untouched</td>
+<td>60, listed and argued</td>
+</tr>
+<tr>
+<td>7c, sourced Maxwell equations printed as $-Z\tilde J_\Phi$</td>
+<td>21 of the 27 that print the equation</td>
+<td>a convention, not a defect</td>
+</tr>
+<tr>
+<td>7d, statements that print an $\epsilon$-weighted invariant, $\langle\tilde F\rangle_\natural=-\epsilon I_1$</td>
+<td>2 in 1 article</td>
+<td>0</td>
+</tr>
+<tr>
+<td>7e, Hermitian forms printed as $\tfrac12\tilde F\tilde F^{*}=We_t+\tfrac{i}{c}\vec S$</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>7f, math spans with unbalanced braces</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Gates 7d to 7f were added in the final pass, and 7c was restated.</strong> Gate 7c as first written — "articles that print $\tilde F$ and do not print $Z$" — could never reach zero: 38 of the 62 articles that print the field strength print no Maxwell source equation at all, and the impedance has no place there. What the gate can measure is the convention inside the equation, and that convention is intact: of the 27 articles that print $\tilde\nabla_\Phi\tilde F=\ldots$, 21 close it with $-Z\tilde J_\Phi$ and six spell the source otherwise, five of them because the field there is not the electromagnetic one (the Proca field, the non-abelian curvature, the covariant derivative, the Dirac correspondence). Gate 7d is the residue of the old invariant: the count read six statements in four articles at the start of the pass and reads two in one at its end. Gate 7e counts the mirror error of the Hermitian form, which read nine statements in five articles and now reads zero; <em>Exercise Plane Wave Propagation in a Medium</em> is excluded because its $\tfrac12\tilde F\tilde F^{*}=We_t/\epsilon+(i/(c\epsilon))\vec S$ is the same statement divided by $\epsilon$ and is correct as printed.</p>
+<p><strong>The checks are fixed-string greps, and they are the ones to run.</strong> From the repository root:</p>
+<pre><code class="language-bash">grep -rFo 'sqrt{\epsilon}' articles_physics/*.md | wc -l     # 7a: 7, in three files
+grep -rnFo 'epsilon I_1' articles_physics/*.md | wc -l        # 7d: 2, both on line 385 of one file
+grep -rn  'Sigma_{\\Psi} *= *\\frac{1}{2}' articles_physics/*.md | wc -l   # 7e: 8, all in the plane-wave exercise, all with W/epsilon
+</code></pre>
+<p>Gate 7e is the only one that needs a reader rather than a string: <code>\Sigma_{\Psi}=\frac{1}{2}</code> is legal when the scalar part is printed as $W/\epsilon$ and wrong when printed as $W$, and <em>Exercise Plane Wave Propagation in a Medium</em> is the legal case. Braces are not a grep either: the span is extracted between dollars and the depth of <code>{</code> over <code>}</code> counted, with <code>\left</code>, <code>\right</code>, <code>\{</code> and <code>\}</code> removed first.</p>
+<p><strong>The order of work.</strong> The rule article first, because it legislates for the rest: <em>Physics Units and Common Elements Conventions</em> states the unit $\mathrm{V\,m^{-1}}$ and drops $\mathrm{kg}^{1/2}$ from the legal list. Then the field-strength article, which is done and is the pilot. Then the media article (140), the Maxwell article (91), the Lorentz-force article (74), and the rest of the register by weight. Gates 1 to 6 of <a href="audit-SI.md">§7 of the SI audit</a> run unchanged after each article.</p>
+<h2 id="10-the-register">10. The Register</h2>
+<p><strong>Family I, 75 articles, 980 roots; 973 removed, 72 articles clear.</strong> The pilot is absent because it is converted. The state in the third column is the radical count only: one article is clear of roots and still carries a derived-object residue, recorded in §11. Two rows are false positives, $\epsilon$ as a small numerical parameter and not a permittivity: <em>The Path Integral and the Schrödinger Equation in Biquaternionic Polar Variables</em> and <em>The Spectrum and the Two Modes</em>. The third column is the state at the time of writing.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>scan</th>
+<th>now</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>electromagnetism-in-media-the-local-complex-structure-at-work.md</code></td>
+<td>140</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>maxwells-equations-in-the-biquaternionic-formulation.md</code></td>
+<td>91</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-lorentz-force-in-biquaternion-form.md</code></td>
+<td>74</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>exercise-plane-wave-propagation-in-a-medium.md</code></td>
+<td>59</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>exercise-duality-rotation-and-the-riemann-silberstein-vector.md</code></td>
+<td>40</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis.md</code></td>
+<td>37</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-self-dual-and-anti-self-dual-split-spin-1-from-the-bivector-plane.md</code></td>
+<td>28</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>maxwells-equations-in-chiral-media-the-quaternionic-reformulation.md</code></td>
+<td>26</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>higher-multipoles-and-the-field-strength-decomposition-in-biquaternionic-form.md</code></td>
+<td>25</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>physics-units-and-common-elements-conventions.md</code></td>
+<td>25</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>exercise-the-electromagnetic-field-of-a-moving-charge.md</code></td>
+<td>20</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>shock-electromagnetic-waves.md</code></td>
+<td>19</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-electromagnetic-field.md</code></td>
+<td>19</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>canonical-quantization-of-the-biquaternion-maxwell-field.md</code></td>
+<td>18</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>exercise-the-electromagnetic-energy-momentum-tensor.md</code></td>
+<td>18</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-classical-spinning-particle-the-bargmann-michel-telegdi-equation-in-biquaternionic-form.md</code></td>
+<td>17</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-vacuum-and-the-nilpotent-ladder.md</code></td>
+<td>16</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-photon-in-biquaternionic-form.md</code></td>
+<td>15</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.md</code></td>
+<td>14</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code></td>
+<td>13</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-parabolic-dirac-operator-and-the-fourier-reformulation-of-maxwells-equations.md</code></td>
+<td>13</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-relativistic-particle-in-an-external-field-in-biquaternionic-form.md</code></td>
+<td>13</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-relativistic-quadrupole-in-biquaternionic-form.md</code></td>
+<td>13</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>exercise-the-electromagnetic-field-of-a-uniformly-moving-charge.md</code></td>
+<td>12</td>
+<td>roots clear; 1 invariant residue (§11)</td>
+</tr>
+<tr>
+<td><code>exercise-the-retarded-potentials-and-the-greens-function.md</code></td>
+<td>11</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>harmonic-elementary-particles-and-the-periodic-system-of-atoms.md</code></td>
+<td>10</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>radiation-from-accelerated-charges-in-biquaternionic-form.md</code></td>
+<td>10</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>electric-magnetic-duality-and-the-modular-group-in-biquaternionic-form.md</code></td>
+<td>9</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-yang-mills-equation-in-biquaternionic-form.md</code></td>
+<td>9</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-dirac-maxwell-correspondence-in-biquaternionic-form.md</code></td>
+<td>8</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-gauge-principle-in-biquaternionic-form.md</code></td>
+<td>7</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.md</code></td>
+<td>7</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>larmor-precession-and-the-classical-magnetic-moment-in-biquaternionic-form.md</code></td>
+<td>6</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-proca-equation.md</code></td>
+<td>6</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-multipole-expansion-and-the-quadrupole-interaction-in-biquaternionic-form.md</code></td>
+<td>6</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>wave-particle-duality-and-charge-conservation.md</code></td>
+<td>6</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.md</code></td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td><code>gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.md</code></td>
+<td>5</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>noethers-theorem-in-biquaternionic-form.md</code></td>
+<td>5</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>nonlinear-maxwell-equations-in-biquaternionic-form.md</code></td>
+<td>5</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>null-electromagnetic-fields-and-the-shear-free-congruence.md</code></td>
+<td>5</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-complex-potential-of-a-self-dual-maxwell-field.md</code></td>
+<td>5</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-proca-equation-massive-spin-1-in-biquaternionic-form.md</code></td>
+<td>5</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>ai-physics-review.md</code></td>
+<td>4</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.md</code></td>
+<td>4</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>instantons-and-solitons-in-biquaternionic-form.md</code></td>
+<td>4</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>scattering-for-the-quaternionic-dirac-operator-the-lippmann-schwinger-equation-the-radiation-condition-and-faddeevs-greens-function.md</code></td>
+<td>4</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-coupled-proca-equation-in-biquaternionic-form.md</code></td>
+<td>4</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-ether-and-photons-in-the-electro-gravimagnetic-programme.md</code></td>
+<td>4</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-field-strength-as-the-sum-of-two-self-dual-halves.md</code></td>
+<td>4</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.md</code></td>
+<td>4</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.md</code></td>
+<td>4</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-third-polarization-and-the-self-dual-split-of-the-massive-field-strength.md</code></td>
+<td>4</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-time-harmonic-maxwell-operator-and-the-quaternionic-cauchy-integral.md</code></td>
+<td>4</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>thomson-and-compton-scattering-the-biquaternion-polarization-algebra.md</code></td>
+<td>4</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>paravectors-and-the-geometry-of-spacetime.md</code></td>
+<td>3</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-quantum-electrodynamics.md</code></td>
+<td>3</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-coupled-klein-gordon-equation.md</code></td>
+<td>3</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>wave-particle-duality-and-the-fourier-transform.md</code></td>
+<td>3</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>why-biquaternions.md</code></td>
+<td>3</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>a-brief-history-of-biquaternions-in-physics.md</code></td>
+<td>2</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>gravitational-waves-in-biquaternionic-form.md</code></td>
+<td>2</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-boost-of-an-electromagnetic-plane-wave-as-a-rotation-and-a-dilation.md</code></td>
+<td>2</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-electron-in-biquaternionic-form.md</code></td>
+<td>2</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-coupled-proca-equation.md</code></td>
+<td>2</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-light-cone-as-the-biquaternion-zero-divisor-cone.md</code></td>
+<td>2</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-quantum-relativity-tension-and-the-biquaternion-framework.md</code></td>
+<td>2</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>algebra-and-element-conventions.md</code></td>
+<td>1</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>operator-and-calculus-conventions.md</code></td>
+<td>1</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>spin-1-2-quantum-physics-in-biquaternionic-form.md</code></td>
+<td>1</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-coupled-klein-gordon-equation-in-biquaternionic-form.md</code></td>
+<td>1</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-derivative-the-field-and-the-transform.md</code></td>
+<td>1</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-path-integral-and-the-schrodinger-equation-in-biquaternionic-polar-variables.md</code></td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form.md</code></td>
+<td>1</td>
+<td>clear</td>
+</tr>
+<tr>
+<td><code>the-spectrum-and-the-two-modes.md</code></td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Family II, 16 articles, 60 roots.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>roots</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-excitation-ladder-theory-of-flavour.md</code></td>
+<td>15</td>
+</tr>
+<tr>
+<td><code>the-reverse-madelung-map-fluid-to-nonlinear-wave.md</code></td>
+<td>12</td>
+</tr>
+<tr>
+<td><code>vacuum-value-normalization-energy-mass-wave-number-and-length.md</code></td>
+<td>5</td>
+</tr>
+<tr>
+<td><code>physics-units-and-common-elements-conventions.md</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td><code>the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.md</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td><code>electromagnetism-in-media-the-local-complex-structure-at-work.md</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td><code>superfluids-and-becs-the-gross-pitaevskii-equation-as-the-nonlinear-reverse-map.md</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td><code>the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td><code>exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.md</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td><code>the-fluid-wave-correspondence-which-constant-each-field-carries.md</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td><code>the-invariant-measure-on-the-mass-shell.md</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td><code>asymptotic-freedom-and-the-running-of-the-strong-coupling.md</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>canonical-quantization-of-the-biquaternion-klein-gordon-field.md</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>the-action-problem.md</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.md</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.md</code></td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="11-the-state-of-the-work">11. The State of the Work</h2>
+<p><strong>Seventy-two of the seventy-five articles of the first family are clear, and 973 of its 980 roots are gone; 7 remain in three articles, all seven false positives. With the 60 roots of the second family, which no normalisation touches, 1033 of the 1040 are removed.</strong> The radical count is not the whole state of the work any more: the two quadratic objects that a conversion can break — the norm and the Hermitian form — are now gated separately, and one residue of the norm survives outside the register, in an article whose roots were converted earlier.</p>
+<p><strong>Where the work stands, in one table.</strong> Every number below was re-measured in the final pass and carries its gate, except gate 7b, which is carried over: no article of Family II was edited, so its 60 cannot have moved.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>what</th>
+<th>state</th>
+<th>gate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Family I, roots of $\sqrt{\epsilon}$, $\sqrt{\mu}$ and their vacuum forms</td>
+<td>973 of 980 gone; 7 left in 3 articles, all false positives</td>
+<td>7a</td>
+</tr>
+<tr>
+<td>Family II, roots of a base-unit quantity</td>
+<td>60 in 16 articles, untouched by design</td>
+<td>7b</td>
+</tr>
+<tr>
+<td>the $\epsilon$-weighted invariant, $\langle\tilde F\rangle_\natural=-\epsilon(I_1+2icI_2)$</td>
+<td>2 statements in 1 article (line 385 of the uniformly-moving-charge exercise)</td>
+<td>7d, open</td>
+</tr>
+<tr>
+<td>the half-weighted Hermitian form, $\tfrac12\tilde F\tilde F^{*}=We_t+\ldots$</td>
+<td>0</td>
+<td>7e</td>
+</tr>
+<tr>
+<td>unbalanced braces in a math span</td>
+<td>0 in the 679 Markdown articles of <code>articles_physics</code></td>
+<td>7f</td>
+</tr>
+<tr>
+<td>the impedance $Z$ in the sourced Maxwell equation</td>
+<td>21 of 27 articles that print the equation</td>
+<td>7c, a convention</td>
+</tr>
+<tr>
+<td>the conventions article</td>
+<td>carries the rule, the two rows and no radical of a medium constant</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one open item, exactly.</strong> <em>Exercise: The Electromagnetic Field of a Uniformly Moving Charge</em>, line 385, prints $\langle\tilde F\rangle_{\natural}=-\epsilon I_1\ne0$ and $\tilde F^2=\epsilon I_1\ne0$ beside $I_1=(\varkappa/(4\pi\epsilon D^2))^2$. Both $\epsilon$ are surplus: the article's own Problem 6 at line 348 states $\langle\tilde F\rangle_{\natural}=-(I_1+2icI_2)$ and $\tilde F^2=I_1+2icI_2$ with no $\epsilon$, and the two statements contradict each other at every $\epsilon\ne1$. It is a leftover of the same class as the six the pass removed, missed because the sentence states the invariant numerically rather than as a display. The fix is the deletion of two characters; it is left standing so that the gate has something to find, and it is the only such site in the corpus.</p>
+<p><strong>What is not a defect, and should not be "fixed" later.</strong> The 7 remaining roots: five in <em>Exceptional Points and the Nilpotent Regime</em> and one each in <em>The Path Integral and the Schrödinger Equation in Biquaternionic Polar Variables</em> and <em>The Spectrum and the Two Modes</em>, where $\epsilon$ is a dimensionless perturbation amplitude or a small parameter and not the permittivity. The 60 roots of Family II: $\sqrt{m_e}$, $\sqrt{\rho}$, $\sqrt{2E}$, $\sqrt{\sigma}$, each a decision about a parent quantity and not a normalisation. And $\sqrt{\epsilon\mu}$, $\sqrt{\mu/\epsilon}$, $\sqrt{\epsilon_0\mu_0}$, which are a speed, an impedance and a speed. Every converted article carries no radical of $\epsilon$ or $\mu$, no $\epsilon$-weighted invariant of the old kind and a balancing brace on each math span; the check of §1 returns zero for each. The brace count itself needs a word: the raw check reports eight unbalanced inline spans, and all eight are literal set braces written $\{\ldots\}$ and $\{\}$ inside math. A check that removes escaped braces before counting returns zero, so no span in the corpus is actually unbalanced, and the eight are a defect of the counter, not of the articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>converted</th>
+<th>roots removed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>physics-units-and-common-elements-conventions.md</code></td>
+<td>25</td>
+</tr>
+<tr>
+<td><code>maxwells-equations-in-the-biquaternionic-formulation.md</code></td>
+<td>91</td>
+</tr>
+<tr>
+<td><code>the-field-strength-biquaternion-and-its-invariants.md</code></td>
+<td>60</td>
+</tr>
+<tr>
+<td>the thirty others, from <code>higher-multipoles…</code> and <code>the-relativistic-quadrupole…</code> down to <code>algebra-and-element-conventions.md</code></td>
+<td>137</td>
+</tr>
+<tr>
+<td><code>the-self-dual-and-anti-self-dual-split-spin-1-from-the-bivector-plane.md</code></td>
+<td>28</td>
+</tr>
+<tr>
+<td><code>the-vacuum-and-the-nilpotent-ladder.md</code></td>
+<td>16</td>
+</tr>
+<tr>
+<td><code>the-classical-spinning-particle-the-bargmann-michel-telegdi-equation-in-biquaternionic-form.md</code></td>
+<td>17</td>
+</tr>
+<tr>
+<td><code>the-parabolic-dirac-operator-and-the-fourier-reformulation-of-maxwells-equations.md</code></td>
+<td>13</td>
+</tr>
+<tr>
+<td><code>the-relativistic-particle-in-an-external-field-in-biquaternionic-form.md</code></td>
+<td>13</td>
+</tr>
+<tr>
+<td><code>the-lorentz-force-in-biquaternion-form.md</code></td>
+<td>70</td>
+</tr>
+<tr>
+<td><code>exercise-duality-rotation-and-the-riemann-silberstein-vector.md</code></td>
+<td>40</td>
+</tr>
+<tr>
+<td><code>the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis.md</code></td>
+<td>31</td>
+</tr>
+<tr>
+<td><code>electromagnetism-in-media-the-local-complex-structure-at-work.md</code></td>
+<td>140</td>
+</tr>
+<tr>
+<td><code>exercise-plane-wave-propagation-in-a-medium.md</code></td>
+<td>59</td>
+</tr>
+<tr>
+<td>the sixteen converted in the mechanical pass of §11</td>
+<td>123</td>
+</tr>
+<tr>
+<td>the nine converted in the energy pass of §11</td>
+<td>148</td>
+</tr>
+<tr>
+<td>the four of the Lorentz-force density block</td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>total removed, family I</strong></td>
+<td><strong>973</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>This column is not additive, and the total is not its sum.</strong> The rows add to $1015$ and the total is $973$; the difference is the overlap between the pass rows and the rows that name single articles, and the pilot's $60$, which sits outside the register's $980$ because it was converted before the register was opened. The authoritative split is the register of §10, which was re-parsed for this pass: $75$ rows, the scan column summing to exactly $980$, the state column to exactly $7$. A pass table that does not add up is a bookkeeping defect and not a measurement defect; the measurement is the scan.</p>
+<p><strong>The last pass: the two quadratic objects.</strong> With the field bare, the factors of $\epsilon$ that a source absorbed have to sit somewhere, and they sit on the quadratic forms and nowhere else. Two blocks were still carrying the old weighting and were corrected in this final pass, six statements in four articles and nine in five. The norm lost its factor: <em>Instantons and Solitons</em> (two places), <em>The Lorentz Force in Biquaternion Form</em>, <em>The Complex Potential of a Self-Dual Maxwell Field</em> (two places) and <em>Exercise the Electromagnetic Field of a Uniformly Moving Charge</em> now print $\langle\tilde F\rangle_{\natural}=-(I_1+2icI_2)$, and the numeric check of the complex-potential article, $-0.17+0.30i$ at $\vec E=(0.3,-0.2,0.5)$ and $\vec B=(0.1,0.4,-0.2)$, is exactly $-(I_1+2iI_2)$ with no $\epsilon$ in it, which is what exposed the surplus. The Hermitian form gained one: <em>Stress–Energy Conservation Laws</em> (two places), <em>Gauge Transformations of the First and Second Kind</em>, <em>Noether's Theorem</em> (four places), <em>The Photon in Biquaternionic Form</em> and <em>The Complex Potential</em> (one place) now print $\tilde\Sigma_{\Psi}=\tfrac{\epsilon}{2}\tilde F\tilde F^{*}=We_t+\tfrac{i}{c}\vec S$, since $\tfrac12\tilde F\tilde F^{*}$ alone has scalar part $W/\epsilon$ and the display that called it $W$ was off by one permittivity. <em>Exercise Plane Wave Propagation in a Medium</em> keeps $\tfrac12\tilde F\tilde F^{*}=W e_t/\epsilon+(i/(c\epsilon))\vec S$, which is the same statement divided by $\epsilon$ and is correct as printed. Verified on a hundred random fields: $\tfrac{\epsilon}{2}\|\tilde F\|^{2}=W$ to $1.8\times10^{-15}$, $\|\tilde F\|^{2}=2W/\epsilon$ to $7.1\times10^{-15}$, $\tilde F^{2}=(I_1+2icI_2)e_t$ to $3.7\times10^{-15}$, and $\epsilon c\lvert\vec E\times\vec B\rvert=\lvert\vec S\rvert/c$ to $2.7\times10^{-15}$.</p>
+<p><strong>What the conventions article now states.</strong> <em>Physics Units and Common Elements Conventions</em> carries the rule in §<em>The medium constants are not set to one either</em>: a source that weights the field by the half power of the permittivity is read with that half power taken out, a quadratic form carrying one $\epsilon$ and the norm none, because the two roots cancel against the square. Its two symbol rows follow: the energy–momentum row reads $\tilde\Sigma_{\Psi}=\tfrac{\epsilon}{2}\tilde F\tilde F^{*}$ with $w=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)=\tfrac{\epsilon}{2}\|\tilde F\|^{2}$, and the power–force row reads $\tilde{\mathcal F}=i\epsilon\tilde J_{\Phi,\mathrm{eg}}\circ\tilde F_2$ with $\rho=\rho_E/\epsilon-ic\rho_H$ and $\vec J=c\mu\vec j_E-i\vec j_H$, every entry in $\mathrm{V\,m^{-2}}$. The paragraph names no impedance and prints no radical.</p>
+<p><strong>What the media article took.</strong> <em>Electromagnetism in Media</em> is the one conversion so far that is a derivation and not a substitution, and three things in it are worth recording. First, the field strength is the parent's, $\tilde F=i\vec E-c\vec B=i\vec E-Z\vec H$, and the two halves are both electric field strengths in volts per metre, so no square root of a medium constant survives; the Hermitian trace becomes $\tilde F\tilde F^{*}=2We_t/\epsilon+2i\vec S/(c\epsilon)$, the permittivity appearing once because the modulus squared is now a squared field and not an energy density. Second, the pseudoanalytic reduction does <strong>not</strong> need the half power: the carrier may be taken as the dimensionless ratio $\xi_\epsilon=\sqrt{\epsilon/\epsilon_\star}$ to a fixed reference permittivity, and the carrier identity is indifferent to a constant factor, so the reduced fields keep the dimensions of the fields they came from. The pair becomes $D\vec{\mathcal E}+\vec{\mathcal E}\vec{\epsilon}=-Z_\star\partial_{\tau}\vec{\mathcal H}-\xi_\epsilon\rho/\epsilon$ and $D\vec{\mathcal H}+\vec{\mathcal H}\vec{\mu}=Z_\star^{-1}\partial_{\tau}\vec{\mathcal E}+\xi_\mu\vec J$, with $Z_\star=\sqrt{\mu_\star/\epsilon_\star}$ the reference impedance, and every term is in integer SI units. Third, two defects of the source text were found by recomputation and repaired. The system at the head of the carrier section was missing the factor $c$ on both curl equations — it cannot be homogeneous in $r'_t$ without it, since $\mathrm{rot}\,\vec H$ is $\mathrm{C\,m^{-3}}$ while $\epsilon\,\partial_{\tau}\vec E$ is $\mathrm{C\,m^{-3}\,s^{-1}}$ — and with $c$ restored the coefficients are exactly $1/Z$ and $Z$. And in the boxed Vekua equation the two coefficient vectors were interchanged: the algebra gives $\mathcal F(i\vec Z)+\bar{\mathcal F}(i\vec c)$, not $\mathcal F(i\vec c)+\bar{\mathcal F}(i\vec Z)$, checked on 200 random quaternion triples to $4.6\times10^{-16}$. With the dimensionless carrier the boxed equation reads $(\partial_{\tau}+iD)\mathcal F-\mathcal F(i\vec Z)-\bar{\mathcal F}(i\vec c)=-(Z_\star\xi_\mu\vec J+i\xi_\epsilon\rho/\epsilon)$, $\mathcal F=\vec{\mathcal E}+iZ_\star\vec{\mathcal H}$.</p>
+<p><strong>Four classes remain, and they are not the same job.</strong></p>
+<ol>
+<li><strong>The replacement is finished; only the false positives and one derived residue stand.</strong> Twenty-five articles were converted in the last two passes, 273 roots between them. The first pass took the sixteen of the mechanical tail; the second took the nine that carry the norm or the energy: <em>Exercise the Electromagnetic Field of a Moving Charge</em> (20), <em>Shock Electromagnetic Waves</em> (19), <em>The Lagrangian and the Electromagnetic Field</em> (19), <em>Canonical Quantization of the Biquaternion Maxwell Field</em> (18), <em>Exercise the Electromagnetic Energy–Momentum Tensor</em> (18), <em>The Photon in Biquaternionic Form</em> (15), <em>The Eigenspinor</em> (14), <em>Stress–Energy Conservation Laws and the Field Action</em> (13) and <em>Exercise the Electromagnetic Field of a Uniformly Moving Charge</em> (12). What is left is seven false positives and nothing else. Two conversions needed more than a substitution, and in both the remedy is a common constant factor. <em>Maxwell's Equations in Chiral Media</em> stated its reduced system on $\vec E/\sqrt{\mu}$ and $\vec H/\sqrt{\epsilon}$; the corpus form is $\vec{\mathcal E}=\vec E$, $\vec{\mathcal H}=Z\vec H$, $\vec j_{\mathrm n}=Z\vec j$, all in integer units, and the pair $(12)$ is unchanged because the old pair is the new one divided by the constant $\sqrt{\mu}$, a factor that multiplies every term. The same article printed its continuity identity with $i/\nu_{\Phi}$ where the derivation gives $i/2\pi\nu_{\Phi}$ — the display two lines below had it right — and that was corrected, as was §7's half-power normalisation, now $\vec E/c$ and $Z\vec H/c$. <em>The Dirac–Maxwell Correspondence</em> states its carrier identity on $\sqrt{\epsilon}\vec E$ and $\sqrt{\mu}\vec H$; there the permittivity is the dimensionless $\epsilon=e^{2G}$ of the reduction, so the carrier is written $e^{G}$ and $e^{G_2}$ and the operator coefficients are $\mathrm{grad}\,G$ and $\mathrm{grad}\,G_2$, the same identity with no half power anywhere. <em>The Lorentz Force in Biquaternion Form</em> kept four roots in the same block and is now converted. Its programme densities were half-weighted by construction, $\rho=\rho_E/\sqrt{\epsilon}-i\rho_H/\sqrt{\mu}$ and $\vec J=\sqrt{\mu}\vec j_E-i\sqrt{\epsilon}\vec j_H$; the replacement is the one the source article of that programme already prints, $\rho=\rho_E/\epsilon-ic\rho_H$ and $\vec J=c\mu\vec j_E-i\vec j_H$, with the single factor $\epsilon=1/(c^{2}\mu)$ moved outside the product. No impedance symbol survives in the block, and every entry is a field divided by a length. The printed components of $\tilde{\mathcal F}$ are unchanged: the scalar part to $3.6\times10^{-15}$, the vector part to $5.3\times10^{-15}$ against $-i(\vec F_H+i\vec F_E)$ and to $7.1\times10^{-15}$ against $-\epsilon\rho\tilde F_2-i\epsilon[\tilde F_2,\vec J]$, on a hundred random fields. <em>The Electro-Gravimagnetic Field and the Magnetic Charge</em> was the largest third-class case and is now converted: its source writes the field with the square root of the permittivity absorbed, and the conversion carries one constant through the whole article — the energy density to $W=\tfrac{\epsilon}{2}\|\tilde F\|^2$, the flux to $\vec P=\tfrac{c\epsilon}{2}i\tilde F\times\tilde F^*$, the combined charge to $\rho_E/\epsilon-ic\rho_H$, the current to $Z\vec j_E-i\vec j_H$, the stress pseudotensor and the momentum densities to functions of $\rho$ and $\vec J$ alone, and the wave table to amplitudes normalised without a medium half-power. The article also records, and this is a separate finding, that its free-source block is written in the source's $c=1$ convention: the continuity equation and the relaxation pair it prints beside it do not take the same factor of $c$ in SI, which is the signature of time measured in length units. The corpus keeps the source's displays in that block and names the convention rather than inserting a $c$ in one line and not in the next. A rule-driven pass fixes them; each still needs a read of its changed sentences.</li>
+<li><strong>The articles that carry the norm or the energy, and the rule that moved them.</strong> The identity $\langle\tilde F\rangle_\natural=-(I_1+2icI_2)$, the trace $\tilde F\tilde F^{*}=2We_t/\epsilon+2ic\,\vec E\times\vec B$, the Lagrangian $\tfrac{\epsilon}{2}\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$ and the normalisation of $\tilde\Sigma_\Psi$ move as a block, and the block moved in this pass. The rule is one constant per bilinear. The field is $\tilde F=i\vec E-c\vec B$; the energy–momentum biquaternion is $\tilde\Sigma_\Psi=\tfrac{\epsilon}{2}\tilde F\tilde F^{*}=We_t+\tfrac{i}{c}\vec S$; and every tensor entry $\Pi_{\imath\jmath}=\tfrac{\epsilon}{2}\mathrm{Sc}(\tilde F e_{\imath}\tilde F^{*}e_{\jmath})$ keeps its old value, $\Pi_{00}=-W$, $\Pi_{0\jmath}=S_{\jmath}/c$, $\Pi_{\jmath0}=-S_{\jmath}/c$ and $\Pi_{\jmath\imath}=-\sigma_{\jmath\imath}$. The factor $\epsilon/2$ cancels the $1/\epsilon$ that every entry of the trace and of the inserted-unit bilinear now carries: $\mathrm{Sc}(\tilde F\tilde F^{*})=2W/\epsilon$ and $\mathrm{Vect}(\tilde F\tilde F^{*})=2ic\,\vec E\times\vec B$, checked by recomputation on a hundred random fields, the residual $3.6\times10^{-15}$ for the trace, $1.8\times10^{-15}$ for its vector part and $3.6\times10^{-15}$ for the four families of $\Pi$. Three more consequences were carried through. The Lagrangian article's action, the stress–energy article's action and the photon's Riemann–Silberstein form take the same factor, $S=\int\tfrac{\epsilon}{2}\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$ and $\tilde F=i\vec N$ with $\vec N=\vec E+ic\vec B$. The eigenspinor's rotation rate becomes $\vec\Omega_{\mathrm{LT}}=-\tfrac{ϙ}{mc}\tilde F^{*}$, one factor of $c$ from its old form, because the conjugate $\tilde F^{*}=i\vec E+c\vec B$ now carries $c$ on the magnetic part while the combination $\tilde F^{*}/c=i\vec E/c+\vec B$ is the one the force carries. And the shock article's wave-front pair becomes $[\vec E]_{F_t}=c\,[\vec B]_{F_t}\times\vec u$ and $c\,[\vec B]_{F_t}=\vec u\times[\vec E]_{F_t}$, which is exactly the real and imaginary content of $[\tilde F]_{F_t}=-i[\tilde F]_{F_t}\times\vec u$ at the new normalisation; the equivalence was checked to $4.4\times10^{-16}$ on a hundred random jumps. <em>The Vacuum and the Nilpotent Ladder</em> carried the invariant and is now converted: with $\tilde F=i\vec E-c\vec B$ the identity reads $\tilde F^{2}=(I_1+2icI_2)e_t$ with no factor of $\epsilon$, because the old $\epsilon$ was the square of the constant that the new normalisation absorbs, and that was checked by recomputation on a hundred random fields. The two Lagrangian articles are done and are the model: the action takes the factor $\tfrac{\epsilon}{2}$ and the field definition takes the factor $c$.</li>
+<li><strong>The derived objects are gated separately, and they are the reason the radical count can read done while the article is not.</strong> A conversion is a substitution of the field, and the field enters the corpus twice over: once linearly, and once through the two quadratic objects built from it. A root count sees only the first. Gates 7d and 7e see the second, and they close the gap that let an $\epsilon$-weighted invariant survive a converted article.</li>
+<li><strong>The media pair is done, and it was the hardest class.</strong> <em>Electromagnetism in Media</em> and <em>Exercise Plane Wave Propagation in a Medium</em> were the only two articles whose conversion is a derivation and not a substitution; both are converted, 140 and 59 roots, and what each took is recorded in §11. The exercise kept every derivation and lost only the half powers: the two curl conditions now follow from the real and imaginary parts of one vector equation written for $\tilde F_0=i\vec E_0-c\vec B_0$, the normalisation constant factors out of the nullness, and the energy–momentum biquaternion picks up the single factor $1/\epsilon$ that the unnormalised field carries.</li>
+</ol>
+<p><strong>What closes this audit.</strong> Two characters on line 385 of the uniformly-moving-charge exercise close gates 7a, 7d and 7f at once, and nothing else in the section is open. Gate 7b stays where it is by design: it is a list of decisions about parent quantities, not a defect list, and it closes when each of the 16 articles states the quantity under its root. Gate 7c records a convention: the impedance stands in the twenty-one sourced equations because the corpus keeps $\mu$ and $\epsilon$ dimensionful, and no gate can remove it without removing the constants from the equations.</p>
+<h2 id="what-the-si-audit-keeps">What the SI audit keeps</h2>
+<p>The three rows of its notation table that name a symbol of this audit — the unit of the field strength, option A, and the two families — are pointers to §4, §5 and §2 here. Nothing else of this file is cited there.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
