@@ -106,13 +106,13 @@ an identity for arbitrary $ϙ_L,ϙ_R$.
 
 **The same fact read positively.** Restricted to the rotation group, the left action is the **spin representation** on a minimal left ideal — [The One-Sided Action and the Spin Representation](../articles_maths/the-one-sided-action-and-the-spin-representation.html) states it and proves it. So the framework does have an irreducible carrier for spin-half matter, and what it lacks is a second one, or a second action on the same one, that would let a non-abelian group see one value and not the other. [Representation Is a Function of Spin](representation-is-a-function-of-spin.html) states the general form: representation is a function of spin, so the spinor module comes with the spinor's spin and not with a gauge label attached.
 
-**A third reading, and the shortest one: one phase and its inverse.** Write the left action of a rotor — an element of $\mathrm{SU}(2)=\mathrm{Spin}(3)$, the unit real quaternions — on the ideal in the Peirce basis of an axis $\vec u_{\mathrm r}$. A unit rotor $\tilde u=\cos\tfrac{\varphi}{2}+\sin\tfrac{\varphi}{2}\vec u$ acts there as
+**A third reading, and the shortest one: one phase and its inverse.** Write the left action of a rotor — an element of $\mathrm{SU}(2)=\mathrm{Spin}(3)$, the unit real quaternions — on the ideal in the Peirce basis of an axis $\vec u_{\mathrm r}$. A unit rotor $\tilde u=\cos\tfrac{\omicron_{\mathrm{ang}}}{2}+\sin\tfrac{\omicron_{\mathrm{ang}}}{2}\vec u$ acts there as
 
 $$
-L_{\tilde u}\big|_{S_+(\vec u_{\mathrm r})}=\operatorname{diag}\bigl(e^{-i\varphi/2},\,e^{+i\varphi/2}\bigr),
+L_{\tilde u}\big|_{S_+(\vec u_{\mathrm r})}=\operatorname{diag}\bigl(e^{-i\omicron_{\mathrm{ang}}/2},\,e^{+i\omicron_{\mathrm{ang}}/2}\bigr),
 $$
 
-a single rotation of the plane whose two entries are one phase and the reciprocal of that phase. The determinant is one, the trace is $2\cos\tfrac{\varphi}{2}$, and the two numbers a chiral theory would want to be independent — the charges of the two values — are here the same number with opposite signs. A chiral action needs instead
+a single rotation of the plane whose two entries are one phase and the reciprocal of that phase. The determinant is one, the trace is $2\cos\tfrac{\omicron_{\mathrm{ang}}}{2}$, and the two numbers a chiral theory would want to be independent — the charges of the two values — are here the same number with opposite signs. A chiral action needs instead
 
 $$
 \tilde\Xi\ \longmapsto\ \Lambda\tilde\Xi_L+\tilde\Xi_R,\qquad \Lambda=\exp\Bigl(\frac{2\pi i}{h}\textstyle\sum_a\Gamma_aT_a\Bigr),

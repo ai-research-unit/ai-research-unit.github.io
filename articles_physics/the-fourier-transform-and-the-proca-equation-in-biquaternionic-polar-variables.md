@@ -83,7 +83,7 @@ What replaces the phase is the frame, and the symbol carries it in its vector pa
 | Proca | $\sigma_{\mu\nu}$ | even | $\lvert\sigma(-K)-\sigma(K)\rvert=0.00\times10^{0}$ |
 | Klein–Gordon | $k^{2}-k_m^{2}$ | even | $\lvert\sigma(-K)-\sigma(K)\rvert=0.00\times10^{0}$ |
 | Dirac | $i\tilde K_\Phi-k_m$ | odd | $\lvert\sigma(-K)+\sigma(K)\rvert=2k_m=1.400000$ |
-| Schrödinger | $-h\nu-h_t$ | neither | $\lvert\sigma(-\omega)+\sigma(\omega)\rvert=2h_t=1.000000$ |
+| Schrödinger | $-hf_{\mathrm{frq}}-h_t$ | neither | $\lvert\sigma(-\omega)+\sigma(\omega)\rvert=2h_t=1.000000$ |
 
 The measure of an odd part is $\lvert\sigma(-K)-\sigma(K)\rvert$, which for the Dirac symbol is $2k_m$ and for the Schrödinger symbol $2h_t$: hence $1.400000$ and $1.000000$ at $k_m=0.7$ and $h_t=0.5$. So the table's second and third rows differ from the first two by a factor and not by a principle: an odd symbol's reflection doubles its constant term, and an even symbol's reflection cancels its whole value.
 

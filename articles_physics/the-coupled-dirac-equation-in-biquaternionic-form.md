@@ -372,9 +372,9 @@ A single basis operator is a tensor $a\otimes b$ read through $L_aR_b$, so its c
 **The current in the older spelling.** The conserved current of the older literature is the bilinear built with the generator of the coordinate and with the adjoint row,
 
 $$
-j_\mu=\tilde\Xi^{\dagger}iR_{\vec e_x}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\tilde\Xi,
+j_\mu=\tilde\Xi^{\dagger}iR_{\vec e_x}\,iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\tilde\Xi,
 \qquad
-\nu(t)=x,\ \nu(\eta)=y .
+\mathrm{spt}(t)=x,\ \mathrm{spt}(\eta)=y .
 $$
 
 Its time component is $\tilde\Xi^{\dagger}\tilde\Xi$ and its spatial components are $\tilde\Xi^{\dagger}\alpha_\eta\tilde\Xi$ with $\alpha_\eta=L_{\vec e_\eta}R_{\vec e_z}$.
@@ -382,7 +382,7 @@ Its time component is $\tilde\Xi^{\dagger}\tilde\Xi$ and its spatial components 
 **The dictionary, and the point of making it.** Every ingredient of that display is a basis operator of the algebra except one: the adjoint row is built on $iR_{\vec e_x}$, a one-sided operator. Read as a pairing, the same object is
 
 $$
-j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\nu(\mu)}\bigr)\vec e_x\bigr),
+j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\mathrm{spt}(\mu)}\bigr)\vec e_x\bigr),
 $$
 
 a scalar part of three factors: the field, an invertible element, the field again. **The adjoint row and the right multiplier $\vec e_x$ are the same datum in two spellings.** The older form hides it inside the adjoint; the pairing shows it as the last factor, and the last factor is a frame unit and not a field.
@@ -463,7 +463,7 @@ The magnetic moment sits in the same factor as the velocity, so the Larmor rate 
 The conserved current is not a product of the field with its conjugate. It is a pairing with two fixed frame units, which is the older literature's adjoint row in the algebra's spelling:
 
 $$
-j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\nu(\mu)}\bigr)\vec e_x\bigr).
+j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\mathrm{spt}(\mu)}\bigr)\vec e_x\bigr).
 $$
 
 The naive $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, and the two parts enter it with the same sign, so it is not conserved. The variational companion proves the positive statement and exhibits the failure.
@@ -493,7 +493,7 @@ The naive $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, 
 | $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_{\Phi}$ | Covariant wavevector; gauge invariant; in $\mathbb{B}_{\Phi}$ |
 | $\kappa_t,\vec\kappa$ | Components of $\tilde K_{\Phi,\mathrm{gco}}$; $\kappa_t^{2}-|\vec\kappa|^{2}=k_m^{2}$ |
 | $\pi_t,\vec\pi$ | Components of the canonical $\tilde K_\Phi$; the mass shell is displaced by $-\frac{2\pi ϙ}{h}\tilde A_{\Phi}$ |
-| $j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}i(i e_\mu\tilde\Xi\vec e_{\nu(\mu)})\vec e_x\bigr)$ | The conserved current; two fixed frame units |
+| $j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}i(i e_\mu\tilde\Xi\vec e_{\mathrm{spt}(\mu)})\vec e_x\bigr)$ | The conserved current; two fixed frame units |
 | $\tilde J_{\Phi,\mathrm{sp}}=i\tilde\Xi\tilde\Xi^{*}$ | The naive bilinear; gauge invariant, of the density sign, **not conserved** |
 | $\gamma_\mu,\ \gamma_5$ | Basis operators of the legacy frame; used in one section only |
 

@@ -239,19 +239,19 @@ Why it belongs in this article. The Witten condition is a constraint on the same
 
 ## The Scalar's Hypercharge, and the Chain
 
-**The scalar is not in the anomaly system.** The doublet $\varphi$ is a boson, so it contributes to no triangle coefficient. Its hypercharge is fixed by a different requirement: the Yukawa couplings must be gauge invariant.
+**The scalar is not in the anomaly system.** The doublet $\omicron_{\mathrm{hgs}}$ is a boson, so it contributes to no triangle coefficient. Its hypercharge is fixed by a different requirement: the Yukawa couplings must be gauge invariant.
 
-The requirement. For the charged-lepton mass the invariant term is $\bar L_L\varphi\,e_R$. Its total hypercharge must vanish, and a barred field carries the negative of the hypercharge of the unbarred one, so
+The requirement. For the charged-lepton mass the invariant term is $\bar L_L\omicron_{\mathrm{hgs}}\,e_R$. Its total hypercharge must vanish, and a barred field carries the negative of the hypercharge of the unbarred one, so
 
 $$
--Y_{L_L}+Y_\varphi+Y_{e_R}=0 ,
+-Y_{L_L}+Y_{\mathrm{hch}}+Y_{e_R}=0 ,
 \qquad
-Y_\varphi=Y_{L_L}-Y_{e_R}=-\tfrac12-(-1)=+\tfrac12 .
+Y_{\mathrm{hch}}=Y_{L_L}-Y_{e_R}=-\tfrac12-(-1)=+\tfrac12 .
 $$
 
-That is the value in the table, and it is the value the rest of the series uses. The conjugate $\tilde\varphi$ carries $-\tfrac12$; it is the object with the opposite hypercharge, not a second field.
+That is the value in the table, and it is the value the rest of the series uses. The conjugate $\tilde\omicron_{\mathrm{hgs}}$ carries $-\tfrac12$; it is the object with the opposite hypercharge, not a second field.
 
-The up-type term needs the conjugate. With $\varphi$ alone the up-type term would carry total hypercharge $-\tfrac16+\tfrac12+\tfrac23=+1$. The conjugate doublet $\tilde\varphi$ carries $-\tfrac12$ and repairs it. The scalar sector therefore contains one field and two objects, and the object with hypercharge $-\tfrac12$ is not a second field.
+The up-type term needs the conjugate. With $\omicron_{\mathrm{hgs}}$ alone the up-type term would carry total hypercharge $-\tfrac16+\tfrac12+\tfrac23=+1$. The conjugate doublet $\tilde\omicron_{\mathrm{hgs}}$ carries $-\tfrac12$ and repairs it. The scalar sector therefore contains one field and two objects, and the object with hypercharge $-\tfrac12$ is not a second field.
 
 The chain, stated once. The whole assignment follows from four steps, and no step is a free choice beyond the two the model really has:
 
@@ -260,9 +260,9 @@ The chain, stated once. The whole assignment follows from four steps, and no ste
 | one | the group and the representation content | the five unknowns |
 | two | the four anomaly conditions | three rays |
 | three | the measured charges | the ray, and the scale by convention |
-| four | the invariance of the Yukawa terms | $Y_\varphi=\tfrac12$, $Y_{\tilde\varphi}=-\tfrac12$ |
+| four | the invariance of the Yukawa terms | $Y_{\mathrm{hch}}=\tfrac12$, $Y_{\tilde\omicron_{\mathrm{hgs}}}=-\tfrac12$ |
 
-What follows from the last step. With $Y_\varphi=\tfrac12$ the scalar's neutral component has $T_3=-\tfrac12$ and $Ϙ=0$, so the vacuum expectation value can sit in the neutral component and leave the photon massless. The tree-level relation $\rho=1$ follows from the doublet being a doublet. Both are computed in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html), and the point here is that they follow from the assignment and not from an extra postulate.
+What follows from the last step. With $Y_{\mathrm{hch}}=\tfrac12$ the scalar's neutral component has $T_3=-\tfrac12$ and $Ϙ=0$, so the vacuum expectation value can sit in the neutral component and leave the photon massless. The tree-level relation $\rho=1$ follows from the doublet being a doublet. Both are computed in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html), and the point here is that they follow from the assignment and not from an extra postulate.
 
 The neutrino charge. With $Y_L=-\tfrac12$ and $T_3=+\tfrac12$ the neutrino comes out neutral, and that is a consequence of the assignment rather than an input to it. A reader who takes the neutrality of the neutrino as the starting point will find that it is one equation short of the whole table.
 
@@ -295,7 +295,7 @@ The linear system has rank three on five unknowns, so its solution space is two-
 
 Beyond the triangle conditions stands the Witten condition, that the number of left-handed doublets be even. Each generation supplies $N_c+1=4$, so the content satisfies it, and the condition is the one place where the number of colours enters a consistency requirement rather than a coupling.
 
-The scalar's hypercharge is not part of the anomaly system, since a boson contributes no triangle coefficient. It is fixed by the invariance of the Yukawa terms, $-Y_{L_L}+Y_\varphi+Y_{e_R}=0$ and so $Y_\varphi=Y_{L_L}-Y_{e_R}=+\tfrac12$, and with it the neutral component can carry the vacuum expectation value and leave the photon massless. The chain is: content, then four anomaly conditions, then the measured charges, then Yukawa invariance.
+The scalar's hypercharge is not part of the anomaly system, since a boson contributes no triangle coefficient. It is fixed by the invariance of the Yukawa terms, $-Y_{L_L}+Y_{\mathrm{hch}}+Y_{e_R}=0$ and so $Y_{\mathrm{hch}}=Y_{L_L}-Y_{e_R}=+\tfrac12$, and with it the neutral component can carry the vacuum expectation value and leave the photon massless. The chain is: content, then four anomaly conditions, then the measured charges, then Yukawa invariance.
 
 The framework reaches the algebra of the group and not the assignment. Its abelian factor is the central phase, which multiplies both chiralities by the same charge and is therefore vector-like, with the cubic sum vanishing identically; and its representation content is an input. A derivation would need an abelian generator whose left and right actions differ, which is the non-central case that [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) records as open. The assignment is imported, and what this article adds to that statement is its exact size: two continuous parameters and one discrete choice, constrained by four conditions and selected by three measured charges.
 
@@ -315,7 +315,7 @@ The framework reaches the algebra of the group and not the assignment. Its abeli
 | $A(3)$, $A(\bar3)$ | Cubic colour Casimirs, $+1$ and $-1$ |
 | $M$ | The $3\times5$ matrix of the linear anomaly conditions |
 | $p$, $q$ | The two parameters of the linear solution space |
-| $Y_\varphi=\tfrac12$, $Y_{\tilde\varphi}=-\tfrac12$ | Hypercharges of the scalar doublet and its conjugate |
+| $Y_{\mathrm{hch}}=\tfrac12$, $Y_{\tilde\omicron_{\mathrm{hgs}}}=-\tfrac12$ | Hypercharges of the scalar doublet and its conjugate |
 | $\mathbf p=(1,1,1,-3,-6)$, $\mathbf q=(0,1,-1,0,0)$ | Basis of the linear solution space |
 
 ## Further Reading
@@ -325,7 +325,7 @@ The framework reaches the algebra of the group and not the assignment. Its abeli
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html). The central phase and the charge parameter $ϙ$.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The intrinsic compact algebra $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ and the colour ceiling.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html). Why a central charge cannot be chiral, and the non-central case as the open question.
-- [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The covariant derivative and the Yukawa terms whose invariance fixes $Y_\varphi$.
+- [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The covariant derivative and the Yukawa terms whose invariance fixes $Y_{\mathrm{hch}}$.
 - [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). The same boundary in ledger form.
 
 The two companions this article leans on most — [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html), which consumes the count of two continuous parameters and one discrete choice, and [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html), which carries the quantisation argument of §*The Three Labels and the Charge* — are both in the corpus, and both are linked above at the point where they are used.

@@ -86,7 +86,7 @@ The algebra's own bilinear is not this current, and the polar article proves why
 The current separates into a transport part and a magnetisation part. The Gordon article proves, for a solution,
 
 $$
-\bar{\tilde\Xi}\,i\,e_\mu\,\tilde\Xi\,\vec e_{\nu(\mu)}
+\bar{\tilde\Xi}\,i\,e_\mu\,\tilde\Xi\,\vec e_{\mathrm{spt}(\mu)}
 =\frac{i}{2k_m}\Big(\bar{\tilde\Xi}\,\partial_\mu\tilde\Xi-\overline{\partial_\mu\tilde\Xi}\,\tilde\Xi\Big)
 +\frac{1}{k_m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde\Xi}\,\Sigma_{\mu\nu}\tilde\Xi\Big),
 $$

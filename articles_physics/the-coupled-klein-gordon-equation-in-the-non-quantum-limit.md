@@ -15,7 +15,7 @@ $$
 \qquad
 \vec v=\frac{c^{2}\vec\pi}{\mathcal E},
 \qquad
-\mathcal E=E-q\varphi ,
+\mathcal E=E-q\omicron_{\mathrm{pot}} ,
 $$
 
 which is Newton's law with the magnetic force, with the relativistic relation between momentum and velocity. Two identities carry it: the mixed derivatives of the action commute, and the mechanical four-momentum is a gradient minus a potential.
@@ -28,9 +28,9 @@ What the article establishes, in five sentences. The parent's pair is the free p
 
 What is not new. The covariant Madelung pair for a charged scalar field, the mass shell in mechanical variables, the Lorentz force from a Hamilton–Jacobi equation and the vorticity of a charged flow are all standard. Added here: the ordering of the parent's own factorisation against one parameter, the exact form of the vorticity split with the energy-gradient term named, and the statement that the coupling changes the value of every leading term and the accuracy of none.
 
-The sign, stated once. The parent writes the coupling as $ϙ$ with $ϙ=-q$; its mass shell carries $+ϙ c a'_{t}$ in the mechanical energy and its transport carries $-q\vec A$ in the current. Every display here uses $q$, the electric charge, $\vec\pi=\vec\nabla_\Phi S-q\vec A$ and $\mathcal E=E-q\varphi$ with $E=-c\,\partial_{r'_{t}}S$.
+The sign, stated once. The parent writes the coupling as $ϙ$ with $ϙ=-q$; its mass shell carries $+ϙ c a'_{t}$ in the mechanical energy and its transport carries $-q\vec A$ in the current. Every display here uses $q$, the electric charge, $\vec\pi=\vec\nabla_\Phi S-q\vec A$ and $\mathcal E=E-q\omicron_{\mathrm{pot}}$ with $E=-c\,\partial_{r'_{t}}S$.
 
-Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iq\tilde A_\mu}{h}$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ with $r'_{t}=ct'$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=\frac{2\pi mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$.
+Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$; the connection $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_{t}+\vec A$; $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iq\tilde A_\mu}{h}$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ with $r'_{t}=ct'$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=\frac{2\pi mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$.
 
 ## The Factorisation and the Pair
 
@@ -48,9 +48,9 @@ and the parenthesis is central, so the derivation is a computation among scalars
 The pair, in the article's letters.
 
 $$
-\Bigl(\frac{\partial S}{\partial r'_{t}}+\frac{q\varphi}{c}\Bigr)^{2}-\lvert\vec\nabla_\Phi S-q\vec A\rvert^{2}=m^{2}c^{2}-\frac{h^{2}}{4\pi^{2}}\frac{\Box_\Phi \varrho}{\varrho},
+\Bigl(\frac{\partial S}{\partial r'_{t}}+\frac{q\omicron_{\mathrm{pot}}}{c}\Bigr)^{2}-\lvert\vec\nabla_\Phi S-q\vec A\rvert^{2}=m^{2}c^{2}-\frac{h^{2}}{4\pi^{2}}\frac{\Box_\Phi \varrho}{\varrho},
 \qquad
-\vec\nabla_\Phi\cdot\bigl(\rho_{\mathrm{num}}\vec\pi\bigr)+\frac{\partial}{\partial r'_{t}}\Bigl(\rho_{\mathrm{num}}\Bigl(\partial_{r'_{t}}S+\frac{q\varphi}{c}\Bigr)\Bigr)=0 .
+\vec\nabla_\Phi\cdot\bigl(\rho_{\mathrm{num}}\vec\pi\bigr)+\frac{\partial}{\partial r'_{t}}\Bigl(\rho_{\mathrm{num}}\Bigl(\partial_{r'_{t}}S+\frac{q\omicron_{\mathrm{pot}}}{c}\Bigr)\Bigr)=0 .
 $$
 
 The first is the amplitude equation and the second the transport equation, and both are the free ones with the two substitutions. The temporal bracket of the second is $-\mathcal E/c$, because $E=-c\,\partial_{r'_{t}}S$, so the two equations already speak in the mechanical variables and the sign is the one the free pair has.
@@ -62,7 +62,7 @@ $$
 \qquad
 Q_{\mathrm{qnt}}=-\frac{h^{2}}{8\pi^{2}m}\frac{\Box_\Phi \varrho}{\varrho},
 \qquad
-\mathcal E=E-q\varphi .
+\mathcal E=E-q\omicron_{\mathrm{pot}} .
 $$
 
 The quantum potential is the free one, and the parent's reason is one line: it is built from the scale, the scale is inert under the gauge group, and no derivative of the potential reaches it. The coupling shifts the two leading terms and leaves the order-two term alone.
@@ -105,7 +105,7 @@ $$
 
 so the velocity is the mechanical momentum over the mechanical energy, and the bound is the shell's own content.
 
-The gradient of the shell is the Lorentz force, and the identity is exact. With $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$,
+The gradient of the shell is the Lorentz force, and the identity is exact. With $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$,
 
 $$
 -\frac{c^{2}}{2\mathcal E}\,\partial_{i}\Bigl(\frac{\mathcal E^{2}}{c^{2}}-\lvert\vec\pi\rvert^{2}\Bigr)=\frac{d\pi_{i}}{dt'}-q\bigl(\vec E+\vec v\times\vec B\bigr)_{i},
@@ -191,7 +191,7 @@ It changes one thing qualitatively, and it is the vorticities. In the non-relati
 
 ## Verification
 
-The Lorentz-force identity was checked with no assumption on the potentials. With arbitrary $S$, $\varphi$ and $\vec A$, $\vec\pi=\vec\nabla_\Phi S-q\vec A$, $\mathcal E=-\partial_{t'}S-q\varphi$ and $\vec v=c^{2}\vec\pi/\mathcal E$, the three components of
+The Lorentz-force identity was checked with no assumption on the potentials. With arbitrary $S$, $\omicron_{\mathrm{pot}}$ and $\vec A$, $\vec\pi=\vec\nabla_\Phi S-q\vec A$, $\mathcal E=-\partial_{t'}S-q\omicron_{\mathrm{pot}}$ and $\vec v=c^{2}\vec\pi/\mathcal E$, the three components of
 
 $$
 -\frac{c^{2}}{2\mathcal E}\partial_{i}\Bigl(\frac{\mathcal E^{2}}{c^{2}}-\lvert\vec\pi\rvert^{2}\Bigr)-\Bigl(\frac{d\pi_{i}}{dt'}-q(\vec E+\vec v\times\vec B)_{i}\Bigr)
@@ -203,7 +203,7 @@ The vorticity was checked by direct differentiation. $\vec\nabla_\Phi\times(\vec
 
 The quantum potential was checked for invariance. It contains $\varrho$ and $\Box_\Phi \varrho$; under the gauge transformation the scale is unchanged, so $Q_{\mathrm{qnt}}$ is unchanged term for term.
 
-The pair was checked against the free pair. Setting $\varphi=0$ and $\vec A=0$ returns the free article's two boxed lines term for term, so the coupling enters as a substitution and not as a modification.
+The pair was checked against the free pair. Setting $\omicron_{\mathrm{pot}}=0$ and $\vec A=0$ returns the free article's two boxed lines term for term, so the coupling enters as a substitution and not as a modification.
 
 What was not checked. No numerical solution of the coupled time-dependent problem was run, no flux was computed, and no helices were integrated. The claims are about terms and identities, and both were verified as algebra.
 
@@ -224,10 +224,10 @@ Order two is the free quantum potential, with the free size in both denominators
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ | The parent's polar word on the central class |
 | $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | The scale; the proper density |
 | $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, $E=-c\,\partial_{r'_{t}}S$ | The action; the canonical energy |
-| $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$ | The connection |
+| $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_{t}+\vec A$ | The connection |
 | $q$; the parent's $ϙ=-q$ | The electric charge; the parent's coupling |
 | $\vec\pi=\vec\nabla_\Phi S-q\vec A$ | Mechanical momentum |
-| $\mathcal E=E-q\varphi$ | Mechanical energy |
+| $\mathcal E=E-q\omicron_{\mathrm{pot}}$ | Mechanical energy |
 | $\vec v=c^{2}\vec\pi/\mathcal E$ | Kinematic velocity |
 | $\vec V=\vec\pi/m$ | Current velocity |
 | $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}\mathcal E/(mc^{2})$ | Charge density |

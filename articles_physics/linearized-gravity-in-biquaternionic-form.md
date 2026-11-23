@@ -219,12 +219,12 @@ with the exact expansion $g_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\ra
 
 The construction above is pure geometry: it linearizes the frame and reads the metric perturbation off it. Where matter attaches to that frame, the parent article's attachment is the one-sided covariant derivative $D_\mu\tilde{Ξ} = \partial/\partial x_\mu\,\tilde{Ξ} + \vec\Gamma_\mu\tilde{Ξ}$ on an element-valued Dirac field, with $\vec\Gamma_\mu$ the spin connection. An external source shows that this attachment has two inequivalent forms, and the difference is not a higher-order subtlety here.
 
-For the standard vierbein coupling of a Dirac fermion to gravity, gauging the flat equation and varying the gauged action **do not commute**: the varied equation carries an anticommutator term between the generator basis operator of a coordinate and the Lorentz generator, which the substituted equation does not. The generator basis operator of the coordinate $x_\mu$ is the frame basis operator $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(\eta)=y$, and $S_{ab}$ is the Lorentz generator those basis operators build, the quarter-commutator displayed in *Matrix Representations Conventions*, §*The Clifford Structure*. The relevant commutator is, with $\varepsilon=(1,-1,-1,-1)$ the plain weight of the frame,
+For the standard vierbein coupling of a Dirac fermion to gravity, gauging the flat equation and varying the gauged action **do not commute**: the varied equation carries an anticommutator term between the generator basis operator of a coordinate and the Lorentz generator, which the substituted equation does not. The generator basis operator of the coordinate $x_\mu$ is the frame basis operator $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\mu)}}$, with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$, and $S_{ab}$ is the Lorentz generator those basis operators build, the quarter-commutator displayed in *Matrix Representations Conventions*, §*The Clifford Structure*. The relevant commutator is, with $\varepsilon=(1,-1,-1,-1)$ the plain weight of the frame,
 
 $$
-\bigl[L_{e_c}R_{\mathrm{axf},\vec e_{\nu(c)}},S_{ab}\bigr]
-=\varepsilon_c\delta_{ca}\,L_{e_b}R_{\mathrm{axf},\vec e_{\nu(b)}}
--\varepsilon_c\delta_{cb}\,L_{e_a}R_{\mathrm{axf},\vec e_{\nu(a)}},
+\bigl[L_{e_c}R_{\mathrm{axf},\vec e_{\mathrm{spt}(c)}},S_{ab}\bigr]
+=\varepsilon_c\delta_{ca}\,L_{e_b}R_{\mathrm{axf},\vec e_{\mathrm{spt}(b)}}
+-\varepsilon_c\delta_{cb}\,L_{e_a}R_{\mathrm{axf},\vec e_{\mathrm{spt}(a)}},
 $$
 
 which is nonzero whenever $c$ equals exactly one of $a,b$, rather than vanishing (J. Fredsted, arXiv:1906.12200v3 [physics.gen-ph], 2019; recorded, with its world-index repair, in *Curved Spacetime and the Biquaternion Framework*). Both the frame perturbation $\delta\tilde{E}_{\Phi,\mu}$ and the spin connection $\vec\Gamma_\mu$ are **first order** in the perturbation of this article, and the discrepancy is linear in the connection, so it is first order as well: it does not disappear as the perturbation is taken small. A linearized system that couples a Dirac field to $h_{\mu\nu}$ therefore has to say which of the two forms it linearizes, and the corpus's own curved Dirac equation — the one-sided chirality pair displayed in *The Legacy Pauli Gamma Formulation* — is the substituted one.
@@ -443,7 +443,7 @@ The four basis operators in the product carry $i^4=1$, so the single $i$ of the 
 
 $\gamma_5$ is the reference-frame basis operator of the chirality operator. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$, is the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$. It is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the real left–right products $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}}$, without the central $i$, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the real left–right products $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\mu)}}$, without the central $i$, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The identities the body and the companions cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$ and in the frame of this section — not the body's full metric —
 
@@ -542,7 +542,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $\bar{h}_{00}=h_{00}+\tfrac12h$, $\bar{h}_{\eta l}=h_{\eta l}-\tfrac12h\,\delta_{\eta l}$, $\bar{h} = -h$ | Trace-reversed perturbation; here the overbar marks trace reversal, not complex conjugation |
 | $\bar{\delta\tilde{E}_{\Phi}}_\mu = \delta\tilde{E}_{\Phi,\mu} - \tfrac14 h\,\varepsilon_\mu$ | Trace-reversed frame perturbation |
 | $\vec G \in \mathrm{span}_{\mathbb{R}}\{\vec e_\eta, i\vec e_\eta\}$ | Infinitesimal local Lorentz generator (complex pure vector) |
-| $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}$ | The generator basis operator of the coordinate $x_\mu$, in the axis-free display of *Matrix Representations Conventions*; it is a basis operator, that is, an operator |
+| $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\mu)}}$ | The generator basis operator of the coordinate $x_\mu$, in the axis-free display of *Matrix Representations Conventions*; it is a basis operator, that is, an operator |
 | $\tilde Q_{\Phi,\mathrm d} \in \mathbb{B}_{\Phi}$ | Gauge four-vector, $\delta\tilde{E}_{\Phi,\mu} \mapsto \delta\tilde{E}_{\Phi,\mu} - \partial/\partial x_\mu\,\tilde Q_{\Phi,\mathrm d}$ |
 | $h_{\mu\nu} \mapsto h_{\mu\nu} - \partial/\partial x_\mu\,\zeta_\nu - \partial/\partial x_\nu\,\zeta_\mu$, $\zeta_\nu = \langle\tilde Q_{\Phi,\mathrm d},\varepsilon_\nu\rangle_{\natural}$ | Linearized gauge transformation |
 | $\mathrm{Riem}_{\mu\nu\rho\sigma}$ | Linearized Riemann tensor (gauge-invariant field strength) |

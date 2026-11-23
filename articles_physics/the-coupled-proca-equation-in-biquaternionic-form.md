@@ -242,7 +242,7 @@ $$
 \qquad\text{in the article's units,}
 $$
 
-that is $E\mapsto E+ϙ c\,a'_t$ with $E=h\nu$. The numerical check is exact: the determinant vanishes at the shifted frequency to machine precision ($2\times10^{-48}$) and does not vanish at the unshifted one. The particle and the antiparticle move in opposite directions, which is the algebraic statement that the two signs of $\omega$ are the two charges.
+that is $E\mapsto E+ϙ c\,a'_t$ with $E=hf_{\mathrm{frq}}$. The numerical check is exact: the determinant vanishes at the shifted frequency to machine precision ($2\times10^{-48}$) and does not vanish at the unshifted one. The particle and the antiparticle move in opposite directions, which is the algebraic statement that the two signs of $\omega$ are the two charges.
 
 **The vector potential is not a shift.** For a purely magnetic constant potential, $\tilde C$ is a pure vector and does not commute with the units; the determinant is no longer a function of $\omega^2$, the two transverse roots separate, and the longitudinal root is the one the constraint fixes. The article records the structure and not a closed formula: the roots are the zeros of a $4\times4$ determinant and this article does not solve it in general.
 

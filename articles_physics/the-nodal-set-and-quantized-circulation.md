@@ -108,7 +108,7 @@ The sign of the charge is the orientation of the loop and nothing else. Reversin
 
 ### The current is regular where the velocity is not
 
-The velocity diverges at the node and the current does not, because the density vanishes faster. With a phase winding $n$ the gradient of the phase is $\vec\nabla_\Phi\theta_{\mathrm{phs}}=n\,\hat\varphi/r$ in cylindrical coordinates about the axis, so the velocity's magnitude is
+The velocity diverges at the node and the current does not, because the density vanishes faster. With a phase winding $n$ the gradient of the phase is $\vec\nabla_\Phi\theta_{\mathrm{phs}}=n\,\hat{\omicron_{\mathrm{azi}}}/r$ in cylindrical coordinates about the axis, so the velocity's magnitude is
 
 $$
 \lvert\vec v\rvert=\frac{h\lvert n\rvert}{2\pi m\,r},
@@ -161,10 +161,10 @@ The sign is the corpus's and it is worth a sentence. A negative quantum energy d
 A phase winding and a real amplitude turn the field equation into two real equations, and the node is compatible with both. Write
 
 $$
-\tilde\Xi=f(r)\,e^{in\varphi}\,e^{-ik_t r'_t}\,e_t
+\tilde\Xi=f(r)\,e^{in\omicron_{\mathrm{ang}}}\,e^{-ik_t r'_t}\,e_t
 $$
 
-with $f$ real and positive away from the axis, $r$ the distance from the axis, $\varphi$ the angle about it and $k_t$ the temporal wave number of the ansatz, the energy being $E=\frac{h}{2\pi} c\,k_t$. The action is $S_{\tilde\Xi}=\frac{h}{2\pi}(n\varphi-k_t r'_t)$, so $\vec\nabla_\Phi S_{\tilde\Xi}=\frac{h}{2\pi} n\,\hat\varphi/r$ and $\partial S_{\tilde\Xi}/\partial r'_t=-\frac{h}{2\pi} k_t$.
+with $f$ real and positive away from the axis, $r$ the distance from the axis, $\omicron_{\mathrm{ang}}$ the angle about it and $k_t$ the temporal wave number of the ansatz, the energy being $E=\frac{h}{2\pi} c\,k_t$. The action is $S_{\tilde\Xi}=\frac{h}{2\pi}(n\omicron_{\mathrm{ang}}-k_t r'_t)$, so $\vec\nabla_\Phi S_{\tilde\Xi}=\frac{h}{2\pi} n\,\hat{\omicron_{\mathrm{azi}}}/r$ and $\partial S_{\tilde\Xi}/\partial r'_t=-\frac{h}{2\pi} k_t$.
 
 The transport equation is satisfied identically. It reads $\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi})-\partial(\rho_{\mathrm{num}}\partial S_{\tilde\Xi}/\partial r'_t)/\partial r'_t=0$; the first term is the divergence of a purely azimuthal field whose magnitude depends on $r$ alone, and the second is the time derivative of a quantity that does not depend on time. Both vanish.
 
@@ -288,7 +288,7 @@ What remains open is dynamical: existence, stability and interaction of nodal so
 | $\kappa_1=h/m=2\pi c/k_m$ | Quantum of circulation |
 | $n$ | Winding number, an integer; the letter is booked here for the winding and is not the Matsubara index |
 | $r$ | Distance from the nodal axis |
-| $\varphi$ | Angle about the axis |
+| $\omicron_{\mathrm{ang}}$ | Angle about the axis |
 | $f(r)$ | Core amplitude of the vortex ansatz |
 | $A$ | Slope of the linear core, $f=Ar$ |
 | $k_t$ | Temporal wave number of the ansatz, $E=\frac{h}{2\pi} c k_t$ |

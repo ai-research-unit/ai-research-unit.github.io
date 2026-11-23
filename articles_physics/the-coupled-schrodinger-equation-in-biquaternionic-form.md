@@ -19,15 +19,15 @@ This article puts the electromagnetic connection into that equation. The replace
 $$
 \tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi,
 \qquad
-\tilde A_\Phi=i\,\frac{\varphi}{c}\,e_t+\vec A,
+\tilde A_\Phi=i\,\frac{\omicron_{\mathrm{pot}}}{c}\,e_t+\vec A,
 $$
 
-with $\varphi$ the electric potential and $\vec A$ the vector potential, both real, and $ϙ$ the coupling the gauge principle introduces. The coupled equation is
+with $\omicron_{\mathrm{pot}}$ the electric potential and $\vec A$ the vector potential, both real, and $ϙ$ the coupling the gauge principle introduces. The coupled equation is
 
 $$
 \boxed{\;i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi}\,D_\eta\big)^{2}\tilde\Xi,\;}
 \qquad
-D_t=\partial_{t'}-\frac{2\pi i\,ϙ}{h}\varphi,
+D_t=\partial_{t'}-\frac{2\pi i\,ϙ}{h}\omicron_{\mathrm{pot}},
 \qquad
 D_\eta=\partial_\eta+\frac{2\pi i\,ϙ}{h}A_\eta,
 $$
@@ -45,7 +45,7 @@ which is the standard Schrödinger equation of a charged scalar field, written w
 *Fourth, the constant setting's coupling is a shift of two numbers.* When $\tilde H_\Psi$ is a constant element and the connection is constant, the coupled equation is the free equation with
 
 $$
-h_t\longmapsto h_t-ϙ\varphi,
+h_t\longmapsto h_t-ϙ\omicron_{\mathrm{pot}},
 \qquad
 \vec h_\Psi\longmapsto\vec h_\Psi-q\vec A .
 $$
@@ -68,12 +68,12 @@ $$
 a'_t\in\mathbb{R},\quad\vec A\in\mathbb{R}^{3},
 $$
 
-and the article writes $\varphi:=c\,a'_t$ for the electric potential, so that $ϙ\varphi$ is an energy. This is the same identification the Klein–Gordon companion makes when it writes the four-momentum shift as $\frac{h}{2\pi} c\,P_t=E+ϙ\varphi$ and $\frac{h}{2\pi}\vec P=\vec p-q\vec A$; the letters differ and the object does not.
+and the article writes $\omicron_{\mathrm{pot}}:=c\,a'_t$ for the electric potential, so that $ϙ\omicron_{\mathrm{pot}}$ is an energy. This is the same identification the Klein–Gordon companion makes when it writes the four-momentum shift as $\frac{h}{2\pi} c\,P_t=E+ϙ\omicron_{\mathrm{pot}}$ and $\frac{h}{2\pi}\vec P=\vec p-q\vec A$; the letters differ and the object does not.
 
 **The two signs, and why they differ.** In the $t'$ language the covariant derivative's slots are
 
 $$
-D_t=\partial_{t'}-\frac{2\pi i\,ϙ}{h}\varphi,
+D_t=\partial_{t'}-\frac{2\pi i\,ϙ}{h}\omicron_{\mathrm{pot}},
 \qquad
 D_\eta=\partial_\eta+\frac{2\pi i\,ϙ}{h}A_\eta,
 \qquad
@@ -82,9 +82,9 @@ $$
 
 The temporal slot carries a minus where the spatial slots carry a plus. The difference is not a choice of this article and it is not a sign error: $\tilde A_\Phi$'s temporal coefficient is imaginary, $\tilde\nabla_\Phi$'s temporal slot carries the metric $i$ of $\partial/\partial R_t=-i\partial_{r'_t}$, and after the two factors of $i$ are multiplied the temporal connection enters with the opposite sign to the spatial ones. The Klein–Gordon companion's four-momentum shift carries the same sign difference, and its covariant square carries it twice.
 
-**Hermiticity.** Each $D_\eta$ is anti-Hermitian for the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ when $A_\eta$ is real, since $D_\eta^{\dagger}=-D_\eta$; each $D_\eta^{2}$ is therefore Hermitian, and $(D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)$ is a sum of moduli. The temporal combination is Hermitian in the same sense, $i \frac{h}{2\pi} D_t=i \frac{h}{2\pi}\partial_{t'}+ϙ\varphi$, because the second term is a real multiplication. The two facts together are what make the equation's operator Hermitian and its action real.
+**Hermiticity.** Each $D_\eta$ is anti-Hermitian for the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ when $A_\eta$ is real, since $D_\eta^{\dagger}=-D_\eta$; each $D_\eta^{2}$ is therefore Hermitian, and $(D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)$ is a sum of moduli. The temporal combination is Hermitian in the same sense, $i \frac{h}{2\pi} D_t=i \frac{h}{2\pi}\partial_{t'}+ϙ\omicron_{\mathrm{pot}}$, because the second term is a real multiplication. The two facts together are what make the equation's operator Hermitian and its action real.
 
-**What the sign of $ϙ$ means.** With these conventions the mechanical momentum is $\vec\pi=-i \frac{h}{2\pi}\nabla-q\vec A$ and the potential energy enters as $-ϙ\varphi$, which is $q\varphi$ with $q=-ϙ$. That is the standard equation with the electric charge, and the corpus's kinetic momentum $\vec p-q\vec A$ is the same display and not another one. The article keeps the companions' sign and does not silently flip it; every formula below is written in terms of $ϙ$, so a reader who prefers the older letter reads $ϙ$ as minus the charge and nothing else changes.
+**What the sign of $ϙ$ means.** With these conventions the mechanical momentum is $\vec\pi=-i \frac{h}{2\pi}\nabla-q\vec A$ and the potential energy enters as $-ϙ\omicron_{\mathrm{pot}}$, which is $q\omicron_{\mathrm{pot}}$ with $q=-ϙ$. That is the standard equation with the electric charge, and the corpus's kinetic momentum $\vec p-q\vec A$ is the same display and not another one. The article keeps the companions' sign and does not silently flip it; every formula below is written in terms of $ϙ$, so a reader who prefers the older letter reads $ϙ$ as minus the charge and nothing else changes.
 
 ## The Carrier and the Phase Symmetry
 
@@ -113,10 +113,10 @@ $$
 \qquad\text{that is}\qquad
 \vec A\longmapsto\vec A-\vec\nabla_\Phi\Gamma,
 \qquad
-\varphi\longmapsto\varphi+\partial_{t'}\Gamma .
+\omicron_{\mathrm{pot}}\longmapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma .
 $$
 
-The two transformation laws are one law read in two slots, and they must be kept together: a covariant derivative is covariant for exactly one pair of them. The sign of $\varphi$'s shift is opposite to the sign of $\vec A$'s because $\varphi$ is the temporal component of a covector and $\partial_{t'}$ is the temporal derivative with the metric $i$ absorbed; it is the same fact as the opposite signs in $D_t$ and $D_\eta$.
+The two transformation laws are one law read in two slots, and they must be kept together: a covariant derivative is covariant for exactly one pair of them. The sign of $\omicron_{\mathrm{pot}}$'s shift is opposite to the sign of $\vec A$'s because $\omicron_{\mathrm{pot}}$ is the temporal component of a covector and $\partial_{t'}$ is the temporal derivative with the metric $i$ absorbed; it is the same fact as the opposite signs in $D_t$ and $D_\eta$.
 
 ## The Coupled Equation
 
@@ -129,14 +129,14 @@ $$
 which written out is
 
 $$
-i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi+ϙ\varphi\,\tilde\Xi=\frac{1}{2m}\sum_\eta\Big(-i \frac{h}{2\pi}\,\partial_\eta+ϙ A_\eta\Big)^{2}\tilde\Xi .
+i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi=\frac{1}{2m}\sum_\eta\Big(-i \frac{h}{2\pi}\,\partial_\eta+ϙ A_\eta\Big)^{2}\tilde\Xi .
 $$
 
 The left side is the covariant time derivative times $i \frac{h}{2\pi}$; the right side is the kinetic energy written with the mechanical momentum $\vec\pi_\eta=-i \frac{h}{2\pi} D_\eta=-i \frac{h}{2\pi}\partial_\eta+ϙA_\eta$. Both sides are built from the same object, and that is the whole of the prescription.
 
 **Why the equation has four copies and no more.** $D_\eta$ has central coefficients, so it commutes with the units; the operator therefore acts on each of the four complex coefficients of $\tilde\Xi$ separately and identically. The coupled theory is four copies of the standard charged scalar field sharing one connection and one charge, with no equation relating the four coefficients. This is the free article's fourfold structure surviving the coupling, and it is the scalar case's answer to the carrier question: the coupling forces no enlargement because it is central.
 
-**The equation is linear, and its operator is Hermitian.** The covariant derivative is complex-linear, so the equation is linear over $\mathbb{C}$ and no term is quadratic in $\tilde\Xi$. Since $D_\eta$ is anti-Hermitian and $D_\eta^{2}$ Hermitian, and since $i \frac{h}{2\pi} D_t$ is Hermitian, the operator on the right is Hermitian for the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ and the flow it generates preserves $n$. The one hypothesis is that $\varphi$ and $\vec A$ are real, which is the material-sector condition on the connection and not a further assumption.
+**The equation is linear, and its operator is Hermitian.** The covariant derivative is complex-linear, so the equation is linear over $\mathbb{C}$ and no term is quadratic in $\tilde\Xi$. Since $D_\eta$ is anti-Hermitian and $D_\eta^{2}$ Hermitian, and since $i \frac{h}{2\pi} D_t$ is Hermitian, the operator on the right is Hermitian for the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ and the flow it generates preserves $n$. The one hypothesis is that $\omicron_{\mathrm{pot}}$ and $\vec A$ are real, which is the material-sector condition on the connection and not a further assumption.
 
 **What the equation is not.** It is not the second-order covariant d'Alembertian restricted to a slowly varying field. The Klein–Gordon companion records that the covariant square of the quaternion-conjugate gradient differs from the sum of the covariant squares by a curvature term; nothing of that kind arises here, because the Schrödinger equation is first order in time and the kinetic operator is a sum of squares of first-order operators with no $\natural$ on the outside. The curvature enters the Schrödinger equation only through the commutator of two covariant derivatives, and that commutator is a multiplication by $\frac{2\pi iϙ}{h}(\partial_\eta A_\zeta-\partial_\zeta A_\eta)$, which is the field strength and is not a differential operator at all. The commutation of $D_\eta$ and $D_\zeta$ is therefore a magnetic-field statement and never a constraint on the carrier.
 
@@ -152,7 +152,7 @@ $$
 
 The two gauge gradients cancel because one comes from the derivative of the central unit and the other from the transformation of the connection. Nothing else in the computation can cancel them, which is why the connection's transformation law is forced rather than chosen.
 
-**The second derivative, and the temporal slot.** Applying $D'_\eta$ once more multiplies by $\lambda$ again, since $\lambda$ is central and passes through; and the temporal slot behaves the same way, with $\varphi$'s shift opposite to $\vec A$'s and the sign in $D_t$ opposite to the sign in $D_\eta$. Hence
+**The second derivative, and the temporal slot.** Applying $D'_\eta$ once more multiplies by $\lambda$ again, since $\lambda$ is central and passes through; and the temporal slot behaves the same way, with $\omicron_{\mathrm{pot}}$'s shift opposite to $\vec A$'s and the sign in $D_t$ opposite to the sign in $D_\eta$. Hence
 
 $$
 D'^{2}_\eta(\lambda\tilde\Xi)=\lambda\,D_\eta^{2}\tilde\Xi,
@@ -216,15 +216,15 @@ so the conservation of $J$ is the integrability condition of the connection's ow
 **The shift.** Let $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ be a constant Hermitian element and let the connection be constant. The coupled equation is then an ordinary differential equation, and it is the free equation with the Hamiltonian replaced by
 
 $$
-\tilde H^{\mathrm{gco}}_\Psi=\tilde H_\Psi-ϙ\varphi\,e_t+i\,ϙ\vec A
-=\big(h_t-ϙ\varphi\big)e_t+i\big(\vec h_\Psi-q\vec A\big).
+\tilde H^{\mathrm{gco}}_\Psi=\tilde H_\Psi-ϙ\omicron_{\mathrm{pot}}\,e_t+i\,ϙ\vec A
+=\big(h_t-ϙ\omicron_{\mathrm{pot}}\big)e_t+i\big(\vec h_\Psi-q\vec A\big).
 $$
 
-The element has the same form as $\tilde H_\Psi$, with two real numbers shifted, so every statement of the free article and of its polar companion applies to it unchanged. The phase runs at $-(h_t-ϙ\varphi)\frac{2\pi}{h}$, the rotor's axis is $\vec h_\Psi-q\vec A$, every carried direction turns at $2|\vec h_\Psi-q\vec A|\frac{2\pi}{h}$, and the frozen parameters are the field's scale and rapidity as before.
+The element has the same form as $\tilde H_\Psi$, with two real numbers shifted, so every statement of the free article and of its polar companion applies to it unchanged. The phase runs at $-(h_t-ϙ\omicron_{\mathrm{pot}})\frac{2\pi}{h}$, the rotor's axis is $\vec h_\Psi-q\vec A$, every carried direction turns at $2|\vec h_\Psi-q\vec A|\frac{2\pi}{h}$, and the frozen parameters are the field's scale and rapidity as before.
 
-**How to read the two shifts.** $\vec h_\Psi$ is the free field's momentum and $h_t$ its energy; after the coupling the coefficients are the mechanical momentum and the canonical energy, $h_t-ϙ\varphi$. The first is the canonical-to-kinetic dictionary in the spatial slot, the second in the temporal one, and they carry opposite signs for the reason §*Conventions and the Sign Bookkeeping* gives. A constant potential therefore translates every frequency by $\frac{2\pi ϙ\varphi}{h}$ and every rotor axis by $ϙ\vec A$, and it resizes nothing: the gap between the two eigenvalues is $2|\vec h_\Psi-q\vec A|$ and depends on the vector potential alone.
+**How to read the two shifts.** $\vec h_\Psi$ is the free field's momentum and $h_t$ its energy; after the coupling the coefficients are the mechanical momentum and the canonical energy, $h_t-ϙ\omicron_{\mathrm{pot}}$. The first is the canonical-to-kinetic dictionary in the spatial slot, the second in the temporal one, and they carry opposite signs for the reason §*Conventions and the Sign Bookkeeping* gives. A constant potential therefore translates every frequency by $\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$ and every rotor axis by $ϙ\vec A$, and it resizes nothing: the gap between the two eigenvalues is $2|\vec h_\Psi-q\vec A|$ and depends on the vector potential alone.
 
-**No gauge invariance is lost.** The two shifts are consistent with the gauge transformation, and the check is one line: under $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ the phase rate would appear to change, but the field's phase changes by $\frac{2\pi ϙ\Gamma}{h}$ in the same step, and the two changes are equal and opposite. In the constant setting the gauge function must be at most linear in $t'$ for the connection to stay constant, and for a linear one the shift of $\varphi$ is a constant translation of the phase rate — which is exactly the translation the field's own phase supplies.
+**No gauge invariance is lost.** The two shifts are consistent with the gauge transformation, and the check is one line: under $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$ the phase rate would appear to change, but the field's phase changes by $\frac{2\pi ϙ\Gamma}{h}$ in the same step, and the two changes are equal and opposite. In the constant setting the gauge function must be at most linear in $t'$ for the connection to stay constant, and for a linear one the shift of $\omicron_{\mathrm{pot}}$ is a constant translation of the phase rate — which is exactly the translation the field's own phase supplies.
 
 ## The Non-Relativistic Limit of the Coupled Klein–Gordon Equation
 
@@ -236,13 +236,13 @@ $$
 i \frac{h}{2\pi}\,D_t\tilde\Xi_{\mathrm{nr}}\simeq\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi} D_\eta\big)^{2}\tilde\Xi_{\mathrm{nr}},
 $$
 
-with the same $D_\eta$ and the same $D_t$ as above. The sign check is the one that matters: the temporal slot of the Klein–Gordon equation carries $+\frac{2\pi iϙ}{h}A_t$ with $A_t=i\varphi/c$, and after the mass phase is removed it becomes $\partial_{t'}-\frac{2\pi iϙ}{h}\varphi$, which is this article's $D_t$. Had the metric sign been dropped, the potential would have entered with the wrong sign in one slot and the limit would not close.
+with the same $D_\eta$ and the same $D_t$ as above. The sign check is the one that matters: the temporal slot of the Klein–Gordon equation carries $+\frac{2\pi iϙ}{h}A_t$ with $A_t=i\omicron_{\mathrm{pot}}/c$, and after the mass phase is removed it becomes $\partial_{t'}-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}}$, which is this article's $D_t$. Had the metric sign been dropped, the potential would have entered with the wrong sign in one slot and the limit would not close.
 
 **What the limit does not preserve.** The Klein–Gordon density is the temporal slot of its current and changes sign with the branch; the Schrödinger density is a norm. The limit therefore keeps the positive-frequency branch and discards the other, and the discarded branch is not a small correction — it is a second field. The same remark is the free article's, and the coupling does not alter it.
 
 ## What the Coupling Adds and What It Does Not
 
-**Adds.** One equation and one covariant derivative in place of four substitution rules. A current that is real, conserved and gauge invariant, with no adjoint row. A covariance proof that is three lines and holds for a general element. The constant setting's dictionary, $h_t\mapsto h_t-ϙ\varphi$ and $\vec h_\Psi\mapsto\vec h_\Psi-q\vec A$, as the whole of minimal coupling where there are no derivatives. And the closure statement, which is the article's structural result: the scalar case's $U(1)$ current lives inside the algebra.
+**Adds.** One equation and one covariant derivative in place of four substitution rules. A current that is real, conserved and gauge invariant, with no adjoint row. A covariance proof that is three lines and holds for a general element. The constant setting's dictionary, $h_t\mapsto h_t-ϙ\omicron_{\mathrm{pot}}$ and $\vec h_\Psi\mapsto\vec h_\Psi-q\vec A$, as the whole of minimal coupling where there are no derivatives. And the closure statement, which is the article's structural result: the scalar case's $U(1)$ current lives inside the algebra.
 
 **Does not add.** No new prediction; the equation is the standard one. No new solution; the coupled constant setting's solution is the free propagator with shifted numbers, and the operator setting's solutions are the standard ones. No enlargement of the carrier; the coupling is central and the four copies are the free four copies.
 
@@ -263,12 +263,12 @@ The coupled Schrödinger equation is
 $$
 i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi} D_\eta\big)^{2}\tilde\Xi,
 \qquad
-D_t=\partial_{t'}-\frac{2\pi i\,ϙ}{h}\varphi,
+D_t=\partial_{t'}-\frac{2\pi i\,ϙ}{h}\omicron_{\mathrm{pot}},
 \qquad
 D_\eta=\partial_\eta+\frac{2\pi i\,ϙ}{h}A_\eta,
 $$
 
-with $\tilde\Xi\in\mathbb{B}$ one general element, $ϙ$ the coupling and $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ the material connection. The two signs of the two slots differ by the metric, not by a convention, and the mechanical momentum is $\vec\pi=-i \frac{h}{2\pi}\nabla-q\vec A$.
+with $\tilde\Xi\in\mathbb{B}$ one general element, $ϙ$ the coupling and $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ the material connection. The two signs of the two slots differ by the metric, not by a convention, and the mechanical momentum is $\vec\pi=-i \frac{h}{2\pi}\nabla-q\vec A$.
 
 The field remains one element of $\mathbb{B}$ and the coupling changes nothing about the carrier, because the connection's coefficients are central and left multiplication by them is scalar multiplication. The theory is four copies of the standard charged scalar field sharing one connection.
 
@@ -284,7 +284,7 @@ $$
 
 real, conserved on solutions, and gauge invariant. It closes inside the algebra, with no adjoint row and no fixed frame unit, and that is where the scalar case separates from the spinor one.
 
-In the constant setting the coupling is a shift of two numbers, $\tilde H^{\rm gco}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi-q\vec A)$, and the free flow applies to it unchanged. The coupled Schrödinger system is the non-relativistic limit of the coupled Klein–Gordon system, and the limit closes because the metric sign of the temporal slot is the same sign in both equations.
+In the constant setting the coupling is a shift of two numbers, $\tilde H^{\rm gco}_\Psi=(h_t-ϙ\omicron_{\mathrm{pot}})e_t+i(\vec h_\Psi-q\vec A)$, and the free flow applies to it unchanged. The coupled Schrödinger system is the non-relativistic limit of the coupled Klein–Gordon system, and the limit closes because the metric sign of the temporal slot is the same sign in both equations.
 
 ## Summary of Notation
 
@@ -298,18 +298,18 @@ In the constant setting the coupling is a shift of two numbers, $\tilde H^{\rm g
 | $t'$, $r'_t=c\,t'$ | The variable of the article and the parent's material time |
 | $\tilde\Xi\in\mathbb{B}$ | The field: one general element, eight real components |
 | $ϙ$ | The coupling constant; minus the electric charge of the older convention |
-| $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ | The material-sector connection; $\varphi$ and $\vec A$ real |
-| $\varphi=c\,a'_t$ | The electric potential, so that $ϙ\varphi$ is an energy |
+| $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ | The material-sector connection; $\omicron_{\mathrm{pot}}$ and $\vec A$ real |
+| $\omicron_{\mathrm{pot}}=c\,a'_t$ | The electric potential, so that $ϙ\omicron_{\mathrm{pot}}$ is an energy |
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | The covariant derivative |
-| $D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\varphi$, $D_\eta=\partial_\eta+\frac{2\pi iϙ}{h}A_\eta$ | Its slots in the $t'$ language |
+| $D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}}$, $D_\eta=\partial_\eta+\frac{2\pi iϙ}{h}A_\eta$ | Its slots in the $t'$ language |
 | $\vec\pi_\eta=-i \frac{h}{2\pi} D_\eta=-i \frac{h}{2\pi}\partial_\eta+ϙA_\eta$ | The mechanical momentum |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | The free Hermitian Hamiltonian |
-| $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi-q\vec A)$ | The coupled Hamiltonian of the constant setting |
+| $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\omicron_{\mathrm{pot}})e_t+i(\vec h_\Psi-q\vec A)$ | The coupled Hamiltonian of the constant setting |
 | $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | The density; $\rho=2n$ is the free article's |
 | $j_\eta$, $j_t=n$ | The particle current and its temporal component |
 | $\rho_{\mathrm{chg}}=ϙ n$, $\vec J=ϙ\vec j$ | The charge density and the charge current |
 | $\lambda=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge factor; $\Gamma$ real |
-| $\Gamma$ | The gauge function; $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$, $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ |
+| $\Gamma$ | The gauge function; $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$, $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$ |
 
 ## Further Reading
 

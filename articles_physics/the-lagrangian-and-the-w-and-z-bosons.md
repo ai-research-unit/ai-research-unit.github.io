@@ -9,20 +9,20 @@ Its place in the sector. The functional here is the gauge and scalar part of the
 The equation. The parent's equations are the Yang–Mills equations for $W_{a,\mu}$ and $B_\mu$ with a source,
 
 $$
-D_\nu W_{a,\mu\nu}=\frac{g}{2}\,\varphi^{\dagger}\tau_{a} i\!\overleftrightarrow{D_\mu}\varphi ,
+D_\nu W_{a,\mu\nu}=\frac{g}{2}\,\omicron_{\mathrm{hgs}}^{\dagger}\tau_{a} i\!\overleftrightarrow{D_\mu}\omicron_{\mathrm{hgs}} ,
 \qquad
-\partial_\nu B_{\mu\nu}=g_{\mathrm Y}\,Y_\varphi\,\varphi^{\dagger}i\!\overleftrightarrow{D_\mu}\varphi ,
+\partial_\nu B_{\mu\nu}=g_{\mathrm Y}\,Y_{\mathrm{hch}}\,\omicron_{\mathrm{hgs}}^{\dagger}i\!\overleftrightarrow{D_\mu}\omicron_{\mathrm{hgs}} ,
 $$
 
-where the right sides are the currents of the scalar doublet evaluated at its vacuum value, and the mass terms are what those currents become when $\varphi$ sits at the minimum of its potential.
+where the right sides are the currents of the scalar doublet evaluated at its vacuum value, and the mass terms are what those currents become when $\omicron_{\mathrm{hgs}}$ sits at the minimum of its potential.
 
 Three things are established.
 
-*First, the action.* With $W_{a,\mu\nu}$ and $B_{\mu\nu}$ the curvatures of $SU(2)_L\times\mathrm{U}(1)_Y$ and $\varphi$ the doublet,
+*First, the action.* With $W_{a,\mu\nu}$ and $B_{\mu\nu}$ the curvatures of $SU(2)_L\times\mathrm{U}(1)_Y$ and $\omicron_{\mathrm{hgs}}$ the doublet,
 
 $$
 S=\int d^4r\;\Bigl[-\tfrac14\sum_{a,\mu,\nu}W_{a,\mu\nu}W_{a,\mu\nu}-\tfrac14\sum_{\mu,\nu}B_{\mu\nu}B_{\mu\nu}
-+\sum_\mu\bigl(D_\mu\varphi\bigr)^{\dagger}\bigl(D_\mu\varphi\bigr)-V(\varphi^{\dagger}\varphi)\Bigr],
++\sum_\mu\bigl(D_\mu\omicron_{\mathrm{hgs}}\bigr)^{\dagger}\bigl(D_\mu\omicron_{\mathrm{hgs}}\bigr)-V(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})\Bigr],
 $$
 
 varying $W_{a,\mu}$ and $B_\mu$ gives the parent's equations with the scalar current as source, and evaluating the scalar at its minimum turns the kinetic term into a mass term for two of the four gauge fields.
@@ -43,11 +43,11 @@ The electroweak action is standard and is imported whole. What the corpus contri
 
 The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$, used for the fermion and scalar elements; the gauge fields are written in components, because the $SU(2)$ factor is not carried by a single algebra element.
 
-The group and the couplings. $SU(2)_L$ with coupling $g$ and generators $\tau_{a}=\sigma_{a}/2$ in the doublet; $\mathrm{U}(1)_Y$ with coupling $g_{\mathrm Y}$ and hypercharge $Y$. The doublet has $Y_\varphi=\tfrac12$ and $T_3=\pm\tfrac12$ on its two components.
+The group and the couplings. $SU(2)_L$ with coupling $g$ and generators $\tau_{a}=\sigma_{a}/2$ in the doublet; $\mathrm{U}(1)_Y$ with coupling $g_{\mathrm Y}$ and hypercharge $Y$. The doublet has $Y_{\mathrm{hch}}=\tfrac12$ and $T_3=\pm\tfrac12$ on its two components.
 
 The curvatures. $W_{a,\mu\nu}=\partial_\mu W_{a,\nu}-\partial_\nu W_{a,\mu}+g\sum_{b,c}\varepsilon_{abc}W_{b,\mu} W_{c,\nu}$ and $B_{\mu\nu}=\partial_\mu B_\nu-\partial_\nu B_\mu$, with $\partial_\mu=\partial/\partial R_\mu$.
 
-The vacuum. $\langle\varphi\rangle=(0,\;v/\sqrt2)^{T}$ with $v=246.22$ GeV; the potential is $V=\lambda(\varphi^{\dagger}\varphi-v^2/2)^2$, so that $\partial V/\partial\varphi^{\dagger}=0$ at the minimum and the mass of the radial mode is $\sqrt{2\lambda}\,v$.
+The vacuum. $\langle\omicron_{\mathrm{hgs}}\rangle=(0,\;v/\sqrt2)^{T}$ with $v=246.22$ GeV; the potential is $V=\lambda(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-v^2/2)^2$, so that $\partial V/\partial\omicron_{\mathrm{hgs}}^{\dagger}=0$ at the minimum and the mass of the radial mode is $\sqrt{2\lambda}\,v$.
 
 The sign convention. The curvature terms enter with $-\tfrac14$, the scalar kinetic term with a plus sign, and the potential with a minus sign, so that the Hamiltonian is positive and the potential's minimum is the vacuum. Every sign below follows from that choice.
 
@@ -64,17 +64,17 @@ with no mass term. A mass term $\tfrac12M^2W_\mu W_\mu$ would break the local sy
 The scalar sector. One doublet with a covariant derivative and a potential,
 
 $$
-\mathcal{L}_{\mathrm{scalar}}=\sum_\mu\bigl(D_\mu\varphi\bigr)^{\dagger}\bigl(D_\mu\varphi\bigr)-\lambda\Bigl(\varphi^{\dagger}\varphi-\frac{v^2}{2}\Bigr)^{2},
+\mathcal{L}_{\mathrm{scalar}}=\sum_\mu\bigl(D_\mu\omicron_{\mathrm{hgs}}\bigr)^{\dagger}\bigl(D_\mu\omicron_{\mathrm{hgs}}\bigr)-\lambda\Bigl(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-\frac{v^2}{2}\Bigr)^{2},
 \qquad
-D_\mu=\partial_\mu+ig\sum_a\tau_{a} W_{a,\mu}+i g_{\mathrm Y}Y_\varphi B_\mu .
+D_\mu=\partial_\mu+ig\sum_a\tau_{a} W_{a,\mu}+i g_{\mathrm Y}Y_{\mathrm{hch}} B_\mu .
 $$
 
-The covariant derivative is where the masses live: it contains the gauge fields multiplied by the generators, and when $\varphi$ is replaced by its vacuum value the product becomes a constant matrix times $W_\mu W_\mu$.
+The covariant derivative is where the masses live: it contains the gauge fields multiplied by the generators, and when $\omicron_{\mathrm{hgs}}$ is replaced by its vacuum value the product becomes a constant matrix times $W_\mu W_\mu$.
 
-The mass term from the vacuum. Writing $\varphi=\langle\varphi\rangle+\eta$ and keeping the quadratic terms,
+The mass term from the vacuum. Writing $\omicron_{\mathrm{hgs}}=\langle\omicron_{\mathrm{hgs}}\rangle+\eta$ and keeping the quadratic terms,
 
 $$
-\sum_\mu\bigl(D_\mu\varphi\bigr)^{\dagger}\bigl(D_\mu\varphi\bigr)\supset\frac{v^2}{8}\Bigl[g^2\bigl(W_{1,\mu} W_{1,\mu}+W_{2,\mu} W_{2,\mu}\bigr)+\bigl(gW_{3,\mu}-g_{\mathrm Y}B_\mu\bigr)^{2}\Bigr],
+\sum_\mu\bigl(D_\mu\omicron_{\mathrm{hgs}}\bigr)^{\dagger}\bigl(D_\mu\omicron_{\mathrm{hgs}}\bigr)\supset\frac{v^2}{8}\Bigl[g^2\bigl(W_{1,\mu} W_{1,\mu}+W_{2,\mu} W_{2,\mu}\bigr)+\bigl(gW_{3,\mu}-g_{\mathrm Y}B_\mu\bigr)^{2}\Bigr],
 $$
 
 which is a mass matrix for the four gauge fields. It is rank three: one combination is massless, and that combination is the photon.
@@ -105,7 +105,7 @@ The mixing angle is not a new parameter: it is $\arctan(g_{\mathrm Y}/g)$, fixed
 
 Why the linear combination and not another. The mass matrix in the $(W_3,B)$ plane is $\frac{v^2}{8}\bigl(\begin{smallmatrix}g^2&-gg_{\mathrm Y}\\-gg_{\mathrm Y}&g_{\mathrm Y}^2\end{smallmatrix}\bigr)$, whose determinant is zero. A rank-one $2\times2$ matrix has one zero eigenvalue and one nonzero one, and the zero eigenvector is $(g_{\mathrm Y},g)$-normalized, which is the photon. The vanishing determinant is the statement that the unbroken subgroup is one-dimensional, and it is a consequence of the rank of the doublet's generator set and not of a tuning.
 
-**The pairing is the Hermitian norm, and it is what makes the scalar's kinetic term real and positive.** $\sum_\mu(D_\mu\varphi)^{\dagger}(D_\mu\varphi)$ is a sum of squared norms, real and non-negative term by term. The gauge kinetic terms are real because $W_{a,\mu\nu}$ and $B_{\mu\nu}$ are real in components and their squares carry the corpus's sign rule.
+**The pairing is the Hermitian norm, and it is what makes the scalar's kinetic term real and positive.** $\sum_\mu(D_\mu\omicron_{\mathrm{hgs}})^{\dagger}(D_\mu\omicron_{\mathrm{hgs}})$ is a sum of squared norms, real and non-negative term by term. The gauge kinetic terms are real because $W_{a,\mu\nu}$ and $B_{\mu\nu}$ are real in components and their squares carry the corpus's sign rule.
 
 Why the scalar needs the dagger and the gauge fields do not. The scalar is complex, so its kinetic term needs a conjugate to be real; the gauge fields are real, so theirs does not. The asymmetry is a statement about the representations and not about the pairing.
 
@@ -128,15 +128,15 @@ The variation with respect to the gauge fields. Varying $W_{a,\mu}$ and integrat
 $$
 \delta S=\int d^4r\;\Bigl[\delta W_{a,\mu}\Bigl(D_\nu W_{a,\mu\nu}-j_{a,\mu}\Bigr)\Bigr],
 \qquad
-j_{a,\mu}=\frac{g}{2}\,\varphi^{\dagger}\tau_{a} i\!\overleftrightarrow{D_\mu}\varphi+\text{(fermion terms)},
+j_{a,\mu}=\frac{g}{2}\,\omicron_{\mathrm{hgs}}^{\dagger}\tau_{a} i\!\overleftrightarrow{D_\mu}\omicron_{\mathrm{hgs}}+\text{(fermion terms)},
 $$
 
 so that the stationarity condition is $D_\nu W_{a,\mu\nu}=j_{a,\mu}$, and analogously for $B_\mu$. The current contains the scalar's contribution and the fermions', and the two enter on the same footing.
 
-The variation with respect to the scalar. Varying $\varphi^{\dagger}$ gives
+The variation with respect to the scalar. Varying $\omicron_{\mathrm{hgs}}^{\dagger}$ gives
 
 $$
--D_\mu D_\mu\varphi-\frac{\partial V}{\partial\varphi^{\dagger}}=0 ,
+-D_\mu D_\mu\omicron_{\mathrm{hgs}}-\frac{\partial V}{\partial\omicron_{\mathrm{hgs}}^{\dagger}}=0 ,
 $$
 
 the gauged Klein–Gordon equation with a potential. At the vacuum this equation is satisfied identically, which is the statement that the vacuum is stationary and that the masses computed above are consistent with it.
@@ -176,9 +176,9 @@ The abelian formula is the same formula. The corpus's charged-scalar formula $M_
 The currents of the global group. Before gauging, the action is invariant under constant $SU(2)_L\times\mathrm{U}(1)_Y$, and the Noether currents are
 
 $$
-J_{a,\mu}=\frac{g}{2}\,\varphi^{\dagger}\tau_{a} i\!\overleftrightarrow{D_\mu}\varphi+\bar\psi\gamma_\mu\tau_{a}\psi ,
+J_{a,\mu}=\frac{g}{2}\,\omicron_{\mathrm{hgs}}^{\dagger}\tau_{a} i\!\overleftrightarrow{D_\mu}\omicron_{\mathrm{hgs}}+\bar\psi\gamma_\mu\tau_{a}\psi ,
 \qquad
-J^{Y}_\mu=g_{\mathrm Y}\,Y_\varphi\,\varphi^{\dagger}i\!\overleftrightarrow{D_\mu}\varphi+\bar\psi\gamma_\mu Y\psi ,
+J^{Y}_\mu=g_{\mathrm Y}\,Y_{\mathrm{hch}}\,\omicron_{\mathrm{hgs}}^{\dagger}i\!\overleftrightarrow{D_\mu}\omicron_{\mathrm{hgs}}+\bar\psi\gamma_\mu Y\psi ,
 $$
 
 which are exactly the sources in the equations of motion. The identification of the two is not a coincidence: it is the statement that gauging a global symmetry makes its Noether current the source of the gauge field, and it is the reason the variation with respect to the gauge field and the Noether construction give the same object.
@@ -232,7 +232,7 @@ The boundary. Both lines are carried by the algebra, since the compact factor is
 | $W_{a,\mu}$, $B_\mu$ | $SU(2)_L$ triplet and $\mathrm{U}(1)_Y$ field |
 | $W_{a,\mu\nu}$, $B_{\mu\nu}$ | their curvatures |
 | $g$, $g_{\mathrm Y}$ | the two couplings |
-| $\varphi$ | scalar doublet, $Y_\varphi=\tfrac12$ |
+| $\omicron_{\mathrm{hgs}}$ | scalar doublet, $Y_{\mathrm{hch}}=\tfrac12$ |
 | $v$ | vacuum value, $246.22$ GeV |
 | $\theta_W$ | $\arctan(g_{\mathrm Y}/g)$ |
 | $W^\pm_\mu$, $Z_\mu$, $A_\mu$ | mass eigenstates |

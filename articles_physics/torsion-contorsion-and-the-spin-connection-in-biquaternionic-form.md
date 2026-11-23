@@ -13,7 +13,7 @@ One warning belongs in the introduction, because a reader who has seen an extern
 **The two conventions of the article.** The geometry is written in tensors on a manifold, with the index convention above. The algebra enters in two places: the Lie subspace of §*The Tetrad Postulate and the Spin Connection*, which carries the connection, and the pairing of §*The Spin Tensor and the Torsion–Spin Relation*, which is built from four actions, the frame basis operators of the four coordinate directions. The frame basis operator of the coordinate $x_\mu$ is the action
 
 $$
-Q\ \longmapsto\ i\,e_\mu\,Q\,\vec e_{\nu(\mu)},\qquad \nu(t)=x,\qquad \nu(\eta)=y,
+Q\ \longmapsto\ i\,e_\mu\,Q\,\vec e_{\mathrm{spt}(\mu)},\qquad \mathrm{spt}(t)=x,\qquad \mathrm{spt}(\eta)=y,
 $$
 
 on an element $Q$ of $\mathbb{B}$; the four are the frame basis operators of the axis-free display of *Conventions of the Matrix Models*. Each basis operator carries its own factor $i$, so a product of two of them brings one sign flip and no display below counts a minus sign twice. The timelike basis operator is the one-sided action $Q\mapsto iQ\vec e_x$, the three spatial basis operators are two-sided. No letter stands for a basis operator, since a letter there collides with the basis operators and the gauge generators, so none is introduced here: the action is written out where the operand is the subject, and the basis operators are written out again, on the element, where the spin density is read. The older display of the same four operators is printed once, in the gamma section below, and nothing before that section needs it.
@@ -164,7 +164,7 @@ where $X$ is the element the density reads (*Norm and Pairing Conventions*, §*T
 
 For the field $\tilde{Ξ}$ the spin density is the completely antisymmetric bilinear of three frame basis operators, read in that pairing. Written on the field, the element it reads is
 $$
-X_{\lambda\mu\nu}=\tfrac16\sum_{\sigma\in S_3}\operatorname{sgn}(\sigma)\,i\,e_{\lambda_{\sigma(1)}}\Bigl(i\,e_{\lambda_{\sigma(2)}}\bigl(i\,e_{\lambda_{\sigma(3)}}\,\tilde{Ξ}\,\vec e_{\nu(\lambda_{\sigma(3)})}\bigr)\vec e_{\nu(\lambda_{\sigma(2)})}\Bigr)\vec e_{\nu(\lambda_{\sigma(1)})},
+X_{\lambda\mu\nu}=\tfrac16\sum_{\sigma\in S_3}\operatorname{sgn}(\sigma)\,i\,e_{\lambda_{\sigma(1)}}\Bigl(i\,e_{\lambda_{\sigma(2)}}\bigl(i\,e_{\lambda_{\sigma(3)}}\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\lambda_{\sigma(3)})}\bigr)\vec e_{\mathrm{spt}(\lambda_{\sigma(2)})}\Bigr)\vec e_{\mathrm{spt}(\lambda_{\sigma(1)})},
 $$
 with $(\lambda_1,\lambda_2,\lambda_3)=(\lambda,\mu,\nu)$ and $\sigma$ running over the six permutations, and the density is
 $$
@@ -174,9 +174,9 @@ The innermost factor is the action of the basis operator of $x_{\lambda_{\sigma(
 
 **The chirality basis operator is the fifth basis operator of the frame**, the corpus's glyph $\mathsf{V}_{\mathrm{vol}}$ of *Special Element Conventions*, §*The Chirality Convention*. In the axis-free frame its action is the pure right multiplication $Q\mapsto-iQ\vec e_z$, and it is $i$ times the product of the four basis operators of the frame, each of the four carrying one $i$ and $i^4=+1$. It anticommutes with each of the four basis operators, and that sign is what makes the four alternate. The axial current is the same pairing with the fifth basis operator in place of a fourth basis operator,
 $$
-A_\mu=\operatorname{Sc}\bigl(\tilde{Ξ}^*\,i\,e_\mu\,\tilde{Ξ}\,\vec e_{\nu(\mu)}\,\vec e_z\,\vec e_x\bigr),
+A_\mu=\operatorname{Sc}\bigl(\tilde{Ξ}^*\,i\,e_\mu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}\,\vec e_z\,\vec e_x\bigr),
 $$
-where $i\,e_\mu\tilde{Ξ}\vec e_{\nu(\mu)}$ is the element the basis operator of $x_\mu$ makes of the field, the fifth basis operator multiplies that on the right by $-i\vec e_z$, the adjoint supplies the $i$ and the $\vec e_x$ outside, and the two phases cancel: the single $i$ of the display is the basis operator's, and no second one survives.
+where $i\,e_\mu\tilde{Ξ}\vec e_{\mathrm{spt}(\mu)}$ is the element the basis operator of $x_\mu$ makes of the field, the fifth basis operator multiplies that on the right by $-i\vec e_z$, the adjoint supplies the $i$ and the $\vec e_x$ outside, and the two phases cancel: the single $i$ of the display is the basis operator's, and no second one survives.
 
 **The antisymmetric spin density is the dual of the axial current.**
 $$
@@ -186,8 +186,8 @@ with $\epsilon_{0123}=+1$. The weight $\varepsilon_\rho$ is not a convention add
 
 The identity is exact, and the constant is $-i$. The basis operators carry the reason themselves: the antisymmetrised product of three of them is the fifth basis operator times the fourth, as an identity on any element $Q$,
 $$
-\tfrac16\sum_{\sigma\in S_3}\operatorname{sgn}(\sigma)\,i\,e_{\lambda_{\sigma(1)}}\Bigl(i\,e_{\lambda_{\sigma(2)}}\bigl(i\,e_{\lambda_{\sigma(3)}}\,Q\,\vec e_{\nu(\lambda_{\sigma(3)})}\bigr)\vec e_{\nu(\lambda_{\sigma(2)})}\Bigr)\vec e_{\nu(\lambda_{\sigma(1)})}
-=-\,i\,\epsilon_{\lambda\mu\nu\rho}\,\varepsilon_\rho\,e_\rho\,Q\,\vec e_{\nu(\rho)}\,\vec e_z .
+\tfrac16\sum_{\sigma\in S_3}\operatorname{sgn}(\sigma)\,i\,e_{\lambda_{\sigma(1)}}\Bigl(i\,e_{\lambda_{\sigma(2)}}\bigl(i\,e_{\lambda_{\sigma(3)}}\,Q\,\vec e_{\mathrm{spt}(\lambda_{\sigma(3)})}\bigr)\vec e_{\mathrm{spt}(\lambda_{\sigma(2)})}\Bigr)\vec e_{\mathrm{spt}(\lambda_{\sigma(1)})}
+=-\,i\,\epsilon_{\lambda\mu\nu\rho}\,\varepsilon_\rho\,e_\rho\,Q\,\vec e_{\mathrm{spt}(\rho)}\,\vec e_z .
 $$
 That is an identity of elements, exact at every index triple, and it accounts for its own unit. The phase is bookkeeping throughout: the three basis operators of the left side carry $i^3=-i$ between them, which is the constant, and the same identity with the basis operators written without their phase carries $+i$ instead. Read in the pairing, with $Q=\tilde{Ξ}$ and the adjoint's $i\vec e_x$ on the right, it gives $\Sigma$ on the left and $A_\rho$ on the right, so the display holds with $-i$ and there is nothing left to choose. The same identity in the older gamma display is printed in the gamma section below.
 
@@ -304,7 +304,7 @@ A connection with torsion splits into a metric part, the Christoffel symbols, an
 
 The tetrad postulate ties the affine and spin connections, and the spin connection splits as $\omega = \omega(e) + K$ with the contorsion in frame indices; $\omega$ with its first frame slot lowered is antisymmetric in the frame pair exactly in the metric-compatible case, so the two conditions of the previous paragraph have one face in world indices and one in frame indices. The Weitzenböck connection $\Gamma_{\lambda\mu\nu} = \sum_a e_{a\lambda} \partial/\partial x_\mu \exp(a){}_\nu$ has exactly zero curvature and nonzero torsion; in the Weitzenböck gauge the full spin connection vanishes and the contorsion is minus the Levi-Civita spin connection of the tetrad.
 
-The spin density of the field is the completely antisymmetric bilinear of three frame basis operators, read in the pairing $\operatorname{Sc}(\tilde{Ξ}^*iX\vec e_x)$ that spends the timelike basis operator once: $\Sigma_{\lambda\mu\nu}=\operatorname{Sc}(\tilde{Ξ}^*iX_{\lambda\mu\nu}\vec e_x)$, with $X_{\lambda\mu\nu}$ the normalised antisymmetrisation of the three basis operator actions applied to the field. It is the dual of the axial current, $\Sigma_{\lambda\mu\nu} = -i\sum_\rho\varepsilon_\rho\,\epsilon_{\lambda\mu\nu\rho}\,A_\rho$ with $A_\mu = \operatorname{Sc}(\tilde{Ξ}^*i\,e_\mu\tilde{Ξ}\vec e_{\nu(\mu)}\vec e_z\vec e_x)$, and its full contraction is six times the contracted square of the axial current, $\sum_{\lambda,\mu,\nu}\varepsilon_\lambda\varepsilon_\mu\varepsilon_\nu\Sigma_{\lambda\mu\nu}\Sigma_{\lambda\mu\nu} = 6\sum_\rho\varepsilon_\rho A_\rho A_\rho$, the factor six coming from $\sum_{\lambda,\mu,\nu}\epsilon_{\lambda\mu\nu\rho}\epsilon_{\lambda\mu\nu\sigma}=6\delta_{\rho\sigma}$ and the sign from $(-i)^2=-1$ together with $\varepsilon_\lambda\varepsilon_\mu\varepsilon_\nu\varepsilon_\rho=-1$ on the nonzero terms. The Einstein–Cartan torsion–spin relation $T = \kappa\Sigma$ is therefore algebraic, and the elimination of the torsion leaves the axial–axial contact term whose coefficient the nonlinear-Dirac article owns.
+The spin density of the field is the completely antisymmetric bilinear of three frame basis operators, read in the pairing $\operatorname{Sc}(\tilde{Ξ}^*iX\vec e_x)$ that spends the timelike basis operator once: $\Sigma_{\lambda\mu\nu}=\operatorname{Sc}(\tilde{Ξ}^*iX_{\lambda\mu\nu}\vec e_x)$, with $X_{\lambda\mu\nu}$ the normalised antisymmetrisation of the three basis operator actions applied to the field. It is the dual of the axial current, $\Sigma_{\lambda\mu\nu} = -i\sum_\rho\varepsilon_\rho\,\epsilon_{\lambda\mu\nu\rho}\,A_\rho$ with $A_\mu = \operatorname{Sc}(\tilde{Ξ}^*i\,e_\mu\tilde{Ξ}\vec e_{\mathrm{spt}(\mu)}\vec e_z\vec e_x)$, and its full contraction is six times the contracted square of the axial current, $\sum_{\lambda,\mu,\nu}\varepsilon_\lambda\varepsilon_\mu\varepsilon_\nu\Sigma_{\lambda\mu\nu}\Sigma_{\lambda\mu\nu} = 6\sum_\rho\varepsilon_\rho A_\rho A_\rho$, the factor six coming from $\sum_{\lambda,\mu,\nu}\epsilon_{\lambda\mu\nu\rho}\epsilon_{\lambda\mu\nu\sigma}=6\delta_{\rho\sigma}$ and the sign from $(-i)^2=-1$ together with $\varepsilon_\lambda\varepsilon_\mu\varepsilon_\nu\varepsilon_\rho=-1$ on the nonzero terms. The Einstein–Cartan torsion–spin relation $T = \kappa\Sigma$ is therefore algebraic, and the elimination of the torsion leaves the axial–axial contact term whose coefficient the nonlinear-Dirac article owns.
 
 Two statements bound the article. The commutator of the quaternion units is a constant of the algebra and not the torsion of a manifold; the algebra carries the connection and the torsion but generates neither, selects no connection, and supplies no action. The identities above are exact and recomputed; the dynamics is not here and is not claimed.
 
@@ -324,13 +324,13 @@ Two statements bound the article. The commutator of the quaternion units is a co
 | $\omega_{ab\mu}=\varepsilon_a\Omega_{ab\mu}$ | the same array weighted by $\varepsilon_a$ in the first frame slot; antisymmetric in the frame pair exactly in the metric-compatible case |
 | $\omega_{ab\mu}(e)$ | its Levi-Civita part |
 | $\vec\Gamma_\mu$ | the connection as an element of the Lie subspace of $\mathbb{B}$ |
-| the frame basis operator of $x_\mu$ | the action $Q\mapsto i\,e_\mu Q\,\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(\eta)=y$: $Q\mapsto iQ\vec e_x$ at $\mu=t$ and $Q\mapsto i\vec e_\eta Q\vec e_y$ at $\mu=k$; no letter stands for it |
+| the frame basis operator of $x_\mu$ | the action $Q\mapsto i\,e_\mu Q\,\vec e_{\mathrm{spt}(\mu)}$ with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$: $Q\mapsto iQ\vec e_x$ at $\mu=t$ and $Q\mapsto i\vec e_\eta Q\vec e_y$ at $\mu=k$; no letter stands for it |
 | two distinct frame basis operators | their six products are the six Lorentz bivectors; the six generators are half of them |
 | $\mathsf{V}_{\mathrm{vol}}$ | one basis operator that carries the split, the right multiplication $Q\mapsto-iQ\vec e_z$; it is $i$ times the product of the four basis operators, and its side, the right slot, is what makes the sign a chirality |
 | $\operatorname{Sc}(\tilde{Ξ}^*iX\vec e_x)$ | every density of the spin section: the pairing of the field with the element $X$, the timelike action $Q\mapsto iQ\vec e_x$ spent in it |
 | $X_{\lambda\mu\nu}$ | the element the spin density reads, the normalised antisymmetrisation of the three basis operator actions applied to the field |
 | $\Sigma_{\lambda\mu\nu}$ | spin density of the field, $\operatorname{Sc}(\tilde{Ξ}^*iX_{\lambda\mu\nu}\vec e_x)$; equal to $-i\sum_\rho\varepsilon_\rho\epsilon_{\lambda\mu\nu\rho}A_\rho$ |
-| $A_\mu$ | axial current, $\operatorname{Sc}(\tilde{Ξ}^*i\,e_\mu\tilde{Ξ}\vec e_{\nu(\mu)}\vec e_z\vec e_x)$ |
+| $A_\mu$ | axial current, $\operatorname{Sc}(\tilde{Ξ}^*i\,e_\mu\tilde{Ξ}\vec e_{\mathrm{spt}(\mu)}\vec e_z\vec e_x)$ |
 | $\varepsilon$, $\varepsilon_\mu$ | sign vector, $\varepsilon_t=+1$ and $\varepsilon_\eta=-1$; $\varepsilon_\mu A_\mu$ is the raised $A_\mu$ |
 | $\kappa = 8\pi G/c^{4}$ | Einstein gravitational constant |
 

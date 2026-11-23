@@ -67,7 +67,7 @@ $$
 a number fixed by the gap and by nothing else. It does not depend on the temperature and it is the same at every $\beta$. The circle whose circumference is the inverse temperature is a different one: it is the circle on which the imaginary time of the *thermal state* is closed, and its circumference is $\beta \frac{h}{2\pi}$, the width of the KMS strip. The two coincide at exactly one temperature,
 
 $$
-\beta \frac{h}{2\pi}=\frac{2\pi}{\omega}\quad\Longleftrightarrow\quad k_BT=\frac{h\nu}{2\pi},
+\beta \frac{h}{2\pi}=\frac{2\pi}{\omega}\quad\Longleftrightarrow\quad k_BT=\frac{hf_{\mathrm{frq}}}{2\pi},
 $$
 
 and that coincidence is a property of a particular two-level system, not the definition of $\beta$. A sentence that reads the inverse temperature off $2\pi/\omega$ has read the gap and called it a temperature.
@@ -86,7 +86,7 @@ Where the circle is absent. For a boost the generator is a pure vector and the e
 
 ## Inverse Temperature Is an Inverse Time
 
-**The dimensional statement is the structural one.** $\beta$ has units of inverse energy, so $\beta \frac{h}{2\pi}$ is a time. The article's claim is that this is not a unit coincidence but the length of the orbit computed above: $\beta=\frac{2\pi \tau_{\mathrm{per}}}{h}$ at the scale set by the gap. Temperature is a frequency, $k_BT=h\nu$, and the thermal circle is the orbit whose period is that frequency's inverse.
+**The dimensional statement is the structural one.** $\beta$ has units of inverse energy, so $\beta \frac{h}{2\pi}$ is a time. The article's claim is that this is not a unit coincidence but the length of the orbit computed above: $\beta=\frac{2\pi \tau_{\mathrm{per}}}{h}$ at the scale set by the gap. Temperature is a frequency, $k_BT=hf_{\mathrm{frq}}$, and the thermal circle is the orbit whose period is that frequency's inverse.
 
 Two limits, and they are the two ends of the ball.
 
@@ -107,7 +107,7 @@ It does not give a derivation of thermality. The article takes the Gibbs form as
 
 ## Summary
 
-The thermal state is the congruence of the centre by $e^{-\beta\tilde H/2}$, so the Gibbs path is the radial segment from the maximally mixed state to a pure state on the boundary, and it is an orbit of a semigroup rather than of the group. Continuing $\beta\mapsto i\tau$ turns the Boltzmann factor into the value $U(-i\beta)$ of the compact flow $U(\tau)=e^{-i\tau\tilde H}$, so $\beta$ is a translation length along imaginary time and the thermal circle's circumference is $\beta \frac{h}{2\pi}$; the flow's own period, $2\pi/\omega$, is a different number fixed by the gap, and the two agree only at $k_BT=h\nu/2\pi$. Temperature is therefore an inverse time in the structural sense and not only in the dimensional one, the two limits $\beta\to0$ and $\beta\to\infty$ are the centre and the boundary, and the circle exists on the informational slice because its generator is Hermitian — the material flow is a boost, and a boost does not come back.
+The thermal state is the congruence of the centre by $e^{-\beta\tilde H/2}$, so the Gibbs path is the radial segment from the maximally mixed state to a pure state on the boundary, and it is an orbit of a semigroup rather than of the group. Continuing $\beta\mapsto i\tau$ turns the Boltzmann factor into the value $U(-i\beta)$ of the compact flow $U(\tau)=e^{-i\tau\tilde H}$, so $\beta$ is a translation length along imaginary time and the thermal circle's circumference is $\beta \frac{h}{2\pi}$; the flow's own period, $2\pi/\omega$, is a different number fixed by the gap, and the two agree only at $k_BT=hf_{\mathrm{frq}}/2\pi$. Temperature is therefore an inverse time in the structural sense and not only in the dimensional one, the two limits $\beta\to0$ and $\beta\to\infty$ are the centre and the boundary, and the circle exists on the informational slice because its generator is Hermitian — the material flow is a boost, and a boost does not come back.
 
 ## Summary of Notation
 

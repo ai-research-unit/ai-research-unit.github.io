@@ -241,11 +241,11 @@ $$
 
 the standard isovector current of the pion triplet. The quaternion conjugation on the derivative is the one that fixes the sign: with $\partial\tilde U^{\natural}/\partial R_\mu=-\partial\tilde U/\partial R_\mu$ and $\mathrm{Sc}(\vec e_j\vec e_\eta)=-\delta_{j\eta}$, the two minus signs cancel and the prefactor $-\frac{f_\pi^2}{2}$ produces the displayed minus. It lies in the material sector, like every current of the framework, and it is the current whose charge rotates the pion triplet in the adjoint.
 
-**The axial current and its divergence.** The axial current is not the Noether current of a symmetry of the algebra. It is the quark axial current of the underlying theory, which fixes its nature and its anomalous divergence; what the framework contributes is the product of elements that carries the vertex. The frame basis operator of the coordinate $x_\mu$ multiplies on the left by $e_\mu$ and on the right by $\vec e_{\nu(\mu)}$, with the phase $i$,
+**The axial current and its divergence.** The axial current is not the Noether current of a symmetry of the algebra. It is the quark axial current of the underlying theory, which fixes its nature and its anomalous divergence; what the framework contributes is the product of elements that carries the vertex. The frame basis operator of the coordinate $x_\mu$ multiplies on the left by $e_\mu$ and on the right by $\vec e_{\mathrm{spt}(\mu)}$, with the phase $i$,
 
 $$
-C_\mu:\ \tilde Q\;\longmapsto\; i\,e_\mu\,\tilde Q\,\vec e_{\nu(\mu)} ,
-\qquad \nu(t)=x,\quad \nu(\eta)=y ,
+C_\mu:\ \tilde Q\;\longmapsto\; i\,e_\mu\,\tilde Q\,\vec e_{\mathrm{spt}(\mu)} ,
+\qquad \mathrm{spt}(t)=x,\quad \mathrm{spt}(\eta)=y ,
 $$
 
 so that the time slot collapses, $e_t\tilde Q=\tilde Q$, and the timelike basis operator is the single right multiplication $\tilde Q\mapsto i\tilde Q\vec e_x$, while the three spatial basis operators keep both factors. The fifth basis operator of the frame is the right multiplication by $-i\vec e_z$,
@@ -258,11 +258,11 @@ $$
 where $\xi\xi$ is the basis operator applied twice. The axial vertex is the product of the frame basis operator with the fifth basis operator, the fifth basis operator applied first, and the two central imaginaries multiply to one, $i\cdot(-i)=-i^2=1$, so the product is a single product of elements:
 
 $$
-C_\mu\xi:\ \tilde Q\;\longmapsto\; e_\mu\,\tilde Q\,\vec e_z\vec e_{\nu(\mu)} ,
+C_\mu\xi:\ \tilde Q\;\longmapsto\; e_\mu\,\tilde Q\,\vec e_z\vec e_{\mathrm{spt}(\mu)} ,
 \qquad \vec e_z\vec e_x=\vec e_y ,\quad \vec e_z\vec e_y=-\vec e_x .
 $$
 
-The axial vertex is therefore the frame basis operator with $\vec e_z\vec e_{\nu(\mu)}$ as its right multiplier, and no second imaginary unit survives. The vertex of the axial current in the direction $\vec k_\Phi$ is that product read on the quark field, with the isospin generator:
+The axial vertex is therefore the frame basis operator with $\vec e_z\vec e_{\mathrm{spt}(\mu)}$ as its right multiplier, and no second imaginary unit survives. The vertex of the axial current in the direction $\vec k_\Phi$ is that product read on the quark field, with the isospin generator:
 
 $$
 j_{5\mu \eta} = \bar q\,C_\mu\xi\,T_\eta\,q .
@@ -349,7 +349,7 @@ $$
 
 The four frame basis operators multiply to $\gamma_0\gamma_1\gamma_2\gamma_3=-i\xi$, so $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ spends one more $i$ and returns $\xi$: the two imaginary units give $i\cdot(-i)=1$, and the fifth basis operator is one of the body's own, not a sixth one.
 
-Each of the four is one factor of $i$ times a bare basis operator of the body, $\gamma_\mu=i\beta_\mu$ with $\beta_\mu=L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}}$; the fifth is not of that form, being the fifth basis operator itself, $\gamma_5=\xi=-iR_{\mathrm{pau},\vec e_z}$. Nothing in the body needs the gammas: they are its own basis operators with the $i$ made explicit. The bare basis operators anticommute with the body's weight, $\{\beta_a,\beta_b\}=2(-\varepsilon_a\delta_{ab})I_4$: $\beta_t^2=-I_4$ while $\beta_k^2=+I_4$. The one $i$ per basis operator flips that square, $\gamma_t^2=-\beta_t^2=+I_4$, and leaves the three spatial signs alone, so the gammas anticommute with the negative metric, $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $g=-\eta$. The difference between the two sign assignments is therefore exactly one factor of $i$ per basis operator, spent as $i^2=-1$, and the signs that remain are the quaternion squares $\vec e_\eta^2=-e_t$. The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ — with $\tilde{Ζ}_{\mathrm{ad}}$ a central root of $-e_t$, so $\xi_{\mathrm{ad}}^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+Each of the four is one factor of $i$ times a bare basis operator of the body, $\gamma_\mu=i\beta_\mu$ with $\beta_\mu=L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\mu)}}$; the fifth is not of that form, being the fifth basis operator itself, $\gamma_5=\xi=-iR_{\mathrm{pau},\vec e_z}$. Nothing in the body needs the gammas: they are its own basis operators with the $i$ made explicit. The bare basis operators anticommute with the body's weight, $\{\beta_a,\beta_b\}=2(-\varepsilon_a\delta_{ab})I_4$: $\beta_t^2=-I_4$ while $\beta_k^2=+I_4$. The one $i$ per basis operator flips that square, $\gamma_t^2=-\beta_t^2=+I_4$, and leaves the three spatial signs alone, so the gammas anticommute with the negative metric, $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $g=-\eta$. The difference between the two sign assignments is therefore exactly one factor of $i$ per basis operator, spent as $i^2=-1$, and the signs that remain are the quaternion squares $\vec e_\eta^2=-e_t$. The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ — with $\tilde{Ζ}_{\mathrm{ad}}$ a central root of $-e_t$, so $\xi_{\mathrm{ad}}^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -435,7 +435,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $B_0 = -\langle\bar qq\rangle/f_\pi^2$ | Condensate scale parameter |
 | $m_\pi^2 = B_0(m_u+m_d)$, $m_\pi^2f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$ | Pion mass and the Gell-Mann–Oakes–Renner relation |
 | $j_{\mu \eta}$, $j_{5\mu \eta}$ | Isospin (vector) and axial currents |
-| $C_\mu$, $\xi$ | Frame basis operator of the coordinate $x_\mu$, $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(\eta)=y$; and the fifth basis operator, the right multiplication by $-i\vec e_z$, written $-iR_{\vec e_z}$ where the operator is the subject |
+| $C_\mu$, $\xi$ | Frame basis operator of the coordinate $x_\mu$, $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\mathrm{spt}(\mu)}$ with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$; and the fifth basis operator, the right multiplication by $-i\vec e_z$, written $-iR_{\vec e_z}$ where the operator is the subject |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | Chiral pair of the Dirac equation; the two parts are coupled only by the mass |
 | $\langle0\vert j_{5\mu \eta}(0)\vert\pi_l(p)\rangle = if_\pi p_\mu\delta_{\eta l}$ | Defining matrix element of $f_\pi$ |
 | $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5\eta}\rangle_{\natural} = f_\pi m_\pi^2\pi_\eta$ | PCAC |

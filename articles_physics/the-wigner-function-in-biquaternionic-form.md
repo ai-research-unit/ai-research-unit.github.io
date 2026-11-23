@@ -274,7 +274,7 @@ The two numerical values agree to about $2\times10^{-3}$, which is the accuracy 
 
 ### Negativity, and what it forbids
 
-**The Wigner element of a non-Gaussian pure state is negative somewhere, and the negativity is the precise sense in which the fluid picture is incomplete.** For the superposition $(\lvert0\rangle+\lvert1\rangle)/\sqrt2$ of the first two oscillator levels, with lengths in units of $1/k_m$, momenta in units of $mc$ and energies in units of $h\nu$:
+**The Wigner element of a non-Gaussian pure state is negative somewhere, and the negativity is the precise sense in which the fluid picture is incomplete.** For the superposition $(\lvert0\rangle+\lvert1\rangle)/\sqrt2$ of the first two oscillator levels, with lengths in units of $1/k_m$, momenta in units of $mc$ and energies in units of $hf_{\mathrm{frq}}$:
 
 | quantity | value |
 |---|---|

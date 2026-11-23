@@ -69,7 +69,7 @@ with $g$ the Dirac potential. The identification is a statement about **coeffici
 
 ## The Mass Shell as the Condition on the Dirac–Maxwell Correspondence
 
-The time-harmonic comparison is the paper's last section, and its conclusion is a condition rather than an identity. Let the massive quaternionic equation be read on a time-harmonic field, as in *The Dirac Equation in Biquaternionic Form*, §*The Harmonic Field: Two Projections, and the Helicity Reading*. There the frequency is the Dirac frequency; write it $\omega_D$, and write $E=h\nu_{D}$ for the particle energy. The amplitude obeys the shifted equation $\vec\nabla_\Phi f+f\alpha=0$ at the parameter
+The time-harmonic comparison is the paper's last section, and its conclusion is a condition rather than an identity. Let the massive quaternionic equation be read on a time-harmonic field, as in *The Dirac Equation in Biquaternionic Form*, §*The Harmonic Field: Two Projections, and the Helicity Reading*. There the frequency is the Dirac frequency; write it $\omega_D$, and write $E=hf_{\mathrm{frq},D}$ for the particle energy. The amplitude obeys the shifted equation $\vec\nabla_\Phi f+f\alpha=0$ at the parameter
 
 $$
 \alpha = -\left(\frac{2\pi i\,E}{h\,c}\,\vec e_x + \vec e_y\,k_m\right),
@@ -101,7 +101,7 @@ $$
 E^2 =\frac{h^{2}}{4\pi^{2}}\,\omega^{2}+m^{2}\,c^{4}},
 $$
 
-which, with the de Broglie relation $h\nu=pc$ for the Maxwell wave number, is the relativistic dispersion relation $E^2=p^2c^2+m^{2}\,c^{4}$. With the constants carried it reads $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$, the same statement in the three wave numbers. The paper draws attention to the agreement — the condition on which its Dirac–Maxwell equivalence rests is the same relation that defines the particle's mass — and the corpus records it as what ties the parametric statements together: the parameter that makes the shifted equation solvable is the parameter that puts the field on shell.
+which, with the de Broglie relation $hf_{\mathrm{frq}}=pc$ for the Maxwell wave number, is the relativistic dispersion relation $E^2=p^2c^2+m^{2}\,c^{4}$. With the constants carried it reads $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$, the same statement in the three wave numbers. The paper draws attention to the agreement — the condition on which its Dirac–Maxwell equivalence rests is the same relation that defines the particle's mass — and the corpus records it as what ties the parametric statements together: the parameter that makes the shifted equation solvable is the parameter that puts the field on shell.
 
 The same interpretation is why the massless (neutrino) case of §*The Harmonic Field: Two Projections, and the Helicity Reading* of *The Dirac Equation in Biquaternionic Form* needs no condition at all: at $m=0$, that is $k_m=0$, the parameter is $\alpha=-(i\,k_{t}^{\prime})\,\vec e_x$ with $\alpha^2=E^2/(\frac{h^{2}}{4\pi^{2}}\,c^{2})$, and $k_\Phi^2=\alpha^2$ becomes $\omega^2=\frac{(2\pi)^{2} E^{2}}{h^{2}}$, i.e., $\omega=\omega_D$ — the two frequencies coincide, the vacuum null-wave relation $\omega=k_\Phi$, the case the source calls the neutrino, and the one the corpus records as Imaeda's vacuum Maxwell equation.
 
@@ -167,7 +167,7 @@ These questions are open.
 | $\epsilon$, $\mu$, $\vec G$ | Permittivity, permeability and the logarithmic derivative $\vec G=\mathrm{grad}\sqrt\epsilon/\sqrt\epsilon$ |
 | $G(r_x)$, $g(r_x)$ | The Dirac potential as an integral and as its derivative, $\epsilon=\exp(2G)$, $dG/dr_x=g$ |
 | $\alpha$ | The biquaternionic parameter of the shifted amplitude equation, an inverse length |
-| $E$, $p$ | Particle energy and momentum; $E=h\nu_D$ and $E=pc$ for the Maxwell wave number |
+| $E$, $p$ | Particle energy and momentum; $E=hf_{\mathrm{frq},D}$ and $E=pc$ for the Maxwell wave number |
 | $\tilde Q_1$, $\tilde Q_2$ | Lanczos's two biquaternion fields |
 | $D$ | In §*The Lanczos Route* only, Lanczos's name for the Dirac field, not the spatial operator $D=i\vec\nabla_\Phi$ |
 | $\tilde\Pi_{\mathrm{id}}$, $\bar{\tilde\Pi_{\mathrm{id}}}$ | The projection along the unit vector $\vec u_{\mathrm{sp}}$ of the Lanczos superposition and its conjugate |

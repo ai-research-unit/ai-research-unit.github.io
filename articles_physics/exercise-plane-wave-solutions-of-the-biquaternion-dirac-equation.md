@@ -333,7 +333,7 @@ $$
 \boxed{\;\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}}.
 $$
 
-Equivalently, with $E=h\nu$ and $\vec p=\frac{h}{2\pi}\,\vec k_\Phi$, the norm is quadratic, so $\langle\tilde K_{\Phi}\rangle_{\natural}=\langle\tilde P_{\Phi}\rangle_{\natural}/\frac{h^{2}}{4\pi^{2}}=-k_m^{2}$. The mass shell is not a new postulate: it is the statement that the four-wavevector is a timelike element of $\mathbb{B}_{\Phi}$ with the same quaternionic norm as the four-momentum. Here $k_m=\frac{2\pi mc}{h}$ and $k_{\Phi}=\frac{2\pi p}{h}$ are the mass and momentum wave numbers.
+Equivalently, with $E=hf_{\mathrm{frq}}$ and $\vec p=\frac{h}{2\pi}\,\vec k_\Phi$, the norm is quadratic, so $\langle\tilde K_{\Phi}\rangle_{\natural}=\langle\tilde P_{\Phi}\rangle_{\natural}/\frac{h^{2}}{4\pi^{2}}=-k_m^{2}$. The mass shell is not a new postulate: it is the statement that the four-wavevector is a timelike element of $\mathbb{B}_{\Phi}$ with the same quaternionic norm as the four-momentum. Here $k_m=\frac{2\pi mc}{h}$ and $k_{\Phi}=\frac{2\pi p}{h}$ are the mass and momentum wave numbers.
 
 The two roots $\omega=\pm\sqrt{c^2\vec k_\Phi^2+c^2k_m^{2}}$ are the two frequency branches, and they are the two families $\tilde w$ and $\tilde v$ constructed above; the two helicity values within each branch give the four-dimensional complex solution space. As a numerical check, for an electron ($mc^2=0.510998950\ \mathrm{MeV}$) at $\lvert\vec p\rvert=1\ \mathrm{MeV}/c$, the dispersion gives $E=1.122996\ \mathrm{MeV}$ and $E^2-\vec p^2c^2=0.261120\ \mathrm{MeV}^2=(mc^2)^2$; the wave biquaternion has $\langle\tilde K_{\Phi}\rangle_{\natural}=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-k_m^{2}$ to the digits shown.
 

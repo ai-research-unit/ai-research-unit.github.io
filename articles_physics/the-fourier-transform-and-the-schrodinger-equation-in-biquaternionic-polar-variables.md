@@ -4,7 +4,7 @@
 
 The transform has a phase, and the polar chart has a name for every factor of it. The kernel of the transform is $e^{-i\theta_{\mathrm{pwp}}}$ with $\theta_{\mathrm{pwp}}=\omega t'-\vec k_\Phi\cdot\vec r$, so the kernel is a central unit times a sign. In the complete polar decomposition of *The Schrödinger Equation in Biquaternionic Polar Variables* that kernel is the most degenerate element there is: scale one, no boost, rotor equal to a sign. **The transform is the operation that reads a field's phase and leaves everything else in place**, and the chart shows why.
 
-The second object is the word of the symbol. The symbol of the companion article is an element of $\mathbb{B}$ at each frequency, so it has a word of its own: a scale, a phase, a boost and a rotor. Its quaternionic norm is $(h\nu-h_t)^{2}-\lvert\vec h_\Psi\rvert^{2}$, and its determinant is that norm squared. **The word of the symbol fails exactly on the spectrum**, because the norm vanishes there and the element is a zero divisor. That is the polar reading of the pole set.
+The second object is the word of the symbol. The symbol of the companion article is an element of $\mathbb{B}$ at each frequency, so it has a word of its own: a scale, a phase, a boost and a rotor. Its quaternionic norm is $(hf_{\mathrm{frq}}-h_t)^{2}-\lvert\vec h_\Psi\rvert^{2}$, and its determinant is that norm squared. **The word of the symbol fails exactly on the spectrum**, because the norm vanishes there and the element is a zero divisor. That is the polar reading of the pole set.
 
 The third finding is a count of types. The four brackets of the logarithmic derivative are the four types of an element of $\mathbb{B}$: a real central number, an imaginary central number, a Hermitian scalar-free part and an anti-Hermitian scalar-free part, of dimensions one, one, three and three. In the constant setting the symbol occupies two of the four. The other two are occupied only by a word that varies, which is why the free equation's transform is exact.
 
@@ -22,7 +22,7 @@ The word. $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm
 
 The two norms. $\langle\tilde\Xi\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ reads the scale and the phase; $\rho_{\mathrm{num}}=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ reads the scale and the rapidity. Neither reads the rotor, and neither reads an axis.
 
-The symbol. $\sigma(\omega)=h\nu\,e_t-\tilde H_\Psi$ with $h_t$ and $\vec h_\Psi$ real, and its two invariants $\operatorname{tr}\sigma=4(h\nu-h_t)$ and $\det\sigma=\langle\sigma\rangle_\natural^{2}$.
+The symbol. $\sigma(\omega)=hf_{\mathrm{frq}}\,e_t-\tilde H_\Psi$ with $h_t$ and $\vec h_\Psi$ real, and its two invariants $\operatorname{tr}\sigma=4(hf_{\mathrm{frq}}-h_t)$ and $\det\sigma=\langle\sigma\rangle_\natural^{2}$.
 
 ## The Kernel of the Transform in the Word
 
@@ -48,12 +48,12 @@ What the kernel cannot do. It cannot change a scale or a rapidity, because it ha
 
 ## The Word of the Symbol, and Where It Fails
 
-The symbol has a word because it is an element. At each real $\omega$ the symbol $\sigma(\omega)=h\nu\,e_t-\tilde H_\Psi$ is an element of $\mathbb{B}$, so it has a scale, a phase, a boost and a rotor whenever it is off the cone.
+The symbol has a word because it is an element. At each real $\omega$ the symbol $\sigma(\omega)=hf_{\mathrm{frq}}\,e_t-\tilde H_\Psi$ is an element of $\mathbb{B}$, so it has a scale, a phase, a boost and a rotor whenever it is off the cone.
 
-Its quaternionic norm is the elementary determinant. With $\sigma=c_t\,e_t+\sum c_\mu\vec e_\mu$ the norm is $c_t^{2}+c_x^{2}+c_y^{2}+c_z^{2}$, and here $c_t=h\nu-h_t$ and $c_\mu=-ih_\mu$, so
+Its quaternionic norm is the elementary determinant. With $\sigma=c_t\,e_t+\sum c_\mu\vec e_\mu$ the norm is $c_t^{2}+c_x^{2}+c_y^{2}+c_z^{2}$, and here $c_t=hf_{\mathrm{frq}}-h_t$ and $c_\mu=-ih_\mu$, so
 
 $$
-\langle\sigma(\omega)\rangle_\natural=\big(h\nu-h_t\big)^{2}-\lvert\vec h_\Psi\rvert^{2},
+\langle\sigma(\omega)\rangle_\natural=\big(hf_{\mathrm{frq}}-h_t\big)^{2}-\lvert\vec h_\Psi\rvert^{2},
 \qquad
 \det\sigma(\omega)=\langle\sigma(\omega)\rangle_\natural^{2},
 $$
@@ -89,11 +89,11 @@ $$
 
 and the four terms are, in order, a real central number, an imaginary central number, a Hermitian scalar-free element and an anti-Hermitian traceless element. **The bracket is not four equations; it is one element read in its four types.**
 
-The symbol occupies two of the four. In the constant setting the symbol is $h\nu\,e_t-\tilde H_\Psi$, whose imaginary central part vanishes and whose anti-Hermitian scalar-free part vanishes. What remains is the real central part $h\nu-h_t$ and the imaginary-vector part $i\vec h_\Psi$. The phase type and the rotor type are empty in frequency space, and the emptiness is the statement that a plane wave has a constant phase rate and a constant rotor.
+The symbol occupies two of the four. In the constant setting the symbol is $hf_{\mathrm{frq}}\,e_t-\tilde H_\Psi$, whose imaginary central part vanishes and whose anti-Hermitian scalar-free part vanishes. What remains is the real central part $hf_{\mathrm{frq}}-h_t$ and the imaginary-vector part $i\vec h_\Psi$. The phase type and the rotor type are empty in frequency space, and the emptiness is the statement that a plane wave has a constant phase rate and a constant rotor.
 
 The empty types are filled by a varying word. A field whose phase rate varies with $t'$, or whose rotor turns, has a logarithmic derivative with all four types present. Its transform is then not supported at one frequency: the effective number of modes of a chirped unit is $5.64$ at a chirp rate of $1$ and $26.20$ at a rate of $4$ on a grid of sixty-four points, against $1.00$ for an integer tone. The symbol is a model of the bracket, and the model is faithful exactly when the bracket is constant.
 
-The two populated types are the two rates. The real central part is the mean $(h\nu-h_t)$ and the Hermitian traceless part is the gap $\lvert\vec h_\Psi\rvert$. The polar parent's two rates are the mean of the eigenvalues for the phase and the gap for every carried direction, so the symbol's two occupied types carry exactly the two rates.
+The two populated types are the two rates. The real central part is the mean $(hf_{\mathrm{frq}}-h_t)$ and the Hermitian traceless part is the gap $\lvert\vec h_\Psi\rvert$. The polar parent's two rates are the mean of the eigenvalues for the phase and the gap for every carried direction, so the symbol's two occupied types carry exactly the two rates.
 
 ## Which Parameters the Transform Moves
 
@@ -225,7 +225,7 @@ The phase is a character and the rotor is not: $0.6$ and $0.9$ about different a
 | --- | --- |
 | $\theta_{\mathrm{pwp}}=\omega t'-\vec k_\Phi\cdot\vec r$ | The plane wave's phase; the transform's exponent |
 | $\varrho=1$, $\tilde U_{\Psi,\mathrm b}=e_t$, $\tilde u_{\mathrm r}=\pm e_t$ | The word of the transform's kernel |
-| $\langle\sigma\rangle_\natural=(h\nu-h_t)^{2}-\lvert\vec h_\Psi\rvert^{2}$ | The symbol's quaternionic norm; the elementary determinant |
+| $\langle\sigma\rangle_\natural=(hf_{\mathrm{frq}}-h_t)^{2}-\lvert\vec h_\Psi\rvert^{2}$ | The symbol's quaternionic norm; the elementary determinant |
 | $\det\sigma=\langle\sigma\rangle_\natural^{2}$ | The determinant; its zeros are the cone, hence the spectrum |
 | $h_t\pm\lvert\vec h_\Psi\rvert$ | The two eigenvalues; the mean and the gap; the two rates |
 | $1+1+3+3=8$ | The four types of the bracket, and their dimensions |

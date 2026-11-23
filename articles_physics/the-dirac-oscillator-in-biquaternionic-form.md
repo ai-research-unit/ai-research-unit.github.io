@@ -215,7 +215,7 @@ $$
 \vec p^{\,2} + m^2\omega^2\vec r^{\,2} = 2m\left(\frac{\vec p^{2}}{2\,m} + \tfrac12 m\omega^2\vec r^{\,2}\right) = 2m\,H_{\mathrm{osc}},
 $$
 
-with the standard spectrum $h\nu\,(N+\tfrac32)$ in terms of the total oscillator number $N = 2n_r + l$. The constant $-3\,\frac{h}{2\pi}\,m\,\omega$ then removes exactly the zero-point energy of the oscillator, leaving $2\,\frac{h}{2\pi}\,m\,\omega N$. The last term is a **spin–orbit coupling** whose strength is tied to the oscillator frequency; it is not a small correction but a term of the same order as the level spacing, and it governs the whole spectral structure.
+with the standard spectrum $hf_{\mathrm{frq}}\,(N+\tfrac32)$ in terms of the total oscillator number $N = 2n_r + l$. The constant $-3\,\frac{h}{2\pi}\,m\,\omega$ then removes exactly the zero-point energy of the oscillator, leaving $2\,\frac{h}{2\pi}\,m\,\omega N$. The last term is a **spin–orbit coupling** whose strength is tied to the oscillator frequency; it is not a small correction but a term of the same order as the level spacing, and it governs the whole spectral structure.
 
 **Two values, and two only.** Write $S=\sum_\eta L_{\mathrm{orb},\eta}\,i\vec e_\eta$ for the last term without its coefficient. Since $(i\vec e_\eta)^2=e_t$ and $i\vec e_j$ anticommutes with $i\vec e_\eta$ for $j\ne k$, and since $(i\vec e_j)(i\vec e_\eta)=i\epsilon_{j\eta l}\,i\vec e_l$, the square of $S$ is
 
@@ -256,7 +256,7 @@ $$
 
 This is the Dirac-oscillator spectrum. Its structure is the two-branch pattern familiar from the literature: one branch is a tower in the radial quantum number $n_r$ alone, the other a tower shifted by the orbital quantum number; both are positive, so $E^2 \geq m^2c^4$ and the spectrum has a gap. The ground state has $n_r = 0$, $l = 0$, $s_{\mathrm{tot}} = \tfrac12$, and energy $E = \pm mc^2$; the first excited level stands at $E^2 = m^2c^4 +4\,\frac{h}{2\pi}\,m\,c^{2}\,\omega$.
 
-The formula was also checked by direct diagonalisation of $H$ in a truncated oscillator basis, with the energy squared in units of $(h\nu)^{2}$ and the truncation $n_x+n_y+n_z\leq8$: the distinct values of $E^2$ that come out are $1$, $5$, $7$, $9$, $11$, $13$, $15$, $17$, $19$, $23$, $27$, $31$, $35$, which is the aligned tower $1+4n_r$ together with the anti-aligned tower $1+2(2n_r+2l+1)$ restricted to $l\geq1$. The value $3$ is absent because the anti-aligned branch needs $l\geq1$, and the values $21$, $25$, $29$ and $33$ because the aligned states that carry them need more than eight oscillator quanta. The lowest level $E^2=1$ comes out with the large multiplicity that the aligned branch predicts.
+The formula was also checked by direct diagonalisation of $H$ in a truncated oscillator basis, with the energy squared in units of $(hf_{\mathrm{frq}})^{2}$ and the truncation $n_x+n_y+n_z\leq8$: the distinct values of $E^2$ that come out are $1$, $5$, $7$, $9$, $11$, $13$, $15$, $17$, $19$, $23$, $27$, $31$, $35$, which is the aligned tower $1+4n_r$ together with the anti-aligned tower $1+2(2n_r+2l+1)$ restricted to $l\geq1$. The value $3$ is absent because the anti-aligned branch needs $l\geq1$, and the values $21$, $25$, $29$ and $33$ because the aligned states that carry them need more than eight oscillator quanta. The lowest level $E^2=1$ comes out with the large multiplicity that the aligned branch predicts.
 
 The $s_{\mathrm{tot}} = l+\tfrac12$ branch depends on $n_r$ and **not on $l$**. This is the characteristic degeneracy of the Dirac oscillator: for every $l$ with $s_{\mathrm{tot}} = l+\tfrac12$, the state with $n_r = 0$ has the same energy $E = \pm mc^2$, so the ground level is infinitely degenerate, and so is every other level of that branch, since $E^2$ there does not depend on $l$ at all. The degeneracy is not an artefact of the elimination of $\tilde{Ξ}_{-}$ or of a particular gauge: it follows from the exact operator identity above, because the value $+\frac{h}{2\pi}\,l$ of $S$ cancels the orbital content of $N$ precisely for the aligned states. It is the same zero-mode structure that appears in the supersymmetric interpretation of the biquaternion section below, and it is the reason the model is called a "pseudo-oscillator": the spatial oscillator and the spin–orbit term conspire to produce a degeneracy pattern different from the non-relativistic oscillator's.
 
@@ -288,7 +288,7 @@ $$
 = p^2 + m^2\omega^2Q^2 -\frac{h}{2\pi}\,m\,\omega.
 $$
 
-The oscillator's zero point is $\tfrac12h\nu$, so $p^2 + m^2\omega^2Q^2$ has eigenvalues $2\,\frac{h}{2\pi}\,m\,\omega(n+\tfrac12)$, and the constant removes the zero point exactly:
+The oscillator's zero point is $\tfrac12hf_{\mathrm{frq}}$, so $p^2 + m^2\omega^2Q^2$ has eigenvalues $2\,\frac{h}{2\pi}\,m\,\omega(n+\tfrac12)$, and the constant removes the zero point exactly:
 
 $$
 \boxed{\;E^2 = m^2c^4 +2\,\frac{h}{2\pi}\,m\,\omega c^2\,n, \qquad n = 0,1,2,\dots\;}
@@ -298,18 +298,18 @@ The spectrum is a single tower in $n$, and the ground state sits at $E = \pm mc^
 
 ## The Non-Relativistic Limit and the Pseudo-Oscillator
 
-The companion article on the Foldy–Wouthuysen transformation gives the systematic non-relativistic expansion. Applied to the oscillator it gives, on the large part, the effective operator $\mathcal{Q}_+\mathcal{Q}_-/(2m)$ — the leading order of $E-mc^2$ read off $E^2-m^2c^4=c^2\mathcal{Q}_+\mathcal{Q}_-$ — and its negative on the small part. The oscillator part of that operator is $\vec p^{\,2}/(2m)+\tfrac12m\omega^2\vec r^{\,2}$, whose levels would be $h\nu\,(N+\tfrac32)$ if it were the whole of it.
+The companion article on the Foldy–Wouthuysen transformation gives the systematic non-relativistic expansion. Applied to the oscillator it gives, on the large part, the effective operator $\mathcal{Q}_+\mathcal{Q}_-/(2m)$ — the leading order of $E-mc^2$ read off $E^2-m^2c^4=c^2\mathcal{Q}_+\mathcal{Q}_-$ — and its negative on the small part. The oscillator part of that operator is $\vec p^{\,2}/(2m)+\tfrac12m\omega^2\vec r^{\,2}$, whose levels would be $hf_{\mathrm{frq}}\,(N+\tfrac32)$ if it were the whole of it.
 
 It is not the whole operator. Divided by $2m$, the boxed identity gives
 
 $$\frac{\mathcal{Q}_+\mathcal{Q}_-c}{2\,m\,c}
-=\frac{\vec p^{2}}{2\,m}+\tfrac12m\omega^2\vec r^{\,2}-\tfrac32h\nu-\omega\,S ,
+=\frac{\vec p^{2}}{2\,m}+\tfrac12m\omega^2\vec r^{\,2}-\tfrac32hf_{\mathrm{frq}}-\omega\,S ,
 $$
 
-so the zero point is removed and a spin–orbit term of order $\omega$ is added, with no factor of $1/c^2$. Its two values are $-h\nu\,l$ for $s_{\mathrm{tot}}=l+\tfrac12$ and $+h\nu\,(l+1)$ for $s_{\mathrm{tot}}=l-\tfrac12$: both are of the order of the spacing $h\nu$, and both grow with $l$. At leading order in $1/c$ the energy above the mass gap is therefore
+so the zero point is removed and a spin–orbit term of order $\omega$ is added, with no factor of $1/c^2$. Its two values are $-hf_{\mathrm{frq}}\,l$ for $s_{\mathrm{tot}}=l+\tfrac12$ and $+hf_{\mathrm{frq}}\,(l+1)$ for $s_{\mathrm{tot}}=l-\tfrac12$: both are of the order of the spacing $hf_{\mathrm{frq}}$, and both grow with $l$. At leading order in $1/c$ the energy above the mass gap is therefore
 
 $$
-E-mc^2 \approx  h\nu\left(N-\mathcal{S}\right),
+E-mc^2 \approx  hf_{\mathrm{frq}}\left(N-\mathcal{S}\right),
 $$
 
 which reproduces the two branches of the spectrum in the non-relativistic regime. Treating the spin–orbit term as a small perturbation of the non-relativistic oscillator is not legitimate: it is the same order as the level spacing, and it changes the degeneracy pattern. The non-relativistic limit of the Dirac oscillator is the oscillator **with a spin–orbit coupling of order $\omega$**, not the pure oscillator.

@@ -94,7 +94,7 @@ The formula has three immediate consequences. It is **reparametrisation invarian
 The cleanest exactly solvable case is the fixed field. Take the field along $\vec u_z$,
 
 $$
-\tilde H_\Psi = -\frac{h\nu_{L}}{2}\,i\vec e_z,
+\tilde H_\Psi = -\frac{hf_{\mathrm{frq},L}}{2}\,i\vec e_z,
 \qquad \omega_L = \gamma B > 0,
 $$
 
@@ -198,7 +198,7 @@ $$
 \vec u_x(r'_t) = \left(\sin\theta_0\cos(\omega r'_t/c),\,-\sin\theta_0\sin(\omega r'_t/c),\,\cos\theta_0\right),
 $$
 
-with Hamiltonian $\tilde H_\Psi(r'_t) = -\frac{h\nu_{L}}{2}i\,\vec u_x(r'_t)$ and $u_x(r'_t)_k\tilde S_{\Psi,\eta}$ the instantaneous spin along the field. Transforming to the frame that corotates with the field, $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2\,c}\vec e_z)$, gives the static effective Hamiltonian
+with Hamiltonian $\tilde H_\Psi(r'_t) = -\frac{hf_{\mathrm{frq},L}}{2}i\,\vec u_x(r'_t)$ and $u_x(r'_t)_k\tilde S_{\Psi,\eta}$ the instantaneous spin along the field. Transforming to the frame that corotates with the field, $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2\,c}\vec e_z)$, gives the static effective Hamiltonian
 
 $$
 \tilde{H}_{\Psi,R} = \tilde u_{\mathrm r}^{*}\tilde H_\Psi\tilde u_{\mathrm r} -i\,\frac{h}{2\pi}\,\tilde{u}_{\mathrm r}^{*}\partial/\partial r'_t\tilde u_{\mathrm r}
@@ -281,7 +281,7 @@ The geometric phase is carried by the spinor, not by the idempotent: the density
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace |
 | $\mathbb{B}_{H}$ | Unit real quaternions; the rotation/holonomy rotors |
 | $\tilde{S}_{\Psi,\eta} =\frac{h}{4\pi}i\vec e_\eta$ | Spin observable along $\vec e_\eta$ |
-| $\tilde H_\Psi = -\frac{h\nu_{L}}{2}i\vec e_z$ | Fixed-field Hamiltonian |
+| $\tilde H_\Psi = -\frac{hf_{\mathrm{frq},L}}{2}i\vec e_z$ | Fixed-field Hamiltonian |
 | $\omega_L = \gamma B$ | Larmor frequency |
 | $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Pure-state idempotent; carries no phase |
 | $\tilde{Ξ}$ | Spinor; carries the geometric phase |

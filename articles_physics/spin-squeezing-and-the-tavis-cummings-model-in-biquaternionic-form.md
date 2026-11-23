@@ -80,7 +80,7 @@ The collective state space, restricted to the symmetric subspace, is the spin-$N
 The Tavis–Cummings model couples $N$ two-level systems to a single bosonic mode with the Hamiltonian
 
 $$
-\tilde H_\Psi =h\nu_{c}\,a^{\dagger}\,a+ \omega_a\,\tilde S_{\Psi,\mathrm{tot},3} + g\left(a^\dagger \tilde S_{\Psi,\mathrm{tot},-} + a\,\tilde S_{\Psi,\mathrm{tot},+}\right),
+\tilde H_\Psi =hf_{\mathrm{frq},c}\,a^{\dagger}\,a+ \omega_a\,\tilde S_{\Psi,\mathrm{tot},3} + g\left(a^\dagger \tilde S_{\Psi,\mathrm{tot},-} + a\,\tilde S_{\Psi,\mathrm{tot},+}\right),
 $$
 
 where $a,a^\dagger$ are the mode operators, $\omega_c$ the mode frequency, $\omega_a$ the atomic transition frequency, and $g$ the single-spin coupling. The interaction conserves the total excitation number
@@ -97,7 +97,7 @@ The interaction kept is the **rotating-wave** term: the mode annihilates a photo
 
 ### The Single-Excitation Sector and the Collective Rabi Splitting
 
-Restrict to the manifold with one excitation, spanned by the states $|1,\text{all down}\rangle$ (one photon, no excited spin) and $|0,\text{one excited}\rangle$ (no photon, one spin excited, in the symmetric combination). On resonance $\omega_a = \omega_c = \omega$ the two states are degenerate at energy $h\nu\,(1-N/2)$, and the interaction couples them with the matrix element
+Restrict to the manifold with one excitation, spanned by the states $|1,\text{all down}\rangle$ (one photon, no excited spin) and $|0,\text{one excited}\rangle$ (no photon, one spin excited, in the symmetric combination). On resonance $\omega_a = \omega_c = \omega$ the two states are degenerate at energy $hf_{\mathrm{frq}}\,(1-N/2)$, and the interaction couples them with the matrix element
 
 $$
 \langle  1,\text{all down}|g\,a\,\tilde S_{\Psi,\mathrm{tot},+}^{\vphantom{}^{*}}|0,\text{one excited}\rangle  =\frac{h}{2\pi}\,g\sqrt{N},
@@ -130,7 +130,7 @@ $$
 the **Holstein–Primakoff** transformation truncated at leading order. Substituting into the Tavis–Cummings Hamiltonian gives a quadratic two-mode problem,
 
 $$
-\tilde H_\Psi \approx  h\nu_{c}\,a^{\dagger}\,a+h\nu_{a}\left(\frac{N}{2}-b^\dagger b\right)
+\tilde H_\Psi \approx  hf_{\mathrm{frq},c}\,a^{\dagger}\,a+hf_{\mathrm{frq},a}\left(\frac{N}{2}-b^\dagger b\right)
 +\frac{h}{2\pi}\,g\sqrt{N}\left(a^\dagger b + a b^\dagger\right),
 $$
 
@@ -249,7 +249,7 @@ For $N$ spin-1/2 particles the collective operators $\tilde S_{\Psi,\mathrm{tot}
 The **Tavis–Cummings model**,
 
 $$
-\tilde H_\Psi =h\nu_{c}\,a^{\dagger}\,a+ \omega_a\,\tilde S_{\Psi,\mathrm{tot},3} + g\left(a^\dagger\tilde S_{\Psi,\mathrm{tot},-} + a\tilde S_{\Psi,\mathrm{tot},+}\right),
+\tilde H_\Psi =hf_{\mathrm{frq},c}\,a^{\dagger}\,a+ \omega_a\,\tilde S_{\Psi,\mathrm{tot},3} + g\left(a^\dagger\tilde S_{\Psi,\mathrm{tot},-} + a\tilde S_{\Psi,\mathrm{tot},+}\right),
 $$
 
 conserves the excitation number $a^\dagger a +\frac{2\pi \tilde{S}_{\Psi,\mathrm{tot},3}}{h}+ N/2$. In its single-excitation sector the collective coupling is $\frac{h}{2\pi}\,g\sqrt{N}$ and the collective Rabi splitting is
@@ -286,7 +286,7 @@ In the algebra the mean spin is a linear reading of the plain form $2\,\mathrm{S
 | $\vec u(\theta,\theta_{\mathrm{azm}})$ | Direction of the collective mean spin |
 | $a, a^\dagger$ | Bosonic mode operators |
 | $g$ | Single-spin coupling to the mode |
-| $\tilde H_\Psi =h\nu_{c}\,a^{\dagger}\,a+ \omega_a\tilde S_{\Psi,\mathrm{tot},3} + g(a^\dagger\tilde S_{\Psi,\mathrm{tot},-}+a\tilde S_{\Psi,\mathrm{tot},+})$ | Tavis–Cummings Hamiltonian |
+| $\tilde H_\Psi =hf_{\mathrm{frq},c}\,a^{\dagger}\,a+ \omega_a\tilde S_{\Psi,\mathrm{tot},3} + g(a^\dagger\tilde S_{\Psi,\mathrm{tot},-}+a\tilde S_{\Psi,\mathrm{tot},+})$ | Tavis–Cummings Hamiltonian |
 | $a^\dagger a +\frac{2\pi \tilde{S}_{\Psi,\mathrm{tot},3}}{h}+ N/2$ | Conserved excitation number |
 | $\delta E =2\,\frac{h}{2\pi}\,g\sqrt{N}$ | Collective Rabi splitting |
 | $\zeta_R^2 = N(\mathcal{V}_{\mathrm{var}} \tilde S_{\Psi,\mathrm{tot},\perp})^2_{\min}/|\langle\vec S_{\mathrm{tot}}\rangle|^2$ | Wineland squeezing parameter |

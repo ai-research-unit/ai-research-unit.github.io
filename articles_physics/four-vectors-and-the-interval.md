@@ -86,7 +86,7 @@ with no temporal part and no dependence on $r'_{1t}$ or $r'_{2t}$. The temporal 
 
 **The Lorentz action is a congruence by an invertible element, and the invertible need not be in the sector.** For any invertible $\tilde U$ the map $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ carries $\mathbb{B}_{\Phi}$ into itself, since $(\tilde U\tilde Q\tilde U^{*})^{*}=\tilde U\tilde Q^{*}\tilde U^{*}=-\tilde U\tilde Q\tilde U^{*}$. The norm scales by $\lvert N(\tilde U)\rvert^{2}$, so the action is by isometries exactly on the elements with $\lvert N(\tilde U)\rvert=1$, a set of real dimension $7$ strictly larger than the norm-one group.
 
-For a momentum $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ the eigenvalues are $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)$, the two frequencies are $\nu_\pm=mc\,e^{\pm\theta_{\mathrm{rpd}}}$ for a massive momentum, and the product is the mass squared.
+For a momentum $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ the eigenvalues are $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)$, the two frequencies are $f_{\mathrm{dop},\pm}=mc\,e^{\pm\theta_{\mathrm{rpd}}}$ for a massive momentum, and the product is the mass squared.
 
 The eigenprojectors lie in the other sector. They are $\tilde\Pi_{\mathrm{id},\pm}=\frac12(e_t\mp i\vec u_p)$, Hermitian idempotents, so $\tilde\Pi_{\mathrm{id},\pm}\in\mathbb{B}_{\Psi}$ although $\tilde P_{\Phi}\in\mathbb{B}_{\Phi}$. The decomposition of a material element is written with informational idempotents.
 
@@ -359,24 +359,24 @@ $$
 \lambda_+\lambda_-=-m^{2}c^{2}.
 $$
 
-The eigenvalues are imaginary and the frequencies are real. Writing $\nu_\pm=\lambda_\pm/i$ gives the two non-negative numbers
+The eigenvalues are imaginary and the frequencies are real. Writing $f_{\mathrm{dop},\pm}=\lambda_\pm/i$ gives the two non-negative numbers
 
 $$
-\nu_\pm=\frac{E}{c}\pm\lvert\vec p\rvert,
+f_{\mathrm{dop},\pm}=\frac{E}{c}\pm\lvert\vec p\rvert,
 \qquad
-\nu_++\nu_-=\frac{2E}{c},
+f_{\mathrm{dop},+}+f_{\mathrm{dop},-}=\frac{2E}{c},
 \qquad
-\nu_+-\nu_-=2\lvert\vec p\rvert,
+f_{\mathrm{dop},+}-f_{\mathrm{dop},-}=2\lvert\vec p\rvert,
 \qquad
-\nu_+\nu_-=m^{2}c^{2}.
+f_{\mathrm{dop},+}f_{\mathrm{dop},-}=m^{2}c^{2}.
 $$
 
 The pair is the Doppler pair of the momentum's own rapidity. For $m>0$ the rapidity is fixed by $\cosh\theta_{\mathrm{rpd}}=E/(mc^{2})$ and $\sinh\theta_{\mathrm{rpd}}=\lvert\vec p\rvert/(mc)$, so
 
 $$
-\nu_\pm=mc\,e^{\pm\theta_{\mathrm{rpd}}},
+f_{\mathrm{dop},\pm}=mc\,e^{\pm\theta_{\mathrm{rpd}}},
 \qquad
-\frac{\nu_+}{\nu_-}=e^{2\theta_{\mathrm{rpd}}},
+\frac{f_{\mathrm{dop},+}}{f_{\mathrm{dop},-}}=e^{2\theta_{\mathrm{rpd}}},
 $$
 
 and the two frequencies are the rest frequency $mc$ scaled by the two reciprocal Doppler factors. The product is the mass squared and does not depend on the frame; the ratio is the squared Doppler factor and depends on nothing else.
@@ -624,7 +624,7 @@ The sector is a chart and the informational sector is the other chart. The ident
 | the action | $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$, sector preserved for every invertible $\tilde U$, norm scaled by $\lvert N(\tilde U)\rvert^{2}$ |
 | the group | $\mathbb{B}^{\times}_{1}/\{\pm e_t\}\cong SO^{+}(1,3)$, $\mathbb{B}^{\times}_{1}\cong\mathrm{Spin}(1,3)$ |
 | the factorisation | $\tilde U=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, boost informational, rotation material |
-| the spectrum | $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)$; $\nu_\pm=mc\,e^{\pm\theta_{\mathrm{rpd}}}$; $\nu_+\nu_-=m^{2}c^{2}$ |
+| the spectrum | $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)$; $f_{\mathrm{dop},\pm}=mc\,e^{\pm\theta_{\mathrm{rpd}}}$; $f_{\mathrm{dop},+}f_{\mathrm{dop},-}=m^{2}c^{2}$ |
 | the projectors | $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\mp i\vec u_p)$, Hermitian idempotents, null elements, in $\mathbb{B}_{\Psi}$ |
 | the degeneracies | $\vec p=0$: repeated eigenvalue; $E/c=\lvert\vec p\rvert$: null element, one zero eigenvalue |
 | the null set | the zero-divisor cone, real dimension three, apex excluded from the divisors |
@@ -647,7 +647,7 @@ The sector is a chart and the informational sector is the other chart. The ident
 | the rotation factor | $\tilde u_{\mathrm r}$ | $\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\vec u_{\mathrm r}$, real |
 | the rapidity | $\theta_{\mathrm{rpd}}$ | $\tanh\theta_{\mathrm{rpd}}=\lvert\vec p\rvert c/E$ |
 | the eigenvalues | $\lambda_\pm$ | $i(E/c\pm\lvert\vec p\rvert)$ |
-| the frequencies | $\nu_\pm$ | $\lambda_\pm/i=mc\,e^{\pm\theta_{\mathrm{rpd}}}$ |
+| the frequencies | $f_{\mathrm{dop},\pm}$ | $\lambda_\pm/i=mc\,e^{\pm\theta_{\mathrm{rpd}}}$ |
 | the projectors | $\tilde\Pi_{\mathrm{id},\pm}$ | $\tfrac12(e_t\mp i\vec u_p)$, Hermitian idempotents |
 | the four-velocity | $\tilde V_{\Phi}$ | $i\gamma c\,e_t+\gamma\vec v$, norm $-c^{2}$ |
 | the four-momentum | $\tilde P_{\Phi}$ | $i\frac{E}{c}e_t+\vec p$, norm $-m^{2}c^{2}$ |

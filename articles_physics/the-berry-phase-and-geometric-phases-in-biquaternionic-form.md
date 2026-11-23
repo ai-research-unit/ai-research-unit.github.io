@@ -227,7 +227,7 @@ $$
 \vec R(r'_t) = R\bigl(\sin\theta_0\cos(\omega r'_t/c),\ \sin\theta_0\sin(\omega r'_t/c),\ \cos\theta_0\bigr) ,
 $$
 
-with $R > 0$ and $\theta_0 \in (0,\pi)$ fixed. The path is the circle $\theta = \theta_0$ on the Bloch sphere, traversed once per period $T = 2\pi/\omega$, and the gap is $\mathcal{G}_{\mathrm{gap}} = R$ everywhere on the path, so the adiabatic theorem applies provided the rotation is slow compared with the gap, $h\nu\ll  R$. The parameter $\theta_{\mathrm{azm}} = \omega r'_t/c$ runs from $0$ to $2\pi$.
+with $R > 0$ and $\theta_0 \in (0,\pi)$ fixed. The path is the circle $\theta = \theta_0$ on the Bloch sphere, traversed once per period $T = 2\pi/\omega$, and the gap is $\mathcal{G}_{\mathrm{gap}} = R$ everywhere on the path, so the adiabatic theorem applies provided the rotation is slow compared with the gap, $hf_{\mathrm{frq}}\ll  R$. The parameter $\theta_{\mathrm{azm}} = \omega r'_t/c$ runs from $0$ to $2\pi$.
 
 The spin-up spinor is $\tilde{Ξ}_{+}$ of the previous section with $\theta = \theta_0$. Its connection is computed by direct application of the definition, and the result is
 

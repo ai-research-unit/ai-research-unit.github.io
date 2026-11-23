@@ -212,7 +212,7 @@ $$
 \qquad k_{t}^{\prime}=\frac{\omega}{c} .
 $$
 
-This is the standard relativistic dispersion relation $E^2 = p^2c^2 + m^2c^4$ under $E =h\nu=\frac{h}{2\pi} c\,k_t^{\prime}$, $p =\frac{h}{2\pi}\,k_\Phi$, and in biquaternion language it is exactly the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ — the biquaternion norm of the four-wavevector fixed to a negative constant, the same statement as $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$ for the four-momentum. The two roots
+This is the standard relativistic dispersion relation $E^2 = p^2c^2 + m^2c^4$ under $E =hf_{\mathrm{frq}}=\frac{h}{2\pi} c\,k_t^{\prime}$, $p =\frac{h}{2\pi}\,k_\Phi$, and in biquaternion language it is exactly the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ — the biquaternion norm of the four-wavevector fixed to a negative constant, the same statement as $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$ for the four-momentum. The two roots
 
 $$
 \omega = \pm c\sqrt{k_\Phi^2 + k_m^{2}}
@@ -247,7 +247,7 @@ Verifying the equivalence is a one-line computation: $(\tilde\nabla_\Phi)^{\natu
 The current is conserved, but its time component $\rho$ is **not positive definite**. For the positive-frequency plane wave $\tilde\Xi=N \exp(i\theta_{\mathrm{pwp}})$ with $\omega>0$ and the real angle $\theta_{\mathrm{pwp}}=\vec k_\Phi\cdot\vec r-\omega r'_t/c$, direct substitution gives
 
 $$
-\rho =\frac{h\nu}{m\,c^{2}}\,|N|^2 > 0 ,
+\rho =\frac{hf_{\mathrm{frq}}}{m\,c^{2}}\,|N|^2 > 0 ,
 $$
 
 while for the negative-frequency branch, that is the same expression with $\omega<0$, the same computation gives $\rho<0$ with the same magnitude. The two branches therefore carry charges of opposite sign, and $\rho$ cannot be read as a probability density. This is the negative-probability problem, and it is a property of the conserved current itself, not of the notation: every step above was made from the equation and the definitions.

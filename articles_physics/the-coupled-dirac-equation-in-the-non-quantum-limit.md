@@ -28,13 +28,13 @@ What is not new. The minimal substitution into the Dirac equation, the kinetic f
 
 The restriction. The word is defined where $N(\tilde\Xi)\neq0$; the equation and its limit are statements on that domain.
 
-The signs. The parent writes the coupling as $ϙ$ with $ϙ=-q$. Every display here uses $q$, the electric charge, $\vec\pi=\vec p-q\vec A$ and $\mathcal E=E-q\varphi$; the parent's $\frac{h}{2\pi} c\kappa_t=E+ϙcA_t$ is $E-q\varphi$ in these letters.
+The signs. The parent writes the coupling as $ϙ$ with $ϙ=-q$. Every display here uses $q$, the electric charge, $\vec\pi=\vec p-q\vec A$ and $\mathcal E=E-q\omicron_{\mathrm{pot}}$; the parent's $\frac{h}{2\pi} c\kappa_t=E+ϙcA_t$ is $E-q\omicron_{\mathrm{pot}}$ in these letters.
 
-Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; $\tilde K_{\Phi,\mathrm{gco}}$ the mechanical wavevector; $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ the kinetic four-velocity; $k_m=\frac{2\pi mc}{h}$; $\rho_{\mathrm{num}}=\varrho^{2}$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$.
+Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_{t}+\vec A$; $\tilde K_{\Phi,\mathrm{gco}}$ the mechanical wavevector; $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ the kinetic four-velocity; $k_m=\frac{2\pi mc}{h}$; $\rho_{\mathrm{num}}=\varrho^{2}$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$.
 
 ## One Addition and Two Frames
 
-The addition. $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$. The temporal slot is $\frac{h}{2\pi} c\kappa_t=E-q\varphi$ and the spatial one is $\frac{h}{2\pi}\vec\kappa=\vec\pi$: one element's two slots give the two mechanical variables and nothing else.
+The addition. $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$. The temporal slot is $\frac{h}{2\pi} c\kappa_t=E-q\omicron_{\mathrm{pot}}$ and the spatial one is $\frac{h}{2\pi}\vec\kappa=\vec\pi$: one element's two slots give the two mechanical variables and nothing else.
 
 The frame. By the parent's proposition,
 
@@ -91,7 +91,7 @@ $$
 
 and $\mathcal B_\Psi$ is now the kinetic boost, so the relation between the two halves is a relation between the two halves *in the frame of the trajectory*. In the canonical frame the same relation would carry a boost that is not the velocity's, and the difference is the potential's.
 
-What the phase gradient then is. $\vec p=\vec\pi+q\vec A=\gamma m\vec v+q\vec A$ and $E=\mathcal E+q\varphi=\gamma mc^{2}+q\varphi$: the canonical momentum is the kinetic one plus the potential's contribution, and the two are different objects with different laws. **The canonical momentum is conserved only where the potential is; the kinetic one is what the force changes.**
+What the phase gradient then is. $\vec p=\vec\pi+q\vec A=\gamma m\vec v+q\vec A$ and $E=\mathcal E+q\omicron_{\mathrm{pot}}=\gamma mc^{2}+q\omicron_{\mathrm{pot}}$: the canonical momentum is the kinetic one plus the potential's contribution, and the two are different objects with different laws. **The canonical momentum is conserved only where the potential is; the kinetic one is what the force changes.**
 
 Why this is the family's characteristic order zero. A Klein–Gordon field's order zero fixes the mechanical shell and nothing else. Here it fixes the shell and the frame's polarisation, and the frame is the kinetic one. Two objects, one algebraic system, and no derivative taken.
 
@@ -143,11 +143,11 @@ It does not remove the amplitude's absence. The equation is first order, so no a
 
 The substitution was checked to be one addition. $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{2\pi ϙ}{h}\tilde A_\Phi$ has temporal slot $i(E+ϙcA_t)\frac{2\pi}{h\,c}$ and spatial slots $(\vec p-q\vec A)\frac{2\pi}{h}$, which are $\frac{2\pi i\mathcal E}{h\,c}$ and $\frac{2\pi \vec\pi}{h}$; the two slots match the mechanical variables slot by slot, with no independent sign.
 
-The shell's form was checked. Applying the parent's proposition to the mechanical wavevector gives $\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}$, whose real content is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}$; the free case is recovered at $\varphi=\vec A=0$ term for term.
+The shell's form was checked. Applying the parent's proposition to the mechanical wavevector gives $\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}$, whose real content is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}$; the free case is recovered at $\omicron_{\mathrm{pot}}=\vec A=0$ term for term.
 
 The bracket types were checked against the parent's table. The phase bracket is central imaginary and receives the potential; the boost bracket is Hermitian and receives it; the rotor bracket is a real vector part and does not. **The exclusion is by type and not by choice**, and it was verified on the four types.
 
-The force was checked independently. With arbitrary $\varphi$ and $\vec A$, the three components of $-\frac{c^{2}}{2\mathcal E}\partial_{i}\left(\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}\right)-\left(d\pi_{i}/dt'-q(\vec E+\vec v\times\vec B)_{i}\right)$ vanish identically, with $c\neq1$ so that the factors of $c$ are exercised.
+The force was checked independently. With arbitrary $\omicron_{\mathrm{pot}}$ and $\vec A$, the three components of $-\frac{c^{2}}{2\mathcal E}\partial_{i}\left(\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}\right)-\left(d\pi_{i}/dt'-q(\vec E+\vec v\times\vec B)_{i}\right)$ vanish identically, with $c\neq1$ so that the factors of $c$ are exercised.
 
 What was not checked. No precession rate was integrated and no anomalous-moment term was constructed. The claims are about structure, identities and types, and all three were verified.
 
@@ -169,7 +169,7 @@ The order structure is the free one, and the equation being first order means th
 | $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | The scale; the density |
 | $\tilde K_\Phi=i(\frac{2\pi E}{h\,c})e_{t}+\frac{2\pi \vec p}{h}$ | The canonical wavevector |
 | $\tilde K_{\Phi,\mathrm{gco}}=i(\frac{2\pi \mathcal E}{h\,c})e_{t}+\frac{2\pi \vec\pi}{h}$ | The mechanical wavevector |
-| $\vec\pi=\vec p-q\vec A$, $\mathcal E=E-q\varphi$ | Mechanical momentum and energy |
+| $\vec\pi=\vec p-q\vec A$, $\mathcal E=E-q\omicron_{\mathrm{pot}}$ | Mechanical momentum and energy |
 | $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_{t}+\vec v)$ | The kinetic four-velocity |
 | $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$ | The kinetic boost's inverse square |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin direction |

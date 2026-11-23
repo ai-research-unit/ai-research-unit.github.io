@@ -36,10 +36,10 @@ Written out. A term $m\,\bar Q_Ld_R$ is not a singlet, and the arithmetic shows 
 
 | Forbidden term | Why it fails | Restoring Yukawa matrix |
 |---|---|---|
-| $m_u\bar Q_Lu_R$ | $Y=-1/6+2/3\neq0$ | $Y_{u}$ with $\tilde\varphi$ |
-| $m_d\bar Q_Ld_R$ | $Y=-1/6-1/3\neq0$ | $Y_{d}$ with $\varphi$ |
-| $m_e\bar L_Le_R$ | $Y=+1/2-1\neq0$ | $Y_{e}$ with $\varphi$ |
-| $m_\nu\bar L_L\nu_R$ | $Y=+1/2\neq0$; a doublet cannot contract with a singlet | $Y_{\nu}$ with $\tilde\varphi$ |
+| $m_u\bar Q_Lu_R$ | $Y=-1/6+2/3\neq0$ | $Y_{u}$ with $\tilde\omicron_{\mathrm{hgs}}$ |
+| $m_d\bar Q_Ld_R$ | $Y=-1/6-1/3\neq0$ | $Y_{d}$ with $\omicron_{\mathrm{hgs}}$ |
+| $m_e\bar L_Le_R$ | $Y=+1/2-1\neq0$ | $Y_{e}$ with $\omicron_{\mathrm{hgs}}$ |
+| $m_\nu\bar L_L\nu_R$ | $Y=+1/2\neq0$; a doublet cannot contract with a singlet | $Y_{\nu}$ with $\tilde\omicron_{\mathrm{hgs}}$ |
 
 The last row differs in kind, and not in its quantum numbers. All four fail the same two tests. Every left-handed field here is a doublet and every right-handed one a singlet, so no bare term is an $SU(2)_L$ singlet. And every bare term has non-zero hypercharge — the neutrino's is $+1/2$, since $\bar L_L$ carries $+1/2$ and $\nu_R$ carries $0$. What separates the last row is that $\nu_R$ is absent from the minimal model: the other three right-handed fields are in the spectrum and their mass terms are forbidden, while the neutrino's mass term is not forbidden so much as unavailable with the field. §*Neutrinos* records what the distinction changes.
 
@@ -50,20 +50,20 @@ What the gauge symmetry buys. A mass term is a parameter that would have been ar
 The term. Three matrices, one per fermion type, each $3\times3$ and complex:
 
 $$
-\mathcal{L}_{\mathrm{Yuk}}=-\sum_{a,b}\Bigl(\bar Q_{L,a}\varphi\,Y_{d,ab}\,d_{R,b}+\bar Q_{L,a}\tilde\varphi\,Y_{u,ab}\,u_{R,b}+\bar L_{L,a}\varphi\,Y_{e,ab}\,e_{R,b}\Bigr)+\text{h.c.}
+\mathcal{L}_{\mathrm{Yuk}}=-\sum_{a,b}\Bigl(\bar Q_{L,a}\omicron_{\mathrm{hgs}}\,Y_{d,ab}\,d_{R,b}+\bar Q_{L,a}\tilde\omicron_{\mathrm{hgs}}\,Y_{u,ab}\,u_{R,b}+\bar L_{L,a}\omicron_{\mathrm{hgs}}\,Y_{e,ab}\,e_{R,b}\Bigr)+\text{h.c.}
 $$
 
-with $a,b$ generation labels and $\tilde\varphi=i\sigma_2\varphi^{*}=\binom{\varphi^{0*}}{-\varphi^{+*}}$ of hypercharge $-\tfrac12$.
+with $a,b$ generation labels and $\tilde\omicron_{\mathrm{hgs}}=i\sigma_2\omicron_{\mathrm{hgs}}^{*}=\binom{\omicron_{\mathrm{hgs}}^{0*}}{-\omicron_{\mathrm{hgs}}^{+*}}$ of hypercharge $-\tfrac12$.
 
-Why three and not one. The three right-handed fields are distinct fields — hypercharge $-1/3$, $+2/3$, $-1$ — and a single matrix cannot couple the doublet to all three, because the three terms differ in the field they annihilate and not only in the scalar that compensates them. Two of the compensations happen to be the same scalar, $\varphi$ for the down and the lepton, and only the up-type needs $\tilde\varphi$; the count of matrices follows the count of right-handed fields, not the count of distinct scalar charges. The up-type term needs $\tilde\varphi$, because only $\varphi$'s conjugate has the hypercharge $-1/2$ that $\bar Q_L$ and $u_R$ leave unbalanced.
+Why three and not one. The three right-handed fields are distinct fields — hypercharge $-1/3$, $+2/3$, $-1$ — and a single matrix cannot couple the doublet to all three, because the three terms differ in the field they annihilate and not only in the scalar that compensates them. Two of the compensations happen to be the same scalar, $\omicron_{\mathrm{hgs}}$ for the down and the lepton, and only the up-type needs $\tilde\omicron_{\mathrm{hgs}}$; the count of matrices follows the count of right-handed fields, not the count of distinct scalar charges. The up-type term needs $\tilde\omicron_{\mathrm{hgs}}$, because only $\omicron_{\mathrm{hgs}}$'s conjugate has the hypercharge $-1/2$ that $\bar Q_L$ and $u_R$ leave unbalanced.
 
 The audit, in the form of a sum. Each term must carry total hypercharge zero:
 
 | Term | $\bar\psi_L$ | scalar | $\psi_R$ | Sum |
 |---|---|---|---|---|
-| $\bar Q_L\varphi\,d_R$ | $-1/6$ | $+1/2$ | $-1/3$ | $0$ |
-| $\bar Q_L\tilde\varphi\,u_R$ | $-1/6$ | $-1/2$ | $+2/3$ | $0$ |
-| $\bar L_L\varphi\,e_R$ | $+1/2$ | $+1/2$ | $-1$ | $0$ |
+| $\bar Q_L\omicron_{\mathrm{hgs}}\,d_R$ | $-1/6$ | $+1/2$ | $-1/3$ | $0$ |
+| $\bar Q_L\tilde\omicron_{\mathrm{hgs}}\,u_R$ | $-1/6$ | $-1/2$ | $+2/3$ | $0$ |
+| $\bar L_L\omicron_{\mathrm{hgs}}\,e_R$ | $+1/2$ | $+1/2$ | $-1$ | $0$ |
 
 **The matrices are general.** No symmetry of the gauge sector constrains $Y_{f}$ beyond $3\times3$ complex. In particular nothing requires $Y_{f}$ to be Hermitian, symmetric, or diagonal, and each of those assumptions would be an addition to the model. The three matrices are $54$ real parameters, and §*The Count of Thirteen* turns that number into thirteen.
 
@@ -71,7 +71,7 @@ What the sector costs and what it buys. It costs $54$ real parameters at the lev
 
 ## After the Breaking: The Mass Matrix
 
-The substitution. With $\langle\varphi\rangle=\frac{1}{\sqrt2}\binom{0}{v}$, the neutral component of $\varphi$ is replaced by $(v+h)/\sqrt2$ and each Yukawa term becomes a mass term plus a coupling to $h$:
+The substitution. With $\langle\omicron_{\mathrm{hgs}}\rangle=\frac{1}{\sqrt2}\binom{0}{v}$, the neutral component of $\omicron_{\mathrm{hgs}}$ is replaced by $(v+h)/\sqrt2$ and each Yukawa term becomes a mass term plus a coupling to $h$:
 
 $$
 \mathcal{L}_{\mathrm{Yuk}}\supset-\frac{v}{\sqrt2}\sum_{a,b}\bar\psi_{L,a}Y_{f,ab}\psi_{R,b}\left(1+\frac{h}{v}\right)+\text{h.c.}
@@ -385,7 +385,7 @@ The two questions. A neutrino mass requires either a right-handed singlet, and t
 
 The Dirac route. Add $\nu_R$, a singlet of all three groups. Then $Y_{\nu}$ is a fourth $3\times3$ complex matrix and the analysis of this article repeats verbatim: singular values for the masses, misalignment for the PMNS matrix. The count grows by seven: three masses, three angles, one phase.
 
-The Majorana route. A term $\overline{L_{L,c}}\,\tilde\varphi^{*}\,\lambda\,\tilde\varphi^{\dagger}L_L/M$ is the unique dimension-five operator, and it gives a mass matrix $M_\nu=\lambda v^{2}/(2M)$ after the breaking. The matrix is symmetric — not by assumption but because the two fermion factors in the operator are the same doublet, so the matrix is its own transpose — and a symmetric matrix has six complex entries and is diagonalised by one unitary; two of the phases cannot be removed by rephasing, so the count grows by nine: three masses, three angles, one Dirac phase and two Majorana phases.
+The Majorana route. A term $\overline{L_{L,c}}\,\tilde\omicron_{\mathrm{hgs}}^{*}\,\lambda\,\tilde\omicron_{\mathrm{hgs}}^{\dagger}L_L/M$ is the unique dimension-five operator, and it gives a mass matrix $M_\nu=\lambda v^{2}/(2M)$ after the breaking. The matrix is symmetric — not by assumption but because the two fermion factors in the operator are the same doublet, so the matrix is its own transpose — and a symmetric matrix has six complex entries and is diagonalised by one unitary; two of the phases cannot be removed by rephasing, so the count grows by nine: three masses, three angles, one Dirac phase and two Majorana phases.
 
 The counts.
 
@@ -415,7 +415,7 @@ that is, the commutant of the algebra's action. So the framework says something 
 
 **What the framework does not supply is the coupling itself.** The chiral-fermion article's mass selection rule says a bare Dirac mass is invariant if and only if $ϙ_L=ϙ_R$. The compensating scalar must therefore carry the difference $ϙ_L-ϙ_R$, and a scalar that carries it is non-central. The framework's scalar is central, and a central charge acts identically on both parts, so it cannot compensate a chiral mass term at all.
 
-The chain is not a chain, and saying so is part of the accounting. **Three statements are in play and only the first leads to the third.** The framework establishes that a chiral fermion needs a compensating scalar, and the selection rule shows that the scalar must be non-central. It also constructs an abelian mechanism for a *central* scalar — but that mechanism masses the gauge boson and not the fermion: the field that acquires an expectation value is central, the mass comes from the $|D_\mu\varphi|^{2}$ term, and no Yukawa coupling of that field to the two chiralities is constructed or constructible, since a central charge acts identically on both. So the middle statement is a *different* mechanism, not a partial version of the missing one, and calling it "established for the abelian case" would credit the framework with half a step it has not taken. The missing link is the coupling of a non-central scalar to the two parts of the fermion, and it is absent.
+The chain is not a chain, and saying so is part of the accounting. **Three statements are in play and only the first leads to the third.** The framework establishes that a chiral fermion needs a compensating scalar, and the selection rule shows that the scalar must be non-central. It also constructs an abelian mechanism for a *central* scalar — but that mechanism masses the gauge boson and not the fermion: the field that acquires an expectation value is central, the mass comes from the $|D_\mu\omicron_{\mathrm{hgs}}|^{2}$ term, and no Yukawa coupling of that field to the two chiralities is constructed or constructible, since a central charge acts identically on both. So the middle statement is a *different* mechanism, not a partial version of the missing one, and calling it "established for the abelian case" would credit the framework with half a step it has not taken. The missing link is the coupling of a non-central scalar to the two parts of the fermion, and it is absent.
 
 The strongest objection, and the answer. A reader may say that the commutant statement is empty, since any framework with a multiplicity factor would say the same. That is correct as far as it goes, and it is the reason the statement is presented as a consistency rather than as a derivation. Its content is negative and useful: it explains why no algebraic principle will ever fix the Yukawa entries, and it locates the missing physics precisely — not in the algebra but in the coupling of a non-central scalar.
 
@@ -425,7 +425,7 @@ What the corpus can say without that derivation. That the masses are invariants 
 
 ## Summary
 
-The Standard Model has no fermion mass term, because a Dirac mass couples fields of different $SU(2)_L$ representation and different hypercharge, and the product is not a singlet. Three complex $3\times3$ Yukawa matrices replace the forbidden terms, each with the compensating scalar of the right hypercharge, the up-type one using the conjugate doublet $\tilde\varphi$.
+The Standard Model has no fermion mass term, because a Dirac mass couples fields of different $SU(2)_L$ representation and different hypercharge, and the product is not a singlet. Three complex $3\times3$ Yukawa matrices replace the forbidden terms, each with the compensating scalar of the right hypercharge, the up-type one using the conjugate doublet $\tilde\omicron_{\mathrm{hgs}}$.
 
 After the breaking each matrix becomes $M_f=Y_{f}v/\sqrt2$, a general complex matrix. The physical masses are its singular values, from the bi-unitary decomposition $M_f=W_fD_fV_f^{\dagger}$, and they are the only basis-independent content of the matrix: the three coefficients of the characteristic polynomial of $M_f^{\dagger}M_f$ are invariant under $M_f\mapsto U^{\dagger}M_fV$, verified to $3.1\times10^{-15}$ over twenty random transformations. That is also the precise answer to why the nine masses stay free — a $3\times3$ complex matrix has exactly three invariants.
 
@@ -444,7 +444,7 @@ The framework supplies the home of the matrices and not their entries. Its fermi
 | Symbol | Meaning |
 |---|---|
 | $Y_{u}$, $Y_{d}$, $Y_{e}$ | The three Yukawa matrices, general complex $3\times3$ |
-| $\varphi$, $\tilde\varphi$ | The doublet and its conjugate, hypercharges $\pm\tfrac12$ |
+| $\omicron_{\mathrm{hgs}}$, $\tilde\omicron_{\mathrm{hgs}}$ | The doublet and its conjugate, hypercharges $\pm\tfrac12$ |
 | $M_f$ | $Y_{f}v/\sqrt2$, the mass matrix after breaking |
 | $W_f$, $V_f$, $D_f$ | Left and right singular bases and the diagonal singular values |
 | $m_{f_i}$ | The three masses of sector $f$, the singular values of $M_f$ |
@@ -471,7 +471,7 @@ The framework supplies the home of the matrices and not their entries. Its fermi
 
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The Yukawa term in the assembled sum, and the hypercharge audit this article repeats.
 - [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). The vacuum expectation value that turns a coupling into a mass.
-- [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). Where the hypercharges in the audit come from, and why $Y_\varphi=\tfrac12$.
+- [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). Where the hypercharges in the audit come from, and why $Y_{\mathrm{hch}}=\tfrac12$.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The thirteen flavour parameters inside the count of nineteen.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html). The mass selection rule $ϙ_L=ϙ_R$ and the non-central scalar the framework lacks.
 - [The Number of Generations and the Biquaternion Algebra](the-number-of-generations-and-the-biquaternion-algebra.html). The multiplicity factor, the commutant, and why the algebra does not fix $N_g$.

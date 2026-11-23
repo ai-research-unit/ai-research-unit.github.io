@@ -104,7 +104,7 @@ $$
 Q=\frac{a_1^{2}+a_2^{2}+a_3^{2}}{(a_1+a_2+a_3)^{2}}=\frac13\left(1+\left(\frac{\sigma_a}{\bar a}\right)^{2}\right),
 $$
 
-with $\bar a$ the mean amplitude and $\sigma_a$ the standard deviation of the three. The bracket is an identity and not a fit, so $Q=\tfrac23$ is exactly the statement $\sigma_a/\bar a=1$: the three amplitudes are as spread as their own mean. The measured spread is $0.9999908$, and the same number read as an angle, $\varphi=\arccos\left(1/\sqrt{3Q}\right)$, is $44.9997^{\circ}$.
+with $\bar a$ the mean amplitude and $\sigma_a$ the standard deviation of the three. The bracket is an identity and not a fit, so $Q=\tfrac23$ is exactly the statement $\sigma_a/\bar a=1$: the three amplitudes are as spread as their own mean. The measured spread is $0.9999908$, and the same number read as an angle, $\omicron_{\mathrm{ang}}=\arccos\left(1/\sqrt{3Q}\right)$, is $44.9997^{\circ}$.
 
 **Why it is not evidence for the ladder.** The ladder sets an interval between neighbouring rungs and places no condition on a combination of the three masses, so Koide's relation is neither derived here nor used here. It is a measured arithmetic on three numbers, and the corpus records it as one. The numeral $\tfrac23$ also appears in the model as a trace ratio of one to three, in [Charge Quantisation from the Fourth Colour](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html), and the two are not the same statement: one is a dimension of a representation and the other a ratio of masses. That they coincide in value is recorded and not explained.
 

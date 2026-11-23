@@ -110,15 +110,15 @@ The wave equation is written first, because it is the law; the fluid is read fro
 
 ## The One Liquid Case That Is Linear
 
-The Hopf–Cole transformation is the only exact linearisation of a fluid equation the section uses, and read as a map it is the reverse map with an imaginary action quantum. Burgers' equation in one dimension is carried by $u=-2\nu_{\mathrm{kin}}\partial_x\ln\psi$ into $\partial_{t'}\psi=\nu_{\mathrm{kin}}\partial_{xx}\psi$. The transformation is exact, and its output has an imaginary frequency, a positive kernel and an arrow of time.
+The Hopf–Cole transformation is the only exact linearisation of a fluid equation the section uses, and read as a map it is the reverse map with an imaginary action quantum. Burgers' equation in one dimension is carried by $u=-2\digamma_{\mathrm{kin}}\partial_x\ln\psi$ into $\partial_{t'}\psi=\digamma_{\mathrm{kin}}\partial_{xx}\psi$. The transformation is exact, and its output has an imaginary frequency, a positive kernel and an arrow of time.
 
-**The identification is exact and it is the sharpest statement in the article.** Put $h=-12.57im\nu_{\mathrm{kin}}$ and $V=0$ in the reverse map's output. Then $ih=12.57m\nu_{\mathrm{kin}}$ and $-\frac{h^{2}}{4\pi^{2}}/2m=2m\nu_{\mathrm{kin}}^{2}$, so the equation reads $2m\nu_{\mathrm{kin}}\partial_{t'}\psi=2m\nu_{\mathrm{kin}}^{2}\partial_{xx}\psi$, which is $\partial_{t'}\psi=\nu_{\mathrm{kin}}\partial_{xx}\psi$. An imaginary action quantum turns the wave equation into the heat equation, exactly and with no remainder.
+**The identification is exact and it is the sharpest statement in the article.** Put $h=-12.57im\digamma_{\mathrm{kin}}$ and $V=0$ in the reverse map's output. Then $ih=12.57m\digamma_{\mathrm{kin}}$ and $-\frac{h^{2}}{4\pi^{2}}/2m=2m\digamma_{\mathrm{kin}}^{2}$, so the equation reads $2m\digamma_{\mathrm{kin}}\partial_{t'}\psi=2m\digamma_{\mathrm{kin}}^{2}\partial_{xx}\psi$, which is $\partial_{t'}\psi=\digamma_{\mathrm{kin}}\partial_{xx}\psi$. An imaginary action quantum turns the wave equation into the heat equation, exactly and with no remainder.
 
-So the failure of the viscous case is not a failure of the gradient test. In one dimension the viscous force *is* a gradient, $\nu_{\mathrm{kin}}\partial_{xx}u=\partial_x(\nu_{\mathrm{kin}}\partial_xu)$, so a potential exists and the map runs. What fails is that the potential is a rate and not an energy: the Hopf–Cole $\psi=\exp(-\int u\,\mathrm{d}x/(2\nu_{\mathrm{kin}}))$ has a real logarithm, so the map's $S$ is imaginary. A conservative force gives a real action and an oscillating equation; a dissipative force gives a rate and a decaying one.
+So the failure of the viscous case is not a failure of the gradient test. In one dimension the viscous force *is* a gradient, $\digamma_{\mathrm{kin}}\partial_{xx}u=\partial_x(\digamma_{\mathrm{kin}}\partial_xu)$, so a potential exists and the map runs. What fails is that the potential is a rate and not an energy: the Hopf–Cole $\psi=\exp(-\int u\,\mathrm{d}x/(2\digamma_{\mathrm{kin}}))$ has a real logarithm, so the map's $S$ is imaginary. A conservative force gives a real action and an oscillating equation; a dissipative force gives a rate and a decaying one.
 
-It produces a linear equation whose solutions do not oscillate, and whose physical content is the smoothing of a shock into a layer of width $\nu_{\mathrm{kin}}/u$. A reader who counts it as a wave equivalent has counted the heat equation as a wave equation.
+It produces a linear equation whose solutions do not oscillate, and whose physical content is the smoothing of a shock into a layer of width $\digamma_{\mathrm{kin}}/u$. A reader who counts it as a wave equivalent has counted the heat equation as a wave equation.
 
-The Korteweg–de Vries equation is integrable by the inverse scattering transform, whose auxiliary problem is the linear Schrödinger equation $-\varphi_{xx}+u\varphi=\lambda\varphi$. There the fluid $u$ is the *potential* of a linear equation and the unknown is an auxiliary wave function that is not the fluid. Integrability is not linearity, and the linear problem's unknown is not the flow.
+The Korteweg–de Vries equation is integrable by the inverse scattering transform, whose auxiliary problem is the linear Schrödinger equation $-\omicron_{\mathrm{aux},xx}+u\omicron_{\mathrm{aux}}=\lambda\omicron_{\mathrm{aux}}$. There the fluid $u$ is the *potential* of a linear equation and the unknown is an auxiliary wave function that is not the fluid. Integrability is not linearity, and the linear problem's unknown is not the flow.
 
 A fluid equation can be linearised, and when it is, the linear equation is either parabolic or a scattering problem. Neither is the free linear wave equation of the trilogy, and neither produces a fluid that looks like the trilinear fluid.
 
@@ -132,7 +132,7 @@ The vocabulary of circulation, vorticity and spin can be borrowed from fluid mec
 
 ## What Is Established and What Is Interpretation
 
-Established. That the reverse map's requirements are one integrability condition on the velocity and one on the force, the Hamilton–Jacobi equation following from the two by taking a gradient, and that the pressure part of the force is a gradient exactly when the flow is isentropic by Gibbs–Duhem, so that barotropicity is sufficient and not necessary. That the Hopf–Cole transformation is the reverse map with $h=-12.57im\nu_{\mathrm{kin}}$, verified by substitution. That the forward map is exact and general away from nodes, and that the reverse map is defined only on a class and returns a nonlinear equation on it. That the linear output requires a pressureless fluid, which is not an ordinary fluid. That viscosity's exact linearisation reaches a diffusion equation and not a wave equation, and that the KdV's linear auxiliary problem has the fluid as its potential. That the fields in the table's last three rows are ones in which the wave equation is fundamental.
+Established. That the reverse map's requirements are one integrability condition on the velocity and one on the force, the Hamilton–Jacobi equation following from the two by taking a gradient, and that the pressure part of the force is a gradient exactly when the flow is isentropic by Gibbs–Duhem, so that barotropicity is sufficient and not necessary. That the Hopf–Cole transformation is the reverse map with $h=-12.57im\digamma_{\mathrm{kin}}$, verified by substitution. That the forward map is exact and general away from nodes, and that the reverse map is defined only on a class and returns a nonlinear equation on it. That the linear output requires a pressureless fluid, which is not an ordinary fluid. That viscosity's exact linearisation reaches a diffusion equation and not a wave equation, and that the KdV's linear auxiliary problem has the fluid as its potential. That the fields in the table's last three rows are ones in which the wave equation is fundamental.
 
 Interpretation. That the direction of explanation — wave to fluid — is a statement about which object carries the constants, and therefore about which object is the law. That the table's first nine rows support the thesis is a judgement about what counts as a wave equivalent; the article's criterion is stated, and a reader who accepts a different criterion will read the table differently.
 
@@ -167,8 +167,8 @@ The block's two denials are one statement: the reading is a re-coordinatisation 
 | $p_{\mathrm{th}}$ | Thermodynamic pressure |
 | $Q_{\mathrm{qnt}}$ | Quantum potential |
 | $\vec\omega_{\mathrm{vrt}}$ | Vorticity |
-| $\nu_{\mathrm{kin}}$ | Kinematic viscosity |
-| $\varphi$ | Auxiliary wave function of the KdV scattering problem |
+| $\digamma_{\mathrm{kin}}$ | Kinematic viscosity |
+| $\omicron_{\mathrm{aux}}$ | Auxiliary wave function of the KdV scattering problem |
 | $u$ | Velocity of the one-dimensional flow; also the KdV field |
 | $\lambda$ | Spectral parameter of the scattering problem |
 | $\frac{h}{2\pi},\ m$ | The two constants the wave equation carries |

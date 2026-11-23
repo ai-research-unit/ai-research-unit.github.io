@@ -249,12 +249,12 @@ Two points remain open and neither is hidden. The kernel in $n\ge2$ as a sum of 
 
 **All three transforms integrate the same kernel against the same value; what changes is the side on which the kernel meets it.** The left placement multiplies on the left, the right placement on the right, and the two-sided placement sandwiches the value between two kernels. For a scalar-valued function the three products coincide, which is why the complex theory needs one name; for this algebra they are three operators, and the difference is visible only in a non-commutative algebra.
 
-The commutant of a pure root is the plane of the root. For a pure root $R$ with $R^{2}=-e_t$, an element $a$ satisfies $aR=Ra$ exactly when it lies in $\mathrm{span}_{\mathbb{C}}\{e_t,R\}$, a real subspace of dimension four. The plane $C(R)$ is commutative, and the complementary subspace $V_\perp$, also of real dimension four, is spanned by a transverse frame $\nu,\eta$ with $R\nu=\eta$, $\nu R=-\eta$, $\eta R=\nu$ and $R\eta=-\nu$.
+The commutant of a pure root is the plane of the root. For a pure root $R$ with $R^{2}=-e_t$, an element $a$ satisfies $aR=Ra$ exactly when it lies in $\mathrm{span}_{\mathbb{C}}\{e_t,R\}$, a real subspace of dimension four. The plane $C(R)$ is commutative, and the complementary subspace $V_\perp$, also of real dimension four, is spanned by a transverse frame $\digamma_{\mathrm{trv}},\eta$ with $R\digamma_{\mathrm{trv}}=\eta$, $\digamma_{\mathrm{trv}} R=-\eta$, $\eta R=\digamma_{\mathrm{trv}}$ and $R\eta=-\digamma_{\mathrm{trv}}$.
 
 Conjugation by the kernel fixes the plane and rotates the complement. With $\theta=2\pi\omega t$,
 
 $$
-W\nu W^{-1}=\cos2\theta\,\nu-\sin2\theta\,\eta,\qquad W\eta W^{-1}=\sin2\theta\,\nu+\cos2\theta\,\eta,
+W\digamma_{\mathrm{trv}} W^{-1}=\cos2\theta\,\digamma_{\mathrm{trv}}-\sin2\theta\,\eta,\qquad W\eta W^{-1}=\sin2\theta\,\digamma_{\mathrm{trv}}+\cos2\theta\,\eta,
 $$
 
 so the conjugation is the identity on $C(R)$ and a rotation through the angle $4\pi\omega t$ on $V_\perp$. The angle is twice the phase of the kernel, and the factor two is the first appearance of the doubling that governs the two-sided placement.
@@ -269,7 +269,7 @@ Each sign forgets one half, and only its total integral survives. At $R'=R$ the 
 
 The surviving half is carried at twice the frequency, and the inversion carries a factor two. At $R'=R$ the transverse coefficients are rotated through $4\pi\omega t$, so the pair is the complex transform of $A_1+iA_2$ at frequency $2\omega$; at $R'=-R$ the plane part is transformed at $2\omega$. The inversion must therefore integrate over $d(2\omega)$ and carries a factor two, and an inversion written without it is wrong in the argument — an error that is invisible on a single exponential, which is why it survives review.
 
-The doubling is checkable in one kernel. For $f(t)=e^{-\pi t^{2}}\nu$ and $R'=R$ the two-sided transform is $e^{-4\pi\omega^{2}}\nu$ at every real frequency, and the exponent is four times the exponent of the one-sided transform. Measured on a grid of six thousand points: the coefficient of $\nu$ is $1.00000000$, $0.60492256$ and $0.13390572$ at $\omega=0$, $0.2$ and $0.4$, against $e^{-4\pi\omega^{2}}=1.00000000$, $0.60492256$ and $0.13390572$, with a transverse admixture of at most $2.4\times10^{-16}$.
+The doubling is checkable in one kernel. For $f(t)=e^{-\pi t^{2}}\digamma_{\mathrm{trv}}$ and $R'=R$ the two-sided transform is $e^{-4\pi\omega^{2}}\digamma_{\mathrm{trv}}$ at every real frequency, and the exponent is four times the exponent of the one-sided transform. Measured on a grid of six thousand points: the coefficient of $\digamma_{\mathrm{trv}}$ is $1.00000000$, $0.60492256$ and $0.13390572$ at $\omega=0$, $0.2$ and $0.4$, against $e^{-4\pi\omega^{2}}=1.00000000$, $0.60492256$ and $0.13390572$, with a transverse admixture of at most $2.4\times10^{-16}$.
 
 ### The Conventions, Stated as a Table
 
@@ -444,7 +444,7 @@ Eight readings, each with a boundary. The kernel is the clock, the frequency its
 | the norm of an element | $N(\tilde{Q})$ | $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, central and complex |
 | the degenerate set | $\{N(\Sigma)=0\}$ | where the symbol is not invertible |
 | the plane of the root | $C(R)$ | $\mathrm{span}_{\mathbb{C}}\{e_t,R\}$, the commutant of a pure root |
-| the transverse frame | $\nu,\eta$ | $R\nu=\eta$, $\nu R=-\eta$, $\eta R=\nu$ |
+| the transverse frame | $\digamma_{\mathrm{trv}},\eta$ | $R\digamma_{\mathrm{trv}}=\eta$, $\digamma_{\mathrm{trv}} R=-\eta$, $\eta R=\digamma_{\mathrm{trv}}$ |
 | the two placements | $R'=\pm R$ | the two-sided kernels that fix a part |
 | the exponential type | $2\pi\rho$ | $\rho$ the distance of the nearest pole from the real axis |
 | the Tomita operator | $S$ | the star, with $\Delta_\Phi=\mathrm{id}$ and $\jmath=S$ |

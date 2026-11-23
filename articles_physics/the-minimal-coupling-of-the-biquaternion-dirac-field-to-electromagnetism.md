@@ -457,10 +457,10 @@ $\gamma_5$ is the basis operator $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, a p
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The conserved current of the older literature.** The object that the previous sections cannot build is written here, once, in this display. The conserved current is the bilinear built with the generator basis operator of the coordinate $x_\mu$ — the basis operator $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(\eta)=y$ — and with the adjoint row $\tilde{Ξ}^{\dagger}iR_{\vec e_x}$:
+**The conserved current of the older literature.** The object that the previous sections cannot build is written here, once, in this display. The conserved current is the bilinear built with the generator basis operator of the coordinate $x_\mu$ — the basis operator $iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}$, with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$ — and with the adjoint row $\tilde{Ξ}^{\dagger}iR_{\vec e_x}$:
 
 $$
-j_\mu = \tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}\,\tilde{Ξ} ,
+j_\mu = \tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\mu)}}\,\tilde{Ξ} ,
 $$
 
 whose time component is $\tilde{Ξ}^{\dagger}\tilde{Ξ}$ and whose spatial components are $\tilde{Ξ}^{\dagger}\alpha_\eta\tilde{Ξ}$ with $\alpha_\eta = L_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_z}$. The ingredient that the algebra's own bilinears cannot supply is the adjoint row, which is built on the one-sided basis operator $iR_{\vec e_x}$ and lies outside the algebra. That is why $i\tilde{Ξ}\tilde{Ξ}^*$ cannot be the conserved current, and why the current is recorded in this section and nowhere else.

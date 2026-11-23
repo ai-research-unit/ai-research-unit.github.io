@@ -855,16 +855,16 @@ $$
 The single $i$ in a generator is also what makes a doubled $i$ collapse: multiplying a generator by $i$ returns a plain basis operator,
 
 $$
-i\gamma_\mu=-L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}},
+i\gamma_\mu=-L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\mu)}},
 $$
 
 In the axis-free display:
 
 $$
-i\gamma_\mu=-L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}},
+i\gamma_\mu=-L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\mu)}},
 $$
 
-with $\vec e_{\nu(t)}=\vec e_x$ and $\vec e_{\nu(\eta)}=\vec e_y$, together with $i\gamma_5=+L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, the sign there being the opposite one because $\gamma_5$ was defined with the opposite sign of $i$. Every product of two imaginary units is therefore a sign, and no display in this article carries a doubled $i$.
+with $\vec e_{\mathrm{spt}(t)}=\vec e_x$ and $\vec e_{\mathrm{spt}(\eta)}=\vec e_y$, together with $i\gamma_5=+L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, the sign there being the opposite one because $\gamma_5$ was defined with the opposite sign of $i$. Every product of two imaginary units is therefore a sign, and no display in this article carries a doubled $i$.
 
 In these names the field operator of *The Field Bivector and the Field Operator* above is $\tfrac12(R_{\tilde F}+L_{\tilde F^{\sim}})$; since the reverse of a bivector is minus itself, $\tilde F^{\sim}=-\tilde F$, and the operator is half the commutator with the field strength,
 

@@ -224,7 +224,7 @@ so the factor $2k_m$ converts a phase rate into a charge density, and the prefac
 
 The current is the density times the four-velocity, and the coefficient $\rho_{\mathrm{num}}/m$ is a positive real scalar. The charge density and the proper density differ by the factor $\gamma$: with $v'_t=\gamma c$ the temporal slot gives $\rho_{\mathrm{chg}}=(v'_t/c)\rho_{\mathrm{num}}=\gamma\rho_{\mathrm{num}}$, which is the conventions' $\rho_{\mathrm{chg}}=ϙ\gamma\rho_{\mathrm{num}}$ at $ϙ=1$. The two minus signs of the two conversions, the one in $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ and the one in the temporal slot of $\tilde P_{\Phi}$, cancel, so the charge density is positive exactly when the energy is.
 
-**The check on a plane wave.** With $\Xi_t=\tilde Q_{\mathrm{amp}}\exp(-i\theta_{\mathrm{pwp}})$ for a complex constant $\tilde Q_{\mathrm{amp}}$, the amplitude is $\varrho=\lvert\tilde Q_{\mathrm{amp}}\rvert$ and the energy is $E=h\nu$, so $\rho_{\mathrm{chg}}=\varrho^{2}\omega/(ck_m)$, which is the companion's value. The general formula reproduces it with no separate computation.
+**The check on a plane wave.** With $\Xi_t=\tilde Q_{\mathrm{amp}}\exp(-i\theta_{\mathrm{pwp}})$ for a complex constant $\tilde Q_{\mathrm{amp}}$, the amplitude is $\varrho=\lvert\tilde Q_{\mathrm{amp}}\rvert$ and the energy is $E=hf_{\mathrm{frq}}$, so $\rho_{\mathrm{chg}}=\varrho^{2}\omega/(ck_m)$, which is the companion's value. The general formula reproduces it with no separate computation.
 
 The angle is $\theta_{\mathrm{pwp}}=\frac{2\pi p\cdot x}{h}=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\frac{h}{2\pi}$, so the angle is real.
 

@@ -22,7 +22,7 @@ The scale, the rapidity, the two axes and the density are invariant, and the two
 
 The consequence for the criterion is the article's first result. The large gradient is no longer $\vec\nabla_\Phi S$ but the kinetic momentum $\vec\pi=\vec\nabla_\Phi S-q\vec A$, which is the gauge-invariant combination. A criterion written on the canonical gradient would not be gauge invariant, and it would be wrong wherever the potential is large. The parameter is $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$, and the scale's gradient is measured against that.
 
-The parent's coupling is $ϙ$, with $ϙ=-q$ where $q$ is the electric charge. Every display in this article uses $q$ and the canonical form $\vec\pi=\vec p-q\vec A$; the parent's $-ϙ\varphi$ is $+q\varphi$ here, and the parent's $\vec\nabla_\Phi\times\vec v=ϙ\vec B/m$ is $-(q/m)\vec B$.
+The parent's coupling is $ϙ$, with $ϙ=-q$ where $q$ is the electric charge. Every display in this article uses $q$ and the canonical form $\vec\pi=\vec p-q\vec A$; the parent's $-ϙ\omicron_{\mathrm{pot}}$ is $+q\omicron_{\mathrm{pot}}$ here, and the parent's $\vec\nabla_\Phi\times\vec v=ϙ\vec B/m$ is $-(q/m)\vec B$.
 
 The coupling changes no order: both of the parent's equations have the same three orders as the free pair, and the quantum potential is the same function of the scale. Order zero is a Hamilton–Jacobi equation in the kinetic momentum, and its gradient is the Lorentz force with $\vec\pi=m\vec v$, so the non-relativistic limit produces Newton's law with the magnetic force and nothing else. Order one is the covariant continuity equation, whose current is the kinetic momentum over the mass, and which is not an expansion. The vorticity is the field's: the canonical flow is irrotational and the kinetic flow is rotational exactly where $\vec B$ is, and the circulation is quantised with the flux subtracted, an exact statement the limit inherits and does not derive.
 
@@ -30,7 +30,7 @@ The covariant Madelung pair, the kinetic momentum in the transport current, the 
 
 The restriction is the free one, and the coupling does not remove it. The parent's pair is the central field's, $\theta_{\mathrm{rpd}}=0$ and $\tilde u_{\mathrm r}=\varepsilon e_{t}$, and that class is invariant only under a central Hamiltonian. The limit is therefore defined on the central class here as it is in the free companion, and for the same reason.
 
-Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$ with $\varphi=c\,a'_{t}$; the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iq\tilde A_\Phi}{h}$; the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{\,2}/2m+q\varphi+\hat V$ with $\tilde{\vec\pi}=-i \frac{h}{2\pi}\nabla-q\vec A$; $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$; $q$ the electric charge, real; $\Delta_\Phi$ the Laplacian of the material sector.
+Conventions. Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; the connection $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_{t}+\vec A$ with $\omicron_{\mathrm{pot}}=c\,a'_{t}$; the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iq\tilde A_\Phi}{h}$; the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{\,2}/2m+q\omicron_{\mathrm{pot}}+\hat V$ with $\tilde{\vec\pi}=-i \frac{h}{2\pi}\nabla-q\vec A$; $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$; $q$ the electric charge, real; $\Delta_\Phi$ the Laplacian of the material sector.
 
 ## The Two Equations and Where the Connection Sits
 
@@ -39,12 +39,12 @@ The parent's pair, in the article's letters.
 $$
 \partial_{t'}\bigl(\varrho^{2}\bigr)+\vec\nabla_\Phi\cdot\Bigl(\varrho^{2}\frac{\vec\nabla_\Phi S-q\vec A}{m}\Bigr)=0,
 \qquad
-\partial_{t'}S+\frac{\lvert\vec\nabla_\Phi S-q\vec A\rvert^{2}}{2m}+q\varphi+Q=0,
+\partial_{t'}S+\frac{\lvert\vec\nabla_\Phi S-q\vec A\rvert^{2}}{2m}+q\omicron_{\mathrm{pot}}+Q=0,
 $$
 
 with $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$. The first is the covariant continuity equation and the second the quantum Hamilton–Jacobi equation of the coupled field.
 
-The connection appears in three places and nowhere else. In the transport it replaces the canonical gradient by the kinetic momentum. In the Hamilton–Jacobi equation it does the same in the kinetic term and it adds the potential energy $q\varphi$. In the quantum potential it does not appear at all.
+The connection appears in three places and nowhere else. In the transport it replaces the canonical gradient by the kinetic momentum. In the Hamilton–Jacobi equation it does the same in the kinetic term and it adds the potential energy $q\omicron_{\mathrm{pot}}$. In the quantum potential it does not appear at all.
 
 $Q$ is built from the scale $\varrho$ and its ordinary Laplacian. The scale is invariant under the gauge group, its Laplacian is invariant, and no derivative of the potential reaches it, because the covariant derivative acts on the phase and the frame and the scale is neither. **The quantum potential is the free one, term for term**, and the parent states it as its first finding.
 
@@ -53,7 +53,7 @@ $Q$ is built from the scale $\varrho$ and its ordinary Laplacian. The scale is i
 $$
 \vec\pi=\vec\nabla_\Phi S-q\vec A,
 \qquad
-\mathcal E=-\frac{h}{2\pi}\,\partial_{t'}\theta_{\mathrm{pha}}-q\varphi .
+\mathcal E=-\frac{h}{2\pi}\,\partial_{t'}\theta_{\mathrm{pha}}-q\omicron_{\mathrm{pot}} .
 $$
 
 The first is the mechanical momentum and the second the kinetic energy, and both are unchanged when the phase and the potential shift together. Every statement of the limit is made in these two and in the scale.
@@ -85,10 +85,10 @@ Nothing in the table mentions the potential's strength. The connection contribut
 What remains is
 
 $$
-\partial_{t'}S+\frac{\lvert\vec\nabla_\Phi S-q\vec A\rvert^{2}}{2m}+q\varphi=0 ,
+\partial_{t'}S+\frac{\lvert\vec\nabla_\Phi S-q\vec A\rvert^{2}}{2m}+q\omicron_{\mathrm{pot}}=0 ,
 $$
 
-the Hamilton–Jacobi equation of a charge $q$ in the potentials $(\varphi,\vec A)$.
+the Hamilton–Jacobi equation of a charge $q$ in the potentials $(\omicron_{\mathrm{pot}},\vec A)$.
 
 In the algebra it is a norm. With $\vec\pi$ a real quaternion in $\mathbb{B}_{H}$,
 
@@ -105,7 +105,7 @@ The characters are the trajectories of a charged particle. With $\vec p=\vec\nab
 $$
 \frac{d\vec r}{dt'}=\frac{\vec\pi}{m},
 \qquad
-\frac{d\vec p}{dt'}=-q\vec\nabla_\Phi\varphi+q\,\vec\nabla_\Phi(\vec A\cdot\vec v) .
+\frac{d\vec p}{dt'}=-q\vec\nabla_\Phi\omicron_{\mathrm{pot}}+q\,\vec\nabla_\Phi(\vec A\cdot\vec v) .
 $$
 
 **The gradient of the eikonal is the Lorentz force, and this is the limit's sharpest classical statement.** Differentiate the eikonal with respect to $x^{i}$ and use $\partial_{i}\partial_{t'}S=\partial_{t'}\partial_{i}S$:
@@ -113,7 +113,7 @@ $$
 $$
 \frac{d\vec\pi}{dt'}=q\bigl(\vec E+\vec v\times\vec B\bigr),
 \qquad
-\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A,
+\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A,
 \qquad
 \vec B=\vec\nabla_\Phi\times\vec A,
 \qquad
@@ -188,10 +188,10 @@ It gains one structural reading. On the polar chart the gauge group is the trans
 
 ## Verification
 
-The eikonal's gradient was checked symbolically. With arbitrary $S$, $\varphi$ and $\vec A$, $\vec\pi=\vec\nabla_\Phi S-q\vec A$ and $\vec v=\vec\pi/m$, the three components of
+The eikonal's gradient was checked symbolically. With arbitrary $S$, $\omicron_{\mathrm{pot}}$ and $\vec A$, $\vec\pi=\vec\nabla_\Phi S-q\vec A$ and $\vec v=\vec\pi/m$, the three components of
 
 $$
-\partial_{i}\Bigl(\partial_{t'}S+\frac{\lvert\vec\pi\rvert^{2}}{2m}+q\varphi\Bigr)
+\partial_{i}\Bigl(\partial_{t'}S+\frac{\lvert\vec\pi\rvert^{2}}{2m}+q\omicron_{\mathrm{pot}}\Bigr)
 $$
 
 were compared with the three components of $\frac{d\vec\pi}{dt'}-q(\vec E+\vec v\times\vec B)$ and the residual is $0,0,0$ in each component, with no assumption on the potentials.
@@ -222,10 +222,10 @@ Order two is the free quantum potential, with the free size and the free non-uni
 | $\varrho>0$ | The scale; the density is $\varrho^{2}$ on the central field |
 | $\theta_{\mathrm{pha}}$, $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | The central angle; the action |
 | $\varepsilon e_{t}$ | The rotor on the central field |
-| $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$ | The connection; $\varphi$ the scalar potential |
+| $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_{t}+\vec A$ | The connection; $\omicron_{\mathrm{pot}}$ the scalar potential |
 | $q$ | The electric charge; the parent's $ϙ=-q$ |
 | $\vec\pi=\vec\nabla_\Phi S-q\vec A$ | Mechanical momentum |
-| $\mathcal E=-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}-q\varphi$ | Kinetic energy |
+| $\mathcal E=-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}-q\omicron_{\mathrm{pot}}$ | Kinetic energy |
 | $\epsilon=1/(\pi_{\Phi}L)$, $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$ | The parameter |
 | $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; the free one |
 | $\Phi_{B}$ | Magnetic flux through a surface the loop bounds |

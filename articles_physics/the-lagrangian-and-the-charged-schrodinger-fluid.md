@@ -6,7 +6,7 @@ The coupling is one substitution and the action shows it as one substitution. In
 
 Three results.
 
-*First, the minimal substitution acts inside the brackets and nowhere else.* The two replacements are $\partial_{t'}S\mapsto\partial_{t'}S-ϙ\varphi$ and $\vec\nabla_\Phi S\mapsto\nabla S-q\vec A$, and they are the two slots of one object: the four-derivative of the phase. The gradient energy is untouched.
+*First, the minimal substitution acts inside the brackets and nowhere else.* The two replacements are $\partial_{t'}S\mapsto\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}$ and $\vec\nabla_\Phi S\mapsto\nabla S-q\vec A$, and they are the two slots of one object: the four-derivative of the phase. The gradient energy is untouched.
 
 *Second, the Lagrangian density is gauge invariant term by term, and not up to a total derivative.* The shift of the phase and the shift of the potential cancel inside each bracket, so no boundary term is needed and the invariance is exact in the density.
 
@@ -16,21 +16,21 @@ Position in the block. This is the variational companion of [The Charged Schröd
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with the connection added: $ϙ$ is the coupling and equals minus the electric charge, $q=-ϙ$; $\varphi$ and $\vec A$ are the scalar and vector potentials; $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$; a gauge transformation is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Gamma}{h}$, $\varphi\mapsto\varphi+\partial_{t'}\Gamma$, $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. The field is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, $\rho_{\mathrm{num}}=\varrho^{2}$, and the covariant derivative is $\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$, so the mechanical momentum is $\tilde P^{\mathrm{mech}}=\tilde P+ϙ\tilde A$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with the connection added: $ϙ$ is the coupling and equals minus the electric charge, $q=-ϙ$; $\omicron_{\mathrm{pot}}$ and $\vec A$ are the scalar and vector potentials; $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$; a gauge transformation is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Gamma}{h}$, $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$, $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. The field is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, $\rho_{\mathrm{num}}=\varrho^{2}$, and the covariant derivative is $\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$, so the mechanical momentum is $\tilde P^{\mathrm{mech}}=\tilde P+ϙ\tilde A$.
 
 ## The Action in the Fluid Variables
 
 The free action's two slots are the two places the connection can go, and it goes to both. With $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ and $\vec\pi=\vec\nabla_\Phi S-q\vec A$,
 
 $$
-\boxed{\;\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S-ϙ\varphi+\frac{\vec\pi^{2}}{2m}\Bigr)-\frac{h^{2}}{8\pi^{2}m}(\vec\nabla_\Phi \varrho)^{2}\;}
+\boxed{\;\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}+\frac{\vec\pi^{2}}{2m}\Bigr)-\frac{h^{2}}{8\pi^{2}m}(\vec\nabla_\Phi \varrho)^{2}\;}
 $$
 
-The first bracket is one object and not two. The combination $\partial_{t'}S-ϙ\varphi$ is the time slot of the covariant derivative of the phase, and the corpus names it $\mathcal E=-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}+ϙ\varphi$, the kinetic energy. The spatial slot is $\vec\pi$, the kinetic momentum. **Both are gauge invariant and neither is separately meaningful**: a shift of the phase moves both, and a shift of the potential moves both back.
+The first bracket is one object and not two. The combination $\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}$ is the time slot of the covariant derivative of the phase, and the corpus names it $\mathcal E=-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}+ϙ\omicron_{\mathrm{pot}}$, the kinetic energy. The spatial slot is $\vec\pi$, the kinetic momentum. **Both are gauge invariant and neither is separately meaningful**: a shift of the phase moves both, and a shift of the potential moves both back.
 
 The gradient energy is unchanged, and the reason is algebraic. The third term carries the amplitude and its derivatives and no phase, so no substitution can reach it. In the word, the amplitude and the phase are separate factors and the connection is a central element: it multiplies the phase factor and commutes past the amplitude. That is the whole of the type argument, and in the action it is the statement that one term of four is untouched.
 
-The action has no external potential and needs none. In the free article $V$ stood for a potential given from outside; here the potentials are the coupling's own and the term $\rho_{\mathrm{num}}ϙ\varphi$ is the potential energy, $-\rho_{\mathrm{num}}q\varphi$ with $q=-ϙ$. A second external potential would be a second, unrelated coupling, and the article does not add one.
+The action has no external potential and needs none. In the free article $V$ stood for a potential given from outside; here the potentials are the coupling's own and the term $\rho_{\mathrm{num}}ϙ\omicron_{\mathrm{pot}}$ is the potential energy, $-\rho_{\mathrm{num}}q\omicron_{\mathrm{pot}}$ with $q=-ϙ$. A second external potential would be a second, unrelated coupling, and the article does not add one.
 
 ## The Variation: Three of Them
 
@@ -47,7 +47,7 @@ The equation is the free one with $\vec v$ replaced, and it is not a new equatio
 Varying the amplitude gives the energy equation, and its gradient is the Lorentz force.
 
 $$
-\partial_{t'}S-ϙ\varphi+\frac{\vec\pi^{2}}{2m}+Q=0
+\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}+\frac{\vec\pi^{2}}{2m}+Q=0
 \qquad\Longrightarrow\qquad
 \mathcal E=\frac{\vec\pi^{2}}{2m}+Q .
 $$
@@ -58,29 +58,29 @@ $$
 \partial_{t'}\vec\pi+ϙ\vec E+\frac{1}{m}\sum_j\pi_j\nabla\pi_j+\vec\nabla_\Phi Q=0,
 $$
 
-using $\vec\nabla_\Phi(\partial_{t'}S)=\partial_{t'}\vec\pi-ϙ\partial_{t'}\vec A$ and $ϙ\vec\nabla_\Phi\varphi+ϙ\partial_{t'}\vec A=-ϙ\vec E$. Then $\sum_j\pi_j\nabla\pi_j=m(\vec v\cdot\nabla)\vec\pi+ϙ\,\vec v\times\vec B$, because $\vec\nabla_\Phi(\vec\pi^{2}/2)=\vec\pi\cdot\nabla\vec\pi+\vec\pi\times(\vec\nabla_\Phi\times\vec\pi)$ and $\vec\nabla_\Phi\times\vec\pi=ϙ\vec B$. Hence
+using $\vec\nabla_\Phi(\partial_{t'}S)=\partial_{t'}\vec\pi-ϙ\partial_{t'}\vec A$ and $ϙ\vec\nabla_\Phi\omicron_{\mathrm{pot}}+ϙ\partial_{t'}\vec A=-ϙ\vec E$. Then $\sum_j\pi_j\nabla\pi_j=m(\vec v\cdot\nabla)\vec\pi+ϙ\,\vec v\times\vec B$, because $\vec\nabla_\Phi(\vec\pi^{2}/2)=\vec\pi\cdot\nabla\vec\pi+\vec\pi\times(\vec\nabla_\Phi\times\vec\pi)$ and $\vec\nabla_\Phi\times\vec\pi=ϙ\vec B$. Hence
 
 $$
 \frac{\mathrm{D}\vec\pi}{\mathrm{D}t}=-ϙ\bigl(\vec E+\vec v\times\vec B\bigr)-\vec\nabla_\Phi Q,
 $$
 
-which is the block's display and, with $q=-ϙ$, the standard force on a charge $q$. **The action therefore fixes the sign that the block's articles state**, and it fixes it in one place instead of three: the sign of $ϙ\varphi$ in the first bracket.
+which is the block's display and, with $q=-ϙ$, the standard force on a charge $q$. **The action therefore fixes the sign that the block's articles state**, and it fixes it in one place instead of three: the sign of $ϙ\omicron_{\mathrm{pot}}$ in the first bracket.
 
 The third variation is absent because there is no third field. The velocity is $\vec\pi/m$, a function of the phase and the potential. Promoting it to a field would add a multiplier equal to the momentum density, exactly as in the free companion, and the constraint it enforces would be $\vec v=\vec\pi/m$ with $\vec\pi$ now carrying $\vec A$. Nothing is gained, and the rotational case does not need the promotion, for the reason the next section gives.
 
 ## The Constraints the Action Imposes: Gauge Invariance, Term by Term
 
-The density is invariant and not merely invariant up to a divergence. Under $S\mapsto S+ϙ\Gamma$ and $\varphi\mapsto\varphi+\partial_{t'}\Gamma$,
+The density is invariant and not merely invariant up to a divergence. Under $S\mapsto S+ϙ\Gamma$ and $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$,
 
 $$
-\partial_{t'}S-ϙ\varphi\longmapsto\partial_{t'}S+ϙ\partial_{t'}\Gamma-ϙ\varphi-ϙ\partial_{t'}\Gamma=\partial_{t'}S-ϙ\varphi,
+\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}\longmapsto\partial_{t'}S+ϙ\partial_{t'}\Gamma-ϙ\omicron_{\mathrm{pot}}-ϙ\partial_{t'}\Gamma=\partial_{t'}S-ϙ\omicron_{\mathrm{pot}},
 $$
 
 and under $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$ the combination $\vec\nabla_\Phi S-q\vec A$ is fixed by the same cancellation. The amplitude and the gradient energy do not move. So every term of $\mathcal L_{\mathrm{fl}}$ is separately invariant, and the action is invariant without a boundary term.
 
 The invariance is stronger than the free article's and it is a different kind. The free action is invariant under a constant shift of the phase, which is a global symmetry with a Noether current. This one is invariant under a *local* shift, which is a redundancy and not a symmetry: the current it implies is the charge current, and its conservation is an identity rather than a consequence of the equations. **A local invariance gives no conserved quantity beyond the one the global subgroup gives**, and the global subgroup here is the constant shift, whose current is $ϙ\rho_{\mathrm{num}}$ — the charge density.
 
-The canonical energy is gauge dependent and the fluid's energy is not. The Legendre transform of $\mathcal L_{\mathrm{fl}}$ in $\dot S$ gives $\rho_{\mathrm{num}}\vec\pi^{2}/2m+\mathcal E_{\mathrm{grad}}-\rho_{\mathrm{num}}ϙ\varphi$, which moves under a gauge transformation; the quantity $\mathcal E$ of the energy equation does not. This is the standard situation for a charged field, and it is worth stating because it limits what the article may call the fluid's energy: **$\mathcal E$ is the kinetic energy and it is gauge invariant; the canonical energy is the matter action's and only the sum with the field's energy is physical.** No thermodynamics is intended here, and the third category's local thermal state is a different object.
+The canonical energy is gauge dependent and the fluid's energy is not. The Legendre transform of $\mathcal L_{\mathrm{fl}}$ in $\dot S$ gives $\rho_{\mathrm{num}}\vec\pi^{2}/2m+\mathcal E_{\mathrm{grad}}-\rho_{\mathrm{num}}ϙ\omicron_{\mathrm{pot}}$, which moves under a gauge transformation; the quantity $\mathcal E$ of the energy equation does not. This is the standard situation for a charged field, and it is worth stating because it limits what the article may call the fluid's energy: **$\mathcal E$ is the kinetic energy and it is gauge invariant; the canonical energy is the matter action's and only the sum with the field's energy is physical.** No thermodynamics is intended here, and the third category's local thermal state is a different object.
 
 ## The Structural Consequence: The Coupling Supplies the Clebsch Structure
 
@@ -144,7 +144,7 @@ The boundary term at the nodes. The action is stated on $\varrho>0$. Whether the
 
 ## Summary
 
-The action. $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S-ϙ\varphi+\vec\pi^{2}/2m)-\frac{h^{2}}{8\pi^{2}m}(\vec\nabla_\Phi \varrho)^{2}$, with $\vec\pi=\vec\nabla_\Phi S-q\vec A$.
+The action. $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}+\vec\pi^{2}/2m)-\frac{h^{2}}{8\pi^{2}m}(\vec\nabla_\Phi \varrho)^{2}$, with $\vec\pi=\vec\nabla_\Phi S-q\vec A$.
 
 The variations. The phase gives continuity with $\vec j=\rho_{\mathrm{num}}\vec v$; the amplitude gives $\mathcal E=\vec\pi^{2}/2m+Q$; the gradient of the second is $\mathrm{D}\vec\pi/\mathrm{D}t=-ϙ(\vec E+\vec v\times\vec B)-\vec\nabla_\Phi Q$, which is the standard Lorentz force for $q=-ϙ$.
 
@@ -160,16 +160,16 @@ Gauge invariance. Exact in the density, term by term, with no boundary term. The
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The word; the free article's, unchanged |
 | $ϙ$ | Coupling; minus the electric charge, $q=-ϙ$ |
-| $\varphi$, $\vec A$ | Scalar and vector potentials; gauge dependent |
+| $\omicron_{\mathrm{pot}}$, $\vec A$ | Scalar and vector potentials; gauge dependent |
 | $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | Phase; gauge dependent |
-| $\partial_{t'}S-ϙ\varphi$ | Time slot of the covariant derivative; the kinetic energy's negative |
+| $\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}$ | Time slot of the covariant derivative; the kinetic energy's negative |
 | $\vec\pi=\vec\nabla_\Phi S-q\vec A$ | Kinetic momentum; gauge invariant |
 | $\vec v=\vec\pi/m$ | Velocity; gauge invariant |
-| $\mathcal E=-\partial_{t'}S+ϙ\varphi$ | Kinetic energy; gauge invariant |
+| $\mathcal E=-\partial_{t'}S+ϙ\omicron_{\mathrm{pot}}$ | Kinetic energy; gauge invariant |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | Density; gauge invariant |
 | $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; untouched by the coupling |
 | $\mathcal E_{\mathrm{grad}}=\frac{h^{2}}{8\pi^{2}m}\int(\vec\nabla_\Phi \varrho)^{2}$ | Gradient energy; untouched by the coupling |
-| $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Field strengths; gauge invariant |
+| $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Field strengths; gauge invariant |
 | $\phi_{\mathrm{clb}},\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}}$ | Clebsch potentials; here $\phi_{\mathrm{clb}}=S/m$, $\alpha_{\mathrm{clb}}=ϙ/m$, $\beta_{\mathrm{clb}}$ the potential's |
 | $\mathcal L_{\mathrm{fl}}$ | The Lagrangian density in the fluid variables |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |

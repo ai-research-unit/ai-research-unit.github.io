@@ -43,10 +43,10 @@ This is a **linear, constant-coefficient, hyperbolic** equation. Two structural 
 **Feature 2: The characteristics are the light cone.** The characteristic equation of the wave operator $\Box_\Phi$ is
 
 $$
-\left(\frac{\nu_4}{c_0}\right)^2 - \|\nu\|^2 = 0,
+\left(\frac{\digamma_{\mathrm{wav},4}}{c_0}\right)^2 - \|\digamma_{\mathrm{wav}}\|^2 = 0,
 $$
 
-i.e., $\nu_4 = \pm c_0\|\nu\|$. The characteristic surfaces are the light cones. The Cauchy problem with data on a non-characteristic surface is well-posed, and the solution propagates along the characteristics at the speed $c_0$.
+i.e., $\digamma_{\mathrm{wav},4} = \pm c_0\|\digamma_{\mathrm{wav}}\|$. The characteristic surfaces are the light cones. The Cauchy problem with data on a non-characteristic surface is well-posed, and the solution propagates along the characteristics at the speed $c_0$.
 
 ### The Propagation of Smoothness
 
@@ -78,7 +78,7 @@ $$
 
 where $\tilde{F}^+$ and $\tilde{F}^-$ are the limiting values on the two sides of $S$.
 
-The distributional derivative of a discontinuous function acquires a surface term. Let $\tilde U_{\mathrm n}$ be the unit normal to $S$ in the $i r'_t$ convention, $\tilde U_{\mathrm n} = i\nu_t\,e_t + \vec u$ with $\nu_t^2 + \lvert\vec u\rvert^2 = 1$, and let $\delta_S$ be the surface delta distribution. For a spatial surface $\nu_t = 0$, and the normal is the pure $\vec u$. Then
+The distributional derivative of a discontinuous function acquires a surface term. Let $\tilde U_{\mathrm n}$ be the unit normal to $S$ in the $i r'_t$ convention, $\tilde U_{\mathrm n} = i\digamma_{\mathrm{wav},t}\,e_t + \vec u$ with $\digamma_{\mathrm{wav},t}^2 + \lvert\vec u\rvert^2 = 1$, and let $\delta_S$ be the surface delta distribution. For a spatial surface $\digamma_{\mathrm{wav},t} = 0$, and the normal is the pure $\vec u$. Then
 
 $$
 \partial/\partial R_\mu \tilde{F} = \{\partial/\partial R_\mu \tilde{F}\} + [\tilde{F}]_S\, n_\mu\, \delta_S,
@@ -134,7 +134,7 @@ $$
 \{n_0 + i\vec u\}\circ[B]_F = 0 .
 $$
 
-The $i$ on the spatial part of the normal is the bigradient's, and the condition is the article's $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$: the two normals differ only by the position of the $i$, since $-i(n_0 + i\vec u) = \vec u - i n_0$ puts the imaginary unit in the time slot, which is the $i r'_t$ convention's $\tilde U_{\mathrm n} = i\nu_t e_t + \vec u$, and an overall factor in a vanishing condition is empty. Normalising the wave vector gives $n_0 = -1$, and separating the scalar and vector parts of $[B]_F = [b] + [\vec B]$,
+The $i$ on the spatial part of the normal is the bigradient's, and the condition is the article's $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$: the two normals differ only by the position of the $i$, since $-i(n_0 + i\vec u) = \vec u - i n_0$ puts the imaginary unit in the time slot, which is the $i r'_t$ convention's $\tilde U_{\mathrm n} = i\digamma_{\mathrm{wav},t} e_t + \vec u$, and an overall factor in a vanishing condition is empty. Normalising the wave vector gives $n_0 = -1$, and separating the scalar and vector parts of $[B]_F = [b] + [\vec B]$,
 
 $$
 [b] + i(\vec u,[\vec B]) = 0 ,
@@ -183,7 +183,7 @@ $$
 \vec\nabla_\Phi\rho + \partial/\partial\tau\,\vec J - i\,\mathrm{rot}\,\vec J = 0,
 $$
 
-which is the scalar and vector part of $D^-\tilde J_{\Phi,\mathrm{eg}} = 0$, and whose characteristic equation — read off the three-vector part, the scalar part being a constraint on the divergence — is $\nu_t(\nu_t^2 - c^2\|\vec u_{\mathrm{sh}}\|^2) = 0$: the two speeds $\nu_t = \pm c\|\vec u_{\mathrm{sh}}\|$ together with the **simple** null root $\nu_t = 0$, so the characteristic cone is Maxwell's and the stationary surfaces are characteristic. The jump conditions across a front $F_\tau$ with unit normal $\vec m$ follow from the distributional form of the system:
+which is the scalar and vector part of $D^-\tilde J_{\Phi,\mathrm{eg}} = 0$, and whose characteristic equation — read off the three-vector part, the scalar part being a constraint on the divergence — is $\digamma_{\mathrm{wav},t}(\digamma_{\mathrm{wav},t}^2 - c^2\|\vec u_{\mathrm{sh}}\|^2) = 0$: the two speeds $\digamma_{\mathrm{wav},t} = \pm c\|\vec u_{\mathrm{sh}}\|$ together with the **simple** null root $\digamma_{\mathrm{wav},t} = 0$, so the characteristic cone is Maxwell's and the stationary surfaces are characteristic. The jump conditions across a front $F_\tau$ with unit normal $\vec m$ follow from the distributional form of the system:
 
 $$
 [\rho]_{F_\tau} = \big(\vec m, [\vec J]_{F_\tau}\big),
@@ -289,10 +289,10 @@ $$
 while the vorticity of the same flow, $\vec\omega = \vec\nabla_\Phi\times\vec v$, obeys the Helmholtz equation
 
 $$
-\partial/\partial r'_t\vec\omega = \vec\nabla_\Phi\times(\vec v\times\vec\omega) + \nu\,\vec\nabla_\Phi^2\vec\omega
+\partial/\partial r'_t\vec\omega = \vec\nabla_\Phi\times(\vec v\times\vec\omega) + \digamma_{\mathrm{kin}}\,\vec\nabla_\Phi^2\vec\omega
 $$
 
-with the kinematic viscosity $\nu$. The two equations have the same form, in the same velocity field, with the magnetic field in the place of the vorticity and the magnetic diffusivity in the place of the kinematic viscosity. The vector identity behind both, valid for divergence-free fields, is
+with the kinematic viscosity $\digamma_{\mathrm{kin}}$. The two equations have the same form, in the same velocity field, with the magnetic field in the place of the vorticity and the magnetic diffusivity in the place of the kinematic viscosity. The vector identity behind both, valid for divergence-free fields, is
 
 $$
 -\vec\nabla_\Phi\times(\vec v\times\vec B) = (\vec B\cdot\nabla)\vec v - (\vec v\cdot\nabla)\vec B,
@@ -304,7 +304,7 @@ $$
 \partial/\partial r'_t\vec Q + (\vec v\cdot\nabla)\vec Q = (\vec Q\cdot\nabla)\vec v + \kappa\,\vec\nabla_\Phi^2\vec Q,
 $$
 
-with the diffusivity $\kappa = \eta$ for the field and $\kappa = \nu$ for the vorticity. One consequence is that the magnetic field is frozen into a perfectly conducting fluid ($\eta = 0$) exactly as the vorticity is frozen into an inviscid one ($\nu = 0$): Alfvén's frozen-flux theorem is the magnetic image of Kelvin's circulation theorem. The identity has been verified by exact numerical differentiation over random divergence-free fields; the residuals are at machine precision.
+with the diffusivity $\kappa = \eta$ for the field and $\kappa = \digamma_{\mathrm{kin}}$ for the vorticity. One consequence is that the magnetic field is frozen into a perfectly conducting fluid ($\eta = 0$) exactly as the vorticity is frozen into an inviscid one ($\digamma_{\mathrm{kin}} = 0$): Alfvén's frozen-flux theorem is the magnetic image of Kelvin's circulation theorem. The identity has been verified by exact numerical differentiation over random divergence-free fields; the residuals are at machine precision.
 
 **Where the correspondence stops.** It is a statement about two equations for one three-dimensional vector field, and it does not extend to either theory as a whole. There is no magnetic charge density, so there is no magnetic counterpart of the electric charge density, which is what empties the analogy's magnetic-Gauss sector; a fluid has no displacement current, so the constitutive relations are not the same objects; the dissipative terms have different microscopic origins; and the fluid equations are Galilean invariant while Maxwell's equations are Lorentz invariant. The correspondence is between the incompressible fluid limit and the *magnetic* Galilean limit of the electromagnetic equations (the regime of the quasi-stationary approximation), both of which are Galilean; *Maxwell's Equations in the Biquaternionic Formulation* states these limits from the electromagnetic side, and the source paper discusses changes of reference frame within the analogy. The source also offers an interpretation of electric charge in hydrodynamic terms, which is presented as part of the analogy rather than as an established identification, and the corpus records it as such.
 
@@ -406,7 +406,7 @@ The treatment of shock electromagnetic waves in the biquaternion framework is th
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | **Speed of light in vacuum** (global constant) |
 | $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu \partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian |
-| $\tilde U_{\mathrm n}$ | Unit normal to the surface, $i\nu_t e_t + \vec u$ in the $i r'_t$ convention; the spatial case is the pure $\vec u$ |
+| $\tilde U_{\mathrm n}$ | Unit normal to the surface, $i\digamma_{\mathrm{wav},t} e_t + \vec u$ in the $i r'_t$ convention; the spatial case is the pure $\vec u$ |
 | $[\tilde{F}]_S$ | Jump of $\tilde{F}$ across the surface $S$ |
 | $\tilde J_{\Phi,\mathrm{eg}} = i\rho + \vec J$ | Charge–current biquaternion of the electro-gravimagnetic programme |
 | $\rho = \rho_E/\sqrt{\epsilon} - i\rho_H/\sqrt{\mu}$ | Combined complex charge density |

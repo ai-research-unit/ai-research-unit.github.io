@@ -482,9 +482,9 @@ The modulus is the amplitude because the Hermitian norm of the field is proporti
 The phase turns $\vec E$ into $\vec B$ and back.
 
 $$
-e^{i\varphi}\tilde F\quad\longleftrightarrow\quad
-\vec E'=\vec E\cos\varphi-c\vec B\sin\varphi,\qquad
-\vec B'=\vec B\cos\varphi+\frac{\vec E}{c}\sin\varphi,
+e^{i\omicron_{\mathrm{ang}}}\tilde F\quad\longleftrightarrow\quad
+\vec E'=\vec E\cos\omicron_{\mathrm{ang}}-c\vec B\sin\omicron_{\mathrm{ang}},\qquad
+\vec B'=\vec B\cos\omicron_{\mathrm{ang}}+\frac{\vec E}{c}\sin\omicron_{\mathrm{ang}},
 $$
 
 checked over fifty random null fields and angles to $4.4\times10^{-16}$. The transformation is the duality rotation, it preserves $\lvert\vec E\rvert=c\lvert\vec B\rvert$ and $\vec E\cdot\vec B=0$, and it therefore acts on the stratum as a symmetry of the fibre. The $\mathbb{C}^{\times}$ of the bundle is not an abstract scale: its modulus is an amplitude and its argument is a duality angle, and both are classical operations on a field.
@@ -742,7 +742,7 @@ The boundary. A null field is a value of the field at a point. Whether a field i
 
 ### I.10.ay — The Phase of the Scale Is a Duality Rotation
 
-Read: $\tilde F=\lambda\tilde F_0$ with $\lvert\lambda\rvert$ the amplitude, and $e^{i\varphi}\tilde F$ acting as $\vec E\mapsto\vec E\cos\varphi-c\vec B\sin\varphi$, $\vec B\mapsto\vec B\cos\varphi+(\vec E/c)\sin\varphi$.
+Read: $\tilde F=\lambda\tilde F_0$ with $\lvert\lambda\rvert$ the amplitude, and $e^{i\omicron_{\mathrm{ang}}}\tilde F$ acting as $\vec E\mapsto\vec E\cos\omicron_{\mathrm{ang}}-c\vec B\sin\omicron_{\mathrm{ang}}$, $\vec B\mapsto\vec B\cos\omicron_{\mathrm{ang}}+(\vec E/c)\sin\omicron_{\mathrm{ang}}$.
 
 The two real dimensions of the fibre are two classical operations. The modulus scales both halves of the field and the argument rotates one into the other. Neither is a phase in the quantum sense, and neither is a gauge: they are the two things one may do to a null field and stay on the stratum.
 
@@ -852,7 +852,7 @@ The four strata are strata of one algebra and not four algebras. The partition i
 | the products | $\operatorname{Sc}(\vec\Pi_{\mathrm{nil},2}\vec\Pi_{\mathrm{nil}})=-\vec\Pi_{\mathrm{nil},2}\cdot\vec\Pi_{\mathrm{nil}}$, $B^{2}(\vec\Pi_{\mathrm{nil},2}\vec\Pi_{\mathrm{nil}})=-(\vec\Pi_{\mathrm{nil},2}\cdot\vec\Pi_{\mathrm{nil}})^{2}$; the product lies in $\{0\}\cup\Sigma_{01}$ |
 | the null field | $\tilde F^{2}=\epsilon(I_1+2icI_2)e_t$; $\tilde F^{2}=0$ exactly when $\lvert\vec E\rvert=c\lvert\vec B\rvert$ and $\vec E\cdot\vec B=0$ |
 | the count | six real data minus two conditions; amplitude, direction, polarisation |
-| the scale | modulus is the amplitude; argument is the duality angle $\vec E\mapsto\vec E\cos\varphi-c\vec B\sin\varphi$ |
+| the scale | modulus is the amplitude; argument is the duality angle $\vec E\mapsto\vec E\cos\omicron_{\mathrm{ang}}-c\vec B\sin\omicron_{\mathrm{ang}}$ |
 | the ladder | $\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}$ nilpotent with $\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\}=e_t$; rungs $\tilde\Pi_{\mathrm{id},\pm}$ in $\Sigma_{01}$ |
 | the rung count | $\operatorname{Sc}\tilde\Pi_{\mathrm{id},\pm}=\tfrac12$; at most two orthogonal idempotents sum to $e_t$ |
 | the material share | $\Sigma_{00}\cap\mathbb{B}_{\Phi}=\{0\}$; the apex and nothing else |

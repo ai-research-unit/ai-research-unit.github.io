@@ -38,10 +38,10 @@ One-time functionals. The action here is an integral over $t'$ and not over spac
 
 ## The Action in Momentum Space: The Quadratic Form at Fixed Frequency
 
-One substitution. Put $\tilde\Xi=e^{-i\omega t'}\tilde X$ with $\tilde X$ constant. Then $\partial\tilde\Xi=-i\omega\tilde\Xi$, the antisymmetrised kinetic density is $h\nu\,\mathrm{Sc}(\tilde X^{*}\tilde X)$, and the action becomes
+One substitution. Put $\tilde\Xi=e^{-i\omega t'}\tilde X$ with $\tilde X$ constant. Then $\partial\tilde\Xi=-i\omega\tilde\Xi$, the antisymmetrised kinetic density is $hf_{\mathrm{frq}}\,\mathrm{Sc}(\tilde X^{*}\tilde X)$, and the action becomes
 
 $$
-S_\omega[\tilde X]=\int\mathrm{d}t'\;\mathrm{Sc}\Big[\tilde X^{*}\big(h\nu\,e_t-\tilde H_\Psi\big)\tilde X\Big]
+S_\omega[\tilde X]=\int\mathrm{d}t'\;\mathrm{Sc}\Big[\tilde X^{*}\big(hf_{\mathrm{frq}}\,e_t-\tilde H_\Psi\big)\tilde X\Big]
 =\int\mathrm{d}t'\;\big\langle\tilde X,\sigma(\omega)\tilde X\big\rangle .
 $$
 
@@ -85,19 +85,19 @@ $$
 
 which is commutativity of the Hamiltonian with the root. The parent's uniformity requirement is a commutant condition, and only the central root satisfies it for every Hamiltonian.
 
-The spectrum's condition is the same condition. The frequencies are the zeros of $\det\big(h\nu(-i\tilde Z)-\tilde H_\Psi\big)$, and for $\tilde Z=\vec e_z$ the determinant is
+The spectrum's condition is the same condition. The frequencies are the zeros of $\det\big(hf_{\mathrm{frq}}(-i\tilde Z)-\tilde H_\Psi\big)$, and for $\tilde Z=\vec e_z$ the determinant is
 
 $$
-\Big(h_t^{2}-\big(h\nu+h_z\big)^{2}-h_\perp^{2}\Big)^{2},
+\Big(h_t^{2}-\big(hf_{\mathrm{frq}}+h_z\big)^{2}-h_\perp^{2}\Big)^{2},
 $$
 
-with $h_\perp^{2}=h_x^{2}+h_y^{2}$, verified to $1.4\times10^{-14}$. The zeros are $h\nu=-h_z\pm\sqrt{h_t^{2}-h_\perp^{2}}$, real exactly on the cone $h_t^{2}\ge h_x^{2}+h_y^{2}$.
+with $h_\perp^{2}=h_x^{2}+h_y^{2}$, verified to $1.4\times10^{-14}$. The zeros are $hf_{\mathrm{frq}}=-h_z\pm\sqrt{h_t^{2}-h_\perp^{2}}$, real exactly on the cone $h_t^{2}\ge h_x^{2}+h_y^{2}$.
 
 The counts. One hundred draws of a Hermitian Hamiltonian with coefficients uniform in $[-1,1]$: all roots real in $100$ draws for $i$, $32$ for $\vec e_z$, $30$ for $\vec e_x$ and $37$ for $(\vec e_x+\vec e_z)/\sqrt2$. For $\vec e_z$ the cone held in exactly the same $32$ draws, and on the cone the closed form matched to $2.0\times10^{-15}$.
 
 So the two requirements are different requirements. The action is real in $100$ draws out of $100$ for each root. The spectrum is real in $100$, $32$, $30$ and $37$. A variational principle that produces the equation therefore says nothing about whether the frequencies are real, and the gap between the two counts is the measure of how much it says nothing.
 
-Why the two differ. The action's reality is a statement about the kinetic coefficient's type: one of four types, decided by the root's Hermiticity. The spectrum's reality is a statement about the pencil $h\nu(-i\tilde Z)-\tilde H_\Psi$: two self-adjoint arrays, one of them indefinite, and an indefinite pencil has complex zeros. Type is weaker than definiteness, and the article's finding is that sentence.
+Why the two differ. The action's reality is a statement about the kinetic coefficient's type: one of four types, decided by the root's Hermiticity. The spectrum's reality is a statement about the pencil $hf_{\mathrm{frq}}(-i\tilde Z)-\tilde H_\Psi$: two self-adjoint arrays, one of them indefinite, and an indefinite pencil has complex zeros. Type is weaker than definiteness, and the article's finding is that sentence.
 
 What the parent's argument really establishes. The parent's uniqueness theorem is about the *flow*, and its conclusion is about the norm. Read here, it says that only the central root keeps the pencil positive for every Hamiltonian. The variational companion of this article does not contradict it and does not repeat it; it separates the two requirements that the parent's single argument carries.
 
@@ -160,7 +160,7 @@ What the slope fixes. The slope fixes the normalisation of the transform and the
 
 At fixed frequency the variation is algebraic. The substitution $\tilde\Xi=e^{-i\omega t'}\tilde X$ has removed the derivative, so the action $S_\omega$ is a quadratic form in the constant amplitude. Stationarity forces its bracket to vanish, and where the bracket is invertible the only stationary amplitude is zero.
 
-The condition is the eigenvalue problem the action section states. The bracket is $h\nu\,\mathrm{Sc}(\tilde X^{*}\tilde X)-\mathrm{Sc}\bigl[\tilde X^{*}\tilde H_\Psi\tilde X\bigr]$, so its singularity is exactly the statement that $\omega$ is an eigenvalue of $\frac{2\pi \tilde H_\Psi}{h}$. **The constraint is a condition on the frequency and on nothing else**; the amplitude is left free up to normalisation, which is not a restriction the action imposes.
+The condition is the eigenvalue problem the action section states. The bracket is $hf_{\mathrm{frq}}\,\mathrm{Sc}(\tilde X^{*}\tilde X)-\mathrm{Sc}\bigl[\tilde X^{*}\tilde H_\Psi\tilde X\bigr]$, so its singularity is exactly the statement that $\omega$ is an eigenvalue of $\frac{2\pi \tilde H_\Psi}{h}$. **The constraint is a condition on the frequency and on nothing else**; the amplitude is left free up to normalisation, which is not a restriction the action imposes.
 
 The set is the spectrum's zero set. At $k_m=0$ it is the paraboloid; a constant potential translates it, and the connection's temporal slot translates it again by its own amount. The shape is fixed by the kinetic term alone, which is why the constraint of this chart can be read off the first line of the action.
 
@@ -170,11 +170,11 @@ What is absent. No Gauss law, because the connection is fixed at a mode; no boun
 
 Two readings of one identity. Read as an operator, $\sigma(\omega)$ is an array; read as a quadratic form, it is $\tilde X\mapsto\langle\tilde X,\sigma(\omega)\tilde X\rangle$. The two agree on the diagonal and differ off it; the form determines the self-adjoint part of the array, and that is all the action can see.
 
-Reality of the form is self-adjointness. $S_\omega[\tilde X]$ is real for every $\tilde X$ exactly when $\sigma(\omega)$ is self-adjoint for the pairing, which is exactly when $h\nu\,e_t-\tilde H_\Psi$ is Hermitian, which is exactly when $\tilde H_\Psi$ is. **So the reality of the fixed-frequency action at every frequency is the Hermiticity of the Hamiltonian**, verified over one hundred draws on random $\tilde X$.
+Reality of the form is self-adjointness. $S_\omega[\tilde X]$ is real for every $\tilde X$ exactly when $\sigma(\omega)$ is self-adjoint for the pairing, which is exactly when $hf_{\mathrm{frq}}\,e_t-\tilde H_\Psi$ is Hermitian, which is exactly when $\tilde H_\Psi$ is. **So the reality of the fixed-frequency action at every frequency is the Hermiticity of the Hamiltonian**, verified over one hundred draws on random $\tilde X$.
 
 What the form cannot see. An anti-Hermitian part of the array contributes a purely imaginary value to the form and cancels in the sum with its conjugate. So the action is blind to the anti-Hermitian part, and its blindness is the reason the next section's statement is possible.
 
-The trace is the form on a basis. Summing the form over an orthonormal basis of the coefficient space gives $\operatorname{tr}\sigma(\omega)=4(h\nu-h_t)$. The action's trace is four times the mean frequency, and the determinant, which the form cannot see, is the square of the gap.
+The trace is the form on a basis. Summing the form over an orthonormal basis of the coefficient space gives $\operatorname{tr}\sigma(\omega)=4(hf_{\mathrm{frq}}-h_t)$. The action's trace is four times the mean frequency, and the determinant, which the form cannot see, is the square of the gap.
 
 ## The Noether Currents: The Charge Per Mode
 
@@ -202,10 +202,10 @@ $$
 
 which is Parseval's identity read as a charge. On a grid of $4096$ points a superposition of three integer modes gave $\sum_j\lvert c_j\rvert^{2}=1.562500000000$ and a grid norm equal to that number to the last printed digit. The norm is the charge, and the transform diagonalises it.
 
-The energy. The parent's constant-setting energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi)$, which on a mode is $h\nu_j$ times the mode's norm. So
+The energy. The parent's constant-setting energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi)$, which on a mode is $hf_{\mathrm{frq},j}$ times the mode's norm. So
 
 $$
-E=\sum_j h\nu_j\lvert c_j\rvert^{2},
+E=\sum_j hf_{\mathrm{frq},j}\lvert c_j\rvert^{2},
 $$
 
 and the same grid gave $4.867427$ against $4.867500$ from the coefficients, the difference $7.3\times10^{-5}$ being the finite-difference gradient's error and not a structural one. Two functionals, one normalisation, and both diagonal in the transform.
@@ -247,14 +247,14 @@ Parseval is the Noether charge's transform, $Q_N=\sum_j\lvert c_j\rvert^{2}$, ex
 | Symbol | Meaning |
 | --- | --- |
 | $S_\omega[\tilde X]=\int\mathrm{d}t'\,\langle\tilde X,\sigma(\omega)\tilde X\rangle$ | The action at fixed frequency; the quadratic form whose kernel is the symbol |
-| $\sigma(\omega)=h\nu\,e_t-\tilde H_\Psi$ | The symbol; the Euler–Lagrange operator of $S_\omega$ |
+| $\sigma(\omega)=hf_{\mathrm{frq}}\,e_t-\tilde H_\Psi$ | The symbol; the Euler–Lagrange operator of $S_\omega$ |
 | $\tilde Z^{2}=-e_t$, $\tilde Z^{*}=-\tilde Z$ | A root; anti-Hermitian, hence the action is real |
 | $\frac{h}{2\pi} c\,\tilde Z$ | The kinetic coefficient of the action with a root |
 | $E=\frac{h}{2\pi} c\,\tilde Z\partial\tilde\Xi-\tilde H_\Psi\tilde\Xi$ | The Euler–Lagrange bracket; its vanishing is the equation |
 | $100$, $32$, $30$, $37$ | Draws with a real spectrum, out of one hundred, for $i$, $\vec e_z$, $\vec e_x$, $(\vec e_x+\vec e_z)/\sqrt2$ |
 | $h_t^{2}\ge h_\perp^{2}$ | The cone on which the pencil has real zeros |
 | $Q_N=\sum_j\lvert c_j\rvert^{2}$ | The charge; Parseval's identity |
-| $E=\sum_j h\nu_j\lvert c_j\rvert^{2}$ | The energy; the charge weighted by the spectrum |
+| $E=\sum_j hf_{\mathrm{frq},j}\lvert c_j\rvert^{2}$ | The energy; the charge weighted by the spectrum |
 | $\partial\sigma/\partial\omega=\frac{h}{2\pi}$ | The Legendre slope; invertible, hence unconstrained |
 
 ## Further Reading

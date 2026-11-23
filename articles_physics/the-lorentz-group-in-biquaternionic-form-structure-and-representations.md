@@ -378,13 +378,13 @@ $$
 M=\{\operatorname{diag}(u,u^{-1}):|u|=1\}\cong \mathrm{U}(1),\qquad
 A=\{\operatorname{diag}(\exp(t/2),\exp(-t/2)):t\in\mathbb{R}\},
 $$
-and $N$ unipotent. For $n_{\mathrm{par}}\in\mathbb{Z}$ and $\nu\in\mathbb{R}$ the $*$-unitary character $\xi_{n_{\mathrm{par}},\nu}(man)=u^{n_{\mathrm{par}}}\exp(i\theta_{\mathrm{pwt}})$ induces a $*$-unitary representation of the group, with $\theta_{\mathrm{pwt}}=\nu t$ real because the character frequency and the group parameter are real.
+and $N$ unipotent. For $n_{\mathrm{par}}\in\mathbb{Z}$ and $\digamma_{\mathrm{par}}\in\mathbb{R}$ the $*$-unitary character $\xi_{n_{\mathrm{par}},\digamma_{\mathrm{par}}}(man)=u^{n_{\mathrm{par}}}\exp(i\theta_{\mathrm{pwt}})$ induces a $*$-unitary representation of the group, with $\theta_{\mathrm{pwt}}=\digamma_{\mathrm{par}} t$ real because the character frequency and the group parameter are real.
 $$
-\pi_{m,\nu}=\operatorname{Ind}_P^G(\xi_{m,\nu}),
+\pi_{m,\digamma_{\mathrm{par}}}=\operatorname{Ind}_P^G(\xi_{m,\digamma_{\mathrm{par}}}),
 $$
-the **principal series**: $*$-unitary by construction, irreducible for generic parameters and tempered for $\nu\in\mathbb{R}$, with $m$ a discrete parameter and $\nu$ a continuous one. Together with the **complementary series**, whose continuous parameter is purely imaginary and bounded, and the trivial representation, this is the $*$-unitary dual of $SL(2,\mathbb{C})$; the finite-dimensional polynomial representations are not in it, except for the trivial one. The compact subgroup $SU(2)$ supplies the finite-dimensional multiplets, and the passage from its discrete highest weights to the continuous parameter of the principal series is the complexification of the $*$-unitary dual.
+the **principal series**: $*$-unitary by construction, irreducible for generic parameters and tempered for $\digamma_{\mathrm{par}}\in\mathbb{R}$, with $m$ a discrete parameter and $\digamma_{\mathrm{par}}$ a continuous one. Together with the **complementary series**, whose continuous parameter is purely imaginary and bounded, and the trivial representation, this is the $*$-unitary dual of $SL(2,\mathbb{C})$; the finite-dimensional polynomial representations are not in it, except for the trivial one. The compact subgroup $SU(2)$ supplies the finite-dimensional multiplets, and the passage from its discrete highest weights to the continuous parameter of the principal series is the complexification of the $*$-unitary dual.
 
-Physically the principal series is the mode content of a field on the mass shell: the discrete parameter $m$ is the spin about the boost axis and the continuous parameter $\nu$ the rapidity of the boost, and the non-compact symmetry is realised on an infinite-dimensional space rather than on the finite multiplet of a compact group.
+Physically the principal series is the mode content of a field on the mass shell: the discrete parameter $m$ is the spin about the boost axis and the continuous parameter $\digamma_{\mathrm{par}}$ the rapidity of the boost, and the non-compact symmetry is realised on an infinite-dimensional space rather than on the finite multiplet of a compact group.
 
 ### The Stabilisers of a Direction and Their Series
 
@@ -465,7 +465,7 @@ The group that carries the transformations is represented as follows. The group 
 | $(\lambda_1,\lambda_2)$ | Highest weight of an algebraic representation of $GL_2(\mathbb{C})$ |
 | $V_s$ | Irreducible representation of spin $s$, highest weight $2s$, dimension $2s+1$ |
 | $V_{1/2}^{\otimes N}$ | Ballot-number decomposition of the tensor powers of the spinor |
-| $\operatorname{Ind}_P^G(\xi_{m,\nu})$ | Principal series of $SL(2,\mathbb{C})$; $P=MAN$ the Borel subgroup |
+| $\operatorname{Ind}_P^G(\xi_{m,\digamma_{\mathrm{par}}})$ | Principal series of $SL(2,\mathbb{C})$; $P=MAN$ the Borel subgroup |
 | $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$ | Subgroup fixing a space-like direction; double cover of $SO(1,2)$ |
 | $S^2$, $H^\pm$, $H^{sl}$ | Sphere, two-sheeted time-like hyperboloid, one-sheeted hyperboloid |
 | $[u\vert v]=u^{\dagger}\sigma_3v$ | Indefinite $SU(1,1)$-invariant pairing |

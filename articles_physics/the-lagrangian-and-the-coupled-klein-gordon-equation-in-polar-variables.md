@@ -192,7 +192,7 @@ $$
 
 No other parameter moves. The claim is that this is the *whole* of minimal coupling in the chart, and it is checkable in one line: the covariant derivative is $\partial+\frac{2\pi iϙ}{h}A$ with $A$ central, and a central element commutes with the word, so it can only enter through the phase.
 
-What it buys. The four-bracket expansion of the free article is unchanged: the brackets are the logarithmic derivative's decomposition and know nothing about the connection. The coupling enters the phase's bracket alone, and the mass term, being a function of $\varrho$ and the frame, is untouched. Hence the coupled chart's Lagrangian is the free chart's Lagrangian with one rate and one gradient shifted, and the two-number statement of the operator setting — $h_t\mapsto h_t-ϙ\varphi$, $\vec h_\Psi\mapsto\vec h_\Psi-ϙ\vec A$ — is the same statement read in the other chart.
+What it buys. The four-bracket expansion of the free article is unchanged: the brackets are the logarithmic derivative's decomposition and know nothing about the connection. The coupling enters the phase's bracket alone, and the mass term, being a function of $\varrho$ and the frame, is untouched. Hence the coupled chart's Lagrangian is the free chart's Lagrangian with one rate and one gradient shifted, and the two-number statement of the operator setting — $h_t\mapsto h_t-ϙ\omicron_{\mathrm{pot}}$, $\vec h_\Psi\mapsto\vec h_\Psi-ϙ\vec A$ — is the same statement read in the other chart.
 
 What it forbids. A coupling that entered the frame's brackets would break the gauge invariance computed in the section on the charge, because the frame is what the gauge transformation rotates. The placement is therefore forced by the symmetry and not chosen for convenience.
 

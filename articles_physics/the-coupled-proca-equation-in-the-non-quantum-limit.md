@@ -84,7 +84,7 @@ $$
 \qquad
 \vec\pi=\frac{h}{2\pi}\vec\kappa=\vec\nabla_\Phi S-q\vec A,
 \qquad
-\mathcal E=-\frac{h}{2\pi} c\,\kappa_t=E-q\varphi .
+\mathcal E=-\frac{h}{2\pi} c\,\kappa_t=E-q\omicron_{\mathrm{pot}} .
 $$
 
 Three conditions in one display, and each has a different origin. The shell is the mass term's content; the transversality is the constraint's; the polarisation is the frame's.

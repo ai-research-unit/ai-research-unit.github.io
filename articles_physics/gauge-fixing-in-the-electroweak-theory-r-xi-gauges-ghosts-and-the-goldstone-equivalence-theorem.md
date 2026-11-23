@@ -35,7 +35,7 @@ The vector annihilated by the massless kernel is $p_\mu$, and a field variation 
 Breaking the symmetry does not remove the degeneracy; it moves it. The scalar's kinetic term produces a mixing between the vector and the Goldstone, and the flat direction is now a simultaneous shift of both. With the doublet written as in the electroweak article,
 
 $$
-\varphi=\exp\left(i\sum_a\theta_{\mathrm{gld},a}\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
+\omicron_{\mathrm{pot}}=\exp\left(i\sum_a\theta_{\mathrm{gld},a}\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
 $$
 
 the angle is $\theta_{\mathrm{gld},a}=\xi_{a}/v$, a real Goldstone field over the real vacuum expectation value; the quadratic form in the pair $(A_\mu,\xi)$ is the vector's kernel coupled to the Goldstone by a term proportional to $p_\mu\xi$, and the vector that it annihilates is
@@ -82,7 +82,7 @@ with $B_{a}$ the Nakanishi–Lautrup field. Eliminating $B_{a}$ by its own equat
 
 ## Two Jobs in One Functional
 
-Expanding $\left|D_\mu\varphi\right|^2$ around the vacuum in the parametrisation of §*Why the Quadratic Form Is Degenerate* gives three pieces: a mass term $\frac{M^2}{2}A_\mu A_\mu$, a derivative mixing $-M\,\xi\sum_\mu\varepsilon_\mu\partial_\mu A_\mu$, and the Goldstone's own kinetic term $-\frac12(\partial\xi)^2$. There is no $\xi^2$ term without a mass, because the potential's curvature along the Goldstone direction vanishes at the minimum: that is the Goldstone theorem in its dynamical form.
+Expanding $\left|D_\mu\omicron_{\mathrm{pot}}\right|^2$ around the vacuum in the parametrisation of §*Why the Quadratic Form Is Degenerate* gives three pieces: a mass term $\frac{M^2}{2}A_\mu A_\mu$, a derivative mixing $-M\,\xi\sum_\mu\varepsilon_\mu\partial_\mu A_\mu$, and the Goldstone's own kinetic term $-\frac12(\partial\xi)^2$. There is no $\xi^2$ term without a mass, because the potential's curvature along the Goldstone direction vanishes at the minimum: that is the Goldstone theorem in its dynamical form.
 
 Squaring $G$ gives three pieces with the same shapes:
 
@@ -92,7 +92,7 @@ $$
 
 The cross terms are equal and opposite, $+M\xi\partial\cdot A$ against $-M\xi\partial\cdot A$; and the new $\xi^2$ term is what the potential could not supply. So one functional removes the mixing and supplies the mass, and the two facts are one fact: the functional is the gauge-invariant completion of the Goldstone's mass term.
 
-| Piece | from $\lvert D\varphi\rvert^2$ | from $\mathcal{L}_{\mathrm{gf}}$ | Sum |
+| Piece | from $\lvert D\omicron_{\mathrm{pot}}\rvert^2$ | from $\mathcal{L}_{\mathrm{gf}}$ | Sum |
 |---|---|---|---|
 | $A_\mu A_\mu$ | $+\frac{M^2}{2}A^2$ | $-\frac{1}{2\zeta}(\partial\cdot A)^2$ | the massive kernel |
 | $\sum_\mu\varepsilon_\mu A_\mu\partial_\mu\xi$ | $-M\xi\,\partial\cdot A$ | $+M\xi\,\partial\cdot A$ | $0$ |
@@ -379,7 +379,7 @@ The framework realises the gauge-fixing procedure itself, not the selection of a
 | $\zeta_A$ | The gauge parameter of the photon's functional |
 | $\xi_{a}$, $\xi^\pm$, $\xi^0$ | The would-be Goldstone fields of article 4, which writes the index down |
 | $W_{a,\mu}$, $Z_\mu$, $A_\mu$ | The gauge fields in the broken basis: the charged pair, the neutral massive one and the photon |
-| $\varphi$, $h$ | The scalar doublet and the physical scalar left after the Goldstones are eaten |
+| $\omicron_{\mathrm{pot}}$, $h$ | The scalar doublet and the physical scalar left after the Goldstones are eaten |
 | $v$ | $246.22$ GeV, the vacuum expectation value, entering $M_W=gv/2$ |
 | $g$, $g_{\mathrm Y}$ | The $SU(2)_L$ and $\mathrm U(1)_{\mathrm Y}$ couplings |
 | $M_W$, $M_Z$, $M_H$ | $80.377$, $91.1876$ and $125.09$ GeV, the measured boson masses |

@@ -92,7 +92,7 @@ and the symbol's dependence on the coupling is entirely through $\pi_\mu=\frac{h
 
 A constant connection has $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu=0$ identically, so the commutator vanishes and the square splitting reduces to the symmetric sum of squares. The symbol of that sum is $-\pi^{2}$, and the identity is an identity and not an approximation.
 
-What the translation does to the spectrum is the parent's shift, read as a symbol. The temporal component of $\pi$ is $h\nu/c+\varkappa\varphi$, so the symbol's evenness is about $\omega=-\frac{2\pi \varkappa c\varphi}{h}$ and not about zero. A constant potential moves the axis of the symbol's parity, which is the frequency-space form of "a constant potential shifts every energy by $\varkappa\varphi$".
+What the translation does to the spectrum is the parent's shift, read as a symbol. The temporal component of $\pi$ is $hf_{\mathrm{frq}}/c+\varkappa\omicron_{\mathrm{pot}}$, so the symbol's evenness is about $\omega=-\frac{2\pi \varkappa c\omicron_{\mathrm{pot}}}{h}$ and not about zero. A constant potential moves the axis of the symbol's parity, which is the frequency-space form of "a constant potential shifts every energy by $\varkappa\omicron_{\mathrm{pot}}$".
 
 $\vec\pi=\frac{h}{2\pi}\vec k_\Phi-q\vec A$ means the symbol's dependence on $\vec k_\Phi$ is a translation, so the dispersion's minimum sits at $\vec k_\Phi=-\frac{2\pi \varkappa\vec A}{h}$. A constant vector potential moves the dispersion's centre and not its shape, and the symbol's translation is exactly that statement.
 
@@ -187,7 +187,7 @@ The covariant Lorenz condition's exactness is the parent's and it is quoted, not
 
 The coupled Proca operator's symbol is two terms. The first is the free symbol at the shifted four-momentum $\pi_\mu=\frac{h}{2\pi} k_\mu-q A_\mu$, which is the translation; the second is $\frac{2\pi i\varkappa}{h}F^{(\Phi)}$, which is the commutator of two covariant derivatives and is the obstruction. The decomposition is the parent's square-splitting identity, transformed term by term, and there is no third term because the identity has two.
 
-At a constant connection the obstruction vanishes identically and the symbol is $-\pi^{2}$ times the identity: the translation is exact, the dispersion is $\pi^{2}=k_m^{2}$, and a constant potential moves the axis of the symbol's parity to $\omega=-\frac{2\pi \varkappa c\varphi}{h}$.
+At a constant connection the obstruction vanishes identically and the symbol is $-\pi^{2}$ times the identity: the translation is exact, the dispersion is $\pi^{2}=k_m^{2}$, and a constant potential moves the axis of the symbol's parity to $\omega=-\frac{2\pi \varkappa c\omicron_{\mathrm{pot}}}{h}$.
 
 At a varying connection the obstruction is not removable. Two connections can agree in $\pi$ at a point and differ in $F$ there — the example is $A^{(1)}=0$ against $A^{(2)}$ with $A_1=b\,r_2'$, whose $\lvert F_{21}\rvert=0.9$ while both connections vanish at the origin. So the symbol at a point is not a function of the momentum at that point, and a Fourier description is wrong by exactly the curvature.
 

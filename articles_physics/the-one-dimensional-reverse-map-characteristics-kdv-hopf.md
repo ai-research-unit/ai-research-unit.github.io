@@ -82,15 +82,15 @@ the Hopf–Lax formula. The formula is exact, it is a minimum over the initial d
 
 ## The Viscous Case Linearises to a Diffusion Equation
 
-Adding viscosity gives Burgers' equation, and Burgers' equation is exactly linearisable. With $\nu_{\mathrm{kin}}>0$,
+Adding viscosity gives Burgers' equation, and Burgers' equation is exactly linearisable. With $\digamma_{\mathrm{kin}}>0$,
 
 $$
-\partial_{t'}u+u\,\partial_xu=\nu_{\mathrm{kin}}\,\partial_{xx}u ,
+\partial_{t'}u+u\,\partial_xu=\digamma_{\mathrm{kin}}\,\partial_{xx}u ,
 $$
 
-and the Hopf–Cole transformation $u=-2\nu_{\mathrm{kin}}\partial_x\ln\psi$ carries it into $\partial_{t'}\psi=\nu_{\mathrm{kin}}\partial_{xx}\psi$. The check is a differentiation and it is exact, as [Viscosity and the Rayleigh Dissipation Function](viscosity-and-the-rayleigh-dissipation-function.html) verifies on the heat kernel, where $u=x/t'$.
+and the Hopf–Cole transformation $u=-2\digamma_{\mathrm{kin}}\partial_x\ln\psi$ carries it into $\partial_{t'}\psi=\digamma_{\mathrm{kin}}\partial_{xx}\psi$. The check is a differentiation and it is exact, as [Viscosity and the Rayleigh Dissipation Function](viscosity-and-the-rayleigh-dissipation-function.html) verifies on the heat kernel, where $u=x/t'$.
 
-The linearisation smooths the catastrophe instead of removing the nonlinearity's origin. The shock of the inviscid case becomes a layer of width of order $\nu_{\mathrm{kin}}/u$, and the layer's profile is the heat kernel's logarithm. So the viscous case has a linear equivalent and the equivalent is parabolic: its frequency is imaginary, its kernel is positive, and its solutions do not oscillate.
+The linearisation smooths the catastrophe instead of removing the nonlinearity's origin. The shock of the inviscid case becomes a layer of width of order $\digamma_{\mathrm{kin}}/u$, and the layer's profile is the heat kernel's logarithm. So the viscous case has a linear equivalent and the equivalent is parabolic: its frequency is imaginary, its kernel is positive, and its solutions do not oscillate.
 
 **The point of the example is that linearity and waving come apart.** A reader who equates "linearisable" with "has a wave equivalent" will take Burgers' equation as a counterexample to the section. It is not: it is the case that shows the section's thesis must be stated about *wave* equations, which is how it is stated.
 
@@ -130,7 +130,7 @@ $$
 
 and the pair's first operator is a Schrödinger operator whose potential is the fluid. The inverse scattering transform solves the initial-value problem by evolving the scattering data linearly and reconstructing the potential, so the *method* is linear and the *equation* is not.
 
-The auxiliary problem is where a linear Schrödinger equation appears, and its unknown is not the fluid. The scattering problem is $-\varphi_{xx}+u\varphi=\lambda\varphi$: the fluid $u$ is the potential, and $\varphi$ is an auxiliary wave function that has no fluid reading. So the linear equation of the pair is linear in the wrong variable, and a reader who takes it for the fluid's wave equivalent has taken the potential for the solution. The error is the same one the previous articles name in another place: reading a term of an equation for the unknown.
+The auxiliary problem is where a linear Schrödinger equation appears, and its unknown is not the fluid. The scattering problem is $-\omicron_{\mathrm{aux},xx}+u\omicron_{\mathrm{aux}}=\lambda\omicron_{\mathrm{aux}}$: the fluid $u$ is the potential, and $\omicron_{\mathrm{aux}}$ is an auxiliary wave function that has no fluid reading. So the linear equation of the pair is linear in the wrong variable, and a reader who takes it for the fluid's wave equivalent has taken the potential for the solution. The error is the same one the previous articles name in another place: reading a term of an equation for the unknown.
 
 ## What One Dimension Teaches
 
@@ -175,13 +175,13 @@ The two linear objects of the article are a diffusion equation and a scattering 
 | $t'_{c}=-1/\inf f'$ | Time of the gradient catastrophe |
 | $\phi$ | Potential with $u=\partial_x\phi$; Hopf–Lax function |
 | $\psi$ | Hopf–Cole potential |
-| $\nu_{\mathrm{kin}}$ | Kinematic viscosity |
+| $\digamma_{\mathrm{kin}}$ | Kinematic viscosity |
 | $c_0=\sqrt{g_{\mathrm{gr}}H_0}$ | Long-wave speed of the shallow layer |
 | $H_0$ | Rest depth of the layer |
 | $g_{\mathrm{gr}}$ | Gravitational acceleration |
 | $u_0$ | Amplitude of the KdV soliton; speed $2u_0$ |
 | $L,\ P$ | Lax pair of the KdV equation |
-| $\varphi$ | Auxiliary wave function of the scattering problem |
+| $\omicron_{\mathrm{aux}}$ | Auxiliary wave function of the scattering problem |
 | $\lambda$ | Spectral parameter |
 
 ## Further Reading

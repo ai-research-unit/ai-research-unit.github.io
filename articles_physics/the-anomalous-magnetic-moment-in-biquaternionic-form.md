@@ -93,23 +93,23 @@ The magnetic coupling to an external field is a rotation-type structure, and its
 
 ## The Reduction of a Numerator
 
-**Why operators here.** The algebraic work behind the loop computation is the reduction of the numerator, and it is a statement about the operators that act on the state rather than about the elements. This section therefore writes them as basis operators, $L_aR_b$ with $L_aR_b\,X=aXb$, and the basis operator of the direction $\mu$ as $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $\nu(t)=x$, $\nu(\eta)=y$. It is the one section of the article that does, and the reason is that the operators are its subject; in the algebra's own objects the same four sums are read off the products of the invertibles, and the correspondence between the two readings is stated in the closing section.
+**Why operators here.** The algebraic work behind the loop computation is the reduction of the numerator, and it is a statement about the operators that act on the state rather than about the elements. This section therefore writes them as basis operators, $L_aR_b$ with $L_aR_b\,X=aXb$, and the basis operator of the direction $\mu$ as $iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}$, $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$. It is the one section of the article that does, and the reason is that the operators are its subject; in the algebra's own objects the same four sums are read off the products of the invertibles, and the correspondence between the two readings is stated in the closing section.
 
 **The closure.** The generator of the pair is half the operator of the pair,
-$$S_{\mu\nu}=\tfrac{i}{2}\big(iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\big)\big(iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\big),$$
+$$S_{\mu\nu}=\tfrac{i}{2}\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)\big(iL_{e_\nu}R_{\vec e_{\mathrm{spt}(\nu)}}\big),$$
 and the six close on the Lorentz algebra, with residual $0$:
 $$\big[S_{\mu\nu},S_{\rho\sigma}\big]
 =i\big(g_{\nu\rho}S_{\mu\sigma}-g_{\mu\rho}S_{\nu\sigma}-g_{\nu\sigma}S_{\mu\rho}+g_{\mu\sigma}S_{\nu\rho}\big).$$
 The sign is the one the normalisation carries: the conventions' generator is half the commutator of the two basis operators, and this section's is $S_{\mu\nu}=\tfrac12\mathcal G_{\mu\nu}$, which is that generator times $-i$; the extra $i$ is accounted for in the closing section.
 
 **The four contractions.** The reduction rests on four sums over the direction index, verified with residual $0$ on every index combination:
-$$\sum_\mu\varepsilon_\mu\,\big(iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\big)\big(iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\big)=4e_t ,$$
-$$\sum_\mu\varepsilon_\mu\,\big(iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\big)\big(iL_{e_\alpha}R_{\vec e_{\nu(\alpha)}}\big)\big(iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\big)=-2\,iL_{e_\alpha}R_{\vec e_{\nu(\alpha)}} ,$$
-$$\sum_\mu\varepsilon_\mu\,\big(iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\big)\big(iL_{e_\alpha}R_{\vec e_{\nu(\alpha)}}\big)\big(iL_{e_\beta}R_{\vec e_{\nu(\beta)}}\big)\big(iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\big)=4\varepsilon_\alpha\delta_{\alpha\beta}\,e_t ,$$
-$$\sum_\mu\varepsilon_\mu\,\big(iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\big)\big(iL_{e_\alpha}R_{\vec e_{\nu(\alpha)}}\big)\big(iL_{e_\beta}R_{\vec e_{\nu(\beta)}}\big)\big(iL_{e_\rho}R_{\vec e_{\nu(\rho)}}\big)\big(iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\big)=-2\,iL_{e_\rho}R_{\vec e_{\nu(\rho)}}\,iL_{e_\beta}R_{\vec e_{\nu(\beta)}}\,iL_{e_\alpha}R_{\vec e_{\nu(\alpha)}} .$$
+$$\sum_\mu\varepsilon_\mu\,\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)=4e_t ,$$
+$$\sum_\mu\varepsilon_\mu\,\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)\big(iL_{e_\alpha}R_{\vec e_{\mathrm{spt}(\alpha)}}\big)\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)=-2\,iL_{e_\alpha}R_{\vec e_{\mathrm{spt}(\alpha)}} ,$$
+$$\sum_\mu\varepsilon_\mu\,\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)\big(iL_{e_\alpha}R_{\vec e_{\mathrm{spt}(\alpha)}}\big)\big(iL_{e_\beta}R_{\vec e_{\mathrm{spt}(\beta)}}\big)\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)=4\varepsilon_\alpha\delta_{\alpha\beta}\,e_t ,$$
+$$\sum_\mu\varepsilon_\mu\,\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)\big(iL_{e_\alpha}R_{\vec e_{\mathrm{spt}(\alpha)}}\big)\big(iL_{e_\beta}R_{\vec e_{\mathrm{spt}(\beta)}}\big)\big(iL_{e_\rho}R_{\vec e_{\mathrm{spt}(\rho)}}\big)\big(iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\big)=-2\,iL_{e_\rho}R_{\vec e_{\mathrm{spt}(\rho)}}\,iL_{e_\beta}R_{\vec e_{\mathrm{spt}(\beta)}}\,iL_{e_\alpha}R_{\vec e_{\mathrm{spt}(\alpha)}} .$$
 Read off in order: the basis operator of a direction squares to the weight, $+1$ timelike and $-1$ spacelike; placing one basis operator between the two factors gives minus twice that basis operator, the minus being the reversal of a product of odd length; placing two between the factors gives the metric and nothing else; placing between the factors three gives the three in reverse order. The unit $e_t$ on the right of the first and the third is the identity on every state. The four are what convert a one-loop numerator, which is a product of an even number of directions, into sums of metric factors and bivectors: precisely the two structures of the vertex.
 
-**The traces of the operators.** Since a product of two-sided operators is again a two-sided operator, the trace factorizes at every length, $\mathrm{tr}(c_{\mu_1}\cdots c_{\mu_n})=4\mathrm{Sc}(a_{\mu_1}\cdots a_{\mu_n})\mathrm{Sc}(b_{\mu_n}\cdots b_{\mu_1})$ for $c_\mu=L_{a_\mu}R_{b_\mu}$, a convention of *Matrix Representations Conventions*. Two consequences are used under every numerator: $\mathrm{tr}\big((iL_{e_\mu}R_{\vec e_{\nu(\mu)}})(iL_{e_\nu}R_{\vec e_{\nu(\nu)}})\big)=4g_{\mu\nu}$, and a single direction is of zero array trace, one of its two multipliers being a vector unit of vanishing scalar part.
+**The traces of the operators.** Since a product of two-sided operators is again a two-sided operator, the trace factorizes at every length, $\mathrm{tr}(c_{\mu_1}\cdots c_{\mu_n})=4\mathrm{Sc}(a_{\mu_1}\cdots a_{\mu_n})\mathrm{Sc}(b_{\mu_n}\cdots b_{\mu_1})$ for $c_\mu=L_{a_\mu}R_{b_\mu}$, a convention of *Matrix Representations Conventions*. Two consequences are used under every numerator: $\mathrm{tr}\big((iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}})(iL_{e_\nu}R_{\vec e_{\mathrm{spt}(\nu)}})\big)=4g_{\mu\nu}$, and a single direction is of zero array trace, one of its two multipliers being a vector unit of vanishing scalar part.
 
 ## The One-Loop Correction
 
@@ -169,7 +169,7 @@ against the measured $1.15965218073\times10^{-3}$: agreement to $5\times10^{-11}
 
 ## Verification
 
-All numerics are machine-precision arithmetic in the biquaternion algebra, with the four directions $X\mapsto i\vec e_\mu X\vec e_{\nu(\mu)}$ of §*The Six Directions*, and in the four-by-four operators where a section is about the operators.
+All numerics are machine-precision arithmetic in the biquaternion algebra, with the four directions $X\mapsto i\vec e_\mu X\vec e_{\mathrm{spt}(\mu)}$ of §*The Six Directions*, and in the four-by-four operators where a section is about the operators.
 
 | Claim | Value / result |
 |---|---|
@@ -204,7 +204,7 @@ The on-shell states were built as $w=i\,p_0\,w_0\vec e_x-\sum_\eta i\,p_\eta\,\v
 
 ## The Legacy Pauli Gamma Formulation
 
-**The older names.** A reader of the gamma literature meets the same operators under other names, and the translation is worth one paragraph, here, in the one place where this article writes them. The four directions of the frame are the four gammas of *Frame and Metric Conventions*, $\gamma_\mu=iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, and the chirality basis operator is $\gamma_5=-iR_{\vec e_z}$; the arrays themselves are printed in *Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation*, and this article prints none, because the object is the operator and the array is one display of it.
+**The older names.** A reader of the gamma literature meets the same operators under other names, and the translation is worth one paragraph, here, in the one place where this article writes them. The four directions of the frame are the four gammas of *Frame and Metric Conventions*, $\gamma_\mu=iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}$, and the chirality basis operator is $\gamma_5=-iR_{\vec e_z}$; the arrays themselves are printed in *Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation*, and this article prints none, because the object is the operator and the array is one display of it.
 
 **The normalisation of the bivector.** The conventions article writes the Lorentz generator as half the commutator of the two basis operators, $\sigma_{\mu\nu}=\tfrac14\big[\gamma_\mu,\gamma_\nu\big]=\tfrac12c_\mu c_\nu$, and it takes twice that for the bivector of the pair. This article writes $\mathcal G_{\mu\nu}=-i\,c_\mu c_\nu=-2i\,\sigma_{\mu\nu}$ and $S_{\mu\nu}=\tfrac12\mathcal G_{\mu\nu}=-i\,\sigma_{\mu\nu}$: the conventions' objects times $-2i$ and $-i$, the minus being the reversal of the two right multipliers. What the factor buys is the Hermiticity of the class, $\mathcal G_{j\eta}=i\vec e_m$ fixed by the star, and it is what fixes the sign of the closure in §*The Reduction of a Numerator*. The two tables of six entries are one table read twice, the arithmetic of §*The Six Directions* reading the rotations against $i\vec e_m$ and the timelike pairs against $i\vec e_\eta$ on the left and $\vec e_z$ on the right.
 
@@ -242,7 +242,7 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The two sectors, and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ |
 | $\tilde S_{\Psi,m}=\frac{h}{4\pi}i\vec e_m$ | Spin generator; $\mathcal G_{12}$ acts as $\frac{2\pi 2\,\tilde{S}_{\Psi,3}}{h}$ |
 | $L_aR_b$, $L_aR_bX=aXb$ | The operator of the two multipliers, used in §*The Reduction of a Numerator* only |
-| $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $\nu(t)=x$, $\nu(\eta)=y$ | The operator of the direction $\mu$ |
+| $iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}$, $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$ | The operator of the direction $\mu$ |
 | $\mathrm{tr}(L_aR_b)=4\mathrm{Sc}(a)\mathrm{Sc}(b)$ | Operator trace, factorized into the two multipliers |
 | $\mathrm{Tr}_2(\tilde Q_1\tilde Q_2)=2\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace on the algebra, the plain form |
 | Four contraction identities of §*The Reduction of a Numerator* | The four weighted sums (residual $0$) |

@@ -14,7 +14,7 @@ This is the variational companion of [The Charged Spin-Zero Fluid](the-charged-s
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with the connection: $ϙ$ is the coupling, $q=-ϙ$ the electric charge; $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta$ with $a'_t=\varphi$; the covariant derivative is $\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$; $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$; $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$, $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$. A gauge transformation is $S_{\tilde\Xi}\mapsto S_{\tilde\Xi}+ϙ\Gamma$ together with $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$, that is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Gamma}{h}$. The temporal slot's sign is the one that looks odd and is not: the invariant is $W_0=(\partial_{t'}S_{\tilde\Xi}+ϙ a'_t)/m$, so the scalar potential moves against the phase and not with it, where the first-order rung's bracket $\partial_{t'}S-ϙ\varphi$ carries the opposite sign on the phase and the potential moves with it. The two rungs differ in the sign of one bracket and in nothing else, and a reader moving between the two articles should expect the scalar potential to shift in opposite directions.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with the connection: $ϙ$ is the coupling, $q=-ϙ$ the electric charge; $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta$ with $a'_t=\omicron_{\mathrm{pot}}$; the covariant derivative is $\partial_\mu+\frac{2\pi iϙ}{h}A_\mu$; $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$; $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$, $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$. A gauge transformation is $S_{\tilde\Xi}\mapsto S_{\tilde\Xi}+ϙ\Gamma$ together with $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$, that is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Gamma}{h}$. The temporal slot's sign is the one that looks odd and is not: the invariant is $W_0=(\partial_{t'}S_{\tilde\Xi}+ϙ a'_t)/m$, so the scalar potential moves against the phase and not with it, where the first-order rung's bracket $\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}$ carries the opposite sign on the phase and the potential moves with it. The two rungs differ in the sign of one bracket and in nothing else, and a reader moving between the two articles should expect the scalar potential to shift in opposite directions.
 
 ## The Action in the Fluid Variables
 
@@ -66,7 +66,7 @@ $$
 \frac{\mathrm{d}\vec p^{\mathrm{mech}}}{\mathrm{d}t}=-ϙ\bigl(\vec E+\vec v\times\vec B\bigr)-\frac{1}{\gamma}\vec\nabla_\Phi Q_{\mathrm{qnt}},
 $$
 
-which is the block's boxed law. The sign is fixed by the substitution's time slot: the energy is $E^{\mathrm{mech}}=E+ϙ a'_t$, so $E=E^{\mathrm{mech}}-ϙ a'_t$ and, with $q=-ϙ$, the potential energy is $q\varphi$. The action fixes the sign in one place, and the block's article fixes it in three.
+which is the block's boxed law. The sign is fixed by the substitution's time slot: the energy is $E^{\mathrm{mech}}=E+ϙ a'_t$, so $E=E^{\mathrm{mech}}-ϙ a'_t$ and, with $q=-ϙ$, the potential energy is $q\omicron_{\mathrm{pot}}$. The action fixes the sign in one place, and the block's article fixes it in three.
 
 Two fields, $\varrho$ and $S_{\tilde\Xi}$, or equivalently $\varrho$ and $W$; two equations; no multiplier. The constraint structure is not the coupling's business, and this is the rung at which that is cleanest: the first-order charged fluid has a gauge redundancy and the relativistic one has a redundancy plus a shell, and neither has a subsidiary condition.
 
@@ -74,7 +74,7 @@ Two fields, $\varrho$ and $S_{\tilde\Xi}$, or equivalently $\varrho$ and $W$; tw
 
 Both arguments, $\varrho$ and $W_\mu$, are fixed by a gauge transformation, so $\mathcal L_{\mathrm{fl}}$ is fixed by construction and no boundary term arises.
 
-There the action's terms were $-\rho_{\mathrm{num}}\mathcal E$ and $-\rho_{\mathrm{num}}\vec\pi^{2}/2m$, each invariant, but $S$ and $\varphi$ appeared separately and the invariance had to be checked inside each bracket. Here they never appear separately.
+There the action's terms were $-\rho_{\mathrm{num}}\mathcal E$ and $-\rho_{\mathrm{num}}\vec\pi^{2}/2m$, each invariant, but $S$ and $\omicron_{\mathrm{pot}}$ appeared separately and the invariance had to be checked inside each bracket. Here they never appear separately.
 
 What the redundancy costs and what it does not. It removes one of the word's eight parameters from the action's arguments: $\theta_{\mathrm{pha}}$ and $a'_t$ enter only through $W_0$, so the phase and the scalar potential are one degree of freedom between them. It does not remove the current: the constant shift is a global subgroup and its Noether current is the charge current. A redundancy and a symmetry are different objects, and the action shows both at once: the local one is the redundancy that the variables have already absorbed, the global one is the current.
 
@@ -160,7 +160,7 @@ What the charge changes. One variable. The gradient energy, the quantum potentia
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$ | The word; the free article's, unchanged |
 | $ϙ$ | Coupling; minus the electric charge, $q=-ϙ$ |
-| $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection; $a'_t=\varphi$ |
+| $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection; $a'_t=\omicron_{\mathrm{pot}}$ |
 | $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | Phase; gauge dependent |
 | $W_\mu=(\partial_\mu S_{\tilde\Xi}-q A_\mu)/m$ | Mechanical four-velocity; the action's second argument |
 | $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$ | Mechanical momentum; $m\tilde V_\Phi$ |
@@ -169,7 +169,7 @@ What the charge changes. One variable. The gradient energy, the quantum potentia
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | Quantum potential; coupling-blind |
 | $\mathcal E_{\mathrm{grad}}=-\frac{h^{2}}{8\pi^{2}m}\int\sum_\mu(\partial_\mu \varrho)^{2}$ | Gradient energy; coupling-blind |
 | $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ | Field strength; $m\omega=ϙ F$ |
-| $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Field strengths |
+| $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Field strengths |
 | $\gamma=E/(mc^{2})$ | Signed Lorentz factor |
 | $k_m=\frac{2\pi mc}{h}$ | Mass wave number |
 | $\mathcal L_{\mathrm{fl}}$ | The Lagrangian density in the fluid variables |

@@ -379,13 +379,13 @@ Both identities were checked symbolically and numerically for several values of 
 The dimensionless exponent is
 
 $$
-\frac{h\nu}{k_B\,T} = \frac{2\pi\,\omega}{\kappa_\omega},
+\frac{hf_{\mathrm{frq}}}{k_B\,T} = \frac{2\pi\,\omega}{\kappa_\omega},
 $$
 
 with $T=\frac{h\,\kappa}{4\pi \,\pi\,c\,k_{B}}$; equivalently, in the frequency normalization $T=\frac{h\,\kappa_{\omega}}{4\pi \,\pi\,k_{B}}$ and the exponent is $2\pi\omega/\kappa_\omega$. Thus the distribution
 
 $$
-n(\omega)=\frac{1}{\exp(\frac{h\nu}{k_{B}\,T})\mp1}
+n(\omega)=\frac{1}{\exp(\frac{hf_{\mathrm{frq}}}{k_{B}\,T})\mp1}
 $$
 
 is Planckian at the temperature determined by the surface gravity, and the two normalizations of $\kappa$ reproduce it. The temperature is not put in at this stage: it was fixed earlier by the exponential $\exp(-\pi\omega/\kappa)$ from the horizon, and the geometric sums merely exhibit the distribution that exponential implies.
@@ -395,7 +395,7 @@ is Planckian at the temperature determined by the surface gravity, and the two n
 The ratio of the emission and absorption coefficients, equivalently the ratio of the negative- and positive-frequency parts, is
 
 $$
-\exp(-2\pi\omega/\kappa)=\exp(-\frac{h\nu}{k_{B}\,T}),
+\exp(-2\pi\omega/\kappa)=\exp(-\frac{hf_{\mathrm{frq}}}{k_{B}\,T}),
 $$
 
 which is the **detailed-balance** relation of a thermal state and is the Fourier-space form of the KMS boundary relation $F(r'_t+i\beta)=F(-r'_t)$ at $\beta=\frac{h}{2\pi k_{B}\,T}$. So the chain is: the horizon's branch point gives the exponential; the exponential gives the squeezed state; the squeezed state gives the geometric distribution; the distribution is the KMS/Planck one. Every link after the first is recomputed above; the first is the standard horizon-mode computation, and its result is the same analytic fact the sibling article derived in the correlator language. Thermality has been shown at each step, not asserted at the end.

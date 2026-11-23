@@ -7,7 +7,7 @@ The integral is the element companion's, and this article reads it in the word. 
 The finding is one sentence long: the connection shifts the two rates of the chart and appears nowhere else. Writing the mechanical rates
 
 $$
-\kappa_t=\dot\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}\varphi,
+\kappa_t=\dot\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}\omicron_{\mathrm{pot}},
 \qquad
 \kappa_\eta=\partial_\eta\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_\eta,
 $$
@@ -16,7 +16,7 @@ the coupled exponent is the free exponent with $\dot\theta_{\mathrm{pha}}\to\kap
 
 Three consequences follow, and the first is the article's structural result.
 
-*First, the scalar potential enters linearly and the chart agrees with the element form exactly.* The temporal bracket of this chart is first order, so a constant $\varphi$ shifts the phase rate and produces no term in $\varphi^{2}$. The element companion's shift $h_t\mapsto h_t-ϙ\varphi$ is therefore reproduced by the chart, term for term. The Klein–Gordon chart cannot do this — its temporal bracket is a square, so a constant scalar potential contributes its square and no linear shift, and that is the fork its companion records. The Schrödinger chart has no fork, and the reason is the order in time.
+*First, the scalar potential enters linearly and the chart agrees with the element form exactly.* The temporal bracket of this chart is first order, so a constant $\omicron_{\mathrm{pot}}$ shifts the phase rate and produces no term in $\omicron_{\mathrm{pot}}^{2}$. The element companion's shift $h_t\mapsto h_t-ϙ\omicron_{\mathrm{pot}}$ is therefore reproduced by the chart, term for term. The Klein–Gordon chart cannot do this — its temporal bracket is a square, so a constant scalar potential contributes its square and no linear shift, and that is the fork its companion records. The Schrödinger chart has no fork, and the reason is the order in time.
 
 *Second, the vector potential enters linearly and quadratically, and the two terms are the gauge invariance's two halves.* The linear term is what a gauge transformation turns into a total derivative; the quadratic term is what supplies the remainder. The element companion's four terms are this pair plus the free ones, and the chart makes the cancellation an identity between two displayed terms.
 
@@ -24,7 +24,7 @@ Three consequences follow, and the first is the article's structural result.
 
 The article does not produce a second integral, does not evaluate the coupled kernel beyond the constant background, does not decide the Landau spectrum, and does not treat a non-central connection. It reads one integral in another coordinate system and says what the coordinate system shows.
 
-Conventions. The chart, the collapse on a central field, the density $n=\varrho^{2}$ and the measure are the free polar companion's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ with $D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\varphi$ and $D_\eta=\partial_\eta+\frac{2\pi iϙ}{h}A_\eta$. The mechanical momentum is $\vec\pi=-i \frac{h}{2\pi}\vec\nabla_\Phi-q\vec A$ and the potential energy is $-ϙ\varphi$.
+Conventions. The chart, the collapse on a central field, the density $n=\varrho^{2}$ and the measure are the free polar companion's. The connection is $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ with $D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}}$ and $D_\eta=\partial_\eta+\frac{2\pi iϙ}{h}A_\eta$. The mechanical momentum is $\vec\pi=-i \frac{h}{2\pi}\vec\nabla_\Phi-q\vec A$ and the potential energy is $-ϙ\omicron_{\mathrm{pot}}$.
 
 ## The Exponent, and Where the Connection Sits
 
@@ -54,12 +54,12 @@ Written out, the exponent is the free exponent plus three terms. In the constant
 
 $$
 S=\int dt'\,d^{3}x\;\Bigl[-\frac{h}{2\pi} \varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{h^{2}}{8\pi^{2}m}\bigl((\vec\nabla_\Phi \varrho)^{2}+\varrho^{2}(\vec\nabla_\Phi\theta_{\mathrm{pha}})^{2}\bigr)-h_t \varrho^{2}
-+ϙ\varphi\,\varrho^{2}-\frac{h}{2\pi m}ϙ\,\varrho^{2}\vec A\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{ϙ^{2}}{2m}\varrho^{2}|\vec A|^{2}\Bigr].
++ϙ\omicron_{\mathrm{pot}}\,\varrho^{2}-\frac{h}{2\pi m}ϙ\,\varrho^{2}\vec A\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{ϙ^{2}}{2m}\varrho^{2}|\vec A|^{2}\Bigr].
 $$
 
-The three interaction terms have the shapes $\varphi \varrho^{2}$, $\varrho^{2}\vec A\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}$ and $\varrho^{2}|\vec A|^{2}$, and no other shape appears.
+The three interaction terms have the shapes $\omicron_{\mathrm{pot}} \varrho^{2}$, $\varrho^{2}\vec A\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}$ and $\varrho^{2}|\vec A|^{2}$, and no other shape appears.
 
-The scalar potential's term is linear in the potential and carries no derivative. Its form is the density times the potential, which is the energy's slot and the current's time component; the element companion's potential term $ϙ\varphi\,n$ is the same object with $n=\varrho^{2}$.
+The scalar potential's term is linear in the potential and carries no derivative. Its form is the density times the potential, which is the energy's slot and the current's time component; the element companion's potential term $ϙ\omicron_{\mathrm{pot}}\,n$ is the same object with $n=\varrho^{2}$.
 
 The vector potential's terms are the momentum's translation, expanded. The bracket's shift is $\vec\nabla_\Phi\theta_{\mathrm{pha}}\to\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A$, and squaring it gives exactly the linear and the quadratic term. The two terms are one translation's expansion, and the sign of the quadratic term is negative because the bracket enters the action with the negative sign of the kinetic energy.
 
@@ -67,21 +67,21 @@ No term multiplies the connection by $\vec\nabla_\Phi \varrho$. The two interact
 
 ## The Scalar Potential Enters Linearly
 
-A constant scalar potential shifts the phase rate and produces no square. With $\varphi$ constant,
+A constant scalar potential shifts the phase rate and produces no square. With $\omicron_{\mathrm{pot}}$ constant,
 
 $$
-\frac{h}{2\pi}\kappa_t=\frac{h}{2\pi}\dot\theta_{\mathrm{pha}}-ϙ\varphi=-h_t,
+\frac{h}{2\pi}\kappa_t=\frac{h}{2\pi}\dot\theta_{\mathrm{pha}}-ϙ\omicron_{\mathrm{pot}}=-h_t,
 \qquad\text{that is}\qquad
-\dot\theta_{\mathrm{pha}}=\frac{2\pi ϙ\varphi-h_t}{h},
+\dot\theta_{\mathrm{pha}}=\frac{2\pi ϙ\omicron_{\mathrm{pot}}-h_t}{h},
 $$
 
-which is the element companion's $h_t\mapsto h_t-ϙ\varphi$ read as a rate. The chart has no term in $\varphi^{2}$ because the temporal bracket is first order: a bracket that is linear in the rate cannot produce a square of the shift.
+which is the element companion's $h_t\mapsto h_t-ϙ\omicron_{\mathrm{pot}}$ read as a rate. The chart has no term in $\omicron_{\mathrm{pot}}^{2}$ because the temporal bracket is first order: a bracket that is linear in the rate cannot produce a square of the shift.
 
 The agreement is exact and it is the article's structural result. The element form's shift is linear, the chart's is linear, and the two agree at every value of the coupling. In the Klein–Gordon pair the same comparison fails: the chart's temporal bracket is a square with the metric's relative sign, so a constant scalar potential contributes $+\frac{(2\pi)^{2} ϛ^{2}}{h^{2}}a_t'^{2}\varrho^{2}$ and no linear shift, while the element form's shift is linear. **That is the fork, and the fork is the second-order temporal bracket.** The Schrödinger chart's bracket is not a square, so the fork's mechanism is absent, and the Schrödinger pair is free of the question.
 
 The reason is one line and it is worth stating twice. In the Klein–Gordon chart the exponent is a sum of squares, one per slot, and the temporal square is where a scalar potential lands; in the Schrödinger chart the exponent is linear in the temporal rate, so it is the rate that receives the shift. The order in time decides the shape of the interaction term, and it decides it before the algebra says anything.
 
-The element companion's dispersion is therefore the chart's dispersion. $E+ϙ\varphi=(\vec p-q\vec A)^{2}/2m$ is $\frac{h}{2\pi}\kappa_t=-h_t$ with the momentum's translation, and both statements are the same two rates.
+The element companion's dispersion is therefore the chart's dispersion. $E+ϙ\omicron_{\mathrm{pot}}=(\vec p-q\vec A)^{2}/2m$ is $\frac{h}{2\pi}\kappa_t=-h_t$ with the momentum's translation, and both statements are the same two rates.
 
 ## The Vector Potential Is a Translation
 
@@ -91,31 +91,31 @@ The linear term is a total derivative under a gauge transformation and the quadr
 
 The chart's invariance is exact and needs no link. The transformation shifts one of the two chart coordinates by a function of the point, the measure is $dn\,d\theta_{\mathrm{pha}}$ up to a constant, and a shift of a coordinate has unit Jacobian. The invariance therefore holds at any step size and for a finite transformation, and there is no linearised link to fail and no exponential link to succeed: those are the Klein–Gordon companion's questions, and they arise there because its field has two independent slots whose covariance is a statement about each.
 
-The density is the response and the current is the phase's gradient. The exponent's derivative with respect to $\varphi$ is $\frac{2\pi i}{h}ϙ \varrho^{2}$, so the density is the response to the scalar potential; the current is $\vec j=n\vec\pi/m$ with $\vec\pi=\frac{h}{2\pi}\vec\nabla_\Phi\theta_{\mathrm{pha}}-q\vec A$, which is the coupled element companion's current and is gauge invariant because both of its factors are.
+The density is the response and the current is the phase's gradient. The exponent's derivative with respect to $\omicron_{\mathrm{pot}}$ is $\frac{2\pi i}{h}ϙ \varrho^{2}$, so the density is the response to the scalar potential; the current is $\vec j=n\vec\pi/m$ with $\vec\pi=\frac{h}{2\pi}\vec\nabla_\Phi\theta_{\mathrm{pha}}-q\vec A$, which is the coupled element companion's current and is gauge invariant because both of its factors are.
 
 The two interaction terms are also the reason the continuity equation survives the coupling. The continuity equation is the saddle of the angle's integral, and the angle's integral only sees the two rates; since both rates are gauge invariant combinations, the continuity equation the chart produces is gauge invariant without a separate argument.
 
 ## The Kernel in a Constant Background
 
-**The element kernel's two factors are exactly the two shifts of the chart's rates.** For constant $\varphi$ and $\vec A$ the element companion's kernel is the free kernel times $\exp(-\frac{2\pi iϙ\varphi r'_t}{h\,c})$ and $\exp(\frac{2\pi iϙ\vec A\cdot\vec r}{h})$, and the chart reads them as
+**The element kernel's two factors are exactly the two shifts of the chart's rates.** For constant $\omicron_{\mathrm{pot}}$ and $\vec A$ the element companion's kernel is the free kernel times $\exp(-\frac{2\pi iϙ\omicron_{\mathrm{pot}} r'_t}{h\,c})$ and $\exp(\frac{2\pi iϙ\vec A\cdot\vec r}{h})$, and the chart reads them as
 
 $$
 r_K=|K_0|,
 \qquad
-\theta_{\mathrm{pha},K}=\arg K_0-\frac{2\pi ϙ\varphi\,r'_t}{h c}+\frac{2\pi ϙ}{h}\vec A\cdot\vec r,
+\theta_{\mathrm{pha},K}=\arg K_0-\frac{2\pi ϙ\omicron_{\mathrm{pot}}\,r'_t}{h c}+\frac{2\pi ϙ}{h}\vec A\cdot\vec r,
 \qquad
 \tilde U_{\Psi,\mathrm b,K}=e_t,
 \qquad
 \tilde u_{\mathrm r,K}=\pm e_t .
 $$
 
-The potential's factor is the phase rate's shift and the vector potential's factor is the gradient's shift. The first is $\kappa_t$'s constant part, $\kappa_t=\dot\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}\varphi$, integrated over the time; the second is $\vec\kappa$'s constant part, $\vec\kappa=\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A$, integrated over the displacement. One kernel, two rates, two factors, and nothing else in the word changes: the scale is the free scale and the boost and rotor are the free ones.
+The potential's factor is the phase rate's shift and the vector potential's factor is the gradient's shift. The first is $\kappa_t$'s constant part, $\kappa_t=\dot\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}\omicron_{\mathrm{pot}}$, integrated over the time; the second is $\vec\kappa$'s constant part, $\vec\kappa=\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A$, integrated over the displacement. One kernel, two rates, two factors, and nothing else in the word changes: the scale is the free scale and the boost and rotor are the free ones.
 
 The scale is untouched by a constant connection. The potential's factor has modulus one, the vector potential's factor has modulus one, and the free kernel's modulus is the free modulus. The constant background changes the kernel's angle and not its scale, which is the chart's version of the element companion's statement that a constant connection is a shift and not a deformation.
 
 The composition of the word is the composition of the two factors. The angle's two extra pieces add, the scale multiplies as the Fresnel integral requires, and the composition was verified in the element form to $2.3\times10^{-12}$. The chart adds the reading and not the number: the number is the element companion's, and the reading is that the coupling's two factors are the two rates' constants.
 
-The line integral is the chart's non-constant case. For a connection that varies along the path, the vector potential's factor becomes $\exp(\frac{2\pi iϙ\int\vec A\cdot d\vec r}{h})$ and the potential's becomes $\exp(-\frac{2\pi iϙ\int\varphi\,dt'}{h\,c})$, the two being the temporal and spatial halves of one line integral of $\tilde A_\Phi$ along the classical path. The chart states it as the shift of the two rates accumulated along the path, which is the geometric phase of the corpus's Berry-phase article and is the coupling's only semiclassical content.
+The line integral is the chart's non-constant case. For a connection that varies along the path, the vector potential's factor becomes $\exp(\frac{2\pi iϙ\int\vec A\cdot d\vec r}{h})$ and the potential's becomes $\exp(-\frac{2\pi iϙ\int\omicron_{\mathrm{pot}}\,dt'}{h\,c})$, the two being the temporal and spatial halves of one line integral of $\tilde A_\Phi$ along the classical path. The chart states it as the shift of the two rates accumulated along the path, which is the geometric phase of the corpus's Berry-phase article and is the coupling's only semiclassical content.
 
 ## What the Polar Reading Adds and Does Not Add
 
@@ -133,7 +133,7 @@ Does not add a value. The kernel is the element companion's, the dispersion is t
 
 1. What is the chart's version of the Landau kernel? The element kernel in a constant magnetic field is a sum over Landau levels. Its word would have a scale from the level sum, an angle from the level phases, and a rotor only if the field's internal frame were nontrivial. Whether the word is degenerate is not known.
 
-2. Is the linearity of $\varphi$ an invariant statement? The chart shows that the scalar potential's shift is linear because the temporal bracket is first order. Whether a chart of a higher-order theory can be written with a linear slot — by a Legendre transform or by introducing a second field — is open, and it is the same question as the Klein–Gordon fork, asked from the other side.
+2. Is the linearity of $\omicron_{\mathrm{pot}}$ an invariant statement? The chart shows that the scalar potential's shift is linear because the temporal bracket is first order. Whether a chart of a higher-order theory can be written with a linear slot — by a Legendre transform or by introducing a second field — is open, and it is the same question as the Klein–Gordon fork, asked from the other side.
 
 3. Does the chart's invariance survive a non-abelian connection? A connection valued in the algebra rather than in its centre would not pass through the phase, and the chart's two identities would fail at their first step. The gauge-sector articles of the corpus are where that connection's algebra is discussed.
 
@@ -143,25 +143,25 @@ Does not add a value. The kernel is the element companion's, the dispersion is t
 
 ## Summary
 
-The coupled integral in the chart is the free integral with the two phase rates replaced by the mechanical ones, $\kappa_t=\dot\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}\varphi$ and $\vec\kappa=\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A$, and with the potential untouched. The exponent is $-\frac{h}{2\pi} \varrho^{2}\kappa_t-\frac{h^{2}}{8\pi^{2}m}((\vec\nabla_\Phi \varrho)^{2}+\varrho^{2}|\vec\kappa|^{2})-h_t \varrho^{2}$, verified as an identity against the element form to a relative $10^{-16}$ in both halves, and its three interaction terms have the shapes $\varphi \varrho^{2}$, $\varrho^{2}\vec A\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}$ and $\varrho^{2}|\vec A|^{2}$ and no other.
+The coupled integral in the chart is the free integral with the two phase rates replaced by the mechanical ones, $\kappa_t=\dot\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}\omicron_{\mathrm{pot}}$ and $\vec\kappa=\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A$, and with the potential untouched. The exponent is $-\frac{h}{2\pi} \varrho^{2}\kappa_t-\frac{h^{2}}{8\pi^{2}m}((\vec\nabla_\Phi \varrho)^{2}+\varrho^{2}|\vec\kappa|^{2})-h_t \varrho^{2}$, verified as an identity against the element form to a relative $10^{-16}$ in both halves, and its three interaction terms have the shapes $\omicron_{\mathrm{pot}} \varrho^{2}$, $\varrho^{2}\vec A\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}$ and $\varrho^{2}|\vec A|^{2}$ and no other.
 
-The scalar potential enters linearly, so the chart's dispersion is the element companion's shift $h_t\mapsto h_t-ϙ\varphi$ exactly; the Klein–Gordon chart's temporal bracket is a square, which is why that pair has a fork and this one does not. The vector potential enters as a translation of the phase's gradient, its linear term is the total derivative and its quadratic term the remainder of the gauge invariance, and the invariance itself is exact at every step because the measure is flat in the density and the angle and the transformation shifts one of them.
+The scalar potential enters linearly, so the chart's dispersion is the element companion's shift $h_t\mapsto h_t-ϙ\omicron_{\mathrm{pot}}$ exactly; the Klein–Gordon chart's temporal bracket is a square, which is why that pair has a fork and this one does not. The vector potential enters as a translation of the phase's gradient, its linear term is the total derivative and its quadratic term the remainder of the gauge invariance, and the invariance itself is exact at every step because the measure is flat in the density and the angle and the transformation shifts one of them.
 
-The kernel in a constant background has the free scale and an angle that carries the two shifts: $-\frac{2\pi ϙ\varphi r'_t}{h c}$ from the temporal rate and $\frac{2\pi ϙ}{h}\vec A\cdot\vec r$ from the spatial one, with the composition verified to $2.3\times10^{-12}$ in the element form. There is no amplitude–potential cross term in the chart, and its absence is exact.
+The kernel in a constant background has the free scale and an angle that carries the two shifts: $-\frac{2\pi ϙ\omicron_{\mathrm{pot}} r'_t}{h c}$ from the temporal rate and $\frac{2\pi ϙ}{h}\vec A\cdot\vec r$ from the spatial one, with the composition verified to $2.3\times10^{-12}$ in the element form. There is no amplitude–potential cross term in the chart, and its absence is exact.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 | --- | --- |
-| $\kappa_t=\dot\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}\varphi$ | Mechanical temporal rate |
+| $\kappa_t=\dot\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}\omicron_{\mathrm{pot}}$ | Mechanical temporal rate |
 | $\vec\kappa=\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A$ | Mechanical spatial rate |
 | $-\frac{h}{2\pi} \varrho^{2}\kappa_t-\frac{h^{2}}{8\pi^{2}m}((\vec\nabla_\Phi \varrho)^{2}+\varrho^{2}|\vec\kappa|^{2})$ | The chart's exponent |
-| $\varphi \varrho^{2}$ | The scalar potential's term; linear |
+| $\omicron_{\mathrm{pot}} \varrho^{2}$ | The scalar potential's term; linear |
 | $\varrho^{2}\vec A\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}$ | The vector potential's linear term |
 | $\varrho^{2}|\vec A|^{2}$ | The vector potential's quadratic term |
 | $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda$ | The gauge transformation in the chart |
 | $\vec j=n\vec\pi/m$ | The current; gauge invariant |
-| $\theta_{\mathrm{pha},K}=\arg K_0-\frac{2\pi ϙ\varphi r'_t}{h c}+\frac{2\pi ϙ}{h}\vec A\cdot\vec r$ | The kernel's angle in a constant background |
+| $\theta_{\mathrm{pha},K}=\arg K_0-\frac{2\pi ϙ\omicron_{\mathrm{pot}} r'_t}{h c}+\frac{2\pi ϙ}{h}\vec A\cdot\vec r$ | The kernel's angle in a constant background |
 
 ## Further Reading
 

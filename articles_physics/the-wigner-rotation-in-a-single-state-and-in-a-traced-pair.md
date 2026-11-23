@@ -11,18 +11,18 @@ The findings are stated in advance.
 1. A rotation of one state moves the vector and changes no invariant. $\lvert\vec s\rvert$ and $N$ are unchanged to $0$ and to $1.0\times10^{-15}$ over three angles spanning $0.4$ to $3.0$; a rotation is an isometry of the ball and the ball is homogeneous under it.
 2. State and axes rotated together change nothing. The image vector is the rotated vector to $1.7\times10^{-16}$, and $\lvert\vec s'\rvert-\lvert\vec s\rvert=0$. So $\tilde R$ is data only relative to something that does not rotate with it.
 3. A common rotation of every branch of a traced label changes nothing. With weights $0.7$ and $0.3$ the reduced vector has $\lvert\vec s\rvert=1.000000000000000$ for every angle.
-4. Unequal rotations on the branches are registered. The same state with $\tilde R(0)$ on one branch and $\tilde R(\varphi)$ on the other has $\lvert\vec s\rvert=1$, $0.973953117965$, $0.898291137919$, $0.761577310586$, $0.400000000000$ at $\varphi=0$, $0.5$, $1$, $\pi/2$, $\pi$, matching the closed form $\sqrt{(1-w)^{2}\sin^{2}\varphi+(w+(1-w)\cos\varphi)^{2}}$ to twelve digits; the impurity moves from $0$ to $0.210000000000$.
+4. Unequal rotations on the branches are registered. The same state with $\tilde R(0)$ on one branch and $\tilde R(\omicron_{\mathrm{ang}})$ on the other has $\lvert\vec s\rvert=1$, $0.973953117965$, $0.898291137919$, $0.761577310586$, $0.400000000000$ at $\omicron_{\mathrm{ang}}=0$, $0.5$, $1$, $\pi/2$, $\pi$, matching the closed form $\sqrt{(1-w)^{2}\sin^{2}\omicron_{\mathrm{ang}}+(w+(1-w)\cos\omicron_{\mathrm{ang}})^{2}}$ to twelve digits; the impurity moves from $0$ to $0.210000000000$.
 5. A pure pair's entanglement is untouched by any local unitary. The concurrence of a state with $C=0.96$ is $0.960000000000000$ after three arbitrary local rotations, including unequal ones on the two factors.
-6. A pair's entanglement is changed only by a rotation that varies over a discarded label. With two branches carrying the same Bell pair and relative rotation $\varphi$, the concurrence is $\lvert\cos\varphi\rvert$ exactly and the purity is $(1+\cos^{2}\varphi)/2$, both to twelve digits.
+6. A pair's entanglement is changed only by a rotation that varies over a discarded label. With two branches carrying the same Bell pair and relative rotation $\omicron_{\mathrm{ang}}$, the concurrence is $\lvert\cos\omicron_{\mathrm{ang}}\rvert$ exactly and the purity is $(1+\cos^{2}\omicron_{\mathrm{ang}})/2$, both to twelve digits.
 7. So frame-dependent entanglement is a statement about the trace, not about the frame. $\tilde R$ contributes to entanglement only when it is distributed unequally across a label that is then summed out.
 
-The notation is that of the companions. The state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$; the impurity is $N=\tfrac14(1-\lvert\vec s\rvert^{2})$; the congruence is $\mathrm{Cg}_{\tilde U}:\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$. A rotation by angle $\varphi$ about the unit vector $\vec n$ is written $\mathrm{SU}(2)_{\vec n}(\varphi)$, with $\tilde R=\mathrm{SU}(2)_{\vec n}(\varphi)$ the unitary rotor of the same angle. The polar split is $\tilde U=\tilde L\tilde R$. The concurrence of a two-qubit pure state $\psi=(a,b,c,d)$ is $C=2\lvert ad-bc\rvert$, and of a mixed state is the usual $\max(0,\lambda_{1}-\lambda_{2}-\lambda_{3}-\lambda_{4})$ over the roots of $\rho\tilde\rho$.
+The notation is that of the companions. The state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$; the impurity is $N=\tfrac14(1-\lvert\vec s\rvert^{2})$; the congruence is $\mathrm{Cg}_{\tilde U}:\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$. A rotation by angle $\omicron_{\mathrm{ang}}$ about the unit vector $\vec n$ is written $\mathrm{SU}(2)_{\vec n}(\omicron_{\mathrm{ang}})$, with $\tilde R=\mathrm{SU}(2)_{\vec n}(\omicron_{\mathrm{ang}})$ the unitary rotor of the same angle. The polar split is $\tilde U=\tilde L\tilde R$. The concurrence of a two-qubit pure state $\psi=(a,b,c,d)$ is $C=2\lvert ad-bc\rvert$, and of a mixed state is the usual $\max(0,\lambda_{1}-\lambda_{2}-\lambda_{3}-\lambda_{4})$ over the roots of $\rho\tilde\rho$.
 
 ## What the Rotation Does to One State
 
 ### It moves the vector and nothing else
 
-A rotation sends $\vec s$ to $\mathrm{SU}(2)_{\vec n}(\varphi)\vec s$ and leaves every invariant of the single state alone. At $\vec s=(0.3,-0.5,0.6)$, $\lvert\vec s\rvert=0.836660026534076$ and $N=0.075000000000000$ in the original and after rotations of $0.4$, $1.7$ and $3.0$; the worst deviation in $\lvert\vec s\rvert$ is $1.0\times10^{-15}$ and in $N$ it is $0$.
+A rotation sends $\vec s$ to $\mathrm{SU}(2)_{\vec n}(\omicron_{\mathrm{ang}})\vec s$ and leaves every invariant of the single state alone. At $\vec s=(0.3,-0.5,0.6)$, $\lvert\vec s\rvert=0.836660026534076$ and $N=0.075000000000000$ in the original and after rotations of $0.4$, $1.7$ and $3.0$; the worst deviation in $\lvert\vec s\rvert$ is $1.0\times10^{-15}$ and in $N$ it is $0$.
 
 The reason is that a rotation is an isometry of the ball and the ball is homogeneous under rotations. Every point of a sphere can be moved to every other by a rotation, so the orbit is the whole sphere, and a sphere has no marked point. There is no functional of one state that a rotation can change, because a rotation generates the whole space of states of a given radius.
 
@@ -42,9 +42,9 @@ So $\tilde R$ has content exactly when something fails to rotate with it. Two ca
 
 ### A rotation that varies over a discarded label
 
-Take one spin, two branches, unequal weights, and a different rotation on each branch. The state is $\sqrt{w}\,\lvert\uparrow\rangle\lvert p_a\rangle+\sqrt{1-w}\,\lvert\uparrow\rangle\lvert p_b\rangle$ with $w=0.7$, the branch $a$ is left alone, and branch $b$ is rotated by $\varphi$ about $\hat x$; the label is then traced out.
+Take one spin, two branches, unequal weights, and a different rotation on each branch. The state is $\sqrt{w}\,\lvert\uparrow\rangle\lvert p_a\rangle+\sqrt{1-w}\,\lvert\uparrow\rangle\lvert p_b\rangle$ with $w=0.7$, the branch $a$ is left alone, and branch $b$ is rotated by $\omicron_{\mathrm{ang}}$ about $\hat x$; the label is then traced out.
 
-| $\varphi$ | $\lvert\vec s\rvert$ | $N$ |
+| $\omicron_{\mathrm{ang}}$ | $\lvert\vec s\rvert$ | $N$ |
 | --- | --- | --- |
 | $0$ | $1.000000000000$ | $0$ |
 | $0.5$ | $0.973953117965$ | $0.012853831002$ |
@@ -52,9 +52,9 @@ Take one spin, two branches, unequal weights, and a different rotation on each b
 | $\pi/2$ | $0.761577310586$ | $0.105000000000$ |
 | $\pi$ | $0.400000000000$ | $0.210000000000$ |
 
-The closed form is $\lvert\vec s\rvert^{2}=(1-w)^{2}\sin^{2}\varphi+\bigl(w+(1-w)\cos\varphi\bigr)^{2}$, matched to twelve digits at all five angles. Nothing in it refers to the rotation as an absolute object; it refers to the *difference* between the rotation applied on one branch and the rotation applied on the other.
+The closed form is $\lvert\vec s\rvert^{2}=(1-w)^{2}\sin^{2}\omicron_{\mathrm{ang}}+\bigl(w+(1-w)\cos\omicron_{\mathrm{ang}}\bigr)^{2}$, matched to twelve digits at all five angles. Nothing in it refers to the rotation as an absolute object; it refers to the *difference* between the rotation applied on one branch and the rotation applied on the other.
 
-A common rotation moves nothing. With $\varphi$ the same on both branches, $\lvert\vec s\rvert=1.000000000000000$ at $\varphi=0$, $0.7$ and $2.2$. The state is a pure state whose vector has merely rotated inside the frame, and the impurity does not move, which is the previous section's statement in the reduced language.
+A common rotation moves nothing. With $\omicron_{\mathrm{ang}}$ the same on both branches, $\lvert\vec s\rvert=1.000000000000000$ at $\omicron_{\mathrm{ang}}=0$, $0.7$ and $2.2$. The state is a pure state whose vector has merely rotated inside the frame, and the impurity does not move, which is the previous section's statement in the reduced language.
 
 ### The pattern
 
@@ -70,9 +70,9 @@ So a Wigner rotation applied to one spin, or to both with the same angle, does n
 
 ### The pair that does change
 
-Distribute the rotation over a label and discard the label. The state is $\bigl(\lvert\Phi\rangle\lvert p_a\rangle+\lvert\Phi\rangle\lvert p_b\rangle\bigr)/\sqrt2$ with $\lvert\Phi\rangle=(\lvert\uparrow\uparrow\rangle+\lvert\downarrow\downarrow\rangle)/\sqrt2$; branch $a$ gets the identity on both spins and branch $b$ gets $\mathrm{SU}(2)_{\hat z}(\varphi)$ on both; the label is traced out.
+Distribute the rotation over a label and discard the label. The state is $\bigl(\lvert\Phi\rangle\lvert p_a\rangle+\lvert\Phi\rangle\lvert p_b\rangle\bigr)/\sqrt2$ with $\lvert\Phi\rangle=(\lvert\uparrow\uparrow\rangle+\lvert\downarrow\downarrow\rangle)/\sqrt2$; branch $a$ gets the identity on both spins and branch $b$ gets $\mathrm{SU}(2)_{\hat z}(\omicron_{\mathrm{ang}})$ on both; the label is traced out.
 
-| $\varphi$ | concurrence | purity |
+| $\omicron_{\mathrm{ang}}$ | concurrence | purity |
 | --- | --- | --- |
 | $0$ | $1.000000000000$ | $1.000000000000$ |
 | $0.3$ | $0.955336489126$ | $0.956333903727$ |
@@ -81,9 +81,9 @@ Distribute the rotation over a label and discard the label. The state is $\bigl(
 | $\pi/2$ | $0.000000000000$ | $0.500000000000$ |
 | $\pi$ | $1.000000000000$ | $1.000000000000$ |
 
-Both closed forms are exact: the concurrence is $\lvert\cos\varphi\rvert$ and the purity is $(1+\cos^{2}\varphi)/2$, matched to twelve digits. The state is a mixture of two Bell states related by a relative rotation, and the mixture of two orthogonal Bell states at $\varphi=\pi/2$ is the maximally mixed state, which has neither entanglement nor purity.
+Both closed forms are exact: the concurrence is $\lvert\cos\omicron_{\mathrm{ang}}\rvert$ and the purity is $(1+\cos^{2}\omicron_{\mathrm{ang}})/2$, matched to twelve digits. The state is a mixture of two Bell states related by a relative rotation, and the mixture of two orthogonal Bell states at $\omicron_{\mathrm{ang}}=\pi/2$ is the maximally mixed state, which has neither entanglement nor purity.
 
-The recovery at $\varphi=\pi$ is not an error. A rotation by $\pi$ on a spin is $-i\sigma_{z}$, so on both factors it is $-\sigma_{z}\otimes\sigma_{z}$, and $\sigma_{z}\otimes\sigma_{z}$ acts as $+1$ on $\lvert\Phi\rangle$; the two branches are then the same ray and the state is pure again. The concurrence is therefore not monotone in the frame's rotation, and a reader who expects monotonicity will misread the table.
+The recovery at $\omicron_{\mathrm{ang}}=\pi$ is not an error. A rotation by $\pi$ on a spin is $-i\sigma_{z}$, so on both factors it is $-\sigma_{z}\otimes\sigma_{z}$, and $\sigma_{z}\otimes\sigma_{z}$ acts as $+1$ on $\lvert\Phi\rangle$; the two branches are then the same ray and the state is pure again. The concurrence is therefore not monotone in the frame's rotation, and a reader who expects monotonicity will misread the table.
 
 ### The corrected statement about frames
 
@@ -95,7 +95,7 @@ This matters for how the result is stated in the literature. A boost is momentum
 
 The objection is that this makes the Wigner rotation pure gauge, and it is observed. It is not pure gauge, and the objection conflates two absences. The rotation is unregistered by a single state, and it is registered by any comparison. Interference between two momentum branches is a comparison: the relative phase between them carries the rotation, and the corpus's Wigner angle is measured exactly there.
 
-A second objection is that the $\lvert\cos\varphi\rvert$ result is about tracing and not about frames. That is what the article claims, and it is the reason the section exists. The rotation alone cannot change a concurrence; a rotation plus a discarded label can; the physics of frame-dependent entanglement is in the second term.
+A second objection is that the $\lvert\cos\omicron_{\mathrm{ang}}\rvert$ result is about tracing and not about frames. That is what the article claims, and it is the reason the section exists. The rotation alone cannot change a concurrence; a rotation plus a discarded label can; the physics of frame-dependent entanglement is in the second term.
 
 A third objection is that a state which registers nothing is not worth calling oriented. Agreed, and the objection names the point. Orientation is not a property a state has; it is a relation between a state and something else, and the article's contribution is to say what the something else has to be.
 
@@ -119,7 +119,7 @@ A rotation that varies over a discarded label is registered. With weights $0.7$ 
 
 A pure pair's concurrence is untouched by any local unitary, $0.960000000000000$ after three arbitrary local rotations, so a boost that acts as one unitary per factor cannot change entanglement.
 
-A pair's concurrence does change when the rotation varies over a traced label: $\lvert\cos\varphi\rvert$ exactly, with purity $(1+\cos^{2}\varphi)/2$, recovering to one at $\varphi=\pi$ because the two branches become the same ray.
+A pair's concurrence does change when the rotation varies over a traced label: $\lvert\cos\omicron_{\mathrm{ang}}\rvert$ exactly, with purity $(1+\cos^{2}\omicron_{\mathrm{ang}})/2$, recovering to one at $\omicron_{\mathrm{ang}}=\pi$ because the two branches become the same ray.
 
 Frame-dependent entanglement is a statement about the trace. The frame supplies the variation of $\tilde R$; the trace supplies the loss; neither alone is enough.
 
@@ -128,11 +128,11 @@ Frame-dependent entanglement is a statement about the trace. The frame supplies 
 | symbol | meaning |
 | --- | --- |
 | $\tilde U=\tilde L\tilde R$ | the polar split of a frame change |
-| $\tilde R=\mathrm{SU}(2)_{\vec n}(\varphi)$ | the unitary factor; the Wigner rotation |
-| $\vec s\mapsto\mathrm{SU}(2)_{\vec n}(\varphi)\vec s$ | the action on one state |
+| $\tilde R=\mathrm{SU}(2)_{\vec n}(\omicron_{\mathrm{ang}})$ | the unitary factor; the Wigner rotation |
+| $\vec s\mapsto\mathrm{SU}(2)_{\vec n}(\omicron_{\mathrm{ang}})\vec s$ | the action on one state |
 | $N=\tfrac14(1-\lvert\vec s\rvert^{2})$ | the impurity; unchanged by any rotation |
 | $w$ | the weight of the first branch in the traced example |
-| $\varphi$ | the relative rotation between two branches |
+| $\omicron_{\mathrm{ang}}$ | the relative rotation between two branches |
 | $C=2\lvert ad-bc\rvert$ | the concurrence of a pure two-qubit state |
 | $\lambda_{i}$ | the roots of $\rho\tilde\rho$ in the mixed concurrence |
 

@@ -53,10 +53,10 @@ Which operator can act on a sector. One line each, and they are the only three f
 - $\mathrm{Sd}_{\tilde Q}$ maps each sector into itself for every $\tilde Q$, because the dagger appears once in each slot: $(\tilde QX\tilde Q^{*})^{*}=\tilde QX^{*}\tilde Q^{*}=\mathrm{Sd}_{\tilde Q}(X^{*})$. Verified: $0$ of $200$ failures in either sector.
 - $\mathrm{Sd}_{\tilde Q}$ is multiplicative, $\mathrm{Sd}_a\mathrm{Sd}_b=\mathrm{Sd}_{ab}$, and it is an algebra automorphism exactly when $\tilde Q\tilde Q^{*}=e_t$ — the exact defect is $\mathrm{Sd}_{\tilde Q}(XY)-\mathrm{Sd}_{\tilde Q}(X)\mathrm{Sd}_{\tilde Q}(Y)=\tilde QX(e_t-\tilde Q^{*}\tilde Q)Y\tilde Q^{*}$, which vanishes on the unitary slice and only there. On that slice $\tilde Q^{*}=\tilde Q^{-1}$ and $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{-1}}=\operatorname{Ad}_{\tilde Q}$, the change of frame. Off it the two are different operators, and only the first is a frame change.
 
-Two carriers, one angle. For a unit rotor $\tilde u=\cos\tfrac{\varphi}{2}+\sin\tfrac{\varphi}{2}\vec u$ the same parameter acts differently on the two spin carriers, and the difference is a factor two:
+Two carriers, one angle. For a unit rotor $\tilde u=\cos\tfrac{\omicron_{\mathrm{ang}}}{2}+\sin\tfrac{\omicron_{\mathrm{ang}}}{2}\vec u$ the same parameter acts differently on the two spin carriers, and the difference is a factor two:
 
-- on the vector part $\mathfrak{k}$, $\mathrm{Sd}_{\tilde u}(\vec v)=\tilde u\vec v\tilde u^{*}$ is the rotation of $\vec v$ about $\vec u$ by the full angle $\varphi$;
-- on the left ideal $S_+$, left multiplication is multiplication by a complex phase in the Peirce basis, $L_{\tilde u}|_{S_+}=\operatorname{diag}(e^{-i\varphi/2},e^{+i\varphi/2})$, the half angle, of determinant one.
+- on the vector part $\mathfrak{k}$, $\mathrm{Sd}_{\tilde u}(\vec v)=\tilde u\vec v\tilde u^{*}$ is the rotation of $\vec v$ about $\vec u$ by the full angle $\omicron_{\mathrm{ang}}$;
+- on the left ideal $S_+$, left multiplication is multiplication by a complex phase in the Peirce basis, $L_{\tilde u}|_{S_+}=\operatorname{diag}(e^{-i\omicron_{\mathrm{ang}}/2},e^{+i\omicron_{\mathrm{ang}}/2})$, the half angle, of determinant one.
 
 Left multiplication does not rotate the vector part: $L_{\tilde u}$ does not map $\mathfrak{k}$ into itself unless $\tilde u$ is real. The two statements are both true of different maps, and an article that names one and writes the other has written a wrong factor.
 

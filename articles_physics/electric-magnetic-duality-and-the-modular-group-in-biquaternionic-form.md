@@ -141,7 +141,7 @@ $$
 m,n\in\mathbb Z ,
 $$
 
-the condition for a single species is $e\cdot\frac{4\pi}{e}mn=4\pi mn=2\pi\,(2mn)$, so $\nu=2mn$ and the lattice spacing is fixed by a factor of two. The pair $(m,n)$ labels the lattice of charges, and the modular group acts on it. The action is most transparently written on the complex charge
+the condition for a single species is $e\cdot\frac{4\pi}{e}mn=4\pi mn=2\pi\,(2mn)$, so $\digamma_{\mathrm{drc}}=2mn$ and the lattice spacing is fixed by a factor of two. The pair $(m,n)$ labels the lattice of charges, and the modular group acts on it. The action is most transparently written on the complex charge
 
 $$
 ϙ \;=\; ϙ_e+\frac{i\,4\pi}{e^2}\,ϙ_m ,
@@ -256,7 +256,7 @@ The framework supplies the continuous $\mathrm{U}(1)$ duality intrinsically, bec
 | $g^2=4\pi$ | Self-dual coupling |
 | $(m,n)$ | Electric and magnetic quantum numbers |
 | $ϙ_e=em$, $ϙ_m=4\pi n/e$ | Electric and magnetic charges |
-| $\nu=2mn$ | Dirac index of the lattice state; $\nu\in\mathbb Z$ |
+| $\digamma_{\mathrm{drc}}=2mn$ | Dirac index of the lattice state; $\nu\in\mathbb Z$ |
 | $ϙ_e^{(1)}ϙ_m^{(2)}-ϙ_e^{(2)}ϙ_m^{(1)}=2\pi\nu$ | Dirac–Schwinger–Zwanziger quantisation |
 | $Ϙ\in\mathbb Z$ | Topological charge; source of the $T$ generator |
 

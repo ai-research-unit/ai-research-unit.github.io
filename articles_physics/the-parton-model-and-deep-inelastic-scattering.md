@@ -32,9 +32,9 @@ q=k-k' ,
 \qquad
 Q^2=-q^2>0 ,
 \qquad
-\nu=\frac{p\cdot q}{M} ,
+\digamma_{\mathrm{bjk}}=\frac{p\cdot q}{M} ,
 \qquad
-x=\frac{Q^2}{2\,p\cdot q}=\frac{Q^2}{2M\nu} ,
+x=\frac{Q^2}{2\,p\cdot q}=\frac{Q^2}{2M\digamma_{\mathrm{bjk}}} ,
 \qquad
 y=\frac{p\cdot q}{p\cdot k} .
 $$
@@ -81,7 +81,7 @@ The dimensionless versions.
 $$
 F_1(x,Q^2)=M\,W_1 ,
 \qquad
-F_2(x,Q^2)=\nu\,W_2 ,
+F_2(x,Q^2)=\digamma_{\mathrm{str}}\,W_2 ,
 $$
 
 and the factors of $M$ and $\nu$ are chosen so that both are dimensionless and, in the scaling limit, functions of $x$ alone. A third function $F_3$ exists and is measured with neutrinos; it is parity-odd and requires a weak exchange, which is [the neutral-current article's](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html) territory rather than this one's.
@@ -160,7 +160,7 @@ $$
 F_2(x)=2xF_1(x) ,
 $$
 
-the Callan–Gross relation. It is not an extra assumption about the proton. It is the Dirac trace of a massless spin-$\tfrac12$ line, and it holds whenever the struck object has spin $\tfrac12$, is massless, and is on shell. The relation is between the $F$'s and not between the $W$'s: with $F_1=MW_1$ and $F_2=\nu W_2$ as defined above, $F_2=2xF_1$ is $W_2=(2xM/\nu)W_1$, so the frequently quoted $W_2=2xW_1$ is the same relation in a different normalisation of $W$, not another one.
+the Callan–Gross relation. It is not an extra assumption about the proton. It is the Dirac trace of a massless spin-$\tfrac12$ line, and it holds whenever the struck object has spin $\tfrac12$, is massless, and is on shell. The relation is between the $F$'s and not between the $W$'s: with $F_1=MW_1$ and $F_2=\digamma_{\mathrm{str}} W_2$ as defined above, $F_2=2xF_1$ is $W_2=(2xM/\nu)W_1$, so the frequently quoted $W_2=2xW_1$ is the same relation in a different normalisation of $W$, not another one.
 
 **The contrast with spin zero, which is the reason the relation is a spin measurement.** For a scalar constituent the electromagnetic vertex is $(2k+q)_\mu$ and the tensor is proportional to $(2k+q)_\mu(2k+q)_\nu$. That tensor has no transverse part at all — $W_1=0$ and $W_2\neq0$ — so $F_1=0$ and the Callan–Gross relation fails maximally. A measurement of the ratio of the two structure functions is therefore a measurement of the constituents' spin, and the fact that $2xF_1/F_2$ comes out one, where a scalar constituent would give zero, is the discovery that the charged constituents of the proton have spin $\tfrac12$.
 
@@ -413,7 +413,7 @@ The framework supplies the null direction, and with it the light-cone decomposit
 | $g_{\mu\nu}$ | Metric, $\mathrm{diag}(1,-1,-1,-1)$ |
 | $W_{\mu\nu}$ | Hadronic tensor |
 | $W_1$, $W_2$ | Its two scalar coefficients |
-| $F_1=MW_1$, $F_2=\nu W_2$ | Dimensionless structure functions |
+| $F_1=MW_1$, $F_2=\digamma_{\mathrm{str}} W_2$ | Dimensionless structure functions |
 | $F_3$ | Parity-odd structure function, measured with neutrinos |
 | $N$ | Isoscalar nucleon, $(p+n)/2$; the target of the sum rule |
 | $R=\sigma_L/\sigma_T$ | Longitudinal-to-transverse ratio; zero for spin-$\tfrac12$ |

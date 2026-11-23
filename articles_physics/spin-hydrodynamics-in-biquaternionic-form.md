@@ -85,12 +85,12 @@ the antisymmetric part of the flow's gradient, built from the flow element's com
 Local equilibrium ties the two together, and the tie is the source of the spin-rotation coupling. In equilibrium a fluid element in a rotating flow is polarized in proportion to the rotation, with the standard result quoted:
 
 $$
-\mu_{\mathrm{spn}}^{\mathrm{eq}}=\frac{h\nu^{\mathrm{vrt}}_{\mathrm{mag}}}{2},
+\mu_{\mathrm{spn}}^{\mathrm{eq}}=\frac{hf_{\mathrm{frq},\mathrm{mag}}^{\mathrm{vrt}}}{2},
 \qquad
 P_{\mathrm{pol}}=\tanh\left(\frac{\mu_{\mathrm{spn}}^{\mathrm{eq}}}{k_B T}\right),
 $$
 
-with $\omega^{\mathrm{vrt}}_{\mathrm{mag}}$ the magnitude of the rotation vector and $P_{\mathrm{pol}}$ the polarization of one element. At $h\nu^{\mathrm{vrt}}_{\mathrm{mag}}=0.019\,75\,\mathrm{GeV}$ and $k_BT=0.15\,\mathrm{GeV}$ the polarization is $0.065\,738$, so a rotation fast by hadronic standards polarizes the fluid only weakly; at $h\nu^{\mathrm{vrt}}_{\mathrm{mag}}=0.065\,82\,\mathrm{GeV}$ the polarization is $0.215\,946$. The relation is the equilibrium one and is used only to identify the equilibrium polarization; off equilibrium the two differ by the polarization's own relaxation.
+with $\omega^{\mathrm{vrt}}_{\mathrm{mag}}$ the magnitude of the rotation vector and $P_{\mathrm{pol}}$ the polarization of one element. At $hf_{\mathrm{frq},\mathrm{mag}}^{\mathrm{vrt}}=0.019\,75\,\mathrm{GeV}$ and $k_BT=0.15\,\mathrm{GeV}$ the polarization is $0.065\,738$, so a rotation fast by hadronic standards polarizes the fluid only weakly; at $hf_{\mathrm{frq},\mathrm{mag}}^{\mathrm{vrt}}=0.065\,82\,\mathrm{GeV}$ the polarization is $0.215\,946$. The relation is the equilibrium one and is used only to identify the equilibrium polarization; off equilibrium the two differ by the polarization's own relaxation.
 
 With the polarization and the vorticity both present, the energy density gains
 
@@ -215,7 +215,7 @@ Interpretation, and marked as such. That the spin element is $\tfrac{h}{4\pi}$ t
 
 A spin fluid has two intensive variables. The spin potential $\mu_{\mathrm{spn}}$ is conjugate to the spin polarization, whose element is the rotor's generator conjugated into the fluid's frame, $\tilde S_{\Psi,\eta}=\tfrac{h}{4\pi}\tilde u_{\mathrm r}\tilde e_{\lambda\nu}\tilde u_{\mathrm r}^{\natural}\omega_{\lambda\nu}$, with the six components $\omega_{\lambda\nu}$ antisymmetric and every index low. The first law gains one term, $dw_{\mathrm{fl}}=Tds_{\mathrm{ent}}+\mu_{\mathrm{chm}}d\rho_{\mathrm{num}}+\tfrac12\omega_{\lambda\nu}dS_{\Psi,\eta,\lambda\nu}$, and the equation of state gains one argument.
 
-Rotational flow and spin gradients couple. The vorticity $\omega^{\mathrm{vrt}}_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ is not the polarization, and in equilibrium $\mu_{\mathrm{spn}}^{\mathrm{eq}}=h\nu^{\mathrm{vrt}}_{\mathrm{mag}}/2$ with $P_{\mathrm{pol}}=\tanh(\mu_{\mathrm{spn}}^{\mathrm{eq}}/k_BT)$, which is $0.065\,738$ at $h\nu^{\mathrm{vrt}}_{\mathrm{mag}}=0.019\,75\,\mathrm{GeV}$ and $0.215\,946$ at $0.065\,82\,\mathrm{GeV}$ for $k_BT=0.15\,\mathrm{GeV}$. The spin-rotation energy is $e_{\mathrm{rot}}=-\tfrac12\omega^{\mathrm{vrt}}_{\lambda\nu}S_{\Psi,\eta,\lambda\nu}$ and the spin gradient contributes to the stress.
+Rotational flow and spin gradients couple. The vorticity $\omega^{\mathrm{vrt}}_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ is not the polarization, and in equilibrium $\mu_{\mathrm{spn}}^{\mathrm{eq}}=hf_{\mathrm{frq},\mathrm{mag}}^{\mathrm{vrt}}/2$ with $P_{\mathrm{pol}}=\tanh(\mu_{\mathrm{spn}}^{\mathrm{eq}}/k_BT)$, which is $0.065\,738$ at $hf_{\mathrm{frq},\mathrm{mag}}^{\mathrm{vrt}}=0.019\,75\,\mathrm{GeV}$ and $0.215\,946$ at $0.065\,82\,\mathrm{GeV}$ for $k_BT=0.15\,\mathrm{GeV}$. The spin-rotation energy is $e_{\mathrm{rot}}=-\tfrac12\omega^{\mathrm{vrt}}_{\lambda\nu}S_{\Psi,\eta,\lambda\nu}$ and the spin gradient contributes to the stress.
 
 Spin diffusion is $J_{\Psi,\mathrm{spn},\lambda}=-\kappa_{\mathrm{spn}}\partial_\lambda\mu_{\mathrm{spn}}$, with the production $\sigma_{\mathrm{ent,spn}}=T^{-1}\kappa_{\mathrm{spn}}(\partial_\lambda\mu_{\mathrm{spn}})(\partial_\lambda\mu_{\mathrm{spn}})\ge0$, real by the inherited declaration. Spin relaxation drives the polarization to its equilibrium value on the time scale $\tau_{\mathrm{spn}}$; with $\tau_{\mathrm{spn}}=0.5\,\mathrm{fm}/c$ the surviving fraction is $0.367\,879$ after $0.5\,\mathrm{fm}/c$ and $4.540\times10^{-5}$ after $5\,\mathrm{fm}/c$.
 

@@ -23,10 +23,10 @@ The order. The four sectors and why there are four, then the dictionary, then th
 |---|---|---|---|
 | Strong | $\mathcal{L}_{\mathrm{QCD}}$ | the colour connection | $g_s$, $\theta_{\mathrm{QCD}}$, six quark masses through the Yukawa sector |
 | Electroweak gauge and kinetic | $\mathcal{L}_{\mathrm{EW}}$ | the weak and hypercharge connections | $g$, $g_{\mathrm Y}$, and the fermion kinetic normalisations |
-| Scalar | $\mathcal{L}_{H}$ | all three connections, through $D_\mu\varphi$ | $\mu^2$, $\lambda$ |
+| Scalar | $\mathcal{L}_{H}$ | all three connections, through $D_\mu\omicron_{\mathrm{hgs}}$ | $\mu^2$, $\lambda$ |
 | Yukawa | $\mathcal{L}_{\mathrm{Yuk}}$ | no connection | the three coupling matrices |
 
-Why the fourth is not part of the third. The scalar potential $V(\varphi)$ is invariant on its own, since it depends only on $\varphi^\dagger\varphi$. The Yukawa couplings are invariant only in combination with the fermions and the scalar together. The two are separated because they are fixed by different measurements: the potential by the boson masses, the couplings by the fermion masses and mixings.
+Why the fourth is not part of the third. The scalar potential $V(\omicron_{\mathrm{hgs}})$ is invariant on its own, since it depends only on $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$. The Yukawa couplings are invariant only in combination with the fermions and the scalar together. The two are separated because they are fixed by different measurements: the potential by the boson masses, the couplings by the fermion masses and mixings.
 
 The counting of sectors is a choice of grouping, and a conventional one. The four-group division is the division of the literature, and it is used here because each group has its own renormalisation and its own set of measurements. A finer division into six or eight pieces would change nothing but the bookkeeping.
 
@@ -106,29 +106,29 @@ Why the term is one term and not fifteen. The fifteen Weyl fields of a generatio
 The field and its potential. One complex doublet,
 
 $$
-\varphi=\begin{pmatrix}\varphi^+\ \varphi^0\end{pmatrix},
+\omicron_{\mathrm{hgs}}=\begin{pmatrix}\omicron_{\mathrm{hgs}}^+\ \omicron_{\mathrm{hgs}}^0\end{pmatrix},
 \qquad
-Y_\varphi=\tfrac12 ,
+Y_{\mathrm{hch}}=\tfrac12 ,
 $$
 
 with the potential and the kinetic term
 
 $$
-\mathcal{L}_{H}=-\sum_\mu\left(D_\mu\varphi\right)^{\dagger}\left(D_\mu\varphi\right)+\mu^2\varphi^{\dagger}\varphi-\lambda\left(\varphi^{\dagger}\varphi\right)^2 ,
+\mathcal{L}_{H}=-\sum_\mu\left(D_\mu\omicron_{\mathrm{hgs}}\right)^{\dagger}\left(D_\mu\omicron_{\mathrm{hgs}}\right)+\mu^2\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-\lambda\left(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}\right)^2 ,
 \qquad
-D_\mu\varphi=\frac{\partial\varphi}{\partial R_\mu}+i\frac{g}{2}\sum_a\tau_aW_{a,\mu}\varphi+i\frac{g_{\mathrm Y}}{2}B_\mu\varphi .
+D_\mu\omicron_{\mathrm{hgs}}=\frac{\partial\omicron_{\mathrm{hgs}}}{\partial R_\mu}+i\frac{g}{2}\sum_a\tau_aW_{a,\mu}\omicron_{\mathrm{hgs}}+i\frac{g_{\mathrm Y}}{2}B_\mu\omicron_{\mathrm{hgs}} .
 $$
 
 The signs are the corpus's, by the rule of §*The Dictionary*: the kinetic term carries the minus, and the potential appears with $+\mu^2$ and $-\lambda$ because $\mathcal{L}\supset -V$.
 
 **The sign of $\mu^2$.** A positive $\mu^2$ gives a potential with a maximum at the origin and a circle of minima away from it. That sign is the whole content of spontaneous breaking: the field settles on the circle, and the theory is read around a point of it. A negative $\mu^2$ would give a single minimum at the origin and no breaking.
 
-The minimum. The potential depends on $\varphi$ only through $\varphi^\dagger\varphi$, so its minima form a three-sphere in the four real components. Writing $\varphi^\dagger\varphi=\tfrac12v^2$,
+The minimum. The potential depends on $\omicron_{\mathrm{hgs}}$ only through $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$, so its minima form a three-sphere in the four real components. Writing $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}=\tfrac12v^2$,
 
 $$
 v^2=\frac{\mu^2}{\lambda} ,
 \qquad
-\langle\varphi\rangle=\frac{1}{\sqrt2}\begin{pmatrix}0\ v\end{pmatrix},
+\langle\omicron_{\mathrm{hgs}}\rangle=\frac{1}{\sqrt2}\begin{pmatrix}0\ v\end{pmatrix},
 \qquad
 v=246.22\ \mathrm{GeV} .
 $$
@@ -144,30 +144,30 @@ Four real components, three eaten. The doublet carries four real fields. Three a
 The term. Three coupling matrices, one per fermion type,
 
 $$
-\mathcal{L}_{\mathrm{Yuk}}=-\sum_{a,b}\Bigl(\bar Q_{L,a}\varphi\,Y_{d,ab}\,d_{R,b}+\bar Q_{L,a}\tilde\varphi\,Y_{u,ab}\,u_{R,b}+\bar L_{L,a}\varphi\,Y_{e,ab}\,e_{R,b}\Bigr)+\text{h.c.},
+\mathcal{L}_{\mathrm{Yuk}}=-\sum_{a,b}\Bigl(\bar Q_{L,a}\omicron_{\mathrm{hgs}}\,Y_{d,ab}\,d_{R,b}+\bar Q_{L,a}\tilde\omicron_{\mathrm{hgs}}\,Y_{u,ab}\,u_{R,b}+\bar L_{L,a}\omicron_{\mathrm{hgs}}\,Y_{e,ab}\,e_{R,b}\Bigr)+\text{h.c.},
 $$
 
 with $a,b=1,2,3$ the generation labels and $Y_{u}$, $Y_{d}$, $Y_{e}$ general complex $3\times3$ matrices.
 
-**The conjugate doublet.** The up-type term cannot use $\varphi$, and this is the one place in the assembly where a second scalar object is needed. The conjugate doublet is
+**The conjugate doublet.** The up-type term cannot use $\omicron_{\mathrm{hgs}}$, and this is the one place in the assembly where a second scalar object is needed. The conjugate doublet is
 
 $$
-\tilde\varphi=\begin{pmatrix}\varphi^{0*}\ -\varphi^{+*}\end{pmatrix},
+\tilde\omicron_{\mathrm{hgs}}=\begin{pmatrix}\omicron_{\mathrm{hgs}}^{0*}\ -\omicron_{\mathrm{hgs}}^{+*}\end{pmatrix},
 \qquad
-Y_{\tilde\varphi}=-\tfrac12 ,
+Y_{\tilde\omicron_{\mathrm{hgs}}}=-\tfrac12 ,
 $$
 
-and it is not an independent field: it is the same doublet read through the conjugate. Its hypercharge is the negative of $\varphi$'s, and that is what makes the up-type term invariant.
+and it is not an independent field: it is the same doublet read through the conjugate. Its hypercharge is the negative of $\omicron_{\mathrm{hgs}}$'s, and that is what makes the up-type term invariant.
 
 The hypercharge audit. Each term must carry total hypercharge zero, and each does:
 
 | Term | $Y$ of the left factor | $Y$ of the scalar | $Y$ of the right factor | Sum |
 |---|---|---|---|---|
-| $\bar Q_L\varphi\,d_R$ | $-1/6$ | $+1/2$ | $-1/3$ | $0$ |
-| $\bar Q_L\tilde\varphi\,u_R$ | $-1/6$ | $-1/2$ | $+2/3$ | $0$ |
-| $\bar L_L\varphi\,e_R$ | $+1/2$ | $+1/2$ | $-1$ | $0$ |
+| $\bar Q_L\omicron_{\mathrm{hgs}}\,d_R$ | $-1/6$ | $+1/2$ | $-1/3$ | $0$ |
+| $\bar Q_L\tilde\omicron_{\mathrm{hgs}}\,u_R$ | $-1/6$ | $-1/2$ | $+2/3$ | $0$ |
+| $\bar L_L\omicron_{\mathrm{hgs}}\,e_R$ | $+1/2$ | $+1/2$ | $-1$ | $0$ |
 
-The masses after breaking. With $\langle\varphi\rangle=(0,v/\sqrt2)$, each matrix becomes a mass matrix,
+The masses after breaking. With $\langle\omicron_{\mathrm{hgs}}\rangle=(0,v/\sqrt2)$, each matrix becomes a mass matrix,
 
 $$
 M_f=\frac{v}{\sqrt2}\,Y_{f},
@@ -188,8 +188,8 @@ $$
 \begin{aligned}
 \mathcal{L}_{\mathrm{SM}}={}&-\tfrac14\sum_{a,\mu,\nu}G_{a,\mu\nu}G_{a,\mu\nu}-\tfrac14\sum_{a,\mu,\nu}W_{a,\mu\nu}W_{a,\mu\nu}-\tfrac14\sum_{\mu,\nu}B_{\mu\nu}B_{\mu\nu}\\[2pt]
 &+\sum_{\psi}\bar{\tilde\Xi}_{\psi}\,i\,\tilde\nabla_{\mathrm{gco},\Phi}\,\tilde\Xi_{\psi}\\[2pt]
-&-\sum_\mu\left(D_\mu\varphi\right)^{\dagger}\left(D_\mu\varphi\right)+\mu^2\varphi^{\dagger}\varphi-\lambda\left(\varphi^{\dagger}\varphi\right)^2\\[2pt]
-&-\sum_{a,b}\Bigl(\bar Q_{L,a}\varphi\,Y_{d,ab}\,d_{R,b}+\bar Q_{L,a}\tilde\varphi\,Y_{u,ab}\,u_{R,b}+\bar L_{L,a}\varphi\,Y_{e,ab}\,e_{R,b}\Bigr)+\text{h.c.}\\[2pt]
+&-\sum_\mu\left(D_\mu\omicron_{\mathrm{hgs}}\right)^{\dagger}\left(D_\mu\omicron_{\mathrm{hgs}}\right)+\mu^2\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-\lambda\left(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}\right)^2\\[2pt]
+&-\sum_{a,b}\Bigl(\bar Q_{L,a}\omicron_{\mathrm{hgs}}\,Y_{d,ab}\,d_{R,b}+\bar Q_{L,a}\tilde\omicron_{\mathrm{hgs}}\,Y_{u,ab}\,u_{R,b}+\bar L_{L,a}\omicron_{\mathrm{hgs}}\,Y_{e,ab}\,e_{R,b}\Bigr)+\text{h.c.}\\[2pt]
 &+\frac{\theta_{\mathrm{QCD}}}{32\pi^2}\sum_{\mu,\nu,a}G_{a,\mu\nu}G_{a,\mathrm{dual},\mu\nu} .
 \end{aligned}
 \;}
@@ -219,17 +219,17 @@ and the analogous laws for $W_\mu$ with $U_L$ and for $B_\mu$ with the phase alo
 | $-\tfrac14W_{a,\mu\nu}W_{a,\mu\nu}$ | $W_{\mu\nu}\mapsto U_LW_{\mu\nu}U_L^{\dagger}$ | the same |
 | $-\tfrac14B_{\mu\nu}B_{\mu\nu}$ | $B_{\mu\nu}\mapsto B_{\mu\nu}$ | the abelian curvature is a derivative of a scalar phase |
 | fermion kinetic | $\bar{\tilde\Xi}\mapsto\bar{\tilde\Xi}U^{\dagger}$, $\tilde\nabla_\Phi\tilde\Xi\mapsto U\tilde\nabla_\Phi\tilde\Xi$ | $U^{\dagger}U=1$, and the derivative is covariant |
-| scalar kinetic | $D_\mu\varphi\mapsto U_\varphi D_\mu\varphi$ | the same, with the scalar's representation |
-| potential $\mu^2\varphi^\dagger\varphi-\lambda(\varphi^\dagger\varphi)^2$ | $\varphi^\dagger\varphi\mapsto\varphi^\dagger\varphi$ | the invariant is the modulus squared, a singlet |
-| Yukawa, down type | the three factors transform by $U_Q^{\dagger}$, $U_\varphi$, $U_d$ | the product is $U_Q^{\dagger}U_\varphi U_d$, and the $SU(2)$ contraction is the singlet |
-| Yukawa, up type | the same with $U_{\tilde\varphi}$ | $U_{\tilde\varphi}$ is the conjugate of $U_\varphi$, and the phase is opposite |
+| scalar kinetic | $D_\mu\omicron_{\mathrm{hgs}}\mapsto U_{\omicron_{\mathrm{hgs}}} D_\mu\omicron_{\mathrm{hgs}}$ | the same, with the scalar's representation |
+| potential $\mu^2\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}-\lambda(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})^2$ | $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}\mapsto\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$ | the invariant is the modulus squared, a singlet |
+| Yukawa, down type | the three factors transform by $U_Q^{\dagger}$, $U_{\omicron_{\mathrm{hgs}}}$, $U_d$ | the product is $U_Q^{\dagger}U_{\omicron_{\mathrm{hgs}}} U_d$, and the $SU(2)$ contraction is the singlet |
+| Yukawa, up type | the same with $U_{\tilde\omicron_{\mathrm{hgs}}}$ | $U_{\tilde\omicron_{\mathrm{hgs}}}$ is the conjugate of $U_{\omicron_{\mathrm{hgs}}}$, and the phase is opposite |
 | $\theta$ term | invariant | $G_{\mu\nu}$ is adjoint-valued, and the epsilon contraction is a colour singlet |
 
 The three places where the audit could fail and does not.
 
 - The fermion kinetic term needs all three connections. If the covariant derivative carried only the hypercharge connection, the term would fail under $SU(2)_L$ and $SU(3)_c$. The invariance of this term is what forces the gauge fields to be the same objects that appear in the three kinetic terms, and that is the content of calling the theory a gauge theory rather than three separate ones.
-- The up-type Yukawa needs the conjugate doublet. With $\varphi$ in place of $\tilde\varphi$, the total hypercharge would be $-1/6+1/2+2/3=+1$, and the term would not be invariant. The conjugate is forced.
-- The potential needs the modulus squared and nothing else. A term $\varphi^T\varphi$ or $\varphi^\dagger\tau_a\varphi$ would fail; only $\varphi^\dagger\varphi$ is a singlet. That is why the potential has two parameters and not more.
+- The up-type Yukawa needs the conjugate doublet. With $\omicron_{\mathrm{hgs}}$ in place of $\tilde\omicron_{\mathrm{hgs}}$, the total hypercharge would be $-1/6+1/2+2/3=+1$, and the term would not be invariant. The conjugate is forced.
+- The potential needs the modulus squared and nothing else. A term $\omicron_{\mathrm{hgs}}^T\omicron_{\mathrm{hgs}}$ or $\omicron_{\mathrm{hgs}}^\dagger\tau_a\omicron_{\mathrm{hgs}}$ would fail; only $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$ is a singlet. That is why the potential has two parameters and not more.
 
 **The one term that is not invariant, and must not be there.** A bare mass $m\bar{\tilde\Xi}\tilde\Xi$ fails the audit: the left factor transforms as a doublet and the right as a singlet, so the product carries an $SU(2)_L$ index that nothing contracts. A bare mass for the neutrino fails for the same reason. Their absence is a result of the audit and not an omission from it.
 
@@ -275,7 +275,7 @@ A second redundancy, inside the mass sector. The pair $(\mu^2,\lambda)$ and the 
 
 **Three omissions, and each is a measurement.** The expression above is the renormalisable Standard Model with massless neutrinos and no dark sector. Each omission has an experimental warrant and a price.
 
-- Neutrino masses. The dimension-five operator $\frac{c_{ab}}{\Lambda}\left(L_{L,a}^T\,i\tau_2\,\varphi\right)\left(L_{L,b}^T\,i\tau_2\,\varphi\right)$ is invariant under all three factors and gives a Majorana mass after breaking. The two insertions are $\varphi$ and not $\tilde\varphi$, because the hypercharge has to close: $-\tfrac12-\tfrac12+\tfrac12+\tfrac12=0$, whereas two conjugate doublets of hypercharge $-\tfrac12$ would give $-2$. The $i\tau_2$ contracts the two weak doublets into a singlet, and the transpose pairs the two left-handed spinors into a Lorentz scalar, so the operator is a singlet under every factor. It is the unique dimension-five operator the field content allows, and it is absent because it is not renormalisable. Adding it, or adding right-handed neutrinos, costs the seven or eight parameters that article 1 counts.
+- Neutrino masses. The dimension-five operator $\frac{c_{ab}}{\Lambda}\left(L_{L,a}^T\,i\tau_2\,\omicron_{\mathrm{hgs}}\right)\left(L_{L,b}^T\,i\tau_2\,\omicron_{\mathrm{hgs}}\right)$ is invariant under all three factors and gives a Majorana mass after breaking. The two insertions are $\omicron_{\mathrm{hgs}}$ and not $\tilde\omicron_{\mathrm{hgs}}$, because the hypercharge has to close: $-\tfrac12-\tfrac12+\tfrac12+\tfrac12=0$, whereas two conjugate doublets of hypercharge $-\tfrac12$ would give $-2$. The $i\tau_2$ contracts the two weak doublets into a singlet, and the transpose pairs the two left-handed spinors into a Lorentz scalar, so the operator is a singlet under every factor. It is the unique dimension-five operator the field content allows, and it is absent because it is not renormalisable. Adding it, or adding right-handed neutrinos, costs the seven or eight parameters that article 1 counts.
 - Gravity. No term of the sum couples to the metric. The framework's own gravitational sector is a separate construction, and the Standard Model is written on a fixed background.
 - Dark matter and the matter excess. No field in the content is a dark-matter candidate, and the $\theta$ term's $B+L$ violation is the only source of baryon-number violation in the expression. Both gaps are the subject of [What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html).
 
@@ -291,9 +291,9 @@ Three sectors out of four. The corpus writes a gauge action, a scalar action and
 |---|---|---|
 | $-\tfrac14F\cdot F$ | $-\tfrac14\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$ | the same, by §*The Dictionary* |
 | $+\tfrac12\partial\xi\cdot\partial\xi$ | $-\tfrac12\sum_\mu\partial_\mu\xi\,\partial_\mu\xi$ | the same, by §*The Dictionary* |
-| $\lvert D_\mu\varphi\rvert^2$ | $-\sum_\mu(D_\mu\varphi)^\dagger(D_\mu\varphi)$ | the same |
+| $\lvert D_\mu\omicron_{\mathrm{hgs}}\rvert^2$ | $-\sum_\mu(D_\mu\omicron_{\mathrm{hgs}})^\dagger(D_\mu\omicron_{\mathrm{hgs}})$ | the same |
 | the Dirac kinetic term, $\bar\psi\,iD_\mu\psi$ | $\bar{\tilde\Xi}\,i\tilde\nabla_\Phi\tilde\Xi$ | the Dirac article's pair; a central shift, if wanted, is added as $\kappa$ and never carried in the glyph |
-| $\varphi^\dagger\varphi$ | $\tilde\Xi\tilde\Xi^{\natural}$ | the norm of an element |
+| $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$ | $\tilde\Xi\tilde\Xi^{\natural}$ | the norm of an element |
 
 The dictionary is a dictionary and not a theory. Each row is an identity between two writings of one object, and none of them is a derivation. The corpus's contribution is that the objects have homes: the connection is a material-sector element, the curvature is its vector part under $\natural$, the scalar is an element and its modulus squared is the norm.
 
@@ -303,11 +303,11 @@ The parameter ledger, stated once. Three of the four sectors are writable in the
 
 ## Summary
 
-The Standard Model Lagrangian is the sum of four sectors plus the vacuum-angle term: the three gauge kinetic terms $-\tfrac14\sum G G$, $-\tfrac14\sum W W$, $-\tfrac14\sum BB$; one fermion kinetic term per Weyl field, fifteen per generation, each built on the covariant gradient carrying the connection in that field's representation; the scalar kinetic term and the potential $-\sum_\mu(D_\mu\varphi)^\dagger(D_\mu\varphi)+\mu^2\varphi^\dagger\varphi-\lambda(\varphi^\dagger\varphi)^2$; and the three Yukawa matrices with the conjugate doublet $\tilde\varphi$ of hypercharge $-\tfrac12$ in the up-type term. The assembly is one notation and one sign rule.
+The Standard Model Lagrangian is the sum of four sectors plus the vacuum-angle term: the three gauge kinetic terms $-\tfrac14\sum G G$, $-\tfrac14\sum W W$, $-\tfrac14\sum BB$; one fermion kinetic term per Weyl field, fifteen per generation, each built on the covariant gradient carrying the connection in that field's representation; the scalar kinetic term and the potential $-\sum_\mu(D_\mu\omicron_{\mathrm{hgs}})^\dagger(D_\mu\omicron_{\mathrm{hgs}})+\mu^2\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}-\lambda(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})^2$; and the three Yukawa matrices with the conjugate doublet $\tilde\omicron_{\mathrm{hgs}}$ of hypercharge $-\tfrac12$ in the up-type term. The assembly is one notation and one sign rule.
 
 The sign rule is $\sum_\mu X_\mu Y_\mu=-X\cdot Y$, proved in one line from $X_t=iX_0$ and the metric of the interval. It converts the corpus's $-\tfrac12\sum\partial\xi\partial\xi$ into the standard $+\tfrac12\partial\xi\cdot\partial\xi$, converts its $-\tfrac14\sum FF$ into the standard $-\tfrac14F\cdot F$ with no change of sign, and leaves the two writings one Lagrangian: the abelian check gives $\sum_{\mu\nu}F_{\mu\nu}F_{\mu\nu}=2(B^2-E^2)$ and hence $\tfrac12(E^2-B^2)$ on both sides.
 
-The audit is term by term and it passes. The three kinetic terms are invariant because each curvature transforms in the adjoint; the fermion and scalar kinetic terms because each covariant derivative transforms with the same unitary that acts on its field; the potential because it depends only on the singlet $\varphi^\dagger\varphi$; the Yukawa terms because the total hypercharge vanishes in each of the three, $-1/6+1/2-1/3$, $-1/6-1/2+2/3$ and $+1/2+1/2-1$; and the vacuum-angle term because it is a colour singlet. A bare fermion mass fails the audit, and its absence is a result and not an omission.
+The audit is term by term and it passes. The three kinetic terms are invariant because each curvature transforms in the adjoint; the fermion and scalar kinetic terms because each covariant derivative transforms with the same unitary that acts on its field; the potential because it depends only on the singlet $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$; the Yukawa terms because the total hypercharge vanishes in each of the three, $-1/6+1/2-1/3$, $-1/6-1/2+2/3$ and $+1/2+1/2-1$; and the vacuum-angle term because it is a colour singlet. A bare fermion mass fails the audit, and its absence is a result and not an omission.
 
 Written out, the four sectors and the vacuum-angle term carry sixty real parameters: three couplings, two scalar parameters, one vacuum angle, eighteen for $Y_{e}$ and thirty-six for the pair $Y^u,Y_{d}$. Field redefinitions remove forty-one of them — twenty-six in the quark sector through $U(3)_Q\times U(3)_u\times U(3)_d$ leaving ten, which is six masses and four mixing parameters, and fifteen in the lepton sector through $U(3)_L\times U(3)_e$ leaving three masses — so nineteen survive, which is the table of article 1. The redundancy is a freedom of flavour basis and not a small correction.
 
@@ -323,7 +323,7 @@ The expression omits neutrino masses, gravity and a dark sector, and each omissi
 | $f_{abc}$, $\varepsilon_{abc}$ | Colour and weak structure constants |
 | $\tilde\nabla_{\mathrm{gco},\Phi}$ | The gauge-covariant gradient; the representation is that of the field it acts on |
 | $\bar{\tilde\Xi}=\tilde\Xi^{*}i\vec e_x$ | The Dirac adjoint |
-| $\varphi$, $\tilde\varphi$ | The scalar doublet of hypercharge $\tfrac12$ and its conjugate of hypercharge $-\tfrac12$ |
+| $\omicron_{\mathrm{hgs}}$, $\tilde\omicron_{\mathrm{hgs}}$ | The scalar doublet of hypercharge $\tfrac12$ and its conjugate of hypercharge $-\tfrac12$ |
 | $Y_{u}$, $Y_{d}$, $Y_{e}$ | The three Yukawa matrices, general complex $3\times3$ |
 | $M_f=vY_{f}/\sqrt2$ | The mass matrix of the fermion type $f$ |
 | $\mu^2$, $\lambda$ | The two parameters of the potential |

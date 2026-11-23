@@ -36,7 +36,7 @@ $$
 The Hamiltonian of a magnetic moment $\vec\mu = \gamma\vec S$ in a magnetic field $\vec B = B_0\vec u_z$ is
 
 $$
-H = -\vec\mu\cdot\vec B = -\gamma B_0 S_z = -\frac{h\nu_{L}}{2}\sigma_3,
+H = -\vec\mu\cdot\vec B = -\gamma B_0 S_z = -\frac{hf_{\mathrm{frq},L}}{2}\sigma_3,
 $$
 
 where
@@ -106,7 +106,7 @@ $$
 The spin observable along $z$ is $\tilde{S}_{\Psi,z} =\frac{h}{4\pi}\,i \vec e_z$. The Hamiltonian is therefore the Hermitian element of $\mathbb{B}_{\Psi}$
 
 $$
-\tilde H_\Psi = -\gamma B_0 \tilde{S}_{\Psi,z} = -\frac{h\nu_{L}}{2}\,i \vec e_z,
+\tilde H_\Psi = -\gamma B_0 \tilde{S}_{\Psi,z} = -\frac{hf_{\mathrm{frq},L}}{2}\,i \vec e_z,
 $$
 
 with $\omega_L = \gamma B_0$.
@@ -171,7 +171,7 @@ The spin precesses in the $xy$-plane with angular frequency $\omega_L$, as expec
 
 2. The evolution operator is a unit-norm biquaternion. The exponential $\tilde{U}(r'_t) = \exp(-i\theta_{\mathrm{evo}}\sigma_3/2)$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde H_\Psi$ is proportional to $i \vec e_z$, and the exponential of $\vec e_z$ is a real quaternion). The evolution is a rotor in the sense of geometric algebra.
 
-The angle is $\theta_{\mathrm{evo}}=-\omega_L r'_t/c$. It is real because a real frequency, a real interval and the real constant $c$ form it, and it is dimensionless because a frequency times a length over a speed is a number. The minus sign records the sign of the Hamiltonian, $-\frac{h\nu_L}{2}i\vec e_z$; the generator $\sigma_3/2$ is dimensionless, so it adds no dimension to the exponent.
+The angle is $\theta_{\mathrm{evo}}=-\omega_L r'_t/c$. It is real because a real frequency, a real interval and the real constant $c$ form it, and it is dimensionless because a frequency times a length over a speed is a number. The minus sign records the sign of the Hamiltonian, $-\frac{hf_{\mathrm{frq},L}}{2}i\vec e_z$; the generator $\sigma_3/2$ is dimensionless, so it adds no dimension to the exponent.
 
 3. The state evolves by rotor conjugation. The evolved state is $\tilde{Ϛ}_{\Psi}(r'_t) = \tilde Q(r'_t)\tilde{Ϛ}_{\Psi}(0)\tilde Q(r'_t)^{*}$. This is the standard form of the von Neumann evolution, expressed as a rotor conjugation on the algebra. The evolution is automatically $*$-unitary: $\tilde Q\tilde Q^{*} = e_t$ is preserved by the exponential form.
 
@@ -228,7 +228,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\omega_L = \gamma B_0$ | Larmor frequency |
 | $\tilde\Pi_{\mathrm{id},x} = \tfrac{1}{2}(e_t + i\vec e_x)$ | Spin-up state along $x$ |
 | $\tilde{S}_{\Psi,x} =\frac{h}{4\pi} i\vec e_x$ | Spin observable along $x$ |
-| $\tilde H_\Psi = -\frac{h\nu_{L}}{2} i\vec e_z$ | Hamiltonian |
+| $\tilde H_\Psi = -\frac{hf_{\mathrm{frq},L}}{2} i\vec e_z$ | Hamiltonian |
 | $\tilde{U}(r'_t) = \exp(-i\theta_{\mathrm{evo}}\sigma_3/2)$ | Evolution biquaternion |
 | $\theta_{\mathrm{pwt}}:=\omega_L r'_t/c$ | The precession angle |
 | $\theta_{\mathrm{spp}}:=\theta_{\mathrm{pwt}}/2$ | The spinor half-angle |

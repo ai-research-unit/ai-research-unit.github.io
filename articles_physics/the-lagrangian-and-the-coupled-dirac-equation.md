@@ -167,9 +167,9 @@ with $\sum_\mu\partial_\mu J_\mu=0$ on solutions. **The time component is a sum 
 The three writings are one object. The display above, the polar reading $J_{t}=\rho\cosh\theta_{\mathrm{rpd}}$, $J_{\eta}=\rho\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,\eta}$, and the Gordon pairing
 
 $$
-j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\nu(\mu)}\bigr)\vec e_x\bigr),
+j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\mathrm{spt}(\mu)}\bigr)\vec e_x\bigr),
 \qquad
-\nu(t)=x,\ \nu(\eta)=y,
+\mathrm{spt}(t)=x,\ \mathrm{spt}(\eta)=y,
 $$
 
 are the same four numbers. The first two agree by the parent polar article's evaluation on the word; the first and the third agree by a direct evaluation on a general element, slot by slot, once the letter assignment $\tilde\Xi_R=\tilde\Xi\Pi_-$, $\tilde\Xi_L=\tilde\Xi\Pi_+$ is fixed. The action, the chart and the pairing therefore say the same thing three ways, and the three-fold agreement is the strongest statement this article makes.
@@ -191,10 +191,10 @@ Why it fails, in one sentence. The product $\tilde\Xi\tilde\Xi^{*}$ carries the 
 The repair, and what it costs. The conserved current is not a product of the field with its conjugate. It is a pairing with one unit inserted between the two fields and one fixed frame unit on the right:
 
 $$
-j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\nu(\mu)}\bigr)\vec e_x\bigr).
+j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\mathrm{spt}(\mu)}\bigr)\vec e_x\bigr).
 $$
 
-The inner unit $e_\mu$ is what turns the product into a current, and the right multipliers are what give the two parts opposite signs: $\vec e_x$ maps one value sector to the other, and $\vec e_{\nu(\mu)}$ is the generator's own unit. Read in the older language, this is the adjoint row of the gamma formulation, and the Gordon companion shows the dictionary. The current is a triple product, and the algebra supplies every factor of it. No object outside $\mathbb{B}$ is needed and no second carrier is added.
+The inner unit $e_\mu$ is what turns the product into a current, and the right multipliers are what give the two parts opposite signs: $\vec e_x$ maps one value sector to the other, and $\vec e_{\mathrm{spt}(\mu)}$ is the generator's own unit. Read in the older language, this is the adjoint row of the gamma formulation, and the Gordon companion shows the dictionary. The current is a triple product, and the algebra supplies every factor of it. No object outside $\mathbb{B}$ is needed and no second carrier is added.
 
 **The residual gap, stated exactly.** What the action does not supply is the *choice of the two frame units*. The algebra contains the units and the scalar part, and it does not single out $\vec e_x$ and $\vec e_y$ as the ones the current uses. That choice is the frame's, made once with the basis, and inherited by every article in the corpus. It is a datum of the framework and not a consequence of its algebra: a different basis would give a different presentation of the same numbers, and the numbers would be the same. This is the honest residue of the current question, and it is smaller than the question the earlier version of this article recorded.
 

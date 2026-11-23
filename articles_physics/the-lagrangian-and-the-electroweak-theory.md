@@ -10,15 +10,15 @@ Why both phases in one article. Because the breaking is a classical statement ab
 
 ## Conventions
 
-The conventions are the corpus's, and they are the ones the menu's convention articles fix. The gauge group is $SU(2)_L\times U(1)_Y$ with couplings $g$ and $g_{\mathrm Y}$; the gauge fields are $W_{\mu,a}$ for $a=1,2,3$ and $B_\mu$; the field strengths are $W_{a,\mu\nu}=\partial_\mu W_{a,\nu}-\partial_\nu W_{a,\mu}+g\epsilon_{abc}W_{b,\mu} W_{c,\nu}$ and $B_{\mu\nu}=\partial_\mu B_\nu-\partial_\nu B_\mu$. The doublet is $\Phi$, a complex two-component column with hypercharge $Y_\varphi=+\tfrac12$; its covariant derivative is
+The conventions are the corpus's, and they are the ones the menu's convention articles fix. The gauge group is $SU(2)_L\times U(1)_Y$ with couplings $g$ and $g_{\mathrm Y}$; the gauge fields are $W_{\mu,a}$ for $a=1,2,3$ and $B_\mu$; the field strengths are $W_{a,\mu\nu}=\partial_\mu W_{a,\nu}-\partial_\nu W_{a,\mu}+g\epsilon_{abc}W_{b,\mu} W_{c,\nu}$ and $B_{\mu\nu}=\partial_\mu B_\nu-\partial_\nu B_\mu$. The doublet is $\Phi$, a complex two-component column with hypercharge $Y_{\mathrm{hch}}=+\tfrac12$; its covariant derivative is
 
 $$
-D_\mu\Phi=\Bigl(\partial_\mu+i\,g\,\tau_{a}W_{a,\mu}+i\,g_{\mathrm Y}Y_\varphi B_\mu\Bigr)\Phi ,
+D_\mu\Phi=\Bigl(\partial_\mu+i\,g\,\tau_{a}W_{a,\mu}+i\,g_{\mathrm Y}Y_{\mathrm{hch}} B_\mu\Bigr)\Phi ,
 $$
 
 with $\tau_{a}=\sigma_{a}/2$ the generators in the doublet, so that $T_3$ has eigenvalues $\pm\tfrac12$ and the electric charge is $Q=T_3+Y$. The potential is $V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}$ with $\mu^{2}>0$ and $\lambda>0$. The measure is $\mathrm{d}^{4}x$; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $(D_\mu\Phi)^{\dagger}D_\mu\Phi=\sum_\mu\varepsilon_\mu(D_\mu\Phi)^{\dagger}D_\mu\Phi$ carries the sign the mostly-minus literature carries; and the biquaternionic writing of the $U(1)$ connection is the Maxwell article's.
 
-Two conventions, both settled by the corpus. The hypercharge here is $Y$, not the reference tables' $Y_W=2Y$: the corpus writes $Q=T_3+Y$ with $Y_\varphi=+\tfrac12$, as [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) fixes it and as [Electroweak Symmetry Breaking](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) uses it. Only the product $g_{\mathrm Y}Y$ enters any display, so a reader who arrives with $Y_W$ must halve every hypercharge and change no physical statement. The sign of the coupling in $D_\mu$ is likewise the corpus's, $+ig$; the opposite choice, $-ig$, is the same theory with $g\mapsto-g$, and every mass below is quadratic in $g$ and unchanged.
+Two conventions, both settled by the corpus. The hypercharge here is $Y$, not the reference tables' $Y_W=2Y$: the corpus writes $Q=T_3+Y$ with $Y_{\mathrm{hch}}=+\tfrac12$, as [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) fixes it and as [Electroweak Symmetry Breaking](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) uses it. Only the product $g_{\mathrm Y}Y$ enters any display, so a reader who arrives with $Y_W$ must halve every hypercharge and change no physical statement. The sign of the coupling in $D_\mu$ is likewise the corpus's, $+ig$; the opposite choice, $-ig$, is the same theory with $g\mapsto-g$, and every mass below is quadratic in $g$ and unchanged.
 
 **One convention is a warning.** The corpus's biquaternion algebra carries the $U(1)$ connection exactly, and it carries the $SU(2)$ group exactly too: the compact factor is $SU(2)$ itself, the unit real quaternions $\mathrm{Spin}(3)=S^{3}$, so the connection the algebra writes is the one electroweak theory needs. What it does not carry is the way electroweak theory uses that group — a doublet chosen independently of the spin, and a chiral action on one letter. The electroweak articles state both halves. So the displays below are in the component dictionary, which is exact, and the biquaternionic translation is claimed only where the electroweak articles claim it.
 
@@ -100,7 +100,7 @@ $$
 
 is. Its current is the electromagnetic one, and the photon is its gauge field.
 
-The sign. The sign of the electric charge is the sign of the eigenvalue of $Q$, and $Q$'s normalisation is fixed by the scalar's hypercharge $Y_\varphi=+\tfrac12$ and by $T_3=\pm\tfrac12$ on the doublet. The electron sits in the lepton doublet, whose hypercharge is $-\tfrac12$, and its $T_3=-\tfrac12$; the two sum to the observed $Q=-1$. The assignment is the corpus's electroweak articles', not this article's choice.
+The sign. The sign of the electric charge is the sign of the eigenvalue of $Q$, and $Q$'s normalisation is fixed by the scalar's hypercharge $Y_{\mathrm{hch}}=+\tfrac12$ and by $T_3=\pm\tfrac12$ on the doublet. The electron sits in the lepton doublet, whose hypercharge is $-\tfrac12$, and its $T_3=-\tfrac12$; the two sum to the observed $Q=-1$. The assignment is the corpus's electroweak articles', not this article's choice.
 
 **Why only one combination survives.** A current is conserved after breaking if its generator annihilates the vacuum. The vacuum is neutral under $Q$ and not under $T_1,T_2$ or $T_3-Y$ separately, so exactly one combination of the four generators leaves it invariant. That is the same statement as the photon's masslessness, read from the currents rather than from the masses — two readings of one fact, and the article gives both because they are checkable independently.
 
@@ -133,7 +133,7 @@ $$
 | $g,\ g_{\mathrm Y}$ | $SU(2)_L$ and $U(1)_Y$ couplings |
 | $W_{a,\mu},\ B_\mu$ | Gauge fields of the two factors |
 | $W_{a,\mu\nu},\ B_{\mu\nu}$ | Field strengths, the first non-Abelian |
-| $\Phi$ | Complex doublet, hypercharge $Y_\varphi=+\tfrac12$ |
+| $\Phi$ | Complex doublet, hypercharge $Y_{\mathrm{hch}}=+\tfrac12$ |
 | $D_\mu\Phi$ | Covariant derivative with both connections |
 | $V(\Phi)$ | $-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}$ |
 | $v=\sqrt{\mu^{2}/\lambda}$ | Vacuum expectation value |

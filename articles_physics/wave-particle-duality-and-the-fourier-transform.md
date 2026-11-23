@@ -90,7 +90,7 @@ $$
 \rho=\frac{i}{2\,k_{m}}\left(\tilde\Xi^{*}\partial_{r'_t}\tilde\Xi-\tilde\Xi\,\partial_{r'_t}\tilde\Xi^{*}\right),
 $$
 
-and it is not positive definite: the positive- and negative-frequency branches carry $\pm\frac{h\nu}{m\,c^{2}}\lvert N\rvert^{2}$.
+and it is not positive definite: the positive- and negative-frequency branches carry $\pm\frac{hf_{\mathrm{frq}}}{m\,c^{2}}\lvert N\rvert^{2}$.
 
 
 That equation is the particle statement. It says that a number is conserved: whatever leaves one region enters the next, and none is created. The number is the count of the thing the field describes, and the count is what a detector registers. Nothing in the equation refers to a wavelength, a phase or an interference pattern. The density is Hermitian and lies in $\mathbb{B}_{\Psi}$; the current is a real spatial vector and lies in $\mathbb{B}_{\Phi}$.
@@ -183,7 +183,7 @@ which with $r'_t=c\,t$ and $\frac{h}{2\pi}=m\,c/k_{m}$ reads $i \frac{h}{2\pi}\,
 $$
 i \frac{h}{2\pi}\,\partial_{t}\psi=-\frac{h^{2}}{8\pi^{2}m}\vec\nabla_\Phi^{2}\psi+V\psi
 \quad\longmapsto\quad
- h\nu=\frac{h^{2}k^{2}}{8\pi^{2}m}+V .
+ hf_{\mathrm{frq}}=\frac{h^{2}k^{2}}{8\pi^{2}m}+V .
 $$
 
 Divide by $\frac{h}{2\pi}$ and the quantum has disappeared from the equation. What is left is
@@ -192,7 +192,7 @@ $$
 E=\frac{p^{2}}{2m}+V ,
 $$
 
-the classical energy–momentum relation, with $E=h\nu$ and $p=\frac{h}{2\pi} k_{\Phi}$. One point of bookkeeping, because the corpus counts energy from a different zero: $\omega$ here is the non-relativistic frequency, measured from the rest energy. Written against $k_{t}^{\prime}=\frac{2\pi E}{h\,c}$, which includes the rest energy, the same symbol reads
+the classical energy–momentum relation, with $E=hf_{\mathrm{frq}}$ and $p=\frac{h}{2\pi} k_{\Phi}$. One point of bookkeeping, because the corpus counts energy from a different zero: $\omega$ here is the non-relativistic frequency, measured from the rest energy. Written against $k_{t}^{\prime}=\frac{2\pi E}{h\,c}$, which includes the rest energy, the same symbol reads
 
 $$
 k_{t}^{\prime}-k_{m}-\frac{k_{\Phi}^{2}}{2k_{m}}=0

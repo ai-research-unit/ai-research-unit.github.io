@@ -156,15 +156,15 @@ The cubic term is the one worth displaying, because it vanishes by cancellation 
 
 The two neutral fields mix through the Weinberg angle, $Z_\mu=\cos\theta_W W_{\mu 3}-\sin\theta_W B_\mu$ and $A_\mu=\sin\theta_W W_{\mu 3}+\cos\theta_W B_\mu$, with $\tan\theta_W=g_{\mathrm Y}/g$. The mixing is the subject of [The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html).
 
-**The scalar.** The scalar sector is one complex doublet of $SU(2)_L$, of hypercharge $Y=\tfrac12$. As a doublet of complex fields it carries four real components: two of charge $+1$, the real and imaginary parts of $\varphi^+$, and two of charge $0$, the real and imaginary parts of $\varphi^0$. The conjugate of $\varphi^+$ is not a fifth component; it carries charge $-1$ and is the antiparticle of the same field.
+**The scalar.** The scalar sector is one complex doublet of $SU(2)_L$, of hypercharge $Y=\tfrac12$. As a doublet of complex fields it carries four real components: two of charge $+1$, the real and imaginary parts of $\omicron_{\mathrm{hgs}}^+$, and two of charge $0$, the real and imaginary parts of $\omicron_{\mathrm{hgs}}^0$. The conjugate of $\omicron_{\mathrm{hgs}}^+$ is not a fifth component; it carries charge $-1$ and is the antiparticle of the same field.
 
 | Component | Real fields | $T_3$ | $Y$ | $Ϙ$ | Fate after breaking |
 |---|---|---|---|---|---|
-| $\varphi^+$ | $2$ | $+1/2$ | $1/2$ | $+1$ | the charged Goldstone, eaten by $W^+$ |
-| $\mathrm{Re}\,\varphi^0$ after the shift | $1$ | $-1/2$ | $1/2$ | $0$ | the physical scalar $H$ |
-| $\mathrm{Im}\,\varphi^0$ | $1$ | $-1/2$ | $1/2$ | $0$ | the neutral Goldstone, eaten by $Z$ |
+| $\omicron_{\mathrm{hgs}}^+$ | $2$ | $+1/2$ | $1/2$ | $+1$ | the charged Goldstone, eaten by $W^+$ |
+| $\mathrm{Re}\,\omicron_{\mathrm{hgs}}^0$ after the shift | $1$ | $-1/2$ | $1/2$ | $0$ | the physical scalar $H$ |
+| $\mathrm{Im}\,\omicron_{\mathrm{hgs}}^0$ | $1$ | $-1/2$ | $1/2$ | $0$ | the neutral Goldstone, eaten by $Z$ |
 
-The three Goldstone fields are the two real components of $\varphi^+$ and the imaginary part of $\varphi^0$; the fourth real component is the scalar that remains.
+The three Goldstone fields are the two real components of $\omicron_{\mathrm{hgs}}^+$ and the imaginary part of $\omicron_{\mathrm{hgs}}^0$; the fourth real component is the scalar that remains.
 
 **The degree-of-freedom check.** The count closes before and after breaking. Before, twelve massless gauge fields carry two polarisations each, twenty-four, and the doublet carries four, for twenty-eight. After, the eight gluons carry sixteen, the photon two, the three massive bosons three each, nine, and the physical scalar one, for twenty-eight. The three Goldstone degrees of freedom have become the longitudinal polarisations of $W^+$, $W^-$ and $Z$. The computation is the subject of [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html).
 
@@ -264,7 +264,7 @@ The framework fixes none of the nineteen. Its own parameters — the charge $ϙ$
 | $W^\pm_\mu$, $Z_\mu$, $A_\mu$ | Charged, neutral massive and electromagnetic fields after mixing |
 | $\theta_W$ | Weinberg angle, $\tan\theta_W=g_{\mathrm Y}/g$ |
 | $v$, $M_W$, $M_Z$, $M_H$ | Electroweak scale and the three boson masses |
-| $\varphi^\pm$, $\varphi^0$ | Components of the scalar doublet of hypercharge $\tfrac12$ |
+| $\omicron_{\mathrm{hgs}}^\pm$, $\omicron_{\mathrm{hgs}}^0$ | Components of the scalar doublet of hypercharge $\tfrac12$ |
 | $\theta_{12},\theta_{23},\theta_{13},\delta$ | The three CKM angles and the CP phase |
 | $\theta_{\mathrm{QCD}}$ | QCD vacuum angle |
 | $\overline{\mathrm{MS}}$ | Modified minimal subtraction; the scheme of the running quantities |

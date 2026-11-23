@@ -130,10 +130,10 @@ is the Laplace–Beltrami operator acting on the field, with $G$ the inverse met
 **The reading.** The square is taken on the **basis operator**: the operator acting on $\mathbb{B}$ read as a four-dimensional complex vector space, that is, its left-regular representation. Its representative is not the coefficient matrix of left multiplication by $\tilde F_\mu$ — that matrix squares with a vector cross term left over. It is the sum of the four frame basis operators of the matrix-representation conventions, weighted by the inverse vierbein. The four close on the plain weight $\varepsilon_a$, with $\varepsilon=(1,-1,-1,-1)$:
 
 $$
-\{iL_{\mathrm{axf},e_a}R_{\mathrm{axf},\vec e_{\nu(a)}},\,iL_{\mathrm{axf},e_b}R_{\mathrm{axf},\vec e_{\nu(b)}}\}=2\varepsilon_a\delta_{ab}I_4,
+\{iL_{\mathrm{axf},e_a}R_{\mathrm{axf},\vec e_{\mathrm{spt}(a)}},\,iL_{\mathrm{axf},e_b}R_{\mathrm{axf},\vec e_{\mathrm{spt}(b)}}\}=2\varepsilon_a\delta_{ab}I_4,
 $$
 
-with $\nu(t)=x$ and $\nu(\eta)=y$. Those are the Clifford relations of a Dirac spinor, and they are why the result is the Lichnerowicz formula rather than some other second-order operator.
+with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$. Those are the Clifford relations of a Dirac spinor, and they are why the result is the Lichnerowicz formula rather than some other second-order operator.
 
 **Why the algebra element does not square to a scalar.** In the rigid frame $\tilde\nabla_\Phi^{2}$ carries the vector term $-2i\sum_\eta\vec e_\eta\,\partial^2/\partial r'_t\partial x_\eta$, so the algebra square is a biquaternion-valued operator and not the scalar Lichnerowicz square. The identity is true of the basis operator and false of the algebra element, and a version of this article that omitted the distinction would be wrong.
 
@@ -258,7 +258,7 @@ Minimal electromagnetic coupling adds a field-strength–spin term with the same
 | $\Box_{g,\Phi}=\sum_{\mu,\nu}G_{\mu\nu}\nabla_\mu\nabla_\nu$ | Laplace–Beltrami operator; $\vec\nabla_\Phi^{*}\vec\nabla_\Phi=-\Box_{g,\Phi}$ |
 | $\mathrm{Ric}$ | scalar curvature of the Gram metric |
 | $(\tilde F_\mu D_\mu)^2=-\Box_{g,\Phi}+\tfrac14\mathrm{Ric}$ | Lichnerowicz square, taken on the basis operator |
-| $iL_{\mathrm{axf},e_a}R_{\mathrm{axf},\vec e_{\nu(a)}}$ | the four frame basis operators; $\nu(t)=x$, $\nu(\eta)=y$ |
+| $iL_{\mathrm{axf},e_a}R_{\mathrm{axf},\vec e_{\mathrm{spt}(a)}}$ | the four frame basis operators; $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$ |
 | $\varepsilon_a$ | plain weight of the basis operators, $\varepsilon=(1,-1,-1,-1)$ |
 | $S_{\mu\nu}$ | spin basis operator, one quarter of the commutator of two frame basis operators |
 

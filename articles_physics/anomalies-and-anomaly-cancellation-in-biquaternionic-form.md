@@ -20,7 +20,7 @@ The framework's contribution is structural, and is stated at the outset.
 
 **The one symbol kept.** The **Dirac adjoint** $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}$ is a pairing of two states and not a basis operator of the frame; it is the one operator symbol the displays keep, and it is kept because a pairing has no action form.
 
-**The derived form this article uses.** This article defines none of the cited objects. Where the body writes one of them, it writes what the basis operator does to an element, and that writing is the article's derived form. Written by what it does, the frame basis operator of the coordinate $x_\mu$ is the map $Q\mapsto i\,e_\mu Q\,\vec e_{\nu(\mu)}$, and the basis operator is the map $Q\mapsto-i\,Q\,\vec e_z$. The two writings are one object read twice, and the rest of the article uses the second. The same objects under their gamma names are collected in the closing section *The Legacy Pauli Gamma Formulation*, and none of those names is used before it.
+**The derived form this article uses.** This article defines none of the cited objects. Where the body writes one of them, it writes what the basis operator does to an element, and that writing is the article's derived form. Written by what it does, the frame basis operator of the coordinate $x_\mu$ is the map $Q\mapsto i\,e_\mu Q\,\vec e_{\mathrm{spt}(\mu)}$, and the basis operator is the map $Q\mapsto-i\,Q\,\vec e_z$. The two writings are one object read twice, and the rest of the article uses the second. The same objects under their gamma names are collected in the closing section *The Legacy Pauli Gamma Formulation*, and none of those names is used before it.
 
 **The fifth basis operator, written as an action.** The fifth basis operator is the composite of the four frame basis operators, applied in the order $z,y,x,t$ with the basis operator of $z$ innermost. Written as actions, and with the four factors of $i$ reduced by $i^4=+1$, the composite is
 $$
@@ -106,16 +106,16 @@ for a biquaternion field $F$ — the two-sided Dirac field, not the component fi
 **The currents.** For the one-sided pair, the common phase is a symmetry at every $m$, because the mass is central and passes through it, so the vector current
 
 $$
-j_{\mu}=\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,\bigl(i\,e_\mu\,\tilde{Ξ}\,\vec e_{\nu(\mu)}\bigr)
+j_{\mu}=\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,\bigl(i\,e_\mu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}\bigr)
 $$
 
 is conserved at every $m$. An axial rotation assigns opposite phases to the two chiralities, so the mass term, which pairs them, is not invariant under it; the axial current therefore carries the basis operator,
 
 $$
-j_{5\mu}=\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,\bigl(e_\mu\,\tilde{Ξ}\,\vec e_z\vec e_{\nu(\mu)}\bigr),
+j_{5\mu}=\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,\bigl(e_\mu\,\tilde{Ξ}\,\vec e_z\vec e_{\mathrm{spt}(\mu)}\bigr),
 $$
 
-where the $i$ of the frame basis operator and the $-i$ of the basis operator have been reduced by $i(-i)=+1$. The surviving right multiplier is the product $\vec e_z\vec e_{\nu(\mu)}$, in that order: right multipliers compose in the order in which they act, and $\vec e_z\vec e_{\nu(\mu)}=-\vec e_{\nu(\mu)}\vec e_z$, so writing the pair the other way around flips the sign of the current. With $\nu(t)=x$ and $\nu(\eta)=y$ the product is $\vec e_y$ on the time coordinate and $-\vec e_x$ on the three space coordinates. The current is conserved only at $m=0$.
+where the $i$ of the frame basis operator and the $-i$ of the basis operator have been reduced by $i(-i)=+1$. The surviving right multiplier is the product $\vec e_z\vec e_{\mathrm{spt}(\mu)}$, in that order: right multipliers compose in the order in which they act, and $\vec e_z\vec e_{\mathrm{spt}(\mu)}=-\vec e_{\mathrm{spt}(\mu)}\vec e_z$, so writing the pair the other way around flips the sign of the current. With $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$ the product is $\vec e_y$ on the time coordinate and $-\vec e_x$ on the three space coordinates. The current is conserved only at $m=0$.
 
 **The result.** For a Dirac fermion of electric charge $e$ in four dimensions, with $\tilde J_{\Phi,5}=\sum_\mu j_{5\mu}e_\mu$ and with $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu$ the divergence — the plain sum, because the metric is already spent inside the frame basis operators, each of which squares to $\varepsilon_\mu$ times the identity, the plain weight of *Frame and Metric Conventions*, §*The Rules*, so an extra sign vector would apply it a second time —
 
@@ -386,13 +386,13 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 **The body's basis operators under their gamma names.** Because $L_{\mathrm{pau},e_t}$ is the identity, $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$: the chirality basis operator of the body is $\gamma_5$ itself, and the identity $\mathrm{tr}(\gamma_5)=0$ of the traces section is its vanishing signed trace. The generator basis operator of the coordinate $x_\mu$ is $\gamma_\mu$, and the fifth basis operator is $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$. The single collapse behind every simplification in the body is
 
 $$
-i\,\gamma_\mu=-L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}} ,
+i\,\gamma_\mu=-L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\mu)}} ,
 $$
 
 In the axis-free display:
 
 $$
-i\,\gamma_\mu=-L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}} ,
+i\,\gamma_\mu=-L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\mu)}} ,
 $$
 
 so multiplying a generator basis operator by $i$ trades it for a plain one; four such basis operators therefore carry $i^4=+1$ and no residual unit. Under these names the five-index trace the anomaly needs is the one in the display below; the body does not state it, because its value is the standard one and this article does not re-derive it.
@@ -444,7 +444,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\mathbb{B}_{C}$ | The centre; the vector-like abelian factor |
 | $\tilde\nabla_\Phi$, $\Box_\Phi$ | Gradient and d'Alembertian in the material reading; the symbols are the conventions' (*Algebra and Element Conventions*, *Operator and Calculus Conventions*) |
 | $L_{a}R_{b}$ | The two-sided basis operator, named only where the operator itself is the subject (*Operator Family Conventions*) |
-| $Q\mapsto ie_\mu Q\vec e_{\nu(\mu)}$ | The frame basis operator of the coordinate $x_\mu$ by what it does; the basis operator is *Matrix Representations Conventions* |
+| $Q\mapsto ie_\mu Q\vec e_{\mathrm{spt}(\mu)}$ | The frame basis operator of the coordinate $x_\mu$ by what it does; the basis operator is *Matrix Representations Conventions* |
 | $\tilde{Ξ}$, $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The state and its two values under $\mathsf{V}_{\mathrm{vol}}$; *Special Element Conventions*, §*The Chirality Convention* |
 | $\mathsf{V}_{\mathrm{vol}}:\ Q\mapsto-iQ\vec e_z$ | The basis operator; $i$ times the fifth basis operator |
 | $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}$ | Dirac adjoint; a pairing of two states, not an action |
@@ -454,7 +454,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $-R_{\mathrm{axf},\vec e_z}$, the four frame basis operators composed in the order $z,y,x,t$ | The fifth basis operator; the basis operator is $i$ times it |
 | $\mathrm{tr}$, $\mathrm{Tr}_R$ | The diagonal sum of a $4\times4$ matrix standing in the same display, and of the matrix of the gauge representation |
 | $\epsilon_{\mu\nu\rho\sigma}$ | Alternating symbol, written all-low with $\epsilon_{0123}=+1$; raising all four indices multiplies it by the product of the four weights, $\prod_\mu\varepsilon_\mu=-1$, so the textbook's upper-index contraction is the negative of the all-low one, and the anomaly term carries an explicit minus in this notation |
-| $j_{\mu}=\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,(ie_\mu\tilde{Ξ}\vec e_{\nu(\mu)})$, $j_{5\mu}=\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,(e_\mu\tilde{Ξ}\vec e_z\vec e_{\nu(\mu)})$ | Vector and axial currents; the axial current is the basis operator inserted between the frame basis operator and the state, the right multiplier being $\vec e_z\vec e_{\nu(\mu)}$ in that order |
+| $j_{\mu}=\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,(ie_\mu\tilde{Ξ}\vec e_{\mathrm{spt}(\mu)})$, $j_{5\mu}=\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,(e_\mu\tilde{Ξ}\vec e_z\vec e_{\mathrm{spt}(\mu)})$ | Vector and axial currents; the axial current is the basis operator inserted between the frame basis operator and the state, the right multiplier being $\vec e_z\vec e_{\mathrm{spt}(\mu)}$ in that order |
 | $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu=2m\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}(\tilde{Ξ}\vec e_z)-\dfrac{e^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Axial anomaly (ABJ), with the mass term reduced by $i(-i)=+1$; the minus is the lower-index notation, and the divergence is the plain sum, the metric being inside the frame basis operators |
 | $F_{\mu\nu}=\partial \mathcal{A}_\nu/\partial x_\mu-\partial \mathcal{A}_\mu/\partial x_\nu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, $\kappa=\frac{2\pi ϙ}{h}$ | Non-abelian field strength, in components |
 | $I_1=\vec E^2-c^2\vec B^2$, $I_2=\vec E\cdot\vec B$ | Biquaternion field invariants |

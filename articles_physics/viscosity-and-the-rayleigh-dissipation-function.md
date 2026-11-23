@@ -34,10 +34,10 @@ $$
 \partial_{t'}\vec v+\bigl(\vec v\cdot\nabla\bigr)\vec v=-\frac{1}{\rho_{\mathrm{mass}}}\vec\nabla_\Phi p_{\mathrm{th}}+\frac{1}{\rho_{\mathrm{mass}}}\partial_j\sigma_{\mathrm{vsc},ij}+\vec f_{\mathrm{ext}},
 $$
 
-with $\sigma_{\mathrm{vsc},ij}=2\eta_{\mathrm{shr}}S_{ij}+\zeta_{\mathrm{blk}}\delta_{ij}\vec\nabla_\Phi\cdot\vec v$ the viscous part. For constant $\eta_{\mathrm{shr}}$ and an incompressible flow this is $\nu_{\mathrm{kin}}\Delta_\Phi\vec v$ with the kinematic viscosity
+with $\sigma_{\mathrm{vsc},ij}=2\eta_{\mathrm{shr}}S_{ij}+\zeta_{\mathrm{blk}}\delta_{ij}\vec\nabla_\Phi\cdot\vec v$ the viscous part. For constant $\eta_{\mathrm{shr}}$ and an incompressible flow this is $\digamma_{\mathrm{kin}}\Delta_\Phi\vec v$ with the kinematic viscosity
 
 $$
-\nu_{\mathrm{kin}}=\frac{\eta_{\mathrm{shr}}}{\rho_{\mathrm{mass}}},
+\digamma_{\mathrm{kin}}=\frac{\eta_{\mathrm{shr}}}{\rho_{\mathrm{mass}}},
 $$
 
 and with that term the equation is the Navier–Stokes equation.
@@ -95,41 +95,41 @@ So viscosity removes the phase and not a datum. The four data of the barotropic 
 **In one dimension the viscosity obstruction is removable, and the equation it reaches is linear.** Burgers' equation is
 
 $$
-\partial_{t'}u+u\,\partial_xu=\nu_{\mathrm{kin}}\,\partial_{xx}u ,
+\partial_{t'}u+u\,\partial_xu=\digamma_{\mathrm{kin}}\,\partial_{xx}u ,
 $$
 
 the one-dimensional Navier–Stokes equation for a flow with no pressure. The Hopf–Cole transformation
 
 $$
-u=-2\nu_{\mathrm{kin}}\,\partial_x\ln\psi
+u=-2\digamma_{\mathrm{kin}}\,\partial_x\ln\psi
 $$
 
 carries it into the heat equation
 
 $$
-\partial_{t'}\psi=\nu_{\mathrm{kin}}\,\partial_{xx}\psi ,
+\partial_{t'}\psi=\digamma_{\mathrm{kin}}\,\partial_{xx}\psi ,
 $$
 
-which is linear. The check is a differentiation: with $\psi$ solving the heat equation, $u$ as defined solves Burgers' equation identically, and the check is exact for every positive $\nu_{\mathrm{kin}}$.
+which is linear. The check is a differentiation: with $\psi$ solving the heat equation, $u$ as defined solves Burgers' equation identically, and the check is exact for every positive $\digamma_{\mathrm{kin}}$.
 
-The check is worth writing on a case. Take the heat kernel $\psi=(t')^{-1/2}\exp(-x^{2}/(4\nu_{\mathrm{kin}}t'))$. Then
+The check is worth writing on a case. Take the heat kernel $\psi=(t')^{-1/2}\exp(-x^{2}/(4\digamma_{\mathrm{kin}}t'))$. Then
 
 $$
-u=-2\nu_{\mathrm{kin}}\,\partial_x\ln\psi=\frac{x}{t'},
+u=-2\digamma_{\mathrm{kin}}\,\partial_x\ln\psi=\frac{x}{t'},
 $$
 
-which solves Burgers' equation with no pressure: $\partial_{t'}u=-x/t'^{2}$, $u\partial_xu=x/t'^{2}$, and $\nu_{\mathrm{kin}}\partial_{xx}u=0$. The three terms cancel pairwise, and the solution is the inviscid rarefaction written in similarity variables.
+which solves Burgers' equation with no pressure: $\partial_{t'}u=-x/t'^{2}$, $u\partial_xu=x/t'^{2}$, and $\digamma_{\mathrm{kin}}\partial_{xx}u=0$. The three terms cancel pairwise, and the solution is the inviscid rarefaction written in similarity variables.
 
-In three dimensions the transformation survives only for potential flow. With $\vec v=-2\nu_{\mathrm{kin}}\vec\nabla_\Phi\ln\psi$ and $\psi$ solving $\partial_{t'}\psi=\nu_{\mathrm{kin}}\Delta_\Phi\psi$, the vector Burgers equation holds identically, because the two identities used in one dimension are the gradient of the scalar ones. A flow with a non-vanishing curl is not of this form, and for it no such transformation is known. So even the exceptional linearisation is a potential-flow statement, and the vorticity obstruction of [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html) is untouched.
+In three dimensions the transformation survives only for potential flow. With $\vec v=-2\digamma_{\mathrm{kin}}\vec\nabla_\Phi\ln\psi$ and $\psi$ solving $\partial_{t'}\psi=\digamma_{\mathrm{kin}}\Delta_\Phi\psi$, the vector Burgers equation holds identically, because the two identities used in one dimension are the gradient of the scalar ones. A flow with a non-vanishing curl is not of this form, and for it no such transformation is known. So even the exceptional linearisation is a potential-flow statement, and the vorticity obstruction of [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html) is untouched.
 
 ## Why the Heat Equation Is Not a Wave Equation
 
 The dispersion relation decides it. A mode of the heat equation is $\exp(i(kx-\omega t'))$ with
 
 $$
--i\omega=-\nu_{\mathrm{kin}}k^{2},
+-i\omega=-\digamma_{\mathrm{kin}}k^{2},
 \qquad
-\omega=-i\nu_{\mathrm{kin}}k^{2},
+\omega=-i\digamma_{\mathrm{kin}}k^{2},
 $$
 
 a purely imaginary frequency. A mode of a wave equation is $\omega=\pm ck$, real. The first decays at a rate proportional to $k^{2}$ and does not oscillate; the second oscillates and does not decay. No solution of the heat equation interferes in the sense a wave interferes, because interference is the addition of two phases and a decaying amplitude has no phase to add.
@@ -142,7 +142,7 @@ $$
 \partial_{t'}^{2}u+\frac{1}{\tau_{\mathrm{dmp}}}\partial_{t'}u=c^{2}\Delta_\Phi u ,
 $$
 
-a wave equation with a friction term of relaxation time $\tau_{\mathrm{dmp}}$. For disturbances slow on the scale $\tau_{\mathrm{dmp}}$ the second derivative is negligible against the first and the equation closes to $\partial_{t'}u=\tau_{\mathrm{dmp}}c^{2}\Delta_\Phi u$, which is the heat equation with $\nu_{\mathrm{kin}}=\tau_{\mathrm{dmp}}c^{2}$.
+a wave equation with a friction term of relaxation time $\tau_{\mathrm{dmp}}$. For disturbances slow on the scale $\tau_{\mathrm{dmp}}$ the second derivative is negligible against the first and the equation closes to $\partial_{t'}u=\tau_{\mathrm{dmp}}c^{2}\Delta_\Phi u$, which is the heat equation with $\digamma_{\mathrm{kin}}=\tau_{\mathrm{dmp}}c^{2}$.
 
 The limit is a statement about spectra, and it is why the exception is real but narrow. A damped wave equation has complex frequencies, $\omega=-i/(2\tau_{\mathrm{dmp}})\pm\sqrt{c^{2}k^{2}-1/(4\tau_{\mathrm{dmp}}^{2})}$, so it oscillates while it decays and its over-damped branch does not. At long wavelength the branch that survives is the diffusive one, and at short wavelength the two branches are the two waves. So the heat equation is the long-wavelength face of a wave equation, not a different equation reached from a different fluid.
 
@@ -168,7 +168,7 @@ The count does not see viscosity. A viscous fluid carries the same four data as 
 
 In one dimension the obstruction is removable and the result is linear: the Hopf–Cole transformation carries Burgers' equation into the heat equation, exactly, with the kernel giving $u=x/t'$. In three dimensions it does so only for potential flow.
 
-The heat equation is not a wave equation. Its frequency is $-i\nu_{\mathrm{kin}}k^{2}$, purely imaginary; its kernel is positive rather than cone-supported; and it is the long-wavelength branch of a damped wave equation, $\nu_{\mathrm{kin}}=\tau_{\mathrm{dmp}}c^{2}$.
+The heat equation is not a wave equation. Its frequency is $-i\digamma_{\mathrm{kin}}k^{2}$, purely imaginary; its kernel is positive rather than cone-supported; and it is the long-wavelength branch of a damped wave equation, $\digamma_{\mathrm{kin}}=\tau_{\mathrm{dmp}}c^{2}$.
 
 ## Summary of Notation
 
@@ -180,7 +180,7 @@ The heat equation is not a wave equation. Its frequency is $-i\nu_{\mathrm{kin}}
 | $\eta_{\mathrm{shr}}$ | Shear viscosity |
 | $\tau_{\mathrm{dmp}}$ | Relaxation time of the damping term in the damped wave equation |
 | $\zeta_{\mathrm{blk}}$ | Bulk viscosity |
-| $\nu_{\mathrm{kin}}=\eta_{\mathrm{shr}}/\rho_{\mathrm{mass}}$ | Kinematic viscosity |
+| $\digamma_{\mathrm{kin}}=\eta_{\mathrm{shr}}/\rho_{\mathrm{mass}}$ | Kinematic viscosity |
 | $F_{\mathrm{rlh}}$ | Rayleigh dissipation function |
 | $p_{\mathrm{th}}$ | Thermodynamic pressure |
 | $s_{\mathrm{spc}},\ s_{\mathrm{ent}}$ | Specific entropy and entropy density |

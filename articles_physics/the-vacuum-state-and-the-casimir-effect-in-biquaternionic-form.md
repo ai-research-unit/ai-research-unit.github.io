@@ -67,17 +67,17 @@ A_\mu(x)=\int\!\frac{d^{3}k_\Phi}{(2\pi)^3}\sqrt{\frac{c}{2\omega_k}}\sum_{r=0}^
 $$
 with $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, $\omega_k=c\lvert\vec k_\Phi\rvert$ an angular frequency for the massless field, and $k\cdot x=\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega_k r'_t/c$. The normal-ordered Hamiltonian is
 $$
-:\!H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k_\Phi}{(2\pi)^3}\,\sigma_{\mathrm{met},r}\,h\nu_k\,a_{\mathrm{fop},r}^{\dagger}(\vec k_\Phi)a_{\mathrm{fop},r}(\vec k_\Phi),
+:\!H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k_\Phi}{(2\pi)^3}\,\sigma_{\mathrm{met},r}\,hf_{\mathrm{frq},k}\,a_{\mathrm{fop},r}^{\dagger}(\vec k_\Phi)a_{\mathrm{fop},r}(\vec k_\Phi),
 $$
 and the constant discarded in passing to the normal-ordered form is the zero-point energy.
 
-**Its value.** Reordering the modes produces, per mode, the contribution $\sum_r\sigma_{\mathrm{met},r}\,\tfrac12h\nu_k$. Since
+**Its value.** Reordering the modes produces, per mode, the contribution $\sum_r\sigma_{\mathrm{met},r}\,\tfrac12hf_{\mathrm{frq},k}$. Since
 $$
 \boxed{\;\sum_{r=0}^{3}\sigma_{\mathrm{met},r}=-1+1+1+1=2\;},
 $$
-the zero-point constant of the covariant field is that of **two** transverse modes, $h\nu_k$ per mode, and the free vacuum energy is the quartically divergent integral
+the zero-point constant of the covariant field is that of **two** transverse modes, $hf_{\mathrm{frq},k}$ per mode, and the free vacuum energy is the quartically divergent integral
 $$
-E_0=\sum_{r=0}^{3}\sigma_{\mathrm{met},r}\sum_{\text{modes}}\tfrac12h\nu_k=2\,V\!\int\!\frac{d^{3}k_\Phi}{(2\pi)^3}\,\tfrac12\frac{h}{2\pi}\,c\lvert\vec k_\Phi\rvert
+E_0=\sum_{r=0}^{3}\sigma_{\mathrm{met},r}\sum_{\text{modes}}\tfrac12hf_{\mathrm{frq},k}=2\,V\!\int\!\frac{d^{3}k_\Phi}{(2\pi)^3}\,\tfrac12\frac{h}{2\pi}\,c\lvert\vec k_\Phi\rvert
 \;\xrightarrow[\ \Lambda\ ]{}\;\frac{h\,c\,\Lambda^{4}}{16\pi \,\pi^{2}}\,V .
 $$
 The coefficient is the free-space density for two polarisations; the divergence is quartic and proportional to the volume $V$. This is the biquaternion transcription of the standard fact that the electromagnetic zero-point energy diverges as the fourth power of the cutoff. The Dirac parent is the mirror case: there the normal-ordering constant is *negative*,
@@ -221,7 +221,7 @@ $$
 \frac{E_{\mathrm{EM}}}{A}=2\cdot\Big(-\frac{\pi^{2}\,h\,c}{2880\pi \,a^{3}}\Big)=-\frac{\pi^{2}\,h\,c}{1440\pi \,a^{3}} .
 $$
 
-**From the indefinite metric.** In the covariant mode algebra the four polarisations carry the metric $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, and the zero-point constant is $\sum_r\sigma_{\mathrm{met},r}\,\tfrac12h\nu=2\cdot\tfrac12h\nu$. The timelike mode's negative sign is essential: summing four polarisations with a positive sign would give $4\cdot\tfrac12h\nu$, **double** the correct zero-point energy. The indefinite metric is not a technicality of the covariant gauge; it is what makes the mode count come out right.
+**From the indefinite metric.** In the covariant mode algebra the four polarisations carry the metric $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, and the zero-point constant is $\sum_r\sigma_{\mathrm{met},r}\,\tfrac12hf_{\mathrm{frq}}=2\cdot\tfrac12hf_{\mathrm{frq}}$. The timelike mode's negative sign is essential: summing four polarisations with a positive sign would give $4\cdot\tfrac12hf_{\mathrm{frq}}$, **double** the correct zero-point energy. The indefinite metric is not a technicality of the covariant gauge; it is what makes the mode count come out right.
 
 **From the algebra.** Both descriptions have the same home in the framework. The four polarization directions of the covariant treatment are the four directions $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ of the material sector, and the metric $\sigma_{\mathrm{met}}$ is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=|\vec q|^{2}-q_t^{2}$ of $\mathbb{B}_{\Phi}$, as *The Photon in Biquaternionic Form* establishes. The **two physical polarisations** are the plane in the vector part of $\mathbb{B}_{\Phi}$ orthogonal to the propagation direction $\vec u_\Phi$, with projector $P_{ij}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$. The factor of two is thus native: it is the dimension of the transverse plane fixed by the algebra's own biquaternion norm. What is **not** native is the **removal** of the timelike and longitudinal directions: the algebra supplies the indefinite metric and the transverse plane, but the subsidiary condition that discards the unphysical directions is imported, exactly as the canonical-quantisation article records.
 

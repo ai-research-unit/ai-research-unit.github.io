@@ -95,7 +95,7 @@ $$
 
 so that $\vec k_\Phi = k_{\Phi x} \vec e_x + k_{\Phi y} \vec e_y + k_{\Phi z} \vec e_z$ is a real quaternion. The exponential is a central element of $\mathbb{B}$, because its exponent is a purely imaginary scalar. Substitution gives
 
-$$i\,\frac{h}{2\pi}\,c\partial/\partial r'_t \tilde{Ξ}_{\vec k_\Phi} =h\nu\,\tilde{Ξ}_{\vec k_\Phi},
+$$i\,\frac{h}{2\pi}\,c\partial/\partial r'_t \tilde{Ξ}_{\vec k_\Phi} =hf_{\mathrm{frq}}\,\tilde{Ξ}_{\vec k_\Phi},
 \qquad
 H \tilde{Ξ}_{\vec k_\Phi} =\frac{h^{2}\,k_\Phi^{2}}{8\pi^{2}\,m}\,\tilde{Ξ}_{\vec k_\Phi},
 $$
@@ -103,7 +103,7 @@ $$
 so the equation is satisfied for every constant $\xi$ provided
 
 $$
-\boxed{\;h\nu=\frac{h^{2}\,k_\Phi^{2}}{8\pi^{2}\,m}
+\boxed{\;hf_{\mathrm{frq}}=\frac{h^{2}\,k_\Phi^{2}}{8\pi^{2}\,m}
 \qquad\Longleftrightarrow\qquad
 \omega(\vec k_\Phi) = \frac{c k_\Phi^2}{2\,k_m}\;}.
 $$

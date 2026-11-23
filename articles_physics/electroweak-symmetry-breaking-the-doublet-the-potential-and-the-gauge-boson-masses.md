@@ -39,35 +39,35 @@ Three requirements, and one doublet satisfies all three. A scalar sector that br
 The representation. One complex doublet of hypercharge $\tfrac12$,
 
 $$
-\varphi=\begin{pmatrix}\varphi^+\ \varphi^0\end{pmatrix},
+\omicron_{\mathrm{pot}}=\begin{pmatrix}\omicron_{\mathrm{pot}}^+\ \omicron_{\mathrm{pot}}^0\end{pmatrix},
 \qquad
-Y_\varphi=\tfrac12 ,
+Y_{\mathrm{hch}}=\tfrac12 ,
 $$
 
-which is four real fields. The hypercharge is not free here: it is fixed by the invariance of the Yukawa couplings, and [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) derives it from $-Y_{L_L}+Y_\varphi+Y_{e_R}=0$, that is $Y_\varphi=Y_{L_L}-Y_{e_R}=+\tfrac12$.
+which is four real fields. The hypercharge is not free here: it is fixed by the invariance of the Yukawa couplings, and [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) derives it from $-Y_{L_L}+Y_{\mathrm{hch}}+Y_{e_R}=0$, that is $Y_{\mathrm{hch}}=Y_{L_L}-Y_{e_R}=+\tfrac12$.
 
-The same object in the companion articles. [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) writes this doublet as $\xi_{\mathrm{scl}}$ with components ${\xi_{\mathrm{scl}}}^\pm$ and ${\xi_{\mathrm{scl}}}^0$, and [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html) writes the abelian scalar as $\tilde\Xi=\xi\,e_t$. The three names denote the same object at three levels of generality, and this article uses $\varphi$ throughout.
+The same object in the companion articles. [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) writes this doublet as $\xi_{\mathrm{scl}}$ with components ${\xi_{\mathrm{scl}}}^\pm$ and ${\xi_{\mathrm{scl}}}^0$, and [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html) writes the abelian scalar as $\tilde\Xi=\xi\,e_t$. The three names denote the same object at three levels of generality, and this article uses $\omicron_{\mathrm{pot}}$ throughout.
 
-Why a doublet of complex fields is four real fields. Each component is a complex number, so $2\times2=4$. The four are not independent in their charges: $\varphi^+$ and $\varphi^0$ each carry a real and an imaginary part, and the charges are $+1$ for both parts of $\varphi^+$ and $0$ for both parts of $\varphi^0$. The antiparticle of $\varphi^+$ is the field $\varphi^-=(\varphi^+)^*$, and it is not a fifth component.
+Why a doublet of complex fields is four real fields. Each component is a complex number, so $2\times2=4$. The four are not independent in their charges: $\omicron_{\mathrm{pot}}^+$ and $\omicron_{\mathrm{pot}}^0$ each carry a real and an imaginary part, and the charges are $+1$ for both parts of $\omicron_{\mathrm{pot}}^+$ and $0$ for both parts of $\omicron_{\mathrm{pot}}^0$. The antiparticle of $\omicron_{\mathrm{pot}}^+$ is the field $\omicron_{\mathrm{pot}}^-=(\omicron_{\mathrm{pot}}^+)^*$, and it is not a fifth component.
 
 ## The Potential and Its Minimum
 
 The potential. The most general potential invariant under the gauge group and renormalisable, given one doublet, is
 
 $$
-V(\varphi)=-\mu^2\,\varphi^{\dagger}\varphi+\lambda\left(\varphi^{\dagger}\varphi\right)^2 ,
+V(\omicron_{\mathrm{pot}})=-\mu^2\,\omicron_{\mathrm{pot}}^{\dagger}\omicron_{\mathrm{pot}}+\lambda\left(\omicron_{\mathrm{pot}}^{\dagger}\omicron_{\mathrm{pot}}\right)^2 ,
 \qquad
 \lambda>0 ,
 $$
 
-with the two parameters of the table of article 1. Only $\varphi^\dagger\varphi$ can appear: any other invariant would need more than one power of the doublet in a way the group does not allow, and the audit of [The Standard Model Lagrangian Assembled](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html) checks that.
+with the two parameters of the table of article 1. Only $\omicron_{\mathrm{pot}}^\dagger\omicron_{\mathrm{pot}}$ can appear: any other invariant would need more than one power of the doublet in a way the group does not allow, and the audit of [The Standard Model Lagrangian Assembled](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html) checks that.
 
-Why the sign of $\mu^2$ is written this way. A positive $\mu^2$ makes the origin a maximum and pushes the minimum away from it. A negative $\mu^2$ would make the origin the minimum, the vacuum would be $\langle\varphi\rangle=0$, and the group would be unbroken. The sign is the difference between a theory with masses and a theory without.
+Why the sign of $\mu^2$ is written this way. A positive $\mu^2$ makes the origin a maximum and pushes the minimum away from it. A negative $\mu^2$ would make the origin the minimum, the vacuum would be $\langle\omicron_{\mathrm{pot}}\rangle=0$, and the group would be unbroken. The sign is the difference between a theory with masses and a theory without.
 
-The minimum is a three-sphere. The potential depends on $\varphi$ through one non-negative number, so it is invariant under the full $SU(2)$ acting on the doublet and under the hypercharge phase. Its minima form the surface
+The minimum is a three-sphere. The potential depends on $\omicron_{\mathrm{pot}}$ through one non-negative number, so it is invariant under the full $SU(2)$ acting on the doublet and under the hypercharge phase. Its minima form the surface
 
 $$
-\varphi^{\dagger}\varphi=\frac{v^2}{2},
+\omicron_{\mathrm{pot}}^{\dagger}\omicron_{\mathrm{pot}}=\frac{v^2}{2},
 \qquad
 v^2=\frac{\mu^2}{\lambda} ,
 $$
@@ -89,33 +89,33 @@ Where the identification stops. The labelling earns its keep only if a rotor act
 
 The numbers are reproduced and the carrier is not. Three Goldstones and one surviving circle follow from the ideal, and the same three and one are what the Standard Model doublet gives. The carriers the rotor reaches by left multiplication are the algebra itself, the two minimal left ideals, and the centre; the ideals carry spin one-half, the centre is fixed, and neither is a spin-zero carrier on which the rotor acts non-trivially. That is the gap left visible in [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html), and what the two lines above add is that the gap is a computation on the sector split rather than a remark: the sphere the doublet traces is the rotor's own manifold, and the only carrier that carries the rotor action is the one that carries spin one-half.
 
-**What this does not claim.** The doublet is a carrier choice and is imported, not derived; the potential, $\lambda$, $v$ and the normalisation of $\varphi$ are imported with it; unitary gauge is not $\tilde U=e_t$, because $e_t$ is the vacuum of the central scalar and not of the ideal. The identification of $S^3$ with $\mathrm{SU}(2)$ is a statement about a manifold, and it is the whole of what the paragraph above establishes.
+**What this does not claim.** The doublet is a carrier choice and is imported, not derived; the potential, $\lambda$, $v$ and the normalisation of $\omicron_{\mathrm{pot}}$ are imported with it; unitary gauge is not $\tilde U=e_t$, because $e_t$ is the vacuum of the central scalar and not of the ideal. The identification of $S^3$ with $\mathrm{SU}(2)$ is a statement about a manifold, and it is the whole of what the paragraph above establishes.
 
 The choice is the breaking. Take
 
 $$
-\langle\varphi\rangle=\frac{1}{\sqrt2}\begin{pmatrix}0\ v\end{pmatrix},
+\langle\omicron_{\mathrm{pot}}\rangle=\frac{1}{\sqrt2}\begin{pmatrix}0\ v\end{pmatrix},
 \qquad
-\langle\varphi^{\dagger}\varphi\rangle=\frac{v^2}{2} .
+\langle\omicron_{\mathrm{pot}}^{\dagger}\omicron_{\mathrm{pot}}\rangle=\frac{v^2}{2} .
 $$
 
 The charged component is set to zero and the neutral one takes the whole value. That choice uses the $SU(2)$ freedom to rotate the doublet, and the phase freedom to make the lower component real. Neither is a loss of generality: the three-sphere is transitive under the group, so every minimum is equivalent to this one.
 
-What the vacuum is not invariant under. The generator $T_3$ does not annihilate it, since $\sigma_3\binom{0}{1}=-\binom{0}{1}$; the hypercharge generator does not either, since $Y_\varphi=\tfrac12$. Their sum does:
+What the vacuum is not invariant under. The generator $T_3$ does not annihilate it, since $\sigma_3\binom{0}{1}=-\binom{0}{1}$; the hypercharge generator does not either, since $Y_{\mathrm{hch}}=\tfrac12$. Their sum does:
 
 $$
-Q\,\langle\varphi\rangle=\left(T_3+Y\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v\end{pmatrix}
-=\left(-\tfrac12+\tfrac12\right)\langle\varphi\rangle=0 .
+Q\,\langle\omicron_{\mathrm{pot}}\rangle=\left(T_3+Y\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v\end{pmatrix}
+=\left(-\tfrac12+\tfrac12\right)\langle\omicron_{\mathrm{pot}}\rangle=0 .
 $$
 
 That single line is the whole of the alignment: the charge operator annihilates the vacuum, so the electromagnetic group survives, and the three generators orthogonal to it do not, so the other three gauge directions acquire mass.
 
-The stationarity check. The minimum conditions $\partial V/\partial\varphi=0$ give $-\mu^2+2\lambda\varphi^\dagger\varphi=0$, which at the minimum reads $\mu^2=\lambda v^2$. The potential energy at the minimum is $V_{\min}=-\mu^4/(4\lambda)=-\lambda v^4/4=-M_H^2v^2/8$, a negative constant. That constant is the cosmological constant problem in its original form: the model sets the zero of energy at the minimum and puts the vacuum at $-M_H^2v^2/8$, and nothing in it cancels the result against the observed dark-energy density. [Cosmology in the Biquaternion Framework: The Carried Metric and the Missing Source](cosmology-in-the-biquaternion-framework-the-carried-flrw-metric-and-the-missing-source.html) records the logical status of $\Lambda$ and why neither of its standard readings makes it a prediction; the constant plays no part in the masses.
+The stationarity check. The minimum conditions $\partial V/\partial\omicron_{\mathrm{pot}}=0$ give $-\mu^2+2\lambda\omicron_{\mathrm{pot}}^\dagger\omicron_{\mathrm{pot}}=0$, which at the minimum reads $\mu^2=\lambda v^2$. The potential energy at the minimum is $V_{\min}=-\mu^4/(4\lambda)=-\lambda v^4/4=-M_H^2v^2/8$, a negative constant. That constant is the cosmological constant problem in its original form: the model sets the zero of energy at the minimum and puts the vacuum at $-M_H^2v^2/8$, and nothing in it cancels the result against the observed dark-energy density. [Cosmology in the Biquaternion Framework: The Carried Metric and the Missing Source](cosmology-in-the-biquaternion-framework-the-carried-flrw-metric-and-the-missing-source.html) records the logical status of $\Lambda$ and why neither of its standard readings makes it a prediction; the constant plays no part in the masses.
 
 The shift. Write the field as the vacuum plus an excitation,
 
 $$
-\varphi=\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
+\omicron_{\mathrm{pot}}=\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
 $$
 
 with $h$ real. Substituting into the potential and expanding gives
@@ -135,28 +135,28 @@ The three parameters are two. The pair $(\mu^2,\lambda)$ and the pair $(v,M_H)$ 
 The derivative. With the normalisation of article 2,
 
 $$
-D_\mu\varphi=\frac{\partial\varphi}{\partial R_\mu}+i\,g\sum_a\tau_aW_{a,\mu}\varphi+i\,g_{\mathrm Y}Y_\varphi B_\mu\varphi ,
+D_\mu\omicron_{\mathrm{pot}}=\frac{\partial\omicron_{\mathrm{pot}}}{\partial R_\mu}+i\,g\sum_a\tau_aW_{a,\mu}\omicron_{\mathrm{pot}}+i\,g_{\mathrm Y}Y_{\mathrm{hch}} B_\mu\omicron_{\mathrm{pot}} ,
 \qquad
 \tau_a=\tfrac12\sigma_a ,
 $$
 
 and the mass term comes from the scalar kinetic term evaluated at the vacuum, where the derivative reduces to the connection alone.
 
-The four actions on the vacuum. With $\varphi_0=\frac{1}{\sqrt2}\binom{0}{v}$ and $Y_\varphi=\tfrac12$,
+The four actions on the vacuum. With $\omicron_{\mathrm{pot},0}=\frac{1}{\sqrt2}\binom{0}{v}$ and $Y_{\mathrm{hch}}=\tfrac12$,
 
 $$
-g\tau_1\varphi_0=\frac{g}{2}\varphi_0^{\uparrow},
+g\tau_1\omicron_{\mathrm{pot},0}=\frac{g}{2}\omicron_{\mathrm{pot},0}^{\uparrow},
 \qquad
-g\tau_2\varphi_0=\frac{i\,g}{2}\varphi_0^{\uparrow},
+g\tau_2\omicron_{\mathrm{pot},0}=\frac{i\,g}{2}\omicron_{\mathrm{pot},0}^{\uparrow},
 \qquad
-g\tau_3\varphi_0=-\frac{g}{2}\varphi_0 ,
+g\tau_3\omicron_{\mathrm{pot},0}=-\frac{g}{2}\omicron_{\mathrm{pot},0} ,
 \qquad
-g_{\mathrm Y}Y_\varphi\varphi_0=+\frac{g_{\mathrm Y}}{2}\varphi_0 ,
+g_{\mathrm Y}Y_{\mathrm{hch}}\omicron_{\mathrm{pot},0}=+\frac{g_{\mathrm Y}}{2}\omicron_{\mathrm{pot},0} ,
 $$
 
-where $\varphi_0^{\uparrow}=\frac{1}{\sqrt2}\binom{v}{0}$ is the same doublet with the entries exchanged. The first two produce the charged directions, and the last two produce the neutral one with opposite signs.
+where $\omicron_{\mathrm{pot},0}^{\uparrow}=\frac{1}{\sqrt2}\binom{v}{0}$ is the same doublet with the entries exchanged. The first two produce the charged directions, and the last two produce the neutral one with opposite signs.
 
-The kinetic term at the vacuum. The corpus's sign rule makes the term $-\sum_\mu(D_\mu\varphi)^\dagger(D_\mu\varphi)$, and at the vacuum the derivative carries no spacetime index of its own, so the term is a quadratic form in the four gauge fields,
+The kinetic term at the vacuum. The corpus's sign rule makes the term $-\sum_\mu(D_\mu\omicron_{\mathrm{pot}})^\dagger(D_\mu\omicron_{\mathrm{pot}})$, and at the vacuum the derivative carries no spacetime index of its own, so the term is a quadratic form in the four gauge fields,
 
 $$
 \mathcal{L}_{\mathrm{mass}}=-\frac{v^2}{8}\left[g^2\left(W_{1,\mu}\right)^2+g^2\left(W_{2,\mu}\right)^2+\left(gW_{3,\mu}-g_{\mathrm Y}B_\mu\right)^2\right] .
@@ -261,20 +261,20 @@ A massive vector has three polarisations: two transverse and one longitudinal.
 
 **The balance is $12=12$, and it is not automatic.** The equality holds because exactly three scalar components ceased to be independent fields and exactly three gauge polarisations were gained. The two events are one event, seen from two sides. Had the group been broken to nothing, four gauge fields would be massive and no photon would survive, and the count would still balance — the count does not determine the pattern, only its arithmetic.
 
-Where each component went. The three eaten components are the two real parts of $\varphi^+$ and the imaginary part of $\varphi^0$. The fourth, the real part of $\varphi^0$ after the shift, is $h$. The identification is worth writing because it fixes which field is which:
+Where each component went. The three eaten components are the two real parts of $\omicron_{\mathrm{pot}}^+$ and the imaginary part of $\omicron_{\mathrm{pot}}^0$. The fourth, the real part of $\omicron_{\mathrm{pot}}^0$ after the shift, is $h$. The identification is worth writing because it fixes which field is which:
 
-| Component of $\varphi$ | Real fields | Charge | Fate |
+| Component of $\omicron_{\mathrm{pot}}$ | Real fields | Charge | Fate |
 |---|---|---|---|
-| $\varphi^+$ | $2$ | $+1$ | the charged Goldstones, longitudinal $W^\pm$ |
-| $\mathrm{Im}\,\varphi^0$ | $1$ | $0$ | the neutral Goldstone, longitudinal $Z$ |
-| $\mathrm{Re}\,\varphi^0$ after the shift | $1$ | $0$ | the physical scalar $h$ |
+| $\omicron_{\mathrm{pot}}^+$ | $2$ | $+1$ | the charged Goldstones, longitudinal $W^\pm$ |
+| $\mathrm{Im}\,\omicron_{\mathrm{pot}}^0$ | $1$ | $0$ | the neutral Goldstone, longitudinal $Z$ |
+| $\mathrm{Re}\,\omicron_{\mathrm{pot}}^0$ after the shift | $1$ | $0$ | the physical scalar $h$ |
 
 The number of Goldstones equals the number of broken generators. The group has four generators and the surviving group has one, so three are broken, and three is the number of eaten components. This is the Goldstone theorem in its counting form, and the equality is the content of the previous table. The abelian case of [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html) has one broken generator and one eaten mode, and the two articles are the same argument at two sizes.
 
 The would-be Goldstones are gauge directions. In a generic gauge the doublet is
 
 $$
-\varphi=\exp\left(i\sum_a\theta_{\mathrm{gld},a}\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
+\omicron_{\mathrm{pot}}=\exp\left(i\sum_a\theta_{\mathrm{gld},a}\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
 $$
 
 and the three fields $\xi_a$ are the would-be Goldstones. The angle is $\theta_{\mathrm{gld},a}=\xi_a/v$, a real Goldstone field over the real vacuum expectation value. A gauge transformation with parameter $\Gamma_a=-\frac{2}{gv}\xi_a$ removes them, at the price of shifting the gauge fields by $\partial\xi/\partial R_\mu$. The combination that is gauge invariant is $W_{a,\mu}+\frac{2}{gv}\partial\xi_a/\partial R_\mu$, and it is that combination which carries the mass. The Goldstone is not destroyed: it becomes the longitudinal part of the field that absorbed it.
@@ -306,7 +306,7 @@ g_{hhWW}=\frac{2M_W^2}{v^2}=\frac{g^2}{2} ,
 g_{hhZZ}=\frac{2M_Z^2}{v^2}=\frac{g^2+g_{\mathrm Y}^2}{2} .
 $$
 
-The proportionality is not an extra assumption. It follows from the fact that the mass and the coupling both come from the same term $|D_\mu\varphi|^2$, expanded to different orders in $h$: the mass is the second-order term at $h=0$, and the coupling is the third-order term. The identity $g_{hWW}=g_{\mathrm{os}}M_W$ holds with the coupling $g_{\mathrm{os}}=2M_W/v=0.6529$ that belongs to the same scheme as $M_W$, and not with the $\overline{\mathrm{MS}}$ value $0.6517$ of §*The Numbers*; the two differ in the third digit, and the table below uses the measured mass.
+The proportionality is not an extra assumption. It follows from the fact that the mass and the coupling both come from the same term $|D_\mu\omicron_{\mathrm{pot}}|^2$, expanded to different orders in $h$: the mass is the second-order term at $h=0$, and the coupling is the third-order term. The identity $g_{hWW}=g_{\mathrm{os}}M_W$ holds with the coupling $g_{\mathrm{os}}=2M_W/v=0.6529$ that belongs to the same scheme as $M_W$, and not with the $\overline{\mathrm{MS}}$ value $0.6517$ of §*The Numbers*; the two differ in the third digit, and the table below uses the measured mass.
 
 The scalar's self-couplings. Expanding the potential to fourth order,
 
@@ -440,7 +440,7 @@ $$
 
 For one doublet with $T=\tfrac12$ and $T_3=-\tfrac12$ the numerator is $v^2\left(\tfrac34-\tfrac14\right)=\tfrac12v^2$ and the denominator is $2v^2\tfrac14=\tfrac12v^2$, giving one. For one triplet with $T=1$ and $T_3=-1$ the numerator is $v^2(2-1)=v^2$ and the denominator $2v^2$, giving one half. A triplet therefore pulls $\rho$ below one, and the measurement bounds its vacuum expectation value.
 
-Why $\rho=1$ is structural. The doublet, written as a $2\times2$ matrix $\Phi=(\tilde\varphi,\varphi)$ whose columns are the doublet and its conjugate, has a potential that depends only on $\mathrm{tr}(\Phi^\dagger\Phi)$. The potential therefore has an $SU(2)_L\times SU(2)_R$ symmetry larger than the gauged one, and the vacuum $\langle\Phi\rangle\propto\mathrm I$ breaks it to the diagonal $SU(2)_V$. That residual symmetry is custodial, and it is what makes the three gauge bosons' masses related.
+Why $\rho=1$ is structural. The doublet, written as a $2\times2$ matrix $\Phi=(\tilde\omicron_{\mathrm{pot}},\omicron_{\mathrm{pot}})$ whose columns are the doublet and its conjugate, has a potential that depends only on $\mathrm{tr}(\Phi^\dagger\Phi)$. The potential therefore has an $SU(2)_L\times SU(2)_R$ symmetry larger than the gauged one, and the vacuum $\langle\Phi\rangle\propto\mathrm I$ breaks it to the diagonal $SU(2)_V$. That residual symmetry is custodial, and it is what makes the three gauge bosons' masses related.
 
 **The hypercharge breaks custodial symmetry explicitly.** The gauged hypercharge is the third generator of $SU(2)_R$, so switching it on distinguishes the third direction from the other two. The tree-level $\rho=1$ survives because the vacuum is custodially invariant; the breaking appears at one loop, in the difference between the $W$ and $Z$ self-energies, and it is one of the corrections inside $\delta r$.
 
@@ -480,7 +480,7 @@ What a derivation would need. A scalar in the algebra's defining module, a hyper
 
 ## Summary
 
-The electroweak group is broken to $\mathrm{U}(1)_{\mathrm{em}}$ by one complex doublet of hypercharge $\tfrac12$ with the potential $-\mu^2\varphi^\dagger\varphi+\lambda(\varphi^\dagger\varphi)^2$. The minima form a three-sphere $\varphi^\dagger\varphi=v^2/2$ with $v^2=\mu^2/\lambda$, and the vacuum $\langle\varphi\rangle=\frac{1}{\sqrt2}(0,v)^{T}$ is annihilated by $Q=T_3+Y$ and by no other generator. That single line is why the photon stays massless and the other three directions acquire mass.
+The electroweak group is broken to $\mathrm{U}(1)_{\mathrm{em}}$ by one complex doublet of hypercharge $\tfrac12$ with the potential $-\mu^2\omicron_{\mathrm{pot}}^\dagger\omicron_{\mathrm{pot}}+\lambda(\omicron_{\mathrm{pot}}^\dagger\omicron_{\mathrm{pot}})^2$. The minima form a three-sphere $\omicron_{\mathrm{pot}}^\dagger\omicron_{\mathrm{pot}}=v^2/2$ with $v^2=\mu^2/\lambda$, and the vacuum $\langle\omicron_{\mathrm{pot}}\rangle=\frac{1}{\sqrt2}(0,v)^{T}$ is annihilated by $Q=T_3+Y$ and by no other generator. That single line is why the photon stays massless and the other three directions acquire mass.
 
 The mass matrix in the basis $(W_1,W_2,W_3,B)$ is $\tfrac{v^2}{4}$ times a block-diagonal matrix with the charged block $g^2\mathrm I$ and the neutral block $\binom{g^2\ -gg_{\mathrm Y}}{-gg_{\mathrm Y}\ \ g_{\mathrm Y}^2}$. Its eigenvalues are $g^2v^2/4$ twice, zero once and $(g^2+g_{\mathrm Y}^2)v^2/4$ once, giving $M_W=gv/2$, $M_\gamma=0$ and $M_Z=\sqrt{g^2+g_{\mathrm Y}^2}\,v/2=M_W/\cos\theta_W$. The zero eigenvalue is structural: the neutral block's determinant vanishes identically, because the direction along which $Q$ annihilates the vacuum is one-dimensional. The eigenvectors are the photon $A=\sin\theta_WW_3+\cos\theta_WB$ and the $Z=\cos\theta_WW_3-\sin\theta_WB$, so the mixing angle is the diagonalising angle and not an independent parameter. The trace sum rule $2M_W^2+M_Z^2=\tfrac{v^2}{4}(3g^2+g_{\mathrm Y}^2)$ is exact at tree level and closes on the numbers.
 
@@ -496,13 +496,13 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 
 | Symbol | Meaning |
 |---|---|
-| $\varphi$, $\varphi^+$, $\varphi^0$ | The scalar doublet of hypercharge $\tfrac12$ and its components |
+| $\omicron_{\mathrm{pot}}$, $\omicron_{\mathrm{pot}}^+$, $\omicron_{\mathrm{pot}}^0$ | The scalar doublet of hypercharge $\tfrac12$ and its components |
 | $\xi_{\mathrm{scl}}$, $\tilde\Xi=\xi e_t$ | The same object in the W/Z and Higgs articles |
-| $\tilde\varphi$ | The conjugate doublet of hypercharge $-\tfrac12$ |
+| $\tilde\omicron_{\mathrm{pot}}$ | The conjugate doublet of hypercharge $-\tfrac12$ |
 | $\mu^2$, $\lambda$ | The two parameters of the potential; $\mu^2=\lambda v^2$ |
-| $v$ | Vacuum expectation value, $\sqrt2\langle\varphi^0\rangle=246.2197$ GeV |
+| $v$ | Vacuum expectation value, $\sqrt2\langle\omicron_{\mathrm{pot}}^0\rangle=246.2197$ GeV |
 | $h$ | The radial excitation of the neutral component |
-| $\varphi_0$ | The vacuum $\frac{1}{\sqrt2}(0,v)^{T}$ |
+| $\omicron_{\mathrm{pot},0}$ | The vacuum $\frac{1}{\sqrt2}(0,v)^{T}$ |
 | $\tau_a=\sigma_a/2$ | Weak-isospin generators in the doublet |
 | $M^2$ | The $4\times4$ squared-mass matrix in the basis $(W_1,W_2,W_3,B)$ |
 | $M_W$, $M_Z$, $M_H$ | The three masses; $M_Z=M_W/\cos\theta_W$, $M_H=\sqrt{2\lambda}\,v$ |
@@ -517,7 +517,7 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 
 ## Further Reading
 
-- [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). Why $Y_\varphi=\tfrac12$, which this article takes as given.
+- [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). Why $Y_{\mathrm{hch}}=\tfrac12$, which this article takes as given.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The scalar sector in the assembled sum, and the sign rule that fixes the kinetic term.
 - [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html). The abelian case in full, whose gap this article fills for the electroweak group.
 - [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html). The mixing and the masses, here derived from the mass matrix.

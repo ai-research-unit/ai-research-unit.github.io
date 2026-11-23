@@ -247,20 +247,20 @@ the stated nonrelativistic limit. The chain is a derivation of the limit from th
 **The bilinears.** The sixteen bilinears fall into five shapes — scalar, vector, tensor, axial vector, pseudoscalar — and the chirality basis operator pairs the two that carry one free index and the two that carry two: the vector with the axial vector, the tensor with the pseudotensor. The four that enter here are
 
 $$
-\text{(vector)}\ \tilde{Ξ}^*i\,\bigl(i\,e_\mu\,\tilde{Ξ}\,\vec e_{\nu(\mu)}\bigr)\vec e_x,\qquad
+\text{(vector)}\ \tilde{Ξ}^*i\,\bigl(i\,e_\mu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}\bigr)\vec e_x,\qquad
 \text{(tensor)}\ \tilde{Ξ}^*i\,\bigl(\mathcal{G}_{\mu\nu}\tilde{Ξ}\bigr)\vec e_x,
 $$
 
 $$
-\text{(axial)}\ \tilde{Ξ}^*i\,\bigl(i\,e_\mu\,\tilde{Ξ}\,\vec e_{\nu(\mu)}\vec e_z\bigr)\vec e_x,\qquad
+\text{(axial)}\ \tilde{Ξ}^*i\,\bigl(i\,e_\mu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}\vec e_z\bigr)\vec e_x,\qquad
 \text{(pseudotensor)}\ \tilde{Ξ}^*i\,\bigl(\mathcal{O}_{\mu\nu}\tilde{Ξ}\bigr)\vec e_x .
 $$
 
-Each is the field, the element the insertion multiplies it by, the unit $\vec e_{\nu(\mu)}$ that *Matrix Representations Conventions* attaches to the index, and the right factor $\vec e_x$ of the Dirac adjoint; the axial pair is the same product with the chirality factor appended, and in the last two the pair index decides which member of its family appears: the timelike pair gives the EDM insertion, the spatial pair the pseudotensor. A bilinear with free indices has no parity of its own, since its timelike and its spatial components transform oppositely; the parities are therefore those of the gauge-invariant operators, bilinear times field:
+Each is the field, the element the insertion multiplies it by, the unit $\vec e_{\mathrm{spt}(\mu)}$ that *Matrix Representations Conventions* attaches to the index, and the right factor $\vec e_x$ of the Dirac adjoint; the axial pair is the same product with the chirality factor appended, and in the last two the pair index decides which member of its family appears: the timelike pair gives the EDM insertion, the spatial pair the pseudotensor. A bilinear with free indices has no parity of its own, since its timelike and its spatial components transform oppositely; the parities are therefore those of the gauge-invariant operators, bilinear times field:
 
 | Operator | Bilinear | $\mathbf{P}$ | $\mathbf{T}$ | $\mathbf{C}$ | $\mathbf{CP}$ | Insertion |
 |---|---|---|---|---|---|---|
-| $\tilde{Ξ}^*i(i e_\mu\tilde{Ξ}\vec e_{\nu(\mu)})\vec e_x\,A_\mu$ (charge) | vector | even | even | even | even | $i\,e_\mu$ on the left, $i\vec e_{\nu(\mu)}$ on the right: Hermitian for $\mu=0$, anti-Hermitian for $\mu=k$ |
+| $\tilde{Ξ}^*i(i e_\mu\tilde{Ξ}\vec e_{\mathrm{spt}(\mu)})\vec e_x\,A_\mu$ (charge) | vector | even | even | even | even | $i\,e_\mu$ on the left, $i\vec e_{\mathrm{spt}(\mu)}$ on the right: Hermitian for $\mu=0$, anti-Hermitian for $\mu=k$ |
 | $\tilde{Ξ}^*i(\mathcal{G}_{\mu\nu}\tilde{Ξ})\vec e_x\,F_{\mu\nu}$ (magnetic) | tensor | even | even | even | even | $\mathcal{G}_{ij}$, Hermitian |
 | $i\,\tilde{Ξ}^*i(\mathcal{O}_{\mu\nu}\tilde{Ξ})\vec e_x\,F_{\mu\nu}$ (EDM) | pseudotensor | odd | odd | even | odd | $\mathcal{O}_{0\eta}$, anti-Hermitian |
 
@@ -276,7 +276,7 @@ The EDM is the pseudotensor bilinear, the tensor times the chirality basis opera
 
 $$
 \Gamma_\mu(p_2,p_1)\,\tilde{Ξ}
-= i\,e_\mu\,\tilde{Ξ}\,\vec e_{\nu(\mu)}\,F_1(k_\Phi^2)
+= i\,e_\mu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}\,F_1(k_\Phi^2)
 +\frac{i}{2\,m\,c}\,k_{\Phi\nu}\,\mathcal{G}_{\mu\nu}\tilde{Ξ}\,F_2(k_\Phi^2)
 +\frac{i}{2\,m\,c}\,k_{\Phi\nu}\,\mathcal{O}_{\mu\nu}\tilde{Ξ}\,F_3(k_\Phi^2) + \cdots ,
 $$
@@ -484,7 +484,7 @@ The form-factor decomposition
 
 $$
 \Gamma_\mu(p_2,p_1)\,\tilde{Ξ}
-= i\,e_\mu\,\tilde{Ξ}\,\vec e_{\nu(\mu)}\,F_1
+= i\,e_\mu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}\,F_1
 +\frac{i}{2\,m\,c}\,k_{\Phi\nu}\,\mathcal{G}_{\mu\nu}\tilde{Ξ}\,F_2
 +\frac{i}{2\,m\,c}\,k_{\Phi\nu}\,\mathcal{O}_{\mu\nu}\tilde{Ξ}\,F_3 + \cdots
 $$

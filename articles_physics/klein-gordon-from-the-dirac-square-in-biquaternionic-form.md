@@ -265,7 +265,7 @@ $$
 \omega^2 = \vec k_\Phi^2c^2 + k_m^{2}c^2,
 $$
 
-which is $E^2 = \vec p^2c^2 + m^2c^4$ under $E =h\nu$, $\vec p =\frac{h}{2\pi}\,\vec k_\Phi$ and $k_m=\frac{2\pi mc}{h}$. The sign is the series sign and is consistent with the Klein–Gordon article: the operator $\Box_\Phi - k_m^{2}$ vanishes on the same shell on which the biquaternion norm equals $-k_m^{2}$.
+which is $E^2 = \vec p^2c^2 + m^2c^4$ under $E =hf_{\mathrm{frq}}$, $\vec p =\frac{h}{2\pi}\,\vec k_\Phi$ and $k_m=\frac{2\pi mc}{h}$. The sign is the series sign and is consistent with the Klein–Gordon article: the operator $\Box_\Phi - k_m^{2}$ vanishes on the same shell on which the biquaternion norm equals $-k_m^{2}$.
 
 The kernel of the square is larger than the kernel of the pair, and the difference is the information the square discards. For a fixed three-momentum $\vec p$, a **scalar** field obeying the Klein–Gordon equation has a two-dimensional complex solution space, spanned by the positive- and negative-frequency modes $\exp(\mp i\theta_{\mathrm{pwp}})$. A biquaternion field has four complex coefficients, and $(\Box_\Phi - k_m^{2})$ acts coefficient by coefficient without mixing them, so the same pair of modes occurs once for each coefficient: an eight-dimensional complex solution space at fixed $\vec p$. The pair carries two such fields, so its second-order solution space at fixed $\vec p$ is sixteen-dimensional.
 

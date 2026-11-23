@@ -118,13 +118,13 @@ Because the determinant carries $k_m^{2}$ as a factor, the longitudinal mode's p
 
 $\mathcal{F}$ is a square of a form linear in $\pi_t$ and $\mathcal{M}$ is independent of $\pi_t$; the resulting polynomial in $\omega$ is quadratic. So every value of the other variables corresponds to two frequencies, and the pair is the particle–antiparticle pair.
 
-The form depends on $\pi_t=h\nu/c+\varkappa\varphi$ quadratically, so it is even under
+The form depends on $\pi_t=hf_{\mathrm{frq}}/c+\varkappa\omicron_{\mathrm{pot}}$ quadratically, so it is even under
 
 $$
-\omega\longmapsto-\omega-\frac{2\pi 2\varkappa c\,\varphi}{h} ,
+\omega\longmapsto-\omega-\frac{2\pi 2\varkappa c\,\omicron_{\mathrm{pot}}}{h} ,
 $$
 
-a reflection about $\omega=-\frac{2\pi \varkappa c\varphi}{h}$ rather than about zero. A constant scalar potential therefore moves the axis of the two-valued inversion, which is the frequency-space form of "a constant potential shifts every energy".
+a reflection about $\omega=-\frac{2\pi \varkappa c\omicron_{\mathrm{pot}}}{h}$ rather than about zero. A constant scalar potential therefore moves the axis of the two-valued inversion, which is the frequency-space form of "a constant potential shifts every energy".
 
 A first-order theory's form is linear in the frequency and its inversion is single-valued; the Dirac variational companion's inversion is of that kind. The Proca form is degree two, so its inversion is degree two, and the article states the degree rather than the analogy.
 
@@ -247,7 +247,7 @@ The constraint is a determination: $[kA]=0$ gives $a_t'=\vec k_\Phi\cdot\vec a/k
 
 The temporal coefficient is $\tfrac12(\lvert\vec\pi\rvert^{2}+k_m^{2})$, with no $\pi_t^{2}$: $1.065000000$ at $\pi_t=0.9,\,1.6,\,2.4$ while the first spatial coefficient moves from $0.060$ to $2.535$. The primary constraint survives the coupling, because $F_{0\eta}$ contains no $\partial_0A_0$, and the count is four minus one in both theories.
 
-The charge carries no mass and the energy carries $k_m^{2}$: the charge's symbol is $-i\pi_\mu$ times a bilinear and the mass is not in the operator; the trace is $3\pi^{2}-4k_m^{2}$, which is $-k_m^{2}$ on the shell. The form is quadratic in the frequency, so the Legendre inversion is two-valued, and with a connection the two roots are reflections about $\omega=-\frac{2\pi \varkappa c\varphi}{h}$ rather than about zero.
+The charge carries no mass and the energy carries $k_m^{2}$: the charge's symbol is $-i\pi_\mu$ times a bilinear and the mass is not in the operator; the trace is $3\pi^{2}-4k_m^{2}$, which is $-k_m^{2}$ on the shell. The form is quadratic in the frequency, so the Legendre inversion is two-valued, and with a connection the two roots are reflections about $\omega=-\frac{2\pi \varkappa c\omicron_{\mathrm{pot}}}{h}$ rather than about zero.
 
 ## Summary of Notation
 
@@ -264,7 +264,7 @@ The charge carries no mass and the energy carries $k_m^{2}$: the charge's symbol
 | $\tfrac12k_m^{2}(A\!\cdot\!A)$ | The longitudinal coefficient; magnitude $0.245000000$ at $k_m=0.7$ |
 | $\tfrac12(\lvert\vec\pi\rvert^{2}+k_m^{2})$ | The coefficient of $A_0^{2}$; no $\pi_t^{2}$ |
 | $3\pi^{2}-4k_m^{2}$ | The symbol's trace; $-k_m^{2}$ on the shell |
-| $\omega\mapsto-\omega-\frac{2\pi 2\varkappa c\varphi}{h}$ | The reflection the form is even under |
+| $\omega\mapsto-\omega-\frac{2\pi 2\varkappa c\omicron_{\mathrm{pot}}}{h}$ | The reflection the form is even under |
 
 ## Further Reading
 

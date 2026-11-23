@@ -37,8 +37,8 @@ $$
 has the Hamiltonian $H(r'_t) = -\vec\mu\cdot\vec B(r'_t)$ with $\vec\mu = \gamma\vec S$. In the biquaternion algebra the spin operator is $\tilde S_{\Psi} =\frac{h}{4\pi}i \vec e_\eta$ along $\vec e_\eta$, and the Hamiltonian is the Hermitian element
 
 $$
-\tilde H_\Psi(r'_t) = -\frac{h\nu_{0}}{2}\,i\vec e_z
--\frac{h\nu_{1}}{2}\left(i\vec e_x\cos(\omega r'_t/c) - i\vec e_y\sin(\omega r'_t/c)\right),
+\tilde H_\Psi(r'_t) = -\frac{hf_{\mathrm{frq},0}}{2}\,i\vec e_z
+-\frac{hf_{\mathrm{frq},1}}{2}\left(i\vec e_x\cos(\omega r'_t/c) - i\vec e_y\sin(\omega r'_t/c)\right),
 \qquad
 \omega_0 = \gamma B_0, \quad \omega_1 = \gamma B_1 .
 $$
@@ -49,7 +49,7 @@ The choice of the $-\vec u_y$ sense for the second transverse component is the o
 
 ### The Larmor Precession as a Rotor
 
-With $B_1 = 0$ the propagator is $\tilde u_0(r'_t) = \exp(-i\theta_{\mathrm{evo}})$ with $\tilde{H}_{\Psi,0} = -\frac{h\nu_{0}}{2}i\vec e_z$. Since $-\frac{2\pi i H_{0}}{h}= \tfrac{\omega_0}{2}(i\cdot i\vec e_z) = -\tfrac{\omega_0}{2}\vec e_z$ and $\vec e_z^2 = -e_t$,
+With $B_1 = 0$ the propagator is $\tilde u_0(r'_t) = \exp(-i\theta_{\mathrm{evo}})$ with $\tilde{H}_{\Psi,0} = -\frac{hf_{\mathrm{frq},0}}{2}i\vec e_z$. Since $-\frac{2\pi i H_{0}}{h}= \tfrac{\omega_0}{2}(i\cdot i\vec e_z) = -\tfrac{\omega_0}{2}\vec e_z$ and $\vec e_z^2 = -e_t$,
 
 $$
 \tilde u_0(r'_t) = \exp\!\left(-\frac{\omega_0 r'_t}{2\,c}\vec e_z\right)
@@ -101,7 +101,7 @@ $$
 \tilde u_{\mathrm r}^{*}\left(i\vec e_x\cos(\omega r'_t/c) - i\vec e_y\sin(\omega r'_t/c)\right)\tilde u_{\mathrm r} = i\vec e_x ,
 $$
 
-so the drive becomes a static transverse field. The fictitious term computes to $-i\,\frac{h}{2\pi}\,c\,\tilde{u}_{\mathrm r}^{*}\partial/\partial r'_t\tilde u_{\mathrm r} = +\frac{h\nu}{2}i\vec e_z$. Adding the three contributions,
+so the drive becomes a static transverse field. The fictitious term computes to $-i\,\frac{h}{2\pi}\,c\,\tilde{u}_{\mathrm r}^{*}\partial/\partial r'_t\tilde u_{\mathrm r} = +\frac{hf_{\mathrm{frq}}}{2}i\vec e_z$. Adding the three contributions,
 
 $$
 \boxed{\;\tilde{H}_{\Psi,R} = -\frac{h}{4\pi}\Big[(\omega_0-\omega)\,i\vec e_z + \omega_1\,i\vec e_x\Big] \in  \mathbb{B}_{\Psi} \;}
@@ -129,7 +129,7 @@ the **generalized Rabi frequency**. Every quantity in the driven problem has now
 Resonance is the condition $\omega = \omega_0$, i.e. $\mathcal{G}_{\mathrm{gap}} = 0$. Then
 
 $$
-\tilde{H}_{\Psi,R}\big|_{\mathcal{G}_{\mathrm{gap}}=0} = -\frac{h\nu_{1}}{2}\,i\vec e_x,
+\tilde{H}_{\Psi,R}\big|_{\mathcal{G}_{\mathrm{gap}}=0} = -\frac{hf_{\mathrm{frq},1}}{2}\,i\vec e_x,
 $$
 
 a purely transverse effective Hamiltonian: the longitudinal component of the effective field vanishes, $\vec u_R = \vec e_x$, and the effective Larmor precession is about the $x$-axis at the Rabi frequency $\omega_1$. This is the algebraic statement of resonance: the rotating frame corotates with the drive exactly, so the longitudinal part of the field, $B_0-\omega/\gamma$, is cancelled. Off resonance the residual longitudinal field tilts $\vec u_R$ away from the equator, the effective precession cone opens, and the maximum transition probability is reduced.
@@ -240,7 +240,7 @@ The Bloch picture is the material of the companion article *Quantum Physics in B
 A spin-1/2 driven by $\vec B(r'_t) = B_0\vec u_z + B_1(\cos(\omega r'_t/c)\,\vec u_x-\sin(\omega r'_t/c)\,\vec u_y)$ has the biquaternion Hamiltonian
 
 $$
-\tilde H_\Psi(r'_t) = -\frac{h\nu_{0}}{2}i\vec e_z -\frac{h\nu_{1}}{2}\left(i\vec e_x\cos(\omega r'_t/c) - i\vec e_y\sin(\omega r'_t/c)\right) \in  \mathbb{B}_{\Psi},
+\tilde H_\Psi(r'_t) = -\frac{hf_{\mathrm{frq},0}}{2}i\vec e_z -\frac{hf_{\mathrm{frq},1}}{2}\left(i\vec e_x\cos(\omega r'_t/c) - i\vec e_y\sin(\omega r'_t/c)\right) \in  \mathbb{B}_{\Psi},
 $$
 
 with $\omega_0 = \gamma B_0$ and $\omega_1 = \gamma B_1$. The transformation to the frame rotating with the drive is conjugation by the unit real quaternion $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2\,c}\vec e_z)$, and it produces the static effective Hamiltonian
@@ -250,7 +250,7 @@ $$
 = -\frac{h}{4\pi}\Big[(\omega_0-\omega)i\vec e_z + \omega_1 i\vec e_x\Big].
 $$
 
-The effective Hamiltonian is a spin observable along the unit vector $\vec u_R = (\omega_1 \vec e_x + \mathcal{G}_{\mathrm{gap}} \vec e_z)/\Omega$, with $\mathcal{G}_{\mathrm{gap}} = \omega_0-\omega$ the detuning and $\Omega = \sqrt{\omega_1^2+\mathcal{G}_{\mathrm{gap}}^2}$ the generalized Rabi frequency equal to its spectral gap. Resonance $\omega = \omega_0$ makes $\tilde{H}_{\Psi,R} = -\frac{h\nu_{1}}{2}i\vec e_x$ purely transverse, and then the spin precesses about the transverse axis.
+The effective Hamiltonian is a spin observable along the unit vector $\vec u_R = (\omega_1 \vec e_x + \mathcal{G}_{\mathrm{gap}} \vec e_z)/\Omega$, with $\mathcal{G}_{\mathrm{gap}} = \omega_0-\omega$ the detuning and $\Omega = \sqrt{\omega_1^2+\mathcal{G}_{\mathrm{gap}}^2}$ the generalized Rabi frequency equal to its spectral gap. Resonance $\omega = \omega_0$ makes $\tilde{H}_{\Psi,R} = -\frac{hf_{\mathrm{frq},1}}{2}i\vec e_x$ purely transverse, and then the spin precesses about the transverse axis.
 
 The transition probability is the normalised Hermitian form, read through the scalar part $P_\downarrow(r'_t) = 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},2}(\vec u_z)\tilde{Ϛ}_{\Psi}(r'_t)^{*})$, and it equals the Rabi formula
 
@@ -274,7 +274,7 @@ which reduces to $\sin^2(\omega_1r'_t/(2c))$ on resonance. The $\pi$-pulse $r'_t
 | $\omega_0 = \gamma B_0$ | Larmor frequency |
 | $\omega_1 = \gamma B_1$ | Rabi frequency |
 | $\mathcal{G}_{\mathrm{gap}} = \omega_0-\omega$ | Detuning |
-| $\tilde H_\Psi(r'_t) = -\frac{h\nu_{0}}{2}i\vec e_z-\frac{h\nu_{1}}{2}(i\vec e_x\cos(\omega r'_t/c)-i\vec e_y\sin(\omega r'_t/c))$ | Laboratory Hamiltonian |
+| $\tilde H_\Psi(r'_t) = -\frac{hf_{\mathrm{frq},0}}{2}i\vec e_z-\frac{hf_{\mathrm{frq},1}}{2}(i\vec e_x\cos(\omega r'_t/c)-i\vec e_y\sin(\omega r'_t/c))$ | Laboratory Hamiltonian |
 | $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2\,c}\vec e_z)$ | Rotating-frame rotor |
 | $\tilde{H}_{\Psi,R} = -\frac{h}{4\pi}[(\omega_0-\omega)i\vec e_z+\omega_1i\vec e_x]$ | Effective Hamiltonian in the rotating frame |
 | $\Omega = \sqrt{\omega_1^2+\mathcal{G}_{\mathrm{gap}}^2}$ | Generalized Rabi frequency (spectral gap) |

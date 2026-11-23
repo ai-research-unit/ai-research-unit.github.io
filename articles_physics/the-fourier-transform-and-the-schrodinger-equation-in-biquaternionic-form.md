@@ -4,7 +4,7 @@
 
 The parent writes the equation and solves it. The transform is the lens that is missing. *The Schrödinger Equation in Biquaternionic Form* writes $i \frac{h}{2\pi}\,c\,\partial_{r'_t}\tilde\Xi=\tilde H_\Psi\tilde\Xi$ and gives the flow $\tilde Q(r'_t)=\exp(-\frac{2\pi i\tilde H_\Psi r'_t}{h\,c})$. This article takes the transform of that equation and reads what the transform returns: one element of $\mathbb{B}$ in place of one differential operator.
 
-The replacement is exact and it costs nothing. Differentiation in $t'$ becomes multiplication by $-i\omega$, so the operator $i \frac{h}{2\pi}\,\partial_{t'}-\tilde H_\Psi$ becomes the element $h\nu\,e_t-\tilde H_\Psi$. That element is the symbol. Every statement below is a statement about it, and none of them is a new prediction: the symbol is the parent's equation read at one frequency.
+The replacement is exact and it costs nothing. Differentiation in $t'$ becomes multiplication by $-i\omega$, so the operator $i \frac{h}{2\pi}\,\partial_{t'}-\tilde H_\Psi$ becomes the element $hf_{\mathrm{frq}}\,e_t-\tilde H_\Psi$. That element is the symbol. Every statement below is a statement about it, and none of them is a new prediction: the symbol is the parent's equation read at one frequency.
 
 The first finding is that the symbol is not a number. In the scalar theory the symbol is a scalar function of $\omega$ and $\vec k$. Here it is an element of $\mathbb{B}$ that acts by left multiplication on a four-dimensional complex space, and its determinant is a perfect square. **The square is the carrier's dimension speaking**, and it is the first structural difference from the scalar case.
 
@@ -25,9 +25,9 @@ $$
 \qquad
 \partial_\eta\longmapsto ik_\eta,
 \qquad
-i \frac{h}{2\pi}\,\partial_{t'}\longmapsto h\nu,
+i \frac{h}{2\pi}\,\partial_{t'}\longmapsto hf_{\mathrm{frq}},
 \qquad
-r'_t\longmapsto h\nu/c\ \text{as a wave number}.
+r'_t\longmapsto hf_{\mathrm{frq}}/c\ \text{as a wave number}.
 $$
 
 The constant setting is the licence. The Hamiltonian is a constant element $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $h_t$ and $\vec h_\Psi$ real. A symbol exists only for constant coefficients. The operator setting replaces the symbol by a convolution, and §*Limits* states that boundary.
@@ -37,24 +37,24 @@ The constant setting is the licence. The Hamiltonian is a constant element $\til
 The transform of the equation. Write $\hat{\tilde\Xi}(\omega)=\int\mathrm{d}t'\,e^{i\omega t'}\tilde\Xi(t')$. The transform of $i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi=\tilde H_\Psi\tilde\Xi$ is
 
 $$
-\big(h\nu\,e_t-\tilde H_\Psi\big)\hat{\tilde\Xi}(\omega)=0,
+\big(hf_{\mathrm{frq}}\,e_t-\tilde H_\Psi\big)\hat{\tilde\Xi}(\omega)=0,
 $$
 
-because $i \frac{h}{2\pi}\times(-i\omega)=h\nu$ and $\tilde H_\Psi$ is constant. The operator has become an element. The element is the symbol, and it depends on one real number.
+because $i \frac{h}{2\pi}\times(-i\omega)=hf_{\mathrm{frq}}$ and $\tilde H_\Psi$ is constant. The operator has become an element. The element is the symbol, and it depends on one real number.
 
 Multiplication is the operator. Left multiplication $L_{\tilde H_\Psi}$ carries $\mathbb{B}$ to itself. In the coefficient basis it is the axis-free array $L_{\mathrm{axf}}(\tilde H_\Psi)$, whose trace is $4h_t$ and whose determinant is $\langle\tilde H_\Psi\rangle_\natural^{2}$, the square of the quaternionic norm. The symbol is therefore the array
 
 $$
-\sigma(\omega)=L_{\mathrm{axf}}\big(h\nu\,e_t-\tilde H_\Psi\big)
-=h\nu\,I_4-L_{\mathrm{axf}}(\tilde H_\Psi).
+\sigma(\omega)=L_{\mathrm{axf}}\big(hf_{\mathrm{frq}}\,e_t-\tilde H_\Psi\big)
+=hf_{\mathrm{frq}}\,I_4-L_{\mathrm{axf}}(\tilde H_\Psi).
 $$
 
 The determinant is the object whose zeros are the spectrum. Its two invariants are the trace and the determinant, so
 
 $$
-\operatorname{tr}\sigma(\omega)=4\big(h\nu-h_t\big),
+\operatorname{tr}\sigma(\omega)=4\big(hf_{\mathrm{frq}}-h_t\big),
 \qquad
-\det\sigma(\omega)=\Big(\big(h\nu-h_t\big)^{2}-\lvert\vec h_\Psi\rvert^{2}\Big)^{2}.
+\det\sigma(\omega)=\Big(\big(hf_{\mathrm{frq}}-h_t\big)^{2}-\lvert\vec h_\Psi\rvert^{2}\Big)^{2}.
 $$
 
 The square is exact. It has one reason: the array is $L_{\mathrm{axf}}(\tilde H_\Psi)\otimes I_2$ in a suitable ordering, so every eigenvalue of the two-dimensional factor occurs twice.
@@ -69,7 +69,7 @@ The scalar symbol is scalar because the scalar equation is one equation. Four co
 
 Diagonalising the array is not an operation of the algebra. The array is Hermitian and can be diagonalised by a unitary change of basis. That change of basis is a complex-linear map mixing $e_t$ with $\vec e_\mu$, and it is not multiplication by an element. The diagonal form is available for calculation and unavailable for interpretation, which is why the article keeps the element and reads its two invariants instead.
 
-Two invariants, and they are the whole spectrum. A change of basis preserves the trace and the determinant, so those are the canonical scalars of the symbol. The trace fixes the mean $(h\nu-h_t)$ and the determinant fixes the gap $\lvert\vec h_\Psi\rvert$. The symbol's spectrum is a mean and a gap, and every display below is a statement about those two numbers.
+Two invariants, and they are the whole spectrum. A change of basis preserves the trace and the determinant, so those are the canonical scalars of the symbol. The trace fixes the mean $(hf_{\mathrm{frq}}-h_t)$ and the determinant fixes the gap $\lvert\vec h_\Psi\rvert$. The symbol's spectrum is a mean and a gap, and every display below is a statement about those two numbers.
 
 The position-space reading is the same statement. The parent's solution is a central phase times a real rotor: the phase runs at the mean and the rotor at the gap. The frequency-space symbol has the same two parameters, and the coincidence is not a coincidence: a symbol with two parameters produces a flow with two rates.
 
@@ -93,10 +93,10 @@ A word about the wrong root. The counterexample of the parent, $\tilde Z=\vec e_
 
 ## The Non-Central Roots and the Pencil
 
-The equation with a root. Replace $i$ by $\tilde Z$ with $\tilde Z^{2}=-e_t$ and write the equation in the parent's form, $\frac{h}{2\pi}\,\tilde Z\,\partial_{t'}\tilde\Xi=\tilde H_\Psi\tilde\Xi$. The substitution sends $\frac{h}{2\pi}\tilde Z\partial_{t'}$ to $-i h\nu\tilde Z$, so the symbol is
+The equation with a root. Replace $i$ by $\tilde Z$ with $\tilde Z^{2}=-e_t$ and write the equation in the parent's form, $\frac{h}{2\pi}\,\tilde Z\,\partial_{t'}\tilde\Xi=\tilde H_\Psi\tilde\Xi$. The substitution sends $\frac{h}{2\pi}\tilde Z\partial_{t'}$ to $-i hf_{\mathrm{frq}}\tilde Z$, so the symbol is
 
 $$
-\sigma_{\tilde Z}(\omega)=h\nu\,\big(-i\tilde Z\big)-\tilde H_\Psi .
+\sigma_{\tilde Z}(\omega)=hf_{\mathrm{frq}}\,\big(-i\tilde Z\big)-\tilde H_\Psi .
 $$
 
 The factor $-i\tilde Z$ is what the root becomes in frequency space, and it is Hermitian exactly when $\tilde Z$ is anti-Hermitian. Every root of $-e_t$ is anti-Hermitian, so the symbol is a Hermitian pencil for every root: two Hermitian arrays, one of them carrying the frequency.
@@ -106,12 +106,12 @@ A Hermitian pencil with an indefinite mass term has complex zeros. That is the g
 The case $\tilde Z=\vec e_z$ is exactly solvable. There $\tilde E=-i\vec e_z$ has the eigenvalues $\pm1$, and the determinant is
 
 $$
-\det\sigma_{\vec e_z}(\omega)=\Big(h_t^{2}-\big(h\nu+h_z\big)^{2}-h_\perp^{2}\Big)^{2},
+\det\sigma_{\vec e_z}(\omega)=\Big(h_t^{2}-\big(hf_{\mathrm{frq}}+h_z\big)^{2}-h_\perp^{2}\Big)^{2},
 \qquad
 h_\perp^{2}=h_x^{2}+h_y^{2},
 $$
 
-verified over one hundred draws to $1.4\times10^{-14}$. The zeros are $h\nu=-h_z\pm\sqrt{h_t^{2}-h_\perp^{2}}$, and they are real exactly on the cone $h_t^{2}\ge h_x^{2}+h_y^{2}$. On that cone the closed form matched the computed roots to $2.0\times10^{-15}$, over the $32$ draws.
+verified over one hundred draws to $1.4\times10^{-14}$. The zeros are $hf_{\mathrm{frq}}=-h_z\pm\sqrt{h_t^{2}-h_\perp^{2}}$, and they are real exactly on the cone $h_t^{2}\ge h_x^{2}+h_y^{2}$. On that cone the closed form matched the computed roots to $2.0\times10^{-15}$, over the $32$ draws.
 
 The count. Over one hundred draws: all four roots real in $32$ draws for $\vec e_z$, $30$ for $\vec e_x$ and $37$ for $(\vec e_x+\vec e_z)/\sqrt2$. For $\tilde Z=\vec e_z$ the cone condition held in exactly the same $32$ draws, which is the whole explanation of the number.
 
@@ -129,7 +129,7 @@ The dimension count says the same. The symbol is one element times one number: f
 
 ## The Frequency Symmetry Is Evenness About $h_t$
 
-What the determinant is even in. $\det\sigma(\omega)$ is a quadratic in $(h\nu-h_t)^{2}$, so it is even about $\omega=\frac{2\pi h_t}{h}$ and not about zero. A change of the sign of the frequency is not a symmetry of the symbol unless $h_t=0$.
+What the determinant is even in. $\det\sigma(\omega)$ is a quadratic in $(hf_{\mathrm{frq}}-h_t)^{2}$, so it is even about $\omega=\frac{2\pi h_t}{h}$ and not about zero. A change of the sign of the frequency is not a symmetry of the symbol unless $h_t=0$.
 
 The numbers. With $h_t=0.4$, $\lvert\vec h_\Psi\rvert=0.616441$ and the frequency in units of $k_m c$ the zeros are at $\omega=-0.2164$ and $\omega=1.0164$. At $\omega=1.2$ the elementary determinant is $0.2600$ and at $\omega=-1.2$ it is $2.1800$; the symbol's determinant, being its square, is $0.0676$ at the first and $4.7524$ at the second, a ratio of $70.3$. The two frequencies are not images of one another, and the asymmetry is the mass term's.
 
@@ -145,7 +145,7 @@ What the table is not. It is not a statement that the negative-frequency solutio
 
 What the table explains. The Schrödinger equation has no pair creation, and the reason is visible here in one line: the mirror image of a solution is another solution of the same equation, but the mirror is $\frac{2\pi \omega\mapsto2h_t}{h}-\omega$ and it is not the complex conjugate of the frequency. **The equation has no charge-conjugation symmetry because it has no second time derivative to supply one.**
 
-The symmetry is exact and it is a statement about the symbol. $\det\sigma(\frac{2\pi 2h_t}{h}-\omega)=\det\sigma(\omega)$ for every Hermitian $\tilde H_\Psi$, because the determinant is a function of $(h\nu-h_t)^{2}$ alone, and the statement survives the coupling, where the shift of $h_t$ is the potential's, as the coupled companion records.
+The symmetry is exact and it is a statement about the symbol. $\det\sigma(\frac{2\pi 2h_t}{h}-\omega)=\det\sigma(\omega)$ for every Hermitian $\tilde H_\Psi$, because the determinant is a function of $(hf_{\mathrm{frq}}-h_t)^{2}$ alone, and the statement survives the coupling, where the shift of $h_t$ is the potential's, as the coupled companion records.
 
 A degenerate case. When $h_t=0$ the symmetry is $\omega\mapsto-\omega$, and the free equation with a purely vector Hamiltonian has a symmetric zero set. That is the closest the first-order equation comes to the second-order symmetry, and it is a property of one Hamiltonian and not of the equation.
 
@@ -190,7 +190,7 @@ The fourth is the physical status of the second writing. The symbol uses $i \fra
 
 ## Summary
 
-The transform of the free Schrödinger equation is one element, $h\nu\,e_t-\tilde H_\Psi$, acting by left multiplication on a four-dimensional complex space. Its determinant is $\big((h\nu-h_t)^{2}-\lvert\vec h_\Psi\rvert^{2}\big)^{2}$, so the zero set is two real points, each of multiplicity two, and the multiplicity is the carrier's dimension. Verified over one hundred draws to $3.1\times10^{-16}$ on the eigenvalues and to $1.4\times10^{-14}$ on the determinant.
+The transform of the free Schrödinger equation is one element, $hf_{\mathrm{frq}}\,e_t-\tilde H_\Psi$, acting by left multiplication on a four-dimensional complex space. Its determinant is $\big((hf_{\mathrm{frq}}-h_t)^{2}-\lvert\vec h_\Psi\rvert^{2}\big)^{2}$, so the zero set is two real points, each of multiplicity two, and the multiplicity is the carrier's dimension. Verified over one hundred draws to $3.1\times10^{-16}$ on the eigenvalues and to $1.4\times10^{-14}$ on the determinant.
 
 The reality of the zero set is exactly the Hermiticity of $\tilde H_\Psi$ and hence the centrality of $i$. Replacing $i$ by a quaternion root turns the symbol into a Hermitian pencil with an indefinite mass term, whose zeros are real only on a cone: $32$ of one hundred draws for $\vec e_z$, $30$ for $\vec e_x$, $37$ for $(\vec e_x+\vec e_z)/\sqrt2$, and for $\vec e_z$ the cone $h_t^{2}\ge h_x^{2}+h_y^{2}$ accounts for the number exactly.
 
@@ -200,13 +200,13 @@ The symbol's zero set is two points and not a surface, because a first-order equ
 
 | Symbol | Meaning |
 | --- | --- |
-| $\sigma(\omega)=h\nu\,e_t-\tilde H_\Psi$ | The free symbol; an element acting by left multiplication |
-| $\sigma_{\tilde Z}(\omega)=h\nu\,(-i\tilde Z)-\tilde H_\Psi$ | The symbol of the equation with a root $\tilde Z$; a Hermitian pencil |
-| $\det\sigma=\big((h\nu-h_t)^{2}-\lvert\vec h_\Psi\rvert^{2}\big)^{2}$ | The determinant; its zeros are the spectrum, twice |
+| $\sigma(\omega)=hf_{\mathrm{frq}}\,e_t-\tilde H_\Psi$ | The free symbol; an element acting by left multiplication |
+| $\sigma_{\tilde Z}(\omega)=hf_{\mathrm{frq}}\,(-i\tilde Z)-\tilde H_\Psi$ | The symbol of the equation with a root $\tilde Z$; a Hermitian pencil |
+| $\det\sigma=\big((hf_{\mathrm{frq}}-h_t)^{2}-\lvert\vec h_\Psi\rvert^{2}\big)^{2}$ | The determinant; its zeros are the spectrum, twice |
 | $h_t\pm\lvert\vec h_\Psi\rvert$ | The two eigenvalues of $L_{\tilde H_\Psi}$; the mean and the gap |
-| $\operatorname{tr}\sigma=4(h\nu-h_t)$ | The trace; fixes the mean and nothing else |
+| $\operatorname{tr}\sigma=4(hf_{\mathrm{frq}}-h_t)$ | The trace; fixes the mean and nothing else |
 | $\frac{2\pi 2h_t}{h}-\omega$ | The mirror frequency; the first-order partner of a mode |
-| $\det\sigma_{\vec e_z}=\big(h_t^{2}-(h\nu+h_z)^{2}-h_\perp^{2}\big)^{2}$ | The pencil for $\tilde Z=\vec e_z$; real zeros on the cone $h_t^{2}\ge h_\perp^{2}$ |
+| $\det\sigma_{\vec e_z}=\big(h_t^{2}-(hf_{\mathrm{frq}}+h_z)^{2}-h_\perp^{2}\big)^{2}$ | The pencil for $\tilde Z=\vec e_z$; real zeros on the cone $h_t^{2}\ge h_\perp^{2}$ |
 | $\tilde E=-i\tilde Z$ | The root as it enters the symbol; Hermitian for every anti-Hermitian root |
 | $R(\omega)=\sigma(\omega)^{-1}$ | The frequency-space propagator; its simple poles are the two eigenvalues |
 

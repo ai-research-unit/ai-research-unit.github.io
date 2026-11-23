@@ -16,17 +16,17 @@ Four findings, and the first is a change of carrier.
 
 What is not claimed. The equation is the standard minimally coupled Proca equation, the integral is the standard one, and no new solution or prediction is offered. The algebra's contribution is that the coupling is one element, that the obstruction to it is a closure statement, and that the three–one split and the constraint fall out of two traces.
 
-Conventions. The algebra, the sectors, the pairing and the mass are the free companion's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling is $ϙ$, and the covariant derivative is
+Conventions. The algebra, the sectors, the pairing and the mass are the free companion's. The connection is $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ with $\omicron_{\mathrm{pot}}$ and $\vec A$ real, the coupling is $ϙ$, and the covariant derivative is
 
 $$
 \tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi ,
 \qquad
-D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\varphi,
+D_t=\partial_{t'}-\frac{2\pi iϙ}{h}\omicron_{\mathrm{pot}},
 \qquad
 D_\eta=\partial_\eta+\frac{2\pi iϙ}{h}A_\eta ,
 $$
 
-with the mechanical momentum $\vec\pi=-i \frac{h}{2\pi}\vec\nabla_\Phi-q\vec A$ and the potential energy $-ϙ\varphi$. The Proca potential is written $\tilde A$ when the distinction from the connection matters, and $\tilde A_\Phi$ is reserved for the connection.
+with the mechanical momentum $\vec\pi=-i \frac{h}{2\pi}\vec\nabla_\Phi-q\vec A$ and the potential energy $-ϙ\omicron_{\mathrm{pot}}$. The Proca potential is written $\tilde A$ when the distinction from the connection matters, and $\tilde A_\Phi$ is reserved for the connection.
 
 ## The Carrier and the Measure
 
@@ -203,7 +203,7 @@ The coupled field has a charge, because the enlarged carrier has a phase and the
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}$, $\mathbb{B}_\Phi$ | The coupled carrier, eight real dimensions; the free carrier, four |
-| $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ | The connection |
+| $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ | The connection |
 | $\tilde A$ | The Proca potential, now a general element of $\mathbb{B}$ |
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | The covariant gradient |
 | $\tilde F_{\mathrm{gco}}=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | The coupled field strength |

@@ -26,10 +26,10 @@ The article is organised as follows. A section states the pair, the two-sided eq
 **The actions.** An **action** of the algebra is a map of the algebra into itself, and it is written by what it does. The four **generator actions** are the maps
 
 $$
-G_\mu:\ Q\ \longmapsto\ i\,e_\mu\,Q\,\vec e_{\nu(\mu)} ,
+G_\mu:\ Q\ \longmapsto\ i\,e_\mu\,Q\,\vec e_{\mathrm{spt}(\mu)} ,
 $$
 
-with $e_t=1$ the unit of the algebra, $e_\eta=\vec e_\eta$, $\nu(t)=x$ and $\nu(\eta)=y$; the **chirality** is the frame's fifth basis operator, the operator
+with $e_t=1$ the unit of the algebra, $e_\eta=\vec e_\eta$, $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$; the **chirality** is the frame's fifth basis operator, the operator
 
 $$
 \xi:\ Q\ \longmapsto\ -i\,Q\,\vec e_z .
@@ -72,7 +72,7 @@ that is $\{\xi,G_\mu\}=0$, and the left slot contributes nothing to the sign bec
 
 $$
 i\,\xi:\ Q\longmapsto Q\,\vec e_z,\qquad
-i\,G_\mu:\ Q\longmapsto -e_\mu\,Q\,\vec e_{\nu(\mu)} .
+i\,G_\mu:\ Q\longmapsto -e_\mu\,Q\,\vec e_{\mathrm{spt}(\mu)} .
 $$
 
 Every double $i$ in this article therefore reduces, and three statements are the gain. The axial rotation is $\exp(i\theta_{\mathrm{axr}}\xi)=\cos\theta_{\mathrm{axr}}+i\sin\theta_{\mathrm{axr}}\,\xi$, a right multiplication by the element $\cos\theta_{\mathrm{axr}}\,e_t+\sin\theta_{\mathrm{axr}}\,\vec e_z$, with no imaginary unit standing outside it. The pseudoscalar bilinear is $\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}(\tilde{Ξ}\vec e_z)$, again with no unit outside. A product of two generators spends $i^{2}=-1$ and returns a plain product by units.
@@ -125,7 +125,7 @@ is the first-order dynamics of the algebra: each member acts by **left** multipl
 **The two-sided equation.** The same mass coupling has a second writing, in which every derivative sits between a left multiplier and a right multiplier. The operator is a single two-sided contraction on one element, and it is written $\mathcal{D}$ and never gathered into one glyph:
 
 $$
-\mathcal{D}\tilde{Ξ}=-\sum_\mu e_\mu\,\frac{\partial\tilde{Ξ}}{\partial x_\mu}\,\vec e_{\nu(\mu)} ,
+\mathcal{D}\tilde{Ξ}=-\sum_\mu e_\mu\,\frac{\partial\tilde{Ξ}}{\partial x_\mu}\,\vec e_{\mathrm{spt}(\mu)} ,
 \qquad
 \mathcal{D}^{2}=-\sum_\mu\varepsilon_\mu\frac{\partial^{2}}{\partial x_\mu^{2}}
 =-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\sum_\eta\frac{\partial^{2}}{\partial x_\eta^{2}}=\Box_\Phi ,
@@ -139,7 +139,7 @@ $$
 \xi\,\mathcal{D}\,\xi^{-1}=-\mathcal{D},\qquad [\xi,\mathcal{D}^{2}]=0 .
 $$
 
-The two readings are two displays of one fact, and neither contradicts the other: commutation says the operator **preserves** the two halves of the algebra, anticommutation says it **exchanges** the two halves of the space the operator acts on. For a solution the conclusion is the same in both, because $\xi$ is its own inverse: if $\mathcal{D}\tilde{Ξ}=0$ then $\mathcal{D}(\xi\tilde{Ξ})=0$. And even here the reason is the slot: $\xi$ has no left slot, so no left multiplier can obstruct it, and the sign is produced by the right slot $\vec e_{\nu(\mu)}$, which is $\vec e_x$ or $\vec e_y$. The gradient equation carries no chirality *term*: neither member contains a right multiplication, and a left multiplication keeps the value, so each member stays inside one value and the mass is the only term that crosses. This is the precise sense in which the framework carries two first-order writings: the mass and the mass shell are statements of the algebra, and the bilinears and the axial rotation are statements of the two-sided equation, which is the writing in which a pairing exists at all.
+The two readings are two displays of one fact, and neither contradicts the other: commutation says the operator **preserves** the two halves of the algebra, anticommutation says it **exchanges** the two halves of the space the operator acts on. For a solution the conclusion is the same in both, because $\xi$ is its own inverse: if $\mathcal{D}\tilde{Ξ}=0$ then $\mathcal{D}(\xi\tilde{Ξ})=0$. And even here the reason is the slot: $\xi$ has no left slot, so no left multiplier can obstruct it, and the sign is produced by the right slot $\vec e_{\mathrm{spt}(\mu)}$, which is $\vec e_x$ or $\vec e_y$. The gradient equation carries no chirality *term*: neither member contains a right multiplication, and a left multiplication keeps the value, so each member stays inside one value and the mass is the only term that crosses. This is the precise sense in which the framework carries two first-order writings: the mass and the mass shell are statements of the algebra, and the bilinears and the axial rotation are statements of the two-sided equation, which is the writing in which a pairing exists at all.
 
 ## The Chiral Symmetry of the Linear Mass Term
 
@@ -211,10 +211,10 @@ This is the framework form of the standard fact that a Dirac mass breaks the axi
 **The axial current.** The axial current is the four-vector
 
 $$
-j_{5\mu} = \tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\bigl(e_\mu\,\tilde{Ξ}\,\vec e_z\vec e_{\nu(\mu)}\bigr),
+j_{5\mu} = \tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\bigl(e_\mu\,\tilde{Ξ}\,\vec e_z\vec e_{\mathrm{spt}(\mu)}\bigr),
 $$
 
-one element between the two slots of the pairing: the left unit of the generator, the state, and the product $\vec e_z\vec e_{\nu(\mu)}$ on the right. The $i$ of the generator and the $-i$ of the chirality operator have been reduced by $i(-i)=+1$, which is why no imaginary unit stands in front; the surviving right multiplier is the product in that order, because right multipliers compose in reverse, $\vec e_z\vec e_{\nu(\mu)}=-\vec e_{\nu(\mu)}\vec e_z$. Its divergence is the classical identity for a massive free field,
+one element between the two slots of the pairing: the left unit of the generator, the state, and the product $\vec e_z\vec e_{\mathrm{spt}(\mu)}$ on the right. The $i$ of the generator and the $-i$ of the chirality operator have been reduced by $i(-i)=+1$, which is why no imaginary unit stands in front; the surviving right multiplier is the product in that order, because right multipliers compose in reverse, $\vec e_z\vec e_{\mathrm{spt}(\mu)}=-\vec e_{\mathrm{spt}(\mu)}\vec e_z$. Its divergence is the classical identity for a massive free field,
 
 $$
 \sum_\mu\frac{\partial j_{5\mu}}{\partial x_\mu}
@@ -230,8 +230,8 @@ which vanishes exactly when $m=0$. The mass is the only explicit breaking, and t
 **Two symmetries, two currents.** For later use we record the vector and axial bilinears and their divergences:
 
 $$
-j_\mu = \tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\bigl(i\,e_\mu\,\tilde{Ξ}\,\vec e_{\nu(\mu)}\bigr) , \qquad
-j_{5\mu} = \tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\bigl(e_\mu\,\tilde{Ξ}\,\vec e_z\vec e_{\nu(\mu)}\bigr) ,
+j_\mu = \tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\bigl(i\,e_\mu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}\bigr) , \qquad
+j_{5\mu} = \tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\bigl(e_\mu\,\tilde{Ξ}\,\vec e_z\vec e_{\mathrm{spt}(\mu)}\bigr) ,
 $$
 
 $$
@@ -448,7 +448,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 **The body's actions under their gamma names.** The generator actions of the body are the gammas, $G_\mu=\gamma_\mu$, and the chirality basis operator is $\gamma_5$ itself, $\xi=\gamma_5=-iR_{\mathrm{pau},\vec e_z}$. The single collapse behind every simplification in the body is
 
 $$
-i\,\gamma_\mu=-L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}} ,
+i\,\gamma_\mu=-L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\mathrm{spt}(\mu)}} ,
 \qquad
 i\,\gamma_5=R_{\mathrm{pau},\vec e_z} ,
 $$
@@ -456,7 +456,7 @@ $$
 In the axis-free display:
 
 $$
-i\,\gamma_\mu=-L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}} ,
+i\,\gamma_\mu=-L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\mathrm{spt}(\mu)}} ,
 \qquad
 i\,\gamma_5=R_{\mathrm{axf},\vec e_z} ,
 $$
@@ -495,7 +495,7 @@ $$
 \boxed{\;\langle\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}\rangle\;} ,
 $$
 
-and it is the order parameter of the axial symmetry that the framework's **linear chiral mass pair** $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ breaks. The two writings are kept apart throughout: the pair is the one-sided statement in the algebra, and the two-sided equation $(\mathcal{D}-k_m)\tilde{Ξ}=0$ with $\mathcal{D}\tilde{Ξ}=-\sum_\mu e_\mu(\partial_\mu\tilde{Ξ})\vec e_{\nu(\mu)}$ is the writing in which the bilinears are read. Chirality is a **side** and not a sign carried by an element: $\xi=-iR_{\vec e_z}$ is the frame's fifth basis operator and multiplies on the right, the gradient multiplies on the left, and the mass is the one term of the equation with both slots and therefore no side. The massless two-sided equation carries both the vector and the axial phase, $\tilde{Ξ}\mapsto\exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$ and $\tilde{Ξ}\mapsto\exp(i\theta_{\mathrm{axr}}\xi)\tilde{Ξ}=\tilde{Ξ}\exp(\theta_{\mathrm{axr}}\vec e_z)$; the mass term preserves the central one and breaks the axial one, with $\sum_\mu\partial j_{5\mu}/\partial x_\mu=2m\,\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}(\tilde{Ξ}\vec e_z)$. A nonzero condensate reproduces exactly this breaking, spontaneously, and its value is the coefficient of the same linear chiral pair: $m=-2G\langle\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}\rangle$. The order parameter sits on the real central line, and it is not the antilinear pairing built on the algebra's real structure $\flat$.
+and it is the order parameter of the axial symmetry that the framework's **linear chiral mass pair** $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ breaks. The two writings are kept apart throughout: the pair is the one-sided statement in the algebra, and the two-sided equation $(\mathcal{D}-k_m)\tilde{Ξ}=0$ with $\mathcal{D}\tilde{Ξ}=-\sum_\mu e_\mu(\partial_\mu\tilde{Ξ})\vec e_{\mathrm{spt}(\mu)}$ is the writing in which the bilinears are read. Chirality is a **side** and not a sign carried by an element: $\xi=-iR_{\vec e_z}$ is the frame's fifth basis operator and multiplies on the right, the gradient multiplies on the left, and the mass is the one term of the equation with both slots and therefore no side. The massless two-sided equation carries both the vector and the axial phase, $\tilde{Ξ}\mapsto\exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$ and $\tilde{Ξ}\mapsto\exp(i\theta_{\mathrm{axr}}\xi)\tilde{Ξ}=\tilde{Ξ}\exp(\theta_{\mathrm{axr}}\vec e_z)$; the mass term preserves the central one and breaks the axial one, with $\sum_\mu\partial j_{5\mu}/\partial x_\mu=2m\,\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}(\tilde{Ξ}\vec e_z)$. A nonzero condensate reproduces exactly this breaking, spontaneously, and its value is the coefficient of the same linear chiral pair: $m=-2G\langle\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}\rangle$. The order parameter sits on the real central line, and it is not the antilinear pairing built on the algebra's real structure $\flat$.
 
 The standard mean-field account was verified. With $N_c$ colours and cutoff $\Lambda$ the gap equation is $1=4N_cG\,I_1(m)$, the critical coupling is $G_c=\pi^2/(N_c\Lambda^2)$, and for $N_c=3$, $\Lambda=0.65$ GeV, and a constituent mass $m=0.3$ GeV the condensate is $-(247\ \mathrm{MeV})^3$ — the accepted order of magnitude. The Goldstone count is $N_f^2-1$, giving three pions for $N_f=2$ and eight modes for $N_f=3$, the ninth would-be mode being the $\eta'$, which the anomaly keeps heavy; the spin-$0$ effective description of those modes belongs to another subcategory and is not developed here.
 
@@ -513,19 +513,19 @@ The framework supplies the carrier, the symmetry pattern and the sector placemen
 | $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\mu\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention; $Q_\eta=q_\eta$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | Gradient equation: the linear chiral pair, one-sided |
-| $(\mathcal{D}-k_m)\tilde{Ξ}=0$, $\mathcal{D}\tilde{Ξ}=-\sum_\mu e_\mu(\partial_\mu\tilde{Ξ})\vec e_{\nu(\mu)}$ | Two-sided equation; $\mathcal{D}^2=\Box_\Phi$ |
-| $G_\mu:\ Q\mapsto i e_\mu Q\vec e_{\nu(\mu)}$, $\nu(t)=x$, $\nu(\eta)=y$ | Generator actions; $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id}$ |
+| $(\mathcal{D}-k_m)\tilde{Ξ}=0$, $\mathcal{D}\tilde{Ξ}=-\sum_\mu e_\mu(\partial_\mu\tilde{Ξ})\vec e_{\mathrm{spt}(\mu)}$ | Two-sided equation; $\mathcal{D}^2=\Box_\Phi$ |
+| $G_\mu:\ Q\mapsto i e_\mu Q\vec e_{\mathrm{spt}(\mu)}$, $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$ | Generator actions; $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id}$ |
 | $\xi:\ Q\mapsto-iQ\vec e_z=-iR_{\vec e_z}$, the frame's fifth basis operator | Chirality operator: a **pure right multiplier**, so it commutes with every left multiplication and $\{\xi,G_\mu\}=0$; $\xi^2=1$, $\xi\,\mathcal{D}\,\xi^{-1}=-\mathcal{D}$ |
 | $i\xi:\ Q\mapsto Q\vec e_z$ | The collapse of the imaginary unit: $\xi$ is the fifth basis operator itself, and $i\xi$ is a plain right multiplication |
 | $G_t=iR_{\vec e_x}$, $G_\eta=iL_{\vec e_\eta}R_{\vec e_y}$ | The slots of the generators: the time one has **no left slot**, the three spatial ones carry **both slots** |
 | $m$ | Central scalar: the one term of the equation with **both slots**, hence no side, and therefore the only term that pairs the two values |
 | $U(\theta_{\mathrm{axr}})=\exp(i\theta_{\mathrm{axr}}\xi)$ | The axial rotation, a pure right multiplication; $U(\theta_{\mathrm{axr}})(\mathcal{D}-k_m)U(\theta_{\mathrm{axr}})^{-1}=\exp(2i\theta_{\mathrm{axr}}\xi)\mathcal{D}-k_m$ |
-| $iG_\mu:\ Q\mapsto-e_\mu Q\vec e_{\nu(\mu)}$ | The same collapse on a generator |
+| $iG_\mu:\ Q\mapsto-e_\mu Q\vec e_{\mathrm{spt}(\mu)}$ | The same collapse on a generator |
 | $\tilde{Ξ}_{L},\tilde{Ξ}_{R}$; $\tilde{Ξ}\vec e_z=-i\tilde{Ξ}$ on $L$, $+i\tilde{Ξ}$ on $R$ | The two values of the chirality subscript |
 | $\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}$ | Dirac adjoint, a pairing of two states |
 | $\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}$ | Chirality-odd scalar bilinear; the condensate's carrier |
 | $i\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\xi\tilde{Ξ}=\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}(\tilde{Ξ}\vec e_z)$ | Pseudoscalar partner; rotates with the condensate under the axial phase |
-| $j_\mu=\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}(i e_\mu\tilde{Ξ}\vec e_{\nu(\mu)})$, $j_{5\mu}=\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}(e_\mu\tilde{Ξ}\vec e_z\vec e_{\nu(\mu)})$ | Vector and axial currents |
+| $j_\mu=\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}(i e_\mu\tilde{Ξ}\vec e_{\mathrm{spt}(\mu)})$, $j_{5\mu}=\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}(e_\mu\tilde{Ξ}\vec e_z\vec e_{\mathrm{spt}(\mu)})$ | Vector and axial currents |
 | $\sum_\mu\partial j_{5\mu}/\partial x_\mu=2m\,\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}(\tilde{Ξ}\vec e_z)$ | Axial divergence (explicit breaking by $m$); no metric factor, the generators carry it |
 | $\langle\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}\rangle=-\Sigma^3$ | Chiral condensate, the order parameter; $\Sigma$ its scale |
 | $m=-2G\langle\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}\rangle$ | Mean-field relation between mass and condensate |

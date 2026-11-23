@@ -29,19 +29,19 @@ $$
 \mathcal{L}_{W}\supset
 \frac{g}{\sqrt2}\,W^+_\mu\sum_{a,b}V_{ab}\;
 \tilde{Ξ}_{\mathrm u,a}^{\dagger}\,
-i\Big(i\,e_\mu\,\tilde{Ξ}_{\mathrm d,b,L}\,\vec e_{\nu(\mu)}\Big)\vec e_x
+i\Big(i\,e_\mu\,\tilde{Ξ}_{\mathrm d,b,L}\,\vec e_{\mathrm{spt}(\mu)}\Big)\vec e_x
 +\text{h.c.},
 $$
 
 with $a,b$ the generation labels and $V=X_u^\dagger X_d$ the relative rotation of the up- and down-type diagonalisations. Every factor of the term is an element or a product of elements — the two units, the two central $i$'s, the label $L$ on the down field, and the number $V_{ab}$ — and no array stands behind any of them.
 
-**The generator of the coordinate.** The Lorentz structure of the charged current is the generator of the coordinate $x_\mu$, and a generator is what it does: it multiplies an element by $i e_\mu$ on the left and by $\vec e_{\nu(\mu)}$ on the right,
+**The generator of the coordinate.** The Lorentz structure of the charged current is the generator of the coordinate $x_\mu$, and a generator is what it does: it multiplies an element by $i e_\mu$ on the left and by $\vec e_{\mathrm{spt}(\mu)}$ on the right,
 
 $$
-X\longmapsto i\,e_\mu\,X\,\vec e_{\nu(\mu)},
+X\longmapsto i\,e_\mu\,X\,\vec e_{\mathrm{spt}(\mu)},
 $$
 
-where $\vec e_{\nu(\mu)}$ is the unit the frame pairs with $x_\mu$ (*Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*, for the coordinate and the metric, and §*The Rules* for the index). The current carries the label $L$: only the $L$ part of the down field enters, and the label is the one of *Special Element Conventions*, §*The Chirality Convention*. The adjoint is the dagger of *Operator and Calculus Conventions*, §*The Operators*, and the current's factor $i\vec e_x$ sits after it, which is what the display writes.
+where $\vec e_{\mathrm{spt}(\mu)}$ is the unit the frame pairs with $x_\mu$ (*Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*, for the coordinate and the metric, and §*The Rules* for the index). The current carries the label $L$: only the $L$ part of the down field enters, and the label is the one of *Special Element Conventions*, §*The Chirality Convention*. The adjoint is the dagger of *Operator and Calculus Conventions*, §*The Operators*, and the current's factor $i\vec e_x$ sits after it, which is what the display writes.
 
 **The two factors.** The vertex is therefore a product of two factors that do not mix: the generator above, read with the label $L$, and the mixing $V$. The framework supplies the first exactly — it is the algebra's own generator — and the second is an arbitrary $*$-unitary operator on $\mathcal{F}$. The only requirement is $V\in\mathrm{U}(N_g)$: it comes from the framework, because the flavour rotation must preserve the norm on $\mathcal{F}$, and it says nothing about which $V$. The companion articles write the same placement with the unit on the algebra factor, which states that the algebra factor is untouched; that is what the product with the number $V_{ab}$ says here. The gauge sector does not select the pattern.
 
@@ -255,7 +255,7 @@ the same expression with the leptonic angles and phase. The framework's structur
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
-The body of the article is written in elements: a generator is the action $X\mapsto ie_\mu X\vec e_{\nu(\mu)}$, the field carries the label $L$ or $R$, and the mixing is the number $V_{ab}$. The older literature writes the same five generators as arrays, and they are collected here — with the basis operators that display them — so that a reader who comes from the matrix literature can translate; they enter nowhere else in the article. The letter $\gamma$ of the unitarity triangle, in the section on the Wolfenstein parametrisation, is the triangle's angle and has nothing to do with $\gamma_\mu$.
+The body of the article is written in elements: a generator is the action $X\mapsto ie_\mu X\vec e_{\mathrm{spt}(\mu)}$, the field carries the label $L$ or $R$, and the mixing is the number $V_{ab}$. The older literature writes the same five generators as arrays, and they are collected here — with the basis operators that display them — so that a reader who comes from the matrix literature can translate; they enter nowhere else in the article. The letter $\gamma$ of the unitarity triangle, in the section on the Wolfenstein parametrisation, is the triangle's angle and has nothing to do with $\gamma_\mu$.
 
 **The frame and the signs.** The names below are the $\mathbb{B}_{\Phi}$ frame, $\varepsilon=(1,-1,-1,-1)$, with the index low and $\epsilon_{0123}=+1$. The generator basis operator of the coordinate $x_\mu$ is $\gamma_\mu$, and $\gamma_5$ is the chirality basis operator:
 
@@ -346,7 +346,7 @@ so it enters with the central $i$, and the real algebra generated by the four $\
 
 ## Summary
 
-The CKM matrix is a $*$-unitary operator on the framework's generation factor, multiplying the label and leaving the algebra factor untouched, and arising from the mismatch of the up- and down-type mass operators, $V=X_u^\dagger X_d$, both of which act on the labels while the algebra factor is common. The framework's gauge sector is flavour-universal, which is the algebraic form of the GIM mechanism: the charged-current term is the generator $X\mapsto ie_\mu X\vec e_{\nu(\mu)}$ read with the label $L$ and multiplied by the number $V_{ab}$, and the neutral currents are the unit on the labels and are flavour-diagonal. The parameter count is that of $\mathrm{U}(N_g)$: $(N_g-1)^2$ parameters, comprising $\tfrac12N_g(N_g-1)$ angles and $\tfrac12(N_g-1)(N_g-2)$ phases, so that a CP-violating phase requires $N_g\ge3$.
+The CKM matrix is a $*$-unitary operator on the framework's generation factor, multiplying the label and leaving the algebra factor untouched, and arising from the mismatch of the up- and down-type mass operators, $V=X_u^\dagger X_d$, both of which act on the labels while the algebra factor is common. The framework's gauge sector is flavour-universal, which is the algebraic form of the GIM mechanism: the charged-current term is the generator $X\mapsto ie_\mu X\vec e_{\mathrm{spt}(\mu)}$ read with the label $L$ and multiplied by the number $V_{ab}$, and the neutral currents are the unit on the labels and are flavour-diagonal. The parameter count is that of $\mathrm{U}(N_g)$: $(N_g-1)^2$ parameters, comprising $\tfrac12N_g(N_g-1)$ angles and $\tfrac12(N_g-1)(N_g-2)$ phases, so that a CP-violating phase requires $N_g\ge3$.
 
 The framework's definite structural contribution is the location of the phase. The algebra acting on the multi-generation space is $\mathbb{B}\otimes M_{N_g}(\mathbb{C})$ with centre $\mathbb{B}_{C}\otimes I_{N_g}\cong\mathbb{C}$, a single generation-blind central phase; a phase that distinguishes generations therefore cannot be central and must sit in the flavour factor, the factor $M_{N_g}(\mathbb{C})$ of that algebra. The framework's own central phases are CP-even in the flavour sense, and all quark-sector CP violation is a statement about the matrix on $\mathbb{C}^{N_g}$. The Jarlskog invariant, $J=\mathrm{Im}(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*})=c_{12}c_{23}c_{13}^2s_{12}s_{23}s_{13}\sin\delta$, is the minimal rephasing-invariant measure of the CP violation and is the imaginary part of the determinant of the commutator of the two mass-matrix products, normalised by the six mass-squared differences; the recomputation with the standard parameters gave $J=3.00\times10^{-5}$, consistent with the quoted $3.1\times10^{-5}$ to the rounding of the inputs, with unitarity of the reconstructed matrix to machine precision, $\sin2\beta=0.707$, $\beta\simeq22.5^\circ$, and $\gamma\simeq65.4^\circ$. The framework places all of this on the flavour factor and supplies none of the values.
 
@@ -357,7 +357,7 @@ The framework's definite structural contribution is the location of the phase. T
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{C}$ | Material sector (the frame of the closing section); centre |
 | $\tilde{Ξ}_{t,a}\in\mathbb{B}$ | The field of type $t$ and generation $a$; an element of the algebra |
-| $X\mapsto ie_\mu X\vec e_{\nu(\mu)}$ | The generator of the coordinate $x_\mu$, written as the action it is |
+| $X\mapsto ie_\mu X\vec e_{\mathrm{spt}(\mu)}$ | The generator of the coordinate $x_\mu$, written as the action it is |
 | $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The two parts of an element, by the label $L$ or $R$ |
 | $\gamma_\mu$, $\gamma_5$ | The generators under their older names (closing section only) |
 | $\mathcal{F}=\mathbb{C}^{N_g}$ | Generation (multiplicity) factor |
@@ -366,7 +366,7 @@ The framework's definite structural contribution is the location of the phase. T
 | $H_u=M_u^{\mathcal{F}}M_u^{\mathcal{F}\dagger}$, $H_d=M_d^{\mathcal{F}}M_d^{\mathcal{F}\dagger}$ | Hermitian mass products; their eigenvalues are the squared masses |
 | $V=X_u^\dagger X_d$ | CKM matrix from the diagonalisations |
 | $\tilde{Ξ}_{\mathrm u,a}$, $\tilde{Ξ}_{\mathrm d,b}$; $\tilde{Ξ}^{\dagger}$, with the factor $i\vec e_x$ | Up- and down-type quark fields, generation labels $a,b$; Dirac adjoint |
-| $\tilde{Ξ}^{\dagger}i(ie_\mu\tilde{Ξ}_{L}\vec e_{\nu(\mu)})\vec e_x\,V_{ab}$ | The charged-current term |
+| $\tilde{Ξ}^{\dagger}i(ie_\mu\tilde{Ξ}_{L}\vec e_{\mathrm{spt}(\mu)})\vec e_x\,V_{ab}$ | The charged-current term |
 | the unit on the labels | Gauge vertices; flavour universality (GIM) |
 | $\mathbb{B}_{C}\otimes I_{N_g}$ | Centre of the multiplied algebra; generation-blind |
 | $\tfrac12N_g(N_g-1)$, $\tfrac12(N_g-1)(N_g-2)$ | Mixing angles; CP-violating phases |

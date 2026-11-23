@@ -133,20 +133,20 @@ This is the central structural fact of the spin path integral. The "kinetic" ter
 For a spin in a magnetic field the Hamiltonian is
 
 $$
-\tilde H_\Psi = -\frac{h\nu_{L}}{2}\,i\,\vec u_t\cdot\mathbf{e}
+\tilde H_\Psi = -\frac{hf_{\mathrm{frq},L}}{2}\,i\,\vec u_t\cdot\mathbf{e}
 = -\gamma B\,\tilde{S}_{\Psi}(\vec u_t),
 $$
 
 and its coherent-state expectation is
 
 $$
-\langle  z|\tilde H_\Psi|z\rangle  = -\frac{h\nu_{L}}{2}\,\vec u(z)\cdot\vec u_t,
+\langle  z|\tilde H_\Psi|z\rangle  = -\frac{hf_{\mathrm{frq},L}}{2}\,\vec u(z)\cdot\vec u_t,
 $$
 
 the classical Zeeman energy of a dipole along $\vec u(z)$. The action is thus
 
 $$
-S[z] = \int_0^T\left[-\frac{h}{2\pi}\sin^2\frac{\theta}{2}\,d\theta_{\mathrm{azm}}/dr'_t +\frac{h\nu_{L}}{2}\,\vec u(z)\cdot\vec u_t\right]dr'_t,
+S[z] = \int_0^T\left[-\frac{h}{2\pi}\sin^2\frac{\theta}{2}\,d\theta_{\mathrm{azm}}/dr'_t +\frac{hf_{\mathrm{frq},L}}{2}\,\vec u(z)\cdot\vec u_t\right]dr'_t,
 $$
 
 the first term geometric and the second dynamical.
@@ -262,7 +262,7 @@ $$
 
 one half the oriented solid angle: the geometric phase. This was verified numerically for five values of $\theta_0$.
 
-The saddle point of $S$ is the classical Larmor precession $d\vec s_{\Psi}/dr'_t = \frac{\gamma}{c}\,\vec s_{\Psi}\times\vec B$, obtained from the symplectic form $\omega = -\frac{h}{4\pi}\sin\theta\,d\theta\wedge  d\theta_{\mathrm{azm}}$ and the classical Zeeman energy $\langle\tilde H_\Psi\rangle  = -\frac{h\nu_{L}}{2}\vec u\cdot\vec u_t$. The same propagator can be written as a Grassmann integral over a two-component spinor with $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}=1$, related to the coherent-state form by $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{2}/\tilde{Ξ}_{1}$.
+The saddle point of $S$ is the classical Larmor precession $d\vec s_{\Psi}/dr'_t = \frac{\gamma}{c}\,\vec s_{\Psi}\times\vec B$, obtained from the symplectic form $\omega = -\frac{h}{4\pi}\sin\theta\,d\theta\wedge  d\theta_{\mathrm{azm}}$ and the classical Zeeman energy $\langle\tilde H_\Psi\rangle  = -\frac{hf_{\mathrm{frq},L}}{2}\vec u\cdot\vec u_t$. The same propagator can be written as a Grassmann integral over a two-component spinor with $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}=1$, related to the coherent-state form by $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{2}/\tilde{Ξ}_{1}$.
 
 In the biquaternion algebra the coherent-state integral is an integral over the sphere of idempotents $\tilde\Pi_{\mathrm{id},1}(\vec u)$ with energy $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$, and the spinor integral is its lift to the double cover; the Wess–Zumino term is the central phase of the rotor along the path. The term is topological: the symplectic form of the sphere is not exact, its total integral has magnitude $2\,\pi\,\frac{h}{2\pi}$, and the coefficient of the term is the spin. For a half-integer spin this makes the tunnelling instanton action imaginary by an odd multiple of $i\pi$, quenching the tunnelling between opposite classical states.
 

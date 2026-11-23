@@ -131,7 +131,7 @@ $$
 \langle\tilde K_{\Phi}\rangle_{\natural} = \tilde K_{\Phi}\tilde K_{\Phi}^{\natural} = -\frac{\omega^2}{c^2} + \vec k_\Phi^2 = -k_{m_e}^{2},
 $$
 
-with $\vec k_\Phi^2$ the Euclidean square $k_x^2+k_y^2+k_z^2$, which is what the norm of a vector part produces. This is $E^2 = \vec p^2c^2 + m_e^2c^4$ under $E =h\nu$, $\vec p =\frac{h}{2\pi}\,\vec k_\Phi$, and it is the form used by the companion solutions article and by the parent Dirac article. Here $k_{\Phi}=\frac{2\pi p}{h}$ is the momentum wave number.
+with $\vec k_\Phi^2$ the Euclidean square $k_x^2+k_y^2+k_z^2$, which is what the norm of a vector part produces. This is $E^2 = \vec p^2c^2 + m_e^2c^4$ under $E =hf_{\mathrm{frq}}$, $\vec p =\frac{h}{2\pi}\,\vec k_\Phi$, and it is the form used by the companion solutions article and by the parent Dirac article. Here $k_{\Phi}=\frac{2\pi p}{h}$ is the momentum wave number.
 
 **Antiparticle.** The two frequency branches are exchanged by charge conjugation, and in the quantized interpretation the negative-frequency branch describes the positron. The framework represents the electron and the positron on the same algebraic footing; which branch is called the electron is fixed by the charge convention of the previous section, not by the algebra.
 

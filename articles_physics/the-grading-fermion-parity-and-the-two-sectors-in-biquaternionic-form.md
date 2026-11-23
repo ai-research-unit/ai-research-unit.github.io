@@ -18,7 +18,7 @@ $$
 Q\mapsto i e_t\,Q\,\vec e_x,\qquad Q\mapsto i\vec e_x\,Q\,\vec e_y,\qquad Q\mapsto i\vec e_y\,Q\,\vec e_y,\qquad Q\mapsto i\vec e_z\,Q\,\vec e_y,
 $$
 
-in the order $t,x,y,z$, with $\nu(t)=x$ and $\nu(\eta)=y$ for the three spatial indices.
+in the order $t,x,y,z$, with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$ for the three spatial indices.
 
 Two of the five actions — the four generators and the chirality — are single multipliers, because $e_t$ is the unit of the algebra: the timelike generator is $Q\mapsto iQ\vec e_x$ and the chirality is $Q\mapsto-iQ\vec e_z$, while the three spatial generators act on both sides. **Each generator carries one factor $i$, so a product of two carries $i^2=-1$ and a product of four carries $i^4=+1$**; the collapses below use this.
 
@@ -275,7 +275,7 @@ The parity is the scalar sign $\varepsilon_x=(-1)^{\lvert x\rvert}$, and the gra
 | Symbol | Meaning |
 |---|---|
 | $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ | The graded ambient algebra; $\mathrm{Cl}^0=\mathbb{B}$ |
-| $Q\mapsto ie_\mu Q\vec e_{\nu(\mu)}$ | The generator of the coordinate $x_\mu$, odd; two of them compose to a bivector, even |
+| $Q\mapsto ie_\mu Q\vec e_{\mathrm{spt}(\mu)}$ | The generator of the coordinate $x_\mu$, odd; two of them compose to a bivector, even |
 | $x^{*}=\sigma(\alpha(x^{r}))$ | The Hermitian dagger; even, anti-involution |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Fixed and anti-fixed loci of the dagger; informational and material sectors |
 | $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | The eigen-decomposition of the dagger; not an algebra grading |
