@@ -195,7 +195,7 @@ $$</p>
 <h2 id="3-spin-one-half">3. Spin One Half</h2>
 <p><strong>The one-qubit formalism.</strong> The state is the idempotent, the observable is Hermitian, the weight is the pairing:</p>
 <p>$$
-\langle\tilde H_\Psi\rangle_{\tilde\Pi}=\frac{\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}}=2\,\mathrm{Sc}\bigl(\tilde\Pi\tilde H_\Psi^{*}\bigr).
+\langle\tilde H_\Psi\rangle_{\tilde\Pi_{\mathrm{id}}}=\frac{\langle\tilde\Pi_{\mathrm{id}},\tilde H_\Psi\rangle_{*}}{\langle\tilde\Pi_{\mathrm{id}},e_t\rangle_{*}}=2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*}\bigr).
 $$</p>
 <p><strong>Stern–Gerlach.</strong> The beam splitter is the pair of idempotents along the field axis; the two beams have intensities $p_\pm$ and the post-measurement states are the two idempotents. Nothing else is needed.</p>
 <p><strong>Precession and resonance.</strong> The evolution is the congruence by $\exp(-i\tilde H_\Psi t'/\hbar)$:</p>
@@ -214,11 +214,11 @@ $$</p>
 <p>$$
 \tilde H_\Psi(\vec R)=\tfrac12 i\vec R=\tfrac12 i\bigl(R_1\vec e_x+R_2\vec e_y+R_3\vec e_z\bigr),
 \qquad
-\tilde H_\Psi=\tfrac{R}{2}\tilde\Pi_1(\vec u_R)-\tfrac{R}{2}\tilde\Pi_2(\vec u_R).
+\tilde H_\Psi=\tfrac{R}{2}\tilde\Pi_{\mathrm{id},1}(\vec u_R)-\tfrac{R}{2}\tilde\Pi_{\mathrm{id},2}(\vec u_R).
 $$</p>
 <p><strong>The non-trivial claim.</strong> The Berry connection vanishes identically on the idempotent:</p>
 <p>$$
-2\,\mathrm{Sc}\bigl(\tilde\Pi\,\partial_\mu\tilde\Pi\bigr)=0\qquad\text{for every parameter,}
+2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id}}\,\partial_\mu\tilde\Pi_{\mathrm{id}}\bigr)=0\qquad\text{for every parameter,}
 $$</p>
 <p>so the geometric phase is carried by the <em>frame</em> and not by the state. The parameter space of the two-level Hamiltonian is a two-sphere, and the phase is the solid angle.</p>
 <p><strong>The Majorana representation.</strong> The spinor is a polynomial in one complex variable, and its roots are the star points:</p>
@@ -230,7 +230,7 @@ P_{\mathrm{sp}}(z)=c_{1/2}z-c_{-1/2}=\tilde\Xi_1z-\tilde\Xi_2,\qquad
 \varkappa_{\mathrm{stg}}=\frac{\tilde\Xi_2}{\tilde\Xi_1}=\tan\frac{\theta}{2}e^{i\theta_{\mathrm{azm}}},
 $$</p>
 <p>$$
-\boxed{\;\tilde\Pi_1(\vec u_x)=\frac{\tilde\Xi\tilde\Xi^{\dagger}}{2\,\mathrm{Sc}(\tilde\Xi^{\dagger}\tilde\Xi)}\;}
+\boxed{\;\tilde\Pi_{\mathrm{id},1}(\vec u_x)=\frac{\tilde\Xi\tilde\Xi^{\dagger}}{2\,\mathrm{Sc}(\tilde\Xi^{\dagger}\tilde\Xi)}\;}
 $$</p>
 <p><strong>The non-trivial claim.</strong> The Majorana polynomial is the spinor in the stereographic chart, and the Möbius action of $SU(2)$ on the spinor is the Möbius action on the root. One root for one qubit; $2s$ roots for spin $s$.</p>
 <p><strong>Squeezing.</strong> Spin squeezing needs a non-linear Hamiltonian. The corpus proves that the biquaternion algebra supplies only the linear (spin-$\tfrac12$) and the adjoint (spin-1) carriers, so squeezing of a single spin is expressed with a quadratic term in the generators, and <em>Squeezing Beyond the Biquaternion Algebra</em> states the exact point where an extra structure is required.</p>
@@ -293,14 +293,14 @@ $$</p>
 <p><strong>Discord.</strong> Discord is the entropy difference between the state and its post-measurement version. In the ball it is a function of the angle between $\vec s_\Psi$ and the measurement axis; it is non-zero exactly when the state is not an idempotent and not a product.</p>
 <p><strong>No cloning.</strong></p>
 <p>$$
-\boxed{\;2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde\Xi)\tilde\Pi(\xi_{\mathrm{alt}})\bigr)
-=\Bigl(2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde\Xi)\tilde\Pi(\xi_{\mathrm{alt}})\bigr)\Bigr)^{2}
+\boxed{\;2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id}}(\tilde\Xi)\tilde\Pi_{\mathrm{id}}(\xi_{\mathrm{alt}})\bigr)
+=\Bigl(2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id}}(\tilde\Xi)\tilde\Pi_{\mathrm{id}}(\xi_{\mathrm{alt}})\bigr)\Bigr)^{2}
 \ \Longrightarrow\ p\in\{0,1\}\;}
 $$</p>
 <p><strong>The non-trivial claim.</strong> Cloning would force the overlap to equal its square for every pair of states, hence the overlap to be $0$ or $1$, hence the two states to be orthogonal or equal. The obstruction is algebraic and does not use linearity. The same computation gives the no-deleting and the no-broadcasting statements.</p>
 <p><strong>Decoherence.</strong></p>
 <p>$$
-\Xi_{\mathrm{deph},p}(\tilde{Ϛ}_\Psi)=(1-p)\tilde{Ϛ}_\Psi+p\bigl(\tilde\Pi_1\tilde{Ϛ}_\Psi\tilde\Pi_1+\tilde\Pi_2\tilde{Ϛ}_\Psi\tilde\Pi_2\bigr),
+\Xi_{\mathrm{deph},p}(\tilde{Ϛ}_\Psi)=(1-p)\tilde{Ϛ}_\Psi+p\bigl(\tilde\Pi_{\mathrm{id},1}\tilde{Ϛ}_\Psi\tilde\Pi_{\mathrm{id},1+}\tilde\Pi_{\mathrm{id},2}\tilde{Ϛ}_\Psi\tilde\Pi_{\mathrm{id},2}\bigr),
 $$</p>
 <p>$$
 \boxed{\;\vec s_\Psi\longmapsto\vec s_{\Psi,2}=(1-p)\vec s_\Psi+p(\vec u\!\cdot\!\vec s_\Psi)\vec u\;}

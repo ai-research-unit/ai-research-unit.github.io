@@ -137,7 +137,7 @@ $$</p>
 <li>Every element has the pair $\tilde Q=\tilde Q_H\tilde Q_0$, with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry; the pair is unique and exists at $0$.</li>
 <li>The amplitude is the closed element $\tilde Q_H=a e_t+i\vec W/(2a)$, with $2a^{2}=\langle\tilde Q\rangle_{*}+\lvert\langle\tilde Q\rangle_{\natural}\rvert$; it is the unique square root of $\tilde Q\tilde Q^{*}$ in the cone.</li>
 <li>The amplitude carries the whole H-norm and the modulus of the whole N-norm: $H(\tilde Q_H)=H(\tilde Q)$ and $N(\tilde Q_H)=\lvert N(\tilde Q)\rvert$, the second being real and non-negative.</li>
-<li>The frame carries the two ideals: $\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_{\mathrm f}(\tilde Q)$ and $\tilde Q_0^{*}\tilde Q_0=\tilde\Pi_{\mathrm i}(\tilde Q)$.</li>
+<li>The frame carries the two ideals: $\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_{\mathrm{id},\mathrm f}(\tilde Q)$ and $\tilde Q_0^{*}\tilde Q_0=\tilde\Pi_{\mathrm{id},\mathrm i}(\tilde Q)$.</li>
 <li>The H-norm is invariant under both-sided $*$-unitary multiplication, and the group of elements that leave it invariant is exactly the $*$-unitary group; $H$ is the only positive definite form with this property, up to a scale.</li>
 <li>Off the cone the frame has $H(\tilde Q_0)=1$; on the cone it has $H(\tilde Q_0)=\tfrac12$; in general $H(\tilde Q_0)$ is half the rank of the frame.</li>
 <li>The amplitude is continuous everywhere and the frame is discontinuous on the null cone and at the origin; no choice of Moore–Penrose inverse removes the jump.</li>
@@ -165,7 +165,7 @@ $$</p>
 $$</p>
 <p>Two numbers and one direction carry the amplitude. The scale $a$ and the length $\lvert\vec W\rvert$ are fixed by the two algebraic norms, since $\lvert\vec W\rvert^{2}=H(\tilde Q)^{2}-\lvert N(\tilde Q)\rvert^{2}$, and the direction of $\vec W$ is the axis of the amplitude's vector part. The two numbers obey $a^{2}-\lvert\vec W\rvert^{2}/(4a^{2})=\lvert N(\tilde Q)\rvert$, which bounds the vector part by $\lvert\vec W\rvert\le2a^{2}$ and turns the inequality into an equality exactly on the null cone.</p>
 <p>The amplitude lies in the informational sector. It is Hermitian, so it is an element of $\mathbb{B}_{\Psi}$, whatever sector $\tilde Q$ belonged to. This is the first structural fact of the entry: the polar decomposition is not a split of the element into two parts of the same kind. It is a split into a Hermitian part and a residual part, and the Hermitian part is the one the algebra's positivity is defined on.</p>
-<p>Uniqueness needs the two ideals and would not hold without them. The pair is characterised by four conditions: $\tilde Q_H$ lies in the cone, $\tilde Q=\tilde Q_H\tilde Q_0$, $\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_{\mathrm f}(\tilde Q)$, and $\tilde Q_H\mathbb{B}=\tilde Q\mathbb{B}$. The two counterexamples of the mathematical article are worth carrying, because each fails exactly one condition and both are built on the same null element $\tilde\Pi_{\vec u}$. With $\tilde Q_H'=e_t$ and $\tilde Q_0'=\tilde\Pi_{\vec u}$ the product is right but the amplitude generates the whole algebra rather than the minimal left ideal that the element generates. With $\tilde Q_H'=\tilde\Pi_{\vec u}$ and $\tilde Q_0'=e_t$ the product is right and the amplitudes agree, but the frame is the identity and its final projection is not the line. The first counterexample fixes the amplitude by its ideal; the second fixes the frame by its projection.</p>
+<p>Uniqueness needs the two ideals and would not hold without them. The pair is characterised by four conditions: $\tilde Q_H$ lies in the cone, $\tilde Q=\tilde Q_H\tilde Q_0$, $\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_{\mathrm{id},\mathrm f}(\tilde Q)$, and $\tilde Q_H\mathbb{B}=\tilde Q\mathbb{B}$. The two counterexamples of the mathematical article are worth carrying, because each fails exactly one condition and both are built on the same null element $\tilde\Pi_{\mathrm{id},\vec u}$. With $\tilde Q_H'=e_t$ and $\tilde Q_0'=\tilde\Pi_{\mathrm{id},\vec u}$ the product is right but the amplitude generates the whole algebra rather than the minimal left ideal that the element generates. With $\tilde Q_H'=\tilde\Pi_{\mathrm{id},\vec u}$ and $\tilde Q_0'=e_t$ the product is right and the amplitudes agree, but the frame is the identity and its final projection is not the line. The first counterexample fixes the amplitude by its ideal; the second fixes the frame by its projection.</p>
 <p>The two factors are continuous in different ways, and the difference is the physics. The amplitude is continuous on the whole algebra. The frame is not: along a family that approaches the cone the frame tends to the identity, while its value on the cone is the rank-one projection onto the line. At the origin the frame falls to $0$ while its limit along $\tilde Q=\epsilon e_t$ is $e_t$.</p>
 <h2 id="the-amplitude">The Amplitude</h2>
 <p><strong>The amplitude carries the H-norm unchanged, and it carries the N-norm in modulus.</strong></p>
@@ -240,8 +240,8 @@ $$</p>
 <p><strong>The frame is a partial isometry, and a partial isometry is a projection written as an element.</strong></p>
 <p>$$
 \tilde Q_0\tilde Q_0^{*}\tilde Q_0=\tilde Q_0,\qquad
-\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_{\mathrm f}(\tilde Q),\qquad
-\tilde Q_0^{*}\tilde Q_0=\tilde\Pi_{\mathrm i}(\tilde Q).
+\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_{\mathrm{id},\mathrm f}(\tilde Q),\qquad
+\tilde Q_0^{*}\tilde Q_0=\tilde\Pi_{\mathrm{id},\mathrm i}(\tilde Q).
 $$</p>
 <p>Two projections, one on each side, and they are the two ideals of $\tilde Q$. The right ideal that $\tilde Q$ generates is the final projection; the left ideal is the initial one. Nothing of the size of $\tilde Q$ survives in either: a projection is an idempotent, and an idempotent has no scale.</p>
 <p>Off the cone both projections are the unit and the frame is $*$-unitary. The $*$-unitary elements are the group $U(\mathbb{B})=\{\tilde U:\tilde U\tilde U^{*}=e_t\}$, which is isomorphic to $U(2)$ and has real dimension four. On the cone both projections are rank one and the frame is a rank-one partial isometry.</p>
@@ -304,12 +304,12 @@ $$</p>
 <h2 id="the-frame-on-the-cone">The Frame on the Cone</h2>
 <p>On the null cone the pair collapses to a projection and a rescaling.</p>
 <p>$$
-\tilde Q_H=2a\,\tilde\Pi_{\vec u},\qquad
+\tilde Q_H=2a\,\tilde\Pi_{\mathrm{id},\vec u},\qquad
 \tilde Q_0=\frac{\tilde Q}{2a},\qquad
 \vec u=\frac{\vec W}{\lvert\vec W\rvert},\qquad
 2a=\sqrt{2H(\tilde Q)} .
 $$</p>
-<p>The amplitude is twice the scale times a minimal projection and the frame is the element divided by the same scale. The frame is not a projection: it is a rank-one partial isometry with the element's own direction. Its final projection is $\tilde\Pi_{\vec u}$ and its initial projection is the corresponding projection on the other side.</p>
+<p>The amplitude is twice the scale times a minimal projection and the frame is the element divided by the same scale. The frame is not a projection: it is a rank-one partial isometry with the element's own direction. Its final projection is $\tilde\Pi_{\mathrm{id},\vec u}$ and its initial projection is the corresponding projection on the other side.</p>
 <p>The two factors behave differently as the cone is approached.</p>
 <p>$$
 \tilde Q_\epsilon=\sqrt{\tfrac{1+\epsilon^{2}}{2}}\,e_t+i\sqrt{\tfrac{1-\epsilon^{2}}{2}}\,\vec u,
@@ -317,7 +317,7 @@ $$</p>
 \tilde Q_H=\tilde Q_\epsilon,\qquad
 \tilde Q_0=e_t\quad(\epsilon>0),
 $$</p>
-<p>and at $\epsilon=0$ the element is $\tfrac{1}{\sqrt2}(e_t+i\vec u)$, with $\tilde Q_H=\tilde Q$ and $\tilde Q_0=\tilde\Pi_{\vec u}$.</p>
+<p>and at $\epsilon=0$ the element is $\tfrac{1}{\sqrt2}(e_t+i\vec u)$, with $\tilde Q_H=\tilde Q$ and $\tilde Q_0=\tilde\Pi_{\mathrm{id},\vec u}$.</p>
 <p>The amplitude has a limit and the frame has a jump. The amplitude's limit along the family is the element itself, which is Hermitian and positive semidefinite with one vanishing spectral value. The frame's limit is the identity, and its value is the projection. The two differ by exactly the rank, and the rank is not continuous.</p>
 <p>The jump is not an artefact of the formula. The four conditions of uniqueness force the value on the cone: the frame must have final projection equal to the ideal that $\tilde Q$ generates, and on the cone that ideal is a line. Any pair satisfying the conditions agrees with the canonical pair, so no choice of Moore–Penrose inverse removes the discontinuity. The jump is the algebraic statement that a rank-one element generates a line and a full-rank element generates the algebra, and the two are not close.</p>
 <p>The origin is worse. At $\tilde Q=0$ both factors vanish, while along $\tilde Q=\epsilon e_t$ the amplitude is $\epsilon e_t$ and the frame is $e_t$. The frame jumps from $e_t$ to $0$, which is the collapse of the rank from two to zero in one step.</p>
@@ -462,7 +462,7 @@ $$</p>
 <h2 id="what-the-h-norm-cannot-do">What the H Norm Cannot Do</h2>
 <p><strong>The H-norm is not multiplicative.</strong> The cleanest counterexample is an element of the null cone,</p>
 <p>$$
-\tilde Q=e_t+i\vec e_z=2\tilde\Pi_{\vec e_z},\qquad
+\tilde Q=e_t+i\vec e_z=2\tilde\Pi_{\mathrm{id},\vec e_z},\qquad
 \tilde Q^{2}=2\tilde Q,\qquad
 H(\tilde Q)=2,\qquad
 H\bigl(\tilde Q^{2}\bigr)=8 .
@@ -478,10 +478,10 @@ $$</p>
 <p>The constant is attained, and the witness is short. Take</p>
 <p>$$
 \tilde Q_1=(-1+i)\vec e_x+(-1-i)\vec e_y,\qquad
-\tilde Q_2=e_t-i\vec e_z=2\tilde\Pi_{-\vec e_z},
+\tilde Q_2=e_t-i\vec e_z=2\tilde\Pi_{\mathrm{id},-\vec e_z},
 $$</p>
 <p>so that $H(\tilde Q_1)=4$, $H(\tilde Q_2)=2$, and $\tilde Q_1\tilde Q_2=(-2+2i)\vec e_x+(-2-2i)\vec e_y$ with $H=16$. The ratio is exactly $2$, and no larger ratio was found in a search over three hundred thousand pairs of small Gaussian-integer elements.</p>
-<p>The excess is the normalisation of a pure state. The factor $2$ is $\tfrac{1}{H(\tilde\Pi_{\vec u})}$, because a minimal projection has H-norm $\tfrac12$. An amplitude is not an algebra norm; it is a norm that agrees with composition only up to the normalisation of the states it is made of.</p>
+<p>The excess is the normalisation of a pure state. The factor $2$ is $\tfrac{1}{H(\tilde\Pi_{\mathrm{id},\vec u})}$, because a minimal projection has H-norm $\tfrac12$. An amplitude is not an algebra norm; it is a norm that agrees with composition only up to the normalisation of the states it is made of.</p>
 <p>The H-norm is also blind to the sector. $\tilde Q$ and $i\tilde Q$ have the same H-norm and lie in opposite sectors, so the norm cannot say which sector an element belongs to. The sector is a datum of the interval and of the Krein form, and it is invisible to the weight.</p>
 <p>And the H-norm does not determine the element. The state map of an earlier section has five-dimensional fibres in an eight-dimensional algebra, so a state determines three numbers and an element needs eight. The missing five are the frame and the scale, and no function of $H$ and the state can recover them.</p>
 <h2 id="the-h-norm-among-the-four">The H Norm Among the Four</h2>
@@ -682,7 +682,7 @@ $$</p>
 <td>the Moore–Penrose inverse of the amplitude</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_{\mathrm f}(\tilde Q)$, $\tilde\Pi_{\mathrm i}(\tilde Q)$</td>
+<td>$\tilde\Pi_{\mathrm{id},\mathrm f}(\tilde Q)$, $\tilde\Pi_{\mathrm{id},\mathrm i}(\tilde Q)$</td>
 <td>the final and initial projections, the two ideals of $\tilde Q$</td>
 </tr>
 <tr>

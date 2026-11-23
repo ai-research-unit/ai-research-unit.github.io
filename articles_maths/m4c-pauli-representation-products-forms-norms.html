@@ -76,9 +76,9 @@
 <p><strong>The order of the article.</strong> The frame, the block and the three companion words come first (§<em>The Two Elements in the Peirce Frame</em>). The product and the split of a product into its two parts follow (§<em>The Product</em>, §<em>The Symmetric and the Antisymmetric Part</em>), then the twelve products in one table (§<em>The Twelve Products</em>). The four forms are read next, with their Gram matrices in this frame, which are not the Gram matrices of the axis-free frame (§<em>The Four Forms</em>). The trace, the determinant and the four norms follow (§<em>The Trace</em>, §<em>The Determinant</em>, §<em>The Four Norms</em>), the constants are counted (§<em>The Factors</em>), and what this frame gives and what it costs closes the article (§<em>What the Peirce Frame Gives</em>).</p>
 <p><strong>The frame and the block.</strong> The frame is the standard Peirce frame
 $$
-\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-),\qquad
-\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
-\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y),
+\mathcal{P}=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-}),\qquad
+\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z),\qquad
+\vec\Pi_{\mathrm{nil},\pm}=\tfrac12(i\vec e_x\pm\vec e_y),
 $$
 and the block of an element is
 $$
@@ -128,7 +128,7 @@ the last two when $\langle\tilde Q\rangle_{\natural}\neq0$, that is when $\det A
 $$
 L_1R_2=R_2L_1,
 $$
-which is the associativity of the algebra read on both sides. It is a statement about four matrices, and it does not compress: at the element size $A$ and $A^{\mathsf T}$ need not commute, as §<em>The Product</em> of <em>$M_2(\mathbb{C})$ Pauli Representation</em> shows on $\vec\Upsilon_+$.</p>
+which is the associativity of the algebra read on both sides. It is a statement about four matrices, and it does not compress: at the element size $A$ and $A^{\mathsf T}$ need not commute, as §<em>The Product</em> of <em>$M_2(\mathbb{C})$ Pauli Representation</em> shows on $\vec\Pi_{\mathrm{nil},+}$.</p>
 <p><strong>The mixed trace.</strong> For all $\tilde Q_1,\tilde Q_2$,
 $$
 \operatorname{Tr}(L_1R_2)=4Q_{1t}Q_{2t}.
@@ -314,7 +314,7 @@ $$
 [H]_{\mathcal P}=\tfrac12\mathrm I_4,\qquad
 [\mathrm{Kr}]_{\mathcal P}=\tfrac12\begin{pmatrix}0&0&0&1\\0&-1&0&0\\0&0&-1&0\\1&0&0&0\end{pmatrix}.
 $$
-Each is computed from the four words on the four pairs of frame vectors, and each is a half-integer array. The Hermitian one is diagonal, because the frame is orthogonal for $H$ with equal norms $\tfrac12$; the plain one has $\tfrac12$ at the two scalar corners $(\tilde\Pi_+,\tilde\Pi_+)$ and $(\tilde\Pi_-,\tilde\Pi_-)$, zero at the two nilpotent corners, and $\tfrac12$ at the two mixed entries $(\vec\Upsilon_+,\vec\Upsilon_-)$ and $(\vec\Upsilon_-,\vec\Upsilon_+)$, because $\mathrm{Sc}(\tilde\Pi_\pm^2)=\tfrac12$ and $\mathrm{Sc}(\vec\Upsilon_\pm^2)=0$, while $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ has scalar part $\tfrac12$ and $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ the same.</p>
+Each is computed from the four words on the four pairs of frame vectors, and each is a half-integer array. The Hermitian one is diagonal, because the frame is orthogonal for $H$ with equal norms $\tfrac12$; the plain one has $\tfrac12$ at the two scalar corners $(\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},+})$ and $(\tilde\Pi_{\mathrm{id},-},\tilde\Pi_{\mathrm{id},-})$, zero at the two nilpotent corners, and $\tfrac12$ at the two mixed entries $(\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-})$ and $(\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+})$, because $\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\pm}^2)=\tfrac12$ and $\mathrm{Sc}(\vec\Pi_{\mathrm{nil},\pm}^2)=0$, while $\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-}$ has scalar part $\tfrac12$ and $\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+}$ the same.</p>
 <p><strong>The same form in two frames.</strong> The four arrays above are not the four arrays of the axis-free article, which are the sign matrix $\mathrm E$ and the identity. The form is the same function of two elements in the two frames; only the array changes. The rule is the congruence of <em>Families of Matrix Representations</em>,
 $$
 [\text{form}]_{\mathcal P}=\mathsf C^{\mathsf T}[\text{form}]_{\mathcal E}\mathsf C,\qquad
@@ -535,7 +535,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathcal{P}$</td>
-<td>the standard Peirce frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$</td>
+<td>the standard Peirce frame $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$</td>
 </tr>
 <tr>
 <td>$A_a$</td>

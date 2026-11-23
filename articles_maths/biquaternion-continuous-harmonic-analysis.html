@@ -77,9 +77,9 @@
 W(t,\omega)=\exp(-2\pi i\,\tilde{Ζ}\,\omega t),\qquad \tilde{Ζ}^2=e_t .
 $$</p>
 <p>The element the exponent needs is $i\tilde{Ζ}$, whose square is $-e_t$; the sign is carried by the scalar, and no element whose square is $-1$ is ever named. Three consequences run through the article.</p>
-<p><strong>The root is a pair of idempotents.</strong> The halving map sends a root to an idempotent and back, and the pair attached to a root is $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$. The kernel is then a pair of conjugate unit complex numbers, one on each Peirce ideal,</p>
+<p><strong>The root is a pair of idempotents.</strong> The halving map sends a root to an idempotent and back, and the pair attached to a root is $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$. The kernel is then a pair of conjugate unit complex numbers, one on each Peirce ideal,</p>
 <p>$$
-W(t,\omega)=e^{-2\pi i\omega t}\,\tilde\Pi_+ + e^{+2\pi i\omega t}\,\tilde\Pi_- ,
+W(t,\omega)=e^{-2\pi i\omega t}\,\tilde\Pi_{\mathrm{id},+} + e^{+2\pi i\omega t}\,\tilde\Pi_{\mathrm{id},-} ,
 $$</p>
 <p>and the transform is a pair of ordinary complex transforms on those ideals. The factorization into complex transforms is not a change of basis imposed from outside: it is the transform read in the coordinates the root supplies.</p>
 <p><strong>The isometry has a criterion that names the root.</strong> The Peirce split is orthogonal for the Euclidean form exactly when the root is Hermitian, and Plancherel holds for exactly those roots: the criterion is the star-invariance of one element.</p>
@@ -107,8 +107,8 @@ $$</p>
 <p><strong>Definition (the Hermitian root).</strong> A root is <strong>Hermitian</strong> when $\tilde{Ζ}^{*}=\tilde{Ζ}$.</p>
 <p><strong>Proposition (the Hermitian roots).</strong> The Hermitian roots of $1$ are the central pair $\pm e_t$ and the purely imaginary unit vectors $\pm i\vec u$ over the real unit vectors $\vec u$.</p>
 <p><em>Proof.</em> A pure root has $\tilde{Ζ}^{*}=\bar{\tilde{Ζ}}^{\natural}=-\bar{\tilde{Ζ}}=-\vec p+i\vec p'$, so the Hermitian condition is $\vec p=0$, and the root condition $\lVert\vec p'\rVert^{2}-\lVert\vec p\rVert^{2}=1$ gives $\lVert\vec p'\rVert=1$. The central roots are fixed by the star.</p>
-<p>For a Hermitian root the pair is a pair of Hermitian idempotents, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$, that is, a pair of pure states. §<em>The Plancherel Theorem</em> shows that this is exactly the condition for the transform to be an isometry, and §<em>The Transform of a Measure</em> for the transform of a positive measure to be positive definite.</p>
-<p><strong>The sign of the root.</strong> Replacing $\tilde{Ζ}$ by $-\tilde{Ζ}$ exchanges $\tilde\Pi_+$ and $\tilde\Pi_-$ and conjugates the kernel, $W(t,\omega;-\tilde{Ζ})=\overline{W(t,\omega;\tilde{Ζ})}$ for a pure root. The two transforms carry the same information.</p>
+<p>For a Hermitian root the pair is a pair of Hermitian idempotents, $\tilde\Pi_{\mathrm{id},\pm}^{*}=\tilde\Pi_{\mathrm{id},\pm}$, that is, a pair of pure states. §<em>The Plancherel Theorem</em> shows that this is exactly the condition for the transform to be an isometry, and §<em>The Transform of a Measure</em> for the transform of a positive measure to be positive definite.</p>
+<p><strong>The sign of the root.</strong> Replacing $\tilde{Ζ}$ by $-\tilde{Ζ}$ exchanges $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$ and conjugates the kernel, $W(t,\omega;-\tilde{Ζ})=\overline{W(t,\omega;\tilde{Ζ})}$ for a pure root. The two transforms carry the same information.</p>
 <h3 id="definition">Definition</h3>
 <p>Fix a root of $1$ once and for all. The <strong>biquaternion Fourier kernel</strong> is the function</p>
 <p>$$
@@ -129,9 +129,9 @@ $$</p>
 W(t, \omega)^{\natural} = W(t, \omega)^{-1}, \qquad \langle W(t, \omega)\rangle_{\natural} = e_t ,
 $$</p>
 <p>because $\vec{Ζ}^{\natural}=-\vec{Ζ}$ for a pure element. <strong>The central roots $\tilde{Ζ}=\pm e_t$ are the exception</strong>: the kernel is the complex scalar $e^{\mp 2\pi i\omega t}e_t$, which the quaternion conjugation fixes rather than inverts, and the inverse is the coefficient conjugate $\overline{W}$. The natural norm there is $W^{2}=e^{\mp4\pi i\omega t}e_t$, an invertible element and not $e_t$. The distinction affects only that pair, and the statements below that use the conjugation of the kernel are stated for a pure root.</p>
-<p><strong>The Peirce form.</strong> Substituting $\tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-$, and using $\tilde{Ζ}\tilde\Pi_\pm=\pm\tilde\Pi_\pm$,</p>
+<p><strong>The Peirce form.</strong> Substituting $\tilde{Ζ}=\tilde\Pi_{\mathrm{id},+-}\tilde\Pi_{\mathrm{id},-}$, and using $\tilde{Ζ}\tilde\Pi_{\mathrm{id},\pm}=\pm\tilde\Pi_{\mathrm{id},\pm}$,</p>
 <p>$$
-W(t, \omega) = e^{-2\pi i \omega t}\,\tilde\Pi_+ + e^{+2\pi i \omega t}\,\tilde\Pi_- .
+W(t, \omega) = e^{-2\pi i \omega t}\,\tilde\Pi_{\mathrm{id},+} + e^{+2\pi i \omega t}\,\tilde\Pi_{\mathrm{id},-} .
 $$</p>
 <p>The kernel is a pair of conjugate unit complex numbers, one on each Peirce ideal, and it is never a zero divisor.</p>
 <h3 id="the-kernel-as-the-exponential-of-an-element">The Kernel as the Exponential of an Element</h3>
@@ -183,25 +183,25 @@ $$</p>
 <p>$$
 \boxed{\; f(t) = \int_{-\infty}^{\infty} W(t, \omega)^{-1} F(\omega) \, d\omega \;}.
 $$</p>
-<p><em>Proof.</em> Split $f=\tilde\Pi_+f+\tilde\Pi_-f$ into its Peirce components. The kernel commutes with the two idempotents and acts on them by the two scalars, so the transform separates,</p>
+<p><em>Proof.</em> Split $f=\tilde\Pi_{\mathrm{id},+f+}\tilde\Pi_{\mathrm{id},-f}$ into its Peirce components. The kernel commutes with the two idempotents and acts on them by the two scalars, so the transform separates,</p>
 <p>$$
-F(\omega) = \int_{-\infty}^{\infty} e^{-2\pi i\omega s}\,\tilde\Pi_+ f(s) \, ds + \int_{-\infty}^{\infty} e^{+2\pi i\omega s}\,\tilde\Pi_- f(s) \, ds ,
+F(\omega) = \int_{-\infty}^{\infty} e^{-2\pi i\omega s}\,\tilde\Pi_{\mathrm{id},+} f(s) \, ds + \int_{-\infty}^{\infty} e^{+2\pi i\omega s}\,\tilde\Pi_{\mathrm{id},-} f(s) \, ds ,
 $$</p>
-<p>a pair of ordinary complex transforms of the two components, the second at the frequency $-\omega$. Each is inverted by the classical inversion theorem under the stated hypotheses, in the ℂ² coordinates of its ideal, and the two results add to $\tilde\Pi_+f(t)+\tilde\Pi_-f(t)=f(t)$.</p>
+<p>a pair of ordinary complex transforms of the two components, the second at the frequency $-\omega$. Each is inverted by the classical inversion theorem under the stated hypotheses, in the ℂ² coordinates of its ideal, and the two results add to $\tilde\Pi_{\mathrm{id},+f}(t)+\tilde\Pi_{\mathrm{id},-f}(t)=f(t)$.</p>
 <p>The theorem is unconditional in the root: it uses only the closed form of the kernel, which holds at every root. What it does not give is an isometry, and that is the next subsection.</p>
 <h3 id="the-plancherel-theorem">The Plancherel Theorem</h3>
 <p><strong>Theorem (Plancherel).</strong> Let the root be <strong>Hermitian</strong>, $\tilde{Ζ}^{*}=\tilde{Ζ}$, the central pair or a purely imaginary unit vector. Then the transform extends uniquely to an isometry of $L^{2}(\mathbb{R}, \mathbb{B})$ onto itself, with</p>
 <p>$$
 \boxed{\; \int_{-\infty}^{\infty} \lVert f(t)\rVert^{2} \, dt = \int_{-\infty}^{\infty} \lVert F(\omega)\rVert^{2} \, d\omega \;}.
 $$</p>
-<p><em>Proof.</em> For a Hermitian root the two idempotents are Hermitian, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$, and the Peirce split is orthogonal for the Euclidean form:</p>
+<p><em>Proof.</em> For a Hermitian root the two idempotents are Hermitian, $\tilde\Pi_{\mathrm{id},\pm}^{*}=\tilde\Pi_{\mathrm{id},\pm}$, and the Peirce split is orthogonal for the Euclidean form:</p>
 <p>$$
-\lVert f(t)\rVert^{2} = \lVert \tilde\Pi_+ f(t)\rVert^{2} + \lVert \tilde\Pi_- f(t)\rVert^{2},
+\lVert f(t)\rVert^{2} = \lVert \tilde\Pi_{\mathrm{id},+} f(t)\rVert^{2} + \lVert \tilde\Pi_{\mathrm{id},-} f(t)\rVert^{2},
 $$</p>
-<p>because the cross terms are scalar parts of $P_+XX^{*}P_-^{*}=P_+XX^{*}P_-$, which vanish since $P_+P_-=0$. On each ideal the kernel is the scalar $e^{\mp2\pi i\omega t}$, so the transform of $\tilde\Pi_\pm f$ is the ordinary complex transform of a ℂ²-valued function, a complex isometry by the classical theorem. Summing the two isometries and using the orthogonality gives the displayed identity, and the extension is unique because the integrable functions are dense.</p>
+<p>because the cross terms are scalar parts of $P_+XX^{*}P_-^{*}=P_+XX^{*}P_-$, which vanish since $P_+P_-=0$. On each ideal the kernel is the scalar $e^{\mp2\pi i\omega t}$, so the transform of $\tilde\Pi_{\mathrm{id},\pm} f$ is the ordinary complex transform of a ℂ²-valued function, a complex isometry by the classical theorem. Summing the two isometries and using the orthogonality gives the displayed identity, and the extension is unique because the integrable functions are dense.</p>
 <p><strong>The genuinely non-Hermitian roots.</strong> Off the Hermitian roots the transform is still invertible, by §<em>The Inversion Theorem</em>, but it is <strong>not</strong> an isometry for the Euclidean norm. The identity above fails at the first step: the Peirce split is not orthogonal, and the quantity the transform preserves is</p>
 <p>$$
-\lVert \tilde\Pi_+ f\rVert^{2} + \lVert \tilde\Pi_- f\rVert^{2},
+\lVert \tilde\Pi_{\mathrm{id},+} f\rVert^{2} + \lVert \tilde\Pi_{\mathrm{id},-} f\rVert^{2},
 $$</p>
 <p>a positive form that agrees with the Euclidean one only for a Hermitian root. The failure is measured by the size of the root: a pure root has $\lVert\tilde{Ζ}\rVert^{2}=1+2\lVert\vec p\rVert^{2}$, so the Hermitian roots are the pure roots of Euclidean norm one, and the excess is the amplitude that <em>Relations between the Biquaternion Exponential and the Fourier Kernel</em> calls the norm deficit.</p>
 <p><strong>Corollary (Parseval).</strong> For a Hermitian root and $f, g \in L^{2}(\mathbb{R}, \mathbb{B})$,</p>
@@ -396,7 +396,7 @@ $$</p>
 <p>$$
 \lVert Z(\tilde{Q})\rVert^2 = \sum_{\mu\in\{t,x,y,z\}} \lvert Z_\mu(\tilde{Q}) \rvert^2 \ge 0 ,
 $$</p>
-<p>so the Euclidean quadratic form is non-negative, and $\lVert\cdot\rVert$ is the pairing this article already uses for convergence. What the exchange costs is the norm and not the algebra: the Euclidean form is not the biquaternion norm of the transform, and it is not multiplicative on the product, $\lVert ZW\rVert\neq\lVert Z\rVert\lVert W\rVert$ in general, the Hermitian idempotent $\tilde\Pi=\tfrac12(e_t+i\vec e_x)$ giving $\lVert\tilde\Pi^{2}\rVert=\tfrac12$ against $\lVert\tilde\Pi\rVert^{2}=\tfrac14$. It is nonetheless the scalar part of the sesquilinear product, $\lVert Z\rVert^{2}=\mathrm{Sc}(ZZ^{*})=\langle Z,Z\rangle_{*}$, and with the Hermitian conjugation in the second slot it is the pairing that makes the transform of a positive measure positive definite exactly for the Hermitian roots; the criterion and its proof are <em>The General Plain Sesqualgebra (gps) over $\mathbb{C}$</em>.</p>
+<p>so the Euclidean quadratic form is non-negative, and $\lVert\cdot\rVert$ is the pairing this article already uses for convergence. What the exchange costs is the norm and not the algebra: the Euclidean form is not the biquaternion norm of the transform, and it is not multiplicative on the product, $\lVert ZW\rVert\neq\lVert Z\rVert\lVert W\rVert$ in general, the Hermitian idempotent $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+i\vec e_x)$ giving $\lVert\tilde\Pi_{\mathrm{id}}^{2}\rVert=\tfrac12$ against $\lVert\tilde\Pi_{\mathrm{id}}\rVert^{2}=\tfrac14$. It is nonetheless the scalar part of the sesquilinear product, $\lVert Z\rVert^{2}=\mathrm{Sc}(ZZ^{*})=\langle Z,Z\rangle_{*}$, and with the Hermitian conjugation in the second slot it is the pairing that makes the transform of a positive measure positive definite exactly for the Hermitian roots; the criterion and its proof are <em>The General Plain Sesqualgebra (gps) over $\mathbb{C}$</em>.</p>
 <p><strong>Two hypotheses.</strong> The identity requires central coefficients, because the coefficient has to commute with the kernel; for quaternion-valued coefficients the products $A_k\chi_{\omega_k}$ do not reassemble and the two sides differ by terms of order one on random data. It requires a single root as well: with two roots, one per variable, the collapse $\bar\chi_\omega\chi_\eta=\chi_{\eta-\omega}$ fails as soon as the two differ. The Bochner-type positivity is therefore a one-root, central-coefficient statement even for $\mathbb{H}$, and for $\mathbb{B}$ it fails under those hypotheses as well.</p>
 <h2 id="the-relation-to-the-discrete-transform">The Relation to the Discrete Transform</h2>
 <h3 id="sampling">Sampling</h3>
@@ -422,7 +422,7 @@ $$</p>
 <p><strong>The support of the transform of solutions of $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$.</strong> The transform of a solution is supported on a set determined by the symbol of the gradient. What is the structure of this set?</p>
 </li>
 <li>
-<p><strong>Plancherel for the other roots.</strong> The isometry is stated for the Hermitian roots; for the other pure roots the transform preserves the Peirce norm $\lVert\tilde\Pi_+f\rVert^{2}+\lVert\tilde\Pi_-f\rVert^{2}$ and no Euclidean one, and the sharp form of the loss is open.</p>
+<p><strong>Plancherel for the other roots.</strong> The isometry is stated for the Hermitian roots; for the other pure roots the transform preserves the Peirce norm $\lVert\tilde\Pi_{\mathrm{id},+f}\rVert^{2}+\lVert\tilde\Pi_{\mathrm{id},-f}\rVert^{2}$ and no Euclidean one, and the sharp form of the loss is open.</p>
 </li>
 <li>
 <p><strong>Two roots that do not commute.</strong> The two-unit transform is defined for every pair, and its factorisation is proved only when the two commute or coincide; whether it still reduces to a fixed finite family of complex transforms is open.</p>
@@ -477,11 +477,11 @@ $$</p>
 <td>the real and imaginary parts of $\vec{Ζ}=\vec p+i\vec p'$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$</td>
-<td>the idempotent pair of the root, $\tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$</td>
+<td>the idempotent pair of the root, $\tilde{Ζ}=\tilde\Pi_{\mathrm{id},+-}\tilde\Pi_{\mathrm{id},-}$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm\mathbb{B}$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}\mathbb{B}$</td>
 <td>the two Peirce ideals, each a complex plane</td>
 </tr>
 <tr>

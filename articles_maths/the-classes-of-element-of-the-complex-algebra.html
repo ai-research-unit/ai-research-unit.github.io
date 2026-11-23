@@ -80,15 +80,15 @@
 <p><strong>Proof.</strong> For the plain product, let $Q_1Q_2=0$ with $Q_1\neq0$. Since $\mathbb{C}$ is a field, $Q_1$ is invertible, and $Q_2=Q_1^{-1}(Q_1Q_2)=0$; the same on the other side. For the sesquilinear product, $Q_1\bar Q_2=0$ with $Q_1\neq0$ gives $\bar Q_2=Q_1^{-1}0=0$, hence $Q_2=0$; and $Q_2\bar Q_1=0$ with $Q_1\neq0$ gives $Q_2=0$. The annihilator statements are the same computation read as a set.</p>
 <p><strong>Remark (the collapse of the class).</strong> On $\mathbb{C}$ the zero divisors and the nontrivial annihilators both vanish, and for the same reason: an element is invertible exactly when it is nonzero.</p>
 <h2 id="the-idempotents">The Idempotents</h2>
-<p><strong>Definition.</strong> An element $\Pi$ is an <strong>idempotent</strong> of a product when $\Pi^{2}=\Pi$ in that product, the zero element being counted.</p>
+<p><strong>Definition.</strong> An element $\Pi_{\mathrm{id}}$ is an <strong>idempotent</strong> of a product when $\Pi_{\mathrm{id}}^{2}=\Pi_{\mathrm{id}}$ in that product, the zero element being counted.</p>
 <p><strong>Theorem.</strong> In either product the idempotents of $\mathbb{C}$ are $0$ and $1$, and no more.</p>
-<p><strong>Proof.</strong> For the plain product, $\Pi^{2}=\Pi$ reads $\Pi(\Pi-1)=0$; the field has no zero divisor, so $\Pi=0$ or $\Pi=1$. For the sesquilinear product, $\Pi\bar\Pi=\Pi$; if $\Pi=0$ this holds, and if $\Pi\neq0$ it gives $\bar\Pi=1$, that is $\Pi=1$, which is idempotent.</p>
-<p><strong>Remark (the degenerate Peirce decomposition).</strong> The Peirce decomposition of an algebra with respect to an idempotent $\Pi$ separates the two corner pieces $\Pi\mathbb{C}\Pi$ and the two mixed pieces; here the only nonzero idempotent is $1$, for which the corner is $\mathbb{C}$ itself and both mixed pieces vanish. The decomposition is therefore trivial, and there are no minimal left ideals off the two obvious corner pieces.</p>
+<p><strong>Proof.</strong> For the plain product, $\Pi_{\mathrm{id}}^{2}=\Pi_{\mathrm{id}}$ reads $\Pi_{\mathrm{id}}(\Pi_{\mathrm{id}}-1)=0$; the field has no zero divisor, so $\Pi_{\mathrm{id}}=0$ or $\Pi_{\mathrm{id}}=1$. For the sesquilinear product, $\Pi_{\mathrm{id}}\bar\Pi_{\mathrm{id}}=\Pi_{\mathrm{id}}$; if $\Pi_{\mathrm{id}}=0$ this holds, and if $\Pi_{\mathrm{id}}\neq0$ it gives $\bar\Pi_{\mathrm{id}}=1$, that is $\Pi_{\mathrm{id}}=1$, which is idempotent.</p>
+<p><strong>Remark (the degenerate Peirce decomposition).</strong> The Peirce decomposition of an algebra with respect to an idempotent $\Pi_{\mathrm{id}}$ separates the two corner pieces $\Pi_{\mathrm{id}}\mathbb{C}\Pi_{\mathrm{id}}$ and the two mixed pieces; here the only nonzero idempotent is $1$, for which the corner is $\mathbb{C}$ itself and both mixed pieces vanish. The decomposition is therefore trivial, and there are no minimal left ideals off the two obvious corner pieces.</p>
 <h2 id="the-nilpotents">The Nilpotents</h2>
-<p><strong>Definition.</strong> A nonzero element $\Upsilon$ is a <strong>nilpotent</strong> when some power of it vanishes. Over a field the square already suffices, since $\Upsilon^{n}=0$ with $n$ least factors as $\Upsilon\cdot\Upsilon^{n-1}=0$ and forces $\Upsilon^{n-1}=0$; the theorem below is proved for $\Upsilon^{2}=0$.</p>
-<p><strong>Theorem.</strong> In either product the only element of $\mathbb{C}$ with $\Upsilon^{2}=0$ is $0$.</p>
-<p><strong>Proof.</strong> For the plain product, $\Upsilon^{2}=0=\Upsilon\cdot\Upsilon$ forces $\Upsilon=0$ by the absence of zero divisors. For the sesquilinear product, $\Upsilon\bar\Upsilon=(u^{2}+u'^{2})$, where $\Upsilon=u+iu'$, and a sum of two real squares vanishes only at $u=u'=0$.</p>
-<p><strong>Remark.</strong> The second computation is also the reason the sesquilinear square of an element is a non-negative real, the value $\langle\Upsilon\rangle_{*}$ of the definite algebraic norm; the square-zero set of the sesquilinear product is the origin alone.</p>
+<p><strong>Definition.</strong> A nonzero element $\Pi_{\mathrm{nil}}$ is a <strong>nilpotent</strong> when some power of it vanishes. Over a field the square already suffices, since $\Pi_{\mathrm{nil}}^{n}=0$ with $n$ least factors as $\Pi_{\mathrm{nil}}\cdot\Pi_{\mathrm{nil}}^{n-1}=0$ and forces $\Pi_{\mathrm{nil}}^{n-1}=0$; the theorem below is proved for $\Pi_{\mathrm{nil}}^{2}=0$.</p>
+<p><strong>Theorem.</strong> In either product the only element of $\mathbb{C}$ with $\Pi_{\mathrm{nil}}^{2}=0$ is $0$.</p>
+<p><strong>Proof.</strong> For the plain product, $\Pi_{\mathrm{nil}}^{2}=0=\Pi_{\mathrm{nil}}\cdot\Pi_{\mathrm{nil}}$ forces $\Pi_{\mathrm{nil}}=0$ by the absence of zero divisors. For the sesquilinear product, $\Pi_{\mathrm{nil}}\bar\Pi_{\mathrm{nil}}=(u^{2}+u'^{2})$, where $\Pi_{\mathrm{nil}}=u+iu'$, and a sum of two real squares vanishes only at $u=u'=0$.</p>
+<p><strong>Remark.</strong> The second computation is also the reason the sesquilinear square of an element is a non-negative real, the value $\langle\Pi_{\mathrm{nil}}\rangle_{*}$ of the definite algebraic norm; the square-zero set of the sesquilinear product is the origin alone.</p>
 <h2 id="the-roots-of-the-distinguished-values">The Roots of the Distinguished Values</h2>
 <p><strong>Definition.</strong> A <strong>root</strong> of a value $W$ in a product is an element $Z$ with $Z^{2}=W$ in that product; a root of a central value is written $Ζ$, the tilde-free glyph of the complex layer, the case rule being the one of <em>Special Element and Peirce Conventions</em>, §<em>The Root Convention</em>.</p>
 <p><strong>Theorem.</strong> In the plain product the roots are as follows: of $-1$ exactly the two elements $i$ and $-i$; of $+1$ exactly the two elements $1$ and $-1$; of $0$ the element $0$ alone.</p>
@@ -137,16 +137,16 @@ $$</p>
 <td>the general plain bilinear and the general plain sesquilinear product</td>
 </tr>
 <tr>
-<td>$\Pi$</td>
-<td>an idempotent, with no tilde in the complex layer</td>
+<td>$\Pi_{\mathrm{id}}$</td>
+<td>an idempotent of the complex layer, a capital with no tilde</td>
 </tr>
 <tr>
-<td>$\Upsilon$</td>
-<td>a nilpotent, with no tilde in the complex layer</td>
+<td>$\Pi_{\mathrm{nil}}$</td>
+<td>a nilpotent of the complex layer, a capital with no tilde</td>
 </tr>
 <tr>
 <td>$Ζ$</td>
-<td>a root of a central value, with no tilde in the complex layer</td>
+<td>a root of a central value, a capital with no tilde</td>
 </tr>
 </tbody>
 </table></div>

@@ -277,8 +277,8 @@ $$</p>
 <h2 id="no-preferred-axis">No Preferred Axis</h2>
 <p><strong>Theorem.</strong> Let $\vec u$ be a unit real axis and let $L_{\vec u}$ be left multiplication by it. Then $L_{\vec u}$ has no invariant real line in the algebra, and its eigenvalues are $\pm i$.</p>
 <p><em>Proof.</em> The square $L_{\vec u}^{2}$ is left multiplication by $\vec u^{2}=-e_t$, so $L_{\vec u}^{2}=-\mathrm{id}$ and every eigenvalue $\lambda$ satisfies $\lambda^{2}=-1$. An eigenvector with a real eigenvalue therefore does not exist, and no real line is carried to itself.</p>
-<p><strong>Theorem (the invariant complex lines).</strong> The invariant complex lines of $L_{\vec u}$ are the minimal left ideals built from the idempotents of the axis, $\mathbb{B}\tilde\Pi_{\pm}(\vec u)$, and they are indexed by the pair $\pm\vec u$.</p>
-<p><em>Proof.</em> Over the complex numbers the equation $L_{\vec u}^{2}=-\mathrm{id}$ gives the two eigenspaces of the eigenvalues $\pm i$, and each is a two-dimensional space spanned by the elements annihilated by the projectors $\tilde\Pi_{\mp}(\vec u)$ of the axis; the lines inside an eigenspace are the minimal left ideals of that axis. A different axis gives a different pair of idempotents and hence a different pair of eigenspaces.</p>
+<p><strong>Theorem (the invariant complex lines).</strong> The invariant complex lines of $L_{\vec u}$ are the minimal left ideals built from the idempotents of the axis, $\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u)$, and they are indexed by the pair $\pm\vec u$.</p>
+<p><em>Proof.</em> Over the complex numbers the equation $L_{\vec u}^{2}=-\mathrm{id}$ gives the two eigenspaces of the eigenvalues $\pm i$, and each is a two-dimensional space spanned by the elements annihilated by the projectors $\tilde\Pi_{\mathrm{id},\mp}(\vec u)$ of the axis; the lines inside an eigenspace are the minimal left ideals of that axis. A different axis gives a different pair of idempotents and hence a different pair of eigenspaces.</p>
 <p><strong>Corollary.</strong> No action of the group marks an axis, and a decomposition of the algebra into two invariant complex subspaces is a choice of a point of the sphere of axes.</p>
 <p><em>Proof.</em> Every rotor other than $\pm e_t$ has an axis, and conjugation carries the axis of $\tilde u$ to the axis of $\tilde v\tilde u\tilde v^{\natural}$, which runs over the whole sphere of axes as $\tilde v$ runs over the group; no axis is fixed. The invariant complex subspaces are the eigenspaces above, indexed by the axis, so choosing them is choosing the axis.</p>
 <p><strong>Corollary (all three axes at once).</strong> The natural conjugation negates the three axes simultaneously, and no rotor conjugation negates a single axis while fixing the other two.</p>
@@ -470,7 +470,7 @@ $$</p>
 <td>$\operatorname{Sym}^{3}S$ and the two higher carriers, of dimensions $4,5,7$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_{\pm}(\vec u)$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}(\vec u)$</td>
 <td>the idempotents of the axis, whose minimal left ideals are the invariant lines</td>
 </tr>
 </tbody>

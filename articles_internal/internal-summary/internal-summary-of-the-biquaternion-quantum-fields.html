@@ -75,7 +75,7 @@
 <p><strong>What the category does.</strong> It quantises the fields of the two previous categories: the scalar, the Dirac, the Maxwell, the Proca, the Rarita–Schwinger and the graviton field. The algebra supplies the Fock space, the vacuum and the grading; the corpus supplies the standard machinery (Wick, Bogoliubov, path integrals, LSZ, BRST) rewritten in it.</p>
 <p><strong>The structural fact that organises the category.</strong> The vacuum is a <strong>minimal idempotent</strong>:</p>
 <p>$$
-\tilde\Pi_+=\tfrac12\bigl(e_t+i\vec e_z\bigr)=|0\rangle\langle 0|,\qquad \tilde\Pi^2=\tilde\Pi,\qquad \mathrm{rank}\,\mathsf M_2(\tilde\Pi)\in\{0,1,2\}.
+\tilde\Pi_{\mathrm{id},+}=\tfrac12\bigl(e_t+i\vec e_z\bigr)=|0\rangle\langle 0|,\qquad \tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}},\qquad \mathrm{rank}\,\mathsf M_2(\tilde\Pi_{\mathrm{id}})\in\{0,1,2\}.
 $$</p>
 <p>So "no particles" is not a vector added to the theory: it is a rank-one projection inside the algebra, and the Fock space is built on it:</p>
 <p>$$
@@ -118,18 +118,18 @@ $$</p>
 <h2 id="1-generalities">1. Generalities</h2>
 <p><strong>The state and the GNS form.</strong></p>
 <p>$$
-\omega_{\tilde\Pi}(\tilde Q_3)=2\,\mathrm{Sc}\bigl(\tilde\Pi\tilde Q_3\bigr),\qquad
-\mathcal H_{\tilde\Pi_+}\cong\mathbb{B}\,\tilde\Pi_+\cong\mathbb{C}^2 .
+\omega_{\tilde\Pi_{\mathrm{id}}}(\tilde Q_3)=2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id}}\tilde Q_3\bigr),\qquad
+\mathcal H_{\tilde\Pi_{\mathrm{id},+}}\cong\mathbb{B}\,\tilde\Pi_{\mathrm{id},+}\cong\mathbb{C}^2 .
 $$</p>
 <p><strong>The grading, and the odd generators.</strong></p>
 <p>$$
-\vec\Upsilon_x=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\qquad \vec\Upsilon_y=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),
+\vec\Pi_{\mathrm{nil},x}=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\qquad \vec\Pi_{\mathrm{nil},y}=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),
 $$</p>
 <p>$$
-\boxed{\;\vec\Upsilon_x^{2}=0,\qquad \vec\Upsilon_y^{2}=0,\qquad \{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t,\qquad [\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z\neq e_t\;}
+\boxed{\;\vec\Pi_{\mathrm{nil},x}^{2}=0,\qquad \vec\Pi_{\mathrm{nil},y}^{2}=0,\qquad \{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\}=e_t,\qquad [\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}]=i\vec e_z\neq e_t\;}
 $$</p>
 <p>$$
-\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z),\qquad (-1)^F=e_t-2\tilde\Pi_-=i\vec e_z .
+\tilde\Pi_{\mathrm{id},-}=\vec\Pi_{\mathrm{nil},y}\vec\Pi_{\mathrm{nil},x}=\tfrac12(e_t-i\vec e_z),\qquad (-1)^F=e_t-2\tilde\Pi_{\mathrm{id},-}=i\vec e_z .
 $$</p>
 <p><strong>The non-trivial claim of spin–statistics.</strong> The two odd generators are nilpotent and their <em>anticommutator</em> is the identity while their <em>commutator</em> is $i\vec e_z$, whose scalar part is zero. A canonical commutator must equal a $c$-number times the identity; here only the anticommutator does. The bosonic option is therefore algebraically excluded, and the fermionic one is forced. Add to this the rotor's double cover,</p>
 <p>$$
@@ -261,8 +261,8 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p><strong>The category in six formulas.</strong></p>
 <p>$$
-|0\rangle\langle 0|=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\qquad
-\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t,\qquad \mathrm{Sc}[\vec\Upsilon_x,\vec\Upsilon_y]=0,
+|0\rangle\langle 0|=\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z),\qquad
+\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\}=e_t,\qquad \mathrm{Sc}[\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}]=0,
 $$</p>
 <p>$$
 T=\frac{\hbar\kappa}{2\pi ck_B},\qquad T_\mu{}^\mu=\frac{c}{24\pi}R,\qquad
@@ -280,11 +280,11 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde\Pi_\pm$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}$</td>
 <td>minimal idempotents, vacuum and its complement</td>
 </tr>
 <tr>
-<td>$\vec\Upsilon_x,\vec\Upsilon_y$</td>
+<td>$\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}$</td>
 <td>odd (fermionic) generators</td>
 </tr>
 <tr>

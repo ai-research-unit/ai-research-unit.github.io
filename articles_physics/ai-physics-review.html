@@ -126,7 +126,7 @@ $$</p>
 <p>the three minus signs of the bilinear expansion being cancelled by $i^2=-1$ from the imaginary coefficients. The plain form is the restriction, not a second pairing.</p>
 <p>The two sign patterns. The Hermitian form has inertia $(4,0)$ on the whole algebra. The plain form has inertia $(4,0)$ on $\mathbb{B}_{\Psi}$ and $(0,4)$ on $\mathbb{B}_{\Phi}$; it is definite on each sector and indefinite on the algebra.</p>
 <p>Which of the four norms. The convention names four algebraic norms: the plain norm $\langle\tilde Q\rangle=\mathrm{Sc}(\tilde Q^2)$, the quaternionic norm $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural$, called the biquaternion norm elsewhere in the corpus, the Hermitian norm $\langle\tilde Q\rangle_*=\sum_\mu\lvert Q_\mu\rvert^2$, and the Krein norm $\langle\tilde Q\rangle_{\natural*}=\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$. The weight above is none of them: it is the normalised Hermitian form, a pairing, not a quadratic form. On $\mathbb{B}_{\Psi}$ the plain and Hermitian norms coincide at $h_t^2+\lvert\vec h_\Psi\rvert^2$, and the quaternionic and Krein norms coincide at $h_t^2-\lvert\vec h_\Psi\rvert^2$; only the first pair is positive definite. The normalisation $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$ is linear and is not a norm condition.</p>
-<p>The normalisation. The idempotents along a unit vector $\vec u$ are $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u)$. They satisfy $\tilde\Pi_++\tilde\Pi_-=e_t$ and $\mathrm{Sc}(\tilde\Pi_\pm)=\tfrac12$. A state is a convex combination of the two idempotents along its axis, so</p>
+<p>The normalisation. The idempotents along a unit vector $\vec u$ are $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec u)$. They satisfy $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$ and $\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\pm})=\tfrac12$. A state is a convex combination of the two idempotents along its axis, so</p>
 <p>$$
 \mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12,\qquad\text{that is}\qquad \langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12.
 $$</p>
@@ -136,7 +136,7 @@ p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\P
 =\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
 =h_t+\vec s_{\Psi}\cdot\vec h_\Psi.
 $$</p>
-<p>The star is the Hermitian conjugation; it is inert here because $\tilde{Ϛ}_{\Psi}$ and $\tilde H_\Psi$ are Hermitian, and it is kept because $\langle\cdot,\cdot\rangle_{*}$ is the form that is positive definite on the whole algebra. For $\tilde H_\Psi=\tilde\Pi(\vec u)$ this is $\tfrac12(1+\vec s_{\Psi}\cdot\vec u)$, which lies in $[0,1]$ when $|\vec s_{\Psi}|\le1$, and the weights of the two outcomes $\tilde\Pi$ and $e_t-\tilde\Pi$ sum to one. This is the Born rule on the sector, and it is complete before any matrix is chosen.</p>
+<p>The star is the Hermitian conjugation; it is inert here because $\tilde{Ϛ}_{\Psi}$ and $\tilde H_\Psi$ are Hermitian, and it is kept because $\langle\cdot,\cdot\rangle_{*}$ is the form that is positive definite on the whole algebra. For $\tilde H_\Psi=\tilde\Pi_{\mathrm{id}}(\vec u)$ this is $\tfrac12(1+\vec s_{\Psi}\cdot\vec u)$, which lies in $[0,1]$ when $|\vec s_{\Psi}|\le1$, and the weights of the two outcomes $\tilde\Pi_{\mathrm{id}}$ and $e_t-\tilde\Pi_{\mathrm{id}}$ sum to one. This is the Born rule on the sector, and it is complete before any matrix is chosen.</p>
 <h4 id="the-quaternionic-form-the-interval">The quaternionic form: the interval</h4>
 <p>The form. The quaternionic form applies the quaternion conjugation to the first slot,</p>
 <p>$$
@@ -287,19 +287,19 @@ $$</p>
 <li>
 <p>The state space is not added: it is the positive cone of the sector. The pure states are the algebra's own idempotents,
 $$
-\tilde{\Pi} = \tfrac12(e_t \pm i\vec u_{\mathrm r}), \qquad \tilde{\Pi}^2 = \tilde{\Pi}, \qquad \tilde{\Pi}^{*} = \tilde{\Pi}, \qquad \langle\tilde{\Pi},e_t\rangle_{*} = \tfrac12, \qquad \langle\tilde{\Pi}\rangle_{\natural} = 0,
+\tilde\Pi_{\mathrm{id}} = \tfrac12(e_t \pm i\vec u_{\mathrm r}), \qquad \tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}, \qquad \tilde\Pi_{\mathrm{id}}^{*} = \tilde\Pi_{\mathrm{id}}, \qquad \langle\tilde\Pi_{\mathrm{id}},e_t\rangle_{*} = \tfrac12, \qquad \langle\tilde\Pi_{\mathrm{id}}\rangle_{\natural} = 0,
 $$
 parametrised by the unit sphere — the Bloch sphere — and the mixed states are the positive elements with $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$, that is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$
 $$
 \tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi}), \qquad \lvert\vec s_{\Psi}\rvert \le 1,
 $$
-with $\det\mathsf{M}_2(\tilde{Ϛ}_{\Psi}) = (1-\lvert\vec s_{\Psi}\rvert^2)/4 \ge 0$ as the positivity condition: the Bloch ball, exactly the convex set of states of a qubit. Nothing about the state space has to be put in by hand, and the pure states sit on the same null cone that the material sector calls the light cone, since $\langle\tilde{\Pi}\rangle_{\natural} = 0$.</p>
+with $\det\mathsf{M}_2(\tilde{Ϛ}_{\Psi}) = (1-\lvert\vec s_{\Psi}\rvert^2)/4 \ge 0$ as the positivity condition: the Bloch ball, exactly the convex set of states of a qubit. Nothing about the state space has to be put in by hand, and the pure states sit on the same null cone that the material sector calls the light cone, since $\langle\tilde\Pi_{\mathrm{id}}\rangle_{\natural} = 0$.</p>
 </li>
 <li>
 <p>The non-commutativity has exactly the quantum pattern. The product of two Hermitian elements is Hermitian exactly when the two commute. The commutator of two Hermitian elements is anti-Hermitian, hence an element of $\mathbb{B}_{\Phi}$. Therefore $i$ times a commutator is again Hermitian, hence again an observable. That is the pattern of the quantum commutator and of the generator of a dynamics. Equivalently, $\mathbb{B}_{\Psi}$ closes under the anticommutator and not under the commutator: it is a Jordan algebra, as an algebra of observables is, while the Lie algebra sits in the other sector.</p>
 </li>
 <li>
-<p>Interference has a home. A state can be represented as the left ideal $\mathbb{B}\tilde{\Pi}$ with basis $\{\tilde{\Pi}, \tilde\Upsilon\}$. Here $\tilde{\Pi} = \tfrac12(e_t+i\vec e_z)$ is idempotent and $\tilde\Upsilon = \tfrac12(i\vec e_x+\vec e_y)$ is nilpotent, $\tilde\Upsilon^2 = 0$, with $\tilde\Upsilon^{*}\neq\tilde\Upsilon$: a partner to the state and not itself a state. On that basis the positive form has Gram matrix $\tfrac12I_2$. So the two amplitudes are the two coefficients of the element, and the amplitudes add while the weights do not.</p>
+<p>Interference has a home. A state can be represented as the left ideal $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ with basis $\{\tilde\Pi_{\mathrm{id}}, \tilde\Pi_{\mathrm{nil}}\}$. Here $\tilde\Pi_{\mathrm{id}} = \tfrac12(e_t+i\vec e_z)$ is idempotent and $\tilde\Pi_{\mathrm{nil}} = \tfrac12(i\vec e_x+\vec e_y)$ is nilpotent, $\tilde\Pi_{\mathrm{nil}}^2 = 0$, with $\tilde\Pi_{\mathrm{nil}}^{*}\neq\tilde\Pi_{\mathrm{nil}}$: a partner to the state and not itself a state. On that basis the positive form has Gram matrix $\tfrac12I_2$. So the two amplitudes are the two coefficients of the element, and the amplitudes add while the weights do not.</p>
 </li>
 <li>
 <p>What the sector does not supply. The complex phase lives in the state module and not in the sector. $\mathbb{B}_{\Psi}$ is a four-real-dimensional subspace, $\mathbb{R}e_t\oplus i\mathbb{R}\vec e_x\oplus i\mathbb{R}\vec e_y\oplus i\mathbb{R}\vec e_z$ — one real direction and three imaginary ones. It is not an algebra under the ambient product, only a Jordan algebra under the anticommutator; the complex structure acts through the centre. So the $i$ of quantum mechanics is carried by the module. The canonical commutation relation is not in the algebra and must be imported. And only one qubit is built, so the relativistic state space does not exist yet. What the sector does supply is the action of the group on a state, and the failure of a boost to preserve the normalisation is the subject of <em>The Lorentz Action on the Informational Sector</em> below.</p>
@@ -402,7 +402,7 @@ $$</p>
 </tr>
 <tr>
 <td>The state module</td>
-<td>Left ideal $\mathbb{B}\tilde{\Pi}$ with basis $\{\tilde{\Pi},\tilde\Upsilon\}$, Gram matrix $\tfrac12I_2$, amplitudes add</td>
+<td>Left ideal $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ with basis $\{\tilde\Pi_{\mathrm{id}},\tilde\Pi_{\mathrm{nil}}\}$, Gram matrix $\tfrac12I_2$, amplitudes add</td>
 </tr>
 <tr>
 <td>The oscillator obstruction</td>
@@ -518,7 +518,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>One item of the section has no row, because its content is two paragraphs long: the composition of systems. What composition preserves. A one-qubit formalism must say what object composes. The corpus composes modules, so $n$ qubits are the tensor power of the defining module, $S^{\otimes n}=\mathbb{C}^{2^{n}}$, with joint algebra $M_{2^{n}}(\mathbb{C})$ — the biquaternion algebra at $n=1$ and never again, since $M_{2^{n}}$ has degree $2^{n}$. The split does not survive. The complex tensor product is the quotient of $\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B}$ by $i\otimes e_t=e_t\otimes i$, and the partial star $\sigma_1={}^{*}\otimes\mathrm{id}$ sends that relation to its negative, so <strong>no per-subsystem sector label exists</strong>, exactly and not approximately. The total star ${}^{*}\otimes{}^{*}$ descends, since its two sign changes cancel, and its fixed space is $\mathrm{Herm}(M_{2^{n}}(\mathbb{C}))$; the four corners collapse pairwise, a material unit being $i$ times an informational one; and the real tensor product splits into $2^{n-1}$ summands by the central involution $\mathsf J=i\otimes i$, so the quotient freezes one global bit rather than hiding it.</p>
-<p>What composition hands back. Of the eight diagonal Hermitian candidates $\tilde\Pi_\epsilon=\tfrac14(e_t\otimes e_t+\sum_k\epsilon_k\vec e_k\otimes\vec e_k)$ exactly four are states, those with $\epsilon_1\epsilon_2\epsilon_3=+1$ — the four Bell projectors. The other four are $\tfrac12 e_t\otimes e_t-p$ for a rank-one projector $p$, with spectrum $(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$, so positivity and not normalisation makes the selection. The one-qubit alternating form tensors, $\omega\otimes\omega(\psi,\psi)=2\det c$, hence $C=2\lvert\det c\rvert$ with no free constant, and its parity rule $(\omega^{\otimes n})^{\mathsf T}=(-1)^{n}\omega^{\otimes n}$ makes the third power vanish on the diagonal: <strong>no degree-two entanglement invariant exists at three qubits</strong>, so the three-qubit measures are quartic. GHZ and $W$ are then separated by Cayley's hyperdeterminant, $\operatorname{Hdet}=\tfrac14$ and tangle one against $\operatorname{Hdet}=0$ and tangle zero, with $\tau=4\lvert\operatorname{Hdet}\rvert$; GHZ loses all entanglement when a qubit is removed and $W$ leaves $\tfrac23$ in each pair, and the CKW inequality $C_{AB}^{2}+C_{AC}^{2}\le4\det\rho_A$ is saturated exactly on the states of vanishing tangle. The computations are the corpus's; the reading of the concurrence as <em>the</em> pairwise measure, and of the quartic degree as the parity of the alternating form, is an interpretation of them and not a prediction. Nothing here is a single biquaternion — a pair holds four complex amplitudes, two biquaternions' worth of data under a different product — there is no per-subsystem label and no many-body limit, and the $n$-qubit theory is the standard one.</p>
+<p>What composition hands back. Of the eight diagonal Hermitian candidates $\tilde\Pi_{\mathrm{id},\epsilon}=\tfrac14(e_t\otimes e_t+\sum_k\epsilon_k\vec e_k\otimes\vec e_k)$ exactly four are states, those with $\epsilon_1\epsilon_2\epsilon_3=+1$ — the four Bell projectors. The other four are $\tfrac12 e_t\otimes e_t-p$ for a rank-one projector $p$, with spectrum $(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$, so positivity and not normalisation makes the selection. The one-qubit alternating form tensors, $\omega\otimes\omega(\psi,\psi)=2\det c$, hence $C=2\lvert\det c\rvert$ with no free constant, and its parity rule $(\omega^{\otimes n})^{\mathsf T}=(-1)^{n}\omega^{\otimes n}$ makes the third power vanish on the diagonal: <strong>no degree-two entanglement invariant exists at three qubits</strong>, so the three-qubit measures are quartic. GHZ and $W$ are then separated by Cayley's hyperdeterminant, $\operatorname{Hdet}=\tfrac14$ and tangle one against $\operatorname{Hdet}=0$ and tangle zero, with $\tau=4\lvert\operatorname{Hdet}\rvert$; GHZ loses all entanglement when a qubit is removed and $W$ leaves $\tfrac23$ in each pair, and the CKW inequality $C_{AB}^{2}+C_{AC}^{2}\le4\det\rho_A$ is saturated exactly on the states of vanishing tangle. The computations are the corpus's; the reading of the concurrence as <em>the</em> pairwise measure, and of the quartic degree as the parity of the alternating form, is an interpretation of them and not a prediction. Nothing here is a single biquaternion — a pair holds four complex amplitudes, two biquaternions' worth of data under a different product — there is no per-subsystem label and no many-body limit, and the $n$-qubit theory is the standard one.</p>
 <h3 id="in-mathematics_1">In mathematics</h3>
 <p>These are constructions and theorems proved from the definitions, new to the standard literature. They stand on their own: they make no physical claim, and a reader can check them as mathematics. The sizes are given because they are the measure of how far each is developed, and every one is read off the mathematics menu, chapter by chapter, rather than asserted. The biquaternion chapter holds 302 articles, of which 216 are distributed over the twelve biquaternion structures — fifteen for each of the eight symmetric and antisymmetric bands, and 19, 20, 24 and 33 for the four general products. Beside it stand the general chapters the biquaternion articles draw on, and they are not counted in that 302. The four sesqualgebra chapters hold 138: <em>Sesqualgebras</em> 40, <em>Sesqualgebras with a degree-2 form</em> 49, <em>Topology on Sesqualgebras</em> 24, <em>Topology on Sesqualgebras with a degree-2 form</em> 25. The two chapters on algebras with a degree-2 form hold 90: <em>Algebras with a degree-2 form</em> 54 and <em>Topology on Algebras with a degree-2 form</em> 36. The six chapters together hold 228. Inside the biquaternion chapter the forms live in two places. The <em>Form</em> band of each of the twelve biquaternion structures holds 31 articles in all. The 13 of <em>Products, Forms and Algebraic Norms</em> own the four general products, the four forms and the four algebraic norms. A further 14 articles compare the biquaternions with the neighbouring number systems. The claim that these objects are absent from the standard literature is the corpus's claim; I could not test it from inside the corpus, and the test is a literature check rather than a computation.</p>
 <div class="table-scroll"><table>
@@ -660,8 +660,8 @@ $$</p>
 <td>Unit-norm element; $SL(2,\mathbb{C})$, the Lorentz double cover</td>
 </tr>
 <tr>
-<td>$\tilde{\Pi} = \tfrac12(e_t+i\vec u_{\mathrm r})$</td>
-<td>Pure state: idempotent, Hermitian, null, normalised by $\langle\tilde{\Pi},e_t\rangle_{*}=\tfrac12$; unit matrix trace in the $2\times2$ reading</td>
+<td>$\tilde\Pi_{\mathrm{id}} = \tfrac12(e_t+i\vec u_{\mathrm r})$</td>
+<td>Pure state: idempotent, Hermitian, null, normalised by $\langle\tilde\Pi_{\mathrm{id}},e_t\rangle_{*}=\tfrac12$; unit matrix trace in the $2\times2$ reading</td>
 </tr>
 <tr>
 <td>$\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, $\lvert\vec s_{\Psi}\rvert\le1$</td>
@@ -672,8 +672,8 @@ $$</p>
 <td>Observable: Hermitian, real spectrum $h_t\pm\lvert\vec h_\Psi\rvert$</td>
 </tr>
 <tr>
-<td>$\tilde\Upsilon = \tfrac12(i\vec e_x+\vec e_y)$</td>
-<td>Nilpotent partner of the idempotent $\tilde{\Pi}$ in the state module</td>
+<td>$\tilde\Pi_{\mathrm{nil}} = \tfrac12(i\vec e_x+\vec e_y)$</td>
+<td>Nilpotent partner of the idempotent $\tilde\Pi_{\mathrm{id}}$ in the state module</td>
 </tr>
 <tr>
 <td>$c$</td>
@@ -696,7 +696,7 @@ $$</p>
 <td>The alternating form of the one-qubit space and its tensor powers; $(\omega^{\otimes n})^{\mathsf T}=(-1)^{n}\omega^{\otimes n}$, and $2\det c=\omega\otimes\omega(\psi,\psi)$ is the concurrence amplitude</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\epsilon$</td>
+<td>$\tilde\Pi_{\mathrm{id},\epsilon}$</td>
 <td>Bell projector, $\tfrac14(e_t\otimes e_t+\sum_k\epsilon_k\vec e_k\otimes\vec e_k)$ with $\epsilon_1\epsilon_2\epsilon_3=+1$; the four of the eight diagonal candidates that are states</td>
 </tr>
 </tbody>

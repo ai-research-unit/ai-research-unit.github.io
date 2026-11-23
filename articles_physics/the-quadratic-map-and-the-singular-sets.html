@@ -276,7 +276,7 @@ $$</p>
 <h2 id="the-parameter-locus">The Parameter Locus</h2>
 <p>The two loci. The connectedness locus is the set of parameters whose Julia set is connected, and the critical-orbit locus is the set of parameters whose orbit of $0$ is bounded. In the complex plane the two coincide, by the theorem of Douady and Hubbard; in $\mathbb{B}$ they are defined separately and their relation is open, because the critical set is not a point but the union of the cone and the traceless subspace, and it contains escaping points for every parameter. The entry records the definition it uses and the identification it cannot make: the biquaternion Mandelbrot set is the critical-orbit locus, which is the locus the escape-time algorithm tests, and the connectedness locus is a different set whose equality with it is the central open problem of the category.</p>
 <p>The central slice is the classical theory. For a central parameter the orbit of the origin is $q_n(0)e_t$, so the critical-orbit locus cut by the centre is the complex Mandelbrot set under $C\mapsto Ce_t$; and the filled set of the slice is the complex filled set read on the two eigenvalues. Verified: the eigenvalue reduction holds on one hundred diagonalisable elements for five iterations, and the criterion of the previous section agrees with iteration on one hundred random elements.</p>
-<p>The two loci on the idempotent plane. A parameter in the idempotent plane $\tilde C=C_1\tilde\Pi+C_2\tilde\Pi'$ makes the plane invariant, and on it the family is the pair of complex maps $\omega\mapsto\omega^{2}+C_1$ and $\omega\mapsto\omega^{2}+C_2$; so the critical-orbit locus meets the plane in the product $\mathcal M\times\mathcal M$ of two copies of the complex Mandelbrot set. The parameter locus has a slice on which it is exactly known, and the slice is the one on which the algebra is commutative.</p>
+<p>The two loci on the idempotent plane. A parameter in the idempotent plane $\tilde C=C_1\tilde\Pi_{\mathrm{id}}+C_2\tilde\Pi_{\mathrm{id}}'$ makes the plane invariant, and on it the family is the pair of complex maps $\omega\mapsto\omega^{2}+C_1$ and $\omega\mapsto\omega^{2}+C_2$; so the critical-orbit locus meets the plane in the product $\mathcal M\times\mathcal M$ of two copies of the complex Mandelbrot set. The parameter locus has a slice on which it is exactly known, and the slice is the one on which the algebra is commutative.</p>
 <p>The physics of the locus is the physics of a source. The parameter $\tilde C$ is the only term that is not built from the state, so the locus is the set of sources for which the state does not run away. Read as a bound-state condition it is a condition on the source and not on the energy, and the previous sections have shown why: no energy bound exists, because the cone defeats every radius. The entry does not claim that the biquaternion Mandelbrot set is a physical region; it claims that it is the parameter locus of a rule whose singular set the corpus already interprets.</p>
 <h2 id="the-two-halves-and-the-coupling">The Two Halves and the Coupling</h2>
 <p>Proposition (the entries of the square). With $\mathsf{M}(\tilde Q)=\begin{pmatrix}a&b\\c&d\end{pmatrix}$,</p>
@@ -284,7 +284,7 @@ $$</p>
 \mathsf{M}(\tilde Q^{2})=\begin{pmatrix}a^{2}+bc & b(a+d)\\ c(a+d) & cb+d^{2}\end{pmatrix},
 $$</p>
 <p>verified to $3.6\times10^{-15}$ on one hundred random elements. The off-diagonal entries are multiplied by the trace $a+d=2Q_t$, and the off-diagonal product $bc$ enters the diagonal entries as a parameter.</p>
-<p>Corollary (the diagonal plane). The elements whose vector part lies along $\vec e_z$ have diagonal matrices and form the commutative plane $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ of the idempotent decomposition. The plane is invariant exactly when the parameter lies in it, and then the map is the pair of independent complex maps on the two entries. Verified: for a point of the plane and a parameter of the plane the off-diagonal part of the image is zero to machine precision on one hundred samples, and for a point of the plane and a generic parameter the off-diagonal part of the image equals that of the parameter exactly.</p>
+<p>Corollary (the diagonal plane). The elements whose vector part lies along $\vec e_z$ have diagonal matrices and form the commutative plane $W_{\tilde\Pi_{\mathrm{id}}}=\mathbb{C}\tilde\Pi_{\mathrm{id}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}'$ of the idempotent decomposition. The plane is invariant exactly when the parameter lies in it, and then the map is the pair of independent complex maps on the two entries. Verified: for a point of the plane and a parameter of the plane the off-diagonal part of the image is zero to machine precision on one hundred samples, and for a point of the plane and a generic parameter the off-diagonal part of the image equals that of the parameter exactly.</p>
 <p>The split fractal is a product, and the product is the massless case. On the plane the filled set is $K_{C_1}\times K_{C_2}$, the boundary is the boundary of that product, and the Hausdorff dimension of the slice is the maximum of the two sums of a boundary dimension and a filled dimension. Two halves, two complex dynamics, no coupling. Off the plane the coupling is the trace acting on the off-diagonal pair and the off-diagonal product acting on the diagonal pair, and no product of two one-variable fractals describes the result.</p>
 <p>The reading of the coupling is a reading of a slot. The two halves of the Peirce decomposition are the two chiralities of the spin-half carrier, and the corpus's account of the mass of a spin-half field is that the mass is the pairing of the two ideals and not the modulus of either (<em>Introduction to the Spin-Half Bispinors Spaces</em>, <em>From the Spin to the Carriers and the Closures</em>). The entry observes that the term which destroys the product structure of the fractal is exactly the term which pairs the two halves. <strong>The off-diagonal parameter occupies the slot that the corpus assigns to the mass</strong>, and the entry claims the sharing of the slot and not an identification of the parameter with a mass.</p>
 <p>The contrast with the split algebra is the contrast between a local and a global splitting. In the split-biquaternion algebra the idempotents $\tfrac12(e_t\pm j)$ are central, the algebra factors as $\mathbb{H}\oplus\mathbb{H}$, and every map is the pair of two quaternion maps with no coupling at all. In $\mathbb{B}$ no non-trivial central idempotent exists, the splitting is a slice and not a decomposition, and the coupling is present off the slice. The biquaternion case is the case of a real but local splitting, and the entry inherits that structure rather than inventing it (<em>The Idempotent Decomposition and the Split Fractal of the Biquaternions</em>).</p>
@@ -314,7 +314,7 @@ $$</p>
 </tr>
 <tr>
 <td>the idempotent plane</td>
-<td>$C_1\tilde\Pi+C_2\tilde\Pi'$</td>
+<td>$C_1\tilde\Pi_{\mathrm{id}}+C_2\tilde\Pi_{\mathrm{id}}'$</td>
 <td>two independent complex maps</td>
 <td>the chiral basis, the diagonal model</td>
 </tr>
@@ -332,7 +332,7 @@ $$</p>
 <p>The exact values at the parameter zero. $\dim_H\mathcal K_0=8$, because the filled set contains the open set $\{\rho<1\}$, and $\dim_HJ_0=7$, because the Julia set is the level set of the spectral radius and is a real hypersurface off its singular locus. The idempotent manifold is contained in $J_0$ and has real dimension four, so the singular part of the fractal is not a negligible set.</p>
 <p>The slices. The central slice has the dimension of the complex Julia set, and the idempotent-plane slice has the dimension</p>
 <p>$$
-\dim_H\bigl(J_{\tilde C}\cap W_{\tilde\Pi}\bigr)=\max\bigl(\dim_HJ_{C_1}+\dim_HK_{C_2},\ \dim_HK_{C_1}+\dim_HJ_{C_2}\bigr),
+\dim_H\bigl(J_{\tilde C}\cap W_{\tilde\Pi_{\mathrm{id}}}\bigr)=\max\bigl(\dim_HJ_{C_1}+\dim_HK_{C_2},\ \dim_HK_{C_1}+\dim_HJ_{C_2}\bigr),
 $$</p>
 <p>the maximum of the two products of a boundary and a filled set, which is the dimension of the boundary of a product.</p>
 <p>The bound at a central parameter. With $\alpha=\dim_HK_C$,</p>
@@ -451,7 +451,7 @@ $$</p>
 <td>the Green's function, the discrete Lyapunov exponent</td>
 </tr>
 <tr>
-<td>$W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$</td>
+<td>$W_{\tilde\Pi_{\mathrm{id}}}=\mathbb{C}\tilde\Pi_{\mathrm{id}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}'$</td>
 <td>the idempotent plane, the chiral-diagonal slice</td>
 </tr>
 <tr>

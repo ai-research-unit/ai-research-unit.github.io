@@ -158,7 +158,7 @@ $$</p>
 </tr>
 <tr>
 <td>Simple modules</td>
-<td>one, $\mathbb{B}\tilde\Pi$</td>
+<td>one, $\mathbb{B}\tilde\Pi_{\mathrm{id}}$</td>
 </tr>
 <tr>
 <td>Radical</td>
@@ -172,13 +172,13 @@ $$</p>
 </table></div>
 <p>A nonzero module is <strong>simple</strong> if it has no submodules other than $0$ and itself. A <strong>composition series</strong> is a finite strictly increasing chain $0 = M_0 \subset M_1 \subset \cdots \subset M_r = M$ with simple successive quotients $M_i/M_{i-1}$; the number $r$ is the <strong>length</strong> of $M$. A ring is <strong>left artinian</strong> if every descending chain of left ideals stabilizes, and <strong>semisimple</strong> if its left regular module is a direct sum of simple modules.</p>
 <p>Over $\mathbb{C}$, every descending chain of left ideals of $\mathbb{B}$ is a descending chain of $\mathbb{C}$-subspaces, so it stabilizes; thus $\mathbb{B}$ is artinian. By Wedderburn–Artin, a unital ring is semisimple if and only if it is artinian with zero Jacobson radical, and every simple artinian ring is semisimple. Hence $\mathbb{B}$ is <strong>semisimple</strong>, and every left ideal is a direct sum of minimal left ideals.</p>
-<p>All simple left $\mathbb{B}$-modules are isomorphic, since a simple artinian ring has a unique simple module up to isomorphism. With the idempotents $\tilde\Pi_+, \tilde\Pi_-$ of §<em>Idempotents and Orthogonal Idempotents</em>, the algebra as a left module over itself reads $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$, with $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ both minimal left ideals. Each of the two minimal left ideals is a complex plane. Hence $0 \subset \mathbb{B}\tilde\Pi_+ \subset \mathbb{B}$ is a composition series, and the <strong>length of $\mathbb{B}$ as a left module over itself is $2$</strong>, with both factors isomorphic. The right regular module has length $2$ as well. All of this is over $\mathbb{C}$.</p>
+<p>All simple left $\mathbb{B}$-modules are isomorphic, since a simple artinian ring has a unique simple module up to isomorphism. With the idempotents $\tilde\Pi_{\mathrm{id},+}, \tilde\Pi_{\mathrm{id},-}$ of §<em>Idempotents and Orthogonal Idempotents</em>, the algebra as a left module over itself reads $\mathbb{B} = \mathbb{B}\tilde\Pi_{\mathrm{id},+} \oplus \mathbb{B}\tilde\Pi_{\mathrm{id},-}$, with $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ and $\mathbb{B}\tilde\Pi_{\mathrm{id},-}$ both minimal left ideals. Each of the two minimal left ideals is a complex plane. Hence $0 \subset \mathbb{B}\tilde\Pi_{\mathrm{id},+} \subset \mathbb{B}$ is a composition series, and the <strong>length of $\mathbb{B}$ as a left module over itself is $2$</strong>, with both factors isomorphic. The right regular module has length $2$ as well. All of this is over $\mathbb{C}$.</p>
 <h2 id="the-ideals-in-the-remarkable-subspaces">The Ideals in the Remarkable Subspaces</h2>
 <p>The notions of one-sided ideal are those of §<em>Ideals</em> and §<em>The Two-Sided Ideals</em> above, and the six subspaces are those of <em>Subspaces and Decompositions</em>. An idempotent splits the algebra as</p>
 <p>$$
-\mathbb{B} = \mathbb{B}\tilde\Pi \oplus \mathbb{B}(e_t - \tilde\Pi) ,
+\mathbb{B} = \mathbb{B}\tilde\Pi_{\mathrm{id}} \oplus \mathbb{B}(e_t - \tilde\Pi_{\mathrm{id}}) ,
 $$</p>
-<p>its complement $e_t - \tilde\Pi$ is the complementary idempotent, and when the idempotent is primitive the two summands are minimal one-sided ideals. The classification of the idempotents is <em>The Square Roots of One and the Idempotents of the Biquaternion Algebra</em> and <em>Peirce Decompositions of the Biquaternion Algebra</em>; what is recorded here is their restriction to the six subspaces.</p>
+<p>its complement $e_t - \tilde\Pi_{\mathrm{id}}$ is the complementary idempotent, and when the idempotent is primitive the two summands are minimal one-sided ideals. The classification of the idempotents is <em>The Square Roots of One and the Idempotents of the Biquaternion Algebra</em> and <em>Peirce Decompositions of the Biquaternion Algebra</em>; what is recorded here is their restriction to the six subspaces.</p>
 <p><strong>The ideals.</strong> $\mathbb{B}$ is <strong>simple</strong>, its only two-sided ideals being $0$ and $\mathbb{B}$, and it has <strong>length two</strong> as a left module over itself, so that every nonzero proper left ideal is <strong>minimal</strong>, of real dimension $4$, and dually every nonzero proper right ideal is a minimal right ideal of real dimension $4$. Two consequences are immediate. Since the only two-sided ideals are $0$ and $\mathbb{B}$, <strong>no subspace of the remarkable subspaces is a two-sided ideal</strong>. And each of the remarkable subspaces <strong>generates the whole algebra on both sides</strong>,</p>
 <p>$$
 \boxed{\;\mathbb{B}\mathbb{S} = \mathbb{S}\mathbb{B} = \mathbb{B} \qquad \text{for each of the remarkable subspaces } \mathbb{S}\;},
@@ -229,7 +229,7 @@ $$</p>
 <td>$\mathbb{B}_{\Psi}$</td>
 <td>$\mathbb{B}$</td>
 <td>$e_t$</td>
-<td>$\mathbb{B}\tilde\Pi$, $I_{\tilde\Pi} = \mathbb{B}(e_t-\tilde\Pi)$ and their right-hand twins, $\tilde\Pi$ a Hermitian idempotent</td>
+<td>$\mathbb{B}\tilde\Pi_{\mathrm{id}}$, $I_{\tilde\Pi_{\mathrm{id}}} = \mathbb{B}(e_t-\tilde\Pi_{\mathrm{id}})$ and their right-hand twins, $\tilde\Pi_{\mathrm{id}}$ a Hermitian idempotent</td>
 </tr>
 <tr>
 <td>$\mathbb{B}_{\Phi}$</td>
@@ -254,7 +254,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>each $\mathbb{B}\vec P$, $\vec P\mathbb{B}$, $\mathbb{B}\tilde\Pi$, $\mathbb{B}\tilde\Pi'$, $\tilde\Pi\mathbb{B}$, $\tilde\Pi'\mathbb{B}$</td>
+<td>each $\mathbb{B}\vec P$, $\vec P\mathbb{B}$, $\mathbb{B}\tilde\Pi_{\mathrm{id}}$, $\mathbb{B}\tilde\Pi_{\mathrm{id}}'$, $\tilde\Pi_{\mathrm{id}}\mathbb{B}$, $\tilde\Pi_{\mathrm{id}}'\mathbb{B}$</td>
 <td>$0$</td>
 <td>$2$</td>
 <td>$0$</td>
@@ -298,7 +298,7 @@ $$</p>
 <ul>
 <li>$\mathbb{B}$ has no nonzero <strong>nilpotent two-sided ideals</strong>; the nilradical is zero.</li>
 <li>It has no nonzero nilpotent left or right ideals either, since such an ideal generates a nonzero nilpotent two-sided ideal.</li>
-<li>The absence of a radical is not the absence of nilpotent <strong>elements</strong>: $\vec\Upsilon_x^2 = \vec\Upsilon_y^2 = 0$ (§<em>The Biquaternion Case</em>) — nilpotents of the biquaternion layer, written $\vec\Upsilon_x$ and $\vec\Upsilon_y$ for the two particular units and $\tilde\Upsilon$ where the class is what is meant (§<em>The Nilpotent Convention</em> of <em>Special Element and Peirce Conventions</em>) — yet the left ideal generated by $\vec\Upsilon_x$ is not nilpotent.</li>
+<li>The absence of a radical is not the absence of nilpotent <strong>elements</strong>: $\vec\Pi_{\mathrm{nil},x}^2 = \vec\Pi_{\mathrm{nil},y}^2 = 0$ (§<em>The Biquaternion Case</em>) — nilpotents of the biquaternion layer, written $\vec\Pi_{\mathrm{nil},x}$ and $\vec\Pi_{\mathrm{nil},y}$ for the two particular units and $\tilde\Pi_{\mathrm{nil}}$ where the class is what is meant (§<em>The Nilpotent Convention</em> of <em>Special Element and Peirce Conventions</em>) — yet the left ideal generated by $\vec\Pi_{\mathrm{nil},x}$ is not nilpotent.</li>
 <li>Every left $\mathbb{B}$-module is semisimple.</li>
 </ul>
 <h2 id="the-three-regular-modules">The Three Regular Modules</h2>
@@ -323,7 +323,7 @@ $$</p>
 <p><strong>Theorem.</strong> Let $L\subseteq\mathbb{B}$ be an additive subgroup. Then $L$ is a submodule of ${}_{\mathbb{B}}\mathbb{B}$ if and only if $L$ is a left ideal of $\mathbb{B}$; $L$ is a submodule of $\mathbb{B}_{\mathbb{B}}$ if and only if $L$ is a right ideal; and $L$ is a sub-bimodule of ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$ if and only if $L$ is a two-sided ideal.</p>
 <p><strong>Proof.</strong> A submodule of ${}_{\mathbb{B}}\mathbb{B}$ is an additive subgroup closed under $\tilde Q_1\tilde Q_2$ for all $\tilde Q_1\in\mathbb{B}$ and $\tilde Q_2\in L$, and that is the definition of a left ideal. The scalar action of ${}_{\mathbb{B}}\mathbb{B}$ is by construction the multiplication of $\mathbb{B}$, so the two conditions are the same formula and not two equivalent ones. The right-handed statement is the same argument with the multiplication read on the right, and the two-sided statement applies both readings at once.</p>
 <p><strong>Corollary (the lattice of ideals is the lattice of submodules).</strong> The identity map on subsets of $\mathbb{B}$ is an isomorphism of the lattice of submodules of ${}_{\mathbb{B}}\mathbb{B}$ onto the lattice of left ideals of $\mathbb{B}$, preserving inclusion, intersection and sum; likewise for the right ideals and for the two-sided ideals of the bimodule.</p>
-<p><strong>Remark (the biquaternion content).</strong> Because $\mathbb{B}$ is simple, the two-sided ideals are only $0$ and $\mathbb{B}$, so the regular bimodule has no nontrivial sub-bimodule; this is the bimodule reading of the simplicity proved in <em>Peirce Decompositions of the Biquaternion Algebra</em>. The left ideals are the left ideals of the algebra, classified in <em>The Polarized Module of the Biquaternion Algebra</em> as $0$, the minimal left ideals $\mathbb{B}\tilde\Pi$ generated by the primitive idempotents of <em>The Square Roots of One and the Idempotents of the Biquaternion Algebra</em>, and $\mathbb{B}$ itself; the theorem above says that the same list is the complete list of submodules of the left regular module.</p>
+<p><strong>Remark (the biquaternion content).</strong> Because $\mathbb{B}$ is simple, the two-sided ideals are only $0$ and $\mathbb{B}$, so the regular bimodule has no nontrivial sub-bimodule; this is the bimodule reading of the simplicity proved in <em>Peirce Decompositions of the Biquaternion Algebra</em>. The left ideals are the left ideals of the algebra, classified in <em>The Polarized Module of the Biquaternion Algebra</em> as $0$, the minimal left ideals $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ generated by the primitive idempotents of <em>The Square Roots of One and the Idempotents of the Biquaternion Algebra</em>, and $\mathbb{B}$ itself; the theorem above says that the same list is the complete list of submodules of the left regular module.</p>
 <h3 id="the-base-field">The Base Field</h3>
 <p><strong>The ideal lattice does not depend on whether $\mathbb{B}$ is read over $\mathbb{C}$ or over $\mathbb{R}$.</strong></p>
 <p>An additive subgroup closed under left multiplication by $\mathbb{B}$ is automatically a complex subspace, because multiplication by $i$ is left multiplication by the central element $i e_t$. So an $\mathbb{R}$-left ideal is the same thing as a $\mathbb{C}$-left ideal, and the same holds on the right and for two-sided ideals. In particular, over $\mathbb{R}$, $\mathbb{B}$ is still simple, with two-sided ideals only $0$ and $\mathbb{B}$, and the radical is still zero.</p>
@@ -333,7 +333,7 @@ $$</p>
 <p><em>Proof.</em> A right $\mathbb{B}$-linear $T$ satisfies $T(\tilde Q)=T(e_t\tilde Q)=T(e_t)\tilde Q$, so $T=L_{T(e_t)}$; conversely every left multiplication is right $\mathbb{B}$-linear. The left-handed case is the mirror, with the opposite multiplication.</p>
 <p><strong>Proposition.</strong> $\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})\cong Z(\mathbb{B})=\mathbb{C}e_t$, of complex dimension one.</p>
 <p><em>Proof.</em> A bimodule endomorphism is both a left and a right multiplication, $L_{\tilde Q_1}=R_{\tilde Q_2}$; evaluating at $e_t$ gives $\tilde Q_1=\tilde Q_2$, so the multiplier is central. Conversely a central multiplier is a bimodule map, since $L_{\tilde Q}=R_{\tilde Q}$ commutes with both actions. The centre is $\mathbb{C}e_t$ by <em>Introduction to the Algebra of Biquaternions</em>.</p>
-<p>The simple module $S=\mathbb{B}\tilde\Pi_+$, its basis, its left action and its endomorphism ring are constructed in <em>The Polarized Module of the Biquaternion Algebra</em>; the regular module is the direct sum $S\oplus S$ of two copies.</p>
+<p>The simple module $S=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$, its basis, its left action and its endomorphism ring are constructed in <em>The Polarized Module of the Biquaternion Algebra</em>; the regular module is the direct sum $S\oplus S$ of two copies.</p>
 <h2 id="summary">Summary</h2>
 <ul>
 <li>The algebra is a left, a right and a two-sided module over itself, by left multiplication, right multiplication and the two-sided operator.</li>
@@ -352,7 +352,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{B}\tilde\Pi$</td>
+<td>$\mathbb{B}\tilde\Pi_{\mathrm{id}}$</td>
 <td>a minimal left ideal</td>
 </tr>
 <tr>

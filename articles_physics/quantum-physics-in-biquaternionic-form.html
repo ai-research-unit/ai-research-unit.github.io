@@ -127,24 +127,24 @@ $$</p>
 <h3 id="pure-states">Pure States</h3>
 <p>A <strong>pure state</strong> of a qubit is a rank-one projection operator. In the biquaternion framework, the rank-one projections in $\mathbb{B}_{\Psi}$ are the <strong>idempotents</strong>:</p>
 <p>$$
-\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}\left(e_t \pm i\,\vec u\right),
+\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac{1}{2}\left(e_t \pm i\,\vec u\right),
 $$</p>
 <p>where $\vec u = u_x \vec e_x + u_y \vec e_y + u_z \vec e_z$ is a unit pure real quaternion, $|\vec u| = 1$.</p>
 <p><strong>Properties of the idempotents:</strong></p>
 <ol>
-<li><strong>Hermitian:</strong> $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$.</li>
-<li><strong>Idempotent:</strong> $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$.</li>
-<li><strong>Unit scalar part:</strong> $\mathrm{Sc}(\tilde\Pi_{1,2}) = \tfrac12$.</li>
-<li><strong>Complementary:</strong> $\tilde\Pi_1 + \tilde\Pi_2 = e_t$, and $\tilde\Pi_1 \tilde\Pi_2 = 0 = \tilde\Pi_2 \tilde\Pi_1$.</li>
-<li><strong>Zero divisors:</strong> $\langle\tilde\Pi_{1,2}\rangle_{\natural} = 0$.</li>
+<li><strong>Hermitian:</strong> $\tilde\Pi_{\mathrm{id},1,2}^{*} = \tilde\Pi_{\mathrm{id},1,2}$.</li>
+<li><strong>Idempotent:</strong> $\tilde\Pi_{\mathrm{id},1,2}^2 = \tilde\Pi_{\mathrm{id},1,2}$.</li>
+<li><strong>Unit scalar part:</strong> $\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1,2}) = \tfrac12$.</li>
+<li><strong>Complementary:</strong> $\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2} = e_t$, and $\tilde\Pi_{\mathrm{id},1} \tilde\Pi_{\mathrm{id},2} = 0 = \tilde\Pi_{\mathrm{id},2} \tilde\Pi_{\mathrm{id},1}$.</li>
+<li><strong>Zero divisors:</strong> $\langle\tilde\Pi_{\mathrm{id},1,2}\rangle_{\natural} = 0$.</li>
 </ol>
-<p>The <strong>parametrization</strong> is by the unit sphere $S^2 \subset \mathbb{R}^3$: the direction $\vec u$ determines the idempotent $\tilde\Pi_1(\vec u)$ uniquely, and the complementary idempotent $\tilde\Pi_2(\vec u) = \tilde\Pi_1(-\vec u)$ corresponds to the opposite direction.</p>
-<p><strong>Identification with standard states.</strong> Under the series isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ fixed by $\vec e_\eta\mapsto-i\sigma_\eta$ (<em>Algebra and Element Conventions</em>), the idempotent $\tilde\Pi_1(\vec u)$ maps to the standard pure state $|\vec u+\rangle\langle\vec u+|$, the spin-up state along direction $\vec u$. The map is computed in one line: $\mathsf{M}_2(\vec u)=-i\,\vec u\cdot\vec\sigma$, so $i\,\mathsf{M}_2(\vec u)=\vec u\cdot\vec\sigma$ and</p>
+<p>The <strong>parametrization</strong> is by the unit sphere $S^2 \subset \mathbb{R}^3$: the direction $\vec u$ determines the idempotent $\tilde\Pi_{\mathrm{id},1}(\vec u)$ uniquely, and the complementary idempotent $\tilde\Pi_{\mathrm{id},2}(\vec u) = \tilde\Pi_{\mathrm{id},1}(-\vec u)$ corresponds to the opposite direction.</p>
+<p><strong>Identification with standard states.</strong> Under the series isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ fixed by $\vec e_\eta\mapsto-i\sigma_\eta$ (<em>Algebra and Element Conventions</em>), the idempotent $\tilde\Pi_{\mathrm{id},1}(\vec u)$ maps to the standard pure state $|\vec u+\rangle\langle\vec u+|$, the spin-up state along direction $\vec u$. The map is computed in one line: $\mathsf{M}_2(\vec u)=-i\,\vec u\cdot\vec\sigma$, so $i\,\mathsf{M}_2(\vec u)=\vec u\cdot\vec\sigma$ and</p>
 <p>$$
-\mathsf{M}_2\bigl(\tilde\Pi_1(\vec u)\bigr)=\tfrac{1}{2}\left(I+\vec u\cdot\vec\sigma\right)
+\mathsf{M}_2\bigl(\tilde\Pi_{\mathrm{id},1}(\vec u)\bigr)=\tfrac{1}{2}\left(I+\vec u\cdot\vec\sigma\right)
 =\tfrac{1}{2}\begin{pmatrix}1+u_z & u_x-i\,u_y\\ u_x+i\,u_y & 1-u_z\end{pmatrix},
 $$</p>
-<p>which is the Bloch density matrix of the spin-up state along $\vec u$, reducing to $\mathsf{M}_2(\tilde\Pi_1(\vec e_z))=\operatorname{diag}(1,0)$ on the axis. The set of pure states is the Bloch sphere $S^2$.</p>
+<p>which is the Bloch density matrix of the spin-up state along $\vec u$, reducing to $\mathsf{M}_2(\tilde\Pi_{\mathrm{id},1}(\vec e_z))=\operatorname{diag}(1,0)$ on the axis. The set of pure states is the Bloch sphere $S^2$.</p>
 <h3 id="mixed-states">Mixed States</h3>
 <p>A <strong>mixed state</strong> of a qubit is a positive Hermitian matrix of unit trace. In $\mathbb{B}_{\Psi}$, the corresponding element is normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$ and has the form</p>
 <p>$$
@@ -177,14 +177,14 @@ $$</p>
 <p>The <strong>scalar part</strong> $h_t e_t$ carries the number $\mathrm{Sc}(\tilde H_\Psi) = h_t$. The <strong>imaginary vector part</strong> $i\vec h_\Psi$ has zero scalar part.</p>
 <p>The <strong>spectral decomposition</strong> of $\tilde H_\Psi$ is</p>
 <p>$$
-\tilde H_\Psi = \lambda_+ \tilde\Pi_1(\vec u_\Psi) + \lambda_- \tilde\Pi_2(\vec u_\Psi),
+\tilde H_\Psi = \lambda_+ \tilde\Pi_{\mathrm{id},1}(\vec u_\Psi) + \lambda_- \tilde\Pi_{\mathrm{id},2}(\vec u_\Psi),
 $$</p>
 <p>with</p>
 <p>$$
 \vec u_\Psi = \frac{\vec h_\Psi}{|\vec h_\Psi|}, \qquad \lambda_\pm = h_t \pm |\vec h_\Psi|.
 $$</p>
-<p>The eigenvalues are $\lambda_\pm$, and the eigenvectors are the idempotents $\tilde\Pi_{1,2}(\vec u_\Psi)$. So every Hermitian element of $\mathbb{B}_{\Psi}$ has a spectral decomposition in terms of idempotents.</p>
-<p><strong>Observables with no scalar part.</strong> The Hermitian elements $i\vec h_\Psi$ (with $h_t = 0$) are the analogs of the scalar-free observables of the qubit (the Pauli matrices). They have eigenvalues $\pm|\vec h_\Psi|$ and eigenvectors $\tilde\Pi_{1,2}(\vec u_\Psi)$.</p>
+<p>The eigenvalues are $\lambda_\pm$, and the eigenvectors are the idempotents $\tilde\Pi_{\mathrm{id},1,2}(\vec u_\Psi)$. So every Hermitian element of $\mathbb{B}_{\Psi}$ has a spectral decomposition in terms of idempotents.</p>
+<p><strong>Observables with no scalar part.</strong> The Hermitian elements $i\vec h_\Psi$ (with $h_t = 0$) are the analogs of the scalar-free observables of the qubit (the Pauli matrices). They have eigenvalues $\pm|\vec h_\Psi|$ and eigenvectors $\tilde\Pi_{\mathrm{id},1,2}(\vec u_\Psi)$.</p>
 <h3 id="compatibility">Compatibility</h3>
 <p>Two observables $\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2} \in \mathbb{B}_{\Psi}$ are <strong>compatible</strong> (simultaneously measurable) if and only if their corresponding matrices commute. In terms of the vector parts, this holds if and only if $\vec h_{\Psi,1}$ and $\vec h_{\Psi,2}$ are parallel or one of them vanishes.</p>
 <p>In the general case (non-parallel, nonzero $\vec h_{\Psi,1}$ and $\vec h_{\Psi,2}$), the observables are incompatible, and their commutator is</p>
@@ -224,23 +224,23 @@ It is obtained by multiplying out $\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}$ and takin
 \boxed{\;p_\pm = \tfrac{1}{2}\left(1 \pm \vec u_\Psi\cdot\vec s_{\Psi}\right)\;},
 $$</p>
 <p>where $\vec u_\Psi = \vec h_\Psi/|\vec h_\Psi|$. The probabilities depend only on the angle between the measurement direction $\vec u_\Psi$ and the Bloch vector $\vec s_{\Psi}$.</p>
-<p>The derivation is direct: $p_+ = \langle\tilde\Pi_1(\vec u_\Psi),\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*} = \mathrm{Sc}(\tilde\Pi_1(\vec u_\Psi)\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = 2\,\mathrm{Sc}(\tilde\Pi_1(\vec u_\Psi)\tilde{Ϛ}_{\Psi}^{*})$, and this is $\tfrac{1}{2}(1 + \vec u_\Psi\cdot\vec s_{\Psi})$.</p>
+<p>The derivation is direct: $p_+ = \langle\tilde\Pi_{\mathrm{id},1}(\vec u_\Psi),\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*} = \mathrm{Sc}(\tilde\Pi_{\mathrm{id},1}(\vec u_\Psi)\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1}(\vec u_\Psi)\tilde{Ϛ}_{\Psi}^{*})$, and this is $\tfrac{1}{2}(1 + \vec u_\Psi\cdot\vec s_{\Psi})$.</p>
 <h3 id="measurement-update">Measurement Update</h3>
 <p>After a measurement of $\tilde H_\Psi$ with outcome $+$, the state is updated by the von Neumann–Lüders rule:</p>
 <p>$$
-\tilde{Ϛ}_{\Psi,\mathrm{out}} = \frac{\tilde\Pi_1(\vec u_\Psi)\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_1(\vec u_\Psi)}{2\,\mathrm{Sc}(\tilde\Pi_1(\vec u_\Psi)\tilde{Ϛ}_{\Psi}^{*})}.
+\tilde{Ϛ}_{\Psi,\mathrm{out}} = \frac{\tilde\Pi_{\mathrm{id},1}(\vec u_\Psi)\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{id},1}(\vec u_\Psi)}{2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1}(\vec u_\Psi)\tilde{Ϛ}_{\Psi}^{*})}.
 $$</p>
-<p>Since $\tilde\Pi_1$ is idempotent and rank one, the two-sided operator is a real multiple of $\tilde\Pi_1$: in $M_2(\mathbb{C})$ a rank-one projection satisfies $P\,R\,P=(\operatorname{Tr}PR)P$, and $\operatorname{Tr}\mathsf M_2(\tilde Q)=2\,\mathrm{Sc}\tilde Q$ reads the multiple back as $p_+ = 2\,\mathrm{Sc}(\tilde\Pi_1\tilde{Ϛ}_{\Psi}^{*})$. Hence the post-measurement state is simply</p>
+<p>Since $\tilde\Pi_{\mathrm{id},1}$ is idempotent and rank one, the two-sided operator is a real multiple of $\tilde\Pi_{\mathrm{id},1}$: in $M_2(\mathbb{C})$ a rank-one projection satisfies $P\,R\,P=(\operatorname{Tr}PR)P$, and $\operatorname{Tr}\mathsf M_2(\tilde Q)=2\,\mathrm{Sc}\tilde Q$ reads the multiple back as $p_+ = 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1}\tilde{Ϛ}_{\Psi}^{*})$. Hence the post-measurement state is simply</p>
 <p>$$
-\boxed{\;\tilde{Ϛ}_{\Psi,\mathrm{out}} = \tilde\Pi_1(\vec u_\Psi)\;}.
+\boxed{\;\tilde{Ϛ}_{\Psi,\mathrm{out}} = \tilde\Pi_{\mathrm{id},1}(\vec u_\Psi)\;}.
 $$</p>
 <p>So the state collapses to the idempotent associated with the outcome. This is the standard collapse, expressed as a composition of algebraic operations.</p>
 <h3 id="normalisation-and-the-scalar-part">Normalisation and the Scalar Part</h3>
-<p><strong>Why the unit weight is $\tfrac12$ and not $1$.</strong> The factor is forced by idempotency. Write a rank-one projection as $\tilde\Pi=\alpha(e_t+i\vec u)$ with $\vec u$ a unit pure real quaternion. Since $e_t$ is central and $\vec u^2=-e_t$,</p>
+<p><strong>Why the unit weight is $\tfrac12$ and not $1$.</strong> The factor is forced by idempotency. Write a rank-one projection as $\tilde\Pi_{\mathrm{id}}=\alpha(e_t+i\vec u)$ with $\vec u$ a unit pure real quaternion. Since $e_t$ is central and $\vec u^2=-e_t$,</p>
 <p>$$
-\tilde\Pi^2=\alpha^2\left(e_t^2+2i\vec u+(i\vec u)^2\right)=2\alpha^2\,\tilde\Pi,
+\tilde\Pi_{\mathrm{id}}^2=\alpha^2\left(e_t^2+2i\vec u+(i\vec u)^2\right)=2\alpha^2\,\tilde\Pi_{\mathrm{id}},
 $$</p>
-<p>so $\tilde\Pi^2=\tilde\Pi$ forces $\alpha=\tfrac12$. The alternative $\alpha=1$ gives $\tilde\Pi^2=2\tilde\Pi$, twice a projection and not a projection.</p>
+<p>so $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$ forces $\alpha=\tfrac12$. The alternative $\alpha=1$ gives $\tilde\Pi_{\mathrm{id}}^2=2\tilde\Pi_{\mathrm{id}}$, twice a projection and not a projection.</p>
 <p>The normalisation is a statement about the scalar part, $\mathrm{Sc}(e_t)=1$. A normalised state has $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$, and the Born weight is the ratio of two scalar parts,</p>
 <p>$$
 p=\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})},
@@ -248,9 +248,9 @@ $$</p>
 <p>the star being inert because both arguments are Hermitian. The matrix image carries a factor $2$ that the ratio does not see, because it multiplies both terms. The trace belongs to the image alone, $\operatorname{Tr}\mathsf M_2(\tilde Q)=2\,\mathrm{Sc}\tilde Q$, so the normalised state has unit trace, which is the density-matrix form of the statement; the element $\tilde{Ϛ}_{\Psi}$ itself carries no trace, only a scalar part. That the ratio is real, and that it lies in $[0,1]$, are the scalar-part and cone statements of <em>States, Observables and the Born Weight</em>.</p>
 <h2 id="dynamics">Dynamics</h2>
 <h3 id="the-schrodinger-picture">The Schrödinger Picture</h3>
-<p><strong>Time evolution of a pure state.</strong> A pure state is an idempotent $\tilde\Pi = \tfrac{1}{2}(e_t + i\vec u)$. It evolves in time by conjugation with a one-parameter group of $*$-unitary elements:</p>
+<p><strong>Time evolution of a pure state.</strong> A pure state is an idempotent $\tilde\Pi_{\mathrm{id}} = \tfrac{1}{2}(e_t + i\vec u)$. It evolves in time by conjugation with a one-parameter group of $*$-unitary elements:</p>
 <p>$$
-\tilde\Pi(r'_t) = \tilde Q(r'_t)\,\tilde\Pi(0)\,\tilde Q(r'_t)^{*},
+\tilde\Pi_{\mathrm{id}}(r'_t) = \tilde Q(r'_t)\,\tilde\Pi_{\mathrm{id}}(0)\,\tilde Q(r'_t)^{*},
 $$</p>
 <p>where $r'_t=c\,t'$ is the coordinate time carried as a length (<em>Physics Units and Common Elements Conventions</em>) and $\tilde Q(r'_t)$ is a <strong>$*$-unitary biquaternion</strong>, $\tilde Q\tilde Q^{*} = e_t$, satisfying the <strong>Schrödinger equation</strong></p>
 <p>$$i\,\hbar\,c\,\frac{d}{dr'_{t}}\tilde Q(r'_t) = \tilde H_\Psi\,\tilde Q(r'_t), \qquad \tilde Q(0) = e_t,
@@ -265,7 +265,7 @@ $$</p>
 <p>The element $\tilde Q(r'_t)$ is <strong>$*$-unitary</strong>, $\tilde Q(r'_t)\tilde Q(r'_t)^{*} = e_t$, hence an element of the group $\mathrm{U}(2) \subset \mathbb{B}$. It is not Hermitian in general: with $\theta = |\vec h_\Psi|\frac{r'_{t}}{\hbar\,c}$ its conjugate is $\tilde Q(r'_t)^{*} = \exp(+i\theta_{\mathrm{evo}})\left(\cos\theta\,e_t - \sin\theta\,\vec u_\Psi\right)$, which differs from $\tilde Q(r'_t)$ except at isolated times, and the conjugation it performs is therefore not a projection.</p>
 <p><strong>The scalar part of the Hamiltonian does not affect the state.</strong> Since $\exp(-i\theta_{\mathrm{evo}})$ is a central complex scalar, and since the conjugation</p>
 <p>$$
-\tilde Q(r'_t)\,\tilde\Pi\,\tilde Q(r'_t)^{*} = \exp(-i\theta_{\mathrm{evo}})\tilde u\,\tilde\Pi\,\exp(+i\theta_{\mathrm{evo}})\tilde u^{*} = \tilde u\,\tilde\Pi\,\tilde u^{*}
+\tilde Q(r'_t)\,\tilde\Pi_{\mathrm{id}}\,\tilde Q(r'_t)^{*} = \exp(-i\theta_{\mathrm{evo}})\tilde u\,\tilde\Pi_{\mathrm{id}}\,\exp(+i\theta_{\mathrm{evo}})\tilde u^{*} = \tilde u\,\tilde\Pi_{\mathrm{id}}\,\tilde u^{*}
 $$</p>
 <p>(with $\tilde u = \cos(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})e_t + \sin(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\vec u_\Psi$ a unit real quaternion), the phase $\exp(-i\theta_{\mathrm{evo}})$ cancels out. So only the vector part $\vec h_\Psi$ of the Hamiltonian affects the state evolution. This is the standard result: the scalar part of the Hamiltonian contributes only to a global, unobservable phase.</p>
 <p><strong>Time evolution of a mixed state.</strong> A general state $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ evolves by the same conjugation:</p>
@@ -298,12 +298,12 @@ $$</p>
 <p>Reversibility is one of the structural features of the biquaternion formulation. The $*$-unitary elements form the group $\mathrm{U}(2) \subset \mathbb{B}$, and their conjugation action on $\mathbb{B}_{\Psi}$ preserves the Hermitian form and the biquaternion norm.</p>
 <h2 id="measurement-as-an-algebraic-operation">Measurement as an Algebraic Operation</h2>
 <p>In the standard framework, the measurement postulate is stated separately from the $*$-unitary evolution. In the biquaternion framework, both are consequences of the same structure, the Hermitian form on $\mathbb{B}$, which restricts to the plain form on $\mathbb{B}_{\Psi}$.</p>
-<p><strong>Projective measurement.</strong> A projective measurement of $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ is specified by the spectral decomposition $\tilde H_\Psi = \lambda_+ \tilde\Pi_1 + \lambda_- \tilde\Pi_2$, with $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_\Psi)$. The outcome $+$ has:</p>
+<p><strong>Projective measurement.</strong> A projective measurement of $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ is specified by the spectral decomposition $\tilde H_\Psi = \lambda_+ \tilde\Pi_{\mathrm{id},1} + \lambda_- \tilde\Pi_{\mathrm{id},2}$, with $\tilde\Pi_{\mathrm{id},1,2} = \tfrac{1}{2}(e_t \pm i\vec u_\Psi)$. The outcome $+$ has:</p>
 <ul>
-<li><strong>Probability</strong> $p_+=\langle\tilde\Pi_1,\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_1\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, which at normalisation is $2\langle\tilde\Pi_1,\tilde{Ϛ}_{\Psi}\rangle_{*}$.</li>
-<li><strong>Post-measurement state</strong> $\tilde{Ϛ}_{\Psi,\mathrm{out}} = \tilde\Pi_1$, from the two-sided operation.</li>
+<li><strong>Probability</strong> $p_+=\langle\tilde\Pi_{\mathrm{id},1},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1}\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, which at normalisation is $2\langle\tilde\Pi_{\mathrm{id},1},\tilde{Ϛ}_{\Psi}\rangle_{*}$.</li>
+<li><strong>Post-measurement state</strong> $\tilde{Ϛ}_{\Psi,\mathrm{out}} = \tilde\Pi_{\mathrm{id},1}$, from the two-sided operation.</li>
 </ul>
-<p><strong>A structural point.</strong> The <strong>reversible–irreversible distinction</strong> is algebraic in the biquaternion framework. $*$-Unitary elements $\tilde Q$ preserve the biquaternion norm of $\mathbb{B}$ and generate reversible evolution. Idempotent elements $\tilde\Pi$ do not preserve the biquaternion norm (they satisfy $\tilde\Pi^2 = \tilde\Pi$ but $\langle\tilde\Pi\rangle_{\natural} = \tilde\Pi\tilde\Pi^{\natural} = 0$) and generate irreversible projection. The two kinds of process are distinguished by a property of the acting element, not by a separate postulate.</p>
+<p><strong>A structural point.</strong> The <strong>reversible–irreversible distinction</strong> is algebraic in the biquaternion framework. $*$-Unitary elements $\tilde Q$ preserve the biquaternion norm of $\mathbb{B}$ and generate reversible evolution. Idempotent elements $\tilde\Pi_{\mathrm{id}}$ do not preserve the biquaternion norm (they satisfy $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$ but $\langle\tilde\Pi_{\mathrm{id}}\rangle_{\natural} = \tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}^{\natural} = 0$) and generate irreversible projection. The two kinds of process are distinguished by a property of the acting element, not by a separate postulate.</p>
 <p><strong>What the rewriting does not do.</strong> The update says which state follows a given outcome; it does not say why that outcome rather than another occurs. The selection problem is untouched by the algebra and is the same problem as in the standard formalism, stated in different letters (question 6 below).</p>
 <h2 id="purity-entropy-and-fidelity">Purity, Entropy, and Fidelity</h2>
 <h3 id="purity">Purity</h3>
@@ -319,17 +319,17 @@ $$</p>
 <h3 id="spectral-decomposition-and-entropy">Spectral Decomposition and Entropy</h3>
 <p>The <strong>spectral decomposition</strong> of $\tilde{Ϛ}_{\Psi}$ is</p>
 <p>$$
-\tilde{Ϛ}_{\Psi} = \lambda_+ \tilde\Pi_1(\vec u_s) + \lambda_- \tilde\Pi_2(\vec u_s),
+\tilde{Ϛ}_{\Psi} = \lambda_+ \tilde\Pi_{\mathrm{id},1}(\vec u_s) + \lambda_- \tilde\Pi_{\mathrm{id},2}(\vec u_s),
 $$</p>
-<p>with $\vec u_s = \vec s_{\Psi}/|\vec s_{\Psi}|$ and $\lambda_\pm = (1 \pm |\vec s_{\Psi}|)/2$. A function of the element is the function of its eigenvalues on its own idempotents, $\log\tilde{Ϛ}_{\Psi}=\log\lambda_+\,\tilde\Pi_1(\vec u_s)+\log\lambda_-\,\tilde\Pi_2(\vec u_s)$, with the extension by continuity at a vanishing eigenvalue. The <strong>von Neumann entropy</strong> is</p>
+<p>with $\vec u_s = \vec s_{\Psi}/|\vec s_{\Psi}|$ and $\lambda_\pm = (1 \pm |\vec s_{\Psi}|)/2$. A function of the element is the function of its eigenvalues on its own idempotents, $\log\tilde{Ϛ}_{\Psi}=\log\lambda_+\,\tilde\Pi_{\mathrm{id},1}(\vec u_s)+\log\lambda_-\,\tilde\Pi_{\mathrm{id},2}(\vec u_s)$, with the extension by continuity at a vanishing eigenvalue. The <strong>von Neumann entropy</strong> is</p>
 <p>$$
 S(\tilde{Ϛ}_{\Psi}) = -2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}) = -\lambda_+ \log \lambda_+ - \lambda_- \log \lambda_-,
 $$</p>
 <p>which depends only on $|\vec s_{\Psi}|$ and vanishes for pure states.</p>
 <h3 id="fidelity">Fidelity</h3>
-<p>For two pure states $\tilde\Pi_{\mathrm p} = \tfrac{1}{2}(e_t + i\vec u_{\mathrm p})$ and $\tilde\Pi_{\mathrm q} = \tfrac{1}{2}(e_t + i\vec u_{\mathrm q})$, the <strong>transition probability</strong> is</p>
+<p>For two pure states $\tilde\Pi_{\mathrm{id},\mathrm p} = \tfrac{1}{2}(e_t + i\vec u_{\mathrm p})$ and $\tilde\Pi_{\mathrm{id},\mathrm q} = \tfrac{1}{2}(e_t + i\vec u_{\mathrm q})$, the <strong>transition probability</strong> is</p>
 <p>$$
-2\,\mathrm{Sc}(\tilde\Pi_{\mathrm p}\tilde\Pi_{\mathrm q}^{*}) = \tfrac{1}{2}\left(1 + \vec u_{\mathrm p}\cdot\vec u_{\mathrm q}\right),
+2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\mathrm p}\tilde\Pi_{\mathrm{id},\mathrm q}^{*}) = \tfrac{1}{2}\left(1 + \vec u_{\mathrm p}\cdot\vec u_{\mathrm q}\right),
 $$</p>
 <p>which is the standard $\cos^2(\theta/2)$ in biquaternion letters, where $\theta$ is the angle between $\vec u_{\mathrm p}$ and $\vec u_{\mathrm q}$ on the Bloch sphere.</p>
 <p>For mixed states the Uhlmann fidelity is the same scalar part with a square root, $2\,\mathrm{Sc}\sqrt{\tilde{Ϛ}_{\Psi,1}^{1/2}\tilde{Ϛ}_{\Psi,2}\tilde{Ϛ}_{\Psi,1}^{1/2}}$, and it closes in two dimensions because $\mathrm{Sc}\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\tfrac{1}{4}(1-|\vec s_{\Psi}|^2)$ is the determinant:</p>
@@ -431,7 +431,7 @@ $$</p>
 <p><strong>7. Empirical content.</strong> The reformulation reproduces standard quantum physics for a single qubit. Does it predict anything new, or does it only reinterpret? If it predicts new physics, at what scale does the deviation from standard QM appear?</p>
 <p><strong>8. The path integral.</strong> The standard path integral formulation of quantum physics is not obviously expressible in the biquaternion framework. Is there a natural path integral in the biquaternion algebra, with a natural measure inherited from the algebra? A path integral is constructed in <em>The Path Integral in Biquaternionic Form</em>, with the Schrödinger, spin-half and Coulomb instances in its companion articles.</p>
 <h2 id="summary">Summary</h2>
-<p>Quantum physics in the biquaternion framework is built on the Hermitian subspace $\mathbb{B}_{\Psi}$ of the biquaternion algebra. The <strong>states</strong> are the positive elements of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (unit weight), i.e., the Bloch ball, the <strong>pure states</strong> are the idempotents (the Bloch sphere), and the <strong>observables</strong> are the general Hermitian elements. The <strong>Born rule</strong> is the normalised Hermitian form $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$, the <strong>dynamics</strong> is rotor conjugation by $*$-unitary biquaternions, and <strong>measurement</strong> is the two-sided operation $\tilde{Ϛ}_{\Psi}\mapsto\tilde\Pi\tilde{Ϛ}_{\Psi}\tilde\Pi$.</p>
+<p>Quantum physics in the biquaternion framework is built on the Hermitian subspace $\mathbb{B}_{\Psi}$ of the biquaternion algebra. The <strong>states</strong> are the positive elements of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (unit weight), i.e., the Bloch ball, the <strong>pure states</strong> are the idempotents (the Bloch sphere), and the <strong>observables</strong> are the general Hermitian elements. The <strong>Born rule</strong> is the normalised Hermitian form $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$, the <strong>dynamics</strong> is rotor conjugation by $*$-unitary biquaternions, and <strong>measurement</strong> is the two-sided operation $\tilde{Ϛ}_{\Psi}\mapsto\tilde\Pi_{\mathrm{id}}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id}}$.</p>
 <p>The framework reproduces the standard qubit formalism for the states, observables, Born rule, dynamics, and measurement, with the structural advantages that states and observables live in the same space, the Born rule is a consequence of the Hermitian form, measurement is an algebraic operation, and the positivity condition on states is a biquaternion-norm condition.</p>
 <p>The biquaternion space carries both structures at once — the Lorentz group in the invertible elements through the double cover $SL(2,\mathbb{C})$, and the material sector $\mathbb{B}_{\Phi}$ of four-vectors — and the quantum formalism presented here and the relativistic structure coexist within it. The full relativistic quantum theory of spinor fields is the natural continuation of the framework: the classical precursor is the biquaternion Dirac equation treated in <em>The Dirac Equation in Biquaternionic Form</em>, and its quantization is carried out in <em>Canonical Quantization of the Biquaternion Dirac Field</em>.</p>
 <p>The extension to many qubits, the second-quantized version, the connection to quantum field theory, and the question of empirical content are open.</p>
@@ -469,7 +469,7 @@ $$</p>
 <td>State</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$</td>
+<td>$\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$</td>
 <td>Idempotent (pure state)</td>
 </tr>
 <tr>
@@ -493,7 +493,7 @@ $$</p>
 <td>Polarization of the biquaternion norm</td>
 </tr>
 <tr>
-<td>$\tilde{Ϛ}_{\Psi}\mapsto\tilde\Pi\tilde{Ϛ}_{\Psi}\tilde\Pi$</td>
+<td>$\tilde{Ϛ}_{\Psi}\mapsto\tilde\Pi_{\mathrm{id}}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id}}$</td>
 <td>Projective measurement</td>
 </tr>
 <tr>

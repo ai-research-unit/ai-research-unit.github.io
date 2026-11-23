@@ -116,10 +116,10 @@ $$</p>
 <p>the condition is $a_x^2+a_y^2+a_z^2=-1$, one complex equation in three unknowns: a family of real dimension four. The root gives the idempotent pair, and the pair gives a frame.</p>
 <p>The standard root is $\vec\Xi=i\vec e_z$, with</p>
 <p>$$
-\tilde\Pi_\pm=\tfrac12\bigl(e_t\pm i\vec e_z\bigr),\qquad
-\vec\Upsilon_\pm=\tfrac12\bigl(i\vec e_x\pm\vec e_y\bigr),
+\tilde\Pi_{\mathrm{id},\pm}=\tfrac12\bigl(e_t\pm i\vec e_z\bigr),\qquad
+\vec\Pi_{\mathrm{nil},\pm}=\tfrac12\bigl(i\vec e_x\pm\vec e_y\bigr),
 $$</p>
-<p>and the order $\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$.</p>
+<p>and the order $\mathcal{P}=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$.</p>
 <p>In that frame the sixteen matrices are monomial, unitary, of determinant one, with entries in $\mathbb{Z}[i]$. The display is a tensor product,</p>
 <p>$$
 L(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q),\qquad R(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2 ,
@@ -233,7 +233,7 @@ $$</p>
 <h3 id="the-switch-between-the-two-displays">The Switch Between the Two Displays</h3>
 <p>One matrix carries the Peirce frame onto the axis-free one.</p>
 <p>$$
-C_{\Pi}=\bigl(\tilde\Pi_+\ \ \vec\Upsilon_+\ \ \vec\Upsilon_-\ \ \tilde\Pi_-\bigr)
+C_{\Pi}=\bigl(\tilde\Pi_{\mathrm{id},+}\ \ \vec\Pi_{\mathrm{nil},+}\ \ \vec\Pi_{\mathrm{nil},-}\ \ \tilde\Pi_{\mathrm{id},-}\bigr)
 =\frac12
 \begin{pmatrix}
 1&0&0&1\\
@@ -244,7 +244,7 @@ i&0&0&-i
 \qquad
 L_{\mathrm{pau}}(\tilde Q)=C_{\Pi}^{-1}L_{\mathrm{axf}}(\tilde Q)\,C_{\Pi},
 $$</p>
-<p>with $\det C_{\Pi}=-\tfrac14$ and $C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}$. The switch is two independent $2\times2$ Hadamard blocks and it mixes no direction: one block joins $\{e_t,\vec e_z\}$ to $\{\tilde\Pi_+,\tilde\Pi_-\}$, the other joins $\{\vec e_x,\vec e_y\}$ to $\{\vec\Upsilon_+,\vec\Upsilon_-\}$.</p>
+<p>with $\det C_{\Pi}=-\tfrac14$ and $C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}$. The switch is two independent $2\times2$ Hadamard blocks and it mixes no direction: one block joins $\{e_t,\vec e_z\}$ to $\{\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-}\}$, the other joins $\{\vec e_x,\vec e_y\}$ to $\{\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-}\}$.</p>
 <p>Every invariant survives the change. Products, anticommutators, traces, determinants, spectra, ranks and the eigenvalue count are the same on both sides, which is why the correspondence between two articles written in different displays is a sentence and not a computation.</p>
 <h2 id="what-the-two-displays-show">What the Two Displays Show</h2>
 <h3 id="why-the-third-matrix-is-the-diagonal-one">Why the Third Matrix Is the Diagonal One</h3>
@@ -298,7 +298,7 @@ $$</p>
 <p>$$
 J=i\vec e_x,\qquad J^{2}=e_t,\qquad \mathsf M_2(J)=\sigma_1,\qquad R_J(\tilde Q)=\tilde QJ ,
 $$</p>
-<p>and $R_J$ exchanges the two columns with $R_J^{2}=\mathrm I$. The coupling element has to be invertible, because the mass is a bijection between the copies: one coefficient in each direction. A nilpotent cannot serve. For $\vec\Upsilon_x$ the matrix is $E_{21}$, the right multiplication carries the first column into the second and annihilates the second, and the map has rank two and no inverse. That is a one-way copy flip, not a mass.</p>
+<p>and $R_J$ exchanges the two columns with $R_J^{2}=\mathrm I$. The coupling element has to be invertible, because the mass is a bijection between the copies: one coefficient in each direction. A nilpotent cannot serve. For $\vec\Pi_{\mathrm{nil},x}$ the matrix is $E_{21}$, the right multiplication carries the first column into the second and annihilates the second, and the map has rank two and no inverse. That is a one-way copy flip, not a mass.</p>
 <p>The boundary. The statement is structural: it says which kind of action can couple the two copies, and it says that the coupling element must be off the cone. It does not give the coupling a value, and it does not produce a mass spectrum. The magnitude of the mass is an input, and the algebra is scale-free.</p>
 <h3 id="i2l-the-factor-math100-separates-the-generators-from-the-observables">I.2.l — The Factor $i$ Separates the Generators from the Observables</h3>
 <p>Read: the algebra's own basis maps to minus $i$ times the Pauli matrices, and the Hermitian basis maps to the Pauli matrices. The two rows differ by one factor and by nothing else.</p>
@@ -386,12 +386,12 @@ $$</p>
 <td>a root of the unit, $\vec Z^2=e_t$; and the standard root $i\vec e_z$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm$, $\vec\Upsilon_\pm$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}$, $\vec\Pi_{\mathrm{nil},\pm}$</td>
 <td>the idempotents and the nilpotents of the root</td>
 </tr>
 <tr>
 <td>$\mathcal{P}$</td>
-<td>the Peirce order $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$</td>
+<td>the Peirce order $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$</td>
 </tr>
 <tr>
 <td>$\mathsf P$</td>

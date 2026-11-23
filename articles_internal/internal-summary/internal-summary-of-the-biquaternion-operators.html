@@ -253,7 +253,7 @@ $$</p>
 <p><strong>The non-trivial claim.</strong> The composition rule contracts the inner indices, the reverse of matrix multiplication in the second factor; that is the same reversal as §6, written in the enveloping algebra. The sixteen $e_n[\,]e_m$ are an orthogonal basis of the ambient space, and the three classical functions $A\{a\}$, $D\{d\}$, $S\{s\}$ are its antisymmetric, diagonal and symmetric parts.</p>
 <p><strong>The Peirce corners of the envelope.</strong></p>
 <p>$$
-E_{ik}\mathbb{B}^{\mathrm e}E_{jl}=(\tilde\Pi_i\mathbb{B}\tilde\Pi_j)\otimes(\tilde\Pi_l\mathbb{B}\tilde\Pi_k)_{\mathrm{opp}}=\mathbb{C}\,(\Lambda_{ij}\otimes\Lambda_{\mathrm{opp},lk}),
+E_{ik}\mathbb{B}^{\mathrm e}E_{jl}=(\tilde\Pi_{\mathrm{id},i}\mathbb{B}\tilde\Pi_{\mathrm{id},j})\otimes(\tilde\Pi_{\mathrm{id},l}\mathbb{B}\tilde\Pi_{\mathrm{id},k})_{\mathrm{opp}}=\mathbb{C}\,(\Lambda_{ij}\otimes\Lambda_{\mathrm{opp},lk}),
 $$</p>
 <p>sixteen one-dimensional corners. The reversal of the second index pair in that display is again the composition reversal.</p>
 <p><strong>The double centraliser.</strong></p>
@@ -592,7 +592,7 @@ $$</p>
 <p><strong>The non-trivial claim.</strong> The pure central phase of $\pi/2$ is exactly the <strong>time reflection</strong>, an improper isometry of $g=a^{2}-\lvert\vec b\rvert^{2}$, and it is why the complex structure $i$ of the algebra is a geometric operator and not a scalar: it exchanges the material and informational halves. The complex norm changes sign under it, because the two sectors carry opposite signs in $\langle\cdot\rangle_{\natural}$. For a general phase the sectors are reached at $\theta_{\mathrm{pha}}\equiv0$ and $\pi/2$ modulo $\pi$, and nowhere else.</p>
 <p><strong>The wall $B^{2}=0$.</strong></p>
 <p>$$
-\tilde Q=Q_t(e_t+\vec\Upsilon),\qquad L_{\vec\Upsilon}^{2}=0,\qquad L_{\tilde Q}=Q_t(\mathrm{I}+L_{\vec\Upsilon}).
+\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}}),\qquad L_{\vec\Pi_{\mathrm{nil}}}^{2}=0,\qquad L_{\tilde Q}=Q_t(\mathrm{I}+L_{\vec\Pi_{\mathrm{nil}}}).
 $$</p>
 <p><strong>The non-trivial claim.</strong> On the wall the operator is unipotent: one repeated eigenvalue, and on the Jordan part of the wall two blocks of size two. That is the <em>only</em> change the wall makes; the rank stays four and the kernel stays zero.</p>
 <p><strong>The two-sided operator on the sector.</strong></p>
@@ -607,7 +607,7 @@ $$</p>
 $$</p>
 <p><strong>On the wall, two-sided.</strong></p>
 <p>$$
-\mathsf{N}=\mathrm{Sd}_{e_t+\vec\Upsilon}-I=A+B+AB,\quad A=L_{\vec\Upsilon},\ B=R_{\vec\Upsilon^{*}},\qquad
+\mathsf{N}=\mathrm{Sd}_{e_t+\vec\Pi_{\mathrm{nil}}}-I=A+B+AB,\quad A=L_{\vec\Pi_{\mathrm{nil}}},\ B=R_{\vec\Pi_{\mathrm{nil}}^{*}},\qquad
 \mathsf{N}^{2}=2AB,\quad \mathsf{N}^{3}=0,\quad \operatorname{rank}\mathsf{N}=2,\quad \operatorname{rank}\mathsf{N}^{2}=1 .
 $$</p>
 <p><strong>The non-trivial claim.</strong> One Jordan block of size three and one of size one, eigenvalue $\lvert Q_t\rvert^{2}$, determinant $\lvert Q_t\rvert^{8}$; the fixed subspace is two-dimensional, spanned by a spacelike vector and a null vector. The one-sided operator on the same wall has two blocks of size two, so the two-sided operator has the <em>coarser</em> Jordan type: coalescence, not refinement.</p>
@@ -629,8 +629,8 @@ $$</p>
 <thead>
 <tr>
 <th></th>
-<th>$\Sigma_{01}$: $\tilde Q=c\tilde\Pi$</th>
-<th>$\Sigma_{00}$: $\tilde\nu=\vec A+i\vec B$, $\lVert\vec A\rVert=\lVert\vec B\rVert$, $\vec A\cdot\vec B=0$</th>
+<th>$\Sigma_{01}$: $\tilde Q=c\tilde\Pi_{\mathrm{id}}$</th>
+<th>$\Sigma_{00}$: $\tilde\Pi_{\mathrm{nil}}=\vec A+i\vec B$, $\lVert\vec A\rVert=\lVert\vec B\rVert$, $\vec A\cdot\vec B=0$</th>
 </tr>
 </thead>
 <tbody>
@@ -674,22 +674,22 @@ $$</p>
 <p><strong>The non-trivial claim.</strong> On the whole cone the one-sided operators have rank two and a two-dimensional <strong>totally isotropic</strong> image (a left ideal for $L$, a right ideal for $R$), and the two-sided operator has rank <strong>one</strong>, image a single null line, kernel of dimension three. The strata change the Jordan type and nothing else.</p>
 <p><strong>The two planes, and the mirror.</strong></p>
 <p>$$
-\operatorname{im}L_{\tilde\nu}=\ker L_{\tilde\nu}=\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_+,\qquad
-\operatorname{im}R_{\tilde\nu}=\ker R_{\tilde\nu}=\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_-,\qquad
-\text{they meet in }\mathbb{C}\tilde\nu .
+\operatorname{im}L_{\tilde\Pi_{\mathrm{nil}}}=\ker L_{\tilde\Pi_{\mathrm{nil}}}=\mathbb{C}\tilde\Pi_{\mathrm{nil}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},+},\qquad
+\operatorname{im}R_{\tilde\Pi_{\mathrm{nil}}}=\ker R_{\tilde\Pi_{\mathrm{nil}}}=\mathbb{C}\tilde\Pi_{\mathrm{nil}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-},\qquad
+\text{they meet in }\mathbb{C}\tilde\Pi_{\mathrm{nil}} .
 $$</p>
-<p><strong>The non-trivial claim.</strong> For a nilpotent the image <em>equals</em> the kernel — the operator is square-zero — and the only asymmetry left is the idempotent $\tilde\Pi_\pm$. The intersection of the two planes is the line of the element, so the two operators remember the element and forget the axis.</p>
+<p><strong>The non-trivial claim.</strong> For a nilpotent the image <em>equals</em> the kernel — the operator is square-zero — and the only asymmetry left is the idempotent $\tilde\Pi_{\mathrm{id},\pm}$. The intersection of the two planes is the line of the element, so the two operators remember the element and forget the axis.</p>
 <p><strong>The exponentials, and the flow that leaves the cone.</strong></p>
 <p>$$
-\exp(tL_{\tilde Q})=\mathrm{I}+(e^{tc}-1)L_{\tilde\Pi},\qquad \exp(t\tilde Q)=e_t+(e^{tc}-1)\tilde\Pi\ \in\Sigma_{11}\ (t\neq0);
+\exp(tL_{\tilde Q})=\mathrm{I}+(e^{tc}-1)L_{\tilde\Pi_{\mathrm{id}}},\qquad \exp(t\tilde Q)=e_t+(e^{tc}-1)\tilde\Pi_{\mathrm{id}}\ \in\Sigma_{11}\ (t\neq0);
 $$</p>
 <p>$$
-\exp(tL_{\tilde\nu})=\mathrm{I}+tL_{\tilde\nu},\qquad \exp(t\tilde\nu)=e_t+t\tilde\nu\ \in\Sigma_{10}.
+\exp(tL_{\tilde\Pi_{\mathrm{nil}}})=\mathrm{I}+tL_{\tilde\Pi_{\mathrm{nil}}},\qquad \exp(t\tilde\Pi_{\mathrm{nil}})=e_t+t\tilde\Pi_{\mathrm{nil}}\ \in\Sigma_{10}.
 $$</p>
 <p><strong>The non-trivial claim.</strong> The operator exponential cannot leave the cone, but the <em>element</em> exponential does: a nilpotent flows to an invertible element with $B^{2}=0$, and an idempotent multiple flows to an invertible element with $B^{2}\neq0$. So "zero divisor" is not preserved by the group flow, while "singular operator" is. That pair is the sharpest statement in the sector group about what the two levels do and do not share.</p>
 <p><strong>The chain on the nilpotent.</strong></p>
 <p>$$
-\tilde\Pi_-\mapsto 4a^{2}\tilde\Pi_+\mapsto 0 .
+\tilde\Pi_{\mathrm{id},-}\mapsto 4a^{2}\tilde\Pi_{\mathrm{id},+}\mapsto 0 .
 $$</p>
 <p><strong>Source.</strong> <code>articles_maths/one-sided-operators-on-the-n-degenerate-sector.md</code>, <code>articles_maths/two-sided-operators-on-the-n-degenerate-sector.md</code></p>
 <h2 id="18-the-spin-group-in-real-matrices">18. The Spin Group in Real Matrices</h2>
@@ -840,21 +840,21 @@ $$</p>
 <h2 id="21-the-spin-half-family-and-the-fierzkofink-identities">21. The Spin-Half Family and the Fierz–Kofink Identities</h2>
 <p><strong>The three levels.</strong></p>
 <p>$$
-\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})\ (2),\qquad
-S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm(\vec u_{\mathrm r})\ (4),\qquad
+\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\ (2),\qquad
+S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})\ (4),\qquad
 \mathbb{B}=S_+\oplus S_-\ (8),
 $$</p>
 <p>nested, $\Sigma\subset S_+\subset\mathbb{B}$.</p>
 <p><strong>The non-trivial claim, and the sharpest statement of the whole block.</strong></p>
 <p>$$
-N\equiv0\ \text{on the plane and on each ideal};\qquad B^{2}=-\tfrac{\lambda^{2}}{4}\ \text{on the plane};\qquad \operatorname{spec}(\lambda\tilde\Pi_+)=\{0,\lambda\}.
+N\equiv0\ \text{on the plane and on each ideal};\qquad B^{2}=-\tfrac{\lambda^{2}}{4}\ \text{on the plane};\qquad \operatorname{spec}(\lambda\tilde\Pi_{\mathrm{id},+})=\{0,\lambda\}.
 $$</p>
 <p>The plane is <strong>null everywhere and spectrally regular away from the origin</strong>. So the two predicates are independent: neither implies the other, and a carrier can sit at one extreme for one and at the other extreme for the other. The spinor space is a <strong>maximal isotropic</strong> subspace of real dimension four, and inside it the degenerate locus is the real plane $\mathbb{C}(\vec u_2-i\vec u_3)$ of <strong>square-zero</strong> elements.</p>
 <p><strong>The bispinor read.</strong></p>
 <p>$$
 N(X_++X_-)=2B(X_+,X_-).
 $$</p>
-<p><strong>The non-trivial claim.</strong> On the bispinor space the norm becomes a <em>pairing between the two halves</em>: the first index of the sector asks whether the components pair at all, the second asks whether $B^{2}$ survives. That is why all four sectors occur there and only two on each closure. The witnesses are $e_t+2\vec e_x$, $e_t$, $\tilde\Pi_+$, $\vec u_2-i\vec u_3$.</p>
+<p><strong>The non-trivial claim.</strong> On the bispinor space the norm becomes a <em>pairing between the two halves</em>: the first index of the sector asks whether the components pair at all, the second asks whether $B^{2}$ survives. That is why all four sectors occur there and only two on each closure. The witnesses are $e_t+2\vec e_x$, $e_t$, $\tilde\Pi_{\mathrm{id},+}$, $\vec u_2-i\vec u_3$.</p>
 <p><strong>The family, and the axis.</strong></p>
 <p>$$
 \text{one plane per axis},\quad \text{two spinor spaces per axis},\quad \text{one bispinor space per axis up to sign};\qquad \text{family indexed by } \mathbb{R}P^{2}.
@@ -993,7 +993,7 @@ $$</p>
 <td>sectors of $(N\neq0,B^{2}\neq0)$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}$</td>
 <td>Peirce idempotents $\tfrac12(e_t\pm i\vec u_{\mathrm r})$</td>
 </tr>
 <tr>

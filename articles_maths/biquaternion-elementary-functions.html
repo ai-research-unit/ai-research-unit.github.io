@@ -72,7 +72,7 @@
         <h1 id="biquaternion-elementary-functions"><strong>Biquaternion Elementary Functions</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article introduces the elementary functions of a biquaternion variable. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its remarkable subspaces. The goal is to define the exponential, the logarithm, the power functions, the trigonometric and hyperbolic functions, and the inverse functions, and to compute them in closed form. The article mirrors <em>Quaternion Special Functions</em> in its treatment of the elementary functions, adapted to the complexified algebra. The exponential is treated in full: its closed form, its exponential coordinates at the identity, its group law, its kernel, and the exponentials in the two real directions of the scalar-free part. Its Lie-group consequences — the group of invertibles and the norm-one group — are in <em>Biquaternion Lie Group and Exponential Structure</em>.</p>
-<p>The logarithm is treated in the same detail as the exponential: the exponential equation, its two components $Q_{\log,t}$ and $\vec Q_{\log}$, the scalar part and the norm, the eigenvalue formula with the eigenvalues $Q_t\pm iB$ and the eigenprojections $\tilde\Pi_\pm$, the three cases, the parity-matched branch lattice, the principal branch and its cut walls, the principal domain on which the exponential is bijective, the two compositions, the derivative, and the value of the power function on all branches. The eigenvalue decomposition used throughout — the eigenvalues $\lambda_\pm=Q_t\pm iB$, the eigenprojections $\tilde\Pi_\pm$, the pure root $\vec{Ζ}$ and the parity-matched lattice — is that of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>, for the eigenvalues, the eigenprojections and the pure root, and of §<em>The Eigenvalue Formula</em> below for the parity-matched lattice; this article cites them and does not derive them. The worked examples are the kernel and logarithm computations and the counterexamples that establish the failure of the addition formulas.</p>
+<p>The logarithm is treated in the same detail as the exponential: the exponential equation, its two components $Q_{\log,t}$ and $\vec Q_{\log}$, the scalar part and the norm, the eigenvalue formula with the eigenvalues $Q_t\pm iB$ and the eigenprojections $\tilde\Pi_{\mathrm{id},\pm}$, the three cases, the parity-matched branch lattice, the principal branch and its cut walls, the principal domain on which the exponential is bijective, the two compositions, the derivative, and the value of the power function on all branches. The eigenvalue decomposition used throughout — the eigenvalues $\lambda_\pm=Q_t\pm iB$, the eigenprojections $\tilde\Pi_{\mathrm{id},\pm}$, the pure root $\vec{Ζ}$ and the parity-matched lattice — is that of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>, for the eigenvalues, the eigenprojections and the pure root, and of §<em>The Eigenvalue Formula</em> below for the parity-matched lattice; this article cites them and does not derive them. The worked examples are the kernel and logarithm computations and the counterexamples that establish the failure of the addition formulas.</p>
 <p>The treatment is purely mathematical. No physics is invoked. The biquaternion algebra $\mathbb{B}$ is assumed from the basic algebra article, together with its scalar-vector decomposition, its biquaternion norm, written $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$, and its four conjugations. An element is <strong>$\natural$-regular</strong> when $\langle\tilde Q\rangle_{\natural}\neq0$ and <strong>$\natural$-degenerate</strong> when $\langle\tilde Q\rangle_{\natural}=0$.</p>
 <p>The key structural fact is that the elementary functions of a biquaternion are determined by the <strong>powers</strong> of the biquaternion, and the powers simplify dramatically in two regimes: when the vector part has a nonzero <strong>complex norm</strong>, and when the complex norm vanishes. These two regimes cover all possibilities. The first is the <strong>oscillatory regime</strong>; the second contains the <strong>nilpotent case</strong>, where the vector part is nonzero and squares to zero, and the <strong>scalar case</strong>, where the vector part vanishes. The purpose of this article is to develop the elementary functions in all three cases, with the scalar case distinguished where its logarithm or its powers are larger.</p>
 <p>The higher special functions — Bessel, hypergeometric, gamma, zeta, and the functions arising from the analysis — are treated in the companion article on biquaternion higher special functions.</p>
@@ -121,11 +121,11 @@ The square root, the axis and the pure root $\vec{Ζ}=-i\vec U$ are those of <em
 </tr>
 <tr>
 <td>Eigenprojections</td>
-<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$, $\vec{Ζ}=-i\vec U$, for $B\neq0$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\vec{Ζ})$, $\vec{Ζ}=-i\vec U$, for $B\neq0$</td>
 </tr>
 <tr>
 <td>Eigenvalue decomposition</td>
-<td>$\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$, for $B\neq0$</td>
+<td>$\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$, for $B\neq0$</td>
 </tr>
 <tr>
 <td>Characteristic polynomial</td>
@@ -145,7 +145,7 @@ The square root, the axis and the pure root $\vec{Ζ}=-i\vec U$ are those of <em
 </tr>
 <tr>
 <td>Polynomial calculus</td>
-<td>$f(\tilde Q)=f(\lambda_+)\tilde\Pi_++f(\lambda_-)\tilde\Pi_-$ for every polynomial $f$, when $B\neq0$</td>
+<td>$f(\tilde Q)=f(\lambda_+)\tilde\Pi_{\mathrm{id},++f}(\lambda_-)\tilde\Pi_{\mathrm{id},-}$ for every polynomial $f$, when $B\neq0$</td>
 </tr>
 <tr>
 <td>Lattice</td>
@@ -208,9 +208,9 @@ $$
 so $\mathbb{C}[\tilde{Q}]=\operatorname{span}_{\mathbb{C}}\{e_t,\tilde{Q}\}$, of dimension two when $B\neq0$ or $\vec Q\neq0$, and one, equal to $\mathbb{C}e_t$, when $\vec Q=0$.</p>
 <p><strong>Theorem (Idempotent Principle, oscillatory regime).</strong> Let $f$ be defined by a power series with radius of convergence $\rho$, and let $B\neq0$ with $\lvert\lambda_\pm\rvert<\rho$. Then</p>
 <p>$$
-\boxed{\; f(\tilde{Q})=f(\lambda_+)\tilde\Pi_++f(\lambda_-)\tilde\Pi_-,\qquad B\neq0 \;}
+\boxed{\; f(\tilde{Q})=f(\lambda_+)\tilde\Pi_{\mathrm{id},++f}(\lambda_-)\tilde\Pi_{\mathrm{id},-},\qquad B\neq0 \;}
 $$</p>
-<p><strong>Proof.</strong> The eigenvalue decomposition gives $\tilde Q^n=\lambda_+^n\tilde\Pi_++\lambda_-^n\tilde\Pi_-$ for every $n\geq0$ (<em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>). Summing the series termwise, using $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_-^2=\tilde\Pi_-$, $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$, gives the display; the rearrangement is legitimate because the series converges absolutely in each eigenvalue.</p>
+<p><strong>Proof.</strong> The eigenvalue decomposition gives $\tilde Q^n=\lambda_+^n\tilde\Pi_{\mathrm{id},++}\lambda_-^n\tilde\Pi_{\mathrm{id},-}$ for every $n\geq0$ (<em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>). Summing the series termwise, using $\tilde\Pi_{\mathrm{id},+}^2=\tilde\Pi_{\mathrm{id},+}$, $\tilde\Pi_{\mathrm{id},-}^2=\tilde\Pi_{\mathrm{id},-}$, $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$ and $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$, gives the display; the rearrangement is legitimate because the series converges absolutely in each eigenvalue.</p>
 <p>The same display is the definition of the biquaternion extension of a function given by an integral, an inverse or another complex formula. In the nilpotent regime the idempotents are absent and the series truncates after the linear term, as computed in §<em>The Exponential</em> and §<em>The Logarithm</em>. The two regimes are the two isomorphism types of $\mathbb{C}[\tilde{Q}]$.</p>
 <p>This is the Idempotent Principle of <em>Split-Complex Elementary Functions</em> and <em>Reduced Biquaternion Elementary Functions</em> in the oscillatory regime, extended by the truncated calculus of the nilpotent regime. Because $\mathbb{C}[\tilde{Q}]$ is commutative, the standard identities of complex analysis — the Pythagorean identity, the hyperbolic identity, the double-angle formulas, the relation between the exponential and the trigonometric functions — hold within it, and every elementary function $F(\tilde{Q})$ defined by a power series with coefficients in $\mathbb{C}$ lies in $\mathbb{C}[\tilde{Q}]$. This is the precise sense in which the non-commutativity of $\mathbb{B}$ does not obstruct the standard identities for a single biquaternion variable.</p>
 <p><strong>Several variables.</strong> For functions of two or more biquaternion variables the reduction fails. The powers of a sum $\tilde Q_1+\tilde Q_2$ involve both products $\tilde Q_1\tilde Q_2$ and $\tilde Q_2\tilde Q_1$, the binomial expansion does not hold, and $\exp(\tilde Q_1+\tilde Q_2)\neq\exp\tilde Q_1\exp\tilde Q_2$ in general. The theory of several variables is largely open (§<em>Open Questions</em>).</p>
@@ -229,10 +229,10 @@ $$</p>
 <p>where $\exp(Q_t)$ is the ordinary complex exponential. In the oscillatory case the Idempotent Principle computes $\exp(\tilde Q)$ directly; in the degenerate cases the reduction leaves the exponential of the vector part.</p>
 <p><strong>The oscillatory case.</strong> If $B\neq0$, the Idempotent Principle applies to the exponential series. With the eigenvalues and eigenprojections of §<em>The Eigenvalue Data</em>,</p>
 <p>$$
-\exp(\tilde Q)=\exp(\lambda_+)\tilde\Pi_++\exp(\lambda_-)\tilde\Pi_-
+\exp(\tilde Q)=\exp(\lambda_+)\tilde\Pi_{\mathrm{id},++}\exp(\lambda_-)\tilde\Pi_{\mathrm{id},-}
 =\exp(Q_t)\bigl(\cos B\,e_t+\sin B\,\vec U\bigr),
 $$</p>
-<p>because $\lambda_\pm=Q_t\pm iB$ and $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ with $\vec{Ζ}=-i\vec U$. Hence</p>
+<p>because $\lambda_\pm=Q_t\pm iB$ and $\tilde\Pi_{\mathrm{id},\pm}=\frac12(e_t\pm\vec{Ζ})$ with $\vec{Ζ}=-i\vec U$. Hence</p>
 <p>$$
 \boxed{\; \exp(\tilde{Q}) = \exp(Q_t) \bigl(\cos B \, e_t + \sin B \, \vec U\bigr), \qquad B \neq 0 \;}
 $$</p>
@@ -459,16 +459,16 @@ $$</p>
 $$</p>
 <p>and the scalar part is fixed modulo $\pi i$; equivalently, its imaginary part is fixed modulo $\pi$. In the quaternion case the norm is real and positive, so the scalar part is the unique real number $\ln\sqrt{\langle\tilde q\rangle_{\natural}}$ and carries no branch. In $\mathbb B$ the scalar part carries one integer before the vector part is considered.</p>
 <h3 id="the-eigenvalue-formula">The Eigenvalue Formula</h3>
-<p>The eigenvalue decomposition is that of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>, and is not derived again. Let $\tilde Q$ be an invertible element with $B\neq0$. The eigenvalues are $\lambda_\pm=Q_t\pm iB$, the pure root is $\vec{Ζ}=-i\vec U=-i\vec Q/B$, and the eigenprojections are $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$; they are primitive, orthogonal and complete, and satisfy</p>
+<p>The eigenvalue decomposition is that of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>, and is not derived again. Let $\tilde Q$ be an invertible element with $B\neq0$. The eigenvalues are $\lambda_\pm=Q_t\pm iB$, the pure root is $\vec{Ζ}=-i\vec U=-i\vec Q/B$, and the eigenprojections are $\tilde\Pi_{\mathrm{id},\pm}=\frac12(e_t\pm\vec{Ζ})$; they are primitive, orthogonal and complete, and satisfy</p>
 <p>$$
-\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-
+\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}
 \qquad
-\tilde Q\tilde\Pi_\pm=\lambda_\pm\tilde\Pi_\pm.
+\tilde Q\tilde\Pi_{\mathrm{id},\pm}=\lambda_\pm\tilde\Pi_{\mathrm{id},\pm}.
 $$</p>
-<p>The unordered pair $\{\lambda_+,\lambda_-\}$ is fixed by $\tilde Q$; the ordered pair is fixed only up to $B\mapsto-B$, which exchanges $\tilde\Pi_+$ and $\tilde\Pi_-$. In particular $\lambda_\pm\neq0$.</p>
-<p>Every logarithm $\tilde Q_{\log}$ commutes with $\tilde Q$, because $\tilde Q_{\log}\exp(\tilde Q_{\log})=\exp(\tilde Q_{\log})\tilde Q_{\log}$. Since the eigenvalues are distinct, the centraliser is $\mathbb C[\tilde Q]=\operatorname{span}_{\mathbb C}\{e_t,\tilde Q\}$ and $\tilde\Pi_\pm$ are polynomials in $\tilde Q$ (§<em>The Peirce Decomposition Relative to the Eigenprojection</em>). Hence $\tilde Q_{\log}$ has the same eigenprojections,</p>
+<p>The unordered pair $\{\lambda_+,\lambda_-\}$ is fixed by $\tilde Q$; the ordered pair is fixed only up to $B\mapsto-B$, which exchanges $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$. In particular $\lambda_\pm\neq0$.</p>
+<p>Every logarithm $\tilde Q_{\log}$ commutes with $\tilde Q$, because $\tilde Q_{\log}\exp(\tilde Q_{\log})=\exp(\tilde Q_{\log})\tilde Q_{\log}$. Since the eigenvalues are distinct, the centraliser is $\mathbb C[\tilde Q]=\operatorname{span}_{\mathbb C}\{e_t,\tilde Q\}$ and $\tilde\Pi_{\mathrm{id},\pm}$ are polynomials in $\tilde Q$ (§<em>The Peirce Decomposition Relative to the Eigenprojection</em>). Hence $\tilde Q_{\log}$ has the same eigenprojections,</p>
 <p>$$
-\tilde Q_{\log}=\mu_+\tilde\Pi_++\mu_-\tilde\Pi_-,
+\tilde Q_{\log}=\mu_+\tilde\Pi_{\mathrm{id},++}\mu_-\tilde\Pi_{\mathrm{id},-},
 $$</p>
 <p>and the equation $\exp(\tilde Q_{\log})=\tilde Q$ is equivalent to $\exp\mu_\pm=\lambda_\pm$, by the polynomial calculus of §<em>Powers, Polynomial Calculus, and the Group of Invertibles</em>. Thus</p>
 <p>$$
@@ -477,12 +477,12 @@ $$</p>
 <p>and every logarithm is</p>
 <p>$$
 \boxed{\; \tilde Q_{\log}
-=\mu_+\tilde\Pi_++\mu_-\tilde\Pi_-
+=\mu_+\tilde\Pi_{\mathrm{id},++}\mu_-\tilde\Pi_{\mathrm{id},-}
 =\frac{\mu_++\mu_-}{2}\,e_t+\frac{\mu_+-\mu_-}{2i}\,\vec U,
 \qquad
 \mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm \;},
 $$</p>
-<p>the second equality using $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ and $\vec{Ζ}=-i\vec U$. This is the <strong>eigenvalue formula</strong>. It is the exact biquaternion form of the quaternion formula, with the real angle replaced by the complex angle</p>
+<p>the second equality using $\tilde\Pi_{\mathrm{id},\pm}=\frac12(e_t\pm\vec{Ζ})$ and $\vec{Ζ}=-i\vec U$. This is the <strong>eigenvalue formula</strong>. It is the exact biquaternion form of the quaternion formula, with the real angle replaced by the complex angle</p>
 <p>$$
 \Theta=\frac{\mu_+-\mu_-}{2i}.
 $$</p>
@@ -689,7 +689,7 @@ $$</p>
 \mathcal W
 =\{\tilde Q:\lambda_+\in(-\infty,0]\}\cup\{\tilde Q:\lambda_-\in(-\infty,0]\}
 $$</p>
-<p>when $B\neq0$, and across the wall $Q_t\in(-\infty,0]$ when $B=0$. Each oscillatory wall is a real hypersurface of $\mathbb B$; the walls in the $B=0$ regimes lie in the codimension-two set $B=0$ and are lower-dimensional. On the complement of $\mathcal W$ the principal logarithm is real-analytic. Across a wall the two sides differ by $2\pi i \tilde\Pi_\pm$ in the oscillatory regime and by $2\pi i e_t$ in the two $B=0$ regimes; these are kernel elements. The cut is an artefact of the branch, not of the exponential, and it can be moved by choosing another ray in each eigenvalue plane.</p>
+<p>when $B\neq0$, and across the wall $Q_t\in(-\infty,0]$ when $B=0$. Each oscillatory wall is a real hypersurface of $\mathbb B$; the walls in the $B=0$ regimes lie in the codimension-two set $B=0$ and are lower-dimensional. On the complement of $\mathcal W$ the principal logarithm is real-analytic. Across a wall the two sides differ by $2\pi i \tilde\Pi_{\mathrm{id},\pm}$ in the oscillatory regime and by $2\pi i e_t$ in the two $B=0$ regimes; these are kernel elements. The cut is an artefact of the branch, not of the exponential, and it can be moved by choosing another ray in each eigenvalue plane.</p>
 <p><strong>The principal angle.</strong> In the oscillatory regime the eigenvalue formula gives</p>
 <p>$$
 \Theta=\frac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{2i}
@@ -705,7 +705,7 @@ $$</p>
 <p>Then $\exp$ maps $D$ bijectively onto $\mathbb B^\times$, and $\operatorname{Log}$ is its inverse. The interior $D^\circ$, where the imaginary parts lie in $(-\pi,\pi)$, maps onto $\mathbb B^\times\setminus\mathcal W$, and there $\operatorname{Log}$ is real-analytic.</p>
 <p><strong>Proof.</strong> For surjectivity, let $\tilde Q\in\mathbb B^\times$. If $B\neq0$, the numbers $\operatorname{Log}\lambda_\pm$ have imaginary parts in $(-\pi,\pi]$, and</p>
 <p>$$
-\tilde Q_1=(\operatorname{Log}\lambda_+)\tilde\Pi_++(\operatorname{Log}\lambda_-)\tilde\Pi_-
+\tilde Q_1=(\operatorname{Log}\lambda_+)\tilde\Pi_{\mathrm{id},++}(\operatorname{Log}\lambda_-)\tilde\Pi_{\mathrm{id},-}
 $$</p>
 <p>lies in $D$ and exponentiates to $\tilde Q$. If $B=0$, the element $\operatorname{Log}Q_t\,e_t+\vec Q/Q_t$ lies in $D$ and exponentiates to $\tilde Q$.</p>
 <p>For injectivity, let $\tilde Q_1,\tilde Q_2\in D$ with $\exp\tilde Q_1=\exp\tilde Q_2=\tilde Q$. Both commute with $\tilde Q$. If $\tilde Q$ is not scalar, they lie in the commutative centraliser, so $\tilde Q_1-\tilde Q_2$ is a kernel element; its eigenvalues are differences of eigenvalues in $(-2\pi,2\pi)$, hence are $0$. A kernel element with all eigenvalues $0$ is $0$ (in the nilpotent centraliser the kernel is scalar), so $\tilde Q_1=\tilde Q_2$. If $\tilde Q$ is scalar, the only eigenvalue in the strip that exponentiates to $Q_t$ is $\operatorname{Log}Q_t$, so both $\tilde Q_i$ have both eigenvalues equal to $\operatorname{Log}Q_t$; a non-diagonalisable element with that repeated eigenvalue would exponentiate to a non-scalar element, so both are scalar and equal. Thus $\exp$ is injective. The analyticity statement is the inverse function theorem on $D^\circ$, where the eigenvalues differ by less than $2\pi$ and the differential of the exponential is invertible.</p>
@@ -749,14 +749,14 @@ $$</p>
 <p>$$
 \boxed{\; \exp(\operatorname{Log}\tilde Q)=\tilde Q \;}.
 $$</p>
-<p>This is the construction of the principal logarithm: in the oscillatory regime, $\exp((\operatorname{Log}\lambda_\pm)\tilde\Pi_\pm)=\lambda_\pm \tilde\Pi_\pm$; in the nilpotent regime, $\exp(\operatorname{Log}Q_t\,e_t+\vec Q/Q_t)=Q_t e_t+\vec Q$; in the scalar case, $\exp(\operatorname{Log}Q_t)=Q_t$.</p>
+<p>This is the construction of the principal logarithm: in the oscillatory regime, $\exp((\operatorname{Log}\lambda_\pm)\tilde\Pi_{\mathrm{id},\pm})=\lambda_\pm \tilde\Pi_{\mathrm{id},\pm}$; in the nilpotent regime, $\exp(\operatorname{Log}Q_t\,e_t+\vec Q/Q_t)=Q_t e_t+\vec Q$; in the scalar case, $\exp(\operatorname{Log}Q_t)=Q_t$.</p>
 <p><strong>Left inverse.</strong> For every $\tilde Q_1\in D$,</p>
 <p>$$
 \operatorname{Log}(\exp\tilde Q_1)=\tilde Q_1.
 $$</p>
 <p>For a general $\tilde Q_1$, the principal logarithm of $\exp\tilde Q_1$ is the unique element of $D$ in the fibre, and it differs from $\tilde Q_1$ by a kernel element. In the oscillatory regime, let $\mu_\pm$ be the eigenvalues of $\tilde Q_1$ and let $m_\pm$ be the integers with $\operatorname{Im}(\mu_\pm-2\pi i m_\pm)\in(-\pi,\pi]$. Then</p>
 <p>$$
-\operatorname{Log}(\exp\tilde Q_1)=\tilde Q_1-2\pi i\bigl(m_+\tilde\Pi_++m_-\tilde\Pi_-\bigr).
+\operatorname{Log}(\exp\tilde Q_1)=\tilde Q_1-2\pi i\bigl(m_+\tilde\Pi_{\mathrm{id},++m}_-\tilde\Pi_{\mathrm{id},-}\bigr).
 $$</p>
 <p>In the nilpotent regime, for $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ with $\vec Q_1^2=0$,</p>
 <p>$$
@@ -772,13 +772,13 @@ $$</p>
 <p>on its domain. The square root $B$ can be chosen the same for $\tilde Q$ and $\tilde Q^{\natural}$; then $\vec U$ changes sign, $\lambda_+$ and $\lambda_-$ are exchanged, and both sides change sign in the vector part.</p>
 <h3 id="the-derivative">The Derivative</h3>
 <p>On the complement of the walls the logarithm is real-analytic, and its differential at $\tilde Q$ is the inverse of the differential of the exponential at $\operatorname{Log}\tilde Q$. It is not left or right multiplication by $\tilde Q^{-1}$.</p>
-<p>For $B\neq0$, with the eigenprojections $\tilde\Pi_\pm$ and the eigenvalues $\lambda_\pm$,</p>
+<p>For $B\neq0$, with the eigenprojections $\tilde\Pi_{\mathrm{id},\pm}$ and the eigenvalues $\lambda_\pm$,</p>
 <p>$$
 \boxed{\; d\operatorname{Log}_{\tilde Q}(H)
-=\frac{\tilde\Pi_+H\tilde\Pi_+}{\lambda_+}
-+\frac{\tilde\Pi_-H\tilde\Pi_-}{\lambda_-}
+=\frac{\tilde\Pi_{\mathrm{id},+H}\tilde\Pi_{\mathrm{id},+}}{\lambda_+}
++\frac{\tilde\Pi_{\mathrm{id},-H}\tilde\Pi_{\mathrm{id},-}}{\lambda_-}
 +\frac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{\lambda_+-\lambda_-}
-\bigl(\tilde\Pi_+H\tilde\Pi_-+\tilde\Pi_-H\tilde\Pi_+\bigr) \;}.
+\bigl(\tilde\Pi_{\mathrm{id},+H}\tilde\Pi_{\mathrm{id},-+}\tilde\Pi_{\mathrm{id},-H}\tilde\Pi_{\mathrm{id},+}\bigr) \;}.
 $$</p>
 <p>This is the Fréchet derivative of the matrix logarithm, read in the algebra. If $H$ commutes with $\tilde Q$, the cross terms vanish and</p>
 <p>$$
@@ -823,7 +823,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$B\neq0$, $\langle\tilde Q\rangle_{\natural}\neq0$</td>
-<td>$\mu_+\tilde\Pi_++\mu_-\tilde\Pi_-$, $\mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm$</td>
+<td>$\mu_+\tilde\Pi_{\mathrm{id},++}\mu_-\tilde\Pi_{\mathrm{id},-}$, $\mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm$</td>
 <td>the same with principal $\operatorname{Log}\lambda_\pm$</td>
 <td>coset of the parity-matched lattice</td>
 </tr>
@@ -1026,7 +1026,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>For $n=2$ the table gives the square roots: four for an oscillatory unit, two for an oscillatory zero divisor, two for a Jordan unit, none for a nonzero nilpotent, and a continuous family on the scalar axis and at $0$. In the oscillatory unit case they are $\pm R_0$ and $\pm i\vec U R_0$, where $R_0=\exp(\tfrac12\operatorname{Log}\tilde Q)$ is the principal square root; in the oscillatory zero-divisor case they are $\pm\sqrt{2Q_t}\,\tilde\Pi_\sigma$, the roots of the nonzero eigenvalue $2Q_t$; in the Jordan case they are $\pm R_0$; and the square roots of $e_t$ include $i\vec U$ for every root $\vec U$ of $-e_t$. The principal branch gives one of the four values in the oscillatory regime; the other three come from shifting the two eigenvalue logarithms independently by $2\pi i$, modulo the shifts that leave the root fixed. The two-branch picture of the non-real quaternion case does not survive the complexification.</p>
+<p>For $n=2$ the table gives the square roots: four for an oscillatory unit, two for an oscillatory zero divisor, two for a Jordan unit, none for a nonzero nilpotent, and a continuous family on the scalar axis and at $0$. In the oscillatory unit case they are $\pm R_0$ and $\pm i\vec U R_0$, where $R_0=\exp(\tfrac12\operatorname{Log}\tilde Q)$ is the principal square root; in the oscillatory zero-divisor case they are $\pm\sqrt{2Q_t}\,\tilde\Pi_{\mathrm{id},\sigma}$, the roots of the nonzero eigenvalue $2Q_t$; in the Jordan case they are $\pm R_0$; and the square roots of $e_t$ include $i\vec U$ for every root $\vec U$ of $-e_t$. The principal branch gives one of the four values in the oscillatory regime; the other three come from shifting the two eigenvalue logarithms independently by $2\pi i$, modulo the shifts that leave the root fixed. The two-branch picture of the non-real quaternion case does not survive the complexification.</p>
 <p><strong>Consistency with the biquaternion norm.</strong> For a fixed compatible choice of branch, the power function satisfies</p>
 <p>$$
 \langle\tilde Q^\alpha\rangle_{\natural}
@@ -1414,9 +1414,9 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>Every direct elementary function — the exponential, the trigonometric and the hyperbolic functions — is defined by applying the scalar power series to $\tilde{Q}$, and all its values lie in the commutative subalgebra $\mathbb{C}[\tilde{Q}]$ generated by $\tilde{Q}$. This is why the standard identities of complex analysis — the Pythagorean identity, the hyperbolic identity, the double-angle formulas, the relation between the exponential and the trigonometric functions — survive the non-commutativity of $\mathbb{B}$ for a single variable; the addition formulas for two independent biquaternions do not, and fail for explicit counterexamples such as $\tilde{Q}_1 = \vec e_x$, $\tilde{Q}_2 = \vec e_y$.</p>
 <p>The structure of $\mathbb{C}[\tilde{Q}]$ is governed by the discriminant and yields exactly two regimes. In the <strong>oscillatory regime</strong> $B \neq 0$ the subalgebra is $\mathbb{C} \times \mathbb{C}$, the element $\tilde{Q}$ is diagonalizable with eigenvalues $Q_t \pm iB$, and the closed forms are the oscillatory-hyperbolic expressions of the collected table, built on $\tilde{Q} = Q_t e_t + B\vec U$ with $\vec U^2 = -e_t$. In the <strong>nilpotent regime</strong> $B = 0$, $\vec Q \neq 0$, the subalgebra is $\mathbb{C}[\epsilon]/(\epsilon^2)$ with the nilpotent $\epsilon = \vec Q$, and every power series truncates after the linear term: the exponential becomes $\exp(Q_t)(e_t + \vec Q)$, the principal logarithm becomes $\operatorname{Log}Q_t\,e_t + \vec Q/Q_t$, and the higher functions reduce to their first-order Taylor expansions in $\vec Q$. The scalar case $\vec Q=0$ is the degenerate end of the nilpotent regime, where $\mathbb C[\tilde Q]=\mathbb C e_t$ and the logarithm is the translate of the kernel described in §<em>The Degenerate Regimes</em>, not a lattice coset.</p>
-<p>The exponential is the model of the theory. It is never a zero divisor, it satisfies $\exp(\tilde{Q}_1+\tilde{Q}_2) = \exp(\tilde{Q}_1)\exp(\tilde{Q}_2)$ when $\tilde{Q}_1$ and $\tilde{Q}_2$ commute (the converse can fail, §<em>The Group Law</em>), and it is surjective onto the group of invertibles: every invertible element has a logarithm (<em>Higham, Functions of Matrices</em>, Theorem 1.27). It is not injective. In the oscillatory regime, with $\lambda_\pm=Q_t\pm iB$ and $\tilde\Pi_\pm=\frac12(e_t\mp i\vec U)$, every logarithm is</p>
+<p>The exponential is the model of the theory. It is never a zero divisor, it satisfies $\exp(\tilde{Q}_1+\tilde{Q}_2) = \exp(\tilde{Q}_1)\exp(\tilde{Q}_2)$ when $\tilde{Q}_1$ and $\tilde{Q}_2$ commute (the converse can fail, §<em>The Group Law</em>), and it is surjective onto the group of invertibles: every invertible element has a logarithm (<em>Higham, Functions of Matrices</em>, Theorem 1.27). It is not injective. In the oscillatory regime, with $\lambda_\pm=Q_t\pm iB$ and $\tilde\Pi_{\mathrm{id},\pm}=\frac12(e_t\mp i\vec U)$, every logarithm is</p>
 <p>$$
-\tilde Q_{\log}=\mu_+\tilde\Pi_++\mu_-\tilde\Pi_-,
+\tilde Q_{\log}=\mu_+\tilde\Pi_{\mathrm{id},++}\mu_-\tilde\Pi_{\mathrm{id},-},
 \qquad
 \mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm,
 $$</p>
@@ -1457,11 +1457,11 @@ $$</p>
 </tr>
 <tr>
 <td>Eigenprojections</td>
-<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$, $\vec{Ζ}=-i\vec U$, for $B\neq0$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\vec{Ζ})$, $\vec{Ζ}=-i\vec U$, for $B\neq0$</td>
 </tr>
 <tr>
 <td>Idempotent Principle</td>
-<td>$f(\tilde Q)=f(\lambda_+)\tilde\Pi_++f(\lambda_-)\tilde\Pi_-$ when $B\neq0$; the series truncates when $B=0$</td>
+<td>$f(\tilde Q)=f(\lambda_+)\tilde\Pi_{\mathrm{id},++f}(\lambda_-)\tilde\Pi_{\mathrm{id},-}$ when $B\neq0$; the series truncates when $B=0$</td>
 </tr>
 <tr>
 <td>Exponential</td>
@@ -1485,7 +1485,7 @@ $$</p>
 </tr>
 <tr>
 <td>Derivative of the logarithm</td>
-<td>$d\operatorname{Log}_{\tilde Q}(H)=\sum_\pm\lambda_\pm^{-1}\tilde\Pi_\pm H\tilde\Pi_\pm+\frac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{\lambda_+-\lambda_-}(\tilde\Pi_+H\tilde\Pi_-+\tilde\Pi_-H\tilde\Pi_+)$; equals $\tilde Q^{-1}H$ when $[H,\tilde Q]=0$</td>
+<td>$d\operatorname{Log}_{\tilde Q}(H)=\sum_\pm\lambda_\pm^{-1}\tilde\Pi_{\mathrm{id},\pm} H\tilde\Pi_{\mathrm{id},\pm+}\frac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{\lambda_+-\lambda_-}(\tilde\Pi_{\mathrm{id},+H}\tilde\Pi_{\mathrm{id},-+}\tilde\Pi_{\mathrm{id},-H}\tilde\Pi_{\mathrm{id},+})$; equals $\tilde Q^{-1}H$ when $[H,\tilde Q]=0$</td>
 </tr>
 <tr>
 <td>Powers</td>
@@ -1635,7 +1635,7 @@ $$</p>
 <td>Spectral calculus</td>
 <td>$\Phi(Q)=\Phi(\lambda_+)\Pi_++\Phi(\lambda_-)\Pi_-$</td>
 <td>$f(\breve Q)=f(\lambda_1)\Pi_++f(\lambda_2)\Pi_-$</td>
-<td>$f(\tilde Q)=f(\lambda_+)\tilde\Pi_++f(\lambda_-)\tilde\Pi_-$ if $B\neq0$; truncated if $B=0$</td>
+<td>$f(\tilde Q)=f(\lambda_+)\tilde\Pi_{\mathrm{id},++f}(\lambda_-)\tilde\Pi_{\mathrm{id},-}$ if $B\neq0$; truncated if $B=0$</td>
 </tr>
 <tr>
 <td>Exponential</td>
@@ -1665,7 +1665,7 @@ $$</p>
 <td>Logarithm</td>
 <td>$\log\lambda_+\Pi_++\log\lambda_-\Pi_-$</td>
 <td>$\log\lambda_1\Pi_++\log\lambda_2\Pi_-$</td>
-<td>$\mu_+\tilde\Pi_++\mu_-\tilde\Pi_-$, $\mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm$; Jordan formula if $B=0$</td>
+<td>$\mu_+\tilde\Pi_{\mathrm{id},++}\mu_-\tilde\Pi_{\mathrm{id},-}$, $\mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm$; Jordan formula if $B=0$</td>
 </tr>
 <tr>
 <td>Powers</td>
@@ -1735,8 +1735,8 @@ $$</p>
 <td>Pure root of $+1$ attached to the axis, $\vec{Ζ}^2=e_t$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm = \frac12(e_t \pm \vec{Ζ})$</td>
-<td>Eigenprojections of $\tilde Q$; $\tilde\Pi_++\tilde\Pi_-=e_t$, $\tilde\Pi_+\tilde\Pi_-=0$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm} = \frac12(e_t \pm \vec{Ζ})$</td>
+<td>Eigenprojections of $\tilde Q$; $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$, $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$</td>
 </tr>
 <tr>
 <td>$\operatorname{Log}\tilde Q$</td>

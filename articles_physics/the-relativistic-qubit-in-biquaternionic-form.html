@@ -90,7 +90,7 @@ $$
 It is the unique simple left $\mathbb{B}$-module up to isomorphism; it is complex two-dimensional; and every non-zero spinor is cyclic, so $S$ has no non-trivial submodules. The algebra's left regular module is two copies of it, $\mathbb{B}\cong S\oplus S$, which is the algebraic origin of the two-component spinor structure.</p>
 <p>Two objects must be kept apart throughout. A <strong>state vector</strong> is an element $|u\rangle\in S$; a <strong>state</strong> in the statistical sense is a positive element $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), i.e. an operator on $S$. The correspondence between them is the rank-one map
 $$
-|u\rangle_{*} \ \longleftrightarrow\ \tilde\Pi(u) = \frac{|u\rangle\langle u|}{\langle u|u\rangle} = \mathsf{M}_2^{-1}\!\left(\frac{|u\rangle\langle u|}{\langle u|u\rangle}\right)\in\mathbb{B}_{\Psi} ,
+|u\rangle_{*} \ \longleftrightarrow\ \tilde\Pi_{\mathrm{id}}(u) = \frac{|u\rangle\langle u|}{\langle u|u\rangle} = \mathsf{M}_2^{-1}\!\left(\frac{|u\rangle\langle u|}{\langle u|u\rangle}\right)\in\mathbb{B}_{\Psi} ,
 $$
 and it is the ordinary relation between a ket and a density operator. A general state is
 $$
@@ -98,7 +98,7 @@ $$
 $$
 so the state space is the Bloch ball $|\vec s_{\Psi}|\leq1$, and the pure states are its boundary. The pure-state idempotents are
 $$
-\tilde\Pi_{1,2}(\vec u) = \tfrac12\bigl(e_t \pm i\vec u\bigr), \qquad |\vec u| = 1,
+\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12\bigl(e_t \pm i\vec u\bigr), \qquad |\vec u| = 1,
 $$
 and for a Hermitian observable $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ the Born pairing is $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = h_t + \vec s_{\Psi}\cdot\vec h_\Psi$, whose trace reading at normalisation is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real, and non-negative when $\tilde H_\Psi\ge0$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.</p>
 <h3 id="why-the-carrier-is-forced">Why the carrier is forced</h3>
@@ -173,20 +173,20 @@ The pure-state space of the relativistic qubit is therefore the Riemann sphere, 
 <h3 id="the-null-vector-map">The null-vector map</h3>
 <p>Let $|u\rangle$ be normalized and let
 $$
-\tilde\Pi(u) = \mathsf{M}_2^{-1}\!\bigl(|u\rangle\langle u|\bigr)\in\mathbb{B}_{\Psi}
+\tilde\Pi_{\mathrm{id}}(u) = \mathsf{M}_2^{-1}\!\bigl(|u\rangle\langle u|\bigr)\in\mathbb{B}_{\Psi}
 $$
 be the corresponding pure state. Define
 $$
-\tilde{\mathcal L}_{\Phi}(u) = i\,\tilde\Pi(u)\in\mathbb{B}_{\Phi} .
+\tilde{\mathcal L}_{\Phi}(u) = i\,\tilde\Pi_{\mathrm{id}}(u)\in\mathbb{B}_{\Phi} .
 $$
 Two elementary facts identify $\tilde{\mathcal L}_{\Phi}$ as a future null four-vector.</p>
 <p><strong>It is null.</strong> The determinant of a rank-one matrix vanishes, and under the matrix model the determinant is the biquaternion norm, so
 $$
-\langle\tilde\Pi(u)\rangle_{\natural} = \det\mathsf{M}_2\bigl(\tilde\Pi(u)\bigr) = \det\bigl(|u\rangle_{*}\langle u|\bigr) = 0 ,
+\langle\tilde\Pi_{\mathrm{id}}(u)\rangle_{\natural} = \det\mathsf{M}_2\bigl(\tilde\Pi_{\mathrm{id}}(u)\bigr) = \det\bigl(|u\rangle_{*}\langle u|\bigr) = 0 ,
 \qquad
-\langle\tilde{\mathcal L}_{\Phi}(u)\rangle_{\natural} = i^2 \langle\tilde\Pi(u)\rangle_{\natural} = 0 .
+\langle\tilde{\mathcal L}_{\Phi}(u)\rangle_{\natural} = i^2 \langle\tilde\Pi_{\mathrm{id}}(u)\rangle_{\natural} = 0 .
 $$</p>
-<p><strong>It is future-directed and of definite normalization.</strong> Writing $\tilde\Pi(u) = \tfrac12(e_t + i\vec s_{\Psi})$ with $|\vec s_{\Psi}| = 1$, the element $\tilde{\mathcal L}_{\Phi}(u) = i\tilde\Pi(u)$ has the form
+<p><strong>It is future-directed and of definite normalization.</strong> Writing $\tilde\Pi_{\mathrm{id}}(u) = \tfrac12(e_t + i\vec s_{\Psi})$ with $|\vec s_{\Psi}| = 1$, the element $\tilde{\mathcal L}_{\Phi}(u) = i\tilde\Pi_{\mathrm{id}}(u)$ has the form
 $$
 \tilde{\mathcal L}_{\Phi}(u) = \tfrac{i}{2}\,e_t - \tfrac12\,\vec s_{\Psi} ,
 $$
@@ -343,7 +343,7 @@ which fixes the rest four-velocity, is a unit real quaternion, and acts on the B
 <td>State, Bloch vector $\vec s_{\Psi}$, $|\vec s_{\Psi}|\leq1$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$</td>
+<td>$\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$</td>
 <td>Pure-state idempotent</td>
 </tr>
 <tr>

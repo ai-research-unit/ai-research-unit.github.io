@@ -147,7 +147,7 @@ $$</p>
 <p><strong>The kernel.</strong></p>
 <p>$$
 W(t,\omega)=\exp(-2\pi i\tilde Z\omega t),\qquad \tilde Z^{2}=e_t,\qquad
-W(t,\omega)=e^{-2\pi i\omega t}\tilde\Pi_+ + e^{+2\pi i\omega t}\tilde\Pi_- .
+W(t,\omega)=e^{-2\pi i\omega t}\tilde\Pi_{\mathrm{id},+} + e^{+2\pi i\omega t}\tilde\Pi_{\mathrm{id},-} .
 $$</p>
 <p><strong>The non-trivial claim.</strong> The Fourier kernel is not a scalar exponential: it is a <em>pair</em> of opposite scalar exponentials placed on the two Peirce idempotents. So the biquaternion Fourier transform is two scalar transforms acting on the two minimal left ideals, and the operator is diagonal in the Peirce basis but not in the coordinate basis.</p>
 <p><strong>The three kernel placements.</strong> The kernel can sit on the left, on the right, or on both sides:</p>
@@ -243,9 +243,9 @@ $$</p>
 \boxed{\;\tilde Q^{2}=2Q_t\,\tilde Q\quad\text{on the cone}\;}
 $$</p>
 <p>$$
-\boxed{\;F_{\tilde C}(\lambda\tilde\Pi)=\lambda^{2}\tilde\Pi+\tilde C e_t\;},\qquad
+\boxed{\;F_{\tilde C}(\lambda\tilde\Pi_{\mathrm{id}})=\lambda^{2}\tilde\Pi_{\mathrm{id}}+\tilde C e_t\;},\qquad
 \Sigma_{\tilde C}=J_{\tilde C}\cap\Sigma(\mathbb{B}),\qquad
-\{\tilde\Pi:\tilde\Pi^{2}=\tilde\Pi\}\subset J_0\cap\mathcal Z .
+\{\tilde\Pi_{\mathrm{id}}:\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}\}\subset J_0\cap\mathcal Z .
 $$</p>
 <p><strong>The non-trivial claim.</strong> On the idempotent lines the dynamics is the scalar map $\lambda\mapsto\lambda^2$; so the fractal is <em>foliated by copies of the Mandelbrot set</em>, one per idempotent, and the zero-divisor cone contains the entire idempotent variety inside $J_0$. This is the structural reason the biquaternion Julia sets are much bigger than their complex counterparts.</p>
 <p><strong>The dimensions.</strong></p>
@@ -253,7 +253,7 @@ $$</p>
 \boxed{\;\dim_H\mathcal K_0=8,\qquad \dim_H J_0=7\;}
 $$</p>
 <p>$$
-\boxed{\;\dim_H\bigl(J_{\tilde C}\cap W_{\tilde\Pi}\bigr)=\max\bigl(\dim_H J_{C_1}+\dim_H K_{C_2},\ \dim_H K_{C_1}+\dim_H J_{C_2}\bigr)\;}
+\boxed{\;\dim_H\bigl(J_{\tilde C}\cap W_{\tilde\Pi_{\mathrm{id}}}\bigr)=\max\bigl(\dim_H J_{C_1}+\dim_H K_{C_2},\ \dim_H K_{C_1}+\dim_H J_{C_2}\bigr)\;}
 $$</p>
 <p>$$
 \dim_H\mathcal K_{Ce_t}\le4+2\alpha,\qquad \dim_H\bigl(J_{Ce_t}\cap\mathbb{C}e_t\bigr)=\dim_H J_{C}.

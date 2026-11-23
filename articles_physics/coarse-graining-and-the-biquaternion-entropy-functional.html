@@ -83,7 +83,7 @@ $$</p>
 <p>where $h$ is the binary entropy function. The entropy vanishes exactly on the null cone, that is, exactly on the zero divisors; it is maximal at the maximally mixed state; and it measures the depth of the state inside the future cone of the biquaternion norm. The functional and the biquaternion norm are thus the same information, read as a number and as a quadratic form.</p>
 <p>Two functionals appear below and must be kept apart, because the whole subject turns on the difference. The <strong>spectral</strong> value $\mathcal{S}(\tilde{Ϛ}_{\Psi})$ is a property of the state and is invariant under reversible rotor flow; it is the fine-grained reference. The <strong>coarse-grained</strong> value $\mathcal{S}(Ξ(\tilde{Ϛ}_{\Psi}))$ is the entropy of the image of the state under a coarse-graining $Ξ$, and it is this second number that increases under a coarse-graining. The second law, in this language, is the statement that a coarse-graining is a contraction of the Bloch ball, so that the entropy of the image is never less than the entropy of the state. The two are reconciled by the fact that the fine-grained value is the <em>minimum</em> over all preparations of the state, and hence the least coarse description the state admits.</p>
 <p>The treatment is <strong>classical</strong>. The entropy here is the Shannon entropy of a coarse description, and the functional is the classical one throughout. The functional $\mathcal{S}$ coincides numerically, on the matrix representative of $\tilde{Ϛ}_{\Psi}$, with the von Neumann entropy of that $2\times 2$ density matrix, and the reader should not be misled by the coincidence: the von Neumann entropy as such, and the entropies attached to POVMs and to entanglement, belong to the informational subcategory of the sibling quantum category, where the companion article <em>Von Neumann Entropy and the Biquaternion Norm</em> develops them, and they are not developed here. Where the quantum interpretation is used, it is used as a bound, and it is identified as such.</p>
-<p>The probabilities the functional is built from are themselves readings of the Hermitian form, normalised by the scalar part of the state. The weights $\lambda_\pm$ of the spectral decomposition are $\lambda_\pm=\langle\tilde\Pi_{1,2}(\vec u_s),\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_s)\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, the star being inert on $\mathbb{B}_{\Psi}$ and the scalar part of that product real and non-negative, and the companion article <em>The Born Rule from the Hermitian Form — Derivation and Comparison</em> derives the form of that pairing and fixes the objects it relates; this article takes the form as given and uses it only to read the state's own two-outcome distribution.</p>
+<p>The probabilities the functional is built from are themselves readings of the Hermitian form, normalised by the scalar part of the state. The weights $\lambda_\pm$ of the spectral decomposition are $\lambda_\pm=\langle\tilde\Pi_{\mathrm{id},1,2}(\vec u_s),\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1,2}(\vec u_s)\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, the star being inert on $\mathbb{B}_{\Psi}$ and the scalar part of that product real and non-negative, and the companion article <em>The Born Rule from the Hermitian Form — Derivation and Comparison</em> derives the form of that pairing and fixes the objects it relates; this article takes the form as given and uses it only to read the state's own two-outcome distribution.</p>
 <p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$; the scalar imaginary is $i$, central in $\mathbb{B}$; the two four-dimensional real subspaces are the anti-Hermitian material sector $\mathbb{B}_{\Phi}$ and the Hermitian informational sector $\mathbb{B}_{\Psi}$, with $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$; the reduced value of an element is its doubled scalar part $2\,\mathrm{Sc}(\tilde{Q})$, with $2\,\mathrm{Sc}(e_t) = 2$; and the Hermitian form for a state and an observable is $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$, whose doubled value is $2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$.</p>
 <h2 id="the-state-space-of-the-informational-sector">The State Space of the Informational Sector</h2>
 <p>A state of the informational sector is an element</p>
@@ -100,9 +100,9 @@ $$</p>
 $$</p>
 <p>so that the states form the <strong>Bloch ball</strong>; the pure states are its boundary sphere. A pure state is an idempotent,</p>
 <p>$$
-\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}\left(e_t \pm i\,\vec u\right), \qquad |\vec u| = 1, \qquad \tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2} ,
+\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac{1}{2}\left(e_t \pm i\,\vec u\right), \qquad |\vec u| = 1, \qquad \tilde\Pi_{\mathrm{id},1,2}^2 = \tilde\Pi_{\mathrm{id},1,2} ,
 $$</p>
-<p>and conversely every idempotent of $\mathbb{B}_{\Psi}$ has this form. The complementary idempotents are orthogonal and complete, $\tilde\Pi_1\tilde\Pi_2 = 0$ and $\tilde\Pi_1 + \tilde\Pi_2 = e_t$.</p>
+<p>and conversely every idempotent of $\mathbb{B}_{\Psi}$ has this form. The complementary idempotents are orthogonal and complete, $\tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2} = 0$ and $\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2} = e_t$.</p>
 <h3 id="the-biquaternion-norm-of-a-state">The Biquaternion Norm of a State</h3>
 <p>The biquaternion norm of the algebra is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. On the state it evaluates to a scalar multiple of the identity:</p>
 <p>$$
@@ -137,14 +137,14 @@ $$</p>
 <h3 id="definition-from-the-spectral-decomposition">Definition from the Spectral Decomposition</h3>
 <p>The logarithm of a state is evaluated with the idempotents. Writing $\vec u_s = \vec s_{\Psi}/|\vec s_{\Psi}|$ for a state with $\vec s_{\Psi} \neq 0$, the spectral decomposition of the state in its own basis is</p>
 <p>$$
-\tilde{Ϛ}_{\Psi} = \lambda_+\, \tilde\Pi_1(\vec u_s) + \lambda_-\, \tilde\Pi_2(\vec u_s), \qquad
+\tilde{Ϛ}_{\Psi} = \lambda_+\, \tilde\Pi_{\mathrm{id},1}(\vec u_s) + \lambda_-\, \tilde\Pi_{\mathrm{id},2}(\vec u_s), \qquad
 \lambda_\pm = \tfrac{1}{2}\left(1 \pm |\vec s_{\Psi}|\right),
 $$</p>
 <p>as one verifies directly from the definitions of the idempotents. The eigenvalues $\lambda_\pm$ are the classical probabilities of the two pointer outcomes in the eigenbasis, they are non-negative for $|\vec s_{\Psi}| \le 1$, and they sum to one. The functional calculus of the algebra then gives</p>
 <p>$$
-\log\tilde{Ϛ}_{\Psi} = \left(\log\lambda_+\right)\tilde\Pi_1(\vec u_s) + \left(\log\lambda_-\right)\tilde\Pi_2(\vec u_s),
+\log\tilde{Ϛ}_{\Psi} = \left(\log\lambda_+\right)\tilde\Pi_{\mathrm{id},1}(\vec u_s) + \left(\log\lambda_-\right)\tilde\Pi_{\mathrm{id},2}(\vec u_s),
 $$</p>
-<p>which is the principal branch on the positive part of $\mathbb{B}_{\Psi}$; on the general algebra the logarithm is multivalued, and positivity of the state removes the ambiguity by fixing the branch. Multiplying and taking the scalar part, using $\mathrm{Sc}(\tilde\Pi_{1,2}) = \tfrac{1}{2}$, gives $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}) = \tfrac{1}{2}(\lambda_+\log\lambda_+ + \lambda_-\log\lambda_-)$, and therefore</p>
+<p>which is the principal branch on the positive part of $\mathbb{B}_{\Psi}$; on the general algebra the logarithm is multivalued, and positivity of the state removes the ambiguity by fixing the branch. Multiplying and taking the scalar part, using $\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1,2}) = \tfrac{1}{2}$, gives $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}) = \tfrac{1}{2}(\lambda_+\log\lambda_+ + \lambda_-\log\lambda_-)$, and therefore</p>
 <p>$$
 \mathcal{S}(\tilde{Ϛ}_{\Psi}) = -2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}\right)
 = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_- .
@@ -155,7 +155,7 @@ $$</p>
 h(r_x) = -\frac{1+r_x}{2}\log\frac{1+r_x}{2} - \frac{1-r_x}{2}\log\frac{1-r_x}{2}\;},
 $$</p>
 <p>with the boundary values $h(0) = \log 2$ and $h(1) = 0$.</p>
-<p>The evaluation is stable under the same computation in the full algebra. For the interior state obtained by superposing two orthogonal pure states with equal weight, $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\left(\tilde\Pi_1(\vec e_x) + \tilde\Pi_1(\vec e_y)\right)$, one has $\vec s_{\Psi} = \tfrac{1}{2}(\vec e_x + \vec e_y)$, $|\vec s_{\Psi}| = 1/\sqrt{2}$, and the two routes agree:</p>
+<p>The evaluation is stable under the same computation in the full algebra. For the interior state obtained by superposing two orthogonal pure states with equal weight, $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\left(\tilde\Pi_{\mathrm{id},1}(\vec e_x) + \tilde\Pi_{\mathrm{id},1}(\vec e_y)\right)$, one has $\vec s_{\Psi} = \tfrac{1}{2}(\vec e_x + \vec e_y)$, $|\vec s_{\Psi}| = 1/\sqrt{2}$, and the two routes agree:</p>
 <p>$$
 \mathcal{S} = -2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}\right) = 0.4164955307\ldots,
 $$</p>
@@ -207,9 +207,9 @@ $$</p>
 <li><strong>Preservation of the scalar part.</strong> $2\,\mathrm{Sc}(Ξ(\tilde{Ϛ}_{\Psi})) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, so that a state is sent to a state. Equivalently the dual map fixes the identity, $Ξ^{*}(e_t) = e_t$.</li>
 <li><strong>Idempotency and unitality.</strong> $Ξ \circ Ξ = Ξ$ and $Ξ(e_t) = e_t$. The first says that coarse-graining twice is coarse-graining once: once a distinction has been discarded, it cannot be discarded again. The second says that the maximally mixed state is already as coarse as the description can be, so it is fixed.</li>
 </ul>
-<p>A linear, completely positive, idempotent, unital map that preserves the scalar part is a <strong>conditional expectation</strong>: it projects the state space onto the states of a commutative subalgebra, the subalgebra of the quantities the description retains. For a single qubit the commutative subalgebras of $\mathbb{B}$ are two-dimensional, generated by a pair of orthogonal idempotents, and the conditional expectation onto the subalgebra generated by $\tilde\Pi_{1,2}(\vec u)$ is the fully dephasing map</p>
+<p>A linear, completely positive, idempotent, unital map that preserves the scalar part is a <strong>conditional expectation</strong>: it projects the state space onto the states of a commutative subalgebra, the subalgebra of the quantities the description retains. For a single qubit the commutative subalgebras of $\mathbb{B}$ are two-dimensional, generated by a pair of orthogonal idempotents, and the conditional expectation onto the subalgebra generated by $\tilde\Pi_{\mathrm{id},1,2}(\vec u)$ is the fully dephasing map</p>
 <p>$$
-Ξ_{\vec u}(\tilde{Ϛ}_{\Psi}) = \tilde\Pi_1(\vec u)\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_1(\vec u) + \tilde\Pi_2(\vec u)\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_2(\vec u) .
+Ξ_{\vec u}(\tilde{Ϛ}_{\Psi}) = \tilde\Pi_{\mathrm{id},1}(\vec u)\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{id},1}(\vec u) + \tilde\Pi_{\mathrm{id},2}(\vec u)\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{id},2}(\vec u) .
 $$</p>
 <p>This is the map of the companion article <em>Decoherence as Idempotent Projection</em> at $p = 1$. On the Bloch vector it acts by</p>
 <p>$$
@@ -297,13 +297,13 @@ $$</p>
 <h2 id="preparations-partitions-and-the-least-coarse-description">Preparations, Partitions, and the Least Coarse Description</h2>
 <p>There is one further relation between the fine and coarse interpretations, and it explains why the fine-grained value is the right reference. A <strong>preparation</strong> of a state is an ensemble of pure states with weights,</p>
 <p>$$
-\tilde{Ϛ}_{\Psi} = \sum_a w_a\, \tilde\Pi(\vec u_a), \qquad w_a \ge 0, \quad \sum_a w_a = 1 ,
+\tilde{Ϛ}_{\Psi} = \sum_a w_a\, \tilde\Pi_{\mathrm{id}}(\vec u_a), \qquad w_a \ge 0, \quad \sum_a w_a = 1 ,
 $$</p>
 <p>so that $\vec s_{\Psi} = \sum_a w_a \vec u_a$. The Shannon entropy of the preparation is $H(w) = -\sum_a w_a\log w_a$. The standard theorem on ensembles with a common density matrix states that</p>
 <p>$$
 \mathcal{S}(\tilde{Ϛ}_{\Psi}) \le H(w) ,
 $$</p>
-<p>with equality exactly for the spectral ensemble, whose states are the two idempotents $\tilde\Pi_{1,2}(\vec u_s)$ with weights $\lambda_\pm$. The fine-grained entropy is therefore the <strong>minimum over preparations</strong> — the least coarse description the state admits. A partition of the pure-state sphere into basis operators is one preparation among many; merging basis operators lowers $H$ but changes the mean state, so the comparison is not between $H$ and the entropy of the <em>same</em> state. The invariant entropy of the state is the infimum, and the coarse-grained entropies are the values above it.</p>
+<p>with equality exactly for the spectral ensemble, whose states are the two idempotents $\tilde\Pi_{\mathrm{id},1,2}(\vec u_s)$ with weights $\lambda_\pm$. The fine-grained entropy is therefore the <strong>minimum over preparations</strong> — the least coarse description the state admits. A partition of the pure-state sphere into basis operators is one preparation among many; merging basis operators lowers $H$ but changes the mean state, so the comparison is not between $H$ and the entropy of the <em>same</em> state. The invariant entropy of the state is the infimum, and the coarse-grained entropies are the values above it.</p>
 <p>The identity is verified on the three-point ensemble</p>
 <p>$$
 w = (0.5,\,0.3,\,0.2), \qquad \vec u = (\vec e_x,\,\vec e_y,\,-\vec e_z),
@@ -360,7 +360,7 @@ $$</p>
 <td>State of the informational sector, Bloch vector $\vec s_{\Psi}$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$</td>
+<td>$\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$</td>
 <td>Idempotent (pure state, rank one)</td>
 </tr>
 <tr>
@@ -388,7 +388,7 @@ $$</p>
 <td>Purity</td>
 </tr>
 <tr>
-<td>$\log\tilde{Ϛ}_{\Psi} = (\log\lambda_+)\tilde\Pi_1(\vec u_s) + (\log\lambda_-)\tilde\Pi_2(\vec u_s)$</td>
+<td>$\log\tilde{Ϛ}_{\Psi} = (\log\lambda_+)\tilde\Pi_{\mathrm{id},1}(\vec u_s) + (\log\lambda_-)\tilde\Pi_{\mathrm{id},2}(\vec u_s)$</td>
 <td>Logarithm of a state, $|\vec s_{\Psi}|<1$</td>
 </tr>
 <tr>
@@ -408,7 +408,7 @@ $$</p>
 <td>Coarse-graining (conditional expectation)</td>
 </tr>
 <tr>
-<td>$Ξ_{\vec u}(\tilde{Ϛ}_{\Psi}) = \tilde\Pi_1\tilde{Ϛ}_{\Psi}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}_{\Psi}\tilde\Pi_2$</td>
+<td>$Ξ_{\vec u}(\tilde{Ϛ}_{\Psi}) = \tilde\Pi_{\mathrm{id},1}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id},2}$</td>
 <td>Pointer coarse-graining along $\vec u$</td>
 </tr>
 <tr>

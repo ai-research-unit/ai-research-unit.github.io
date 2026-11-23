@@ -153,58 +153,58 @@ $$</p>
 $$</p>
 <p><strong>The roots are weights of idempotents, not numbers read off a matrix.</strong> The algebraic accident $(i\vec u)^{2}=e_t$ for a unit $\vec u$ — the proof of the spectral theorem in <em>States, Observables and the Born Weight</em> — gives two Hermitian idempotents per axis:</p>
 <p>$$
-\tilde\Pi_{1,2}(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),\qquad
-\tilde\Pi_{1,2}^{2}=\tilde\Pi_{1,2},\qquad
-\tilde\Pi_1\tilde\Pi_2=0,\qquad
-\tilde\Pi_1+\tilde\Pi_2=e_t .
+\tilde\Pi_{\mathrm{id},1,2}(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),\qquad
+\tilde\Pi_{\mathrm{id},1,2}^{2}=\tilde\Pi_{\mathrm{id},1,2},\qquad
+\tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2}=0,\qquad
+\tilde\Pi_{\mathrm{id},1+}\tilde\Pi_{\mathrm{id},2}=e_t .
 $$</p>
 <p><strong>The state is one axis and two weights, and the weights are the eigenvalues.</strong> Take the axis of the state's own vector part:</p>
 <p>$$
 \vec u_{\vec s}=\frac{\vec s_\Psi}{\lvert\vec s_\Psi\rvert},\qquad
-\tilde{Ϛ}_\Psi=\tfrac12\bigl(1+\lvert\vec s_\Psi\rvert\bigr)\tilde\Pi_1(\vec u_{\vec s})
-+\tfrac12\bigl(1-\lvert\vec s_\Psi\rvert\bigr)\tilde\Pi_2(\vec u_{\vec s}),
+\tilde{Ϛ}_\Psi=\tfrac12\bigl(1+\lvert\vec s_\Psi\rvert\bigr)\tilde\Pi_{\mathrm{id},1}(\vec u_{\vec s})
++\tfrac12\bigl(1-\lvert\vec s_\Psi\rvert\bigr)\tilde\Pi_{\mathrm{id},2}(\vec u_{\vec s}),
 $$</p>
-<p>so the coefficient of $\tilde\Pi_1$ is $\lambda_+$ and the coefficient of $\tilde\Pi_2$ is $\lambda_-$. The formula is the state's own spectral decomposition, and it is the whole of the state: one direction and two numbers.</p>
-<p><strong>Each weight is one scalar part, so the eigenvalues are Born pairings with the state's own idempotents.</strong> Because $\tilde\Pi_{1,2}^{2}=\tilde\Pi_{1,2}$,</p>
+<p>so the coefficient of $\tilde\Pi_{\mathrm{id},1}$ is $\lambda_+$ and the coefficient of $\tilde\Pi_{\mathrm{id},2}$ is $\lambda_-$. The formula is the state's own spectral decomposition, and it is the whole of the state: one direction and two numbers.</p>
+<p><strong>Each weight is one scalar part, so the eigenvalues are Born pairings with the state's own idempotents.</strong> Because $\tilde\Pi_{\mathrm{id},1,2}^{2}=\tilde\Pi_{\mathrm{id},1,2}$,</p>
 <p>$$
-2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_1(\vec u_{\vec s})\bigr)=\tfrac12\bigl(1+\lvert\vec s_\Psi\rvert\bigr)=\lambda_+,\qquad
-2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_2(\vec u_{\vec s})\bigr)=\tfrac12\bigl(1-\lvert\vec s_\Psi\rvert\bigr)=\lambda_- .
+2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_{\mathrm{id},1}(\vec u_{\vec s})\bigr)=\tfrac12\bigl(1+\lvert\vec s_\Psi\rvert\bigr)=\lambda_+,\qquad
+2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_{\mathrm{id},2}(\vec u_{\vec s})\bigr)=\tfrac12\bigl(1-\lvert\vec s_\Psi\rvert\bigr)=\lambda_- .
 $$</p>
-<p><strong>The reading is that the larger eigenvalue is the probability the state gives to its own axis.</strong> The Born weight of the outcome along $\vec u$ is $2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde\Pi_1(\vec u))$, so the spectrum of a state is the pair of weights it assigns to the two outcomes of the measurement along its own axis. The larger member exceeds one half by exactly half the radius, which is why the radius and the spectrum carry the same information.</p>
-<p><strong>One consequence is that the state determines its idempotents, and the converse fails.</strong> For $\lvert\vec s_\Psi\rvert\neq0$ the axis is the direction of the vector part and the pair $\{\tilde\Pi_1(\vec u),\tilde\Pi_2(\vec u)\}$ is fixed, because $\tilde\Pi_2(\vec u)=\tilde\Pi_1(-\vec u)$ names the same pair. So a mixed state sits on exactly one pair of idempotents, with both weights strictly between zero and one. The pure state is the case where one weight is one and the other is zero, and then the state is the idempotent itself.</p>
-<p><strong>The general observable is the same construction with the normalisation released.</strong> For $\tilde H_\Psi=h_te_t+i\vec h_\Psi$ the identical argument gives $\lambda_\pm=h_t\pm\lvert\vec h_\Psi\rvert$ and $\tilde H_\Psi=\lambda_+\tilde\Pi_1(\vec u_{\vec h})+\lambda_-\tilde\Pi_2(\vec u_{\vec h})$. A state is that formula at $h_t=\tfrac12$ and $\lvert\vec h_\Psi\rvert=\tfrac12\lvert\vec s_\Psi\rvert$, so the state's spectrum is an observable's spectrum with the sum of the roots pinned to one.</p>
+<p><strong>The reading is that the larger eigenvalue is the probability the state gives to its own axis.</strong> The Born weight of the outcome along $\vec u$ is $2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde\Pi_{\mathrm{id},1}(\vec u))$, so the spectrum of a state is the pair of weights it assigns to the two outcomes of the measurement along its own axis. The larger member exceeds one half by exactly half the radius, which is why the radius and the spectrum carry the same information.</p>
+<p><strong>One consequence is that the state determines its idempotents, and the converse fails.</strong> For $\lvert\vec s_\Psi\rvert\neq0$ the axis is the direction of the vector part and the pair $\{\tilde\Pi_{\mathrm{id},1}(\vec u),\tilde\Pi_{\mathrm{id},2}(\vec u)\}$ is fixed, because $\tilde\Pi_{\mathrm{id},2}(\vec u)=\tilde\Pi_{\mathrm{id},1}(-\vec u)$ names the same pair. So a mixed state sits on exactly one pair of idempotents, with both weights strictly between zero and one. The pure state is the case where one weight is one and the other is zero, and then the state is the idempotent itself.</p>
+<p><strong>The general observable is the same construction with the normalisation released.</strong> For $\tilde H_\Psi=h_te_t+i\vec h_\Psi$ the identical argument gives $\lambda_\pm=h_t\pm\lvert\vec h_\Psi\rvert$ and $\tilde H_\Psi=\lambda_+\tilde\Pi_{\mathrm{id},1}(\vec u_{\vec h})+\lambda_-\tilde\Pi_{\mathrm{id},2}(\vec u_{\vec h})$. A state is that formula at $h_t=\tfrac12$ and $\lvert\vec h_\Psi\rvert=\tfrac12\lvert\vec s_\Psi\rvert$, so the state's spectrum is an observable's spectrum with the sum of the roots pinned to one.</p>
 <h3 id="the-peirce-reading">The Peirce Reading</h3>
-<p><strong>The pair of idempotents cuts the algebra into four corners.</strong> For $s,t\in\{1,2\}$ the <strong>Peirce line</strong> is $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$, and <em>Peirce Decompositions of the Biquaternion Algebra</em> proves the direct sum</p>
+<p><strong>The pair of idempotents cuts the algebra into four corners.</strong> For $s,t\in\{1,2\}$ the <strong>Peirce line</strong> is $\mathbb{B}_{st}=\tilde\Pi_{\mathrm{id},s}\mathbb{B}\tilde\Pi_{\mathrm{id},t}$, and <em>Peirce Decompositions of the Biquaternion Algebra</em> proves the direct sum</p>
 <p>$$
 \mathbb{B}=\mathbb{B}_{11}\oplus\mathbb{B}_{12}\oplus\mathbb{B}_{21}\oplus\mathbb{B}_{22},
 $$</p>
 <p>four complex lines: the diagonal lines spanned by the idempotents, and the two mixed lines nilpotent, every element of $\mathbb{B}_{12}$ or of $\mathbb{B}_{21}$ squaring to zero.</p>
-<p><strong>The corners are joint eigenspaces of the two multiplications, and that is a different spectrum.</strong> Left multiplication by $\tilde\Pi_1$ is $+1$ on $\mathbb{B}_{11}\oplus\mathbb{B}_{12}$ and $0$ on the other two; right multiplication is $+1$ on $\mathbb{B}_{11}\oplus\mathbb{B}_{21}$ and $0$ on the other two. Those spectra are $\{1,0\}$ for every idempotent and every element. The state's two eigenvalues are not those: they are the weights the state puts on the two diagonal corners.</p>
+<p><strong>The corners are joint eigenspaces of the two multiplications, and that is a different spectrum.</strong> Left multiplication by $\tilde\Pi_{\mathrm{id},1}$ is $+1$ on $\mathbb{B}_{11}\oplus\mathbb{B}_{12}$ and $0$ on the other two; right multiplication is $+1$ on $\mathbb{B}_{11}\oplus\mathbb{B}_{21}$ and $0$ on the other two. Those spectra are $\{1,0\}$ for every idempotent and every element. The state's two eigenvalues are not those: they are the weights the state puts on the two diagonal corners.</p>
 <p><strong>The state lies wholly in its two diagonal corners.</strong> On its own axis the mixed components vanish, because $\tilde{Ϛ}_\Psi$ and the two idempotents are all Hermitian:</p>
 <p>$$
-\tilde\Pi_1\tilde{Ϛ}_\Psi\tilde\Pi_2=0,\qquad \tilde\Pi_2\tilde{Ϛ}_\Psi\tilde\Pi_1=0 .
+\tilde\Pi_{\mathrm{id},1}\tilde{Ϛ}_\Psi\tilde\Pi_{\mathrm{id},2}=0,\qquad \tilde\Pi_{\mathrm{id},2}\tilde{Ϛ}_\Psi\tilde\Pi_{\mathrm{id},1}=0 .
 $$</p>
-<p>The state's Peirce decomposition is therefore $\tilde{Ϛ}_\Psi=\lambda_+\tilde\Pi_1+\lambda_-\tilde\Pi_2$ with the two mixed terms absent, and the two eigenvalues are exactly the two diagonal Peirce coordinates.</p>
-<p><strong>In any other axis the mixed terms are present, and they are nilpotents.</strong> For a second axis $\vec u'$ with its pair $\tilde\Pi'_{1,2}$, put</p>
+<p>The state's Peirce decomposition is therefore $\tilde{Ϛ}_\Psi=\lambda_+\tilde\Pi_{\mathrm{id},1+}\lambda_-\tilde\Pi_{\mathrm{id},2}$ with the two mixed terms absent, and the two eigenvalues are exactly the two diagonal Peirce coordinates.</p>
+<p><strong>In any other axis the mixed terms are present, and they are nilpotents.</strong> For a second axis $\vec u'$ with its pair $\tilde\Pi_{\mathrm{id}}'_{1,2}$, put</p>
 <p>$$
-\tilde n=\tilde\Pi'_1\tilde{Ϛ}_\Psi\tilde\Pi'_2,\qquad
-\tilde n^{\natural}=\tilde\Pi'_2\tilde{Ϛ}_\Psi\tilde\Pi'_1,
+\tilde n=\tilde\Pi_{\mathrm{id}}'_1\tilde{Ϛ}_\Psi\tilde\Pi_{\mathrm{id}}'_2,\qquad
+\tilde n^{\natural}=\tilde\Pi_{\mathrm{id}}'_2\tilde{Ϛ}_\Psi\tilde\Pi_{\mathrm{id}}'_1,
 $$</p>
 <p>so that $\tilde n^{2}=0$ and</p>
 <p>$$
-\tilde{Ϛ}_\Psi=\tilde\Pi'_1\tilde{Ϛ}_\Psi\tilde\Pi'_1+\tilde\Pi'_2\tilde{Ϛ}_\Psi\tilde\Pi'_2+\tilde n+\tilde n^{\natural}.
+\tilde{Ϛ}_\Psi=\tilde\Pi_{\mathrm{id}}'_1\tilde{Ϛ}_\Psi\tilde\Pi_{\mathrm{id}}'_1+\tilde\Pi_{\mathrm{id}}'_2\tilde{Ϛ}_\Psi\tilde\Pi_{\mathrm{id}}'_2+\tilde n+\tilde n^{\natural}.
 $$</p>
 <p>The two diagonal terms are the classical part of the state in that axis and the two mixed terms are the coherences. <strong>The full dephasing channel of <em>Decoherence as Idempotent Projection</em> is exactly the deletion of $\tilde n+\tilde n^{\natural}$</strong>, which is why that channel moves a state toward an axis rather than toward the centre, keeps the normalisation, and is a projection only at full strength.</p>
-<p><strong>The purity sees the diagonal part and nothing else.</strong> Cross terms vanish because $\tilde\Pi_1\tilde\Pi_2=0$, so</p>
+<p><strong>The purity sees the diagonal part and nothing else.</strong> Cross terms vanish because $\tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2}=0$, so</p>
 <p>$$
 2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi^{2}=\lambda_+^{2}+\lambda_-^{2}=\tfrac12\bigl(1+\lvert\vec s_\Psi\rvert^{2}\bigr).
 $$</p>
 <p>A nilpotent contributes nothing to the scalar part of a square, which is the algebraic reason a coherence leaves the purity untouched and shows up only in interference with a third element.</p>
-<p><strong>The two limits are the two degenerate readings of one cut.</strong> At $\lvert\vec s_\Psi\rvert=1$ one weight vanishes and $\tilde{Ϛ}_\Psi=\tilde\Pi_1(\vec u_{\vec s})$: the state is the idempotent, one corner carries all the weight, and the state is a zero divisor of the algebra. At $\lvert\vec s_\Psi\rvert=0$ the two weights meet at $\tfrac12$ and $\tilde{Ϛ}_\Psi=\tfrac12 e_t$ is central: the axis is not determined, hence neither are the two idempotents.</p>
+<p><strong>The two limits are the two degenerate readings of one cut.</strong> At $\lvert\vec s_\Psi\rvert=1$ one weight vanishes and $\tilde{Ϛ}_\Psi=\tilde\Pi_{\mathrm{id},1}(\vec u_{\vec s})$: the state is the idempotent, one corner carries all the weight, and the state is a zero divisor of the algebra. At $\lvert\vec s_\Psi\rvert=0$ the two weights meet at $\tfrac12$ and $\tilde{Ϛ}_\Psi=\tfrac12 e_t$ is central: the axis is not determined, hence neither are the two idempotents.</p>
 <p><strong>A degenerate state is a diabolic point and never an exceptional one.</strong> <em>Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum</em> proves that an exceptional point needs a complex, non-Hermitian vector part, and that no Hermitian element has one. So the degenerate state has no Jordan block: its centraliser is the whole algebra, every axis serves equally, and the two idempotents are free rather than missing.</p>
 <p><strong>The failure of idempotency is central, and it is the product of the eigenvalues.</strong> Subtracting the square from the element, with $a=\lambda_+$, $b=\lambda_-$, $1-a=b$ and $1-b=a$,</p>
 <p>$$
-\tilde{Ϛ}_\Psi-\tilde{Ϛ}_\Psi^{2}=a(1-a)\tilde\Pi_1+b(1-b)\tilde\Pi_2=ab\,e_t=N\,e_t .
+\tilde{Ϛ}_\Psi-\tilde{Ϛ}_\Psi^{2}=a(1-a)\tilde\Pi_{\mathrm{id},1+b}(1-b)\tilde\Pi_{\mathrm{id},2}=ab\,e_t=N\,e_t .
 $$</p>
 <p>So the element's distance from being an idempotent is a multiple of the unit, the multiple is the product of its eigenvalues. <strong>The defect from idempotency is central, and its size is the product of the roots.</strong></p>
 <p><strong>The product of the eigenvalues is the reason for everything that follows.</strong> $N$ is large exactly when the two eigenvalues are both far from zero, that is, when the state is far from pure. $N$ is zero exactly when one eigenvalue vanishes, that is, when the state is a rank-one idempotent.</p>
@@ -320,7 +320,7 @@ $$</p>
 <h3 id="what-one-measurement-returns">What One Measurement Returns</h3>
 <p><strong>A single measurement returns a coin, and the coin is a projection of the point.</strong> For a unit axis $\vec u$,</p>
 <p>$$
-p(\vec u)=2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_1(\vec u)\bigr)=\tfrac12\bigl(1+\vec s_\Psi\cdot\vec u\bigr).
+p(\vec u)=2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_{\mathrm{id},1}(\vec u)\bigr)=\tfrac12\bigl(1+\vec s_\Psi\cdot\vec u\bigr).
 $$</p>
 <p>The first equality is the Born weight of <em>States, Observables and the Born Weight</em>. The second is its value on the slice, at $h_t=\tfrac12$ and $\vec h_\Psi=\tfrac12\vec u$.</p>
 <p><strong>The probabilities are not an obstacle to the picture. They are the only image of it.</strong> One run gives one bit. Three orthogonal axes with counted frequencies give the vector,</p>
@@ -436,7 +436,7 @@ $$</p>
 <p>That is absorption, and it is exact.</p>
 <p><strong>It is not closed under addition, and the article's own pair of idempotents shows it.</strong> For every unit $\vec u$,</p>
 <p>$$
-\tilde\Pi_1(\vec u)+\tilde\Pi_2(\vec u)=e_t,\qquad N\bigl(\tilde\Pi_{1,2}(\vec u)\bigr)=0,\qquad N(e_t)=1 .
+\tilde\Pi_{\mathrm{id},1}(\vec u)+\tilde\Pi_{\mathrm{id},2}(\vec u)=e_t,\qquad N\bigl(\tilde\Pi_{\mathrm{id},1,2}(\vec u)\bigr)=0,\qquad N(e_t)=1 .
 $$</p>
 <p>The sum of two null elements is the unit. A set closed under multiplication by any element and not closed under addition is an absorbing multiplicative semigroup, and not an ideal. A sentence that calls the cone an ideal in the ring sense is false. A sentence that calls it an ideal in the limiting sense is the subject of this section.</p>
 <h3 id="the-sign-does-not-cross">The Sign Does Not Cross</h3>
@@ -476,7 +476,7 @@ $$</p>
 <p><strong>The first is which couplings are unital</strong>, and whether an environment's coupling is one of them. The corpus gives the dephasing channel and the partial trace; it does not classify the channels.</p>
 <p><strong>The second is whether the material side has a primitive that plays the role of a channel</strong>, driving an element off the cone as a channel drives a state off the boundary. Nothing in this article answers it.</p>
 <p><strong>The third is whether the two entry fees are one quantity read twice.</strong> Mass on the material side and rapidity on the informational side both measure the distance from the boundary, and both cost an infinity to remove. Whether they are the same number in different letters is a question of the programme, not of this audit.</p>
-<p><strong>Checked, on one hundred draws each.</strong> Multiplicative absorption, worst error $3.2\times10^{-15}$; the congruence identity with multiplier $\lvert N(U)\rvert^{2}$, worst error $5.5\times10^{-15}$ and no sign crossing; $N(\tilde\Pi_1+\tilde\Pi_2)=1$ against $N(\tilde\Pi_{1,2})=0$; the on-shell invariant at every rapidity, worst error $9.1\times10^{-13}$; and the identity $1-r'=(1-r)(1-t)/(1+rt)$ to $2.0\times10^{-16}$. The depolarising radius law $r\mapsto(1-p)r$, worst error $1.1\times10^{-16}$; the dephasing channel never increasing the radius, worst increase $0$; and amplitude damping raising it by up to $1.13$, which is the objection of §<em>What the Reading Adds</em> in numbers. Above rapidity about nineteen, floating point rounds $\tanh\theta$ to one and a numerical test reports the boundary as reached; the identity is the warrant, not the sample.</p>
+<p><strong>Checked, on one hundred draws each.</strong> Multiplicative absorption, worst error $3.2\times10^{-15}$; the congruence identity with multiplier $\lvert N(U)\rvert^{2}$, worst error $5.5\times10^{-15}$ and no sign crossing; $N(\tilde\Pi_{\mathrm{id},1+}\tilde\Pi_{\mathrm{id},2})=1$ against $N(\tilde\Pi_{\mathrm{id},1,2})=0$; the on-shell invariant at every rapidity, worst error $9.1\times10^{-13}$; and the identity $1-r'=(1-r)(1-t)/(1+rt)$ to $2.0\times10^{-16}$. The depolarising radius law $r\mapsto(1-p)r$, worst error $1.1\times10^{-16}$; the dephasing channel never increasing the radius, worst increase $0$; and amplitude damping raising it by up to $1.13$, which is the objection of §<em>What the Reading Adds</em> in numbers. Above rapidity about nineteen, floating point rounds $\tanh\theta$ to one and a numerical test reports the boundary as reached; the identity is the warrant, not the sample.</p>
 <h2 id="the-thermodynamic-reading">The Thermodynamic Reading</h2>
 <p><strong>Temperature is a coordinate on the ball, so the reading is available from the start and is not an extra layer.</strong> The Gibbs state is a temperature-parametrised curve from the centre to the boundary, and the corpus develops it in <em>Quantum Thermodynamics in Biquaternionic Form</em>. This section records what the curve says about $N$ itself, since that is the object of this article: the two ends of the path are the two values of the norm, and the third law of thermodynamics is the unreachability of §<em>The Ideal Boundary</em> in thermal vocabulary.</p>
 <h3 id="the-path">The Path</h3>
@@ -753,10 +753,10 @@ $$</p>
 <p><strong>The second.</strong> On the normalised slice, $N=\tfrac14\bigl(1-\lvert\vec s_\Psi\rvert^{2}\bigr)=\lambda_+\lambda_-$, zero exactly at the idempotents and maximal at the centre. This follows from the eigenvalues of a $2\times2$ Hermitian matrix.</p>
 <p><strong>The third.</strong> The spectral entropy is a function of $N$ on the slice, by the monotone change of variable $\lambda_+=\tfrac12(1+\sqrt{1-4N})$.</p>
 <p><strong>The fourth.</strong> Multiplication by $i$ reverses the sign of $N$ and exchanges the two inertias. This is $i^{2}=-1$ and the centrality of $i$.</p>
-<p><strong>The fifth.</strong> On the slice the Born weight along a unit axis is linear in the state's vector, $p(\vec u)=\tfrac12\bigl(1+\vec s_\Psi\cdot\vec u\bigr)$. This is $\tilde\Pi_1(\vec u)=\tfrac12(e_t+i\vec u)$ and one scalar part.</p>
+<p><strong>The fifth.</strong> On the slice the Born weight along a unit axis is linear in the state's vector, $p(\vec u)=\tfrac12\bigl(1+\vec s_\Psi\cdot\vec u\bigr)$. This is $\tilde\Pi_{\mathrm{id},1}(\vec u)=\tfrac12(e_t+i\vec u)$ and one scalar part.</p>
 <p><strong>The sixth.</strong> The largest bias over the axes is the radius, $b_{\max}=\lvert\vec s_\Psi\rvert$. This is the Cauchy–Schwarz inequality for the real three-vector, and it is what makes the entropy a function of a measured number.</p>
 <p><strong>The seventh.</strong> The null set is closed under multiplication by any element on both sides, so it absorbs. This is multiplicativity read at zero.</p>
-<p><strong>The eighth.</strong> It is not closed under addition: $\tilde\Pi_1(\vec u)+\tilde\Pi_2(\vec u)=e_t$ is a sum of two null elements with norm one. So the cone is a multiplicative semigroup and not an ideal, and the word <em>ideal</em> applies to it only as a limit.</p>
+<p><strong>The eighth.</strong> It is not closed under addition: $\tilde\Pi_{\mathrm{id},1}(\vec u)+\tilde\Pi_{\mathrm{id},2}(\vec u)=e_t$ is a sum of two null elements with norm one. So the cone is a multiplicative semigroup and not an ideal, and the word <em>ideal</em> applies to it only as a limit.</p>
 <p><strong>The ninth.</strong> No reversible motion follows the thermal path. A congruence with $\lvert N(U)\rvert=1$ preserves $N$, and $N=1/(4\cosh^{2}x)$ varies along the Gibbs path, so the path is not an orbit and thermalisation is necessarily non-invertible.</p>
 <p><strong>Seven further statements are readings, and the corpus says so at the sites.</strong> The identification of $N$ with <em>impurity</em> is a name for the eigenvalue product. The thermal reading requires the identification $\beta=1/(k_BT)$ and the Gibbs construction. The concurrence formula imports the standard two-qubit expression for a pure pair; the framework computes the reduced state's norm and does not by itself define an entanglement measure. The identification of $\mathbb{B}_{\Psi}$ with the state space of a physical theory is the programme's step, not the algebra's. The reading of the radius as a speed, $r=\tanh\rho$, is the Klein model of velocity space: the algebra supplies the ball and the boost, not the word <em>velocity</em>. And the hemisphere of radius $\tfrac12$ is the Bures picture, imported by monotonicity; the corpus fixes its boundary value, not its interior. Last, the claim that no preparation reaches exact purity needs a premise about couplings that the algebra does not supply, as §<em>The Ideal Boundary</em> states. §<em>The Thermodynamic Reading</em> is downstream of the thermal reading: its path, its two ends, Curie's law and the Schottky form are consequences of the Gibbs formula, and they are conditional on it.</p>
 <p><strong>A reader who wants the algebra and not the programme can keep the forced list and drop the readings.</strong> Everything in §<em>The State Slice</em>, §<em>The Picture</em> and §<em>The Ideal Boundary</em> survives the drop except the words <em>entropy in the thermodynamic sense</em>, <em>temperature</em>, <em>entanglement</em>, <em>speed</em>, <em>Bures</em> and <em>unreachable in practice</em>.</p>
@@ -919,10 +919,10 @@ $$</p>
 </tr>
 <tr>
 <td>$\lambda_\pm=\tfrac12\bigl(1\pm\lvert\vec s_\Psi\rvert\bigr)$</td>
-<td>the spectrum; also the two weights $2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde\Pi_{1,2})$ along the state's own axis</td>
+<td>the spectrum; also the two weights $2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde\Pi_{\mathrm{id},1,2})$ along the state's own axis</td>
 </tr>
 <tr>
-<td>$\tilde{Ϛ}_\Psi=\lambda_+\tilde\Pi_1(\vec u_{\vec s})+\lambda_-\tilde\Pi_2(\vec u_{\vec s})$</td>
+<td>$\tilde{Ϛ}_\Psi=\lambda_+\tilde\Pi_{\mathrm{id},1}(\vec u_{\vec s})+\lambda_-\tilde\Pi_{\mathrm{id},2}(\vec u_{\vec s})$</td>
 <td>the state as one axis and two weights</td>
 </tr>
 <tr>
@@ -954,7 +954,7 @@ $$</p>
 <td>the scale-free impurity, valid off the slice</td>
 </tr>
 <tr>
-<td>$p(\vec u)=2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_1(\vec u)\bigr)=\tfrac12\bigl(1+\vec s_\Psi\cdot\vec u\bigr)$</td>
+<td>$p(\vec u)=2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_{\mathrm{id},1}(\vec u)\bigr)=\tfrac12\bigl(1+\vec s_\Psi\cdot\vec u\bigr)$</td>
 <td>the Born weight of the outcome along the unit axis $\vec u$; one projection of the state's vector</td>
 </tr>
 <tr>
@@ -990,7 +990,7 @@ $$</p>
 <td>reversible motion preserves $N$; the Gibbs path changes it, so no congruence follows that path</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_1(\vec u)+\tilde\Pi_2(\vec u)=e_t$</td>
+<td>$\tilde\Pi_{\mathrm{id},1}(\vec u)+\tilde\Pi_{\mathrm{id},2}(\vec u)=e_t$</td>
 <td>the null set is not closed under addition; the cone is not an ideal</td>
 </tr>
 <tr>

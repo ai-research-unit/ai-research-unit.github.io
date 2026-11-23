@@ -121,13 +121,13 @@ $$</p>
 <p>$$
 a=\frac{\lvert c\rvert\sqrt{\kappa}}{2}=\lvert Q_t\rvert\sqrt{\kappa},
 \qquad
-P=\frac{\tilde\Pi\tilde\Pi^{*}}{\kappa},
+P=\frac{\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}^{*}}{\kappa},
 \qquad
-\tilde Q_0=\frac{c}{\lvert c\rvert}\frac{\tilde\Pi}{\sqrt{\kappa}},
+\tilde Q_0=\frac{c}{\lvert c\rvert}\frac{\tilde\Pi_{\mathrm{id}}}{\sqrt{\kappa}},
 \qquad
 \kappa=\frac{1+\lVert\tilde{Ζ}\rVert^{2}}{2},
 $$</p>
-<p>where $\tilde{Ζ}=2\tilde\Pi-e_t$ and $\kappa\ge1$. The overlap is $v^{\dagger}u=Q_t/a=c/(2a)$, with modulus $1/\sqrt{\kappa}=\cos\theta$, where $\theta$ is the angle between the two slots.</p>
+<p>where $\tilde{Ζ}=2\tilde\Pi_{\mathrm{id}}-e_t$ and $\kappa\ge1$. The overlap is $v^{\dagger}u=Q_t/a=c/(2a)$, with modulus $1/\sqrt{\kappa}=\cos\theta$, where $\theta$ is the angle between the two slots.</p>
 <p>The two-sided operator of the pair is computed in the matrix model. For any $\tilde X$,</p>
 <p>$$
 \mathsf M_2\bigl(\mathrm{Sd}_{\tilde Q}(\tilde X)\bigr)
@@ -136,43 +136,43 @@ $$</p>
 $$</p>
 <p>Thus the image is the line $\mathbb{C}u u^{\dagger}=\mathbb{C}P$ and the value is the scalar $v^{\dagger}\mathsf M_2(\tilde X)v$. This formula is the source of every result below.</p>
 <h3 id="the-canonical-hermitian-pair">The canonical Hermitian pair</h3>
-<p>Let $\tilde\nu=\vec A+i\vec B$ with $\vec A,\vec B$ real, orthogonal and of equal norm $a>0$. Put</p>
+<p>Let $\tilde\pi_{\mathrm{nil}}=\vec A+i\vec B$ with $\vec A,\vec B$ real, orthogonal and of equal norm $a>0$. Put</p>
 <p>$$
 \vec c=\frac{\vec A\times\vec B}{a^{2}},
 \qquad
-\tilde\Pi_+=\frac{e_t+i\vec c}{2},
+\tilde\Pi_{\mathrm{id},+}=\frac{e_t+i\vec c}{2},
 \qquad
-\tilde\Pi_-=\frac{e_t-i\vec c}{2}.
+\tilde\Pi_{\mathrm{id},-}=\frac{e_t-i\vec c}{2}.
 $$</p>
 <p>The vector $\vec c$ is real and unit; the idempotents are Hermitian and complementary. They satisfy</p>
 <p>$$
-\tilde\Pi_+\tilde\nu=\tilde\nu,
+\tilde\Pi_{\mathrm{id},+}\tilde\pi_{\mathrm{nil}}=\tilde\pi_{\mathrm{nil}},
 \qquad
-\tilde\nu\tilde\Pi_+=0,
+\tilde\pi_{\mathrm{nil}}\tilde\Pi_{\mathrm{id},+}=0,
 \qquad
-\tilde\Pi_-\tilde\nu=0,
+\tilde\Pi_{\mathrm{id},-}\tilde\pi_{\mathrm{nil}}=0,
 \qquad
-\tilde\nu\tilde\Pi_-=\tilde\nu,
+\tilde\pi_{\mathrm{nil}}\tilde\Pi_{\mathrm{id},-}=\tilde\pi_{\mathrm{nil}},
 $$</p>
-<p>so $\tilde\nu=\tilde\Pi_+\tilde\nu\tilde\Pi_-$ lies in the mixed corner $\mathbb{B}_{+-}$. The element is annihilated by the two products that would place it in a diagonal corner. Its norms are</p>
+<p>so $\tilde\pi_{\mathrm{nil}}=\tilde\Pi_{\mathrm{id},+}\tilde\pi_{\mathrm{nil}}\tilde\Pi_{\mathrm{id},-}$ lies in the mixed corner $\mathbb{B}_{+-}$. The element is annihilated by the two products that would place it in a diagonal corner. Its norms are</p>
 <p>$$
-\langle\tilde\nu\rangle_{\natural}=0,
+\langle\tilde\pi_{\mathrm{nil}}\rangle_{\natural}=0,
 \qquad
-\langle\tilde\nu\rangle_{*}=2a^{2},
+\langle\tilde\pi_{\mathrm{nil}}\rangle_{*}=2a^{2},
 \qquad
-\tilde\nu\tilde\nu^{*}=4a^{2}\tilde\Pi_+,
+\tilde\pi_{\mathrm{nil}}\tilde\pi_{\mathrm{nil}}^{*}=4a^{2}\tilde\Pi_{\mathrm{id},+},
 \qquad
-\tilde\nu^{*}\tilde\nu=4a^{2}\tilde\Pi_- .
+\tilde\pi_{\mathrm{nil}}^{*}\tilde\pi_{\mathrm{nil}}=4a^{2}\tilde\Pi_{\mathrm{id},-} .
 $$</p>
 <h3 id="the-polar-pair-on-the-nilpotents">The polar pair on the nilpotents</h3>
 <p>The polar pair is</p>
 <p>$$
 \boxed{\;
-P=\tilde\Pi_+,
+P=\tilde\Pi_{\mathrm{id},+},
 \qquad
-\tilde Q_H=2a\tilde\Pi_+,
+\tilde Q_H=2a\tilde\Pi_{\mathrm{id},+},
 \qquad
-\tilde Q_0=\frac{\tilde\nu}{2a},
+\tilde Q_0=\frac{\tilde\pi_{\mathrm{nil}}}{2a},
 \qquad
 \tilde Q=\tilde Q_H\tilde Q_0,
 \qquad
@@ -181,9 +181,9 @@ P=\tilde\Pi_+,
 $$</p>
 <p>The Hermitian factor is positive semidefinite of rank one, with spectrum $\{0,2a\}$. The partial-isometry factor is nilpotent:</p>
 <p>$$
-\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_+,
+\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_{\mathrm{id},+},
 \qquad
-\tilde Q_0^{*}\tilde Q_0=\tilde\Pi_-,
+\tilde Q_0^{*}\tilde Q_0=\tilde\Pi_{\mathrm{id},-},
 \qquad
 \tilde Q_0\tilde Q_0^{*}\tilde Q_0=\tilde Q_0,
 \qquad
@@ -191,7 +191,7 @@ $$</p>
 $$</p>
 <p>The polar pair is the rank-one singular value decomposition of the nilpotent. The "$*$-unitary" factor is a nilpotent partial isometry, not a $*$-unitary; the pair is still the general pair of <em>The Polar Decomposition of an N-Degenerate Biquaternion</em>, but it is as far as possible from the modulus–unit form.</p>
 <h3 id="the-matrix-model">The matrix model</h3>
-<p>In the matrix model $\mathsf M_2(\tilde\nu)=2a\,u v^{\dagger}$ with $u,v$ unit and orthogonal:</p>
+<p>In the matrix model $\mathsf M_2(\tilde\pi_{\mathrm{nil}})=2a\,u v^{\dagger}$ with $u,v$ unit and orthogonal:</p>
 <p>$$
 v^{\dagger}u=\frac{Q_t}{a}=0,
 \qquad
@@ -201,7 +201,7 @@ u\perp v .
 $$</p>
 <p>The polar factors are</p>
 <p>$$
-P=u u^{\dagger}=\tilde\Pi_+,
+P=u u^{\dagger}=\tilde\Pi_{\mathrm{id},+},
 \qquad
 \tilde Q_H=2a\,u u^{\dagger},
 \qquad
@@ -234,18 +234,18 @@ $$</p>
 $$</p>
 <p>On $\Sigma_{01}$ the element is a zero divisor, so $\mathrm{Sd}_{\tilde Q}$ is not invertible. The properties are those of <em>Operators of the Polar Word: The Common Framework</em>; the sector changes the values.</p>
 <h3 id="the-closed-form-on-the-idempotent-multiples">The closed form on the idempotent multiples</h3>
-<p>Let $\tilde Q=c\tilde\Pi$. Since $\tilde\Pi^{2}=\tilde\Pi$,</p>
+<p>Let $\tilde Q=c\tilde\Pi_{\mathrm{id}}$. Since $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$,</p>
 <p>$$
 \mathrm{Sd}_{\tilde Q}
-=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde\Pi},
+=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}},
 \qquad
-\mathrm{Sd}_{\tilde\Pi}^{2}
-=\mathrm{Sd}_{\tilde\Pi},
+\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}^{2}
+=\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}},
 \qquad
 \mathrm{Sd}_{\tilde Q}^{2}
 =\lvert c\rvert^{2}\mathrm{Sd}_{\tilde Q}.
 $$</p>
-<p>Thus $\mathrm{Sd}_{\tilde Q}/\lvert c\rvert^{2}$ is an idempotent of the operator space, and $\mathrm{Sd}_{\tilde Q}$ is an idempotent up to scale. It is not an orthogonal projection unless $\tilde\Pi$ is Hermitian.</p>
+<p>Thus $\mathrm{Sd}_{\tilde Q}/\lvert c\rvert^{2}$ is an idempotent of the operator space, and $\mathrm{Sd}_{\tilde Q}$ is an idempotent up to scale. It is not an orthogonal projection unless $\tilde\Pi_{\mathrm{id}}$ is Hermitian.</p>
 <p><strong>Theorem (rank, spectrum and Jordan form).</strong> On $\Sigma_{01}$:</p>
 <p><strong>(a)</strong> $\mathrm{Sd}_{\tilde Q}$ has complex rank $1$;</p>
 <p><strong>(b)</strong> its spectrum is $\{\lvert c\rvert^{2},0\}$, with algebraic multiplicities $1$ and $3$, and geometric multiplicities $1$ and $3$;</p>
@@ -270,24 +270,24 @@ The image is a null line because $\langle\tilde Q\tilde X\tilde Q^{*}\rangle_{\n
 <p>$$
 \operatorname{im}\mathrm{Sd}_{\tilde Q}=\mathbb{C}P,
 \qquad
-P=\frac{\tilde Q\tilde Q^{*}}{4a^{2}}=\frac{\tilde\Pi\tilde\Pi^{*}}{\kappa}.
+P=\frac{\tilde Q\tilde Q^{*}}{4a^{2}}=\frac{\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}^{*}}{\kappa}.
 $$</p>
 <p>The line is null: $\langle P\rangle_{\natural}=0$ because $P$ is a non-trivial idempotent. The kernel is the hyperplane</p>
 <p>$$
 \ker\mathrm{Sd}_{\tilde Q}
-=\bigl\{\tilde X:\tilde\Pi\tilde X\tilde\Pi^{*}=0\bigr\},
+=\bigl\{\tilde X:\tilde\Pi_{\mathrm{id}}\tilde X\tilde\Pi_{\mathrm{id}}^{*}=0\bigr\},
 \qquad
 \dim_{\mathbb{C}}\ker\mathrm{Sd}_{\tilde Q}=3.
 $$</p>
 <p>In the matrix model it is $\{X:v^{\dagger}Xv=0\}$, the hyperplane orthogonal to the rank-one functional $X\mapsto v^{\dagger}Xv$. The kernel contains the right annihilator $A(\tilde Q)=\ker L_{\tilde Q}$ and the left annihilator of $\tilde Q^{*}$, because $\tilde Q\tilde X=0$ or $\tilde X\tilde Q^{*}=0$ implies $\tilde Q\tilde X\tilde Q^{*}=0$, and it is strictly larger than each of them.</p>
-<p>When $\tilde\Pi$ is Hermitian, the Peirce form is diagonal in the eigenbasis $(\tilde\Pi,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi')$:</p>
+<p>When $\tilde\Pi_{\mathrm{id}}$ is Hermitian, the Peirce form is diagonal in the eigenbasis $(\tilde\Pi_{\mathrm{id}},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id}}')$:</p>
 <p>$$
 \boxed{\;
 \mathsf M\bigl(\mathrm{Sd}_{\tilde Q}\bigr)
 =\operatorname{diag}\bigl(\lvert c\rvert^{2},0,0,0\bigr).
 \;}
 $$</p>
-<p>Only the $(+,+)$ corner survives; the kernel is the sum of the other three corners. When $\tilde\Pi$ is not Hermitian, the matrix is not diagonal in that basis, but the spectrum and the rank are the same. The image is still the line $\mathbb{C}P$, and the kernel is still the hyperplane above.</p>
+<p>Only the $(+,+)$ corner survives; the kernel is the sum of the other three corners. When $\tilde\Pi_{\mathrm{id}}$ is not Hermitian, the matrix is not diagonal in that basis, but the spectrum and the rank are the same. The image is still the line $\mathbb{C}P$, and the kernel is still the hyperplane above.</p>
 <h3 id="eigenvalues-and-singular-values">Eigenvalues and singular values</h3>
 <p>The eigenvalue of $\mathrm{Sd}_{\tilde Q}$ on its image is $\lvert c\rvert^{2}$. Its non-zero singular value is $4a^{2}$: indeed</p>
 <p>$$
@@ -302,15 +302,15 @@ $$</p>
 =\lvert v^{\dagger}u\rvert^{2}
 =\cos^{2}\theta .
 $$</p>
-<p>This ratio is one exactly when $\tilde\Pi$ is Hermitian ($\kappa=1$, the slots coincide), and it lies strictly between $0$ and $1$ for a non-Hermitian idempotent. It vanishes at the wall $\Sigma_{00}$. The distinction between eigenvalue and singular value is the measure of the obliqueness of the projection.</p>
-<p>The idempotent $\mathrm{Sd}_{\tilde\Pi}$ itself has singular value $\kappa$, because</p>
+<p>This ratio is one exactly when $\tilde\Pi_{\mathrm{id}}$ is Hermitian ($\kappa=1$, the slots coincide), and it lies strictly between $0$ and $1$ for a non-Hermitian idempotent. It vanishes at the wall $\Sigma_{00}$. The distinction between eigenvalue and singular value is the measure of the obliqueness of the projection.</p>
+<p>The idempotent $\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}$ itself has singular value $\kappa$, because</p>
 <p>$$
-\mathrm{Sd}_{\tilde\Pi}\mathrm{Sd}_{\tilde\Pi}^{*}
-=\mathrm{Sd}_{\tilde\Pi\tilde\Pi^{*}}
+\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}^{*}
+=\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}^{*}}
 =\mathrm{Sd}_{\kappa P}
 =\kappa^{2}\mathrm{Sd}_P .
 $$</p>
-<p>Thus $\mathrm{Sd}_{\tilde Q}=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde\Pi}$ has singular value $\lvert c\rvert^{2}\kappa=4a^{2}$. The operator $\mathrm{Sd}_{\tilde Q}$ is not a partial isometry in general: its singular value is $4a^{2}$, not one. It is $4a^{2}$ times the partial isometry $\mathrm{Sd}_{\tilde Q_0}$.</p>
+<p>Thus $\mathrm{Sd}_{\tilde Q}=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}$ has singular value $\lvert c\rvert^{2}\kappa=4a^{2}$. The operator $\mathrm{Sd}_{\tilde Q}$ is not a partial isometry in general: its singular value is $4a^{2}$, not one. It is $4a^{2}$ times the partial isometry $\mathrm{Sd}_{\tilde Q_0}$.</p>
 <h3 id="the-square-the-rank-and-the-spectrum">The square, the rank and the spectrum</h3>
 <p><strong>Theorem.</strong> On $\Sigma_{00}$:</p>
 <p><strong>(a)</strong> $\mathrm{Sd}_{\tilde Q}^{2}=0$;</p>
@@ -324,7 +324,7 @@ $$</p>
 \mathrm{Sd}_{\tilde Q}(\tilde X)
 =4a^{2}\bigl(v^{\dagger}\mathsf M_2(\tilde X)v\bigr)u u^{\dagger}.
 $$</p>
-<p>The image is contained in the line $\mathbb{C}u u^{\dagger}$, and it is non-zero because $\mathrm{Sd}_{\tilde Q}(e_t)=\tilde\nu\tilde\nu^{*}=4a^{2}\tilde\Pi_+$. Hence the rank is one. Applying the formula twice,</p>
+<p>The image is contained in the line $\mathbb{C}u u^{\dagger}$, and it is non-zero because $\mathrm{Sd}_{\tilde Q}(e_t)=\tilde\pi_{\mathrm{nil}}\tilde\pi_{\mathrm{nil}}^{*}=4a^{2}\tilde\Pi_{\mathrm{id},+}$. Hence the rank is one. Applying the formula twice,</p>
 <p>$$
 \mathrm{Sd}_{\tilde Q}^{2}(\tilde X)
 =(4a^{2})^{2}\bigl(v^{\dagger}\mathsf M_2(\tilde X)v\bigr)
@@ -336,43 +336,43 @@ The image is a null line because $\langle\tilde Q\tilde X\tilde Q^{*}\rangle_{\n
 <p>The image is the null line</p>
 <p>$$
 \operatorname{im}\mathrm{Sd}_{\tilde Q}
-=\mathbb{C}\tilde\Pi_+,
+=\mathbb{C}\tilde\Pi_{\mathrm{id},+},
 \qquad
-\tilde\Pi_+=\frac{\tilde Q\tilde Q^{*}}{4a^{2}}.
+\tilde\Pi_{\mathrm{id},+}=\frac{\tilde Q\tilde Q^{*}}{4a^{2}}.
 $$</p>
 <p>The kernel is the hyperplane</p>
 <p>$$
 \ker\mathrm{Sd}_{\tilde Q}
-=\bigl\{\tilde X:\tilde\nu\tilde X\tilde\nu^{*}=0\bigr\},
+=\bigl\{\tilde X:\tilde\pi_{\mathrm{nil}}\tilde X\tilde\pi_{\mathrm{nil}}^{*}=0\bigr\},
 \qquad
 \dim_{\mathbb{C}}\ker\mathrm{Sd}_{\tilde Q}=3.
 $$</p>
-<p>In the matrix model it is $\{X:v^{\dagger}Xv=0\}$. The kernel contains the right annihilator $A(\tilde\nu)=\ker L_{\tilde\nu}$ and the left annihilator of $\tilde\nu^{*}$, because $\tilde\nu\tilde X=0$ or $\tilde X\tilde\nu^{*}=0$ implies $\tilde\nu\tilde X\tilde\nu^{*}=0$. The image is contained in the kernel, since the operator is square-zero; the kernel is strictly larger, because the rank is one.</p>
+<p>In the matrix model it is $\{X:v^{\dagger}Xv=0\}$. The kernel contains the right annihilator $A(\tilde\pi_{\mathrm{nil}})=\ker L_{\tilde\pi_{\mathrm{nil}}}$ and the left annihilator of $\tilde\pi_{\mathrm{nil}}^{*}$, because $\tilde\pi_{\mathrm{nil}}\tilde X=0$ or $\tilde X\tilde\pi_{\mathrm{nil}}^{*}=0$ implies $\tilde\pi_{\mathrm{nil}}\tilde X\tilde\pi_{\mathrm{nil}}^{*}=0$. The image is contained in the kernel, since the operator is square-zero; the kernel is strictly larger, because the rank is one.</p>
 <h3 id="the-explicit-jordan-chain">The explicit Jordan chain</h3>
-<p>The canonical Hermitian pair gives a very explicit chain. Since $\tilde\nu\tilde\Pi_-=\tilde\nu$ and $\tilde\nu\tilde\nu^{*}=4a^{2}\tilde\Pi_+$, one has</p>
+<p>The canonical Hermitian pair gives a very explicit chain. Since $\tilde\pi_{\mathrm{nil}}\tilde\Pi_{\mathrm{id},-}=\tilde\pi_{\mathrm{nil}}$ and $\tilde\pi_{\mathrm{nil}}\tilde\pi_{\mathrm{nil}}^{*}=4a^{2}\tilde\Pi_{\mathrm{id},+}$, one has</p>
 <p>$$
 \boxed{\;
-\mathrm{Sd}_{\tilde Q}(\tilde\Pi_-)
-=\tilde\nu\tilde\Pi_-\tilde\nu^{*}
-=\tilde\nu\tilde\nu^{*}
-=4a^{2}\tilde\Pi_+,
+\mathrm{Sd}_{\tilde Q}(\tilde\Pi_{\mathrm{id},-})
+=\tilde\pi_{\mathrm{nil}}\tilde\Pi_{\mathrm{id},-}\tilde\pi_{\mathrm{nil}}^{*}
+=\tilde\pi_{\mathrm{nil}}\tilde\pi_{\mathrm{nil}}^{*}
+=4a^{2}\tilde\Pi_{\mathrm{id},+},
 \qquad
-\mathrm{Sd}_{\tilde Q}(\tilde\Pi_+)=0 .
+\mathrm{Sd}_{\tilde Q}(\tilde\Pi_{\mathrm{id},+})=0 .
 \;}
 $$</p>
 <p>Thus</p>
 <p>$$
-\tilde\Pi_-\longmapsto 4a^{2}\tilde\Pi_+\longmapsto0
+\tilde\Pi_{\mathrm{id},-}\longmapsto 4a^{2}\tilde\Pi_{\mathrm{id},+}\longmapsto0
 $$</p>
 <p>is a chain of length two. The other two basis vectors are killed:</p>
 <p>$$
-\mathrm{Sd}_{\tilde Q}(\tilde\nu)=0,
+\mathrm{Sd}_{\tilde Q}(\tilde\pi_{\mathrm{nil}})=0,
 \qquad
 \mathrm{Sd}_{\tilde Q}(\vec X)=0,
 $$</p>
-<p>where $\vec X$ is the corner vector spanning $\tilde\Pi_-\mathbb{B}\tilde\Pi_+$. In the basis</p>
+<p>where $\vec X$ is the corner vector spanning $\tilde\Pi_{\mathrm{id},-}\mathbb{B}\tilde\Pi_{\mathrm{id},+}$. In the basis</p>
 <p>$$
-\bigl(\tilde\Pi_+,\ \tilde\nu,\ \vec X,\ \tilde\Pi_-\bigr)
+\bigl(\tilde\Pi_{\mathrm{id},+},\ \tilde\pi_{\mathrm{nil}},\ \vec X,\ \tilde\Pi_{\mathrm{id},-}\bigr)
 $$</p>
 <p>the two-sided operator is therefore the single nilpotent block</p>
 <p>$$
@@ -386,17 +386,17 @@ $$</p>
 \end{pmatrix}.
 \;}
 $$</p>
-<p>This matrix is the cleanest form of the operator: rank one, square zero, image $\mathbb{C}\tilde\Pi_+$, kernel $\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\nu\oplus\mathbb{C}\vec X$, and the single chain from $\tilde\Pi_-$ to $\tilde\Pi_+$.</p>
-<p>The chain crosses the Peirce diagram from the $(--)$ corner to the $(+,+)$ corner. The element $\tilde\nu$ lies in the mixed corner $(+-)$; the other mixed corner $(-+)$ is represented by $\vec X$. The two-sided maps the $(--)$ corner to the $(+,+)$ corner and kills the two mixed corners and the $(+,+)$ corner itself. This is the exact two-step collapse of the spectral degeneracy.</p>
+<p>This matrix is the cleanest form of the operator: rank one, square zero, image $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$, kernel $\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\tilde\pi_{\mathrm{nil}}\oplus\mathbb{C}\vec X$, and the single chain from $\tilde\Pi_{\mathrm{id},-}$ to $\tilde\Pi_{\mathrm{id},+}$.</p>
+<p>The chain crosses the Peirce diagram from the $(--)$ corner to the $(+,+)$ corner. The element $\tilde\pi_{\mathrm{nil}}$ lies in the mixed corner $(+-)$; the other mixed corner $(-+)$ is represented by $\vec X$. The two-sided maps the $(--)$ corner to the $(+,+)$ corner and kills the two mixed corners and the $(+,+)$ corner itself. This is the exact two-step collapse of the spectral degeneracy.</p>
 <h3 id="eigenvalues-and-singular-values-on-the-nilpotents">Eigenvalues and singular values on the nilpotents</h3>
 <p>The only eigenvalue is zero. The non-zero singular value is $4a^{2}$: indeed</p>
 <p>$$
 \mathrm{Sd}_{\tilde Q}\mathrm{Sd}_{\tilde Q}^{*}
 =\mathrm{Sd}_{\tilde Q\tilde Q^{*}}
-=\mathrm{Sd}_{4a^{2}\tilde\Pi_+}
-=(4a^{2})^{2}\mathrm{Sd}_{\tilde\Pi_+},
+=\mathrm{Sd}_{4a^{2}\tilde\Pi_{\mathrm{id},+}}
+=(4a^{2})^{2}\mathrm{Sd}_{\tilde\Pi_{\mathrm{id},+}},
 $$</p>
-<p>and $\mathrm{Sd}_{\tilde\Pi_+}$ is an orthogonal projection of rank one, with singular value one. Hence the singular value is $4a^{2}$. The eigenvalue-to-singular-value ratio is zero. This is the maximal defect: the operator has a non-zero singular value but no non-zero eigenvalue, and its image is a null line.</p>
+<p>and $\mathrm{Sd}_{\tilde\Pi_{\mathrm{id},+}}$ is an orthogonal projection of rank one, with singular value one. Hence the singular value is $4a^{2}$. The eigenvalue-to-singular-value ratio is zero. This is the maximal defect: the operator has a non-zero singular value but no non-zero eigenvalue, and its image is a null line.</p>
 <p>The operator $\mathrm{Sd}_{\tilde Q}=4a^{2}\mathrm{Sd}_{\tilde Q_0}$ is not a partial isometry in general: its singular value is $4a^{2}$, not one. It is $4a^{2}$ times the nilpotent partial isometry $\mathrm{Sd}_{\tilde Q_0}$.</p>
 <h2 id="the-polar-decomposition-of-the-two-sided-operator">The Polar Decomposition of the Two-Sided Operator</h2>
 <p>The polar decomposition of the operator is the congruence of the polar decomposition of the element. The scalar $4a^{2}$ is the square of the element's singular value $2a$; the phase of the element never appears.</p>
@@ -427,18 +427,18 @@ $$</p>
 $$</p>
 <p>The two-sided operator is $4a^{2}$ times a partial isometry. Its non-zero singular value is $4a^{2}$, the square of the one-sided singular value $2a$. Its eigenvalue is $\lvert c\rvert^{2}=4a^{2}\cos^{2}\theta$, the squared overlap of the two slots.</p>
 <h3 id="the-phase-on-the-idempotent-multiples">The phase on the idempotent multiples</h3>
-<p>The partial-isometry factor is $\tilde Q_0=(c/\lvert c\rvert)\tilde\Pi/\sqrt{\kappa}$. Since $\Theta$ is quadratic in $\tilde Q_0$ and $\tilde Q_0^{*}$,</p>
+<p>The partial-isometry factor is $\tilde Q_0=(c/\lvert c\rvert)\tilde\Pi_{\mathrm{id}}/\sqrt{\kappa}$. Since $\Theta$ is quadratic in $\tilde Q_0$ and $\tilde Q_0^{*}$,</p>
 <p>$$
 \mathrm{Sd}_{\tilde Q_0}
-=\mathrm{Sd}_{\tilde\Pi}/\kappa,
+=\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}/\kappa,
 $$</p>
 <p>independent of the phase of $c$. The two-sided operator therefore cancels the phase:</p>
 <p>$$
 \mathrm{Sd}_{\tilde Q}
-=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde\Pi}
+=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}
 =4a^{2}\mathrm{Sd}_{\tilde Q_0}.
 $$</p>
-<p>The one-sided operator of the companion article keeps the phase in its eigenvalue $c$; the two-sided operator keeps only the modulus $\lvert c\rvert^{2}$ and the Hermitian projection $P$. When $\tilde\Pi$ is Hermitian and $c=\varrho e^{i\theta_{\mathrm{pha}}}$, the polar pair is $\tilde Q_H=r\tilde\Pi$ and $\tilde Q_0=e^{i\theta_{\mathrm{pha}}}\tilde\Pi$, and the two-sided operator is $r^{2}\mathrm{Sd}_{\tilde\Pi}$: the phase has cancelled between $\tilde Q_0$ and $\tilde Q_0^{*}$.</p>
+<p>The one-sided operator of the companion article keeps the phase in its eigenvalue $c$; the two-sided operator keeps only the modulus $\lvert c\rvert^{2}$ and the Hermitian projection $P$. When $\tilde\Pi_{\mathrm{id}}$ is Hermitian and $c=\varrho e^{i\theta_{\mathrm{pha}}}$, the polar pair is $\tilde Q_H=r\tilde\Pi_{\mathrm{id}}$ and $\tilde Q_0=e^{i\theta_{\mathrm{pha}}}\tilde\Pi_{\mathrm{id}}$, and the two-sided operator is $r^{2}\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}$: the phase has cancelled between $\tilde Q_0$ and $\tilde Q_0^{*}$.</p>
 <h3 id="the-polar-pair-of-the-element-and-of-the-operator-on-the-idempotent-multiples">The polar pair of the element and of the operator on the idempotent multiples</h3>
 <p>The element pair is $(\tilde Q_H,\tilde Q_0)$, with $\tilde Q_H=2aP$ and $\tilde Q_0$ a partial isometry. The operator pair is $(\mathrm{Sd}_{\tilde Q_H},\mathrm{Sd}_{\tilde Q_0})$, with $\mathrm{Sd}_{\tilde Q_H}=4a^{2}\mathrm{Sd}_P$ positive and $\mathrm{Sd}_{\tilde Q_0}$ a partial isometry. The element pair is a rank-one singular value decomposition; the operator pair is its congruence. The scalar $4a^{2}$ is the square of the element's singular value $2a$, and the phase of the element is absent from the operator pair.</p>
 <h3 id="the-scalar-collapse-on-the-nilpotents">The scalar collapse on the nilpotents</h3>
@@ -453,9 +453,9 @@ $$</p>
 \lvert\mathrm{Sd}_{\tilde Q}\rvert
 =\bigl(\mathrm{Sd}_{\tilde Q}\mathrm{Sd}_{\tilde Q}^{*}\bigr)^{1/2}
 =\mathrm{Sd}_{\tilde Q_H}
-=4a^{2}\mathrm{Sd}_{\tilde\Pi_+},
+=4a^{2}\mathrm{Sd}_{\tilde\Pi_{\mathrm{id},+}},
 $$</p>
-<p>which is positive semidefinite of rank one. On the image of $\mathrm{Sd}_{\tilde Q_0}$ it acts as the scalar $4a^{2}$, because $\tilde\Pi_+\tilde Q_0=\tilde Q_0$ and therefore $\mathrm{Sd}_{\tilde\Pi_+}\mathrm{Sd}_{\tilde Q_0}=\mathrm{Sd}_{\tilde Q_0}$. Hence</p>
+<p>which is positive semidefinite of rank one. On the image of $\mathrm{Sd}_{\tilde Q_0}$ it acts as the scalar $4a^{2}$, because $\tilde\Pi_{\mathrm{id},+}\tilde Q_0=\tilde Q_0$ and therefore $\mathrm{Sd}_{\tilde\Pi_{\mathrm{id},+}}\mathrm{Sd}_{\tilde Q_0}=\mathrm{Sd}_{\tilde Q_0}$. Hence</p>
 <p>$$
 \boxed{\;
 \mathrm{Sd}_{\tilde Q}
@@ -472,7 +472,7 @@ $$</p>
 <h3 id="the-phase-on-the-nilpotents">The phase on the nilpotents</h3>
 <p>For a complex multiple</p>
 <p>$$
-\tilde\nu=c_0(\vec e_x+i\vec e_y),
+\tilde\pi_{\mathrm{nil}}=c_0(\vec e_x+i\vec e_y),
 \qquad
 c_0=\lvert c_0\rvert e^{i\beta},
 $$</p>
@@ -489,31 +489,31 @@ $$</p>
 \mathrm{Sd}_{\tilde Q}
 =4\lvert c_0\rvert^{2}\mathrm{Sd}_{\tilde Q_0}
 =\lvert c_0\rvert^{2}\mathrm{Sd}_{\vec e_x+i\vec e_y}
-=\mathrm{Sd}_{\tilde\nu},
+=\mathrm{Sd}_{\tilde\pi_{\mathrm{nil}}},
 $$</p>
-<p>so the phase has cancelled. The one-sided operator keeps the phase; the two-sided operator sees only $\lvert c_0\rvert^{2}$ and the canonical pair. The sign $\tilde\nu\mapsto-\tilde\nu$ also cancels.</p>
+<p>so the phase has cancelled. The one-sided operator keeps the phase; the two-sided operator sees only $\lvert c_0\rvert^{2}$ and the canonical pair. The sign $\tilde\pi_{\mathrm{nil}}\mapsto-\tilde\pi_{\mathrm{nil}}$ also cancels.</p>
 <h3 id="the-polar-pair-of-the-element-and-of-the-operator-on-the-nilpotents">The polar pair of the element and of the operator on the nilpotents</h3>
-<p>The element pair is $(\tilde Q_H,\tilde Q_0)$, with $\tilde Q_H=2a\tilde\Pi_+$ positive of rank one and $\tilde Q_0$ a nilpotent partial isometry. The operator pair is $(\mathrm{Sd}_{\tilde Q_H},\mathrm{Sd}_{\tilde Q_0})$, with $\mathrm{Sd}_{\tilde Q_H}=4a^{2}\mathrm{Sd}_{\tilde\Pi_+}$ positive of rank one and $\mathrm{Sd}_{\tilde Q_0}$ a nilpotent partial isometry. The element pair is the rank-one singular value decomposition of the nilpotent; the operator pair is its congruence. The scalar $4a^{2}$ is the square of the element's singular value $2a$.</p>
-<p>The spectral pair of the element does not exist off the origin: the element has only the eigenvalue zero, and no non-trivial idempotent commutes with it. The Hermitian form supplies the canonical pair $(\tilde\Pi_+,\tilde\Pi_-)$, and the polar decomposition uses exactly that pair. This is the precise sense in which the polar pair survives while the spectral decomposition fails.</p>
+<p>The element pair is $(\tilde Q_H,\tilde Q_0)$, with $\tilde Q_H=2a\tilde\Pi_{\mathrm{id},+}$ positive of rank one and $\tilde Q_0$ a nilpotent partial isometry. The operator pair is $(\mathrm{Sd}_{\tilde Q_H},\mathrm{Sd}_{\tilde Q_0})$, with $\mathrm{Sd}_{\tilde Q_H}=4a^{2}\mathrm{Sd}_{\tilde\Pi_{\mathrm{id},+}}$ positive of rank one and $\mathrm{Sd}_{\tilde Q_0}$ a nilpotent partial isometry. The element pair is the rank-one singular value decomposition of the nilpotent; the operator pair is its congruence. The scalar $4a^{2}$ is the square of the element's singular value $2a$.</p>
+<p>The spectral pair of the element does not exist off the origin: the element has only the eigenvalue zero, and no non-trivial idempotent commutes with it. The Hermitian form supplies the canonical pair $(\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-})$, and the polar decomposition uses exactly that pair. This is the precise sense in which the polar pair survives while the spectral decomposition fails.</p>
 <h2 id="the-two-slots">The Two Slots</h2>
 <p>The two slots of the two-sided operator survive the norm degeneration as the two singular vectors. On $\Sigma_{01}$ they are the column and the row of the rank-one matrix model, with overlap $\cos\theta=1/\sqrt{\kappa}$; on $\Sigma_{00}$ the overlap vanishes and the operator is square-zero.</p>
 <h3 id="the-peirce-picture-on-the-idempotent-multiples">The Peirce picture on the idempotent multiples</h3>
-<p>On $\Sigma_{01}$ the eigenbasis exists because $B^{2}\neq0$. Its spectral projectors are $\tilde\Pi$ and $\tilde\Pi'$, and the four Peirce corners are one-dimensional. For a Hermitian $\tilde\Pi$, the two-sided operator is the projection onto the $(+,+)$ corner:</p>
+<p>On $\Sigma_{01}$ the eigenbasis exists because $B^{2}\neq0$. Its spectral projectors are $\tilde\Pi_{\mathrm{id}}$ and $\tilde\Pi_{\mathrm{id}}'$, and the four Peirce corners are one-dimensional. For a Hermitian $\tilde\Pi_{\mathrm{id}}$, the two-sided operator is the projection onto the $(+,+)$ corner:</p>
 <p>$$
-\mathrm{Sd}_{\tilde\Pi}(\tilde\Pi)=\tilde\Pi,
+\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}(\tilde\Pi_{\mathrm{id}})=\tilde\Pi_{\mathrm{id}},
 \qquad
-\mathrm{Sd}_{\tilde\Pi}(\vec\Upsilon_-)=0,
+\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}(\vec\Pi_{\mathrm{nil},-})=0,
 \qquad
-\mathrm{Sd}_{\tilde\Pi}(\vec\Upsilon_+)=0,
+\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}(\vec\Pi_{\mathrm{nil},+})=0,
 \qquad
-\mathrm{Sd}_{\tilde\Pi}(\tilde\Pi')=0.
+\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}(\tilde\Pi_{\mathrm{id}}')=0.
 $$</p>
 <p>Thus the matrix is $\operatorname{diag}(1,0,0,0)$, and $\mathrm{Sd}_{\tilde Q}$ is $\operatorname{diag}(\lvert c\rvert^{2},0,0,0)$. The kernel is the sum of the three other corners. The two-sided operator pairs the two half-angles of the regular theory; on $\Sigma_{01}$ one half has eigenvalue zero, so only the $(+,+)$ pairing survives. The four eigenvalue products are</p>
 <p>$$
 c\bar c,\quad c\cdot0,\quad 0\cdot\bar c,\quad 0\cdot0,
 $$</p>
 <p>that is, $\lvert c\rvert^{2},0,0,0$. The full rotor of the regular two-sided operator has no angle or rapidity here: the element is not invertible, and the two-sided operator is not a conformal Lorentz transformation. It is an oblique projection onto a null line.</p>
-<p>For a non-Hermitian $\tilde\Pi$ the eigenbasis still exists, but the two-sided operator is not diagonal in it. The invariant statement is the spectrum: the four products are still $\lvert c\rvert^{2},0,0,0$, and the image is still the null line $\mathbb{C}P$, with $P=\tilde\Pi\tilde\Pi^{*}/\kappa\neq\tilde\Pi$.</p>
+<p>For a non-Hermitian $\tilde\Pi_{\mathrm{id}}$ the eigenbasis still exists, but the two-sided operator is not diagonal in it. The invariant statement is the spectrum: the four products are still $\lvert c\rvert^{2},0,0,0$, and the image is still the null line $\mathbb{C}P$, with $P=\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}^{*}/\kappa\neq\tilde\Pi_{\mathrm{id}}$.</p>
 <h3 id="the-singular-vector-picture-on-the-idempotent-multiples">The singular-vector picture on the idempotent multiples</h3>
 <p>In the matrix model the two slots are the singular vectors $u$ and $v$. The two-sided operator is</p>
 <p>$$
@@ -523,7 +523,7 @@ $$</p>
 <p>It reads the $v$-slot of $\tilde X$ through the scalar $v^{\dagger}\mathsf M_2(\tilde X)v$ and writes it on the $u$-slot. The relative phase of $u$ and $v$ cancels, because the two-sided operator uses $u$ and $u^{\dagger}$ on the outside and $v$ and $v^{\dagger}$ on the inside. The eigenvalue is $4a^{2}\lvert v^{\dagger}u\rvert^{2}=\lvert c\rvert^{2}$; the singular value is $4a^{2}$. The two slots are not orthogonal on $\Sigma_{01}$: their overlap has modulus $\cos\theta=1/\sqrt{\kappa}$. At the wall $\Sigma_{00}$ the overlap vanishes, the slots are orthogonal, and the two-sided operator becomes nilpotent.</p>
 <p>This is the precise form of the two-slot structure of the regular two-sided operator. In the regular sector the two slots are the two chiralities, and the two-sided operator carries the full angle and rapidity as the product of the two half-factors. On the null cone the two slots are the singular vectors of the rank-one element, and the two-sided operator carries only the squared overlap $\cos^{2}\theta$. The angle between the slots replaces the angle of the Lorentz transformation.</p>
 <h3 id="the-peirce-picture-on-the-nilpotents">The Peirce picture on the nilpotents</h3>
-<p>In the canonical basis $(\tilde\Pi_+,\tilde\nu,\vec X,\tilde\Pi_-)$ the two-sided operator is the single block of §<em>The Explicit Jordan Chain</em>:</p>
+<p>In the canonical basis $(\tilde\Pi_{\mathrm{id},+},\tilde\pi_{\mathrm{nil}},\vec X,\tilde\Pi_{\mathrm{id},-})$ the two-sided operator is the single block of §<em>The Explicit Jordan Chain</em>:</p>
 <p>$$
 \mathsf M\bigl(\mathrm{Sd}_{\tilde Q}\bigr)=
 \begin{pmatrix}
@@ -533,7 +533,7 @@ $$</p>
 0&0&0&0
 \end{pmatrix}.
 $$</p>
-<p>The chain is $\tilde\Pi_-\to4a^{2}\tilde\Pi_+\to0$. The image is the $(+,+)$ corner, the chain starts in the $(--)$ corner, and the two mixed corners are killed. In the regular sector the two-sided operator is a conformal Lorentz transformation with four eigenvalue products $\lambda_i\bar\lambda_j$; here all four products vanish. In the N-regular, spectrally degenerate sector the two-sided operator is a unipotent operator of Jordan type $3+1$; here it is a nilpotent operator of Jordan type $2+1+1$. The two chiral slots of the regular theory coalesce into the single chain $\tilde\Pi_-\to\tilde\Pi_+$.</p>
+<p>The chain is $\tilde\Pi_{\mathrm{id},-}\to4a^{2}\tilde\Pi_{\mathrm{id},+}\to0$. The image is the $(+,+)$ corner, the chain starts in the $(--)$ corner, and the two mixed corners are killed. In the regular sector the two-sided operator is a conformal Lorentz transformation with four eigenvalue products $\lambda_i\bar\lambda_j$; here all four products vanish. In the N-regular, spectrally degenerate sector the two-sided operator is a unipotent operator of Jordan type $3+1$; here it is a nilpotent operator of Jordan type $2+1+1$. The two chiral slots of the regular theory coalesce into the single chain $\tilde\Pi_{\mathrm{id},-}\to\tilde\Pi_{\mathrm{id},+}$.</p>
 <h3 id="the-singular-vector-picture-on-the-nilpotents">The singular-vector picture on the nilpotents</h3>
 <p>In the matrix model the two slots are the singular vectors $u$ and $v$, and they are orthogonal:</p>
 <p>$$
@@ -547,15 +547,15 @@ $$</p>
 <h2 id="the-exponential">The Exponential</h2>
 <p>On $\Sigma_{01}$ the exponential is a line of projections; on $\Sigma_{00}$ it is unipotent. In both cases it removes the norm degeneration, and on $\Sigma_{01}$ it also removes the spectral one.</p>
 <h3 id="the-exponential-on-the-idempotent-multiples">The exponential on the idempotent multiples</h3>
-<p><strong>The operator exponential.</strong> Since $\mathrm{Sd}_{\tilde Q}=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde\Pi}$ and $\mathrm{Sd}_{\tilde\Pi}^{2}=\mathrm{Sd}_{\tilde\Pi}$,</p>
+<p><strong>The operator exponential.</strong> Since $\mathrm{Sd}_{\tilde Q}=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}$ and $\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}^{2}=\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}$,</p>
 <p>$$
 \boxed{\;
 \exp\bigl(t\mathrm{Sd}_{\tilde Q}\bigr)
-=I+\bigl(e^{t\lvert c\rvert^{2}}-1\bigr)\mathrm{Sd}_{\tilde\Pi}
+=I+\bigl(e^{t\lvert c\rvert^{2}}-1\bigr)\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}
 \;}
 $$</p>
 <p>for every complex $t$. The eigenvalues are $e^{t\lvert c\rvert^{2}}$ and $1$ (three times); the determinant is $e^{t\lvert c\rvert^{2}}$. The group is invertible for every $t$, although the generator $\mathrm{Sd}_{\tilde Q}$ is singular. It dilates the image line and fixes the kernel hyperplane.</p>
-<p><strong>The element flow.</strong> The exponential $\exp(t\tilde Q)=e_t+(e^{tc}-1)\tilde\Pi$ is invertible for every $t$, and it lies in $\Sigma_{11}$ for generic $t\neq0$; at the exceptional values $e^{tc}=1$ it is $e_t$ on the wall $\Sigma_{10}$. Its two-sided operator $\mathrm{Sd}_{\exp(t\tilde Q)}$ is therefore a conformal Lorentz transformation, with the generator $\mathrm{Sd}_{\tilde Q}$:</p>
+<p><strong>The element flow.</strong> The exponential $\exp(t\tilde Q)=e_t+(e^{tc}-1)\tilde\Pi_{\mathrm{id}}$ is invertible for every $t$, and it lies in $\Sigma_{11}$ for generic $t\neq0$; at the exceptional values $e^{tc}=1$ it is $e_t$ on the wall $\Sigma_{10}$. Its two-sided operator $\mathrm{Sd}_{\exp(t\tilde Q)}$ is therefore a conformal Lorentz transformation, with the generator $\mathrm{Sd}_{\tilde Q}$:</p>
 <p>$$
 \mathrm{Sd}_{\exp(t\tilde Q)}
 =\exp\bigl(t\mathrm{Sd}_{\tilde Q}\bigr).
@@ -569,17 +569,17 @@ $$</p>
 \;}
 $$</p>
 <p>for every complex $t$. The eigenvalues are all $1$; the Jordan form is $J_2(1)\oplus1\oplus1$; the determinant is $1$. The group is unipotent: it is a shear, not a dilation. It is invertible for every $t$, although the generator is nilpotent and singular.</p>
-<p><strong>The element flow.</strong> Since $\tilde\nu^{2}=0$,</p>
+<p><strong>The element flow.</strong> Since $\tilde\pi_{\mathrm{nil}}^{2}=0$,</p>
 <p>$$
-\exp\bigl(t\tilde\nu\bigr)=e_t+t\tilde\nu .
+\exp\bigl(t\tilde\pi_{\mathrm{nil}}\bigr)=e_t+t\tilde\pi_{\mathrm{nil}} .
 $$</p>
 <p>The quaternionic norm is $1$, and the vector form is</p>
 <p>$$
-B^{2}\bigl(\exp(t\tilde\nu)\bigr)=t^{2}B^{2}(\tilde\nu)=0 .
+B^{2}\bigl(\exp(t\tilde\pi_{\mathrm{nil}})\bigr)=t^{2}B^{2}(\tilde\pi_{\mathrm{nil}})=0 .
 $$</p>
 <p>Hence the exponential is invertible with $B^{2}=0$: for every $t$ it lies in the N-regular, spectrally degenerate sector $\Sigma_{10}$ (at $t=0$ it is $e_t$). The element flow moves one wall away: it removes the norm degeneration and preserves the spectral one. Its two-sided operator is</p>
 <p>$$
-\mathrm{Sd}_{\exp(t\tilde\nu)}
+\mathrm{Sd}_{\exp(t\tilde\pi_{\mathrm{nil}})}
 =\exp\bigl(t\mathrm{Sd}_{\tilde Q}\bigr),
 $$</p>
 <p>a unipotent Lorentz flow of Jordan type $2+1+1$. It fixes the kernel hyperplane and shears along the single chain. The generator $\mathrm{Sd}_{\tilde Q}$ is singular; the one-parameter group it generates is invertible.</p>
@@ -587,7 +587,7 @@ $$</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <p>Two examples on each stratum.</p>
 <h3 id="example-1-a-hermitian-idempotent">Example 1: a Hermitian idempotent</h3>
-<p>Take $\tilde Q=e_t+i\vec e_x$. Then $c=2$, $\tilde\Pi=(e_t+i\vec e_x)/2$, $\kappa=1$, $a=1$, $P=\tilde\Pi$, and $\tilde Q_H=\tilde Q$, $\tilde Q_0=\tilde\Pi$. The two-sided operator is $\mathrm{Sd}_{\tilde Q}=4\mathrm{Sd}_{\tilde\Pi}$, with rank one, eigenvalue $4$, singular value $4$, and image the line $\mathbb{C}\tilde Q$. In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$,</p>
+<p>Take $\tilde Q=e_t+i\vec e_x$. Then $c=2$, $\tilde\Pi_{\mathrm{id}}=(e_t+i\vec e_x)/2$, $\kappa=1$, $a=1$, $P=\tilde\Pi_{\mathrm{id}}$, and $\tilde Q_H=\tilde Q$, $\tilde Q_0=\tilde\Pi_{\mathrm{id}}$. The two-sided operator is $\mathrm{Sd}_{\tilde Q}=4\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}$, with rank one, eigenvalue $4$, singular value $4$, and image the line $\mathbb{C}\tilde Q$. In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$,</p>
 <p>$$
 \mathsf M\bigl(\mathrm{Sd}_{\tilde Q}\bigr)=
 \begin{pmatrix}
@@ -599,7 +599,7 @@ $$</p>
 $$</p>
 <p>with trace $4$, rank one and square $\mathrm{Sd}_{\tilde Q}^{2}=4\mathrm{Sd}_{\tilde Q}$. The exponential is</p>
 <p>$$
-\exp\bigl(t\mathrm{Sd}_{\tilde Q}\bigr)=I+\bigl(e^{4t}-1\bigr)\mathrm{Sd}_{\tilde\Pi}.
+\exp\bigl(t\mathrm{Sd}_{\tilde Q}\bigr)=I+\bigl(e^{4t}-1\bigr)\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}.
 $$</p>
 <h3 id="example-2-a-non-hermitian-idempotent">Example 2: a non-Hermitian idempotent</h3>
 <p>Take $\tilde Q=e_t+\vec e_x+i\sqrt2\,\vec e_z$. Then $c=2$, $\kappa=2$, $a=\sqrt2$, $\tilde{Ζ}=\vec e_x+i\sqrt2\,\vec e_z$, and</p>
@@ -610,17 +610,17 @@ P=\frac12 e_t-\frac{i\sqrt2}{4}\vec e_y+\frac{i\sqrt2}{4}\vec e_z,
 \qquad
 \tilde Q_0=\frac{\sqrt2}{4}e_t+\frac{\sqrt2}{4}\vec e_x+\frac{i}{2}\vec e_z .
 $$</p>
-<p>The two-sided operator is $\mathrm{Sd}_{\tilde Q}=4\mathrm{Sd}_{\tilde\Pi}$, with rank one, eigenvalue $4$, and singular value $8$. The eigenvalue-to-singular-value ratio is $\tfrac12=\cos^{2}\theta$, because $\cos\theta=1/\sqrt2$. The image is the null line $\mathbb{C}P$, with $P\neq\tilde\Pi$; the two-sided operator is not self-adjoint, and its Peirce matrix in the spectral basis is not diagonal. The example shows the difference between the eigenvalue $\lvert c\rvert^{2}$ and the singular value $4a^{2}$ for an oblique idempotent.</p>
+<p>The two-sided operator is $\mathrm{Sd}_{\tilde Q}=4\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}$, with rank one, eigenvalue $4$, and singular value $8$. The eigenvalue-to-singular-value ratio is $\tfrac12=\cos^{2}\theta$, because $\cos\theta=1/\sqrt2$. The image is the null line $\mathbb{C}P$, with $P\neq\tilde\Pi_{\mathrm{id}}$; the two-sided operator is not self-adjoint, and its Peirce matrix in the spectral basis is not diagonal. The example shows the difference between the eigenvalue $\lvert c\rvert^{2}$ and the singular value $4a^{2}$ for an oblique idempotent.</p>
 <h3 id="example-3-the-standard-nilpotent">Example 3: the standard nilpotent</h3>
 <p>Take</p>
 <p>$$
-\tilde\nu=\vec e_x+i\vec e_y .
+\tilde\pi_{\mathrm{nil}}=\vec e_x+i\vec e_y .
 $$</p>
 <p>Then $a=1$, $\vec c=\vec e_z$, and</p>
 <p>$$
-\tilde\Pi_+=\frac{e_t+i\vec e_z}{2},
+\tilde\Pi_{\mathrm{id},+}=\frac{e_t+i\vec e_z}{2},
 \qquad
-\tilde\Pi_-=\frac{e_t-i\vec e_z}{2},
+\tilde\Pi_{\mathrm{id},-}=\frac{e_t-i\vec e_z}{2},
 \qquad
 \tilde Q_H=e_t+i\vec e_z,
 \qquad
@@ -628,7 +628,7 @@ $$</p>
 $$</p>
 <p>The matrix model is</p>
 <p>$$
-\mathsf M_2(\tilde\nu)=
+\mathsf M_2(\tilde\pi_{\mathrm{nil}})=
 \begin{pmatrix}0&-2i\\0&0\end{pmatrix},
 \qquad
 \mathsf M_2(\tilde Q_H)=
@@ -639,7 +639,7 @@ $$</p>
 $$</p>
 <p>In the standard basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the two-sided operator is</p>
 <p>$$
-\mathsf M\bigl(\mathrm{Sd}_{\tilde\nu}\bigr)=
+\mathsf M\bigl(\mathrm{Sd}_{\tilde\pi_{\mathrm{nil}}}\bigr)=
 \begin{pmatrix}
 2&0&0&2i\\
 0&0&0&0\\
@@ -647,18 +647,18 @@ $$</p>
 2i&0&0&-2
 \end{pmatrix},
 $$</p>
-<p>with trace zero, rank one and square zero. The image is the line $\mathbb{C}(e_t+i\vec e_z)=\mathbb{C}\tilde\Pi_+$; the first column is $2(e_t+i\vec e_z)=4\tilde\Pi_+$.</p>
+<p>with trace zero, rank one and square zero. The image is the line $\mathbb{C}(e_t+i\vec e_z)=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$; the first column is $2(e_t+i\vec e_z)=4\tilde\Pi_{\mathrm{id},+}$.</p>
 <p>For the Peirce form, take</p>
 <p>$$
 \vec X=\frac{-\vec e_x+i\vec e_y}{4},
 \qquad
-\tilde\nu\vec X=\tilde\Pi_+,
+\tilde\pi_{\mathrm{nil}}\vec X=\tilde\Pi_{\mathrm{id},+},
 \qquad
-\vec X\tilde\nu=\tilde\Pi_- .
+\vec X\tilde\pi_{\mathrm{nil}}=\tilde\Pi_{\mathrm{id},-} .
 $$</p>
-<p>In the basis $(\tilde\Pi_+,\tilde\nu,\vec X,\tilde\Pi_-)$,</p>
+<p>In the basis $(\tilde\Pi_{\mathrm{id},+},\tilde\pi_{\mathrm{nil}},\vec X,\tilde\Pi_{\mathrm{id},-})$,</p>
 <p>$$
-\mathsf M\bigl(\mathrm{Sd}_{\tilde\nu}\bigr)=
+\mathsf M\bigl(\mathrm{Sd}_{\tilde\pi_{\mathrm{nil}}}\bigr)=
 \begin{pmatrix}
 0&0&0&4\\
 0&0&0&0\\
@@ -666,14 +666,14 @@ $$</p>
 0&0&0&0
 \end{pmatrix},
 $$</p>
-<p>the single chain being $\tilde\Pi_-\to4\tilde\Pi_+\to0$. The exponential is</p>
+<p>the single chain being $\tilde\Pi_{\mathrm{id},-}\to4\tilde\Pi_{\mathrm{id},+}\to0$. The exponential is</p>
 <p>$$
-\exp\bigl(t\mathrm{Sd}_{\tilde\nu}\bigr)=I+t\mathrm{Sd}_{\tilde\nu}.
+\exp\bigl(t\mathrm{Sd}_{\tilde\pi_{\mathrm{nil}}}\bigr)=I+t\mathrm{Sd}_{\tilde\pi_{\mathrm{nil}}}.
 $$</p>
 <h3 id="example-4-a-complex-scalar-multiple">Example 4: a complex scalar multiple</h3>
 <p>For</p>
 <p>$$
-\tilde\nu=c_0(\vec e_x+i\vec e_y),
+\tilde\pi_{\mathrm{nil}}=c_0(\vec e_x+i\vec e_y),
 \qquad
 c_0=\lvert c_0\rvert e^{i\beta},
 $$</p>
@@ -681,7 +681,7 @@ $$</p>
 <p>$$
 \tilde Q_0=e^{i\beta}\frac{\vec e_x+i\vec e_y}{2},
 \qquad
-\mathrm{Sd}_{\tilde\nu}
+\mathrm{Sd}_{\tilde\pi_{\mathrm{nil}}}
 =4\lvert c_0\rvert^{2}\mathrm{Sd}_{\tilde Q_0}.
 $$</p>
 <p>The phase $e^{i\beta}$ cancels in the two-sided operator. The two-sided operator depends only on $\lvert c_0\rvert$ and the canonical pair; the one-sided operator of the companion article keeps the phase.</p>
@@ -701,7 +701,7 @@ $$</p>
 </tr>
 <tr>
 <td>parameter</td>
-<td>$\tilde Q=c\tilde\Pi$, $c=2Q_t\neq0$</td>
+<td>$\tilde Q=c\tilde\Pi_{\mathrm{id}}$, $c=2Q_t\neq0$</td>
 </tr>
 <tr>
 <td>two-sided operator</td>
@@ -709,7 +709,7 @@ $$</p>
 </tr>
 <tr>
 <td>closed form</td>
-<td>$\mathrm{Sd}_{\tilde Q}=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde\Pi}$, $\mathrm{Sd}_{\tilde\Pi}^{2}=\mathrm{Sd}_{\tilde\Pi}$</td>
+<td>$\mathrm{Sd}_{\tilde Q}=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}$, $\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}^{2}=\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}$</td>
 </tr>
 <tr>
 <td>square</td>
@@ -725,7 +725,7 @@ $$</p>
 </tr>
 <tr>
 <td>Jordan form</td>
-<td>diagonal, $\operatorname{diag}(\lvert c\rvert^{2},0,0,0)$; the eigenbasis of $\tilde Q$ diagonalizes it only when $\tilde\Pi$ is Hermitian</td>
+<td>diagonal, $\operatorname{diag}(\lvert c\rvert^{2},0,0,0)$; the eigenbasis of $\tilde Q$ diagonalizes it only when $\tilde\Pi_{\mathrm{id}}$ is Hermitian</td>
 </tr>
 <tr>
 <td>trace</td>
@@ -749,7 +749,7 @@ $$</p>
 </tr>
 <tr>
 <td>kernel</td>
-<td>$\{\tilde X:\tilde\Pi\tilde X\tilde\Pi^{*}=0\}$, a hyperplane</td>
+<td>$\{\tilde X:\tilde\Pi_{\mathrm{id}}\tilde X\tilde\Pi_{\mathrm{id}}^{*}=0\}$, a hyperplane</td>
 </tr>
 <tr>
 <td>scalar collapse</td>
@@ -757,11 +757,11 @@ $$</p>
 </tr>
 <tr>
 <td>exponential</td>
-<td>$\exp(t\mathrm{Sd}_{\tilde Q})=I+(e^{t\lvert c\rvert^{2}}-1)\mathrm{Sd}_{\tilde\Pi}$</td>
+<td>$\exp(t\mathrm{Sd}_{\tilde Q})=I+(e^{t\lvert c\rvert^{2}}-1)\mathrm{Sd}_{\tilde\Pi_{\mathrm{id}}}$</td>
 </tr>
 <tr>
 <td>element flow</td>
-<td>$\exp(t\tilde Q)=e_t+(e^{tc}-1)\tilde\Pi$, a unit in $\Sigma_{11}$ for generic $t\neq0$</td>
+<td>$\exp(t\tilde Q)=e_t+(e^{tc}-1)\tilde\Pi_{\mathrm{id}}$, a unit in $\Sigma_{11}$ for generic $t\neq0$</td>
 </tr>
 </tbody>
 </table></div>
@@ -780,15 +780,15 @@ $$</p>
 </tr>
 <tr>
 <td>parameter</td>
-<td>$\tilde\nu=\vec A+i\vec B$, $\lVert\vec A\rVert=\lVert\vec B\rVert=a>0$, $\vec A\cdot\vec B=0$</td>
+<td>$\tilde\pi_{\mathrm{nil}}=\vec A+i\vec B$, $\lVert\vec A\rVert=\lVert\vec B\rVert=a>0$, $\vec A\cdot\vec B=0$</td>
 </tr>
 <tr>
 <td>canonical pair</td>
-<td>$\tilde\Pi_\pm=(e_t\pm i\vec c)/2$, $\vec c=\vec A\times\vec B/a^{2}$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}=(e_t\pm i\vec c)/2$, $\vec c=\vec A\times\vec B/a^{2}$</td>
 </tr>
 <tr>
 <td>polar pair</td>
-<td>$\tilde Q_H=2a\tilde\Pi_+$, $\tilde Q_0=\tilde\nu/(2a)$, $\tilde Q_0^{2}=0$</td>
+<td>$\tilde Q_H=2a\tilde\Pi_{\mathrm{id},+}$, $\tilde Q_0=\tilde\pi_{\mathrm{nil}}/(2a)$, $\tilde Q_0^{2}=0$</td>
 </tr>
 <tr>
 <td>two-sided operator</td>
@@ -828,15 +828,15 @@ $$</p>
 </tr>
 <tr>
 <td>image</td>
-<td>the null line $\mathbb{C}\tilde\Pi_+$</td>
+<td>the null line $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$</td>
 </tr>
 <tr>
 <td>kernel</td>
-<td>$\{\tilde X:\tilde\nu\tilde X\tilde\nu^{*}=0\}$, a hyperplane</td>
+<td>$\{\tilde X:\tilde\pi_{\mathrm{nil}}\tilde X\tilde\pi_{\mathrm{nil}}^{*}=0\}$, a hyperplane</td>
 </tr>
 <tr>
 <td>chain</td>
-<td>$\tilde\Pi_-\mapsto4a^{2}\tilde\Pi_+\mapsto0$</td>
+<td>$\tilde\Pi_{\mathrm{id},-}\mapsto4a^{2}\tilde\Pi_{\mathrm{id},+}\mapsto0$</td>
 </tr>
 <tr>
 <td>scalar collapse</td>
@@ -848,7 +848,7 @@ $$</p>
 </tr>
 <tr>
 <td>element flow</td>
-<td>$\exp(t\tilde\nu)=e_t+t\tilde\nu$, a unit in $\Sigma_{10}$ for every $t$ (at $t=0$ it is $e_t$)</td>
+<td>$\exp(t\tilde\pi_{\mathrm{nil}})=e_t+t\tilde\pi_{\mathrm{nil}}$, a unit in $\Sigma_{10}$ for every $t$ (at $t=0$ it is $e_t$)</td>
 </tr>
 </tbody>
 </table></div>
@@ -857,9 +857,9 @@ $$</p>
 <ul>
 <li>The norm degeneration fixes the rank: on the null cone the two-sided operator has rank one, its image is a single null line, and its kernel has dimension three.</li>
 <li>On $\Sigma_{01}$ the operator is $\lvert c\rvert^{2}=4a^{2}\cos^{2}\theta$ times a projection, with spectrum $\{\lvert c\rvert^{2},0,0,0\}$ and no defect.</li>
-<li>On $\Sigma_{00}$ the operator is square-zero, $\mathrm{Sd}_{\tilde\nu}^{2}=0$, with the single eigenvalue zero, one Jordan block of size two and two fixed zero directions: the maximal collapse.</li>
+<li>On $\Sigma_{00}$ the operator is square-zero, $\mathrm{Sd}_{\tilde\pi_{\mathrm{nil}}}^{2}=0$, with the single eigenvalue zero, one Jordan block of size two and two fixed zero directions: the maximal collapse.</li>
 <li>The singular value $4a^{2}$ is the square of the one-sided singular value $2a$, and it is independent of the phase.</li>
-<li>The polar decomposition of the operator is the congruence of the polar decomposition of the element; the positive factor is $4a^{2}\mathrm{Sd}_P$ or $4a^{2}\mathrm{Sd}_{\tilde\Pi_+}$.</li>
+<li>The polar decomposition of the operator is the congruence of the polar decomposition of the element; the positive factor is $4a^{2}\mathrm{Sd}_P$ or $4a^{2}\mathrm{Sd}_{\tilde\Pi_{\mathrm{id},+}}$.</li>
 <li>The phase and the sign cancel: the two-sided operator sees only $\lvert c\rvert^{2}$ and the canonical pair.</li>
 <li>The two slots survive as the singular vectors; their overlap $1/\sqrt{\kappa}$ vanishes exactly at the wall $\Sigma_{00}$.</li>
 </ul>
@@ -877,7 +877,7 @@ $$</p>
 <td>the quaternionic norm $Q_t^{2}+B^{2}$, zero on the null cone, and the Hermitian norm $\operatorname{Sc}(\tilde Q\tilde Q^{*})$, positive there</td>
 </tr>
 <tr>
-<td>$\tilde Q=c\tilde\Pi$</td>
+<td>$\tilde Q=c\tilde\Pi_{\mathrm{id}}$</td>
 <td>an element of $\Sigma_{01}$</td>
 </tr>
 <tr>
@@ -885,7 +885,7 @@ $$</p>
 <td>the two-sided operator $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{*}$</td>
 </tr>
 <tr>
-<td>$\kappa=2\langle\tilde\Pi\rangle_{*}$</td>
+<td>$\kappa=2\langle\tilde\Pi_{\mathrm{id}}\rangle_{*}$</td>
 <td>the obliqueness, $\kappa\ge1$</td>
 </tr>
 <tr>
@@ -917,7 +917,7 @@ $$</p>
 <td>the angle between the slots, $\cos\theta=1/\sqrt{\kappa}$</td>
 </tr>
 <tr>
-<td>$\tilde\nu=\vec A+i\vec B$</td>
+<td>$\tilde\pi_{\mathrm{nil}}=\vec A+i\vec B$</td>
 <td>a non-zero element of $\Sigma_{00}$</td>
 </tr>
 <tr>
@@ -929,24 +929,24 @@ $$</p>
 <td>the unit spectral direction</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm=(e_t\pm i\vec c)/2$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}=(e_t\pm i\vec c)/2$</td>
 <td>the canonical Hermitian idempotents</td>
 </tr>
 <tr>
-<td>$\tilde Q_H=2a\tilde\Pi_+$</td>
+<td>$\tilde Q_H=2a\tilde\Pi_{\mathrm{id},+}$</td>
 <td>the Hermitian factor</td>
 </tr>
 <tr>
-<td>$\tilde Q_0=\tilde\nu/(2a)$</td>
+<td>$\tilde Q_0=\tilde\pi_{\mathrm{nil}}/(2a)$</td>
 <td>the nilpotent partial-isometry factor</td>
 </tr>
 <tr>
-<td>$L_{\tilde\nu},R_{\tilde\nu}$</td>
+<td>$L_{\tilde\pi_{\mathrm{nil}}},R_{\tilde\pi_{\mathrm{nil}}}$</td>
 <td>the one-sided operators of the companion article</td>
 </tr>
 <tr>
 <td>$\vec X$</td>
-<td>a normalized corner vector, $\tilde\nu\vec X=\tilde\Pi_+$</td>
+<td>a normalized corner vector, $\tilde\pi_{\mathrm{nil}}\vec X=\tilde\Pi_{\mathrm{id},+}$</td>
 </tr>
 <tr>
 <td>$J_2(0)$</td>

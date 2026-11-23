@@ -71,137 +71,137 @@
       <div class="article-body">
         <h1 id="the-companion-nilpotents-of-the-biquaternion-algebra"><strong>The Companion Nilpotents of the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>An idempotent $\tilde\Pi$ cuts the algebra into four corners, and two of them are made of elements whose square is zero. For the biquaternion algebra at a unit real axis the two square-zero corners are one-dimensional, and the elements that span them are the <strong>companion nilpotents</strong>. They are the off-diagonal parts of a biquaternion written in the Peirce basis, they multiply the two idempotents into each other, and they carry the whole of the vector information that the idempotents do not carry.</p>
+<p>An idempotent $\tilde\Pi_{\mathrm{id}}$ cuts the algebra into four corners, and two of them are made of elements whose square is zero. For the biquaternion algebra at a unit real axis the two square-zero corners are one-dimensional, and the elements that span them are the <strong>companion nilpotents</strong>. They are the off-diagonal parts of a biquaternion written in the Peirce basis, they multiply the two idempotents into each other, and they carry the whole of the vector information that the idempotents do not carry.</p>
 <p>This article defines the companion corner, computes the two nilpotents at an axis, gives the multiplication table of the four corners, writes the Peirce coordinates of a general element, and gives the linear functional that governs the products in the corner where the idempotent sits.</p>
 <p>The idempotents are <em>The Minimal Left Ideals of the Biquaternion Algebra</em> and <em>The Square Roots of One and the Idempotents of the Biquaternion Algebra</em>; the Peirce decomposition in general is <em>Peirce Decompositions of the Biquaternion Algebra</em>; the basis adapted to a pair of idempotents is <em>The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra</em>; and the reading of a general element in that basis is <em>The Special Decomposition of a Biquaternion under a Peirce Basis</em>.</p>
 <p>Nothing below is a statement of physics. The axis $\vec u$ is a unit real vector, $\vec a,\vec b$ complete it to a right-handed orthonormal triple, and the elements are written $\tilde Q$ with coefficients $Q_t,Q_x,Q_y,Q_z$.</p>
 <h2 id="the-companion-corner">The Companion Corner</h2>
-<p><strong>Definition (the corners).</strong> Let $\tilde\Pi$ be an idempotent with complement $\tilde\Pi'=e_t-\tilde\Pi$. The <strong>Peirce corners</strong> of $\tilde\Pi$ are the four subspaces</p>
+<p><strong>Definition (the corners).</strong> Let $\tilde\Pi_{\mathrm{id}}$ be an idempotent with complement $\tilde\Pi_{\mathrm{id}}'=e_t-\tilde\Pi_{\mathrm{id}}$. The <strong>Peirce corners</strong> of $\tilde\Pi_{\mathrm{id}}$ are the four subspaces</p>
 <p>$$
-\tilde\Pi\mathbb{B}\tilde\Pi,\qquad \tilde\Pi\mathbb{B}\tilde\Pi',\qquad \tilde\Pi'\mathbb{B}\tilde\Pi,\qquad \tilde\Pi'\mathbb{B}\tilde\Pi',
+\tilde\Pi_{\mathrm{id}}\mathbb{B}\tilde\Pi_{\mathrm{id}},\qquad \tilde\Pi_{\mathrm{id}}\mathbb{B}\tilde\Pi_{\mathrm{id}}',\qquad \tilde\Pi_{\mathrm{id}}'\mathbb{B}\tilde\Pi_{\mathrm{id}},\qquad \tilde\Pi_{\mathrm{id}}'\mathbb{B}\tilde\Pi_{\mathrm{id}}',
 $$</p>
-<p>and the <strong>companion corner</strong> of $\tilde\Pi$ is $\tilde\Pi'\mathbb{B}\tilde\Pi$, the part that a left multiplication by $\tilde\Pi$ kills and a right multiplication by $\tilde\Pi$ keeps.</p>
-<p><strong>Proposition (the corners are square-zero off the diagonal).</strong> If $x\in\tilde\Pi\mathbb{B}\tilde\Pi'$ then $x^{2}=0$; likewise for $x\in\tilde\Pi'\mathbb{B}\tilde\Pi$. The two diagonal corners are subalgebras with units $\tilde\Pi$ and $\tilde\Pi'$.</p>
-<p><em>Proof.</em> For $x=\tilde\Pi a\tilde\Pi'$ one has $x^{2}=\tilde\Pi a\tilde\Pi'\tilde\Pi a\tilde\Pi'=0$ because $\tilde\Pi'\tilde\Pi=0$. A diagonal corner is closed because $\tilde\Pi a\tilde\Pi\tilde\Pi b\tilde\Pi=\tilde\Pi(ab)\tilde\Pi$, and $\tilde\Pi$ is its unit.</p>
-<p><strong>Definition (companion nilpotent).</strong> A <strong>companion nilpotent</strong> of the idempotent $\tilde\Pi$ is a nonzero element of one of the two square-zero corners.</p>
-<p><strong>Remark (why the name).</strong> The nilpotent is the companion of the idempotent in the following sense: the idempotent names a line, the nilpotent names the direction in which the line is deformed, and together they generate a two-dimensional algebra of matrices, the corner $\tilde\Pi\mathbb{B}\tilde\Pi$ plus the nilpotent and its conjugate. The pair is the smallest Peirce datum the algebra admits.</p>
+<p>and the <strong>companion corner</strong> of $\tilde\Pi_{\mathrm{id}}$ is $\tilde\Pi_{\mathrm{id}}'\mathbb{B}\tilde\Pi_{\mathrm{id}}$, the part that a left multiplication by $\tilde\Pi_{\mathrm{id}}$ kills and a right multiplication by $\tilde\Pi_{\mathrm{id}}$ keeps.</p>
+<p><strong>Proposition (the corners are square-zero off the diagonal).</strong> If $x\in\tilde\Pi_{\mathrm{id}}\mathbb{B}\tilde\Pi_{\mathrm{id}}'$ then $x^{2}=0$; likewise for $x\in\tilde\Pi_{\mathrm{id}}'\mathbb{B}\tilde\Pi_{\mathrm{id}}$. The two diagonal corners are subalgebras with units $\tilde\Pi_{\mathrm{id}}$ and $\tilde\Pi_{\mathrm{id}}'$.</p>
+<p><em>Proof.</em> For $x=\tilde\Pi_{\mathrm{id}} a\tilde\Pi_{\mathrm{id}}'$ one has $x^{2}=\tilde\Pi_{\mathrm{id}} a\tilde\Pi_{\mathrm{id}}'\tilde\Pi_{\mathrm{id}} a\tilde\Pi_{\mathrm{id}}'=0$ because $\tilde\Pi_{\mathrm{id}}'\tilde\Pi_{\mathrm{id}}=0$. A diagonal corner is closed because $\tilde\Pi_{\mathrm{id}} a\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}} b\tilde\Pi_{\mathrm{id}}=\tilde\Pi_{\mathrm{id}}(ab)\tilde\Pi_{\mathrm{id}}$, and $\tilde\Pi_{\mathrm{id}}$ is its unit.</p>
+<p><strong>Definition (companion nilpotent).</strong> A <strong>companion nilpotent</strong> of the idempotent $\tilde\Pi_{\mathrm{id}}$ is a nonzero element of one of the two square-zero corners.</p>
+<p><strong>Remark (why the name).</strong> The nilpotent is the companion of the idempotent in the following sense: the idempotent names a line, the nilpotent names the direction in which the line is deformed, and together they generate a two-dimensional algebra of matrices, the corner $\tilde\Pi_{\mathrm{id}}\mathbb{B}\tilde\Pi_{\mathrm{id}}$ plus the nilpotent and its conjugate. The pair is the smallest Peirce datum the algebra admits.</p>
 <h2 id="the-two-nilpotents-at-an-axis">The Two Nilpotents at an Axis</h2>
-<p><strong>Definition.</strong> For a unit real $\vec u$ and the idempotents $\tilde\Pi_{\pm}(\vec u)=\tfrac12(e_t\pm i\vec u)$,</p>
+<p><strong>Definition.</strong> For a unit real $\vec u$ and the idempotents $\tilde\Pi_{\mathrm{id},\pm}(\vec u)=\tfrac12(e_t\pm i\vec u)$,</p>
 <p>$$
-\vec\Upsilon_{-+}(\vec u)=\tfrac12\bigl(i\vec a+\vec b\bigr),\qquad
-\vec\Upsilon_{+-}(\vec u)=\tfrac12\bigl(i\vec a-\vec b\bigr),
+\vec\Pi_{\mathrm{nil},-+}(\vec u)=\tfrac12\bigl(i\vec a+\vec b\bigr),\qquad
+\vec\Pi_{\mathrm{nil},+-}(\vec u)=\tfrac12\bigl(i\vec a-\vec b\bigr),
 $$</p>
 <p>where $\vec a,\vec b$ are unit real vectors completing $\vec u$ to a right-handed orthonormal triple.</p>
 <p><strong>Proposition (the four relations).</strong></p>
 <p>$$
-\vec\Upsilon_{-+}^{2}=0,\qquad \vec\Upsilon_{+-}^{2}=0,\qquad
-\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_{-},\qquad
-\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_{+}.
+\vec\Pi_{\mathrm{nil},-+}^{2}=0,\qquad \vec\Pi_{\mathrm{nil},+-}^{2}=0,\qquad
+\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}=\tilde\Pi_{\mathrm{id},-},\qquad
+\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}=\tilde\Pi_{\mathrm{id},+}.
 $$</p>
-<p><em>Proof.</em> Write $\vec\Upsilon_{-+}=\tfrac12(i\vec a+\vec b)$ and square, using $\vec a^{2}=\vec b^{2}=-e_t$ and $\vec a\vec b+\vec b\vec a=0$ for orthogonal vectors: the two cross terms cancel and the two squares sum to zero. For the products, $\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tfrac14(i\vec a+\vec b)(i\vec a-\vec b)=\tfrac14\bigl(2e_t-i[\vec a,\vec b]\bigr)$, and $[\vec a,\vec b]=2\vec u$ for a right-handed orthonormal triple, so the product is $\tfrac12(e_t-i\vec u)=\tilde\Pi_{-}$. The other order reverses the sign of the bracket and gives $\tilde\Pi_{+}$.</p>
+<p><em>Proof.</em> Write $\vec\Pi_{\mathrm{nil},-+}=\tfrac12(i\vec a+\vec b)$ and square, using $\vec a^{2}=\vec b^{2}=-e_t$ and $\vec a\vec b+\vec b\vec a=0$ for orthogonal vectors: the two cross terms cancel and the two squares sum to zero. For the products, $\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}=\tfrac14(i\vec a+\vec b)(i\vec a-\vec b)=\tfrac14\bigl(2e_t-i[\vec a,\vec b]\bigr)$, and $[\vec a,\vec b]=2\vec u$ for a right-handed orthonormal triple, so the product is $\tfrac12(e_t-i\vec u)=\tilde\Pi_{\mathrm{id},-}$. The other order reverses the sign of the bracket and gives $\tilde\Pi_{\mathrm{id},+}$.</p>
 <p><strong>Example (the model pair).</strong> At $\vec u=\vec e_z$,</p>
 <p>$$
-\tilde\Pi_{+}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\quad
-\tilde\Pi_{-}=\begin{pmatrix}0&0\\0&1\end{pmatrix},\quad
-\vec\Upsilon_{-+}=\begin{pmatrix}0&0\\1&0\end{pmatrix},\quad
-\vec\Upsilon_{+-}=\begin{pmatrix}0&1\\0&0\end{pmatrix},
+\tilde\Pi_{\mathrm{id},+}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\quad
+\tilde\Pi_{\mathrm{id},-}=\begin{pmatrix}0&0\\0&1\end{pmatrix},\quad
+\vec\Pi_{\mathrm{nil},-+}=\begin{pmatrix}0&0\\1&0\end{pmatrix},\quad
+\vec\Pi_{\mathrm{nil},+-}=\begin{pmatrix}0&1\\0&0\end{pmatrix},
 $$</p>
 <p>the four matrix units of $M_2(\mathbb{C})$ in the Pauli representation.</p>
-<p><strong>Remark (the nilpotents are not in the ideals they generate).</strong> $\vec\Upsilon_{+-}$ lies in $S_{-}=\mathbb{B}\tilde\Pi_{-}$ and $\vec\Upsilon_{-+}$ lies in $S_{+}=\mathbb{B}\tilde\Pi_{+}$; the two nilpotents are the second vector of the two bases of <em>The Minimal Left Ideals of the Biquaternion Algebra</em>, and neither is a multiple of an idempotent.</p>
-<p><strong>Remark (the isotropic reading).</strong> The four elements $\tilde\Pi_{+},\vec\Upsilon_{-+},\vec\Upsilon_{+-},\tilde\Pi_{-}$ all have vanishing norm, since each is a rank-one matrix in the model and the norm is the determinant; the two nilpotents are nilpotent in the algebra itself, $(\cdot)^{2}=0$, while the two idempotents are not. The isotropic cone therefore contains the whole Peirce basis, and the nilpotency separates the two pairs inside it.</p>
+<p><strong>Remark (the nilpotents are not in the ideals they generate).</strong> $\vec\Pi_{\mathrm{nil},+-}$ lies in $S_{-}=\mathbb{B}\tilde\Pi_{\mathrm{id},-}$ and $\vec\Pi_{\mathrm{nil},-+}$ lies in $S_{+}=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$; the two nilpotents are the second vector of the two bases of <em>The Minimal Left Ideals of the Biquaternion Algebra</em>, and neither is a multiple of an idempotent.</p>
+<p><strong>Remark (the isotropic reading).</strong> The four elements $\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-+},\vec\Pi_{\mathrm{nil},+-},\tilde\Pi_{\mathrm{id},-}$ all have vanishing norm, since each is a rank-one matrix in the model and the norm is the determinant; the two nilpotents are nilpotent in the algebra itself, $(\cdot)^{2}=0$, while the two idempotents are not. The isotropic cone therefore contains the whole Peirce basis, and the nilpotency separates the two pairs inside it.</p>
 <h2 id="the-multiplication-table-of-the-four-corners">The Multiplication Table of the Four Corners</h2>
-<p><strong>Theorem.</strong> At the axis $\vec u$, with the basis ordered $\tilde\Pi_{+},\vec\Upsilon_{-+},\vec\Upsilon_{+-},\tilde\Pi_{-}$, the multiplication is</p>
+<p><strong>Theorem.</strong> At the axis $\vec u$, with the basis ordered $\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-+},\vec\Pi_{\mathrm{nil},+-},\tilde\Pi_{\mathrm{id},-}$, the multiplication is</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>$\cdot$</th>
-<th>$\tilde\Pi_{+}$</th>
-<th>$\vec\Upsilon_{-+}$</th>
-<th>$\vec\Upsilon_{+-}$</th>
-<th>$\tilde\Pi_{-}$</th>
+<th>$\tilde\Pi_{\mathrm{id},+}$</th>
+<th>$\vec\Pi_{\mathrm{nil},-+}$</th>
+<th>$\vec\Pi_{\mathrm{nil},+-}$</th>
+<th>$\tilde\Pi_{\mathrm{id},-}$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde\Pi_{+}$</td>
-<td>$\tilde\Pi_{+}$</td>
+<td>$\tilde\Pi_{\mathrm{id},+}$</td>
+<td>$\tilde\Pi_{\mathrm{id},+}$</td>
 <td>$0$</td>
-<td>$\vec\Upsilon_{+-}$</td>
-<td>$0$</td>
-</tr>
-<tr>
-<td>$\vec\Upsilon_{-+}$</td>
-<td>$\vec\Upsilon_{-+}$</td>
-<td>$0$</td>
-<td>$\tilde\Pi_{-}$</td>
+<td>$\vec\Pi_{\mathrm{nil},+-}$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$\vec\Upsilon_{+-}$</td>
+<td>$\vec\Pi_{\mathrm{nil},-+}$</td>
+<td>$\vec\Pi_{\mathrm{nil},-+}$</td>
 <td>$0$</td>
-<td>$\tilde\Pi_{+}$</td>
+<td>$\tilde\Pi_{\mathrm{id},-}$</td>
 <td>$0$</td>
-<td>$\vec\Upsilon_{+-}$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_{-}$</td>
+<td>$\vec\Pi_{\mathrm{nil},+-}$</td>
 <td>$0$</td>
-<td>$\vec\Upsilon_{-+}$</td>
+<td>$\tilde\Pi_{\mathrm{id},+}$</td>
 <td>$0$</td>
-<td>$\tilde\Pi_{-}$</td>
+<td>$\vec\Pi_{\mathrm{nil},+-}$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_{\mathrm{id},-}$</td>
+<td>$0$</td>
+<td>$\vec\Pi_{\mathrm{nil},-+}$</td>
+<td>$0$</td>
+<td>$\tilde\Pi_{\mathrm{id},-}$</td>
 </tr>
 </tbody>
 </table></div>
-<p><em>Proof.</em> Read off the matrix units of the model, or compute from the relation $\tilde\Pi_{+}\vec e_k\tilde\Pi_{+}=\lambda_k\tilde\Pi_{+}$ and the definition of the nilpotents. Each row and each column has one nonzero entry in each diagonal corner and one in an off-diagonal corner, which is the Peirce rule.</p>
-<p><strong>Corollary (the four corners).</strong> $\tilde\Pi_{+}\mathbb{B}\tilde\Pi_{+}=\mathbb{C}\tilde\Pi_{+}$, $\tilde\Pi_{-}\mathbb{B}\tilde\Pi_{-}=\mathbb{C}\tilde\Pi_{-}$, $\tilde\Pi_{+}\mathbb{B}\tilde\Pi_{-}=\mathbb{C}\vec\Upsilon_{+-}$, $\tilde\Pi_{-}\mathbb{B}\tilde\Pi_{+}=\mathbb{C}\vec\Upsilon_{-+}$: four complex lines, that is four complex dimensions and eight real ones, which is the dimension of the algebra.</p>
+<p><em>Proof.</em> Read off the matrix units of the model, or compute from the relation $\tilde\Pi_{\mathrm{id},+}\vec e_k\tilde\Pi_{\mathrm{id},+}=\lambda_k\tilde\Pi_{\mathrm{id},+}$ and the definition of the nilpotents. Each row and each column has one nonzero entry in each diagonal corner and one in an off-diagonal corner, which is the Peirce rule.</p>
+<p><strong>Corollary (the four corners).</strong> $\tilde\Pi_{\mathrm{id},+}\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$, $\tilde\Pi_{\mathrm{id},-}\mathbb{B}\tilde\Pi_{\mathrm{id},-}=\mathbb{C}\tilde\Pi_{\mathrm{id},-}$, $\tilde\Pi_{\mathrm{id},+}\mathbb{B}\tilde\Pi_{\mathrm{id},-}=\mathbb{C}\vec\Pi_{\mathrm{nil},+-}$, $\tilde\Pi_{\mathrm{id},-}\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\vec\Pi_{\mathrm{nil},-+}$: four complex lines, that is four complex dimensions and eight real ones, which is the dimension of the algebra.</p>
 <p><strong>Remark (the table is the matrix algebra).</strong> The table is the table of the four matrix units of $M_2(\mathbb{C})$, written in a basis adapted to the axis. The biquaternion algebra is a full matrix algebra, and the Peirce basis at a real axis is exactly the basis of units; that is the content of the corollary.</p>
 <p><strong>Remark (what the nilpotents do to the vector part).</strong> The two vectors transverse to the axis are carried by the nilpotents and the axis direction by the idempotents:</p>
 <p>$$
-\vec e_x=-i\vec\Upsilon_{-+}-i\vec\Upsilon_{+-},\qquad
-\vec e_y=\vec\Upsilon_{-+}-\vec\Upsilon_{+-},\qquad
-\vec e_z=-i\tilde\Pi_{+}+i\tilde\Pi_{-},
+\vec e_x=-i\vec\Pi_{\mathrm{nil},-+}-i\vec\Pi_{\mathrm{nil},+-},\qquad
+\vec e_y=\vec\Pi_{\mathrm{nil},-+}-\vec\Pi_{\mathrm{nil},+-},\qquad
+\vec e_z=-i\tilde\Pi_{\mathrm{id},+}+i\tilde\Pi_{\mathrm{id},-},
 $$</p>
 <p>so the two vector directions transverse to the axis are carried by the nilpotents and the axis direction by the idempotents.</p>
 <h2 id="peirce-coordinates">Peirce Coordinates</h2>
 <p><strong>Theorem (the coordinates).</strong> Every biquaternion has the unique expansion</p>
 <p>$$
-\tilde Q=\bigl(Q_t-iQ_z\bigr)\tilde\Pi_{+}+\bigl(-iQ_x+Q_y\bigr)\vec\Upsilon_{-+}+\bigl(-iQ_x-Q_y\bigr)\vec\Upsilon_{+-}+\bigl(Q_t+iQ_z\bigr)\tilde\Pi_{-}.
+\tilde Q=\bigl(Q_t-iQ_z\bigr)\tilde\Pi_{\mathrm{id},+}+\bigl(-iQ_x+Q_y\bigr)\vec\Pi_{\mathrm{nil},-+}+\bigl(-iQ_x-Q_y\bigr)\vec\Pi_{\mathrm{nil},+-}+\bigl(Q_t+iQ_z\bigr)\tilde\Pi_{\mathrm{id},-}.
 $$</p>
 <p><em>Proof.</em> The four basis elements $e_t,\vec e_x,\vec e_y,\vec e_z$ expand with the coefficients</p>
 <p>$$
-e_t=\tilde\Pi_{+}+\tilde\Pi_{-},\quad
-\vec e_x=-i\vec\Upsilon_{-+}-i\vec\Upsilon_{+-},\quad
-\vec e_y=\vec\Upsilon_{-+}-\vec\Upsilon_{+-},\quad
-\vec e_z=-i\tilde\Pi_{+}+i\tilde\Pi_{-},
+e_t=\tilde\Pi_{\mathrm{id},+}+\tilde\Pi_{\mathrm{id},-},\quad
+\vec e_x=-i\vec\Pi_{\mathrm{nil},-+}-i\vec\Pi_{\mathrm{nil},+-},\quad
+\vec e_y=\vec\Pi_{\mathrm{nil},-+}-\vec\Pi_{\mathrm{nil},+-},\quad
+\vec e_z=-i\tilde\Pi_{\mathrm{id},+}+i\tilde\Pi_{\mathrm{id},-},
 $$</p>
 <p>and the expansion of a linear combination is the linear combination of the expansions; uniqueness is the independence of the four Peirce elements.</p>
 <p><strong>Corollary (the Peirce components).</strong> With the notation $\tilde Q_{++},\tilde Q_{-+},\tilde Q_{+-},\tilde Q_{--}$ for the four coefficients, $\tilde Q_{++}=Q_t-iQ_z$ and $\tilde Q_{--}=Q_t+iQ_z$ depend only on the scalar part and the axial component, while $\tilde Q_{-+}=-iQ_x+Q_y$ and $\tilde Q_{+-}=-iQ_x-Q_y$ depend only on the two transverse components.</p>
 <p><strong>Remark (what the coordinates separate).</strong> The scalar part and the component along the axis go to the diagonal corners; the two components transverse to the axis go to the off-diagonal corners. The axis is the only direction the diagonal corners see, and the plane perpendicular to it is the only thing the nilpotents see. This is the algebraic content of the split of a four-vector into a time component, an axial component and a transverse plane.</p>
 <h2 id="the-peirce-functional">The Peirce Functional</h2>
-<p><strong>Definition.</strong> The <strong>Peirce functional</strong> at the idempotent $\tilde\Pi_{+}$ is the linear map $\lambda:\mathbb{B}\to\mathbb{C}$ defined by</p>
+<p><strong>Definition.</strong> The <strong>Peirce functional</strong> at the idempotent $\tilde\Pi_{\mathrm{id},+}$ is the linear map $\lambda:\mathbb{B}\to\mathbb{C}$ defined by</p>
 <p>$$
-\tilde\Pi_{+}\tilde Q\tilde\Pi_{+}=\lambda(\tilde Q)\,\tilde\Pi_{+}.
+\tilde\Pi_{\mathrm{id},+}\tilde Q\tilde\Pi_{\mathrm{id},+}=\lambda(\tilde Q)\,\tilde\Pi_{\mathrm{id},+}.
 $$</p>
 <p><strong>Proposition (the values).</strong> At $\vec u=\vec e_z$,</p>
 <p>$$
 \lambda(e_t)=1,\qquad \lambda(\vec e_x)=0,\qquad \lambda(\vec e_y)=0,\qquad \lambda(\vec e_z)=-i,
 $$</p>
 <p>so that $\lambda(\tilde Q)=Q_t-iQ_z$; the functional is $\mathbb{C}$-linear, $\lambda(i\tilde Q)=i\lambda(\tilde Q)$, and its kernel is the three-dimensional complex subspace of the elements with $Q_t=iQ_z$.</p>
-<p><em>Proof.</em> Multiply the four basis elements on both sides by $\tilde\Pi_{+}$ and use the table; the values follow, and the linearity is the linearity of the map $\tilde Q\mapsto\tilde\Pi_{+}\tilde Q\tilde\Pi_{+}$ composed with the identification of the corner with $\mathbb{C}$.</p>
+<p><em>Proof.</em> Multiply the four basis elements on both sides by $\tilde\Pi_{\mathrm{id},+}$ and use the table; the values follow, and the linearity is the linearity of the map $\tilde Q\mapsto\tilde\Pi_{\mathrm{id},+}\tilde Q\tilde\Pi_{\mathrm{id},+}$ composed with the identification of the corner with $\mathbb{C}$.</p>
 <p><strong>Proposition (the functional is not multiplicative).</strong> $\lambda(\vec e_x\vec e_y)=\lambda(\vec e_z)=-i$, while $\lambda(\vec e_x)\lambda(\vec e_y)=0$; so $\lambda$ is not an algebra homomorphism.</p>
 <p><em>Proof.</em> $\vec e_x\vec e_y=\vec e_z$ and the values are those of the proposition. The failure is forced: an algebra homomorphism $\mathbb{B}\to\mathbb{C}$ would be a nontrivial two-sided ideal as its kernel, and $\mathbb{B}$ is simple.</p>
-<p><strong>Proposition (the product in a corner ideal).</strong> For $a,b\in\mathbb{B}$ and an idempotent $\tilde\Pi$,</p>
+<p><strong>Proposition (the product in a corner ideal).</strong> For $a,b\in\mathbb{B}$ and an idempotent $\tilde\Pi_{\mathrm{id}}$,</p>
 <p>$$
-a\tilde\Pi\cdot b\tilde\Pi=\lambda_{\tilde\Pi}(b)\,a\tilde\Pi .
+a\tilde\Pi_{\mathrm{id}}\cdot b\tilde\Pi_{\mathrm{id}}=\lambda_{\tilde\Pi_{\mathrm{id}}}(b)\,a\tilde\Pi_{\mathrm{id}} .
 $$</p>
-<p><em>Proof.</em> $a\tilde\Pi b\tilde\Pi=a(\tilde\Pi b\tilde\Pi)=\lambda_{\tilde\Pi}(b)\,a\tilde\Pi$; the product depends on $b$ only through the scalar $\lambda_{\tilde\Pi}(b)$, and on $a$ only through the vector $a\tilde\Pi$.</p>
-<p><strong>Remark (what the functional governs).</strong> Every product inside the ideal $S_{+}=\mathbb{B}\tilde\Pi_{+}$ is governed by the single functional $\lambda$, which is why the ideal, as an algebra under the product, is degenerate: the product of two elements of $S_{+}$ is again in $S_{+}$ only through the scalar $\lambda$. The commutator of two elements of $S_{+}$ is</p>
+<p><em>Proof.</em> $a\tilde\Pi_{\mathrm{id}} b\tilde\Pi_{\mathrm{id}}=a(\tilde\Pi_{\mathrm{id}} b\tilde\Pi_{\mathrm{id}})=\lambda_{\tilde\Pi_{\mathrm{id}}}(b)\,a\tilde\Pi_{\mathrm{id}}$; the product depends on $b$ only through the scalar $\lambda_{\tilde\Pi_{\mathrm{id}}}(b)$, and on $a$ only through the vector $a\tilde\Pi_{\mathrm{id}}$.</p>
+<p><strong>Remark (what the functional governs).</strong> Every product inside the ideal $S_{+}=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ is governed by the single functional $\lambda$, which is why the ideal, as an algebra under the product, is degenerate: the product of two elements of $S_{+}$ is again in $S_{+}$ only through the scalar $\lambda$. The commutator of two elements of $S_{+}$ is</p>
 <p>$$
-[a\tilde\Pi,b\tilde\Pi]=\bigl(\lambda(b)a-\lambda(a)b\bigr)\tilde\Pi,
+[a\tilde\Pi_{\mathrm{id}},b\tilde\Pi_{\mathrm{id}}]=\bigl(\lambda(b)a-\lambda(a)b\bigr)\tilde\Pi_{\mathrm{id}},
 $$</p>
 <p>by the same computation with the two orders subtracted; this is the formula that <em>The Bracket on the Peirce Ideals of the Biquaternion Algebra</em> uses to describe the Lie structure of the carrier.</p>
 <h2 id="summary">Summary</h2>
-<p>An idempotent of $\mathbb{B}$ has four Peirce corners; the two off-diagonal ones are square-zero, and their nonzero elements are the companion nilpotents. At a unit real axis the two nilpotents are $\vec\Upsilon_{-+}=\tfrac12(i\vec a+\vec b)$ and $\vec\Upsilon_{+-}=\tfrac12(i\vec a-\vec b)$, they satisfy $\vec\Upsilon_{-+}^{2}=\vec\Upsilon_{+-}^{2}=0$, $\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_{-}$ and $\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_{+}$, and with the two idempotents they form the four matrix units of the algebra in the Peirce basis.</p>
+<p>An idempotent of $\mathbb{B}$ has four Peirce corners; the two off-diagonal ones are square-zero, and their nonzero elements are the companion nilpotents. At a unit real axis the two nilpotents are $\vec\Pi_{\mathrm{nil},-+}=\tfrac12(i\vec a+\vec b)$ and $\vec\Pi_{\mathrm{nil},+-}=\tfrac12(i\vec a-\vec b)$, they satisfy $\vec\Pi_{\mathrm{nil},-+}^{2}=\vec\Pi_{\mathrm{nil},+-}^{2}=0$, $\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}=\tilde\Pi_{\mathrm{id},-}$ and $\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}=\tilde\Pi_{\mathrm{id},+}$, and with the two idempotents they form the four matrix units of the algebra in the Peirce basis.</p>
 <p>Every biquaternion has a unique Peirce expansion, with the scalar part and the axial component in the diagonal corners and the two transverse components in the off-diagonal ones. The products inside a corner ideal are governed by the Peirce functional $\lambda(\tilde Q)=Q_t-iQ_z$, a complex-linear functional that is not multiplicative, and its failure to be multiplicative is the simplicity of the algebra.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -213,19 +213,19 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde\Pi_{\pm}(\vec u)$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}(\vec u)$</td>
 <td>the idempotents at the axis $\vec u$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi'=e_t-\tilde\Pi$</td>
+<td>$\tilde\Pi_{\mathrm{id}}'=e_t-\tilde\Pi_{\mathrm{id}}$</td>
 <td>the complementary idempotent</td>
 </tr>
 <tr>
-<td>$\tilde\Pi\mathbb{B}\tilde\Pi'$</td>
-<td>a square-zero corner, the companion corner of $\tilde\Pi$</td>
+<td>$\tilde\Pi_{\mathrm{id}}\mathbb{B}\tilde\Pi_{\mathrm{id}}'$</td>
+<td>a square-zero corner, the companion corner of $\tilde\Pi_{\mathrm{id}}$</td>
 </tr>
 <tr>
-<td>$\vec\Upsilon_{-+},\vec\Upsilon_{+-}$</td>
+<td>$\vec\Pi_{\mathrm{nil},-+},\vec\Pi_{\mathrm{nil},+-}$</td>
 <td>the companion nilpotents at the axis</td>
 </tr>
 <tr>
@@ -237,19 +237,19 @@ $$</p>
 <td>the Peirce coordinates in the four corners</td>
 </tr>
 <tr>
-<td>$\lambda_{\tilde\Pi}(\tilde Q)$</td>
-<td>the Peirce functional, defined by $\tilde\Pi\tilde Q\tilde\Pi=\lambda\tilde\Pi$</td>
+<td>$\lambda_{\tilde\Pi_{\mathrm{id}}}(\tilde Q)$</td>
+<td>the Peirce functional, defined by $\tilde\Pi_{\mathrm{id}}\tilde Q\tilde\Pi_{\mathrm{id}}=\lambda\tilde\Pi_{\mathrm{id}}$</td>
 </tr>
 <tr>
-<td>$i\tilde\Pi_{\pm}$</td>
-<td>the isotropic elements of the pair, $(i\tilde\Pi_{\pm})^{2}=0$</td>
+<td>$i\tilde\Pi_{\mathrm{id},\pm}$</td>
+<td>the isotropic elements of the pair, $(i\tilde\Pi_{\mathrm{id},\pm})^{2}=0$</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="the-minimal-left-ideals-of-the-biquaternion-algebra.html">The Minimal Left Ideals of the Biquaternion Algebra</a>, for the ideals, their bases and the sphere of axes</li>
-<li><a href="the-carriers-the-representation-the-spin-and-the-closure.html">From the Spin to the Carriers and the Closures</a>, for the ideals as carriers and for the weight of $\vec\Upsilon_{-+}$</li>
+<li><a href="the-carriers-the-representation-the-spin-and-the-closure.html">From the Spin to the Carriers and the Closures</a>, for the ideals as carriers and for the weight of $\vec\Pi_{\mathrm{nil},-+}$</li>
 <li><a href="the-peirce-decomposition-of-the-biquaternion-algebra.html">Peirce Decompositions of the Biquaternion Algebra</a>, for the Peirce decomposition in the whole algebra</li>
 <li><a href="the-peirce-basis-of-the-biquaternion-algebra.html">The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra</a>, for the basis of the four corners</li>
 <li><a href="the-special-decomposition-of-a-biquaternion-under-a-peirce-basis.html">The Special Decomposition of a Biquaternion under a Peirce Basis</a>, for the reading of an element in that basis</li>

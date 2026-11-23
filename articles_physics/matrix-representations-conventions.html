@@ -466,21 +466,21 @@ and the coefficients $Q_\mu P_\nu$ of a two-sided operator are the same sixteen 
 <h3 id="the-peirce-frame">The Peirce Frame</h3>
 <p><strong>The two idempotents and the two mixed units.</strong> The standard pair is
 $$
-\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
-\tilde\Pi_+^2=\tilde\Pi_+,\quad \tilde\Pi_-^2=\tilde\Pi_-,\quad \tilde\Pi_+\tilde\Pi_-=0,\quad \tilde\Pi_++\tilde\Pi_-=e_t,
+\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z),\qquad
+\tilde\Pi_{\mathrm{id},+}^2=\tilde\Pi_{\mathrm{id},+},\quad \tilde\Pi_{\mathrm{id},-}^2=\tilde\Pi_{\mathrm{id},-},\quad \tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0,\quad \tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t,
 $$
 and its two mixed units are
 $$
-\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y),\qquad
-\vec\Upsilon_\pm^2=0,\quad \vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\quad \vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+ .
+\vec\Pi_{\mathrm{nil},\pm}=\tfrac12(i\vec e_x\pm\vec e_y),\qquad
+\vec\Pi_{\mathrm{nil},\pm}^2=0,\quad \vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-},\quad \vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+} .
 $$
-So $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ is a Peirce basis, and the frame is that basis in that order: the two elements of $\mathbb{B}\tilde\Pi_+$ first and those of $\mathbb{B}\tilde\Pi_-$ second. The Peirce convention fixes no family (<em>Special Element and Peirce Conventions</em>, §<em>The Biquaternion Peirce Convention</em>); the choice here is not a preferred pair, it is the frame this display is written in, and the corpus calls it the canonical frame.</p>
+So $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ is a Peirce basis, and the frame is that basis in that order: the two elements of $\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ first and those of $\mathbb{B}\tilde\Pi_{\mathrm{id},-}$ second. The Peirce convention fixes no family (<em>Special Element and Peirce Conventions</em>, §<em>The Biquaternion Peirce Convention</em>); the choice here is not a preferred pair, it is the frame this display is written in, and the corpus calls it the canonical frame.</p>
 <p><strong>The frame vectors over the basis.</strong> Written in the coefficient basis, the four frame vectors are
 $$
-\tilde\Pi_+=\tfrac12\bigl(e_t+i\vec e_z\bigr),\qquad
-\vec\Upsilon_+=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),\qquad
-\vec\Upsilon_-=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\qquad
-\tilde\Pi_-=\tfrac12\bigl(e_t-i\vec e_z\bigr),
+\tilde\Pi_{\mathrm{id},+}=\tfrac12\bigl(e_t+i\vec e_z\bigr),\qquad
+\vec\Pi_{\mathrm{nil},+}=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),\qquad
+\vec\Pi_{\mathrm{nil},-}=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\qquad
+\tilde\Pi_{\mathrm{id},-}=\tfrac12\bigl(e_t-i\vec e_z\bigr),
 $$
 so each is a combination of two units and the switch is two $2\times2$ blocks, as §<em>The Switch Between the Two Frames</em> writes it out.</p>
 <h3 id="the-two-tensor-factors">The Two Tensor Factors</h3>
@@ -529,9 +529,9 @@ $$
 $$</p>
 <p><strong>The four right matrices.</strong> Right multiplication is the transpose of left multiplication in the exchanged frame. Let $\mathsf S$ be the linear involution of the carrier that fixes the two idempotents and exchanges the two mixed Peirce units,
 $$
-\mathsf S\tilde\Pi_\pm=\tilde\Pi_\pm,\qquad
-\mathsf S\vec\Upsilon_+=\vec\Upsilon_-,\qquad
-\mathsf S\vec\Upsilon_-=\vec\Upsilon_+,
+\mathsf S\tilde\Pi_{\mathrm{id},\pm}=\tilde\Pi_{\mathrm{id},\pm},\qquad
+\mathsf S\vec\Pi_{\mathrm{nil},+}=\vec\Pi_{\mathrm{nil},-},\qquad
+\mathsf S\vec\Pi_{\mathrm{nil},-}=\vec\Pi_{\mathrm{nil},+},
 $$
 the permutation of the second and third canonical coordinates. Its matrix there is
 $$
@@ -726,7 +726,7 @@ The five frame basis operators of this display, their products and their Cliffor
 $$
 C_{\Pi}=\tfrac12\begin{pmatrix}1&0&0&1\\0&i&i&0\\0&1&-1&0\\i&0&0&-i\end{pmatrix},
 $$
-the columns being $\tilde\Pi_+$, $\vec\Upsilon_+$, $\vec\Upsilon_-$, $\tilde\Pi_-$ in the order $(e_t,\vec e_x,\vec e_y,\vec e_z)$. Then for every element and every side,
+the columns being $\tilde\Pi_{\mathrm{id},+}$, $\vec\Pi_{\mathrm{nil},+}$, $\vec\Pi_{\mathrm{nil},-}$, $\tilde\Pi_{\mathrm{id},-}$ in the order $(e_t,\vec e_x,\vec e_y,\vec e_z)$. Then for every element and every side,
 $$
 \boxed{\;L_{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,L_{\mathrm{pau}}(\tilde Q)\,C_{\Pi}^{-1},\qquad
 R_{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,R_{\mathrm{pau}}(\tilde Q)\,C_{\Pi}^{-1}\;}
@@ -1303,7 +1303,7 @@ Q_z&Q_y&-Q_x&Q_t
 \end{pmatrix}.
 $$
 Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{axf}}=D(L_{\mathrm{axf}})^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$, its transpose is the conjugation, and its sixteen products are real. Nothing is chosen but the basis the algebra already carries. This is the display of record for the physics articles of the series, because a formula of general physics distinguishes no spatial direction.</p>
-<p><strong>The Pauli representation comes second.</strong> Its frame is the Peirce basis $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ of the standard pair, and in it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right one $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf S L(\tilde Q)^{\mathsf T}\mathsf S^{-1}$. The four left matrices $L_{\mathrm{pau},e_\mu}$, the four right matrices $R_{\mathrm{pau},e_\nu}$ and the sixteen basis operators $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ are written out. It is the display the gamma literature prints: $\gamma_0=\sigma_1\otimes I_2$, $\gamma_\eta=i\sigma_2\otimes\sigma_\eta$ and $\gamma_5=-\sigma_3\otimes I_2$, five basis operators of the frame, written in both frames in §<em>The Legacy Pauli Gamma Formulation</em>.</p>
+<p><strong>The Pauli representation comes second.</strong> Its frame is the Peirce basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ of the standard pair, and in it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right one $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf S L(\tilde Q)^{\mathsf T}\mathsf S^{-1}$. The four left matrices $L_{\mathrm{pau},e_\mu}$, the four right matrices $R_{\mathrm{pau},e_\nu}$ and the sixteen basis operators $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ are written out. It is the display the gamma literature prints: $\gamma_0=\sigma_1\otimes I_2$, $\gamma_\eta=i\sigma_2\otimes\sigma_\eta$ and $\gamma_5=-\sigma_3\otimes I_2$, five basis operators of the frame, written in both frames in §<em>The Legacy Pauli Gamma Formulation</em>.</p>
 <p><strong>The switch comes between them, and belongs to both.</strong> It is $C_{\Pi}$ and its inverse, of determinant $-\tfrac14$ and normalisation $C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12I_4$, with $L_{\mathrm{axf}}=C_{\Pi}L_{\mathrm{pau}}C_{\Pi}^{-1}$ and $R_{\mathrm{axf}}=C_{\Pi}R_{\mathrm{pau}}C_{\Pi}^{-1}$. It is two $2\times2$ blocks, it carries the eight unit matrices and the sixteen basis operators, and it leaves the trace $4Q_t$ and the determinant $\langle\tilde Q\rangle_{\natural}^2$ alone. What it does not carry is a single entry: the transpose dictionary, the reality of the sixteen arrays and the disappearance of the cross blocks are properties of the axis-free frame, the block form and the monomial five are properties of the Peirce frame.</p>
 <p><strong>The Clifford structure is the algebra of the two-sided operators.</strong> $e_\mu\otimes e_{\mathrm{opp},\nu}\mapsto L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame basis operators span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five frame basis operators are $iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}$, $iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$ and $-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, and a change of frame is a change of basis. The Clifford reading is the $\mathbb{R}$-linear comparison with the even subalgebra; in the axis-free frame $e_\mu\mapsto L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_t}$ and $i\mapsto L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$. On the eight real units it sends the three vector units to the spacelike bivectors and the three imaginary units to the timelike ones, and the odd part is reached by the fixed basis operator: $iR_{\mathrm{axf},\vec e_x}$ times the image of $\mathbb{B}_{\Psi}$ is the vector space, and $iR_{\mathrm{axf},\vec e_x}$ times the image of $\mathbb{B}_{\Phi}$ the trivector space. The Lorentz generators are half the corresponding bivectors, $\sigma_{\mu\nu}=\tfrac12\,iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}\,iL_{\mathrm{axf},e_\nu}R_{\mathrm{axf},\vec e_{\nu(\nu)}}$ for $\mu\neq\nu$, Clifford reversal is quaternion conjugation, and the $4\times4$ trace has real part $2\,\mathrm{Re}\operatorname{Tr}\mathsf M_2(\tilde Q)=4\,\mathrm{Re}\,\mathrm{Sc}(\tilde Q)$, twice the real part of the $2\times2$ trace.</p>
 <p><strong>No five of the sixteen products are singled out in the axis-free display</strong>, so the gamma map is a display and not a structure of the algebra; §<em>The Switch Between the Two Frames</em> pairs each of the sixteen with its Peirce array through $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}=C_{\Pi}^{-1}L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}C_{\Pi}$.</p>
@@ -1361,7 +1361,7 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 </tr>
 <tr>
 <td>$\mathsf S$</td>
-<td>The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third Peirce coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis</td>
+<td>The exchange of $\vec\Pi_{\mathrm{nil},+}$ and $\vec\Pi_{\mathrm{nil},-}$ fixing $\tilde\Pi_{\mathrm{id},\pm}$; the swap of the second and third Peirce coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis</td>
 </tr>
 <tr>
 <td>$L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$</td>
@@ -1380,7 +1380,7 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 <td>The change between the two displays, $L_{\mathrm{axf}}=C_{\Pi}L_{\mathrm{pau}}C_{\Pi}^{-1}$; $\det C_{\Pi}=-\tfrac14$, $C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm$, $\vec\Upsilon_\pm$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}$, $\vec\Pi_{\mathrm{nil},\pm}$</td>
 <td>The standard pair and its two mixed units, which fix the Peirce frame</td>
 </tr>
 <tr>

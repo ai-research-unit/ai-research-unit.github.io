@@ -121,11 +121,11 @@ so the solutions are exactly $0$ and $e_t$. A direct sum decomposition would nee
 <p><strong>Remedy.</strong> Use the Hermitian form $\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q}_1)$ for positivity, and the biquaternion norm for the cone and the metric; the two are not interchangeable, and the companion articles of this subcategory use them accordingly.</p>
 <h3 id="o6-the-biquaternion-norm-vanishes-on-non-zero-elements">O6. The biquaternion norm vanishes on non-zero elements</h3>
 <p><strong>Statement.</strong> The radical of the biquaternion norm is non-trivial: there are non-zero $\tilde{Q}$ with $\langle\tilde{Q}\rangle_{\natural}=0$, and every null element is orthogonal to itself in the associated bilinear form. In particular the whole pure-state boundary is null.</p>
-<p><strong>Proof.</strong> For a unit direction $\vec u$ the pure state $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ has $\tilde\Pi^{\natural}(\vec u)=e_t-\tilde\Pi(\vec u)$ and hence
+<p><strong>Proof.</strong> For a unit direction $\vec u$ the pure state $\tilde\Pi_{\mathrm{id}}(\vec u)=\tfrac12(e_t+i\vec u)$ has $\tilde\Pi_{\mathrm{id}}^{\natural}(\vec u)=e_t-\tilde\Pi_{\mathrm{id}}(\vec u)$ and hence
 $$
-\bigl\langle\tilde\Pi(\vec u)\bigr\rangle_{\natural}=\tilde\Pi(\vec u)\,\tilde\Pi^{\natural}(\vec u)=\tfrac14(e_t+i\vec u)(e_t-i\vec u)=\tfrac14\bigl(e_t+\vec u^2\bigr)=0
+\bigl\langle\tilde\Pi_{\mathrm{id}}(\vec u)\bigr\rangle_{\natural}=\tilde\Pi_{\mathrm{id}}(\vec u)\,\tilde\Pi_{\mathrm{id}}^{\natural}(\vec u)=\tfrac14(e_t+i\vec u)(e_t-i\vec u)=\tfrac14\bigl(e_t+\vec u^2\bigr)=0
 $$
-for every $\vec u$ while $\tilde\Pi(\vec u)\neq0$; indeed the defining property $\tilde\Pi^2=\tilde\Pi$ together with $\tilde\Pi\tilde\Pi^{\natural}=0$ characterises the boundary of the state space. Likewise $e_t\pm i\vec e_\eta$ are null non-zero elements for $\eta=x,y,z$, since $\langle e_t\pm i\vec e_\eta\rangle_{\natural}=(1-1)e_t=0$.</p>
+for every $\vec u$ while $\tilde\Pi_{\mathrm{id}}(\vec u)\neq0$; indeed the defining property $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$ together with $\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}^{\natural}=0$ characterises the boundary of the state space. Likewise $e_t\pm i\vec e_\eta$ are null non-zero elements for $\eta=x,y,z$, since $\langle e_t\pm i\vec e_\eta\rangle_{\natural}=(1-1)e_t=0$.</p>
 <p><strong>Consequence.</strong> The state space is the boundary of the cone of a degenerate quadratic form. One cannot speak of the "length" of a state; the metric must be obtained as the second variation on the null boundary, and not from the form's value.</p>
 <p><strong>Remedy.</strong> Read the metric from the second variation, not the value. The vanishing of a quadratic form on its cone is the standard mechanism of Lorentzian geometry, not a defect, but it must be accounted for rather than overlooked.</p>
 <h3 id="o7-no-single-form-is-both-canonical-and-positive">O7. No single form is both canonical and positive</h3>
@@ -153,10 +153,10 @@ for every $\vec u$ while $\tilde\Pi(\vec u)\neq0$; indeed the defining property 
 <p><strong>Statement.</strong> There exist non-zero $\tilde{Q},\tilde{Q}_1\in\mathbb{B}$ with $\tilde{Q}\tilde{Q}_1=0$. Hence $\mathbb{B}$ has no multiplicative inverse operation defined on all its non-zero elements.</p>
 <p><strong>Proof.</strong> The two complementary pure states of a direction satisfy
 $$
-\tilde\Pi(\vec u)\,\bigl(e_t-\tilde\Pi(\vec u)\bigr)=0
+\tilde\Pi_{\mathrm{id}}(\vec u)\,\bigl(e_t-\tilde\Pi_{\mathrm{id}}(\vec u)\bigr)=0
 $$
 for every invertible $\vec u$, with both factors non-zero. An element is invertible exactly when $\langle\tilde{Q}\rangle_{\natural}\neq0$, and the zero divisors are the elements of vanishing norm.</p>
-<p><strong>Consequence.</strong> The <em>pure</em> states are precisely the singular states: a pure state $\tilde\Pi$ satisfies $\tilde\Pi\tilde\Pi^{\natural}=0$, hence $\langle\tilde\Pi\rangle_{\natural}=0$ and it is a zero divisor, while a mixed state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $|\vec s_{\Psi}|<1$ has $\tilde{Ϛ}_{\Psi}\tilde{Ϛ}_{\Psi}^{\natural}=\tfrac14(1-s^2)e_t\neq0$, so $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\neq0$, and is invertible. The multiplicative group of the algebra, $\mathbb{B}^\times=\{\tilde{Q}:\langle\tilde{Q}\rangle_{\natural}\neq0\}$, therefore contains every mixed state and excludes every pure one, and statements requiring invertibility of a pure state are meaningless in this framework.</p>
+<p><strong>Consequence.</strong> The <em>pure</em> states are precisely the singular states: a pure state $\tilde\Pi_{\mathrm{id}}$ satisfies $\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}^{\natural}=0$, hence $\langle\tilde\Pi_{\mathrm{id}}\rangle_{\natural}=0$ and it is a zero divisor, while a mixed state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $|\vec s_{\Psi}|<1$ has $\tilde{Ϛ}_{\Psi}\tilde{Ϛ}_{\Psi}^{\natural}=\tfrac14(1-s^2)e_t\neq0$, so $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\neq0$, and is invertible. The multiplicative group of the algebra, $\mathbb{B}^\times=\{\tilde{Q}:\langle\tilde{Q}\rangle_{\natural}\neq0\}$, therefore contains every mixed state and excludes every pure one, and statements requiring invertibility of a pure state are meaningless in this framework.</p>
 <p><strong>Remedy.</strong> None is needed; the structure is that of a simple algebra, and the relevant group for transformations is $\mathbb{B}^\times$, acting on the elements by multiplication. The point of recording the obstruction is that "the quaternions are a division algebra" does not survive complexification, and the biquaternion algebra must not be used as if it did.</p>
 <h3 id="o12-there-are-no-canonical-commutation-relations-inside-the-algebra">O12. There are no canonical commutation relations inside the algebra</h3>
 <p><strong>Statement.</strong> There are no elements $\tilde{Q}_1,\tilde{Q}_2\in\mathbb{B}$ and no non-zero central scalar $\lambda$ with $[\tilde{Q}_1,\tilde{Q}_2]=\lambda e_t$, and no finite-dimensional space on which the algebra acts carries such a pair either.</p>
@@ -500,7 +500,7 @@ $$</p>
 <td>Hermitian form, positive definite with $\langle e_t\rangle_{*}=1$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$</td>
+<td>$\tilde\Pi_{\mathrm{id}}(\vec u)=\tfrac12(e_t+i\vec u)$</td>
 <td>Pure state of the declared direction $\vec u$, null under $\langle\cdot\rangle_{\natural}$</td>
 </tr>
 <tr>

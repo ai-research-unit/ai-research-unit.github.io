@@ -304,31 +304,31 @@ $$</p>
 </table></div>
 <p>The factor is a single exponential on the whole domain, but its exponent is not the sum of the two exponents of the factors. That is the subject of the second half.</p>
 <h2 id="the-eigenbasis-and-the-spinor-spaces">The Eigenbasis and the Spinor Spaces</h2>
-<p><strong>The basis.</strong> The Hamilton data are the eigenvalue data of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>, read in the eigenbasis of <em>The N-Regular, Spectrally Regular Sector</em>, §<em>The Eigenbasis, the Nilpotents, and the Peirce Corners</em>. The pure root of $+1$ attached to the axis is $\vec{Ζ}=-i\vec U$, the eigenprojections are $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$, and the two mixed Peirce corners are the complex lines spanned by the nilpotents $\vec\Upsilon_+\in\mathbb{B}_{-+}$ and $\vec\Upsilon_-\in\mathbb{B}_{+-}$, normalised by</p>
+<p><strong>The basis.</strong> The Hamilton data are the eigenvalue data of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>, read in the eigenbasis of <em>The N-Regular, Spectrally Regular Sector</em>, §<em>The Eigenbasis, the Nilpotents, and the Peirce Corners</em>. The pure root of $+1$ attached to the axis is $\vec{Ζ}=-i\vec U$, the eigenprojections are $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\vec{Ζ})$, and the two mixed Peirce corners are the complex lines spanned by the nilpotents $\vec\Pi_{\mathrm{nil},+}\in\mathbb{B}_{-+}$ and $\vec\Pi_{\mathrm{nil},-}\in\mathbb{B}_{+-}$, normalised by</p>
 <p>$$
-\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\qquad \vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,\qquad \vec\Upsilon_\pm^2=0 .
+\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-},\qquad \vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+},\qquad \vec\Pi_{\mathrm{nil},\pm}^2=0 .
 $$</p>
-<p>The four elements $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ form a $\mathbb{C}$-basis of $\mathbb{B}$, the <strong>eigenbasis</strong>.</p>
+<p>The four elements $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$ form a $\mathbb{C}$-basis of $\mathbb{B}$, the <strong>eigenbasis</strong>.</p>
 <p><strong>The diagonal action.</strong> In that basis left multiplication by $\tilde Q$ is diagonal,</p>
 <p>$$
-\tilde Q\tilde\Pi_+=\lambda_+\tilde\Pi_+ ,\qquad
-\tilde Q\vec\Upsilon_-=\lambda_+\vec\Upsilon_- ,\qquad
-\tilde Q\vec\Upsilon_+=\lambda_-\vec\Upsilon_+ ,\qquad
-\tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_- ,
+\tilde Q\tilde\Pi_{\mathrm{id},+}=\lambda_+\tilde\Pi_{\mathrm{id},+} ,\qquad
+\tilde Q\vec\Pi_{\mathrm{nil},-}=\lambda_+\vec\Pi_{\mathrm{nil},-} ,\qquad
+\tilde Q\vec\Pi_{\mathrm{nil},+}=\lambda_-\vec\Pi_{\mathrm{nil},+} ,\qquad
+\tilde Q\tilde\Pi_{\mathrm{id},-}=\lambda_-\tilde\Pi_{\mathrm{id},-} ,
 $$</p>
 <p>with $\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$. The basis is therefore an eigenbasis of the operator $L_{\tilde Q}$, with the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$. The second factor of the pairing is the same operator stripped of the modulus: since $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is central, $L_{\tilde U_{\mathrm{lor}}}=(\varrho\,e^{i\theta_{\mathrm{pha}}})^{-1}L_{\tilde Q}$ is diagonal in the same basis, with the values $(\exp(i\Theta),\exp(i\Theta),\exp(-i\Theta),\exp(-i\Theta))$. The Hamilton modulus is thus the common factor of the two eigenvalues, $\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$, of $L_{\tilde Q}$, and the Hamilton angle is half the difference of their logarithms: the pairing is the polar form of the spectrum.</p>
 <p><strong>The two spinor spaces.</strong> The two Peirce carriers, which here are the minimal left ideals,</p>
 <p>$$
-S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+ ,\qquad
-S_-=\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-
+S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{C}\vec\Pi_{\mathrm{nil},+} ,\qquad
+S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-}=\mathbb{C}\vec\Pi_{\mathrm{nil},-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-}
 $$</p>
-<p>are the two <strong>spinor spaces</strong>, and $\mathbb{B}=S_+\oplus S_-$ (<em>The N-Regular, Spectrally Regular Sector</em>, §<em>The Spinor Spaces and their Coordinates</em>). Each carries both eigenvalues, with eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$ on $S_+$ and $(\vec\Upsilon_-,\tilde\Pi_-)$ on $S_-$; the two eigenvalues are distinct there, so the eigenbasis of each space is unique up to a rescaling of each vector. A general element is not a spinor: it has one component in $S_+$ and one in $S_-$.</p>
+<p>are the two <strong>spinor spaces</strong>, and $\mathbb{B}=S_+\oplus S_-$ (<em>The N-Regular, Spectrally Regular Sector</em>, §<em>The Spinor Spaces and their Coordinates</em>). Each carries both eigenvalues, with eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ on $S_+$ and $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$ on $S_-$; the two eigenvalues are distinct there, so the eigenbasis of each space is unique up to a rescaling of each vector. A general element is not a spinor: it has one component in $S_+$ and one in $S_-$.</p>
 <p><strong>The matrix model.</strong> With the assignment</p>
 <p>$$
-\mathsf M_2^Q(\tilde\Pi_+)=E_{11},\quad
-\mathsf M_2^Q(\vec\Upsilon_-)=E_{12},\quad
-\mathsf M_2^Q(\vec\Upsilon_+)=E_{21},\quad
-\mathsf M_2^Q(\tilde\Pi_-)=E_{22},
+\mathsf M_2^Q(\tilde\Pi_{\mathrm{id},+})=E_{11},\quad
+\mathsf M_2^Q(\vec\Pi_{\mathrm{nil},-})=E_{12},\quad
+\mathsf M_2^Q(\vec\Pi_{\mathrm{nil},+})=E_{21},\quad
+\mathsf M_2^Q(\tilde\Pi_{\mathrm{id},-})=E_{22},
 $$</p>
 <p>the two spinor spaces are the two columns, and</p>
 <p>$$
@@ -592,7 +592,7 @@ $$</p>
 <tr>
 <td>idempotent</td>
 <td>$\tilde{Ζ}$</td>
-<td>$\exp(i\pi\tilde\Pi_-)$</td>
+<td>$\exp(i\pi\tilde\Pi_{\mathrm{id},-})$</td>
 <td>one exponential of an idempotent</td>
 </tr>
 <tr>
@@ -673,7 +673,7 @@ $$</p>
 <p>The Hermitian exponent is the real $\frac{\theta_{\mathrm{rpd}}}{2}$ times the Hermitian root $i\vec u_{\mathrm b}$ of $+e_t$, and the real pure exponent the real $\frac{\theta_{\mathrm{axr}}}{2}$ times the root $\vec u_{\mathrm r}$ of $-e_t$. On the exponents, the two non-central factors are the two halves of the Hermitian split of the exponent, which <em>The Cartan Hermitian Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion</em> reads at the level of the element.</p>
 <p><strong>The root on the exponents.</strong> On the root set the rotor is pure, so $\theta_{\mathrm{axr}}=\pi$ and the rotor exponent is the same quarter turn $\mathcal R=\frac{\pi}{2}\vec u_{\mathrm r}$ for every root; the roots are separated by the rapidity inside $\mathcal H$ and by the two directions, and the closing condition $\tilde{Ζ}^2=e_t$ is exactly their orthogonality,</p>
 <p>$$
-\tilde{Ζ}=i\exp(\mathcal H)\exp(\mathcal R),\qquad \tilde\Pi_\pm=\frac12\bigl(e_t\pm i\exp(\mathcal H)\exp(\mathcal R)\bigr).
+\tilde{Ζ}=i\exp(\mathcal H)\exp(\mathcal R),\qquad \tilde\Pi_{\mathrm{id},\pm}=\frac12\bigl(e_t\pm i\exp(\mathcal H)\exp(\mathcal R)\bigr).
 $$</p>
 <p><strong>The bracket.</strong> The two exponents do not commute in general, and their bracket is</p>
 <p>$$
@@ -738,21 +738,21 @@ $$</p>
 $$</p>
 <p>The non-Hermitian roots of one are therefore the elements furthest from the aligned case and, at the same time, the elements whose single exponential carries a real number in place of the complex one. The complex angle is not lost with them: it is the aligned words that carry the genuinely complex number $\frac{\theta_{\mathrm{axr}}}{2}+\epsilon i\frac{\theta_{\mathrm{rpd}}}{2}$ of the subsection above.</p>
 <h3 id="the-idempotent-exponential-form">The Idempotent Exponential Form</h3>
-<p>Every root of one is the exponential of its halving idempotent. Since $\tilde\Pi_-$ is idempotent the exponential series truncates,</p>
+<p>Every root of one is the exponential of its halving idempotent. Since $\tilde\Pi_{\mathrm{id},-}$ is idempotent the exponential series truncates,</p>
 <p>$$
-\exp(i\pi\tilde\Pi_-)=e_t+\bigl(\exp(i\pi)-1\bigr)\tilde\Pi_-=e_t-2\tilde\Pi_-=\tilde{Ζ},
+\exp(i\pi\tilde\Pi_{\mathrm{id},-})=e_t+\bigl(\exp(i\pi)-1\bigr)\tilde\Pi_{\mathrm{id},-}=e_t-2\tilde\Pi_{\mathrm{id},-}=\tilde{Ζ},
 $$</p>
 <p>so</p>
 <p>$$
-\tilde{Ζ}=\exp(i\pi\tilde\Pi_-),\qquad \tilde\Pi_-=\tfrac12(e_t-\tilde{Ζ})
+\tilde{Ζ}=\exp(i\pi\tilde\Pi_{\mathrm{id},-}),\qquad \tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-\tilde{Ζ})
 $$</p>
-<p>The identity is the idempotency of $\tilde\Pi_-$, and the halving is that of <em>The Square Roots of One and the Idempotents of the Biquaternion Algebra</em>, §<em>The Correspondence with the Roots of One</em>. The form is a single exponential of one element where the polar word is an ordered product of four. The two ends of the halving are the trivial roots: $\tilde{Ζ}=e_t$ gives $\tilde\Pi_-=0$, and $\tilde{Ζ}=-e_t$ gives $\tilde\Pi_-=e_t$.</p>
+<p>The identity is the idempotency of $\tilde\Pi_{\mathrm{id},-}$, and the halving is that of <em>The Square Roots of One and the Idempotents of the Biquaternion Algebra</em>, §<em>The Correspondence with the Roots of One</em>. The form is a single exponential of one element where the polar word is an ordered product of four. The two ends of the halving are the trivial roots: $\tilde{Ζ}=e_t$ gives $\tilde\Pi_{\mathrm{id},-}=0$, and $\tilde{Ζ}=-e_t$ gives $\tilde\Pi_{\mathrm{id},-}=e_t$.</p>
 <h3 id="the-bridge-between-the-two-forms">The Bridge Between the Two Forms</h3>
 <p>The two forms are tied by the product of the last two factors. On a root of norm $-e_t$ the word is $\tilde{Ζ}=i\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, so left multiplication by $-i$ extracts that product, and the halving idempotent and the exponent split as</p>
 <p>$$
 -i\tilde{Ζ}=\tilde U_{\mathrm b}\tilde u_{\mathrm r},\qquad
-\tilde\Pi_-=\tfrac12\bigl(e_t-i\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr),\qquad
-i\pi\tilde\Pi_-=\tfrac{i\pi}{2}e_t+\tfrac{\pi}{2}\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
+\tilde\Pi_{\mathrm{id},-}=\tfrac12\bigl(e_t-i\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr),\qquad
+i\pi\tilde\Pi_{\mathrm{id},-}=\tfrac{i\pi}{2}e_t+\tfrac{\pi}{2}\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
 $$</p>
 <p>The central part of the exponent is fixed at $\tfrac{i\pi}{2}e_t$, and the two-factor part is the last two factors of the word multiplied by the real half-turn. These are the statements of the cited article, §<em>The Idempotent Exponential Form of a Root</em>; they are recorded here because the extracted product is the second factor of the Hamilton pairing of the root: with $\varrho\,e^{i\theta_{\mathrm{pha}}}=i$ on the norm $-e_t$ family,</p>
 <p>$$
@@ -779,7 +779,7 @@ $$</p>
 \tilde Q=\varrho\exp(i\theta_{\mathrm{pha}})\,\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
 $$</p>
 <p>An element whose non-central factors are those of the root is the central multiple $\tilde Q=-i\,\varrho\exp(i\theta_{\mathrm{pha}})\,\tilde{Ζ}$ of it; in general the element carries its own two factors, of the same kind.</p>
-<p><strong>The idempotents and the spinor spaces.</strong> The halving map carries the root to the pair $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$, and the Peirce decomposition of <em>Peirce Decompositions of the Biquaternion Algebra</em>, §<em>The Peirce Decompositions</em>, splits the algebra into the four corners. The eigenbasis of §<em>The Eigenbasis and the Spinor Spaces</em> completes the two idempotents by the nilpotents of the two mixed corners and reads the same split as $\mathbb{B}=S_+\oplus S_-$, the two spinor spaces. The chain is thus</p>
+<p><strong>The idempotents and the spinor spaces.</strong> The halving map carries the root to the pair $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$, and the Peirce decomposition of <em>Peirce Decompositions of the Biquaternion Algebra</em>, §<em>The Peirce Decompositions</em>, splits the algebra into the four corners. The eigenbasis of §<em>The Eigenbasis and the Spinor Spaces</em> completes the two idempotents by the nilpotents of the two mixed corners and reads the same split as $\mathbb{B}=S_+\oplus S_-$, the two spinor spaces. The chain is thus</p>
 <p>$$
 \text{two pure directions}\;\longrightarrow\;\text{the root}\;\longrightarrow\;\text{the idempotents}\;\longrightarrow\;\text{the Peirce corners and the spinor spaces},
 $$</p>
@@ -789,20 +789,20 @@ $$</p>
 <h3 id="the-root-and-its-failure">The Root and Its Failure</h3>
 <p>The regular pairing needs three things: $B\neq0$, a choice of square root $B$, and the root $\vec U=\vec Q/B$ with $\vec U^2=-e_t$. On $\Sigma_{10}$ the vector part is null, $B^2=0$, so the second and third fail. The vector part is not a complex multiple of a root of $-e_t$; it is a nilpotent,</p>
 <p>$$
-\vec Q=Q_t\vec\Upsilon,
+\vec Q=Q_t\vec\Pi_{\mathrm{nil}},
 \qquad
-\vec\Upsilon^2=0,
+\vec\Pi_{\mathrm{nil}}^2=0,
 \qquad
-\vec\Upsilon\neq0
+\vec\Pi_{\mathrm{nil}}\neq0
 $$</p>
 <p>on the Jordan part. There is no unit axis parallel to it, because its length is zero.</p>
 <p>The angle fails in the same way. In the regular sector $\cos\Theta=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ and $\sin\Theta=B/(\varrho\,e^{i\theta_{\mathrm{pha}}})$; on the wall $\sin\Theta=0$ and $\cos\Theta=\pm1$, so $\Theta$ is a multiple of $\pi$ and carries no continuous information. The exponent $\vec U\Theta$ is a product of a divergent root and a vanishing angle, and its limit depends on the path.</p>
 <h3 id="the-degenerate-hamilton-form">The Degenerate Hamilton Form</h3>
 <p>The exact replacement is read from the normal form. Let</p>
 <p>$$
-\tilde Q=Q_t\bigl(e_t+\vec\Upsilon\bigr),
+\tilde Q=Q_t\bigl(e_t+\vec\Pi_{\mathrm{nil}}\bigr),
 \qquad
-\vec\Upsilon^2=0,
+\vec\Pi_{\mathrm{nil}}^2=0,
 \qquad
 Q_t\neq0,
 \qquad
@@ -812,25 +812,25 @@ Q_t\neq0,
 $$</p>
 <p>Then $Q_t=\varepsilon\varrho\,e^{i\theta_{\mathrm{pha}}}$ and</p>
 <p>$$
-\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\bigl(\varepsilon e_t+\varepsilon\vec\Upsilon\bigr).
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\bigl(\varepsilon e_t+\varepsilon\vec\Pi_{\mathrm{nil}}\bigr).
 $$</p>
-<p>Since $\exp(\vec\Upsilon)=e_t+\vec\Upsilon$, the element is</p>
+<p>Since $\exp(\vec\Pi_{\mathrm{nil}})=e_t+\vec\Pi_{\mathrm{nil}}$, the element is</p>
 <p>$$
 \boxed{\;
-\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp\Bigl(\vec\Upsilon+i\pi\frac{1-\varepsilon}{2}\Bigr).
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp\Bigl(\vec\Pi_{\mathrm{nil}}+i\pi\frac{1-\varepsilon}{2}\Bigr).
 \;}
 $$</p>
-<p>The exponent has a nilpotent noncentral part $\vec\Upsilon$ and a central part $0$ or $i\pi$. The central part is the sign: for $\varepsilon=+1$ it is absent, and for $\varepsilon=-1$ it is the principal logarithm of $-1$.</p>
-<p><strong>Theorem (the degenerate Hamilton form).</strong> Every element of $\Sigma_{10}$ is the product of its complex modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$ and the exponential of $\vec\Upsilon+i\pi(1-\varepsilon)/2$. The factorization is unique, and the exponent is the exact logarithm of the unit factor.</p>
-<p><em>Proof.</em> The normal form gives $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $Q_t=\varepsilon\varrho\,e^{i\theta_{\mathrm{pha}}}$. The exponential of a nilpotent truncates, $\exp(\vec\Upsilon)=e_t+\vec\Upsilon$, and the central term contributes the sign. The exponent is $\operatorname{Log}\tilde Q-\log\varrho\,e^{i\theta_{\mathrm{pha}}}=\operatorname{Log}\tilde U$, which is unique in the branch of <em>The Complete Polar Decomposition of an N-Regular Biquaternion</em>, §<em>The Exact Logarithm at the Wall</em>.</p>
+<p>The exponent has a nilpotent noncentral part $\vec\Pi_{\mathrm{nil}}$ and a central part $0$ or $i\pi$. The central part is the sign: for $\varepsilon=+1$ it is absent, and for $\varepsilon=-1$ it is the principal logarithm of $-1$.</p>
+<p><strong>Theorem (the degenerate Hamilton form).</strong> Every element of $\Sigma_{10}$ is the product of its complex modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$ and the exponential of $\vec\Pi_{\mathrm{nil}}+i\pi(1-\varepsilon)/2$. The factorization is unique, and the exponent is the exact logarithm of the unit factor.</p>
+<p><em>Proof.</em> The normal form gives $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ and $Q_t=\varepsilon\varrho\,e^{i\theta_{\mathrm{pha}}}$. The exponential of a nilpotent truncates, $\exp(\vec\Pi_{\mathrm{nil}})=e_t+\vec\Pi_{\mathrm{nil}}$, and the central term contributes the sign. The exponent is $\operatorname{Log}\tilde Q-\log\varrho\,e^{i\theta_{\mathrm{pha}}}=\operatorname{Log}\tilde U$, which is unique in the branch of <em>The Complete Polar Decomposition of an N-Regular Biquaternion</em>, §<em>The Exact Logarithm at the Wall</em>.</p>
 <p>The first factor is the complex modulus, as in the regular pairing. The second factor is not the exponential of a root times an angle; it is the exponential of a nilpotent, and its noncentral part is the logarithm of a unipotent element.</p>
 <h3 id="the-limit-from-the-regular-sector">The Limit From the Regular Sector</h3>
 <p>Approach the wall along a regular family with $B\neq0$. The root $\vec U=\vec Q/B$ diverges as $B\to0$, and the angle obeys $\sin\Theta=B/(\varrho\,e^{i\theta_{\mathrm{pha}}})\to0$. The limit of the product $\vec U\Theta$ depends on the sign $\varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$.</p>
 <p>For $\varepsilon=+1$, $\cos\Theta\to1$ and $\Theta\sim B/(\varrho\,e^{i\theta_{\mathrm{pha}}})$. Then</p>
 <p>$$
-\vec U\Theta=\frac{\vec Q}{B}\Theta\longrightarrow\frac{\vec Q}{\varrho\,e^{i\theta_{\mathrm{pha}}}}=\vec\Upsilon,
+\vec U\Theta=\frac{\vec Q}{B}\Theta\longrightarrow\frac{\vec Q}{\varrho\,e^{i\theta_{\mathrm{pha}}}}=\vec\Pi_{\mathrm{nil}},
 \qquad
-\exp(\vec U\Theta)\longrightarrow\exp(\vec\Upsilon)=e_t+\vec\Upsilon.
+\exp(\vec U\Theta)\longrightarrow\exp(\vec\Pi_{\mathrm{nil}})=e_t+\vec\Pi_{\mathrm{nil}}.
 $$</p>
 <p>For $\varepsilon=-1$, $\cos\Theta\to-1$ and $\Theta\to\pi$ while $\sin\Theta=B/(\varrho\,e^{i\theta_{\mathrm{pha}}})$. Then</p>
 <p>$$
@@ -841,13 +841,13 @@ $$</p>
 <p>The limit shows what survives and what does not. The modulus survives, the exponential survives, and the nilpotent direction survives. The root does not survive, and the angle does not survive as a continuous parameter. This is the same phenomenon as the survival of the polar word and the failure of the eigenbasis on the wall.</p>
 <h3 id="worked-examples-at-the-wall">Worked Examples at the Wall</h3>
 <h4 id="the-standard-jordan-element">The Standard Jordan Element</h4>
-<p>Take $\tilde Q=e_t+\vec e_x+i\vec e_y$. Then $Q_t=1$, $\varrho\,e^{i\theta_{\mathrm{pha}}}=1$, $\varepsilon=1$ and $\vec\Upsilon=\vec e_x+i\vec e_y$. The degenerate Hamilton form is</p>
+<p>Take $\tilde Q=e_t+\vec e_x+i\vec e_y$. Then $Q_t=1$, $\varrho\,e^{i\theta_{\mathrm{pha}}}=1$, $\varepsilon=1$ and $\vec\Pi_{\mathrm{nil}}=\vec e_x+i\vec e_y$. The degenerate Hamilton form is</p>
 <p>$$
 \tilde Q=\exp(\vec e_x+i\vec e_y)=e_t+\vec e_x+i\vec e_y,
 $$</p>
 <p>because the square of the exponent vanishes. The regular root does not exist: $B=0$. The single exponential is exact, and its exponent is the logarithm of the element.</p>
 <h4 id="the-negative-jordan-element">The Negative Jordan Element</h4>
-<p>Take $\tilde Q=-e_t-\vec e_x-i\vec e_y$. Then $Q_t=-1$, $\varrho\,e^{i\theta_{\mathrm{pha}}}=1$, $\varepsilon=-1$ and $\vec\Upsilon=\vec e_x+i\vec e_y$. The form is</p>
+<p>Take $\tilde Q=-e_t-\vec e_x-i\vec e_y$. Then $Q_t=-1$, $\varrho\,e^{i\theta_{\mathrm{pha}}}=1$, $\varepsilon=-1$ and $\vec\Pi_{\mathrm{nil}}=\vec e_x+i\vec e_y$. The form is</p>
 <p>$$
 \tilde Q=\exp\bigl(\vec e_x+i\vec e_y+i\pi\bigr)
 =-\exp(\vec e_x+i\vec e_y)
@@ -855,7 +855,7 @@ $$</p>
 $$</p>
 <p>The central $i\pi$ is the sign of the scalar part. It is the only difference from the previous case, and it is the reason the degenerate pairing needs the exact logarithm rather than the regular root.</p>
 <h4 id="the-scalar-line">The Scalar Line</h4>
-<p>On the scalar line $\vec\Upsilon=0$ and $\tilde Q=Q_te_t$. The form is</p>
+<p>On the scalar line $\vec\Pi_{\mathrm{nil}}=0$ and $\tilde Q=Q_te_t$. The form is</p>
 <p>$$
 \tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\pi\frac{1-\varepsilon}{2}\Bigr),
 $$</p>
@@ -878,7 +878,7 @@ $$</p>
 <tr>
 <td>exponent</td>
 <td>$\vec U\Theta$, $\vec U^2=-e_t$</td>
-<td>$\vec\Upsilon+i\pi(1-\varepsilon)/2$, $\vec\Upsilon^2=0$</td>
+<td>$\vec\Pi_{\mathrm{nil}}+i\pi(1-\varepsilon)/2$, $\vec\Pi_{\mathrm{nil}}^2=0$</td>
 </tr>
 <tr>
 <td>root</td>
@@ -1001,9 +1001,9 @@ $$</p>
 $$</p>
 <p>Its halving idempotent and the product of the last two factors of the word are</p>
 <p>$$
-\tilde\Pi_- = \tfrac12(e_t-\tilde{Ζ}) = 0.5\,e_t-0.441941738\,i\,\vec e_x-0.441941738\,i\,\vec e_y+0.375\,\vec e_z , \qquad -i\tilde{Ζ} = \tilde U_{\mathrm b}\tilde u_{\mathrm r} = \tfrac{5}{4}\vec u_{\mathrm r}+i\tfrac{3}{4}\,\vec e_z ,
+\tilde\Pi_{\mathrm{id},-} = \tfrac12(e_t-\tilde{Ζ}) = 0.5\,e_t-0.441941738\,i\,\vec e_x-0.441941738\,i\,\vec e_y+0.375\,\vec e_z , \qquad -i\tilde{Ζ} = \tilde U_{\mathrm b}\tilde u_{\mathrm r} = \tfrac{5}{4}\vec u_{\mathrm r}+i\tfrac{3}{4}\,\vec e_z ,
 $$</p>
-<p>and the root is the single exponential of its halving idempotent, $\tilde{Ζ} = \exp(i\pi\tilde\Pi_-)$. The element is Hermitian only at zero rapidity, where it reduces to $i\vec u_{\mathrm r}$.</p>
+<p>and the root is the single exponential of its halving idempotent, $\tilde{Ζ} = \exp(i\pi\tilde\Pi_{\mathrm{id},-})$. The element is Hermitian only at zero rapidity, where it reduces to $i\vec u_{\mathrm r}$.</p>
 <p><em>The two exponents and the bracket.</em> The exponents of the word are</p>
 <p>$$
 \mathcal H = i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b} = 0.490129072\,i\,\vec e_x-0.490129072\,i\,\vec e_y , \qquad \mathcal R = \frac{\pi}{2}\vec u_{\mathrm r} = 1.110720735\,\vec e_x+1.110720735\,\vec e_y ,
@@ -1071,7 +1071,7 @@ $$</p>
 </tr>
 <tr>
 <td>eigenbasis and spinors</td>
-<td>in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ the operator $L_{\tilde Q}$ is $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$; the two spinor spaces $S_\pm=\mathbb{B}\tilde\Pi_\pm$ are the two columns of $\mathsf M_2^Q$</td>
+<td>in the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$ the operator $L_{\tilde Q}$ is $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$; the two spinor spaces $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ are the two columns of $\mathsf M_2^Q$</td>
 </tr>
 <tr>
 <td>classical case</td>
@@ -1080,7 +1080,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The Hamilton pairing groups the scale with the phase into the complex modulus $\varrho\exp(i\theta_{\mathrm{pha}})$ and the boost with the rotor into the unit factor $\exp(\vec U\Theta)=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$. Its modulus is the eigenvalue data of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>, and its second factor is the Lorentz transformation of the word. It is the only pairing whose modulus is central, and it is partial in both senses: the axis $\vec U=\vec Q/B$ needs the vector part non-null, although the four-factor grouping exists on the whole complement of the null cone.</p>
-<p>The second half reads the same word at a root of one, $\tilde{Ζ}^2=e_t$. Apart from the central pair $\pm e_t$, the non-Hermitian roots are generated by two orthogonal unit pure quaternions and one rapidity, and the Hermitian roots $i\vec u_{\mathrm n}$ are the zero-rapidity case; every root has both a two-factor form and the single exponential $\tilde{Ζ}=\exp(i\pi\tilde\Pi_-)$ of its halving idempotent.</p>
+<p>The second half reads the same word at a root of one, $\tilde{Ζ}^2=e_t$. Apart from the central pair $\pm e_t$, the non-Hermitian roots are generated by two orthogonal unit pure quaternions and one rapidity, and the Hermitian roots $i\vec u_{\mathrm n}$ are the zero-rapidity case; every root has both a two-factor form and the single exponential $\tilde{Ζ}=\exp(i\pi\tilde\Pi_{\mathrm{id},-})$ of its halving idempotent.</p>
 <h3 id="the-roots-of-one">The Roots of One</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -1133,7 +1133,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The two exponents of the word, the Hermitian $\mathcal H=i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and the real pure $\mathcal R=\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$, add exactly on the aligned words, where the two axes are parallel or one factor is central. Elsewhere the sum is corrected by the Baker–Campbell–Hausdorff series, whose leading term is half the bracket $[\mathcal H,\mathcal R]=i\frac{\theta_{\mathrm{rpd}}\theta_{\mathrm{axr}}}{2}(\vec u_{\mathrm b}\times\vec u_{\mathrm r})$. The product is nevertheless a single exponential on the whole domain, with the complex multiple $\Theta\vec U$ of a root of $-e_t$ as its exponent. At the wall the root is gone and the single exponential survives as $\exp(\vec\Upsilon)$, a nilpotent whose square vanishes.</p>
+<p>The two exponents of the word, the Hermitian $\mathcal H=i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and the real pure $\mathcal R=\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$, add exactly on the aligned words, where the two axes are parallel or one factor is central. Elsewhere the sum is corrected by the Baker–Campbell–Hausdorff series, whose leading term is half the bracket $[\mathcal H,\mathcal R]=i\frac{\theta_{\mathrm{rpd}}\theta_{\mathrm{axr}}}{2}(\vec u_{\mathrm b}\times\vec u_{\mathrm r})$. The product is nevertheless a single exponential on the whole domain, with the complex multiple $\Theta\vec U$ of a root of $-e_t$ as its exponent. At the wall the root is gone and the single exponential survives as $\exp(\vec\Pi_{\mathrm{nil}})$, a nilpotent whose square vanishes.</p>
 <h3 id="at-the-wall">At the Wall</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -1149,11 +1149,11 @@ $$</p>
 </tr>
 <tr>
 <td>degenerate form</td>
-<td>$\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\vec\Upsilon+i\pi(1-\varepsilon)/2)$</td>
+<td>$\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\vec\Pi_{\mathrm{nil}}+i\pi(1-\varepsilon)/2)$</td>
 </tr>
 <tr>
 <td>exponent</td>
-<td>nilpotent $\vec\Upsilon$ plus central $0$ or $i\pi$</td>
+<td>nilpotent $\vec\Pi_{\mathrm{nil}}$ plus central $0$ or $i\pi$</td>
 </tr>
 <tr>
 <td>modulus</td>
@@ -1169,11 +1169,11 @@ $$</p>
 </tr>
 <tr>
 <td>limit</td>
-<td>$\vec U\Theta\to\vec\Upsilon$ for $\varepsilon=+1$; diverges for $\varepsilon=-1$</td>
+<td>$\vec U\Theta\to\vec\Pi_{\mathrm{nil}}$ for $\varepsilon=+1$; diverges for $\varepsilon=-1$</td>
 </tr>
 <tr>
 <td>exactness</td>
-<td>$\exp(\vec\Upsilon)=e_t+\vec\Upsilon$</td>
+<td>$\exp(\vec\Pi_{\mathrm{nil}})=e_t+\vec\Pi_{\mathrm{nil}}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -1223,15 +1223,15 @@ $$</p>
 <td>the eigenvalues, the coefficients of the eigenvalue decomposition</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm = \frac12(e_t\pm\vec{Ζ})$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm} = \frac12(e_t\pm\vec{Ζ})$</td>
 <td>the eigenprojections, primitive orthogonal idempotents</td>
 </tr>
 <tr>
-<td>$\vec\Upsilon_+\in\mathbb{B}_{-+}$, $\vec\Upsilon_-\in\mathbb{B}_{+-}$</td>
-<td>the nilpotents of the eigenbasis, normalised by $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ and $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$</td>
+<td>$\vec\Pi_{\mathrm{nil},+}\in\mathbb{B}_{-+}$, $\vec\Pi_{\mathrm{nil},-}\in\mathbb{B}_{+-}$</td>
+<td>the nilpotents of the eigenbasis, normalised by $\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-}$ and $\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+}$</td>
 </tr>
 <tr>
-<td>$S_\pm=\mathbb{B}\tilde\Pi_\pm$</td>
+<td>$S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$</td>
 <td>the two spinor spaces, the Peirce carriers (minimal left ideals here), the two columns of $\mathsf M_2^Q$</td>
 </tr>
 <tr>
@@ -1279,7 +1279,7 @@ $$</p>
 <td>a root of one, $\tilde{Ζ}^2 = e_t$; the pure root attached to the Hamilton axis is $\vec{Ζ}=-i\vec U$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_- = \tfrac12(e_t-\tilde{Ζ})$</td>
+<td>$\tilde\Pi_{\mathrm{id},-} = \tfrac12(e_t-\tilde{Ζ})$</td>
 <td>the halving idempotent of a root of one, whose exponential is the root</td>
 </tr>
 <tr>
@@ -1330,7 +1330,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a>, §<em>The Eigenvalues</em> and §<em>The Eigenprojectors</em>, for the eigenvalues $\lambda_\pm=Q_t\pm iB$, the pure unit element $\vec U=\vec Q/B$ and the eigenprojections $\tilde\Pi_\pm$.</li>
+<li><a href="the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a>, §<em>The Eigenvalues</em> and §<em>The Eigenprojectors</em>, for the eigenvalues $\lambda_\pm=Q_t\pm iB$, the pure unit element $\vec U=\vec Q/B$ and the eigenprojections $\tilde\Pi_{\mathrm{id},\pm}$.</li>
 <li><a href="the-n-regular-spectrally-regular-sector.html">The N-Regular, Spectrally Regular Sector</a>, §<em>The Eigenbasis, the Nilpotents, and the Peirce Corners</em>, for the eigenbasis with its nilpotents, and the two spinor spaces, on which the Hamilton parameters and the diagonal action are read.</li>
 <li><a href="relations-between-the-complete-polar-decomposition-and-eigenbasis-of-an-n-regular-biquaternion.html">Relations between the Complete Polar Decomposition and Eigenbasis of an N-Regular Biquaternion</a>, for the unit factor $\tilde U=\tilde Q/(\varrho\exp(i\theta_{\mathrm{pha}}))$, its eigenvalues $\exp(\pm i\Theta)$ and the eigenprojections it shares with $\tilde Q$.</li>
 <li><a href="biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, for the exponential, the logarithm and the powers, which fix the Hamilton parameters and carry their multivaluedness.</li>

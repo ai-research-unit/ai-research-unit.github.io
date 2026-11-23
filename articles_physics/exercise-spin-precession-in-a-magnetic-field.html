@@ -126,11 +126,11 @@ $$</p>
 <h3 id="step-1-the-state_1">Step 1: The state</h3>
 <p>In the biquaternion framework, a pure spin state is an <strong>idempotent</strong> of the Hermitian subspace $\mathbb{B}_{\Psi}$, of the form</p>
 <p>$$
-\tilde\Pi(\vec u_m) = \tfrac{1}{2}\left(e_t + i\vec u_m\right),
+\tilde\Pi_{\mathrm{id}}(\vec u_m) = \tfrac{1}{2}\left(e_t + i\vec u_m\right),
 $$</p>
 <p>where $\vec u_m$ is a unit pure real quaternion. The spin-up state along $x$ corresponds to $\vec u_m = \vec e_x$, giving</p>
 <p>$$
-\tilde\Pi_x = \tfrac{1}{2}\left(e_t + i \vec e_x\right).
+\tilde\Pi_{\mathrm{id},x} = \tfrac{1}{2}\left(e_t + i \vec e_x\right).
 $$</p>
 <h3 id="step-2-the-hamiltonian_1">Step 2: The Hamiltonian</h3>
 <p>The spin observable along $z$ is $\tilde{S}_{\Psi,z} =\frac{\hbar}{2}\,i \vec e_z$. The Hamiltonian is therefore the Hermitian element of $\mathbb{B}_{\Psi}$</p>
@@ -146,7 +146,7 @@ $$</p>
 <p>where we have used the identity $\exp(\theta\,\vec e_z) = \cos\theta\,e_t + \sin\theta\,\vec e_z$, which follows from $\vec e_z^2 = -e_t$, and set $\theta = -\omega_L r'_t/c/2$.</p>
 <p>The evolved state is</p>
 <p>$$
-\tilde{Ϛ}_{\Psi}(r'_t) = \tilde{U}(r'_t)\,\tilde\Pi_x\,\tilde{U}(r'_t)^{*}.
+\tilde{Ϛ}_{\Psi}(r'_t) = \tilde{U}(r'_t)\,\tilde\Pi_{\mathrm{id},x}\,\tilde{U}(r'_t)^{*}.
 $$</p>
 <p>Computing the product, using $\tilde{U}(r'_t)^{*} = \tilde{U}^{\natural}(r'_t) = \cos(\omega_L r'_t/(2c))\,e_t + \sin(\omega_L r'_t/(2c))\,\vec e_z$ (since $\tilde{U}$ is a real quaternion), gives</p>
 <p>$$
@@ -241,7 +241,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>We have solved a second exercise in quantum physics — the Larmor precession of a spin in a magnetic field — in two parallel presentations.</p>
 <p>In the standard formulation, the solution proceeds through ket vectors, Pauli matrices, the Hamiltonian, the evolution operator, and the expectation value, giving $\langle  S_x\rangle(r'_t) =\frac{\hbar}{2}\cos(\omega_L r'_t/c)$.</p>
-<p>In the biquaternion formulation, the solution proceeds through the idempotent $\tilde\Pi_x$, the Hermitian Hamiltonian $\tilde H_\Psi$, the unit-norm evolution biquaternion $\tilde{U}(r'_t)$, the evolved state $\tilde{Ϛ}_{\Psi}(r'_t)$, and the pairing formula, giving the same result.</p>
+<p>In the biquaternion formulation, the solution proceeds through the idempotent $\tilde\Pi_{\mathrm{id},x}$, the Hermitian Hamiltonian $\tilde H_\Psi$, the unit-norm evolution biquaternion $\tilde{U}(r'_t)$, the evolved state $\tilde{Ϛ}_{\Psi}(r'_t)$, and the pairing formula, giving the same result.</p>
 <p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the evolution: the Hamiltonian is a Hermitian element of $\mathbb{B}_{\Psi}$, the evolution operator is a unit-norm biquaternion, the evolved state is the rotor conjugate of the initial state, and the expectation value is the normalised Hermitian form, read through the trace.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -285,7 +285,7 @@ $$</p>
 <td>Larmor frequency</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_x = \tfrac{1}{2}(e_t + i\vec e_x)$</td>
+<td>$\tilde\Pi_{\mathrm{id},x} = \tfrac{1}{2}(e_t + i\vec e_x)$</td>
 <td>Spin-up state along $x$</td>
 </tr>
 <tr>

@@ -151,7 +151,7 @@ $$</p>
 <p>$$
 \tilde q^{\natural} = q_t e_t - q_x\vec e_x - q_y\vec e_y - q_z\vec e_z .
 $$</p>
-<p>An element is <strong>Hermitian</strong> if $\tilde\nu^{\natural}=\tilde\nu$ and <strong>anti-Hermitian</strong> if $\tilde\nu^{\natural}=-\tilde\nu$. The Hermitian elements are the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$, and the anti-Hermitian elements are the pure quaternions</p>
+<p>An element is <strong>Hermitian</strong> if $\tilde\pi_{\mathrm{nil}}^{\natural}=\tilde\pi_{\mathrm{nil}}$ and <strong>anti-Hermitian</strong> if $\tilde\pi_{\mathrm{nil}}^{\natural}=-\tilde\pi_{\mathrm{nil}}$. The Hermitian elements are the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$, and the anti-Hermitian elements are the pure quaternions</p>
 <p>$$
 \operatorname{Im}\mathbb{H} = \{\,q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\,\}.
 $$</p>
@@ -161,9 +161,9 @@ $$</p>
 $$</p>
 <p>The scalar line is a subalgebra. The pure subspace is not: the product of two pure quaternions has a scalar part, $\vec v\vec w=-\vec v\cdot\vec w+\vec v\times\vec w$. The modulus lies on the scalar axis, and the unit sphere meets that axis at $\pm e_t$. Every unit quaternion other than $\pm e_t$ has a nonzero vector part, and it is written $\cos\theta+\vec n\sin\theta$ with $\vec n$ a unit pure quaternion and $\theta\in(0,\pi)$; this is the axis-angle form developed in <em>Polar Decomposition of Quaternions</em>.</p>
 <h3 id="the-roots-of-plus-one-zero-and-minus-one">The Roots of Plus One, Zero and Minus One</h3>
-<p>Let $\tilde\nu=q_t e_t+\vec v$ with $\vec v$ pure and solve $\tilde\nu^2=c$ for $c\in\{-1,0,+1\}$. Since</p>
+<p>Let $\tilde\pi_{\mathrm{nil}}=q_t e_t+\vec v$ with $\vec v$ pure and solve $\tilde\pi_{\mathrm{nil}}^2=c$ for $c\in\{-1,0,+1\}$. Since</p>
 <p>$$
-\tilde\nu^2=(q_t^2-\langle\vec v\rangle_{\natural})e_t+2q_t\vec v,
+\tilde\pi_{\mathrm{nil}}^2=(q_t^2-\langle\vec v\rangle_{\natural})e_t+2q_t\vec v,
 $$</p>
 <p>the vector part vanishes when $q_t=0$ or $\vec v=0$. The solutions are listed in the following table.</p>
 <div class="table-scroll"><table>
@@ -172,25 +172,25 @@ $$</p>
 <th>equation</th>
 <th>roots in $\mathbb{H}$</th>
 <th>row of the exponential</th>
-<th>image of $t\mapsto\exp(\tilde\nu t)$</th>
+<th>image of $t\mapsto\exp(\tilde\pi_{\mathrm{nil}} t)$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde\nu^2=-1$</td>
-<td>$\tilde\nu=\vec n$, a unit pure quaternion: the sphere $S^2$</td>
+<td>$\tilde\pi_{\mathrm{nil}}^2=-1$</td>
+<td>$\tilde\pi_{\mathrm{nil}}=\vec n$, a unit pure quaternion: the sphere $S^2$</td>
 <td>trigonometric</td>
 <td>the circle $\cos t+\vec n\sin t$</td>
 </tr>
 <tr>
-<td>$\tilde\nu^2=0$</td>
-<td>$\tilde\nu=0$</td>
+<td>$\tilde\pi_{\mathrm{nil}}^2=0$</td>
+<td>$\tilde\pi_{\mathrm{nil}}=0$</td>
 <td>parabolic</td>
 <td>$\{1\}$</td>
 </tr>
 <tr>
-<td>$\tilde\nu^2=+1$</td>
-<td>$\tilde\nu=\pm1$</td>
+<td>$\tilde\pi_{\mathrm{nil}}^2=+1$</td>
+<td>$\tilde\pi_{\mathrm{nil}}=\pm1$</td>
 <td>hyperbolic</td>
 <td>$\mathbb{R}_{>0}$ for both signs</td>
 </tr>

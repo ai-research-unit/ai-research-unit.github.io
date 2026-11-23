@@ -131,7 +131,7 @@
 <h2 id="what-the-second-quantised-category-adds">What the Second-Quantised Category Adds</h2>
 <p><strong>The vacuum is an algebraic object.</strong> The category opens with the vacuum as a minimal idempotent:</p>
 <p>$$
-\tilde\Pi_+=\tfrac12\bigl(e_t+i\vec e_z\bigr),\qquad \tilde\Pi_+^2=\tilde\Pi_+,\qquad |0\rangle\langle0|=\tilde\Pi_+ .
+\tilde\Pi_{\mathrm{id},+}=\tfrac12\bigl(e_t+i\vec e_z\bigr),\qquad \tilde\Pi_{\mathrm{id},+}^2=\tilde\Pi_{\mathrm{id},+},\qquad |0\rangle\langle0|=\tilde\Pi_{\mathrm{id},+} .
 $$</p>
 <p>"No particles" is not a vector added to the theory. It is a rank-one projection inside the algebra, and the one-particle module is the minimal left ideal it defines.</p>
 <p><strong>The Fock space is built on that module.</strong> The Fock space article fixes the standard construction and then asks where its objects live:</p>
@@ -148,7 +148,7 @@ $$</p>
 <p><strong>The bosonic obstruction is a theorem.</strong> One bosonic mode needs $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$. No such pair exists in $\mathbb{B}$. The scalar part of a commutator vanishes, while $2\,\mathrm{Sc}(e_t)=2$. The only relation of the form $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$ that can hold has $c=0$. The Maxwell and scalar Fock spaces are therefore standard constructions on an imported module.</p>
 <p><strong>The fermionic mode does exist.</strong> The algebra contains nilpotent odd generators with</p>
 <p>$$
-\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t,\qquad \vec\Upsilon_x^2=\vec\Upsilon_y^2=0 .
+\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\}=e_t,\qquad \vec\Pi_{\mathrm{nil},x}^2=\vec\Pi_{\mathrm{nil},y}^2=0 .
 $$</p>
 <p>One fermionic mode is native. The rest of the fermionic Fock space is the exterior algebra of the Dirac one-particle module.</p>
 <p><strong>The corpus states the limit in every relevant article.</strong> The Klein–Gordon quantisation article says the scalar field takes values in the centre and the algebra supplies no bosonic ladder. The Proca article says the bosonic ladder is not native. The Fock-space article says "there is no Fock space in $\mathbb{B}$" and puts the statement in bold. The scalar path-integral article says the bosonic gap persists diagrammatically.</p>
@@ -398,11 +398,11 @@ grep -n &quot;It forbids calling the family&quot; articles_physics/the-lagrangia
 <td>material and informational sectors</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_+$</td>
+<td>$\tilde\Pi_{\mathrm{id},+}$</td>
 <td>minimal idempotent, the vacuum $\lvert 0\rangle\langle 0\rvert$</td>
 </tr>
 <tr>
-<td>$\vec\Upsilon_x,\vec\Upsilon_y$</td>
+<td>$\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}$</td>
 <td>odd nilpotent generators, one fermionic mode</td>
 </tr>
 <tr>

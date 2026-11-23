@@ -83,14 +83,14 @@ $$</p>
 $$</p>
 <p>A <strong>stabilizer group</strong> is an abelian subgroup $S$ of these elements not containing $-e_t^{\otimes n}$, and the code space is the image of the <strong>code idempotent</strong></p>
 <p>$$
-\tilde\Pi = \frac{1}{|S|}\sum_{\tilde U\in S}\tilde U \ \in\ \mathbb{B}_{\Psi}^{\otimes n},
+\tilde\Pi_{\mathrm{id}} = \frac{1}{|S|}\sum_{\tilde U\in S}\tilde U \ \in\ \mathbb{B}_{\Psi}^{\otimes n},
 \qquad
-\tilde\Pi^2 = \tilde\Pi, \qquad 2^n\,\mathrm{Sc}(\tilde\Pi) = \frac{2^n}{|S|} ,
+\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}, \qquad 2^n\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}) = \frac{2^n}{|S|} ,
 $$</p>
 <p>which is an idempotent of the tensor-product algebra, and where the factor $2^n$ is the size of the $2^n\times2^n$ image of the tensor algebra. The whole theory of stabilizer codes is thus a theory of <strong>commutative subalgebras and their idempotents</strong>, expressed in the algebra that this series uses throughout: the code space is a Peirce component of a commutative subalgebra, and the syndrome measurement projects onto its idempotents.</p>
-<p>The central result is the <strong>Knill–Laflamme error-correction condition</strong>. An error set $\{\tilde E_{\mathrm{err},a}\}$ — the index $a$ runs over arbitrary elements of $\mathbb{B}$, and no sector letter applies, an error being a general element — is correctable by the code with idempotent $\tilde\Pi$ exactly when</p>
+<p>The central result is the <strong>Knill–Laflamme error-correction condition</strong>. An error set $\{\tilde E_{\mathrm{err},a}\}$ — the index $a$ runs over arbitrary elements of $\mathbb{B}$, and no sector letter applies, an error being a general element — is correctable by the code with idempotent $\tilde\Pi_{\mathrm{id}}$ exactly when</p>
 <p>$$
-\tilde\Pi\,\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\,\tilde\Pi = c_{ab}\,\tilde\Pi
+\tilde\Pi_{\mathrm{id}}\,\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\,\tilde\Pi_{\mathrm{id}} = c_{ab}\,\tilde\Pi_{\mathrm{id}}
 \qquad \text{for all } a,b ,
 $$</p>
 <p>a set of algebraic conditions on the products of errors placed between the code idempotent. The article states the condition, sketches why it is necessary and sufficient, and verifies it in the algebra for two standard codes: the three-qubit bit-flip code, which corrects any single bit-flip error, and the five-qubit perfect code, which corrects an arbitrary single-qubit error and is verified here for all fifteen nontrivial single-qubit error operators.</p>
@@ -111,31 +111,31 @@ $$</p>
 <h3 id="the-code-idempotent">The code idempotent</h3>
 <p>The <strong>code idempotent</strong> is</p>
 <p>$$
-\tilde\Pi = \frac{1}{|S|}\sum_{\tilde U\in S}\tilde U .
+\tilde\Pi_{\mathrm{id}} = \frac{1}{|S|}\sum_{\tilde U\in S}\tilde U .
 $$</p>
 <p>Three facts, all consequences of the group structure, make it an idempotent:</p>
 <ul>
-<li><strong>Idempotent.</strong> Since $S$ is a group, $\left(\sum_{\tilde U\in S}\tilde U\right)^2 = \sum_{\tilde U\in S}|S|\,\tilde U = |S|\sum_{\tilde U}\tilde U$, so $\tilde\Pi^2 = \tilde\Pi$.</li>
-<li><strong>Hermitian and positive.</strong> Each $\tilde U$ is Hermitian, so $\tilde\Pi^{*} = \tilde\Pi$; and $\tilde\Pi$ is a sum of commuting involutions, hence it is a positive element of $\mathbb{B}_{\Psi}^{\otimes n}$ with eigenvalues $0$ and $1$.</li>
-<li><strong>Reduced value.</strong> $2^n\,\mathrm{Sc}(\tilde\Pi) = |S|^{-1}\,2^n\,\mathrm{Sc}(e_t^{\otimes n}) = 2^n/|S| = 2^k$, the dimension of the code space.</li>
+<li><strong>Idempotent.</strong> Since $S$ is a group, $\left(\sum_{\tilde U\in S}\tilde U\right)^2 = \sum_{\tilde U\in S}|S|\,\tilde U = |S|\sum_{\tilde U}\tilde U$, so $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$.</li>
+<li><strong>Hermitian and positive.</strong> Each $\tilde U$ is Hermitian, so $\tilde\Pi_{\mathrm{id}}^{*} = \tilde\Pi_{\mathrm{id}}$; and $\tilde\Pi_{\mathrm{id}}$ is a sum of commuting involutions, hence it is a positive element of $\mathbb{B}_{\Psi}^{\otimes n}$ with eigenvalues $0$ and $1$.</li>
+<li><strong>Reduced value.</strong> $2^n\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}) = |S|^{-1}\,2^n\,\mathrm{Sc}(e_t^{\otimes n}) = 2^n/|S| = 2^k$, the dimension of the code space.</li>
 </ul>
 <p>Thus the code space is the image of an idempotent of the algebra, and its dimension is $2^k$: the code encodes $k$ logical qubits into $n$ physical qubits. The idempotent is a <strong>Peirce component</strong> of the commutative subalgebra spanned by $S$; it is the maximal idempotent whose stabilizer is all of $S$.</p>
 <h3 id="errors">Errors</h3>
 <p>An <strong>error</strong> is an element $\tilde E_{\mathrm{err},a}$ of the Pauli group, typically a tensor product with at most a few nontrivial factors. The action of the environment is a channel, and the channel's Kraus operators can be expanded in the Pauli group; if a code corrects a set of errors, it corrects any channel whose Kraus operators lie in the span of that set. This is the algebraic reduction of error correction to the finite list of Pauli errors, and it is why the analysis below can be carried out on the Pauli group alone. The channel formalism is that of the companion article <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>.</p>
 <h2 id="the-knilllaflamme-condition">The Knill–Laflamme Condition</h2>
 <h3 id="statement">Statement</h3>
-<p>The code with idempotent $\tilde\Pi$ corrects the error set $\{\tilde E_{\mathrm{err},a}\}$ if and only if</p>
+<p>The code with idempotent $\tilde\Pi_{\mathrm{id}}$ corrects the error set $\{\tilde E_{\mathrm{err},a}\}$ if and only if</p>
 <p>$$
-\boxed{\;\tilde\Pi\,\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\,\tilde\Pi = c_{ab}\,\tilde\Pi
+\boxed{\;\tilde\Pi_{\mathrm{id}}\,\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\,\tilde\Pi_{\mathrm{id}} = c_{ab}\,\tilde\Pi_{\mathrm{id}}
 \qquad \text{for all } a,b\;},
 $$</p>
 <p>where $c = (c_{ab})$ is a Hermitian matrix of numbers, independent of the encoded state.</p>
 <h3 id="why-it-is-necessary">Why it is necessary</h3>
-<p>Suppose the code can correct the errors $\{\tilde E_{\mathrm{err},a}\}$, so that there is a recovery map $\mathcal{R}$ with $\mathcal{R}(\tilde E_{\mathrm{err},a}\tilde{Ϛ}_{\Psi}\tilde E_{\mathrm{err},a}^{*}) = p_a\tilde{Ϛ}_{\Psi}$ for every encoded $\tilde{Ϛ}_{\Psi} = \tilde\Pi\tilde{Ϛ}_{\Psi}\tilde\Pi$ and some probability $p_a>0$. Linearity of the recovery forces the relation $c_{ab}$: the recovery must act identically on the images of the code under the different errors, and the only way it can do so on the whole code space is if the operators $\tilde\Pi\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\tilde\Pi$ are all proportional to $\tilde\Pi$. Equivalently: if two different errors had distinguishable effects on the code space, no single recovery could undo both.</p>
+<p>Suppose the code can correct the errors $\{\tilde E_{\mathrm{err},a}\}$, so that there is a recovery map $\mathcal{R}$ with $\mathcal{R}(\tilde E_{\mathrm{err},a}\tilde{Ϛ}_{\Psi}\tilde E_{\mathrm{err},a}^{*}) = p_a\tilde{Ϛ}_{\Psi}$ for every encoded $\tilde{Ϛ}_{\Psi} = \tilde\Pi_{\mathrm{id}}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id}}$ and some probability $p_a>0$. Linearity of the recovery forces the relation $c_{ab}$: the recovery must act identically on the images of the code under the different errors, and the only way it can do so on the whole code space is if the operators $\tilde\Pi_{\mathrm{id}}\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\tilde\Pi_{\mathrm{id}}$ are all proportional to $\tilde\Pi_{\mathrm{id}}$. Equivalently: if two different errors had distinguishable effects on the code space, no single recovery could undo both.</p>
 <h3 id="why-it-is-sufficient">Why it is sufficient</h3>
-<p>If the condition holds, diagonalize the Hermitian matrix $c = u\,d\,u^\dagger$ with $d$ diagonal. Then the rotated error operators $\tilde{F}_\alpha = \sum_a u_{a\alpha}\tilde E_{\mathrm{err},a}$ satisfy $\tilde\Pi\tilde{F}_\alpha^{*}\tilde{F}_\beta\tilde\Pi = d_\alpha\delta_{\alpha\beta}\tilde\Pi$. The errors $\{\tilde{F}_\alpha\}$ therefore map the code space to mutually orthogonal subspaces, $\tilde{F}_\alpha\tilde\Pi\tilde{F}_\beta^{*} = 0$ for $\alpha\neq\beta$, and each acts within its subspace in a way that depends only on $\alpha$. A measurement that identifies which subspace the state fell into — the <strong>syndrome measurement</strong> — followed by an operation that reverses $\tilde{F}_\alpha$ on that subspace restores the encoded state. This is the standard construction, and it is a statement about the algebra: the condition says that the error operators, restricted to the Peirce component $\tilde\Pi$, form a set of "orthogonal" block actions.</p>
+<p>If the condition holds, diagonalize the Hermitian matrix $c = u\,d\,u^\dagger$ with $d$ diagonal. Then the rotated error operators $\tilde{F}_\alpha = \sum_a u_{a\alpha}\tilde E_{\mathrm{err},a}$ satisfy $\tilde\Pi_{\mathrm{id}}\tilde{F}_\alpha^{*}\tilde{F}_\beta\tilde\Pi_{\mathrm{id}} = d_\alpha\delta_{\alpha\beta}\tilde\Pi_{\mathrm{id}}$. The errors $\{\tilde{F}_\alpha\}$ therefore map the code space to mutually orthogonal subspaces, $\tilde{F}_\alpha\tilde\Pi_{\mathrm{id}}\tilde{F}_\beta^{*} = 0$ for $\alpha\neq\beta$, and each acts within its subspace in a way that depends only on $\alpha$. A measurement that identifies which subspace the state fell into — the <strong>syndrome measurement</strong> — followed by an operation that reverses $\tilde{F}_\alpha$ on that subspace restores the encoded state. This is the standard construction, and it is a statement about the algebra: the condition says that the error operators, restricted to the Peirce component $\tilde\Pi_{\mathrm{id}}$, form a set of "orthogonal" block actions.</p>
 <h3 id="the-condition-in-the-algebra">The condition in the algebra</h3>
-<p>The condition is naturally stated in the tensor-product algebra. $\tilde\Pi$ is an idempotent of $\mathbb{B}_{\Psi}^{\otimes n}$; the errors are elements of the Pauli group; the two-sided operator $\tilde\Pi\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\tilde\Pi$ is an element of the algebra, and the condition says it is scalar on the code. The numbers $c_{ab}$ form the <strong>Gram matrix</strong> of the error operators restricted to the code space, and correcting the errors means that this Gram matrix is all the code sees of the errors: the encoded state is not resolved.</p>
+<p>The condition is naturally stated in the tensor-product algebra. $\tilde\Pi_{\mathrm{id}}$ is an idempotent of $\mathbb{B}_{\Psi}^{\otimes n}$; the errors are elements of the Pauli group; the two-sided operator $\tilde\Pi_{\mathrm{id}}\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\tilde\Pi_{\mathrm{id}}$ is an element of the algebra, and the condition says it is scalar on the code. The numbers $c_{ab}$ form the <strong>Gram matrix</strong> of the error operators restricted to the code space, and correcting the errors means that this Gram matrix is all the code sees of the errors: the encoded state is not resolved.</p>
 <h2 id="the-three-qubit-bit-flip-code">The Three-Qubit Bit-Flip Code</h2>
 <h3 id="the-code">The code</h3>
 <p>The simplest code protects against a single bit flip. Let the stabilizer group be generated by $Z_1Z_2$ and $Z_2Z_3$, so that</p>
@@ -146,21 +146,21 @@ Z_1Z_2 \ \leftrightarrow\ (i\vec e_z)\otimes(i\vec e_z)\otimes e_t,
 $$</p>
 <p>and the code idempotent is</p>
 <p>$$
-\tilde\Pi = \tfrac{1}{4}\Bigl(e_t^{\otimes3} + Z_1Z_2 + Z_2Z_3 + Z_1Z_3\Bigr)
-= \tilde\Pi_{000} + \tilde\Pi_{111},
+\tilde\Pi_{\mathrm{id}} = \tfrac{1}{4}\Bigl(e_t^{\otimes3} + Z_1Z_2 + Z_2Z_3 + Z_1Z_3\Bigr)
+= \tilde\Pi_{\mathrm{id},000} + \tilde\Pi_{\mathrm{id},111},
 $$</p>
 <p>the sum of the idempotents of $|000\rangle$ and $|111\rangle$. The code space is two-dimensional: one logical qubit is encoded in three physical qubits, and the logical states are the superpositions of $|000\rangle$ and $|111\rangle$.</p>
 <h3 id="verification">Verification</h3>
 <p>The following were verified by explicit computation with the $8\times8$ matrices:</p>
 <ul>
-<li><strong>Idempotency and reduced value.</strong> $\tilde\Pi^2 = \tilde\Pi$ and $2^n\,\mathrm{Sc}(\tilde\Pi) = 2$, so the code space has dimension $2^1 = 2$, as required for one logical qubit.</li>
+<li><strong>Idempotency and reduced value.</strong> $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$ and $2^n\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}) = 2$, so the code space has dimension $2^1 = 2$, as required for one logical qubit.</li>
 <li><strong>Correction of bit flips.</strong> For the error set $\{e_t^{\otimes3}, X_1, X_2, X_3\}$, the Knill–Laflamme condition holds with $c_{ab} = \delta_{ab}$:</li>
 </ul>
 <p>$$
-\boxed{\;\tilde\Pi X_iX_j\tilde\Pi = \delta_{ij}\tilde\Pi\;},
+\boxed{\;\tilde\Pi_{\mathrm{id}} X_iX_j\tilde\Pi_{\mathrm{id}} = \delta_{ij}\tilde\Pi_{\mathrm{id}}\;},
 $$</p>
 <p>verified for all $i,j$. A single bit flip is therefore correctable.
-- <strong>Failure for phase flips.</strong> The same check fails for the error $Z_1$: $\tilde\Pi Z_1Z_1\tilde\Pi = \tilde\Pi$, but $\tilde\Pi Z_1\tilde\Pi = \tilde\Pi Z_1$ is not a multiple of $\tilde\Pi$, and the pair $(e_t^{\otimes3}, Z_1)$ violates the condition. A phase flip is not detected by this code; it acts on the code space as the logical $Z$ operator, which is why a code for arbitrary errors needs more structure.</p>
+- <strong>Failure for phase flips.</strong> The same check fails for the error $Z_1$: $\tilde\Pi_{\mathrm{id}} Z_1Z_1\tilde\Pi_{\mathrm{id}} = \tilde\Pi_{\mathrm{id}}$, but $\tilde\Pi_{\mathrm{id}} Z_1\tilde\Pi_{\mathrm{id}} = \tilde\Pi_{\mathrm{id}} Z_1$ is not a multiple of $\tilde\Pi_{\mathrm{id}}$, and the pair $(e_t^{\otimes3}, Z_1)$ violates the condition. A phase flip is not detected by this code; it acts on the code space as the logical $Z$ operator, which is why a code for arbitrary errors needs more structure.</p>
 <h3 id="syndrome-measurement">Syndrome measurement</h3>
 <p>A bit flip on the $i$-th qubit anticommutes with the stabilizers that involve $Z_i$, so measuring the two generators yields a two-bit <strong>syndrome</strong> that identifies which qubit flipped:</p>
 <div class="table-scroll"><table>
@@ -195,36 +195,36 @@ $$</p>
 $$</p>
 <p>each factor standing for the corresponding Hermitian involution $X=i\vec e_x$ or $Z=i\vec e_z$ on that qubit. The generators are cyclic shifts of one another, they commute, and they are independent, so $|S| = 16$ and the code space has dimension $32/16 = 2$: one logical qubit in five physical qubits. The code idempotent is</p>
 <p>$$
-\tilde\Pi = \frac{1}{16}\prod_{i=1}^{4}\bigl(e_t^{\otimes5} + \tilde U_i\bigr)
+\tilde\Pi_{\mathrm{id}} = \frac{1}{16}\prod_{i=1}^{4}\bigl(e_t^{\otimes5} + \tilde U_i\bigr)
 = \frac{1}{16}\sum_{\tilde U\in S}\tilde U .
 $$</p>
 <h3 id="verification_1">Verification</h3>
 <p>The following were verified by explicit computation with the $32\times32$ matrices.</p>
 <ul>
 <li><strong>Commutativity and independence.</strong> All four generators commute pairwise, so $S$ is abelian; the group has order $16$ and the idempotent has trace $2$.</li>
-<li><strong>Idempotency.</strong> $\tilde\Pi^2 = \tilde\Pi$, with spectrum in $\{0,1\}$ and $2^n\,\mathrm{Sc}(\tilde\Pi) = 2$, so the code space is two-dimensional.</li>
-<li><strong>Knill–Laflamme for every single-qubit error.</strong> The error set $\{e_t^{\otimes5}\}\cup\{X_i,Y_i,Z_i\}_{i=1}^{5}$ has sixteen elements. For every pair $a,b$ of these sixteen, the two-sided operator $\tilde\Pi\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\tilde\Pi$ was found to be a multiple of $\tilde\Pi$, to machine precision. The five-qubit code therefore corrects <strong>an arbitrary single-qubit error</strong>.</li>
+<li><strong>Idempotency.</strong> $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$, with spectrum in $\{0,1\}$ and $2^n\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}) = 2$, so the code space is two-dimensional.</li>
+<li><strong>Knill–Laflamme for every single-qubit error.</strong> The error set $\{e_t^{\otimes5}\}\cup\{X_i,Y_i,Z_i\}_{i=1}^{5}$ has sixteen elements. For every pair $a,b$ of these sixteen, the two-sided operator $\tilde\Pi_{\mathrm{id}}\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\tilde\Pi_{\mathrm{id}}$ was found to be a multiple of $\tilde\Pi_{\mathrm{id}}$, to machine precision. The five-qubit code therefore corrects <strong>an arbitrary single-qubit error</strong>.</li>
 <li><strong>Perfection.</strong> The fifteen errors $X_i,Y_i,Z_i$ ($i=1,\dots,5$) have fifteen distinct nonzero syndromes in $\{0,1\}^4\setminus\{0\}$, so the syndrome measurement identifies the error uniquely. This is the sense in which the code is <strong>perfect</strong>: the $32$-dimensional space decomposes exactly into the code space and the fifteen orthogonal error subspaces, with no room to spare. The counting is $1 + 15 = 16 = 2^{5-1}$, the size of the syndrome space.</li>
 </ul>
 <h3 id="the-code-as-an-idempotent">The code as an idempotent</h3>
-<p>Both codes have the same algebraic shape: a stabilizer group $S$, a code idempotent $\tilde\Pi = |S|^{-1}\sum_{\tilde U\in S}\tilde U$ in $\mathbb{B}_{\Psi}^{\otimes n}$, and errors whose Gram matrix on the code is scalar. The five-qubit code is the smallest case in which the error set is the full single-qubit Pauli set and the code is perfect, and it is the algebraically cleanest illustration of the Knill–Laflamme condition: the error subspaces are the images of the idempotents $\tilde{F}_\alpha\tilde\Pi\tilde{F}_\alpha^{*}$ for an orthonormalized error basis, and they tile the full space.</p>
+<p>Both codes have the same algebraic shape: a stabilizer group $S$, a code idempotent $\tilde\Pi_{\mathrm{id}} = |S|^{-1}\sum_{\tilde U\in S}\tilde U$ in $\mathbb{B}_{\Psi}^{\otimes n}$, and errors whose Gram matrix on the code is scalar. The five-qubit code is the smallest case in which the error set is the full single-qubit Pauli set and the code is perfect, and it is the algebraically cleanest illustration of the Knill–Laflamme condition: the error subspaces are the images of the idempotents $\tilde{F}_\alpha\tilde\Pi_{\mathrm{id}}\tilde{F}_\alpha^{*}$ for an orthonormalized error basis, and they tile the full space.</p>
 <h3 id="the-code-idempotent-as-a-group-algebra-idempotent">The code idempotent as a group-algebra idempotent</h3>
 <p>The construction has a transparent algebraic meaning. Since $S$ is a finite abelian group of commuting involutions, its group algebra is</p>
 <p>$$
-\mathbb{C}[S] \ \cong\ \bigoplus_{\xi}\mathbb{C}\tilde\Pi_\xi,
+\mathbb{C}[S] \ \cong\ \bigoplus_{\xi}\mathbb{C}\tilde\Pi_{\mathrm{id},\xi},
 \qquad
-\tilde\Pi_\xi = \frac{1}{|S|}\sum_{\tilde U\in S}\xi(\tilde U)^{-1}\,\tilde U,
+\tilde\Pi_{\mathrm{id},\xi} = \frac{1}{|S|}\sum_{\tilde U\in S}\xi(\tilde U)^{-1}\,\tilde U,
 $$</p>
-<p>where the $\xi$ run over the $|S|$ characters $S\to\{\pm1\}$ and the $\tilde\Pi_\xi$ are the <strong>central idempotents of the group algebra</strong>, satisfying $\tilde\Pi_\xi \tilde\Pi_{\xi_2} = \delta_{\xi\xi_2}\tilde\Pi_\xi$ and $\sum_\xi \tilde\Pi_\xi = e_t^{\otimes n}$. The code idempotent is the trivial-character idempotent,</p>
+<p>where the $\xi$ run over the $|S|$ characters $S\to\{\pm1\}$ and the $\tilde\Pi_{\mathrm{id},\xi}$ are the <strong>central idempotents of the group algebra</strong>, satisfying $\tilde\Pi_{\mathrm{id},\xi} \tilde\Pi_{\mathrm{id},\xi_2} = \delta_{\xi\xi_2}\tilde\Pi_{\mathrm{id},\xi}$ and $\sum_\xi \tilde\Pi_{\mathrm{id},\xi} = e_t^{\otimes n}$. The code idempotent is the trivial-character idempotent,</p>
 <p>$$
-\boxed{\;\tilde\Pi = \tilde\Pi_{\mathrm{triv}} = \frac{1}{|S|}\sum_{\tilde U\in S}\tilde U\;},
+\boxed{\;\tilde\Pi_{\mathrm{id}} = \tilde\Pi_{\mathrm{id,triv}} = \frac{1}{|S|}\sum_{\tilde U\in S}\tilde U\;},
 $$</p>
-<p>and the other $|S|-1$ idempotents $\tilde\Pi_\xi$ have the syndrome subspaces as their images. The syndrome measurement is thus the measurement of the character $\xi$, i.e. the simultaneous measurement of the generators; each outcome corresponds to one of the group-algebra idempotents. This is why the code space and the error subspaces together tile the whole module: they are the images of a complete family of central idempotents of a finite abelian group algebra, acting on the tensored module. The counting $2^n = |S|\times 2^k$ is the statement $\dim = \sum_\xi 2^n\,\mathrm{Sc}(\tilde\Pi_\xi)$, with each $2^n\,\mathrm{Sc}(\tilde\Pi_\xi) = 2^k$.</p>
+<p>and the other $|S|-1$ idempotents $\tilde\Pi_{\mathrm{id},\xi}$ have the syndrome subspaces as their images. The syndrome measurement is thus the measurement of the character $\xi$, i.e. the simultaneous measurement of the generators; each outcome corresponds to one of the group-algebra idempotents. This is why the code space and the error subspaces together tile the whole module: they are the images of a complete family of central idempotents of a finite abelian group algebra, acting on the tensored module. The counting $2^n = |S|\times 2^k$ is the statement $\dim = \sum_\xi 2^n\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\xi})$, with each $2^n\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},\xi}) = 2^k$.</p>
 <h2 id="what-the-framework-adds-and-what-it-does-not">What the Framework Adds and What It Does Not</h2>
 <p><strong>What it does.</strong></p>
 <ul>
-<li>It identifies the code space with the image of an idempotent $\tilde\Pi = |S|^{-1}\sum_{\tilde U\in S}\tilde U$ of the tensor-product algebra $\mathbb{B}_{\Psi}^{\otimes n}$, where $S$ is a finite commutative group of involutions; the code idempotent is a Peirce component of a commutative subalgebra.</li>
-<li>It states the Knill–Laflamme condition as a condition on the two-sided operator $\tilde\Pi\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\tilde\Pi$, i.e. on the Gram matrix of the errors restricted to the code.</li>
+<li>It identifies the code space with the image of an idempotent $\tilde\Pi_{\mathrm{id}} = |S|^{-1}\sum_{\tilde U\in S}\tilde U$ of the tensor-product algebra $\mathbb{B}_{\Psi}^{\otimes n}$, where $S$ is a finite commutative group of involutions; the code idempotent is a Peirce component of a commutative subalgebra.</li>
+<li>It states the Knill–Laflamme condition as a condition on the two-sided operator $\tilde\Pi_{\mathrm{id}}\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\tilde\Pi_{\mathrm{id}}$, i.e. on the Gram matrix of the errors restricted to the code.</li>
 <li>It identifies the syndrome measurement with the projection onto the joint eigen-idempotents of the generators, a Peirce decomposition of the commutative subalgebra.</li>
 <li>It verifies idempotency, the code dimension, Knill–Laflamme, and syndrome distinctness for the three-qubit bit-flip code and the five-qubit perfect code by explicit computation.</li>
 </ul>
@@ -244,15 +244,15 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>Quantum error correction in the biquaternion framework is the theory of commutative subgroups of the Pauli involutions and their idempotents. A stabilizer group is an abelian subgroup $S$ of the Hermitian involutions of $\mathbb{B}_{\Psi}^{\otimes n}$ with $-e_t^{\otimes n}\notin S$, generated by $n-k$ independent elements, and the code space is the image of the idempotent</p>
 <p>$$
-\tilde\Pi = \frac{1}{|S|}\sum_{\tilde U\in S}\tilde U,
-\qquad \tilde\Pi^2 = \tilde\Pi, \qquad 2^n\,\mathrm{Sc}(\tilde\Pi) = 2^k .
+\tilde\Pi_{\mathrm{id}} = \frac{1}{|S|}\sum_{\tilde U\in S}\tilde U,
+\qquad \tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}, \qquad 2^n\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}) = 2^k .
 $$</p>
 <p>An error set $\{\tilde E_{\mathrm{err},a}\}$ is correctable if and only if the <strong>Knill–Laflamme condition</strong></p>
 <p>$$
-\boxed{\;\tilde\Pi\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\tilde\Pi = c_{ab}\tilde\Pi\;}
+\boxed{\;\tilde\Pi_{\mathrm{id}}\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\tilde\Pi_{\mathrm{id}} = c_{ab}\tilde\Pi_{\mathrm{id}}\;}
 $$</p>
 <p>holds for all $a,b$: the error operators, restricted to the code, have a scalar Gram matrix and cannot resolve the encoded state. The syndrome measurement is the joint measurement of the commuting generators, i.e. the projection onto the joint eigen-idempotents of a commutative subalgebra.</p>
-<p>Two codes were constructed and verified. The three-qubit bit-flip code has $S$ generated by $Z_1Z_2$, $Z_2Z_3$, code idempotent $\tilde\Pi = \tfrac14(e_t^{\otimes3}+Z_1Z_2+Z_2Z_3+Z_1Z_3)$ with $2^3\,\mathrm{Sc}(\tilde\Pi) = 2$, and satisfies $\tilde\Pi X_iX_j\tilde\Pi = \delta_{ij}\tilde\Pi$, correcting any single bit flip and failing for phase flips. The five-qubit perfect code has the four cyclic generators $XZZXe_t$, $e_tXZZX$, $Xe_tXZZ$, $ZXe_tXZ$, code idempotent with $2^3\,\mathrm{Sc}(\tilde\Pi) = 2$, and satisfies the Knill–Laflamme condition for all sixteen single-qubit Pauli errors; its fifteen nontrivial single-qubit errors have fifteen distinct nonzero syndromes, so it corrects an arbitrary single-qubit error and tiles the $32$-dimensional space exactly.</p>
+<p>Two codes were constructed and verified. The three-qubit bit-flip code has $S$ generated by $Z_1Z_2$, $Z_2Z_3$, code idempotent $\tilde\Pi_{\mathrm{id}} = \tfrac14(e_t^{\otimes3}+Z_1Z_2+Z_2Z_3+Z_1Z_3)$ with $2^3\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}) = 2$, and satisfies $\tilde\Pi_{\mathrm{id}} X_iX_j\tilde\Pi_{\mathrm{id}} = \delta_{ij}\tilde\Pi_{\mathrm{id}}$, correcting any single bit flip and failing for phase flips. The five-qubit perfect code has the four cyclic generators $XZZXe_t$, $e_tXZZX$, $Xe_tXZZ$, $ZXe_tXZ$, code idempotent with $2^3\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}) = 2$, and satisfies the Knill–Laflamme condition for all sixteen single-qubit Pauli errors; its fifteen nontrivial single-qubit errors have fifteen distinct nonzero syndromes, so it corrects an arbitrary single-qubit error and tiles the $32$-dimensional space exactly.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -283,11 +283,11 @@ $$</p>
 <td>Stabilizer group, $\lvert S\rvert = 2^{n-k}$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi = \lvert S\rvert^{-1}\sum_{\tilde U\in S}\tilde U$</td>
+<td>$\tilde\Pi_{\mathrm{id}} = \lvert S\rvert^{-1}\sum_{\tilde U\in S}\tilde U$</td>
 <td>Code idempotent</td>
 </tr>
 <tr>
-<td>$\tilde\Pi^2=\tilde\Pi$, $2^n\,\mathrm{Sc}(\tilde\Pi) = 2^k$</td>
+<td>$\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$, $2^n\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}) = 2^k$</td>
 <td>Code properties ($k$ logical qubits)</td>
 </tr>
 <tr>
@@ -295,7 +295,7 @@ $$</p>
 <td>Error operator (Pauli group element)</td>
 </tr>
 <tr>
-<td>$\tilde\Pi\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\tilde\Pi = c_{ab}\tilde\Pi$</td>
+<td>$\tilde\Pi_{\mathrm{id}}\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\tilde\Pi_{\mathrm{id}} = c_{ab}\tilde\Pi_{\mathrm{id}}$</td>
 <td>Knill–Laflamme condition</td>
 </tr>
 <tr>

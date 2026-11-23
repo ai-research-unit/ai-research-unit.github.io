@@ -171,41 +171,41 @@ $$</p>
 <p><strong>Source.</strong> <code>articles_maths/zero-divisors-and-invertibles-in-the-biquaternion-algebra.md</code>, <code>articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md</code>, <code>articles_maths/the-square-of-an-element-in-the-biquaternion-algebra.md</code>, <code>articles_maths/the-square-roots-of-a-general-element-in-the-biquaternion-algebra.md</code></p>
 <h2 id="4-idempotents-nilpotents-peirce">4. Idempotents, Nilpotents, Peirce</h2>
 <p>$$
-\tilde\Pi_{\pm}(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),\qquad \vec u\cdot\vec u=1,
+\tilde\Pi_{\mathrm{id},\pm}(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),\qquad \vec u\cdot\vec u=1,
 $$</p>
 <p>$$
-\tilde\Pi_\pm^{2}=\tilde\Pi_\pm,\qquad \tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0,\qquad \tilde\Pi_++\tilde\Pi_-=e_t .
+\tilde\Pi_{\mathrm{id},\pm}^{2}=\tilde\Pi_{\mathrm{id},\pm},\qquad \tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=\tilde\Pi_{\mathrm{id},-}\tilde\Pi_{\mathrm{id},+}=0,\qquad \tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t .
 $$</p>
 <p><strong>The four corners.</strong></p>
 <p>$$
-\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t,\qquad
+\mathbb{B}_{st}=\tilde\Pi_{\mathrm{id},s}\mathbb{B}\tilde\Pi_{\mathrm{id},t},\qquad
 \mathbb{B}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--},\qquad \dim\mathbb{B}_{ss}=1,\ \dim\mathbb{B}_{st}=1 .
 $$</p>
 <p><strong>The nilpotents, and the basis they give.</strong></p>
 <p>$$
-\vec\Upsilon_{-+}=\tfrac12(i\vec a+\vec b),\qquad \vec\Upsilon_{+-}=\tfrac12(i\vec a-\vec b),\qquad
-\vec\Upsilon_{-+}^{2}=\vec\Upsilon_{+-}^{2}=0,\qquad \vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_-,\qquad \vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_+ ,
+\vec\Pi_{\mathrm{nil},-+}=\tfrac12(i\vec a+\vec b),\qquad \vec\Pi_{\mathrm{nil},+-}=\tfrac12(i\vec a-\vec b),\qquad
+\vec\Pi_{\mathrm{nil},-+}^{2}=\vec\Pi_{\mathrm{nil},+-}^{2}=0,\qquad \vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}=\tilde\Pi_{\mathrm{id},-},\qquad \vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}=\tilde\Pi_{\mathrm{id},+} ,
 $$</p>
 <p>$$
-\tilde Q=\bigl(Q_t-iQ_z\bigr)\tilde\Pi_++\bigl(-iQ_x+Q_y\bigr)\vec\Upsilon_{-+}+\bigl(-iQ_x-Q_y\bigr)\vec\Upsilon_{+-}+\bigl(Q_t+iQ_z\bigr)\tilde\Pi_- .
+\tilde Q=\bigl(Q_t-iQ_z\bigr)\tilde\Pi_{\mathrm{id},++}\bigl(-iQ_x+Q_y\bigr)\vec\Pi_{\mathrm{nil},-+}+\bigl(-iQ_x-Q_y\bigr)\vec\Pi_{\mathrm{nil},+-}+\bigl(Q_t+iQ_z\bigr)\tilde\Pi_{\mathrm{id},-} .
 $$</p>
 <p><strong>The non-trivial claim.</strong> The Peirce basis is the matrix-unit basis in disguise:</p>
 <p>$$
-\tilde\Pi_+=\begin{pmatrix}1&0\\0&0\end{pmatrix},\quad \tilde\Pi_-=\begin{pmatrix}0&0\\0&1\end{pmatrix},\quad \vec\Upsilon_{-+}=\begin{pmatrix}0&0\\1&0\end{pmatrix},\quad \vec\Upsilon_{+-}=\begin{pmatrix}0&1\\0&0\end{pmatrix}.
+\tilde\Pi_{\mathrm{id},+}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\quad \tilde\Pi_{\mathrm{id},-}=\begin{pmatrix}0&0\\0&1\end{pmatrix},\quad \vec\Pi_{\mathrm{nil},-+}=\begin{pmatrix}0&0\\1&0\end{pmatrix},\quad \vec\Pi_{\mathrm{nil},+-}=\begin{pmatrix}0&1\\0&0\end{pmatrix}.
 $$</p>
 <p>So "idempotent, nilpotent, Peirce corner" is not extra structure: it is the canonical form of $M_2(\mathbb{C})$. An agent should never treat a Peirce decomposition as an assumption.</p>
 <p><strong>Minimal left ideals.</strong></p>
 <p>$$
-S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)=\mathrm{span}_{\mathbb{C}}\{\tilde\Pi_\pm,\ \vec\Upsilon_{\mp\pm}\}\cong\mathbb{C}^{2}.
+S_\pm(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u)=\mathrm{span}_{\mathbb{C}}\{\tilde\Pi_{\mathrm{id},\pm},\ \vec\Pi_{\mathrm{nil},\mp\pm}\}\cong\mathbb{C}^{2}.
 $$</p>
 <p><strong>Source.</strong> <code>articles_maths/the-square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.md</code>, <code>articles_maths/the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md</code>, <code>articles_maths/the-minimal-left-ideals-of-the-biquaternion-algebra.md</code>, <code>articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.md</code>, <code>articles_maths/the-peirce-basis-of-the-biquaternion-algebra.md</code>, <code>articles_maths/the-companion-nilpotents-of-the-biquaternion-algebra.md</code>, <code>articles_maths/the-special-decomposition-of-a-biquaternion-under-a-peirce-basis.md</code></p>
 <h2 id="5-modules">5. Modules</h2>
 <p><strong>Four modules, four readings of the same left action.</strong></p>
 <p>$$
-V_{\mathrm{reg}}=\mathbb{B},\qquad V_{\mathrm{pol}}=S_+\oplus S_-=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-,
+V_{\mathrm{reg}}=\mathbb{B},\qquad V_{\mathrm{pol}}=S_+\oplus S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{B}\tilde\Pi_{\mathrm{id},-},
 $$</p>
 <p>$$
-\mathcal P=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)\ \ (\text{the Pauli module}),\qquad V_\Pi=\{\tilde X:\tilde X\Pi=\tilde X\}\ \ (\text{unpolarized}).
+\mathcal P=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})\ \ (\text{the Pauli module}),\qquad V_\Pi=\{\tilde X:\tilde X\Pi=\tilde X\}\ \ (\text{unpolarized}).
 $$</p>
 <p><strong>The non-trivial claim.</strong> All left $\mathbb{B}$-modules of complex dimension two are isomorphic to a minimal left ideal, and the four names record four <em>bases</em>, not four modules. The category of modules is the category of $\mathbb{C}^2$ with the defining action; the corpus proves this once and then never needs it again.</p>
 <p><strong>The two matrix models used throughout.</strong></p>
@@ -224,7 +224,7 @@ $$</p>
 <p>$$
 \mathcal S=\{B^{2}=0\}=\Sigma_{10}\sqcup\Sigma_{00},
 $$</p>
-<p>and $\Sigma_{10}=\{N\neq0,\ B^2=0\}=\{Q_t(e_t+\vec\Upsilon):Q_t\in\mathbb{C}^{\times},\ \vec\Upsilon^{2}=0\}$ is a <em>large</em> set, not a measure-zero curiosity. This is the single most surprising quantitative fact of the category.</p>
+<p>and $\Sigma_{10}=\{N\neq0,\ B^2=0\}=\{Q_t(e_t+\vec\Pi_{\mathrm{nil}}):Q_t\in\mathbb{C}^{\times},\ \vec\Pi_{\mathrm{nil}}^{2}=0\}$ is a <em>large</em> set, not a measure-zero curiosity. This is the single most surprising quantitative fact of the category.</p>
 <p><strong>The strata.</strong> Two independent dichotomies cross:</p>
 <p>$$
 \text{spectral: regular }(B^2\neq0)\ \text{vs degenerate }(B^2=0),\qquad
@@ -233,12 +233,12 @@ $$</p>
 <p>giving four sectors: N-regular/spectrally regular, N-regular/spectrally degenerate ($\Sigma_{10}$), N-degenerate/spectrally regular, N-degenerate/spectrally degenerate ($\Sigma_{00}$). Each has its own article.</p>
 <p><strong>The semisimple–nilpotent split.</strong></p>
 <p>$$
-\tilde Q=\tilde Q_s+\vec\Upsilon,\qquad \tilde Q_s=Q_te_t,\qquad \vec\Upsilon=\vec Q,\qquad \tilde Q_s\vec\Upsilon=\vec\Upsilon\tilde Q_s,\qquad
+\tilde Q=\tilde Q_s+\vec\Pi_{\mathrm{nil}},\qquad \tilde Q_s=Q_te_t,\qquad \vec\Pi_{\mathrm{nil}}=\vec Q,\qquad \tilde Q_s\vec\Pi_{\mathrm{nil}}=\vec\Pi_{\mathrm{nil}}\tilde Q_s,\qquad
 (be_t+b\vec Q-be_t)^{2}=b^{2}\vec Q^{2}=0 .
 $$</p>
 <p><strong>The non-trivial claim.</strong> The split is <em>always</em> available and it is trivial to write: the semisimple part is the scalar part. The Jordan basis</p>
 <p>$$
-\mathcal J(\tilde Q)=(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)
+\mathcal J(\tilde Q)=(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-},\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})
 $$</p>
 <p>exists only off $\mathcal S$; on $\mathcal S$ the two eigenvectors coalesce and one needs the nilpotent chain. An agent that assumes a diagonal form on $\Sigma_{10}$ is wrong.</p>
 <p><strong>Source.</strong> <code>articles_maths/the-spectrum-of-a-biquaternion.md</code>, <code>articles_maths/the-centraliser-in-the-biquaternion-algebra.md</code>, <code>articles_maths/the-semisimple-nilpotent-split-of-a-biquaternion.md</code>, <code>articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.md</code>, <code>articles_maths/worked-examples-of-an-eigenbasis-of-a-biquaternion.md</code>, <code>articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.md</code>, <code>articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.md</code>, <code>articles_maths/the-n-regular-spectrally-regular-sector.md</code>, <code>articles_maths/the-n-regular-spectrally-degenerate-sector.md</code>, <code>articles_maths/the-n-degenerate-spectrally-regular-sector.md</code>, <code>articles_maths/the-n-degenerate-spectrally-degenerate-sector.md</code>, <code>articles_maths/the-product-of-two-unipotent-elements-and-its-spectrum.md</code></p>
@@ -285,7 +285,7 @@ $$</p>
 <p>$$
 \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}},\qquad
 p_{\tilde Q}(X)=(X-Q_t)^{2}+B^{2},\qquad
-\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u),\qquad
+\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec u),\qquad
 \tilde Q=\tilde Q_H\tilde Q_0 .
 $$</p>
 <p><strong>Five results to keep.</strong> Four products, three involutions, one identity $(Q_1Q_2)^{*}=Q_2^{*}Q_1^{*}$. Only $H$ is positive definite; $\mathrm{Kr}$ has signature $(1,3)$; $P$ and $N$ are complex-symmetric. Invertibility is $N\neq0$ with the closed inverse. The Peirce basis is the matrix-unit basis. Spectral degeneracy is the quadric $B^2=0$, which is large.</p>
@@ -320,7 +320,7 @@ $$</p>
 <td>null cone of $N$, of $\mathrm{Kr}$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm$, $\vec\Upsilon_{\pm\mp}$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}$, $\vec\Pi_{\mathrm{nil},\pm\mp}$</td>
 <td>Peirce idempotents and nilpotents</td>
 </tr>
 <tr>

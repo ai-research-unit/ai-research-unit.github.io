@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="the-spin-half-bispinors-and-n-norm-regularity"><strong>The Spin-Half Bispinors and N Norm Regularity</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The spin-half carrier is the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$, and its closures are the two spinor spaces and their sum. This article computes the $N$ norm on all of them, and the answer is the extreme one.</p>
+<p>The spin-half carrier is the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$, and its closures are the two spinor spaces and their sum. This article computes the $N$ norm on all of them, and the answer is the extreme one.</p>
 <p>On the plane the norm vanishes identically. Not at one point, not on a line: at every point. The plane is a null plane, and every element of it is norm-degenerate. The same holds for the whole spinor space that contains it, since the norm is multiplicative and the idempotent has norm zero. So the carrier of spin one half is the one carrier on which the predicate fails everywhere, and the failure is structural rather than accidental.</p>
 <p>The bispinor read repairs the situation, and the repair is exact. The algebra is the direct sum of the two spinor spaces, each of them null, and the norm of a sum is twice the polar pairing of its two components. So the norm is not lost on the bispinor space: it becomes a pairing between the two halves. An element is norm-regular exactly when its two components pair nontrivially, and no element of a single spinor space is norm-regular at all.</p>
 <p>The companion article is <em>The Spin-Half Bispinors and Spectral Regularity</em>, where the second predicate is computed and the answer is the opposite: the plane is spectrally regular away from the origin. The two predicates are independent, and this pair of articles is where the independence is sharpest. The spaces themselves are <em>Introduction to the Spin-Half Bispinors Spaces</em>. The norm and the predicate are defined in <em>Relations between the N Norm and Spectral Regularity and Degeneracy</em>.</p>
@@ -88,9 +88,9 @@ $$</p>
 <p>symmetric and complex-bilinear, so that $N(X+Y)=N(X)+N(Y)+2B(X,Y)$ for all $X,Y$.</p>
 <p><strong>Definition (the predicate).</strong> An element is <strong>norm-regular</strong> when $N\neq0$ and <strong>norm-degenerate</strong> when $N=0$. The zero locus is the <strong>null cone</strong> $\mathcal N=\{N=0\}$.</p>
 <h2 id="the-norm-of-the-idempotent">The Norm of the Idempotent</h2>
-<p><strong>Theorem.</strong> For the idempotent $\tilde\Pi_+(\vec u_{\mathrm r})=\tfrac12(e_t+i\vec u_{\mathrm r})$,</p>
+<p><strong>Theorem.</strong> For the idempotent $\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\tfrac12(e_t+i\vec u_{\mathrm r})$,</p>
 <p>$$
-N\bigl(\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=\tfrac14\bigl(1-\lvert\vec u_{\mathrm r}\rvert^{2}\bigr)=0 .
+N\bigl(\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=\tfrac14\bigl(1-\lvert\vec u_{\mathrm r}\rvert^{2}\bigr)=0 .
 $$</p>
 <p><em>Proof.</em> The coordinates are $Q_t=\tfrac12$ and $Q_k=\tfrac i2 u_k$, so</p>
 <p>$$
@@ -101,7 +101,7 @@ $$</p>
 <h2 id="the-plane-is-null">The Plane Is Null</h2>
 <p><strong>Theorem.</strong> For every complex $\lambda$,</p>
 <p>$$
-N\bigl(\lambda\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=\lambda^{2}N\bigl(\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=0 .
+N\bigl(\lambda\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=\lambda^{2}N\bigl(\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=0 .
 $$</p>
 <p><strong>Corollary (every element of the carrier is norm-degenerate).</strong> The intersection of the plane with the null cone is the plane:</p>
 <p>$$
@@ -112,9 +112,9 @@ $$</p>
 <h2 id="the-spinor-space-is-null">The Spinor Space Is Null</h2>
 <p><strong>Theorem.</strong> For every element $X$ of the algebra,</p>
 <p>$$
-N\bigl(X\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=N(X)\,N\bigl(\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=0 .
+N\bigl(X\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=N(X)\,N\bigl(\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=0 .
 $$</p>
-<p><strong>Corollary.</strong> The spinor space $S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_+(\vec u_{\mathrm r})$ lies in the null cone, and so does $S_-(\vec u_{\mathrm r})$.</p>
+<p><strong>Corollary.</strong> The spinor space $S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ lies in the null cone, and so does $S_-(\vec u_{\mathrm r})$.</p>
 <p><strong>Remark (the closure does not repair the nullity).</strong> The first closure adds two real dimensions to the plane, and it adds them inside the null cone. This is worth stating because the closure does repair the invariance: the plane is not invariant under the whole group and the spinor space is. The two notions of closure are independent, and here one is repaired and the other is not.</p>
 <h2 id="the-isotropic-dimension">The Isotropic Dimension</h2>
 <p><strong>Definition (isotropic).</strong> A subspace $W$ is <strong>isotropic</strong> for $N$ when $N$ vanishes on it, and <strong>totally isotropic</strong> when in addition the polar form vanishes on it in both arguments.</p>
@@ -123,7 +123,7 @@ $$</p>
 <p><strong>Theorem (the isotropic dimension is at most half).</strong> If $W\subseteq\mathbb{B}$ is isotropic for a nondegenerate $N$, then $\dim_\mathbb{C}W\le\tfrac12\dim_\mathbb{C}\mathbb{B}=2$, that is $\dim_\mathbb{R}W\le4$.</p>
 <p><em>Proof.</em> For an isotropic $W$ one has $W\subseteq W^{\perp}$ for the polar form. The form is nondegenerate, so $\dim W^{\perp}=\dim\mathbb{B}-\dim W$, and the inclusion gives $\dim W\le\dim\mathbb{B}-\dim W$.</p>
 <p><strong>Corollary (the spinor spaces are maximal).</strong> Each spinor space is isotropic of real dimension $4=\tfrac12\dim_\mathbb{R}\mathbb{B}$, hence maximal. The plane is isotropic of real dimension $2$ and is not maximal; the two extra dimensions of the ideal are what the first closure adds.</p>
-<p><strong>Remark (the three isotropic spaces).</strong> The plane is totally isotropic as well, since $B(\lambda\tilde\Pi_+,\mu\tilde\Pi_+)=\lambda\mu N(\tilde\Pi_+)=0$. What separates the plane from the spinor spaces is not the total isotropy but the dimension: the plane has real dimension $2$ and the spinor spaces $4$, and only the second is maximal.</p>
+<p><strong>Remark (the three isotropic spaces).</strong> The plane is totally isotropic as well, since $B(\lambda\tilde\Pi_{\mathrm{id},+},\mu\tilde\Pi_{\mathrm{id},+})=\lambda\mu N(\tilde\Pi_{\mathrm{id},+})=0$. What separates the plane from the spinor spaces is not the total isotropy but the dimension: the plane has real dimension $2$ and the spinor spaces $4$, and only the second is maximal.</p>
 <h2 id="the-bispinor-read">The Bispinor Read</h2>
 <p><strong>Theorem (the norm is the pairing).</strong> Let $X=X_{+}+X_{-}$ with $X_{\pm}\in S_{\pm}(\vec u_{\mathrm r})$. Then</p>
 <p>$$
@@ -243,15 +243,15 @@ $$</p>
 <td>$N\neq0$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$</td>
 <td>the two idempotents of the axis, a Peirce basis</td>
 </tr>
 <tr>
-<td>$\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+$</td>
+<td>$\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$</td>
 <td>the spinor plane, $\dim_\mathbb{R}=2$, null</td>
 </tr>
 <tr>
-<td>$S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm$</td>
+<td>$S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$</td>
 <td>the spinor spaces, $\dim_\mathbb{R}=4$, maximal isotropic</td>
 </tr>
 <tr>

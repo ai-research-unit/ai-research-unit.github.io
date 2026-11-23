@@ -453,7 +453,7 @@ $$</p>
 <td>$2$</td>
 <td>$0$, algebraic multiplicity $4$</td>
 <td>$J_2(0)\oplus J_2(0)$</td>
-<td>$\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_+$</td>
+<td>$\mathbb{C}\tilde\pi_{\mathrm{nil}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},+}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -495,7 +495,7 @@ $$</p>
 <td>$1$</td>
 <td>$0$</td>
 <td>$J_2(0)\oplus0\oplus0$</td>
-<td>the null line $\mathbb{C}\tilde\Pi_+$</td>
+<td>the null line $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -517,15 +517,15 @@ $$</p>
 <p>The warrant. The composition law gives $T_{\tilde Q,\tilde Q^{-1}}T_{\tilde P,\tilde P^{-1}}=T_{\tilde Q\tilde P,(\tilde Q\tilde P)^{-1}}$, so the invertibles act by automorphisms. The kernel is computed at the centre: $\tilde Q\tilde X\tilde Q^{-1}=\tilde X$ for every $\tilde X$ exactly when $\tilde Q$ is central, because the probe at the unit returns the parameter and the probe at a non-central element returns its commutator.</p>
 <p>The reading. A frame is an element modulo a phase, and a change of frame is the action of that element on everything else. The three-dimensional group of rotations and the three-dimensional set of boosts both sit inside one complex group, and the phase that the automorphism forgets is the global phase of the state that the frame is built from. The operator is inner: the frame is not an extra object acting on the algebra, it is another element of the algebra.</p>
 <h3 id="i13b-the-operator-is-a-measurement">I.13.b — The Operator Is a Measurement</h3>
-<p>The object. For an idempotent $\tilde\Pi$ the two-sided operator</p>
+<p>The object. For an idempotent $\tilde\Pi_{\mathrm{id}}$ the two-sided operator</p>
 <p>$$
-T_{\tilde\Pi,\tilde\Pi}(\tilde X)=\tilde\Pi\tilde X\tilde\Pi
+T_{\tilde\Pi_{\mathrm{id}},\tilde\Pi_{\mathrm{id}}}(\tilde X)=\tilde\Pi_{\mathrm{id}}\tilde X\tilde\Pi_{\mathrm{id}}
 $$</p>
-<p>has rank one and image the single line $\mathbb{C}\tilde\Pi$ on the cone.</p>
-<p>The warrant. On the sector $\Sigma_{01}$ the element is $\tilde\Pi$ itself, the rank is one by the table of §<em>The Sectors of an Operator</em>, and the image is the line spanned by the idempotent. The square of the operator is itself, $T_{\tilde\Pi,\tilde\Pi}^{2}=T_{\tilde\Pi^{2},\tilde\Pi^{2}}=T_{\tilde\Pi,\tilde\Pi}$, so it is a projection of the operator space onto a one-dimensional image.</p>
+<p>has rank one and image the single line $\mathbb{C}\tilde\Pi_{\mathrm{id}}$ on the cone.</p>
+<p>The warrant. On the sector $\Sigma_{01}$ the element is $\tilde\Pi_{\mathrm{id}}$ itself, the rank is one by the table of §<em>The Sectors of an Operator</em>, and the image is the line spanned by the idempotent. The square of the operator is itself, $T_{\tilde\Pi_{\mathrm{id}},\tilde\Pi_{\mathrm{id}}}^{2}=T_{\tilde\Pi_{\mathrm{id}}^{2},\tilde\Pi_{\mathrm{id}}^{2}}=T_{\tilde\Pi_{\mathrm{id}},\tilde\Pi_{\mathrm{id}}}$, so it is a projection of the operator space onto a one-dimensional image.</p>
 <p>The reading. A measurement of a sharp effect collapses the algebra to a single ray, and the collapse is a rank drop from four to one. The two outcomes of a complete measurement give two such operators, and their sum</p>
 <p>$$
-\tilde X\longmapsto\tilde\Pi\tilde X\tilde\Pi+\tilde\Pi_{\perp}\tilde X\tilde\Pi_{\perp}
+\tilde X\longmapsto\tilde\Pi_{\mathrm{id}}\tilde X\tilde\Pi_{\mathrm{id}}+\tilde\Pi_{\mathrm{id},\perp}\tilde X\tilde\Pi_{\mathrm{id},\perp}
 $$</p>
 <p>is again a projection of the operator space, of rank two. That sum is a two-sided operator of length two. The measurement of a complete family is therefore not one product: it is a sum of products, and its length is the number of outcomes. The post-measurement state itself is not supplied by the interval and is not claimed here.</p>
 <h3 id="i13c-the-operator-is-a-flow">I.13.c — The Operator Is a Flow</h3>
@@ -543,13 +543,13 @@ $$</p>
 <p>The warrant. No such function exists. At the unit the two families coincide, so a sign that separates them would take opposite values at the same operator, and a multiplicative function takes the value one at the identity. The rigorous statement is that the operator algebra is the full matrix algebra, which is simple, so its only multiplicative function is the trivial one.</p>
 <p>The reading. The word <em>chirality</em> is used in this corpus for the side of an action and never for a grading of the operator algebra. That is not a verbal convenience. If chirality were a grading, the two values would be independent and a state could carry both; because it is a side, a state reaches its value through the side its projector multiplies on, and the two values are two ideals and not two signs. Physics can use the side, because an ideal is a space and a space can hold a state. Physics cannot use a sign on operators, because no such sign exists.</p>
 <h3 id="i13e-the-two-values-are-the-two-ideals">I.13.e — The Two Values Are the Two Ideals</h3>
-<p>The object. For the two idempotents $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ on a real unit axis, the images of the one-sided operators are the two minimal left ideals</p>
+<p>The object. For the two idempotents $\tilde\Pi_{\mathrm{id},\pm}(\vec u)=\tfrac12(e_t\pm i\vec u)$ on a real unit axis, the images of the one-sided operators are the two minimal left ideals</p>
 <p>$$
-L_{\tilde\Pi_\pm}(\mathbb{B})=\mathbb{B}\tilde\Pi_\pm=S_\pm,\qquad
+L_{\tilde\Pi_{\mathrm{id},\pm}}(\mathbb{B})=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}=S_\pm,\qquad
 \dim_{\mathbb{C}}S_\pm=2,\qquad
 \mathbb{B}=S_+\oplus S_- .
 $$</p>
-<p>The warrant. The image of a left multiplication is the left ideal of the element, and the ideal of a minimal idempotent is minimal. Each has complex dimension two and the two are complementary, since $\tilde\Pi_++\tilde\Pi_-=e_t$ and $\tilde\Pi_+\tilde\Pi_-=0$.</p>
+<p>The warrant. The image of a left multiplication is the left ideal of the element, and the ideal of a minimal idempotent is minimal. Each has complex dimension two and the two are complementary, since $\tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t$ and $\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$.</p>
 <p>The reading. A value is a space that a projector selects, and the selection is the one-sided operator of that projector; the words are <em>spinor chirality</em> for the value and <em>operator chirality</em> for the side of the operator that cuts it. A state of a given value is an element of that ideal. The axis is a parameter of the family and not a datum of the algebra, so the two values of this construction are exchanged by a rotation and carry no invariant label. What physics calls left and right must therefore be supplied by an interaction and not by the algebra, which is the standard position and is a theorem here.</p>
 <h3 id="i13f-the-four-adjoints-are-four-reality-conditions">I.13.f — The Four Adjoints Are Four Reality Conditions</h3>
 <p>The object. Four forms, four adjoints, and four different answers to the question whether an operator is real.</p>
@@ -756,13 +756,13 @@ $$</p>
 </tr>
 <tr>
 <td>the idempotents</td>
-<td>$\tilde\Pi_\pm(\vec u)$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}(\vec u)$</td>
 <td>$\tfrac12(e_t\pm i\vec u)$ on a real unit axis</td>
 </tr>
 <tr>
 <td>the minimal left ideals</td>
 <td>$S_\pm$</td>
-<td>$\mathbb{B}\tilde\Pi_\pm$, complex dimension $2$</td>
+<td>$\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$, complex dimension $2$</td>
 </tr>
 <tr>
 <td>the derivation</td>

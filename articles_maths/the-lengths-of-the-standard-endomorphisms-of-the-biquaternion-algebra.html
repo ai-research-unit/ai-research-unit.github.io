@@ -153,23 +153,23 @@ so a product has length one whatever its operator rank, and a sum of $k$ product
 </tr>
 <tr>
 <td>a Peirce corner</td>
-<td>$\tilde X\mapsto\tilde\Pi_i\tilde X\tilde\Pi_j$</td>
-<td>$c_{\tilde\Pi_i}c_{\tilde\Pi_j}^{\mathsf T}$</td>
+<td>$\tilde X\mapsto\tilde\Pi_{\mathrm{id},i}\tilde X\tilde\Pi_{\mathrm{id},j}$</td>
+<td>$c_{\tilde\Pi_{\mathrm{id},i}}c_{\tilde\Pi_{\mathrm{id},j}}^{\mathsf T}$</td>
 <td>$0,1$</td>
 </tr>
 <tr>
 <td>a one-sided Peirce projection</td>
-<td>$\tilde X\mapsto\tilde X\tilde\Pi_j$</td>
-<td>$c_{e_t}c_{\tilde\Pi_j}^{\mathsf T}$</td>
+<td>$\tilde X\mapsto\tilde X\tilde\Pi_{\mathrm{id},j}$</td>
+<td>$c_{e_t}c_{\tilde\Pi_{\mathrm{id},j}}^{\mathsf T}$</td>
 <td>$0,2$</td>
 </tr>
 </tbody>
 </table></div>
 <p><strong>Why the length is one in every row.</strong> Each row is a product by construction, and the array of a product is an outer product, of rank one unless a multiplier vanishes. The Hermitian pair is a product because the second slot is the fixed element $\tilde Q^{*}$: the star is applied to the parameter and not to the operator, so the pair is complex-linear and is the two-sided product with multipliers $\tilde Q$ and $\tilde Q^{*}$. The adjoint is a product because the inverse is a fixed element.</p>
-<p><strong>The adjoint, and what the word gauge names.</strong> The operator $\mathrm{Ad}_{\tilde Q}$ has array of rank one and operator rank four, the two factors of the outer product being $c_{\tilde Q}$ and $c_{\tilde Q^{-1}}$. The gap between the two numbers is the point of the row: length one and invertible are independent properties. The name <em>gauge</em> belongs elsewhere. The gauge of the corpus is the rescaling of a Peirce frame, $E_{ij}\mapsto(t_i/t_j)E_{ij}$, and that rescaling is conjugation by the element $t_1\tilde\Pi_1+t_2\tilde\Pi_2$, since $\tilde\Pi_1\tilde X\tilde\Pi_2$ is scaled by $t_1/t_2$ under it. The Peirce gauge is therefore the diagonal torus inside the adjoint action, of one parameter in $M_2(\mathbb{C})$, and the adjoint is the larger group of all conjugations. The physical word for $\mathrm{Ad}$ is rotation rather than gauge: it fixes $e_t$ and acts on the traceless part, which is the complexified rotation group.</p>
+<p><strong>The adjoint, and what the word gauge names.</strong> The operator $\mathrm{Ad}_{\tilde Q}$ has array of rank one and operator rank four, the two factors of the outer product being $c_{\tilde Q}$ and $c_{\tilde Q^{-1}}$. The gap between the two numbers is the point of the row: length one and invertible are independent properties. The name <em>gauge</em> belongs elsewhere. The gauge of the corpus is the rescaling of a Peirce frame, $E_{ij}\mapsto(t_i/t_j)E_{ij}$, and that rescaling is conjugation by the element $t_1\tilde\Pi_{\mathrm{id},1+t}_2\tilde\Pi_{\mathrm{id},2}$, since $\tilde\Pi_{\mathrm{id},1}\tilde X\tilde\Pi_{\mathrm{id},2}$ is scaled by $t_1/t_2$ under it. The Peirce gauge is therefore the diagonal torus inside the adjoint action, of one parameter in $M_2(\mathbb{C})$, and the adjoint is the larger group of all conjugations. The physical word for $\mathrm{Ad}$ is rotation rather than gauge: it fixes $e_t$ and acts on the traceless part, which is the complexified rotation group.</p>
 <p><strong>The one-sided families are inside the two-sided one.</strong> A left multiplication is $L_{\tilde Q}R_{e_t}$ and a right multiplication is $L_{e_t}R_{\tilde Q}$, so the one-sided families are the two coordinate faces of the cone of products. The identity is the vertex pattern $L_{e_t}R_{e_t}$, and the products with both multipliers in the centre are its scalar multiples.</p>
 <p><strong>Length one does not mean invertible.</strong> The two-sided product with two multipliers of rank two has operator rank one and length one; it is as far from invertible as an operator can be. Conversely the conjugation is invertible and has length four. The length counts the terms of the decomposition and says nothing about the invertibility of either the terms or the sum.</p>
-<p><strong>The Peirce corner projections are the shortest non-trivial operators of the category.</strong> With $\tilde\Pi_i$ a member of a complete orthogonal pair, the corner map $\tilde X\mapsto\tilde\Pi_i\tilde X\tilde\Pi_j$ is a projection of rank one, and it is a single product. It is the operator that reads one entry of the Peirce matrix, and it is of length one. The four corner maps sum to the identity, again of length one.</p>
+<p><strong>The Peirce corner projections are the shortest non-trivial operators of the category.</strong> With $\tilde\Pi_{\mathrm{id},i}$ a member of a complete orthogonal pair, the corner map $\tilde X\mapsto\tilde\Pi_{\mathrm{id},i}\tilde X\tilde\Pi_{\mathrm{id},j}$ is a projection of rank one, and it is a single product. It is the operator that reads one entry of the Peirce matrix, and it is of length one. The four corner maps sum to the identity, again of length one.</p>
 <h2 id="length-two-one-left-and-one-right">Length Two: One Left and One Right</h2>
 <p><strong>The class.</strong> A sum of a left and a right multiplication is the smallest operator that is not a product in general, and the criterion is exact.</p>
 <p><strong>Proposition.</strong> For $\tilde Q$ and $\tilde P$ such that $L_{\tilde Q}+R_{\tilde P}\neq0$, the length of $L_{\tilde Q}+R_{\tilde P}$ is two unless $\tilde Q$ or $\tilde P$ is central, in which case it is one.</p>
@@ -184,7 +184,7 @@ $$
 \tfrac12\bigl(L_{\tilde Q}+R_{\tilde Q}\bigr),\qquad \tilde X\longmapsto\tfrac12(\tilde Q\tilde X+\tilde X\tilde Q),
 $$
 of length two for non-central $\tilde Q$. The anticommutator $L_{\tilde Q}+R_{\tilde Q}$ has the same length. So the two classical products built from a left and a right multiplication, the bracket and the anticommutator, are both of length two, and neither is a product.</p>
-<p><strong>The Peirce sums.</strong> The sum of two corner maps, $\tilde X\mapsto\tilde\Pi_1\tilde X\tilde\Pi_1+\tilde\Pi_2\tilde X\tilde\Pi_2$, has the array $E_{11}+E_{22}$, of rank two, so its length is two. The sum of three corner maps has the array $E_{11}+E_{12}+E_{21}$, of rank two, so its length is also two, although its operator rank is three. The last row is the cleanest example in the algebra of an operator of operator rank three: no single product has that rank, and a sum of two has it without adding a third term.</p>
+<p><strong>The Peirce sums.</strong> The sum of two corner maps, $\tilde X\mapsto\tilde\Pi_{\mathrm{id},1}\tilde X\tilde\Pi_{\mathrm{id},1+}\tilde\Pi_{\mathrm{id},2}\tilde X\tilde\Pi_{\mathrm{id},2}$, has the array $E_{11}+E_{22}$, of rank two, so its length is two. The sum of three corner maps has the array $E_{11}+E_{12}+E_{21}$, of rank two, so its length is also two, although its operator rank is three. The last row is the cleanest example in the algebra of an operator of operator rank three: no single product has that rank, and a sum of two has it without adding a third term.</p>
 <p><strong>Two is the generic value, and the class is a subspace.</strong> The map $(\tilde Q,\tilde P)\mapsto L_{\tilde Q}+R_{\tilde P}$ is linear, and its kernel is one-dimensional, spanned by $(e_t,-e_t)$. So the class is a seven-dimensional linear subspace of the sixteen-dimensional ambient, most of its members have length two, and the length one members are the two faces on which one multiplier is central. The class is a subspace and not a cone, and it misses most operators.</p>
 <h2 id="the-diagonal-scalings-the-four-signed-averages">The Diagonal Scalings: The Four Signed Averages</h2>
 <p><strong>The family.</strong> Fix a vector $a=(a_t,a_x,a_y,a_z)$ and let
@@ -303,7 +303,7 @@ The first is the conjugation $\tilde X\mapsto\epsilon\tilde X\epsilon^{-1}$, whi
 </thead>
 <tbody>
 <tr>
-<td>the Peirce corner $\tilde X\mapsto\tilde\Pi_1\tilde X\tilde\Pi_1$</td>
+<td>the Peirce corner $\tilde X\mapsto\tilde\Pi_{\mathrm{id},1}\tilde X\tilde\Pi_{\mathrm{id},1}$</td>
 <td>$1$</td>
 <td>$1$</td>
 </tr>
@@ -313,7 +313,7 @@ The first is the conjugation $\tilde X\mapsto\epsilon\tilde X\epsilon^{-1}$, whi
 <td>$4$</td>
 </tr>
 <tr>
-<td>the Peirce projection $\tilde X\mapsto\tilde X\tilde\Pi_1$</td>
+<td>the Peirce projection $\tilde X\mapsto\tilde X\tilde\Pi_{\mathrm{id},1}$</td>
 <td>$2$</td>
 <td>$1$</td>
 </tr>
@@ -430,7 +430,7 @@ The first is the conjugation $\tilde X\mapsto\epsilon\tilde X\epsilon^{-1}$, whi
 <td>this article</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_1,\tilde\Pi_2$</td>
+<td>$\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2}$</td>
 <td>a complete orthogonal pair of idempotents</td>
 <td><em>Special Element and Peirce Conventions</em></td>
 </tr>

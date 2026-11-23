@@ -156,7 +156,7 @@ $$</p>
 <h3 id="the-simple-module-and-its-copies">The Simple Module and Its Copies</h3>
 <p><strong>There is exactly one simple module up to isomorphism, and it is two complex dimensions.</strong></p>
 <p>$$
-S=\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2,\qquad \operatorname{End}_{\mathbb{B}}(S)=\mathbb{C},\qquad \dim_{\mathbb{C}}S=2 .
+S=\mathbb{B}\tilde\Pi_{\mathrm{id},+}\cong\mathbb{C}^2,\qquad \operatorname{End}_{\mathbb{B}}(S)=\mathbb{C},\qquad \dim_{\mathbb{C}}S=2 .
 $$</p>
 <p>$$
 M\cong S^{\oplus k},\qquad \dim_{\mathbb{C}}M=2k,\qquad {}_{\mathbb{B}}\mathbb{B}\cong S\oplus S .
@@ -176,22 +176,22 @@ $$</p>
 $$</p>
 <p>The module theory of the algebra is the linear algebra of the complex field, with every dimension doubled, and the algebra is recovered as $\operatorname{End}_{\mathbb{C}}(S)$.</p>
 <h3 id="the-polarized-module">The Polarized Module</h3>
-<p>With $\tilde\Pi_\pm$ a complete orthogonal pair of primitive idempotents, the two spinor spaces are</p>
+<p>With $\tilde\Pi_{\mathrm{id},\pm}$ a complete orthogonal pair of primitive idempotents, the two spinor spaces are</p>
 <p>$$
-S_+=\mathbb{B}\tilde\Pi_+,\qquad S_-=\mathbb{B}\tilde\Pi_-,\qquad \mathbb{B}=S_+\oplus S_-,\qquad \dim_{\mathbb{C}}S_\pm=2 .
+S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+},\qquad S_-=\mathbb{B}\tilde\Pi_{\mathrm{id},-},\qquad \mathbb{B}=S_+\oplus S_-,\qquad \dim_{\mathbb{C}}S_\pm=2 .
 $$</p>
 <p>Each spinor space splits canonically into a diagonal line and a mixed line.</p>
 <p>$$
-S_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{B}_{-+},\qquad S_-=\mathbb{B}_{+-}\oplus\mathbb{C}\tilde\Pi_-,
+S_+=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{B}_{-+},\qquad S_-=\mathbb{B}_{+-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-},
 $$</p>
 <p>so every positive spinor has a unique intrinsic form</p>
 <p>$$
-\psi_+=a\tilde\Pi_++\nu_+,\qquad a\in\mathbb{C},\quad \nu_+\in\mathbb{B}_{-+},
+\psi_+=a\tilde\Pi_{\mathrm{id},++}\nu_+,\qquad a\in\mathbb{C},\quad \nu_+\in\mathbb{B}_{-+},
 $$</p>
-<p>and every negative spinor the mirror form $\psi_-=\nu_-+d\tilde\Pi_-$. The coefficient $a$ is the diagonal part and $\nu_+$ is the nilpotent part; both are intrinsic, and the coordinate $c$ of $\nu_+$ in a chosen basis is not.</p>
+<p>and every negative spinor the mirror form $\psi_-=\nu_-+d\tilde\Pi_{\mathrm{id},-}$. The coefficient $a$ is the diagonal part and $\nu_+$ is the nilpotent part; both are intrinsic, and the coordinate $c$ of $\nu_+$ in a chosen basis is not.</p>
 <p>The ladder has two rungs.</p>
 <p>$$
-\vec\Upsilon_{+-}\psi_+=c\,\tilde\Pi_+,\qquad \vec\Upsilon_{-+}\psi_+=a\,\vec\Upsilon_{-+},
+\vec\Pi_{\mathrm{nil},+-}\psi_+=c\,\tilde\Pi_{\mathrm{id},+},\qquad \vec\Pi_{\mathrm{nil},-+}\psi_+=a\,\vec\Pi_{\mathrm{nil},-+},
 $$</p>
 <p>so left multiplication by one nilpotent keeps the mixed part and kills the diagonal part, and the other does the reverse. Both maps are square-zero, and the two composites are the projections onto the two lines.</p>
 <p>The gauge acts on the coordinates and not on the element.</p>
@@ -202,8 +202,8 @@ $$</p>
 <p>$$
 \operatorname{Sc}(\psi_+\psi_+^{*})=\tfrac12\bigl(|a|^{2}+|c|^{2}\bigr).
 $$</p>
-<p>Right multiplication is the other action, and it does not respect the split. Right multiplication by $\tilde Q$ preserves $S_+$ exactly when $\tilde\Pi_+\tilde Q\tilde\Pi_-=0$; the two mixed units exchange $S_+$ and $S_-$, each being square-zero and the two being inverse to one another.</p>
-<p><strong>The star does not exchange the two spinor spaces.</strong> If the family is Hermitian then $S_+^{*}=\tilde\Pi_+\mathbb{B}$, the right Peirce row, which is not $S_-$. Chirality belongs to the left grouping; the star groups by the right index.</p>
+<p>Right multiplication is the other action, and it does not respect the split. Right multiplication by $\tilde Q$ preserves $S_+$ exactly when $\tilde\Pi_{\mathrm{id},+}\tilde Q\tilde\Pi_{\mathrm{id},-}=0$; the two mixed units exchange $S_+$ and $S_-$, each being square-zero and the two being inverse to one another.</p>
+<p><strong>The star does not exchange the two spinor spaces.</strong> If the family is Hermitian then $S_+^{*}=\tilde\Pi_{\mathrm{id},+}\mathbb{B}$, the right Peirce row, which is not $S_-$. Chirality belongs to the left grouping; the star groups by the right index.</p>
 <h3 id="the-pauli-module">The Pauli Module</h3>
 <p>$$
 \vec Z=i\vec e_z,\qquad L_{\mathrm{pau}}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q).
@@ -238,12 +238,12 @@ $$</p>
 0\ \subset\ \{\text{minimal left ideals}\}\ \subset\ \mathbb{B},
 $$</p>
 <p>the middle layer being a projective line of pairwise incomparable ideals, each minimal and maximal.</p>
-<p><strong>The parameter is the kernel line, not the image line.</strong> The left ideals are indexed by $\ker\tilde\Pi$ and the right ideals by $\operatorname{im}\tilde\Pi$, and applying the image criterion to the left family is the standard error.</p>
+<p><strong>The parameter is the kernel line, not the image line.</strong> The left ideals are indexed by $\ker\tilde\Pi_{\mathrm{id}}$ and the right ideals by $\operatorname{im}\tilde\Pi_{\mathrm{id}}$, and applying the image criterion to the left family is the standard error.</p>
 <p>The invertibles act on the line by Möbius transformations.</p>
 <p>$$
 \tilde Q\cdot[\zeta]=[P\zeta],\qquad z'=\frac{az+b}{cz+d},\qquad \mathbb{B}^{\times}/\mathbb{C}^{\times}e_t\cong PGL_2(\mathbb{C})\cong\operatorname{Aut}_{\mathbb{C}}(\mathbb{B}).
 $$</p>
-<p>The action is transitive, and simply transitive on ordered triples of distinct points. In the chart of the standard family, $\tilde\Pi_+$ sits at $z=0$ and $\tilde\Pi_-$ at $z=\infty$, and the stabiliser of a point is a Borel subgroup of complex dimension two.</p>
+<p>The action is transitive, and simply transitive on ordered triples of distinct points. In the chart of the standard family, $\tilde\Pi_{\mathrm{id},+}$ sits at $z=0$ and $\tilde\Pi_{\mathrm{id},-}$ at $z=\infty$, and the stabiliser of a point is a Borel subgroup of complex dimension two.</p>
 <p>Coefficient conjugation has no fixed point on the family. It acts by $t\mapsto-1/\bar t$, which has no fixed point, so no minimal left ideal is stable under the real structure; on the real subfamily $\mathbb{P}^{1}(\mathbb{R})$ it acts as the antipodal map.</p>
 <h2 id="the-interpretations">The Interpretations</h2>
 <h3 id="i4a-there-is-no-hilbert-space-outside-the-algebra">I.4.a — There Is No Hilbert Space Outside the Algebra</h3>
@@ -285,7 +285,7 @@ $$</p>
 \beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y),\qquad \beta\big|_{S}=\begin{pmatrix}\tfrac12&0\\0&0\end{pmatrix},
 $$</p>
 <p>of rank one, with the nilpotent direction as its radical. So the form cannot separate the two basis spinors and cannot produce a norm on the carrier.</p>
-<p>The two forms therefore close the carrier in two different ways. The module complement is $\mathbb{B}(e_t-\tilde\Pi)$ and the Hilbert complement is $\mathbb{B}(e_t-\tilde\Pi^{*})$, and they coincide exactly when the vacuum idempotent is Hermitian.</p>
+<p>The two forms therefore close the carrier in two different ways. The module complement is $\mathbb{B}(e_t-\tilde\Pi_{\mathrm{id}})$ and the Hilbert complement is $\mathbb{B}(e_t-\tilde\Pi_{\mathrm{id}}^{*})$, and they coincide exactly when the vacuum idempotent is Hermitian.</p>
 <p>The Hermitian form does the job, and it is a second structure. With $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\operatorname{Sc}(\tilde Q_1\tilde Q_2^{*})$ the Gram matrix on the adapted basis is $\tfrac12 I_2$: the two basis spinors are orthogonal and of equal norm, and the carrier is a two-dimensional Hilbert space with the standard metric.</p>
 <p>The physical reading is that composition and probability are two data and not one. The module structure gives what the algebra does — the action, the closure, the representation. The Hermitian structure gives what can be compared and counted — orthogonality, norm, probability. An indefinite form can do the first and cannot do the second; positivity is not a property of the plain product at all.</p>
 <p>This is the honest reason the corpus has two sectors. The informational sector carries the star and therefore the probabilities; the material sector carries the indefinite norm and therefore the causal signs. A single carrier read with one form would have to choose, and the algebra does not choose.</p>
@@ -300,14 +300,14 @@ $$</p>
 <h3 id="i4h-the-ladder-has-two-rungs">I.4.h — The Ladder Has Two Rungs</h3>
 <p>Read: the two companion nilpotents act on a spinor as two steps, each square-zero, and the composite of the two is a projection.</p>
 <p>$$
-\vec\Upsilon_{+-}\psi_+=c\,\tilde\Pi_+,\qquad \vec\Upsilon_{-+}\psi_+=a\,\vec\Upsilon_{-+},\qquad \vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_- .
+\vec\Pi_{\mathrm{nil},+-}\psi_+=c\,\tilde\Pi_{\mathrm{id},+},\qquad \vec\Pi_{\mathrm{nil},-+}\psi_+=a\,\vec\Pi_{\mathrm{nil},-+},\qquad \vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}=\tilde\Pi_{\mathrm{id},-} .
 $$</p>
 <p>The two steps are not inverses, and that is the point. The first keeps the mixed part and kills the diagonal part; the second keeps the diagonal part and kills the mixed part. Applying either twice gives zero, and applying them in the two orders gives two different projections.</p>
 <p>The physical reading is a two-state mode. A rung exists or it does not, the step up is not a step down, and there is no third rung. The occupation parity of the archive is the same statement: two steps exhaust the ladder, and the algebra has no nilpotent of index three, so a third rung cannot be built. The cap at two is not a truncation imposed from outside; it is the length of the module.</p>
 <p>The reason the cap is two is module-theoretic. A spinor space is two complex dimensions and splits into two complex lines. A ladder step is a map between two lines, so there are two steps and no more; any further map would have to leave the carrier.</p>
 <p>This is the kinematics of the ladder and not the dynamics. It does not say when a step is taken, and it does not supply the operator that takes it. The differential and the supercharge are structures on top of this one.</p>
 <h3 id="i4i-the-amplitude-is-one-complex-number-and-a-direction">I.4.i — The Amplitude Is One Complex Number and a Direction</h3>
-<p>Read: a spinor has an intrinsic form $a\tilde\Pi_++\nu_+$ and the coordinate description $(a,c)$ is not intrinsic. Only the diagonal coefficient and the nilpotent element are.</p>
+<p>Read: a spinor has an intrinsic form $a\tilde\Pi_{\mathrm{id},++}\nu_+$ and the coordinate description $(a,c)$ is not intrinsic. Only the diagonal coefficient and the nilpotent element are.</p>
 <p>The gauge makes the difference exact.</p>
 <p>$$
 a'=a,\qquad c'=t^{-1}c ,
@@ -350,7 +350,7 @@ $$</p>
 <li>A splitting of the regular module is an unordered pair of distinct points of a projective line, and no pair is canonical.</li>
 <li>The Peirce pair and the tensor split of the Pauli display are one splitting, written as ideals and as a tensor index.</li>
 <li>The two slots of the display are copies of $S$; chirality is the pair $(S,S^{\mathrm{c}})$, graded by $\mathsf V_{\mathrm{vol}}=-iR_{\vec e_z}$, and it is a real structure.</li>
-<li>The star does not exchange the two spinor spaces: it maps $S_+$ to the right row $\tilde\Pi_+\mathbb{B}$.</li>
+<li>The star does not exchange the two spinor spaces: it maps $S_+$ to the right row $\tilde\Pi_{\mathrm{id},+}\mathbb{B}$.</li>
 <li>A spinor has an intrinsic diagonal coefficient and an intrinsic nilpotent part; the mixed coordinate is gauge-dependent.</li>
 <li>The two nilpotents are two square-zero steps, and the ladder has two rungs because the carrier has two lines.</li>
 <li>The module carries an indefinite bilinear form and a canonical swap, and no positivity: the Hermitian form is a second structure.</li>
@@ -371,11 +371,11 @@ $$</p>
 <td>the left, right and two-sided regular modules</td>
 </tr>
 <tr>
-<td>$S=\mathbb{B}\tilde\Pi$</td>
+<td>$S=\mathbb{B}\tilde\Pi_{\mathrm{id}}$</td>
 <td>the simple module, $\dim_{\mathbb{C}}S=2$</td>
 </tr>
 <tr>
-<td>$S_{\pm}=\mathbb{B}\tilde\Pi_{\pm}$</td>
+<td>$S_{\pm}=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$</td>
 <td>the two spinor spaces of a polarized module</td>
 </tr>
 <tr>
@@ -395,7 +395,7 @@ $$</p>
 <td>the rank-one idempotent at $u\in\mathbb{C}^{3}$, $u\cdot u=1$</td>
 </tr>
 <tr>
-<td>$\psi_+=a\tilde\Pi_++\nu_+$</td>
+<td>$\psi_+=a\tilde\Pi_{\mathrm{id},++}\nu_+$</td>
 <td>the intrinsic form of a positive spinor</td>
 </tr>
 <tr>

@@ -78,11 +78,11 @@ $$
 $$
 with $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]/(j^{2}-1)$ the split-complex algebra, $j$ central, of real dimension eight. Its two idempotents are
 $$
-\tilde\Pi_{1}=\tfrac12(1+j),\qquad \tilde\Pi_{2}=\tfrac12(1-j),
+\tilde\Pi_{\mathrm{id},1}=\tfrac12(1+j),\qquad \tilde\Pi_{\mathrm{id},2}=\tfrac12(1-j),
 $$
 and every element splits as
 $$
-\tilde Q=\tilde Q_{+}\tilde\Pi_{1}+\tilde Q_{-}\tilde\Pi_{2},\qquad \tilde Q_{\pm}\in\mathbb{H},
+\tilde Q=\tilde Q_{+}\tilde\Pi_{\mathrm{id},1}+\tilde Q_{-}\tilde\Pi_{\mathrm{id},2},\qquad \tilde Q_{\pm}\in\mathbb{H},
 $$
 with two ordinary quaternions as coordinates. The algebra is semisimple and <strong>not simple</strong>, and its two simple summands are division rings.</p>
 <p><strong>The model.</strong> Left multiplication on the free module of rank two over $\mathbb{H}$ with basis $(1,j)$ is the diagonal matrix
@@ -104,13 +104,13 @@ $$
 \tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_{\mu}e_{\mu},\qquad Q_{\mu}=q_{\mu}+jq'_{\mu},\quad q_{\mu},q'_{\mu}\in\mathbb{R}.
 $$
 The quaternion units satisfy $\vec e_{x}^{2}=\vec e_{y}^{2}=\vec e_{z}^{2}=-1$ and $\vec e_{x}\vec e_{y}=\vec e_{z}$ cyclically, and the split unit satisfies $j^{2}=+1$ and commutes with all four.</p>
-<p><strong>The idempotents.</strong> The two elements $\tilde\Pi_{1}=\tfrac12(1+j)$ and $\tilde\Pi_{2}=\tfrac12(1-j)$ satisfy
+<p><strong>The idempotents.</strong> The two elements $\tilde\Pi_{\mathrm{id},1}=\tfrac12(1+j)$ and $\tilde\Pi_{\mathrm{id},2}=\tfrac12(1-j)$ satisfy
 $$
-\tilde\Pi_{1}^{2}=\tilde\Pi_{1},\qquad \tilde\Pi_{2}^{2}=\tilde\Pi_{2},\qquad \tilde\Pi_{1}\tilde\Pi_{2}=0,\qquad \tilde\Pi_{1}+\tilde\Pi_{2}=1,
+\tilde\Pi_{\mathrm{id},1}^{2}=\tilde\Pi_{\mathrm{id},1},\qquad \tilde\Pi_{\mathrm{id},2}^{2}=\tilde\Pi_{\mathrm{id},2},\qquad \tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2}=0,\qquad \tilde\Pi_{\mathrm{id},1}+\tilde\Pi_{\mathrm{id},2}=1,
 $$
 and they are central because $j$ is. Their matrices are the two diagonal matrix units,
 $$
-\mathsf M(\tilde\Pi_{1})=\begin{pmatrix}1&0\\ 0&0\end{pmatrix}=\tilde E_{11},\qquad \mathsf M(\tilde\Pi_{2})=\begin{pmatrix}0&0\\ 0&1\end{pmatrix}=\tilde E_{22}.
+\mathsf M(\tilde\Pi_{\mathrm{id},1})=\begin{pmatrix}1&0\\ 0&0\end{pmatrix}=\tilde E_{11},\qquad \mathsf M(\tilde\Pi_{\mathrm{id},2})=\begin{pmatrix}0&0\\ 0&1\end{pmatrix}=\tilde E_{22}.
 $$</p>
 <p><strong>The idempotent coordinates.</strong> In the basis $(1,j)$,
 $$
@@ -123,14 +123,14 @@ $$
 read over $\mathbb{H}$: it acts on the two blocks and does not touch the quaternions.</p>
 <p><strong>The two blocks.</strong> The algebra is the direct sum of the two ideals
 $$
-\mathbb{B}_{\mathrm{spl}}\,\tilde\Pi_{1}=\mathbb{H}\tilde\Pi_{1}\cong\mathbb{H},\qquad \mathbb{B}_{\mathrm{spl}}\,\tilde\Pi_{2}=\mathbb{H}\tilde\Pi_{2}\cong\mathbb{H},
+\mathbb{B}_{\mathrm{spl}}\,\tilde\Pi_{\mathrm{id},1}=\mathbb{H}\tilde\Pi_{\mathrm{id},1}\cong\mathbb{H},\qquad \mathbb{B}_{\mathrm{spl}}\,\tilde\Pi_{\mathrm{id},2}=\mathbb{H}\tilde\Pi_{\mathrm{id},2}\cong\mathbb{H},
 $$
 and there are no other proper ideals. Each is a division ring, so each is a minimal ideal, and the sum is direct: the algebra is a product of two division rings, which is the structure the model displays.</p>
 <p><strong>The degenerate system of matrix units.</strong> A system of matrix units in an algebra of dimension $n^{2}$ is a family $\{E_{ij}\}$ with $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and $\sum_{i}E_{ii}=1$. Here the only system is
 $$
-\tilde E_{11}=\tilde\Pi_{1},\qquad \tilde E_{22}=\tilde\Pi_{2},\qquad \tilde E_{12}=\tilde E_{21}=0,
+\tilde E_{11}=\tilde\Pi_{\mathrm{id},1},\qquad \tilde E_{22}=\tilde\Pi_{\mathrm{id},2},\qquad \tilde E_{12}=\tilde E_{21}=0,
 $$
-and the two off-diagonal units are <strong>zero</strong>. The reason is one line: an element $u$ with $\tilde\Pi_{1}u\tilde\Pi_{2}\neq0$ would lie in the ideal $\mathbb{H}\tilde\Pi_{1}$ and be annihilated on the left by $\tilde\Pi_{1}$, which is impossible in a division ring. So no element of the algebra connects the two blocks, and the model is diagonal because the algebra cannot be anything else.</p>
+and the two off-diagonal units are <strong>zero</strong>. The reason is one line: an element $u$ with $\tilde\Pi_{\mathrm{id},1}u\tilde\Pi_{\mathrm{id},2}\neq0$ would lie in the ideal $\mathbb{H}\tilde\Pi_{\mathrm{id},1}$ and be annihilated on the left by $\tilde\Pi_{\mathrm{id},1}$, which is impossible in a division ring. So no element of the algebra connects the two blocks, and the model is diagonal because the algebra cannot be anything else.</p>
 <p><strong>The image.</strong> The image is
 $$
 \mathsf M(\mathbb{B}_{\mathrm{spl}})=\left\{\begin{pmatrix}u&0\\ 0&v\end{pmatrix}:u,v\in\mathbb{H}\right\},
@@ -191,7 +191,7 @@ $$
 where $L_{u}$ and $R_{v}$ are the left and right multiplications of the quaternion algebra on itself. They <strong>commute</strong>, $L_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2}L_{\tilde Q}$, because the two act on different slots of the product, and every $L$ commutes with every $R$ blockwise.</p>
 <p><strong>The module.</strong> The regular module is the free module $\mathbb{H}^{2}$ over $\mathbb{H}$ with basis $(1,j)$, and as a module over the algebra it is
 $$
-\mathbb{B}_{\mathrm{spl}}=\mathbb{H}\tilde\Pi_{1}\oplus\mathbb{H}\tilde\Pi_{2},
+\mathbb{B}_{\mathrm{spl}}=\mathbb{H}\tilde\Pi_{\mathrm{id},1}\oplus\mathbb{H}\tilde\Pi_{\mathrm{id},2},
 $$
 a direct sum of two simple modules, each of quaternionic dimension one, each annihilated by the other idempotent. The series splits and there is no extension: the module theory is trivial, and the whole content is the two blocks.</p>
 <p><strong>The kernel and the image.</strong> For the left multiplication by $\tilde Q$,</p>
@@ -213,14 +213,14 @@ a direct sum of two simple modules, each of quaternionic dimension one, each ann
 </tr>
 <tr>
 <td>$\tilde Q_{+}\neq0$, $\tilde Q_{-}=0$</td>
-<td>$\mathbb{H}\tilde\Pi_{2}$</td>
-<td>$\mathbb{H}\tilde\Pi_{1}$</td>
+<td>$\mathbb{H}\tilde\Pi_{\mathrm{id},2}$</td>
+<td>$\mathbb{H}\tilde\Pi_{\mathrm{id},1}$</td>
 <td>$1$</td>
 </tr>
 <tr>
 <td>$\tilde Q_{+}=0$, $\tilde Q_{-}\neq0$</td>
-<td>$\mathbb{H}\tilde\Pi_{1}$</td>
-<td>$\mathbb{H}\tilde\Pi_{2}$</td>
+<td>$\mathbb{H}\tilde\Pi_{\mathrm{id},1}$</td>
+<td>$\mathbb{H}\tilde\Pi_{\mathrm{id},2}$</td>
 <td>$1$</td>
 </tr>
 <tr>
@@ -253,7 +253,7 @@ $$
 where $f$ is a polynomial or a power series with real coefficients, and the two quaternionic values are computed by the quaternionic calculus. The two blocks are independent quaternions, so the two values are computed at two unrelated arguments. That is the one thing the block structure adds to the quaternion category: <strong>two independent quaternionic variables</strong> in the same matrix, which is what makes the algebra a product and not a field.</p>
 <p><strong>The idempotents and the zero divisors.</strong> The idempotents of the algebra are the four elements with each quaternionic coordinate $0$ or $1$,
 $$
-0,\qquad 1,\qquad \tilde\Pi_{1},\qquad \tilde\Pi_{2},
+0,\qquad 1,\qquad \tilde\Pi_{\mathrm{id},1},\qquad \tilde\Pi_{\mathrm{id},2},
 $$
 the four diagonal matrices with entries in $\{0,1\}$, exactly as in the reduced biquaternion category. The zero divisors are the elements with <strong>exactly one</strong> vanishing block; they are not nilpotent, and there is no nilpotent but zero in the algebra, because a quaternion is invertible unless it is zero. So the algebra is reduced and the singular set is a union of two subspaces.</p>
 <p><strong>The noncommutativity is inside the blocks.</strong> The algebra is not commutative and it is not a product of fields: the two factors are division rings with real dimension four. That is the difference from the reduced biquaternion category, whose two factors are copies of $\mathbb{C}$, and it is the reason the trace, the adjugate and the norms of this article are quaternionic objects and not complex ones.</p>
@@ -331,12 +331,12 @@ two independent conjugate pairs, one from each block. The comparison with the bi
 <p><strong>The two spectra are independent.</strong> A quaternion in the first block puts no constraint on the second, so the spectrum of an element of this category is the union of two free conjugate pairs, and the parameter space of the spectrum is the square of the quotient of $\mathbb{C}$ by the conjugation. In the biquaternion category the two eigenvalues were constrained by the reality of the trace and the norm; here there is no constraint, because the two blocks are independent division rings.</p>
 <p><strong>Lagrange's formula and its degenerate locus.</strong> The projector formula
 $$
-\tilde\Pi_{1}=\bigl(\tilde Q_{+}-\tilde Q_{-}\bigr)^{-1}\bigl(\tilde Q-\tilde Q_{-}\bigr),\qquad \tilde\Pi_{2}=\bigl(\tilde Q_{-}-\tilde Q_{+}\bigr)^{-1}\bigl(\tilde Q-\tilde Q_{+}\bigr)
+\tilde\Pi_{\mathrm{id},1}=\bigl(\tilde Q_{+}-\tilde Q_{-}\bigr)^{-1}\bigl(\tilde Q-\tilde Q_{-}\bigr),\qquad \tilde\Pi_{\mathrm{id},2}=\bigl(\tilde Q_{-}-\tilde Q_{+}\bigr)^{-1}\bigl(\tilde Q-\tilde Q_{+}\bigr)
 $$
 holds on the complement of $\tilde Q_{+}=\tilde Q_{-}$, because a nonzero quaternion is invertible and the inverse can be taken on the left. It degenerates exactly on the <strong>quaternion subspace</strong> $\tilde Q_{+}=\tilde Q_{-}$, of real dimension four, and there the two projectors still exist, being constants of the algebra. So the failure is of the formula and not of the object, as in the reduced biquaternion category, with the degenerate locus of real dimension four instead of two, and the reason for the larger locus is that the equation $\tilde Q_{+}=\tilde Q_{-}$ is four real equations and not two.</p>
 <p><strong>The spectral mapping.</strong> For a function $f$ analytic on a neighbourhood of the two conjugate pairs,
 $$
-\operatorname{spec}f(\tilde Q)=f\bigl(\operatorname{spec}\tilde Q\bigr),\qquad f(\tilde Q)=f(\tilde Q_{+})\tilde\Pi_{1}+f(\tilde Q_{-})\tilde\Pi_{2},
+\operatorname{spec}f(\tilde Q)=f\bigl(\operatorname{spec}\tilde Q\bigr),\qquad f(\tilde Q)=f(\tilde Q_{+})\tilde\Pi_{\mathrm{id},1}+f(\tilde Q_{-})\tilde\Pi_{\mathrm{id},2},
 $$
 so the calculus is the blockwise evaluation and fixes the two projectors. Since the two blocks are division rings, the calculus is defined for every function that is defined on the two spectra, and there is no nilpotent correction term: the algebra is reduced.</p>
 <h2 id="the-adjugate-and-the-inverse">The Adjugate and the Inverse</h2>
@@ -345,7 +345,7 @@ so the calculus is the blockwise evaluation and fixes the two projectors. Since 
 $$
 \mathsf M(\tilde Q)^{-1}=\begin{pmatrix}\tilde Q_{+}^{-1}&0\\ 0&\tilde Q_{-}^{-1}\end{pmatrix}=\begin{pmatrix}N(\tilde Q_{+})^{-1}\tilde Q_{+}^{\natural}&0\\ 0&N(\tilde Q_{-})^{-1}\tilde Q_{-}^{\natural}\end{pmatrix}=\mathsf M\bigl(\tilde Q^{-1}\bigr),
 $$
-with $\tilde Q^{-1}=\tilde Q_{+}^{-1}\tilde\Pi_{1}+\tilde Q_{-}^{-1}\tilde\Pi_{2}$, so the algebra is closed under inversion and the model is closed too.</p>
+with $\tilde Q^{-1}=\tilde Q_{+}^{-1}\tilde\Pi_{\mathrm{id},1}+\tilde Q_{-}^{-1}\tilde\Pi_{\mathrm{id},2}$, so the algebra is closed under inversion and the model is closed too.</p>
 <p><strong>The adjugate.</strong> Multiplying the inverse by the determinant,
 $$
 \operatorname{adj}\mathsf M(\tilde Q)=\begin{pmatrix}N(\tilde Q_{-})\,\tilde Q_{+}^{\natural}&0\\ 0&N(\tilde Q_{+})\,\tilde Q_{-}^{\natural}\end{pmatrix},
@@ -407,7 +407,7 @@ a conjugation by an element <strong>outside</strong> the image. So the element t
 <p><strong>Two norms, the anisotropic quaternionic one and the singular determinant, both read from the same pair of nonnegative reals.</strong></p>
 <p><strong>The quaternionic norm.</strong> The split-biquaternion norm is
 $$
-\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\mu}Q_{\mu}^{2}=N(\tilde Q_{+})\tilde\Pi_{1}+N(\tilde Q_{-})\tilde\Pi_{2},
+\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\mu}Q_{\mu}^{2}=N(\tilde Q_{+})\tilde\Pi_{\mathrm{id},1}+N(\tilde Q_{-})\tilde\Pi_{\mathrm{id},2},
 $$
 a split-complex number whose two idempotent coordinates are the two quaternion norms. It is <strong>anisotropic</strong>: it vanishes only at $\tilde Q=0$, because each coordinate is a sum of squares. It is not the determinant, and it does not detect the zero divisors.</p>
 <p><strong>The determinant is the product of the two coordinates.</strong> From the same pair,
@@ -438,7 +438,7 @@ with each $\sigma$ the identity, the quaternion conjugation ${}^{\natural}$ or t
 </tr>
 <tr>
 <td>quaternionic $\langle\tilde Q\rangle_{\natural}$</td>
-<td>$N(\tilde Q_{+})\tilde\Pi_{1}+N(\tilde Q_{-})\tilde\Pi_{2}$</td>
+<td>$N(\tilde Q_{+})\tilde\Pi_{\mathrm{id},1}+N(\tilde Q_{-})\tilde\Pi_{\mathrm{id},2}$</td>
 <td>the two norms on the diagonal</td>
 <td>anisotropic, split-complex valued</td>
 </tr>
@@ -543,14 +543,14 @@ whose null cone is the light cone. On the <strong>Hermitian subspace</strong> $\
 </table></div>
 <p><strong>The three decompositions.</strong> The algebra splits in three canonical ways, and the model sees two of them as the same decomposition:
 $$
-\mathbb{B}_{\mathrm{spl}}=\mathbb{H}\oplus j\mathbb{H}=\mathbb{H}\tilde\Pi_{1}\oplus\mathbb{H}\tilde\Pi_{2}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi},
+\mathbb{B}_{\mathrm{spl}}=\mathbb{H}\oplus j\mathbb{H}=\mathbb{H}\tilde\Pi_{\mathrm{id},1}\oplus\mathbb{H}\tilde\Pi_{\mathrm{id},2}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi},
 $$
 the first into the quaternion subspace and its translate, the second into the two ideals, the third into the Hermitian and the anti-Hermitian subspaces. The first and the third are decompositions into two subspaces with no algebra structure preserved, the second is a decomposition into two ideals and is the only one that is an isomorphism of algebras. The model diagonalises with respect to the second and reads the first and the third as the equal-blocks and conjugate-blocks conditions.</p>
 <p><strong>The involution lattice.</strong> The four conjugations form the lattice of <em>Split-Biquaternion Involution Lattice</em>, and in the model the lattice is generated by three operations: the conjugate transpose, the swap, and the minus sign. The quaternion conjugation is the conjugate transpose, the split-complex conjugation is the swap, the Hermitian conjugation is their composite, and the anti-Hermitian is minus the composite. So the group is generated by the conjugate transpose and the swap, and the conjugate transpose is the only entrywise one: the swap is the conjugation by the missing off-diagonal matrix unit, and it is the one generator that acts outside the image.</p>
 <p><strong>The two implications for the operator theory.</strong> Two facts of this section are used by the operators article. First, the model is a $*$-representation for the quaternion conjugation, so the family of operators is closed under the adjoint. Second, the split-complex conjugation is outer and is implemented by the swap, so the family is <strong>not</strong> invariant under the second adjoint of the ambient, and the two adjoint operations of the operator theory are of different kinds.</p>
 <h2 id="summary">Summary</h2>
 <ol>
-<li>The algebra is $\mathbb{B}_{\mathrm{spl}}=\mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{H}\oplus\mathbb{H}$, semisimple and not simple, of real dimension eight, with the two central idempotents $\tilde\Pi_{1},\tilde\Pi_{2}$ and the two quaternionic coordinates $\tilde Q_{\pm}$.</li>
+<li>The algebra is $\mathbb{B}_{\mathrm{spl}}=\mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{H}\oplus\mathbb{H}$, semisimple and not simple, of real dimension eight, with the two central idempotents $\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2}$ and the two quaternionic coordinates $\tilde Q_{\pm}$.</li>
 <li>The model is the diagonal subalgebra of $M_{2}(\mathbb{H})$, of real dimension eight inside sixteen; the membership test is the vanishing of the two off-diagonal blocks, a linear test of codimension eight.</li>
 <li>The matrix units of the algebra are degenerate, $\tilde E_{12}=\tilde E_{21}=0$, and the reason is that each block is a division ring, so no element connects the two blocks.</li>
 <li>The product is blockwise and the algebra separates as $\mathbb{H}\times\mathbb{H}$; the model is faithful and not surjective, and no sum or product of models fills the off-diagonal corners.</li>
@@ -577,12 +577,12 @@ the first into the quaternion subspace and its translate, the second into the tw
 <td><em>Split-Biquaternion Algebra</em></td>
 </tr>
 <tr>
-<td>$\tilde Q=\tilde Q_{+}\tilde\Pi_{1}+\tilde Q_{-}\tilde\Pi_{2}$</td>
+<td>$\tilde Q=\tilde Q_{+}\tilde\Pi_{\mathrm{id},1}+\tilde Q_{-}\tilde\Pi_{\mathrm{id},2}$</td>
 <td>the idempotent decomposition, two quaternionic coordinates</td>
 <td><em>Split-Biquaternion Algebra</em></td>
 </tr>
 <tr>
-<td>$\tilde\Pi_{1},\tilde\Pi_{2}$</td>
+<td>$\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2}$</td>
 <td>the two central idempotents $\tfrac12(1\pm j)$</td>
 <td><em>Split-Biquaternion Idempotents and Projections</em></td>
 </tr>

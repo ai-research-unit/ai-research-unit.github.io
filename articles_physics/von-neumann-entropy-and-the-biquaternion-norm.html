@@ -142,13 +142,13 @@ $$</p>
 <h3 id="the-spectrum">The spectrum</h3>
 <p>The state has a spectral decomposition into the two complementary idempotents along its Bloch direction. Writing $\vec u_s = \vec s_{\Psi}/|\vec s_{\Psi}|$ for $\vec s_{\Psi}\neq0$,</p>
 <p>$$
-\tilde{Ϛ}_{\Psi} = \lambda_+\,\tilde\Pi_1(\vec u_s) + \lambda_-\,\tilde\Pi_2(\vec u_s),
+\tilde{Ϛ}_{\Psi} = \lambda_+\,\tilde\Pi_{\mathrm{id},1}(\vec u_s) + \lambda_-\,\tilde\Pi_{\mathrm{id},2}(\vec u_s),
 \qquad
-\tilde\Pi_{1,2}(\vec u_s) = \tfrac{1}{2}\bigl(e_t \pm i\vec u_s\bigr),
+\tilde\Pi_{\mathrm{id},1,2}(\vec u_s) = \tfrac{1}{2}\bigl(e_t \pm i\vec u_s\bigr),
 \qquad
 \lambda_\pm = \tfrac{1}{2}\bigl(1 \pm |\vec s_{\Psi}|\bigr).
 $$</p>
-<p>The two idempotents are Hermitian, orthogonal, and sum to the identity: $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_1 + \tilde\Pi_2 = e_t$. Their normalisation is $\langle\tilde\Pi_{1,2},e_t\rangle_{*}=\tfrac12$, and the Hermitian form gives $2\langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}=\lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\vec s_{\Psi}|$ and $\lambda_+ + \lambda_- = 1$.</p>
+<p>The two idempotents are Hermitian, orthogonal, and sum to the identity: $\tilde\Pi_{\mathrm{id},1,2}^2 = \tilde\Pi_{\mathrm{id},1,2}$, $\tilde\Pi_{\mathrm{id},1}\tilde\Pi_{\mathrm{id},2} = 0$, $\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2} = e_t$. Their normalisation is $\langle\tilde\Pi_{\mathrm{id},1,2},e_t\rangle_{*}=\tfrac12$, and the Hermitian form gives $2\langle\tilde\Pi_{\mathrm{id},1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}=\lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\vec s_{\Psi}|$ and $\lambda_+ + \lambda_- = 1$.</p>
 <h3 id="entropy-as-a-function-of-the-biquaternion-norm">Entropy as a function of the biquaternion norm</h3>
 <p>The <strong>von Neumann entropy</strong> is</p>
 <p>$$
@@ -169,7 +169,7 @@ $$</p>
 <h3 id="the-logarithm-as-an-element-of-the-algebra">The logarithm as an element of the algebra</h3>
 <p>The standard formula can also be written algebraically. On the interior of the Bloch ball the state has full rank, so its real logarithm exists and lies in $\mathbb{B}_{\Psi}$:</p>
 <p>$$
-\log \tilde{Ϛ}_{\Psi} = \log\lambda_+\, \tilde\Pi_1(\vec u_s) + \log\lambda_-\, \tilde\Pi_2(\vec u_s) .
+\log \tilde{Ϛ}_{\Psi} = \log\lambda_+\, \tilde\Pi_{\mathrm{id},1}(\vec u_s) + \log\lambda_-\, \tilde\Pi_{\mathrm{id},2}(\vec u_s) .
 $$</p>
 <p>Multiplying by $\tilde{Ϛ}_{\Psi}$ and taking the scalar part,</p>
 <p>$$
@@ -276,7 +276,7 @@ $$</p>
 <td>State with Bloch vector $\vec s_{\Psi}$, $|\vec s_{\Psi}|\le1$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_{1,2}(\vec u_s) = \tfrac12(e_t\pm i\vec u_s)$</td>
+<td>$\tilde\Pi_{\mathrm{id},1,2}(\vec u_s) = \tfrac12(e_t\pm i\vec u_s)$</td>
 <td>Spectral idempotents of the state</td>
 </tr>
 <tr>

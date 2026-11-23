@@ -237,15 +237,15 @@ $$</p>
 <p>On the sector the eigenvalues are $\lambda_\pm=Q_t\pm iB$, both non-zero, and $\langle\tilde Q\rangle_{\natural}=\lambda_+\lambda_-$.</p>
 <p><em>Proof.</em> The two sectors are the intersections of the sector with the complement and with the zero set of $B^2$. The eigenvalues satisfy $\lambda_++\lambda_-=2Q_t$ and $\lambda_+\lambda_-=Q_t^2+B^2=N$, so neither vanishes when $\langle\tilde Q\rangle_{\natural}\neq0$.</p>
 <p><strong>Theorem (the two types).</strong></p>
-<p>(i) On $\Sigma_{11}$ the eigenvalues are distinct and non-zero; $\tilde Q$ is diagonalisable, with a unique two-term spectral decomposition $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ into orthogonal idempotents.</p>
-<p>(ii) On $\Sigma_{10}$ the two eigenvalues coincide at the value $Q_t$, which is non-zero on the sector. The element is either the scalar $Q_t e_t$, with minimal polynomial $X-Q_t$, or a Jordan element $Q_t e_t+\vec\Upsilon$ with $\vec\Upsilon\neq0$ and $\vec\Upsilon^2=0$, with minimal polynomial $(X-Q_t)^2$; the second is not diagonalisable.</p>
-<p><em>Proof.</em> The discriminant is $-4B^2$, so it vanishes exactly on $\Sigma_{10}$. On $\Sigma_{10}$ the element is $Q_te_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$, and the centraliser is the algebra of dual numbers, whose only idempotents are $0$ and $e_t$; hence there is no non-trivial spectral decomposition off the scalar line (<em>Relations between the N Norm and Spectral Regularity and Degeneracy</em>, §<em>The Two Decompositions</em>).</p>
+<p>(i) On $\Sigma_{11}$ the eigenvalues are distinct and non-zero; $\tilde Q$ is diagonalisable, with a unique two-term spectral decomposition $\tilde Q=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-}$ into orthogonal idempotents.</p>
+<p>(ii) On $\Sigma_{10}$ the two eigenvalues coincide at the value $Q_t$, which is non-zero on the sector. The element is either the scalar $Q_t e_t$, with minimal polynomial $X-Q_t$, or a Jordan element $Q_t e_t+\vec\Pi_{\mathrm{nil}}$ with $\vec\Pi_{\mathrm{nil}}\neq0$ and $\vec\Pi_{\mathrm{nil}}^2=0$, with minimal polynomial $(X-Q_t)^2$; the second is not diagonalisable.</p>
+<p><em>Proof.</em> The discriminant is $-4B^2$, so it vanishes exactly on $\Sigma_{10}$. On $\Sigma_{10}$ the element is $Q_te_t+\vec\Pi_{\mathrm{nil}}$ with $\vec\Pi_{\mathrm{nil}}^2=0$, and the centraliser is the algebra of dual numbers, whose only idempotents are $0$ and $e_t$; hence there is no non-trivial spectral decomposition off the scalar line (<em>Relations between the N Norm and Spectral Regularity and Degeneracy</em>, §<em>The Two Decompositions</em>).</p>
 <p><strong>Definition.</strong> The <strong>scalar line</strong> and the <strong>Jordan cone</strong> of the sector are</p>
 <p>$$
 \Sigma_{10}^{\mathrm{s}}=\mathbb{C}^{\times}e_t,\qquad
-\Sigma_{10}^{\mathrm{J}}=\{Q_t(e_t+\vec\Upsilon):Q_t\in\mathbb{C}^{\times},\ \vec\Upsilon\in\mathcal{N}_{\mathrm p}\},
+\Sigma_{10}^{\mathrm{J}}=\{Q_t(e_t+\vec\Pi_{\mathrm{nil}}):Q_t\in\mathbb{C}^{\times},\ \vec\Pi_{\mathrm{nil}}\in\mathcal{N}_{\mathrm p}\},
 $$</p>
-<p>with $\mathcal{N}_{\mathrm p}=\{\vec\Upsilon\neq0:\vec\Upsilon^2=0\}$ the pure stratum of the null cone.</p>
+<p>with $\mathcal{N}_{\mathrm p}=\{\vec\Pi_{\mathrm{nil}}\neq0:\vec\Pi_{\mathrm{nil}}^2=0\}$ the pure stratum of the null cone.</p>
 <p><strong>Theorem (the shapes of the halves).</strong> The sector $\Sigma_{11}$ is open and dense in $\mathbb{B}$, of real dimension eight, and connected. The sector $\Sigma_{10}$ is closed in $\mathbb{B}^{\times}$, of real dimension six, and connected; it is the disjoint union of the scalar line and the Jordan cone. The sector is connected: $\Sigma_{11}$ is connected and dense, and every point of $\Sigma_{10}$ lies in its closure. The spectral split is a stratification, not a partition into two open halves.</p>
 <p><em>Proof.</em> $\Sigma_{11}$ is the complement of the union of the two closed cones $\mathcal{N}$ and $\mathcal{S}$, each of real codimension two; the complement is open and dense, and it is connected because the removal of a closed subset of codimension at least two from a connected manifold leaves a connected manifold. $\Sigma_{10}$ is the trace on the sector of the closed cone $\mathcal{S}$, hence closed in the sector. It is the union of the connected scalar line and the connected Jordan cone, and the closure of the Jordan cone contains the scalar line; hence it is connected. Its real dimension is that of $\mathcal{S}\setminus\mathcal{N}$, namely six.</p>
 <p><strong>Theorem (multiplication does not follow the spectrum).</strong> Neither sector is closed under multiplication, and both are stable under inversion.</p>
@@ -256,9 +256,9 @@ $$</p>
 <p>which has $B^2=1$ and lies in $\Sigma_{11}$. In the other direction, $e_t+\vec e_x$ and $e_t-\vec e_x$ lie in $\Sigma_{11}$, and their product is $2e_t$, which lies in $\Sigma_{10}$.</p>
 <p><strong>Remark (the exponential on the sector).</strong> The exponential carries the scalar line onto itself, and</p>
 <p>$$
-\exp\bigl(\mathbb{C}e_t+\{\vec\Upsilon:\vec\Upsilon^2=0\}\bigr)=\Sigma_{10}.
+\exp\bigl(\mathbb{C}e_t+\{\vec\Pi_{\mathrm{nil}}:\vec\Pi_{\mathrm{nil}}^2=0\}\bigr)=\Sigma_{10}.
 $$</p>
-<p>Indeed $\exp(a e_t+\vec\Upsilon)=e^a(e_t+\vec\Upsilon)$ for $\vec\Upsilon^2=0$, and every element of $\Sigma_{10}$ is of that form (<em>Biquaternion Elementary Functions</em>, §<em>The Logarithm</em>).</p>
+<p>Indeed $\exp(a e_t+\vec\Pi_{\mathrm{nil}})=e^a(e_t+\vec\Pi_{\mathrm{nil}})$ for $\vec\Pi_{\mathrm{nil}}^2=0$, and every element of $\Sigma_{10}$ is of that form (<em>Biquaternion Elementary Functions</em>, §<em>The Logarithm</em>).</p>
 <p><strong>Remark (why the split is not a second sector).</strong> The norm split is multiplicative and inversion-stable, and it is the partition that the group law follows. The spectral split is inversion-stable but not multiplicative: a product of two spectrally degenerate units can be spectrally regular, and a product of two spectrally regular units can be degenerate. It is therefore a stratification of the sector, not a second partition of the algebra at the same level. The four-sector grid is the simultaneous refinement, and its two regular sectors are the two halves above.</p>
 <h2 id="comparison-with-the-n-degenerate-sector">Comparison with the N-Degenerate Sector</h2>
 <p>The two sectors are complementary, and the comparison is the content of the norm partition.</p>
@@ -398,10 +398,10 @@ $$</p>
 </tr>
 <tr>
 <td>$\Sigma_{10}^{\mathrm{J}}$</td>
-<td>the Jordan cone, $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$</td>
+<td>the Jordan cone, $Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}^2=0$</td>
 </tr>
 <tr>
-<td>$\mathcal{N}_{\mathrm p}=\{\vec\Upsilon\neq0:\vec\Upsilon^2=0\}$</td>
+<td>$\mathcal{N}_{\mathrm p}=\{\vec\Pi_{\mathrm{nil}}\neq0:\vec\Pi_{\mathrm{nil}}^2=0\}$</td>
 <td>the pure stratum of the null cone</td>
 </tr>
 <tr>

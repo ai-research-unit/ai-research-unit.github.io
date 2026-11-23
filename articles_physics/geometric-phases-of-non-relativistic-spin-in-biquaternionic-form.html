@@ -75,14 +75,14 @@
 <p>The adiabatic form of the statement — a Hamiltonian transported slowly around a loop, with the spin following the instantaneous eigenstate — is the <strong>Berry phase</strong>, and it is the subject of the companion article <em>The Berry Phase and Geometric Phases in Biquaternionic Form</em>, which computes the Berry connection and curvature and verifies the two-route agreement on a slowly rotating field. The present article treats the <strong>non-adiabatic</strong> form, the <strong>Aharonov–Anandan (AA) phase</strong>, and the spin-specific structures that accompany it: the exact phase of a precessing spin, the $4\pi$ periodicity of the spinor, and the holonomy as a rotor in the real-quaternion subspace. It does not repeat the connection-and-curvature computation of the Berry article; it cites it.</p>
 <p>The findings are stated in advance.</p>
 <ol>
-<li><strong>The geometric phase is a holonomy of the spinor, not a property of the idempotent.</strong> The instantaneous state $\tilde\Pi_{1,2}(\vec u_x)$ contains no phase information; the phase is carried by the spinor and is removed by the idempotent. This is the structural fact the Berry article records for the adiabatic connection, and it holds unchanged for the AA phase.</li>
+<li><strong>The geometric phase is a holonomy of the spinor, not a property of the idempotent.</strong> The instantaneous state $\tilde\Pi_{\mathrm{id},1,2}(\vec u_x)$ contains no phase information; the phase is carried by the spinor and is removed by the idempotent. This is the structural fact the Berry article records for the adiabatic connection, and it holds unchanged for the AA phase.</li>
 <li><strong>For spin-1/2 the geometric phase is one half the oriented solid angle, with a sign:</strong> $\gamma_{\mathrm{geo}} = -\tfrac12\theta_{\mathrm{sol}}{}_{\mathrm{sgn}}$, where $\theta_{\mathrm{sol}}{}_{\mathrm{sgn}}$ is the solid angle subtended by the closed curve, counted positive for the orientation given by the right-hand rule about the curve.</li>
 <li><strong>The AA phase is exact for a precessing spin.</strong> A spin prepared along $\vec u_y$ and left in a fixed field along $\vec u_x$ has a Bloch vector that precesses on a cone of half-angle $\theta_0$; over one period the AA phase is $\tfrac12$ of the unsigned solid angle of the cap, with the sign fixed by the sense of precession. This is computed exactly below, with no adiabatic approximation.</li>
 <li><strong>The spinor is double-valued.</strong> A full $2\pi$ rotation of the spin returns the idempotent but sends the spinor to its negative; only after $4\pi$ does the spinor return. The geometric phase of the equator loop is the cleanest instance: the phase is $\pi$ after one period, a sign change, and $2\pi$ (i.e. the identity) after two.</li>
 <li><strong>The holonomy is a rotor.</strong> The accumulated spin evolution is the product of a central phase and conjugation by a unit real quaternion $\tilde{u} = \exp(-\frac{1}{2}\theta_{\mathrm{blc}}\,\vec u_x)$, where $\theta_{\mathrm{blc}}$ is the angle through which the Bloch vector is turned; the central phase and the rotation are the two faces of the same element of $\mathbb{B}$.</li>
 <li><strong>The adiabatic Berry phase is the slow limit of the same holonomy.</strong> Using the rotating-frame effective field of a circularly polarised drive, the AA phase reduces to the solid-angle formula when the drive is slow, with the sign set by the sense of the loop, and it departs from it as the drive speeds up.</li>
 </ol>
-<p>The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, the reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)=2Q_{1,t}Q_{2,t}$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\eta\mapsto\sigma_\eta$.</p>
+<p>The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, the reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)=2Q_{1,t}Q_{2,t}$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\eta\mapsto\sigma_\eta$.</p>
 <p>The companion articles supply the pieces:
 - Companion article <em>The Berry Phase and Geometric Phases in Biquaternionic Form</em>, for the adiabatic connection, the curvature and the two-route check.
 - Companion article <em>Spin-1/2 Quantum Physics in Biquaternionic Form</em>, for the spin operators and the pure-state idempotents.
@@ -162,7 +162,7 @@ $$</p>
 <h3 id="the-math81-periodicity">The $4\pi$ Periodicity</h3>
 <p>The sign change $\tilde{Ξ}(T) = -\tilde{Ξ}(0)$ at the equator is not special to the equator: for every $\theta_0$ the spinor after one period differs from the initial spinor by a phase, and at $\theta_0 = \pi/2$ that phase is exactly $\pi$. The general statement is the double-valuedness of the spinor representation of the rotation group: a rotation of the spin by $2\pi$ is the identity on the idempotent,</p>
 <p>$$
-\tilde{u}(2\pi)\,\tilde\Pi_{1,2}(\vec u_x)\,\tilde{u}(2\pi)^{*} = \tilde\Pi_{1,2}(\vec u_x),
+\tilde{u}(2\pi)\,\tilde\Pi_{\mathrm{id},1,2}(\vec u_x)\,\tilde{u}(2\pi)^{*} = \tilde\Pi_{\mathrm{id},1,2}(\vec u_x),
 \qquad
 \tilde{u}(2\pi) = \exp(-2\pi \vec e_z/2) = -e_t,
 $$</p>
@@ -170,11 +170,11 @@ $$</p>
 <p>The physical consequences are standard: the spinor must be rotated by $4\pi$ to return, and the interference of spinor amplitudes can reveal the sign. The neutron interferometry of Rauch and collaborators and of Werner and collaborators are the standard demonstrations, and the $4\pi$ periodicity has since been confirmed with neutron resonance interferometry.</p>
 <h2 id="the-holonomy-as-a-rotor">The Holonomy as a Rotor</h2>
 <h3 id="the-spinor-carries-the-phase">The Spinor Carries the Phase</h3>
-<p>The geometric phase is invisible in the density matrix. Write a pure state as $\tilde{Ϛ}_{\Psi} = \tilde\Pi_{1,2}(\vec u_x) = \tfrac12(e_t\pm i\vec u_x)$; the idempotent is quadratic in the spinor,</p>
+<p>The geometric phase is invisible in the density matrix. Write a pure state as $\tilde{Ϛ}_{\Psi} = \tilde\Pi_{\mathrm{id},1,2}(\vec u_x) = \tfrac12(e_t\pm i\vec u_x)$; the idempotent is quadratic in the spinor,</p>
 <p>$$
-\tilde\Pi = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})},
+\tilde\Pi_{\mathrm{id}} = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})},
 $$</p>
-<p>and a spinor phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$ cancels between $\tilde{Ξ}$ and $\tilde{Ξ}^{\dagger}$. So the state that the Bloch ball records is exactly the object in which the geometric phase is absent. This is the same observation the Berry article makes about the Berry connection — $2\,\mathrm{Sc}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ identically — and it applies verbatim to the AA phase: the phase lives in the spinor, which is the lift of the Bloch vector to the double cover.</p>
+<p>and a spinor phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$ cancels between $\tilde{Ξ}$ and $\tilde{Ξ}^{\dagger}$. So the state that the Bloch ball records is exactly the object in which the geometric phase is absent. This is the same observation the Berry article makes about the Berry connection — $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\partial/\partial R_\mu\tilde\Pi_{\mathrm{id}}) = 0$ identically — and it applies verbatim to the AA phase: the phase lives in the spinor, which is the lift of the Bloch vector to the double cover.</p>
 <h3 id="the-rotor-and-its-two-faces">The Rotor and Its Two Faces</h3>
 <p>The evolution over a closed loop of the state is, in the algebra, the product of a rotor and a central phase,</p>
 <p>$$
@@ -302,7 +302,7 @@ $$</p>
 <td>Larmor frequency</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$</td>
+<td>$\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$</td>
 <td>Pure-state idempotent; carries no phase</td>
 </tr>
 <tr>

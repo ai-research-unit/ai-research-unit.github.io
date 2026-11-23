@@ -126,20 +126,20 @@ $$</p>
 <p><strong>Corollary (the centre is a slice of $\mathcal C$).</strong> The intersection of $\mathcal C$ with the centre $\mathbb{B}_{C}$ is the embedded copy of the Mandelbrot set $\mathcal M\subset\mathbb{C}$, under $C\mapsto Ce_t$.</p>
 <h2 id="the-commutative-plane-and-the-product-locus">The Commutative Plane and the Product Locus</h2>
 <p>The reduction is not special to the centre: every two-dimensional commutative subalgebra cut out by an idempotent gives the same phenomenon, with two independent complex parameters.</p>
-<p><strong>Theorem (the idempotent plane).</strong> Let $\tilde\Pi$ be a primitive idempotent of $\mathbb{B}$ and let $\tilde\Pi'=e_t-\tilde\Pi$ be its complement, so that $\tilde\Pi\tilde\Pi'=\tilde\Pi'\tilde\Pi=0$ and $\tilde\Pi+\tilde\Pi'=e_t$. The plane</p>
+<p><strong>Theorem (the idempotent plane).</strong> Let $\tilde\Pi_{\mathrm{id}}$ be a primitive idempotent of $\mathbb{B}$ and let $\tilde\Pi_{\mathrm{id}}'=e_t-\tilde\Pi_{\mathrm{id}}$ be its complement, so that $\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}'=\tilde\Pi_{\mathrm{id}}'\tilde\Pi_{\mathrm{id}}=0$ and $\tilde\Pi_{\mathrm{id}}+\tilde\Pi_{\mathrm{id}}'=e_t$. The plane</p>
 <p>$$
-W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'
+W_{\tilde\Pi_{\mathrm{id}}}=\mathbb{C}\tilde\Pi_{\mathrm{id}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}'
 $$</p>
-<p>is a commutative subalgebra isomorphic to $\mathbb{C}\oplus\mathbb{C}$ by $A\tilde\Pi+B\tilde\Pi'\mapsto(A,B)$; the product there is coordinatewise, and for a parameter $\tilde Q_2=C_1\tilde\Pi+C_2\tilde\Pi'$ the restriction of $F_{\tilde Q_2}$ to $W_{\tilde\Pi}$ is the pair of commuting complex quadratic maps</p>
+<p>is a commutative subalgebra isomorphic to $\mathbb{C}\oplus\mathbb{C}$ by $A\tilde\Pi_{\mathrm{id}}+B\tilde\Pi_{\mathrm{id}}'\mapsto(A,B)$; the product there is coordinatewise, and for a parameter $\tilde Q_2=C_1\tilde\Pi_{\mathrm{id}}+C_2\tilde\Pi_{\mathrm{id}}'$ the restriction of $F_{\tilde Q_2}$ to $W_{\tilde\Pi_{\mathrm{id}}}$ is the pair of commuting complex quadratic maps</p>
 <p>$$
 (A,B)\longmapsto(A^2+C_1,\;B^2+C_2).
 $$</p>
 <p>Hence</p>
 <p>$$
-\boxed{\;W_{\tilde\Pi}\cap\mathcal K_{\tilde Q_2}=K_{C_1}\times K_{C_2}, \qquad W_{\tilde\Pi}\cap\mathcal C=\{C_1\in\mathcal M\}\times\{C_2\in\mathcal M\}\;},
+\boxed{\;W_{\tilde\Pi_{\mathrm{id}}}\cap\mathcal K_{\tilde Q_2}=K_{C_1}\times K_{C_2}, \qquad W_{\tilde\Pi_{\mathrm{id}}}\cap\mathcal C=\{C_1\in\mathcal M\}\times\{C_2\in\mathcal M\}\;},
 $$</p>
 <p>and the critical-orbit locus of the plane is the product $\mathcal M\times\mathcal M$. The general plain bilinear product therefore gives the <strong>intersection</strong> of the two conditions, not their union.</p>
-<p><strong>Proof.</strong> $\tilde\Pi^2=\tilde\Pi$, $\tilde\Pi'^2=\tilde\Pi'$ and $\tilde\Pi\tilde\Pi'=0$ give $(A\tilde\Pi+B\tilde\Pi')^2=A^2\tilde\Pi+B^2\tilde\Pi'$, and the parameter splits the same way; the two coordinates do not interact, so the orbit is the pair of complex orbits and both must be bounded.</p>
+<p><strong>Proof.</strong> $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}'^2=\tilde\Pi_{\mathrm{id}}'$ and $\tilde\Pi_{\mathrm{id}}\tilde\Pi_{\mathrm{id}}'=0$ give $(A\tilde\Pi_{\mathrm{id}}+B\tilde\Pi_{\mathrm{id}}')^2=A^2\tilde\Pi_{\mathrm{id}}+B^2\tilde\Pi_{\mathrm{id}}'$, and the parameter splits the same way; the two coordinates do not interact, so the orbit is the pair of complex orbits and both must be bounded.</p>
 <p><strong>Remark (the choice of product and the shape of the locus).</strong> On the diagonal subalgebra the complex bilinear product has no cross term, so the locus is a product; a product that mixes the two coordinates would couple the two iterations, and the locus would be neither a product nor a union but a genuinely two-variable object. <strong>The phrase "intersection or union of two lower-dimensional loci" is exact only where the algebra splits; where it does not, no such description holds.</strong> The comparison of the four general products is <em>The Four General Products and Their Relations over the Biquaternion Algebra</em>.</p>
 <h2 id="the-computable-slices">The Computable Slices</h2>
 <p>The parameter space is eight-real-dimensional, and the article records the three slices on which the sweep can actually be computed, one to a subsection.</p>
@@ -202,11 +202,11 @@ $$</p>
 <td>the Euclidean norm on $\mathbb{B}$ and the Frobenius norm on $M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi$, $\tilde\Pi'=e_t-\tilde\Pi$</td>
+<td>$\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}'=e_t-\tilde\Pi_{\mathrm{id}}$</td>
 <td>a primitive idempotent and its complement</td>
 </tr>
 <tr>
-<td>$W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$</td>
+<td>$W_{\tilde\Pi_{\mathrm{id}}}=\mathbb{C}\tilde\Pi_{\mathrm{id}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id}}'$</td>
 <td>the commutative idempotent plane</td>
 </tr>
 <tr>

@@ -89,7 +89,7 @@ $$</p>
 $$</p>
 <p>which is the single number the propagator inverts, and which equals $-N(\tilde K_\Phi)-k_m^{2}$ by the definition of the label's norm. The two glyphs are visually close and are different objects: $N$ is the quaternionic norm of an element, script $\mathcal N$ is the symbol of an operator, and the sign between them is a minus. A reader who drops the script from $\mathcal N$ sees the self-reference $\mathcal N=-N-k_m^{2}$ where there is none, so the definition is given above in components and the relation to $N$ second.</p>
 <p>The first-order rung has the algebra-valued symbol $\Sigma(\tilde K_\Phi)$, an element of the algebra to be left-multiplied. For the massless case $\Sigma(\tilde K_\Phi)=\tilde K_\Phi$ and the equation is the Weyl one. For the massive case this article evaluates nothing: the only property used is that the symbol is invertible wherever the label is off the pole set, and the rung table of §<em>What Each Rung Loses</em> records that property and no formula. Stating the massive symbol in closed form would require committing to a chiral convention that the corner does not test, and the corner is the only case examined here. The distinction matters at the corner and is the subject of §<em>What Each Rung Loses</em>.</p>
-<p>The null label and the projector. The only spatial axis this article uses is $\vec u$, a unit real pure quaternion, and it is the direction of the null momentum and not a choice of notation: for the physical family $\vec u=-\vec u_p$, with $\vec u_p=\vec k_\Phi/\lvert\vec k_\Phi\rvert$. A null label along it is $\tilde K_\Phi=k\bigl(ie_t+\vec u\bigr)$ with $k\neq0$ real, whose norm is $N=-k^{2}+k^{2}=0$. The projector $\tilde\Pi=\tfrac12\bigl(e_t+i\vec u\bigr)$ and $\tilde\Pi_{-}=\tfrac12\bigl(e_t-i\vec u\bigr)$. Both are <strong>idempotent</strong>, $\tilde\Pi^{2}=\tilde\Pi$, both have $N(\tilde\Pi)=0$, and both have Euclidean size $\tfrac12$. They are the two helicities of a null direction, and they are the simplest nonzero elements of the value cone.</p>
+<p>The null label and the projector. The only spatial axis this article uses is $\vec u$, a unit real pure quaternion, and it is the direction of the null momentum and not a choice of notation: for the physical family $\vec u=-\vec u_p$, with $\vec u_p=\vec k_\Phi/\lvert\vec k_\Phi\rvert$. A null label along it is $\tilde K_\Phi=k\bigl(ie_t+\vec u\bigr)$ with $k\neq0$ real, whose norm is $N=-k^{2}+k^{2}=0$. The projector $\tilde\Pi_{\mathrm{id}}=\tfrac12\bigl(e_t+i\vec u\bigr)$ and $\tilde\Pi_{\mathrm{id},-}=\tfrac12\bigl(e_t-i\vec u\bigr)$. Both are <strong>idempotent</strong>, $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$, both have $N(\tilde\Pi_{\mathrm{id}})=0$, and both have Euclidean size $\tfrac12$. They are the two helicities of a null direction, and they are the simplest nonzero elements of the value cone.</p>
 <p>Why the axis is named and not written as a basis unit. Every identity below is built from $e_t$, from $\vec u$ and from the two relations $\vec u^{2}=-e_t$ and $e_t\vec u=\vec u e_t=\vec u$, which hold for every unit real $\vec u$. Under the automorphism $u\mapsto sus^{-1}$ for a unit versor $s$ each identity therefore returns itself with $\vec u$ replaced, so none of them privileges a spatial direction. A display that wrote the same formulas with an unmarked basis unit would state a fact about the page and not about the algebra, and the test applied here is the one in <a href="the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused">The AXF Matrices: Axis-Free, Integer Entries</a> §<em>The Test Is Covariance</em>. The direction is the momentum's, it is carried by an object of the sentence, and the reader can rotate it.</p>
 <p>Units and conventions. All statements are algebraic and hold at one event or at one label; none is an equation of motion. <strong>No claim is made that a massless field of Nature is a null wave</strong>; the conditional is examined, not the physics.</p>
 <h2 id="two-charts-two-domains">Two Charts, Two Domains</h2>
@@ -288,7 +288,7 @@ Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi\varrho}{\varrho}\ \propto\
 \qquad
 p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}\ \propto\ \frac{1}{m},
 $$</p>
-<p>and the quantum stress $\sigma^{Q}_{ij}$ carries the same factor. So the whole quantum layer of a fixed field diverges as the mass vanishes. Checked on the two-mode superposition $\rho_{\mathrm{num}}=1+\eta^{2}+2\eta\cos(\Delta k\,x)$ with $\eta=0.2$, $\Delta k=1$ and $\hbar=1$:</p>
+<p>and the quantum stress $\sigma^{Q}_{ij}$ carries the same factor. So the whole quantum layer of a fixed field diverges as the mass vanishes. Checked on the two-mode superposition $\rho_{\mathrm{num}}=1+\eta^{2}+2\eta\cos(\Delta k\,x)$ with $\eta=0.2$ and $\Delta k=1$ in units of $k_m$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -370,7 +370,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>At $m=0$ the amplitude is not driven to zero by a path: it is forced into the kernel of a null symbol, and the kernel is the right ideal $\tilde\Pi\mathbb{B}$, every element of which has $N=0$. The field is null because the equation says so at $m=0$, not because a family of fields shrank.</p>
+<p>At $m=0$ the amplitude is not driven to zero by a path: it is forced into the kernel of a null symbol, and the kernel is the right ideal $\tilde\Pi_{\mathrm{id}}\mathbb{B}$, every element of which has $N=0$. The field is null because the equation says so at $m=0$, not because a family of fields shrank.</p>
 <p>What survives is three data and none of them is a density: a unit direction $\vec u$, an intensity $\lvert\varkappa\rvert^{2}$, and the sign of the energy. That is the data of a current,</p>
 <p>$$
 j_\mu=\frac{c}{2}\lvert\varkappa\rvert^{2}\bigl(1,\vec u\bigr),
@@ -386,10 +386,10 @@ $$</p>
 <p>where $L_{\tilde Q}$ is left multiplication by $\tilde Q$ as a real linear map on the eight real coordinates. <strong>Half the space is annihilated and half is not</strong>, and that is the precise sense in which a null symbol fails: not by vanishing, but by halving.</p>
 <p>For the label $\tilde K_\Phi=k(ie_t+\vec u)$,</p>
 <p>$$
-\tilde K_\Phi\tilde\Pi=0,\qquad \tilde K_\Phi\tilde\Pi_{-}=\tilde K_\Phi\neq0,
+\tilde K_\Phi\tilde\Pi_{\mathrm{id}}=0,\qquad \tilde K_\Phi\tilde\Pi_{\mathrm{id},-}=\tilde K_\Phi\neq0,
 $$</p>
-<p>so the kernel is $\tilde\Pi\,\mathbb{B}$, the set of right multiples of $\tilde\Pi$: four real parameters, two complex. The wrong chirality is not annihilated at all — it is passed through unchanged, which is a stronger statement than "not in the kernel": the mirror projector leaves the symbol's action untouched. The mirror label annihilates the mirror idempotent and nothing else, which is the algebraic form of the statement that helicity is locked to momentum <a href="spin-velocity-locking-on-the-degenerate-sector.html">Spin-Velocity Locking on the Degenerate Sector</a>.</p>
-<p>At $k=1$ and $k=2.7$ the singular values of $L_{\tilde K_\Phi}$ are $\{2,2,2,2,0,0,0,0\}$ and $\{5.4,5.4,5.4,5.4,0,0,0,0\}$; the span of the four generators $\tilde\Pi\vec e_\mu$ has rank four and is annihilated to zero; and the mirror product $\tilde K_\Phi\tilde\Pi_{-}$ equals $\tilde K_\Phi$ to $0$ exactly. <em>Proof and residuals: §</em>Appendix: The Algebra<em>.</em></p>
+<p>so the kernel is $\tilde\Pi_{\mathrm{id}}\,\mathbb{B}$, the set of right multiples of $\tilde\Pi_{\mathrm{id}}$: four real parameters, two complex. The wrong chirality is not annihilated at all — it is passed through unchanged, which is a stronger statement than "not in the kernel": the mirror projector leaves the symbol's action untouched. The mirror label annihilates the mirror idempotent and nothing else, which is the algebraic form of the statement that helicity is locked to momentum <a href="spin-velocity-locking-on-the-degenerate-sector.html">Spin-Velocity Locking on the Degenerate Sector</a>.</p>
+<p>At $k=1$ and $k=2.7$ the singular values of $L_{\tilde K_\Phi}$ are $\{2,2,2,2,0,0,0,0\}$ and $\{5.4,5.4,5.4,5.4,0,0,0,0\}$; the span of the four generators $\tilde\Pi_{\mathrm{id}}\vec e_\mu$ has rank four and is annihilated to zero; and the mirror product $\tilde K_\Phi\tilde\Pi_{\mathrm{id},-}$ equals $\tilde K_\Phi$ to $0$ exactly. <em>Proof and residuals: §</em>Appendix: The Algebra<em>.</em></p>
 <h2 id="the-inverse-it-keeps">The Inverse It Keeps</h2>
 <p>A rank drop of four is not a catastrophe, and the label chart's residue is a number. The singular values of $L_{\tilde K_\Phi}$ are $2\lvert k\rvert$ four times and zero four times, so the least-squares inverse exists, has rank four, and its norm is</p>
 <p>$$
@@ -466,17 +466,17 @@ $$</p>
 <h2 id="the-value-chart-at-zero-mass">The Value Chart at Zero Mass</h2>
 <p>With $\varkappa$ a complex constant and $\theta=-k_t't'+\vec k_\Phi\cdot\vec X$,</p>
 <p>$$
-\tilde\Xi(X)=\varkappa\,\tilde\Pi\,e^{i\theta},\qquad \tilde K_\Phi\,\tilde\Pi=0,\qquad N(\tilde K_\Phi)=0,
+\tilde\Xi(X)=\varkappa\,\tilde\Pi_{\mathrm{id}}\,e^{i\theta},\qquad \tilde K_\Phi\,\tilde\Pi_{\mathrm{id}}=0,\qquad N(\tilde K_\Phi)=0,
 $$</p>
 <p>which solves the massless first-order equation exactly, because the symbol annihilates the amplitude.</p>
-<p>$N$ is multiplicative, $N(\tilde\Pi)=0$, so</p>
+<p>$N$ is multiplicative, $N(\tilde\Pi_{\mathrm{id}})=0$, so</p>
 <p>$$
-N\bigl(\tilde\Xi(X)\bigr)=\varkappa^{2}e^{2i\theta}N(\tilde\Pi)=0\quad\text{for every }X ,
+N\bigl(\tilde\Xi(X)\bigr)=\varkappa^{2}e^{2i\theta}N(\tilde\Pi_{\mathrm{id}})=0\quad\text{for every }X ,
 $$</p>
 <p>and the polar word fails at every event of the wave, not at a set of events and not on a hypersurface: the whole world line is off the chart's domain. The label chart fails at one point of label space and the value chart fails everywhere in spacetime, which is what "the two charts fail on one wave" has to mean if it is to mean anything.</p>
 <p>The Euclidean size is constant and nonzero:</p>
 <p>$$
-\langle\tilde\Xi\rangle_{*}=\lvert\varkappa\rvert^{2}\langle\tilde\Pi\rangle_{*}=\tfrac12\lvert\varkappa\rvert^{2},
+\langle\tilde\Xi\rangle_{*}=\lvert\varkappa\rvert^{2}\langle\tilde\Pi_{\mathrm{id}}\rangle_{*}=\tfrac12\lvert\varkappa\rvert^{2},
 \qquad
 \rho_{\mathrm{num}}=\lvert N(\tilde\Xi)\rvert=0 ,
 \qquad
@@ -523,15 +523,15 @@ $$</p>
 <h2 id="one-factorisation-two-failures">One Factorisation, Two Failures</h2>
 <p>$N$ is multiplicative, so for every $\tilde B$,</p>
 <p>$$
-N\bigl(\tilde\Pi\tilde B\bigr)=N(\tilde\Pi)\,N(\tilde B)=0 .
+N\bigl(\tilde\Pi_{\mathrm{id}}\tilde B\bigr)=N(\tilde\Pi_{\mathrm{id}})\,N(\tilde B)=0 .
 $$</p>
 <p><strong>The kernel of the null symbol is contained in the value cone.</strong> That is the sentence. The set the label chart keeps is a subset of the set the value chart refuses, so the two failures are not two accidents that happen to coincide: the surviving amplitudes are the failing values, and the same idempotent names both.</p>
-<p>Checked on two thousand random right multiples. The largest $\lvert N(\tilde\Pi\tilde B)\rvert$ is $9.2\times10^{-16}$, which is the arithmetic's zero and not a small number. <em>Proof: §</em>Appendix: The Algebra<em>, §</em>The Containment<em>.</em></p>
+<p>Checked on two thousand random right multiples. The largest $\lvert N(\tilde\Pi_{\mathrm{id}}\tilde B)\rvert$ is $9.2\times10^{-16}$, which is the arithmetic's zero and not a small number. <em>Proof: §</em>Appendix: The Algebra<em>, §</em>The Containment<em>.</em></p>
 <p>The kernel is four real dimensional; the value cone is six real dimensional, being two real equations on eight coordinates. So the kernel is a four-dimensional slice of the cone and not the cone. The corner is a point of the label space crossed with a four-dimensional family of amplitudes, and the product is the wave.</p>
-<p>What the containment buys. It turns "both charts fail there" from a remark into a factorisation: the label chart's failure and the value chart's failure are the same element $\tilde\Pi$, read once as the annihilator of the symbol and once as the vanishing of the norm. A reader who wants a single object for the corner should take the idempotent: it is the projector that survives the symbol and the projector that has no norm.</p>
+<p>What the containment buys. It turns "both charts fail there" from a remark into a factorisation: the label chart's failure and the value chart's failure are the same element $\tilde\Pi_{\mathrm{id}}$, read once as the annihilator of the symbol and once as the vanishing of the norm. A reader who wants a single object for the corner should take the idempotent: it is the projector that survives the symbol and the projector that has no norm.</p>
 <h2 id="two-waves-not-one">Two Waves, Not One</h2>
 <p>The earlier article says "the one-sided wave", and both halves of that phrase need repair. The first half first.</p>
-<p>At a given null label the solutions are a family, not a single wave. The kernel $\tilde\Pi\mathbb{B}$ has four real parameters, so the amplitudes at that label are $\varkappa\tilde\Pi\tilde B$ for a fixed projector and an arbitrary right multiplyer; only the scale and phase of $\varkappa$ are visible in the quantities of this article. The corner is one label and a family, and calling it "one wave" is shorthand for "one label".</p>
+<p>At a given null label the solutions are a family, not a single wave. The kernel $\tilde\Pi_{\mathrm{id}}\mathbb{B}$ has four real parameters, so the amplitudes at that label are $\varkappa\tilde\Pi_{\mathrm{id}}\tilde B$ for a fixed projector and an arbitrary right multiplyer; only the scale and phase of $\varkappa$ are visible in the quantities of this article. The corner is one label and a family, and calling it "one wave" is shorthand for "one label".</p>
 <p>The chiralities are two waves at two labels. The check is explicit:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -564,11 +564,11 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>Since $\tilde\Pi_{-}=\tfrac12(e_t-i\vec u)$,</p>
+<p>Since $\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec u)$,</p>
 <p>$$
-2ik\,\tilde\Pi_{-}=ik\bigl(e_t-i\vec u\bigr)=k\bigl(ie_t+\vec u\bigr)=\tilde K_\Phi ,
+2ik\,\tilde\Pi_{\mathrm{id},-}=ik\bigl(e_t-i\vec u\bigr)=k\bigl(ie_t+\vec u\bigr)=\tilde K_\Phi ,
 $$</p>
-<p>so the entry $2ik\tilde\Pi_{-}$ in the earlier sentence is $\tilde K_\Phi$ itself, and the mirror projector passes the symbol through unchanged.</p>
+<p>so the entry $2ik\tilde\Pi_{\mathrm{id},-}$ in the earlier sentence is $\tilde K_\Phi$ itself, and the mirror projector passes the symbol through unchanged.</p>
 <p>So the label selects the chirality and the chirality does not select the label. There is one surviving wave per future-null momentum, and the mirror momentum carries the mirror idempotent; the two are opposite momenta and not two labels on one direction. The count is one label, one chirality, one wave, which is helicity-momentum locking stated as a rank count rather than as a kinematic fact: the annihilated projector is determined by the sign of the spatial momentum, so a null direction taken as an unoriented axis carries both, and a momentum carries one.</p>
 <p>The second half of the phrase is a collision. "One-sided" already means the Dirac chiral pair in this corpus, where the two one-sided equations are the two factors of the two-sided one. A reader who carries that meaning into the corner will read "one-sided wave" as "one of a chiral pair", which is not what the earlier article meant. This article uses <strong>null wave</strong>: the wave whose label is null, whose amplitude is null, and whose value is null at every event.</p>
 <h2 id="what-survives-in-both-charts">What Survives in Both Charts</h2>
@@ -585,7 +585,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>Two statements and one limit. At every positive mass the fluid exists in full; at zero mass on the cone it does not, and what the corner holds is a null current with a direction, an intensity and a sign. The mass carries the first into the second, and the passage is a limit and not a value.</p>
 <p>The two failures are level sets of one function $k_m^{2}$ apart. The fluid chart fails on the value cone $N(\tilde\Xi)=0$; the Fourier chart fails on the pole set $N(\tilde K_\Phi)=-k_m^{2}$; the mass is the height between them and $k_m=0$ is the one value at which they are one set.</p>
-<p>At that value the two failures are one factorisation. The null symbol's kernel is $\tilde\Pi\mathbb{B}$, and because $N$ is multiplicative and $N(\tilde\Pi)=0$, every element of the kernel is on the value cone: the set the label chart keeps is inside the set the value chart refuses. Verified to $9.2\times10^{-16}$ on two thousand random multiples, and proved in one line.</p>
+<p>At that value the two failures are one factorisation. The null symbol's kernel is $\tilde\Pi_{\mathrm{id}}\mathbb{B}$, and because $N$ is multiplicative and $N(\tilde\Pi_{\mathrm{id}})=0$, every element of the kernel is on the value cone: the set the label chart keeps is inside the set the value chart refuses. Verified to $9.2\times10^{-16}$ on two thousand random multiples, and proved in one line.</p>
 <p>The wave carries a current and has no density. $N(\tilde\Xi)=0$ and $\langle\tilde\Xi\rangle_{*}=\tfrac12\lvert\varkappa\rvert^{2}$ at every event, so $\rho_{\mathrm{num}}=0$ and $j_0=\tfrac{c}{2}\lvert\varkappa\rvert^{2}$: the corner is the place where article one's two numbers separate completely while the current stays finite.</p>
 <p>"One wave" is one label, two helicities and a four-real-dimensional family. Each null label annihilates exactly one idempotent and the mirror label the mirror one, so helicity is locked to momentum by a rank count. And the wave is the null wave, not the one-sided one, since that word is already the Dirac chiral pair's.</p>
 <p>The corner is inhabited because the first-order rung loses only half. The scalar symbol vanishes outright at $k_m=0$ on the cone, so its multiplication operator drops from rank $8$ to rank $0$; the first-order symbol becomes null, dropping from $8$ to $4$, and the half it keeps is the half the value chart refuses. A rank count, not a coincidence.</p>
@@ -632,7 +632,7 @@ $$</p>
 <td>left multiplication by $\tilde Q$ as a real map on eight coordinates</td>
 </tr>
 <tr>
-<td>$\tilde\Pi$, $\tilde\Pi_{-}$</td>
+<td>$\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id},-}$</td>
 <td>$\tfrac12(e_t\pm i\vec u)$, idempotents on the value cone</td>
 </tr>
 <tr>
@@ -673,21 +673,21 @@ $$</p>
 L_{\tilde Q}X=0\quad\Longleftrightarrow\quad \text{both columns of }X\text{ lie in }\ker M_{\tilde Q} .
 $$</p>
 <p>Since $M_{\tilde Q}$ is nonzero and singular, $\ker M_{\tilde Q}$ is one complex dimensional, so each of the two columns contributes one free complex parameter: the kernel of $L_{\tilde Q}$ has complex dimension $2$ and real dimension $4$. The eight real dimensions of $M_2(\mathbb{C})$ minus four is four, so the real rank is $4$. The image count is a consequence and not an extra input: left multiplication by a rank-one matrix has image inside the one-dimensional $\operatorname{im}M_{\tilde Q}$ spanned over the two columns, which is two complex dimensions, the same four real dimensions.</p>
-<p>The kernel is a right ideal. If $M_{\tilde Q}\tilde\Pi=0$ then $M_{\tilde Q}(\tilde\Pi\tilde B)=0$ for every $\tilde B$, so the kernel is closed under right multiplication and is the right ideal generated by the idempotent projector onto $\ker M_{\tilde Q}$. That the projector is itself null is the containment of the next subsection, not an extra hypothesis.</p>
+<p>The kernel is a right ideal. If $M_{\tilde Q}\tilde\Pi_{\mathrm{id}}=0$ then $M_{\tilde Q}(\tilde\Pi_{\mathrm{id}}\tilde B)=0$ for every $\tilde B$, so the kernel is closed under right multiplication and is the right ideal generated by the idempotent projector onto $\ker M_{\tilde Q}$. That the projector is itself null is the containment of the next subsection, not an extra hypothesis.</p>
 <h3 id="the-idempotents-and-the-annihilation">The Idempotents and the Annihilation</h3>
-<p>Claim. $\tilde\Pi=\tfrac12(e_t+i\vec u)$ satisfies $\tilde\Pi^{2}=\tilde\Pi$, $N(\tilde\Pi)=0$, $\langle\tilde\Pi\rangle_{*}=\tfrac12$, and $\tilde K_\Phi\tilde\Pi=0$ for the null label $\tilde K_\Phi=k(ie_t+\vec u)$ with $k\neq0$ real.</p>
+<p>Claim. $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+i\vec u)$ satisfies $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$, $N(\tilde\Pi_{\mathrm{id}})=0$, $\langle\tilde\Pi_{\mathrm{id}}\rangle_{*}=\tfrac12$, and $\tilde K_\Phi\tilde\Pi_{\mathrm{id}}=0$ for the null label $\tilde K_\Phi=k(ie_t+\vec u)$ with $k\neq0$ real.</p>
 <p><em>Proof.</em> The square. Expand term by term, keeping the two cross terms and the two squares separate:</p>
 <p>$$
 (e_t+i\vec u)^{2}=e_t^{2}+i e_t\vec u+i\vec u e_t+i^{2}\vec u^{2}=e_t+i\vec u+i\vec u+e_t=2e_t+2i\vec u ,
 $$</p>
-<p>using $e_t^{2}=e_t$, $e_t\vec u=\vec u e_t=\vec u$, $\vec u^{2}=-e_t$ and therefore $i^{2}\vec u^{2}=(-1)(-e_t)=+e_t$. <strong>The sign there is the place an expansion goes wrong</strong>: $i^{2}\vec u^{2}$ is $+\vec e_t$ and not $-\vec e_t$, and it is what makes the two $e_t$ terms add rather than cancel. The result is $2(e_t+i\vec u)$, so halving gives $\tilde\Pi^{2}=\tilde\Pi$. The norm is $N(\tilde\Pi)=\tfrac14\bigl(1^{2}+i^{2}\bigr)=0$ and the size is $\tfrac14(1+1)=\tfrac12$. The annihilation is the product</p>
+<p>using $e_t^{2}=e_t$, $e_t\vec u=\vec u e_t=\vec u$, $\vec u^{2}=-e_t$ and therefore $i^{2}\vec u^{2}=(-1)(-e_t)=+e_t$. <strong>The sign there is the place an expansion goes wrong</strong>: $i^{2}\vec u^{2}$ is $+\vec e_t$ and not $-\vec e_t$, and it is what makes the two $e_t$ terms add rather than cancel. The result is $2(e_t+i\vec u)$, so halving gives $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$. The norm is $N(\tilde\Pi_{\mathrm{id}})=\tfrac14\bigl(1^{2}+i^{2}\bigr)=0$ and the size is $\tfrac14(1+1)=\tfrac12$. The annihilation is the product</p>
 <p>$$
 (ie_t+\vec u)(e_t+i\vec u)=ie_t^{2}+i^{2}e_t\vec u+\vec u e_t+i\vec u^{2}=ie_t-\vec u+\vec u-ie_t=0 ,
 $$</p>
-<p>using $e_t\vec u=\vec u$, $\vec u e_t=\vec u$ and $i^{2}\vec u^{2}=(-1)(-e_t)=e_t$. Every term cancels pairwise and no null condition is used: the product is zero for the factorisation $k(ie_t+\vec u)$ at any $k$, and the label's nullity is what makes that factorisation the label of a massless mode. The mirror is $(ie_t+\vec u)(e_t-i\vec u)=ie_t+\vec u+\vec u+ie_t=2(ie_t+\vec u)$, so $\tilde K_\Phi\tilde\Pi_{-}=\tilde K_\Phi$ and the mirror projector is in the kernel of nothing.</p>
+<p>using $e_t\vec u=\vec u$, $\vec u e_t=\vec u$ and $i^{2}\vec u^{2}=(-1)(-e_t)=e_t$. Every term cancels pairwise and no null condition is used: the product is zero for the factorisation $k(ie_t+\vec u)$ at any $k$, and the label's nullity is what makes that factorisation the label of a massless mode. The mirror is $(ie_t+\vec u)(e_t-i\vec u)=ie_t+\vec u+\vec u+ie_t=2(ie_t+\vec u)$, so $\tilde K_\Phi\tilde\Pi_{\mathrm{id},-}=\tilde K_\Phi$ and the mirror projector is in the kernel of nothing.</p>
 <h3 id="the-containment">The Containment</h3>
-<p>Claim. $\tilde\Pi\mathbb{B}\subseteq\{\tilde Q: N(\tilde Q)=0\}$, with strict inclusion.</p>
-<p><em>Proof.</em> $N(\tilde\Pi\tilde B)=N(\tilde\Pi)N(\tilde B)=0$ by multiplicativity and $N(\tilde\Pi)=0$. Strictness: the kernel is four real dimensional by the rank claim and the value cone is six real dimensional, being the vanishing of the complex number $N$, which is two real equations on eight coordinates with independent gradients off the origin.</p>
+<p>Claim. $\tilde\Pi_{\mathrm{id}}\mathbb{B}\subseteq\{\tilde Q: N(\tilde Q)=0\}$, with strict inclusion.</p>
+<p><em>Proof.</em> $N(\tilde\Pi_{\mathrm{id}}\tilde B)=N(\tilde\Pi_{\mathrm{id}})N(\tilde B)=0$ by multiplicativity and $N(\tilde\Pi_{\mathrm{id}})=0$. Strictness: the kernel is four real dimensional by the rank claim and the value cone is six real dimensional, being the vanishing of the complex number $N$, which is two real equations on eight coordinates with independent gradients off the origin.</p>
 <h3 id="the-scalar-symbol-at-the-corner">The Scalar Symbol at the Corner</h3>
 <p>Claim. The scalar symbol $\mathcal N(\tilde K_\Phi)=k_t'^{2}-\lvert\vec k_\Phi\rvert^{2}-k_m^{2}$ vanishes on the label cone exactly when $k_m=0$, and equals $-k_m^{2}$ there otherwise.</p>
 <p><em>Proof.</em> On the cone $k_t'^{2}=\lvert\vec k_\Phi\rvert^{2}$, so $\mathcal N=-k_m^{2}$. A central element $-k_m^{2}e_t$ is invertible whenever $k_m\neq0$, its inverse being $(-1/k_m^{2})e_t$, so $L$ has rank eight; and at $k_m=0$ the symbol is the zero element and $L$ has rank zero. This is why the scalar rung loses the whole operator and the first-order rung only half of it.</p>
@@ -713,22 +713,22 @@ $$</p>
 </tr>
 <tr>
 <td>the annihilation</td>
-<td>$\tilde K_\Phi\tilde\Pi$</td>
+<td>$\tilde K_\Phi\tilde\Pi_{\mathrm{id}}$</td>
 <td>$0$</td>
 </tr>
 <tr>
 <td>the mirror mismatch</td>
-<td>$\tilde K_\Phi\tilde\Pi_{-}$ against $2ik\tilde\Pi_{-}$</td>
+<td>$\tilde K_\Phi\tilde\Pi_{\mathrm{id},-}$ against $2ik\tilde\Pi_{\mathrm{id},-}$</td>
 <td>$0$</td>
 </tr>
 <tr>
 <td>the idempotent</td>
-<td>$\tilde\Pi^{2}-\tilde\Pi$</td>
+<td>$\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}}$</td>
 <td>$0$</td>
 </tr>
 <tr>
 <td>the containment</td>
-<td>$\max\lvert N(\tilde\Pi\tilde B)\rvert$ over $2000$ random $\tilde B$</td>
+<td>$\max\lvert N(\tilde\Pi_{\mathrm{id}}\tilde B)\rvert$ over $2000$ random $\tilde B$</td>
 <td>$9.2\times10^{-16}$</td>
 </tr>
 <tr>

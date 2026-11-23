@@ -83,8 +83,8 @@ $$</p>
 \exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
 \exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
 $$</p>
-<p>and, on the wall, also in the normal form $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$.</p>
-<p>The two groups display the two shapes of the same word. Off the wall the cases split into the normal elements, where the two axes are parallel and the word is one exponential, and the non-normal elements, where the axes are not the eigenlines and the spectrum does not determine the rapidity and the rotor angle. On the wall the cases split into the scalar line, where the unit factor is $\pm e_t$, and the Jordan part, where it is $\pm(e_t+\vec\Upsilon)$ with $\vec\Upsilon\neq0$, the two axes are orthogonal, and the rapidity is a function of the rotor angle.</p>
+<p>and, on the wall, also in the normal form $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}^2=0$.</p>
+<p>The two groups display the two shapes of the same word. Off the wall the cases split into the normal elements, where the two axes are parallel and the word is one exponential, and the non-normal elements, where the axes are not the eigenlines and the spectrum does not determine the rapidity and the rotor angle. On the wall the cases split into the scalar line, where the unit factor is $\pm e_t$, and the Jordan part, where it is $\pm(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}\neq0$, the two axes are orthogonal, and the rapidity is a function of the rotor angle.</p>
 <p>The numbering runs from $1$ to $8$ off the wall and from $9$ to $16$ on it; every table and every defect refers to that numbering. The numbers are rounded to eight or nine significant digits, and the computations were carried to double precision.</p>
 <p><strong>The plan.</strong> §<em>Conventions and Recipes</em> fixes the notation, the recipe and the checks for both groups. §§<em>Case 1</em> to <em>Case 8</em> treat the elements off the wall, grouped by their normal or non-normal character. §<em>On the Wall</em> treats the eight elements of the wall, the three of the scalar line first and the five of the Jordan part after. §<em>The Comparison</em> collects the words, the constraints, the logarithms and the defects of both groups. The summary gives the tables.</p>
 <h2 id="conventions-and-recipes">Conventions and Recipes</h2>
@@ -109,12 +109,12 @@ $$</p>
 <ol>
 <li>Compute $N$ and $B^2=Q_x^2+Q_y^2+Q_z^2$. Every case has $N\neq0$; the cases off the wall have $B^2\neq0$ and the cases on the wall have $B^2=0$.</li>
 <li>Compute the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$, the principal square root of $N$, and write $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho e^{i\theta_{\mathrm{pha}}}$ with $\varrho>0$ and $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$.</li>
-<li>Off the wall, compute the unit factor $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$. On the wall, compute the scalar part $Q_t$, the nilpotent direction $\vec\Upsilon=\vec Q/Q_t$, the sign $\varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$ and the unit factor $\tilde U=\varepsilon(e_t+\vec\Upsilon)$, and check $\vec\Upsilon^2=0$.</li>
+<li>Off the wall, compute the unit factor $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$. On the wall, compute the scalar part $Q_t$, the nilpotent direction $\vec\Pi_{\mathrm{nil}}=\vec Q/Q_t$, the sign $\varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$ and the unit factor $\tilde U=\varepsilon(e_t+\vec\Pi_{\mathrm{nil}})$, and check $\vec\Pi_{\mathrm{nil}}^2=0$.</li>
 <li>Compute the Hermitian factor $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, positive of norm one, and the rotor $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$.</li>
 <li>Read the boost angle and axis from $\tilde U_{\mathrm b}=c_{\mathrm b}e_t+i s_{\mathrm b}\vec u_{\mathrm b}$, and the rotor angle and axis from $\tilde u_{\mathrm r}=c_{\mathrm r}e_t+s_{\mathrm r}\vec u_{\mathrm r}$.</li>
 <li>Check $\tilde Q=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and $\langle\tilde U\rangle_{\natural}=1$.</li>
-<li>Off the wall, compute the eigen-data: $\lambda_\pm=Q_t\pm iB$, $\vec{Ζ}=-i\vec Q/B$, $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$, and $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})$.</li>
-<li>On the wall, check the constraints $c_{\mathrm b}c_{\mathrm r}=\varepsilon$ and $s_{\mathrm b}s_{\mathrm r}c=0$, with $c=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$, and compute the exact logarithm $\log Q_t+\vec\Upsilon$.</li>
+<li>Off the wall, compute the eigen-data: $\lambda_\pm=Q_t\pm iB$, $\vec{Ζ}=-i\vec Q/B$, $\tilde\Pi_{\mathrm{id},\pm}=\frac12(e_t\pm\vec{Ζ})$, and $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})$.</li>
+<li>On the wall, check the constraints $c_{\mathrm b}c_{\mathrm r}=\varepsilon$ and $s_{\mathrm b}s_{\mathrm r}c=0$, with $c=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$, and compute the exact logarithm $\log Q_t+\vec\Pi_{\mathrm{nil}}$.</li>
 <li>Compute the true logarithm by the matrix logarithm, and compare its exponential with $\tilde Q$. On the wall the exact logarithm plays that role.</li>
 <li>Compute the formal exponent and its defect, in both groups.</li>
 </ol>
@@ -164,11 +164,11 @@ $$</p>
 <td>the eigenvalues of the unit factor, off the wall</td>
 </tr>
 <tr>
-<td>$\tilde Q=Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon^2=0$</td>
+<td>$\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$, $\vec\Pi_{\mathrm{nil}}^2=0$</td>
 <td>the normal form, on the wall</td>
 </tr>
 <tr>
-<td>$\tilde U=\varepsilon(e_t+\vec\Upsilon)$, $(\tilde U-\varepsilon e_t)^2=0$</td>
+<td>$\tilde U=\varepsilon(e_t+\vec\Pi_{\mathrm{nil}})$, $(\tilde U-\varepsilon e_t)^2=0$</td>
 <td>the unit factor on the wall is $\pm$unipotent</td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ $$</p>
 <td>the axis constraint, on the wall</td>
 </tr>
 <tr>
-<td>$\operatorname{Log}\tilde Q=\log Q_t+\vec\Upsilon$</td>
+<td>$\operatorname{Log}\tilde Q=\log Q_t+\vec\Pi_{\mathrm{nil}}$</td>
 <td>the exact logarithm, on the wall</td>
 </tr>
 </tbody>
@@ -229,7 +229,7 @@ $$</p>
 \qquad
 \vec{Ζ}=-i\vec e_x,
 \qquad
-\tilde\Pi_\pm=\frac{e_t\mp i\vec e_x}{2},
+\tilde\Pi_{\mathrm{id},\pm}=\frac{e_t\mp i\vec e_x}{2},
 \qquad
 \mu_\pm=\pm i.
 $$</p>
@@ -650,7 +650,7 @@ $$</p>
 $$</p>
 <p>and the formal exponent is the same, with defect $0$.</p>
 <h2 id="on-the-wall">On the Wall</h2>
-<p>The eight cases of this group have $B^2=0$, so every element is $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$. Cases $9$ to $11$ are the scalar line: the unit factor is $\pm e_t$, the boost is the identity and the word is central. Cases $12$ to $16$ are the Jordan part: the unit factor is $\pm(e_t+\vec\Upsilon)$ with $\vec\Upsilon\neq0$, the two axes are orthogonal, and the rapidity is a function of the rotor angle.</p>
+<p>The eight cases of this group have $B^2=0$, so every element is $Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}^2=0$. Cases $9$ to $11$ are the scalar line: the unit factor is $\pm e_t$, the boost is the identity and the word is central. Cases $12$ to $16$ are the Jordan part: the unit factor is $\pm(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}\neq0$, the two axes are orthogonal, and the rapidity is a function of the rotor angle.</p>
 <h3 id="case-9-the-identity">Case 9: The Identity</h3>
 <h4 id="the-element_8">The Element</h4>
 <p>$$
@@ -779,7 +779,7 @@ B^2=0,
 \qquad
 Q_t=1,
 \qquad
-\vec\Upsilon=\vec e_x+i\vec e_y.
+\vec\Pi_{\mathrm{nil}}=\vec e_x+i\vec e_y.
 $$</p>
 <h4 id="the-polar-factors_11">The Polar Factors</h4>
 <p>$$
@@ -845,7 +845,7 @@ B^2=0,
 \qquad
 Q_t=1,
 \qquad
-\vec\Upsilon=\frac{i}{\sqrt2}\vec e_x+\vec e_y+\frac{i}{\sqrt2}\vec e_z.
+\vec\Pi_{\mathrm{nil}}=\frac{i}{\sqrt2}\vec e_x+\vec e_y+\frac{i}{\sqrt2}\vec e_z.
 $$</p>
 <h4 id="the-polar-factors_12">The Polar Factors</h4>
 <p>$$
@@ -910,7 +910,7 @@ B^2=0,
 \qquad
 Q_t=1+i,
 \qquad
-\vec\Upsilon=\frac{1-i}{2}\vec e_x+\frac{1+i}{2}\vec e_y.
+\vec\Pi_{\mathrm{nil}}=\frac{1-i}{2}\vec e_x+\frac{1+i}{2}\vec e_y.
 $$</p>
 <h4 id="the-polar-factors_13">The Polar Factors</h4>
 <p>$$
@@ -977,7 +977,7 @@ B^2=0,
 \qquad
 Q_t=-1,
 \qquad
-\vec\Upsilon=\vec e_x+i\vec e_y.
+\vec\Pi_{\mathrm{nil}}=\vec e_x+i\vec e_y.
 $$</p>
 <h4 id="the-polar-factors_14">The Polar Factors</h4>
 <p>$$
@@ -1036,7 +1036,7 @@ B^2=0,
 \qquad
 Q_t=2,
 \qquad
-\vec\Upsilon=\vec e_x+i\vec e_y.
+\vec\Pi_{\mathrm{nil}}=\vec e_x+i\vec e_y.
 $$</p>
 <h4 id="the-polar-factors_15">The Polar Factors</h4>
 <p>$$
@@ -1371,7 +1371,7 @@ $$</p>
 <tr>
 <th>Case</th>
 <th>$(\tilde U-\varepsilon e_t)^2$</th>
-<th>$\vec\Upsilon^2$</th>
+<th>$\vec\Pi_{\mathrm{nil}}^2$</th>
 <th>$c$</th>
 <th>$\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}$</th>
 </tr>
@@ -1896,10 +1896,10 @@ $$</p>
 </table></div>
 <h3 id="what-the-wall-shows">What the Wall Shows</h3>
 <ul>
-<li>Every case has $B^2=0$ and $N\neq0$, and every element is $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$.</li>
-<li>The unit factor is $\pm(e_t+\vec\Upsilon)$: its scalar part is $\pm1$ and its square is the identity on the scalar line, a nontrivial unipotent on the Jordan part.</li>
+<li>Every case has $B^2=0$ and $N\neq0$, and every element is $Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}^2=0$.</li>
+<li>The unit factor is $\pm(e_t+\vec\Pi_{\mathrm{nil}})$: its scalar part is $\pm1$ and its square is the identity on the scalar line, a nontrivial unipotent on the Jordan part.</li>
 <li>On the Jordan part the axes are orthogonal, $c=0$, and the rapidity is tied to the rotor angle by $|\cos\frac{\theta_{\mathrm{axr}}}{2}|=1/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$.</li>
-<li>The exact logarithm is $\log Q_t+\vec\Upsilon$, with no series and no correction. The scalar logarithm carries the sign and the phase; the nilpotent part is fixed.</li>
+<li>The exact logarithm is $\log Q_t+\vec\Pi_{\mathrm{nil}}$, with no series and no correction. The scalar logarithm carries the sign and the phase; the nilpotent part is fixed.</li>
 <li>The formal exponent is a logarithm on the scalar line and not on the Jordan part. The defect is the cross term $i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm b}\times\vec u_{\mathrm r}$ plus the nonlinear terms.</li>
 <li>The defect scales with the element: case 16 is twice case 12, and its defect is twice as large.</li>
 </ul>
@@ -1965,7 +1965,7 @@ $$</p>
 <td>the root of one, $-i\vec Q/B$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}$</td>
 <td>the spectral idempotents</td>
 </tr>
 <tr>
@@ -1981,7 +1981,7 @@ $$</p>
 <td>the defect of the case</td>
 </tr>
 <tr>
-<td>$\vec\Upsilon=\vec Q/Q_t$</td>
+<td>$\vec\Pi_{\mathrm{nil}}=\vec Q/Q_t$</td>
 <td>the nilpotent direction on the wall</td>
 </tr>
 <tr>

@@ -79,12 +79,12 @@ I(A:B) = S(\tilde{Ϛ}_{\Psi,A}) + S(\tilde{Ϛ}_{\Psi,B}) - S(\tilde{Ϛ}_{\Psi,AB
 $$</p>
 <p>and the classical mutual information is</p>
 <p>$$
-J(A|B) = S(\tilde{Ϛ}_{\Psi,A}) - S\bigl(\tilde{Ϛ}_{\Psi,A|\{\tilde{\Pi}_k\}}\bigr),
+J(A|B) = S(\tilde{Ϛ}_{\Psi,A}) - S\bigl(\tilde{Ϛ}_{\Psi,A|\{\tilde\Pi_{\mathrm{id},k}\}}\bigr),
 $$</p>
 <p>where the conditional entropy is that of the post-measurement state of $A$ after a projective measurement on $B$; the <strong>discord</strong> is $D(A|B) = I(A:B)-J(A|B)$, maximized over measurements in the definition of $J$.</p>
 <p>The framework's most useful contribution here is a compact parametrization. The states diagonal in the Bell idempotent basis,</p>
 <p>$$
-\tilde{Ϛ}_{\Psi,AB} = \sum_\epsilon p_\epsilon\,\tilde\Pi_\epsilon ,
+\tilde{Ϛ}_{\Psi,AB} = \sum_\epsilon p_\epsilon\,\tilde\Pi_{\mathrm{id},\epsilon} ,
 \qquad p_\epsilon\geq0, \quad \sum_\epsilon p_\epsilon = 1,
 $$</p>
 <p>are exactly the states whose correlation structure is controlled by three real numbers $c_j = 4\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,AB}\tilde{H}_{\Psi,j}^{*})$ with $\tilde{H}_{\Psi,j} = -\vec e_j\otimes\vec e_j \in \mathbb{B}_{\Psi}^{\otimes 2}$. These are the readings of the plain form that pair the state with the three tensor-product observables built from the imaginary units. The entanglement, the entropy, the mutual information, and the discord of the whole family are functions of the triple $(c_1,c_2,c_3)$ only. The article computes the discord for this family explicitly and exhibits a separable state with positive discord, verifying every number by recomputation. Logarithms in this article are base two, so entropies are in bits.</p>
@@ -102,12 +102,12 @@ I(A:B) = S(\tilde{Ϛ}_{\Psi,A}) + S(\tilde{Ϛ}_{\Psi,B}) - S(\tilde{Ϛ}_{\Psi,AB
 $$</p>
 <p>non-negative by subadditivity of the entropy. It is symmetric in $A$ and $B$ and is monotone under local operations; it measures the total correlation, quantum and classical, between the two subsystems. It vanishes exactly for product states, $\tilde{Ϛ}_{\Psi,AB} = \tilde{Ϛ}_{\Psi,A}\otimes\tilde{Ϛ}_{\Psi,B}$.</p>
 <h3 id="the-bell-diagonal-family">The Bell-diagonal family</h3>
-<p>The four Bell idempotents $\tilde\Pi_\epsilon$ of the companion article <em>The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</em> form an idempotent basis of the two-qubit algebra, with $\tilde\Pi_\epsilon P_{\epsilon_{\mathrm o}} = \delta_{\epsilon\epsilon_{\mathrm o}}\tilde\Pi_\epsilon$ and $\sum_\epsilon \tilde\Pi_\epsilon = e_t\otimes e_t$. The <strong>Bell-diagonal states</strong> are the convex combinations</p>
+<p>The four Bell idempotents $\tilde\Pi_{\mathrm{id},\epsilon}$ of the companion article <em>The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</em> form an idempotent basis of the two-qubit algebra, with $\tilde\Pi_{\mathrm{id},\epsilon} P_{\epsilon_{\mathrm o}} = \delta_{\epsilon\epsilon_{\mathrm o}}\tilde\Pi_{\mathrm{id},\epsilon}$ and $\sum_\epsilon \tilde\Pi_{\mathrm{id},\epsilon} = e_t\otimes e_t$. The <strong>Bell-diagonal states</strong> are the convex combinations</p>
 <p>$$
-\tilde{Ϛ}_{\Psi,AB} = \sum_\epsilon p_\epsilon\,\tilde\Pi_\epsilon ,
+\tilde{Ϛ}_{\Psi,AB} = \sum_\epsilon p_\epsilon\,\tilde\Pi_{\mathrm{id},\epsilon} ,
 \qquad p_\epsilon\geq0, \qquad \sum_\epsilon p_\epsilon = 1 .
 $$</p>
-<p>Each $\tilde\Pi_\epsilon$ is the joint spectral idempotent of the stabilizer pair $S_1 = -\vec e_x\otimes \vec e_x$ and $S_3 = -\vec e_z\otimes \vec e_z$, with $S_1\tilde\Pi_\epsilon = -\epsilon_1 \tilde\Pi_\epsilon$ and $S_3\tilde\Pi_\epsilon = -\epsilon_3 \tilde\Pi_\epsilon$. The same family is parametrized by the three correlation coefficients</p>
+<p>Each $\tilde\Pi_{\mathrm{id},\epsilon}$ is the joint spectral idempotent of the stabilizer pair $S_1 = -\vec e_x\otimes \vec e_x$ and $S_3 = -\vec e_z\otimes \vec e_z$, with $S_1\tilde\Pi_{\mathrm{id},\epsilon} = -\epsilon_1 \tilde\Pi_{\mathrm{id},\epsilon}$ and $S_3\tilde\Pi_{\mathrm{id},\epsilon} = -\epsilon_3 \tilde\Pi_{\mathrm{id},\epsilon}$. The same family is parametrized by the three correlation coefficients</p>
 <p>$$
 c_j = 4\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi,AB}\,\tilde{H}_{\Psi,j}\bigr),
 \qquad
@@ -124,7 +124,7 @@ $$</p>
 \tilde{Ϛ}_{\Psi,A} = \tilde{Ϛ}_{\Psi,B} = \tfrac12 e_t ,
 \qquad S(\tilde{Ϛ}_{\Psi,A}) = S(\tilde{Ϛ}_{\Psi,B}) = 1\ \text{bit},
 $$</p>
-<p>because the scalar part of every $i\vec e_\eta$ vanishes. The eigenvalues, computed from the action of the stabilizers on the $\tilde\Pi_\epsilon$, are $\tfrac14(1-\sum_j c_j\epsilon_j)$, so</p>
+<p>because the scalar part of every $i\vec e_\eta$ vanishes. The eigenvalues, computed from the action of the stabilizers on the $\tilde\Pi_{\mathrm{id},\epsilon}$, are $\tfrac14(1-\sum_j c_j\epsilon_j)$, so</p>
 <p>$$
 \boxed{\;S(\tilde{Ϛ}_{\Psi,AB}) = -\sum_\epsilon \tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr)\log_2\tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr),
 \qquad
@@ -135,29 +135,29 @@ $$</p>
 <h3 id="measurement-on-one-subsystem">Measurement on one subsystem</h3>
 <p>To extract classical information from a bipartite quantum state one must measure. A projective measurement on $B$ along a direction $\vec u$ has idempotents</p>
 <p>$$
-\tilde{\Pi}_{1,2} = \tfrac12\bigl(e_t \pm i\vec u\bigr) \quad\text{on }B,
+\tilde\Pi_{\mathrm{id},1,2} = \tfrac12\bigl(e_t \pm i\vec u\bigr) \quad\text{on }B,
 \qquad
- e_t\otimes\tilde{\Pi}_{1,2} \ \text{on } AB ,
+ e_t\otimes\tilde\Pi_{\mathrm{id},1,2} \ \text{on } AB ,
 $$</p>
-<p>with outcomes of probability $p_\pm = 4\,\mathrm{Sc}[(e_t\otimes\tilde{\Pi}_{1,2})\tilde{Ϛ}_{\Psi,AB}]$ at normalisation, and conditional states of $A$</p>
+<p>with outcomes of probability $p_\pm = 4\,\mathrm{Sc}[(e_t\otimes\tilde\Pi_{\mathrm{id},1,2})\tilde{Ϛ}_{\Psi,AB}]$ at normalisation, and conditional states of $A$</p>
 <p>$$
-\tilde{Ϛ}_{\Psi,A|\pm} = \frac{2\,\mathrm{Sc}_B\bigl[(e_t\otimes\tilde{\Pi}_{1,2})\tilde{Ϛ}_{\Psi,AB}(e_t\otimes\tilde{\Pi}_{1,2})\bigr]}{p_\pm}.
+\tilde{Ϛ}_{\Psi,A|\pm} = \frac{2\,\mathrm{Sc}_B\bigl[(e_t\otimes\tilde\Pi_{\mathrm{id},1,2})\tilde{Ϛ}_{\Psi,AB}(e_t\otimes\tilde\Pi_{\mathrm{id},1,2})\bigr]}{p_\pm}.
 $$</p>
-<p>The conditional entropy of $A$ given the measurement is $S(A|\{\tilde{\Pi}\}) = \sum_\pm p_\pm S(\tilde{Ϛ}_{\Psi,A|\pm})$, and the <strong>classical mutual information</strong> extractable by that measurement is</p>
+<p>The conditional entropy of $A$ given the measurement is $S(A|\{\tilde\Pi_{\mathrm{id}}\}) = \sum_\pm p_\pm S(\tilde{Ϛ}_{\Psi,A|\pm})$, and the <strong>classical mutual information</strong> extractable by that measurement is</p>
 <p>$$
-J(A|B)_{\vec u} = S(\tilde{Ϛ}_{\Psi,A}) - S\bigl(A|\{\tilde{\Pi}\}\bigr),
+J(A|B)_{\vec u} = S(\tilde{Ϛ}_{\Psi,A}) - S\bigl(A|\{\tilde\Pi_{\mathrm{id}}\}\bigr),
 $$</p>
 <p>the information about $A$ gained by measuring $B$. The <strong>quantum discord</strong> is</p>
 <p>$$
 D(A|B) = I(A:B) - \max_{\vec u} J(A|B)_{\vec u} .
 $$</p>
-<p>By construction $D(A|B)\geq0$, because the measurement defines a channel on $B$ and the data-processing inequality bounds $J$ by $I$. Discord vanishes exactly for the states for which some measurement on $B$ extracts all of the mutual information, i.e. the <strong>quantum-classical states</strong> $\tilde{Ϛ}_{\Psi,AB} = \sum_\eta p_\eta\,\tilde{Ϛ}_{\Psi,A}^{(k)}\otimes\tilde{\Pi}_k$.</p>
+<p>By construction $D(A|B)\geq0$, because the measurement defines a channel on $B$ and the data-processing inequality bounds $J$ by $I$. Discord vanishes exactly for the states for which some measurement on $B$ extracts all of the mutual information, i.e. the <strong>quantum-classical states</strong> $\tilde{Ϛ}_{\Psi,AB} = \sum_\eta p_\eta\,\tilde{Ϛ}_{\Psi,A}^{(k)}\otimes\tilde\Pi_{\mathrm{id},k}$.</p>
 <h3 id="asymmetry">Asymmetry</h3>
 <p>The measurement is performed on one side only, so $J(A|B)$ and $J(B|A)$ need not agree, and the discord is generally asymmetric, $D(A|B)\neq D(B|A)$. The <strong>total</strong> discord, or the symmetric version, is defined by minimizing over measurements on both sides; this article computes the one-sided discord $D(A|B)$ throughout. The asymmetry is not an artifact; it is the statement that the classical information extractable from a bipartite state depends on which subsystem is interrogated, and it is a genuine feature of the correlation structure.</p>
 <h3 id="discord-for-bell-diagonal-states">Discord for Bell-diagonal states</h3>
 <p>For Bell-diagonal states the calculation is explicit. A measurement of the coordinate $i\vec e_j$ on $B$ has the two outcomes with equal probability $\tfrac12$, and it leaves $A$ in the conditional states</p>
 <p>$$
-\tilde{Ϛ}_{\Psi,A|\pm} = 2\,\mathrm{Sc}_B\bigl[(e_t\otimes\tilde{\Pi}_{j,\pm})\tilde{Ϛ}_{\Psi,AB}\bigr]\Big/\tfrac12
+\tilde{Ϛ}_{\Psi,A|\pm} = 2\,\mathrm{Sc}_B\bigl[(e_t\otimes\tilde\Pi_{\mathrm{id},j,\pm})\tilde{Ϛ}_{\Psi,AB}\bigr]\Big/\tfrac12
 = \tfrac{1}{2}\bigl(e_t \pm c_j\,i\vec e_j\bigr),
 $$</p>
 <p>whose eigenvalues are $\tfrac12(1\pm c_j)$ and whose entropies are $h_2\!\left(\tfrac{1\pm c_j}{2}\right)$, with $h_2$ the binary entropy in bits. The conditional entropy of that measurement is therefore</p>
@@ -277,9 +277,9 @@ D(A|B) = I(A:B) - \max_{\vec u} J(A|B)_{\vec u},
 \qquad
 I(A:B) = S(\tilde{Ϛ}_{\Psi,A})+S(\tilde{Ϛ}_{\Psi,B})-S(\tilde{Ϛ}_{\Psi,AB}),
 \qquad
-J(A|B)_{\vec u} = S(\tilde{Ϛ}_{\Psi,A}) - S\bigl(A\,|\,\{\tilde{\Pi}\}\bigr).
+J(A|B)_{\vec u} = S(\tilde{Ϛ}_{\Psi,A}) - S\bigl(A\,|\,\{\tilde\Pi_{\mathrm{id}}\}\bigr).
 $$</p>
-<p>In the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$ the Bell-diagonal states $\tilde{Ϛ}_{\Psi,AB} = \sum_\epsilon p_\epsilon \tilde\Pi_\epsilon$ are parametrized by the three readings of the plain form</p>
+<p>In the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$ the Bell-diagonal states $\tilde{Ϛ}_{\Psi,AB} = \sum_\epsilon p_\epsilon \tilde\Pi_{\mathrm{id},\epsilon}$ are parametrized by the three readings of the plain form</p>
 <p>$$
 c_j = 4\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi,AB}\,\tilde{H}_{\Psi,j}\bigr), \qquad \tilde{H}_{\Psi,j} = -\vec e_j\otimes\vec e_j ,
 \qquad
@@ -308,7 +308,7 @@ $$</p>
 <td>Quaternion units; central imaginary</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\epsilon$</td>
+<td>$\tilde\Pi_{\mathrm{id},\epsilon}$</td>
 <td>Bell idempotents (idempotent basis)</td>
 </tr>
 <tr>
@@ -324,11 +324,11 @@ $$</p>
 <td>Quantum mutual information</td>
 </tr>
 <tr>
-<td>$\tilde{\Pi}_{1,2} = \tfrac12(e_t\pm i\vec u)$</td>
+<td>$\tilde\Pi_{\mathrm{id},1,2} = \tfrac12(e_t\pm i\vec u)$</td>
 <td>Projective measurement on $B$</td>
 </tr>
 <tr>
-<td>$J(A|B) = S(\tilde{Ϛ}_{\Psi,A})-S(A|\{\tilde{\Pi}\})$</td>
+<td>$J(A|B) = S(\tilde{Ϛ}_{\Psi,A})-S(A|\{\tilde\Pi_{\mathrm{id}}\})$</td>
 <td>Classical mutual information</td>
 </tr>
 <tr>

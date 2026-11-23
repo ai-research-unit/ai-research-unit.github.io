@@ -143,7 +143,7 @@ $$</p>
 \Sigma_{01}=\{N=0,\ B^{2}\neq0\},\quad
 \Sigma_{00}=\{N=0,\ B^{2}=0\},
 $$</p>
-<p>the first index recording $N\neq0$ and the second $B^{2}\neq0$. On $\Sigma_{11}$ the element is invertible and $\lambda_\pm=Q_t\pm iB$ are the eigenvalues of $\tilde Q$, with $B$ a root of $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. On $\Sigma_{01}$ the element is $\tilde Q=c\tilde\Pi$ with $c=2Q_t\neq0$ and $\tilde\Pi$ a non-trivial idempotent. On $\Sigma_{10}$ it is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$; the scalar line $\vec\Upsilon=0$ is written $\Sigma_{10}^{\mathrm{s}}$, the Jordan part $\vec\Upsilon\neq0$ is $\Sigma_{10}^{\mathrm{J}}$. On $\Sigma_{00}$ it is a non-zero nilpotent $\tilde\nu$, with $\tilde\Pi_\pm$ the canonical Hermitian idempotents and $\tilde\nu=\tilde\Pi_+\tilde\nu\tilde\Pi_-$.</p>
+<p>the first index recording $N\neq0$ and the second $B^{2}\neq0$. On $\Sigma_{11}$ the element is invertible and $\lambda_\pm=Q_t\pm iB$ are the eigenvalues of $\tilde Q$, with $B$ a root of $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. On $\Sigma_{01}$ the element is $\tilde Q=c\tilde\Pi_{\mathrm{id}}$ with $c=2Q_t\neq0$ and $\tilde\Pi_{\mathrm{id}}$ a non-trivial idempotent. On $\Sigma_{10}$ it is $\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$ with $\vec\Pi_{\mathrm{nil}}^{2}=0$; the scalar line $\vec\Pi_{\mathrm{nil}}=0$ is written $\Sigma_{10}^{\mathrm{s}}$, the Jordan part $\vec\Pi_{\mathrm{nil}}\neq0$ is $\Sigma_{10}^{\mathrm{J}}$. On $\Sigma_{00}$ it is a non-zero nilpotent $\tilde\pi_{\mathrm{nil}}$, with $\tilde\Pi_{\mathrm{id},\pm}$ the canonical Hermitian idempotents and $\tilde\pi_{\mathrm{nil}}=\tilde\Pi_{\mathrm{id},+}\tilde\pi_{\mathrm{nil}}\tilde\Pi_{\mathrm{id},-}$.</p>
 <p><strong>The one-sided operators.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -194,12 +194,12 @@ $$</p>
 <td>$2$</td>
 <td>$0$, algebraic multiplicity $4$, geometric $2$</td>
 <td>$J_2(0)\oplus J_2(0)$</td>
-<td>$\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_+=\ker L_{\tilde\nu}$</td>
-<td>$\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_-=\ker R_{\tilde\nu}$</td>
+<td>$\mathbb{C}\tilde\pi_{\mathrm{nil}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},+}=\ker L_{\tilde\pi_{\mathrm{nil}}}$</td>
+<td>$\mathbb{C}\tilde\pi_{\mathrm{nil}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-}=\ker R_{\tilde\pi_{\mathrm{nil}}}$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The two image columns differ on the null strata. On $\Sigma_{01}$ the planes $\tilde Q\mathbb{B}$ and $\mathbb{B}\tilde Q$ are distinct and meet in $\mathbb{C}\tilde\Pi$; on $\Sigma_{00}$ the two planes are distinct and meet in $\mathbb{C}\tilde\nu$. On $\Sigma_{11}$ and $\Sigma_{10}$ both images are the whole algebra.</p>
+<p>The two image columns differ on the null strata. On $\Sigma_{01}$ the planes $\tilde Q\mathbb{B}$ and $\mathbb{B}\tilde Q$ are distinct and meet in $\mathbb{C}\tilde\Pi_{\mathrm{id}}$; on $\Sigma_{00}$ the two planes are distinct and meet in $\mathbb{C}\tilde\pi_{\mathrm{nil}}$. On $\Sigma_{11}$ and $\Sigma_{10}$ both images are the whole algebra.</p>
 <p><strong>The two-sided operator.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -245,7 +245,7 @@ $$</p>
 <td>$1$</td>
 <td>$0$, algebraic multiplicity $4$, geometric $3$</td>
 <td>$J_2(0)\oplus0\oplus0$</td>
-<td>the null line $\mathbb{C}\tilde\Pi_+$</td>
+<td>the null line $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -286,16 +286,16 @@ $$</p>
 <td>the eigenvalues of $\tilde Q$ on $\Sigma_{11}$</td>
 </tr>
 <tr>
-<td>$\tilde Q=c\tilde\Pi$</td>
+<td>$\tilde Q=c\tilde\Pi_{\mathrm{id}}$</td>
 <td>the form of the element on $\Sigma_{01}$</td>
 </tr>
 <tr>
-<td>$\tilde Q=Q_t(e_t+\vec\Upsilon)$</td>
-<td>the form of the element on $\Sigma_{10}$, $\vec\Upsilon^{2}=0$</td>
+<td>$\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}})$</td>
+<td>the form of the element on $\Sigma_{10}$, $\vec\Pi_{\mathrm{nil}}^{2}=0$</td>
 </tr>
 <tr>
 <td>$\Sigma_{10}^{\mathrm{s}}$, $\Sigma_{10}^{\mathrm{J}}$</td>
-<td>the scalar line $\vec\Upsilon=0$ and the Jordan part $\vec\Upsilon\neq0$ of $\Sigma_{10}$</td>
+<td>the scalar line $\vec\Pi_{\mathrm{nil}}=0$ and the Jordan part $\vec\Pi_{\mathrm{nil}}\neq0$ of $\Sigma_{10}$</td>
 </tr>
 <tr>
 <td>$a$</td>

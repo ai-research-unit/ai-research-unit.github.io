@@ -112,13 +112,13 @@ $$</p>
 <p>$$
 \tilde F_\eta=\tilde S_{\Psi,\eta}^{(1)}+\tilde S_{\Psi,\eta}^{(2)}=\frac{\hbar}{2}\left(i\vec e_\eta\otimes e_t+e_t\otimes i\vec e_\eta\right),
 $$</p>
-<p>which is the total spin operator of the two-spin problem. On the three-dimensional symmetric subspace — the range of $\tilde\Pi_{\mathrm{sym}}=\tfrac14(3e_t\otimes e_t-\sum_\eta\vec e_\eta\otimes \vec e_\eta)$ — it acts irreducibly as the spin-$1$ operators above, and on the one-dimensional antisymmetric subspace it acts as zero. The two constructions agree; the first exhibits the spin-$1$ operators as the algebra's own inner derivations, the second as a composite of two fundamental systems.</p>
+<p>which is the total spin operator of the two-spin problem. On the three-dimensional symmetric subspace — the range of $\tilde\Pi_{\mathrm{id,sym}}=\tfrac14(3e_t\otimes e_t-\sum_\eta\vec e_\eta\otimes \vec e_\eta)$ — it acts irreducibly as the spin-$1$ operators above, and on the one-dimensional antisymmetric subspace it acts as zero. The two constructions agree; the first exhibits the spin-$1$ operators as the algebra's own inner derivations, the second as a composite of two fundamental systems.</p>
 <h3 id="the-sector-where-the-states-live">The sector where the states live</h3>
 <p>A state of spin $1$ is a positive, unit-trace element of the symmetric sector. In the two-qubit language,</p>
 <p>$$
-\tilde{Ϛ}_{\Psi}\ge0,\qquad \mathrm{Tr}_{2Q}(\tilde{Ϛ}_{\Psi})=1,\qquad \tilde\Pi_{\mathrm{asym}}\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{asym}}=0 ,
+\tilde{Ϛ}_{\Psi}\ge0,\qquad \mathrm{Tr}_{2Q}(\tilde{Ϛ}_{\Psi})=1,\qquad \tilde\Pi_{\mathrm{id,asym}}\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{id,asym}}=0 ,
 $$</p>
-<p>where $\mathrm{Tr}_{2Q}$ is the trace on $\mathbb{B}\otimes\mathbb{B}$ and $\tilde\Pi_{\mathrm{asym}}=\tfrac14(e_t\otimes e_t+\sum_\eta\vec e_\eta\otimes \vec e_\eta)$ is the singlet idempotent. The last condition says that the support of $\tilde{Ϛ}_{\Psi}$ lies in the symmetric subspace; the spin-$1$ state space is therefore <strong>the face of the two-qubit state space orthogonal to the antisymmetric idempotent</strong>. This is the precise sense in which spin-$1$ states are two-qubit states with no singlet component.</p>
+<p>where $\mathrm{Tr}_{2Q}$ is the trace on $\mathbb{B}\otimes\mathbb{B}$ and $\tilde\Pi_{\mathrm{id,asym}}=\tfrac14(e_t\otimes e_t+\sum_\eta\vec e_\eta\otimes \vec e_\eta)$ is the singlet idempotent. The last condition says that the support of $\tilde{Ϛ}_{\Psi}$ lies in the symmetric subspace; the spin-$1$ state space is therefore <strong>the face of the two-qubit state space orthogonal to the antisymmetric idempotent</strong>. This is the precise sense in which spin-$1$ states are two-qubit states with no singlet component.</p>
 <p>For the geometry it is convenient to work in the three-dimensional matrix realisation that $\mathsf{M}_2\otimes\mathsf{M}_2$ provides on the symmetric sector. There the states are the $3\times3$ Hermitian, positive, unit-trace matrices. The framework's Born rule reduces on the sector to $\mathrm{tr}(\rho P)$ for the projector $P$ of a pure state, and observables are the Hermitian $3\times3$ matrices obtained from the symmetric elements of $\mathbb{B}\otimes\mathbb{B}$.</p>
 <h3 id="the-spin-operators-as-matrices">The spin operators as matrices</h3>
 <p>In the basis $\{|1,1\rangle,|1,0\rangle,|1,-1\rangle\}$ the spin-$1$ operators are the standard matrices</p>
@@ -218,12 +218,12 @@ $$</p>
 <p>which is verified to be the projector onto the rotated highest-weight state for every direction; the three eigenvalues of $M$ along the $\vec u$ axis are $+1,0,-1$, and the eigenvalues of $\rho_{\mathrm{coh}}$ are $\tfrac12(m^2+m)$, namely $1,0,0$, so that the projector selects $m=+1$.</p>
 <p>The coherent states have three equivalent descriptions, and the equivalence is the content of this subsection:</p>
 <ul>
-<li>they are the orbit of the highest-weight idempotent under the adjoint action of the unit quaternions, $\tilde\Pi\mapsto\tilde u \tilde\Pi \tilde u^{*}$;</li>
+<li>they are the orbit of the highest-weight idempotent under the adjoint action of the unit quaternions, $\tilde\Pi_{\mathrm{id}}\mapsto\tilde u \tilde\Pi_{\mathrm{id}} \tilde u^{*}$;</li>
 <li>they are the <strong>symmetrised products of two fundamental idempotents</strong>,
 $$
-  \rho_{\mathrm{coh}}(\vec u)=\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(\vec u)\right)\tilde\Pi_{\mathrm{sym}},
+  \rho_{\mathrm{coh}}(\vec u)=\tilde\Pi_{\mathrm{id,sym}}\left(\tilde\Pi_{\mathrm{id}}(\vec u)\otimes \tilde\Pi_{\mathrm{id}}(\vec u)\right)\tilde\Pi_{\mathrm{id,sym}},
 $$
-  with $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ the qubit idempotent of the companion article; the projection has unit trace and was verified to agree with the closed form for arbitrary directions;</li>
+  with $\tilde\Pi_{\mathrm{id}}(\vec u)=\tfrac12(e_t+i\vec u)$ the qubit idempotent of the companion article; the projection has unit trace and was verified to agree with the closed form for arbitrary directions;</li>
 <li>they are the image of the degree-two Veronese embedding of the Bloch sphere in $\mathbb{CP}^2$.</li>
 </ul>
 <p>The last description fixes the topology: the coherent states form a two-sphere $S^2$ inside the four-dimensional pure-state manifold; the map $\vec u\mapsto\rho_{\mathrm{coh}}(\vec u)$ is one-to-one on the Bloch sphere (the phase of the state vector drops out in the projector), and its image is the degree-two Veronese surface in $\mathbb{CP}^2$. The Bloch vector of a coherent state has $|\vec b|=1$, so the coherent states lie on the pure-state sphere; but not every pure state is coherent, the obstruction being the dimension count $4>2$.</p>
@@ -257,7 +257,7 @@ $$</p>
 </table></div>
 <p>For the qubit the two coincide, because the Bloch ball is at once the state space, the inscribed ball and the image of the spin directions. For spin $1$ they separate, and this separation is the clearest single statement of what changes between spin $\tfrac12$ and spin $1$.</p>
 <h2 id="what-the-algebra-supplies-and-what-it-does-not">What the Algebra Supplies and What It Does Not</h2>
-<p><strong>Supplies.</strong> The spin-$1$ operators, as the adjoint action on the vector part $\mathbb{B}_V$ and equivalently as the symmetric combination of two fundamental factors. The sector in which the states live, namely the symmetric face of the two-qubit state space, selected by the idempotent $\tilde\Pi_{\mathrm{sym}}$ of the two-spin problem. The coherent states, as the orbit of a fundamental idempotent, as symmetrised products of two fundamental idempotents, and as the Veronese image of the Bloch sphere. The Born rule, which reduces on the sector to the ordinary pairing formula.</p>
+<p><strong>Supplies.</strong> The spin-$1$ operators, as the adjoint action on the vector part $\mathbb{B}_V$ and equivalently as the symmetric combination of two fundamental factors. The sector in which the states live, namely the symmetric face of the two-qubit state space, selected by the idempotent $\tilde\Pi_{\mathrm{id,sym}}$ of the two-spin problem. The coherent states, as the orbit of a fundamental idempotent, as symmetrised products of two fundamental idempotents, and as the Veronese image of the Bloch sphere. The Born rule, which reduces on the sector to the ordinary pairing formula.</p>
 <p><strong>Does not supply.</strong> A cone whose unit-weight slice is the state space. The qubit state space was the slice of the future cone of the biquaternion norm on $\mathbb{B}_{\Psi}$ by the hyperplane $\mathrm{Sc}=\tfrac12$; the spin-$1$ state space is eight-dimensional and the positive cone of $\mathbb{B}_{\Psi}$ is four-dimensional, so no such description is available. Nor is there a single quadratic form whose positivity region is the state space: the determinant of a $3\times3$ matrix is a cubic, and the boundary of the state space is the union of a cubic hypersurface with part of the unit sphere. The qubit's coincidence of positivity, causality, and a quadratic biquaternion norm has no spin-$1$ analogue.</p>
 <p><strong>The reason.</strong> This is not an accident of the algebra but a consequence of its module structure. The Hermitian subspace $\mathbb{B}_{\Psi}$ is the state space of the fundamental module, and the framework's positivity cone is the cone of that module. A three-level system is not a module of $\mathbb{B}$; it is a sector of the tensor square of two fundamental modules, obtained by a projector. The geometry of a projector's range is not the geometry of the algebra's own cone, and the difference is exactly the loss of the ball.</p>
 <h2 id="summary">Summary</h2>
@@ -265,7 +265,7 @@ $$</p>
 <p>The article established the following.</p>
 <ul>
 <li><strong>Spin-one operators.</strong> The adjoint action on the vector part $\mathbb{B}_V$, $\mathrm{ad}_{\tilde S_{\Psi,\eta}}(ie_l)=i\,\hbar\,\epsilon_{\eta l\,n_{\mathrm{idx}}}\,ie_{m}$, and the symmetric combination $\tilde F_\eta=\tilde S_{\Psi,\eta}^{(1)}+\tilde S_{\Psi,\eta}^{(2)}$ of two fundamental factors give the same spin-$1$ operators, with $[F_i,F_j]=i\,\hbar\,\epsilon_{ij\eta}\,F_{\eta}$ and $\sum_\eta F_\eta^2=2\,\hbar^{2}\,I_{3}$.</li>
-<li><strong>The state space.</strong> Spin-$1$ states are the positive unit-trace elements of the symmetric sector; in the two-qubit language they are the states whose support lies in the symmetric subspace, $\tilde\Pi_{\mathrm{asym}}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{asym}}=0$, that is, the face of the two-qubit state space orthogonal to the antisymmetric idempotent.</li>
+<li><strong>The state space.</strong> Spin-$1$ states are the positive unit-trace elements of the symmetric sector; in the two-qubit language they are the states whose support lies in the symmetric subspace, $\tilde\Pi_{\mathrm{id,asym}}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id,asym}}=0$, that is, the face of the two-qubit state space orthogonal to the antisymmetric idempotent.</li>
 <li><strong>Bloch coordinates.</strong> $\rho=\tfrac13 I_3+\tfrac{1}{\sqrt3}b_a\lambda_a$ with a real eight-vector $\vec b$ normalised so that the pure states have $|\vec b|=1$; the spectrum is determined by $\mathrm{Tr}(\rho^2)=\tfrac13(1+2|\vec b|^2)$ and $\det\rho$ through the characteristic cubic.</li>
 <li><strong>The positivity condition.</strong> $\rho$ is a state if and only if $|\vec b|\le1$ and $\det\rho\ge0$; the unit ball is necessary, the cubic inequality is what cuts it down, and positivity is no longer a single quadratic condition.</li>
 <li><strong>The spin directions.</strong> $F_1=\tfrac{1}{\sqrt2}(\lambda_1+\lambda_6)$, $F_2=\tfrac{1}{\sqrt2}(\lambda_2+\lambda_7)$, $F_3=\tfrac12\lambda_3+\tfrac{\sqrt3}{2}\lambda_8$, so the spin vector mixes Bloch coordinates: $s_1=\sqrt{2/3}(b_1+b_6)$, $s_2=\sqrt{2/3}(b_2+b_7)$, $s_3=\tfrac{1}{\sqrt3}b_3+b_8$.</li>
@@ -300,7 +300,7 @@ $$</p>
 <td>Qubit state, Bloch ball $\lvert\vec s_{\Psi}\rvert\le1$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_{\mathrm{sym}},\tilde\Pi_{\mathrm{asym}}$</td>
+<td>$\tilde\Pi_{\mathrm{id,sym}},\tilde\Pi_{\mathrm{id,asym}}$</td>
 <td>Triplet and singlet idempotents of $\mathbb{B}\otimes\mathbb{B}$</td>
 </tr>
 <tr>

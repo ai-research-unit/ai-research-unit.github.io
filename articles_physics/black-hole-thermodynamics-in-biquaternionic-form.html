@@ -221,13 +221,13 @@ $$</p>
 <p>It is important not to conflate this entropy with the framework's own entropy functional. The informational sector $\mathbb{B}_{\Psi}$ carries the von Neumann functional $S(\tilde{Ϛ}_{\Psi})=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$ on its states (the biquaternion form of $-\mathrm{Tr}(\rho\log\rho)$), and that functional is a transcription of the standard quantum-mechanical entropy of a qubit; the series records it as posited and not yet verified. It applies to a density matrix in $\mathbb{B}_{\Psi}$, and it is a different object from the black-hole entropy. The black-hole entropy is a property of the horizon's geometry; reading $S=A/4$ as the von Neumann entropy of some $\mathbb{B}_{\Psi}$ state would require a horizon state that the framework does not provide. Whether such a state exists is the central open question of this article, and it is left as a question.</p>
 <h2 id="the-boundary-datum-of-the-horizon">The Boundary Datum of the Horizon</h2>
 <p>The horizon is a null surface, and in the polar chart of the boost it is the locus where the chart's scale collapses. This is the geometric reading behind the area law, and it is worth isolating because it says exactly what the area is the measure of.</p>
-<p><strong>The collapse.</strong> A static observer near a non-extremal Killing horizon is, in the near-horizon Rindler chart, related to the horizon's generator by a boost whose rapidity diverges as the horizon is approached. Write the rotor on the two idempotents of its axis, $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u_\zeta)$:</p>
+<p><strong>The collapse.</strong> A static observer near a non-extremal Killing horizon is, in the near-horizon Rindler chart, related to the horizon's generator by a boost whose rapidity diverges as the horizon is approached. Write the rotor on the two idempotents of its axis, $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec u_\zeta)$:</p>
 <p>$$
-\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=e^{\theta_{\mathrm{rpd}}/2}\,\tilde\Pi_+ + e^{-\tilde{Ξ}/2}\,\tilde\Pi_- .
+\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=e^{\theta_{\mathrm{rpd}}/2}\,\tilde\Pi_{\mathrm{id},+} + e^{-\tilde{Ξ}/2}\,\tilde\Pi_{\mathrm{id},-} .
 $$</p>
-<p>The component along $\tilde\Pi_-$ vanishes and the component along $\tilde\Pi_+$ diverges, so the rotor has no limit. The renormalised rotor does:</p>
+<p>The component along $\tilde\Pi_{\mathrm{id},-}$ vanishes and the component along $\tilde\Pi_{\mathrm{id},+}$ diverges, so the rotor has no limit. The renormalised rotor does:</p>
 <p>$$
-e^{-\tilde{Ξ}/2}\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})\longrightarrow\tilde\Pi_+,
+e^{-\tilde{Ξ}/2}\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})\longrightarrow\tilde\Pi_{\mathrm{id},+},
 \qquad \tilde{Ξ}\to\infty,
 $$</p>
 <p>a Hermitian idempotent on the zero-divisor cone. The horizon is therefore the boundary of the polar chart, not a value of the word: no finite Lorentz transformation is null, and the limit is a null element. The frame at the horizon is lightlike, and the transformation that would carry a static frame to it does not exist as an invertible element.</p>
@@ -403,7 +403,7 @@ $$</p>
 <li>The sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, the quaternion subspace $\mathbb{B}_{H}$, the complex scalars $\mathbb{B}_{C}$, the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, and the plain form $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$, read as the bilinear pairing $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$.</li>
 <li>The intrinsic imaginary time $i r'_t$ of $\mathbb{B}_{\Phi}$, whose compactification period is the inverse temperature, and the KMS condition of the parent.</li>
 <li>The modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$ of the horizon flow as a Hermitian element of $\mathbb{B}_{\Psi}$.</li>
-<li>The boost word in the two-term form $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=e^{\theta_{\mathrm{rpd}}/2}\tilde\Pi_+ + e^{-\tilde{Ξ}/2}\tilde\Pi_-$, whose renormalised limit $\tilde{Ξ}\to\infty$ is the null idempotent $\tilde\Pi_+$.</li>
+<li>The boost word in the two-term form $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=e^{\theta_{\mathrm{rpd}}/2}\tilde\Pi_{\mathrm{id},+} + e^{-\tilde{Ξ}/2}\tilde\Pi_{\mathrm{id},-}$, whose renormalised limit $\tilde{Ξ}\to\infty$ is the null idempotent $\tilde\Pi_{\mathrm{id},+}$.</li>
 <li>The charges $(M,J,Ϙ)$ as material-sector Noether quantities: energy–momentum is an $\mathbb{B}_{\Phi}$ four-vector, angular momentum the associated bivector, and charge the time component of the conserved current.</li>
 </ul>
 <p><strong>Interpretation.</strong></p>
@@ -541,8 +541,8 @@ $$</p>
 <td>Inverse temperature, Euclidean period</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u_\zeta)$, $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=e^{\theta_{\mathrm{rpd}}/2}\tilde\Pi_+ + e^{-\tilde{Ξ}/2}\tilde\Pi_-$</td>
-<td>Idempotents of the boost axis and the boost rotor; the horizon limit of the renormalised rotor is $\tilde\Pi_+$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec u_\zeta)$, $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=e^{\theta_{\mathrm{rpd}}/2}\tilde\Pi_{\mathrm{id},+} + e^{-\tilde{Ξ}/2}\tilde\Pi_{\mathrm{id},-}$</td>
+<td>Idempotents of the boost axis and the boost rotor; the horizon limit of the renormalised rotor is $\tilde\Pi_{\mathrm{id},+}$</td>
 </tr>
 <tr>
 <td>$dM=(\kappa/8\pi G)\,dA+\Omega\,dJ+Ξ\,dϘ$</td>
@@ -565,8 +565,8 @@ $$</p>
 <td>Modular Hamiltonian (Hermitian, in $\mathbb{B}_{\Psi}$)</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u_\zeta)$</td>
-<td>Idempotents of the horizon-generating boost; the renormalised rotor tends to $\tilde\Pi_+$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec u_\zeta)$</td>
+<td>Idempotents of the horizon-generating boost; the renormalised rotor tends to $\tilde\Pi_{\mathrm{id},+}$</td>
 </tr>
 <tr>
 <td>$(\beta,A)$</td>

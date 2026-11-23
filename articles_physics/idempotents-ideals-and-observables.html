@@ -75,7 +75,7 @@
 <p>The section is where the algebra stops being a space and becomes a collection of subspaces with a product. Everything before it describes one element; everything in this section describes a cut of the whole algebra by one element. The cut is made by an idempotent, and the pieces it produces are the pieces a measurement has.</p>
 <p>Two equations govern the section and they are the same equation with a different constant.</p>
 <p>$$
-\tilde\Pi^{2}=\tilde\Pi,\qquad \tilde\Upsilon^{2}=0 .
+\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}},\qquad \tilde\Pi_{\mathrm{nil}}^{2}=0 .
 $$</p>
 <p>The first says an element is unchanged by being applied twice; the second says it is annihilated by being applied to itself. In matrix language the first is a projector and the second is a step down. Everything in this entry is a consequence of one of the two.</p>
 <p>The single idea is that a measurement is a cut of the algebra and not an operator on a state. An idempotent splits the algebra into two ideals, the ideals are the two chiralities, the Peirce corners are the four blocks of the reading, and the nilpotents are what completes the cut into a basis. The entry states the mathematics of that cut and then reads it.</p>
@@ -123,12 +123,12 @@ $$</p>
 <h3 id="the-roots-of-one-and-the-idempotents">The Roots of One and the Idempotents</h3>
 <p><strong>An idempotent is an element of square equal to itself.</strong></p>
 <p>$$
-\tilde\Pi^{2}=\tilde\Pi .
+\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}} .
 $$</p>
 <p>The two trivial idempotents are $0$ and $e_t$. Two idempotents are <strong>orthogonal</strong> when their two products vanish, and a family is <strong>complete</strong> when in addition its members sum to $e_t$. An idempotent is <strong>primitive</strong> when it is not a sum of two nonzero orthogonal idempotents.</p>
 <p>Every root of $+1$ carries a complete orthogonal pair, and the root is their difference.</p>
 <p>$$
-\tilde\Pi_{\pm}(\tilde Z)=\tfrac12\bigl(e_t\pm\tilde Z\bigr),\qquad \tilde\Pi_++\tilde\Pi_-=e_t,\qquad \tilde\Pi_+-\tilde\Pi_-=\tilde Z,\qquad \tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0 .
+\tilde\Pi_{\mathrm{id},\pm}(\tilde Z)=\tfrac12\bigl(e_t\pm\tilde Z\bigr),\qquad \tilde\Pi_{\mathrm{id},++}\tilde\Pi_{\mathrm{id},-}=e_t,\qquad \tilde\Pi_{\mathrm{id},+-}\tilde\Pi_{\mathrm{id},-}=\tilde Z,\qquad \tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=\tilde\Pi_{\mathrm{id},-}\tilde\Pi_{\mathrm{id},+}=0 .
 $$</p>
 <p>The halving map is a bijection between the roots of $+1$ and the idempotents. Every idempotent is the image of exactly one root, so the two vocabularies are one vocabulary.</p>
 <p>The idempotents fall into three families.</p>
@@ -166,19 +166,19 @@ $$</p>
 <h3 id="the-roots-of-zero-and-the-nilpotents">The Roots of Zero and the Nilpotents</h3>
 <p><strong>A nilpotent is an element of vanishing square, and it is necessarily pure and isotropic.</strong></p>
 <p>$$
-\tilde\Upsilon^{2}=0\iff Q_t=0\ \text{and}\ (\vec Q,\vec Q)=0 .
+\tilde\Pi_{\mathrm{nil}}^{2}=0\iff Q_t=0\ \text{and}\ (\vec Q,\vec Q)=0 .
 $$</p>
 <p>The index is two and there is no other. A vanishing cube already forces a vanishing square, so the powers of a nilpotent stop at the second.</p>
 <p>The nilpotents are a real four-dimensional cone in the vector subspace.</p>
 <p>$$
-\tilde\Upsilon=r\bigl(\vec u_p+i\vec u_{p'}\bigr),\qquad r>0,\qquad \vec u_p\cdot\vec u_p=\vec u_{p'}\cdot\vec u_{p'}=1,\qquad \vec u_p\cdot\vec u_{p'}=0 .
+\tilde\Pi_{\mathrm{nil}}=r\bigl(\vec u_p+i\vec u_{p'}\bigr),\qquad r>0,\qquad \vec u_p\cdot\vec u_p=\vec u_{p'}\cdot\vec u_{p'}=1,\qquad \vec u_p\cdot\vec u_{p'}=0 .
 $$</p>
 <p>The two real parts of a nilpotent are orthogonal and of equal length. That is the whole content of the complex isotropy condition $(\vec Q,\vec Q)=0$, written in real coordinates.</p>
 <p>Every nilpotent is a zero divisor, and the star and the quaternion conjugation preserve nilpotency.</p>
 <h3 id="the-minimal-left-ideals">The Minimal Left Ideals</h3>
 <p>An idempotent generates a left ideal.</p>
 <p>$$
-S_{\pm}(\vec u)=\mathbb{B}\,\tilde\Pi_{\pm}(\vec u),\qquad S_{+}=\operatorname{span}_{\mathbb{C}}\bigl\{\tilde\Pi_+,\ \vec\Upsilon_{-+}\bigr\},\qquad S_{-}=\operatorname{span}_{\mathbb{C}}\bigl\{\tilde\Pi_-,\ \vec\Upsilon_{+-}\bigr\} .
+S_{\pm}(\vec u)=\mathbb{B}\,\tilde\Pi_{\mathrm{id},\pm}(\vec u),\qquad S_{+}=\operatorname{span}_{\mathbb{C}}\bigl\{\tilde\Pi_{\mathrm{id},+},\ \vec\Pi_{\mathrm{nil},-+}\bigr\},\qquad S_{-}=\operatorname{span}_{\mathbb{C}}\bigl\{\tilde\Pi_{\mathrm{id},-},\ \vec\Pi_{\mathrm{nil},+-}\bigr\} .
 $$</p>
 <p>Each is four real dimensions, two complex, and minimal. It has no left subideal other than $0$ and itself, and every one of its nonzero elements generates it.</p>
 <p>The algebra is the direct sum of the two.</p>
@@ -191,7 +191,7 @@ $$</p>
 <h3 id="the-peirce-decomposition">The Peirce Decomposition</h3>
 <p>A complete orthogonal pair cuts the algebra into four corners.</p>
 <p>$$
-\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t,\qquad \mathbb{B}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--} .
+\mathbb{B}_{st}=\tilde\Pi_{\mathrm{id},s}\mathbb{B}\tilde\Pi_{\mathrm{id},t},\qquad \mathbb{B}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--} .
 $$</p>
 <p>Each corner is a complex line, and the diagonal ones carry canonical vectors, the two idempotents.</p>
 <p>The product follows the corner rule.</p>
@@ -208,28 +208,28 @@ $$</p>
 <h3 id="the-peirce-basis">The Peirce Basis</h3>
 <p>One point in each mixed line completes the cut to a basis.</p>
 <p>$$
-\mathcal{B}(\vec u)=\bigl(\tilde\Pi_+,\ \vec\Upsilon_{-+},\ \vec\Upsilon_{+-},\ \tilde\Pi_-\bigr),\qquad \vec\Upsilon_{-+}=\tfrac12\bigl(i\vec a+\vec b\bigr),\qquad \vec\Upsilon_{+-}=\tfrac12\bigl(i\vec a-\vec b\bigr) ,
+\mathcal{B}(\vec u)=\bigl(\tilde\Pi_{\mathrm{id},+},\ \vec\Pi_{\mathrm{nil},-+},\ \vec\Pi_{\mathrm{nil},+-},\ \tilde\Pi_{\mathrm{id},-}\bigr),\qquad \vec\Pi_{\mathrm{nil},-+}=\tfrac12\bigl(i\vec a+\vec b\bigr),\qquad \vec\Pi_{\mathrm{nil},+-}=\tfrac12\bigl(i\vec a-\vec b\bigr) ,
 $$</p>
 <p>with $\vec a,\vec b$ unit real vectors completing $\vec u$ to a right-handed orthonormal triple.</p>
 <p>The four relations.</p>
 <p>$$
-\vec\Upsilon_{-+}^{2}=\vec\Upsilon_{+-}^{2}=0,\qquad \vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_-,\qquad \vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_+ .
+\vec\Pi_{\mathrm{nil},-+}^{2}=\vec\Pi_{\mathrm{nil},+-}^{2}=0,\qquad \vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}=\tilde\Pi_{\mathrm{id},-},\qquad \vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}=\tilde\Pi_{\mathrm{id},+} .
 $$</p>
 <p>The whole basis has vanishing norm. All four elements are rank-one in the matrix model, the norm is the determinant, so the Peirce basis lies entirely on the isotropic cone.</p>
 <p>The bases of one family form a torsor under a one-parameter complex gauge.</p>
 <p>$$
-\vec\Upsilon'_{+-}=t^{-1}\vec\Upsilon_{+-},\qquad \vec\Upsilon'_{-+}=t\,\vec\Upsilon_{-+},\qquad t\in\mathbb{C}^{\times} ,
+\vec\Pi_{\mathrm{nil}}'_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad \vec\Pi_{\mathrm{nil}}'_{-+}=t\,\vec\Pi_{\mathrm{nil},-+},\qquad t\in\mathbb{C}^{\times} ,
 $$</p>
 <p>two real parameters, and no basis of the family is distinguished.</p>
 <h3 id="the-peirce-coordinates-and-the-functional">The Peirce Coordinates and the Functional</h3>
 <p>Every element has a unique Peirce expansion. At the axis $\vec e_z$,</p>
 <p>$$
-\tilde Q=\bigl(Q_t-iQ_z\bigr)\tilde\Pi_++\bigl(-iQ_x+Q_y\bigr)\vec\Upsilon_{-+}+\bigl(-iQ_x-Q_y\bigr)\vec\Upsilon_{+-}+\bigl(Q_t+iQ_z\bigr)\tilde\Pi_- .
+\tilde Q=\bigl(Q_t-iQ_z\bigr)\tilde\Pi_{\mathrm{id},++}\bigl(-iQ_x+Q_y\bigr)\vec\Pi_{\mathrm{nil},-+}+\bigl(-iQ_x-Q_y\bigr)\vec\Pi_{\mathrm{nil},+-}+\bigl(Q_t+iQ_z\bigr)\tilde\Pi_{\mathrm{id},-} .
 $$</p>
 <p>The diagonal corners see the scalar part and the axial component; the mixed corners see the two transverse components.</p>
 <p><strong>The Peirce functional is the diagonal coefficient.</strong></p>
 <p>$$
-\tilde\Pi_+\tilde Q\tilde\Pi_+=\lambda(\tilde Q)\,\tilde\Pi_+,\qquad \lambda(\tilde Q)=Q_t-iQ_z .
+\tilde\Pi_{\mathrm{id},+}\tilde Q\tilde\Pi_{\mathrm{id},+}=\lambda(\tilde Q)\,\tilde\Pi_{\mathrm{id},+},\qquad \lambda(\tilde Q)=Q_t-iQ_z .
 $$</p>
 <p>It is complex-linear and it is not multiplicative.</p>
 <p>$$
@@ -238,7 +238,7 @@ $$</p>
 <p>The failure is forced: a multiplicative functional onto $\mathbb{C}$ would have a nontrivial two-sided ideal as its kernel, and the algebra is simple.</p>
 <p>The product inside a corner ideal is governed by the functional alone.</p>
 <p>$$
-a\tilde\Pi\cdot b\tilde\Pi=\lambda(b)\,a\tilde\Pi,\qquad [a\tilde\Pi,b\tilde\Pi]=\bigl(\lambda(b)a-\lambda(a)b\bigr)\tilde\Pi .
+a\tilde\Pi_{\mathrm{id}}\cdot b\tilde\Pi_{\mathrm{id}}=\lambda(b)\,a\tilde\Pi_{\mathrm{id}},\qquad [a\tilde\Pi_{\mathrm{id}},b\tilde\Pi_{\mathrm{id}}]=\bigl(\lambda(b)a-\lambda(a)b\bigr)\tilde\Pi_{\mathrm{id}} .
 $$</p>
 <h3 id="the-special-decomposition">The Special Decomposition</h3>
 <p><strong>Every element factorises relative to any root, with two intrinsic numbers.</strong></p>
@@ -246,41 +246,41 @@ $$</p>
 \boxed{\;\tilde Q=\tilde U\,\bigl(r e_t+s\tilde Z\bigr)\,\tilde V^{*},\qquad \tilde U,\tilde V\in\mathrm{U}(\mathbb{B}),\qquad r\ge s\ge0\;}
 $$</p>
 <p>The middle factor is diagonal in the Peirce basis of the root, with coefficients $r+s$ and $r-s$, which are the two singular values of $\tilde Q$.</p>
-<p>The numbers are intrinsic and the presentation is a choice. For $r>s>0$ the two unitaries are unique up to the simultaneous right multiplication by $e^{i\theta_+}\tilde\Pi_++e^{i\theta_-}\tilde\Pi_-$; for $r=s>0$ the freedom is larger. The root, the Peirce basis and its gauge are all presentation.</p>
+<p>The numbers are intrinsic and the presentation is a choice. For $r>s>0$ the two unitaries are unique up to the simultaneous right multiplication by $e^{i\theta_+}\tilde\Pi_{\mathrm{id},++e}^{i\theta_-}\tilde\Pi_{\mathrm{id},-}$; for $r=s>0$ the freedom is larger. The root, the Peirce basis and its gauge are all presentation.</p>
 <h2 id="the-interpretations">The Interpretations</h2>
 <h3 id="i3a-an-idempotent-is-a-question-already-answered">I.3.a — An Idempotent Is a Question Already Answered</h3>
-<p>Read: $\tilde\Pi^{2}=\tilde\Pi$ says that applying the thing to itself returns the thing. That is the algebraic shape of a settled answer: a proposition that, once affirmed, is affirmed again by the same affirmation.</p>
+<p>Read: $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$ says that applying the thing to itself returns the thing. That is the algebraic shape of a settled answer: a proposition that, once affirmed, is affirmed again by the same affirmation.</p>
 <p>In the matrix image the reading is exact. An idempotent is a rank-one projection, so it is a pure state and a projector of that state at once. The two roles are not analogous; they are the same element seen from the two sides of the module.</p>
 <p>The three faces of minimality are one face. A rank-one matrix, a minimal left ideal, and a Peirce decomposition with four lines of dimension one are three descriptions of the same cut. A reader who needs one of them can use whichever is convenient, and the entry does not choose between them.</p>
-<p>The boundary. The equation $\tilde\Pi^{2}=\tilde\Pi$ is relative to the plain product. With another of the four general products the same equation has a different solution set, and its idempotents are other objects. The entry uses the plain product throughout and says so where it matters.</p>
+<p>The boundary. The equation $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$ is relative to the plain product. With another of the four general products the same equation has a different solution set, and its idempotents are other objects. The entry uses the plain product throughout and says so where it matters.</p>
 <h3 id="i3b-a-two-outcome-measurement-is-a-root-of-math56">I.3.b — A Two-Outcome Measurement Is a Root of $+1$</h3>
 <p>Read: a Hermitian root of $+1$ is an observable with two eigenvalues, $+1$ and $-1$, and its halving map gives the two outcome states.</p>
 <p>$$
-\tilde Z\tilde\Pi_+=\tilde\Pi_+\tilde Z=\tilde\Pi_+,\qquad \tilde Z\tilde\Pi_-=\tilde\Pi_-\tilde Z=-\tilde\Pi_-,\qquad \tilde Z=\tilde\Pi_+-\tilde\Pi_- .
+\tilde Z\tilde\Pi_{\mathrm{id},+}=\tilde\Pi_{\mathrm{id},+}\tilde Z=\tilde\Pi_{\mathrm{id},+},\qquad \tilde Z\tilde\Pi_{\mathrm{id},-}=\tilde\Pi_{\mathrm{id},-}\tilde Z=-\tilde\Pi_{\mathrm{id},-},\qquad \tilde Z=\tilde\Pi_{\mathrm{id},+-}\tilde\Pi_{\mathrm{id},-} .
 $$</p>
 <p>The observable, its two eigenvalues and its two outcomes are one object. The root is the observable, the pair is the two outcomes, the difference of the pair is the root again. The halving map is a bijection, so nothing is lost in either direction: a measurement and its possible results determine one another.</p>
 <p>The family of non-trivial Hermitian roots is one observable for each point of $S^{2}$. The eigenvalues never change; only the eigenbasis does. The axis of the measurement is a line, so the observable is an oriented axis, and the antipodal point is the same pair of projectors with the two outcomes exchanged.</p>
 <p>The boundary. Not every observable is a root of $+1$. A general Hermitian element $h_te_t+i\vec h$ has eigenvalues $h_t\pm\lvert\vec h\rvert$ and is a root only when $h_t^2+\lvert\vec h\rvert^2=1$ and $h_t\vec h=0$. The section supplies the two-outcome observables and not the general ones; the general spectrum is the subject of the next entry.</p>
 <h3 id="i3c-only-the-hermitian-idempotents-are-states">I.3.c — Only the Hermitian Idempotents Are States</h3>
 <p>Read: the state reading is confined to one of the three families, and the confinement is exact.</p>
-<p>The Hermitian non-trivial idempotents are the pure states. They are the Bloch sphere: $\tfrac12(e_t+i\vec u)$ over the real unit vectors, normalised by $2\operatorname{Sc}\tilde\Pi=1$ and lying on the boundary of the positive cone. The mixed states are the interior of the ball and are not idempotent at all.</p>
+<p>The Hermitian non-trivial idempotents are the pure states. They are the Bloch sphere: $\tfrac12(e_t+i\vec u)$ over the real unit vectors, normalised by $2\operatorname{Sc}\tilde\Pi_{\mathrm{id}}=1$ and lying on the boundary of the positive cone. The mixed states are the interior of the ball and are not idempotent at all.</p>
 <p>The non-Hermitian idempotents are not states and lie in no remarkable subspace. They are a four-real-parameter family with no orthogonality and no positivity, and their only role is that they classify the non-pure zero divisors: every non-pure zero divisor is a complex multiple of one of them.</p>
 <p>The consequence is a clean division of labour. Hermitian idempotents are states; nilpotents are modes; non-Hermitian idempotents are neither, and they are the bookkeeping object that makes the zero-divisor set two families instead of one.</p>
 <p>The boundary. The identification of idempotents with states uses the star, so it is a statement about the informational sector and not about the algebra. An idempotent read without the star is only a cut.</p>
 <h3 id="i3d-purity-is-being-on-the-cone">I.3.d — Purity Is Being on the Cone</h3>
 <p>Read: a pure state has vanishing norm, and it is a zero divisor. That is one fact in three vocabularies.</p>
-<p>The computation is one line. For $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a real unit vector, the vector part is $\tfrac12i\vec u$, and since $(\vec u,\vec u)=\lvert\vec u\rvert^{2}=1$ for a real unit vector,</p>
+<p>The computation is one line. For $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+i\vec u)$ with $\vec u$ a real unit vector, the vector part is $\tfrac12i\vec u$, and since $(\vec u,\vec u)=\lvert\vec u\rvert^{2}=1$ for a real unit vector,</p>
 <p>$$
-B^2=\bigl(\tfrac12i\vec u,\tfrac12i\vec u\bigr)=\tfrac14i^{2}(\vec u,\vec u)=-\tfrac14,\qquad N(\tilde\Pi)=\tfrac14-\tfrac14=0 .
+B^2=\bigl(\tfrac12i\vec u,\tfrac12i\vec u\bigr)=\tfrac14i^{2}(\vec u,\vec u)=-\tfrac14,\qquad N(\tilde\Pi_{\mathrm{id}})=\tfrac14-\tfrac14=0 .
 $$</p>
 <p>So the pure states sit exactly on the $N$-cone, and the mixed states are the interior where $N>0$.</p>
-<p>The four words then coincide. A pure state, a zero-entropy state, a zero-divisor state and a perfectly resolvable state are four names for one element. The von Neumann entropy is a monotone function of $\operatorname{Sc}(\tilde\Pi^{2}-\tilde\Pi)$, which vanishes exactly on the idempotents, and the Fisher information with respect to the Bloch radius diverges there.</p>
+<p>The four words then coincide. A pure state, a zero-entropy state, a zero-divisor state and a perfectly resolvable state are four names for one element. The von Neumann entropy is a monotone function of $\operatorname{Sc}(\tilde\Pi_{\mathrm{id}}^{2}-\tilde\Pi_{\mathrm{id}})$, which vanishes exactly on the idempotents, and the Fisher information with respect to the Bloch radius diverges there.</p>
 <p>The same is true of the nilpotents, one level down. A nilpotent is on the cone too, and it is the extreme case: a pure state is on the cone but is not nilpotent, while a nilpotent is on the cone and is annihilated by its own product.</p>
 <p>The boundary. Being on the cone is necessary for purity and not sufficient for statehood. Nilpotents and non-Hermitian idempotents are on the cone as well. Purity is the conjunction of three conditions: idempotent, Hermitian, rank one.</p>
 <h3 id="i3e-the-two-ideals-are-the-two-chiralities">I.3.e — The Two Ideals Are the Two Chiralities</h3>
 <p>Read: a minimal left ideal is one chirality, and the pair of them is the algebra.</p>
 <p>$$
-\mathbb{B}=S_+\oplus S_-,\qquad S_{\pm}=\mathbb{B}\tilde\Pi_\pm .
+\mathbb{B}=S_+\oplus S_-,\qquad S_{\pm}=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm} .
 $$</p>
 <p>Each ideal is closed under left multiplication and irreducible under it. That is what makes it a carrier: an element acting on it cannot produce a smaller invariant subspace. In the matrix model the two ideals are the two columns, so the carrier is literally the space of spinors of one handedness.</p>
 <p>The two ideals are isomorphic and distinct. A nonzero map of simple modules is an isomorphism, and right multiplication by the companion nilpotent provides one. So the two chiralities carry the same representation and are not the same subspace. This is why a chirality is a position in the algebra and not a label on a spinor.</p>
@@ -305,22 +305,22 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{B}_{++}$</td>
-<td>the part that is $\tilde\Pi_+$ on both sides</td>
+<td>the part that is $\tilde\Pi_{\mathrm{id},+}$ on both sides</td>
 <td>the upper-left entry</td>
 </tr>
 <tr>
 <td>$\mathbb{B}_{--}$</td>
-<td>the part that is $\tilde\Pi_-$ on both sides</td>
+<td>the part that is $\tilde\Pi_{\mathrm{id},-}$ on both sides</td>
 <td>the lower-right entry</td>
 </tr>
 <tr>
 <td>$\mathbb{B}_{+-}$</td>
-<td>the part that is $\tilde\Pi_+$ on the left and $\tilde\Pi_-$ on the right</td>
+<td>the part that is $\tilde\Pi_{\mathrm{id},+}$ on the left and $\tilde\Pi_{\mathrm{id},-}$ on the right</td>
 <td>the upper-right entry</td>
 </tr>
 <tr>
 <td>$\mathbb{B}_{-+}$</td>
-<td>the part that is $\tilde\Pi_-$ on the left and $\tilde\Pi_+$ on the right</td>
+<td>the part that is $\tilde\Pi_{\mathrm{id},-}$ on the left and $\tilde\Pi_{\mathrm{id},+}$ on the right</td>
 <td>the lower-left entry</td>
 </tr>
 </tbody>
@@ -332,7 +332,7 @@ $$</p>
 <h3 id="i3h-the-corner-algebra-is-degenerate-and-that-is-why-a-chirality-has-no-invertible">I.3.h — The Corner Algebra Is Degenerate, and That Is Why a Chirality Has No Invertible</h3>
 <p>Read: inside one ideal the product collapses to a scalar.</p>
 <p>$$
-a\tilde\Pi\cdot b\tilde\Pi=\lambda(b)\,a\tilde\Pi,\qquad \lambda(\tilde Q)=Q_t-iQ_z .
+a\tilde\Pi_{\mathrm{id}}\cdot b\tilde\Pi_{\mathrm{id}}=\lambda(b)\,a\tilde\Pi_{\mathrm{id}},\qquad \lambda(\tilde Q)=Q_t-iQ_z .
 $$</p>
 <p>So the ideal is not a subalgebra and has no invertible element of its own. The unit of the algebra does not lie in either ideal; the closest thing is the idempotent, which is invertible only for the elements already in the ideal's own corner. Composing two elements of one chirality does not produce a third element of that chirality in any general way: it produces a multiple of the first, with the multiple fixed by the second.</p>
 <p>The functional $\lambda$ is the trace-like object of the cut and it is not multiplicative. $\lambda(\vec e_x\vec e_y)=-i$ while $\lambda(\vec e_x)\lambda(\vec e_y)=0$. The failure is not an accident of the choice of axis: a multiplicative functional onto $\mathbb{C}$ would have a nontrivial two-sided ideal as its kernel, and the algebra has none.</p>
@@ -341,15 +341,15 @@ $$</p>
 <h3 id="i3i-the-gauge-of-a-peirce-basis-is-the-phase-of-the-state-vector">I.3.i — The Gauge of a Peirce Basis Is the Phase of the State Vector</h3>
 <p>Read: completing the cut to a basis needs one point in each mixed line, and the choice is free up to a complex parameter.</p>
 <p>$$
-\vec\Upsilon'_{+-}=t^{-1}\vec\Upsilon_{+-},\qquad \vec\Upsilon'_{-+}=t\,\vec\Upsilon_{-+},\qquad t\in\mathbb{C}^{\times} .
+\vec\Pi_{\mathrm{nil}}'_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad \vec\Pi_{\mathrm{nil}}'_{-+}=t\,\vec\Pi_{\mathrm{nil},-+},\qquad t\in\mathbb{C}^{\times} .
 $$</p>
-<p>Two real parameters, of which one is a phase and one is a scale. The modulus of $t$ rescales the two nilpotent directions reciprocally; the argument rotates them. The product normalisation $\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_+$ fixes the product of the two scalings and leaves their ratio free.</p>
+<p>Two real parameters, of which one is a phase and one is a scale. The modulus of $t$ rescales the two nilpotent directions reciprocally; the argument rotates them. The product normalisation $\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}=\tilde\Pi_{\mathrm{id},+}$ fixes the product of the two scalings and leaves their ratio free.</p>
 <p>The physical reading is the ray freedom. A state vector is defined up to a complex multiple, and here the multiple has a home: it is the freedom of the basis used to present the cut. The phase is unobservable because the basis is a choice, and the scale is unobservable because the normalisation is a convention.</p>
 <p>The bases form a torsor, so no basis is distinguished. The set of bases of one family is a principal homogeneous space for $\mathbb{C}^{\times}$: the action is free and transitive, so there is no canonical point.</p>
 <p>The boundary. This is one complex parameter and not the whole unitary freedom of the algebra. The larger freedom, in the special decomposition, is the pair of unitaries, and the two must not be confused: the gauge here moves the basis of a fixed cut, and the unitaries there move the element.</p>
 <h3 id="i3j-the-nilpotent-is-a-mode-with-no-rest-frame-and-a-null-momentum-is-not-a-nilpotent">I.3.j — The Nilpotent Is a Mode With No Rest Frame, and a Null Momentum Is Not a Nilpotent</h3>
 <p>Read: a nilpotent is pure and isotropic, so it has no scalar part and no length. It cannot be a frame, a scale or a mass.</p>
-<p>The two real parts are orthogonal and of equal length. That is the whole geometry: a nilpotent is a pair of real vectors of the same length at right angles, $\tilde\Upsilon=r(\vec u_p+i\vec u_{p'})$. Such a pair has no invariant direction singled out, and the isotropic condition is exactly the statement that no rest frame can be erected on it.</p>
+<p>The two real parts are orthogonal and of equal length. That is the whole geometry: a nilpotent is a pair of real vectors of the same length at right angles, $\tilde\Pi_{\mathrm{nil}}=r(\vec u_p+i\vec u_{p'})$. Such a pair has no invariant direction singled out, and the isotropic condition is exactly the statement that no rest frame can be erected on it.</p>
 <p>The physical reading is the massless mode. A nilpotent squares to zero, so it is annihilated by its own action; it cannot mediate a mass, because a mass is a bijection between the two chiralities and a nilpotent is a one-way map. The mode is the object that a mass term is not.</p>
 <p>The null four-momentum is on the cone and is not a nilpotent. A material element $\tilde R_\Phi=ir'_te_t+\vec r$ has $N=-(r'_t)^2+\lvert\vec r\rvert^2$, so the null momenta have vanishing norm and are zero divisors. A nilpotent needs $Q_t=0$ as well, that is $r'_t=0$, and then nullness forces $\vec r=0$: the only nilpotent of the material sector is zero. Every non-zero null momentum therefore lies in the zero-divisor set and outside the nilpotent cone, and a computation that identifies the two sets is wrong.</p>
 <p><strong>The nilpotent cone is not the light cone.</strong> The nilpotent cone is four real dimensions inside the vector subspace; the light cone of the material sector is three real dimensions inside a different slice. They meet on the pure material elements with vanishing scalar part, and that intersection is the only place where the two readings coincide.</p>
@@ -357,7 +357,7 @@ $$</p>
 <h3 id="i3k-the-peirce-basis-is-lightlike-throughout">I.3.k — The Peirce Basis Is Lightlike Throughout</h3>
 <p>Read: all four elements of a Peirce basis have vanishing norm.</p>
 <p>$$
-N(\tilde\Pi_+)=N(\tilde\Pi_-)=N(\vec\Upsilon_{-+})=N(\vec\Upsilon_{+-})=0 .
+N(\tilde\Pi_{\mathrm{id},+})=N(\tilde\Pi_{\mathrm{id},-})=N(\vec\Pi_{\mathrm{nil},-+})=N(\vec\Pi_{\mathrm{nil},+-})=0 .
 $$</p>
 <p>The reason is that each is rank one in the matrix image, and the norm is the determinant. So the basis of a measurement is a basis of the null cone: four lightlike vectors that together span the algebra.</p>
 <p>This is why the corner rule is so rigid. A basis of definite-length vectors could not have the property that two of its members multiply to a third. Here every member is null, the products are either zero or another null member, and the whole multiplication table stays on the cone.</p>
@@ -380,7 +380,7 @@ $$</p>
 <p><strong>The nilpotent is given no dynamics.</strong> The mode reading is structural: it says what a square-zero element cannot be. The differential, the cohomology and the supercharge are interpretations of a further structure that this section does not contain.</p>
 <h2 id="summary">Summary</h2>
 <ul>
-<li>Two equations govern the section: $\tilde\Pi^{2}=\tilde\Pi$ and $\tilde\Upsilon^{2}=0$.</li>
+<li>Two equations govern the section: $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$ and $\tilde\Pi_{\mathrm{nil}}^{2}=0$.</li>
 <li>Every idempotent is one root of $+1$ halved, and the halving map is a bijection, so root and idempotent are one vocabulary.</li>
 <li>There are three families of idempotents: the trivial pair, the Hermitian ones over $S^{2}$, and a four-real-parameter non-Hermitian family.</li>
 <li>A nilpotent is pure and isotropic, of index two, and the nilpotents form a real four-dimensional cone.</li>
@@ -404,19 +404,19 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde\Pi$</td>
-<td>an idempotent, $\tilde\Pi^{2}=\tilde\Pi$</td>
+<td>$\tilde\Pi_{\mathrm{id}}$</td>
+<td>an idempotent, $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$</td>
 </tr>
 <tr>
-<td>$\tilde\Upsilon$</td>
-<td>a nilpotent, $\tilde\Upsilon^{2}=0$</td>
+<td>$\tilde\Pi_{\mathrm{nil}}$</td>
+<td>a nilpotent, $\tilde\Pi_{\mathrm{nil}}^{2}=0$</td>
 </tr>
 <tr>
 <td>$\tilde Z$</td>
 <td>a root of $+1$, $\tilde Z^{2}=e_t$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm(\tilde Z)=\tfrac12(e_t\pm\tilde Z)$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}(\tilde Z)=\tfrac12(e_t\pm\tilde Z)$</td>
 <td>the idempotent pair of a root</td>
 </tr>
 <tr>
@@ -424,15 +424,15 @@ $$</p>
 <td>real unit vectors, with $\vec u$ the axis and $\vec a,\vec b$ completing it</td>
 </tr>
 <tr>
-<td>$\vec\Upsilon_{-+}=\tfrac12(i\vec a+\vec b)$, $\vec\Upsilon_{+-}=\tfrac12(i\vec a-\vec b)$</td>
+<td>$\vec\Pi_{\mathrm{nil},-+}=\tfrac12(i\vec a+\vec b)$, $\vec\Pi_{\mathrm{nil},+-}=\tfrac12(i\vec a-\vec b)$</td>
 <td>the companion nilpotents</td>
 </tr>
 <tr>
-<td>$S_{\pm}(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$</td>
+<td>$S_{\pm}(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u)$</td>
 <td>the minimal left ideals at the axis</td>
 </tr>
 <tr>
-<td>$\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$</td>
+<td>$\mathbb{B}_{st}=\tilde\Pi_{\mathrm{id},s}\mathbb{B}\tilde\Pi_{\mathrm{id},t}$</td>
 <td>the four Peirce corners</td>
 </tr>
 <tr>

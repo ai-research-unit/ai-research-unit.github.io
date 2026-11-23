@@ -124,7 +124,7 @@ $$</p>
 <h3 id="the-two-masses-and-the-two-mode-structure">The Two Masses and the Two-Mode Structure</h3>
 <p>The two eigenvalues of $\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*}$ are the two mass-squareds, and everything depends on which kind of biquaternion $\tilde m_{\mathrm{fld}}$ is. Three cases exhaust the structure the corpus uses, and each is checked here on random elements.</p>
 <p><strong>A real scalar, $\tilde m_{\mathrm{fld}}=s e_t$.</strong> Then $\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*}=s^2 e_t$, a central element, and both eigenvalues equal $s^2$: the doublet is <strong>degenerate</strong>, the two particles have equal mass $|s|$, and the operator $\tilde m_{\mathrm{fld}}$ is a scalar in disguise. This is the case the source reads as the <strong>proton–neutron</strong> doublet, with the equal-mass pair of the isospin multiplet.</p>
-<p><strong>A Hermitian idempotent, $\tilde m_{\mathrm{fld}}=\tilde{\Pi}$.</strong> Then $\tilde m_{\mathrm{fld}}^{*}=\tilde m_{\mathrm{fld}}$ and $\tilde m_{\mathrm{fld}}^2=\tilde m_{\mathrm{fld}}$, so $\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*}=\tilde m_{\mathrm{fld}}$, an idempotent of rank one: its eigenvalues are $1$ and $0$. The doublet is <strong>split</strong>, one mode massive and one massless. This is the case the source reads as the <strong>electron–neutrino</strong> doublet — the charged fermion and its massless partner.</p>
+<p><strong>A Hermitian idempotent, $\tilde m_{\mathrm{fld}}=\tilde\Pi_{\mathrm{id}}$.</strong> Then $\tilde m_{\mathrm{fld}}^{*}=\tilde m_{\mathrm{fld}}$ and $\tilde m_{\mathrm{fld}}^2=\tilde m_{\mathrm{fld}}$, so $\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*}=\tilde m_{\mathrm{fld}}$, an idempotent of rank one: its eigenvalues are $1$ and $0$. The doublet is <strong>split</strong>, one mode massive and one massless. This is the case the source reads as the <strong>electron–neutrino</strong> doublet — the charged fermion and its massless partner.</p>
 <p><strong>A singular biquaternion, $\langle\tilde m_{\mathrm{fld}}\rangle_{\natural} = \langle\tilde m_{\mathrm{fld}},\tilde m_{\mathrm{fld}}\rangle_{\natural}=0$.</strong> Then $\det\mathsf{M}_2(\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*})=|\langle\tilde m_{\mathrm{fld}}\rangle_{\natural}|^2=0$, so at least one eigenvalue vanishes: <strong>a singular mass field always leaves a massless mode</strong>, whatever else it does. The identity $\det\mathsf{M}_2(\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*})=|\langle\tilde m_{\mathrm{fld}}\rangle_{\natural}|^2$ is the determinant of the matrix of the mass operator, and it is verified here; the vanishing of the norm is exactly the condition the idempotent case realises. The corpus's example $\tilde m_{\mathrm{fld}}=\vec e_x+i\vec e_y$ is singular, $\langle \vec e_x+i\vec e_y\rangle_{\natural}=1+i^2=0$, and its two mass-squareds are $4$ and $0$ — one massive mode and the electron–neutrino skeleton, checked directly.</p>
 <p>The three cases are collected in one table.</p>
 <div class="table-scroll"><table>
@@ -144,8 +144,8 @@ $$</p>
 <td>degenerate doublet (proton–neutron)</td>
 </tr>
 <tr>
-<td>Hermitian idempotent $\tilde{\Pi}$</td>
-<td>$\tilde{\Pi}$</td>
+<td>Hermitian idempotent $\tilde\Pi_{\mathrm{id}}$</td>
+<td>$\tilde\Pi_{\mathrm{id}}$</td>
 <td>$1,\ 0$</td>
 <td>split doublet (electron–neutrino)</td>
 </tr>
@@ -355,7 +355,7 @@ $$</p>
 <td>Idempotent (nullquat), $\sigma^2=\sigma$, $\langle \sigma\rangle_{\natural}=0$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$</td>
+<td>$\tilde\Pi_{\mathrm{id},1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$</td>
 <td>Hermitian idempotents; mass eigenvalues $1,0$</td>
 </tr>
 <tr>

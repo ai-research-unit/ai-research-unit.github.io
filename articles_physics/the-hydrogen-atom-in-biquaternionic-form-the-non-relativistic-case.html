@@ -77,8 +77,8 @@ E_n = -\frac{m\,\kappa^{2}}{2\,\hbar^{2}\,n^{2}},
 $$</p>
 <p>Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
 <p>the eigenstates are labelled by the quantum numbers $n,l,l_z$, and each orbital level carries a two-valued spin factor.</p>
-<p>This article writes that problem in the notation of the biquaternion framework and asks what the framework contributes to it. The material it uses is already on the shelf. The companion article <em>Angular Momentum and Spin in Biquaternionic Form</em> supplies the orbital operators $L_{\mathrm{orb},\eta} e_t$, sitting in the scalar slot, the spin operators $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$, sitting in the vector slots, and the eigenvalue $\hbar^{2}\,l\,(l+1)$ through which the angular problem couples to the radial one. The companion article <em>The Schrödinger Equation in Biquaternionic Form</em> supplies the state module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ and fixes the scalar imaginary $i$ as the unit of the equation.</p>
-<p>The honest summary can be stated before the derivation, and it is simple. The non-relativistic Coulomb Hamiltonian is a <strong>central scalar</strong> element of $\mathbb{B}_{\Psi}$: its vector part vanishes. It therefore treats the spin as a spectator, and the biquaternion equation reduces componentwise to the ordinary scalar Schrödinger equation. The genuinely algebraic ingredients are the two-dimensional module $\mathbb{B}\tilde\Pi$ that carries the spin factor and the placement of the orbital and spin operators in complementary slots. What the framework does <strong>not</strong> supply is the space in which the bound states live and an algebraic account of the $n^2$ degeneracy; both gaps are stated where they arise and collected in a section of their own, rather than smoothed over.</p>
+<p>This article writes that problem in the notation of the biquaternion framework and asks what the framework contributes to it. The material it uses is already on the shelf. The companion article <em>Angular Momentum and Spin in Biquaternionic Form</em> supplies the orbital operators $L_{\mathrm{orb},\eta} e_t$, sitting in the scalar slot, the spin operators $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$, sitting in the vector slots, and the eigenvalue $\hbar^{2}\,l\,(l+1)$ through which the angular problem couples to the radial one. The companion article <em>The Schrödinger Equation in Biquaternionic Form</em> supplies the state module $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong\mathbb{C}^2$ and fixes the scalar imaginary $i$ as the unit of the equation.</p>
+<p>The honest summary can be stated before the derivation, and it is simple. The non-relativistic Coulomb Hamiltonian is a <strong>central scalar</strong> element of $\mathbb{B}_{\Psi}$: its vector part vanishes. It therefore treats the spin as a spectator, and the biquaternion equation reduces componentwise to the ordinary scalar Schrödinger equation. The genuinely algebraic ingredients are the two-dimensional module $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ that carries the spin factor and the placement of the orbital and spin operators in complementary slots. What the framework does <strong>not</strong> supply is the space in which the bound states live and an algebraic account of the $n^2$ degeneracy; both gaps are stated where they arise and collected in a section of their own, rather than smoothed over.</p>
 <p>The title covers the non-relativistic case only. The relativistic case begins from the biquaternion Dirac equation with the Coulomb potential, where the Hamiltonian is no longer central, the spin is no longer a spectator, and the $l$-degeneracy is lifted; it is left to its own article and is described only qualitatively at the end.</p>
 <h2 id="the-coulomb-hamiltonian-in-math16">The Coulomb Hamiltonian in $\mathbb{B}_{\Psi}$</h2>
 <h3 id="the-kinetic-term-and-a-sign">The kinetic term and a sign</h3>
@@ -124,9 +124,9 @@ $$</p>
 $$</p>
 <p>and it lies along the time-like direction $ie_t$ of the material sector, as the companion article on the Schrödinger equation requires of a time-translation generator. Both the observable and the generator are scalar multiples of $e_t$. The framework's sector split is thus realised here in its simplest possible form: the entire Hamiltonian content of the non-relativistic Coulomb problem sits in the scalar slot, and the vector slots are empty.</p>
 <h2 id="the-state-module-and-the-spinor-wave-function">The State Module and the Spinor Wave Function</h2>
-<p>The framework's states are spinors in the Peirce carrier $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$, a minimal left ideal here. A position-space treatment requires a spinor <strong>field</strong>,</p>
+<p>The framework's states are spinors in the Peirce carrier $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong\mathbb{C}^2$, a minimal left ideal here. A position-space treatment requires a spinor <strong>field</strong>,</p>
 <p>$$
-\tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\in\mathbb{B}\tilde\Pi \cong \mathbb{C}^2,
+\tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\in\mathbb{B}\tilde\Pi_{\mathrm{id}} \cong \mathbb{C}^2,
 $$</p>
 <p>a two-component object defined on the spatial coordinates of the material sector. This is an extension of the framework's quantum formalism, which the companion articles state for a single qubit, and it should be labelled as one: the position dependence is carried by the <strong>argument</strong> of the field, not by the algebra. The algebra acts on the internal two-dimensional index; the argument is external structure that the finite-dimensional algebra does not contain.</p>
 <p>Under the isomorphism $\mathsf{M}_2$ the field $\tilde{Ξ}$ is a column vector in $\mathbb{C}^2$, the spin operators $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$ act on its two components as $\frac{\hbar}{2}\sigma_\eta$, and the orbital operators $L_{\mathrm{orb},\eta} e_t$ act on the argument as $L_{\mathrm{orb},\eta}$ times the identity. The framework expresses the distinction between these two kinds of action algebraically. The orbital operators occupy the <strong>scalar</strong> slot $e_t$; the spin operators occupy the <strong>vector</strong> slots $i\vec e_\eta$. Because a scalar multiple of $e_t$ is central, the two families commute:</p>
@@ -150,21 +150,21 @@ L^2\,Y_l^{l_z} =\hbar^{2}\,l\,(l+1)\,Y_{l}^{l_z}, \qquad L_{\mathrm{orb},z}\,Y_l
 $$</p>
 <p>with $Y_l^{l_z}$ the spherical harmonics. The spin operators satisfy $\tilde S_{\Psi}^2=\frac{3\,\hbar^{2}}{4}e_t$, which is $\hbar^{2}\,s\,(s+1)$ with $s=\tfrac12$, and their eigenstates are the idempotents: the projection of the spin along a unit direction $\vec u$ has the two eigenspaces</p>
 <p>$$
-\sum_\eta  \vec u_\eta\tilde S_{\Psi,\eta}\,\tilde{\Pi}(\pm\vec u) = \pm\frac{\hbar}{2}\,\tilde{\Pi}(\pm\vec u),
+\sum_\eta  \vec u_\eta\tilde S_{\Psi,\eta}\,\tilde\Pi_{\mathrm{id}}(\pm\vec u) = \pm\frac{\hbar}{2}\,\tilde\Pi_{\mathrm{id}}(\pm\vec u),
 \qquad
-\tilde{\Pi}(\pm\vec u)=\tfrac12(e_t\pm i\vec u),
+\tilde\Pi_{\mathrm{id}}(\pm\vec u)=\tfrac12(e_t\pm i\vec u),
 $$</p>
-<p>and for the axis $\vec u=\vec e_z$ the two idempotents $\tilde{\Pi}(\pm \vec e_z)=\tfrac12(e_t\pm i\vec e_z)$ are the spin-up and spin-down states.</p>
-<p>The framework's Born rule for the spin factor is the pairing formula. For the observable $\tilde S_{\Psi,\eta}$ in the pure state $\tilde{\Pi}(\vec u)=\tfrac12(e_t+i\vec u)$,</p>
+<p>and for the axis $\vec u=\vec e_z$ the two idempotents $\tilde\Pi_{\mathrm{id}}(\pm \vec e_z)=\tfrac12(e_t\pm i\vec e_z)$ are the spin-up and spin-down states.</p>
+<p>The framework's Born rule for the spin factor is the pairing formula. For the observable $\tilde S_{\Psi,\eta}$ in the pure state $\tilde\Pi_{\mathrm{id}}(\vec u)=\tfrac12(e_t+i\vec u)$,</p>
 <p>$$
-2\,\mathrm{Sc}\bigl(\tilde{\Pi}(\vec u)\,\tilde S_{\Psi,\eta}\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{\Pi}(\vec u)\,\tilde S_{\Psi,\eta}\bigr) =\frac{\hbar}{2}\vec u_\Phi ,
+2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id}}(\vec u)\,\tilde S_{\Psi,\eta}\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi_{\mathrm{id}}(\vec u)\,\tilde S_{\Psi,\eta}\bigr) =\frac{\hbar}{2}\vec u_\Phi ,
 $$</p>
 <p>which is the standard spin-1/2 expectation value, written as the plain form of $\mathbb{B}_{\Psi}$, read as the plain pairing.</p>
 <h3 id="the-ansatz-and-the-radial-equation">The ansatz and the radial equation</h3>
 <p>Separate the field as</p>
 <p>$$
 \boxed{\;\tilde{Ξ}_{n l l_z s_z}(r,\theta,\theta_{\mathrm{azm}}) = R_{nl}(r)\,Y_l^{l_z}(\theta,\theta_{\mathrm{azm}})\,\xi_{s_z}\;},
-\qquad \xi_{s_z}\in\mathbb{B}\tilde\Pi ,
+\qquad \xi_{s_z}\in\mathbb{B}\tilde\Pi_{\mathrm{id}} ,
 $$</p>
 <p>with $\xi_{s_z}$ a constant spinor. Substituting into the biquaternion Schrödinger equation $i\,\hbar\,c\partial/\partial r'_t\tilde{Ξ}=H\tilde{Ξ}$ and using the spherical decomposition of the Laplacian,</p>
 <p>$$
@@ -191,7 +191,7 @@ $$</p>
 <p>$$
 \sum_{l=0}^{n-1}(2l+1)=n^2 ,
 $$</p>
-<p>and each carries the two spin values, so the level has degeneracy $2n^2$. The factor of two is the one part of the counting that is algebraic: the module $\mathbb{B}\tilde\Pi$ on which the spin acts is two-dimensional, and $\tilde S_{\Psi}^2=\frac{3\,\hbar^{2}}{4}e_t$ says that its internal factor is spin-$\tfrac12$. The factor $n^2$ is another matter, and the framework does not account for it; see the section "What the Framework Does Not Supply" below.</p>
+<p>and each carries the two spin values, so the level has degeneracy $2n^2$. The factor of two is the one part of the counting that is algebraic: the module $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ on which the spin acts is two-dimensional, and $\tilde S_{\Psi}^2=\frac{3\,\hbar^{2}}{4}e_t$ says that its internal factor is spin-$\tfrac12$. The factor $n^2$ is another matter, and the framework does not account for it; see the section "What the Framework Does Not Supply" below.</p>
 <h3 id="the-eigenstates">The eigenstates</h3>
 <p>The radial eigenfunctions are the standard ones, expressed through the associated Laguerre polynomials:</p>
 <p>$$
@@ -209,7 +209,7 @@ $$</p>
 \tilde{Ξ}_{100}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{\pi a_0^3}}\,\exp(-r/a_0)\,\xi_{s_z},
 \qquad E_1=-\frac{\kappa}{2a_0},
 $$</p>
-<p>a spinor field whose orbital factor is the familiar exponential and whose spin factor is any of the two idempotents $\tilde{\Pi}(\pm \vec e_z)$. A complete eigenstate is the product $R_{nl}Y_l^{l_z}\xi_{s_z}$: the radial factor solves the radial equation, the angular factor is an eigenfunction of $L^2$ and $L_{\mathrm{orb},z}$ in the scalar slot, and the spin factor is an idempotent of the vector slot. The eigenvalue is $E_n$, independent of $l$, $m$ and $m_s$.</p>
+<p>a spinor field whose orbital factor is the familiar exponential and whose spin factor is any of the two idempotents $\tilde\Pi_{\mathrm{id}}(\pm \vec e_z)$. A complete eigenstate is the product $R_{nl}Y_l^{l_z}\xi_{s_z}$: the radial factor solves the radial equation, the angular factor is an eigenfunction of $L^2$ and $L_{\mathrm{orb},z}$ in the scalar slot, and the spin factor is an idempotent of the vector slot. The eigenvalue is $E_n$, independent of $l$, $m$ and $m_s$.</p>
 <h2 id="correspondence-with-the-standard-solution">Correspondence with the Standard Solution</h2>
 <p>Under the isomorphism $\mathsf{M}_2$ the transcription is transparent. The field $\tilde{Ξ}$ is a two-component column, the central Hamiltonian acts as $h_t I_2$, and the biquaternion Schrödinger equation becomes two identical copies of the standard Schrödinger equation for the Coulomb problem. The correspondence is collected here.</p>
 <div class="table-scroll"><table>
@@ -243,7 +243,7 @@ $$</p>
 </tr>
 <tr>
 <td>Wavefunction $\tilde{Ξ}\in L^2(\mathbb{R}^3)\otimes\mathbb{C}^2$</td>
-<td>spinor field $\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\in\mathbb{B}\tilde\Pi$</td>
+<td>spinor field $\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\in\mathbb{B}\tilde\Pi_{\mathrm{id}}$</td>
 <td>module</td>
 </tr>
 <tr>
@@ -253,7 +253,7 @@ $$</p>
 </tr>
 <tr>
 <td>Degeneracy $2n^2$</td>
-<td>identical, spin factor from $\dim\mathbb{B}\tilde\Pi=2$</td>
+<td>identical, spin factor from $\dim\mathbb{B}\tilde\Pi_{\mathrm{id}}=2$</td>
 <td>—</td>
 </tr>
 </tbody>
@@ -303,7 +303,7 @@ $$</p>
 <p>$$
 E_n = -\frac{m\,\kappa^{2}}{2\,\hbar^{2}\,n^{2}} = -\frac{\kappa}{2a_0n^2},
 $$</p>
-<p>the standard eigenstates $R_{nl}(r)Y_l^{l_z}(\theta,\theta_{\mathrm{azm}})\xi_{s_z}$, and the degeneracy $2n^2$, of which only the factor of two is algebraic, being the dimension of the state module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ together with $\tilde S_{\Psi}^2=\frac{3\,\hbar^{2}}{4}e_t$.</p>
+<p>the standard eigenstates $R_{nl}(r)Y_l^{l_z}(\theta,\theta_{\mathrm{azm}})\xi_{s_z}$, and the degeneracy $2n^2$, of which only the factor of two is algebraic, being the dimension of the state module $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong\mathbb{C}^2$ together with $\tilde S_{\Psi}^2=\frac{3\,\hbar^{2}}{4}e_t$.</p>
 <p>The framework's contribution is therefore structural, not spectral. It identifies the kinetic term as a biquaternion-norm object, places the observable in $\mathbb{B}_{\Psi}$ and the generator in $\mathbb{B}_{\Phi}$ along $ie_t$, and separates orbital from spin degrees of freedom by slot. It does not supply the bound-state space, which is not a module over the finite-dimensional algebra; it does not supply a position–momentum pair in $\mathbb{B}_{\Psi}$; and it does not account for the $n^2$ degeneracy, whose $SO(4)$ origin remains an open question in the corpus. The spectrum and eigenstates are the standard ones, and no deviation is predicted. The relativistic case, where the spin couples and the degeneracy is lifted, is left to its own article.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -387,15 +387,15 @@ $$</p>
 <td>Total angular momentum (needed only relativistically)</td>
 </tr>
 <tr>
-<td>$\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$</td>
+<td>$\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong\mathbb{C}^2$</td>
 <td>State module of spinors $\tilde{Ξ}$</td>
 </tr>
 <tr>
-<td>$\tilde{\Pi}(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$</td>
+<td>$\tilde\Pi_{\mathrm{id}}(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$</td>
 <td>Spin eigenstates (idempotents)</td>
 </tr>
 <tr>
-<td>$2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$</td>
+<td>$2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$</td>
 <td>Scalar-part reading at normalisation (Born rule)</td>
 </tr>
 <tr>

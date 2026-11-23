@@ -86,11 +86,11 @@ $$</p>
 <h3 id="the-reduction">The Reduction</h3>
 <p>Write the root in the idempotent coordinates,</p>
 <p>$$
-Ζ=Ζ_{+}\Pi_{+}+Ζ_{-}\Pi_{-},\qquad Ζ_{\pm}=x\pm x',
+Ζ=Ζ_{+}\Pi_{\mathrm{id},+}+Ζ_{-}\Pi_{\mathrm{id},-},\qquad Ζ_{\pm}=x\pm x',
 $$</p>
 <p>with $x,x'\in\mathbb{R}$. The square is</p>
 <p>$$
-Ζ^{2}=Ζ_{+}^{2}\Pi_{+}+Ζ_{-}^{2}\Pi_{-},
+Ζ^{2}=Ζ_{+}^{2}\Pi_{\mathrm{id},+}+Ζ_{-}^{2}\Pi_{\mathrm{id},-},
 $$</p>
 <p>so the equation $Ζ^{2}=0$ is equivalent to the <strong>pair of real equations</strong></p>
 <p>$$
@@ -128,24 +128,24 @@ $$</p>
 <h2 id="the-nilpotents">The Nilpotents</h2>
 <p><strong>There are no nonzero nilpotents in the split-complex algebra; the algebra is reduced.</strong></p>
 <h3 id="the-definition">The Definition</h3>
-<p>An element $\Upsilon\in\mathbb{C}_{\mathrm{spl}}$ is <strong>nilpotent</strong> when $\Upsilon\neq0$ and there is an integer $n\ge1$ with</p>
+<p>An element $\Pi_{\mathrm{nil}}\in\mathbb{C}_{\mathrm{spl}}$ is <strong>nilpotent</strong> when $\Pi_{\mathrm{nil}}\neq0$ and there is an integer $n\ge1$ with</p>
 <p>$$
-\Upsilon^{n}=0 .
+\Pi_{\mathrm{nil}}^{n}=0 .
 $$</p>
-<p>The smallest such $n$ is the <strong>index of nilpotency</strong> of $\Upsilon$. A <strong>square-zero element</strong> is an element $Ζ$ with $Ζ^{2}=0$; the nonzero square-zero elements are exactly the nilpotents of index two.</p>
+<p>The smallest such $n$ is the <strong>index of nilpotency</strong> of $\Pi_{\mathrm{nil}}$. A <strong>square-zero element</strong> is an element $Ζ$ with $Ζ^{2}=0$; the nonzero square-zero elements are exactly the nilpotents of index two.</p>
 <h3 id="the-criterion">The Criterion</h3>
 <p><strong>Theorem (the criterion).</strong> There is <strong>no</strong> nilpotent in $\mathbb{C}_{\mathrm{spl}}$, and the only square-zero element is $0$.</p>
-<p><strong>Proof.</strong> If $\Upsilon^{n}=0$ for some $n\ge1$, write $\Upsilon=\Upsilon_{+}\Pi_{+}+\Upsilon_{-}\Pi_{-}$; then $\Upsilon^{n}=\Upsilon_{+}^{n}\Pi_{+}+\Upsilon_{-}^{n}\Pi_{-}$, so $\Upsilon_{+}^{n}=0$ and $\Upsilon_{-}^{n}=0$. Over $\mathbb{R}$ this gives $\Upsilon_{+}=\Upsilon_{-}=0$, hence $\Upsilon=0$, contrary to the definition of a nilpotent. So there is no nilpotent. If $\Upsilon^{2}=0$ the same computation with $n=2$ gives $\Upsilon=0$.</p>
+<p><strong>Proof.</strong> If $\Pi_{\mathrm{nil}}^{n}=0$ for some $n\ge1$, write $\Pi_{\mathrm{nil}}=\Pi_{\mathrm{nil},+}\Pi_{\mathrm{id},+}+\Pi_{\mathrm{nil},-}\Pi_{\mathrm{id},-}$; then $\Pi_{\mathrm{nil}}^{n}=\Pi_{\mathrm{nil},+}^{n}\Pi_{\mathrm{id},+}+\Pi_{\mathrm{nil},-}^{n}\Pi_{\mathrm{id},-}$, so $\Pi_{\mathrm{nil},+}^{n}=0$ and $\Pi_{\mathrm{nil},-}^{n}=0$. Over $\mathbb{R}$ this gives $\Pi_{\mathrm{nil},+}=\Pi_{\mathrm{nil},-}=0$, hence $\Pi_{\mathrm{nil}}=0$, contrary to the definition of a nilpotent. So there is no nilpotent. If $\Pi_{\mathrm{nil}}^{2}=0$ the same computation with $n=2$ gives $\Pi_{\mathrm{nil}}=0$.</p>
 <p><strong>Corollary (the algebra is reduced).</strong> The plain algebra has no nonzero nilpotent element.</p>
 <h3 id="the-nilpotent-cone_1">The Nilpotent Cone</h3>
 <p>The nilpotent cone is the set of square-zero elements,</p>
 <p>$$
-\mathcal{N}_{0}=\{\Upsilon:\Upsilon^{2}=0\}=\{0\},
+\mathcal{N}_{0}=\{\Pi_{\mathrm{nil}}:\Pi_{\mathrm{nil}}^{2}=0\}=\{0\},
 $$</p>
 <p>of real dimension $0$. It is not a cone in the usual sense: it is the origin, the apex alone, with no ray. The <strong>nonzero nilpotent cone</strong> is empty. In the classification of the elements by the algebraic norm, the origin is the only element of norm $0$ that is not a zero divisor; the zero divisors are the other elements of the null cone, and the nilpotent cone lies at the apex of that null cone.</p>
 <h3 id="index-two">Index Two</h3>
-<p><strong>Proposition (index).</strong> There is no element of index two or higher: $\Upsilon^{2}=0$ already forces $\Upsilon=0$.</p>
-<p><strong>Proof.</strong> The computation of the criterion with $n=2$ gives $\Upsilon=0$. If one assigns index $1$ to the zero element, then $0$ is the only element with a finite index; no nonzero element has an index.</p>
+<p><strong>Proposition (index).</strong> There is no element of index two or higher: $\Pi_{\mathrm{nil}}^{2}=0$ already forces $\Pi_{\mathrm{nil}}=0$.</p>
+<p><strong>Proof.</strong> The computation of the criterion with $n=2$ gives $\Pi_{\mathrm{nil}}=0$. If one assigns index $1$ to the zero element, then $0$ is the only element with a finite index; no nonzero element has an index.</p>
 <p>The statement is the sharp form of the absence: the usual hierarchy of nilpotents of index $2,3,\dots$ is empty at the first step.</p>
 <h3 id="the-nilpotents-and-the-zero-divisors">The Nilpotents and the Zero Divisors</h3>
 <p><strong>No nilpotent is a zero divisor, because there are no nilpotents; the nilpotent set and the zero-divisor set are disjoint, the first empty and the second the null cone minus the origin.</strong></p>
@@ -153,7 +153,7 @@ $$</p>
 <p><strong>Remark.</strong> The disjointness is not an accident of the split-complex case: in any reduced commutative ring there are no nonzero nilpotents, and the zero divisors can be plentiful. The split-complex algebra is the smallest reduced algebra with zero divisors, and it exhibits the separation in its purest form.</p>
 <h3 id="the-nilpotents-and-the-idempotents">The Nilpotents and the Idempotents</h3>
 <p><strong>No nilpotent is an idempotent, vacuously; the nilpotent set is empty, and the only square-zero idempotent is the origin, which is not a nilpotent.</strong></p>
-<p>If $\Upsilon$ were both nilpotent and idempotent, then $\Upsilon^{2}=\Upsilon$ and $\Upsilon^{n}=0$ would give $\Upsilon=\Upsilon^{2}=\cdots=\Upsilon^{n}=0$, contradicting $\Upsilon\neq0$. In $\mathbb{C}_{\mathrm{spl}}$ the idempotents are $0,1,\Pi_{+},\Pi_{-}$, and the nilpotent set is empty, so the intersection is empty; the origin is the only element that is a square-zero element and an idempotent, and it is not a nilpotent.</p>
+<p>If $\Pi_{\mathrm{nil}}$ were both nilpotent and idempotent, then $\Pi_{\mathrm{nil}}^{2}=\Pi_{\mathrm{nil}}$ and $\Pi_{\mathrm{nil}}^{n}=0$ would give $\Pi_{\mathrm{nil}}=\Pi_{\mathrm{nil}}^{2}=\cdots=\Pi_{\mathrm{nil}}^{n}=0$, contradicting $\Pi_{\mathrm{nil}}\neq0$. In $\mathbb{C}_{\mathrm{spl}}$ the idempotents are $0,1,\Pi_{\mathrm{id},+},\Pi_{\mathrm{id},-}$, and the nilpotent set is empty, so the intersection is empty; the origin is the only element that is a square-zero element and an idempotent, and it is not a nilpotent.</p>
 <h3 id="the-conjugation">The Conjugation</h3>
 <p>The conjugation is an automorphism and fixes the only square-zero element: $\overline{0}=0$. It therefore maps the nilpotent cone to itself. The statement is vacuous for the nonzero nilpotents, but it is the statement that the nilpotent set is invariant under the involution, as it must be for any set defined by a polynomial equation with real coefficients.</p>
 <h3 id="the-22-matrix-model">The 2×2 Matrix Model</h3>
@@ -167,7 +167,7 @@ $$</p>
 <p>A nilpotent ideal is an ideal $I$ with $I^{n}=0$ for some $n$; since every nonzero element of $I$ would then be nilpotent, and there are no nonzero nilpotents, the only nilpotent ideal is $0$. The Jacobson radical of the artinian algebra $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ is the intersection of its maximal ideals, which is $0$; the algebra is semisimple and reduced. The ideal theory is <em>Ideals and Peirce Decomposition of the Split-Complex Algebra</em>.</p>
 <h3 id="the-nilpotents-and-the-distinguished-subspaces">The Nilpotents and the Distinguished Subspaces</h3>
 <p><strong>Every distinguished subspace contains $0$ and no nonzero nilpotent.</strong></p>
-<p>The real line $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, the split imaginary line $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, the two idempotent lines $\mathbb{R}\Pi_{\pm}$, and the whole algebra all have the same square-zero set, $\{0\}$. On the real line, $q^{2}=0$ forces $q=0$; on the imaginary line, $-q'^{2}=0$ forces $q'=0$; on an idempotent line, $(\lambda\Pi_{\pm})^{2}=\lambda^{2}\Pi_{\pm}$, which is zero only at $\lambda=0$. The distribution is the simplest possible: the origin in every subspace and nothing else.</p>
+<p>The real line $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, the split imaginary line $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, the two idempotent lines $\mathbb{R}\Pi_{\mathrm{id},\pm}$, and the whole algebra all have the same square-zero set, $\{0\}$. On the real line, $q^{2}=0$ forces $q=0$; on the imaginary line, $-q'^{2}=0$ forces $q'=0$; on an idempotent line, $(\lambda\Pi_{\mathrm{id},\pm})^{2}=\lambda^{2}\Pi_{\mathrm{id},\pm}$, which is zero only at $\lambda=0$. The distribution is the simplest possible: the origin in every subspace and nothing else.</p>
 <h2 id="summary">Summary</h2>
 <p>The roots of $0$ in the split-complex algebra are exactly the origin: $Ζ^{2}=0$ forces both idempotent coordinates to vanish, and the only square-zero element is $0$. There are <strong>no nonzero nilpotents</strong>, so the nilpotent set is empty, the nilpotent cone is the single point $\{0\}$ of real dimension $0$, and the algebra is reduced. No element has index two or any higher index; no nilpotent is a zero divisor; no nilpotent is an idempotent; the square-zero element $0$ is an idempotent and not a nilpotent; the conjugation fixes the only square-zero element; the regular matrix model has the zero matrix alone as its square-zero element; and there is no nonzero nilpotent ideal, the radical being zero.</p>
 <p>The result is the sharp contrast with the dual numbers, where $\varepsilon^{2}=0$ has the nonzero root $\varepsilon$, and with the biquaternion algebra, where the nilpotent cone is a four-real-parameter cone. In the split-complex algebra the two idempotent coordinates are real and their squares cannot cancel, so the cone collapses to its apex; the zero divisors are the null cone minus that apex, and the two classes of element are disjoint.</p>
@@ -189,7 +189,7 @@ $$</p>
 <td>A root of $0$, or a square-zero element</td>
 </tr>
 <tr>
-<td>$\Upsilon$</td>
+<td>$\Pi_{\mathrm{nil}}$</td>
 <td>A nilpotent</td>
 </tr>
 <tr>
@@ -205,7 +205,7 @@ $$</p>
 <td>The zero-divisor set, disjoint from the nilpotents</td>
 </tr>
 <tr>
-<td>$\Pi_{\pm}=\tfrac12(1\pm j)$</td>
+<td>$\Pi_{\mathrm{id},\pm}=\tfrac12(1\pm j)$</td>
 <td>The idempotents, none nilpotent</td>
 </tr>
 <tr>

@@ -191,19 +191,19 @@ $$</p>
 <h3 id="the-kernel-of-the-vector-operator">The Kernel of the Vector Operator</h3>
 <p><strong>Theorem (The Kernel of the Vector Operator).</strong> The kernel of $D$ is large. For every smooth scalar function $h$ of one variable,</p>
 <p>$$
-D\big(\tilde\pi_1\, h(q_x-q_z)\big) = 0 \qquad\text{and}\qquad D\big(h(q_x+q_z)\,\tilde\pi_2\big) = 0 ,
+D\big(\tilde\pi_{\mathrm{id},1}\, h(q_x-q_z)\big) = 0 \qquad\text{and}\qquad D\big(h(q_x+q_z)\,\tilde\pi_{\mathrm{id},2}\big) = 0 ,
 $$</p>
-<p>with $\tilde\pi_{1,2} = \tfrac12(1\pm \vec e_y)$ the idempotents. Both families contain nonzero compactly supported functions: $\tilde\pi_1\chi(q_x-q_z)$ with $\chi$ a smooth bump vanishes outside a strip and is not zero.</p>
+<p>with $\tilde\pi_{\mathrm{id},1,2} = \tfrac12(1\pm \vec e_y)$ the idempotents. Both families contain nonzero compactly supported functions: $\tilde\pi_{\mathrm{id},1}\chi(q_x-q_z)$ with $\chi$ a smooth bump vanishes outside a strip and is not zero.</p>
 <p><strong>Proof.</strong> The products of a generator with an idempotent are</p>
 <p>$$
-\vec e_x\tilde\pi_1 = \vec e_z\tilde\pi_1 = \tfrac12(\vec e_x+\vec e_z), \qquad \vec e_y\tilde\pi_1 = \tilde\pi_1, \qquad \vec e_x\tilde\pi_2 = -\vec e_z\tilde\pi_2 = \tfrac12(\vec e_x-\vec e_z), \qquad \vec e_y\tilde\pi_2 = -\tilde\pi_2 ,
+\vec e_x\tilde\pi_{\mathrm{id},1} = \vec e_z\tilde\pi_{\mathrm{id},1} = \tfrac12(\vec e_x+\vec e_z), \qquad \vec e_y\tilde\pi_{\mathrm{id},1} = \tilde\pi_{\mathrm{id},1}, \qquad \vec e_x\tilde\pi_{\mathrm{id},2} = -\vec e_z\tilde\pi_{\mathrm{id},2} = \tfrac12(\vec e_x-\vec e_z), \qquad \vec e_y\tilde\pi_{\mathrm{id},2} = -\tilde\pi_{\mathrm{id},2} ,
 $$</p>
 <p>so for a scalar function $h$</p>
 <p>$$
-D(\tilde\pi_1h) = \tfrac12(\vec e_x+\vec e_z)\big(\partial/\partial q_x\,h+\partial/\partial q_z\,h\big) + \tilde\pi_1\,\partial/\partial q_y\,h, \qquad D(h\tilde\pi_2) = \tfrac12(\vec e_x-\vec e_z)\big(\partial/\partial q_x\,h-\partial/\partial q_z\,h\big) - \tilde\pi_2\,\partial/\partial q_y\,h ,
+D(\tilde\pi_{\mathrm{id},1h}) = \tfrac12(\vec e_x+\vec e_z)\big(\partial/\partial q_x\,h+\partial/\partial q_z\,h\big) + \tilde\pi_{\mathrm{id},1}\,\partial/\partial q_y\,h, \qquad D(h\tilde\pi_{\mathrm{id},2}) = \tfrac12(\vec e_x-\vec e_z)\big(\partial/\partial q_x\,h-\partial/\partial q_z\,h\big) - \tilde\pi_{\mathrm{id},2}\,\partial/\partial q_y\,h ,
 $$</p>
-<p>and both right-hand sides vanish for the stated $h$, since $\partial/\partial q_y\,h = 0$ and $\partial/\partial q_x\,h = \mp\partial/\partial q_z\,h$ for $h = h(q_x\mp q_z)$. The four elements $\tilde\pi_1$, $\tilde\pi_2$, $\tfrac12(\vec e_x+\vec e_z)$, $\tfrac12(\vec e_x-\vec e_z)$ occurring here are a basis of the algebra, so the two identities are read off the multiplication table and are exact.</p>
-<p><strong>Corollary (Consequences of the Kernel).</strong> No unique continuation, no identity theorem, no maximum principle and no Liouville theorem hold for the solutions of $Df = 0$: the function $\tilde\pi_1\chi(q_x-q_z)$ with $\chi$ supported in $[1,2]$ is a nonzero solution vanishing on the open half-space $q_x-q_z<1$, so the zero set of a nonzero solution can have interior points and no rigidity of the elliptic type survives.</p>
+<p>and both right-hand sides vanish for the stated $h$, since $\partial/\partial q_y\,h = 0$ and $\partial/\partial q_x\,h = \mp\partial/\partial q_z\,h$ for $h = h(q_x\mp q_z)$. The four elements $\tilde\pi_{\mathrm{id},1}$, $\tilde\pi_{\mathrm{id},2}$, $\tfrac12(\vec e_x+\vec e_z)$, $\tfrac12(\vec e_x-\vec e_z)$ occurring here are a basis of the algebra, so the two identities are read off the multiplication table and are exact.</p>
+<p><strong>Corollary (Consequences of the Kernel).</strong> No unique continuation, no identity theorem, no maximum principle and no Liouville theorem hold for the solutions of $Df = 0$: the function $\tilde\pi_{\mathrm{id},1}\chi(q_x-q_z)$ with $\chi$ supported in $[1,2]$ is a nonzero solution vanishing on the open half-space $q_x-q_z<1$, so the zero set of a nonzero solution can have interior points and no rigidity of the elliptic type survives.</p>
 <p><strong>Corollary (No Right Inverse).</strong> There is no identity $f = E_D*(Df)$ valid for all compactly supported smooth $f$, and therefore no Cauchy–Pompeiu formula of the elliptic type: the identity would give $f = E_D*0 = 0$ for the nonzero compactly supported solutions of the kernel theorem.</p>
 <p><strong>Theorem (The Inversion on the Left).</strong> What holds is the inversion on the left,</p>
 <p>$$
@@ -343,7 +343,7 @@ $$</p>
 <td>this article</td>
 </tr>
 <tr>
-<td>$\tilde\pi_1h(q_x-q_z)$, $h(q_x+q_z)\tilde\pi_2$</td>
+<td>$\tilde\pi_{\mathrm{id},1h}(q_x-q_z)$, $h(q_x+q_z)\tilde\pi_{\mathrm{id},2}$</td>
 <td>the two families in the kernel of $D$</td>
 <td>this article</td>
 </tr>

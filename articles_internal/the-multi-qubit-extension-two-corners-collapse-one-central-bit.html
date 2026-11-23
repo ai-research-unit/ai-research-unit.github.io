@@ -79,7 +79,7 @@
 <li>The two corners nonetheless coincide. Over $\mathbb{C}$, the image of $\mathbb{B}_{\Psi}\otimes_\mathbb{R}\mathbb{B}_{\Psi}$ and the image of $\mathbb{B}_{\Phi}\otimes_\mathbb{R}\mathbb{B}_{\Phi}$ are the same sixteen-dimensional real subspace, and it is the whole Hermitian part. So every two-qubit observable is a real combination of informational-informational tensors, and also a real combination of material-material tensors, and neither description is preferred.</li>
 <li>Over $\mathbb{R}$ the pair is twice as large, and the extra half is a central bit. $\mathbb{B}\otimes_\mathbb{R}\mathbb{B}$ is $M_4(\mathbb{C})\oplus M_4(\mathbb{C})$, split by the central involution $J=i\otimes i$. The physical complex tensor product is one summand; the other is the tensor product with the conjugate complex structure, which is the material/informational swap of one subsystem. Composition therefore creates exactly the central split that the single algebra does not have, and the physical choice of scalars discards it.</li>
 </ol>
-<p><strong>What the split does do in the pair, positively.</strong> Positivity of the eight diagonal Hermitian candidates is exactly the sign condition $\epsilon_1\epsilon_2\epsilon_3=+1$. The four that satisfy it are the Bell projectors. The four that violate it are $\tfrac12 e_t\otimes e_t-\tilde\Pi$, of spectrum $(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$, and they are not states. The split appears in the pair as a constraint on signs, not as a label on factors.</p>
+<p><strong>What the split does do in the pair, positively.</strong> Positivity of the eight diagonal Hermitian candidates is exactly the sign condition $\epsilon_1\epsilon_2\epsilon_3=+1$. The four that satisfy it are the Bell projectors. The four that violate it are $\tfrac12 e_t\otimes e_t-\tilde\Pi_{\mathrm{id}}$, of spectrum $(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$, and they are not states. The split appears in the pair as a constraint on signs, not as a label on factors.</p>
 <p><strong>What was recomputed for this note.</strong> The partial projection on the defining relation, exact. The non-descendence of the partial star, exact on the relation and on five random products. The two corners, rank sixteen of sixteen and stacked rank sixteen. The real tensor product, sixty-four real dimensions, centre of real dimension four, $J^2=e_t\otimes e_t$, $J$ central, two central idempotents, components of real dimension thirty-two with centre of real dimension two. The eight diagonal candidates, four idempotents with spectrum $(0,0,0,1)$ and four with spectrum $(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$. The eight reductions, all $\tfrac12 e_t$. The concurrence identity in the Bell basis, two hundred random normalised states, zero failures. The star as an anti-automorphism of $\mathbb{B}$, sixty-four of sixty-four basis products.</p>
 <p><strong>This is an analysis and a plan, not a corpus change.</strong> No article is modified here. The three places where the existing corpus is loose are reported at the end of the inventory, not patched.</p>
 <h2 id="what-the-corpus-already-has">What the Corpus Already Has</h2>
@@ -307,7 +307,7 @@ $$</p>
 </table></div>
 <p><strong>The condition is the standard one, read in the sector letters.</strong> The four positive cases are the Bell projectors, and the four vectors $(1,\epsilon_1,\epsilon_2,\epsilon_3)$ are pairwise orthogonal, so the matrix they form is Hadamard: the row signs multiply to $+1$ exactly when the projectors exist. The four negative cases are not new elements; each is a Bell projector subtracted from the maximally mixed state,</p>
 <p>$$
-Z_\epsilon=\tfrac12 e_t\otimes e_t-\tilde\Pi_{-\epsilon},
+Z_\epsilon=\tfrac12 e_t\otimes e_t-\tilde\Pi_{\mathrm{id},-\epsilon},
 \qquad \epsilon_1\epsilon_2\epsilon_3=-1,
 $$</p>
 <p>which was checked exactly. That identity explains the spectrum: subtracting a rank-one projector from $\tfrac12 I_4$ leaves one negative eigenvalue.</p>
@@ -387,7 +387,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The corpus's quantum formalism is single-qubit, and its multi-qubit literature is built on $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$. The sector split is an antilinear involution of one factor, and it does not pass to the complex tensor product: the partial projection sends the defining relation $i\otimes1=1\otimes i$ to a nonzero element. So no two-qubit observable carries a material or informational label per subsystem. What survives is stronger and simpler: the material-material and informational-informational corners coincide, and their common image is the whole sixteen-dimensional Hermitian part. Every two-qubit observable is therefore describable entirely in either corner, and the two descriptions differ by the shared $i$.</p>
 <p>Over $\mathbb{R}$ the pair is twice as large. The central involution $J=i\otimes i$ splits $\mathbb{B}\otimes_\mathbb{R}\mathbb{B}$ into two copies of $M_4(\mathbb{C})$, with the two idempotents of the scalar extension as projectors. The physical complex tensor product is the summand in which the two imaginary units agree; the other summand is the tensor product with the conjugate algebra, which is the material/informational swap of one subsystem. Composition therefore creates exactly the central split that the single algebra lacks, and the choice of complex scalars sets that charge to the number $-1$.</p>
-<p>What the split does in the pair is constrain the signs. Of the eight diagonal Hermitian candidates, exactly the four with $\epsilon_1\epsilon_2\epsilon_3=+1$ are positive; the other four are $\tfrac12 e_t\otimes e_t-\tilde\Pi$ and have spectrum $(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$. All eight reduce to $\tfrac12 e_t$, so the reduction does not see the sign. And the concurrence of a two-qubit pure state is the modulus of a second invariant quadratic, of inertia $(2,2)$ on real amplitudes in the Bell basis, which needs the swap of the factors and therefore lies outside the algebra's left action.</p>
+<p>What the split does in the pair is constrain the signs. Of the eight diagonal Hermitian candidates, exactly the four with $\epsilon_1\epsilon_2\epsilon_3=+1$ are positive; the other four are $\tfrac12 e_t\otimes e_t-\tilde\Pi_{\mathrm{id}}$ and have spectrum $(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$. All eight reduce to $\tfrac12 e_t$, so the reduction does not see the sign. And the concurrence of a two-qubit pure state is the modulus of a second invariant quadratic, of inertia $(2,2)$ on real amplitudes in the Bell basis, which needs the swap of the factors and therefore lies outside the algebra's left action.</p>
 <p><strong>The positive half is that the corpus's three canonical forms tensor.</strong> $H^{\otimes n}$, $B^{\otimes n}$ and $\omega^{\otimes n}$ are the inner product, the norm and the entanglement pairing of the $n$-qubit theory. At $n=2$ the third gives $\omega\otimes\omega(\psi,\psi)=2\det c$, so $2\lvert\det c\rvert$ is the concurrence; that is the $n=2$ formula only. For general $n$ the parity theorem $(\omega^{\otimes n})^{\mathsf T}=(-1)^{n}\omega^{\otimes n}$ makes the form antisymmetric and diagonal-zero at odd $n$, so $\omega$ says nothing at three qubits and the three-qubit measures must be quartic. The criterion is one property: a bilinear form tensors, an antilinear involution does not.</p>
 <p>The published corpus should keep the complex tensor product and add one definition with three sentences. The internal line should write the real algebra once and decide whether the anti-aligned summand has an interpretation. Neither step changes a prediction.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -655,12 +655,12 @@ Moved from <em>Non Relativistic Approximation</em>. The section's one complete t
 <tbody>
 <tr>
 <td>splitting operator</td>
-<td>$\mathrm{ad}\,\tilde\Pi$, with $\tilde\Pi$ a rank-one idempotent</td>
+<td>$\mathrm{ad}\,\tilde\Pi_{\mathrm{id}}$, with $\tilde\Pi_{\mathrm{id}}$ a rank-one idempotent</td>
 <td>the star $\star$</td>
 </tr>
 <tr>
 <td>blocks</td>
-<td>$\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$, four of complex dimension 1</td>
+<td>$\mathbb{B}_{st}=\tilde\Pi_{\mathrm{id},s}\mathbb{B}\tilde\Pi_{\mathrm{id},t}$, four of complex dimension 1</td>
 <td>Hermitian and anti-Hermitian, four real dimensions each</td>
 </tr>
 <tr>
@@ -670,7 +670,7 @@ Moved from <em>Non Relativistic Approximation</em>. The section's one complete t
 </tr>
 <tr>
 <td>does it tensor?</td>
-<td>yes: $\mathrm{ad}\sum_k\tilde\Pi_k$ is complex-linear with integral eigenvalues in $\{-n,\dots,n\}$; the $\mathbb{Z}_2$ grading is their parity</td>
+<td>yes: $\mathrm{ad}\sum_k\tilde\Pi_{\mathrm{id},k}$ is complex-linear with integral eigenvalues in $\{-n,\dots,n\}$; the $\mathbb{Z}_2$ grading is their parity</td>
 <td>no: $\sigma_1$ does not descend</td>
 </tr>
 <tr>

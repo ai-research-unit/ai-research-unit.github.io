@@ -509,17 +509,17 @@ $$</p>
 <h2 id="10-case-9-the-peirce-frame-where-the-half-angle-is-diagonal">10. Case 9: The Peirce Frame, Where the Half Angle Is Diagonal</h2>
 <p><strong>The frame.</strong> With the root $\vec\Xi=i\vec e_z$ and $\vec\Xi^{2}=e_t$, the Peirce frame is</p>
 <p>$$
-\tilde\Pi_+=\tfrac12\bigl(e_t+i\vec e_z\bigr),\quad
-\vec\Upsilon_+=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),\quad
-\vec\Upsilon_-=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\quad
-\tilde\Pi_-=\tfrac12\bigl(e_t-i\vec e_z\bigr).
+\tilde\Pi_{\mathrm{id},+}=\tfrac12\bigl(e_t+i\vec e_z\bigr),\quad
+\vec\Pi_{\mathrm{nil},+}=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),\quad
+\vec\Pi_{\mathrm{nil},-}=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\quad
+\tilde\Pi_{\mathrm{id},-}=\tfrac12\bigl(e_t-i\vec e_z\bigr).
 $$</p>
 <p>Each frame vector is a null element, $N=0$, and each is an eigenvector of the left multiplication by $\vec e_z$:</p>
 <p>$$
-L_{\vec e_z}\tilde\Pi_+=-i\tilde\Pi_+,\qquad
-L_{\vec e_z}\vec\Upsilon_+=+i\vec\Upsilon_+,\qquad
-L_{\vec e_z}\vec\Upsilon_-=-i\vec\Upsilon_-,\qquad
-L_{\vec e_z}\tilde\Pi_-=+i\tilde\Pi_-,
+L_{\vec e_z}\tilde\Pi_{\mathrm{id},+}=-i\tilde\Pi_{\mathrm{id},+},\qquad
+L_{\vec e_z}\vec\Pi_{\mathrm{nil},+}=+i\vec\Pi_{\mathrm{nil},+},\qquad
+L_{\vec e_z}\vec\Pi_{\mathrm{nil},-}=-i\vec\Pi_{\mathrm{nil},-},\qquad
+L_{\vec e_z}\tilde\Pi_{\mathrm{id},-}=+i\tilde\Pi_{\mathrm{id},-},
 $$</p>
 <p>all exact.</p>
 <p><strong>The left copy.</strong> Hence for the rotor $\tilde u=c\,e_t+s\,\vec e_z$,</p>
@@ -543,7 +543,7 @@ c-isn_z&-s\,(n_y+in_x)\\
 s\,(n_y-in_x)&c+isn_z
 \end{pmatrix},
 $$</p>
-<p>unitary of determinant one to $1.1\times10^{-16}$, and for $\vec n=\vec e_z$ the left copy on the ideal $S_+=\mathbb{B}\tilde\Pi_+$ is the scalar $c-is$: the eigenvalue $-i$ of $L_{\vec e_z}$ on $\tilde\Pi_+$ is the entry $-i$ of $M_2(\vec e_z)$. <strong>That is the isomorphism</strong> between the unit elements and $\mathrm{SU}(2)$, read as the left copy on one ideal: the same three parameters, the same product, the same unimodularity. And it is why the left copy can be faithful while the conjugation is two-to-one — the ideal is a half of the algebra, and the phase that the conjugation discards is exactly the phase that acts on the ideal.</p>
+<p>unitary of determinant one to $1.1\times10^{-16}$, and for $\vec n=\vec e_z$ the left copy on the ideal $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ is the scalar $c-is$: the eigenvalue $-i$ of $L_{\vec e_z}$ on $\tilde\Pi_{\mathrm{id},+}$ is the entry $-i$ of $M_2(\vec e_z)$. <strong>That is the isomorphism</strong> between the unit elements and $\mathrm{SU}(2)$, read as the left copy on one ideal: the same three parameters, the same product, the same unimodularity. And it is why the left copy can be faithful while the conjugation is two-to-one — the ideal is a half of the algebra, and the phase that the conjugation discards is exactly the phase that acts on the ideal.</p>
 <h2 id="11-case-10-particular-biquaternions">11. Case 10: Particular Biquaternions</h2>
 <p>Take the rotor at $\varphi=\tfrac{\pi}{3}$ about $\vec n=(1,1,0)/\sqrt2$,</p>
 <p>$$
@@ -589,13 +589,13 @@ $$</p>
 <td>$i\,(0,\;0.75,\;0.25,\;-0.6124)$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_+$</td>
+<td>$\tilde\Pi_{\mathrm{id},+}$</td>
 <td>$(0.4330,\;0.1768+0.1768i,\;0.1768-0.1768i,\;0.4330i)$</td>
 <td>$(0.4330,\;0.1768-0.1768i,\;0.1768+0.1768i,\;0.4330i)$</td>
 <td>$(0.5,\;0.3062i,\;-0.3062i,\;0.25i)$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_-$</td>
+<td>$\tilde\Pi_{\mathrm{id},-}$</td>
 <td>$(0.4330,\;0.1768-0.1768i,\;0.1768+0.1768i,\;-0.4330i)$</td>
 <td>$(0.4330,\;0.1768+0.1768i,\;0.1768-0.1768i,\;-0.4330i)$</td>
 <td>$(0.5,\;-0.3062i,\;0.3062i,\;-0.25i)$</td>
@@ -617,14 +617,14 @@ $$</p>
 <p><strong>Reading the rows.</strong></p>
 <p><em>The unit is fixed by the conjugation and carried by the multiplications.</em> Row one: $\mathrm{Ad}_{\tilde u}e_t=e_t$ exactly, for every element; and $L_{\tilde u}e_t=\tilde u$ and $R_{\tilde u}e_t=\tilde u$, the element itself in both cases. The first column of the left display is the element.</p>
 <p><em>The two sides differ by the axial sign, and only where the vector is not parallel to the axis.</em> Rows two and three: $\vec e_x$ goes to the same coefficients on both sides except in the last slot, $(\mp0.3536)$, which is the image of the axial term $s\,\vec n\times\vec e_x$. Last row: $\vec e_x+\vec e_y$ is parallel to $\vec n$, the cross product vanishes, and the two sides agree exactly. <strong>The whole difference between the left and the right copy of a rotor is the cross product with the axis</strong>, which is the coefficient of $\mathsf A$.</p>
-<p><em>The ideal survives the left copy; the idempotent does not.</em> Rows four and five: $L_{\tilde u}\tilde\Pi_+$ stays in the left ideal, $(\tilde u\tilde\Pi_+)\tilde\Pi_+=\tilde u\tilde\Pi_+$ to $0$ exactly, but</p>
+<p><em>The ideal survives the left copy; the idempotent does not.</em> Rows four and five: $L_{\tilde u}\tilde\Pi_{\mathrm{id},+}$ stays in the left ideal, $(\tilde u\tilde\Pi_{\mathrm{id},+})\tilde\Pi_{\mathrm{id},+}=\tilde u\tilde\Pi_{\mathrm{id},+}$ to $0$ exactly, but</p>
 <p>$$
-\bigl(\tilde u\tilde\Pi_+\bigr)^{2}-\tilde u\tilde\Pi_+\ \text{has norm}\ 0.0580\ne0,
+\bigl(\tilde u\tilde\Pi_{\mathrm{id},+}\bigr)^{2}-\tilde u\tilde\Pi_{\mathrm{id},+}\ \text{has norm}\ 0.0580\ne0,
 $$</p>
 <p>so the image of a projector is not a projector. The left copy preserves the linear structure of the ideal and destroys the multiplicative structure inside it.</p>
 <p><em>The conjugation carries an idempotent to an idempotent.</em> Row four, last column:</p>
 <p>$$
-\mathrm{Ad}_{\tilde u}\tilde\Pi_+=\tfrac12\bigl(e_t+iR\vec e_z\bigr),\qquad R\vec e_z=(0.6124,\,-0.6124,\,0.5),
+\mathrm{Ad}_{\tilde u}\tilde\Pi_{\mathrm{id},+}=\tfrac12\bigl(e_t+iR\vec e_z\bigr),\qquad R\vec e_z=(0.6124,\,-0.6124,\,0.5),
 $$</p>
 <p>to $3\times10^{-18}$: the projector of the rotated root. Because $\mathrm{Ad}$ is an automorphism, it permutes the idempotents and moves the null cone to itself — the opposite of what the left copy does, and the two statements are about the same element.</p>
 <p><em>The null elements.</em> Row six: $e_t+i\vec e_z$ has $N=0$. Its image under $L$ has $N=0$ as well, since $N(\tilde u\tilde Q)=N(\tilde u)N(\tilde Q)$ and $N(\tilde u)=1$; its image under $\mathrm{Ad}$ has $N=0$ too, since $\mathrm{Ad}$ preserves the product. The null cone is stable under all three, and the reason differs: multiplicativity of $N$ for the one-sided copies, automorphism for the conjugation. In the $\mathrm{SU}(3)$ note the same cone was <em>not</em> stable, and that is the sharpest contrast between the two groups.</p>
@@ -862,11 +862,11 @@ $$</p>
 <td>$1.1\times10^{-16}$</td>
 </tr>
 <tr>
-<td>$(L\tilde\Pi_+)\tilde\Pi_+=L\tilde\Pi_+$; $(\tilde u\tilde\Pi_+)^{2}\ne\tilde u\tilde\Pi_+$</td>
+<td>$(L\tilde\Pi_{\mathrm{id},+})\tilde\Pi_{\mathrm{id},+}=L\tilde\Pi_{\mathrm{id},+}$; $(\tilde u\tilde\Pi_{\mathrm{id},+})^{2}\ne\tilde u\tilde\Pi_{\mathrm{id},+}$</td>
 <td>$0$; $0.0580$</td>
 </tr>
 <tr>
-<td>$\mathrm{Ad}_{\tilde u}\tilde\Pi_+=\tfrac12(e_t+iR\vec e_z)$</td>
+<td>$\mathrm{Ad}_{\tilde u}\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+iR\vec e_z)$</td>
 <td>$3\times10^{-18}$</td>
 </tr>
 <tr>
@@ -929,7 +929,7 @@ $$</p>
 <td>the $2\times2$ display, $M(e_t)=\mathrm I_2$, $M(\vec e_k)=-i\sigma_k$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm$, $\vec\Upsilon_\pm$</td>
+<td>$\tilde\Pi_{\mathrm{id},\pm}$, $\vec\Pi_{\mathrm{nil},\pm}$</td>
 <td>the Peirce frame of the root $i\vec e_z$</td>
 </tr>
 <tr>

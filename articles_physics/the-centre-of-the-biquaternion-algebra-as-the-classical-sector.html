@@ -221,21 +221,21 @@ by the Gelfand duality that identifies a commutative unital $C^{*}$-algebra with
 <p>If the centre is too small to carry the classical limit, the framework's classical structure must arise somewhere else. The candidates are the maximal commutative subalgebras, and their essential feature is that they are <strong>not canonical</strong>.</p>
 <p>Maximal commutative subalgebras. A subalgebra $\mathbb{A}\subset\mathbb{B}$ is maximal commutative if it is commutative and is not properly contained in a larger commutative subalgebra. Because $\mathbb{B}\cong M_2(\mathbb{C})$ is a factor, every maximal commutative subalgebra is a MASA of a full matrix algebra, and each is isomorphic to $\mathbb{C}^2$ as a complex algebra — concretely, the diagonal matrices with respect to some orthonormal basis,
 $$
-\mathbb{A}_{\vec u}=\mathrm{span}_\mathbb{C}\{\tilde\Pi(\vec u),\ e_t-\tilde\Pi(\vec u)\},
+\mathbb{A}_{\vec u}=\mathrm{span}_\mathbb{C}\{\tilde\Pi_{\mathrm{id}}(\vec u),\ e_t-\tilde\Pi_{\mathrm{id}}(\vec u)\},
 \qquad \vec u\ \text{a unit vector},
 $$
-with $\tilde\Pi(\vec u)$ and $e_t-\tilde\Pi(\vec u)$ the two orthogonal projections along the axis $\vec u$. The projections are idempotent and mutually orthogonal, and their algebra is exactly the algebra of a classical two-valued observable — a classical bit. Two different axes give different MASAs, conjugate under $\mathrm{U}(2)$ but distinct as subalgebras.</p>
-<p>The two projections are the density matrices of the two possible outcomes along the axis, with $2\,\mathrm{Sc}(\tilde\Pi(\vec u))=2\,\mathrm{Sc}(e_t-\tilde\Pi(\vec u))=1$ and $\tilde\Pi(\vec u)\,(e_t-\tilde\Pi(\vec u))=0$; their sum is the unit, $\tilde\Pi(\vec u)+(e_t-\tilde\Pi(\vec u))=e_t$, whose doubled scalar part is $2\,\mathrm{Sc}(e_t)=2$. The family of MASAs is parametrized by the axis modulo its sign, because
+with $\tilde\Pi_{\mathrm{id}}(\vec u)$ and $e_t-\tilde\Pi_{\mathrm{id}}(\vec u)$ the two orthogonal projections along the axis $\vec u$. The projections are idempotent and mutually orthogonal, and their algebra is exactly the algebra of a classical two-valued observable — a classical bit. Two different axes give different MASAs, conjugate under $\mathrm{U}(2)$ but distinct as subalgebras.</p>
+<p>The two projections are the density matrices of the two possible outcomes along the axis, with $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}(\vec u))=2\,\mathrm{Sc}(e_t-\tilde\Pi_{\mathrm{id}}(\vec u))=1$ and $\tilde\Pi_{\mathrm{id}}(\vec u)\,(e_t-\tilde\Pi_{\mathrm{id}}(\vec u))=0$; their sum is the unit, $\tilde\Pi_{\mathrm{id}}(\vec u)+(e_t-\tilde\Pi_{\mathrm{id}}(\vec u))=e_t$, whose doubled scalar part is $2\,\mathrm{Sc}(e_t)=2$. The family of MASAs is parametrized by the axis modulo its sign, because
 $$
-\mathbb{A}_{-\vec u}=\mathrm{span}_\mathbb{C}\bigl\{\tilde\Pi(-\vec u),e_t-\tilde\Pi(-\vec u)\bigr\}
-=\mathrm{span}_\mathbb{C}\bigl\{e_t-\tilde\Pi(\vec u),\tilde\Pi(\vec u)\bigr\}=\mathbb{A}_{\vec u} .
+\mathbb{A}_{-\vec u}=\mathrm{span}_\mathbb{C}\bigl\{\tilde\Pi_{\mathrm{id}}(-\vec u),e_t-\tilde\Pi_{\mathrm{id}}(-\vec u)\bigr\}
+=\mathrm{span}_\mathbb{C}\bigl\{e_t-\tilde\Pi_{\mathrm{id}}(\vec u),\tilde\Pi_{\mathrm{id}}(\vec u)\bigr\}=\mathbb{A}_{\vec u} .
 $$
 The space of contexts is therefore the sphere modulo antipodes, the real projective plane $\mathbb{RP}^2$: every classical bit requires a point of $\mathbb{RP}^2$ to be specified, and no point is preferred. The verification of idempotency, orthogonality, and the intersection property was carried out numerically on the matrix model for two distinct axes.</p>
 <p>The centre is the canonical common part. The intersection of all MASAs is the centre,
 $$
 \bigcap_{\vec u}\mathbb{A}_{\vec u}=Z(\mathbb{B}),
 $$
-because an element commuting with every idempotent $\tilde\Pi(\vec u)$ for every axis $\vec u$ commutes with everything. The centre is therefore the canonical commutative subalgebra common to every MASA, and the only commutative subalgebra that requires no choice to specify; it is not itself maximal, and every MASA beyond it requires the selection of an axis, i.e. of a preferred observable or pointer basis. This is complementarity in algebraic form: the algebra contains many classical bits, but no canonical classical bit.</p>
+because an element commuting with every idempotent $\tilde\Pi_{\mathrm{id}}(\vec u)$ for every axis $\vec u$ commutes with everything. The centre is therefore the canonical commutative subalgebra common to every MASA, and the only commutative subalgebra that requires no choice to specify; it is not itself maximal, and every MASA beyond it requires the selection of an axis, i.e. of a preferred observable or pointer basis. This is complementarity in algebraic form: the algebra contains many classical bits, but no canonical classical bit.</p>
 <p><strong>The classical sector of a context is a MASA.</strong> Relative to a chosen Hermitian observable $\tilde H_\Psi$ with distinct spectral projections, the set of observables compatible with it is its centralizer, which is the MASA generated by its projections. In that context — and only in that context — the theory looks classical: the MASA is commutative, its elements can be simultaneously diagonalized, and it contains idempotents that behave as classical propositions. The classical sector is thus <strong>context-relative</strong>: it is the centralizer $\{\tilde{Q}:[\tilde{Q},\tilde H_\Psi]=0\}$, a subalgebra that depends on which observable defines the context.</p>
 <p>Relation to the quantum–classical divide. The companion article <em>The Quantum–Classical Divide in the Biquaternion Framework</em> treats the divide dynamically and statistically. The algebraic identification supplied here is its structural backdrop: the divide is not a direct-sum decomposition of $\mathbb{B}$ into a quantum part and a classical part, because $\mathbb{B}$ is a factor and admits no such central splitting. It is instead the distinction between the canonical centre — the classical parameters — and the state- or context-dependent MASAs, which supply the classical bits. A theory written over $\mathbb{B}$ has a classical sector at every context, and it has no context-free classical sector beyond the scalars. This is the honest position, and it is the reason the framework cannot manufacture superselection labels out of its own centre.</p>
 <h2 id="what-the-centre-cannot-do">What the Centre Cannot Do</h2>
@@ -385,11 +385,11 @@ the two-real-dimensional subalgebra of complex multiples of the unit; its Hermit
 <td>Inner derivation</td>
 </tr>
 <tr>
-<td>$\mathbb{A}_{\vec u}=\mathrm{span}_\mathbb{C}\{\tilde\Pi(\vec u),e_t-\tilde\Pi(\vec u)\}$</td>
+<td>$\mathbb{A}_{\vec u}=\mathrm{span}_\mathbb{C}\{\tilde\Pi_{\mathrm{id}}(\vec u),e_t-\tilde\Pi_{\mathrm{id}}(\vec u)\}$</td>
 <td>Maximal commutative subalgebra (MASA)</td>
 </tr>
 <tr>
-<td>$\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$</td>
+<td>$\tilde\Pi_{\mathrm{id}}(\vec u)=\tfrac12(e_t+i\vec u)$</td>
 <td>Pure-state idempotent, $|\vec u|=1$</td>
 </tr>
 <tr>
