@@ -6,7 +6,7 @@ This article is the tenth and last of the conventions articles of the mathematic
 
 The letters are fixed with the base. *Algebra and Element Conventions* states the groups, rings and operations, the base and its units, the element and its coefficients, the remarkable subspaces and the conjugations, and leaves the scalars that are not elements to this article. Nothing here is new: the article is a summary, restated where a reader can find it without searching a long article for it, and it adds no glyph.
 
-A convention is not a description, and the mathematical corpus is where the difference shows. Its articles on spectra write $\lambda$ for the eigenvalue, roughly $21\,000$ occurrences against $1\,500$ of $\eta$, and the rule stated here gives $\lambda$ to the wavelength and $\eta$ to the eigenvalue. The rule is the convention the corpus is brought to; the older usage is named rather than hidden, and a reader who moves between a spectral article and this one must read $\lambda$ there as the eigenvalue and here as the wavelength. Nothing in the algebra forces either choice. What is not free is that one letter has one sense in one article.
+A convention is not a description. Nothing in the algebra forces $\theta$ rather than another letter for an angle; what is not free is that one letter has one sense in one article. The corpus is being brought to the rule, so a spectral article that writes $\lambda$ for the eigenvalue, roughly $21\,000$ occurrences against $1\,500$ of $\eta$, is read here as the wavelength, and the older usage is named rather than hidden.
 
 ## The Reserved Letters
 
@@ -18,15 +18,7 @@ A convention is not a description, and the mathematical corpus is where the diff
 
 **An angle is real, and it is written $\theta$.** A rotation enters the algebra as $\exp(i\theta)$, so the $i$ belongs to the exponential and not to the angle. The glyph $\theta$ therefore carries a real number, and a subscript names which angle it is: $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{rat}}$ the rotation angle of an evolution. One glyph, one case, and no second letter spent on the imaginary reading.
 
-**An imaginary angle is written $i\theta$ where it is used.** A boost is the rotation at an imaginary argument: the same $\exp(i\theta)$ at $\theta=i\theta_{\mathrm{rpd}}$ is $\exp(-\theta_{\mathrm{rpd}})$. The $i$ stands at the point of substitution and $\theta_{\mathrm{rpd}}$ stays real and subscripted. A purely imaginary angle is never a glyph of its own; it is $i$ times a real one.
-
-**The circle and the hyperbola are one formula at two arguments.**
-
-$$
-\cos(i\theta)=\cosh\theta,\qquad \sin(i\theta)=i\sinh\theta .
-$$
-
-At the real argument the pair is the rotation and at the imaginary argument the boost. The formula does not change; only the value put in the slot changes.
+**An imaginary angle is written $i\theta$ where it is used.** A boost is the rotation at an imaginary argument: $\exp(i\theta)$ at $\theta=i\theta_{\mathrm{rpd}}$ is $\exp(-\theta_{\mathrm{rpd}})$. The $i$ stands at the point of substitution and $\theta_{\mathrm{rpd}}$ stays real and subscripted. A purely imaginary angle is never a glyph of its own; it is $i$ times a real one, and the rotation and the boost are one formula at two values of the slot.
 
 **The letter carries no second role.** The uses that once shared it have glyphs of their own: the involution, the automorphism and the orbit map are $\mathrm{J}$; the curvature of a connection is $\Omega$; the two-sided operator is $\mathrm{Sd}$; the congruence relation is $\vartheta_{\mathrm{cng}}$; the symplectic potential is $\varpi$; the theta function is $\vartheta_{\mathrm{thf}}$. A subscript on $\theta$ names the angle's own coordinate and does not make the letter an index of another kind: $p_\theta$ and $A_\theta$ are the momentum and the potential along the angular coordinate.
 
@@ -58,7 +50,7 @@ At the real argument the pair is the rotation and at the imaginary argument the 
 
 **The two uppercase Greek letters are the two sectors and nothing else.** The material sector is $\Phi$ and the informational one is $\Psi$: the algebra carries them in $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, an element in $\tilde Q_{\Phi}$ and $\tilde Q_{\Psi}$, and the same two letters label the derivative and any carrier read on one sector.
 
-**The case is the whole difference.** Lowercase $\phi$ and $\psi$ are not sectors and never become one: $\phi$ belongs to a potential, an angle or a map, and $\psi$ to a wavefunction, and neither names a subspace. A display that writes $\phi$ where $\Phi$ is meant has changed the object, and the reader sees it in the case alone.
+**The case is the whole difference, and the lowercase is not allowed.** There is no lowercase form of a sector: $\phi$, $\varphi$ and $\psi$ are forbidden, and a display that writes one of them has spent a glyph the sectors own. The reason is the confusion, not the taste. The shape is the same and the case is the only signal, so a lowercase $\phi$ one character from $\Phi$ is read as a sector by a reader who is scanning a formula, and the same holds for $\psi$ and $\Psi$. The objects that have carried the lowercase — a potential, an angle, a map, a wavefunction, the totient — take a glyph of their own instead: the fallback $\digamma$ with a role label, or a named glyph fixed where it is introduced. A display that writes $\phi$ where $\Phi$ is meant has changed the object and lost the label; one that writes $\phi$ for a potential has crowded the sector vocabulary.
 
 ## Reserved Element Glyphs
 
@@ -94,11 +86,11 @@ At the real argument the pair is the rotation and at the imaginary argument the 
 
 Eight glyphs carry eight roles, and each is spent once. An angle is $\theta$, real, with a subscript naming which angle it is, the $i$ of a rotation sitting in the exponential; a scale is $\varrho$, the positive real factor of a polar decomposition and the amplitude of a wave; a wave number is $\nu=k/2\pi=1/\lambda$, with three to a particle; a wavelength is $\lambda=1/\nu$, with three to a particle; and an eigenvalue is $\eta$, a root of $\eta^{2}-2Q_t\eta+N=0$.
 
-Three more glyphs carry a role each. The scalar imaginary is $i$, and the space index is the dotless $\imath$; the material and informational sectors are the uppercase $\Phi$ and $\Psi$, and lowercase $\phi$ and $\psi$ are not sectors.
+Three more glyphs carry a role each. The scalar imaginary is $i$, and the space index is the dotless $\imath$; the material and informational sectors are the uppercase $\Phi$ and $\Psi$, and the lowercase $\phi$, $\varphi$ and $\psi$ are forbidden.
 
 Every other scalar takes $\digamma$ with a subscript that names its sense. None of the eight carries a second sense, and no other scalar borrows one of them.
 
-The angle is the one letter whose case needs a rule of its own. It is real, and an imaginary angle is written $i\theta$ where it is used, so that the circle and the hyperbola are one formula at two values of the slot. The roles that once shared the letter have glyphs of their own: the involution, the automorphism and the orbit map are $\mathrm{J}$, the curvature is $\Omega$, the two-sided operator is $\mathrm{Sd}$, the congruence is $\vartheta_{\mathrm{cng}}$, the symplectic potential is $\varpi$ and the theta function is $\vartheta_{\mathrm{thf}}$.
+The angle is the one letter whose case needs a rule of its own. It is real, and an imaginary angle is written $i\theta$ where it is used, so that a rotation and a boost are one formula at two values of the slot. The roles that once shared the letter have glyphs of their own: the involution, the automorphism and the orbit map are $\mathrm{J}$, the curvature is $\Omega$, the two-sided operator is $\mathrm{Sd}$, the congruence is $\vartheta_{\mathrm{cng}}$, the symplectic potential is $\varpi$ and the theta function is $\vartheta_{\mathrm{thf}}$.
 
 Three families carry the elements, and each is spent once. The generic element is the Q family, $q$, $Q$, $\breve Q$, $\tilde q$ and $\tilde Q$, with the case and the accent naming the layer and the coefficients carrying the same letter; a root is $Ζ$, split by the case rule into $Ζ$, $Ζ_\pm$, $\tilde\zeta$ and $\tilde{Ζ}$; and the idempotent and the nilpotent are the $\Pi$ family, with $\mathrm{id}$ or $\mathrm{nil}$ as the first word of the subscript and the case naming the layer.
 
@@ -112,7 +104,7 @@ Three families carry the elements, and each is spent once. The generic element i
 | $\lambda$; $\lambda_m$, $\lambda_{\Phi}$, $\lambda_t$ | The wavelength, $\lambda=1/\nu$; the three of a particle; never an eigenvalue or a coupling (§*The Reserved Letters*) |
 | $\eta$; $\eta_\pm$, $\eta_{1,2}$, $\eta_i$ | The eigenvalue, a root of $\eta^{2}-2Q_t\eta+N=0$; never an index and never a scale (§*The Reserved Letters*) |
 | $i$ | The scalar imaginary, $i^{2}=-1$, central in $\mathbb{B}$; the space index is the dotless $\imath$ and the second one $\jmath$ (§*Scalar Imaginary*) |
-| $\Phi$, $\Psi$ | The material and the informational sector — $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$, $\tilde Q_{\Phi}$, $\tilde Q_{\Psi}$; lowercase $\phi$ and $\psi$ are never a sector (§*Sectors*) |
+| $\Phi$, $\Psi$ | The material and the informational sector — $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$, $\tilde Q_{\Phi}$, $\tilde Q_{\Psi}$; no lowercase form exists, and $\phi$, $\varphi$ and $\psi$ are forbidden (§*Sectors*) |
 | $c$, $\tau$, $m$ | Not reserved here: $c$ is a generic constant, $\tau$ a generic parameter, and $m$ a count and the second inertia index of $\mathrm{Cl}_{n,m}$ |
 | $Q$; $\tilde Q$, $\tilde q$, $\breve Q$, $q$ | The generic element, the case and the accent naming the layer; the coefficients are $Q_\mu$ and the pure part $\vec Q$ (§*Generic Elements*) |
 | $Ζ$; $Ζ_\pm$, $\tilde\zeta$, $\tilde{Ζ}$ | A root of the algebra, $\tilde{Ζ}^2=Q_te_t$; the case names the layer; outside the potent family and never a tag (§*Roots*) |

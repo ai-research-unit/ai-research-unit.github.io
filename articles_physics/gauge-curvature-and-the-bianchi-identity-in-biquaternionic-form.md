@@ -242,7 +242,7 @@ The abelian check therefore passes for a reason unrelated to the non-abelian sta
 
 The gauge principle article left open "the sense in which a single biquaternion equation carries" the Bianchi identity, and the covariant-derivative article recorded the negative result that the one-line equation $\tilde\nabla_\Phi\tilde{F}=0$ is the full source-free Maxwell system and not the Bianchi identity. That negative result is confirmed here by recomputation, and the reason is visible.
 
-For the abelian field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H = \vec F = \sum_{\imath\in\{x,y,z\}} F_{\imath} \vec e_{\imath}$, direct computation with the quaternion product gives the exact identities
+For the abelian field-strength biquaternion $\tilde{F} = i\vec E - c\vec B = \vec F = \sum_{\imath\in\{x,y,z\}} F_{\imath} \vec e_{\imath}$, direct computation with the quaternion product gives the exact identities
 
 $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{F}
@@ -321,7 +321,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $D_{\imath} \tilde{Q} = \partial/\partial R_{\imath} \tilde{Q} + i\kappa[\mathcal{A}_{\imath},\tilde{Q}]$ | Adjoint covariant derivative, $[D_{\imath},\tilde{Q}]=D_{\imath} \tilde{Q}$ |
 | $D_{\imath} F_{\imath\jmath} + D_{\imath} F_{\jmath k} + D_{\jmath} F_{k\imath}=0$ | Bianchi identity (cyclic order as shown) |
 | $\varepsilon_{k\imath\jmath\rho}D_{\imath} F_{\imath\jmath}=0$ | Contracted form of the Bianchi identity |
-| $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Abelian field-strength biquaternion, $\vec F=\sum_{\imath\in\{x,y,z\}} F_{\imath}\vec e_{\imath}$ |
+| $\tilde{F}=i\vec E-c\vec B$ | Abelian field-strength biquaternion, $\vec F=\sum_{\imath\in\{x,y,z\}} F_{\imath}\vec e_{\imath}$ |
 | $\mathrm{div}(\vec F),\ \mathrm{curl}\,\vec F$ | Three-dimensional operators on the coefficient triple |
 | $-\tfrac12\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath}\,\mathrm{Tr}(F_{\imath\jmath}F_{\imath\jmath})$ | Gauge-invariant Yang–Mills density (matrix trace) |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading (distinct from the matrix trace) |
@@ -333,7 +333,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 - [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the non-abelian connection, the transformation law, the adjoint curvature, and the compactness gap this article inherits unchanged.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection, the covariant derivative, and the curvature; the source of the remark that the homogeneous equations are the Bianchi identity of the connection.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the abelian field strength, its pure-vector character, and the biquaternion-norm apparatus that the non-abelian extension does not yet reproduce.
-- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the abelian field equation $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ whose homogeneous part is the Bianchi identity.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the abelian field equation $\tilde\nabla_\Phi\tilde{F}=-Z\tilde{J}_{\Phi}$ whose homogeneous part is the Bianchi identity.
 - [Lie Algebras: A General Introduction](../articles_maths/lie-algebras-a-general-introduction.html) — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.
 - [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html) — the two-sided gravitational connection $D_{\imath}\tilde{Q}=\partial/\partial R_{\imath}\,\tilde{Q}+\vec\Gamma_{\imath}\tilde{Q}+\tilde{Q}\vec\Gamma_{\imath}^{*}$, distinct from the one-sided gauge connection of this article.
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html) — the sector basis, the imaginary-scalar/real-vector structure, and the Lie-algebra decomposition on which the gauge algebra rests.

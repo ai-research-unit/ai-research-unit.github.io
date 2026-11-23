@@ -175,12 +175,12 @@ The antisymmetric part of the quaternion product, $\sum_{i<j}(e_i e_j - e_j e_i)
 The field-strength biquaternion of the companion electromagnetic articles is
 
 $$
-\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H = \vec F,
+\tilde{F} = i\vec E - c\vec B = \vec F,
 \qquad \vec F = F_1\vec e_x + F_2\vec e_y + F_3\vec e_z ,
 $$
 
-a pure-vector biquaternion with vanishing scalar part, whose imaginary half carries the electric field and whose real half carries the magnetic field. In the electrostatic limit $\tilde{F} = i\sqrt{\epsilon}\,\vec E$. The conventions and the derivation are those of
-- Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the definition of $\tilde{F}$ and the single field equation $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$.
+a pure-vector biquaternion with vanishing scalar part, whose imaginary half carries the electric field and whose real half carries the magnetic field. In the electrostatic limit $\tilde{F} = i\vec E$. The conventions and the derivation are those of
+- Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the definition of $\tilde{F}$ and the single field equation $\tilde\nabla_\Phi\tilde{F} = -Z\tilde{J}_{\Phi}$.
 
 For the multipole problem it is convenient to work with the real vector $\vec E$ itself, since the medium factors and the factor of $i$ play no role in the non-relativistic statics. The two objects are elements of the same kind: a real spatial vector is an element of the vector part, and the vector part is a faithful copy of $\mathbb{R}^3$ inside $\mathbb{B}_{H}$.
 
@@ -366,7 +366,7 @@ The multipole tower is infinite because the angular structure of a field on the 
 | $\vec\nabla_\Phi = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ | Spatial vector gradient |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian (series convention) |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Four-potential, an element of $\mathbb{B}_{\Phi}$ |
-| $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
+| $\tilde{F} = i\vec E - c\vec B$ | Field-strength biquaternion |
 | $\vec u = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$ | Unit radial quaternion, $\vec u^2 = -e_t$ |
 | $\mathrm{Sc}(\cdot)$ | Scalar (central) part |
 | $Ξ$, $Ξ_{ext}$ | Scalar potential of the source, and an external potential; $Ξ_{mon}, Ξ_{dip}, Ξ_{quad}$ its multipole parts |

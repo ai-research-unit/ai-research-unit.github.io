@@ -7,7 +7,7 @@ Radiation is the part of an electromagnetic field that does not remain attached 
 The biquaternion formulation is a natural language for radiation, for a reason that the companion article *The Field-Strength Biquaternion and Its Invariants* already anticipated. There the field-strength biquaternion
 
 $$
-\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H
+\tilde{F} = i\vec E - c\vec B
 $$
 
 was shown to have a biquaternion norm $\langle\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural}$ whose vanishing is exactly the condition that the field be null: $\vec E\perp\vec B$ and $|\vec E| = c|\vec B|$ pointwise. A null field strength is a **zero divisor** of the algebra $\mathbb{B}$. That null condition is the algebraic mark of a radiation field. The main result of this article is that it is realized, pointwise, by the acceleration part of the Liénard–Wiechert field: the radiation field is precisely the part of $\tilde{F}$ that squares to zero.
@@ -251,7 +251,7 @@ $$
 = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi},
 $$
 
-with the normalization caveat recorded there: the identification of $\vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ with the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ fixes the field-strength normalization once and for all, and that is the definition used here. Differentiating the Liénard–Wiechert potential is the standard computation; in the biquaternion formulation it is a single differentiation rather than four, and the result separates into two terms of very different character:
+with the normalization caveat recorded there: the identification of $\vec F = i\vec E - c\vec B$ with the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ fixes the field-strength normalization once and for all, and that is the definition used here. Differentiating the Liénard–Wiechert potential is the standard computation; in the biquaternion formulation it is a single differentiation rather than four, and the result separates into two terms of very different character:
 
 $$
 \vec E = \vec E_v + \vec E_a, \qquad
@@ -276,9 +276,9 @@ In biquaternion form the field strength splits in the same way,
 $$
 \tilde{F} = \tilde{F}_v + \tilde{F}_a,
 \qquad
-\tilde{F}_v = i\sqrt{\epsilon}\,\vec E_v - \sqrt{\mu}\,\vec H_v,
+\tilde{F}_v = i\vec E_v - c\vec B_v,
 \qquad
-\tilde{F}_a = i\sqrt{\epsilon}\,\vec E_a - \sqrt{\mu}\,\vec H_a ,
+\tilde{F}_a = i\vec E_a - c\vec B_a ,
 $$
 
 with $\vec H_{v,a} = \vec B_{v,a}/\mu$. Both parts are pure-vector biquaternions with vanishing scalar part, like every field strength, and both satisfy $\tilde{F} = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ collectively. The split is not merely a calculational device: as the next two sections show, $\tilde{F}_v$ and $\tilde{F}_a$ have completely different algebraic types.
@@ -560,7 +560,7 @@ The construction is explicit enough that the two downstream exercises are direct
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) subspaces |
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion and scalar subspaces |
 | $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}, \Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, conjugate, d'Alembertian |
-| $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
+| $\tilde{F} = i\vec E - c\vec B$ | Field-strength biquaternion |
 | $\tilde{F}_v, \tilde{F}_a$ | Velocity part and acceleration (radiation) part of the field |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Potential biquaternion (Liénard–Wiechert) |
 | $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$ | Four-current of the potential wave equation |

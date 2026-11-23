@@ -351,7 +351,7 @@ We can now make a precise statement about what the biquaternion framework contai
 
 6. The Dirac equation. The biquaternionic Dirac equation is the equation of motion for a relativistic spin-1/2 field, expressed in terms of a pair of Weyl spinors.
 
-7. Maxwell's equations. The biquaternion framework contains Maxwell's equations in the form $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ (companion article). The coupling of the spinor field to the electromagnetic field — the analogue of the standard minimal coupling $\partial/\partial R_{\imath} \to \partial/\partial R_{\imath} -\frac{2\pi iqA_{\imath}}{h}$ — has a natural biquaternion form, but the precise expression depends on the representation conventions and is not developed in this article.
+7. Maxwell's equations. The biquaternion framework contains Maxwell's equations in the form $\tilde\nabla_\Phi\tilde{F} = -Z\tilde{J}_{\Phi}$ (companion article). The coupling of the spinor field to the electromagnetic field — the analogue of the standard minimal coupling $\partial/\partial R_{\imath} \to \partial/\partial R_{\imath} -\frac{2\pi iqA_{\imath}}{h}$ — has a natural biquaternion form, but the precise expression depends on the representation conventions and is not developed in this article.
 
 ### Does Not Contain
 

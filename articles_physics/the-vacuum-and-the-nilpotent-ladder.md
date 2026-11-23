@@ -165,8 +165,8 @@ and the rungs are not in the stratum. They are Hermitian, idempotent, and of vec
 The null electromagnetic field is the stratum's most direct physical occupant.
 
 $$
-\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H,\qquad
-\tilde F^{2}=\epsilon\bigl(I_1+2icI_2\bigr)e_t,\qquad
+\tilde F=i\vec E-c\vec B,\qquad
+\tilde F^{2}=\bigl(I_1+2icI_2\bigr)e_t,\qquad
 I_1=\vec E^{2}-c^{2}\vec B^{2},\quad I_2=\vec E\cdot\vec B .
 $$
 
@@ -428,7 +428,7 @@ The fourth row is the pure case of the third type. On the other strata a scale m
 The field strength of the corpus is a pure element, so the stratum's test applies to it as it stands.
 
 $$
-\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H,\qquad
+\tilde F=i\vec E-c\vec B,\qquad
 \vec B=\mu\vec H,\qquad
 c=\frac{1}{\sqrt{\epsilon\mu}} .
 $$
@@ -436,14 +436,14 @@ $$
 Its square is one line of algebra and it separates the two classical invariants.
 
 $$
-\tilde F^{2}=\epsilon\bigl(I_1+2icI_2\bigr)e_t,
+\tilde F^{2}=\bigl(I_1+2icI_2\bigr)e_t,
 \qquad
 I_1=\vec E^{2}-c^{2}\vec B^{2},
 \qquad
 I_2=\vec E\cdot\vec B,
 $$
 
-checked over fifty random real fields to $4.0\times10^{-15}$. The computation is the product of two pure vectors: with $\vec V=\sqrt{\epsilon}\vec E$ and $\vec W=\sqrt{\mu}\vec H$ one has $\tilde F=i\vec V-\vec W$ and $\tilde F^{2}=-\vec V^{2}+\vec W^{2}+2i\vec V\cdot\vec W$.
+checked over fifty random real fields to $4.0\times10^{-15}$. The computation is the product of two pure vectors: with $\vec V=\vec E$ and $\vec W=c\vec B$ one has $\tilde F=i\vec V-\vec W$ and $\tilde F^{2}=-\vec V^{2}+\vec W^{2}+2i\vec V\cdot\vec W$.
 
 **The stratum's condition on a real field is therefore the classical nullness condition.**
 
@@ -454,18 +454,18 @@ $$
 \vec E\cdot\vec B=0 .
 $$
 
-Both directions hold and both were checked. One hundred constructed null pairs — equal magnitudes in the units of $c$ and perpendicular halves — gave a vanishing square in all one hundred cases, and since $\epsilon\neq0$ the equation $\tilde F^{2}=0$ is the pair of real equations $I_1=0$ and $I_2=0$, one from each part of the complex number.
+Both directions hold and both were checked. One hundred constructed null pairs — equal magnitudes in the units of $c$ and perpendicular halves — gave a vanishing square in all one hundred cases, and since the two invariants are independent, the equation $\tilde F^{2}=0$ is the pair of real equations $I_1=0$ and $I_2=0$, one from each part of the complex number.
 
 The dictionary is a bijection.
 
 $$
-\vec E=\frac{\operatorname{Im}\tilde F}{\sqrt{\epsilon}},\qquad
-\vec H=-\frac{\operatorname{Re}\tilde F}{\sqrt{\mu}},
+\vec E=\operatorname{Im}\tilde F,\qquad
+\vec H=-\frac{\operatorname{Re}\tilde F}{c\mu},
 $$
 
 so the real null fields and the non-zero elements of the stratum are the same four real data read in two alphabets. **Nothing is lost and nothing is added, and the map is inverted by the same two lines.**
 
-A member, checked. Take $\tilde F=iV(\vec e_x+i\vec e_y)$ with $V>0$ real. Then $\vec E=(V/\sqrt{\epsilon})\vec e_x$ and $\vec B=\sqrt{\mu}V\vec e_y$, the halves are perpendicular, the magnitudes satisfy $c\lvert\vec B\rvert=\lvert\vec E\rvert$ because $c\sqrt{\mu}=1/\sqrt{\epsilon}$, and the square vanishes because $(\vec e_x+i\vec e_y)^{2}=0$.
+A member, checked. Take $\tilde F=iV(\vec e_x+i\vec e_y)$ with $V>0$ real. Then $\vec E=V\vec e_x$ and $\vec B=(V/c)\vec e_y$, the halves are perpendicular, the magnitudes satisfy $c\lvert\vec B\rvert=\lvert\vec E\rvert$ by construction, and the square vanishes because $(\vec e_x+i\vec e_y)^{2}=0$.
 
 The count is the stratum's dimension in the letters of the field. Six real components of $(\vec E,\vec B)$, two real conditions, four left: the amplitude, the direction of propagation which is two angles, and one angle that places the pair inside the transverse plane. That is $1+2+1$, the same count the parametrisation gave.
 
@@ -477,7 +477,7 @@ $$
 \arg\digamma_{\mathrm{scl}}\ \text{is the duality angle}.
 $$
 
-The modulus is the amplitude because the Hermitian norm of the field is proportional to it. For a null field $\lVert\tilde F\rVert^{2}=\epsilon\lvert\vec E\rvert^{2}+\lvert\vec B\rvert^{2}/\mu=2\epsilon\lvert\vec E\rvert^{2}$, so the modulus and the amplitude differ by the fixed factor $\sqrt{2\epsilon}$.
+The modulus is the amplitude because the Hermitian norm of the field is proportional to it. For a null field $\lVert\tilde F\rVert^{2}=\lvert\vec E\rvert^{2}+c^{2}\lvert\vec B\rvert^{2}=2\lvert\vec E\rvert^{2}$, so the modulus and the amplitude differ by the fixed factor $\sqrt{2\epsilon}$.
 
 The phase turns $\vec E$ into $\vec B$ and back.
 
@@ -489,7 +489,7 @@ $$
 
 checked over fifty random null fields and angles to $4.4\times10^{-16}$. The transformation is the duality rotation, it preserves $\lvert\vec E\rvert=c\lvert\vec B\rvert$ and $\vec E\cdot\vec B=0$, and it therefore acts on the stratum as a symmetry of the fibre. The $\mathbb{C}^{\times}$ of the bundle is not an abstract scale: its modulus is an amplitude and its argument is a duality angle, and both are classical operations on a field.
 
-The field straddles the two elementary sectors, which is why the stratum's reading is a field and not a momentum. The real part $-\sqrt{\mu}\vec H$ is anti-Hermitian and the imaginary part $i\sqrt{\epsilon}\vec E$ is Hermitian, so $\tilde F$ lies in neither $\mathbb{B}_{\Phi}$ nor $\mathbb{B}_{\Psi}$. Neither of those sectors contains a non-zero nilpotent, for the same reason in both cases: a real vector part has a positive-definite vector square and an imaginary one has a negative-definite square, and the stratum needs an isotropic one.
+The field straddles the two elementary sectors, which is why the stratum's reading is a field and not a momentum. The real part $-c\vec B$ is anti-Hermitian and the imaginary part $i\vec E$ is Hermitian, so $\tilde F$ lies in neither $\mathbb{B}_{\Phi}$ nor $\mathbb{B}_{\Psi}$. Neither of those sectors contains a non-zero nilpotent, for the same reason in both cases: a real vector part has a positive-definite vector square and an imaginary one has a negative-definite square, and the stratum needs an isotropic one.
 
 ## The Ladder
 
@@ -728,7 +728,7 @@ The boundary. A shear on the algebra is not a physical transformation of a syste
 
 ### I.10.ax — The Null Field Is the Object of the Stratum
 
-Read: $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$, $\tilde F^{2}=\epsilon(I_1+2icI_2)e_t$, and the equivalence $\tilde F^{2}=0\iff\lvert\vec E\rvert=c\lvert\vec B\rvert$, $\vec E\cdot\vec B=0$.
+Read: $\tilde F=i\vec E-c\vec B$, $\tilde F^{2}=(I_1+2icI_2)e_t$, and the equivalence $\tilde F^{2}=0\iff\lvert\vec E\rvert=c\lvert\vec B\rvert$, $\vec E\cdot\vec B=0$.
 
 The field strength is the one object of the corpus that the stratum names directly. It is pure, so the test applies to it without a projection; its square is a single central number; and the vanishing of that number is the classical nullness condition on a real field, in both directions.
 
@@ -850,7 +850,7 @@ The four strata are strata of one algebra and not four algebras. The partition i
 | the Hermitian norm | $1+\theta^{2}\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2}$; an invertible element at every parameter and never a bounded one |
 | no logarithm | $N(e^{X})=e^{2X_t}\neq0$; the stratum is disjoint from the image of the exponential |
 | the products | $\operatorname{Sc}(\vec\Pi_{\mathrm{nil},2}\vec\Pi_{\mathrm{nil}})=-\vec\Pi_{\mathrm{nil},2}\cdot\vec\Pi_{\mathrm{nil}}$, $B^{2}(\vec\Pi_{\mathrm{nil},2}\vec\Pi_{\mathrm{nil}})=-(\vec\Pi_{\mathrm{nil},2}\cdot\vec\Pi_{\mathrm{nil}})^{2}$; the product lies in $\{0\}\cup\Sigma_{01}$ |
-| the null field | $\tilde F^{2}=\epsilon(I_1+2icI_2)e_t$; $\tilde F^{2}=0$ exactly when $\lvert\vec E\rvert=c\lvert\vec B\rvert$ and $\vec E\cdot\vec B=0$ |
+| the null field | $\tilde F^{2}=(I_1+2icI_2)e_t$; $\tilde F^{2}=0$ exactly when $\lvert\vec E\rvert=c\lvert\vec B\rvert$ and $\vec E\cdot\vec B=0$ |
 | the count | six real data minus two conditions; amplitude, direction, polarisation |
 | the scale | modulus is the amplitude; argument is the duality angle $\vec E\mapsto\vec E\cos\omicron_{\mathrm{ang}}-c\vec B\sin\omicron_{\mathrm{ang}}$ |
 | the ladder | $\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}$ nilpotent with $\{\vec\Pi_{\mathrm{nil},x},\vec\Pi_{\mathrm{nil},y}\}=e_t$; rungs $\tilde\Pi_{\mathrm{id},\pm}$ in $\Sigma_{01}$ |

@@ -250,7 +250,7 @@ $$
 with the sign from the two appearances of $A_{\imath}$ in the squared covariant derivative, and adding the field term of the Maxwell article gives the coupled system
 
 $$
-\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_\Phi^{\mathrm{(src)}},
+\tilde\nabla_\Phi\tilde F=-Z\tilde J_\Phi^{\mathrm{(src)}},
 \qquad
 \tilde J_\Phi^{\mathrm{(src)}}\ \propto\ \frac{2\pi ϙ}{h}J ,
 $$

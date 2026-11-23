@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternionic formulation of Maxwell's equations is usually presented as a rewriting: one equation, one field strength, no new physics. The companion article *Maxwell's Equations in the Biquaternionic Formulation* takes that view, and its section on the three-vector form is explicit that the complex three-vector $-i\tilde F = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H$ is the Hodge-dual field strength and not an independent object. The corpus likewise treats magnetic charge as the source half of the dual, and stops at the algebra.
+The biquaternionic formulation of Maxwell's equations is usually presented as a rewriting: one equation, one field strength, no new physics. The companion article *Maxwell's Equations in the Biquaternionic Formulation* takes that view, and its section on the three-vector form is explicit that the complex three-vector $-i\tilde F$ is the Hodge-dual field strength and not an independent object. The corpus likewise treats magnetic charge as the source half of the dual, and stops at the algebra.
 
 A different interpretation is possible. If magnetic charge is not merely admitted but **identified with gravitational mass**, then the complex magnetic field acquires a gravitational half: its potential part is a gravitational field and its solenoidal part is the magnetic field. The combined complex field then couples to both electric and gravitational charge, and the algebra of the dual field becomes a candidate language for a unified electro-gravimagnetic dynamics, with laws modelled on Newton's.
 
@@ -24,6 +24,8 @@ $$
 
 The programme writes the same field as the dual $-i\tilde F = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H$; the two differ by the central factor $-i$, and no separate symbol is used for the dual.
 
+**One normalisation, stated once.** The programme's field absorbs the square root of the permittivity, and that absorption is what makes its square an energy density. The corpus's own field strength in the other articles is the programme's divided by the square root of the permittivity, a constant factor in a homogeneous medium that carries no physics. This article keeps the programme's normalisation throughout, because every formula it reports — the combined charge and current, the stress tensors, the momentum densities, the wave table — is stated in it, and rewriting them would report a different system from the source's. A reader who moves between this article and the Maxwell article should carry that one constant with him.
+
 The symmetrized Maxwell system for this object is one complex equation and one complex scalar equation,
 
 $$
@@ -34,7 +36,7 @@ $$
 \vec J = \sqrt{\mu}\,\vec j_E - i\sqrt{\epsilon}\,\vec j_H\;}
 $$
 
-Here $\rho_E = \epsilon\,\mathrm{div}\,\vec E$ and $\rho_H = -\mu\,\mathrm{div}\,\vec H$ are the electric and magnetic charge densities, and $\vec j_E$, $\vec j_H$ the corresponding currents. This is the corpus's Maxwell content in the source's sign convention: the corpus writes $\tilde\nabla_\Phi\tilde F = -\sqrt{\mu}\,\tilde J_{\Phi}$, and the present equation is the same pair with the combined current $\vec J$ and the source's overall sign. The two conventions must not be mixed.
+Here $\rho_E = \epsilon\,\mathrm{div}\,\vec E$ and $\rho_H = -\mu\,\mathrm{div}\,\vec H$ are the electric and magnetic charge densities, and $\vec j_E$, $\vec j_H$ the corresponding currents. This is the corpus's Maxwell content in the source's sign convention: the corpus writes $\tilde\nabla_\Phi\tilde F = -Z\,\tilde J_{\Phi}$ with $Z=\sqrt{\mu/\epsilon}$ the impedance of the medium, and the present equation is the same pair in the programme's normalisation, with the combined current $\vec J$ and the source's overall sign. The two conventions must not be mixed.
 
 The energy density and the energy flux are read off $\tilde F$ directly,
 
@@ -279,10 +281,10 @@ $$
 
 which is the pair of the first section with $\mathrm{grad}\,a$ added to the current and $-\partial/\partial \tau a$ added to the charge, and which reduces to that pair precisely when $a = 0$ and the system is closed. Those two additions are the only two places the complex-gradient structure can put a scalar, so the modification is forced once $a$ is admitted: there is no third term to choose.
 
-**The integrability interpretation.** In the corpus's language the ordinary conservation law is the integrability condition of the sourced Maxwell equation. Applying $\mathrm{Sc}\,(\tilde\nabla_\Phi)^{\natural}$ to $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ annihilates the left side, because $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ is the scalar d'Alembertian and $\tilde{F}$ has no scalar part; what survives is $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$. With the scalar part $ia$ retained in $\tilde F_a$, the same calculation gives
+**The integrability interpretation.** In the corpus's language the ordinary conservation law is the integrability condition of the sourced Maxwell equation. Applying $\mathrm{Sc}\,(\tilde\nabla_\Phi)^{\natural}$ to the corpus's $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$ annihilates the left side, because $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ is the scalar d'Alembertian and $\tilde{F}$ has no scalar part; what survives is $Z\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$. With the scalar part $ia$ retained in $\tilde F_a$, the same calculation gives
 
 $$
-\boxed{\;\sqrt{\mu}\,\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = -\,\Box_\Phi\,(i a)
+\boxed{\;Z\,\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = -\,\Box_\Phi\,(i a)
 \qquad\Longleftrightarrow\qquad
 \Box_\Phi\,a \;\propto\; M\;}
 $$

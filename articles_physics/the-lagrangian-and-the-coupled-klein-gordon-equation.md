@@ -11,11 +11,11 @@ S\bigl[\tilde\Xi,\tilde\Xi^{*},\tilde A_\Phi\bigr]
 =\int\mathrm{d}^{4}x\;\Bigl\{
 \mathrm{Sc}\sum_{\imath}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi\Bigr]
 -4\pi^{2}\nu_m^{2}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]
-+\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde F\tilde F\bigr]
++\tfrac{\epsilon}{2}\,\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde F\tilde F\bigr]
 \Bigr\},
 $$
 
-with $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$, $\tilde F=\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\big)$, and the sum over the four slots carrying the metric signs of the corpus's convention. The first two terms are the matter action; the third is the Maxwell article's field term. The coupling is not a separate term: it is inside the covariant derivative, and that placement is the article's first structural point.
+with $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$, $\tilde F=c\,\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\big)$, and the sum over the four slots carrying the metric signs of the corpus's convention. The first two terms are the matter action; the third is the Maxwell article's field term. The coupling is not a separate term: it is inside the covariant derivative, and that placement is the article's first structural point.
 
 **Four results.**
 
@@ -25,13 +25,13 @@ with $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iϙ}{
 
 *Third, the current lies entirely inside the algebra.* The free Klein–Gordon article's current is a bilinear of the field with its own Hermitian conjugate, and the coupling does not change its character: $\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi$ is one element times one element, and the current is its scalar part made real. There is no adjoint row, no $\gamma$-matrix insertion, and no bilinear that has to be repaired. This is the sharpest structural difference between the scalar case and the spinor case, where the Lagrangian article had to keep the naive bilinear and the polar article had to read it with a frame.
 
-*Fourth, the field term is unproblematic, unlike the vector case.* The Maxwell term $\tfrac12\mathrm{Re\,Sc}(\tilde F\tilde F)$ is invariant under the central phase because the *connection* is real: the field strength is a pure vector with real coefficients on the material sector, and the phase never reaches it. The coupled Proca article records the opposite situation, where the potential is complex and the field strength is half of a complex bivector, and where the invariant pairing's normalisation is open. Here nothing is open about the field term, and the reason is that the scalar's charge is carried by the field and not by the connection.
+*Fourth, the field term is unproblematic, unlike the vector case.* The Maxwell term $\tfrac{\epsilon}{2}\mathrm{Re\,Sc}(\tilde F\tilde F)$ is invariant under the central phase because the *connection* is real: the field strength is a pure vector with real coefficients on the material sector, and the phase never reaches it. The coupled Proca article records the opposite situation, where the potential is complex and the field strength is half of a complex bivector, and where the invariant pairing's normalisation is open. Here nothing is open about the field term, and the reason is that the scalar's charge is carried by the field and not by the connection.
 
 **What is not claimed.** No new solution, no new prediction. The action is the standard scalar-electrodynamics action; the algebra's contribution is that the coupling is one derivative, that the current and the source are one object, and that the two equations' consistency is one line.
 
 ## Conventions
 
-**The conventions are the free companion's, restated here for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $\mathbb{B}_\Phi$ is the anti-Hermitian sector of the connection and $\mathbb{B}_\Psi$ the Hermitian sector of the potentials. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ with $A_{\imath}$ the real components of $\tilde A_\Phi$ and $ϙ$ the charge of the field, fixed once here and never re-chosen. The field strength is $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$, the pure-vector part of the conjugate gradient. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the measure is $\mathrm{d}^4x=\mathrm{d}r'_t\,\mathrm{d}^3x$, the mass is $\nu_m=\frac{mc}{h}$, and the field term's normalisation $\sqrt{\mu}$ is the Maxwell article's and is not fixed again.
+**The conventions are the free companion's, restated here for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $\mathbb{B}_\Phi$ is the anti-Hermitian sector of the connection and $\mathbb{B}_\Psi$ the Hermitian sector of the potentials. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ with $A_{\imath}$ the real components of $\tilde A_\Phi$ and $ϙ$ the charge of the field, fixed once here and never re-chosen. The field strength is $\tilde F=c\,\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$ — the vector part of the conjugate gradient times the speed, in every medium — and the pure-vector part of the conjugate gradient. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the measure is $\mathrm{d}^4x=\mathrm{d}r'_t\,\mathrm{d}^3x$, the mass is $\nu_m=\frac{mc}{h}$, and the field term's normalisation $\epsilon$ is the Maxwell article's and is not fixed again.
 
 ## The Action in Element Form
 
@@ -53,7 +53,7 @@ exactly, because $Y^{*}Y=\mathrm{nat}(\bar Y)Y$ has scalar part $\sum_{\imath}\l
 
 **The mass term is real.** $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\sum_{\imath}\lvert\Xi_{\imath}\rvert^{2}$, the same computation with no derivative, so the mass term is real and positive for a nonzero field. The free companion's remark that the mass term's sign is fixed by the dispersion relation applies unchanged.
 
-**The field term.** $\tfrac12\mathrm{Re\,Sc}(\tilde F\tilde F)$ is the Maxwell article's density; for a material field strength it is $\tfrac12(\epsilon\vec E^{2}-\vec B^{2}/\mu)$ and it is real. Its invariance under the central phase is trivial here: $\tilde F$ is built from the connection alone, the connection is real, and the phase is the field's. The article states this explicitly because the coupled Proca article's field term is not in this position, and the contrast is the difference between a charge carried by the field and a charge carried by the potential.
+**The field term.** $\tfrac{\epsilon}{2}\mathrm{Re\,Sc}(\tilde F\tilde F)$ is the Maxwell article's density; it is $\tfrac12(\epsilon\vec E^{2}-\vec B^{2}/\mu)$ and it is real. Its invariance under the central phase is trivial here: $\tilde F$ is built from the connection alone, the connection is real, and the phase is the field's. The article states this explicitly because the coupled Proca article's field term is not in this position, and the contrast is the difference between a charge carried by the field and a charge carried by the potential.
 
 **The pairing.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, the free companion's choice, and the reason is the free companion's: $\mathrm{Sc}(A^{\natural}A)=\sum_{\imath} a_{\imath}^{2}$ for complex coefficients is not real and does not give a real action, so the quaternionic pairing is unavailable. The polar companion uses the same pairing.
 
@@ -100,10 +100,10 @@ $$
 
 with the sign from the two appearances of $A_{\imath}$ in the squared covariant derivative and the factor from $\partial/\partial A_{\imath}$ of a square. The object $J_{\imath}$ is real by construction, because it is twice the real part of a complex number, and it is the same current the element companion defines up to the constant $1/(2\nu_m)$: the companion's normalisation is chosen to match the free article's density and is a convention, the object is not.
 
-**The connection's equation.** Adding the field term and varying it in the standard way — $\delta\tilde F=\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\delta\tilde A_\Phi\big)$ and one integration by parts — gives
+**The connection's equation.** Adding the field term and varying it in the standard way — $\delta\tilde F=c\,\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\delta\tilde A_\Phi\big)$ and one integration by parts — gives
 
 $$
-\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_\Phi^{\mathrm{(src)}},
+\tilde\nabla_\Phi\tilde F=-Z\,\tilde J_\Phi^{\mathrm{(src)}},
 \qquad
 \tilde J_\Phi^{\mathrm{(src)}}\ \propto\ \frac{2\pi ϙ}{h}J ,
 $$
@@ -214,7 +214,7 @@ $$
 S=\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\sum_{\imath}\bigl[(\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi\bigr]-4\pi^{2}\nu_m^{2}\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]+\tfrac12\mathrm{Re\,Sc}\bigl[\tilde F\tilde F\bigr]\Bigr\},
 $$
 
-with the coupling inside the derivative and not as a separate term. Varying the field gives $\bigl(\Box_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2}\bigr)\tilde\Xi=0$ — exactly for a magnetic connection and in the free limit, and up to the temporal slot's cross term for an electric one, the bookkeeping of §*The Variation: In the Field* and one of the article's open questions — varying the connection gives $\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\tilde J_\Phi^{\mathrm{(src)}}$ with the matter current as the source; and the two are consistent because the matter current is conserved,
+with the coupling inside the derivative and not as a separate term. Varying the field gives $\bigl(\Box_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2}\bigr)\tilde\Xi=0$ — exactly for a magnetic connection and in the free limit, and up to the temporal slot's cross term for an electric one, the bookkeeping of §*The Variation: In the Field* and one of the article's open questions — varying the connection gives $\tilde\nabla_\Phi\tilde F=-Z\,\tilde J_\Phi^{\mathrm{(src)}}$ with the matter current as the source; and the two are consistent because the matter current is conserved,
 
 $$
 \partial_{\imath} J_{\imath}=-2\,\mathrm{Im}\,\mathrm{Sc}\Bigl[\tilde\Xi^{*}\bigl(\Box_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2}\bigr)\tilde\Xi\Bigr]=0
@@ -235,7 +235,7 @@ with $J_{\imath}=2\mathrm{Re\,Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},
 | $ϙ$ | The coupling |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | The covariant derivative, central per slot |
 | $\Box_{\mathrm{gco},\Phi}=\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}$ | The covariant d'Alembertian |
-| $\tilde F=\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\big)$ | The field strength |
+| $\tilde F=c\,\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\big)$ | The field strength |
 | $S_{\mathrm{m}}$, $\mathcal L$ | The matter action; its density |
 | $J_{\imath}=2\mathrm{Re\,Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi\bigr]$ | The charge current; the Noether charge; the source |
 | $\tilde J_\Phi^{\mathrm{(src)}}$ | The source of the connection's equation |

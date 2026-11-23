@@ -298,7 +298,7 @@ For radiation the angular momentum is carried jointly by the multipole order and
 The resolution of the apparent paradox — that the quadrupole is not an algebra element yet its field is biquaternion-valued — is the separation of two spaces. At each point of space–time the field strength takes a value in the algebra,
 
 $$
-\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = i\sqrt{\epsilon}\,\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) - \sqrt{\mu}\,\vec H(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) \in \mathbb{B}_{V} ,
+\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = i\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) - c\vec B(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) \in \mathbb{B}_{V} ,
 $$
 
 a pure-vector biquaternion, and the **value** is an element of the six-real-dimensional vector part, which as a rotation module is $D^{(1)}$. The **angular content** of the field, however, is a property of the function $\tilde{F}(\cdot,r'_t)$, living in the infinite-dimensional space of functions on the sphere, and it is that space which contains the $D^{(2)}$ of the quadrupole. The quadrupole field is a vector-valued function whose components depend on the angles through degree-two harmonics; the value at a point is spin one, while the angular map is spin two. There is no contradiction, because the two belong to different spaces: the value algebra is finite, the function space is not.
@@ -312,9 +312,9 @@ Two algebraic decompositions of $\tilde{F}$ organise the multipole series, and b
 The **Hermitian decomposition** separates the electric and magnetic halves,
 
 $$
-\tfrac{1}{2}\left(\tilde{F}+\tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\vec E\in\mathbb{B}_{\Psi} ,
+\tfrac{1}{2}\left(\tilde{F}+\tilde{F}^{*}\right) = i\vec E\in\mathbb{B}_{\Psi} ,
 \qquad
-\tfrac{1}{2}\left(\tilde{F}-\tilde{F}^{*}\right) = -\sqrt{\mu}\,\vec H\in\mathbb{B}_{\Phi} .
+\tfrac{1}{2}\left(\tilde{F}-\tilde{F}^{*}\right) = -c\vec B\in\mathbb{B}_{\Phi} .
 $$
 
 The electric and magnetic quadrupole **fields** are the two summands. For a static source the correspondence with the quadrupole types is exact — a static charge distribution gives a purely Hermitian field strength, so the electric quadrupole field is Hermitian, and a stationary current gives a purely anti-Hermitian one, so the magnetic quadrupole field is anti-Hermitian. A radiating quadrupole of either type has both a Hermitian and an anti-Hermitian part. A boost does not preserve this split: it mixes the electric and magnetic fields. The same boost mixes the multipole types, and that is a statement about parity rather than about the two fields: $E_2$ and $\mathsf{M}_2$ have opposite parity, and a boost does not preserve parity.
@@ -322,16 +322,16 @@ The electric and magnetic quadrupole **fields** are the two summands. For a stat
 The **self-dual decomposition** combines the two halves into the two chiralities,
 
 $$
-\tilde{F} = i\sqrt{\epsilon}\,\vec N ,
+\tilde{F} = i\vec N ,
 \qquad
-\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec N^* ,
+\tilde{F}^{*} = i\vec N^* ,
 \qquad
 \vec N = \vec E+ic\vec B ,
 \qquad
 \vec N^* = \vec E-ic\vec B ,
 $$
 
-with $\vec N$ the self-dual and $\vec N^*$ the anti-self-dual combination; for the real field the dagger produces the second from the first, since $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec E+\sqrt{\mu}\,\vec H = i\sqrt{\epsilon}\,\vec N^*$. The self-dual half transforms independently under the Lorentz group, in one of its two complex three-dimensional representations; this is the object that a boost rotates as a whole, and the two chiral halves it defines are the two helicities of the radiation. The decomposition of the full multipole series along these two halves is the general problem of higher multipoles.
+with $\vec N$ the self-dual and $\vec N^*$ the anti-self-dual combination; for the real field the dagger produces the second from the first, since $\tilde{F}^{*} = i\vec E+c\vec B = i\vec N^*$. The self-dual half transforms independently under the Lorentz group, in one of its two complex three-dimensional representations; this is the object that a boost rotates as a whole, and the two chiral halves it defines are the two helicities of the radiation. The decomposition of the full multipole series along these two halves is the general problem of higher multipoles.
 
 ### The Radiation Field as a Zero Divisor
 
@@ -387,9 +387,9 @@ The quadrupole moment is not an algebra element: it is a rank-two tensor, outsid
 | $\tilde\nabla_\Phi = e_t\partial/\partial R_t+\vec\nabla_\Phi$ | Biquaternionic gradient |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian (series convention) |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t+\vec A$ | Four-potential, an element of $\mathbb{B}_{\Phi}$ |
-| $\tilde{F} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
-| $\vec N = \vec E+ic\vec B$ | Riemann–Silberstein vector, $\tilde{F} = i\sqrt{\epsilon}\,\vec N$ |
-| $\vec N^* = \vec E-ic\vec B$ | Anti-self-dual combination, $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec N^*$ for the real field |
+| $\tilde{F} = i\vec E-c\vec B$ | Field-strength biquaternion (pure vector) |
+| $\vec N = \vec E+ic\vec B$ | Riemann–Silberstein vector, $\tilde{F} = i\vec N$ |
+| $\vec N^* = \vec E-ic\vec B$ | Anti-self-dual combination, $\tilde{F}^{*} = i\vec N^*$ for the real field |
 | $\rho$, $\vec J$ | Charge and current densities |
 | $ϙ$, $\vec p$, $\vec m$ | Monopole, dipole and magnetic dipole moments |
 | $D_{ij} = \int\rho\,x_ix_j\,d^3r$ | Second moment of the charge |

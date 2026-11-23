@@ -31,7 +31,7 @@ So the two-form's six real components are exactly the six real numbers an observ
 The bivector space is the vector part of $\mathbb{B}$: the six-dimensional real space spanned by the products $\vec e_{\imath}\vec e_\chi$, equivalently the scalar-free part of the algebra, equivalently the Lorentz Lie algebra itself. The corpus's field-strength biquaternion
 
 $$
-\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H
+\tilde F=i\vec E-c\vec B
 $$
 
 is an element of that space, and its components are the components of $F$.
@@ -136,7 +136,7 @@ That is the precise content of "the field strength is the sum of two self-dual h
 $$
 \vec N=\vec E+ic\vec B,
 \qquad
-\tilde F=i\sqrt{\epsilon}\,\vec N .
+\tilde F=i\vec N .
 $$
 
 The vector is complex, its real part is the electric field, and its imaginary part is the magnetic induction in units of $c$. So the six real components are packed into three complex ones.
@@ -320,7 +320,7 @@ A field strength is a two-form, hence an element of the Lorentz Lie algebra, wit
 | $\star$ | the Hodge dual, $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$, $\star^{2}=-1$ |
 | $\mathcal{F}_{\pm}$ | the self-dual and anti-self-dual halves |
 | $\vec N=\vec E+ic\vec B$ | the Riemann–Silberstein vector |
-| $\tilde F=i\sqrt{\epsilon}\,\vec N$ | the field-strength biquaternion |
+| $\tilde F=i\vec N$ | the field-strength biquaternion |
 | $\mathrm{Ad}_{\tilde U}$ | the adjoint action, the one the field obeys |
 
 ## Further Reading

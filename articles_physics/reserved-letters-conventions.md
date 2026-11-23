@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This article is the tenth and last of the conventions articles of the physics corpus. It gathers the glyphs that the corpus spends once — eleven scalar letters and three element families — together with the glyph that every other scalar takes, so that a reader who meets a scalar or an element anywhere in the series finds the rule in one place. Five of them were fixed in the first statement of the rule and are repeated here unchanged: the angle, the scale, the wave number, the wavelength and the eigenvalue. Six were added when the same rule was read on the glyphs that a reader meets most often and least uniformly: the scalar imaginary, the speed of light, the two sector letters, the proper time and the mass. The three element families are reserved too, and they are not new: *Algebra and Element Conventions* fixes $Q$ as the only generic letter, and *Special Element Conventions* fixes $Ζ$ for the roots and $\Pi$ for the idempotent and the nilpotent.
+This article is the tenth and last of the conventions articles of the physics corpus. It gathers the glyphs that the corpus spends once — eleven scalar letters and four element families — together with the glyph that every other scalar takes, so that a reader who meets a scalar or an element anywhere in the series finds the rule in one place. Five of them were fixed in the first statement of the rule and are repeated here unchanged: the angle, the scale, the wave number, the wavelength and the eigenvalue. Six were added when the same rule was read on the glyphs that a reader meets most often and least uniformly: the scalar imaginary, the speed of light, the two sector letters, the proper time and the mass. The element families are reserved too, and they are not new: *Algebra and Element Conventions* fixes $Q$ as the only generic letter and $\xi$ as the only field, and *Special Element Conventions* fixes $Ζ$ for the roots and $\Pi$ for the idempotent and the nilpotent.
 
 The letters are fixed with the base. *Algebra and Element Conventions* states the algebra and its basis, the units, the element and its coefficients, the remarkable subspaces and the conjugations, and leaves the scalars that are not elements to this article. Nothing here is new: the article is a summary, restated where a reader can find it without searching a long article for it, and it adds no glyph.
 
-A rule stated in one place invites the objection that it is a preference and not a fact, and for the choice of the glyph the objection holds. Nothing in the algebra forces $\theta$ rather than another letter for an angle. What is not free is the consistency the rule buys, and the consistency has two consequences a reader can check. An angle carries a real number in every article, so a rotation and a boost are one formula at two arguments, and a reader who meets $i\theta$ knows that the $i$ belongs to the exponential and the $\theta$ is real. And one letter per sense means that a glyph read as an angle in one article is an angle in every article, which is what makes a display portable between the articles of the series.
+A convention is not a description. Nothing in the algebra forces $\theta$ rather than another letter for an angle; what is not free is that one letter has one sense in one article, which is what makes a display portable between the articles of the series. Two consequences a reader can check: an angle is real in every article, so a reader who meets $i\theta$ knows the $i$ belongs to the exponential; and a glyph read as an angle in one article is an angle in every article.
 
 ## The Reserved Letters
 
@@ -14,23 +14,13 @@ A rule stated in one place invites the objection that it is a preference and not
 
 ### Angles: $\theta$
 
-**An angle is real, and it is written $\theta$.** The central phase is $\exp(i\theta_{\mathrm{cen}} J)$, so the $i$ belongs to the exponential and not to the angle. The glyph $\theta$ carries a real number, and a subscript names which angle it is: $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{rat}}$ the rotation angle of an evolution. One glyph, one case, and no second letter spent on the imaginary reading.
+**An angle is real, and it is written $\theta$.** The central phase is $\exp(i\theta_{\mathrm{cen}} J)$, so the $i$ belongs to the exponential and not to the angle. The glyph $\theta$ carries a real number, and a subscript names which angle it is: $\theta_{\mathrm{rat}}$ the rotation angle of an evolution, $\theta_{\mathrm{axr}}$ the rotation angle of the word's rotor about $\vec u_{\mathrm r}$, and $\theta_{\mathrm{rpd}}$ the rapidity. One glyph, one case, and no second letter spent on the imaginary reading.
 
-The central phase is the real argument. $\exp(i\theta_{\mathrm{cen}})e_t=\exp(i\theta_{\mathrm{cen}} J)$ with $\theta_{\mathrm{cen}}$ real and $J=L_{ie_t}$: the phase turns the centre by a real angle, and the rotor of a rotation is the same argument at half the angle, $\tilde u_{\mathrm r}=\cos(\theta/2)e_t+\sin(\theta/2)\vec u_{\mathrm r}$.
+**An imaginary angle is written $i\theta$ where it is used.** A boost is the same exponential at an imaginary argument, $\theta=-i\theta_{\mathrm{rpd}}$, with the $\theta_{\mathrm{rpd}}$ inside real: the sign carries the direction of the boost and the magnitude is the rapidity. The rapidity takes the angle's letter with the caret `rpd`, so that no second letter is spent on it. The rotation and the boost are one formula at two values of the slot, and no formula changes between them.
 
-The boost factor is the imaginary argument. The four-vector element carries $\mathcal B_{\Psi}$ with $\tilde U_{\Psi,\mathrm b}^{-2}=\cosh\theta_{\mathrm{rpd}}\,e_t-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, which is $\exp(\vec U\theta)$ at the imaginary argument $\theta=-i\theta_{\mathrm{rpd}}$. The rapidity takes the angle's letter with the caret `rpd`, so that no second letter is spent on it. The sign carries the direction of the boost and the magnitude is the rapidity. A purely imaginary angle is written $i\theta_{\mathrm{rpd}}$ where it is used, and the $\theta_{\mathrm{rpd}}$ inside stays real.
+**The rotor's angle is the half-angle of the expansion.** For the word's rotor, $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$, the label names the rotation angle about the arbitrary axis $\vec u_{\mathrm r}$. Where an element is written in the parent's expansion $\cos\theta+\sin\theta\,\vec u$, the angle in the slot is the half-angle and the rotation is through $2\theta$; those occurrences keep a locally defined $\theta$ and say so.
 
-The circle and the hyperbola are one formula. At the imaginary argument $i\theta$,
-
-$$
-\cos(i\theta)=\cosh\theta,\qquad \sin(i\theta)=i\sinh\theta .
-$$
-
-The formula does not change between the rotation and the boost; only the value put in the slot changes.
-
-The rotor's angle is $\theta_{\mathrm{axr}}$. For the word's rotor, $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$, the label names the rotation angle about the arbitrary axis $\vec u_{\mathrm r}$. Where an element is written in the parent's expansion $\cos\theta+\sin\theta\,\vec u$, the angle in the slot is the half-angle and the rotation is through $2\theta$; those occurrences keep a locally defined $\theta$ and say so.
-
-The letter carries no second role. The roles that once shared it have glyphs of their own: the involution and the orbit map are $\mathrm{J}$; the curvature is $\Omega$; the two-sided operator is $\mathrm{Sd}$; the Heaviside step is $\mathrm{H}_{\mathrm{hvs}}$; the generalised angle of a congruence is $\vartheta_{\mathrm{cng}}$. A subscript on $\theta$ names the angular coordinate itself: $p_\theta$ is the momentum conjugate to it.
+**The letter carries no second role.** The roles that once shared it have glyphs of their own: the involution and the orbit map are $\mathrm{J}$; the curvature is $\Omega$; the two-sided operator is $\mathrm{Sd}$; the Heaviside step is $\mathrm{H}_{\mathrm{hvs}}$; the generalised angle of a congruence is $\vartheta_{\mathrm{cng}}$. A subscript on $\theta$ names the angular coordinate itself: $p_\theta$ is the momentum conjugate to it.
 
 ### Scales: $\varrho$
 
@@ -66,7 +56,7 @@ The letter carries no second role. The roles that once shared it have glyphs of 
 
 **The two uppercase Greek letters are the two sectors and nothing else.** The material sector is $\Phi$ and the informational one is $\Psi$: the algebra carries them in $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, an element in $\tilde Q_{\Phi}$ and $\tilde Q_{\Psi}$, and the same two letters label the derivative and any carrier read on one sector. The pair is the whole of the sector vocabulary and no third letter joins it.
 
-**The case is the whole difference.** Lowercase $\phi$ and $\psi$ are not sectors and never become one: $\phi$ is a potential or an angle and $\psi$ is a wavefunction, and neither names a subspace. A display that writes $\phi$ where $\Phi$ is meant has changed the object, and the reader sees it in the case alone.
+**The case is the whole difference, and the lowercase is not allowed.** There is no lowercase form of a sector: $\phi$, $\varphi$ and $\psi$ are forbidden, and a display that writes one of them has spent a glyph the sectors own. The reason is the confusion, not the taste. The shape is the same and the case is the only signal, so a lowercase $\phi$ one character from $\Phi$ is read as a sector by a reader who is scanning a formula, and the same holds for $\psi$ and $\Psi$. The objects that have carried the lowercase — a potential, an angle, a map, a wavefunction, the totient — take a glyph of their own instead: the fallback $\digamma$ with a role label, or a named glyph fixed where it is introduced. A display that writes $\phi$ where $\Phi$ is meant has changed the object and lost the label; one that writes $\phi$ for a potential has crowded the sector vocabulary.
 
 ### Proper Time: $\tau$
 
@@ -76,13 +66,13 @@ The letter carries no second role. The roles that once shared it have glyphs of 
 
 ### Mass: $m$
 
-**The glyph $m$ is the mass and nothing else, with one declared exception.** The audit of the two corpora gives the letter one sense in more than ten thousand sites, so the rule spends it here: mass is $m$, and it is never a count, never a modulus and never an index.
+**The glyph $m$ is the mass and nothing else, with one declared exception.** Mass is $m$, and it is never a count, never a modulus and never an index.
 
 **The exception is the inertia pair.** The symbols $\mathrm{Cl}_{n,m}$ and $O(n,m)$ carry a received notation in which the second slot is also $m$, and the corpus does not rename a symbol it did not invent. The pair is therefore written $n,m$ inside those two symbols and nowhere else, and a bare $m$ outside them is the mass. A reader who meets $m$ in a Clifford symbol reads an inertia index; a reader who meets it in a display of an element reads a mass.
 
 ## Reserved Element Glyphs
 
-**Three families carry the elements, and each is spent once.** The generic element is the $Q$ family, a root is $Ζ$, and the idempotent and the nilpotent are the $\Pi$ family. No letter outside the three stands for an element of the algebra: a letter that is not in them names a specific object, or an element bound where it is introduced. The three are fixed in *Algebra and Element Conventions* and in *Special Element Conventions*, and they are gathered here so that the whole reservation is read in one place.
+**Four families carry the objects, and each is spent once.** The generic element is the $Q$ family, the generic field is the $\xi$ family, a root is $Ζ$, and the idempotent and the nilpotent are the $\Pi$ family. No letter outside the four stands for an element or a field: a letter that is not in them names a specific object, or an element bound where it is introduced. The four are fixed in *Algebra and Element Conventions* and in *Special Element Conventions*, and they are gathered here so that the whole reservation is read in one place.
 
 ### Generic Elements: $Q$
 
@@ -91,6 +81,16 @@ The letter carries no second role. The roles that once shared it have glyphs of 
 **The coefficients carry the letter of the element.** An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$, so a coefficient is $Q_\mu$ and its imaginary part $Q'_\mu$, and no second alphabet is spent on the components. The pure part carries the arrow, $\vec Q$, by the priority of the arrow over the tilde.
 
 **The letter is never a scalar.** The scalars are the ones of §*The Reserved Letters*, and $Q$ stands among none of them. A letter outside the Q family that appears in a display is a specific object, a parameter bound at the point of use, or one of those scalars.
+
+### Generic Fields: $Ξ$
+
+**The glyph $Ξ$ is the generic field and nothing else.** A field is a quantity defined at each point of space-time, and it is not an element, so it takes a letter of its own. The case carries the coefficient and the tilde carries the vector part, the two features read together as they are for an element: $\xi$ is a real scalar field, $Ξ$ a complex one, $\tilde\xi$ a field whose value is a quaternion, and $\tilde{Ξ}$ an algebra-valued one. A field that stays in the centre carries no vector part and so takes no tilde, whatever unit its central value is written with, and the central field is the case alone, $Ξ=\xi_{\mathrm{scl}}e_t$ when the central value is displayed.
+
+**The majuscule is the glyph, not the command.** The upper-case field is written `Ξ`, U+039E, and never as `\Xi`, so that it is a glyph of its own at reading speed and never a capital to be resolved against the element $X$. The minuscule carries its command, `\xi`, since nothing collides with it. This article follows the same rule, and a display that writes `\Xi` for the field has written the wrong glyph.
+
+**The caret names the role, never a second letter.** Every named field is the same letter with a label: $\xi_{\mathrm{scl}}$ the central scalar value, $\xi_{\mathrm{neu}}$ the neutrino field, $\tilde{Ξ}_{\mathrm{fop}}$ the field operator, $\tilde{Ξ}_{\mathrm{deph}}$ a dephasing field, $\tilde{Ξ}_{\mathrm{alt}}$ the alternative of a pair. The field operator, the Grassmann variable and the second state are carets on the same letter. The letter stands once for the field and for every field named from it, and no field borrows a glyph of the element families.
+
+**The two families do not overlap.** $Q$ is the element, a quantity with four coefficients, and $\xi$ is the field, a quantity defined at each point. An article that needs a field with a vector part writes the tilde, and an article that needs a number writes the case. Neither family lends a glyph to the other, and neither is a scalar of §*The Reserved Letters*: a field is not one of the eleven, and the fallback $\digamma$ is spent on scalars alone.
 
 ### Roots: $Ζ$
 
@@ -114,13 +114,13 @@ The letter carries no second role. The roles that once shared it have glyphs of 
 
 Eleven glyphs carry eleven roles, and each is spent once. An angle is $\theta$, real, with a subscript naming which angle it is, the $i$ of a rotation sitting in the exponential; a scale is $\varrho$, the positive real factor of a polar decomposition and the amplitude of a wave; a wave number is $\nu=k/2\pi=1/\lambda$, with three to a particle; a wavelength is $\lambda=1/\nu$, with three to a particle; and an eigenvalue is $\eta$, a root of $\eta^{2}-2Q_t\eta+N=0$.
 
-Six more glyphs carry a role each. The scalar imaginary is $i$, and the space index is the dotless $\imath$; the speed of light is $c$, the conversion $t'=r'_t/c$; the material and informational sectors are the uppercase $\Phi$ and $\Psi$, and lowercase $\phi$ and $\psi$ are not sectors; the proper time is $\tau$; and the mass is $m$, with the inertia pair $n,m$ of $\mathrm{Cl}_{n,m}$ and $O(n,m)$ as the one declared exception.
+Six more glyphs carry a role each. The scalar imaginary is $i$, and the space index is the dotless $\imath$; the speed of light is $c$, the conversion $t'=r'_t/c$; the material and informational sectors are the uppercase $\Phi$ and $\Psi$, and the lowercase $\phi$, $\varphi$ and $\psi$ are forbidden; the proper time is $\tau$; and the mass is $m$, with the inertia pair $n,m$ of $\mathrm{Cl}_{n,m}$ and $O(n,m)$ as the one declared exception.
 
 Every other scalar takes $\digamma$ with a subscript that names its sense. None of the eleven carries a second sense, and no other scalar borrows one of them.
 
-The angle is the one letter whose case needs a rule of its own. It is real, and the imaginary argument of a boost is written $i\theta_{\mathrm{rpd}}$ at the point of use, so that the circle and the hyperbola are one formula at two values of the slot. The roles that once shared the letter have glyphs of their own, $\mathrm{J}$, $\Omega$, $\mathrm{Sd}$, $\mathrm{H}_{\mathrm{hvs}}$ and $\vartheta_{\mathrm{cng}}$.
+The angle is the one letter whose case needs a rule of its own. It is real, and the imaginary argument of a boost is written $i\theta_{\mathrm{rpd}}$ at the point of use, so that a rotation and a boost are one formula at two values of the slot. The roles that once shared the letter have glyphs of their own, $\mathrm{J}$, $\Omega$, $\mathrm{Sd}$, $\mathrm{H}_{\mathrm{hvs}}$ and $\vartheta_{\mathrm{cng}}$.
 
-Three families carry the elements, and each is spent once. The generic element is the Q family, $q$, $Q$, $\breve Q$, $\tilde q$ and $\tilde Q$, with the case and the accent naming the layer and the coefficients carrying the same letter; a root is $Ζ$, split by the case rule into $Ζ$, $Ζ_\pm$, $\tilde\zeta$ and $\tilde{Ζ}$; and the idempotent and the nilpotent are the $\Pi$ family, with $\mathrm{id}$ or $\mathrm{nil}$ as the first word of the subscript and the case naming the layer.
+Four families carry the objects, and each is spent once. The generic element is the Q family, $q$, $Q$, $\breve Q$, $\tilde q$ and $\tilde Q$, with the case and the accent naming the layer and the coefficients carrying the same letter; the generic field is the $\xi$ family, $\xi$, $Ξ$, $\tilde\xi$ and $\tilde{Ξ}$, with the case carrying the coefficient and the tilde the vector part; a root is $Ζ$, split by the case rule into $Ζ$, $Ζ_\pm$, $\tilde\zeta$ and $\tilde{Ζ}$; and the idempotent and the nilpotent are the $\Pi$ family, with $\mathrm{id}$ or $\mathrm{nil}$ as the first word of the subscript and the case naming the layer.
 
 ## Summary of Notation
 
@@ -133,9 +133,10 @@ Three families carry the elements, and each is spent once. The generic element i
 | $\eta$; $\eta_\pm$, $\eta_{1,2}$, $\eta_i$ | The eigenvalue, a root of $\eta^{2}-2Q_t\eta+N=0$; never an index and never a scale (§*The Reserved Letters*) |
 | $i$ | The scalar imaginary, $i^{2}=-1$, central in $\mathbb{B}$; the space index is the dotless $\imath$ and the second one $\jmath$ (§*Scalar Imaginary*) |
 | $c$ | The speed of light and the conversion $t'=r'_t/c$, with $c_{\mathrm{loc}}$ for a local value; never a coefficient of an element and never a generic constant (§*Speed of Light*) |
-| $\Phi$, $\Psi$ | The material and the informational sector — $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$, $\tilde Q_{\Phi}$, $\tilde Q_{\Psi}$; lowercase $\phi$ and $\psi$ are a potential, an angle and a wavefunction, and never a sector (§*Sectors*) |
+| $\Phi$, $\Psi$ | The material and the informational sector — $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$, $\tilde Q_{\Phi}$, $\tilde Q_{\Psi}$; no lowercase form exists, and $\phi$, $\varphi$ and $\psi$ are forbidden (§*Sectors*) |
 | $\tau$ | The proper time, the interval along a world line; a lifetime keeps the letter with a subscript naming the system, a width is $\Gamma$ (§*Proper Time*) |
 | $m$ | The mass; the one exception is the inertia pair $n,m$ of $\mathrm{Cl}_{n,m}$ and $O(n,m)$ (§*Mass*) |
+| $\xi$; $Ξ$, $\tilde\xi$, $\tilde{Ξ}$ | The generic field — $\xi$ real, $Ξ$ complex, the tilde marking a vector part; the majuscule is the glyph `Ξ` and never the command; a named field is the caret, $\xi_{\mathrm{neu}}$, $\tilde{Ξ}_{\mathrm{fop}}$ (§*Generic Fields*) |
 | $Q$; $\tilde Q$, $\tilde q$, $\breve Q$, $q$ | The generic element, the case and the accent naming the layer; the coefficients are $Q_\mu$ and the pure part $\vec Q$ (§*Generic Elements*) |
 | $Ζ$; $Ζ_\pm$, $\tilde\zeta$, $\tilde{Ζ}$ | A root of the algebra, $\tilde{Ζ}^2=Q_te_t$; the case names the layer; outside the potent family and never a tag (§*Roots*) |
 | $\Pi$; $\tilde\Pi_{\mathrm{id}}$, $\tilde\pi_{\mathrm{nil}}$, $\Pi_{\mathrm{id},\pm}$ | An idempotent or a nilpotent, the tag $\mathrm{id}$ or $\mathrm{nil}$ first in the subscript; a projection is $\Pi_\pm$; a bare $\Pi$ is forbidden, and the bare $\pi$ is the number $3.14159\ldots$ and nothing else (§*Potents*) |

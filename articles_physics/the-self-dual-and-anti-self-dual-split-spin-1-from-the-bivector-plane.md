@@ -18,7 +18,7 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B} 
 
 $$
 \tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A, \qquad
-\tilde{F} = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} - \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
+\tilde{F} = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} - \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = i\vec E - c\vec B,
 $$
 
 with $\vec H$ the magnetic field and $\vec B = \mu\vec H$ the magnetic induction, and $c = 1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The normalization of the potential is the one for which the two expressions for $\tilde{F}$ in the display agree, a constant multiple of $\tilde{A}_{\Phi}$ being absorbed in it; the field strength itself is fixed unambiguously by the tensor formula $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath}$, as the companion field-strength article records. The Lorentz rotor acts by conjugation, $\tilde{Q}\mapsto\tilde{U}_{\mathrm{lor}}\tilde{Q}\tilde{U}_{\mathrm{lor}}^{*}$, and the material interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i q'_t$.
@@ -75,13 +75,13 @@ That the two are the same six-dimensional real space is not a coincidence of dim
 The field-strength biquaternion of the companion article is a pure vector,
 
 $$
-\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H \;\in\; \mathbb{B}_{V},
+\tilde{F} = i\vec E - c\vec B \;\in\; \mathbb{B}_{V},
 $$
 
 with imaginary electric part and real magnetic part, and it is obtained from the four-potential by differentiation. This object carries all six real components of $(\vec E,\vec B)$, and the standard complex combination
 
 $$
-\vec N = \vec E + ic\,\vec B, \qquad \tilde{F} = i\sqrt{\epsilon}\,\vec N,
+\vec N = \vec E + ic\,\vec B, \qquad \tilde{F} = i\vec N,
 $$
 
 is the Riemann–Silberstein vector. The identification of $\vec N$ with a complex three-vector is precisely the identification of a real two-form with an element of the complex vector part, and it is the identification that makes the self-dual split transparent: the complex structure that appears in $\vec N$ is the algebra's scalar imaginary, and it is the same complex structure that defines the Hodge dual, as the next section shows.
@@ -102,7 +102,7 @@ $$
 \star\vec N = -i\vec N,
 $$
 
-because $\star(\vec E+ic\vec B) = c\vec B - i\vec E = -i(\vec E+ic\vec B)$. Since $\tilde{F} = i\sqrt{\epsilon}\,\vec N$, the same statement holds on the field-strength biquaternion up to the overall constant:
+because $\star(\vec E+ic\vec B) = c\vec B - i\vec E = -i(\vec E+ic\vec B)$. Since $\tilde{F} = i\vec N$, the same statement holds on the field-strength biquaternion up to the overall constant:
 
 $$
 \boxed{\;\star\tilde{F} = -i\,\tilde{F}\;}.
@@ -110,27 +110,25 @@ $$
 
 ### Direct check
 
-The identity is worth checking without the Riemann–Silberstein shortcut, because the factors of $\epsilon$ and $\mu$ are the place where a sign can hide. Write $\vec H = \vec B/\mu$. The dual acts on the magnetic field as
+The identity is worth checking without the Riemann–Silberstein shortcut, because the sign is the place where a convention can hide. The dual acts on the two halves as
 
 $$
-\star\vec H = \frac{1}{\mu}\,\star\vec B = -\frac{\vec E}{c\mu},
+\star\vec E = c\vec B, \qquad \star\vec B = -\frac{\vec E}{c},
 $$
 
 so that
 
 $$
 \star\tilde{F}
-= i\sqrt{\epsilon}\,\star\vec E - \sqrt{\mu}\,\star\vec H
-= i\sqrt{\epsilon}\,c\vec B + \frac{\sqrt{\mu}}{c\mu}\,\vec E
-= \frac{i}{\sqrt{\mu}}\,\vec B + \sqrt{\epsilon}\,\vec E,
+= i\,\star\vec E - c\,\star\vec B
+= ic\vec B + \vec E .
 $$
 
-using $\sqrt{\epsilon}\,c = \sqrt{\epsilon}/\sqrt{\epsilon\mu} = 1/\sqrt{\mu}$ and $\sqrt{\mu}/(c\mu) = \sqrt{\mu}\sqrt{\epsilon\mu}/\mu = \sqrt{\epsilon}$. On the other hand
+On the other hand
 
 $$
--i\tilde{F} = -i\left(i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H\right)
-= \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H
-= \sqrt{\epsilon}\,\vec E + \frac{i}{\sqrt{\mu}}\,\vec B,
+-i\tilde{F} = -i\left(i\vec E - c\vec B\right)
+= \vec E + ic\vec B,
 $$
 
 which is the same. The identity $\star = -i$ therefore holds for every field, with no assumption on the field's time dependence or on the wavevector.
@@ -175,8 +173,8 @@ $$
 the field-strength biquaternion and its coefficient conjugate are
 
 $$
-\tilde{F} = i\sqrt{\epsilon}\,\vec N, \qquad
-\bar{\tilde{F}} = -i\sqrt{\epsilon}\,\vec N^*,
+\tilde{F} = i\vec N, \qquad
+\bar{\tilde{F}} = -i\vec N^*,
 $$
 
 and the dual acts on the two coordinates with opposite signs, being $+i$ on $\vec N^*$ where it is $-i$ on $\vec N$:
@@ -326,7 +324,7 @@ $$
 \star\tilde{F} = -i\,\tilde{F},
 $$
 
-that is, as minus left multiplication by the scalar imaginary; equivalently $\star = -i$ on the Riemann–Silberstein vector $\vec N = \vec E+ic\vec B$. Since $\star^2 = -1$, its projectors $\tilde\Pi_{\mathrm{id},sd,asd} = \tfrac12(1\pm i\star)$ decompose the complexified vector part into two three-dimensional complex spaces, the self-dual and anti-self-dual halves, which are the representations $(1,0)$ and $(0,1)$ and are preserved by every Lorentz transformation because the boost acts complex-linearly on $\vec N$. A real field strength is a real form of this space: its field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec N$ carries the self-dual coordinate $\vec N = \vec E+ic\vec B$, on which $\star = -i$, and the anti-self-dual coordinate is the combination $\vec N^* = \vec E-ic\vec B$ carried by $\bar{\tilde{F}}$, on which $\star = +i$.
+that is, as minus left multiplication by the scalar imaginary; equivalently $\star = -i$ on the Riemann–Silberstein vector $\vec N = \vec E+ic\vec B$. Since $\star^2 = -1$, its projectors $\tilde\Pi_{\mathrm{id},sd,asd} = \tfrac12(1\pm i\star)$ decompose the complexified vector part into two three-dimensional complex spaces, the self-dual and anti-self-dual halves, which are the representations $(1,0)$ and $(0,1)$ and are preserved by every Lorentz transformation because the boost acts complex-linearly on $\vec N$. A real field strength is a real form of this space: its field-strength biquaternion $\tilde{F} = i\vec N$ carries the self-dual coordinate $\vec N = \vec E+ic\vec B$, on which $\star = -i$, and the anti-self-dual coordinate is the combination $\vec N^* = \vec E-ic\vec B$ carried by $\bar{\tilde{F}}$, on which $\star = +i$.
 
 The split is pure integer spin. The self-dual half is the symmetric square of the defining module, $\mathrm{sym}^2(S)\cong(1,0)$, of complex dimension three; the anti-self-dual half is $\mathrm{sym}^2(\bar{S})\cong(0,1)$. In the algebra's letters the triplet is the adjoint module: the vector part $\mathbb{B}_{V}$ with the weights $+1,0,-1$ of $\mathrm{ad}_{\tilde S_3}$, Casimir $2$, and nilpotent highest-weight vector $\vec e_x+i\vec e_y$. The scalar of the adjoint is the centre, with Casimir $0$, and the two together are $\mathcal{V}_0\oplus\mathcal{V}_2$. Under duality rotation the two halves acquire opposite phases, and for a plane wave they are exactly the two helicities: $\vec E+ic\vec B$ carries helicity $+1$ and $\vec E-ic\vec B$ helicity $-1$. It is a split of the complexified field and not of a physical one: a real field strength is an eigenform of neither half, and is recovered from one of them by taking a real part. The carrier of all of this is the vector part of the algebra, which is not a module over $\mathbb{B}$ but a representation carried by conjugation and by tensor products of the defining module; that distinction is the boundary of the algebra's native spin content, and it is drawn in the final article of the subcategory.
 
@@ -349,7 +347,7 @@ The split is pure integer spin. The self-dual half is the symmetric square of th
 | $\tilde{F} = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} - \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ | Field-strength biquaternion, pure vector |
 | $\vec E, \vec H, \vec B=\mu\vec H$ | Electric field, magnetic field, magnetic induction |
 | $\epsilon,\mu$, $c=1/\sqrt{\epsilon\mu}$ | Medium constants and speed of light in the medium |
-| $\vec N = \vec E+ic\vec B$ | Riemann–Silberstein vector, $\tilde{F}=i\sqrt{\epsilon}\,\vec N$ |
+| $\vec N = \vec E+ic\vec B$ | Riemann–Silberstein vector, $\tilde{F}=i\vec N$ |
 | $I_1 = \vec E^2-c^2\vec B^2$, $I_2 = \vec E\cdot\vec B$ | The two field invariants, real and imaginary parts of $\vec N\cdot\vec N = I_1+2icI_2$ |
 | $\star$ | Hodge dual, $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$, $\star^2=-1$, $\star\tilde{F}=-i\tilde{F}$ |
 | $\tilde\Pi_{\mathrm{id},sd,asd} = \tfrac12(1\pm i\star)$ | Projectors onto the self-dual ($\star=-i$) and anti-self-dual ($\star=+i$) halves |

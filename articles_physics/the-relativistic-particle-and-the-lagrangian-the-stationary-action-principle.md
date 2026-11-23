@@ -217,7 +217,7 @@ For the electromagnetic field the action is the standard one,
 $$
 S_{\mathrm{Maxwell}} = -\frac14\int \sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}\,d^4r ,
 $$
-and in terms of the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ of the companion *Maxwell's Equations in the Biquaternionic Formulation* its Lagrangian density is the biquaternion norm
+and in terms of the field-strength biquaternion $\tilde{F} = i\vec E - c\vec B$ of the companion *Maxwell's Equations in the Biquaternionic Formulation* its Lagrangian density is the biquaternion norm
 $$
 \boxed{\;
 \mathcal{L}_{\mathrm{Maxwell}} = -\frac12\,\mathrm{Re}\,\mathrm{Sc}\!\left(\langle\tilde{F}\rangle_{\natural}\right) ,
@@ -331,7 +331,7 @@ The symmetries of the action are the central phase, giving the material-sector c
 | $\mathcal{L} = -\mathrm{Sc}[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})] - (2\pi\nu_m)^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | Scalar field Lagrangian |
 | $T_{\imath\rho\jmath\sigma} = \sigma_{\imath}\sigma_\rho\,\mathrm{Sc}(e_{\imath} e_\rho e_{\jmath} e_\sigma)$ | Kinetic tensor of a general element ($\sigma_0=+1$, $\sigma_{\imath}=-1$); $64$ of $256$ entries nonzero, not $\delta_{\imath\jmath}\delta_{\rho\sigma}$ |
 | $(\Box_\Phi - (2\pi\nu_m)^{2})\tilde{Ξ} = 0$, $\frac{1}{2\pi\nu_m}$ | Klein–Gordon equation from the variation |
-| $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
+| $\tilde{F} = i\vec E - c\vec B$ | Field-strength biquaternion |
 | $\mathcal{L}_{\mathrm{Maxwell}} = -\frac14\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$ | Maxwell Lagrangian as a norm |
 | $\tilde{J}_{\Phi} = i[\tilde{Ξ}^{*}(\tilde\nabla_\Phi\tilde{Ξ}) - (\tilde\nabla_\Phi\tilde{Ξ}^{*})\tilde{Ξ}]$ | Conserved material-sector current |
 | $T_{\imath\jmath} = -(\partial/\partial R_{\imath}\xi^*)\partial/\partial R_{\jmath}\xi - (\partial/\partial R_{\imath}\xi)\partial/\partial R_{\jmath}\xi^* - \delta_{\imath\jmath}\mathcal{L}$ | Stress–energy tensor |

@@ -259,7 +259,7 @@ The operators, in one table:
 
 The product. The general plain bilinear product is one of the four of *Product and Form Conventions*, §*The Twelve Products and Their Names*. On the gradient, with an element-valued field $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$, it is read with $\mathrm{Sc}(e_{\imath} e_{\jmath})=\varepsilon_{\imath}\delta_{\imath\jmath}$ and $\vec e_j \vec e_{\imath}=-\delta_{j\imath}e_t+\epsilon_{j\imath l}\vec e_l$, so that the three spatial units carry the field back onto the scalar unit.
 
-A product is algebra-valued, and this one holds the divergence, the gradient and the curl of the field in a single object; for the field strength $\tilde F$ the equation $\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_{\Phi}$, with $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$, is the series' Maxwell equation. Read on the material parameters, $\vec\nabla_\Phi$ is the physical spatial gradient, so the space part is the ordinary one and the time part carries the factor $-i$:
+A product is algebra-valued, and this one holds the divergence, the gradient and the curl of the field in a single object; for the field strength $\tilde F$ the equation $\tilde\nabla_\Phi\tilde F=-Z\tilde J_{\Phi}$, with $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$, is the series' Maxwell equation. Read on the material parameters, $\vec\nabla_\Phi$ is the physical spatial gradient, so the space part is the ordinary one and the time part carries the factor $-i$:
 
 $$
 \tilde\nabla_\Phi\tilde Q_{\mathrm f}=\Bigl(-i\frac{\partial Q_{\mathrm{f}t}}{\partial r'_t}-\vec\nabla_\Phi\cdot\vec Q_{\mathrm f}\Bigr)e_t-i\frac{\partial\vec Q_{\mathrm f}}{\partial r'_t}+\vec\nabla_\Phi Q_{\mathrm{f}t}+\vec\nabla_\Phi\times\vec Q_{\mathrm f} .

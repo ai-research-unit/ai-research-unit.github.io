@@ -180,7 +180,7 @@ four complex equations for the four components. Right regularity, $\tilde\Xi\til
 **On the material sector.** The temporal derivative is $-i\partial/\partial r'_t$ and the three spatial derivatives are the ordinary ones. The scalar part of the condition therefore carries the two divergences and the vector part the two curls, and the one element equation is the free Maxwell pair. With a source the equation becomes
 
 $$
-\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_\Phi ,
+\tilde\nabla_\Phi\tilde F=-Z\tilde J_\Phi ,
 $$
 
 whose scalar part is the constraint on the source and whose vector part is the dynamical equation; the componentwise identification is in *Maxwell's Equations in the Biquaternionic Formulation*, §*The Three-Vector Form*. This is the sharpest agreement in the corpus between the two routes: the equations that were transcribed into the algebra in the electromagnetism block are the differentiability condition of the material sector, written without a transcription.

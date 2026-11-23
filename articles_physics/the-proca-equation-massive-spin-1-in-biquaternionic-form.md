@@ -10,7 +10,7 @@ Once the Lorenz condition is available, the Proca equation collapses to the Klei
 
 **The carrier: this article works on *Introduction to the Spin-One Anti-Hermitian Subspace*.** The spin fixes the subspace: a spin-one potential needs a four-vector, and the four-vectors of the algebra are the material sector $\mathbb{B}_{\Phi}$, of real dimension four. The restriction is not a choice of taste; it is the statement that the potential is anti-Hermitian, which is what makes its quaternionic norm real and its vector square non-negative. The subspace, its two namings — the triple for the spin and the sector for the amplitude — and the counting are [Introduction to the Spin-One Anti-Hermitian Subspace](the-spin-one-anti-hermitian-subspace.html), and nothing about it is derived below. Two consequences follow, and both are proved there. First, the sector is closed under the Proca operator for **every** material potential, because the residual of the equation is a material element times a central scalar; the Lorenz condition makes that scalar vanish and is not what makes the residual material. Second, the sector is a real form, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$, so a continuous phase destroys it and the restriction is a restriction to the neutral field. The scalar-free part carries the field strength and the spin itself, and the Lorenz condition removes the time slot that separates the four-vector from the three states of the spin.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^2=-e_t$, and central scalar imaginary $i$; the gradient is $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ with $(\tilde\nabla_\Phi)^{\natural}$ its quaternion conjugate and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$; the potential and field strength are $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ and $\tilde{F}=(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, with $c=1/\sqrt{\epsilon\mu}$ and the normalization of the potential fixed so that the two expressions for $\tilde{F}$ agree; and the mass enters as the wave number $\nu_m=\frac{m\,c}{h}$, whose reciprocal $1/(2\pi\nu_m)$ is the mass length written where the dimensions have to be displayed.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_{\imath}^2=-e_t$, and central scalar imaginary $i$; the gradient is $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ with $(\tilde\nabla_\Phi)^{\natural}$ its quaternion conjugate and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$; the potential and field strength are $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ and $\tilde{F}=(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=i\vec E-c\vec B$, with $c=1/\sqrt{\epsilon\mu}$ and the normalization of the potential fixed so that the two expressions for $\tilde{F}$ agree; and the mass enters as the wave number $\nu_m=\frac{m\,c}{h}$, whose reciprocal $1/(2\pi\nu_m)$ is the mass length written where the dimensions have to be displayed.
 
 ## The Standard Proca Theory
 
@@ -88,7 +88,7 @@ $$
 \tilde\nabla_\Phi\tilde{F} = m^2\,\tilde{A}_{\Phi}.
 $$
 
-The left-hand side is $\tilde\nabla_\Phi\tilde F$; the right-hand side is the mass term. The equation is the massive analogue of the companion Maxwell equation $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$, with the external source $\sqrt{\mu}\,\tilde{J}_{\Phi}$ replaced by a current proportional to the potential itself.
+The left-hand side is $\tilde\nabla_\Phi\tilde F$; the right-hand side is the mass term. The equation is the massive analogue of the companion Maxwell equation $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$, with the external source $Z\,\tilde{J}_{\Phi}$ replaced by a current proportional to the potential itself.
 
 ### Why the equation is the right one
 
@@ -184,7 +184,7 @@ $$
 \tilde\nabla_\Phi\tilde{F}=0 ,
 $$
 
-which is the source-free biquaternion Maxwell equation of the companion article, and with a source it is $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$.
+which is the source-free biquaternion Maxwell equation of the companion article, and with a source it is $\tilde\nabla_\Phi\tilde{F}=-Z\,\tilde{J}_{\Phi}$.
 
 **The reduction is exact here for a structural reason.** The field strength is defined by the same formula in both articles, so the left-hand side of the equation is one expression and not two, and only the right-hand side loses its shift. Nothing about the algebra changes at $\nu_m=0$: the operator is the same operator, acting on the same carrier, and the equation it satisfies loses its potential term.
 

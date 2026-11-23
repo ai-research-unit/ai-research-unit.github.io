@@ -36,7 +36,7 @@ $$
 where
 
 $$
-\mathrm{F}(\tilde{V}_{\Phi}):=-\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right)
+\mathrm{F}(\tilde{V}_{\Phi}):=-\frac{1}{c}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right)
 $$
 
 is the **field action**, the element of $\mathbb{B}_{\Phi}$ whose four-vector components are the contraction $\sum_{\jmath} F_{\imath\jmath}V_{\jmath}$, and $\langle A,B\rangle=\mathrm{Sc}(A B^{\natural})$ is the invariant pairing on the material sector.
@@ -50,7 +50,7 @@ $$
 =-Q_1^{0}Q_2^{0}+\vec Q_1\cdot\vec Q_2 .
 $$
 
-The field-strength biquaternion is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, with $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$, as fixed once and for all in Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field-strength biquaternion, the Hodge dual and the field invariants. The electromagnetic field tensor has components
+The field-strength biquaternion is $\tilde{F}=i\vec E-c\vec B$, with $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$, as fixed once and for all in Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field-strength biquaternion, the Hodge dual and the field invariants. The electromagnetic field tensor has components
 
 $$
 F_{tk}=\frac{E_{\imath}}{c},
@@ -204,23 +204,23 @@ Two comments on the content of the equation. First, the invariant $B=\sum_{k,\jm
 It remains to write the two structures in $\mathbb{B}$. The key object is the **field action**
 
 $$
-\mathrm{F}(\tilde{V}_{\Phi}):=-\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right),
+\mathrm{F}(\tilde{V}_{\Phi}):=-\frac{1}{c}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right),
 \qquad
 P_{\mathbb{B}_{\Phi}}(\tilde{Q})=\tfrac{1}{2}\left(\tilde{Q}-\tilde{Q}^{*}\right),
 $$
 
-the anti-Hermitian projection of the product of the material element $\tilde{V}_{\Phi}$ with the field-strength biquaternion $\tilde{F}$, rescaled by $-\sqrt{\mu}$. That $\mathrm{F}(\tilde{V}_{\Phi})$ lies in the material sector is immediate, since the projection is onto $\mathbb{B}_{\Phi}$ by construction; that its four-vector components are the contraction $\sum_{\jmath} F_{\imath\jmath}V_{\jmath}$ is the content of the field-normalization lemma.
+the anti-Hermitian projection of the product of the material element $\tilde{V}_{\Phi}$ with the field-strength biquaternion $\tilde{F}$, rescaled by $-1/c$. That $\mathrm{F}(\tilde{V}_{\Phi})$ lies in the material sector is immediate, since the projection is onto $\mathbb{B}_{\Phi}$ by construction; that its four-vector components are the contraction $\sum_{\jmath} F_{\imath\jmath}V_{\jmath}$ is the content of the field-normalization lemma.
 
-**Lemma (field normalization).** With $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, $\vec B=\mu\vec H$, and the real-component field tensor $F_{tk}=E_{\imath}/c$, $F_{j\imath}=\epsilon_{j\imath l}B_l$, one has
+**Lemma (field normalization).** With $\tilde{F}=i\vec E-c\vec B$, $\vec B=\mu\vec H$, and the real-component field tensor $F_{tk}=E_{\imath}/c$, $F_{j\imath}=\epsilon_{j\imath l}B_l$, one has
 
 $$
-\mathrm{F}(\tilde{V}_{\Phi})=-\sqrt{\mu}\,P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right)
+\mathrm{F}(\tilde{V}_{\Phi})=-\frac{1}{c}\,P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right)
 \;=\;\tilde\Sigma_{\Psi},
 \qquad
 W_{\imath}=\sum_{\jmath} F_{\imath\jmath}V_{\jmath} .
 $$
 
-The instruction $-\sqrt{\mu}$ is exactly the one that cancels the normalizations of the field strength: the electric half of $\tilde{F}$ is weighted by $\sqrt{\epsilon}$ and the magnetic half by $\sqrt{\mu}$, and the projection combines them with the weights of the two self-dual halves. The lemma is verified by recomputation: forming the $2\times2$ complex matrices $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, $\mathsf{M}_2(i)=iI_2$, building $\tilde{V}_{\Phi}$ and $\tilde{F}$ from random real four-vectors and fields, projecting, and comparing with the component contraction gives agreement to machine precision, with the residual below $10^{-15}$ at $\epsilon_r=\mu_r=1$; repeating at $\epsilon_r=2,\mu_r=3$ and at $\epsilon_r=0.7,\mu_r=1.3$ confirms the factor $\sqrt{\mu}$ at general medium parameters. The algebraic identity behind it is that the product $\tilde{V}_{\Phi}\tilde{F}$ decomposes into the two self-dual halves of the field, and the anti-Hermitian projection selects the combination that carries the components of $\sum_{\jmath} F_{\imath\jmath}V_{\jmath}$; the companion article *The Field-Strength Biquaternion and Its Invariants*, for the decomposition into self-dual halves, contains the same algebra.
+The instruction $-1/c$ is exactly the one that cancels the normalisation of the field strength: the electric half of $\tilde{F}$ is the Hermitian part $i\vec E$ and the magnetic half the anti-Hermitian part $-c\vec B$, and the projection combines them with the weights of the two self-dual halves. The lemma is verified by recomputation: forming the $2\times2$ complex matrices $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, $\mathsf{M}_2(i)=iI_2$, building $\tilde{V}_{\Phi}$ and $\tilde{F}$ from random real four-vectors and fields, projecting, and comparing with the component contraction gives agreement to machine precision, with the residual below $10^{-15}$ at $\epsilon_r=\mu_r=1$; repeating at $\epsilon_r=2,\mu_r=3$ and at $\epsilon_r=0.7,\mu_r=1.3$ confirms the factor $1/c$ at general medium parameters. The algebraic identity behind it is that the product $\tilde{V}_{\Phi}\tilde{F}$ decomposes into the two self-dual halves of the field, and the anti-Hermitian projection selects the combination that carries the components of $\sum_{\jmath} F_{\imath\jmath}V_{\jmath}$; the companion article *The Field-Strength Biquaternion and Its Invariants*, for the decomposition into self-dual halves, contains the same algebra.
 
 The second structure is the **invariant pairing**
 
@@ -340,7 +340,7 @@ It is useful to separate the contribution of the biquaternion algebra from the s
 
 - The two covariant structures available to a material four-vector linear in $F$ and $S$ are exhausted by $(F\cdot S)_{\imath}$ and $v_{\imath} B$; the enumeration uses only the antisymmetry of $F$ and the orthogonality $\langle\tilde{S}_{\Psi},\tilde{V}_{\Phi}\rangle=0$.
 - The orthogonality constraint on the spin is the invariant pairing $\mathrm{Sc}(\tilde{S}_{\Psi}\tilde{V}_{\Phi}^{\natural})=0$, and its preservation under the evolution is the single algebraic relation $\alpha+\beta c^{2}=1$.
-- The field coupling is the anti-Hermitian projection of the product $\tilde{V}_{\Phi}\tilde{F}$, rescaled by $-\sqrt{\mu}$; the four Maxwell components enter through the two self-dual halves of $\tilde{F}$.
+- The field coupling is the anti-Hermitian projection of the product $\tilde{V}_{\Phi}\tilde{F}$, rescaled by $-1/c$; the four Maxwell components enter through the two self-dual halves of $\tilde{F}$.
 - The invariant $B$ is the material pairing of the spin with the field action on the four-velocity, $\langle\tilde{S}_{\Psi},\mathrm{F}(\tilde{V}_{\Phi})\rangle$.
 - The equation is a statement inside $\mathbb{B}_{\Phi}$ and is automatically sector-preserving; the reality structure that the Lorentz force made delicate, the separation of the electric and magnetic halves, is here handled by the same projection.
 
@@ -400,7 +400,7 @@ $$
 with the **field action**
 
 $$
-\mathrm{F}(\tilde{V}_{\Phi})=-\sqrt{\mu}\,P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right),
+\mathrm{F}(\tilde{V}_{\Phi})=-\frac{1}{c}\,P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right),
 \qquad
 P_{\mathbb{B}_{\Phi}}(\tilde{Q})=\tfrac{1}{2}\left(\tilde{Q}-\tilde{Q}^{*}\right),
 $$
@@ -440,10 +440,10 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $\vec s$ | Rest-frame spin, $\langle\tilde{S}_{\Psi}\rangle_\natural=\vec s^2$ |
 | $S_{\imath\jmath}$ | Antisymmetric spin tensor, $S_{\imath}=\frac{1}{2c}\epsilon_{\imath\jmath\rho\sigma}v_{\jmath} S_{\rho\sigma}$ |
 | $g$, $\gamma_g=gq/2m$, $\vec\mu=\gamma_g\vec s$ | Gyromagnetic factor, ratio, magnetic moment |
-| $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
+| $\tilde{F}=i\vec E-c\vec B$ | Field-strength biquaternion |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $F_{tk}=E_{\imath}/c$, $F_{j\imath}=\epsilon_{j\imath l}B_l$ | Field tensor components (real time; $i r'_t$: $F_{tk}=iE_{\imath}/c$) |
-| $\mathrm{F}(\tilde{V}_{\Phi})=-\sqrt{\mu}P_{\mathbb{B}_{\Phi}}(\tilde{V}_{\Phi}\tilde{F})$ | Field action, components $\sum_{\jmath} F_{\imath\jmath}V_{\jmath}$ |
+| $\mathrm{F}(\tilde{V}_{\Phi})=-\frac{1}{c}P_{\mathbb{B}_{\Phi}}(\tilde{V}_{\Phi}\tilde{F})$ | Field action, components $\sum_{\jmath} F_{\imath\jmath}V_{\jmath}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})=-Q_{1,0}Q_{2,0}+\vec Q_1\cdot\vec Q_2$ | Invariant pairing on $\mathbb{B}_{\Phi}$ |
 | $B=\sum_{k,\jmath}S_{\imath} F_{k\jmath}v_{\jmath}=\langle\tilde{S}_{\Psi},\mathrm{F}(\tilde{V}_{\Phi})\rangle$ | Spin–field–velocity invariant |
 | $\vec\omega_T=\frac{\gamma^2}{c^2(\gamma+1)}\vec a\times\vec v$ | Thomas precession angular velocity |

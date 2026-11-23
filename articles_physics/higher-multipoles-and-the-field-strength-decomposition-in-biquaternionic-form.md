@@ -102,7 +102,7 @@ so that each successive order is suppressed by two further powers of $\omega$ re
 The field strength in a medium is the pure-vector biquaternion
 
 $$
-\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H ,
+\tilde{F} = i\vec E - c\vec B ,
 \qquad
 \vec H = \frac{\vec B}{\mu} ,
 $$
@@ -110,9 +110,9 @@ $$
 with vanishing scalar part. It is an element of the vector part of $\mathbb{B}$, which is three complex dimensions, six real dimensions, and it carries the six real field components of $(\vec E,\vec B)$. Its two pieces are the electric piece, which is imaginary and lies in the Hermitian sector $\mathbb{B}_{\Psi}$, and the magnetic piece, which is real and lies in the anti-Hermitian sector $\mathbb{B}_{\Phi}$:
 
 $$
-i\sqrt{\epsilon}\,\vec E \in \mathbb{B}_{\Psi} ,
+i\vec E \in \mathbb{B}_{\Psi} ,
 \qquad
--\sqrt{\mu}\,\vec H \in \mathbb{B}_{\Phi} ,
+-c\vec B \in \mathbb{B}_{\Phi} ,
 \qquad
 \mathbb{B}_{\Psi} \cap \mathbb{B}_{\Phi} = \{0\} .
 $$
@@ -124,12 +124,12 @@ This is the first of the two decompositions, and it is the algebraic form of the
 The split into electric and magnetic pieces is the projection onto the two real subspaces by the Hermitian conjugate,
 
 $$
-\boxed{\;\tfrac{1}{2}\left(\tilde{F} + \tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\vec E ,
+\boxed{\;\tfrac{1}{2}\left(\tilde{F} + \tilde{F}^{*}\right) = i\vec E ,
 \qquad
-\tfrac{1}{2}\left(\tilde{F} - \tilde{F}^{*}\right) = -\sqrt{\mu}\,\vec H\;}
+\tfrac{1}{2}\left(\tilde{F} - \tilde{F}^{*}\right) = -c\vec B\;}
 $$
 
-with $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec E + \sqrt{\mu}\,\vec H$. The Hermitian conjugate is thus the algebraic operation that separates the two fields. The decomposition is **not** Lorentz-covariant: a boost mixes the two summands, because it mixes $\vec E$ and $\vec B$. It is, however, rotation-covariant: a spatial rotation acts on $\vec E$ and $\vec H$ separately, so the split survives the rotation subgroup.
+with $\tilde{F}^{*} = i\vec E + c\vec B$. The Hermitian conjugate is thus the algebraic operation that separates the two fields. The decomposition is **not** Lorentz-covariant: a boost mixes the two summands, because it mixes $\vec E$ and $\vec B$. It is, however, rotation-covariant: a spatial rotation acts on $\vec E$ and $\vec H$ separately, so the split survives the rotation subgroup.
 
 ### The Self-Dual Decomposition
 
@@ -160,12 +160,12 @@ $$
 The self-dual combination $F + i\star F$ corresponds to $2\vec N$ and the anti-self-dual combination $F - i\star F$ corresponds to $2\vec N^*$. For the real physical field the two chiralities are the field strength and its dagger,
 
 $$
-\tilde{F} = i\sqrt{\epsilon}\,\vec N ,
+\tilde{F} = i\vec N ,
 \qquad
-\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec N^* ,
+\tilde{F}^{*} = i\vec N^* ,
 $$
 
-so that the self-dual half is the field strength itself and the anti-self-dual half is obtained from it by the dagger. The identity uses $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec E+\sqrt{\mu}\,\vec H$ together with $\sqrt{\mu}\,\vec H = \sqrt{\epsilon}\,c\,\vec B$, so it holds for the real field; on the **complexified** field space the two halves are the independent projections of $F$ and the dagger is no longer the operation that produces the second from the first. For a real field, $\vec N^* = \overline{\vec N}$: the two chiralities are complex conjugates and carry the same six real components, so either alone encodes the whole field. On the complexified field space they are independent, and it is there that the decomposition is a genuine splitting; on the real field space it is the statement that the field is encoded by a single complex vector, its Riemann–Silberstein vector.
+so that the self-dual half is the field strength itself and the anti-self-dual half is obtained from it by the dagger. The identity uses $\tilde{F}^{*} = i\vec E+c\vec B$ together with $\vec B=\mu\vec H$, so it holds for the real field; on the **complexified** field space the two halves are the independent projections of $F$ and the dagger is no longer the operation that produces the second from the first. For a real field, $\vec N^* = \overline{\vec N}$: the two chiralities are complex conjugates and carry the same six real components, so either alone encodes the whole field. On the complexified field space they are independent, and it is there that the decomposition is a genuine splitting; on the real field space it is the statement that the field is encoded by a single complex vector, its Riemann–Silberstein vector.
 
 ### The Relation of the Two Decompositions
 
@@ -210,7 +210,7 @@ A four-dimensional rotation module cannot contain a $D^{(l)}$ with $l\ge2$: the 
 
 At each order $l\ge1$ the field carries two multiplet types, an electric one and a magnetic one, and the two decompositions of $\tilde{F}$ relate to them in different ways.
 
-**The multipole types and the Hermitian decomposition.** The electric and magnetic multipole types are distinguished by **parity**: an electric $l$-pole has parity $(-1)^l$ and a magnetic $l$-pole parity $(-1)^{l+1}$, and in the vector-spherical-harmonic basis the magnetic family is $\vec Y_{l\,n_{\mathrm{mag}}}$ and the electric family $\vec u_r\times\vec Y_{l\,n_{\mathrm{mag}}}$. This is *not* the Hermitian split of the field strength. The Hermitian split separates the electric **field** from the magnetic **field**, $\tfrac{1}{2}(\tilde{F}+\tilde{F}^{*}) = i\sqrt{\epsilon}\vec E$ and $\tfrac{1}{2}(\tilde{F}-\tilde{F}^{*}) = -\sqrt{\mu}\vec H$, and a radiating multipole of either type has both an electric and a magnetic field. The two distinctions coincide only in the static limit: a static charge distribution has $\vec B = 0$, so its multipole fields are purely Hermitian, and a stationary current has $\vec E = 0$, so its multipole fields are purely anti-Hermitian. In that limit, and only there, the electric multipoles $E_l$ are Hermitian fields and the magnetic multipoles $M_l$ anti-Hermitian ones.
+**The multipole types and the Hermitian decomposition.** The electric and magnetic multipole types are distinguished by **parity**: an electric $l$-pole has parity $(-1)^l$ and a magnetic $l$-pole parity $(-1)^{l+1}$, and in the vector-spherical-harmonic basis the magnetic family is $\vec Y_{l\,n_{\mathrm{mag}}}$ and the electric family $\vec u_r\times\vec Y_{l\,n_{\mathrm{mag}}}$. This is *not* the Hermitian split of the field strength. The Hermitian split separates the electric **field** from the magnetic **field**, $\tfrac{1}{2}(\tilde{F}+\tilde{F}^{*}) = i\vec E$ and $\tfrac{1}{2}(\tilde{F}-\tilde{F}^{*}) = -c\vec B$, and a radiating multipole of either type has both an electric and a magnetic field. The two distinctions coincide only in the static limit: a static charge distribution has $\vec B = 0$, so its multipole fields are purely Hermitian, and a stationary current has $\vec E = 0$, so its multipole fields are purely anti-Hermitian. In that limit, and only there, the electric multipoles $E_l$ are Hermitian fields and the magnetic multipoles $M_l$ anti-Hermitian ones.
 
 **The multipole types and the self-dual decomposition.** In the radiation field the two chiral halves are the two **helicities**. For each order $l$ the self-dual part carries one circular polarisation and the anti-self-dual part the other, and the electric and magnetic multiplet types are the parity-even and parity-odd combinations of the two helicity amplitudes, related to them by the same linear transformation that relates linear to circular polarisation. The reason is that parity exchanges the two chiral halves. Spatial inversion acts on the fields by $\vec E\mapsto-\vec E$ and $\vec B\mapsto\vec B$, so on the Riemann–Silberstein vector it acts as
 
@@ -327,7 +327,7 @@ Both are standard, and they answer different questions. The first says that the 
 
 ### $l = 0$: The Monopole Is Purely Electric
 
-The monopole is the total charge, and it has no magnetic partner at any order. Its field is the spherically symmetric Coulomb field, it radiates nothing by charge conservation, and in the algebra it is the electric piece $i\sqrt{\epsilon}\,\vec E\in\mathbb{B}_{\Psi}$ with no anti-Hermitian part. The self-dual decomposition assigns it a Riemann–Silberstein vector that is purely radial and, being non-radiating, not null. The monopole is the one multipole whose Hermitian half is the whole field.
+The monopole is the total charge, and it has no magnetic partner at any order. Its field is the spherically symmetric Coulomb field, it radiates nothing by charge conservation, and in the algebra it is the electric piece $i\vec E\in\mathbb{B}_{\Psi}$ with no anti-Hermitian part. The self-dual decomposition assigns it a Riemann–Silberstein vector that is purely radial and, being non-radiating, not null. The monopole is the one multipole whose Hermitian half is the whole field.
 
 ### $l = 1$: The Electric and Magnetic Dipoles
 
@@ -371,15 +371,15 @@ The tower grows without bound in the function space, while the value algebra sta
 
 The multipole series of a bounded source is the decomposition of the field's angular dependence into irreducible rotation representations, $L^2(S^2) = \bigoplus_{l\ge0}D^{(l)}$, with one electric multiplet $E_l$ and one magnetic multiplet $M_l$ at each order $l\ge1$. The order $l$ is a property of the function space; the value of the field at a point is an element of the four-dimensional algebra $\mathbb{B} = D^{(0)}\oplus D^{(1)}$, which carries the monopole and the dipole and no higher order, and the multipole moments are functionals of the source rather than algebra elements.
 
-The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ admits two decompositions of its six-real-dimensional vector part. The **Hermitian decomposition** separates the electric and magnetic fields,
+The field-strength biquaternion $\tilde{F} = i\vec E - c\vec B$ admits two decompositions of its six-real-dimensional vector part. The **Hermitian decomposition** separates the electric and magnetic fields,
 
 $$
-\boxed{\;\tfrac{1}{2}\left(\tilde{F}+\tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\vec E\in\mathbb{B}_{\Psi} ,
+\boxed{\;\tfrac{1}{2}\left(\tilde{F}+\tilde{F}^{*}\right) = i\vec E\in\mathbb{B}_{\Psi} ,
 \qquad
-\tfrac{1}{2}\left(\tilde{F}-\tilde{F}^{*}\right) = -\sqrt{\mu}\,\vec H\in\mathbb{B}_{\Phi}\;}
+\tfrac{1}{2}\left(\tilde{F}-\tilde{F}^{*}\right) = -c\vec B\in\mathbb{B}_{\Phi}\;}
 $$
 
-and is rotation-covariant but not boost-covariant. It coincides with the electric/magnetic multipole distinction only in the static limit: a static charge distribution gives a purely Hermitian field strength and a stationary current a purely anti-Hermitian one, while a radiating multipole of either type has both parts. The **self-dual decomposition** uses the Hodge dual $\star:(\vec E,\vec B)\mapsto(c\vec B,-\vec E/c)$, $\star^2 = -1$, and the Riemann–Silberstein vector $\vec N = \vec E+ic\vec B$ with $\star\vec N = -i\vec N$; its two halves are $\tilde{F} = i\sqrt{\epsilon}\,\vec N$ and $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec N^*$ with $\vec N^* = \vec E-ic\vec B$. It is Lorentz-covariant, and for radiation its two halves are the two helicities, so that a circularly polarised multipole of definite helicity lies entirely in one half.
+and is rotation-covariant but not boost-covariant. It coincides with the electric/magnetic multipole distinction only in the static limit: a static charge distribution gives a purely Hermitian field strength and a stationary current a purely anti-Hermitian one, while a radiating multipole of either type has both parts. The **self-dual decomposition** uses the Hodge dual $\star:(\vec E,\vec B)\mapsto(c\vec B,-\vec E/c)$, $\star^2 = -1$, and the Riemann–Silberstein vector $\vec N = \vec E+ic\vec B$ with $\star\vec N = -i\vec N$; its two halves are $\tilde{F} = i\vec N$ and $\tilde{F}^{*} = i\vec N^*$ with $\vec N^* = \vec E-ic\vec B$. It is Lorentz-covariant, and for radiation its two halves are the two helicities, so that a circularly polarised multipole of definite helicity lies entirely in one half.
 
 Under a boost, $\tilde{F}_2 = \tilde{U}^{\natural}\tilde{F}\tilde{U}$, the two chiralities transform independently, $\vec N_2 = \Lambda\vec N$ with $\Lambda\in SO(3,\mathbb{C})$, $\Lambda^{\mathsf{T}}\Lambda = I_3$, $\det\Lambda = 1$, and $\vec N_2^{*} = \Lambda^{*}\vec N^*$, while the Hermitian halves mix: the electric and magnetic multipole types rotate into one another, with the dipole illustration $\vec m = \tfrac{1}{2}\vec p\times\vec v$ and the quadrupole analogue, because a boost does not preserve parity. The covariant pairing combines $E_l$ and $M_l$ into the covariant multipole tensor of rank $l$; the long-wavelength pairing in the radiation vector is $E_{l+1}\leftrightarrow M_l$ at order $\nu_t^{\prime\,l}$. The order $l$ is not a Lorentz invariant: it is a rest-frame label, since a boost transforms the argument of the field as well as its value. A radiation field is null, $\langle\tilde{F}\rangle_{\natural} = 0$.
 
@@ -396,7 +396,7 @@ The multipole series and the two decompositions act on different spaces. The dec
 | $\mathbb{B}_{C}, \mathbb{B}_{V}$ | Centre and complex vector part of $\mathbb{B}$ |
 | $\tilde\nabla_\Phi = e_t\,\partial/\partial R_t+\vec\nabla_\Phi$ | Biquaternionic gradient |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian (series convention) |
-| $\tilde{F} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
+| $\tilde{F} = i\vec E-c\vec B$ | Field-strength biquaternion (pure vector) |
 | $\tilde{F}^{*}$ | Hermitian conjugate of $\tilde{F}$ |
 | $\vec N = \vec E+ic\vec B$ | Riemann–Silberstein vector (self-dual) |
 | $\vec N^* = \vec E-ic\vec B$ | Anti-self-dual combination, $\vec N^* = \overline{\vec N}$ for a real field |

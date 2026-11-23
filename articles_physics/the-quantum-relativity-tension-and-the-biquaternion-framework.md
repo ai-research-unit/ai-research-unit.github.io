@@ -242,7 +242,7 @@ Three interpretations cut across the difficulties. The arrow of process is the s
 | $\tilde{Q}_2\tilde{Q}_2^{*}=e_t$ | $*$-Unitary element (reversible evolution); $\langle\tilde{Q}_2\tilde{Q}_1\tilde{Q}_2^{*}\rangle_{\natural}=\langle\tilde{Q}_1\rangle_{\natural}$ |
 | $\tilde{Q}_2^2=\tilde{Q}_2=\tilde{Q}_2^{*}$ | Idempotent element (measurement update) |
 | $\tilde{U}\tilde{U}^{\natural}=e_t$ | Lorentz rotor (unit-norm biquaternion), group $SL(2,\mathbb{C})$; the $*$-unitary and unit-norm classes meet in $SU(2)$ |
-| $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Electromagnetic field-strength bivector, in $\mathrm{span}_\mathbb{R}\{\vec e_{\imath},i\vec e_{\imath}\}$, in neither sector |
+| $\tilde{F}=i\vec E-c\vec B$ | Electromagnetic field-strength bivector, in $\mathrm{span}_\mathbb{R}\{\vec e_{\imath},i\vec e_{\imath}\}$, in neither sector |
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit algebra of Programme 4 |
 | $c$, $c_0$ | Speed of light in the medium, $c=1/\sqrt{\epsilon\mu}$, and its vacuum value |
 | $\frac{h}{2\pi}$ | The action of one radian of phase (in the path-integral weight $\exp(i\theta_{\mathrm{act}})$) |

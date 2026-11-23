@@ -21,7 +21,7 @@ for the helicity state carried by $\vec E$, and the same two numbers with the ro
 
 **What this article does not claim.** It does not claim that the split fails, or that the massive field needs a different carrier. The split is a decomposition of the complexified field strength, it is exact for every field, and it is the correct home of the integer-spin representations. What the article claims is narrower and sharper: the split resolves the two circular polarizations and does not resolve the third, so the three states are **not** a $2+1$ split of the two chiral halves. The third state lives in the direction the split leaves out, and any programme that treats self-duality as a condition on a massive field is imposing the vanishing of a combination that is not there.
 
-The conventions are those of the two companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_{\imath}^2=-e_t$ and central scalar imaginary $i$; the field strength is $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H\in\mathbb{B}_V$ with $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$; the Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$; the Hodge dual is $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$ with $\star^2=-1$ and $\star\tilde F=-i\tilde F$; the projectors are $\tilde\Pi_{\mathrm{id},sd,asd}=\tfrac12(1\pm i\star)$; and the mass is $\nu_m=\frac{mc}{h}$ with the dispersion relation $\omega^2=c^2\lvert2\pi\vec\nu_\Phi\rvert^{2}+c^2\,4\pi^{2}\nu_m^2$. Where the wavevector's magnitude is written $\nu_{\Phi}$, it means $\lvert\vec\nu_\Phi\rvert$.
+The conventions are those of the two companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_{\imath}^2=-e_t$ and central scalar imaginary $i$; the field strength is $\tilde F=i\vec E-c\vec B\in\mathbb{B}_V$ with $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$; the Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$; the Hodge dual is $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$ with $\star^2=-1$ and $\star\tilde F=-i\tilde F$; the projectors are $\tilde\Pi_{\mathrm{id},sd,asd}=\tfrac12(1\pm i\star)$; and the mass is $\nu_m=\frac{mc}{h}$ with the dispersion relation $\omega^2=c^2\lvert2\pi\vec\nu_\Phi\rvert^{2}+c^2\,4\pi^{2}\nu_m^2$. Where the wavevector's magnitude is written $\nu_{\Phi}$, it means $\lvert\vec\nu_\Phi\rvert$.
 
 ## The Three States at a Wavevector
 
@@ -195,7 +195,7 @@ The origin of the count is the difference of carriers. The potential is a four-v
 | $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$, $\mathbb{B}_V$ | Material, informational, and vector sectors |
-| $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field-strength biquaternion, pure vector |
+| $\tilde F=i\vec E-c\vec B$ | Field-strength biquaternion, pure vector |
 | $\vec B=\mu\vec H$, $c=1/\sqrt{\epsilon\mu}$ | Magnetic induction and speed of light in the medium |
 | $\vec N=\vec E+ic\vec B$, $\vec N^*=\vec E-ic\vec B$ | Riemann–Silberstein coordinates of the two halves |
 | $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$ | Hodge dual, $\star^2=-1$, $\star\tilde F=-i\tilde F$ |

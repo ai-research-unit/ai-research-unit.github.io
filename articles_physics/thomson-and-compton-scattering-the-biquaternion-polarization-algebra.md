@@ -10,7 +10,7 @@ The scope is relativistic and quantum, and it is the worked application that clo
 
 - Companion article *The Photon in Biquaternionic Form*, for the polarization space as the material sector, the circular basis, and the helicity operator.
 - Companion article *Conformal Invariance and the Massless Limit in Biquaternionic Form*, for the massless limit proper, and for why it is the opposite regime to the one taken here.
-- Companion article *The Field-Strength Biquaternion and Its Invariants*, for $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, the Riemann–Silberstein vector, and the self-dual split.
+- Companion article *The Field-Strength Biquaternion and Its Invariants*, for $\tilde{F} = i\vec E - c\vec B$, the Riemann–Silberstein vector, and the self-dual split.
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the free field whose plane waves are scattered.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the electron whose rest frame is the scattering frame.
 - Companion article *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit*, for the plane-wave solutions, the covariant normalisation, and the spin sums used in the last section.
@@ -25,7 +25,7 @@ The scalar imaginary of the algebra is written $i$. It is central, $i^2=-1$, and
 
 A plane-wave solution of the source-free Maxwell equations with wave biquaternion $\tilde P_{\Phi,\mathrm{ph}} = i(\omega/c)e_t + 2\pi\vec\nu_\Phi$ has a polarization biquaternion that is a pure vector, $\vec\varepsilon$, and the field-strength biquaternion of the wave is
 $$
-\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H
+\tilde{F} = i\vec E - c\vec B
 = \tilde P_{\Phi,\mathrm{ph}}\,\vec\varepsilon \quad\text{up to a phase and a normalisation},
 $$
 so that the electric and magnetic fields are the real and imaginary parts of the same quaternion. Transversality is the condition

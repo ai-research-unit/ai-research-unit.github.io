@@ -34,7 +34,7 @@ the Euler–Lagrange equation is the Proca equation. The normalization is fixed 
 
 **What is not new.** The action is the standard Proca action written in the algebra's letters. Nothing in the physics is new: the equation, the Lorenz condition, the polarizations and the stress tensor are the standard ones. What the algebra supplies is a compact statement of the pairing, a one-line variation, and the two structural readings above. The polar-form variational principle is the companion article, and there the action's variables are the word's parameters rather than the four components.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_{\imath}^2=-e_t$ and central scalar imaginary $i$; the sectors are $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\mathbb{B}_\Psi=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; ${}^{*}$ is coefficient conjugation composed with the quaternion conjugation $\natural$; $\mathrm{Sc}$ is the coefficient of $e_t$; $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ is the quaternionic norm, real on $\mathbb{B}_\Phi$; the potential is $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ with real $\vec A$ and real $a'_t$, so that $\langle\tilde A_\Phi\rangle_\natural=-(a'_t)^2+\vec A^2$; the derivatives are $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_{\imath}=\partial/\partial r_{\imath}$, so that $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; and the field strength is $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ with $c=1/\sqrt{\epsilon\mu}$. The mass is the wave number $\nu_m=\frac{mc}{h}$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_{\imath}^2=-e_t$ and central scalar imaginary $i$; the sectors are $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\mathbb{B}_\Psi=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; ${}^{*}$ is coefficient conjugation composed with the quaternion conjugation $\natural$; $\mathrm{Sc}$ is the coefficient of $e_t$; $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ is the quaternionic norm, real on $\mathbb{B}_\Phi$; the potential is $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ with real $\vec A$ and real $a'_t$, so that $\langle\tilde A_\Phi\rangle_\natural=-(a'_t)^2+\vec A^2$; the derivatives are $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_{\imath}=\partial/\partial r_{\imath}$, so that $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; and the field strength is $\tilde F=i\vec E-c\vec B$ with $c=1/\sqrt{\epsilon\mu}$. The mass is the wave number $\nu_m=\frac{mc}{h}$.
 
 ## Conventions
 
@@ -50,7 +50,7 @@ S[\tilde A_\Phi]=\int d^4r\;\mathcal{L},
 \mathcal{L}=\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,4\pi^{2}\nu_m^2\,\langle\tilde A_\Phi\rangle_\natural .
 $$
 
-**The field term is the Maxwell density.** Because $\tilde F$ is a pure vector, $\mathrm{Sc}(\tilde F\tilde F)$ is its negative squared length, and with $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$,
+**The field term is the Maxwell density.** Because $\tilde F$ is a pure vector, $\mathrm{Sc}(\tilde F\tilde F)$ is its negative squared length, and with $\tilde F=i\vec E-c\vec B$,
 
 $$
 \mathrm{Sc}\bigl(\tilde F\tilde F\bigr)=\epsilon\vec E^2-\mu\vec H^2+2i\sqrt{\epsilon\mu}\,\vec E\cdot\vec H
@@ -211,7 +211,7 @@ The divergence of the equation forces the Lorenz condition, and the variational 
 | ${}^{*}$, ${}^{\natural}$, $\mathrm{Sc}$, $\mathrm{Vect}$ | Hermitian conjugation, quaternion conjugation, scalar part, vector part |
 | $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ | Quaternionic norm; real on $\mathbb{B}_\Phi$ |
 | $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ | Four-potential; $\langle\tilde A_\Phi\rangle_\natural=-(a'_t)^2+\vec A^2$ |
-| $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field-strength biquaternion, pure vector |
+| $\tilde F=i\vec E-c\vec B$ | Field-strength biquaternion, pure vector |
 | $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$ | d'Alembertian of the corpus |
 | $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ | Lorenz scalar |
 | $\mathcal{L}$ | Lagrangian density |

@@ -6,13 +6,13 @@ This is an exercise in the electromagnetism series. It applies *The Field-Streng
 
 **What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_{\imath}^2 = -e_t$ and the product rule $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmath k}\vec e_{\imath}$; the scalar imaginary $i$, $i^2 = -1$, commuting with the quaternion units; the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ (material) and the Hermitian subspace $\mathbb{B}_{\Psi}$ (informational), with $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$; the real-quaternion subspace $\mathbb{B}_{H}$ and the complex-scalar subspace $\mathbb{B}_{C}$; the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex) and ${}^{*} = ({}^{\natural})^{\,*}$; the biquaternionic gradient $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ and the d'Alembertian $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$; the field-strength biquaternion
 $$
-\tilde F = \vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
+\tilde F = \vec F = i\,\vec E - c\,\vec B,
 \qquad \mathrm{Sc}(\tilde F)=0,
 $$
 with $\vec B = \mu\vec H$ and the medium speed of light $c = 1/\sqrt{\epsilon\mu}$; the Riemann–Silberstein vector
 $$
 \vec N = \vec E + ic\,\vec B,
-\qquad \tilde F = i\sqrt{\epsilon}\,\vec N;
+\qquad \tilde F = i\,\vec N;
 $$
 the invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$; the energy density and Poynting vector
 $$
@@ -34,7 +34,7 @@ it preserves $W$ and $\vec S$, rotates $(I_1,2cI_2)$ by $2\theta_{\mathrm{dua}}$
 
 ## Problem 1: The Duality Rotation as a Phase
 
-**Statement.** (a) State the electric–magnetic duality transformation of the real fields and show that it is a rotation in the planes spanned by $\vec E$ and $c\vec B$. (b) Derive the induced action on the Riemann–Silberstein vector $\vec N = \vec E + ic\vec B$. (c) Derive the induced action on the field-strength biquaternion $\tilde F = i\sqrt{\epsilon}\,\vec N$, keeping the medium factors explicit. (d) Verify that the transformed field satisfies the same physical reality condition as the original, namely that it can be written as $i\sqrt{\epsilon}\vec E_{\mathrm D} - \sqrt{\mu}\vec H_{\mathrm D}$ with real $\vec E_{\mathrm D}$ and $\vec H_{\mathrm D}$.
+**Statement.** (a) State the electric–magnetic duality transformation of the real fields and show that it is a rotation in the planes spanned by $\vec E$ and $c\vec B$. (b) Derive the induced action on the Riemann–Silberstein vector $\vec N = \vec E + ic\vec B$. (c) Derive the induced action on the field-strength biquaternion $\tilde F = i\,\vec N$, keeping the medium speed explicit. (d) Verify that the transformed field satisfies the same physical reality condition as the original, namely that it can be written as $i\vec E_{\mathrm D} - c\vec B_{\mathrm D}$ with real $\vec E_{\mathrm D}$ and $\vec B_{\mathrm D}$.
 
 **Solution (a).** For a real angle $\theta_{\mathrm{dua}}$, the duality rotation is
 $$
@@ -65,32 +65,28 @@ $$
 $$
 The phase is the scalar imaginary $i$ of the algebra, the same $i$ that appears in $i r'_t$; it is central, so it commutes with the quaternion units.
 
-**Solution (c).** The field-strength biquaternion is $\tilde F = i\sqrt{\epsilon}\vec N$, so part (b) gives immediately
+**Solution (c).** The field-strength biquaternion is $\tilde F = i\vec N$, so part (b) gives immediately
 $$
-\tilde F_{\mathrm D} = i\sqrt{\epsilon}\,\vec N_{\mathrm D} = \exp(-i\theta_{\mathrm{dua}})\,i\sqrt{\epsilon}\,\vec N = \exp(-i\theta_{\mathrm{dua}})\,\tilde F .
+\tilde F_{\mathrm D} = i\,\vec N_{\mathrm D} = \exp(-i\theta_{\mathrm{dua}})\,i\,\vec N = \exp(-i\theta_{\mathrm{dua}})\,\tilde F .
 $$
-It is worth seeing that this does not depend on the abbreviation $\tilde F = i\sqrt{\epsilon}\vec N$. Directly, with $\vec H_{\mathrm D} = \vec B_{\mathrm D}/\mu$,
+It is worth seeing that this does not depend on the abbreviation $\tilde F = i\vec N$. Directly, from the transformation of the two real fields,
 $$
-\tilde F_{\mathrm D} = i\sqrt{\epsilon}\left(\vec E\cos\theta_{\mathrm{dua}} + c\vec B\sin\theta_{\mathrm{dua}}\right)
-- \sqrt{\mu}\left(\frac{\vec B}{\mu}\cos\theta_{\mathrm{dua}} - \frac{\vec E}{c\mu}\sin\theta_{\mathrm{dua}}\right).
-$$
-Using $\sqrt{\epsilon}\,c = 1/\sqrt{\mu}$ and $\sqrt{\mu}/(c\mu) = \sqrt{\epsilon}$, this becomes
-$$
-\tilde F_{\mathrm D} = i\sqrt{\epsilon}\,\vec E(\cos\theta_{\mathrm{dua}} - i\sin\theta_{\mathrm{dua}})
-- \frac{1}{\sqrt{\mu}}\,\vec B(\cos\theta_{\mathrm{dua}} - i\sin\theta_{\mathrm{dua}})
+\tilde F_{\mathrm D} = i\left(\vec E\cos\theta_{\mathrm{dua}} + c\vec B\sin\theta_{\mathrm{dua}}\right)
+- c\left(\vec B\cos\theta_{\mathrm{dua}} - \frac{1}{c}\vec E\sin\theta_{\mathrm{dua}}\right)
+= \left(i\vec E - c\vec B\right)\left(\cos\theta_{\mathrm{dua}} - i\sin\theta_{\mathrm{dua}}\right)
 = \exp(-i\theta_{\mathrm{dua}})\,\tilde F .
 $$
-The medium factors are essential to the clean phase form: the real duality rotation mixes $\vec E$ with $c\vec B$, while $\tilde F$ stores the electric field with a factor $i\sqrt{\epsilon}$ and the magnetic field with a factor $-\sqrt{\mu}$.
+The two fields combine into one complex object because the real rotation mixes $\vec E$ with $c\vec B$, and $\tilde F$ stores exactly those two combinations, the electric one with the factor $i$ and the magnetic one with the factor $-c$.
 
 **Solution (d).** For real $\vec E,\vec B$ and real $\theta_{\mathrm{dua}}$, the fields
 $$
 \vec E_{\mathrm D} = \vec E\cos\theta_{\mathrm{dua}} + c\,\vec B\sin\theta_{\mathrm{dua}},
 \qquad
-\vec H_{\mathrm D} = \frac{\vec B_{\mathrm D}}{\mu} = \frac{\vec B}{\mu}\cos\theta_{\mathrm{dua}} - \frac{\vec E}{c\mu}\sin\theta_{\mathrm{dua}}
+\vec B_{\mathrm D} = \vec B\cos\theta_{\mathrm{dua}} - \frac{1}{c}\,\vec E\sin\theta_{\mathrm{dua}}
 $$
 are real. Moreover
 $$
-\tilde F_{\mathrm D} = i\sqrt{\epsilon}\,\vec E_{\mathrm D} - \sqrt{\mu}\,\vec H_{\mathrm D}
+\tilde F_{\mathrm D} = i\,\vec E_{\mathrm D} - c\,\vec B_{\mathrm D}
 $$
 by construction, so the transformed object is again a physical field strength of the same form. The duality rotation therefore maps the physical (real-field) subspace to itself. Multiplication by the phase $\exp(-i\theta_{\mathrm{dua}})$ is invertible, with inverse $\theta_{\mathrm{dua}}\mapsto-\theta_{\mathrm{dua}}$; the transformation is a one-parameter group.
 
@@ -113,13 +109,13 @@ $$
 The pair $(I_1,2cI_2)$ rotates by the doubled angle $2\theta_{\mathrm{dua}}$. Consequently
 $$
 I_{1,\mathrm D}^2 + 4c^2I_{2,\mathrm D}^2 = I_1^2 + 4c^2I_2^2 = \left|\vec N\cdot\vec N\right|^2
-= \frac{1}{\epsilon^2}\left|\langle\tilde F\rangle_{\natural}\right|^2 .
+= \left|\langle\tilde F\rangle_{\natural}\right|^2 .
 $$
 
-**Solution (b).** Since $\tilde F = i\sqrt{\epsilon}\vec N$ and $\tilde F^{\natural} = -\tilde F$ for a pure vector,
+**Solution (b).** Since $\tilde F = i\vec N$ and $\tilde F^{\natural} = -\tilde F$ for a pure vector,
 $$
-\langle\tilde F\rangle_{\natural} = \langle\tilde F,\tilde F\rangle_{\natural} = \tilde F\tilde F^{\natural} = \vec F\cdot\vec F = \left(i\sqrt{\epsilon}\right)^2\vec N\cdot\vec N
-= -\epsilon\left(I_1 + 2ic\,I_2\right).
+\langle\tilde F\rangle_{\natural} = \langle\tilde F,\tilde F\rangle_{\natural} = \tilde F\tilde F^{\natural} = \vec F\cdot\vec F = i^2\,\vec N\cdot\vec N
+= -\left(I_1 + 2ic\,I_2\right).
 $$
 Under $\tilde F\mapsto \exp(-i\theta_{\mathrm{dua}})\tilde F$, and because the central scalar $\exp(-i\theta_{\mathrm{dua}})$ is fixed by quaternion conjugation,
 $$
@@ -127,7 +123,7 @@ $$
 $$
 which reproduces the rotation of $(I_1,2cI_2)$ obtained in part (a). The quantity $I_1^2 + 4c^2I_2^2$ is invariant under duality as well as under Lorentz transformations; each of $I_1$ and $I_2$ is separately Lorentz invariant, but duality mixes them, so only this combination is invariant under both.
 
-**Solution (c).** From the parent article, $\tilde F\tilde F^{*} = 2W e_t + \frac{2i}{c}\vec S$. Under duality,
+**Solution (c).** From the parent article, $\tilde F\tilde F^{*} = \frac{2W}{\epsilon}\,e_t + \frac{2i}{c\epsilon}\,\vec S$. Under duality,
 $$
 \tilde F\tilde F^{*} \mapsto
 \left(\exp(-i\theta_{\mathrm{dua}})\tilde F\right)\left(\exp(-i\theta_{\mathrm{dua}})\tilde F\right)^\dagger
@@ -220,15 +216,15 @@ $$
 $$
 The duality rotation is thus an internal $\mathrm{U}(1)$ symmetry generated by the scalar imaginary $i$, not a spacetime symmetry. It cannot be absorbed into a Lorentz transformation: a Lorentz transformation preserves $\langle\tilde F\rangle_{\natural}$ exactly, whereas duality multiplies it by $\exp(-2i\theta_{\mathrm{dua}})$. This is the biquaternion form of the statement that duality is not a Lorentz transformation.
 
-**Solution (c).** With sources, the equation is $\tilde\nabla_\Phi\tilde F = -\sqrt{\mu}\,\tilde J_{\Phi}$, where the electric four-current is
+**Solution (c).** With sources, the equation is $\tilde\nabla_\Phi\tilde F = -Z\,\tilde J_{\Phi}$, with $Z = \sqrt{\mu/\epsilon} = 1/(c\epsilon)$ the impedance of the medium, where the electric four-current is
 $$
 \tilde J_{\Phi} = ic\rho\,e_t + \vec J \in \mathbb{B}_{\Phi} .
 $$
-If $\tilde F\mapsto \exp(-i\theta_{\mathrm{dua}})\tilde F$ is to solve the sourced equation, the source must transform as $\sqrt{\mu}\,\tilde J_{\Phi}\mapsto \exp(-i\theta_{\mathrm{dua}})\sqrt{\mu}\,\tilde J_{\Phi}$, since
+If $\tilde F\mapsto \exp(-i\theta_{\mathrm{dua}})\tilde F$ is to solve the sourced equation, the source must transform as $Z\,\tilde J_{\Phi}\mapsto \exp(-i\theta_{\mathrm{dua}})Z\,\tilde J_{\Phi}$, since
 $$
-\tilde\nabla_\Phi\left(\exp(-i\theta_{\mathrm{dua}})\tilde F\right) = -\exp(-i\theta_{\mathrm{dua}})\sqrt{\mu}\,\tilde J_{\Phi} .
+\tilde\nabla_\Phi\left(\exp(-i\theta_{\mathrm{dua}})\tilde F\right) = -\exp(-i\theta_{\mathrm{dua}})Z\,\tilde J_{\Phi} .
 $$
-For $\theta_{\mathrm{dua}}\neq 0$ the transformed source is no longer purely electric: writing $\exp(-i\theta_{\mathrm{dua}})\sqrt{\mu}\,\tilde J_{\Phi} = (\cos\theta_{\mathrm{dua}} - i\sin\theta_{\mathrm{dua}})\sqrt{\mu}\,\tilde J_{\Phi}$, its scalar part acquires a real piece and its vector part an imaginary piece. A real scalar part is a magnetic charge density and an imaginary vector part a magnetic current, so at $\theta_{\mathrm{dua}}=\pi/2$ the rotation turns the electric source into a term of magnetic form. Duality is therefore not a symmetry of the electric-only sourced equations, and the equation $\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_{\Phi}$ is not invariant under it. The parent's statement — duality is a symmetry of the source-free equations and fails with electric sources — is correct, and what its failure exhibits is a magnetic term generated by the rotation, not an inconsistency.
+The factor $Z$ is a real scalar and carries no phase, so the condition attaches to the current itself, $\tilde J_{\Phi}\mapsto\exp(-i\theta_{\mathrm{dua}})\tilde J_{\Phi}$. For $\theta_{\mathrm{dua}}\neq 0$ the transformed current is no longer purely electric: writing $\exp(-i\theta_{\mathrm{dua}})\tilde J_{\Phi} = (\cos\theta_{\mathrm{dua}} - i\sin\theta_{\mathrm{dua}})\tilde J_{\Phi}$, its scalar part acquires a real piece and its vector part an imaginary piece. A real scalar part is a magnetic charge density and an imaginary vector part a magnetic current, so at $\theta_{\mathrm{dua}}=\pi/2$ the rotation turns the electric source into a term of magnetic form. Duality is therefore not a symmetry of the electric-only sourced equations, and the equation $\tilde\nabla_\Phi\tilde F=-Z\,\tilde J_{\Phi}$ is not invariant under it. The parent's statement — duality is a symmetry of the source-free equations and fails with electric sources — is correct, and what its failure exhibits is a magnetic term generated by the rotation, not an inconsistency.
 
 The **elementary substitution symmetry** is the real-angle ancestor of this rotation. The classical Maxwell equations can be paired by the interchange of the electric and magnetic fields together with the interchange of the permittivity and the permeability, and the pairing fails for one reason only: the absence of magnetic charges and currents. The duality rotation is the continuous form of that interchange — under $\vec N\mapsto \exp(-i\theta_{\mathrm{dua}})\vec N$ the electric field rotates into $c\vec B$ and back — and at $\theta_{\mathrm{dua}} = \pi/2$ it becomes the exact substitution that the sources forbid. Removing the conditions $\rho_m = 0$ and $\vec J_m = 0$ is therefore not an embellishment but the minimal completion that makes the symmetry exact: the rotation is then a symmetry of the *sourced* equation, with the rotated electric source supplying the magnetic term. The substitution symmetry and the duality rotation are thus one statement, the first discrete and the second continuous.
 
@@ -259,7 +255,7 @@ A second point belongs with it, and it is a matter of reading rather than of not
 $$
 \vec N = (E_x + icB_x)\,\vec e_x + (E_y + icB_y)\,\vec e_y + (E_z + icB_z)\,\vec e_z,
 $$
-whose three complex components are the six real components of $(\vec E,c\vec B)$. No information is lost and no second independent complex three-vector is needed. This is consistent with the fact that the parent defines $\tilde F = i\sqrt{\epsilon}\vec N$ to be the entire field strength: if a second independent complex three-vector were required, $\tilde F$ would not carry the full field.
+whose three complex components are the six real components of $(\vec E,c\vec B)$. No information is lost and no second independent complex three-vector is needed. This is consistent with the fact that the parent defines $\tilde F = i\vec N$ to be the entire field strength: if a second independent complex three-vector were required, $\tilde F$ would not carry the full field.
 
 ## Problem 5: The Lorentz Transformation of the Field Strength — a Gap in the Parent
 
@@ -273,13 +269,13 @@ The natural candidate for the field strength is the same conjugation,
 $$
 \tilde F \mapsto \tilde U\,\tilde F\,\tilde U^{*} .
 $$
-For a pure spatial rotation the rotor is a real quaternion, $\tilde U = \cos(\theta_{\mathrm{dua}}/2) + \sin(\theta_{\mathrm{dua}}/2)\,\vec u$, with $\tilde U^{*} = \tilde U^{-1}$. Take $\vec u = \vec e_z$ and a field with $\vec E = E_0 \vec e_x$, $\vec B = 0$, so $\tilde F = i\sqrt{\epsilon}E_0 \vec e_x$. The standard rotation gives $\vec E_{\mathrm D} = E_0(\cos\theta_{\mathrm{dua}}\,\vec e_x + \sin\theta_{\mathrm{dua}}\,\vec e_y)$, $\vec B_{\mathrm D}=0$, and indeed
+For a pure spatial rotation the rotor is a real quaternion, $\tilde U = \cos(\theta_{\mathrm{dua}}/2) + \sin(\theta_{\mathrm{dua}}/2)\,\vec u$, with $\tilde U^{*} = \tilde U^{-1}$. Take $\vec u = \vec e_z$ and a field with $\vec E = E_0 \vec e_x$, $\vec B = 0$, so $\tilde F = iE_0 \vec e_x$. The standard rotation gives $\vec E_{\mathrm D} = E_0(\cos\theta_{\mathrm{dua}}\,\vec e_x + \sin\theta_{\mathrm{dua}}\,\vec e_y)$, $\vec B_{\mathrm D}=0$, and indeed
 $$
 \tilde U\,\vec e_x\,\tilde U^{*} = \cos\theta_{\mathrm{dua}}\,\vec e_x + \sin\theta_{\mathrm{dua}}\,\vec e_y ,
 $$
 so
 $$
-\tilde U\,\tilde F\,\tilde U^{*} = i\sqrt{\epsilon}E_0\left(\cos\theta_{\mathrm{dua}}\,\vec e_x + \sin\theta_{\mathrm{dua}}\,\vec e_y\right) = \tilde F_{\mathrm D} .
+\tilde U\,\tilde F\,\tilde U^{*} = iE_0\left(\cos\theta_{\mathrm{dua}}\,\vec e_x + \sin\theta_{\mathrm{dua}}\,\vec e_y\right) = \tilde F_{\mathrm D} .
 $$
 On a pure rotation the candidate works.
 
@@ -353,7 +349,7 @@ $$
 \qquad
 \vec B \mapsto \vec B\cos\theta_{\mathrm{dua}} - \frac{1}{c}\,\vec E\sin\theta_{\mathrm{dua}}\;},
 $$
-which is exactly $\vec N\mapsto \exp(-i\theta_{\mathrm{dua}})\vec N$ and, because $\tilde F = i\sqrt{\epsilon}\vec N$, exactly $\tilde F\mapsto \exp(-i\theta_{\mathrm{dua}})\tilde F$. The phase is the scalar imaginary $i$; it is central, so the rotation is an internal $\mathrm{U}(1)$ symmetry and not a Lorentz transformation.
+which is exactly $\vec N\mapsto \exp(-i\theta_{\mathrm{dua}})\vec N$ and, because $\tilde F = i\vec N$, exactly $\tilde F\mapsto \exp(-i\theta_{\mathrm{dua}})\tilde F$. The phase is the scalar imaginary $i$; it is central, so the rotation is an internal $\mathrm{U}(1)$ symmetry and not a Lorentz transformation.
 
 Duality preserves the Hermitian form: the energy density $W$ and the Poynting vector $\vec S$ are unchanged. It rotates the biquaternion norm by the doubled phase, $\langle\tilde F\rangle_{\natural}\mapsto \exp(-2i\theta_{\mathrm{dua}})\langle\tilde F\rangle_{\natural}$, so the pair $(I_1,2cI_2)$ rotates by $2\theta_{\mathrm{dua}}$ and $I_1^2 + 4c^2I_2^2$ is invariant. It is a symmetry of the source-free Maxwell equations and of the biquaternionic equation $\tilde\nabla_\Phi\tilde F = 0$; with electric sources alone it is not a symmetry, because at $\theta_{\mathrm{dua}} = \pi/2$ the rotation turns the electric source into a term of magnetic form. The discrete ancestor of the rotation is the classical substitution symmetry — interchange of $\vec E$ and $\vec H$ together with $\epsilon$ and $\mu$ — which the absence of magnetic charge also breaks; dropping that condition makes the symmetry exact.
 
@@ -371,18 +367,18 @@ One defect in the parent is recorded, and one earlier reading of it is withdrawn
 | ${}^{\natural}, \bar{\cdot}, {}^{*} = ({}^{\natural})^{\,*}$ | Quaternion, complex, and Hermitian conjugations |
 | $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}, \Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
 | $\tilde U \in \mathbb{B}$, $\tilde U\tilde U^{\natural} = e_t$ | Lorentz rotor (unit-norm biquaternion) |
-| $\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
+| $\tilde F = i\,\vec E - c\,\vec B$ | Field-strength biquaternion (pure vector) |
 | $\vec E, \vec H, \vec B = \mu\vec H$ | Electric field, magnetic field, magnetic induction |
 | $\epsilon,\mu$, $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Permittivity, permeability, medium speed of light, vacuum speed of light |
-| $\vec N = \vec E + ic\vec B$ | Riemann–Silberstein vector, $\tilde F = i\sqrt{\epsilon}\vec N$ |
+| $\vec N = \vec E + ic\vec B$ | Riemann–Silberstein vector, $\tilde F = i\vec N$ |
 | $\vec N^* = \vec E - ic\vec B$ | Complex conjugate of $\vec N$ |
 | $\theta_{\mathrm{dua}}$ | Duality angle |
-| $\langle\tilde F\rangle_{\natural} = \langle\tilde F,\tilde F\rangle_{\natural} = \tilde F\tilde F^{\natural} = -\epsilon(I_1 + 2icI_2)$ | Biquaternion norm (complex scalar) |
+| $\langle\tilde F\rangle_{\natural} = \langle\tilde F,\tilde F\rangle_{\natural} = \tilde F\tilde F^{\natural} = -(I_1 + 2icI_2)$ | Biquaternion norm (complex scalar) |
 | $I_1 = \vec E^2 - c^2\vec B^2$, $I_2 = \vec E\cdot\vec B$ | Lorentz invariants (scalar, pseudoscalar) |
 | $W = \tfrac12(\epsilon\vec E^2 + \mu\vec H^2)$, $\vec S = \vec E\times\vec H$ | Energy density, Poynting vector |
-| $\tilde F\tilde F^{*} = 2We_t + \frac{2i}{c}\vec S$ | Hermitian form (in $\mathbb{B}_{\Psi}$) |
-| $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$ | Electric four-current; enters as $\sqrt{\mu}\,\tilde J_{\Phi}$ |
-| $\tilde\nabla_\Phi\tilde F = -\sqrt{\mu}\,\tilde J_{\Phi}$ | Biquaternionic Maxwell equation |
+| $\tilde F\tilde F^{*} = \frac{2W}{\epsilon}e_t + \frac{2i}{c\epsilon}\vec S$ | Hermitian form (in $\mathbb{B}_{\Psi}$) |
+| $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$ | Electric four-current; enters as $Z\,\tilde J_{\Phi}$, $Z=\sqrt{\mu/\epsilon}$ |
+| $\tilde\nabla_\Phi\tilde F = -Z\,\tilde J_{\Phi}$ | Biquaternionic Maxwell equation |
 | $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ | Scalar-part reading at normalisation (Born rule) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_{\imath}\lvert Q_{2\imath}\rvert^{2}$ |

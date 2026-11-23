@@ -48,7 +48,7 @@ $$
 $$
 is the biquaternion carrier, with $\bar e_{\imath}$ the quaternion conjugate of the unit ($\bar e_t=e_t$, $\bar e_{\imath}=-\vec e_{\imath}$). For the abelian factor the carrier is $(\tilde\nabla_\Phi)^{\natural}\tilde A_{\Phi}$ itself; for the non-abelian factor it is a definition read off from the components, since the commutator term is not a derivative of $\mathcal{A}$.
 
-**The invariants.** With the field $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the two real invariants of *The Field-Strength Biquaternion and Its Invariants* are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the normalization of the instanton article. The reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged; it is the pairing of the Hermitian sector, and the section *The Traces Involved, and the One That Is Not* keeps it apart from the two traces that compute an anomaly. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value, and the symbols $SU(3)$, $SU(2)_L$, $\mathrm{U}(1)_Y$, $Y$, $T_3$ are **standard-model notation, not framework objects**, used only where a standard structure is named.
+**The invariants.** With the field $\tilde{F}=i\vec E-c\vec B$, the two real invariants of *The Field-Strength Biquaternion and Its Invariants* are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the normalization of the instanton article. The reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged; it is the pairing of the Hermitian sector, and the section *The Traces Involved, and the One That Is Not* keeps it apart from the two traces that compute an anomaly. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value, and the symbols $SU(3)$, $SU(2)_L$, $\mathrm{U}(1)_Y$, $Y$, $T_3$ are **standard-model notation, not framework objects**, used only where a standard structure is named.
 
 The framework results used here are those of the companion articles:
 
@@ -458,7 +458,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}=\sum_{\imath}\partial j_{5\imath}/\partial R_{\imath}=2m\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}(\tilde{Ξ}\vec e_z)-\dfrac{e^2}{16\pi^2}\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}$ | Axial anomaly (ABJ), with the mass term reduced by $i(-i)=+1$; the minus is the lower-index notation, and the divergence is the plain sum, the metric being inside the frame basis operators |
 | $F_{\imath\jmath}=\partial \mathcal{A}_{\jmath}/\partial x_{\imath}-\partial \mathcal{A}_{\imath}/\partial x_{\jmath}+i\kappa[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]$, $\kappa=\frac{2\pi ϙ}{h}$ | Non-abelian field strength, in components |
 | $I_1=\vec E^2-c^2\vec B^2$, $I_2=\vec E\cdot\vec B$ | Biquaternion field invariants |
-| $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Biquaternion field strength |
+| $\tilde{F}=i\vec E-c\vec B$ | Biquaternion field strength |
 | $A_{abc}=\mathrm{Tr}_R[T_a\{T_b,T_c\}]$ | Triangle anomaly coefficient |
 | $\sum_L-\sum_R$ | Left-handed minus right-handed anomaly sum |
 | $T_a$ | $SU(2)$ generators; the symmetrised trace of three vanishes for every representation |

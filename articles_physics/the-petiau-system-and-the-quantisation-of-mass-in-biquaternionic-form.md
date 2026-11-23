@@ -28,7 +28,7 @@ The framework results used here are those of the companion articles:
 
 ### The Lanczos Feedback System
 
-Maxwell's source-free equation in biquaternionic form is $\tilde\nabla_\Phi\tilde{F}=0$, the complex-vector equation of Conway and Silberstein, and its inhomogeneous companion is $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ for a four-current $\tilde J_{\Phi}$. Lanczos's observation, in 1929, was that the same two-slot equation with a **feedback** on the right-hand side describes a massive particle of spin $\frac{1}{2}$:
+Maxwell's source-free equation in biquaternionic form is $\tilde\nabla_\Phi\tilde{F}=0$, the complex-vector equation of Conway and Silberstein, and its inhomogeneous companion is $\tilde\nabla_\Phi\tilde{F}=-Z\tilde{J}_{\Phi}$ for a four-current $\tilde J_{\Phi}$. Lanczos's observation, in 1929, was that the same two-slot equation with a **feedback** on the right-hand side describes a massive particle of spin $\frac{1}{2}$:
 
 $$
 \tilde\nabla_\Phi\tilde Q_1 = m\tilde Q_2,
